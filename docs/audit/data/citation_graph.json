@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "record_formation_to_kraus_isometry_bridge_2026-06-06"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "translation_covariance_local_op_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "u1_fermion_number_conservation_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
         "record_formation_to_kraus_isometry_bridge_2026-06-06",
         "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
         "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
         "q_integer_spectrum_theorem_note_2026-05-02",
         "momentum_charge_commute_theorem_note_2026-05-02",
         "translation_abelian_composition_theorem_note_2026-05-02",
-        "translation_covariance_local_op_theorem_note_2026-05-02"
+        "translation_covariance_local_op_theorem_note_2026-05-02",
+        "u1_fermion_number_conservation_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ebc9ea5ab33d435e3b69a350d31371a62507b461040f464c3171e1b90b4b4f6b",
+      "note_hash": "9057baba3524ccb345f97326fbc44c7db1ff454a6899f82d93ebb28d322ae287",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

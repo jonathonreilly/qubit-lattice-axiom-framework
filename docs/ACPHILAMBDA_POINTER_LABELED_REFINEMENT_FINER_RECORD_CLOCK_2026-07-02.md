@@ -1,7 +1,12 @@
 # AC_phi_lambda Pointer-Labeled Refinement And The Finer-Record Doublet Clock
 **Date:** 2026-07-02
-**Claim type:** bounded theorem / registrable refinement + exact record-map algebra
-**Status authority:** independent audit lane only. This note does not set an audit verdict, edit registries, register primitives, change axioms, or claim `AC_phi_lambda` retirement.
+**Claim type:** bounded_theorem
+**Scope:** pointer-labeled C3 spectral refinement plus exact finer
+character-basis record-map algebra on the supplied record-formation frame; no
+value, normalization-unit, occurrence, or decoherence closure.
+**Status authority:** independent audit lane only. This note does not set an
+audit verdict, edit registries, register primitives, change axioms, or claim
+`AC_phi_lambda` retirement.
 **Primary runner:** [`scripts/acphilambda_pointer_labeled_refinement_finer_record_clock_2026_07_02.py`](../scripts/acphilambda_pointer_labeled_refinement_finer_record_clock_2026_07_02.py)
 
 ## Claim
@@ -154,7 +159,8 @@ It does not determine the numerical value or the normalization unit.
 - No time-metric import; steps are the native reconstruction unit.
 
 ## No-Go Discipline Gate
-**Status:** PASS for bounded refinement + exact map algebra; not a terminal no-go.
+This checklist supports bounded refinement and exact map algebra; it is not a
+terminal no-go.
 
 ### N1
 Alternative route enumeration:
@@ -217,5 +223,5 @@ python3 scripts/acphilambda_pointer_labeled_refinement_finer_record_clock_2026_0
 ```
 Measured expected close:
 ```text
-TOTAL: PASS=110 FAIL=0
+TOTAL: PASS=114 FAIL=0
 ```

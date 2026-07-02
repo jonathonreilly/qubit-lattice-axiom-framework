@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 875 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 29 |
-| Unaudited rows | 1724 |
+| Unaudited rows | 1723 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 29 |
 | Audited renaming rows | 25 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md) - critical; unaudited
+- [`staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md) - critical; audit_in_progress
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
 - [`yt_vertex_power_derivation`](../../docs/YT_VERTEX_POWER_DERIVATION.md) - critical; unaudited
 - [`staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md) - critical; unaudited

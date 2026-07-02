@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "wilson_m_h_per_channel_closure_bounded_note_2026-05-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "flavor_operator_spectral_functionals_do_not_force_r_half_no_go_note_2026-06-02"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27",
         "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03",
         "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
         "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
         "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
         "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11",
         "teleportation_resource_from_poisson_note",
-        "wilson_m_h_per_channel_closure_bounded_note_2026-05-09"
+        "wilson_m_h_per_channel_closure_bounded_note_2026-05-09",
+        "flavor_operator_spectral_functionals_do_not_force_r_half_no_go_note_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "904edfd87179605020c7de423d73b610b67151c80226d060b3bb393305aa885b",
+      "note_hash": "58eb73a3646e3025fedce12467a0796511b538bc8319730171b38af0284db325",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

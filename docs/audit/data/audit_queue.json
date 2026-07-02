@@ -138,15 +138,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
-      "claim_scope": null,
+      "claim_scope": "Bounded source-side B3 dependency repair: the hierarchy row's exponent carrier is sourced by kinetic isotropy, the retained 2^4 count, determinant u0-degree 16, the retained regulator-dependence no-go as boundary, and the P-FLUX branch line within its licensed surface.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "kinetic_isotropy_primitive",
         "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
@@ -155,11 +155,11 @@
         "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 9.077,
       "note_path": "docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_hierarchy_b3_staggered_supplier_cascade_2026_06_17.py",
       "transitive_descendants": 269
@@ -8753,15 +8753,15 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 9,
+      "direct_in_degree": 10,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 10.333,
+      "load_bearing_score": 11.17,
       "note_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_pre_record_reference_state_tracial_derivation.py",
-      "transitive_descendants": 56
+      "transitive_descendants": 71
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",

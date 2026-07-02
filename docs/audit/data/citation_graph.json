@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "teleportation_resource_from_poisson_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "wilson_m_h_per_channel_closure_bounded_note_2026-05-09"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
         "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
         "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15",
         "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
         "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
         "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
         "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11",
-        "teleportation_resource_from_poisson_note"
+        "teleportation_resource_from_poisson_note",
+        "wilson_m_h_per_channel_closure_bounded_note_2026-05-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4cb751eaa9a5d04512baa3d40deb38e62ca80596f0d504de3e493ccb1c0ee714",
+      "note_hash": "5404177a7ee02648cfb3d91c69526bb36664e612f6c9648fa40d5cfa3b210bd7",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

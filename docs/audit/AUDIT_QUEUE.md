@@ -15,9 +15,9 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | unaudited | critical | 922 | 10.85 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py` |
+| 1 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | audit_in_progress | critical | 922 | 10.85 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py` |
 | 2 | `observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18` | bounded_theorem | unaudited | critical | 922 | 10.85 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py` |
-| 3 | `yt_vertex_power_operator_counting_lemma_note_2026-05-17` | bounded_theorem | unaudited | critical | 917 | 11.34 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_vertex_power_operator_counting_lemma.py` |
+| 3 | `yt_vertex_power_operator_counting_lemma_note_2026-05-17` | bounded_theorem | unaudited | critical | 918 | 11.84 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_vertex_power_operator_counting_lemma.py` |
 | 4 | `staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10` | bounded_theorem | unaudited | critical | 915 | 15.34 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py` |
 | 5 | `axiom_first_reeh_schlieder_theorem_note_2026-05-01` | bounded_theorem | unaudited | critical | 901 | 16.82 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_reeh_schlieder_check.py` |
 | 6 | `yt_ward_identity_derivation_theorem` | bounded_theorem | unaudited | critical | 822 | 40.69 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |

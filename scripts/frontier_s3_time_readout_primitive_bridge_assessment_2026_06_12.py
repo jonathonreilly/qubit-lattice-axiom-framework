@@ -41,6 +41,7 @@ DOCS = REPO_ROOT / "docs"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+BRIDGE_FLOAT_TOL = 5.0e-12
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -181,10 +182,11 @@ def main() -> int:
     t_balance_tol = 2 * EXACT_TOL
     check(
         "t_balance is the absolute live T-channel slope/intercept ratio",
-        t_balance_err < live_ratio_tol,
+        t_balance_err < BRIDGE_FLOAT_TOL,
         (
             f"t_balance={tensor_data.t_balance:.12f}, "
-            f"|beta_T/alpha_T|={abs(data.rho_t):.12f}, residual={t_balance_err:.3e}"
+            f"|beta_T/alpha_T|={abs(data.rho_t):.12f}, "
+            f"err={t_balance_err:.3e}"
         ),
     )
 

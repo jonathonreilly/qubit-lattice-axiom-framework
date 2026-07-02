@@ -62,18 +62,16 @@ When present, a record locks exactly one local possibility from the subset
 available at that site under Admissibility; the locked possibility is invariant
 under repeated readout.
 
-Only records are readable. For any finite collection of pairwise-disjoint
-records, scalar readout `I` is additive, with `I(empty)=0`.
+Only records are readable: a readout value is determined by the locked
+possibilities read and by supplied structure, and varies with nothing else.
+For any finite collection of pairwise-disjoint records, scalar readout `I` is
+additive, with `I(empty)=0`.
 
 ## Qualification
 
 These axioms state only their named primitive content. Further physical
 structure requires derivation, bridge, explicit admission, or approved
 primitive registration before use as a premise.
-
-A readout may depend only on supplied structure, where the realized state and
-its records count as supplied; a value that varies with an unsupplied choice
-is not readable within the framework.
 
 A rule offered as a law must be well-defined at every state admissible under
 Admissibility throughout its declared domain; the domain must be declared as

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 212 |
-| **retained_bounded** | 944 |
+| **retained_bounded** | 945 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1599 |
+| unaudited | 1598 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1375 |
+| `audited_clean` | 1376 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1925 |
+| `unaudited` | 1924 |
 
 | claim_type | count |
 |---|---:|
@@ -121,7 +121,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 976 | 38.43 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
 | 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 35.82 | `unaudited` | unaudited |
 | 19 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
@@ -510,6 +510,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_round2_power_not_count_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_find_j_round5_trace_vs_center_state_final_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_hw1_staggered_projection_democratic_r0_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_hw_clifford_does_not_constrain_r_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -7043,6 +7044,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** In the finite C3 algebra with e0=(I+C+C^2)/3 and e1=I-e0, the densities rho_p=p e0/Tr(e0)+(1-p)e1/Tr(e1) for 0<=p<=1 are positive trace-one C3-invariant states, so p=1/2 is admissible but not selected.  _(class `A`)_
 - **chain closes:** True — Independently, e0=J/3 and e1=I-J/3 are orthogonal central idempotents with traces 1 and 2; rho_p has eigenvalues p on e0 and (1-p)/2 on e1, giving positivity, trace one, C3-invariance, trace masses (1/3,2/3) at p=1/3 and equal masses (1/2,1/2) at p=1/2. The Q(r) formula and physical selector are explicitly separated from the theorem and are not used as derived conclusions.
 - **rationale:** The runner source performs actual finite matrix computations rather than merely printing constants, and its checks match the independent algebraic audit of the displayed projections, traces, block averages, state simplex, and Q(r) arithmetic. The old block-compression error is correctly demoted: e0Ae0+e1Ae1 is not center-valued for general A, while the repaired center-valued average and C3 conjugation average are kept distinct. The clean verdict is bounded to the stated finite-algebra claim; it does not derive a physical Q=2/3 readout, a trace default, a Frobenius beta-family, or dynamics selecting p=1/2.
+- **auditor confidence:** high
+
+### `flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18`
+
+- **Note:** [`FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md`](../../docs/FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite normalized-character suppression kernel: for a supplied finite-dimensional unitary link/holonomy representation and normalized fibre trace average, the Koide block ratio is multiplied by |chi_R(U)/d_R|^2 <= 1, with no physical sector-to-representation readout derived.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T062737Z-a033b88d-flavor_gauge_holonomy_ch`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since U_R is unitary with eigenvalues |z_i|=1, the fibre-averaged coefficient is b_eff = b Tr(U_R)/d and r_R = r0 |sum_i z_i/d|^2, with d^2 - |sum_i z_i|^2 = sum_{i<j}|z_i-z_j|^2 >= 0.  _(class `A`)_
+- **chain closes:** True — The conclusion follows by finite matrix algebra once the bounded fibre-average setup is supplied: normalized trace gives the character factor and the unit-modulus eigenvalue identity gives the non-enhancement bound. The cited authorities are retained-grade for the finite link/generation/circulant surfaces, while the physical readout bridge is explicitly outside scope.
+- **rationale:** The load-bearing step is a genuine algebraic identity over finite unitary matrices, not a definition, fit, or external comparator. The runner source actually constructs the tensor-product hopping matrix and checks the character normalization and bound over deterministic phase grids; it does not merely print constants or import a contested numerical value. All direct dependencies are retained-grade under the rubric, including retained_bounded support, and the note preserves the separate open physical sector/readout question rather than claiming it.
 - **auditor confidence:** high
 
 ### `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15`

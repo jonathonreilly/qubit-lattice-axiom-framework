@@ -5,7 +5,8 @@
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane. This source note does not set or
 predict an audit outcome and does not edit any audit-owned registry.
-**Primary runner:** `scripts/frontier_reta_algebraic_irreducibility_2026_06_12.py`
+**Primary runner:** [`scripts/frontier_reta_algebraic_irreducibility_2026_06_12.py`](../scripts/frontier_reta_algebraic_irreducibility_2026_06_12.py)
+**Runner cache:** [`logs/runner-cache/frontier_reta_algebraic_irreducibility_2026_06_12.txt`](../logs/runner-cache/frontier_reta_algebraic_irreducibility_2026_06_12.txt)
 
 ## Boundary
 

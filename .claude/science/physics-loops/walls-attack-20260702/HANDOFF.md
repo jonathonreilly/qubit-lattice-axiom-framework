@@ -55,3 +55,19 @@ registrability + N-gated narrow exclusion of imported-basis scorings).
 
 Verdict: **OPEN**. (Evaluator run locally by the supervising agent per SKILL —
 separate evaluator agent not used; recorded here as required.)
+
+## Cluster-cap evaluation — before PR #4 in the carrier-measure family (block05)
+
+Prior: #4816 (separation), #4817 (decomposition), #4818 (registrability/C1a).
+Proposed: block05 (degeneracy-locus totality/C1b).
+1. New load-bearing premise: YES — the well-definedness/D-totality mechanism at
+   admissible degeneracy loci appears in none of the prior three.
+2. Distinct claim type: YES — admissibility-witness construction + conditional
+   exclusion completing the C1 ladder (vs separation / decomposition /
+   registrability transport).
+3. Independent reviewability: YES — self-contained eigenprojection witnesses +
+   own runner (32/0).
+4. Marginal review value: HIGH — completes the campaign's premise ladder
+   {R*, D-totality, C2, equal-channel-energy}; the conditional C1-completion is
+   the cross-PR payoff and is stated only here.
+Verdict: **OPEN** (evaluator run locally by the supervising agent per SKILL).

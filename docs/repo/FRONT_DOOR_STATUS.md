@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3596 |
-| Applied audit verdicts | 1390 |
-| Retained-grade rows, including boxed decorations | 1314 |
+| Applied audit verdicts | 1391 |
+| Retained-grade rows, including boxed decorations | 1315 |
 | Retained positive theorems | 193 |
 | Retained no-go rows | 195 |
-| Retained bounded rows | 870 |
+| Retained bounded rows | 871 |
 | Boxed decorations under retained parents | 56 |
 | Open gates | 24 |
 | Unaudited rows | 1885 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1897 |
-| Ready rows | 130 |
+| Total pending rows | 1896 |
+| Ready rows | 129 |
 | Cycle-break targets | 14 |
-| Critical pending | 399 |
+| Critical pending | 398 |
 | High pending | 289 |
 | Medium pending | 510 |
 | Leaf pending | 699 |
 
 Next ready rows by queue order:
 
-- [`observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18`](../../docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md) - critical; audit_in_progress
 - [`observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18`](../../docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 - [`staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md) - critical; unaudited
 - [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 - [`staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md) - critical; unaudited
 - [`axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md) - critical; unaudited
+- [`staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11`](../../docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -65,7 +65,7 @@
     },
     "codex-gpt-5.5": {
       "audits_with_runner_class": {
-        "A": 663,
+        "A": 664,
         "B": 25,
         "C": 449,
         "D": 7,
@@ -79,31 +79,31 @@
         "same_severity": 34
       },
       "criticality_counts": {
-        "critical": 225,
+        "critical": 226,
         "high": 136,
         "leaf": 479,
         "medium": 336
       },
-      "cross_confirmation_agreement_rate": 0.804,
+      "cross_confirmation_agreement_rate": 0.805,
       "cross_confirmation_outcomes": {
-        "confirmed": 275,
+        "confirmed": 276,
         "third_confirmed_first": 30,
         "third_confirmed_hybrid": 3,
         "third_confirmed_second": 34
       },
-      "cross_confirmation_pairs_agreed_first_try": 275,
-      "cross_confirmation_pairs_n": 342,
-      "cross_confirmation_pairs_seen": 342,
+      "cross_confirmation_pairs_agreed_first_try": 276,
+      "cross_confirmation_pairs_n": 343,
+      "cross_confirmation_pairs_seen": 343,
       "judicial_third_pass_count": 63,
       "overturned_by_third": 58,
       "ratified_by_third": 58,
       "third_pass_decisions_n": 116,
       "third_pass_overturn_rate": 0.5,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
-      "total_audits": 1176,
+      "total_audits": 1177,
       "verdict_changed_after_re_audit": 1019,
       "verdict_counts": {
-        "audited_clean": 1062,
+        "audited_clean": 1063,
         "audited_conditional": 27,
         "audited_decoration": 55,
         "audited_failed": 1,
@@ -134,9 +134,9 @@
   "totals": {
     "auditor_families_observed": 3,
     "overall_agreement_rate": 0.813,
-    "total_audits_recorded": 1390,
-    "total_cross_confirmation_family_participations": 401,
-    "total_cross_confirmation_pairs": 358,
+    "total_audits_recorded": 1391,
+    "total_cross_confirmation_family_participations": 402,
+    "total_cross_confirmation_pairs": 359,
     "total_third_pass_decisions": 128
   }
 }

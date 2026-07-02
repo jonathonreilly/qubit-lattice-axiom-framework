@@ -2,7 +2,13 @@
 
 **Date:** 2026-07-02
 **Claim type:** bounded_theorem
-**Audit status:** set only by the independent audit lane. This source note does not set, predict, or apply an audit verdict.
+**Claim scope:** parameter-free native finite-carrier full-resolution
+registration kernel, readout-floor split, and unit-variance-point route
+refutation within the stated holonomy-family reading; no record-step
+occurrence, position-classicality, Wilson action-surface selection, continuum
+limit, global `tau = 1/2` refutation, or audit-status promotion.
+**Status authority:** independent audit lane only. This source note does not
+set, predict, or apply an audit verdict.
 **Primary runner:**
 [`scripts/native_carrier_registration_kernel_rate_vs_unit_variance_point_2026_07_02.py`](../scripts/native_carrier_registration_kernel_rate_vs_unit_variance_point_2026_07_02.py)
 
@@ -314,5 +320,5 @@ python3 scripts/native_carrier_registration_kernel_rate_vs_unit_variance_point_2
 Expected final line:
 
 ```text
-TOTAL: PASS=65 FAIL=0
+TOTAL: PASS=68 FAIL=0
 ```

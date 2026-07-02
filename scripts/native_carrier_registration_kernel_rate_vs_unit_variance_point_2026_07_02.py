@@ -441,7 +441,7 @@ def section_f():
     note_text = NOTE.read_text(encoding="utf-8")
     flat_note = flatten(note_text)
     markers = [
-        "set only by the independent audit lane",
+        "independent audit lane only",
         "parameter-free",
         "zero-sum",
         "does not derive that a record step occurs",
@@ -458,9 +458,19 @@ def section_f():
     for marker in markers:
         require_contains(f"F2 note preserve marker: {marker}", flat_note, marker)
 
+    canonical = [
+        "**Claim type:** bounded_theorem",
+        "**Claim scope:** parameter-free native finite-carrier full-resolution",
+        "**Status authority:** independent audit lane only.",
+    ]
+    for marker in canonical:
+        require_contains(f"F2 canonical source metadata: {marker}", flat_note, marker)
+
     runner_text = Path(__file__).read_text(encoding="utf-8")
     combined = (note_text + "\n" + runner_text).lower()
     forbidden = [
+        "**audit " + "status:**",
+        "**status:** " + "pass",
         "audit_" + "status:",
         "effective_" + "status:",
         "only " + "route",

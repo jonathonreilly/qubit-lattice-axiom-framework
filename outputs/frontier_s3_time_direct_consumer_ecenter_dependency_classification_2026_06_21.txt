@@ -1,0 +1,45 @@
+S3/Route-2 direct-consumer E-center dependency classification
+==============================================================================
+PASS: S3_TIME_DIRECT_CONSUMER_ECENTER_DEPENDENCY_CLASSIFICATION_NOTE_2026-06-21.md exists (docs/S3_TIME_DIRECT_CONSUMER_ECENTER_DEPENDENCY_CLASSIFICATION_NOTE_2026-06-21.md)
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists (docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
+PASS: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md exists (docs/QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)
+PASS: S3_TIME_PRIMITIVE_CHAIN_NOTE.md exists (docs/S3_TIME_PRIMITIVE_CHAIN_NOTE.md)
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md exists (docs/S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md)
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md exists (docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md)
+PASS: QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md exists (docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md)
+
+A. Source-surface anchors
+------------------------------------------------------------------------------
+PASS: exact readout map names the reduced P(rho_E) family and E-center lift
+PASS: exact time note distinguishes slice backbone from unique readout theorem
+PASS: primitive chain note names safe uses and forbidden readout promotion
+PASS: factor-rigidity note localizes ambiguity in spatial prefactor
+PASS: bilinear primitive note keeps K_R definition-only with physical bridge open
+PASS: E-center blindness no-go names the exact safe blind subspace
+PASS: new note records safe and dependent consumer classes
+
+B. Exact carrier subspace classification
+------------------------------------------------------------------------------
+PASS: E-shell carrier column matches exact endpoint basis (residual=4.163e-17)
+PASS: E-center carrier column matches exact endpoint basis (residual=1.388e-16)
+PASS: T-shell carrier column matches exact endpoint basis (residual=2.220e-16)
+PASS: T-center carrier column matches exact endpoint basis (residual=2.220e-16)
+PASS: E-center-blind subspace has rank 3 (rank=3)
+PASS: adding E-center gives full rank 4 (rank=4)
+PASS: E-center delta direction is not in the blind subspace (projection residual=1.667e-01)
+PASS: E-shell P(rho_E) classification is correct (P0=(Fraction(1, 1), Fraction(0, 1)), P21/4=(Fraction(1, 1), Fraction(0, 1)))
+PASS: T-shell P(rho_E) classification is correct (P0=(Fraction(0, 1), Fraction(-2, 1)), P21/4=(Fraction(0, 1), Fraction(-2, 1)))
+PASS: T-center P(rho_E) classification is correct (P0=(Fraction(0, 1), Fraction(-5, 3)), P21/4=(Fraction(0, 1), Fraction(-5, 3)))
+PASS: E-center P(rho_E) classification is correct (P0=(Fraction(1, 1), Fraction(0, 1)), P21/4=(Fraction(15, 8), Fraction(0, 1)))
+
+C. Consumer rule
+------------------------------------------------------------------------------
+PASS: safe direct consumers avoid the E-center readout wall
+PASS: dependent consumers all require a separate E-center/source rule
+PASS: new note lists all safe consumer labels
+PASS: new note lists all dependent consumer labels
+
+Summary
+------------------------------------------------------------------------------
+TOTAL: PASS=29, FAIL=0
+VERDICT: direct consumers are classified by whether they evaluate the E-center delta_E direction.

@@ -1,7 +1,8 @@
 # Literature Bridges
 
-No external literature bridge is used in block20.
+No external literature bridge was used in this block.
 
-All block20 checks are internal to the Route-2 source notes, exact carrier
-columns, and existing runner helpers.
-
+All inputs are current repository surfaces and exact runner checks. A future
+source-domain E-center run may need outside mathematics only if the repo lacks
+the typed source or representation theorem needed to constrain the center
+direction.

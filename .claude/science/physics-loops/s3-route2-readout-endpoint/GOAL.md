@@ -1,27 +1,16 @@
-# S3 / Route-2 Readout Endpoint Physics Loop
+# Goal
 
-**Runtime request:** 12-hour physics-loop campaign.
-**Active block:** block20.
-**Branch:** `physics-loop/s3-route2-readout-endpoint-block20-20260621`
+Block21 answers the next useful S3/Route-2 target:
 
-## Objective
+> Classify current direct consumers by whether they evaluate the unresolved
+> E-center `delta_E` direction.
 
-Attack the `s3_time_theta_to_slice_coupling_note` readout endpoint triple from
-first principles, trying to derive or sharply constrain
+The practical result is a reviewable exact-support split. Time-channel and
+carrier-definition consumers can be used without waiting for a new E-center
+rule, while `q_E`, `rho_E`, center `T/E`, physical eta-floor, unique `P_R`,
+and final Einstein/Regge consumers remain blocked by the same E-center/source
+readout residual.
 
-```text
-(beta_T/alpha_T, alpha_T/alpha_E, beta_E/alpha_E) = (-1, -2, 21/4).
-```
-
-Do not audit or apply verdicts. Make PRs for coherent science blocks. Do not
-push to `main` and do not refresh existing PR branches onto `main`.
-
-## Block20 Target
-
-Package the factor-rigidity / readout-primitive bridge split:
-
-- preserve the exact factor-rigidity support statements for the time channel;
-- isolate the local `delta_E` source of remaining `rho_E` dependence;
-- prevent downstream consumers from citing factor-rigidity as a readout-map
-  primitive-selection theorem.
-
+This is the recommended near-term target because it creates branch-local
+science that reviewers can cherry-pick while preserving the hard positive
+target for a later source-domain run.

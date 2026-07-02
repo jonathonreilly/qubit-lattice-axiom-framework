@@ -120,7 +120,8 @@ axioms Lattice, Qubit, Admissibility, and Record. Lattice is the cubic `Z^3`
 lattice with nearest-neighbor adjacency. Qubit is the domain of local
 possibilities with full one-site algebraic presentation `M_2(ℂ)`; `Cl(3,0)` is
 equivalent notation, not extra primitive structure, and no possibility is
-privileged.
+privileged; possibilities are distinguished by the supplied algebraic structure
+alone.
 Admissibility is one fixed finite-neighborhood rule, the same at every lattice
 translate; for each site, the available possibilities are determined by, and
 vary with, the nearest-neighbor conditions, consistent with local records. A

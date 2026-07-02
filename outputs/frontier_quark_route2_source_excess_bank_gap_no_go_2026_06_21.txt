@@ -1,0 +1,76 @@
+Route-2 source-excess current-bank gap
+Status: bounded current-bank no-go; not an audit verdict.
+TRACE: negative_route_pruning
+
+PART 1: named current-bank authority anchors
+PASS: bank file exists: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md contains marker: K_R(q) := [[u_E(q), u_T(q)]
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md contains marker: delta_A1
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md contains marker: definition only
+PASS: bank file exists: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: P_R = [[alpha_E, 0, beta_E, 0]
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: irreducible missing map entry
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: beta_E / alpha_E = 21/4
+PASS: bank file exists: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md
+PASS: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md contains marker: There is no current typed edge
+PASS: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md contains marker: The missing step is the typed
+PASS: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md contains marker: source-domain bridge theorem
+PASS: bank file exists: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md
+PASS: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md contains marker: Xi_P(t ; c) = (P_R c)
+PASS: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md contains marker: lacks is a theorem that selects one unique `P_R`
+PASS: bank file exists: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains marker: The next theorem target is the missing readout-map endpoint triple
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains marker: exact conditional readout-to-slice family
+PASS: bank file exists: frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py
+PASS: frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py contains marker: (w_E/w_T1)^{-1} = 3/2 = kappa
+PASS: frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py contains marker: (w_E/w_T1)^{-2} = 9/4
+PASS: frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py contains marker: No named functional produces an
+PASS: bank file exists: frontier_quark_route2_source_domain_bridge_no_go.py
+PASS: frontier_quark_route2_source_domain_bridge_no_go.py contains marker: CURRENT_TYPED_EDGES
+PASS: frontier_quark_route2_source_domain_bridge_no_go.py contains marker: MISSING_BRIDGE
+PASS: frontier_quark_route2_source_domain_bridge_no_go.py contains marker: unsupported source-domain identification
+
+PART 2: absence of current source-excess target markers
+PASS: current bank does not contain source-excess marker: b_E/a_E
+PASS: current bank does not contain source-excess marker: bE/aE
+PASS: current bank does not contain source-excess marker: source-excess
+PASS: current bank does not contain source-excess marker: source excess
+PASS: current bank does not contain source-excess marker: S_dual
+PASS: current bank does not contain source-excess marker: source-preparation map
+PASS: current bank does not contain source-excess marker: source preparation map
+PASS: current bank does not contain source-excess marker: diag(a_E
+PASS: current bank does not contain source-excess marker: 7/2
+
+PART 3: exact target remains sharp
+PASS: one-power readout gives rho_E=3/2
+PASS: target rho_E remains 21/4
+PASS: source-excess target is b_E/a_E=7/2
+PASS: T-side target remains rho_T=-1 and q_T=5/6
+PASS: shell T/E target remains -2
+
+PART 4: typed reachability gap
+PASS: current typed graph has no path from delta_A1 to source_excess_tilt_7_2
+PASS: current typed graph has no path from u_E_u_T to source_excess_tilt_7_2
+PASS: current typed graph has no path from K_R to source_excess_tilt_7_2
+PASS: current typed graph has no path from schur_weights to source_excess_tilt_7_2
+PASS: current typed graph has no path from source_domain_bank to source_excess_tilt_7_2
+PASS: adding the missing typed source-excess theorem creates reachability
+PASS: all current edges have named authorities
+
+PART 5: note and status firewall
+PASS: note contains marker: Actual current-surface status: bounded current-bank no-go for the source-excess target
+PASS: note contains marker: This is not an audit verdict
+PASS: note contains marker: does not resolve the parent gate
+PASS: note contains marker: b_E/a_E = 7/2
+PASS: note contains marker: The current named bank does not contain a typed source-excess primitive
+PASS: note avoids overclaim marker: status-authority phrase
+PASS: note avoids overclaim marker: parent-closure phrase
+PASS: note avoids overclaim marker: current-surface endpoint-derivation phrase
+PASS: note avoids overclaim marker: audit-ratification phrase
+PASS: note avoids overclaim marker: branch-local status-promotion phrase
+PASS: note avoids overclaim marker: future-retention phrase
+PASS: note avoids overclaim marker: promotion-to-retention phrase
+PASS: note avoids overclaim marker: no-future-theorem phrase
+
+TOTAL: PASS=60, FAIL=0
+VERDICT: bounded current-bank no-go. The normalized source-excess target is b_E/a_E=7/2, but the named current Route-2 source/readout bank has no typed primitive deriving that target.

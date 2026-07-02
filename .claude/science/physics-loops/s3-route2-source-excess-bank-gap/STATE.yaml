@@ -1,0 +1,75 @@
+loop_slug: s3-route2-source-excess-bank-gap
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 readout endpoint triple;
+  attack s3_time_theta_to_slice_coupling_note from first principles and make
+  review PRs for coherent science blocks without auditing or pushing to main.
+block: 67
+branch: physics-loop/s3-route2-source-excess-bank-gap-block67-20260621
+base: origin/main
+base_commit: 4ee5700917feb377da8ece8b6b2934b9d65249ad
+local_science_commit: 835335009dab41d0406d1f041d299eff1967b3a2
+remote_science_commit: 46ac99182800de08cbab72af521143b78ef7e337
+worktree: /private/tmp/cl3-physics-loop-s3-route2-source-excess-bank-gap-block67-20260621
+date: 2026-06-21
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: current source-bank source-excess target gap
+hard_residual: >-
+  Check whether the current named source/readout bank already contains a typed
+  primitive deriving b_E/a_E=7/2.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+repo_lock:
+  mode: degraded_branch_local
+  reason: "python3 scripts/automation_lock.py status fails with Permission denied on /Users/jonreilly"
+files_touched:
+  - docs/QUARK_ROUTE2_SOURCE_EXCESS_BANK_GAP_NO_GO_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_source_excess_bank_gap_no_go_2026_06_21.py
+  - outputs/frontier_quark_route2_source_excess_bank_gap_no_go_2026_06_21.txt
+  - .claude/science/physics-loops/s3-route2-source-excess-bank-gap/
+commands_run:
+  - "python3 scripts/automation_lock.py status"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_excess_bank_gap_no_go_2026_06_21.py | tee outputs/frontier_quark_route2_source_excess_bank_gap_no_go_2026_06_21.txt"
+  - "python3 -m py_compile scripts/frontier_quark_route2_source_excess_bank_gap_no_go_2026_06_21.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_blindness_no_go.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_route2_readout_record_positivity_no_go.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py"
+  - "git diff --cached --check"
+  - "overclaim scan over staged changed files"
+  - "ASCII scan over staged changed files"
+command_results:
+  - "automation_lock status unavailable: Permission denied on /Users/jonreilly; continuing under degraded branch-local lock"
+  - "source-excess bank gap runner: TOTAL: PASS=60, FAIL=0"
+  - "py_compile: PASS"
+  - "exact readout map: PASS=11 FAIL=0"
+  - "q_E covariance Schur quadratic no-go: PASS=11 FAIL=0"
+  - "E-center blindness no-go: TOTAL: PASS=14, FAIL=0"
+  - "source-domain bridge no-go: TOTAL: PASS=103, FAIL=0"
+  - "readout record positivity no-go: TOTAL: PASS=8 FAIL=0"
+  - "s3 time theta to slice coupling: PASS=12 FAIL=0"
+  - "s3 time theta to slice coupling factor rigidity: PASS=64 FAIL=0"
+  - "git diff --cached --check: PASS"
+  - "overclaim scan: PASS"
+  - "ASCII scan: PASS"
+imports_retired:
+  - "The shortcut that the current named Route-2 source/readout bank already supplies b_E/a_E=7/2."
+open_imports:
+  - "A new typed source-excess theorem deriving b_E/a_E=7/2."
+  - "Or a readout-only inverse-square coefficient theorem."
+review_disposition: local_firewall_pass_review_deferred_to_pr_reviewer
+pr_status: open
+pr_number: 4598
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4598
+pr_identity_view: >-
+  {"baseRefName":"main","headRefName":"physics-loop/s3-route2-source-excess-bank-gap-block67-20260621","number":4598,"state":"OPEN","title":"[physics-loop] s3-route2-source-excess-bank-gap block67 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4598"}
+next_exact_action: >-
+  Either add a typed source-excess theorem for b_E/a_E=7/2, or pivot to the
+  readout-only inverse-square coefficient route.
+stop_condition: none

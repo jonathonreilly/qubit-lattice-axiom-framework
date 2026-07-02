@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 195 |
-| **retained_bounded** | 870 |
+| **retained_bounded** | 871 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1731 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -64,8 +63,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1268 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1269 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
@@ -136,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -189,6 +187,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_cluster_decomposition_temporal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2304,6 +2303,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The small-k expansion 2(1-cos k_mu) ~ k_mu^2 and the radial integral test give the stated threshold. The finite table entries are actually computed by the runner and independently match the displayed values; no Ward normalization, no-SSB theorem, D9 kernel authority, or substrate-minimality conclusion is imported.
 - **rationale:** The narrowed claim is a mathematical IR-sum scaling statement from the displayed lattice dispersion and standard integral comparison, not an external Coleman-Mermin-Wagner theorem. The runner source enumerates the lattice sums rather than printing constants, and its E0-E3 checks all pass. The formula inventory check finds the displayed small-k scaling, radial exponent, divergence classes, and quantitative table entries consistent with the note's definitions. The explicit non-claims prevent the earlier Ward/SSB/D9/substrate-minimality gaps from being load-bearing here.
 - **auditor confidence:** high
+
+### `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional low-temperature asymptotic for the defined half-filled free-Fermi band-integral probe: any realized-class finite-range sublattice-periodic Hermitian hopping kernel with a finite nonempty point-like linear-cone zero set satisfying hypothesis (Z) has u(T)=sum |det V|^-1 (7/8)(pi^2/30) T^4 + O(T^5); the explicit non-(Z) witness kernels only certify that both clauses of (Z) are load-bearing.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-judge-panel-gpt-5.5-20260702T082055Z-unanimous`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Given hypothesis (Z), each cone window is replaced by its tangent-cone integral with O(T^5) error; the supplied Fermi integral plus the change of variables u=V_jb q gives |det V_jb|^-1 (7/8)(pi^2/30) T^4 per zero branch, summed over the finite zero set.  _(class `A`)_
+- **chain closes:** True — All five independent panel judges sided with the first audit. Under the class rubric, the decisive theorem step is class A: an analytic cone-reduction/Jacobian and Fermi-integral normalization after the kernel hypothesis (Z), the half-filled free-Fermi probe, and the retained 7/8 coefficient source have been supplied. The note contributes a clean bounded conditional theorem surface, but it does not compute the realized kernel, prove (Z), select a branch, or derive a species inventory from the framework baseline. The runner's explicit lattice witnesses and falsification legs corroborate non-vacuity and load-bearing hypotheses, but they are certificate support rather than the theorem-grade load-bearing step.
+- **rationale:** All five independent panel judges sided with the first audit. Under the class rubric, the decisive theorem step is class A: an analytic cone-reduction/Jacobian and Fermi-integral normalization after the kernel hypothesis (Z), the half-filled free-Fermi probe, and the retained 7/8 coefficient source have been supplied. The note contributes a clean bounded conditional theorem surface, but it does not compute the realized kernel, prove (Z), select a branch, or derive a species inventory from the framework baseline. The runner's explicit lattice witnesses and falsification legs corroborate non-vacuity and load-bearing hypotheses, but they are certificate support rather than the theorem-grade load-bearing step.
+- **auditor confidence:** judicial
 
 ### `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06`
 

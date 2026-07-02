@@ -81,14 +81,18 @@ Recorded explicitly approved axiom updates:
   Qualification section of `docs/MINIMAL_AXIOMS_2026-06-29.md` (owner-approved
   wording update, 2026-07-02; source file edited in place, bundled same-day
   with the Admissibility clarification below so the premise-hash re-audit
-  waves coincide). The clauses state readout discipline only: a scalar
-  readout must be well-defined from supplied structure alone (invariant under
-  every unsupplied auxiliary choice, with supplied structure meaning the four
-  axioms, approved primitives, explicit admissions, and the realized state
-  through the registered pointwise interface); and a prescription offered as
-  a framework-level readout or selection law must be well-defined at every
-  law-admissible realized state in its declared domain, while pointwise
-  evaluation under the realized-state primitive remains admissible. They name
+  waves coincide). The two added sentences read: "A readout may depend only
+  on supplied structure; a value that varies with an unsupplied choice is not
+  readable." and "A rule offered as a law must be well-defined at every
+  law-admissible realized state; a prescription defined only at particular
+  states is pointwise content, not a law." Reading notes: supplied structure
+  is pinned by the Qualification's first paragraph (the four axioms, approved
+  primitives, explicit admissions, approved registrations — the realized
+  state enters through the registered pointwise-interface primitive, and an
+  imported basis, frame, or convention is an unsupplied choice); totality has
+  no declared-domain escape (restricting a law's domain to convenient states
+  is the excluded move), while conditional rules and pointwise evaluation
+  under the realized-state primitive remain admissible. The clauses name
   no operator, basis, weighting, selector, kinetic class, or value; they add
   no axiom and no primitive; downstream consequences remain theorem content
   subject to independent audit. In the same update,

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 201 |
-| **retained_bounded** | 907 |
+| **retained_bounded** | 908 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1660 |
+| unaudited | 1659 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1322 |
+| `audited_clean` | 1323 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1986 |
+| `unaudited` | 1985 |
 
 | claim_type | count |
 |---|---:|
@@ -192,6 +192,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_reeh_schlieder_theorem_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2427,6 +2428,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The displayed sign, reindexing, and matrix-ordering steps close as finite algebra once the staggered/Grassmann KS carrier and phase form are admitted. The proof does not derive that carrier from the axioms, so the correct scope remains bounded rather than positive.
 - **rationale:** The load-bearing proof is an algebraic closure over the admitted carrier, not a numerical match or definition substitution. The runner source constructs the staggered matrix and two-step generators, checks the U(1) sign directly on arbitrary sampled fields, verifies the symbolic arbitrary-bilinear sign identity, and checks the localized two-step Ward identity; E8 is only a source-dependency boundary check. All provided direct dependencies are accepted-premise or retained-grade, including retained_bounded bounded suppliers, so the bounded theorem chain closes while not promoting the carrier itself.
 - **auditor confidence:** medium
+
+### `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite even L=4,6 periodic Z4 staggered-Dirac matrices on the tested free, random U(1), and one-quantum principal-plaquette U(1) backgrounds satisfy the stated epsilon anticommutation, heat-kernel trace/index equality, integer-valuedness, and tested gauge invariance; no anomaly, continuum, nonzero-index, Wess-Zumino, or non-Abelian claim is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T030739Z-089cb50f-axiom_first_lattice_wz_f`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because D is finite-dimensional and anti-Hermitian with epsilon D epsilon = -D, D^dagger D commutes with epsilon; positive modes pair between epsilon sectors, so Tr(epsilon exp(-t D^dagger D)) equals n_+ - n_- and is t-independent.  _(class `A`)_
+- **chain closes:** True — The scoped conclusion follows by finite-dimensional matrix algebra from the displayed staggered construction and even-torus epsilon grading. The runner directly constructs the matrices and backgrounds and checks the bounded L=4,6 cases without importing an external comparator or contested value.
+- **rationale:** The runner constructs the finite staggered matrices, U(1) links, heat-kernel diagonals, spectra, gauge rotations, plaquette sums, and Polyakov loops directly; it is not a print-only or constant-substitution runner. Independently, every nearest-neighbor hop on an even torus flips epsilon, the U(1) staggered D is anti-Hermitian, D^dagger D commutes with epsilon, positive modes pair between epsilon sectors, and site-diagonal gauge rotations commute with epsilon. The explicit flux background is a designed finite background whose principal plaquette-angle sum is checked algebraically, and the audited scope remains only the bounded finite-matrix theorem.
+- **auditor confidence:** high
 
 ### `axiom_first_reeh_schlieder_theorem_note_2026-05-01`
 

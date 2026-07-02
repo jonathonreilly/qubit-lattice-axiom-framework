@@ -301,6 +301,15 @@ No fitted parameters. No observed values used as proof inputs.
   supplied by the row consuming this theorem or by a later retained
   supplier.
 
+  Source-side N5 support is now isolated in
+  [`SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md`](SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md):
+  on the current single-clock source packet, the admitted physical-clock
+  inventory contains exactly the supplied `(T̂², 2a_τ)` transfer/step pair.
+  This supports the admission wording of (B-AXIS.3) only. It does not derive
+  (B-AXIS.1), does not select the axis/transfer construction in (B-AXIS.2),
+  and does not mathematically exclude arbitrary commuting positive factor
+  transfers.
+
 The older declared finite-range generator premise `(B-RANGE)` is no
 longer a current premise of this theorem. It was replaced by the
 retained_bounded R-FBQL supplier on the narrower free bilinear exact-log

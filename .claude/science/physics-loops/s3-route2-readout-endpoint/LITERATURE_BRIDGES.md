@@ -1,3 +1,4 @@
 # Literature Bridges
 
-No external literature is used in block 03.
+No literature bridge was used in block04. The packet uses repo-internal
+authorities and exact rational arithmetic only.

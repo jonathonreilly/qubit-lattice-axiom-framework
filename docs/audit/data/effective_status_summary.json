@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1805,
-    "decoration": 60,
+    "bounded_theorem": 1804,
+    "decoration": 61,
     "meta": 332,
     "no_go": 359,
     "open_gate": 171,
@@ -52,6 +52,7 @@
     "decoration_under_interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06": 1,
     "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": 2,
     "decoration_under_koide_dweh_cyclic_compression_note_2026-04-18": 1,
+    "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18": 1,
     "decoration_under_lattice_nn_deterministic_rescale_note": 1,
     "decoration_under_linear_response_true_kubo_note": 1,
     "decoration_under_mirror_mutual_information_chokepoint_note": 1,
@@ -73,7 +74,7 @@
     "retained_bounded": 885,
     "retained_no_go": 198,
     "retained_pending_chain": 4,
-    "unaudited": 1708
+    "unaudited": 1707
   },
   "retained_pending_chain_count": 4,
   "retained_pending_chain_examples": [

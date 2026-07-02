@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1710
+**Total pending:** 1709
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 99
 
 By criticality:
-- `critical`: 299
+- `critical`: 298
 - `high`: 314
 - `medium`: 513
 - `leaf`: 584
@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | unaudited | critical | 290 | 9.19 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py` |
+| 1 | `gravity_clean_derivation_note` | bounded_theorem | unaudited | critical | 288 | 18.68 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gravity_clean_weak_field_composition_certificate_2026_06_11.py` |
 | 2 | `hierarchy_b3_staggered_supplier_cascade_note_2026-06-17` | bounded_theorem | unaudited | critical | 269 | 9.08 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_b3_staggered_supplier_cascade_2026_06_17.py` |
 | 3 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | unaudited | critical | 264 | 9.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_clifford_chirality_dimension_narrow.py` |
 | 4 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | unaudited | critical | 1119 | 10.63 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py` |

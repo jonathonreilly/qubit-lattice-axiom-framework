@@ -1,13 +1,13 @@
-# Record-Composition Bridge: Semigroup + Positivity Selection Reduces the Action Wall to One Dynamics-Shaped Premise (Bounded Note)
+# Record-Composition Bridge: Semigroup + Positivity + Locality Reduce the Action Wall to Three Named Premises (C-add Dynamics-Family; POS + LOC Branches) (Bounded Note)
 
 **Date:** 2026-07-02
 **Type:** bounded theorem (bridge decomposition + exact selection facts)
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This note does **not** set or
 predict any audit outcome; it records a decomposition and a set of exact facts.
-**Actual current surface status:** the action-selection question remains the
-*well-posed open physical question* of the parent relocation note. Nothing here
-closes it. The one non-axiom premise it isolates (C-add) is **not adopted**.
+**Actual current surface status:** the action-selection question remains the *well-posed
+open physical question* of the parent relocation note; nothing here closes it. The
+non-axiom premises it isolates (C-add, POS, LOC) are **not adopted**.
 **Primary runner:**
 [`scripts/frontier_record_composition_bridge_positivity_2026_07_02.py`](../scripts/frontier_record_composition_bridge_positivity_2026_07_02.py)
 **Runner output:**
@@ -15,29 +15,40 @@ closes it. The one non-axiom premise it isolates (C-add) is **not adopted**.
 
 ## FIREWALL (read first)
 
-- **C-add is NAMED, GROUNDED, and NOT derived or adopted here.** It is the premise
-  that a supplied one-step record-growth process composes so the two-step
-  class-weight kernel is the *convolution* of the one-step kernels. Its readout half
-  is axiom-supplied; its kernel half is **dynamics-shaped content the four axioms
-  explicitly do not supply** (check 03). C-add is a conditional premise only.
-- **No action is adopted or adjudicated** (Wilson, HK, Manton, exact-Q-gen).
-- **The T3 selection is family-level**, among the *named* candidate family
-  {Wilson, HK / wrapped-Gaussian, Manton, exact-Q-gen}. A hostile *unnamed*
-  positive convolution-semigroup member is **not** generically excluded.
-- **The parent relocation note is unaudited; its caveat is inherited.** All
-  action-lane campaign citations are **review-pending** (see Dependencies).
-- **Nothing here edits axioms, policy, primitives, or registries; this note sets
-  no audit status.** The independent audit lane owns all statuses.
+- **Three named premises carry all non-axiom weight; NONE is adopted.** **C-add**
+  (dynamics-**family**): a one-step process composes so the two-step class-weight kernel
+  is the *convolution* of the one-step kernels — tri-partitioned into (i) disjoint-union
+  growth, (ii) class-surface `(a+b) mod N` addition, (iii) kernel convolution, all inside
+  this one premise, none axiom-supplied (check 03). **POS** (branch): entrywise-
+  nonnegative weights — the memo **withholds** weights, signed weights a live branch.
+  **LOC** (branch): single-step nearest-neighbor structure (**review-pending** block10).
+- **The selection has a genuine finite-N witness.** Composition + POS + LOC select, **at
+  finite N**, the **nearest-neighbor heat** family `L_NN=circulant(-2,1,0,0,1)` — off-
+  diagonals literally `1` (Metzler), a convolution semigroup, single-step local. Its
+  **un-taken** `a→0` limit is the heat-kernel / wrapped Gaussian; that label belongs to
+  the **un-taken** limit, not the finite-N object (no continuum-limit equivalence
+  on-baseline).
+- **No action is adopted or adjudicated** (Wilson, HK, Manton, exact-Q-gen). The
+  selection is **family-level** among *named* candidates; a hostile *unnamed* positive
+  convolution-semigroup member is **not** generically excluded.
+- **Scope honesty.** The exact facts live on abelian `Z_N` toy surfaces; the parent
+  wall is **SU(3)**. The toys witness the **premise structure** (composition /
+  positivity / locality), **not** the SU(3) selection itself.
+- **The parent relocation note is unaudited; its caveat is inherited.** All campaign
+  citations are **review-pending**; siblings are cited by number, **not read or
+  matched** — every recomputation here is self-contained.
+- **Nothing here edits axioms, policy, primitives, or registries; this note sets no
+  audit status.** The independent audit lane owns all statuses.
 
 ## Purpose
 
 The parent relocation note (2026-06-08) converted action-selection from a foreclosed
-no-go into a *well-posed open physical question* on the physical-lattice baseline.
-This note **decomposes** that question into (a) exact, floats-free arithmetic facts
-that hold outright, plus (b) a single named non-axiom premise, **C-add**, carrying
-all remaining dynamics weight; it then **maps** — without taking — the candidate
-homes for C-add and flags the residual for the owner. It is a bridge-decomposition
-note, not a selection result.
+no-go into a *well-posed open physical question* on the physical-lattice baseline. This
+note **decomposes** that question into exact floats-free arithmetic facts plus **three
+named premises** — C-add, POS, LOC — carrying the remaining dynamics, positivity, and
+locality weight, then **maps** C-add's candidate homes without taking them. The earlier
+draft's single-premise framing is corrected: this carries a genuine finite-N selection
+witness (the nearest-neighbor heat family), not a one-premise reduction.
 
 ## Supplied Surface (landed text, quoted) `[checks 1-4]`
 
@@ -47,8 +58,7 @@ From `docs/MINIMAL_AXIOMS_2026-06-29.md`:
 - Readout additivity (the axiom-supplied half of C-add): *"For any finite
   collection of pairwise-disjoint records, scalar readout `I` is additive, with
   `I(empty)=0`."*
-- The dynamics disclaimer (why C-add's kernel half is **not** supplied), from the
-  "Relation To Dynamics And Kinetic Branch Selection" section — Admissibility
+- The dynamics disclaimer (why C-add's kernel half is **not** supplied): Admissibility
   *"does not choose a Hamiltonian or transfer operator, supply transition
   probabilities or weights, select a scalar or nonzero kinetic branch, assert a
   Dirac-square carrier, define a time metric, or provide a record-production
@@ -58,129 +68,146 @@ From `docs/MINIMAL_AXIOMS_2026-06-29.md`:
 
 The runner guards each sentence (whitespace-normalized) against drift.
 
-## T1 — the composition premise C-add, named and grounded (NOT derived) `[checks 5-8]`
+## T1 — the composition premise C-add, named and grounded (NOT derived) `[checks 5-9]`
 
-**Definition (note-level).** *C-add:* for the supplied one-step record-growth
-process on a class-weight surface, two successive admissible steps compose by
-**disjoint union of the new records**, and the two-step class-weight kernel is the
-**convolution** of the one-step kernels.
+**Definition.** *C-add:* two admissible steps compose by (i) **disjoint union** of the
+new records, (ii) **class-surface addition** — the `(a+b) mod N` identification — and
+(iii) the two-step **class-weight kernel is the convolution** of the one-step kernels.
+Vocabulary is **weight-matrix** throughout: `W[a][b]` is a weight matrix (not a "joint
+law"), its **row/column sums** are the one-step weights (not "marginals"), the
+**class-weight vector** collects weight over `(a+b) mod N` (not a "distribution"). The
+toy is an **external independence model** and is **normalization-independent**.
 
-*"A state is a configuration of records"* supplies the objects, and the Record
-additivity sentence makes the **readout** additive over the disjoint union — this
-half holds outright (check 05). That the two-step **kernel is the convolution** is
-process content: the memo's dynamics section states Admissibility does not
-*"provide a record-production process"*, so the convolution clause is not an axiom
-consequence.
+*"A state is a configuration of records"* supplies the objects, and Record additivity
+makes the **readout** additive over the disjoint union (check 05). Clause (iii) is
+process content: the axioms do not *"provide a record-production process"*, so it is not
+an axiom consequence. **Exact `Z_3` toy:** with `p=(1/2,1/4,1/4)`, the independent matrix
+`W[a][b]=p_a p_b` has two-step class-weight vector `p * p` (check 06); a correlated matrix
+(second increment = first) has **identical one-step row and column sums** (check 07) and
+**also satisfies readout additivity** — computed, not asserted, on every supported cell
+(check 08) — yet its class-weight vector `≠ p * p`, including for unnormalized weights
+(check 09). Additivity plus one-step sums do **not** force convolution; clause (iii) is
+genuine, extra content. **C-add is named, not adopted.**
 
-**C-add has independent content (exact toy).** On `Z_3` with one-step kernel
-`p = (1/2, 1/4, 1/4)`: *independent* composition gives two-step kernel
-`p * p = (3/8, 5/16, 5/16)` (check 06); a *correlated* process (second increment
-equals the first) has **identical one-step marginals for both steps** (check 07)
-and identical readout additivity, yet two-step kernel `(1/2, 1/4, 1/4) ≠ p * p`
-(check 08). Readout additivity plus marginals do **not** force convolution — the
-convolution clause is genuine, dynamics-shaped, extra content. **C-add is named and
-flagged; it is not adopted here.**
+## T2 — under C-add, the semigroup CLASS is selected (and only the class) `[checks 10-12]`
 
-## T2 — under C-add, the semigroup CLASS is selected (and only the class) `[checks 9-12]`
+The spectral wrapped-Gaussian family `c_n=q^(bal(n)^2)` is convolution-closed: the
+runner convolves its **position-space** kernels exactly in `Q[sqrt(5)]`,
+`K_{1/2} * K_{1/3} = K_{1/6}` (check 10). The Fourier multiplicativity
+`c_n(t+s)=c_n(t)c_n(s)` is the *same* fact as `q^a r^a=(qr)^a` — a **consistency
+identity that cannot fail by construction** (the exponential law), recorded honestly,
+not as independent evidence (check 11). But C-add selects the **class, not a member**:
+an off-family symbol `c=(1,1/2,1/2,1/2,1/2)` is a genuine convolution-semigroup symbol
+— its self-convolution kernel, built by an actual position-space convolution, carries
+symbol `c^2` — yet `c_2=1/2 ≠ c_1^4=1/16`, off the `q^(n^2)` curve (check 12). The class
+is strictly larger than that curve (**review-pending** block04/block09); Wilson/Manton
+exclusion is stated, not re-derived.
 
-Under C-add the one-step kernel embeds in a convolution semigroup on the class
-group; on the Fourier side this is exactly multiplicativity
-`c_n(t+s) = c_n(t) c_n(s)`. For the wrapped-Gaussian family `c_n(t) = q^(n^2)` the
-runner checks this exactly in rationals: multiplicativity with `q_t=1/2`,
-`q_s=1/3`, `q_{t+s}=1/6` for all `n` in `Z_5` (check 09); doubling
-`c_n(2t)=c_n(t)^2` under `q → q^2` (check 10); and family closure
-`q^(n^2)·r^(n^2)=(qr)^(n^2)` (check 11).
+## T3 — three objects: which one is in-class, positive, AND local `[checks 13-26]`
 
-But C-add selects the **class, not a member**. A rational vector
-`w=(1, 1/2, 1/2, 1/2, 1/2)` violates the `n^2`-law (`w_2 = 1/2 ≠ w_1^4 = 1/16`)
-while a genuine member obeys it exactly (check 12): the finite jump witness lives in
-the convolution-closed class but off the continuous `q^(n^2)` curve. Among the three
-*named* actions only HK's class weight is a convolution semigroup — the
-**review-pending** block04 (#4819) `U(1)`-character discriminator plus block09
-(#4824) class-only refinement; **Wilson/Manton exclusion is stated as those
-results, not re-derived here.**
+All legs are exact in `Q[sqrt(5)]`, with `cos(2π/5)=(sqrt(5)-1)/4`,
+`cos(4π/5)=-(sqrt(5)+1)/4`. Sanity: `4c^2+2c-1=0` for `c=cos(2π/5)` (check 13);
+`2cos(2π/5)+2cos(4π/5)=-1` (check 14); `sum_{n} cos(2πn/5)=0` (check 15). The earlier
+draft used "wrapped Gaussian" for **two** different `Z_5` objects, separated here.
 
-## T3 — within the class, positivity + locality select the wrapped Gaussian among all NAMED candidates `[checks 13-20]`
+**(a) Spectral / exact-Q-gen — in-class, FAILS positivity `[checks 16-19]`.** The
+spectral family `c_n=q^(bal(n)^2)` is identically `exp(tL)` for the balanced quadratic
+generator (eigenvalues `{0,-1,-4,-4,-1}`): it **is** the exact-Q-gen semigroup member.
+Its generator is not Metzler — `L_{0,1}=1/2+(3/10)sqrt5>0` (check 16) but
+`L_{0,2}=(5-3sqrt5)/10<0` strictly (check 17). And its **kernel really goes negative**:
+from `K(j)=(1/5) sum_n q^(bal(n)^2) cos(2πnj/5)`, at `q=9/10, j=2`,
+`K(2)=(4439-2439·sqrt5)/100000<0` exactly (`4439^2=19,704,721 < 5·2439^2=29,743,605`,
+check 18). The sign is `q`-dependent — at `q=1/2` the same `K(2)=(23-7sqrt5)/160>0`
+(check 19), consistent with check 17 (at small `t`, `q` near `1`, `K` inherits the sign
+of `t·L_{0,2}<0`); sampling only `q=1/2,1/3` misses the flip. The class contains this
+member; positivity excludes it.
 
-All legs are exact in `Q[sqrt(5)]` (Fraction pairs `a + b·sqrt(5)`), with
-`cos(2π/5) = (sqrt(5)-1)/4`, `cos(4π/5) = -(sqrt(5)+1)/4`. Extension sanity:
-`cos(2π/5)` satisfies `4c^2+2c-1=0` (check 13); `2cos(2π/5)+2cos(4π/5) = -1`
-(check 14); `sum_{n=0}^{4} cos(2πn/5) = 0` (check 15).
+**(b) Spatial wrap — POSITIVE, but NOT in-class `[checks 20-21]`.** With
+`K_t(j)=sum_{m∈Z} q^((j+5m)^2)` truncated at `|m|≤3` under an exact geometric tail
+bound, the `m=0` term `q^(j^2)` alone certifies `K_t(j)≥S_M(j)>0` for `q=1/2,1/3`
+(check 20). But it is **not convolution-closed**: by an exact low-order `q`-coefficient
+comparison (bounded `m`-window, certified tail), `(W_q * W_q)(0)` carries a `q^2` term
+(coeff `2`), while `W_{q^2}(0)` — and every single wrap `W_s(0)=1+2s^25+...` — has no
+`q^2` term (coeff `0`), so `2≠0` (check 21). The spectral=spatial identification is a
+Jacobi-theta `a→0` limit fact — exactly the **un-taken** limit the parent bars on the
+baseline. So the positive object here is off-class.
 
-**(i) The exact quadratic generator is not positivity-preserving (Metzler
-violation).** With `L_{0,d} = -(1/5) · sum_n n^2 · cos(2π·n·d/5)` over balanced
-labels `n ∈ {-2,-1,0,1,2}`: `L_{0,1} = 1/2 + (3/10)sqrt(5) > 0` (check 16) but
-`L_{0,2} = (5 - 3·sqrt(5))/10 < 0` **strictly** (check 17). A generator gives an
-entrywise-nonnegative semigroup iff it is Metzler (off-diagonals `≥ 0`); strict
-negativity at `j=2` breaks that, so `exp(tL)` develops a negative entry for some
-`t>0` — block14 (#4829)/block13 (#4828), recomputed independently, review-pending.
+**(c) Nearest-neighbor heat family — in-class, Metzler-positive, single-step local
+`[checks 22-23]`.** The object simultaneously in-class, POS, and LOC at finite `N` is
+`L_NN=circulant(-2,1,0,0,1)`: off-diagonals literally `1` (Metzler, exact integers),
+row-sum `0`, distance-2 entries `0` (single-step local), a convolution semigroup by
+construction (check 22). Its eigenvalues `λ_n=-4 sin^2(πn/5)` are exact in `Q[sqrt(5)]`
+and the `n=1` magnitude is block10's own locality-deficit quantity `(5-sqrt5)/2`
+(check 23). These eigenvalues are the cosine `-4 sin^2(πn/5)`, **not** the quadratic
+`-bal(n)^2` — the explicit **non-quadratic** (cos-vs-`n^2`) corrections; block13's
+"non-quadratic corrections" phrasing is cited by number, not read or matched. This is
+the selection's witness.
 
-**(ii) Wrapped-Gaussian positivity (certified corrections).** With
-`K_t(j) = sum_{m ∈ Z} q^((j+5m)^2)` truncated at `|m| ≤ M=3` under an **exact
-geometric tail bound**, every term is positive and the `m=0` term `q^(j^2)` alone
-certifies `K_t(j) ≥ S_M(j) > 0` for all `j ∈ Z_5`, for `q = 1/2` (check 18) and
-`q = 1/3` (check 19); the wrapping terms are the certified non-quadratic corrections
-(block13 pattern), the tail bound a faithful proxy for the infinite kernel.
+**Canonicity of the balanced labels `[checks 24-25]`.** Own the representative
+relativity: with **literal** labels `0..4` the generator is fully Metzler (off-diagonals
+`3/2 ∓ sqrt5/5`, both `>0`, check 25) — so the (a) violation is representative-relative.
+**But** balanced labels are **forced** by the quadratic exponent, not convention-shopped:
+the literal-label eigenvalue multiset is `{0,-13/2,-13/2,-17/2,-17/2}` — **not**
+`-bal(k)^2={0,-1,-1,-4,-4}` — and `bal(n)^2` is even in `n mod 5` while literal `n^2` is
+not (check 24). Only balanced labels give the `q^(n^2)` family; this recomputation is
+**self-contained**.
 
-**Locality leg.** The single-step locality deficit at `N=5` is
-`4 sin^2(π/5) = 4·(5 - sqrt(5))/8 = (5 - sqrt(5))/2 ≠ 0` (check 20) — block10's
-(#4825) single-step exclusion of the exact `Q-gen`, recomputed. Full-step `Z_N`
-matching then needs signed weights (block10's trichotomy: extended steps /
-small-step limit in tension with the physical-`a` baseline / no record-composition
-bridge), review-pending.
+**Locality leg `[check 26]`.** The single-step deficit `4 sin^2(π/5)=(5-sqrt5)/2≠0`
+equals `|λ_1|` of `L_NN` (check 26) — block10's single-step exclusion of the exact
+`Q`-gen. Full-step `Z_N` matching then needs signed weights (block10's trichotomy),
+**review-pending**. The selection stays **within the named candidate family** (FIREWALL):
+it narrows the named field, not global uniqueness.
 
-**Honest family boundary.** The selection is **within the named candidate family**
-{Wilson, HK / wrapped-Gaussian, Manton, exact-Q-gen}: a hostile *unnamed* positive
-convolution-semigroup member is **not** generically excluded — this narrows the
-named field, it does not prove global uniqueness.
+## T4 — the residue is THREE named premises; governance hand-off (MORNING LIST) `[checks 27-28]`
 
-## T4 — the bridge residual is one dynamics-shaped premise; governance hand-off (MORNING LIST) `[checks 21-23]`
+The question reduces to **three named premises** plus the exact facts: **C-add**
+(dynamics-family, clauses i–iii), **POS** (entrywise-nonnegative weights; the memo
+withholds weights), **LOC** (single-step nearest-neighbor structure; review-pending
+block10). "One dynamics-shaped premise" was false. The complete **residue**: the three
+premises + parent caveat + sibling audits (review-pending) + the balanced-labels
+**canonicity** note (check 24). C-add's candidate homes, recorded **without adoption**:
 
-The action-selection question now reduces to **C-add plus the exact facts above**,
-with everything dynamics-shaped concentrated in C-add. Its candidate homes are
-**recorded without adoption**, for the owner:
-
-1. **A narrow record-composition primitive** — a registered framework primitive on
-   the owner surface, if the convolution clause is to be admitted as structure.
+1. **A narrow record-composition primitive** — a registered framework primitive, if
+   the convolution clause is to be admitted as structure.
 2. **The banked Dynamics-axiom proposal (PR #4843, docs-only, review-pending)** —
    whose law + realized-branch content would *supply* C-add; provenance only.
 3. **Remain a named conditional premise** — carry C-add as "if C-add, then ...".
 
-Choosing among (1)–(3) is an **owner decision**, not a worker or audit call. This
-note maps the three homes, takes none, and flags them for the owner's **morning**
-review.
+Choosing among (1)–(3), and whether to admit POS or LOC, is an **owner decision**, not
+a worker or audit call. This note maps the homes, takes none, and flags the residue
+for the owner's **morning** review.
 
-## T5 — action-wall end-state (flagged, not closed) `[checks 21-23]`
+## T5 — action-wall end-state (flagged, not closed) `[checks 27-28]`
 
-Under C-add + positivity + the locality trichotomy, the selected action among all
-**named** candidates is HK / the wrapped Gaussian. The relocation note's
-*"well-posed open physical question"* thereby acquires an exact shape:
+Under C-add + POS + LOC, the object selected **at finite N** among all *named* candidates
+is the **nearest-neighbor heat** family. The earlier "in-class AND positive AND local"
+chain selected the *empty* intersection by conflating objects (a) and (b); restated:
 
-> `{C-add}` → convolution-semigroup **class** → positivity (Metzler) + locality →
-> **wrapped Gaussian** (among named candidates).
+> `{C-add}` → convolution-semigroup **class** → `POS` (Metzler) + `LOC` (single-step)
+> → **nearest-neighbor heat** family at finite `N`; its **un-taken** `a→0` limit is
+> the heat-kernel / wrapped Gaussian (the cos-vs-`n^2` corrections made explicit in
+> check 23).
 
-**No wall is closed.** The negative no-go is not retired; the relocation note's
-unaudited caveat is inherited; every campaign citation is review-pending; and the
-sole remaining lever, C-add, is **not adopted**. The end-state is a sharpened
-conditional flagged for governance — nothing is adjudicated.
+**No wall is closed.** The no-go is not retired; the relocation note's caveat is
+inherited; every campaign citation is review-pending; the three levers (C-add, POS, LOC)
+are **not adopted**. The end-state is a sharpened conditional — nothing is adjudicated.
 
 ## Consequence (governance map)
 
-The practical output is the map, not a verdict: the whole action-lane campaign now
-hangs on **one** premise with **three** candidate homes (T4), while every other
-moving part is an axiom-supplied or exact recomputed fact. Placed on the **morning**
-list as an **owner decision** — the worker records and does not decide.
+The output is the map, not a verdict: the campaign now hangs on **three** named premises
+(C-add + POS + LOC), with C-add carrying three homes (T4); every other moving part is an
+axiom-supplied or exact recomputed fact on `Z_N` toys, not the SU(3) wall.
 
 ## Does NOT
 
-- Does **not** derive, adopt, or register C-add; does not claim the axioms supply a
-  record-production process or a two-step convolution kernel.
+- Does **not** derive, adopt, or register C-add, POS, or LOC; does not claim the axioms
+  supply a record-production process or a two-step convolution kernel.
 - Does **not** select or adjudicate any action or claim uniqueness beyond the named
   family; does **not** close, retire, or contradict any no-go — **no wall is closed**.
-- Does **not** re-derive the block04/09/10/13/14 results — it cites them as
-  review-pending and recomputes only the isolated exact instances stated.
-- Does **not** edit axioms, policy, primitives, or registries, and sets **no** audit
-  status.
+- Does **not** re-derive the block04/09/10/13/14 results or read/match sibling
+  conventions — self-contained recomputation of the isolated exact instances only; the
+  wrapped Gaussian is named only as the **un-taken** limit.
+- Does **not** edit axioms, policy, primitives, or registries, and sets **no** audit status.
 
 ## Dependencies
 
@@ -194,23 +221,21 @@ list as an **owner decision** — the worker records and does not decide.
 
 ## No-Promotion Statement
 
-This note promotes nothing. C-add is a named, unadopted, dynamics-shaped premise;
-the selection is family-level among named candidates; the parent's caveat is
-inherited; all campaign citations are review-pending; and the audit lane alone sets
-status. The residual is handed to the owner as a **morning**-list **owner
-decision**.
+This note promotes nothing. C-add, POS, and LOC are named, unadopted premises; the
+selection is family-level among named candidates and lives on `Z_N` toys, not the SU(3)
+wall; the parent's caveat is inherited; citations are review-pending; the audit lane
+alone sets status. The residue is an **owner decision** on the **morning** list.
 
 ---
 
 ### Summary
 
-- Action-selection decomposes into exact arithmetic facts **plus one** dynamics-
-  shaped premise, **C-add** (record-composition → kernel convolution).
-- C-add's readout half is axiom-supplied; its convolution half is **not** — an exact
-  `Z_3` toy shows readout additivity + marginals do not force convolution.
-- Under C-add the convolution-semigroup **class** is selected (exact `q^(n^2)`
-  multiplicativity), but only the class (jump witness violates the `n^2`-law).
-- Exact `Q[sqrt(5)]` facts — Metzler `L_{0,2}<0`, wrapped positivity, nonzero deficit
-  `(5-sqrt5)/2` — pick the wrapped Gaussian **among named candidates only**.
-- C-add has three candidate homes; the choice is an **owner decision** on the
-  **morning** list. **No wall is closed**; nothing adopted; citations review-pending.
+- Final runner: **28 exact checks, all PASS** (Fraction + `Q[sqrt(5)]`; no floats).
+- Corrected selection: `{C-add}` → convolution-semigroup **class**, then **POS** + **LOC**
+  → the **nearest-neighbor heat** family **at finite N**; the wrapped Gaussian is only its
+  **un-taken** `a→0` limit (check 23). The earlier "in-class ∧ positive ∧ local" chain had
+  selected the *empty* intersection by conflating spectral (a, `K(2)<0` at `q=9/10`) with
+  spatial wrap (b, positive, off-class) — both witnessed exactly.
+- Residue: the **three named premises** (C-add, POS, LOC) + parent caveat + sibling
+  audits (review-pending) + the balanced-labels **canonicity** note.
+- **No wall is closed**; nothing adopted; citations review-pending; audit lane owns status.

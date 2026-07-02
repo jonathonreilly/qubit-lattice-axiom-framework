@@ -2,30 +2,37 @@
 frontier_record_composition_bridge_positivity_2026_07_02
 bounded theorem (bridge decomposition + exact selection facts)
 EXACT arithmetic only (Fraction; Q[sqrt5] as Fraction pairs); no floats.
-NO action adopted; C-add named/grounded NOT derived; audit lane owns status.
+THREE named premises (C-add, POS, LOC); NONE adopted; audit lane owns status.
+Selection at finite N = nearest-neighbor heat family; wrapped Gaussian is its
+un-taken a->0 limit.  Z_N toys witness premise structure, not the SU(3) wall.
 ==============================================================================
 CHECK 01: PASS -- guard: axiom memo states 'A state is a configuration of records.' (T1 objects)
 CHECK 02: PASS -- guard: Record additivity sentence present (READOUT additive over disjoint union)
 CHECK 03: PASS -- guard: dynamics-section disclaimer present (axioms supply NO record-production process/kernel)
 CHECK 04: PASS -- guard: law sentence present (domain-restricted single-valued law)
 CHECK 05: PASS -- T1 axiom leg: readout I additive over disjoint record union, I(empty)=0 (Record axiom)
-CHECK 06: PASS -- T1 C-add clause: under INDEPENDENT composition the two-step kernel = one-step convolution
-CHECK 07: PASS -- T1 control: correlated process has IDENTICAL one-step marginals (both steps) as the independent one
-CHECK 08: PASS -- T1 independent content: readout-additive, same-marginal correlated process has two-step kernel != convolution (C-add is NOT supplied)
-CHECK 09: PASS -- T2 multiplicativity: c_n(t+s)=c_n(t)c_n(s) EXACT for c_n=q^(n^2), all n in Z_5
-CHECK 10: PASS -- T2 doubling: c_n(2t)=c_n(t)^2 EXACT (q -> q^2) for the wrapped-Gaussian family
-CHECK 11: PASS -- T2 closure: convolution of two wrapped Gaussians stays in family, q^(n^2)*r^(n^2)=(qr)^(n^2)
-CHECK 12: PASS -- T2 class-not-member: witness violates n^2-law (w_2 != w_1^4) while a genuine member obeys it (block09, review-pending)
+CHECK 06: PASS -- T1 C-add clause: INDEPENDENT weight matrix -> two-step class-weight vector = one-step convolution p*p
+CHECK 07: PASS -- T1 control: correlated weight matrix has IDENTICAL one-step row AND column sums as the independent one
+CHECK 08: PASS -- T1 correlated readout additivity (COMPUTED over support): I two-step = I step1 + I step2 on every supported cell
+CHECK 09: PASS -- T1 independent content: correlated two-step class-weight != convolution (also unnormalized) => C-add clause (iii) is NOT supplied
+CHECK 10: PASS -- T2 closure (ACTUAL Q[sqrt5] convolution): K_{1/2} * K_{1/3} = K_{1/6} for the spectral q^(n^2) family
+CHECK 11: PASS -- T2 consistency identity (cannot fail by construction): q^a r^a = (q r)^a, the exponential composition law
+CHECK 12: PASS -- T2 class-not-member (convolves): off-family symbol self-convolves to c^2 yet c_2 != c_1^4 (off q^(n^2)) (block09, review-pending)
 CHECK 13: PASS -- T3 Q[sqrt5] sanity: cos(2pi/5) satisfies 4c^2+2c-1=0 exactly (extension multiplication is correct)
 CHECK 14: PASS -- T3 root-of-unity identity: 2cos(2pi/5)+2cos(4pi/5) = -1 exactly in Q[sqrt5]
 CHECK 15: PASS -- T3 root-of-unity identity: sum_{n=0}^{4} cos(2pi n/5) = 0 exactly in Q[sqrt5]
-CHECK 16: PASS -- T3(i) Metzler-OK at j=1: L_{0,1} = 1/2 + (3/10)sqrt5 > 0 (exact)
-CHECK 17: PASS -- T3(i) Metzler VIOLATION at j=2: L_{0,2} = (5-3sqrt5)/10 < 0 strictly => exp(tL) not positivity-preserving (block14, review-pending)
-CHECK 18: PASS -- T3(ii) wrapped positivity q=1/2: K_t(j) >= S_M(j) > 0 for all j in Z_5, tail geometrically bounded (exact)
-CHECK 19: PASS -- T3(ii) wrapped positivity q=1/3: K_t(j) >= S_M(j) > 0 for all j in Z_5, tail geometrically bounded (exact)
-CHECK 20: PASS -- T3 locality: single-step deficit 4 sin^2(pi/5) = (5-sqrt5)/2 != 0 => single-step locality excludes exact Q-gen (block10, review-pending)
-CHECK 21: PASS -- T5 boundary: note asserts C-add 'not adopted' and 'no wall is closed'
-CHECK 22: PASS -- T5 boundary: note flags all campaign citations 'review-pending'
-CHECK 23: PASS -- T4 governance: note routes the residual as an 'owner decision' on the 'morning' list
+CHECK 16: PASS -- T3(a) generator Metzler-OK at j=1: L_{0,1} = 1/2 + (3/10)sqrt5 > 0 (exact)
+CHECK 17: PASS -- T3(a) generator Metzler VIOLATION at j=2: L_{0,2} = (5-3sqrt5)/10 < 0 strictly (block14, review-pending)
+CHECK 18: PASS -- T3(a) NEGATIVE-KERNEL witness: exact-Q-gen kernel K(2) at q=9/10 = (4439-2439sqrt5)/100000 < 0 (POS FAILS)
+CHECK 19: PASS -- T3(a) sign is q-dependent: same kernel K(2) at q=1/2 = (23-7sqrt5)/160 > 0 (q=1/2,1/3 sampling missed the flip)
+CHECK 20: PASS -- T3(b) spatial-wrap positivity q in {1/2,1/3}: K_t(j) >= S_M(j) > 0 for all j, tail geometrically bounded (exact)
+CHECK 21: PASS -- T3(b) NON-MEMBERSHIP witness: q^2 coeff of (W_q*W_q)(0) is 2 but of W_{q^2}(0)/W_s(0) is 0 (not convolution-closed)
+CHECK 22: PASS -- T3(c) NN heat generator: off-diagonals = 1 (Metzler, integer), row-sum 0, single-step local (dist-2 entries 0)
+CHECK 23: PASS -- T3(c) NN spectrum: lambda_n = -4 sin^2(pi n/5), |lambda_1| = (5-sqrt5)/2 (= locality deficit), != -bal(n)^2 (non-quadratic)
+CHECK 24: PASS -- T3 canonicity: literal-label spectrum {0,-13/2,-13/2,-17/2,-17/2} != -bal(k)^2; bal(n)^2 even, literal n^2 not (balanced FORCED)
+CHECK 25: PASS -- T3 canonicity: literal-label off-diagonals 3/2 -/+ sqrt5/5 both > 0 (Metzler restored) -- violation is representative-relative
+CHECK 26: PASS -- T3 LOC: single-step deficit 4 sin^2(pi/5) = (5-sqrt5)/2 != 0 = |lambda_1(NN)| (block10, review-pending)
+CHECK 27: PASS -- T5 boundary A: note asserts 'not adopted' + 'no wall is closed' + 'review-pending'; no 'empty set' selection
+CHECK 28: PASS -- T4 boundary B: note carries 'three named premises', 'nearest-neighbor heat', 'un-taken', 'canonicity', POS, LOC, SU(3), owner/morning
 ------------------------------------------------------------------------------
-TOTAL: PASS=23 FAIL=0
+TOTAL: PASS=28 FAIL=0

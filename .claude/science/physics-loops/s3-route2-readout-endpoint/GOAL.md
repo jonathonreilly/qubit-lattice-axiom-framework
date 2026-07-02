@@ -13,6 +13,7 @@ Do not audit or apply verdicts. Make review PRs for coherent science blocks,
 do not push to `main`, do not refresh existing PRs to `main`, and do not check
 PR conflict state. The reviewer will cherry-pick science from the PRs.
 
-Block16 target: direct consumer support for `s3_time_theta_to_slice_coupling`
-by localizing exactly how unresolved `rho_E` propagates through the conditional
-theta-to-slice family.
+Block17 target: finite-frame/Riesz dual-leg count boundary. Determine whether
+the six-arm `O_h` frame/Riesz structure derives the missing reciprocal-square
+factor `lambda=9/4`, or whether it only supplies a conditional two-leg
+primitive that remains outside the current exact surface.

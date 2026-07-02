@@ -1,14 +1,15 @@
 trace_class: negative_route_pruning
 target_claim_id: s3_time_theta_to_slice_coupling_note
-target_blocker_text: "the readout-map endpoint triple is not derived, blocking the unique exact Theta_R -> Lambda_R coupling theorem"
+target_blocker_text: "The Route-2 endpoint triple (-1, -2, 21/4), equivalently the E-channel map entry beta_E/alpha_E = 21/4 or lambda = q_E/q_T = 9/4, remains underived."
 source_of_blocker_text: user_goal
 reachability_to_target: prunes
 artifact_role: no_go
-next_trace_action: "Derive a channel metric/normalization primitive, or construct a new nonseparable total-degree-2 primitive outside current K_R source-side Gram contractions."
+next_trace_action: "Try a nonseparable total-degree-2 primitive or a finite-frame dual-leg theorem; if still blocked, package theta-to-slice coupling consequences of the unresolved readout."
 
-## Explanation
+# Trace Gate
 
-If block13 is true, it prunes the source-side Gram/tensor-power route inside
-the current `K_R` grammar. It does not close the endpoint; it shows the next
-successful primitive must add derived channel normalization or leave the
-current carrier grammar.
+If true, block14 prunes one direct route to the target endpoint triple: a pure
+positive `O_h` channel metric cannot select `lambda=9/4`, because the
+`E:T1` metric ratio is Schur-free. The artifact does not close the endpoint
+triple; it narrows the missing import to an inverse-square normalization
+primitive or a non-metric/nonseparable mechanism.

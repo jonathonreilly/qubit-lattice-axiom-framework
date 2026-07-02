@@ -1,77 +1,68 @@
 # Handoff
 
-## Block13 Summary
+## Block14 Summary
 
-Branch:
+Branch: `physics-loop/s3-route2-readout-endpoint-block14-20260621`
 
-```text
-physics-loop/s3-route2-readout-endpoint-block13-20260621
-```
-
-PR:
+This block adds a no-go for the pure channel-metric route. On `E (+) T1`, a
+positive `O_h`-invariant metric has the exact Schur form
 
 ```text
-https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4542
+G(c_E,c_T)=c_E P_E + c_T P_T1,
 ```
 
-Block13 proves the exact source-side Gram collapse:
-
-```text
-K_R^T M K_R = (a^T M a) b b^T.
-```
-
-Unit `E` and `T1` bright probes therefore see the same response scalar for
-all source-side `K_R` Gram/tensor-power contractions in the current
-channel-blind grammar. The route gives `lambda=1`, not `9/4`.
+so `c_E/c_T` is free. Ambient normalization gives `lambda=1`; one reciprocal
+projector/dimension power gives `lambda=3/2`; inverse-square normalization
+gives the target `lambda=9/4` only by supplying the missing primitive.
 
 ## Artifacts
 
-- `docs/QUARK_ROUTE2_KR_GRAM_NONSEPARABLE_DEGREE2_NO_GO_NOTE_2026-06-21.md`
-- `scripts/frontier_quark_route2_kr_gram_nonseparable_degree2_no_go_2026_06_21.py`
-- `logs/runner-cache/frontier_quark_route2_kr_gram_nonseparable_degree2_no_go_2026_06_21.txt`
-- `.claude/science/physics-loops/s3-route2-readout-endpoint/`
+- `docs/QUARK_ROUTE2_CHANNEL_METRIC_SCHUR_FREE_PARAMETER_NO_GO_NOTE_2026-06-21.md`
+- `scripts/frontier_quark_route2_channel_metric_schur_free_parameter_no_go_2026_06_21.py`
+- `logs/runner-cache/frontier_quark_route2_channel_metric_schur_free_parameter_no_go_2026_06_21.txt`
 
-## Current Verification
+## PR
 
-Completed:
+PR #4543: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4543
 
-```text
-PYTHONPATH=scripts python3 scripts/frontier_quark_route2_kr_gram_nonseparable_degree2_no_go_2026_06_21.py
-PASS=14 FAIL=0
-
-python3 -m py_compile scripts/frontier_quark_route2_kr_gram_nonseparable_degree2_no_go_2026_06_21.py
-pass
-
-PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
-PASS=11 FAIL=0
-
-PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py
-PASS=12 FAIL=0
-
-PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py
-PASS=11 FAIL=0
-
-git diff --check
-pass
-
-branch-local status/overclaim rg scan
-no matches
-```
-
-PR identity verification:
+Identity-only check:
 
 ```json
-{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block13-20260621","number":4542,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block13 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4542"}
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block14-20260621","number":4543,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block14 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4543"}
 ```
 
-## Remaining Nature-Grade Blocker
+## Verification
 
-Derive a channel metric/normalization primitive with the needed reciprocal
-square ratio, or construct a new nonseparable total-degree-2 primitive outside
-current `K_R` source-side Gram contractions.
+- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_channel_metric_schur_free_parameter_no_go_2026_06_21.py`
+  - `PASS=13 FAIL=0`
+- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py`
+  - `PASS=11 FAIL=0`
+- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_kappa_squared_covariance_sharper_no_go_2026_06_10.py`
+  - `PASS=7 FAIL=0`
+- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py`
+  - `PASS=11 FAIL=0`
+- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_time_coupling.py`
+  - `PASS=8 FAIL=0`
+- `PYTHONPATH=scripts python3 scripts/frontier_s3_time_bilinear_tensor_primitive.py`
+  - `PASS=4 FAIL=0`
+- `python3 -m py_compile scripts/frontier_quark_route2_channel_metric_schur_free_parameter_no_go_2026_06_21.py`
+- `git diff --check`
+- overclaim scan: only negative-boundary firewall hits such as "does not derive" / "does not propose endpoint closure".
 
-## Exact Next Action
+## Remaining Blocker
 
-Continue the campaign with the channel metric/normalization primitive target,
-or a new nonseparable total-degree-2 primitive outside current `K_R`
-source-side Gram contractions.
+The endpoint triple remains open. A successful positive route still needs a
+new theorem deriving
+
+```text
+c_E/c_T = (w_T/w_E)^2 = 9/4
+```
+
+or a different nonseparable primitive that yields the same `E`-center datum
+without importing it.
+
+## Next Exact Action
+
+Try a nonseparable total-degree-2 primitive outside source-side Gram
+contractions and outside a pure channel metric. Fallback to a theta-to-slice
+support/no-go packet if endpoint derivation remains hard-walled.

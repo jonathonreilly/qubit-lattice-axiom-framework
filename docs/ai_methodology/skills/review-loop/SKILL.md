@@ -708,6 +708,34 @@ a stale ratification is a real integrity violation. Resolve it by re-auditing
 per the audit-hash churn guard — never by refreshing the hash while keeping the
 retained verdict.
 
+**Stuck-row repair requeue gate.** Terminal non-clean rows
+(`audited_conditional` / `audited_renaming` / `audited_failed` /
+`audited_numerical_match`) re-enter the audit queue only through their own
+note or paired-runner hash drift, an upstream `deps_changed` invalidation, or
+a dispatcher-sidecar re-audit target. Dependent-side edits never reschedule
+the stuck row. When a branch's stated purpose is repairing such a row (the PR
+title/body names the row or quotes its audit repair target):
+
+1. Verify the stuck row itself will requeue: its note or paired runner
+   changes on the branch, or the branch ships dispatcher-sidecar targeting
+   metadata naming the row.
+2. If the audit-named repair is dependent-side only (for example, narrowing
+   dependents' citing sentences to the audited scope), add a dated
+   downstream-hygiene line to the stuck row's own note boundary as part of
+   the landing: a one-line source-side record of what changed downstream
+   (date + what was narrowed + PR number), with no grade or verdict
+   language. The hash drift re-enters the row into the ordinary queue and
+   the re-auditor (or second auditor) sees the recorded condition.
+3. Run the validation pipeline and confirm the row is queued or re-queued as
+   intended, then restore generated audit outputs per the
+   pipeline-output-stripped gate below.
+4. Repair-PR review checklist: the audit repair target is quoted verbatim
+   (from `verdict_rationale` / `notes_for_re_audit_if_any`) in the PR body;
+   a sibling-runner pin sweep was done before every note edit (grep
+   `scripts/` for runners pinning the edited sentences); no authored grade
+   language anywhere; no `docs/audit/data/` content beyond
+   dispatcher-sidecar targeting metadata.
+
 7. **Pipeline-output-stripped PASS gate (hard).** After running the pipeline
    for validation, the framework PR must NOT land any pipeline-regenerated
    audit-lane or effective-status surface. The independent audit lane is the

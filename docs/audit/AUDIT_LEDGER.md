@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 200 |
-| **retained_bounded** | 904 |
+| **retained_bounded** | 905 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1668 |
+| unaudited | 1667 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1318 |
+| `audited_clean` | 1319 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1994 |
+| `unaudited` | 1993 |
 
 | claim_type | count |
 |---|---:|
@@ -111,7 +111,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1126 | 46.64 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1127 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 989 | 41.45 | `audited_clean` | **retained_bounded** |
 | 10 | `native_gauge_closure_note` | positive_theorem | critical | 1401 | 40.45 | `audited_clean` | **retained** |
@@ -455,6 +455,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `field_equation_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fifth_family_complex_boundary_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fifth_family_complex_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -6225,6 +6226,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Because n_x has eigenvalues 0 and 1 on each tensor factor, F = exp(i pi sum_x n_x) acts as (-1)^{sum_x nu_x} = tensor_x sigma_{3,x}, which yields the parity eigenspaces and odd/even commutation rules.  _(class `A`)_
 - **chain closes:** True — The proof closes from the admitted finite-dimensional spectral calculus, per-site Pauli ladder construction, and tensor-product Fock basis. The runner source actually constructs the matrices for N=4 and verifies the relevant algebraic identities rather than merely printing constants.
 - **rationale:** The load-bearing step is a genuine algebraic identity over the admitted finite-dimensional occupation basis and Pauli definitions. No cross-note authority, external comparator, fitted input, or physical fermion-statistics/superselection premise is imported. The proof appropriately keeps the dynamical conservation and physical selector claims conditional, so the audited algebraic scope follows.
+- **auditor confidence:** high
+
+### `fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09`
+
+- **Note:** [`FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md`](../../docs/FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Current-surface finite operator-algebra bridge: on V_x = C^2_weak tensor C^3_fibre and two-site hopping blocks, local U(3) fibre-basis changes leave the cited weak-sector/projector data invariant and rewrite links by U_xy -> g_x U_xy g_y^dag, making U=I a flat trivialization choice rather than invariant physical fibre-frame pinning.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T023626Z-59fef7f0-fiber_frame_local_redund`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Conjugating the two-site hopping block by G = G_x oplus G_y gives the same block with U replaced by g_x U g_y^dag, so the case U=I is rewritten as g_x g_y^dag rather than invariantly selecting a cross-site fibre frame.  _(class `A`)_
+- **chain closes:** True — The tensor-factor commutator, invariant-operator, and link-conjugation identities follow directly from the graph-first weak/fibre carrier plus the retained tensor-product hopping surface; the minimal axiom node is an accepted premise. The proof stays within the stated kinematic/current-surface scope and does not import gauge dynamics, physical SU(3)_c identification, or future colour-readout exclusion.
+- **rationale:** The load-bearing work is finite-dimensional algebra over retained-grade inputs: I_2 tensor g commutes with sigma_i tensor I_3, the U(3) commutant on C^3 is scalar, and hopping links transform by conjugation at their endpoints. The runner actually instantiates these matrices and checks the relevant commutators, invariant dimension, and link covariance; its remaining checks are source-text guardrails. No external comparator, fitted value, or definition-as-derivation step is present, and the dependency set is retained-grade or accepted-premise within the restricted packet.
 - **auditor confidence:** high
 
 ### `field_equation_derivation_note`

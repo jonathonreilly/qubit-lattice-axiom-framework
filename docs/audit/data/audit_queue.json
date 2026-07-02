@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 301,
-    "high": 285,
+    "high": 284,
     "leaf": 584,
     "medium": 500
   },
@@ -8725,7 +8725,7 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
+      "claim_id": "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -8733,20 +8733,20 @@
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
-        "minimal_axioms",
+        "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
         "graph_first_su3_integration_note",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "hopping_bilinear_hermiticity_theorem_note_2026-05-02"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 7.926,
-      "note_path": "docs/FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md",
+      "load_bearing_score": 7.755,
+      "note_path": "docs/MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/fiber_frame_local_redundancy_bridge_2026_06_09.py",
-      "transitive_descendants": 42
+      "runner_path": "scripts/frontier_minimal_coupling_fiber_frame_connection_2026_06_08.py",
+      "transitive_descendants": 26
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -16264,33 +16264,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
-        "graph_first_su3_integration_note",
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
-        "hopping_bilinear_hermiticity_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.755,
-      "note_path": "docs/MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_minimal_coupling_fiber_frame_connection_2026_06_08.py",
-      "transitive_descendants": 26
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "signed_gravity_chi_selector_theorem_or_nogo_note",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -18014,15 +17987,15 @@
         "flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02",
         "minimal_axioms"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 6.307,
+      "load_bearing_score": 7.426,
       "note_path": "docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_darwinism_bridge_residual_2026_06_05.py",
-      "transitive_descendants": 27
+      "transitive_descendants": 42
     },
     {
       "audit_independence_required": "any_non_self",
@@ -50078,5 +50051,5 @@
     }
   ],
   "ready_count": 107,
-  "total_pending": 1670
+  "total_pending": 1669
 }

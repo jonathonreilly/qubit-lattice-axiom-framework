@@ -1,23 +1,13 @@
 # Opportunity Queue
 
-1. **Typed E-center source/readout primitive**
-   - Target: derive `gamma_E(center)/gamma_E(shell) = 15/8`.
-   - Upside: direct endpoint-triple closure if achieved.
-   - Risk: no current authority source row supplies the primitive.
+1. **New E-center source/readout theorem**
+   - Derive `q_E=15/8` without endpoint fitting.
 
-2. **Typed R_conn/F_adj center bridge**
-   - Target: derive `gamma_T(center)/gamma_E(center) = -8/9`.
-   - Upside: exact arithmetic then gives `rho_E = 21/4`.
-   - Risk: existing notes identify the typed bridge as the missing import.
+2. **Typed F_adj center bridge**
+   - Derive `F_adj -> c_TE=-F_adj` rather than inserting it.
 
-3. **S3-time direct consumer pruning**
-   - Target: prove exactly which downstream consumers are blind or non-blind
-     to `rho_E`.
-   - Status: block 01.
-   - Upside: prevents audit/science churn on blind consumers and sharpens the
-     next positive primitive.
+3. **Typed covariance bridge**
+   - Derive `q_E/q_T=kappa^2` as a stack-native readout covariance.
 
-4. **Alternate up-sector scalar-law route**
-   - Target: bypass Route-2 endpoint readout if another exact scalar route is
-     available.
-   - Risk: broader blast radius and likely lower immediate landability.
+4. **Alternate up-sector scalar route**
+   - Bypass the Route-2 endpoint map if a different exact scalar law exists.

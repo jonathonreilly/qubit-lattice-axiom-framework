@@ -1,49 +1,51 @@
 # Handoff
 
-## Block 01 summary
+## Block 02 summary
 
-This block adds a direct-consumer witness criterion for the
-`s3_time_theta_to_slice_coupling_note` parent row. It proves that, inside the
-exact conditional family `Xi_P(t; c)`, a downstream primitive can distinguish
-`rho_E` only through nonzero overlap with the E-center ambiguity vector.
+This block attacks the typed E-center source/readout primitive route. It adds
+a bounded current-bank no-go: the named current source-bank invariants are the
+same for `P(0)` and `P(21/4)`, but their E-center outputs differ. The missing
+positive input is therefore a new non-blind E-center bridge.
 
-The block does not derive `rho_E = 21/4`, does not close the parent open gate,
-and does not update repo-wide authority surfaces.
+## Checks
 
-## Exact next action
-
-Completed checks:
+Completed:
 
 ```text
-PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_readout_witness_criterion_2026_06_21.py
-  TOTAL: PASS=16, FAIL=0
-PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py
-  PASS=12 FAIL=0
-PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py
-  PASS=64 FAIL=0
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.py
+  TOTAL: PASS=21, FAIL=0
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_rconn_typed_bridge_derivation_bounded_2026_06_12.py
+  TOTAL: PASS=62, FAIL=0
+PYTHONPATH=scripts python3 scripts/quark_route2_ell_e_structural_narrowing_bounded_2026_06_12.py
+  TOTAL: PASS=47, FAIL=0
 PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
   PASS=11 FAIL=0
-python3 -m py_compile scripts/frontier_s3_time_theta_to_slice_readout_witness_criterion_2026_06_21.py
+python3 -m py_compile scripts/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.py
   pass
 ```
 
-Focused review disposition: PASS WITH BOUNDED CLAIMS. The audit pipeline was
-not run and no audit verdicts were applied.
+Focused review disposition: PASS WITH BOUNDED NO-GO CLAIM. The audit pipeline
+was not run and no audit verdicts were applied.
 
 PR opened:
 
 ```text
-https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4530
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4531
 ```
 
 The PR identity was verified without querying mergeability or conflict state.
 
 ## Remaining blocker
 
-The next positive target is still a typed E-center source/readout primitive
-that supplies `q_E = 15/8` or the equivalent `c_TE = -8/9` without using fitted
-endpoint data.
+Derive a typed bridge supplying one of:
 
-Recommended next campaign action: try the typed E-center source/readout
-primitive first; if it hits the same wall, try the typed `R_conn`/`F_adj`
-center bridge with the witness criterion as the acceptance test.
+```text
+q_E=15/8,
+c_TE=-8/9,
+q_E/q_T=9/4,
+gamma_T(center)/gamma_E(center)=-F_adj.
+```
+
+Recommended next campaign action: switch from current-bank recombination to a
+positive bridge attempt. The highest-value candidates are a typed `F_adj`
+center bridge or a typed covariance theorem deriving `q_E/q_T=9/4`.

@@ -5,24 +5,26 @@ actual_current_surface_status: no-go
 trace_class: negative_route_pruning
 reachability_to_target: prunes
 conditional_surface_status: null
-hypothetical_axiom_status: "if unit typecast normalization nu = 1 were supplied, endpoint algebra would force the target E-center value"
+hypothetical_axiom_status: "if a typed landing edge F_adj -> |c_TE| were supplied, endpoint algebra would select the target E-center lift"
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "the missing unit typecast normalization remains open"
+proposal_allowed_reason: "the typed landing edge remains open"
 bare_status_promotion_allowed: false
 independent_verdict_required_for_authority_change: true
 ```
 
 ## Status
 
-Block25 is an exact negative boundary for the scalar-to-Route-2 typecast route.
-It does not certify a positive authority change.
+Block26 is an exact negative boundary for source-augmented, E-center-blind
+functoriality. It does not certify a positive authority change.
 
 ## Dependency Classes
 
 - Exact internal support: `F_adj = 8/9`.
-- Exact endpoint algebra: inverse from `|c_TE|` to `rho_E`.
-- Open theorem: unit typecast normalization `nu = 1`.
+- Exact endpoint algebra: inverse between `q_E`, `rho_E`, and center
+  magnitude under granted T-side values.
+- Open theorem: typed landing from source scalar into Route-2 center readout,
+  or an equivalent primitive that evaluates `P_R E-center`.
 - Forbidden as proof input: observed targets, fitted selectors, live numerical
   near misses, and unstated unit conventions.
 

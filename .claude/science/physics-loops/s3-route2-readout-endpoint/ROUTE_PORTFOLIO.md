@@ -1,33 +1,29 @@
 # Route Portfolio
 
-## Route A: Unit Typecast Normalization
+## Route A: Source-Augmented Blind Functor
 
-Goal: prove `nu = 1` in `|c_TE| = nu F_adj` from existing color/Fierz/readout
-structure.
+Goal: show whether source scalar `F_adj = 8/9` plus E-center-blind endpoint
+data can select the E-center lift.
 
-Block25 result: no-go on the current parent bank. The scale `nu` remains free.
+Block26 result: no-go. The source-augmented blind signature is identical for
+several exact readout maps with different E-center lifts.
 
-## Route B: Direct Typed Landing Edge
+## Route B: Typed Landing Edge
 
-Goal: source a typed edge from `su3_R_conn_8_9` to
-`route2_center_TE_minus_8_9`.
+Goal: supply a typed edge from source scalar to Route-2 center magnitude.
 
-Block25 result: not present in the quote-derived inventory. Adding the edge is
-sufficient, but the current parents do not supply it.
+Block26 result: still open. The edge is necessary for this route and is not in
+the current typed bank.
 
-## Route C: E-Center Functoriality
+## Route C: E-Center Evaluator Primitive
 
-Goal: find a first-principles Route-2 rule that maps source-domain scalar
-magnitudes into E-center readout magnitudes.
+Goal: produce a source/readout primitive that evaluates `P_R E-center`.
 
-Block25 status: still viable as the next hard target. It must produce a typed
-landing theorem, not a scalar coincidence.
+Block26 result: still open and now the sharp positive target.
 
-## Route D: Direct Consumer Narrowing
+## Route D: Direct Consumer Ambiguity Packet
 
-Goal: if the endpoint remains blocked, move to the next direct consumer and
-produce a no-go/support packet that narrows which readout ambiguity is
-load-bearing.
+Goal: pivot downstream and classify which direct consumers need only the blind
+signature and which truly require E-center data.
 
-Block25 status: fallback route for the next science block if Route C does not
-pass the dramatic-step gate.
+Block26 status: recommended next campaign target.

@@ -1,14 +1,12 @@
 # Opportunity Queue
 
-Ranked after block25.
+Ranked after block26.
 
 | Rank | Target | Why It Moves Science | Risk | Next Action |
 |---:|---|---|---|---|
-| 1 | E-center functoriality / typed landing theorem | A positive result would supply the missing `nu = 1` theorem or a direct typed edge. | High | Try a first-principles naturality/functor attack on the E-center landing map. |
-| 2 | Direct-consumer readout ambiguity packet | If the endpoint stays blocked, classify which downstream consumer depends only on E-center magnitude versus sign/support. | Medium | Pick the next direct consumer and build a narrow support/no-go packet. |
-| 3 | Source-domain scalar equivalence class | Sharpen whether any accepted scalar invariant besides `F_adj` can carry the Route-2 type. | Medium | Enumerate scalar candidates and prove same ambiguity or find a typed carrier. |
-| 4 | Positivity plus endpoint algebra convexity | Confirm no positivity/monotonicity constraint narrows `nu` enough to force the endpoint. | Low | Build a compact exact family runner over positive `nu`. |
+| 1 | Direct-consumer readout ambiguity packet | The endpoint typed-landing wall is now sharp; downstream consumers should be split by whether they require E-center data. | Medium | Pick the next direct consumer and build a support/no-go packet over its dependency on `P_R E-center`. |
+| 2 | E-center evaluator primitive | A positive result would supply the missing typed landing by evaluating `P_R E-center`. | High | Search current Route-2 tensor/readout surfaces for an E-center-evaluating primitive. |
+| 3 | Typed landing edge theorem | A positive result would map `F_adj` into Route-2 `|c_TE|`. | High | Try a source/readout morphism proof that is not blind to E-center. |
+| 4 | Alternate up-sector scalar route | If Route-2 readout remains blocked, find a non-Route-2 scalar-law route with fewer missing imports. | Medium | Scan direct consumers for independent scalar-law support. |
 
-Current recommendation: pursue rank 1 next. Block25 reduced the missing step to
-one explicit normalization theorem, so the best next science is a direct attack
-on that theorem.
+Current recommendation: pursue rank 1 next, matching the campaign fallback.

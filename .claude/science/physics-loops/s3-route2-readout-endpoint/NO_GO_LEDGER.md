@@ -1,38 +1,23 @@
 # No-Go Ledger
 
-## Block20
+## Prior Route-2 Blocks
 
-Primitive factor split gave exact support but did not determine the endpoint
-E-center magnitude.
+- Factor rigidity localized the ambiguity to the spatial prefactor.
+- Direct-consumer classification showed E-center dependence is load-bearing.
+- Typed-edge cut certificates showed source scalar support has no current path
+  to the endpoint.
+- Sign and magnitude splits showed sign support is not enough.
+- Typecast scale analysis isolated the missing unit normalization.
 
-## Block21
+## Block26
 
-Direct-consumer classification showed the E-center dependency remains
-load-bearing.
-
-## Block22
-
-Typed-edge cut certificate showed source-domain scalar support does not reach
-the endpoint without a typed bridge.
-
-## Block23
-
-Sign-support/typecast remainder split showed sign support is not enough; the
-magnitude landing remains open.
-
-## Block24
-
-Magnitude/typecast equivalence showed that identifying `|c_TE| = F_adj` is
-equivalent to the E-center selection on the positive-lift family.
-
-## Block25
-
-Typecast scale normalization no-go:
+Source-augmented E-center functor no-go:
 
 ```text
-|c_TE| = nu F_adj
-rho_E(nu) = 10 / (nu F_adj) - 6
+source-augmented blind signature
+= (F_adj, R_conn, E-shell, T-shell, T-center)
 ```
 
-The target value corresponds to `nu = 1`. Current parents do not supply that
-normalization or an equivalent typed landing edge.
+is the same for multiple exact `rho_E` values. The E-center lift and center
+magnitude vary outside that signature. Therefore any selector that factors
+through the blind signature cannot choose the target E-center lift.

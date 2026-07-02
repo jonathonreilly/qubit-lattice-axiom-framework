@@ -2,15 +2,21 @@
 
 ## Allowed Minimal Premises
 
-- Exact source-domain color support: `F_adj = (N_c^2 - 1) / N_c^2 = 8/9` at
+- Exact source-domain support: `F_adj = (N_c^2 - 1) / N_c^2 = 8/9` at
   `N_c = 3`.
-- Positive-lift Route-2 domain: `rho_E > -6`.
-- Granted T-side values for the local reduction: `q_T = 5/6` and `s_TE = -2`.
+- Exact restricted Route-2 endpoint carrier.
+- Granted T-side values:
+
+```text
+beta_T/alpha_T = -1
+alpha_T/alpha_E = -2
+```
+
 - Endpoint algebra:
 
 ```text
-|c_TE| = (5/3) / q_E
 q_E = 1 + rho_E/6
+c_TE = (-2)(5/6) / q_E
 ```
 
 - Existing quote-derived typed-edge inventory from the source-domain bridge
@@ -23,24 +29,15 @@ q_E = 1 + rho_E/6
 - Fitted Yukawa, CKM, or J targets.
 - Live endpoint nearest-rational selection.
 - Physical connected-trace selector.
-- A hidden scalar-to-Route-2 unit normalization.
+- Untyped identification of a source scalar with a Route-2 center readout.
 
 ## New Import Exposed
 
-The block exposes one missing theorem:
+The source scalar can be present in the same signature for many endpoint maps.
+The missing import remains a typed landing:
 
 ```text
-unit typecast normalization: nu = 1
+F_adj -> |c_TE|
 ```
 
-Equivalently, the current bank must supply one of:
-
-```text
-scalar magnitude 8/9 -> Route-2 |c_TE| = 8/9
-su3_R_conn_8_9 -> route2_center_TE_minus_8_9
-su3_R_conn_8_9 -> route2_q_E_15_8
-su3_R_conn_8_9 -> route2_rho_E_21_4
-```
-
-Block25 shows that the current parents do not already provide any of these
-typed landings.
+or an equivalent E-center-evaluating readout primitive.

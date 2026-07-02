@@ -54,6 +54,49 @@ The worker must not:
 - decide to land, merge, or close PRs;
 - route science work through visual/image-generation tooling.
 
+## Codex Worker Launch & Reliability (REQUIRED)
+
+`codex exec` workers hang or silently fail to deliver in two confirmed ways. Both
+have a fix; apply all of the following every time.
+
+**Launch recipe — close stdin and capture output:**
+
+```bash
+codex exec -s workspace-write -C "<repo-abs-path>" \
+  -o /tmp/<task>_lastmsg.txt "$(cat /tmp/<task>_spec.md)" \
+  < /dev/null > /tmp/<task>_full.log 2>&1 &
+```
+
+- `< /dev/null` is MANDATORY. With the prompt passed as an argument, `codex exec`
+  still reads stdin to append it as a `<stdin>` block; a backgrounded job's stdin
+  never reaches EOF, so the worker can block forever on
+  `"Reading additional input from stdin..."` at 0% CPU with zero output. Closing
+  stdin gives immediate EOF and prevents the start-hang.
+- Pass the prompt as the argument (`"$(cat spec)"`); write the spec to a file first.
+
+**Bound the reads — this is the #1 cause of "ran but never delivered":**
+
+- Name the EXACT files the worker may read (≤ ~5). A worker told to "read the
+  closure note + the ledger" dumps the multi-thousand-row `audit_ledger.json` into
+  its context, exhausts it, and ends mid-reasoning having written nothing.
+- NEVER instruct it to "read the ledger / read everything." For audit status, grep
+  specific rows only: `git show origin/main:docs/audit/data/audit_ledger.json | grep <claim_id>`.
+- Tell it to WRITE THE DELIVERABLE INCREMENTALLY (write the output file as it goes,
+  not held for a single final message) and to produce ONE focused deliverable plus
+  a short stdout summary. Keep the task small and specific.
+
+**Monitor + salvage (supervisor owns the result):**
+
+- Hang signature: process at 0% CPU + log size growing-then-static + empty `-o`
+  file. Check `ps -o %cpu=,etime= -p <pid>` and the `_full.log` size after a few
+  minutes; do not assume "still working."
+- If hung: kill it, salvage the reasoning from `_full.log` (it usually contains the
+  analysis), and finish/deliver the result yourself. The supervising agent is
+  responsible for the result regardless of worker failure.
+- A tight, bounded spec (named files, incremental writes, one deliverable) is what
+  makes the worker succeed; an open-ended "go read and figure it out" is what makes
+  it hang or over-read.
+
 ## No-Go And Narrowing Discipline
 
 When a task touches a no-go, obstruction, impossibility, or negative boundary,

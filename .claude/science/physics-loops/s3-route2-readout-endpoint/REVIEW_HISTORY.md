@@ -1,9 +1,17 @@
 # Review History
 
-Review-loop disposition: not run by user constraint.
+## Block30 Local Review
 
-Local self-checks:
+Disposition: pass for branch-local science handoff.
 
-- Block runner passes with `PASS=26 FAIL=0`.
-- Focused parent runners pass with `PASS=14/28/103/11`, all `FAIL=0`.
-- Overclaim scan is clean for changed branch-local artifacts.
+Checks:
+
+- New runner verifies W1/W2 four-case reachability and exact rational
+  arithmetic: `PASS=49 FAIL=0`.
+- Parent source-domain bridge runner remains green: `PASS=103 FAIL=0`.
+- Parent typed bridge runner remains green: `PASS=62 FAIL=0`.
+- Parent kappa open-gate runner remains green: `PASS=20 FAIL=0`.
+- Exact readout map runner remains green: `PASS=11 FAIL=0`.
+- Python syntax compilation passed.
+
+No audit was run and no verdict was applied.

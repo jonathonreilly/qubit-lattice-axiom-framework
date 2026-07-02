@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_operator_spectral_functionals_do_not_force_r_half_no_go_note_2026-06-02"
+      "to": "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07"
     },
     {
       "from": "repo.front_door_status",
@@ -53498,7 +53498,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07"
+      "to": "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "flavor_operator_spectral_functionals_do_not_force_r_half_no_go_note_2026-06-02",
+        "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07",
         "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
         "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
         "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
         "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11",
         "teleportation_resource_from_poisson_note",
         "wilson_m_h_per_channel_closure_bounded_note_2026-05-09",
-        "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07"
+        "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "314cdd8167609084ea6916dc975f4fb1bbf282db60f9abff60510e83d81db7a8",
+      "note_hash": "4ed0723e10a6ebddb7c4a3b88ec385ac96e4193525ef32bcf2c1c2c88fc960c7",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

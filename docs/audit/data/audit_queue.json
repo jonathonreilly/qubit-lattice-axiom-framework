@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 404,
+    "critical": 403,
     "high": 289,
     "leaf": 699,
     "medium": 510
@@ -367,28 +367,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_hypercharge_identification.py",
-      "transitive_descendants": 1389
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
-      "claim_scope": "Pure finite-rank complex Clifford-algebra theorem: gamma_5 with gamma_5^2=+I and anticommuting with all generators exists iff n=p+q is even; for d_s=3 this restricts d_t to odd values.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 8,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 17.441,
-      "note_path": "docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py",
       "transitive_descendants": 1389
     },
     {
@@ -21122,6 +21100,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.17,
+      "note_path": "docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py",
+      "transitive_descendants": 8
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -21220,6 +21223,33 @@
       "ready": true,
       "runner_path": "scripts/car_from_positivity.py",
       "transitive_descendants": 4
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+        "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 3.5,
+      "note_path": "docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py",
+      "transitive_descendants": 3
     },
     {
       "audit_independence_required": "any_non_self",
@@ -31081,31 +31111,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
-        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.17,
-      "note_path": "docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py",
-      "transitive_descendants": 8
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_record_readout_form_not_weight_2026-06-02",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -34298,33 +34303,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_s3_time_bilinear_tensor_primitive_rank1_factorization.py",
-      "transitive_descendants": 3
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
-        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
-        "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.5,
-      "note_path": "docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py",
       "transitive_descendants": 3
     },
     {
@@ -56390,6 +56368,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 123,
-  "total_pending": 1902
+  "ready_count": 124,
+  "total_pending": 1901
 }

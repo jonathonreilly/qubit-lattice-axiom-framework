@@ -56302,11 +56302,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
+      "to": "hypercharge_identification_note"
     },
     {
       "from": "repo.front_door_status",
-      "to": "hypercharge_identification_note"
+      "to": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "repo.front_door_status",
@@ -108439,8 +108439,8 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
         "hypercharge_identification_note",
+        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
@@ -108449,7 +108449,7 @@
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0699055ffca4df6dfaab069eafd3418896b5d16e00f00769b76ecfc5dda19124",
+      "note_hash": "cbc578484ed5a096498c52e9def1d8756b51347f119f7e16dd469b8fdd78270f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

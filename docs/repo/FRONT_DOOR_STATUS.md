@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1450 |
-| Retained-grade rows, including boxed decorations | 1346 |
-| Retained positive theorems | 199 |
+| Applied audit verdicts | 1451 |
+| Retained-grade rows, including boxed decorations | 1347 |
+| Retained positive theorems | 200 |
 | Retained no-go rows | 197 |
 | Retained bounded rows | 892 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 29 |
-| Unaudited rows | 1696 |
+| Unaudited rows | 1695 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 35 |
 | Audited renaming rows | 26 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1698 |
-| Ready rows | 108 |
+| Total pending rows | 1697 |
+| Ready rows | 107 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
-| High pending | 300 |
+| High pending | 299 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20`](../../docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - high; unaudited
 - [`busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05`](../../docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - high; unaudited
 - [`observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md) - high; unaudited
 - [`lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29`](../../docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md) - high; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27`](../../docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md) - high; unaudited
 - [`rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08`](../../docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md) - high; unaudited
 - [`record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`](../../docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md) - high; unaudited
+- [`hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30`](../../docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

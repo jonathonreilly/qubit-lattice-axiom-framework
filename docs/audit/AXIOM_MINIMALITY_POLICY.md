@@ -85,8 +85,8 @@ Recorded explicitly approved axiom updates:
   by record content alone." (owner wording; additivity unchanged). Second,
   the Qubit axiom gains one individuation sentence generalizing the
   equivalent-presentation quotient beyond the named Cl(3,0) pair: "A
-  possibility is individuated by its algebraic relations alone." (owner-form
-  wording; no presentation, basis, or frame individuates, since none is a
+  possibility is distinguished by its algebraic relations alone." (owner-form
+  wording; no presentation, basis, or frame distinguishes, since none is a
   relation, and presentation-equivalent descriptions describe the same
   possibility). Third, one totality sentence
   is added to the Qualification section: "A rule offered as a law must be

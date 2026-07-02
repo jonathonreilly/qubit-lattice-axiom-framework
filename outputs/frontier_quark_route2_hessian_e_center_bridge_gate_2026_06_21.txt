@@ -1,0 +1,56 @@
+Route-2 Hessian-to-E-center bridge gate
+========================================================================================
+
+----------------------------------------------------------------------------------------
+1. Current-surface boundaries
+----------------------------------------------------------------------------------------
+PASS: observable-Hessian route is scalar-only
+PASS: E-center derivation attempt names the exact missing source/readout computation
+PASS: readout primitive assessment reaches membership but not uniqueness
+PASS: measured calibration explicitly says it is not a derivation
+PASS: Schur note isolates inverse-square as the exact gap
+PASS: E-center blindness note requires an E-center primitive
+
+----------------------------------------------------------------------------------------
+2. Conditional inverse-square Hessian target
+----------------------------------------------------------------------------------------
+C_E=9, C_T=4, lambda=9/4
+target map gives q_E=15/8, rho_E=21/4, c_TE=-8/9
+PASS: Route-2 weights give Hessian coefficients C_E=9 and C_T=4
+PASS: Hessian coefficient ratio is lambda=9/4
+PASS: q-proportional map gives q_E=15/8
+PASS: q-proportional map gives rho_E=21/4
+PASS: q-proportional map gives c_TE=-8/9
+
+----------------------------------------------------------------------------------------
+3. Alternative T-calibrated maps
+----------------------------------------------------------------------------------------
+q_proportional: q_E=15/8, rho_E=21/4, c_TE=-8/9
+increment_proportional: q_E=5/8, rho_E=-9/4, c_TE=-8/3
+rho_proportional: q_E=5/8, rho_E=-9/4, c_TE=-8/3
+inverse_q: q_E=10/27, rho_E=-34/9, c_TE=-9/2
+PASS: q-proportional map preserves the T calibration
+PASS: increment-proportional map preserves the T calibration
+PASS: rho-proportional map preserves the T rho calibration
+PASS: inverse-q map preserves the T calibration
+PASS: only q-proportional map gives rho_E=21/4 among tested maps
+PASS: increment-proportional map gives rho_E=-9/4
+PASS: rho-proportional map gives rho_E=-9/4
+PASS: inverse-q map gives rho_E=-34/9
+
+----------------------------------------------------------------------------------------
+4. Current-bank verdict
+----------------------------------------------------------------------------------------
+PASS: checked current bank does not state q_X proportional to Hessian coefficient
+PASS: checked current bank does not supply a Hessian-to-E-center bridge phrase
+PASS: exact readout parent still names beta_E/alpha_E=21/4 as missing
+PASS: S3 parent remains open on the endpoint triple
+PASS: no observed endpoint value is used as proof input
+PASS: current result is a no-go for Hessian-ratio-alone closure
+PASS: positive target is the specific q-proportional Hessian readout theorem
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+TOTAL: PASS=26, FAIL=0
+VERDICT: no-go / conditional support boundary. The inverse-square Hessian ratio is sufficient only after a q-proportional readout law is supplied. The current bank does not select that Hessian-to-E-center map.

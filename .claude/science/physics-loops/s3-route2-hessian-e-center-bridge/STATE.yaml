@@ -1,0 +1,45 @@
+loop_slug: s3-route2-hessian-e-center-bridge
+block: 85
+date: 2026-06-21
+mode: campaign
+target_note: docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md
+target_endpoint_triple: "(-1, -2, 21/4)"
+branch: physics-loop/s3-route2-hessian-e-center-bridge-block85-20260621
+base: origin/main
+lock_mode: degraded_branch_local
+lock_note: "scripts/automation_lock.py status failed with [Errno 13] Permission denied: '/Users/jonreilly'. Work proceeds in an isolated science worktree."
+actual_current_surface_status: no-go
+conditional_surface_status: "conditional support if q_X is proved proportional to the selected Hessian coefficient"
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: "map inverse-square Hessian coefficients to the E-center readout lift"
+hard_residual: "Hessian coefficient ratio versus readout-lift normalization law"
+claim_movement:
+  - "The q-proportional Hessian map gives the endpoint exactly."
+  - "Other T-calibrated maps using the same Hessian coefficients miss the endpoint."
+  - "The current bank does not select the q-proportional readout law."
+open_imports:
+  - "q-proportional Hessian-to-readout theorem"
+  - "E-center interpretation of the selected Hessian coefficient"
+files_touched:
+  - docs/QUARK_ROUTE2_HESSIAN_E_CENTER_BRIDGE_GATE_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_hessian_e_center_bridge_gate_2026_06_21.py
+  - outputs/frontier_quark_route2_hessian_e_center_bridge_gate_2026_06_21.txt
+  - .claude/science/physics-loops/s3-route2-hessian-e-center-bridge/
+checks:
+  - "python3 -m py_compile scripts/frontier_quark_route2_hessian_e_center_bridge_gate_2026_06_21.py: pass"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_hessian_e_center_bridge_gate_2026_06_21.py: TOTAL PASS=26 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_lift_derivation_attempt_bounded_2026_06_12.py: TOTAL PASS=46 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_lift_measured_calibration_2026_06_10.py: TOTAL PASS=6 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py: PASS=11 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py: PASS=11 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py: PASS=12 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_blindness_no_go.py: TOTAL PASS=14 FAIL=0"
+  - "optional companion not used as pass gate: frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12.py returned TOTAL PASS=13 FAIL=1 on t_balance tolerance"
+pr:
+  status: open
+  number: 4616
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4616"
+  identity_checked: true
+  conflict_or_mergeability_checked: false
+next_exact_action: "Continue campaign with a direct source-domain E-center primitive or a direct consumer ambiguity packet for S3 time coupling."

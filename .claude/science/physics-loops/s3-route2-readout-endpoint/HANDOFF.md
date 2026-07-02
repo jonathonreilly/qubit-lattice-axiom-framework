@@ -1,18 +1,24 @@
 # Handoff
 
-## Block06 Summary
+## Block07 Summary
 
-This block proves a narrow size-stability boundary. Endpoint-blind/separable finite-box renormalizations preserve `lambda=q_E/q_T`, so they cannot rescue the endpoint triple unless the unrenormalized finite-box family already has `lambda=9/4`.
+This block is a stretch attempt on the nonseparable E/T covariance primitive. It classifies local projector-weight laws and isolates the exact conditional bridge:
 
-The existing box-size scan has bulk `lambda` far from `9/4`. Therefore a valid positive rescue must supply a nonseparable E/T center-shell covariance primitive, not a harmless normalization.
+```text
+q_X proportional to w_X^-2
+```
+
+With `w_E=1/3` and `w_T1=1/2`, this gives `lambda=(w_E/w_T1)^-2=9/4`, hence `q_E=15/8` and `rho_E=21/4` after the granted T-side values.
+
+The primitive is not derived here. The block falsifies the nearby one-factor/raw/quadratic laws and leaves the exact next positive target.
 
 ## Honest Status
 
-Actual current-surface status: no-go.
+Actual current-surface status: conditional-support.
 
-Trace class: negative_route_pruning.
+Trace class: upstream_support.
 
-This prunes only endpoint-blind/separable finite-box renormalization. It does not rule out a future nonlinear tensor observable or derived nonseparable covariance primitive.
+This supports the endpoint theorem by isolating the exact primitive needed, but it does not close the endpoint theorem.
 
 ## PR Policy
 
@@ -20,23 +26,23 @@ Do not push to main. Do not refresh previous PR branches to main. Do not check c
 
 ## PR
 
-Opened PR #4535:
+Opened PR #4536:
 
 ```text
-https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4535
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4536
 ```
 
 Identity-only verification:
 
 ```text
-number=4535
-url=https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4535
-title=[physics-loop] s3-route2-readout-endpoint block06 no-go
-headRefName=physics-loop/s3-route2-readout-endpoint-block06-20260621
+number=4536
+url=https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4536
+title=[physics-loop] s3-route2-readout-endpoint block07 conditional-support
+headRefName=physics-loop/s3-route2-readout-endpoint-block07-20260621
 baseRefName=main
 state=OPEN
 ```
 
 ## Next Exact Action
 
-Continue the campaign to the next ranked science target if runtime remains. Best next target: derive a nonseparable E/T center-shell covariance primitive; fallback to the direct `Theta_R -> Lambda_R` consumer ambiguity packet.
+Continue the campaign to the next ranked science target if runtime remains. Best next target: derive the two reciprocal local projector-weight factors from source normalization plus readout or Schur-dual response; fallback to the direct `Theta_R -> Lambda_R` consumer ambiguity packet.

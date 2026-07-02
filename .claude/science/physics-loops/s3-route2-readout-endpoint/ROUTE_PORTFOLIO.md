@@ -1,17 +1,17 @@
 # Route Portfolio
 
-## Active Route: Endpoint-Blind Renormalization No-Go
+## Active Route: Double-Local Projector Normalization
 
-Prove the algebraic invariance of `lambda=q_E/q_T` under endpoint-blind/separable finite-box renormalizations and combine it with the live box-scan cache. This prunes the route that tries to rescue `15/8` by harmless size-stable normalization.
+Classify monomial local-weight laws `q_X proportional to w_X^p` and isolate the exact target exponent `p=-2`. Record that weaker one-factor/raw/quadratic laws miss, while the double reciprocal law conditionally closes the endpoint.
 
-## Next Candidate: Nonseparable Covariance Primitive
+## Next Candidate: Derive the Two Reciprocal Factors
 
-Try to derive an E/T center-shell covariance rule that changes `lambda` to `9/4` without importing it. This is the direct positive route exposed by block06.
+Try to derive one reciprocal factor from source normalization and a second from readout normalization or Schur response duality. This is the most direct positive route.
 
-## Next Candidate: New Nonlinear Tensor Observable
+## Next Candidate: Nonlinear Tensor Observable
 
-Construct a genuinely new tensor functional and prove that it supplies the missing nonseparable covariance from named source/tensor structure.
+Construct a tensor functional whose reduced E/T response actually realizes `w_X^-2`, then test it against the carrier/readout no-go firewalls.
 
 ## Next Candidate: Direct Consumer Firewall
 
-If the endpoint triple remains blocked, produce a consumer-side no-go/support packet for `Theta_R -> Lambda_R` showing exactly how much of the coupling family is independent of the missing E endpoint.
+If the primitive remains unproved, pivot to the direct `Theta_R -> Lambda_R` consumer and narrow exactly which downstream quantities depend on the missing E-center primitive.

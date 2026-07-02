@@ -1,0 +1,54 @@
+loop_slug: s3-route2-typed-magnitude-bridge
+block: 53
+date: 2026-06-21
+branch: physics-loop/s3-route2-typed-magnitude-bridge-block53-20260621
+base: origin/main
+base_sha: 4ee5700917feb377da8ece8b6b2934b9d65249ad
+mode: campaign
+active_goal: >
+  Continue the S3/Route-2 readout endpoint campaign by producing reviewable
+  science PRs that unblock the audit without applying audit verdicts.
+active_route: >
+  Test whether dropping the sign leaves a derivable typed magnitude bridge
+  |gamma_T(center)/gamma_E(center)| = R_conn = 8/9 on the current bank.
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+artifact_role: no_go_runner_certificate
+claim_movement: >
+  Proves that the current color-only and E-center-blind Route-2 primitive
+  family cannot type the constant SU(3) scalar F_adj/R_conn into the variable
+  Route-2 center magnitude.  A future nonblind bridge remains open.
+open_imports:
+  - nonblind typed magnitude bridge from SU(3) color scalar to Route-2 center readout
+  - direct E-center source/readout theorem for q_E = 15/8
+not_claimed:
+  - endpoint triple derivation
+  - global impossibility of all future typed magnitude bridges
+  - audit verdict
+automation_lock:
+  status: degraded
+  detail: "scripts/automation_lock.py status fails with Permission denied: '/Users/jonreilly'"
+files_touched:
+  - docs/QUARK_ROUTE2_TYPED_RCONN_MAGNITUDE_BRIDGE_NO_GO_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_typed_magnitude_bridge_no_go_2026_06_21.py
+  - outputs/frontier_quark_route2_typed_magnitude_bridge_no_go_2026_06_21.txt
+  - .claude/science/physics-loops/s3-route2-typed-magnitude-bridge/
+verification:
+  new_runner: "PASS=53 FAIL=0"
+  py_compile: pass
+  parent_checks:
+    rconn_center_ratio_bridge_obstruction: "PASS=26 FAIL=0"
+    source_domain_bridge_no_go: "PASS=103 FAIL=0"
+    exact_readout_map: "PASS=11 FAIL=0"
+    e_channel_readout_naturality_no_go: "PASS=28 FAIL=0"
+    factor_rigidity: "PASS=64 FAIL=0"
+  overclaim_scan: clean
+  diff_check: clean
+pr:
+  status: open
+  number: 4583
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4583"
+  identity_json: '{"baseRefName":"main","headRefName":"physics-loop/s3-route2-typed-magnitude-bridge-block53-20260621","number":4583,"state":"OPEN","title":"[physics-loop] s3-route2-typed-magnitude-bridge block53 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4583"}'
+next_exact_action: "Pivot to a nonblind E-center source/readout theorem or sharper finite primitive-family no-go."
+stop_condition: "Continue campaign; this no-go prunes one route family but leaves viable direct consumers."

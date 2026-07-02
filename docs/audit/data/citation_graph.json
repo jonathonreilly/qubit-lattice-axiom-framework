@@ -56302,7 +56302,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
+      "to": "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18"
     },
     {
       "from": "repo.front_door_status",
@@ -56327,10 +56331,6 @@
     {
       "from": "repo.front_door_status",
       "to": "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
     },
     {
       "from": "repo.repo_organization",
@@ -108439,17 +108439,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
+        "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
+        "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
         "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "cl3_taste_generation_theorem",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
-        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
+        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0c17b4b87f6f0507df3653cd497a4ed7b939a7d59c450b4965c322f705e1ceb4",
+      "note_hash": "737fcf9e156d33c4f2116496bb37d8f86f246cc91adffac3e7bfe583b1070197",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

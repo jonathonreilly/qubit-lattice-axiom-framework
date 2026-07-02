@@ -343,28 +343,28 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
-      "claim_scope": null,
+      "claim_scope": "Finite positive diagonal source blocks with a supplied continuous direct-sum additive scalar readout family: the family is a one-site sum, and the single determinant-only quotient across dimensions is exactly c log det, with k n requiring an added dimension label.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "minimal_axioms",
         "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
       ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
+      "direct_in_degree": 4,
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.731,
+      "load_bearing_score": 15.232,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py",
-      "transitive_descendants": 1201
+      "transitive_descendants": 1202
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -380,15 +380,15 @@
       "deps": [
         "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.23,
+      "load_bearing_score": 15.731,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py",
-      "transitive_descendants": 1200
+      "transitive_descendants": 1201
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -561,15 +561,15 @@
         "minimal_axioms",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.029,
+      "load_bearing_score": 14.528,
       "note_path": "docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/staggered_kernel_z_certificate_check_2026_06_11.py",
-      "transitive_descendants": 1044
+      "transitive_descendants": 1043
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

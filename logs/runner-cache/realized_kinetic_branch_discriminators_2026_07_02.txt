@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/realized_kinetic_branch_discriminators_2026_07_02.py
-runner_sha256: 323f1aef7dce361ebae9bc0ab7a2b85ed69742d7eb49ec7e1888ac6001c54e7d
-timeout_sec: 300
+runner_sha256: d86e9649f98628f665d0057d99d7144910e9dba48b294853b88bc7502ea932e5
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.67
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -27,7 +27,11 @@ realized kinetic branch discriminators (2026-07-02)
 [PASS] [T10] 16. proper R_z12 rotation covariance checked by exact K0 equality and K1 spectrum invariance  |  K1 leg uses spectrum-level invariance under the rotation permutation
 
 SUMMARY: representative-level discriminators on the two-flux-class surface; selector bit NOT forced here; Admissibility reading not decided.
-TOTAL: PASS=16 FAIL=0
+[PASS] [SRC] 17. source declares bounded_theorem claim type
+[PASS] [SRC] 18. source does not set a Status field
+[PASS] [SRC] 19. source keeps selector/admissibility residual open
+[PASS] [SRC] 20. source says cache is generated and SHA-pinned
+TOTAL: PASS=20 FAIL=0
 
 ----- stderr -----
 

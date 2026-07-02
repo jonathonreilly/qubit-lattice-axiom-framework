@@ -245,6 +245,7 @@ def face_wiring_checks() -> None:
 def note_discipline_checks() -> None:
     print("\n-- Note discipline --")
     note = read(NOTE)
+    note_flat = flat(note)
     links = re.findall(r"\[[^\]]+\]\(([^)]+)\)", note)
     md_links = [x for x in links if x.endswith(".md")]
     runner_links = [x for x in links if x.endswith(".py")]
@@ -273,11 +274,15 @@ def note_discipline_checks() -> None:
     ]
     allowed_walls = {"W_cycle_holonomy_value", "W_defect_identity_unit", "W_defect_readout_selection"}
     walls = set(re.findall(r"\bW_[A-Za-z0-9_]+\b", note))
-    check("three required ambient-face sentences and no-go sentence appear", all(s in note for s in verbatim))
+    check("three required ambient-face sentences and no-go sentence appear", all(s in note_flat for s in verbatim))
     check("N1 through N8 headers appear", all(f"### N{i}" in note for i in range(1, 9)))
     check("forbidden route/status phrases absent", not any(s in note for s in forbidden))
     check("wall labels are whitelisted", walls <= allowed_walls, str(sorted(walls)))
     check("status-authority header is present", "**Status authority:** independent audit lane only." in note)
+    check("canonical bounded_theorem claim type is present", "**Claim type:** bounded_theorem" in note)
+    check("scope is separated from claim type", "**Scope:** exact ambient equivariant heat-trace reduction plus continuum" in note)
+    check("noncanonical bounded theorem metadata is absent", "**Claim type:** bounded theorem /" not in note)
+    check("source note does not use runner PASS as status", "**Status:** PASS" not in note)
     check("exactly two markdown links appear", len(links) == 2, str(links))
     check("exactly one markdown dependency target appears", len(md_links) == 1 and Path(md_links[0]).name == FIXED.name, str(md_links))
     check("runner link is present", len(runner_links) == 1 and RUNNER_NAME in runner_links[0], str(runner_links))

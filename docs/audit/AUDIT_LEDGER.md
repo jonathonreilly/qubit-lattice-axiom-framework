@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 928 |
+| **retained_bounded** | 929 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 33 |
-| unaudited | 1623 |
+| unaudited | 1622 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1353 |
+| `audited_clean` | 1354 |
 | `audited_conditional` | 44 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1949 |
+| `unaudited` | 1948 |
 
 | claim_type | count |
 |---|---:|
@@ -1316,6 +1316,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `symmetry_generated_paired_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `symmetry_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `symmetry_spectrum_mirror_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `taste_scalar_isotropy_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `teleportation_3d1_causal_record_channel_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_3d_initial_ramp_probe_note` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5 | C | - |
@@ -19061,6 +19062,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Mirror symmetry can produce a genuine near-rank-2 signature, but only in the strict chokepoint pocket and only at small N; outside that pocket, the rank story is heuristic rather than a retained large-N mechanism.  _(class `C`)_
 - **chain closes:** True — Running the registered script with the note's stated N=15,25 and 16-seed setup reproduces the table: original mirror has lower s2/s1 than random-2layer at both sizes, while mirror-chokepoint has high s2/s1, effective rank near 2, and Born zero at machine precision in the small-N pocket.
 - **rationale:** The current runner reproduces the note's diagnostic table under the stated setup, and the note's conclusion stays bounded: support exists for a strict small-N mirror-chokepoint rank signature, not for a scalable large-N rank-protected architecture. The default runner window tests larger N and is not the note's quoted table, but it reinforces the same non-scalability boundary rather than contradicting the bounded claim.
+- **auditor confidence:** high
+
+### `taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02`
+
+- **Note:** [`TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure algebraic isotropy of the fermion Coleman-Weinberg Hessian V_f=sum_s f(lambda_s(phi)^2) for H=sum_i phi_i S_i on the binary sigma_x taste block at phi=(v,0,0), excluding physical carrier and non-fermion consequences.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T050729Z-85e5b837-taste_scalar_fermion_cw_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At phi=(v,0,0), each Hessian summand has the same coefficient (2f'(v^2)+4v^2f''(v^2)) times (-1)^{s_i+s_j}, and the binary orthogonality sum over s is 8 delta_ij.  _(class `A`)_
+- **chain closes:** True — The commuting S_i are simultaneously diagonal in the sigma_x eigenbasis, giving lambda_s(phi)=sum_i phi_i(-1)^{s_i}. A direct chain-rule computation plus the Walsh/binary orthogonality sum yields H_ij=C(v) delta_ij without using the non-load-bearing staggered-Dirac context pointer.
+- **rationale:** Within the explicitly narrowed abstract binary taste-block scope, the result is a genuine algebraic identity. The independent derivation confirms the common Hessian coefficient and the exact sum sum_s (-1)^{s_i}(-1)^{s_j}=8 delta_ij; no external comparator, tuned input, or physical realization bridge is used. The runner source enumerates the binary states and checks representative exact Hessians, supporting the proof but not replacing the general smooth-f argument. The minimal-axiom authority is an accepted premise and is not load-bearing for the algebraic closure.
 - **auditor confidence:** high
 
 ### `taste_scalar_isotropy_theorem_note`

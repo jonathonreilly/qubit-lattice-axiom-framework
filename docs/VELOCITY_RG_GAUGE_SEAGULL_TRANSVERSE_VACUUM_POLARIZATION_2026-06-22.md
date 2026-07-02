@@ -7,7 +7,8 @@
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not set
-or predict an audit outcome.
+or predict an audit outcome. Any `audit_status` and `effective_status` fields
+are pipeline-derived.
 
 **Primary runner:**
 [`scripts/velocity_rg_gauge_seagull_transverse_vacuum_polarization_2026_06_22.py`](../scripts/velocity_rg_gauge_seagull_transverse_vacuum_polarization_2026_06_22.py)
@@ -29,9 +30,9 @@ This note does **not** amend, narrow, retire, or re-approve any registered
 primitive (the kinetic-isotropy primitive is unchanged) or set any lane status. It
 records framework-internal structural facts about the gauge-sector velocity drag
 and an honest, sign-robust statement about cross-sector non-cancellation. Companion
-to the velocity-RG log-flow note `VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21`
-(the shared-form-factor route no-go + log-flow positivity; open PR, not yet on main)
-and the landed
+to the landed velocity-RG log-flow note
+[`VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md`](VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md)
+(the shared-form-factor route no-go + log-flow positivity) and the landed
 [`KINETIC_ISOTROPY_B4_TRANSITIVITY_ROUTE_NO_GO_2026-06-20.md`](KINETIC_ISOTROPY_B4_TRANSITIVITY_ROUTE_NO_GO_2026-06-20.md).
 
 ## Feynman rules (framework free propagators; gauged in the hopping)
@@ -46,7 +47,7 @@ The vacuum polarization carries **no internal gauge line**, so `Pi` is gauge
 (`xi`) independent; the gauge-sector coefficient read off from it is
 gauge-invariant.
 
-## Certified facts (runner, `PASS=7 FAIL=0`, memory-safe)
+## Runner-Checked Facts (`PASS=7 FAIL=0`, memory-safe)
 
 1. **Euclidean Clifford** `{gamma_mu, gamma_nu} = 2 delta_munu` (Hermitian set).
 2. **Transversality from the seagull.** The lattice Ward identity
@@ -58,10 +59,10 @@ gauge-invariant.
    gauge sector is `B4`-isotropic at isotropic input (`c_t = c_s` protected).
 4. **`eta = v_F/v_b = 1` is a fixed point.** The induced gauge anisotropy vanishes
    (`~1e-13`) at zero relative-anisotropy input.
-5. **Gauge-sector power-divergent constant `lambda_G > 0`.** With anisotropic
-   input, the induced anisotropy splits as `slope(q) = A_G log(1/q) + B_G` with
+5. **Gauge-sector finite-grid proxy `lambda_G > 0`.** With anisotropic input,
+   the runner's finite-grid fit splits as `slope(q) = A_G log(1/q) + B_G` with
    `A_G > 0` (the IR velocity-RG attractor log) and `B_G = lambda_G > 0` (the
-   gauge-side power-divergent constant — residual D, gauge sector).
+   gauge-side proxy for the power-divergent constant — residual D, gauge sector).
 6. **Cross-sector non-cancellation (sign-robust).** The fermion-half velocity
    anisotropy has the **opposite** sign (negative) in **both** Feynman (`xi=1`)
    and Landau (`xi=0`) gauge, while `lambda_G > 0`. The bare fermion-velocity
@@ -70,28 +71,30 @@ gauge-invariant.
 
 ## Consequence
 
-`eta = 1` is a true fixed point, but it is **not protected by a cancellation**:
-the gauge-sector `lambda_G` is a nonzero power-divergent constant, and the fermion
-sector adds with the same effect rather than cancelling it. So the cross-sector
-relative-velocity coefficient (residual D) is a **nonzero** power-divergent
-constant — the naturalness mountain is **quantified, not closed**. Absent the
-`(mu/M_Pl)^gamma` IR damping the residual sits far above the `~1e-20`
-Lorentz-violation bound.
+`eta = 1` is a fixed point in the checked proxy, but it is **not protected by a
+cancellation** in that proxy: the gauge-sector fitted `lambda_G` is positive, and
+the fermion-sector sign adds with the same effect rather than cancelling it. So
+the cross-sector relative-velocity coefficient (residual D) is a nonzero
+finite-grid proxy obstruction — the naturalness issue is **quantified, not
+closed**. The `~1e-20` Lorentz-violation scale is an external comparator for
+context only, not a runner input or a fitted target.
 
 ## Honest boundary
 
 - **Sign and structure, not the precise number.** The transversality, `B4`
-  isotropy, fixed point, `lambda_G > 0`, and the sign-robust non-cancellation are
-  the certified content. The **precise net** coefficient needs a **gauge-invariant
-  fermion-velocity prescription**: the bare self-energy `Z` is gauge-dependent
-  (Feynman vs Landau differ), so the fermion-half magnitude is not fixed here —
-  only its (gauge-robust) sign. That prescription is the named open item.
+  isotropy, fixed point, finite-grid `lambda_G > 0`, and sign-robust
+  non-cancellation are the runner-checked content. The **precise net**
+  coefficient needs a **gauge-invariant fermion-velocity prescription**: the bare
+  self-energy `Z` is gauge-dependent (Feynman vs Landau differ), so the
+  fermion-half magnitude is not fixed here — only its gauge-robust sign. That
+  prescription is the named open item.
 - **Proxy / normalization.** Magnitudes are at the structural/proxy level; the
-  taste/doubler overall factor is a flagged normalization. The naturalness
-  problem (the physical-magnitude conversion vs `1e-20`, the anomalous dimension,
-  the `(mu/M_Pl)^gamma` damping) stays **open**.
-- No new axioms, imports, or comparators; the gauge/fermion lines are the
-  framework's own retained free propagators; no registered primitive is touched.
+  taste/doubler overall factor is a flagged normalization. The physical-magnitude
+  conversion, anomalous dimension, and `(mu/M_Pl)^gamma` damping stay **open**.
+- No new axioms or registered primitives are introduced. The gauge/fermion lines
+  are the framework free-propagator setup used by the runner. The external
+  Lorentz-violation scale is disclosed as context-only comparison, not as
+  support for the bounded theorem.
 
 ## Reproduce
 

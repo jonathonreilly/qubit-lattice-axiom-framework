@@ -25,7 +25,7 @@ gauge-invariant. Checks:
   (2) lattice Ward identity khat_mu Pi_munu -> 0 with the seagull (transverse).
   (3) B4 isotropy at v=1: Pi_T(temporal) == Pi_T(spatial)  (c_t = c_s protected).
   (4) eta=v_F/v_b=1 is a fixed point: induced anisotropy vanishes at zero input.
-  (5) gauge-sector power-divergent constant lambda_G > 0 (log + finite split).
+  (5) gauge-sector finite-grid lambda_G proxy > 0 (log + finite split).
   (6) non-cancellation: fermion-half sign is opposite to lambda_G in BOTH Feynman
       and Landau gauge (the SIGN is gauge-robust), so the net relative-velocity
       drag does NOT cancel.
@@ -101,7 +101,7 @@ iso_ok = all(abs(piT(0, q, N, iso) - piT(1, q, N, iso)) < 1e-6 for q in qq)
 check("Pi_T(temporal) == Pi_T(spatial) at v=1 (B4-isotropic)", iso_ok,
       f"max diff = {max(abs(piT(0,q,N,iso)-piT(1,q,N,iso)) for q in qq):.1e}")
 
-banner("eta = v_F/v_b = 1 is a fixed point; lambda_G > 0 (power-divergent constant)")
+banner("eta = v_F/v_b = 1 is a fixed point; lambda_G > 0 (finite-grid proxy)")
 def induced(eps, q, N):
     v = np.array([1-eps/2, 1+eps/2, 1+eps/2, 1+eps/2])
     return piT(1, q, N, v) - piT(0, q, N, v)
@@ -110,7 +110,7 @@ check("induced anisotropy vanishes at eps=0 (eta=1 is a true fixed point)",
 qs = [0.5, 0.35, 0.25, 0.18]
 slopes = [induced(0.10, q, N)/0.10 for q in qs]
 X = np.array([math.log(1/q) for q in qs]); A_G, B_G = np.polyfit(X, slopes, 1)
-check("gauge log attractor present (A_G>0) and power-divergent constant lambda_G>0",
+check("gauge log attractor present (A_G>0) and finite-grid lambda_G proxy > 0",
       A_G > 0 and B_G > 0, f"A_G(log)={A_G:+.3f}  B_G=lambda_G={B_G:+.3f}")
 
 banner("Non-cancellation: fermion-half sign is opposite to lambda_G in both gauges")
@@ -149,12 +149,12 @@ banner("SUMMARY")
 print("The two-gluon seagull tadpole restores transversality of the one-loop")
 print("vacuum polarization (Ward identity satisfied), which a bubble-only assembly")
 print("violates. On the transverse Pi: at v=1 the gauge sector is B4-isotropic")
-print("(c_t=c_s); eta=v_F/v_b=1 is a fixed point; the gauge-sector power-divergent")
-print("constant lambda_G > 0 sits on top of the IR velocity-RG log attractor.")
+print("(c_t=c_s); eta=v_F/v_b=1 is a fixed point; the gauge-sector finite-grid")
+print("lambda_G proxy > 0 sits on top of the IR velocity-RG log attractor.")
 print("The fermion-half velocity anisotropy has the OPPOSITE sign in both Feynman")
 print("and Landau gauge (sign gauge-robust), so the cross-sector net does NOT")
-print("cancel: residual D is a nonzero power-divergent constant (quantified, not")
-print("closed). The PRECISE net needs a gauge-invariant fermion-velocity")
+print("cancel: residual D is a nonzero finite-grid proxy obstruction (quantified,")
+print("not closed). The PRECISE net needs a gauge-invariant fermion-velocity")
 print("prescription (the bare self-energy Z is gauge-dependent); proxy-level")
 print("magnitudes and the taste/doubler normalization stay open.")
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")

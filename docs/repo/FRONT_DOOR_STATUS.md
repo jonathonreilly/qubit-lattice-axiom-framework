@@ -13,15 +13,15 @@ It is not a physics claim surface and should not be edited by hand.
 |---|---:|
 | Ledger rows | 3474 |
 | Applied audit verdicts | 1440 |
-| Retained-grade rows, including boxed decorations | 1339 |
+| Retained-grade rows, including boxed decorations | 1340 |
 | Retained positive theorems | 197 |
 | Retained no-go rows | 198 |
-| Retained bounded rows | 886 |
+| Retained bounded rows | 887 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 29 |
-| Unaudited rows | 1705 |
+| Unaudited rows | 1706 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 34 |
+| Audited conditional rows | 33 |
 | Audited renaming rows | 25 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
@@ -34,23 +34,23 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Metric | Value |
 |---|---:|
 | Total pending rows | 1708 |
-| Ready rows | 100 |
+| Ready rows | 102 |
 | Cycle-break targets | 9 |
-| Critical pending | 297 |
-| High pending | 314 |
+| Critical pending | 296 |
+| High pending | 315 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`hierarchy_b3_staggered_supplier_cascade_note_2026-06-17`](../../docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md) - critical; audit_in_progress
+- [`transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10`](../../docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md) - critical; unaudited
+- [`hierarchy_formula_honest_status_note_2026-05-10`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md) - critical; unaudited
 - [`clifford_chirality_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`per_site_su2_spin_half_theorem_note_2026-05-02`](../../docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md) - high; unaudited
 - [`koide_q23_k0_real_block_equivalence_note_2026-05-30`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md) - high; unaudited
 - [`lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16`](../../docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md) - high; unaudited
 - [`single_axiom_hilbert_note`](../../docs/SINGLE_AXIOM_HILBERT_NOTE.md) - high; unaudited
 - [`lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`](../../docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md) - high; unaudited
-- [`pre_record_reference_state_tracial_derivation_note_2026-05-20`](../../docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -61,8 +61,8 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 162 |
-| high | `unaudited` | 162 |
+| high | `unaudited` | 163 |
+| critical | `unaudited` | 161 |
 | medium | `unaudited` | 98 |
 | critical | `audited_conditional` | 2 |
 | critical | `open_gate` | 2 |
@@ -80,18 +80,18 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3619 |
-| Critical nodes | 575 |
-| High nodes | 509 |
+| Critical nodes | 574 |
+| High nodes | 510 |
 | Medium nodes | 973 |
 | Leaf nodes | 1562 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1701 descendants; score 159.733
+- `minimal_axioms` - critical; 1700 descendants; score 159.732
 - `three_generation_observable_theorem_note` - critical; 1027 descendants; score 67.006
-- `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
-- `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
+- `graph_first_su3_integration_note` - critical; 1437 descendants; score 62.490
+- `observable_principle_from_axiom_note` - critical; 916 descendants; score 60.341
 - `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
-- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 48.014
-- `key_terminology` - critical; 1126 descendants; score 46.638
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 44.312
+- `minimal_axioms_2026-05-03` - critical; 1032 descendants; score 48.013
+- `key_terminology` - critical; 1125 descendants; score 46.637
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 894 descendants; score 44.306

@@ -7654,10 +7654,6 @@
     },
     {
       "from": "cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25",
-      "to": "koide_q_delta_closure_package_readme_2026-04-21"
-    },
-    {
-      "from": "cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25",
       "to": "koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25"
     },
     {
@@ -23459,10 +23455,6 @@
     {
       "from": "koide_q_eq_3delta_identity_note_2026-04-21",
       "to": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
-    },
-    {
-      "from": "koide_q_eq_3delta_identity_note_2026-04-21",
-      "to": "koide_q_delta_closure_package_readme_2026-04-21"
     },
     {
       "from": "koide_q_minimal_scale_free_selector_note_2026-04-22",
@@ -43842,10 +43834,6 @@
     },
     {
       "from": "lanes.active_working_lanes_2026-04-26",
-      "to": "koide_q_delta_closure_package_readme_2026-04-21"
-    },
-    {
-      "from": "lanes.active_working_lanes_2026-04-26",
       "to": "koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25"
     },
     {
@@ -44295,10 +44283,6 @@
     {
       "from": "lanes.open_science.06_charged_lepton_mass_retention_open_lane_2026-04-26",
       "to": "yt_ward_identity_derivation_theorem"
-    },
-    {
-      "from": "lanes.open_science.06_charged_lepton_mass_retention_open_lane_2026-04-26",
-      "to": "koide_q_delta_closure_package_readme_2026-04-21"
     },
     {
       "from": "lanes.open_science.06_charged_lepton_mass_retention_open_lane_2026-04-26",
@@ -53462,7 +53446,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17"
+      "to": "hierarchy_formula_honest_status_note_2026-05-10"
     },
     {
       "from": "repo.front_door_status",
@@ -55980,7 +55964,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1695233a4c614d32942d18550885dede879b6ec82fb5ae07f06aad49a5a12a04",
+      "note_hash": "72ac351ab5e49d3b3688e7685f3a37ed7295ade82d55bdb58ae52d2a620f014f",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"
@@ -57357,7 +57341,7 @@
         "axiom_first_cpt_theorem_stretch_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "60338320b977a3f3bda7db6d0dc4cc2ca299919c1f9d30c91decea99af117776",
+      "note_hash": "7063970d98e78c6584f49133a4bd11f8a5e2cb09539fdcf0fcf857ea15190f87",
       "path": "docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md",
       "runner_path": "scripts/axiom_first_kms_condition_check.py",
       "title": "Axiom-First KMS Condition for the Reconstructed Gibbs State"
@@ -63595,7 +63579,6 @@
         "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24",
         "ckm_third_row_magnitudes_theorem_note_2026-04-24",
         "alpha_s_derived_note",
-        "koide_q_delta_closure_package_readme_2026-04-21",
         "koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25",
         "koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25",
         "ckm_cp_product_alpha_s_cross_sector_extraction_theorem_note_2026-04-25"
@@ -63603,7 +63586,7 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "80a50e9ed681d4cb4b1854730bfba55837a4f1c43753e5f665ffe53f3e49114d",
+      "note_hash": "f1a49c6a4f41b8a0d7556a31dde0a52594467310e498902ce92a69de934651f4",
       "path": "docs/CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_SUPPORT_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_cross_sector_a_squared_koide_vcb_bridge.py",
       "title": "Cross-Sector A^2-Q_l-|V_cb| Bridge Support Note"
@@ -85235,11 +85218,10 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
         "koide_aps_block_by_block_forcing_note_2026-04-21",
-        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
-        "koide_q_delta_closure_package_readme_2026-04-21"
+        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a493a992e1be76e2c8ec38d0e8c4771fd4b5aa7dd0a6b51013e7617ffb01d98f",
+      "note_hash": "c9bc4b0363901a783f33a317cbb2f51bf480bf993aa61fee9882928107e558c4",
       "path": "docs/KOIDE_Q_EQ_3DELTA_IDENTITY_NOTE_2026-04-21.md",
       "runner_path": "scripts/frontier_koide_Q_eq_3delta_identity.py",
       "title": "Q = p\u00b7\u03b4 Arithmetic Identity on the Current Koide Support-Route Values"
@@ -87062,7 +87044,6 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "open_gate",
       "deps": [
-        "koide_q_delta_closure_package_readme_2026-04-21",
         "koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25",
         "koide_q_op_locality_c3_fixed_source_support_note_2026-04-27",
         "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
@@ -87095,7 +87076,7 @@
         "ai_methodology.raw.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cc3c4953264a3be5495fb8aa6bfc52d380f416830ddf95c966d5101a23203921",
+      "note_hash": "493b1e9039049f77acc6d2f9d6141a51210a324da1723e43b4f41a56d3d6f929",
       "path": "docs/lanes/ACTIVE_WORKING_LANES_2026-04-26.md",
       "runner_path": null,
       "title": "Active Working Lanes"
@@ -87308,14 +87289,13 @@
         "lanes.active_working_lanes_2026-04-26",
         "koide_q_op_locality_c3_fixed_source_support_note_2026-04-27",
         "yt_ward_identity_derivation_theorem",
-        "koide_q_delta_closure_package_readme_2026-04-21",
         "koide_brannen_geometry_dirac_support_note_2026-04-22",
         "three_generation_observable_theorem_note",
         "observable_principle_from_axiom_note",
         "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d9cd63947dd74bbb25f3b813c43fef2661296387c5a932e5e6d9cc104fe53d15",
+      "note_hash": "35933548568a00ecbc6e11550ba057b6b7fad11db9759b7cf28e34837238ae22",
       "path": "docs/lanes/open_science/06_CHARGED_LEPTON_MASS_RETENTION_OPEN_LANE_2026-04-26.md",
       "runner_path": null,
       "title": "Lane 6 \u2014 Charged-Lepton Mass Retention (Full Closure)"
@@ -103170,7 +103150,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
+        "hierarchy_formula_honest_status_note_2026-05-10",
         "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
         "per_site_su2_spin_half_theorem_note_2026-05-02",
         "koide_q23_k0_real_block_equivalence_note_2026-05-30",
@@ -103180,7 +103160,7 @@
         "pre_record_reference_state_tracial_derivation_note_2026-05-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5967733581719140e87c08824b49750781faf1c6056f7eb1e7ec56d46abd7be2",
+      "note_hash": "41bfad3f8f5b1c278f6c81136a87f1e25b826e8db5c88341cfb8cbaae6855bfd",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -111024,7 +111004,7 @@
         "axiom_first_reflection_positivity_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8da8968dbe645eb77066fea7554e3dd69b7e4806fa736322547327f6b2f11c8a",
+      "note_hash": "5b43daca3ee95bd3bf5cad093e282a87ce3ffeb28a53794cd4070941172c051b",
       "path": "docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md",
       "runner_path": "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py",
       "title": "Transfer-Matrix Log Quasilocality on the Free Bilinear Sector"
@@ -118593,7 +118573,7 @@
       "open_gate": 192,
       "positive_theorem": 583
     },
-    "edge_count": 13472,
+    "edge_count": 13468,
     "leaf_count": 1154,
     "node_count": 3619,
     "root_count": 1090,

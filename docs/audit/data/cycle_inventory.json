@@ -15,7 +15,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 372,
+      "max_transitive_descendants": 365,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -24,7 +24,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md",
           "title": "Quark CP-Carrier Completion on the Live Mass-Ratio Lane",
-          "transitive_descendants": 372
+          "transitive_descendants": 365
         },
         {
           "audit_status": "unaudited",
@@ -33,7 +33,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md",
           "title": "Quark CP Carrier Slot Minimality Theorem",
-          "transitive_descendants": 372
+          "transitive_descendants": 365
         }
       ],
       "requires_lemma_extraction": false

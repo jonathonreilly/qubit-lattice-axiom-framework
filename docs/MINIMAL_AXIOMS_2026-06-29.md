@@ -46,8 +46,7 @@ The full one-site possibility domain has algebraic presentation `M_2(C)`.
 A `Cl(3,0)`-compatible real-algebra presentation may be used equivalently and
 adds no further primitive structure.
 
-No presentation, and no basis or frame within one, is primitive; possibilities
-related by presentation equivalence are the same possibility.
+A possibility is individuated by its algebraic relations alone.
 
 ### Admissibility / Local Constraint
 

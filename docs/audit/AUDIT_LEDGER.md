@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 900 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1681 |
+| unaudited | 1680 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 35 |
+| ~~audited_conditional~~ | 36 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -66,12 +66,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1309 |
-| `audited_conditional` | 35 |
+| `audited_conditional` | 36 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 27 |
-| `unaudited` | 2007 |
+| `unaudited` | 2006 |
 
 | claim_type | count |
 |---|---:|
@@ -1467,6 +1467,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -10738,6 +10739,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Full signed-permutation O_h equivariance on the R^3 generation carrier forces invariant symmetric forms and equivariant operators to be scalar while moving the democratic direction, so the C_3 trivial/doublet value-bit carrier is erased rather than selected.  _(class `A`)_
 - **chain closes:** True — The restricted packet gives the full finite-group action and runner source, and the core statements follow from standard linear algebra for signed permutations: diagonal sign flips kill off-diagonal invariant form entries and permutations equalize diagonal entries, while the commutant is scalar. This proves the scoped O_h-carrier obstruction without importing an external physical identification.
 - **rationale:** The runner is not a print-only or tuned-value check: it explicitly constructs O_h and C_3, averages forms/operators over the group, verifies invariant dimensions, and checks the projector and commutant claims. Independent formula inventory agrees with the load-bearing identities: |O_h|=2^3*3!=48, the C_3 symmetric-form space is span{I,J-I}, O_h-invariant forms are lambda I, the O_h average of vv^T/||v||^2 is I/3, and scalar H anticommutes with Gamma only at H=0. The no-go is properly scoped and leaves C_3-level or other split-preserving routes open, so it is a closed obstruction only to full O_h equivariance on R^3.
+- **auditor confidence:** high
+
+### `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09`
+
+- **Note:** [`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](../../docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded independence claim for sector-slot versus orbit-slot occupancy, including the asserted doublet weights 2*pi/g and pi/g and the stated Z_d -> rho -> r -> Q bookkeeping consequence map.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T014311Z-a21f4038-koide_orbit_occupancy_in`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Both exhibited slot models satisfy the listed checked constraints but have different doublet weights, so together with Record's non-supply of weighting/occupancy the occupancy rule is not supplied by the current checked premise surface.  _(class `A`)_
+- **chain closes:** False — The exact partition integrals support the formal Z_d ratio 2 and Record does not supply an occupancy rule. The broader claimed r/Q consequence map does not close from the restricted packet because the M_orbit r=1/2 step uses an unstated one-complex-slot equipartition/normalization bridge rather than deriving the moment from the displayed holomorphic Gaussian integral.
+- **rationale:** Issue: the runner computes the partition weights but injects per_slot_quantum=1/(2*beta) for the holomorphic one-complex-slot r value instead of deriving that normalization from the displayed Gaussian measure. Why this blocks: the clean bounded core is at most partition-weight underdetermination, while the note also claims the Z_d <-> rho <-> r <-> Q consequence map is derived from explicit integrals. Repair target: supply an audited bridge for the holomorphic-slot equipartition/rho map or split the clean partition-weight independence claim from the r/Q bookkeeping extension.
 - **auditor confidence:** high
 
 ### `koide_order_one_circulant_diagnostic_note_2026-05-29`

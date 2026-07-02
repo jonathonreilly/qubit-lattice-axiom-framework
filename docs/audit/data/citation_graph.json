@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_record_scalar_map_no_go_note_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "no_per_site_bosonic_ccr_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "observable_principle_record_scalar_map_no_go_note_2026-06-05",
         "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
         "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
         "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
         "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
         "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
         "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
-        "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14"
+        "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
+        "no_per_site_bosonic_ccr_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3a248c1cb3eb2bff24e2e1af68a91c00847508bb526c2fe0836352a522042355",
+      "note_hash": "38c3bcb0d0744ae9c9474d1b752532c142fe7eceadf08859879b1bfb8060f112",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

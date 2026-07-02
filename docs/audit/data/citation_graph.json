@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -55818,7 +55818,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "02d31349f0ab51226fd8448cc88b78507b461eb8ccf944df2f61210cf5bc6541",
+      "note_hash": "0c04ea7c21a8dac6eccf23819e36a10d825c845e500aca12a894dd6a79203e39",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Audit Loop"
@@ -55988,7 +55988,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "703318c961dc4e17d379b8c67b3b8ca70c282c6089b8141f3a94ea36a329aa5a",
+      "note_hash": "1695233a4c614d32942d18550885dede879b6ec82fb5ae07f06aad49a5a12a04",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"
@@ -89880,7 +89880,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1",
+      "note_hash": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1",
       "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
       "runner_path": "scripts/audit_companion_minimal_axioms_clean_base_exact.py",
       "title": "Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)"
@@ -103169,7 +103169,7 @@
         "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f5761e25a71c307916c8568ef3efe0bf19a1655c57f6ea42d6937b14128678d6",
+      "note_hash": "a996b86960e71b8cf74a328e913b055fc84414310e8680ceba75ec29e9ddb1c4",
       "path": "docs/repo/CONTROLLED_VOCABULARY.md",
       "runner_path": null,
       "title": "Controlled Vocabulary"
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09",
         "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
         "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20",
         "ring_monodromy_does_not_force_car_note_2026-06-04",
         "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
         "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18",
         "staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17",
-        "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17"
+        "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17",
+        "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5b00350cd0801f3260f4955a972291b61c213a37d8e71f5043bbc2f263ac5a1a",
+      "note_hash": "bfeebc8e8b5d8b829e88d148c45e06bd979c2ba701069a75fc976e48fc1fa6c1",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

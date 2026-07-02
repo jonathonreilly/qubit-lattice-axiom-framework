@@ -79,7 +79,7 @@ def main() -> int:
     print("single-clock independent commuting transfer factor N5 no-go")
     print("=" * 72)
 
-    assert_contains(NOTE, "Actual current-surface status", "note states current-surface status")
+    assert_contains(NOTE, "Claim boundary", "note states claim boundary")
     assert_contains(NOTE, "does not prove a second physical clock exists", "note blocks physical-clock overclaim")
     assert_contains(NOTE, "Does not alter the axiom count")
     assert_contains(NOTE, "AUDIT_LEDGER_WRITTEN=FALSE")

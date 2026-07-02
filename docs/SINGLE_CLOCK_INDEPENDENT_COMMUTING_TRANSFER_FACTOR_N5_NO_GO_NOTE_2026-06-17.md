@@ -3,9 +3,9 @@
 **Date:** 2026-06-17
 **Claim type:** no_go
 **Type:** exact negative boundary / N5 route pruning
-**Actual current-surface status:** no-go for deriving B-AXIS.3 from the
+**Claim boundary:** route-pruning no-go for deriving B-AXIS.3 from the
 minimal Lattice/Quantum/Record surface plus raw equal-time tensor locality;
-support for the exact supplier shape a future positive N5 bridge must provide.
+support for the supplier shape a future positive N5 bridge must provide.
 **Primary runner:**
 [`scripts/single_clock_independent_commuting_transfer_factor_n5_no_go_2026_06_17.py`](../scripts/single_clock_independent_commuting_transfer_factor_n5_no_go_2026_06_17.py)
 with cached output
@@ -199,24 +199,7 @@ supplier. That bridge is not present in the current minimal surface.
 - Does not edit audit-ledger, queue, publication-status, axiom, or Tier-A
   registry surfaces.
 - Does not update any repo-wide status board.
-
-## Claim-Status Certificate
-
-```yaml
-actual_current_surface_status: no-go
-trace_class: negative_route_pruning
-reachability_to_target: prunes
-target_claim_id: axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03
-target_blocker_text: "B-AXIS.3 no independent commuting transfer factor is admitted as a second physical clock (= N5)"
-artifact_role: no_go
-conditional_surface_status: null
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "The artifact prunes derivations of N5 from the current minimal/local tensor surface and names supplier shapes; it does not close B-AXIS."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
+- Does not set an audit or effective-status result.
 
 ## Reproduction
 

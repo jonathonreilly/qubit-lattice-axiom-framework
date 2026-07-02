@@ -1,6 +1,14 @@
+===== runner cache v1 =====
+runner: scripts/single_clock_independent_commuting_transfer_factor_n5_no_go_2026_06_17.py
+runner_sha256: 12e9e909ab279a787a584791630e467d48e4125fcfd1844754d1d8d3cd698605
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
 single-clock independent commuting transfer factor N5 no-go
 ========================================================================
-PASS: note states current-surface status
+PASS: note states claim boundary
 PASS: note blocks physical-clock overclaim
 PASS: SINGLE_CLOCK_INDEPENDENT_COMMUTING_TRANSFER_FACTOR_N5_NO_GO_NOTE_2026-06-17.md contains 'Does not alter the axiom count'
 PASS: SINGLE_CLOCK_INDEPENDENT_COMMUTING_TRANSFER_FACTOR_N5_NO_GO_NOTE_2026-06-17.md contains 'AUDIT_LEDGER_WRITTEN=FALSE'
@@ -39,3 +47,6 @@ SUMMARY: PASS=34 FAIL=0
 AUDIT_LEDGER_WRITTEN=FALSE
 B_AXIS_DERIVED=FALSE
 SECOND_PHYSICAL_CLOCK_PROVED=FALSE
+
+----- stderr -----
+

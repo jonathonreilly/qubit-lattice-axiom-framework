@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_single_clock_codimension1_evolution_check.py
-runner_sha256: 4d946e39f01eadec12c4c00035ff56cec5f6c2fad42c0a6423806b53788ee5c7
+runner_sha256: e93b82e3bca595b20d98e280245fa8dfde1e28f86f5b7e1dc575e73650dd1db7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.62
+elapsed_sec: 0.61
 status: ok
 ----- stdout -----
 ========================================================================
@@ -97,9 +97,11 @@ exact time-space exchange symmetry shows the axis itself is a premise
   [PASS] [D] note retires B-RANGE from current scope (S2'(c) now uses the retained free-sector quasilocal supplier)
   [PASS] [D] note cites the free-bilinear quasilocal LR bridge as propagation supplier (free U=1 exact-log sector and finite quasilocal lightcone named)
   [PASS] [D] 2026-06-12 firewall: B-RANGE retired, B-AXIS remains the live blocker (axis-selection route-pruning context wired without retained promotion)
+  [PASS] [D] 2026-06-17 B-AXIS.1 split note is wired (blocked-time denominator support boundary is linked as source support)
+  [PASS] [D] B-AXIS.1 split keeps absolute clock unit open (does not derive a physical clock/rate unit)
 
 ========================================================================
-TOTAL: PASS=45 FAIL=0
+TOTAL: PASS=47 FAIL=0
 ========================================================================
 
 ----- stderr -----

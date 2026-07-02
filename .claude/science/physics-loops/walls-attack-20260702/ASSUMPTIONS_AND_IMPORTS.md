@@ -199,3 +199,51 @@ block inputs; it does not set or predict an audit outcome.
   selector, new axiom, primitive, or wall closure is introduced.
 - No docs/audit file, publication file, registry, or public status surface is
   edited by this block.
+
+## Block08
+
+**Date:** 2026-07-02
+**Block:** E-ident decomposition into definitional proportionality,
+dictionary choice, and CTX-match
+**Status authority:** independent audit lane only. This ledger records local
+block inputs; it does not set or predict an audit outcome.
+
+### Claim Shape
+
+- Status: conditional decomposition / bounded support. The result is not an
+  unconditional equal-channel-energy theorem and not a wall closure.
+- T1 discharges only the exact proportionality: under the equipartition note's
+  component-dictionary stipulation `(p_s, p_d) = (a^2, 2|b|^2)` and Block01's
+  channel energies `(E_I, E_B) = (3a^2, 6|b|^2)`, exactly
+  `(E_I, E_B) = 3(p_s, p_d)`.
+- `E-ident` decomposes into the component-dictionary stipulation, the
+  component-vs-slot dictionary choice already assigned to `R*`, and
+  `CTX-match`.
+- `CTX-match` is the remaining unadjudicated context-matching premise: the
+  equipartition note's `s/d` cells and the carrier-measure `I/B` channels are
+  the same supplied `C_3` readout context, not merely isomorphic bookkeeping.
+- The ladder updates from `{R*, D-totality, C2, E-ident}` to
+  `{R*, D-totality, C2, CTX-match}`.
+
+### Cited Authorities
+
+| path | role | what is used | load-bearing for Block08 bounded theorem |
+|---|---|---|---|
+| `docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md` | equipartition surface | The supplied Record wording, `s/d` outcome definition, squaring update, and verbatim component/slot dictionary stipulations. | yes |
+| `docs/EQUAL_CHANNEL_ENERGY_REDUCES_TO_EQUIPARTITION_SURFACE_DICTIONARY_RESIDUAL_BOUNDED_NOTE_2026-07-02.md` | Block06 sibling | The named `E-ident` premise and the dictionary-to-scoring correspondence identifying the component-vs-slot residual with the S1-vs-S2 residual. Dependency class: stacked branch-local, unaudited. | yes |
+| `docs/FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md` | Block01 sibling | The `hw=1` carrier-measure surface, supplied circulant form, generator-channel Hilbert-Schmidt setup, and channel energies. Dependency class: stacked branch-local, unaudited. | yes |
+
+### Import Firewall
+
+- No literature values are imported.
+- No current `MINIMAL_AXIOMS` content is read or used by this block.
+- No probability rule, Born rule, observed value, fitted selector, state
+  selector, new axiom, primitive, normalization, dictionary, or occupancy cell
+  is introduced.
+- `CTX-match` is not derived.
+- `R*`, `D-totality`, `C2`, and `CTX-match` remain unadjudicated.
+- Dictionary choice is not adjudicated here; that is `R*`.
+- The equipartition note's inherited conditions remain inherited.
+- The pre-reset wording caveat is carried, not resolved.
+- No docs/audit file, publication file, registry, or public status surface is
+  edited by this block.

@@ -118,3 +118,20 @@ Disposition: **pass**. Runner re-run independently: PASS=32 FAIL=0.
 5. **F5 (verified).** Runner re-run independently: PASS=16 FAIL=0.
 
 Disposition: **pass-after-repair** (style-only).
+
+## block08 — supervisor line-by-line review (2026-07-02, pre-PR)
+
+1. **F1 (verified).** T1 proportionality hand-checked: (3a^2, 6|b|^2) =
+   3·(a^2, 2|b|^2); equal-weight ⟺ equal-energy with N=3 canceling. The
+   discharge rests on the equipartition note's own stipulation (verbatim
+   quoted; runner textual-anchor checks pass).
+2. **F2 (verified).** T2's "what would break CTX-match" paragraph is the
+   right steelman: proportionality alone does not identify contexts; the
+   textual floor (shared C_3 singlet/doublet language + same supplied
+   circulant form) supports the question without deriving the identity.
+3. **F3 (verified).** T4 pre-reset disclosure stays within its reads (derives
+   the caveat from the equipartition note's own quoted wording; does not
+   overreach into MINIMAL_AXIOMS which was not in its read set).
+4. **F4 (verified).** Runner re-run independently: PASS=17 FAIL=0.
+
+Disposition: **pass**.

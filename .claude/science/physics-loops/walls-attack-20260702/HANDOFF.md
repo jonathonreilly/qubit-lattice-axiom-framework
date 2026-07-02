@@ -86,3 +86,18 @@ Prior: #4816, #4817, #4818, #4820. Proposed: block06 (equal-energy reduction).
    from the ladder; after this the wall is entirely a set of named
    adjudications.
 Verdict: **OPEN** (evaluator run locally per SKILL).
+
+## Cluster-cap evaluation — before PR #6 in the carrier-measure family (block08)
+
+Prior: #4816, #4817, #4818, #4820, #4821. Proposed: block08 (E-ident decomposition).
+1. New load-bearing premise: YES — the definitional-proportionality discharge
+   (stipulated weights = channel energies / N) and the CTX-match
+   characterization appear in no prior PR.
+2. Distinct claim type: YES — premise-decomposition/discharge (vs reduction in
+   block06: block06 STATED E-ident; block08 removes its physics content).
+3. Independent reviewability: YES — exact algebra + verbatim textual anchors,
+   own runner (17/0).
+4. Marginal review value: HIGH — the ladder's last physics-identification
+   premise weakens to a bookkeeping context-match; adjudication surface
+   shrinks materially.
+Verdict: **OPEN** (evaluator run locally per SKILL).

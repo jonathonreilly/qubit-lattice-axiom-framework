@@ -56,3 +56,15 @@ reachability_to_target: partially_closes
 artifact_role: theorem
 next_trace_action: "ladder after block06: {R*, D-totality, C2, E-ident} + inherited equipartition-note conditions. All four are adjudication-shaped. Campaign pivots to remaining queue: moduli openings formalization; kappa C2-shape. Synthesis lives in HANDOFF/final report, not a churn block."
 ```
+
+# Trace gate — block08 (E-ident decomposition)
+
+```yaml
+trace_class: upstream_support
+target_claim_id: flavor_missing_axiom_carrier_measure_note_2026-05-30
+target_blocker_text: "If a separate theorem selects equal Hilbert-Schmidt energy across the two generator channels, then ... r = b^2/a^2 = 1/(N-1)"
+source_of_blocker_text: audit_ledger
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: "ladder after block08: {R*, D-totality, C2, CTX-match}; CTX-match is a context-matching premise in the supplied-readout-context family — candidate merge into the C2/readout-context supplier spec (future note). Campaign then assesses corollary exhaustion."
+```

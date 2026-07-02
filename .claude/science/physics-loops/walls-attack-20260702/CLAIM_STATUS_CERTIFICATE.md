@@ -95,3 +95,18 @@ claim_type_reason: "exact two-branch value correspondence + reduction; E-ident a
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
+
+# Claim status certificate — block08 (E-ident decomposition)
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: partially_closes
+conditional_surface_status: E-ident's weight reading discharged as definitional proportionality under the stipulated component dictionary; dictionary choice assigned to R* (block06); residual = CTX-match (context identity), strictly weaker; ladder = {R*, D-totality, C2, CTX-match}
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact algebra + verbatim stipulation anchoring; residual premise named; siblings unaudited"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```

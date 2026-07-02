@@ -37,3 +37,10 @@ availability, review landability, blast radius, independence.
 - V3: framework-specific: rests on the equipartition note's flow surface and block01/03 structures.
 - V4: non-trivial: a two-branch exact-value correspondence with an S3-outside check is structure, not relabeling.
 - V5: distinct from blocks 01-05: reduction across two previously unconnected surfaces (occupancy/equipartition ⇔ scoring/channel-energy); closest = block02 (also cross-wall) but different pair and mechanism.
+
+## Value-gate record (V1–V5) — block08 (pre-PR)
+- V1: obstruction = block06's E-ident premise (the identification distance). Block08 discharges its physics content: the component dictionary's stipulated weights ARE one-third of the channel energies (definitional proportionality); the residual is CTX-match, strictly weaker.
+- V2: new content = the exact proportionality discharge, the three-way decomposition of E-ident, and the CTX-match characterization; none exists in block06 or the parents.
+- V3: framework-specific: rests on the equipartition note's verbatim stipulations and block01's channel norms.
+- V4: non-trivial: converting a physics-identification premise into a bookkeeping context-match is a real reduction, witnessed by exact algebra.
+- V5: distinct from block06 (which stated E-ident as a premise; this block decomposes and mostly discharges it); closest prior = block06, distinction stated.

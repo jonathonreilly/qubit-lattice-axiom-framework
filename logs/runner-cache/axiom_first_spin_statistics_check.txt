@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_spin_statistics_check.py
-runner_sha256: fdf41bef25ff5a544ab3c5a6081fe2e96461601557f2ee2af7a4a054f7a5e1a0
+runner_sha256: 73862c205e3b94046537bdecfa9bb433cd20140fbe5ded72b6ab47d772827a46
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.23
 status: ok
 ----- stdout -----
 ========================================================================
@@ -25,12 +25,14 @@ status: ok
 [FALS] PASS: hard-core per-site space is dim 2 (sigma_+^2 = 0): the dimensional readout does NOT exclude it
 [FALS] PASS: hard-core fields COMMUTE across distinct sites ({sigma_+^(x), sigma_+^(y)} != 0): an ungraded dim-2 alternative survives; old Fact 2.3's binary was false
 [FALS] PASS: scope boundary is computed, not asserted: hard-core AND Grassmann/JW frames have identical on-site data ([a,a^+] = 1-2n, per-site dim 2) and BOTH sit outside the CCR hypothesis class, so this note's hypothesis cannot decide between them (the selection is the GL(F) predicate, owned by the 2026-06-10 conditional discriminator note; 2026-05-25 no-forcing note reproduced, not contradicted)
-[S1] PASS: Grassmann CAR realized on the 2-dim per-site Fock space: {c, c^+} = I, c^2 = 0 (matches the dim-2 Cl(3) spinor module)
-[S1] PASS: pairwise CAR for N=4 modes (Hilbert dim 16): max off-diag anticommutator 0.0e+00, max |{c_i,c_i^+} - I| 0.0e+00
+[S1] PASS: displayed relations (3) realized by left exterior (wedge) multiplication on the Grassmann algebra Lambda_{2N}, N=4 modes (algebra dim 2^{2N} = 256): max |{theta_i,theta_j}| over ALL 8x8 generator pairs = 0.0, max |{chibar_x,chi_y}| incl. x=y = 0.0, all generators nilpotent (max |theta^2| = 0.0); every anticommutator ZERO, cross terms included
+[S1] PASS: exterior realization is FAITHFUL at the right dimension: the 2^{2N} = 256 monomial images of the unit have rank 256 (left regular representation, L_a 1 = a)
+[S1-CAR] PASS: SEPARATE CAR/Jordan-Wigner OPERATOR realization on the 2^N-dim Fock space (N=4, Hilbert dim 16): pairwise CAR {c_i,c_j} = 0, {c_i,c^+_j} = delta_ij I (max dev 0.0e+00); on-site {c,c^+} = I, c^2 = 0 matches the dim-2 Cl(3) spinor module; the mixed anticommutator is NOT zero, so this realizes the CAR algebra, not eq. (3)
+[S1] PASS: refutation-shaped contrast: exterior cross anticommutators are ZERO exactly (max = 0.0) while the CAR mixed anticommutator is NOT ({c_x,c^+_x} = I, max |.| = 1.0) => the displayed relations (3) are realized on the 2^{2N}-dim exterior algebra, NOT by the CAR operators on the 2^N-dim Fock space
 [S3] PASS: Berezin identity |det(M)| = |Pf(A)| on the canonical staggered Dirac-Wilson exhibit (N=4): det = +1.856100e+00, Pf = +1.856100e+00, rel dev = 2.4e-16
 [S4] PASS: <psi|c_x c_y|psi> = -0.500, <psi|c_y c_x|psi> = +0.500: equal magnitude, opposite sign, sum exactly 0 (both sides individually non-zero)
 [CTX] PASS: H(M) = (M+M^+)/2 positive definite on the canonical mass+Wilson surface (min eig +0.3000): the bosonic GAUSSIAN integral converges there, so the exclusion is at the operator/Hilbert-space level, not Gaussian convergence
-TOTAL: PASS=18 FAIL=0
+TOTAL: PASS=20 FAIL=0
 
 ----- stderr -----
 

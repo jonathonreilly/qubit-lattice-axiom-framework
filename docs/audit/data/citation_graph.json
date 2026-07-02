@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
     },
     {
@@ -53494,11 +53490,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
     },
     {
       "from": "repo.front_door_status",
-      "to": "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
+      "to": "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
         "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
         "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
         "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
         "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
         "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
+        "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
         "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
-        "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
+        "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a7310c03d18e556a0870237df70e360e1e2b9b376993a1637a7c817e0cf6fabd",
+      "note_hash": "863b43ce876b9a29b9d9f5a02c5f0bb32d7ecb08ec4bdbb3c6b5945ec1cefc5f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

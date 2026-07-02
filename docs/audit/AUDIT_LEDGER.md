@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 203 |
-| **retained_bounded** | 913 |
+| **retained_bounded** | 914 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 32 |
-| unaudited | 1650 |
+| unaudited | 1649 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1331 |
+| `audited_clean` | 1332 |
 | `audited_conditional` | 40 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1976 |
+| `unaudited` | 1975 |
 
 | claim_type | count |
 |---|---:|
@@ -107,9 +107,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1701 | 159.73 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1027 | 67.01 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1438 | 62.49 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1439 | 62.49 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1030 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1126 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
@@ -1000,6 +1000,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_object_top4_multistage_outer_transfer_sweep_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `persistent_object_top4_multistage_transfer_sweep_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `persistent_record_matched_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `persistent_record_overlap_kernel_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `persistent_record_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -14242,6 +14243,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Because the record basis is orthonormal, W†W = sum_{r,s}(K_r†K_s)<r|s> = sum_r K_r†K_r, so the isometry condition gives the Kraus resolution.  _(class `A`)_
 - **chain closes:** True — The displayed identities close from the stated finite-dimensional isometry premise and orthonormal record basis. The note explicitly excludes deriving W from persistent-record dynamics, so that bridge is not needed for this bounded claim.
 - **rationale:** The load-bearing step is a direct algebraic expansion of an assumed finite isometry in an orthonormal record basis, not a definition substitution or external comparator check. The CP, trace-preservation, and selective-normalization formulas follow from the resulting Kraus resolution in finite dimensions. The runner source genuinely constructs a seeded finite isometry, extracts blocks, and checks the relevant matrix identities and positivity conditions; it does not import or hard-code the contested persistent-record bridge.
+- **auditor confidence:** high
+
+### `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For any finite qubit-lattice Kraus family satisfying sum_r K_r^dagger K_r = I, the explicitly stacked block-column map V: H_sys -> H_record tensor H_sys is an isometry; no physical persistent-record process or record-label identification is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T033903Z-702e85c0-persistent_record_instru`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The block-column construction gives V^dagger V = sum_r K_r^dagger K_r = I_sys by direct block-matrix algebra and the Kraus resolution-of-identity hypothesis.  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, the conclusion follows from the retained Kraus-Choi authority's supplied Kraus resolution identity plus finite-dimensional matrix algebra. The open physical choice of which Kraus family models persistent records is explicitly outside the audited claim.
+- **rationale:** The proof's load-bearing step is a genuine algebraic closure: stacking the K_r as row blocks makes V^dagger V exactly the sum of K_r^dagger K_r. The runner source actually constructs the matrices and checks the block structure and isometry identities symbolically and numerically; it does not merely print constants or import the conclusion. This clean verdict is limited to the abstract finite-dimensional instrument construction, not to selecting the framework's physical persistent-record Kraus family.
 - **auditor confidence:** high
 
 ### `persistent_record_matched_compare_note`

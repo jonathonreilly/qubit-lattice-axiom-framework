@@ -1,9 +1,9 @@
 {
   "by_criticality": {
     "critical": 301,
-    "high": 283,
+    "high": 284,
     "leaf": 584,
-    "medium": 484
+    "medium": 482
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -8720,6 +8720,33 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30",
+        "minimal_axioms",
+        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
+        "graph_first_su3_integration_note"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.255,
+      "note_path": "docs/ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_alpha_s_direct_wilson_loop.py",
+      "transitive_descendants": 26
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17799,31 +17826,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.044,
-      "note_path": "docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_persistent_record_instrument_construction.py",
-      "transitive_descendants": 32
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17970,33 +17972,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py",
       "transitive_descendants": 25
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30",
-        "minimal_axioms",
-        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
-        "graph_first_su3_integration_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.585,
-      "note_path": "docs/ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_alpha_s_direct_wilson_loop.py",
-      "transitive_descendants": 11
     },
     {
       "audit_independence_required": "any_non_self",
@@ -49602,6 +49577,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 99,
-  "total_pending": 1652
+  "ready_count": 98,
+  "total_pending": 1651
 }

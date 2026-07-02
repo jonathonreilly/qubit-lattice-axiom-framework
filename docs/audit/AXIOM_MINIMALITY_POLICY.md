@@ -82,17 +82,31 @@ Recorded explicitly approved axiom updates:
   wording update, 2026-07-02; source file edited in place, bundled same-day
   with the Admissibility clarification below so the premise-hash re-audit
   waves coincide). The two added sentences read: "A readout may depend only
-  on supplied structure; a value that varies with an unsupplied choice is not
-  readable." and "A rule offered as a law must be well-defined at every
-  law-admissible realized state; a prescription defined only at particular
-  states is pointwise content, not a law." Reading notes: supplied structure
-  is pinned by the Qualification's first paragraph (the four axioms, approved
-  primitives, explicit admissions, approved registrations — the realized
-  state enters through the registered pointwise-interface primitive, and an
-  imported basis, frame, or convention is an unsupplied choice); totality has
-  no declared-domain escape (restricting a law's domain to convenient states
-  is the excluded move), while conditional rules and pointwise evaluation
-  under the realized-state primitive remain admissible. The clauses name
+  on supplied structure, where the realized state and its records count as
+  supplied; a value that varies with an unsupplied choice is not readable
+  within the framework." and "A rule offered as a law must be well-defined at
+  every state admissible under Admissibility throughout its declared domain;
+  the domain must be declared as registered structure, not by enumerating
+  states, and a prescription defined only at particular states is pointwise
+  content, not a law." Wording validated by a seven-seat blind panel
+  (operator algebras, quantum foundations, lattice gauge, philosophy of
+  physics, GR/cosmology, condensed matter, experimental metrology; verdicts:
+  S1 7x yes-with-caveat, S2 5x yes-with-caveat 2x contestable, 0 rejections;
+  all caveats folded into the final wording above). Reading notes: supplied
+  structure is pinned by the Qualification's first paragraph (the four
+  axioms, approved primitives, explicit admissions, approved registrations),
+  with the realized state entering through the registered pointwise-interface
+  primitive and its records through the Record axiom; an imported basis,
+  frame, or convention is an unsupplied choice, and explicitly admitting a
+  choice makes values relative to it readable; "not readable within the
+  framework" is a licensing statement, not a meaningfulness claim; the
+  admissible-state quantifier is fixed by the Admissibility axiom and prior
+  registered structure, independent of the candidate rule (no gerrymandered
+  domains — a declared domain must be a registered structural condition such
+  as a gap or phase condition, never an enumeration of the states where the
+  rule happens to hold); totality binds the rule's verdicts, not auxiliary
+  presentations; conditional rules and pointwise evaluation under the
+  realized-state primitive remain admissible. The clauses name
   no operator, basis, weighting, selector, kinetic class, or value; they add
   no axiom and no primitive; downstream consequences remain theorem content
   subject to independent audit. In the same update,

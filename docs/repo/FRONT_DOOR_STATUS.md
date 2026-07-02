@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3596 |
-| Applied audit verdicts | 1388 |
-| Retained-grade rows, including boxed decorations | 1312 |
+| Applied audit verdicts | 1389 |
+| Retained-grade rows, including boxed decorations | 1313 |
 | Retained positive theorems | 193 |
 | Retained no-go rows | 194 |
-| Retained bounded rows | 869 |
+| Retained bounded rows | 870 |
 | Boxed decorations under retained parents | 56 |
 | Open gates | 24 |
 | Unaudited rows | 1887 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1899 |
+| Total pending rows | 1898 |
 | Ready rows | 129 |
 | Cycle-break targets | 14 |
-| Critical pending | 401 |
+| Critical pending | 400 |
 | High pending | 289 |
 | Medium pending | 510 |
 | Leaf pending | 699 |
 
 Next ready rows by queue order:
 
-- [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; audit_in_progress
+- [`observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16`](../../docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md) - critical; unaudited
 - [`staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md) - critical; unaudited
 - [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
 - [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited

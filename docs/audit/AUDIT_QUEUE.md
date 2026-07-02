@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1899
+**Total pending:** 1898
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 129
 
 By criticality:
-- `critical`: 401
+- `critical`: 400
 - `high`: 289
 - `medium`: 510
 - `leaf`: 699
@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | audit_in_progress | critical | 1206 | 16.24 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py` |
+| 1 | `observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16` | no_go | unaudited | critical | 1203 | 15.73 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.py` |
 | 2 | `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | unaudited | critical | 1187 | 18.21 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py` |
 | 3 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | unaudited | critical | 1100 | 30.61 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py` |
 | 4 | `cl3_taste_generation_theorem` | bounded_theorem | unaudited | critical | 1085 | 24.59 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py` |
@@ -58,13 +58,13 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 41 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 1382 | 15.43 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py` |
 | 42 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1378 | 43.43 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
 | 43 | `s3_time_spacetime_tensor_primitive_note` | bounded_theorem | unaudited | critical | 1210 | 15.74 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_spacetime_tensor_primitive.py` |
-| 44 | `observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16` | no_go | unaudited | critical | 1203 | 15.73 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.py` |
-| 45 | `observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18` | bounded_theorem | unaudited | critical | 1201 | 14.73 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py` |
-| 46 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | unaudited | critical | 1200 | 15.23 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py` |
-| 47 | `observable_principle_from_axiom_note` | bounded_theorem | unaudited | critical | 1199 | 64.23 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_observable_principle_from_axiom.py` |
-| 48 | `one_generation_matter_closure_note` | bounded_theorem | unaudited | critical | 1160 | 29.68 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_right_handed_sector.py` |
-| 49 | `s3_time_transfer_matrix_bridge_note` | bounded_theorem | unaudited | critical | 1155 | 15.68 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_transfer_matrix_bridge.py` |
-| 50 | `s3_time_bilinear_tensor_primitive_note` | open_gate | unaudited | critical | 1152 | 34.17 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_bilinear_tensor_primitive.py` |
+| 44 | `observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18` | bounded_theorem | unaudited | critical | 1201 | 14.73 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py` |
+| 45 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | unaudited | critical | 1200 | 15.23 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py` |
+| 46 | `observable_principle_from_axiom_note` | bounded_theorem | unaudited | critical | 1199 | 64.23 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_observable_principle_from_axiom.py` |
+| 47 | `one_generation_matter_closure_note` | bounded_theorem | unaudited | critical | 1160 | 29.68 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_right_handed_sector.py` |
+| 48 | `s3_time_transfer_matrix_bridge_note` | bounded_theorem | unaudited | critical | 1155 | 15.68 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_transfer_matrix_bridge.py` |
+| 49 | `s3_time_bilinear_tensor_primitive_note` | open_gate | unaudited | critical | 1152 | 34.17 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_bilinear_tensor_primitive.py` |
+| 50 | `yt_vertex_power_derivation` | bounded_theorem | unaudited | critical | 1138 | 15.15 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_vertex_power.py` |
 
 ## Citation cycle break targets
 

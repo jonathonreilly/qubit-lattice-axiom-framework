@@ -82,7 +82,8 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   is Lattice, Qubit, Admissibility, and Record. Lattice is the cubic `Z^3`
   nearest-neighbor locality substrate. Qubit is the domain of local possibilities
   with full one-site algebraic presentation `M_2(C)`, with `Cl(3,0)` only as
-  equivalent notation, and no possibility is privileged. Admissibility is one
+  equivalent notation, no possibility is privileged, and possibilities are
+  distinguished by the supplied algebraic structure alone. Admissibility is one
   fixed finite-neighborhood rule, the same at every lattice translate; for
   each site, the available possibilities are determined by, and vary with,
   the nearest-neighbor conditions, consistent with local records.

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 204 |
-| **retained_bounded** | 918 |
+| **retained_bounded** | 919 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 33 |
-| unaudited | 1642 |
+| unaudited | 1641 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1338 |
+| `audited_clean` | 1339 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1968 |
+| `unaudited` | 1967 |
 
 | claim_type | count |
 |---|---:|
@@ -1470,6 +1470,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_source_covariance_normalization_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_vertex_power_derivation` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_derivation_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -21326,6 +21327,19 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** Given H_unit = I_(N_iso*N_c)/sqrt(N_iso*N_c), the diagonal basis component overlap equals 1/sqrt(N_iso*N_c), hence 1/sqrt(6) at (2,3).  _(class `A`)_
 - **chain closes:** True — The scoped identity follows directly from the stated orthonormal basis, matrix-unit definition, and H_unit normalization. The note explicitly excludes the physical SSB/Yukawa matching bridge, so that unproved bridge is outside the audited claim boundary.
 - **rationale:** The supplied proof and runner close the finite-dimensional arithmetic claim without importing gauge coupling, VEV, LSZ, chirality, HS/source normalization, or physical Yukawa readout assumptions. The alias equality is only clean within the explicitly bounded component-overlap definition and is not used to assert physical operator matching. The runner completed with 13 passes and 0 failures against the current scoped claim.
+- **auditor confidence:** high
+
+### `yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25`
+
+- **Note:** [`YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md`](../../docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Layer 1 only: strict W/Z derivative response rows, W/Z response ratio, reparameterization invariance, and W-radial Jacobian recovery for a stipulated local neutral one-Higgs EW radial coordinate; no carrier-source identification or positive Y_T closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T040408Z-43e4447c-yt_strict_wz_neutral_car`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From the retained formulas M_W(s)=g_2 v(s)/2 and M_Z(s)=sqrt(g_2^2+g_Y^2)v(s)/2, differentiating with respect to s gives the two response rows and the ratio g_2/sqrt(g_2^2+g_Y^2).  _(class `A`)_
+- **chain closes:** True — The layer-1 result follows by ordinary differentiation of the retained EW mass formulas with couplings treated as fixed inputs. The source note explicitly excludes the carrier-source identification and top/Y_T closure from the standalone audited scope.
+- **rationale:** The load-bearing math is a class-A algebraic/calc corollary of retained-grade EW mass formulas: the derivative rows, ratio cancellation, and reparameterization invariance all follow without external comparators or fitted values. The runner source performs the relevant symbolic differentiations and projector checks, while many other PASS lines are text, existence, or ledger-boundary checks. The conditional layer-2 carrier-source reading is explicitly outside this scoped claim, so it does not block clean audit of layer 1.
 - **auditor confidence:** high
 
 ### `yt_vertex_power_derivation`

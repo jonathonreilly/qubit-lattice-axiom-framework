@@ -1,17 +1,15 @@
----
-claim_id: quark_route2_e_center_single_box_limit_underdetermination_no_go_note_2026-06-21
-claim_type: no-go
-actual_current_surface_status: no-go
-trace_class: negative_route_pruning
-reachability_to_target: prunes
----
-
 # Route-2 E-Center Single-Box Limit Underdetermination No-Go Note
 
 **Date:** 2026-06-21
-**Runner:** `scripts/frontier_quark_route2_single_box_limit_underdetermination_no_go_2026_06_21.py`
-**Output:** `outputs/frontier_quark_route2_single_box_limit_underdetermination_no_go_2026_06_21.txt`
-**Status:** single-box limit underdetermination no-go for exactifying the measured E-center calibration.
+**Claim type:** no_go
+**Claim scope:** single-box limit underdetermination no-go for exactifying the measured E-center calibration
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** single-box limit underdetermination no-go for exactifying the measured E-center calibration
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_single_box_limit_underdetermination_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_single_box_limit_underdetermination_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_single_box_limit_underdetermination_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_single_box_limit_underdetermination_no_go_2026_06_21.txt)
+**Authority links:** [QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md), [QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md), [QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md](QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md)
 
 ## Scope
 

@@ -242,7 +242,7 @@ def main() -> int:
     print("\nPART 5: note and status firewall")
     note = read(DOCS / "QUARK_ROUTE2_READOUT_INVERSE_SQUARE_GATE_NO_GO_NOTE_2026-06-21.md")
     required_note_markers = (
-        "Actual current-surface status: bounded current-bank no-go for readout-only inverse-square coefficient shortcut",
+        "**Actual current-surface status:** bounded current-bank no-go for readout-only inverse-square coefficient shortcut",
         "This is not an audit verdict",
         "does not resolve the parent gate",
         "readout-only inverse-square coefficient theorem",
@@ -251,7 +251,7 @@ def main() -> int:
     for marker in required_note_markers:
         check(f"note contains marker: {marker}", marker in note)
     banned_markers = (
-        ("status-authority phrase", phrase("Status ", "authority")),
+        ("legacy source-status certificate", "actual_current_surface_status:"),
         ("parent-closure phrase", phrase("closes ", "the parent")),
         (
             "current-surface endpoint-derivation phrase",

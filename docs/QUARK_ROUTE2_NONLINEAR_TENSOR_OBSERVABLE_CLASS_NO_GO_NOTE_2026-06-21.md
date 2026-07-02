@@ -1,16 +1,17 @@
 # Quark Route-2 Nonlinear Tensor-Observable Class No-Go
 
 **Date:** 2026-06-21
-**Status:** exact negative boundary / no-go; no endpoint derivation
 **Claim type:** no_go
-**Status authority:** branch-local physics-loop packet only. This note does
-not set an audit verdict and does not update repo-wide authority surfaces.
-**Primary runner:**
-[`scripts/frontier_quark_route2_nonlinear_tensor_observable_class_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_nonlinear_tensor_observable_class_no_go_2026_06_21.py)
-(`PASS=31 FAIL=0`)
-**Runner output:**
-[`outputs/frontier_quark_route2_nonlinear_tensor_observable_class_no_go_2026_06_21.txt`](../outputs/frontier_quark_route2_nonlinear_tensor_observable_class_no_go_2026_06_21.txt)
+**Claim scope:** no_go
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** exact negative boundary / no-go; no endpoint derivation
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_nonlinear_tensor_observable_class_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_nonlinear_tensor_observable_class_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_nonlinear_tensor_observable_class_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_nonlinear_tensor_observable_class_no_go_2026_06_21.txt)
+**Authority links:** [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md), [QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md), [S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md)
 
+not set an audit verdict and does not update repo-wide authority surfaces.
 ## Scope
 
 This note attacks the remaining Route-2 readout endpoint target
@@ -75,7 +76,7 @@ Let
 B_blind = {E-shell, T-shell, T-center}.
 ```
 
-Define the branch-local class `C_blind^poly` to contain every finite
+Define the source-side class `C_blind^poly` to contain every finite
 observable obtained by:
 
 1. applying `P(rho_E)` only to columns in `B_blind`;
@@ -167,7 +168,7 @@ E-center sensitivity.
 ## Relation to parent rows
 
 The parent
-[`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
+[[S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
 remains an open gate because its unique coupling theorem still depends on the
 upstream readout endpoint triple. This note does not close that gate. It
 sharpens the no-go memory for one tempting repair family: tensor-polynomial

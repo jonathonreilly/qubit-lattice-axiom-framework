@@ -1,11 +1,15 @@
 # Quark Route-2 Readout Inverse-Square Gate No-Go
 
 **Date:** 2026-06-21
+**Claim type:** no_go
+**Claim scope:** bounded current-bank no-go for readout-only inverse-square coefficient shortcut
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** bounded current-bank no-go for readout-only inverse-square coefficient shortcut
 **Trace class:** negative_route_pruning
-**Runner:** `scripts/frontier_quark_route2_readout_inverse_square_gate_no_go_2026_06_21.py`
-
-Actual current-surface status: bounded current-bank no-go for readout-only inverse-square coefficient shortcut.
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_readout_inverse_square_gate_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_readout_inverse_square_gate_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_readout_inverse_square_gate_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_readout_inverse_square_gate_no_go_2026_06_21.txt)
+**Authority links:** [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md), [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
 
 ## Scope
 
@@ -18,7 +22,7 @@ readout-only inverse-square coefficient theorem.
 ```
 
 This is not an audit verdict and does not resolve the parent gate
-`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`. It asks whether the current named
+[S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md). It asks whether the current named
 readout/Schur/registration bank already promotes the exact inverse-square
 Schur value to a readout-row coefficient law.
 

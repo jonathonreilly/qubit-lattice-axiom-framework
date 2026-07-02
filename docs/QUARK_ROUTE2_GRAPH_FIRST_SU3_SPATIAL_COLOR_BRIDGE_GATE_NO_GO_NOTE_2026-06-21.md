@@ -2,12 +2,14 @@
 
 **Date:** 2026-06-21
 **Claim type:** no_go
-**Actual current-surface status: no-go for the graph-first spatial-color escape.**
-**Audit boundary:** This source note does not set, predict, estimate, or apply
-any audit verdict.
-**Primary runner:** [scripts/frontier_quark_route2_graph_first_su3_spatial_color_bridge_gate_no_go_2026_06_21.py](../scripts/frontier_quark_route2_graph_first_su3_spatial_color_bridge_gate_no_go_2026_06_21.py)
-**Runner output:** [outputs/frontier_quark_route2_graph_first_su3_spatial_color_bridge_gate_no_go_2026_06_21.txt](../outputs/frontier_quark_route2_graph_first_su3_spatial_color_bridge_gate_no_go_2026_06_21.txt)
-**TRACE:** negative_route_pruning
+**Claim scope:** no_go
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** no-go
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_graph_first_su3_spatial_color_bridge_gate_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_graph_first_su3_spatial_color_bridge_gate_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_graph_first_su3_spatial_color_bridge_gate_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_graph_first_su3_spatial_color_bridge_gate_no_go_2026_06_21.txt)
+**Authority links:** [GRAPH_FIRST_SU3_INTEGRATION_NOTE.md](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md), [NATIVE_GAUGE_CLOSURE_NOTE.md](NATIVE_GAUGE_CLOSURE_NOTE.md), [CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md](CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md), [CUBIC_ANISOTROPY_SECTIONS_SO3_FRAME_BOUNDED_THEOREM_NOTE_2026-06-17.md](CUBIC_ANISOTROPY_SECTIONS_SO3_FRAME_BOUNDED_THEOREM_NOTE_2026-06-17.md)
 
 This is not an audit verdict. It is a physics-loop steelman of the named
 escape in the Route-2 `c_TE = -R_conn` cross-domain bridge route.

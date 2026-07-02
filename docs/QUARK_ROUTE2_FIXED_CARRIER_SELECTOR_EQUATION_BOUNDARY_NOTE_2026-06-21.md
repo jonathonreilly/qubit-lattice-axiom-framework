@@ -1,10 +1,15 @@
 # Quark Route-2 Fixed-Carrier Selector Equation Boundary
 
 **Date:** 2026-06-21
-**Type:** no_go
 **Claim type:** no_go
-**Status:** no-go / negative route pruning; no endpoint closure
-**Primary runner:** `scripts/frontier_quark_route2_fixed_carrier_selector_equation_boundary_2026_06_21.py`
+**Claim scope:** no_go
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** no-go / negative route pruning; no endpoint closure
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_fixed_carrier_selector_equation_boundary_2026_06_21.py`](../scripts/frontier_quark_route2_fixed_carrier_selector_equation_boundary_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_fixed_carrier_selector_equation_boundary_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_fixed_carrier_selector_equation_boundary_2026_06_21.txt)
+**Authority links:** [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md), [QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md), [QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md), [QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md), [MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)
 
 ## Scope
 
@@ -31,19 +36,19 @@ value without importing an equivalent center/source primitive.
 
 ## Authority Inputs
 
-- [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
+- [[QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
   supplies the exact restricted carrier columns and missing-map obstruction.
-- [`QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)
+- [[QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)
   supplies the conditional time-coupling context.
-- [`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
+- [[S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
   names the inherited unique-coupling blocker.
-- [`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)
+- [[QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)
   supplies the minimal-naturality boundary and target equivalences.
-- [`QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md`](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md)
+- [[QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md)](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md)
   supplies the E-center-blindness boundary.
-- [`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md)
+- [[QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md)](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md)
   supplies the named source-domain bridge target.
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+- [[MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)](MINIMAL_AXIOMS_2026-06-05.md)
   supplies the Record/Quantum non-supply boundary for readout context,
   weighting, metrics, and source primitives.
 
@@ -150,21 +155,6 @@ fixed Route-2 carrier
 It does not prune a future theorem that derives `c_TE = -8/9`, derives the
 metric ratio `1449/704`, or supplies another typed E-center source/readout
 primitive from current-surface authorities.
-
-## Current Status
-
-```yaml
-actual_current_surface_status: no-go
-trace_class: negative_route_pruning
-reachability_to_target: prunes
-conditional_surface_status: null
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "The block prunes fixed-carrier selector equations; it does not derive the missing E-center source/readout primitive."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
 
 ## Verification
 

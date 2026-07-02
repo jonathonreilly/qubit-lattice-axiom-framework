@@ -2,14 +2,17 @@
 
 **Date:** 2026-06-21
 **Claim type:** no_go
-**Status:** exact current-bank firewall for the non-color source/readout
+**Claim scope:** no_go
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** exact current-bank firewall for the non-color source/readout
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_non_color_e_center_source_primitive_firewall_2026_06_21.py`](../scripts/frontier_quark_route2_non_color_e_center_source_primitive_firewall_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_non_color_e_center_source_primitive_firewall_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_non_color_e_center_source_primitive_firewall_2026_06_21.txt)
+**Authority links:** [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md), [QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md), [ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md](ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md), [QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md), [QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md), [QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md), [TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md](TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md), [S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md), [S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md), [QUARK_ROUTE2_T_SIDE_ENDPOINT_THEOREM_ATTEMPT_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_T_SIDE_ENDPOINT_THEOREM_ATTEMPT_BOUNDED_NOTE_2026-06-12.md)
+
 primitive route to the Route-2 E-center value. This note does not derive the
 Route-2 endpoint triple and does not apply an audit verdict.
-**Primary runner:**
-[`scripts/frontier_quark_route2_non_color_e_center_source_primitive_firewall_2026_06_21.py`](../scripts/frontier_quark_route2_non_color_e_center_source_primitive_firewall_2026_06_21.py)
-**Output:**
-[`outputs/frontier_quark_route2_non_color_e_center_source_primitive_firewall_2026_06_21.txt`](../outputs/frontier_quark_route2_non_color_e_center_source_primitive_firewall_2026_06_21.txt)
-
 ## Scope
 
 This block attacks the non-color version of the remaining Route-2 readout
@@ -122,14 +125,14 @@ The named non-color bank supplies useful structure:
 
 | Surface | What it supplies | What it does not supply |
 |---|---|---|
-| `TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md` | exact center-excess scalar `delta_A1(center)-delta_A1(shell)=1/6` | the E-row coefficient `beta_E/alpha_E` |
-| `S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md` | definition-only carrier `K_R=(u_E,u_T,delta_A1 u_E,delta_A1 u_T)` | a physical tensor-primitive bridge or first-principles readout row |
-| `QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md` | exact channelwise readout reduction and endpoint algebra | unique selection of the readout triple |
-| `S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md` | universal time factor and spatial-prefactor localization | the spatial prefactor value |
-| `ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md` | norm/sign/bound structure and `rho_E>-6` | direction selection |
-| `QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md` | positive projective residual family `ell_E ~ (1,rho_E)` | magnitude selection |
-| `QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md` | finite-box comparator near the target | exact infinite-volume identification |
-| `QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md` | exact `kappa=3/2` support and quadratic-route no-go | inverse-square weight law |
+| [TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md](TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md) | exact center-excess scalar `delta_A1(center)-delta_A1(shell)=1/6` | the E-row coefficient `beta_E/alpha_E` |
+| [S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md) | definition-only carrier `K_R=(u_E,u_T,delta_A1 u_E,delta_A1 u_T)` | a physical tensor-primitive bridge or first-principles readout row |
+| [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) | exact channelwise readout reduction and endpoint algebra | unique selection of the readout triple |
+| [S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md) | universal time factor and spatial-prefactor localization | the spatial prefactor value |
+| [ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md](ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md) | norm/sign/bound structure and `rho_E>-6` | direction selection |
+| [QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md) | positive projective residual family `ell_E ~ (1,rho_E)` | magnitude selection |
+| [QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md) | finite-box comparator near the target | exact infinite-volume identification |
+| [QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md) | exact `kappa=3/2` support and quadratic-route no-go | inverse-square weight law |
 
 This inventory leaves the exact non-color source primitive missing.
 

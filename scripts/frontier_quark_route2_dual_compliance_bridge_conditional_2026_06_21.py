@@ -163,7 +163,7 @@ def part5_companion_note() -> None:
     text = read_text(relpath)
     check(f"{relpath} exists", bool(text))
     required = [
-        "Actual current-surface status: open / conditional-support",
+        "**Actual current-surface status:** conditional support",
         "conditional on the dual-compliance premise",
         "This is not an audit verdict",
         "does not close the parent S3/Route-2 gate",

@@ -1,8 +1,15 @@
 # Quark Route-2 Positive Source-Functional Cone No-Go
 
 **Date:** 2026-06-21
-**Status:** scoped no-go; branch-local physics-loop packet only
-**Primary runner:** `scripts/frontier_quark_route2_positive_source_functional_cone_no_go_2026_06_21.py`
+**Claim type:** no_go
+**Claim scope:** scoped no-go; source-side review packet only
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** scoped no-go; source-side review packet only
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_positive_source_functional_cone_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_positive_source_functional_cone_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_positive_source_functional_cone_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_positive_source_functional_cone_no_go_2026_06_21.txt)
+**Authority links:** [QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md), [QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md), [QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md), [QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md), [RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md](RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md)
 
 ## Scope
 

@@ -2,14 +2,17 @@
 
 **Date:** 2026-06-21
 **Claim type:** no_go
-**Status:** exact branch-local negative boundary for same-scalar nonlinear
+**Claim scope:** no_go
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** exact source-side negative boundary for same-scalar nonlinear
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_nonlinear_e_center_tensor_observable_gate_2026_06_21.py`](../scripts/frontier_quark_route2_nonlinear_e_center_tensor_observable_gate_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_nonlinear_e_center_tensor_observable_gate_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_nonlinear_e_center_tensor_observable_gate_2026_06_21.txt)
+**Authority links:** [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md), [S3_TIME_BILINEAR_TENSOR_PRIMITIVE_RANK1_FACTORIZATION_NOTE_2026-05-17.md](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_RANK1_FACTORIZATION_NOTE_2026-05-17.md), [QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md), [QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md), [QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md](QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md), [QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md)
+
 dressings of the current rank-1 Route-2 carrier. This note does not derive the
 Route-2 endpoint triple and does not apply an audit verdict.
-**Primary runner:**
-[`scripts/frontier_quark_route2_nonlinear_e_center_tensor_observable_gate_2026_06_21.py`](../scripts/frontier_quark_route2_nonlinear_e_center_tensor_observable_gate_2026_06_21.py)
-**Output:**
-[`outputs/frontier_quark_route2_nonlinear_e_center_tensor_observable_gate_2026_06_21.txt`](../outputs/frontier_quark_route2_nonlinear_e_center_tensor_observable_gate_2026_06_21.txt)
-
 ## Scope
 
 This block attacks the next positive escape route after the measured

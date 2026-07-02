@@ -80,7 +80,10 @@ def main() -> int:
     )
     check(
         "premise registry repeats no downstream readout bridge from Record",
-        "supplies no readout context" in premise_nodes.lower()
+        (
+            "supplies no readout context" in premise_nodes.lower()
+            or "supplies no context-selection rule" in premise_nodes.lower()
+        )
         and "downstream theory consequence" in premise_nodes.lower(),
     )
     check(

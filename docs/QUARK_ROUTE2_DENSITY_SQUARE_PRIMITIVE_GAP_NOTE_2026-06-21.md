@@ -1,8 +1,15 @@
 # Quark Route-2 Density-Square Primitive Gap
 
 **Date:** 2026-06-21
-**Status:** scoped no-go / conditional support; branch-local physics-loop packet only
-**Primary runner:** `scripts/frontier_quark_route2_density_square_primitive_gap_2026_06_21.py`
+**Claim type:** no_go
+**Claim scope:** scoped no-go / conditional support; source-side review packet only
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** scoped no-go / conditional support; source-side review packet only
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_density_square_primitive_gap_2026_06_21.py`](../scripts/frontier_quark_route2_density_square_primitive_gap_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_density_square_primitive_gap_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_density_square_primitive_gap_2026_06_21.txt)
+**Authority links:** [QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md), [QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md), [S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md), [MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)
 
 ## Scope
 

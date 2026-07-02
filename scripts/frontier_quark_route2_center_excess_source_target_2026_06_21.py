@@ -219,7 +219,7 @@ def main() -> int:
     print("\nPART 5: note and status firewall")
     note = read(DOCS / "QUARK_ROUTE2_CENTER_EXCESS_SOURCE_TARGET_NOTE_2026-06-21.md")
     required_note_markers = (
-        "Actual current-surface status: bounded-support for the normalized center-excess source target",
+        "**Actual current-surface status:** bounded support for the normalized center-excess source target",
         "This is not an audit verdict",
         "does not resolve the parent gate",
         "b_E/a_E = 7/2",
@@ -228,7 +228,7 @@ def main() -> int:
     for marker in required_note_markers:
         check(f"note contains marker: {marker}", marker in note)
     banned_markers = (
-        ("status-authority phrase", phrase("Status ", "authority")),
+        ("legacy source-status certificate", "actual_current_surface_status:"),
         ("parent-closure phrase", phrase("closes ", "the parent")),
         (
             "current-surface endpoint-derivation phrase",

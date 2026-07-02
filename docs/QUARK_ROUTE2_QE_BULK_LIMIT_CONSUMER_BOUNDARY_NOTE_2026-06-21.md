@@ -1,13 +1,18 @@
 # Quark Route-2 q_E Bulk-Limit Consumer Boundary Note
 
 **Date:** 2026-06-21
-**Claim type:** no-go / negative route pruning
+**Claim type:** no_go
+**Claim scope:** no_go / negative route pruning
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** no-go
 **Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
 **Primary runner:** [`scripts/frontier_quark_route2_qe_bulk_limit_consumer_boundary_2026_06_21.py`](../scripts/frontier_quark_route2_qe_bulk_limit_consumer_boundary_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_qe_bulk_limit_consumer_boundary_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_qe_bulk_limit_consumer_boundary_2026_06_21.txt)
+**Authority links:** [S3_TIME_PRIMITIVE_CHAIN_NOTE.md](S3_TIME_PRIMITIVE_CHAIN_NOTE.md), [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md), [QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md](QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md), [QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
 
 This note connects the already-landed `q_E(N)` box-size scan to the
-`S3_TIME_PRIMITIVE_CHAIN_NOTE.md` consumer. It does not re-run the heavy
+[S3_TIME_PRIMITIVE_CHAIN_NOTE.md](S3_TIME_PRIMITIVE_CHAIN_NOTE.md) consumer. It does not re-run the heavy
 box-size computation, does not update any audit verdict, and does not claim
 endpoint closure.
 
@@ -153,18 +158,18 @@ Forbidden downstream use without a new theorem:
 
 ## Load-Bearing Inputs
 
-- [`S3_TIME_PRIMITIVE_CHAIN_NOTE.md`](S3_TIME_PRIMITIVE_CHAIN_NOTE.md) names
+- [[S3_TIME_PRIMITIVE_CHAIN_NOTE.md](S3_TIME_PRIMITIVE_CHAIN_NOTE.md)](S3_TIME_PRIMITIVE_CHAIN_NOTE.md) names
   the open primitive-chain gate and the missing `beta_E / alpha_E = 21/4`
   entry.
-- [`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
+- [[S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
   records the direct consumer: the unique `Theta_R -> Lambda_R` law remains
   open until the readout endpoint triple is derived.
-- [`QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md`](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md)
+- [[QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md)](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md)
   supplies the measured `N=15` finite-box calibration and names the box-size
   discriminator.
-- [`QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md`](QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md)
+- [[QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md](QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md)](QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md)
   closes that discriminator negatively for the tested stack functional.
-- [`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)
+- [[QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)
   supplies the standing fixed-carrier non-selection boundary.
 
 ## Verification

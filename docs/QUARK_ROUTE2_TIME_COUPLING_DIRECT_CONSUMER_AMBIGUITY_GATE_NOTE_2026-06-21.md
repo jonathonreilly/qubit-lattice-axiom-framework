@@ -1,8 +1,15 @@
 # Quark Route-2 Time-Coupling Direct Consumer Ambiguity Gate
 
 **Date:** 2026-06-21
-**Status:** no-go / exact support boundary
-**Primary runner:** `scripts/frontier_quark_route2_time_coupling_direct_consumer_ambiguity_gate_2026_06_21.py`
+**Claim type:** no_go
+**Claim scope:** no-go / exact support boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** no-go / exact support boundary
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_time_coupling_direct_consumer_ambiguity_gate_2026_06_21.py`](../scripts/frontier_quark_route2_time_coupling_direct_consumer_ambiguity_gate_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_time_coupling_direct_consumer_ambiguity_gate_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_time_coupling_direct_consumer_ambiguity_gate_2026_06_21.txt)
+**Authority links:** [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
 
 ## Safe Statement
 
@@ -114,7 +121,7 @@ It only proves where the missing `rho_E = 21/4` entry lands downstream:
 exactly as the E-center source multiplier in the conditional
 time-coupling family.
 
-The parent `S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md` should therefore remain
+The parent [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md) should therefore remain
 an open gate until the upstream readout-map entry is derived. A future positive
 result should attack the upstream readout selector, not invent another
 slice-semigroup law.

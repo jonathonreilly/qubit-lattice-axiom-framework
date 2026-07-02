@@ -1,22 +1,22 @@
----
-claim_id: quark_route2_nonlinear_e_center_readout_primitive_boundary_note_2026-06-21
-claim_type_author_hint: no_go
-status_authority: independent_audit_lane_only
-direct_effective_status_change_allowed_from_this_note: false
----
-
 # Quark Route-2 Nonlinear E-Center Readout Primitive Boundary
 
 **Date:** 2026-06-21
+**Claim type:** no_go
+**Claim scope:** no-go / exact negative boundary for the
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** no-go / exact negative boundary for the
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_nonlinear_e_center_readout_primitive_boundary_2026_06_21.py`](../scripts/frontier_quark_route2_nonlinear_e_center_readout_primitive_boundary_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_nonlinear_e_center_readout_primitive_boundary_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_nonlinear_e_center_readout_primitive_boundary_2026_06_21.txt)
+**Authority links:** [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md), [ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md](ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md), [QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md), [S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md](S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md), [S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE.md](S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE.md), [S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md](S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md), [OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md](OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md), [OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md](OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md), [REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md](REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md), [SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md](SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md)
+
 named current nonlinear, log/determinant, tensor, and supplied-readout routes
 checked here. This source note does not set, predict, or apply any audit
 verdict.
 **Trace class:** negative_route_pruning.
-**Primary runner:**
-[`scripts/frontier_quark_route2_nonlinear_e_center_readout_primitive_boundary_2026_06_21.py`](../scripts/frontier_quark_route2_nonlinear_e_center_readout_primitive_boundary_2026_06_21.py)
 **Generated output:**
-[`outputs/frontier_quark_route2_nonlinear_e_center_readout_primitive_boundary_2026_06_21.txt`](../outputs/frontier_quark_route2_nonlinear_e_center_readout_primitive_boundary_2026_06_21.txt)
+[`logs/runner-cache/frontier_quark_route2_nonlinear_e_center_readout_primitive_boundary_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_nonlinear_e_center_readout_primitive_boundary_2026_06_21.txt)
 
 ## Purpose
 
@@ -53,10 +53,10 @@ and none of the checked named surfaces derives that law or its normalization.
 Allowed premises:
 
 1. the exact Route-2 restricted endpoint carrier and readout algebra from
-   [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md);
+   [[QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md);
 2. the exact conditional time/slice family from
-   [`QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)
-   and [`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md);
+   [[QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)
+   and [[S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md);
 3. the granted T-side stretch entries
    `beta_T/alpha_T = -1` and `alpha_T/alpha_E = -2`;
 4. the current same-domain channel projector weights
@@ -187,18 +187,18 @@ or an equivalent E-center-sensitive source/readout rule.
 
 ### E-center-blind and record/positivity routes
 
-[`QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md`](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md)
+[[QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md)](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md)
 proves that shell-only, T-side, channel-preserving, low-rational, and other
 E-center-blind constraints cannot select `rho_E`.
 
-[`ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md`](ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md)
+[[ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md](ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md)](ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md)
 shows that registration/idempotency/positivity conditions fix a norm or a
 one-sided bound, not the E-readout direction. They do not derive the
 inverse-square law.
 
 ### Quadratic and covariance routes
 
-[`QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md`](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md)
+[[QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md)](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md)
 already closes the quadratic `O_h` invariant route: the `E:T1` ratio is a free
 reduced-matrix-element ratio. It also identifies the exact gap as an
 inverse-square center-lift law, but does not derive it.
@@ -218,37 +218,37 @@ simple covariance surfaces.
 
 ### Tensor and gate-primitive routes
 
-[`S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md`](S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md)
+[[S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md](S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md)](S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md)
 finds broad restricted-class membership for the endpoint-fitted affine map, but
 not uniqueness and not an exact physical primitive selection theorem.
 
-[`S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE.md`](S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE.md)
+[[S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE.md](S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE.md)](S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE.md)
 and
-[`S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md)
+[[S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md](S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md)](S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md)
 provide bounded tensor support and comparison primitives. They explicitly do
 not supply the exact tensor carrier or endpoint coefficient theorem needed to
 fix the E-center lift.
 
 ### Log, determinant, and registrable-readout routes
 
-[`OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md`](OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md)
+[[OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md](OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md)](OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md)
 proves that determinant-only readout and source-block-to-record injectivity are
 not consequences of Record plus determinant algebra alone.
 
-[`OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md`](OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md)
+[[OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md](OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md)](OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md)
 shows that a supplied determinant-sector context can close that algebra inside
 the supplied context, but it does not derive the context from Record.
 
-[`REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md`](REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md)
+[[REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md](REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md)](REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md)
 isolates exact determinant-character phase-erasure algebra while preserving the
 need for separate physical-readout identifications.
 
-[`SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md`](SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md)
+[[SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md](SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md)](SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md)
 shows that finite record probability/Radon-Nikodym algebra selects a log
 coordinate only up to a source scale. It does not supply a Route-2 E/T
 center-weight rule.
 
-[`POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md`](POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md)
+[[POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md](POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md)](POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md)
 is a supplied finite prototype and explicitly not selector/readout/tangent
 authority from Record.
 
@@ -297,7 +297,7 @@ targets in the exact endpoint algebra and inverse-square sieve. No observed
 mass, fit, or endpoint float is used as a proof input.
 
 **N4. Residual matching.** The residual matches
-[`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md):
+[[S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md):
 the readout-map endpoint triple is not derived, so the unique
 `Theta_R -> Lambda_R` theorem is not closed.
 
@@ -335,7 +335,7 @@ gamma_T(center) / gamma_E(center) = -8/9.
 ```
 
 Until then,
-[`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
+[[S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
 remains an exact conditional family with inherited readout non-uniqueness, not
 a unique readout-to-slice theorem.
 

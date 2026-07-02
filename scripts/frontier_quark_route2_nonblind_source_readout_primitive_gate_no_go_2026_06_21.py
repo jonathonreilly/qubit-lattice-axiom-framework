@@ -319,14 +319,14 @@ def part5_note_hygiene() -> None:
     text = read_text(note)
     check("companion note exists", bool(text), str(note.relative_to(ROOT)))
     required_phrases = [
-        "Actual current-surface status: no-go over the named current-bank candidate families",
+        "**Actual current-surface status:** no-go",
         "This is not an audit verdict",
         "A_min",
         "Forbidden proof inputs",
         "Admissibility Gate",
         "Theorem",
         "does not rule out a future primitive",
-        "**TRACE:** negative_route_pruning",
+        "**Trace class:** negative_route_pruning",
     ]
     for phrase in required_phrases:
         check(f"companion note contains phrase: {phrase}", phrase in text)

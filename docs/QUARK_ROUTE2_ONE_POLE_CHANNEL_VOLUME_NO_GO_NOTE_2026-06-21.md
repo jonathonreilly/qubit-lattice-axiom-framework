@@ -1,22 +1,16 @@
 # Quark Route-2 One-Pole Channel-Volume No-Go
 
 **Date:** 2026-06-21
-**Type:** no-go / negative route pruning
+**Claim type:** no_go
+**Claim scope:** no_go / negative route pruning
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** no-go / negative route pruning
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
 **Primary runner:** [`scripts/frontier_quark_route2_one_pole_channel_volume_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_one_pole_channel_volume_no_go_2026_06_21.py)
-**Runner output:** [`outputs/frontier_quark_route2_one_pole_channel_volume_no_go_2026_06_21.txt`](../outputs/frontier_quark_route2_one_pole_channel_volume_no_go_2026_06_21.txt)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_one_pole_channel_volume_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_one_pole_channel_volume_no_go_2026_06_21.txt)
+**Authority links:** [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md](QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md), [QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md), [S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md)
 
-```yaml
-actual_current_surface_status: no-go
-trace_class: negative_route_pruning
-reachability_to_target: prunes
-conditional_surface_status: null
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "This block prunes positive polynomial and one-pole channel-volume source/readout cones. It does not derive the endpoint triple and does not prove impossibility over all future nonlinear observables."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
 
 ## Question
 

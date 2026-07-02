@@ -282,7 +282,7 @@ def main() -> int:
     print("\nPART 5: note and status firewall")
     note = note_text("QUARK_ROUTE2_SOURCE_SCALAR_PREP_GATE_NO_GO_NOTE_2026-06-21.md")
     required_note_markers = (
-        "Actual current-surface status: no-go for channel-scalar source-preparation shortcut",
+        "**Actual current-surface status:** no-go for channel-scalar source-preparation shortcut",
         "This is not an audit verdict",
         "does not resolve the parent gate",
         "S(a_E,a_T) = diag(a_E, a_T, a_E, a_T)",
@@ -292,7 +292,7 @@ def main() -> int:
     for marker in required_note_markers:
         check(f"note contains marker: {marker}", marker in note)
     banned_markers = (
-        ("status-authority phrase", phrase("Status ", "authority")),
+        ("legacy source-status certificate", "actual_current_surface_status:"),
         ("parent-closure phrase", phrase("closes ", "the parent")),
         (
             "current-surface endpoint-derivation phrase",

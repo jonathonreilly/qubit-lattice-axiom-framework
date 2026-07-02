@@ -124,7 +124,7 @@ def main() -> int:
     exact_text = read(str(exact))
     covariance_text = read(str(covariance))
     parent_text = read(str(parent))
-    check("new note declares bounded_theorem claim type", "Claim type: bounded_theorem" in note_text)
+    check("new note declares bounded_theorem claim type", "**Claim type:** bounded_theorem" in note_text)
     check("new note says no audit verdict is applied", "No audit verdict is applied" in note_text)
     check("new note labels the bridge as conditional support", "conditional support" in note_text)
     check(

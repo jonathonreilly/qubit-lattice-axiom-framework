@@ -1,22 +1,16 @@
 # Quark Route-2 Inverse-Square Covariance Primitive Candidate
 
 **Date:** 2026-06-21
-**Type:** conditional-support / primitive-target characterization
+**Claim type:** bounded_theorem
+**Claim scope:** conditional support / primitive-target characterization
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** conditional support / primitive-target characterization
+**Trace class:** open_gate_boundary
+**Reachability to target:** supports the open Route-2 endpoint by isolating a bounded source/readout condition; does not derive the endpoint triple.
 **Primary runner:** [`scripts/frontier_quark_route2_inverse_square_covariance_primitive_candidate_2026_06_21.py`](../scripts/frontier_quark_route2_inverse_square_covariance_primitive_candidate_2026_06_21.py)
-**Runner output:** [`outputs/frontier_quark_route2_inverse_square_covariance_primitive_candidate_2026_06_21.txt`](../outputs/frontier_quark_route2_inverse_square_covariance_primitive_candidate_2026_06_21.txt)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_inverse_square_covariance_primitive_candidate_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_inverse_square_covariance_primitive_candidate_2026_06_21.txt)
+**Authority links:** [QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md](QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md), [QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md), [ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md](ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
 
-```yaml
-actual_current_surface_status: conditional-support
-trace_class: upstream_support
-reachability_to_target: supports
-conditional_surface_status: "If a same-domain inverse-square channel covariance primitive q_X proportional to w_X^-2 is supplied, then lambda=q_E/q_T=kappa^2=9/4 and the Route-2 endpoint gives rho_E=21/4."
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "The current source surface does not derive the inverse-square covariance primitive; it is only characterized as the exact missing rule."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
 
 ## Question
 

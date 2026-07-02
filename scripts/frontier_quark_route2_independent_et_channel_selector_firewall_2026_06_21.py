@@ -259,7 +259,7 @@ def main() -> int:
     covariance_text = read(str(covariance))
     blindness_text = read(str(blindness))
     parent_text = read(str(parent))
-    check("new note declares no_go claim type", "Claim type: no_go" in note_text)
+    check("new note declares no_go claim type", "**Claim type:** no_go" in note_text)
     check("new note says no audit verdict is applied", "No audit verdict is applied" in note_text)
     check("new note distinguishes projector existence from coefficient-law selection", "projector existence is not coefficient selection" in note_text)
     check("new note records the inverse-square law as a premise target", "inverse-square coefficient law" in note_text)

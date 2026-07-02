@@ -322,7 +322,10 @@ def main() -> int:
         note = read(NOTE_PATH)
         check("paired_note_says_not_derivation", "not a derivation of the endpoint triple" in note)
         check("paired_note_names_fingerprint", "E-center contrast `7/8`" in note)
-        check("paired_note_keeps_exact_support_status", "**Status:** exact support" in note)
+        check(
+            "paired_note_keeps_exact_support_status",
+            "**Actual current-surface status:** exact support" in note,
+        )
         check("paired_note_status_not_bare_retained", re.search(r"(?m)^(?:\\*\\*)?Status(?:\\*\\*)?:\\s*(retained|promoted)\\b", note) is None)
         banned = (
             "retained " "branch-local",

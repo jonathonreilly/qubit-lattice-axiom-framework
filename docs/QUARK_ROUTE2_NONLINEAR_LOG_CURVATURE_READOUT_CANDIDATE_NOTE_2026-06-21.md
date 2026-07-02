@@ -1,9 +1,15 @@
 # Quark Route-2 Nonlinear Log-Curvature Readout Candidate Note
 
 **Date:** 2026-06-21
-**Status:** conditional support / open primitive target.
-**Primary runner:** `scripts/frontier_quark_route2_nonlinear_log_curvature_readout_2026_06_21.py`
-**Output:** `outputs/frontier_quark_route2_nonlinear_log_curvature_readout_2026_06_21.txt`
+**Claim type:** bounded_theorem
+**Claim scope:** conditional support / open primitive target
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** conditional support / open primitive target
+**Trace class:** open_gate_boundary
+**Reachability to target:** supports the open Route-2 endpoint by isolating a bounded source/readout condition; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_nonlinear_log_curvature_readout_2026_06_21.py`](../scripts/frontier_quark_route2_nonlinear_log_curvature_readout_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_nonlinear_log_curvature_readout_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_nonlinear_log_curvature_readout_2026_06_21.txt)
+**Authority links:** [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md), [QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md)
 
 ## Claim Boundary
 
@@ -70,7 +76,7 @@ does not supply:
 - a proof that this Hessian is the same object as the E-center readout lift.
 
 Those are now the concrete future theorem targets. Until one is supplied, the
-parent `S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md` remains open.
+parent [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md) remains open.
 
 ## Verification
 

@@ -1,13 +1,15 @@
 # Quark Route-2 Dual-Compliance Bridge Conditional Support Note
 
 **Date:** 2026-06-21
-**Claim type:** conditional_support
-**Actual current-surface status: open / conditional-support.**
-**Audit boundary:** This source note does not set, predict, estimate, or apply
-any audit verdict.
-**Primary runner:** [scripts/frontier_quark_route2_dual_compliance_bridge_conditional_2026_06_21.py](../scripts/frontier_quark_route2_dual_compliance_bridge_conditional_2026_06_21.py)
-**Runner output:** [outputs/frontier_quark_route2_dual_compliance_bridge_conditional_2026_06_21.txt](../outputs/frontier_quark_route2_dual_compliance_bridge_conditional_2026_06_21.txt)
-**TRACE:** upstream_support
+**Claim type:** bounded_theorem
+**Claim scope:** conditional_support
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** conditional support
+**Trace class:** upstream_support
+**Reachability to target:** supports the open Route-2 endpoint by isolating a bounded source/readout condition; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_dual_compliance_bridge_conditional_2026_06_21.py`](../scripts/frontier_quark_route2_dual_compliance_bridge_conditional_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_dual_compliance_bridge_conditional_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_dual_compliance_bridge_conditional_2026_06_21.txt)
+**Authority links:** [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md), [QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md), [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md)
 
 This is not an audit verdict. It is a physics-loop stretch attempt on the
 same-domain E/T2 source/readout bridge behind the Route-2 endpoint triple.

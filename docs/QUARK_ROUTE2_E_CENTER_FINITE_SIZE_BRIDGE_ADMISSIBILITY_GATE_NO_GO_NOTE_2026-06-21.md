@@ -1,17 +1,16 @@
----
-claim_id: quark_route2_e_center_finite_size_bridge_admissibility_gate_no_go_note_2026-06-21
-claim_type: no-go
-actual_current_surface_status: no-go
-trace_class: negative_route_pruning
-reachability_to_target: prunes
----
-
 # Route-2 E-Center Finite-Size Bridge Admissibility Gate No-Go Note
 
 **Date:** 2026-06-21
-**Runner:** `scripts/frontier_quark_route2_e_center_finite_size_bridge_gate_no_go_2026_06_21.py`
-**Output:** `outputs/frontier_quark_route2_e_center_finite_size_bridge_gate_no_go_2026_06_21.txt`
-**Status:** no-go for retiring the Route-2 E-center endpoint triple from the
+**Claim type:** no_go
+**Claim scope:** no-go for retiring the Route-2 E-center endpoint triple from the
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** no-go for retiring the Route-2 E-center endpoint triple from the
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_e_center_finite_size_bridge_gate_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_e_center_finite_size_bridge_gate_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_e_center_finite_size_bridge_gate_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_e_center_finite_size_bridge_gate_no_go_2026_06_21.txt)
+**Authority links:** [QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md](QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md), [QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md), [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md)
+
 current finite-size bridge evidence.
 
 ## Scope

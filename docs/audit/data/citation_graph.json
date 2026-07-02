@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "translation_abelian_composition_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "translation_covariance_local_op_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
         "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
         "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
         "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
         "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
         "q_integer_spectrum_theorem_note_2026-05-02",
         "momentum_charge_commute_theorem_note_2026-05-02",
-        "translation_abelian_composition_theorem_note_2026-05-02"
+        "translation_abelian_composition_theorem_note_2026-05-02",
+        "translation_covariance_local_op_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6223bdc0258e07e2d786bb4f5e3c7857bc035be4cfffdd4a0e6a557990fbde71",
+      "note_hash": "0d3aa2b38d069778a5a6b8678bad87b55bcb60029555c0174d46277f19573696",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

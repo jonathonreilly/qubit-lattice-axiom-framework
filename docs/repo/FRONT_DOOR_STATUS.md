@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1477 |
-| Retained-grade rows, including boxed decorations | 1366 |
-| Retained positive theorems | 204 |
+| Applied audit verdicts | 1478 |
+| Retained-grade rows, including boxed decorations | 1367 |
+| Retained positive theorems | 205 |
 | Retained no-go rows | 200 |
 | Retained bounded rows | 904 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 31 |
-| Unaudited rows | 1669 |
+| Unaudited rows | 1668 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 38 |
 | Audited renaming rows | 28 |
@@ -33,37 +33,37 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1671 |
-| Ready rows | 108 |
+| Total pending rows | 1670 |
+| Ready rows | 107 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
-| High pending | 284 |
-| Medium pending | 502 |
+| High pending | 285 |
+| Medium pending | 500 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`q_integer_spectrum_theorem_note_2026-05-02`](../../docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
+- [`fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09`](../../docs/FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md) - high; unaudited
 - [`momentum_charge_commute_theorem_note_2026-05-02`](../../docs/MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`translation_abelian_composition_theorem_note_2026-05-02`](../../docs/TRANSLATION_ABELIAN_COMPOSITION_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`translation_covariance_local_op_theorem_note_2026-05-02`](../../docs/TRANSLATION_COVARIANCE_LOCAL_OP_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`u1_fermion_number_conservation_theorem_note_2026-05-02`](../../docs/U1_FERMION_NUMBER_CONSERVATION_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`color_generation_independent_z3_structures_2026-06-05`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md) - medium; unaudited
 - [`axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md) - medium; unaudited
-- [`fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09`](../../docs/FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
+- [`darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05`](../../docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **433**.
+- Non-retained-grade cited rows in publication tables: **432**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 163 |
 | high | `unaudited` | 159 |
-| medium | `unaudited` | 97 |
+| medium | `unaudited` | 96 |
 | high | `audited_conditional` | 3 |
 | critical | `open_gate` | 2 |
 | high | `audited_numerical_match` | 2 |
@@ -82,8 +82,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
-| High nodes | 510 |
-| Medium nodes | 972 |
+| High nodes | 511 |
+| Medium nodes | 971 |
 | Leaf nodes | 1562 |
 
 Top load-bearing rows by graph score:

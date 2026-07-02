@@ -11,8 +11,13 @@ from first principles, without running audits or applying verdicts. Package
 each coherent science block as a review PR and do not push science work to
 main.
 
-## Block32 Focus
+## Block33 Focus
 
-Split W1 into sign and magnitude. Test whether the negative sign in
-`c_TE=-8/9` is independently missing, or whether the remaining blocker is the
-magnitude condition `|c_TE|=8/9`.
+Attack the magnitude source rule left by block32:
+
+```text
+|c_TE| = F_adj.
+```
+
+The route tested here is whether shell/T-side/color data that do not evaluate
+the E-center lift can select that magnitude.

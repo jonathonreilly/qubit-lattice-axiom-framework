@@ -3,27 +3,35 @@ CHECK 02: PASS -- parent note carries the no-number/no-selector/no-ordering/no-w
 CHECK 03: PASS -- parent note names both vacuities (two provably-vacuous; within-triplet naming; carrier-triplet choice)
 CHECK 04: PASS -- parent note carries the carrier-choice caveat (two candidate carriers; vacuous only at C3 grade; taste/Dirac bracketed)
 CHECK 05: PASS -- parent note carries its computed witnesses (single-orbit equipartition; intertwiner; spread = 0; rigid regular C3-rep)
-CHECK 06: PASS -- C3 canonical note carries the ratification framing (naming ratification on already-landed surfaces; import-retirement path)
-CHECK 07: PASS -- C3 canonical note carries the two-namings sentence and both cell namings (outcome naming; channel naming)
-CHECK 08: PASS -- C3 canonical note carries the Does-NOT supply-nothing sentence (weighting/normalization/probability/occupancy/dictionary/value)
-CHECK 09: PASS -- C3 canonical note carries the Does-NOT scoring/wall, axiom/primitive, and audit-status sentences
-CHECK 10: PASS -- axioms note carries both distinction clauses (Qubit possibility twin; Lattice site twin)
-CHECK 11: PASS -- T2 mapping: every parent-side witness in the table occurs as a substring of the parent note
-CHECK 12: PASS -- T2 mapping: every C3-side Does-NOT/header item in the table occurs as a substring of the C3 note
-CHECK 13: PASS -- T2 mapping-completeness: every enumerated Does-NOT key (and the two-namings header) is paired -- no bullet dropped
-CHECK 14: PASS -- T3 within-triplet: C3 acts as an order-3 3-cycle with a single transitive orbit {0,1,2} on the three corner labels
-CHECK 15: PASS -- T3 carrier: EH(dagger)EH = I (unitary), EH*C1 = C2*EH (intertwining), EH^3 = I, EH nontrivial -- exact integer arithmetic
-CHECK 16: PASS -- T3 corner-weight: generic rational diagonal separates (spread = 6 > 0); C3 orbit-average equalizes (spread = 0), Havg = 3*I, commutes with C3 -- exact
-CHECK 17: PASS -- T4 scope: note states the bracketed above-grade content (taste/Dirac/chirality) and that sub-admissions (i) and (ii) are untouched
-CHECK 18: PASS -- T5 boundary: note carries the boundary tokens (owner decision; morning; nothing adopted; grade; does not retire)
+CHECK 06: PASS -- T1 scorecard: parent states contentlessness is argued/strongly-supported, not exhaustively proven, pending the uncomputed invariant functional ring
+CHECK 07: PASS -- T1 class assignment: parent classes the residual as the universal abstract->physical bridge (abstract su(3) -> physical color), not derived away -- it remains an interpretive bridge
+CHECK 08: PASS -- T1 scope: parent scopes U_R as a symmetry of ker D only (not of D globally)
+CHECK 09: PASS -- C3 canonical note carries the ratification framing (naming ratification on already-landed surfaces; import-retirement path)
+CHECK 10: PASS -- C3 canonical note carries the two-namings sentence, both cell namings, and that BOTH namings are landed internal surfaces
+CHECK 11: PASS -- C3 canonical note carries the Does-NOT supply-nothing sentence (weighting/normalization/probability/occupancy/dictionary/value)
+CHECK 12: PASS -- C3 canonical note carries the Does-NOT scoring/wall, axiom/primitive, and audit-status sentences
+CHECK 13: PASS -- C3 canonical note carries the FULL third bullet intact -- axiom/primitive Does-NOT clause AND the already-landed-surfaces positive condition, mapped in full (not carved)
+CHECK 14: PASS -- T2 profile: every Does-NOT row's C3-side occurs in the C3 note and every parent-side witness occurs in the parent note; all four rows are MATCHES
+CHECK 15: PASS -- T2 completeness: every enumerated Does-NOT profile key is paired -- no negative-profile bullet dropped
+CHECK 16: PASS -- T2 positive condition: the landed-surfaces clause (the path's defining positive condition) is grounded in C3; the mapping records the residual FAILS it (second relatum is external nature, not a landed surface) and the note owns the disanalogy -- FAILS is the expected result
+CHECK 17: PASS -- axioms note carries both distinction clauses (Qubit possibility twin; Lattice site twin)
+CHECK 18: PASS -- axioms note keeps the derived surface OUTSIDE axiom content: Qualification supply sentence; Open-Gates staggered realization + AC_phi_lambda outside; Qubit possibilities are the one-site domain
+CHECK 19: PASS -- T3 within-triplet [witness]: C3 acts as an order-3 3-cycle with a single transitive orbit {0,1,2} on the three corner labels
+CHECK 20: PASS -- T3 carrier [witness]: distinct integer carriers C1 != C2 with a unitary intertwiner E (E^T E = I, E != I) satisfying E*C1 = C2*E, and a broken shift E' with E'*C1 != C2*E' -- the intertwining is falsifiable, exact integer arithmetic
+CHECK 21: PASS -- T3 corner-weight [witness]: generic rational diagonal separates (spread = 6 > 0); C3 orbit-average equalizes (spread = 0), Havg = 3*I, commutes with C3 -- exact
+CHECK 22: PASS -- T4 scope: note states the bracketed above-grade content (taste/Dirac/chirality), that sub-admissions (i) and (ii) are untouched, and the owner-class wording (carried by whatever class the owner rules)
+CHECK 23: PASS -- T5 boundary: note carries the boundary tokens (owner decision; morning; nothing adopted; grade; does not retire) and the repair tokens (FAILS; path-extension; argued; not exhaustively proven; separate residual)
+CHECK 24: PASS -- T5 governance: note states the two-part owner decision with internal-only precedent, and the extended residue carries item 8 (CKM/PMNS separate residual) and item 9 (the invariant-ring proof-strength gap)
 
 DECLARED-OPEN RESIDUE (conserved; owner surface, nothing adopted here):
-  RESIDUE: the AC_phi_lambda(iii) identification -- pending the owner ratify/decline decision
+  RESIDUE: the AC_phi_lambda(iii) identification -- pending the owner two-part (path-extension, then ratify/decline) decision
   RESIDUE: the bracketed above-C3-grade content (taste/Dirac/chirality; hw=1 vs hw=2 beyond C3)
   RESIDUE: sub-admission (i) (occupancy/reading selection) -- untouched
   RESIDUE: sub-admission (ii) (R-eta identification) -- untouched
   RESIDUE: adjacent review-pending K-arc PRs #4831/#4835/#4837/#4840/#4845 (non-overlapping)
   RESIDUE: adjacent note-level two-cell family PR #4853 (context only)
   RESIDUE: audit statuses of all cited notes -- owned by the independent audit lane
+  RESIDUE: the parent's separate CKM/PMNS across-fermion-type alignment residual -- not addressed here
+  RESIDUE: the parent's proof-strength gap: contentlessness argued/strongly-supported, not exhaustively proven (uncomputed C3/epsilon invariant functional ring)
 
-TOTAL: PASS=18 FAIL=0
+TOTAL: PASS=24 FAIL=0

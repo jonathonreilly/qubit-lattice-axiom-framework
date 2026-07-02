@@ -5,22 +5,36 @@
 Bounded runner for the note
   docs/SPECIES_BRIDGE_RESIDUAL_IS_RATIFICATION_CLASS_GRADE_SCOPED_BOUNDED_NOTE_2026-07-02.md
 
-Purpose (class-membership exhibit + governance map, NOT a verdict):
+Purpose (profile-match exhibit + two-part governance map, NOT a verdict):
   - guard that the three read source notes still carry the sentences this note
-    quotes (the parent's minimum-form residual; the C3 canonical note's
-    ratification + Does-NOT sentences; the two axiom distinction clauses);
-  - encode the T2 term-for-term mapping (C3 Does-NOT item <-> parent witness)
-    as an exact *mapping-completeness* checklist -- this checks that both
-    columns are grounded as substrings in their own source files and that no
-    Does-NOT bullet is dropped; it does NOT assert semantic equivalence;
-  - recompute the small exact T3 witnesses of the two vacuities
-    (single C3 orbit; the unitary intertwiner identity EH(dagger)EH = I with
-    the intertwining relation EH*C1 = C2*EH; the equivariant corner-weight
-    contrast: a generic rational diagonal separates, the C3 orbit-average
-    equalizes it, spread 0);
-  - grep the note itself for the T4 grade-scope sentences and the T5 boundary
-    tokens (owner decision / morning / nothing adopted / grade / does not
-    retire).
+    quotes -- the parent's minimum-form residual AND its own scorecard
+    (argued/strongly-supported, not exhaustively proven; the uncomputed
+    invariant functional ring), its class assignment (the universal
+    abstract->physical bridge, abstract su(3) -> physical color, not derived
+    away), and its ker-D-only U_R scope; the C3 canonical note's Does-NOT
+    profile plus the FULL third bullet (axiom/primitive clause AND the
+    already-landed-surfaces positive condition) and the two-landed-surfaces
+    sentence; the axioms' distinction clauses PLUS the Qualification supply
+    sentence and the Open-Gates placement that keep the derived surface outside
+    axiom content;
+  - encode the T2 comparison as (i) a Does-NOT *profile* map (C3 negative-profile
+    item <-> parent witness), every row MATCHES and source-grounded, no bullet
+    dropped; and (ii) the path's defining POSITIVE condition (co-reference on
+    already-landed surfaces), which the residual FAILS -- its second relatum is
+    external nature, not a landed repo surface. The FAILS verdict is the
+    EXPECTED result: the check passes when the mapping correctly records the
+    failure. This is data-structure completeness + source-groundedness, NOT an
+    assertion of semantic equivalence or term-for-term shape-identity;
+  - recompute the small exact T3 witnesses of the two vacuities: the single C3
+    orbit; a FALSIFIABLE unitary intertwiner E*C1 = C2*E between two genuinely
+    distinct integer carriers C1 != C2, with a broken shift E' as a negative
+    control (E'*C1 != C2*E'); and the equivariant corner-weight contrast (a
+    generic rational diagonal separates, the C3 orbit-average equalizes,
+    spread 0);
+  - grep the note itself for the T4 grade-scope + owner-class wording and the
+    T5 boundary tokens (owner decision / morning / nothing adopted / grade /
+    does not retire / FAILS / path-extension / argued / not exhaustively proven
+    / separate residual) and the two-part decision + extended residue markers.
 
 Nothing here sets, predicts, or edits any audit status. Python3 stdlib only;
 exact arithmetic (int / Fraction; permutation matrices as integer tuples); no
@@ -100,6 +114,19 @@ P_W_RIGID = "rigid regular C3-rep"
 P_CONTENTLESS = "contentless at the tested C3-structural grade"
 P_REGISTRY = "the registry is untouched"
 P_AUDIT = "does not set or predict an audit outcome"
+# T1' imports: the parent's own scorecard, class assignment, and U_R scope
+P_ARGUED = "argued/strongly-supported, not exhaustively proven"
+P_INVRING = (
+    "invariant functional ring of the carrier and showing it has no "
+    "orbit-separating generator"
+)
+P_SU3COLOR = "abstract su(3) → physical color"
+P_UNIVBRIDGE = "universal abstract→physical bridge"
+P_NOTDERIVED = "it is not derived away"
+P_INTERPBRIDGE = "It remains an interpretive bridge"
+P_URSCOPE = "not of D globally"
+P_CKM = "across-fermion-type alignment (the CKM/PMNS mixing structure)"
+P_CKM_SEP = "a separate residual, not addressed here"
 
 # C3 canonical note (labeling-convention ratification exemplar)
 C_RATIFY = (
@@ -112,6 +139,9 @@ C_TWONAME = (
 )
 C_OUTCOME = "outcome naming"
 C_CHANNEL = "channel naming"
+C_BOTHLANDED = (
+    "two landed surfaces named above, cited for their existing cell namings"
+)
 C_DN_SUPPLY = (
     "Does not supply a weighting, normalization, probability rule, occupancy "
     "rule, dictionary selection, or any value of `r` or `Q`"
@@ -119,8 +149,12 @@ C_DN_SUPPLY = (
 C_DN_SCORE = "Does not select among scoring rules and does not close any wall"
 C_DN_AXIOM = "Does not modify any axiom or primitive"
 C_DN_AUDIT = "Does not set audit status"
+C_LANDED = "already-landed surfaces"
+# the FULL third bullet: the Does-NOT (axiom/primitive) clause AND the positive
+# condition (co-reference on already-landed surfaces) -- both halves, intact.
+C_DN_AXIOM_FULL = C_DN_AXIOM + "; " + C_RATIFY
 
-# axioms note (distinction clauses)
+# axioms note (distinction clauses + Qualification + Open-Gates placement)
 AX_QUBIT = (
     "No possibility is privileged. Possibilities are distinguished by the "
     "supplied algebraic structure alone."
@@ -129,8 +163,16 @@ AX_LATTICE = (
     "No site is privileged. Sites are distinguished by the supplied lattice "
     "structure alone."
 )
+AX_QUALIF = (
+    "Further physical structure requires derivation, bridge, explicit "
+    "admission, or approved primitive registration before use as a premise"
+)
+AX_OUTSIDE = "remain outside axiom content"
+AX_OPENGATE = "staggered-Dirac/finite-Grassmann realization and"
+AX_ONESITE = "full one-site possibility domain has algebraic presentation"
 
-# this note (T4 grade-scope sentences; T5 boundary tokens)
+# this note (T4 grade-scope + owner-class wording; T5 boundary tokens; the
+# external-referent disanalogy; the two-part decision + extended residue)
 N_BRACKET = "taste/Dirac/chirality"
 N_UNTOUCHED = "sub-admissions (i) and (ii)"
 N_OWNER = "owner decision"
@@ -138,29 +180,46 @@ N_MORNING = "morning"
 N_NOTHING = "nothing adopted"
 N_GRADE = "grade"
 N_RETIRE = "does not retire"
+N_OWNERCLASS = "carried by whatever class the owner rules"
+N_FAILS = "FAILS"
+N_PATHEXT = "path-extension"
+N_ARGUED = "argued"
+N_NOTPROVEN = "not exhaustively proven"
+N_SEPRESID = "separate residual"
+N_EXTERNAL = "second relatum is external nature"
+N_TWOPART = "two-part owner decision"
+N_INTERNALONLY = "internal-only precedent"
+N_CKM = "CKM/PMNS"
+N_INVRING = "invariant functional ring"
 
 
 # ----------------------------------------------------------------------------
-# T2 mapping table: each C3 Does-NOT bullet (and the two-namings header) paired
-# with a parent-side witness substring. Honestly a *mapping-completeness*
-# table: it certifies both columns occur in their own source note and that
-# every enumerated Does-NOT key is covered; it does not assert equivalence.
+# T2 Does-NOT PROFILE map: each C3 negative-profile bullet paired with a
+# parent-side witness. Honestly a *profile-completeness* table -- it certifies
+# both columns occur in their own source note, that every enumerated Does-NOT
+# key is covered, and that every row is a MATCHES; it does NOT assert semantic
+# equivalence.
 # ----------------------------------------------------------------------------
 MAPPING = [
-    # key                c3-side (Does-NOT / header)   parent-side witness
-    ("namings", C_TWONAME, P_RESIDUAL),
-    ("supply", C_DN_SUPPLY, P_MINFORM),
-    ("scoring_wall", C_DN_SCORE, P_CONTENTLESS),
-    ("axiom_primitive", C_DN_AXIOM, P_REGISTRY),
-    ("audit_status", C_DN_AUDIT, P_AUDIT),
+    # key                c3-side (Does-NOT profile)    parent-side witness   verdict
+    ("supply", C_DN_SUPPLY, P_MINFORM, "MATCHES"),
+    ("scoring_wall", C_DN_SCORE, P_CONTENTLESS, "MATCHES"),
+    ("axiom_primitive", C_DN_AXIOM, P_REGISTRY, "MATCHES"),
+    ("audit_status", C_DN_AUDIT, P_AUDIT, "MATCHES"),
 ]
 MAPPING_EXPECTED_KEYS = {
-    "namings",
     "supply",
     "scoring_wall",
     "axiom_primitive",
     "audit_status",
 }
+
+# The path's defining POSITIVE condition -- the SECOND clause of the exemplar's
+# third bullet, the clause the earlier draft carved off. For the residual it
+# FAILS: the second relatum is external nature, not a landed repo surface.
+# Fields: (key, c3-side positive condition, note-side disanalogy, verdict).
+# FAILS is the EXPECTED result; the check passes when the failure is recorded.
+POSITIVE_CONDITION = ("landed_surfaces", C_LANDED, N_EXTERNAL, "FAILS")
 
 
 # ----------------------------------------------------------------------------
@@ -229,7 +288,8 @@ def has_all(hay, needles):
 
 
 # ----------------------------------------------------------------------------
-# sentence guards on the three read source files
+# T1 -- the landed residual restated, WITH the parent's own scorecard, class
+# assignment, and U_R scope imported verbatim (checks 1-8)
 # ----------------------------------------------------------------------------
 check(
     "parent note carries the minimum-form residual identification sentence",
@@ -252,12 +312,29 @@ check(
     has_all(PARENT, [P_W_EQUIP, P_W_INTERT, P_W_SPREAD, P_W_RIGID]),
 )
 check(
+    "T1 scorecard: parent states contentlessness is argued/strongly-supported, not exhaustively proven, pending the uncomputed invariant functional ring",
+    has_all(PARENT, [P_ARGUED, P_INVRING]),
+)
+check(
+    "T1 class assignment: parent classes the residual as the universal abstract->physical bridge (abstract su(3) -> physical color), not derived away -- it remains an interpretive bridge",
+    has_all(PARENT, [P_SU3COLOR, P_UNIVBRIDGE, P_NOTDERIVED, P_INTERPBRIDGE]),
+)
+check(
+    "T1 scope: parent scopes U_R as a symmetry of ker D only (not of D globally)",
+    P_URSCOPE in PARENT,
+)
+
+# ----------------------------------------------------------------------------
+# T2 -- Does-NOT profile MATCHES; the positive landed-surfaces condition FAILS
+# (checks 9-16)
+# ----------------------------------------------------------------------------
+check(
     "C3 canonical note carries the ratification framing (naming ratification on already-landed surfaces; import-retirement path)",
     C_RATIFY in C3,
 )
 check(
-    "C3 canonical note carries the two-namings sentence and both cell namings (outcome naming; channel naming)",
-    has_all(C3, [C_TWONAME, C_OUTCOME, C_CHANNEL]),
+    "C3 canonical note carries the two-namings sentence, both cell namings, and that BOTH namings are landed internal surfaces",
+    has_all(C3, [C_TWONAME, C_OUTCOME, C_CHANNEL, C_BOTHLANDED]),
 )
 check(
     "C3 canonical note carries the Does-NOT supply-nothing sentence (weighting/normalization/probability/occupancy/dictionary/value)",
@@ -268,30 +345,45 @@ check(
     has_all(C3, [C_DN_SCORE, C_DN_AXIOM, C_DN_AUDIT]),
 )
 check(
+    "C3 canonical note carries the FULL third bullet intact -- axiom/primitive Does-NOT clause AND the already-landed-surfaces positive condition, mapped in full (not carved)",
+    C_DN_AXIOM_FULL in C3
+    and C_DN_AXIOM in C_DN_AXIOM_FULL
+    and C_LANDED in C_DN_AXIOM_FULL,
+)
+check(
+    "T2 profile: every Does-NOT row's C3-side occurs in the C3 note and every parent-side witness occurs in the parent note; all four rows are MATCHES",
+    all(c3s in C3 for (_k, c3s, _p, _v) in MAPPING)
+    and all(p in PARENT for (_k, _c3, p, _v) in MAPPING)
+    and all(v == "MATCHES" for (_k, _c3, _p, v) in MAPPING),
+)
+check(
+    "T2 completeness: every enumerated Does-NOT profile key is paired -- no negative-profile bullet dropped",
+    set(k for (k, _c3, _p, _v) in MAPPING) == MAPPING_EXPECTED_KEYS
+    and len(MAPPING) == len(MAPPING_EXPECTED_KEYS),
+)
+# positive-condition FAILS -- the EXPECTED result
+_pk, _pc3, _pnote, _pver = POSITIVE_CONDITION
+check(
+    "T2 positive condition: the landed-surfaces clause (the path's defining positive condition) is grounded in C3; the mapping records the residual FAILS it (second relatum is external nature, not a landed surface) and the note owns the disanalogy -- FAILS is the expected result",
+    _pc3 in C3
+    and _pver == "FAILS"
+    and _pnote in NOTE,
+)
+
+# ----------------------------------------------------------------------------
+# T3 -- the vacuities' computations instantiate, on the derived surface, the
+# axioms' non-privilege discipline (analogy, not axiom grounding) (checks 17-21)
+# ----------------------------------------------------------------------------
+check(
     "axioms note carries both distinction clauses (Qubit possibility twin; Lattice site twin)",
     has_all(AX, [AX_QUBIT, AX_LATTICE]),
 )
-
-# ----------------------------------------------------------------------------
-# T2 mapping-completeness (data-structure completeness, not equivalence)
-# ----------------------------------------------------------------------------
 check(
-    "T2 mapping: every parent-side witness in the table occurs as a substring of the parent note",
-    all(par in PARENT for (_k, _c3, par) in MAPPING),
-)
-check(
-    "T2 mapping: every C3-side Does-NOT/header item in the table occurs as a substring of the C3 note",
-    all(c3s in C3 for (_k, c3s, _par) in MAPPING),
-)
-check(
-    "T2 mapping-completeness: every enumerated Does-NOT key (and the two-namings header) is paired -- no bullet dropped",
-    set(k for (k, _c3, _par) in MAPPING) == MAPPING_EXPECTED_KEYS
-    and len(MAPPING) == len(MAPPING_EXPECTED_KEYS),
+    "axioms note keeps the derived surface OUTSIDE axiom content: Qualification supply sentence; Open-Gates staggered realization + AC_phi_lambda outside; Qubit possibilities are the one-site domain",
+    has_all(AX, [AX_QUALIF, AX_OUTSIDE, AX_OPENGATE, AX_ONESITE]),
 )
 
-# ----------------------------------------------------------------------------
-# T3 exact witness 1 -- within-triplet naming vacuity: single C3 orbit
-# ----------------------------------------------------------------------------
+# T3 witness 1 -- within-triplet naming vacuity: single C3 orbit
 p = (1, 2, 0)  # C3 as a 3-cycle on the three corner labels {0,1,2}
 p2 = compose(p, p)
 p3 = compose(p2, p)
@@ -301,37 +393,45 @@ for _ in range(3):
     orbit0.add(x)
     x = p[x]
 check(
-    "T3 within-triplet: C3 acts as an order-3 3-cycle with a single transitive orbit {0,1,2} on the three corner labels",
+    "T3 within-triplet [witness]: C3 acts as an order-3 3-cycle with a single transitive orbit {0,1,2} on the three corner labels",
     orbit0 == {0, 1, 2}
     and p3 == (0, 1, 2)
     and p != (0, 1, 2)
     and p2 != (0, 1, 2),
 )
 
-# ----------------------------------------------------------------------------
-# T3 exact witness 2 -- carrier-triplet vacuity: unitary intertwiner identity
-#   EH(dagger) EH = I, with the intertwining relation EH*C1 = C2*EH.
-# hw=1 and hw=2 carry the same shared-orientation cyclic generator C1=C2=C3M;
-# EH is a nontrivial (order-3) equivariant permutation between the carriers.
-# ----------------------------------------------------------------------------
-C1 = C3M
-C2 = C3M
-EH = C3M  # orientation-preserving equivariant permutation (a power of the shift)
-EH_dag = dagger(EH)
-identity_ok = matmul(EH_dag, EH) == I3
-intertwine_ok = matmul(EH, C1) == matmul(C2, EH)
-order3_ok = matmul(matmul(EH, EH), EH) == I3
-nontrivial_ok = EH != I3
+# T3 witness 2 -- carrier-triplet vacuity via a FALSIFIABLE unitary intertwiner
+#   between two GENUINELY DISTINCT integer carriers.
+#     C1 = forward 3-cycle 0->1->2->0;  C2 = C1^2 = C1^{-1}, the reverse cycle,
+#       so C1 != C2 (two distinct integer-matrix presentations of the regular
+#       C3-rep carried by the two Hamming triplets).
+#     E  = the transposition (1 2): the equivariant intertwiner. E^T E = I,
+#          E != I, and E*C1 = C2*E.
+#     E' = a shift (the wrong conjugator): E'*C1 != C2*E' -- negative control.
+#   The intertwining relation is thus a real, falsifiable constraint, NOT the
+#   unfalsifiable identity of the earlier draft (which set C1 = C2 = E).
+C1 = ((0, 0, 1), (1, 0, 0), (0, 1, 0))  # forward 3-cycle
+C2 = matmul(C1, C1)  # = C1^{-1}, the reverse 3-cycle (distinct from C1)
+E = ((1, 0, 0), (0, 0, 1), (0, 1, 0))  # transposition (1 2): the intertwiner
+E_broken = C1  # a shift: the wrong conjugator (negative control)
+
+carriers_distinct = C1 != C2
+E_unitary = matmul(dagger(E), E) == I3
+E_nontrivial = E != I3
+intertwine_ok = matmul(E, C1) == matmul(C2, E)
+neg_control_fails = matmul(E_broken, C1) != matmul(C2, E_broken)
 check(
-    "T3 carrier: EH(dagger)EH = I (unitary), EH*C1 = C2*EH (intertwining), EH^3 = I, EH nontrivial -- exact integer arithmetic",
-    identity_ok and intertwine_ok and order3_ok and nontrivial_ok,
+    "T3 carrier [witness]: distinct integer carriers C1 != C2 with a unitary intertwiner E (E^T E = I, E != I) satisfying E*C1 = C2*E, and a broken shift E' with E'*C1 != C2*E' -- the intertwining is falsifiable, exact integer arithmetic",
+    carriers_distinct
+    and E_unitary
+    and E_nontrivial
+    and intertwine_ok
+    and neg_control_fails,
 )
 
-# ----------------------------------------------------------------------------
-# T3 exact witness 3 -- equivariant corner-weight equality (all exact Fractions):
+# T3 witness 3 -- equivariant corner-weight equality (all exact Fractions):
 #   a generic rational diagonal separates the corners (spread > 0), the C3
 #   orbit-average forces them equal (spread = 0), yielding a scalar operator.
-# ----------------------------------------------------------------------------
 H = diagm(Fraction(0), Fraction(3), Fraction(6))  # distinct rational corner weights
 dH = diag_of(H)
 spread_generic = max(dH) - min(dH)  # exact Fraction
@@ -352,7 +452,7 @@ Havg_is_scalar = (
 )
 equivariant_ok = matmul(Havg, C3M) == matmul(C3M, Havg)
 check(
-    "T3 corner-weight: generic rational diagonal separates (spread = 6 > 0); C3 orbit-average equalizes (spread = 0), Havg = 3*I, commutes with C3 -- exact",
+    "T3 corner-weight [witness]: generic rational diagonal separates (spread = 6 > 0); C3 orbit-average equalizes (spread = 0), Havg = 3*I, commutes with C3 -- exact",
     spread_generic == Fraction(6)
     and spread_generic > 0
     and spread_avg == Fraction(0)
@@ -361,19 +461,37 @@ check(
 )
 
 # ----------------------------------------------------------------------------
-# T4 grade-scope greps on this note
+# T4 -- grade-scope + owner-class wording grep on this note (check 22)
 # ----------------------------------------------------------------------------
 check(
-    "T4 scope: note states the bracketed above-grade content (taste/Dirac/chirality) and that sub-admissions (i) and (ii) are untouched",
-    has_all(NOTE, [N_BRACKET, N_UNTOUCHED]),
+    "T4 scope: note states the bracketed above-grade content (taste/Dirac/chirality), that sub-admissions (i) and (ii) are untouched, and the owner-class wording (carried by whatever class the owner rules)",
+    has_all(NOTE, [N_BRACKET, N_UNTOUCHED, N_OWNERCLASS]),
 )
 
 # ----------------------------------------------------------------------------
-# T5 governance-boundary greps on this note
+# T5 -- governance-boundary greps + two-part decision + extended residue (checks 23-24)
 # ----------------------------------------------------------------------------
 check(
-    "T5 boundary: note carries the boundary tokens (owner decision; morning; nothing adopted; grade; does not retire)",
-    has_all(NOTE, [N_OWNER, N_MORNING, N_NOTHING, N_GRADE, N_RETIRE]),
+    "T5 boundary: note carries the boundary tokens (owner decision; morning; nothing adopted; grade; does not retire) and the repair tokens (FAILS; path-extension; argued; not exhaustively proven; separate residual)",
+    has_all(
+        NOTE,
+        [
+            N_OWNER,
+            N_MORNING,
+            N_NOTHING,
+            N_GRADE,
+            N_RETIRE,
+            N_FAILS,
+            N_PATHEXT,
+            N_ARGUED,
+            N_NOTPROVEN,
+            N_SEPRESID,
+        ],
+    ),
+)
+check(
+    "T5 governance: note states the two-part owner decision with internal-only precedent, and the extended residue carries item 8 (CKM/PMNS separate residual) and item 9 (the invariant-ring proof-strength gap)",
+    has_all(NOTE, [N_TWOPART, N_INTERNALONLY, N_CKM, N_INVRING]),
 )
 
 
@@ -383,13 +501,15 @@ check(
 print("")
 print("DECLARED-OPEN RESIDUE (conserved; owner surface, nothing adopted here):")
 for line in (
-    "the AC_phi_lambda(iii) identification -- pending the owner ratify/decline decision",
+    "the AC_phi_lambda(iii) identification -- pending the owner two-part (path-extension, then ratify/decline) decision",
     "the bracketed above-C3-grade content (taste/Dirac/chirality; hw=1 vs hw=2 beyond C3)",
     "sub-admission (i) (occupancy/reading selection) -- untouched",
     "sub-admission (ii) (R-eta identification) -- untouched",
     "adjacent review-pending K-arc PRs #4831/#4835/#4837/#4840/#4845 (non-overlapping)",
     "adjacent note-level two-cell family PR #4853 (context only)",
     "audit statuses of all cited notes -- owned by the independent audit lane",
+    "the parent's separate CKM/PMNS across-fermion-type alignment residual -- not addressed here",
+    "the parent's proof-strength gap: contentlessness argued/strongly-supported, not exhaustively proven (uncomputed C3/epsilon invariant functional ring)",
 ):
     print("  RESIDUE: " + line)
 print("")

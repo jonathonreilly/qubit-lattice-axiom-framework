@@ -53470,11 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15"
+      "to": "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27"
     },
     {
       "from": "repo.front_door_status",
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "wilson_m_h_per_channel_closure_bounded_note_2026-05-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
-        "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15",
+        "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27",
         "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
         "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
         "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
         "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11",
         "teleportation_resource_from_poisson_note",
-        "wilson_m_h_per_channel_closure_bounded_note_2026-05-09"
+        "wilson_m_h_per_channel_closure_bounded_note_2026-05-09",
+        "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5404177a7ee02648cfb3d91c69526bb36664e612f6c9648fa40d5cfa3b210bd7",
+      "note_hash": "ff1c7104364931e2245f14b8c336430e4f886354f91d80f0a1d7349a4f08a40e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

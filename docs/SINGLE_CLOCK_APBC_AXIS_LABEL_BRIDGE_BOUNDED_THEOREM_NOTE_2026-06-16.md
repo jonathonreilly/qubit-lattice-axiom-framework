@@ -1,13 +1,15 @@
 # Single-Clock APBC Axis-Label Bridge
 
 **Date:** 2026-06-16
+**Type:** bounded_theorem
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
 set audit status, does not update audit data, and does not assert package
 promotion.
-**Runner:** [`scripts/frontier_single_clock_apbc_axis_label_bridge_2026_06_16.py`](../scripts/frontier_single_clock_apbc_axis_label_bridge_2026_06_16.py)
-with cache
-[`logs/runner-cache/frontier_single_clock_apbc_axis_label_bridge_2026_06_16.txt`](../logs/runner-cache/frontier_single_clock_apbc_axis_label_bridge_2026_06_16.txt).
+**Primary runner:** [`scripts/frontier_single_clock_apbc_axis_label_bridge_2026_06_16.py`](../scripts/frontier_single_clock_apbc_axis_label_bridge_2026_06_16.py)
+**Runner cache:** [`logs/runner-cache/frontier_single_clock_apbc_axis_label_bridge_2026_06_16.txt`](../logs/runner-cache/frontier_single_clock_apbc_axis_label_bridge_2026_06_16.txt)
+**No-promotion statement:** This source note records a conditional bounded
+bridge only; it creates no promotion, no registry edit, and no audit verdict.
 
 ## Result
 
@@ -23,7 +25,7 @@ per-axis boundary-condition datum of this form, the APBC coordinate is an
 invariantly selected axis label.
 
 Equivalently, the axis-label part of `(B-AXIS.2)` in
-[`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
+`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`
 can be discharged for rows that already carry this APBC/PBC datum:
 the declared evolution axis is the unique APBC axis. This does not derive the
 APBC/PBC datum.
@@ -136,7 +138,7 @@ TOTAL: PASS=21 FAIL=0
 ## Citations
 
 - target theorem:
-  [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
+  `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`
 - route-pruning parent:
   [`SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md`](SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md)
 - scope boundary:

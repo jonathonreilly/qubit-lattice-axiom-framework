@@ -203,6 +203,9 @@ def main() -> int:
     ]
     for phrase in forbidden:
         check(f"note excludes forbidden phrase: {phrase}", phrase not in note)
+    check("note declares canonical bounded_theorem claim type", "**Claim type:** bounded_theorem" in note)
+    check("note does not use runner PASS as source status", "**Status:** PASS" not in note)
+    check("note does not lean on PR #4783 as authority", "RULED OUT by PR #4783" not in note)
     deps = [
         "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
         "docs/KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md",

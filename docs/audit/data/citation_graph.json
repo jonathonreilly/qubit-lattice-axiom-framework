@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
     },
     {
@@ -53494,11 +53490,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "complex_selectivity_compare_note"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
     },
     {
       "from": "repo.front_door_status",
-      "to": "complex_selectivity_compare_note"
+      "to": "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02",
         "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
         "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
         "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
         "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
         "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
+        "complex_selectivity_compare_note",
         "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
-        "complex_selectivity_compare_note"
+        "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6cf9859a869be7d3d7a360892a71ae135ad4568f791c9828156f3e133888a3c2",
+      "note_hash": "47f182abd8fcff8a40743f2a300436d5d73e318f371dc711ac8a7091c2eee10c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

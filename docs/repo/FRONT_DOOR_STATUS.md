@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1498 |
-| Retained-grade rows, including boxed decorations | 1383 |
+| Applied audit verdicts | 1499 |
+| Retained-grade rows, including boxed decorations | 1384 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 203 |
-| Retained bounded rows | 914 |
+| Retained bounded rows | 915 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 33 |
-| Unaudited rows | 1648 |
+| Unaudited rows | 1647 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 40 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1650 |
-| Ready rows | 97 |
+| Total pending rows | 1649 |
+| Ready rows | 96 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
-| High pending | 283 |
-| Medium pending | 482 |
+| High pending | 284 |
+| Medium pending | 480 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09`](../../docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md) - medium; unaudited
+- [`fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28`](../../docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md) - high; unaudited
 - [`registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18`](../../docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md) - medium; unaudited
 - [`yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18`](../../docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18`](../../docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
 - [`free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 - [`complex_selectivity_compare_note`](../../docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md) - medium; unaudited
 - [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited
-- [`fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28`](../../docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md) - medium; unaudited
+- [`tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03`](../../docs/TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -90,9 +90,9 @@ Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1701 descendants; score 159.733
 - `three_generation_observable_theorem_note` - critical; 1027 descendants; score 67.006
-- `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
+- `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
-- `plaquette_self_consistency_note` - critical; 1030 descendants; score 54.010
+- `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
 - `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 48.014
 - `key_terminology` - critical; 1126 descendants; score 46.638
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 44.312

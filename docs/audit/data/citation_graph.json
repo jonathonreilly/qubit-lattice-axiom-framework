@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "translation_abelian_composition_theorem_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "translation_covariance_local_op_theorem_note_2026-05-02"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "translation_abelian_composition_theorem_note_2026-05-02",
         "translation_covariance_local_op_theorem_note_2026-05-02",
         "u1_fermion_number_conservation_theorem_note_2026-05-02",
         "color_generation_independent_z3_structures_2026-06-05",
         "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26",
         "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05",
         "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16",
-        "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26"
+        "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
+        "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "50aec16c52c8387280a42ff983ed321319ee0a811c402af58fd0c60930f1eff1",
+      "note_hash": "71889aa9aa61b417b68b5643dd523a1bfa764d73b83f13c139f22044426cd91d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

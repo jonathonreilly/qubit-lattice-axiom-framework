@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 906 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1664 |
+| unaudited | 1663 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -56,7 +56,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_pmns_hw1_source_transfer_boundary_note` | 1 |
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
 | `decoration_under_strong_cp_theta_zero_note` | 1 |
-| `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 3 |
+| `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 4 |
 | `decoration_under_three_generation_observable_theorem_note` | 3 |
 | `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | 1 |
 | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | 1 |
@@ -67,20 +67,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1320 |
 | `audited_conditional` | 38 |
-| `audited_decoration` | 62 |
+| `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1990 |
+| `unaudited` | 1989 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1805 |
-| `decoration` | 63 |
+| `decoration` | 64 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
-| `positive_theorem` | 744 |
+| `positive_theorem` | 743 |
 
 | criticality | count |
 |---|---:|
@@ -1552,6 +1552,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_dabc_symmetric_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
 | `translation_abelian_composition_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
+| `translation_covariance_local_op_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | cross_family | codex-gpt-5.5 | A | `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` |
 | `yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | cross_family | codex-gpt-5.5 | A | `ew_current_fierz_channel_decomposition_note_2026-05-01` |
@@ -19404,6 +19405,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The bridge supplies T_a T_b = T_{a+b}, T_0 = I, and T_a^{-1}=T_{-a}=T_a^dag; commutativity and faithfulness then follow from finite quotient addition and the tensor-permutation action on one-site occupation basis states.  _(class `A`)_
 - **chain closes:** True — The cited bridge is retained-grade and already supplies the translation operators, unitarity, identity, group law, and inverse. The remaining steps are ordinary finite-quotient algebra and the direct basis-permutation observation that a nonzero quotient shift moves a one-site occupation basis vector to a distinct orthonormal basis vector.
 - **rationale:** The chain closes, but it closes as a one-parent algebraic corollary of the retained tensor-product translation bridge plus standard finite quotient arithmetic. The runner constructs the same finite tensor-permutation matrices and checks identity, closure, commutativity, inverse, and kernel triviality; it has no external comparator checks. Because the note adds no new physical observable, bridge, or independent comparator beyond the parent surface, the conservative audit-lane classification is algebraic decoration.
+- **decoration parent:** `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
+- **auditor confidence:** high
+
+### `translation_covariance_local_op_theorem_note_2026-05-02`
+
+- **Note:** [`TRANSLATION_COVARIANCE_LOCAL_OP_THEOREM_NOTE_2026-05-02.md`](../../docs/TRANSLATION_COVARIANCE_LOCAL_OP_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Finite periodic tensor-product Fock space with tensor-permutation translations; covariance of local M_2(C) single-site operators, finite-support products, invariant sums, density, and hopping monomials.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T025127Z-0b9a2389-translation_covariance_l`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By linearity in the local decomposition M_x = c_0 I + c_- a_x + c_+ a_x^dag + c_n n_x, the bridge covariance for a_x and a_x^dag gives T_a M_x T_a^dag = M_{x+a}.  _(class `A`)_
+- **chain closes:** True — The retained bridge supplies unitarity and covariance of a_x and a_x^dag; finite-dimensional linear algebra supplies the M_2(C) span, and conjugation is linear and multiplicative. Within the narrowed tensor-product periodic-block scope, no additional physics input is needed.
+- **rationale:** The mathematical chain is sound: I, a, a^dag, and n span the local M_2(C), and the retained bridge plus linearity/multiplicativity yields the stated covariance identities. The runner corroborates this with finite matrix identity checks and one dependency-status check. However, the claim reduces to one retained upstream parent plus standard algebra and has zero D-class comparator or independent physical content, so the decoration tie-break applies rather than audited_clean.
 - **decoration parent:** `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
 - **auditor confidence:** high
 

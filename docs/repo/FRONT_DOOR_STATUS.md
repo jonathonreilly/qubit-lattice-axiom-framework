@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1482 |
-| Retained-grade rows, including boxed decorations | 1371 |
+| Applied audit verdicts | 1483 |
+| Retained-grade rows, including boxed decorations | 1372 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 200 |
 | Retained bounded rows | 906 |
-| Boxed decorations under retained parents | 60 |
+| Boxed decorations under retained parents | 61 |
 | Open gates | 31 |
-| Unaudited rows | 1664 |
+| Unaudited rows | 1663 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 38 |
 | Audited renaming rows | 28 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1666 |
-| Ready rows | 105 |
+| Total pending rows | 1665 |
+| Ready rows | 104 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
 | High pending | 283 |
-| Medium pending | 498 |
+| Medium pending | 497 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`translation_covariance_local_op_theorem_note_2026-05-02`](../../docs/TRANSLATION_COVARIANCE_LOCAL_OP_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`u1_fermion_number_conservation_theorem_note_2026-05-02`](../../docs/U1_FERMION_NUMBER_CONSERVATION_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`color_generation_independent_z3_structures_2026-06-05`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md) - medium; unaudited
 - [`axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md) - medium; unaudited
@@ -51,19 +50,20 @@ Next ready rows by queue order:
 - [`gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16`](../../docs/GAUGE_GAUGING_SELECTION_CONJUGATION_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md) - medium; unaudited
 - [`bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26`](../../docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md) - medium; unaudited
 - [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited
+- [`gauge_wilson_isotropy_boundary_note_2026-05-04`](../../docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **430**.
+- Non-retained-grade cited rows in publication tables: **429**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 163 |
 | high | `unaudited` | 159 |
-| medium | `unaudited` | 94 |
+| medium | `unaudited` | 93 |
 | high | `audited_conditional` | 3 |
 | critical | `open_gate` | 2 |
 | high | `audited_numerical_match` | 2 |

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1491 |
-| Retained-grade rows, including boxed decorations | 1378 |
+| Applied audit verdicts | 1492 |
+| Retained-grade rows, including boxed decorations | 1379 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 202 |
-| Retained bounded rows | 910 |
+| Retained bounded rows | 911 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 32 |
-| Unaudited rows | 1655 |
+| Unaudited rows | 1654 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 39 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1657 |
+| Total pending rows | 1656 |
 | Ready rows | 99 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
 | High pending | 283 |
-| Medium pending | 489 |
+| Medium pending | 488 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`gauge_factor_local_selector_normalizer_theorem_note_2026-06-18`](../../docs/GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`persistent_record_instrument_construction_narrow_theorem_note_2026-05-22`](../../docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md) - medium; unaudited
 - [`tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09`](../../docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md) - medium; unaudited
 - [`registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18`](../../docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md) - medium; unaudited
 - [`yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18`](../../docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
-- [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited
 - [`yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18`](../../docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
+- [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited
+- [`gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08`](../../docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -23,7 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 868 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1891 |
+| unaudited | 1890 |
+| audit_in_progress | 1 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 21 |
@@ -62,14 +63,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 11 |
+| `audit_in_progress` | 12 |
 | `audited_clean` | 1247 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 58 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2200 |
+| `unaudited` | 2199 |
 
 | claim_type | count |
 |---|---:|
@@ -134,6 +135,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |

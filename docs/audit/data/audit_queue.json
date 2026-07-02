@@ -138,25 +138,25 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
-      "claim_scope": null,
+      "claim_scope": "For the explicitly constructed nearest-neighbor K1 Kawamoto-Smit hopping kernel on Z^3, the packet proves finite eight-branch massless geometry with cone V=2I and the stated normalization covariance; for the constructed scalar K0 kernel, it proves an extended zero surface/line and singular tangent cone.",
       "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "minimal_axioms",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 14.886,
       "note_path": "docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/staggered_kernel_z_certificate_check_2026_06_11.py",
       "transitive_descendants": 945
@@ -328,15 +328,15 @@
         "axiom_first_reflection_positivity_theorem_note_2026-04-29",
         "axiom_first_spectrum_condition_theorem_note_2026-04-29"
       ],
-      "direct_in_degree": 7,
+      "direct_in_degree": 8,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.315,
+      "load_bearing_score": 16.817,
       "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/axiom_first_reeh_schlieder_check.py",
-      "transitive_descendants": 900
+      "transitive_descendants": 901
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

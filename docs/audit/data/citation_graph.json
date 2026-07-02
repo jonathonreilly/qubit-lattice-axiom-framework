@@ -53470,11 +53470,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18"
+      "to": "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05"
     },
     {
       "from": "repo.front_door_status",
-      "to": "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05"
+      "to": "record_formation_to_kraus_isometry_bridge_2026-06-06"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,8 +103180,8 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
         "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
+        "record_formation_to_kraus_isometry_bridge_2026-06-06",
         "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
         "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
         "q_integer_spectrum_theorem_note_2026-05-02",
@@ -103190,7 +103190,7 @@
         "translation_covariance_local_op_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0d3aa2b38d069778a5a6b8678bad87b55bcb60029555c0174d46277f19573696",
+      "note_hash": "ebc9ea5ab33d435e3b69a350d31371a62507b461040f464c3171e1b90b4b4f6b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

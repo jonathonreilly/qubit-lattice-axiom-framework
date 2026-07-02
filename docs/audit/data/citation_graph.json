@@ -1926,11 +1926,19 @@
     },
     {
       "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+      "to": "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17"
+    },
+    {
+      "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
       "to": "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
       "to": "single_clock_uniqueness_scope_boundary_2026-06-06"
+    },
+    {
+      "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+      "to": "single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17"
     },
     {
       "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
@@ -35845,6 +35853,22 @@
       "to": "g_bare_dynamical_fixation_obstruction_note_2026-04-18"
     },
     {
+      "from": "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17",
+      "to": "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17",
+      "to": "single_clock_uniqueness_scope_boundary_2026-06-06"
+    },
+    {
+      "from": "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17",
+      "to": "post_record_clock_rate_interface_2026-06-06"
+    },
+    {
+      "from": "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17",
+      "to": "record_clock_rate_normalization_gate_2026-06-06"
+    },
+    {
       "from": "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16",
       "to": "single_clock_uniqueness_scope_boundary_2026-06-06"
     },
@@ -56010,7 +56034,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "97b759924e7ac65aab3e35ba43c72e08c16c7a580100d4f5e3c6842f6277b352",
+      "note_hash": "f7821a680e0e7d538294837a86385eca9e4b571f14c1c20029ba433c14a7557e",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Audit Loop"
@@ -56153,7 +56177,7 @@
         "ai_methodology.skills.physics-loop.references.long-running-execution"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1b3be0ec3937a7ef2c5a1489c48c1116a15892f292f7cb0e85132b78eff3092c",
+      "note_hash": "b4fe3aa68e645444bed1f2fd856af6ad6067c9ba5db96087f74a8d355443f765",
       "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
       "runner_path": null,
       "title": "Physics Loop"
@@ -56180,7 +56204,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "afe4e161acc0a53a6f967c5ef7c2070d681986bb81eb2d678508cbc067b8aeef",
+      "note_hash": "0d8a636cb8359da390f5ec44313a51cb830e98e88f628b9ca3ac0fde509031e5",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"
@@ -57773,15 +57797,17 @@
         "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
         "axiom_first_reflection_positivity_theorem_note_2026-04-29",
         "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+        "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17",
         "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
         "single_clock_uniqueness_scope_boundary_2026-06-06",
+        "single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17",
         "kinetic_isotropy_primitive",
         "emergent_lorentz_invariance_note",
         "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
         "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "824907f7462987ca512056a61123d0ab3871ca66fd14f1640fb59f2bf7158627",
+      "note_hash": "4964aa32b57f6a6ae89da7b5bb7f8cb2af72dc6448d8a0291f6d2651a757983c",
       "path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
       "runner_path": "scripts/axiom_first_single_clock_codimension1_evolution_check.py",
       "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on the One-Qubit Cl(3) Pauli Factor over Z^3"
@@ -70066,7 +70092,7 @@
         "repo.controlled_vocabulary"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1a7f894c5bfb18e724772c955eb63ff33556be5663d5e150d08b902a21d9f27b",
+      "note_hash": "cfd6956b10fca4c1ca6f3558837721db7ac07adf0398f11821df0cdcd55a62eb",
       "path": "docs/DM_WILSON_DIRECT_DESCENDANT_BATCH_AUTHORITY_NOTE_2026-05-03.md",
       "runner_path": null,
       "title": "DM Wilson Direct-Descendant Bounded Support Batch Note"
@@ -70520,7 +70546,7 @@
       "claim_id": "dm_wilson_direct_descendant_flagship_frontier_collapse_theorem_note_2026-04-18",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "dm_wilson_parent_correctness_audit_note_2026-04-18",
         "dm_wilson_direct_descendant_local_schur_source_family_theorem_note_2026-04-18",
@@ -70534,7 +70560,7 @@
         "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
       ],
-      "note_hash": "5df56fd68a6be7379398d03dc37d62cd165f60c52a7b40b374b54a1d5f93729d",
+      "note_hash": "38286e790f375617c8ec59c10c9f21fa4e71341a7eb15ba6a7c8e09767d50276",
       "path": "docs/DM_WILSON_DIRECT_DESCENDANT_FLAGSHIP_FRONTIER_COLLAPSE_THEOREM_NOTE_2026-04-18.md",
       "runner_path": "scripts/frontier_dm_wilson_direct_descendant_flagship_frontier_collapse_theorem_2026_04_18.py",
       "title": "DM Wilson Direct-Descendant Flagship Frontier Collapse Theorem"
@@ -70788,7 +70814,7 @@
       "claim_id": "dm_wilson_to_dweh_hermitian_source_family_current_bank_boundary_note_2026-04-18",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16",
         "dm_leptogenesis_ne_charged_source_response_reduction_note_2026-04-16",
@@ -70797,7 +70823,7 @@
         "dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem_note_2026-04-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ed1a2c3adf8244b2ef03d00980d90e86f0a8a04ce061fb465ca9f01ef2f71d37",
+      "note_hash": "5760699fbc21e6d881715d9e28e10b6a6529319c8aede9611a509d0de158a773",
       "path": "docs/DM_WILSON_TO_DWEH_HERMITIAN_SOURCE_FAMILY_CURRENT_BANK_BOUNDARY_NOTE_2026-04-18.md",
       "runner_path": "scripts/frontier_dm_wilson_to_dweh_hermitian_source_family_current_bank_boundary_2026_04_18.py",
       "title": "DM Wilson-to-`dW_e^H` Hermitian Source-Family Current-Bank Boundary"
@@ -70825,14 +70851,14 @@
       "claim_id": "dm_wilson_to_dweh_local_chain_path_algebra_current_bank_boundary_note_2026-04-18",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "no_go",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "dm_wilson_to_dweh_hermitian_source_family_current_bank_boundary_note_2026-04-18",
         "dm_wilson_to_dweh_local_chain_path_algebra_target_note_2026-04-18",
         "dm_wilson_to_dweh_local_path_algebra_minimal_certificate_note_2026-04-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2baa7c183aeb2e5136a57a9768997a2db49bfc2c223d3431734b7a45b92d20cb",
+      "note_hash": "715b46e52f8991f5cbf68a19c54dfff8b056464b24c253559eeedcdc46475dd1",
       "path": "docs/DM_WILSON_TO_DWEH_LOCAL_CHAIN_PATH_ALGEBRA_CURRENT_BANK_BOUNDARY_NOTE_2026-04-18.md",
       "runner_path": "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_current_bank_boundary_2026_04_18.py",
       "title": "DM Wilson-to-`dW_e^H` Local Chain Path-Algebra Current-Bank Boundary"
@@ -83686,10 +83712,10 @@
         "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "83d9ae65d64cb632a23194e89ec061912a5b7578299c4ce5dbc13bea0a3878b4",
+      "note_hash": "0a87309b1664c71518db02b80616c4dc62b3e7f95ac8df96556c91927877c3db",
       "path": "docs/KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md",
       "runner_path": "scripts/frontier_koide_carrier_locus_decomposition.py",
-      "title": "Carrier-Locus Decomposition: matter operator import localized; Hamming-weight-1 locus labels are native"
+      "title": "Carrier-Locus Decomposition: matter operator import localized; Hamming-shell labels are finite, physical Hamming-weight-1 orientation remains open"
     },
     "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02": {
       "claim_id": "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
@@ -90156,7 +90182,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "5572efaf03c418f8b7313218283a5a5712837672a7f284fc6e73fad40389cfbe",
+      "note_hash": "cdd4d2c8a7e94c7658b7df3d6afc89075a008654043951fc98ddb2b0cdab59f4",
       "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
       "runner_path": "scripts/audit_companion_minimal_axioms_clean_base_exact.py",
       "title": "Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)"
@@ -103525,7 +103551,7 @@
         "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2d90d0207af7e9b7ef0673a783c8fe42280ff2dda3cc47729e97898acf93884d",
+      "note_hash": "83b66cb5068deed352e7e6e4258319846e8da35e2bceee21df89621c1cdbd54f",
       "path": "docs/repo/CONTROLLED_VOCABULARY.md",
       "runner_path": null,
       "title": "Controlled Vocabulary"
@@ -106185,6 +106211,35 @@
       "runner_path": "scripts/single_clock_axis_selection_check_2026_06_11.py",
       "title": "Single-Clock Axis Selection From Record Durability: Every Retained Candidate Structure Is W-Transportable \u2014 Narrow No-Go With a Sharpened Pin"
     },
+    "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17": {
+      "claim_id": "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+        "single_clock_uniqueness_scope_boundary_2026-06-06",
+        "post_record_clock_rate_interface_2026-06-06",
+        "record_clock_rate_normalization_gate_2026-06-06"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "67cd52e9712df230bd7629a4a7178e5095d5a1259979bdd06b02a4ca3151a1c3",
+      "path": "docs/SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md",
+      "runner_path": "scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py",
+      "title": "Single-Clock Blocked-Time Unit Split: N2 Internal Support Boundary"
+    },
+    "single_clock_independent_commuting_transfer_factor_n5_no_go_note_2026-06-17": {
+      "claim_id": "single_clock_independent_commuting_transfer_factor_n5_no_go_note_2026-06-17",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "aa03a5736ab728b9a1f25c5656a3d56f8a6c79776847e7e8b83e72783ca0d141",
+      "path": "docs/SINGLE_CLOCK_INDEPENDENT_COMMUTING_TRANSFER_FACTOR_N5_NO_GO_NOTE_2026-06-17.md",
+      "runner_path": "scripts/single_clock_independent_commuting_transfer_factor_n5_no_go_2026_06_17.py",
+      "title": "Single-Clock Independent Commuting Transfer Factor N5 No-Go"
+    },
     "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16": {
       "claim_id": "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16",
       "claim_type_author_hint": "no_go",
@@ -106199,6 +106254,18 @@
       "path": "docs/SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md",
       "runner_path": "scripts/single_clock_kms_apbc_axis_supplier_no_go_2026_06_16.py",
       "title": "Single-Clock KMS/APBC Axis-Supplier No-Go"
+    },
+    "single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17": {
+      "claim_id": "single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "97b566f264a490716d5867048cf10ac5b07c98811bd030e6ff4afb430d598a69",
+      "path": "docs/SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md",
+      "runner_path": "scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py",
+      "title": "Single-Clock Physical-Clock Admission Inventory N5 Support"
     },
     "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": {
       "claim_id": "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
@@ -118748,6 +118815,8 @@
     "signed_gravity_cl3z3_source_character_derivation_note_2026-05-17",
     "signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12",
     "signed_gravity_response_lane_status_note_2026-04-26",
+    "single_clock_independent_commuting_transfer_factor_n5_no_go_note_2026-06-17",
+    "single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17",
     "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
     "site_phase_cube_shift_intertwiner_note",
     "sixth_family_complex_boundary_note",
@@ -118986,27 +119055,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1388,
+      "bounded_theorem": 1390,
       "decoration": 3,
       "meta": 289,
-      "no_go": 209,
+      "no_go": 210,
       "none": 1427,
       "open_gate": 119,
       "positive_theorem": 196
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1790,
+      "bounded_theorem": 1795,
       "decoration": 3,
       "meta": 289,
       "no_go": 314,
-      "none": 459,
+      "none": 457,
       "open_gate": 193,
       "positive_theorem": 583
     },
-    "edge_count": 13522,
-    "leaf_count": 1160,
-    "node_count": 3631,
-    "root_count": 1087,
-    "runners_with_path": 3263
+    "edge_count": 13528,
+    "leaf_count": 1161,
+    "node_count": 3634,
+    "root_count": 1089,
+    "runners_with_path": 3266
   }
 }

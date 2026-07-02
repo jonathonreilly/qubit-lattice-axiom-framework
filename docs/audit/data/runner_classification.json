@@ -9437,10 +9437,10 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 0,
+        "C": 2,
         "D": 0
       },
-      "decoration_candidate": true,
+      "decoration_candidate": false,
       "dominant_class": "B",
       "runner": "scripts/frontier_dm_wilson_to_dweh_hermitian_source_family_current_bank_boundary_2026_04_18.py"
     },
@@ -31092,6 +31092,30 @@
       "dominant_class": "C",
       "runner": "scripts/single_clock_axis_selection_check_2026_06_11.py"
     },
+    "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py"
+    },
+    "single_clock_independent_commuting_transfer_factor_n5_no_go_note_2026-06-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 9,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/single_clock_independent_commuting_transfer_factor_n5_no_go_2026_06_17.py"
+    },
     "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16": {
       "assert_count": 1,
       "counts": {
@@ -31103,6 +31127,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/single_clock_kms_apbc_axis_supplier_no_go_2026_06_16.py"
+    },
+    "single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 6,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py"
     },
     "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
@@ -55837,10 +55873,10 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 0,
+        "C": 2,
         "D": 0
       },
-      "decoration_candidate": true,
+      "decoration_candidate": false,
       "dominant_class": "B",
       "exists": true
     },
@@ -83850,6 +83886,36 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/single_clock_independent_commuting_transfer_factor_n5_no_go_2026_06_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "single_clock_independent_commuting_transfer_factor_n5_no_go_note_2026-06-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 9,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/single_clock_kms_apbc_axis_supplier_no_go_2026_06_16.py": {
       "assert_count": 1,
       "claims": [
@@ -83863,6 +83929,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 6,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/site_license_tick_dichotomy_all_periods_2026_06_11.py": {
@@ -86023,16 +86104,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 624,
+    "decoration_candidates": 623,
     "dominant_class_distribution": {
       "A": 464,
-      "B": 557,
-      "C": 1237,
-      "D": 422,
+      "B": 558,
+      "C": 1238,
+      "D": 423,
       "none": 450
     },
-    "runners_classified": 3130,
-    "runners_with_C": 1684,
-    "runners_with_D": 994
+    "runners_classified": 3133,
+    "runners_with_C": 1688,
+    "runners_with_D": 995
   }
 }

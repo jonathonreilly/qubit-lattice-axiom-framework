@@ -1,8 +1,9 @@
 # The Retained Character Surface Carries Exactly One Finite Additive Sector-Record Context — the Center Z_N Grading — and No Z-Valued or (for SU(3)) Parity-Valued Refinement: the Theta Q-Context Wall Localizes onto the Multi-Plaquette / Large-Gauge-Winding Account (Bounded Theorem)
 
 **Date:** 2026-07-01
-**Claim type:** bounded_theorem (positive finite construction plus an exact
-finite obstruction that localizes a named wall; not a terminal no-go).
+**Claim type:** bounded_theorem
+**Scope:** positive finite construction plus an exact finite obstruction that
+localizes a named wall; not a terminal no-go.
 **Status authority:** independent audit lane only. This note does not set an
 audit verdict, edit registries, register primitives, change axioms, retire or
 re-grade any Tier-A admission, or claim Strong-CP closure.
@@ -110,7 +111,8 @@ identification checkpoint below).
    must be **derived**, and this note derives one. Record contributes only the
    registration and additivity interface; no new admission is introduced.
 
-3. **Tier-A theta registry text** (docs/audit/data/tier_a_admissions.json,
+3. **Tier-A theta registry text**
+   ([`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json),
    gauge side, quoted exactly):
 
    > "(a) gauge side -- theta_gauge = 0 in the topological-sector weighting,
@@ -341,8 +343,8 @@ been registered.
 ## Relation to the RP-half no-go (route independence)
 
 The retained no-go row
-strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16 has
-live claim scope (quoted from the ledger):
+[`STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md`](STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md)
+has live claim scope (quoted from the ledger):
 
 > "Within the finite/compact measure-preserving involution setting of the
 > retained RP half-square identity, a real Theta-anti-invariant imaginary
@@ -408,8 +410,8 @@ This note does not claim:
 
 ## No-Go Discipline Gate (for the negative boundary)
 
-**Status:** PASS as bounded route localization inside a positive theorem. The
-negative content is exactly: additive sector labels of the retained character
+This checklist supports bounded route localization inside a positive theorem.
+The negative content is exactly: additive sector labels of the retained character
 surface are `Z_N`-valued, so neither `Z`-valued `Q` nor (for `N = 3`) the
 parity `(-1)^Q` can be carried by them.
 
@@ -448,12 +450,12 @@ positivity, reality, RP, or CPT input is used anywhere.
 
 The Tier-A registry text localizes the gauge-side residual to "the
 multi-plaquette / large-gauge-winding account"; this note's corollary lands on
-exactly that account and nothing else. The landed (unaudited) substrate
-no-winding-carrier note relocates the gauge-side content to an emergent
-integer sector functional on the derived multi-plaquette / scaling surface;
-the obstruction here is consistent with and sharpens that relocation — the
-per-region character route is now excluded by an exact finite obstruction
-rather than by absence of a construction. The in-flight bridges (PRs #4766, #4768) keep
+exactly that account and nothing else. A landed but unaudited substrate
+no-winding-carrier note points in the same direction, but it is
+non-load-bearing context here and is not consumed as a premise. The obstruction
+here stands on the retained character-recurrence surface alone: the per-region
+character route is excluded by an exact finite obstruction rather than by
+absence of a construction. The in-flight bridges (PRs #4766, #4768) keep
 `W_theta_Q_context` and `W_theta_bar_assembly` explicit; this note narrows the
 former and leaves the latter untouched.
 
@@ -513,7 +515,7 @@ python3 scripts/gauge_center_sector_record_context_character_grading_obstruction
 Expected close:
 
 ```text
-TOTAL: PASS=51 FAIL=0
+TOTAL: PASS=56 FAIL=0
 ```
 
 Sections: A center-action diagonality (Weyl-exact); B retained recurrence
@@ -522,4 +524,5 @@ C transfer-vector sector weights (positive, paired, truncation-stable;
 `beta = 1, 6, 12`) and the nonnegativity/coverage structure; D the grading
 obstruction (nullities over `Q`/`GF(2)`/`GF(3)`, kernel = triality line,
 hand-relation replay, fund x fund witness); E record-interface arithmetic
-(disjoint-region additivity, sector-sharp products, weight shape).
+(disjoint-region additivity, sector-sharp products, weight shape); F
+source-note discipline (canonical metadata, graph links, fail-closed hygiene).

@@ -2,17 +2,18 @@
 
 | Route | Type | Claim movement | Trace reachability | Import retirement | Artifactability | Risk | Decision |
 |---|---|---:|---:|---:|---:|---:|---|
-| Product-level endpoint algebra certifies independent source/readout legs | no-go / obstruction | 2 | 3 | 2 | 3 | 1 | selected for block11 |
-| Leg-level source/readout factorization primitive | constructive theorem | 3 | 3 | 3 | 1 | 3 | next hard target |
+| Extract dual factors from current `K_R` leg factorization | no-go / obstruction | 2 | 3 | 2 | 3 | 1 | selected for block12 |
+| Additional leg-level normalization primitive outside `K_R` | constructive theorem | 3 | 3 | 3 | 1 | 3 | next hard target |
 | Nonseparable total-degree-2 primitive | novel construction | 3 | 2 | 3 | 1 | 2 | queued |
 | Bright-channel identification theorem | import retirement | 2 | 2 | 3 | 2 | 2 | queued |
 | Exact reduced anisotropic shell amplitude | import retirement | 2 | 2 | 3 | 2 | 2 | queued |
 
 ## Fan-Out Synthesis
 
-- Product-level endpoint algebra fixes only total degree.
-- Multiple source/readout degree splits share the same endpoint product.
-- Channelwise gauges change source/readout attribution while preserving every
-  current endpoint product.
-- Therefore the next positive route must introduce leg-level observables or an
-  equivalent nonseparable primitive.
+- Current `K_R` has a real rank-one leg factorization.
+- The source leg is common to `E` and `T1`.
+- The current bright row uses named unit coordinates and no reciprocal
+  projector-weight normalization.
+- Therefore `K_R` alone has total reciprocal degree zero.
+- The next route must add a normalization primitive outside `K_R` or find a
+  nonseparable degree-2 object.

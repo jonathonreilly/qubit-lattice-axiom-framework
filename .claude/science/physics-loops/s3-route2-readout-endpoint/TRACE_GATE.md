@@ -4,12 +4,11 @@ target_blocker_text: "the readout-map endpoint triple is not derived, blocking t
 source_of_blocker_text: user_goal
 reachability_to_target: prunes
 artifact_role: no_go
-next_trace_action: "Derive or no-go a leg-level source/readout factorization primitive that fixes the channel gauges."
+next_trace_action: "Search for an additional normalization primitive outside the class-A K_R factorization, or a nonseparable total-degree-2 primitive."
 
 ## Explanation
 
-If block11 is true, it prunes one tempting route: using endpoint product algebra
-or the current `P_R` matrix alone to certify two independent source/readout
-dual legs. It does not close the endpoint. It names the next required primitive:
-a leg-level factorization theorem or equivalent nonseparable total-degree-2
-construction.
+If block12 is true, it prunes the route that tries to extract the endpoint's
+two reciprocal factors from the current class-A `K_R` carrier factorization
+itself. The carrier factorization is real, but it is channel-blind and degree
+zero, so it does not close the endpoint.

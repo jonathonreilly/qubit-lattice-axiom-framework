@@ -143,10 +143,11 @@ Run the repo-native physics review loop from:
   P2/modulus, log-det structure, source/action bridges, empirical matches, or
   parent theorem/status surfaces. The current baseline includes: no possibility
   is privileged; possibilities are distinguished by the supplied algebraic
-  structure alone; readout value is determined by record content alone; a
-  state is a configuration of records; and a law privileges no states, has a
-  supplied condition as its domain, and gives exactly one answer where that
-  condition holds.
+  structure alone; no site is privileged; sites are distinguished by the
+  supplied lattice structure alone; readout value is determined by record
+  content alone; a state is a configuration of records; and a law privileges
+  no states, has a supplied condition as its domain, and gives exactly one
+  answer where that condition holds.
 - Nature-grade retention requires derived or explicitly admitted inputs,
   decisive artifact support, clear falsifiers, and no hidden semantic bridge.
 - Math-bearing runners require independent formula review: PASS lines do not

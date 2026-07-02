@@ -28,7 +28,8 @@ statuses all change; only current repo surfaces are authoritative.
 
 - **Lattice** — physical sites are the points of the cubic lattice `Z^3`,
   with nearest-neighbor adjacency, standard translations, and proper cubic
-  rotations.
+  rotations about each site; no site is privileged, and sites are
+  distinguished by the supplied lattice structure alone.
 - **Qubit** — each site has a domain of local possibilities; the full one-site
   possibility domain has algebraic presentation `M_2(ℂ)`, with `Cl(3,0)` as
   equivalent real-algebra notation only; no possibility is privileged, and

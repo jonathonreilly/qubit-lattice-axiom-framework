@@ -1,8 +1,8 @@
 # Realized Kinetic Branch: Discriminator Dichotomy on the Two-Flux-Class Surface
 
 **Date:** 2026-07-02
-**Type:** positive_theorem
-**Claim type:** positive_theorem
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
 **Claim scope:** On the parent two-flux-class kinetic surface, the two
 representatives are separated by four computable representative-level
 discriminators: D1, internal-factor load and grade-1 Clifford capacity;
@@ -179,12 +179,12 @@ Expected cache target:
 Current local runner result:
 
 ```text
-TOTAL: PASS=16 FAIL=0
+TOTAL: PASS=20 FAIL=0
 ```
 
-The cache file is intentionally not generated here.
+The cache file is generated from the paired runner and SHA-pinned.
 
 ## Changelog
 
 - **2026-07-02.** Initial note and numpy runner. The runner reports
-  `TOTAL: PASS=16 FAIL=0`.
+  `TOTAL: PASS=20 FAIL=0`.

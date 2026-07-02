@@ -50,3 +50,42 @@ If a later bridge proves additive composition of successive plaquette-record
 accumulations, then the action kernel must be a one-parameter convolution
 semigroup. This Block04 artifact names that premise and tests the three action
 families against it; the record-composition bridge is not established here.
+
+## Block09
+
+**New bounded artifact:**
+
+- `docs/SEMIGROUP_CLOSURE_DOES_NOT_FORCE_HEAT_KERNEL_QUADRATIC_CONDITION_BOUNDED_NOTE_2026-07-02.md`
+- `scripts/frontier_semigroup_closure_quadratic_condition_2026_07_02.py`
+- `outputs/frontier_semigroup_closure_quadratic_condition_2026_07_02.txt`
+
+**Role:**
+
+- Self-adversarial sharpening of Block04's T5 premise. The exact `Z_5` witness
+  proves that one-parameter convolution-semigroup closure alone selects the
+  broad class `c_n(t)=exp(-t psi(n))`, not the heat-kernel subfamily.
+- The missing named condition is `Q-gen`: `psi(n)=s n^2` for all modes. Its
+  first-level check is exactly Block04's `c_2=c_1^4` discriminator within a
+  semigroup class.
+
+**In-runner certified inputs:**
+
+- `theta_0=2*pi/5`, `psi(n)=1-cos(n theta_0)`, and
+  `c_n(t)=exp(-t psi(n))`.
+- Semigroup additivity is checked symbolically.
+- Positivity is constructed directly on `Z_5` by
+  `w_t=exp(t(M-I)) delta_0=exp(-t) exp(tM) delta_0`, with `M` the symmetric-step
+  stochastic matrix; rational-time samples are certified by truncated series
+  with exact remainder bounds.
+- Fourier diagonalization of `M` on `Z_5` gives the stated characters exactly.
+- The exact identity
+  `4 psi(1)-psi(2)=2(cos(2*pi/5)-1)^2>0` certifies
+  `c_2(t) != c_1(t)^4` for positive `t`.
+
+**Imports deliberately not used:**
+
+- No literature theorem is imported.
+- No continuum or CLT premise is used.
+- No Record bridge, action selector, new axiom, or new primitive is assumed.
+- Block04's three-candidate conclusion is not changed: Wilson and
+  principal-angle Manton remain non-semigroups at finite beta by Block04 T4.

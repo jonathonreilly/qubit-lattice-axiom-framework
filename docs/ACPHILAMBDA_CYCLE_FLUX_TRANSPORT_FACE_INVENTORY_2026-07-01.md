@@ -1,7 +1,8 @@
 # AC_phi_lambda Cycle-Flux Transport-Face Inventory
 
 **Date:** 2026-07-01
-**Claim type:** bounded theorem / exact face inventory + wall typing
+**Claim type:** bounded_theorem
+**Scope:** exact face inventory plus wall typing.
 **Status authority:** independent audit lane only. This note does not set an audit verdict, edit registries, register primitives, change axioms, or claim `AC_phi_lambda` retirement.
 **Primary runner:** [`scripts/acphilambda_cycle_flux_transport_face_inventory_2026_07_01.py`](../scripts/acphilambda_cycle_flux_transport_face_inventory_2026_07_01.py)
 
@@ -185,14 +186,14 @@ authority.
 
 ## No-Go Discipline Gate
 
-**Status:** PASS for bounded face inventory; not a terminal no-go.
+This checklist supports a bounded face inventory; it is not a terminal no-go.
 
 ### N1
 - Fixed-point face route: ATTEMPTED: exact.
 - Transport/Green face route: ATTEMPTED: exact.
 - Resistance/Kirchhoff face: ATTEMPTED: exact.
 - Identification of flux with return amplitude: OPEN: the typed strike point.
-- Rescale-invariant derivation: RULED OUT by PR #4783 context.
+- Rescale-invariant derivation: OUT OF SCOPE HERE; the live rescale wall is not discharged by this face inventory.
 - Owner primitive: GOVERNANCE.
 
 ### N2
@@ -237,5 +238,5 @@ python3 scripts/acphilambda_cycle_flux_transport_face_inventory_2026_07_01.py
 Expected close after the final runner pass:
 
 ```text
-TOTAL: PASS=124 FAIL=0
+TOTAL: PASS=127 FAIL=0
 ```

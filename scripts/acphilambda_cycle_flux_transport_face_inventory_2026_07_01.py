@@ -240,6 +240,10 @@ def main() -> int:
     for phrase in forbidden:
         check(f"note excludes forbidden phrase: {phrase}", phrase not in note)
 
+    check("note declares canonical bounded_theorem claim type", "**Claim type:** bounded_theorem" in note)
+    check("note does not use runner PASS as source status", "**Status:** PASS" not in note)
+    check("note does not lean on PR #4783 as authority", "RULED OUT by PR #4783" not in note)
+
     allowed_walls = {"W_cycle_holonomy_value", "W_defect_identity_unit", "W_defect_readout_selection"}
     seen_walls = set(re.findall(r"\bW_[A-Za-z0-9_]+\b", note))
     check("note uses no unlisted W_ wall identifiers", seen_walls <= allowed_walls, detail=", ".join(sorted(seen_walls)))
@@ -264,15 +268,8 @@ def main() -> int:
         check(f"in-flight basename appears in text: {basename}", basename in note)
         check(f"in-flight basename is not a markdown target: {basename}", all(basename not in target for target in markdown_targets))
 
-    check(
-        "status-authority header is standard",
-        "**Status authority:** independent audit lane only. This note does not set an audit verdict, edit registries, register primitives, change axioms, or claim `AC_phi_lambda` retirement."
-        in note_s,
-    )
-    check(
-        "paired runner is linked",
-        "../scripts/acphilambda_cycle_flux_transport_face_inventory_2026_07_01.py" in note,
-    )
+    check("status-authority header is standard", "**Status authority:** independent audit lane only. This note does not set an audit verdict, edit registries, register primitives, change axioms, or claim `AC_phi_lambda` retirement." in note_s)
+    check("paired runner is linked", "../scripts/acphilambda_cycle_flux_transport_face_inventory_2026_07_01.py" in note)
     check("note excludes preserved-token meta-language", ("PRES" + "ERVE") not in note)
     check("note excludes record-requirement meta-language", ("required for " + "the record") not in note)
     check("note excludes local-instruction meta-language", ("this " + "spec") not in note)

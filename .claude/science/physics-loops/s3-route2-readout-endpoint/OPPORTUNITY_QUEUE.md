@@ -2,9 +2,9 @@
 
 | Rank | Target | Status | Positive probability | Runner availability | Review landability | Next action |
 |---:|---|---|---:|---:|---:|---|
-| 1 | Direct typed E-center source/readout selector | open | medium | medium | medium | Attempt a non-invariant but physically typed selector that evaluates E-center rather than importing `7/8` or `15/8`. |
-| 2 | Stronger readout-map primitive beyond restricted channelwise class | open | medium-low | low | medium-low | Define a falsifiable extension of `P_R` with no fitted target; reject if it only re-encodes `21/4`. |
-| 3 | Broader endpoint-blindness no-go | open | medium | high | high | If selector attempts fail, prove the strongest class of readouts that leave `rho_E` free. |
-| 4 | Box-path interpolation family | block36 packet | low after block36 | high | high | Package current bounded no-go/support boundary into PR. |
+| 1 | Derive the single adjoint line from source geometry | open | medium | medium | medium | Search for a typed line in source-domain/support geometry that is not fitted to the endpoint. |
+| 2 | Prove no current SU(3)-invariant/source-bank line selector exists | open | medium | high | high | If no line is found, turn the conditional primitive into a sharper no-go boundary. |
+| 3 | Stronger readout-map theorem beyond restricted carrier | open | medium-low | low | medium-low | Attempt a new readout-map class with explicit falsifiers. |
+| 4 | Broader endpoint-blindness no-go | open | medium | high | high | Extend E-center blindness to any newly proposed selector class that fails to see the line/complement. |
 
-Campaign note: after block36 PR handoff, prefer rank 1 because two recent packets have mostly pruned routes rather than supplying a positive primitive.
+Campaign note: block37 is conditional positive support, not closure. The next block should try to derive or reject the source-line premise itself.

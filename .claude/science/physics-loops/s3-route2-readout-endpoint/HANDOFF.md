@@ -1,55 +1,52 @@
-# Block36 Handoff
+# Block37 Handoff
 
 ## Summary
 
-Block36 adds a bounded route-pruning packet for the S3/Route-2 E-center readout gap. It tests whether the `N=15` measured `q_E ~= 15/8` coincidence can be promoted by a smooth radius-scaling path between the two known endpoint box limits.
+Block37 adds a constructive conditional primitive for the S3/Route-2 E-center readout gap.
 
-The tested family is:
+If a typed source-domain primitive selects one line in the SU(3) adjoint space and the E-center excess reads the normalized complement rank, then:
 
 ```text
-r_N(p) = 4.25 * ((N - 2)/13)^p,
-p in {0, 1/4, 1/2, 3/4, 1},
-N in {17, 21, 25}.
+e_E = 7/8
+q_E = 15/8
+rho_E = 21/4
+c_TE = -8/9
 ```
 
-Result: no sampled path tracks `15/8` across N or lands near it at `N=25`. The best largest-box sample is `p=1`, `q_E(N=25)=0.981191`, gap `0.893809`. Interior paths show `beta_E(shell)` sign/near-zero sensitivity rather than a stable E-center primitive.
+all follow exactly. The runner also proves rank 7 is unique among integer adjoint-projector ranks and that line-rank, full-adjoint, and `F_adj=8/9`-as-E-excess readings fail.
+
+Actual status: conditional-support only. The current source bank does not supply the single-adjoint-line selector.
 
 ## Artifacts
 
-- `docs/QUARK_ROUTE2_QE_BOX_PATH_INTERPOLATION_FAMILY_NO_GO_NOTE_2026-06-21.md`
-- `scripts/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.py`
-- `outputs/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.txt`
+- `docs/QUARK_ROUTE2_E_CENTER_SINGLE_ADJOINT_LINE_SELECTOR_CONDITIONAL_SUPPORT_NOTE_2026-06-21.md`
+- `scripts/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.py`
+- `outputs/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.txt`
 - `.claude/science/physics-loops/s3-route2-readout-endpoint/*`
 
 ## Verification
 
-- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.py` -> `PASS=5 FAIL=0`
-
-Additional focused checks should run before PR creation:
-
-- branch-local overclaim scan.
+- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.py` -> `PASS=27 FAIL=0`
 
 Completed focused checks:
 
-- `python3 -m py_compile scripts/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.py` -> pass
-- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py` -> `PASS=11 FAIL=0`
+- `python3 -m py_compile scripts/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.py` -> pass
+- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py` -> `PASS=103 FAIL=0`
+- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_blindness_no_go.py` -> `PASS=14 FAIL=0`
 - `PYTHONPATH=scripts python3 scripts/frontier_s3_time_primitive_chain_reaudit.py` -> `PASS=24 FAIL=0`
-- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_box_size_scan_2026_06_10.py` -> `PASS=7 FAIL=0`
-- branch-local positive-overclaim scan over 17 changed files -> `positive_overclaim_hits=0`
+- branch-local positive-overclaim scan over 16 changed files -> `positive_overclaim_hits=0`
 
 ## Scope
 
-Status is `bounded-support` / negative route pruning. This block does not derive `beta_E/alpha_E=21/4`, does not close the S3/Route-2 endpoint triple, and does not rule out genuinely new source-domain or stronger readout-map primitives.
-
-## Next Action
+This block does not derive the single adjoint line from current primitives. It identifies the exact primitive that would work and records falsifiers for that primitive.
 
 ## PR
 
-- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4566
-- Branch: `physics-loop/s3-route2-readout-endpoint-block36-20260621`
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4567
+- Branch: `physics-loop/s3-route2-readout-endpoint-block37-20260621`
 - Base: `main`
 - Status: open, identity verified only. Conflict/mergeability was not checked.
 
 ## Next Action
 
-Pivot to a direct typed E-center source/readout selector attempt. The candidate must evaluate the E-center column without importing `21/4`, `15/8`, observed quark masses, or nearest-rational matching.
+Try to derive the single adjoint line from current source/support geometry. If absent, prove the sharp no-go for current source-bank line selectors.

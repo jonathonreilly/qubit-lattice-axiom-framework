@@ -1,16 +1,15 @@
 # Artifact Plan
 
-## Block36
+## Block37
 
-- [x] Add a runner for the radius-scaling interpolation family.
-- [x] Capture runner output under `outputs/`.
-- [x] Add a source note with bounded status and explicit route-pruning scope.
-- [x] Check overclaim wording and status firewall.
+- [x] Add conditional single-adjoint-line selector runner.
+- [x] Add conditional support note.
+- [x] Capture runner output.
+- [x] Run focused verification and overclaim scan.
 - [x] Commit and publish branch.
 - [x] Open PR.
 
 ## Next Block
 
-- Attempt a direct typed E-center source/readout selector.
-- Forbid observed masses, fitted targets, nearest-rational selection, and same-rational import matching.
-- Require a falsifier: the candidate must determine the E-center column before seeing the `21/4` comparator.
+- Try to derive the selected adjoint line from current source/support geometry.
+- If no derivation exists, prove the sharp no-go for current source-bank line selectors.

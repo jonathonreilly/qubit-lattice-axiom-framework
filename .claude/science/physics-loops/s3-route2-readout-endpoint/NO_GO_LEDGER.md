@@ -1,29 +1,29 @@
 # No-Go Ledger
 
-## Block30
+## Block31
 
 Route:
 
 ```text
-kappa_EW=0 -> endpoint target
+hidden expanded one-hop authority already supplies W1
 ```
 
-Verdict: no-go for the route unless W1 is also supplied.
+Verdict: no-go for the tested current authority bank.
 
 Reason:
 
-- W2-only reaches `su3_R_conn_8_9`.
-- W2-only does not type `su3_R_conn_8_9` as
-  `route2_center_TE_minus_8_9`.
-- W1-only reaches the endpoint target chain from the color scalar but does not
-  prove the physical selector.
-- W1 and W2 are independent gates.
+- The expanded bank has 31 mixed color/Route-2-center paragraphs.
+- Every mixed paragraph is conditional, negative, comparator-only, or a
+  downstream firewall.
+- Pure Rconn, Fierz, readout, naturality, and bilinear authority files contain
+  no mixed W1 paragraph.
+- Current graph reachability still lacks W1 unless the missing edge is
+  adjoined.
 
 ## Prior Campaign Memory
 
 - E-center-blind constraints leave `rho_E` free.
 - E-center-visible endpoint-matrix selectors land the target only when they
   supply a bridge-equivalent statement.
-- Scalar-bypass routes constrain support but do not select `P_R`.
-- Source-domain typecasts leave a scale or typed-edge gap unless the signed
-  center-ratio bridge is supplied.
+- W2-only reaches the color scalar but does not type it as the Route-2 signed
+  center ratio.

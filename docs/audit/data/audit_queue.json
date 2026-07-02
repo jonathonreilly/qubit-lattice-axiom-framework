@@ -3,7 +3,7 @@
     "critical": 301,
     "high": 283,
     "leaf": 584,
-    "medium": 493
+    "medium": 492
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17799,38 +17799,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "key_terminology",
-        "cl3_color_automorphism_theorem",
-        "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
-        "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02",
-        "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
-        "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
-        "minimal_axioms",
-        "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "color_generation_independent_z3_structures_2026-06-05"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.492,
-      "note_path": "docs/COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_color_su3_bridge_from_record_2026_06_05.py",
-      "transitive_descendants": 44
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -17961,6 +17929,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.5,
+      "note_path": "docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py",
+      "transitive_descendants": 31
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17982,30 +17974,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py",
       "transitive_descendants": 25
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.087,
-      "note_path": "docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py",
-      "transitive_descendants": 16
     },
     {
       "audit_independence_required": "any_non_self",
@@ -49849,6 +49817,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 102,
-  "total_pending": 1661
+  "ready_count": 101,
+  "total_pending": 1660
 }

@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26"
+      "to": "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05"
     },
     {
       "from": "repo.front_door_status",
@@ -53494,11 +53494,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05"
+      "to": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
     },
     {
       "from": "repo.front_door_status",
-      "to": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
+      "to": "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26",
+        "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05",
         "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05",
         "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16",
         "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
         "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
         "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
-        "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05",
-        "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
+        "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
+        "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "730a537602c08d62eb2dc8600b1d937b9753bfff416a98e7d3c7f699dc9943b9",
+      "note_hash": "32c75f75d66e793646943aefb8fabd8d5144e22cc30a7cece79e1959aabffcb7",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

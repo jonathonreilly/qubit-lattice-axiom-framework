@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 201 |
-| **retained_bounded** | 908 |
+| **retained_bounded** | 909 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1659 |
+| unaudited | 1658 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1323 |
+| `audited_clean` | 1324 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1985 |
+| `unaudited` | 1984 |
 
 | claim_type | count |
 |---|---:|
@@ -300,6 +300,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `color_generation_independent_z3_structures_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4030,6 +4031,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The color carrier has Z3 character (3, 3 omega, 3 omega^2) while the hw=1 generation axis-cycle carrier has character (3, 0, 0), so the two Z3 representations are inequivalent.  _(class `A`)_
 - **chain closes:** True — The cited retained-bounded authorities supply the two abstract carrier actions, and finite Z3 character theory then proves inequivalence. The physical SM color and physical generation-label bridges are explicitly outside the audited scope.
 - **rationale:** The load-bearing step is a standard algebraic character comparison over two retained-grade abstract representation inputs. The runner source constructs the scalar center action and the 3-cycle permutation action, then checks characters, multiplicities, relabeling, and Hom-rank obstruction without external comparators or tuned numerical inputs. The upstream open physical-identification language is respected as a scope boundary, not used as a premise for this abstract result.
+- **auditor confidence:** high
+
+### `color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05`
+
+- **Note:** [`COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md`](../../docs/COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded partial-pinning result on the explicit chiral-cube carrier: given records = color singlets, the commutant/invariance algebra selects base SU(3) among the stated candidates, while the physical color/matter-realization antecedent remains outside Lattice + Qubit + Admissibility + Record.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T031206Z-c1bf0155-color_su3_symmetric_base`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the explicit C^8 carrier, the color-singlet projectors commute with the base-SU(3) action, but the same two-endpoint Gauss-law/profile structure can be instantiated for either base SU(3) or fiber SU(2), so record-invariance supplies only the conditional commutant half and not the matter-realization selector.  _(class `A`)_
+- **chain closes:** True — The finite-dimensional algebra checks close from the cited retained-bounded carrier, color-singlet, and two-endpoint commutant inputs. The physical symmetric-base-to-SM-color bridge is not used as a premise; it is explicitly left as the residual matter-realization step.
+- **rationale:** The audited claim is correctly bounded: it proves a conditional algebraic commutant statement and a non-forcing result on the stated finite carrier, not a derivation of physical SU(3)_c. The cited authorities supply the SU(3)/SU(2) carrier structure, color-singlet algebra, two-endpoint commutant profile, and the already-deferred physical-color bridge boundary. The runner mostly verifies exact finite algebra; the textual boundary checks are cross-note scope checks rather than new derivations, but they match the cited authorities. No PDG value, fitted selector, or physical-color identification is imported as closed.
 - **auditor confidence:** high
 
 ### `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12`

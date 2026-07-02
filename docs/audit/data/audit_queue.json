@@ -138,15 +138,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
-      "claim_scope": null,
+      "claim_scope": "Free U=1 bilinear staggered two-step log-transfer kernel for the stated symbol: explicit exponential quasilocality, d=1 sharp rate, declared d=3 upper/support-family bounds with numerical axis sharpness, truncation tails, and strict R<=2 finite-range falsification on the exhibited sector.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
         "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
@@ -154,15 +154,15 @@
         "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
         "axiom_first_reflection_positivity_theorem_note_2026-04-29"
       ],
-      "direct_in_degree": 8,
-      "effective_status": "unaudited",
+      "direct_in_degree": 9,
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.881,
+      "load_bearing_score": 17.383,
       "note_path": "docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py",
-      "transitive_descendants": 942
+      "transitive_descendants": 943
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -8725,15 +8725,15 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 10,
+      "direct_in_degree": 9,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.17,
+      "load_bearing_score": 10.333,
       "note_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_pre_record_reference_state_tracial_derivation.py",
-      "transitive_descendants": 71
+      "transitive_descendants": 56
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",

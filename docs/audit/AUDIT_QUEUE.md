@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10` | bounded_theorem | unaudited | critical | 942 | 16.88 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py` |
+| 1 | `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10` | bounded_theorem | audit_in_progress | critical | 943 | 17.38 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py` |
 | 2 | `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | unaudited | critical | 268 | 18.07 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_formula_honest_status.py` |
 | 3 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | unaudited | critical | 264 | 9.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_clifford_chirality_dimension_narrow.py` |
 | 4 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | unaudited | critical | 1118 | 10.63 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py` |

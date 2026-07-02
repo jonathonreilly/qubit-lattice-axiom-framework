@@ -17,3 +17,18 @@ Dependency classes: MINIMAL_AXIOMS (approved axiom node); relocation note and
 ADM2 bi-invariance note (both unaudited — conditional context only, not
 premises of T1-T4, which are self-contained). No observed values, no fitted
 selectors, no new axioms/primitives.
+
+# Claim status certificate — block09 (semigroup non-uniqueness; Q-gen)
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: corrects/weakens block04 T5's reach — composition additivity selects the semigroup class only; Q-gen (quadratic generator) is the named additional condition for heat-kernel selection within the class
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact positive-semigroup counterexample on Z_5 with symbolic identities; self-adversarial sharpening of a sibling premise; no selection claimed"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```

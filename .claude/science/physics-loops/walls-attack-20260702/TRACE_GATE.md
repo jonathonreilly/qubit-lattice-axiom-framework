@@ -17,3 +17,15 @@ next_trace_action: "named selection premise from T5: record-composition additivi
 Caveat: the target note is itself unaudited — this block supports a
 well-posed-question surface whose well-posedness verdict is pending audit;
 all citations of it are conditional.
+
+# Trace gate — block09 (semigroup non-uniqueness; quadratic condition)
+
+```yaml
+trace_class: upstream_support
+target_claim_id: action_form_no_go_equivalence_premise_continuum_removal_scoped_relocation_note_2026-06-08
+target_blocker_text: "No derivation that HK (or any action) is the selected one. That is the open follow-on."
+source_of_blocker_text: audit_ledger
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "self-adversarial correction of block04 T5: composition additivity selects the semigroup CLASS, not HK; Q-gen (quadratic generator) is the named missing condition; next-attack naming only: does single-step record structure supply Q-gen?"
+```

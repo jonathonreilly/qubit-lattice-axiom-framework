@@ -198,11 +198,13 @@ for item in non_closures:
 section("Source-boundary firewall")
 pinned_note_fragments = [
     (
-        "status line",
-        "**Status:** exact algebraic identity / support theorem on retained\n"
+        "type and scope boundary",
+        "**Type:** bounded_theorem\n"
+        "**Scope boundary:** exact algebraic identity / support theorem on the\n"
         "graph-first surface + LHCM closure trio (cycles 1-3) + Yukawa-structure\n"
         "admitted SM convention. NOT proposed_retained — see\n"
-        "CLAIM_STATUS_CERTIFICATE.md.",
+        "CLAIM_STATUS_CERTIFICATE.md.\n"
+        "**Audit boundary:** the independent audit lane owns all verdicts.",
     ),
     (
         "authority role",

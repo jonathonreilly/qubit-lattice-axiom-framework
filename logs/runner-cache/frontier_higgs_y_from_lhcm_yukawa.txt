@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_higgs_y_from_lhcm_yukawa.py
-runner_sha256: e7b199b10b3dab50c07fe38e3cee9a24d7c8a6fb6b373a6c0b7693c98902fd19
+runner_sha256: 9cd952b31b6403f133b42e73d893cbeb9141d77540bdfa337a2ee684058cebe7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 
@@ -70,7 +70,7 @@ Displayed non-closure boundaries
 ----------------------------------------------------------------------------------------
 Source-boundary firewall
 ----------------------------------------------------------------------------------------
-[PASS] pinned status line ()
+[PASS] pinned type and scope boundary ()
 [PASS] pinned authority role ()
 [PASS] pinned status yaml condition ()
 [PASS] pinned proposal boundary ()

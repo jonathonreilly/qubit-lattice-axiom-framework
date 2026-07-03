@@ -30252,6 +30252,30 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_rd_fixedness_arrow_invariant_2026_06_12.py"
     },
+    "reading_note_claims_are_axiom_text_theorems_bounded_note_2026-07-02": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_reading_note_derivations_2026_07_02.py"
+    },
+    "reading_note_final_derivations_motion_closure_bounded_note_2026-07-02": {
+      "assert_count": 3,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_answer_condition_motion_closure_2026_07_02.py"
+    },
     "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08": {
       "assert_count": 1,
       "counts": {
@@ -33803,6 +33827,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_species_bridge_ratification_class_2026_07_02.py"
+    },
+    "species_carrier_invariant_ring_no_orbit_separator_exact_note_2026-07-03": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_species_carrier_invariant_ring_2026_07_03.py"
     },
     "spectral_closure_2026-04-09": {
       "assert_count": 0,
@@ -50904,6 +50940,21 @@
       "counts": {
         "A": 0,
         "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/frontier_answer_condition_motion_closure_2026_07_02.py": {
+      "assert_count": 3,
+      "claims": [
+        "reading_note_final_derivations_motion_closure_bounded_note_2026-07-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
         "C": 0,
         "D": 0
       },
@@ -72560,6 +72611,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_reading_note_derivations_2026_07_02.py": {
+      "assert_count": 1,
+      "claims": [
+        "reading_note_claims_are_axiom_text_theorems_bounded_note_2026-07-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_record_asymptotic_reset_convergence_ledger_2026_06_05.py": {
       "assert_count": 1,
       "claims": [
@@ -74855,6 +74921,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_species_carrier_invariant_ring_2026_07_03.py": {
+      "assert_count": 2,
+      "claims": [
+        "species_carrier_invariant_ring_no_orbit_separator_exact_note_2026-07-03"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_spectral_on_lattice.py": {
@@ -90599,15 +90680,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 688,
+    "decoration_candidates": 691,
     "dominant_class_distribution": {
       "A": 488,
-      "B": 632,
+      "B": 635,
       "C": 1272,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3299,
+    "runners_classified": 3302,
     "runners_with_C": 1729,
     "runners_with_D": 1061
   }

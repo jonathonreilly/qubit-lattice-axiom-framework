@@ -1,10 +1,17 @@
 # Species Carrier Invariant Ring Has No Orbit-Separator at the Parent Readout Grade
 
 **Date:** 2026-07-03
-**Claim type:** exact_computation / bounded closure of the named
-proof-strength residue in the species-bridge minimum note.
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem (exact computation at the parent
+corner-diagonal Hermitian linear-functional grade)
 **Primary runner:**
 [`scripts/frontier_species_carrier_invariant_ring_2026_07_03.py`](../scripts/frontier_species_carrier_invariant_ring_2026_07_03.py)
+
+## Dependencies
+
+- [`SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md`](SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md)
+  supplies the parent carrier, readout-grade boundary, and proof-strength gap
+  this note closes.
 
 ## Scope
 

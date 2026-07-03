@@ -65,7 +65,12 @@ The framework still needs direct answers to:
 - "Why is m_ν so small? Where does the seesaw scale come from?"
 
 The framework currently has the neutrino sector labeled as "different carriers"
-in the [CHARGED_LEPTON_KOIDE_REVIEW_PACKET](../../CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md)
+in the `CHARGED_LEPTON_KOIDE_REVIEW_PACKET`
+(`CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md`, backticked historical reference:
+that row was narrowed 2026-05-26 to an open-gate two-gate certificate and no
+longer carries the quoted carrier-labeling language; the species/carrier-bridge
+admission class is registered as Tier-A `AC_phi_lambda` sub-admission (iii) in
+`docs/audit/data/tier_a_admissions.json`)
 — meaning the neutrino mass-spectrum questions live on a separate carrier than
 the charged-lepton Koide structure. The DM closed package gives δ_CP ≈ -81° and
 θ_23 upper octant, but absolute mass scales and Δm² values are bounded

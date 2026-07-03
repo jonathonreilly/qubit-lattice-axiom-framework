@@ -1,0 +1,148 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py
+runner_sha256: 71e39aefb2005a2fe0bf13a3b371adfb6b28cd62e89f79c337d7cb0760b2d3e7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+=== AC_phi_lambda defect identity-unit rescale obstruction ===
+
+PART A -- cited sources and boundary text
+[PASS] docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md exists
+[PASS] docs/MINIMAL_AXIOMS_2026-06-29.md exists
+[PASS] docs/audit/data/axiom_premise_nodes.json exists
+[PASS] docs/audit/data/tier_a_admissions.json exists
+[PASS] docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md exists
+[PASS] docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md exists
+[PASS] docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md exists
+[PASS] docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md exists
+[PASS] docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md exists
+[PASS] docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md exists
+[PASS] docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md exists
+[PASS] docs/PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md exists
+[PASS] Record axiom readout clause present verbatim
+[PASS] Record axiom lock clause present
+[PASS] registry node excludes weighting/normalization/probability
+[PASS] registry node excludes physical observable bridge
+[PASS] scale primitive: zero dimensionless content clause
+[PASS] kinetic primitive: no selector/readout bridge clause
+[PASS] realized-state primitive: no normalization rule / value supplied
+[PASS] realized-state primitive: pointwise evaluation, not state-selection
+[PASS] tier-A sub-admission (ii) names density-read-as-angle
+[PASS] radian-bridge note carries the Type-B-to-radian primitive residual
+[PASS] fixed-locus note excludes the physical readout from its scope
+[PASS] planck boundary note records the native dimensionless phase unit
+
+PART B -- exact C3 fixed-defect arithmetic
+[PASS] L3(1,2) = 2/9 exactly
+[PASS] L3(1,1) = 1/9 exactly
+[PASS] L3(2,2) = 1/9 exactly
+[PASS] core identity (omega-1)(omega^2-1) = 3
+[PASS] selected and contrast densities differ
+
+PART C -- self-contained unit normal form
+[PASS] c=1: additive with I(empty)=0 and I(pair)=I(a)+I(b)
+[PASS] c=1/2: additive with I(empty)=0 and I(pair)=I(a)+I(b)
+[PASS] c=2: additive with I(empty)=0 and I(pair)=I(a)+I(b)
+[PASS] c=-3: additive with I(empty)=0 and I(pair)=I(a)+I(b)
+[PASS] c=7/5: additive with I(empty)=0 and I(pair)=I(a)+I(b)
+[PASS] identity-unit member has I(single) = L = 2/9
+[PASS] singleton value determines the extension: I(R) = |R| * u
+
+PART D -- rescale-invariance scan (T1)
+[PASS] base member satisfies every encoded clause
+[PASS] clause rescale-invariant: density-line dependence
+[PASS] clause rescale-invariant: disjoint-refinement consistency
+[PASS] clause rescale-invariant: lock clause (value-free)
+[PASS] clause rescale-invariant: cross-lane same-unit
+[PASS] lambda=1/2: rescaled readout still additive with I(empty)=0
+[PASS] lambda=2: rescaled readout still additive with I(empty)=0
+[PASS] lambda=3: rescaled readout still additive with I(empty)=0
+[PASS] lambda=-1: rescaled readout still additive with I(empty)=0
+[PASS] lambda=7/5: rescaled readout still additive with I(empty)=0
+[PASS] entire c-line lies inside the clause-set solution set
+[PASS] the only rescale-fixed readout is the zero readout
+
+PART E -- atom-count normalization pins the wrong member (T2)
+[PASS] count readout is additive with N(empty)=0 (occupancy-type surface)
+[PASS] count normalization pins c = 9/2 exactly
+[PASS] count-pinned member is not the identity unit
+[PASS] count IS rescale-breaking (lambda*N violates N(single)=1)
+[PASS] count-in-density-units clause I(single)=L is the c=1 member verbatim
+[PASS] witness freedom: I(single)=L/2 satisfies additivity + empty-zero
+
+PART F -- angle-side rigidity (T3)
+[PASS] lattice closure survivors = integers with c mod 3 != 0
+[PASS] no non-integer c survives lattice closure
+[PASS] degenerate c=3 collapses the lattice (excluded)
+[PASS] degenerate c=0 collapses the lattice (excluded)
+[PASS] registered-spectrum preservation leaves exactly {+1, -1}
+[PASS] discrete lattice survivor c=2 changes the registered multiset
+[PASS] discrete lattice survivor c=4 changes the registered multiset
+[PASS] discrete lattice survivor c=5 changes the registered multiset
+[PASS] discrete lattice survivor c=7 changes the registered multiset
+[PASS] c=-1 (conjugation) preserves the registered multiset
+[PASS] conjugation is the sign strip: |delta| invariant under delta -> -delta
+
+PART G -- unit-blind interfaces (T4)
+[PASS] Q(delta) = 2/3 exactly for all delta (delta-blind guardrail)
+[PASS] e1 = 3 exactly (v0-normalized democratic trace)
+[PASS] Born-facing normalization satisfiable at c=1.0: sum p = 1
+[PASS] Born-facing normalization satisfiable at c=0.5: sum p = 1
+[PASS] Born-facing normalization satisfiable at c=2.0: sum p = 1
+[PASS] Born-facing normalization satisfiable at c=3.7: sum p = 1
+[PASS] registered ratio moves with c (substantive, not vacuous convention)
+[PASS] v0-rescale leaves registered ratios invariant (Y0/g0-type vacuous)
+[PASS] cross-lane same-unit clause is rescale-invariant (transport cannot pin)
+
+PART H -- note discipline
+[PASS] note declares canonical bounded_theorem claim type
+[PASS] note declares independent audit authority
+[PASS] note declares no registry/axiom/convention edit
+[PASS] note names W_defect_identity_unit
+[PASS] note states the normal form
+[PASS] note is self-contained on the normal form
+[PASS] note marks the in-flight stack's audit authority
+[PASS] note states the shape criterion
+[PASS] note localizes the freedom onto the density-to-angle junction
+[PASS] note consolidates onto R-eta sub-admission (ii)
+[PASS] note quotes the radian-bridge primitive residual
+[PASS] note names the angle-native live route
+[PASS] note keeps the owner-governance route explicit
+[PASS] note graph-links authority (MINIMAL_AXIOMS_2026-06-29.md)
+[PASS] note graph-links authority (KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+[PASS] note graph-links authority (SCALE_REFERENCE_PRIMITIVE_NOTE.md)
+[PASS] note graph-links authority (KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
+[PASS] note graph-links authority (REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md)
+[PASS] note graph-links authority (KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
+[PASS] note graph-links authority (BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md)
+[PASS] note graph-links authority (KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
+[PASS] note graph-links authority (PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md)
+[PASS] note includes N1
+[PASS] note includes N2
+[PASS] note includes N3
+[PASS] note includes N4
+[PASS] note includes N5
+[PASS] note includes N6
+[PASS] note includes N7
+[PASS] note includes N8
+[PASS] note avoids overclaim phrase: only route
+[PASS] note avoids overclaim phrase: last route
+[PASS] note avoids overclaim phrase: exhausted
+[PASS] note avoids overclaim phrase: closes the route
+[PASS] note avoids overclaim phrase: no future route
+[PASS] note avoids overclaim phrase: impossible to derive
+[PASS] note avoids overclaim phrase: requires a new ontology axiom
+[PASS] note avoids overclaim phrase: AC_phi_lambda is solved
+[PASS] note avoids overclaim phrase: AC_phi_lambda is closed
+[PASS] note does not use runner PASS as source status
+[PASS] note says not a terminal no-go
+[PASS] note preserves future bridge derivations explicitly
+[PASS] note does not import comparator data
+
+TOTAL: PASS=117 FAIL=0
+RESULT: PASS -- the scanned homogeneous premise surface cannot select the identity unit; the freedom is the R-eta density-read-as-angle junction coefficient; angle-native and rescale-breaking bridge routes remain live.
+
+----- stderr -----
+

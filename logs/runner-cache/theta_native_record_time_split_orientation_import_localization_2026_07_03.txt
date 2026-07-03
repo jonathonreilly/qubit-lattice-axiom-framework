@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/theta_native_record_time_split_orientation_import_localization_2026_07_03.py
+runner_sha256: feb3976f2d605933e1a542b5efdf092bead08a952821c169e18dca276d5a6daf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
+Section A: native carrier split (record-time = direction 0)
+  [PASS] A1 record-time split gives Q = e dot b on integer fluxes
+  [PASS] A2 cochain cup product matches independent flux formula
+         integer cup factor=2; samples=26
+  [PASS] A3 Q has only electric-magnetic cross-pairing
+         nonzero coefficients=[((0, 1), (2, 3), 1), ((0, 2), (1, 3), -1), ((0, 3), (1, 2), 1)]
+Section B: exact transformation law
+  [PASS] B1 cell pullback totals agree with matrix flux action
+         sheet total normalization=16
+  [PASS] B2 spatial inversion flips e and Q while preserving b
+  [PASS] B3 record-order reversal flips e and Q while preserving b
+  [PASS] B4 combined spatial and record reversal preserves Q
+  [PASS] B5 full cubic sweep gives vector and pseudovector laws
+Section C: orientation non-supply
+  [PASS] C1 determinant is similarity-invariant for named cubic structure
+  [PASS] C2 proper cubic subset is stable under improper conjugation
+         proper=24 improper=24
+  [PASS] C3 nearest-neighbor spatial edge set is invariant under improper maps
+         edges=375
+Section D: Cl(3,0) bridge
+  [PASS] D1 orientation volume element supplies the complex unit
+  [PASS] D2 inversion extension matches conjugation model
+  [PASS] D3 inversion is antilinear and flips omega
+  [PASS] D4 single reflection is automorphic and antilinear
+  [PASS] D5 full sweep measures linear versus antilinear parity
+         group size=48
+Section E: seed direction and imported orientation
+  [PASS] E1 alpha-odd SU(3) insertion equals trace-imaginary readout
+  [PASS] E2 conjugation and loop reversal flip the odd holonomy read
+  [PASS] E3 swap-closed ensemble cancels odd part but leaves even part
+         even count=20/20
+  [PASS] E4 imported orientation frame makes the odd pairing constructible
+         nonzero density count=20/20
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

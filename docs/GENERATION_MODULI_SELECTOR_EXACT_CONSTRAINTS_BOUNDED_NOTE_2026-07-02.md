@@ -3,9 +3,12 @@
 **Date:** 2026-07-02
 **Type:** bounded support (exact selector constraints; frontier map)
 **Claim type:** bounded_theorem
-**Status authority:** branch-local science draft only. The independent audit
-lane remains the only authority for audit status; this note sets no audit row,
-moves no ledger row, and closes no wall.
+**Status authority:** independent audit lane only. This source note does not
+set or predict an audit outcome, move an existing ledger row, or close a wall.
+**Paired runner:**
+[`scripts/frontier_generation_moduli_selector_exact_constraints_2026_07_02.py`](../scripts/frontier_generation_moduli_selector_exact_constraints_2026_07_02.py)
+**Cached output:**
+[`logs/runner-cache/frontier_generation_moduli_selector_exact_constraints_2026_07_02.txt`](../logs/runner-cache/frontier_generation_moduli_selector_exact_constraints_2026_07_02.txt)
 
 ## Boundary
 
@@ -20,7 +23,7 @@ frontier; no existing ledger row is claimed to be moved.
 
 ## Load-Bearing Inputs
 
-1. `docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md`.
+1. [`FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md`](FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md).
    Role: finite generation coordinate and carrier-measure boundary. The source
    writes
 
@@ -38,7 +41,7 @@ frontier; no existing ledger row is claimed to be moved.
    It also states the boundary: Record supplies finite additive readout
    coordinates, while the carrier-measure scoring rule remains unselected.
 
-2. `docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md`.
+2. [`OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md`](OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md).
    Role: quoted dictionary-flow maps. The source gives the two explicit
    dictionaries:
 
@@ -47,7 +50,7 @@ frontier; no existing ledger row is claimed to be moved.
    x = r:  r -> r^2,             with finite fixed set {0, 1}.
    ```
 
-3. `docs/MINIMAL_AXIOMS_2026-06-29.md`.
+3. [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md).
    Role: axiom surface and open-gate firewall. The source names the four
    primitives as Lattice, Qubit, Admissibility, and Record. It separates the
    spatial carrier from the internal factor: physical sites are points of
@@ -185,8 +188,7 @@ fixed sets, and their pure iterates add no new fixed points. However, the
 mixed pairwise compositions do add exact fixed points. Therefore this note
 does not claim the stronger statement that arbitrary finite mixed
 compositions add no new points in `[0, infinity)`. The exact finite check
-instead marks that stronger statement as outside the retained content of this
-bounded draft.
+instead marks that stronger statement as outside this bounded note's content.
 
 Conditional consequence. For a sector whose realized modulus `r_sector` is
 not in `{0, 1/2, 1}`, no fixed point of the two quoted single-step maps, nor

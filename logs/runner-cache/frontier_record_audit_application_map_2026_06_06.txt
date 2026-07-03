@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_audit_application_map_2026_06_06.py
-runner_sha256: e85f85d111e0a240f4c57f2abeac7cc59c58ac8acb1a2dadf686676f7895b1df
-timeout_sec: 120
+runner_sha256: 446f5731958de8315b7af02afd37d93d85684dc1e722864f330892d2a391c8a4
+timeout_sec: 300
 exit_code: 0
 elapsed_sec: 0.04
 status: ok
@@ -16,7 +16,7 @@ audit_required_before_effective_retained: true
 A. source availability and anchors
 [PASS] record_unbounded_additivity_schema: source file exists -- docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md
 [PASS] record_unbounded_additivity_schema: anchor phrase present -- arbitrary finite-prefix schema
-[PASS] record_unbounded_additivity_schema: anchor phrase present -- production of those records
+[PASS] record_unbounded_additivity_schema: anchor phrase present -- This row does not derive record production
 [PASS] flavor_det_character_selection: source file exists -- docs/FLAVOR_DET_CHARACTER_SELECTION_AUDIT_READY_2026-06-04.md
 [PASS] flavor_det_character_selection: anchor phrase present -- the exact Record typing theorem supplies the object-type firewall
 [PASS] flavor_det_character_selection: anchor phrase present -- regular additive readouts of positive multiplicative amplitudes

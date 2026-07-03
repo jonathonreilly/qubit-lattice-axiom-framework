@@ -81,9 +81,10 @@ the Tier-A registry.
 
    > "When present, a record locks exactly one local possibility from the
    > subset available at that site under Admissibility; the locked possibility
-   > is invariant under repeated readout. Only records are readable. For any
-   > finite collection of pairwise-disjoint records, scalar readout `I` is
-   > additive, with `I(empty)=0`."
+   > is invariant under repeated readout. Only records are readable. A readout
+   > value is determined by record content alone. For any finite collection of
+   > pairwise-disjoint records, scalar readout `I` is additive, with
+   > `I(empty)=0`."
 
 2. **Retained `SU(3)` character surface**
    ([`GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md),

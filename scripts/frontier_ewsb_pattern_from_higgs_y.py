@@ -208,10 +208,12 @@ for name, t3_value, y_value, expected_q in particles:
 section("E6: source-boundary firewall")
 pinned_note_fragments = [
     (
-        "status line",
-        "**Status:** exact algebraic identity / support theorem on retained\n"
+        "type and scope boundary",
+        "**Type:** bounded_theorem\n"
+        "**Scope boundary:** exact algebraic identity / support theorem on the\n"
         "graph-first surface + cycle 15 (Y_H = +1) + standard SU(2) Lie algebra.\n"
-        "NOT proposed_retained — see CLAIM_STATUS_CERTIFICATE.md.",
+        "NOT proposed_retained — see CLAIM_STATUS_CERTIFICATE.md.\n"
+        "**Audit boundary:** the independent audit lane owns all verdicts.",
     ),
     (
         "authority role",

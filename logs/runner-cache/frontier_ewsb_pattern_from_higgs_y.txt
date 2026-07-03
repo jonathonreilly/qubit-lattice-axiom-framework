@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ewsb_pattern_from_higgs_y.py
-runner_sha256: 04cd207d20e0b468e9e6eb1787b466d581389f2c2be77c8f64cbf1f404d98cb5
+runner_sha256: ce392f7b721c8d37d941314574210877615974c2e45502b628e90e817bbf6bbc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 
@@ -60,7 +60,7 @@ Displayed electric-charge table
 ----------------------------------------------------------------------------------------
 E6: source-boundary firewall
 ----------------------------------------------------------------------------------------
-[PASS] E6 pinned status line ()
+[PASS] E6 pinned type and scope boundary ()
 [PASS] E6 pinned authority role ()
 [PASS] E6 pinned boundary: VEV magnitude ()
 [PASS] E6 pinned boundary: W/Z masses ()

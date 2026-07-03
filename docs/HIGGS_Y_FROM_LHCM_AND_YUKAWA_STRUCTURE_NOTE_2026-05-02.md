@@ -1,10 +1,12 @@
 # Higgs Y_H from LHCM-Derived Hypercharges and Yukawa Structure
 
 **Date:** 2026-05-02
-**Status:** exact algebraic identity / support theorem on retained
+**Type:** bounded_theorem
+**Scope boundary:** exact algebraic identity / support theorem on the
 graph-first surface + LHCM closure trio (cycles 1-3) + Yukawa-structure
 admitted SM convention. NOT proposed_retained — see
 CLAIM_STATUS_CERTIFICATE.md.
+**Audit boundary:** the independent audit lane owns all verdicts.
 **Primary runner:** `scripts/frontier_higgs_y_from_lhcm_yukawa.py` (41 checks)
 **Authority role:** exact-support theorem extending the LHCM atlas
 (cycle 6 / PR #262) to derive the Higgs Y assignment on the SM Yukawa

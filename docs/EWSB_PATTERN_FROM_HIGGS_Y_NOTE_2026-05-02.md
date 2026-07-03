@@ -1,9 +1,11 @@
 # Electroweak Symmetry Breaking Pattern from Higgs Y_H = +1
 
 **Date:** 2026-05-02
-**Status:** exact algebraic identity / support theorem on retained
+**Type:** bounded_theorem
+**Scope boundary:** exact algebraic identity / support theorem on the
 graph-first surface + cycle 15 (Y_H = +1) + standard SU(2) Lie algebra.
 NOT proposed_retained — see CLAIM_STATUS_CERTIFICATE.md.
+**Audit boundary:** the independent audit lane owns all verdicts.
 **Primary runner:** `scripts/frontier_ewsb_pattern_from_higgs_y.py` (36 checks)
 **Authority role:** exact-support theorem deriving the unbroken
 electromagnetic charge `Q = T_3 + Y/2` from the Higgs VEV and `Y_H = +1`.

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_cross_arc_unit_classification_wiring_2026_07_02.py
-runner_sha256: ff8b2effdfc5a618360b17efaefb187bc6c3e59171404f205f9baa55daeacf2c
+runner_sha256: 3062157cfdb870827627c2f7331183e15a97afac9df88cc038835bc6b0a4eacb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.30
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -104,6 +104,11 @@ C: convergence arithmetic spot checks
 ----------------------------------------------------------------------------------------
 D: note discipline
 ----------------------------------------------------------------------------------------
+  [PASS] Type metadata is bounded_theorem
+  [PASS] Claim type metadata is canonical bounded_theorem
+  [PASS] scope boundary blocks value and registry claims
+  [PASS] audit boundary is independent-lane only
+  [PASS] legacy status-authority metadata absent
   [PASS] preserve sentence embedded: arc B's path 2 is answered at the classifi
   [PASS] preserve sentence embedded: the shared remaining frontier is a single 
   [PASS] preserve sentence embedded: this note wires the two arcs together; it 
@@ -123,18 +128,19 @@ D: note discipline
   [PASS] forbidden phrase absent: PDG
   [PASS] forbidden phrase absent: new wall
   [PASS] W_ names are whitelisted -- ['W_cycle_holonomy_value', 'W_defect_identity_unit', 'W_defect_readout_selection']
-  [PASS] markdown link inventory exactly two deps plus runner -- ['../scripts/acphilambda_cross_arc_unit_classification_wiring_2026_07_02.py', 'BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md', 'KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md']
+  [PASS] markdown link inventory exactly three deps plus runner -- ['../scripts/acphilambda_cross_arc_unit_classification_wiring_2026_07_02.py', 'BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md', 'KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md', 'RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md']
   [PASS] no linked in-flight or Arc B note target
   [PASS] audit-grade authorship absent
   [PASS] instruction-language leakage absent from note
   [PASS] no unaudited item linked statement present
+  [PASS] three retained dependency scopes statement present
   [PASS] Audit Consequence names classification-answered pending audit
-  [PASS] note line count in requested band -- lines=153
-  [PASS] runner line count in requested band -- lines=240
+  [PASS] note line count in requested band -- lines=156
+  [PASS] runner line count in requested band -- lines=239
   [PASS] verification line has measured close
 
 ========================================================================================
-TOTAL: PASS=107 FAIL=0
+TOTAL: PASS=113 FAIL=0
 ========================================================================================
 
 ----- stderr -----

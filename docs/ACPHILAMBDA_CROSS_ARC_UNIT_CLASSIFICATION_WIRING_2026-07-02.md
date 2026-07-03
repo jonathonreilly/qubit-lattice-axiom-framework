@@ -1,8 +1,10 @@
 # ACPHILAMBDA Cross-Arc Unit-Classification Wiring
 
 **Date:** 2026-07-02
-**Claim type:** cross-arc wiring / consolidation
-**Status authority:** independent audit lane only. This source note does not set or predict an audit outcome and does not edit audit-owned registry, ledger, queue, or publication-status surfaces.
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem (cross-arc classification-wiring theorem)
+**Scope boundary:** Cross-arc unit-classification wiring only; no derivation of `delta = 2/9`, `Phi = 2/3`, R-eta, a value equation, a terminal no-go, or any registry/publication edit.
+**Audit boundary:** independent audit lane only. This source note does not set or predict an audit outcome and does not edit audit-owned registry, ledger, queue, or publication-status surfaces.
 **Primary runner:** [scripts/acphilambda_cross_arc_unit_classification_wiring_2026_07_02.py](../scripts/acphilambda_cross_arc_unit_classification_wiring_2026_07_02.py)
 
 ## Claim
@@ -17,9 +19,10 @@ In operational terms, this note wires the two arcs together; it derives nothing 
 
 - [docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md) is the retained_no_go radian bridge consumed by both arcs. Ledger scope: "Bounded no-go that the listed retained periodic finite/lattice phase sources and finite-Wilson constructions do not derive the literal 2/9-radian selected-line bridge; the Type-B-to-radian identification remains primitive." File pins used here include "a Type-B rational-to-radian observable law is still missing" and "same Type-B-to-radian map as the remaining primitive."
 - [docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md](BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md) is the retained_bounded circulant surface consumed by both arcs. Ledger scope: "Finite-dimensional algebraic classification on the supplied C3 generation 3-space: Hermitian generators commuting with the cyclic shift C have Brannen circulant form and commute with the supplied pointer S=C+C^2; no derivation of C, S, r, delta, or the coupling values is audited." File pins used here include "circulant form" and "(a, |b|, delta)".
+- [docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md](RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md) is the retained_bounded conservation surface consumed by the relaxation/selection-dynamics row. Ledger scope: "For the supplied C3 pointer S=C+C^2 and the Stage-1 circulant record-preserving generator, singlet/doublet block weights are conserved under H-evolution and the two-sector record preserves doublet-internal coherence." File pin used here includes "the within-sector measure `(r, delta)` is neither produced nor relaxed by the record-preserving dynamics."
 - Arc A is the in-flight unit-classification arc: `PR #4783`, `PR #4788`, `PR #4789`, `PR #4790`, `PR #4794`, `PR #4798`, `PR #4803`, `PR #4831`, `PR #4835`, `PR #4837`, and `PR #4840`. No unaudited/in-flight item is linked; audit statuses pending on all of them.
 - Arc B is the R-eta admission/index arc: `RETA_MAGNITUDE_CONTINUUM_INDEX_THEOREM_2026_06_12` and `RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12`. They are cited as backticked context only, not dependency links.
-- The conservation citation used through `PR #4840` has this ledger scope: "For the supplied C3 pointer S=C+C^2 and the Stage-1 circulant record-preserving generator, singlet/doublet block weights are conserved under H-evolution and the two-sector record preserves doublet-internal coherence."
+- `PR #4840` is context for the Arc A row that quoted the linked conservation surface; it is not a dependency link here.
 
 ## The Wiring Table
 
@@ -93,7 +96,7 @@ The target requirements are therefore:
 - No derivation of `delta = 2/9` or `Phi = 2/3` is supplied.
 - No independent-lane status label, prediction, registry edit, note edit, primitive registration, cache regeneration, or publication-status edit is made.
 - The occurrence lane remains untouched.
-- The two retained dependency scopes remain exactly the ledger scopes quoted above.
+- The three retained dependency scopes remain exactly the ledger scopes quoted above.
 
 ## Audit Consequence If Retained
 
@@ -150,4 +153,4 @@ Run:
 python3 scripts/acphilambda_cross_arc_unit_classification_wiring_2026_07_02.py
 ```
 
-Measured local close: `TOTAL: PASS=107 FAIL=0`.
+Measured local close: `TOTAL: PASS=113 FAIL=0`.

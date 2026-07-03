@@ -19,11 +19,14 @@ CHECK 18: PASS — T3 conclusion: every landed readout row in the classified lan
 CHECK 19: PASS — T4(i): off-diagonal evaluation is w-sensitive and the sensitivity vanishes on the diagonal
 CHECK 20: PASS — T4(ii): cross-family comparison is w-sensitive and same-family calibration restores w-freedom
 CHECK 21: PASS — T4(iii): raw absolute normalization is w-sensitive and scale-reference routing removes it
-CHECK 22: PASS — T5a: note cites the owner-gated #4847 sentence conditionally, without treating it as landed text
+CHECK 22: PASS — T5a: note cites closed/unmerged #4847 only as historical proposal context, not landed or in-flight text
 CHECK 23: PASS — T5b: full set-level closure collapses single-record readout to c times record count
 CHECK 24: PASS — T5c: toy majority availability varies with neighbors and commutes with every two-domain bijection
 CHECK 25: PASS — boundary-denial grep: note says no wall closed
 CHECK 26: PASS — boundary-denial grep: note says it does not reclassify
 CHECK 27: PASS — boundary-denial grep: note marks kappa_EW rows conditional on CTX-match
 CHECK 28: PASS — boundary-denial grep: note marks block16/block11 relationships review-pending
-TOTAL: PASS=28 FAIL=0
+CHECK 29: PASS — audit metadata: canonical Type/Claim type and no legacy status-authority fields
+CHECK 30: PASS — dependency hygiene: direct read dependencies are markdown links for citation-graph seeding
+CHECK 31: PASS — dependency hygiene: closed/unmerged #4847 remains unlinked context, not a graph dependency
+TOTAL: PASS=31 FAIL=0

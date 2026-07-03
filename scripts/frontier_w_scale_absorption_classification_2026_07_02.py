@@ -328,9 +328,11 @@ check(
 
 check(
     "#4847" in note_text
-    and "in-flight owner-gated" in note_lower
+    and "closed/unmerged owner-gated proposal" in note_lower
+    and "historical/proposal context only" in note_lower
+    and "in-flight owner-gated" not in note_lower
     and "Possibilities are distinguished by the supplied algebraic structure alone." in note_text,
-    "T5a: note cites the owner-gated #4847 sentence conditionally, without treating it as landed text",
+    "T5a: note cites closed/unmerged #4847 only as historical proposal context, not landed or in-flight text",
 )
 
 candidate_weights = [
@@ -384,6 +386,34 @@ check(
 check(
     "review-pending" in note_lower,
     "boundary-denial grep: note marks block16/block11 relationships review-pending",
+)
+
+check(
+    "**Type:** bounded_theorem" in note_text
+    and "**Claim type:** bounded_theorem" in note_text
+    and "**Audit boundary:** independent audit lane only" in note_text
+    and "**Scope boundary:**" in note_text
+    and "**Status authority:**" not in note_text
+    and "**Actual current surface status:**" not in note_text,
+    "audit metadata: canonical Type/Claim type and no legacy status-authority fields",
+)
+
+dependency_links = [
+    "[`docs/C2_W_SUPPLIER_READING_FORK_FIXED_POINT_UNIDENTIFIABILITY_BOUNDED_NOTE_2026-07-02.md`](C2_W_SUPPLIER_READING_FORK_FIXED_POINT_UNIDENTIFIABILITY_BOUNDED_NOTE_2026-07-02.md)",
+    "[`docs/EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md`](EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md)",
+    "[`docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md)",
+    "[`docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md`](OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md)",
+    "[`docs/MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)",
+]
+check(
+    all(link in note_text for link in dependency_links),
+    "dependency hygiene: direct read dependencies are markdown links for citation-graph seeding",
+)
+
+check(
+    "Closed/unmerged PR\n#4847 is historical/proposal context only, not a graph dependency." in note_text
+    and "[#4847]" not in note_text,
+    "dependency hygiene: closed/unmerged #4847 remains unlinked context, not a graph dependency",
 )
 
 

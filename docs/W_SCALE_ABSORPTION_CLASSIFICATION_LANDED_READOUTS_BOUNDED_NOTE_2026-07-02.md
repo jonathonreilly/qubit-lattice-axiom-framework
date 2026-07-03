@@ -1,10 +1,16 @@
 # w Scale-Absorption Classification over Landed Readouts
 
 **Date:** 2026-07-02
-**Type:** bounded theorem note
+**Type:** bounded_theorem
 **Claim type:** bounded_theorem
-**Status authority:** independent audit lane only. This source note writes no audit-lane decision, sets no status, and forecasts no later decision.
-**Actual current surface status:** bounded classification result over the named landed-readout class; block16/block11 relationships are review-pending.
+**Scope boundary:** Bounded classification result over the named landed-readout
+class only; no wall/gate is closed, no CTX-match is claimed, no `w`
+reclassification is made, no reading-exclusion closure is made from closed
+proposal PR #4847, and no axiom, primitive, policy, registry, audit, or
+publication surface is edited.
+**Audit boundary:** independent audit lane only. This source note writes no
+audit-lane decision, sets no audit status, forecasts no later decision, and
+derives no effective status.
 **Primary runner:** [`scripts/frontier_w_scale_absorption_classification_2026_07_02.py`](../scripts/frontier_w_scale_absorption_classification_2026_07_02.py)
 **Runner output:** [`outputs/frontier_w_scale_absorption_classification_2026_07_02.txt`](../outputs/frontier_w_scale_absorption_classification_2026_07_02.txt)
 
@@ -13,10 +19,13 @@
 No wall closed. This note does not close the `kappa_EW` wall, CTX-match, any generation-sector gate, or any owner-governed axiom surface.
 The `kappa_EW` rows are conditional on CTX-match, and the generation rows are conditional on the landed chain's flow-selection premise.
 This note edits no registry and does not reclassify `w`.
-PR #4847 is cited only as an in-flight owner-gated axiom PR; its quoted sentence is conditional until that owner-gated text lands.
+PR #4847 is cited only as a closed/unmerged owner-gated proposal; its quoted
+sentence is historical/proposal context only, not landed text and not an
+in-flight dependency.
 The block16/block11 relationships are review-pending, and the audit lane owns status.
-Nothing here edits axioms, policy, `.claude`, audit data, pack files, PRs, or registry surfaces.
-[checks 25-28]
+This source note and runner edit no axiom, primitive, policy, registry, audit,
+or publication surface.
+[checks 25-31]
 
 ## Purpose
 
@@ -45,8 +54,11 @@ The scale-reference primitive says it is a units conversion, not a physics axiom
 The following context is used as supervisor-supplied context rather than as a read dependency.
 First, landed charged-lepton readouts have the chain shape: lepton masses enter landed results as mass ratios plus one absolute scale calibrated through the scale-reference primitive.
 The Koide-shape functional is degree-0 homogeneous in the masses; with `m_i = y_i^2`, it is `Q(y) = sum(y_i^2) / (sum(y_i))^2`, up to a fixed rational normalization.
-Second, PR #4847 is in-flight and owner-gated; the supplied conditional sentence is "Possibilities are distinguished by the supplied algebraic structure alone."
-This note cites that sentence only conditionally.
+Second, PR #4847 is a closed/unmerged owner-gated proposal; the supplied
+proposal sentence is "Possibilities are distinguished by the supplied algebraic
+structure alone."
+This note cites that sentence only as historical/proposal context. It is not a
+landed premise and is not a live dependency.
 Third, the inherited two-cell setup is `I = u x_A + v x_B`, with `w = v/u` modulo overall scale, and flow-selected states have `x_A = x_B`.
 
 ## T1 - Multi-Readout Degeneration
@@ -144,15 +156,18 @@ This triple is the entire remaining physical content of the missing `w` supplier
 It is the `W_readout_coupling` gate stated operationally:
 off-diagonal access, cross-family comparison without common calibration, or unrouted absolute normalization.
 
-## T5 - Reading-Exclusion Status without an Inconsistency Overclaim
+## T5 - Reading-Exclusion Context without an Inconsistency Overclaim
 
 T5 has two conditional exclusion facts and one prominent steelman.
 
-First, under the in-flight owner-gated #4847 sentence, set-level exchange relabelings are not presentation-preserving.
-The conditional sentence is:
+First, under the closed/unmerged owner-gated #4847 proposal sentence, set-level
+exchange relabelings would not be presentation-preserving if equivalent
+owner-approved text landed in the future.
+The proposal sentence is:
 "Possibilities are distinguished by the supplied algebraic structure alone."
-If that sentence lands, the block16 READING-X forcing leg is excluded by axiom text.
-This is conditional on the owner-gated PR landing.
+Because #4847 is closed/unmerged, this note makes no live exclusion closure.
+The hypothetical consequence is conditional on equivalent owner-approved text
+landing independently.
 [check 22]
 
 Second, full set-level level-set closure has a counting-collapse consequence.
@@ -192,19 +207,22 @@ This note edits no registry.
 - Does not close any wall.
 - Does not reclassify `w`.
 - Does not claim CTX-match.
-- Does not turn the in-flight #4847 sentence into landed axiom text.
+- Does not turn the closed/unmerged #4847 proposal sentence into landed axiom
+  text or a live dependency.
 - Does not make an unconditional inconsistency claim against set-level readings.
 - Does not derive a new generation-sector value.
 - Does not supply a new readout context, weighting, selector, probability rule, or bridge.
-- Does not edit axioms, primitives, policy, registries, audit data, `.claude`, pack files, PRs, or status surfaces.
+- Does not edit axiom, primitive, policy, registry, audit, or publication
+  surfaces.
 - Does not remove the T4 residual gate.
 - Does not treat review-pending block16/block11 relationships as settled.
 
-## Dependencies
+## Dependencies And Context
 
 Direct read dependencies are the five files listed in the supplied surface section.
 The parent block16 runner was consulted only for output style and check-line convention.
-Supervisor-supplied context is labeled in its own section.
+Supervisor-supplied context is labeled in its own section. Closed/unmerged PR
+#4847 is historical/proposal context only, not a graph dependency.
 No other repo files are used as mathematical premises here.
 
 ## No-Promotion Statement

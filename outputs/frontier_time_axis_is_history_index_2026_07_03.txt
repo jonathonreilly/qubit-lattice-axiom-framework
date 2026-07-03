@@ -1,0 +1,41 @@
+========================================================================
+frontier_time_axis_is_history_index_2026_07_03
+exact-arithmetic runner (int/tuple/set/dict only; NO floats)
+bounded theorem (T1-T3) + bounded support (T4-T5)
+record nesting is CONDITIONAL on PR #4874 (records are permanent)
+========================================================================
+-- T1: the stacked representation (4th direction IS the history index)
+-- T2: record nesting marks the index direction (cond. on #4874 + realized sector)
+-- T3: second-clock exclusion is type-level (record layer never needed the premise)
+-- T4: reconciliation -- operator-scaffolding symmetry vs record-content asymmetry
+-- T5: consequence + complete residue enumeration (the #1 refutation failure mode)
+------------------------------------------------------------------------
+CHECK 01: PASS -- T1 stack construction exact: S[(x,t)] = h_t at x, no phantom cells
+CHECK 02: PASS -- T1 slice-extraction round-trip: slice_time(S,t) == h_t for all t
+CHECK 03: PASS -- T1 full round-trip: reconstruct(S) == (h_0,...,h_T)
+CHECK 04: PASS -- T1 4th-axis coordinate set == {0..T}: the 4th direction is the history index
+CHECK 05: PASS -- T2a index slices share one site set (WINDOW of Z^3): same-site identification is native
+CHECK 06: PASS -- T2a record nesting rec(h_t) subset rec(h_{t+1}) all t (permanence, CONDITIONAL on #4874)
+CHECK 07: PASS -- T2c event-bearing: at least one strict record inclusion (>= one event)
+CHECK 08: PASS -- T2a permanence falsifier: value-flip history is rejected by nesting (value-invariance enforced)
+CHECK 09: PASS -- T2b spatial slices (x1=0 vs x1=1) have disjoint Z^3 site supports
+CHECK 10: PASS -- T2b raw spatial record sets disjoint => containment undefined without translation identification
+CHECK 11: PASS -- T2b under translation identification, x1-slice record sets are incomparable (nesting fails)
+CHECK 12: PASS -- T2b under translation identification, x2-slice record sets are incomparable (nesting fails)
+CHECK 13: PASS -- T2b under translation identification, x3-slice record sets are incomparable (nesting fails)
+CHECK 14: PASS -- T2c static history: every direction trivially monotone (marking non-unique) => realized-sector conditioning
+CHECK 15: PASS -- T2 event-bearing witness: history index is the UNIQUE record-nesting direction
+CHECK 16: PASS -- T3 grid admits record nesting along i (all fixed j)
+CHECK 17: PASS -- T3 grid admits record nesting along j (all fixed i)
+CHECK 18: PASS -- T3 both grid directions non-degenerate (a strict record step in each)
+CHECK 19: PASS -- T3 incomparable off-diagonal cells => record-order not total => not a single sequence
+CHECK 20: PASS -- T3 degenerate-j grid collapses to a single chain along i (one clock remains)
+CHECK 21: PASS -- T4 operator scaffolding (NN adjacency) is sigma-invariant under t<->x1 swap (residual-0 analog)
+CHECK 22: PASS -- T4 record content is NOT sigma-invariant: operator-axis symmetry does not reach record content
+CHECK 23: PASS -- T4 same cube: record nesting holds along time-axis, fails along swapped spatial axis (no contradiction)
+CHECK 24: PASS -- T4 B-AXIS decomposition covers {1a,1b,2,3}; axis-selection CONDITIONAL/OPEN, B-AXIS.3 UNCHANGED
+CHECK 25: PASS -- T5 residue enumeration == required set exactly (no residue dropped or invented)
+CHECK 26: PASS -- T5 residue count == 11
+CHECK 27: PASS -- T5 critical flags: representation bridge OPEN; #4874 in-flight; nothing adopted; audit lane owns statuses
+------------------------------------------------------------------------
+TOTAL: PASS=27 FAIL=0

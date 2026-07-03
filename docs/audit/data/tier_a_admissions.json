@@ -73,7 +73,7 @@
   "reclassified_primitives": {
     "minimal_axioms_record": {
       "label": "Record axiom",
-      "statement": "fixed locking of exactly one available possibility at a site, with scalar-valued record readout finitely additive over finite pairwise-disjoint record collections; registered inside the explicitly approved minimal_axioms node, not as a Tier-A admitted derivation target",
+      "statement": "fixed locking of exactly one available possibility at a site, record permanence, and scalar-valued record readout finitely additive over finite pairwise-disjoint record collections; registered inside the explicitly approved minimal_axioms node, not as a Tier-A admitted derivation target",
       "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
       "prior_no_go_portfolio_context": [
         "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
@@ -83,7 +83,7 @@
         "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
         "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21"
       ],
-      "boundary": "does not supply readout-context selection, decomposition, K/CPT structure, sector-generation rule, weighting, normalization, probability, occurrence rule, update law, measurement/decoherence dynamics, time metric, within-sector data, occupancy rule, P2/modulus, log-det, source/action, scale, local observability, or arbitrary observable identification"
+      "boundary": "does not supply readout-context selection, decomposition, K/CPT structure, sector-generation rule, weighting, normalization, probability, occurrence rule, update law, measurement/decoherence dynamics, record-production dynamics, physical persistence dynamics, time metric, within-sector data, occupancy rule, P2/modulus, log-det, source/action, scale, local observability, or arbitrary observable identification"
     },
     "scale_reference_primitive": {
       "label": "scale-reference primitive",

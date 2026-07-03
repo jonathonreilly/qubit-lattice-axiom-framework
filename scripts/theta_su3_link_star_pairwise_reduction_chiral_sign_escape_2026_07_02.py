@@ -3,7 +3,8 @@
 star, three evenness identities (dagger, bar, transpose), the polarized
 Cayley-Hamilton reduction with its det-polarization term, local rigidity of
 pair data (full-rank Jacobian), and the transpose sheet carrying only the
-chiral sign — the unique multilinear escape, invisible to real weights.
+chiral sign — an exhibited multilinear escape in this witness, invisible to
+the scoped real weights.
 
 Paired note:
 docs/THETA_SU3_LINK_STAR_PAIRWISE_REDUCTION_LOCAL_RIGIDITY_TRANSPOSE_SHEET_AND_CHIRAL_SIGN_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-02.md
@@ -393,8 +394,8 @@ check("D3 the sheets are genuinely distinct diagonal orbits: |d| > 0.1 and"
 Gsheet0 = star(AA, BB, CC)
 GsheetT = star(AA.T, BB.T, CC.T)
 check("D4 the star takes the SAME value on both sheets (transpose-evenness"
-      " on the rigidity witness): the chiral sign is the unique multilinear"
-      " escape and real weights cannot read it",
+      " on the rigidity witness): the chiral sign is the exhibited"
+      " multilinear escape here and the scoped real weights cannot read it",
       abs(GsheetT - Gsheet0) < 1e-12,
       f"G = {Gsheet0.real:.10f} on both sheets")
 

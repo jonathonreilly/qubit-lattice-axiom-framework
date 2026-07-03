@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/theta_su3_link_star_pairwise_reduction_chiral_sign_escape_2026_07_02.py
-runner_sha256: a9f944413053c6ba948618d9146e2041cc4469bcd4a02b6445c9c4b816d12f3a
+runner_sha256: 0bcc3b4b258a9ff4f28d0c5c230efc5ef8ab02a7080b8ee4caae3983ed7117ca
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.34
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 Section A: projector machinery ground
@@ -31,10 +31,10 @@ Section D: pair-data rigidity and the transpose sheet
   [PASS] D1 local rigidity: the 10x8 Jacobian of the pair-data map on C has full rank 8 — no continuous pair-data-preserving deformation of C exists at fixed (A, B)
          smallest singular value = 0.2041
   [PASS] D2 the simultaneous-transpose triple preserves ALL 18 pair data exactly
-         max deviation = 3.33e-16
+         max deviation = 2.22e-16
   [PASS] D3 the sheets are genuinely distinct diagonal orbits: |d| > 0.1 and d flips sign on the transpose sheet (d is a diagonal-conjugation invariant)
          d = -1.348524+0.664649j
-  [PASS] D4 the star takes the SAME value on both sheets (transpose-evenness on the rigidity witness): the chiral sign is the unique multilinear escape and real weights cannot read it
+  [PASS] D4 the star takes the SAME value on both sheets (transpose-evenness on the rigidity witness): the chiral sign is the exhibited multilinear escape here and the scoped real weights cannot read it
          G = 0.8745504222 on both sheets
 TOTAL: PASS=17 FAIL=0
 

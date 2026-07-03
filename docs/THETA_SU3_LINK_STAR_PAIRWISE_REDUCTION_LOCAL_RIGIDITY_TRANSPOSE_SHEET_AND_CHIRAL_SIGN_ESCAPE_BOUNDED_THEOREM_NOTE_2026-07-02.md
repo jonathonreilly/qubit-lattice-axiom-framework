@@ -1,6 +1,7 @@
-# SU(3) Link Stars: Pair Data Are Locally Rigid (Full-Rank Jacobian), the Known Global Degeneracy Is the Transpose Sheet Carrying Only the Chiral Sign, and Real-Weight Stars Are Even Across It — the SU(3) Star Reduces to Pairwise Data in the Local-Plus-Sheet Sense and the Chiral Sign Is the Unique Multilinear Escape (Bounded Theorem)
+# SU(3) Link Stars: Pair Data Are Locally Rigid (Full-Rank Jacobian), the Known Global Degeneracy Is the Transpose Sheet Carrying Only the Chiral Sign, and Real-Weight Stars Are Even Across It — the SU(3) Star Reduces to Pairwise Data in the Local-Plus-Sheet Sense and the Chiral Sign Is an Exhibited Multilinear Escape (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Type:** bounded_theorem
 **Claim type:** bounded_theorem (exact finite identities and certificates
 plus one locality-graded rigidity statement; not a terminal no-go, not a
 discharge of the theta admission).
@@ -14,10 +15,9 @@ re-grade any Tier-A admission, or claim Strong-CP closure.
 
 ## Question
 
-Block 6 of the theta campaign (PR #4869, in-flight; landed companions PRs
-#4784/#4796/#4811, in-flight PRs #4832/#4858) proved that SU(2) link stars
-of real class weights reduce to separate + pairwise composite classes, and
-named the open remainder:
+Earlier theta-wall work left a context question about whether the SU(2)
+pairwise-reduction pattern for real class weights survives for SU(3) link
+stars:
 
 ```text
 (i-b''-a) SU(3) star reduction: does the even invariant ring of SU(3)
@@ -25,9 +25,10 @@ named the open remainder:
           (the SU(2) trace identity does not transfer)
 ```
 
-Question answered here: what is the exact reduction structure of SU(3) link
-stars — which identities transfer, which are new, what carries the
-beyond-pairwise content, and what can real-weight gluing never read?
+Question answered here: what is the exact local-plus-transpose-sheet
+reduction structure of SU(3) link stars — which identities transfer, which
+are new, what carries the beyond-pairwise content in the witness, and what
+the scoped real-weight star class cannot read?
 
 ## Answer
 
@@ -41,9 +42,9 @@ development; the guard is now a permanent check).
 
 1. **Three evenness identities (exact).** The SU(3) star of real class
    weights is invariant under simultaneous dagger, under simultaneous
-   entrywise conjugation (**bar** — the SU(3) outer flip; new at this
-   block), and hence under simultaneous transpose (their composition). All
-   three verified to 1e-12 at the projector level (runner B3-B5).
+   entrywise conjugation (**bar** — the SU(3) outer flip tested here), and
+   hence under simultaneous transpose (their composition). All three
+   verified to 1e-12 at the projector level (runner B3-B5).
 
 2. **The polarized Cayley-Hamilton reduction transfers WITH a new term.**
    For 3 x 3 matrices,
@@ -87,16 +88,13 @@ development; the guard is now a permanent check).
 **Consequence (the (i-b''-a) answer, graded).** Locally (full-rank
 Jacobian) and across the one exhibited global sheet (transpose), the SU(3)
 link star is a function of separate + pairwise composite classes: the
-pairwise data that pair gluing already supplies (block 6, T1) suffice to
-evaluate it. The unique multilinear escape is the chiral SIGN — invisible
-to real-weight gluing at any rank by the evenness identities. This is the
-**fifth** independent convergence on residual (ii'): after block 3 (pairing
-reduction), block 4 (shift-slot obstruction), block 6 (SU(2) evenness), and
-block 5's licensing analysis, the SU(3) analysis again localizes the theta
-datum in the phase-type insertion class — now with the sharpened statement
-that what the phase insertion must read is precisely the chiral sign
-`sgn`-content that all real-weight observables of the gluing calculus
-provably drop.
+pairwise data supplied by the real-weight gluing calculus suffice to
+evaluate it in that scope. The exhibited multilinear escape in this witness
+is the chiral SIGN, which the scoped real-weight star observables drop by
+the evenness identities. This gives an additional bounded convergence on
+residual (ii'): the phase-type insertion class must be able to read the
+chiral sign `sgn`-content that the real-weight observables tested here do
+not read.
 
 Grading is explicit: the evenness identities, the CH identity, the parity
 table, the sheet exhibits, and the Jacobian certificate are exact; the
@@ -108,8 +106,8 @@ search found none, but that is evidence, not proof — see Non-claims).
 1. **Record axiom, current clauses used** (approved axiom node
    `minimal_axioms`,
    [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md); the memo
-   is under active clarification on main today — the two sentences consumed
-   here are quoted from the current tip):
+   is under active clarification on main; the two sentences consumed here are
+   quoted from the current tip):
 
    > "Only records are readable. A readout value is determined by record
    > content alone."
@@ -117,20 +115,19 @@ search found none, but that is evidence, not proof — see Non-claims).
    > "A law privileges no states. Its domain is a supplied condition, and at
    > every state where the condition holds it gives exactly one answer."
 
-   Used as licensing discipline only (the frame/readout analysis of blocks
-   5-6 carries over verbatim); record occurrence is not claimed.
+   Used as licensing discipline only; record occurrence is not claimed.
 
-2. **Campaign chain** (landed PRs #4784/#4796/#4811; in-flight PRs
-   #4832/#4858/#4869; quote-refresh repair PR #4864): the star functional,
-   the pair-gluing composites, and the frame dichotomy are those blocks'
-   objects; every identity used here is earned inline by this runner. No
-   landed note is consumed as a premise.
+2. **Theta-wall chronology labels** (context only): the star functional,
+   pair-gluing composites, and frame-dichotomy language are the surrounding
+   campaign objects; every identity used here is earned inline by this
+   runner. No sibling wall note is consumed as a premise.
 
-3. **Tier-A theta registry text** (docs/audit/data/tier_a_admissions.json,
+3. **Tier-A theta registry text**
+   ([`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json),
    gauge side): the residual is "localized to the multi-plaquette /
    large-gauge-winding account"; link stars are that account's local
-   structure and this note settles their SU(3) reduction question in the
-   graded sense above.
+   structure and this note answers their SU(3) reduction question in the
+   graded sense above. The registry is context, not a proof premise.
 
 No external comparator, measured value, fitted number, Monte Carlo, or
 continuum input enters anywhere.
@@ -149,8 +146,8 @@ are exact traces against these projectors.
 **T2 (evenness; runner B1-B5).** Real-weight SU(3) stars are real,
 diagonal-conjugation invariant, and even under simultaneous dagger, bar,
 and transpose. (Dagger and bar are one-line change-of-variables identities
-— `V -> V^dag`, `V -> conj(V)` — valid for any compact group and any star
-size; transpose is their composition.)
+— `V -> V^dag`, `V -> conj(V)` — for the projector-defined star class
+checked here; transpose is their composition.)
 
 **T3 (invariant algebra; runner C1-C3).** The polarized Cayley-Hamilton
 identity with det-polarization term; transpose-invariance of the
@@ -167,20 +164,20 @@ across it.
 ```text
 W_theta_Q_context (current decomposition):
   (i-a)     defect closure on the abelianized multi-plaquette dual
-            (block 3; unchanged);
-  (i-b''-a) settled in the graded sense: SU(3) stars reduce to pairwise
+            (context label; unchanged here);
+  (i-b''-a) answered in the graded sense: SU(3) stars reduce to pairwise
             composite data locally (exact Jacobian certificate) and across
             the exhibited transpose sheet (exact evenness); the epsilon
             channel contributes but its beyond-pairwise part is projected
             out by evenness. Open sliver: a PROOF that no further global
             sheet exists (evidence only).
-  (i-b''-b) sector-level closed-surface statement (block 6; unchanged);
-  (ii')     the phase-type F u F insertion — FIVE independent arrows now
-            point at it, with the sharpened target: the insertion must
-            read exactly the chiral sign content that every real-weight
-            gluing observable provably drops.
+  (i-b''-b) sector-level closed-surface statement (context label;
+            unchanged here);
+  (ii')     the phase-type F u F insertion — this note adds a scoped arrow:
+            the insertion must read the chiral sign content that the
+            real-weight star observables tested here drop.
 
-W_theta_bar_assembly: unchanged (in-flight PR #4768).
+W_theta_bar_assembly: out of scope here.
 ```
 
 ## Identification checkpoint (what objects these are)
@@ -194,7 +191,7 @@ and what they provably cannot read — not a registration claim.
 ## Relation to the RP-half no-go (route independence)
 
 The retained no-go row
-strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16
+[`STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md`](STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md)
 forecloses only "the RP half-square identity alone cannot derive a
 no-bare-theta-slot exclusion." No reflection positivity appears here; the
 evenness results locate the theta-capable insertion class (constructive
@@ -204,11 +201,11 @@ direction), they forbid nothing about theta.
 
 | Prior state | After this note |
 |---|---|
-| (i-b''-a) — open: does the SU(3) even ring reduce to pairwise data? | settled in the graded local-plus-sheet sense: full-rank Jacobian rigidity + transpose sheet + evenness across it |
+| (i-b''-a) — open: does the SU(3) even ring reduce to pairwise data? | answered in the graded local-plus-sheet sense: full-rank Jacobian rigidity + transpose sheet + evenness across it |
 | SU(2) trace identity does not transfer | the transferring identity found: polarized CH3 WITH the det-polarization (epsilon) term; the epsilon channel is nonzero yet evenness projects out its beyond-pairwise part |
 | bar (outer) flip unexamined | new exact evenness identity: real-weight stars are bar-even; with dagger this gives transpose-evenness |
-| chiral datum status at rank 2 | complete flip-parity table: every real-linear component odd; the SIGN is the unique multilinear escape, unreadable by real weights at any rank |
-| (ii') motivation count | five independent arrows; sharpened target: the insertion must read exactly the chiral sign |
+| chiral datum status in this SU(3) witness | complete flip-parity table: every real-linear component odd; the SIGN is an exhibited multilinear escape, unreadable by the scoped real-weight star class |
+| (ii') motivation count | additional scoped arrow; sharpened target: the insertion must read the chiral sign |
 
 ## What remains
 
@@ -248,7 +245,7 @@ tested generic point (exact rank certificate).
 
 | Route to the chiral/beyond-pairwise data | Standing here |
 |---|---|
-| real-class-weight star observables | EXCLUDED for every real-linear component of d (evenness x parity table, exact) |
+| real-class-weight star observables | EXCLUDED for every real-linear component of d in this star class (evenness x parity table, exact) |
 | epsilon-channel extraction from real stars | its beyond-pairwise part is evenness-projected out (B7 + T3); only the pairwise shadow survives |
 | pair composites via gluing | SUFFICIENT for star evaluation locally + across the transpose sheet |
 | phase-type (complex) insertion | OPEN — residual (ii'), sharpened: must read the chiral sign |
@@ -276,8 +273,8 @@ explicitly in the runner (both orientations, all three pairs).
 
 ### N4 — Residual matching
 
-Block 6's (i-b''-a) is consumed and settled in the graded sense, with the
-global-sheet sliver named (i-b''-a'). The five-arrow convergence on (ii')
+The SU(3) (i-b''-a) remainder is answered in the graded sense, with the
+global-sheet sliver named (i-b''-a'). The added scoped convergence on (ii')
 matches and sharpens the campaign decomposition; the Tier-A registry's
 multi-plaquette localization is respected throughout.
 
@@ -291,9 +288,9 @@ local-plus-sheet, never absolutely; live paths are named.
 
 Live paths: prove (i-b''-a') by invariant-theoretic fiber analysis (the
 pair-data map's global fiber structure); extend to quadratic-order even
-data; build (i-b''-b) on block 6's loop data; construct the phase-type
-insertion (ii') and verify it reads d's sign; (i-a); the assembly side
-(PR #4768).
+data; build the sector-level closed-surface statement from its own loop
+data; construct the phase-type insertion (ii') and verify it reads d's
+sign; (i-a); the assembly side.
 
 ### N7 — Steelman
 
@@ -304,16 +301,16 @@ is computed; the global statement is explicitly downgraded to evidence.
 (2) "The projector method is overkill for five nonzero channels." It is
 also exact, integration-free, and self-validating — and its guards caught
 two real design errors (a sign, a rank miscount) that quadrature noise
-would have masked. (3) "The chiral-sign story repeats block 6." Block 6
-proved it for SU(2) where the star reduces by a trace identity; here the
+would have masked. (3) "The chiral-sign story repeats the earlier SU(2)
+star story." That earlier case reduced by a trace identity; here the
 identity fails, the epsilon channel enters, and the reduction survives by a
 different mechanism (rigidity + evenness) — the convergence is the point,
 not repetition. All three absorbed into scope.
 
 ### N8 — Cross-cycle echo
 
-Cumulative guards (blocks 1-6) plus this block's additions: do not attempt
-to read any real-linear component of the chiral datum from real-weight
+Cumulative wall guards plus this note's additions: do not attempt to read
+any real-linear component of the chiral datum from the scoped real-weight
 SU(3) gluing observables (evenness + parity, exact); do not cite the
 transpose sheet as the proven-unique global degeneracy (named sliver); and
 check conjugate-representation generator signs against exponentiation

@@ -246,9 +246,10 @@ On the retained `SU(3)` character surface:
 5. **Record registration (interface match, bounded).** `{P_0, P_1, P_2}` is a
    finite family of mutually exclusive alternatives with `sum_k P_k = I`. That
    is exactly the shape the Record axiom registers: a record, when present,
-   locks exactly one available alternative, invariant under repeated readout,
-   and the scalar readout is additive over finite pairwise-disjoint record
-   collections — carrying the mod-3-additive sector label over disjoint
+   locks exactly one admissible alternative, records are permanent, and the
+   scalar readout is determined by record content and additive over finite
+   pairwise-disjoint record collections — carrying the mod-3-additive sector
+   label over disjoint
    regions. The weights `Z_k` are nonnegative, normalized, conjugation-paired,
    and finite-sector — the interface shape the in-flight theta-sector
    Born-measure bridge (PR #4766) consumes from a supplied sharp context.

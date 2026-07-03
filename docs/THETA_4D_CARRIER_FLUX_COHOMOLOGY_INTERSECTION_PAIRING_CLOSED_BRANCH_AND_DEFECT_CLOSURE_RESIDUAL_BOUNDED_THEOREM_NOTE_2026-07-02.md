@@ -185,10 +185,10 @@ On `T^4_L`:
 3. Sharpness and Record-interface shape: the flux class is constant on each
    branch class (a partition of the closed-branch sum), the decomposition is
    a finite family in any bounded-flux truncation, and the closed-surface
-   class label is invariant under all local branch moves — the
-   repeat-readout-invariant, lock-one-alternative shape of the Record
-   axiom's registration clause. (Interface match only; record occurrence is
-   not claimed.)
+   class label is invariant under all local branch moves — the permanent,
+   content-determined, lock-one-alternative shape of the Record axiom's
+   registration clause. (Interface match only; record occurrence is not
+   claimed.)
 
 ## Theorem 2 (the intersection pairing is the theta charge)
 
@@ -426,8 +426,8 @@ and Theorem 4.1 makes that unavoidable rather than optional: the note's
 point is that the carrier residual IS the defect question. (3) "Calling the
 flux classes a sector-record context invites the realist slip." The
 identification checkpoint refuses any physical-Q identification; only the
-interface shape (sharp lock, repeat-readout invariance, additive readout
-arithmetic) is matched, on a witness surface. All three objections are
+interface shape (sharp lock, record permanence, content-determined additive
+readout arithmetic) is matched, on a witness surface. All three objections are
 absorbed into scope.
 
 ### N8 — Cross-cycle echo

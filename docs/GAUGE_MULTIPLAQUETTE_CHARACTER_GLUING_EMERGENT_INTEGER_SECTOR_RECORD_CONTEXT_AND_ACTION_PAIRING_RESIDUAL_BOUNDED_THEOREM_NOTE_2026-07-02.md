@@ -171,9 +171,10 @@ truncation drift (|n| <= 30 vs 60): 0 at double precision;  tail mass at
 
 **Record registration (interface match, bounded).** Each finite truncation is
 a finite family of mutually exclusive alternatives summing to the identity —
-the shape the Record axiom registers (lock exactly one, invariant under
-repeated readout); the matched label's repeat-readout invariance is exactly
-the superselection behavior of the glued surface. Record occurrence is not
+the shape the Record axiom registers (lock exactly one admissible alternative,
+records are permanent, and readout is determined by record content); the
+matched label's stability is exactly the superselection behavior of the glued
+surface. Record occurrence is not
 derived and not claimed; the decomposition is derived here, not supplied by
 Record.
 

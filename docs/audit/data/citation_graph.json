@@ -56698,11 +56698,23 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+      "to": "no_per_site_chirality_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
     },
     {
       "from": "repo.front_door_status",
       "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "ew_current_matching_rule_open_gate_note_2026-05-03"
     },
     {
       "from": "repo.front_door_status",
@@ -56715,18 +56727,6 @@
     {
       "from": "repo.front_door_status",
       "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "hopping_bilinear_hermiticity_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -57708,7 +57708,7 @@
         "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "dc62ef51548b2dd7a65e23e37568a6a58595eba16b17d5a0c92f914ebaea78a2",
+      "note_hash": "8656fead47fbd5ef52b42b0932f24a08835f8b43b8148618176fb2a5ead7bfd7",
       "path": "docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md",
       "runner_path": "scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py",
       "title": "AC_phi_lambda Defect Identity-Unit Rescale Obstruction And Junction Localization"
@@ -57994,7 +57994,7 @@
         "adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "df328a9683652718bb53fac4a8fba7cb29605ca6b935bb18d73d904ee135e8eb",
+      "note_hash": "31bad5852146ac0e87dbe9f33c906cbec855c1b3cd0414cddf6c13b0443c9a18",
       "path": "docs/ACTION_FAMILY_CHARACTER_SEMIGROUP_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md",
       "runner_path": "scripts/frontier_action_family_character_semigroup_discriminator_2026_07_02.py",
       "title": "Action-Family Character Semigroup Discriminator \u2014 Bounded Note"
@@ -59267,7 +59267,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bb08be69a2b5b64653057b2e9e045551435d4aedc4a94734ac4e86b81a4e4446",
+      "note_hash": "85d7c0642f92376427e5cc83a249a8f213b5d816c0059cea35f1a76f6ada98f7",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Audit Loop"
@@ -59410,7 +59410,7 @@
         "ai_methodology.skills.physics-loop.references.long-running-execution"
       ],
       "helper_runner_paths": [],
-      "note_hash": "91dee267473a93a643a143c3c0867fec59525a25bee68b75c34e4012b5829b3a",
+      "note_hash": "6d0952390241e8e2c077ede3c809d7df3315fbc568bdc8c4ce22b90044cbf869",
       "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
       "runner_path": null,
       "title": "Physics Loop"
@@ -59437,7 +59437,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9446729a42d5b7e808575e860aaf428bb34063a2a485c521a0537e733be69395",
+      "note_hash": "b98cb858e9c15f1a0499feee0fbe1ee82abe70910de587d2c8c0d8e56144b09c",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"
@@ -62669,7 +62669,7 @@
         "realized_state_primitive"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9eacb38453087fb143eb8a965cc159e871144cc9acdfff63a5c2d7c122669e26",
+      "note_hash": "934afd07f584300306cbf85be73ece69a161ea9691efa9db6539dd6c0cf63f23",
       "path": "docs/C1_FRAME_COMPONENT_FROM_RECORD_REGISTRABILITY_PARTIAL_BOUNDED_NOTE_2026-07-02.md",
       "runner_path": "scripts/frontier_c1_frame_component_from_record_registrability_partial_2026_07_02.py",
       "title": "C1 Frame Component From Record Registrability -- Partial Bounded Note"
@@ -78901,7 +78901,7 @@
         "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1020409a3ee3f265d39c55253ce196d6653de96d8ab7693b4e7c25ea8c50da28",
+      "note_hash": "ba6c95882cba6a488519d3920caf0f63b247e90cab7454c158447c5d582b74e1",
       "path": "docs/GAUGE_CENTER_SECTOR_RECORD_CONTEXT_AND_THETA_Q_CHARACTER_GRADING_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-01.md",
       "runner_path": "scripts/gauge_center_sector_record_context_character_grading_obstruction_2026_07_01.py",
       "title": "The Retained Character Surface Carries Exactly One Finite Additive Sector-Record Context \u2014 the Center Z_N Grading \u2014 and No Z-Valued or (for SU(3)) Parity-Valued Refinement: the Theta Q-Context Wall Localizes onto the Multi-Plaquette / Large-Gauge-Winding Account (Bounded Theorem)"
@@ -78947,7 +78947,7 @@
         "record_classical_semigroup_boundary_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f280b8c212731a7e96118fb6569b4bbb3c1fb03b75887797fea41b7016e7ca2f",
+      "note_hash": "74bc998187afd277d10bb46b4c12ce6ce1190e23117bb2bbfa0705cf3721ffe4",
       "path": "docs/GAUGE_LINK_BINARY_REGISTRATION_CAPACITY_STEP_KERNEL_PIN_THEOREM_NOTE_2026-07-02.md",
       "runner_path": "scripts/gauge_link_binary_registration_capacity_step_kernel_pin_2026_07_02.py",
       "title": "Gauge-Link Record Step: Binary Registration Capacity Pins the Native Step Kernel"
@@ -79013,7 +79013,7 @@
         "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8450579cd2950b38181f322d400a83e0173cd8ac81b0e335b873bbc968d0efb1",
+      "note_hash": "0b9a61b3a7fd1a3481b3a66c573f0641310c34e3aba63e9c099a3229dd6872d7",
       "path": "docs/GAUGE_MULTIPLAQUETTE_CHARACTER_GLUING_EMERGENT_INTEGER_SECTOR_RECORD_CONTEXT_AND_ACTION_PAIRING_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md",
       "runner_path": "scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py",
       "title": "Multi-Plaquette Character Gluing Derives the Emergent Integer Sector-Record Context Exactly on the Finite 2D U(1) Surface \u2014 Branch-Datum-Free, With the Theta Pairing Coming From the Action Slot \u2014 and Sharpens the Remaining Theta Q-Context Wall to Action-Level Pairing Selection on the Physical 4D SU(3) Surface (Bounded Theorem)"
@@ -93817,7 +93817,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "70324c45f8473c77118d68879e12618ff8366ecf9d4843ce91094a61dca6bc8a",
+      "note_hash": "7b581f9f475c7bf16a02e664ef48a271d20d0404d8b2b1f7e58bc41ab3d50a24",
       "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
       "runner_path": "scripts/audit_companion_minimal_axioms_clean_base_exact.py",
       "title": "Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)"
@@ -107979,7 +107979,7 @@
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5c7ed5912e1ace8ffd2d06de8ce8d990dc4a66fd3e8afee431522c6c08b3e963",
+      "note_hash": "175c1917451632c2a7641fd21a61bff2ba4dcfd3e1fa9bde53b1af055b9eb631",
       "path": "docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md",
       "runner_path": "scripts/realized_kinetic_branch_conditional_record_registration_2026_07_02.py",
       "title": "Realized Kinetic Branch: Conditional-Record Registration of the Kinetic Branch"
@@ -109232,7 +109232,7 @@
         "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5bea212c62053a6c3e1edd5ae106d4a9764b7f1b7d3c4d8a03b4ea7257f81d07",
+      "note_hash": "70cce2d832dc0760771fa8406c340de004f3da08a371f8c75bc4c2ad8da4ef1b",
       "path": "docs/repo/CONTROLLED_VOCABULARY.md",
       "runner_path": null,
       "title": "Controlled Vocabulary"
@@ -109243,17 +109243,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+        "no_per_site_chirality_theorem_note_2026-05-02",
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "ew_current_matching_rule_open_gate_note_2026-05-03",
         "cl3_taste_generation_theorem",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
-        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
-        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
-        "hopping_bilinear_hermiticity_theorem_note_2026-05-02"
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "761cc51e0463bfc9c5559ef45c040bb47287f1b18f5bec4ffe443461eb0913cc",
+      "note_hash": "a628e3ab32c887f2368b403be134c1bba3b861a733f95e276388ea89a1ad2fad",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -117027,7 +117027,7 @@
         "theta_gauge_substrate_no_winding_carrier_emergent_q_bridge_bounded_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "85af49b64cb0b2d5f6948ba1cefd215742b843793b503698c0f96840ed9ce3b5",
+      "note_hash": "008c3298314909b903b535ef40324c7793eec548dc6a329e25744494632df06d",
       "path": "docs/THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md",
       "runner_path": "scripts/theta_4d_carrier_flux_cohomology_intersection_pairing_2026_07_02.py",
       "title": "The 4D Carrier Template: on Finite T^4 the Emergent Sector Labels Are the Six Flux-Cohomology Integers and the Theta Charge Is Their Cross-Plane Intersection Pairing, Exact on the Closed-Branch Abelian Surface \u2014 Defect (Monopole) Closure Is the Carrier Residual, and the Center Dual Alone Carries Only the Mod-N Pairing (Bounded Theorem)"
@@ -117058,7 +117058,7 @@
         "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "59f6eb83370e74c1fb51807255a45c60e7752999cecc3901647bf2b1e851e9a4",
+      "note_hash": "9037caf7f4aca69343e97c49c417e2f6458f319e65a285421d2d6fa56dc1fe11",
       "path": "docs/THETA_CARTAN_VALUED_CROSS_PLANE_PAIRING_DIAGONAL_WEYL_FRAME_THEOREMS_AND_TRIALITY_FRACTIONAL_VALUES_BOUNDED_THEOREM_NOTE_2026-07-02.md",
       "runner_path": "scripts/theta_cartan_valued_cross_plane_pairing_weyl_frame_theorems_2026_07_02.py",
       "title": "The Cartan-Valued Cross-Plane Pairing: Diagonal-Weyl-Invariant Joint-Orbit Data, Provably Underdetermined by Per-Plane Weyl Orbits; Values in (1/3)Z with the Fractional Part Exactly the Mod-3 Center Pairing and an Integer Odd Witness on the Center-Trivial Subsector \u2014 the Frame Residual Sharpens to Relative-Frame Correlation Across the 4D Gluing (Bounded Theorem)"

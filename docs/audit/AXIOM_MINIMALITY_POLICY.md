@@ -76,14 +76,16 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
 
 Recorded explicitly approved axiom updates:
 
-- **2026-07-03 -- Record permanence restoration: "records are permanent and
-  invariant under repeated readout."** The Record axiom in
-  `docs/MINIMAL_AXIOMS_2026-06-29.md` is edited in place (owner-approved,
-  2026-07-03): the clause "the locked possibility is invariant under repeated
-  readout" now reads "records are permanent and invariant under repeated
-  readout." This restores the durability content of the 2026-06-05 lineage
-  ("durable realized-outcome registration") that was dropped in the reset
-  rewording. Historical record of the approval only.
+- **2026-07-03 -- Record permanence restoration: "records are permanent."**
+  The Record axiom in `docs/MINIMAL_AXIOMS_2026-06-29.md` is edited in place
+  (owner-approved, 2026-07-03): the clause "the locked possibility is
+  invariant under repeated readout" now reads "records are permanent." This
+  restores the durability content of the 2026-06-05 lineage ("durable
+  realized-outcome registration") that was dropped in the reset rewording.
+  The removed readout-invariance clause is derivable from permanence plus
+  the axiom's content-determination sentence and is carried as a proven
+  lemma in the derivation notes, per the Qualification's primitive-content
+  rule. Historical record of the approval only.
 
 - **2026-07-02 -- Lattice site-distinction clause: site distinctions are
   structural; rotations named about each site.** The Lattice axiom in

@@ -1,8 +1,13 @@
 # Flavor Z=det Fermionic-Statistics Locator
 
 **Date:** 2026-06-04
+**Type:** open_gate
 **Claim type:** open_gate
-**Actual current-surface status:** bounded-support
+**Status authority:** independent audit lane only. This source note sets source
+claim metadata only; it does not set, predict, or edit any audit outcome.
+**Current source boundary:** bounded support inside the abstract
+two-candidate determinant-side scope; physical spin-statistics selection
+remains open.
 **Trace class:** direct_blocker_closure
 **Reachability to target:** partially closes the missing determinant-side
 bridge inside the abstract two-candidate Grassmann-vs-bosonic finite algebra
@@ -11,7 +16,11 @@ ladders, or Jordan-Wigner realizability by themselves select physical
 cross-site CAR/Grassmann statistics".
 **Bare retained allowed:** false
 **Audit required before effective status change:** true
-**Runner:** `scripts/flavor_zdet_fermionic_statistics_admission_2026_06_04.py` (SCORECARD PASS=11).
+**Primary runner:** [`scripts/flavor_zdet_fermionic_statistics_admission_2026_06_04.py`](../scripts/flavor_zdet_fermionic_statistics_admission_2026_06_04.py)
+**Runner cache:** [`logs/runner-cache/flavor_zdet_fermionic_statistics_admission_2026_06_04.txt`](../logs/runner-cache/flavor_zdet_fermionic_statistics_admission_2026_06_04.txt)
+**No-promotion statement:** This source note creates no promotion, no registry
+edit, no audit verdict, and no downstream status change; status remains owned
+by the independent audit lane.
 
 ## Closed Packet
 
@@ -25,10 +34,10 @@ The finite packet verifies three sides of the gate:
 
 1. If Grassmann/CAR matter variables are supplied, the finite Berezin Gaussian
    gives the determinant.
-2. On the 2026-06-07 repair branch, the determinant side is no longer merely
+2. In the 2026-06-07 repair, the determinant side is no longer merely
    a free import in the **abstract two-candidate** scope: it consumes the
    retained finite occupation-parity `Z_2` grading row and the
-   retained-bounded abstract Grassmann forcing bridge, which compares the
+   audited abstract Grassmann forcing bridge, which compares the
    Grassmann and bosonic one-pair-per-site candidates and supplies the
    finite Berezin determinant compatibility.
 3. The tested finite hard-core/tensor-product carrier data do not by themselves
@@ -41,7 +50,7 @@ admission.
 ## 2026-06-07 Bridge Repair
 
 The audit blocker for this row was that the determinant-amplitude input was
-treated as a supplied Grassmann/CAR premise. This branch repairs the
+treated as a supplied Grassmann/CAR premise. This repair scopes the
 determinant side only at the abstract finite-algebra level by citing and
 checking two one-hop audited dependencies:
 
@@ -50,7 +59,7 @@ checking two one-hop audited dependencies:
   occupation/Fock space. It does not by itself prove a physical
   fermion-statistics selector or superselection rule.
 - [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
-  supplies the retained-bounded abstract Grassmann forcing bridge: within the
+  supplies the audited abstract Grassmann forcing bridge: within the
   explicitly named two-candidate comparison, the Grassmann candidate matches
   the per-site dimension-two readout and gives `det(M)`, while the bosonic
   candidate has the wrong per-site Fock dimension and the wrong scalar
@@ -59,7 +68,7 @@ checking two one-hop audited dependencies:
 Composed with the existing finite checks here, those dependencies close the
 following narrow statement:
 
-> In the retained-bounded abstract two-candidate matter-generator scope, the
+> In the audited abstract two-candidate matter-generator scope, the
 > determinant-amplitude side has one-hop audited support: the Grassmann
 > candidate carries the finite `det(M)` readout, while the ordinary
 > hard-core/tensor and bosonic comparator routes do not supply that same
@@ -91,8 +100,8 @@ cross-site CAR/Grassmann relations from a deeper baseline axiom.
    odd/even grading. In the runner, the dressed generators are `Z_2`-odd,
    anticommute across the two tested sites, and their bilinear is `Z_2`-even.
 
-6. **Retained-bounded Grassmann forcing supplies the abstract determinant
-   bridge.** The existing retained-bounded bridge supplies the
+6. **Audited Grassmann forcing supplies the abstract determinant
+   bridge.** The existing audited bridge supplies the
    two-candidate Grassmann-vs-bosonic comparison and the finite Berezin
    determinant compatibility in the abstract scope.
 
@@ -109,10 +118,37 @@ This is not a physical spin-statistics theorem and not a baseline derivation
 of FS. It says:
 
 - the abstract two-candidate determinant side has bounded one-hop support via
-  retained and retained-bounded audited dependencies;
+  audited dependencies;
 - the tested finite routes do not force a physical-lattice FS selector; and
 - downstream log-det consumers still need their own dependency/audit review
   before any effective status changes.
+
+## 2026-06-13 Downstream Boundary Alignment
+
+The determinant side repaired here is separate from the Koide
+occupancy/slot-degree selector. The downstream occupancy-independence theorem
+[`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+shows that the Record/Koide bookkeeping surface still leaves two consistent
+occupancy models:
+
+- sector occupancy (`Z_d = 2 pi/g`, `r = 1`); and
+- orbit occupancy (`Z_d = pi/g`, `r = 1/2`).
+
+So this row can support the abstract determinant-amplitude side without
+pretending that determinant statistics selects the Koide weight. The updated
+runner checks this downstream boundary directly. It does not adopt orbit
+occupancy, does not derive physical spin-statistics, and does not edit audit
+status.
+
+## Dependencies
+
+- [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md)
+  (audited finite `Z_2` grading support; not a physical selector by itself).
+- [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+  (audited abstract two-candidate Grassmann forcing bridge).
+- [`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+  (downstream occupancy/slot-degree boundary; bounded-theorem source, not an
+  audit verdict).
 
 ## No-Go Discipline Gate
 
@@ -123,7 +159,7 @@ The no-go applies only to the finite routes represented in the runner:
 | On-site Clifford/local dimension | Does not force cross-site CAR. |
 | Ordinary tensor-product ladders | Commute across sites. |
 | Jordan-Wigner | Realizes CAR after a generator/string choice; not a selector. |
-| Abstract determinant-character mathematics | Works in the retained-bounded two-candidate Grassmann scope. |
+| Abstract determinant-character mathematics | Works in the audited two-candidate Grassmann scope. |
 | Koide chirality transport | Separate internal-generation residual. |
 | Continuum spin-statistics | Not tested here and left open. |
 

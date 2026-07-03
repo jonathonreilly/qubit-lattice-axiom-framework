@@ -127,17 +127,22 @@ def main() -> int:
     section("6. Source note sanity")
     doc = Path("docs/RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md")
     text = doc.read_text(encoding="utf-8")
+    text_flat = " ".join(text.split())
     markers = [
-        "actual_current_surface_status: bounded-support",
-        "trace_class: negative_route_pruning",
-        "conditional_surface_status:",
+        "claim_type_author_hint: no_go",
+        "**Claim type:** no_go",
+        "bounded negative route-pruning certificate",
+        "Trace class: negative route pruning",
         "Does not derive physical time",
         "Does not select a generation/Koide dial setting.",
-        "audit_required_before_effective_retained: true",
+        "This row is not a positive time/rate theorem.",
+        "It is not a production theorem",
+        "makes no retained-status proposal",
+        "does not use bare retained language",
     ]
     check("source note exists", doc.exists(), str(doc))
     for marker in markers:
-        check(f"note contains marker: {marker}", marker in text)
+        check(f"note contains marker: {marker}", marker in text or marker in text_flat)
     forbidden_wording = [
         ("time closure", "physical time is " + "derived"),
         ("rate closure", "rates are " + "derived"),

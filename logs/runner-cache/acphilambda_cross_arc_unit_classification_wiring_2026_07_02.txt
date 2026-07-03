@@ -1,0 +1,147 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_cross_arc_unit_classification_wiring_2026_07_02.py
+runner_sha256: 3062157cfdb870827627c2f7331183e15a97afac9df88cc038835bc6b0a4eacb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+========================================================================================
+ACPHILAMBDA CROSS-ARC UNIT-CLASSIFICATION WIRING CHECK
+========================================================================================
+
+----------------------------------------------------------------------------------------
+A: dependency files, ledger authority, and Arc B pins
+----------------------------------------------------------------------------------------
+  [PASS] exists: docs/ACPHILAMBDA_CROSS_ARC_UNIT_CLASSIFICATION_WIRING_2026-07-02.md
+  [PASS] exists: scripts/acphilambda_cross_arc_unit_classification_wiring_2026_07_02.py
+  [PASS] exists: docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md
+  [PASS] exists: docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
+  [PASS] exists: docs/RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12.md
+  [PASS] exists: docs/RETA_MAGNITUDE_IS_CONTINUUM_INDEX_THEOREM_LATTICE_INDEX_IS_INTEGER_BOUNDED_NOTE_2026-06-12.md
+  [PASS] exists: docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md
+  [PASS] exists: docs/audit/data/audit_ledger.json
+  [PASS] KOIDE ledger status retained_no_go
+  [PASS] BRANNEN ledger status retained_bounded
+  [PASS] conservation ledger status retained_bounded
+  [PASS] KOIDE ledger scope quoted exactly
+  [PASS] BRANNEN ledger scope quoted exactly
+  [PASS] conservation ledger scope quoted exactly
+  [PASS] KOIDE source pins present
+  [PASS] BRANNEN source pins present
+  [PASS] true I7 path-2 sentence in Arc B algebra note
+  [PASS] true I7 path-2 sentence quoted in wiring note
+  [PASS] genuine admission phrasing in Arc B algebra note
+  [PASS] genuine admission phrasing quoted in wiring note
+  [PASS] magnitude face pin: lattice operator index is integer
+  [PASS] magnitude face pin: not `2/9`
+  [PASS] magnitude face pin: geometric rotation number
+  [PASS] magnitude face pin: continuum Atiyah-Bott
+  [PASS] Arc B basename backticked: `RETA_MAGNITUDE_CONTINUUM_INDEX_THEOREM_2026_06_12`
+  [PASS] Arc B basename backticked: `RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12`
+
+----------------------------------------------------------------------------------------
+B: wiring table and source-pin integrity
+----------------------------------------------------------------------------------------
+  [PASS] wiring table has 15 rows -- rows=15
+  [PASS] each table row carries Source pin text
+  [PASS] Where cell includes backticked PR #4783
+  [PASS] Where cell includes backticked PR #4788
+  [PASS] Where cell includes backticked PR #4794
+  [PASS] Where cell includes backticked PR #4831
+  [PASS] Where cell includes backticked PR #4835
+  [PASS] Where cell includes backticked PR #4837
+  [PASS] Where cell includes backticked PR #4840
+  [PASS] source contains pin: determinant class
+  [PASS] note contains pin: determinant class
+  [PASS] source contains pin: homogeneous clauses
+  [PASS] note contains pin: homogeneous clauses
+  [PASS] source contains pin: count normalization
+  [PASS] note contains pin: count normalization
+  [PASS] source contains pin: angular rigidity
+  [PASS] note contains pin: angular rigidity
+  [PASS] source contains pin: vacuous convention
+  [PASS] note contains pin: vacuous convention
+  [PASS] source contains pin: Born normalization
+  [PASS] note contains pin: Born normalization
+  [PASS] source contains pin: cross-lane transport
+  [PASS] note contains pin: cross-lane transport
+  [PASS] source contains pin: ratio bypass
+  [PASS] note contains pin: ratio bypass
+  [PASS] source contains pin: flux constant term
+  [PASS] note contains pin: flux constant term
+  [PASS] source contains pin: canonical spectral members
+  [PASS] note contains pin: canonical spectral members
+  [PASS] source contains pin: scalar K-blindness
+  [PASS] note contains pin: scalar K-blindness
+  [PASS] source contains pin: staggered K-blindness
+  [PASS] note contains pin: staggered K-blindness
+  [PASS] source contains pin: torsion phases
+  [PASS] note contains pin: torsion phases
+  [PASS] source contains pin: radian qpi
+  [PASS] note contains pin: radian qpi
+  [PASS] source contains pin: doubler cancellation
+  [PASS] note contains pin: doubler cancellation
+  [PASS] source contains pin: retained row from PR
+  [PASS] note contains pin: retained row from PR
+  [PASS] source contains pin: retained row file
+  [PASS] note contains pin: retained row file
+  [PASS] source contains pin: K-odd target kill
+  [PASS] note contains pin: K-odd target kill
+  [PASS] source contains pin: tuned b tell
+  [PASS] note contains pin: tuned b tell
+  [PASS] source contains pin: pi-free strobe
+  [PASS] note contains pin: pi-free strobe
+
+----------------------------------------------------------------------------------------
+C: convergence arithmetic spot checks
+----------------------------------------------------------------------------------------
+  [PASS] 9/2 = 1/(2/9)
+  [PASS] sin(2/3) and cos(2/3) are both nonzero
+  [PASS] (omega-1)(omega^2-1) = 3 in Q[omega] -- (Fraction(3, 1), Fraction(0, 1))
+  [PASS] L3 = 2/9 = (1/3)(2/3)
+
+----------------------------------------------------------------------------------------
+D: note discipline
+----------------------------------------------------------------------------------------
+  [PASS] Type metadata is bounded_theorem
+  [PASS] Claim type metadata is canonical bounded_theorem
+  [PASS] scope boundary blocks value and registry claims
+  [PASS] audit boundary is independent-lane only
+  [PASS] legacy status-authority metadata absent
+  [PASS] preserve sentence embedded: arc B's path 2 is answered at the classifi
+  [PASS] preserve sentence embedded: the shared remaining frontier is a single 
+  [PASS] preserve sentence embedded: this note wires the two arcs together; it 
+  [PASS] preserve sentence embedded: not a terminal no-go
+  [PASS] N1 present
+  [PASS] N2 present
+  [PASS] N3 present
+  [PASS] N4 present
+  [PASS] N5 present
+  [PASS] N6 present
+  [PASS] N7 present
+  [PASS] N8 present
+  [PASS] forbidden phrase absent: only route
+  [PASS] forbidden phrase absent: last route
+  [PASS] forbidden phrase absent: exhausted
+  [PASS] forbidden phrase absent: closes the route
+  [PASS] forbidden phrase absent: PDG
+  [PASS] forbidden phrase absent: new wall
+  [PASS] W_ names are whitelisted -- ['W_cycle_holonomy_value', 'W_defect_identity_unit', 'W_defect_readout_selection']
+  [PASS] markdown link inventory exactly three deps plus runner -- ['../scripts/acphilambda_cross_arc_unit_classification_wiring_2026_07_02.py', 'BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md', 'KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md', 'RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md']
+  [PASS] no linked in-flight or Arc B note target
+  [PASS] audit-grade authorship absent
+  [PASS] instruction-language leakage absent from note
+  [PASS] no unaudited item linked statement present
+  [PASS] three retained dependency scopes statement present
+  [PASS] Audit Consequence names classification-answered pending audit
+  [PASS] note line count in requested band -- lines=156
+  [PASS] runner line count in requested band -- lines=239
+  [PASS] verification line has measured close
+
+========================================================================================
+TOTAL: PASS=113 FAIL=0
+========================================================================================
+
+----- stderr -----
+

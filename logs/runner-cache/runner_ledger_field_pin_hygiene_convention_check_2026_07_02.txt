@@ -1,0 +1,80 @@
+===== runner cache v1 =====
+runner: scripts/runner_ledger_field_pin_hygiene_convention_check_2026_07_02.py
+runner_sha256: b4907705e4177adc591d6719f48c738e935f077a9cbfe63e4ab95b9798348e3f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.73
+status: ok
+----- stdout -----
+runner ledger-field pin hygiene convention check (2026-07-02)
+[NOTE] PASS: note contains: **Type:** meta
+[NOTE] PASS: note contains: **Claim type:** meta
+[NOTE] PASS: note contains: does not
+[NOTE] PASS: note contains: Convention adoption is audit-decided
+[NOTE] PASS: note contains: (H1) No equality pins on audit-authored field content
+[NOTE] PASS: note contains: (H2) Status freshness checks use the retained-grade membership set
+[NOTE] PASS: note contains: (H3) Report-only ledger reads are unrestricted
+[NOTE] PASS: note contains: (H4) Ledger-census snapshots need a maintenance pattern
+[NOTE] PASS: note contains: Sets, promotes, or changes **no** row's effective status
+[NOTE] PASS: note contains: a question to the owner
+[C1] PASS: named field-content pin present in scripts/frontier_thales_right_angle_narrow.py
+[C1] PASS: note names the instance scripts/frontier_thales_right_angle_narrow.py
+[C1] PASS: named field-content pin present in scripts/frontier_half_plane_chart_equivalence_narrow.py
+[C1] PASS: note names the instance scripts/frontier_half_plane_chart_equivalence_narrow.py
+[C1] PASS: named field-content pin present in scripts/frontier_ckm_magnitudes_structural_counts_narrow.py
+[C1] PASS: note names the instance scripts/frontier_ckm_magnitudes_structural_counts_narrow.py
+[C1] PASS: named field-content pin present in scripts/frontier_z3_conjugate_support_trichotomy_narrow.py
+[C1] PASS: note names the instance scripts/frontier_z3_conjugate_support_trichotomy_narrow.py
+[C2] PASS: extensivity runner pins an exact open_gate state
+[C2] PASS: extensivity runner pins an exact audited_conditional state
+[C2] PASS: note names the exact-state instance
+[EX] PASS: lh_doublet companion uses the retained-grade membership set
+[EX] PASS: GL(F) selection check is the documented tier-exact case
+[EX] PASS: dirac_weyl companion carries the realigned retained-grade set
+  census: 89 ledger-reading scripts with equality-pin patterns (context, not pinned)
+    - scripts/audit_companion_ckm_bernoulli_two_ninths_exact.py
+    - scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py
+    - scripts/audit_companion_dm_neutrino_cascade_geometry_exact.py
+    - scripts/audit_companion_dm_neutrino_dirac_bridge_exact.py
+    - scripts/audit_companion_dm_neutrino_odd_circulant_zero_law_exact.py
+    - scripts/audit_companion_dm_neutrino_z3_character_exact.py
+    - scripts/audit_companion_dm_neutrino_z3_circulant_nogo_exact.py
+    - scripts/audit_companion_dm_selector_first_shoulder_exit_threshold_support_criticality_hygiene_2026_06_04.py
+    - scripts/audit_companion_g_bare_forced_by_ward_rep_b_record_axiom_invariance_2026_06_04.py
+    - scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py
+    - scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py
+    - scripts/audit_companion_hubble_lane5_c1_a2_action_unit_metrology_obstruction_hygiene_2026_06_04.py
+    - scripts/audit_companion_teleportation_resource_from_poisson_criticality_bump_hygiene_2026_06_04.py
+    - scripts/audit_companion_yt_schur_stability_gap_criticality_hygiene_2026_06_04.py
+    - scripts/audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05.py
+    - scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py
+    - scripts/codex_audit_runner.py
+    - scripts/fixed_gbare_interacting_existence_ir_target_reframing_2026_06_08.py
+    - scripts/flavor_asymmetry_identification_principled_not_forced_2026_05_31.py
+    - scripts/flavor_center_trace_closed_2026_05_30.py
+    - scripts/flavor_emergent_chirality_no_transport_2026_05_30.py
+    - scripts/flavor_frontier_form_vs_value_2026_05_29.py
+    - scripts/flavor_gauge_representation_generation_uniform_core_2026_06_18.py
+    - scripts/flavor_generation_space_bridge_reduces_to_open_gate_2026_05_31.py
+    - scripts/flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31.py
+    - scripts/flavor_zdet_fermionic_statistics_admission_2026_06_04.py
+    - scripts/fractional_instanton_action_core_split_2026_06_18.py
+    - scripts/frontier_ckm_magnitudes_structural_counts_narrow.py
+    - scripts/frontier_claude_complex_action_grown_companion_terminal_synthesis.py
+    - scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py
+    - scripts/frontier_finite_rank_source_to_metric_theorem.py
+    - scripts/frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.py
+    - scripts/frontier_gravity_premise4_refractive_index_from_dispersion.py
+    - scripts/frontier_gravity_scalar_shift_sign_normalization_2026_06_18.py
+    - scripts/frontier_half_plane_chart_equivalence_narrow.py
+    - scripts/frontier_hierarchy_b3_staggered_supplier_cascade_2026_06_17.py
+    - scripts/frontier_koide_aps_block_by_block_forcing.py
+    - scripts/frontier_koide_cyclic_wilson_3_response_narrow.py
+    - scripts/frontier_koide_dimensionless_objection_closure_review.py
+    - scripts/frontier_observable_principle_p1_bridge_extensivity_primitive.py
+    ... and 49 more
+[CEN] PASS: every named instance appears in the live census
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

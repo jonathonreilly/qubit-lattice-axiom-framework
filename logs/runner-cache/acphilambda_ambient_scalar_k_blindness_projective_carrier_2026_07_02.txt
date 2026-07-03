@@ -1,0 +1,113 @@
+
+========================================================================================
+PART A - sources and pins
+========================================================================================
+[PASS] note exists
+[PASS] Dirac dependency exists
+[PASS] Dirac dependency contains per-site pin
+[PASS] Dirac dependency contains proper-cubic pin
+[PASS] Dirac dependency contains claim_scope row
+[PASS] note quotes required ledger claim scope
+[PASS] axioms memo exists
+[PASS] axioms memo contains Lattice sentence
+[PASS] note quotes Lattice sentence inline
+
+========================================================================================
+PART B - T8-1 scalar K-blindness
+========================================================================================
+[PASS] cycle matrix has order three
+[PASS] R squared is R dagger
+[PASS] generic O is Hermitian
+[PASS] Tr(O R^2) equals conjugate Tr(O R)
+[PASS] real symmetric trace is R/R2 equal
+[PASS] seeded real-symmetric numpy instance is blind -- gap=0.000e+00
+[PASS] Z_4^3 dense heat trace R/R2 equality at t=0.3 -- gap=0.000e+00
+[PASS] Z_4^3 dense heat trace R/R2 equality at t=1.0 -- gap=0.000e+00
+
+========================================================================================
+PART C - T8-2 isotypic corollary
+========================================================================================
+[PASS] I_1 equals I_2 when T1=T2 is real
+[PASS] complex T1 discriminator separates isotypes
+[PASS] complex discriminator value is exact
+
+========================================================================================
+PART D - T8-3 complex-hopping rejector
+========================================================================================
+[PASS] phased loop O is Hermitian
+[PASS] flux trace has nonzero imaginary part -- Im=-sin(7/10)
+[PASS] flux traces remain conjugate-paired
+[PASS] flux rejector breaks scalar equality
+[PASS] flux rejector distinguishes conjugate sectors
+
+========================================================================================
+PART E - T8-4 projective spin lift
+========================================================================================
+[PASS] closed form equals exp-axis form
+[PASS] U is unitary
+[PASS] U^3 is minus identity
+[PASS] Tr U equals one
+[PASS] Tr U^2 equals minus one
+[PASS] projective inverse relation U^2=-U^-1
+[PASS] rotation axis is fixed
+[PASS] U sends sigma_x to sigma_y
+[PASS] U sends sigma_y to sigma_z
+[PASS] U sends sigma_z to sigma_x
+[PASS] generic spinor O is Hermitian
+[PASS] spinor sign trace identity holds
+[PASS] unlifted scalar cycle has equal traces
+[PASS] lift traces are unequal
+[PASS] wrong C4-type lift fails Z_6 relation
+
+========================================================================================
+PART F - note discipline
+========================================================================================
+[PASS] required sentence present: the scalar ambient equivariant surface is 
+[PASS] required sentence embedded: the scalar ambient equivariant surface is 
+[PASS] required sentence present: the spin-1/2 lift of the `C3[111]` rotatio
+[PASS] required sentence embedded: the spin-1/2 lift of the `C3[111]` rotatio
+[PASS] required sentence present: this note names the carrier requirement; i
+[PASS] required sentence embedded: this note names the carrier requirement; i
+[PASS] required sentence present: not a terminal no-go
+[PASS] required sentence embedded: not a terminal no-go
+[PASS] forbidden token absent: only route
+[PASS] forbidden token absent: last route
+[PASS] forbidden token absent: exhausted
+[PASS] forbidden token absent: closes the route
+[PASS] forbidden token absent: PDG
+[PASS] forbidden token absent: new wall
+[PASS] W_ names are whitelisted -- W_cycle_holonomy_value, W_defect_identity_unit, W_defect_readout_selection
+[PASS] exactly one markdown dependency target -- ['STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md']
+[PASS] primary runner is the only script link -- ['../scripts/acphilambda_ambient_scalar_k_blindness_projective_carrier_2026_07_02.py']
+[PASS] axioms memo is not a markdown target
+[PASS] in-flight basename is backticked: ACPHILAMBDA_DEFECT_IDENTITY_
+[PASS] in-flight basename is backticked: ACPHILAMBDA_REGISTRABLE_CYCL
+[PASS] in-flight basename is backticked: ACPHILAMBDA_REAL_HOLONOMY_LO
+[PASS] in-flight basename is backticked: ACPHILAMBDA_CYCLE_FLUX_TRANS
+[PASS] in-flight basename is backticked: ACPHILAMBDA_FLUXED_RING_SPEC
+[PASS] in-flight basename is backticked: ACPHILAMBDA_POINTER_LABELED_
+[PASS] in-flight basename is backticked: ACPHILAMBDA_AMBIENT_EQUIVARI
+[PASS] spec leakage absent: PRESERVE VERBATIM
+[PASS] spec leakage absent: MUST BE ABSENT
+[PASS] spec leakage absent: Acceptance contract
+[PASS] spec leakage absent: ANTI-FABRICATION
+[PASS] spec leakage absent: Files to produce
+[PASS] spec leakage absent: runner greps
+[PASS] spec leakage absent: spec-carrier
+[PASS] note declares canonical claim type
+[PASS] note avoids source-side audit verdict
+[PASS] dependency appears with quoted ledger scope
+[PASS] No-Go gate contains N1:
+[PASS] No-Go gate contains N2:
+[PASS] No-Go gate contains N3:
+[PASS] No-Go gate contains N4:
+[PASS] No-Go gate contains N5:
+[PASS] No-Go gate contains N6:
+[PASS] No-Go gate contains N7:
+[PASS] No-Go gate contains N8:
+[PASS] note contains ## Verification
+[PASS] note contains ## Non-Claims
+[PASS] note contains ## Routing Consequence
+[PASS] verification records measured total placeholder or count
+
+TOTAL: PASS=87 FAIL=0

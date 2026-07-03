@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3637 |
-| Applied audit verdicts | 1351 |
-| Retained-grade rows, including boxed decorations | 1279 |
+| Applied audit verdicts | 1352 |
+| Retained-grade rows, including boxed decorations | 1280 |
 | Retained positive theorems | 190 |
 | Retained no-go rows | 193 |
-| Retained bounded rows | 851 |
+| Retained bounded rows | 852 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
 | Unaudited rows | 1961 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1973 |
+| Total pending rows | 1972 |
 | Ready rows | 148 |
 | Cycle-break targets | 14 |
-| Critical pending | 415 |
+| Critical pending | 414 |
 | High pending | 292 |
 | Medium pending | 524 |
 | Leaf pending | 742 |
 
 Next ready rows by queue order:
 
-- [`observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18`](../../docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md) - critical; audit_in_progress
+- [`observable_principle_from_axiom_note`](../../docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md) - critical; unaudited
 - [`staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md) - critical; unaudited
 - [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
 - [`ew_current_matching_rule_open_gate_note_2026-05-03`](../../docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md) - critical; unaudited

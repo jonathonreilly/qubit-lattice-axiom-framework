@@ -30,8 +30,8 @@ ARROW_DYNAMICS_RE = re.compile(
 )
 
 EXPECTED_SUBCOUNTS = {
-    "flow_or_thermal_stability": 91,
-    "arrow_or_dynamics_bridge": 56,
+    "flow_or_thermal_stability": 106,
+    "arrow_or_dynamics_bridge": 63,
 }
 EXPECTED_STABILITY_ROWS = sum(EXPECTED_SUBCOUNTS.values())
 
@@ -119,7 +119,7 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
         [
-            "stability_or_dynamics_selector` | 147",
+            "stability_or_dynamics_selector` | 169",
             "stable settings into selected dials",
             "Does not turn stable settings into selected dials.",
         ],

@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_source_domain_sign_support_typecast_remainder_2026_06_21.py
+runner_sha256: ea24ee8853d8423a90201b96cffff1fd53c6d57ddca08f1a9df32ca479a8bc82
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+Route-2 source-domain sign support with typecast remainder
+==============================================================================
+PASS: QUARK_ROUTE2_SOURCE_DOMAIN_SIGN_SUPPORT_TYPECAST_REMAINDER_NOTE_2026-06-21.md exists -- docs/QUARK_ROUTE2_SOURCE_DOMAIN_SIGN_SUPPORT_TYPECAST_REMAINDER_NOTE_2026-06-21.md
+PASS: ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md exists -- docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md
+PASS: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists -- docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: RCONN_DERIVED_NOTE.md exists -- docs/RCONN_DERIVED_NOTE.md
+PASS: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md
+PASS: RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md exists -- docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md
+
+A. Source anchors
+------------------------------------------------------------------------------
+PASS: new note records sign support and typecast remainder
+PASS: positivity note gives one-sided rho_E bound
+PASS: positivity note classifies rho_E as readout direction
+PASS: naturality note supplies granted T-side values
+PASS: readout note supplies c_TE endpoint algebra
+PASS: Rconn note supplies F_adj as color-domain support
+PASS: source-domain note keeps Rconn-to-center as missing bridge
+PASS: kappa note keeps physical selector separate
+
+B. Exact sign support
+------------------------------------------------------------------------------
+PASS: rho_E=-11/2 is in positive-lift domain -- q_E=1/12
+PASS: rho_E=-11/2 gives negative c_TE -- c_TE=-20
+PASS: rho_E=-1 is in positive-lift domain -- q_E=5/6
+PASS: rho_E=-1 gives negative c_TE -- c_TE=-2
+PASS: rho_E=0 is in positive-lift domain -- q_E=1
+PASS: rho_E=0 gives negative c_TE -- c_TE=-5/3
+PASS: rho_E=1 is in positive-lift domain -- q_E=7/6
+PASS: rho_E=1 gives negative c_TE -- c_TE=-10/7
+PASS: rho_E=21/4 is in positive-lift domain -- q_E=15/8
+PASS: rho_E=21/4 gives negative c_TE -- c_TE=-8/9
+PASS: rho_E=12 is in positive-lift domain -- q_E=3
+PASS: rho_E=12 gives negative c_TE -- c_TE=-5/9
+PASS: q_T=5/6 is positive
+PASS: s_TE=-2 is negative
+PASS: positive-lift sign theorem holds for all rho_E > -6
+
+C. Magnitude/typecast remainder
+------------------------------------------------------------------------------
+PASS: F_adj magnitude is 8/9 -- 8/9
+PASS: target value has |c_TE|=F_adj -- -8/9
+PASS: rho_E=-1 has negative sign but not F_adj magnitude -- |c_TE|=2
+PASS: rho_E=0 has negative sign but not F_adj magnitude -- |c_TE|=5/3
+PASS: rho_E=1 has negative sign but not F_adj magnitude -- |c_TE|=10/7
+PASS: rho_E=12 has negative sign but not F_adj magnitude -- |c_TE|=5/9
+PASS: |c_TE|=F_adj solves rho_E=21/4 in the positive-lift family -- 21/4
+PASS: sign support alone leaves multiple admissible rho_E values
+
+D. Boundary inventory
+------------------------------------------------------------------------------
+PASS: new note lists boundary phrase: signed scalar candidate
+PASS: new note lists boundary phrase: magnitude `|c_TE|`
+PASS: new note lists boundary phrase: typed typecast
+PASS: new note lists boundary phrase: route2_center_TE_minus_8_9
+PASS: new note lists boundary phrase: route2_q_E_15_8
+PASS: new note lists boundary phrase: route2_rho_E_21_4
+PASS: new note says sign support is not readout selection
+
+Summary
+------------------------------------------------------------------------------
+TOTAL: PASS=45, FAIL=0
+VERDICT: positivity fixes the Route-2 center-ratio sign but not the F_adj magnitude/typecast.
+
+----- stderr -----
+

@@ -47,6 +47,7 @@ import json
 import re
 import sys
 from collections import defaultdict
+from fnmatch import fnmatchcase
 from pathlib import Path
 
 import premise_nodes
@@ -267,6 +268,23 @@ def main() -> int:
     def add_notice(category: str, message: str) -> None:
         notices[category].append(message)
 
+    def _load_pattern_file(name: str) -> tuple[str, ...]:
+        path = DATA_DIR / name
+        if not path.exists():
+            return ()
+        return tuple(
+            line.strip()
+            for line in path.read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.strip().startswith("#")
+        )
+
+    # Typing-policy surfaces (see seed_audit_ledger.default_claim_type_for):
+    # rows still under the silent positive_theorem default are warned below,
+    # and rows grandfathered under excluded source patterns are noticed so
+    # the exclusion-registry / ledger divergence stays visible.
+    excluded_source_patterns = _load_pattern_file("excluded_source_patterns.txt")
+    never_gate_source_paths = frozenset(_load_pattern_file("never_gate_source_paths.txt"))
+
     if TIER_A_ADMISSIONS_PATH.exists():
         try:
             tier_a = load_json(TIER_A_ADMISSIONS_PATH)
@@ -360,6 +378,38 @@ def main() -> int:
                 "legacy_claim_type_backfill",
                 f"{cid}: claim_type was backfilled for a critical legacy audit; queue for re-audit"
             )
+        if row.get("claim_type_provenance") == "default_positive_theorem":
+            add_warning(
+                "claim_type_defaulted",
+                f"{cid}: claim_type silently defaulted to positive_theorem; add an "
+                f"explicit 'Type:' header to {row.get('note_path')}, or register the "
+                "path in docs/audit/data/meta_source_patterns.txt (catalog/index) or "
+                "docs/audit/data/excluded_source_patterns.txt (non-claim infra)"
+            )
+        row_note_path = row.get("note_path") or ""
+        if (
+            excluded_source_patterns
+            and row_note_path
+            and row_note_path not in never_gate_source_paths
+            and any(fnmatchcase(row_note_path, pat) for pat in excluded_source_patterns)
+        ):
+            row_has_audit_history = (
+                row.get("audit_status") not in (None, "unaudited")
+            ) or bool(row.get("previous_audits"))
+            if row_has_audit_history:
+                add_notice(
+                    "excluded_path_row_grandfathered",
+                    f"{cid}: {row_note_path} matches data/excluded_source_patterns.txt "
+                    "but carries audit history, so history-preserving exclusion keeps "
+                    "it (should_gate_node); retiring it is an owner/audit-lane decision"
+                )
+            else:
+                add_notice(
+                    "excluded_path_row_pending_drop",
+                    f"{cid}: {row_note_path} matches data/excluded_source_patterns.txt "
+                    "with no audit history; the next seeding run drops the row and "
+                    "strips its inbound dep edges"
+                )
         if ind not in ALLOWED_INDEPENDENCE:
             errors.append(f"{cid}: independence={ind!r} not in allowed set")
 

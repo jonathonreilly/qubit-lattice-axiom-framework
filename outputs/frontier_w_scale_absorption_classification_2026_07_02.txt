@@ -1,0 +1,32 @@
+CHECK 01: PASS — premise guard: block16 note is present and contains the diagonal degeneration formula
+CHECK 02: PASS — premise guard: parent kappa note contains Pi_phys and the common-K_EW cancellation sentence
+CHECK 03: PASS — premise guard: scale-reference primitive states the units-conversion sentence
+CHECK 04: PASS — T1a: diagonal pairwise ratios I_i/I_j equal x_i/x_j for three distinct weight sums
+CHECK 05: PASS — T1b: normalized fractions I_i/sum(I) are w-free on diagonal records
+CHECK 06: PASS — T1b: Koide-shape Q(y)=sum(y_i^2)/(sum(y_i))^2 is w-free by degree-zero homogeneity
+CHECK 07: PASS — T1b: a generic degree-zero rational functional is w-free on diagonal records
+CHECK 08: PASS — T1c: off-diagonal ratio I(1,0)/I(0,1) moves with w, so the diagonal premise is load-bearing
+CHECK 09: PASS — T2: raw dimensionful diagonal readouts carry w only through s=(u+v) for the specified families
+CHECK 10: PASS — T2: same-family calibration I_i/I_cal gives identical tables for (1,1), (3,2), and (1/2,5/2)
+CHECK 11: PASS — T2: assigning units through the scale-reference primitive against one family member absorbs the prefactor
+CHECK 12: PASS — T2 honesty: cross-family calibration with different sums is not w-free
+CHECK 13: PASS — T3 EW row: sin^2(theta_W)-shape cancels a common same-family K_EW factor
+CHECK 14: PASS — T3 Koide row: degree-zero shape is w-free at flow-selected diagonal states
+CHECK 15: PASS — T3 mass-ratio row: diagonal mass ratios are w-free
+CHECK 16: PASS — T3 absolute-scale row: single-family scale-reference routing makes reported masses w-free
+CHECK 17: PASS — T3 count row: the 8/9 cardinality count is fixed while Pi_phys changes with inter-sector weight
+CHECK 18: PASS — T3 conclusion: every landed readout row in the classified lanes is w-free under its stated premise
+CHECK 19: PASS — T4(i): off-diagonal evaluation is w-sensitive and the sensitivity vanishes on the diagonal
+CHECK 20: PASS — T4(ii): cross-family comparison is w-sensitive and same-family calibration restores w-freedom
+CHECK 21: PASS — T4(iii): raw absolute normalization is w-sensitive and scale-reference routing removes it
+CHECK 22: PASS — T5a: note cites closed/unmerged #4847 only as historical proposal context, not landed or in-flight text
+CHECK 23: PASS — T5b: full set-level closure collapses single-record readout to c times record count
+CHECK 24: PASS — T5c: toy majority availability varies with neighbors and commutes with every two-domain bijection
+CHECK 25: PASS — boundary-denial grep: note says no wall closed
+CHECK 26: PASS — boundary-denial grep: note says it does not reclassify
+CHECK 27: PASS — boundary-denial grep: note marks kappa_EW rows conditional on CTX-match
+CHECK 28: PASS — boundary-denial grep: note marks block16/block11 relationships review-pending
+CHECK 29: PASS — audit metadata: canonical Type/Claim type and no legacy status-authority fields
+CHECK 30: PASS — dependency hygiene: direct read dependencies are markdown links for citation-graph seeding
+CHECK 31: PASS — dependency hygiene: closed/unmerged #4847 remains unlinked context, not a graph dependency
+TOTAL: PASS=31 FAIL=0

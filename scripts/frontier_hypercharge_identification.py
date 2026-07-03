@@ -26,15 +26,22 @@ chain has three independently-cited links:
         it is supplied by the bounded 2026-05-25 normalization bridge if
         independently retained, and otherwise remains an admitted convention.
 
-This runner reports each numerical block with one of four labels:
+  (L4)  ELECTRIC-CHARGE READOUT. Q = T_3 + Y/2 is chained to the acyclic
+        GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md support carrier
+        rather than admitted here; PART 9 recomputes the vev-record
+        annihilator and keeps the chain unaudited until the independent audit
+        lane grades the cited row.
+
+This runner reports each numerical block with one of five labels:
 
    [STRUCTURAL]   = follows from algebra alone, no SM-target import,
                     matches link (L1) of the chain;
    [CHAIN-L2]     = matter-assignment labels imported from LHCM matter
                     assignment note;
    [CHAIN-L3]     = uses the upstream normalization bridge if retained,
-                    otherwise the admitted SM convention alpha = 1/3
-                    (and the admitted Q = T_3 + Y/2 readout);
+                    otherwise the admitted SM convention alpha = 1/3;
+   [CHAIN-L4]     = recomputes the chained GMN/EWSB readout from cited
+                    L4 authorities without asserting their audit grade;
    [CONSISTENCY]  = downstream consistency check under the chain
                     (informational only; not load-bearing).
 
@@ -171,6 +178,8 @@ print("                     -- supplied by LHCM_MATTER_ASSIGNMENT_FROM_SU3_")
 print("                        REPRESENTATION_NOTE_2026-05-02")
 print("  (L3) [CHAIN-L3]    alpha = 1/3 (bounded bridge if retained;")
 print("                     otherwise admitted SM convention)")
+print("  (L4) [CHAIN-L4]    Q = T_3 + Y/2 from the acyclic")
+print("                     GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02")
 print()
 
 # ============================================================================
@@ -316,17 +325,18 @@ print("      [Part 1 STRUCTURAL; cited from narrow ratio theorem]")
 print("    * [Y, S_i] = [Y, SWAP_23] = [Y, T_a] = 0 for all weak, perm,")
 print("      and color generators [Part 2 STRUCTURAL]")
 print()
-print("  NOT yet performed at this checkpoint (deferred to chain L2 + L3):")
+print("  NOT yet performed at this checkpoint (deferred to chain L2 + L3 + L4):")
 print("    * any identification of (Sym^2, Anti^2) sub-blocks with SM quark")
 print("      or lepton doublets")
 print("    * any choice of absolute scale alpha")
-print("    * any SM electric-charge readout via Q = T_3 + Y/2")
+print("    * the electric-charge readout via Q = T_3 + Y/2")
 print()
 print("  The chain claim of this note is precisely that, ONCE chain L2")
 print("  (LHCM matter assignment, separate audit row) and chain L3 (admitted")
 print("  SM convention alpha = 1/3) are layered on top of these structural")
-print("  facts, the SM hypercharge pattern follows. The next parts perform")
-print("  that layering and tag every block accordingly.")
+print("  facts, the SM hypercharge pattern follows; electric-charge readout is")
+print("  then chained through L4. The next parts perform that layering and tag")
+print("  every block accordingly.")
 print("-" * 72)
 
 
@@ -335,13 +345,16 @@ print("-" * 72)
 # ============================================================================
 print()
 print("=" * 72)
-print("PART 3: Electric charge Q = T_3 + Y/2  [CHAIN-L2 + CHAIN-L3 + admitted GMN]")
+print("PART 3: Electric charge Q = T_3 + Y/2  [CHAIN-L2 + CHAIN-L3 + CHAIN-L4]")
 print("=" * 72)
 print()
-print("  Note: Q = T_3 + Y/2 (Gell-Mann--Nishijima) is itself an SM-convention")
-print("  bridge, not a derived framework relation. The matter-assignment labels")
-print("  below ('u-type quark', 'electron', etc.) are imported from the LHCM")
-print("  matter-assignment note's chain to the SM-definition convention.")
+print("  Note: Q = T_3 + Y/2 (Gell-Mann--Nishijima) is chained through L4,")
+print("  not admitted here as a standalone SM-convention bridge. This block")
+print("  applies the chained readout to display charge-table consequents;")
+print("  PART 9 recomputes the vev-record annihilator directly. The")
+print("  matter-assignment labels below ('u-type quark', 'electron', etc.)")
+print("  are imported from the LHCM matter-assignment note's chain to the")
+print("  SM-definition convention.")
 print()
 
 T3 = S[2]  # S_3 = sigma_z / 2 on factor 1
@@ -782,38 +795,117 @@ print("  with the SM hypercharge values for the LH-doublet sector.")
 
 
 # ============================================================================
-# PART 9: Connection to the Gell-Mann--Nishijima formula
+# PART 9: Gell-Mann--Nishijima DERIVED as the unique vev-record annihilator
 # ============================================================================
 print()
 print("=" * 72)
-print("PART 9: Gell-Mann--Nishijima formula verification  [CHAIN-L2 + CHAIN-L3]")
+print("PART 9: GMN derived as the unique vev-record annihilator  [CHAIN-L4]")
 print("=" * 72)
 print()
-print("  Q = T_3 + Y/2 is admitted as the SM-convention bridge between")
-print("  the framework T_3 and the SM-defined electric charge. This block")
-print("  verifies the chain consequents under the matter assignment;")
-print("  it does not derive the GMN formula from framework primitives.")
+print("  2026-07-01 premise rewire: Q = T_3 + Y/2 is no longer admitted as an")
+print("  SM-convention bridge. It is chained (L4) to the acyclic support carrier")
+print("  GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md, which")
+print("  computes the unique unbroken generator annihilating the supplied")
+print("  neutral Higgs vev record at supplied Y_H = +1.")
+print("  This block RECOMPUTES that derivation and its consequents; the")
+print("  chain's audit grade is owned by the independent audit lane.")
 print()
 
-print("  The Gell-Mann--Nishijima formula states: Q = T_3 + Y/2")
-print("  where Q is electric charge, T_3 is weak isospin, Y is hypercharge.")
+part9_pass, part9_fail = 0, 0
+
+def check9(name: str, cond: bool, detail: str = "") -> None:
+    global part9_pass, part9_fail
+    if cond:
+        part9_pass += 1
+        tag = "[PASS]"
+    else:
+        part9_fail += 1
+        tag = "[FAIL]"
+    print(f"  {tag} {name}" + (f"  ({detail})" if detail else ""))
+
+T3_weak = np.diag([0.5, -0.5])
+Y_H = 1.0  # chained Higgs hypercharge (L4 supply)
+vev_neutral = np.array([0.0, 1.0])
+
+# 9a: stabilizer of the vev record inside span{T_3, Y} is EXACTLY 1-dim.
+#     Solve (a*T3 + b*Y_H*I) vev = 0 by nullspace of the 2x2 coefficient map.
+coeff_map = np.column_stack([T3_weak @ vev_neutral, Y_H * vev_neutral])
+_, sv, Vt = np.linalg.svd(coeff_map)
+null_dim = int(np.sum(sv < 1e-12))
+check9("9a [L4] stabilizer of the neutral vev record in span{T_3, Y} is "
+       "exactly 1-dimensional (unique unbroken generator)",
+       null_dim == 1, f"singular values = {np.round(sv, 6)}")
+
+# 9b: the derived coefficient ratio is b/a = +1/2, i.e. Q = T_3 + Y/2,
+#     COMPUTED from the annihilation condition (not asserted).
+null_vec = Vt[-1]
+ratio = null_vec[1] / null_vec[0]
+check9("9b [L4] derived unbroken generator is Q = T_3 + (1/2) Y: coefficient "
+       "computed from the annihilation nullspace",
+       abs(ratio - 0.5) < 1e-12, f"b/a = {ratio:.12f}")
+
+# 9c: charge table COMPUTED from the derived Q on the 8 LH states
+#     (t3, y eigenvalues from the constructed operators, coeff from 9b).
+derived_Q = {}
+table_ok = True
+expected_multiset = sorted([2.0/3] * 3 + [-1.0/3] * 3 + [0.0, -1.0])
+got = []
+for idx, label, t3_str, ptype in state_labels:
+    t3_val = T3_diag[idx, idx].real
+    y_val = Y_diag[idx, idx].real
+    got.append(t3_val + ratio * y_val)
+check9("9c [L4] charge table computed from the DERIVED Q on all 8 states "
+       "equals {+2/3 x3, -1/3 x3, 0, -1}",
+       np.allclose(sorted(got), expected_multiset, atol=1e-9),
+       f"computed multiset = {np.round(sorted(got), 4)}")
+
+# 9d: refutation -- with Y_H = 0 the derived annihilator is PURE Y (a = 0):
+#     no T_3 content, no GMN mixing, and the computed charge table
+#     degenerates (u_L and d_L receive equal charge). The chained Y_H = +1
+#     supply is load-bearing for the GMN form and the SM pattern.
+coeff_map0 = np.column_stack([T3_weak @ vev_neutral, 0.0 * vev_neutral])
+Vt0 = np.linalg.svd(coeff_map0)[2]
+nv0 = Vt0[-1]
+a0 = nv0[0]
+got0 = sorted(T3_diag[idx, idx].real * 0.0 + Y_diag[idx, idx].real
+              for idx, *_ in state_labels) if abs(a0) < 1e-12 else None
+degenerate = (got0 is not None
+              and not np.allclose(got0, expected_multiset, atol=1e-9))
+check9("9d [L4/refutation] Y_H = 0 derives a T_3-free generator (a = 0, pure "
+       "Y): no GMN mixing, u_L/d_L charges degenerate -- the chained "
+       "Higgs-hypercharge supply is load-bearing for the SM pattern",
+       abs(a0) < 1e-12 and degenerate,
+       f"a = {a0:.2e}, pure-Y table = {np.round(got0, 4) if got0 is not None else 'n/a'}")
+
+# 9e: refutation/naming -- the OTHER vev direction (1,0) derives the
+#     component-swapped conjugate table: which doublet component is neutral
+#     (the 'T3(e_L)' assignment) is the vev-direction convention, not an
+#     independent import. Pattern identical up to relabeling.
+vev_charged = np.array([1.0, 0.0])
+coeff_map2 = np.column_stack([T3_weak @ vev_charged, Y_H * vev_charged])
+Vt2 = np.linalg.svd(coeff_map2)[2]
+ratio2 = Vt2[-1][1] / Vt2[-1][0]
+got2 = sorted(T3_diag[idx, idx].real + ratio2 * Y_diag[idx, idx].real
+              for idx, *_ in state_labels)
+swapped_conjugate = sorted([-x for x in expected_multiset])
+check9("9e [L4/naming] the opposite vev direction derives b/a = -1/2 and the "
+       "component-swapped conjugate table: the T3(e_L) component assignment "
+       "is the vev-direction convention",
+       abs(ratio2 + 0.5) < 1e-12 and np.allclose(got2, swapped_conjugate, atol=1e-9),
+       f"b/a = {ratio2:+.4f}, table = {np.round(got2, 4)}")
+
 print()
-print("  From our construction:")
-print("    T_3 = sigma_3/2 on factor 1  [derived from bipartite lattice]")
-print("    Y   = (1/3)*P_sym - P_anti   [unique traceless U(1) in commutant]")
-print("    Q   = T_3 + Y/2")
+print(f"  PART 9 CHECKS: PASS={part9_pass} FAIL={part9_fail}")
+if part9_fail or part9_pass != 5:
+    raise AssertionError(f"PART 9 L4 checks failed: PASS={part9_pass} FAIL={part9_fail}")
 print()
-print("  Resulting charges for one LH-doublet generation under chain L2 + L3:")
-print(f"    {'Particle (L2)':15s} {'T_3':>6s} {'Y':>6s} {'Q':>6s}")
-print("    " + "-" * 40)
-print(f"    {'u_L (3 colors)':15s} {'+1/2':>6s} {'+1/3':>6s} {'+2/3':>6s}")
-print(f"    {'d_L (3 colors)':15s} {'-1/2':>6s} {'+1/3':>6s} {'-1/3':>6s}")
-print(f"    {'nu_L':15s} {'+1/2':>6s} {'-1':>6s} {'0':>6s}")
-print(f"    {'e_L':15s} {'-1/2':>6s} {'-1':>6s} {'-1':>6s}")
-print()
-print("  These match the SM LH-doublet pattern under chain L2 + L3.")
-print("  The Particle column labels are imported from LHCM matter assignment;")
-print("  the alpha = 1/3 scale is the admitted SM convention.")
+print("  Remaining admitted content in the charge table after L4:")
+print("    * alpha = 1/3 scale -- chain L3 (bounded normalization bridge /")
+print("      Y0 vacuous rescaling convention)")
+print("    * the electromagnetic charge UNIT (electron charge as unit anchor)")
+print("      -- a unit convention, same class as the Y-scale")
+print("    * the L4 support carrier has its own audit row; this runner")
+print("      recomputes, the audit lane grades.")
 
 
 # ============================================================================
@@ -826,11 +918,13 @@ print("FINAL SUMMARY  (chain-claim verification)")
 print("=" * 72)
 print()
 print("  CHAIN ASSEMBLY THEOREM (this note):")
-print("  Under the chain (L1 ratio + L2 matter assignment + L3 admitted scale),")
+print("  Under the chain (L1 ratio + L2 matter assignment + L3 scale +")
+print("  L4 GMN/EWSB readout),")
 print("  the unique traceless U(1) in the gl(3)+gl(1) commutant of")
 print("  {SU(2)_weak, SWAP_{23}} reproduces SM hypercharge on the LH-doublet")
 print("  surface. The runner above checks each link of the chain numerically")
-print("  and tags every block as STRUCTURAL / CHAIN-L2 / CHAIN-L3 / CONSISTENCY.")
+print("  and tags every block as STRUCTURAL / CHAIN-L2 / CHAIN-L3 /")
+print("  CHAIN-L4 / CONSISTENCY.")
 print()
 print("  STRUCTURAL FACTS verified (no SM-target import):")
 print("    * gl(3)+gl(1) commutant decomposition (upstream)")
@@ -839,10 +933,12 @@ print("    * uniqueness up to alpha (one-parameter traceless family)")
 print("    * GUT-normalization ratio sqrt(3/5) is alpha-independent")
 print("    * commutation [Y, S_i] = [Y, T_a] = 0 with weak and color")
 print()
-print("  CHAIN CONSEQUENTS (under L2 matter assignment, L3 admitted scale):")
+print("  CHAIN CONSEQUENTS (under L2 matter assignment, L3 scale, L4 GMN):")
 print("    * Sym^2 sector identified with Q_L (color triplet); Anti^2 with L_L")
 print("    * Y_alpha at alpha = 1/3 reproduces (+1/3, -1) on (Q_L, L_L)")
-print("    * Q = T_3 + Y/2 reproduces SM charges (2/3, -1/3, 0, -1)")
+print("    * Q = T_3 + Y/2 -- DERIVED (L4, PART 9) as the unique unbroken")
+print("      generator annihilating the neutral Higgs vev record with the")
+print("      chained Y_H = +1; reproduces SM charges (2/3, -1/3, 0, -1)")
 print()
 print("  WHAT IS NOT CLAIMED:")
 print("    * Internal derivation of (Sym^2 = SU(3)-fundamental) -- chained")

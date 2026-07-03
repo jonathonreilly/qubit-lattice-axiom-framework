@@ -35,7 +35,10 @@ document.
 ### Lattice / Physical Locality
 
 Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor
-adjacency, standard translations, and proper cubic rotations.
+adjacency, standard translations, and proper cubic rotations about each site.
+
+No site is privileged. Sites are distinguished by the supplied lattice
+structure alone.
 
 ### Qubit / Site Possibility
 
@@ -45,6 +48,9 @@ The full one-site possibility domain has algebraic presentation `M_2(C)`.
 
 A `Cl(3,0)`-compatible real-algebra presentation may be used equivalently and
 adds no further primitive structure.
+
+No possibility is privileged. Possibilities are distinguished by the supplied
+algebraic structure alone.
 
 ### Admissibility / Local Constraint
 
@@ -62,14 +68,20 @@ When present, a record locks exactly one local possibility from the subset
 available at that site under Admissibility; the locked possibility is invariant
 under repeated readout.
 
-Only records are readable. For any finite collection of pairwise-disjoint
-records, scalar readout `I` is additive, with `I(empty)=0`.
+Only records are readable. A readout value is determined by record content
+alone. For any finite collection of pairwise-disjoint records, scalar readout
+`I` is additive, with `I(empty)=0`.
 
 ## Qualification
 
 These axioms state only their named primitive content. Further physical
 structure requires derivation, bridge, explicit admission, or approved
 primitive registration before use as a premise.
+
+A state is a configuration of records.
+
+A law privileges no states. Its domain is a supplied condition, and at every
+state where the condition holds it gives exactly one answer.
 
 ## Audit-Pipeline Treatment
 

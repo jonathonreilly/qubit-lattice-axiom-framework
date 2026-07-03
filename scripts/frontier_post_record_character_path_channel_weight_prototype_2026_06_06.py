@@ -18,7 +18,7 @@ SLICE = ROOT / "outputs/post_record_character_path_channel_weight_slice_2026_06_
 PASS = 0
 FAIL = 0
 
-EXPECTED_ROWS = 10
+EXPECTED_ROWS = 21
 
 
 def report(label: str, ok: bool, detail: str = "") -> None:
@@ -97,7 +97,7 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md",
         [
-            "`character_path_channel_weight` | 10",
+            "`character_path_channel_weight` | 21",
             "character/path/channel weight rows need a supplied weight rule and carrier",
             "Does not derive a prior, measure, source unit, trace state, or weight rule",
         ],

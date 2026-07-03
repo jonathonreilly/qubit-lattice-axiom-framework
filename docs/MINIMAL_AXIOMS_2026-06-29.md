@@ -62,7 +62,7 @@ the nearest-neighbor conditions.
 
 ### Record / Fixed Reality
 
-A site need not carry a record.
+A site never carries more than one record.
 
 When present, a record locks exactly one local possibility from the subset
 available at that site under Admissibility; records are permanent.

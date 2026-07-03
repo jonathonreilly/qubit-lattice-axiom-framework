@@ -76,6 +76,16 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
 
 Recorded explicitly approved axiom updates:
 
+- **2026-07-03 -- Record one-record-per-site restoration: "A site never
+  carries more than one record."** The Record axiom's first sentence is
+  edited in place (owner-approved, 2026-07-03): the lost uniqueness half is
+  restored; the blankness half is carried, stated once, by the next
+  sentence's "When present" conditional (possible absence asserted there).
+  In-file evidence: the axiom's own singular phrasing ("When present, a
+  record locks..."). Under this clause the readout sentence's
+  "pairwise-disjoint" qualifier is automatically satisfied. Historical
+  record of the approval only.
+
 - **2026-07-03 -- Record permanence restoration: "records are permanent."**
   The Record axiom in `docs/MINIMAL_AXIOMS_2026-06-29.md` is edited in place
   (owner-approved, 2026-07-03): the clause "the locked possibility is

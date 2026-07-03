@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/theta_gluing_flow_nonsourcing_pair_level_seed_localization_2026_07_02.py
+runner_sha256: bc854ceb83bc29910bdd19afdad87a4fccb3bd6828156019e32089c7784e9fe5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+Section A: inheritance under the flow (with phased-seed contrast)
+  [PASS] A1 real seeds: the glued star is invariant under simultaneous dagger (the internal image of orientation reversal); the SAME gate FAILS for phased seeds (discriminating contrast)
+         real diff = 3.51e-17, phased diff = 0.1620
+  [PASS] A2 real seeds: invariant under simultaneous bar; phased seeds break it (contrast)
+  [PASS] A3 the phased-seed images equal the seed with alpha -> -alpha (the flow maps the flip onto the SEED parameter, not onto new structure)
+Section B: plane-blind couplings die under the epsilon assembly
+  [PASS] B1 the glued pair equals its universal channel form (plane labels never enter the functional): projector sum vs closed form
+         glued pair = 1.04982382
+  [PASS] B2 sum over (rho,sigma) of eps_{mu nu rho sigma} = 0 for every plane (re-earned)
+  [PASS] B3 the epsilon-assembled sum of plane-uniform (flow-generated) pair couplings is EXACTLY zero, while the same values with epsilon-carrying (orientation-anisotropic) couplings survive: a plane-blind mechanism cannot generate the theta-parity pair term
+         flow assembly = 0.0, anisotropic contrast = 25.1958
+Section C: reality propagates; phases transport, are not created
+  [PASS] C1 real seeds give real effective couplings and real glued pair values (reality propagates through the flow)
+  [PASS] C2 same-orientation channel: the seed phases CANCEL (c e^{ia} pairs with c e^{-ia}): glued object equals the alpha = 0 value — no oddness deposited in this channel
+  [PASS] C3 opposed-orientation channel: the seed phase COMPOUNDS (e^{2 i alpha} on the composite character): the flow transports seed oddness orientation-sensitively — it moves theta content, it does not create it
+         |alpha-shift of the opposed channel| = 0.0600
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

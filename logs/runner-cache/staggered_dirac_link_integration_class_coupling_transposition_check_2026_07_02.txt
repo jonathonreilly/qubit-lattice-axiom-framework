@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/staggered_dirac_link_integration_class_coupling_transposition_check_2026_07_02.py
+runner_sha256: e7b21e7a2e11f928d9359c15fc7955f64139c0726ff4bf43600d0578ad0e436b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 11.85
+status: ok
+----- stdout -----
+[PASS] [G0]  0. S1 plaquette flux Phi_P(K0)=+1 and Phi_P(K1)=-1  |  K0=1, K1=-1
+[PASS] [T1]  1. Z_8 paired one-link moments (0,0),(1,1),(2,2) equal 1  |  values=1,1,1
+[PASS] [T1]  2. Z_8 unpaired one-link moment (1, 0) vanishes  |  value=-4.3063660605e-17
+[PASS] [T1]  3. Z_8 unpaired one-link moment (2, 1) vanishes  |  value=-4.3063660605e-17
+[PASS] [T1]  4. Z_8 unpaired one-link moment (3, 1) vanishes  |  value=-5.55111512313e-17
+[PASS] [T1]  5. von-Mises-weighted Z_8 first moment detects non-uniform measure  |  |<u>|=0.330177401498
+[PASS] [T1]  6. uniform Z_8 first moment remains zero  |  |<u>|=4.30874066837e-17
+[PASS] [T2]  7. S1 <H_e>=0 entrywise for K0  |  max=7.843e-17
+[PASS] [T2]  8. S1 <(H^2)_xx> equals degree(x) for K0  |  max_diff=0.000e+00
+[PASS] [T2]  9. S1 <H_e>=0 entrywise for K1  |  max=7.843e-17
+[PASS] [T2] 10. S1 <(H^2)_xx> equals degree(x) for K1  |  max_diff=0.000e+00
+[PASS] [T3] 11. S1 K=8 Z[K1,0.0] = Z[1,-0.0]  |  diff=0.000e+00
+[PASS] [T3] 12. S1 K=8 Z[K1,0.3] = Z[1,-0.3]  |  diff=0.000e+00
+[PASS] [T3] 13. S1 K=8 Z[K1,0.7] = Z[1,-0.7]  |  diff=6.661e-16
+[PASS] [T3] 14. S1 K=8 beta=0.7 transposition for trH4  |  diff=1.776e-14
+[PASS] [T3] 15. S1 K=8 beta=0.7 transposition for detIplusH  |  diff=2.221e-16
+[PASS] [T3] 16. S1 K=8 beta=0.7 transposition for W  |  diff=1.666e-16
+[PASS] [T3] 17. S2 K=4 beta=0.5 transposition for Z  |  diff=0.000e+00
+[PASS] [T3] 18. S2 K=4 beta=0.5 transposition for trH4  |  diff=0.000e+00
+[PASS] [T3] 19. S3 K=4 beta=0.5 transposition for Z  |  diff=8.882e-16
+[PASS] [T4] 20. S1 K=8 beta=0 blindness for trH2  |  diff=0.000e+00
+[PASS] [T4] 21. S1 K=8 beta=0 blindness for trH4  |  diff=0.000e+00
+[PASS] [T4] 22. S1 K=8 beta=0 blindness for trH6  |  diff=0.000e+00
+[PASS] [T4] 23. S1 K=8 beta=0 blindness for detIplusH  |  diff=5.290e-18
+[PASS] [T4] 24. S1 K=8 beta=0 blindness for W  |  diff=2.471e-18
+[PASS] [T4] 25. S2 K=4 beta=0 blindness for trH4  |  diff=0.000e+00
+[PASS] [T4] 26. S2 K=4 beta=0 blindness for detIplusH  |  diff=6.601e-18
+[PASS] [T5] 27. fixed u=1 S1 tr(H^4) discriminator equals exact 16  |  K0=32, K1=16, delta=16
+[PASS] [T5] 28. fixed u=1 S1 W_P changes sign between K0 and K1  |  K0=1, K1=-1
+[PASS] [T6] 29. registration derivative c(K0) is positive  |  c_h=0.4999999375
+[PASS] [T6] 30. registration derivative c(K1) = -c(K0)  |  c0=0.4999999375, c1=-0.4999999375
+[PASS] [T6] 31. symmetric FD convergence ratio is second-order  |  diff_h=4.687e-08, diff_h2=1.172e-08, ratio=3.99996
+[PASS] [T6] 32. registration coefficient c(K0) matches derived 1/2  |  c_h=0.4999999375
+[PASS] [T7] 33. S3 zero-flux wrap twist washes out at beta=0 battery  |  max_diff=1.957e-31
+[PASS] [T7] 34. S3 zero-flux wrap twist leaves beta=0.5 Z unchanged  |  diff=0.000e+00
+[PASS] [T7] 35. fixed-background S3 winding diagnostic differs  |  untwisted_trH2=32, twisted_trH2=16
+[PASS] [T8] 36. S1 beta=0 blindness stable at K=4,8,16  |  max_diff=1.421e-14
+[PASS] [T8] 37. S1 K=16 beta=0.7 transposition identity  |  max_diff=1.066e-14
+TOTAL: PASS=38 FAIL=0
+
+----- stderr -----
+

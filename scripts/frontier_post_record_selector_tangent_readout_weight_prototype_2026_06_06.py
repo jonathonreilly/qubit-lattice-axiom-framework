@@ -16,7 +16,7 @@ LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
 MEASURE_RUNNER = ROOT / "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py"
 PASS = 0
 FAIL = 0
-EXPECTED_ROWS = 12
+EXPECTED_ROWS = 16
 
 
 def report(label: str, ok: bool, detail: str = "") -> None:
@@ -117,14 +117,14 @@ def source_anchor_checks() -> None:
         "docs/audit/data/axiom_premise_nodes.json",
         [
             "\"minimal_axioms\"",
-            "\"current_path\": \"docs/MINIMAL_AXIOMS_2026-06-05.md\"",
-            "it still supplies no readout context, sector-generation rule, weighting, normalization, probability, dynamics, or downstream theory consequence",
+            "\"current_path\": \"docs/MINIMAL_AXIOMS_2026-06-29.md\"",
+            "It still supplies no context-selection rule, occurrence rule, weighting, normalization, probability, update law, measurement/decoherence dynamics, K/CPT structure, central-sector decomposition, source/action bridge, physical observable bridge, state-selection rule, law-domain derivation, or downstream theory consequence",
         ],
     )
     require_text(
         "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md",
         [
-            "`selector_tangent_readout_weight` | 13",
+            "`selector_tangent_readout_weight` | 16",
             "live count printed by the runner supersedes this diagnostic export",
             "selector/tangent readout-weight rows need a supplied readout/tangent bridge",
         ],
@@ -207,7 +207,7 @@ def row_checks() -> list[dict]:
     report("selector/tangent row count is current snapshot", len(rows) == EXPECTED_ROWS, str(len(rows)))
     ids = {row.get("claim_id") for row in rows}
     for claim_id in [
-        "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+        "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12",
         "teleportation_preparation_readout_probe_note",
         "yt_exact_hessian_selector_uniqueness_note",
     ]:

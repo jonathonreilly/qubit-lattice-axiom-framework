@@ -599,7 +599,7 @@ def theorem_T5():
     required_phrases = (
         "#4874", "realized-sector", "sequence",
         "representation-faithfulness bridge", "periodic compactification",
-        "b-axis.1", "b-axis.3", "single-clock note", "pr #4873",
+        "b-axis.1", "b-axis.3", "single-clock note", "pr #4882",
         "no rate", "nothing adopted", "audit lane",
         "translation-identification convention", "witness-class",
         "finite-window", "four-axis-direction", "event-definition import",

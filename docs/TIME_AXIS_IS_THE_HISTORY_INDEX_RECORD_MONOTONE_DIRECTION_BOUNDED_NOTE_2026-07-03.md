@@ -92,7 +92,7 @@ neither.
 - **PR #4874 (LANDED as commit `50f0db6187`, review-loop-closed):** the Record
   clause now ends "records are permanent." Permanence-dependent claims are
   grounded on this landed sentence, not conditionally.
-- **Sibling PR #4873 (review-pending, branch-only):** derives the
+- **Sibling PR #4882 (recut of closed #4873; review-pending, branch-only):** derives the
   record-inclusion event-ordering from permanence plus "A state is a
   configuration of records"; the realized history is a note-level definition ("a
   sequence of states") and an event is a strict record-inclusion step — both
@@ -311,7 +311,7 @@ residues added by this repair [36]:
 5. B-AXIS.1a/1b untouched (rate class);
 6. operator-layer B-AXIS.3 comparator exclusion untouched;
 7. the single-clock note's own premise stack and unaudited-post-reset status;
-8. sibling PR #4873 review-pending;
+8. sibling PR #4882 (recut of closed #4873) review-pending;
 9. no rate / metric / clock content anywhere in this note;
 10. nothing adopted (no axiom, primitive, fit, or observation);
 11. the audit lane owns all statuses;
@@ -324,7 +324,7 @@ residues added by this repair [36]:
 14. four-axis-direction scoping — only the four stack axis-directions are
     considered; diagonal or composite directions are excluded by framing;
 15. the event-definition import — an event is a strict record-inclusion step,
-    from review-pending PR #4873.
+    from review-pending PR #4882 (recut of closed #4873).
 
 ## Consequence
 
@@ -361,7 +361,7 @@ axis-blind.
   not re-derived; the runner live-guards the certificate).
 - Permanence clause — LANDED as commit `50f0db6187` (drafted as PR #4874,
   review-loop-closed); record-inclusion event-ordering, "history = a sequence",
-  and "event = strict record-inclusion step" — sibling PR #4873 (review-pending),
+  and "event = strict record-inclusion step" — sibling PR #4882 (recut of closed #4873; review-pending),
   imported/flagged.
 - Owner ruling: non-triviality is contingent realized data (condition on the
   realized sector).

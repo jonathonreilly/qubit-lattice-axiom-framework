@@ -35,13 +35,10 @@ files and asserts the quoted sentences as whitespace-normalized substrings:
 * Record axiom, docs/MINIMAL_AXIOMS_2026-06-29.md. The permanence clause
   "records are permanent" is LANDED on main as commit 50f0db6187 (drafted as
   PR #4874, review-loop-closed) and is the authoritative permanence grounding
-  for every record-nesting check below. This worktree branched off older main,
-  so its axiom copy still shows the pre-restoration wording "the locked
-  possibility is invariant under repeated readout" (and "A state is a
-  configuration of records."). The Record-clause quote guard (CHECK 30) is
-  therefore TRANSITIONAL: it passes if the axiom file carries EITHER the landed
-  "records are permanent" form OR the pre-restoration locking clause, so it holds
-  both on this worktree's older copy and on current main after this block merges.
+  for every record-nesting check below. Current main carries that landed form.
+  The Record-clause quote guard (CHECK 30) remains TRANSITIONAL only for older
+  pre-restoration checkouts: it passes if the axiom file carries EITHER the
+  landed "records are permanent" form OR the pre-restoration locking clause.
   Record nesting is grounded on the landed permanence sentence, not conditional.
 
 * B-AXIS premise, the S3' exchange-symmetry certificate, and the operator block
@@ -485,11 +482,9 @@ def theorem_T4():
     #           50f0db6187, drafted as PR #4874, review-loop-closed) is
     #           AUTHORITATIVE; the pre-restoration locking clause "the locked
     #           possibility is invariant under repeated readout" is accepted ONLY
-    #           for pre-restoration checkouts such as this worktree, whose axiom
-    #           copy branched off older main. The guard passes if the axiom file
-    #           carries EITHER form, so it holds on this worktree's older copy AND
-    #           on current main after this block merges -- no live guard keyed to
-    #           the old locking clause can fail on merge.
+    #           for older pre-restoration checkouts. Current main carries the
+    #           landed form; the fallback keeps old checkouts runnable without
+    #           making the old wording load-bearing.
     landed_permanence = _contains_norm(axioms, "records are permanent")
     pre_restoration = _contains_norm(
         axioms, "the locked possibility is invariant under repeated readout")

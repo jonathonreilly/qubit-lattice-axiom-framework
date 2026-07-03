@@ -1,7 +1,8 @@
 # Time's Axis Is the History Index: the Record-Monotone Stack Direction
 
 **Date:** 2026-07-03
-**Type:** bounded_theorem (T1-T2) + bounded observation (T3) + bounded_support (T4-T5)
+**Type:** bounded_theorem
+**Claim boundary:** T1-T2 bounded theorem + T3 bounded observation + T4-T5 bounded support
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome; audit verdict and effective status are set only by
 the independent audit lane. No status is claimed, moved, or promoted here.
@@ -15,11 +16,10 @@ no floats, no fitted or observed inputs, deterministic, nonzero exit on any FAIL
 - **Permanence is LANDED (commit `50f0db6187`).** Record-nesting (T2) depends on
   the permanence clause `records are permanent`, which the review loop LANDED on
   main as commit `50f0db6187` (drafted as PR #4874, review-loop-closed — not in
-  flight, not conditional). This worktree branched off older main, so its axiom
-  copy still states only that the locked possibility `is invariant under repeated
-  readout`; the landed form is authoritative and the runner's Record-clause guard
-  is TRANSITIONAL, passing on either wording (T4 guard [30]). Every nesting claim
-  below is grounded on the landed permanence sentence.
+  flight, not conditional). Current main carries the landed form; the runner's
+  Record-clause guard remains TRANSITIONAL only so older pre-restoration
+  checkouts can still run. Every nesting claim below is grounded on the landed
+  permanence sentence.
 - **The theorem is quantifier-scoped, not universal.** The index direction nests
   for **every** realized history (universal, T2(i)); spatial nesting **fails for
   some** event-bearing history along **each** spatial axis (existential, T2(ii));
@@ -64,7 +64,7 @@ with it.
 
 ## Supplied surface (quoted)
 
-### Record axiom, PRE-restoration wording (`docs/MINIMAL_AXIOMS_2026-06-29.md`)
+### Record axiom, historical pre-restoration wording (`docs/MINIMAL_AXIOMS_2026-06-29.md`)
 
 > "When present, a record locks exactly one local possibility from the subset
 > available at that site under Admissibility; the locked possibility is
@@ -78,9 +78,9 @@ with it.
 On current main the review loop LANDED the permanence restoration (commit
 `50f0db6187`, drafted as PR #4874, review-loop-closed): the locking clause above
 now ends "records are permanent." That landed sentence is the authoritative
-permanence grounding for this note; the pre-restoration wording quoted above is
-this worktree's older copy, honored only by the transitional Record-clause guard
-[30].
+permanence grounding for this note; the pre-restoration wording above is kept as
+historical context and accepted only by the transitional Record-clause guard [30]
+when the runner is executed on older pre-restoration checkouts.
 
 That file lists, as content **outside** the axioms, "arrow, record-production
 dynamics, physical persistence dynamics, time metric, and local observability of
@@ -92,12 +92,11 @@ neither.
 - **PR #4874 (LANDED as commit `50f0db6187`, review-loop-closed):** the Record
   clause now ends "records are permanent." Permanence-dependent claims are
   grounded on this landed sentence, not conditionally.
-- **Sibling PR #4882 (recut of closed #4873; review-pending, branch-only):** derives the
-  record-inclusion event-ordering from permanence plus "A state is a
-  configuration of records"; the realized history is a note-level definition ("a
-  sequence of states") and an event is a strict record-inclusion step — both
-  imports, flagged; non-triviality is contingent realized data per owner ruling
-  (condition on the realized sector).
+- **Sibling PR #4882 (recut of closed #4873; review-pending):** context only, not
+  a dependency edge here. This note uses a self-contained note-level convention:
+  a realized history is a sequence of states, and an event is a strict
+  record-inclusion step. Non-triviality is contingent realized data per owner
+  ruling (condition on the realized sector).
 - **Operator-layer non-vacuity:** S3' exhibits a mathematically realizable
   two-clock comparator, so B-AXIS.3 is non-vacuous at the operator layer.
 
@@ -261,11 +260,10 @@ axioms file and applies a TRANSITIONAL Record-clause guard [30]: it passes if th
 file carries EITHER the landed permanence clause "records are permanent"
 (authoritative — commit `50f0db6187`, drafted as PR #4874, review-loop-closed) OR
 the pre-restoration locking clause "the locked possibility is invariant under
-repeated readout" (accepted only for pre-restoration checkouts such as this
-worktree). The landed form is authoritative; honoring the old form makes the
-guard pass both on this worktree's older axiom copy and on current main after
-this block merges, so no live guard keyed to the old clause fails on merge. It
-reads this note and asserts its own reconciliation/resonance sentence [31].
+repeated readout" (accepted only for older pre-restoration checkouts). The landed
+form is authoritative on current main; honoring the old form prevents old
+checkouts from failing a guard whose scientific grounding is the landed clause.
+It reads this note and asserts its own reconciliation/resonance sentence [31].
 
 **Reconciliation.** S3' is about the **bare operator array**: `W` swaps the
 temporal and `x_1` hop sectors with residual `0`, and "the single-clock
@@ -311,7 +309,8 @@ residues added by this repair [36]:
 5. B-AXIS.1a/1b untouched (rate class);
 6. operator-layer B-AXIS.3 comparator exclusion untouched;
 7. the single-clock note's own premise stack and unaudited-post-reset status;
-8. sibling PR #4882 (recut of closed #4873) review-pending;
+8. sibling PR #4882 (recut of closed #4873) is context only here, not a
+   dependency edge;
 9. no rate / metric / clock content anywhere in this note;
 10. nothing adopted (no axiom, primitive, fit, or observation);
 11. the audit lane owns all statuses;
@@ -324,7 +323,8 @@ residues added by this repair [36]:
 14. four-axis-direction scoping — only the four stack axis-directions are
     considered; diagonal or composite directions are excluded by framing;
 15. the event-definition import — an event is a strict record-inclusion step,
-    from review-pending PR #4882 (recut of closed #4873).
+    used here as a self-contained note-level convention, with sibling PR #4882
+    only as context.
 
 ## Consequence
 
@@ -352,17 +352,19 @@ axis-blind.
 
 ## Dependencies
 
-- Record axiom — `docs/MINIMAL_AXIOMS_2026-06-29.md` (quoted). The landed
-  permanence clause `records are permanent` (commit `50f0db6187`) is
-  authoritative; this worktree's copy still shows the pre-restoration wording, so
-  the runner's Record-clause guard is transitional (passes on either wording).
+- Record axiom —
+  [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md) (quoted). The
+  landed permanence clause `records are permanent` (commit `50f0db6187`) is
+  authoritative on current main; the runner's Record-clause guard is
+  transitional only for older pre-restoration checkouts.
 - B-AXIS premise + S3' certificate + the operator block `Λ = (Z/L_τ Z) ×
-  (Z/L_s Z)^3` — single-clock codimension-1 evolution note, 2026-05-03 (quoted;
-  not re-derived; the runner live-guards the certificate).
+  (Z/L_s Z)^3` —
+  [AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
+  (quoted; not re-derived; the runner live-guards the certificate).
 - Permanence clause — LANDED as commit `50f0db6187` (drafted as PR #4874,
   review-loop-closed); record-inclusion event-ordering, "history = a sequence",
-  and "event = strict record-inclusion step" — sibling PR #4882 (recut of closed #4873; review-pending),
-  imported/flagged.
+  and "event = strict record-inclusion step" — self-contained note-level
+  conventions here, with sibling PR #4882 as context only.
 - Owner ruling: non-triviality is contingent realized data (condition on the
   realized sector).
 

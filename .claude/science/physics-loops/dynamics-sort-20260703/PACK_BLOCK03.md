@@ -12,7 +12,7 @@ next_trace_action: "the representation-faithfulness bridge (realized-history ori
 ```
 
 ## Claim status certificate
-actual_current_surface_status: bounded-support; claim types: bounded_theorem
+actual_current_surface_status: bounded-support; claim type: bounded_theorem
 (T2 marking, quantifier-swapped) + bounded observation (T3 type-level) +
 bounded support (T4 reconciliation/decomposition). Permanence grounded on
 the LANDED restoration (commit 50f0db6187; transitional guard for older
@@ -23,10 +23,12 @@ audit_required: true.
 No new empirical imports. Read files: MINIMAL_AXIOMS (transitional guard);
 the single-clock note (B-AXIS text + S3' certificate, quoted verbatim,
 review-pending/unaudited post-reset). Supervisor-supplied: landed
-permanence (50f0db6187); sibling PR #4873-lineage event-ordering (rebuilt);
-owner realized-sector ruling. Named conventions: translation-identified
-comparability (empty-slice comparability included); four-axis-direction
-scoping; finite-window witnesses; realized-history sequence import.
+permanence (50f0db6187); sibling PR #4882/#4873-lineage event-ordering as
+context only, with this note carrying its own realized-history/event
+conventions; owner realized-sector ruling. Named conventions:
+translation-identified comparability (empty-slice comparability included);
+four-axis-direction scoping; finite-window witnesses; realized-history
+sequence import.
 
 ## V1-V5 value gate
 V1: B-AXIS is the named supplied premise across the time cluster. V2: new —

@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3637 |
-| Applied audit verdicts | 1354 |
-| Retained-grade rows, including boxed decorations | 1282 |
+| Applied audit verdicts | 1355 |
+| Retained-grade rows, including boxed decorations | 1283 |
 | Retained positive theorems | 190 |
 | Retained no-go rows | 193 |
-| Retained bounded rows | 854 |
+| Retained bounded rows | 855 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
 | Unaudited rows | 1958 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1970 |
+| Total pending rows | 1969 |
 | Ready rows | 157 |
 | Cycle-break targets | 14 |
-| Critical pending | 412 |
+| Critical pending | 411 |
 | High pending | 292 |
 | Medium pending | 524 |
 | Leaf pending | 742 |
 
 Next ready rows by queue order:
 
-- [`yt_vertex_power_derivation`](../../docs/YT_VERTEX_POWER_DERIVATION.md) - critical; audit_in_progress
+- [`yt_vertex_power_operator_counting_lemma_note_2026-05-17`](../../docs/YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md) - critical; unaudited
 - [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
 - [`ew_current_matching_rule_open_gate_note_2026-05-03`](../../docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md) - critical; unaudited
 - [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
@@ -57,7 +57,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **444**.
+- Non-retained-grade cited rows in publication tables: **443**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -66,7 +66,6 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | medium | `unaudited` | 98 |
 | medium | `open_gate` | 3 |
 | high | `audited_numerical_match` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_conditional` | 1 |
 | high | `audited_conditional` | 1 |
 | high | `open_gate` | 1 |

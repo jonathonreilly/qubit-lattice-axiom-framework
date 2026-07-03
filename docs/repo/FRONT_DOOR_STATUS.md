@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 849 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
-| Unaudited rows | 1967 |
+| Unaudited rows | 1966 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 25 |
 | Audited renaming rows | 19 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`no_per_site_chirality_theorem_note_2026-05-02`](../../docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
+- [`no_per_site_chirality_theorem_note_2026-05-02`](../../docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md) - critical; audit_in_progress
 - [`tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md) - critical; unaudited
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
 - [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
@@ -61,11 +61,12 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 188 |
+| critical | `unaudited` | 187 |
 | high | `unaudited` | 151 |
 | medium | `unaudited` | 98 |
 | medium | `open_gate` | 3 |
 | high | `audited_numerical_match` | 2 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_conditional` | 1 |
 | high | `audited_conditional` | 1 |
 | high | `open_gate` | 1 |

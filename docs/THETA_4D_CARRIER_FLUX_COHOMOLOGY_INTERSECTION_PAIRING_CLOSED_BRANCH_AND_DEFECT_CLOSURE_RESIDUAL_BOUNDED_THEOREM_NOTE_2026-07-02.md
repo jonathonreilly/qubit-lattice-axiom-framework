@@ -113,9 +113,10 @@ into two named sub-walls, and residual (ii) acquires its exact 4D template:
 
    > "When present, a record locks exactly one local possibility from the
    > subset available at that site under Admissibility; the locked possibility
-   > is invariant under repeated readout. Only records are readable. For any
-   > finite collection of pairwise-disjoint records, scalar readout `I` is
-   > additive, with `I(empty)=0`."
+   > is invariant under repeated readout. Only records are readable. A readout
+   > value is determined by record content alone. For any finite collection of
+   > pairwise-disjoint records, scalar readout `I` is additive, with
+   > `I(empty)=0`."
 
    Used only as the registration/additivity interface shape; the sector
    decomposition is derived, not supplied by Record; record occurrence is

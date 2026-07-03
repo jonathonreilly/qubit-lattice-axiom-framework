@@ -1,7 +1,8 @@
 # Dynamics Content Sort: Ordering Derived; Permanence Landed (Owner Surface, commit 50f0db6187 / PR #4874); One-Per-Site Landed (PR #4879, commit 7950d9202c); Non-Triviality Reclassified As Realized Data; No New Axiom Needed
 
 **Date:** 2026-07-03
-**Type:** bounded theorem + reclassified no-go + governance map (single owner surface)
+**Type:** bounded_theorem
+**Claim boundary:** bounded theorem + reclassified no-go + governance map (single owner surface)
 **Status authority:** independent audit lane only. This worker note sets, predicts, and estimates no audit verdict; the audit lane owns every status.
 **No-verdict sentence:** no audit verdict is applied, predicted, or requested here; nothing is adopted.
 **Primary runner:** `scripts/frontier_dynamics_sort_records_accumulate_2026_07_03.py`
@@ -254,11 +255,16 @@ TOE-leverage statement [check 38]: one restored word (permanence) plus realized-
 
 ## Dependencies
 
-- Quoted axiom memo: `docs/MINIMAL_AXIOMS_2026-06-29.md`
-- Quoted nontriviality firewall: `docs/DYNAMICS_NONTRIVIALITY_SELECTION_FIREWALL_2026-06-06.md`
-- Quoted order/rate firewall: `docs/RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md`
-- Quoted form-class note: `docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md`
-- Quoted arrow note: `docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`
+- Quoted axiom memo:
+  [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md)
+- Quoted nontriviality firewall:
+  [DYNAMICS_NONTRIVIALITY_SELECTION_FIREWALL_2026-06-06.md](DYNAMICS_NONTRIVIALITY_SELECTION_FIREWALL_2026-06-06.md)
+- Quoted order/rate firewall:
+  [RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md](RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md)
+- Quoted form-class note:
+  [DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md](DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md)
+- Quoted arrow note:
+  [ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md](ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md)
 - Supervisor-supplied, not file-read here: PR #4874 (permanence restoration, landed as commit 50f0db6187), PR #4879 (one-per-site clause, landed as commit 7950d9202c), the 2026-07-03 owner ruling, the 5-seat panel record, and PR #4843, #4797, #4854, #4855, and the anomaly/time-cluster context.
 
 ## No-Promotion

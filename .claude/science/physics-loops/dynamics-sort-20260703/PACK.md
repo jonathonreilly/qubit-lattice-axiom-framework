@@ -8,15 +8,17 @@ target_blocker_text: "the forced gauge-invariant-local class contains H = 0; non
 source_of_blocker_text: DYNAMICS_NONTRIVIALITY_SELECTION_FIREWALL_2026-06-06.md (landed)
 reachability_to_target: supports
 artifact_role: theorem
-next_trace_action: "blind panel hones the two owner-surface sentences (permanence clarity fix; accumulation FORM-E vs FORM-H) with T1-T4 as acceptance tests; owner rules; if adopted, premise-hash wave; the ordering->transfer-axis (B-AXIS) bridge and kernel-convolution derivations are the named OPEN follow-on targets."
+next_trace_action: "independent audit lane reviews the bounded support/no-go row; ordering->transfer-axis (B-AXIS), kernel-convolution, and frozen-region boundary derivations remain named open follow-on targets."
 ```
 
 ## Claim status certificate
-actual_current_surface_status: bounded-support; claim types: bounded_theorem
-(T1 scope gap, T2 conditional ordering) + narrow no-go (T3, axiom-first,
-sentence-complete over the 20 enumerated axiom-block sentences) + governance
-map (T4/T5). Nothing adopted; both owner surfaces flagged OPEN; T1 options
-(a) clarity vs (b) new content NOT foreclosed; audit_required: true.
+actual_current_surface_status: bounded-support; claim type: bounded_theorem
+(T1 historical scope-gap exhibit, T2 conditional ordering) + narrow no-go
+(T3, axiom-first, sentence-complete over the 20 enumerated axiom-block
+sentences) + governance map (T4/T5). Nothing adopted; the permanence owner
+surface is exercised against landed main text, the one-per-site clause is
+landed, and the accumulation candidate is withdrawn rather than open.
+audit_required: true.
 
 ## Assumptions and imports
 No new empirical imports. Sources: the five named landed docs (all

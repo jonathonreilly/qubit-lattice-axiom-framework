@@ -1,6 +1,7 @@
-# The Seed-Class Kernel Dissected: Spectrally-Constructed Weights Are Automatically Flip-Even, the Pure-Gauge Supplied Structure Is Exactly Conjugation-Symmetric, a Phased Seed's Odd Direction Is Only the Center-Shadow Im-Trace Reweighting, and Conjugation-Odd Data of the Theta Type Live in Determinant-Phase (Mass-Side) Structures (Bounded Theorem)
+# The Seed-Class Kernel Dissected: Spectrally-Constructed Weights Are Automatically Flip-Even, the Pure-Gauge Supplied Structure Is Exactly Conjugation-Symmetric, a Phased Seed's Odd Direction Is the Real Im-Trace Reweighting, and Conjugation-Odd Data of the Theta Type Live in Determinant-Phase (Mass-Side) Structures (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Type:** bounded_theorem
 **Claim type:** bounded_theorem (exact finite theorems plus a graded,
 explicitly-named bridge candidate; not a terminal no-go, not a discharge of
 the theta admission).
@@ -14,7 +15,7 @@ re-grade any Tier-A admission, or claim Strong-CP closure.
 
 ## Question
 
-Block 10 (PR #4884, in-flight) localized the theta admission's gauge side to
+The campaign seed lane localizes the theta admission's gauge side to
 one sentence:
 
 ```text
@@ -59,21 +60,15 @@ and replaced by the stronger true statement):
    pure-gauge-supplied.
 
 3. **Refuted expectation, sharper theorem: a phased seed's odd direction is
-   only the center-shadow reweighting.** The seed space splits under the
+   the real Im-trace reweighting.** The seed space splits under the
    outer flip; the phased seed's even part is the real `cos(alpha)` weight
    and its odd part equals `-2 c sin(alpha) Im(chi_F)` — a **real-valued**
    per-plaquette imaginary-trace reweighting, NOT an imaginary action (the
    design-time claim was refuted by the computation; runner D1-D2). This is
-   exactly the naive single-plaquette lattice theta candidate that the
-   campaign proved carries only the center/abelian shadow (block 8) and
-   whose flow transport stays plane-uniform (block 10). Combined with block
-   10's coupling-independent plane-blindness mechanism (the epsilon
-   assembly of plane-uniform couplings vanishes identically, for ANY seed
-   couplings): **even a phased single-plaquette seed cannot generate the
-   genuine (epsilon-odd, multi-plaquette) theta pairing through the gluing
-   flow — seed phases matter only for center-shadow (discrete, Z3-level)
-   structure.** The continuous theta slot cannot be seeded at single-
-   plaquette level at all within the supplied construction pattern.
+   the naive single-plaquette lattice-theta candidate direction. This note
+   does not re-prove the separate flow/center-shadow conclusions from other
+   campaign blocks; it only supplies the seed-kernel identification those
+   conclusions would consume.
 
 4. **Where conjugation-odd data of the needed type live (exact
    arithmetic + registry match).** Determinant phases are conjugation-odd
@@ -124,9 +119,10 @@ above is exact either way.
    the gauge-side/mass-side split (`theta_bar = theta_gauge + arg det M`)
    that result 4's hand-off lands on.
 
-Campaign chain (landed PRs #4784/#4796/#4811; in-flight PRs
-#4832/#4858/#4869/#4875/#4876/#4877/#4884): the flip tables, flow theorems,
-and shadow structure are those blocks' objects; every identity used here is
+Campaign chain context (landed PRs #4784/#4796/#4811; in-flight PRs
+#4832/#4858/#4869/#4875/#4876/#4877/#4884): flip tables, flow theorems, and
+shadow structure are those blocks' objects. They are context here, not
+load-bearing premises; every identity used for this note's claims is
 re-earned inline. No unaudited note is consumed as a premise.
 
 ## Theorem statements (graded)
@@ -142,9 +138,8 @@ supplied-structure profiles across conjugate pairs.
 
 **T3 (odd-direction identification; exact, replacing a refuted design
 claim).** The phased seed's odd part is the real-valued
-`-2 c sin(alpha) Im chi_F` reweighting — the center-shadow direction; with
-block 10's coupling-independent plane-blindness, single-plaquette seed
-phases cannot generate the epsilon-odd pairing through the flow.
+`-2 c sin(alpha) Im chi_F` reweighting. Whether this direction is eliminated
+or made moot by separate flow/center-shadow results is not proved here.
 
 **T4 (conjugation-odd data location; exact arithmetic).** Determinant
 phases are conjugation-odd; the registry's mass side is where such data are
@@ -153,27 +148,26 @@ tracked.
 **Bridge candidate (graded, unadjudicated).** The outer-evenness bridge as
 stated above — audit-lane semantics, not claimed.
 
-## Corollary (wall state — the gauge side at its end state)
+## Checkpoint (gauge-side seed kernel)
 
 ```text
-W_theta_Q_context (final decomposition reached by this campaign):
+W_theta_Q_context (bounded seed-kernel decomposition reached here):
   (i-a)       defect closure (block 3; unchanged);
   (i-b''-a')  global-sheet proof sliver (block 7; unchanged);
   (i-b''-b)   sector-level closed-surface statement (block 6; unchanged);
   (ii'-seed)  DISSECTED:
      - spectral routes: even automatically (T1) — covers every current
        framework-native weighting construction;
-     - phased single-plaquette seeds: cannot source the continuous theta
-       pairing anyway (T3 + block 10); their content is center-shadow
-       (discrete) only;
+     - phased single-plaquette seeds: their odd direction is the real
+       Im-trace reweighting (T3); flow/source conclusions require the
+       separate flow/shadow blocks;
      - the datum a genuine theta seed needs is conjugation-odd,
        orientation-correlated — pure-gauge-unsupplied (T2), living in
        determinant-phase structures (T4) = the registry's MASS side;
      - residual: the outer-evenness bridge candidate (audit semantics) OR
        equivalently the statement that the framework's eventual weighting
        derivation lies in the spectral/single-plaquette-seeded + glued
-       pattern — one sentence, now with every mathematical component
-       derivation-backed.
+       pattern — one sentence, now narrowed by this seed-kernel result.
 
 W_theta_bar_assembly: the hand-off target — the joint gauge/mass assembly
 (landed bridge), where the mass-side determinant-phase content lives.
@@ -194,17 +188,18 @@ determinant-readout content remains its own tracked admission class).
 No reflection positivity appears here. The no-forcing sharpening source
 (reality/positivity/CPT do not force theta = 0 among theories) is untouched
 and consistent: nothing here forces theta = 0 in general theory space; the
-theorems say the framework's supplied construction pattern cannot produce
-the phased/odd structure, and name exactly what could.
+theorems bound the spectral and pure-gauge supplied-structure routes to a
+phased/odd seed, and name exactly what additional data such a seed would
+need.
 
 ## What moves
 
 | Prior state | After this note |
 |---|---|
-| (ii'-seed) — one sentence, underived | dissected: spectral routes automatically even (exact); phased single-plaquette seeds moot for continuous theta (exact); needed datum located on the mass side (exact arithmetic + registry match); residual = one named bridge candidate |
-| "what would a phased seed even be" | answered exactly: its odd direction is the real Im-trace center-shadow reweighting, not an imaginary action (design claim refuted, documented) |
+| (ii'-seed) — one sentence, underived | dissected: spectral routes automatically even (exact); phased single-plaquette seed direction identified as real Im-trace reweighting; needed conjugation-odd datum located on the mass side (exact arithmetic + registry match); residual = one named bridge candidate |
+| "what would a phased seed even be" | answered exactly: its odd direction is the real Im-trace reweighting, not an imaginary action (design claim refuted, documented) |
 | supplied-structure status of conjugate pairs | exact: fusion + spectral profiles are conjugation-symmetric — the pure-gauge surface cannot distinguish them |
-| the admission's gauge side | at its end state: every mathematical component derivation-backed; what remains is an audit-level semantic adjudication (the outer-evenness bridge) or the equivalent construction-pattern statement |
+| the admission's gauge seed side | seed-kernel mathematics derived; what remains is an audit-level semantic adjudication (the outer-evenness bridge), the construction-pattern statement, and the separate flow/shadow/sliver inputs |
 
 ## What remains
 
@@ -236,12 +231,12 @@ This note does not claim:
 
 ## No-Go Discipline Gate (for the negative boundary)
 
-**Status:** PASS as bounded scoping inside positive constructions. The
+**Gate result:** bounded scoping inside positive constructions. The
 negative content: (a) phased seeds are not spectral-constructible (exact:
 spectral data are conjugation-invariant); (b) the pure-gauge supplied
-structure does not distinguish conjugate pairs (exact); (c) single-
-plaquette seed phases cannot source the continuous theta pairing through
-the plane-blind flow (exact, with block 10).
+structure does not distinguish conjugate pairs (exact). Flow/source
+exclusion for single-plaquette phases is left to the separate flow/shadow
+blocks and is not claimed here.
 
 ### N1 — Alternative-route enumeration
 
@@ -249,9 +244,9 @@ the plane-blind flow (exact, with block 10).
 |---|---|
 | spectral construction (C2, d functions) | EXCLUDED for oddness (T1: automatically even) — covers all current framework-native routes |
 | pure-gauge supplied-structure data | EXCLUDED (T2: conjugation-symmetric profiles) |
-| single-plaquette phased seed as continuous-theta source | MOOT (T3 + block 10: center shadow only; epsilon-odd pairing not flow-generable from any class seed) |
+| single-plaquette phased seed as continuous-theta source | NOT DECIDED HERE; T3 identifies the real Im-trace seed direction, while flow/source exclusion requires the separate flow/shadow blocks |
 | matter-sector conjugation-odd coupling | THE NAMED CHANNEL (T4): determinant phases — the registry's mass side; not this lane |
-| direct multi-plaquette anisotropic weighting supply | not generable by the plane-blind flow (block 10); would need its own framework derivation — no candidate route exists in the repo's current construction pattern (named, not foreclosed) |
+| direct multi-plaquette anisotropic weighting supply | would need its own framework derivation — no candidate route exists in the repo's current construction pattern (named, not foreclosed) |
 | operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
@@ -272,10 +267,10 @@ labeled as semantics for the audit lane, not smuggled as a theorem.
 
 ### N4 — Residual matching
 
-Block 10's (ii'-seed) is consumed and dissected; the registry's
-gauge/mass split is matched exactly (T4 routes the odd data where the
-registry already tracks them); the landed no-forcing row and the
-conditional-reality lane are respected and referenced without consumption.
+The (ii'-seed) kernel is dissected; the registry's gauge/mass split is
+matched exactly (T4 routes the odd data where the registry already tracks
+them); the landed no-forcing row and the conditional-reality lane are
+respected and referenced without consumption.
 
 ### N5 — Rhetoric audit
 
@@ -302,20 +297,21 @@ candidate is doing the real work and it is unproven." Correct and stated —
 it is named for the audit lane; the note's exact content stands without
 it, and the equivalent construction-pattern statement is available. (3)
 "Routing the odd data to the mass side just moves the admission." Yes — to
-exactly where the registry already put it: the gauge side's reduction is
-completed BY showing its kernel datum is mass-side content; that is the
-admission's own structure, now derivation-backed on the gauge half. All
-three absorbed into scope.
+exactly where the registry already put it: this seed-kernel result shows
+the relevant conjugation-odd datum is mass-side content. The admission's
+other components remain governed by their own lanes. All three absorbed
+into scope.
 
 ### N8 — Cross-cycle echo
 
-Cumulative guards (blocks 1-10) plus this block's additions: do not claim
+Cumulative guards plus this block's additions: do not claim
 the odd seed direction is an imaginary action (it is the real Im-trace
 reweighting — refuted-claim guard); do not treat the outer-evenness bridge
 as established; and route conjugation-odd content to the mass side rather
 than re-hunting it on the pure-gauge surface. Future cycles citing this
 chain must supply (i-a), (i-b''-a'), (i-b''-b), and the bridge adjudication
-(or the construction-pattern statement) explicitly.
+(or the construction-pattern statement), plus any separate flow/shadow
+input they need, explicitly.
 
 ## Verification
 
@@ -336,5 +332,5 @@ Wilson coefficients real and paired); B the spectral-reality theorem
 (three arbitrary real spectral functions flip-even; phased contrast breaks
 the gate); C supplied-structure conjugation-symmetry (fusion channel map;
 joint profiles); D seed-space splitting (even/odd decomposition; the odd
-direction identified as the real Im-trace center-shadow reweighting;
+direction identified as the real Im-trace reweighting;
 determinant phases conjugation-odd).

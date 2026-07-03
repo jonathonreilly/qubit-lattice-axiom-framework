@@ -33,8 +33,9 @@ Sections:
   D. Seed-space splitting: any class weight splits under the outer flip into
      even + odd; for the phased seed the even part is the real cos(alpha)
      weight and the odd part equals -2 c sin(alpha) Im(chi_F) — a
-     REAL-VALUED per-plaquette imaginary-trace reweighting (the naive
-     single-plaquette theta candidate; center-shadow-only per blocks 8/10),
+     REAL-VALUED per-plaquette imaginary-trace reweighting. This identifies
+     the single-plaquette candidate direction; flow/source conclusions belong
+     to separate campaign blocks, not this runner.
      NOT an imaginary action (design claim refuted by the computation);
      determinant phases are conjugation-ODD (arg det conj(M) = -arg det M):
      conjugation-asymmetric data of the needed type live in
@@ -238,7 +239,7 @@ check("C2 the joint supplied-structure profile (C2, d, fusion channels) of"
 # ---------------------------------------------------------------------------
 # Section D: seed-space splitting and where conjugation-odd data live
 # ---------------------------------------------------------------------------
-print("Section D: outer-flip splitting; the odd part is the theta carrier")
+print("Section D: outer-flip splitting; the odd part is the Im-trace direction")
 
 ok_split = True
 for (t1, t2) in SAMPLE_T:
@@ -257,17 +258,16 @@ for (t1, t2) in SAMPLE_T:
         and abs(odd - odd_pred) < 1e-9
 check("D1 seed-space splitting: the phased seed's even part is the real"
       " cos(alpha) weight and its odd part is i c sin(alpha)(chi_F -"
-      " chi_Fb) — exactly the campaign's theta carrier (blocks 8/10)",
+      " chi_Fb) — the real Im-trace candidate direction",
       ok_split)
 
 # the odd part i c sin(a)(chi_F - chi_Fb) = -2 c sin(a) Im(chi_F): a
 # REAL-VALUED flip-odd function — the per-plaquette imaginary-trace
-# direction, i.e. exactly the naive single-plaquette lattice theta
-# candidate that the campaign proved carries only the center shadow. The
+# direction, i.e. the naive single-plaquette lattice-theta candidate. The
 # design-time claim that the odd part is an imaginary-action direction was
 # REFUTED by this computation: at seed (single-plaquette) level the odd
-# direction is a real reweighting; the genuinely imaginary-action theta
-# phase exists only at the multi-plaquette pairing level.
+# direction is a real reweighting. Any conclusion about sourcing a
+# multi-plaquette theta phase through a flow is outside this runner.
 ok_odd = True
 for (t1, t2) in SAMPLE_T:
     odd = (weight_at(phased, t1, t2) - weight_at(phased, -t1, -t2)) / 2
@@ -275,16 +275,20 @@ for (t1, t2) in SAMPLE_T:
     ok_odd = ok_odd and abs(odd - pred) < 1e-9 and abs(odd.imag) < 1e-9
 check("D2 the odd seed direction is the REAL-VALUED per-plaquette"
       " imaginary-trace reweighting -2 c sin(a) Im(chi_F) — the naive"
-      " single-plaquette theta candidate (center-shadow-only per the"
-      " campaign), NOT an imaginary action; the genuine theta phase lives"
-      " only at the multi-plaquette pairing level", ok_odd)
+      " single-plaquette theta candidate, NOT an imaginary action; flow"
+      " sourcing of a multi-plaquette theta phase is outside this runner",
+      ok_odd)
 
 ok_det = True
 for _ in range(4):
     z = RNG.normal(size=(3, 3)) + 1j * RNG.normal(size=(3, 3))
     ph = np.angle(np.linalg.det(z))
     ph_bar = np.angle(np.linalg.det(np.conj(z)))
-    ok_det = ok_det and abs(ph_bar + ph) < 1e-12 or abs(abs(ph_bar + ph) - 2 * np.pi) < 1e-12
+    same_mod_turn = (
+        abs(ph_bar + ph) < 1e-12
+        or abs(abs(ph_bar + ph) - 2 * np.pi) < 1e-12
+    )
+    ok_det = ok_det and same_mod_turn
 check("D3 determinant phases are conjugation-ODD (arg det conj(M) ="
       " -arg det M): conjugation-asymmetric data of exactly the needed"
       " type live in determinant-phase structures — the mass side of the"

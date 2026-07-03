@@ -76,6 +76,79 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
 
 Recorded explicitly approved axiom updates:
 
+- **2026-07-02 -- Lattice site-distinction clause: site distinctions are
+  structural; rotations named about each site.** The Lattice axiom in
+  `docs/MINIMAL_AXIOMS_2026-06-29.md` is edited in place (owner-approved,
+  2026-07-02): the motion list now reads "proper cubic rotations about each
+  site," and one paragraph is added: "No site is privileged. Sites are
+  distinguished by the supplied lattice structure alone." -- the exact
+  structural mirror of the Qubit distinction clause. Effect: the clause
+  fixes the transformation class of the no-privilege naturality test on the
+  site side to the named lattice motions; distinctions carried by supplied
+  adjacency and motion structure are legitimate law and readout inputs;
+  distinctions requiring coordinate names, a chosen origin, preferred axes,
+  enumerated site lists, or unregistered frames are privilege. Record
+  content remains the state-side distinguisher under Record and the
+  Qualification. The "about each site" phrase is load-bearing for the
+  clause: it forecloses the fixed-center reading of the rotation list, on
+  which "the site fixed by every supplied rotation" would be a
+  supplied-structure definite description anchoring an origin; the
+  generated motion group is unchanged, since site-rotations are
+  translation-conjugates. "Supplied" is load-bearing: it pins "lattice
+  structure" to the first sentence's named list, excluding `Z^3`'s unlisted
+  canonical presentation structure (group identity at the zero triple,
+  coordinate order) from legitimate distinguishers. The sentences name no
+  operator, basis, weighting, selector, kinetic class, or value.
+  Validation provenance: five-seat blind honing panel, 2026-07-02, on the
+  latest complete foundation, with seven determinate test cases: unanimous
+  ADOPT of both parts as a mutually load-bearing package, all high
+  confidence, all test cases ruled identically (coordinate-named domains
+  fail; existential, relational, and record-content definite-description
+  conditions pass; Admissibility's universal quantification and covariance
+  class are unchanged; the record-collapse misreading is unavailable under
+  composition with Record and Admissibility). Owner selected the
+  distributive determiner "each" within the panel-validated wording.
+  Supersession: on the site side, the reading-note naturality phrase about
+  lattice motions is now carried by this axiom sentence; the reading note is
+  no longer load-bearing for site-distinction questions (procedural audit
+  content is unaffected). The premise-hash guard invalidates prior direct
+  `minimal_axioms` audits; the independent audit lane re-audits.
+
+- **2026-07-02 -- Qubit distinction clause: possibility distinctions are
+  structural.** One sentence is added to the Qubit axiom in
+  `docs/MINIMAL_AXIOMS_2026-06-29.md`, joined to the no-privilege sentence as
+  one paragraph: "No possibility is privileged. Possibilities are
+  distinguished by the supplied algebraic structure alone." (owner-approved,
+  2026-07-02; source file edited in place). Effect: the clause fixes the
+  transformation class of the no-privilege naturality test on the possibility
+  side to presentation-preserving relabelings -- distinctions carried by the
+  supplied presentation-invariant structure are legitimate law and readout
+  inputs; distinctions requiring names, enumerated state lists, or
+  unregistered frames are privilege. It names no operator, basis, weighting,
+  selector, kinetic class, or value; in particular it does not constrain
+  relative readout weights across structurally distinct cells, which remain
+  downstream theorem/registration content.
+  Validation provenance: five-seat blind physicist panel, 2026-07-02, ruling
+  on the reading of the no-privilege sentence plus the extensional naturality
+  note under a neutral three-reading brief (renaming-only /
+  presentation-closed / set-level exchange): unanimous presentation-closed,
+  all high confidence, none found the text ambiguous. Convergent anchors
+  recorded: the lattice-motions parallel (the named motion group is
+  structure-preserving, proper cubic rotations only); a set-level reading
+  would make the sentence itself name a weighting (uniform), contradicting
+  this section's certification that the 2026-07-02 sentences name no
+  weighting or value, and would collapse scalar readout to record counting
+  against the content-determination sentence; a renaming-only reading leaves
+  the relabeling conjunct extensionally inert against the "never by the
+  vocabulary" clause; the round-3 unregistered-frame entailment and the
+  canonical C_3 two-namings ratification state the presentation-closed
+  boundary directly.
+  Supersession: on the possibility side, the reading-note phrase "possibility
+  relabelings" is now carried by this axiom sentence; the reading note is no
+  longer load-bearing for possibility-distinction questions (procedural audit
+  content is unaffected). The premise-hash guard invalidates prior direct
+  `minimal_axioms` audits; the independent audit lane re-audits.
+
 - **2026-07-02 -- Foundation wording additions: no-privilege, readout
   determination, state definition, and law discipline.** Five sentences are
   added to `docs/MINIMAL_AXIOMS_2026-06-29.md` (owner-approved, 2026-07-02;

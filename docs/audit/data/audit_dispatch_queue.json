@@ -2,52 +2,6 @@
   "live": [
     {
       "actual_audit_status": "unaudited",
-      "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "unaudited",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Under the ratified k=1 qubit-per-site clause now on the canonical axiom surface, does the U4 closure row qualify as audited_decoration under cl3_complexification_split (as the prior audit verdict explicitly named), or does it require a different category?",
-      "blocked_by_group_ids": [],
-      "claim_id": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
-      "deps": [
-        "minimal_axioms",
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "unaudited",
-      "expected_current_claim_type": "positive_theorem",
-      "expected_current_effective_status": "unaudited",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "this k=1 qubit-per-site re-audit manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 1,
-      "group_id": "r1_substep1_chain",
-      "group_order": 1,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "queue_order": 1,
-      "ready": true,
-      "ready_blocker": null,
-      "runner_path": "scripts/frontier_u4_qubit_reframe_closure.py",
-      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
-    },
-    {
-      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
       "actual_effective_status": "unaudited",
       "allowed_context_paths": [
@@ -93,9 +47,9 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
-      "queue_order": 2,
+      "queue_order": 1,
       "ready": false,
-      "ready_blocker": "blocked_by_dependency:abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18:unaudited,hypercharge_identification_note:audited_conditional,no_per_site_chirality_theorem_note_2026-05-02:unaudited",
+      "ready_blocker": "blocked_by_dependency:abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18:unaudited,hypercharge_identification_note:audited_conditional",
       "runner_path": "scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py",
       "source_json_path": "docs/audit/data/anomaly_forces_time_reaudit_queue_2026-06-21.json",
       "source_schema": "promotion_reaudit_queue.v1",
@@ -139,7 +93,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md",
-      "queue_order": 3,
+      "queue_order": 2,
       "ready": false,
       "ready_blocker": "blocked_by_dependency:observable_principle_from_axiom_note:unaudited,s3_anomaly_spacetime_lift_note:unaudited,universal_gr_tensor_variational_candidate_note:unaudited,universal_gr_tensor_quotient_uniqueness_note:unaudited",
       "runner_path": "scripts/frontier_universal_gr_polarization_frame_bundle.py",
@@ -186,7 +140,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "queue_order": 4,
+      "queue_order": 3,
       "ready": false,
       "ready_blocker": "blocked_by_dependency:kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20:unaudited,lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:unaudited",
       "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
@@ -240,7 +194,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
-      "queue_order": 5,
+      "queue_order": 4,
       "ready": false,
       "ready_blocker": "blocked_by_live_group:anomaly_forces_time_bridge_fresh_context",
       "runner_path": "scripts/frontier_anomaly_forces_time.py",
@@ -249,9 +203,9 @@
       "state": "live"
     }
   ],
-  "live_count": 5,
+  "live_count": 4,
   "policy": "target_selection_only_not_audit_evidence",
-  "ready_count": 1,
+  "ready_count": 0,
   "resolved_or_invalid": [
     {
       "actual_audit_status": "audited_clean",
@@ -1063,46 +1017,6 @@
         "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
         "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
       ],
-      "audit_question": "Does the finite Clifford volume-chirality parity theorem qualify as positive_theorem under clarified A1/A2?",
-      "blocked_by_group_ids": [],
-      "claim_id": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
-      "deps": [],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 2,
-      "group_id": "local_clifford_algebra",
-      "group_order": 1,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "runner_path": "scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py",
-      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved_or_superseded"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
-        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
-      ],
       "audit_question": "Does the exact translation-character/projector algebra qualify as positive_theorem without promoting physical generation claims?",
       "blocked_by_group_ids": [],
       "claim_id": "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
@@ -1656,6 +1570,49 @@
       "state": "resolved_or_superseded"
     },
     {
+      "actual_audit_status": "audited_renaming",
+      "actual_claim_type": "positive_theorem",
+      "actual_effective_status": "audited_renaming",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Under the ratified k=1 qubit-per-site clause now on the canonical axiom surface, does the U4 closure row qualify as audited_decoration under cl3_complexification_split (as the prior audit verdict explicitly named), or does it require a different category?",
+      "blocked_by_group_ids": [],
+      "claim_id": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
+      "deps": [
+        "minimal_axioms",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "unaudited",
+      "expected_current_claim_type": "positive_theorem",
+      "expected_current_effective_status": "unaudited",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "this k=1 qubit-per-site re-audit manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 1,
+      "group_id": "r1_substep1_chain",
+      "group_order": 1,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "runner_path": "scripts/frontier_u4_qubit_reframe_closure.py",
+      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
       "actual_audit_status": "unaudited",
       "actual_claim_type": "positive_theorem",
       "actual_effective_status": "unaudited",
@@ -1870,9 +1827,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "unaudited",
+      "actual_audit_status": "audited_clean",
       "actual_claim_type": "no_go",
-      "actual_effective_status": "unaudited",
+      "actual_effective_status": "retained_no_go",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -2089,6 +2046,56 @@
       "resolution_reason": "bounded_terminal_after_reaudit",
       "runner_path": "scripts/causal_propagating_field.py",
       "source_json_path": "docs/audit/data/causal_field_live_reaudit_queue_2026-06-18.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved"
+    },
+    {
+      "actual_audit_status": "audited_clean",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "retained_bounded",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Does the finite Clifford volume-chirality parity theorem qualify as positive_theorem under clarified A1/A2?",
+      "blocked_by_group_ids": [],
+      "claim_id": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+      "deps": [],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 2,
+      "group_id": "local_clifford_algebra",
+      "group_order": 1,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "resolution_evidence": {
+        "audit_date": "2026-07-02T21:37:51.052628+00:00",
+        "audit_status": "audited_clean",
+        "auditor": "codex-audit-loop-gpt-5.5-20260702T213751Z-40602d2c-clifford_volume_chiralit",
+        "auditor_family": "codex-gpt-5.5",
+        "claim_type": "bounded_theorem",
+        "independence": "fresh_context"
+      },
+      "resolution_manifest_date": "2026-05-22",
+      "resolution_reason": "bounded_terminal_after_reaudit",
+      "runner_path": "scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py",
+      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved"
     },

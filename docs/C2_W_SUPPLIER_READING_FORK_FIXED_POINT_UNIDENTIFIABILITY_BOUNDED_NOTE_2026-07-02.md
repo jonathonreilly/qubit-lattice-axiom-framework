@@ -1,10 +1,10 @@
 # C2 W-Supplier Reading Fork and Fixed-Point Unidentifiability
 
 **Date:** 2026-07-02
-**Type:** bounded theorem (reading fork + degeneration on a named class)
+**Type:** bounded_theorem
 **Claim type:** bounded_theorem
-**Status authority:** independent audit lane only. This source note writes no audit verdict, sets no audit status, and forecasts no audit outcome.
-**Actual current surface status:** bounded reading-fork result on the block11 class; sibling campaign citations are review-pending.
+**Scope boundary:** Bounded reading-fork and fixed-point unidentifiability on the named two-cell rational-content class only; neither reading is adjudicated, no wall is closed, CTX-match remains open, no dictionary or value is selected, and no axiom, primitive, registry, audit, or publication surface is edited.
+**Audit boundary:** independent audit lane only. This source note writes no audit verdict, sets no audit status, and forecasts no audit outcome.
 **Primary runner:** [`scripts/frontier_c2_w_supplier_reading_fork_2026_07_02.py`](../scripts/frontier_c2_w_supplier_reading_fork_2026_07_02.py)
 **Runner output:** [`outputs/frontier_c2_w_supplier_reading_fork_2026_07_02.txt`](../outputs/frontier_c2_w_supplier_reading_fork_2026_07_02.txt)
 
@@ -169,15 +169,15 @@ Flow-selected equipartition then explains why diagonal ratio readouts cannot ide
 - Does not merge READ with R*.
 - Does not treat review-pending sibling citations as landed authority.
 
-## Dependencies
+## Dependencies And Context
 
-On-main files read for this block:
+Load-bearing dependency and governance surfaces:
 
 - [`docs/MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
 - [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](audit/AXIOM_MINIMALITY_POLICY.md)
 - [`docs/EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md`](EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md)
-- [`docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md`](OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md)
-- [`docs/C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md`](C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md)
+
+Context surfaces only, not dependency links: `OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md` names the source of the flow motif, but the runner recomputes the fixed-set algebra inline; `C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md` names the context label, but the runner recomputes the C3 table-preserving maps inline.
 
 Review-pending campaign context cited without reading their branches:
 

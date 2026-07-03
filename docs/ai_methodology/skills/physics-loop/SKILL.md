@@ -285,8 +285,10 @@ bounded imports. They must already be recorded in
 dependencies without bounding downstream rows. Tier-A admitted derivation
 targets live in `docs/audit/data/tier_a_admissions.json` and remain bounded
 until retired. The approved axiom baseline is the current
-Lattice/Qubit/Admissibility/Record surface: no possibility is privileged; a
-site need not carry a record; when present, a record locks exactly one
+Lattice/Qubit/Admissibility/Record surface: no site is privileged; sites are
+distinguished by the supplied lattice structure alone; no possibility is
+privileged; possibilities are distinguished by the supplied algebraic structure
+alone; a site need not carry a record; when present, a record locks exactly one
 available local possibility; only records are readable; readout value is
 determined by record content alone; finite scalar readout is additive over
 finite pairwise-disjoint record collections; a state is a configuration of

@@ -1,11 +1,13 @@
 # Higgs Y_H from LHCM-Derived Hypercharges and Yukawa Structure
 
 **Date:** 2026-05-02
-**Status:** exact algebraic identity / support theorem on retained
+**Type:** bounded_theorem
+**Scope boundary:** exact algebraic identity / support theorem on the
 graph-first surface + LHCM closure trio (cycles 1-3) + Yukawa-structure
 admitted SM convention. NOT proposed_retained — see
 CLAIM_STATUS_CERTIFICATE.md.
-**Primary runner:** `scripts/frontier_higgs_y_from_lhcm_yukawa.py`
+**Audit boundary:** the independent audit lane owns all verdicts.
+**Primary runner:** `scripts/frontier_higgs_y_from_lhcm_yukawa.py` (41 checks)
 **Authority role:** exact-support theorem extending the LHCM atlas
 (cycle 6 / PR #262) to derive the Higgs Y assignment on the SM Yukawa
 surface.
@@ -127,9 +129,11 @@ bare_retained_allowed: false
 
 - primary runner:
   [`scripts/frontier_higgs_y_from_lhcm_yukawa.py`](../scripts/frontier_higgs_y_from_lhcm_yukawa.py)
-  — verifies (a) all four Yukawa couplings give Y_H = +1 at exact rational
-  precision, (b) cross-check consistency across the four couplings, (c)
-  with conjugate field Y rules, (d) non-closure documentation.
+  — 41 checks; verifies (a) the displayed Yukawa closure equations by a
+  linear solve for Y_H, (b) per-term neutralities across the four couplings,
+  (c) conjugate-field sign refutations, (d) wrong-Y_H violations, (e) the
+  electric-charge consequence Q(H+)=+1 / Q(H0)=0 at the solved Y_H, and (f)
+  source-boundary pins.
 
 ## 6. Cross-references
 
@@ -137,3 +141,7 @@ bare_retained_allowed: false
 - LHCM closure trio: PRs [#254](https://github.com/jonathonreilly/cl3-lattice-framework/pull/254), [#255](https://github.com/jonathonreilly/cl3-lattice-framework/pull/255), [#256](https://github.com/jonathonreilly/cl3-lattice-framework/pull/256) (cycles 1-3)
 - [`STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md`](STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md)
 - Halzen-Martin SM Yukawa structure
+
+## 7. Changelog
+
+- 2026-07-02 — runner hardened to discriminating grade: added linear-system Yukawa closure solve, wrong-Y_H refutations, conjugate-field sign discriminator, electric-charge consequence at the solved Y_H, and source-boundary firewall; check count 20 -> 41.

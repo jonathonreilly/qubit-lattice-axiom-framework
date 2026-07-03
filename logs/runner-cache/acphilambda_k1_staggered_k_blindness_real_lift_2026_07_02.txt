@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py
-runner_sha256: 10390c6461db7044a0320d5e6f710fe1344eeaf73501f2de1e406475b21c098f
+runner_sha256: 4a404c4e0750948a5f0542e6ac2c8d50536b44d5f4acb024155169a7851a5b28
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.37
@@ -14,9 +14,14 @@ A - sources and pins
 [PASS] Dirac-row dependency exists -- STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md
 [PASS] true dependency pins are present
 [PASS] ledger row found for the dependency
-[PASS] note quotes the LEDGER claim_scope verbatim (authority gate)
-[PASS] quote marker appears exactly once
-[PASS] note does not present the file's self-declared scope as the ledger scope
+ledger row live audit fields (informational; the audit lane owns them): effective_status='unaudited', claim_scope=null
+[PASS] dependency claim-scope block located in the dependency note
+[PASS] note carries exactly three premise scope quotes
+[PASS] premise quote 1 is substantive and verbatim in the dependency claim-scope block
+[PASS] premise quote 2 is substantive and verbatim in the dependency claim-scope block
+[PASS] premise quote 3 is substantive and verbatim in the dependency claim-scope block
+[PASS] note pins no audit-grade label on the premise quotes
+[PASS] retired ledger-condensed scope wording absent from note
 [PASS] primary runner link points to this script
 [PASS] source note declares canonical Type no_go
 [PASS] source note uses audit-boundary wording, not legacy status label
@@ -106,8 +111,8 @@ E - note discipline
 [PASS] source-instruction phrase absent: runner greps
 [PASS] source-instruction phrase absent: anti-fabrication
 
-Runtime: 0.14 s
-TOTAL: PASS=79 FAIL=0
+Runtime: 0.13 s
+TOTAL: PASS=83 FAIL=0
 
 ----- stderr -----
 

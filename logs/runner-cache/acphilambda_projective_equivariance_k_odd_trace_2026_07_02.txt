@@ -1,18 +1,23 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_projective_equivariance_k_odd_trace_2026_07_02.py
-runner_sha256: 347cb6c80f4f47ee3f3d39d319f5a7ef4acdb012761a602f73a40d3eeb11a316
+runner_sha256: 13c8ed10add27dbce98336c89bd5a9543910b4f1523f767a7d855822848e35fc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.56
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 [PASS] paired note exists
-[PASS] retained input note exists
+[PASS] premise source note exists
 [PASS] ledger exists
-[PASS] ledger row found for retained input
-[PASS] source note self-scope is not authority
-[PASS] ledger quoted scope matches exactly
-[PASS] quoted-scope line names retained_bounded once
+[PASS] ledger row found for premise source
+ledger row live audit fields (informational; the audit lane owns them): effective_status='unaudited', claim_scope=null
+[PASS] dependency claim-scope block located in source note
+[PASS] note carries exactly three premise scope quotes
+[PASS] premise quote 1 is substantive and verbatim in the dependency claim-scope block
+[PASS] premise quote 2 is substantive and verbatim in the dependency claim-scope block
+[PASS] premise quote 3 is substantive and verbatim in the dependency claim-scope block
+[PASS] premise line pins no audit-grade label
+[PASS] retired ledger-condensed scope wording absent from note
 [PASS] header carries primary runner link
 [PASS] heat-trace anchors are printed in note
 [PASS] fixed-seed dense probe is nondegenerate
@@ -63,10 +68,10 @@ status: ok
 [PASS] link inventory is one md dependency plus one runner
 [PASS] in-flight campaign ids are backticked, not linked
 [PASS] instruction-leakage strings absent from note
-[PASS] note does not present file-self scope as ledger scope
+[PASS] note quotes the dependency claim-scope block, not a ledger-authority line
 [PASS] canonical type, audit boundary, and bounded gate are stated
 [PASS] runtime under 90 seconds
-TOTAL: PASS=60 FAIL=0
+TOTAL: PASS=64 FAIL=0
 
 ----- stderr -----
 

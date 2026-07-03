@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/staggered_dirac_coupling_sign_channel_registration_check_2026_07_03.py
+runner_sha256: 042efc0b572e944ebab03e7bf75253837814635580d1131602811214f9a5318c
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.97
+status: ok
+----- stdout -----
+[PASS] [S1]  1. 3D eta has flux -1 and satisfies F2/F3 on 4^3 open patch  |  flux=True, F2=True, F3=True
+[PASS] [S1]  2. 2D eta has flux -1 on every plaquette of 5x5 open patch  |  bad_flux_count=0
+[PASS] [S1]  3. wrong eta family is rejected by a +1 plaquette flux  |  plus_flux=64/192
+[PASS] [S1]  4. torus eta wrap well-definedness accepts (4,4,4),(4,4,3) and rejects (3,4,4)  |  violations=(444:0,443:0,344:96)
+[PASS] [S2]  5. single plaquette Z[1,1.1] = Z[eta,-1.1]  |  rel=0.000e+00
+[PASS] [S2]  6. single plaquette Z[1,-0.7] = Z[eta,0.7]  |  rel=0.000e+00
+[PASS] [S2]  7. same-sign replacement rejector on single plaquette  |  rel=6.722e-01
+[PASS] [S2]  8. two-plaquette strip tree-gauge Z[1,0.9] = Z[eta,-0.9]  |  rel=2.039e-16
+[PASS] [S2]  9. single plaquette <tr(H^4)> covariant under replacement  |  rel=0.000e+00
+[PASS] [S2] 10. N=24 vs N=48 Z[1,1.1] quadrature convergence  |  rel=0.000e+00
+[PASS] [S3] 11. Bessel trapezoid M vs 2M convergence for n=0..8  |  max=5.551e-17
+[PASS] [S3] 12. generating-function anchor sum_n I_n(1.3) = exp(1.3)  |  rel=5.083e-15
+[PASS] [S3] 13. 2x1 torus brute quadrature matches Bessel #P=2  |  rel=3.749e-16
+[PASS] [S3] 14. even #P torus is sign-blind in character expansion  |  max_rel=0.000e+00
+[PASS] [S3] 15. odd #P=9 torus registers sign at beta=1.3  |  D=0.520954241203
+[PASS] [S3] 16. even-charge-only discriminator removes #P=9 difference  |  diff=0.000e+00
+[PASS] [S3] 17. odd-sector formula equals the #P=9 sign difference  |  rel=1.110e-16
+[PASS] [S4] 18. 2D GF(2) examples accept even area and reject 3x3
+[PASS] [S4] 19. 2D GF(2) law matches L1*L2 even for 2..5
+[PASS] [S4] 20. 3D GF(2) examples accept at most one odd side
+[PASS] [S4] 21. 3D GF(2) law matches at most one odd side on {2,3}^3
+[PASS] [S5] 22. I1/I0 first moment matches separate Simpson quadrature  |  max_rel=1.110e-16
+[PASS] [S5] 23. first moment is odd in beta  |  max=1.110e-16
+[PASS] [S5] 24. first moment is sign-faithful on the beta grid  |  min_margin=1.040e-01
+[PASS] [S5] 25. pure-gauge open plaquette <Re u_P> matches I1/I0  |  rel=1.110e-16
+[PASS] [S6] 26. beta=-25 mass within |theta-pi|<0.5 exceeds 0.98  |  mass=0.986145044225
+[PASS] [S6] 27. beta=+25 mass within |theta-pi|<0.5 is tiny  |  mass=1.694e-21
+[PASS] [S6] 28. circular width ratio follows 1/sqrt(|beta|)  |  ratio=2.01559040759
+[PASS] [S7] 29. K0 eigenvalues match 2 sum_i cos(k_i) for L=4,6  |  max=1.510e-14
+[PASS] [S7] 30. K1 H^2 eigenvalues match 4 sum_i cos^2(k_i) for L=4,6  |  max=2.132e-14
+[PASS] [S7] 31. operator identity H[eta]^2 = sum_i(S_2i+S_2i^T+2I)  |  max=0.000e+00
+[PASS] [S7] 32. wrong cochain rejects the operator and spectral anchors  |  resid=4.000e+00, eig_dev=8.000e+00
+[PASS] [S7] 33. K1 exact zero count is 8 for L=4,8  |  counts=[8, 8]
+[PASS] [S7] 34. K1 L=6 finite-size gap matches grid formula  |  gap=1.73205080757, grid=1.73205080757
+[PASS] [S7] 35. K0 zero counts match grid and grow from L=8 to L=12  |  eig=[68, 140], grid=[68, 140]
+[PASS] [S7] 36. wrong sin^2 anchor rejected at L=6 but coincides at L=4  |  L6_dev=3.000e+00, L4_dev=2.250e-31
+[PASS] [S8] 37. combined field H[eta,u] and H[1,eta u] have identical spectra  |  max=0.000e+00
+[PASS] [S8] 38. generic-link rejector distinguishes H[1,u] from H[1,eta u]  |  max_dev=3.159e-01
+[PASS] [S9] 39. Kawamoto-Smit ledger claim_scope appears verbatim in the note
+TOTAL: PASS=39 FAIL=0
+
+----- stderr -----
+

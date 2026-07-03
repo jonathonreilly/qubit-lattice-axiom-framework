@@ -1,41 +1,50 @@
 ========================================================================
 frontier_time_axis_is_history_index_2026_07_03
-exact-arithmetic runner (int/tuple/set/dict only; NO floats)
-bounded theorem (T1-T3) + bounded support (T4-T5)
-record nesting is CONDITIONAL on PR #4874 (records are permanent)
+exact-arithmetic runner (int/tuple/set/frozenset/dict only; NO floats)
+bounded theorem (T1-T2) + bounded observation (T3) + bounded support (T4-T5)
+record nesting grounded on LANDED permanence (records are permanent; commit 50f0db6187)
 ========================================================================
 -- T1: the stacked representation (4th direction IS the history index)
--- T2: record nesting marks the index direction (cond. on #4874 + realized sector)
+-- T2: record nesting marks the index direction (quantifier-scoped, one criterion)
 -- T3: second-clock exclusion is type-level (record layer never needed the premise)
--- T4: reconciliation -- operator-scaffolding symmetry vs record-content asymmetry
--- T5: consequence + complete residue enumeration (the #1 refutation failure mode)
+-- T4: reconciliation -- live quote guards on S3' + record-content axis structure
+-- T5: consequence + residue enumeration PARSED from the note (single source of truth)
 ------------------------------------------------------------------------
 CHECK 01: PASS -- T1 stack construction exact: S[(x,t)] = h_t at x, no phantom cells
 CHECK 02: PASS -- T1 slice-extraction round-trip: slice_time(S,t) == h_t for all t
 CHECK 03: PASS -- T1 full round-trip: reconstruct(S) == (h_0,...,h_T)
 CHECK 04: PASS -- T1 4th-axis coordinate set == {0..T}: the 4th direction is the history index
-CHECK 05: PASS -- T2a index slices share one site set (WINDOW of Z^3): same-site identification is native
-CHECK 06: PASS -- T2a record nesting rec(h_t) subset rec(h_{t+1}) all t (permanence, CONDITIONAL on #4874)
-CHECK 07: PASS -- T2c event-bearing: at least one strict record inclusion (>= one event)
-CHECK 08: PASS -- T2a permanence falsifier: value-flip history is rejected by nesting (value-invariance enforced)
+CHECK 05: PASS -- T2a same-site native: index slices share one Z^3 set; x1 opposite slices disjoint & partition it
+CHECK 06: PASS -- T2a record nesting rec(h_t) subset rec(h_{t+1}) all t (permanence, LANDED commit 50f0db6187)
+CHECK 07: PASS -- T2 event-bearing: at least one strict record inclusion (>= one event)
+CHECK 08: PASS -- T2a permanence falsifier: value-flip history rejected by nesting (value-invariance enforced)
 CHECK 09: PASS -- T2b spatial slices (x1=0 vs x1=1) have disjoint Z^3 site supports
 CHECK 10: PASS -- T2b raw spatial record sets disjoint => containment undefined without translation identification
-CHECK 11: PASS -- T2b under translation identification, x1-slice record sets are incomparable (nesting fails)
-CHECK 12: PASS -- T2b under translation identification, x2-slice record sets are incomparable (nesting fails)
-CHECK 13: PASS -- T2b under translation identification, x3-slice record sets are incomparable (nesting fails)
-CHECK 14: PASS -- T2c static history: every direction trivially monotone (marking non-unique) => realized-sector conditioning
-CHECK 15: PASS -- T2 event-bearing witness: history index is the UNIQUE record-nesting direction
-CHECK 16: PASS -- T3 grid admits record nesting along i (all fixed j)
-CHECK 17: PASS -- T3 grid admits record nesting along j (all fixed i)
-CHECK 18: PASS -- T3 both grid directions non-degenerate (a strict record step in each)
-CHECK 19: PASS -- T3 incomparable off-diagonal cells => record-order not total => not a single sequence
-CHECK 20: PASS -- T3 degenerate-j grid collapses to a single chain along i (one clock remains)
-CHECK 21: PASS -- T4 operator scaffolding (NN adjacency) is sigma-invariant under t<->x1 swap (residual-0 analog)
-CHECK 22: PASS -- T4 record content is NOT sigma-invariant: operator-axis symmetry does not reach record content
-CHECK 23: PASS -- T4 same cube: record nesting holds along time-axis, fails along swapped spatial axis (no contradiction)
-CHECK 24: PASS -- T4 B-AXIS decomposition covers {1a,1b,2,3}; axis-selection CONDITIONAL/OPEN, B-AXIS.3 UNCHANGED
-CHECK 25: PASS -- T5 residue enumeration == required set exactly (no residue dropped or invented)
-CHECK 26: PASS -- T5 residue count == 11
-CHECK 27: PASS -- T5 critical flags: representation bridge OPEN; #4874 in-flight; nothing adopted; audit lane owns statuses
+CHECK 11: PASS -- T2(i) UNIVERSAL: index direction nests for EVERY realized history (permanence, LANDED commit 50f0db6187)
+CHECK 12: PASS -- T2(ii) generic witness: x1 translation-identified slices incomparable (spatial nesting fails)
+CHECK 13: PASS -- T2(ii) generic witness: x2 translation-identified slices incomparable (spatial nesting fails)
+CHECK 14: PASS -- T2(ii) generic witness: x3 translation-identified slices incomparable (spatial nesting fails)
+CHECK 15: PASS -- T2(ii) second independent witness: x2 slices incomparable while index nests
+CHECK 16: PASS -- T2(iii) generic witness: history index is the UNIQUE record-monotone direction
+CHECK 17: PASS -- T2(iii) degeneracy D1 single-record: NOT unique (empty opposite slices comparable)
+CHECK 18: PASS -- T2(iii) degeneracy D1 uniform-burst: NOT unique (x1 slices translation-identified EQUAL)
+CHECK 19: PASS -- T2(iii) degeneracy D1 translation-invariant: NOT unique (x1 slices EQUAL; growth translation-invariant)
+CHECK 20: PASS -- T2(iii) degeneracy D1 face-confined: NOT unique (records confined to x1=0 face; x1=1 slice empty)
+CHECK 21: PASS -- T2(iii) degeneracy D0 static: every direction trivially monotone (event-free; marking non-unique)
+CHECK 22: PASS -- T3 grid admits record nesting along i (all fixed j)
+CHECK 23: PASS -- T3 grid admits record nesting along j (all fixed i)
+CHECK 24: PASS -- T3 both grid directions non-degenerate (a strict record step in each)
+CHECK 25: PASS -- T3 dichotomy horn A: incomparable off-diagonal => order NOT total => not a single sequence
+CHECK 26: PASS -- T3 degenerate-j grid collapses to a single chain along i (one clock remains)
+CHECK 27: PASS -- T3 dichotomy horn B: totally-ordered grid (cells ~ i+j) serializes to a single chain (one clock remains)
+CHECK 28: PASS -- T4 quote guard: single-clock note carries the S3' certificate W M_KS W^T = M_KS with the sign field
+CHECK 29: PASS -- T4 quote guard: S3' non-triviality -- plain permutation without the sign field FAILS
+CHECK 30: PASS -- T4 quote guard (transitional): axioms file carries the LANDED permanence clause (records are permanent; commit 50f0db6187, authoritative) OR the pre-restoration locking clause (invariant under repeated readout; pre-restoration checkouts only)
+CHECK 31: PASS -- T4 statement guard: note carries the reconciliation/resonance sentence
+CHECK 32: PASS -- T4 record-content: generic history singles out index; symmetric history axis-blind (resonance with S3')
+CHECK 33: PASS -- T4 B-AXIS decomposition covers {1a,1b,2,3}; axis-selection CONDITIONAL/OPEN incl. periodic compactification; B-AXIS.3 UNCHANGED
+CHECK 34: PASS -- T5 residue list parsed from the note has 15 entries (got 15)
+CHECK 35: PASS -- T5 required residue keys present in the note's parsed list (missing: none)
+CHECK 36: PASS -- T5 four new residues present (translation convention; witness/window; four-axis; event import) (missing: none)
 ------------------------------------------------------------------------
-TOTAL: PASS=27 FAIL=0
+TOTAL: PASS=36 FAIL=0

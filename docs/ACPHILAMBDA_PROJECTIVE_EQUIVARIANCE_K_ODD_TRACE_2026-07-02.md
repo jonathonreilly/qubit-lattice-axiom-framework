@@ -1,8 +1,8 @@
 # AC_phi_lambda Projective Equivariance And The K-Odd Equivariant Trace
 
 **Date:** 2026-07-02
-**Claim type:** bounded theorem / mechanism assembly
-**Status authority:** independent audit lane only. This note does not set an audit verdict, edit registries, register primitives, change axioms, or claim `AC_phi_lambda` retirement.
+**Type:** bounded_theorem
+**Audit boundary:** the independent audit lane owns all verdicts. This note does not set an audit verdict, edit registries, register primitives, change axioms, or claim `AC_phi_lambda` retirement.
 **Primary runner:** [`scripts/acphilambda_projective_equivariance_k_odd_trace_2026_07_02.py`](../scripts/acphilambda_projective_equivariance_k_odd_trace_2026_07_02.py) (`TOTAL: PASS=60 FAIL=0`, deterministic, measured below).
 
 ## Claim
@@ -171,7 +171,7 @@ It does not retire `AC_phi_lambda`, derive a numerical `phi`, select the physica
 
 ## No-Go Discipline Gate
 
-**Status:** PASS bounded; not a terminal no-go.
+**Gate result:** PASS bounded; not a terminal no-go.
 
 - **N1 alternative routes.** Zero-flux two-component route gives torsion-only K-breaking, no R-valued datum, as shown here. Composed flux route remains open as the assembled shape with value = the wall. Occurrence lane remains open separate. Owner primitive remains GOVERNANCE.
 - **N2 wall independence.** The K-odd observable is an observable type, not a wall. The existing wall names remain `W_cycle_holonomy_value`, `W_defect_identity_unit`, and `W_defect_readout_selection`.

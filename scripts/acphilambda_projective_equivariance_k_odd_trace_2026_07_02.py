@@ -237,7 +237,14 @@ def main() -> int:
     ]
     check("instruction-leakage strings absent from note", all(x not in note for x in leaks))
     check("note does not present file-self scope as ledger scope", "**Claim scope:**" not in note and "Ledger scope quote" in note)
-    check("status authority and bounded PASS gate are stated", "**Status authority:** independent audit lane only." in note and "**Status:** PASS bounded; not a terminal no-go" in note)
+    legacy_status_label = "Status " + "authority"
+    check(
+        "canonical type, audit boundary, and bounded gate are stated",
+        "**Type:** bounded_theorem" in note
+        and "**Audit boundary:**" in note
+        and legacy_status_label not in note
+        and "**Gate result:** PASS bounded; not a terminal no-go" in note,
+    )
     check("runtime under 90 seconds", time.perf_counter() - start < 90.0)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

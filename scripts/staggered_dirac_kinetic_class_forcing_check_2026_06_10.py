@@ -24,7 +24,7 @@ What is computed (nothing load-bearing is asserted without computation):
        2^12 sign systems on the unit cube.
 
   [B]  Absorbing-frame theorem (P-SD discharge on the K1 branch).  (i) No-spectator:
-       CAR(2) is simple with unique 4-dim irrep, so the minimal-Quantum
+       CAR(2) is simple with unique 4-dim irrep, so the minimal-Qubit
        one-site qubit carrier C^2 has no room for a per-site 2-component spinor; any
        site-local realization of the naive-Dirac kinetic structure must
        absorb the Cl(3) vector vertex into site-local unitary frames
@@ -351,21 +351,21 @@ u4_yaml_dep = re.search(
 u4_plain_context = (
     "audited-renaming/provenance context for older U4 language only" in note_text
 )
-minimal_quantum_context = (
-    "current minimal Quantum axiom" in note_text and "check 10" in note_text
+minimal_qubit_context = (
+    "current minimal Qubit axiom" in note_text and "check 10" in note_text
 )
 check(
     n,
     "S",
     "source note carries no load-bearing U4 markdown/YAML dependency; "
     "U4 remains plain-text renaming provenance, while the C^2 "
-    "no-spectator input is sourced from the minimal Quantum axiom, "
+    "no-spectator input is sourced from the minimal Qubit axiom, "
     "retained Cl(3) classification, and CAR(2) dimension check",
     (
         u4_markdown_dep is None
         and u4_yaml_dep is None
         and u4_plain_context
-        and minimal_quantum_context
+        and minimal_qubit_context
     ),
 )
 
@@ -551,7 +551,7 @@ print("\n--- [B] Absorbing-frame theorem: P-SD discharged on the flux(-1) branch
 
 _B_results = []
 
-# B: CAR(2) needs per-site dim 4 -- no spectator spinor on the minimal-Quantum C^2 carrier
+# B: CAR(2) needs per-site dim 4 -- no spectator spinor on the minimal-Qubit C^2 carrier
 n += 1
 # JW rep of two modes on C^4
 a1 = sp.Matrix(np.kron(np.array([[0, 1], [0, 0]]), np.eye(2)))
@@ -582,7 +582,7 @@ dim_alg = Mb.rank()
 ok = car_ok and dim_alg == 16
 _B_results.append(check(n, "B", "no-spectator lemma: CAR(2) is exactly verified on C^4 and "
               "generates the full M_4(C) (dim 16, simple => unique faithful "
-              "irrep has dim 4 > 2): the minimal-Quantum per-site C^2 "
+              "irrep has dim 4 > 2): the minimal-Qubit per-site C^2 "
               "carries NO 2-component spinor; site-local frame absorption "
               "(the P-SD scalarization) is the only site-local route",
       ok, f"computed algebra dim = {dim_alg}"))

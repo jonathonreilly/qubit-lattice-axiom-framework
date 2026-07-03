@@ -91,16 +91,15 @@ The residual (i-b') accordingly sharpens to:
 
 ## Source surface (named authorities)
 
-1. **Record axiom, clarified text** (approved axiom node `minimal_axioms`,
+1. **Record axiom** (approved axiom node `minimal_axioms`,
    [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md), as
-   updated on the live main by the three clarification commits), quoted:
+   landed on main at commit 7950d9202c), quoted:
 
-   > "A site need not carry a record. When present, a record locks exactly
-   > one local possibility from the subset available at that site under
-   > Admissibility; the locked possibility is invariant under repeated
-   > readout. Only records are readable. A readout value is determined by
-   > record content alone. For any finite collection of pairwise-disjoint
-   > records, scalar readout `I` is additive, with `I(empty)=0`."
+   > "When present, a record locks exactly one admissible local possibility. A
+   > site never carries more than one record; records are permanent. Only
+   > records are readable. A readout value is determined by record content
+   > alone. For any finite collection of pairwise-disjoint records, scalar
+   > readout `I` is additive, with `I(empty)=0`."
 
    and from the Qualification section:
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_link_binary_registration_capacity_step_kernel_pin_2026_07_02.py
-runner_sha256: b8f21aa703b6a9450b5e62e7a7676e866426dd4da2f9a68d2fce17ad5f07d02f
-timeout_sec: 240
+runner_sha256: 96206a4c50d116fb5926d1dc0db5f470d73cda429072b38915ac17ea4437af7c
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.53
+elapsed_sec: 3.59
 status: ok
 ----- stdout -----
 Gauge-link binary registration capacity step-kernel pin runner
@@ -74,7 +74,7 @@ PASS F0-dep-exists-rigidity: docs/G_BARE_RIGIDITY_THEOREM_NOTE.md
 PASS F0-dep-exists-controlled-copy: docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md
 PASS F0-dep-exists-semigroup: docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md
 PASS F1-axioms-qubit-clause: needle='The full one-site possibility domain has algebraic presentation `M_2(C)`.'
-PASS F1-axioms-record-clause: needle='a record locks exactly one local possibility'
+PASS F1-axioms-record-clause: needle='a record locks exactly one admissible local possibility'
 PASS F1-axioms-no-weights-clause: needle='transition probabilities or weights'
 PASS F1-graph-first-marker: needle='the joint commutant has dimension `10`'
 PASS F1-rigidity-marker: needle='no independent scalar-normalization freedom'
@@ -99,3 +99,4 @@ PASS F3-forbidden-strings-absent: clean
 TOTAL: PASS=60 FAIL=0
 
 ----- stderr -----
+

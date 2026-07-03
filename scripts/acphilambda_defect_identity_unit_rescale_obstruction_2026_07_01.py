@@ -92,7 +92,7 @@ def main() -> int:
     )
     check(
         "Record axiom lock clause present",
-        "a record locks exactly one local possibility" in flat(axioms),
+        "a record locks exactly one admissible local possibility" in flat(axioms),
     )
     check(
         "registry node excludes weighting/normalization/probability",

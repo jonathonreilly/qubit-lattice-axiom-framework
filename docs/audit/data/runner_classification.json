@@ -19428,6 +19428,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_koide_oo_rd_premise_equivalence_2026_06_11.py"
     },
+    "koide_occupancy_from_locked_record_outcomes_bounded_note_2026-07-03": {
+      "assert_count": 1,
+      "counts": {
+        "A": 12,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.py"
+    },
     "koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12": {
       "assert_count": 1,
       "counts": {
@@ -30252,6 +30264,30 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_rd_fixedness_arrow_invariant_2026_06_12.py"
     },
+    "reading_note_claims_are_axiom_text_theorems_bounded_note_2026-07-02": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_reading_note_derivations_2026_07_02.py"
+    },
+    "reading_note_final_derivations_motion_closure_bounded_note_2026-07-02": {
+      "assert_count": 3,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_answer_condition_motion_closure_2026_07_02.py"
+    },
     "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08": {
       "assert_count": 1,
       "counts": {
@@ -36515,6 +36551,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/theta_mass_orientation_zero_branch_pairing_forced_2026_07_01.py"
+    },
+    "theta_mass_side_composition_close_on_shared_occupancy_bridge_bounded_note_2026-07-03": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_theta_mass_side_composition_close_2026_07_03.py"
     },
     "theta_mass_side_epsilon_hermiticity_reality_bridge_discharge_bounded_theorem_note_2026-06-11": {
       "assert_count": 2,
@@ -50911,6 +50959,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_answer_condition_motion_closure_2026_07_02.py": {
+      "assert_count": 3,
+      "claims": [
+        "reading_note_final_derivations_motion_closure_bounded_note_2026-07-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_architecture_portability_sweep.py": {
       "assert_count": 0,
       "claims": [
@@ -64461,6 +64524,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_occupancy_from_locked_record_outcomes_bounded_note_2026-07-03"
+      ],
+      "counts": {
+        "A": 12,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_koide_octahedral_overconstrains_value_bit.py": {
       "assert_count": 2,
       "claims": [
@@ -72560,6 +72638,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_reading_note_derivations_2026_07_02.py": {
+      "assert_count": 1,
+      "claims": [
+        "reading_note_claims_are_axiom_text_theorems_bounded_note_2026-07-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_record_asymptotic_reset_convergence_ledger_2026_06_05.py": {
       "assert_count": 1,
       "claims": [
@@ -77049,6 +77142,21 @@
         "A": 1,
         "B": 1,
         "C": 26,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_theta_mass_side_composition_close_2026_07_03.py": {
+      "assert_count": 1,
+      "claims": [
+        "theta_mass_side_composition_close_on_shared_occupancy_bridge_bounded_note_2026-07-03"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
         "D": 0
       },
       "decoration_candidate": false,
@@ -90599,16 +90707,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 688,
+    "decoration_candidates": 691,
     "dominant_class_distribution": {
-      "A": 488,
-      "B": 632,
-      "C": 1272,
+      "A": 489,
+      "B": 634,
+      "C": 1273,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3299,
-    "runners_with_C": 1729,
+    "runners_classified": 3303,
+    "runners_with_C": 1730,
     "runners_with_D": 1061
   }
 }

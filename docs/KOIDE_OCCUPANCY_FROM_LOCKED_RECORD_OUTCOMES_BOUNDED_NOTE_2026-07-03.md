@@ -1,6 +1,7 @@
 # Occupancy from Locked Record Outcomes: Flavor Piece (i) Bridge (Bounded Note)
 
 **Date:** 2026-07-03
+**Type:** bounded_theorem
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note sets no audit
 outcome and changes no registry row.

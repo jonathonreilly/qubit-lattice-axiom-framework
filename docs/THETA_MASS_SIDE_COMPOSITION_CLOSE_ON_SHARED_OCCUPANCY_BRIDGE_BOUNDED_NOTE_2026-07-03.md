@@ -3,6 +3,8 @@
 **Date:** 2026-07-03
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem (composition), conditional on the named shared bridge
+**Status authority:** independent audit lane only. This source note sets no
+audit outcome and changes no registry row.
 **Primary runner:**
 [`scripts/frontier_theta_mass_side_composition_close_2026_07_03.py`](../scripts/frontier_theta_mass_side_composition_close_2026_07_03.py)
 
@@ -99,6 +101,19 @@ This note makes no theta value claim beyond `arg det(M_q) = 0` on the stated
 mass surface.
 
 The audit lane owns statuses, and the registry is untouched.
+
+## Dependencies
+
+- [`KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md`](KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md)
+  supplies the shared one-record-one-slot bridge sentence used by Leg 1.
+- [`THETA_MASS_ORIENTATION_ZERO_BRANCH_PAIRING_FORCED_ON_K_REAL_SURFACE_NARROW_THEOREM_NOTE_2026-07-01.md`](THETA_MASS_ORIENTATION_ZERO_BRANCH_PAIRING_FORCED_ON_K_REAL_SURFACE_NARROW_THEOREM_NOTE_2026-07-01.md)
+  supplies the signed-mass pairing formula used by Leg 2.
+- [`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`](STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md)
+  supplies the determinant phase-character erasure and the guarded supplied
+  mass determinant-channel conditional used by Leg 3.
+- [`tier_a_admissions.json`](audit/data/tier_a_admissions.json) is used only
+  for the registry's own identification that warrants the one-sentence versus
+  two-sentence conditional count; it is not an audit-status authority.
 
 ## Runner
 

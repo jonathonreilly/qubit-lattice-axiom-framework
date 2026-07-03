@@ -1,4 +1,4 @@
-CHECK 01: PASS -- quote guard (transitional either-or): Record locking sentence present verbatim in MINIMAL_AXIOMS_2026-06-29.md in EITHER the pre-restoration form ('... the locked possibility is invariant under repeated readout') OR the LANDED form ('... records are permanent.') -- the landed form is authoritative, commit 50f0db6187
+CHECK 01: PASS -- quote guard: current Record section 'When present, a record locks exactly one admissible local possibility. A site never carries more than one record; records are permanent.' present verbatim -- landed one-per-site (commit 7950d9202c, PR #4879) and permanence (commit 50f0db6187) are authoritative
 CHECK 02: PASS -- quote guard: Admissibility 'determined by, and vary with, the nearest-neighbor conditions' present verbatim
 CHECK 03: PASS -- quote guard: 'A state is a configuration of records.' present verbatim (named basis for model postulate M1)
 CHECK 04: PASS -- quote guard: Lattice 'Physical sites are the points of the cubic lattice Z^3 ... proper cubic rotations about each site.' present verbatim (guards the load-bearing infinite-lattice sentence)

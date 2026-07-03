@@ -32,23 +32,24 @@ Layering of the derivations (this repair makes the halting content reading-free)
     is a site in dom(C_t) \\ dom(C_{t-1}). Monotonicity is the primary lever for
     T2's halting and T4's finite-lattice bound; it needs no reading beyond
     permanence.
-  * MODEL POSTULATE M1 (a named note-level reading). Reading "A state is a
-    configuration of records" plus the singular "a record locks exactly one
-    local possibility" phrasing, a state is a site-functional SET of records,
-    each individuated as (site, value), with at most one record per site; a
-    same-value re-registration is the SAME element (a non-event by identity, not
-    by prohibition). M1 CLOSES what the axiom leaves open: the Record readout
-    clause quantifies over "any finite collection of pairwise-disjoint records",
-    which contemplates non-disjoint (overlapping, same-site) records as a live
-    axiom-level possibility and merely withholds additivity from them. M1 is
-    load-bearing ONLY for T1's set-constancy 4^8 enumeration and T4's
-    distinct-record pigeonhole tail. Event layering: a same-value re-registration
-    is a non-event under BOTH the dom-based definition (no domain growth) and the
-    M1 set definition (same element). M1's one-per-site content is OPEN as
-    PR #4879 (owner-approved: "A site never carries more than one record."),
-    separate from the landed permanence restoration; on PR #4879 landing M1
-    upgrades to axiom text and the M1-load-bearing results lose their reading
-    residue.
+  * MODEL POSTULATE M1 (one-per-site content now GROUNDED on landed axiom text).
+    Reading "A state is a configuration of records" plus the singular "a record
+    locks exactly one admissible local possibility" phrasing, a state is a
+    site-functional SET of records, each individuated as (site, value), with at
+    most one record per site; a same-value re-registration is the SAME element (a
+    non-event by identity, not by prohibition). M1's one-per-site content is
+    GROUNDED on the LANDED axiom sentence "A site never carries more than one
+    record." (commit 7950d9202c, PR #4879 "axioms: restore one record per site"),
+    so the M1-load-bearing results no longer carry a reading residue. The Record
+    readout clause quantifies over "any finite collection of pairwise-disjoint
+    records", which contemplates non-disjoint (overlapping, same-site) records and
+    merely withholds additivity from them; the landed one-per-site sentence fixes
+    the site-functional individuation. M1 is load-bearing ONLY for T1's
+    set-constancy 4^8 enumeration and T4's distinct-record pigeonhole tail. Event
+    layering: a same-value re-registration is a non-event under BOTH the dom-based
+    definition (no domain growth) and the M1 set definition (same element). M1's
+    mathematical content is unchanged; only its grounding status moved from
+    model-postulate-pending to grounded on landed axiom text.
 
 The covariant neighbor-dependent availability rule and the record-inclusion
 event-ordering are REBUILT here from scratch (small exact windows). The
@@ -152,16 +153,17 @@ def nested_with_agreement(hist):
 
 # ---------------------------------------------------------------------------
 # Quote guards -- the note's quotes must match docs/MINIMAL_AXIOMS_2026-06-29.md.
-# Five live guards: Record locking, Admissibility, state-as-configuration (M1
-# basis), Lattice, and Record readout-additivity. Qubit is cited but carries no
-# quote. The Record locking guard is a TRANSITIONAL either-or: it accepts BOTH
-# the pre-restoration form ("... the locked possibility is invariant under
-# repeated readout"), which lives in THIS worktree copy, AND the LANDED form
-# ("... records are permanent.") on current main. The landed form is
-# authoritative (commit 50f0db6187); this block grounds on the landed
-# restoration. The either-or passes on BOTH this worktree (pre-restoration) and
-# current main (landed); it would fail only on a Record clause carrying NEITHER
-# form (a further change).
+# Five live guards: Record locking (with one-per-site + permanence),
+# Admissibility, state-as-configuration (M1 basis), Lattice, and Record
+# readout-additivity. Qubit is cited but carries no quote. The Record locking
+# guard keys to the CURRENT landed Record section: "When present, a record locks
+# exactly one admissible local possibility. A site never carries more than one
+# record; records are permanent." The one-per-site sentence "A site never carries
+# more than one record." landed at commit 7950d9202c (PR #4879 "axioms: restore
+# one record per site"); permanence ("records are permanent.") landed earlier at
+# commit 50f0db6187 (PR #4874). The transitional either-or that survived the
+# landing race is retired; this guards the current text alone and fails on any
+# further change to the Record locking paragraph.
 # ---------------------------------------------------------------------------
 def axioms_normalized():
     here = os.path.dirname(os.path.abspath(__file__))
@@ -175,11 +177,9 @@ def quote_guards():
         txt = axioms_normalized()
     except Exception:
         txt = None
-    rec_prefix = ("a record locks exactly one local possibility from the subset "
-                  "available at that site under Admissibility;")
-    rec_old = (rec_prefix + " the locked possibility is invariant under "
-               "repeated readout")           # pre-restoration form (this worktree copy)
-    rec_landed = rec_prefix + " records are permanent."   # LANDED form, commit 50f0db6187
+    rec = ("When present, a record locks exactly one admissible local "
+           "possibility. A site never carries more than one record; records "
+           "are permanent.")   # CURRENT landed Record section (7950d9202c + 50f0db6187)
     adm = ("the available possibilities are determined by, and vary with, the "
            "nearest-neighbor conditions")
     stt = "A state is a configuration of records."
@@ -188,16 +188,17 @@ def quote_guards():
            "rotations about each site.")
     rda = ("For any finite collection of pairwise-disjoint records, scalar "
            "readout `I` is additive, with `I(empty)=0`.")
-    # TRANSITIONAL either-or: passes on the pre-restoration worktree copy AND on
-    # landed-main text. The landed form ("records are permanent.") is
-    # authoritative -- commit 50f0db6187. readout-invariance survives as a
-    # derived lemma.
-    check("quote guard (transitional either-or): Record locking sentence present "
-          "verbatim in MINIMAL_AXIOMS_2026-06-29.md in EITHER the pre-restoration "
-          "form ('... the locked possibility is invariant under repeated "
-          "readout') OR the LANDED form ('... records are permanent.') -- the "
-          "landed form is authoritative, commit 50f0db6187",
-          txt is not None and (rec_old in txt or rec_landed in txt))
+    # LIVE guard on the current landed Record section. The one-per-site sentence
+    # "A site never carries more than one record." landed at commit 7950d9202c
+    # (PR #4879); permanence ("records are permanent.") landed at 50f0db6187
+    # (PR #4874); readout-invariance survives as a derived lemma. The transitional
+    # either-or is retired -- this guards the current text alone.
+    check("quote guard: current Record section 'When present, a record locks "
+          "exactly one admissible local possibility. A site never carries more "
+          "than one record; records are permanent.' present verbatim -- landed "
+          "one-per-site (commit 7950d9202c, PR #4879) and permanence (commit "
+          "50f0db6187) are authoritative",
+          txt is not None and rec in txt)
     check("quote guard: Admissibility 'determined by, and vary with, the "
           "nearest-neighbor conditions' present verbatim",
           txt is not None and adm in txt)
@@ -216,7 +217,7 @@ def quote_guards():
 
 # ===========================================================================
 # T1 -- SATURATION IMPLIES LOCAL FINALITY (bounded; permanence LANDED 50f0db6187,
-#       set-constancy M1/#4879-conditional)
+#       set-constancy grounded on landed one-per-site M1, commit 7950d9202c)
 # ===========================================================================
 def T1():
     # exact saturated windows: one record per site, all locked +1

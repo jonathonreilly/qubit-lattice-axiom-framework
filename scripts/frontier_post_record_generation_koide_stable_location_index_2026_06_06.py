@@ -52,18 +52,18 @@ SELECTOR_SURFACE_RE = re.compile(
 )
 
 EXPECTED_SELECTOR_CLASSES = {
-    "generation_structure_location": 5,
-    "koide_value_or_phase_location": 49,
-    "measure_weight_or_source_location": 3,
-    "obstruction_or_open_gate": 39,
-    "other_generation_koide_location": 1,
-    "readout_carrier_or_record_location": 3,
+    "generation_structure_location": 13,
+    "koide_value_or_phase_location": 50,
+    "measure_weight_or_source_location": 4,
+    "obstruction_or_open_gate": 45,
+    "other_generation_koide_location": 3,
+    "readout_carrier_or_record_location": 9,
     "selector_surface_location": 5,
 }
 EXPECTED_STABLE_FEATURE_IDS = {
     "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
     "generation_dial_dynamics_stability_classifier_2026-06-05",
-    "koide_records_objectivity_conditional_note_2026-05-31",
+    "koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12",
     "stable_post_record_dial_location_certificate_2026-06-06",
 }
 EXPECTED_SELECTOR_ROWS = sum(EXPECTED_SELECTOR_CLASSES.values())
@@ -192,7 +192,7 @@ def source_anchor_checks() -> None:
         [
             "stable-location index",
             "It is not a selected dial.",
-            "Total generation/Koide dial-relevant rows indexed here: `109`.",
+            "Total generation/Koide dial-relevant rows indexed here: `133`.",
             "Does not select or force a generation/Koide dial location.",
             "outputs/post_record_generation_koide_stable_location_index_slice_2026_06_07.json",
         ],
@@ -200,7 +200,7 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
         [
-            "`koide_or_generation_selector` | 105",
+            "`koide_or_generation_selector` | 129",
             "Does not turn stable settings into selected dials.",
             "Does not select or force a generation/Koide dial location.",
         ],
@@ -306,7 +306,7 @@ def row_checks() -> tuple[list[dict], list[dict], Counter[str]]:
     stable_ids = {row.get("claim_id") for row in stable_rows}
     report("generation/Koide stable-feature row count is current snapshot", len(stable_rows) == EXPECTED_STABLE_FEATURE_ROWS, str(stable_ids))
     report("generation/Koide stable-feature ids match", stable_ids == EXPECTED_STABLE_FEATURE_IDS, str(stable_ids))
-    report("combined generation/Koide dial-relevant index has 109 rows", len(selector_rows) + len(stable_rows) == EXPECTED_INDEX_ROWS)
+    report("combined generation/Koide dial-relevant index has 133 rows", len(selector_rows) + len(stable_rows) == EXPECTED_INDEX_ROWS)
     report("stable-feature rows are disjoint from selector rows", stable_ids.isdisjoint({row.get("claim_id") for row in selector_rows}))
 
     representatives = {

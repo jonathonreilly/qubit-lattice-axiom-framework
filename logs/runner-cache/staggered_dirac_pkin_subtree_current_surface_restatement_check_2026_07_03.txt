@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/staggered_dirac_pkin_subtree_current_surface_restatement_check_2026_07_03.py
-runner_sha256: 5c5ac16d0c00a2881f1b6f2ff1147fdf826c4e6ad6026362ecbc7b5fdd7c8785
-timeout_sec: 120
+runner_sha256: 6011c59f12ba1062e7fa62e2091b5367e546a4796b673c48a34339ecf3dbcc7f
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 G1.1 PASS: ledger contains Kawamoto-Smit row with non-null claim_scope :: present=True
 G1.2 PASS: Kawamoto-Smit ledger claim_scope equals expected pin :: status=retained_bounded
 G1.3 PASS: note quotes the Kawamoto-Smit ledger claim_scope
-G1.4 PASS: reverse-dependency transitive closure count from roots is at least 1000 :: union=1450; statuses: staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07=retained_bounded, staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10=unaudited, realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_selected_by_admissibility_variation_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_selection_frame_class_transport_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_selection_gauged_background_invariance_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02=unaudited
+G1.4 PASS: reverse-dependency transitive closure count from roots is at least 1000 :: union=1460; statuses: staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07=retained_bounded, staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10=unaudited, realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_selected_by_admissibility_variation_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_selection_frame_class_transport_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_selection_gauged_background_invariance_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02=unaudited
 G2.1 PASS: variation clause present in axiom text
 G2.2 PASS: variation clause present in note
 G2.3 PASS: non-selection sentence present in axiom text

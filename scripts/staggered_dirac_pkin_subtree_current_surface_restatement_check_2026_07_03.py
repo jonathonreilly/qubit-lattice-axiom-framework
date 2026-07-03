@@ -47,8 +47,8 @@ DOWNSTREAM_CONTENT_CLAUSE = (
     "before audit rows may use it as load-bearing content."
 )
 RECORD_PERMANENCE_SENTENCE = (
-    "When present, a record locks exactly one local possibility from the subset "
-    "available at that site under Admissibility; records are permanent."
+    "When present, a record locks exactly one admissible local possibility. A "
+    "site never carries more than one record; records are permanent."
 )
 
 KINETIC_FIRST = (

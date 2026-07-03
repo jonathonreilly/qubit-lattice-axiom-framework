@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/theta_defect_closure_necessity_linking_obstruction_2026_07_02.py
+runner_sha256: a0d4efb83bff898f768d6aec8b3d0d763b61f3c7136adb2b6fa3e5b6a1301bf0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
+Section A: machinery ground
+  [PASS] A1 dd = 0 for d1 (C^1->C^2) and d2 (C^2->C^3)
+  [PASS] A2 Leibniz d(a u b) = da u b + (-1)^p a u db exact (a in C^1, p=1)
+         convention that holds: d(a u b) = da u b - a u db (minus)
+Section B: the linking identity
+  [PASS] B1 Delta(lambda) is a linking pairing of J and lambda: exactly one signed candidate matches ALL trials (sign DERIVED, not fitted)
+         winner: (-,+) over 36 trials; sum(dl u dl)=0 held: True
+  [PASS] B2 closed contrast: Delta(lambda) = 0 for closed n (invariance re-earned) while the same shift moves an open n (discriminating)
+Section C: necessity
+  [PASS] C1 necessity: every nonzero single-plaquette defect current admits a lambda with |Delta| >= 1 (sector structure REQUIRES dn = 0)
+         min |Delta| over the six planes: 1
+  [PASS] C2 obstruction is defect-supported: a near lambda gives Delta != 0 while a far lambda gives Delta = 0 (locality witness)
+         near link ((0, 0, 1, 0), (2,)) -> Delta=-1; far link ((1, 1, 1, 1), (0,)) -> Delta=0
+Section D: consequence arithmetic
+  [PASS] D1 on the closed subfamily Q = Q_raw/2 equals the intersection form m01 m23 - m02 m13 + m03 m12
+         (Q, form) pairs: [(-2, -2), (5, 5), (0, 0)]
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

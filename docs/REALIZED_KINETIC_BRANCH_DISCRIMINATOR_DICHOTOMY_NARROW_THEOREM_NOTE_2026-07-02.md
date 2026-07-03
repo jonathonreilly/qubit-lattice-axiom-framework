@@ -133,7 +133,7 @@ self-adjoint-unitary coefficient family follows from the parent's
 absorbing-frame theorem.
 
 The one-bit residual is NOT decided here: it becomes the named
-interpretive question whether the Admissibility axiom's clause ("for each site, nearest-neighbor conditions determine the available subset of possibilities") is read as a nonvacuous determination on the qubit
+interpretive question whether the Admissibility axiom's clause ("for each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions") is read as a nonvacuous determination on the qubit
 factor. The parent sentence "the flux(-1) selector is not forced
 because K0 also satisfies the constraints" is therefore preserved:
 this note gives discriminators, not a selection theorem.

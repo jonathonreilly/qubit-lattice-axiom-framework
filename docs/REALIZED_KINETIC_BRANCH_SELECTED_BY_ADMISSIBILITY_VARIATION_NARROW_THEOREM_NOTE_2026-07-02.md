@@ -150,6 +150,8 @@ level via the parent's frame theorems, and the gauged/interacting surface.
   transport it.
 - The selection uses the current Admissibility variation premise and the
   parent licensed-surface assumptions; it does not re-grade the parent.
+- No decision on the Admissibility-reading question: the variation clause is
+  used as a stated premise of the current axiom text, not adjudicated here.
 - No Tier-A registry change and no audit status is set here.
 
 ## Dependencies

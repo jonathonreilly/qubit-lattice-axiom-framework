@@ -1,33 +1,125 @@
 ===== runner cache v1 =====
 runner: scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py
-runner_sha256: 6da507701ceea7dc0d4076d9ffdb03f4c6be419cb2ac983cdf02f50bf4f40bb0
+runner_sha256: ad8c080fb9b14c468601fbaf504ed7be590c377d2a77fcff547bd0696f965a1c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 G_BARE parent finite-link/Wilson beta=6 bridge check
+(same-slot surface-definition repair: construct and compare, no assignment)
 ==============================================================================
-[PASS] bridge note exists (/private/tmp/cl3-review-openprs-pgPvx7/repo/docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md)
-[PASS] parent note exists (/private/tmp/cl3-review-openprs-pgPvx7/repo/docs/G_BARE_DERIVATION_NOTE.md)
-[PASS] finite-link rigidity note exists (/private/tmp/cl3-review-openprs-pgPvx7/repo/docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
-[PASS] Wilson small-a note exists (/private/tmp/cl3-review-openprs-pgPvx7/repo/docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
 
-Source-boundary checks
+SECTION A: canonical su(3) basis guards
 ------------------------------------------------------------------------------
+[PASS] trace form Tr(T_a T_b) = delta_ab / 2 (max dev=1.11e-16)
+[PASS] all T_a Hermitian
+[PASS] all T_a traceless
+[PASS] basis has 8 generators on C^3
+
+SECTION B: Theorem 1 — plaquette exponent = a^2 F[C;1] + O(a^3)
+------------------------------------------------------------------------------
+[PASS] draw 0: plaquette exponent Hermitian traceless
+[PASS] draw 0: Richardson exponent matches F[C;1] (rel err=1.71e-04)
+[PASS] draw 0: remainder is O(a) after /a^2 (ratio ~ 2) (ratio=2.001)
+[PASS] draw 0: canonical T_a coefficients of exponent match F^a[C] (rel err=1.71e-04)
+[PASS] draw 0: exponent lies in canonical generator span (residual=3.55e-12)
+[PASS] draw 1: plaquette exponent Hermitian traceless
+[PASS] draw 1: Richardson exponent matches F[C;1] (rel err=1.69e-04)
+[PASS] draw 1: remainder is O(a) after /a^2 (ratio ~ 2) (ratio=2.001)
+[PASS] draw 1: canonical T_a coefficients of exponent match F^a[C] (rel err=1.69e-04)
+[PASS] draw 1: exponent lies in canonical generator span (residual=7.39e-13)
+[PASS] draw 2: plaquette exponent Hermitian traceless
+[PASS] draw 2: Richardson exponent matches F[C;1] (rel err=3.39e-04)
+[PASS] draw 2: remainder is O(a) after /a^2 (ratio ~ 2) (ratio=2.005)
+[PASS] draw 2: canonical T_a coefficients of exponent match F^a[C] (rel err=3.39e-04)
+[PASS] draw 2: exponent lies in canonical generator span (residual=3.56e-12)
+
+SECTION C: Theorem 2 — exact split redundancy (gamma, C/gamma)
+------------------------------------------------------------------------------
+[PASS] gamma=0.5: all four link matrices identical under split (max dev=0.00e+00)
+[PASS] gamma=0.5: plaquette matrix identical under split
+[PASS] gamma=0.5: Wilson action value identical under split
+[PASS] gamma=0.5: gamma * F[C/gamma; gamma] = F[C; 1] exactly (dev=0.00e+00)
+[PASS] gamma=2.0: all four link matrices identical under split (max dev=0.00e+00)
+[PASS] gamma=2.0: plaquette matrix identical under split
+[PASS] gamma=2.0: Wilson action value identical under split
+[PASS] gamma=2.0: gamma * F[C/gamma; gamma] = F[C; 1] exactly (dev=0.00e+00)
+[PASS] gamma=3.0: all four link matrices identical under split (max dev=0.00e+00)
+[PASS] gamma=3.0: plaquette matrix identical under split
+[PASS] gamma=3.0: Wilson action value identical under split
+[PASS] gamma=3.0: gamma * F[C/gamma; gamma] = F[C; 1] exactly (dev=8.39e-16)
+[PASS] gamma=1.4: all four link matrices identical under split (max dev=0.00e+00)
+[PASS] gamma=1.4: plaquette matrix identical under split
+[PASS] gamma=1.4: Wilson action value identical under split
+[PASS] gamma=1.4: gamma * F[C/gamma; gamma] = F[C; 1] exactly (dev=8.23e-16)
+[PASS] genuine dilation s=2 changes the link matrix (dev=1.45e-01)
+[PASS] genuine dilation s=2 changes the Wilson action value (dev=2.63e-03)
+
+SECTION D: Theorem 3 — matched slot gamma*(beta)^2 = 2 N_c / beta
+------------------------------------------------------------------------------
+[PASS] beta=6.0: constructed action coefficient k -> beta/(4 N_c) (k=0.500170, pred=0.500000)
+[PASS] beta=6.0: constructed matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=0.999660, pred=1.000000)
+[PASS] beta=6.0: constructed product beta * gamma*^2 -> 2 N_c (beta*gamma*^2=5.997959)
+[PASS] beta=24.0: constructed action coefficient k -> beta/(4 N_c) (k=2.000681, pred=2.000000)
+[PASS] beta=24.0: constructed matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=0.249915, pred=0.250000)
+[PASS] beta=24.0: constructed product beta * gamma*^2 -> 2 N_c (beta*gamma*^2=5.997959)
+[PASS] beta=1.5: constructed action coefficient k -> beta/(4 N_c) (k=0.125043, pred=0.125000)
+[PASS] beta=1.5: constructed matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=3.998639, pred=4.000000)
+[PASS] beta=1.5: constructed product beta * gamma*^2 -> 2 N_c (beta*gamma*^2=5.997959)
+[PASS] beta=12.0: constructed action coefficient k -> beta/(4 N_c) (k=1.000340, pred=1.000000)
+[PASS] beta=12.0: constructed matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=0.499830, pred=0.500000)
+[PASS] beta=12.0: constructed product beta * gamma*^2 -> 2 N_c (beta*gamma*^2=5.997959)
+[PASS] matched-slot construction converges as a -> 0 (error ratio=9.661)
+[PASS] matched-slot construction accurate at a = 1e-3 (|gamma*^2 - 1|=3.52e-05)
+
+SECTION E: link slot readback and slot COMPARISON (never assigned)
+------------------------------------------------------------------------------
+[PASS] draw 0: canonical readback log(U)/(i a) reproduces C (rel err=1.21e-14)
+[PASS] draw 0: constructed link-canonical slot s = 1 (s=1.000000000000)
+[PASS] draw 1: canonical readback log(U)/(i a) reproduces C (rel err=1.67e-14)
+[PASS] draw 1: constructed link-canonical slot s = 1 (s=1.000000000000)
+[PASS] draw 2: canonical readback log(U)/(i a) reproduces C (rel err=2.14e-14)
+[PASS] draw 2: constructed link-canonical slot s = 1 (s=1.000000000000)
+[PASS] slots AGREE at beta = 6: constructed gamma*(6)^2 == constructed s^2 (gamma*^2=0.999660, s^2=1.000000)
+[PASS] mismatched-slot exhibit at beta = 24: gamma*(24) != s on identical data (gamma*^2=0.249915 vs s^2=1.000000)
+[PASS] mismatched-slot exhibit at beta = 3/2: gamma*(3/2) != s (gamma*^2=3.998639)
+[PASS] mismatched-slot exhibit at beta = 12: gamma*(12) != s (gamma*^2=0.499830)
+
+SECTION F: exact composition under the declared surface definition (SD)
+------------------------------------------------------------------------------
+[PASS] under (SD): g_bare^2 = s^2 = 1
+[PASS] under (SD): beta = 2 N_c / g_bare^2 = 6 (beta=6)
+[PASS] under (SD): beta * g_bare^2 = 2 N_c
+[PASS] pin equivalence forward: beta = 6 gives gamma*^2 = 1 = s^2
+[PASS] pin equivalence backward: gamma* = s = 1 gives beta = 6
+[PASS] mismatched split gamma^2=1/2 gives beta=12 != 6 (family, not the pin) (beta=12)
+[PASS] mismatched split gamma^2=2 gives beta=3 != 6 (family, not the pin) (beta=3)
+[PASS] mismatched split gamma^2=9/4 gives beta=8/3 != 6 (family, not the pin) (beta=8/3)
+[PASS] exhibit beta=24: gamma*^2 = 1/4 != s^2 while beta*gamma*^2 = 2 N_c holds
+
+SECTION G: source-boundary guards
+------------------------------------------------------------------------------
+[PASS] bridge note exists (docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md)
+[PASS] parent note exists (docs/G_BARE_DERIVATION_NOTE.md)
+[PASS] finite-link rigidity note exists (docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
+[PASS] Wilson small-a note exists (docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
 [PASS] bridge contains marker: set only by the independent audit lane
 [PASS] bridge contains marker: same scalar slot
-[PASS] bridge contains marker: finite-link canonical Wilson surface
+[PASS] bridge contains marker: declared surface definition
+[PASS] bridge contains marker: (SD)
+[PASS] bridge contains marker: not derived from the cited authorities
+[PASS] bridge contains marker: exactly equivalent to the normalization point
+[PASS] bridge contains marker: mismatched-slot
 [PASS] bridge contains marker: does not claim:
 [PASS] bridge contains marker: Wilson plaquette action-surface selection
 [PASS] bridge contains marker: global logarithm-branch selection
 [PASS] bridge contains marker: a dynamical fixed point
 [PASS] bridge contains marker: an audit verdict or any effective-status promotion
+[PASS] bridge contains marker: finite-link canonical Wilson surface
 [PASS] bridge omits forbidden marker: effective_status:
 [PASS] bridge omits forbidden marker: audit_status:
-
-Dependency-surface checks
-------------------------------------------------------------------------------
+[PASS] bridge omits forbidden marker: This note proves that the scalar in those two statements
 [PASS] parent contains marker: G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md
 [PASS] parent contains marker: G_BARE_RIGIDITY_THEOREM_NOTE.md
 [PASS] parent contains marker: WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md
@@ -35,32 +127,13 @@ Dependency-surface checks
 [PASS] parent omits forbidden marker: beta_canonical
 [PASS] rigidity contains marker: finite-link
 [PASS] rigidity contains marker: no independent scalar-normalization freedom
-[PASS] rigidity contains marker: g_bare = 1
 [PASS] Wilson contains marker: beta * g_bare^2 = 2 N_c
 [PASS] Wilson contains marker: beta = 2 N_c / g_bare^2
 [PASS] Wilson contains marker: does not derive that the framework must select the Wilson action surface
 
-Exact arithmetic checks
-------------------------------------------------------------------------------
-[PASS] finite-link scalar slot gives g_link^2 = 1
-[PASS] Wilson scalar slot is identified with finite-link slot
-[PASS] beta = 2 N_c / g^2 gives beta = 6 at N_c=3 (beta=6)
-[PASS] product beta*g^2 = 2 N_c
-[PASS] positive branch gives g_bare = 1 from g_bare^2 = 1
-[PASS] noncanonical g^2=1/2 would not give beta=6 (beta=12)
-[PASS] noncanonical g^2=2 would not give beta=6 (beta=3)
-[PASS] noncanonical g^2=9/4 would not give beta=6 (beta=8/3)
-
-Scalar-slot model checks
-------------------------------------------------------------------------------
-[PASS] bridge contains marker: U = exp(i A^a T_a a)
-[PASS] bridge contains marker: U_P = exp(i a^2 g_bare F^a T_a + O(a^3))
-[PASS] bridge contains marker: g_bare = s = 1
-[PASS] bridge contains marker: The bridge would fail if
-
 Summary
 ------------------------------------------------------------------------------
-TOTAL: PASS=37 FAIL=0
+TOTAL: PASS=100 FAIL=0
 Bridge check passed.
 
 ----- stderr -----

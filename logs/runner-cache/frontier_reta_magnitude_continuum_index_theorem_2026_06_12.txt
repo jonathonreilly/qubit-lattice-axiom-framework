@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/frontier_reta_magnitude_continuum_index_theorem_2026_06_12.py
+runner_sha256: 60982f2e5e9b413a58076f42c83ecc93601cdbd11388f1ab45a0473ac929dc0f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.73
+status: ok
+----- stdout -----
+==============================================================================
+R-ETA MAGNITUDE: CONTINUUM INDEX THEOREM VS LATTICE INTEGER INDEX
+==============================================================================
+[PASS] [V1] L_3(1,2) = 2/9 exactly from C3 rotation eigenvalues  (L12=-2*(-1)**(2/3)/(3*(1 - (-1)**(2/3))**2))
+[PASS] [V1] contrast cells L_3(1,1)=L_3(2,2)=1/9  (L11=(1 + (-1)**(2/3))/(3 + 3*(-1)**(2/3) + 6*(-1)**(1/3)), L22=(1 + (-1)**(2/3))/(3 + 3*(-1)**(2/3) + 6*(-1)**(1/3)))
+[PASS] [V1] geometric L_3 codepath uses omega only; no H or spectrum
+[PASS] [V2] per-ring-momentum Wilson edge blocks are 2 L_h x 2 L_h  (L_h=64)
+[PASS] [V2] edge zero-mode integer index Tr gamma5 = +2 bottom / -2 top  (bottom=2.000000000000, top=-2.000000000000)
+[PASS] [V2] global zero-mode Tr gamma5 vanishes  (global=0.000000000000e+00)
+[PASS] [V3] all eight full-spectrum equivariant combinations are parameter-dependent  (IDX_triv=603.932, IDX_omega=54.544, IDX_omega2=54.544, IDX_12_rot0_rot1=135.142, IDX_12_rot0_rot2=135.142, IDX_12_rot1_rot2=132.338, IDX_12_all_chars=201.311, IDX_tracefree=36.363)
+[PASS] [V3] no full-spectrum lattice combination is within 0.5 of 2/9 or 2pi/9  (min distance=16.944; IDX_triv:min=-229.095,max=374.836, IDX_omega:min=-154.548,max=-100.004, IDX_omega2:min=-154.548,max=-100.004, IDX_12_rot0_rot1:min=-64.201,max=70.941, IDX_12_rot0_rot2:min=-64.201,max=70.941, IDX_12_rot1_rot2:min=-24.329,max=108.009, IDX_12_all_chars:min=-76.365,max=124.945, IDX_tracefree:min=-103.032,max=-66.669)
+[PASS] [V3] anti-fabrication: full-spectrum machinery is nonzero  (max|IDX|=374.836; (r=0.5,m0=0.5) J=(0.000,100.004,100.004); (r=0.5,m0=1.5) J=(-156.108,-36.494,-36.494); (r=1.0,m0=0.5) J=(50.811,162.013,162.013); (r=1.0,m0=1.5) J=(-50.811,103.737,103.737))
+[PASS] [V4] named continuum bridge: 2/9 = fixed-point weight times trace-free average  (weight=-(-1)**(2/3)/(1 - (-1)**(2/3))**2, tracefree_average=2/3, bridge=-2*(-1)**(2/3)/(3*(1 - (-1)**(2/3))**2), unweighted_count=2)
+[PASS] [B] dependency grep: fixed-locus note carries the L_3(1,2)=2/9 phrase
+[PASS] [B] dependency grep: edge note carries the H(k) Wilson edge phrase
+[PASS] [B] firewall and walls-move sentences are present
+[PASS] [B] forbidden closure/import rhetoric absent
+[PASS] [B] six-wall carrier-search map paragraph present with the five prior walls
+[PASS] [B] dependency markdown link inventory is exactly the three dependency links  (dependency_links=3, total_links=5)
+[PASS] [B] runner and cache markdown links are present
+[PASS] [B] domain-wall context note is backticked, not a dependency link
+[PASS] [B] No-promotion statement present
+[PASS] [B] status-authority lines present
+==============================================================================
+SUMMARY: PASS=20 FAIL=0
+TOTAL: PASS=20 FAIL=0
+==============================================================================
+
+----- stderr -----

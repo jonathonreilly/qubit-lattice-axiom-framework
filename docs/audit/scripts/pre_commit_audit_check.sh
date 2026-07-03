@@ -53,6 +53,16 @@ if ! python3 docs/audit/scripts/audit_lint.py; then
     exit 1
 fi
 
+# Claim-typing ratchet: a staged docs/**.md whose reseeded ledger row still
+# shows the silent positive_theorem default (no Type: header, no
+# meta/excluded pattern) blocks the commit. Legacy untyped rows surface as
+# audit_lint `claim_type_defaulted` warnings; this gate only refuses to
+# grow (or re-commit into) that class.
+if ! echo "$STAGED" | python3 docs/audit/scripts/check_staged_claim_typing.py; then
+    echo "[pre-commit] staged claim note(s) lack an explicit claim type (see above)."
+    exit 1
+fi
+
 # If staging includes the ledger or graph, that's fine. If they were
 # updated by this hook but not staged, ask the developer to stage them.
 if ! git diff --quiet docs/audit/data/citation_graph.json docs/audit/data/audit_ledger.json 2>/dev/null; then

@@ -1,0 +1,122 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_signed_cancellation_firewall_2026_06_21.py
+runner_sha256: 1566e433ded2a103bb6f770d21996f918638021482e242333701cb925b50eb57
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+Route-2 signed-cancellation firewall
+Scope: affine one-pole signed fit versus coefficient-positive source/readout rules
+
+PART 1: endpoint target
+PASS: finite-star weights are w_E=1/3 and w_T=1/2
+PASS: target lambda is 9/4 -- 9/4
+PASS: target lambda gives q_E=15/8 -- 15/8
+PASS: target q_E gives rho_E=21/4 -- 21/4
+PASS: target center ratio is c_TE=-8/9 -- -8/9
+
+PART 2: exact signed affine cancellation
+PASS: affine one-pole target equation forces b=-6a/5 -- -6/5
+PASS: the signed affine response remains pointwise positive for a=1 -- E=9/5, T=4/5
+PASS: the signed affine response gives lambda=9/4 -- 9/4
+PASS: the signed affine response gives q_E=15/8 -- 15/8
+PASS: the signed affine response gives rho_E=21/4 -- 21/4
+PASS: the signed affine response gives c_TE=-8/9 -- -8/9
+PASS: the target fit uses a negative constant coefficient
+
+PART 3: coefficient-level positivity firewall
+PASS: nonnegative affine sample a=0, b=1/7 stays below target -- 1
+PASS: nonnegative affine sample a=0, b=2/7 stays below target -- 1
+PASS: nonnegative affine sample a=0, b=3/7 stays below target -- 1
+PASS: nonnegative affine sample a=0, b=4/7 stays below target -- 1
+PASS: nonnegative affine sample a=0, b=5/7 stays below target -- 1
+PASS: nonnegative affine sample a=0, b=6/7 stays below target -- 1
+PASS: nonnegative affine sample a=0, b=1 stays below target -- 1
+PASS: nonnegative affine sample a=1/7, b=0 stays below target -- 3/2
+PASS: nonnegative affine sample a=1/7, b=1/7 stays below target -- 4/3
+PASS: nonnegative affine sample a=1/7, b=2/7 stays below target -- 5/4
+PASS: nonnegative affine sample a=1/7, b=3/7 stays below target -- 6/5
+PASS: nonnegative affine sample a=1/7, b=4/7 stays below target -- 7/6
+PASS: nonnegative affine sample a=1/7, b=5/7 stays below target -- 8/7
+PASS: nonnegative affine sample a=1/7, b=6/7 stays below target -- 9/8
+PASS: nonnegative affine sample a=1/7, b=1 stays below target -- 10/9
+PASS: nonnegative affine sample a=2/7, b=0 stays below target -- 3/2
+PASS: nonnegative affine sample a=2/7, b=1/7 stays below target -- 7/5
+PASS: nonnegative affine sample a=2/7, b=2/7 stays below target -- 4/3
+PASS: nonnegative affine sample a=2/7, b=3/7 stays below target -- 9/7
+PASS: nonnegative affine sample a=2/7, b=4/7 stays below target -- 5/4
+PASS: nonnegative affine sample a=2/7, b=5/7 stays below target -- 11/9
+PASS: nonnegative affine sample a=2/7, b=6/7 stays below target -- 6/5
+PASS: nonnegative affine sample a=2/7, b=1 stays below target -- 13/11
+PASS: nonnegative affine sample a=3/7, b=0 stays below target -- 3/2
+PASS: nonnegative affine sample a=3/7, b=1/7 stays below target -- 10/7
+PASS: nonnegative affine sample a=3/7, b=2/7 stays below target -- 11/8
+PASS: nonnegative affine sample a=3/7, b=3/7 stays below target -- 4/3
+PASS: nonnegative affine sample a=3/7, b=4/7 stays below target -- 13/10
+PASS: nonnegative affine sample a=3/7, b=5/7 stays below target -- 14/11
+PASS: nonnegative affine sample a=3/7, b=6/7 stays below target -- 5/4
+PASS: nonnegative affine sample a=3/7, b=1 stays below target -- 16/13
+PASS: nonnegative affine sample a=4/7, b=0 stays below target -- 3/2
+PASS: nonnegative affine sample a=4/7, b=1/7 stays below target -- 13/9
+PASS: nonnegative affine sample a=4/7, b=2/7 stays below target -- 7/5
+PASS: nonnegative affine sample a=4/7, b=3/7 stays below target -- 15/11
+PASS: nonnegative affine sample a=4/7, b=4/7 stays below target -- 4/3
+PASS: nonnegative affine sample a=4/7, b=5/7 stays below target -- 17/13
+PASS: nonnegative affine sample a=4/7, b=6/7 stays below target -- 9/7
+PASS: nonnegative affine sample a=4/7, b=1 stays below target -- 19/15
+PASS: nonnegative affine sample a=5/7, b=0 stays below target -- 3/2
+PASS: nonnegative affine sample a=5/7, b=1/7 stays below target -- 16/11
+PASS: nonnegative affine sample a=5/7, b=2/7 stays below target -- 17/12
+PASS: nonnegative affine sample a=5/7, b=3/7 stays below target -- 18/13
+PASS: nonnegative affine sample a=5/7, b=4/7 stays below target -- 19/14
+PASS: nonnegative affine sample a=5/7, b=5/7 stays below target -- 4/3
+PASS: nonnegative affine sample a=5/7, b=6/7 stays below target -- 21/16
+PASS: nonnegative affine sample a=5/7, b=1 stays below target -- 22/17
+PASS: nonnegative affine sample a=6/7, b=0 stays below target -- 3/2
+PASS: nonnegative affine sample a=6/7, b=1/7 stays below target -- 19/13
+PASS: nonnegative affine sample a=6/7, b=2/7 stays below target -- 10/7
+PASS: nonnegative affine sample a=6/7, b=3/7 stays below target -- 7/5
+PASS: nonnegative affine sample a=6/7, b=4/7 stays below target -- 11/8
+PASS: nonnegative affine sample a=6/7, b=5/7 stays below target -- 23/17
+PASS: nonnegative affine sample a=6/7, b=6/7 stays below target -- 4/3
+PASS: nonnegative affine sample a=6/7, b=1 stays below target -- 25/19
+PASS: nonnegative affine sample a=1, b=0 stays below target -- 3/2
+PASS: nonnegative affine sample a=1, b=1/7 stays below target -- 22/15
+PASS: nonnegative affine sample a=1, b=2/7 stays below target -- 23/16
+PASS: nonnegative affine sample a=1, b=3/7 stays below target -- 24/17
+PASS: nonnegative affine sample a=1, b=4/7 stays below target -- 25/18
+PASS: nonnegative affine sample a=1, b=5/7 stays below target -- 26/19
+PASS: nonnegative affine sample a=1, b=6/7 stays below target -- 27/20
+PASS: nonnegative affine sample a=1, b=1 stays below target -- 4/3
+PASS: exhaustive nonnegative affine sample has max lambda=3/2 -- argmax=(Fraction(1, 7), Fraction(0, 1))
+PASS: coefficient-positive affine one-pole rules cannot fit lambda=9/4
+
+PART 4: pointwise positivity is insufficient
+PASS: signed target fit with a=1 has positive E/T outputs -- b=-6/5, E=9/5, T=4/5
+PASS: signed target fit with a=2 has positive E/T outputs -- b=-12/5, E=18/5, T=8/5
+PASS: signed target fit with a=5/3 has positive E/T outputs -- b=-2, E=3, T=4/3
+PASS: pointwise positivity cannot distinguish coefficient-positive from signed-cancellation fits
+
+PART 5: quote-anchored firewall
+PASS: record/positivity note says norm/sign conditions do not select rho_E -- ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md; missing=0
+PASS: naturality no-go leaves rho_E free without an extra primitive -- QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md; missing=0
+PASS: E-center blindness note requires a real E-center lift -- QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md; missing=0
+PASS: Schur covariance note says positivity leaves continuum and future nonlinear routes open -- QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md; missing=0
+PASS: Record axiom does not supply a signed selector or weighting rule -- MINIMAL_AXIOMS_2026-06-05.md; missing=0
+
+PART 6: registered premise scan
+PASS: registered premise surfaces do not name `route2_signed_cancellation`
+PASS: registered premise surfaces do not name `signed_cancellation_firewall`
+PASS: registered premise surfaces do not name `negative_coefficient_selector`
+PASS: registered premise JSON is parseable
+
+PART 7: typed reachability
+PASS: coefficient-positive affine graph has no path to rho_E=21/4 -- path=[]
+PASS: adding signed affine selector creates the conditional target path -- signed_affine_selector -> negative_constant_coefficient -> lambda_9_4 -> rho_E_21_4
+
+PASS=92 FAIL=0 TOTAL=92
+VERDICT: scoped no-go plus conditional support. A signed affine one-pole cancellation can fit the Route-2 endpoint exactly, but every nonzero fit requires a negative coefficient; current coefficient-positive source/readout rules cannot supply it, and pointwise positivity alone is not a signed-selector theorem.
+
+----- stderr -----
+

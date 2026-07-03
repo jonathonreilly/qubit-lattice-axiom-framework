@@ -1,0 +1,14 @@
+===== runner cache v1 =====
+runner: scripts/frontier_generation_moduli_selector_exact_constraints_2026_07_02.py
+runner_sha256: aa125bb3adc0781a957ceacaaed3d9a1937282efe1783aae177912ba1761ba39
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 13.66
+status: ok
+----- stdout -----
+PASS 19
+FAIL 0
+TOTAL 19
+
+----- stderr -----
+

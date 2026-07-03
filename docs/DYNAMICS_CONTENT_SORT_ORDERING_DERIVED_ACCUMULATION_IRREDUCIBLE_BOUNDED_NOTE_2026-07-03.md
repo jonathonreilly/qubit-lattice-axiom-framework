@@ -1,4 +1,4 @@
-# Dynamics Content Sort: Ordering Derived; Permanence Landed (Owner Surface, commit 50f0db6187 / PR #4874); One-Per-Site Pending (PR #4879); Non-Triviality Reclassified As Realized Data; No New Axiom Needed
+# Dynamics Content Sort: Ordering Derived; Permanence Landed (Owner Surface, commit 50f0db6187 / PR #4874); One-Per-Site Landed (PR #4879, commit 7950d9202c); Non-Triviality Reclassified As Realized Data; No New Axiom Needed
 
 **Date:** 2026-07-03
 **Type:** bounded theorem + reclassified no-go + governance map (single owner surface)
@@ -12,7 +12,7 @@
 - Nothing is adopted by this note. No axiom text is changed by this note; this worktree already carries the landed permanence axiom text (commit 50f0db6187).
 - The single owner surface (the permanence restoration) is LANDED on main (commit 50f0db6187; drafted as PR #4874); this note grounds on the landed axiom text and itself lands, merges, or adopts nothing.
 - The accumulation axiom candidate is WITHDRAWN (both forms), recorded in T3/T5 as a considered-and-rejected candidate with an exact saturation counterexample. It is not proposed here.
-- **the landed permanence restoration (commit 50f0db6187; drafted as PR #4874) (supervisor-supplied):** the main-branch Record axiom now reads "records are permanent." -- the pre-restoration tail clause "the locked possibility is invariant under repeated readout" was replaced by commit 50f0db6187, and the readout-invariance content is DERIVED (see the lemma below; §6 policy entry included). THIS worktree carries the landed text, so every one of the 20 sentence guards below matches the current axiom file. Separately, **PR #4879 (open, owner-approved)** will change the first Record sentence to "A site never carries more than one record." -- NOT yet landed; this worktree still shows "A site need not carry a record.", so the note keeps that one-per-site clause PENDING.
+- **the landed permanence restoration (commit 50f0db6187; drafted as PR #4874) (supervisor-supplied):** the main-branch Record axiom now reads "records are permanent." -- the pre-restoration tail clause "the locked possibility is invariant under repeated readout" was replaced by commit 50f0db6187, and the readout-invariance content is DERIVED (see the lemma below; §6 policy entry included). THIS worktree carries the landed text, so every one of the 20 sentence guards below matches the current axiom file. Separately, **PR #4879 has LANDED on main (commit 7950d9202c)**: the Record section now reads "When present, a record locks exactly one admissible local possibility. A site never carries more than one record; records are permanent." -- so the one-per-site clause is grounded on the landed axiom text (guarded live at check 01 as `SENTENCES` keys R1/R2), and the pre-#4879 wording "A site need not carry a record." and "from the subset available at that site under Admissibility" are now absent from the live file.
 - T3 is axiom-first and narrow: it is relative to the 20 enumerated axiom-block sentences (the four axiom sections plus the Qualification block), not to all conceivable future axiom systems.
 - All cited notes are review-pending or unaudited post the 2026-06-29 reset; the audit lane owns statuses.
 - The five source docs' quoted sentences are guarded LIVE against the files (whitespace-normalized substrings), so no quote is dead data. Supervisor-supplied context (PR numbers, owner ruling, panel record) is quoted as supervisor-supplied, not read from files.
@@ -45,8 +45,8 @@ The runner reads these five source docs and checks each quoted sentence below as
 
 Minimal axiom memo, `docs/MINIMAL_AXIOMS_2026-06-29.md`, Lattice / Qubit / Admissibility / Record sections plus the Qualification block. The runner enumerates every sentence of these blocks as one `SENTENCES` list of 20 entries, including both no-privilege distinction clauses, the `M_2(C)` sentence, both covariance sentences, the state sentence, and the law sentence. A representative subset:
 
-> "A site need not carry a record."
-> "When present, a record locks exactly one local possibility from the subset available at that site under Admissibility; records are permanent."
+> "When present, a record locks exactly one admissible local possibility."
+> "A site never carries more than one record; records are permanent."
 > "Only records are readable. A readout value is determined by record content alone. For any finite collection of pairwise-disjoint records, scalar readout `I` is additive, with `I(empty)=0`."
 > "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations."
 > "For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions."
@@ -55,7 +55,7 @@ Minimal axiom memo, `docs/MINIMAL_AXIOMS_2026-06-29.md`, Lattice / Qubit / Admis
 > "A state is a configuration of records."
 > "A law privileges no states. Its domain is a supplied condition, and at every state where the condition holds it gives exactly one answer."
 
-Note the R2 quote above is the LANDED text (commit 50f0db6187); the pre-restoration tail clause "the locked possibility is invariant under repeated readout" is quoted only historically in T1 and is NOT live-guarded. The guard matches the current axiom file (see FIREWALL).
+Note the Record quotes above are the LANDED text (permanence restoration commit 50f0db6187 and one-per-site commit 7950d9202c); the pre-restoration tail clause "the locked possibility is invariant under repeated readout" and the pre-#4879 clauses "A site need not carry a record." and "from the subset available at that site under Admissibility" are quoted only historically in T1 and are NOT live-guarded. The guard matches the current axiom file (see FIREWALL).
 
 Order/rate firewall, `docs/RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md`:
 
@@ -78,7 +78,7 @@ Past-hypothesis arrow note, `docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RE
 Supervisor-supplied context (quoted as supervisor-supplied; not file-read here):
 
 > PR #4874 (landed as commit 50f0db6187) restored clause: "records are permanent." (replaced the whole clause "the locked possibility is invariant under repeated readout"; readout-invariance derived -- lemma below; §6 entry included)
-> PR #4879 (open, owner-approved): "A site never carries more than one record." (replaces the first Record sentence "A site need not carry a record."; NOT yet landed)
+> PR #4879 (landed as commit 7950d9202c): "A site never carries more than one record." (replaced the first Record sentence "A site need not carry a record.")
 > Owner ruling 2026-07-03 on option (a): the permanence was "intended the whole time"; "invariant was supposed to carry permanent"; the qualifier "under repeated readout" merely "restricted it to the reading operation"
 > Owner ruling 2026-07-03: "the static world is an admissible, unrealized solution -- the vacuum-solution class"; "'the realized history registers events' is contingent realized data, not law"
 > Owner ruling 2026-07-03: "the accumulation axiom candidate is withdrawn, both forms"; "a fully saturated configuration is final and physical (the frozen-region reading)"
@@ -114,7 +114,7 @@ This section is a HISTORICAL exhibit. The pre-restoration Record clause ended wi
 
 That clause locked a value "invariant under repeated readout"; it did not literally say that later configurations cannot remove a record. The review loop has since LANDED the permanence restoration (commit 50f0db6187): the clause now ends "records are permanent." (live-guarded at check 01 and again at check 12). T1 exhibits WHY that restoration was needed -- the gap the old text left.
 
-The runner builds a finite toy on the covariant rule above. A record is a `(site, locked-value)` pair; a configuration is a set of such pairs; sites are points of `Z^3`. The shared configuration `C_STAR` has a `+1` domain and a `-1` domain meeting at a boundary plus a leaf, so several lattice sites carry no record and "A site need not carry a record." holds. The evolution-mortal step is an explicit map on configurations that removes exactly one pair.
+The runner builds a finite toy on the covariant rule above. A record is a `(site, locked-value)` pair; a configuration is a set of such pairs; sites are points of `Z^3`. The shared configuration `C_STAR` has a `+1` domain and a `-1` domain meeting at a boundary plus a leaf, so several lattice sites carry no record and the pre-#4879 clause "A site need not carry a record." holds on the toy. The evolution-mortal step is an explicit map on configurations that removes exactly one pair.
 
 Each pre-restoration Record-axiom sentence is checked as an exact operation (these are historical-gap checks):
 
@@ -158,7 +158,7 @@ The realized history is an explicit IMPORT: the axioms have no history vocabular
 
 The narrow no-go asks whether "something happens" follows from the four quoted axioms. It does not, on the two exact witnesses below -- and by the owner ruling (2026-07-03) this is correct and expected, not a defect: non-triviality was never law. No physical theory legislates non-vacuum -- Newton asserts no particle accelerates, GR does not outlaw Minkowski, QFT does not forbid the ground state. "Something happens" is contingent realized data (the realized-state class), and downstream theorems condition on the realized sector explicitly, exactly as a scattering theorem conditions on particle content.
 
-Admissible-vacuum exhibit (static witness). The fixed admissible configuration `C_STAR` with the constant history (nothing ever changes) is admissible under the covariant rule at every element of the history [check 22]. It is guarded against every one of the 20 enumerated axiom-block sentences individually, with a per-sentence pass report, so the witness is genuinely sentence-complete rather than checked against a hand-picked subset [check 23]. Each sentence maps to an exact predicate on the witness: sites are `Z^3` points and the identity law is site-equivariant (no site privileged); locked values lie in the two-value `M_2(C)` domain and the value-flip is a symmetry (no possibility privileged); the one covariant Admissibility rule is covariant and varies with neighbors; the three Record sentences (need-not-carry, locks-one with records permanent, additive readout) hold; every state is a configuration of records; and the identity law is total and single-valued, privileging no state. The constant history registers zero new records, so accumulation is not forced while every one of the 20 sentences holds -- no sentence forces change [check 24]. This is the vacuum-solution class made explicit: an admissible, unrealized solution, precisely what a foundational axiom set should admit rather than outlaw.
+Admissible-vacuum exhibit (static witness). The fixed admissible configuration `C_STAR` with the constant history (nothing ever changes) is admissible under the covariant rule at every element of the history [check 22]. It is guarded against every one of the 20 enumerated axiom-block sentences individually, with a per-sentence pass report, so the witness is genuinely sentence-complete rather than checked against a hand-picked subset [check 23]. Each sentence maps to an exact predicate on the witness: sites are `Z^3` points and the identity law is site-equivariant (no site privileged); locked values lie in the two-value `M_2(C)` domain and the value-flip is a symmetry (no possibility privileged); the one covariant Admissibility rule is covariant and varies with neighbors; the Record sentences hold (a record locks one admissible possibility; a site never carries more than one record and records are permanent; only records are readable; readout is content-determined; readout is additive); every state is a configuration of records; and the identity law is total and single-valued, privileging no state. The constant history registers zero new records, so accumulation is not forced while every one of the 20 sentences holds -- no sentence forces change [check 24]. This is the vacuum-solution class made explicit: an admissible, unrealized solution, precisely what a foundational axiom set should admit rather than outlaw.
 
 `H = 0` witness. Even the form-class result contains the zero generator. The runner takes exact integer `2x2` generators: the zero generator commutes with the Gauss generator (member of the gauge-covariant class), a nonzero diagonal generator also commutes (the class is non-unique and closed), while an off-diagonal control does not commute (fails class membership) [check 25]. This restates, on an exact witness, the firewall "The class contains `H = 0`..." and the form note "It does **not** force non-trivial dynamics: `H = 0` is in the class."; "Gauge-covariance + locality + Hermiticity supply the **basis** of allowed local terms, not the combination."
 
@@ -190,7 +190,7 @@ Complete residue enumeration is the conservation rule: nothing dropped, nothing 
 | Withdrawn accumulation candidate, both forms (FORM-E per-event / FORM-H per-history) | considered-and-rejected owner-axiom candidate | WITHDRAWN; saturation counterexample: a fully-recorded region is final and physical |
 | Per-step-production no-go ("every step registers a record") | standing negative result vs future per-step proposals | permanent no-go; grid-gauged rate floor; Zeno-freeze |
 | Frozen-region corollary (saturated interior constrains its boundary) | named corollary / derivation target | derivation target (open) |
-| One-per-site clause edit (PR #4879, open, owner-approved: "A site never carries more than one record.") | the pending axiom-file edit (replaces the first Record sentence) | PENDING (supervisor-supplied); NOT landed; this worktree still shows "A site need not carry a record." |
+| One-per-site clause (PR #4879, landed on main as commit 7950d9202c: "A site never carries more than one record.") | discharges the one-per-site clause onto the landed axiom sentence | LANDED on main (commit 7950d9202c); grounds the one-per-site clause |
 | P1 (#4854 premise family) | named premise family member | review-pending; carried open |
 | P2 production premise | production premise | definitional (event := registration) plus realized-sector conditioning |
 | P3 persistence premise | persistence premise | maps to the landed permanence axiom (commit 50f0db6187) |
@@ -232,7 +232,7 @@ The accumulation sentence is no longer an owner surface. It is withdrawn in both
 - FORM-E (per-event): "Every step of a realized history registers at least one new record." -- withdrawn; re-cast as the per-step-production no-go (a clock in disguise: grid-gauged rate floor; Zeno-freeze).
 - FORM-H (per-history): "Records accumulate: every realized history keeps registering new records; no configuration is final." -- withdrawn; its universal clause "no configuration is final" is refuted by the exact saturation counterexample (T3): a fully-recorded region is final and physical, and still constrains its boundary.
 
-The 5-seat panel record is kept as historical context: it answered "which accumulation form" under the then-standing frame; the owner rejected the frame. No new owner surface is opened; the single surface (permanence restoration) is exercised and landed (commit 50f0db6187; drafted as PR #4874). The separately-tracked one-per-site clause (PR #4879) stays PENDING. Nothing is adopted here, and the audit lane owns all status changes.
+The 5-seat panel record is kept as historical context: it answered "which accumulation form" under the then-standing frame; the owner rejected the frame. No new owner surface is opened; the single surface (permanence restoration) is exercised and landed (commit 50f0db6187; drafted as PR #4874). The separately-tracked one-per-site clause (PR #4879) has LANDED on main (commit 7950d9202c); this note grounds on the landed axiom text and lands nothing itself. Nothing is adopted here, and the audit lane owns all status changes.
 
 TOE-leverage statement [check 38]: one restored word (permanence) plus realized-sector conditioning replace the entire proposed fifth-axiom program. Permanence grounds event-ordering (persistence); realized-sector conditioning carries non-triviality (the `H != 0`/D1 role) with no axiom. Nothing here replaces B-AXIS, which stays external because the ordering-to-transfer-axis bridge is OPEN. The conditional ladder's other rungs keep their named statuses (#4797 review-pending, N5 cap, ABJ external, past-hypothesis). So no genuinely new axiom sentence is proposed among the content sorted here, and the leverage is honest about what remains external.
 
@@ -245,7 +245,7 @@ TOE-leverage statement [check 38]: one restored word (permanence) plus realized-
 
 ## Does NOT
 
-- Does not change any axiom in this worktree, does not itself land or re-adopt the already-landed permanence restoration or land the pending PR #4879 one-per-site clause, adopts no surface, and does not foreclose the audit lane's status authority.
+- Does not change any axiom in this worktree, does not itself land or re-adopt the already-landed permanence restoration or the already-landed PR #4879 one-per-site clause, adopts no surface, and does not foreclose the audit lane's status authority.
 - Does not propose the withdrawn accumulation axiom (either form); it records it as considered-and-rejected with the saturation counterexample.
 - Does not derive physical time, rate, metric, clock, or generator scale; keeps per-step production as a no-go.
 - Does not derive the thermodynamic arrow beyond the past-hypothesis residual.
@@ -259,16 +259,16 @@ TOE-leverage statement [check 38]: one restored word (permanence) plus realized-
 - Quoted order/rate firewall: `docs/RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md`
 - Quoted form-class note: `docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md`
 - Quoted arrow note: `docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`
-- Supervisor-supplied, not file-read here: PR #4874 (permanence restoration, landed as commit 50f0db6187), the pending PR #4879 (one-per-site clause), the 2026-07-03 owner ruling, the 5-seat panel record, and PR #4843, #4797, #4854, #4855, and the anomaly/time-cluster context.
+- Supervisor-supplied, not file-read here: PR #4874 (permanence restoration, landed as commit 50f0db6187), PR #4879 (one-per-site clause, landed as commit 7950d9202c), the 2026-07-03 owner ruling, the 5-seat panel record, and PR #4843, #4797, #4854, #4855, and the anomaly/time-cluster context.
 
 ## No-Promotion
 
-This note is a draft support artifact for supervisor review. It gives bounded-theorem checks, a reclassified no-go, and a governance map. It makes no package-status claim, predicts no audit outcome, and requests no audit outcome. The permanence restoration (PR #4874) is LANDED on main (commit 50f0db6187); this note grounds on the landed axiom text and lands nothing, and the one-per-site clause (PR #4879) stays PENDING; the accumulation candidate stays withdrawn. The named open targets remain open: kernel convolution from one-parameter composition + locality + record-compatibility, the ordering-to-lattice-transfer-axis (B-AXIS) bridge, and the frozen-region boundary corollary.
+This note is a draft support artifact for supervisor review. It gives bounded-theorem checks, a reclassified no-go, and a governance map. It makes no package-status claim, predicts no audit outcome, and requests no audit outcome. The permanence restoration (PR #4874) is LANDED on main (commit 50f0db6187); this note grounds on the landed axiom text and lands nothing, and the one-per-site clause (PR #4879) has LANDED on main (commit 7950d9202c); the accumulation candidate stays withdrawn. The named open targets remain open: kernel convolution from one-parameter composition + locality + record-compatibility, the ordering-to-lattice-transfer-axis (B-AXIS) bridge, and the frozen-region boundary corollary.
 
 ## Summary
 
 - Runner: 39 exact checks, `TOTAL: PASS=39 FAIL=0`, no floats.
-- Single owner surface (permanence restoration, LANDED as commit 50f0db6187; drafted as PR #4874; option (a) clarity owner-confirmed): the R2 tail clause is now "records are permanent." on main. Pending (not landed here): PR #4879 one-per-site clause "A site never carries more than one record." (replaces the first Record sentence).
+- Single owner surface (permanence restoration, LANDED as commit 50f0db6187; drafted as PR #4874; option (a) clarity owner-confirmed): the R2 tail clause is now "records are permanent." on main. Landed on main (commit 7950d9202c): PR #4879 one-per-site clause "A site never carries more than one record." (replaced the first Record sentence).
 - Withdrawn: the accumulation axiom candidate, both forms; the per-history clause "no configuration is final" is refuted by the exact saturation counterexample (a fully-recorded region is final and physical, and still constrains its boundary).
 - Standing no-go: per-step production ("every step registers a record") is a clock in disguise (grid-gauged rate floor; Zeno-freeze).
 - Non-triviality is reclassified as contingent realized data, carried by realized-sector conditioning -- no fifth axiom.

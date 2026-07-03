@@ -90,7 +90,7 @@ CHECK 35: PASS -- T4(f) permanent non-goals (rate/metric/clock, arrow, ABJ-exter
 #   [WITHDRAWN; saturation counterexample: a fully-recorded region is final and physical] Withdrawn accumulation candidate, both forms (FORM-E per-event / FORM-H per-history)
 #   [permanent no-go; grid-gauged rate floor; Zeno-freeze] Per-step-production no-go ("every step registers a record")
 #   [derivation target (open)] Frozen-region corollary (saturated interior constrains its boundary)
-#   [PENDING (supervisor-supplied); NOT landed; this worktree still shows "A site need not carry a record."] One-per-site clause edit (PR #4879, open, owner-approved: "A site never carries more than one record.")
+#   [LANDED on main (commit 7950d9202c); grounds the one-per-site clause] One-per-site clause (PR #4879, landed on main as commit 7950d9202c: "A site never carries more than one record.")
 #   [review-pending; carried open] P1 (#4854 premise family)
 #   [definitional (event := registration) plus realized-sector conditioning] P2 production premise
 #   [maps to the landed permanence axiom (commit 50f0db6187)] P3 persistence premise

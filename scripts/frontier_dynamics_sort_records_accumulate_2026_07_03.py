@@ -127,10 +127,8 @@ SENTENCES = [
     ("A2", "For each site, the available possibilities are determined by, and vary "
            "with, the nearest-neighbor conditions."),
     # Record / Fixed Reality
-    ("R1", "A site need not carry a record."),
-    ("R2", "When present, a record locks exactly one local possibility from the "
-           "subset available at that site under Admissibility; records are "
-           "permanent."),
+    ("R1", "When present, a record locks exactly one admissible local possibility."),
+    ("R2", "A site never carries more than one record; records are permanent."),
     ("R3", "Only records are readable."),
     ("R4", "A readout value is determined by record content alone."),
     ("R5", "For any finite collection of pairwise-disjoint records, scalar readout "
@@ -277,9 +275,10 @@ def relabel(config, perm):
     return frozenset(((perm[s], v) for (s, v) in config))
 
 
-# The window carries at least one site with no record ("A site need not carry a
-# record.").  Availability itself is computed from the full configuration by
-# neighbor offset, so the window only bounds the "need-not-carry" witness.
+# The window carries at least one site with no record (the pre-#4879 clause "A site
+# need not carry a record.", quoted historically for the T1 exhibit).  Availability
+# itself is computed from the full configuration by neighbor offset, so the window
+# only bounds the "need-not-carry" witness used in the historical-gap toy.
 Z3_WINDOW = frozenset({(0, 0, 0), (1, 0, 0), (2, 0, 0), (0, 1, 0), (1, 1, 0),
                        (0, 2, 0), (2, 1, 0), (0, 0, 1)})
 
@@ -672,15 +671,15 @@ def _p_A2():   # determined by, and varying with, nearest-neighbor conditions
     return determined and varies
 
 
-def _p_R1():   # a site need not carry a record
-    return some_site_without_record(C_STAR)
+def _p_R1():   # a record locks exactly one admissible local possibility
+    return all(locks_one_available(r, C_STAR) for r in C_STAR)
 
 
-def _p_R2():   # locks exactly one available possibility; records are permanent
-    locks = all(locks_one_available(r, C_STAR) for r in C_STAR)
+def _p_R2():   # a site never carries more than one record; records are permanent
+    one_per_site = len(sites_of(C_STAR)) == len(C_STAR)
     permanent = all(CONSTANT_HISTORY[i] <= CONSTANT_HISTORY[i + 1]
                     for i in range(len(CONSTANT_HISTORY) - 1))
-    return locks and permanent
+    return one_per_site and permanent
 
 
 def _p_R3():   # only records are readable
@@ -1026,8 +1025,9 @@ check(_row_count_ok and not _missing and _status_clean,
 # ----------------------------------------------------------------------------
 # Exactly ONE owner surface: the permanence RESTORATION, EXERCISED AND LANDED (commit
 # 50f0db6187; drafted as PR #4874; option (a) clarity, owner-confirmed).  The
-# separately-tracked one-per-site clause (PR #4879, open, owner-approved) is PENDING,
-# carried in the residue table only.  The accumulation axiom candidate is
+# separately-tracked one-per-site clause (PR #4879) has LANDED on main (commit
+# 7950d9202c); its axiom sentence is grounded live at CHECK 01 (SENTENCES key R2) and
+# carried in the residue table.  The accumulation axiom candidate is
 # WITHDRAWN (both forms; saturation counterexample).  The 5-seat panel record is kept
 # as historical context (it answered "which accumulation form" under the then-standing
 # frame; the owner rejected the frame).  Leverage honesty: one restored word +

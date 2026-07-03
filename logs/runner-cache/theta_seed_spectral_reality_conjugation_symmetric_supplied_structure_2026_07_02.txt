@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_2026_07_02.py
+runner_sha256: 6fdf214dd2bc13ba4109310576ab21749a9fd5dda787e5aedd4e086c27826e9c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+Section A: conjugation-invariant spectral data
+  [PASS] A1 C2(p,q) = C2(q,p) and d(p,q) = d(q,p) across the window: Casimir and dimension are exactly conjugation-invariant
+  [PASS] A2 heat-kernel coefficients d_R e^{-t C2} are real and exactly conjugation-paired
+  [PASS] A3 Wilson coefficients at beta = 6 are real and conjugation-paired (Weyl quadrature; the retained surface's own weight is spectral-even)
+Section B: real functions of spectral data give flip-even weights
+  [PASS] B1 three arbitrary real functions of (C2, d) all give real, dagger-even class weights (the spectral-reality theorem, instance-verified)
+  [PASS] B2 the phased (non-spectral) seed BREAKS the same gate (discriminating contrast: c_F != conj-pair)
+Section C: the supplied structure is conjugation-symmetric
+  [PASS] C1 fusion conjugation-symmetry on the retained recurrence: channels of chi_F x chi_(p,q), conjugated, are exactly the channels of chi_Fb x chi_(q,p)
+  [PASS] C2 the joint supplied-structure profile (C2, d, fusion channels) of R equals the conjugate of Rbar's profile across the window: the pure-gauge supplied structure does not distinguish conjugate pairs
+Section D: outer-flip splitting; the odd part is the theta carrier
+  [PASS] D1 seed-space splitting: the phased seed's even part is the real cos(alpha) weight and its odd part is i c sin(alpha)(chi_F - chi_Fb) — exactly the campaign's theta carrier (blocks 8/10)
+  [PASS] D2 the odd seed direction is the REAL-VALUED per-plaquette imaginary-trace reweighting -2 c sin(a) Im(chi_F) — the naive single-plaquette theta candidate (center-shadow-only per the campaign), NOT an imaginary action; the genuine theta phase lives only at the multi-plaquette pairing level
+  [PASS] D3 determinant phases are conjugation-ODD (arg det conj(M) = -arg det M): conjugation-asymmetric data of exactly the needed type live in determinant-phase structures — the mass side of the theta-bar assembly, not the pure-gauge seed surface
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

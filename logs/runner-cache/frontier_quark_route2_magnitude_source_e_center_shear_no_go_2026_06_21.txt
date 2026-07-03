@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_magnitude_source_e_center_shear_no_go_2026_06_21.py
+runner_sha256: abeb02bda52566955c9cc58055c8b318e95c6a5e7c0a7d64b83cbf2c139c2b70
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.73
+status: ok
+----- stdout -----
+A. Authority surface
+PASS: QUARK_ROUTE2_MAGNITUDE_SOURCE_E_CENTER_SHEAR_NO_GO_NOTE_2026-06-21.md exists -- docs/QUARK_ROUTE2_MAGNITUDE_SOURCE_E_CENTER_SHEAR_NO_GO_NOTE_2026-06-21.md
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists -- docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md
+PASS: block32 sign-split note is reviewed in the same source slice
+PASS: new note declares canonical no-go boundary
+PASS: new note states shear rule
+PASS: new note scopes future routes open
+PASS: readout note gives reduced family
+PASS: naturality note names E-center freedom
+PASS: source-domain note names missing source bridge
+PASS: new note says shear-invariant data cannot select magnitude
+
+B. E-center shear witnesses
+PASS: T-side product is -5/3 -- -5/3
+PASS: F_adj is exact 8/9 -- 8/9
+PASS: all witnesses are in positive E-center branch
+PASS: all witnesses share shear-invariant signature
+PASS: witness magnitudes are not all equal
+PASS: no E-center lift q_E matches expected -- 1
+PASS: no E-center lift rho_E matches expected -- 0
+PASS: no E-center lift magnitude matches expected -- 5/3
+PASS: target lift q_E matches expected -- 15/8
+PASS: target lift rho_E matches expected -- 21/4
+PASS: target lift magnitude matches expected -- 8/9
+PASS: larger positive lift q_E matches expected -- 2
+PASS: larger positive lift rho_E matches expected -- 6
+PASS: larger positive lift magnitude matches expected -- 5/6
+PASS: unit magnitude lift q_E matches expected -- 5/3
+PASS: unit magnitude lift rho_E matches expected -- 4
+PASS: unit magnitude lift magnitude matches expected -- 1
+PASS: only target witness has |c_TE|=F_adj -- hits=1
+
+C. Shear action
+PASS: positive shears keep positive E-center branch
+PASS: positive shears keep invariant signature
+PASS: positive shears change q_E
+PASS: positive shears change |c_TE|
+PASS: delta=7/8 reaches target q_E
+PASS: delta=7/8 reaches target magnitude
+PASS: delta=1 changes magnitude away from target
+
+D. Shear-invariant rule no-go
+PASS: all witnesses have one invariant data signature
+PASS: same invariant signature has both target and non-target magnitudes
+PASS: therefore invariant data cannot imply target magnitude
+PASS: magnitude condition is equivalent to target q_E
+PASS: target q_E is equivalent to target rho_E
+PASS: a magnitude source must evaluate E-center lift
+
+E. Live branch and input firewall
+PASS: live q_E is positive -- q_E=1.876246130347
+PASS: live magnitude is positive -- |c_TE|=0.890683778231
+PASS: live magnitude is close to but not exact target
+PASS: forbidden proof inputs are absent -- ['color_fraction_F_adj', 'exact_rational_arithmetic', 'granted_t_side_values', 'shell_normalization']
+
+F. Note hygiene
+PASS: note records four witnesses
+PASS: note keeps W1 open
+PASS: note names E-center primitive as next target
+PASS: note records expected pass count
+
+TOTAL: PASS=51, FAIL=0
+Status: exact negative boundary for shear-invariant magnitude source rules.
+
+----- stderr -----
+

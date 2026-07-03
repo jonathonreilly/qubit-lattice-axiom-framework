@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_lift_coordinate_selector_gate_2026_06_21.py
+runner_sha256: f7eb9eae2861238e4ca616d31791e71cbd8ce6fd0cff02ba79dad634cdc687e9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+Route-2 lift-coordinate selector gate
+========================================================================================
+
+----------------------------------------------------------------------------------------
+1. Current-surface boundaries
+----------------------------------------------------------------------------------------
+PASS: exact readout exposes q_E as 1 + rho_E/6
+PASS: exact readout names beta_E/alpha_E=21/4 as missing map entry
+PASS: naturality no-go keeps rho_E free
+PASS: Schur note names inverse-square q-lift as the sharp gap
+PASS: observable-Hessian route is scalar-only
+PASS: bilinear carrier is additive in delta_A1 channel slots
+PASS: positivity note identifies rho_E as readout direction
+PASS: parent S3 note remains open on the endpoint triple
+
+----------------------------------------------------------------------------------------
+2. Exact target coordinates
+----------------------------------------------------------------------------------------
+w_E=1/3, w_T=1/2, kappa=3/2, lambda=9/4
+q_T=5/6, rho_T=-1, q_E_target=15/8, rho_E_target=21/4
+PASS: projector-weight ratio kappa is 3/2
+PASS: inverse-square ratio is kappa^2=9/4
+PASS: T lift q_T=5/6 corresponds to rho_T=-1
+PASS: target q_E=15/8 corresponds to rho_E=21/4
+PASS: target center ratio is c_TE=-8/9
+
+----------------------------------------------------------------------------------------
+3. Coordinate-selector alternatives
+----------------------------------------------------------------------------------------
+q_coordinate: q_E=15/8, rho_E=21/4
+increment_coordinate: q_E=5/8, rho_E=-9/4
+rho_coordinate: q_E=5/8, rho_E=-9/4
+inverse_q_coordinate: q_E=10/27, rho_E=-34/9
+one_power_q_coordinate: q_E=5/4, rho_E=3/2
+one_power_rho_coordinate: q_E=3/4, rho_E=-3/2
+direct_square_q_coordinate: q_E=10/27, rho_E=-34/9
+PASS: q-coordinate inverse-square scaling gives q_E=15/8
+PASS: q-coordinate inverse-square scaling gives rho_E=21/4
+PASS: increment-coordinate scaling gives q_E=5/8
+PASS: rho-coordinate scaling gives rho_E=-9/4
+PASS: rho-coordinate scaling matches increment-coordinate scaling
+PASS: inverse q-coordinate scaling gives q_E=10/27
+PASS: one-power q-coordinate scaling gives q_E=5/4
+PASS: one-power rho-coordinate scaling gives q_E=3/4
+PASS: direct square q-coordinate scaling matches inverse q-coordinate result
+PASS: only q-coordinate inverse-square scaling hits rho_E=21/4 among tested coordinate maps
+
+----------------------------------------------------------------------------------------
+4. Selector firewall
+----------------------------------------------------------------------------------------
+PASS: the same lambda value has multiple exact T-calibrated coordinate actions
+PASS: current bank does not name a multiplicative lift coordinate selector
+PASS: current bank does not state that inverse-square weights scale q_X itself as a theorem
+PASS: current bank explicitly leaves rho_E as a free direction
+PASS: Schur note treats q_X inverse-square as a gap rather than a supplied theorem
+PASS: no observed endpoint value is used as proof input
+PASS: current result is a no-go for value-only inverse-square closure
+PASS: positive target is a typed q-coordinate selector theorem
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+TOTAL: PASS=31, FAIL=0
+VERDICT: no-go / coordinate-selector boundary. The value 9/4 yields rho_E=21/4 only when it scales q_X itself; the current bank does not derive that multiplicative-lift coordinate selector.
+
+----- stderr -----
+

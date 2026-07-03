@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/frontier_harmonic_ladder_weight_law_2026_06_12.py
+runner_sha256: 74df40e5c8ed0700a3c8ad767be95b2f6b606a40bcbbe36628c4311f76672f25
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 0.89
+status: ok
+----- stdout -----
+==============================================================================
+Harmonic ladder weight law: single-sideband refutation and corrected law
+==============================================================================
+constants: L=3, NC=3, tau=0.35, T=256, window=64
+base-angle samples=4096, delta=1.05, activity floor=1.0e-10
+corrected law: degree-3 Laurent determinant with principal-branch Arg
+
+S0 anchors from the landed harmonic-ladder machinery
+------------------------------------------------------------------------------
+  [PASS] ANCHOR: no-floor coupled eigenpair gap set is frozen as (-3,0,+3) per state  (K3:(-3.0, 0.0, 3.0), K4:(-3.0, 0.0, 3.0), K5:(-3.0, 0.0, 3.0), K6:(-3.0, 0.0, 3.0))
+  [PASS] ANCHOR: landed capture@order4/window64 table is reproduced  (K3:0.898130088565, K4:0.777619557343, K5:0.899155545493, K6:0.994936516891)
+  [PASS] ANCHOR: full raw tone sum reconstructs the centered trajectory below 1e-12  (K3:1.33226762955e-15, K4:6.66133814775e-16, K5:8.881784197e-16, K6:1.11022302463e-15)
+  [PASS] anti-fabrication: measured k=2 ladder weight is nonzero in every state  (K3:0.553095718694, K4:0.0397389516712, K5:0.235902871426, K6:0.0311427370139)
+  [PASS] ANCHOR: measured k=2 ladder weights are frozen  (K3:0.553095718694, K4:0.0397389516712, K5:0.235902871426, K6:0.0311427370139)
+
+S1 rho extraction
+------------------------------------------------------------------------------
+  rho_12 is the single-sideband extraction 2*sqrt(w2/w1).
+  rho_* is the corrected-law dominant subunit determinant-root datum.
+  state      rho_*     rho_12        w1          w2          w3          w4
+  K=3   0.991955   5.242980 0.080482954 0.553095719 0.224756201 0.078559325
+  K=4   0.893042   1.050457 0.144052204 0.039738952 0.243850616 0.046251925
+  K=5   0.991107   1.323527 0.538675909 0.235902871 0.078440233 0.067069471
+  K=6   0.761908   0.360499 0.958536053 0.031142737 0.005115793 0.002228063
+  [PASS] S1 corrected-law anti-fabrication: Laurent determinant reconstructs held-out det samples  (K3:3.38715586651e-17, K4:3.2407308941e-17, K5:2.17360228534e-17, K6:1.8623046294e-17)
+  [PASS] S1 determinant-root split is frozen and nontrivial  (K3:in=3,out=3, K4:in=4,out=2, K5:in=3,out=3, K6:in=2,out=4)
+  [PASS] S1 corrected rho_* table is frozen  (K3:0.991954900521, K4:0.893042465934, K5:0.991107064261, K6:0.761907797708)
+  [PASS] S1 anti-fabrication: every corrected rho_* is strictly nonzero and subunit  (K3:0.991954900521, K4:0.893042465934, K5:0.991107064261, K6:0.761907797708)
+
+S2 ladder-law test
+------------------------------------------------------------------------------
+  [PASS] S2 refutation: single-sideband rho_12 violates |B|<|A| in the frozen states  (K3:5.24297987204, K4:1.05045691749, K5:1.32352708262, K6:0.36049907829)
+  [PASS] S2 measured w1 table is frozen  (K3:0.0804829538344, K4:0.144052203784, K5:0.538675909484, K6:0.958536052775)
+  [PASS] S2 measured w3 table is frozen  (K3:0.224756200523, K4:0.243850615756, K5:0.0784402333987, K6:0.00511579342085)
+  [PASS] S2 measured w4 table is frozen  (K3:0.0785593246245, K4:0.0462519247828, K5:0.0670694705886, K6:0.00222806333554)
+  [PASS] S2 corrected Laurent-Arg law predicts w2,w3,w4 below fixed relative tolerance  (max_rel=1.424e-14, tol=1.0e-10)
+  [PASS] S2 base-angle ladder-grid residual is machine-zero against gap 3k  (K3:0, K4:0, K5:0, K6:0)
+
+S3 tail closed-form analog
+------------------------------------------------------------------------------
+  full nonfundamental tail T_ge2=sum_{k>=2} w_k
+   measured: K3:0.919517036237, K4:0.855947795669, K5:0.461324082129, K6:0.0414639470671
+   law:      K3:0.919517036237, K4:0.855947795669, K5:0.461324082129, K6:0.0414639470671
+  depth tail T_ge3=sum_{k>=3} w_k after separating the k=2 sideband
+   measured: K3:0.366421317544, K4:0.816208843998, K5:0.225421210704, K6:0.0103212100531
+   law:      K3:0.366421317544, K4:0.816208843998, K5:0.225421210704, K6:0.0103212100531
+  [PASS] S3 measured full nonfundamental tail T_ge2 table is frozen  (K3:0.919517036237, K4:0.855947795669, K5:0.461324082129, K6:0.0414639470671)
+  [PASS] S3 corrected law reproduces the full nonfundamental tail T_ge2  (K3:0.919517036237, K4:0.855947795669, K5:0.461324082129, K6:0.0414639470671)
+  [PASS] S3 full T_ge2 order is the frozen refutation of the depth-order claim  (order=(6, 5, 4, 3))
+  [PASS] S3 measured depth tail T_ge3 table is frozen  (K3:0.366421317544, K4:0.816208843998, K5:0.225421210704, K6:0.0103212100531)
+  [PASS] S3 corrected law reproduces the depth tail T_ge3  (K3:0.366421317544, K4:0.816208843998, K5:0.225421210704, K6:0.0103212100531)
+  [PASS] S3 T_ge3 ordering reproduces the landed depth order K6,K5,K3,K4  (order=(6, 5, 3, 4))
+==============================================================================
+TOTAL: PASS=21 FAIL=0
+==============================================================================
+SCOPE: exact finite L=3 realized states only.
+FINDING: the single-carrier/single-sideband phase-modulation law is
+  refuted by the measured rho_12 table.  The weights are reproduced by
+  the finite Laurent determinant corrected law
+  Arg(F(e^{i(theta+delta)})/F(e^{i theta})) with principal-branch wrap.
+  The full k>=2 tail does not reproduce the depth order; after separating
+  the nonzero k=2 sideband, the k>=3 tail has the landed order K6,K5,K3,K4.
+
+----- stderr -----
+

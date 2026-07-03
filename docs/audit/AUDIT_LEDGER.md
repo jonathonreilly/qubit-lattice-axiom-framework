@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 190 |
 | **retained_no_go** | 193 |
-| **retained_bounded** | 852 |
+| **retained_bounded** | 853 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
 | unaudited | 1960 |
-| audit_in_progress | 1 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 12 |
-| `audited_clean` | 1228 |
+| `audit_in_progress` | 11 |
+| `audited_clean` | 1229 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
@@ -105,7 +104,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1148 | 67.17 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 198 | 65.14 | `audited_clean` | **retained** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1578 | 65.12 | `audited_clean` | **retained** |
-| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1202 | 64.73 | `audit_in_progress` | audit_in_progress |
+| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1202 | 64.73 | `audited_clean` | **retained_bounded** |
 | 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1248 | 53.29 | `audited_clean` | **retained_bounded** |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1153 | 48.17 | `unaudited` | meta |
 | 8 | `key_terminology` | meta | critical | 1253 | 46.79 | `unaudited` | meta |
@@ -136,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `observable_principle_from_axiom_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -897,6 +895,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -12343,6 +12342,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On Fraction-coefficient formal power series, finite partial sums, scalar powers, Cauchy products, geometric truncation errors, and the toy truncated Langevin update close order-by-order in Fraction arithmetic.  _(class `A`)_
 - **chain closes:** True — The narrowed conclusion follows from standard finite Fraction arithmetic and polynomial/Cauchy-product algebra as exercised by the runner. The note explicitly excludes the physics claims that would require external NSPT or lattice-gauge authorities.
 - **rationale:** The operative claim is narrowed to elementary algebra over rational formal series, not a physical NSPT computation. The runner source performs finite Fraction arithmetic, Cauchy products, a geometric truncation calculation, and boundary-text checks; it does not import contested external constants or rely on a calibrated numerical match. Hard-coded expected values are used only as elementary algebraic test expectations for worked examples, not as imported premises for a broader physical conclusion.
+- **auditor confidence:** high
+
+### `observable_principle_from_axiom_note`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](../../docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite exact-algebra closure on the real-positive staggered source surface: given accepted Record finite additivity, retained det-positivity support, and the declared T1-d Boundary, the log-det generator family, local source-derivative formulas, Matsubara identity, and Lt=4 orbit selector hold on the runner block; the numerical v comparator is out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-fresh-observable-boundary-auditor-20260703b`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Given T1-a through T1-e, especially Record finite scalar additivity, real-positive det(D+J), the declared T1-d readout-identification Boundary, and Cauchy uniqueness on R_{>0}, the additive continuous generator family is {W_c = c log det(D+J)}, with c = 1 used only as a conventional representative.  _(class `A`)_
+- **chain closes:** True — The chain closes only under the stated bounded hypotheses: T1-d is not derived from Record, but it is explicitly part of the audited Boundary and is policed by the retained no-go/support dependencies. The current 2026-06-29 minimal-axiom wording still supplies the finite scalar Record additivity used here, so the note's older 2026-06-05 citations are stale hygiene but not a closure break.
+- **rationale:** The runner completed with SCORECARD 40 pass, 0 fail, and the imported canonical plaquette helper is used only in the explicitly out-of-scope Part 5 comparator with zero PASS gates. The load-bearing parts check finite determinant multiplicativity, log-additivity, source-derivative trace identities, Matsubara/pair-product identities, orbit counting, source regularity, and recomputed L1/L2 det-positivity on the actual blocks. The runner does not derive T1-d from the axioms, but the source note no longer claims that; it declares T1-d as the bounded premise, and the retained no-go/context/classifier dependencies prevent laundering it as Record content. No hidden physical bridge or tuned v comparison is load-bearing in the scoped claim.
 - **auditor confidence:** high
 
 ### `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21`

@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3637 |
-| Applied audit verdicts | 1352 |
-| Retained-grade rows, including boxed decorations | 1280 |
+| Applied audit verdicts | 1353 |
+| Retained-grade rows, including boxed decorations | 1281 |
 | Retained positive theorems | 190 |
 | Retained no-go rows | 193 |
-| Retained bounded rows | 852 |
+| Retained bounded rows | 853 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
 | Unaudited rows | 1960 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1972 |
-| Ready rows | 148 |
+| Total pending rows | 1971 |
+| Ready rows | 153 |
 | Cycle-break targets | 14 |
-| Critical pending | 414 |
+| Critical pending | 413 |
 | High pending | 292 |
 | Medium pending | 524 |
 | Leaf pending | 742 |
 
 Next ready rows by queue order:
 
-- [`observable_principle_from_axiom_note`](../../docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md) - critical; audit_in_progress
 - [`staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md) - critical; unaudited
 - [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
 - [`ew_current_matching_rule_open_gate_note_2026-05-03`](../../docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md) - critical; unaudited
@@ -51,13 +50,14 @@ Next ready rows by queue order:
 - [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 - [`staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md) - critical; unaudited
 - [`axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`](../../docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md) - critical; unaudited
+- [`neutrino_majorana_current_atlas_nonrealization_note`](../../docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **445**.
+- Non-retained-grade cited rows in publication tables: **444**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -66,7 +66,6 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | medium | `unaudited` | 98 |
 | medium | `open_gate` | 3 |
 | high | `audited_numerical_match` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_conditional` | 1 |
 | high | `audited_conditional` | 1 |
 | high | `open_gate` | 1 |

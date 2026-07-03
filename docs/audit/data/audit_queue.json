@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 414,
+    "critical": 413,
     "high": 292,
     "leaf": 742,
     "medium": 524
@@ -343,36 +343,6 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "observable_principle_from_axiom_note",
-      "claim_scope": "Finite exact algebra on the real-positive source surface: accepted Record finite additivity, retained det-positivity and T1-d support/no-go dependencies, declared T1-d Boundary, conventional c=1 representative, zero-source baseline, and out-of-scope numerical v comparator.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms",
-        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
-        "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
-        "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
-        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
-      ],
-      "direct_in_degree": 103,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 64.732,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
-      "transitive_descendants": 1202
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
@@ -550,6 +520,30 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "neutrino_majorana_current_atlas_nonrealization_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "observable_principle_from_axiom_note"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 15.055,
+      "note_path": "docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_neutrino_majorana_current_atlas_nonrealization.py",
+      "transitive_descendants": 1063
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -645,6 +639,30 @@
       "ready": true,
       "runner_path": "scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py",
       "transitive_descendants": 1034
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "observable_principle_from_axiom_note"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 14.513,
+      "note_path": "docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_dm_neutrino_bosonic_normalization_theorem.py",
+      "transitive_descendants": 1032
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1093,6 +1111,31 @@
       "ready": true,
       "runner_path": "scripts/frontier_koide_higgs_dressed_resolvent_root_theorem.py",
       "transitive_descendants": 338
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "charged_lepton_koide_cone_algebraic_equivalence_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "three_generation_observable_theorem_note",
+        "observable_principle_from_axiom_note"
+      ],
+      "direct_in_degree": 45,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 30.892,
+      "note_path": "docs/CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_charged_lepton_observable_curvature.py",
+      "transitive_descendants": 335
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2091,30 +2134,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "neutrino_majorana_current_atlas_nonrealization_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "observable_principle_from_axiom_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.055,
-      "note_path": "docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_neutrino_majorana_current_atlas_nonrealization.py",
-      "transitive_descendants": 1063
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "neutrino_majorana_charge_two_primitive_reduction_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -2938,30 +2957,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_from_mass_hierarchy.py",
       "transitive_descendants": 1033
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "observable_principle_from_axiom_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.513,
-      "note_path": "docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_dm_neutrino_bosonic_normalization_theorem.py",
-      "transitive_descendants": 1032
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -8961,31 +8956,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
       "transitive_descendants": 360
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "charged_lepton_koide_cone_algebraic_equivalence_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "three_generation_observable_theorem_note",
-        "observable_principle_from_axiom_note"
-      ],
-      "direct_in_degree": 45,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 30.892,
-      "note_path": "docs/CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_charged_lepton_observable_curvature.py",
-      "transitive_descendants": 335
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -21252,6 +21222,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "observable_principle_from_axiom_note"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.17,
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_ROUTE_E_TAO_CROSS_DISCIPLINARY_NARROW_BOUNDED_NOTE_2026-05-17.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow.py",
+      "transitive_descendants": 35
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -28060,30 +28054,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_framework_internal_narrow.py",
-      "transitive_descendants": 35
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "observable_principle_from_axiom_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.17,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_ROUTE_E_TAO_CROSS_DISCIPLINARY_NARROW_BOUNDED_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow.py",
       "transitive_descendants": 35
     },
     {
@@ -37559,6 +37529,38 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "hierarchy_formula_ew_vev_observable_identification_bridge_bounded_note_2026-05-26",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10",
+        "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+        "staggered_dirac_realization_gate_note_2026-05-03",
+        "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
+        "observable_principle_from_axiom_note",
+        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+        "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
+        "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+        "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/HIERARCHY_FORMULA_EW_VEV_OBSERVABLE_IDENTIFICATION_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_hierarchy_ew_vev_observable_identification_bridge.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "hkd_correspondence_structural_equivalence_bounded_theorem_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -37653,6 +37655,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/ks_eta_vs_jw_string_car_locality.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "observable_principle_positive_source_cone_p2_elimination_narrow_theorem_note_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "observable_principle_from_axiom_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_observable_principle_positive_source_cone_p2_elimination_2026_06_06.py",
       "transitive_descendants": 0
     },
     {
@@ -47823,38 +47849,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "hierarchy_formula_ew_vev_observable_identification_bridge_bounded_note_2026-05-26",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10",
-        "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
-        "staggered_dirac_realization_gate_note_2026-05-03",
-        "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
-        "observable_principle_from_axiom_note",
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-        "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
-        "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
-        "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/HIERARCHY_FORMULA_EW_VEV_OBSERVABLE_IDENTIFICATION_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_hierarchy_ew_vev_observable_identification_bridge.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "hierarchy_heat_kernel_d4_compression_bounded_theorem_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -51173,30 +51167,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/audit_companion_observable_principle_p2_phase_blindness_sector_resolved_2026_06_04.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "observable_principle_positive_source_cone_p2_elimination_narrow_theorem_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "observable_principle_from_axiom_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/audit_companion_observable_principle_positive_source_cone_p2_elimination_2026_06_06.py",
       "transitive_descendants": 0
     },
     {
@@ -58203,6 +58173,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 148,
-  "total_pending": 1972
+  "ready_count": 153,
+  "total_pending": 1971
 }

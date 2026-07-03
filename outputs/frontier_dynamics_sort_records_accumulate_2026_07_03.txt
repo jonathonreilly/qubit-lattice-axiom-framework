@@ -1,54 +1,119 @@
+# ---- S0  SOURCE LIVENESS (quotes are live, not dead data) ----
+#   [L1 ] axiom-block sentence live in file: True
+#   [L2 ] axiom-block sentence live in file: True
+#   [L3 ] axiom-block sentence live in file: True
+#   [Q1 ] axiom-block sentence live in file: True
+#   [Q2 ] axiom-block sentence live in file: True
+#   [Q3 ] axiom-block sentence live in file: True
+#   [Q4 ] axiom-block sentence live in file: True
+#   [Q5 ] axiom-block sentence live in file: True
+#   [A1 ] axiom-block sentence live in file: True
+#   [A2 ] axiom-block sentence live in file: True
+#   [R1 ] axiom-block sentence live in file: True
+#   [R2 ] axiom-block sentence live in file: True
+#   [R3 ] axiom-block sentence live in file: True
+#   [R4 ] axiom-block sentence live in file: True
+#   [R5 ] axiom-block sentence live in file: True
+#   [QU1] axiom-block sentence live in file: True
+#   [QU2] axiom-block sentence live in file: True
+#   [QU3] axiom-block sentence live in file: True
+#   [QU4] axiom-block sentence live in file: True
+#   [QU5] axiom-block sentence live in file: True
+CHECK 01: PASS -- S0 all 20 axiom-block sentences are live substrings of the axioms file (sentence-complete list)
+#   [ORDER_RATE] firewall/form/arrow quote live: True
+#   [NONTRIV   ] firewall/form/arrow quote live: True
+#   [FORM      ] firewall/form/arrow quote live: True
+#   [FORM      ] firewall/form/arrow quote live: True
+#   [ARROW     ] firewall/form/arrow quote live: True
+#   [ARROW     ] firewall/form/arrow quote live: True
+CHECK 02: PASS -- S0 all 6 firewall/form/arrow quotes are live substrings of their source files
+CHECK 03: PASS -- S0 T1 option-(a) intent evidence live: 'Record / Fixed Reality' heading + durable-realized-outcome lineage line
 # ---- T1  PERMANENCE SCOPE GAP (bounded theorem) ----
-CHECK 01: PASS -- T1 readout idempotent (repeated readout: same value, record unchanged)
-CHECK 02: PASS -- T1 readout value determined by record content alone (pure, no side effect)
-CHECK 03: PASS -- T1 scalar readout I additive over disjoint records, I(empty)=0
-CHECK 04: PASS -- T1 each record locks exactly one Admissibility-available possibility
-CHECK 05: PASS -- T1 every quoted Record-axiom sentence holds BEFORE the mortal step
-CHECK 06: PASS -- T1 mortal step deletes one record, quoted axioms hold AFTER: readout-invariance does NOT entail permanence
+CHECK 04: PASS -- T1 readout idempotent (repeated readout: same value, record unchanged)
+CHECK 05: PASS -- T1 readout value determined by record content alone (pure, no side effect)
+CHECK 06: PASS -- T1 scalar readout I additive over disjoint records, I(empty)=0
+CHECK 07: PASS -- T1 each record locks one Admissibility-available possibility (covariant rule)
+CHECK 08: PASS -- T1 every quoted Record-axiom sentence holds BEFORE the mortal step
+CHECK 09: PASS -- T1 covariance: availability commutes with translation (odd-parity + general) and proper cubic rotation
+CHECK 10: PASS -- T1 variation: different neighbor conditions give different available sets ({+1} vs {+1,-1})
+CHECK 11: PASS -- T1 no-fiat: availability reads neighbor record content only, not coordinate parity (different-parity sites share an available set)
+CHECK 12: PASS -- T1 mortal step deletes one record; survivors still admissible; availability changes at (0,1,0); readout-invariance does NOT entail permanence
 # ---- T2  ORDERING DERIVED (bounded theorem, conditional on permanence) ----
-CHECK 07: PASS -- T2 inclusion order reflexive
-CHECK 08: PASS -- T2 inclusion order antisymmetric
-CHECK 09: PASS -- T2 inclusion order transitive
-CHECK 10: PASS -- T2 realized history: strict inclusion chain, +1 record/step
-CHECK 11: PASS -- T2 strict monotone count: no cycles (a return step must delete -> forbidden)
-CHECK 12: PASS -- T2 order is relabel-invariant (site perm = order iso) and merge-monotone
-CHECK 13: PASS -- T2 firewall-scoped: order+count only (rate 1 vs 1/2 not fixed); forward is definitional inclusion, not thermodynamic
+CHECK 13: PASS -- T2 inclusion order reflexive (partial order)
+CHECK 14: PASS -- T2 inclusion order antisymmetric
+CHECK 15: PASS -- T2 inclusion order transitive
+CHECK 16: PASS -- T2 realized history: forward inclusion each step; idle steps give equal consecutive states (positions 0,2)
+CHECK 17: PASS -- T2 strict increase exactly at registration events (positions 1,3); multi-registration step adds 2; registration_events sums set-diffs = 3
+CHECK 18: PASS -- T2 record-time = event-time coarser than step-time (3 states, 2 events, 4 steps; counts non-decreasing)
+CHECK 19: PASS -- T2 no cycles: a return step must delete a record (permanence-forbidden)
+CHECK 20: PASS -- T2 order is relabel-invariant (site perm = order iso) and merge-monotone
+CHECK 21: PASS -- T2 firewall-scoped: order+count only (rate 1 vs 1/2 not fixed); forward is definitional inclusion, not thermodynamic
 # ---- T3  ACCUMULATION IRREDUCIBLE (narrow no-go, axiom-first) ----
-CHECK 14: PASS -- T3(i) STATIC guard: Lattice -- sites are Z^3 points, no site privileged
-CHECK 15: PASS -- T3(i) STATIC guard: Qubit -- locked values in possibility domain
-CHECK 16: PASS -- T3(i) STATIC guard: Admissibility holds across the constant history
-CHECK 17: PASS -- T3(i) STATIC guard: Record -- need-not-carry, locks-one+readout-invariant, additive
-CHECK 18: PASS -- T3(i) STATIC guard: State -- every history element is a config of records
-CHECK 19: PASS -- T3(i) STATIC guard: Law -- identity law total + single-valued, privileges no state
-CHECK 20: PASS -- T3(i) constant history registers 0 new records: non-triviality NOT forced
-CHECK 21: PASS -- T3(ii) H=0 witness: zero generator in gauge-covariant class (nonzero too; sx control fails) -> non-triviality is new content
+CHECK 22: PASS -- T3(i) static witness admissible under the covariant rule across the constant history
+#   [L1 ] static witness satisfies sentence: True
+#   [L2 ] static witness satisfies sentence: True
+#   [L3 ] static witness satisfies sentence: True
+#   [Q1 ] static witness satisfies sentence: True
+#   [Q2 ] static witness satisfies sentence: True
+#   [Q3 ] static witness satisfies sentence: True
+#   [Q4 ] static witness satisfies sentence: True
+#   [Q5 ] static witness satisfies sentence: True
+#   [A1 ] static witness satisfies sentence: True
+#   [A2 ] static witness satisfies sentence: True
+#   [R1 ] static witness satisfies sentence: True
+#   [R2 ] static witness satisfies sentence: True
+#   [R3 ] static witness satisfies sentence: True
+#   [R4 ] static witness satisfies sentence: True
+#   [R5 ] static witness satisfies sentence: True
+#   [QU1] static witness satisfies sentence: True
+#   [QU2] static witness satisfies sentence: True
+#   [QU3] static witness satisfies sentence: True
+#   [QU4] static witness satisfies sentence: True
+#   [QU5] static witness satisfies sentence: True
+CHECK 23: PASS -- T3(i) static witness satisfies EVERY one of the 20 axiom-block sentences (sentence-complete; no sentence forces change)
+CHECK 24: PASS -- T3(i) constant history registers 0 new records: non-triviality NOT forced
+CHECK 25: PASS -- T3(ii) H=0 witness: zero generator in gauge-covariant class (nonzero too; sx control fails) -> non-triviality is new content
 # ---- T4  THE COMPRESSION MAP (bounded support) ----
-CHECK 22: PASS -- T4(a) production definitional: event:=registration, count == +records on chain
-CHECK 23: PASS -- T4(b) #4854 P2/P3 discharged by accumulation+definitional-event (P1/P4/CHART-MIX untouched)
-CHECK 24: PASS -- T4(c) #4855 C-add: chain-concat associative + additive; kernel-convolution NAMED OPEN
-CHECK 25: PASS -- T4(d) conditional ladder re-hangs: each rung premised, terminal Dirac branch review-pending
-CHECK 26: PASS -- T4(e) ordering->transfer-axis (B-AXIS) NOT auto-supplied: NAMED OPEN target
-CHECK 27: PASS -- T4(f) permanent non-goals (rate/metric/clock, arrow, ABJ-externality) never discharged
-CHECK 28: PASS -- T4 residue table complete (17 rows, closed status vocab, nothing adopted/retained)
-# ---- residue table (conserved; nothing adopted) ----
-#   [owner-surface       ] permanence premise (pending owner clarity fix)
-#   [owner-surface       ] accumulation sentence (new axiom content)
-#   [derivation-target   ] kernel-convolution clause (#4855)
-#   [derivation-target   ] ordering->transfer-axis B-AXIS bridge
-#   [external-premise    ] ABJ parity external premise
-#   [named-premise       ] B-AXIS supplied-axis premise
-#   [named-premise       ] single-generator N5 cap (d_t=1)
-#   [carried-open        ] past-hypothesis boundary condition (universal-floor)
-#   [permanent-no-go     ] rate no-go (record order/count)
-#   [permanent-no-go     ] metric no-go (record order/count)
-#   [permanent-no-go     ] clock no-go (record order/count)
-#   [review-pending      ] #4797 Dirac-branch (REALIZED_KINETIC_BRANCH)
-#   [review-pending      ] #4854 premise family P1-P4/CHART-MIX
-#   [review-pending      ] #4855 premise family C-add/POS/LOC
-#   [landed-given-bridges] form-forced (gauge-invariant-local class)
-#   [landed-conditional  ] Stone-unique generator (given axis)
-#   [carried-open        ] all cited notes: unaudited post 2026-06-29 reset
+CHECK 26: PASS -- T4(a) production definitional: event:=registration, count == +records on chain
+CHECK 27: PASS -- T4(a') registration_events sums set-differences: multi-registration {}->{r1,r2}=2; realized history (with idle steps) = 3
+CHECK 28: PASS -- T4(b) single discharge map P3<->permanence, P2<->accumulation (form-conditional); touches only P2/P3; identical to the note's own text (live grep)
+CHECK 29: PASS -- T4(c) #4855 C-add: chain-concat associative + additive; kernel-convolution NAMED OPEN
+CHECK 30: PASS -- T4(d) conditional ladder re-hangs: each rung premised, B-AXIS external, terminal Dirac branch review-pending
+CHECK 31: PASS -- T4(e) ordering->transfer-axis (B-AXIS) NOT supplied by ordering {order,count}: NAMED OPEN target
+CHECK 32: PASS -- T4(f) permanent non-goals (rate/metric/clock, arrow, ABJ-externality) never discharged
+# ---- residue table parsed from the note (single source of truth) ----
+#   [owner-surface flag only] Record permanence premise (T1 owner surface; OPEN (a) clarity / (b) new-content)
+#   [owner-surface flag only] Accumulation sentence FORM-E (per-event)
+#   [owner-surface flag only] Accumulation sentence FORM-H (per-history)
+#   [review-pending; carried open] P1 (#4854 premise family)
+#   [maps to accumulation sentence] P2 production premise
+#   [maps to permanence sentence] P3 persistence premise
+#   [review-pending; carried open] P4 (#4854 premise family)
+#   [review-pending; carried external] CHART-MIX (#4854 premise family)
+#   [review-pending; carried open] C-add (#4855 composition premise)
+#   [review-pending; carried open] POS (#4855 premise family)
+#   [review-pending; carried open] LOC (#4855 premise family)
+#   [derivation target (open)] Kernel-convolution clause (composition + locality + record-compatibility)
+#   [carried open] One-parameter composition (kernel-target ingredient)
+#   [carried open] Record-compatibility (kernel-target ingredient)
+#   [external premise; not supplied by ordering] B-AXIS supplied-axis premise (EXTERNAL)
+#   [derivation target (open)] Ordering-to-transfer-axis (B-AXIS) bridge
+#   [compressed by accumulation surface if owner accepts] D1 H!=0 (PR #4843)
+#   [review-pending external] D2 Dirac branch (PR #4843) / #4797 review-pending
+#   [landed-given-bridges] Form-forced (gauge-invariant-local class)
+#   [landed-conditional] Stone-unique generator (given axis)
+#   [external premise; unchanged] ABJ parity external premise
+#   [named premise] d_t parity (consequence from ABJ premise)
+#   [named premise] d_t=1 single-generator N5 cap
+#   [carried open; permanently out of scope] Past-hypothesis boundary (universal-floor)
+#   [permanent no-go] Rate no-go (record order/count)
+#   [permanent no-go] Metric no-go (record order/count)
+#   [permanent no-go] Clock no-go (record order/count)
+#   [import; carried open] Realized-history import (supplied sequence of states)
+#   [carried open; audit lane owns] All cited notes: unaudited post 2026-06-29 reset
+#   [untouched] Audit statuses (audit-lane authority)
+CHECK 33: PASS -- T4 residue table parsed from the note: 30 rows, all 29 required keys present, no adoption/promotion status
 # ---- T5  GOVERNANCE MAP ----
-CHECK 29: PASS -- T5 exactly two owner surfaces (1 clarity-fix + 1 new-content), nothing adopted
-CHECK 30: PASS -- T5 TOE-leverage: two surfaces target {B-AXIS,H!=0}; named externals stay external
-TOTAL: PASS=30 FAIL=0
+CHECK 34: PASS -- T5 two owner surfaces: permanence (OPEN (a)/(b), not foreclosed) + accumulation (both FORM-E/FORM-H); nothing adopted
+CHECK 35: PASS -- T5 leverage: two surfaces replace {H!=0/D1, event-ordering}; B-AXIS stays EXTERNAL (bridge OPEN); other named rungs keep their statuses
+TOTAL: PASS=35 FAIL=0

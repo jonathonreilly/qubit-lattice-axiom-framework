@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/frontier_ewsb_electroweak_dependency_composition_2026_06_09.py
+runner_sha256: 88aacfb7430e720529f464b6426891d61b46d60eaca9de5b995703a7870c678a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+PASS: node parent: Q=T3+Y/2 for u_L
+PASS: node parent: Q=T3+Y/2 for d_L
+PASS: node parent: Q=T3+Y/2 for nu_L
+PASS: node parent: Q=T3+Y/2 for e_L
+PASS: node parent: Q=T3+Y/2 for u_R
+PASS: node parent: Q=T3+Y/2 for d_R
+PASS: node parent: Q=T3+Y/2 for e_R
+PASS: node parent: Q=T3+Y/2 for nu_R
+PASS: node parent: Q=T3+Y/2 for H+
+PASS: node parent: Q=T3+Y/2 for H0
+PASS: node parent: photon (T3 + 1/2 Y) annihilates neutral VEV
+PASS: node parent: orthogonal Z-direction (T3 - 1/2 Y) acts nonzero on neutral VEV
+PASS: node child A: e^2 = g^2 sin^2 = g'^2 cos^2  (g2=1,gp2=1)
+PASS: node child A: 1/e^2 = 1/g^2 + 1/g'^2  (g2=1,gp2=1)
+PASS: node child B: MW^2/MZ^2 = cos^2 th_W  (g2=1,gp2=1)
+PASS: node child B: rho = (MW^2/MZ^2)/cos^2 = 1  (g2=1,gp2=1)
+PASS: edge: sin^2 + cos^2 = 1 (shared th_W)  (g2=1,gp2=1)
+PASS: COMPOSITION: e^2/g^2 + MW^2/MZ^2 = 1  (g2=1,gp2=1)
+PASS: COMPOSITION sibling: MW^2/MZ^2 = 1 - e^2/g^2  (g2=1,gp2=1)
+PASS: node child A: e^2 = g^2 sin^2 = g'^2 cos^2  (g2=4,gp2=3)
+PASS: node child A: 1/e^2 = 1/g^2 + 1/g'^2  (g2=4,gp2=3)
+PASS: node child B: MW^2/MZ^2 = cos^2 th_W  (g2=4,gp2=3)
+PASS: node child B: rho = (MW^2/MZ^2)/cos^2 = 1  (g2=4,gp2=3)
+PASS: edge: sin^2 + cos^2 = 1 (shared th_W)  (g2=4,gp2=3)
+PASS: COMPOSITION: e^2/g^2 + MW^2/MZ^2 = 1  (g2=4,gp2=3)
+PASS: COMPOSITION sibling: MW^2/MZ^2 = 1 - e^2/g^2  (g2=4,gp2=3)
+PASS: node child A: e^2 = g^2 sin^2 = g'^2 cos^2  (g2=100,gp2=1)
+PASS: node child A: 1/e^2 = 1/g^2 + 1/g'^2  (g2=100,gp2=1)
+PASS: node child B: MW^2/MZ^2 = cos^2 th_W  (g2=100,gp2=1)
+PASS: node child B: rho = (MW^2/MZ^2)/cos^2 = 1  (g2=100,gp2=1)
+PASS: edge: sin^2 + cos^2 = 1 (shared th_W)  (g2=100,gp2=1)
+PASS: COMPOSITION: e^2/g^2 + MW^2/MZ^2 = 1  (g2=100,gp2=1)
+PASS: COMPOSITION sibling: MW^2/MZ^2 = 1 - e^2/g^2  (g2=100,gp2=1)
+PASS: node child A: e^2 = g^2 sin^2 = g'^2 cos^2  (g2=7/11,gp2=13/17)
+PASS: node child A: 1/e^2 = 1/g^2 + 1/g'^2  (g2=7/11,gp2=13/17)
+PASS: node child B: MW^2/MZ^2 = cos^2 th_W  (g2=7/11,gp2=13/17)
+PASS: node child B: rho = (MW^2/MZ^2)/cos^2 = 1  (g2=7/11,gp2=13/17)
+PASS: edge: sin^2 + cos^2 = 1 (shared th_W)  (g2=7/11,gp2=13/17)
+PASS: COMPOSITION: e^2/g^2 + MW^2/MZ^2 = 1  (g2=7/11,gp2=13/17)
+PASS: COMPOSITION sibling: MW^2/MZ^2 = 1 - e^2/g^2  (g2=7/11,gp2=13/17)
+PASS: node child A: e^2 = g^2 sin^2 = g'^2 cos^2  (g2=3,gp2=5)
+PASS: node child A: 1/e^2 = 1/g^2 + 1/g'^2  (g2=3,gp2=5)
+PASS: node child B: MW^2/MZ^2 = cos^2 th_W  (g2=3,gp2=5)
+PASS: node child B: rho = (MW^2/MZ^2)/cos^2 = 1  (g2=3,gp2=5)
+PASS: edge: sin^2 + cos^2 = 1 (shared th_W)  (g2=3,gp2=5)
+PASS: COMPOSITION: e^2/g^2 + MW^2/MZ^2 = 1  (g2=3,gp2=5)
+PASS: COMPOSITION sibling: MW^2/MZ^2 = 1 - e^2/g^2  (g2=3,gp2=5)
+PASS: node child A: e^2 = g^2 sin^2 = g'^2 cos^2  (g2=1,gp2=0)
+PASS: node child B: MW^2/MZ^2 = cos^2 th_W  (g2=1,gp2=0)
+PASS: node child B: rho = (MW^2/MZ^2)/cos^2 = 1  (g2=1,gp2=0)
+PASS: edge: sin^2 + cos^2 = 1 (shared th_W)  (g2=1,gp2=0)
+PASS: COMPOSITION: e^2/g^2 + MW^2/MZ^2 = 1  (g2=1,gp2=0)
+PASS: COMPOSITION sibling: MW^2/MZ^2 = 1 - e^2/g^2  (g2=1,gp2=0)
+PASS: cross-node demo: sin^2=3/8 -> cos^2 (=MW^2/MZ^2) = 5/8
+PASS: cross-node demo: e^2/g^2 + MW^2/MZ^2 = 1 at sin^2=3/8
+PASS: negative control: spurious MW^2/MZ^2 breaks the composition
+
+TOTAL: PASS=56 FAIL=0
+
+----- stderr -----
+

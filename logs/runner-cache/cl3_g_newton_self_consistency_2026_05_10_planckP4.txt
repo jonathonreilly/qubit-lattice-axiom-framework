@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_g_newton_self_consistency_2026_05_10_planckP4.py
-runner_sha256: f6e7ed7562e82851c26cc09f935dad3c1fa4e01fafe65e7c96a7f604bd470bdd
+runner_sha256: 321ac9fa08020599a9c291745e97fd2ffd3300ecd52e2785c061e402d7b6d152
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.48
+elapsed_sec: 0.39
 status: ok
 ----- stdout -----
 
@@ -40,12 +40,12 @@ Section 3: Barrier B(a) propagator-skeleton non-uniqueness
 [PASS] S3.4 no retained skeleton-selection theorem in ledger -- found 0 matching retained theorems (expected 0)
 
 ==============================================================================
-Section 4: Barrier B(b) Born-map non-uniqueness
+Section 4: Barrier B(b) Born-source dependency refresh
 ==============================================================================
 [PASS] S4.1 Born and DM-trace agree on pure states -- max diff = 0.00e+00
 [PASS] S4.2 mixed-state DM trace gives uniform density -- rho = [0.5, 0.5]
 [PASS] S4.3 pure-state Born map is target-side (depends on chosen psi) -- matches Barrier G4 of KOIDE_A1_PROBE_GRAVITY_PHASE
-[PASS] S4.4 no retained positive/bounded Born-as-gravity-source theorem in ledger -- found 0 matching retained positive/bounded theorems (expected 0)
+[PASS] S4.4 retained/bounded Born-source support rows are now discoverable -- found 2 matching retained positive/bounded theorem(s)
 
 ==============================================================================
 Section 5: Barrier B(c) test-mass-action non-derivation
@@ -66,10 +66,10 @@ Section 7: Bounded-sharpening theorem statement
 ==============================================================================
 [PASS] S7.1 P1 dimensional rigidity verified -- G_Newton form rigid given retained Z^3 Green function + dimensional inputs
 [PASS] S7.2 P2 Barrier B(a) propagator-skeleton non-uniqueness verified
-[PASS] S7.3 P2 Barrier B(b) Born-map non-uniqueness verified
+[PASS] S7.3 P2 Barrier B(b) Born-source dependency refresh verified
 [PASS] S7.4 P2 Barrier B(c) test-mass-action non-derivation verified
 [PASS] S7.5 bounded sharpening synthesis (positive P1 + negative P2) -- G_Newton self-consistency status: SHARPENED, NOT FULLY CLOSED
-[PASS] S7.6 closure frontier identified (3 retained primitives needed) -- (a) propagator-skeleton selection theorem; (b) Born-as-gravity-source theorem; (c) weak-field-action derivation theorem
+[PASS] S7.6 closure frontier identified (2 retained derivations plus Born-source composition) -- (a) propagator-skeleton selection theorem; (b) compose through Born-source dependency; (c) weak-field-action derivation theorem
 
 ==============================================================================
 === TOTAL: PASS=32, FAIL=0 ===
@@ -78,18 +78,17 @@ Section 7: Bounded-sharpening theorem statement
 Bounded sharpening verified:
   - P1 (positive): dimensional G_Newton form is rigid given
     retained Z^3 Green function + dimensional inputs.
-  - P2 (negative): three named admissions are not derivable
-    from retained baseline content alone.
+  - P2 (negative/refresh): propagator skeleton and
+    weak-field response remain unforced; Born source now has
+    named dependency support to compose through.
 
-Status of GRAVITY_CLEAN_DERIVATION_NOTE: remains
-audited_conditional / bounded_theorem on three named admissions.
+GRAVITY_CLEAN_DERIVATION_NOTE remains a conditional IF-chain
+on named dependency gates.
 
-Closing G_Newton unconditionally requires NEW retained primitives:
+Closing G_Newton unconditionally requires:
   (a) propagator-skeleton selection theorem
-  (b) Born-as-gravity-source derivation theorem
+  (b) explicit composition through the Born-source dependency
   (c) weak-field-action derivation theorem
-
-None of these exists in the audit ledger as of 2026-05-10.
 
 ----- stderr -----
 

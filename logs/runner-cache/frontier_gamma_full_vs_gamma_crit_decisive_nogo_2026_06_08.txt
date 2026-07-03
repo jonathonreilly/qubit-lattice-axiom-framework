@@ -1,0 +1,80 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gamma_full_vs_gamma_crit_decisive_nogo_2026_06_08.py
+runner_sha256: 07d9c9c2271cf1dac49b7fe83fd667a7bd3d860e4f419354edb9940b8c46dcbc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.06
+status: ok
+----- stdout -----
+================================================================================================
+gamma (velocity-difference anomalous dimension) vs gamma_crit -- fills #3121's named open input
+================================================================================================
+
+------------------------------------------------------------------------------------------------
+Part A: the difference-mode eigenvalue gamma = (C_F + T_F N_f) alpha_s, DIAGONALIZED (C_A cancels -- a computed test)
+------------------------------------------------------------------------------------------------
+  [PASS] (A1) SU(3) Casimirs from N=3: C_F=4/3, T_F=1/2, C_A=3  --  C_F=1.3333, T_F=0.5, C_A=3.0
+  [PASS] (A2.1) N_f=1: diagonalized nonzero eigenvalue = (C_F+T_F*N_f)*alpha_s, other eigenvalue = 0 (the common/overall-velocity mode)  --  gamma_diag=0.1459 == formula 0.1459; zero-mode=0.0e+00
+  [PASS] (A2.3) N_f=3: diagonalized nonzero eigenvalue = (C_F+T_F*N_f)*alpha_s, other eigenvalue = 0 (the common/overall-velocity mode)  --  gamma_diag=0.2255 == formula 0.2255; zero-mode=0.0e+00
+  [PASS] (A2.6) N_f=6: diagonalized nonzero eigenvalue = (C_F+T_F*N_f)*alpha_s, other eigenvalue = 0 (the common/overall-velocity mode)  --  gamma_diag=0.3448 == formula 0.3448; zero-mode=0.0e+00
+   ... C_A does NOT appear in the coupled matrix: the pure-glue self-energy renormalizes the SINGLE gluon
+   ... velocity toward itself (common-mode/wavefunction pull) and lives in the coupling beta-function (-11/3 C_A).
+  [PASS] (A3) gamma = (4/3 + N_f/2) alpha_s lands in [0.146, 0.345] for N_f=1..6 at beta=6 (the physical one-loop value)  --  gamma in [0.146, 0.345]
+
+------------------------------------------------------------------------------------------------
+Part B: a deliberately inflated over-estimate -- force the FULL adjoint C_A into the difference channel + N_f=6
+------------------------------------------------------------------------------------------------
+  [PASS] (B1) inflated c_gamma_max = C_F + T_F*6 + C_A = 7.33 -> gamma_max ~ 0.58 (an over-estimate: C_A is really a common-mode pull, N_f<=6)  --  c_gamma_max=7.33, gamma_max=0.584
+
+------------------------------------------------------------------------------------------------
+Part C: the IR strong-QCD regime cannot rescue it (computed e-fold budget)
+------------------------------------------------------------------------------------------------
+  [PASS] (C1) IR strong regime (alpha_s~1, gamma~1) over ~1 e-fold near Lambda_QCD -> extra factor ~e^-1~0.37, NOT the ~1e-14 needed  --  extra ~ 0.37 >> needed 1e-14; the regeneration is in the UV where AF makes alpha_s weak
+
+------------------------------------------------------------------------------------------------
+Part D: gamma_crit(B) per sector; gamma_max below the tight bounds; ROBUST to the (open) delta_v_UV coefficient
+------------------------------------------------------------------------------------------------
+  [PASS] (D1) gamma_crit(B) = log10(delta_v_UV/B)/log10(M_Pl/mu): quark/gluon 0.5-0.6 (weakest), photon/electron/nucleon all ~0.9-1.3  --  photon=0.95, electron=1.06, nucleon=1.32, quark/gluon=0.53
+  [PASS] (D2) DECISIVE: the inflated gamma_max=0.58 is below gamma_crit for ALL tight bounds (photon/electron/nucleon)  --  gamma_max=0.58 < min tight gamma_crit=0.95
+  [PASS] (D3) residual species delta_v(1 GeV) in every factor-2 corner exceeds the tight bounds (1e-20..1e-27) by 10+ orders  --  min residual delta_v ~ 3.5e-09; max ~ 8.7e-05
+  [PASS] (D4) ROBUST to the open coefficient (as a MARGIN): the one-loop estimate delta_v_UV~1.6e-2 sits >=6 orders ABOVE the threshold where even the inflated gamma_max=0.58 would beat the photon bound  --  fail-threshold(inflated gamma)=1.4e-09 -> margin 7.1 orders; fail-threshold(physical gamma)=2.0e-16 -> margin 13.9 orders; d(gamma_crit)/decade=0.052
+   ... So the no-go survives the open coefficient being wrong by up to ~7 orders (inflated gamma) / ~14 orders (physical gamma).
+   ... It does NOT survive an unbounded downward revision: if delta_v_UV were below ~1e-9 the inflated gamma could beat
+   ... the photon bound -- but the one-loop estimate is ~1e-2, so this is not a live concern. Honest boundary stated.
+
+------------------------------------------------------------------------------------------------
+Part F: the one honest boundary (AF forecloses a walking plateau) + the false-escape guard + reconciliation
+------------------------------------------------------------------------------------------------
+  [PASS] (F1) THE TRAP: with asymptotic freedom the RG-integrated exponent S = INT gamma dl ~ 7 (1 GeV->M_Pl) is >5x BELOW the S~42 the weakest tight bound needs  --  S_AF~7.0 vs S_needed~42.0; gamma is tethered to the weak UV alpha_s exactly at the regeneration scale
+  [PASS] (F2) THE BOUNDARY (stated both ways): a WALKING/near-conformal alpha*~0.3 SUSTAINED over ~44 e-folds WOULD give S~37 and could close the gap -- but is MUTUALLY EXCLUSIVE with AF (Banks-Zaks needs N_f~16.5)  --  S_walk~37; sustained-strong-gamma XOR asymptotic-freedom -- AF is exactly what forecloses this escape
+  [PASS] (F4) FALSE-ESCAPE GUARD: lattice bare alpha~0.08 at M_Pl is NOT the MS-bar continuum value (real ~0.019, SMALLER) -- running the bare coupling to a fake Landau pole to inflate S is unphysical  --  alpha_msbar(M_Pl)~0.019 < lattice bare 0.080; the conservative (bare) choice already over-states gamma
+  [PASS] (F5) two delta_v_UV normalizations (0.2*alpha_s vs 0.013*C_F) BOTH put the tight gamma_crit in ~0.9-1.4 -- the no-go margin is normalization-independent  --  normA photon=0.95, normB photon=0.96
+
+------------------------------------------------------------------------------------------------
+Part G: audit-unlock guardrails -- no parent promotion, no hidden new axiom, no status change
+------------------------------------------------------------------------------------------------
+  [PASS] (G1) source note names the exact sub-blocker and preserves the two remaining Lorentz parent blockers  --  all audit-unlock scope phrases present
+  [PASS] (G2) trace target is separated from proof authority and parent-clean wording is forbidden  --  trace/pruning guardrails present
+  [PASS] (G3) source note keeps the no-go audit-ready without adding axioms or audit/status claims  --  status guardrails present
+
+------------------------------------------------------------------------------------------------
+Verdict and honest scope (narration -- not tests)
+------------------------------------------------------------------------------------------------
+   ... VERDICT: gamma ~ 0.15-0.34 (inflated over-estimate <= 0.58) is below the tight gamma_crit ~ 0.9-1.3, robustly
+   ... (to factor-2 c_v, max colour leak, large N_f, the IR regime, and the 9-decade delta_v_UV sweep). So the
+   ... continuous-time (xi->inf) horn's flow-suppression escape does NOT beat the tight bounds -- the residual D of
+   ... #3121 stands quantitatively. The boundary is asymptotic freedom: a walking plateau would close it but is
+   ... excluded for the framework's AF SU(3).
+   ... SCOPE: a no-go on the flow-suppression SUFFICIENCY of the xi->inf horn ONLY. On the xi=1 discrete surface the
+   ... cited B_4 boundary note gives delta_v=0 by the hypercubic point group, so BOTH horns of delta_v(xi) remain live.
+   ... This does NOT establish delta_v=0, is NOT a custodial mechanism, and is NOT a framework inconsistency.
+
+================================================================================================
+Fills #3121 Part D's named open input (the fixed-point anomalous dimension): gamma < gamma_crit for the
+tight bounds, robust to the open coefficient. The xi->inf flow-suppression escape does not beat the bounds;
+both horns of delta_v(xi) stay live (xi=1 gives delta_v=0 by the cited B_4 boundary). Sets no audit status.
+================================================================================================
+TOTAL: PASS=18 FAIL=0
+================================================================================================
+
+----- stderr -----

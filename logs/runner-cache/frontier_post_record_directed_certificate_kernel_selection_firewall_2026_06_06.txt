@@ -1,0 +1,97 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.py
+runner_sha256: 7e37c50141eaa52a1191bcbaa4340de73ffc163f8d830f2ea4aa4340c9f04a7b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md exists
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md contains: Directed certificates do not select a production kernel
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md contains: kernel remains a supplied bridge input
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md contains: same directed certificate data can admit distinct candidate kernels
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md exists
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md contains: supplied finite law plus supplied orientation bridge
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md contains: examples do not derive an arrow, clock, kernel, or selected dial
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md contains: The certificate is scoped to those inputs.
+PASS docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md contains: The physical forward order is a supplied bridge
+PASS docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md contains: does not derive an orientation
+PASS docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md contains: Does not derive or select a production kernel
+PASS docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md exists
+PASS docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md contains: post-record counts do not orient a physical arrow
+PASS docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md contains: or production kernel is a separate
+PASS docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md contains: count states are invariant under word reversal
+
+------------------------------------------------------------------------------
+No-go 1: identical finite law with different unvisited kernel rows
+------------------------------------------------------------------------------
+PASS source is normalized for unvisited-row witness
+PASS first candidate kernel is row-stochastic :: {'A': {'A': Fraction(1, 2), 'B': Fraction(1, 2)}, 'B': {'A': Fraction(1, 1), 'B': Fraction(0, 1)}}
+PASS second candidate kernel is row-stochastic :: {'A': {'A': Fraction(1, 2), 'B': Fraction(1, 2)}, 'B': {'A': Fraction(0, 1), 'B': Fraction(1, 1)}}
+PASS candidate kernels differ
+PASS finite length-2 laws are identical :: {('A', 'A'): Fraction(1, 2), ('A', 'B'): Fraction(1, 2)}
+PASS endpoint A-to-B certificate value is identical
+PASS signed directed statistic is identical
+PASS count pushforward is identical :: {(2, 0): Fraction(1, 2), (1, 1): Fraction(1, 2)}
+PASS supplied-kernel certificate verifies when kernel id is supplied
+PASS missing kernel id blocks dynamics-language certificate
+PASS same certificate admits both distinct candidate kernels :: ['k1', 'k2']
+PASS certificate does not uniquely select kernel
+
+------------------------------------------------------------------------------
+No-go 2: same scalar certificate with different laws and kernels
+------------------------------------------------------------------------------
+PASS source is normalized for scalar-underselection witness
+PASS full-support candidate kernels are row-stochastic
+PASS full-support candidate kernels differ
+PASS full-support laws differ :: law3={('A', 'A'): Fraction(1, 4), ('A', 'B'): Fraction(1, 4), ('B', 'A'): Fraction(0, 1), ('B', 'B'): Fraction(1, 2)} law4={('A', 'A'): Fraction(1, 4), ('A', 'B'): Fraction(1, 4), ('B', 'A'): Fraction(1, 2), ('B', 'B'): Fraction(0, 1)}
+PASS endpoint A-to-B scalar certificate is the same
+PASS other directed statistic separates the candidates
+PASS second-is-B statistic separates the candidates
+PASS same scalar certificate admits both candidates :: ['k3', 'k4']
+PASS scalar certificate alone does not select production kernel
+
+------------------------------------------------------------------------------
+Bridge-scope checks
+------------------------------------------------------------------------------
+PASS bridge-scoped certificate verifies
+PASS wrong bridge law scope is blocked
+PASS missing orientation is blocked
+PASS wrong certificate value is rejected
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS audit data written flag is false
+PASS audit verdict applied flag is false
+PASS promoted/retained claim flag is false
+PASS production-kernel selected flag is false
+PASS kernel derived from directed certificate flag is false
+PASS Record-derived orientation flag is false
+PASS Record-derived physical arrow flag is false
+PASS clock/rate derived flag is false
+PASS Born law derived from Record flag is false
+PASS generation/Koide dial selected flag is false
+PASS stable setting selects dial flag is false
+
+SUMMARY: PASS=52 FAIL=0
+DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL=TRUE
+SAME_DIRECTED_CERTIFICATE_DISTINCT_KERNELS=TRUE
+PRODUCTION_KERNEL_SELECTED=FALSE
+PRODUCTION_KERNEL_DERIVED_FROM_DIRECTED_CERTIFICATE=FALSE
+ORIENTATION_DERIVED_FROM_RECORD=FALSE
+PHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE
+CLOCK_OR_RATE_DERIVED=FALSE
+BORN_LAW_DERIVED_FROM_RECORD=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+STABLE_SETTING_SELECTS_DIAL=FALSE
+AUDIT_LEDGER_WRITTEN=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+
+----- stderr -----
+

@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_scalar_generator_tt_kernel_sharpening.py
+runner_sha256: 6554475c9479f638df868053ba7ae5bb5e5f645170a52a288f81ba6b65e06972
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.82
+status: ok
+----- stdout -----
+PASS T1 metric source s=g_ij qhat_i qhat_j; ds/dg_ii = qhat_i^2 (linear in g, rank-1 gradient)
+PASS T2 per-mode metric-Hessian of W is RANK-1 (longitudinal qhat qhat)
+PASS T3 DECISIVE: TT (spin-2 graviton) block in EXACT kernel (max overlap 5.0e-17 < 1e-14)
+PASS T4 Cl(3)-Dirac det (m0^2 - qhat^T g qhat): metric-Hessian also rank-1 longitudinal qhat qhat
+PASS T5 native TT projector frame-DEPENDENT: ||P_TT(z)-P_TT(111)||_F = 1.56 (large)
+PASS T5b sphere-avg P_TT collapses to (2/5)P_traceless (5 eigs ~0.4, zero spin-2 info)
+PASS T6 supermetric spatial trace/shear DEGENERATE (all -1/b^2 = -2.0408)
+PASS T6b SO(3) isotypy commutant dim = 2 (trace + traceless irreps) => trace-vs-shear LABEL fixed
+
+RE-SCOPED missing primitive: a spin-2-coupled TWO-DERIVATIVE curvature generator
+(the scalar W-route's TT-kernel forbids lifting the degeneracy from W alone).
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

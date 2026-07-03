@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gravity_weak_field_source_response_bridge_2026_06_11.py
+runner_sha256: 0d290c4c72d78597287168f02a9aea3cdd833cb196752d4b6c0f9a7429953ccb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.23
+status: ok
+----- stdout -----
+PASS: note contains required phrase: Claim type:** bounded_theorem
+PASS: note contains required phrase: Status authority:** independent audit lane only
+PASS: note contains required phrase: A[phi; rho] = (1/2) <phi, H phi> - <P0 rho, phi>
+PASS: note contains required phrase: rho_psi(x) = |psi(x)|^2
+PASS: note contains required phrase: S_test(phi; x) = L_test (1 - phi(x))
+PASS: note contains required phrase: L^{-1} = G0
+PASS: note contains required phrase: U_test(phi; x) = -m phi(x)
+PASS: note contains required phrase: F_x = -grad_x U_test = +m grad_x phi(x)
+PASS: note contains required phrase: This is a bounded weak-field theorem
+PASS: note contains required phrase: does not claim
+PASS: note contains required phrase: LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md
+PASS: note contains required phrase: POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md
+PASS: note contains required phrase: GATE_B_POISSON_SELF_GRAVITY_NOTE.md
+PASS: note excludes forbidden phrase: **Status:** retained
+PASS: note excludes forbidden phrase: zero-free-parameter physical-gravity closure
+PASS: note excludes forbidden phrase: full Einstein equations are derived
+PASS: note excludes forbidden phrase: G_Newton in SI units is derived
+PASS: note excludes forbidden phrase: proportional to `-m grad phi(x)`
+PASS: note excludes forbidden phrase: F_x = -grad_x Delta S_test
+PASS: H is symmetric
+PASS: H has one constant zero mode (zero_modes=1)
+PASS: H is positive on neutral sector (lambda_min=1.38197)
+PASS: G0 is symmetric
+PASS: H G0 equals P0
+PASS: G0 H equals P0
+PASS: Euler equation H phi = P0 rho at phi=G0 P0 rho (norm=2.673e-14)
+PASS: quadratic action increase is 1/2 eta.H.eta (diff=0.000e+00)
+PASS: stationary point is a minimum on neutral sector (increase=355.823)
+PASS: perturbed kernel K != G0 fails Euler equation (residual=3.663e+00)
+PASS: translation-covariant local weights have one-dimensional nullspace (null_dim=1)
+PASS: constant weight satisfies translation constraints
+PASS: Born density is local phase invariant
+PASS: Born density normalizes to ||psi||^2
+PASS: normalization fixes constant local weight a=1
+PASS: Born density is translation covariant
+PASS: Poisson solve with neutral Born density closes
+PASS: test action response is S=L(1-phi)
+PASS: force is m times gradient of background potential
+PASS: U=-m phi gives F=-grad U=+m grad phi
+PASS: test potential energy is -m phi
+PASS: force response is bilinear in source and test mass (case 1)
+PASS: force response is bilinear in source and test mass (case 2)
+PASS: integrated-out action equals -1/2 rho.G0.rho
+PASS: test-source derivative equals -M G0(x,y)
+
+TOTAL: PASS=44 FAIL=0
+
+----- stderr -----
+

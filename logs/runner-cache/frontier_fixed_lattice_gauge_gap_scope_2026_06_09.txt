@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/frontier_fixed_lattice_gauge_gap_scope_2026_06_09.py
+runner_sha256: 9b60d3e0bd77c11494597bc7eac6d74f198cf7e76e19e2a3949d05d2e5c29b1d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+========================================================================================
+Fixed-lattice compact-gauge scope diagnostics
+========================================================================================
+
+----------------------------------------------------------------------------------------
+A. Finite compact one-plaquette integrals at fixed lattice spacing
+----------------------------------------------------------------------------------------
+  [PASS] representative SU(2) and compact U(1) Wilson integrals are finite and positive  --  Z_SU2(beta=6)=20.4473, Z_U1(beta=6)=67.2344
+
+----------------------------------------------------------------------------------------
+B. Strong-coupling leading one-plaquette diagnostics
+----------------------------------------------------------------------------------------
+  beta=0.5: SU(2) factor=0.123718, sigma=2.089751; U(1) factor=0.242500, sigma=1.416755
+  beta=1.0: SU(2) factor=0.240194, sigma=1.426309; U(1) factor=0.446390, sigma=0.806562
+  beta=1.5: SU(2) factor=0.344144, sigma=1.066695; U(1) factor=0.596133, sigma=0.517291
+  [PASS] strong-coupling factors are between zero and one
+  [PASS] leading strong-coupling sigma diagnostics -log(factor) are positive
+  [PASS] toy leading-loop diagnostic has area-law-shaped algebra log W(R,T)=-sigma*R*T
+
+----------------------------------------------------------------------------------------
+C. Weakening diagnostic, not all-coupling confinement
+----------------------------------------------------------------------------------------
+  [PASS] leading factors move toward one as beta increases  --  SU(2) 0.124->0.819; U(1) 0.242->0.935
+
+----------------------------------------------------------------------------------------
+D. Guardrails
+----------------------------------------------------------------------------------------
+  [PASS] guardrail: no Clay continuum a->0 construction
+  [PASS] guardrail: no rigorous physical SU(3) gap at beta=6
+  [PASS] guardrail: no observed photon/gluon spectrum derivation
+  [PASS] guardrail: no Planck-scale physical import from the scale-reference primitive
+  [PASS] guardrail: no Record readout, probability, or measurement claim
+
+========================================================================================
+SUMMARY: PASS=10 FAIL=0
+========================================================================================
+
+----- stderr -----
+

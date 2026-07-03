@@ -29,9 +29,18 @@ the same Noether structure for U(1) ⊂ SU(3)):
   E4.  On-shell global charge conservation: total fermion number
        Q = Σ_x ⟨χ̄_x χ_x⟩ is constant under temporal translation.
 
-  E5.  Algebraic closure (5) -> (4): under U(1) phase substitution
-       T = i I, the bilateral current formula (5) reduces to the
-       fermion-number current (4) up to the convention factor -i.
+  E5.  Algebraic closure (5) -> (4): under onsite/internal U(1) phase
+       substitution T = i I, the bilateral current formula (5) reduces
+       to the fermion-number current (4) up to the convention factor +i.
+       The 2026-06-06 repair adds an arbitrary-bilinear symbolic check
+       for the sign convention, not only a sampled lattice value.
+
+  E5b. Direct U(1) local-envelope sign check: for arbitrary sampled
+       finite fields chi, chibar and local alpha_x, the direct variation
+       delta S matches the bilateral plus-sign expression in (7c), while
+       the old minus-sign current fails by an order-one residual. This
+       makes the sign visible without using a propagator surface where
+       symmetric link-bilinears can cancel.
 
   E6.  Support-only verification of (3): the canonical staggered sublattice-
        momentum density P^μ_x = -(i/2) η_μ(x) [χ̄_x ∂^L_μ χ_x -
@@ -57,7 +66,9 @@ from __future__ import annotations
 
 import sys
 import numpy as np
+import sympy as sp
 from itertools import product
+from pathlib import Path
 
 
 def staggered_eta(x, mu):
@@ -241,11 +252,11 @@ def exhibit_E3_E4(L=4, dim=3, mass=0.3, tol=1e-9):
 # ---------------------------------------------------------------------------
 
 # ---------------------------------------------------------------------------
-# E5 — algebraic closure of (5) -> (3) and (5) -> (4) (added 2026-05-03
-#      for review follow-up). Verifies that the bilateral current
-#      formula (5) reduces to the explicit (3) momentum density and
-#      (4) fermion-number current under the corresponding T^A
-#      substitution, on a small lattice.
+# E5 — algebraic closure of (5) -> (4) (added 2026-05-03 for review
+#      follow-up; strengthened 2026-06-06). Verifies that the onsite/internal
+#      U(1) phase substitution in the bilateral current formula (5) reduces
+#      to the fermion-number current (4), and checks the sign convention
+#      exactly for arbitrary forward/backward bilinears.
 # ---------------------------------------------------------------------------
 
 def exhibit_E5(L=4, dim=3, mass=0.3, tol=1e-12):
@@ -256,7 +267,7 @@ def exhibit_E5(L=4, dim=3, mass=0.3, tol=1e-12):
 
     # (5) for U(1) phase generator T = i*I gives:
     #   J^mu_x = (i/2) eta_mu(x) [chibar_x chi_{x+mu} + chibar_{x+mu} chi_x]
-    # The convention-real fermion-number current (4) is -i times this:
+    # The convention-real fermion-number current (4) is +i times this:
     #   J^mu_x_real = -(1/2) eta_mu(x) [chibar_x chi_{x+mu} + chibar_{x+mu} chi_x]
     # Verify: under the U(1) phase substitution into (5) above, the resulting
     # bilateral form matches (4) exactly.
@@ -274,17 +285,79 @@ def exhibit_E5(L=4, dim=3, mass=0.3, tol=1e-12):
             #        = (i/2) eta * [G(xp,x) + G(x,xp)]   (with G = M^-1)
             J5 = 0.5j * eta * (Minv[ip, i] + Minv[i, ip])
             # The convention-real version:
-            J5_real = -1j * J5
+            J5_real = 1j * J5
             # The (4) form:
             J4 = -0.5 * eta * (Minv[ip, i] + Minv[i, ip])
             closure_max = max(closure_max, abs(J5_real - J4))
             n_sites += 1
+    B_forward, B_backward, eta_symbol = sp.symbols("B_forward B_backward eta")
+    J5_phase = sp.I * sp.Rational(1, 2) * eta_symbol * (B_forward + B_backward)
+    J5_real = sp.I * J5_phase
+    J4_real = -sp.Rational(1, 2) * eta_symbol * (B_forward + B_backward)
+    symbolic_residual = sp.simplify(J5_real - J4_real)
+    symbolic_pass = symbolic_residual == 0
+
     print(f"  L={L}, dim={dim}, mass={mass}, sites checked={n_sites}")
+    print(f"  symbolic arbitrary-bilinear residual i*(i/2)*eta*(B+ + B-) - J4 = {symbolic_residual}")
     print(f"  max |J5_real - J4| = {closure_max:.3e}  (target: 0 to machine precision)")
-    e5_pass = closure_max < tol
+    e5_pass = closure_max < tol and symbolic_pass
     print(f"  Bilateral (5) under T = i I closes algebraically to (4):")
+    print(f"  symbolic arbitrary-bilinear verdict: {'PASS' if symbolic_pass else 'FAIL'}")
     print(f"  E5 verdict: {'PASS' if e5_pass else 'FAIL'}")
     return e5_pass
+
+
+def exhibit_E5b(L=4, dim=3, mass=0.3, tol=1e-12):
+    print("\n--- Exhibit E5b: direct U(1) local-envelope sign check ---")
+    M, sites, idx = build_M_pure_staggered(L, mass=mass, dim=dim)
+    N = len(sites)
+    rng = np.random.default_rng(20260606)
+    chi = rng.normal(size=N) + 1j * rng.normal(size=N)
+    chibar = rng.normal(size=N) + 1j * rng.normal(size=N)
+    alpha = rng.normal(size=N)
+
+    # Direct local U(1) variation with delta chi = i alpha chi and
+    # delta chibar = -i alpha chibar.
+    direct_delta = ((-1j * alpha * chibar) @ M @ chi) + (
+        chibar @ M @ (1j * alpha * chi)
+    )
+
+    bilateral_plus = 0.0 + 0.0j
+    historical_minus = 0.0 + 0.0j
+    for x in sites:
+        i = idx[x]
+        for mu in range(dim):
+            ehat = tuple(1 if k == mu else 0 for k in range(dim))
+            xp = tuple((x[k] + ehat[k]) % L for k in range(dim))
+            ip = idx[xp]
+            eta = staggered_eta(x, mu)
+            dalpha = alpha[ip] - alpha[i]
+            bilateral_plus += (
+                0.5j
+                * eta
+                * (chibar[i] * chi[ip] + chibar[ip] * chi[i])
+                * dalpha
+            )
+            historical_minus += (
+                0.5j
+                * eta
+                * (chibar[i] * chi[ip] - chibar[ip] * chi[i])
+                * dalpha
+            )
+
+    plus_err = abs(direct_delta - bilateral_plus)
+    minus_err = abs(direct_delta - historical_minus)
+    direct_scale = max(abs(direct_delta), 1.0)
+    minus_relative = minus_err / direct_scale
+    e5b_pass = plus_err < tol and minus_relative > 1e-3
+    print(f"  L={L}, dim={dim}, mass={mass}, sampled fields={N}")
+    print(f"  direct delta S = {direct_delta.real:+.6e}{direct_delta.imag:+.6e}j")
+    print(f"  |direct - bilateral plus sign| = {plus_err:.3e}")
+    print(f"  |direct - historical minus sign| = {minus_err:.3e}")
+    print(f"  relative historical-minus residual = {minus_relative:.3e}")
+    print("  -> direct variation selects the plus-sign bilateral current in (7c).")
+    print(f"  E5b verdict: {'PASS' if e5b_pass else 'FAIL'}")
+    return e5b_pass
 
 
 # ---------------------------------------------------------------------------
@@ -490,6 +563,31 @@ def exhibit_E7(L=6, dim=3, mass=0.3, tol=1e-9):
     return pass_all
 
 
+def exhibit_E8_source_boundary():
+    print("\n--- Exhibit E8: source dependency boundary for parent staggered gate ---")
+    root = Path(__file__).resolve().parents[1]
+    note_path = root / "docs" / "AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+    text = note_path.read_text(encoding="utf-8")
+    flat_text = " ".join(text.split())
+
+    parent = "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+    retained_substep = "STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md"
+
+    checks = {
+        "note file exists": note_path.exists(),
+        "parent gate remains named as registered context": parent in text,
+        "parent gate is not a markdown one-hop dependency": f"]({parent})" not in text,
+        "retained substep-1 remains the markdown load-bearing dependency": f"]({retained_substep})" in text,
+        "registered route is explicitly non-current graph dependency": "not a current citation-graph dependency" in flat_text,
+        "source says parent uses no markdown edge": "no longer uses a markdown edge" in flat_text,
+    }
+    for label, ok in checks.items():
+        print(f"  {label}: {'PASS' if ok else 'FAIL'}")
+    passed = all(checks.values())
+    print(f"  E8 verdict: {'PASS' if passed else 'FAIL'}")
+    return passed
+
+
 def main():
     print("=" * 72)
     print(" axiom_first_lattice_noether_check.py")
@@ -501,14 +599,20 @@ def main():
     print(" 2026-05-10 gate-recategorization repair: + E6 (3) divergence check")
     print(" 2026-05-25 Step 4b boundary repair: E6 support-only, + E7 field-level")
     print(" exact two-step Ward identity")
+    print(" 2026-06-06 onsite-generator repair: E5 arbitrary-bilinear symbolic")
+    print(" sign check; (5) scoped to onsite/internal infinitesimal generators")
+    print(" 2026-06-06 audit repair: + E5b direct U(1) local-envelope sign check")
+    print(" 2026-06-12 source-boundary repair: + E8 parent gate plain-text target")
     print("=" * 72)
 
     e1 = exhibit_E1(L=2, dim=3)
     e2 = exhibit_E2(L=4, dim=3)
     e3, e4 = exhibit_E3_E4(L=4, dim=3)
     e5 = exhibit_E5(L=4, dim=3)
+    e5b = exhibit_E5b(L=4, dim=3)
     e6 = exhibit_E6(L=4, dim=3)
     e7 = exhibit_E7(L=6, dim=3)
+    e8 = exhibit_E8_source_boundary()
 
     print()
     print("=" * 72)
@@ -519,8 +623,10 @@ def main():
                "E3 (current divergence-free on shell)": e3,
                "E4 (global charge conservation)": e4,
                "E5 (bilateral (5) -> (4) algebraic closure)": e5,
+               "E5b (direct U(1) sign-visible local variation)": e5b,
                "E6 (support-only (3) momentum-density divergence)": e6,
-               "E7 (field-level two-step Ward identity)": e7}
+               "E7 (field-level two-step Ward identity)": e7,
+               "E8 (parent gate source-boundary check)": e8}
     n_pass = sum(1 for v in results.values() if v)
     n_total = len(results)
     for k, v in results.items():
@@ -529,9 +635,10 @@ def main():
     print()
     if n_pass == n_total:
         print(" verdict: bounded lattice Noether theorem exhibited on the admitted")
-        print("          staggered/Grassmann carrier; U(1) current closes via E5,")
-        print("          the (2Z)^d translation branch is the exact two-step Ward")
-        print("          identity checked by E7, and the old density (3) is")
+        print("          staggered/Grassmann carrier; U(1) current closes via E5")
+        print("          and sign-visible arbitrary-field E5b, the (2Z)^d")
+        print("          translation branch is the exact two-step Ward identity")
+        print("          checked by E7, and the old density (3) is")
         print("          support-only via E6.")
         return 0
     else:

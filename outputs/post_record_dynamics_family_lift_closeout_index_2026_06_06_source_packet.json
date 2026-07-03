@@ -1,0 +1,142 @@
+{
+  "audit_ledger_sha256": "15efee196a7b3738ec370120bc338105f64b4c82d0b236c80b0c47b5d5b7b95f",
+  "bounded_support_count": 1,
+  "claim_id": "post_record_dynamics_family_lift_closeout_index_2026-06-06",
+  "exact_support_count": 6,
+  "forbidden_true_flags": [
+    "AUDIT_DATA_WRITTEN",
+    "AUDIT_VERDICT_APPLIED",
+    "DIAL_FORCED_OR_SELECTED",
+    "FAMILY_LIFT_DERIVED_FROM_RECORD",
+    "FINITE_ALONE_UNBOUNDED_RETAINED",
+    "PRODUCTION_KERNEL_SELECTED_WITHOUT_RULE",
+    "PROMOTED_OR_RETAINED_CLAIM",
+    "SAMPLE_IS_PROBABILITY_LAW",
+    "SELECTION_RULE_DERIVED_FROM_RECORD",
+    "TARGET_VECTOR_DERIVED_FROM_RECORD"
+  ],
+  "no_go_count": 3,
+  "stack": [
+    {
+      "cache_path": "logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt",
+      "cache_sha256": "af1aa0d1148cf1a21344392a05be7c1306d9fe95445c49de6ad91988275ae99d",
+      "note_path": "docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md",
+      "note_sha256": "4bc59a75b4f416f7b696914441092990d1bb178afed9aba8f1c633715a1345ce",
+      "pr": 2850,
+      "runner_path": "scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py",
+      "runner_sha256": "31cdaed1b271dc15e2485f4a6fe3fce9bc41c5d4b6c8bc1f293560f8f1635b01",
+      "runner_summary": "SUMMARY: PASS=64 FAIL=0",
+      "status": "exact-support",
+      "title_fragment": "directed certificate examples"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt",
+      "cache_sha256": "e6218a4f70c7da170105ae133b4c90bc2670fbd6c33a1d3cc8eae879e80636c3",
+      "note_path": "docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md",
+      "note_sha256": "a5db4bd599077306f3422fc32f9cd492c641e52398d2da1aaa01697b66b4e314",
+      "pr": 2853,
+      "runner_path": "scripts/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.py",
+      "runner_sha256": "7e37c50141eaa52a1191bcbaa4340de73ffc163f8d830f2ea4aa4340c9f04a7b",
+      "runner_summary": "SUMMARY: PASS=52 FAIL=0",
+      "status": "no-go",
+      "title_fragment": "kernel-selection firewall"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt",
+      "cache_sha256": "611b0a480a99f115d72f3e46e96c2944d6a674a5dab1a897170cbdf1175301b7",
+      "note_path": "docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md",
+      "note_sha256": "0ceee89c249ea10aaa201d04cdba29b196b17f79e4b653cebe40a0a198b76a40",
+      "pr": 2856,
+      "runner_path": "scripts/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.py",
+      "runner_sha256": "992b979094ffcfef97fa4453f3a433ef539841d900c9e364d7b648cfa87eeb05",
+      "runner_summary": "SUMMARY: PASS=39 FAIL=0",
+      "status": "exact-support",
+      "title_fragment": "supplied kernel selection rule"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt",
+      "cache_sha256": "bc871ea57b25f5b8c7597345c433b20cf88fb44c40222d90f396fc40db809d0c",
+      "note_path": "docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md",
+      "note_sha256": "144b935bd77f37690b41c9d0fc5cb50d7f0f2500080eeba28a6c8e7bab7c555b",
+      "pr": 2858,
+      "runner_path": "scripts/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.py",
+      "runner_sha256": "bbe78160e80c17bf7bf1115e6afafad69051d7d616c4e2d6df7fe8d225897400",
+      "runner_summary": "SUMMARY: PASS=36 FAIL=0",
+      "status": "no-go",
+      "title_fragment": "target-vector firewall"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt",
+      "cache_sha256": "09056105fa56378f70c7a53fbc63413c337da6dfb1cf07abb733ecfbab290abd",
+      "note_path": "docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md",
+      "note_sha256": "3df73058e68c3630a543b3cffe1ebea4046a15902359b65f3a7e564b2f94abf1",
+      "pr": 2861,
+      "runner_path": "scripts/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.py",
+      "runner_sha256": "e1041e13a56cf6af61a1f946d9857baaa5f4751b705196626dcb1962253b9141",
+      "runner_summary": "SUMMARY: PASS=30 FAIL=0",
+      "status": "exact-support",
+      "title_fragment": "admitted sample target-vector"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt",
+      "cache_sha256": "f61b4e8f7e9106fea632d287545fa52587268685c9f9d1bcfd192c70cdb603b3",
+      "note_path": "docs/POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP_2026-06-06.md",
+      "note_sha256": "a458c882cfd6eaabe7d666fe558289eb0295400e331b6b5aa68364720ec03fef",
+      "pr": 2864,
+      "runner_path": "scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py",
+      "runner_sha256": "0e676f6cfbe05acadb8c4e7fc420cdac2734e878f4a9473de50e51ffc9b023d9",
+      "runner_summary": "SUMMARY: PASS=52 FAIL=0",
+      "status": "exact-support",
+      "title_fragment": "dynamics authority stack map"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.txt",
+      "cache_sha256": "29f02b523c54d18159e7aa0e7e54ab72304fe677eb148a766452191b665e134d",
+      "note_path": "docs/POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md",
+      "note_sha256": "0900eeb45987534c2fb0c27d448a59704fd6356ad426f23dd0d050dd25a01353",
+      "pr": 2868,
+      "runner_path": "scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py",
+      "runner_sha256": "b1484cc0f4edd1e9f7b7c84dc40fa197ff8ea2c46f78a538322d2e3ee3daef1b",
+      "runner_summary": "SUMMARY: PASS=53 FAIL=0",
+      "status": "exact-support",
+      "title_fragment": "dynamics campaign closeout index"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.txt",
+      "cache_sha256": "505ad9e11e0c17adfc688d1abc86acf95998e4ef90093bd83db56d89b6db58e5",
+      "note_path": "docs/POST_RECORD_RETAINED_UNBOUNDED_DYNAMICS_GATE_2026-06-06.md",
+      "note_sha256": "b5cf3bf8a59a08ff6d59faeea20e5218ba7da1697aaa1aeb935ea52bf3b778eb",
+      "pr": 2871,
+      "runner_path": "scripts/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.py",
+      "runner_sha256": "f9bfad80ac0f99a19dbb9ac2f3ae4f22e34270bc6ef577c88bcf2a30a9999328",
+      "runner_summary": "SUMMARY: PASS=54 FAIL=0",
+      "status": "exact-support",
+      "title_fragment": "retained/unbounded dynamics gate"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06.txt",
+      "cache_sha256": "00014601a3ed4f7a662803fc9aad5dbae739e52dda40be1b78acebeca71b78c6",
+      "note_path": "docs/POST_RECORD_FINITE_TO_UNBOUNDED_FAMILY_LIFT_NO_GO_2026-06-06.md",
+      "note_sha256": "54efade36313e77f9e92bf7e55776b4711c2fe61692b95cf5e004fb8a105a938",
+      "pr": 2874,
+      "runner_path": "scripts/frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06.py",
+      "runner_sha256": "4134f72de660122eae0fad1a1aa163ae882f2193179c486dd81413c13aa2b9e5",
+      "runner_summary": "SUMMARY: PASS=43 FAIL=0",
+      "status": "no-go",
+      "title_fragment": "finite-to-unbounded family-lift no-go"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_post_record_supplied_family_lift_certificate_interface_2026_06_06.txt",
+      "cache_sha256": "e035288222e2285647f77f2f3ff95049eb3f6474e23633590892ee0713d8e2ec",
+      "note_path": "docs/POST_RECORD_SUPPLIED_FAMILY_LIFT_CERTIFICATE_INTERFACE_2026-06-06.md",
+      "note_sha256": "bc685559d69e4969a9d11c5ebe60df504d8206ac060b73eb8b9aa64b66c63296",
+      "pr": 2875,
+      "runner_path": "scripts/frontier_post_record_supplied_family_lift_certificate_interface_2026_06_06.py",
+      "runner_sha256": "48de9132a5b52670a46d3290e593ffef895dee05466512abde5bed1e8f04cf1b",
+      "runner_summary": "SUMMARY: PASS=39 FAIL=0",
+      "status": "bounded-support",
+      "title_fragment": "supplied family-lift certificate interface"
+    }
+  ],
+  "stack_count": 10
+}

@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/frontier_brannen_circulant_forced_c3_covariant_form_2026_06_15.py
+runner_sha256: a0bd42b9f9736e9594cccadef155685c0754f5d663be6934aa4782355479e99d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
+SUMMARY: PASS - C is the 3x3 cyclic shift with C^3 = I
+SUMMARY: PASS - Hermitian real basis has dimension 9
+SUMMARY: PASS - dim_R{Hermitian H : [H,C]=0} is computed by rank/nullspace and equals exactly 3 -- rank=6 nullity=3
+SUMMARY: PASS - random (a in R, b in C) Brannen operators are Hermitian, C3-covariant, and reconstruct
+SUMMARY: PASS - each computed commutant nullspace basis vector reconstructs as aI+bC+conj(b)C^T
+SUMMARY: PASS - general commuting Hermitian operators reconstruct as Brannen circulants
+SUMMARY: PASS - numpy eigvalsh(H) matches a+2|b|cos(delta+2pi k/3) -- a=3, |b|=0.4, delta=0.2, r_label=0.0177777777778; a=2.5, |b|=0.9, delta=-0.7, r_label=0.1296; a=5, |b|=1.1, delta=1.3, r_label=0.0484
+SUMMARY: PASS - [H,S]=0 for Brannen circulant H and S=C+C^2
+SUMMARY: PASS - S=C+C^2 has the 2-sector record spectrum {2,-1,-1}
+SUMMARY: PASS - range-<=1 displacement operators on the 3-cycle are exactly {I,C,C^2}
+SUMMARY: PASS - {I,C,C^2} are independent and span the complex C3 commutant -- complex_commutant_dim=3, local_span_rank=3
+SUMMARY: PASS - control c1: diag(1,2,3) fails C3 covariance -- norm=2.44948974278
+SUMMARY: PASS - control c1: diag(1,2,3) does not commute with pointer S -- norm=3.46410161514
+SUMMARY: PASS - control c2: a generic non-C3 nonnormal operator has Hermitian commutant dimension < 3 -- rank=8 nullity=1
+SUMMARY: PASS - dial non-collapse: different supplied couplings give different (r,delta) labels -- (0.0625, 0.1) vs (0.16, -0.4)
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

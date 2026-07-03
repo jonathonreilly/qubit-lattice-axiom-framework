@@ -1,0 +1,85 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06.py
+runner_sha256: 4134f72de660122eae0fad1a1aa163ae882f2193179c486dd81413c13aa2b9e5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Finite prefix indistinguishability
+------------------------------------------------------------------------------
+PASS two completions are defined
+PASS completion names differ
+PASS prefix is nonempty
+PASS zero-tail agrees with prefix
+PASS one-tail agrees with prefix
+PASS certificate-window words are identical
+PASS prefix site 0 agrees
+PASS prefix site 1 agrees
+PASS prefix site 2 agrees
+PASS prefix site 3 agrees
+
+------------------------------------------------------------------------------
+Finite certificate
+------------------------------------------------------------------------------
+PASS prefix marker count is shared :: {3}
+PASS prefix frequency is shared :: {Fraction(3, 4)}
+PASS shared prefix marker count is three
+PASS shared prefix frequency is 3/4
+PASS finite-window density matches prefix frequency
+PASS both completions have same finite-window density
+
+------------------------------------------------------------------------------
+Unbounded divergence
+------------------------------------------------------------------------------
+PASS tail values differ
+PASS limiting densities differ
+PASS zero-tail limiting density is 0
+PASS one-tail limiting density is 1
+PASS long-window words differ
+PASS long-window densities differ
+PASS zero-tail long density is 3/20
+PASS one-tail long density is 19/20
+
+------------------------------------------------------------------------------
+Route scope
+------------------------------------------------------------------------------
+PASS finite-certificate-alone derivation flag is false
+PASS supplied family lift is not assumed
+PASS no-go scope is narrow
+PASS retained/unbounded promotion flag is false
+PASS audit verdict applied flag is false
+PASS authority surface written flag is false
+PASS dial forced or selected flag is false
+
+------------------------------------------------------------------------------
+Document checks
+------------------------------------------------------------------------------
+PASS document contains phrase: finite post-record certificate alone => unbounded retained law
+PASS document contains phrase: two unbounded completions can agree
+PASS document contains phrase: prefix = 1, 0, 1, 1
+PASS document contains phrase: zero-tail limiting marker density = 0
+PASS document contains phrase: one-tail limiting marker density = 1
+PASS document contains phrase: pre-record law carries probabilities
+PASS document contains phrase: post-record records carry realized information
+PASS document contains phrase: finite post-record record is not an unbounded probability law
+PASS document contains phrase: actual_current_surface_status: no-go
+PASS document contains phrase: trace_class: negative_route_pruning
+PASS document contains phrase: bare_retained_allowed: false
+PASS document avoids live retained/promotion leaks
+
+SUMMARY: PASS=43 FAIL=0
+POST_RECORD_FINITE_TO_UNBOUNDED_FAMILY_LIFT_NO_GO=TRUE
+FINITE_PREFIX_LENGTH=4
+PREFIX_MARKER_COUNT=3
+PREFIX_FREQUENCY=3/4
+ZERO_TAIL_LIMITING_DENSITY=0
+ONE_TAIL_LIMITING_DENSITY=1
+FINITE_CERTIFICATE_ALONE_DERIVES_UNBOUNDED_LAW=FALSE
+FAMILY_LIFT_REQUIRED=TRUE
+AUDIT_VERDICT_APPLIED=FALSE
+
+----- stderr -----
+

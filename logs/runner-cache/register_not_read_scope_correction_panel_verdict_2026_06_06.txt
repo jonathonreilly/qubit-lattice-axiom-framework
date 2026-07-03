@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/register_not_read_scope_correction_panel_verdict_2026_06_06.py
+runner_sha256: 1c9976790823830e565a6b71bc00caeaedc6fa8fbe6dcb23c8245aa7e2925f78
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+--- Section L: partition-map license (delivers count/overlaps, NOT within-block weight) ---
+PASS: D kills inter-sector coherence (off-block entries -> 0; not registered)
+PASS: D delivers partition overlaps tr(P_k rho) = (0.5, 0.5) -- registered
+PASS: partition CARDINALITY (a mode/sector COUNT) is registered = 2 (A1's kind of object)
+PASS: WITHIN-block weight (the Koide-r kind) is NOT fixed by D: same partition, different weight
+PASS: => the license FORBIDS forcing the within-block weight r (it is matched, not delivered) -> TEETH (r left free)
+--- Section T: the r-dial teeth (register-not-read does NOT force r) ---
+PASS: register-not-read applied to r returns UNDETERMINED, not forced (hammer-falsification PASSES)
+PASS: >=4 standing no-gos where invoking the principle FAILS to force the target (a vacuous slogan cannot log these)
+--- Section D: the loose dichotomy is directionless (A2 vs A4 inverse) ---
+PASS: A2 trusts the raw discrete object (+1); A4 distrusts the raw bare object (-1) -- OPPOSITE
+PASS: same slogan ('registered physical X not bare reconstruction'), opposite directions = the directionless-license retrofit tell
+PASS: the loose dichotomy has NO partition {P_k} -> it would 'resolve' r too (the hammer); the canonical license has the partition and forbids r
+--- Section P: per-application verdict ---
+PASS: A1/A0/A3 = legitimate/object-level (KEEP); A2/A4 = demote the register-not-read framing
+PASS: object-level math survives in ALL five; nothing retracted
+
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

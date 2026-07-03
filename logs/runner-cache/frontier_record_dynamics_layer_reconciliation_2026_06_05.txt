@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_dynamics_layer_reconciliation_2026_06_05.py
+runner_sha256: c966552eee6d976423074d698dc7cc9e7e9aa481fd28c9f17481f52875984809
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+[PASS] N1 local note exists: docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md
+[PASS] N1 local note exists: docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md
+[PASS] N1 local note exists: docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md
+[PASS] N1 related landed source exists: docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md
+[PASS] N1 related landed source exists: docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md
+[PASS] L2 expected three layers
+[PASS] L2 layer has inputs: pre_record_carrier
+       qubit_state,carrier_dynamics
+[PASS] L2 layer has outputs: pre_record_carrier
+       candidate_amplitudes,candidate_instruments,transfer_steps
+[PASS] L2 layer has forbidden outputs: pre_record_carrier
+       realized_record_without_bridge
+[PASS] L2 layer has inputs: formation_preservation_dynamics
+       quantum_Darwinism_bridge,finite_model,locality,Gauss_bridge,Hermiticity
+[PASS] L2 layer has outputs: formation_preservation_dynamics
+       pointer_non_demolition_constraint,gauge_invariant_local_form_class
+[PASS] L2 layer has forbidden outputs: formation_preservation_dynamics
+       couplings,truncation_selection,production_rates,bridge_premise_derivation
+[PASS] L2 layer has inputs: post_record_information_dynamics
+       finite_record_alphabet,realized_atom_stream
+[PASS] L2 layer has outputs: post_record_information_dynamics
+       finite_histories,counts,append_action,coarse_graining,unbounded_finite_retention
+[PASS] L2 layer has forbidden outputs: post_record_information_dynamics
+       next_atom_selector,probability_law,transition_rate,carrier_Hamiltonian,dial_selection
+[PASS] F3 post-record exact layer forbids production/probability/rate/dial outputs
+[PASS] F3 post-record exact layer only consumes realized atom stream
+[PASS] F3 formation layer carries bounded support
+[PASS] F3 formation layer names bridge premises
+[PASS] F3 formation layer does not force couplings
+[PASS] F3 formation layer does not force truncation
+[PASS] C4 post-record layer alone stays exact-support
+[PASS] C4 bounded formation feeding exact post-record stays bounded-support
+[PASS] C4 open/bounded carrier through formation to post-record is not exact
+[PASS] R5 all required residuals recorded
+[PASS] R5 residual count
+[PASS] P6 only support/open statuses used
+[PASS] P6 no layer output includes retained/probability selection language
+
+=== Record dynamics layer interpretation ===
+Post-record information dynamics is exact once atoms are realized.
+Physical formation/preservation dynamics remains bounded when it uses quantum-Darwinism, Gauss, or finite-model bridges.
+The composition localizes residuals: production, probability/rates/time, observable bridge, couplings/truncation, and dial selection.
+SCORECARD PASS=28 FAIL=0
+
+----- stderr -----
+

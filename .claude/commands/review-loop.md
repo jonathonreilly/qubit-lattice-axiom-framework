@@ -14,7 +14,9 @@ Run the repo-native physics review loop from:
 2. Review only branch/local changes against `origin/main` or `main`.
 3. Fan out the physics reviewers in parallel when the agent environment allows:
    `CodeRunnerReviewer`, `PhysicsClaimReviewer`, `ImportSupportReviewer`,
-   `NatureRetentionReviewer`, `RepoGovernanceReviewer`, and optionally
+   `NatureRetentionReviewer`, `NoGoDisciplineReviewer` (when negative claims
+   changed), `LabelingConventionReviewer` (when bounded-theorem candidates
+   changed), `RepoGovernanceReviewer`, and optionally
    `MethodologySkillReviewer`.
 4. Fix only verified, narrow findings. Demote overclaims instead of patching
    missing science with prose.
@@ -29,9 +31,19 @@ Run the repo-native physics review loop from:
 7. For math-bearing runner/proof changes, do not trust PASS output alone:
    independently cross-check load-bearing formulas, signs, factors,
    normalizations, expected values, and edge cases before landing.
-8. Re-review only files changed by the fix pass, plus interacting files that
+8. Before classifying a dependency as an import, wall, Tier-A admission, or
+   bounded-status source, read
+   `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`,
+   `docs/audit/data/axiom_premise_nodes.json`, and any relevant primitive
+   source note. The registered `scale_reference_primitive` grants the Planck
+   scale reference as units conversion only; it is not a bounded Planck import.
+   The registered `kinetic_isotropy_primitive` grants only structural OS0
+   kinetic-form isotropy `c_t = c_s`; it is not a bounded import, Lorentz
+   theorem, dynamics, scale, spacing-ratio theorem, selector, or empirical
+   input. The registered `realized_state_primitive` grants only pointwise evaluation at a supplied law-admissible realized state; it does not supply a state, state-selection rule, measure, typicality or genericity assumption, weighting, probability rule, or any state-contingent value (quantities that vary across the law-admissible family remain registered data).
+9. Re-review only files changed by the fix pass, plus interacting files that
    were already in the original changed-file set.
-9. Before closing or rejecting a non-landable PR, run the skill's salvage pass:
+10. Before closing or rejecting a non-landable PR, run the skill's salvage pass:
    preserve any durable, runner-backed lemma in the same requested landing path
    with a canonical claim type, and explicitly reject only the pieces that
    cannot be salvaged without new science.
@@ -40,10 +52,10 @@ Run the repo-native physics review loop from:
    or audit-readiness repairs into source/tooling/pipeline changes and
    regenerate generated surfaces instead of rejecting them just because they
    are not theorem science.
-10. Draft PRs are out of scope for `/review-loop`: ignore draft-status PRs and
+11. Draft PRs are out of scope for `/review-loop`: ignore draft-status PRs and
    never land them unless the user explicitly asks for draft inspection without
    landing.
-11. End with a concise report covering imports/support status, retained/bounded
+12. End with a concise report covering imports/support status, retained/bounded
    disposition, salvage disposition, audit-readiness, commits, checks, and
    remaining manual science.
 
@@ -65,18 +77,31 @@ Run the repo-native physics review loop from:
   `docs/repo/CONTROLLED_VOCABULARY.md`. Do not approve bare overloaded labels
   such as `A1`, `A2`, `G1`, `R3`, `Route F`, or `Block 2` as theorem/lane
   names, table labels, claim scopes, runner headlines, or review findings.
-  Use names such as `Quantum` / `one-qubit operator algebra` (the local algebra
-  fixed by `MINIMAL_AXIOMS_2026-06-04.md`, equivalently
-  `physical Cl(3,0) ≅ M_2(ℂ)`), `Lattice` / `Z^3 lattice`,
-  `Record` / finite scalar record additivity,
+  Use names such as `Qubit` / `site possibility` / `one-site possibility
+  domain` (the local algebraic presentation fixed by
+  `MINIMAL_AXIOMS_2026-06-29.md`, with `Cl(3,0)` as equivalent notation),
+  `Lattice` / `Z^3 lattice`, `Admissibility` / `local constraint`,
+  `Record` / fixed record readout,
   `Koide Frobenius-equipartition condition`, or `Lie type A_1`; the
-  `M_2(ℂ)` / `Cl(3,0)` / qubit names are co-equal labels for the
-  same retained algebra-isomorphism class. Keep shorthand only as a
-  parenthetical legacy alias.
+  `M_2(ℂ)` / `Cl(3,0)` / qubit names are labels for the same one-site
+  algebraic presentation. Keep shorthand only as a parenthetical legacy alias.
 - `retained`, `retained_bounded`, and `retained_no_go` are the retained-grade
   dependency statuses. Reviewers must reject stale exact-status checks that
   require only `effective_status = retained` when bounded/no-go retained
   grades are valid.
+- Approved primitives listed in `docs/audit/data/axiom_premise_nodes.json`
+  chain-satisfy dependencies without making rows `retained_bounded`. Do not
+  call the registered `scale_reference_primitive` a Planck import, Tier-A
+  admission, missing premise, no-go wall, or bounded-status source. Do not
+  grant it more than `docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md` declares. Do not
+  call the registered `kinetic_isotropy_primitive` a Tier-A admission, missing
+  premise, no-go wall, bounded-status source, Lorentz theorem, dynamics, scale,
+  spacing-ratio theorem, selector, or empirical input; do not grant it more
+  than `docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md` declares. Do not
+  call the registered `realized_state_primitive` a Tier-A admission, missing
+  premise, no-go wall, bounded-status source, state-selection rule, measure,
+  typicality assumption, weighting, or value source; do not grant it more
+  than `docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md` declares.
 - `/review-loop` must not apply audit verdicts. It prepares
   audit-compatible review surfaces and reports which proposed claims require
   the independent audit worker.
@@ -87,6 +112,18 @@ Run the repo-native physics review loop from:
   salvageable, land the source-only salvage and dependency-chain/audit-queue
   repairs as part of the current landing path; otherwise close or reject the
   existing PR with a clear reason.
+- A PR whose purpose is repairing a stuck terminal ledger row
+  (`audited_conditional` / `audited_renaming` / `audited_failed` /
+  `audited_numerical_match`) must leave that row requeue-able: the row's own
+  note or paired runner must change in the PR, or the PR must ship
+  machine-readable re-audit targeting metadata (a dispatcher sidecar) naming
+  the row. Dependent-side edits alone never reschedule the stuck row. When
+  the audit-named repair is dependent-side only (for example, narrowing
+  dependents' citing sentences), add a dated downstream-hygiene line to the
+  stuck row's own note boundary as part of the landing — a source-side fact,
+  no grade language. Verify with the validation pipeline that the row
+  re-enters the queue, then restore generated audit outputs per the
+  pipeline-output-stripped gate.
 - `/review-loop` must ignore draft-status PRs. Drafts are not candidates for
   landing, review-loop comments, or salvage unless the user explicitly asks for
   draft inspection without landing.
@@ -96,16 +133,21 @@ Run the repo-native physics review loop from:
   three-way patch/rebase/merge/cherry-pick integration for overlapping paths.
   Whole-file checkout is allowed only for new paths or paths proven unchanged
   on current `main` since the PR base.
-- The repo baseline is the three named axioms in
-  `MINIMAL_AXIOMS_2026-06-04.md`: Lattice (`Z^3` with nearest-neighbor
-  cubic adjacency), Quantum (one-qubit operator algebra
-  `M_2(ℂ) ≅ Cl(3,0)` at each site), and Record (additive finite scalar record
-  readout). Name them explicitly; do not compress them to bare `A1` / `A2` /
-  `A3` labels. Do not classify that baseline as a new axiom, new admitted
-  premise, regulator interpretation, or optional theory language. Do not let
-  that baseline silently promote separate species identifications, selectors,
+- The repo baseline is the four named axioms in
+  `MINIMAL_AXIOMS_2026-06-29.md`: Lattice, Qubit, Admissibility, and Record.
+  Name them explicitly; do not compress them to bare `A1` / `A2` / `A3` /
+  `A4` labels. Do not classify that baseline as a new admitted premise,
+  regulator interpretation, or optional theory language. Do not let that
+  baseline silently promote separate species identifications, selectors,
+  probability or occurrence rules, K/CPT or central-sector structure,
   P2/modulus, log-det structure, source/action bridges, empirical matches, or
-  parent theorem/status surfaces.
+  parent theorem/status surfaces. The current baseline includes: no possibility
+  is privileged; possibilities are distinguished by the supplied algebraic
+  structure alone; no site is privileged; sites are distinguished by the
+  supplied lattice structure alone; readout value is determined by record
+  content alone; a state is a configuration of records; and a law privileges
+  no states, has a supplied condition as its domain, and gives exactly one
+  answer where that condition holds.
 - Nature-grade retention requires derived or explicitly admitted inputs,
   decisive artifact support, clear falsifiers, and no hidden semantic bridge.
 - Math-bearing runners require independent formula review: PASS lines do not

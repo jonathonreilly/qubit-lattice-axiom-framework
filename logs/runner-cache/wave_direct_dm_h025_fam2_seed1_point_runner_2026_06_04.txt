@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
-runner_sha256: 52b36e7b4407166f1ef1104341db31a29ca38e85b1d9e413de6502ed1fc2800d
+runner_sha256: c1d401ee87e275b853d56ac27903b44c0a9b697c3b6625e92d34ff689691b4b9
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 117.71
+elapsed_sec: 81.73
 status: ok
 ----- stdout -----
 PASS family is fixed to Fam2
@@ -33,6 +33,12 @@ PASS artifact present: docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md
 PASS artifact present: docs/WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md
 PASS artifact present: docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md
 PASS artifact present: docs/WAVE_DIRECT_DM_PORTABILITY_BATCH_NOTE.md
+PASS measure_dm helper source contains def measure_dm
+PASS measure_dm helper source calls prop_beam and cz
+PASS measure_dm helper source calls solve_wave for early/late histories
+PASS continuum helper source exposes field_at/prop_beam/cz
+PASS measure_dm helper cache is SHA-fresh and ok
+PASS continuum helper cache is SHA-fresh and ok
 WAVE DIRECT-DM H025 FAM2 SEED1 TARGET CERTIFICATE
 family=Fam2 drift=0.05 restore=0.30
 seed=1
@@ -42,8 +48,11 @@ dM(late)   = +0.005814
 delta_hist = -0.002037
 R_hist     = -35.03%
 late_gain  = +0.002037
+MEASURE_DM_SOURCE_PACKET=PASS
+MEASURE_DM_SOURCE=scripts/wave_direct_dm_matched_history_probe.py
+CONTINUUM_HELPER_SOURCE=scripts/wave_retardation_continuum_limit.py
 OUTPUT_JSON=outputs/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json
-SUMMARY: WAVE H025 FAM2 SEED1 PASS=27 FAIL=0
+SUMMARY: WAVE H025 FAM2 SEED1 PASS=33 FAIL=0
 
 ----- stderr -----
 

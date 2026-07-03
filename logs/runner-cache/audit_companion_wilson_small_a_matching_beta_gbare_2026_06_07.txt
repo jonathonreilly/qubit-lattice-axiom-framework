@@ -1,0 +1,95 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py
+runner_sha256: 6b3b2ce5371ea68ae8ac17890b14d968b315ace081ac9192a4718903cbe91d40
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.78
+status: ok
+----- stdout -----
+WILSON SMALL-A MATCHING BETA/G_BARE THEOREM
+
+========================================================================================
+Part 0: source-note boundaries
+========================================================================================
+[PASS] WM theorem note exists  [docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md]
+[PASS] beta_gbare conditional row exists  [docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md]
+[PASS] note contains marker: actual_current_surface_status: exact-support
+[PASS] note contains marker: target_claim_id: beta_gbare_squared_rescaling_invariance_bound
+[PASS] note contains marker: beta = 2 N_c / g_bare^2
+[PASS] note contains marker: beta * g_bare^2 = 2 N_c
+[PASS] note contains marker: does not derive that the framework must select the Wilson acti
+[PASS] note contains marker: does not claim:
+[PASS] note contains marker: g_bare = 1
+[PASS] note contains marker: audit_required_before_effective_retained: true
+[PASS] note contains marker: bare_retained_allowed: false
+[PASS] forbidden overclaim absent: effective_status: retained
+[PASS] forbidden overclaim absent: audit_status: audited_clean
+[PASS] forbidden overclaim absent: Wilson plaquette action-surface selection from the three f
+[PASS] forbidden overclaim absent: g_bare = 1 is derived
+
+========================================================================================
+Part 1: SU(3) generator normalization
+========================================================================================
+[PASS] eight generators are present
+[PASS] all generators are traceless
+[PASS] all generators are Hermitian
+[PASS] trace Gram is delta_ab/2  [1/2]
+
+========================================================================================
+Part 2: small-a plaquette trace expansion
+========================================================================================
+[PASS] Tr X is zero
+[PASS] Tr X^2 is a^4 g^2 F^2 / 2  [a**4*g**2*(f0**2 + f1**2 + f2**2 + f3**2 + f4**2 + f5**2 + f6**2 + f7**2)/2]
+[PASS] SU(3) normalized plaquette deficit coefficient is a^4 g^2 F^2 / 12  [a**4*g**2*(f0**2 + f1**2 + f2**2 + f3**2 + f4**2 + f5**2 + f6**2 + f7**2)/12]
+[PASS] general SU(N) deficit formula recorded
+
+========================================================================================
+Part 3: coefficient matching algebra
+========================================================================================
+[PASS] matching equation solves to beta=2N/g^2  [2*N_c/g2]
+[PASS] product beta*g^2 is 2N at solution
+[PASS] N_c=3 and g^2=1 gives beta=6
+[PASS] N=3, g^2=1: beta*g^2=2N  [beta=6]
+[PASS] N=2, g^2=1/4: beta*g^2=2N  [beta=16]
+[PASS] N=5, g^2=7/3: beta*g^2=2N  [beta=30/7]
+[PASS] N=8, g^2=9/10: beta*g^2=2N  [beta=160/9]
+
+========================================================================================
+Part 4: exact Fraction compatibility with downstream beta row
+========================================================================================
+[PASS] Fraction WM product N=3, g2=1  [beta=6]
+[PASS] rescaled product invariant N=3, g2=1, c=1/2
+[PASS] rescaled product invariant N=3, g2=1, c=1
+[PASS] rescaled product invariant N=3, g2=1, c=2
+[PASS] rescaled product invariant N=3, g2=1, c=3
+[PASS] rescaled product invariant N=3, g2=1, c=7/5
+[PASS] Fraction WM product N=3, g2=5/7  [beta=42/5]
+[PASS] rescaled product invariant N=3, g2=5/7, c=1/2
+[PASS] rescaled product invariant N=3, g2=5/7, c=1
+[PASS] rescaled product invariant N=3, g2=5/7, c=2
+[PASS] rescaled product invariant N=3, g2=5/7, c=3
+[PASS] rescaled product invariant N=3, g2=5/7, c=7/5
+[PASS] Fraction WM product N=5, g2=11/13  [beta=130/11]
+[PASS] rescaled product invariant N=5, g2=11/13, c=1/2
+[PASS] rescaled product invariant N=5, g2=11/13, c=1
+[PASS] rescaled product invariant N=5, g2=11/13, c=2
+[PASS] rescaled product invariant N=5, g2=11/13, c=3
+[PASS] rescaled product invariant N=5, g2=11/13, c=7/5
+[PASS] Fraction WM product N=7/2, g2=9/4  [beta=28/9]
+[PASS] rescaled product invariant N=7/2, g2=9/4, c=1/2
+[PASS] rescaled product invariant N=7/2, g2=9/4, c=1
+[PASS] rescaled product invariant N=7/2, g2=9/4, c=2
+[PASS] rescaled product invariant N=7/2, g2=9/4, c=3
+[PASS] rescaled product invariant N=7/2, g2=9/4, c=7/5
+
+========================================================================================
+Part 5: downstream link and firewall
+========================================================================================
+[PASS] beta row cites WM theorem note
+[PASS] beta row keeps physical Wilson-surface interpretation conditional
+[PASS] beta row still forbids status promotion
+
+TOTAL: PASS=57 FAIL=0
+
+----- stderr -----
+

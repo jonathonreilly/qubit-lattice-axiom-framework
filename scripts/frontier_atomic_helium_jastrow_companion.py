@@ -1,16 +1,21 @@
 #!/usr/bin/env python3
-"""Helium Jastrow companion on the retained Cl(3)/Z³ lattice Hamiltonian surface.
+"""Helium Jastrow companion on the narrowed Cl(3)/Z³ lattice Hamiltonian surface.
 
 ==========================================================================
 NUMERICAL JASTROW COMPANION ON THE LATTICE HAMILTONIAN SURFACE
 ==========================================================================
 
-AXIOM 1: The physical local algebra is Cl(3).
-AXIOM 2: The spatial substrate is the cubic lattice Z³.
+Framework surface: current minimal Cl(3)/Z³ primitives plus the narrowed
+scalar graph-Laplacian and lattice Green-kernel dependency repair.
+Sources: MINIMAL_AXIOMS_2026-06-04.md;
+HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md;
+LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md.
 
 Same kinetic operator and Coulomb kernel as
 `frontier_atomic_helium_hartree_companion.py`.
 The NEW step here is going beyond the separable (product-state) ansatz.
+The Hartree baseline uses the repaired one-electron-density convention:
+`E_pair = ΣρV_H[ρ]` for `ρ=|φ|²`, with no extra total-density factor 1/2.
 
 --------------------------------------------------------------------------
 STEP 5-EXTENDED: JASTROW CORRELATION  [DERIVED from Z³ kernel]
@@ -38,9 +43,9 @@ At order 1/r₁₂:   -2 × (2/r₁₂) × ψ'(0) + g_EM/r₁₂ × ψ(0) = 0
 
 Therefore:   ψ'(0) = (g_EM/4) × ψ(0)   [KATO CUSP CONDITION]
 
-On the lattice Hamiltonian surface this follows from:
-    1. The kinetic operator -Δ_Z³ (Cl(3)/Z³ axiom)
-    2. The interaction kernel g_EM/|r₁₂| (Z³ Green's function)
+On the narrowed lattice Hamiltonian surface this follows from:
+    1. The kinetic operator -Δ_Z³ (scalar graph-Laplacian repair)
+    2. The interaction kernel g_EM/|r₁₂| (Z³ Green-kernel repair)
     3. Self-adjointness of H₂ on l²(Z³×Z³)  (mathematical requirement)
 
 JASTROW ANSATZ:
@@ -104,11 +109,11 @@ the two-electron problem.
 from __future__ import annotations
 
 import os
-import time
 
 import numpy as np
 from scipy import sparse
-from scipy.sparse.linalg import eigsh, spsolve
+from scipy.signal import fftconvolve
+from scipy.sparse.linalg import eigsh
 
 
 # ---------------------------------------------------------------------------
@@ -151,14 +156,14 @@ def solve_single_particle(T: sparse.csr_matrix,
 
 def solve_poisson(N: int, rho: np.ndarray, T: sparse.csr_matrix,
                   g_em: float) -> np.ndarray:
-    """(-Δ_Z³) V_H = 4π g_EM ρ  (same Green's function kernel)."""
-    rhs = 4.0 * np.pi * g_em * rho
-    try:
-        return spsolve(T.tocsc(), rhs)
-    except Exception:
-        from scipy.sparse.linalg import cg
-        V, _ = cg(T, rhs, maxiter=2000, tol=1e-8)
-        return V
+    """Direct finite-box Hartree potential with the same kernel as V_ee."""
+    _ = T
+    rho_3d = rho.reshape(N, N, N)
+    offsets = np.arange(-(N - 1), N, dtype=float)
+    dx, dy, dz = np.meshgrid(offsets, offsets, offsets, indexing="ij")
+    r = np.sqrt(dx * dx + dy * dy + dz * dz)
+    kernel = g_em / np.maximum(r, 0.5)
+    return fftconvolve(rho_3d, kernel, mode="same").reshape(-1)
 
 
 def run_hartree_scf(N: int, g_nuc: float, g_em: float,
@@ -186,7 +191,7 @@ def run_hartree_scf(N: int, g_nuc: float, g_em: float,
         phi, rho = phi_new, rho_new
 
     eps = float(evals[0])
-    E_J = 0.5 * float(np.sum(rho * V_H))
+    E_J = float(np.sum(rho * V_H))
     E_var = 2.0 * eps - E_J
 
     # He⁺ reference
@@ -339,6 +344,7 @@ def run_vmc(phi_3d: np.ndarray, V_nuc_3d: np.ndarray,
         "accept_rate": n_accept / (n_warmup + n_meas),
         "r_J": r_J,
         "n_meas": len(E_arr),
+        "seed": seed,
     }
 
 
@@ -384,9 +390,7 @@ def run_experiment() -> None:
     log("─" * 60)
     log("STEP 1: Hartree baseline at N=20")
     log("─" * 60)
-    t0 = time.time()
     scf = run_hartree_scf(N, G_NUC, G_EM)
-    dt = time.time() - t0
 
     phi_flat = scf["phi"]
     phi_3d = phi_flat.reshape(N, N, N)
@@ -399,11 +403,14 @@ def run_experiment() -> None:
     E_hep = scf["E_hep"]
     E_hartree = scf["E_var"]
     ratio_hartree = abs(E_hartree) / abs(E_hep)
+    rho_norm = float(np.sum(scf["rho"]))
+    hartree_energy_residual = abs(E_hartree - (2.0 * scf["eps"] - scf["E_J"]))
 
     log(f"  E(He⁺)   = {E_hep:.6f}")
     log(f"  E_Hartree = {E_hartree:.6f}")
     log(f"  |E(He)|/|E(He⁺)| = {ratio_hartree:.5f}  (Hartree target ~1.424)")
-    log(f"  Time: {dt:.1f}s")
+    log("  Hartree normalization: E_pair = ΣρV_H[ρ] for one-electron ρ=|φ|².")
+    log("  Compute timing: omitted from audit cache for deterministic replay.")
     log()
 
     # ------------------------------------------------------------------
@@ -423,13 +430,10 @@ def run_experiment() -> None:
 
     r_J_values = [0.5, 1.0, 2.0, 3.0, 4.0, 6.0]
     results = []
-    t0_scan = time.time()
 
     for r_J in r_J_values:
-        t_start = time.time()
         vmc = run_vmc(phi_3d, V_nuc_3d, G_EM, G_NUC, N, r_J,
                       n_warmup=3000, n_meas=40000, seed=42)
-        dt_rJ = time.time() - t_start
 
         ratio_vmc = abs(vmc["E_mean"]) / abs(E_hep)
         delta_pct = 100.0 * (vmc["E_mean"] - E_hartree) / abs(E_hartree)
@@ -437,10 +441,9 @@ def run_experiment() -> None:
 
         log(f"  {r_J:5.1f}  {vmc['E_mean']:12.6f}  ±{vmc['E_stderr']:9.6f}  "
             f"{ratio_vmc:14.5f}  {delta_pct:+11.2f}%  "
-            f"{vmc['accept_rate']:6.2f}  ({dt_rJ:.1f}s)")
+            f"{vmc['accept_rate']:6.2f}")
 
-    dt_total = time.time() - t0_scan
-    log(f"\n  Total scan time: {dt_total:.1f}s")
+    log("\n  Total scan timing: omitted from audit cache for deterministic replay.")
     log()
 
     # Find optimal r_J (lowest E_mean)
@@ -526,14 +529,65 @@ def run_experiment() -> None:
     log("  ✗ Exact two-body result remains open; Jastrow/VMC is only a bounded companion")
     log("=" * 72)
 
+    audit_checks = [
+        (
+            "jastrow_fixed_seed_declared",
+            all(r["seed"] == 42 for r in results),
+            "seeds=" + ",".join(str(r["seed"]) for r in results),
+        ),
+        (
+            "jastrow_hartree_baseline_pin",
+            abs(ratio_hartree - 1.41501) < 5e-5,
+            f"ratio_hartree={ratio_hartree:.5f}",
+        ),
+        (
+            "jastrow_inherits_repaired_hartree_normalization",
+            abs(rho_norm - 1.0) < 1e-12
+            and hartree_energy_residual < 1e-12
+            and scf["E_J"] > 0.0,
+            f"rho_norm={rho_norm:.12f}, "
+            f"E_var_identity_residual={hartree_energy_residual:.3e}, "
+            f"E_pair={scf['E_J']:.6f}",
+        ),
+        (
+            "jastrow_best_rj_pin",
+            abs(best["r_J"] - 3.0) < 1e-12,
+            f"best_r_J={best['r_J']:.1f}",
+        ),
+        (
+            "jastrow_ratio_pin",
+            abs(ratio_jastrow - 1.43653) < 5e-5,
+            f"ratio_jastrow={ratio_jastrow:.5f}",
+        ),
+        (
+            "jastrow_improves_over_hartree",
+            ratio_jastrow > ratio_hartree,
+            f"hartree={ratio_hartree:.5f}, jastrow={ratio_jastrow:.5f}",
+        ),
+    ]
+    pass_count = 0
+    fail_count = 0
+    log()
+    log("AUDIT CHECK SUMMARY")
+    for name, ok, detail in audit_checks:
+        if ok:
+            pass_count += 1
+            log(f"PASS: {name} -- {detail}")
+        else:
+            fail_count += 1
+            log(f"FAIL: {name} -- {detail}")
+    total_line = f"TOTAL: PASS={pass_count}, FAIL={fail_count}"
+
     os.makedirs("logs", exist_ok=True)
-    log_path = f"logs/{time.strftime('%Y-%m-%d')}-atomic_helium_jastrow_companion.txt"
+    log_path = "logs/frontier_atomic_helium_jastrow_companion.latest.txt"
     try:
         with open(log_path, "w") as f:
-            f.write("\n".join(LOG))
-        print(f"\nLog saved to: {log_path}")
-    except Exception as e:
-        print(f"  (Could not write log: {e})")
+            f.write("\n".join(LOG + [total_line]) + "\n")
+    except Exception:
+        pass
+    print(total_line)
+    if fail_count:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/p2_euclidean_vs_lorentzian_fork_2026_06_05.py
+runner_sha256: d09f3af7cbde29fac010d1bb7755bf62d2add4702c5065312e3258b9a4fdfd85
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+PASS: staggered taste 2^(d/2): d=4 -> 4 (integer)
+PASS: staggered taste 2^(d/2): d=3 -> 2.828 (NON-integer: the d=3 obstruction)
+PASS: staggered taste 2^(d/2): d=2->2, d=6->8 (integers, even d)
+PASS: integer taste count (hence the 16/256) REQUIRES even d -> P2: Z^3 -> Z^4
+PASS: hierarchy 16 = 2^(4/2) taste x 4 modes = 16 (Euclidean Z^4)
+PASS: genuine d=3 analog 2^(3/2)*4 = 11.3 (NOT 16): no native integer 16
+PASS: Yukawa 256 = (dim_C M_2)^4 = 4^4 (tensor count, d=4)
+PASS: gamma_5 exists in d=3+1 (d_s + d_t = 4, even)
+PASS: gamma_5 is a Z_2 grading (involution, trace 0)
+PASS: a 4th lattice corner DOUBLES BZ corners 2^3=8 -> 2^4=16 (a momentum coordinate)
+PASS: chiral 2-fold supplies a factor 2 (two chiral blocks), NOT the taste factor 4 -> cannot manufacture the 16
+PASS: native d=3+1 Dirac: H^2 = (k^2+m^2) I (gapped, spectral; NO taste-16)
+  v_pred = 248.120 GeV   v_obs = 246.220 GeV   rel = 0.772%   1/alpha_LM = 11.02
+PASS: Euclidean branch reproduces v via alpha_LM^16 to <1% (labelled comparison)
+PASS: the matching exponent is exactly 16 = Euclidean Z^4 taste x modes
+PASS: discriminator: 16 = 8 (spatial Z^3) x 2 (Euclidean temporal corner k_4 in {0,pi})
+PASS: native continuous emergent time has NO temporal corner -> count stays 8 (not 16)
+  v_native (alpha_LM^8) = 5.413e+10 GeV  -> overshoots EW scale by ~8.3 decades
+PASS: native d=3 magnitude (alpha_LM^8) overshoots the EW scale by many decades
+PASS: FORK: Euclidean branch HAS the integer 16 (taste); native d=3+1 spectrum does NOT
+PASS: RESOLVED -> DIFFERS: the v-match (exponent 16) is Euclidean-regulator-specific, NOT native to d=3+1
+
+SUMMARY: PASS=19 FAIL=0
+
+----- stderr -----
+

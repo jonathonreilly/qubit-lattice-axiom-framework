@@ -1,0 +1,101 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_lsp_signed_record_source_readout_support.py
+runner_sha256: d225eb644de9947f7a724842b1e99ef173d2da5924d6e15b4a02fde4b9e1ff3e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+========================================================================================
+Y_T LSP SIGNED-RECORD SOURCE-READOUT SUPPORT
+========================================================================================
+
+Part 1: source anchors
+[PASS] docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md exists
+[PASS] docs/MINIMAL_AXIOMS_2026-06-05.md exists
+[PASS] docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md exists
+[PASS] docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
+[PASS] note declares bounded_theorem
+[PASS] note registers this runner
+[PASS] note cites current minimal axioms
+[PASS] note cites canonical LSP projective theorem
+[PASS] note cites Y_T source-action support packet
+
+Part 2: ledger boundary
+[PASS] ledger row present: lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05
+[PASS] lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05: retained-grade support status: retained_bounded
+[PASS] lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05: claim type compatible: bounded_theorem
+[PASS] ledger row present: yt_source_action_support_packet_note_2026-05-22
+[PASS] yt_source_action_support_packet_note_2026-05-22: retained-grade support status: retained_bounded
+[PASS] yt_source_action_support_packet_note_2026-05-22: claim type compatible: bounded_theorem
+
+Part 3: local Pauli projective readout
+[PASS] P_plus is idempotent
+[PASS] P_minus is idempotent
+[PASS] P_plus and P_minus are orthogonal
+[PASS] P_plus + P_minus = I
+[PASS] signed readout P_plus - P_minus = sigma_z
+[PASS] signed readout spectrum is {-1,+1}: [-1.0, 1.0]
+[PASS] canonical LSP note records K_r = P_r
+[PASS] canonical LSP note records P_r E P_r sequential effect
+
+Part 3b: joint spectral sample space is the source-record space
+[PASS] joint projectors sum to identity
+[PASS] joint projectors are idempotent
+[PASS] distinct joint projectors are orthogonal
+[PASS] coordinate epsilon_0 recovers first-site sigma_z readout
+[PASS] coordinate epsilon_1 recovers second-site sigma_z readout
+[PASS] note defines sample space as joint spectral outcome set
+[PASS] note says packet-level record is the spectral coordinate function
+[PASS] note rejects extra carrier isomorphism
+[PASS] source-action packet supplies signed record
+[PASS] source-action packet supplies product RN family
+
+Part 4: RN source score equals signed readout
+[PASS] site 0: d log R_h / dh_x at h=0 equals epsilon_x: 8.22666379463044e-11
+[PASS] site 1: d log R_h / dh_x at h=0 equals epsilon_x: 8.22666379463044e-11
+[PASS] site 2: d log R_h / dh_x at h=0 equals epsilon_x: 8.22666379463044e-11
+[PASS] all RN score errors below tolerance: 8.22666379463044e-11
+
+Part 5: independent-site tensor readouts
+[PASS] two-site signed readouts commute
+[PASS] each readout squares to identity
+[PASS] joint outcome set is {-1,+1}^2
+
+Part 6: source-family uniqueness
+[PASS] normalized source multiplication composes to h+k: 2.7755575615628914e-17
+[PASS] log-odds are fixed by signed-record score coefficients: 1.1102230246251565e-16
+[PASS] unique reconstructed family is product RN: 0.0
+[PASS] note states source-family uniqueness corollary
+[PASS] note states RN is not a fitted choice
+
+Part 7: firewalls
+[PASS] required boundary phrase present: does not accept the source-coupled action convention
+[PASS] required boundary phrase present: does not derive canonical `O_H`
+[PASS] required boundary phrase present: does not fix scalar LSZ normalization
+[PASS] required boundary phrase present: does not select `kappa_Y = 0`
+[PASS] required boundary phrase present: does not derive `y_t`
+[PASS] required boundary phrase present: source_boundary: signed_record_readout_exact_support_only
+[PASS] required boundary phrase present: source_support_label: exact-support
+[PASS] required boundary phrase present: claim_type_author_hint: bounded_theorem
+[PASS] required boundary phrase present: direct_effective_status_change_allowed_from_this_note: false
+[PASS] required boundary phrase present: audit_required_before_effective_retained: true
+[PASS] required boundary phrase present: bare_retained_allowed: false
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: positive retained Y_T closure
+[PASS] forbidden overclaim absent: kappa_Y = 0 is derived
+[PASS] forbidden overclaim absent: derive y_t
+[PASS] forbidden overclaim absent: y_t =
+[PASS] forbidden overclaim absent: m_t =
+[PASS] forbidden overclaim absent: sqrt(8/9) as an unconditional
+[PASS] forbidden overclaim absent: Boundary:** renaming / compatibility support only
+[PASS] forbidden overclaim absent: Promotion beyond renaming support requires a retained bridge theorem
+wrote outputs/yt_lsp_signed_record_source_readout_support_2026-05-24.json
+
+========================================================================================
+RESULT: PASS=66 FAIL=0
+========================================================================================
+
+----- stderr -----
+

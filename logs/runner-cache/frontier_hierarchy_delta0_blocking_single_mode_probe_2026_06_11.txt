@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_delta0_blocking_single_mode_probe_2026_06_11.py
+runner_sha256: a7ef4808c01ceda5b46ba8e249919afb8afb4db2daaf14d576a68c85170f6b2a
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+==============================================================================
+ frontier_hierarchy_delta0_blocking_single_mode_probe_2026_06_11.py
+ DELTA0 blocking-RG probe: does ONE taste-mode decimation cost
+ alpha_bare/u_0 = alpha_LM?  (Campaign hypothesis under exact test;
+ baseline = honest-status T1.ii minimal 2^4 block, reused verbatim.)
+ Parent note: docs/HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md
+==============================================================================
+
+--- Section A [C]: baseline reproduction (honest-status T1.ii facts, exact arithmetic) ---
+  [PASS][C] A1 minimal 2^4 all-APBC eta-phase block: D real antisymmetric and D^2 = -4 u_0^2 I (u_0 = 1 surface)  (exact Fraction matrix arithmetic)
+  [PASS][C] A2 char poly of D/u_0 is (lambda^2 + 4)^8 — 16 taste modes +-2i u_0, multiplicity 8 each  (Faddeev-LeVerrier, exact)
+  [PASS][C] A3 det(u_0 D + m) = (m^2 + 4 u_0^2)^8 per color at 3 rational (u_0, m) test points  (u_0 in {2/3, 3/5}, m in {0, 1/3, 2/7})
+  [PASS][C] A4 |det(u_0 D)| = (2 u_0)^16 = 4^8 u_0^16 at m = 0; exact u_0-degree from a two-point ratio = 16 = species count  (matches honest-status T1.ii exactly)
+
+--- Section B [C]: single-mode Schur decimation in the exact taste eigenbasis ---
+  [PASS][C] B1 exact taste eigenbasis: 16 Gaussian-rational columns with D v = +-2i v (8 each, from even-site symplectic pairs e_x, f_x = D e_x/2); T^-1 = T_dag/2 and T^-1 T = I exactly
+  [PASS][C] B2 quadratic form Q = chibar (u_0 D + m) chi is exactly diagonal over the 16 taste modes: entries m +- 2i u_0, multiplicity 8 each  (u_0 = 2/3, m = 1/3, Gaussian-rational)
+  [PASS][C] B3 integrating ONE Grassmann pair out: multiplicative factor S = m + 2i u_0 exactly; det(u_0 D + m) = S x det(kept 15-mode Schur complement) exactly  (S = 1/3 + 4/3 i at (u_0, m) = (2/3, 1/3))
+  [PASS][C] B4 induced effective-action / coupling shift on the kept 15 modes is EXACTLY ZERO in the taste eigenbasis (B S^-1 C = 0): the decimation is purely multiplicative
+  [PASS][C] B5 per-mode factor magnitude |S| = sqrt(m^2 + 4 u_0^2); at m = 0 exactly 2 u_0 per mode; per-mode u_0-degree exactly 1 (two-point ratio)  (ONE decimation step carries 2 u_0, NOT alpha_LM)
+  [PASS][C] B6 sixteen sequential single-mode decimations multiply exactly to det(u_0 D + m) = (m^2 + 4 u_0^2)^8; at m = 0 the product magnitude is (2 u_0)^16  (exact sequential Schur chain)
+
+--- Section C [A]/[B]: normalization attach — can the static-source chain convert 2 u_0 -> alpha_LM per mode? ---
+  [PASS][A] C1 per-mode decimation factor in the bare-determinant normalization = 2 u_0 = 1.7553628 (B1-licensed value; established exactly in Section B)  (2 u_0 = 1.7553628)
+  [PASS][A] C2 required per-mode normalization N = alpha_LM/(2 u_0) = alpha_bare/(2 u_0^2) = 1/(8 pi u_0^2) at g_bare = 1 = 0.0516519 (two routes agree)  (N = 0.0516519081)
+  [PASS][A] C3 exact decomposition N = (1/(4 pi)) x (1/(2 u_0^2)); 16-mode product check (2 u_0 x N)^16 = alpha_LM^16  ((2 u_0 N)^16 = 2.085701e-17, alpha_LM^16 = 2.085701e-17)
+  [PASS][B] C4 supplier scan, factor 1/(4 pi): Plancherel bridge chain on disk (Green kernel G(r) -> 1/(4 pi |r|); I2 convention alpha_bare := g_bare^2/(4 pi); I3 g_bare = 1 surface) — the VALUE 1/(4 pi) has a landed supplier
+  [PASS][B] C5 supplier scan, factor u_0: VALUE licensed by the plaquette B1 reuse license; DELTA0 gate note on disk records the obstruction (block observables u_0-only; transport source open)
+  [PASS][B] C6 mechanism scoping: YT-P2 no-go on disk names 'non-perturbative blocking renormalization' and explicitly leaves blocking-RG / strong-coupling routes open — this probe lives inside the permitted route
+
+  RESIDUAL (declared-open): the per-mode ATTACHMENT of the supplied value alpha_bare = 1/(4 pi) to a single decimation step has no landed transport rule — the Plancherel bridge supplies the static-source VALUE, not a per-decimation rule.
+  RESIDUAL (declared-open): the per-mode factor 1/(2 u_0^2) inside N = alpha_LM/(2 u_0) has NO landed supplier at all: the block algebra supplies u_0-degree +1 per mode (not -2), and the bare 1/2 that would cancel the determinant's per-mode 2 = 2 sin(pi/2) is unsupplied.
+  RESIDUAL (declared-open): the DELTA0 magnitude gate (HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) remains OPEN: this probe sharpens the obstruction to the per-mode normalization N = alpha_bare/(2 u_0^2) = 1/(8 pi u_0^2) = 0.0516519, it does not close the gate.
+
+--- Section D [C]/[A]: falsification legs ---
+  [PASS][C] F1 mode independence: every one of the 16 taste modes decimates with the SAME factor magnitude sqrt(m^2 + 4 u_0^2), purely multiplicatively, at both rational test couplings  (32 single-mode decimations, exact)
+  [PASS][A] F2 the required per-mode normalization N = 0.0517 is NOT 1: the bare block determinant supplies 2 u_0 per mode, not alpha_LM — consistent with (and reproducing) the DELTA0 gate's recorded u_0-only obstruction; a consistency check, not a failure  (N = 0.0516519, |log10 N| = 1.2869)
+  [PASS][A] F3 alternative hypothesis 'per-mode factor = alpha_bare alone' (no 1/u_0) displaces the 16-mode product from alpha_LM^16 by u_0^(-16) = 8.065  (alpha_LM^16/alpha_bare^16 = 8.0651)
+  [PASS][C] F4 basis honesty: decimating one POSITION-basis pair gives factor m (= 1/3 here), NOT sqrt(m^2 + 4 u_0^2); det M = m x det(position Schur complement) still holds exactly — the single-step factor is basis-dependent, only the full 16-step product is basis-independent  (the '2 u_0 per mode' reading is specific to the taste basis)
+
+--- Terminal class-D fence: external comparators ---
+  (No PDG quantity is needed or consumed by this probe; the per-mode
+   algebra and the normalization residual are internal structure only.)
+  [PASS][D] D1 self-scan: the PDG VEV literal appears ZERO times in this runner's source — no comparator consumed anywhere
+
+==============================================================================
+ Breakdown: A=5 B=3 C=12 D=1 RESIDUAL=3
+ TOTAL: PASS=21 FAIL=0
+ VERDICT: established (bounded): one taste-mode decimation carries exactly
+   one factor 2 u_0 (per-mode u_0-degree 1, zero induced coupling shift in
+   the taste basis); NOT established: the campaign hypothesis factor alpha_LM
+   per mode — it would require the per-mode normalization N = alpha_bare/(2 u_0^2)
+   = 1/(8 pi u_0^2), whose 1/(4 pi) VALUE has a landed supplier but whose
+   per-mode attachment and 1/(2 u_0^2) factor do not. DELTA0 stays open;
+   obstruction sharpened, not closed.
+==============================================================================
+
+----- stderr -----
+

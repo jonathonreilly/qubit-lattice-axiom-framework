@@ -1,0 +1,92 @@
+===== runner cache v1 =====
+runner: scripts/staggered_dirac_kinetic_supply_line_sync_2026_06_12.py
+runner_sha256: 8ae0694e9a9722d66f508a8847ae4b3250caca449c9bae5501393707d3cf5cdb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+========================================================================
+Staggered-Dirac kinetic supply-line sync verifier
+========================================================================
+Claim boundary: bounded/conditional dependency-wire repair only.
+
+========================================================================
+BLOCK 1: notes and caches present
+========================================================================
+  [PASS] docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md exists
+  [PASS] docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md exists
+  [PASS] docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md exists
+  [PASS] docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md exists
+  [PASS] docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md exists
+  [PASS] docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md exists
+  [PASS] docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md exists
+  [PASS] ks cache exists  (logs/runner-cache/probe_kawamoto_smit_phase_forcing.txt)
+  [PASS] noether cache exists  (logs/runner-cache/axiom_first_lattice_noether_check.txt)
+  [PASS] gate cache exists  (logs/runner-cache/staggered_dirac_realization_gate_synthesis_check_2026_06_09.txt)
+  [PASS] kinetic cache exists  (logs/runner-cache/staggered_dirac_kinetic_class_forcing_check_2026_06_10.txt)
+  [PASS] p_flux cache exists  (logs/runner-cache/p_flux_selection_via_fsb_k_check_2026_06_11.txt)
+  [PASS] fsb cache exists  (logs/runner-cache/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.txt)
+  [PASS] z cache exists  (logs/runner-cache/staggered_kernel_z_certificate_check_2026_06_11.txt)
+
+========================================================================
+BLOCK 2: target notes expose the supply line
+========================================================================
+  [PASS] KS note has 2026-06-12 supply-line changelog
+  [PASS] KS note states P-SD discharged on K1
+  [PASS] KS note states P-KIN reduced to P-FLUX
+  [PASS] KS note keeps audit-owned boundary
+  [PASS] KS note states FSB-K condition
+  [PASS] KS note exposes source-only sync verifier
+  [PASS] Noether note has 2026-06-12 refresh section
+  [PASS] Noether note includes exact cascade
+  [PASS] Noether note keeps bounded carrier boundary
+  [PASS] Noether note names FSB-K as open condition
+  [PASS] Noether note exposes source-only sync verifier
+  [PASS] Gate note premise table names P-FLUX supply line
+  [PASS] Gate note says current closure remains bounded/conditional
+  [PASS] Gate residual names P-FLUX cascade
+  [PASS] Gate note requires supplier audits
+  [PASS] Gate note exposes source-only sync verifier
+  [PASS] KS note does not claim retained closure
+  [PASS] Noether note does not claim retained closure
+  [PASS] Gate note does not claim retained closure
+
+========================================================================
+BLOCK 3: target and supplier cache outputs
+========================================================================
+  [PASS] KS target cache PASS=47 FAIL=0
+  [PASS] Noether target cache PASSED 8/8
+  [PASS] Gate target cache PASS=31 FAIL=0
+  [PASS] kinetic supplier cache PASS=27 FAIL=0
+  [PASS] kinetic supplier says P-SD discharged on K1
+  [PASS] kinetic supplier says P-KIN residual is one-bit flux selector
+  [PASS] kinetic supplier contains K0 countermodel
+  [PASS] P-FLUX composer cache PASS=16 FAIL=0
+  [PASS] P-FLUX composer records today's grade boundary
+  [PASS] P-FLUX composer records retained Z geometry
+  [PASS] P-FLUX composer says current selection is within-surface
+  [PASS] FSB-K cache PASS=18 FAIL=0
+  [PASS] FSB-K cache says phi not assumed or derived
+  [PASS] Z cache PASS=18 FAIL=0
+  [PASS] Z cache certifies K1 satisfies Z
+  [PASS] Z cache certifies K0 violates Z
+
+========================================================================
+BLOCK 4: status firewall
+========================================================================
+  [PASS] forbidden phrase absent: promoted to retained
+  [PASS] forbidden phrase absent: becomes retained
+  [PASS] forbidden phrase absent: retained on the actual surface
+  [PASS] KS sync says no audit status change
+  [PASS] Noether sync says no promotion
+  [PASS] Gate sync says supplier rows audit-owned
+  [PASS] runner is source verifier only  (does not read or edit audit data)
+
+========================================================================
+TOTAL: PASS=56 FAIL=0
+========================================================================
+VERDICT: supply-line sync verified iff FAIL=0; no audit status is changed.
+
+----- stderr -----
+

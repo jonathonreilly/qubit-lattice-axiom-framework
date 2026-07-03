@@ -1,0 +1,122 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cubic_coxeter_regge_ok4_fingerprint_2026_06_10.py
+runner_sha256: 8c72886bbafaa5303273fb7028b2cc56c1fd989bb17d6293e5a330ab9305bb42
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 40.05
+status: ok
+----- stdout -----
+O(k^4) LATTICE FINGERPRINT OF THE REGGE GRAVITON SECTOR (Z^3 x Z_tau tick extension)
+================================================================================================
+[PASS] F0 (machinery faithfulness): flat deficits of all 50 triangle classes are ZERO; the per-4-simplex Schlaefli identity holds in every length direction; Q(k) is Hermitian at random incommensurate k; the analytic continuation equals the Hermitian object at real k; the numpy EH pairing equals the sympy-derived EH pairing; Q_EH annihilates the continuum gauge family (all machine precision)
+       max|deficit|=8.9e-16; Schlaefli=6.1e-16; |Q-Q^dag|=4.4e-16; |Q_an-Q|=0.0e+00; |EH_np-EH_sympy|=5.6e-17; |Q_EH h_gauge|=7.2e-17
+
+  c-anchor at k=1e-3 (fitted c per direction; prior cache comparison):
+    pure-tick (0,0,0,1)        c = -0.499999968  rel-res = 6.846e-09  cache (c~-0.5, res 6.846e-09)  match=True
+    pure-space (1,0,0,0)       c = -0.499999968  rel-res = 8.227e-09  cache (c~-0.5, res 8.227e-09)  match=True
+    space-space (1,1,0,0)/r2   c = -0.499999960  rel-res = 5.096e-08  cache (c~-0.5, res 5.099e-08)  match=True
+    tick-space (1,0,0,1)/r2    c = -0.499999960  rel-res = 5.109e-08  cache (c~-0.5, res 5.113e-08)  match=True
+    body (1,1,1,1)/2           c = -0.499999946  rel-res = 9.948e-09  cache (c~-0.4999999, res 9.948e-09)  match=True
+[PASS] F1 (c-ANCHOR + PRIOR CACHE CROSS-CHECK): the comparator constant refit at k=1e-3 in all five comparator directions gives c = -1/2 to better than 1e-7, and both the rounded c and the fitted-c relative residual reproduce the prior runner cache (within 2% on the residual) before this runner extends the sampled fingerprint
+       max|c+1/2| = 5.44e-08
+
+  D(k) = Q_h(k) + (1/2) Q_EH(k): ||Re D||_F log-log slope over k in [3e-3, 3e-2]:
+    pure-tick (0,0,0,1)        slope = 4.0001   ||ImD||/||ReD||@kmax = 6.6e-10   signal@kmin = 5.68e-12 vs floor@1e-4 = 9.1e-15
+    pure-space (1,0,0,0)       slope = 4.0000   ||ImD||/||ReD||@kmax = 6.8e-10   signal@kmin = 5.68e-12 vs floor@1e-4 = 9.1e-15
+    space-space (1,1,0,0)/r2   slope = 4.0000   ||ImD||/||ReD||@kmax = 7.2e-10   signal@kmin = 8.00e-12 vs floor@1e-4 = 5.4e-15
+    tick-space (1,0,0,1)/r2    slope = 4.0000   ||ImD||/||ReD||@kmax = 5.8e-10   signal@kmin = 8.00e-12 vs floor@1e-4 = 5.9e-15
+    body (1,1,1,1)/2           slope = 4.0000   ||ImD||/||ReD||@kmax = 8.5e-10   signal@kmin = 1.01e-11 vs floor@1e-4 = 2.7e-15
+    rand4d-0                   slope = 4.0000   ||ImD||/||ReD||@kmax = 1.3e-09   signal@kmin = 4.84e-12 vs floor@1e-4 = 4.6e-15
+    rand4d-1                   slope = 4.0000   ||ImD||/||ReD||@kmax = 7.5e-10   signal@kmin = 7.32e-12 vs floor@1e-4 = 3.6e-15
+    rand4d-2                   slope = 4.0000   ||ImD||/||ReD||@kmax = 7.3e-10   signal@kmin = 9.65e-12 vs floor@1e-4 = 4.9e-15
+    rand4d-3                   slope = 4.0000   ||ImD||/||ReD||@kmax = 1.5e-09   signal@kmin = 3.61e-12 vs floor@1e-4 = 7.2e-15
+    rand4d-4                   slope = 4.0001   ||ImD||/||ReD||@kmax = 1.8e-09   signal@kmin = 3.46e-12 vs floor@1e-4 = 5.6e-15
+    rand4d-5                   slope = 4.0000   ||ImD||/||ReD||@kmax = 1.0e-09   signal@kmin = 5.14e-12 vs floor@1e-4 = 6.1e-15
+    rand4d-6                   slope = 4.0000   ||ImD||/||ReD||@kmax = 1.2e-09   signal@kmin = 5.00e-12 vs floor@1e-4 = 6.1e-15
+    rand4d-7                   slope = 4.0000   ||ImD||/||ReD||@kmax = 6.7e-10   signal@kmin = 7.71e-12 vs floor@1e-4 = 4.7e-15
+    rand4d-8                   slope = 4.0000   ||ImD||/||ReD||@kmax = 8.8e-10   signal@kmin = 9.37e-12 vs floor@1e-4 = 8.5e-15
+    rand4d-9                   slope = 4.0000   ||ImD||/||ReD||@kmax = 1.2e-09   signal@kmin = 3.76e-12 vs floor@1e-4 = 6.7e-15
+    rand4d-10                  slope = 4.0000   ||ImD||/||ReD||@kmax = 1.1e-09   signal@kmin = 7.00e-12 vs floor@1e-4 = 5.4e-15
+    rand4d-11                  slope = 4.0000   ||ImD||/||ReD||@kmax = 6.8e-10   signal@kmin = 8.62e-12 vs floor@1e-4 = 5.2e-15
+[PASS] F2 (SAMPLED O(k^4) SCALING): the deviation D(k) from the c = -1/2 comparator scales as k^4 cleanly over the sampled grid -- log-log slope in [3.99, 4.01] in ALL 17 directions (5 comparator directions + 12 random unit 4D directions), with the numerical floor at least 100x below the smallest fitted signal
+       slope mean = 4.00002, min = 4.0000, max = 4.0001
+[PASS] F3 (NO ODD-ORDER TERM): ||Im D||/||Re D|| at the largest fitted k is < 1e-8 in all 17 directions -- D(k) is real-symmetric (even in k) to machine precision: no O(k^3) (and no odd-order) deviation appears even though the complex's point group (S4 x inversion; no single-axis reflections) would allow one
+       max ||ImD||/||ReD|| = 1.82e-09
+[PASS] F4 (GAUGE RESIDUALS AT THE SAMPLE POINTS, real-k part): at representative momenta of the fit grid (both ends, three directions): |Q(k) Gamma(k)|, |Q_h(k) h_gauge(k)| and |D(k) h_gauge(k)| are ALL machine-zero -- the O(k^4) deviation D has machine-zero gauge residuals at the tested momenta (it annihilates the continuum gauge family that the exact line-averaged map carries onto the discrete vertex-displacement family)
+       max|Q Gamma| = 4.8e-16; max|Q_h h_gauge| = 1.2e-16; max|D h_gauge| = 1.2e-16
+[PASS] F5 (FIFTH BRANCH AT THE SAMPLE POINTS, real-k part): at the same six sample momenta the form has FIVE machine-zero modes (4 discrete-diffeomorphism + the exactly-decoupled branch), and the zero space meets the metric image in exactly the 4 gauge directions (overlap pattern: four singular values ~1, fifth < 0.9) -- the fifth-branch structure is re-verified at the fingerprint's own sample points
+       nullity = 5 at all 6 points; metric-overlap pattern (4 + 1 outside) verified
+
+  on-shell TT roots: rank drop of the FULL 15x15 form at p = (k n, iE); alpha = (E^2-k^2)/k^4:
+  direction          alpha(k1)    alpha(k2)    alpha(k3)    alpha0(Richardson)  -(1+P4)/12    s6,s7@root   s8
+    axis (1,0,0)     -0.166660   -0.166653   -0.166635   -0.16666665     -0.16666667   3e-15,5e-15   3e-04
+    face+ (1,1,0)    -0.124996   -0.124991   -0.124979   -0.12500002     -0.12500000   3e-15,5e-15   3e-04
+    face- (1,-1,0)   -0.124996   -0.124991   -0.124979   -0.12499997     -0.12500000   3e-15,5e-15   2e-04
+    body+ (1,1,1)    -0.111108   -0.111103   -0.111093   -0.11111111     -0.11111111   2e-15,5e-15   3e-04
+    body- (1,1,-1)   -0.111108   -0.111103   -0.111093   -0.11111115     -0.11111111   3e-15,5e-15   3e-04
+    rand3d-0         -0.113149   -0.113145   -0.113134   -0.11315307     -0.11315305   2e-15,4e-15   3e-04
+    rand3d-1         -0.142036   -0.142030   -0.142015   -0.14204096     -0.14204092   3e-15,6e-15   3e-04
+    rand3d-2         -0.122930   -0.122925   -0.122913   -0.12293410     -0.12293412   3e-15,4e-15   4e-04
+    rand3d-3         -0.124208   -0.124203   -0.124191   -0.12421212     -0.12421212   3e-15,4e-15   3e-04
+    rand3d-4         -0.114676   -0.114671   -0.114660   -0.11467956     -0.11467950   2e-15,5e-15   3e-04
+    rand3d-5         -0.164529   -0.164521   -0.164504   -0.16453521     -0.16453522   3e-15,4e-15   4e-04
+    rand3d-6         -0.132623   -0.132618   -0.132605   -0.13262804     -0.13262800   3e-15,4e-15   2e-04
+    rand3d-7         -0.118386   -0.118382   -0.118370   -0.11839040     -0.11839040   2e-15,4e-15   3e-04
+    rand3d-8         -0.130594   -0.130588   -0.130575   -0.13059823     -0.13059824   3e-15,7e-15   2e-04
+    rand3d-9         -0.137492   -0.137486   -0.137472   -0.13749652     -0.13749651   3e-15,4e-15   3e-04
+[PASS] F6 (ON-SHELL EXTRACTION QUALITY + SAMPLED TT DEGENERACY): at every sampled spatial direction and k, the located root drops the rank of the FULL form by exactly TWO (sigma_6 AND sigma_7 at machine floor < 1e-13; sigma_8 a full O(k^2) gap above) -- the two TT polarizations are degenerate to machine precision at the sampled roots (no sampled birefringence at O(k^4)); roots are real; the Richardson k->0 fits close to < 1e-6; and the discrete gauge family remains machine-zero AT the complex on-shell root momenta (F4's complex-momentum part)
+       max|Q Gamma| at root momenta = 9.8e-16
+[PASS] F7 (THE CANDIDATE CLOSED FORM): alpha(n) = -(1 + sum_a n_a^4)/12 to better than 1e-6 across ALL 15 sampled spatial directions: axis -1/6, face diagonals -1/8, body diagonals -1/9; anisotropy spread max-min = 1/18; all subluminal. Equivalently the sampled on-shell O(k^4) deficit is -(1/12) sum_mu p_mu^4 with p = (k n, i omega): the TICK fourth power enters on the same footing as the spatial ones within the kinetic-isotropy primitive's structural graining; the correction law matches the standard hypercubic (sin^2-type) scalar dispersion
+       max|alpha - closed form| = 6.21e-08; spread = 0.055556 (1/18 = 0.055556)
+[PASS] F8 (B3 ENHANCEMENT -- the chain orientation does NOT imprint): in the spatial-harmonic fit alpha(n) = c0 + c1 P4 + c2 P31 + c3 P211, the S3-only (body-diagonal-chain-sensitive) harmonics are ABSENT (|c2|, |c3| < 1e-6; face+ = face-, body+ = body-): the on-shell O(k^4) fingerprint has FULL cubic (B3) symmetry although the complex's point group is only S4 x inversion
+       c0 = -0.08333336, c1(P4) = -0.08333329, c2(P31) = +1.5e-08, c3(P211) = +1.8e-08; max harmonic-fit residual = 5.2e-08
+
+  wide rank-drop scan E^2/k^2 in [0.3, 2.5] (no other on-shell branch in the three scanned directions):
+    axis (1,0,0)     min sigma_6 away from the cone = 5.35e-06
+    face+ (1,1,0)    min sigma_6 away from the cone = 8.37e-06
+    rand3d-0         min sigma_6 away from the cone = 4.71e-06
+[PASS] F9 (NO OTHER ON-SHELL BRANCH IN THE THREE SCANNED DIRECTIONS): the wide scan finds NO additional rank drop in E^2/k^2 in [0.3, 2.5] away from the located degenerate TT root along the axis, face-diagonal, and one random spatial direction -- in that scanned surface the continuum trace-comparator channel does NOT appear as an independent on-shell lattice branch (its continuum third on-shell null is not realized in the scanned directions; diagnostic: the exactly-decoupled fifth branch carries an O(1) share of the on-shell trace class)
+       fifth-branch metric share at p0 = 0.58; class overlap with trace-transverse (mod gauge) = 0.59
+[PASS] F10 (PROJECTION-CONVENTION BOUNDARY, numerically pinned): the TT-block roots of the PROJECTED metric-sector form (exact line-averaged map; block diagonal at the axis by symmetry) are {-2/9, -1/9} -- split, and unequal to the physical degenerate -1/6 of the full form. At O(k^4) the projected block's on-shell content is map-convention-tagged (the complement leaks back at this order); the physical dispersion is the full-form rank drop (F6/F7)
+       projected alphas = -0.222197, -0.111105 (TT off-diag/diag = 2.3e-24); full-form alpha = -1/6
+[PASS] F11 (STRUCTURE FIT -- honest negative): the off-shell projected O(k^4) coefficient C4(khat) (entrywise k^4+k^6 fits closing to < 1e-5) has machine-zero gauge residuals but is NOT captured by the 8-element basis of linearized-curvature-squared contractions tried here (relative residual ~0.3; isotropic Riem^2/Ric^2/R^2 alone ~0.4): per the brief, no fit is forced -- the raw per-channel table is reported below, and the convention-free O(k^4) structure is the F7 closed form
+       8-element fit rel-residual = 0.314; isotropic-only = 0.415; max C4-extraction residual = 3.7e-07; max relative |C4 h_gauge| = 1.5e-06
+
+  raw per-channel O(k^4) table (PROJECTED form, exact line-averaged map convention;
+  channel value = e^T C4(khat) e, HCOMPS-weighted unit polarizations):
+  direction                  TTx          TT+          trace-T      (TT values = O(|p|^4) coefficient of the channel)
+    pure-tick (0,0,0,1)        +0.013889    +0.020833    -0.020833
+    pure-space (1,0,0,0)       +0.013889    +0.020833    -0.020833
+    space-space (1,1,0,0)/r2   +0.020833    +0.029514    -0.032986
+    tick-space (1,0,0,1)/r2    +0.006944    +0.006944    -0.013889
+    body (1,1,1,1)/2           +0.024884    +0.024884    -0.033565
+[PASS] F12 (TICK-MIXED ANALOGUE, off-shell, convention-tagged): for real tick-mixed momentum directions there is NO on-shell point on the OS0 surface (E^2 = omega^2 + k^2 > 0), so the well-defined analogue of the dispersion correction is the gauge-invariant TT-channel O(k^4) coefficient of D along the five comparator directions, reported above in the exact line-averaged convention. The PURE-TICK row EQUALS the PURE-SPACE row channel-by-channel (the complex's S4 tick<->space symmetry exhibited at O(k^4) -- the kinetic-isotropy footing visible in the off-shell table), with rational channel values 1/72 (off-diagonal TT), 1/48 (diagonal-doublet TT), -1/48 (transverse trace). HONEST SPLIT: the two projected TT channels differ at O(omega^4) by S3 polarization class -- another face of the F10 projection-convention boundary (the sampled on-shell pair is degenerate to machine precision, F6)
+       pure-tick row = pure-space row to 5.8e-09; pure-tick channels: TTx = +0.0138889 (1/72 = +0.0138889), TT+ = +0.0208333 (1/48 = +0.0208333), trT = -0.0208333
+
+TOTAL: PASS=13 FAIL=0
+VERDICT: on the Z^3 x Z_tau tick extension of the cubic-Coxeter spatial chain (3D+1: space = Z^3 per
+the Lattice axiom, time = the emergent record tick, c_t = c_s per the kinetic-isotropy primitive's
+structural grant, OS0/Euclidean surface), the O(k^4) remainder of the comparator is now
+sample-characterized: D(k) = Q_h(k) + (1/2)Q_EH(k) scales as k^4 with slope 4.000 in all 17 sampled directions,
+is even in k (no O(k^3) term despite the low point symmetry), and has machine-zero gauge residuals at every
+sampled momentum. The physical on-shell content (rank drop of the full edge-space form -- NOT the
+projected block, whose O(k^4) roots are convention artifacts, F10) is: the two TT polarizations stay
+degenerate to machine precision at the sampled roots (no sampled O(k^4) birefringence) and disperse subluminally as
+  omega^2(k) = k^2 [ 1 - k^2 (1 + sum_a n_a^4)/12 ] + O(k^6),
+i.e. an on-shell deficit -(1/12) sum_mu p_mu^4 with the tick fourth power on the same footing as the
+spatial ones -- the hypercubic (sin^2-type) scalar correction law, within the kinetic-isotropy structural graining
+at O(k^4). alpha runs from -1/6 (axes) through -1/8 (face diagonals) to -1/9 (body diagonals), spread
+1/18; the chain-orientation harmonics are ABSENT (face+ = face-, body+ = body-): the fingerprint is
+B3-symmetric, more symmetric than the complex itself. No other branch appears near the cone in the three scanned F9 directions;
+the continuum trace-channel third on-shell null is not realized as a lattice branch in those scanned directions (the exactly-decoupled
+fifth branch carries an O(1) share of that class). The off-shell projected C4 is not captured by the
+simple curvature-contraction basis tried (honest negative; raw table reported; its pure-tick row equals its pure-space row channel-by-channel --
+the S4 tick-space footing at O(k^4)). UNITS REMARK (units only, no dimensionless physics granted, no phenomenology or bound claim): in lattice units the correction is
+|alpha|(ka)^2 <= (ka)^2/6; with the registered scale reference a^{-1} = M_Pl it is Planck-suppressed --
+of order 1e-80 relative at gravitational-wave-band momenta (context arithmetic only). This is the structural fingerprint of the geometric
+route, not a near-term test. Open and unchanged: overall action orientation (the located sign residual),
+edge-length-DOF provenance, action selection, O(k^6) and nonlinear closure, tick scale (clock-rate
+boundary respected). No PDG / fitted value consumed.
+
+----- stderr -----
+

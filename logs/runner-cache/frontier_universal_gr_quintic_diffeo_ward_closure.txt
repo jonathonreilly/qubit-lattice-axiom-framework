@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_quintic_diffeo_ward_closure.py
+runner_sha256: fa9c7b38bd603e6ca11bfab0364c82cd2fdb6afe19ef262e4a89a165b563c2df
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 176.61
+status: ok
+----- stdout -----
+PASS T1 CONSERVED quintic resid/amplitude FAR below NAIVE at L=6: 0.00397 vs 0.08495 (naive/conserved=21x) -> conserved signal vs naive control
+PASS T2 ROBUST across amplitude: conserved << naive at amp 0.04 (20x) and 0.09 (33x) -> genuine, not a finite-diff artifact
+PASS T3 CONSERVED quintic resid/amplitude DECREASES L=6->L=8 (0.00397@k1.05 -> 0.00001@k0.79, toward the numerical floor); NAIVE flat (0.0850 -> 0.0907) -> continuum trend diagnostic
+
+The QUINTIC (n=5) graviton diffeomorphism Ward residual strongly favors the conserved coupling
+D(P_eff) + sqrt(g) measure: the residual normalized by the amplitude is robustly ~20-33x below
+the naive (non-conserved) coupling's and decreases from L=6 to L=8 toward the numerical floor.
+This is a bounded quintic Ward diagnostic extending the cubic #3342 and quartic #3353 diagnostics,
+not a synthesis, all-order closure theorem, or derivation of the G_Newton magnitude.
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

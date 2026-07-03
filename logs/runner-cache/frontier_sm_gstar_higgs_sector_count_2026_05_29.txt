@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py
-runner_sha256: f07d1d9e3723b73bb48cb6f0554307c63c571b75a64a77d520f49b87b1d4cc21
+runner_sha256: 7e413009ce1167072ca1b0f9e33a4a3f799be0ab514d0a6ca1d78b929275c7da
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.39
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -33,14 +33,24 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] single-Higgs Z_3 charge q_H is a right-basis relabeling -> Y Y^dag invariant  (q_H gauge-redundant for PMNS; not a second physical doublet)
   [PASS] pseudoreality epsilon U^* = U epsilon -> tilde H determined by H (one field)  (tilde H = i tau_2 H^* is not an independent doublet)
 
-[3] genuine 2HDM (two thermalized doublets) requires a second field
+[3] retained-bounded inventory premise and native bridge boundary
   [PASS] D17: H_unit (1,1) scalar singlet on Q_L has Z^2 = 6
   [PASS] D17: no second (1,1) composite scalar -> alternatives Z^2 in {8, 9/2, 24} != 6  ((1,8)=8, (3,1)=9/2, (8,3)=24)
-  [PASS] genuine 2HDM needs an independent fundamental/second-composite scalar (admitted, not retained)  (absent from the bare action (D16); not framework-native)
-  [PASS] framework-native EWSB scalar count for the census = 1 doublet (4 dof)  (outcome (a): g_* = 106.75 stands on framework-native content)
+  [PASS] note claim type is bounded_theorem over retained-bounded declared inventory
+  [PASS] SM DOF inventory note supplies the one-complex-doublet declared premise
+  [PASS] note keeps H_unit -> EWSB doublet as separate native science, not load-bearing
+  [PASS] note states g_* = 106.75 under retained-bounded declared inventory
+  [PASS] H_unit representation no-go note exists
+  [PASS] H_unit direct full-doublet bridge is marked representation-forbidden
+  [PASS] SM note consumes accepted inventory premise without new axiom or audit verdict
+  [PASS] H_unit supplied-doublet radial/orbit support note exists
+  [PASS] radial/orbit support is cited as support only, not field-content authority
+  [PASS] radial/orbit support keeps the one-doublet inventory premise load-bearing
 
 [4] note + authority cross-checks
   [PASS] authority exists: YT_WARD_IDENTITY_DERIVATION_THEOREM.md
+  [PASS] authority exists: HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md
+  [PASS] authority exists: SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md
   [PASS] authority exists: YT_CLASS_3_SUSY_2HDM_ANALYSIS_NOTE_2026-04-18.md
   [PASS] authority exists: CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md
   [PASS] authority exists: DM_NEUTRINO_TWO_HIGGS_MINIMALITY_THEOREM_NOTE_2026-04-15.md
@@ -53,9 +63,11 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] authority exists: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
   [INFO] prior-cycle R-HIGGS note present on this branch: True (lands via PR #2223; soft check)
   [PASS] note file exists
+  [PASS] audit ledger has SM DOF inventory retained_bounded  (claim_type=bounded_theorem effective_status=retained_bounded)
   [PASS] note records load-bearing token: '106.75'
   [PASS] note records load-bearing token: '110.75'
   [PASS] note records load-bearing token: 'bounded_theorem'
+  [PASS] note records load-bearing token: 'retained-bounded declared-inventory premise'
   [PASS] note records load-bearing token: 'R-HIGGS'
   [PASS] note records load-bearing token: 'H_unit'
   [PASS] forbidden-import disclaimer paragraph present in §1
@@ -71,7 +83,7 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] no new-vocabulary token: 'algebraic universality'
 
 ==============================================================================
-PASS=51 FAIL=0
+PASS=63 FAIL=0
 ==============================================================================
 
 ----- stderr -----

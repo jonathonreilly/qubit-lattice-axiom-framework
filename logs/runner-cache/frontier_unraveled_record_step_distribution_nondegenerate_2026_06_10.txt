@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/frontier_unraveled_record_step_distribution_nondegenerate_2026_06_10.py
+runner_sha256: ae5cfde7d80d9565b24b9095ce2e636fa639f9b404dfffbc69577bcacaa25e75
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 107.49
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  (U1) exact outcome tree: completeness; weights; mean-consistency
+==============================================================================
+  [PASS] I-B Kraus completeness K+†K+ + K-†K- = I exactly
+  [PASS] I-A Kraus completeness K+†K+ + K-†K- = I exactly
+  [PASS] the depth-5 outcome tree's exact Born weights sum to 1  (32 branches; |sum-1| = 6.7e-16)
+  [PASS] UNRAVELING CONSISTENCY: Born-weighted average of conditional states = the deterministic channel EXACTLY
+==============================================================================
+Part 2  (U2) domain guards; non-degenerate spread on the generic full-rank domain
+==============================================================================
+  [PASS] RANK GUARD: every branch of the generic-state tree has a FULL-RANK cross block (the increment is well-defined on every branch used)  (worst branch min-sv 0.0931)
+  [PASS] THE STRUCTURAL LOCUS, exhibited: at sub-minimal occupancy K=2 the cross block is EXACTLY rank-deficient (rank <= K, algebraic; color-link precondition); dU does not exist there; the existence headline is restricted to the generic full-rank (K >= 3, full-rank-realized) domain  (K=2 cross-block min-sv 1.1e-17)
+  [PASS] the nf=1-per-color sea: a SCALAR cross block (full rank, trivial polar = I) -- the sea sits at the spread-DEGENERATE point even where defined  (||M_sea - scalar*I|| = 0.0e+00)
+  [PASS] I-B (color-blind) step spread strictly positive on the generic domain (instance-labeled)  (variance 0.1231)
+  [PASS] I-A (frame-naming) step spread strictly positive on the generic domain (instance-labeled)  (variance 0.4371)
+  [PASS] NEAR-SEA CONTROL: a full-rank near-sea state has strictly positive spread -- the phenomenon survives near the sea exactly where the increment is defined  (min-sv 0.0500; variance 0.5007)
+  [PASS] eps -> small: the spread vanishes as expected for a weak instrument (var ~ eps^2 -- this rules out a numerical floor and claims nothing more)  (variance(eps=0.05) = 0.000897)
+==============================================================================
+Part 3  (U3) the CLT route's FOUR residuals: stationarity, centrality, edge-identity, many-edge
+==============================================================================
+  [PASS] RESIDUAL 1 (stationarity): increments are STATE-DEPENDENT (two tree nodes give different increments) -- trajectory equilibration unproven  (difference 0.242)
+  [PASS] RESIDUAL 2 (centrality): on the generic state E[dU] is NON-SCALAR and the off-scalar part is EPS-INDEPENDENT (a STRUCTURAL property of this increment, not a small residual; instance-dependent -- special states can be scalar)  (off-scalar 0.7119 (eps=0.6) vs 0.7223 (eps=0.3))
+  [PASS] RESIDUAL 3 (identical distribution across edges): FAILS as-is -- E[dU] differs at order 1 between edges (0,1) and (1,2)  (edge difference 0.405)
+   RESIDUAL 4 (many-edge structure): cross-edge independence and the multi-edge
+   convolution are UNTESTED here (single-edge increments only) -- named, open.
+==============================================================================
+Part 4  (U4) covariance split (trajectory-level re-exhibit; regime reconciliation)
+==============================================================================
+  [PASS] the conjugate-representation lift, pinned: G(Gamma psi) = g G(psi) g† exactly
+  [PASS] I-B COVARIANCE, exact: E[dU](g.psi) = g E[dU](psi) g† -- the color-blind unraveling's noise is gauge-covariant  (dev 8.6e-16)
+  [PASS] I-A breaks covariance at order 1 (anchored to ITS frame -- the {P_r} datum; the frame-naming boundary)  (dev 0.195)
+  [PASS] the color-blind orientation increments are non-degenerate at finite eps (weak-record regime; no tension with projective full-strength erasure)  (I-B spread 0.1231)
+==============================================================================
+TOTAL: PASS=18 FAIL=0
+==============================================================================
+SCOPE: conditional Born-weighted unraveling of the named weak instruments. On
+  the GENERIC FULL-RANK domain (guarded per-branch; sub-minimal occupancy K<3
+  is an exact rank-deficient locus; the sea's block is scalar), the single-edge
+  induced-link step distribution exists and is non-degenerate for both named
+  instrument classes (near-sea full-rank control included), and is exactly
+  covariant for the color-blind class. Born enters as an explicit dependency,
+  NOT as Record-supplied probability. The CLT route's remaining inputs are four
+  named residuals: stationarity, centrality (eps-independent/structural),
+  identical-distribution-across-edges (fails as-is), and many-edge independence/
+  convolution structure (untested). Discrete-time throughout; no continuous
+  generator, stationary law, central-increment law, edge-identity law, or
+  cross-edge convolution is supplied. The outcome tree is enumerated exactly
+  (no MC); all spreads/variances are instance-labeled. No new axiom/primitive
+  or Record-supplied measure/weight/probability rule; r untouched. Audit lane
+  grades.
+
+----- stderr -----
+

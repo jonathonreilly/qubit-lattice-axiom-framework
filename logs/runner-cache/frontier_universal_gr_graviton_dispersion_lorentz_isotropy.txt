@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_graviton_dispersion_lorentz_isotropy.py
+runner_sha256: 48cff9775ffb9b67bf5cf4eb616da823daaa7aa4f62d229619c7e3ddbbcb1eab
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 15.25
+status: ok
+----- stdout -----
+Finite-grid induced-gravity TT-stiffness anisotropy diagnostic
+==============================================================================
+surface: staggered Kahler-Dirac 16x16 block, yz TT polarization, m=0.7
+grids: N=6,8,10
+
+  N       k0       C_time      C_space       C_diag    diag/axis-1
+  6  1.04720   0.08961606   0.08961606   0.09381889     0.04689819
+  8  0.78540   0.09408284   0.09408284   0.09655222     0.02624680
+ 10  0.62832   0.09620241   0.09620241   0.09781254     0.01673687
+
+PASS T1 axis samples agree on the tested grids
+     relative diffs: N=6:1.58e-14, N=8:3.44e-14, N=10:1.17e-14
+PASS T2 diagonal excess is positive and decreases over the sampled grids
+     excess=0.04690, 0.02625, 0.01674; k0=1.047, 0.785, 0.628; fitted power=2.02
+PASS T3 finite-grid anisotropy coefficient is stable on this sample
+     coeffs=0.04277, 0.04255, 0.04239; mean=0.04257; spread=0.9%
+
+Boundary: finite-grid channel diagnostic only. This runner does not decide
+physical dispersion, GR recovery, GW-speed bounds, Planck suppression,
+all-polarization closure, or an analytic continuum theorem.
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

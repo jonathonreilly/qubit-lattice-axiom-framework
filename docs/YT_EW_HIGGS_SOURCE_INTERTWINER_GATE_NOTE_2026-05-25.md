@@ -146,3 +146,10 @@ SUMMARY: PASS=... FAIL=0
 
 The green result means the candidate carrier algebra and current repo blockers
 were checked.  It does not mean the Y_T lane is closed.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26](SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md)
+- [standard_model_hypercharge_uniqueness_theorem_note_2026-04-24](STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md)

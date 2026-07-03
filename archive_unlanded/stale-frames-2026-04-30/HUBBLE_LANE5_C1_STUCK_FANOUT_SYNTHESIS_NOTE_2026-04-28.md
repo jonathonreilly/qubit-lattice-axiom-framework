@@ -1,7 +1,15 @@
-# Lane 5 `(C1)` Gate — Stuck Fan-Out Synthesis
+# Historical Lane 5 `(C1)` Gate Stuck Fan-Out Packet (Retracted)
 
 **Date:** 2026-04-28
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/stale-frames-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
+
 **Lane:** 5 — Hubble constant `H_0` derivation
 **Loop:** `hubble-c1-absolute-scale-gate-20260428`
 **Runner:** `scripts/frontier_hubble_c1_stuck_fanout_synthesis.py`
@@ -21,7 +29,24 @@ Do NOT cite the numerical results, tables, or threshold values in the original c
 
 ---
 
-## 0. Context
+## 2026-06-16 archive firewall
+
+This archived packet is historical / diagnostic and retired as evidence. It is
+not an active global exhaustion proof, not Axiom* minimality support, and not
+authority that no hidden `(C1)` route remains.
+
+The safe residue is route-local only: use the separately audited/narrow
+route-no-go cluster for route-local boundaries, not this wrapper.
+
+## 2026-06-18 registered-runner contract
+
+The registered runner for this archived row is a firewall witness only. It
+verifies this note's current-surface certificate, retraction, and archive
+boundary. It must not be used to re-prove the historical global-exhaustion
+wrapper. A PASS does not certify global exhaustion, close `(G1)`, `(G2)`, or
+`(C1)`, or provide Axiom* minimality support.
+
+## 0. Historical context (retracted)
 
 Cycles 2–5 closed the audit's `A1`, `A2`, `A4` frames negatively
 and landed `A5` audit. The minimal carrier-axiom class was
@@ -125,7 +150,7 @@ and ququart cyclically and separately.
 **Verdict.** (ε) does not force CAR. Cyclic-and-separating is a
 state-and-algebra property compatible with all rank-four semantics.
 
-## 2. Synthesis
+## 2. Historical synthesis (retracted as global exhaustion)
 
 | Premise | Forces `Cl_4(C)` on `P_A H_cell`? | Reason |
 |---|---|---|
@@ -172,7 +197,7 @@ The runner does not import any observed value, fitted parameter,
 literature constant, or carrier-axiom posit. The fan-out content is
 entirely structural.
 
-## 4. What this synthesis closes
+## 4. Historical closure summary (retracted)
 
 - The stuck fan-out beyond `A1`–`A6` is **landed** per Deep Work
   Rules. Five orthogonal premises generated, each independently
@@ -195,7 +220,7 @@ entirely structural.
 - No new attack frame is identified. The fan-out is exhaustive at
   the current understanding level.
 
-## 6. Implication for honest stop
+## 6. Historical stop note (retracted as active guidance)
 
 The loop has now executed:
 
@@ -230,12 +255,9 @@ and writing the loop's final HANDOFF + claim-state report.
 - Loop pack:
   `.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/`.
 
-## 8. Boundary
+## 8. Archive boundary
 
-This is a **stuck-fan-out synthesis** note (audit-grade). It does
-not retain `(G1)`, `(G2)`, or `(C1)`, and does not extend `A_min`.
-It executes the Deep Work Rules orthogonal-premise requirement and
-synthesizes the result. The synthesis confirms the Cycle-5 A5 audit:
-the Cl_4(C) carrier axiom on `P_A H_cell` is the minimal closure
-move, and it is non-derivable from any natural derivation route on
-the retained surface.
+This is an archive-only recovery note, not an active audit-grade exhaustion
+proof. It does not retain `(G1)`, `(G2)`, or `(C1)`, does not extend `A_min`,
+and should not be cited as Axiom* minimality support. Route-local boundaries
+must come from the separately audited narrow route-no-go cluster.

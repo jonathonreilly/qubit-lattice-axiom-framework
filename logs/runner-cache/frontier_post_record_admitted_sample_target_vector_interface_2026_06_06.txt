@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.py
+runner_sha256: e1041e13a56cf6af61a1f946d9857baaa5f4751b705196626dcb1962253b9141
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md contains: supplied finite post-record sample plus supplied statistic set
+PASS docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md contains: The sample is admitted observation data, not a probability law
+PASS docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md contains: Weights and selection rules remain supplied
+PASS docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md exists
+PASS docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md contains: target vector and loss weights are supplied rule data
+PASS docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md contains: Record does not derive the target vector or weights
+PASS docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md contains: supplied finite candidate family plus supplied selection rule
+PASS docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md contains: The rule is supplied
+
+------------------------------------------------------------------------------
+Admitted sample checks
+------------------------------------------------------------------------------
+PASS sample admission status is explicit
+PASS post-record sample carries realized words :: (('A', 'A'), ('A', 'B'), ('B', 'A'), ('B', 'A'))
+PASS sample atom counts are exact integers :: Counter({'A': 5, 'B': 3})
+PASS empirical vector verifies :: {'endpoint_ab': Fraction(1, 4), 'endpoint_ba': Fraction(1, 2), 'second_is_b': Fraction(1, 4)}
+PASS empirical endpoint_ab is exact
+PASS empirical endpoint_ba is exact
+PASS empirical second_is_b is exact
+
+------------------------------------------------------------------------------
+Blocked sample checks
+------------------------------------------------------------------------------
+PASS empty sample is blocked
+PASS missing statistic set is blocked
+PASS unknown statistic is blocked
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS audit data written flag is false
+PASS audit verdict applied flag is false
+PASS promoted/retained claim flag is false
+PASS sample-is-probability-law flag is false
+PASS weights derived from sample flag is false
+PASS selection rule derived from sample flag is false
+PASS kernel selected by sample alone flag is false
+PASS Born law derived from Record flag is false
+PASS generation/Koide dial selected flag is false
+PASS stable setting selects dial flag is false
+
+SUMMARY: PASS=30 FAIL=0
+ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE=TRUE
+ADMITTED_SAMPLE_EMPIRICAL_VECTOR_EXACT=TRUE
+SAMPLE_IS_PROBABILITY_LAW=FALSE
+WEIGHTS_DERIVED_FROM_SAMPLE=FALSE
+SELECTION_RULE_DERIVED_FROM_SAMPLE=FALSE
+PRODUCTION_KERNEL_SELECTED_BY_SAMPLE_ALONE=FALSE
+BORN_LAW_DERIVED_FROM_RECORD=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+STABLE_SETTING_SELECTS_DIAL=FALSE
+AUDIT_LEDGER_WRITTEN=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+
+----- stderr -----
+

@@ -41,8 +41,9 @@ non-perturbative computation. What the runner computes from c_lambda(6)
 and SU(3) intertwiners is the resulting Perron eigenvector psi and the
 expectation value P(6) = <psi, J psi> of the explicit source operator J.
 
-It also computes the one-plaquette reference P_1plaq(6) directly from
-the SU(3) Bessel-determinant character expansion as a sanity check.
+It also computes the one-plaquette reference P_1plaq(6) as
+d/d beta log c_(0,0)(beta), where c_(0,0) is the Haar one-plaquette
+partition coefficient in the SU(3) Bessel-determinant character expansion.
 
 It then performs three parametric sensitivity sweeps over admissible
 rho families to demonstrate the bounded no-go that the enumerated
@@ -59,10 +60,24 @@ truncation is justified by exponential decay of c_(p,q)(beta) at fixed
 beta with the rep size: at beta = 6, c_(p,q)(6) and a_(p,q)(6)^4 fall
 below 1e-6 for (p+q) >= 4 already on the audited box, so the Peter-Weyl
 tail is super-polynomially summable and contributes well below
-branch-local tolerance at NMAX = 7.
+source-side tolerance at NMAX = 7.
 
 It performs an explicit bounded no-go check for the three enumerated
 rho-family closures on the source sector.
+
+It also computes the finite all-forward L_s=2 PBC cube Schur shortcut
+directly in this runner, rather than importing its P value from a sibling
+note. In the raw Bessel-coefficient convention used here, the normalized
+Schur rho is
+
+    rho_(p,q) = ((d_(p,q) c_(p,q)(6) / c_(0,0)(6))^12)
+                * d_(p,q)^(N_components - N_links)
+
+with 12 plaquettes, 24 directed links, and 8 cyclic-index components.
+Equivalently, after normalization this is
+(c_(p,q)(6) / c_(0,0)(6))^12 d_(p,q)^(-4) on the L_s=2 all-forward
+surface. This is a finite-volume diagnostic, not the physical 3D Wilson
+environment or the thermodynamic plaquette.
 
 It performs hostile-review checks confirming the result is:
   - not a constant-lift ansatz (a_(p,q) varies sharply with (p,q));
@@ -113,6 +128,91 @@ def check(name: str, condition: bool, detail: str = "", bucket: str = "THEOREM")
 
 def dim_su3(p: int, q: int) -> int:
     return (p + 1) * (q + 1) * (p + q + 2) // 2
+
+
+def all_forward_l2_pbc_plaquettes() -> list[
+    tuple[tuple[int, int, int], int, int, list[tuple[int, int, int, int]]]
+]:
+    """Enumerate the 12 L_s=2 PBC plaquettes with all-forward link slots."""
+    plaquettes: list[
+        tuple[tuple[int, int, int], int, int, list[tuple[int, int, int, int]]]
+    ] = []
+    for plane_dir1, plane_dir2 in [(0, 1), (0, 2), (1, 2)]:
+        orth = ({0, 1, 2} - {plane_dir1, plane_dir2}).pop()
+        for orth_val in range(2):
+            for start_in_plane_idx in range(2):
+                site = [0, 0, 0]
+                site[plane_dir1] = start_in_plane_idx
+                site[plane_dir2] = 0
+                site[orth] = orth_val
+                cur = list(site)
+                links = []
+                for direction in [plane_dir1, plane_dir2, plane_dir1, plane_dir2]:
+                    links.append((cur[0], cur[1], cur[2], direction))
+                    cur[direction] = (cur[direction] + 1) % 2
+                plaquettes.append((tuple(site), plane_dir1, plane_dir2, links))
+
+    seen = set()
+    unique = []
+    for plaquette in plaquettes:
+        link_set = frozenset(plaquette[3])
+        if link_set not in seen:
+            seen.add(link_set)
+            unique.append(plaquette)
+    return unique
+
+
+def l2_link_to_plaquette_slots(
+    plaquettes: list[
+        tuple[tuple[int, int, int], int, int, list[tuple[int, int, int, int]]]
+    ],
+) -> dict[tuple[int, int, int, int], list[tuple[int, int]]]:
+    out: dict[tuple[int, int, int, int], list[tuple[int, int]]] = {}
+    for p_idx, (_, _, _, links) in enumerate(plaquettes):
+        for slot, link in enumerate(links):
+            out.setdefault(link, []).append((p_idx, slot))
+    return out
+
+
+def l2_cube_index_graph(
+    plaquettes: list[
+        tuple[tuple[int, int, int], int, int, list[tuple[int, int, int, int]]]
+    ],
+) -> tuple[int, list[tuple[int, int]], int]:
+    """Build the cyclic-index identifications induced by shared links."""
+    n_nodes = 4 * len(plaquettes)
+    edges: list[tuple[int, int]] = []
+    link_slots = l2_link_to_plaquette_slots(plaquettes)
+    for occurrences in link_slots.values():
+        if len(occurrences) != 2:
+            continue
+        (p_a, slot_a), (p_b, slot_b) = occurrences
+        in_a = 4 * p_a + (slot_a - 1) % 4
+        out_a = 4 * p_a + slot_a
+        in_b = 4 * p_b + (slot_b - 1) % 4
+        out_b = 4 * p_b + slot_b
+        edges.append((in_a, in_b))
+        edges.append((out_a, out_b))
+    return n_nodes, edges, len(link_slots)
+
+
+def count_connected_components(n_nodes: int, edges: list[tuple[int, int]]) -> int:
+    parent = list(range(n_nodes))
+
+    def find(x: int) -> int:
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    def union(a: int, b: int) -> None:
+        ra, rb = find(a), find(b)
+        if ra != rb:
+            parent[ra] = rb
+
+    for a, b in edges:
+        union(a, b)
+    return len({find(i) for i in range(n_nodes)})
 
 
 def highest_weight_triple(p: int, q: int) -> list[int]:
@@ -193,23 +293,17 @@ def perron_state_and_value(
 
 
 def one_plaquette_partition_function(
-    nmax: int, mode_max: int, beta: float
+    mode_max: int, beta: float
 ) -> float:
     arg = beta / 3.0
-    total = 0.0
-    for p in range(nmax + 1):
-        for q in range(nmax + 1):
-            d = dim_su3(p, q)
-            ck = wilson_character_coefficient(p, q, mode_max, arg)
-            total += d * ck
-    return total
+    return wilson_character_coefficient(0, 0, mode_max, arg)
 
 
 def one_plaquette_expectation(
-    nmax: int, mode_max: int, beta: float, eps: float = 1.0e-3
+    mode_max: int, beta: float, eps: float = 1.0e-3
 ) -> float:
-    z_plus = one_plaquette_partition_function(nmax, mode_max, beta + eps)
-    z_minus = one_plaquette_partition_function(nmax, mode_max, beta - eps)
+    z_plus = one_plaquette_partition_function(mode_max, beta + eps)
+    z_minus = one_plaquette_partition_function(mode_max, beta - eps)
     return (np.log(z_plus) - np.log(z_minus)) / (2.0 * eps)
 
 
@@ -274,6 +368,43 @@ def parametric_rho_perron(
     return P
 
 
+def schur_l2_cube_rho_and_metadata(
+    weights: list[tuple[int, int]],
+    index: dict[tuple[int, int], int],
+    mode_max: int,
+    beta: float,
+) -> tuple[np.ndarray, dict[str, float]]:
+    plaquettes = all_forward_l2_pbc_plaquettes()
+    n_nodes, edges, n_links = l2_cube_index_graph(plaquettes)
+    n_components = count_connected_components(n_nodes, edges)
+    n_plaquettes = len(plaquettes)
+    coeffs = np.array(
+        [
+            wilson_character_coefficient(p, q, mode_max, beta / 3.0)
+            for p, q in weights
+        ],
+        dtype=float,
+    )
+    dims = np.array([dim_su3(p, q) for p, q in weights], dtype=float)
+    c00 = coeffs[index[(0, 0)]]
+    rho = ((dims * coeffs / c00) ** n_plaquettes) * (
+        dims ** (n_components - n_links)
+    )
+    rho = rho / rho[index[(0, 0)]]
+    metadata = {
+        "n_plaquettes": float(n_plaquettes),
+        "n_links": float(n_links),
+        "n_nodes": float(n_nodes),
+        "n_edges": float(len(edges)),
+        "n_components": float(n_components),
+        "dimension_exponent": float(n_components - n_links + n_plaquettes),
+        "rho_10": float(rho[index[(1, 0)]]),
+        "rho_01": float(rho[index[(0, 1)]]),
+        "rho_11": float(rho[index[(1, 1)]]),
+    }
+    return rho, metadata
+
+
 def main() -> int:
     print("=" * 78)
     print("GAUGE-VACUUM PLAQUETTE TENSOR-TRANSFER PERRON SOLVE")
@@ -320,7 +451,7 @@ def main() -> int:
     eig_loc, psi_loc, P_loc = perron_state_and_value(transfer_loc, j_op)
     eig_triv, psi_triv, P_triv = perron_state_and_value(transfer_triv, j_op)
 
-    P_1plaq = one_plaquette_expectation(NMAX_DEFAULT, MODE_MAX_DEFAULT, BETA)
+    P_1plaq = one_plaquette_expectation(MODE_MAX_DEFAULT, BETA)
 
     print("Reference solve A (structural choice rho_(p,q) = 1 for every irrep)")
     print("  -> Z_6^env(W) = sum d_(p,q) chi_(p,q)(W) = delta(W, e)")
@@ -341,8 +472,31 @@ def main() -> int:
     print()
 
     print("One-plaquette block reference")
-    print("  P_1plaq(6) = d/d beta log Z_1plaq(6)  (Bessel-determinant FD)")
+    print("  P_1plaq(6) = d/d beta log c_(0,0)(6)  (Bessel-determinant FD)")
     print(f"  P_1plaq(6)                            = {P_1plaq:.12f}")
+    print()
+
+    schur_rho, schur_meta = schur_l2_cube_rho_and_metadata(
+        weights, index, MODE_MAX_DEFAULT, BETA
+    )
+    schur_transfer = multiplier @ d_loc @ np.diag(schur_rho) @ multiplier
+    eig_schur, psi_schur, P_schur = perron_state_and_value(schur_transfer, j_op)
+    psi_schur_swap = float(np.max(np.abs(swap @ psi_schur - psi_schur)))
+
+    print("Finite all-forward L_s=2 PBC cube Schur shortcut")
+    print(
+        "  rho_Schur = ((d c/c00)^12) d^(N_components - N_links), "
+        "normalized at (0,0)"
+    )
+    print(f"  unique plaquettes, directed links       = {int(schur_meta['n_plaquettes'])}, {int(schur_meta['n_links'])}")
+    print(f"  cyclic-index nodes, edges, components   = {int(schur_meta['n_nodes'])}, {int(schur_meta['n_edges'])}, {int(schur_meta['n_components'])}")
+    print(f"  normalized dimension exponent           = {int(schur_meta['dimension_exponent'])}")
+    print(f"  rho_Schur_(1,0), rho_Schur_(1,1)        = {schur_meta['rho_10']:.12e}, {schur_meta['rho_11']:.12e}")
+    print(f"  Perron eigenvalue                       = {eig_schur:.12f}")
+    print(f"  P_Schur,L2(6)                           = {P_schur:.12f}")
+    print(f"  u_0,Schur,L2                            = {P_schur**0.25:.12f}")
+    print(f"  alpha_s,Schur,L2(v) (alpha_bare=1)      = {1.0 / P_schur**0.5:.12f}")
+    print("  -> finite-volume diagnostic only; not the physical 3D Wilson environment")
     print()
 
     print("Input rho_(p,q)(6) values defining each structural reference solve:")
@@ -540,7 +694,7 @@ def main() -> int:
     check(
         "the NMAX truncation tail is super-polynomially summable: successive drifts "
         "decay geometrically and the dominant-weight band sum at the truncation edge is "
-        "below the branch-local tolerance",
+        "below the source-side tolerance",
         nmax_drift < 1.0e-6
         and nmax_drift_prior < 1.0e-3
         and nmax_drift_geom > 50.0
@@ -565,7 +719,7 @@ def main() -> int:
     check(
         "the source-sector Perron value depends nontrivially on rho_(p,q)(6); "
         "the three tested 1-parameter local-input closures do not fix a unique "
-        "rho (bounded no-go: distinct admissible rho choices give distinct P(6))",
+        "rho (bounded no-go: distinct normalized rho choices give distinct P(6))",
         sens_range > 1.0e-3 and one_plaq_range > 1.0e-3 and tube_range > 1.0e-2,
         detail=(
             f"family-1 spread = {sens_range:.6f}, family-2 spread = {one_plaq_range:.6f}, "
@@ -575,7 +729,51 @@ def main() -> int:
         ),
     )
 
-    # ----- Check 7: hostile review — no constant-lift.
+    # ----- Check 7: finite L_s=2 Schur shortcut is computed internally.
+    check(
+        "the all-forward L_s=2 PBC cube index graph is reconstructed internally "
+        "with 12 plaquettes, 24 directed links, 48 cyclic-index nodes, 48 "
+        "identifications, and 8 connected components",
+        int(schur_meta["n_plaquettes"]) == 12
+        and int(schur_meta["n_links"]) == 24
+        and int(schur_meta["n_nodes"]) == 48
+        and int(schur_meta["n_edges"]) == 48
+        and int(schur_meta["n_components"]) == 8,
+        detail=(
+            f"plaquettes={int(schur_meta['n_plaquettes'])}, "
+            f"links={int(schur_meta['n_links'])}, nodes={int(schur_meta['n_nodes'])}, "
+            f"edges={int(schur_meta['n_edges'])}, components={int(schur_meta['n_components'])}"
+        ),
+    )
+    check(
+        "the raw-coefficient Schur rho is normalized, conjugation-symmetric, "
+        "and distinct from the three enumerated one-parameter local families",
+        abs(schur_rho[index[(0, 0)]] - 1.0) < 1.0e-12
+        and abs(schur_rho[index[(1, 0)]] - schur_rho[index[(0, 1)]]) < 1.0e-12
+        and abs(schur_rho[index[(1, 0)]] - 0.212462403803) < 5.0e-10
+        and abs(schur_rho[index[(1, 1)]] - 0.005587932035) < 5.0e-12,
+        detail=(
+            f"rho00={schur_rho[index[(0, 0)]]:.12f}, "
+            f"rho10={schur_rho[index[(1, 0)]]:.12e}, "
+            f"rho01={schur_rho[index[(0, 1)]]:.12e}, "
+            f"rho11={schur_rho[index[(1, 1)]]:.12e}"
+        ),
+    )
+    check(
+        "the finite L_s=2 Schur rho gives a self-contained source-sector Perron "
+        "value P_Schur,L2(6) = 0.429104996947 without importing that number "
+        "from a sibling note",
+        eig_schur > 0.0
+        and psi_schur_swap < 1.0e-10
+        and abs(P_schur - 0.429104996947) < 5.0e-12
+        and 0.0 < P_schur < 1.0,
+        detail=(
+            f"P_Schur,L2={P_schur:.12f}, eig={eig_schur:.12f}, "
+            f"psi swap={psi_schur_swap:.3e}"
+        ),
+    )
+
+    # ----- Check 8: hostile review — no constant-lift.
     a_ratio_10_to_11 = (a_link[index[(1, 1)]]) / (a_link[index[(1, 0)]] ** 2)
     constant_lift_test_passes = abs(a_ratio_10_to_11 - 1.0) > 0.05
     check(
@@ -589,7 +787,7 @@ def main() -> int:
         bucket="SUPPORT",
     )
 
-    # ----- Check 8: hostile review — no tuning to the canonical comparator.
+    # ----- Check 9: hostile review — no tuning to the canonical comparator.
     no_tune = (
         abs(P_loc - CANONICAL_COMPARATOR) > 1.0e-2
         and abs(P_triv - CANONICAL_COMPARATOR) > 1.0e-2
@@ -606,7 +804,7 @@ def main() -> int:
         bucket="SUPPORT",
     )
 
-    # ----- Check 9: hostile review — D_6^loc vs C_(Z_6^env) are not the same operator.
+    # ----- Check 10: hostile review — D_6^loc vs C_(Z_6^env) are not the same operator.
     op_distinct = float(np.max(np.abs(d_loc - proj_trivial))) > 1.0e-3
     check(
         "D_6^loc and the trivial-projection C_(Z_0^env) are operator-distinct; "
@@ -619,20 +817,35 @@ def main() -> int:
         bucket="SUPPORT",
     )
 
+    # ----- Check 11: hostile review — one-plaquette reference uses c_(0,0), not
+    # the character expansion evaluated at the identity.
+    check(
+        "the one-plaquette reference differentiates log c_(0,0)(beta), not a "
+        "truncated sum over d_lambda c_lambda evaluated at the group identity",
+        abs(P_1plaq - a_link[index[(1, 0)]]) < 1.0e-6,
+        detail=(
+            f"P_1plaq={P_1plaq:.12f}, a_(1,0)={a_link[index[(1, 0)]]:.12f}; "
+            "this is the Haar partition coefficient diagnostic only"
+        ),
+        bucket="SUPPORT",
+    )
+
     print()
     print("Summary table (structural reference solves only — not the physical answer):")
     print("  reference solve         P(6)            u_0           alpha_s(v)")
     print(f"  A: rho = 1            {P_loc:.10f}    {P_loc**0.25:.10f}  {1.0/P_loc**0.5:.10f}")
     print(f"  B: rho = delta_(0,0)  {P_triv:.10f}    {P_triv**0.25:.10f}  {1.0/P_triv**0.5:.10f}")
+    print(f"  L2 Schur shortcut     {P_schur:.10f}    {P_schur**0.25:.10f}  {1.0/P_schur**0.5:.10f}")
     print(f"  one-plaquette ref     {P_1plaq:.10f}    {P_1plaq**0.25:.10f}  {1.0/P_1plaq**0.5:.10f}")
     print()
     print("Bounded no-go: the three tested 1-parameter local-input closures do")
     print("not fix a unique rho_(p,q)(6) on the source sector. Three distinct")
-    print("admissible parametric families (decreasing exp(-tau(p+q)),")
+    print("normalized nonnegative parametric families (decreasing exp(-tau(p+q)),")
     print("one-plaquette-environment ansatz")
     print("rho^(beta_env), and tube-power ansatz rho^k) each use only c_lambda(6)")
     print("and SU(3) intertwiners plus a single exogenous parameter (tau, beta_env,")
-    print("k), are each strictly admissible, and yet produce DIFFERENT P(6) values.")
+    print("k), with strict positivity away from degenerate endpoints, and yet")
+    print("produce DIFFERENT P(6) values.")
     print("The canonical comparator value sits inside the admissible-rho span (it")
     print("can be reached, for example, near k = 12 in the tube-power family), but")
     print("no parameter choice is canonically picked out without further input.")

@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/generation_dial_dynamics_stability_classifier_2026_06_05.py
+runner_sha256: 4e5d2bfa507df90dbfe348938c1743a673440ad3b5171e2c1ab16deece4f9717
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.16
+status: ok
+----- stdout -----
+[PASS] D1.1 exact dial endpoint s=0 is r=1/2
+[PASS] D1.2 exact dial endpoint s=1 is r=1
+[PASS] D1.3 Koide observable on the dial is Q(s)=1/3+(2/3)2^(s-1)
+[PASS] D1.4 s=0 gives Q=2/3; s=1 gives Q=1
+[PASS] D2.1 two-sector probabilities sum to one
+       p0=1/(2**s + 1); p1=2**s/(2**s + 1)
+[PASS] D2.2 two-sector entropy derivative has closed form -s*(log 2)^2*2^s/(1+2^s)^2
+       dS2/ds=-2**s*s*log(2)**2/(2**s + 1)**2
+[PASS] D2.3 s=0 is the unique stationary point of two-sector entropy
+[PASS] D2.4 two-sector entropy has negative curvature at s=0
+       S2''(0)=-log(2)**2/4
+[PASS] D2.5 gradient ascent of two-sector entropy stabilizes s=0
+       linear coefficient at s=0 is -log(2)**2/4
+[PASS] D3.1 real-mode probabilities sum to one
+       p=[1/(2**s + 1), 2**s/(2*2**s + 2), 2**s/(2*2**s + 2)]
+[PASS] D3.2 real-mode entropy derivative has closed form log(2)*2^s*log(2/2^s)/(1+2^s)^2
+       dS3/ds=2**s*(1 - s)*log(2)**2/(2**(2*s) + 2**(s + 1) + 1)
+[PASS] D3.3 real-mode entropy stationary point is s=1
+[PASS] D3.4 real-mode entropy has negative curvature at s=1
+       S3''(1)=-2*log(2)**2/9
+[PASS] D3.5 gradient ascent of real-mode entropy moves s=0 toward s=1
+       dS3/ds at s=0 is log(2)**2/4
+[PASS] D4.1 Lueders/record sharpening r->2r^2 becomes s' = 2s
+[PASS] D4.2 sharpening fixes s=0 but makes it repelling
+[PASS] D4.3 reverse branch r->sqrt(r/2) becomes s' = s/2
+[PASS] D4.4 reverse branch fixes s=0 and makes it stable
+[PASS] D4.5 local map classifier returns repelling/stable/neutral by |F'(s*)|
+       {'sharpening': 'repelling', 'reverse': 'stable', 'neutral identity': 'neutral'}
+[PASS] D4.6 reverse map iteration contracts toward s=0
+       3 -> 2.861023e-06 after 20 steps
+[PASS] D4.7 sharpening iteration expands away from s=0 for nonzero perturbations
+       0.05 -> 5.242880e+04 after 20 steps
+[PASS] D5.1 supplied heat-kernel path r(t)=tanh(t)^4 crosses r=1/2 once for t>0
+[PASS] D5.2 heat-kernel crossing derivative is positive, so crossing is transit not attraction
+       dr/dt at crossing = 2**(1/4)*(2 - sqrt(2))
+[PASS] D6.1 continuous flow ds/dtau=-s stabilizes s=0
+[PASS] D6.2 continuous flow ds/dtau=+s repels s=0
+[PASS] D6.3 stable-setting criterion is weaker than force/uniqueness
+       the same s=0 point is stable, repelling, or bypassed depending on the selected dynamics class
+
+SCORECARD PASS=26 FAIL=0
+FINDING: dynamics classifies stable settings on the generation dial;
+         it does not force a unique Koide endpoint without an arrow/partition gate.
+
+----- stderr -----
+

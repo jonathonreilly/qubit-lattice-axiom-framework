@@ -1,0 +1,85 @@
+===== runner cache v1 =====
+runner: scripts/emergent_metric_conformal_class_from_records_runner.py
+runner_sha256: fcbd66dd5793de942b486072d9e39e41b58f8d99e547b57a420fb4c685dda18f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.00
+status: ok
+----- stdout -----
+==============================================================================
+Causal-source packet reachability and status firewall
+==============================================================================
+  [PASS] source note exists  | docs/EMERGENT_METRIC_CONFORMAL_CLASS_FROM_RECORDS_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md
+  [PASS] source note contains status/assumption marker: actual_current_surface_status: conditional-support
+  [PASS] source note contains status/assumption marker: bare_retained_allowed: false
+  [PASS] source note contains status/assumption marker: audit_required_before_effective_retained: true
+  [PASS] source note contains status/assumption marker: distinguishing
+  [PASS] source note contains status/assumption marker: time-oriented Lorentzian manifold
+  [PASS] source note contains status/assumption marker: dimension >= 2
+  [PASS] source note contains status/assumption marker: current theorem remains conditional
+  [PASS] record order / event-index firewall doc exists  | docs/RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md
+  [PASS] record order / event-index firewall runner exists  | scripts/frontier_record_history_time_rate_firewall_2026_06_05.py
+  [PASS] record order / event-index firewall cache exists  | logs/runner-cache/frontier_record_history_time_rate_firewall_2026_06_05.txt
+  [PASS] record order / event-index firewall cache reports successful checks  | logs/runner-cache/frontier_record_history_time_rate_firewall_2026_06_05.txt
+  [PASS] clock-rate no-go authority doc exists  | docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md
+  [PASS] clock-rate no-go authority runner exists  | scripts/frontier_post_record_clock_rate_interface_2026_06_06.py
+  [PASS] clock-rate no-go authority cache exists  | logs/runner-cache/frontier_post_record_clock_rate_interface_2026_06_06.txt
+  [PASS] clock-rate no-go authority cache reports successful checks  | logs/runner-cache/frontier_post_record_clock_rate_interface_2026_06_06.txt
+  [PASS] clock-rate no-go authority ledger status is retained_no_go  | post_record_clock_rate_interface_2026-06-06 -> retained_no_go
+  [PASS] rate-normalization gate authority doc exists  | docs/RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md
+  [PASS] rate-normalization gate authority runner exists  | scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py
+  [PASS] rate-normalization gate authority cache exists  | logs/runner-cache/frontier_record_clock_rate_normalization_gate_2026_06_06.txt
+  [PASS] rate-normalization gate authority cache reports successful checks  | logs/runner-cache/frontier_record_clock_rate_normalization_gate_2026_06_06.txt
+  [PASS] rate-normalization gate authority ledger status is retained  | record_clock_rate_normalization_gate_2026-06-06 -> retained
+  [PASS] nearest-neighbor causal bound doc exists  | docs/LATTICE_NN_LIGHT_CONE_NOTE.md
+  [PASS] nearest-neighbor causal bound runner exists  | scripts/lattice_nn_topological_causal_bound_check.py
+  [PASS] nearest-neighbor causal bound cache exists  | logs/runner-cache/lattice_nn_topological_causal_bound_check.txt
+  [PASS] nearest-neighbor causal bound cache reports successful checks  | logs/runner-cache/lattice_nn_topological_causal_bound_check.txt
+  [PASS] nearest-neighbor causal bound ledger status is retained  | lattice_nn_light_cone_note -> retained
+  [PASS] equal-time tensor locality doc exists  | docs/LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] equal-time tensor locality runner exists  | scripts/audit_companion_lieb_robinson_equal_time_tensor_locality_exact_2026_05_10.py
+  [PASS] equal-time tensor locality cache exists  | logs/runner-cache/audit_companion_lieb_robinson_equal_time_tensor_locality_exact_2026_05_10.txt
+  [PASS] equal-time tensor locality cache reports successful checks  | logs/runner-cache/audit_companion_lieb_robinson_equal_time_tensor_locality_exact_2026_05_10.txt
+  [PASS] equal-time tensor locality ledger status is retained_bounded  | lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10 -> retained_bounded
+  [PASS] reconstructed-H analytic-dispersion LR bridge doc exists  | docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md
+  [PASS] reconstructed-H analytic-dispersion LR bridge runner exists  | scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py
+  [PASS] reconstructed-H analytic-dispersion LR bridge cache exists  | logs/runner-cache/reconstructed_h_quasilocal_microcausality_bridge_runner.txt
+  [PASS] reconstructed-H analytic-dispersion LR bridge cache reports successful checks  | logs/runner-cache/reconstructed_h_quasilocal_microcausality_bridge_runner.txt
+  [PASS] 3+1 Lorentzian/boost-covariance bounded authority doc exists  | docs/LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md
+  [PASS] 3+1 Lorentzian/boost-covariance bounded authority runner exists  | scripts/frontier_lorentz_boost_3plus1d.py
+  [PASS] 3+1 Lorentzian/boost-covariance bounded authority cache exists  | logs/runner-cache/frontier_lorentz_boost_3plus1d.txt
+  [PASS] 3+1 Lorentzian/boost-covariance bounded authority cache reports successful checks  | logs/runner-cache/frontier_lorentz_boost_3plus1d.txt
+  [PASS] 3+1 Lorentzian/boost-covariance bounded authority ledger status is retained_bounded  | lorentz_boost_covariance_3plus1d_theorem_note -> retained_bounded
+  [PASS] Lorentzian signature orientation firewall doc exists  | docs/WICK_ROTATION_COMPACT_SO4_TO_LORENTZIAN_DIRAC_DOUBLING_ORIENTATION_NOTE_2026-06-07.md
+  [PASS] Lorentzian signature orientation firewall runner exists  | scripts/wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation.py
+  [PASS] Lorentzian signature orientation firewall cache exists  | logs/runner-cache/wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation.txt
+  [PASS] Lorentzian signature orientation firewall cache reports successful checks  | logs/runner-cache/wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation.txt
+  [FAIL] Lorentzian signature orientation firewall ledger status is retained_bounded  | wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07 -> unaudited
+  [PASS] current ledger exposes at least one non-retained causal-source input  | record_history_order_time_rate_firewall_2026-06-05:unaudited, reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06:unaudited
+  [PASS] note status is no stronger than current causal-source packet  | conditional-support required until causal inputs are retained
+
+==============================================================================
+Finite conformal-class algebra under the explicit packet
+==============================================================================
+   finite LR-cone diagnostic v_LR = 0.6937; record-prefix order: True; signature sources retained-grade: False
+  [FAIL] explicit causal-source packet supplies the conditional inputs being assembled  | event order + finite cone diagnostic + retained-bounded signature anchors
+
+==============================================================================
+Conformal rigidity boundary: cone fixes class, not scale
+==============================================================================
+   eta-null v remains null for Omega^2 eta: True
+   a c=0.6 cone-speed metric does not share that null cone: True
+   eta and Omega^2 eta differ as metrics: True
+  [PASS] algebraic conformal invariance holds; full HKM/Malament use is assumption-gated  | same null cone only determines conformal class
+
+==============================================================================
+Clock-rate boundary: conformal factor remains the retained no-go
+==============================================================================
+  [PASS] record count/order is invariant under monotone clock reparametrization  | same events/counts; different interval rates
+  [FAIL] emergent metric surface is conditional conformal class plus retained clock-rate scale no-go  | audit may promote only after causal-source inputs are retained or separately admitted
+
+runner_check_breakdown = {A: 49, B: 0, C: 0, D: 0, total_pass: 49}
+TOTAL: PASS=49 FAIL=3
+
+----- stderr -----
+

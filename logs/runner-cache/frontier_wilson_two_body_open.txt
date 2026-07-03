@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_wilson_two_body_open.py
-runner_sha256: 845ab34e4940aeb8d4cb9386046dcc1376d4d4e491700757b76a855cd4157edb
+runner_sha256: 4bdf0c25421509b987b4424ce9dc6befa6281d8a4e50be49578fc60e5b01ae4f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 23.23
+elapsed_sec: 34.82
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -12,18 +12,44 @@ OPEN-BOUNDARY WILSON TWO-BODY TEST
 MASS=0.3, WILSON_R=1.0, DT=0.08, REG=0.001, N_STEPS=20
 Test surface: side in {11,13}, G=5, mu2=0.22, d in {3,4,5,6}
 
-side=11 d=3: a_mut=-0.566674 +/- 0.058502 (SNR=9.69) [ATTRACT] [CLEAN] dsep SH=-0.7543 SELF=+0.0237 FREE=-0.0283 (2.1s)
-side=11 d=4: a_mut=-0.247554 +/- 0.029225 (SNR=8.47) [ATTRACT] [CLEAN] dsep SH=-0.3114 SELF=+0.0316 FREE=-0.0298 (2.0s)
-side=11 d=5: a_mut=-0.113243 +/- 0.012980 (SNR=8.72) [ATTRACT] [CLEAN] dsep SH=-0.1412 SELF=+0.0072 FREE=-0.2111 (2.1s)
-side=11 d=6: a_mut=-0.056988 +/- 0.006457 (SNR=8.83) [ATTRACT] [CLEAN] dsep SH=-0.0448 SELF=+0.0303 FREE=-0.2340 (2.0s)
-side=13 d=3: a_mut=-0.567354 +/- 0.058224 (SNR=9.74) [ATTRACT] [CLEAN] dsep SH=-0.7705 SELF=+0.0105 FREE=-0.0025 (3.7s)
-side=13 d=4: a_mut=-0.246222 +/- 0.029087 (SNR=8.46) [ATTRACT] [CLEAN] dsep SH=-0.3298 SELF=+0.0129 FREE=-0.0026 (3.7s)
-side=13 d=5: a_mut=-0.114091 +/- 0.013976 (SNR=8.16) [ATTRACT] [CLEAN] dsep SH=-0.1340 SELF=+0.0235 FREE=-0.0283 (3.6s)
-side=13 d=6: a_mut=-0.056692 +/- 0.006955 (SNR=8.15) [ATTRACT] [CLEAN] dsep SH=-0.0480 SELF=+0.0303 FREE=-0.0298 (3.7s)
+side=11 d=3: a_mut=-0.566674 +/- 0.058502 (SNR=9.69) [ATTRACT] [CLEAN] dsep SH=-0.7543 SELF=+0.0237 FREE=-0.0283 (0.6s)
+side=11 d=4: a_mut=-0.247554 +/- 0.029225 (SNR=8.47) [ATTRACT] [CLEAN] dsep SH=-0.3114 SELF=+0.0316 FREE=-0.0298 (0.6s)
+side=11 d=5: a_mut=-0.113243 +/- 0.012980 (SNR=8.72) [ATTRACT] [CLEAN] dsep SH=-0.1412 SELF=+0.0072 FREE=-0.2111 (0.6s)
+side=11 d=6: a_mut=-0.056988 +/- 0.006457 (SNR=8.83) [ATTRACT] [CLEAN] dsep SH=-0.0448 SELF=+0.0303 FREE=-0.2340 (0.6s)
+side=13 d=3: a_mut=-0.567354 +/- 0.058224 (SNR=9.74) [ATTRACT] [CLEAN] dsep SH=-0.7705 SELF=+0.0105 FREE=-0.0025 (1.3s)
+side=13 d=4: a_mut=-0.246222 +/- 0.029087 (SNR=8.46) [ATTRACT] [CLEAN] dsep SH=-0.3298 SELF=+0.0129 FREE=-0.0026 (1.3s)
+side=13 d=5: a_mut=-0.114091 +/- 0.013976 (SNR=8.16) [ATTRACT] [CLEAN] dsep SH=-0.1340 SELF=+0.0235 FREE=-0.0283 (1.3s)
+side=13 d=6: a_mut=-0.056692 +/- 0.006955 (SNR=8.15) [ATTRACT] [CLEAN] dsep SH=-0.0480 SELF=+0.0303 FREE=-0.0298 (1.3s)
 
 Summary
 ----------------------------------------------------------------------------------------
 configs=8 attract=8/8 clean=8/8
+
+========================================================================================
+SCREENING-MASS ADDENDUM: alpha(mu^2) sweep
+========================================================================================
+Surface: side=13, G=5, d in {3,4,5,6}; fit log|a_mut| = alpha * log(d) + b
+
+mu2=0.22   [ 5.3s] d=3:-0.5674 d=4:-0.2462 d=5:-0.1141 d=6:-0.0567
+  [PASS] mu2=0.22 alpha < 0 (attract softens with d): got=-3.313467 expected_sign=-1
+  [PASS] mu2=0.22 alpha vs note: got=-3.3135 expected=-3.3150 rel_err=0.05% tol=2.5%
+mu2=0.05   [ 5.3s] d=3:-0.7576 d=4:-0.4037 d=5:-0.2311 d=6:-0.1451
+  [PASS] mu2=0.05 alpha < 0 (attract softens with d): got=-2.386958 expected_sign=-1
+  [PASS] mu2=0.05 alpha vs note: got=-2.3870 expected=-2.3920 rel_err=0.21% tol=2.5%
+mu2=0.01   [ 5.3s] d=3:-0.8359 d=4:-0.4888 d=5:-0.3067 d=6:-0.2133
+  [PASS] mu2=0.01 alpha < 0 (attract softens with d): got=-1.978311 expected_sign=-1
+  [PASS] mu2=0.01 alpha vs note: got=-1.9783 expected=-1.9920 rel_err=0.69% tol=2.5%
+mu2=0.005  [ 5.3s] d=3:-0.8483 d=4:-0.5039 d=5:-0.3208 d=6:-0.2268
+  [PASS] mu2=0.005 alpha < 0 (attract softens with d): got=-1.911749 expected_sign=-1
+  [PASS] mu2=0.005 alpha vs note: got=-1.9117 expected=-1.9270 rel_err=0.79% tol=2.5%
+mu2=0.001  [ 5.3s] d=3:-0.8589 d=4:-0.5172 d=5:-0.3335 d=6:-0.2390
+  [PASS] mu2=0.001 alpha < 0 (attract softens with d): got=-1.854675 expected_sign=-1
+  [PASS] mu2=0.001 alpha vs note: got=-1.8547 expected=-1.8710 rel_err=0.87% tol=2.5%
+  [PASS] alpha softens monotonically as mu^2 decreases: [-3.313, -2.387, -1.978, -1.912, -1.855]
+
+========================================================================================
+WILSON TWO-BODY OPEN: PASS=11  FAIL=0
+========================================================================================
 
 ----- stderr -----
 

@@ -1,0 +1,91 @@
+===== runner cache v1 =====
+runner: scripts/frontier_pre_record_reference_state_2026_06_05.py
+runner_sha256: b1829212807edb6d0258ce7e29da29cc5121625eb39b5ddfa2462300c4fcc8ba
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.74
+status: ok
+----- stdout -----
+PRE-RECORD REFERENCE STATE rho_ref = I/d : FORCED or OPEN PREMISE?
+Repo: cl3-lattice-framework | axioms {Quantum, Lattice, Record}
+
+==========================================================================
+PART A. Uniqueness theorems:  premise X  ==>  rho_ref = I/d  (exhibited)
+==========================================================================
+[PASS] U1a.maximally_mixed_is_unitarily_invariant: max||U(I/2)U^dag - I/2|| = 6.37e-16 over 200 Haar unitaries (=0)
+[PASS] U1b.unitary_invariance_forces_bloch_zero (symbolic, exact): conj by sigma_z and sigma_x => (a,b,c)=(0,0,0)  i.e. rho=I/2  uniquely; solve=[{a: 0, b: 0, c: 0}]
+[PASS] U2.unique_tracial_state_is_I_over_2 (symbolic, exact): omega(AB)=omega(BA) for all A,B + Tr=1  =>  R=I/2 uniquely; solve=[{r11: 1/2, r12i: 0, r12r: 0, r22: 1/2}]
+[PASS] U3a.maximally_mixed_maximizes_entropy: S(I/2)=0.693147=log2; all 4000 interior Bloch states have S<=that
+[PASS] U3b.entropy_strictly_decreasing_off_center (exact): dS/dr|_0 = 0 (stationary), dS/dr|_(1/2) = -0.5493 < 0 => r=0 (I/2) is the UNIQUE max
+[PASS] U4.three_premises_coincide_on_qubit: unitary-invariance, traciality, max-entropy each have the SAME unique solution I/2 => they are one premise, not three
+
+==========================================================================
+PART B. Classification gap: is premise X entailed by 'no record yet'?
+==========================================================================
+[PASS] B1a.pure_state_NOT_unitarily_invariant: max||U|psi><psi|U^dag - |psi><psi||| = 1.404 > 0 (a no-record pure state breaks candidate-1 premise)
+[PASS] B1b.pure_state_NOT_tracial: |omega([X,Z])| = 0.728 != 0 with omega=|psi><psi| (breaks candidate-3 premise)
+[PASS] B1c.pure_state_NOT_max_entropy: S(|psi><psi|)=1.110e-16 < log2=0.6931 (breaks candidate-2 premise)
+[PASS] B2.no_record_state_space_is_the_whole_ball: all 5000 sampled Bloch states are valid references; the centre I/2 is a single point (sampled 0 times) => X is a strict measure-zero selection, not implied by record-absence
+[PASS] B3.axioms_supply_no_reference_symmetry_or_weighting: Record axiom (2026-06-05) supplies no weighting/normalization/probability/symmetry; Quantum gives only M_2(C); Lattice gives only Z^3 adjacency. None entails X (witnessed exactly by B1-B2).
+[PASS] B4.relabeling_maps_record_free_to_distinct_record_free: U|psi> and |psi> are distinct (0.711) yet both record-free => the reference's symmetry is an EXTRA postulate, not record-derived
+
+==========================================================================
+PART C. Two-site caveat (full Pauli-string vanishing, not one-point)
+==========================================================================
+[PASS] C1.bell_zero_one_point_but_not_I4: Bell: max one-point |<P>|=0.0e+00=0, ||rho-I/4||=0.866>0, <ZZ>=1.000 => one-point vanishing is NOT enough; need all strings
+[PASS] C2.I4_all_nonidentity_strings_vanish: I/4: max non-identity Pauli-string expectation = 0.0e+00 = 0
+
+==========================================================================
+VERDICT
+==========================================================================
+
+Classification of  rho_ref = I/d  under {Quantum, Lattice, Record}:  OPEN PREMISE.
+
+  * PART A proves the three candidate IMPLICATIONS are sound and, on the
+    qubit, IDENTICAL: each of
+        (1) invariance under all unitaries  [no preferred basis],
+        (2) maximum von Neumann entropy     [maximal ignorance],
+        (3) traciality omega(AB)=omega(BA)  [unique trace],
+    has the SAME unique solution rho = I/2.  So they are ONE premise X, not
+    three independent routes.  (Traciality = invariance under inner unitaries;
+    for M_2(C) inner = all, so candidates 1 and 3 are literally the same; and
+    that fixed point is also the entropy maximizer.)
+
+  * PART B shows {Quantum, Lattice, Record} do NOT entail X:
+      - A pure state |psi><psi| has registered NO outcome, so it is a fully
+        valid "no record yet" reference, yet it violates all of (1),(2),(3).
+        Hence "no record" does NOT imply X.  (B1)
+      - The no-record-yet state space is the WHOLE Bloch ball; X selects the
+        single centre point -- a strict, measure-zero extra constraint.  (B2)
+      - The Record axiom supplies no weighting / probability / symmetry of any
+        reference; Quantum supplies only M_2(C); Lattice only Z^3.  (B3)
+      - Outcome-relabeling carries one record-free state to a DISTINCT
+        record-free state, so symmetry of the reference is an added postulate
+        about the STATE, not a property of record-absence.  (B4)
+
+  MINIMAL EXTRA PREMISE (named precisely):
+      (X)  "Maximal-symmetry reference":  the pre-record reference state is
+           invariant under the full unitary group of the per-site algebra
+           (equivalently: it is the tracial state; equivalently: it is the
+           maximum-entropy / maximal-ignorance state).
+      This is exactly the "no-extra-structure principle" of Step 5 of
+      PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20, here shown
+      to be (a) a genuine logical extra, and (b) the SAME premise under all
+      three candidate names.  It is a Jaynes-type / symmetry meta-principle
+      about the axiom-to-reference map, not a theorem of the three axioms.
+
+  CONSEQUENCE FOR THE BORN ROUTE:
+      The Gleason/Busch route gives the Born FORM p(E)=Tr(rho E) and, given a
+      reference, its VALUE.  This runner does NOT discharge the reference
+      residual: rho_ref = I/d remains conditional on premise X.  The Born
+      form+value are unconditional GIVEN rho_ref; the rho_ref = I/d input is
+      an open input (one symmetry/max-ignorance premise).
+
+
+==========================================================================
+RESULT: 14/14 checks PASS
+CLASSIFICATION: rho_ref = I/d remains an open maximal-symmetry premise X
+==========================================================================
+
+----- stderr -----
+

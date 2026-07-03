@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/generation_weight_dial_structure_2026_06_05.py
+runner_sha256: 966cc28a84ad7142e2c831df7b7c621d3f4350fe9a03f87b3322bbe1cbb01196
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+[PASS] S1.1 C is the order-3 cyclic shift (C^3 = I, C != I)
+       C generates the only relabeling symmetry C_3 of the 3 hw=1 generation patterns (Lattice)
+[PASS] S1.2 C^2 = C^T = C^{-1} (the C_3 group is realized faithfully)
+[PASS] S1.3 Schur: commutant of <C> is exactly the circulants (3 free complex params)
+       every C-equivariant M is circulant, free params ['m6', 'm7', 'm8'] (its first column)
+[PASS] S1.4 Y = a I + b C + conj(b) C^2 is Hermitian (a real, b complex)
+       Hermiticity forces the C^2 coefficient = conj(C-coefficient); diagonal a is real by the adopted K/CPT condition
+[PASS] S1.5 Y is genuinely C_3-equivariant ([Y, C] = 0)
+[PASS] S2.1 Fourier vectors (1,w^j,w^{2j}) diagonalize Y; lambda_j = a + b w^{-j} + conj(b) w^{-2j}
+       C f_j = w^{-j} f_j; lambda_0 (singlet) = a + 2*b_re; lambda_1, lambda_2 are the faithful doublet
+[PASS] S2.2 singlet eigenvalue lambda_0 = a + 2 Re b (the trivial character reads the row-sum)
+       lambda_0 = a + b + conj(b) = a + 2 Re b; the SINGLET POWER (group-algebra/isotype coordinate) is a^2 (below)
+[PASS] S2.2b HS-projection confirms group-algebra coordinates: (I,C,C^2) -> (a, b, conj b)
+       coord(I)=a, coord(C)=I*b_im + b_re, coord(C^2)=-I*b_im + b_re
+[PASS] S2.3 singlet power = a^2
+[PASS] S2.4 doublet power = |b|^2 + |conj b|^2 = 2|b|^2
+       doublet_power = 2*b_im**2 + 2*b_re**2 = 2|b|^2 (the two faithful characters j=1,2 split the C,C^2 weight)
+[PASS] S2.5a ||Y||_HS^2 = Tr(Y^H Y) = sum|lambda_j|^2 (Y normal: Parseval holds)
+       Tr(Y^H Y) = 3*a**2 + 6*b_im**2 + 6*b_re**2 = sum|lambda_j|^2
+[PASS] S2.5b ||Y||_HS^2 = 3*singlet_power + 3*doublet_power = 3a^2 + 6|b|^2
+       3*a**2 + 6*b_im**2 + 6*b_re**2 = 3*a^2 + 3*(2|b|^2); powers consistent with the full spectrum
+[PASS] S3.0 sector dimensions are (1, 2) [imported from the sibling readout/metric derivation]
+       singlet real-dim 1, doublet real-dim 2; cited, not re-derived here
+[PASS] S3.1 balance equation: a^2 * 2^s = 2|b|^2  (dim^s weighting of block powers)
+       2**s*a**2 = 2*b_im**2 + 2*b_re**2
+[PASS] S3.2 solving the balance for r = |b|^2/a^2 gives a unique positive root
+       a^2 * 2^s = 2 r a^2  =>  2^s = 2 r  =>  r(s) = 2**(s - 1)
+[PASS] S3.3 closed form r(s) = 2^(s-1)  (EXACT match to the solved root)
+       r(s) = 2**(s - 1) = 2^(s-1)
+[PASS] S3.4 independent re-derivation 2^s = 2r => r = 2^s/2 = 2^(s-1)
+[PASS] S4.1 endpoint s=0 (equal power PER BLOCK = block-count / det_C): r(0) = 1/2
+       r(0) = 1/2; at s=0 the dim^s weights are (1,1), i.e. count each block once -> a^2 = 2|b|^2
+[PASS] S4.2 endpoint s=1 (equal power PER REAL MODE = Born / dimension / det_R): r(1) = 1
+       r(1) = 1; at s=1 the weights are (1,2) = the real dimensions -> a^2*2 = 2|b|^2 -> |b|^2 = a^2
+[PASS] S4.3 s=0 balance is a^2 - 2|b|^2 (block-count: weights (1,1))
+[PASS] S4.4 s=1 balance is 2a^2 - 2|b|^2 (Born/dimension: weights (1,2))
+[PASS] S4.5 block-count endpoint => kappa = a^2/|b|^2 = 2 (the det_C value)
+[PASS] S4.6 Born/dimension endpoint => kappa = a^2/|b|^2 = 1 (the det_R value)
+[PASS] S5.1 dr/ds = 2^(s-1) ln 2 > 0 for all real s (strictly increasing)
+       dr/ds = 2**(s - 1)*log(2); strictly positive everywhere -> r(s) is a monotone dial
+[PASS] S5.2 r is strictly monotone => the two endpoints r(0)=1/2 < r(1)=1 are distinct and ordered
+[PASS] S5.3 over s in [0,1], r sweeps exactly [1/2, 1] (the two canonical measures bound the dial)
+       block-count (r=1/2) and Born (r=1) are the two endpoints; the interior s in (0,1) is a continuum of intermediate weightings
+[PASS] S5.4 log2 r(s) = s - 1 (the dial is exactly log-linear in the weight exponent s)
+[PASS] S5.5 Record readout is block-additive: total = singlet_power + doublet_power = a^2 + 2|b|^2
+       finite additivity allows the singlet and doublet powers to be summed; endpoint normalizations are separate conventions
+
+========================================================================
+SCORECARD: 28 PASS / 0 FAIL
+========================================================================
+THEOREM GENERATION_WEIGHT_DIAL_STRUCTURE verified:
+  r(s) = 2^(s-1);  r(0)=1/2 (block-count/det_C);  r(1)=1 (Born/dimension/det_R);
+  strictly increasing; endpoints = the two canonical measures.
+  SCOPE: derives the DIAL STRUCTURE only; the per-sector position s (value of r)
+  is a SEPARATE, genuinely open selection (not fixed here).
+
+----- stderr -----
+

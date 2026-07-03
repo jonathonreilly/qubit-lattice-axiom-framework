@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_link_index_routing_matter_bilinear_unitarization_2026_06_08.py
+runner_sha256: e057995d16e2f10f558310c43da306294a4548767588306f230b81fd096a4b01
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  Bilinear law: M(x,y) -> g_x M g_y^dag (the link law, natively)
+==============================================================================
+  [PASS] M(x,y) transforms as a LINK: M -> g_x M g_y^dag (100 random configs)  (max dev 3.8e-15)
+==============================================================================
+Part 2  Polar unitarization: U = M(M^dag M)^{-1/2} is unitary and obeys the law
+==============================================================================
+  [PASS] U is exactly unitary (U^dag U = I)  (max dev 5.9e-12)
+  [PASS] U obeys the link law: U(g_x M g_y^dag) = g_x U(M) g_y^dag (100 configs)  (max dev 3.3e-12)
+==============================================================================
+Part 3  SU(3) reduction: det(S)=1; the law holds up to the Z_3 center
+==============================================================================
+  [PASS] det(S) = 1 exactly (SU(3)-valued link)  (max |det-1| 8.4e-16)
+  [PASS] S obeys the link law up to the Z_3 center (the canonical det-branch ambiguity)  (max center-dev 5.3e-13)
+  [PASS] UN-min'd law deviation also ~0 for SU(3) endpoints (center-min masks nothing; det(M) is SU(3)-invariant so the branch never moves)  (max naive dev 5.3e-13)
+==============================================================================
+Part 4  Rank boundary: single occupied mode -> rank-1 M -> unitarization FAILS
+==============================================================================
+  [PASS] single-mode bilinear has rank 1 (< 3): M^dag M singular -> no polar unitary  (rank = 1; construction needs >= 3 occupied matter modes)
+  [PASS] with >= 3 occupied modes the bilinear is generically full-rank (50/50 configs)
+==============================================================================
+Part 5  Teeth: QR/Gram-Schmidt unitarization is NOT covariant (polar is special)
+==============================================================================
+  [PASS] CONTROL: QR-based unitarization VIOLATES the link law (basis-dependent)  (max law-violation 1.35 (polar's covariance is not generic))
+==============================================================================
+Part 6  Composite plaquette Tr(U_xy U_yz U_zw U_wx) is LOCALLY gauge-invariant
+==============================================================================
+  [PASS] composite plaquette trace is invariant under INDEPENDENT local rotations g_x..g_w  (|dTr| = 1.3e-14)
+  [PASS] an OPEN composite link is NOT locally invariant (gauge content = closed loops)
+==============================================================================
+TOTAL: PASS=11 FAIL=0
+==============================================================================
+SCOPE: GIVEN the supplied per-cube C^3 color carrier (the MR_color residual -- the
+  same conditionality as the sister carrier notes), the cross-site matter bilinear
+  natively carries the link law M -> g_x M g_y^dag; its polar unitarization is an
+  exactly-unitary link with the same law (SU(3) up to the Z_3 center), and composite
+  Wilson loops are exactly locally gauge-invariant.  This routes the color index onto
+  links (the residual map's named residual) with NO edge DOF / quantum-link import --
+  the qubit-link u(2) boundary is respected, the routing lives on matter bilinears.
+  BOUNDARIES: full-rank bilinear required (single-mode FAILS, Part 4); Z_3
+  center ambiguity; KINEMATIC routing only -- supplies NO dynamics (the ST1/ST2
+  same-wall continuous-time gauge-link dynamics residual is UNTOUCHED), NO selection
+  (does not claim the physical link IS this composite -- the gauging-selection gate
+  stays open), does NOT discharge ADM-1.  No new axiom; no ranking of gates.
+
+----- stderr -----
+

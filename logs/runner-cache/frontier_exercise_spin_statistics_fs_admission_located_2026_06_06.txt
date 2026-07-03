@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.py
+runner_sha256: 704ae9e5248b15949a1c53a8ff66c8c3df91069cd664a678d4cef1056bdf07a6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+========================================================================================
+/exercise: spin-statistics/FS -- cross-site sign location and route boundary
+========================================================================================
+
+[BLOCK 1] Cl(3) does NOT supply the CAR grading (verified)
+  [PASS] pseudoscalar omega = s1 s2 s3 = i*I
+  [PASS] omega^2 = -I (NOT a Z2 involution)
+  [PASS] only G=0 anticommutes all three Paulis (nullspace dim 0)  --  the maximal-anticommuting / d_s=3 fact => Cl(3) vector grade is not an inner Z2 grading
+  [PASS] => Cl(3) supplies no inner Z2 CAR grading; any Fock parity is extra basis data
+
+[BLOCK 2] Topology gives only the dichotomy, never the sign
+  [PASS] exchange class is order-2 (anyons excluded) but Hom(Z2,U(1)) = {+1,-1} admits BOTH
+  [PASS] configuration-space/topology route is guarded as dichotomy-only, not sign-selection  --  source boundary must not claim topology forces -1
+  [PASS] 3x3x2 Z3 witness remains explicitly flagged for re-verification  --  fan-out witness is not used as retained theorem output
+
+[BLOCK 3] PRECISE LOCATION: retained central grading, Record silent on sign
+  [PASS] Z2 fermion-parity grading F=(-1)^Q is recorded as central-sector datum  --  retained central datum is distinguished from exchange sign
+  [PASS] exchange sign is guarded as within-sector data; Record supplies no within-sector data
+  [PASS] source states this is a location theorem/boundary, not global route closure  --  prevents runner from hard-coding global FS closure
+
+[BLOCK 4] Literature comparator + route-boundary guards
+  [PASS] literature is labeled comparison, not independently rederived theorem step  --  avoids hard-coded literature closure
+  [PASS] multi-loop graded-net route remains live/open in the source boundary  --  the unrefuted opening must not be converted into a closed no-go
+  [PASS] continuum migration remains separate frontier rather than current-surface closure  --  emergent Lorentz route is not consumed as a static-baseline proof
+  [PASS] no new axiom and no audit verdict are asserted
+
+[BLOCK 5] Source-scope guards: route map is non-closing
+  [PASS] source note limits load-bearing scope to checked Cl(3), topology, and Record-boundary facts
+  [PASS] source note says route portfolio is not a closure theorem
+  [PASS] source note forbids CAR/spin-statistics closure and new axioms
+
+========================================================================================
+SCORECARD:  PASS = 17   FAIL = 0
+========================================================================================
+
+----- stderr -----
+

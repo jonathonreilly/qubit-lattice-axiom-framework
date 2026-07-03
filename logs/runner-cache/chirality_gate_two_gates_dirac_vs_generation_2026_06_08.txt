@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/chirality_gate_two_gates_dirac_vs_generation_2026_06_08.py
+runner_sha256: c8e69a6b9832d6eabdb3fff817d3f21f9152bf09c7aca6cdebc477f4f17b5cc6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+== Koide/generation grading Gamma_chi ==
+  PASS  Gamma_chi eigenvalues are {-1,-1,+1} (signature (1,2))
+  PASS  Gamma_chi is an involution (a grading): Gamma_chi^2 = I
+  PASS  Gamma_chi is C3-equivariant (circulant): [Gamma_chi, R] = 0
+== Dirac/spinor chirality gamma_5 = I_3 (x) sigma_3 ==
+  PASS  gamma_5 is an involution (a grading): gamma_5^2 = I
+  PASS  gamma_5 anticommutes with the Dirac mass beta (REAL chiral mass, L<->R)
+== The separation: gamma_5 is GENERATION-BLIND ==
+  PASS  gamma_5 = I_3 (x) sigma_3: trivial (identity) on the generation factor
+  PASS  gamma_5 commutes with every generation op G (x) I_2  (R, Gamma_chi, random)
+  PASS  the Dirac mass beta ALSO commutes with the generation grading
+== Koide/generation chirality is NOT supplied: it needs a C3-BREAKING M_gen ==
+  PASS  finite algebra: no nonzero symmetric M_gen both commutes with C3 and anticommutes Gamma_chi
+  PASS  a C3-BREAKING M_gen exists that anticommutes Gamma_chi (null space nonempty)
+  PASS  ...and every such M_gen genuinely breaks C3: [M_break, R] != 0
+== Conclusion: independent chirality requirements ==
+  PASS  Dirac/spinor chirality is independent of Koide/generation chirality
+== Scope guard: conditional tensor-product separation only ==
+  PASS  source note states conditional tensor-product separation only
+  PASS  source note does not derive gamma_5 from Cl(3,1)
+  PASS  source note does not prove spin-statistics use
+  PASS  source note does not claim retained Cl(3,1) supplies this theorem
+
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

@@ -1,14 +1,35 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_boundary_bc_transfer_uniqueness.py
-runner_sha256: f0b5a83183264529a34c2935a585b2c620eb0ec8ef8455da6c70ba27cb190370
+runner_sha256: d2d0d484ca8e940a35cf073b5d80c9c4aba87161de35f6f70d3cf0a34c666028
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.01
+elapsed_sec: 1.14
 status: ok
 ----- stdout -----
 ==============================================================================
 BOUNDARY BC-TRANSFER FINITE-GRID DIAGNOSTIC
 ==============================================================================
+
+==============================================================================
+SECTION 0: Source-boundary checks
+==============================================================================
+
+  [PASS (D)] section0_2026_06_07_boundary_present
+         source note carries the implementation-input retargeting section
+  [PASS (D)] section0_source_status_is_conditional_support
+         source type/status matches the finite-grid implementation boundary
+  [PASS (D)] section0_imports_are_implementation_inputs
+         canonical plaquette and Ward target are not proof authorities for this row
+  [PASS (D)] section0_continuum_claims_excluded
+         finite grid diagnostic only
+  [PASS (D)] section0_declared_inputs_enumerated
+         plaquette, Ward target, RGE, thresholds, and EW initial conditions are enumerated
+  [PASS (D)] section0_inputs_admitted_not_retained
+         I1-I5 are admitted (not retained-grade, not self-contained-derived); result is conditional finite-grid diagnostic
+  [PASS (D)] section0_runner_count_updated
+         note scorecard matches source-boundary runner
+  [PASS (D)] section0_no_retained_input_overclaim
+         old retained-input wording removed
 
 ==============================================================================
 SECTION 1: Imported numeric inputs
@@ -221,9 +242,9 @@ SECTION 8: SCORECARD
 
   Elapsed: 0.5s
 
-  Counts: 23 PASS, 0 FAIL
+  Counts: 31 PASS, 0 FAIL
 
-  All 23 checks passed.
+  All 31 checks passed.
 
 ----- stderr -----
 

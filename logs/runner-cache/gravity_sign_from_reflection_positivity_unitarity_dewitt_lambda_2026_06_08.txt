@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/gravity_sign_from_reflection_positivity_unitarity_dewitt_lambda_2026_06_08.py
+runner_sha256: 0ac953258252c6e853444e01e378b0f749427cbafe2622aed1ae70ce495be3e9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.12
+status: ok
+----- stdout -----
+GRAVITY SIGN: bounded reflection-positive unitarity gate
+==============================================================================
+[PASS] H1 RP Gram is positive semidefinite; indefinite Gram has a ghost direction
+       min RP eigenvalue=2.430e-02; indefinite eigenvalues=[-1.0, 1.0, 1.0]
+[PASS] H2 DeWitt lambda-one has TT/trace split; lambda=0 and lambda=1/d do not
+       TT=+1; trace(lambda=1)=-2; trace(lambda=0)=+1; trace(lambda=1/d)=+0e+00
+[PASS] H3 source note keeps RP/unitarity route conditional
+       guardrails present for RP-alone boundary, supermetric blocker, no-go scope, and primitive scope
+
+TOTAL: PASS=3 FAIL=0
+VERDICT: PASS for the bounded RP/unitarity gate only. RP forbids physical
+negative-norm ghosts after reconstruction, and the lambda-one DeWitt control
+has the TT/trace sign split. G>0 is not derived from RP alone; the open work is
+to derive physical RP TT modes, conformal gauge removal, and source/action
+orientation in the framework.
+
+----- stderr -----
+

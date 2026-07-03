@@ -1,71 +1,98 @@
-# Flavor — the measure/positivity lever is AGNOSTIC; both symmetry-side and measure-side selectors for r=1/2 are exhausted
+# Flavor Measure/Positivity Agnostic Note - three finite checks
 
-> **⚠️ PACKAGING / SUPERSESSION (2026-06-02):** its "both levers exhausted" / finite-enumeration framing is **superseded** by FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31 (the values are lanes, not a selection to exhaust) and the chain-of-custody `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02`. The current consolidated status: r=1/2 is a distinguished *stationary point* that reduces to the single Tier-A admitted input `AC_φλ` (K-reality + det_C) — not a closed/exhausted route. This note is retained for provenance; **cite the chain-of-custody note for current status.**
+> **2026-06-06 scope repair:** the earlier exhaustion and campaign-capstone
+> language was too broad. This note is now scoped to the three algebraic checks
+> actually run by `scripts/flavor_measure_positivity_agnostic_2026_05_31.py`:
+> OS Gram positivity is blind to the 1-complex versus 2-real count in the tested
+> free covariance, the qubit Bargmann complex structure is central and not the
+> generation-doublet `J_cs`, and Hermitian readout gives `Q=(1+2r)/3` for the
+> displayed `r` values. It does **not** claim that all symmetry-side or
+> measure-side selectors have been ruled out, and it does **not** close
+> `r=1/2`.
+>
+> **Packaging / supersession (2026-06-02):** the old finite-enumeration framing
+> is superseded by `FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31`
+> and the chain-of-custody
+> `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02`. Cite the
+> chain-of-custody note for current flavor-lane status.
 
-**Date:** 2026-05-31
+**Date:** 2026-05-31 (scope repair: 2026-06-06)
 **Claim type:** bounded_theorem
-**Claim boundary:** bounded negative (last non-symmetry lever) + one partial win (readout class) + campaign-capstone characterization.
-**Runner:** `scripts/flavor_measure_positivity_agnostic_2026_05_31.py` (SCORECARD PASS=3).
-**Source:** 6-agent build `wf_9c630d58` (map → OS-RP / Bargmann / unitarity / adversary → adjudication).
+**Claim boundary:** bounded support for three finite algebraic checks:
+OS-Gram positivity is blind to 1-complex versus 2-real counting, the qubit
+Bargmann/Kahler complex structure is generation-blind relative to `J_cs`, and
+the signed/Hermitian readout identity `Q=(1+2r)/3` holds for every tested `r`.
+This note does **not** exhaust the flavor lane, does **not** derive the
+det_C/det_R selection bit, and does **not** close `r=1/2`.
+**Runner:** `scripts/flavor_measure_positivity_agnostic_2026_05_31.py`
+(`SCORECARD PASS=3`, cache:
+`logs/runner-cache/flavor_measure_positivity_agnostic_2026_05_31.txt`).
+**Source:** 6-agent build `wf_9c630d58`, repaired to match the runner-backed
+scope.
 
 ## Question
-With `J_cs` forced (Schur) but un-oriented by any symmetry, does a **positivity/holomorphicity principle**
-— Osterwalder-Schrader reflection positivity, the qubit's native coherent-state/Bargmann measure, or
-unitarity — *select* the Kähler (det_C) measure of `J_cs`, fixing `r=1/2` (Q=2/3) import-free?
+With `J_cs` forced by the generation algebra, do the displayed
+positivity/holomorphicity checks select the Kahler `det_C` count of `J_cs` and
+fix `r=1/2`?
 
-## Verdict — positivity is AGNOSTIC
-1. **OS reflection positivity does not see the counting.** The OS Gram `⟨θ(f_i) f_j⟩ = G(τ_i+τ_j)` is
-   positive-semidefinite **identically** for 1-complex (det_C) and 2-real (det_R) field content (both
-   min-eig ≈ 0, verified). RP holds equally for either — it is blind to complex-vs-real. This matches the
-   framework's *own* `FREE_FIELD_OS` note: the statistics-blind covariance `S=M⁻¹` underlies **both**
-   fermionic and bosonic branches, with statistics selection an explicit **open gap (G3)**. The det_C/det_R
-   fork is the same blindness one level down.
-2. **The Bargmann descent is generation-blind.** The qubit's Kähler complex structure is `J_qubit=i·I₃` —
-   the **central** Cl(3) pseudoscalar (eigenvalues all `+i`), distinct from the generation-doublet
-   `J_cs=(C−C²)/√3` (eigenvalues `{0,+i,−i}`, traceless, doublet-only). The qubit coherent-state measure
-   descends via the *wrong* (central) `i`, not via `J_cs` — the same generation-blindness the symmetry-side
-   routes hit. It does not select det_C on the generation doublet.
-3. **The complex GNS space is an artifact.** Reflection positivity reconstructs a complex Hilbert space for
-   **any** field content — even the manifestly real det_R theory has a complex `H_phys`. It does not collapse
-   two reals into one complex.
+## Scoped Verdict
+The displayed checks are agnostic to the `det_C` versus `det_R` count. This is
+a narrow negative/support result, not a proof that every possible
+positivity-side or symmetry-side selector has been ruled out.
 
-## The partial win (real, native)
-Positivity does secure the **readout class**: RP ⟹ positive transfer matrix ⟹ `H` Hermitian ⟹ the
-signed/Brannen readout on which `Q=(1+2r)/3` is exact. This is *necessary* for Q=2/3 — but it holds for
-**every** `r` (verified r=0.3→0.53, 0.5→0.67, 1→1, 2→1.67), so it fixes the readout class, **not** the value.
+1. **OS reflection positivity is blind to the tested count.** For the displayed
+   free covariance, the OS Gram
+   `<theta(f_i) f_j> = G(tau_i + tau_j)` is positive semidefinite for both the
+   one-complex-field representation and the two-real-field representation.
+   The runner checks both Gram matrices and finds nonnegative minimum
+   eigenvalue up to numerical tolerance.
 
-## Campaign capstone — both levers exhausted
-The value `r=1/2` is decided by one bit: the **complex-vs-real counting of the generation doublet**
-(det_C = one complex amplitude → r=1/2 → Q=2/3, observed; det_R = two real → r=1 → Q=1). That bit is:
-- **not selectable by symmetry** — every native operator that could orient `J_cs` (qubit central `i`, gauge
-  U(1)s, lattice point group, projective/magnetic reps via `H²=0`, full O_h, algebra automorphisms,
-  idempotent U(1)) is generation-blind, inert, or the blocked chiral grading; a doublet-rephasing U(1) is
-  forbidden by `C³=I`;
-- **not selectable by positivity** — OS RP, Bargmann, and unitarity are all agnostic to the counting (this note).
+2. **The Bargmann descent uses the central qubit complex structure, not
+   `J_cs`.** The qubit coherent-state complex structure is represented by the
+   central `i I_3`. The generation-doublet structure
+   `J_cs=(C-C^2)/sqrt(3)` is traceless with eigenvalues `{0,+i,-i}` on the
+   generation space. The tested Bargmann route therefore does not select the
+   `det_C` count on the generation doublet.
 
-So `r=1/2` is a **free native reality-structure bit** — equivalently the complex-vs-real / statistics /
-Dirac-vs-Majorana / charged-vs-neutral character of the doublet field, which lives on the generation-blind
-charge factor. It is the *same* unforced datum as the framework's own statistics-selection open gap (G3 in
-`FREE_FIELD_OS`): fermionic-vs-bosonic, det_C-vs-det_R, complex-vs-real — one reality/statistics bit that
-neither the symmetry structure nor the positivity structure fixes.
+3. **Hermitian readout fixes the readout class, not the value of `r`.** The
+   runner verifies the signed/Hermitian readout identity `Q=(1+2r)/3` for the
+   displayed sample values `r in {0.3, 0.5, 1.0, 2.0}`. This supports the
+   readout class used in the flavor lane, but it holds for every displayed `r`
+   and therefore does not select `r=1/2`.
 
-## What is established (the honest standing)
-- `J_cs` is **forced** (Schur, unique up to sign) — the doublet's complex structure exists natively.
-- The **signed/Hermitian (Brannen) readout** is selected by reflection positivity (native, derived).
-- `Q = 1/3 + (2/3)r` is an exact identity on that readout; the observed `Q=2/3 ⟺ r=1/2` is the det_C/block
-  count, the **coherent-state-natural** reading.
-- The *one* remaining input is the reality/statistics bit selecting det_C over det_R — **not** an arbitrary
-  knob, but a single, sharply-located, physically-meaningful character (complex/Dirac vs real/Majorana), and
-  the *same* bit as the framework's documented statistics-selection gap.
+## Superseded Campaign Framing
+The prior campaign-capstone wording said both symmetry-side and
+measure/positivity-side selectors were exhausted. That framing is superseded
+and is not part of this note's active claim. The active claim is narrower: the
+three positivity/measure checks in this packet do not select `det_C` over
+`det_R`.
 
-## Next paths (live, not closed)
-The two surviving non-exhausted directions, both *cross-factor* (connecting the generation algebra to the
-charge/statistics factors the framework keeps showing are generation-blind): (i) **statistics selection (G3)**
-— whatever derives fermionic-vs-bosonic on the substrate is the same bit as det_C-vs-det_R, so closing G3
-would close `r=1/2`; (ii) a derived **cross-factor coupling** giving each sector its place on the
-`r`-ladder (leptons 0.50 < down 0.60 < up 0.77), which has no *internal* flavor parameter.
+The broader statement that the value `r=1/2` is a native reality-structure bit
+remains a live hypothesis only. It requires the current chain-of-custody route
+and separate statistics/readout or cross-factor support before it can be used
+as authority.
 
-## Stale-citation flags
-- Anchors: OS reflection positivity (`axiom_first_reflection_positivity`, audited_conditional;
-  `osterwalder_schrader_from_framework`), `free_field_os_wightman_reconstruction` (statistics-selection gap G3),
-  `koide_real_rep_block_count_permitted_not_forced` (unaudited), `koide_z3_equivariant_anticommuting_no_go` (retained_bounded).
+## What Is Established
+- OS-Gram positivity holds equally for the one-complex and two-real finite
+  covariance blocks tested here.
+- The qubit Bargmann/Kahler complex structure used here is central and
+  generation-blind, so it does not select the `J_cs` doublet counting.
+- The signed/Hermitian readout identity `Q = 1/3 + (2/3)r` checks for the
+  tested `r` values, so this packet supports a readout-class fact, not a
+  value-selection theorem.
+- The selection of `det_C` over `det_R`, and any physical conclusion
+  `Q=2/3 <=> r=1/2`, remain outside this note's active scope.
+
+## Next Paths
+The surviving directions are external to this packet: the current
+chain-of-custody route, a statistics/readout bridge, or a derived cross-factor
+coupling. This note supplies only the three finite agnostic/readout checks
+above.
+
+## Stale-Citation Flags
+- `axiom_first_reflection_positivity` and
+  `osterwalder_schrader_from_framework` remain separate audit surfaces.
+- `free_field_os_wightman_reconstruction` records the statistics-selection gap.
+- `koide_real_rep_block_count_permitted_not_forced` and
+  `koide_z3_equivariant_anticommuting_no_go` are background context, not
+  authorities that make this row exhaustive.

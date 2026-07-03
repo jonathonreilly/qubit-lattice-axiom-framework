@@ -5,7 +5,13 @@
 post-bridge L1/L3/L4 + conditional-L2 scope per audit verdict
 boundary instruction); 2026-06-04 (parent-source repair of the
 Lieb-Robinson interaction norm and removal of the false equation (8)
-imaginary-time commutator identity).
+imaginary-time commutator identity);
+2026-06-06 (Step-3 runner upgrade: the L1/L3/L4 Lieb-Robinson exhibits
+are now computed on a **genuine interacting `Cl(3) = M_2(C)` spin
+chain** via exact `e^{iHt} A e^{-iHt}` operator-norm commutators —
+replacing the previous free-fermion single-particle propagator proxy —
+plus an explicit corrected-Poisson-tail exhibit (E8) and a
+false-inequality control (E9)).
 **Claim type:** bounded_theorem
 **Claim scope (post-2026-05-18 narrowing):** the load-bearing claims of
 this note are **L1 (Lieb-Robinson commutator bound)**, **L3 (lattice
@@ -217,9 +223,13 @@ lattice analogue of microcausality.
 **(L4) Cl(3)-specific constant.** The factor `J_*` in (1) is finite
 on the canonical finite-range surface: each local term is a finite
 Hermitian Cl(3) tensor with bounded operator norm at canonical
-normalization, and each site is touched by finitely many nonzero
-terms. If at most `N_touch` local terms touch any site, then
-`J_* ≤ N_touch J`.
+normalization. For a coefficient expansion over the 8 canonical monomials
+`gamma^alpha`, no unit-constant Euclidean coefficient bound is asserted;
+the valid bound is the triangle/Cauchy estimate
+`||sum_alpha c_alpha gamma^alpha|| <= sum_alpha |c_alpha| <= sqrt(8)||c||_2`
+because each monomial has operator norm 1. Since each site is touched by
+finitely many nonzero terms, if at most `N_touch` local terms touch any site,
+then `J_* <= N_touch J`.
 
 ## Proof
 
@@ -268,28 +278,61 @@ bounded by
 while `N_paths(x, y, n) = 0` for `n < d(x,y) / R_int` (no path of
 fewer than `d(x,y) / R_int` interaction "hops" can connect them).
 
-### Step 3 — Geometric series + exponential bound
+### Step 3 — Weighted-path exponential bound
 
-Combining (4) and (5):
+Combining (4) and (5), the Duhamel expansion is a finite path
+series. Instead of estimating the truncated Poisson tail directly,
+insert an exponential path weight before summing. Let `μ > 0`. Every
+contributing path from `x` to `y` with `n` interaction hops satisfies
+`d(x,y) <= n R_int`, hence
 
 ```text
-    ‖ [A(t), B] ‖   ≤   2 ‖A‖ ‖B‖ · Σ_{n ≥ d(x,y)/R_int}  (J_* · D_int · |t| · R_int)^n / n!     (6)
-                    ≤   2 ‖A‖ ‖B‖ · exp( J_* D_int R_int |t| )
-                         · ( e J_* D_int R_int |t| / d(x,y) )^{d(x,y)/R_int}
+    1 <= exp(-μ d(x,y)) · exp(μ n R_int).                         (6a)
 ```
 
-By the elementary inequality `(a/n)^n ≤ exp(-n) · exp(n log(a/n))`,
-expanding around `n = d(x,y) / R_int` gives the Lieb–Robinson bound
+The commutator expansion with the conservative `2 J_*` per-step
+commutator weight is therefore bounded by
+
+```text
+    ‖ [A(t), B] ‖
+      ≤ 2 ‖A‖ ‖B‖ · exp(-μ d(x,y))
+          · Σ_{n ≥ 0} (2 J_* D_int exp(μ R_int) |t|)^n / n!        (6)
+
+      = 2 ‖A‖ ‖B‖
+          · exp( -μ d(x,y) + 2 J_* D_int exp(μ R_int) |t| ).
+```
+
+Taking `μ = 1/R_int` gives the Lieb–Robinson bound
 
 ```text
     ‖ [A(t), B] ‖   ≤   2 ‖A‖ ‖B‖ · exp( -(d(x,y) - v_LR |t|) / ξ )    (7)
 ```
 
 with `v_LR = 2 e J_* D_int R_int` and `ξ = R_int`. This is (L1) with
-the constants in (1). The previous source text used the per-term max
-`J` and the bare cubic coordination in this slot; the corrected
-parent-source constant is the per-site interaction norm `J_*` times
-the interaction adjacency degree.
+the constants in (1). This repair does not use the earlier truncated
+Poisson-tail display or the false inequality previously placed under
+Step 3. The previous source text also used the per-term max `J` and
+the bare cubic coordination in this slot; the corrected parent-source
+constant is the per-site interaction norm `J_*` times the interaction
+adjacency degree.
+
+**Equivalent Poisson/Chernoff tail form.** The weighted-path bound
+(6)–(7) is equivalent to the standard exponential-series tail estimate.
+Writing `y = 2 J_* D_int |t|` and `n0 = ⌈d(x,y)/R_int⌉`, the truncated
+series in (6) (before the exponential weight) is `Σ_{n ≥ n0} y^n/n!`,
+and the *correct* Chernoff/Stirling tail bound is
+
+```text
+    Σ_{n ≥ n0} y^n / n!   ≤   ( e · y / n0 )^{n0}   for integer n0 ≥ y. (6b)
+```
+
+This is the estimate the deleted false inequality `(a/n)^n ≤
+exp(-n) exp(n log(a/n))` was meant to supply but did not: that display
+reduces to `(a/n)^n ≤ (a/n)^n · e^{-n}`, i.e. `e^{-n} ≥ 1`, false for
+every `n ≥ 1`. Substituting (6b) with `n0 = ⌈d/R_int⌉` reproduces the
+`(e v_LR |t| / d)^{d/R_int}`-type light-cone decay for `d > e v_LR |t|`,
+matching (7). The runner verifies (6b) directly (exhibit E8) and
+includes the false-inequality control (exhibit E9).
 
 ### Step 4 — Cluster decomposition (L2)
 
@@ -331,11 +374,21 @@ norm. This is the lattice analogue of microcausality.
 For a single Hermitian element `h ∈ Cl(3)` evaluated on the minimal
 complex spinor module (dim 2), the operator norm equals the spectral
 radius. Cl(3) has 8 real generators, so any finite-coefficient
-Hermitian element `h = Σ_α c_α γ^α` has operator norm bounded by
-`(Σ_α |c_α|² · ‖γ^α‖²)^{1/2}` with each `‖γ^α‖ = 1` for the
-canonical orthonormal generators. Thus the single-term bound `J` is
-finite at canonical normalization. Since the finite-range local rule
-has finite `N_touch`, `J_* ≤ N_touch J` is finite as well. ∎
+Hermitian element `h = Σ_α c_α γ^α` has operator norm bounded by the
+triangle inequality:
+
+```text
+    ||h||_op  <=  Σ_α |c_α| ||γ^α||_op  =  Σ_α |c_α|
+              <=  sqrt(8) (Σ_α |c_α|²)^{1/2}.                         (8)
+```
+
+Here each canonical monomial `γ^α` is unitary on the minimal complex spinor
+module, hence `||γ^α||_op = 1`. The previous unit-constant Euclidean
+coefficient bound is not used and is false in general: `I + σ_z` has
+operator norm `2` but coefficient `l2` norm `sqrt(2)`. The repaired bound
+(8) is sufficient for L4: it supplies a finite single-term bound `J` at
+canonical normalization. Since the finite-range local rule has finite
+`N_touch`, `J_* <= N_touch J` is finite as well. ∎
 
 ## Hypothesis set used
 
@@ -390,9 +443,13 @@ separate gap/clustering authority.
   baseline plus the finite-range Hamiltonian hypothesis by
   the finite-range Lieb–Robinson argument with the corrected per-site
   interaction norm `J_*` and finite interaction degree `D_int`. The
-  runner exhibits the exponential envelope on a small free-fermion
-  lattice. **Closed-form support, pending
-  independent audit.**
+  runner exhibits the exponential envelope on a **genuine interacting
+  `Cl(3) = M_2(C)` spin chain** (a 10-site, `2^{10}`-dimensional
+  Hilbert space with generic nearest-neighbour Hermitian two-site
+  terms plus single-site fields), computing
+  `‖[e^{iHt} A e^{-iHt}, B]‖` exactly via the matrix exponential and
+  the operator norm — not a free-fermion single-particle propagator
+  proxy. **Closed-form support, pending independent audit.**
 - **(L3) Lattice light cone.** Direct contrapositive of (L1).
   **Closed-form support, pending independent audit.**
 - **(L4) Cl(3)-specific constant.** Bound on the single-term `J` by

@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py
+runner_sha256: 57ffee9ff27dade3c2e95aae98b73e5827bdfb4349d3739a0a649c80a66c60de
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
+==============================================================================
+GENERATION CORNER HF Vq SCREENED-POISSON BRIDGE  [exact support]
+==============================================================================
+
+-- Source and dependency surface checks --
+  [PASS] retained staggered two-body mediator remains retained_bounded, not widened by this branch  (retained_bounded)
+  [PASS] generation-corner dependencies are retained or retained_bounded on current main  ({'three_generation_observable_theorem_note': 'retained', 'three_generation_structure_note': 'retained_bounded', 'three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10': 'retained'})
+  [PASS] bridge note declares exact-support source status and independent audit requirement
+  [PASS] bridge note proves boundary and normalization inputs explicitly
+  [PASS] conditional target note cites the new one-hop bridge note, runner, and cache
+  [PASS] target runner exposes the bridge as a source check, not only as prose
+
+-- Periodic Laplacian Fourier diagonalization --
+  [PASS] L=4: normalized translation characters diagonalize the periodic graph Laplacian  (max residual 7.879e-15)
+  [PASS] L=6: normalized translation characters diagonalize the periodic graph Laplacian  (max residual 9.958e-15)
+
+-- Screened Green kernel multiplier --
+  [PASS] L=4: -G*(Lap+mu^2 I)^-1 equals Fourier multiplier Vq(q)=-G/(eps(q)+mu^2)  (max entry error 6.232e-10)
+  [PASS] L=6: -G*(Lap+mu^2 I)^-1 equals Fourier multiplier Vq(q)=-G/(eps(q)+mu^2)  (max entry error 5.124e-11)
+
+-- Hartree-Fock plane-wave mutual energy normalization --
+  [PASS] L=4: dense Hartree-minus-exchange equals [Vq(0)-Vq(Delta k)]/N for all corner pairs  (max pair error 6.207e-10)
+  [PASS] L=6: dense Hartree-minus-exchange equals [Vq(0)-Vq(Delta k)]/N for all corner pairs  (max pair error 4.988e-11)
+  [PASS] all three hw=1 corner transfers have eps(Delta k)=8  ([8.0, 8.0, 8.0])
+  [PASS] the corner mutual energies are equal and negative for G>0, mu^2>0  (['-4.999375e+01', '-4.999375e+01', '-4.999375e+01'])
+  [PASS] the pure-corner magnitude scales as 1/N with fixed IR multiplier  (|delta|*N=49993.750781)
+
+==============================================================================
+TOTAL: PASS=15 FAIL=0
+FINDING: exact-support bridge packet is internally green. It derives the periodic screened-Poisson Fourier multiplier and the finite Slater Hartree-minus-exchange normalization from native finite-lattice linear algebra, while leaving the new bridge for independent audit.
+
+----- stderr -----
+

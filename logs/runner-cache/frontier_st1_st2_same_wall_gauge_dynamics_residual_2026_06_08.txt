@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/frontier_st1_st2_same_wall_gauge_dynamics_residual_2026_06_08.py
+runner_sha256: b677cc50f2d4bc5a86cc4241281362fd4b883effba27beb6908ffc633c8f1873
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  The genuine brick: color-equivariance of the gauge force is FREE
+==============================================================================
+  [PASS] gauge force F(U,M)=su(3)-part(U M^dag) is global-SU(3)-equivariant (200 cfgs)  (max dev 1.8e-15 -- free, given the retained global SU(3) commutant)
+==============================================================================
+Part 2  (X1) Equivariance delivers NO dynamics: holds for grad, -grad, commutator, and 0
+==============================================================================
+  [PASS] equivariance identity holds for 'gradient force'  (dev 1.1e-15)
+  [PASS] equivariance identity holds for 'NEGATED force (reversed arrow)'  (dev 1.4e-15)
+  [PASS] equivariance identity holds for 'non-gradient commutator flow'  (dev 1.8e-15)
+  [PASS] equivariance identity holds for 'F=0 (NO dynamics)'  (dev 0.0e+00)
+   => equivariance is VACUOUS: selects/signs/rates NO generator (holds even for F=0) ->
+      does NOT discharge ADM-2' (needs an actual gauge-link dynamics package = R1).
+==============================================================================
+Part 3  (X2) global equivariance != local covariance: NOT rankable vs ADM-1
+==============================================================================
+  [PASS] under a LOCAL law (g_x != g_y) the force is NOT a global adjoint g F g^dag (bi-fundamental) -- global equivariance is far weaker than local covariance  (dev vs g_x-conj 2.22, vs g_y-conj 1.09)
+   => ranking ADM-1 (static symmetry) vs R1/R2 (dynamical premises) toward closure is a
+      CATEGORY ERROR (the session's repeated over-reach).
+==============================================================================
+Part 4  (X3) annealed = Schur twirl (first moment), NOT a central per-step kernel
+==============================================================================
+  [PASS] ensemble twirl over global g -> first-moment CENTRAL (Schur depolarizing) -- automatic from the retained global SU(3) symmetry  (twirl nonscalar-dev 0.002)
+  [PASS] a FIXED per-step kernel is NON-central (the interacting per-step the CLT actually sees)  (per-step nonscalar-dev 0.271)
+  [PASS] co-evolving background gives strongly CORRELATED increments (lag-1 autocorr >> 0) -- the #3346 i.i.d.-central CLT is NOT supplied (needs mixing/ergodicity = R2, open)  (lag-1 autocorr 0.99)
+==============================================================================
+Part 5  ST1 and ST2 sit at the SAME wall: one continuous-time gauge-link dynamics
+==============================================================================
+   SURVIVES (free): color-equivariance of the gauge force (Part 1).
+   ST2 residual = (equivariance: free) + R1 (continuous-time action-gradient generator
+     on U: unadmitted import candidate; the Lattice + Quantum + Record baseline does
+     not supply it) + R2 (mixing/ergodicity -> i.i.d.-central steps: OPEN) +
+     (H_cov-as-connection: currently conditional on ADM-1, PR #3332).
+   R1, R2 and ADM-1 collapse in this route map to ONE undelivered package: continuous-
+     time gauge-link / color-einselection dynamics (generator + rate + local transporter
+     reading + mixing regime).  => ST1 and ST2 sit at the SAME wall.
+   ST2 RELOCATED/RELABELED ADM-1's open input; it did NOT weaken it.
+   (corrected finding: ST1 == ST2 wall; ST2 NOT ahead; only the equivariance brick is free.)
+==============================================================================
+TOTAL: PASS=9 FAIL=0
+==============================================================================
+SCOPE: HONEST CAPSTONE of the ADM-1/ADM-2 investigation.  The ONE genuine brick: the
+  gauge force's color-equivariance is FREE (retained global SU(3) commutant).  It does
+  NOT discharge ADM-2' (equivariance is vacuous as dynamics -- holds even for F=0), is
+  NOT rankable vs ADM-1 (global != local, a category error), and the 'annealed' demo is
+  a Schur twirl, NOT the i.i.d.-central CLT premise (per-step non-central, increments
+  correlated).  CORRECTED FINDING: ST2's residual (R1 generator + R2 mixing) and ST1's
+  ADM-1 collapse in this route map to ONE undelivered continuous-time gauge-link/color-
+  einselection dynamics package -- ST1 and ST2 sit at the SAME wall here. No new axiom,
+  primitive, or import is added.
+
+----- stderr -----
+

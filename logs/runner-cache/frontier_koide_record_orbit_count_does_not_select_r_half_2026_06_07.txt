@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_record_orbit_count_does_not_select_r_half_2026_06_07.py
+runner_sha256: bdb2b977f918e6e4fc0bbd9816d8525502019a4971b2aa2b538061ad4d363a56
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.28
+status: ok
+----- stdout -----
+============================================================================================
+Koide r: Record K/CPT-orbit counting does not select r=1/2 -- refuted re-walk; atom relocated
+============================================================================================
+
+--------------------------------------------------------------------------------------------
+Part A: C3 K/CPT orbits -- the (seductive) orbit/multiplicity count would be (1,1) -> r=1/2
+--------------------------------------------------------------------------------------------
+  [PASS] (A1) C3 irreps {1,w,wbar}; K/CPT -> exactly 2 orbits ({1}, {w,wbar}); orbit-count WOULD be (1,1) -> r=1/2  --  this is the seductive step the lens reaches for
+
+--------------------------------------------------------------------------------------------
+Part B: with a separate tracial/dimension readout, weights are DIMENSION -> (1,2) -> r=1
+--------------------------------------------------------------------------------------------
+  [PASS] (B1) separate tracial/dimension readout rho=I/3 -> block weights (singlet, doublet) = (1/3, 2/3) = DIMENSION (1,2) -> r=1 -> Q=1  --  (w_s,w_d)=(0.333,0.667); Record itself supplies no weighting rule
+  [PASS] (B2) => orbit count is NOT the r=1/2 selector; dimension readout is a separate r=1 comparator  --  this refutes the natural state-record orbit-count re-walk
+
+--------------------------------------------------------------------------------------------
+Part C: the category error -- K/CPT acts on irrep LABELS; the masses are 3 real K-real eigenstates
+--------------------------------------------------------------------------------------------
+  [PASS] (C1) M is Hermitian with 3 DISTINCT real eigenvalues (3 realized states e,mu,tau) -- K-real, K does NOT pair mu,tau  --  evals=[0.3536, 1.0464, 2.5]; 'doublet = one complex mode b' is an OPERATOR property, not the readout
+
+--------------------------------------------------------------------------------------------
+Part D: det_C inversion -- a K-real/orbit argument aligns with the r=1 (Majorana) column
+--------------------------------------------------------------------------------------------
+  [PASS] (D1) landed Berezin table: K-real/Majorana = 2 real slots -> r=1 ; holomorphic = 1 complex slot -> r=1/2  --  a K/CPT-ORBIT (K-real) argument reaches for the Majorana/real reading = the r=1 column (the inversion)
+
+--------------------------------------------------------------------------------------------
+Part E: measure-neutrality -- static eps/J_cs (SO(2)) preserves BOTH det_R and det_C
+--------------------------------------------------------------------------------------------
+  [PASS] (E1) static eps/J_cs SO(2) rotation preserves BOTH det_R (r=1) and |det_C| (r=1/2) -> MEASURE-NEUTRAL  --  static structure does NOT select the readout; the orbit-vs-mode choice is a DYNAMICS question
+
+--------------------------------------------------------------------------------------------
+Verdict + relocation
+--------------------------------------------------------------------------------------------
+  [PASS] (V1) Record-orbit counting does not select r=1/2: orbit-count is not a weighting rule
+  [PASS] (V2) the open atom is RELOCATED: staggered-Dirac mass-determinant HOLOMORPHY (1st-order Dirac/Berezin index -> r=1/2 vs 2nd-order modulus -> r=1) on the AC_phi_lambda gate  --  a DYNAMICS question (the gated mass/Yukawa structure), NOT a Record-readout question; static eps/J_cs measure-neutral
+  [PASS] (V3) METHOD: the lens flagged 'r=1 rests on the imported CW modulus', but the Record-orbit alternative supplies no r=1/2 weight  --  the lens does not always crack the wall; the residual is the operator-dynamics gate
+
+============================================================================================
+TOTAL: 9 PASS / 0 FAIL
+============================================================================================
+
+----- stderr -----
+

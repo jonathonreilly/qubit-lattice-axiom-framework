@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_source_surface_split2_lower_repair_upper_face_extremals_candidate.py
-runner_sha256: 13848c50c3416b9ed87a03a17969639601620c3560ed228214a21af69e80a647
+runner_sha256: c28984e843be270f9c9ee103363ac35e4717d8da9b381a7ed21e68a07547140b
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 276.50
+elapsed_sec: 90.80
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -17,10 +17,8 @@ Question:
 ========================================================================================
 PART 1: SAMPLED LOWER-REPAIR PRESSURE DRIFTS TO THE UPPER-m FACE
 ========================================================================================
-  [PASS] The sampled lower-repair slice-wise best eta values are reproduced stably across the split-2 box  (eta_by_m=[0.87278888 0.87389436 0.87497138 0.87615362 0.87722634 0.87840423
- 0.87961575 0.88077595 0.88197787 0.88325246 0.88447122])
-  [PASS] The sampled lower-repair slice-wise closest-lane distances are reproduced stably across the split-2 box  (dist_by_m=[0.29962107 0.29156645 0.28369544 0.27677072 0.2692421  0.26261795
- 0.25684264 0.25047815 0.24492711 0.23881762 0.23348669])
+  [PASS] The sampled lower-repair slice-wise best eta values are reproduced stably across the split-2 box  (eta_by_m=[0.872789 0.873894 0.874971 0.876154 0.877226 0.878404 0.879616 0.880776 0.881978 0.883252 0.884471])
+  [PASS] The sampled lower-repair slice-wise closest-lane distances are reproduced stably across the split-2 box  (dist_by_m=[0.299621 0.291566 0.283695 0.276771 0.269242 0.262618 0.256843 0.250478 0.244927 0.238818 0.233487])
   [PASS] Sampled lower-repair best-eta values increase monotonically toward the upper-m boundary  (eta_start=0.872788884919, eta_end=0.884471224505)
   [PASS] Sampled lower-repair closest-lane distances decrease monotonically toward the upper-m boundary  (dist_start=0.299621069662, dist_end=0.233486690453)
 
@@ -56,5 +54,6 @@ RESULT
   upper-face extremals, both still transport-incompatible
 
 SUMMARY: PASS=13 FAIL=0
+
 ----- stderr -----
 

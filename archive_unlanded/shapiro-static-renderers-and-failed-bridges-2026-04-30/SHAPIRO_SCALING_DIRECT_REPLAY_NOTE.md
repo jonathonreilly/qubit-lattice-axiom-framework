@@ -1,7 +1,14 @@
 # Shapiro Scaling Direct Replay Note
 
-**Date:** 2026-04-08  
+**Date:** 2026-04-08
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
 
 ## Retraction
 
@@ -13,33 +20,42 @@
 
 - **Do not cite warning:** Do NOT cite the numerical results, tables, or threshold values in the original content below as live framework claims. The runners referenced in this note have been superseded or are no longer reproducible at the time of audit. If a future investigation revisits this physics, treat it as starting from scratch rather than as continuation of a "closed no-go".
 
+## 2026-06-16 archive firewall
+
+This archived packet is historical / diagnostic and retired as evidence. It
+renders stored scaling rows from unaudited/failed Shapiro sources; it does not
+establish retained source-strength, impact-parameter, or drive-scale laws.
+
+The only safe residual is bookkeeping: the old script rendered stored tables.
+A future repair must recompute the sweeps from raw inputs and assert the
+source-off and instantaneous-field controls.
+
 ## Artifact Chain
 
-- [`scripts/shapiro_scaling_direct_replay.py`](/Users/jonreilly/Projects/Physics/scripts/shapiro_scaling_direct_replay.py)
-- [`scripts/shapiro_scaling_probe.py`](/Users/jonreilly/Projects/Physics/scripts/shapiro_scaling_probe.py)
-- [`logs/2026-04-08-shapiro-scaling-direct-replay.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-08-shapiro-scaling-direct-replay.txt)
-- [`docs/SHAPIRO_EXPERIMENTAL_CARD.md`](/Users/jonreilly/Projects/Physics/docs/SHAPIRO_EXPERIMENTAL_CARD.md)
-- [`logs/2026-04-06-shapiro-delay-portable.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-shapiro-delay-portable.txt)
-- [`docs/SHAPIRO_DIAMOND_FREQUENCY_BRIDGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SHAPIRO_DIAMOND_FREQUENCY_BRIDGE_NOTE.md)
+- [`scripts/shapiro_scaling_direct_replay.py`](../../scripts/shapiro_scaling_direct_replay.py)
+- [`scripts/shapiro_scaling_probe.py`](../../scripts/shapiro_scaling_probe.py)
+- [`logs/2026-04-08-shapiro-scaling-direct-replay.txt`](../../logs/2026-04-08-shapiro-scaling-direct-replay.txt)
+- [`docs/SHAPIRO_EXPERIMENTAL_CARD.md`](../../docs/SHAPIRO_EXPERIMENTAL_CARD.md)
+- [`logs/2026-04-06-shapiro-delay-portable.txt`](../../logs/2026-04-06-shapiro-delay-portable.txt)
+- [`docs/SHAPIRO_DIAMOND_FREQUENCY_BRIDGE_NOTE.md`](../../docs/SHAPIRO_DIAMOND_FREQUENCY_BRIDGE_NOTE.md)
 
-## What Is Being Replayed
+## Historical static replay body (retracted)
 
-This is not a reconstruction from the anchor commit. It is a direct freeze of
-the retained in-repo data:
+The old note described itself as a direct freeze of in-repo data:
 
 - `s` law from the experimental card
 - `b` law from the experimental card
 - `k` law from the experimental card
 - exact zero controls from the experimental card and portable delay log
 
-## Exact Controls
+## Historical asserted controls (not audit-clean)
 
 - `s = 0 -> phase = 0.000 rad`
 - `c = inst -> phase = 0.000000 rad`
 - `b` is not an exact-zero law; it is a monotone tail law that approaches
   zero at large separation
 
-## Direct Scaling Laws
+## Historical direct scaling table (retracted)
 
 | law | control | direct readout | source |
 | --- | --- | --- | --- |
@@ -47,7 +63,7 @@ the retained in-repo data:
 | phase decreases with `b` | large `b -> phase -> 0` | `b = 3.0 -> +0.062 rad`; `b = 5.0 -> +0.049 rad`; `b = 7.0 -> +0.040 rad` | `docs/SHAPIRO_EXPERIMENTAL_CARD.md` |
 | `phase ~ k` | instantaneous field -> phase = 0 | `k = 2.0 -> +0.030 rad`; `k = 5.0 -> +0.062 rad`; `k = 10.0 -> +0.200 rad` | `docs/SHAPIRO_EXPERIMENTAL_CARD.md` |
 
-## Portable Delay Table
+## Historical portable delay table (retracted)
 
 | c | fam1 | fam2 | fam3 | mean |
 | ---: | ---: | ---: | ---: | ---: |
@@ -57,14 +73,16 @@ the retained in-repo data:
 | 0.50 | +0.061643 | +0.061958 | +0.061700 | +0.061767 |
 | 0.25 | +0.067893 | +0.068326 | +0.067886 | +0.068035 |
 
-## Narrow Read
+## Historical narrow read (retracted and narrowed)
 
-- the source-mass law stays linear over the retained 16x sweep
-- the impact-parameter law stays ordered on the retained sampled rows
-- the chromatic law stays direct in the retained k table
-- the exact zero controls survive in both the source-off and instantaneous-field gates
-- the portable delay log keeps the zero control explicit while showing the finite-c phase table
+- safe only as a record of stored scaling and portable-delay rows rendered by
+  the stale script
+- not safe as retained source-mass linearity
+- not safe as retained impact-parameter scaling
+- not safe as retained `k`/frequency scaling
+- not safe as proof of exact control gates
 
-## Final Verdict
+## Historical final verdict (retracted)
 
-**the Shapiro scaling lane can close as a direct data-bearing replay: the retained s, b, and k laws are frozen from repo data, and the exact zero controls remain explicit**
+The old closure verdict is retracted. This packet is not a retained replay and
+does not close the Shapiro scaling lane.

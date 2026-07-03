@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/frontier_heat_kernel_unique_diffusion_kernel_2026_06_08.py
+runner_sha256: dc35b321d5e546de68d4f8decb1df3f5197c5f47e2991114a4b31801f616cdde
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.87
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  HK is a convolution semigroup: c_j(s)c_j(t)/d_j = c_j(s+t) (all irreps)
+==============================================================================
+  [PASS] HK semigroup at (s,t)=(0.3,0.5): holds for all 24 irreps  (max|lhs-rhs|=2.22e-16)
+  [PASS] HK semigroup at (s,t)=(0.7,1.1): holds for all 24 irreps  (max|lhs-rhs|=1.67e-16)
+  [PASS] HK semigroup at (s,t)=(1.0,2.0): holds for all 24 irreps  (max|lhs-rhs|=2.78e-17)
+  [PASS] HK is infinitely divisible: (P_{t/n})^{*n} = P_t (continuous-time Markov)  (max|diff|=1.11e-16)
+==============================================================================
+Part 2  HK solves the heat equation d/dt P = (1/2) Delta P, Delta = canonical
+==============================================================================
+  [PASS] d/dt c_j(t) = -(C_2(j)/2) c_j(t) (heat equation, generator = group Laplacian)  (max resid = 6.66e-11)
+  [PASS] generator eigenvalues are the canonical Casimir C_2(j)=j(j+1) (Tr-form metric)  (C_2(1/2)=3/4, C_2(1)=2 from Tr(T_aT_b)=delta_ab/2)
+==============================================================================
+Part 3  Wilson and Manton are NOT semigroups (not diffusion transition kernels)
+==============================================================================
+  [PASS] Wilson FAILS the semigroup law c_j(b1)c_j(b2)/d_j != c_j(b1+b2)  (max|lhs-rhs|=11.989 (Bessel coeffs don't multiply))
+  [PASS] Manton FAILS the semigroup law (not a diffusion kernel either)  (max|lhs-rhs|=0.080)
+==============================================================================
+Part 4  SU(3): HK semigroup on {trivial, fund, adjoint}; Wilson fails
+==============================================================================
+  [PASS] SU(3) HK semigroup: c(s)c(t)/d = c(s+t) on trivial/fund/adjoint  (fund: 1.103638 vs 1.103638)
+  [PASS] SU(3) HK fundamental coefficient reproduces exp(-2/3) at t=1 (the no-go's single-plaquette <P>_HK)  (C_2(fund)=4/3 -> exp(-2/3))
+  [PASS] SU(3) Wilson normalized fundamental coefficient FAILS phi(b1)phi(b2)=phi(b1+b2)  (phi(2.0)phi(3.0)=0.026121 vs phi(5.0)=0.353954)
+==============================================================================
+Part 5  Uniqueness (Cauchy law -> exp) + isolation (admixture breaks semigroup)
+==============================================================================
+  [PASS] CONTROL: a non-exponential reduced coefficient 1/(1+kt) FAILS phi(s)phi(t)=phi(s+t) (only exp(-kt) is a semigroup -> HK form unique)  (phi(.4)phi(.6)=0.64103 vs phi(1)=0.66667)
+  [PASS] exp(-kt) satisfies phi(s)phi(t)=phi(s+t) (the unique continuous solution)
+  [PASS] CONTROL: HK + 0.05*(non-exp admixture) BREAKS the semigroup (HK isolated)  (defect=0.0156)
+  [PASS] CONTROL: HK + 0.2*(non-exp admixture) BREAKS the semigroup (HK isolated)  (defect=0.0723)
+  [PASS] eps=0 (pure HK) satisfies the semigroup (isolation tooth controlled)
+==============================================================================
+Part 6  Honest residual: the generator is retained-canonical; the dynamics is open
+==============================================================================
+   GENERATOR (retained): Delta = canonical group Laplacian, eigenvalue -C_2(lambda)
+     from the retained trace form Tr(T_aT_b)=delta_ab/2.  HK = exp(t Delta/2).
+   UNIQUE among candidates (Parts 1-5): only HK is a diffusion transition kernel.
+   OPEN (record_classical_semigroup_boundary_2026-06-06, RETAINED): Record alone
+     does NOT supply a continuous Markov generator/rate law.  That emergent-time
+     gauge-link evolution IS this Delta-diffusion is the load-bearing open input.
+   => This runner LOCATES the action-selection residual (supply the gauge-link
+      diffusion); it does NOT claim HK is the framework's realized action.
+  [PASS] residual is well-located: generator retained-canonical, dynamics-realization open  (selection reduces to deriving the emergent-time gauge-link diffusion)
+==============================================================================
+TOTAL: PASS=17 FAIL=0
+runner_check_breakdown = {A: 17, B: 0, C: 0, D: 0, total_pass: 17}
+==============================================================================
+SCOPE: Among {Wilson, HK, Manton}, the heat-kernel is the UNIQUE continuous-time
+  Markov diffusion transition kernel on the gauge group (unique convolution
+  semigroup / heat-equation solution), generator = canonical group Laplacian from
+  the retained Tr-form.  This makes the no-go's Step-3b Brownian criterion EXACT
+  and DISTINGUISHING.  It does NOT claim HK is the framework's action: by the
+  retained record_classical_semigroup_boundary, Record alone does not supply the
+  Markov generator/rate law, so 'emergent time drives THIS diffusion' is the named
+  OPEN residual.  No new axiom/import; no continuum claim.
+
+----- stderr -----
+

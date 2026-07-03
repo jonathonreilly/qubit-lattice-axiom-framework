@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/flavor_zdet_fermionic_statistics_admission_2026_06_04.py
+runner_sha256: 54811d712f535307c9d1da6389031d704563c832b2797d78ef3971da5a45fc31
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.41
+status: ok
+----- stdout -----
 [PASS] Berezin finite Gaussian gives det(M) once Grassmann variables are supplied
        berezin=4.971000; det=4.971000
 [PASS] ordinary cross-site qubit ladders commute
@@ -7,8 +15,31 @@
        det=4.971000; permanent=5.947000
 [PASS] Gamma_chi is an internal-generation object distinct from spatial CAR
        Gamma_chi commutes with the tested C3-equivariant mass operator
+[PASS] one-hop dependency status: fermion parity Z2 grading is audited retained
+       fermion_parity_z2_grading_theorem_note_2026-05-02 -> retained
+[PASS] one-hop dependency status: abstract Grassmann forcing bridge is audited retained or retained_bounded
+       staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16 -> retained
+[PASS] graded tensor route composes parity-odd generators into CAR with even bilinears
+       F c_i F=-c_i, {c1,c2}=0, and c1^dag c2 is Z2-even
+[PASS] source boundary guard: finite bridge only, no physical baseline/admission conclusion promoted
+       the packet leaves the physical FS selector open
+[PASS] dependency boundary guard: consumed supports are algebraic, not physical spin-statistics selectors
+       parity supplies Z2 grading; Grassmann bridge supplies abstract two-candidate determinant scope
+[PASS] downstream occupancy atom: downstream occupancy theorem is ledger-registered as a bounded_theorem source
+       koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09: claim_type=bounded_theorem, note_path=docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md
+[PASS] downstream occupancy atom: Record axiom declines weighting and occupancy supply
+       checked live Minimal Axioms text
+[PASS] downstream occupancy atom: occupancy note records independence without adopting the premise
+[PASS] downstream occupancy atom: sector and orbit occupancy weights differ by exactly two
+       sector=2*pi/g, orbit=pi/g
+[PASS] downstream occupancy atom: orientation maps sector occupancy to r=1 and orbit occupancy to r=1/2
+       sector=1, orbit=1/2
 
-SCORECARD PASS=6 FAIL=0
-FINDING: the determinant-amplitude gate localizes to FS, an owner-approved cross-site fermionic-statistics admission.
-The three baseline axioms do not force FS in these finite checks; approved axioms and primitives are dependency premises, not grade sources.
+SCORECARD PASS=16 FAIL=0
+FINDING: the abstract two-candidate determinant side now has one-hop audited support.
+The physical-lattice cross-site CAR/Grassmann selector remains open.
+The tested finite hard-core/tensor-product routes still do not force that statistics choice.
 Koide generation chirality remains a separate internal-factor residual.
+DOWNSTREAM: determinant statistics does not select the Koide occupancy/slot-degree atom.
+
+----- stderr -----

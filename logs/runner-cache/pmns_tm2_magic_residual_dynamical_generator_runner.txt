@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/pmns_tm2_magic_residual_dynamical_generator_runner.py
+runner_sha256: 396d64b36468b95010ae1c1c4ca55981883f82b647a2c3556a74c0fb9fc649f5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.12
+status: ok
+----- stdout -----
+========================================================================
+PMNS TM2 MAGIC RESIDUAL -- NATIVE DYNAMICAL GENERATOR (class A)
+========================================================================
+  [PASS] S has spectrum {-1,-1,+1}  (eig=[-1.0, -1.0, 1.0])
+  [PASS] S is an involution (S^2 = I)
+  [PASS] S fixes the C3-singlet W (S W = W)
+  [PASS] S equals NO S3 permutation matrix
+  [PASS] S is non-monomial (not reachable by permutations+phases)
+  [PASS] S3 has no V4 subgroup (Lagrange: 4 does not divide 6)
+  [PASS] H_dem = C + Cdag equals J - I (native double-shift corner coupling)
+  [PASS] H_dem=C+Cdag spectrum {-1,-1,+2} (W non-degenerate, complement degenerate)  (eig=[-1.0, -1.0, 2.0])
+  [PASS] exp(i pi/3 H_dem) = global-phase * S  (|<U,S>|/3 = 1)  (|hs|=1.000000000000)
+  [PASS] global phase is exp(2 i pi/3)
+  [PASS] U = global-phase * magic S exactly
+  [PASS] <S,P23> has order 4
+  [PASS] <S,P23> is abelian
+  [PASS] <S,P23> all elements are involutions => Klein V4
+  [PASS] symmetrized M_nu commutes with magic S
+  [PASS] symmetrized M_nu commutes with P23
+  [PASS] V4-invariant M_nu is NOT circulant (doublet not forced degenerate)
+  [PASS] PMNS has an exact trimaximal column (|U|^2 = 1/3)  (col=[1])
+  [PASS] PMNS mu-tau modulus |U_mu i|^2=|U_tau i|^2 (rows 1,2 equal)
+  [PASS] maximal atmospheric: a column splits 1/2 : 1/2 over mu,tau
+  [PASS] NEG CONTROL: full-circulant neutrino => all |U|^2=1/3 (TM3, theta13=1/3 overshoot)  (this is what 'must break W' tested)
+  [PASS] W-preserving M_nu hits theta13 in observed band 0.015-0.030 WITH exact trimaximal column  (sin^2 theta13 proxy=0.0213)
+  [PASS] => W-preservation (TM2) is NOT excluded by theta13; only full circulant (TM3) is
+  [PASS] NEG CONTROL: charged-circulant rotation destroys the trimaximal column
+========================================================================
+TOTAL: PASS=24 FAIL=0
+VERDICT: TM2 magic residual is a native dynamical unitary; trimaximal-column gap reduces to M_nu V4-invariance (W-preservation).
+
+----- stderr -----
+

@@ -6,15 +6,16 @@ Finite-volume Lieb-Robinson bound plus bounded cluster-decomposition support
 Companion runner to:
     docs/SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md
 
-Eight verifications exhibiting:
+Nine verifications exhibiting:
   V1: Locality of nested commutators on a 6-site spin-1/2 Heisenberg chain
       (supports of [H, A], [H, [H, A]], ... shrink to the predicted thickening).
   V2: Triangle-inequality bound on nested commutator norm vs the
-      (2J)^n · K^n · |X| factor for n = 1, 2, 3, 4.
+      (2J)^n · (D_I^+)^n · |X| factor for n = 1, 2, 3, 4, where D_I^+
+      is the inclusive interaction-graph overlap degree.
   V3: Lieb-Robinson commutator bound for separated operators at multiple times
       via exact diagonalization on the 6-site chain.
   V4: Lieb-Robinson velocity extraction from numerical commutator data.
-      Compare to theoretical v_LR = 2 J K R_0 e.
+      Compare to theoretical v_LR = 2 J D_I^+ R_0 e.
   V5: Finite-N cluster-support fit on the same chain: extract the gap Δ,
       compute connected correlators C(R), fit an effective ξ, compare to the
       loose v_LR/Δ upper scale without promoting a thermodynamic theorem.
@@ -27,8 +28,10 @@ Eight verifications exhibiting:
       direct connected-character-correlator measurement.
   V8: Anti-overclaim verification: extract ξ_cluster at Λ=4 vs Λ=6 to confirm
       the bound is finite-Λ only (no thermodynamic-limit claim).
+  V9: Inclusive branching guard: brute-force repeated interaction chains and
+      verify that the exclusive-degree count can fail while D_I^+ bounds them.
 
-All eight verifications have hard assertion gates. Final tally is reported as
+All nine verifications have hard assertion gates. Final tally is reported as
 PASS / FAIL counts.
 
 Designed to complete in under a minute on a laptop using NumPy + SciPy only.
@@ -42,6 +45,7 @@ import math
 import sys
 import time
 from dataclasses import dataclass
+from itertools import product
 
 import numpy as np
 from numpy.linalg import eigh, eigvalsh
@@ -215,19 +219,21 @@ def V1_locality_nested_commutators(N: int = 6) -> VResult:
 # ============================================================================
 
 def V2_nested_commutator_norm_bound(N: int = 6) -> VResult:
-    """For A = S_z^{0}, verify ‖C_n(A)‖ ≤ (2J)^n · K^n · |X| · ‖A‖ for n = 1..4,
-    with K the path-multiplicity bound from Lemma B.
+    """For A = S_z^{0}, verify ‖C_n(A)‖ ≤ (2J)^n · (D_I^+)^n · |X| · ‖A‖
+    for n = 1..4, with D_I^+ the inclusive interaction-graph overlap degree
+    from Lemma B.
 
     For a 1D Heisenberg chain, J = 1 (link bound: ‖S_i S_j‖ ≤ 1/4 for each
     spin, ‖h_{i,i+1}‖ = J · sup(‖S_i · S_{i+1}‖) ≤ J · 3/4 ≤ J, so we use
-    J = 1 as a conservative bound). K bounds the path-multiplicity at each
-    growth step: K ≤ Z_max + 1 = 3 (each site has ≤ 2 neighboring h_Z and one
-    self-term in our case, but for nearest-neighbor only, K=2 suffices).
+    J = 1 as a conservative bound). D_I^+ bounds the local chain branching at
+    each step, including the repeated-term choice Z_{i+1}=Z_i. For a 1D
+    nearest-neighbor chain, the maximum inclusive bond-overlap degree is 3
+    (left neighbor, self, right neighbor).
 
-    Use K = 3 as a coarse, safe bound.
+    Use D_I^+ = 3 as a coarse, safe bound.
     """
     J_norm = 0.75  # actual norm of each h_{i,i+1} = J/4 · ‖σ·σ‖ ≤ 3J/4
-    K = 3.0
+    D_I_plus = 3.0
     X_size = 1
     H = heisenberg_hamiltonian(N, J=1.0, open_bc=True)
     A = site_op(S_Z, 0, N)
@@ -238,7 +244,7 @@ def V2_nested_commutator_norm_bound(N: int = 6) -> VResult:
     for n in range(1, 5):
         C = nested_commutator(H, A, n)
         Cn_norm = np.linalg.norm(C, ord=2)
-        bound = (2.0 * J_norm) ** n * (K ** n) * X_size * A_norm
+        bound = (2.0 * J_norm) ** n * (D_I_plus ** n) * X_size * A_norm
         ratio = Cn_norm / bound
         metrics[f"n_{n}_actual"] = float(Cn_norm)
         metrics[f"n_{n}_bound"] = float(bound)
@@ -271,8 +277,8 @@ def V3_lieb_robinson_bound(N: int = 6) -> VResult:
 
     Constants used (matching the analysis in V2):
 
-        J = 0.75, K = 3, R_0 = 1, e = 2.718...
-        v_LR = 2 · J · K · R_0 · e ≈ 12.23
+        J = 0.75, D_I^+ = 3, R_0 = 1, e = 2.718...
+        v_LR = 2 · J · D_I^+ · R_0 · e ≈ 12.23
         ξ = R_0 / log 2 ≈ 1.44
         C_0 = 2
 
@@ -292,10 +298,10 @@ def V3_lieb_robinson_bound(N: int = 6) -> VResult:
     R = N - 1  # distance between supports of A (site 0) and B (site N-1)
 
     J_norm = 0.75
-    K = 3.0
+    D_I_plus = 3.0
     R_0 = 1.0
     e = math.e
-    v_LR = 2.0 * J_norm * K * R_0 * e  # ≈ 12.23
+    v_LR = 2.0 * J_norm * D_I_plus * R_0 * e  # ≈ 12.23
     xi = R_0 / math.log(2.0)
     C_0 = 2.0
 
@@ -382,7 +388,7 @@ def V4_lieb_robinson_velocity_extraction(N: int = 6) -> VResult:
 
     # Theoretical xi (with loose path-counting bound)
     J_norm = 0.75
-    K = 3.0
+    D_I_plus = 3.0
     R_0 = 1.0
     xi_theory = R_0 / math.log(2.0)  # ≈ 1.44
 
@@ -460,7 +466,8 @@ def V5_spatial_cluster_decomposition(N: int = 6) -> VResult:
 
     # Theoretical estimate: ξ_cluster = max(2ξ, 2 v_LR / Δ).
     # With v_LR ≈ 12.23, Δ at N=6 numerical:
-    v_LR = 2 * 0.75 * 3.0 * 1.0 * math.e
+    D_I_plus = 3.0
+    v_LR = 2 * 0.75 * D_I_plus * 1.0 * math.e
     xi_spatial = 2.0 * (1.0 / math.log(2.0))
     xi_gap = 2.0 * v_LR / Delta if Delta > 1e-12 else float('inf')
     xi_cluster_theory = max(xi_spatial, xi_gap)
@@ -532,7 +539,7 @@ def V6_composition_with_pr1577_su3(N_max: int = 4, tau: float = 1.0) -> VResult:
           for τ = 1, with multiplicity (dim(1,0))² = 9.
       (c) Δ_T = λ_0 - λ_1 = 1 - 0.800 ≈ 0.200 > 0.
       (d) Hamiltonian-side gap Δ = -log(λ_1 / λ_0) = -log(λ_1) = τ C_2(1,0) / (2 N_c) ≈ 0.222.
-      (e) The Lieb-Robinson velocity bound v_LR^{SU(3)} = 2 J^{SU(3)} · K · R_0 · e
+      (e) The Lieb-Robinson velocity bound v_LR^{SU(3)} = 2 J^{SU(3)} · D_I^+ · R_0 · e
           is finite (J^{SU(3)} bounded by the canonical Wilson link norm).
 
     This composes the LR half (this PR) with PR #1577's Δ_T > 0 half.
@@ -563,14 +570,15 @@ def V6_composition_with_pr1577_su3(N_max: int = 4, tau: float = 1.0) -> VResult:
 
     # Lieb-Robinson velocity for SU(3) Wilson (canonical normalization)
     # J^{SU(3)} bounded by canonical Wilson link normalization ≈ O(1).
-    # Take J^{SU(3)} = 1 (the canonical Wilson coupling norm), K_lattice = 13 for 3D
-    # (12 plaquettes per link + 1 self-term, a conservative bound for the plaquette+staggered case).
+    # Take J^{SU(3)} = 1 (the canonical Wilson coupling norm), and use the note's
+    # coarse inclusive D_I^+ <= s_max Z_max <= 4*19 = 76 for the 3D
+    # plaquette+staggered+on-site surface.
     # The precise constant doesn't matter for V6/V7 structural verification — we just confirm
     # v_LR is finite + positive.
     J_SU3 = 1.0
-    K_lattice = 13.0
-    R_0 = math.sqrt(2.0)  # plaquette diagonal
-    v_LR_SU3 = 2.0 * J_SU3 * K_lattice * R_0 * math.e
+    D_I_lattice = 76.0
+    R_0 = 2.0  # plaquette ell_1 diameter
+    v_LR_SU3 = 2.0 * J_SU3 * D_I_lattice * R_0 * math.e
     xi_cluster_SU3 = 2.0 * v_LR_SU3 / Delta_H  # the gap-correlation length
 
     metrics = {
@@ -647,10 +655,10 @@ def V7_spatial_cluster_decomposition_su3(N_max: int = 4,
 
     # Predict exponential cluster-decay rate for the gap-induced channel:
     # connected correlator at separation R should decay as λ_1^{R/R_0}
-    # where R_0 = √2 (plaquette diagonal). The decay rate per unit length is
+    # where R_0 = 2 in the lattice ell_1 metric. The decay rate per unit length is
     # log(1/λ_1) / R_0 = Δ_H / R_0.
 
-    R_0 = math.sqrt(2.0)
+    R_0 = 2.0
     Rs = list(range(1, 7))
     predicted_decay = [(lam1 / lam0) ** (R / R_0) for R in Rs]
     log_predicted = [math.log(p) for p in predicted_decay]
@@ -763,6 +771,116 @@ def V8_anti_overclaim_finite_lambda() -> VResult:
 
 
 # ============================================================================
+# V9: Inclusive branching guard for repeated interaction chains
+# ============================================================================
+
+def _overlaps(a: frozenset, b: frozenset) -> bool:
+    return bool(a & b)
+
+
+def _count_interaction_chains(supports: list[frozenset],
+                              X: frozenset,
+                              Y: frozenset,
+                              n: int) -> int:
+    """Count length-n chains with repeated local terms allowed."""
+    count = 0
+    for chain in product(range(len(supports)), repeat=n):
+        if not _overlaps(supports[chain[0]], X):
+            continue
+        if not _overlaps(supports[chain[-1]], Y):
+            continue
+        if all(_overlaps(supports[chain[i]], supports[chain[i + 1]]) for i in range(n - 1)):
+            count += 1
+    return count
+
+
+def _inclusive_degree(supports: list[frozenset]) -> int:
+    return max(sum(1 for other in supports if _overlaps(support, other)) for support in supports)
+
+
+def _exclusive_degree(supports: list[frozenset]) -> int:
+    return max(
+        sum(1 for j, other in enumerate(supports) if i != j and _overlaps(support, other))
+        for i, support in enumerate(supports)
+    )
+
+
+def V9_inclusive_branching_guard() -> VResult:
+    """Brute-force the precise chain-count issue from the latest audit.
+
+    The minimal two-term graph has one exclusive neighbor for each interaction,
+    but a length-3 chain from X to Y has two allowed repeated-term choices:
+    (Z0,Z0,Z1) and (Z0,Z1,Z1). Thus the exclusive-degree count fails, while the
+    inclusive D_I^+ count succeeds. The second check verifies the same inclusive
+    bound on a 1D nearest-neighbor bond graph.
+    """
+    metrics = {}
+
+    minimal_supports = [frozenset({0, 1}), frozenset({1, 2})]
+    X_min = frozenset({0})
+    Y_min = frozenset({2})
+    n_min = 3
+    count_min = _count_interaction_chains(minimal_supports, X_min, Y_min, n_min)
+    n_x_min = sum(1 for support in minimal_supports if _overlaps(support, X_min))
+    d_excl_min = _exclusive_degree(minimal_supports)
+    d_plus_min = _inclusive_degree(minimal_supports)
+    exclusive_bound_min = n_x_min * (d_excl_min ** (n_min - 1))
+    inclusive_bound_min = n_x_min * (d_plus_min ** (n_min - 1))
+
+    metrics.update({
+        "minimal_count_n3": count_min,
+        "minimal_N_X": n_x_min,
+        "minimal_D_exclusive": d_excl_min,
+        "minimal_D_plus": d_plus_min,
+        "minimal_exclusive_bound": exclusive_bound_min,
+        "minimal_inclusive_bound": inclusive_bound_min,
+    })
+
+    exclusive_fails = count_min > exclusive_bound_min
+    inclusive_holds_min = count_min <= inclusive_bound_min
+
+    bond_supports = [frozenset({i, i + 1}) for i in range(5)]
+    X_chain = frozenset({0})
+    Y_chain = frozenset({5})
+    n_x_chain = sum(1 for support in bond_supports if _overlaps(support, X_chain))
+    d_plus_chain = _inclusive_degree(bond_supports)
+    chain_bounds_hold = True
+    chain_counts = {}
+    for n in range(1, 8):
+        count = _count_interaction_chains(bond_supports, X_chain, Y_chain, n)
+        bound = n_x_chain * (d_plus_chain ** (n - 1))
+        chain_counts[f"n{n}_count"] = count
+        chain_counts[f"n{n}_inclusive_bound"] = bound
+        chain_bounds_hold = chain_bounds_hold and (count <= bound)
+
+    metrics.update({
+        "bond_graph_N_X": n_x_chain,
+        "bond_graph_D_plus": d_plus_chain,
+        **chain_counts,
+    })
+
+    passed = exclusive_fails and inclusive_holds_min and chain_bounds_hold
+    if passed:
+        msg = (
+            "Repeated-chain guard closes: exclusive degree fails on the minimal graph "
+            f"({count_min} > {exclusive_bound_min}), while D_I^+ bounds it "
+            f"({count_min} <= {inclusive_bound_min}) and bounds the 1D bond graph."
+        )
+    else:
+        msg = (
+            "Inclusive branching guard failed: "
+            f"exclusive_fails={exclusive_fails}, inclusive_holds_min={inclusive_holds_min}, "
+            f"chain_bounds_hold={chain_bounds_hold}."
+        )
+    return VResult(
+        name="V9 — Inclusive branching guard for repeated chains",
+        passed=passed,
+        message=msg,
+        metrics=metrics,
+    )
+
+
+# ============================================================================
 # Main runner
 # ============================================================================
 
@@ -813,6 +931,11 @@ def main():
 
     print("Running V8 — Anti-overclaim: finite-Λ scope verification ...")
     results.append(V8_anti_overclaim_finite_lambda())
+    print(f"  {'PASS' if results[-1].passed else 'FAIL'}: {results[-1].message}")
+    print()
+
+    print("Running V9 — Inclusive branching guard for repeated chains ...")
+    results.append(V9_inclusive_branching_guard())
     print(f"  {'PASS' if results[-1].passed else 'FAIL'}: {results[-1].message}")
     print()
 

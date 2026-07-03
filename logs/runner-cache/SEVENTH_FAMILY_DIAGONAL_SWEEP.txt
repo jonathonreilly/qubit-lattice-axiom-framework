@@ -1,11 +1,42 @@
 ===== runner cache v1 =====
 runner: scripts/SEVENTH_FAMILY_DIAGONAL_SWEEP.py
-runner_sha256: 79b8609a41d1a64f8d2a57bfc5a50109cf78730918b53859944e5a57b31eed26
+runner_sha256: 48d8d1fc6f4b5252c02a6b42d3d590d51c0dd46dddad08ffd80ea5aa44ef41aa
 timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.04
-status: timeout
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
 ----- stdout -----
+================================================================================================
+SEVENTH FAMILY DIAGONAL SWEEP FROZEN LOG VERIFIER
+log: logs/2026-04-06-seventh-family-diagonal-sweep-boundary.txt
+================================================================================================
+drift=0.00 seed=0 zero=+0.000e+00 neutral=+0.000e+00 plus=+4.577e-06 minus=-4.579e-06 double=+9.152e-06 exp=1.000 PASS
+drift=0.00 seed=1 zero=+0.000e+00 neutral=+0.000e+00 plus=+4.577e-06 minus=-4.579e-06 double=+9.152e-06 exp=1.000 PASS
+drift=0.00 seed=2 zero=+0.000e+00 neutral=+0.000e+00 plus=+4.577e-06 minus=-4.579e-06 double=+9.152e-06 exp=1.000 PASS
+drift=0.05 seed=0 zero=+0.000e+00 neutral=+0.000e+00 plus=-4.426e-06 minus=+4.422e-06 double=-8.856e-06 exp=1.001 boundary
+drift=0.05 seed=1 zero=+0.000e+00 neutral=+0.000e+00 plus=-1.441e-05 minus=+1.441e-05 double=-2.883e-05 exp=1.000 boundary
+drift=0.05 seed=2 zero=+0.000e+00 neutral=+0.000e+00 plus=-1.392e-06 minus=+1.391e-06 double=-2.784e-06 exp=1.000 boundary
+drift=0.10 seed=0 zero=+0.000e+00 neutral=+0.000e+00 plus=-7.400e-06 minus=+7.400e-06 double=-1.480e-05 exp=1.000 boundary
+drift=0.10 seed=1 zero=+0.000e+00 neutral=+0.000e+00 plus=-1.389e-05 minus=+1.389e-05 double=-2.778e-05 exp=1.000 boundary
+drift=0.10 seed=2 zero=+0.000e+00 neutral=+0.000e+00 plus=-4.770e-07 minus=+4.758e-07 double=-9.551e-07 exp=1.002 boundary
+drift=0.20 seed=0 zero=+0.000e+00 neutral=+0.000e+00 plus=-3.447e-07 minus=+3.447e-07 double=-6.895e-07 exp=1.000 boundary
+drift=0.20 seed=1 zero=+0.000e+00 neutral=+0.000e+00 plus=-7.066e-06 minus=+7.065e-06 double=-1.413e-05 exp=1.000 boundary
+drift=0.20 seed=2 zero=+0.000e+00 neutral=+0.000e+00 plus=+4.572e-06 minus=-4.572e-06 double=+9.144e-06 exp=1.000 PASS
+drift=0.30 seed=0 zero=+0.000e+00 neutral=+0.000e+00 plus=-8.948e-07 minus=+8.932e-07 double=-1.791e-06 exp=1.001 boundary
+drift=0.30 seed=1 zero=+0.000e+00 neutral=+0.000e+00 plus=+3.867e-06 minus=-3.867e-06 double=+7.733e-06 exp=1.000 PASS
+drift=0.30 seed=2 zero=+0.000e+00 neutral=+0.000e+00 plus=+2.467e-06 minus=-2.467e-06 double=+4.933e-06 exp=1.000 PASS
+drift=0.50 seed=0 zero=+0.000e+00 neutral=+0.000e+00 plus=-4.450e-08 minus=+4.450e-08 double=-8.901e-08 exp=1.000 boundary
+drift=0.50 seed=1 zero=+0.000e+00 neutral=+0.000e+00 plus=+2.353e-07 minus=-2.354e-07 double=+4.707e-07 exp=1.000 PASS
+drift=0.50 seed=2 zero=+0.000e+00 neutral=+0.000e+00 plus=-7.965e-08 minus=+7.964e-08 double=-1.593e-07 exp=1.000 boundary
+
+row-derived passing rows: 7/18
+legacy frozen-log summary line: 6/18
+drift coverage: [0.0, 0.2, 0.3, 0.5]
+seed coverage: [0, 1, 2]
+mean charge exponent among row-derived passes: 1.000000
+
+SAFE READ: seed-selective boundary pocket only, not family-wide closure.
+SCORECARD PASS=18 FAIL=0
 
 ----- stderr -----
 

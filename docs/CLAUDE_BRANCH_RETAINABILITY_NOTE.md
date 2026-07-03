@@ -25,7 +25,12 @@ The branch is uneven in an important way:
   retained-looking chain on the branch:
   - notes: `docs/COMPLEX_ACTION_NOTE.md`,
     `docs/CONTINUUM_LIMIT_NOTE.md`, `docs/CONTINUUM_CONVERGENCE_NOTE.md`,
+    and the current bounded replay
+    `docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md`
+  - historical caution:
     `archive_unlanded/gravity-distance-law-stale-runners-2026-04-30/DISTANCE_LAW_NOTE.md`
+    is retired as evidence and must not be used as a live distance-law
+    authority
   - logs: `logs/2026-04-05-complex-action-harness.txt`,
     `logs/2026-04-05-complex-action-grown.txt`,
     `logs/2026-04-05-h2-T-numpy-continuum.txt`,

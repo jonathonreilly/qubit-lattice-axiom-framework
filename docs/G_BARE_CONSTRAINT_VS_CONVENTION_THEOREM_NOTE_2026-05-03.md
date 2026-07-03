@@ -1,22 +1,27 @@
 # g_bare Conditional Algebra Corollary
 
-**Date:** 2026-05-03. Repair narrowing: 2026-05-25.
+**Date:** 2026-05-03. Repair narrowing: 2026-05-25. Wilson matching
+dependency wiring: 2026-06-16.
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
-**Source status:** repair candidate for independent audit. This note does
-not apply an audit verdict and does not promote any downstream `g_bare` row.
+**Actual current-surface status:** conditional-support / bounded algebraic
+surface only. This source does not claim retained status, does not apply an
+audit verdict, and does not promote any downstream `g_bare` row.
 **Primary runner:** `scripts/frontier_g_bare_constraint_surface_check.py`
 
 ## 0. Review-Loop Boundary
 
 The prior source presented this row as a constraint-vs-convention theorem
 that could be read as excluding no-external-scale alternatives and pinning
-the Wilson `beta = 6` surface. Review-loop narrows that surface because the
+the Wilson `beta = 6` surface. Review-loop narrowed that surface because the
 argument load-bears the Wilson matching/action-surface premise and the
 explicit `beta = 6` input; this row does not derive those as retained
-one-hop authorities. The repaired source is therefore no longer a
-no-alternative or no-external-scale theorem. It is only the local conditional
-algebraic corollary:
+one-hop authorities. The 2026-06-16 wiring now supplies the Wilson matching
+premise through the bounded small-`a` theorem
+[`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md).
+The row still does not derive the local `beta = 6` surface, and it is
+therefore no longer a no-alternative or no-external-scale theorem. It is only
+the local bounded algebraic corollary:
 
 ```text
 CN + WM + beta=6 + N_c=3  =>  g_bare^2 = 1.
@@ -28,8 +33,23 @@ Here:
   `Tr(T_a T_b) = delta_ab / 2`, supplied by the retained CL3 color algebra
   authority [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](CL3_COLOR_AUTOMORPHISM_THEOREM.md).
 - **WM** is the Wilson matching relation
-  `beta = 2 N_c / g_bare^2`.
+  `beta = 2 N_c / g_bare^2`, supplied inside the standard Wilson action by
+  [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md).
 - **beta=6** is an explicit scoped input to this corollary, not derived here.
+
+### Current-surface firewall
+
+This row is intentionally audit-ready only as a conditional algebraic support
+surface. Its load-bearing implication is exact, but the implication is
+licensed only after the scoped beta surface below is supplied:
+
+1. the local Wilson coefficient surface `beta = 6` at `N_c = 3`.
+
+That beta surface is not derived by this note and is not promoted by citing
+this note. A downstream row may cite this note only for the conditional statement
+`CN + WM + beta=6 + N_c=3 => g_bare^2=1`. It may not cite this row as a
+retained derivation of the Wilson action form, the beta surface, or the
+broader `g_bare` derivation.
 
 ## 1. The Narrowed Claim
 
@@ -57,6 +77,7 @@ This repair intentionally removes the stronger claims that caused the audit
 blocker. The note does not claim:
 
 - that canonical normalization alone pins the Wilson coefficient `beta=6`;
+- that the Wilson action surface is framework-native on this row;
 - that the Wilson plaquette action surface is uniquely selected from the
   framework baseline;
 - that all external-scale or alternative-convention routes have been
@@ -64,9 +85,10 @@ blocker. The note does not claim:
 - that `G_BARE_DERIVATION_NOTE.md` is retained or promoted;
 - that this corollary closes the separate rescaling-freedom-removal row.
 
-The only load-bearing retained authority cited by this note is the CL3 color
-algebra authority for the trace-normalized SU(3) carrier. The Wilson matching
-relation and `beta=6` are explicit scoped assumptions of the corollary.
+The load-bearing cited authorities are the CL3 color algebra authority for the
+trace-normalized SU(3) carrier and the Wilson small-`a` matching theorem for
+the relation `beta = 2 N_c / g_bare^2`. The local beta surface `beta=6`
+remains an explicit scoped assumption of the corollary.
 
 ## 3. Runner Slice
 
@@ -88,16 +110,23 @@ after the source row is parsed.
 
 Audit status is set only by the independent audit lane. The intended
 source-side claim type is `bounded_theorem`: assuming canonical trace
-normalization CN, `N_c = 3`, scoped Wilson matching
+normalization CN, `N_c = 3`, Wilson small-`a` matching
 `beta = 2 N_c / g_bare^2`, and the scoped input `beta = 6`, exact rational
 arithmetic gives `g_bare^2 = 1`. This row does not derive `beta = 6`, does
 not exclude external-scale conventions, and does not promote downstream
 `g_bare` claims.
 
+The next science route, if this row is to move beyond conditional support, is
+not another rewrite of this algebra. It is a separate theorem-grade supply of
+the `beta = 6` surface from accepted framework inputs. Until such a theorem
+exists and independent audit accepts it, this note remains a bounded support
+surface conditional on that beta input.
+
 ## 5. Cross-References
 
-The only load-bearing markdown citation in this note is the retained CL3
-color algebra authority linked in Section 0. Related rows such as
+The load-bearing markdown citations in this note are the retained CL3 color
+algebra authority linked in Section 0 and the Wilson small-`a` matching theorem
+linked above. Related rows such as
 `G_BARE_DERIVATION_NOTE.md`,
 `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`,
 `G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`, and

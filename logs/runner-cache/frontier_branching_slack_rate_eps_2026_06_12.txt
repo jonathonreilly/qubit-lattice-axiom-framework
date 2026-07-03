@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/frontier_branching_slack_rate_eps_2026_06_12.py
+runner_sha256: 6335106013c66cb808c9d75ce79e6fc84290825cf8a3751677da997369084c2e
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+SCOPE: broadcast+weak-measurement model, exact trees; the sampled-grid trend toward the projective endpoint (eps=1 exact control); the slack table and its eps/NFRAG patterns are the data; threshold-relativity probed; NOT claimed: thermodynamic specialness, measures over states, other dynamics; Born cap inherited.
+
+SLACK TABLE (threshold |C| > 0.5; S=sum_b w_b s_b)
+NFRAG  eps=0.3 S/rate       eps=0.6 S/rate       eps=0.9 S/rate       eps=0.95 S/rate      eps=0.99 S/rate     
+    3  0.952500/0.317500    1.560000/0.520000    3.000000/1.000000    3.000000/1.000000    3.000000/1.000000   
+    4  0.774050/0.193513    3.385600/0.846400    3.945850/0.986462    3.985741/0.996435    3.999406/0.999851   
+    5  2.412188/0.482438    3.720000/0.744000    5.000000/1.000000    5.000000/1.000000    5.000000/1.000000   
+
+THRESHOLD-RELATIVITY TABLE (weighted slack; columns are |C| thresholds)
+NFRAG  eps    t=0.3     t=0.5     t=0.7
+    3    0.3  0.000000  0.952500  0.952500
+    3    0.6  1.560000  1.560000  3.000000
+    3    0.9  3.000000  3.000000  3.000000
+    3   0.95  3.000000  3.000000  3.000000
+    3   0.99  3.000000  3.000000  3.000000
+    4    0.3  0.774050  0.774050  2.757850
+    4    0.6  3.385600  3.385600  3.385600
+    4    0.9  3.945850  3.945850  3.945850
+    4   0.95  3.985741  3.985741  3.985741
+    4   0.99  3.999406  3.999406  3.999406
+    5    0.3  0.606406  2.412188  2.412188
+    5    0.6  3.720000  3.720000  5.000000
+    5    0.9  5.000000  5.000000  5.000000
+    5   0.95  5.000000  5.000000  5.000000
+    5   0.99  5.000000  5.000000  5.000000
+
+[PASS] X4a branch budget inequality at thresholds 0.3/0.5/0.7: universal R_b <= NFRAG-B_b over 840 branch-threshold cases; max(R-rhs)=0; min main slack=0; worst=N=3 eps=0.3 path=+++ B=0 R=0 slack=3 threshold=0.3 R=3 rhs=3
+[PASS] X4b weighted mean slack strictly increasing on the sampled eps grid eps=0.3/0.6/0.9: strict increase with eps at fixed NFRAG on eps=0.3/0.6/0.9; N=3: eps=0.3 S=0.952500, eps=0.6 S=1.560000, eps=0.9 S=3.000000 | N=4: eps=0.3 S=0.774050, eps=0.6 S=3.385600, eps=0.9 S=3.945850 | N=5: eps=0.3 S=2.412188, eps=0.6 S=3.720000, eps=0.9 S=5.000000
+[PASS] X4c eps=0.9 max |rate-1| < 0.0136 and eps=0.99 max |rate-1| < 0.000149 over sampled NFRAG: sampled-grid trend toward the projective endpoint (eps=1 exact control): eps=0.9 max |rate-1| < 0.0136 and eps=0.99 max |rate-1| < 0.000149; eps=0.3 max|rate-1|=0.806487500000 [N=3 rate=0.317500000000 |rate-1|=0.682500000000; N=4 rate=0.193512500000 |rate-1|=0.806487500000; N=5 rate=0.482437500000 |rate-1|=0.517562500000] | eps=0.6 max|rate-1|=0.480000000000 [N=3 rate=0.520000000000 |rate-1|=0.480000000000; N=4 rate=0.846400000000 |rate-1|=0.153600000000; N=5 rate=0.744000000000 |rate-1|=0.256000000000] | eps=0.9 max|rate-1|=0.013537500000 bound<0.013600000000 [N=3 rate=1.000000000000 |rate-1|=0.000000000000; N=4 rate=0.986462500000 |rate-1|=0.013537500000; N=5 rate=1.000000000000 |rate-1|=0.000000000000] | eps=0.95 max|rate-1|=0.003564843750 [N=3 rate=1.000000000000 |rate-1|=0.000000000000; N=4 rate=0.996435156250 |rate-1|=0.003564843750; N=5 rate=1.000000000000 |rate-1|=0.000000000000] | eps=0.99 max|rate-1|=0.000148503750 bound<0.000149000000 [N=3 rate=1.000000000000 |rate-1|=0.000000000000; N=4 rate=0.999851496250 |rate-1|=0.000148503750; N=5 rate=1.000000000000 |rate-1|=0.000000000000]
+[PASS] X4d weighted marginal-sum entropy bound: max(weighted marginal-sum entropy - NFRAG)=1.7763568394e-15 at N=4 eps=0 entropy=4; max Born-weight normalization error=8.881784197e-16
+[PASS] X4e control eps=0 linear ledger: eps=0 recovers R_b=NFRAG and B_b=0 on every active branch; max |slack|=0, min R=3, max B=0
+[PASS] X4e control eps=1 eigenstate branches: eps=1 active branches are pointer Z-eigenstates with R_b=0; reported slack=NFRAG-B_b; N=3 active=2 +++:B=3,s=0 ---:B=0,s=3 | N=4 active=2 ++++:B=4,s=0 ----:B=0,s=4 | N=5 active=2 +++++:B=5,s=0 -----:B=0,s=5
+[PASS] X4e control |0>-pointer zero records: |0>-pointer control has zero connected-correlator records at all thresholds; max R=0, min B=3
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

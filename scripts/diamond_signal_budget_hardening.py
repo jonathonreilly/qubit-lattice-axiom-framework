@@ -3,14 +3,14 @@
 
 This is intentionally narrow.
 
-The retained moving-source proxy gives us:
+The moving-source proxy gives us:
 
 - one explicit source geometry
 - one signed scaling map in source velocity
-- one proxy-budget estimate from the weakest retained nonzero observables
+- one proxy-budget estimate from the weakest nonzero proxy observables
 
 What it does not give us is an absolute lab budget. That still needs a
-calibrated transfer coefficient from the retained proxy units into the actual
+calibrated transfer coefficient from the proxy units into the actual
 NV readout / noise floor.
 """
 
@@ -21,7 +21,7 @@ from math import fabs
 
 
 @dataclass(frozen=True)
-class RetainedRow:
+class ProxyRow:
     velocity: float
     delta_y_vs_static: float
     phase_lag_rad: float
@@ -38,15 +38,15 @@ GEOMETRY = {
 
 
 ROWS = [
-    RetainedRow(velocity=-1.00, delta_y_vs_static=-1.641405e-06, phase_lag_rad=4.852935e-05),
-    RetainedRow(velocity=-0.50, delta_y_vs_static=-9.233039e-07, phase_lag_rad=1.309075e-05),
-    RetainedRow(velocity=0.00, delta_y_vs_static=0.0, phase_lag_rad=0.0),
-    RetainedRow(velocity=0.50, delta_y_vs_static=8.665715e-07, phase_lag_rad=1.401315e-05),
-    RetainedRow(velocity=1.00, delta_y_vs_static=1.472200e-06, phase_lag_rad=4.334258e-05),
+    ProxyRow(velocity=-1.00, delta_y_vs_static=-1.641405e-06, phase_lag_rad=4.852935e-05),
+    ProxyRow(velocity=-0.50, delta_y_vs_static=-9.233039e-07, phase_lag_rad=1.309075e-05),
+    ProxyRow(velocity=0.00, delta_y_vs_static=0.0, phase_lag_rad=0.0),
+    ProxyRow(velocity=0.50, delta_y_vs_static=8.665715e-07, phase_lag_rad=1.401315e-05),
+    ProxyRow(velocity=1.00, delta_y_vs_static=1.472200e-06, phase_lag_rad=4.334258e-05),
 ]
 
 
-def _nonzero_rows() -> list[RetainedRow]:
+def _nonzero_rows() -> list[ProxyRow]:
     return [row for row in ROWS if fabs(row.velocity) > 1e-12]
 
 
@@ -107,7 +107,7 @@ def build_report() -> str:
     lines.append("")
     lines.append("DIAGNOSIS")
     lines.append(
-        "  the centroid sign flip is the sharper retained observable; the phase lag is a weaker secondary residue"
+        "  the centroid sign flip is the sharper proxy observable; the phase lag is a weaker secondary residue"
     )
     lines.append(
         "  a real absolute lab budget is still blocked by the missing transfer coefficient from proxy units to NV readout units"
@@ -115,7 +115,7 @@ def build_report() -> str:
     lines.append("  until that calibration exists, this remains a proxy-budget card rather than a lab-ready amplitude claim")
     lines.append("")
     lines.append("FINAL VERDICT")
-    lines.append("  retained narrow hardening: one explicit source geometry, one signed scaling map, and one proxy budget")
+    lines.append("  bounded proxy hardening: one explicit source geometry, one signed scaling map, and one proxy budget")
     return "\n".join(lines)
 
 

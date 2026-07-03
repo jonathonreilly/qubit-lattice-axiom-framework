@@ -1,0 +1,103 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.py
+runner_sha256: e9a9ee33578833576432b686ee0dac7070a9ab03989f4b8d607319a1e62ba2a8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md exists
+PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: actual_current_surface_status: exact-support
+PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: trace_class: upstream_support
+PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: audit_required_before_effective_retained: true
+PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: controlled-copy/fresh-fragment write-isometry theorem
+PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: The ideal write isometry is no longer an
+PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: It does not derive arbitrary persistent-record dynamics into a normalized
+PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: It does not select a generation or Koide dial location.
+PASS docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md exists
+PASS docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md contains: Controlled-Copy Write-Isometry Theorem
+PASS docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md contains: U_cc(pi/4)(|psi> tensor |0>_R)
+PASS docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md contains: <eta_0|eta_1> = 0
+PASS docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md contains: K_r = <r|W = P_r
+PASS docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md contains: What This Does Not Close
+PASS docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md exists
+PASS docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md contains: pointer-non-demolition
+PASS docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md contains: [H_int, Pi_S] = 0
+PASS docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md contains: This is **bounded** because
+PASS docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md contains: does not derive a dynamics, an action, gauge bosons, coupling values
+PASS docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md exists
+PASS docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md contains: The finite Kraus/CPTP algebra closes once a normalized linear isometry `W` is
+PASS docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md contains: deriving `W` from persistent-record dynamics
+PASS docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md contains: persistent-record-to-isometry bridge remains open
+PASS docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md exists
+PASS docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md contains: exhibit V explicitly as a
+PASS docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md contains: Selection of which `{K_r}` family is physical
+PASS docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md contains: The choice of `{K_r}` is downstream framework physics
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md exists
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: pre-record carrier
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: formation/preservation dynamics
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: post-record information dynamics
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: Record history/count support is therefore an exact **consumer** of realized
+
+------------------------------------------------------------------------------
+Projective record-write isometry algebra
+------------------------------------------------------------------------------
+PASS P0 hermitian
+PASS P0 idempotent
+PASS P1 hermitian
+PASS P1 idempotent
+PASS P0 P1 = 0
+PASS P1 P0 = 0
+PASS sum_r P_r = I
+PASS W has record-major block-column shape (4,2) :: (4, 2)
+PASS W^dagger W = I
+PASS K0 extraction equals P0
+PASS K1 extraction equals P1
+PASS sum_r K_r^dagger K_r = I
+PASS Choi matrix is positive semidefinite
+PASS unconditional channel trace is one
+PASS unconditional channel is pointer dephasing
+PASS pre-record coherence is removed in post-record unread state
+PASS branch 0 probability is nonnegative :: p=0.666666666667
+PASS branch 0 normalized when nonzero
+PASS branch 0 positive when nonzero
+PASS branch 1 probability is nonnegative :: p=0.333333333333
+PASS branch 1 normalized when nonzero
+PASS branch 1 positive when nonzero
+PASS branch probabilities sum to one :: sum=1.000000000000
+PASS branch probabilities match pointer populations
+PASS branch 0 repeat-read has probability one
+PASS branch 0 repeat-read leaves state fixed
+PASS branch 0 cross-read excluded
+PASS branch 1 repeat-read has probability one
+PASS branch 1 repeat-read leaves state fixed
+PASS branch 1 cross-read excluded
+PASS record labels are orthogonal one-hot atoms
+PASS W preserves norm for coherent pre-record ket
+PASS W writes pointer label without rotating pointer sector
+
+------------------------------------------------------------------------------
+Boundary controls
+------------------------------------------------------------------------------
+PASS single-label write can be an isometry
+PASS single-label write is not a two-outcome record split
+PASS duplicating the whole state into two outcomes is not normalized
+PASS projector block split is the normalized two-record write
+PASS controlled-copy to W derived for explicit finite model flag is true
+PASS general persistent dynamics to W derived flag is false
+PASS physical Hamiltonian/coupling selected flag is false
+PASS probability law from post-record counts flag is false
+PASS generation/Koide dial selected flag is false
+PASS audit verdict applied flag is false
+
+SUMMARY: PASS=75 FAIL=0
+RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE=EXACT_SUPPORT_UNDER_FINITE_POINTER_MODEL
+GENERAL_PERSISTENT_RECORD_DYNAMICS_TO_W_DERIVED=FALSE
+POST_RECORD_COUNTS_SELECT_PROBABILITY_OR_DIAL=FALSE
+
+----- stderr -----
+

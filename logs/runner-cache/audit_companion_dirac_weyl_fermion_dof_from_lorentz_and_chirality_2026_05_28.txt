@@ -1,26 +1,35 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py
-runner_sha256: 5f21c53618b3ba9661e378166b0e4b1863cf5c5ea0f1233238de024aee7ed28d
-timeout_sec: 120
+runner_sha256: 2c4c1cb092aaeaa87445cb06766b6ca0f82dd928d820cb463bb4656e82ab0ae1
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.29
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
-audit-companion: Dirac/Weyl fermion dof admission bridge
+audit-companion: Dirac/Weyl fermion dof branch-rank bridge
 ----------------------------------------------------------------------------------------
-note: /private/tmp/cl3-review-open-20260527-yg4oK6/docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
-parent: /private/tmp/cl3-review-open-20260527-yg4oK6/docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md
+note: /private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-nervous-panini-8b2aaf/203cfb93-754e-4d2e-a3c5-a4d90bb1908e/scratchpad/wt-companions/docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
+parent: /private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-nervous-panini-8b2aaf/203cfb93-754e-4d2e-a3c5-a4d90bb1908e/scratchpad/wt-companions/docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md
 
 ----------------------------------------------------------------------------------------
 note structure and scope
 ----------------------------------------------------------------------------------------
   [PASS] note contains: Claim type:** bounded_theorem
   [PASS] note contains: Status authority:** source-note proposal only
-  [PASS] note contains: does **not** add a new axiom
-  [PASS] note contains: Framework authority packet (R1-R4)
-  [PASS] note contains: Supplied admission packet (Q1-Q2
+  [PASS] note contains: 2026-06-07 source-packet repair
+  [PASS] note contains: 2026-06-08 label-semantics safe-narrow
+  [PASS] note contains: 2026-06-08 direct branch-rank repair
+  [PASS] note contains: non-load-bearing interpretation
+  [PASS] note contains: branch-rank count
+  [PASS] note contains: Q1 is retired as an unsupported algebraic admission
+  [PASS] note contains: Q2 is repaired as a textbook-counting import
+  [PASS] note contains: source-local finite-rank statement
+  [PASS] note contains: does not derive the Dirac equation
+  [PASS] note contains: does **not** add a new
+  [PASS] note contains: Framework authority and context packet (R1-R4)
+  [PASS] note contains: Retained source plus source-local counting packet (Q1-Q2)
   [PASS] note contains: Proof-walk
   [PASS] note contains: Exact arithmetic check
   [PASS] note contains: Mapping to the parent note's P4 premise
@@ -35,20 +44,55 @@ note structure and scope
   [PASS] note contains: G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28
 
 ----------------------------------------------------------------------------------------
-admission packet (Q1-Q2) marked as not framework-retained
+live ledger load-bearing authority statuses
 ----------------------------------------------------------------------------------------
-  [PASS] admission marker present: Q1 Cl(3,1) Lorentzian signature extension
-  [PASS] admission marker present: Q2 On-shell relativistic thermal-counting convention
-  [PASS] admission marker present: admitted, not derived
-  [PASS] admission marker present: not framework-retained
+  [PASS] ledger row exists: clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10
+  [PASS] clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10: effective_status in ['retained', 'retained_bounded'] (observed='retained_bounded')
+  [PASS] clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10: audit_status is not a failed verdict (observed='audited_clean')
+  [PASS] ledger row exists: cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27
+  [PASS] cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27: effective_status in ['retained'] (observed='retained')
+  [PASS] cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27: audit_status is not a failed verdict (observed='audited_clean')
 
 ----------------------------------------------------------------------------------------
-P4 audit-conditional replacement mapping is explicit
+live ledger context-row statuses
+----------------------------------------------------------------------------------------
+  [PASS] ledger row exists: cpt_exact_note
+  [PASS] cpt_exact_note: effective_status in ['retained'] (observed='retained')
+  [PASS] cpt_exact_note: audit_status is not a failed verdict (observed='audited_clean')
+  [PASS] ledger row exists: spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10
+  [PASS] spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10: effective_status in ['retained'] (observed='retained')
+  [PASS] spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10: audit_status is not a failed verdict (observed='audited_clean')
+  [PASS] ledger row exists: spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10
+  [PASS] spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10: effective_status in ['retained_bounded'] (observed='retained_bounded')
+  [PASS] spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10: audit_status is not a failed verdict (observed='audited_clean')
+
+----------------------------------------------------------------------------------------
+non-load-bearing context pointers (presence only; ledger status not asserted)
+----------------------------------------------------------------------------------------
+  [PASS] note cites non-load-bearing context pointer (ledger status not asserted): PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md
+  [PASS] non-load-bearing context pointer file exists: PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md
+
+----------------------------------------------------------------------------------------
+Q1 retained source and Q2 source-local rank marking
+----------------------------------------------------------------------------------------
+  [PASS] source/admission marker present: Q1 Cl(3,1) finite Clifford-algebra source
+  [PASS] source/admission marker present: retained Q1 source
+  [PASS] source/admission marker present: Q1 is therefore retired as an unsupported admission
+  [PASS] source/admission marker present: Q2 On-shell finite-rank counting certificate
+  [PASS] source/admission marker present: rank D(p) = 2
+  [PASS] source/admission marker present: dim_C ker D(p) = 2
+  [PASS] source/admission marker present: not an imported textbook counting convention
+  [PASS] source/admission marker present: physical Wick rotation
+  [PASS] source/admission marker present: Lorentzian sign
+
+----------------------------------------------------------------------------------------
+P4 numeric support and non-load-bearing label boundary are explicit
 ----------------------------------------------------------------------------------------
   [PASS] parent note carries P4 premise
   [PASS] bridge cites parent P4 wording
-  [PASS] bridge maps P4 to R1 + R3 (Dirac)
-  [PASS] bridge maps Weyl halving to R2 (chirality)
+  [PASS] bridge makes physical label semantics non-load-bearing
+  [PASS] bridge maps Weyl arithmetic halving to R2 (chirality)
+  [PASS] P4 numeric counts are source-supported while label wording stays separate
 
 ----------------------------------------------------------------------------------------
 proof-walk forbids lattice-action imports
@@ -74,15 +118,15 @@ repo-vocabulary discipline (no new class / tier framings)
   [PASS] forbidden vocabulary absent: 'algebraic universality'
 
 ----------------------------------------------------------------------------------------
-exact rational arithmetic: dof_Dirac = 4, dof_Weyl = 2
+exact rational arithmetic: branch-rank dof_Dirac = 4, dof_Weyl = 2
 ----------------------------------------------------------------------------------------
-  [PASS] Dirac dof = 2 (spin) * 2 (particle-antiparticle) = 4 (got 4)
-  [PASS] Dirac dof = (dim_R V_(3,1) * 2) / 2 = 4 (got 4)
-  [PASS] factorisations agree (R1*R3 = Q1-spinor decomposition)
-  [PASS] Weyl dof = Dirac dof / 2 (chirality projection, R2) = 2 (got 2)
-  [PASS] Weyl dof = 2 (helicity-antiparticle)
+  [PASS] Dirac dof = 2 positive-energy kernel states + 2 negative-energy kernel states = 4 (got 4)
+  [PASS] Dirac dof = (retained Q1 dim_R V_(3,1) * 2) / source-local Q2 2 = 4 (got 4)
+  [PASS] branch-rank and Q1-spinor decompositions agree
+  [PASS] Weyl dof = 1 fixed-chirality positive-energy state + 1 fixed-chirality negative-energy state = 2 (got 2)
+  [PASS] conventional Weyl label wording has the same cardinality but is non-load-bearing
   [PASS] naive off-shell real-component count = 8 (4 complex spinor)
-  [PASS] on-shell halving 8 / 2 = 4 (Q2 admission)
+  [PASS] on-shell halving 8 / 2 = 4 (source-local Q2 rank count)
 
 ----------------------------------------------------------------------------------------
 explicit 4x4 real-matrix realisation of Cl(3, 1)
@@ -111,6 +155,39 @@ explicit 4x4 real-matrix realisation of Cl(3, 1)
   [PASS] rank(P_L) + rank(P_R) = 4 (full spinor space dim)
 
 ----------------------------------------------------------------------------------------
+Q2 finite-rank on-shell Dirac counting certificate
+----------------------------------------------------------------------------------------
+  [PASS] standard gamma_0 squares to eta=1
+  [PASS] standard gamma_1 squares to eta=-1
+  [PASS] standard gamma_2 squares to eta=-1
+  [PASS] standard gamma_3 squares to eta=-1
+  [PASS] standard gamma_0, gamma_1 anticommute
+  [PASS] standard gamma_0, gamma_2 anticommute
+  [PASS] standard gamma_0, gamma_3 anticommute
+  [PASS] standard gamma_1, gamma_2 anticommute
+  [PASS] standard gamma_1, gamma_3 anticommute
+  [PASS] standard gamma_2, gamma_3 anticommute
+  [PASS] rest branch D has rank 2 (rank=2)
+  [PASS] rest branch dim_C ker D = 2
+  [PASS] moving branch satisfies E^2 - p^2 = m^2
+  [PASS] moving branch det(gamma.p - m) = 0
+  [PASS] moving branch D has rank 2 (rank=2)
+  [PASS] moving branch dim_C ker D = 2
+  [PASS] on-shell factorization D(p)(gamma.p + m)=0
+  [PASS] negative-energy branch det(gamma.p - m) = 0
+  [PASS] negative-energy branch D has rank 2 (rank=2)
+  [PASS] negative-energy branch dim_C ker D = 2
+  [PASS] off-shell contrast has nonzero determinant
+  [PASS] off-shell contrast has rank 4
+  [PASS] massless positive-energy branch dim_C ker D = 2
+  [PASS] left chirality selects one positive-energy massless on-shell dimension
+  [PASS] right chirality selects one positive-energy massless on-shell dimension
+  [PASS] massless negative-energy branch dim_C ker D = 2
+  [PASS] left chirality selects one negative-energy massless on-shell dimension
+  [PASS] right chirality selects one negative-energy massless on-shell dimension
+  [PASS] Q2 real-count reading: 8 off-shell real components -> 4 real on-shell branch
+
+----------------------------------------------------------------------------------------
 R4 CAR irreducible single-mode carrier dim 2
 ----------------------------------------------------------------------------------------
   [PASS] {c, c^dagger} = I
@@ -122,21 +199,21 @@ R4 CAR irreducible single-mode carrier dim 2
   [PASS] CAR carrier dim = 2
 
 ----------------------------------------------------------------------------------------
-R3 CPT particle-antiparticle pairing factor 2
+non-load-bearing conventional label cross-checks
 ----------------------------------------------------------------------------------------
-  [PASS] CPT pair label cardinality = 2
+  [PASS] context-only CPT pair label cardinality = 2
   [PASS] two-mode CPT-paired Fock dim = 4
-  [PASS] Dirac state-label cardinality = spin * particle-antiparticle = 4
+  [PASS] context-only Dirac state-label cardinality = spin * particle-antiparticle = 4
 
 ----------------------------------------------------------------------------------------
-P4 replacement support: bridge supplies the factor 2 * 2 = 4 from R-packet
+P4 numeric support: branch ranks carry 4 and 2; labels are context
 ----------------------------------------------------------------------------------------
-  [PASS] bridge reproduces P4 Dirac dof = 4 from R1 + R3
-  [PASS] bridge reproduces P4 Weyl dof = 2 from R1 + R3 + R2
-  [PASS] Q1 + Q2 path also yields 4 (cross-check on the spinor-dim side)
+  [PASS] bridge reproduces P4 Dirac numeric dof = 4 from Q2 branch ranks
+  [PASS] bridge reproduces P4 Weyl numeric dof = 2 from fixed-chirality branch ranks
+  [PASS] retained Q1 + source-local Q2 path also yields 4 (spinor-dim cross-check)
 
-TOTAL: PASS=82 FAIL=0
-VERDICT: bounded admission bridge passes; Dirac dof = 4 and Weyl dof = 2 follow from the framework authority packet R1-R4 plus supplied admission packet Q1-Q2 by exact rational arithmetic.
+TOTAL: PASS=143 FAIL=0
+VERDICT: Q1/Q2-counting-repaired bounded bridge passes; Dirac dof = 4 and Weyl dof = 2 follow by exact rational arithmetic from retained Q1 and source-local Q2 branch-rank counting; conventional physical labels are non-load-bearing interpretation unless a separate physical-label bridge is supplied.
 
 ----- stderr -----
 

@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/frontier_fermionic_gaussian_npoint_from_two_point.py
+runner_sha256: 5e43236f6184e479615181a5a3ac31890bf54101ee957a8f5ed210fbd9f350eb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+PASS: PFAFF_wick_hierarchy_pf2_eq_det every 2n-point = Pf(C); Pf(C)^2=det(C) for 2n in {2,4,6,8} (=E5)
+PASS: CONT_pfaffian_continuous |dPf| shrinks with |dC|: ['1.0e-02', '8.9e-04', '3.3e-06'] (polynomial -> continuous)
+PASS: REDUCE_npoint_converges_with_2point as C_a->C, |Pf(C_a)-Pf(C)| -> 0 monotonically: ['1.36e+00', '8.14e-01', '3.00e-01', '1.06e-01', '0.00e+00']
+PASS: REDUCE_fermionic_measure_is_correlator_hierarchy free fermionic Gaussian/Berezin hierarchy is specified by its correlators; no bosonic tightness premise is used
+PASS: REDUCE_fixed_finite_npoint_reduces_to_two_point fixed finite n-point convergence <= supplied 2-point convergence + Pfaffian hierarchy + continuity
+PASS: NARROW_no_status_promotion_or_OS_closure does not promote the 2-point parent, close OS reconstruction, prove boosts, or touch interacting theory
+
+TOTAL: PASS=6 FAIL=0
+VERDICT: bounded finite algebra only. For a free fermionic Gaussian/Berezin hierarchy, every
+fixed finite n-point correlator is the Pfaffian of the 2-point matrix, and the Pfaffian is
+continuous. Therefore supplied two-point convergence forces convergence of the fixed finite
+Pfaffian correlators. This does not promote the two-point parent, close OS reconstruction,
+derive boosts/Poincare covariance, or address interacting theory.
+
+----- stderr -----
+

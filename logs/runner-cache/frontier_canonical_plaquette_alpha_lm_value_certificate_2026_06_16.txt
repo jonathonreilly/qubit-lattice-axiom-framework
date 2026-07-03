@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/frontier_canonical_plaquette_alpha_lm_value_certificate_2026_06_16.py
+runner_sha256: ea0dfda2dbff8cb672f6da5afb147a8640c3b00cc463d8e64c6c37ee703371da
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+========================================================================
+Canonical plaquette alpha_LM value certificate
+========================================================================
+Claim boundary: bounded arithmetic certificate only.
+No audit verdict is changed by this runner.
+
+========================================================================
+BLOCK 1: source surfaces
+========================================================================
+  [PASS] docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md exists  (present)
+  [PASS] docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md exists  (present)
+  [PASS] scripts/canonical_plaquette_surface.py exists  (present)
+
+========================================================================
+BLOCK 2: note boundary
+========================================================================
+  [PASS] claim type is bounded_theorem
+  [PASS] note says independent audit owns effective status
+  [PASS] note says no audit verdict is written
+  [PASS] note says no new axiom
+  [PASS] note says parent plaquette is not derived here
+  [PASS] note links parent plaquette surface
+  [PASS] note links canonical helper
+  [PASS] parent note carries canonical value
+  [PASS] helper cites parent note
+
+========================================================================
+BLOCK 3: canonical arithmetic
+========================================================================
+  P              = 0.593400000000000
+  u_0            = 0.877681381198684
+  alpha_bare     = 0.079577471545948
+  alpha_LM       = 0.090667836017286
+  alpha_LM/(4pi) = 0.007215117140798
+  alpha_s(v)     = 0.103303816122267
+  [PASS] P equals canonical 0.5934
+  [PASS] u_0 equals P^(1/4)
+  [PASS] u_0^4 equals P
+  [PASS] alpha_bare equals 1/(4pi)
+  [PASS] alpha_LM equals alpha_bare/u_0
+  [PASS] alpha_LM*u_0 equals alpha_bare
+  [PASS] alpha_s(v) equals alpha_bare/u_0^2
+  [PASS] alpha_s(v)*u_0^2 equals alpha_bare
+  [PASS] alpha_LM/(4pi) matches displayed value
+
+========================================================================
+BLOCK 4: downstream-use firewall
+========================================================================
+  [PASS] note forbids MC-certificate interpretation
+  [PASS] note forbids analytic beta=6 closure interpretation
+  [PASS] note keeps physical bridge requirements live
+  [PASS] runner does not edit audit files  (source verifier only)
+
+========================================================================
+SUMMARY: PASS=25  FAIL=0
+========================================================================
+
+RESULT:
+  Canonical alpha/plaquette arithmetic certificate is complete iff FAIL=0.
+  The parent plaquette value and all retained effects remain audit-owned.
+
+----- stderr -----
+

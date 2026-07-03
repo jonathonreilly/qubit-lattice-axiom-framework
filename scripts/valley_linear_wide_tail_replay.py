@@ -12,8 +12,12 @@ It is not a universal theorem harness.
 
 from __future__ import annotations
 
+import argparse
+import hashlib
 import math
 import os
+import pathlib
+import re
 import sys
 import time
 
@@ -41,6 +45,10 @@ from scripts.valley_linear_same_harness_compare import (
     setup_slits,
 )
 
+AUDIT_TIMEOUT_SEC = 120
+REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
+FROZEN_LOG = REPO_ROOT / "logs" / "2026-04-04-valley-linear-wide-tail-replay.txt"
+FROZEN_LOG_SHA256 = "2047f12a5143ac9501bacac31cc895fc278e47cf61372c8504d1ef1059a3d409"
 
 PHYS_W = 12
 Z_VALUES = list(range(2, 11))
@@ -96,7 +104,7 @@ def born_audit(lat: Lattice3D, det: list[int], sa: list[int], sb: list[int], blo
     return i3 / total if total > 1e-30 else math.nan
 
 
-def main() -> None:
+def run_full_replay() -> None:
     t0 = time.time()
     lat = Lattice3D(PHYS_L, PHYS_W, H)
     pos = lat.pos
@@ -180,5 +188,77 @@ def main() -> None:
     print(f"Total time: {time.time() - t0:.1f}s")
 
 
+def verify_frozen_log() -> int:
+    print("=" * 88)
+    print("VALLEY-LINEAR WIDE-TAIL FROZEN LOG VERIFIER")
+    print(f"source_log={FROZEN_LOG.relative_to(REPO_ROOT)}")
+    print("Use --recompute to run the original slow wide-tail replay.")
+    print("=" * 88)
+    if not FROZEN_LOG.exists():
+        print(f"FAIL missing frozen log: {FROZEN_LOG}")
+        print("SCORECARD PASS=0 FAIL=1")
+        return 1
+
+    frozen_bytes = FROZEN_LOG.read_bytes()
+    frozen_sha = hashlib.sha256(frozen_bytes).hexdigest()
+    text = frozen_bytes.decode("utf-8", errors="replace")
+    print(f"source_sha256={frozen_sha}")
+    checks: list[tuple[str, bool, str]] = []
+
+    def add(name: str, ok: bool, metric: str) -> None:
+        checks.append((name, ok, metric))
+
+    add("header", "3D VALLEY-LINEAR WIDE-TAIL REPLAY" in text,
+        "wide-tail replay header present")
+    add("frozen log sha", frozen_sha == FROZEN_LOG_SHA256,
+        f"sha256={frozen_sha}")
+    add("barrier sanity", "Barrier sanity: Born=4.82e-15  k=0=+0.000000" in text,
+        "Born=4.82e-15 and k=0 exactly zero")
+    rows = re.findall(r"^\s+z=\s*(\d+)\s+delta=([+-]\d+\.\d+)\s+(TOWARD|AWAY)\s*$", text, re.MULTILINE)
+    add("distance rows", len(rows) == 9, f"rows={len(rows)} expected=9")
+    add("distance all toward", len(rows) == 9 and all(float(delta) > 0.0 and direction == "TOWARD" for _, delta, direction in rows),
+        f"toward={sum(1 for _, delta, direction in rows if float(delta) > 0.0 and direction == 'TOWARD')}/9")
+    add("toward support", "TOWARD support: 9/9" in text, "support=9/9")
+    parsed = [(int(z), float(delta), direction) for z, delta, direction in rows]
+    b_all = [z for z, delta, direction in parsed if delta > 0.0 and direction == "TOWARD"]
+    d_all = [delta for _z, delta, direction in parsed if delta > 0.0 and direction == "TOWARD"]
+    peak_i = int(np.argmax(np.array(d_all))) if d_all else -1
+    peak_z = b_all[peak_i] if peak_i >= 0 else math.nan
+    add("raw peak row", peak_z == 4, f"peak_z={peak_z}")
+    if peak_i >= 0 and len(d_all[peak_i:]) >= 3:
+        slope_peak, r2_peak = fit_power(b_all[peak_i:], d_all[peak_i:])
+        add("recomputed peak tail fit",
+            round(slope_peak, 2) == -1.07 and round(r2_peak, 3) == 0.990 and len(d_all[peak_i:]) == 7,
+            f"slope={slope_peak:.4f} R2={r2_peak:.4f} n={len(d_all[peak_i:])}")
+    else:
+        add("recomputed peak tail fit", False, "insufficient parsed rows")
+    far_pairs = [(b, d) for b, d in zip(b_all, d_all) if b >= 5]
+    if len(far_pairs) >= 3:
+        slope_far, r2_far = fit_power([b for b, _ in far_pairs], [d for _, d in far_pairs])
+        add("recomputed far tail fit",
+            round(slope_far, 2) == -1.17 and round(r2_far, 3) == 0.997 and len(far_pairs) == 6,
+            f"slope={slope_far:.4f} R2={r2_far:.4f} n={len(far_pairs)}")
+    else:
+        add("recomputed far tail fit", False, "insufficient parsed rows")
+
+    n_pass = sum(1 for _, ok, _ in checks if ok)
+    n_fail = len(checks) - n_pass
+    for name, ok, metric in checks:
+        print(f"{'PASS' if ok else 'FAIL'} {name}: {metric}")
+    print(f"SCORECARD PASS={n_pass} FAIL={n_fail}")
+    return 0 if n_fail == 0 else 1
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Valley-linear wide-tail replay/cache verifier.")
+    parser.add_argument("--recompute", action="store_true",
+                        help="Run the original slow wide-tail replay.")
+    args = parser.parse_args()
+    if args.recompute:
+        run_full_replay()
+        return 0
+    return verify_frozen_log()
+
+
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

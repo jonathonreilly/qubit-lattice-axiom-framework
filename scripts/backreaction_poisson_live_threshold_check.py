@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from scripts import backreaction_poisson as bp  # noqa: E402
+import scripts.backreaction_poisson as bp  # noqa: E402
 
 
 G_GRID = (0.0, 0.001, 0.005, 0.010, 0.011, 0.012, 0.020, 0.050, 0.100)

@@ -1,0 +1,82 @@
+===== runner cache v1 =====
+runner: scripts/frontier_wilson_m_h_tree_at_extremum_algebraic_core_split_2026_06_18.py
+runner_sha256: 69766c8e0bbfd7e37590a7ad52cac94ad8386846c9bfd4e70a22e3ddb6929adb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+
+----------------------------------------------------------------------------------------
+A. Note scope and status discipline
+----------------------------------------------------------------------------------------
+  [PASS][A] note contains marker: # Wilson All-Orders Extremum Curvature Algebraic Core Split
+  [PASS][A] note contains marker: **Claim type:** bounded_theorem
+  [PASS][A] note contains marker: **Status authority:** independent audit lane only.
+  [PASS][A] note contains marker: This source note does not set or predict an audit outcome
+  [PASS][A] note contains marker: splits out the clean algebraic diagnostic core
+  [PASS][A] note contains marker: (context handle, not a citation-graph dependency)
+  [PASS][A] note contains marker: not a physical Higgs-pole mass
+  [PASS][A] note contains marker: not a matching equation
+  [PASS][A] note contains marker: current B1 plaquette surface
+  [PASS][A] note contains marker: 0.877681381
+  [PASS][A] note contains marker: It does not promote, demote, or set audit status
+  [PASS][A] note contains marker: WILSON_EXTREMUM_CURVATURE_READOUT_BOUNDARY_CERTIFICATE_2026-06-15.md
+  [PASS][A] note contains marker: PLAQUETTE_SELF_CONSISTENCY_NOTE.md
+  [PASS][A] split note has no markdown dependency edge to parent target
+  [PASS][D] split note avoids matching/overclaim marker: 125.10
+  [PASS][D] split note avoids matching/overclaim marker: 246.22
+  [PASS][D] split note avoids matching/overclaim marker: r_all_orders
+  [PASS][D] split note avoids matching/overclaim marker: m_H_PDG
+  [PASS][D] split note avoids matching/overclaim marker: matching value
+  [PASS][D] split note avoids matching/overclaim marker: physical Higgs-pole mass is derived
+
+----------------------------------------------------------------------------------------
+B. Exact finite-sum algebra
+----------------------------------------------------------------------------------------
+  [PASS][B] binomial multiplicities sum to 16
+  [PASS][B] centered second moment is 16
+  [PASS][B] centered fourth moment is 40
+  [PASS][B] Q_W(0,u0) = 1/(4u0^2) exactly for u0=2/3  (value=9/16)
+  [PASS][B] Q_W(0,u0) = 1/(4u0^2) exactly for u0=7/8  (value=16/49)
+  [PASS][B] Q_W(0,u0) = 1/(4u0^2) exactly for u0=5/4  (value=4/25)
+  [PASS][B] dimensionless r^2 coefficient is -3/4
+  [PASS][B] dimensionless r^4 coefficient is 25/8
+  [PASS][B] r^2 coefficient scales as -3/(4u0^4) for u0=3/5
+  [PASS][B] r^4 coefficient scales as 25/(8u0^6) for u0=3/5
+  [PASS][B] r^2 coefficient scales as -3/(4u0^4) for u0=9/10
+  [PASS][B] r^4 coefficient scales as 25/(8u0^6) for u0=9/10
+
+----------------------------------------------------------------------------------------
+C. Taylor behavior against exact closed form
+----------------------------------------------------------------------------------------
+  [PASS][C] r^4 truncation improves over r^2 truncation at r=1/100  (err2=6.959e-08, err4=4.326e-11)
+  [PASS][C] r^4 truncation improves over r^2 truncation at r=1/200  (err2=4.351e-09, err4=6.763e-13)
+  [PASS][C] r^4 truncation improves over r^2 truncation at r=1/500  (err2=1.114e-10, err4=2.771e-15)
+  [PASS][C] post-r4 residual decreases as r decreases  (errs=[2.763493765833187e-09, 4.3262716188380677e-11, 6.76305420270533e-13])
+  [PASS][C] B1 numerical Q_W finite at r=0.0  (Q=0.324538510)
+  [PASS][C] B1 numerical Q_W finite at r=0.1  (Q=0.312543415)
+  [PASS][C] B1 numerical Q_W finite at r=0.25  (Q=0.264884872)
+  [PASS][C] current B1 u0 differs from older rounded 0.8776 surface  (u0_B1=0.877681381)
+  [PASS][C] current B1 u0 matches 0.877681381 to displayed precision
+
+----------------------------------------------------------------------------------------
+D. Parent linkage and boundary checks
+----------------------------------------------------------------------------------------
+  [PASS][A] parent all-orders note now points to split artifact
+  [PASS][A] parent pointer states original row remains conditional
+  [PASS][A] parent pointer names B1 u0 sync
+  [PASS][D] runner itself does not write audit ledgers
+  [PASS][D] runner has no external mass constants
+  [PASS][D] note keeps physical pole outside scope
+  [PASS][D] note keeps nonzero r derivation outside scope
+  [PASS][D] note keeps external matching outside scope
+  RESIDUAL (declared-open): Physical Higgs-pole readout and uniform-channel selection remain open; this split only certifies the diagnostic curvature algebra.
+  RESIDUAL (declared-open): A framework-native nonzero Wilson coefficient r remains open; r is symbolic in the split theorem.
+
+VERDICT: Wilson all-orders extremum algebraic diagnostic core split verified; matching/readout imports remain outside scope.
+Breakdown: A=17 B=12 C=9 D=11 RESIDUAL=2
+TOTAL: PASS=49 FAIL=0
+
+----- stderr -----
+

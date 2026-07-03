@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/frontier_fs_reconstruction_R_and_link_review_2026_06_06.py
+runner_sha256: 9edcf16a09d5b58bcc3c7a47e1c45d2fb924354b238cd7bfe73b534584e9c109
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+==============================================================================================
+BUILD R (RP selects fermionic) + TIGHTNESS REVIEW of every link in the FS chain
+==============================================================================================
+
+[BUILD R] Reflection-positivity / OS-positivity selects fermionic (given Dirac structure)
+  [PASS] FERMIONIC Dirac H is bounded below (>=0): RP/positivity holds  --  spectrum [0.0, 2.236, 2.236, 4.472]
+  [PASS] BOSONIC Dirac H is UNBOUNDED below: RP/positivity FAILS  --  min over b-occupation<=5 = -11.18 (-> -inf)
+  [PASS] => positivity (= RP via OS reconstruction) FORCES fermionic; bosonic excluded
+  [PASS] R is NON-CIRCULAR: it DERIVES the sign from positivity + the Dirac structure (does not presuppose it)  --  only the continuum Dirac STRUCTURE is presupposed (= LINK C + boost-spinor, upstream)
+  [PASS] microcausality (Pauli, comparator): spin-1/2 anticommutator vanishes at spacelike; commutator does not  --  the other half of spin-statistics; consistent with the energy result
+
+[REVIEW LINK A] qubit spin-1/2 (rotation) -- TIGHT
+  [PASS] per-site su(2): Casimir sum (sigma_i/2)^2 = 3/4 I (j=1/2)
+  [PASS] rotation generator S_3 = -(i/2) sigma_1 sigma_2 = the Cl(3) bivector (up to orientation)  --  internal_external_su2_merger: spin = Clifford bivector
+  [PASS] STATUS A = TIGHT (gives ROTATION spin-1/2); the BOOST part is NOT from A alone (-> C)
+
+[REVIEW LINK B] algebra-3 = spatial-3 (discrete O_h vector rep) -- TIGHT (discrete)
+  [PASS] O_h 90deg-z: U sigma_x U^dag = sigma_y (spatial rotation acts as the vector rep on Pauli)
+  [PASS] U sigma_y U^dag = -sigma_x (completes the vector rotation)
+  [PASS] STATUS B = TIGHT at the DISCRETE level (O_h); continuum upgrade to SO(3)+boosts = LINK C  --  cl3_oh_cubic_lift retained_bounded; NOT the residual
+
+[REVIEW LINK C] emergent Lorentz -- CONDITIONAL / TARGET (NOT tight; the open link)
+  [PASS] emergent Lorentz is a framework TARGET (bounded-conditional), NOT a retained theorem  --  emergent_lorentz_invariance retained_bounded; full Lorentz conditional; leading LV dim-6
+  [PASS] the BOOST-spinor (relativistic upgrade of the retained discrete rotation spin-1/2) lives HERE  --  the rotation su(2) is retained (A); the boost so(3,1)\so(3) is the open part
+  [PASS] STATUS C = NOT tight -- this is the genuine open link of the chain (+ the boost-spinor)
+
+[REVIEW LINK D + R] spin-statistics engine + the RP-selection -- TIGHT (given C)
+  [PASS] LINK D engine is rigorous (= BUILD R): a spin-1/2 bosonic field is positivity-inconsistent  --  Pauli 1940; Streater-Wightman; Osterwalder-Schrader fermions (comparators)
+  [PASS] R's RP-selection is TIGHT GIVEN the relativistic Dirac structure; non-circular (derives the sign)
+  [PASS] R's only upstream dependency is the continuum Dirac structure = LINK C + boost-spinor (not R itself)  --  refines the earlier 'R is circular': the circularity was upstream, in C, not in R
+
+[VERDICT] tightness map of the chain
+      A spin-1/2                         : TIGHT
+      B algebra-3=spatial-3 (discrete)   : TIGHT
+      C emergent Lorentz                 : NOT TIGHT (target/open)
+      D spin-statistics engine           : TIGHT
+      R RP-selection (given C)           : TIGHT
+  [PASS] 4 of 5 links TIGHT; the SINGLE non-tight link is C (emergent Lorentz) + the boost-spinor
+  [PASS] R (built) closes the SIGN given C: FS = forced-modulo {emergent Lorentz + boost-spinor}  --  both framework TARGETS -> NO new principle beyond Planck
+  [PASS] review found NO new gap; it REFINES 'R is circular' -> R is non-circular, circularity is in C
+
+==============================================================================================
+SCORECARD:  PASS = 20   FAIL = 0
+==============================================================================================
+
+----- stderr -----
+

@@ -1,7 +1,14 @@
-# Moonshot Other Testables Note
+# Historical Moonshot Other Testables Note (Retracted)
 
-**Date:** 2026-04-05  
+**Date:** 2026-04-05
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/testable-ranking-stale-wrappers-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
 
 ## Retraction
 
@@ -15,11 +22,22 @@ Do NOT cite the numerical results, tables, or threshold values in the original c
 
 ---
 
+## 2026-06-16 archive firewall
+
+This archived packet is historical / diagnostic and retired as evidence. It is
+not a retained non-diamond testable ranking, not authority for a best
+interferometric/waveguide candidate, and not a verified map of retained
+connections.
+
+The only safe residue is brainstorming: possible non-diamond analog directions
+that would require explicit audit-clean one-hop citations, ranking criteria,
+and a runner/table before becoming a current retained testables map.
+
 This note is the non-NV companion to the diamond work.
 
-The goal is simple:
+The old goal was:
 
-- keep the science grounded in retained artifacts
+- keep the science grounded in artifacts the old snapshot treated as retained
 - identify testable directions that do not depend on a diamond lab
 - rank ideas by how likely they are to change the outsider story
 
@@ -29,8 +47,9 @@ The goal is simple:
   driven wave / interferometric platform
 - Null: instantaneous or quasi-static control gives flat phase after
   calibration
-- Retained connection: the exact-lattice wavefield escalation already has a
-  coherent detector-line phase ramp with `R^2 ~ 0.96`
+- Historical claimed connection (not audit-clean here): the exact-lattice
+  wavefield escalation was cited for a coherent detector-line phase ramp with
+  `R^2 ~ 0.96`
 - Why it could raise external interest: it is the cleanest non-diamond analog
   of the repo's strongest phase-sensitive observable
 - Why it might fail: the platform may only reproduce the null, or the
@@ -41,8 +60,8 @@ The goal is simple:
 - Observable: sign retention, support transfer, and a controlled weak-field
   fit under graph rewiring or coupling changes
 - Null: the retained compact bridge family remains closed
-- Retained connection: the generated-family bridge, the split-shell reopening,
-  and the graph-boundary / universality notes
+- Historical claimed connection (not audit-clean here): the generated-family
+  bridge, the split-shell reopening, and graph-boundary / universality notes
 - Why it could raise external interest: it would give an analog-simulator
   route to the geometry-limited bridge story without claiming literal gravity
 - Why it might fail: graph transport may remain too easy to distort and fail to
@@ -53,7 +72,8 @@ The goal is simple:
 - Observable: escape-like attenuation plus a frontier-shell moment in a
   driven mechanical or acoustic system
 - Null: the same drive without the front-loading trap region
-- Retained connection: the grown trapping / frontier transport lane
+- Historical claimed connection (not audit-clean here): the grown trapping /
+  frontier transport lane
 - Why it could raise external interest: it converts a bounded transport
   observable into a table-top analog that is easier to instrument than direct
   gravity
@@ -65,8 +85,8 @@ The goal is simple:
 - Observable: a converged backreaction shift relative to a null loop, ideally a
   signed detector moment
 - Null: exact zero-feedback loop
-- Retained connection: the Poisson self-gravity loop and the exact-lattice
-  backreaction audit
+- Historical claimed connection (not audit-clean here): the Poisson
+  self-gravity loop and the exact-lattice backreaction audit
 - Why it could raise external interest: it tests whether a nonlinear
   source-from-output loop can be made physically stable outside the toy graph
 - Why it might fail: the loop can be too unstable, too small, or dominated by
@@ -77,13 +97,13 @@ The goal is simple:
 - Observable: how quadrature or phase lag changes with drive frequency and
   source-detector separation
 - Null: quasi-static baseline stays phase-null after calibration
-- Retained connection: the diamond protocol note and the exact-lattice
-  wavefield lane
+- Historical claimed connection (not audit-clean here): the diamond protocol
+  note and the exact-lattice wavefield lane
 - Why it could raise external interest: a real scaling map is much more
   publishable than a single curious point
 - Why it might fail: the trend may be weak or drowned by mundane cross-talk
 
-## Ranking
+## Historical ranking snapshot (retracted)
 
 1. Interferometric / waveguide phase-ramp analog
 2. Graph-transport analog with tunable coupling
@@ -91,19 +111,22 @@ The goal is simple:
 4. Self-consistent feedback analog in a cavity or circuit
 5. Mechanical or acoustic front-end for frontier transport
 
-## Top Non-Diamond Testable
+## Historical top non-diamond candidate (retracted)
 
-The best non-diamond moonshot is the **interferometric / waveguide phase-ramp
-analog**.
+The old note selected the **interferometric / waveguide phase-ramp analog** as
+its best non-diamond moonshot. That selection is not a retained ranking.
 
 Why it wins:
 
-- it maps directly onto the strongest retained phase-sensitive observable
+- it was claimed to map onto the old snapshot's strongest phase-sensitive
+  observable
 - it can be lock-in friendly without requiring a diamond lab
 - it is still differential and control-heavy
 - it is the cleanest way to test the wavefield story outside the exact-lattice
   codebase
 
-## Final Verdict
+## Historical final verdict (retracted)
 
-**best non-diamond testable: interferometric / waveguide phase-ramp analog**
+The old final verdict selected an interferometric / waveguide phase-ramp
+analog. That verdict is retracted until a mechanically checkable ranking is
+rebuilt from audit-clean dependencies.

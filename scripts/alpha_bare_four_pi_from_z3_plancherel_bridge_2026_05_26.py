@@ -62,11 +62,13 @@ required_source_phrases = {
     "bounded theorem": "**Claim type:** bounded_theorem",
     "status authority": "independent audit lane only",
     "bz dependency": "BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md",
-    "maradudin dependency": "LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+    "framework-local green dependency": "LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
+    "green certificate runner dependency": "scripts/lattice_greens_z3_asymptotic_normalization_certificate.py",
     "i1 dependency": "STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
     "i2 dependency": "ALPHA_CONVENTION_I2_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
     "i3 dependency": "CL3_NORMALIZATION_I3_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
     "no new axiom": "no new repo-wide axiom",
+    "current minimal axioms memo": "MINIMAL_AXIOMS_2026-06-05.md",
 }
 for label, needle in required_source_phrases.items():
     exact_assert(needle in SOURCE_TEXT, f"(S-required) source contains {label}")
@@ -77,8 +79,11 @@ forbidden_source_phrases = [
     "audited_conditional",
     "effective_status",
     "MINIMAL_AXIOMS_2026-05-03",
+    "MINIMAL_AXIOMS_2026-05-20",
     "A1 (local algebra)",
     "A2 (spatial substrate)",
+    "spatial substrate",
+    "substrate-internal",
     "canonical Cl(3) connection normalization",
     "new admission",
     "admission count",
@@ -86,6 +91,8 @@ forbidden_source_phrases = [
     "Koide A1",
     "](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)",
     "](HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md)",
+    "Maradudin accepted-premise bridge",
+    "accepted Maradudin asymptotic",
 ]
 for phrase in forbidden_source_phrases:
     exact_assert(
@@ -122,7 +129,7 @@ exact_assert(
 
 print()
 print("=" * 78)
-print("Section B: Maradudin coefficient constants")
+print("Section B: framework-local Green coefficient constants")
 print("=" * 78)
 
 theta, phi, k, r = sp.symbols("theta phi k r", positive=True, real=True)
@@ -214,8 +221,8 @@ print("Section E: no-import / boundary audit")
 print("=" * 78)
 
 load_bearing_inputs = {
-    "BZ Haar d^3k/(2 pi)^3": "landed BZ substrate theorem",
-    "G(r)->1/(4 pi r)": "landed Maradudin accepted-premise bridge",
+    "BZ Haar d^3k/(2 pi)^3": "landed BZ lattice theorem",
+    "G(r)->1/(4 pi r)": "framework-local Green theorem",
     "V=-C g_bare^2 G": "landed I1 bridge",
     "alpha=g_bare^2/(4 pi)": "landed I2 bridge",
     "g_bare=1 no-rescaling surface": "landed I3 bridge",
@@ -250,7 +257,7 @@ print()
 if total_fail == 0:
     print("VERDICT: bounded alpha-bare composition bridge passes.")
     print("  The alpha-bare (4 pi) denominator composes with the Z^3")
-    print("  Maradudin coefficient through the landed BZ, I1, I2, and I3 rows.")
+    print("  framework-local Green coefficient through the landed BZ, I1, I2, and I3 rows.")
     sys.exit(0)
 
 print("VERDICT: FAIL - alpha-bare composition bridge did not verify.")

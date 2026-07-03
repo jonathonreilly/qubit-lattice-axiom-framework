@@ -2,16 +2,16 @@
 """
 First three-sample environment evaluator route on the plaquette PF lane.
 
-This sharpens the current beta=6 three-sample seam in the strongest honest way
-supported by the existing exact stack:
+This records the current beta=6 three-sample seam supported by the cited repo
+notes and finite witness checks:
 
 1. the compressed-sector evaluator route for Z_6^env(W_A), Z_6^env(W_B),
    Z_6^env(W_C) factors through one common propagated beta-side vector;
 2. the left sample operator is already fixed and unique, and on the first
    symmetric witness sector it is exactly the radical matrix F;
-3. the current exact stack still does not determine that common beta-side
-   vector, so it does not yet furnish an actual evaluator for the three
-   sample values.
+3. the listed finite structural witness surface does not determine that common
+   beta-side vector: two witnesses on that surface induce different normalized
+   three-sample values under the same fixed operator.
 """
 
 from __future__ import annotations
@@ -23,6 +23,7 @@ import sympy as sp
 
 
 ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_ENVIRONMENT_EVALUATOR_ROUTE_NOTE_2026-04-17.md"
 
 THEOREM_PASS = 0
 SUPPORT_PASS = 0
@@ -34,7 +35,6 @@ DEPTH = 3
 
 def check(name: str, condition: bool, detail: str = "", bucket: str = "THEOREM") -> None:
     global THEOREM_PASS, SUPPORT_PASS, FAIL
-    status = "PASS" if condition else "FAIL"
     if condition:
         if bucket == "SUPPORT":
             SUPPORT_PASS += 1
@@ -42,9 +42,10 @@ def check(name: str, condition: bool, detail: str = "", bucket: str = "THEOREM")
             THEOREM_PASS += 1
     else:
         FAIL += 1
-    print(f"  [{status}] [{bucket}] {name}")
+    status = "PASS" if condition else "FAIL"
+    print(f"{status}: [{bucket}] {name}")
     if detail:
-        print(f"         {detail}")
+        print(f"      {detail}")
 
 
 def read(rel_path: str) -> str:
@@ -214,6 +215,7 @@ def format_triple(values: np.ndarray) -> str:
 
 
 def main() -> int:
+    route_note = NOTE.read_text(encoding="utf-8")
     transfer_note = read("docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md")
     eval_reduction_note = read(
         "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md"
@@ -275,8 +277,10 @@ def main() -> int:
     min_real_a = float(np.min(np.real_if_close(zhat_a).real))
     min_real_b = float(np.min(np.real_if_close(zhat_b).real))
 
-    rng = np.random.default_rng(1729)
-    trial_vector = np.abs(rng.normal(size=len(weights)))
+    trial_vector = np.array(
+        [1.0 + 0.17 * (p + 1) + 0.11 * (q + 1) + 0.03 * (p - q) ** 2 for p, q in weights],
+        dtype=float,
+    )
     direct_errors: list[float] = []
     for row, (theta1_units, theta2_units) in zip(e_three, sample_angle_units().values()):
         theta1 = theta1_units * np.pi / 16.0
@@ -296,7 +300,7 @@ def main() -> int:
     print(f"  rank(F)                                     = {reduced_rank}")
     print(f"  max restriction error                       = {reduced_matrix_error:.3e}")
     print()
-    print("Two admissible normalized beta-side witnesses on the current structural surface")
+    print("Two admissible normalized beta-side witnesses on the listed finite structural surface")
     print(f"  S_A symmetry / swap errors                  = {s_a_sym:.3e}, {s_a_swap:.3e}")
     print(f"  S_B symmetry / swap errors                  = {s_b_sym:.3e}, {s_b_swap:.3e}")
     print(f"  eta_A / eta_B swap errors                   = {eta_a_swap:.3e}, {eta_b_swap:.3e}")
@@ -321,6 +325,13 @@ def main() -> int:
         bucket="SUPPORT",
     )
     check(
+        "the formal rho lemma states the nonzero z_(0,0) domain condition",
+        "z_(0,0) != 0" in eval_reduction_note
+        and "z_(0,0)^env(6) != 0" in eval_reduction_note,
+        detail="normalized rho is only asserted on the nonzero-denominator domain",
+        bucket="SUPPORT",
+    )
+    check(
         "the compressed rim-functional uniqueness note already fixes the left boundary functional as the unique universal Peter-Weyl evaluation functional",
         "universal Peter-Weyl evaluation functional" in uniqueness_note
         and "the retained left boundary functional is unique" in uniqueness_note,
@@ -339,13 +350,37 @@ def main() -> int:
         "the spatial-environment underdetermination note records that the listed structural surface does not force unique explicit beta=6 environment data",
         "does **not** determine unique" in underdetermination_note
         and "`beta = 6` spatial-environment" in underdetermination_note,
-        detail="the current lane still leaves the beta-side vector open",
+        detail="the listed finite witness surface leaves the beta-side vector open",
         bucket="SUPPORT",
     )
     check(
-        "the local-Wilson obstruction note already rules out the strongest obvious local shortcut on the three-sample seam",
+        "the local-Wilson obstruction note already rules out the local-Wilson shortcut on the three-sample seam",
         "cannot itself be the first symmetric positive-type environment evaluator" in local_obstruction_note,
         detail="the unresolved route cannot be closed by reusing the local Wilson triple alone",
+        bucket="SUPPORT",
+    )
+    flat_route = " ".join(route_note.split())
+    check(
+        "source note declares finite-surface no_go with open physical-stack bridge",
+        "**Claim type:** no_go" in route_note
+        and "**Finite-surface scope:** no_go on the listed finite structural surface" in flat_route
+        and "remains open_gate" in route_note
+        and "finite-surface exhaustiveness bridge" in route_note,
+        detail="claim metadata is finite-surface only, not a beta=6 Wilson/Haar closure",
+        bucket="SUPPORT",
+    )
+    check(
+        "source note firewalls actual beta=6 Wilson/Haar exhaustiveness",
+        "## 2026-06-12 audit firewall: no beta=6 Wilson/Haar exhaustiveness claim" in route_note
+        and "does not claim that the listed finite structural witness surface is the actual `beta = 6` Wilson/Haar current stack" in flat_route
+        and "physical-stack bridge remains open" in flat_route,
+        detail="the runner surface cannot be read as exhaustive for the physical stack",
+        bucket="SUPPORT",
+    )
+    check(
+        "source note introduces no retained beta=6 surface claim or audit status",
+        "retained beta=6 surface claim, or\naudit status is introduced here" in route_note,
+        detail="independent audit remains the only status authority",
         bucket="SUPPORT",
     )
 
@@ -360,7 +395,7 @@ def main() -> int:
         detail=f"max direct-evaluation error={max(direct_errors):.3e}",
     )
     check(
-        "the current structural surface admits distinct positive self-adjoint conjugation-symmetric beta-side witnesses",
+        "the listed finite structural surface admits distinct positive self-adjoint conjugation-symmetric beta-side witnesses",
         s_a_sym < 1.0e-12
         and s_b_sym < 1.0e-12
         and s_a_swap < 1.0e-12
@@ -373,7 +408,7 @@ def main() -> int:
         and rho_b_swap < 1.0e-12
         and abs(rho00_a - 1.0) < 1.0e-12
         and abs(rho00_b - 1.0) < 1.0e-12,
-        detail=f"rho-gap={rho_gap:.3e} on the same exact structural surface",
+        detail=f"rho-gap={rho_gap:.3e} on the same listed finite structural surface",
     )
     check(
         "the same universal left operator sends those two admissible normalized beta-side vectors to different normalized three-sample triples",
@@ -385,15 +420,13 @@ def main() -> int:
         detail=f"Zhat_A=({format_triple(zhat_a)}); Zhat_B=({format_triple(zhat_b)})",
     )
     check(
-        "therefore the current exact stack does not yet furnish an actual evaluator for Z_6^env(W_A), Z_6^env(W_B), Z_6^env(W_C): even the normalized triple is still not unique",
+        "therefore the listed finite structural surface does not determine Z_6^env(W_A), Z_6^env(W_B), Z_6^env(W_C): even the normalized triple is not unique on that surface",
         reduced_rank == 3 and rho_gap > 1.0e-3 and triple_gap > 1.0e-2,
-        detail="the real route is one common beta-side vector hit by a fixed three-row operator, and that beta-side vector is still not determined",
+        detail="the formal route is one common beta-side vector hit by a fixed three-row operator, and the listed finite surface does not determine that vector",
     )
 
     print()
-    print("=" * 104)
-    print(f"SUMMARY: THEOREM PASS={THEOREM_PASS} SUPPORT={SUPPORT_PASS} FAIL={FAIL}")
-    print("=" * 104)
+    print(f"TOTAL: PASS={THEOREM_PASS + SUPPORT_PASS}, FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
 
 

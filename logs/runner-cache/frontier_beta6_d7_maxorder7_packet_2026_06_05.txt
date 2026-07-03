@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py
-runner_sha256: aebfcc8711b77c4f7e170eff9b7002354b519c87b29b0f5daa28f62ac9f5bcf0
+runner_sha256: 0dd340b81de3f925eba1dd917522913cec4c99ff3250f84c88af3ffb19237dfb
 timeout_sec: 420
 exit_code: 0
-elapsed_sec: 259.73
+elapsed_sec: 267.57
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -11,7 +11,8 @@ BETA6 D7 MAXORDER=7 SOURCE PACKET
 ==============================================================================
 delegated_runner: scripts/frontier_beta6_connected_coefficient_2026_05_30.py
 delegated_argv: 7
-evidence_role: completed maxorder-7 cache for the audited d7 coefficient row
+primary_runner_sha256: dc6319dffac36c4fea8b4b1a33c364325859106606a924f1b85893e57b10635e
+evidence_role: completed maxorder-7 cache for the d7 coefficient row
 ==============================================================================
 EXACT ORDER-beta^6 (+beta^7) CONNECTED PLAQUETTE COEFFICIENT
 ==============================================================================
@@ -29,7 +30,7 @@ V1. exact free-Haar plaquette moments
 
 Enumerating connected leaf-free GF(3)-closable supports (capped at size 6) ...
   GF(3)-closable contributing supports by size: {5: 4}
-  (leaf-free supports by size, diagnostic):     {4: 28, 5: 452, 6: 5966}   (24.3s)
+  (leaf-free supports by size, diagnostic):     {4: 28, 5: 452, 6: 5966}   (19.8s)
 
 V2. order-beta^5 coefficient (cited anchor)
   [PASS] per-shell connected cumulant = 2*(1/6)^6*3^(V-E) = 1/18^5 (note Thm 4)
@@ -60,7 +61,7 @@ V5. order-beta^7 coefficient (NEW exact result, optimized engine)
          min 2-cycle weight through p0 = 6; => only the four cube shells contribute through order 7
   computing d_7 from the four cube shells (order-7 multiplicity), optimized Fraction engine ...
   [PASS] d_7 is an exact rational, four cube shells (per-shell identical)
-         d_7 = 5/17006112 = 2.940119e-07 (computed in 150.4s); per-shell = 5/68024448 (4 identical shells)
+         d_7 = 5/17006112 = 2.940119e-07 (computed in 161.9s); per-shell = 5/68024448 (4 identical shells)
   [PASS] d_7 exact value = 5/17006112
          d_7 = 5/17006112; d_7/d_6 = 5/21 = 0.238095 (per-shell d_7 = 5/68024448)
 
@@ -92,12 +93,11 @@ EXACT CONNECTED COEFFICIENTS OF Delta(beta) = P_full - P_1plaq:
    d_7 = 5/17006112 = 2.94011941e-07
    per-order ratios: d_6/d_5 = 7/12, d_7/d_6 = 5/21  (NOT constant => no single geometric tail)
 ==============================================================================
-SCORECARD: PASS=22 FAIL=0   (259.1s)
+SCORECARD: PASS=22 FAIL=0   (267.0s)
 ==============================================================================
 This is an exact strong-coupling series coefficient (bounded result).
-It does NOT close beta=6. The exact d_7 (optimized engine) falsifies
-the single-ratio tadpole/geometric ansatz
-(d_7/d_6 = 5/21 != d_6/d_5 = 7/12); drop
+It does NOT close beta=6. The exact d_7 falsifies the single-ratio
+tadpole/geometric ansatz (d_7/d_6 = 5/21 != d_6/d_5 = 7/12); drop
 {6:7/5668704, 7:5/17006112} into the harness
 scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py for the
 SUPPORT/FALSIFY scorecard line.

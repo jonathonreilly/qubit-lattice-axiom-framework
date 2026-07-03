@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/yt_p1_i_s_native_bz_certificate_2026_06_11.py
+runner_sha256: 3349d2c0a1acab706907ad220473601b3280469017f0d6a8ff508f4e53d53825
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
+YT P1 I_S native BZ certificate attempt (2026-06-11)
+
+Defining expression used:
+  I_scalar(N) = 2 + (16*pi^2/(16*u0^2)) * <N_S/((D_psi+m^2)(D_g+m^2)) - 4/(k^2+m^2)^2>_BZ
+  Source: scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py:292-350
+  Feynman-rule source: docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md:357-401
+
+[PASS] citation note defines I_S as Z_S finite matching coefficient (docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md:188-207)
+[PASS] H_unit note contains symbolic D_S1 BZ kernel (docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md:357-374)
+[PASS] H_unit tadpole subtraction is symbolic, not a closed numerical formula (docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md:377-405)
+[PASS] operational native scalar expression is present in full-staggered runner (scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py:292-350)
+[PASS] Delta_1 note separates old I_S citation from native I_v_scalar plus I_leg (docs/YT_P1_DELTA_1_BZ_COMPUTATION_NOTE_2026-04-17.md:271-298)
+[PASS] canonical u0 imported from same-surface plaquette constant (u0=0.8776813812, plaquette=0.5934)
+Grid sweep:
+  N= 8  I_scalar_native=3.794186533223  seed
+  N=16  I_scalar_native=3.885650653368  delta_vs_prev=2.3539%
+  N=32  I_scalar_native=3.900542209113  delta_vs_prev=0.3818%
+  N=64  I_scalar_native=3.902216606381  delta_vs_prev=0.0429%
+
+[PASS] post-coarse grid convergence N=16->32 and N=32->64 below 1% (N16->32=0.3818%, N32->64=0.0429%)
+[PASS] second-order extrapolation error is small relative to bracket gap (I_inf=3.902774738804, err~0.000558132423)
+[PASS] falsifier guard: native scalar value is neither zero nor enormous (|I_scalar_native|=3.902775)
+[PASS] bracket verdict is honest: native scalar candidate does NOT certify [4,10] (I_scalar_native=3.902775 is below 4.0)
+[PASS] induced Delta_1 diagnostic remains finite and non-vacuous (Delta_1_native=2*I_scalar_native-6=1.805549)
+
+CONVERGED_I_SCALAR_NATIVE: 3.902774738804
+RESOLUTION_EXTRAPOLATION_ERROR: 0.000558132423
+INDUCED_DELTA_1_NATIVE: 1.805549477608
+BRACKET_UNDER_TEST: [4.000000, 10.000000]
+BRACKET_VERDICT: NOT_CERTIFIED
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

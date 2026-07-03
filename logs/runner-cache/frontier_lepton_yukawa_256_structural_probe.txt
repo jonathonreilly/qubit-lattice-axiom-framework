@@ -1,0 +1,92 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lepton_yukawa_256_structural_probe.py
+runner_sha256: 5da16232d63d7e59d4a91a217da2ba54d90d4166eeff5483d2568c7288527b1c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+LEPTON-YUKAWA 1/256 STRUCTURAL vs FIT PROBE (meta)
+==============================================================================
+
+[0] STRUCTURAL OBJECT 256 = (dim_C M_2(C))^4  (cross-check)
+PASS: dim_C M_2(C) = 4 (qubit operator algebra basis E11,E12,E21,E22)
+PASS: (dim_C M_2)^4 = 256 (4^4)
+PASS: 256 = 2^8
+PASS: 256 = 16^2 = (2^4)^2
+PASS: all three readings are ONE prime factorization 2^8 regrouped (4=2^2, 16=2^4: 4^4, 2^8, 16^2 identical)
+PASS: 1/256 reciprocal exact
+
+[A] PRECISION of a_lepton^2 = m_W/256
+    a^2            = 313.841127 MeV
+    m_W/256        = 313.942187 MeV
+    empirical N    = m_W/a^2 = 256.0824
+PASS: m_W/256 matches a^2 to ~0.03% (reproduces open-gate note) (offset +0.0322%)
+PASS: data-preferred divisor N != 256 (256 is rounded) (N = 256.082, i.e. 256 is -0.0322% off)
+PASS: m_W uncertainty window on N EXCLUDES 256.000 (N in [256.040, 256.125], m_W err 0.0165%)
+PASS: integer 256 sits >1.5 sigma_(m_W) from the data-preferred N (1.95 sigma_(m_W))
+
+[A'] (star) y_scale = g2 * (1/sqrt2) * (1/256) is exact given the gate
+PASS: g2*(1/sqrt2)*(1/256) == (m_W/256)*sqrt2/v  (algebra exact) (uses m_W = g2 v/2 tree identity)
+PASS: (star) vs data y_scale differ ONLY by the 0.03% gate offset (diff +0.0322% == gate offset)
+PASS: observed y_tau ~= 0.0102 (the lepton-scale figure) (y_tau = 0.01021)
+
+[B] EXPONENT: which (base, integer exponent) reproduces N = 256.08?
+    base  2 (qubit / Z_2 per direction             ) exp=8.0005 -> 2^8=256 dev=-0.03%
+    base  4 (dim_C M_2(C)  [structural]            ) exp=4.0002 -> 4^4=256 dev=-0.03%
+    base  8 (2^3 = Z^3 spatial corners (d=3+1)     ) exp=2.6668 -> 8^3=512 dev=+99.94%
+    base 16 (2^4 = naive d=4 taste (regulator-dependent no-go)) exp=2.0001 -> 16^2=256 dev=-0.03%
+    base  3 (N_gen / 3 spatial dirs                ) exp=5.0477 -> 3^5=243 dev=-5.11%
+    base  6 (N_c*N_iso top block-dim               ) exp=3.0950 -> 6^3=216 dev=-15.65%
+PASS: base 4 (dim M_2): exponent rounds to 4 and 4^4 reproduces N (<0.1%) (exp = 4.0002)
+PASS: base 2: exponent is 8 (2^8) -- but 8 has no clean framework count (exp = 8.0005)
+PASS: exactly the powers-of-two bases {2,4,16} reproduce N at integer exp (fitting bases = [2, 4, 16])
+PASS: base 4 is the only FITTING base that is itself a retained structural number (dim_C M_2 = 4 is retained_bounded; 2 and 16 carry undetermined exponents/counts)
+
+[B'] d=3+1 SURVIVAL of the exponent-4 / taste-16 readings
+PASS: Z^3 spatial corner count = 2^3 = 8 (NOT 16)
+PASS: d=3+1 taste-squared (2^3)^2 = 64 != 256  -> 16^2 reading is a d=4 artifact
+PASS: 4^(d_spatial=3) = 64 gives m_W prediction off by ~75% (d=3 reading FAILS) (a^2*64 = 20.09 GeV vs m_W = 80.37 GeV, -75.0%)
+PASS: exponent 4 survives ONLY via undetermined input (4th time-factor or base^base) (no retained principle forces 'd_tensor = 4'; M2_TENSOR note states d=4 is INPUT)
+
+[C] LOOK-ELSEWHERE: structural-looking integers near N = 256.08
+     216  dev=-15.652%   6^3
+     225  dev=-12.138%   15^2
+     243  dev= -5.109%   3^5
+     256  dev= -0.032%   16^2, 2^8, 4^4
+     289  dev=+12.854%   17^2
+PASS: ZERO structural integers (incl 256) fit within the m_W precision window (window +/-0.0165%, hits = [])
+PASS: 256 is the UNIQUE structural integer within +/-1% of N (hits = [256])
+PASS: within +/-5%, 256 is still the only perfect power (next: 243=3^5 at -5.1%) (hits = [256])
+PASS: a-priori chance of hitting a perfect power within 0.032% is < 2% (low LEE) (density 9/200, P ~ 0.0074)
+PASS: no simple rational p/q (p,q<=24) fits a^2 within 0.05% (256 stands alone) (rational hits = [])
+PASS: 256 admits exactly 2 distinct physical readings, each w/ 1 undetermined exponent ((a) (dim M_2)^4; (b) (2^d taste)^2 -- both need an unforced exponent)
+
+[D] VERDICT = PARTIAL (structural base, undetermined exponent, value in tension)
+PASS: structural base exists (dim M_2 = 4, exp lands on 4)
+PASS: look-elsewhere clears for the INTEGER 256 (unique closest perfect power)
+PASS: BUT exponent 4 is NOT derivable on d=3+1 (base-8 spatial reading fails)
+PASS: BUT integer 256 is in mild tension with m_W precision (value rounded)
+PASS: => VERDICT PARTIAL: not 256-STRUCTURAL (exponent undrvd), not clean-FIT (base real)
+
+[NON-CLAIMS]
+PASS: does NOT derive 1/256
+PASS: does NOT derive the exponent 4
+PASS: does NOT derive any charged-lepton mass or y_tau
+PASS: does NOT derive m_W
+PASS: introduces NO new axiom / import / framework language
+PASS: sets / predicts NO audit status for any row
+PASS: does NOT change the open_gate status of the m_W/256 row
+
+==============================================================================
+Summary: PASS=39 FAIL=0
+==============================================================================
+Empirical divisor N = m_W/a^2 = 256.0824  (256 is -0.0322%, 1.95 sigma_(m_W))
+Exponent test: base 4=dim_C M_2 -> integer exponent 4 (unique structural base)
+d=3+1 survival: 4^3=64 and (2^3)^2=64 both FAIL; exponent-4 needs an unforced input
+Look-elsewhere: 256 unique perfect power within +/-5%; LEE for the integer ~0.007
+VERDICT: PARTIAL -- structural base, undetermined exponent, value in mild tension
+
+----- stderr -----
+

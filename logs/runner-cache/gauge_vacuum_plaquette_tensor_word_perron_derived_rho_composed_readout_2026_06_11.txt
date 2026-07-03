@@ -1,0 +1,155 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py
+runner_sha256: 02ec46f7334791c66674aaa608642ab323edfea8f4a3c86318ad50734c0fecdc
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 10.98
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette tensor-word Perron-derived rho composed readout
+beta=6.0, tensor default NMAX=4, MODE_MAX=80
+source default NMAX=7, MODE_MAX=200
+
+================================================================================================
+Part 1: reference anchor reproduction
+================================================================================================
+tensor-word shape: 25 x 25
+tensor-word min entry: 0.000000000000e+00
+tensor-word conjugation-swap residual: 1.387778780781e-17
+boundary readout min entry: 0.000000000000e+00
+cross-check against existing tensor runner construction: 0.000000000000e+00
+PASS: 25-state tensor-word matrix has the reference size
+PASS: tensor-word matrix is entrywise nonnegative
+      min=0.000e+00
+PASS: tensor-word matrix is conjugation-swap symmetric
+      residual=1.388e-17
+PASS: unit-vector boundary readout is nonnegative
+      min=0.000e+00
+PASS: local reconstruction matches the existing tensor runner matrix
+      max diff=0.000e+00
+
+P_loc reproduced:  0.452407159045
+P_triv reproduced: 0.422531739647
+PASS: source Perron reference rho=1 reproduces P_loc to at least 8 digits
+      P_loc=0.452407159045, reference=0.4524071590
+PASS: source Perron reference rho=delta reproduces P_triv to at least 8 digits
+      P_triv=0.422531739647, reference=0.4225317396
+
+================================================================================================
+Part 2: tensor-word Perron eigenvector readout
+================================================================================================
+Normalization convention: rho_tw(p,q) = psi_tw[p,q] / psi_tw[0,0].
+This is the finite boundary-character amplitude ratio z_(p,q)/z_(0,0).
+tensor-word Perron eigenvalue: 1.012369912748
+psi residual infinity norm: 1.665334536938e-16
+rho_tw min on available box: 2.286765266123e-23
+rho_tw conjugation-symmetry residual: 5.551115123126e-17
+PASS: tensor-word Perron residual is small
+      residual=1.665e-16
+PASS: rho_tw is positive on the available tensor-word box
+      min=2.287e-23
+PASS: rho_tw is conjugation-symmetric on the available tensor-word box
+      residual=5.551e-17
+
+p q | rho_tw | rho_single_link | rel(tw,single) | rel(tw,1) | delta_ref_abs
+------------------------------------------------------------------------------------------------
+0 0 | 1.000000000000e+00 | 1.000000000000e+00 | 0.000000e+00 | 0.000000e+00 | 0.000000e+00
+0 1 | 3.785149223171e-01 | 4.225317396500e-01 | 1.041740e-01 | 6.214851e-01 | 3.785149e-01
+0 2 | 7.570581877783e-02 | 1.359617273634e-01 | 4.431829e-01 | 9.242942e-01 | 7.570582e-02
+0 3 | 9.488300432729e-04 | 3.505738045167e-02 | 9.729349e-01 | 9.990512e-01 | 9.488300e-04
+0 4 | 2.744981301341e-06 | 7.506704006095e-03 | 9.996343e-01 | 9.999973e-01 | 2.744981e-06
+1 0 | 3.785149223171e-01 | 4.225317396500e-01 | 1.041740e-01 | 6.214851e-01 | 3.785149e-01
+1 1 | 1.710420190918e-01 | 1.622597994799e-01 | 5.412443e-02 | 8.289580e-01 | 1.710420e-01
+1 2 | 3.962593031883e-03 | 4.828805556745e-02 | 9.179384e-01 | 9.960374e-01 | 3.962593e-03
+1 3 | 2.556269520369e-05 | 1.165151455674e-02 | 9.978061e-01 | 9.999744e-01 | 2.556270e-05
+1 4 | 6.698526652901e-09 | 2.354672728248e-03 | 9.999972e-01 | 1.000000e+00 | 6.698527e-09
+2 0 | 7.570581877783e-02 | 1.359617273634e-01 | 4.431829e-01 | 9.242942e-01 | 7.570582e-02
+2 1 | 3.962593031883e-03 | 4.828805556745e-02 | 9.179384e-01 | 9.960374e-01 | 3.962593e-03
+2 2 | 4.937702387904e-05 | 1.350507888830e-02 | 9.963438e-01 | 9.999506e-01 | 4.937702e-05
+2 3 | 2.384722181200e-08 | 3.093126708769e-03 | 9.999923e-01 | 1.000000e+00 | 2.384722e-08
+2 4 | 2.203570760518e-12 | 5.973906434562e-04 | 1.000000e+00 | 1.000000e+00 | 2.203571e-12
+3 0 | 9.488300432729e-04 | 3.505738045167e-02 | 9.729349e-01 | 9.990512e-01 | 9.488300e-04
+3 1 | 2.556269520369e-05 | 1.165151455674e-02 | 9.978061e-01 | 9.999744e-01 | 2.556270e-05
+3 2 | 2.384722181200e-08 | 3.093126708769e-03 | 9.999923e-01 | 1.000000e+00 | 2.384722e-08
+3 3 | 3.999837210632e-12 | 6.784539071957e-04 | 1.000000e+00 | 1.000000e+00 | 3.999837e-12
+3 4 | 1.915080453821e-17 | 1.262381353372e-04 | 1.000000e+00 | 1.000000e+00 | 1.915080e-17
+4 0 | 2.744981301341e-06 | 7.506704006095e-03 | 9.996343e-01 | 9.999973e-01 | 2.744981e-06
+4 1 | 6.698526652901e-09 | 2.354672728248e-03 | 9.999972e-01 | 1.000000e+00 | 6.698527e-09
+4 2 | 2.203570760518e-12 | 5.973906434562e-04 | 1.000000e+00 | 1.000000e+00 | 2.203571e-12
+4 3 | 1.915080453821e-17 | 1.262381353372e-04 | 1.000000e+00 | 1.000000e+00 | 1.915080e-17
+4 4 | 2.286765266123e-23 | 2.275225312476e-05 | 1.000000e+00 | 1.000000e+00 | 2.286765e-23
+delta_ref_abs is reported because relative difference to the delta reference is undefined off (0,0).
+
+================================================================================================
+Part 3: composed source-sector readout
+================================================================================================
+Primary embedding: finite tensor-word coefficients are zero-extended outside the available word box.
+Positive-tail sensitivity: uncomputed source-box tail set to rho=1 outside the word box.
+Matched-box sensitivity: source solve restricted to the tensor-word NMAX=4 box.
+
+embedding | source_NMAX | P(6) | u0 | alpha_s(alpha_bare=1) | Perron eigenvalue
+------------------------------------------------------------------------------------------------
+zero-extension |  7 | 0.434215413260 | 0.811757498148 | 1.517565281371 | 3.577553737908
+positive-tail  |  7 | 0.434215413260 | 0.811757498148 | 1.517565281371 | 3.577553737908
+matched-box    |  4 | 0.434210050581 | 0.811754991780 | 1.517574652630 | 3.577542372089
+PASS: zero-extension and positive-tail source embeddings agree at displayed precision
+      delta=1.077e-14
+PASS: matched-box source solve is within finite-box truncation drift
+      delta=5.363e-06
+PASS: composed P_tw lies strictly between rho=delta and rho=1 reference anchors
+      P_triv=0.422531739647, P_tw=0.434215413260, P_loc=0.452407159045
+
+================================================================================================
+Part 4: truncation drift
+================================================================================================
+N_tw MODE | rho10 | rho11 | P_zero_ext_to_N7 | P_positive_tail_to_N7
+------------------------------------------------------------------------------------------------
+   3   80 | 0.378514922289 | 0.171042019072 | 0.434215413259 | 0.434215413376
+   3  200 | 0.378514922289 | 0.171042019072 | 0.434215413259 | 0.434215413376
+   4   80 | 0.378514922317 | 0.171042019092 | 0.434215413260 | 0.434215413260
+   4  200 | 0.378514922317 | 0.171042019092 | 0.434215413260 | 0.434215413260
+   5   80 | 0.378514922317 | 0.171042019092 | 0.434215413260 | 0.434215413260
+   5  200 | 0.378514922317 | 0.171042019092 | 0.434215413260 | 0.434215413260
+   6   80 | 0.378514922317 | 0.171042019092 | 0.434215413260 | 0.434215413260
+   6  200 | 0.378514922317 | 0.171042019092 | 0.434215413260 | 0.434215413260
+
+span P_zero across sweep: 8.739675649849e-13
+span rho10 across sweep: 2.802436060989e-11
+span rho11 across sweep: 1.945871241915e-11
+PASS: tensor-word rho/readout sweep is numerically converging on NMAX=3..6
+      P span=8.740e-13, rho10 span=2.802e-11, rho11 span=1.946e-11
+
+================================================================================================
+Part 4: family exclusion diagnostics
+================================================================================================
+family | fitted parameter | domain note | max relative mismatch on remaining weights
+------------------------------------------------------------------------------------------------
+decay exp(-tau(p+q)) | tau=0.971499782002 | inside tau >= 0 | max_rel=1.842648e+19 at (4, 4); model=4.213704190030e-04, rho_tw=2.286765266123e-23
+one-plaquette c(beta_env)/c00(beta_env) | beta_env=1.965846209685 | inside beta_env >= 0 | max_rel=1.446280e+16 at (4, 4); model=3.307302063412e-07, rho_tw=2.286765266123e-23
+tube-power (c(6)/c00(6))^k | k=-4.097053477418 | unconstrained real fit; outside the enumerated k >= 0 family. Constrained k=0 fit-weight relative mismatch=1.641904e+00, remaining max=4.372989e+22 at (4, 4). | max_rel=1.180715e+33 at (4, 4); model=2.700019016908e+10, rho_tw=2.286765266123e-23
+PASS: each enumerated family misses rho_tw on the remaining finite-box weights after rho10 fitting
+      decay exp(-tau(p+q)): 1.843e+19, one-plaquette c(beta_env)/c00(beta_env): 1.446e+16, tube-power (c(6)/c00(6))^k: 1.181e+33
+
+================================================================================================
+Fenced comparator distances
+================================================================================================
+Plaquette reuse license: the canonical comparison number is admitted here only as a comparison/reuse number, not as a derived value, fit target, or repinning input.
+```text
+|P_tw - P_loc_reference| = 0.018191745785
+|P_tw - P_triv_reference| = 0.011683673613
+|P_tw - 0.5934| = 0.159184586740
+```
+PASS: canonical comparator is isolated from construction and used only in the fenced distance block
+
+================================================================================================
+Part 5: bounded statement inputs
+================================================================================================
+Status authority: independent audit lane only. This source note does not set or predict an audit outcome.
+Named residuals: finite one-word box; no physical 3D environment computation; no untruncated convergence proof; no L_perp limit; no canonical repinning; no analytic P(6).
+PASS: final bounded readout is finite and positive
+      P_tw=0.434215413260
+
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

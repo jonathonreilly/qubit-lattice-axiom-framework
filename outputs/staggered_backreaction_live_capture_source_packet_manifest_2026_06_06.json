@@ -1,0 +1,480 @@
+{
+  "claim_id": "staggered_backreaction_live_capture_packet_note_2026-05-29",
+  "note": "docs/STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md",
+  "manifest": {
+    "packet_checker": "scripts/staggered_backreaction_live_capture_packet_check.py",
+    "capture_harness_source": "scripts/frontier_staggered_backreaction_capture_closure_harness.py",
+    "iterative_source": "scripts/frontier_staggered_backreaction_iterative.py",
+    "cycle_battery_source": "scripts/frontier_staggered_cycle_battery.py",
+    "layered_source": "scripts/frontier_staggered_layered_backreaction.py",
+    "prototype_helper_source": "scripts/frontier_staggered_backreaction_prototype.py",
+    "packet_cache": "logs/runner-cache/staggered_backreaction_live_capture_packet_check.txt",
+    "capture_harness_cache": "logs/runner-cache/frontier_staggered_backreaction_capture_closure_harness.txt",
+    "iterative_cache": "logs/runner-cache/frontier_staggered_backreaction_iterative.txt",
+    "cycle_battery_cache": "logs/runner-cache/frontier_staggered_cycle_battery.txt",
+    "layered_cache": "logs/runner-cache/frontier_staggered_layered_backreaction.txt",
+    "prototype_helper_cache": "logs/runner-cache/frontier_staggered_backreaction_prototype.txt"
+  },
+  "summary": {
+    "pass": 91,
+    "fail": 0
+  },
+  "results": [
+    {
+      "name": "manifest_path_exists:packet_checker",
+      "pass": true,
+      "detail": "scripts/staggered_backreaction_live_capture_packet_check.py"
+    },
+    {
+      "name": "note_links_manifest_path:packet_checker",
+      "pass": true,
+      "detail": "scripts/staggered_backreaction_live_capture_packet_check.py"
+    },
+    {
+      "name": "manifest_path_exists:capture_harness_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_capture_closure_harness.py"
+    },
+    {
+      "name": "note_links_manifest_path:capture_harness_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_capture_closure_harness.py"
+    },
+    {
+      "name": "manifest_path_exists:iterative_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_iterative.py"
+    },
+    {
+      "name": "note_links_manifest_path:iterative_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_iterative.py"
+    },
+    {
+      "name": "manifest_path_exists:cycle_battery_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_cycle_battery.py"
+    },
+    {
+      "name": "note_links_manifest_path:cycle_battery_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_cycle_battery.py"
+    },
+    {
+      "name": "manifest_path_exists:layered_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_layered_backreaction.py"
+    },
+    {
+      "name": "note_links_manifest_path:layered_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_layered_backreaction.py"
+    },
+    {
+      "name": "manifest_path_exists:prototype_helper_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_prototype.py"
+    },
+    {
+      "name": "note_links_manifest_path:prototype_helper_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_prototype.py"
+    },
+    {
+      "name": "manifest_path_exists:packet_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/staggered_backreaction_live_capture_packet_check.txt"
+    },
+    {
+      "name": "note_links_manifest_path:packet_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/staggered_backreaction_live_capture_packet_check.txt"
+    },
+    {
+      "name": "manifest_path_exists:capture_harness_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_staggered_backreaction_capture_closure_harness.txt"
+    },
+    {
+      "name": "note_links_manifest_path:capture_harness_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_staggered_backreaction_capture_closure_harness.txt"
+    },
+    {
+      "name": "manifest_path_exists:iterative_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_staggered_backreaction_iterative.txt"
+    },
+    {
+      "name": "note_links_manifest_path:iterative_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_staggered_backreaction_iterative.txt"
+    },
+    {
+      "name": "manifest_path_exists:cycle_battery_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_staggered_cycle_battery.txt"
+    },
+    {
+      "name": "note_links_manifest_path:cycle_battery_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_staggered_cycle_battery.txt"
+    },
+    {
+      "name": "manifest_path_exists:layered_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_staggered_layered_backreaction.txt"
+    },
+    {
+      "name": "note_links_manifest_path:layered_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_staggered_layered_backreaction.txt"
+    },
+    {
+      "name": "manifest_path_exists:prototype_helper_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_staggered_backreaction_prototype.txt"
+    },
+    {
+      "name": "note_links_manifest_path:prototype_helper_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_staggered_backreaction_prototype.txt"
+    },
+    {
+      "name": "source_untruncated:packet_checker",
+      "pass": true,
+      "detail": "scripts/staggered_backreaction_live_capture_packet_check.py has 5375 bytes"
+    },
+    {
+      "name": "source_marker:packet_checker:import frontier_staggered_backreaction_capture_closure_harness as cap",
+      "pass": true,
+      "detail": "import frontier_staggered_backreaction_capture_closure_harness as cap present"
+    },
+    {
+      "name": "source_marker:packet_checker:cap.cycle.make_random_geometric",
+      "pass": true,
+      "detail": "cap.cycle.make_random_geometric present"
+    },
+    {
+      "name": "source_marker:packet_checker:cap.layered._build_layered_family",
+      "pass": true,
+      "detail": "cap.layered._build_layered_family present"
+    },
+    {
+      "name": "source_marker:packet_checker:ASSERTIONS:",
+      "pass": true,
+      "detail": "ASSERTIONS: present"
+    },
+    {
+      "name": "source_untruncated:capture_harness_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_capture_closure_harness.py has 18888 bytes"
+    },
+    {
+      "name": "source_marker:capture_harness_source:import frontier_staggered_backreaction_iterative as iterative",
+      "pass": true,
+      "detail": "import frontier_staggered_backreaction_iterative as iterative present"
+    },
+    {
+      "name": "source_marker:capture_harness_source:import frontier_staggered_cycle_battery as cycle",
+      "pass": true,
+      "detail": "import frontier_staggered_cycle_battery as cycle present"
+    },
+    {
+      "name": "source_marker:capture_harness_source:import frontier_staggered_layered_backreaction as layered",
+      "pass": true,
+      "detail": "import frontier_staggered_layered_backreaction as layered present"
+    },
+    {
+      "name": "source_marker:capture_harness_source:CLOSURE = ClosureSpec",
+      "pass": true,
+      "detail": "CLOSURE = ClosureSpec present"
+    },
+    {
+      "name": "source_marker:capture_harness_source:def _measure_cycle_graph",
+      "pass": true,
+      "detail": "def _measure_cycle_graph present"
+    },
+    {
+      "name": "source_marker:capture_harness_source:def _measure_holdout",
+      "pass": true,
+      "detail": "def _measure_holdout present"
+    },
+    {
+      "name": "source_untruncated:iterative_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_iterative.py has 11883 bytes"
+    },
+    {
+      "name": "source_marker:iterative_source:import frontier_staggered_backreaction_prototype as base",
+      "pass": true,
+      "detail": "import frontier_staggered_backreaction_prototype as base present"
+    },
+    {
+      "name": "source_marker:iterative_source:class MappingSpec",
+      "pass": true,
+      "detail": "class MappingSpec present"
+    },
+    {
+      "name": "source_marker:iterative_source:def _apply_mapping",
+      "pass": true,
+      "detail": "def _apply_mapping present"
+    },
+    {
+      "name": "source_marker:iterative_source:def _normalized_laplacian",
+      "pass": true,
+      "detail": "def _normalized_laplacian present"
+    },
+    {
+      "name": "source_marker:iterative_source:def _source_density",
+      "pass": true,
+      "detail": "def _source_density present"
+    },
+    {
+      "name": "source_marker:iterative_source:def _measure",
+      "pass": true,
+      "detail": "def _measure present"
+    },
+    {
+      "name": "source_marker:iterative_source:def _measure_family",
+      "pass": true,
+      "detail": "def _measure_family present"
+    },
+    {
+      "name": "source_untruncated:cycle_battery_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_cycle_battery.py has 17189 bytes"
+    },
+    {
+      "name": "source_marker:cycle_battery_source:def make_random_geometric",
+      "pass": true,
+      "detail": "def make_random_geometric present"
+    },
+    {
+      "name": "source_marker:cycle_battery_source:def make_growing",
+      "pass": true,
+      "detail": "def make_growing present"
+    },
+    {
+      "name": "source_marker:cycle_battery_source:def _source_density",
+      "pass": true,
+      "detail": "def _source_density present"
+    },
+    {
+      "name": "source_marker:cycle_battery_source:def _solve_phi",
+      "pass": true,
+      "detail": "def _solve_phi present"
+    },
+    {
+      "name": "source_marker:cycle_battery_source:def _build_H",
+      "pass": true,
+      "detail": "def _build_H present"
+    },
+    {
+      "name": "source_marker:cycle_battery_source:def _cn_evolve",
+      "pass": true,
+      "detail": "def _cn_evolve present"
+    },
+    {
+      "name": "source_untruncated:layered_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_layered_backreaction.py has 15091 bytes"
+    },
+    {
+      "name": "source_marker:layered_source:class GraphFamily",
+      "pass": true,
+      "detail": "class GraphFamily present"
+    },
+    {
+      "name": "source_marker:layered_source:def _build_layered_family",
+      "pass": true,
+      "detail": "def _build_layered_family present"
+    },
+    {
+      "name": "source_marker:layered_source:def _source_density",
+      "pass": true,
+      "detail": "def _source_density present"
+    },
+    {
+      "name": "source_marker:layered_source:def _solve_phi",
+      "pass": true,
+      "detail": "def _solve_phi present"
+    },
+    {
+      "name": "source_marker:layered_source:def _force_from_phi",
+      "pass": true,
+      "detail": "def _force_from_phi present"
+    },
+    {
+      "name": "source_marker:layered_source:def _measure_family",
+      "pass": true,
+      "detail": "def _measure_family present"
+    },
+    {
+      "name": "source_untruncated:prototype_helper_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_prototype.py has 20482 bytes"
+    },
+    {
+      "name": "source_marker:prototype_helper_source:class GraphFamily",
+      "pass": true,
+      "detail": "class GraphFamily present"
+    },
+    {
+      "name": "source_marker:prototype_helper_source:def _make_graphs",
+      "pass": true,
+      "detail": "def _make_graphs present"
+    },
+    {
+      "name": "source_marker:prototype_helper_source:def _source_density",
+      "pass": true,
+      "detail": "def _source_density present"
+    },
+    {
+      "name": "source_marker:prototype_helper_source:def _solve_phi",
+      "pass": true,
+      "detail": "def _solve_phi present"
+    },
+    {
+      "name": "source_marker:prototype_helper_source:def _build_hamiltonian",
+      "pass": true,
+      "detail": "def _build_hamiltonian present"
+    },
+    {
+      "name": "source_marker:prototype_helper_source:def _evolve_cn",
+      "pass": true,
+      "detail": "def _evolve_cn present"
+    },
+    {
+      "name": "source_marker:prototype_helper_source:def _force_from_phi",
+      "pass": true,
+      "detail": "def _force_from_phi present"
+    },
+    {
+      "name": "source_marker:prototype_helper_source:def _measure_family",
+      "pass": true,
+      "detail": "def _measure_family present"
+    },
+    {
+      "name": "cache_runner_matches:packet_cache",
+      "pass": true,
+      "detail": "scripts/staggered_backreaction_live_capture_packet_check.py == scripts/staggered_backreaction_live_capture_packet_check.py"
+    },
+    {
+      "name": "cache_sha_fresh:packet_cache",
+      "pass": true,
+      "detail": "062e2dedffc603e15365a7f1685b55fbe56cb09d5141759be6ea26e81d6f5536 == 062e2dedffc603e15365a7f1685b55fbe56cb09d5141759be6ea26e81d6f5536"
+    },
+    {
+      "name": "cache_exit_ok:packet_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:packet_cache",
+      "pass": true,
+      "detail": "ASSERTIONS: PASS"
+    },
+    {
+      "name": "cache_runner_matches:capture_harness_cache",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_capture_closure_harness.py == scripts/frontier_staggered_backreaction_capture_closure_harness.py"
+    },
+    {
+      "name": "cache_sha_fresh:capture_harness_cache",
+      "pass": true,
+      "detail": "8eee0a1c509997614b5bd488fcf048a0b157ee28f4c264e3876ef2528495b969 == 8eee0a1c509997614b5bd488fcf048a0b157ee28f4c264e3876ef2528495b969"
+    },
+    {
+      "name": "cache_exit_ok:capture_harness_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:capture_harness_cache",
+      "pass": true,
+      "detail": "STAGGERED BACKREACTION CAPTURE-CLOSURE HARNESS"
+    },
+    {
+      "name": "cache_runner_matches:iterative_cache",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_iterative.py == scripts/frontier_staggered_backreaction_iterative.py"
+    },
+    {
+      "name": "cache_sha_fresh:iterative_cache",
+      "pass": true,
+      "detail": "2ac39d606949af29d6171fbd17018a9321dea4b1abf2e70ba434bcca928b3497 == 2ac39d606949af29d6171fbd17018a9321dea4b1abf2e70ba434bcca928b3497"
+    },
+    {
+      "name": "cache_exit_ok:iterative_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:iterative_cache",
+      "pass": true,
+      "detail": "STAGGERED BACKREACTION ITERATIVE SOURCE-MAPPING PROBE"
+    },
+    {
+      "name": "cache_runner_matches:cycle_battery_cache",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_cycle_battery.py == scripts/frontier_staggered_cycle_battery.py"
+    },
+    {
+      "name": "cache_sha_fresh:cycle_battery_cache",
+      "pass": true,
+      "detail": "d139bef6390002c66cbebdb6c16e7443b05006b65b58870ab65124a241c5ec48 == d139bef6390002c66cbebdb6c16e7443b05006b65b58870ab65124a241c5ec48"
+    },
+    {
+      "name": "cache_exit_ok:cycle_battery_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:cycle_battery_cache",
+      "pass": true,
+      "detail": "STAGGERED FERMION"
+    },
+    {
+      "name": "cache_runner_matches:layered_cache",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_layered_backreaction.py == scripts/frontier_staggered_layered_backreaction.py"
+    },
+    {
+      "name": "cache_sha_fresh:layered_cache",
+      "pass": true,
+      "detail": "833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd == 833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd"
+    },
+    {
+      "name": "cache_exit_ok:layered_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:layered_cache",
+      "pass": true,
+      "detail": "STAGGERED LAYERED BACKREACTION BRIDGE"
+    },
+    {
+      "name": "cache_runner_matches:prototype_helper_cache",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_prototype.py == scripts/frontier_staggered_backreaction_prototype.py"
+    },
+    {
+      "name": "cache_sha_fresh:prototype_helper_cache",
+      "pass": true,
+      "detail": "24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975 == 24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975"
+    },
+    {
+      "name": "cache_exit_ok:prototype_helper_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:prototype_helper_cache",
+      "pass": true,
+      "detail": "STAGGERED SOURCE-GENERATED BACKREACTION PROTOTYPE"
+    }
+  ],
+  "audit_status_authority": "independent audit lane only"
+}

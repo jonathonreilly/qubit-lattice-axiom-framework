@@ -1,17 +1,64 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_center_trace_closed_2026_05_30.py
-runner_sha256: e6b59253efc0576bf9268a65bc35a4e67e2354010196dd0873cae37ed086e4e3
+runner_sha256: 0ed6085eaa62080f5d483fc9a98e19d465c756c7318be5bf02e004583ab761ce
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
-(1) <{P_X1,P_X2,P_X3, C3}> algebra dim = 9/9  -> full M3(C) -> C3 PHYSICAL -> dimension -> Q=1
-(2) tracial reference I/3 -> sector pops (singlet,doublet)=(0.3333,0.6667)=DIMENSION -> Q=1
-(3) einselection preserves these pops (dephasing fixes diagonal) -> stays (1/3,2/3) -> Q=1
-VERDICT: center trace NOT selected (retained no-proper-quotient + tracial I/d both vote dimension).
-Q=2/3 = derived-modulo-the-weight-pin; framework default Q=1; remaining = 2 coupled pins
-(sector-count einselection weight; signed-eigenvalue readout).
+CENTER-TRACE REDUCED-STATUS SOURCE PACKET
+Scope: exact algebra + source dependencies; old closure framing is not restored.
+[PASS] target ledger row exists :: flavor_center_trace_closed_capstone_note_2026-05-30
+[PASS] target currently remains audited_conditional
+[PASS] target re-audit blocker mentions missing dependency edge or narrowing
+[PASS] repaired note contains 'reduced-status source packet'
+[PASS] repaired note contains 'old closed-capstone framing is superseded'
+[PASS] repaired note contains 'pre-record identification remains retained_bounded'
+[PASS] repaired note contains 'not a ledger retag'
+[PASS] P_i are projectors
+[PASS] P_i are mutually orthogonal
+[PASS] sum_i P_i = I_3
+[PASS] C3^3 = I_3
+[PASS] D3 projectors plus C3 generate full M3(C) :: dim=9
+[PASS] only empty/full coordinate subsets preserve D3 and C3 :: invariant=[(), (0, 1, 2)]
+[PASS] tracial I/3 gives singlet population 1/3 :: 0.333333333333
+[PASS] tracial I/3 gives doublet population 2/3 :: 0.666666666667
+[PASS] singlet/doublet dephasing preserves population weights
+[PASS] dimension-weighted full trace default gives Q=1
+[PASS] equal central-atom weighting would be an extra selector
+[PASS] no_proper_quotient: ledger row exists :: three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02
+[PASS] no_proper_quotient: effective_status is retained :: observed='retained'
+[PASS] no_proper_quotient: note exists :: docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md
+[PASS] no_proper_quotient: note contains 'no proper quotient'
+[PASS] no_proper_quotient: note contains 'M_3'
+[PASS] no_proper_quotient: note contains 'physical-species interpretation'
+[PASS] no_proper_quotient: note contains 'out of scope'
+[PASS] no_proper_quotient: runner exists :: scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py
+[PASS] no_proper_quotient: cache exists :: logs/runner-cache/frontier_three_gen_observable_no_proper_quotient_narrow.txt
+[PASS] no_proper_quotient: cache pins current runner sha
+[PASS] no_proper_quotient: cache contains 'TOTAL: PASS=45, FAIL=0'
+[PASS] uhf_trace_uniqueness: ledger row exists :: powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20
+[PASS] uhf_trace_uniqueness: effective_status is retained :: observed='retained'
+[PASS] uhf_trace_uniqueness: note exists :: docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
+[PASS] uhf_trace_uniqueness: note contains 'unique tracial state'
+[PASS] uhf_trace_uniqueness: note contains 'provenance'
+[PASS] uhf_trace_uniqueness: note contains 'not an admitted import'
+[PASS] pre_record_trace_boundary: ledger row exists :: pre_record_reference_state_tracial_derivation_note_2026-05-20
+[PASS] pre_record_trace_boundary: effective_status is retained_bounded :: observed='retained_bounded'
+[PASS] pre_record_trace_boundary: note exists :: docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md
+[PASS] pre_record_trace_boundary: note contains 'Narrowed claim'
+[PASS] pre_record_trace_boundary: note contains 'Open admission'
+[PASS] pre_record_trace_boundary: note contains 'unique tracial state'
+[PASS] pre_record_trace_boundary: runner exists :: scripts/frontier_pre_record_reference_state_tracial_derivation.py
+[PASS] pre_record_trace_boundary: cache exists :: logs/runner-cache/frontier_pre_record_reference_state_tracial_derivation.txt
+[PASS] pre_record_trace_boundary: cache pins current runner sha
+[PASS] pre_record_trace_boundary: cache contains 'PASS=12 FAIL=0'
+[PASS] pre_record_trace_boundary: cache contains 'pre-record identification remains open'
+[PASS] old closed-capstone framing is not restored
+[PASS] pre-record physical trace identification is bounded, not unbounded
+[PASS] certificate JSON written :: outputs/flavor_center_trace_reduced_status_source_packet_2026_05_30.json
+SCORECARD PASS=49 FAIL=0
+VERDICT: center-trace source packet repaired by narrowing; exact algebra retained, old closure not retagged.
 
 ----- stderr -----
 

@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/frontier_graph_braid_n3_fermion_sign_nonfibered.py
+runner_sha256: 55003272eef937008ebe94c2aa9f9d38eeb814d7745b71f10a91c8674af9b902
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.26
+status: ok
+----- stdout -----
+========================================================================
+GRAPH-BRAID N=3 FERMION SIGN STAYS NON-FIBERED
+Question: does the finite N=3 graph-braid witness have a FIBERED or
+richer exchange sign (coupling to sign(beta)) unlike N=2?
+Result: the K_5 witness keeps a single Z_2 exchange-torsion class,
+        and the exchange class is codim-1 NON-FIBERED as at N=2.
+========================================================================
+------------------------------------------------------------------------
+(A) integral H_1(UD_N) torsion via Smith normal form.
+    N=2 cross-validation (must match repo), then N=3: torsion stays Z_2.
+------------------------------------------------------------------------
+[PASS] (A) N=2 C_5 (planar): d1.d2=0
+[PASS] (A) N=2 C_5 (planar): H_1 = Z^1 (+) []  (expect Z^1 (+) [])
+[PASS] (A) N=2 K_4 (planar): d1.d2=0
+[PASS] (A) N=2 K_4 (planar): H_1 = Z^4 (+) []  (expect Z^4 (+) [])
+[PASS] (A) N=2 K_5: d1.d2=0
+[PASS] (A) N=2 K_5: H_1 = Z^6 (+) [2]  (expect Z^6 (+) [2])
+[PASS] (A) N=2 K_{3,3}: d1.d2=0
+[PASS] (A) N=2 K_{3,3}: H_1 = Z^4 (+) [2]  (expect Z^4 (+) [2])
+[PASS] (A) N=3 K_5: d1.d2=0 (valid chain complex)
+[PASS] (A) N=3 K_5: H_1(UD_3) = Z^6 (+) [2]  (torsion all order 2: True)  no Z_3 / Z_4 exchange-torsion enrichment on this witness
+[PASS] (A) N=3 K_{3,3}: d1.d2=0 (valid chain complex)
+[PASS] (A) N=3 K_{3,3}: H_1(UD_3) = Z^5 (+) []  (torsion all order 2: True)  no Z_3 / Z_4 exchange-torsion enrichment on this witness
+[PASS] (A) Hom(Z_2, U(1)) = {+1, -1} (torsion exchange phase still boson/fermion)  images = [-1.0, 1.0]
+------------------------------------------------------------------------
+(B) FIBERED test: dim H^1(F2) = dim(base-edge link-sign subspace) + 1.
+    The +1 non-fibered complement = the exchange Z_2; it is NOT a
+    base-edge / link-sign class, at N=2 AND N=3.
+------------------------------------------------------------------------
+[PASS] (B) Z^3 cube L=3 witness is a unit-edge K_{3,3} subdivision  V=14 E=17 core_edges=9 branch_degrees=[3, 3, 3, 3, 3, 3]
+[PASS] (B) K_5 N=2: NON-fibered complement is exactly 1-dim (exchange class, decoupled from sign(beta))  dimH^1(F2)=7 dimFIB(link-sign)=6 nonfib=1
+[PASS] (B) K_5 N=3: NON-fibered complement is exactly 1-dim (exchange class, decoupled from sign(beta))  dimH^1(F2)=7 dimFIB(link-sign)=6 nonfib=1
+[PASS] (B) K_{3,3} N=2: NON-fibered complement is exactly 1-dim (exchange class, decoupled from sign(beta))  dimH^1(F2)=5 dimFIB(link-sign)=4 nonfib=1
+[PASS] (B) K_{3,3} N=3: NON-fibered complement is exactly 1-dim (exchange class, decoupled from sign(beta))  dimH^1(F2)=5 dimFIB(link-sign)=4 nonfib=1
+[PASS] (B) Z^3-cube K_{3,3} witness N=2: NON-fibered complement is exactly 1-dim (exchange class, decoupled from sign(beta))  dimH^1(F2)=5 dimFIB(link-sign)=4 nonfib=1
+[PASS] (B) Z^3-cube K_{3,3} witness N=3: NON-fibered complement is exactly 1-dim (exchange class, decoupled from sign(beta))  dimH^1(F2)=5 dimFIB(link-sign)=4 nonfib=1
+------------------------------------------------------------------------
+(C) Abrams subdivision stability: subdividing K_{3,3} (sufficient for
+    N=3) leaves dim H^1(F2) and the codim-1 non-fibered class fixed.
+------------------------------------------------------------------------
+[PASS] (C) K_{3,3} subdiv k=1 N=2: non-fibered complement = 1-dim  dimH^1(F2)=5 dimFIB=4 (sizes={0: 15, 1: 36, 2: 18})
+[PASS] (C) K_{3,3} subdiv k=1 N=3: non-fibered complement = 1-dim  dimH^1(F2)=5 dimFIB=4 (sizes={0: 20, 1: 54, 2: 36, 3: 6})
+[PASS] (C) K_{3,3} subdiv k=2 N=2: non-fibered complement = 1-dim  dimH^1(F2)=5 dimFIB=4 (sizes={0: 105, 1: 234, 2: 126})
+[PASS] (C) K_{3,3} subdiv k=2 N=3: non-fibered complement = 1-dim  dimH^1(F2)=5 dimFIB=4 (sizes={0: 455, 1: 1404, 2: 1386, 3: 432})
+[PASS] (C) N=2: (dimH^1, dimFIB, nonfib) stable under subdivision k=1 -> k=2  k1=(5, 4, 1) k2=(5, 4, 1)
+[PASS] (C) N=3: (dimH^1, dimFIB, nonfib) stable under subdivision k=1 -> k=2  k1=(5, 4, 1) k2=(5, 4, 1)
+========================================================================
+SCORECARD: PASS=26 FAIL=0
+VERDICT: the finite N=3 graph-braid witness does not supply a fibered-enrichment escape. On the clean K_5 witness the integral H_1(UD_3) exchange torsion is a SINGLE Z_2 -- the same order-2 exchange class as N=2, with NO Z_3/Z_4 exchange-torsion enrichment. The fibered test shows the base-edge link-sign cochains span a subspace of H^1(UD_N; Z_2) whose codimension is EXACTLY 1 at BOTH N=2 and N=3, and that 1-dim complement IS the exchange Z_2: the fermion sign is a NON-FIBERED class that does NOT couple to any base-edge sign(beta) on the tested witnesses. The structure is subdivision-stable (Abrams) and holds on the genuine K_{3,3} subdivision of the real Z^3 lattice. Going to the tested N=3 sector does not make the exchange sign fibered.
+========================================================================
+
+----- stderr -----

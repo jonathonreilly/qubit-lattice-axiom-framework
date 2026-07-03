@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/frontier_minimal_coupling_fiber_frame_connection_2026_06_08.py
+runner_sha256: 5fc88b6bbaf5423f6b62cc3bc05198c95b706bdcae01e1a752d250dee03fb0b3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+==============================================================================
+Part 0  Z^3 lattice (2x2x2), C^3 fibre, deterministic SU(3) config
+==============================================================================
+  [PASS] all link variables U_mu(x) are in SU(3) (unitary, det=1)  (24 links)
+  [PASS] all gauge matrices g(x) are in SU(3)  (8 sites)
+  [PASS] gauge field is genuinely site-dependent (not global)
+  [PASS] free hopping H_free is Hermitian
+  [PASS] covariant hopping H_cov is Hermitian
+  [PASS] U = I reduces H_cov to the retained free hopping H_free
+==============================================================================
+Part 1  Free hopping: globally SU(3)-invariant, locally NOT (the problem)
+==============================================================================
+  [PASS] free hopping IS invariant under a GLOBAL fibre rotation (G H_free G^dag = H_free)
+  [PASS] free hopping is NOT invariant under a LOCAL fibre rotation (G H_free G^dag != H_free)
+==============================================================================
+Part 2  Covariant hopping: G H_cov[U] G^dag = H_cov[U'] (connection law fixed)
+==============================================================================
+  [PASS] transformed links U'_mu(x) = g(x) U_mu(x) g(x+mu)^dag stay in SU(3)
+  [PASS] CENTRAL: G H_cov[U] G^dag = H_cov[U'] with the parallel-transporter law  (covariant hopping maps to covariant hopping (frame-independent dynamics))
+  [PASS] spectrum of H_cov is gauge invariant (eigvals[U] = eigvals[U'])  (max|dlambda| = 6.22e-15)
+==============================================================================
+Part 3  Controls: every other link law BREAKS covariance (transporter unique)
+==============================================================================
+  [PASS] CONTROL: 'same-site g(x)U g(x)^dag' does NOT reproduce G H_cov G^dag
+  [PASS] CONTROL: 'reversed g(x+mu)U g(x)^dag' does NOT reproduce G H_cov G^dag
+  [PASS] CONTROL: 'left-only g(x)U' does NOT reproduce G H_cov G^dag
+  [PASS] CONTROL: 'right-only U g(x+mu)^dag' does NOT reproduce G H_cov G^dag
+==============================================================================
+Part 4  Lattice covariant difference D_mu psi = U_mu psi_{x+mu} - psi_x
+==============================================================================
+  [PASS] D_mu transforms covariantly: (D'_mu psi')(x) = g(x) (D_mu psi)(x)
+  [PASS] naive difference d_mu psi does NOT transform covariantly (needs connection)
+==============================================================================
+Part 5  Plaquette holonomy gauge invariant; open Wilson line is not
+==============================================================================
+  [PASS] plaquette trace Tr U_p is gauge invariant (closed loop)  (|dTr| = 1.61e-15)
+  [PASS] open Wilson line Tr U_mu(x) is NOT gauge invariant  (|dTr| = 6.16e-01)
+  [PASS] flat connection U=I has trivial holonomy (Tr U_p = N_f = 3)
+==============================================================================
+Part 6  U_mu = exp(i eps A_mu) gives D_mu psi = d_mu psi + i eps A_mu psi(x+mu)
+==============================================================================
+  [PASS] minimal-coupling residual is O(eps^2) for D_mu psi = d_mu psi + i eps A_mu psi(x+mu)  (log-log slope = 2.0000 (== 2 confirms first-order minimal coupling))
+==============================================================================
+Part 7  U(1) (hypercharge-like) factor obeys the same abelian transporter law
+==============================================================================
+  [PASS] free hopping NOT invariant under local U(1) phase (abelian gauge field needed)
+  [PASS] U(1) covariant hopping: G H_cov G^dag = H_cov[U'] (abelian transporter)
+==============================================================================
+TOTAL: PASS=23 FAIL=0
+==============================================================================
+SCOPE: This runner verifies the KINEMATICS of matter-gauge minimal coupling
+  -- using the current-surface local fibre-frame redundancy bridge, the
+  link connection U_mu(x) and its parallel-transporter gauge law are fixed
+  by frame-independence of nearest-neighbour hopping on the retained
+  per-site U(3) fibre. The gauge-covariance core (Parts 1-5,7) is exact
+  finite algebra. It does NOT derive any gauge ACTION or dynamics for U_mu
+  (the Yang-Mills target), claims NO continuum limit, proves NO future
+  colour-readout exclusion theorem, and defers physical SU(3)_c per the
+  graph_first_su3 boundary.
+
+----- stderr -----
+

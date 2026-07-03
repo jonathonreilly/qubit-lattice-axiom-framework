@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/kraus_choi_normalization_convention_check_2026_06_05.py
+runner_sha256: 6fd41f2ccc6ab1bf0195aa7518fb521d45fb338ec7e92d9317d807ce0060401b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+========================================================================================
+KRAUS-CHOI NORMALIZATION CONVENTION CHECK
+========================================================================================
+[PASS] note marker present: unnormalized convention
+[PASS] note marker present: normalized Choi scale
+[PASS] note marker present: normalized inverse factor
+[PASS] note marker present: unnormalized Kraus unvec factor
+[PASS] note marker present: primary runner link
+[PASS] Kraus TP condition sum K^dagger K = I
+       [[1.+0.j 0.+0.j]
+ [0.+0.j 1.+0.j]]
+[PASS] normalized Choi is unnormalized Choi divided by d
+[PASS] unnormalized Choi matrix is positive semidefinite
+       min_eig=+0.000e+00
+[PASS] TP iff output partial trace of unnormalized Choi is I
+[PASS] unnormalized convention inverse has no extra factor
+       max_error=0.000e+00
+[PASS] normalized convention inverse requires factor d
+       max_error=0.000e+00
+[PASS] normalized convention without factor d fails on nonzero map
+       max_missing_factor_error=5.000e-01
+[PASS] finite qubit-lattice region |Lambda|=1 has matrix dimension d=2^1
+       d=2
+[PASS] finite qubit-lattice region |Lambda|=2 has matrix dimension d=2^2
+       d=4
+[PASS] finite qubit-lattice region |Lambda|=3 has matrix dimension d=2^3
+       d=8
+[PASS] finite qubit-lattice region |Lambda|=4 has matrix dimension d=2^4
+       d=16
+========================================================================================
+TOTAL: PASS=16 FAIL=0
+ASSERTIONS: PASS
+========================================================================================
+
+----- stderr -----
+

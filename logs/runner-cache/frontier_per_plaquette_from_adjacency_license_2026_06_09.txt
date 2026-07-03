@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/frontier_per_plaquette_from_adjacency_license_2026_06_09.py
+runner_sha256: c5847d71019999ab6abe33984aad71e53045132201d942a88a80ad55cded9bf4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+========================================================================================
+PER-PLAQUETTE LINK-LICENSE FINITE ENUMERATION SUPPORT
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Reference text checks
+----------------------------------------------------------------------------------------
+  [PASS] reachability note contains one-tick dependency wording
+  [PASS] reachability note contains listed-dependency boundary wording
+  [PASS] kinetic-isotropy primitive contains the one-tick form wording
+
+----------------------------------------------------------------------------------------
+Strict link lift check
+----------------------------------------------------------------------------------------
+  [PASS] strict share-site lift rejects the plaquette's opposite edges  --  strict lift is too strict for plaquette support
+
+----------------------------------------------------------------------------------------
+Finite loop enumeration
+----------------------------------------------------------------------------------------
+  [PASS] length-4 rooted simple loops: expected count  --  found 24
+  [PASS] length-4 rooted simple loops are all plaquettes
+  [PASS] length-4 plaquette loops all satisfy the unit-neighborhood license  --  licensed 24 / 24
+  [PASS] length-6 rooted simple loops: expected count  --  found 264
+  [PASS] length-6 rooted simple loops do not satisfy the unit-neighborhood license  --  licensed 0 / 264
+
+----------------------------------------------------------------------------------------
+Scope guard
+----------------------------------------------------------------------------------------
+  Scope is finite enumeration support only.
+  The paired source note excludes theta and downstream closure claims.
+
+========================================================================================
+SUMMARY: PASS=9 FAIL=0
+========================================================================================
+
+----- stderr -----
+

@@ -1,0 +1,172 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_selector_audit_sidecar_2026_06_05.py
+runner_sha256: fc16d75e151af9a1a84dadf4dc7393e188172679cfb87241ff6f21e9bf275b76
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+=== Record selector audit sidecar ===
+sidecar_rows=13
+[PASS] S0.1 sidecar has exactly the 13 selector-split audited-conditional rows
+[PASS] S0.2 expected class counts sum to 13
+[PASS] S0.3 class counts match expected repair buckets
+       {'false_positive_not_selector': 1, 'observable_identification_bridge': 2, 'dynamics_or_orbit_breaking_bridge': 1, 'stable_dial_open': 3, 'equal_letter_stable_location': 3, 'measurement_update_not_prior': 1, 'record_scalar_generator_not_prior': 1, 'sector_specific_dial_open_gate': 1}
+[PASS] L1 axiom_first_cluster_decomposition_theorem_note_2026-04-29 exists in audit ledger
+[PASS] L2 axiom_first_cluster_decomposition_theorem_note_2026-04-29 has explicit current ledger metadata
+       audit_status=audited_clean effective_status=retained_bounded
+[PASS] L3 axiom_first_cluster_decomposition_theorem_note_2026-04-29 note path exists
+       docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md
+[PASS] L4 axiom_first_cluster_decomposition_theorem_note_2026-04-29 source text matches sidecar anchor
+       Lieb-Robinson
+[PASS] L5 axiom_first_cluster_decomposition_theorem_note_2026-04-29 sidecar class is nonempty
+[PASS] L6 axiom_first_cluster_decomposition_theorem_note_2026-04-29 repair target is nonempty
+[PASS] L1 flavor_asymmetry_identification_principled_not_forced_2026-05-31 exists in audit ledger
+[PASS] L2 flavor_asymmetry_identification_principled_not_forced_2026-05-31 has explicit current ledger metadata
+       audit_status=audited_conditional effective_status=audited_conditional
+[PASS] L3 flavor_asymmetry_identification_principled_not_forced_2026-05-31 note path exists
+       docs/FLAVOR_ASYMMETRY_IDENTIFICATION_PRINCIPLED_NOT_FORCED_2026-05-31.md
+[PASS] L4 flavor_asymmetry_identification_principled_not_forced_2026-05-31 source text matches sidecar anchor
+       single-fixed-point local density
+[PASS] L5 flavor_asymmetry_identification_principled_not_forced_2026-05-31 sidecar class is nonempty
+[PASS] L6 flavor_asymmetry_identification_principled_not_forced_2026-05-31 repair target is nonempty
+[PASS] L1 flavor_emergent_chirality_no_transport_note_2026-05-30 exists in audit ledger
+[PASS] L2 flavor_emergent_chirality_no_transport_note_2026-05-30 has explicit current ledger metadata
+       audit_status=audited_conditional effective_status=audited_conditional
+[PASS] L3 flavor_emergent_chirality_no_transport_note_2026-05-30 note path exists
+       docs/FLAVOR_EMERGENT_CHIRALITY_NO_TRANSPORT_NOTE_2026-05-30.md
+[PASS] L4 flavor_emergent_chirality_no_transport_note_2026-05-30 source text matches sidecar anchor
+       C₃-breaking
+[PASS] L5 flavor_emergent_chirality_no_transport_note_2026-05-30 sidecar class is nonempty
+[PASS] L6 flavor_emergent_chirality_no_transport_note_2026-05-30 repair target is nonempty
+[PASS] L1 flavor_find_j_round1_jcs_measure_neutral_2026-06-02 exists in audit ledger
+[PASS] L2 flavor_find_j_round1_jcs_measure_neutral_2026-06-02 has explicit current ledger metadata
+       audit_status=audited_clean effective_status=retained_bounded
+[PASS] L3 flavor_find_j_round1_jcs_measure_neutral_2026-06-02 note path exists
+       docs/FLAVOR_FIND_J_ROUND1_JCS_MEASURE_NEUTRAL_2026-06-02.md
+[PASS] L4 flavor_find_j_round1_jcs_measure_neutral_2026-06-02 source text matches sidecar anchor
+       measure-NEUTRAL
+[PASS] L5 flavor_find_j_round1_jcs_measure_neutral_2026-06-02 sidecar class is nonempty
+[PASS] L6 flavor_find_j_round1_jcs_measure_neutral_2026-06-02 repair target is nonempty
+[PASS] L1 flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31 exists in audit ledger
+[PASS] L2 flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31 has explicit current ledger metadata
+       audit_status=audited_conditional effective_status=audited_conditional
+[PASS] L3 flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31 note path exists
+       docs/FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31.md
+[PASS] L4 flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31 source text matches sidecar anchor
+       intensive single-fixed-point local density
+[PASS] L5 flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31 sidecar class is nonempty
+[PASS] L6 flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31 repair target is nonempty
+[PASS] L1 flavor_measure_positivity_agnostic_note_2026-05-31 exists in audit ledger
+[PASS] L2 flavor_measure_positivity_agnostic_note_2026-05-31 has explicit current ledger metadata
+       audit_status=audited_clean effective_status=retained_bounded
+[PASS] L3 flavor_measure_positivity_agnostic_note_2026-05-31 note path exists
+       docs/FLAVOR_MEASURE_POSITIVITY_AGNOSTIC_NOTE_2026-05-31.md
+[PASS] L4 flavor_measure_positivity_agnostic_note_2026-05-31 source text matches sidecar anchor
+       positivity is AGNOSTIC, positivity is blind, checks are agnostic
+[PASS] L5 flavor_measure_positivity_agnostic_note_2026-05-31 sidecar class is nonempty
+[PASS] L6 flavor_measure_positivity_agnostic_note_2026-05-31 repair target is nonempty
+[PASS] L1 flavor_missing_axiom_carrier_measure_note_2026-05-30 exists in audit ledger
+[PASS] L2 flavor_missing_axiom_carrier_measure_note_2026-05-30 has explicit current ledger metadata
+       audit_status=audited_conditional effective_status=audited_conditional
+[PASS] L3 flavor_missing_axiom_carrier_measure_note_2026-05-30 note path exists
+       docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md
+[PASS] L4 flavor_missing_axiom_carrier_measure_note_2026-05-30 source text matches sidecar anchor
+       generator-channel HS measure, generator-channel Hilbert-Schmidt
+[PASS] L5 flavor_missing_axiom_carrier_measure_note_2026-05-30 sidecar class is nonempty
+[PASS] L6 flavor_missing_axiom_carrier_measure_note_2026-05-30 repair target is nonempty
+[PASS] L1 flavor_trace_vs_center_dissolves_note_2026-05-30 exists in audit ledger
+[PASS] L2 flavor_trace_vs_center_dissolves_note_2026-05-30 has explicit current ledger metadata
+       audit_status=unaudited effective_status=unaudited
+[PASS] L3 flavor_trace_vs_center_dissolves_note_2026-05-30 note path exists
+       docs/FLAVOR_TRACE_VS_CENTER_DISSOLVES_NOTE_2026-05-30.md
+[PASS] L4 flavor_trace_vs_center_dissolves_note_2026-05-30 source text matches sidecar anchor
+       free Fourier modulus, modulus selector, r = 1/2 modulus
+[PASS] L5 flavor_trace_vs_center_dissolves_note_2026-05-30 sidecar class is nonempty
+[PASS] L6 flavor_trace_vs_center_dissolves_note_2026-05-30 repair target is nonempty
+[PASS] L1 koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10 exists in audit ledger
+[PASS] L2 koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10 has explicit current ledger metadata
+       audit_status=audited_clean effective_status=retained
+[PASS] L3 koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10 note path exists
+       docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md
+[PASS] L4 koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10 source text matches sidecar anchor
+       No selection principle
+[PASS] L5 koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10 sidecar class is nonempty
+[PASS] L6 koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10 repair target is nonempty
+[PASS] L1 koide_tracial_standard_form_carrier_narrow_note_2026-06-02 exists in audit ledger
+[PASS] L2 koide_tracial_standard_form_carrier_narrow_note_2026-06-02 has explicit current ledger metadata
+       audit_status=audited_conditional effective_status=audited_conditional
+[PASS] L3 koide_tracial_standard_form_carrier_narrow_note_2026-06-02 note path exists
+       docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md
+[PASS] L4 koide_tracial_standard_form_carrier_narrow_note_2026-06-02 source text matches sidecar anchor
+       channel-counting scoring, supplied channel-count
+[PASS] L5 koide_tracial_standard_form_carrier_narrow_note_2026-06-02 sidecar class is nonempty
+[PASS] L6 koide_tracial_standard_form_carrier_narrow_note_2026-06-02 repair target is nonempty
+[PASS] L1 luders_rule_from_composition_consistency_note_2026-05-20 exists in audit ledger
+[PASS] L2 luders_rule_from_composition_consistency_note_2026-05-20 has explicit current ledger metadata
+       audit_status=audited_conditional effective_status=audited_conditional
+[PASS] L3 luders_rule_from_composition_consistency_note_2026-05-20 note path exists
+       docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md
+[PASS] L4 luders_rule_from_composition_consistency_note_2026-05-20 source text matches sidecar anchor
+       sequential-effect composition
+[PASS] L5 luders_rule_from_composition_consistency_note_2026-05-20 sidecar class is nonempty
+[PASS] L6 luders_rule_from_composition_consistency_note_2026-05-20 repair target is nonempty
+[PASS] L1 observable_principle_from_axiom_note exists in audit ledger
+[PASS] L2 observable_principle_from_axiom_note has explicit current ledger metadata
+       audit_status=unaudited effective_status=unaudited
+[PASS] L3 observable_principle_from_axiom_note note path exists
+       docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md
+[PASS] L4 observable_principle_from_axiom_note source text matches sidecar anchor
+       P2
+[PASS] L5 observable_principle_from_axiom_note sidecar class is nonempty
+[PASS] L6 observable_principle_from_axiom_note repair target is nonempty
+[PASS] L1 quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26 exists in audit ledger
+[PASS] L2 quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26 has explicit current ledger metadata
+       audit_status=audited_conditional effective_status=audited_conditional
+[PASS] L3 quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26 note path exists
+       docs/QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md
+[PASS] L4 quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26 source text matches sidecar anchor
+       must not be copied
+[PASS] L5 quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26 sidecar class is nonempty
+[PASS] L6 quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26 repair target is nonempty
+[PASS] E1 endpoint counts expose stable locations without forcing them
+[PASS] E2 no sidecar row claims a forced endpoint
+[PASS] E3 all s=0 stable-location rows are explicitly non-selecting
+[PASS] E4 all dial rows remain open-dial rows
+[PASS] audit-data-readonly guard: audit data files are read-only inputs in this runner
+[PASS] audit-vocab guard: runner has no audit verdict vocabulary in sidecar classes
+
+=== Repair buckets ===
+dynamics_or_orbit_breaking_bridge: 1
+equal_letter_stable_location: 3
+false_positive_not_selector: 1
+measurement_update_not_prior: 1
+observable_identification_bridge: 2
+record_scalar_generator_not_prior: 1
+sector_specific_dial_open_gate: 1
+stable_dial_open: 3
+
+=== Row sidecar table ===
+axiom_first_cluster_decomposition_theorem_note_2026-04-29 | bounded_theorem | critical | false_positive_not_selector | none | Do not route through the selector theorem; the blocker is a transfer/spatial gap and cluster-decomposition bridge.
+flavor_asymmetry_identification_principled_not_forced_2026-05-31 | bounded_theorem | leaf | observable_identification_bridge | none | Derive or admit the generation-space/local-density-as-observable bridge.
+flavor_emergent_chirality_no_transport_note_2026-05-30 | bounded_theorem | medium | dynamics_or_orbit_breaking_bridge | none | Supply a native C3-breaking/orbit-splitting operator or spectral-asymmetry dynamics.
+flavor_find_j_round1_jcs_measure_neutral_2026-06-02 | bounded_theorem | leaf | stable_dial_open | dial | Find a first-order/action or dynamics bridge; static J_cs is measure-neutral.
+flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31 | bounded_theorem | leaf | observable_identification_bridge | none | Close the intensive-summand-as-observable promotion / generation-space bridge.
+flavor_measure_positivity_agnostic_note_2026-05-31 | bounded_theorem | leaf | stable_dial_open | dial | Derive the remaining reality/statistics or cross-factor bit; positivity alone is agnostic.
+flavor_missing_axiom_carrier_measure_note_2026-05-30 | bounded_theorem | medium | equal_letter_stable_location | s=0_stable_location | State the generator-channel HS measure as stable-location support only; do not claim it selects the physical dial position.
+flavor_trace_vs_center_dissolves_note_2026-05-30 | bounded_theorem | medium | stable_dial_open | dial | Separate readout-class support from the still-free Fourier modulus.
+koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10 | positive_theorem | critical | equal_letter_stable_location | s=0_stable_location | Use the equal-weight log-functional as stable-location evidence only; do not promote it to physical dial selection.
+koide_tracial_standard_form_carrier_narrow_note_2026-06-02 | bounded_theorem | medium | equal_letter_stable_location | s=0_stable_location | Keep the carrier/channel-count reading as stable-location support; do not treat the candidate carrier as selecting the physical dial position.
+luders_rule_from_composition_consistency_note_2026-05-20 | bounded_theorem | high | measurement_update_not_prior | none | Derive or explicitly admit standard sequential-effect composition for record conditioning.
+observable_principle_from_axiom_note | bounded_theorem | critical | record_scalar_generator_not_prior | none | Derive P2 continuous phase-blind scalar-generator selection.
+quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26 | open_gate | medium | sector_specific_dial_open_gate | dial | Derive sector-specific mass scheme/scale and quark-sector dial parameters; do not transfer charged-lepton BAE.
+
+=== Interpretation ===
+The selector theorem moves three rows into an explicit s=0 stable-location bucket, not a physical selector bucket.
+Four rows remain dial-open: stability or native structure is not enough to pick a position.
+Six rows are not prior-selector closures after the Record type firewall: they need observable identification, dynamics/orbit breaking, measurement-update, scalar-generator, or sector-specific mass-scheme repairs.
+No audit verdicts are applied and no audit data is written.
+SCORECARD PASS=87 FAIL=0
+
+----- stderr -----
+

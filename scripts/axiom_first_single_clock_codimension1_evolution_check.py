@@ -1,586 +1,680 @@
 """Axiom-first single-clock codimension-1 unitary evolution check.
 
-Verifies, on a small lattice block, the structural content of the
-single-clock codimension-1 unitary evolution theorem (Block 12,
-2026-05-03):
+Rebuilt 2026-06-11 (hostile science-fix re-scope of the companion note
+AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md).
 
-  (S1) Stone's theorem unitarity on a finite-dim H_phys
-        T1: positive Hermitian transfer matrix T (RP)
-        T2: H = -(1/a_tau) log(T) self-adjoint and bounded below
-        T3: U(t) := exp(-itH) is a strongly-continuous one-parameter
-            unitary group: U(0) = I, U(s+t) = U(s) U(t), U^dag U = I
+Computes the load-bearing content of the axis-conditional theorem
+(S1')-(S3') with falsification legs:
 
-  (S2) Codimension-1 Cauchy hypersurface
-        T4: equal-time strict locality [O_x, O_y] = 0 for x != y
-        T5: equal-time local algebra factorises as a tensor product
-        T6: codimension-1: dim(Sigma_t) = dim(Lambda) - 1
-        T7: finite-speed propagation: support of T O_{Sigma_t} grows
-            by at most v_LR per lattice time step
+  [A] supply-hypothesis and Stone-closure residuals on a concrete
+      finite-range block transfer: T positive Hermitian with trivial
+      kernel and ||T|| <= 1 (the (R-STONE) hypotheses), unique-generator
+      reconstruction, group laws, tau-rescaling (scope-boundary N2 is
+      load-bearing), and the non-Hermitian-transfer falsifier.
 
-  (S3) Uniqueness of the reflection axis (no second clock)
-        T8: temporal staggered-phase sign rule eta_t(theta x) = -eta_t(x)
-            holds for the temporal-link reflection
-        T9: spatial reflection theta_1 fails the staggered-phase sign
-            rule for the temporal hop term: eta_t(theta_1 x) = +eta_t(x)
-            (contradicts the (R-RP) factorisation requirement)
-        T10: the staggered-Dirac action does NOT factorise under
-            spatial reflection (no spatial RP)
+  [B] finite-range Lieb-Robinson sanity check on the explicit toy block:
+      the standard v_LR = 2 e J_* D_int R_int form is instantiated only
+      as a finite-range boundary witness, not as the current propagation
+      supplier for the source note.
 
-The runner uses a small qubit chain as an A_min-compatible toy: each
-site carries a 2-dim Hilbert space (matching the per-site uniqueness
-theorem's conclusion that the Cl(3) minimal complex spinor irrep is
-2-dim Pauli). The Hamiltonian is Hermitian and finite-range. The
-proof in the companion theorem note is dimension-independent in the
-spatial direction (Steps 1-3 use the spectral theorem on H_phys, the
-tensor product of per-site Cl(3), and the staggered-phase sign rule
-for the action) and applies equally to the toy and to the framework's
-Cl(3) on Z^3.
+  [C] first-principles computes:
+      [C-LR]  computed Heisenberg commutator residuals vs the L1 bound,
+              with inside/outside-cone contrast (the cone is real, the
+              bound is satisfied with margin).
+      [C-EX]  the exact staggered time-space exchange intertwiner
+              W = P_{tau<->1} diag((-1)^{x_tau x_1}):
+              W M_KS W^T = M_KS exactly, temporal hop sector mapped
+              exactly onto the x_1 hop sector, spectra equal.
+              FALSIFIER: the plain permutation without the sign field
+              fails by a large margin (the identity is non-trivial).
+              This is the computed certificate that withdraws the old
+              S3 ("temporal direction is the unique RP-admissible
+              reflection axis"): the staggered phase structure cannot
+              distinguish the temporal axis.
+      [C-2CLK] two-clock tensor-factor comparator: two commuting
+              positive transfers T_A (x) I and I (x) T_B with a
+              genuinely 2-dimensional generator span. Stone uniqueness
+              for the supplied PRODUCT transfer still pins the summed
+              generator, but the two-parameter family is not generated
+              by any single Hamiltonian: the comparator violates the
+              single-clock constraint and is excluded only by the
+              declared premise B-AXIS.3 (= scope-boundary N5), which is
+              therefore non-vacuous.
+      [C-BDRY] strict finite-range boundary for log-transfer generators:
+              (i) consistency — the block Hamiltonian used in
+              [A]/[B]/[C-LR] is EXACTLY finite-range (every Pauli
+              string with support diameter > 1 has zero coefficient),
+              so the runner's dynamics lies in the declared class;
+              (ii) non-vacuity witness — a strictly local positive
+              transfer T = e^{-A/2} e^{-B} e^{-A/2} (A on sites {0,1},
+              B on {1,2}) whose log-generator H_w = -log T has a
+              computed NONZERO end-to-end Pauli component (support
+              diameter 2): strict finite-range-ness of a log-transfer
+              generator is not automatic, so the current theorem must
+              cite the retained free-bilinear quasilocal bridge rather
+              than keep the old B-RANGE premise;
+              (iii) contrast — a single-factor local transfer logs
+              back to its local generator exactly (the failure in (ii)
+              is the non-commuting BCH tail, not a log artifact).
+
+  [D] composition / circularity discipline: textual checks that the
+      companion note declares B-AXIS, retires B-RANGE from current
+      scope, cites the free-bilinear quasilocal propagation supplier,
+      withdraws the old S3, keeps the claim transfer- and tau-relative,
+      and preserves the 2026-06-17 B-AXIS.1 split between the supported
+      internal blocked-transfer denominator and the still-open absolute
+      physical clock unit (guards against wording regression).
+
+Deterministic; runtime well under one minute. TOTAL: PASS=n FAIL=0.
 """
 from __future__ import annotations
 
+import itertools
 import math
+import os
 
 import numpy as np
 
+# -------------------------------------------------------------------
+# scaffolding
+# -------------------------------------------------------------------
+
+PASS = 0
+FAIL = 0
+
+
+def record(tag: str, label: str, passed: bool, detail: str = "") -> None:
+    global PASS, FAIL
+    if passed:
+        PASS += 1
+    else:
+        FAIL += 1
+    status = "PASS" if passed else "FAIL"
+    print(f"  [{status}] [{tag}] {label}" + (f" ({detail})" if detail else ""))
+
+
+def expm_herm(c: complex, A: np.ndarray) -> np.ndarray:
+    w, V = np.linalg.eigh(A)
+    return V @ np.diag(np.exp(c * w)) @ V.conj().T
+
+
+def opnorm(A: np.ndarray) -> float:
+    return float(np.linalg.norm(A, ord=2))
+
 
 # -------------------------------------------------------------------
-# Toy A_min lattice block constructors
+# toy block: L-site qubit chain (per-site M_2(C), finite-range H)
 # -------------------------------------------------------------------
 
 
-def site_operator(L: int, site: int, op: np.ndarray) -> np.ndarray:
-    """Embed a single-site 2x2 operator at `site` of an L-site qubit chain.
-
-    Identity acts on all other sites.
-    """
-    dim_left = 2 ** site
-    dim_right = 2 ** (L - site - 1)
-    return np.kron(np.eye(dim_left), np.kron(op, np.eye(dim_right)))
+def site_op(L: int, site: int, op: np.ndarray) -> np.ndarray:
+    return np.kron(np.eye(2**site), np.kron(op, np.eye(2 ** (L - site - 1))))
 
 
-def build_finite_range_hamiltonian(L: int, J: float, seed: int) -> np.ndarray:
-    """H = sum_z h_z, where h_z is Hermitian on sites (z, z+1).
-
-    Range r = 1 (finite-range). Operator norm of each h_z bounded by J.
-    """
+def finite_range_hamiltonian(L: int, J: float, seed: int) -> np.ndarray:
+    """H = sum_z h_z on sites (z, z+1); each ||h_z||_op = J exactly."""
     rng = np.random.default_rng(seed)
-    dim = 2 ** L
+    dim = 2**L
     H = np.zeros((dim, dim), dtype=complex)
     for z in range(L - 1):
-        h_local = rng.standard_normal((4, 4)) + 1j * rng.standard_normal((4, 4))
-        h_local = 0.5 * (h_local + h_local.conj().T)
-        eigvals = np.linalg.eigvalsh(h_local)
-        norm = float(np.max(np.abs(eigvals)))
-        if norm > 0:
-            h_local = h_local * (J / norm)
-        left_dim = 2 ** z
-        right_dim = 2 ** (L - z - 2)
-        h_full = np.kron(np.eye(left_dim), np.kron(h_local, np.eye(right_dim)))
-        H = H + h_full
+        h = rng.standard_normal((4, 4)) + 1j * rng.standard_normal((4, 4))
+        h = 0.5 * (h + h.conj().T)
+        h *= J / opnorm(h)
+        H += np.kron(np.eye(2**z), np.kron(h, np.eye(2 ** (L - z - 2))))
     return H
 
 
-def expm_hermitian(c: complex, A: np.ndarray) -> np.ndarray:
-    """exp(c A) for Hermitian A and scalar c."""
-    eigvals, V = np.linalg.eigh(A)
-    return V @ np.diag(np.exp(c * eigvals)) @ V.conj().T
-
-
-def transfer_matrix_from_H(H: np.ndarray, a_tau: float) -> np.ndarray:
-    """T = exp(-a_tau H). Positive Hermitian if H is Hermitian."""
-    # Subtract ground-state energy so T <= I (matches (R-RP) bound on canonical surface)
-    H_shifted = H - np.eye(H.shape[0]) * float(np.linalg.eigvalsh(H).min())
-    return expm_hermitian(-a_tau, H_shifted)
-
-
-def commutator_norm(A: np.ndarray, B: np.ndarray) -> float:
-    """Operator norm of [A, B]."""
-    C = A @ B - B @ A
-    return float(np.linalg.norm(C, ord=2))
+SIGMA_Z = np.array([[1.0, 0.0], [0.0, -1.0]], dtype=complex)
+SIGMA_X = np.array([[0.0, 1.0], [1.0, 0.0]], dtype=complex)
 
 
 # -------------------------------------------------------------------
-# Test scaffolding
+# [A] S1' supply hypotheses + Stone closure + falsifiers
 # -------------------------------------------------------------------
 
 
-PASS_COUNT = 0
-FAIL_COUNT = 0
-TEST_LOG: list[tuple[str, bool, str]] = []
-
-
-def record(label: str, passed: bool, detail: str = "") -> None:
-    global PASS_COUNT, FAIL_COUNT
-    if passed:
-        PASS_COUNT += 1
-    else:
-        FAIL_COUNT += 1
-    TEST_LOG.append((label, passed, detail))
-    status = "PASS" if passed else "FAIL"
-    print(f"  [{status}] {label}" + (f" ({detail})" if detail else ""))
-
-
-# -------------------------------------------------------------------
-# Tests for (S1) Stone's theorem unitarity
-# -------------------------------------------------------------------
-
-
-def test_S1_stone_unitarity(H: np.ndarray, a_tau: float) -> None:
-    """T1-T3: T positive Hermitian, H self-adjoint bounded below, U(t)
-    strongly-continuous one-parameter unitary group."""
+def block_A_stone(H: np.ndarray, tau: float) -> None:
     print()
     print("-" * 72)
-    print("(S1) STONE'S THEOREM ON H_phys (single-clock unitary evolution)")
+    print("[A] (S1') SUPPLY HYPOTHESES AND STONE CLOSURE (transfer/tau-relative)")
     print("-" * 72)
+    dim = H.shape[0]
 
-    # T1: T is positive Hermitian
-    T = transfer_matrix_from_H(H, a_tau)
-    T_herm_resid = float(np.linalg.norm(T - T.conj().T, ord=2))
-    T_eigvals = np.linalg.eigvalsh(0.5 * (T + T.conj().T))
-    min_T_eig = float(T_eigvals.min())
-    max_T_eig = float(T_eigvals.max())
-    record(
-        "T1: T = exp(-a_tau H) is Hermitian",
-        T_herm_resid < 1e-10,
-        f"||T - T^dag||_op = {T_herm_resid:.3e}",
-    )
-    record(
-        "T1: T eigenvalues non-negative (positive Hermitian)",
-        min_T_eig > -1e-10,
-        f"min eigval = {min_T_eig:.6f}",
-    )
-    record(
-        "T1: T <= I in operator norm (canonical surface bound)",
-        max_T_eig <= 1.0 + 1e-10,
-        f"max eigval = {max_T_eig:.6f}",
-    )
+    # supplied transfer, vacuum-normalized so spec in (0,1] (R-SC2 style)
+    H_shift = H - np.eye(dim) * float(np.linalg.eigvalsh(H).min())
+    T = expm_herm(-tau, H_shift)
 
-    # T2: H reconstructed from T is self-adjoint and bounded below
-    # H_reconstructed = -(1/a_tau) log(T_shifted)
-    # On the canonical surface T_shifted = T (since we shifted H to start at 0)
-    T_shifted = T
-    eigvals_T, V_T = np.linalg.eigh(0.5 * (T_shifted + T_shifted.conj().T))
-    eigvals_T = np.maximum(eigvals_T, 1e-300)  # safe log
-    H_reconstructed = V_T @ np.diag(-(1.0 / a_tau) * np.log(eigvals_T)) @ V_T.conj().T
-    H_herm_resid = float(np.linalg.norm(H_reconstructed - H_reconstructed.conj().T, ord=2))
-    H_eigvals = np.linalg.eigvalsh(0.5 * (H_reconstructed + H_reconstructed.conj().T))
-    min_H_eig = float(H_eigvals.min())
-    record(
-        "T2: H = -(1/a_tau) log(T) self-adjoint",
-        H_herm_resid < 1e-9,
-        f"||H - H^dag||_op = {H_herm_resid:.3e}",
-    )
-    record(
-        "T2: H bounded below (spectrum condition)",
-        min_H_eig > -1e-9,
-        f"min E = {min_H_eig:.6f}",
-    )
+    herm = opnorm(T - T.conj().T)
+    eigs = np.linalg.eigvalsh(0.5 * (T + T.conj().T))
+    record("A", "(R-STONE hyp) T Hermitian", herm < 1e-12, f"||T-T^dag|| = {herm:.2e}")
+    record("A", "(R-STONE hyp) T positive, trivial kernel",
+           float(eigs.min()) > 1e-12, f"min eig = {eigs.min():.3e}")
+    record("A", "(R-STONE hyp) ||T||_op <= 1",
+           float(eigs.max()) <= 1.0 + 1e-12, f"max eig = {eigs.max():.6f}")
 
-    # T3: U(t) = exp(-itH) is a one-parameter unitary group
-    # Properties: U(0) = I, U(s+t) = U(s) U(t), U^dag U = I, strong continuity
-    H_phys = H_reconstructed
-    dim = H_phys.shape[0]
-    U_zero = expm_hermitian(0.0j, H_phys)
-    U_zero_resid = float(np.linalg.norm(U_zero - np.eye(dim), ord=2))
-    record(
-        "T3: U(0) = I",
-        U_zero_resid < 1e-10,
-        f"||U(0) - I|| = {U_zero_resid:.3e}",
-    )
+    # Stone reconstruction: H_rec = -(1/tau) log T equals the shifted H
+    w, V = np.linalg.eigh(0.5 * (T + T.conj().T))
+    H_rec = V @ np.diag(-(1.0 / tau) * np.log(w)) @ V.conj().T
+    rec_resid = opnorm(H_rec - H_shift)
+    record("A", "unique generator: -(1/tau) log T reproduces the supplied H",
+           rec_resid < 1e-9 * max(1.0, opnorm(H_shift)),
+           f"||H_rec - H|| = {rec_resid:.2e}")
+    record("A", "H >= 0 (R-SC2 normalization)",
+           float(np.linalg.eigvalsh(H_rec).min()) > -1e-10,
+           f"min E = {np.linalg.eigvalsh(H_rec).min():.2e}")
 
-    # group composition
+    # group laws
     s, t = 0.37, 0.91
-    U_s = expm_hermitian(-1j * s, H_phys)
-    U_t = expm_hermitian(-1j * t, H_phys)
-    U_st = expm_hermitian(-1j * (s + t), H_phys)
-    composition_resid = float(np.linalg.norm(U_s @ U_t - U_st, ord=2))
-    record(
-        "T3: U(s) U(t) = U(s+t) (group composition)",
-        composition_resid < 1e-9,
-        f"||U(s)U(t) - U(s+t)|| = {composition_resid:.3e}",
-    )
+    U = lambda x: expm_herm(-1j * x, H_rec)  # noqa: E731
+    r0 = opnorm(U(0.0) - np.eye(dim))
+    r1 = opnorm(U(s) @ U(t) - U(s + t))
+    r2 = opnorm(U(t).conj().T @ U(t) - np.eye(dim))
+    record("A", "U(0) = I", r0 < 1e-12, f"resid = {r0:.2e}")
+    record("A", "U(s)U(t) = U(s+t)", r1 < 1e-9, f"resid = {r1:.2e}")
+    record("A", "U(t)^dag U(t) = I", r2 < 1e-9, f"resid = {r2:.2e}")
 
-    # unitarity
-    U_t_dag_U_t = U_t.conj().T @ U_t
-    unitarity_resid = float(np.linalg.norm(U_t_dag_U_t - np.eye(dim), ord=2))
-    record(
-        "T3: U(t)^dag U(t) = I (unitarity)",
-        unitarity_resid < 1e-9,
-        f"||U^dag U - I|| = {unitarity_resid:.3e}",
-    )
+    # generator identification with quantified finite-difference bound
+    eps = 1e-5
+    fd = (1j / eps) * (U(eps) - np.eye(dim))
+    fd = 0.5 * (fd + fd.conj().T)
+    fd_resid = opnorm(fd - H_rec)
+    fd_bound = 0.6 * eps * opnorm(H_rec) ** 2
+    record("A", "generator: i dU/dt|_0 = H within the 2nd-order FD bound",
+           fd_resid < fd_bound, f"resid = {fd_resid:.2e}, bound = {fd_bound:.2e}")
 
-    # strong continuity on finite-dim H_phys is automatic; verify by
-    # checking ||U(t) - I|| -> 0 as t -> 0
-    eps = 1e-4
-    U_eps = expm_hermitian(-1j * eps, H_phys)
-    cont_norm = float(np.linalg.norm(U_eps - np.eye(dim), ord=2))
-    expected_bound = eps * float(np.linalg.norm(H_phys, ord=2)) * 1.5
-    record(
-        "T3: strong continuity ||U(t) - I|| -> 0 as t -> 0",
-        cont_norm < expected_bound,
-        f"||U({eps}) - I|| = {cont_norm:.3e}, bound = {expected_bound:.3e}",
-    )
+    # tau-rescaling: same T, doubled tau, halved generator (scope-boundary N2)
+    H_rec_2tau = V @ np.diag(-(1.0 / (2 * tau)) * np.log(w)) @ V.conj().T
+    n2_resid = opnorm(H_rec_2tau - 0.5 * H_rec)
+    record("A", "N2 load-bearing: same T with tau' = 2 tau gives H' = H/2 exactly",
+           n2_resid < 1e-10, f"||H' - H/2|| = {n2_resid:.2e}  "
+           "(T alone does NOT fix the clock unit; B-AXIS.1 is a premise)")
 
-    # uniqueness of generator (Stone): given U(t), the generator is
-    # uniquely H = i d/dt U(t) |_{t=0}
-    # On finite-dim H_phys, equivalent to: log(U(t))/(-it) is unique mod 2pi
-    # Verify: H reconstructed from U(t) via finite-difference matches H
-    H_finite_diff = (1j / eps) * (U_eps - np.eye(dim))
-    # Hermitian part should match H_phys at leading order
-    H_fd_herm = 0.5 * (H_finite_diff + H_finite_diff.conj().T)
-    fd_resid = float(np.linalg.norm(H_fd_herm - H_phys, ord=2))
-    fd_bound = eps * float(np.linalg.norm(H_phys, ord=2)) ** 2 * 1.0
-    record(
-        "T3: unique generator H = i d/dt U(t)|_{t=0} (Stone's theorem)",
-        fd_resid < fd_bound,
-        f"||H_fd - H|| = {fd_resid:.3e}, bound = {fd_bound:.3e}",
-    )
+    # FALSIFIER: non-Hermitian transfer breaks unitarity of the evolution
+    rng = np.random.default_rng(7)
+    T_bad = T + 0.05 * (rng.standard_normal(T.shape) + 1j * rng.standard_normal(T.shape))
+    wb, Vb = np.linalg.eig(T_bad)
+    Hb = Vb @ np.diag(-(1.0 / tau) * np.log(wb.astype(complex))) @ np.linalg.inv(Vb)
+    Ub = Vb @ np.diag(np.exp(-1j * 1.0 * (-(1.0 / tau) * np.log(wb.astype(complex))))) @ np.linalg.inv(Vb)
+    unit_resid = opnorm(Ub.conj().T @ Ub - np.eye(dim))
+    herm_bad = opnorm(Hb - Hb.conj().T)
+    record("A", "falsifier: non-Hermitian T -> non-self-adjoint H, non-unitary U",
+           unit_resid > 1e-3 and herm_bad > 1e-3,
+           f"||U^dag U - I|| = {unit_resid:.2e}, ||H-H^dag|| = {herm_bad:.2e}")
 
 
 # -------------------------------------------------------------------
-# Tests for (S2) Codimension-1 Cauchy hypersurface
+# [A] S2' equal-time tensor locality + codimension arithmetic
 # -------------------------------------------------------------------
 
 
-def test_S2_codimension1_cauchy(H: np.ndarray, L: int, a_tau: float, J: float) -> None:
-    """T4-T7: equal-time tensor product, factorisation, codimension-1,
-    finite Lieb-Robinson speed of propagation."""
+def block_A_slice(L: int) -> None:
     print()
     print("-" * 72)
-    print("(S2) CODIMENSION-1 CAUCHY HYPERSURFACE")
+    print("[A] (S2') EQUAL-TIME TENSOR LOCALITY AND CODIMENSION (R-ET, R-CL3)")
     print("-" * 72)
 
-    sigma_z = np.array([[1.0, 0.0], [0.0, -1.0]], dtype=complex)
-    sigma_x = np.array([[0.0, 1.0], [1.0, 0.0]], dtype=complex)
-
-    # T4: equal-time strict locality (M1)
-    max_resid = 0.0
+    max_comm = 0.0
     for x in range(L):
-        for y in range(L):
-            if x == y:
-                continue
-            O_x = site_operator(L, x, sigma_z)
-            O_y = site_operator(L, y, sigma_x)
-            comm = commutator_norm(O_x, O_y)
-            if comm > max_resid:
-                max_resid = comm
-    record(
-        "T4: equal-time [O_x, O_y] = 0 strictly for x != y",
-        max_resid < 1e-12,
-        f"max ||[O_x, O_y]|| = {max_resid:.3e}",
-    )
+        for y in range(x + 1, L):
+            Ox = site_op(L, x, SIGMA_Z)
+            Oy = site_op(L, y, SIGMA_X)
+            max_comm = max(max_comm, opnorm(Ox @ Oy - Oy @ Ox))
+    record("A", "equal-time [O_x, O_y] = 0 strictly for x != y",
+           max_comm < 1e-12, f"max resid = {max_comm:.2e}")
 
-    # T5: equal-time local algebra factorises as tensor product
-    # Verify by checking that the joint-site operator equals the explicit
-    # tensor-product construction
+    # explicit tensor-product factorization at two sites
     x, y = 1, 3
-    O_x = site_operator(L, x, sigma_z)
-    O_y = site_operator(L, y, sigma_x)
-    O_xy_product = O_x @ O_y
-    # Direct tensor-product construction
-    op_chain = []
-    for k in range(L):
-        if k == x:
-            op_chain.append(sigma_z)
-        elif k == y:
-            op_chain.append(sigma_x)
-        else:
-            op_chain.append(np.eye(2, dtype=complex))
-    O_xy_tensor = op_chain[0]
-    for op in op_chain[1:]:
-        O_xy_tensor = np.kron(O_xy_tensor, op)
-    factorisation_resid = float(np.linalg.norm(O_xy_product - O_xy_tensor, ord=2))
-    record(
-        "T5: equal-time local algebra factorises as tensor product (R-CL3 + M1)",
-        factorisation_resid < 1e-12,
-        f"||O_x O_y - tensor product|| = {factorisation_resid:.3e}",
-    )
+    chain = [SIGMA_Z if k == x else SIGMA_X if k == y else np.eye(2, dtype=complex)
+             for k in range(L)]
+    O_tensor = chain[0]
+    for op in chain[1:]:
+        O_tensor = np.kron(O_tensor, op)
+    fact = opnorm(site_op(L, x, SIGMA_Z) @ site_op(L, y, SIGMA_X) - O_tensor)
+    record("A", "equal-time algebra factorizes as the tensor product",
+           fact < 1e-12, f"resid = {fact:.2e}")
 
-    # T6: codimension-1
-    # In the toy 1+1d block (1 temporal + 1 spatial = L spatial dim),
-    # the slice Sigma_t has dim = L = (1 + L) - 1, so codimension 1.
-    # In the framework's 1+3 block, dim(Sigma_t) = 3 = 4 - 1.
-    dim_lambda_toy = 1 + 1  # 1 temporal + 1 spatial direction in the toy
-    dim_sigma_toy = 1
-    codim_toy = dim_lambda_toy - dim_sigma_toy
-    record(
-        "T6: lattice slice is codimension-1 (toy 1+1d: dim_Sigma = 1, dim_Lambda = 2)",
-        codim_toy == 1,
-        f"codim = {codim_toy}",
-    )
-    # Framework block: 1 temporal + 3 spatial = 4
-    dim_lambda_fw = 1 + 3
-    dim_sigma_fw = 3
-    codim_fw = dim_lambda_fw - dim_sigma_fw
-    record(
-        "T6: framework block 1+3d: dim_Sigma = 3, dim_Lambda = 4, codim = 1",
-        codim_fw == 1,
-        f"codim = {codim_fw}",
-    )
-
-    # T7: finite-speed propagation under T (Lieb-Robinson)
-    T = transfer_matrix_from_H(H, a_tau)
-    O_0 = site_operator(L, 0, sigma_z)
-    # T propagates O_0 to T O_0 T^{-1}; verify support grows by at most v_LR
-    # We use the norm of the commutator with distant operators to probe support
-    # v_LR = 2 e r J for r = 1
-    r = 1
-    v_LR = 2 * math.e * r * J
-    # apply T forward by tau
-    tau = 1.0  # one lattice time step
-    T_inv = expm_hermitian(tau * 1.0, H - np.eye(H.shape[0]) * float(np.linalg.eigvalsh(H).min()))
-    # Heisenberg-evolve in real time t = tau (analytic continuation):
-    U_tau = expm_hermitian(-1j * tau, H)
-    U_tau_inv = expm_hermitian(1j * tau, H)
-    O_0_evolved = U_tau @ O_0 @ U_tau_inv
-    # check that ||[O_0_evolved, O_d]|| decays exponentially for d > v_LR tau
-    distances = list(range(2, L))
-    cone_distance = v_LR * tau
-    decays_outside_cone = True
-    last_log = None
-    for d in distances:
-        if d <= cone_distance:
-            continue
-        O_d = site_operator(L, d, sigma_z)
-        comm = commutator_norm(O_0_evolved, O_d)
-        log_comm = math.log(comm) if comm > 1e-300 else float("-inf")
-        if last_log is not None and log_comm > last_log + 0.5:
-            decays_outside_cone = False
-            break
-        last_log = log_comm
-    record(
-        "T7: finite-speed propagation under T (Lieb-Robinson cone)",
-        decays_outside_cone,
-        f"v_LR = {v_LR:.3f}, tau = {tau}, cone = {cone_distance:.3f}",
-    )
+    record("A", "codimension-1: framework block dim(Sigma)=3, dim(Lambda)=4",
+           (1 + 3) - 3 == 1, "codim = 1")
 
 
 # -------------------------------------------------------------------
-# Tests for (S3) Uniqueness of the reflection axis (no second clock)
+# [B] + [C-LR] Lieb-Robinson cone: imported constant, computed residuals
 # -------------------------------------------------------------------
 
 
-def test_S3_unique_reflection_axis() -> None:
-    """T8-T10: staggered-phase sign rules — temporal RP holds, spatial
-    RP fails."""
+def block_BC_lieb_robinson(H: np.ndarray, L: int, J: float) -> None:
     print()
     print("-" * 72)
-    print("(S3) UNIQUENESS OF THE REFLECTION AXIS (no second clock)")
+    print("[B]/[C-LR] FINITE-RANGE SANITY CHECK vs STANDARD LR BOUND")
     print("-" * 72)
 
-    # Staggered phases on Z^4: eta_mu(x) for mu = t, 1, 2, 3 at site x = (t, x1, x2, x3).
-    # Canonical Kogut-Susskind convention:
-    #   eta_t(x) = 1
-    #   eta_1(x) = (-1)^t
-    #   eta_2(x) = (-1)^(t + x1)
-    #   eta_3(x) = (-1)^(t + x1 + x2)
-    def eta_t(x: tuple[int, int, int, int]) -> int:
-        return 1
+    # [B] instantiate the standard finite-range constants:
+    # v_LR = 2 e J_* D_int R_int.
+    # For the nearest-neighbor chain: J_* = J, D_int = 2 (each site is in
+    # <= 2 interaction terms), R_int = 1.
+    J_star, D_int, R_int = J, 2, 1
+    v_LR = 2 * math.e * J_star * D_int * R_int
+    record("B", "finite-range LR sanity: v_LR = 2 e J_* D_int R_int instantiated",
+           abs(v_LR - 4 * math.e * J) < 1e-12,
+           f"J_*={J_star}, D_int={D_int}, R_int={R_int} -> v_LR = {v_LR:.4f}")
 
-    def eta_1(x: tuple[int, int, int, int]) -> int:
-        return (-1) ** x[0]
+    # [C] computed commutator residuals vs the L1 bound
+    # L1: ||[A(t),B]|| <= 2||A||||B|| exp(-d/R_int) exp(2 J_* D_int e |t|)
+    t = 0.2
+    Ut = expm_herm(-1j * t, H)
+    O0t = Ut @ site_op(L, 0, SIGMA_Z) @ Ut.conj().T
+    comms = {}
+    ok_bound = True
+    detail = []
+    for d in range(1, L):
+        c = opnorm(O0t @ site_op(L, d, SIGMA_Z) - site_op(L, d, SIGMA_Z) @ O0t)
+        comms[d] = c
+        bound = 2.0 * math.exp(-d / R_int) * math.exp(2 * J_star * D_int * math.e * abs(t))
+        if c > bound:
+            ok_bound = False
+        detail.append(f"d={d}: {c:.2e} <= {bound:.2e}")
+    record("C", "L1 bound satisfied at every distance (computed residuals)",
+           ok_bound, "; ".join(detail[:3]) + " ...")
 
-    def eta_2(x: tuple[int, int, int, int]) -> int:
-        return (-1) ** (x[0] + x[1])
+    inside, outside = comms[1], comms[L - 1]
+    record("C", "cone is real: inside/outside contrast > 1e3",
+           outside < 1e-3 * inside,
+           f"||[.,.]||(d=1) = {inside:.3e} vs (d={L-1}) = {outside:.3e}")
 
-    def eta_3(x: tuple[int, int, int, int]) -> int:
-        return (-1) ** (x[0] + x[1] + x[2])
-
-    # Temporal reflection theta x = (-1 - t, x1, x2, x3)
-    def theta_t(x: tuple[int, int, int, int]) -> tuple[int, int, int, int]:
-        return (-1 - x[0], x[1], x[2], x[3])
-
-    # Spatial reflection theta_1 x = (t, -1 - x1, x2, x3)
-    def theta_1(x: tuple[int, int, int, int]) -> tuple[int, int, int, int]:
-        return (x[0], -1 - x[1], x[2], x[3])
-
-    # T8: temporal staggered-phase sign rule eta_t(theta x) = -eta_t(x).
-    # Under temporal-link reflection, the temporal *hop* eta_t flips sign:
-    # this is the Sharatchandra-Thun-Weisz convention: the reflection
-    # acts on the link directed from x to x + t̂, and the link reversal
-    # produces a sign flip via the Grassmann transposition rule
-    # Theta(chi_x eta_t(x) chi_{x+t}) = chi_{theta x} (-eta_t(x)) chi_{theta x - t}.
-    # So the convention sign rule is eta_t(theta x) := -eta_t(x).
-    # We verify this combinatorially for a sample of sites:
-    sample_sites = [(t, x1, x2, x3) for t in range(-2, 3) for x1 in range(-1, 2)
-                    for x2 in range(-1, 2) for x3 in range(-1, 2)]
-    temporal_rule_holds = True
-    for x in sample_sites:
-        # The temporal-link RP convention sign: eta_t flips sign under theta_t.
-        # The Kogut-Susskind canonical eta_t(x) = 1, so the convention
-        # forces -eta_t(x) = -1 on theta x.
-        # i.e. when the staggered hop is rewritten as reflected,
-        # the sign of the hop term picks up (-1).
-        # This convention sign is what makes the RP factorisation close.
-        rule_lhs = -eta_t(x)  # convention sign
-        # For the temporal link reflection, rule_lhs = -1 (flipped from +1).
-        if rule_lhs != -1:
-            temporal_rule_holds = False
-            break
-    record(
-        "T8: temporal staggered phase eta_t(theta x) = -eta_t(x) (Sharatchandra)",
-        temporal_rule_holds,
-        f"sample size = {len(sample_sites)} sites checked",
-    )
-
-    # T9: spatial reflection fails the temporal-hop sign rule
-    # Under theta_1: x = (t, x1, x2, x3) -> (t, -1-x1, x2, x3).
-    # eta_t(x) = 1, eta_t(theta_1 x) = 1 — NO sign flip.
-    # The (R-RP) factorisation requires the temporal hop to pick up a sign
-    # flip on the reflected image (this is what cancels the antilinear
-    # involution contribution in the half-integration).
-    # Since eta_t(theta_1 x) = +1 = +eta_t(x), the spatial reflection
-    # FAILS the (R-RP) sign convention.
-    spatial_rule_fails = True
-    for x in sample_sites:
-        # Under spatial reflection, eta_t does NOT pick up a sign flip:
-        rule_lhs = eta_t(theta_1(x))  # +1 always
-        rule_rhs = -eta_t(x)  # -1 always (this is what (R-RP) requires)
-        if rule_lhs == rule_rhs:
-            spatial_rule_fails = False
-            break
-    record(
-        "T9: spatial reflection theta_1 fails the temporal-hop sign rule",
-        spatial_rule_fails,
-        f"eta_t(theta_1 x) = +eta_t(x), but (R-RP) requires -eta_t(x)",
-    )
-
-    # T10: the staggered-Dirac action does NOT factorise under spatial
-    # reflection. We verify this by computing, on a small block, the
-    # staggered hop matrix M_KS and checking that the spatial-reflection
-    # decomposition M_KS = M_+ + theta_1(M_+) + M_d is impossible because
-    # the temporal-hop rows do not match under theta_1.
-
-    # Build a tiny 1+1d staggered Dirac hop matrix for illustrative purposes:
-    # sites are (t, x1) with t in {-1, 0} and x1 in {-1, 0, 1, 2} (4 sites).
-    Lt, Lx = 2, 4
-    site_to_idx = {}
-    idx = 0
-    for t in range(-1, Lt - 1):
-        for x1 in range(-1, Lx - 1):
-            site_to_idx[(t, x1)] = idx
-            idx += 1
-    N = idx
-    M_KS = np.zeros((N, N), dtype=complex)
-    # eta_t = 1, eta_1(x) = (-1)^t
-    for t in range(-1, Lt - 1):
-        for x1 in range(-1, Lx - 1):
-            x = (t, x1)
-            i = site_to_idx[x]
-            # temporal hop: x -> x + t̂ if it exists
-            xp_t = (t + 1, x1)
-            if xp_t in site_to_idx:
-                j = site_to_idx[xp_t]
-                M_KS[i, j] += 1  # eta_t(x) * 1/2 unit
-                M_KS[j, i] += -1  # antihermitian: -eta_t(x)
-            # spatial hop: x -> x + 1̂ if it exists
-            xp_1 = (t, x1 + 1)
-            if xp_1 in site_to_idx:
-                j = site_to_idx[xp_1]
-                phase = (-1) ** t  # eta_1(x) = (-1)^t
-                M_KS[i, j] += phase
-                M_KS[j, i] += -phase
-
-    # Apply spatial reflection theta_1 to the matrix indices and check
-    # that the temporal-hop rows do NOT match (sign mismatch).
-    # Spatial reflection swaps x1 -> -1 - x1.
-    perm = np.zeros(N, dtype=int)
-    for x, i in site_to_idx.items():
-        x_reflected = (x[0], -1 - x[1])
-        if x_reflected in site_to_idx:
-            perm[i] = site_to_idx[x_reflected]
-        else:
-            perm[i] = i  # boundary case
-    M_reflected = M_KS[np.ix_(perm, perm)]
-    # For the temporal-hop part of M_KS (eta_t = +1 always), spatial
-    # reflection should act trivially on those entries (no sign flip).
-    # For RP, we'd need (R-RP)'s sign flip on temporal hops, which
-    # requires (-eta_t) on the reflected image. Since the reflected
-    # matrix has +eta_t on temporal hops, the (R-RP) factorisation fails.
-    # Concretely: the temporal-hop part of M_reflected equals the
-    # temporal-hop part of M_KS (no sign change), but the (R-RP) proof
-    # needs a sign change. This is a structural mismatch.
-    M_KS_temporal_only = np.zeros_like(M_KS)
-    for t in range(-1, Lt - 1):
-        for x1 in range(-1, Lx - 1):
-            x = (t, x1)
-            i = site_to_idx[x]
-            xp_t = (t + 1, x1)
-            if xp_t in site_to_idx:
-                j = site_to_idx[xp_t]
-                M_KS_temporal_only[i, j] = M_KS[i, j]
-                M_KS_temporal_only[j, i] = M_KS[j, i]
-    M_reflected_temporal_only = M_KS_temporal_only[np.ix_(perm, perm)]
-    # If spatial reflection were RP, the temporal-hop part should pick up a sign:
-    # M_reflected_temporal == -M_KS_temporal (this would be the (R-RP) convention).
-    # Verify: the sum M_reflected_temporal + M_KS_temporal is NOT zero (no sign flip).
-    sum_norm = float(np.linalg.norm(M_reflected_temporal_only + M_KS_temporal_only, ord="fro"))
-    # If this norm is large, the sign-flip rule fails (no spatial RP).
-    spatial_RP_fails = sum_norm > 1e-6
-    record(
-        "T10: staggered-Dirac action does NOT factorise under spatial reflection",
-        spatial_RP_fails,
-        f"||M_reflected_temp + M_temp||_F = {sum_norm:.4f} (would be 0 if spatial RP held)",
-    )
+    mono = all(comms[d + 1] <= comms[d] * 1.5 for d in range(1, L - 1))
+    record("C", "commutator decays with distance outside the cone", mono,
+           f"profile = {[f'{comms[d]:.1e}' for d in range(1, L)]}")
 
 
 # -------------------------------------------------------------------
-# Main
+# [C-EX] the exact staggered time-space exchange intertwiner
+#         (the certificate that withdraws the old S3)
+# -------------------------------------------------------------------
+
+
+def staggered_hop_matrix(Ls: tuple[int, int, int, int], mass: float = 0.0):
+    """Antisymmetrized KS hop matrix, time-first convention:
+    eta_0 = 1, eta_mu(x) = (-1)^(x_0 + ... + x_{mu-1}); periodic block."""
+    sites = list(itertools.product(*[range(l) for l in Ls]))
+    idx = {s: i for i, s in enumerate(sites)}
+    N = len(sites)
+
+    def eta(mu, x):
+        return (-1) ** sum(x[:mu])
+
+    def hop(x, mu):
+        y = list(x)
+        y[mu] = (y[mu] + 1) % Ls[mu]
+        return tuple(y)
+
+    M = np.zeros((N, N))
+    sectors = []
+    for mu in range(4):
+        Mmu = np.zeros((N, N))
+        for x in sites:
+            y = hop(x, mu)
+            Mmu[idx[x], idx[y]] += eta(mu, x)
+            Mmu[idx[y], idx[x]] -= eta(mu, x)
+        sectors.append(Mmu)
+        M += Mmu
+    M += mass * np.eye(N)
+    return M, sectors, sites, idx
+
+
+def block_C_exchange() -> None:
+    print()
+    print("-" * 72)
+    print("[C-EX] (S3') EXACT TIME-SPACE EXCHANGE INTERTWINER (withdraws old S3)")
+    print("-" * 72)
+
+    Ls = (4, 4, 2, 2)  # (t, x1, x2, x3), even extents, L_t = L_1 for the swap
+    mass = 0.3
+    M, sec, sites, idx = staggered_hop_matrix(Ls, mass)
+    N = len(sites)
+
+    P = np.zeros((N, N))
+    S = np.zeros((N, N))
+    for x in sites:
+        P[idx[(x[1], x[0], x[2], x[3])], idx[x]] = 1.0
+        S[idx[x], idx[x]] = (-1) ** (x[0] * x[1])
+    W = P @ S
+
+    record("C", "W = P_{tau<->1} diag((-1)^{x_tau x_1}) is orthogonal",
+           opnorm(W @ W.T - np.eye(N)) < 1e-14, f"N = {N} sites, mass = {mass}")
+
+    inv = opnorm(W @ M @ W.T - M)
+    record("C", "EXACT action invariance: || W M_KS W^T - M_KS || = 0",
+           inv < 1e-13, f"resid = {inv:.2e} (staggered + mass term)")
+
+    s01 = opnorm(W @ sec[0] @ W.T - sec[1])
+    s10 = opnorm(W @ sec[1] @ W.T - sec[0])
+    s22 = opnorm(W @ sec[2] @ W.T - sec[2])
+    record("C", "temporal hop sector maps EXACTLY onto the x_1 hop sector",
+           s01 < 1e-13 and s10 < 1e-13,
+           f"||W M_t W^T - M_1|| = {s01:.2e}, ||W M_1 W^T - M_t|| = {s10:.2e}")
+    record("C", "transverse hop sectors are fixed by W",
+           s22 < 1e-13, f"resid = {s22:.2e}")
+
+    ev_t = np.sort(np.linalg.eigvals(sec[0]).imag)
+    ev_1 = np.sort(np.linalg.eigvals(sec[1]).imag)
+    record("C", "temporal and spatial hop operators are unitarily identical (spectra)",
+           float(np.max(np.abs(ev_t - ev_1))) < 1e-10,
+           f"max |spec diff| = {np.max(np.abs(ev_t - ev_1)):.2e}")
+
+    # W maps the x_1 >= L/2 half-block onto the t >= L/2 half-block
+    half_t = {s for s in sites if s[0] >= Ls[0] // 2}
+    half_1 = {s for s in sites if s[1] >= Ls[1] // 2}
+    mapped = {(x[1], x[0], x[2], x[3]) for x in half_1}
+    record("C", "W maps the x_1 half-block onto the temporal half-block",
+           mapped == half_t, f"|half| = {len(half_t)}")
+
+    # FALSIFIER: plain permutation (no sign field) does NOT preserve the action
+    naive = opnorm(P @ M @ P.T - M)
+    record("C", "falsifier: plain axis swap WITHOUT the sign field fails",
+           naive > 1.0, f"resid = {naive:.4f} >> 0 (the intertwiner is non-trivial)")
+
+    # FALSIFIER of the old T10 criterion: orientation-reversal sign flip is
+    # generic (holds with ALL staggered phases stripped), hence was never an
+    # RP discriminator.
+    sites2 = sites
+    Mplain = np.zeros((N, N))
+    for x in sites2:
+        y = list(x)
+        y[0] = (y[0] + 1) % Ls[0]
+        Mplain[idx[x], idx[tuple(y)]] += 1.0
+        Mplain[idx[tuple(y)], idx[x]] -= 1.0
+    # temporal site reflection t -> (Ls[0]-1) - t (a lattice involution)
+    R = np.zeros((N, N))
+    for x in sites2:
+        R[idx[(Ls[0] - 1 - x[0], x[1], x[2], x[3])], idx[x]] = 1.0
+    flip = opnorm(R @ Mplain @ R.T + Mplain)
+    record("C", "old-T10 criterion is phase-blind: plain (eta-free) temporal hops "
+           "already flip sign under temporal reflection",
+           flip < 1e-13, f"resid = {flip:.2e} -> the old T10 tested orientation "
+           "reversal, not staggered RP structure")
+
+
+# -------------------------------------------------------------------
+# [C-2CLK] two-clock tensor-factor comparator (premise B-AXIS.3 is
+#           non-vacuous; scope-boundary N5)
+# -------------------------------------------------------------------
+
+
+def block_C_two_clock() -> None:
+    print()
+    print("-" * 72)
+    print("[C-2CLK] TWO-CLOCK COMPARATOR (codimension-2 evolution exists; "
+          "excluded only by B-AXIS.3)")
+    print("-" * 72)
+
+    T_A = np.diag([0.5, 1.0 / 3.0])
+    T_B = np.diag([0.2, 1.0 / 7.0, 0.9])
+    tau = 1.0
+    H_A = np.diag(-np.log(np.diag(T_A)) / tau)
+    H_B = np.diag(-np.log(np.diag(T_B)) / tau)
+    IA, IB = np.eye(2), np.eye(3)
+    G1 = np.kron(H_A, IB)
+    G2 = np.kron(IA, H_B)
+
+    TA_full = np.kron(T_A, IB)
+    TB_full = np.kron(IA, T_B)
+    comm = opnorm(TA_full @ TB_full - TB_full @ TA_full)
+    pos = min(np.linalg.eigvalsh(TA_full).min(), np.linalg.eigvalsh(TB_full).min())
+    record("C", "two commuting positive transfers exist on a tensor product",
+           comm < 1e-14 and pos > 0, f"[T_A x I, I x T_B] = {comm:.1e}, min eig = {pos:.3f}")
+
+    # generator span is genuinely 2-dimensional: no scalars a,b (not both 0)
+    # with a G1 + b G2 = 0
+    V = np.stack([G1.ravel(), G2.ravel()])
+    rank = np.linalg.matrix_rank(V, tol=1e-12)
+    record("C", "generator span is 2-dimensional (a genuine second clock direction)",
+           rank == 2, f"rank span{{H_A x I, I x H_B}} = {rank}")
+
+    # the two-parameter family U(s,t) is a homomorphism of R^2, not of R:
+    # U(s,t) = exp(-i(s G1 + t G2)) since [G1,G2]=0; its tangent space at the
+    # identity is the 2-dim span. A single supplied clock H_sum generates only
+    # the 1-dim diagonal subgroup.
+    g_comm = opnorm(G1 @ G2 - G2 @ G1)
+    record("C", "[H_A x I, I x H_B] = 0: U(s,t) is a genuine 2-parameter unitary group",
+           g_comm < 1e-13, f"resid = {g_comm:.1e}")
+
+    # Stone uniqueness is NOT violated within its scope: the supplied product
+    # transfer pins exactly the summed generator
+    T_prod = TA_full @ TB_full
+    w, V_ = np.linalg.eigh(T_prod)
+    H_prod = V_ @ np.diag(-np.log(w) / tau) @ V_.T
+    pin = opnorm(H_prod - (G1 + G2))
+    record("C", "per supplied PRODUCT transfer, Stone pins H = H_A x I + I x H_B "
+           "(uniqueness holds within its transfer-relative scope)",
+           pin < 1e-10, f"resid = {pin:.2e}")
+
+    # off-diagonal member of the 2-parameter family is not in the 1-parameter
+    # group generated by H_sum: U(1,0) != exp(-i r H_sum) for all r in a scan,
+    # and exactly: U(1,0) commutes with H_sum but log spectrum mismatch
+    U10 = expm_herm(-1j, G1)
+    H_sum = G1 + G2
+    # if U10 = exp(-i r H_sum), eigenvalues of U10 on H_sum eigenbasis must be
+    # exp(-i r E_k) -- in particular constant on the I x H_B factor; check the
+    # B-factor dependence is absent in U10 but present in H_sum:
+    varies = opnorm(np.kron(IA, H_B) @ U10 - U10 @ np.kron(IA, H_B)) < 1e-13
+    # U10 acts as identity on the B factor while exp(-i r H_sum) does not
+    # unless r E_B in 2 pi Z for all eigenvalues E_B simultaneously with the
+    # A-factor matching; scan a fine grid of r and measure the gap:
+    rs = np.linspace(-6.0, 6.0, 24001)
+    gap = min(opnorm(U10 - expm_herm(-1j * r, H_sum)) for r in rs)
+    record("C", "U_A(1) x I is NOT on the single-clock orbit exp(-i r H_sum) "
+           "(min gap over r in [-6,6])",
+           varies and gap > 0.05, f"min gap = {gap:.4f} > 0.05; B-AXIS.3 "
+           "excludes a mathematically realizable alternative -> non-vacuous")
+
+
+# -------------------------------------------------------------------
+# [C-BDRY] strict finite-range boundary: consistency + counterexample
+# witness (the log of a strictly local positive transfer is generically
+# NOT finite-range)
+# -------------------------------------------------------------------
+
+SIGMA_Y = np.array([[0.0, -1j], [1j, 0.0]], dtype=complex)
+PAULI_1Q = {"I": np.eye(2, dtype=complex), "X": SIGMA_X, "Y": SIGMA_Y, "Z": SIGMA_Z}
+
+
+def pauli_string(ops: str) -> np.ndarray:
+    M = PAULI_1Q[ops[0]]
+    for ch in ops[1:]:
+        M = np.kron(M, PAULI_1Q[ch])
+    return M
+
+
+def pauli_support_diameter(ops: str) -> int:
+    sites = [k for k, ch in enumerate(ops) if ch != "I"]
+    if not sites:
+        return -1  # identity string
+    return max(sites) - min(sites)
+
+
+def logm_herm(T: np.ndarray) -> np.ndarray:
+    w, V = np.linalg.eigh(0.5 * (T + T.conj().T))
+    return V @ np.diag(np.log(w)) @ V.conj().T
+
+
+def block_C_range_boundary(H: np.ndarray, L: int) -> None:
+    print()
+    print("-" * 72)
+    print("[C-BDRY] STRICT FINITE-RANGE BOUNDARY FOR LOG-TRANSFER GENERATORS:")
+    print("         sanity check + counterexample witness")
+    print("-" * 72)
+
+    # (i) consistency: the block Hamiltonian consumed by [A]/[B]/[C-LR]
+    # lies in the finite-range class EXACTLY — every Pauli string with
+    # support diameter > 1 has zero coefficient.
+    dim = 2**L
+    max_far = 0.0
+    for ops in itertools.product("IXYZ", repeat=L):
+        s = "".join(ops)
+        if pauli_support_diameter(s) <= 1:
+            continue
+        coef = abs(np.einsum("ij,ji->", pauli_string(s), H)) / dim
+        max_far = max(max_far, float(coef))
+    record("C", "(finite-range sanity) block H is exactly finite-range: all "
+           "Pauli strings with support diameter > 1 vanish",
+           max_far < 1e-12, f"max far-string coeff = {max_far:.2e}")
+
+    # (ii) non-vacuity witness on 3 sites: strictly local positive
+    # transfer T = e^{-A/2} e^{-B} e^{-A/2}, A on {0,1}, B on {1,2}.
+    A = 0.9 * pauli_string("XXI") + 0.4 * pauli_string("ZII")
+    B = 0.7 * pauli_string("IZZ") + 0.3 * pauli_string("IIX")
+    eA2 = expm_herm(-0.5, A)
+    T_loc = eA2 @ expm_herm(-1.0, B) @ eA2
+    herm = opnorm(T_loc - T_loc.conj().T)
+    min_eig = float(np.linalg.eigvalsh(0.5 * (T_loc + T_loc.conj().T)).min())
+    record("C", "(strict-range boundary) strictly local transfer is positive Hermitian",
+           herm < 1e-12 and min_eig > 0.0,
+           f"||T - T^dag|| = {herm:.2e}, min eig = {min_eig:.4f}")
+
+    H_w = -logm_herm(T_loc)
+    end_to_end, best = 0.0, ""
+    nn_part = np.zeros_like(H_w)
+    for ops in itertools.product("IXYZ", repeat=3):
+        s = "".join(ops)
+        P = pauli_string(s)
+        coef = complex(np.einsum("ij,ji->", P, H_w)) / 8.0
+        if pauli_support_diameter(s) <= 1:
+            nn_part += coef * P
+        if s[0] != "I" and s[2] != "I" and abs(coef) > end_to_end:
+            end_to_end, best = abs(coef), s
+    record("C", "(strict-range boundary) log-generator has a nonzero end-to-end Pauli "
+           "component (support diameter 2 > range 1)",
+           end_to_end > 1e-3, f"|coeff[{best}]| = {end_to_end:.4f}")
+    remainder = opnorm(H_w - nn_part)
+    record("C", "(strict-range boundary) H_w = -log T is NOT in the range-1 class: "
+           "||H_w - P_range1(H_w)||_op > 0",
+           remainder > 1e-3, f"remainder norm = {remainder:.4f}")
+
+    # (iii) contrast: a single-factor local transfer logs back exactly —
+    # the witness failure is the non-commuting BCH tail, not the log.
+    back = opnorm(-logm_herm(expm_herm(-1.0, A)) - A)
+    record("C", "(strict-range contrast) single-factor transfer: -log(e^{-A}) = A "
+           "exactly (locality preserved when no non-commuting tail exists)",
+           back < 1e-10, f"resid = {back:.2e}")
+
+    print("  BOUNDARY: strict finite-range-ness of a log-transfer generator is")
+    print("  not automatic. The companion note therefore retires the old B-RANGE")
+    print("  premise from the current claim and cites the retained free-bilinear")
+    print("  quasilocal LR bridge only on its stated free U=1 exact-log sector.")
+
+
+# -------------------------------------------------------------------
+# [D] composition / circularity discipline (note wording guards)
+# -------------------------------------------------------------------
+
+
+def block_D_discipline() -> None:
+    print()
+    print("-" * 72)
+    print("[D] COMPOSITION / CIRCULARITY DISCIPLINE (note wording guards)")
+    print("-" * 72)
+
+    note_path = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        "..",
+        "docs",
+        "AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
+    )
+    try:
+        text = open(note_path, encoding="utf-8").read()
+    except OSError:
+        record("D", "companion note readable", False, note_path)
+        return
+
+    record("D", "note declares the axis premise (B-AXIS)", "(B-AXIS)" in text
+           and "B-AXIS.3" in text, "premise declared with N2/N4/N5 clauses")
+    record("D", "note withdraws the old S3 unique-RP-axis claim",
+           "withdrawn" in text and "unique RP-admissible reflection axis" in text,
+           "withdrawal recorded in scope and changelog")
+    record("D", "claim stays transfer- and tau-relative (scope-boundary compliant)",
+           "transfer-relative" in text and ("τ-relative" in text or "tau-relative" in text),
+           "G-SCOPE compliance wording present")
+    flat_text = " ".join(text.split())
+    record("D", "claim_type is bounded_theorem (no positive_theorem over-claim)",
+           "Claim type bounded" in text
+           and "positive_theorem grade" not in text,
+           "canonical bounded claim type checked")
+    record("D", "proposal firewall: B-AXIS remains a declared blocker",
+           "not a retained-grade proposal" in flat_text
+           and "B-AXIS" in text
+           and ("remains declared" in text or "remain declared/open" in text),
+           "no retained-grade proposal while B-AXIS is declared")
+    record("D", "spatial-clustering clause not consumed (cluster L2 is conditional)",
+           "L2 spatial clustering is consumed nowhere" in text
+           or "not consumed" in text, "S2'(b) demoted to conditional remark")
+    record("D", "note retires B-RANGE from current scope",
+           ("no longer a current premise" in text
+            or "no\nlonger a current premise" in text)
+           and "conditional on (B-RANGE)" not in text,
+           "S2'(c) now uses the retained free-sector quasilocal supplier")
+    record("D", "note cites the free-bilinear quasilocal LR bridge as propagation supplier",
+           "FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md" in text
+           and "R-FBQL" in text
+           and "0 < d μ < η < arcsinh(m)" in text,
+           "free U=1 exact-log sector and finite quasilocal lightcone named")
+    record("D", "2026-06-12 firewall: B-RANGE retired, B-AXIS remains the live blocker",
+           "2026-06-12 Remaining-Blocker Source Firewall" in text
+           and "B-AXIS as the live" in text
+           and ("record-durability axis selection" in text
+                or "record-durability axis-selection" in text)
+           and ("do not derive B-AXIS" in text
+                or "does not derive B-AXIS" in text
+                or "leaves B-AXIS open" in text)
+           and "No retained-grade proposal or status promotion is made here" in text,
+           "axis-selection route-pruning context wired without retained promotion")
+    record("D", "2026-06-17 B-AXIS.1 split note is wired",
+           "SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md" in text
+           and "S-N2-SPLIT" in text,
+           "blocked-time denominator support boundary is linked as source support")
+    record("D", "B-AXIS.1 split keeps absolute clock unit open",
+           "internal denominator `2a_tau`" in text
+           and "absolute physical clock unit" in text
+           and "B-AXIS.1b" in text,
+           "does not derive a physical clock/rate unit")
+
+
+# -------------------------------------------------------------------
+# main
 # -------------------------------------------------------------------
 
 
 def main() -> None:
     print("=" * 72)
-    print("AXIOM-FIRST SINGLE-CLOCK CODIMENSION-1 UNITARY EVOLUTION CHECK")
+    print("AXIOM-FIRST SINGLE-CLOCK CODIMENSION-1 EVOLUTION CHECK (2026-06-11)")
     print("=" * 72)
     print()
-    print("Verifies the structural content of the single-clock codimension-1")
-    print("evolution theorem (Block 12, 2026-05-03):")
-    print("  (S1) Stone's theorem: H_phys carries a unique strongly-continuous")
-    print("       one-parameter unitary group U(t) = exp(-itH).")
-    print("  (S2) Each lattice slice Sigma_t is a codimension-1 Cauchy")
-    print("       hypersurface with mutually-commuting equal-time local")
-    print("       algebra and finite Lieb-Robinson propagation.")
-    print("  (S3) The staggered-Dirac action admits only the temporal")
-    print("       direction as an RP-admissible reflection axis (no")
-    print("       spatial RP), so the framework has exactly one clock.")
-    print()
-    print("Setup:")
-    print("  Toy A_min: L-site qubit chain (each site: 2-dim per (R-CL3))")
-    print("  H = sum_z h_z, range r = 1, ||h_z|| = J")
-    print("  T = exp(-a_tau H), positive Hermitian (per (R-RP))")
-    print()
+    print("Axis-conditional theorem (S1')-(S3'): conditional on B-AXIS, the")
+    print("supplied transfer data give one generator, one unitary group, and")
+    print("codimension-1 Cauchy slices. Propagation is cited only on the")
+    print("retained free U=1 exact-log quasilocal bridge; the staggered action's")
+    print("exact time-space exchange symmetry shows the axis itself is a premise")
+    print("(old S3 withdrawn).")
 
-    L = 6  # spatial sites (toy 1+1d block; framework uses 1+3d)
+    L = 6
     J = 1.0
-    a_tau = 0.5
-    seed = 20260503
-    H = build_finite_range_hamiltonian(L, J, seed)
-    print(f"  L = {L} sites, dim H_phys = {2**L}")
-    print(f"  J = {J}, a_tau = {a_tau}")
-    print(f"  ||H||_op = {float(np.linalg.norm(H, ord=2)):.4f}")
-    print()
+    tau = 0.5
+    H = finite_range_hamiltonian(L, J, seed=20260503)
+    print(f"\n  toy block: L = {L} qubit sites, dim = {2**L}, J = {J}, tau = {tau}")
+    print(f"  ||H||_op = {opnorm(H):.4f}")
 
-    test_S1_stone_unitarity(H, a_tau)
-    test_S2_codimension1_cauchy(H, L, a_tau, J)
-    test_S3_unique_reflection_axis()
+    block_A_stone(H, tau)
+    block_A_slice(L)
+    block_BC_lieb_robinson(H, L, J)
+    block_C_range_boundary(H, L)
+    block_C_exchange()
+    block_C_two_clock()
+    block_D_discipline()
 
-    # Summary
     print()
     print("=" * 72)
-    print("SUMMARY")
+    print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print("=" * 72)
-    print()
-    print(f"  PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
-    print()
-    if FAIL_COUNT == 0:
-        print("  All structural checks pass. The lattice form (S1)-(S3) of the")
-        print("  single-clock codimension-1 unitary evolution theorem is verified")
-        print("  on the toy A_min block. The proof in the companion theorem note")
-        print("  is dimension-independent in the spatial direction and applies")
-        print("  equally to the framework's Cl(3) on Z^3.")
-    else:
-        print("  One or more structural checks failed. See log above.")
+    if FAIL:
         raise SystemExit(1)
 
 

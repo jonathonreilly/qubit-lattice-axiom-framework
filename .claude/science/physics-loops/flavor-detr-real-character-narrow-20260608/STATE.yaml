@@ -1,0 +1,31 @@
+loop_slug: flavor-detr-real-character-narrow-20260608
+date: 2026-06-08
+mode: repair_block
+target_status: bounded-support
+base_ref: origin/main
+branch: physics-loop/flavor-detr-real-character-narrow-20260608
+target_claim_id: flavor_detr_default_full_exercise_note_2026-05-30
+note_path: docs/FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md
+runner_path: scripts/flavor_detR_default_full_exercise_2026_05_30.py
+actual_current_surface_status: bounded finite-algebra locator with holomorphic-carrier narrow
+bare_retained_allowed: false
+audit_required_before_effective_status_change: true
+blocker_attacked: "provide a retained finite-carrier derivation/definition of the CPT corner-reflection sign J_b -> -J_b, or narrow the holomorphic-carrier exclusion to the independently checked real-character algebra"
+movement:
+  - keeps finite det_R/det_C counting-fork locator
+  - keeps substrate-i, C^3 quantization, real-corner, G_U1/Gamma_chi, and block-vs-dimension checks
+  - removes CPT corner-reflection sign as load-bearing holomorphic-carrier exclusion
+  - records CPT reflection sign as open/non-load-bearing
+verification:
+  - python3 scripts/flavor_detR_default_full_exercise_2026_05_30.py
+  - python3 -m py_compile scripts/flavor_detR_default_full_exercise_2026_05_30.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/flavor_detR_default_full_exercise_2026_05_30.py
+  - python3 scripts/cached_runner_output.py --check-only scripts/flavor_detR_default_full_exercise_2026_05_30.py
+  - git diff --check
+  - git diff -- docs/audit
+remaining_blockers:
+  - independent audit must decide whether the narrowed finite-locator row can land cleanly
+  - a retained CPT corner-reflection sign or holomorphic/Kahler bridge remains separate open science
+  - the physical generation reference-state problem remains outside this row
+next_exact_action: open review PR for this source-side scope repair
+stop_condition: concrete auditor repair target implemented and cached

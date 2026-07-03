@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_stable_kernel_frequency_interface_2026_06_06.py
+runner_sha256: 51fd84db6f1856b42b497cc253cadd8f34c0083a8e8062c604c4e0a08d1026d2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_STABLE_KERNEL_EXPECTED_FREQUENCY_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_STABLE_KERNEL_EXPECTED_FREQUENCY_INTERFACE_2026-06-06.md contains: actual_current_surface_status: exact-support
+PASS docs/POST_RECORD_STABLE_KERNEL_EXPECTED_FREQUENCY_INTERFACE_2026-06-06.md contains: realized post-record state is not itself a probability vector
+PASS docs/POST_RECORD_STABLE_KERNEL_EXPECTED_FREQUENCY_INTERFACE_2026-06-06.md contains: expected empirical frequency
+PASS docs/POST_RECORD_STABLE_KERNEL_EXPECTED_FREQUENCY_INTERFACE_2026-06-06.md contains: almost-sure convergence or a concentration bound
+PASS docs/POST_RECORD_STABLE_KERNEL_EXPECTED_FREQUENCY_INTERFACE_2026-06-06.md contains: generation or Koide dial
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md exists
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md contains: post-record update is integral
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md contains: predictive expectation
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md contains: belongs to the pre-record or ensemble layer
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md exists
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: realized counts stay integral while ensemble expectations can be fractional
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: Does not derive probabilities
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: Does not derive a time metric or clock rate
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md exists
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: post-record information dynamics
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: probability laws, Born typicality, and transition rates
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: clock/time metric
+
+------------------------------------------------------------------------------
+Expected frequency checks
+------------------------------------------------------------------------------
+PASS target prior is normalized :: (Fraction(1, 2), Fraction(1, 3), Fraction(1, 6))
+PASS initial law is normalized :: (Fraction(0, 1), Fraction(1, 1), Fraction(0, 1))
+PASS distribution at t=0 is initial law
+PASS distribution at t=1 matches kernel application :: (Fraction(1, 5), Fraction(11, 15), Fraction(1, 15))
+PASS finite-N expected frequency formula matches iteration :: (Fraction(842, 3125), Fraction(6007, 9375), Fraction(842, 9375))
+PASS expected frequency is normalized :: (Fraction(842, 3125), Fraction(6007, 9375), Fraction(842, 9375))
+PASS expected frequency can be fractional :: (Fraction(842, 3125), Fraction(6007, 9375), Fraction(842, 9375))
+PASS realized counts remain integral :: (1, 3, 1)
+PASS realized empirical frequency is count/length :: (Fraction(1, 5), Fraction(3, 5), Fraction(1, 5))
+
+------------------------------------------------------------------------------
+Target dependence checks
+------------------------------------------------------------------------------
+PASS target A expected frequency is normalized :: (Fraction(119, 162), Fraction(43, 324), Fraction(43, 324))
+PASS target B expected frequency is normalized :: (Fraction(281, 324), Fraction(43, 648), Fraction(43, 648))
+PASS different supplied targets give different expected frequencies
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS Record-derived target-prior flag is false
+PASS Record-derived kernel flag is false
+PASS Record-derived initial-law flag is false
+PASS Record-derived concentration flag is false
+PASS Record-derived clock/rate flag is false
+PASS Record-derived Born/instrument flag is false
+PASS Record-derived Hamiltonian flag is false
+PASS generation/Koide dial selected flag is false
+PASS audit verdict applied flag is false
+
+SUMMARY: PASS=39 FAIL=0
+SUPPLIED_STABLE_KERNEL_EXPECTED_FREQUENCY=TRUE
+REALIZED_COUNTS_REMAIN_INTEGRAL=TRUE
+RECORD_DERIVES_TARGET_OR_KERNEL=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

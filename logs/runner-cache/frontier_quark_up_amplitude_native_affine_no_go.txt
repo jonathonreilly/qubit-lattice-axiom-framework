@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_up_amplitude_native_affine_no_go.py
-runner_sha256: 5ebc7df2190c370c4d115978f493144f68d20a62eb2ec4dceda6da02903d4d22
+runner_sha256: 458b949211e72b45255c0b7b8c47baedc3436cffec20e382c730a226be1a020c
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 96.10
+elapsed_sec: 16.58
 status: ok
 ----- stdout -----
 ========================================================================
@@ -92,5 +92,6 @@ PART 3: Summary
 ========================================================================
   TOTAL: PASS=7, FAIL=0
 ========================================================================
+
 ----- stderr -----
 

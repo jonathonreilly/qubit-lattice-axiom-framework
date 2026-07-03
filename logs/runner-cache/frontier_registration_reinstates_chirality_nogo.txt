@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/frontier_registration_reinstates_chirality_nogo.py
+runner_sha256: 3cbe96111a2bbdf82128d0a67cde3dc79e7fe6d99f574179d748c103c80cefdf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
+PASS T1 Gamma_chi eig = {-1,-1,+1}
+PASS T1b Gamma_chi^2 = I
+PASS T2 sum P_k = I
+PASS T2b P_k orthogonal idempotent
+PASS T3 G P0 = +P0  (singlet in +1 eigenspace)
+PASS T3 G P1 = -P1  (doublet char in -1 eigenspace)
+PASS T3 G P2 = -P2  (doublet char in -1 eigenspace)
+PASS T3b G Pd = -Pd  (doublet block in -1 eigenspace)
+PASS T4 D3 commutes with conj-by-G (2000 trials)
+PASS T4 D2 commutes with conj-by-G (2000 trials)
+PASS T5 carriers genuinely anticommute with G
+PASS T5 D3 annihilates ALL anticommuting carriers (3000)
+PASS T5 D2 annihilates ALL anticommuting carriers (3000)
+PASS T6 all 4 explicit anticommuting carriers: anticommute & D=0
+PASS CTRL1 S=C+C^2 is circulant
+PASS CTRL1 [S,G]=0 (G-commuting)
+PASS CTRL1 D3(S) = S (registered, NOT annihilated)
+PASS CTRL1 D registers a nonzero circulant op
+PASS CTRL2 carrier anticommutes with G
+PASS CTRL2 char-partition D3 annihilates it
+PASS CTRL2 straddling partition REGISTERS it (D!=0)
+PASS CTRL2 straddling blocks are NOT C_3-invariant (not a central decomposition)
+PASS T7 D3(M) is always circulant (registers only Q=1 family)
+
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

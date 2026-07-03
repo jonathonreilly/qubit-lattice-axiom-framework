@@ -4,6 +4,25 @@
 **Claim type:** bounded_theorem
 **Status:** support / bounded conditional bridge note. This note does not promote `newton_derivation_note` and does not assert a new persistent-pattern equivalence-principle theorem. It only registers the bridge that the audit-derived `persistent_object_top4_multistage_transfer_sweep` floor *operationally satisfies the Principle-3 extensivity premise* of the Newton-derivation conditional theorem on its own bounded multistage-compact-object scope.
 
+## Source boundary (2026-06-12)
+
+**Boundary:** renaming / operational-parameter support only. Effective status
+is audit-derived; this source records only the claim boundary.
+
+The runner supports persistence, approximate source-linearity, and stable
+`kappa` on the top4 multistage family; the load-bearing inertial-mass move is
+the identification of the source-strength scalar `s` with the inertial quantity
+required by Principle 3.
+
+This note may be cited only for that bounded operational bridge on the named
+top4 family. It may not be cited as a retained equivalence-principle theorem,
+an external-field/two-body closure, a derivation that `s` is inertial mass, or
+Newton-law closure.
+
+Promotion beyond renaming support requires an independent bridge theorem
+deriving the inertial-quantity identification under an external-field response
+test.
+
 ## Purpose
 
 The open gate `newton_derivation_note` carries the conditional theorem:

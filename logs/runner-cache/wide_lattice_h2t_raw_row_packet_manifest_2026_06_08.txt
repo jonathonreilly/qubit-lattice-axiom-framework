@@ -1,0 +1,30 @@
+WIDE LATTICE RAW ROW PACKET MANIFEST
+note=docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md
+frozen_log=logs/2026-04-05-wide-lattice-h2t-distance-replay.txt
+frozen_sha256=2faf31bf9b1015df87adaadbfa8393c4a26e100abdc6ccaf6daf70308a30e024
+PASS frozen log sha pinned
+PASS note names frozen sha
+PASS note names verifier cache
+PASS note names raw-row manifest cache
+PASS distance row count :: count=10
+PASS distance row z=2 exposed :: | 2 | `+0.000188` | TOWARD |
+PASS distance row z=3 exposed :: | 3 | `+0.000232` | TOWARD |
+PASS distance row z=4 exposed :: | 4 | `+0.000245` | TOWARD |
+PASS distance row z=5 exposed :: | 5 | `+0.000220` | TOWARD |
+PASS distance row z=6 exposed :: | 6 | `+0.000183` | TOWARD |
+PASS distance row z=7 exposed :: | 7 | `+0.000159` | TOWARD |
+PASS distance row z=8 exposed :: | 8 | `+0.000142` | TOWARD |
+PASS distance row z=9 exposed :: | 9 | `+0.000124` | TOWARD |
+PASS distance row z=10 exposed :: | 10 | `+0.000108` | TOWARD |
+PASS distance row z=11 exposed :: | 11 | `+0.000093` | TOWARD |
+PASS F~M row count :: count=6
+PASS F~M row s=1e-06 exposed :: | `1e-06` | `+4.636762e-06` | TOWARD |
+PASS F~M row s=2e-06 exposed :: | `2e-06` | `+9.273526e-06` | TOWARD |
+PASS F~M row s=5e-06 exposed :: | `5e-06` | `+2.318384e-05` | TOWARD |
+PASS F~M row s=1e-05 exposed :: | `1e-05` | `+4.636775e-05` | TOWARD |
+PASS F~M row s=2e-05 exposed :: | `2e-05` | `+9.273579e-05` | TOWARD |
+PASS F~M row s=5e-05 exposed :: | `5e-05` | `+2.318416e-04` | TOWARD |
+PASS peak-tail recompute visible
+PASS far-tail recompute visible
+PASS F~M exponent visible
+RAW_ROW_PACKET PASS=25 FAIL=0

@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py
+runner_sha256: a542e8f2dc6f985310b79cea07b4f0e629b1c6c8b41acf22b599a829a68c6604
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 12.92
+status: ok
+----- stdout -----
+================================================================================================
+FIFTH FAMILY RADIAL SYMMETRY/ORIENTATION CERTIFICATE
+================================================================================================
+row: drift=0.20 seed=0
+method: source-field linearity + zero-field variational recurrence
+
+PASS source note links this independent certificate
+PASS empty-source field is exactly zero componentwise
+PASS +1 and -1 same-point source fields cancel exactly
+
+zero_delta     = +0.000000000000e+00
+neutral_delta  = +0.000000000000e+00
+plus_delta     = -2.028481895566e-06
+minus_delta    = +2.028191385950e-06
+linear_slope   = -2.028336655911e-06
+
+PASS zero-source centroid delta is exact
+PASS neutral same-point centroid delta is exact
+PASS first-order positive-source radial response is negative
+PASS finite +1 source has same negative sign as variational slope
+PASS finite -1 source has opposite positive sign
+PASS plus/minus signs certify orientation boundary, not control leak
+
+SCORECARD PASS=9 FAIL=0
+
+----- stderr -----
+

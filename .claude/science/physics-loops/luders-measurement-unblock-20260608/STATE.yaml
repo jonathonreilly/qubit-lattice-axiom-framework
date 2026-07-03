@@ -1,0 +1,13 @@
+loop: luders-measurement-unblock-20260608
+target_claim_id: luders_rule_from_composition_consistency_note_2026-05-20
+actual_current_surface_status: conditional-support
+trace_class: blocker_boundary_split
+reachability_to_target: narrows
+blocker: "missing_bridge_theorem: supply a retained measurement-side bridge deriving the trace/effect probability semantics and the sequential-record conditioning rule M_{P,E}=PEP as physical probabilities, not only finite matrix algebra."
+files_touched:
+  - docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md
+  - scripts/luders_parent_boundary_guard_2026_06_07.py
+  - scripts/luders_measurement_semantics_audit_split_guard_2026_06_08.py
+  - logs/runner-cache/luders_parent_boundary_guard_2026_06_07.txt
+  - logs/runner-cache/luders_measurement_semantics_audit_split_guard_2026_06_08.txt
+stop_condition: packaged_for_review_pr

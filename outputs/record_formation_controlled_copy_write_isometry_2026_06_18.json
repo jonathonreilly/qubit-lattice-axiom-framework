@@ -1,0 +1,23 @@
+{
+  "boundary_flags": {
+    "arbitrary_persistent_dynamics_to_W_derived": false,
+    "audit_verdict_applied": false,
+    "born_rule_from_post_record_counts_derived": false,
+    "controlled_copy_to_projective_W_derived_for_explicit_model": true,
+    "generation_or_koide_dial_selected": false,
+    "physical_hamiltonian_or_coupling_selected": false,
+    "quantum_darwinism_record_reading_derived_from_minimal_axioms": false
+  },
+  "dependency_statuses": {
+    "formation_source": "RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md",
+    "kraus_source": "PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md",
+    "target_bridge": "RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md"
+  },
+  "fail_count": 0,
+  "pass_count": 37,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "This closes the source-side ideal-write bridge only for the explicit finite controlled-copy model; arbitrary dynamics and framework-wide record-production remain outside scope.",
+  "reachability_to_target": "closes_source_side_blocker",
+  "status": "exact support: explicit controlled-copy/fresh-fragment dynamics induces the projective record-write isometry after fixed record-basis calibration",
+  "trace_class": "direct_blocker_closure"
+}

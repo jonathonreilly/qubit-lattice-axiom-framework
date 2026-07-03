@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.py
-runner_sha256: 31032f5f9d5f26ea2da30c2b4f8058af2254ee9ecaac4a4771432673ea95b759
+runner_sha256: ef9013663f711cead4ef52bcfed0655e0480ed571bed7bd0235619907a5fbf3b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -17,8 +17,8 @@ POISSON BACKREACTION LIVE THRESHOLD: SOURCE PACKET MANIFEST
 [PASS] note_links_manifest_path:packet_cache: logs/runner-cache/backreaction_poisson_live_threshold_check.txt
 [PASS] manifest_path_exists:poisson_helper_cache: logs/runner-cache/backreaction_poisson.txt
 [PASS] note_links_manifest_path:poisson_helper_cache: logs/runner-cache/backreaction_poisson.txt
-[PASS] source_untruncated:packet_checker: scripts/backreaction_poisson_live_threshold_check.py has 4397 bytes
-[PASS] source_marker:packet_checker:from scripts import backreaction_poisson as bp: from scripts import backreaction_poisson as bp present
+[PASS] source_untruncated:packet_checker: scripts/backreaction_poisson_live_threshold_check.py has 4392 bytes
+[PASS] source_marker:packet_checker:import scripts.backreaction_poisson as bp: import scripts.backreaction_poisson as bp present
 [PASS] source_marker:packet_checker:def _run_grid: def _run_grid present
 [PASS] source_marker:packet_checker:G_GRID =: G_GRID = present
 [PASS] source_marker:packet_checker:ASSERTIONS:: ASSERTIONS: present
@@ -29,7 +29,7 @@ POISSON BACKREACTION LIVE THRESHOLD: SOURCE PACKET MANIFEST
 [PASS] source_marker:poisson_helper_source:def _propagate: def _propagate present
 [PASS] source_marker:poisson_helper_source:EXT_STRENGTH = 0.004: EXT_STRENGTH = 0.004 present
 [PASS] cache_runner_matches:packet_cache: scripts/backreaction_poisson_live_threshold_check.py == scripts/backreaction_poisson_live_threshold_check.py
-[PASS] cache_sha_fresh:packet_cache: 6d731702d81ef146464cbb31df8287d75134b801e1e61a8ed673c11d4c90c925 == 6d731702d81ef146464cbb31df8287d75134b801e1e61a8ed673c11d4c90c925
+[PASS] cache_sha_fresh:packet_cache: b56df20cdc1cd7ebc0ad58d2a7799b2cc5ce10efc39153ec29e7af944988517c == b56df20cdc1cd7ebc0ad58d2a7799b2cc5ce10efc39153ec29e7af944988517c
 [PASS] cache_exit_ok:packet_cache: exit_code=0 status=ok
 [PASS] cache_snippet_present:packet_cache: ASSERTIONS: PASS
 [PASS] cache_runner_matches:poisson_helper_cache: scripts/backreaction_poisson.py == scripts/backreaction_poisson.py

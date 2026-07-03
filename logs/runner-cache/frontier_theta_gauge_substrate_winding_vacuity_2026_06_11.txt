@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/frontier_theta_gauge_substrate_winding_vacuity_2026_06_11.py
+runner_sha256: d63f9990db6102c2eaf967fa45bb68d692a273393962f560a26aea8ccac03df5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+========================================================================
+Theta gauge side: substrate winding vacuity / emergent-Q bridge
+========================================================================
+
+--- A. the Hamiltonian carrier: lattice gauge group is connected
+[PASS] (01) the continuum-winding transformation g(x) = exp(2 pi i x/L) contracts to the identity through an explicit SITE-LOCAL homotopy inside the lattice gauge group U(1)^L (no continuity constraint exists between discrete sites; the 'winding' unwinds site by site)
+[PASS] (02) generic per-site SU(2) elements contract to the identity along exp(i(1-t)H) (unitarity and determinant tracked along the path): each per-site factor group is path-connected, so the full lattice gauge group G = prod_x G_x is path-connected, pi_0(G) = 0
+[PASS] (03) the discrete winding integral assigns g_wind the value 1 and the identity the value 0, yet the two are connected inside the lattice gauge group (checks 1-2): the label is NOT locally constant on the lattice group -- it is not a pi_0-character, so Gauss-law invariance (invariance under the identity component = all of G) leaves NO residual theta-character freedom on the substrate  [winding(g_wind) = 1.000000, winding(id) = 0.0, connected]
+RESIDUAL (declared-open): the per-site connected compact form of the realized gauge class (e.g. U(1)^V, SU(N)^V) is the consumed premise of the pi_0 vacuity; a realized gauge class with disconnected per-site factors would evade it (none is supplied by the framework surface). Boundary-twist ('t Hooft flux) sectors are boundary-holonomy convention data, already declared in the gate note, not theta-characters.
+
+--- B. the Euclidean carrier: no per-plaquette Q-density in 4D
+[PASS] (04) cross-plane core reproven for the SECTOR-WEIGHT density: the mixed derivative of any sum of single-plane functions vanishes identically, so the 4D topological density (epsilon F F ~ F01 F23 - F02 F13 + F03 F12) has no slot in the supplied per-plaquette class -- no framework-native Q-density exists
+[PASS] (05) 2D contrast computed: for U(1) on a 2D torus the geometric charge Q = (1/2 pi) sum_p arg(U_p) is INTEGER on every tested random configuration -- in 2D the topological functional IS per-plaquette (first Chern class), so the 4D cross-plane obstruction is doing real work, not vacuously  [Q values: [0.0, 2.0, -3.0, 1.0, -1.0]]
+[PASS] (06) the supplied datum exhibited: re-choosing the log branch of a single plaquette shifts Q by exactly one unit -- the integer sector functional consumes a fixed branch/section choice, a readout-context input the Record axiom does not supply (non-supply clause pinned in check 9)
+
+--- C. relocation: theta(a) becomes the emergent-Q bridge
+[PASS] (07) substrate vacuity assembled: carrier (H) empty (pi_0(G) = 0, checks 1-3) and carrier (E) empty in the supplied action class (check 4, with the geometric alternative a SUPPLIED functional, checks 5-6): theta_gauge = 0 holds VACUOUSLY at the substrate level -- there is no framework-native carrier for a theta_gauge dependence on the supplied substrate surface
+[PASS] (08) interface pins: the structured admission's missing 'lattice large-gauge-winding account' (supplied here as: pi_0(G) = 0 IS the account -- there is no canonical winding parameter to remove because no winding sector exists on the substrate), the cross-plane note's action-class input boundary, and the multiplaquette-FtF admissibility (the open edge of the bridge) are all present in the live notes
+[PASS] (09) Record non-supply pin: the axiom supplies neither the readout context (the geometric Q's section choice) nor a source/action term (a theta weighting): an emergent-Q functional must be DERIVED in the scaling limit or SUPPLIED as a named input -- it cannot be smuggled through Record
+RESIDUAL (declared-open): the supplied per-plaquette action class is the consumed input of carrier-(E) vacuity (the cross-plane note's own declared boundary): the named bridge is exactly whether the DERIVED multi-plaquette effective action leaves the per-plaquette class in the topological direction (multiplaquette FtF: admissible, not cleanly closeable) and whether the scaling limit forces an emergent integer sector functional with nonvacuous weighting. theta(a)'s admitted content after this block is that single named bridge.
+RESIDUAL (declared-open): the Euclidean Z_tau block on which a 4D charge would live is consumed at the kinetic-isotropy-primitive grade (regulator form only); emergent-time dynamics is not re-derived here.
+RESIDUAL (declared-open): inherited gate-note residuals remain at their declared grades (kinetic-class premise, spin-statistics support tier, boundary-holonomy convention, AC_phi_lambda labeling convention).
+
+TOTAL: PASS=9 FAIL=0
+VERDICT: at the substrate level theta_gauge has NO carrier: the lattice gauge group is connected (the winding transformation contracts site-locally; Gauss-law invariance leaves no character freedom), and the supplied per-plaquette action class admits no topological density (cross-plane core reproven), while the 2D contrast shows geometric sector functionals are possible exactly where plane-counting permits and always consume a supplied section choice. theta_gauge = 0 is vacuous on the substrate; the admission relocates to the named emergent-Q bridge (multi-plaquette effective action / scaling limit). Nothing is retired; no audit status is set.
+
+----- stderr -----
+

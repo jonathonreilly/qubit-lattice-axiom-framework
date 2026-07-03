@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py
+runner_sha256: 79cbbb03992b8b34a0ff0140caa1c9e00613273756e17ca54940fa1cefd28eb2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
+Axiom-first RP Wilson temporal-gauge reroute guard
+note: /private/tmp/cl3-review-loop-latest-IxO77W/docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
+base runner: /private/tmp/cl3-review-loop-latest-IxO77W/scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
+
+----------------------------------------------------------------------------------------
+C1-C6 free staggered two-step construction reused from retained runner
+----------------------------------------------------------------------------------------
+  [PASS] C1 dispersion anchor (max_res=3.38e-16, max_imag=1.34e-16)
+  [PASS] C2 single-step remains non-positive (min_complex_imag=0.562, exceptional_ok=True)
+  [PASS] C3 many-body T_hat^2 positive Hermitian = B^dag B
+  [PASS] C4 two-step OS Gram Hermitian PSD
+  [PASS] C5 second-quantization functor identity
+  [PASS] C6 decaying spectral channel gives positive Fock kernel
+
+----------------------------------------------------------------------------------------
+C7 retained Wilson temporal-gauge reroute guard
+----------------------------------------------------------------------------------------
+  [PASS] required reroute phrases present
+  [PASS] stale Wilson sign-repair phrases absent
+  [PASS] live dependency statuses retained-grade (axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05:('audited_clean', 'retained_bounded'); gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10:('audited_clean', 'retained'); staggered_only_det_positivity_case_a_note_2026-05-17:('audited_clean', 'retained'); reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10:('audited_clean', 'retained'); rp_p2_gauge_extension_and_realization_residual_note_2026-05-28:('audited_clean', 'retained_bounded'))
+  [PASS] finite product model has nonnegative factors
+  [PASS] finite product model has nonnegative composed integrand (min=0.000e+00, sum=2.783e+02)
+
+PASS=11 FAIL=0
+VERDICT: parent reroute guard passes; free two-step construction remains unchanged, and the Wilson temporal-gauge application is routed through retained-grade dependencies without promoting the parent row.
+
+----- stderr -----
+

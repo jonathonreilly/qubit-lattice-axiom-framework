@@ -28,27 +28,25 @@ is now **only** the finite runner certificate:
 The note **does not** claim that the displayed ODE is the exact
 Picard-Fuchs equation of the SU(3) single-plaquette integral as an
 algebraic identity in `Q[[β]]`, nor that the Frobenius branch identification
-holds to all orders. Those stronger statements are the audited content of
-the separate companion note
-`PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md`, which
-the independent audit lane evaluates as its own row.
+holds to all orders. The separate companion row
+`PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md` is now
+narrowed to the same finite-window boundary family: exact checks through the
+runner window, a D-finiteness witness, finite-grid lower-order exclusion, and
+conditional Bostan-Salvy-Schost arithmetic if an external all-degree
+`R=3,D=2` bridge is supplied. The all-degree bridge remains open.
 
-**All-order proof companion (added 2026-05-09):**
+**Finite-window boundary companion (narrowed 2026-06-08):**
 `PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md`
-upgrades the truncated-series substitution and finite ODE-vs-Weyl
-agreement below to an all-order proof that `L · J(β) = 0` identically
-in `Q[[β]]` and that `J(β)` IS the analytic Frobenius branch at
-`β = 0`. That note's runner uses the Bostan-Salvy-Schost
-finite-window-suffices theorem combined with the runner-internal
-D-finite parameter bounds `(R, D) = (3, 2)`. The independent audit
-lane decides whether that companion closes the all-order gap.
+preserves the useful finite-window and conditional arithmetic packet without
+claiming standalone all-order closure. The independent audit lane decides
+whether that narrowed companion is clean on its repaired scope.
 (Backticked to break five nested length-2/3/4 citation cycles in the
 plaquette V=1 Picard-Fuchs cluster; citation graph direction is
-*all_order_proof → this_note*, since the all-order proof companion
+*all_order_proof -> this_note*, since the historical companion row
 consumes this V=1 ODE statement as its target while this bounded
 ODE note's truncated-series claim does not consume the downstream
-all-order proof as an input. This single demotion cascades to break
-the four longer cycles through `bounded_synthesis_note_2026-05-06`,
+finite-window boundary packet as an input. This single demotion cascades
+to break the four longer cycles through `bounded_synthesis_note_2026-05-06`,
 `minimality_proof_note_2026-05-06`,
 `koutschan_minimality_note_2026-05-06`, and
 `rank_bound_citation_note_2026-05-06`, since each runs through the
@@ -87,8 +85,10 @@ ODE-evolved readout gives
 > that the displayed ODE *is* the exact Picard-Fuchs equation of the
 > SU(3) integral in `Q[[β]]`, and the all-order Frobenius-branch
 > identification, are *not* part of this finite-runner certificate.
-> Those statements are the audited content of the separate companion
-> note `PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md`.
+> The companion row
+> `PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md`
+> is now only a finite-window boundary packet unless a separate all-degree
+> `R=3,D=2` bridge is supplied.
 
 ## Scope
 
@@ -96,8 +96,7 @@ This is a bounded single-plaquette **finite-runner certificate** result.
 It does not:
 
 - claim the displayed ODE is the exact algebraic Picard-Fuchs equation
-  of the SU(3) single-plaquette integral to all orders (that is the
-  companion note's scope, audited separately),
+  of the SU(3) single-plaquette integral to all orders,
 - claim the all-order Frobenius-branch identification of `J(β)` at
   `β = 0`,
 - compute the thermodynamic-limit Wilson plaquette value,

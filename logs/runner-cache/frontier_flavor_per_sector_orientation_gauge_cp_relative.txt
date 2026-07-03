@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/frontier_flavor_per_sector_orientation_gauge_cp_relative.py
+runner_sha256: 3dce817aa85a2182ffbaf0557dd0c3ca465a9a985dc0200c6ec95a1bd8bd59ba
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+PASS: R_is_orientation_reversing_transposition det(R)=-1
+PASS: R_unbroken_staggered_S3_authority_is_retained_grade effective status retained_bounded
+PASS: MASS_handedness_sign_Delta_R_odd sign(Delta) flips under R (gauge)
+PASS: CP_Isrc_within_sector_R_odd Isrc(H)=-0.0129 -> Isrc(R H R^T)=+0.0129
+PASS: CP_april20_Jbasis_is_Isrc_over_Delta Isrc/Delta=-0.01097 = J_basis=-0.01097
+PASS: CP_parity_bit_is_gauge_dependent J_sigma=+0.01097 = parity(sigma)*J_basis (parity bit gauge-dependent)
+PASS: CP2_in_basis_Jarlskog_R_odd J_basis(H)=-0.01097 -> J_basis(R H R^T)=+0.01097 (gauge)
+PASS: PHYS_two_sector_Jarlskog_R_invariant_shared J(U1,U2)=J(R U1, R U2) over 50 pairs (50 nontrivial) -- physical, gauge-invariant
+PASS: PHYS_physical_CP_is_relative_not_per_sector per-sector I_src is R-odd (gauge) while two-sector J is R-invariant -> CP content is relative
+PASS: MAG_cp_phase_magnitude_authority_is_retained_grade effective status retained
+PASS: MAG_cp_phase_magnitude_formula_is_separate cos^2(delta_CKM)=1/n_quark (magnitude, separate)
+
+TOTAL: PASS=11 FAIL=0
+VERDICT: under the shared generation-relabeling gauge R, every PER-SECTOR flavor orientation is R-ODD (gauge) -- the mass cyclic handedness sign(Delta) AND the within-sector CP cubic I_src; only the INTER-SECTOR Jarlskog J is R-invariant (physical). The physical flavor CP content is purely the inter-sector RELATIVE orientation; the per-sector CP orientation and the April-20 'parity bit' are gauge-dependent. Magnitude cos^2(delta)=1/n_quark is separate/retained.
+
+----- stderr -----
+

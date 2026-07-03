@@ -1,0 +1,128 @@
+===== runner cache v1 =====
+runner: scripts/frontier_arrow_from_record_formation_2026_06_05.py
+runner_sha256: 359800c89117f022d2d9dd16bd1fbec04b6a665d6592f6615491806b59e45cbf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
+Arrow-of-time from record formation -- explicit small-system test
+system: 1 system qubit + 5 environment fragments = 6 qubits, Hilbert dim 64
+record write: H_k = (pi/2) |1><1|_sys (x) X_k  (real-symmetric CNOT imprint)
+
+========================================================================
+(M) The microdynamics is TIME-SYMMETRIC -- the arrow is not in the map
+========================================================================
+[PASS] each H_k is real
+[PASS] each H_k is symmetric (Hermitian, self-adjoint)
+[PASS] T_k = e^{-H_k} is self-adjoint -- the #2701 transfer operator is positive/symmetric, direction-free
+[PASS] T_k = e^{-H_k} = T_k^transpose (no preferred direction)
+[PASS] U_k = e^{-iH_k} is unitary
+[PASS] Theta U_k Theta = U_k^{-1} (time-reversal symmetry, Theta = K) -- same map runs both directions; only the initial condition breaks it
+
+========================================================================
+(1) RECORD MONOTONICITY from a LOW-record initial state (candidate arrow)
+========================================================================
+  low-record init: system |+>, all 5 fragments blank |0>
+  R_red (redundancy)      = [0, 1, 2, 3, 4, 5]
+  R_tot (sum frag entropy)= [0.000, 1.000, 2.000, 3.000, 4.000, 5.000]
+  S_sys (pointer entropy) = [0.000, 1.000, 1.000, 1.000, 1.000, 1.000]
+[PASS] R_red is non-decreasing forward from low-record init
+[PASS] R_red strictly grows (0 -> nfrag full records) -- 0 -> 5
+[PASS] R_tot (total imprinted record) is non-decreasing
+
+========================================================================
+(2a) DECISIVE CONTROL: same map, time-reversed HIGH-record init -> arrow REVERSES
+========================================================================
+  initial condition = Theta (fully-recorded rho_M) Theta  [time-reversed high-record]
+  SAME operator set {U_k}, applied forward (k = 0..nfrag-1):
+  R_red = [5, 4, 3, 2, 1, 0]
+  R_tot = [5.000, 4.000, 3.000, 2.000, 1.000, 0.000]
+[PASS] R_red is non-increasing forward from the time-reversed high-record init -- the SAME symmetric map now UN-writes records
+[PASS] R_red strictly DECREASES (arrow reversed) -- 5 -> 0
+[PASS] arrow sign is set by the initial condition, not the map (1) vs (2a) -- low-record: +; high-record: - ; identical operators
+
+========================================================================
+(2a') INDEPENDENT high-record control: a GHZ record built from scratch
+========================================================================
+  initial = GHZ (built directly; NOT from our forward orbit), high-record
+  R_red = [5, 4, 3, 2, 1, 0]
+  R_tot = [5.000, 4.000, 3.000, 2.000, 1.000, 0.000]
+[PASS] independently-built high-record GHZ also DECREASES under the same map -- 5 -> 0 (reversal is not an artifact of our orbit)
+
+========================================================================
+(2b) CONTROL: I/d equilibrium (MAX entropy) -> R is exactly FLAT (no arrow)
+========================================================================
+  R_red from I/d = [0, 0, 0, 0, 0, 0]
+[PASS] I/d is invariant under the record map (equilibrium)
+[PASS] R_red is exactly flat from I/d (no arrow at max entropy) -- constant 0
+
+========================================================================
+(2c) CONTROL: generic high-entropy state -> R does NOT monotonically grow
+========================================================================
+  R_red = [0, 0, 0, 0, 0, 0]
+  R_tot = [4.977, 4.988, 4.991, 4.987, 4.985, 4.978]
+[PASS] generic init forms no redundant records (R_red never reaches a full bit) -- no clean pointer to broadcast
+[PASS] generic R_tot fluctuates (not monotone) -- arrow does not emerge -- min 4.977 max 4.991
+
+========================================================================
+(3) RESIDUAL LEDGER -- what is admitted
+========================================================================
+  Derived (record-formation content, from the SAME symmetric dynamics):
+    * record monotonicity defines a candidate arrow (1);
+    * the arrow's DIRECTION = 'away from the low-record boundary' (1 vs 2a);
+    * the direction is NOT in the microdynamics: T=e^{-H} self-adjoint,
+      Theta U Theta = U^{-1} (M); reverses/vanishes with the initial state.
+  Admitted (irreducible residual):
+    * the EXISTENCE of a LOW-record (low-entropy) initial condition.
+      = the PAST HYPOTHESIS (Boltzmann / Penrose). The framework does NOT
+      derive a preferred low-entropy boundary from {Lattice, Quantum, Record};
+      Record supplies registration, not a low-entropy initial.
+  Classification: UNIVERSAL-FLOOR. Every physical theory with time-symmetric
+    microdynamics (CM, QM, QFT, GR) needs this same boundary admission to get
+    a thermodynamic arrow. It is NOT a framework-specific gap.
+[PASS] residual is exactly the initial condition (boundary), nothing else -- same map: low-record -> arrow; high-record -> reversed; I/d -> none
+
+========================================================================
+(4) COLLAPSE CHECK -- past hypothesis vs typicality vs rho=I/d
+========================================================================
+  total vN entropy of low-record initial : 0.000 bits (pure, ORDERED)
+  total vN entropy of I/d reference       : 6.000 bits (MAX, no info)
+  These are OPPOSITE extremes of the same entropy axis:
+    * rho=I/d  = the maximal-symmetry, MAX-entropy PRE-RECORD reference
+      (no information; the no-arrow fixed point, control 2b).
+    * past hypothesis = a LOW-entropy, ordered GLOBAL-INITIAL condition
+      (the source of the arrow, control 1).
+    => DISTINCT admissions: a local max-entropy reference state is NOT the
+       global low-entropy boundary. (Same map gives flat from I/d but a
+       monotone arrow from the low-record state.)
+  Born typicality (operational omega = frequency) is a WEIGHT/measure
+    statement on within-sector outcomes; it does not name a global initial
+    condition. The past hypothesis is a STATE-SELECTION (low-entropy boundary),
+    orthogonal to how outcome frequencies are weighted. => DISTINCT.
+[PASS] past hypothesis (low entropy) is distinct from rho=I/d (max entropy) -- low-record S=0.00 vs I/d S=6.00 = opposite extremes
+[PASS] past hypothesis (state selection) is distinct from Born typicality (weight) -- boundary-condition admission, not an outcome-frequency admission
+
+========================================================================
+VERDICT
+========================================================================
+  Arrow DIRECTION is record-formation-derived = the direction of monotone
+  record accumulation, 'away from the low-record boundary'. The microdynamics
+  (T=e^{-H} self-adjoint; Theta U Theta = U^{-1}) carries NO direction; the
+  arrow reverses (2a) / vanishes (2b,2c) when the initial condition changes.
+  IRREDUCIBLE RESIDUAL = the existence of a low-record (low-entropy) initial
+  = the PAST HYPOTHESIS, a UNIVERSAL-FLOOR admission shared by every
+  time-symmetric physical theory, NOT a framework-specific gap.
+  It is DISTINCT from rho=I/d (max-entropy reference; opposite extreme) and
+  from Born typicality (a weight, not a boundary). NOT a from-nothing arrow.
+
+========================================================================
+SELF-CHECK
+========================================================================
+PASS=20 FAIL=0
+PEAK_RSS_MB=59.6
+
+[log written] logs/frontier_arrow_from_record_formation_2026_06_05.txt
+
+----- stderr -----
+

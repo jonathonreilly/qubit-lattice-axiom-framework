@@ -343,11 +343,13 @@ def measure_gravity_2d_with_d_potential(d: int, k: float = 6.0,
                                         Lx: int = 40, Ly: int = 60):
     """Measure gravity using 2D propagation through a d-dimensional potential.
 
-    Strategy: The Poisson Green's function in d dimensions gives
-    phi ~ 1/r^(d-2) for d >= 3, phi ~ log(r) for d=2, phi ~ r for d=1.
-    We construct the analytic potential in 2D and propagate through it.
-    This isolates the effect of dimension on the FIELD while keeping
-    the propagator measurement clean.
+    Strategy: use the runner-native radial Green-profile certificate:
+    f_1(r)=r, f_2(r)=log(r), f_d(r)=r^(2-d) for d >= 3. These profiles
+    solve the d-dimensional radial Poisson equation away from the source
+    and have radius-independent shell flux; no textbook import is needed
+    for these profile identities. We construct the analytic potential in
+    2D and propagate through it. This isolates the effect of dimension on
+    the FIELD while keeping the propagator measurement clean.
 
     For d >= 3: phi(r) = -M / r^(d-2)
     For d = 2:  phi(r) = -M * log(r)  (with sign convention)

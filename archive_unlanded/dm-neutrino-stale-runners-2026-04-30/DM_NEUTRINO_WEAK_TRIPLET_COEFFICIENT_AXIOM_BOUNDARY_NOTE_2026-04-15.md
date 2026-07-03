@@ -1,7 +1,7 @@
 # DM Neutrino Weak-Triplet Coefficient Axiom Boundary
 
 **Date:** 2026-04-15  
-**Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/dm-neutrino-stale-runners-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+**Status:** ARCHIVED / runner-repaired 2026-06-06 — audit failed on 2026-04-30; this note is archived under `archive_unlanded/dm-neutrino-stale-runners-2026-04-30/`. The repository-local runner now replays the coefficient-boundary checks, but the row remains non-retained and pending independent re-audit. See `## Retraction` section.
 **Script:** `scripts/frontier_dm_neutrino_weak_triplet_coefficient_axiom_boundary.py`
 
 ## Retraction
@@ -12,7 +12,9 @@
 
   > Issue: the primary runner reads absolute paths under /Users/jonBridger/... and raises FileNotFoundError before the c_odd and even-leg coefficient checks complete. Why this blocks: the note claims exact single-axiom transfer-coefficient closure, but the shipped verifier is stale and cannot reproduce the load-bearing result in the current repository. Repair target: replace stale absolute-path reads with repository-local retained dependencies and rerun the coefficient-normalization checks end to end. Claim boundary until fixed: the note can be treated only as an unreproduced coefficient-closure proposal; no audited transfer-coefficient closure is available from the current runner.
 
-- **Do not cite warning:** Do NOT cite the numerical results, tables, or threshold values in the original content below as live framework claims. The runners referenced in this note have been superseded or are no longer reproducible at the time of audit. If a future investigation revisits this physics, treat it as starting from scratch rather than as continuation of a "closed no-go".
+- **2026-06-06 repair status:** The runner has been moved to repository-local reads and its source-text checks now match the narrowed notes on `main`. This repairs the stale-artifact blocker only; it does not itself apply an audit verdict or make the archived note retained.
+
+- **Do not cite warning:** Do NOT cite the numerical results, tables, or threshold values in the original content below as live retained framework claims. Until independent re-audit, this is only a runner-repaired coefficient-boundary proposal; the benchmark/source-amplitude closure remains open.
 
 ## Framework sentence
 

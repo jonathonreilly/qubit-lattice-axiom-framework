@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/frontier_d31_magnitude_exponent_translation_probe_2026_06_05.py
+runner_sha256: c0b38b5445ad941ea10620d9bcd0b39a9811e9ae0810cd78bd6624cd953e676b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+== Block 1: three readings of 16 are numerically equal ==
+[PASS] rejected 2^4 corner count: got=16 want=16
+[PASS] fresh 2^3 x 2_chiral: got=16 want=16
+[PASS] determinant 2^{4/2} x L_t: got=16 want=16
+[PASS] all three readings equal 16 (numerator coincidence, not yet a discriminator): got=True want=True
+
+== Block 2: exponent 4 = 3 spatial + 1 time (native d=3+1 count) ==
+[PASS] d_spacetime = d_spatial + d_time: got=4 want=4
+[PASS] dim_R Cl(3,1) = 2^{3+1}: got=16 want=16
+[PASS] fourth-root exponent 1/d at d=4: got=Fraction(1, 4) want=Fraction(1, 4)
+[PASS] the COUNT 4 = 3+1 is native to d=3+1 (spatial+time), not Euclidean 4: got=True want=True
+
+== Block 3: gamma_5 grading is GENUINELY distinct from a 4th corner ==
+[PASS] native spatial corner count stays 2^3 = 8: got=8 want=8
+[PASS] gamma_5 grading is a 2-element Z_2 on the spinor rep: got=2 want=2
+[PASS] artifact corner group order (Z_2)^4: got=16 want=16
+[PASS] 4th-corner reading raises spatial corner rank 3 -> 4: got=True want=True
+[PASS] gamma_5 two-fold leaves spatial corner rank at 3 (grades the rep instead): got=True want=True
+[PASS] DISTINCTNESS: gamma_5 grading (rep Z_2) != 4th momentum coordinate (translation char) -> 8x2 is NOT the same object as 2^4: got=True want=True
+
+== Block 4: the hierarchy 16 is a determinant spectral count ==
+[PASS] determinant power u_0^N, N = taste x L_t: got=16 want=16
+[PASS] naive doubler count 2^d at d=4: got=16 want=16
+[PASS] naive doubler count 2^d at d=3 (P2 counterfactual): got=8 want=8
+[PASS] (2^{3/2})^2 = 8 (so 2^{3/2} non-integer): got=8 want=8
+[PASS] 2^{3/2} is not an integer (no integer 3D taste count): got=True want=True
+[PASS] gamma_5 grades eigenvalues the determinant already counts once (chirality is NOT an extra spectral factor): got=True want=True
+[PASS] => 8 (spatial) x 2 (chiral) cannot SUPPLY the determinant power 16; the load-bearing 16 = 2^{4/2} x L_t still needs the 4D taste count (P2): got=True want=True
+
+== Block 5: 256 = 4^4 = M_2(C)^{tensor 4}; exponent counts tensor factors ==
+[PASS] dim_C(M_2(C)^{tensor 4}) = 4^4: got=256 want=256
+[PASS] 256 = 16^2 (BZ-corner-pair reading on Z^4): got=256 want=256
+[PASS] 256 = (2^3 x 2)^2 (if 16 were 8x2): got=256 want=256
+[PASS] M_2(C)^{tensor 4} exponent 4 = number of TENSOR FACTORS (a bounded parameter, per M2_TENSOR note), NOT a derived spacetime/corner count: got=True want=True
+[PASS] all 256 readings coincide numerically but the tensor-factor exponent 4 is not derived from d=3+1 by this note (M2_TENSOR carries d=4 as bounded): got=True want=True
+
+== Block 6: verdict witnesses (PARTIAL) ==
+[PASS] WITNESS A: count 4 = 3+1 is native: got=True want=True
+[PASS] WITNESS B: chiral two-fold is derived (retained chirality narrow): got=True want=True
+[PASS] WITNESS C: chiral two-fold genuinely distinct from a 4th corner: got=True want=True
+[PASS] WITNESS D: the load-bearing 16 is the 4D taste x temporal power: got=True want=True
+[PASS] WITNESS E: 8x2_chiral does NOT supply that load-bearing power: got=True want=True
+[PASS] VERDICT = PARTIAL: 3+1 gives the count 4 and a distinct derived chiral two-fold, but the magnitude's load-bearing 16/256 remains the 4D taste count (P2 Wick rotation), NOT 8x2_chiral: got=True want=True
+
+SUMMARY: PASS=32 FAIL=0
+
+----- stderr -----
+

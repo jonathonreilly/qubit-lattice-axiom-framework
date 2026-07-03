@@ -1,22 +1,30 @@
 {
   "boundary": {
-    "actual_status": "exact-support"
+    "actual_status": "bounded-support",
+    "conditional_corollary_only": "Y_T/source interpretation after a separate physical-source bridge",
+    "dependencies": {
+      "fisher_tangent": "retained",
+      "six_diagonal_basis": "retained_bounded"
+    },
+    "load_bearing_claim": "finite Fisher tangent plus six diagonal E_ii basis algebra only"
   },
   "exponential_chart": {
     "exponential_chart": "R_h=exp(h epsilon - log E exp(h epsilon))"
   },
   "summary": {
-    "actual_current_surface_status": "exact-support",
+    "actual_current_surface_status": "bounded-support",
     "fail": 0,
-    "pass": 38,
+    "pass": 58,
     "proposal_allowed": false,
-    "trace_class": "direct_blocker_closure_candidate"
+    "reachability_to_target": "partially_closes",
+    "trace_class": "direct_blocker_closure"
+  },
+  "supplied_basis_unit": {
+    "supplied_basis_component": "1/sqrt(6)",
+    "yt_interpretation": "conditional_bridge_only"
   },
   "tangent_space": {
     "primitive_fisher_norm": "1",
     "primitive_score": "(+1,-1)"
-  },
-  "yt_source": {
-    "yt_component": "1/sqrt(6)"
   }
 }

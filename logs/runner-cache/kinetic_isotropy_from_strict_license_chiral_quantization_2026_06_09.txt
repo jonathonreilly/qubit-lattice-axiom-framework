@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py
+runner_sha256: 2642f69602fdecaaffb3c979dfe80e6068d61bcbf5def1e7ba691a5659847ba7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.12
+status: ok
+----- stdout -----
+
+PART A -- the bosonic contrast (re-derives the #3360 witness-family formula)
+==============================================================================
+  [PASS] A1 xi-change reshapes the bosonic dispersion p-dependently (>= 1% spread)  --  E-ratio 0.7078 (p=0.1) vs 0.7472 (p=3.0)
+  [PASS] A2 bosonic cone velocity = sqrt(K_s/K_t) exactly (continuously tunable)  --  limit E/p = sqrt(K_s)/sqrt(K_t)
+  [PASS] A3 bosonic one-tick eigenvalues are non-unimodular contractions (0 < t < 1)  --  sample transfer eigenvalues ['0.800', '0.389', '0.171']
+
+PART B -- the monomial lemma (exact case analysis; the quantization core)
+==============================================================================
+  [PASS] B1 top coefficient of |u|^2 is conj(a)*c (so a = 0 or c = 0)  --  z^2 coeff = a1*c1 + I*a1*c2 - I*a2*c1 + a2*c2
+  [PASS] B2 case analysis: c=0 => conj(a)*b = 0;  a=0 => conj(b)*c = 0  (monomial in every branch)  --  u is a monomial e^{i phase} z^n with n in {-1, 0, +1}
+  [PASS] B3 monomial dispersion: v = u'/(i u) = n exactly, n in {-1, 0, +1}  --  velocity quantized to integer edges/tick; |v| <= radius and v in Z
+  [PASS] B4 radius-r cascade: top coefficient is again an extreme product (conj(a)*d)  --  monomial z^n with |n| <= r in general
+
+PART C -- strictness: Hamiltonian-generated ticks violate the retained license
+==============================================================================
+  [PASS] C1 one Hamiltonian tick leaks to distance 2: A_2 = -(a*kappa)^2/8 + O(kappa^4) != 0  --  A_2 series = -a_tau**2*kappa**2/8
+  [PASS] C2 distance-2 leak is nonzero for every sampled nonzero hopping  --  |U[2,0]| = ['1.25e-03', '3.06e-02', '1.15e-01']
+  [PASS] C3 Hamiltonian-tick velocity is the tunable coupling itself (v = kappa)  --  continuous-time reading = the tunable-xi horn; strict reading excludes it
+
+PART D -- the band-winding saturation theorem (1D, exact)
+==============================================================================
+  [PASS] D1 FORWARD: real-on-circle degree-1 trace forces C = conj(A), B real (Fourier matching)  --  tr = beta + 2 g cos(k + phi) with beta = B, g = |A| -- derived, not assumed
+  [PASS] D2 |tr| = 2|cos omega| <= 2 (unitarity), and winding forces beta = 0, |gamma| = 1 (unique)  --  a nonzero-degree circle map attains both omega = 0 and omega = pi
+  [PASS] D3 beta=0, g=1 => bands are e^{+-i(k+phi)}: omega = +-(k+phi) EXACT (free single-particle dispersion)  --  |v| = 1 at every k; every curvature order of the winding band vanishes identically
+  [PASS] D4 cone slope quantized: |v| = 1 and curvature == 0  --  the real-time quantization is the theorem; any OS0 c_t/c_s consequence needs the named bridge
+  [PASS] D5 continuous-time bands cannot wind: (1/2pi) Int E'(k) dk = 0 for periodic E  --  the saturation mechanism EXISTS ONLY for a discrete tick -- the license is load-bearing
+
+PART D6 -- explicit brickwork constructions (traces and windings COMPUTED)
+==============================================================================
+  [PASS] D6a symmetric partial swap: tr = 2cos^2(t) - 2sin^2(t)cos k (COMPUTED); gapless at k=pi for ALL t; NON-winding  --  touches omega=0 only (one pole) => winding 0; a second non-winding tunable witness (P4 load-bearing)
+  [PASS] D6b asymmetric (full x partial) family: tr = -2 sin(t) cos k (COMPUTED); GAPPED, gap = pi/2 - t  --  gaps [(0.3, np.float64(1.2708)), (0.7, np.float64(0.8708))] -- the mass family, beta = 0
+  [PASS] D6c full x full: tr = -2 cos k traverses BOTH poles (winding cell) with |v| = 1 (COMPUTED)  --  max |v| = 1.000000: the saturating cell
+  [PASS] D6d dichotomy sweep: every (beta, g) != (0, 1) sample is non-winding with max |v| < 1  --  largest interior max|v| = 0.8944 at (beta,g)=(0.4, 0.8); winding <=> the saturating cell
+
+PART E -- hostile witnesses: every premise is load-bearing
+==============================================================================
+  [PASS] E1a split-step is a radius-1 unitary with cos(omega) = cos^2(th) cos k + sin^2(th)  --  cos(omega) = sin(theta)**2 + cos(k)*cos(theta)**2
+  [PASS] E1b split-step gapless cone velocity v = |cos(theta)|: CONTINUOUSLY TUNABLE (drop P4)  --  v = Abs(cos(theta)): winding-0 gapless cell, the dial returns
+  [PASS] E1c split-step admits NO decoupling grading (commutant of coefficients = scalars)  --  the tunable witness is genuinely outside the chiral class
+  [PASS] E2 P3 drop-out witness: S_+ C(0.6) has complex trace, det-winding 1, and TUNABLE branch velocity  --  branch v range [0.087, 0.913]: without CPT pairing the dial returns
+  [PASS] E3 without unitarity the bosonic family sweeps xi continuously (Part A)  --  positive transfer has no unimodularity constraint
+  [PASS] E4 without strictness the Hamiltonian tick has tunable velocity (Part C)  --  strict license is load-bearing, same strict reading as per-plaquette
+
+PART F -- the first-order carrier: the ratio enters as the cone velocity
+==============================================================================
+  [PASS] F1 joint-rescale invariance holds for BOTH carriers (a generic normalization quotient, not a contrast)  --  the anisotropy gate's 2 coefficients = {ratio, removable normalization} for every carrier
+  [PASS] F2 first-order carrier: the surviving ratio IS the cone velocity v = kappa_s/kappa_t (bosonic: v^2)  --  consistent with the velocity-RG note's canonical-time observation
+
+PART G -- scope honesty: what is NOT proved here
+==============================================================================
+  [PASS] G1 named open: 2-component blocks evade the scalar monomial lemma (split-step exists)  --  3D Weyl-block enumeration is a separate cycle; 1D/per-axis theorem only
+  [PASS] G2 positive-transfer ticks and unitary ticks are distinct objects (P2 is a named reading)  --  any OS0 c_t/c_s consequence additionally uses the named first-order Wick/readout bridge
+
+PART H -- source-side premise-discharge wiring and status firewall
+==============================================================================
+  [PASS] H1 target note wires both 2026-06-15 premise-discharge candidate packets  --  P1/P4 and P2/P3 now have explicit source packets for re-audit
+  [PASS] H2 all-period site-license packet states the finite-period flat-or-saturating discharge without status overreach  --  candidate packet narrows P1/P4 but keeps license/unitarity as named readings
+  [PASS] H3 tick-unitarity packet reduces P2/P3 to spectrum-reflection transport plus channel envelope  --  candidate packet narrows P2/P3 without bundling OS0 c_t/c_s
+  [PASS] H4 target source keeps primitive retirement, B-W, and audit authority firewalled  --  repair is source-side wiring only, not a retained-status claim
+  [PASS] H5 target source wires the B-W bridge-chain packets as explicit markdown dependencies  --  re-audit now has concrete upstream rows for the old B-W residual
+  [PASS] H6 B-W bridge packet reduces OS0 identification to W-IR while refuting full Wick pairing  --  B-W is no longer a naked bridge, but its residual remains named
+  [PASS] H7 WIR and realization packets expose the remaining readings without primitive retirement  --  bridge residual is now record-stack/realization/unit readings, not hidden OS0 prose
+
+==============================================================================
+SCORECARD: PASS=36 FAIL=0
+==============================================================================
+
+----- stderr -----
+

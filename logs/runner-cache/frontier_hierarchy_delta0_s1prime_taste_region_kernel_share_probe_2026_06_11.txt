@@ -1,0 +1,92 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_delta0_s1prime_taste_region_kernel_share_probe_2026_06_11.py
+runner_sha256: 36e005265361e4f8d059b4b18a1b5c0cf63b69d3d6d75e971585fdad46bcf6bb
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 3.29
+status: ok
+----- stdout -----
+==============================================================================
+ frontier_hierarchy_delta0_s1prime_taste_region_kernel_share_probe_2026_06_11.py
+ Block10b of the DELTA0 blocking campaign: the taste-region kernel-share
+ probe on the composite S1' surface.  Each taste = one BZ corner region.
+ Computed: the exact 2^d-cell taste partition and the exact equal-share
+ lemma; per-taste shares of regulated mode sums (exact rationals 1/2^d, NO
+ 4 pi); the per-taste IR kernel subtraction [I_t(0) - I_t(m)] -> m/(4 pi)
+ (d = 3; the 4 pi, per taste, from the corner kernel) and the d = 4 analog
+ (m^2/(16 pi^2)) ln(1/m^2); the displacement table vs alpha_s = 0.1033038
+ and alpha_bare = 1/(4 pi); and the sharpened, value-complete form of the
+ open B4 attachment (the observable identification, a declared residual).
+ Parent note: docs/HIERARCHY_DELTA0_S1PRIME_TASTE_REGION_KERNEL_SHARE_
+              PROBE_NOTE_2026-06-11.md
+==============================================================================
+
+--- Section A [A]: C1 — the taste partition of the BZ (2^d corner Voronoi cells; exact) ---
+  [PASS][A] A1 exact partition: the 2^d corner Voronoi cells (each component nearest 0 or pi) have volume pi^d each, summing to (2 pi)^d — equal shares 1/2^d, exact Fraction bookkeeping; every declared half-shifted grid (L = 32, 48) splits each axis EXACTLY L/2 / L/2 with zero boundary points (|cos k| > 0 everywhere), so each cell receives exactly (L/2)^d grid points at d = 3 and d = 4
+  [PASS][A] A2 exact equal-share lemma: the involution k_mu -> pi - k_mu is the exact integer index map j -> L/2 - 1 - j (mod L) on every declared grid (a bijection, verified), exchanges the near-0 and near-pi halves of axis mu (cell -> cell), preserves measure (bijection / unit Jacobian), and leaves every sin^2 invariant (sin(pi - k) = sin k; float residual < 1e-12); the d involutions act transitively on the 2^d cells, hence ALL per-cell integrals of any function of s^2 are EXACTLY equal — each taste carries the exact share 1/2^d  (L=32: max |sin^2 diff| = 8.3e-16; L=48: max |sin^2 diff| = 1.1e-15)
+
+--- Section B [A]: C2 — per-taste shares of the regulated mode sums I_t(m) (d = 3 substrate; d = 4 declared Wick-surface reading) ---
+  [PASS][A] B1 d = 3: all 8 per-cell regulated mode integrals I_t(m) are EQUAL at every declared mass (m = 0.1, 0.2, 0.5) on every declared grid (L = 32, 48) to relative spread < 1e-11 — the exact lemma's grid image (the residual is float summation noise only)  (max rel spread = 1.8e-14; L=48 cell values: I_t(0.1) = 0.1181361, I_t(0.2) = 0.1097982, I_t(0.5) = 0.0852619)
+  [PASS][A] B2 d = 4: all 16 per-cell regulated mode integrals I_t(m) are EQUAL at every declared mass (m = 0.1, 0.2, 0.5) on every declared grid (L = 32, 48) to relative spread < 1e-11 — the exact lemma's grid image (the residual is float summation noise only)  (max rel spread = 3.5e-13; L=48 cell values: I_t(0.1) = 0.0382264, I_t(0.2) = 0.0370819, I_t(0.5) = 0.0317780)
+  [PASS][A] B3 value consistency: the exact value-multiplicity compressed quadrature reproduces the direct per-cell loops to < 1e-10 relative (same quadrature, re-ordered), and Richardson(1/L^2) pair estimates of I_t(m) from (32,48) vs (48,96) agree within the declared per-mass tolerances (5e-3 at m = 0.1, 1e-3 at m = 0.2, 1e-6 at m = 0.5; the m = 0.1 peak is the soft case on the coarse grids, declared as such) at d = 3 and d = 4  (d=3 m=0.1: rich(32,48) = 0.1184247, rich(48,96) = 0.1182272; d=4 m=0.1: rich(32,48) = 0.0382361, rich(48,96) = 0.0382287)
+  [PASS][A] B4 the per-taste share is the exact RATIONAL 1/2^d of the total mode sum — 1/8 (d = 3), 1/16 (d = 4) — at every mass (share and removed-fraction both within 1e-12 of 1/2^d): removing one taste removes exactly 1/2^d of the regulated mode sum.  NO 4 pi appears in any per-taste SHARE of a BZ integral; the hypothesis's 'per-taste share carries a 4 pi' reading is ELIMINATED on this surface  (shares are exact rationals; the 4 pi lives elsewhere (Section C))
+
+--- Section C: C3 — the per-taste IR kernel subtraction and its 4 pi (d = 3), and the d = 4 analog ---
+  [PASS][C] C1 continuum corner-kernel closed forms verified by deterministic radial quadrature: d = 3 subtracted integral over a ball = (m/(2 pi^2)) arctan(Lam/m) (midpoint vs closed form < 1e-6 rel), whole-space limit (m/(2 pi^2))(pi/2) = m/(4 pi) EXACTLY (the 4 pi is the d = 3 angular measure 4 pi/(2 pi)^3 = 1/(2 pi^2) times pi/2); d = 4 ball form = (m^2/(16 pi^2)) ln(1 + Lam^2/m^2) (< 1e-6 rel) — the log coefficient 1/(16 pi^2)  (d3 quad/closed - 1 = 1.60e-14, d4 = 1.64e-09)
+  [PASS][A] C2 per-cell equality holds for the subtraction kernels too (lemma instance): the subtracted integrand [1/s^2 - 1/(s^2+m^2)] at m = 0.1 and the derivative kernel 2m/(s^2+m^2)^2 at m = 0.075 give EQUAL sums on all 8 taste cells (d = 3, L = 96, direct loops, rel spread < 1e-11) — whatever IR coefficient one taste carries, every taste carries identically  (max rel spread = 3.1e-13)
+    derivative kernel 4pi*K_t(m), L=384: m=0.05: 1.026788, m=0.075: 1.037322, m=0.1: 1.045945
+  [PASS][A] C3 derivative-kernel estimator: K_t(m) = int_cell 2m/(s^2+m^2)^2 (= -dI_t/dm, the slope of the subtracted integral, no m = 0 evaluation) at m = 0.05, 0.075, 0.1 is grid-converged (L = 288 vs 384 < 1e-4 rel) and its quadratic m -> 0 extrapolation lands on 1/(4 pi) within the declared 0.5% — EACH taste cell's IR kernel slope is 1/(4 pi) per unit mass  (4pi x extrapolated slope = 0.999990 (deviation -1.0e-05); L-convergence 3.2e-06)
+    prescribed [I_t(0)-I_t(m)]/m x 4pi: m=0.05: L192 0.83201 / L384 0.92301 / rich 1.01400, m=0.1: L192 0.93449 / L384 0.98000 / rich 1.02552, m=0.2: L192 0.99539 / L384 1.01815 / rich 1.04091
+  [PASS][A] C4 prescribed difference estimator: [I_t(0) - I_t(m)]/m per taste cell at m = 0.05, 0.1, 0.2 (I_t(0) is finite on the zero-mode-free grids; the corner 1/q^2 grid error is the slow piece, removed by Richardson(1/L) over L = 192, 384), quadratic m -> 0 extrapolation lands on 1/(4 pi) within the declared 3%, and the two independent estimators agree to < 0.01 x 1/(4 pi) — the per-taste IR kernel subtraction carries m/(4 pi), WITH the 4 pi  (4pi x extrapolated slope = 0.999923; cross-estimator gap = 6.7e-05 x (4 pi)^-1)
+  [PASS][A] C5 corner locality: splitting each taste cell at corner distance |q| = 1/2 (d = 3, L = 192), the outside part of the subtracted integral scales as O(m^2) — Delta_out/m^2 stable across m = 0.05, 0.1, 0.2 (spread < 1.10x) — so the outside contributes ZERO to the m -> 0 slope: the per-taste 1/(4 pi) is entirely corner-localized, and the cell integral's slope equals the full-space continuum coefficient (in/out split resums the cell to < 1e-9)  (Delta_out/m^2 = 0.114674, 0.113241, 0.107964)
+    d=4 G_t(m) = int_cell 1/(s^2+m^2)^2, L=192: m=0.1: 0.0440054, m=0.125: 0.0410050, m=0.15: 0.0385018, m=0.2: 0.0344244, m=0.25: 0.0311225
+  [PASS][A] C6 d = 4 analog (declared Wick-surface reading): G_t(m) = int_cell 1/(s^2+m^2)^2 = (1/(16 pi^2)) ln(1/m^2) + c + O(m^2 ln m) per taste cell; grid-converged (L = 160 vs 192 < 1e-4 rel), and the declared basis fit {-2 ln m, 1, m^2, -2 m^2 ln m} over m in {0.1...0.25} recovers the log coefficient 1/(16 pi^2) = 0.0063326 within the declared 1.5% (fit-window stability < 0.5%) — at d = 4 the per-taste IR object is m^2 ln(1/m^2)/(16 pi^2): there is NO clean per-unit-mass 4 pi at d = 4; the m/(4 pi) form is d = 3-specific  (fit p/C16 = 0.9987, 0.9985; L-convergence 7.9e-08)
+
+--- Section D [A]: C4 — displacement table: every computed per-taste pi-carrying coefficient vs alpha_s and alpha_bare ---
+    d=3 per-taste IR kernel slope 1/(4 pi)         = 0.0795775  vs alpha_s: 0.7703x   vs alpha_bare: 1.0000x
+    d=4 per-taste log coefficient 1/(16 pi^2)      = 0.0063326  vs alpha_s: 0.0613x   vs alpha_bare: 0.0796x
+    d=3 per-taste rational share 1/8               = 0.1250000  vs alpha_s: 1.2100x   vs alpha_bare: 1.5708x
+    d=4 per-taste rational share 1/16              = 0.0625000  vs alpha_s: 0.6050x   vs alpha_bare: 0.7854x
+  [PASS][A] D1 displacement table computed: the d = 3 slope sits at exactly u_0^2 = 0.7703x of alpha_s (the identity alpha_s = (1/(4 pi)) x u_0^-2, < 1e-14), the d = 4 coefficient at 0.0613x (outside any window), and the rational shares at 1.2101x (1/8) and 0.6051x (1/16)  (alpha_s = 0.1033038, alpha_bare = 0.0795775, u_0^2 = 0.7703246)
+  [PASS][A] D2 the EXACT VALUE MATCH, stated with its guard: the computed d = 3 per-taste IR kernel slope equals alpha_bare = 1/(4 pi) — and this equality is BY CONSTRUCTION, not a numerical agreement found by search: alpha_bare := g_bare^2/(4 pi) at g_bare = 1 (I2 on I3) and the per-taste slope both consume the SAME d = 3 angular 4 pi of the kernel chain (Maradudin/Plancherel).  What the computation adds is that this constant attaches PER TASTE (per corner region), i.e. with a per-decoupling-count index — the per-taste IR kernel slope IS alpha_bare at g_bare = 1  (slope/alpha_bare = 0.999990 (derivative est.), 0.999923 (difference est.))
+  [PASS][A] D3 the supplier chain of the sharpened B4 target is value-complete: per-decoupling factor = [per-taste IR kernel slope 1/(4 pi), COMPUTED here per taste cell] x [dressed two-link vertex u_0^-2, B1-licensed value; block01's determinant supplies one u_0 per decimated mode] = alpha_s exactly (< 1e-14) — every VALUE in the chain now has a computed or licensed supplier; ONLY the observable identification (which readout makes the decoupling taste contribute exactly its IR slope times the dressed vertex MULTIPLICATIVELY) remains, and it is printed as a residual, never as a pass  ((1/(4 pi)) x u_0^-2 = 0.1033038 = alpha_s)
+  OBSERVATION (bounded, numerology-risk flagged — NOT a residual, NOT a closure): the per-taste RATIONAL shares fall inside the inventory's factor-2 observation window of alpha_s: 1/8 = 1.2101 x alpha_s (d = 3) and 1/16 = 0.6051 x alpha_s (d = 4).  These are shares of an ADDITIVE mode sum, not multiplicative per-decoupling factors; small rationals populate a factor-2 window generically (the block09 lesson); NO mechanism, NO supplier, NO claim — recorded only because the inventory's observation window obliges recording it.
+
+--- Section E [B]: on-disk scans — kernel chain, taste structure, campaign rows, parent-note fences ---
+  [PASS][B] E1 route-inventory synthesis on disk: the route decomposition this probe refines (non-modification rule present; S1 and S2 rows present) — this probe computes on the composite S1' surface block09 named (kernel chain x links) and on the block02 reduced target
+  [PASS][B] E2 block02 reduction note on disk records the target this probe's table compares against: one factor alpha_s = 0.1033038 per taste decoupling
+  [PASS][B] E3 the landed kernel chain is on disk exactly as consumed: Maradudin G(r) -> 1/(4 pi |r|) with the Z^3 stencil, and the Plancherel bridge's alpha_bare = 1/(4 pi) on the Haar-normalized BZ d^3k/(2 pi)^3 — the SAME 4 pi this probe finds in each taste's corner kernel (the by-construction guard rides this)
+  [PASS][B] E4 the taste structure and the composite route are on disk: the species-count narrow theorem (BZ corners of cardinality 2^d = the tastes whose Voronoi regions this probe integrates) and block09's S1' refinement (links x kernel chain; 'the 4 pi from the kernel' — the composition surface this probe computes the kernel side of)
+  [PASS][B] E5 parent-note honesty fences on disk: the note carries the by-construction guard on the value match, names the open step 'observable identification', grades itself reformulation-grade, carries the numerology guard, and 'does not close the DELTA0 gate'; forbidden closure tokens absent  (missing = [], hit = [])
+
+--- Terminal class-D fence: external comparators ---
+  (No PDG quantity is needed or consumed by this probe; every number is a BZ
+   sum, an exact rational, or a cited framework constant.)
+  [PASS][D] G1 self-scan: the PDG VEV literal appears ZERO times in this runner's source — no comparator consumed anywhere
+
+  RESIDUAL (declared-open): the alpha_s PER-DECOUPLING ATTACHMENT rule (block02 R1) remains UNSUPPLIED.  This probe supplies a per-taste OBJECT whose value is 1/(4 pi) (each taste's IR kernel slope, computed), NOT the per-decoupling MULTIPLICATIVE factor: a share of a mode sum is additive; alpha_s in the ratio-normalized partition function is multiplicative.  No attachment is supplied here.
+  RESIDUAL (declared-open): the B4-ATTACHMENT OBSERVABLE IDENTIFICATION (the campaign's sharpest formulation of B4, stated by this probe): identify the readout observable in which one decoupling taste's contribution IS its IR kernel slope 1/(4 pi) at the threshold scale, times the dressed two-link vertex u_0^-2, attaching MULTIPLICATIVELY per decoupling in the ratio-normalized partition function.  Every VALUE in the chain has a computed or licensed supplier (this probe: the 1/(4 pi) per taste; B1 + block01/block02: the u_0^-2 and the per-mode u_0); the IDENTIFICATION has none.  Kill criterion: a deterministic computation that enumerates the declared candidate readouts on this surface (log-partition-function / determinant-ratio readouts of the mode sums computed here, static-source readout at threshold) and finds every candidate's per-decoupling factor O(1)-displaced from alpha_s = 0.1033038 under every declared variant (the E3/block08/block09 pattern) eliminates this identification and, with it, the taste-region arm of S1'.
+  RESIDUAL (declared-open): the DELTA0 magnitude gate (HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) remains OPEN: this probe is a REFORMULATION-grade advance (values supplied, attachment not), not a closure; the inventory is not modified.
+
+==============================================================================
+ Breakdown: A=14 B=5 C=1 D=1 RESIDUAL=3 OBSERVATION=1
+ TOTAL: PASS=21 FAIL=0
+ VERDICT: established (bounded): the taste partition of the BZ is exact and
+   every taste carries the exact RATIONAL share 1/2^d of every regulated mode
+   sum (equal-share lemma, exact; verified to 1e-11) — NO 4 pi lives in
+   per-taste shares.  The 4 pi lives exactly where the kernel chain put it:
+   each taste's corner-localized IR kernel subtraction carries m/(4 pi)
+   per unit mass (d = 3; two estimators, < 0.1% achieved), i.e. the per-taste
+   IR kernel slope IS alpha_bare = 1/(4 pi) at g_bare = 1 — an exact match of
+   values BY CONSTRUCTION (same 4 pi, the d = 3 angular measure), now with a
+   per-taste index; the d = 4 reading instead carries (m^2/(16 pi^2)) ln(1/m^2)
+   — no per-unit-mass 4 pi: the clean form is d = 3-specific.  The open B4
+   content is hereby its sharpest form: ONLY the observable identification
+   (which readout attaches [1/(4 pi)] x [u_0^-2] multiplicatively per
+   decoupling) remains; every value in that chain is supplied.  NOT claimed:
+   closure, the attachment rule, any new license, or any PDG comparison.
+   DELTA0 stays open; obstruction reformulated and sharpened, not closed.
+==============================================================================
+
+----- stderr -----
+

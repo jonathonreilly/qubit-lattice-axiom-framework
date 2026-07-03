@@ -17,6 +17,50 @@ identification, hierarchy closure, scale ratio derivation, or
 **Runner:** [`scripts/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.py`](../scripts/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.py)
 **Cache:** [`logs/runner-cache/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.txt`](../logs/runner-cache/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.txt)
 
+## Source boundary (2026-06-12)
+
+**Boundary:** external notation / published-context registration. Effective
+status is audit-derived; this source records only the claim boundary.
+
+The runner checks text presence and tautological symbolic forms; it does not
+verify the external confinement mechanisms or derive a framework confinement
+theorem.
+
+This note may be cited for vocabulary, bibliography, and future bridge targets.
+It may not be cited as retained framework support for monopole condensation,
+center-vortex condensation/percolation, Wilson-loop area law, hierarchy
+closure, or any `alpha_LM^16` substitution.
+
+## 2026-06-07 Pure-Notation Source Boundary
+
+The load-bearing packet for this row is only the syntactic registration
+packet
+
+```text
+P_THOOFT_REG = (
+  abelian-projection vocabulary,
+  residual U(1)^(N-1) group notation,
+  monopole / dual-superconductor labels,
+  center-vortex disorder labels,
+  symbolic action-form templates,
+  Wilson-loop area-law target notation
+).
+```
+
+The runner checks text presence and tautological symbolic identities for this
+registration packet. It does not check the truth of the external confinement
+mechanisms, does not verify the cited papers in full, and does not treat the
+external references as retained authorities or one-hop framework dependencies.
+The references below are bibliographic labels for the notation being
+catalogued, not a retained authority packet.
+
+This row has no published-context support claim. It is a pure syntactic
+vocabulary registration and open-gate boundary for future bridge work. It does
+not prove monopole condensation, center-vortex condensation/percolation,
+positive string tension, a Wilson-loop area law, or any framework observable
+identification. Any later use as a theorem input must first supply a separate
+retained bridge theorem or retained/effective-bounded authority packet.
+
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 
 The 2026-05-28 audit verdict was `audited_conditional`:
@@ -277,4 +321,5 @@ symbolic where appropriate):
 10. **T10**: boundary disclaimer — note does **not** claim
     `α_LM^16` closure, hierarchy closure, or scale ratio derivation.
 
-Expected runner result: `PASS=N`, `FAIL=0`.
+Expected primary runner result: `PASS=33`, `FAIL=0`.
+Expected scope-repair checker result: `PASS=16`, `FAIL=0`.

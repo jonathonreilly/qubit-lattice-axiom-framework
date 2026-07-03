@@ -1,0 +1,306 @@
+{
+  "claim_id": "dimension_selection_note",
+  "note": "docs/DIMENSION_SELECTION_NOTE.md",
+  "manifest": {
+    "parent_runner": "scripts/frontier_dimension_selection_lower_bound_parent_repair.py",
+    "original_runner": "scripts/frontier_dimension_selection.py",
+    "finite_k_bridge_note": "docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md",
+    "finite_k_bridge_runner": "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py",
+    "finite_k_bridge_json": "outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json",
+    "parent_cache": "logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt",
+    "original_cache": "logs/runner-cache/frontier_dimension_selection.txt",
+    "finite_k_bridge_cache": "logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt"
+  },
+  "summary": {
+    "pass": 57,
+    "fail": 0
+  },
+  "results": [
+    {
+      "name": "manifest_path_exists:parent_runner",
+      "pass": true,
+      "detail": "scripts/frontier_dimension_selection_lower_bound_parent_repair.py"
+    },
+    {
+      "name": "note_links_manifest_path:parent_runner",
+      "pass": true,
+      "detail": "scripts/frontier_dimension_selection_lower_bound_parent_repair.py"
+    },
+    {
+      "name": "manifest_path_exists:original_runner",
+      "pass": true,
+      "detail": "scripts/frontier_dimension_selection.py"
+    },
+    {
+      "name": "note_links_manifest_path:original_runner",
+      "pass": true,
+      "detail": "scripts/frontier_dimension_selection.py"
+    },
+    {
+      "name": "manifest_path_exists:finite_k_bridge_note",
+      "pass": true,
+      "detail": "docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md"
+    },
+    {
+      "name": "note_links_manifest_path:finite_k_bridge_note",
+      "pass": true,
+      "detail": "docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md"
+    },
+    {
+      "name": "manifest_path_exists:finite_k_bridge_runner",
+      "pass": true,
+      "detail": "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py"
+    },
+    {
+      "name": "note_links_manifest_path:finite_k_bridge_runner",
+      "pass": true,
+      "detail": "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py"
+    },
+    {
+      "name": "manifest_path_exists:finite_k_bridge_json",
+      "pass": true,
+      "detail": "outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json"
+    },
+    {
+      "name": "note_links_manifest_path:finite_k_bridge_json",
+      "pass": true,
+      "detail": "outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json"
+    },
+    {
+      "name": "manifest_path_exists:parent_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt"
+    },
+    {
+      "name": "note_links_manifest_path:parent_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt"
+    },
+    {
+      "name": "manifest_path_exists:original_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_dimension_selection.txt"
+    },
+    {
+      "name": "note_links_manifest_path:original_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_dimension_selection.txt"
+    },
+    {
+      "name": "manifest_path_exists:finite_k_bridge_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt"
+    },
+    {
+      "name": "note_links_manifest_path:finite_k_bridge_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt"
+    },
+    {
+      "name": "note_links_manifest_output",
+      "pass": true,
+      "detail": "outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json"
+    },
+    {
+      "name": "source_full_length:parent_runner",
+      "pass": true,
+      "detail": "scripts/frontier_dimension_selection_lower_bound_parent_repair.py has 7626 bytes"
+    },
+    {
+      "name": "source_contains:parent_runner:import importlib.util",
+      "pass": true,
+      "detail": "import importlib.util present"
+    },
+    {
+      "name": "source_contains:parent_runner:BRIDGE_RUNNER",
+      "pass": true,
+      "detail": "BRIDGE_RUNNER present"
+    },
+    {
+      "name": "source_contains:parent_runner:def load_bridge_runner",
+      "pass": true,
+      "detail": "def load_bridge_runner present"
+    },
+    {
+      "name": "source_contains:parent_runner:SUMMARY: PASS=",
+      "pass": true,
+      "detail": "SUMMARY: PASS= present"
+    },
+    {
+      "name": "source_full_length:original_runner",
+      "pass": true,
+      "detail": "scripts/frontier_dimension_selection.py has 32564 bytes"
+    },
+    {
+      "name": "source_contains:original_runner:def measure_gravity_2d_with_d_potential",
+      "pass": true,
+      "detail": "def measure_gravity_2d_with_d_potential present"
+    },
+    {
+      "name": "source_contains:original_runner:def measure_I3",
+      "pass": true,
+      "detail": "def measure_I3 present"
+    },
+    {
+      "name": "source_contains:original_runner:SUMMARY TABLE",
+      "pass": true,
+      "detail": "SUMMARY TABLE present"
+    },
+    {
+      "name": "source_contains:original_runner:beta",
+      "pass": true,
+      "detail": "beta present"
+    },
+    {
+      "name": "source_contains:original_runner:I_3",
+      "pass": true,
+      "detail": "I_3 present"
+    },
+    {
+      "name": "source_full_length:finite_k_bridge_runner",
+      "pass": true,
+      "detail": "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py has 13683 bytes"
+    },
+    {
+      "name": "source_contains:finite_k_bridge_runner:def finite_k_centroid_derivative",
+      "pass": true,
+      "detail": "def finite_k_centroid_derivative present"
+    },
+    {
+      "name": "source_contains:finite_k_bridge_runner:def propagate_centroid_for_mass",
+      "pass": true,
+      "detail": "def propagate_centroid_for_mass present"
+    },
+    {
+      "name": "source_contains:finite_k_bridge_runner:def part3_finite_difference",
+      "pass": true,
+      "detail": "def part3_finite_difference present"
+    },
+    {
+      "name": "source_contains:finite_k_bridge_runner:SUMMARY: PASS=",
+      "pass": true,
+      "detail": "SUMMARY: PASS= present"
+    },
+    {
+      "name": "cache_runner_matches:parent_cache",
+      "pass": true,
+      "detail": "scripts/frontier_dimension_selection_lower_bound_parent_repair.py == scripts/frontier_dimension_selection_lower_bound_parent_repair.py"
+    },
+    {
+      "name": "cache_sha_fresh:parent_cache",
+      "pass": true,
+      "detail": "55ba22423e9c8abc6d29b210233dbb0fea7d0e4001b9b0e1aa5bf17cb6b87c7f == 55ba22423e9c8abc6d29b210233dbb0fea7d0e4001b9b0e1aa5bf17cb6b87c7f"
+    },
+    {
+      "name": "cache_exit_ok:parent_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:parent_cache:SUMMARY: PASS=27 FAIL=0",
+      "pass": true,
+      "detail": "SUMMARY: PASS=27 FAIL=0"
+    },
+    {
+      "name": "cache_snippet_present:parent_cache:COMPANION_PACKET: PASS",
+      "pass": true,
+      "detail": "COMPANION_PACKET: PASS"
+    },
+    {
+      "name": "cache_snippet_present:parent_cache:finite-k lower-bound pass set is d=3,4,5",
+      "pass": true,
+      "detail": "finite-k lower-bound pass set is d=3,4,5"
+    },
+    {
+      "name": "cache_snippet_present:parent_cache:finite-k lower-bound fail set is d=1,2",
+      "pass": true,
+      "detail": "finite-k lower-bound fail set is d=1,2"
+    },
+    {
+      "name": "cache_runner_matches:original_cache",
+      "pass": true,
+      "detail": "scripts/frontier_dimension_selection.py == scripts/frontier_dimension_selection.py"
+    },
+    {
+      "name": "cache_sha_fresh:original_cache",
+      "pass": true,
+      "detail": "48b650e3500d7d92cafe1ae852317f25d00ab40bbb27f160acc07ba87189ec83 == 48b650e3500d7d92cafe1ae852317f25d00ab40bbb27f160acc07ba87189ec83"
+    },
+    {
+      "name": "cache_exit_ok:original_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:original_cache:I_3/P = <1e-10",
+      "pass": true,
+      "detail": "I_3/P = <1e-10"
+    },
+    {
+      "name": "cache_snippet_present:original_cache:d <= 2: EXCLUDED",
+      "pass": true,
+      "detail": "d <= 2: EXCLUDED"
+    },
+    {
+      "name": "cache_snippet_present:original_cache:d >= 3: attractive gravity with beta ~ 1 and I_3 = 0",
+      "pass": true,
+      "detail": "d >= 3: attractive gravity with beta ~ 1 and I_3 = 0"
+    },
+    {
+      "name": "cache_snippet_present:original_cache:  3 |       Yes |    Yes |     Yes |    1.01",
+      "pass": true,
+      "detail": "  3 |       Yes |    Yes |     Yes |    1.01"
+    },
+    {
+      "name": "cache_snippet_present:original_cache:  4 |       Yes |    Yes |     Yes |    1.05",
+      "pass": true,
+      "detail": "  4 |       Yes |    Yes |     Yes |    1.05"
+    },
+    {
+      "name": "cache_snippet_present:original_cache:  5 |       Yes |    Yes |     Yes |    1.03",
+      "pass": true,
+      "detail": "  5 |       Yes |    Yes |     Yes |    1.03"
+    },
+    {
+      "name": "cache_runner_matches:finite_k_bridge_cache",
+      "pass": true,
+      "detail": "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py == scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py"
+    },
+    {
+      "name": "cache_sha_fresh:finite_k_bridge_cache",
+      "pass": true,
+      "detail": "a701ba7f7f598324ff1010d00b56e26067568e8e42ee9e3190ccd29d3e1a326e == a701ba7f7f598324ff1010d00b56e26067568e8e42ee9e3190ccd29d3e1a326e"
+    },
+    {
+      "name": "cache_exit_ok:finite_k_bridge_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:finite_k_bridge_cache:SUMMARY: PASS=56 FAIL=0",
+      "pass": true,
+      "detail": "SUMMARY: PASS=56 FAIL=0"
+    },
+    {
+      "name": "cache_snippet_present:finite_k_bridge_cache:d=1 derivative has expected sign",
+      "pass": true,
+      "detail": "d=1 derivative has expected sign"
+    },
+    {
+      "name": "cache_snippet_present:finite_k_bridge_cache:d=5 parent raw_delta sign matches lower-bound sign",
+      "pass": true,
+      "detail": "d=5 parent raw_delta sign matches lower-bound sign"
+    },
+    {
+      "name": "bridge_json_fail_count_zero",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "bridge_json_pass_count_56",
+      "pass": true,
+      "detail": "56"
+    }
+  ],
+  "audit_status_provenance": "independent audit handling only"
+}

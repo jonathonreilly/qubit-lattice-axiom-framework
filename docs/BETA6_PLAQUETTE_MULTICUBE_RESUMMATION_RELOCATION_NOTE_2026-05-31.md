@@ -125,6 +125,29 @@ proves the 48-support order-`beta^9` K-built classification and the first
 non-`K` marked-face sector, without using audit-status or PR-local text as
 evidence.
 
+## 5A. Downstream source-boundary firewall
+
+Allowed downstream uses of this packet are limited to the local symbolic checks
+that the runner actually recomputes:
+
+- the cumulants of `K = log J` through `kappa_5`;
+- the Euler closed-surface normalization
+  `2*(1/6)^F*3^{V-E} = 18^{1-F}` for the cube and two-cube-box anchors;
+- the existence of the local SU(3) epsilon/baryon channel
+  `3 x 3 x 3 = 1 + 8 + 8 + 10`;
+- the finite-truncation root migration evidence listed above.
+
+Forbidden downstream uses without a new retained bridge:
+
+- do not cite this packet as proof of the full order-`beta^9` 48-support
+  classification;
+- do not cite this packet as proof of the order-`beta^10` marked-face
+  `3/18^10` sector;
+- do not treat the open beta9/beta10 classifications as proved here;
+- do not cite this packet as a retained beta=6 closure, a value of `<P>(6)`,
+  a value of `Delta(6)`, or an exclusion of a thermodynamic singularity below
+  `6`.
+
 ## 6. No-Go Discipline Gate
 
 **Status:** PASS for this open-gate boundary. The note does not claim no route
@@ -175,7 +198,7 @@ promoting either context note by prose.
 python3 scripts/frontier_beta6_multicube_resummation_relocation.py
 ```
 
-Expected: `SCORECARD: PASS=12 FAIL=0`. The runner checks the `kappa_m`
+Expected: `SCORECARD: PASS=13 FAIL=0`. The runner checks the `kappa_m`
 cumulant identity, the Euler closed-surface local weights, the SU(3)
 epsilon-channel identity, and the finite truncation-root migration.
 

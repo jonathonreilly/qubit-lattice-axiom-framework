@@ -1,11 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_taste_cube_cyclic_source_descent.py
-runner_sha256: 86276c4e56ed7bda73cb8b91866c6a9583d2bf76eff9cb050e1baf73c24ec008
+runner_sha256: 39050828c5a799c046ed6608f2cccb73390990984c723d1db949a19eeac1ac8a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.60
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
+========================================================================================
+PART 0: source-boundary guard for the finite descent theorem
+========================================================================================
+  [PASS] No broad realization-gate source slug remains in the finite descent note  (the broad gate is context only, not a proof input)
+  [PASS] The note states the finite C^8 source boundary at top level
+  [PASS] The note names the load-bearing finite objects reconstructed by this runner
 ========================================================================================
 PART 1: full-cube C_3 averaging descends exactly to the same T_1 projector
 ========================================================================================
@@ -19,6 +25,7 @@ PART 2: exact full-cube orbit channels descend to B0, B1, B2
   [PASS] The diagonal one-hot orbit source descends to B0
   [PASS] The forward oriented one-hot orbit source descends to C
   [PASS] The backward oriented one-hot orbit source descends to C^2
+  [PASS] Non-Hermitian oriented channels are complex-cyclic, not real Hermitian responses
   [PASS] Hermitian full-cube orbit combinations descend to B1 and B2
   [PASS] Q0, Q1, Q2 are already C_3-averaged Hermitian full-cube source channels
 
@@ -38,15 +45,15 @@ PART 4: any Schur-compatible full-cube response factors through r0, r1, r2
   [PASS] [NUMERIC] The response law ReTr(S(M) P1 A8(X) P1) factors exactly through r0, r1, r2  (M0/X0: coord=0.0e+00, fact=3.6e-15; M0/X1: coord=0.0e+00, fact=0.0e+00; M0/X2: coord=1.1e-16, fact=7.1e-15; M0/X3: coord=1.1e-16, fact=3.6e-15; ...)
 
 Interpretation:
-  The physical taste cube does not force us back to a vague large-source
-  target. Exact C_3[111] averaging and a Schur-compatible charged-sector
-  reduction collapse the full 8-corner source bank to the same three
-  cyclic response channels already identified on T_1. So the honest
-  remaining job is not to rediscover the carrier size. It is to derive
-  the microscopic full-cube source law for those channels, and then the
-  selector law that would put them on the Koide cone.
+  The finite taste cube does not force us back to a vague Hermitian
+  source-response target. Exact C_3[111] averaging and a Schur-compatible
+  charged-sector reduction collapse the full 8-corner Hermitian source
+  responses to the same three cyclic channels already identified on T_1.
+  So the honest remaining job is not to rediscover the carrier size; it is
+  to derive the microscopic full-cube source law for those channels, and
+  then the selector law that would put them on the Koide cone.
 
-PASS=15 FAIL=0
+PASS=19 FAIL=0
 
 ----- stderr -----
 

@@ -1,12 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_transport_invariants.py
-runner_sha256: bdae22731104821ffa11e66b2bedfc6c8e895303f9d4b7f01057aebbfc081d01
+runner_sha256: 2a4c32b1352ca5fb704f3d5983c107a300e5e326b8678ca24403bc1b6dcd8232
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.65
+elapsed_sec: 0.87
 status: ok
 ----- stdout -----
 Native teleportation transport-invariant checks
+PASS  source status is open-gate / bounded algebraic support only: no retained physical-teleportation status claimed
+PASS  T1-T6 are transport premises, not new axioms: premise firewall present
+PASS  source firewall keeps T1/T2 bounded and T3-T6 open: physical bridges remain named open targets
 PASS  T2 Bell frames form Z2 x Z2 connection group: associative=True, self_inverse=True, frames=4
 PASS  Theorem B multi-hop xor holonomy: chains=69904, max_trace_distance=0.000e+00
 PASS  Theorem A missing-record Pauli twirl: max_trace_distance_to_I/2=2.220e-16
@@ -15,6 +18,7 @@ PASS  Theorem C corrections commute with base ledgers: max_commutator_norm=0.000
 PASS  T4 loop holonomy is flat or recorded: flat=(0, 0), unrecorded_defect=(0, 1)
 PASS  Theorem D hidden branch dephasing: unrecorded_Fplus=0.500000, recorded_Fplus=1.000000
 
+TOTAL: PASS=10, FAIL=0
 Planning transport theory consistency: PASS
 Nature-grade unconditional closure: HOLD
 Reason: this runner checks formal transport invariants only; it does not derive the Bell resource, durable measurement, record carrier, apparatus, noise model, or conservation ledgers from native dynamics.

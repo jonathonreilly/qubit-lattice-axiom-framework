@@ -6,7 +6,8 @@ scope narrowed to a bounded kinetic-and-algebra closure candidate
 (substep-4 species labeling) carried as an explicit **irreducible
 admitted-context residual** structurally analogous to how `P1` is
 treated in `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` per the
-[`OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md`](OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md);
+`OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md`
+context note;
 the `AC_φ` (C_3-symmetric observable equal-expectation) atom is treated
 as a preserved-`C_3[111]` symmetry consequence rather than an
 independent residual; upstream substep-1/2 narrow-bridge
@@ -27,7 +28,7 @@ substep-4 AC narrowing into a single citeable bounded source.
 are set only by the independent audit lane.
 **Primary runner:** [`scripts/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.py`](../scripts/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.py)
 **Cache:** [`logs/runner-cache/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.txt`](../logs/runner-cache/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.txt)
-**Parent gate:** [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md) (currently `audited_renaming`; downstream rows with substep-specific needs should cite the relevant `STAGGERED_DIRAC_SUBSTEP{1,2,3,4}_*` retained theorems directly rather than this gate alias)
+**Parent gate:** `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (context only; parent-gate audit status is ledger-recorded; downstream rows with substep-specific needs should cite the relevant `STAGGERED_DIRAC_SUBSTEP{1,2,3,4}_*` retained theorems directly rather than this gate alias)
 
 ## Authority disclaimer
 
@@ -111,10 +112,10 @@ overclaims the unclosed scope. The substantive content is:
   close on that candidate analysis.
 
 This is the same shape as the
-[`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
+`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
 treatment of `P1` (scalar additivity on independent subsystems): the
 P1 derivation lane was attacked across multiple independent routes per the
-[`OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md`](OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md)
+`OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md`
 (routes A through E plus the 2026-05-17 Harlow/Doplicher-Roberts/
 Tempesta/Wave-11 sub-routes), all converging on the same
 universal `F_p[J] = |Z[J]|^p` counterexample obstruction. The live
@@ -139,7 +140,7 @@ The corrected scoping is:
   type stays `bounded_theorem`; this is an audit-queue proposal
   (`Status authority: independent audit lane only`); the audit lane
   has full authority to retag, narrow, or reject.
-- **The gate parent** [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+- **The gate parent** `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   remains source-side `open_gate` until the audit lane ratifies this
   synthesis. The gate parent's §2.1 (added in the same 2026-05-21
   re-architecture PR) records this synthesis as the named bounded
@@ -178,7 +179,7 @@ edit.
 
 The 2026-05-03 minimal-axioms reset recategorized the staggered-Dirac
 realization from the old axiom label to `open_gate`. The parent gate note
-[`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 explicitly records that pieces of the closure exist across in-flight
 supporting notes but "have not been packaged as a single end-to-end
 canonical proof". Four substep notes (substep 1: Grassmann partition
@@ -233,7 +234,7 @@ dependency (S2 spin-statistics re-audit).
 | CD | Cluster decomposition + spectrum condition → unique vacuum, no superselection sectors on canonical surface | retained | [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md) |
 | LR | Lieb-Robinson microcausality | retained | [`AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md) |
 | LN | Lattice Noether fermion-number Q̂ on H_phys | retained | [`AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md) |
-| SC | Single-clock codimension-1 evolution | retained | [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) |
+| SC | Axis-conditional single-clock codimension-1 evolution under B-AXIS: one supplied blocked time step, one declared evolution axis/transfer construction, and no admitted independent commuting transfer factor | conditional source boundary; not retained authority for temporal-axis selection | [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) |
 | FP | 1+1+3+3 corner spectral structure on staggered Z³ APBC | retained | [`THREE_GENERATION_STRUCTURE_NOTE.md`](THREE_GENERATION_STRUCTURE_NOTE.md) |
 | M3 | M_3(C) algebra on hw=1 triplet generated by translations + C_3[111] | retained | [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md) |
 | NQ | No proper exact quotient of M_3(C) on hw=1 | retained | [`THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md`](THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md) |
@@ -251,7 +252,7 @@ dependency (S2 spin-statistics re-audit).
 | T4 | substep 3: BZ-corner 1+1+3+3 + hw=1 M_3(C) | [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md) | bounded_theorem |
 | T5 | substep 4 (partial algebraic): direct three-state algebraic support | [`STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md) | bounded_theorem |
 | T5_AC | substep 4 AC narrowing | [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md) | bounded_theorem |
-| T5_RAT | substep 4 positive ratchet attempt (no-go for full closure) | [`STAGGERED_DIRAC_SUBSTEP4_POSITIVE_RATCHET_NOTE_2026-05-10.md`](STAGGERED_DIRAC_SUBSTEP4_POSITIVE_RATCHET_NOTE_2026-05-10.md) | open_gate |
+| T5_RAT | substep 4 positive ratchet attempt (historical no-go context for full closure) | `STAGGERED_DIRAC_SUBSTEP4_POSITIVE_RATCHET_NOTE_2026-05-10.md` | open_gate |
 
 ### Forbidden imports
 
@@ -471,9 +472,9 @@ date:
    (labeling convention / `C_3`-breaking dynamics / PDG-empirical),
    according to that candidate analysis. This is the structurally
    analogous residual to `P1` in
-   [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
+   `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
    per the
-   [`OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md`](OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md)
+   `OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md`
    campaign closure (both require admitted symmetry-breaking input;
    both have a multi-route negative-result portfolio backing a
    source-side admitted-context classification). Treating `AC_φλ` as
@@ -614,14 +615,14 @@ by this synthesis (it remains bounded with carried residual).
 
 ## Cross-references
 
-- Parent open-gate: [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+- Parent open-gate (context only; parent now cites this note): `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - Substep 1 (T2): [`STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md)
 - Substep 1 cross-site CAR bridge (T2_JW): [`STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
 - Substep 2 (T3): [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
 - Substep 3 (T4): [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md)
 - Substep 4 partial (T5): [`STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md)
 - Substep 4 AC narrowing (T5_AC): [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md)
-- Substep 4 positive ratchet attempt (T5_RAT): [`STAGGERED_DIRAC_SUBSTEP4_POSITIVE_RATCHET_NOTE_2026-05-10.md`](STAGGERED_DIRAC_SUBSTEP4_POSITIVE_RATCHET_NOTE_2026-05-10.md)
+- Substep 4 positive ratchet attempt (T5_RAT; historical context): `STAGGERED_DIRAC_SUBSTEP4_POSITIVE_RATCHET_NOTE_2026-05-10.md`
 - MINIMAL_AXIOMS: [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
 
 ## Status

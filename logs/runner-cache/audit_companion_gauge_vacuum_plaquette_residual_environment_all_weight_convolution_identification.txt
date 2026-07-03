@@ -1,20 +1,34 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py
-runner_sha256: 714583bd0f242c070d31bdac63a04d5587c74d25b3d775162a1aa992de6cbfab
+runner_sha256: 070bee797fefb73e17b4d5403f6e0830cbf0c32617af531d64a762e3fe4b5ac3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.52
+elapsed_sec: 0.62
 status: ok
 ----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_
 IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17
-Goal: sympy-symbolic verification of (T1)-(T4) under cited retained (I1)-(I3)
+Goal: source repair + sympy-symbolic verification of (T1)-(T4) under cited (I1)-(I4)
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
-Part 0: symbolic setup
+Part 0a: 2026-06-07 source repair checks
+----------------------------------------------------------------------------------------
+  [PASS (A)] I4 source files are present  (Wilson positivity note and runner exist in the restricted packet surface)
+  [PASS (A)] source note exposes plain primary runner and cache metadata  (audit-runner extraction can discover the restricted packet without following markdown link targets)
+  [PASS (A)] parent finite-packet notes cite this all-weight formal bridge as structural support only  (parent rows split formal convolution support from the still-open physical coefficient bridge)
+  [PASS (A)] I4 ledger authority has retained_bounded effective status  (audit_status=audited_clean effective_status=retained_bounded)
+  [PASS (A)] target note cites the I4 Wilson coefficient source  (one-hop source edge to retained-bounded Wilson coefficient positivity)
+  [PASS (A)] target note states the constructive all-weight occurrence lemma  (strict Wilson coefficient nonvanishing for beta>0 is source-visible)
+  [PASS (A)] target note narrows Z_beta^env to a formal per-weight central sequence  (no hidden all-weight class-function object is required)
+  [PASS (A)] target note excludes actual all-weight class-function and L2 closure claims  (formal sequence boundary is explicit)
+  [PASS (A)] constructive SU(3) tensor path reaches every sampled weight  (checked 0<=p,q<=8; min multiplicity=1)
+  [PASS (A)] strict beta>0 Wilson lower term is positive on the source certificate grid  (n=p+q term positive for beta>0; beta=0 boundary not overclaimed)
+
+----------------------------------------------------------------------------------------
+Part 0b: symbolic setup
 ----------------------------------------------------------------------------------------
   N_MAX = 3  (16 weights in finite truncation)
   Distinct abstract symbol pairs: kappa = 10, a (incl. fixed a_00=1) = 10
@@ -25,7 +39,7 @@ Part 1: (T1) structural diagonality of R_beta^env
 ----------------------------------------------------------------------------------------
   [PASS (A)] (T1) R_beta^env is diagonal on the character basis (off-diagonal entries vanish symbolically)  (diag operator on orthonormal basis)
   [PASS (A)] (T1) R_beta^env is self-adjoint (real diagonal entries)  (all eigenvalues kappa/(a^4) are real positive symbols)
-  [PASS (A)] (T1) R_beta^env eigenvalues are positive (kappa > 0, a > 0 from (I1)+(I2))  (every eigenvalue is product/ratio of positive symbols)
+  [PASS (A)] (T1) R_beta^env eigenvalues are positive (kappa > 0, a > 0 from (I1)+(I2)+(I4))  (every eigenvalue is product/ratio of positive symbols)
   [PASS (A)] (T1) R_beta^env commutes with the swap involution S  (kappa_(p,q) = kappa_(q,p), a_(p,q) = a_(q,p) enforced by symbol-pair sharing)
 
 ----------------------------------------------------------------------------------------
@@ -78,9 +92,10 @@ Part 8: finite-truncation numerical sanity (Class A FP cross-check)
 ----------------------------------------------------------------------------------------
 Summary
 ----------------------------------------------------------------------------------------
-  Verified at exact sympy precision under cited retained (I1)+(I2)+(I3):
+  Verified at exact sympy precision under cited (I1)+(I2)+(I3)+(I4):
+    Source repair: I4 strict Wilson nonvanishing plus formal Z_beta^env boundary
     (T1) Structural diagonality, self-adjointness, positivity, swap symmetry of R_beta^env
-    (T2) Peter-Weyl character expansion of Z_beta^env with (D2) coefficients
+    (T2) Peter-Weyl formal sequence expansion of Z_beta^env with (D2) coefficients
     (T3) eigenvalue equality kappa/a^4 = z^env/lambda_env at every weight (operator-level)
     (T3b) actual-trivial normalization gives R/kappa_(0,0), not R, unless kappa_(0,0)=1
     (T4) uniqueness: distinct eigenvalue sequences yield distinct operators
@@ -89,7 +104,7 @@ Summary
     Finite-truncation numerical sanity at one independent abstract sample
 
 ========================================================================================
-TOTAL: PASS=23, FAIL=0
+TOTAL: PASS=33, FAIL=0
 ========================================================================================
 
 ----- stderr -----

@@ -1,0 +1,95 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.py
+runner_sha256: f9bfad80ac0f99a19dbb9ac2f3ae4f22e34270bc6ef577c88bcf2a30a9999328
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Gate shape
+------------------------------------------------------------------------------
+PASS eight gate rows are defined
+PASS gate ids are unique
+PASS all current statuses avoid retained/promoted language
+PASS at least one unbounded gate is present
+PASS effective retained application gate is present
+PASS bounded gates are not unbounded-ready
+PASS no gate is unbounded-ready yet
+
+------------------------------------------------------------------------------
+Source coverage
+------------------------------------------------------------------------------
+PASS dynamics stack PR #2850 is referenced
+PASS dynamics stack PR #2853 is referenced
+PASS dynamics stack PR #2856 is referenced
+PASS dynamics stack PR #2858 is referenced
+PASS dynamics stack PR #2861 is referenced
+PASS dynamics stack PR #2864 is referenced
+PASS closeout PR #2868 is referenced as stack index
+PASS all source PR numbers are positive
+
+------------------------------------------------------------------------------
+Document checks
+------------------------------------------------------------------------------
+PASS document contains gate finite_record_certificate_substrate
+PASS document contains gate directed_dynamics_certificate
+PASS document contains gate production_kernel_selection
+PASS document contains gate sample_target_vector
+PASS document contains gate stable_dial_location
+PASS document contains gate bounded_conditional_audit_lift
+PASS document contains gate unbounded_family_lift
+PASS document contains gate effective_retained_application
+PASS document references PR #2850
+PASS document references PR #2853
+PASS document references PR #2856
+PASS document references PR #2858
+PASS document references PR #2861
+PASS document references PR #2864
+PASS document contains phrase: pre-record law carries probabilities
+PASS document contains phrase: post-record records carry realized information
+PASS document contains phrase: probabilities enter post-record analysis only through a supplied law
+PASS document contains phrase: The current dynamics artifacts are bounded
+PASS document contains phrase: The unbounded move is therefore a separate gate
+PASS document contains phrase: stable location can be recorded and audited as a location
+PASS document contains phrase: does not force or select the dial
+PASS document contains phrase: audit_required_before_effective_retained: true
+PASS document contains phrase: bare_retained_allowed: false
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS audit data written flag is false
+PASS audit verdict applied flag is false
+PASS retained/promoted claim flag is false
+PASS physical arrow derived from Record flag is false
+PASS production kernel derived from Record flag is false
+PASS target or weights derived from Record flag is false
+PASS sample-is-probability-law flag is false
+PASS dial forced or selected flag is false
+PASS unbounded claim from finite enumeration flag is false
+
+------------------------------------------------------------------------------
+Family-lift gate
+------------------------------------------------------------------------------
+PASS unbounded family lift is open
+PASS unbounded family lift is not bounded
+PASS unbounded family lift is not ready
+PASS family-lift blocker names projective consistency
+PASS family-lift blocker names monotone exhaustion
+PASS family-lift blocker names direct-limit
+PASS family-lift blocker names tightness
+
+SUMMARY: PASS=54 FAIL=0
+POST_RECORD_RETAINED_UNBOUNDED_DYNAMICS_GATE=TRUE
+GATE_ROWS=8
+FINITE_CERTIFICATES_REMAIN_BOUNDED=TRUE
+UNBOUNDED_FAMILY_LIFT_REQUIRED=TRUE
+PRE_RECORD_LAW_CARRIES_PROBABILITY=TRUE
+POST_RECORD_SITE_CARRIES_REALIZED_INFORMATION=TRUE
+DIAL_FORCED_OR_SELECTED=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+
+----- stderr -----
+

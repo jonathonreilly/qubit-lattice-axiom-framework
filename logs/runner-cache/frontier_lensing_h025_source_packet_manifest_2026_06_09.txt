@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lensing_h025_source_packet_manifest_2026_06_09.py
+runner_sha256: 4b45340a4fd85c2f231b67c71eee1cf86c19cd1301de4fc7cf7137bcde11f020
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+Lensing H=0.25 source-packet manifest
+==============================================================================
+LOCAL SOURCE PACKET
+  scripts/frontier_lensing_h025_edge_kernel_certificate_2026_06_08.py  sha256=aa1d459df99e2c12de1255b3a82b5c42f009a147ae9393bf7a0b0b6d304ab8e5
+  scripts/kubo_continuum_limit.py  sha256=0ca51f85c0dbab8c2062d423306b36c566d9a2cb1901c8079dbe3d651128ce5d
+  scripts/lensing_adjoint_kernel_probe.py  sha256=14b1fba9b5c73699a127bb4d884a17b394da71f8451ee0d9f30bfe7ec2a53c5c
+
+[PASS] transitive local helper scripts are present
+       deps=['scripts/frontier_lensing_h025_edge_kernel_certificate_2026_06_08.py', 'scripts/kubo_continuum_limit.py', 'scripts/lensing_adjoint_kernel_probe.py']
+[PASS] H=0.25 edge-kernel cache is fresh and source-pinned
+       cache=logs/runner-cache/frontier_lensing_h025_edge_kernel_certificate_2026_06_08.txt, status=fresh, live_sha=aa1d459df99e2c12de1255b3a82b5c42f009a147ae9393bf7a0b0b6d304ab8e5, cache_sha=aa1d459df99e2c12de1255b3a82b5c42f009a147ae9393bf7a0b0b6d304ab8e5
+[PASS] source fine-H slope certificate is present
+       id=lensing_deflection_h025_slope_fit; slope=-1.433548671845435; r2=0.9984044562747288
+[PASS] structured H=0.25 JSON output matches certificate summary
+       summary={'fail': 0, 'open_scope': ['not a continuum theorem', 'not a standard 1/b lensing claim', 'not an exact dipole-asymptotic theorem', 'not a proof for other families or observables'], 'pass': 12, 'verdict': 'bounded_h025_edge_kernel_certificate'}; H=0.25; NL=60; edges=65528627; slope=-1.4335485338851046
+[PASS] source note names fine-H manifest packet
+       missing=[]
+
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

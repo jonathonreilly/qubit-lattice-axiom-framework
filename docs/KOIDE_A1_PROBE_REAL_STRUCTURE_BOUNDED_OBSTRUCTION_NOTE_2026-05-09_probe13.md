@@ -69,7 +69,10 @@ The framework retains the following antilinear / antiunitary content:
   Hilbert space, satisfying `Θ_H H Θ_H^{-1} = H`.
 - **Single-clock structure**
   ([`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)):
-  the framework has a unique time direction (no second clock).
+  conditional on B-AXIS, the framework has one supplied blocked time step,
+  one declared evolution axis/transfer construction, and no admitted
+  independent commuting transfer factor. The temporal-axis label is a
+  premise here, not a derivation from RP uniqueness.
 
 Key takeaways for Probe 13:
 

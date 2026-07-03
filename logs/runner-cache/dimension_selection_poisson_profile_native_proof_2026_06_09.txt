@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/dimension_selection_poisson_profile_native_proof_2026_06_09.py
+runner_sha256: 837757a5cf2c9b1d9124b9e425d347fc11526c30c8274a0c031813615d4843a5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.41
+status: ok
+----- stdout -----
+========================================================================================
+DIMENSION-SELECTION RADIAL PROFILE NATIVE PROOF
+========================================================================================
+
+Section 0: source firewall
+[PASS] lower-bound V2 note exists
+[PASS] parent dimension runner exists
+[PASS] lower note contains required phrase: Runner-native radial Green-profile proof
+[PASS] lower note contains required phrase: dimension_selection_poisson_profile_native_proof_2026_06_09.py
+[PASS] lower note contains required phrase: textbook references are parallel provenance
+[PASS] lower note contains required phrase: not load-bearing inputs
+[PASS] lower note excludes imported-authority phrase: standard d-dimensional Poisson Green's function asymptotics
+[PASS] lower note excludes imported-authority phrase: comes from standard Poisson Green's functions
+[PASS] lower note excludes imported-authority phrase: Upstream standard-math imports
+[PASS] parent runner contains refreshed profile phrase: runner-native radial Green-profile certificate
+[PASS] parent runner contains refreshed profile phrase: f_1(r)=r, f_2(r)=log(r), f_d(r)=r^(2-d)
+[PASS] parent runner contains refreshed profile phrase: no textbook import is needed
+[PASS] parent runner excludes stale textbook-strategy phrase
+
+Section 1: exact radial Poisson profile proof
+[PASS] d=1 radial Laplacian vanishes away from source: 0
+[PASS] d=1 shell flux is radius-independent: 1
+[PASS] d=1 profile derivative sign matches lower-bound transition: 1
+[PASS] d=2 radial Laplacian vanishes away from source: 0
+[PASS] d=2 shell flux is radius-independent: 1
+[PASS] d=2 profile derivative sign matches lower-bound transition: 1/2
+[PASS] d=3 radial Laplacian vanishes away from source: 0
+[PASS] d=3 shell flux is radius-independent: -1
+[PASS] d=3 profile derivative sign matches lower-bound transition: -1/4
+[PASS] d=4 radial Laplacian vanishes away from source: 0
+[PASS] d=4 shell flux is radius-independent: -2
+[PASS] d=4 profile derivative sign matches lower-bound transition: -1/4
+[PASS] d=5 radial Laplacian vanishes away from source: 0
+[PASS] d=5 shell flux is radius-independent: -3
+[PASS] d=5 profile derivative sign matches lower-bound transition: -3/16
+
+Section 2: parent-runner formula alignment
+[PASS] parent runner implements profile fragment: phi[ix, iy] = -M_val * r
+[PASS] parent runner implements profile fragment: phi[ix, iy] = -M_val * math.log(r)
+[PASS] parent runner implements profile fragment: phi[ix, iy] = -M_val / r ** (d - 2)
+[PASS] parent runner implements profile fragment: if r < 0.5:
+[PASS] d=1 finite regularized sample monotonicity matches derivative sign: [0.5, 1.0, 2.0, 4.0]
+[PASS] d=2 finite regularized sample monotonicity matches derivative sign: [-0.6931471805599453, 0.0, 0.6931471805599453, 1.3862943611198906]
+[PASS] d=3 finite regularized sample monotonicity matches derivative sign: [2.0, 1.0, 0.5, 0.25]
+[PASS] d=4 finite regularized sample monotonicity matches derivative sign: [4.0, 1.0, 0.25, 0.0625]
+[PASS] d=5 finite regularized sample monotonicity matches derivative sign: [8.0, 1.0, 0.125, 0.015625]
+========================================================================================
+SUMMARY: PASS=37 FAIL=0
+========================================================================================
+
+----- stderr -----
+

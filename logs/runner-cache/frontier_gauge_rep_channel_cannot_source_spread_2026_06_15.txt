@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_rep_channel_cannot_source_spread_2026_06_15.py
+runner_sha256: c9979835c0e425592d52d65baffea9d520b311a837fec6e5f40e8f52b010bb6e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+[0] generation algebra: H=aI+bC+conj(b)C^2, r=|b|^2/a^2, Q=1/3+2r/3 (retained)
+  PASS  r and Q well-defined
+
+[A] gauge-uniformity: a uniform gauge factor cancels in r (degree-0 inert)
+  PASS  uniform gauge factor s=0.3 leaves r invariant (cancels in ratio)
+  PASS  uniform gauge factor s=1.7 leaves r invariant (cancels in ratio)
+  PASS  uniform gauge factor s=5.0 leaves r invariant (cancels in ratio)
+  PASS  uniform gauge factor s=0.01 leaves r invariant (cancels in ratio)
+  PASS  CONTROL: a non-uniform factor (forbidden: would need different per-generation charges) DOES move r
+
+[B] within-doublet rep-degeneracy: colour-rep functions give <= 2 classes (cannot split the spread)
+  PASS  colour rep gives exactly 2 classes over {e,nu,u,d} (colourless dim1 | coloured dim3)
+  PASS  within-doublet partners share the colour rep: f_colour(u)=f_colour(d)
+  PASS  within-doublet partners share the colour rep: f_colour(nu)=f_colour(e)
+  PASS  within-doublet partners share the FULL left-handed multiplet (3,2,1/6) / (1,2,-1/2)
+  PASS  observed coloured sectors have DISTINCT r (r_up != r_down) within one colour class
+  PASS  => a colour-rep function (1 value per colour class) CANNOT reproduce r_up != r_down (2-class bound violated)
+
+[C] the within-doublet splitter is abelian/EWSB (right-handed Y / T3), orthogonal to the shared rep
+  PASS  right-handed hypercharge distinguishes within-doublet partners (Y_R(u) != Y_R(d))
+  PASS  r-ordering (e<d<u) does NOT match |Q|-ordering (d<u<e) => spread is not a |Q| function (FIT)
+
+[D] firewall consistency checks: no r value forced; r is free registered data
+  PASS  Q(r)=1/3+2r/3 valid for all observed sector r (none forced)
+  PASS  distinct free couplings give distinct valid r (r is a free input, never selected)
+  PASS  more distinct observed r (3) than unbroken-colour classes (2) => r is NOT a gauge-class function
+
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

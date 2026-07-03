@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/lepton_phase_modulus_separation_no_go_2026_06_06.py
+runner_sha256: 23367d02a5325f24c1341f3a4bd02cf875d82e8b7e76dca1b623afd79e7199db
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
+--- Section S: e1/e2/e3 separation (r vs delta) ---
+PASS: e1 = 3a (scale)
+PASS: e2 = 3 a^2 (1 - r) -- delta-BLIND (carries r => Q=2/3)
+PASS: e2 has NO delta dependence (diff wrt delta = 0)
+PASS: e3 = a^3 (1 - 3r + 2 r^{3/2} cos 3delta) -- the ONLY delta carrier (via cos 3delta)
+PASS: d e3/d delta proportional to sin(3 delta) (delta enters only via cos 3delta)
+--- Section W: nondegenerate conjugation-even/spectral scalar branch ---
+PASS: dX/ddelta = -3 r^{3/2} sin(3 delta) (so stationarity needs sin 3delta = 0 unless W_X=0)
+  stationary delta in [0,2pi): {0, pi/3, 2*pi/3, pi, 4*pi/3, 5*pi/3, 2*pi}
+PASS: delta=2/9 is NOT a stationary phase (2/9 != n pi/3 for any integer n; n would be 2/(3pi))
+PASS: restricted no-go: if W_X != 0 in the spectral/even scalar subclass, delta=2/9 is excluded
+--- Section F: counter-branches to the old universal scalar no-go ---
+PASS: Re z^3 is C3-invariant under delta -> delta + 2pi/3
+PASS: Im z^3 is also C3-invariant under delta -> delta + 2pi/3
+PASS: general real C3 scalar W(r, Re z^3, Im z^3) can stationarize a supplied delta=2/9 target
+PASS: general real C3 scalar targeted example has its minimum at the supplied phase
+PASS: even/spectral W_X=0 branch can also stationarize the supplied delta=2/9 target
+PASS: even/spectral targeted branch is locally nonflat at delta=2/9
+--- Section C: convergence with register-not-read; honest phase boundary ---
+PASS: register-not-read partition map delivers r, NOT delta (converges with W from the other side)
+PASS: the register-not-read partition map gives a modulus statement, not a phase selector
+PASS: delta=2/9 still requires a genuine phase selector or covariant holonomy route
+--- Section B: scope (demotion plus narrow branch no-go) ---
+PASS: does NOT close delta=2/9 (the C3-covariant eta/holonomy route is untouched/open)
+PASS: does NOT claim a universal scalar-action no-go; W_X=0 and Im z^3 branches are explicit
+PASS: the G-signature defect of L(3;1) = exactly -2/9 (distinct N-family (N-1)(N-2)/3N) is the rare exact hit but is NON-native + APS-eta (avoid-list) + already on main -- NOT re-derived here
+
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

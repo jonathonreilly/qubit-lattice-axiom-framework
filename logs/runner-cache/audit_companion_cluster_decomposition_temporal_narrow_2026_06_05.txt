@@ -1,0 +1,80 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_cluster_decomposition_temporal_narrow_2026_06_05.py
+runner_sha256: f1057d1d7f22e2f7ede0b83c653493f46eb0b6c0c57733831aa9273fe1165af1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.45
+status: ok
+----- stdout -----
+==========================================================================
+ audit_companion_cluster_decomposition_temporal_narrow_2026_06_05.py
+ Reproves L1 / L3 / L4 (narrowed note) and exhibits the TEMPORAL
+ transfer-matrix clustering bridge (B.6/B.7). The SPATIAL
+ cluster-decomposition statement (equation (3) / parent L2) is
+ EXPLICITLY OUT OF SCOPE and is NOT proved here.
+==========================================================================
+
+--- CHK1: L4 repaired Cl(3) operator-norm bound (triangle/l1) ---
+  every Cl(3) generator has operator norm 1: True
+  over 50000 random Cl(3) combinations:
+    triangle (l1) bound  ||h|| <= sum|c|     violations: 0
+    parent Euclidean bound (the FALSE one)    violations: 44075
+  witness h = I + sigma_z: ||h||_2 = 2.000000
+    parent Euclidean bound = 1.414214  (violated: True)
+    triangle (l1) bound    = 2.000000  (valid, tight: True)
+  CHK1 [PASS]
+
+--- CHK2: L4 finiteness of J_* and v_LR ---
+  single-term bound J_term = 1.000000
+  N_touch = 2  =>  J_* <= N_touch * J_term = 2.000000
+  used J_* = 2.000000  (= N_touch * J_term)
+  R_int = 1, D_int = 2
+  v_LR = 2 e J_* R_int D_int = 21.746255
+  CHK2 [PASS]
+
+--- CHK3: L1 Lieb-Robinson exponential envelope ---
+  at t = 1.00: log-slope in d = -2.3969 (decays: True)
+  LR-1972 envelope checked on 14 nontrivial (d,t) cells; never violated: True
+  CHK3 [PASS]
+
+--- CHK4: L3 lattice light cone (contrapositive of L1) ---
+  for every tested time, a finite distance threshold d* with proxy < 0.05 exists: True
+  CHK4 [PASS]
+
+--- CHK5: temporal clustering spectral identity (bridge B.6) ---
+  max |identity residual| over samples/n: 3.867e-15
+  CHK5 [PASS]
+
+--- CHK6: temporal clustering inequality (bridge B.7) ---
+  Delta_T (gap) supplied by construction; inequality checked.
+  worst slack (rhs - lhs), should be >= 0: 3.793e-01
+  CHK6 [PASS]
+
+--- CHK7: no-gap counterexample (Delta_T = 0 does not cluster) ---
+    n =  1: |connected| = 1.0000
+    n =  4: |connected| = 1.0000
+    n =  8: |connected| = 1.0000
+    n = 16: |connected| = 1.0000
+    n = 32: |connected| = 1.0000
+  connected correlator stays O(1) (no clustering without gap): True
+  CHK7 [PASS]
+
+==========================================================================
+ SUMMARY
+==========================================================================
+   [PASS] CHK1 L4 repaired triangle norm bound
+   [PASS] CHK2 L4 J_* and v_LR finite
+   [PASS] CHK3 L1 Lieb-Robinson envelope
+   [PASS] CHK4 L3 lattice light cone
+   [PASS] CHK5 temporal clustering identity (B.6)
+   [PASS] CHK6 temporal clustering inequality (B.7)
+   [PASS] CHK7 no-gap counterexample
+
+   TOTAL: 7 PASS / 0 FAIL
+
+ verdict: narrowed L1/L3/L4 reproven; L4 norm bound repaired;
+          temporal transfer-matrix clustering (B.6/B.7) exhibited;
+          SPATIAL L2 / equation (3) remains the open bridge.
+
+----- stderr -----
+

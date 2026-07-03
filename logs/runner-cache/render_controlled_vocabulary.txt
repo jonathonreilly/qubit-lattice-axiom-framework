@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/render_controlled_vocabulary.py
-runner_sha256: 390a35a08678ca3b4fb5564c173f9e345f2628aa6ccc7851669aa21fabefcde3
+runner_sha256: 59530f3bc95434f255669eba7897993bc81588e3aa42ed097b3803cf743f28a6
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.13

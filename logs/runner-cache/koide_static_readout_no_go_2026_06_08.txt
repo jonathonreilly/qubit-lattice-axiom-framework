@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/koide_static_readout_no_go_2026_06_08.py
+runner_sha256: 8620f06231efd154706f4e3955014e8288b625dc710546c773719d44cdbd3756
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.52
+status: ok
+----- stdout -----
+==============================================================================
+Koide tested static-readout no-go aggregate runner
+==============================================================================
+
+KOIDE r=1/2 POLARIZATION WALL -- independent verification scaffold
+======================================================================
+[PASS] W1: weighting (1,2) [vector/real, 2 doublet modes] -> r = 1  (Q = 1/3+2/3 = 1)
+       r(1,2) = 1, Q = 1
+[PASS] W1: weighting (1,1) [holomorphic, 1 doublet mode] -> r = 1/2  (Q = 1/3+1/3 = 2/3, the Koide value)
+       r(1,1) = 1/2, Q = 2/3
+[PASS] W2 (the wall): the doublet CW fluctuation modulus |b|^2 has Hessian over (Re b, Im b) of RANK 2 (two strictly positive eigenvalues) -> TWO real propagating modes -> weighting (1,2) -> r=1, robustly
+       Hessian = [[2, 0], [0, 2]], rank = 2, eigenvalues = [2]
+[PASS] W2 robustness: a general smooth modulus f(|b|^2) has a generically full-rank (rank-2) Hessian over (Re b, Im b) (det not identically zero) -> the modulus reading ALWAYS counts two real doublet modes
+       det Hessian[f(|b|^2)] = 4*(2*b1**2*Subs(Derivative(f(_xi_1), (_xi_1, 2)), _xi_1, b1**2 + b2**2) + 2*b2**2*Subs(Derivative(f(_xi_1), (_xi_1, 2)), _xi_1, b1**2 + b2**2) + Subs(Derivative(f(_xi_1), _xi_1), _xi_1, b1**2 + b2**2))*Subs(Derivative(f(_xi_1), _xi_1), _xi_1, b1**2 + b2**2) (not identically 0 -> rank 2 generically)
+[PASS] W3: a UNIFORM complex recount (1/2,1) is proportional to (1,2) -> STILL r=1 (Frobenius-Schur objection); only the ASYMMETRIC (singlet-real, doublet-holomorphic) = (1,1) split gives r=1/2 -- that asymmetric split IS the unproven selector
+       r(1/2,1) = 1 = r(1,2); the selector must be the ASYMMETRIC (1,1)
+
+TOTAL: PASS=5 FAIL=0
+VERDICT (wall established, not a derivation): the polarization selector is the binary {doublet counted as 2 real modes (modulus/CW, rank-2) -> r=1} vs {doublet counted as 1 holomorphic mode -> r=1/2}. The CW fluctuation modulus ROBUSTLY gives the rank-2 / r=1 count (#2624 wall). Any frame claiming r=1/2 must produce a NON-modulus, ASYMMETRIC, holomorphic count of the doublet that is (a) not the rank-2 modulus, (b) not a uniform complex rescaling, (c) not circular. This scaffold is the test harness for campaign survivors and the ground for a sharpened no-go.
+
+------------------------------------------------------------------------------
+
+J_cs = (C - C^2)/sqrt(3) IS MEASURE-NEUTRAL -> cannot select Koide r=1/2
+========================================================================
+[PASS] J1: J_cs is REAL ANTISYMMETRIC with spectrum {0, +i, -i} (the native complex structure on the doublet)
+       antisym=True, eig(J_cs)=[-1j, 0j, 1j]
+[PASS] J2: J_cs^2 = -(I - P_triv)  (J^2 = -1 on the 2-dim doublet, 0 on the trivial isotype)
+       ||J_cs^2 + (I - P_triv)|| = 3.3e-16
+[PASS] J3: [J_cs, C] = 0 -> [J_cs, M] = 0 for every circulant M (J_cs is a polynomial in C)
+       ||[J_cs, C]|| = 0.0e+00
+[PASS] J3b: [J_cs, M] = 0 for a random circulant M = a I + b C + c C^2
+       ||[J_cs, M]|| = 2.8e-17
+[PASS] J4: exp(theta J_cs) in SO(3) (orthogonal, det +1) and FIXES the trivial axis (1,1,1) -> it is an SO(2) rotation by theta on the doublet plane
+       verified at theta in {0.3,1.0,2.0,pi}
+[PASS] J5 (the wall): under the J_cs flow M -> R(theta) M R(theta)^T, the eigenvalue magnitudes, |det M|, and the M^dag M (modulus) spectrum are ALL theta-INVARIANT -> J_cs preserves every measure (det_R, |det_C|, E_d, r); it rotates only the doublet PHASE (delta), never the magnitude. A measure-neutral static structure cannot SELECT (1,1) over (1,2).
+       invariant tuple constant across theta: True; sample |det|=1.377
+
+TOTAL: PASS=6 FAIL=0
+VERDICT: the framework-native complex structure J_cs commutes with the generation matrix and generates a measure-PRESERVING SO(2) flow on the doublet. It can DEFINE a holomorphic readout but provably cannot SELECT the (1,1) holomorphic count over the (1,2) real count -- both are J_cs-invariant. Hence the native i does NOT derive Koide r=1/2; it carries the delta (phase) channel, not the r (magnitude). With the rank-2 sesquilinear modulus wall, the tested static selector class fails; the dynamical first-order/index opening remains outside this runner. Audit lane sets the verdict.
+
+==============================================================================
+AGGREGATE TOTAL: PASS=11 FAIL=0
+==============================================================================
+
+----- stderr -----
+

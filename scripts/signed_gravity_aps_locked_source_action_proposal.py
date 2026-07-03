@@ -39,6 +39,10 @@ from scripts.signed_gravity_aps_boundary_index_probe import (  # noqa: E402
 TOL = 1.0e-10
 PASS_COUNT = 0
 FAIL_COUNT = 0
+NOTE = os.path.join(ROOT, "docs", "SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md")
+BRIDGE_AUDIT_NOTE = os.path.join(ROOT, "docs", "SIGNED_GRAVITY_APS_WALD_GAUSS_BRIDGE_AUDIT_NOTE.md")
+BRIDGE_AUDIT_SCRIPT = os.path.join(ROOT, "scripts", "signed_gravity_aps_wald_gauss_bridge_audit.py")
+BRIDGE_AUDIT_CACHE = os.path.join(ROOT, "logs", "runner-cache", "signed_gravity_aps_wald_gauss_bridge_audit.txt")
 
 
 def check(name: str, passed: bool, detail: str = "") -> bool:
@@ -56,6 +60,85 @@ def check(name: str, passed: bool, detail: str = "") -> bool:
 def chi_eta(index_sign: int) -> int:
     eta, zero, _, _ = eta_delta(boundary_model(index_sign))
     return chi_from_eta(eta, zero)
+
+
+def test_exact_source_boundary_manifest() -> None:
+    with open(NOTE, "r", encoding="utf-8") as handle:
+        note = handle.read()
+    with open(BRIDGE_AUDIT_NOTE, "r", encoding="utf-8") as handle:
+        bridge_note = handle.read()
+    with open(BRIDGE_AUDIT_SCRIPT, "r", encoding="utf-8") as handle:
+        bridge_script = handle.read()
+    with open(BRIDGE_AUDIT_CACHE, "r", encoding="utf-8") as handle:
+        bridge_cache = handle.read()
+    flat = " ".join(note.split())
+    lower = flat.lower()
+    bridge_flat = " ".join(bridge_note.split())
+    bridge_script_flat = " ".join(bridge_script.split())
+    bridge_cache_flat = " ".join(bridge_cache.split())
+    check(
+        "note records 2026-06-07 exact-source boundary manifest",
+        "2026-06-07 Exact-Source Boundary Manifest" in note,
+    )
+    check(
+        "manifest says direct runner claim is conditional, not derivational",
+        "direct runner claim is conditional" in lower
+        and "the runner does not derive the term" in lower,
+    )
+    check(
+        "manifest records retained APS/Wald/Gauss source basis cannot span signed source",
+        "orientation-even positive source vector `[+1,+1]`" in flat
+        and "required orientation-odd source vector `[+1,-1]`" in flat
+        and "appears only after the explicit cross term is added" in flat,
+    )
+    check(
+        "manifest records determinant-line host is not canonical source selection",
+        "source-character grammar" in lower
+        and "z2` torsor/local system" in lower
+        and "does not canonically choose the section" in lower,
+    )
+    check(
+        "manifest preserves open gate and no-new-axiom boundary",
+        "open_gate conditional ansatz, not retained" in note
+        and "does not introduce a new axiom" in lower
+        and "does not mark that source principle as admitted" in lower,
+    )
+    check(
+        "2026-06-12 firewall keeps source-action origin as the live blocker",
+        "2026-06-12 source-action hard residual" in lower
+        and "live blocker is a derivation of the aps-locked `chi_eta rho phi` source action" in lower
+        and "does not add that grading as a premise" in lower
+        and "no retained-grade proposal or status promotion is made here" in lower,
+    )
+    check(
+        "2026-06-15 bundle cites executable APS/Wald/Gauss bridge audit surfaces",
+        "2026-06-15 Bridge-Audit Source Bundle" in note
+        and "SIGNED_GRAVITY_APS_WALD_GAUSS_BRIDGE_AUDIT_NOTE.md" in note
+        and "signed_gravity_aps_wald_gauss_bridge_audit.py" in note
+        and "signed_gravity_aps_wald_gauss_bridge_audit.txt" in note,
+    )
+    check(
+        "bridge audit note records not-derived final tag and source-neutral eta",
+        "FINAL_TAG: APS_WALD_GAUSS_BRIDGE_NOT_DERIVED" in bridge_note
+        and "gap-preserving Phi deformation leaves eta source-neutral" in bridge_flat
+        and "desired locked signed source appears only" in bridge_flat
+        and "after adding `chi_eta` to the source action by hand" in bridge_flat,
+    )
+    check(
+        "bridge audit script separates retained positive source from inserted locked table",
+        "retained Wald/Gauss/source-unit normalization: positive, unsigned source" in bridge_script_flat
+        and "APS eta as a spectator topological label: conserved, source-neutral" in bridge_script_flat
+        and "locked APS sign insertion: consequence control only, not a derivation" in bridge_script_flat
+        and "APS_WALD_GAUSS_BRIDGE_NOT_DERIVED" in bridge_script_flat,
+    )
+    check(
+        "bridge audit cache is fresh enough for the packet and confirms the negative bridge verdict",
+        "runner: scripts/signed_gravity_aps_wald_gauss_bridge_audit.py" in bridge_cache
+        and "status: ok" in bridge_cache
+        and "SUMMARY: PASS=14 FAIL=0" in bridge_cache_flat
+        and "FINAL_TAG: APS_WALD_GAUSS_BRIDGE_NOT_DERIVED" in bridge_cache_flat
+        and "The finite audit finds no retained identity" in bridge_cache_flat,
+    )
 
 
 def normalize(vec: np.ndarray) -> np.ndarray:
@@ -222,6 +305,9 @@ def main() -> int:
     print("SIGNED GRAVITY APS-LOCKED SOURCE ACTION PROPOSAL")
     print("  conditional action ansatz; not a physical signed-gravity claim")
     print("=" * 96)
+    print()
+
+    test_exact_source_boundary_manifest()
     print()
 
     chi_p = chi_eta(+1)

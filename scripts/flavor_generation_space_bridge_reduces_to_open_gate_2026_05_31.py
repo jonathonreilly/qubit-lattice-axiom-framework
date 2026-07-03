@@ -16,13 +16,18 @@ VERDICT: closed_modulo_one_named_import. Two findings, both verified here:
     operator-realization side, not the value-construction side.
 
   GAP (the single named import): promoting the INTENSIVE per-fixed-point local Lefschetz density
-    (a summand of the EXTENSIVE global index, which VANISHES on the retained Gamma_5-paired
-    staggered Dirac: eta=0, global sum=0, chi=0) to THE observable. This summand-vs-invariant
+    (distinct from the EXTENSIVE signed global invariant, which VANISHES on the retained
+    Gamma_5-paired staggered Dirac: eta=0, signed global sum=0, chi=0) to THE observable.
+    The unsigned L*(2/9) aggregate is a scale diagnostic, not the invariant. This summand-vs-invariant
     promotion IS the existing origin/main open_gate row lepton_brannen_bae_delta_two_ninths, and
     coincides with the a=0 zero-section pick of retained_no_go koide_q_delta_residual_cohomology.
 
 This runner verifies the algebra of both findings (it does NOT discharge the gap -- by design).
 """
+import hashlib
+import json
+from pathlib import Path
+
 import numpy as np
 
 W = np.exp(2j * np.pi / 3)            # omega = primitive cube root of unity
@@ -30,6 +35,12 @@ I3 = np.eye(3)
 J = np.ones((3, 3))
 GAMMA = (2.0 / 3.0) * J - I3          # chiral grading Gamma_chi = (2/3)J - I
 C = np.array([[0, 0, 1.0], [1, 0, 0], [0, 1, 0]])   # C_3 cyclic shift on generation R^3
+ROOT = Path(__file__).resolve().parents[1]
+LEPTON_CID = "lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26"
+LEPTON_NOTE = "docs/LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md"
+LEPTON_RUNNER = "scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py"
+LEPTON_CACHE = "logs/runner-cache/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.txt"
+THIS_NOTE = "docs/FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31.md"
 
 
 def check(name, cond, detail=""):
@@ -49,6 +60,30 @@ def lefschetz_density(weights):
             denom *= (W ** (k * a) - 1.0)
         total += 1.0 / denom
     return total / 3.0
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def cache_header(path: Path) -> dict[str, str]:
+    text = path.read_text(encoding="utf-8", errors="replace")
+    header, _, _stdout = text.partition("----- stdout -----")
+    out = {"_text": text}
+    for line in header.splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        out[key.strip()] = value.strip()
+    return out
+
+
+def flat(text: str) -> str:
+    return " ".join(text.split())
 
 
 def main():
@@ -117,21 +152,28 @@ def main():
         and np.linalg.norm(H @ GAMMA + GAMMA @ H) > 1.0,
         f"r={r:.4f}; ||[H,G]||={np.linalg.norm(H@GAMMA-GAMMA@H):.1e}; ||{{H,G}}||={np.linalg.norm(H@GAMMA+GAMMA@H):.4f}"))
 
-    # --- Finding D: EXTENSIVE global index vanishes; 2/9 survives only as a non-summed summand -
-    # global Lefschetz sum over L diagonal fixed sites = L * (per-site density)
+    # --- Finding D: signed global index vanishes; 2/9 survives only as a selected summand ----
+    # Unsigned same-orientation aggregate over L diagonal fixed sites = L * (per-site density).
+    # This is a scale diagnostic, not the signed global invariant.
     sums = {L: L * (2.0 / 9.0) for L in (3, 8)}
     intensive_const = all(abs((s / L) - 2.0 / 9.0) < 1e-12 for L, s in sums.items())
     passed.append(check(
-        "D1 EXTENSIVE global sum = L*(2/9) scales with L; INTENSIVE per-site density stays 2/9",
+        "D1 unsigned same-orientation aggregate = L*(2/9) scales with L; intensive per-site density stays 2/9",
         abs(sums[3] - 2.0 / 3.0) < 1e-12 and abs(sums[8] - 16.0 / 9.0) < 1e-12 and intensive_const,
-        f"L=3 -> {sums[3]:.4f}=2/3 ; L=8 -> {sums[8]:.4f}=16/9 ; density L-independent"))
+        f"L=3 -> {sums[3]:.4f}=2/3 ; L=8 -> {sums[8]:.4f}=16/9 ; density L-independent; not the signed invariant"))
     # Gamma_5=(-1)^(x+y+z) pairing => signed spectrum is +/- symmetric => global index/eta = 0
     paired_spectrum = np.array([0.7, -0.7, 1.3, -1.3, 2.1, -2.1])   # any +/- paired set
     eta = np.sign(paired_spectrum).sum()
     passed.append(check(
-        "D2 Gamma_5 +/- pairing => global eta = signed-sum = 0 (so 2/9 is a summand of a VANISHING total)",
+        "D2 Gamma_5 +/- pairing => global eta = signed-sum = 0 (so 2/9 is not a free global invariant)",
         abs(eta) < 1e-12,
         f"signed-sum over a +/- paired spectrum = {eta:.1f}; the global invariant is 0, the local summand is 2/9"))
+    local = 2.0 / 9.0
+    signed_local_sum = sum(sign * local for sign in (1, -1, 1, -1))
+    passed.append(check(
+        "D3 signed local-density pairs cancel: (+2/9)+(-2/9)+(+2/9)+(-2/9)=0",
+        abs(signed_local_sum) < 1e-12,
+        f"signed local sum={signed_local_sum:.1f}; selecting one +2/9 summand is the open readout/promotion premise"))
 
     # --- Finding E: downstream 2/9 -> Koide Q is subsumed in the same gate (readout-class) -----
     # H eigenvalues lam_k = a + 2|b| cos(delta + 2pi k/3). Two readout classes give the SAME masses
@@ -152,10 +194,41 @@ def main():
         f"signed Q const={Qsig.mean():.6f}=2/3; singular-value Q range=[{Qsv.min():.4f},{Qsv.max():.4f}] "
         f"-> 2/9->Q load-bears on the SIGNED readout-class, which is audited_failed on origin/main"))
 
+    # --- Finding F: source-packet inclusion for exact residual matching ----------------------
+    ledger = json.loads((ROOT / "docs" / "audit" / "data" / "audit_ledger.json").read_text())
+    lepton_row = ledger["rows"].get(LEPTON_CID, {})
+    this_note = (ROOT / THIS_NOTE).read_text(encoding="utf-8")
+    lepton_note = (ROOT / LEPTON_NOTE).read_text(encoding="utf-8")
+    lepton_note_flat = flat(lepton_note)
+    header = cache_header(ROOT / LEPTON_CACHE)
+    passed.append(check(
+        "F1 lepton delta=2/9 source packet is audited-clean open_gate, not a phase derivation",
+        lepton_row.get("audit_status") == "audited_clean"
+        and lepton_row.get("effective_status") == "open_gate"
+        and lepton_row.get("runner_path") == LEPTON_RUNNER,
+        f"{LEPTON_CID}: audit={lepton_row.get('audit_status')} effective={lepton_row.get('effective_status')}"))
+    passed.append(check(
+        "F2 downstream note names lepton source packet note, runner, and cache",
+        LEPTON_NOTE in this_note and LEPTON_RUNNER in this_note and LEPTON_CACHE in this_note,
+        "restricted packet includes exact residual note/runner/cache"))
+    passed.append(check(
+        "F3 lepton source packet keeps phase/coefficient/scale open",
+        "does not derive the Brannen phase" in lepton_note_flat
+        and "open gate plus empirical comparator" in lepton_note_flat
+        and "not a retained lepton-mass theorem" in lepton_note_flat,
+        "no downstream promotion of the open comparator"))
+    passed.append(check(
+        "F4 lepton runner cache is SHA-fresh and clean",
+        header.get("runner") == LEPTON_RUNNER
+        and header.get("runner_sha256") == sha256_file(ROOT / LEPTON_RUNNER)
+        and header.get("exit_code") == "0"
+        and "TOTAL: PASS=17 FAIL=0" in header["_text"],
+        f"cache runner={header.get('runner')} status={header.get('status')}"))
+
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
     print("VERDICT: closed_modulo_one_named_import. The generation-space bridge REDUCES to a single")
-    print("named premise -- promoting the intensive per-fixed-point local Lefschetz density 2/9 (a")
-    print("summand of the VANISHING global index) to the physical observable. That premise IS the")
+    print("named premise -- promoting the intensive per-fixed-point local Lefschetz density 2/9")
+    print("(rather than the VANISHING signed global invariant) to the physical observable. That premise IS the")
     print("origin/main open_gate row lepton_brannen_bae_delta_two_ninths (= the a=0 zero-section pick")
     print("of retained_no_go koide_q_delta_residual_cohomology_obstruction). NEW positive content: the")
     print("local-density CONSTRUCTION survives koide_z3_equivariant_anticommuting_no_go (block-diagonal")

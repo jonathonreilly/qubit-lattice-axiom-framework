@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/frontier_frw_c2_entropy_bookkeeping_2026_06_18.py
+runner_sha256: 53a359830ce11f6ee53e760808a439471134891df1aad7dd007c1581e5b5d133
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+FRW C2 SOURCE-FREE ENTROPY BOOKKEEPING
+
+== Part 0: source/status firewall ==
+PASS: C2 note contains boundary phrase: Claim type:** bounded_theorem
+PASS: C2 note contains boundary phrase: Type:** bounded_theorem
+PASS: C2 note contains boundary phrase: Status:** bounded support for finite source-free entropy bookkeeping only
+PASS: C2 note contains boundary phrase: actual_current_surface_status: bounded-support
+PASS: C2 note contains boundary phrase: trace_class: direct_blocker_closure
+PASS: C2 note contains boundary phrase: reachability_to_target: partially_closes
+PASS: C2 note contains boundary phrase: proposal_allowed: false
+PASS: C2 note contains boundary phrase: not an audit result
+PASS: C2 note contains boundary phrase: No new axiom
+PASS: C2 note contains boundary phrase: source-free entropy bookkeeping only
+PASS: C2 note contains boundary phrase: does not derive that the real cosmological era is source-free
+PASS: C2 note contains boundary phrase: does not derive C1
+PASS: C2 note contains boundary phrase: does not derive the Standard Model g_*S table
+PASS: C2 note contains boundary phrase: scripts/frontier_frw_c2_entropy_bookkeeping_2026_06_18.py
+PASS: C2 note contains boundary phrase: logs/runner-cache/frontier_frw_c2_entropy_bookkeeping_2026_06_18.txt
+PASS: C2 note excludes overclaim phrase: Status: retained
+PASS: C2 note excludes overclaim phrase: actual_current_surface_status: retained
+PASS: C2 note excludes overclaim phrase: sets effective status
+PASS: C2 note excludes overclaim phrase: derives C1
+PASS: C2 note excludes overclaim phrase: derives C2
+PASS: C2 note excludes overclaim phrase: derives the real no-injection era
+PASS: C2 note excludes overclaim phrase: derives the g_*S table
+PASS: parent FRW note records C2 phrase: 2026-06-18 C2 entropy-bookkeeping partial bridge
+PASS: parent FRW note records C2 phrase: FRW_C2_SOURCE_FREE_ENTROPY_BOOKKEEPING_BOUNDED_SUPPORT_NOTE_2026-06-18.md
+PASS: parent FRW note records C2 phrase: does not derive that the real leptogenesis-to-CMB window is source-free
+PASS: parent FRW note records C2 phrase: does not derive the Standard Model `g_*S` table
+
+== Part 1: finite source-free internal transfers ==
+PASS: first internal transfer has zero total source ([Fraction(-3, 1), Fraction(2, 1), Fraction(1, 1)])
+PASS: first transfer conserves total comoving entropy
+PASS: second internal transfer has zero total source ([Fraction(4, 1), Fraction(-6, 1), Fraction(2, 1)])
+PASS: second transfer conserves total comoving entropy
+PASS: individual component entropy need not be conserved ([Fraction(11, 1), Fraction(7, 1), Fraction(5, 1)] -> [Fraction(12, 1), Fraction(3, 1), Fraction(8, 1)])
+
+== Part 2: nonzero source/injection boundary ==
+PASS: source vector has nonzero total injection ([Fraction(0, 1), Fraction(2, 1), Fraction(0, 1)])
+PASS: nonzero source changes total comoving entropy
+PASS: changed total equals starting total plus source (25 = 23 + 2)
+
+== Part 3: exact g_*S step bookkeeping ==
+PASS: chosen step has exact rational compensated temperature
+PASS: g_*S T^3 a^3 invariant is conserved across the compensated step
+PASS: uncorrected T proportional a^-1 scaling fails when g_*S changes
+PASS: wrong scaling misses by the g_*S ratio (wrong/invariant=8/27)
+
+== Part 4: conserved charge over entropy bookkeeping ==
+PASS: source-free N_B/S ratio is invariant (N_B/S=1/7)
+PASS: entropy injection changes N_B/S if baryon number is fixed (before=1/7, after=13/99)
+PASS: ratio failure is a C2 source term residual, not arithmetic failure
+
+== Result ==
+Closed by this bridge: finite source-free entropy and g_*S bookkeeping algebra.
+Still open: real no-injection era, g_*S table authority, C1, full FRW closure, audit status.
+
+TOTAL: PASS=41 FAIL=0
+VERDICT: bounded support passes for finite source-free entropy bookkeeping. The real no-injection cosmological era, g_*S table, C1, and audit status remain open.
+
+----- stderr -----
+

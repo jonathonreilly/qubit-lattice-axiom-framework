@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_durability_coarse_preference_2026_06_09.py
+runner_sha256: 6ca33f0f087062179afb0470132600ae3efa1f9cfa584e21b868dc0baf30c366
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.59
+status: ok
+----- stdout -----
+========================================================================================
+DURABILITY: CENTRAL GRANULARITY IS CONDITIONAL; THE WEIGHT IS NOT FIXED
+========================================================================================
+
+----------------------------------------------------------------------------------------
+D1: durability + CPT-covariance fixes the central orbit granularity
+----------------------------------------------------------------------------------------
+  [PASS] in the central sector-label algebra, K-invariant classical functions are one-dimensional on the pair: x1=x2, i.e. functions of the ORBIT label  --  invariant label matrix = Matrix([[x2, 0], [0, x2]])
+  [PASS] every sampled K-covariant registration channel gives identical K-invariant orbit readout on e1 and e2; sector distinctions are frame-variant, not central durable records  --  max distinguishability = 0.0e+00
+  [PASS] a sector-resolved register is K-frame-VARIANT (its content flips under the conjugation), an orbit register is exactly K-invariant: only orbit content is 'fixed once registered' in the frame-independent sense the axiom requires
+  [PASS] framework input: exact lattice CPT supplies the K/CPT conjugation; the registration channel being K/CPT-covariant is an explicit readout-context condition. Conditional theorem: durable central record content is orbit content; no registration dynamics or weighting rule is supplied here  --  the coarse-cell preference at the CONTENT level is conditionally derived
+
+----------------------------------------------------------------------------------------
+D2: durability provably does NOT fix the weight (explicit family)
+----------------------------------------------------------------------------------------
+  [PASS] ALL members of the family have perfectly durable, orbit-labeled records (absorbing registers; D1 granularity holds throughout)
+  [PASS] yet the doublet/singlet record weight varies continuously with the SOURCE measure: outcome-fed source -> weight ratio 1 (orbit cell); fiber-fed source -> weight ratio 2 (sector cell); intermediate q -> intermediate  --  Od/Os at q=0,0.5,1: 1.000, 1.400, 2.000
+  [PASS] => DURABILITY DOES NOT FIX THE WEIGHT: both endpoint cells and intermediate weights are realized by fully durable registration; the weight is set by the source-measure class, not by durability alone  --  'skip the admission' is not justified by durability alone
+
+----------------------------------------------------------------------------------------
+D3: the net boundary
+----------------------------------------------------------------------------------------
+  [PASS] DERIVED (new, conditional): the GRANULARITY half of 'preferred outcome' -- durable central record content is orbit content in a K/CPT-covariant readout
+  [PASS] NOT DERIVED: the WEIGHT half -- the occupancy factor is source-measure class, untouched by durability
+  [PASS] candidate support only: MAXENT-R is a possible future source-measure principle studied by the companion runner; this note does not adopt it as an admission
+  [PASS] honest framing: 'skip the admission entirely' = NO; this note lands only the conditional granularity theorem and the durability-does-not-fix-weight boundary
+
+========================================================================================
+SUMMARY: PASS=11 FAIL=0
+========================================================================================
+
+----- stderr -----
+

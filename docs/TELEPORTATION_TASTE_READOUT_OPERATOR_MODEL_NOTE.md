@@ -248,3 +248,17 @@ for the proof. The closure note supplies bounded algebraic theorem support
 for the operator-factorization content of this note; the physical-implementation
 gate (native apparatus blind to environment labels, noisy readout,
 dynamical preparation, heralded branch protocol) remains open.
+
+## Downstream Boundary Alignment (2026-06-13)
+
+This runner now fails unless the audited downstream teleportation boundary
+stack is present. The alignment directly ties this operator-factorization
+artifact to the retained-axis operator-algebra closure and apparatus-dynamics
+boundary, and indirectly to the causal-channel, measurement-record,
+resource-generation, resource-fidelity, cross-encoding, three-register,
+no-signaling, 3D-operator, and conclusion-boundary anchors.
+
+The result remains a finite operator audit, not a detector model. It preserves
+the useful negative result for raw native parity in 2D/3D and the bounded
+positive result for retained-axis operators, while leaving physical readout,
+noise, heralding, matter transport, and nature-grade closure open.

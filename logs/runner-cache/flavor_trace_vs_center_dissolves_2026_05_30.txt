@@ -1,27 +1,62 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_trace_vs_center_dissolves_2026_05_30.py
-runner_sha256: 00493ff249ddcfe7bb7fdcbba8045fa3d566ffb5b3dd48a650ddc12d841b047f
+runner_sha256: 4517ad5deac6e23ce1615753c061432c34aba3af1aa33a01e6a71b486a52c3b0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.94
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
-[PASS] D1 signed/Hermitian (doublet mult 2 = trace): Q=1/3+(2/3)r exact; Q=2/3<=>r=1/2
-       Q=(a**2 + 2*b**2)/(3*a**2); root r=[1/2]
-[PASS] D2 eigenvalue-as-mass readout: Q=2/3 at r~0.916 (clean 1/2 needs signed readout)
-       r=0.9161
-[PASS] D3 center/block-count w1=1: Q=1/3+(1/3)r -> Q=2/3 at r=1 (panel MAP inverted)
-       center reading gives r=1, not 1/2
-[PASS] D4 principled tests miss r=1/2: Fisher->0.0147, APS gap->1, heat-extremize->0/1
-       classical Fisher r=0.0147=17/2-6sqrt2; APS doublet gap closes at r=1; r=1/2 only via imposed 3a^2=6b^2
+=== D1. signed/Hermitian trace formula ===
+[PASS] signed trace/dimension formula is Q = 1/3 + (2/3) r
+       Q_trace=2*r/3 + 1/3; Q=2/3 roots=[1/2]
+[PASS] the trace denominator is fixed by Tr(H)=3a and doublet multiplicity two
+       lambda_s=a + 2*b, lambda_d=a - b
 
-SCORECARD PASS=4 FAIL=0
-VERDICT: trace-vs-center fork INVERTED & largely DISSOLVED. The empirical Koide observable
-is TRACIAL (doublet counted with its real multiplicity 2); on it Q=1/3+(2/3)r is exact and
-Q=2/3 <=> r=1/2 (standard). No non-tracial center-state is needed or physical. NO principled
-native test forces r=1/2 (Fisher 0.0147, APS 1, heat-extremize 0/1); r=1/2 = FREE Fourier
-modulus matched to data. Sharpened residual: the SIGNED/Hermitian (H=iD Dirac) readout class
-makes Q=1/3+(2/3)r exact (native); the MODULUS r=|b|^2/a^2 itself stays unforced.
+=== D2. center/block-count inventory formula ===
+[PASS] center/block-count formula is Q_block = 1/3 + (1/3) r
+       Q_block=r/3 + 1/3; Q=2/3 roots=[1]
+[PASS] center/block-count reaches Q=2/3 at r=1, not r=1/2
+       Q_block(1/2)=1/2, Q_block(1)=2/3
+
+=== D3. eigenvalue-as-mass separated from singular-value readout ===
+[PASS] eigenvalue-as-mass Q=2/3 root is exact
+       x=b/a=1/4 + sqrt(2)/2; r=x^2=sqrt(2)/4 + 9/16 ~= 0.916053
+[PASS] the squared equation is 16 x^2 - 8 x - 7 = 0 on the positive chamber
+       x_star ~= 0.957107, so all two-level eigenvalues remain nonnegative
+[PASS] this is not a global singular-value readout claim
+       singular-value readout uses |lambda_k| across sign/phase chambers; this packet only isolates the positive eigenvalue-as-mass solve
+
+=== D4. Fisher and Bures/SLD sector balances ===
+[PASS] classical unnormalized Fisher balance lands r = 17/2 - 6 sqrt(2)
+       r_Fisher=17/2 - 6*sqrt(2) ~= 0.014719
+[PASS] Bures/SLD normalized spectral sector balance lands r = 1/16
+       p_s=2*x/3 + 1/3, p_d(each)=1/3 - x/3, r_SLD=1/16
+[PASS] Bures/SLD r=1/16 is not the Koide r=1/2 point
+       Q_trace(1/16)=3/8
+
+=== D5. heat/Seeley coefficient endpoint behavior ===
+[PASS] Seeley coefficient Tr(H^2) has no interior extremum in x in (0,1)
+       d/dx=12*x
+[PASS] Seeley coefficient Tr(H^4) has no interior extremum in x in (0,1)
+       d/dx=72*x*(x**2 + x + 1)
+[PASS] Seeley coefficient Tr(H^6) has no interior extremum in x in (0,1)
+       d/dx=36*x*(11*x**4 + 25*x**3 + 30*x**2 + 10*x + 5)
+[PASS] Seeley coefficient Tr(H^8) has no interior extremum in x in (0,1)
+       d/dx=48*x*(43*x**6 + 147*x**5 + 231*x**4 + 175*x**3 + 105*x**2 + 21*x + 7)
+[PASS] heat-trace coefficient extrema are endpoint-only in this restricted packet
+       Theta_t series through t^4: 3 + t*(-6*x**2 - 3) + t**2*(9*x**4 + 12*x**3 + 18*x**2 + 3/2) + t**3*(-11*x**6 - 30*x**5 - 45*x**4 - 20*x**3 - 15*x**2 - 1/2) + t**4*(43*x**8/4 + 42*x**7 + 77*x**6 + 70*x**5 + 105*x**4/2 + 14*x**3 + 7*x**2 + 1/8) + O(t**5)
+
+=== D6. scope firewall ===
+[PASS] no observed mass value or new axiom is used
+       all checks are exact finite C3 algebra/source-packet formulas
+[PASS] physical selector remains open
+       block-count vs trace, signed/Hermitian vs singular-value, and r=1/2 modulus selection are not closed here
+
+SCORECARD PASS=17 FAIL=0
+VERDICT: restricted bounded support. The signed trace formula, center/block-count
+inventory formula, Bures/SLD r=1/16, endpoint heat/Seeley behavior, and
+positive-chamber eigenvalue-as-mass root are instantiated exactly. The physical
+readout, block-count selector, and Fourier modulus remain open residuals.
 
 ----- stderr -----
 

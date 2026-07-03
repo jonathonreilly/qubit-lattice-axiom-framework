@@ -1,25 +1,28 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_retention_law_is_A2plus_2026_05_31.py
-runner_sha256: bf2d4873d70b93a2e6b6e9ef077185f48f059907c8ef2fb2efb8efc1a1a8e752
+runner_sha256: c17545b5d4587fddbe812b14d021d5ff9d1324d7735a5b5b9060d8630b65f4a2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.23
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
-[PASS] R2a C3-invariant onsite diagonal sources are scalar; supplied Q gives Q(0)=2/3 and Q(-1/3)=1
-       solve -> {a: c, b: c}; Q(0)=2/3, Q(-1/3)=1
-[PASS] R2b Z=2P_+-I and S_Q1=I-Z/3 have the displayed d=3 coefficients
-       diag(S_Q1)=10/9 and offdiag(S_Q1)=-2/9=-2/d^2
-[PASS] R3a onsite diagonal algebra intersects the C3 circulant algebra only in scalars
-       D intersect circulant solve -> {x: z, y: z}
-[PASS] R3b sample circulant mass splitting is off-diagonal and onsite descent erases it to a scalar
-       offdiag entries include [0.6]; descent=1.0*I
+[PASS] R1 C3-invariant onsite diagonal sources are scalar
+       solve -> {a: c, b: c}
+[PASS] R2 supplied Q(z) coordinates give Q(0)=2/3 and Q(-1/3)=1
+       Q(0)=2/3, Q(-1/3)=1
+[PASS] R3 Z=2P_+-I and S_Q1=I-Z/3 have the displayed d=3 coefficients
+       diag(S_Q1)=10/9 and offdiag(S_Q1)=-2/9
+[PASS] R4 onsite diagonal algebra intersects the C3 circulant algebra only in scalars
+       solve -> {x: z, y: z}
+[PASS] R5 diagonal onsite descent erases sample off-diagonal circulant splitting
+       descent=1.0*I
+[PASS] R6 source guards keep Q values as supplied coordinates and source-locality open
 
-SCORECARD PASS=4 FAIL=0
-VERDICT: BOUNDED-SUPPORT finite conditional algebra only. If an extra source-locality/readout
-premise selects onsite diagonal sources, the displayed algebra gives Q=2/3; the projected
-z=-1/3 domain gives Q=1. The runner does not prove A2-to-source-locality and does not claim
-that the missing source-locality bridge is accepted.
+SCORECARD PASS=6 FAIL=0
+VERDICT: bounded support for finite supplied-onsite algebra only.
+Q(0)=2/3 is a coordinate value of the supplied Q(z) formula, not a
+framework-native charged-lepton value. The physical source-locality/
+readout bridge remains open.
 
 ----- stderr -----
 

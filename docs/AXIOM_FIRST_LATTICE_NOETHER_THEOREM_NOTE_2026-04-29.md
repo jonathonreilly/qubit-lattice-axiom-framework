@@ -1,13 +1,14 @@
 # Axiom-First Lattice Noether's Theorem on Cl(3) ⊗ Z^3
 
-**Date:** 2026-04-29 (originally); 2026-05-03 (sublattice repair); 2026-05-10 (gate-recategorization repair); 2026-05-10 (g_bare-removal repair); 2026-05-25 (Step 4b boundary repair)
+**Date:** 2026-04-29 (originally); 2026-05-03 (sublattice repair); 2026-05-10 (gate-recategorization repair); 2026-05-10 (g_bare-removal repair); 2026-05-25 (Step 4b boundary repair); 2026-06-06 (onsite-generator scope, U(1) sign-directness, and KS chirality/parity bridge-support repairs); 2026-06-15 (registered-parent cycle-edge rescope)
 **Status:** source-note proposal — author-declared `bounded_theorem`; effective
 status set only by the independent audit lane.
 **Claim type:** bounded_theorem
 **Loop:** `axiom-first-foundations`
 **Cycle:** 5 (Route R5)
 **Runner:** `scripts/axiom_first_lattice_noether_check.py`
-**Log:** `outputs/axiom_first_lattice_noether_check_2026-05-25.txt`
+**Log:** `outputs/axiom_first_lattice_noether_check_2026-06-06.txt`
+**Runner cache:** `logs/runner-cache/axiom_first_lattice_noether_check.txt`
 
 ## Authority disclaimer
 
@@ -16,6 +17,76 @@ by the audit pipeline only after the independent audit lane reviews the
 claim, dependency chain, and runner. The `claim_type`, scope, named
 admissions, and bounded classification are author-proposed; the audit
 lane has full authority to retag, narrow, or reject the proposal.
+
+## KS chirality/parity bridge-support repair (2026-06-06)
+
+The latest conditional audit identified that the Noether algebra closes on the
+admitted Kawamoto-Smit staggered operator, but the restricted packet did not
+provide a source-contained bridge for the KS phase/chirality sign surface.
+
+This source-packet repair adds a narrow bridge for that specific sign surface:
+
+- [`STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
+  proves that the scalar nearest-neighbor edge-flip grading on the `Z^3`
+  coordinate graph is unique up to global sign and equals
+  `epsilon(x)=(-1)^(x_1+x_2+x_3)`, then combines it with the A1 central
+  pseudoscalar `Omega_global=sigma_1 sigma_2 sigma_3=i I` to give
+  `Omega(x)=epsilon(x) Omega_global`.
+- [`ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md`](ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md)
+  supplies the companion exact spin-diagonal connection identity
+  `T(x)^dag sigma_mu T(x+e_mu)=eta_mu(x) I_2` for the displayed KS phases.
+
+This does **not** promote the full staggered-Dirac realization gate and does
+not remove every admitted carrier boundary. The broader Grassmann/CAR
+realization, full kinetic-operator selection, and species-label interpretation
+remain governed by their own rows and by independent audit. The repair only
+removes the avoidable source-packet gap where this Noether row used the KS
+phase/chirality sign surface without a same-packet derivation/citation.
+
+## Onsite-generator scope repair (2026-06-06)
+
+The 2026-06-06 repair removes a remaining overbroad reading of the
+general Noether statement. The local bilateral current (5) is proved
+only for **onsite/internal infinitesimal generators**: generators whose
+action at site `x` is `(T^A chi)_x = t^A chi_x` (or the finite internal
+matrix analogue at the same lattice site). It is not asserted for
+arbitrary site-mixing matrices `T^A_{xy}`. Site-mixing symmetries, if
+needed later, require a separate envelope-localization theorem.
+
+The repair also makes the U(1) sign convention explicit. With the
+phase generator `t = +i`, the coefficient obtained from the local-alpha
+variation is the imaginary generator current `J_phase = (i/2) eta B`.
+This note defines the displayed real fermion-number current by
+`J_real := i J_phase = -(1/2) eta B`. Choosing the opposite generator
+`t = -i` flips the displayed sign and the charge orientation, not the
+conservation statement.
+
+Runner exhibit `E5` is upgraded from a sampled lattice check plus a
+scalar placeholder to an arbitrary-bilinear symbolic identity:
+for independent bilinears `B_+ = chibar_x t chi_{x+mu}` and
+`B_- = chibar_{x+mu} t chi_x`, it verifies exactly that
+`i * (i/2) * (B_+ + B_-) = -1/2 * (B_+ + B_-)`.
+
+## U(1) sign-directness repair (2026-06-06)
+
+The same 2026-06-06 repair adds a separate arbitrary-field check,
+`E5b`, so the U(1) specialization is not visible only through a
+propagator expectation surface where some symmetric link-bilinear sign
+errors can cancel:
+
+- it samples arbitrary complex finite fields `chi`, `chibar` and an
+  arbitrary real local envelope `alpha_x`;
+- it computes the local U(1) variation of the staggered action directly,
+  `delta S = (-i alpha chibar) M chi + chibar M (i alpha chi)`;
+- it independently computes the bilateral plus-sign expression in (7c)
+  with `T = i I`;
+- it verifies that the direct variation and the bilateral plus-sign
+  current agree to roundoff, while the historical minus-sign current is
+  separated by an order-one residual on the same fields.
+
+This does not change the theorem scope or remove the admitted
+staggered-carrier boundary. It only makes the U(1) `(5) -> (4)` sign
+closure independently visible to the runner.
 
 ## Step 4b boundary repair (2026-05-25)
 
@@ -114,10 +185,11 @@ here. The U(1) phase result (N2) is unaffected by the repair.
 This note derives, on the current public framework memo
 `MINIMAL_AXIOMS_2026-05-20.md` plus the
 explicitly admitted staggered-Dirac realization gate, a lattice analogue
-of Noether's theorem: for any one-parameter Lie symmetry of the admitted
-canonical action that maps Grassmann variables to Grassmann variables,
-there is an explicit *conserved lattice current* `J^μ_x` with discrete
-divergence
+of Noether's theorem for the two generator classes proved here:
+onsite/internal one-parameter Lie symmetries of the admitted canonical
+action, and the separate discrete `(2Z)^3` two-step translation Ward
+identity. For an onsite/internal Lie symmetry, there is an explicit
+*conserved lattice current* `J^μ_x` with discrete divergence
 
 ```text
     ∂^L_μ J^μ_x   :=   Σ_μ  ( J^μ_x  -  J^μ_{x - μ̂} )   =   0  on shell.   (1)
@@ -148,11 +220,13 @@ structural admission close, the row becomes eligible for retagging as
 
 After this note, any package lane that quotes "the canonical action
 has a conserved current of type X" can cite the U(1) current (4) and
-the general local-infinitesimal current (5). Any downstream use of the
-translation branch must preserve the narrower Step 4b statement: exact
-two-step Ward identity on the admitted staggered carrier, with the
-canonical density (3) support-only unless a later audit-clean proof derives
-it from the two-shift Ward identity for arbitrary on-shell fields.
+the onsite/internal local-infinitesimal current (5). Any downstream use
+of the translation branch must preserve the narrower Step 4b statement:
+exact two-step Ward identity on the admitted staggered carrier, with
+the canonical density (3) support-only unless a later audit-clean proof
+derives it from the two-shift Ward identity for arbitrary on-shell
+fields. Site-mixing infinitesimal symmetries are not licensed by this
+row.
 
 ## Hypothesis set used
 
@@ -191,6 +265,16 @@ the **named admitted carrier inputs** recorded below:
   pending packaging. The action is invariant under both `T_{2a}`
   (two-site shift acting on lattice indices) and global `U(1)` phase
   (acting as `χ → e^{iα} χ`, `χ̄ → e^{-iα} χ̄`).
+
+  The specific scalar chirality/parity sign and spin-diagonal KS phase
+  surface used by `M_KS` is no longer left as an uncited free premise in this
+  packet: the 2026-06-06 chirality/parity bridge and eta-holonomy base-flux
+  note cited above supply a source-side exact-support derivation of
+  `epsilon(x)=(-1)^(x_1+x_2+x_3)` and
+  `eta_1=1`, `eta_2=(-1)^x_1`, `eta_3=(-1)^(x_1+x_2)`.
+  Independent audit still decides whether those bridge notes are sufficient
+  authority for this row. The full staggered-Dirac realization gate remains
+  outside this Noether note's author-side status authority.
 
 **Note on `g_bare` (not a load-bearing admission of this note).** The
 `g_bare = 1` canonical SU(3) normalization recategorized from the prior
@@ -266,9 +350,10 @@ with lattice divergence `∂^L_μ J^μ_x = 0` on shell. Integration over
 a Cauchy surface (lattice time slice) gives the conserved fermion
 number `Q = Σ_x χ̄_x χ_x`.
 
-**(N3) General lattice Noether identity.** For any infinitesimal
-symmetry `δ_α χ_x = α^A T^A_{xy} χ_y` (and the conjugate variation
-`δ_α χ̄_x = -α^A χ̄_z (T^A)_{zx}`) of the canonical action with
+**(N3) Onsite/internal lattice Noether identity.** For any
+onsite/internal infinitesimal symmetry
+`δ_α χ_x = α^A t^A χ_x` (and conjugate variation
+`δ_α χ̄_x = -α^A χ̄_x t^A`) of the canonical action with
 nearest-neighbour staggered hop `M_{x, x±μ̂} = ±(1/2) η_μ(x)`, the
 on-shell conserved current splits over the two staggered-hop
 directions and reads
@@ -278,16 +363,17 @@ directions and reads
                                                                     (5)
 ```
 
-where `T̂^A` is the field-index action of the symmetry generator
-(`T̂^A χ`)_x := T^A_{xy} χ_y (suppressing summation), and the
-two-term structure `χ̄_x χ_{x+μ̂} + χ̄_{x+μ̂} χ_x` arises from the
-**bilateral staggered hop** (forward `M_{x,x+μ̂}` and backward
+where `T̂^A` denotes the same onsite/internal matrix `t^A` acting on
+the field component at the displayed site. The two-term structure
+`χ̄_x χ_{x+μ̂} + χ̄_{x+μ̂} χ_x` arises from the **bilateral
+staggered hop** (forward `M_{x,x+μ̂}` and backward
 `M_{x,x-μ̂} = -M_{x,x+μ̂}` reindexed with `x' = x - μ̂`). The proof
-of the bilateral form is given explicitly in Step 2 below.
+of the bilateral form is given explicitly in Step 2 below. Arbitrary
+site-mixing generators `T^A_{xy}` are outside this formula's scope.
 
 The proof of (N2) is the specialisation of (N3) to the U(1) phase
-generator (clean infinitesimal-Lie substitution into (5); runner E5
-verifies). The proof of (N1) follows the exact localized two-step Ward
+generator (clean onsite/internal infinitesimal-Lie substitution into
+(5); runners E5 and E5b verify). The proof of (N1) follows the exact localized two-step Ward
 route in Step 4b because two-site translation is a *discrete* symmetry
 of `M_KS`, not an infinitesimal Lie generator. Runner E7 verifies the
 field-level identity (3a) on a nondegenerate `L=6` block; runner E6 is
@@ -308,41 +394,53 @@ identity (3a), while the canonical density (3) is support-only until a
 separate audit-clean proof derives it from the two-shift Ward identity for
 arbitrary on-shell fields.
 
+**Site-mixing boundary.** Formula (5) must not be read as a theorem for
+an arbitrary lattice-index matrix `T^A_{xy}`. The local-alpha promotion
+used below assigns one envelope value to each lattice site; for
+site-mixing `T^A_{xy}` a single factor `(alpha_y - alpha_x)` no longer
+captures all bilinear legs without a separate locality/envelope theorem.
+This note supplies no such theorem.
+
 ## Proof
 
 The proof is the standard variational Noether argument adapted to
 the finite Grassmann lattice action.
 
-### Step 1 — variation of the action under an infinitesimal symmetry
+### Step 1 — variation of the action under an onsite/internal infinitesimal symmetry
 
-Write `δχ_x = α^A T^A_{xy} χ_y` with `α^A` infinitesimal. The
+Write `δχ_x = α^A t^A χ_x` with `α^A` infinitesimal and `t^A`
+acting only on the finite internal field component at the same lattice
+site. The conjugate variation is `δχ̄_x = -α^A χ̄_x t^A`. The
 variation of the action `S_F = χ̄ M χ` is
 
 ```text
-    δS_F  =  α^A  ( χ̄_x  T^A_{xy}  M_yz  χ_z   +   χ̄_x  M_xy (-T^A_{yz})  χ_z ).
+    δS_F  =  α^A Σ_{x,y} χ̄_x ( M_xy t^A - t^A M_xy ) χ_y.
 ```
 
-For `T^A` to be a *symmetry*, the variation must vanish for arbitrary
-χ̄, χ:
+For `t^A` to be an onsite/internal *symmetry*, the variation must
+vanish for arbitrary χ̄, χ:
 
 ```text
-    [ T^A , M ]_{xz}   =   T^A_{xy} M_{yz} - M_{xy} T^A_{yz}   =   0.    (6)
+    [ M_xy , t^A ]   =   M_xy t^A - t^A M_xy   =   0
+    for every nonzero hop/local block M_xy.                                (6)
 ```
 
-This is the symmetry condition.
+This is the symmetry condition for this row's local-current theorem.
+The scalar staggered hop and the U(1) generator `t = i` satisfy it
+immediately. A site-mixing generator is not covered by (6).
 
 ### Step 2 — promote `α` to a slowly-varying lattice field
 
 Now allow `α^A` to depend on the lattice site: `α^A → α^A_x`. The
-variation of the action under `δχ_y = α^A_y T^A_{yz} χ_z` and
-`δχ̄_x = -α^A_x χ̄_z (T^A)_{zx}` reads
+variation of the action under `δχ_y = α^A_y t^A χ_y` and
+`δχ̄_x = -α^A_x χ̄_x t^A` reads
 
 ```text
     δS_F[α(x)]
-      = Σ_{x,y,z} ( α^A_y - α^A_x )  χ̄_x  M_{xy}  T^A_{yz}  χ_z       (7a)
+      = Σ_{x,y} ( α^A_y - α^A_x )  χ̄_x  M_{xy}  t^A  χ_y             (7a)
 ```
 
-(the constant-α piece `α (T^A M - M T^A)` vanishes by the symmetry
+(the constant-α piece `α (M t^A - t^A M)` vanishes by the symmetry
 condition (6)).
 
 For the canonical staggered hop `M_{x, x+μ̂} = +(1/2) η_μ(x)` and
@@ -378,15 +476,17 @@ Combining the forward and (reindexed) backward pieces:
 Identifying the coefficient of the discrete forward derivative
 `(∂^L_μ α^A)_x = α^A_{x+μ̂} - α^A_x`, the conserved current
 `J^{μ,A}_x` is the **bilateral form (5)** above. This is the explicit
-algebraic derivation requested by the review follow-up.
+algebraic derivation requested by the review follow-up, now restricted
+to the onsite/internal generator class for which the local-envelope
+calculation is valid.
 
 ### Step 3 — on-shell conservation
 
 When the equations of motion `(M χ)_x = 0` and `(χ̄ M)_x = 0` are
 satisfied (i.e. classical solutions of the Grassmann action), the
-"bulk" piece of `δS_F[α(x)]` vanishes for *any* `α^A_x`, including
-constant `α^A`. By global symmetry (`α^A` constant), the action
-itself is invariant: `δS_F[constant α] = 0`.
+"bulk" piece of `δS_F[α(x)]` vanishes for the onsite/internal
+variation, including constant `α^A`. By global symmetry (`α^A`
+constant), the action itself is invariant: `δS_F[constant α] = 0`.
 
 Conversely, for non-constant `α^A_x`, the bulk piece still vanishes
 on shell, so
@@ -402,7 +502,7 @@ test field), we obtain
     ∂^L_μ J^{μ,A}_{x_0}   =   0   on shell.                          (10)
 ```
 
-This is the lattice Noether identity.
+This is the onsite/internal lattice Noether identity.
 
 ### Step 4 — specialisation to `(2Z)^3` sublattice translation and U(1) phase
 
@@ -418,7 +518,7 @@ a multiple of identity). Substituting into the bilateral (5):
 
 The `i` factor is the imaginary phase generator. The fermion-number
 current (4) is the corresponding **real** charge current, related by
-the convention `J^μ_x [real] := -i · J^μ_x [imaginary phase generator]`,
+the convention `J^μ_x [real] := i · J^μ_x [imaginary phase generator]`,
 giving
 
 ```text
@@ -427,6 +527,10 @@ giving
 ```
 
 exactly as stated in (N2). The substitution closes algebraically.
+With the opposite phase-generator convention `t = -i`, the displayed
+current changes sign; this is only the orientation convention for the
+conserved charge. The conservation law and the charge-sector
+decomposition are unchanged.
 
 #### Step 4b — `(2Z)^3` sublattice translation → exact two-step Ward identity
 
@@ -503,14 +607,17 @@ an explicit source theorem for the KS-phase momentum-density form.
 #### Step 4c — combined: closure of (5) → (4) and two-step Ward identity
 
 The bilateral (5) form, derived in Step 2 from the local-α expansion
-of the canonical action, specialises to (4) under U(1) phase
-substitution (a clean Lie-generator substitution; runner E5 confirms
-algebraically). The `(2Z)^3` sublattice translation case is handled by
-the exact localized two-step Ward identity (3a), not by identifying
-(3) with a literal specialization of (5). The U(1) branch remains a
-closed local-current statement on the admitted carrier; the
-translation branch is an exact Ward identity with (3) explicitly scoped
-as support-only. ∎
+of the canonical action for onsite/internal generators, specialises to
+(4) under U(1) phase substitution (a clean Lie-generator substitution;
+runner E5 confirms algebraically, including the arbitrary-bilinear sign
+identity for the real-current convention; runner E5b verifies by direct
+arbitrary-field action variation that the plus-sign bilateral form is
+the one selected by the local-envelope calculation). The `(2Z)^3`
+sublattice translation case is handled by the exact localized two-step
+Ward identity (3a), not by identifying (3) with a literal specialization
+of (5). The U(1) branch remains a closed local-current statement on the
+admitted carrier; the translation branch is an exact Ward identity with
+(3) explicitly scoped as support-only. ∎
 
 ### Step 5 — why one-site shifts are not pure translations
 
@@ -579,26 +686,30 @@ in the anomaly-forced 3+1 row — is the next layer above the
 classical Noether identity here. This note does not claim to
 discharge anomaly cancellation.
 
-## Honest status (post-2026-05-25 Step 4b boundary repair)
+## Honest status (post-2026-06-06 onsite-generator scope repair)
 
 **Author-proposed bounded theorem on the admitted staggered/Grassmann
-carrier.** (N2) and the local-infinitesimal part of (N3) are proved by
-the standard variational argument adapted to the finite Grassmann
-staggered action. (N1) is narrowed to the exact localized Ward identity
-(3a) for the `(2Z)^3` central two-step generator. One named open gate is
-admitted explicitly per `MINIMAL_AXIOMS_2026-05-20.md`: the
-staggered-Dirac realization gate (carrier of the action `M_KS`). The
-`g_bare = 1` canonical-normalization gate, formerly admitted alongside,
-is **removed** from this note's load-bearing input list per the
-2026-05-10 audit verdict (Noether identities (N1)–(N3) are
-quantitatively `g_bare`-independent).
+carrier.** (N2) and the onsite/internal local-infinitesimal part of
+(N3) are proved by the standard variational argument adapted to the
+finite Grassmann staggered action. The row does not prove a
+site-mixing local-current theorem. (N1) is narrowed to the exact
+localized Ward identity (3a) for the `(2Z)^3` central two-step
+generator. One named open gate is admitted explicitly per
+`MINIMAL_AXIOMS_2026-05-20.md`: the staggered-Dirac realization gate
+(carrier of the action `M_KS`). The `g_bare = 1`
+canonical-normalization gate, formerly admitted alongside, is
+**removed** from this note's load-bearing input list per the 2026-05-10
+audit verdict (Noether identities (N1)–(N3) are quantitatively
+`g_bare`-independent).
 
 **Sub-claim status:**
 
 - **(N2) U(1) fermion-number current.** The bilateral form (5)
-  specialises cleanly to (4) by infinitesimal Lie-generator
-  substitution. Runner E5 verifies `(5) → (4)` to machine precision.
-  **Closed form on the admitted staggered carrier.**
+  specialises cleanly to (4) by onsite/internal infinitesimal
+  Lie-generator substitution. Runner E5 verifies `(5) → (4)` to
+  machine precision and includes an arbitrary-bilinear symbolic sign
+  check for the real-current convention. **Closed form on the admitted
+  staggered carrier.**
 - **(N1) `(2Z)^3` sublattice two-step Ward identity.** Two-site
   translation is a *discrete* symmetry. Runner E2 verifies the symmetry
   condition for `M_KS` under two-site shifts. Runner E7 verifies the
@@ -607,12 +718,13 @@ quantitatively `g_bare`-independent).
   massless nullspace fields. The canonical density (3) is support-only;
   runner E6 no longer carries theorem status for arbitrary-field
   translation-current closure.
-- **(N3) General lattice Noether identity.** The bilateral (5) is
-  the conserved current for a local *infinitesimal Lie* generator. For
-  the discrete two-step generator, Step 4b supplies the separate
-  localized Ward identity (3a); it does not identify (3) as a literal
-  specialization of (5). Runner E5 + E7 jointly confirm the two regimes
-  on the admitted staggered carrier.
+- **(N3) Onsite/internal lattice Noether identity.** The bilateral (5)
+  is the conserved current for a local *onsite/internal infinitesimal
+  Lie* generator. It is not a theorem for arbitrary site-mixing
+  `T^A_{xy}`. For the discrete two-step generator, Step 4b supplies the
+  separate localized Ward identity (3a); it does not identify (3) as a
+  literal specialization of (5). Runner E5 + E7 jointly confirm the two
+  regimes on the admitted staggered carrier.
 
 **When admitted gates close.** When
 `MINIMAL_AXIOMS_2026-05-20.md`'s
@@ -673,21 +785,18 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   partition with per-site `(χ_x, χ̄_x)` generators, per-site Fock
   dim 2, and the Berezin determinant readout. Load-bearing for the
   Step 1-3 variational derivation of (5). Added 2026-05-24 rewire
-  repair (replaces gate-alias dep per
-  `STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`
-  line 33 endorsement).
+  repair, replacing the old gate-alias dependency per the
+  gate-closure synthesis endorsement.
 
 The historical parent-identity alias
-`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (currently
-`audited_renaming`) is no longer cited as a load-bearing one-hop dep;
-it is backticked here as a navigational reference only, per the
-rewire endorsement in
-`STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`
-line 33. See the §"Admitted context inputs" block below for the
-explicit residual `KS-phase-form` structural admission that remains
-on the staggered carrier; this residual is not currently supplied by
-any retained substep narrow theorem and is named here rather than
-silently imported from the gate alias. The chain-pending JW bridge
+for the staggered-Dirac realization gate is no longer
+cited as retained one-hop authority for the finite-Grassmann algebra;
+that algebra is supplied by the substep-1 narrow theorem above, per the
+rewire endorsement in the gate-closure synthesis note. The gate alias
+is cited below only as the registered Tier-A
+carrier route for the residual `KS-phase-form` structural admission,
+not as retained authority and not as closure of that residual. The
+chain-pending JW bridge
 `STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`
 is intentionally not cited as a load-bearing one-hop dependency here
 until its pending chain closes.
@@ -703,14 +812,13 @@ anticommutation `(G1)-(G3)`, Berezin integration rules, per-site Fock
 dim 2 — the entire algebraic surface used by the Step 1-3 variational
 derivation of (5)) is supplied by the retained substep-1 Grassmann narrow theorem
 listed below; the historical parent-identity gate alias
-`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (currently
-`audited_renaming`) is no longer cited as a load-bearing one-hop dep
-and is backticked below as a navigational reference only, per the
-explicit rewire endorsement in
-`STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`
-line 33 ("downstream rows with substep-specific needs should cite the
+for the staggered-Dirac realization gate is not cited as
+retained one-hop authority for that finite-Grassmann algebra. It is
+cited below only as the registered Tier-A carrier route for the
+residual `KS-phase-form` input, per the explicit rewire endorsement
+that downstream rows with substep-specific needs should cite the
 relevant `STAGGERED_DIRAC_SUBSTEP{1,2,3,4}_*` retained theorems
-directly rather than this gate alias").
+directly rather than this gate alias.
 
 **Load-bearing one-hop dep (retained):**
 
@@ -736,17 +844,21 @@ directly rather than this gate alias").
   quantum number) and C3 (compatibility with reflection-positivity
   superselection), but this rewire does not consume it as audit authority.
 
-**Historical navigational reference (NOT a load-bearing dep):**
+**Registered Tier-A carrier route (historical context, not a current
+citation-graph dependency):**
 
-- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` —
-  parent-identity gate alias, currently `audited_renaming`. Backticked
-  to break the unresolved-dep edge that previously blocked this row's
-  audit retagging. The load-bearing finite-Grassmann content is supplied
-  by the retained substep-1 Grassmann narrow theorem above; the specific
-  Kawamoto-Smit phase form `η_μ(x)` (used in Step 2's bilateral
-  derivation and Step 4b's two-site-shift symmetry) remains an
-  explicit admitted-context structural input on the staggered carrier,
-  carried forward as the residual `KS-phase` structural admission below.
+- The staggered-Dirac realization gate's canonical parent note,
+  `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`, is the
+  parent-identity gate alias and registered Tier-A derivation target
+  `AC_φλ`, previously recorded as the carrier route for the residual
+  `KS-phase-form` input. This parent alias is not retained authority and
+  does not close the gate. The current source graph follows the explicit
+  narrow suppliers below instead: retained substep-1 Grassmann for the
+  finite-Grassmann algebra, retained eta-holonomy and retained_bounded
+  chirality/parity for the displayed KS sign/phase surface, and the
+  kinetic/P-FLUX cascade for the remaining carrier-selection residual.
+  The parent filename remains visible as registered context only, not
+  as a markdown dependency edge.
 
 **Residual structural admission (admitted context, not supplied by any
 current retained narrow theorem):**
@@ -756,15 +868,117 @@ current retained narrow theorem):**
   nearest-neighbour hop `M_{x,x±μ̂} = ±(1/2) η_μ(x)`. Used in (a) Step 2
   reindexing `η_μ(x' + μ̂) = η_μ(x')`, (b) Step 4b's two-site-shift
   symmetry verification `η_ν(x + 2μ̂) = η_ν(x)`, (c) Step 5's
-  one-site-shift counterexample. The forcing of this specific phase
-  structure (substep-2 Kawamoto-Smit forcing) is currently `unaudited`
-  on the live ledger and is **not** supplied by the retained substep
-  theorems above; the Noether identities (N1)-(N3) close as stated on
-  the admitted KS-phase carrier, with this structural input named here
-  rather than imported silently from the gate alias.
+  one-site-shift counterexample. **Status refresh (2026-06-11):** the
+  substep-2 Kawamoto-Smit forcing source-note
+  (`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`,
+  plain-text pointer) now exists on the surface and proves the forcing
+  as a bounded theorem (scalarization iff the Clifford `−1` cocycle,
+  with exactly one local gauge class — the KS class), bounded on its
+  own declared kinetic-class premises (its P-KIN/P-SD); its current
+  ledger grade is not retained, so `KS-phase-form` remains an
+  admitted-context structural input here, named rather than silently
+  imported. **Status refresh (2026-06-15):** the displayed eta identities
+  are now directly supplied in this packet by retained
+  `ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md` and
+  retained_bounded
+  `STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`.
+  The full carrier-selection residual is still the kinetic/P-FLUX
+  cascade below, so this row remains bounded/conditional; however the
+  parent realization-gate alias is no longer a current citation-graph
+  dependency. The Noether identities (N1)-(N3) close as stated on the
+  admitted KS-phase carrier.
 
-When the substep-2 Kawamoto-Smit phase forcing closes to retained-grade,
-the `KS-phase-form` residual admission discharges and the row becomes
+## Kinetic supply-line refresh (2026-06-12; audit-unblock repair)
+
+The 2026-06-11 registered-routing section below correctly kept this
+row bounded/conditional because the residual `KS-phase-form` structural
+input was still routed through the registered staggered-Dirac target.
+Latest main now makes that route sharper without changing this row's
+status:
+
+1. [`STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`](STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md)
+   supplies a source-side two-flux-class theorem on the licensed
+   nearest-neighbor bilinear surface. Its cache
+   `logs/runner-cache/staggered_dirac_kinetic_class_forcing_check_2026_06_10.txt`
+   records `TOTAL: PASS=27 FAIL=0`. For this Noether row, the two
+   relevant outputs are:
+   - P-SD is discharged as the absorbing-frame theorem on the
+     flux-`-1` branch;
+   - P-KIN is reduced from a broad kinetic-class declaration to the
+     one-bit P-FLUX selector `phi = -1`, with `K0` the computed
+     countermodel inside the tested constraint set.
+2. [`P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md`](P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md)
+   supplies the conditional composer for that bit. Its cache
+   `logs/runner-cache/p_flux_selection_via_fsb_k_check_2026_06_11.txt`
+   records `TOTAL: PASS=16 FAIL=0`: using the retained
+   [`STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md`](STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md)
+   geometry leg, P-FLUX is selected only if FSB-K reaches retained
+   grade with its realized-kernel quantifier and FSB-CL intact.
+3. [`AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md`](AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md)
+   remains the named open condition for that composer as of this sync.
+
+Thus this Noether row's residual is no longer "derive the entire
+Kawamoto-Smit carrier from scratch"; it is the sharper cascade
+
+```text
+kinetic-class forcing
+  -> P-SD discharged on K1
+  -> P-KIN reduced to P-FLUX
+  -> P-FLUX conditionally selected by FSB-K + retained Z
+```
+
+Source-only sync verifier:
+`scripts/staggered_dirac_kinetic_supply_line_sync_2026_06_12.py`;
+cache:
+`logs/runner-cache/staggered_dirac_kinetic_supply_line_sync_2026_06_12.txt`.
+
+The local Noether algebra is unchanged and remains the same finite
+Grassmann/Kawamoto-Smit carrier identity checked by
+`scripts/axiom_first_lattice_noether_check.py`. This section does not
+promote the row: until the supplier rows are independently audited and
+the conditional FSB-K leg resolves, the Noether row remains bounded on
+the admitted `KS-phase-form` carrier.
+
+## Registered Tier-A routing (2026-06-11; audit-requested repair; 2026-06-15 graph rescope)
+
+The recorded re-audit target for this row is to "close the full
+staggered-Dirac/Kawamoto-Smit kinetic carrier, including the residual
+KS-phase-form structural input, with retained-grade authority or keep
+this row bounded/conditional." This section takes the precedented
+registered-routing form of that repair (per
+`PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md` and
+`YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md`,
+plain-text precedent pointers): the residual carrier admission is
+routed explicitly into the **registered Tier-A derivation target**, so
+the citation graph carries a registered admission rather than an
+unregistered conditional blocker.
+
+1. **The algebra is standalone.** The load-bearing content — the
+   plus-sign bilateral lattice current, the two-step Ward identity,
+   and the on-shell Noether identities (N1)-(N3) — closes by finite
+   matrix/Grassmann algebra, with the finite-Grassmann partition
+   surface supplied by the retained substep-1 narrow theorem (the
+   load-bearing one-hop dep above).
+2. **What the carrier admission carries.** Only the specific
+   Kawamoto-Smit phase form `η_μ(x)` (the `KS-phase-form` residual
+   above) consumes the staggered-Dirac realization complex; it is
+   substep-2 content of that complex.
+3. **The registered target is retained as plain-text context only.**
+   The canonical staggered-Dirac realization parent
+   remains the registered Tier-A derivation target `AC_φλ` in the
+   admission registry (`docs/audit/data/tier_a_admissions.json`), but
+   this Noether row no longer uses a markdown edge to that parent alias
+   as a one-hop dependency. The current dependency graph follows the
+   explicit supplier cascade above. This note does **not** close the
+   gate, does **not** promote the substep-2 forcing note, and does
+   **not** assert a retained-grade carrier-selection result.
+4. **No status assertion.** This section makes the narrow re-audit
+   case only. The audit lane is the sole authority on whether to honor
+   it; this note asserts no `effective_status` and predicts no audit
+   outcome.
+
+When the explicit kinetic/P-FLUX cascade closes to retained grade, the
+`KS-phase-form` residual admission discharges and the row becomes
 eligible for retagging from `bounded_theorem` to `positive_theorem` by
 the independent audit lane.
 

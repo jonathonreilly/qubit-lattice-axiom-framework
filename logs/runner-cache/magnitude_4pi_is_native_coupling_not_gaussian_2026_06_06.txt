@@ -1,0 +1,80 @@
+===== runner cache v1 =====
+runner: scripts/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.py
+runner_sha256: ab5439acc994c14fe7ccb8289f5a9165d04be520b35d0e9a10c932f7020ec5cb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+--- Status firewall and source packet ---
+PASS: 4pi note contains status/source-boundary marker: actual_current_surface_status=bounded-support
+PASS: 4pi note contains status/source-boundary marker: audit_required_before_effective_retained=true
+PASS: 4pi note contains status/source-boundary marker: bare_retained_allowed=false
+PASS: 4pi note contains status/source-boundary marker: source-boundary repair 2026-06-08
+PASS: 4pi note contains status/source-boundary marker: does not close the hierarchy value gate
+PASS: framework-local Z3 Green-kernel 4pi geometry doc exists
+PASS: framework-local Z3 Green-kernel 4pi geometry runner exists
+PASS: framework-local Z3 Green-kernel 4pi geometry cache exists
+PASS: framework-local Z3 Green-kernel 4pi geometry cache has passing marker
+PASS: framework-local Z3 Green-kernel 4pi geometry ledger status is retained_bounded
+PASS: native BZ Haar normalization doc exists
+PASS: native BZ Haar normalization runner exists
+PASS: native BZ Haar normalization cache exists
+PASS: native BZ Haar normalization cache has passing marker
+PASS: native BZ Haar normalization ledger status is retained_bounded
+PASS: g_bare constraint-vs-convention restatement source doc exists
+PASS: g_bare constraint-vs-convention restatement source runner exists
+PASS: g_bare constraint-vs-convention restatement source cache exists
+PASS: g_bare constraint-vs-convention restatement source cache has passing marker
+PASS: g_bare constraint-vs-convention restatement source ledger status is retained
+PASS: temporal count packet doc exists
+PASS: temporal count packet runner exists
+PASS: temporal count packet cache exists
+PASS: temporal count packet cache has passing marker
+PASS: temporal count packet source marker: 2026-06-08 source-packet repair
+PASS: temporal count packet source marker: actual_current_surface_status=bounded-support
+PASS: temporal count packet source marker: POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06
+PASS: temporal count packet source marker: HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE
+PASS: temporal count packet source marker: AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28
+PASS: minimal-block readout demotion packet doc exists
+PASS: minimal-block readout demotion packet runner exists
+PASS: minimal-block readout demotion packet cache exists
+PASS: minimal-block readout demotion packet cache has passing marker
+PASS: minimal-block readout demotion packet source marker: What does **not** follow is the readout-scale selection.
+PASS: minimal-block readout demotion packet source marker: select the minimal block over the OS continuum.
+PASS: minimal-block readout demotion packet source marker: Missing bridge:     UV/minimal-block readout selection
+PASS: minimal-block readout demotion packet source marker: readout-scale selection
+PASS: I1 static-source readout remains unaudited
+PASS: I1 static-source readout note records premise/import boundary
+PASS: I2 alpha convention remains unaudited
+PASS: I2 alpha convention note records premise/import boundary
+PASS: I3 Cl3 normalization remains unaudited
+PASS: I3 Cl3 normalization note records premise/import boundary
+PASS: P3/per-mode dressing and value-gate honesty remains unaudited
+PASS: P3/per-mode dressing and value-gate honesty note records premise/import boundary
+PASS: note forbids observed-value PASS conditions
+PASS: note explicitly leaves I1/I2/I3/P3 residual open
+--- Formula-local 4pi-vs-2pi algebra, no observed values ---
+PASS: (4pi)^-16 is finite and positive
+PASS: (2pi)^-16 / (4pi)^-16 = 2^16 exactly within floating precision
+PASS: replacing supplied alpha_bare=1/(4pi) by Gaussian 1/(2pi) creates the full 2^16 gap
+PASS: no observed M_Pl/v value-match calculation appears in this runner
+--- Native Z3 inverse-Laplacian 4pi geometry ---
+PASS: native Z3 graph-Laplacian symbol tends to |k|^2
+PASS: Dirichlet radial integral int_0^inf sin(u)/u du = pi/2
+PASS: assembled continuum-leading rG coefficient is 1/(4pi)
+PASS: d=3 solid angle is 4pi
+PASS: Gaussian 2pi and solid-angle 4pi are different normalizations
+--- Multiplicity-one normalization raised to count 16 ---
+PASS: one 4pi coupling normalization raised to count 16 equals (4pi)^-16
+PASS: sixteen separate identical 4pi factors give the same number as exponent count 16
+PASS: the multiplicity objection is an over-strong decomposition demand, not a numeric obstruction
+--- Honest residual classification ---
+PASS: all readout/convention/dressing residuals are explicitly not retained
+PASS: bounded result is a source-boundary, not a hierarchy value derivation
+PASS: audit lane remains required before any effective retained status
+
+TOTAL: PASS=62 FAIL=0
+
+----- stderr -----
+

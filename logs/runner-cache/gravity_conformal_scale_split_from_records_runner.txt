@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/gravity_conformal_scale_split_from_records_runner.py
+runner_sha256: 865f4d365b9f2d62def5e94eb7f515031e2b498a7ffee5fefdf4022503b72bb4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+==============================================================================
+A1. null-geodesic direction field is CONFORMALLY INVARIANT (pointwise over a grid)
+==============================================================================
+   worst normalized ray-direction difference (g vs Omega^2 g): 3.15e-16
+  [PASS] null-geodesic direction field invariant under (position-dependent) conformal rescaling  | light paths / deflection are conformal-CLASS observables => records-derived
+
+==============================================================================
+A2. concrete ray-trace: deflection toward the mass, IDENTICAL for g and Omega^2 g
+==============================================================================
+   deflection angle in g:        -0.17247 rad (toward mass: True)
+   deflection angle in Omega^2 g: -0.17246 rad
+   identical (conformal invariance): True  (|diff|=1.55e-06)
+  [PASS] light deflection is real (toward mass) and IDENTICAL under conformal rescaling  | lensing = conformal-class observable (matches retained LENSING_DEFLECTION)
+
+==============================================================================
+A3. proper time (Shapiro delay) SCALES with the conformal factor => NOT conformal
+==============================================================================
+   proper time in g: 11.7319;  in Omega^2 g: 12.6861 (differ: True)
+   Shapiro excess vs flat (real, but scale-set): -0.2681
+  [PASS] the proper-time (Shapiro) delay scales with Omega => a SCALE observable, not conformal  | Shapiro = the conformal factor = the clock-rate no-go
+
+==============================================================================
+A4. the split EXPLAINS the framework's gravity-results pattern
+==============================================================================
+   DEFLECTION (lensing)  = conformal-class observable -> records-derived (the records' conformal
+     class, EMERGENT_METRIC note) -> MATCHES retained_bounded LENSING_DEFLECTION_NOTE.
+   SHAPIRO (time-delay)  = conformal-FACTOR observable -> the clock-rate no-go
+     (retained_no_go POST_RECORD_CLOCK_RATE_INTERFACE) -> MATCHES the retained_no_go shapiro_* family.
+  [PASS] gravity's conformal part (lensing) is records-derived; its scale part (Shapiro) is the no-go  | the conformal/scale split explains lensing-retained vs Shapiro-no-go
+
+runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

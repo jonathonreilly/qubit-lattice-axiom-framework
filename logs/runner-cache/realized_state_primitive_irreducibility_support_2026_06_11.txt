@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/realized_state_primitive_irreducibility_support_2026_06_11.py
+runner_sha256: ce17f41778b2218c7475e08a472e22a800e64fe019f487a612ab32bedfe5662f
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+==============================================================================
+S1  The baseline is STATE-BLIND; registered outcomes are STATE-CONTINGENT
+    (one operator set; four permitted states; four distinct record behaviors)
+==============================================================================
+  [PASS] S1a one operator set, distinct permitted states, DISTINCT registered record trajectories (state-contingency of outcomes is exact, not interpretive)  (low-record start [0, 1, 2, 3]; record-full unwound [3, 2, 1, 0]; I/d [0, 0, 0, 0]; pointer [3, 3, 3, 3])
+  [PASS] S1b records GROW from the low-record state (monotone) and the I/d equilibrium registers NOTHING (flat) -- the slot the primitive names is the sole difference between an arrow and no arrow
+==============================================================================
+S2  No canonical state: invariant states form a CONTINUUM on a degenerate
+    manifold (the maximal-symmetry reference is ONE point, not a selection)
+==============================================================================
+  [PASS] S2a a one-parameter CONTINUUM of dynamics-invariant states exists on the degenerate manifold (pairwise-distinct density matrices, all invariant); invariance does not select  (5/5 invariant; ground-population functional [ 1.   0.5  0.  -0.5 -1. ] distinct)
+  [PASS] S2b the maximal-symmetry reference I/3 is NOT invariant under the SAME dynamics' excited sector mixing? -- no: I/3 IS invariant too, i.e. it is one MORE invariant point, with no property singling it out dynamically (its selection would be a typicality/measure choice, exactly what the primitive forbids supplying)
+==============================================================================
+S3  The counterfactual test has teeth in BOTH directions
+==============================================================================
+  [PASS] S3a a family-VARYING readout exists (fails the counterfactual test -> must be labeled registered data of the realized state)  (range -1.00..+1.00)
+  [PASS] S3b a family-INVARIANT readout exists (passes the counterfactual test -> quotable: it is a property of the manifold, not of a representative)  (constant +1.00 across the family)
+==============================================================================
+S4  The past hypothesis is STRICTLY STRONGER than the neutral slot
+==============================================================================
+  [PASS] S4a the neutral slot (a state is supplied) does NOT orient history: permitted states realize growing, shrinking-on-unwind, and flat record trajectories -- the arrow's EXISTENCE needs the additional low-record boundary claim (the past hypothesis), which is a specialness claim the primitive's clauses 1-2 forbid it from supplying itself  (growing=['low-record']; not-growing=['record-full-unwound', 'equilibrium', 'pointer'])
+  [PASS] S4b entropy axis confirms the strict-strength ordering: the low-record start is entropy-0 (special), I/d is entropy-max (no arrow) -- opposite extremes; 'a state is realized' carries no position on this axis
+==============================================================================
+TOTAL: PASS=8 FAIL=0
+==============================================================================
+SCOPE: support exhibits for the realized_state_primitive declaration --
+  exact small instances showing (S1) state-blind baseline / state-contingent
+  registered outcomes, (S2) invariant states form a continuum (no dynamical
+  selection; the maximal-symmetry reference is one more point), (S3) the
+  counterfactual test separates quotable family-invariants from registered
+  data, (S4) the past hypothesis is strictly stronger than the neutral slot
+  (specialness on the entropy axis).  These SUPPORT irreducibility; they do
+  not derive the primitive and supply no state, measure, weight, or value.
+  Statuses are pipeline-derived; the audit lane grades.
+
+----- stderr -----
+

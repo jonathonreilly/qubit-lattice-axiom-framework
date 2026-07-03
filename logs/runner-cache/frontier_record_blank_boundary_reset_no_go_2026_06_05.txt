@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_blank_boundary_reset_no_go_2026_06_05.py
+runner_sha256: 726259e514cfb2ad88c7aaf14334c548b768e799154148cab3b83811dad1fa62
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+==============================================================================
+RECORD BLANK-BOUNDARY RESET NO-GO
+exact negative boundary / finite-unitary runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Fanout is clean only on blank fragments
+------------------------------------------------------------------------------
+  [PASS] blank zero input broadcasts cleanly
+  [PASS] blank one input broadcasts cleanly
+  [PASS] only blank inputs give clean broadcast (['0000', '1000'])
+  [PASS] nonblank zero input fails clean broadcast (0101)
+  [PASS] nonblank one input fails clean broadcast (1010)
+  [PASS] fanout preserves old fragment data reversibly
+
+------------------------------------------------------------------------------
+2. Closed clean reset is many-to-one
+------------------------------------------------------------------------------
+  [PASS] all zero-pointer env inputs collapse to one clean target
+  [PASS] all one-pointer env inputs collapse to one clean target
+  [PASS] reset target set has size two (['0000', '1111'])
+  [PASS] reset map is not injective
+
+------------------------------------------------------------------------------
+3. Matrix is not unitary/isometric
+------------------------------------------------------------------------------
+  [PASS] reset matrix has rank two (rank=2)
+  [PASS] reset matrix fails isometry condition
+  [PASS] two orthogonal inputs share the same image
+  [PASS] input pair is orthogonal
+  [PASS] image pair is not orthogonal
+
+------------------------------------------------------------------------------
+4. Extra sink restores injectivity at label level
+------------------------------------------------------------------------------
+  [PASS] adding old fragment state as sink gives 16 labels
+  [PASS] sink labels keep clean broadcast target
+  [PASS] sink route is not the closed four-qubit reset route
+
+------------------------------------------------------------------------------
+5. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_BLANK_BOUNDARY_RESET_NO_GO_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: no-go
+  [PASS] note contains marker: trace_class: negative_route_pruning
+  [PASS] note contains marker: conditional_surface_status:
+  [PASS] note contains marker: Does not derive blank fragments
+  [PASS] note contains marker: Does not apply audit verdicts.
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: blank closure
+  [PASS] forbidden wording absent: reset closure
+  [PASS] forbidden wording absent: hamiltonian closure
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=31 FAIL=0
+
+----- stderr -----
+

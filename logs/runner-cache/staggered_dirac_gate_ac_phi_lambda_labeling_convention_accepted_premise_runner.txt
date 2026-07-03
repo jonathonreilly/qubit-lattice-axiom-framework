@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py
+runner_sha256: d481c649e53f4952f47414c235d66a66e8986b5549a588a2f5ae22a8eb531295
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.41
+status: ok
+----- stdout -----
+STAGGERED-DIRAC GATE AC_phi_lambda ACCEPTED-PREMISE BRIDGE
+
+== Part 0: source firewall ==
+PASS: source contains required phrase: Accepted Premises Registration (2026-05-26 narrow-bridge)
+PASS: source contains required phrase: (P1)
+PASS: source contains required phrase: Mass-ordering labeling-convention bijection
+PASS: source contains required phrase: accepted-premise packet entry
+PASS: source contains required phrase: does not derive (P1)
+PASS: source contains required phrase: STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17
+PASS: source contains required phrase: STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE
+PASS: source contains required phrase: STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM
+PASS: source contains required phrase: Composition map to the parent gate's four substeps
+PASS: source contains required phrase: externally supplied total order/sort key
+PASS: source contains required phrase: scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py
+PASS: source note explicitly disclaims forbidden input: PDG-observed lepton mass
+PASS: source note explicitly disclaims forbidden input: no fitted matching
+PASS: source note explicitly disclaims forbidden input: Monte Carlo measurement
+PASS: source note has no fitted-value pin (Q(electron)=-1 style)
+
+== Part 1: three pairwise-distinct joint eigenvalue triples ==
+PASS: constructed 3 joint eigenvalue triples (toy carrier) (3)
+PASS: pairwise-distinctness triple1 vs triple2 (differ_on_at_least_one_component=True)
+PASS: pairwise-distinctness triple1 vs triple3 (differ_on_at_least_one_component=True)
+PASS: pairwise-distinctness triple2 vs triple3 (differ_on_at_least_one_component=True)
+PASS: C_3 cyclic action permutes the three triples (regular Z/3Z action) (three orbit elements all distinct => regular Z/3Z orbit)
+
+== Part 2: external sort-key values under (P1) ==
+PASS: C_3-invariant squared norm is degenerate on the cube-root carrier ([1, 1, 1])
+PASS: three explicit pairwise-distinct external sort-key values (rational arithmetic) ([Fraction(1, 7), Fraction(2, 7), Fraction(4, 7)])
+PASS: sort_key_1 != sort_key_2 (rational arithmetic) (1/7 vs 2/7)
+PASS: sort_key_1 != sort_key_3 (rational arithmetic) (1/7 vs 4/7)
+PASS: sort_key_2 != sort_key_3 (rational arithmetic) (2/7 vs 4/7)
+
+== Part 3: rational sort permutation fixing pi_0 ==
+PASS: rational sort produces a unique permutation of {1, 2, 3} ({0: 1, 1: 2, 2: 3})
+PASS: pi_0 is a bijection {c_1, c_2, c_3} -> {l_1, l_2, l_3} ({0: 1, 1: 2, 2: 3})
+PASS: permutation is uniquely fixed by the pairwise-distinct sort-key values (no tie-breaking) (distinct sort-key values rule out tie-breaking ambiguity)
+
+== Part 4: substep-4 labeling no-go exhaustiveness recorded ==
+PASS: substep-4 labeling no-go note exists (STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md)
+PASS: no-go note records exhaustiveness phrase: P1: Labeling-convention (audit-readable closure-path enumeration)
+PASS: no-go note records exhaustiveness phrase: P2: C_3-breaking dynamics (audit-readable closure-path enumeration)
+PASS: no-go note records exhaustiveness phrase: P3: PDG-empirical (audit-readable closure-path enumeration)
+PASS: no-go note records exhaustiveness phrase: Exhaustiveness of closure paths (audit-readable closure-path enumeration)
+
+== Part 5: composition map to parent-gate substeps recorded ==
+PASS: composition map records parent-gate substep: Composition map to the parent gate's four substeps
+PASS: composition map records parent-gate substep: (1) Grassmann fermion realization
+PASS: composition map records parent-gate substep: (2) Staggered-Dirac kinetic structure
+PASS: composition map records parent-gate substep: (3) BZ-corner 1+1+3+3 + hw=1 triplet
+PASS: composition map records parent-gate substep: (4) Physical-species reading
+PASS: parent gate note exists (STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+PASS: parent gate note records AC_phi_lambda as explicit admitted-context residual (admission already named in gate parent)
+PASS: gate-closure synthesis note exists (STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md)
+PASS: synthesis note records AC_phi_lambda as primary admitted-context residual (admission already named in synthesis)
+
+== Result ==
+Bounded accepted-premise bridge: (P1) mass-ordering labeling convention is the only A_min-compatible closure path per the substep-4 labeling no-go's (P1)/(P2)/(P3) exhaustiveness; under (P1) the bijection pi_0 is uniquely fixed by rational sort arithmetic on external sort-key values over the upstream pairwise-distinct joint eigenvalue triples.
+Composition: upstream substep chain + (P1) supplies the labeling ingredient for parent-gate substep (4) conditional on independent audit confirmation. The bridge does not claim parent-gate promotion.
+
+TOTAL: PASS=42 FAIL=0
+VERDICT: bounded accepted-premise bridge passes; pi_0 fixed under (P1) by rational sort arithmetic on externally supplied sort-key values over the upstream three pairwise-distinct joint eigenvalue triples; (P2)/(P3) excluded by the substep-4 labeling no-go exhaustiveness.
+
+----- stderr -----
+

@@ -39,12 +39,11 @@ This runner extends the bounded minimality certificate to:
       Compute the integer-primitive normalization of the discovered kernel
       operator and verify it bit-for-bit matches the PR #541 published L.
 
-The Koutschan-style guess output IS the algorithmic minimality certificate.
-Combined with the depth-100 Taylor annihilation check, the bounded
-operational closure of the rank-bound is provided by the runner alone:
-no auxiliary external rank input is needed at the verification step
-(the Bernstein/Aomoto-Gelfand existence input remains philosophical
-context, but the algorithmic check itself is self-contained).
+The Koutschan-style guess output is a finite-window certificate. Combined with
+the depth-100 Taylor annihilation check, the runner gives no auxiliary external
+rank input at the verification step. It does not claim arbitrary-degree
+lower-order exclusion or all-order Picard-Fuchs minimality; the
+Bernstein/Aomoto-Gelfand existence input remains philosophical context.
 """
 from __future__ import annotations
 
@@ -722,16 +721,16 @@ def main():
     print("=" * 78)
     print()
     if fail_count == 0:
-        print("Extended minimality certificate operationally CLOSED.")
-        print("- Lower-order exclusion to (r <= 2, d <= 30): no annihilator")
-        print("- (r=3, d) higher-degree consistency to d=12: polynomial-multiple bound exact")
-        print("- Algorithmic Koutschan guess: minimal at (r=3, d=2), matches PR #541 L")
+        print("Finite-window Picard-Fuchs certificate PASS.")
+        print("- Lower-order exclusion to (r <= 2, d <= 30): no checked annihilator")
+        print("- (r=3, d) higher-degree consistency to d=12: polynomial-multiple bound exact in the checked window")
+        print("- Algorithmic Koutschan guess: first checked hit at (r=3, d=2), matches PR #541 L")
         print("- Primitive-integer signature: 8/8 coefficient match")
         print()
         print("Combined with the deep Taylor annihilation (depth 100), the algorithmic")
         print("verification path is self-contained over Q. The Bernstein-Sato existence")
-        print("input from D-module theory remains philosophical context, but the bounded")
-        print("operational closure of the rank bound is now runner-internal.")
+        print("input from D-module theory remains philosophical context; this runner does")
+        print("not claim arbitrary-degree lower-order exclusion or all-order minimality.")
     else:
         print("FAIL: extended bounded certificate did not pass.")
 

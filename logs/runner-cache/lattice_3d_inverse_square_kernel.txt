@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/lattice_3d_inverse_square_kernel.py
+runner_sha256: 9172beafd55bf6360b287081d646b044345f9d508f564bbb901eb7956a075591
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 15.23
+status: ok
+----- stdout -----
+====================================================================================================
+3D INVERSE-SQUARE KERNEL BRANCH
+  New propagator branch: same 3D ordered family, same spent-delay action, kernel w/L^2.
+  Goal: bounded h=1.0 vs h=0.5 audit on the same physical geometry.
+====================================================================================================
+
+h    span  Born        k=0        MI      dTV     decoh   centroid    P_near    bias      read
+------------------------------------------------------------------------------------------------------------
+1.0     3  5.93e-16  +0.000000  0.200  0.471  0.193  -0.037297  -0.004688  -0.526014  AWAY
+0.5     6  1.91e-15  +0.000000  0.037  0.402  0.259  +0.026838  +0.004905  +0.498535  ATTRACTIVE
+
+No-barrier distance companion:
+h=1.0
+  z    centroid     P_near      bias        read
+    2  -0.009576  +0.001192  -0.185762  MIXED
+    3  -0.014190  -0.000079  -0.300891  AWAY
+    4  -0.026495  +0.002345  -0.461773  MIXED
+    5  -0.033573  +0.001806  -0.538670  MIXED
+    6  -0.032386  +0.000793  -0.548004  MIXED
+    7  +0.000000  +0.000000  +nan  MIXED
+  hierarchy-aligned support: 0/6  fit=n/a
+
+h=0.5
+  z    centroid     P_near      bias        read
+    2  +0.023018  +0.000352  +0.521423  ATTRACTIVE
+    3  +0.028888  +0.001855  +0.570760  ATTRACTIVE
+    4  +0.032540  +0.004062  +0.532756  ATTRACTIVE
+    5  +0.033218  +0.003523  +0.497727  ATTRACTIVE
+    6  +0.028940  +0.001176  +0.452801  ATTRACTIVE
+    7  +0.000000  +0.000000  +nan  MIXED
+  hierarchy-aligned support: 5/6  fit=b^(0.25)  R^2=0.574
+
+Decision:
+  Promote only if the branch keeps Born/k=0 clean and shows a meaningful attractive
+  hierarchy-aligned distance tail under refinement. Otherwise keep it isolated.
+
+----- stderr -----
+

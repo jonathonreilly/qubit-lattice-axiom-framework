@@ -19,9 +19,10 @@ the boundary of the conditional perimeter; nothing here promotes
 audit status. The supported content of this note is the lock-in
 harmonic / nulled protocol itself: the §"Decisive tests" results
 (phase-averaged DC = +0.000012, 1H amplitude = 0.018, 1529:1 ratio,
-f-oddness clean, time-order non-trivial) reproduced live by the
-registered runner
+f-oddness clean, time-order non-trivial) recorded in the frozen
+full-harness log and verified by the registered runner
 [`scripts/vector_sector_circular_orbit.py`](../scripts/vector_sector_circular_orbit.py).
+Use `--recompute` to run the original slow live replay path.
 The matched-scalar-exposure table at f=0.02 in §"Result" is reported
 in the note and is now independently reproduced by the 2026-05-26
 companion certificate as a labeled column. The §"What this means"

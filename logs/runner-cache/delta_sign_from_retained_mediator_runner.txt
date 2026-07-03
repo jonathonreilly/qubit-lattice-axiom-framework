@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/delta_sign_from_retained_mediator_runner.py
+runner_sha256: 5826e6f4b96ee07805e1c4b209ea31c0b838cee6a98dfe87b2dec93f2b2fc150
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.35
+status: ok
+----- stdout -----
+==============================================================================
+delta SIGN from the RETAINED two-body mediator (attractive => delta<0)  [class A]
+==============================================================================
+
+-- (1) retained mediator: partner force attractive, binding energy E_mut < 0 --
+  [PASS] side=12: partner force ATTRACTIVE on all separations (reproduces the retained 15/15)  (|F| ~ d^-1.94 (retained ~d^-1.95); F(d=3)=+0.4956)
+  [PASS] side=12: two-excitation binding energy E_mut = -sum rho_A Phi_B < 0 on all separations (attractive => bound)
+  [PASS] side=14: partner force ATTRACTIVE on all separations (reproduces the retained 15/15)  (|F| ~ d^-1.94 (retained ~d^-1.95); F(d=3)=+0.4901)
+  [PASS] side=14: two-excitation binding energy E_mut = -sum rho_A Phi_B < 0 on all separations (attractive => bound)
+  [PASS] side=16: partner force ATTRACTIVE on all separations (reproduces the retained 15/15)  (|F| ~ d^-1.97 (retained ~d^-1.95); F(d=3)=+0.4868)
+  [PASS] side=16: two-excitation binding energy E_mut = -sum rho_A Phi_B < 0 on all separations (attractive => bound)
+  [PASS] force reproduces the retained note value verbatim (side=12, d=3 -> +0.49557)  (got +0.49557)
+
+-- (2) |delta| bounded by the (sign-definite Yukawa) propagator --
+  [PASS] |E_mut| is bounded and monotone-decreasing with separation (the screened-Poisson (L+mu^2)^-1 kernel is sign-definite) => |delta| bounded, not divergent  (|E_mut|(d=3..7) = [29.29, 28.94, 28.72, 28.57, 28.45])
+
+-- (3) periodic hw=1 generation-pair kernel: delta_ij < 0 and J-I symmetry --
+  [PASS] periodic bridge formula gives equal negative delta_ij for all hw=1 corner pairs  (-4.999375e+01, -4.999375e+01, -4.999375e+01)
+  [PASS] all corner-pair transfers have eps(Delta k)=8, so the pair matrix has J-I form
+
+-- (4) sign propagation branch: K = t^2 delta/[eps_gap(eps_gap+delta)] --
+  [PASS] nonresonant attractive branch eps_gap>0 and eps_gap+delta>0 gives K_C3<0  (eps=0.5,delta=-0.025->K=-0.105; eps=0.5,delta=-0.12->K=-0.667; eps=0.5,delta=-0.38->K=-6; eps=1,delta=-0.05->K=-0.0526)
+  [PASS] counterfactual repulsive branch delta>0 gives K_C3>0 with the same denominator sign
+  [PASS] strong-curvature resonance branch is detected and excluded from the sign theorem  (eps_gap=1, delta=-1.5 gives K=+3.000)
+  [PASS] finite C^8 elimination matches the symbolic nonresonant formula at delta=-0.3  (matrix=-0.428571, formula=-0.428571)
+  [PASS] the sourced coupling is the exact C3 (J - I) form (all off-diagonals equal)
+
+-- (5) source-note markers for the narrowed branch claim --
+  [PASS] delta-sign note contains marker: K_C3 = t^2 * delta / (eps_gap * (eps_gap + delta))
+  [PASS] delta-sign note contains marker: eps_gap > 0 and eps_gap + delta > 0
+  [PASS] delta-sign note contains marker: GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07
+  [PASS] delta-sign note contains marker: strong-curvature/resonant branch
+  [PASS] stacked periodic bridge contains the finite-volume delta formula
+
+==============================================================================
+TOTAL: PASS=20 FAIL=0
+VERDICT: the retained two-body mediator channel gives negative mutual energy delta < 0 on the open-cubic force surface and on the stacked periodic hw=1 plane-wave kernel. The exact second-order C3 coupling satisfies K_C3 = t^2 delta/[eps_gap(eps_gap+delta)], so K_C3 < 0 follows on the explicit nonresonant branch eps_gap>0, eps_gap+delta>0. The physical magnitude/gap branch remains open; no flavor value is forced.
+
+----- stderr -----
+

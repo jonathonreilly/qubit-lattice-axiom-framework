@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/frontier_interacting_rp_mass_link_reflection_controls_2026_06_09.py
+runner_sha256: 05601122963d7c2ecae429fbe98d18e96419a8df25f1e45519b4fbebfc407efe
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.60
+status: ok
+----- stdout -----
+Interacting RP mass/link-reflection companion controls
+======================================================================================
+[PASS] primary full-algebra runner source hash is pinned
+       expected=7b3185987a8b7bf745dec44a6fcdcaa82dfe94fbe8bc3632b870bf150cd587b0; actual=7b3185987a8b7bf745dec44a6fcdcaa82dfe94fbe8bc3632b870bf150cd587b0
+[PASS] source note names companion controls and cache
+       missing=[]
+
+MASS SCAN: SU(3) full algebra, positive det and per-config PSD
+--------------------------------------------------------------------------------------
+       m    avg_min_eig    per_cfg_min        det_min    baryon_diag       herm
+     0.5  +4.474367e-02  +2.066479e-02  +4.979756e-02  +1.058102e+00   4.45e-16
+     0.1  +5.081488e-02  +1.193335e-02  +1.122072e-03  +4.128454e-01   1.13e-15
+    0.05  +1.390673e-01  +8.161180e-03  +2.325715e-04  +6.786240e-01   1.94e-16
+    0.01  +1.493433e-01  +3.740771e-03  +1.341242e-05  +6.957707e-01   4.44e-16
+[PASS] mass scan remains positive through m=0.01
+       det(M)>0, U-averaged and per-config Grams PSD, baryon diagonal nonzero
+
+NON-CONJUGATING LINK-REFLECTION CONTROL
+--------------------------------------------------------------------------------------
+ cfg    correct_min     wrong_herm  wrong_sym_min
+   0  +2.444223e-02   1.803781e+00  -4.463580e-01
+   1  +2.749807e-02   2.420059e+00  -9.459007e-01
+   2  +2.050881e-02   1.825917e+00  -5.986215e-01
+   3  +2.218813e-02   2.011435e+00  -8.276097e-01
+   4  +2.401240e-02   1.479453e+00  -2.816341e-01
+[PASS] non-conjugating link reflection breaks Hermiticity and PSD
+       correct_min=+2.050881e-02; wrong_herm=2.420059e+00; wrong_min=-9.459007e-01
+
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

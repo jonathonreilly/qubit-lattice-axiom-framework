@@ -7,6 +7,8 @@ ledger grade. This note adds no axiom and no import; it answers a finite
 many-body witness sub-question negatively (no base-edge fibered enrichment at
 N=3 on the tested graph-braid witnesses).
 **Primary runner:** `scripts/frontier_graph_braid_n3_fermion_sign_nonfibered.py` (SCORECARD PASS=26)
+**Cached runner output:** [`logs/runner-cache/frontier_graph_braid_n3_fermion_sign_nonfibered.txt`](../logs/runner-cache/frontier_graph_braid_n3_fermion_sign_nonfibered.txt)
+(`SCORECARD: PASS=26 FAIL=0`; dependency-free finite graph helper)
 
 ## Context (the open sub-question / the attacked assumption)
 
@@ -83,6 +85,12 @@ boundary carrying the Koszul sign from the edge-atom ordering. It then:
   included; `K_5`, with 5 vertices and no room for 3 disjoint edges, is the clean
   small integral-torsion witness.)
 
+Current cache certificate:
+
+```text
+SCORECARD: PASS=26 FAIL=0
+```
+
 ### What "fibered" means here (made precise)
 
 A `Z_2` cohomology class is **fibered / a base-edge (link-sign) class** if it
@@ -152,9 +160,9 @@ topology).
 The load-bearing inputs are explicit and finite; "fibered", "non-fibered",
 "three-token sector", and "CAR" are *not* used as hidden inputs for the result:
 
-- the `Z^3` site-graph shape (used only to extract the genuine `K_{3,3}`
-  subdivision witness via `networkx` planarity; `K_5`/`K_{3,3}` are the abstract
-  cross-checks);
+- the `Z^3` site-graph shape (used only through an explicit finite unit-edge
+  `K_{3,3}` subdivision witness in the `L=3` cube; `K_5`/`K_{3,3}` are the
+  abstract cross-checks);
 - the Abrams discretized unordered-`N`-particle cube complex `UD_N(Γ)`
   (0-cells = closure-disjoint vertex `N`-sets; 1-cells = vertex + non-incident
   edge; 2-cells = vertex-disjoint edge pairs) with the **Koszul-signed** cubical

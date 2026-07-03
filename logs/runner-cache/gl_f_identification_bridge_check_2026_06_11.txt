@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/gl_f_identification_bridge_check_2026_06_11.py
+runner_sha256: db63cb339c74b2b5a3df46824b04f70b5fee4b205973cee3d039304dc5958e8d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.39
+status: ok
+----- stdout -----
+==============================================================================
+GL(F) identification bridge -- conditional decomposition checks
+(2026-06-11; landed parent reconstruction recomputed here)
+==============================================================================
+[S] PASS: post-audit source status is conditional support / open gate, not theorem closure
+[S] PASS: matter-functional clause I-4 remains explicitly not discharged
+[S] PASS: source no longer asks audit to treat the parent bridge as closed
+
+--- [A] Retained suppliers of the kinematic clauses (recomputed) ---
+[A] PASS: carrier clause (I-1), per-site: {I, sigma_1, i sigma_2, sigma_3} span M_2 (rank 4) and the commutant of the Pauli action on C^2 is exactly the scalars (Schur) -- C^2 is the irreducible carrier the Quantum axiom supplies DIRECTLY (the u4 row is audited_renaming: the axiom, not a derivation, is the per-site supplier)
+[A] PASS: N = 2: retained parity row recomputed: F = (x)sigma_3 = prod_x (1 - 2 n_x), F^2 = I, balanced multiplicities (2^{N-1} = 2 each)
+[A] PASS: N = 2: the static tie recomputed on the retained composite carrier (C^2)^(x)N: the per-site Pauli multiplet (cross-site COMMUTING, the retained tensor-bridge convention) and the Jordan-Wigner multiplet (cross-site CAR) have IDENTICAL number operators n_x and are BOTH F-odd -- carrier + parity + occupation data cannot force the dictionary; the functional clause is the load-bearing member of the structure set
+[A] PASS: N = 3: retained parity row recomputed: F = (x)sigma_3 = prod_x (1 - 2 n_x), F^2 = I, balanced multiplicities (2^{N-1} = 4 each)
+[A] PASS: N = 3: the static tie recomputed on the retained composite carrier (C^2)^(x)N: the per-site Pauli multiplet (cross-site COMMUTING, the retained tensor-bridge convention) and the Jordan-Wigner multiplet (cross-site CAR) have IDENTICAL number operators n_x and are BOTH F-odd -- carrier + parity + occupation data cannot force the dictionary; the functional clause is the load-bearing member of the structure set
+[A] PASS: dynamics clause context: the retained RP row's delivered transfer object is CONSTRUCTED from the action (T_odd T_even eigenvalue e^{-2E(p)}, E = arcsinh sqrt(m^2 + sin^2 p), recomputed at L_s = 4) -- the retained set contains no independently specified physical dynamics for the matter sector (the axioms each disclaim supplying a dynamics), so the dynamical sub-clause has no content beyond the matter-functional clause (I-4)
+
+--- [B] Parent reconstruction recomputed (N = 2, 3, exact) ---
+[B] PASS: N = 2: Theta-symmetric action, Z != 0, OS Gram PSD of rank exactly 2^N = 4, occupation sub-Gram positive definite (parent (R-a)/(R-b) facts recomputed)
+[B] PASS: N = 2: exact CAR for the canonically normalized reconstructed multiplet -- {psi_x, psi_y} = 0, {psi_x, psi_y^dag} = delta_xy I (parent GL(F) certificate recomputed)
+[B] PASS: N = 2: {psi_x, psi_y^dag} = (K^{-1})_xy I exactly -- the transfer kernel K is RECOVERED from the functional's anticommutator data (the dynamics-bearing object is functional-determined, not identification-dependent)
+[B] PASS: N = 2: F-hat (integrand grading pushed to the quotient) preserves the OS form, anticommutes with every field, AND equals the WORD prod_x (1 - 2 psi_x^dag psi_x) in the reconstructed fields exactly -- the reconstructed parity is a polynomial in the field multiplet, not extra structure
+[B] PASS: N = 3: Theta-symmetric action, Z != 0, OS Gram PSD of rank exactly 2^N = 8, occupation sub-Gram positive definite (parent (R-a)/(R-b) facts recomputed)
+[B] PASS: N = 3: exact CAR for the canonically normalized reconstructed multiplet -- {psi_x, psi_y} = 0, {psi_x, psi_y^dag} = delta_xy I (parent GL(F) certificate recomputed)
+[B] PASS: N = 3: {psi_x, psi_y^dag} = (K^{-1})_xy I exactly -- the transfer kernel K is RECOVERED from the functional's anticommutator data (the dynamics-bearing object is functional-determined, not identification-dependent)
+[B] PASS: N = 3: F-hat (integrand grading pushed to the quotient) preserves the OS form, anticommutes with every field, AND equals the WORD prod_x (1 - 2 psi_x^dag psi_x) in the reconstructed fields exactly -- the reconstructed parity is a polynomial in the field multiplet, not extra structure
+
+--- [C] Exact finite support (I-1, I-2, I-3 conditional on I-4) ---
+[C] PASS: N = 2: CYCLICITY -- the 16 normal-ordered field words applied to the OS vacuum Omega span the full reconstructed space (exact rank = 2^N = 4); the functional's matrix elements over words exhaust the operator theory
+[C] PASS: N = 2: IRREDUCIBILITY -- the field words span the FULL matrix algebra M_{2^N} (exact rank 16 = 4^N): the GNS representation is the unique irreducible CAR_N representation and the OS state is pure
+[C] PASS: N = 2: FUNCTIONAL-LEVEL GL(F) -- every word-sandwiched value omega(w^dag ({psi_x, psi_y}) w') and omega(w^dag ({psi_x, psi_y^dag} - delta_xy I) w') vanishes exactly (all 16 x 16 word pairs, all x, y); combined with cyclicity, the exchange relations hold as OPERATOR IDENTITIES in EVERY realization of the functional with cyclic vacuum -- GL(F) is a property of the functional, invariant under the choice of identification
+[C] PASS: N = 2: UNIQUE INTERTWINER -- the space of operators S with S psi_x = c_x S and S psi_x^dag = c_x^T S (c = qubit-net Jordan-Wigner multiplet) has dimension EXACTLY 1 (Schur), S is invertible, and S^T S = lambda Gp with rational lambda > 0: the identification of the reconstruction with the qubit net is FORCED up to one overall scalar, i.e., W = S/sqrt(lambda) is the unique-up-to-sign unitary identification  (lambda = 1)
+[C] PASS: N = 2: PARITY AUTO-ALIGNMENT -- the unique intertwiner transports F-hat onto the retained F = (x)sigma_3 exactly (S F-hat = F S), with no separate parity identification choice: F-hat is the word prod(1 - 2 psi^dag psi) and number operators are dressing-invariant, so clause (I-2) is a theorem, not an input
+[C] PASS: N = 2: FUNCTIONAL TRANSPORT -- the image vacuum Omega' = W Omega on the qubit net reproduces the declared Berezin/RP measure's OS functional on all 16 x 16 word pairs exactly (<S w Omega, S w' Omega> = lambda <w Omega, w' Omega>_Gp): the qubit net + JW dictionary + Omega' IS a realization, and by C1-C4 the only one up to the unique unitary
+[C] PASS: N = 2: EQUIVALENCE-INVARIANCE -- conjugating the realized net by an exact rational orthogonal unitary preserves CAR and parity-oddness verbatim (GL(F) is invariant under every unitary net isomorphism; the residual scalar/sign freedom in the identification is GL(F)-immaterial)
+[C] PASS: N = 3: CYCLICITY -- the 64 normal-ordered field words applied to the OS vacuum Omega span the full reconstructed space (exact rank = 2^N = 8); the functional's matrix elements over words exhaust the operator theory
+[C] PASS: N = 3: IRREDUCIBILITY -- the field words span the FULL matrix algebra M_{2^N} (exact rank 64 = 4^N): the GNS representation is the unique irreducible CAR_N representation and the OS state is pure
+[C] PASS: N = 3: FUNCTIONAL-LEVEL GL(F) -- every word-sandwiched value omega(w^dag ({psi_x, psi_y}) w') and omega(w^dag ({psi_x, psi_y^dag} - delta_xy I) w') vanishes exactly (all 64 x 64 word pairs, all x, y); combined with cyclicity, the exchange relations hold as OPERATOR IDENTITIES in EVERY realization of the functional with cyclic vacuum -- GL(F) is a property of the functional, invariant under the choice of identification
+[C] PASS: N = 3: UNIQUE INTERTWINER -- the space of operators S with S psi_x = c_x S and S psi_x^dag = c_x^T S (c = qubit-net Jordan-Wigner multiplet) has dimension EXACTLY 1 (Schur), S is invertible, and S^T S = lambda Gp with rational lambda > 0: the identification of the reconstruction with the qubit net is FORCED up to one overall scalar, i.e., W = S/sqrt(lambda) is the unique-up-to-sign unitary identification  (lambda = 1)
+[C] PASS: N = 3: PARITY AUTO-ALIGNMENT -- the unique intertwiner transports F-hat onto the retained F = (x)sigma_3 exactly (S F-hat = F S), with no separate parity identification choice: F-hat is the word prod(1 - 2 psi^dag psi) and number operators are dressing-invariant, so clause (I-2) is a theorem, not an input
+[C] PASS: N = 3: FUNCTIONAL TRANSPORT -- the image vacuum Omega' = W Omega on the qubit net reproduces the declared Berezin/RP measure's OS functional on all 64 x 64 word pairs exactly (<S w Omega, S w' Omega> = lambda <w Omega, w' Omega>_Gp): the qubit net + JW dictionary + Omega' IS a realization, and by C1-C4 the only one up to the unique unitary
+[C] PASS: N = 3: EQUIVALENCE-INVARIANCE -- conjugating the realized net by an exact rational orthogonal unitary preserves CAR and parity-oddness verbatim (GL(F) is invariant under every unitary net isomorphism; the residual scalar/sign freedom in the identification is GL(F)-immaterial)
+
+--- [D] Falsification legs (the matter-functional clause is the pin) ---
+[D] PASS: N = 2: HARD-CORE ESCAPE -- the intertwiner space onto the cross-site-commuting Pauli (hard-core) multiplet is EXACTLY 0: no identification of the reconstruction with the hard-core frame exists at all (the frame violates the functional clause I-4, and only that clause -- it carries the same carrier, the same parity-oddness, the same number operators)  (kernel dim = 0)
+[D] PASS: N = 2: the witness relation: {theta_0, theta_1} != 0 on the hard-core net while omega forces {psi_0, psi_1} = 0 in every realization (functional-level certificate [C]); a single functional value separates the frames
+[D] PASS: N = 3: HARD-CORE ESCAPE -- the intertwiner space onto the cross-site-commuting Pauli (hard-core) multiplet is EXACTLY 0: no identification of the reconstruction with the hard-core frame exists at all (the frame violates the functional clause I-4, and only that clause -- it carries the same carrier, the same parity-oddness, the same number operators)  (kernel dim = 0)
+[D] PASS: N = 3: the witness relation: {theta_0, theta_1} != 0 on the hard-core net while omega forces {psi_0, psi_1} = 0 in every realization (functional-level certificate [C]); a single functional value separates the frames
+[D] PASS: N = 2: MIRROR LEG -- the SAME functor on the ungraded (commuting-nilpotent) integrand reconstructs a PSD rank-2^N theory with cross-site COMMUTING operators (nonzero anticommutator): the identification machinery is branch-sensitive -- the functional clause (I-4) decides the frame, the discharged kinematic clauses do not
+[D] PASS: N = 2: the ungraded reconstruction admits NO intertwiner onto the CAR/JW net (kernel dim = 0) -- mirror-symmetric to the hard-core escape; each integrand class identifies only with its own frame
+[D] PASS: N = 3: PARITY ESCAPE -- an involution with unbalanced multiplicities (trace 2^N - 2 = 6) can never be unitarily aligned with F-hat (trace 0): conjugation preserves the trace, so the retained balanced-multiplicity fact (parity row (F4)) is load-bearing for the parity clause
+[D] PASS: N = 2: CYCLICITY ESCAPE -- restricting to the EVEN (parity-preserving) word subalgebra, the vacuum spans only dim 2^{N-1} = 2 < 2^N: the full-field cyclicity certificate in [C] is load-bearing for the operator-identity transport; a rival who consumes only the even observable subalgebra does not get the field dictionary forced (declared in the note's boundaries)
+
+TOTAL: PASS=39 FAIL=0
+
+----- stderr -----
+

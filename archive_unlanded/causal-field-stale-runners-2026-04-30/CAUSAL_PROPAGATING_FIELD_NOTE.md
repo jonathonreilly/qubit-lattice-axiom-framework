@@ -3,6 +3,13 @@
 **Date:** 2026-04-06
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/causal-field-stale-runners-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
 
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
+
 ## Retraction
 
 - **Date archived:** 2026-04-30
@@ -13,9 +20,29 @@
 
 - **Do NOT cite warning:** Do NOT cite the numerical results, tables, or threshold values in the original content below as live framework claims. The runners referenced in this note have been superseded or are no longer reproducible at the time of audit. If a future investigation revisits this physics, treat it as starting from scratch rather than as continuation of a 'closed no-go'.
 
-## Artifact chain
+## Boundary clarification (2026-06-16)
 
-- [`scripts/causal_propagating_field.py`](../scripts/causal_propagating_field.py)
+This archived packet is historical / diagnostic and retired as evidence. It is
+not a live authority for the `0.63 / 0.45` table, seed/strength stability,
+geometry independence, physical field speed, retarded-field carrier, or
+cross-family portability.
+
+The current source for the finite configured replay is
+[`docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](../../docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)
+with primary runner
+[`scripts/causal_propagating_field.py`](../../scripts/causal_propagating_field.py).
+The source-side bridge
+[`docs/CAUSAL_PROPAGATING_FIELD_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md`](../../docs/CAUSAL_PROPAGATING_FIELD_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md)
+records the re-audit handoff boundary: this archived note remains failed
+historical evidence, and the live packet is the only narrowed source target for
+any future re-audit.
+That live packet explicitly does not restore the archived `0.63 / 0.45`
+positive table. This archived note must not be listed as live evidence for
+downstream causal-field, Shapiro, diamond/NV, or retarded-field claims.
+
+## Historical artifact chain (retracted)
+
+- [`scripts/causal_propagating_field.py`](../../scripts/causal_propagating_field.py)
 - This note
 
 ## Question
@@ -53,7 +80,7 @@ The **dynamic/instantaneous ratio is a direct measure of the field
 propagation speed c**. If c were measurable, this would distinguish
 the model from instantaneous Newtonian gravity.
 
-## Claim boundary
+## Historical claim boundary (retracted)
 
 The causal propagating field produces a distinct, stable, geometry-independent
 observable (the dynamic ratio). This is a property of the field's spatial

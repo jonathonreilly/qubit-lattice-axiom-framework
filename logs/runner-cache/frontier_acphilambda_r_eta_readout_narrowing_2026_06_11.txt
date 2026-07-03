@@ -1,0 +1,106 @@
+===== runner cache v1 =====
+runner: scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py
+runner_sha256: fedc967309dd36e33a5dea56855bec18d2ed01b3106ef69ec4fb2c0fe7a2b723
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
+----- stdout -----
+
+========================================================================================
+S1 - context: AC_phi_lambda circulant; K/CPT conjugation = delta -> -delta
+========================================================================================
+[PASS] H(delta) is Hermitian
+[PASS] conj(H(delta)) = H(-delta)  (K/CPT acts as the delta sign flip)
+
+========================================================================================
+S2 - FORCED form leg 1: additive + orbit-constant => sign strip (re-derived)
+========================================================================================
+[PASS] additive datum is odd: g(-x) = -g(x)
+[PASS] odd AND orbit-constant (even) => identically zero (lam = 0)  [solve(g(x)=g(-x)) -> [0]]
+[PASS] sin(3 delta) is K-ODD (flips under delta -> -delta) => unregistrable
+[PASS] => FORCED: any Record-registrable delta-readout is EVEN in delta (a function of the K/CPT orbit invariant |delta|); orientation/sign stripped  [form content (S-form-1) of R-eta is derived, not admitted]
+
+========================================================================================
+S3 - FORCED form leg 2: channel separation + fundamental domain (re-derived)
+========================================================================================
+[PASS] e1 = 3a  (delta-BLIND)
+[PASS] e2 = 3a^2 - 3B^2  (delta-BLIND; the r-carrier: e2 = 3a^2(1-r) at B^2 = r a^2)
+[PASS] e2 carries r and ONLY r (no delta): e2|_{B^2=r a^2} = 3 a^2 (1 - r)
+[PASS] e3 = a^3 - 3 a B^2 + 2 B^3 cos(3 delta)  (delta enters ONLY via cos 3delta)
+[PASS] e1 is EVEN in delta (symbolic identity, all delta)
+[PASS] e2 is EVEN in delta (symbolic identity, all delta)
+[PASS] e3 is EVEN in delta (symbolic identity, all delta)
+[PASS] registrable surface has period 2pi/3 in delta: e3(delta + 2pi/3) = e3(delta)
+[PASS] => FORCED: fundamental domain [0, pi/3] (evenness + 2pi/3 period); registrable delta-content = a single point on the cos3delta channel  [form content (S-form-2) of R-eta is derived, not admitted]
+
+========================================================================================
+S4 - the machinery CANNOT select the value (hostile form-admissible family)
+========================================================================================
+[PASS] form-admissible candidate passes ALL forced constraints: c = 2/9 (the R-eta atom value)  [cos(3c) = cos(2/3)]
+[PASS] form-admissible candidate passes ALL forced constraints: c = 1/9 (contrast-cell density)  [cos(3c) = cos(1/3)]
+[PASS] form-admissible candidate passes ALL forced constraints: c = 4/9 (doubled density)  [cos(3c) = cos(4/3)]
+[PASS] form-admissible candidate passes ALL forced constraints: c = 2pi/9 (pi-packaged density)  [cos(3c) = -1/2]
+[PASS] form-admissible candidate passes ALL forced constraints: c = 3/10 (generic rational)  [cos(3c) = cos(9/10)]
+[PASS] ALL 5 inequivalent candidates pass the FORCED form layer (registrability machinery selects NONE of them)
+[PASS] the candidates are PHYSICALLY inequivalent (5 distinct cos3delta channel values => 5 distinct registered mass multisets)  [5 distinct channel values]
+[PASS] => the admitted atom is load-bearing for EXACTLY ONE real parameter: the VALUE of |delta| in the fundamental domain (and for nothing else in the R-eta statement)
+[PASS] HOSTILE r-coupled candidate |delta| = (1-r)/2 is ALSO form-admissible (K-even; r is delta-blind) - registrability does NOT forbid r-coupling; the named atom (pure C3-cycle data) is what keeps delta r-DECOUPLED  [r-firewall: no claim about the r VALUE is made or used here]
+
+========================================================================================
+S5 - hostile candidates violating NAMED hypotheses fail (negative controls)
+========================================================================================
+[PASS] signed readout f(delta) = delta VIOLATES orbit constancy (f(-delta) != f(delta) generically)
+[PASS] f = sin(3 delta) VIOLATES orbit constancy (K-odd)
+[PASS] K-even non-additive functional cos(arg) VIOLATES additivity (cos(t1+t2) != cos t1 + cos t2 at a generic point)  [residual = -1.2361171998043678796]
+[PASS] det-class phase character: orbit constancy forces k = 0 (finite scan k in [-2..2]; only k=0 survives)  [surviving k = [0]]
+[PASS] => FORCED on the det-class registrable surface: no pi * n_minus det-sign packaging factor is registrable (bounded: future NON-det readout contexts are NOT foreclosed)
+
+========================================================================================
+S6 - forced weights: transverse spectrum of the C3 cycle => (1,2); density unique within the forced-weight AB/Lefschetz class
+========================================================================================
+[PASS] 3-cycle spectrum = {1, omega, omega^2}
+[PASS] transverse (non-axis) spectrum = {omega^1, omega^2} => weight exponents (1,2) are FORCED (the cycle's own eigenvalues)  [axis eigenvalue 1 excluded; exponents read off the spectrum]
+[PASS] core identity (omega - 1)(omega^2 - 1) = 3 EXACT
+[PASS] L3(1,2) = 2/9 EXACT (Atiyah-Bott/Lefschetz fixed-locus density, forced weights)  [L3(1,2) = 2/9]
+[PASS] contrast cells L3(1,1) = L3(2,2) = 1/9 EXACT (require equal weights, NOT the forced (1,2))  [L3(1,1) = 1/9, L3(2,2) = 1/9]
+[PASS] => WITHIN the AB/Lefschetz class with the cycle's own (forced) transverse weights, the density value is UNIQUE (= 2/9); the residual freedom is CLASS MEMBERSHIP + identity reading, not a numeric dial
+
+========================================================================================
+S7 - circularity guard: the cos3delta channel does NOT assume R-eta
+========================================================================================
+[PASS] e3 derivation is symbolic in {a, B, delta} with NO density object, NO 2/9, NO L3 anywhere in the computation  [free symbols = {delta, a, B}]
+[PASS] the channel result is an IDENTITY in delta (holds for ALL delta), so it cannot have assumed any particular value of |delta|
+[PASS] the circulant form itself is consumed from the carrier/K-orbit context, which is independent of (and prior to) R-eta  [hostile guard (a) answered: no circularity]
+
+========================================================================================
+S8 - conditional value: |delta| = 2/9 EXACT conditional on the named atom
+========================================================================================
+[PASS] ATOM (A_R-eta, admitted, NOT derived): registered |delta| = AB/Lefschetz density of the realized C3[111] cycle, identity-read in radians => |delta| = 2/9 EXACT
+[PASS] 2/9 lies in the forced fundamental domain (0, pi/3)
+[PASS] 2/9 NOT in {n pi/3}: the identification route is NOT a stationarity route (separation no-go boundary respected, not entered)  [n = []]
+[PASS] registered channel point cos(3 |delta|) = cos(2/3) EXACT
+[PASS] registered surface at the atom value is K-even: e_i(2/9) = e_i(-2/9) for i = 1,2,3 EXACT
+[PASS] NOT CLAIMED: 2/9 derived. The value is fixed-locus arithmetic CONDITIONAL on A_R-eta; A_R-eta itself remains admitted
+
+========================================================================================
+S9 - boundary witnesses + r-firewall
+========================================================================================
+[PASS] r-FIREWALL: nothing in this runner constrains, forces, or derives r; the r-carrier e2 is delta-blind and is left untouched (r = the registered dial setting; sectors r in {0, 1/2, 1})
+[PASS] the delta channel (e3/cos3delta) and the r carrier (e2) are DISTINCT spectral invariants: the atom narrowing is delta-side work, r-blind
+[PASS] BOUNDED: future non-det readout contexts that might supply another dimensionless conversion factor are NOT foreclosed (the k=0 forcing is the det-class surface only)
+[PASS] NOT addressed here: sub-admission (i) occupancy selection, sub-admission (iii) species bridge, the R1b anchor, the R2 global PL/ABSS bridge, the carrier gate realization
+[PASS] no Tier-A registry edit, no downstream status set, no admission retired; this is a source-side narrowing of WHAT sub-admission (ii) admits
+[PASS] 2026-06-13 boundary: conditional support only; A_R-eta remains admitted
+[PASS] 2026-06-20 dependency-status split: explicit FORMAL H(delta) theorem present (physical readout identification is conditional/open)
+[PASS] 2026-06-20 dependency-status split: the two non-retained-grade named authorities are marked context-only
+[PASS] 2026-06-20 dependency-status split: the K-orbit circulant form is wired as a one-hop markdown-link authority at its current retained-bounded grade
+[PASS] 2026-06-20 dependency-status split: physical readout identification explicitly NOT claimed (firewall: register-not-read price class preserved)
+[PASS] Status authority preserved: independent audit lane only (no downstream status authored/altered in this source note)
+
+========================================================================================
+TOTAL: PASS=55 FAIL=0
+========================================================================================
+
+----- stderr -----
+

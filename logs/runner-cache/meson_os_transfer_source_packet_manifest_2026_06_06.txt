@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/meson_os_transfer_source_packet_manifest_2026_06_06.py
+runner_sha256: 49e8900ce4f0a13f6a2cd3e9fcfe51c5a75b83ce4f227ff3fd6c6ac323c533a1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+[PASS] path_exists:primary_runner: scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] note_links:primary_runner: scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] path_exists:primary_runner_cache: logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt
+[PASS] note_links:primary_runner_cache: logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt
+[PASS] source_full_length: bytes=47163
+[PASS] source_contains:def block_fwd_propagator_berezin(: def block_fwd_propagator_berezin(
+[PASS] source_contains:def block_fwd_propagator_operator(: def block_fwd_propagator_operator(
+[PASS] source_contains:def block_metric_spacetime_eigs(: def block_metric_spacetime_eigs(
+[PASS] source_contains:def meson_op_on_vacuum_norm(: def meson_op_on_vacuum_norm(
+[PASS] source_contains:def meson_correlator_full_berezin(: def meson_correlator_full_berezin(
+[PASS] source_contains:def meson_correlator_from_propagator(: def meson_correlator_from_propagator(
+[PASS] source_contains:def u_averaged_meson(: def u_averaged_meson(
+[PASS] source_contains:def gauge_transform_links(: def gauge_transform_links(
+[PASS] source_contains:K1  VACUUM-ANNIHILATION HANDLED: K1  VACUUM-ANNIHILATION HANDLED
+[PASS] source_contains:K2  PER-MODE-FACTORIZED BEREZIN BREAKS: K2  PER-MODE-FACTORIZED BEREZIN BREAKS
+[PASS] source_contains:K3  det-WEIGHT control: K3  det-WEIGHT control
+[PASS] source_contains:K4  SINGLE-STEP control: K4  SINGLE-STEP control
+[PASS] source_contains:K5  GAUGE INVARIANCE: K5  GAUGE INVARIANCE
+[PASS] cache_runner_present: scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] cache_sha_fresh: ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5 == ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5
+[PASS] cache_exit_ok: exit_code=0
+[PASS] cache_status_ok: status=ok
+[PASS] cache_contains:SCORECARD PASS=64 FAIL=0: SCORECARD PASS=64 FAIL=0
+[PASS] cache_contains:P0      : det-weighted avg Berezin == operator meson: P0      : det-weighted avg Berezin == operator meson
+[PASS] cache_contains:P1      : per-config Berezin(4-ferm) == operator meson: P1      : per-config Berezin(4-ferm) == operator meson
+[PASS] cache_contains:K1 VAC  : ||F|Omega>||: K1 VAC  : ||F|Omega>||
+[PASS] cache_contains:K2 BREAK: per-mode-factorized Berezin gap: K2 BREAK: per-mode-factorized Berezin gap
+[PASS] cache_contains:K3 DIFF : flat(no-det) vs det-weighted gap: K3 DIFF : flat(no-det) vs det-weighted gap
+[PASS] cache_contains:K4 CTRL : single-step block-metric min eig: K4 CTRL : single-step block-metric min eig
+[PASS] cache_contains:K5 GAUGE: ||<Theta(F)F> invariance|| under g: K5 GAUGE: ||<Theta(F)F> invariance|| under g
+========================================================================================
+SUMMARY: MESON OS SOURCE PACKET PASS=30 FAIL=0
+OUTPUT_JSON=outputs/meson_os_transfer_source_packet_manifest_2026_06_06.json
+========================================================================================
+
+----- stderr -----
+

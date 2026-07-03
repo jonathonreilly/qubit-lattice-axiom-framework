@@ -4,10 +4,16 @@
 **Status:** bounded-support positive packet; proposed for independent audit, not effective retained.
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/FIFTH_FAMILY_RADIAL_BASIN.py`](../scripts/FIFTH_FAMILY_RADIAL_BASIN.py)
+**Primary runner cache:** [`logs/runner-cache/FIFTH_FAMILY_RADIAL_BASIN.txt`](../logs/runner-cache/FIFTH_FAMILY_RADIAL_BASIN.txt)
+records `status: ok` under the runner-declared audit timeout.
 **Companion runners:**
 [`scripts/FIFTH_FAMILY_RADIAL_SWEEP.py`](../scripts/FIFTH_FAMILY_RADIAL_SWEEP.py),
 [`scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py`](../scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py),
 [`scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py`](../scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py).
+The primary basin runner intentionally imports these companion runners so the
+audit packet builder's static helper-graph resolver includes their source files
+in the restricted packet. Its cache also prints a companion packet manifest with
+source and cache SHA-256 hashes for each companion.
 
 ## Purpose
 
@@ -19,6 +25,9 @@ sampled:
   `scripts/CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py`;
 - the live basin runner recomputes ten `(drift, seed)` rows from the
   no-restore grown slice;
+- the primary basin runner declares `AUDIT_TIMEOUT_SEC = 300`, because the
+  full ten-row replay can exceed the legacy 120 second audit window under
+  contention even though it completes without changing the scientific packet;
 - four rows pass exact zero-source, exact neutral-cancellation, sign-
   orientation, and weak-charge exponent gates;
 - the two historically cited positive rows also pass the dedicated F~M
@@ -100,6 +109,11 @@ failing rows: 1
 drift=0.20 seed=0 plus=-2.028e-06 minus=+2.028e-06 exp=1.000
 ASSERTIONS: PASS
 ```
+
+The primary basin runner's `COMPANION PACKET MANIFEST` pins the companion
+sources and caches, including the F~M transfer source/cache named by the audit
+repair note. This packet-surface repair is purely runner-manifest hygiene; it
+does not widen the bounded positive claim.
 
 ## Claim Boundary
 

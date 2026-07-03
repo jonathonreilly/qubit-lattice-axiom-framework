@@ -40,6 +40,8 @@ from frontier_quark_route2_exact_readout_map import (
 )
 
 
+AUDIT_TIMEOUT_SEC = 600
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 TIMES = [0.0, 0.5, 1.0, 2.0]

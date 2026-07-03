@@ -1,7 +1,14 @@
-# Three Independent Grown Families: 9/9 Properties Match
+# Historical Three-Family Card Packet (Retracted)
 
 **Date:** 2026-04-06
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/family-card-incomplete-artifacts-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
 
 ## Retraction
 
@@ -13,7 +20,19 @@
 
 - **Do not cite warning:** Do NOT cite the numerical results, tables, or threshold values in the original content below as live framework claims. The runners referenced in this note have been superseded or are no longer reproducible at the time of audit. If a future investigation revisits this physics, treat it as starting from scratch rather than as continuation of a "closed no-go".
 
-## Families
+## 2026-06-16 archive firewall
+
+This archived packet is historical / diagnostic and retired as evidence. The
+old title and body claimed a 9/9 three-family match, but the supplied table
+itself leaves Family 3 distance alpha uncomputed. This note is not a live
+authority for geometry-independence, cross-family equality, or a retained
+three-family card.
+
+The only safe residue is the audit boundary already stated above: this is a
+partial comparison of three selected drift/restore rows with eight populated
+properties and distance-alpha data only for Families 1 and 2.
+
+## Historical sampled families (retracted)
 
 | Family | drift | restore | Distance from center |
 | --- | ---: | ---: | --- |
@@ -21,7 +40,7 @@
 | 2 | 0.05 | 0.30 | far (low both) |
 | 3 | 0.50 | 0.90 | far (high both) |
 
-## Cross-family comparison (seed=0)
+## Historical cross-family comparison (partial and retracted)
 
 | Property | Fam 1 | Fam 2 | Fam 3 | Max diff |
 | --- | ---: | ---: | ---: | ---: |
@@ -35,15 +54,24 @@
 | cx_escape (gamma=0.5) | 0.965 | 0.965 | 0.965 | 0% |
 | Distance alpha | -0.962 | -0.947 | (not yet) | 1.6% |
 
-## Claim boundary
+## Historical claim boundary (retracted and narrowed)
 
-Three independent grown families, spanning the full drift/restore parameter
-space (0.05-0.50 drift, 0.30-0.90 restore), produce quantitatively identical
-physics on all 9 measurable properties to within 5%.
+The old claim boundary asserted that three independent grown families spanning
+the drift/restore range produced quantitatively identical physics on all nine
+listed properties. That assertion is retracted because Family 3 distance alpha
+is not populated and no runner/log artifact verifies the card.
 
-This is evidence that the physics emerges from the propagator+action, not
-from the specific geometry. The growth rule determines the graph topology,
-but the observables are geometry-independent.
+This packet is not evidence that the physics emerges independently of the
+specific geometry. It is only a historical partial table.
 
-This is NOT a claim about arbitrary graphs or arbitrary growth rules.
-It is specific to the template+drift+restore family with dense NN connectivity.
+Any future repair must recompute every listed property for all three families,
+including Family 3 distance alpha, with explicit threshold assertions and a
+holdout check before reopening any equality or geometry-independence claim.
+
+## 2026-06-18 live missing-distance bridge
+
+[`docs/THREE_FAMILY_CARD_MISSING_DISTANCE_LIVE_BRIDGE_NOTE_2026-06-18.md`](../../docs/THREE_FAMILY_CARD_MISSING_DISTANCE_LIVE_BRIDGE_NOTE_2026-06-18.md)
+packages the current live evidence for the specific missing Family 3 distance
+alpha slot. It does not restore the historical 9/9 card, does not claim
+geometry independence, and does not provide the all-nine-property recomputation
+required for a full card repair.

@@ -1,11 +1,116 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_ward_identity_derivation.py
-runner_sha256: 02bc73fa878cd50a93bc5d7d8fb7512d9e0cd7c8644a167d648d3a01257e7172
+runner_sha256: fa08cefaf4b1d968604e10cef1944041dca76a7eacbcf518dcbf4051ef6c6732
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.81
+elapsed_sec: 4.81
 status: ok
 ----- stdout -----
+========================================================================
+BLOCK W1: Kernel Noether identity  sum_mu [J_mu(x) - J_mu(x-mu)] = [E_x, M]
+          staggered Q_L action, (2,3,4) periodic Z^3 block,
+          RANDOM SU(3) link background, bare mass m = 0.73
+========================================================================
+
+  Derivation being checked (note Step 0): localize the U(1) vector phase
+  rotation psi(x) -> e^{i alpha(x)} psi(x).  The variation of the staggered
+  action is  delta S = -i sum_x alpha(x) (D^- . V)(x)  with the point-split
+  current V_mu(x) = psibar J_mu(x) psi, and equally  delta S = i sum_x
+  alpha(x) psibar [M, E_x] psi.  Equating coefficient kernels of alpha(x):
+    sum_mu [J_mu(x) - J_mu(x-mu)] = [E_x, M]   for every site x.
+  This is checked below as a matrix identity on the explicit construction.
+
+  [PASS (A)] Staggered hopping matrix is antihermitian (D^dag = -D)  --  max |D + D^dag| = 0.000e+00
+  [PASS (C)] Kernel Noether identity holds at ALL 24 sites (random SU(3) links)  --  max residual over sites = 0.000e+00
+  [PASS (C)] Kernel identity holds on a SECOND independent random link background  --  max residual = 0.000e+00 (identity is configuration-by-configuration)
+
+========================================================================
+BLOCK W2: Propagator-level Ward identity (full Wick, contact terms)
+========================================================================
+
+  Checked:  sum_mu D^-_mu <V_mu(x) psi(y) psibar(z)>
+              = (delta_{x,z} - delta_{x,y}) <psi(y) psibar(z)>
+  for ALL x (24 sites) and ALL (y, z) (144 x 144 index pairs), with the
+  full Wick value <V F> = -Tr(J G) G + G J G  (disconnected + connected).
+
+  [PASS (A)] Propagator is exactly iso-diagonal (U(2)_iso symmetry of M at fixed links)  --  max iso-offdiagonal |G| = 0.000e+00
+  [PASS (C)] Exact point-split Ward identity: max residual over all (x; y, z) at machine zero  --  max |D^-.<V psi psibar> - contact| = 2.040e-15 on random SU(3) background
+  [PASS (C)] Current conservation in expectation: sum_mu D^-_mu <V_mu(x)> = 0 at every site  --  max |div <V>| = 2.276e-15
+  [PASS (C)] Ward identity exact after a RANDOM local SU(3) gauge transformation of links  --  max residual = 6.727e-16 (gauge covariance of the point-split current)
+
+========================================================================
+BLOCK W3: FALSIFICATION leg A: naive (link-stripped) current FAILS
+========================================================================
+
+  The same residuals are recomputed with the gauge links deliberately
+  REMOVED from the point-split current (action unchanged).  The Ward
+  identity must fail on a nontrivial link background -- the conservation
+  is a property of the action's symmetry current, not of bookkeeping.
+
+  [PASS (C)] Link-stripped current VIOLATES the kernel identity (residual >> 0)  --  max kernel residual = 0.9622 (vs < 1e-13 for the true current)
+  [PASS (C)] Link-stripped current VIOLATES the propagator-level Ward identity  --  max residual = 0.869859 (vs 2.040e-15 for the true current)
+  [PASS (C)] With trivial links U = 1 the 'stripped' current is the true current: residual = 0  --  max residual = 0.000e+00 (failure is located in gauge covariance)
+
+========================================================================
+BLOCK W4: FALSIFICATION leg B: eta-mismatched current FAILS
+========================================================================
+
+  The point-split current is rebuilt with eta = +1 everywhere while the
+  action keeps the staggered eta phases.  The Noether identity must fail
+  at any site where some entering eta = -1, and remain satisfied at the
+  sites where all entering eta = +1 (the mismatch is local).
+
+  [PASS (C)] Eta-mismatched current VIOLATES the kernel identity (max over sites >> 0)  --  max kernel residual over sites = 0.9860
+  [PASS (C)] Eta mismatch is LOCAL: residual vanishes at the all-eta=+1 site (0,0,0)  --  residual at (0,0,0) = 0.000e+00; max elsewhere = 0.9860
+
+========================================================================
+BLOCK W5: Iso-vector charged current: conserved at degenerate mass;
+          exact mass-insertion breaking form at split mass
+========================================================================
+
+  For t acting on iso (commutes with color links), the kernel identity is
+    sum_mu D^-_mu J^t_mu(x) = [E_x t, M] - E_x [t, mhat],
+  so the charged-current Ward identity reads
+    sum_mu D^-_mu <V^t_mu(x) F> + <(psibar E_x [t, mhat] psi) F>
+       = contact terms,
+  with [tau+, diag(m1, m2)] = (m2 - m1) tau+ : the breaking term is the
+  explicit (m2 - m1) psibar tau+ psi insertion, nothing else.
+
+  [PASS (A)] Breaking kernel identity: [tau+, diag(m1,m2) (x) 1_c] = (m2 - m1) (tau+ (x) 1_c)  --  (m2 - m1) = 0.4600; max |comm - (m2-m1) tau+| = 0.000e+00
+  [PASS (C)] Degenerate mass: charged-current Ward identity EXACT (no breaking term needed)  --  max residual = 1.395e-15 ([tau+, m 1] = 0)
+  [PASS (C)] Split mass m1 != m2: charged current NOT conserved (residual >> 0 w/o insertion)  --  max residual without insertion = 0.199313
+  [PASS (C)] Split mass: residual equals the EXACT (m2-m1) psibar tau+ psi insertion  --  max residual WITH exact mass insertion = 7.615e-16
+
+========================================================================
+BLOCK W6: EXACT-arithmetic certificate: Ward residual is EXACTLY zero
+          (sympy rationals; 2x3 staggered block; exact unimodular links)
+========================================================================
+
+  Links are exact unimodular Gaussian rationals (|z| = 1 exactly, e.g.
+  z = 3/5 + 4i/5), mass m = 7/10, propagator by exact matrix inverse.
+  The residuals below are exact symbolic zeros / exact nonzero rationals,
+  not floating-point smallness.
+
+  [PASS (A)] All exact links are unimodular: z * conj(z) = 1 EXACTLY for all 12 links  --  Gaussian-rational points on the unit circle (Pythagorean)
+  [PASS (C)] EXACT kernel Noether identity: residual is the exact zero matrix (all 6 sites)  --  sympy exact arithmetic, no floating point
+  [PASS (C)] EXACT propagator-level Ward identity: residual is the exact zero matrix  --  contact terms (delta_xz - delta_xy) G reproduced exactly
+  [PASS (C)] EXACT falsification: link-stripped current residual is an exact NONZERO rational  --  largest exact residual entry magnitude = 0.6247
+
+========================================================================
+BLOCK W7: Singlet uniformity from symmetry (commutant computation)
+========================================================================
+
+  The bilinear matrix s_{kl} = <k l*|S> transforms as s -> U s U^dag.
+  For the channel used here, U is generated by U(2)_iso on C^2 and
+  SU(3)_color on C^3.  Invariance under those actual product symmetries
+  forces s into the commutant.  Computed: that commutant is
+  1-dimensional (scalars), so the invariant unit-norm bilinear is
+  s = 1/sqrt(6) * Identity -- all 6 overlaps EQUAL 1/sqrt(6).
+  This derives the 'singlet uniformity' step rather than asserting it.
+
+  [PASS (C)] Commutant of U(2)_iso x SU(3)_color product action is 1-dimensional  --  nullspace dimension = 1 (Schur: invariant bilinear is scalar)
+  [PASS (C)] Unique invariant unit-norm bilinear has ALL 6 diagonal components = 1/sqrt(6)  --  s = c * I with ||s|| = 1 and c > 0 forces c = 1/sqrt(6)
+
 ========================================================================
 BLOCK 1: Q_L = (2,3) rep dimension (cited framework input)
 ========================================================================
@@ -57,7 +162,7 @@ BLOCK 5: Composite Higgs is uniquely the (1,1) singlet
 BLOCK 6: Clebsch-Gordan overlap = 1/sqrt(6) on all 6 basis components
 ========================================================================
   [PASS (C)] Singlet state unit norm: <S|S> = 1  --  <S|S> = 1.0000000000000002
-  [PASS (C)] All 6 basis Clebsch-Gordan overlaps equal 1/sqrt(6) (singlet uniformity)  --  overlaps = ['0.4082', '0.4082', '0.4082', '0.4082', '0.4082', '0.4082']
+  [PASS (C)] All 6 basis Clebsch-Gordan overlaps equal 1/sqrt(6) (uniformity from Block W7)  --  overlaps = ['0.4082', '0.4082', '0.4082', '0.4082', '0.4082', '0.4082']
 
 ========================================================================
 BLOCK 7: One-gluon-exchange 4-fermion coefficient (perturbative)
@@ -78,7 +183,7 @@ BLOCK 7a: Strong-coupling one-link integral (cross-check)
 
   [PASS (C)] Haar-sample dU U U^dag = (1/N_c) delta delta, MC error < 2% (N=100000)  --  max MC error = 0.0023
   [PASS (C)] C_strong (strong-coupling leading) = 1/N_c^2 = 1/9  --  C_strong = 0.1111111111, differs from C_pert = 0.1666666667
-  [PASS (C)] C_pert and C_strong are distinct (different expansions)  --  |C_pert - C_strong| = 0.0556; tadpole-improved surface selects C_pert
+  [PASS (C)] C_pert and C_strong are distinct (different expansions)  --  |C_pert - C_strong| = 0.0556; no bridge between the expansions is claimed here
 
 ========================================================================
 BLOCK 8: Dirac Fierz c_S, c_P, c_V, c_A, c_T computed from 4x4 gammas
@@ -86,37 +191,32 @@ BLOCK 8: Dirac Fierz c_S, c_P, c_V, c_A, c_T computed from 4x4 gammas
   [PASS (C)] Clifford algebra {gamma^mu, gamma^nu} = 2 g^{munu} I_4 verified  --  4x4 gamma matrices verified
   Computed Fierz coefficients for (gamma^mu)(gamma_mu) decomposition:
     c_S (scalar,           I   otimes I   )   = +1.000000
-    c_P (pseudoscalar, i γ_5 otimes i γ_5)   = -1.000000
-    c_V (vector,       γ^μ  otimes γ_μ  )   = -1.000000
-    c_A (axial,        γ^μγ_5 otimes γ_μγ_5) = -1.000000
-    c_T (tensor,      σ^{μν} otimes σ_{μν}) = +0.000000
+    c_P (pseudoscalar, i g_5 otimes i g_5)   = -1.000000
+    c_V (vector,       g^mu  otimes g_mu  )   = -1.000000
+    c_A (axial,        g^mu g_5 otimes g_mu g_5) = -1.000000
+    c_T (tensor,      sigma^munu otimes sigma_munu) = +0.000000
 
   [PASS (C)] c_S has magnitude close to 1 (scalar channel nonzero)  --  c_S = +1.0000, consistent with textbook scalar Fierz
   [PASS (C)] c_P has magnitude close to 1 (pseudoscalar channel nonzero)  --  c_P = -1.0000, consistent with textbook pseudoscalar Fierz
   [PASS (C)] c_T = 0 (tensor channel vanishes for vector-vector Fierz)  --  c_T = 0.000000e+00, verified zero at machine precision
 
 ========================================================================
-BLOCK 9: Perturbative 1-loop vertex correction (SUPPORT-ONLY)
+BLOCK 9: Perturbative 1-loop vertex correction (CONTEXT, LOG-ONLY)
 This block documents the perturbative 1-loop vertex correction
-magnitude; it is NOT part of the core identification surface.
-The support note makes no precision claim; see bridge note.
+magnitude using the canonical plaquette helper constants.  It is NOT
+part of the auditable claim and attaches NO PASS/FAIL line to any
+helper-imported constant.  The source note makes no precision claim.
 ========================================================================
-  alpha_LM = alpha_bare / u_0 = 0.090668
+  alpha_LM = alpha_bare / u_0 = 0.090668   (helper constant, context)
   C_F = (N_c^2 - 1)/(2 N_c) = 1.333333
-  [PASS (C)] Asymptotic series optimal truncation n_opt >> 1  --  n_opt = pi/alpha_LM = 34.6 loops (convergent at 1-loop and 2-loop)
-  NLO correction to y_t/g_s: alpha_LM * C_F / (2 pi) = 1.924%
-  NNLO: (alpha_LM/pi)^2 * C_F^2 = 0.1481%
-  [PASS (C)] NLO correction within existing Yukawa-lane systematic (~3%)  --  NLO 1.92% < 3% (lane budget)
-  [PASS (C)] NNLO correction is negligible (< 0.5%)  --  NNLO = 0.1481%
+  asymptotic-series optimal truncation n_opt = pi/alpha_LM = 34.6 loops
+  NLO vertex-correction magnitude: alpha_LM * C_F / (2 pi) = 1.924%
+  NNLO magnitude: (alpha_LM/pi)^2 * C_F^2 = 0.1481%
+  (context only; no lane budget, no precision claim, no check line)
 
 ========================================================================
-BLOCK 10: Conditional tadpole-ratio context (NON-LOAD-BEARING)
+BLOCK 10: Same-1PI-function inputs (checked) + tadpole context (log-only)
 ========================================================================
-
-  The source note's load-bearing claim is the bare H_unit matrix element
-  y_t_bare = g_bare/sqrt(6), verified directly in Block 11.
-  This block keeps the older canonical-surface tadpole arithmetic as
-  context only; it does not certify the shared tadpole transport bridge.
 
   Step 3 (same-1PI-function residue identity, scalar-singlet only):
     Define Gamma^(4)(q^2) := P_{S,(1,1)} <psi-bar psi(q) psi-bar psi(-q)>_1PI,amp
@@ -124,86 +224,44 @@ BLOCK 10: Conditional tadpole-ratio context (NON-LOAD-BEARING)
     Representation A (direct OGE in bare action):
       D16: only OGE diagram contributes at tree (Wilson plaq + staggered)
       D12: color singlet Fierz coefficient -1/(2 N_c) (Block 4)
-      S2:  Lorentz scalar projection |c_S| = 1 (Block 8)
+      Lorentz-Clifford scalar projection |c_S| = 1 (Block 8)
       => Gamma^(4)|_OGE = -c_S * g_bare^2 / (2 N_c * q^2) * O_S
 
     Representation B (composite operator H_unit):
       D9:  H_unit is composite operator, not independent field
-      D17: H_unit is UNIQUE scalar (1,1) composite on Q_L (Block 5)
+      D17: H_unit is UNIQUE scalar (1,1) composite on Q_L (Blocks 5, W7)
       => Gamma^(4)|_H_unit-rep = -y_t_bare^2 / q^2 * O_S
 
-    Same Green's function in same theory => coefficients agree:
-      y_t_bare^2 = g_bare^2 / (2 N_c) = 1/6  (Block 11)
-
-  Conditional context: if a later retained bridge supplies the same
-  1/sqrt(u_0) dressing for both the scalar-singlet matrix element and
-  the gauge vertex, the ratio would remain 1/sqrt(2 N_c) = 1/sqrt(6).
-
-  [PASS (C)] C_pert from D12 (Block 4/7): SU(N_c) color-singlet Fierz = 1/(2 N_c) = 1/6  --  C_pert = 0.1666666667
-  [PASS (C)] |c_S| from S2 (Block 8): Lorentz scalar projection coefficient = 1  --  |c_S| = 1.0000000000
-  Representation A side (OGE-only, from D12 + S2):
+  [PASS (A)] C_pert from D12 (Block 4/7): SU(N_c) color-singlet Fierz = 1/(2 N_c) = 1/6  --  C_pert = 0.1666666667
+  [PASS (A)] |c_S| from Lorentz-Clifford standard identity (Block 8): scalar projection coefficient = 1  --  |c_S| = 1.0000000000
+  Representation A side (OGE-only, from D12 + Lorentz-Clifford scalar projection):
     q^2 |Gamma^(4)|_OGE = |c_S| * g_bare^2 * C_pert
                        = 1.000000 * 1.000000 * 0.166667
                        = 0.1666666667  (= 1/6 at canonical g_bare = 1)
-  [PASS (C)] Representation A: q^2 |Gamma^(4)|_OGE = g_bare^2/(2 N_c) from D12 + S2  --  OGE-side coefficient = 0.1666666667, target 1/(2 N_c) = 0.1666666667
+  [PASS (C)] Representation A: q^2 |Gamma^(4)|_OGE = g_bare^2/(2 N_c) from D12 + Lorentz-Clifford projection  --  OGE-side coefficient = 0.1666666667, target 1/(2 N_c) = 0.1666666667
 
   y_t_bare value used downstream (derived independently in Block 11):
     y_t_bare = 1/sqrt(2 N_c) = 0.4082482905    (from H_unit matrix element)
     y_t_bare^2              = 0.1666666667
-  Block 11 confirms y_t_bare^2 = q^2 |Gamma^(4)|_OGE = 0.1666666667
-  [PASS (C)] Cross-check: Block 6 Clebsch-Gordan overlap = y_t_bare from H_unit (Block 11)  --  overlap = 0.4082482905, y_t_bare from Rep B = 0.4082482905 (same 1/sqrt(6))
+  [PASS (A)] Cross-check: Block 6 Clebsch-Gordan overlap = y_t_bare from H_unit (Block 11)  --  overlap = 0.4082482905, y_t_bare from Rep B = 0.4082482905 (same 1/sqrt(6))
 
-  Bare level (g_bare = 1.0):
-    y_t(bare) = 0.408248 = 1/sqrt(6)  (from H_unit matrix element, Block 11)
-    g_s(bare) = g_bare = 1.000000
-    ratio = 1/sqrt(6) = 0.4082482905
-
-  Canonical surface (D15: n_link = 1 per vertex, common tadpole):
-    tadpole factor = 1/sqrt(u_0) = 1.067411
-    g_s(M_Pl)  = g_bare * tadpole = 1.067411
-    y_t(M_Pl)  = y_t(bare) * tadpole = 0.435769
-  [PASS (C)] CONTEXT: g_s(M_Pl) = 1/sqrt(u_0) = sqrt(4 pi alpha_LM) if tadpole bridge is admitted  --  both = 1.0674107130
-  [PASS (C)] CONTEXT: y_t(M_Pl) / g_s(M_Pl) = 1/sqrt(6) if shared tadpole bridge is admitted  --  ratio = 0.4082482905
-  Downstream numerical top-Yukawa values are intentionally not checked here.
-  This runner does not import the old 0.4358 comparison as authority.
-  [PASS (C)] CONTEXT: conditional y_t(M_Pl) tracks Clebsch-Gordan overlap (Block 6)  --  counterfactual (10% shift in overlap): y_t -> 0.479345, differs from derived 0.435769
-
-  === Support chain (same-1PI-function residue identity) ===
-
-  The support note makes NO quantitative precision claim.
-  It states only the exact same-1PI-function residue identity
-  on the scalar-singlet channel:
-
-    A1 (one-qubit/physical-Cl(3)) + A2 (Z^3) + D1-D17 + S1 + S2 ->
-
-    [Representation A — OGE-side computation, this Block 10]
-       Color singlet Fierz: -1/(2 N_c) [D12, Block 4]
-       Lorentz scalar projection: |c_S| = 1 [S2, Block 8]
-       D16: only OGE at tree on scalar-singlet channel
-       => q^2 |Gamma^(4)|_OGE = |c_S| * g_bare^2 / (2 N_c) = 1/6
-
-    [Representation B — H_unit operator-side computation, Block 11]
-       y_t_bare := <0 | H_unit | t-bar t> = (1/sqrt(N_c N_iso)) * 1
-       D9 + D17 + Steps 1-2 fix the H_unit content; Wick contraction
-       gives y_t_bare = 1/sqrt(6) INDEPENDENTLY (no OGE input)
-       => q^2 |Gamma^(4)|_H = y_t_bare^2 = 1/6
-
-    Both A and B independently give 1/6; consistency confirmed in Block 11.
-    Conditional tadpole context: if both vertices share the same dressing,
-       y_t(M_Pl)/g_s(M_Pl) remains 1/sqrt(6). This is not load-bearing.
-
-  Quantitative NLO / precision / systematic discussion is SUPPORT-ONLY
-  (see Block 9 and docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md).
-  It is NOT part of the core support chain.
+  --- Conditional canonical-surface tadpole context (LOG-ONLY) ---
+  Bare level (g_bare = 1.0): y_t(bare)/g_s(bare) = 1/sqrt(6) = 0.4082482905
+  IF a later accepted bridge supplies a common 1/sqrt(u_0) dressing for both
+  vertices (NOT certified here): tadpole factor = 1.067411,
+  g_s -> 1.067411, y_t -> 0.435769, ratio stays 0.4082482905.
+  (cross-note context: sqrt(4 pi alpha_LM) = 1.067411 -- helper constant)
+  These tadpole lines are context only: no PASS/FAIL is attached to them,
+  and this runner does NOT certify the shared-tadpole transport bridge.
 
 ========================================================================
-BLOCK 11: Scalar-singlet 1PI residue identity audit
+BLOCK 11: Scalar-singlet 1PI residue identity check
 ========================================================================
 
-  This block audits ONLY the load-bearing scalar-singlet channel.
+  This block checks ONLY the load-bearing scalar-singlet channel.
 
-  The support runner evaluates y_t_bare = 1/sqrt(6) by TWO
-  computations within the same cited framework surface:
+  The runner evaluates y_t_bare = 1/sqrt(6) by TWO computations within
+  the same cited framework surface:
 
     Representation A (OGE in bare action, Block 7 + 4 + 8):
         Gamma^(4)(q^2) = -c_S * g_bare^2 / (2 N_c * q^2) * O_S
@@ -218,8 +276,8 @@ BLOCK 11: Scalar-singlet 1PI residue identity audit
   Both computations are made INDEPENDENTLY (B does not reference A).
   The two values then agree, confirming framework internal consistency.
 
-  [PASS (C)] Color-singlet Fierz coefficient -1/(2 N_c) computed from D12 (Block 4)  --  -1/(2 N_c) = -0.1666666667 (exact SU(N_c) algebra)
-  [PASS (C)] Lorentz scalar projection coefficient |c_S| = 1 (S2, Block 8)  --  |c_S| = 1.0000000000 (exact Clifford-algebra identity)
+  [PASS (A)] Color-singlet Fierz coefficient -1/(2 N_c) computed from D12 (Block 4)  --  -1/(2 N_c) = -0.1666666667 (exact SU(N_c) algebra)
+  [PASS (A)] Lorentz scalar projection coefficient |c_S| = 1 (standard Clifford identity, Block 8)  --  |c_S| = 1.0000000000 (exact Clifford-algebra identity)
   Representation A: q^2 |Gamma^(4)|_OGE = |c_S| * g_bare^2 / (2 N_c)
                                      = 1.0000 * 1.0000 / 6.0000
                                      = 0.1666666667
@@ -238,7 +296,7 @@ BLOCK 11: Scalar-singlet 1PI residue identity audit
      B (H_unit):  0.1666666667
      Difference:  5.551e-17
   [PASS (C)] Independent A and B agree -> framework internal consistency verified  --  |A - B| = 5.551e-17 after both independently = 1/6
-  [PASS (C)] Cross-check: Block 6 Clebsch-Gordan overlap = y_t_bare from Rep B  --  Block 6 CG = 0.4082482905, Rep B y_t_bare = 0.4082482905
+  [PASS (A)] Cross-check: Block 6 Clebsch-Gordan overlap = y_t_bare from Rep B  --  Block 6 CG = 0.4082482905, Rep B y_t_bare = 0.4082482905
 
 ========================================================================
 BLOCK 12: Two-gluon color-trace algebra (SUPPORT-ONLY)
@@ -249,72 +307,57 @@ identification surface; it documents SU(N_c) algebraic facts.
 
   Sum over a,b of Tr(T^a T^b)^2  [planar]     = +2.000000
   Sum over a,b of Tr(T^a T^b T^a T^b) [non-pl] = -0.666667
-  [PASS (C)] Planar 2-gluon color trace = (N_c^2 - 1)/4 = 2.0000  --  computed = 2.000000, SU(3) exact
-  [PASS (C)] Non-planar 2-gluon color trace = -(N_c^2 - 1)/(4 N_c) = -0.6667  --  computed = -0.666667, SU(3) exact
+  [PASS (A)] Planar 2-gluon color trace = (N_c^2 - 1)/4 = 2.0000  --  computed = 2.000000, SU(3) exact
+  [PASS (A)] Non-planar 2-gluon color trace = -(N_c^2 - 1)/(4 N_c) = -0.6667  --  computed = -0.666667, SU(3) exact
 
   |non-planar / planar| = 1/N_c = 0.333333 (computed: 0.333333)
-  [PASS (C)] Non-planar suppression from color: ratio = 1/N_c = 1/3 for SU(3)  --  |NP/P| = 0.333333, expected 1/N_c = 0.333333
+  [PASS (A)] Non-planar suppression from color: ratio = 1/N_c = 1/3 for SU(3)  --  |NP/P| = 0.333333, expected 1/N_c = 0.333333
 
-  KEY RESULT: at O(alpha_LM) (NLO), there is only ONE 1-loop topology
-  contributing to the y_t/g_s ratio: the planar vertex correction.
-  Non-planar topologies require >= 2 gluons in a loop with crossed
-  propagators, which first appear at O(alpha_LM^2) = NNLO.
-
-  Therefore at NLO, non-planar corrections are IDENTICALLY ZERO.
-  The 1.92% vertex-correction bound (Block 9) is the COMPLETE NLO.
-
-  The trace computation below shows the magnitude of non-planar
-  suppression IF it were to appear at NLO (it doesn't, but the
-  ratio 1/N_c = 1/3 is a rigorous SU(3) algebraic fact).
-
-  [PASS (C)] NLO topology counting: non-planar contributions are IDENTICALLY ZERO at O(alpha_LM)  --  non-planar 1-loop diagrams at NLO = 0; planar 1-loop diagrams = 7 (all counted in Block 9's delta_PT)
-
-  NNLO non-planar magnitude (for the record, where 1/N_c^2 enters):
-    delta_NNLO_NP = (alpha_LM * C_F / pi)^2 * 1/N_c^2
-                  = 0.001481 * 0.111111
-                  = 0.0165%  (negligible)
-  [PASS (C)] NNLO non-planar correction is negligible (< 0.05%)  --  delta_NNLO_NP = 0.0165% (genuinely negligible)
+  CONTEXT (log-only): at O(alpha_LM) the 1-loop topologies entering the
+  4-point function are all planar; crossed-2-gluon (non-planar) topologies
+  first appear at O(alpha_LM^2).  Using the helper alpha_LM constant the
+  NNLO non-planar magnitude would be
+    delta_NNLO_NP = (alpha_LM * C_F / pi)^2 / N_c^2 = 0.0165%
+  -- context only, no PASS/FAIL attached, no precision claim.
 
 ========================================================================
 SUMMARY
 ========================================================================
-  PASS: 44
+  PASS: 58
   FAIL: 0
 
-  Every load-bearing coefficient in YT_WARD_IDENTITY_DERIVATION_THEOREM
-  is computed independently from inputs:
+  WARD-IDENTITY THEOREM (load-bearing, Blocks W1-W6):
+  - W1: kernel Noether identity sum_mu D^-_mu J_mu(x) = [E_x, M] computed
+        at machine zero on explicit (2,3,4) Z^3 blocks with two
+        independent RANDOM SU(3) link backgrounds.
+  - W2: propagator-level Ward identity with contact terms exact for all
+        (x; y, z); <div V> = 0; exact under random gauge transformation.
+  - W3/W4: FALSIFICATION -- the residual is COMPUTED NONZERO when the
+        point-split current is link-stripped or eta-mismatched; the
+        identity is a property of the action's symmetry, not a definition.
+  - W5: iso-vector current conserved at degenerate mass; at split mass the
+        residual equals the exact (m2-m1) psibar tau+ psi insertion.
+  - W6: EXACT-arithmetic certificate (sympy rationals): residuals exactly 0.
+  - W7: singlet uniformity DERIVED via commutant/Schur computation.
+
+  MATRIX-ELEMENT COROLLARY (T1) (Blocks 1-8, 11):
   - Block 2: Z^2 = N_c N_iso from explicit index-contraction sum
-  - Block 4: Fierz identity verified against Gell-Mann-matrix computation
-  - Block 6: Clebsch-Gordan overlap computed from unit-norm singlet state
-  - Block 7: C_pert = 1/(2 N_c) extracted from Fierz (Block 4)
-  - Block 7a: C_strong = 1/N_c^2 from Haar-sampled one-link integral
-  - Block 8: Dirac Fierz c_S, c_P, ... computed from 4x4 Clifford matrices
-  - Block 9: SUPPORT-ONLY — perturbative 1-loop vertex correction
-             magnitude from alpha_LM, C_F inputs.  Not part of the
-             core support chain.
-  - Block 10: computes the OGE-side coefficient (Representation A) of
-             the same-1PI-function identity using D12 + S2; uses the
-             y_t_bare value derived independently in Block 11 to drive
-             a conditional canonical-surface tadpole context check.
-             This context is NON-LOAD-BEARING and does not certify
-             y_t(M_Pl)/g_s(M_Pl) as a retained bridge.
-  - Block 11: evaluates y_t_bare = 1/sqrt(6) INDEPENDENTLY from the
-             H_unit operator matrix element (Clebsch-Gordan + canonical
-             normalization, no OGE input); then verifies the value
-             agrees with Block 10's OGE-side coefficient as a
-             same-1PI-function consistency check.
-  - Block 9, Block 12: SUPPORT-ONLY (perturbative NLO discussion
-             and 2-gluon color-trace algebra). Not part of the
-             core support chain. Documented in the bridge note.
+  - Block 4: SU(3) Fierz verified from Gell-Mann matrices
+  - Block 6: Clebsch-Gordan overlap from unit-norm singlet state
+  - Block 8: Dirac Fierz coefficients from explicit 4x4 Clifford matrices
+  - Block 11: y_t_bare = 1/sqrt(6) evaluated INDEPENDENTLY from the H_unit
+        matrix element; agrees with the OGE-side same-1PI coefficient.
 
-  Support result (exact tree-level algebraic identity on the stated surface):
-    y_t_bare = g_bare / sqrt(6)
-    Conditional context only: a later retained shared-tadpole bridge would
-      preserve y_t(M_Pl) / g_s(M_Pl) = 1/sqrt(6), but this runner does not
-      certify that bridge.
+  CONTEXT ONLY (no PASS/FAIL attached to helper plaquette constants):
+  - Block 9 (NLO magnitude), Block 10 tadpole lines, Block 12 NNLO line.
+  This runner does NOT certify the physical top-Yukawa readout map, the
+  shared tadpole transport bridge, or any precision claim.
 
-  No precision bound is attached to this support note.
-  Quantitative corrections and physical top-Yukawa readout are out of scope.
+  Result on the stated bounded surface:
+    (W1)  exact point-split vector Ward identity of the staggered Q_L action
+    (T1)  y_t_bare = g_bare / sqrt(6)   (g_bare-flat form factor)
+
+TOTAL: PASS=58 FAIL=0
   See docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md for the source note.
 
 ----- stderr -----

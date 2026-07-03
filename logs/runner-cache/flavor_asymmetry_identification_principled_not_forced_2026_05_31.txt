@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_asymmetry_identification_principled_not_forced_2026_05_31.py
-runner_sha256: 1064a798f89331874edd9a726dfa938da2bd6d373dc7b27f1036d5490914c13f
+runner_sha256: ba574f5b4411e32088cac68656967eb5ba08d469cc7a5fc388b4c0498abb43b7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 [PASS] F1 single-fixed-point local density L_3(1,2)=2/9; global sum = L*(2/9) extensive
@@ -15,8 +15,16 @@ status: ok
        gen space = C3[111] fixed locus reading its local density: load-bearing, undischarged on main
 [PASS] F5 dimensionless 2/9 != CP radian-delta (2/9 rad): (2/9)/(q*pi) irrational (retained radian-bridge separation)
        not conflated; the radian-bridge no-go is a different surface
+[PASS] F6 lepton delta=2/9 source packet is audited-clean open_gate, not a phase derivation
+       lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26: audit=audited_clean effective=open_gate
+[PASS] F7 downstream note names lepton source packet note, runner, and cache
+       restricted packet includes exact residual note/runner/cache
+[PASS] F8 lepton source packet keeps phase/coefficient/scale open
+       no downstream promotion of the open comparator
+[PASS] F9 lepton runner cache is SHA-fresh and clean
+       cache runner=scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py status=ok
 
-SCORECARD PASS=5 FAIL=0
+SCORECARD PASS=9 FAIL=0
 VERDICT: PRINCIPLED-BUT-NOT-FORCED. Type-filter forces (c) among the three index objects (excludes
 eta=0 and the extensive sum) -- not a cherry-pick. But the single-locus density is a CONTRIBUTION,
 not an invariant; treating it as the observable needs the generation-space bridge (gen space =

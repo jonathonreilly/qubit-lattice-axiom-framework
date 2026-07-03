@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
-"""P2 determinant-realization bridge, conditional on supplied frame data.
+"""P2 finite determinant/relabeling boundary manifest.
 
 In-repo verification companion for
 docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md.
 
-This runner does NOT introduce new derivations; it re-exhibits, on finite
-carriers, the retained finite algebraic facts that the note ASSEMBLES, and
-verifies the SEPARABILITY crux (relabeling-invariance). The repaired note is
-explicitly conditional on FS, on the supplied matter-operator identification
-D = M_KS, and on the supplied premise that AC_phi_lambda is only an S_3
-relabeling of the hw=1 triplet.
+This runner re-exhibits, on finite carriers, the finite determinant and
+relabeling facts that the 2026-06-07 source boundary now makes direct. The
+physical realization reading remains conditional on FS, on the actual
+matter-operator identification D = M_KS, on determinant-to-trace routing, and on
+the premise that AC_phi_lambda is only an S_3 relabeling of the hw=1 triplet.
 
   BLOCK 1 -- BEREZIN GAUSSIAN-DETERMINANT IDENTITY.
     The fermion partition function is the finite Grassmann Gaussian
@@ -52,7 +51,9 @@ no g_bare, no audit-lane data.
 from __future__ import annotations
 
 import itertools
+import json
 import math
+from pathlib import Path
 
 import numpy as np
 import sympy as sp
@@ -60,9 +61,68 @@ import sympy as sp
 # ---------------------------------------------------------------------------
 # Conventions (match the cited retained notes; no new convention introduced)
 # ---------------------------------------------------------------------------
-MASS = 0.7          # staggered mass m > 0 (Block 2, Block 3 baseline)
+MASS = 0.7          # staggered mass m > 0 (zero-source and positive-mass baselines)
 A_TAU = 1.0         # temporal lattice spacing (sets beta = L_t * a_tau)
 TOL = 1e-12         # machine-precision tolerance for invariance / positivity
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md"
+LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
+
+DEPENDENCY_STATUS = {
+    "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded",
+    "staggered_only_det_positivity_case_a_note_2026-05-17": "retained",
+    "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded",
+    "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go",
+}
+
+
+def _walk_ledger(node):
+    if isinstance(node, dict):
+        yield node
+        for value in node.values():
+            yield from _walk_ledger(value)
+    elif isinstance(node, list):
+        for value in node:
+            yield from _walk_ledger(value)
+
+
+def ledger_row(claim_id: str) -> dict:
+    ledger = json.loads(LEDGER.read_text())
+    for row in _walk_ledger(ledger):
+        if row.get("claim_id") == claim_id or row.get("id") == claim_id:
+            return row
+    return {}
+
+
+def check_source_boundary() -> list[tuple[str, bool]]:
+    text = NOTE.read_text()
+    out: list[tuple[str, bool]] = []
+
+    out.append((
+        "note carries 2026-06-07 finite-determinant boundary retargeting",
+        "2026-06-07 finite-determinant boundary retargeting" in text,
+    ))
+    out.append((
+        "direct claim is finite determinant/relabeling boundary, not physical realization",
+        "finite determinant/relabeling boundary manifest" in text
+        and "not load-bearing direct-claim inputs" in text,
+    ))
+    out.append((
+        "FS, D=M_KS, determinant-to-trace, and AC relabeling remain outside direct proof load",
+        "does not ask audit to accept `FS`, `D = M_KS`, determinant-to-trace routing, or" in text
+        and "`AC_phi_lambda`-as-relabeling as proved framework premises" in text,
+    ))
+    out.append((
+        "historical conditional assembly is context, not the direct bounded target",
+        "kept as context but no longer the direct" in text,
+    ))
+    for claim_id, expected in DEPENDENCY_STATUS.items():
+        row = ledger_row(claim_id)
+        out.append((
+            f"ledger dependency {claim_id} has effective_status={expected}",
+            row.get("effective_status") == expected,
+        ))
+    return out
 
 
 # ===========================================================================
@@ -326,11 +386,13 @@ def check_relabeling_invariance() -> list[tuple[str, bool]]:
 
 def main() -> int:
     print("=" * 78)
-    print("P2 DETERMINANT-REALIZATION BRIDGE, CONDITIONAL ON SUPPLIED FRAME DATA")
-    print("assembly + separability under supplied D=M_KS and AC relabeling premises")
+    print("P2 FINITE DETERMINANT/RELABELING BOUNDARY MANIFEST")
+    print("bounded finite algebra; physical realization premises stay conditional")
     print("=" * 78)
 
     sections: list[tuple[str, list[tuple[str, bool]]]] = [
+        ("SOURCE BOUNDARY  direct bounded claim and ledger dependency classes",
+         check_source_boundary()),
         ("BLOCK 1  Berezin Gaussian-determinant identity  Z_F[M] = det(M)",
          check_berezin()),
         ("BLOCK 2  staggered determinant positivity (zero-source, phase-free)",
@@ -354,15 +416,14 @@ def main() -> int:
     print("\n" + "=" * 78)
     print("INTERPRETATION")
     print("-" * 78)
-    print("Block 1: on the supplied fermionic frame, the finite Berezin")
-    print("  partition function is det(D+J), so W = log|det(D+J)| is the generator.")
-    print("Block 2: on the supplied zero-source staggered surface det(M_KS+mI) > 0, so")
-    print("  log|det| = log det (no phase) -- the realization half of P2 there.")
-    print("Block 3 (CRUX): det, spec(H_hat), Z are invariant under ALL S_3")
-    print("  relabelings of the hw=1 triplet and the delta mass-pattern. Given")
-    print("  the supplied premise that AC_phi_lambda is only such a relabeling,")
-    print("  the determinant readout is blind to it. The remaining realization")
-    print("  residual is FS plus the supplied D=M_KS and AC-relabeling premises.")
+    print("Source boundary: the direct bounded claim is finite determinant")
+    print("  algebra plus relabeling invariance. It does not derive FS, actual")
+    print("  D=M_KS, determinant-to-trace routing, or AC_phi_lambda-as-relabeling.")
+    print("Block 1: finite Berezin Gaussian algebra gives Z_F[M] = det(M).")
+    print("Zero-source section: on the supplied finite zero-source staggered surfaces,")
+    print("  det(M_KS+mI) > 0, so log|det| = log det there.")
+    print("Block 3: det, spec(H_hat), and Z are invariant under all finite S_3")
+    print("  relabelings of the hw=1 triplet and the delta mass-pattern.")
     print("=" * 78)
     print(f"SCORECARD: PASS={npass} FAIL={nfail}")
     return 0 if nfail == 0 else 1

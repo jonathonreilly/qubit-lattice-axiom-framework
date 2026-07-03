@@ -47,6 +47,7 @@ import json
 import re
 import sys
 from collections import defaultdict
+from fnmatch import fnmatchcase
 from pathlib import Path
 
 import premise_nodes
@@ -89,6 +90,18 @@ def is_retained_grade(status):
     if isinstance(status, str) and status.startswith("decoration_under_"):
         return True
     return False
+
+
+def is_chain_satisfying_status(status):
+    """Mirror compute_effective_status.is_chain_satisfying_status.
+
+    Metadata rows can satisfy theorem/no-go dependency closure as stable audit
+    context, but they are not retained-grade theorem support and do not satisfy
+    decoration-parent retention.
+    """
+    return status == "meta" or is_retained_grade(status)
+
+
 ALLOWED_EFFECTIVE_STATUSES = {
     "retained",
     "retained_no_go",
@@ -121,8 +134,8 @@ ALLOWED_PROSE_STATUS = {
     None,  # legacy rows pre-Cleanup-1 backfill
 }
 
-# Repair classes that audited_conditional rows must prefix in
-# notes_for_re_audit_if_any (per docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md).
+# Repair classes that audited_conditional / audited_renaming rows must prefix
+# in notes_for_re_audit_if_any (per docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md).
 ALLOWED_REPAIR_CLASSES = {
     "missing_dependency_edge",
     "dependency_not_retained",
@@ -255,6 +268,23 @@ def main() -> int:
     def add_notice(category: str, message: str) -> None:
         notices[category].append(message)
 
+    def _load_pattern_file(name: str) -> tuple[str, ...]:
+        path = DATA_DIR / name
+        if not path.exists():
+            return ()
+        return tuple(
+            line.strip()
+            for line in path.read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.strip().startswith("#")
+        )
+
+    # Typing-policy surfaces (see seed_audit_ledger.default_claim_type_for):
+    # rows still under the silent positive_theorem default are warned below,
+    # and rows grandfathered under excluded source patterns are noticed so
+    # the exclusion-registry / ledger divergence stays visible.
+    excluded_source_patterns = _load_pattern_file("excluded_source_patterns.txt")
+    never_gate_source_paths = frozenset(_load_pattern_file("never_gate_source_paths.txt"))
+
     if TIER_A_ADMISSIONS_PATH.exists():
         try:
             tier_a = load_json(TIER_A_ADMISSIONS_PATH)
@@ -348,6 +378,38 @@ def main() -> int:
                 "legacy_claim_type_backfill",
                 f"{cid}: claim_type was backfilled for a critical legacy audit; queue for re-audit"
             )
+        if row.get("claim_type_provenance") == "default_positive_theorem":
+            add_warning(
+                "claim_type_defaulted",
+                f"{cid}: claim_type silently defaulted to positive_theorem; add an "
+                f"explicit 'Type:' header to {row.get('note_path')}, or register the "
+                "path in docs/audit/data/meta_source_patterns.txt (catalog/index) or "
+                "docs/audit/data/excluded_source_patterns.txt (non-claim infra)"
+            )
+        row_note_path = row.get("note_path") or ""
+        if (
+            excluded_source_patterns
+            and row_note_path
+            and row_note_path not in never_gate_source_paths
+            and any(fnmatchcase(row_note_path, pat) for pat in excluded_source_patterns)
+        ):
+            row_has_audit_history = (
+                row.get("audit_status") not in (None, "unaudited")
+            ) or bool(row.get("previous_audits"))
+            if row_has_audit_history:
+                add_notice(
+                    "excluded_path_row_grandfathered",
+                    f"{cid}: {row_note_path} matches data/excluded_source_patterns.txt "
+                    "but carries audit history, so history-preserving exclusion keeps "
+                    "it (should_gate_node); retiring it is an owner/audit-lane decision"
+                )
+            else:
+                add_notice(
+                    "excluded_path_row_pending_drop",
+                    f"{cid}: {row_note_path} matches data/excluded_source_patterns.txt "
+                    "with no audit history; the next seeding run drops the row and "
+                    "strips its inbound dep edges"
+                )
         if ind not in ALLOWED_INDEPENDENCE:
             errors.append(f"{cid}: independence={ind!r} not in allowed set")
 
@@ -374,18 +436,20 @@ def main() -> int:
                 f"{cid}: prose_status missing; run backfill_prose_status.py"
             )
 
-        # Repair-class enforcement on audited_conditional rows
-        # (per docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md and README.md).
-        # Conditional verdicts must prefix notes_for_re_audit_if_any with one
-        # of the seven allowed repair classes so the repair lane is
-        # machine-sortable. Legacy rows lacking the prefix queue for re-audit.
-        if a == "audited_conditional":
+        # Repair-class enforcement on audited_conditional / audited_renaming
+        # rows (per docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md and README.md).
+        # These terminal repairable verdicts must prefix
+        # notes_for_re_audit_if_any with one of the seven allowed repair
+        # classes so the repair lane is machine-sortable. Legacy rows lacking
+        # the prefix queue for re-audit.
+        if a in ("audited_conditional", "audited_renaming"):
             notes = row.get("notes_for_re_audit_if_any") or ""
-            first_token = notes.strip().split(":", 1)[0].strip().split()[0].lower() if notes.strip() else ""
+            prefix_tokens = notes.strip().split(":", 1)[0].strip().split()
+            first_token = prefix_tokens[0].lower() if prefix_tokens else ""
             if first_token not in ALLOWED_REPAIR_CLASSES:
                 add_warning(
                     "conditional_repair_prefix",
-                    f"{cid}: audited_conditional notes_for_re_audit_if_any must start with one of "
+                    f"{cid}: {a} notes_for_re_audit_if_any must start with one of "
                     f"{sorted(ALLOWED_REPAIR_CLASSES)} (got {first_token!r}); re-audit required"
                 )
 
@@ -677,9 +741,28 @@ def main() -> int:
                 f"{cid}: source note missing on disk: {row.get('note_path')}",
             )
         elif on_disk != row.get("note_hash"):
-            errors.append(
-                f"{cid}: note_hash mismatch — note edited since seeding; re-run seed_audit_ledger.py"
-            )
+            # note_hash is a source-content hash, not a verdict. A mismatch means the
+            # note was edited since the audit lane last seeded. For a RETAINED-grade row
+            # this is a real integrity violation — current text laundered past a stale
+            # ratification — so it stays a hard error and must be re-audited before
+            # landing. For a NON-retained row (unaudited / audited_conditional / pending)
+            # it only means re-audit is pending; per this lint's design (re-audit-required
+            # items are notices so strict lint stays useful) and because the nightly
+            # audit-lane re-seed refreshes the hash, it is a non-blocking notice — review
+            # loops that edit such notes (e.g. formal-carrier repairs on conditional rows)
+            # must not be forced to commit audit-lane ledger churn just to clear strict lint.
+            msg = f"{cid}: note_hash mismatch — note edited since seeding; re-run seed_audit_ledger.py"
+            if is_retained_grade(row.get("effective_status")):
+                errors.append(
+                    msg + " (RETAINED-grade row: an edited retained note must be re-audited, "
+                    "not landed with a stale ratification)"
+                )
+            else:
+                add_notice(
+                    "note_hash_drift_reaudit_pending",
+                    msg + " (non-retained row: re-audit pending; the audit-lane re-seed "
+                    "refreshes the hash — not a strict-lint blocker)",
+                )
 
         # Dangling deps.
         for d in row.get("deps", []):
@@ -690,17 +773,18 @@ def main() -> int:
                 )
 
     # Effective-status propagation sanity. A retained-grade row's deps must
-    # themselves be retained-grade or accepted premises. Open gates and
-    # retained_pending_chain are explicit blockers, not support for downstream
-    # theorem retention. Axioms can satisfy a dep without bounding the row.
+    # themselves be retained-grade, metadata context, or accepted premises.
+    # Open gates and retained_pending_chain are explicit blockers, not support
+    # for downstream theorem retention. Axioms can satisfy a dep without
+    # bounding the row.
     # Tier-A derivation targets can satisfy a dep only at the bounded tier until
     # the target is retired by a retained derivation. Convention rows listed in
     # the Tier-A registry are not accepted premises.
-    # `decoration_under_<parent>` deps count as retained-grade because
+    # Metadata deps are chain-satisfying context, not retained-grade theorem
+    # support. `decoration_under_<parent>` deps count as retained-grade because
     # decoration_status() only assigns that status when the parent is itself
     # retained-grade.
-    # Must stay in sync with compute_effective_status.py's clean_status
-    # (both go through premise_nodes / is_retained_grade).
+    # Must stay in sync with compute_effective_status.py's clean_status.
     for cid, row in rows.items():
         if row.get("effective_status") in RETAINED_GRADES:
             for d in row.get("deps", []):
@@ -716,7 +800,7 @@ def main() -> int:
                 if premise_nodes.is_accepted_premise_dep(d):
                     continue
                 d_eff = rows.get(d, {}).get("effective_status")
-                if not is_retained_grade(d_eff):
+                if not is_chain_satisfying_status(d_eff):
                     errors.append(
                         f"{cid}: effective_status={row.get('effective_status')!r} but dep {d!r} "
                         f"has effective_status={d_eff!r}"

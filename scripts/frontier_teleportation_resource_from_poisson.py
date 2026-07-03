@@ -1,11 +1,22 @@
 #!/usr/bin/env python3
 """Poisson/CHSH to teleportation-resource audit.
 
-Status: planning / first artifact. This script asks a narrow question:
+Citeable content: the BOUNDED FINITE EXTRACTION CORE. This script asks a narrow
+question on the two small audited surfaces (`1D N=8`, `2D 4x4`):
 
     Does the existing Poisson-driven CHSH ground state already contain a
     deterministic, high-fidelity encoded Bell pair usable as the resource for
-    ordinary quantum state teleportation?
+    ordinary quantum state teleportation, under the retained-axis finite
+    operator-algebra last-taste-bit identification?
+
+The core checks (helper source, retained-axis finite operator algebra, last-taste
+carrier algebra, teleportation-convention sanity, null control, and the bounded
+extraction diagnostics on the two surfaces) carry per-check PASS:/FAIL: tags and a
+final TOTAL/SUMMARY PASS=N FAIL=0.
+
+The native preparation/readout/apparatus bridge (a physical deterministic
+teleportation apparatus) is open and NOT part of the citeable core.
+Its consistency report is segregated and does not contribute to the core summary.
 
 It does not claim matter teleportation, charge transfer, mass transfer, or FTL
 transport. It only audits the two-species state produced by the existing
@@ -17,6 +28,7 @@ from __future__ import annotations
 import argparse
 import dataclasses
 import hashlib
+import json
 import math
 import sys
 from pathlib import Path
@@ -27,6 +39,7 @@ from scipy.linalg import eigh
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
+ROOT = SCRIPT_DIR.parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
@@ -68,6 +81,22 @@ SOURCE_REQUIRED_SYMBOLS = (
     "lattice_1d",
     "lattice_2d",
     "lattice_3d",
+)
+RALA_CLAIM_ID = "teleportation_retained_axis_operator_algebra_closure_note"
+RESOURCE_NOTE = ROOT / "docs" / "TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md"
+RALA_NOTE = ROOT / "docs" / "TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md"
+RETAINED_GRADES = {"retained", "retained_bounded", "retained_no_go"}
+PREP_READOUT_NOTE = ROOT / "docs" / "TELEPORTATION_PREPARATION_READOUT_PROBE_NOTE.md"
+OPERATOR_END_TO_END_NOTE = ROOT / "docs" / "TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md"
+MICROSCOPIC_CLOSURE_NOTE = ROOT / "docs" / "TELEPORTATION_MICROSCOPIC_CLOSURE_NOTE.md"
+APPARATUS_DYNAMICS_NOTE = ROOT / "docs" / "TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md"
+LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+RALA_REQUIRED_SNIPPETS = (
+    "RALA(a) = { O_logical",
+    "T2 (axis Pauli operators are in RALA)",
+    "T3 (axis Bell projectors are in pair-RALA)",
+    "T5 (fixed pair-hop X membership)",
+    "T8 (RALA teleportation closure)",
 )
 
 
@@ -119,6 +148,107 @@ def helper_source_certificate() -> dict[str, object]:
         "sha256": hashlib.sha256(helper_text.encode("utf-8")).hexdigest(),
         "line_count": len(helper_text.splitlines()),
         "symbol_count": len(SOURCE_REQUIRED_SYMBOLS),
+    }
+
+
+def ledger_status(claim_id: str) -> str | None:
+    if not LEDGER_PATH.exists():
+        return None
+    ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
+    rows = ledger.get("rows", ledger)
+    if isinstance(rows, dict):
+        iterable = rows.values()
+    else:
+        iterable = rows
+    for row in iterable:
+        if row.get("claim_id") == claim_id:
+            return row.get("effective_status")
+    return None
+
+
+def retained_axis_source_certificate() -> dict[str, object]:
+    if not RALA_NOTE.exists():
+        raise RuntimeError("RALA retained-axis source note is missing")
+    text = RALA_NOTE.read_text(encoding="utf-8")
+    missing = [snippet for snippet in RALA_REQUIRED_SNIPPETS if snippet not in text]
+    if missing:
+        raise RuntimeError(f"RALA source note is missing expected theorem snippets: {missing}")
+    status = ledger_status(RALA_CLAIM_ID)
+    if status not in RETAINED_GRADES:
+        raise RuntimeError(
+            "RALA source note must remain retained-grade for this bounded support route; "
+            f"ledger status={status!r}"
+        )
+    return {
+        "path": RALA_NOTE,
+        "status": status,
+        "snippet_count": len(RALA_REQUIRED_SNIPPETS),
+    }
+
+
+def source_status_firewall_certificate() -> dict[str, object]:
+    note_text = RESOURCE_NOTE.read_text(encoding="utf-8")
+    note_flat = " ".join(note_text.split())
+    prep_text = PREP_READOUT_NOTE.read_text(encoding="utf-8")
+    op_text = OPERATOR_END_TO_END_NOTE.read_text(encoding="utf-8")
+    micro_text = MICROSCOPIC_CLOSURE_NOTE.read_text(encoding="utf-8")
+    apparatus_text = APPARATUS_DYNAMICS_NOTE.read_text(encoding="utf-8")
+    required_note_snippets = (
+        "2026-06-12 Native Preparation/Readout Hard Residual",
+        "The live blocker is still a native preparation/readout and apparatus theorem",
+        "No retained-grade proposal or status promotion is made here",
+        "row remains an open gate for a physical deterministic resource",
+        "2026-06-15 Native Apparatus Candidate Bridge",
+        "TELEPORTATION_MICROSCOPIC_CLOSURE_NOTE.md",
+        "TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md",
+        "concrete bridge path, not a retained teleportation theorem and not an audit verdict",
+    )
+    missing = [snippet for snippet in required_note_snippets if snippet not in note_flat]
+    if missing:
+        raise RuntimeError(f"source firewall snippets missing from resource note: {missing}")
+    if "preparation/readout remains open" not in prep_text.lower():
+        raise RuntimeError("preparation/readout probe no longer states the hard residual")
+    if "physical apparatus derivation" not in op_text.lower():
+        raise RuntimeError("operator-consistent end-to-end note no longer firewalls prep/readout")
+    micro_lower = micro_text.lower()
+    microscopic_snippets = (
+        "native retained-axis `cl(3)/z^3` stabilizers close",
+        "stabilizer-controlled transducer hamiltonian terms commute",
+        "thermodynamic bath bound drives record overlap to zero",
+        "native taste-apparatus ledger theorem covers controlled generators",
+        "resource preparation and retained readout/correction scaling remain bounded",
+    )
+    missing_micro = [
+        snippet for snippet in microscopic_snippets if snippet not in micro_lower
+    ]
+    if missing_micro:
+        raise RuntimeError(
+            f"microscopic closure candidate no longer states expected gates: {missing_micro}"
+        )
+    apparatus_lower = apparatus_text.lower()
+    apparatus_snippets = (
+        "retarded field front derives eikonal carrier",
+        "bell transducer is finite-strength unitary, not projection",
+        "finite spin bath decoheres records irreversibly when traced",
+        "apparatus energy and ledgers are branch independent",
+        "microscopic `cl(3)/z^3` apparatus hamiltonian",
+    )
+    missing_apparatus = [
+        snippet for snippet in apparatus_snippets if snippet not in apparatus_lower
+    ]
+    if missing_apparatus:
+        raise RuntimeError(
+            f"apparatus dynamics candidate no longer states expected gates: {missing_apparatus}"
+        )
+    return {
+        "path": RESOURCE_NOTE,
+        "prep_probe": PREP_READOUT_NOTE,
+        "operator_end_to_end": OPERATOR_END_TO_END_NOTE,
+        "microscopic_closure": MICROSCOPIC_CLOSURE_NOTE,
+        "apparatus_dynamics": APPARATUS_DYNAMICS_NOTE,
+        "snippet_count": len(required_note_snippets)
+        + len(microscopic_snippets)
+        + len(apparatus_snippets),
     }
 
 
@@ -293,9 +423,13 @@ def bell_overlap_spectrum(rho: np.ndarray) -> tuple[tuple[float, str], ...]:
     return tuple(overlaps)
 
 
-def best_bell_overlap(rho: np.ndarray) -> tuple[float, str]:
+def best_bell_overlap(rho: np.ndarray, tolerance: float = 1e-12) -> tuple[float, str]:
     overlaps = bell_overlap_spectrum(rho)
-    return max(overlaps, key=lambda item: item[0])
+    best = max(overlap for overlap, _label in overlaps)
+    for overlap, label in overlaps:
+        if abs(overlap - best) <= tolerance:
+            return overlap, label
+    raise AssertionError("unreachable: Bell-overlap spectrum is empty")
 
 
 def bell_overlap_ties(rho: np.ndarray, tolerance: float = 1e-12) -> tuple[str, ...]:
@@ -360,11 +494,14 @@ def standard_teleportation_stats(
         fidelity = float(np.real(input_state.conj() @ output @ input_state))
         fidelities.append(fidelity)
 
+    max_trace_error = float(np.max(trace_errors))
+    if max_trace_error <= 1e-12:
+        max_trace_error = 0.0
     return {
         "mean": float(np.mean(fidelities)),
         "min": float(np.min(fidelities)),
         "max": float(np.max(fidelities)),
-        "max_trace_error": float(np.max(trace_errors)),
+        "max_trace_error": max_trace_error,
     }
 
 
@@ -545,38 +682,76 @@ def main() -> int:
     requested = set(args.case or [])
     cases = [case for case in DEFAULT_CASES if not requested or case.label in requested]
 
+    # 2026-06-20 source-side repair: per-check PASS:/FAIL: discipline for
+    # the BOUNDED FINITE EXTRACTION CORE (the citeable core), with a final
+    # TOTAL/SUMMARY. The native preparation/readout/apparatus bridge is NOT part
+    # of the citeable core; its consistency report is segregated below and
+    # does NOT contribute to the core PASS/FAIL summary.
+    core_pass = 0
+    core_fail = 0
+
+    def core_check(name: str, ok: bool, detail: str = "") -> None:
+        nonlocal core_pass, core_fail
+        tag = "PASS" if ok else "FAIL"
+        if ok:
+            core_pass += 1
+        else:
+            core_fail += 1
+        suffix = f" {detail}" if detail else ""
+        print(f"{tag}: {name}{suffix}")
+
     print("POISSON/CHSH TELEPORTATION RESOURCE AUDIT")
-    print("Status: planning / first artifact; quantum state teleportation resource only")
+    print("Status: bounded finite extraction core (citeable); open gate for the native")
+    print("        preparation/readout/apparatus bridge (open, not supplied here)")
     print("Extraction: trace cells/spectator tastes, keep the last KS taste bit per species")
+    print()
+    print("=== BOUNDED FINITE EXTRACTION CORE (citeable core) ===")
+
     helper = helper_source_certificate()
     helper_path = Path(helper["path"])
     try:
         helper_label = helper_path.relative_to(SCRIPT_DIR.parent)
     except ValueError:
         helper_label = helper_path
-    print(
-        "Source packet: "
+    core_check(
+        "poisson_chsh_helper_source",
+        True,
         f"{helper_label} sha256={helper['sha256']} "
-        f"lines={helper['line_count']} required_symbols={helper['symbol_count']} PASS"
+        f"lines={helper['line_count']} required_symbols={helper['symbol_count']}",
     )
-    print("Last-taste carrier checks:")
+
+    rala = retained_axis_source_certificate()
+    rala_path = Path(rala["path"])
+    try:
+        rala_label = rala_path.relative_to(SCRIPT_DIR.parent)
+    except ValueError:
+        rala_label = rala_path
+    core_check(
+        "retained_axis_finite_operator_algebra",
+        True,
+        f"{rala_label} ledger={rala['status']} "
+        f"required_theorem_snippets={rala['snippet_count']}",
+    )
+
     for certificate in (logical_carrier_certificate(case) for case in cases):
         z_scope = (
             "sublattice Z is last-bit Z"
             if certificate["sublattice_z_equals_z_last"]
             else "sublattice Z is xi5; last-bit Z is separate"
         )
-        print(
-            f"  {certificate['case']}: envs={certificate['n_env']} "
-            f"logical_axis={certificate['logical_axis']} "
-            "X=xi_last/logical-flip PASS; "
-            f"Z_last Pauli PASS; {z_scope}"
+        core_check(
+            f"last_taste_carrier[{certificate['case']}]",
+            bool(certificate["x_is_last_logical_x"] and certificate["z_last_pauli"]),
+            f"envs={certificate['n_env']} logical_axis={certificate['logical_axis']} "
+            f"X=xi_last/logical-flip; Z_last Pauli; {z_scope}",
         )
+
     sanity = verify_teleportation_convention(args.seed - 1)
-    print(
-        "Protocol sanity: ideal Phi+ resource "
-        f"mean fidelity={sanity['mean']:.16f}, min={sanity['min']:.16f}, "
-        f"max trace error={sanity['max_trace_error']:.3e}"
+    core_check(
+        "teleportation_convention_sanity",
+        abs(1.0 - sanity["min"]) <= 1e-12 and sanity["max_trace_error"] <= 1e-12,
+        f"ideal Phi+ mean fidelity={sanity['mean']:.16f} min={sanity['min']:.16f} "
+        f"max trace error={sanity['max_trace_error']:.3e}",
     )
     print()
 
@@ -594,6 +769,52 @@ def main() -> int:
     for result in results:
         print_result(result, high_fidelity_threshold=args.high_fidelity_threshold)
 
+    # Bounded finite-extraction core acceptance: the null G=0 control must NOT
+    # yield a high-fidelity logical resource, and every Poisson/CHSH case must.
+    for result in results:
+        case = result["case"]
+        assert isinstance(case, AuditCase)
+        extracted = bool(result["deterministic_high_fidelity_resource"])
+        if case.G == 0.0:
+            core_check(
+                f"null_control_no_resource[{case.label}]",
+                not extracted,
+                f"best Bell overlap={result['logical_bell_fidelity']:.6f} "
+                f"negativity={result['negativity']:.6f}",
+            )
+        else:
+            core_check(
+                f"poisson_extraction_high_fidelity[{case.label}]",
+                extracted,
+                f"best Bell overlap={result['logical_bell_fidelity']:.6f} "
+                f"({result['logical_bell_label']}) "
+                f"tel mean={result['teleportation']['mean']:.6f}",
+            )
+
+    print()
+    print(f"TOTAL: PASS={core_pass} FAIL={core_fail}")
+    print(f"SUMMARY PASS={core_pass} FAIL={core_fail}")
+    print()
+
+    # === SEGREGATED: native preparation/readout/apparatus bridge ===
+    # This block is NOT part of the citeable bounded extraction core. The check
+    # below only confirms that the note keeps the native preparation/readout and
+    # apparatus bridge open and not supplied here; it asserts no apparatus,
+    # preparation, or readout theorem and does NOT contribute to the TOTAL/SUMMARY
+    # above.
+    print(
+        "=== OPEN BRIDGE (native preparation/readout/apparatus; "
+        "NOT part of citeable core) ==="
+    )
+    firewall = source_status_firewall_certificate()
+    print(
+        "INFO: open_bridge_firewall "
+        f"{Path(firewall['path']).relative_to(ROOT)} "
+        "note keeps native preparation/readout/apparatus bridge explicitly open "
+        f"(not supplied here); required_snippets={firewall['snippet_count']}"
+    )
+    print()
+
     poisson_results = [
         result
         for result in results
@@ -604,7 +825,7 @@ def main() -> int:
     if moved:
         print(
             "  A traced deterministic high-fidelity Bell resource was found on at least "
-            "one Poisson case. This would need independent hardening before promotion."
+            "one Poisson case. This is the bounded finite extraction core only."
         )
     else:
         print(
@@ -616,7 +837,11 @@ def main() -> int:
         "resource derivation."
     )
     print("  Postselected branches, when present, are diagnostics only in this artifact.")
-    return 0
+    print(
+        "  The native preparation/readout/apparatus bridge is open and is NOT part "
+        "of the citeable bounded extraction core."
+    )
+    return 0 if core_fail == 0 else 1
 
 
 if __name__ == "__main__":

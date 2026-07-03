@@ -1,0 +1,82 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_supplied_family_lift_certificate_interface_2026_06_06.py
+runner_sha256: 48de9132a5b52670a46d3290e593ffef895dee05466512abde5bed1e8f04cf1b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Ladder shape
+------------------------------------------------------------------------------
+PASS four ladder levels are present
+PASS level labels are consecutive
+PASS C1 has length 1
+PASS C1 is binary
+PASS C2 has length 2
+PASS C2 is binary
+PASS C3 has length 3
+PASS C3 is binary
+PASS C4 has length 4
+PASS C4 is binary
+
+------------------------------------------------------------------------------
+Projection consistency
+------------------------------------------------------------------------------
+PASS pi_1(C2) = C1
+PASS pi_2(C3) = C2
+PASS pi_3(C4) = C3
+PASS C4 projects to C1 through truncation
+PASS C4 projects to C2 through truncation
+PASS C4 projects to C3 through truncation
+
+------------------------------------------------------------------------------
+Stable predicate
+------------------------------------------------------------------------------
+PASS leading-marker predicate is true at every level :: (True, True, True, True)
+PASS leading-marker predicate is stable
+PASS density values are exact fractions
+PASS density is not constant on this ladder :: (Fraction(1, 1), Fraction(1, 2), Fraction(2, 3), Fraction(3, 4))
+PASS density sequence is 1, 1/2, 2/3, 3/4
+
+------------------------------------------------------------------------------
+Interface firewalls
+------------------------------------------------------------------------------
+PASS stable predicate is supplied
+PASS family-lift authority is not applied
+PASS family-lift is not derived from Record
+PASS unbounded retained authority is not applied
+PASS audit verdict is not applied
+PASS dial is not forced or selected
+
+------------------------------------------------------------------------------
+Document checks
+------------------------------------------------------------------------------
+PASS document contains phrase: The interface has three pieces
+PASS document contains phrase: supplied projection maps
+PASS document contains phrase: supplied stable predicate
+PASS document contains phrase: This is not an unbounded retained claim
+PASS document contains phrase: leading_marker_is_one(C_n) = true
+PASS document contains phrase: prefix density is not stable
+PASS document contains phrase: pre-record law carries probabilities
+PASS document contains phrase: post-record records carry realized information
+PASS document contains phrase: actual_current_surface_status: bounded-support
+PASS document contains phrase: audit_required_before_effective_retained: true
+PASS document contains phrase: bare_retained_allowed: false
+PASS document avoids live retained/promotion leaks
+
+SUMMARY: PASS=39 FAIL=0
+POST_RECORD_FINITE_LADDER_COMPATIBILITY_WITNESS=TRUE
+LADDER_LEVELS=4
+SUPPLIED_PROJECTIONS_COMMUTE=TRUE
+STABLE_PREDICATE=leading_marker_is_one
+DENSITY_USED_AS_STABLE_LIFT=FALSE
+SUPPLIED_STABLE_PREDICATE=TRUE
+FAMILY_LIFT_AUTHORITY_APPLIED=FALSE
+FAMILY_LIFT_DERIVED_FROM_RECORD=FALSE
+UNBOUNDED_RETAINED_AUTHORITY_APPLIED=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+
+----- stderr -----
+

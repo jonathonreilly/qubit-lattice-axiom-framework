@@ -1,8 +1,16 @@
-# DM A-BCC Basin-Enumeration Completeness Theorem (Computational Certificate)
+# Historical DM A-BCC Basin-Enumeration Finite-Search Packet (Retracted)
 
 **Date:** 2026-04-20
 **Lane:** Dark-matter A-BCC basin-selector (enumeration completeness).
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/dm-abcc-finite-search-salvage-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
+
 **Dedicated runner:**
 `scripts/frontier_dm_abcc_basin_enumeration_completeness.py`
 **Runner result on land:** `PASS = 30, FAIL = 0`.
@@ -19,19 +27,60 @@
 
 ---
 
-## 0. Executive summary
+## Boundary clarification (2026-06-16)
 
-Closes open import **I11** on the scalar-selector cycle-1 stack. The
+This archived packet is historical / diagnostic and retired as evidence. It is
+not a live authority for an exhaustive DM A-BCC basin-enumeration theorem, an
+interval-certified root count, a deterministic far-field exclusion, or any
+retained completeness result.
+
+The safe surviving statement is narrower than the original text below: the
+runner found only Basin 1, Basin 2, and Basin X in the active chamber under the
+retained sigma set, clustered them to the five-basin chart, and found no
+additional basin in that finite multistart/random-sampling scan. It did not
+prove that no narrow basin lies between seeds, did not supply a worst-case
+Lipschitz or eigenvalue-gap bound, and did not prove deterministic far-field
+exclusion.
+
+Any future live completeness claim needs a fresh source note plus either an
+interval/branch-and-bound proof over the `R = 50` box or a
+computer-algebra/root-isolation enumeration with certified eigenvalue-gap /
+Lipschitz bounds and deterministic far-field asymptotics.
+
+## Executable boundary repair (2026-06-17)
+
+The dedicated runner now enforces the same boundary. It verifies only the
+finite multistart/random-sampling scan, the clustering of discovered
+active-chamber minima to `{Basin 1, Basin 2, Basin X}`, the finite-root
+sanity checks, the signature partition, and explicit negative guards for the
+missing certification routes.
+
+The runner does **not** claim an interval/branch-and-bound proof, a
+computer-algebra/root-isolation enumeration, a certified worst-case
+Lipschitz/eigenvalue-gap bound, deterministic far-field asymptotic exclusion,
+or any retained completeness theorem. In particular, it did not prove
+deterministic far-field exclusion. Its terminal verdict is:
+
+```text
+VERDICT: FINITE MULTISTART BASIN SCAN BOUNDARY VERIFIED
+THEOREM-GRADE EXHAUSTIVENESS: NOT CLAIMED
+```
+
+## 0. Historical executive summary (retracted)
+
+The original packet claimed to close open import **I11** on the
+scalar-selector cycle-1 stack. The
 A-BCC closure note
 `DM_ABCC_CLOSURE_VIA_CHAMBER_BOUND_AND_DPLE_F4_NOTE_2026-04-19.md`
 enumerated **four** chi²=0 PMNS-compatible basins `{Basin 1, Basin N,
 Basin P, Basin X}` on the retained DM source surface. A strict reviewer
 will ask: *is that enumeration exhaustive?*
 
-This note provides the answer as a **computational-certificate
-theorem**, and in doing so **corrects** the enumeration:
+The original packet claimed to answer this as a **computational-certificate
+theorem**. That theorem-grade reading is retracted; the paragraph below is
+historical context only:
 
-> **Theorem (retained basin-enumeration completeness, computational
+> **Historical theorem statement (retracted): retained basin-enumeration completeness, computational
 > certificate).** In the enclosure box `|m|, |δ|, |q_+| ≤ R = 50` under
 > the retained σ-set
 > `Σ_ret = { (2,1,0), (2,0,1), (0,1,2), (1,2,0) }`, the chi²=0
@@ -65,7 +114,7 @@ the completeness claim.
 
 ---
 
-## 1. What "completeness" means here
+## 1. Historical completeness target (not certified here)
 
 Write the source-surface chart as `(m, δ, q_+) ∈ ℝ³`. For σ ∈ S₃ a
 hierarchy-pairing permutation, define
@@ -137,9 +186,9 @@ exhaustiveness claim.
 
 ---
 
-## 3. Certificate ingredients
+## 3. Historical certificate ingredients (heuristic, not exhaustive proof)
 
-### 3.1 Bounded enclosure box
+### 3.1 Historical bounded enclosure box
 
 Take `R = 50` and search the enclosure box `B_R = [-R, R]³`. All five
 retained basins have `|coord|_∞ ≤ 28.006 < R` (strict inclusion).
@@ -159,7 +208,7 @@ stabilise at positive asymptotes in the range [0.17, 0.20] on all
 three rays, confirming compactness: chi²=0 basins cannot drift to
 infinity within the retained σ-set.
 
-### 3.2 Dense grid multistart enumeration
+### 3.2 Historical dense grid multistart enumeration
 
 Build a grid of chamber-compatible seeds by uniformly sampling
 `m, δ, q_+ ∈ [-R, R]` at `N = 15` points per axis (15³ = 3375 grid
@@ -181,7 +230,7 @@ Consolidated across σ: **3 distinct in-chamber chi²=0 chart points**,
 which match the three in-chamber retained basins {Basin 1, Basin 2,
 Basin X} to distance ≤ 5×10⁻⁴.
 
-### 3.3 Lipschitz bound on the chi² map
+### 3.3 Historical empirical Lipschitz estimate
 
 Estimate the Lipschitz constant of chi²_σ over the chamber enclosure
 by central-difference gradients at 600 chamber-sampled points per σ
@@ -197,7 +246,7 @@ Hence `L_max ≈ 0.77`. This is a bound on the chi² gradient norm in
 the near-basin regime (chi² ≤ 10), which is where the enumeration
 lives.
 
-### 3.4 Basin-of-attraction test
+### 3.4 Historical basin-of-attraction test
 
 At each retained basin `B`, perturb by the grid half-diagonal
 `h·√3/2 = 6.186` in 8 random directions and run Nelder–Mead from the
@@ -211,7 +260,7 @@ reproducibility. The combination of (i) a grid seed within h·√3/2 of
 every chamber point + (ii) ≥ 3/8 recovery rate at each basin
 certifies each retained basin is reachable by the enumeration pipeline.
 
-### 3.5 Finite Bezout upper bound
+### 3.5 Historical finite Bezout upper bound
 
 Each chi²_σ = 0 equation, after eliminating the cubic characteristic
 polynomial constraint `p(λ) = det(H − λI) = 0` by resultant, reduces
@@ -274,7 +323,7 @@ retained basins, and the enumeration pipeline (dense grid + N-M
 multistart) successfully hits each retained basin. No additional
 chi²=0 chart point exists in the enclosure to the stated tolerance.
 
-**Known weakness.** The Lipschitz bound is empirical (99.5th-percentile
+**Audit-blocking weakness.** The Lipschitz bound is empirical (99.5th-percentile
 finite-difference gradient at 600 sample points), not a hard
 worst-case bound. A strict reviewer could ask for an analytic
 Lipschitz bound derived from the Hermitian-pencil eigenvalue-gap
@@ -336,34 +385,35 @@ The older chamber+DPLE route survives the five-basin correction intact.
 
 ---
 
-## 6. What the theorem is and is not
+## 6. Historical theorem boundary (retracted and narrowed)
 
-**Is:** A computational-certificate exhaustiveness theorem for the
-retained chi²=0 basin chart in the enclosure box `|coord| ≤ 50`, under
-the retained σ-set `Σ_ret`.
+**Safe only as:** finite multistart/random-sampling support that found Basin 1,
+Basin 2, and Basin X in the active chamber under the retained sigma set, and
+clustered the discovered rows to the five-basin chart.
 
-**Is:** A correction to the four-basin enumeration in
+**Safe only as:** a correction to the four-basin enumeration in
 `DM_ABCC_CLOSURE_VIA_CHAMBER_BOUND_AND_DPLE_F4_NOTE_2026-04-19.md`,
 upgrading it to the five-basin chart `{Basin 1, Basin N, Basin P,
 Basin X, Basin 2}`.
 
-**Is not:** An analytic exhaustiveness theorem. The Bezout upper bound
+**Not certified as:** an analytic or retained computational exhaustiveness
+theorem. The Bezout upper bound
 (2048) establishes finiteness but is not tight. A tight analytic
 enumeration would require resultant elimination carried out in closed
 form (feasible in principle via computer algebra, not attempted here).
 
-**Is not:** A claim about σ ∈ S₃ \ Σ_ret. The three sigma that fall
+**Not:** a claim about σ ∈ S₃ \ Σ_ret. The three sigma that fall
 outside the retained set — `(0,2,1), (1,0,2)` — were ruled out by
 the σ_hier uniqueness theorem (≤ 5/9 NuFit passes on the pinned chamber
 point) and are not retained. They are re-ruled-out here by the dense
 scan producing 0 chi²=0 chamber basins under `(0,1,2)` and `(1,2,0)`
 — a consistency check; not a completeness claim.
 
-**Is not:** A claim outside the enclosure `|coord| ≤ 50`. Outside R,
+**Not:** a claim outside the enclosure `|coord| ≤ 50`. Outside R,
 the far-field scan provides only a probabilistic no-chi²=0 bound
 (min chi² observed ≥ 3.5×10⁻⁴ over 1412 chamber samples); an analytic
 bound would use the asymptotic eigenvector limit on the unit sphere.
-This is not a gap — if a far-field basin existed, its coordinates
+This remains a gap for theorem-grade completeness: if a far-field basin existed, its coordinates
 would be at scale > R and would represent a qualitatively different
 object from the retained basins (which all sit at scale ≤ 28).
 
@@ -417,10 +467,16 @@ performs:
   only Basin 1 passes 9/9 + sin δ_CP < 0 at σ = (2,1,0)).
 - **T7** — Sylvester signature partition across five basins; A-BCC
   (chamber ∩ C_base) selects Basin 1 uniquely.
-- **T8** — Final certificate at stated `(R, N, d_cluster, L_max)`.
+- **T8** — Finite-search boundary and missing-certification guards: confirms
+  the cluster tolerance remains below half the minimum basin separation,
+  checks this archived source note carries the finite-scan boundary markers,
+  and refuses interval/branch-and-bound, root-isolation, worst-case Lipschitz /
+  eigenvalue-gap, deterministic far-field, or theorem-grade exhaustiveness
+  claims.
 
-Every PASS stamp is keyed to a substantive numerical check; there are
-no hardcoded True values. Runner result on land: **PASS = 30, FAIL = 0**.
+Runner result on the original land was **PASS = 30, FAIL = 0**. After the
+2026-06-17 boundary repair, additional PASS stamps are boundary guards rather
+than new numerical evidence.
 
 ---
 
@@ -444,14 +500,15 @@ no hardcoded True values. Runner result on land: **PASS = 30, FAIL = 0**.
 
 ---
 
-## 10. Single-paragraph summary
+## 10. Historical single-paragraph summary (retracted)
 
-Under the retained σ-set `{ (2,1,0), (2,0,1), (0,1,2), (1,2,0) }` and in
-the bounded enclosure `|m|, |δ|, |q_+| ≤ 50`, a dense 15³ grid + N-M
-multistart scan certifies that the chi²=0 PMNS-compatible chart points
-are exactly the five retained basins `{Basin 1, Basin N, Basin P,
-Basin X, Basin 2}`, with the three in-chamber basins being
-`{Basin 1, Basin 2, Basin X}`. The certificate consists of (i) a
+Historically, under the retained σ-set
+`{ (2,1,0), (2,0,1), (0,1,2), (1,2,0) }` and in the bounded enclosure
+`|m|, |δ|, |q_+| ≤ 50`, a dense 15³ grid + N-M multistart scan found and
+clustered the chi²=0 PMNS-compatible chart points to the five-basin list
+`{Basin 1, Basin N, Basin P, Basin X, Basin 2}`, with the three in-chamber
+basins being `{Basin 1, Basin 2, Basin X}`. The historical packet treated
+that as a certificate consisting of (i) a
 far-field compactness bound, (ii) dense grid coverage, (iii) Lipschitz
 estimate L_max ≈ 0.77 on chi²_σ, (iv) basin-of-attraction tests at
 every retained basin, and (v) a Bezout finiteness upper bound of ≤ 2048

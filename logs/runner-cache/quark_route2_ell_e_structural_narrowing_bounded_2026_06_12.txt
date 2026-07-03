@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/quark_route2_ell_e_structural_narrowing_bounded_2026_06_12.py
+runner_sha256: effe8791d1ba5a901fb18b88b41a0ebce0f520e3986eb37f0f3a673d6512b3c8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+Quark Route-2 ell_E structural narrowing bounded checks
+Status authority: independent audit lane only. This source runner does not set, predict, promote, or demote any audit outcome.
+No new imports: exact rational endpoint algebra only.
+
+Endpoint/projective structure
+PASS: delta_A1(center) is 1/6 exactly
+PASS: T-side rho_T=-1 gives q_T=5/6 exactly
+PASS: target q_E=15/8 gives rho_E=21/4 exactly
+PASS: target rho_E=21/4 gives q_E=15/8 exactly
+PASS: endpoint quotient is scale invariant for a sample E row
+PASS: endpoint quotient is scale invariant for a negative-scale sample
+PASS: alpha_E=0 is outside the endpoint quotient domain
+PASS: rho_E=0 and rho_E=21/4 are distinct projective directions
+      q(0)=1, q(target)=15/8
+
+Positivity and normalization
+PASS: positive shell and center are equivalent to rho_E > -6 in sample target
+PASS: rho_E=0 is inside the positive projective family
+PASS: rho_E=-7 violates E-center positivity
+PASS: rho_E=-6 is the zero-center boundary, not a valid center quotient
+PASS: unit normalization admits rho_E=0
+PASS: unit normalization admits rho_E=21/4
+PASS: unit normalization changes scale but not projective slope
+      beta^2/alpha^2=441/16
+PASS: two unit-normalized slopes remain distinct
+      rho0 squares=(Fraction(1, 1), Fraction(0, 1)), target squares=(Fraction(16, 457), Fraction(441, 457))
+
+Sign separation
+PASS: F_adj(N_c=3) is 8/9 exactly
+PASS: F_adj(N_c=2) is positive
+PASS: F_adj(N_c=4) is positive
+PASS: Fierz dimension fraction alone has positive sign
+      F_adj=8/9, -F_adj=-8/9
+PASS: correct T orientation gives negative c_TE at rho_E=0
+PASS: correct T orientation gives negative c_TE at target rho_E
+PASS: positive E-family sample rho_E=1 still has negative sign
+PASS: wrong T orientation flips the sign for positive q_E
+PASS: violating E-center positivity flips the sign despite correct T orientation
+PASS: sign-only does not pin the magnitude
+      rho=0 gives c_TE=-5/3
+PASS: c_TE=-8/9 pins q_E=15/8 exactly
+PASS: c_TE=-8/9 pins rho_E=21/4 exactly
+
+Note hygiene
+PASS: note file exists
+PASS: note has status-authority block
+PASS: note uses canonical bounded_theorem claim type
+PASS: note links authority [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md]
+PASS: note links authority [S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md]
+PASS: note links authority [ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md]
+PASS: note links authority [RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md]
+PASS: note links authority [QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md]
+PASS: note links authority [QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md]
+PASS: note avoids branch-local scratch references
+PASS: note avoids sole-route phrasing
+PASS: note avoids terminal-route phrasing
+PASS: note avoids depletion phrasing
+PASS: note avoids program-closure phrasing
+PASS: note avoids audit-clean status token
+PASS: note avoids retention-status prefix
+PASS: note records narrowed positive projective family
+PASS: note records sign separation
+PASS: note records exact target arithmetic
+TOTAL: PASS=47, FAIL=0
+
+----- stderr -----
+

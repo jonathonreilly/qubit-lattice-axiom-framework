@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_markov_generator_premise_classifier_2026_06_06.py
+runner_sha256: dd232cb1dc1d8de08a5bc1019a726b327420ec03d2b0203447d70f19b404c180
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+Record Markov-generator premise classifier
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+
+A. exact kernel/generator anchors
+[PASS] lazy kernel is stochastic -- det=1/2
+[PASS] swap kernel is stochastic but determinant-obstructed -- det=-1
+[PASS] reset kernel is stochastic but singular -- det=0
+[PASS] supplied lazy Q is a Markov generator -- Q=Matrix([[-log(2)/2, log(2)/2], [log(2)/2, -log(2)/2]])
+[PASS] supplied lazy Q at t=1 generates P_lazy
+
+B. premise classifications
+[PASS] record-only level is post-record information only -- post-record-information-only
+[PASS] record-only blocks probabilities -- ('future-record probabilities',)
+[PASS] stochastic kernel reaches production-kernel model -- production-kernel-model
+[PASS] kernel-only still misses Born/IID bridge -- ('Born/IID or other probability-origin bridge', 'Markov generator or embeddability proof')
+[PASS] kernel-only still blocks continuous-time rate law -- ('continuous-time rate law',)
+[PASS] swap case remains production-kernel only -- production-kernel-model
+[PASS] swap case blocks finite bounded generator -- ('finite bounded continuous-time Markov generator for this kernel',)
+[PASS] reset case remains production-kernel only -- production-kernel-model
+[PASS] reset case records singular finite-time obstruction -- ('finite bounded continuous-time Markov generator for this kernel',)
+[PASS] generator plus clock reaches Markov semigroup model -- Markov-semigroup-model
+[PASS] generator plus clock still misses rate/unit normalization -- ('rate/unit normalization',)
+[PASS] rate unit reaches physical-rate model -- physical-rate-model
+[PASS] physical-rate model keeps all key allowed claims -- ('realized post-record append/count information', 'one-step stochastic production kernel', 'pre-record probability interface supplied', 'candidate continuous-time Markov generator', 'semigroup step exp(Q t) with supplied clock interval', 'physical rate normalization')
+
+C. boundary firewalls
+[PASS] classifier never derives a kernel from record atoms alone
+[PASS] classifier never derives Born/IID from a kernel
+[PASS] classifier separates generator from clock
+[PASS] classifier leaves dial selection absent -- no Koide/generation dial field is present
+
+SCORECARD: PASS=22 FAIL=0
+VERDICT: exact support for a record-dynamics premise classifier. Post-record information, stochastic production kernels, Markov generators, clock intervals, rate units, and Born/IID bridges are separate gates.
+
+----- stderr -----
+

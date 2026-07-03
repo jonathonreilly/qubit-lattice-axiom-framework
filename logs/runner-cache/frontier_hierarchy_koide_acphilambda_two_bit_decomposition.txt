@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_koide_acphilambda_two_bit_decomposition.py
+runner_sha256: 80bc36a3b1937f73395f36f5350dd405f8f1cc040b17143901060d31a7b9f56e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.09
+status: ok
+----- stdout -----
+
+================================================================================
+Bit B arithmetic: block-weight readings (count-once vs count-twice)
+================================================================================
+[PASS] count-once (1,1) -> r = 1/2  --  r=1/2
+[PASS] count-twice (1,2) -> r = 1  --  r=1
+[PASS] uniform (1/2,1) ~ (1,2) -> still r = 1 (not a selector)  --  r=1
+[PASS] count-bit ratio w_d(twice)/w_d(once) = 2 (doublet real-dim, exact integer)
+
+================================================================================
+Bit B: native complex structure J_cs is AVAILABLE but MEASURE-NEUTRAL
+================================================================================
+[PASS] C^3 = I (C3 cyclic shift)
+[PASS] J_cs eigenvalues = {0, i, -i}  --  {0, I, -I}
+[PASS] det(J_cs) = 0 (odd-dim antisymmetric; measure-neutral)
+[PASS] J_cs^3 = -J_cs (J^2=-I on doublet, 0 on singlet)
+[PASS] det(exp(theta J_cs)) = 1 for all theta (preserves det_R and det_C)  --  det=1
+
+================================================================================
+Cross-lane orthogonality A: count bit does NOT move the Killing scalar
+================================================================================
+[PASS] continuous Killing dilation factor lambda^2 is not the integer count bit
+[PASS] g_bare^2 = N_c/(N_F*beta_canonical) = 1 identically (orthogonal to count bit)  --  g^2=1
+
+================================================================================
+Cross-lane orthogonality B: count bit CANNOT make a C3-circulant chiral
+================================================================================
+[PASS] Gamma_chi^2 = I
+[PASS] comm(C) cap anticomm(Gamma_chi) = {0} (count-anchored H cannot be chiral)  --  free_dirs=0
+
+================================================================================
+Bit A: fermionic (Berezin) Gaussian integral gives det(M)^{+1} (count once)
+================================================================================
+[PASS] Berezin fermionic integral exponent = +1 (det(M)^{+1}, count once)
+[PASS] bosonic Gaussian gives det(M)^{-1} (opposite power; not the fermionic count)
+
+TOTAL: PASS=15 FAIL=0
+VERDICT: AC_phi_lambda two-bit decomposition checks pass.
+  Bit A (det(M)^{+1} count-once exponent): native, cited retained_bounded.
+  Bit B (within-generation block-weight selector): J_cs AVAILABLE but
+  measure-neutral (det=0) -> NOT a selector; the open atom is whether the
+  generation action carries a J_cs-holomorphic bilinear SELECTING count-once
+  under reflection positivity. No forcing of r=1/2 / N_F=1/2 is claimed.
+
+----- stderr -----
+

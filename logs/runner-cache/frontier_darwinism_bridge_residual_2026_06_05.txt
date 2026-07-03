@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/frontier_darwinism_bridge_residual_2026_06_05.py
+runner_sha256: 48c0f304ab801612b3884e0919a9621c654baf5963089b2fd5f6d14a14978deb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+Darwinism-bridge residual: is 'record = redundant objective imprint' forced from {Quantum, Lattice, Record}?
+
+=== A. AXIOM CONTENT: what does the Record axiom assert? ===
+[PASS] additivity-only model: I(R1|_|R2)=I(R1)+I(R2) on all disjoint unions
+       I(empty)=0; I is a sum of atomic self-informations
+[PASS] additivity does NOT determine the carried VALUE (two assignments, same I)
+       the scalar additive readout I is blind to which outcome each record labels
+[PASS] historical Record wording == additivity ONLY (no determined-value clause)
+       historical context: supplied only additive scalar record readout
+[PASS] current Record == additivity AND determined durable outcome
+       MINIMAL_AXIOMS_2026-06-05: 'a record is the durable registration of the realized outcome ... does not change'
+[PASS] determined-value/durability is LOGICALLY INDEPENDENT of additivity
+       additivity can hold with or without a determined-value clause => objectivity is not a consequence of additivity
+
+=== B. ADDITIVITY != REDUNDANCY (counterexample) ===
+[PASS] redundant broadcast: each single fragment carries full pointer record H_S
+       H_S=0.918296; per-fragment info=[0.918296, 0.918296, 0.918296, 0.918296]
+[PASS] redundant broadcast: 2 fragments do NOT add (info SATURATES at H_S)
+       I(S:E1E2 | dephased)=0.918296 == H_S=0.918296
+[PASS] independent records satisfy Record additivity: I_total = sum_k I(pair_k)
+       I_total=8.000000 == sum per-pair=8.000000 (= 4 distinct bits, info ADDS not saturates)
+[PASS] independent records have ZERO redundancy: no fragment shares another's value
+       I(S_1:E_1)=2.000000 bits (own), I(S_1:E_2)=0.000000 (foreign) -> a second observer reading E_2 learns NOTHING about S_1: not objective/redundant
+[PASS] VERDICT B: additivity holds for BOTH; redundancy distinguishes them
+       additivity != redundancy: the Record additivity axiom does NOT entail redundant broadcast (independent-records state is a counterexample)
+
+=== C. OBJECTIVITY + LOCALITY ==> REDUNDANCY ===
+[PASS] LOCALITY: observers read spatially-disjoint single-qubit fragments
+       4 disjoint lattice fragments
+[PASS] OBJECTIVITY+LOCALITY: each local observer reads the full record from their own fragment
+       per-fragment recoverable pointer info all == H_S=0.918296
+[PASS] ==> the only way local observers can all agree on ONE determined value is REDUNDANCY
+       each disjoint fragment independently certifies the same pointer value => redundant broadcast is FORCED by objectivity + locality
+[PASS] CONTRAPOSITIVE: delocalized (global-parity) record is additive+determined but NOT redundant
+       single-fragment info ~ -4.44e-16 (blind); joint info=0.9183 (only the WHOLE env knows the value)
+[PASS] ==> without redundancy a local observer cannot read the determined value: LOCAL objectivity FAILS
+       so objectivity-under-locality is EQUIVALENT to redundancy: neither implies the other vacuously; together they force broadcast
+
+=== D. CLASSIFICATION ===
+   - additivity  : source = Record axiom (both 06-04 and 06-05 wordings)
+                  in {Quantum,Lattice,Record}? True
+   - locality    : source = Lattice axiom (finite-support disjoint fragments)
+                  in {Quantum,Lattice,Record}? True
+   - objectivity : source = Record 06-05 'determined realized outcome' clause (NOT in 06-04); single-system-value determinacy
+                  in {Quantum,Lattice,Record}? wording-dependent
+   - redundancy  : source = Darwinism bridge: SAME value broadcast on MANY fragments (info saturates, not adds)
+                  in {Quantum,Lattice,Record}? False
+[PASS] redundancy is NOT entailed by additivity alone
+       Test B exhibits an additive non-redundant record
+[PASS] redundancy IS forced by (determined outcome) + (local observability) + locality
+       Test C: objectivity-under-locality == redundancy
+[PASS] neither Record wording supplies LOCAL OBSERVABILITY of the determined outcome
+       historical: additivity only; current: determined+durable for ONE context, no per-fragment local-readability clause
+
+   MINIMAL EXTRA PREMISE (the Darwinism bridge, named):
+     LOCAL OBSERVABILITY OF THE DETERMINED OUTCOME: the realized record value is independently recoverable by each spatially-disjoint local observer (many-fragment observer consensus / objectivity-AS-broadcast). Equivalently: the determined outcome is not merely single-valued but is imprinted accessibly on each local fragment.
+
+   Under historical Record wording this premise also has to supply 'determined single value';
+   under current Record only the LOCAL-OBSERVABILITY half remains outstanding.
+[PASS] VERDICT D: Darwinism bridge (record=redundant objective imprint) is OPEN
+       minimal extra premise = local observability of a determined outcome (many-observer consensus); additivity (Record)+locality (Lattice) do NOT supply it
+
+PEAK_RSS_MB=31.0
+SUMMARY: PASS=19 FAIL=0
+
+----- stderr -----
+

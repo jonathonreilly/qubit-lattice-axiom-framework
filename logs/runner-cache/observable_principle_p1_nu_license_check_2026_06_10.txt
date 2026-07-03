@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/observable_principle_p1_nu_license_check_2026_06_10.py
+runner_sha256: 949d4cae451095a6ca7e492b71259bf0d612821de94a08b04a0668ba56525691
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.90
+status: ok
+----- stdout -----
+== T1: the family, the selected member, and the clause split ==
+  [PASS][A] family normalization: g_p(1) = 0 and g_p'(1) = 1
+  [PASS][A] p -> 0 limit of g_p is log z (the selected member)
+  [PASS][A] consistency: log satisfies the hunted license — W'' = -s/z^2 constant sign, nu[s log] = |s|, sup|zW'| = |s| (sharp equality in Lemma N)
+== T2: (BR) alone point-selects p = 0 on {s*g_p} (no curvature leg needed) ==
+  [PASS][A] log-scale response identity: z*(s g_p)' = s z^p exactly
+  [PASS][A] p > 0 rejected (sup at z -> oo) and p < 0 rejected (sup at z -> 0+): both infinite
+  [PASS][A] wrong readouts p in {2, 1, 1/2, -1/2} all rejected by (BR) — including the linear member p = 1, with no separate curvature leg
+  [PASS][A] p = 0 selected: sup|z W'| = |s| < oo; rescaling cannot rescue p != 0 (the |s| factor is linear, unboundedness in z is s-invariant)
+== T3: Lemma N (license-demand reduction NU => BR): sup|zW'| <= nu[W] ==
+  [PASS][A] log-coordinate identities: h' = zW' and h'' - h' = z^2 W'' (generic W, exact)
+  [PASS][A] logistic comparison solution G = nu c e^{u-u1}/(nu + c(e^{u-u1}-1)) solves G' = G - G^2/nu with G(u1) = c, exactly
+  [PASS][A] c > nu: denominator vanishes at u* = u1 + log(1 - nu/c) < u1 (finite backward blow-up; checked exactly at c = 2 nu: u* = u1 - log 2) — so h' <= nu everywhere
+  [PASS][A] c = -delta < 0: denominator vanishes at u** = u1 + log(1 + nu/delta) > u1 (finite forward blow-down) — so h' >= 0 everywhere on the negative branch
+  [PASS][A] positive branch: G2 = nu c e^{u-u1}/(nu - c(e^{u-u1}-1)) solves G' = G + G^2/nu with G2(u1) = c > 0 and blows up forward at u1 + log(1 + nu/c) — so h' <= 0; the reflected logistic trap then gives h' >= -nu
+  [PASS][A] cos witness curvature: z^2 W'' = -1 - (sqrt2/10) cos(u + pi/4), bounded in [-1-sqrt2/10, -1+sqrt2/10]: nonvanishing, constant sign — (NU)-clause (ii) holds
+  [PASS][A] Lemma N on the cos witness: sup|h'| = 11/10 <= nu-bound (11/10)^2/(1 - sqrt2/10) (response bound below the barrier bound, as the lemma demands)  -- sup|zW'|=1.1000 <= nu<=1.4093
+== T4: (BR) escapes the extended irreducible class (witness family recomputed) ==
+  [PASS][A] cos witness normalized (W(1) = 0) and (BR)-passing: zW' = 1 - (1/10) sin(log z) in [9/10, 11/10]
+  [PASS][A] cos witness violates the additive identity at the generic pair (e, e) AND at the reciprocal pair (e, 1/e): residuals (cos2 - 2cos1 + 1)/10 and (2 - 2cos1)/10, nonzero  -- res(e,e)=-0.049675, res(e,1/e)=0.091940
+  [PASS][A] sin witness ((BR)-passing: h' = 1 + eps*omega cos(omega u) bounded): additive residual = -eps omega^3 uA uB (uA + uB)/2 + O(omega^5) — nonzero off uA=0, uB=0, uA+uB=0
+  [PASS][A] the uA + uB = 0 slice is covered by the cos witness: residual 2 eps (1 - cos(omega uA)) != 0 for omega uA not in 2 pi Z — so (BR) entails NO additive-identity instance at any nondegenerate pair (Lemma-R screening: outside the extended class)
+== T5: the no-go witnesses — no retained supplier, clause by clause ==
+  [PASS][A] W_G = log z + log^3 z satisfies every formalized retained constraint: W_G(1) = 0, monotone (zW' = 1 + 3u^2 > 0), inversion-antisymmetric, continuous on R_>0
+  [PASS][A] yet z^2 W_G'' = -(3u^2 - 6u + 1) changes sign at u = 1 +- sqrt(6)/3: clause (ii) is violated by a retained-compatible readout — (ii) has NO retained supplier
+  [PASS][A] W_Q = g_2 = (z^2-1)/2: W'' = 1 (constant sign, (ii) holds) but W'^2/W'' = z^2 -> oo and zW' = z^2 unbounded: (iii) and (BR) violated independently of (ii) — also no supplier
+== T6: the Fisher route cannot supply (NU) even granting its unlicensed bridges ==
+  [PASS][A] Fisher-row facts reproven: E_0[eps] = 0, E_0[eps^2] = 1 (unit Fisher tangent); chart normalizer log E_0[e^{h eps}] = log cosh h
+  [PASS][A] chart readout under the (unlicensed) bridge z = e^h: W_F = log((z+1/z)/2), W_F(1) = 0; curvature phi = sech^2 u - tanh u with phi(0) = 1 > 0, phi(2) < 0: SIGN CHANGE
+  [PASS][A] phi vanishes exactly at tanh u0 = (sqrt5-1)/2 where h'(u0) = (sqrt5-1)/2 != 0: ratio h'^2/|phi| -> oo, so nu[W_F] = oo while sup|zW_F'| = sup|tanh| = 1 — W_F passes (BR), fails (NU): strictness witness AND Fisher-route killer
+  [PASS][A] ladder strictness: (Add)+continuity => W = c log z => nu = |c| ((Add) => (NU)); cos witness has (NU) without (Add); W_F has (BR) without (NU): (Add) > (NU) > (BR), all strict
+== T7: amplitude-side retained rows are readout-blind (exact PD/Neumann family) ==
+  [PASS][A] Q exactly orthogonal (rational Givens mix)
+  [PASS][A] B real antisymmetric with mode pair (1, 2); L1 product recomputed: det(I+B) = (1+1^2)(1+2^2) = 10 exactly (not cited blind)
+  [PASS][C] L2 Neumann instance: ||D^{-1}|| = 1 (Gram eigenvalues {1, 1/4}), source J = (t/2) I positive diagonal, ||D^{-1}J|| = t/2 <= 1/2 < 1 on t in [0,1]
+  [PASS][C] amplitude branch exact: z(t) = det(D + (t/2)I)/det(D) = (t^2+4)(t^2+16)/64, = product of positive conjugate-pair factors, z(0) = 1, z(1) = 85/64 > 0
+  [PASS][A] readout-blindness: log, W_G (sign-changing curvature), W_Q (infinite nu) ALL compose admissibly with z(t) — every amplitude-side fact above was computed without reference to W, so amplitude-side rows cannot discriminate the curvature clauses
+  [PASS][A] compact collapse on the licensed L2 image [1, 85/64] (and on [1,2]): every p has finite response sup (monotone endpoint evaluation) — (BR)/(NU) select NOTHING there; the full-R_>0 clause is exactly the declared T1-d / lemma-L3 domain hypothesis
+== T8: falsification leg — granting (BR) completes the selection exactly ==
+  [PASS][A] with (BR) granted, the pass set on the family is exactly {p = 0}: the missing license is the single load-bearing gap (the selection theorem itself is intact)
+== T9: ledger scan — zero retained-grade suppliers (extends barrier-note T10) ==
+  [PASS][B] extended ledger scan: ZERO retained-grade rows match curvature/barrier/response-bound/resolution vocabulary — neither (NU) nor the reduced (BR) is licensed  -- matches=[]
+  [PASS][B] cited rows present at the cited effective statuses (one-hop, presence check)
+  [PASS][B] Fisher row and det-positivity lemma are visible candidate rows (the two strongest candidate suppliers were assessed at full strength, not strawmanned)
+  [PASS][B] target barrier-selector note present on disk and declares its (NU) premise unlicensed
+== T10: note honest-scope, firewall-compliance, and boundary strings ==
+  [PASS][B] note honest-scope and firewall-compliance strings present  -- missing=[]
+  [PASS][B] forbidden promotion strings absent  -- found=[]
+
+TOTAL: PASS=38 FAIL=0
+
+----- stderr -----
+

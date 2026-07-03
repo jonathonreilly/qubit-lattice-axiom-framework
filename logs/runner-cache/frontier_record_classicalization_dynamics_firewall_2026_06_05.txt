@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_classicalization_dynamics_firewall_2026_06_05.py
+runner_sha256: 1d6f28633e8b5ba3b760af2ec03a1b18b55003923f3ba6b0218207f099db7c87
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+=== Pre-record qubit surface ===
+[PASS] Q1 pre-record state is normalized
+[PASS] Q2 density matrix has trace one
+[PASS] Q3 projective instrument resolves identity
+[PASS] Q4 Born weights are nontrivial and sum to one
+       p = (2/3, 1/3)
+[PASS] Q5 the qubit still has coherence before the record
+       offdiag = sqrt(2)/3
+
+=== Record-event interface ===
+[PASS] I1 selective outcome 0 gives conditional branch state P0
+[PASS] I2 selective outcome 1 gives conditional branch state P1
+[PASS] I3 nonselective state is the ensemble mixture over records
+       nonselective = Matrix([[2/3, 0], [0, 1/3]])
+[PASS] I4 nonselective mixture is not an individual realized record
+
+=== Post-record information surface ===
+[PASS] R1 realized record 0 is one-hot information, not the Born vector
+       e0 = (1, 0), born = (2/3, 1/3)
+[PASS] R2 realized record 1 is one-hot information, not the Born vector
+       e1 = (0, 1), born = (2/3, 1/3)
+[PASS] R3 one-hot records are orthogonal and distinguishable
+[PASS] R4 one-hot record entropy is zero while predictive entropy is positive
+       H(born) = 0.918296 bits
+[PASS] R5 additive record readout has I(empty)=0 and adds over disjoint records
+
+=== Copy/re-read stability checks ===
+[PASS] C1 pointer label 0 copies stably
+[PASS] C2 pointer label 1 copies stably
+[PASS] C3 the same copier does not clone a nontrivial qubit superposition
+       CNOT makes entanglement, not two copies of psi
+[PASS] C4 arbitrary pre-record qubit states need not be orthogonal records
+       <phi|psi> = sqrt(6)/6 + sqrt(3)/3
+[PASS] C5 repeat-read of a pointer atom is idempotent
+
+=== Dynamics consequences ===
+[PASS] D1 realized post-record update is integral for outcome 0
+       counts -> (4, 4)
+[PASS] D2 realized post-record update is integral for outcome 1
+       counts -> (3, 5)
+[PASS] D3 predictive expected update is fractional for nontrivial Born weights
+       E[counts'] = (11/3, 13/3)
+[PASS] D4 expected update is an ensemble object, not either realized update
+[PASS] D5 post-record count dynamics is additive under concatenating histories
+       (0,1,1)+(0,0) -> (3, 2)
+[PASS] D6 empirical frequency is a normalized count summary, not the written token
+
+=== Generation-dial implication ===
+[PASS] G1 equal record-letter prior is distinct from dimension/Born-style prior
+       gamma=0 letters=(1/2, 1/2), gamma=1 dims=(1/3, 2/3)
+[PASS] G2 a realized singlet token is not either prior distribution
+[PASS] G3 a realized doublet token is not either prior distribution
+[PASS] G4 the dial is therefore a prior/ensemble choice over record letters
+       the individual post-record site carries the selected letter
+
+=== Scorecard ===
+PASS=29 FAIL=0
+FINDING: pre-record qubits carry predictive weights; record events write one realized label; post-record dynamics acts on information tokens/counts. Probabilities re-enter as predictive or ensemble states, not as the individual durable record.
+
+----- stderr -----
+

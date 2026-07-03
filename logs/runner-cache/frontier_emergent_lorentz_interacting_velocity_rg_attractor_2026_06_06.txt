@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py
+runner_sha256: 9941df41890b1aace77ee95bd720504201245b8c647897b8dda31891ad8bcf38
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+==============================================================================================
+Interacting emergent Lorentz: velocity anisotropy is an ATTRACTIVE IR fixed point
+inside the supplied one-loop model; Collins' gate reduces to ONE conditional scalar
+==============================================================================================
+
+----------------------------------------------------------------------------------------------
+Part A: the one-loop velocity RG drives eta = v_F/v_b -> 1 (ATTRACTIVE fixed point)
+----------------------------------------------------------------------------------------------
+  [PASS] (A1) eta -> 1 from every initial ratio eta0 in {0.3,0.6,1.8,3.0} (coupled RG flow)  --  finals = 1.00000, 1.00000, 1.00000, 1.00000
+  [PASS] (A2) linear-stability eigenvalue of the difference mode is NEGATIVE (attractive)  --  d(vF-vb)/dl = -0.1333 (vF-vb) -> exponential decay; speed-difference operator IR-IRRELEVANT
+  [PASS] (A3) the COMMON-speed direction is marginal (weighted mean ~ invariant); only the DIFFERENCE flows  --  weighted-mean drift = 4.8e-16 (overall speed/time normalization is supplied, not derived by this flow)
+
+----------------------------------------------------------------------------------------------
+Part B: O_h keeps the spatial renormalization a SINGLE scalar c_s (not a tensor)
+----------------------------------------------------------------------------------------------
+  [PASS] (B1) O_h-invariant symmetric 3x3 tensors form a 1-DIM space (multiples of delta_ij)  --  dim = 1 -> the spatial split is ONE scalar c_s; the 3 axes stay equal
+  [PASS] (B2) the Reynolds projection of any spatial tensor is proportional to the identity (isotropic)  --  O_h forbids a directional spatial-velocity split (consistent with the dim-6 ell=4 note)
+
+----------------------------------------------------------------------------------------------
+Part C: canonical continuous time FIXES c_t -> the gate reduces to ONE number
+----------------------------------------------------------------------------------------------
+  [PASS] (C1) equal-time CAR preserved by Stone evolution U=exp(-iHt): U U^dag = I  --  max|UU^dag - I| = 6.7e-16  => c_t fixed by canonical normalization
+  [PASS] (C2) field rescaling moves CAR-norm and c_t by the SAME Z -> c_t == 1 maintained; only c_s is physical  --  Collins' 2-parameter (c_t,c_s) gate reduces to ONE number c_s (relative to canonical c_t=1)
+  [PASS] (C3) => combined with Part A (c_s flows to c_t=1) the gate is ONE IR-attractive number, not a 2-param wall  --  canonical time (c_t fixed) + O_h (c_s scalar) + attractive flow (c_s -> 1)
+
+----------------------------------------------------------------------------------------------
+Part D: HONEST residual -- the power-divergent UV piece (Collins), scoped not solved
+----------------------------------------------------------------------------------------------
+  [PASS] (D1) UV regeneration delta c_s ~ alpha/4pi is loop-suppressed but NOT Planck-suppressed (Collins)  --  delta c_s|_UV ~ 0.0080 -- unprotected by CPT(even)/O_h(permits)/gauge-Ward(no c_t-c_s tie)
+  [PASS] (D2) supplied-model attractive flow gives an illustrative (mu/M_Pl)^gamma damping factor  --  gamma = 0.133, (mu/M_Pl)^gamma ~ 2.93e-03 -> eta-1|_IR ~ 2.33e-05; non-closing until physical gamma/coefficient are retained
+  [PASS] (D3) SCOPE: whether (D2) beats LV bounds WITHOUT a custodial symmetry is the GENUINE OPEN problem  --  not claimed solved; gamma at the physical fixed point + the exact power-divergent coeff are the open inputs
+  [PASS] (D4) the cheapest candidate closer is the a^-1=M_Pl EFT/LV scale separation (Belenchia et al 2016), NOT a new symmetry  --  the framework HAS the exact Planck hierarchy; SUSY (Nibbelink-Pospelov) would also work but is overkill/absent
+
+----------------------------------------------------------------------------------------------
+Part E: source title/scope is conditional algebra, not an unconditional theorem
+----------------------------------------------------------------------------------------------
+  [PASS] (E1) note title is narrowed to conditional algebra / supplied one-loop boundary  --  title no longer presents a bare interacting-Lorentz theorem
+  [PASS] (E1b) note claim type is open-gate conditional support, not bounded_theorem  --  status firewall prevents bounded-theorem promotion over supplied RG inputs
+  [PASS] (E2) source role calls the packet conditional algebra  --  scope is supplied one-loop/structural packet
+  [PASS] (E3) hierarchy suppression remains non-load-bearing  --  hierarchy damping is explicitly non-load-bearing
+  [PASS] (E4) source explicitly leaves physical gamma/coefficient open  --  no retained LV-naturalness closure claimed
+  [PASS] (E5) 2026-06-12 audit firewall names the missing bridges and forbids axiom/admission changes  --  audit-facing boundary is explicit in the source row
+
+----------------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------------
+  A  interacting velocity RG: eta=v_F/v_b -> 1 ATTRACTIVE (eigenvalue -(C_F+C_B N_f)alpha < 0);
+     the marginal speed-difference operator is IR-IRRELEVANT (Lorentz emerges dynamically).
+  B  O_h keeps the spatial split a SINGLE scalar c_s (invariant dim 1; 3 axes stay equal).
+  C  canonical continuous time FIXES c_t (CAR preserved by Stone) -> Collins' 2-parameter gate
+     reduces to ONE number c_s; with A, c_s flows to the canonical c_t=1.
+  D  HONEST residual: the power-divergent UV regeneration of c_s (Collins) is loop- but NOT
+     Planck-suppressed and unprotected by CPT/O_h/gauge-Ward; the supplied-model hierarchy
+     damping factor is illustrative/non-closing until physical gamma and coefficient are retained.
+  NET: inside the supplied one-loop/structural packet, the residual is organized from
+       '2-parameter O(1) wall' to 'ONE conditional IR-attractive scalar'. No new axiom.
+       Source title/scope is conditional algebra over supplied one-loop dynamics.
+
+==============================================================================================
+TOTAL: PASS=18 FAIL=0
+==============================================================================================
+
+----- stderr -----
+

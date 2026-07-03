@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cubic_coxeter_regge_linearized_action_selection_2026_06_10.py
+runner_sha256: 31c0278dfa4223b493621168a310de7613df48db5385f0f8bbb4e33390123445
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 51.63
+status: ok
+----- stdout -----
+LINEARIZED ACTION SELECTION ON THE 3+1 CUBIC-COXETER COMPLEX (Z^3 x Z_tau)
+================================================================================================
+[PASS] continuum coefficient rank: the exact polynomial equations for M(k) h_gauge(k,xi)=0 on the 550-parameter O(k^2) ansatz have nullity ten
+       coefficient matrix shape = (800, 550); exact rank = 540; nullity = 10
+[PASS] continuum nullspace check (no isotropy assumed): among ALL quadratic forms on the 10 metric components with entries quadratic in k and arbitrary constant coefficients (550 parameters, cubic-anisotropic structures included), the gauge-annihilation condition M(k) h_gauge(k,xi) = 0 for all (k,xi) leaves a TEN-dimensional family (strictly filtered against fresh samples), containing the in-runner-derived linearized EH pairing
+       nullspace dim = 10; EH gauge-residual = 5.6e-13; EH outside-nullspace fraction = 7.5e-15; EH T-fit residual = 2.1e-13
+[PASS] background-metric identification: every GL(4) pullback F_L(k) = T_L^T M_EH(L^T k) T_L is gauge-annihilating (h -> L^T h L maps gauge families to gauge families, fresh-sample verified), i.e. one linearized EH form per constant flat background metric g = L^T L; the span of random pullbacks has rank 10 and COINCIDES with the continuum nullspace (joint rank still 10). Within this declared O(k^2) ansatz, gauge annihilation + locality admit the EH class -- the only leading-order freedom beyond one overall constant is WHICH constant flat background metric (= anisotropy/units data). Mass terms are excluded because the family is O(k^2) by construction and the lattice bridge covers k=0.
+       pullback gauge-residual = 1.4e-13; rank(nullspace feats) = 10, rank(pullback feats) = 10, joint rank = 10
+  building the sampled embedding-inert lattice family (stencil {0, +-e_mu, +-(e_mu+e_nu)}, 2370 parameters)...
+[PASS] declared-stencil lattice family is nonempty and finite-dimensional: the sampled space of local lattice quadratic forms on the 15 edge classes (declared stencil) whose vertex-displacement family consists of exact zero modes at sampled momenta has the reported dimension (constraint system sampled at 900 random momenta, 60 complex conditions each; nullspace by eigendecomposition)
+       family dimension = 4 (of 2370 parameters)
+[PASS] lattice flatness bridge: for random elements of the embedding-inert family, constant metric perturbations are automatically zero modes at k=0 (Q'(0) M(0) = 0) -- the O(k) expansion of the gauge condition spans the constant-h metric image, so no separate flatness hypothesis is needed on the metric sector
+       max relative |Q'(0) M_metric| over samples = 1.9e-14
+[PASS] declared-stencil family probe: for random elements of the sampled embedding-inert lattice family, the DIRECT metric-sector O(k^2) form P_2 (gauge-exact at every k by the line-average lemma, hence continuum-nullspace constrained) is fit by a SINGLE element of the ten-dimensional background-metric EH class ACROSS ALL THREE test directions simultaneously -- every local embedding-inert lattice action in this declared family has EH-class leading physics; the only leading freedom is the constant and the background metric within this scope
+       worst across-direction EH-class fit residual = 3.8e-07 (target norms [0.0751, 0.0613, 0.0728, 0.0667, 0.0517])
+[PASS] Regge instantiation: the Regge action S_R is an embedding-inert form (its gauge zeros are exact -- the second-variation rows) and its direct P_2 = c x EH with c = -1/2 in the tick, space, AND a previously untested tick-space-space mixed direction -- the measured Regge<->EH correspondence is the continuum-plus-bridge theorem applied to the one embedding-inert form the geometric complex supplies natively
+       c(S_R) per direction (tick, space, mixed (1,1,0,1)/sqrt3) = [-0.5, -0.5, -0.5]
+[PASS] higher-order freedom witness: the DEFICIT-SQUARED form sum_t |delta delta_t|^2 -- the discrete curvature-squared term, built from the same hinge data as S_R -- is local, EXACTLY gauge-annihilating at every momentum (deficits are inert under flat re-embeddings), nonzero at finite k, and has ZERO leading metric-sector content (pure O(k^4)): higher-curvature lattice terms exist, so the selection theorem fixes the LEADING order only, exactly as Lovelock's theorem does in the continuum (context only); the O(k^4) freedom is the lattice-fingerprint sector
+       gauge residual = 1.0e-13; |Q_defsq(k_finite)| = 462.84; max|P_2| = 2.0e-06 (relative 4.3e-09 -- pure O(k^4))
+[PASS] mass-term control: the edge-length mass term (C0 = identity, a perfectly local functional) violates embedding-inertness -- its gauge residual is O(1) -- so it is excluded by the embedding-independence requirement, not by fiat; the theorem is not vacuous
+       |Q'_mass(k) Gamma(k)| = 0.799 (O(1) violation)
+
+TOTAL: PASS=9 FAIL=0
+VERDICT: at the linearized level the action-selection question is answered on the framework's
+own 3+1 complex. Gauge annihilation + locality at O(k^2) admit the
+background-metric EH class (ten-dimensional: one linearized EH form per constant flat metric;
+identified via GL(4) pullbacks); mass terms are excluded, and the
+only freedom beyond one overall constant is WHICH flat background (anisotropy/units data).
+The bridge applies to exact embedding-inert local lattice forms; the sampled declared-stencil
+family probe verifies representative random elements have leading metric physics in that class.
+The Regge action is one such form and realizes the ISOTROPIC background g = delta -- the
+complex's own flat metric, with the tick on equal footing per the kinetic-isotropy primitive --
+with c = -1/2 (the textbook normalization), including a previously untested mixed direction.
+The freedom beyond the constant and the background starts at O(k^4) (the deficit-squared
+discrete curvature-squared term, exhibited: gauge-exact, nonzero, zero leading content) -- the
+lattice analogue of Lovelock's theorem at quadratic order. The hypothesis is load-bearing
+(a mass term violates it at O(1)). The action-selection gap REDUCES to: the single leading
+constant's orientation and magnitude (the located sign residual + the registered scale
+reference), the background-metric choice (fixed by the complex's flat geometry + the
+kinetic-isotropy primitive), the O(k^4) tail, and the nonlinear completion. No PDG/fitted value.
+
+----- stderr -----
+

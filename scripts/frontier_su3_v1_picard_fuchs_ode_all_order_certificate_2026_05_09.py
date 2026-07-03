@@ -1,4 +1,4 @@
-"""All-order proof certificate for the V=1 SU(3) Wilson Picard-Fuchs ODE.
+"""Finite-window boundary certificate for the V=1 SU(3) Wilson Picard-Fuchs ODE.
 
 Companion to:
   scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py             (PR #541)
@@ -8,16 +8,18 @@ Companion to:
   docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md
   docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_BOUNDED_SYNTHESIS_NOTE_2026-05-06.md
 
-This runner closes the all-order proof gap identified by the audit:
+This runner used to claim it closed the all-order proof gap identified by the audit:
 
   > "the exact Picard-Fuchs ODE and Frobenius-branch identification are
   > promoted from truncated series substitution plus finite numerical
   > agreement"
 
-It supplies five rigorous certificates that, taken together, establish
-L · J(beta) = 0 as an exact identity in Q[[beta]] (not merely modulo a
-finite Taylor degree) and identify the analytic Frobenius branch at
-beta=0 with the SU(3) Wilson integral J(beta).
+The current source boundary is narrower. It supplies five useful certificates
+for the V=1 single-plaquette surface, but T2 is only a finite
+Koutschan-style search grid through coefficient degree 30. Therefore this
+runner does not certify the all-degree lower-order exclusion, and T3 is only a
+conditional Bostan-Salvy-Schost arithmetic check if an external all-degree
+R=3,D=2 minimal-annihilator bound is supplied.
 
 Notation:
   J(beta) = integral_{SU(3)} exp(beta . Re Tr U / 3) dU
@@ -37,18 +39,18 @@ CERTIFICATES:
      exponential convergence of the k-sum (Bars 1980; Brower-Nauenberg
      1981), J(beta) is D-finite of finite order.
 
-[T2] EFFECTIVE ANNIHILATOR-ORDER BOUND VIA ALGORITHMIC CERTIFICATE.
+[T2] FINITE-GRID ANNIHILATOR-ORDER EXCLUSION.
      The PR #616 algorithmic Koutschan-style guess at depth 100
      scanned (r, d) in {0..4} x {0..30} and found:
        - no annihilator exists at any (r ≤ 2, d ≤ 30),
        - the unique non-trivial annihilator at (r ≤ 4) appears at
          (r=3, d=2) and equals the published L,
        - kernel dimension at (r=3, d ≥ 2) is exactly d - 1.
-     This is the algorithmic-discovery output that constitutes the
-     rank-3 bound on the minimal annihilator. We replay the certificate
-     here as a regression check.
+     This is finite-grid algorithmic-discovery output, not an all-degree proof
+     of the rank-3 bound on the minimal annihilator. We replay the certificate
+     here as a regression check and as bounded support.
 
-[T3] BOSTAN-SALVY-SCHOST DEPTH-SUFFICIENCY THEOREM.
+[T3] CONDITIONAL BOSTAN-SALVY-SCHOST DEPTH-SUFFICIENCY CHECK.
      For a D-finite power series f(beta) annihilated by a (priori
      unknown) polynomial-coefficient ODE of order R and coefficient
      degree D, a candidate operator L of order r and coefficient degree
@@ -58,11 +60,11 @@ CERTIFICATES:
      power-series identities (Bostan, "Algorithms for D-finite power
      series", Lecture Notes 2010; Salvy-Zimmermann 1994).
 
-     With r = 3, d = 2, and the [T1]+[T2] bound R = 3, D = 2, the
-     Bostan-Salvy-Schost threshold is M_0 = 12 + 3 + 2 = 17. We verify
-     L . J = 0 at depth 200 (degree window [beta^0, ..., beta^196]),
-     which is more than 11 times the Bostan threshold. By the theorem,
-     L . J = 0 IDENTICALLY in Q[[beta]] (all-order).
+     With r = 3, d = 2, and with an externally supplied all-degree bound
+     R = 3, D = 2, the Bostan-Salvy-Schost threshold is
+     M_0 = 12 + 3 + 2 = 17. We verify L . J = 0 at depth 200
+     (degree window [beta^0, ..., beta^196]). Because T2 is finite-grid only,
+     this runner does not by itself supply the external all-degree bound.
 
 [T4] FROBENIUS-BRANCH IDENTIFICATION AT beta = 0.
      L's indicial polynomial at beta = 0 is computed:
@@ -82,11 +84,12 @@ CERTIFICATES:
      is a hostile-reviewer-grade regression layer: at depth 200 the
      Bostan-Salvy-Schost threshold is exceeded by an order of magnitude.
 
-NOTE ON SCOPE: This proof certificate establishes the V=1 single-plaquette
-Picard-Fuchs ODE and Frobenius branch identification as ALL-ORDER
-identities, not as truncated approximations. It does NOT promote any
-thermodynamic-limit, multi-plaquette, higher-irrep, or downstream coupling
-status. Audit verdict belongs to the independent audit lane.
+NOTE ON SCOPE: This boundary certificate establishes finite-window exact
+checks, a D-finiteness witness, Frobenius-branch evidence, and a conditional
+depth-sufficiency calculation. It does NOT prove the all-degree lower-order
+exclusion, does NOT claim all-order minimal-annihilator closure, and does NOT
+promote any thermodynamic-limit, multi-plaquette, higher-irrep, or downstream
+coupling status. Audit verdict belongs to the independent audit lane.
 
 CITATIONS:
   [Bars 1980]      I. Bars, "U(N) integral for the generating functional in
@@ -313,13 +316,17 @@ def certificate_T1_dfiniteness_witness() -> tuple[bool, str, dict]:
 # ---------------------------------------------------------------------------
 
 def certificate_T2_algorithmic_rank_bound(coeffs, depth: int) -> tuple[bool, str, dict]:
-    """Replay the algorithmic rank-bound certificate from PR #616:
+    """Replay the finite-grid rank-bound certificate from PR #616:
     no annihilator exists at any (r in {1, 2}, d in {0, ..., 30});
     a unique annihilator appears at (r=3, d=2) and matches L.
-    This algorithmically bounds the minimal annihilator's order to 3
-    (and coefficient degree to 2).
+    This is bounded finite-grid support. It does not prove the all-degree
+    minimal annihilator's order or coefficient degree.
     """
-    info: dict = {"r_max_excluded": 2, "d_max_excluded": 30}
+    info: dict = {
+        "r_max_excluded": 2,
+        "d_max_excluded": 30,
+        "all_degree_minimality_certified": False,
+    }
     all_excluded = True
     cell_count = 0
     fail_count = 0
@@ -387,9 +394,10 @@ def certificate_T2_algorithmic_rank_bound(coeffs, depth: int) -> tuple[bool, str
 
     if all_excluded and kernel_dim == 1:
         return True, (
-            f"Algorithmic rank bound: ALL (r in {{1,2}}, d in {{0..30}}) "
+            f"Finite-grid rank support: ALL (r in {{1,2}}, d in {{0..30}}) "
             f"excluded (62 cells, kernel=0); (r=3,d=2) kernel=1 matches L. "
-            f"Order(minAnn(J)) = 3, deg(minAnn(J)) = 2."
+            f"This supports the order-3 degree-2 candidate inside the scanned "
+            f"grid, but does not certify all-degree minimality."
         ), info
     return False, "Algorithmic rank bound failed", info
 
@@ -405,7 +413,7 @@ def certificate_T3_bostan_schost_threshold(
     candidate_order_r: int,
     candidate_degree_d: int,
 ) -> tuple[bool, str, dict]:
-    """Verify the Bostan-Salvy-Schost depth-sufficiency principle.
+    """Verify the conditional Bostan-Salvy-Schost depth-sufficiency arithmetic.
 
     For a D-finite power series f(beta) annihilated by SOME polynomial-
     coefficient ODE of order R and coefficient degree D, a candidate
@@ -418,7 +426,8 @@ def certificate_T3_bostan_schost_threshold(
 
     Given the input L_J_truncated_zero_through_degree, R_bound,
     D_bound, candidate_order_r, candidate_degree_d, certify that the
-    threshold is exceeded.
+    threshold would be exceeded if the all-degree R_bound,D_bound premise were
+    separately supplied. This runner does not supply that premise.
     """
     M_0 = (candidate_order_r + 1) * (candidate_degree_d + 1) + R_bound + D_bound
     info = {
@@ -428,16 +437,19 @@ def certificate_T3_bostan_schost_threshold(
         "D_bound": D_bound,
         "candidate_order_r": candidate_order_r,
         "candidate_degree_d": candidate_degree_d,
+        "conditional_on_external_all_degree_R_D_bound": True,
+        "all_order_identity_certified_by_this_runner": False,
     }
     # margin
     margin = L_J_truncated_zero_through_degree - M_0
     info["margin_above_threshold"] = margin
     if L_J_truncated_zero_through_degree >= M_0:
         return True, (
-            f"Bostan-Salvy-Schost threshold M_0 = {M_0} is exceeded by "
+            f"Conditional Bostan-Salvy-Schost threshold M_0 = {M_0} is exceeded by "
             f"the verified depth {L_J_truncated_zero_through_degree} "
-            f"(margin = {margin}). L . J = 0 holds identically as a "
-            f"power-series identity in Q[[beta]]."
+            f"(margin = {margin}) IF an external all-degree R={R_bound}, "
+            f"D={D_bound} minimal-annihilator bound is supplied. This runner "
+            f"does not certify that external premise."
         ), info
     return False, (
         f"Verified depth {L_J_truncated_zero_through_degree} is below "
@@ -546,17 +558,16 @@ def certificate_T5_depth_200(coeffs, J_poly_200, ORDER) -> tuple[bool, str, dict
 
 def main():
     print("=" * 78)
-    print("V=1 SU(3) Wilson Picard-Fuchs ODE: ALL-ORDER PROOF CERTIFICATE")
+    print("V=1 SU(3) Wilson Picard-Fuchs ODE: FINITE-WINDOW BOUNDARY CERTIFICATE")
     print("=" * 78)
     print()
-    print("Candidate ODE (PR #541, all-order claim):")
+    print("Candidate ODE (PR #541):")
     print("  L = 6 beta^2 J''' + (60 beta - beta^2) J''")
     print("    + (-4 beta^2 - 2 beta + 120) J' - (beta^2 + 10 beta) J = 0")
     print()
-    print("This runner closes the all-order proof gap identified in audit:")
-    print("  > the exact Picard-Fuchs ODE and Frobenius-branch identification")
-    print("  > are promoted from truncated series substitution plus finite")
-    print("  > numerical agreement.")
+    print("This runner no longer claims to close the all-degree minimality gap:")
+    print("  > T2 excludes order <= 2 only on the scanned degree <= 30 grid.")
+    print("  > T3 is conditional on an external all-degree R=3,D=2 bound.")
     print()
 
     pass_count, fail_count = 0, 0
@@ -599,7 +610,7 @@ def main():
 
     # Certificate T2: algorithmic rank bound (uses depth-200 Taylor)
     print("-" * 78)
-    print("[T2] Effective annihilator-order bound via algorithmic certificate:")
+    print("[T2] Finite-grid annihilator-order exclusion:")
     t0 = time.time()
     okT2, msgT2, infoT2 = certificate_T2_algorithmic_rank_bound(coeffs_200, ORDER)
     print(f"    {msgT2}  (took {time.time()-t0:.1f}s)")
@@ -630,8 +641,8 @@ def main():
     print("[T3] Bostan-Salvy-Schost depth-sufficiency principle:")
     okT3, msgT3, infoT3 = certificate_T3_bostan_schost_threshold(
         L_J_truncated_zero_through_degree=safe_deg,
-        R_bound=3,  # from T1 (D-finite) + T2 (algorithmic rank-3 bound)
-        D_bound=2,  # from T2 (algorithmic deg-2 bound)
+        R_bound=3,  # conditional premise, not certified all-degree by T2
+        D_bound=2,  # conditional premise, not certified all-degree by T2
         candidate_order_r=3,
         candidate_degree_d=2,
     )
@@ -657,22 +668,25 @@ def main():
     # Summary
     # ------------------------------------------------------------------------
     print("=" * 78)
-    print(f"SUMMARY: ALL-ORDER CERTIFICATE PASS={pass_count} FAIL={fail_count}")
+    print(f"SUMMARY: FINITE-WINDOW BOUNDARY PASS={pass_count} FAIL={fail_count}")
     print("=" * 78)
     print()
     if fail_count == 0:
-        print("All-order Picard-Fuchs proof closed:")
+        print("Finite-window Picard-Fuchs boundary packet passed:")
         print("  [T1] J is D-finite (via D_0 explicit holonomic-closure annihilator")
         print("       + Bars 1980 + Stanley/Lipshitz closure under sums).")
-        print("  [T2] Minimal annihilator has order R = 3, coefficient degree D = 2")
-        print("       (algorithmic Koutschan-style guess at depth 100).")
-        print("  [T3] Bostan-Salvy-Schost threshold M_0 = (r+1)(d+1) + R + D = 17")
-        print("       is exceeded by depth-200 verification (margin > 11x).")
-        print("       => L . J = 0 IDENTICALLY as a power series in Q[[beta]].")
+        print("  [T2] The scanned finite grid excludes all order <= 2, degree <= 30")
+        print("       annihilator cells and finds the order-3 degree-2 candidate L.")
+        print("  [T3] Bostan-Salvy-Schost threshold arithmetic is satisfied only")
+        print("       conditionally on an external all-degree R=3,D=2 bound.")
         print("  [T4] L's indicial polynomial is 6 s (s+3)(s+4); unique analytic")
         print("       root s = 0; J is the unique analytic Frobenius branch")
         print("       normalized by J(0) = 1 from the Bessel-determinant identity.")
         print("  [T5] Depth-200 regression: A and D certificates pass.")
+        print()
+        print("Open blocker preserved:")
+        print("  - This runner does NOT prove the all-degree lower-order exclusion.")
+        print("  - Therefore it does NOT certify all-order minimal-annihilator closure.")
         print()
         print("Bounded scope unchanged:")
         print("  - V = 1 single-plaquette only.")
@@ -680,7 +694,7 @@ def main():
         print("    bridge promotion claimed.")
         print("  - Audit verdict belongs to the independent audit lane.")
     else:
-        print("FAIL: all-order certificate did not pass.")
+        print("FAIL: finite-window boundary certificate did not pass.")
 
     out_dir = Path("outputs")
     out_dir.mkdir(exist_ok=True)
@@ -689,7 +703,10 @@ def main():
             "L = 6 beta^2 J''' + (60 beta - beta^2) J'' "
             "+ (-4 beta^2 - 2 beta + 120) J' - (beta^2 + 10 beta) J"
         ),
-        "claim": "L . J(beta) = 0 IDENTICALLY in Q[[beta]] (all-order)",
+        "claim": (
+            "Finite-window boundary packet for the V=1 Picard-Fuchs ODE; "
+            "all-degree minimal-annihilator closure is not certified by this runner"
+        ),
         "taylor_order": ORDER,
         "certificate_T1_dfiniteness_witness": {
             "name": "D-finiteness witness via D_0 explicit holonomic-closure ODE",
@@ -724,7 +741,9 @@ def main():
         "summary": {
             "pass": pass_count,
             "fail": fail_count,
-            "all_order_certificate_passed": fail_count == 0,
+            "finite_window_boundary_passed": fail_count == 0,
+            "all_order_certificate_passed": False,
+            "all_degree_minimality_certified": False,
             "audit_status_authority": "independent audit lane only",
         },
     }

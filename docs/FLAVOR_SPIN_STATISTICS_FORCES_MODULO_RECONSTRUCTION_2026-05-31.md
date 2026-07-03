@@ -1,85 +1,93 @@
-# Flavor — spin-statistics does NOT yet force the fermionic frame P1 from framework baseline+emergent-spacetime: the engine is genuine and Dirac–Kähler is evaded, but P1 = forced-modulo the free-field reconstruction R (+ the L1 boost-spinor embedding is a compatible choice)
+# Flavor Spin-Statistics Reconstruction Boundary Packet
 
-**Date:** 2026-05-31
+**Date:** 2026-05-31; source-boundary repair 2026-06-07.
 **Claim type:** bounded_theorem
-**Claim boundary:** bounded — a genuine partial forcing + two precisely-located gaps. Not a closure.
-**Runner:** `scripts/flavor_spin_statistics_forces_modulo_reconstruction_2026_05_31.py` (SCORECARD 6/6).
-**Source:** workflow `wf_83c9f756` — 6 routes + 3-lens adversarial verification + synthesis (13 agents). Directive: derive from the axioms up, ledger non-constraining.
+**Actual current-surface status:** bounded-support.
+**Trace class:** negative_route_pruning.
+**Reachability to target:** prunes the route "the spin-statistics engine alone
+forces the fermionic frame P1 from current baseline plus emergent spacetime."
+**Bare retained allowed:** false.
+**Audit required before effective status change:** true.
+**Runner:** `scripts/flavor_spin_statistics_forces_modulo_reconstruction_2026_05_31.py`
+(SCORECARD PASS=7 FAIL=0).
 
-## Question
-Does spin-statistics from the emergent Lorentz (3,1) **force** the fermionic matter frame P1 — the one
-import the whole charged-lepton flavor sector reduces to — from framework baseline+emergent-spacetime?
+## Repaired Claim
 
-## Verdict: P1 forced *modulo one ingredient* (the engine is real; two gaps remain)
+This packet keeps the real bounded content and removes the current-surface
+promotion that P1 is forced modulo a named reconstruction.
 
-The chain `emergent-Lorentz → qubit-is-spinor (L1) → spin-statistics (L3) → fermionic frame (P1)` is
-genuine and partly executes, but it does **not** close on the current surface. Routes split 4–2 against
-forcing, and both forcing-claimants were refuted 3/3 on exactly the flagged obstacles.
+What closes:
 
-### What is genuinely established (real progress)
-- **The spin-statistics ENGINE (T1) is a true forcing for a *given* relativistic spin-½ field** —
-  not mere compatibility. Verified (runner T1a/b): Bose quantization of a Dirac field (modes
-  `{+E,+E,−E,−E}`, `sign(ūu)=−sign(v̄v)`) gives `H=E(n_p−n_a)` **unbounded below** (no stable vacuum)
-  and breaks microcausality, while CAR is healthy and bounded below at 0. The bosonic frame **for that
-  field** is genuinely excluded.
-- **The Dirac–Kähler / Becher–Joos obstacle is EVADED.** Verified (runner DKa): taste enters as a
-  **4-fold spectator spectral multiplicity** of a clean j=½ block — it multiplies the spectrum, it does
-  *not* mix spin into an inhomogeneous-form object. So the classic "tensor-as-fermion" spin-statistics
-  puzzle does **not** block this route at the IR/block level. (Caveat: clean factorization is the a→0
-  statement; finite-a has O(a) non-spectator taste mixing.)
-- **L1 spatial half is derived:** `per_site_su2_spin_half` — the qubit ℂ² is the unique j=½ su(2)
-  module under `S_i=σ_i/2` (runner L1a, Casimir = ¾). Matter is **not** a Lorentz-scalar; the
-  spin-statistics theorem is not vacuously inapplicable.
+1. For a **supplied relativistic spin-1/2 field with the usual particle /
+   antiparticle sign structure**, the spin-statistics engine is genuine:
+   wrong Bose quantization has an unbounded-below energy direction, while CAR
+   occupation is bounded in the finite check.
+2. A clean Dirac-block/taste decomposition can realize taste as spectator
+   multiplicity rather than as spin-mixing; the Becher-Joos/Dirac-Kahler
+   obstacle is therefore not a blocker for that supplied clean block.
+3. The on-site qubit carries the spatial `SU(2)` spin-1/2 representation under
+   `sigma_i/2`.
+4. The tested UV-lattice data do **not** force cross-site CAR/Grassmann
+   statistics: ordinary qubit ladders commute across sites, Jordan-Wigner
+   dressed generators anticommute after a representation choice, and the free
+   propagator kernel used in the check is statistics-blind.
 
-### Why P1 is not yet forced — two precisely-located gaps
-- **(L1) The full-Lorentz boost-spinor embedding on the bare qubit is *posited*, not forced.** The
-  spatial rotation spin-½ is derived, but identifying the emergent so(3,1) **boosts** as acting on the
-  internal ℂ² (qubit = Weyl (½,0) of SL(2,ℂ)) is a *choice of how to embed Lorentz in the qubit
-  operators*. The only on-main construction that actually carries a Lorentz spinor index builds it from a
-  **2⁴-hypercube-blocked Grassmann staggered field** — i.e. it **presupposes the fermionic frame** to
-  forge the very spinor whose Bose-quantization T1 then declares inconsistent (an **L1→L3 circularity**,
-  caught by both the circularity and genuinely-from-axioms lenses). On main, emergent SO(3,1) is exhibited
-  on the spacetime/momentum arguments of a *scalar* dispersion, with no internal index forced onto the qubit.
-- **(IR→UV) T1 does not back-propagate to the UV lattice.** T1 is a *continuum* statement about a *given*
-  field; it does **not** show the bosonic *lattice* frame has no consistent Lorentz-invariant continuum
-  limit. The free propagator kernel `S(p)=(m − iγ·p)/(p²+m²)` is **statistics-blind** (runner UVa): a
-  bosonic Gaussian on the same `S(p)` is well-defined, and the bosonic staggered *scalar* 2-point is
-  itself SO(4)-covariant in the continuum — so a bosonic lattice frame demonstrably **does** flow to a
-  Lorentz-covariant limit. Two retained no-gos anchor this: `staggered_dirac_substep1_statistics_agnostic`
-  (qubit ≅ hard-core boson ≅ JW-fermion span the identical ungraded algebra — runner AGa) and
-  `fs_rotation_exchange_discrete_insufficiency` (the rotation→exchange bridge is continuous, dies on Z³).
+Therefore the current framework packet supports a bounded route-pruning
+statement:
 
-### The single load-bearing missing ingredient
-**R** = the free-field Osterwalder–Schrader → Wightman reconstruction of the statistics-blind kernel
-`S(p)` into a **positive-energy, microcausal, Poincaré-covariant spin-½ field** that meets T1's
-hypothesis (the Dirac antiparticle / relative-sign Fock structure) **without presupposing** the
-fermionic frame. `R` (`FREE_FIELD_OS_WIGHTMAN_RECONSTRUCTION`, unaudited/partial) currently builds OS
-positivity only on the **pre-chosen fermionic branch**, with the boost-sector Poincaré rep a textbook
-black box and the lattice→continuum bridge unbuilt — so it **presupposes** the sign structure it must
-produce. That circularity is precisely the gap between "forced-modulo" and "forced."
+```text
+T1 spin-statistics engine + clean supplied relativistic spinor field
+  -> excludes wrong Bose quantization for that field
 
-## Net standing of the charged-lepton flavor sector
-The whole sector **closes from framework baseline+emergent-spacetime modulo two items**:
-1. **R** — the free-field reconstruction that lifts P1 from *forced-modulo* to *forced* (delivers the
-   antiparticle/relative-sign Fock structure from the statistics-blind kernel, and an emergent-boost
-   spinor that does not ride on the multi-site Grassmann construction);
-2. **r=1/2** — the separate continuous Yukawa modulus (+ the readout class).
+current baseline + emergent spacetime alone
+  -/-> non-circular P1/CAR forcing
+```
 
-Given P1, everything downstream (P2 first-order chiral Dirac, the hw=1 locus, the count 3, the carrier,
-the Koide Q=2/3 chiral structure) follows. So the spin-statistics route is **viable and partly executed**
-— the engine works and the Dirac–Kähler puzzle is cleared — and the residual is one named, buildable
-object R plus the continuous r=1/2.
+In short: the repaired packet does not force P1 from current baseline.
 
-## Not terminal — the two next levers
-This is a current-state reduction, not an impossibility. The two precise moves that would close it:
-- **(a)** build the emergent so(3,1) **boost** generators out of the on-site Pauli on ℂ² (so L1's
-  spinor does not ride on the multi-site Grassmann staggered field);
-- **(b)** build/audit **R** so the Dirac antiparticle/relative-sign Fock structure is **forced from
-  `S(p)`** rather than presupposed — at which point T1 back-propagates and P1 is forced.
+The missing ingredient remains a non-circular reconstruction `R` that turns the
+statistics-blind lattice kernel into a positive-energy, microcausal,
+Poincare-covariant spinor field with the needed antiparticle sign structure,
+plus a bare-qubit boost-spinor embedding that does not rely on an already
+chosen Grassmann/staggered fermion construction.
 
-## Provenance (verified 2026-05-31; T1 + kernel + anchor checked directly)
-- T1 energy-positivity exclusion verified directly (runner T1a/b), matching `FREE_SECTOR_SPIN_STATISTICS_LEVEL1` (PASS=8).
-- Statistics-blind kernel and statistics-agnostic anchor verified (runner UVa/AGa); anchored by retained `staggered_dirac_substep1_statistics_agnostic_no_forcing` and `fs_rotation_exchange_discrete_insufficiency`.
-- L1 spatial spin-½ from `per_site_su2_spin_half` (retained); emergent SO(3,1) from `LORENTZ_BOOST_COVARIANCE_3PLUS1D` / `EMERGENT_LORENTZ`; L2 microcausality from `lieb_robinson_equal_time_tensor_locality` (retained_bounded, ungraded).
-- `R` = `FREE_FIELD_OS_WIGHTMAN_RECONSTRUCTION` (unaudited/partial) — the named remaining ingredient.
-- Does not load-bear on `closure_c_staggered_dirac_gate` / `koide_phase_aps_eta_parity_route`.
+## What The Runner Verifies
+
+- CAR occupation has bounded finite spectrum for the supplied spinor field.
+- Wrong Bose quantization on the same sign structure has an unbounded-below
+  direction in the finite truncation.
+- Taste can enter as four identical spectator copies of a clean spinor block.
+- The free kernel matrix identity is statistics-blind.
+- Ordinary two-site qubit ladders commute, while Jordan-Wigner dressed
+  generators anticommute after a generator/string choice.
+- `sigma_i/2` on a qubit has the `j=1/2` Casimir.
+- The note boundary forbids promoting P1 as forced on the current surface.
+
+These are finite algebra checks and hostile counterexamples. They are not a
+replacement for a retained spin-statistics reconstruction theorem.
+
+## What This Does Not Claim
+
+This packet does not claim:
+
+- P1 or cross-site CAR is forced from the current baseline axioms;
+- the full Lorentz boost action on the bare qubit is derived;
+- the free-field OS/Wightman reconstruction `R` is complete;
+- the charged-lepton flavor sector closes from the current surface;
+- any new axiom, owner admission, or audit status.
+
+If a later retained theorem supplies `R` and a non-circular boost-spinor
+embedding, the T1 engine recorded here can become a downstream forcing step.
+Until then, the current retained content is the bounded engine plus the
+negative UV back-propagation result.
+
+## Provenance
+
+- The runner checks the T1 finite spectrum, taste spectator multiplicity,
+  statistics-blind kernel identity, statistics-agnostic lattice carrier, and
+  spatial spin-1/2 Casimir.
+- The packet is consistent with the existing FS/CAR admission fork: supplied
+  Grassmann/CAR variables realize determinant amplitudes, but their selection
+  is not derived here.
+- No `docs/audit/**` status is updated by this repair.
+- No new axiom is introduced.

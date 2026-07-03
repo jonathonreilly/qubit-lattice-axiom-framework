@@ -1,0 +1,77 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_local_observability_decoder_criterion_2026_06_05.py
+runner_sha256: 62b3456b7e560c59b30bf7d7cd212108cadcf591a0aa54a2a69e42e101c33a99
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+RECORD LOCAL-OBSERVABILITY DECODER CRITERION
+bounded-support / exact finite decoder runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Broadcast code has local decoders
+------------------------------------------------------------------------------
+  [PASS] broadcast has a global decoder
+  [PASS] broadcast has one decoder per fragment
+  [PASS] every broadcast fragment has a local decoder
+  [PASS] broadcast decoders agree on every value
+  [PASS] fragment 0 decoder reads 0->0 and 1->1
+  [PASS] fragment 3 decoder reads 0->0 and 1->1
+
+------------------------------------------------------------------------------
+2. Global/single-register encodings are not local observability
+------------------------------------------------------------------------------
+  [PASS] single-register code has a global decoder
+  [PASS] single-register first fragment has decoder
+  [PASS] single-register non-register fragment is ambiguous
+  [PASS] single-register fails local observability
+  [PASS] parity code has a global decoder
+  [PASS] parity fragment 0 has no decoder
+  [PASS] parity fragment 1 has no decoder
+  [PASS] parity fragment 2 has no decoder
+  [PASS] parity fails local observability
+
+------------------------------------------------------------------------------
+3. Coarse-graining local decoders
+------------------------------------------------------------------------------
+  [PASS] fine broadcast has local decoders
+  [PASS] fine decoder reads three values on fragment 0
+  [PASS] coarse code has local decoders
+  [PASS] coarse decoder groups 0 and 1 into A
+  [PASS] coarse local observability follows by decoder composition
+
+------------------------------------------------------------------------------
+4. Dependency separation
+------------------------------------------------------------------------------
+  [PASS] record outputs do not include local decoder family
+  [PASS] local observability outputs do not include probability weights
+  [PASS] local observability outputs do not include rates
+  [PASS] probability and rate outputs are distinct
+
+------------------------------------------------------------------------------
+5. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_LOCAL_OBSERVABILITY_DECODER_CRITERION_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: bounded-support
+  [PASS] note contains marker: trace_class: upstream_support
+  [PASS] note contains marker: conditional_surface_status:
+  [PASS] note contains marker: Does not derive local observability from the three axioms.
+  [PASS] note contains marker: Does not select a generation/Koide dial setting.
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: local observability closure
+  [PASS] forbidden wording absent: broadcast closure
+  [PASS] forbidden wording absent: probability closure
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=37 FAIL=0
+
+----- stderr -----
+

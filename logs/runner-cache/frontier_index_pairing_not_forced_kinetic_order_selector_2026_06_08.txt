@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/frontier_index_pairing_not_forced_kinetic_order_selector_2026_06_08.py
+runner_sha256: cd8947ec9be114fab11aa7ba285783c5aa60a3ef9d56f8498df628a13509929d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+============================================================================================
+Index pairing is not forced; residual = kinetic-order selector
+============================================================================================
+
+--------------------------------------------------------------------------------------------
+Given first-order, the spin lift is the unique 2-dim O_h lift hosting a vector vertex
+--------------------------------------------------------------------------------------------
+  [PASS] spin lift makes sigma_i transform as the O_h vector representation  --  => the unique first-order O_h-covariant vector vertex is A_mu ~ sigma_mu
+  [PASS] vector-irrep multiplicity: spin=1, trivial=0, E=0  --  mult_T1 = spin 1.000, trivial 0.000, E 0.000
+
+--------------------------------------------------------------------------------------------
+No first-order scalar spectator (parity-odd; vanishes on every O-orbit)
+--------------------------------------------------------------------------------------------
+  [PASS] first-order scalar symbol sum_{n in O-orbit} sin(p.n) = 0 on every orbit  --  max|sum sin| = 4.54e-16
+  [PASS] parity P: p->-p sends sin->-sin; full O_h forbids it as a scalar kinetic symbol
+
+--------------------------------------------------------------------------------------------
+Second-order scalar Laplacian H=(sum cos p_mu) I2 is a genuine spectator
+--------------------------------------------------------------------------------------------
+  [PASS] 2nd-order Laplacian is O_h-invariant, parity-even, Hermitian, and commutes with sigma_i  --  max|[H_lap,sigma_i]| = 0.00e+00; the parity-even 2nd-order spectator survives all constraints
+
+--------------------------------------------------------------------------------------------
+The first-order gamma vertex is qubit-active when the pairing is supplied
+--------------------------------------------------------------------------------------------
+  [PASS] first-order gamma vertex D=sum sigma_mu sin(p_mu) is qubit-active  --  max|[D_gamma,sigma_i]| = 1.930
+
+--------------------------------------------------------------------------------------------
+No baseline selector picks first-order over second-order non-circularly
+--------------------------------------------------------------------------------------------
+  [PASS] positivity/stability does not select first-order: first-order branch is negative while Laplacian is bounded  --  the only forcer of first-order here is an isotropic Lorentz-cone assumption, which is circular for this claim
+  [PASS] isotropic SO(3) is not supplied by cubic O_h  --  local-algebra faithfulness != faithful physical action; covariance presupposes the index pairing
+
+--------------------------------------------------------------------------------------------
+VERDICT
+--------------------------------------------------------------------------------------------
+  [PASS] given first-order, the spin lift is unique among 2-dim O_h lifts with a vector vertex
+  [PASS] first-order itself is not baseline-supplied: the 2nd-order Laplacian is a spectator
+  [PASS] the gamma<->edge index pairing is not forced by the baseline; residual = kinetic-order selector
+
+============================================================================================
+TOTAL: 11 PASS / 0 FAIL
+============================================================================================
+
+----- stderr -----
+

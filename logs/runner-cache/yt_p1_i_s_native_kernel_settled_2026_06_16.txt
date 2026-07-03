@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/yt_p1_i_s_native_kernel_settled_2026_06_16.py
+runner_sha256: 3ac313b66a3869195f6e8d2deb4a33576b3b2fd1e5377f47b1b39a76810a445a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
+H_unit scalar-bilinear kernel fork runner
+canonical plaquette = 0.5934000000
+u0 = 0.8776813812
+N_TASTE = 16
+m_sq = 0.01
+
+[PASS] D_S1 untraced diagram has one scalar insertion, two quark-gluon vertices, two fermion propagators, one gluon propagator ({'scalar_insertions': 1, 'quark_gluon_vertices': 2, 'fermion_propagators': 2, 'gluon_propagators': 1})
+[PASS] External-leg self energies are not part of the residual I_S vertex finite part (D_S2 and D_S3 are absorbed into Z_q before the scalar finite part is named I_S)
+[PASS] Concrete gamma matrices satisfy the Clifford anticommutator
+[PASS] Scalar projection supplies one factor of D_psi in the numerator (trace=4.7790117116, D_psi*N_S=4.7790117116)
+[PASS] Post-projection scalar kernel is D_psi^-1 D_g^-1 (two untraced S(k) factors reduce from D_psi^-2 to D_psi^-1 after scalar trace)
+[PASS] Settled kernel has the same small-k leading power as 4/(k^2+m^2)^2 (ratio=1.000000030417)
+[PASS] Literal N_S*D_psi^-2*D_g^-1 is rejected with the prior continuum subtraction (literal/subtraction ratio at small k=3.333e+06)
+
+Settled scalar-kernel grid sweep (fixed illustrative normalization):
+  N= 32: I_S=+3.900542209 (lat=+48.089001951, cont=+24.664451069)
+  N= 48: I_S=+3.901973021 (lat=+48.878822078, cont=+25.436636158)
+  N= 64: I_S=+3.902216606 (lat=+49.052543388, cont=+25.607355235)
+[PASS] Illustrative finite-part grid drift from previous grid < 0.1 percent (N=48->64, rel=6.243e-05)
+[PASS] Settled-kernel sweep has no fork-scale instability under fixed normalization (max-min=0.001674)
+
+ILLUSTRATIVE_FIXED_NORMALIZATION_FINITE_PART: 3.902216606
+VERDICT: KERNEL_SETTLED; VALUE_NORMALIZATION_NOT_SETTLED
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

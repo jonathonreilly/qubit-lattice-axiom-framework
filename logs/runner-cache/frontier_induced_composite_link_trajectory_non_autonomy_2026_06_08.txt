@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/frontier_induced_composite_link_trajectory_non_autonomy_2026_06_08.py
+runner_sha256: 7cd94191c9c3a260b970b296a665a3e3597e8b81e81930e7b10db9cf97a4e60d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+[PASS] setup: H_free, H_cov, H_cov_stag Hermitian
+[PASS] setup: rho(0) physical, >=3 occupied modes  (rank=4)
+
+== Part 1: rank-3 well-definedness along trajectories ==
+[PASS] existence [free]: rank-3 maintained on all 4 edges, t in [0,8]  (min sigma_3 = 3.715e-03)
+[PASS] existence [free]: U_eff exactly unitary wherever defined  (max |U^dag U - I| = 3.360e-13)
+[PASS] existence [cov]: rank-3 maintained on all 4 edges, t in [0,8]  (min sigma_3 = 8.059e-04)
+[PASS] existence [cov]: U_eff exactly unitary wherever defined  (max |U^dag U - I| = 2.902e-12)
+[PASS] existence: rank bound rank(M(x,y)) <= min(rank G(x), rank G(y)) (20 random draws)
+[PASS] existence: engineered 2D-color-support state => M(0,1;0) rank-deficient  (sigma_3 = 0.000e+00)
+[PASS] existence [cov]: hopping evolution restores rank-3 by t=0.7 (degeneracy not invariant)  (sigma_3(t=0.7) = 3.404e-02)
+[INFO] existence [free] restored sigma_3(t=0.7): 3.058e-02
+
+== Part 2: equivariance / covariance of the induced trajectory ==
+[PASS] covariance [free]: global-SU(3) equivariance U_eff^g(t) = g U_eff(t) g^dag exact  (max dev = 1.066e-14 (3 random g))
+[PASS] covariance [cov, frozen background]: global equivariance FAILS (teeth)  (max violation = 1.636)
+[PASS] covariance [cov]: joint local covariance U_eff -> g_x U_eff g_y^dag exact along trajectory  (max dev = 1.589e-14 (3 random local tuples))
+[PASS] covariance [cov, staggered signs]: joint local covariance exact  (max dev = 6.371e-15)
+
+== Part 3: exact increment law ==
+[PASS] increment [cov]: Mdot = local-density term + chord term (exact decomposition, all edges)  (max dev = 1.241e-16)
+[INFO] increment [cov] t=0.9 edge(0,1) magnitudes: |local|_F = 0.665, |chord|_F = 0.539
+[PASS] increment [cov]: Mdot block formula vs 4th-order finite difference  (max dev = 2.180e-12)
+[PASS] increment [free]: polar increment Udot = U*Sylvester(Q, U^dag Mdot - h.c.) vs FD  (max dev = 4.640e-11)
+[PASS] increment [free]: Omega anti-Hermitian  (max dev = 8.882e-16)
+[PASS] increment [cov]: polar increment Udot = U*Sylvester(Q, U^dag Mdot - h.c.) vs FD  (max dev = 7.726e-11)
+[PASS] increment [cov]: Omega anti-Hermitian  (max dev = 2.220e-15)
+[PASS] increment: Sylvester machinery known-answer test (Udot(0) = X U0 a priori, 5 draws)  (max dev = 8.779e-14)
+[PASS] increment: su(3)-projected increment identical on all three Z_3 det-branches  (max dev = 3.575e-14)
+[INFO] increment [cov] Wilson-staple-direction overlap cos-angle along trajectory: mean = -0.069, min = -0.477, max = +0.271 (diagnostic; no stable alignment claimed)
+
+== Part 4: non-autonomy exhibit + minimal-occupancy rigidity ==
+[PASS] non-autonomy: rho_A, rho_B physical one-body densities (0 < eigs <= 1)  (eigs_A in [0.021,0.769], eigs_B in [0.007,0.788])
+[PASS] non-autonomy: both states carry rank-3 cross-site bilinears (>=3 occupied modes)
+[PASS] non-autonomy: SAME U_eff(0) (exact)  (dev = 2.614e-14)
+[PASS] non-autonomy: SAME local color densities M(x,x), M(y,y) (exact by construction)
+[PASS] non-autonomy: positive parts differ  (|Q_A - Q_B|_F = 0.0236)
+[PASS] non-autonomy [cov]: SAME Mdot(0) (depends only on matched local densities)  (dev = 0.000e+00)
+[PASS] non-autonomy [cov]: dU_eff/dt DIFFERS  (|Omega_A - Omega_B|_F = 1.8058)
+[PASS] non-autonomy [cov]: both increments confirmed by finite differences  (max dev = 3.146e-10)
+[PASS] non-autonomy [free]: SAME Mdot(0) (depends only on matched local densities)  (dev = 0.000e+00)
+[PASS] non-autonomy [free]: dU_eff/dt DIFFERS  (|Omega_A - Omega_B|_F = 1.5236)
+[PASS] non-autonomy [free]: both increments confirmed by finite differences  (max dev = 1.362e-10)
+[PASS] non-autonomy [cov]: induced trajectories with identical U_eff(0) separate  (|U_A - U_B|_F at t=0.25, 0.5 = 0.5163, 0.3608)
+[PASS] minimal-occupancy rigidity: K=3 Schur identity M M(y,y)^{-1} M^dag = M(x,x) (10 draws)  (max dev = 2.270e-14)
+[PASS] minimal-occupancy rigidity: K=3 rigidity Q = (U^dag M(x,x) U) # M(y,y) -- geometric mean forced  (max dev = 4.475e-13)
+[PASS] minimal-occupancy rigidity: K=4 breaks the Schur identity (hidden-Q freedom opens; 10 draws)  (min dev = 1.203)
+
+TOTAL: PASS=36 FAIL=0
+
+----- stderr -----
+

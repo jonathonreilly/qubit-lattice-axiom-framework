@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/generation_record_arrow_measure_selector_2026_06_05.py
+runner_sha256: c77b66cb8a1ad2084063609718da1bd0f98215cfafcc20df6ba8af40b39b7675
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+[PASS] dial.1 sector ratio rho=2^s gives r=rho/2=2^(s-1)
+[PASS] dial.2 Koide observable is Q(s)=1/3+(2/3)2^(s-1)
+[PASS] dial.3 endpoints: s=0 -> Q=2/3 and s=1 -> Q=1
+[PASS] prior.1 record-letter probabilities sum to one
+       p0=1/(exp(s*log(2)) + 1); p1=exp(s*log(2))/(exp(s*log(2)) + 1)
+[PASS] prior.2 dim^gamma prior probabilities sum to one
+       pi0=1/(exp(gamma*log(2)) + 1); pi1=exp(gamma*log(2))/(exp(gamma*log(2)) + 1)
+[PASS] prior.3 gamma=0 prior is equal record-letter/block-count weighting
+[PASS] prior.4 gamma=1 prior is dimension/Born weighting (1,2)
+[PASS] arrow.1 relative-entropy arrow derivative is -(s-gamma)(log2)^2 2^s/(1+2^s)^2
+       d/ds[-KL]=(gamma - s)*exp(s*log(2))*log(2)**2/(exp(s*log(2)) + 1)**2
+[PASS] arrow.2 stationary setting is exactly s=gamma
+[PASS] arrow.3 curvature at s=gamma is negative
+       curvature=-exp(gamma*log(2))*log(2)**2/(exp(gamma*log(2)) + 1)**2
+[PASS] endpoint.1 dim^gamma prior stabilizes r*=2^(gamma-1)
+       r*=2**(gamma - 1)
+[PASS] endpoint.2 dim^gamma prior stabilizes Q*=1/3+(2/3)2^(gamma-1)
+       Q*=2**gamma/3 + 1/3
+[PASS] endpoint.3 record-letter arrow gamma=0 stabilizes s=0, r=1/2, Q=2/3
+[PASS] endpoint.4 dimension/Born arrow gamma=1 stabilizes s=1, r=1, Q=1
+[PASS] A5.1 record-letter arrow moves negative s upward and positive s downward
+[PASS] A5.2 dimension/Born arrow moves s=0 upward toward s=1 and s=2 downward
+[PASS] A6.1 discrete relaxation map has fixed point s=gamma
+[PASS] A6.2 relaxation multiplier is 1-lambda
+[PASS] A6.3 half-step relaxation stabilizes both record-letter and dimension priors
+[PASS] A7.1 both gamma=0 and gamma=1 are valid stable supplied arrows
+[PASS] A7.2 the theorem leaves gamma as a free measure/arrow input
+       physical selection of gamma is not supplied by this runner
+
+SCORECARD PASS=21 FAIL=0
+FINDING: a dim^gamma record-arrow prior stabilizes s=gamma.
+         gamma=0 gives Q=2/3; gamma=1 gives Q=1.
+         The physical arrow/measure choice remains the named gate.
+
+----- stderr -----
+

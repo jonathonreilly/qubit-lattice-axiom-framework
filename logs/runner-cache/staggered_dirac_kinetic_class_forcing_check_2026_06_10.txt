@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py
+runner_sha256: 03d4352fb6f85d592185a4a007bbad03a714b6319541738ab9dff9eb6b34e090
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.79
+status: ok
+----- stdout -----
+========================================================================
+staggered-Dirac kinetic-class forcing check  (2026-06-10)
+========================================================================
+
+--- [S] source dependency guard: U4 renaming is provenance-only
+[PASS] [S]  1. source note carries no load-bearing U4 markdown/YAML dependency; U4 remains plain-text renaming provenance, while the C^2 no-spectator input is sourced from the minimal Quantum axiom, retained Cl(3) classification, and CAR(2) dimension check
+
+--- [A] Two-flux-class theorem: two-flux-class collapse on the licensed surface
+[PASS] [A]  1. lattice automorphisms: 24 proper cubic rotations generated (C4z, C3[111]); rotations act transitively on the 6 edge directions, translations on sites => |t| uniform on edges  |  |O| = 24, direction orbit size = 6
+[PASS] [A]  2. plaquette flux is invariant under site-local U(1) frame change (deterministic complex gauge, all plaquettes, centered 5^3 box)  |  240 plaquettes
+[PASS] [A]  3. C2 rotation about e1 reverses the orientation of every axis-containing plaquette (pushforward flux i -> -i there), so covariance up to frame requires phi = conj(phi): cubic covariance forces flux real, phi in {+1,-1}; the uniform flux-i witness is rejected (no gauge to its own C2 image)  |  axis-containing planes conjugated, perpendicular plane preserved
+[PASS] [A]  4. GF(2) cohomology on the 2^3 box: nullity(d1) = rank(d0) (= |V|-1), so each flux pattern carries EXACTLY one frame class; eta^0 realizes the all-(-1) pattern  |  V=8 E=12 P=6 rank(d1)=5 rank(d0)=7
+[PASS] [A]  5. GF(2) cohomology on the 3^3 box: nullity(d1) = rank(d0) (= |V|-1), so each flux pattern carries EXACTLY one frame class; eta^0 realizes the all-(-1) pattern  |  V=27 E=54 P=36 rank(d1)=28 rank(d0)=26
+[PASS] [A]  6. GF(2) cohomology on the 4^3 box: nullity(d1) = rank(d0) (= |V|-1), so each flux pattern carries EXACTLY one frame class; eta^0 realizes the all-(-1) pattern  |  V=64 E=144 P=108 rank(d1)=81 rank(d0)=63
+[PASS] [A]  7. U(1) case, unit cube, exact integer certificate: rank(d1)=5, rank(d0)=7, d1*d0=0, nullity(d1)=rank(d0): U(1) phase systems are classified by their fluxes up to frame; with flux uniform and real => exactly two classes  |  E=12 rank(d1)=5 rank(d0)=7
+[PASS] [A]  8. exhaustive: all 4096 sign systems on the unit cube; uniform flux(+1): 128 = one gauge orbit; uniform flux(-1): 128 = one gauge orbit (contains eta^0); 3840 non-uniform rejected by covariance  |  counts = (128, 128, 3840), orbit = 128
+[PASS] [A]  9. representatives: t==1 has flux +1 on every plaquette; eta^0 has flux -1 on every plaquette (centered 5^3 box) => both classes are realized; Two-flux-class theorem: EXACTLY TWO kinetic classes
+RESIDUAL (declared-open): Two-flux-class theorem is stated on simply connected regions; finite tori carry extra wrap-holonomy data (PBC/APBC conventions) -- boundary B-H, mirroring the Kawamoto-Smit note's B4.
+RESIDUAL (declared-open): surface scope: Q-conserving nearest-neighbor bilinears (adjacency-licensed kinetic surface).  Legs D3/D4 show NN and Q-conservation are load-bearing scope declarations, not derived exclusions.
+
+--- [B] Absorbing-frame theorem: P-SD discharged on the flux(-1) branch
+[PASS] [B] 10. no-spectator lemma: CAR(2) is exactly verified on C^4 and generates the full M_4(C) (dim 16, simple => unique faithful irrep has dim 4 > 2): the minimal-Quantum per-site C^2 carries NO 2-component spinor; site-local frame absorption (the P-SD scalarization) is the only site-local route  |  computed algebra dim = 16
+[PASS] [B] 11. existence: T(x) = s1^x1 s2^x2 s3^x3 absorbs the Cl(3) vector vertex site-locally: T(x)^dag sigma_mu T(x+mu) = eta^0_mu(x) I exactly (3^3 window, all directions, sympy)
+[PASS] [B] 12. rigidity: gamma anticommutation forces plaquette holonomy sigma_nu sigma_mu sigma_nu sigma_mu = -I for every pair: EVERY absorption of the Cl(3) hopping lands in the flux(-1) class K1; absorption into K0 (flux +1) is impossible (flux is frame-invariant, check [A]2)
+[PASS] [B] 13. uniqueness: any two absorbing frames with the same phases differ by S(x) with S(x+mu) = sigma_mu S(x) sigma_mu; the general solution is exactly S(x) = T(x) V T(x)^dag (4 complex parameters = one global frame V), i.e. T'(x) = T(x) V; with the U(1) gauge g(x) this is the full stabilizer T -> g(x) T V
+[PASS] [B] 14. the local U(1)/Z2 gauge freedom moves the absorbed phase system within K1 (example g(x)=(-1)^x1: fluxes all -1, gauge function recovered)
+[PASS] [B] 15. Absorbing-frame theorem assembled: P-SD holds as a THEOREM on the K1 branch -- the absorbing frame exists, is unique up to site-local gauge x one global frame, and its image is exactly the flux(-1) class  |  B-section results = [True, True, True, True, True]
+RESIDUAL (declared-open): Absorbing-frame theorem derives P-SD GIVEN the K1 branch of Two-flux-class theorem; non-site-local realizations (blocked/thinned multi-site spinors) are outside the site-local scope and remain the declared boundary B-SL.
+
+--- [C] sharpness: the flux(+1) countermodel (P-KIN residual bit)
+[PASS] [C] 16. countermodel K0 (t==1, scalar tight-binding) passes every imposed constraint: Hermitian, exactly translation invariant, exactly invariant under all 24 rotations (4^3 torus)
+[PASS] [C] 17. K1 (eta^0) passes the same constraints up to frame: translation by e1 implemented by g(x)=(-1)^(x2+x3) (exact, torus); all 24 rotation images have flux -1 and an explicit gauge function on the centered box
+[PASS] [C] 18. fermion-parity grading does NOT separate the classes: both Fock bilinears commute with (-1)^Q and with Q (2x2 cell, exact to machine precision)
+[PASS] [C] 19. K0 and K1 are NOT frame-equivalent: fluxes +1 vs -1 on every plaquette (frame-invariant), and no gauge function exists (spanning-tree search fails)
+[PASS] [C] 20. spectral witness: K1 has exactly 8 zero modes at L=4 AND L=8 (isolated Dirac points, L-independent); K0 has an extensive zero set (grows with L): the two classes are physically distinct kinetic orders  |  zeros: K0 (L=4,8) = (20,68); K1 (L=4,8) = (8,8)
+RESIDUAL (declared-open): P-KIN residual: the one-bit flux selector phi = -1 (equivalently the first-order/Dirac kinetic order) is NOT forced by the specified constraint set -- K0 is the computed countermodel.  This is the same residual the index-pairing no-go names as the kinetic-order selector; the RP authority is staggered-scoped and cannot select the class without circularity.
+
+--- [D] falsification legs: drop a constraint, the family grows
+[PASS] [D] 21. drop cubic covariance: anisotropic pattern (flux -1 on (1,2)-plaquettes only) is Hermitian + translation-covariant but its C3[111] image is not frame-equivalent => rejected only by [A]; without it the family grows
+[PASS] [D] 22. drop cubic covariance: uniform flux i (Landau-type) is Hermitian + translation-covariant up to frame (all three axes, gauge functions found) but fails the C2 reality test of [A]3 => a U(1) continuum of classes appears
+[PASS] [D] 23. drop the adjacency license: the 12-vector NNN hopping is Hermitian and exactly cubic+translation invariant => on the enlarged surface a (t, t') continuum survives; the Lattice-axiom NN license is load-bearing
+[PASS] [D] 24. drop Q-conservation: the NN pairing bilinear is Hermitian, parity-even, nonzero, and does not conserve Q => outside the declared surface; the Q-conserving scope is load-bearing, not derived
+[PASS] [D] 25. drop qubit-reframe closure (2-modes/site spectator surface): the Wilson family M_mu(r) = sigma_mu + r I is O-equivariant under the spin lift for EVERY real r (C4z and C3[111] checked exactly): a one-parameter continuum of kinetic classes survives all spectator-surface symmetry constraints
+[PASS] [D] 26. single-mode absorption (qubit-reframe) kills the Wilson continuum: M(r) is proportional-to-unitary iff r = 0, and the projective plaquette commutation M_mu M_nu = lam M_nu M_mu has scalar solutions only at r = 0 (lam = -1): the continuum collapses to its endpoints  |  solve(off-diag=0) = [0], projective sols = [{lam: -1, r: 0}]
+[PASS] [D] 27. full reduction: the 12-complex-parameter NN family {M_mu} under O-equivariance (C3, C2z) + reversed-edge Hermiticity collapses to M_mu = a I + i b sigma_mu (a, b real: the scalar ray and the Dirac ray, 2 real parameters); with [D]26 the single-mode constraint then leaves exactly the two rays a=0 (Cl(3) vector = K1) and b=0 (scalar = K0) -- the same two classes as Two-flux-class theorem  |  surviving real dimension = 2
+RESIDUAL (declared-open): the kinetic surface is the bilinear (quadratic) sector by the definition of 'kinetic term'; quartic and higher interaction terms are out of scope here.
+
+TOTAL: PASS=28 FAIL=0
+VERDICT: Two-flux-class theorem (two-flux-class collapse) and Absorbing-frame theorem
+         (P-SD discharged on the flux(-1) branch) VERIFIED on
+         the finite instantiation; the flux(+1) countermodel
+         certifies that the final one-bit kinetic-order
+         selector is NOT forced by the specified constraint set.
+
+----- stderr -----
+

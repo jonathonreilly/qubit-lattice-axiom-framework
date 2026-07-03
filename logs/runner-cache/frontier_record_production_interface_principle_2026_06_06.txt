@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_production_interface_principle_2026_06_06.py
+runner_sha256: 9885e559aea0286ad51de02baf64409b1d1b28261c4147429014c744da4d8a4d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Record production interface principle
+================================================================
+[PASS] gate_note exists (docs/RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md)
+[PASS] minimal_axioms exists (docs/MINIMAL_AXIOMS_2026-06-05.md)
+[PASS] gate status is bounded support but not axiom or closure
+[PASS] gate states the four-stage interface
+[PASS] gate cites Minimal Axioms as accepted axiom premise
+[PASS] gate says companion Record-stack notes are context only
+[PASS] gate keeps probability on predictive, ensemble, or bridge surfaces
+[PASS] gate preserves dial non-forcing
+[PASS] minimal axioms provide one-qubit Quantum carrier
+[PASS] minimal axioms define Record as durable realized outcome
+[PASS] minimal axioms provide finite scalar additivity
+[PASS] minimal axioms exclude probability and dynamics from Record
+[PASS] minimal axioms keep record-production dynamics outside axioms
+[PASS] typed output sets are pairwise distinct at the interface
+[PASS] formation bridge overlaps neither pure predictive nor pure count outputs
+[PASS] post-record layer does not supply forbidden outputs
+[PASS] formation layer is where instrument W belongs
+[PASS] dial remains outside post-record outputs
+[PASS] Born weights are normalized predictive weights
+[PASS] realized post-record atom 0 is one-hot, not Born vector
+[PASS] realized post-record atom 1 is one-hot, not Born vector
+[PASS] realized count update for atom 0 is integral ((Fraction(4, 1), Fraction(4, 1)))
+[PASS] realized count update for atom 1 is integral ((Fraction(3, 1), Fraction(5, 1)))
+[PASS] predictive expected update is fractional ensemble data ((Fraction(11, 3), Fraction(13, 3)))
+[PASS] expected update is neither realized update
+[PASS] post-record information can be copied idempotently
+[PASS] one-hot atoms are distinguishable information tokens
+[PASS] principle is a type split, not a probability derivation
+================================================================
+INTERFACE:
+  pre_record: predictive quantum state/effect surface
+  formation:  separate record-writing bridge or instrument
+  post_record: realized atom -> words/counts/readouts
+STATUS: bounded-support typing/interface principle; audit_required_before_effective_retained=true
+SUMMARY: PASS=28 FAIL=0
+
+----- stderr -----
+

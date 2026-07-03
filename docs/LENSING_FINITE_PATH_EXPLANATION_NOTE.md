@@ -1,7 +1,18 @@
-# Lensing Slope — Finite-Path Surrogate FALSIFIED at a Second T_phys
+# Lensing Slope: Centered Finite-Path Surrogate Negative Boundary
 
-**Date:** 2026-04-07 (revised twice: first narrowed by literal-geometry check, then falsified by Lane L++ short-path test)
-**Status:** open - open or unresolved claim state
+**Date:** 2026-04-07; 2026-06-08 negative-boundary narrow.
+**Claim type:** no_go
+**Status:** negative boundary packet submitted for independent audit; not an audit verdict.
+
+This note no longer claims to explain the detector-centroid `kubo_true`
+observable. Its live scope is narrower and negative:
+
+1. The centered finite-path surrogate is not the literal static-mass
+   detector-centroid reduction used by the harness.
+2. The same surrogate's short-path regime-transition prediction is falsified by
+   the `T_phys = 7.5`, `H = 0.25` Lane L++ measurement.
+3. A layer-weighted analytical bridge from the literal harness geometry to
+   `kubo_true` remains open and is not supplied here.
 
 > **Issue 1 (parallel narrowing, bd14a30):** The "1.5% match" used a
 > *centered* finite-path surrogate with `L = 10`. The literal harness
@@ -33,6 +44,56 @@ See `LENSING_LONG_PATH_TEST_NOTE.md`
 for the Lane L++ falsifying data and the new "L-independent slope"
 finding.
 
+## 2026-06-08 Audit-Targeted Boundary Narrow
+
+The current audit blocker says:
+
+> "The arithmetic comparison and finite-path slope predictions are internally consistent, and the helper source computes the short-path Kubo measurement from the lattice/DAG propagator rather than merely printing the contested value. The chain still does not close as a first-principles explanation because the layer-weighted analytical bridge from the literal static-mass geometry to the detector-centroid kubo_true observable is explicitly missing."
+
+This revision makes that missing bridge part of the negative boundary rather
+than an unclosed positive premise. The row's repaired source claim is:
+
+```text
+The centered finite-path surrogate is ruled out as a first-principles
+literal-harness detector-centroid explanation.
+```
+
+The packet still exposes the useful finite arithmetic and the long/short-path
+measurement checks. It does not claim a positive explanation of the measured
+`-1.4335` slope, and it does not close the separate layer-weighted analytical
+bridge.
+
+## No-Go Discipline Gate
+
+**Status:** PASS for the centered finite-path surrogate negative boundary. The
+claim is narrow: the centered surrogate is not a first-principles literal-harness
+detector-centroid explanation.
+
+- **N1 — Alternative routes.** Centered finite-path surrogate (attempted, not
+  literal and short-path prediction falsified); literal full-path static-mass
+  reductions (attempted, slopes too shallow); detector-shift proxy (attempted,
+  still too shallow); signed adjoint-centroid/Kubo edge bridge (open); long-path
+  numerical asymptotic test (open diagnostic, not a closure).
+- **N2 — Wall independence.** The centering-convention failure and the
+  short-path-regime falsifier are independent witnesses against the centered
+  surrogate; either one blocks treating it as a closed literal derivation.
+- **N3 — Hidden-wall scan.** The note names the surrogate geometry, literal
+  harness geometry, `T_phys` values, and measured slopes explicitly; it does not
+  assume a layer-weighted bridge.
+- **N4 — Residual matching.** The residual matched is the centered finite-path
+  surrogate's claim to explain the detector-centroid observable, not standard
+  geometric lensing in another observable.
+- **N5 — Rhetoric audit.** Negative language is limited to the centered
+  surrogate as a literal detector-centroid explanation. The signed native
+  centroid route remains open.
+- **N6 — Partial-closure path scan.** The native layer-weighted/signed Kubo
+  derivation is the partial-closure path and is not called a new axiom.
+- **N7 — Steelman.** The centered formula may remain a useful heuristic because
+  finite support effects are real. The note preserves that heuristic while
+  rejecting theorem-grade literal derivation.
+- **N8 — Cross-cycle echo.** This narrows the earlier lensing lane without
+  discarding the later adjoint-centroid multipole route.
+
 ## Artifact chain
 
 - [`scripts/lensing_analytical_finite_path.py`](../scripts/lensing_analytical_finite_path.py)
@@ -49,8 +110,9 @@ finding.
 ## 2026-06-04 Source Packet Re-audit Repair
 
 This repair supplies the restricted-packet materials named by the previous
-audit blocker. It does not promote this row or change the open-gate claim
-boundary; independent audit owns any ledger/status movement.
+audit blocker. It does not promote this row or set an audit status;
+independent audit owns any ledger/status movement. The 2026-06-08 repair above
+narrows the row to the negative boundary supported by these materials.
 
 The packet now exposes both load-bearing computations:
 
@@ -79,11 +141,20 @@ cache stdout contains the detector-centroid comparison facts:
 - short-path `T_phys=7.5`, `H=0.25` measured slope `-1.4356`
 - short-path finite-path formula prediction `-1.7336`
 
+The primary analytical runner
+[`scripts/lensing_analytical_finite_path.py`](../scripts/lensing_analytical_finite_path.py)
+now also imports
+[`scripts/lensing_long_path_test.py`](../scripts/lensing_long_path_test.py)
+directly and prints a `LONG-PATH COMPANION PACKET` manifest. That makes the
+audit helper-graph resolver include the long-path source in the restricted
+packet, and it pins the long-path cache to the current source SHA while checking
+the `T_phys=7.5` measured/predicted slope snippets named by the audit blocker.
+
 That closes the packet-completeness part of the blocker: the long-path
 runner/output and the detector-centroid proxy checks are now exposed in
-one restricted packet. The remaining science boundary is unchanged:
-there is still no independently audited layer-weighted analytical derivation from
-the literal harness geometry to the detector-centroid observable.
+one restricted packet. The remaining positive-science boundary is unchanged:
+there is still no independently audited layer-weighted analytical derivation
+from the literal harness geometry to the detector-centroid observable.
 
 ## Question
 
@@ -171,7 +242,7 @@ The best current literal proxy is the lever-arm-weighted full-path
 integral, and it is still noticeably shallower than the measured
 `−1.4335`.
 
-## What would actually close this
+## What Would Close A Separate Positive Explanation Lane
 
 There are two clean next moves:
 
@@ -185,14 +256,19 @@ There are two clean next moves:
    should be framed as a test of the heuristic finite-path story, not a
    verification of an already-derived formula.
 
+Those moves are not needed for the negative boundary in this row. They are the
+next route if the project wants a positive first-principles explanation of the
+observed `kubo_true` slope.
+
 ## What this means for the lensing lane
 
 ### What survives
 
 1. **Lane L+ still gives a clean gravity-side power law** at
    fine `H`.
-2. **A finite-path surrogate can reproduce the slope numerically.**
-3. **The exact mechanism is not yet derived** from the literal harness
+2. **A finite-path surrogate can reproduce the slope numerically, but is
+   falsified as the literal derivation.**
+3. **The exact positive mechanism is not yet derived** from the literal harness
    geometry.
 
 ### The honest framing
@@ -204,15 +280,15 @@ used a surrogate centered-segment formula that matches the fine slope,
 but treated that surrogate as if it were the literal static-mass
 harness geometry.
 
-The honest source claim should now be:
+The honest source claim is now:
 
 > "The fine lensing lane retains a clean gravity-side power law
 > (`−1.4335`, `R² = 0.9984` on `b ∈ {3..6}` at `H=0.25`). A centered
-> finite-path surrogate reproduces that slope closely, which is strong
-> evidence that finite-path / finite-support effects matter. But the
-> literal static-mass full-path geometry gives a shallower slope
-> (`≈ −1.24` to `−1.34` in the tested reductions), so the exact
-> analytical reduction of the detector-centroid observable remains open."
+> finite-path surrogate reproduces that slope closely, but the literal
+> static-mass full-path geometry gives a shallower slope (`≈ −1.24` to
+> `−1.34` in the tested reductions), and the `T_phys=7.5` measurement
+> falsifies the surrogate's short-path prediction. Therefore the centered
+> finite-path surrogate is not a closed detector-centroid explanation."
 
 ## Frontier map adjustment (revised)
 
@@ -231,7 +307,7 @@ What is real:
 
 - the fine H=0.25 power law is real
 - the simple centered finite-path surrogate really does reproduce the slope
-- finite-path / finite-support effects are therefore a serious clue
+- finite-path / finite-support effects remain a serious heuristic clue
 
 What is not yet real:
 
@@ -247,14 +323,34 @@ the final explanation.
 
 > "The fine lensing lane measures a clean power law
 > (`−1.4335`, `R² = 0.9984` on `b ∈ {3..6}` at `H=0.25`). A centered
-> finite-path surrogate reproduces that slope almost exactly, so
-> finite-path effects are clearly implicated. But the literal
-> static-mass full-path geometry gives a shallower slope
-> (`≈ −1.24` to `−1.34` in the tested reductions), so the current
-> 'finite-path explanation' is not yet a closed first-principles
-> derivation. The right next move is a layer-weighted reduction of
-> the actual detector-centroid observable, or a long-path numerical
-> test framed as a heuristic check rather than a proof."
+> finite-path surrogate reproduces that slope almost exactly. But the literal
+> static-mass full-path geometry gives a shallower slope (`≈ −1.24` to
+> `−1.34` in the tested reductions), and the short-path Lane L++ measurement
+> falsifies the surrogate's regime-transition prediction. The centered
+> finite-path explanation is therefore a negative boundary. The right next
+> positive-science move is a layer-weighted reduction of the actual
+> detector-centroid observable."
+
+## Audit Registration
+
+```yaml
+claim_id: lensing_finite_path_explanation_note
+note_path: docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
+runner_path: scripts/lensing_analytical_finite_path.py
+claim_type: no_go
+claim_scope: >
+  Negative boundary for the centered finite-path surrogate as a
+  first-principles literal-harness detector-centroid explanation. The runner
+  compares the measured H=0.25 kubo_true slope, the centered L=10 surrogate,
+  literal full-path reductions, and the shift-weighted detector proxy, and it
+  includes the long-path companion packet showing the T_phys=7.5 short-path
+  prediction mismatch. Excludes any positive layer-weighted analytical bridge
+  from literal static-mass geometry to kubo_true and any claim that the
+  observed -1.4335 slope is already explained.
+intrinsic_status: no_go
+remaining_positive_bridge: layer_weighted_detector_centroid_reduction
+audit_authority: independent audit lane
+```
 
 ## Audit dependency repair links
 

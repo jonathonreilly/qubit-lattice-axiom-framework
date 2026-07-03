@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py
+runner_sha256: 345a71c49750842f375895eeac3f71e25fcc7d8730f69182329e41d5b2d138fc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.60
+status: ok
+----- stdout -----
+==========================================================================
+ audit_companion_lattice_noether_onsite_internal_2026_06_05.py
+ Onsite/internal-restricted lattice Noether theorem, corrected U(1) sign.
+ Reproves: (1) sign fixed by continuity, (2) onsite/internal support envelope,
+           (3) arbitrary-bilinear symbolic current conservation.
+==========================================================================
+
+[Part B0] reprove bilinear commutator identity (B) on CAR Fock space
+  n=3, max |[E_ij,E_pq] - (d_jp E_iq - d_qi E_pj)| = 0.000e+00
+  [PASS] B0 bilinear commutator identity (B) holds exactly on CAR Fock space
+
+[Part A] arbitrary-bilinear symbolic continuity (replaces old E5)
+  [PASS] A1 [H,Q]=0 for arbitrary symbolic bilinear (onsite-internal U(1))
+  [PASS] A2 i[H,rho_p] = net inflow (operator continuity, arbitrary c_ij)
+  [PASS] A3 d rho_p/dt = -(div^L j)_p with sign-fixed current (arbitrary c_ij)
+  [PASS] A4 sum_p d rho_p/dt = 0 => dQ/dt = 0 (arbitrary c_ij)
+  [PASS] A5 pair current has exactly the Hamiltonian coefficient support envelope
+
+[Part B] onsite/internal generator => local nearest-neighbour current
+  ||[T_onsite, S^(1)]||_max = 0.000e+00 (onsite gen commutes with shift)
+  [PASS] B1 onsite/internal generator commutes with every lattice shift
+  delta S_F - sum_x j^mu_x (alpha_(x+1)-alpha_x) = 0
+  [PASS] B2 onsite U(1): current is local bilateral nn bond current (exact symbolic)
+
+[Part C] staggered specialization: U(1) symmetry + fixed-sign current
+  ||[T_U1, M]||_max = 0.000e+00
+  [PASS] C1 U(1) symmetry condition [T_U1, M] = 0 on staggered carrier
+  max |(div^L j)_x| in free ground state = 6.384e-16
+  (note: ground-state divergence is sign-independent; C3 fixes the sign)
+  [PASS] C2 formula-(4) U(1) current is divergence-free on shell (ground state)
+  H Hermiticity err = 0.000e+00, hop norm = 5.000e-01, |d rho/dt| = 5.000e-01
+  max||d rho/dt + (div j)_formula(4)|| = 0.000e+00  (must be ~0)
+  max||d rho/dt + (div j)_flipped||    = 1.000e+00  (must be NONZERO)
+  [PASS] C3 continuity fixes the sign: formula (4) sign satisfies d rho/dt + div j = 0
+  [PASS] C3b flipped sign VIOLATES continuity (U(1) sign is determined, not convention)
+
+[Part D] site-mixing generator (one-site shift) is out of scope
+  one-site shift ||S M S^T - M||_max = 1.000e+00 (NONzero => not a plain symmetry)
+  [PASS] D1 one-site (site-mixing) shift is NOT a plain symmetry of staggered M
+  two-site shift ||S2 M S2^T - M||_max = 0.000e+00 (zero => symmetry, but site-mixing)
+  [PASS] D2 two-site shift is a symmetry but SITE-MIXING (named open item, out of scope)
+
+==========================================================================
+ SUMMARY
+==========================================================================
+   PASS  B0 bilinear commutator identity (B) holds exactly on CAR Fock space
+   PASS  A1 [H,Q]=0 for arbitrary symbolic bilinear (onsite-internal U(1))
+   PASS  A2 i[H,rho_p] = net inflow (operator continuity, arbitrary c_ij)
+   PASS  A3 d rho_p/dt = -(div^L j)_p with sign-fixed current (arbitrary c_ij)
+   PASS  A4 sum_p d rho_p/dt = 0 => dQ/dt = 0 (arbitrary c_ij)
+   PASS  A5 pair current has exactly the Hamiltonian coefficient support envelope
+   PASS  B1 onsite/internal generator commutes with every lattice shift
+   PASS  B2 onsite U(1): current is local bilateral nn bond current (exact symbolic)
+   PASS  C1 U(1) symmetry condition [T_U1, M] = 0 on staggered carrier
+   PASS  C2 formula-(4) U(1) current is divergence-free on shell (ground state)
+   PASS  C3 continuity fixes the sign: formula (4) sign satisfies d rho/dt + div j = 0
+   PASS  C3b flipped sign VIOLATES continuity (U(1) sign is determined, not convention)
+   PASS  D1 one-site (site-mixing) shift is NOT a plain symmetry of staggered M
+   PASS  D2 two-site shift is a symmetry but SITE-MIXING (named open item, out of scope)
+
+TOTAL: 14 PASS / 0 FAIL
+BOUNDARY GUARD: PASS retained abstract authority is cited; finite exhibit is not promoted and no gate edge is present
+
+----- stderr -----
+

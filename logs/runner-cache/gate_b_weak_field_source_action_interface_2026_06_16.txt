@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/gate_b_weak_field_source_action_interface_2026_06_16.py
+runner_sha256: ac9ea8b6b7556ce8679d734e98a152bf3af7a9988d9f72f5722ad4c8f7ec9453
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+GATE B WEAK-FIELD SOURCE/ACTION INTERFACE
+==============================================================================
+[PASS] interface note is bounded-support and not Gate B closure
+[PASS] parent Gate B note references the weak-field interface split
+[PASS] note keeps GB-S2 and GB-S3 open
+[PASS] note forbids audit-status and axiom promotion
+[PASS] weak-field dependency contains S_test = L_test (1 - phi(x))
+[PASS] weak-field dependency contains Born-density source readout
+[PASS] valley synthesis derives the straight-ray 1/b continuum bridge for S=L(1-f)
+[PASS] S=L(1-phi) identity length=0.5 r=3.0
+       diff=0.000e+00
+[PASS] S=L(1-phi) identity length=0.5 r=4.0
+       diff=0.000e+00
+[PASS] S=L(1-phi) identity length=0.5 r=7.5
+       diff=0.000e+00
+[PASS] S=L(1-phi) identity length=1 r=3.0
+       diff=0.000e+00
+[PASS] S=L(1-phi) identity length=1 r=4.0
+       diff=0.000e+00
+[PASS] S=L(1-phi) identity length=1 r=7.5
+       diff=0.000e+00
+[PASS] S=L(1-phi) identity length=2.23607 r=3.0
+       diff=0.000e+00
+[PASS] S=L(1-phi) identity length=2.23607 r=4.0
+       diff=0.000e+00
+[PASS] S=L(1-phi) identity length=2.23607 r=7.5
+       diff=0.000e+00
+[PASS] source perturbation is additive at r=3.0
+       residual=+2.220e-16
+[PASS] source perturbation is additive at r=5.0
+       residual=+0.000e+00
+[PASS] source perturbation is additive at r=10.0
+       residual=+0.000e+00
+[PASS] source/action coefficient normalization remains degenerate
+       base=1.414196315866237e+00 rescaled=1.414196315866237e+00
+[PASS] regularized 1/(r+eps) is far-field close but not identical at r=3.0
+       relative_gap=0.032258
+[PASS] regularized 1/(r+eps) is far-field close but not identical at r=4.0
+       relative_gap=0.024390
+[PASS] regularized 1/(r+eps) is far-field close but not identical at r=5.0
+       relative_gap=0.019608
+[PASS] regularized 1/(r+eps) is far-field close but not identical at r=10.0
+       relative_gap=0.009901
+[PASS] parent still states I_GateB remains conditional after split
+
+TOTAL: PASS=25 FAIL=0
+VERDICT: partial GB-S1 support only. The weak-field interface supports the linear test-action form S=L(1-phi), while the Gate B regularized scalar, normalization, propagation/readout, and generated-connectivity rules remain supplied.
+
+----- stderr -----
+

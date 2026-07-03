@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_asymptotic_reset_convergence_ledger_2026_06_05.py
+runner_sha256: 8ca08c13f57e8e01f1cfcd94537301fc4f3ee630f5465b4f2641b1aaf20c81e9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+==============================================================================
+RECORD ASYMPTOTIC RESET CONVERGENCE LEDGER
+bounded-support / epsilon-reset residual runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. One-bit residual ledger
+------------------------------------------------------------------------------
+  [PASS] p=0.1: residual starts at one
+  [PASS] p=0.1: residual strictly decreases
+  [PASS] p=0.1: finite-step residual remains positive (0.531441)
+  [PASS] p=0.1: composition gives q^n
+  [PASS] p=0.1: longer run improves residual
+  [PASS] p=0.25: residual starts at one
+  [PASS] p=0.25: residual strictly decreases
+  [PASS] p=0.25: finite-step residual remains positive (0.177979)
+  [PASS] p=0.25: composition gives q^n
+  [PASS] p=0.25: longer run improves residual
+  [PASS] p=0.5: residual starts at one
+  [PASS] p=0.5: residual strictly decreases
+  [PASS] p=0.5: finite-step residual remains positive (0.015625)
+  [PASS] p=0.5: composition gives q^n
+  [PASS] p=0.5: longer run improves residual
+
+------------------------------------------------------------------------------
+2. Epsilon threshold arithmetic
+------------------------------------------------------------------------------
+  [PASS] epsilon=0.1: chosen n reaches threshold (n=11)
+  [PASS] epsilon=0.1: previous n misses threshold (n-1=10)
+  [PASS] epsilon=0.001: chosen n reaches threshold (n=31)
+  [PASS] epsilon=0.001: previous n misses threshold (n-1=30)
+
+------------------------------------------------------------------------------
+3. Multi-bit union-bound ledger
+------------------------------------------------------------------------------
+  [PASS] k=3 union bound reaches requested epsilon (9.066944e-03)
+  [PASS] k=3 threshold depends on k (n=26)
+
+------------------------------------------------------------------------------
+4. Exact endpoint remains separate
+------------------------------------------------------------------------------
+  [PASS] finite p<1 finite n is not exact reset (9.536743e-07)
+  [PASS] p=1 endpoint is exact in one supplied step
+
+------------------------------------------------------------------------------
+5. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_ASYMPTOTIC_RESET_CONVERGENCE_LEDGER_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: bounded-support
+  [PASS] note contains marker: trace_class: upstream_support
+  [PASS] note contains marker: epsilon-reset convergence ledger
+  [PASS] note contains marker: Does not derive exact finite-time reset
+  [PASS] note contains marker: step counts, not physical time
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: exact closure
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: clock closure
+  [PASS] forbidden wording absent: cost closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=36 FAIL=0
+
+----- stderr -----
+

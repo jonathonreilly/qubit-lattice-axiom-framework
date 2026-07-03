@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hw_equivalence_free_transfer_dynamics_2026_06_12.py
+runner_sha256: 84eba3cfe18c8ae1b17f2d3aa340abb40188fbb0a77fdf7c04f41609ebd9046d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.18
+status: ok
+----- stdout -----
+HW-COMPLEMENT FREE CORNER-TRANSFER REGISTRATION-EQUIVALENCE RUNNER
+params=((1.0, 0.25, 0.2222222222222222), (1.35, 0.31, 0.71)); L_s=2; fock_dim=64
+PASS M1a :: old_to_new=(2, 0, 1); reversal witness (1, 0, 0): (1, 0, 1) != (1, 1, 0)
+PASS M1b :: symbolic multiset and elementary symmetric checks
+PASS M1c :: positivity=[True, True]
+PASS M2a :: kernel multiset equality=[True, True]
+PASS M2b :: dim=64, residuals=[2.5780454860118624e-18, 7.696355957328399e-20]
+PASS M3a :: max trace residual=4.441e-16
+PASS M3b :: dispersion multisets sorted-equal at both points
+PASS M3c :: berezin lambda=2 break residuals=[(109.53830554018582, 109.53830554018583), (92.25326461942703, 92.25326461942704)]
+PASS M3d :: log Tr Gamma(t) residuals=[2.220446049250313e-16, 0.0]
+PASS M4 :: the interacting/gauge level remains the named open
+PASS B11 :: dependency phrase greps
+PASS B12 :: firewall sentences present
+PASS B13 :: forbidden closing language absent
+PASS B14 :: links=['AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md', 'STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md', 'REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md']
+PASS B15 :: companions are backticked only
+PASS B16 :: No-promotion present
+PASS B17 :: Berezin self-check flag from explicit Grassmann expansion
+
+SUMMARY
+PASS=17 FAIL=0
+M1-M4 assembly: free U=1 corner-transfer registration-equivalence holds on the supplied surface.
+Firewall: no physical species reading selected; r not fixed; occupancy binary untouched.
+Named open: the interacting/gauge extension remains open and is not supplied here.
+
+----- stderr -----
+

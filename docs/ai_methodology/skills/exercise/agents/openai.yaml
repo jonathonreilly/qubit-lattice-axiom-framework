@@ -1,0 +1,7 @@
+interface:
+  display_name: "Exercise"
+  short_description: "Open new routes at physics walls"
+  default_prompt: "Use $exercise to work through the current physics wall from axioms upward and produce new attack vectors."
+
+policy:
+  allow_implicit_invocation: true

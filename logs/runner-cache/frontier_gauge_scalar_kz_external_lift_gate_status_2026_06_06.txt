@@ -1,0 +1,82 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_scalar_kz_external_lift_gate_status_2026_06_06.py
+runner_sha256: 54f173685ed44b58d52cdabf4a5f9a8e3142b92cb4b7e32aa2950acafbb3a174
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.44
+status: ok
+----- stdout -----
+
+----------------------------------------------------------------------------------------
+Part 1: source gate is present
+----------------------------------------------------------------------------------------
+  [PASS] source file exists: docs/repo/ACTIVE_REVIEW_QUEUE.md
+  [PASS] source file exists: docs/work_history/repo/review_feedback/PR484_KZ_EXTERNAL_LIFT_REVIEW_2026-05-03.md
+  [PASS] source file exists: docs/GAUGE_SCALAR_KZ_EXTERNAL_LIFT_GATE_STATUS_NOTE_2026-06-06.md
+  [PASS] active queue contains: 2026-05-03-pr484-kz-external-lift-gate
+  [PASS] active queue contains: runner fails without optional CVXPY
+  [PASS] active queue contains: W_lift = 0.05
+  [PASS] active queue contains: explicit SU(3), beta=6 primary-source bracket
+  [PASS] active queue contains: Disposition: `science-needed`
+  [PASS] review packet contains: reject PR #484 as a bounded theorem
+  [PASS] review packet contains: Preserve the goal as an open external-lift candidate
+  [PASS] review packet contains: CVXPY is an optional SDP dependency
+  [PASS] review packet contains: not the SU(3), beta=6 bracket
+  [PASS] review packet contains: not a theorem-grade imported bound
+  [PASS] review packet contains: passing runner in the repo's documented SDP environment
+  [PASS] review packet contains: explicit SU(3), beta=6 primary-source bracket
+
+----------------------------------------------------------------------------------------
+Part 2: optional SDP stack availability
+----------------------------------------------------------------------------------------
+  [PASS] cvxpy availability is recorded  (available)
+  [PASS] cvxpy version is visible  (1.8.2)
+  [PASS] CLARABEL solver is installed  (CLARABEL,HIGHS,OSQP,SCIPY,SCS)
+  [PASS] SCS-class fallback solver is installed  (CLARABEL,HIGHS,OSQP,SCIPY,SCS)
+
+----------------------------------------------------------------------------------------
+Part 3: local SU(3) witness scale
+----------------------------------------------------------------------------------------
+  [PASS] single-plaquette mean lies in SU(3) support  (mean=0.422532)
+  [PASS] single-plaquette variance is positive  (var=0.064880)
+  [PASS] epsilon_witness is much smaller than W_lift  (eps=3.027e-04, W=5.000e-02)
+  [PASS] W_lift remains a width parameter, not a derived primary bracket
+
+----------------------------------------------------------------------------------------
+Part 4: minimal SDP feasibility probe
+----------------------------------------------------------------------------------------
+  [PASS] minimal PSD/Hausdorff SDP solves  (optimal)
+  [PASS] SDP value lies in conservative W_lift interval  (p1=0.6879905406923785)
+  [PASS] conservative interval is inside SU(3) support  ([0.686266, 0.736266])
+  [PASS] SDP probe width equals W_lift
+
+----------------------------------------------------------------------------------------
+Part 5: gate classifier
+----------------------------------------------------------------------------------------
+  [PASS] local optional-SDP execution path status is recorded  (True)
+  [PASS] primary SU(3), beta=6 bracket remains unavailable
+  [PASS] gate remains open because primary bracket is missing
+  [PASS] old K-Z benchmark is not used as target bracket
+  [PASS] branch status is open, not theorem/promotion
+  [PASS] future landing criteria remain explicit
+
+----------------------------------------------------------------------------------------
+Part 6: branch-local note hygiene
+----------------------------------------------------------------------------------------
+  [PASS] status note contains: CVXPY execution path is environment-dependent
+  [PASS] status note contains: Blocker (2) remains open
+  [PASS] status note contains: not a replacement for the missing primary-source
+  [PASS] status note contains: No old PR484 retained/effective-status language is revived
+  [PASS] status note contains: No repo-wide authority surface is updated
+  [PASS] status note avoids banned phrase: retained-status update
+  [PASS] status note avoids banned phrase: parent-chain promotion
+  [PASS] status note avoids banned phrase: retained/effective status is landed
+  [PASS] status note avoids banned phrase: retained_bounded
+  [PASS] status note avoids banned phrase: retained_no_go
+
+========================================================================================
+  TOTAL: PASS=43, FAIL=0
+========================================================================================
+
+----- stderr -----
+

@@ -1,0 +1,192 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_two_strip_environment_rho_composed_readout_bounded_2026_06_12.py
+runner_sha256: 59c9c8b00d41b4fd11cfc564d1276469d95b2b3e7ffecb145312b9ab24601026
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.13
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette two-strip environment rho composed readout
+Status authority: independent audit lane only. This source runner does not set, predict, promote, or demote any audit outcome.
+No new imports: repo-internal finite packet quantities only.
+beta=6.0, tensor NMAX=4, tensor MODE_MAX=80
+source NMAX=7, source MODE_MAX=200
+
+================================================================================================================
+Part 1: state-space and fusion table
+================================================================================================================
+one-word state count = 25
+two-strip pair state count = 625
+fusion table shape = (25, 25, 25)
+fundamental recurrence mismatches = 0
+antifundamental recurrence mismatches = 0
+(1,0) x (0,1) = {(0, 0): 1, (1, 1): 1}
+(1,1) x (1,1) = {(0, 0): 1, (0, 3): 1, (1, 1): 2, (2, 2): 1, (3, 0): 1}
+PASS: two-strip free pair state space has 625 states
+PASS: generated fusion table reproduces the fundamental recurrence on B4
+PASS: generated fusion table reproduces the antifundamental recurrence on B4
+PASS: fusion table has nonnegative integer entries
+
+================================================================================================================
+Part 2: one-word anchor and factorized cut gate
+================================================================================================================
+one-word eigenvalue = 1.012369912747822
+one-word Perron residual = 1.665e-16
+one-word psi_min = 1.985e-23
+rho_word(1,0) = 0.378514922317117
+rho_word(1,1) = 0.171042019091802
+P(rho_word) = 0.434215413259920
+u0(rho_word) = 0.811757498147861
+alpha_s(rho_word; alpha_bare=1) = 1.517565281370676
+PASS: one-word composed readout reproduces the declared finite value
+      delta=8.005e-14
+PASS: one-word Perron residual is small
+PASS: rho_word is positive on B4
+PASS: rho_word is conjugation-symmetric on B4
+cut transfer max |T_cut - T_word tensor T_word| = 2.776e-17
+cut eigenvalue = 1.024892840237034
+cut Perron residual = 2.220e-16
+cut psi_min = 3.940e-46
+cut marginal max |rho-rho_word| = 3.886e-16
+cut right-marginal max |rhoL-rhoR| = 1.665e-16
+cut trivial-slice max |rho-rho_word| = 4.441e-16
+P(cut marginal) = 0.434215413259920
+PASS: G1 cut transfer equals the tensor product of two one-word chains
+PASS: G1 cut marginal readout reproduces rho_word
+PASS: G1 cut trivial-slice readout reproduces rho_word
+PASS: G1 cut source readout reproduces P(rho_word)
+
+================================================================================================================
+Part 3: full internal environment link
+================================================================================================================
+
+full_character_product:
+  internal factor min/max = 1.000000000000000 / 5.908774331064158
+  transfer min = 0.000e+00
+  transfer symmetry residual = 1.110e-16
+  eigenvalue = 9.811171602775854
+  Perron residual = 2.220e-15
+  psi_min = 3.893e-42
+  rho(1,0) = 0.825179356862611
+  rho(1,1) = 0.347017312055957
+  rho min/max = 1.694e-24 / 1.000e+00
+  left/right marginal residual = 6.661e-16
+  conjugation residual = 5.551e-16
+  P = 0.447034890458824
+  u0 = 0.817683727637515
+  alpha_s(alpha_bare=1) = 1.495647638950379
+
+full_character_conjugate:
+  internal factor min/max = 1.000000000000000 / 5.908774331064158
+  transfer min = 0.000e+00
+  transfer symmetry residual = 1.110e-16
+  eigenvalue = 9.811171602775858
+  Perron residual = 1.332e-15
+  psi_min = 3.893e-42
+  rho(1,0) = 0.825179356862611
+  rho(1,1) = 0.347017312055957
+  rho min/max = 1.694e-24 / 1.000e+00
+  left/right marginal residual = 1.110e-16
+  conjugation residual = 1.110e-16
+  P = 0.447034890458824
+  u0 = 0.817683727637515
+  alpha_s(alpha_bare=1) = 1.495647638950379
+
+dimension_stripped_product:
+  internal factor min/max = 1.000000000000000 / 1.697455815865860
+  transfer min = 0.000e+00
+  transfer symmetry residual = 2.776e-17
+  eigenvalue = 2.135111708649120
+  Perron residual = 4.441e-16
+  psi_min = 2.245e-45
+  rho(1,0) = 0.573562917034962
+  rho(1,1) = 0.204646875517536
+  rho min/max = 4.405e-24 / 1.000e+00
+  left/right marginal residual = 3.331e-16
+  conjugation residual = 1.388e-17
+  P = 0.439904783618900
+  u0 = 0.814403574488747
+  alpha_s(alpha_bare=1) = 1.507719867658089
+PASS: primary internal full-character link is a nontrivial environment coupling
+      max_factor=5.908774
+PASS: primary strip transfer is finite and nonnegative
+PASS: primary strip transfer is symmetric
+PASS: primary strip Perron residual is small
+PASS: primary strip Perron vector is nonnegative up to tolerance
+PASS: primary rho_strip is positive
+PASS: primary rho_strip is conjugation-symmetric
+PASS: primary left and right marginal readouts agree by strip symmetry
+PASS: product and conjugate internal-link orientations agree on the symmetric B4 packet
+PASS: dimension-stripped control is finite and positive
+      P_control=0.439904783618900
+
+p q | rho_word | rho_strip_full_character | ratio(strip/word) | delta
+----------------------------------------------------------------------------------------------------------------
+0 0 | 1.000000000000e+00 | 1.000000000000e+00 | 1.000000000000e+00 | +0.000000000000e+00
+0 1 | 3.785149223171e-01 | 8.251793568626e-01 | 2.180044453231e+00 | +4.466644345455e-01
+0 2 | 7.570581877783e-02 | 1.318942062003e-01 | 1.742193774924e+00 | +5.618838742243e-02
+0 3 | 9.488300432729e-04 | 2.460536915169e-03 | 2.593232510516e+00 | +1.511706871897e-03
+0 4 | 2.744981301341e-06 | 2.689142597034e-06 | 9.796578926496e-01 | -5.583870430686e-08
+1 0 | 3.785149223171e-01 | 8.251793568626e-01 | 2.180044453231e+00 | +4.466644345455e-01
+1 1 | 1.710420190918e-01 | 3.470173120560e-01 | 2.028842467474e+00 | +1.759752929642e-01
+1 2 | 3.962593031883e-03 | 1.753066227175e-02 | 4.424038030325e+00 | +1.356806923987e-02
+1 3 | 2.556269520369e-05 | 6.123817353261e-05 | 2.395607076823e+00 | +3.567547832892e-05
+1 4 | 6.698526652901e-09 | 1.272127051574e-08 | 1.899114712073e+00 | +6.022743862837e-09
+2 0 | 7.570581877783e-02 | 1.318942062003e-01 | 1.742193774924e+00 | +5.618838742243e-02
+2 1 | 3.962593031883e-03 | 1.753066227175e-02 | 4.424038030325e+00 | +1.356806923987e-02
+2 2 | 4.937702387904e-05 | 1.452270694314e-04 | 2.941187176189e+00 | +9.585004555238e-05
+2 3 | 2.384722181200e-08 | 6.338609970215e-08 | 2.658007721061e+00 | +3.953887789014e-08
+2 4 | 2.203570760518e-12 | 1.431555067305e-12 | 6.496524155043e-01 | -7.720156932129e-13
+3 0 | 9.488300432729e-04 | 2.460536915169e-03 | 2.593232510516e+00 | +1.511706871897e-03
+3 1 | 2.556269520369e-05 | 6.123817353261e-05 | 2.395607076823e+00 | +3.567547832892e-05
+3 2 | 2.384722181200e-08 | 6.338609970215e-08 | 2.658007721061e+00 | +3.953887789014e-08
+3 3 | 3.999837210632e-12 | 2.879012273503e-12 | 7.197823616047e-01 | -1.120824937129e-12
+3 4 | 1.915080453821e-17 | 6.961376229670e-18 | 3.635030693243e-01 | -1.218942830854e-17
+4 0 | 2.744981301341e-06 | 2.689142597034e-06 | 9.796578926496e-01 | -5.583870430686e-08
+4 1 | 6.698526652901e-09 | 1.272127051574e-08 | 1.899114712073e+00 | +6.022743862837e-09
+4 2 | 2.203570760518e-12 | 1.431555067305e-12 | 6.496524155043e-01 | -7.720156932129e-13
+4 3 | 1.915080453821e-17 | 6.961376229670e-18 | 3.635030693243e-01 | -1.218942830854e-17
+4 4 | 2.286765266123e-23 | 1.694121305209e-24 | 7.408374310675e-02 | -2.117353135602e-23
+
+================================================================================================================
+Part 4: composed readout measurement
+================================================================================================================
+Plaquette reuse license: comparator is used only as comparison/reuse context.
+```text
+P(rho_word) = 0.434215413259920
+P(rho_strip full-character) = 0.447034890458824
+P(rho_strip dimension-stripped control) = 0.439904783618900
+P_deep_rim_k4 = 0.603630724651002
+P_word_limit_rung20 = 0.615191992181771
+P_word_limit = 0.615191992185898
+0.5934 fenced comparator = 0.593400000000000
+P_strip - P_word = 0.012819477198904
+|P_word - 0.5934| = 0.159184586740080
+|P_strip - 0.5934| = 0.146365109541176
+|P_word_limit - 0.5934| = 0.021791992185898
+distance_change_vs_word = 0.012819477198904
+distance_closure_fraction_vs_word = 0.080532151142472
+distance_ratio_strip_to_word = 0.919467848857528
+distance_ratio_strip_to_word_limit = 6.716463015065305
+```
+PASS: primary two-strip readout moves toward the fenced comparator relative to one-word rho
+      distance_change=0.012819477198904
+PASS: primary two-strip readout remains farther from the fenced comparator than the word-limit value
+      strip_distance=0.146365109541176, word_limit_distance=0.021791992185898
+PASS: primary composed readout is finite and inside the source anchor interval
+
+================================================================================================================
+Part 5: note hygiene
+================================================================================================================
+PASS: note delegates status to the independent audit lane
+PASS: note declares bounded-theorem claim type
+PASS: note uses markdown links for one-hop authorities
+PASS: note keeps durable context pointers as plain-text paths
+PASS: note avoids overreach closure language
+Named residuals: finite two-strip first rung; finite B4 weight box; finite Bessel support; internal-link normalization/6j convention; strip depth direction; wider slab limit; 3D stack; L_perp limit; analytic P(6); no repinning.
+PASS: runner names residuals without retiring them
+
+TOTAL: PASS=31, FAIL=0
+
+----- stderr -----
+

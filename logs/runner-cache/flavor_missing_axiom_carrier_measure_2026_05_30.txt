@@ -1,33 +1,31 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py
-runner_sha256: 1f3a624cdde758d544ccca52977412d337cfa68747bba87de21ce259fd83d2dd
+runner_sha256: 076a8b3f4db91991051132a0ea861347d1ed36878be44f49e6418b65c111b8c0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.46
+elapsed_sec: 0.48
 status: ok
 ----- stdout -----
-[PASS] C1 ||I||^2=3, ||J-I||^2=6, <I,J-I>_HS=0 (canonical trace-orthogonal split)
-[PASS] C2 three-way fork: channel->1/2, idempotent->17/2-6sqrt2, mode->1
-       channel r=1/2, idempotent r=17/2 - 6*sqrt(2)~0.0147, mode r=1
-[PASS] C3 conditional family r=1/(N-1): N=3 -> r=1/2 (Q=2/3) if generator-channel HS measure is selected
-       {2: '1', 3: '1/2', 4: '1/3', 6: '1/5'}; Q(N=3)=1/3+2/3*(1/2)=2/3
-[PASS] C4 Kahler moment-map 1*(a^2+4b^2)=2*(a^2+b^2) -> r=1/2 (distinct derivation)
-       predicts Q=2/3 <=> complex b (Dirac); Majorana (real b) departs
-[PASS] C5 PDG: leptons sit at r=0.5000 (reality edge); quarks r>1/2 (PT-broken)
-       lepton r=0.5000; up r=0.773, down r=0.597
-[PASS] C6 r=1/2 interior COMMUTING point: [H,S]=0 -> decoupled from chirality no-go
-       value lane is clean; not a chiral/anticommuting operator
+[PASS] C1 HS split: ||I||^2=3, ||J-I||^2=6, <I,J-I>_HS=0
+[PASS] C2 three finite partitions remain distinct
+       channel r=1/2; idempotent r=17/2 - 6*sqrt(2); per-mode r=1
+[PASS] C3 generator-channel HS scoring gives r=1/(N-1)
+       {2: '1', 3: '1/2', 4: '1/3', 6: '1/5'}
+[PASS] C4 finite generation coordinate gives Q=2/3 after the supplied r=1/2 endpoint
+[PASS] C5 Record finite additivity leaves the two-sector normalized coordinate arbitrary
+       d choices for p: {'1/5': 'u/4', '1/2': 'u', '2/3': '2*u'}
+[PASS] C6 Record admits both r=1/2 and r=1 endpoints; it selects neither
+       r=1/2 -> rho=1, p=1/2; r=1 -> rho=2, p=2/3
+[PASS] C7 Kähler/moment-map algebra independently returns r=1/2 but does not select authority
+[PASS] C8 r=1/2 circulant point commutes with C3 shift, so it does not import chirality
+[PASS] C9 source guards: current Record authorities are cited as boundary, not as a new axiom
 
-SCORECARD PASS=6 FAIL=0
-ANSWER: the algebraic route to r=1/2 is a MEASURE selection (which invariant form +
-partition the substrate algebra carries), NOT a dynamical law. The checks collapse to
-the identity 3a^2=6b^2 under generator-channel HS scoring, while the idempotent and
-per-mode partitions give different r. A candidate carrier revision could make on-site
-carrier = R[Z3] in tracial standard form and make the (1,2) isotypic weight a carrier
-property, but this runner does not add that axiom or prove the current framework
-selects it. Conditional handles: r=1/(N-1) if that measure is selected; Kahler ->
-Majorana nu off 2/3; PT -> leptons at the reality edge. The VALUE lane is decoupled
-from the chirality gate.
+SCORECARD PASS=9 FAIL=0
+ANSWER: existing Record gives finite additive readout coordinates and the
+generation dial rho=2r, while the generator-channel HS rule would give
+r=1/(N-1). Record also proves the selection is not automatic: arbitrary
+two-sector coordinates remain admissible until a carrier-measure/readout
+selection theorem is supplied. No new axiom is introduced here.
 
 ----- stderr -----
 

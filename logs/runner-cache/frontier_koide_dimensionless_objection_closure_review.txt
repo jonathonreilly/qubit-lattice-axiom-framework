@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_dimensionless_objection_closure_review.py
-runner_sha256: 58c9d5428f26b464ea57ea2a1c6b64e2caa0f753e1411214017b44aff8ec7e50
+runner_sha256: ea5638eae25dc356e9b9cb8d220b4b0490315c0f7872b979a7328b7d198f1f2b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.39
+elapsed_sec: 0.18
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -68,19 +68,22 @@ Part 5: closure no-go verdict
 Part 6: regenerated audit metadata
 ----------------------------------------------------------------------------------------
   [PASS] [A] ledger claim_type is no_go  (no_go)
-  [PASS] [A] ledger audit_status reset to unaudited
-  [PASS] [A] ledger effective_status reset to unaudited
+  [PASS] [A] ledger audit_status is a no-go-compatible state  (unaudited)
+  [PASS] [A] ledger effective_status is no-go-compatible  (unaudited)
   [PASS] [A] ledger runner_path registered  (scripts/frontier_koide_dimensionless_objection_closure_review.py)
   [PASS] [A] ledger has no direct deps  ([])
   [PASS] [A] no open dependency paths remain  ([])
   [PASS] [A] queue marks row ready  (True)
-  [PASS] [B] descendant chain remains material  (73)
+  [PASS] [B] descendant chain remains material  (78)
 
 ========================================================================================
 SUMMARY: PASS=38 FAIL=0
 PASSED: 38/38
 ========================================================================================
 KOIDE_DIMENSIONLESS_COUNTERMODEL_NOGO=TRUE
+Q_DIMENSIONLESS_OBJECTION_CLOSES_Q=FALSE
+DELTA_DIMENSIONLESS_OBJECTION_CLOSES_DELTA=FALSE
+FULL_DIMENSIONLESS_OBJECTION_CLOSES_LANE=FALSE
 FULL_DIMENSIONLESS_CLOSURE_FORCED_BY_FINITE_ALGEBRA=FALSE
 Q_FORCED_WITHOUT_Z_ZERO_LAW=FALSE
 DELTA_FORCED_WITHOUT_LINE_LOCAL_BASEPOINT_LAW=FALSE

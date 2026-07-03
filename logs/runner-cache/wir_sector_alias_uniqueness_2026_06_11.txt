@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/wir_sector_alias_uniqueness_2026_06_11.py
+runner_sha256: 8c0b36777e08a4714aab74a22a6c45e157d232b536e2fbba9e914e20c20998a1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.46
+status: ok
+----- stdout -----
+ALIAS STRUCTURE AND THE SECTOR AS FUNDAMENTAL DOMAIN
+==============================================================================
+  [PASS] cos((2pi - w) n) = cos(w n) for integer n (symbolic, n in Z)  --  w and 2pi - w are layer-by-layer indistinguishable
+  [PASS] every alias orbit has exactly one representative in [0, pi] (200 random frequencies)  --  the spectrum-condition sector IS the alias fundamental domain
+  [PASS] two in-sector frequencies with identical integer data coincide (injectivity on the sector)
+
+REAL-EVEN TICK DATA AND EXACT PRONY RECOVERY
+==============================================================================
+  [PASS] exact Prony recovery of {(c_j, w_j)} from integer data, 25 random in-sector bands (J <= 3)  --  the in-sector band is DETERMINED by the registered layer data
+  [PASS] paired data is real and even: C(n) real, C(-n) = C(n) (the RP-shaped form)
+
+UNIQUE IN-SECTOR EUCLIDEAN COMPANION AND RP POSITIVITY
+==============================================================================
+  [PASS] every nontrivial alias lift E = w + 2 pi m (m >= 1) leaves the sector [0, pi]  --  sector membership singles out E_j = w_j exactly
+  [PASS] the in-sector Euclidean companion is reflection-positive: Hankel [g(m+n)] is PSD (15 bands)  --  sum of positive-weight rank-1 outer products e^{-E m} e^{-E n}
+
+CONE-AGREEMENT COROLLARY AND END-TO-END CHAIN INSTANCE
+==============================================================================
+  [PASS] per-fiber reconstruction returns E(k) = omega(k) exactly on the dichotomy band samples  --  E(k)/k = [1. 1. 1. 1.]
+  [PASS] cone slope of the reconstructed dispersion = 1 => xi = 1/v^2 = 1 (the landed inverse map)  --  Wick-IR cone agreement holds at ALL sampled momenta, not only the cone point
+  [PASS] contrast band (v = 0.6): reconstruction preserves the slope, xi = 1/v^2 = 2.778 (diagnostic intact)
+
+HOSTILE WITNESSES
+==============================================================================
+  [PASS] drop the sector: the band at 2pi - 1.3 generates IDENTICAL integer data to 1.3; recovery returns 1.3  --  without the spectrum-condition sector, the band is NOT determined: the sector is load-bearing
+  [PASS] drop the pairing: an unpaired mode gives complex, non-even layer data (not RP-shaped)  --  the landed spectrum-reflection corollary is what makes the registered data real-even
+  [PASS] second independent layer component is DETECTED by recovery (band changes from {0.8} to {0.8, 1.7})  --  the record-stack spectral reading is testable: extra structure shows up in the recovered band, not hidden
+
+SCOPE HONESTY: what is NOT proved here
+==============================================================================
+  [PASS] record-stack spectral reading is NAMED, not derived: the runner consumes generated data; nothing derives that the OS input IS tick-generated  --  its grounding is the one-spectrum identification
+  [PASS] sector is consumed as a premise with a retained_bounded parent, not rederived  --  spectrum-condition theorem + blocked-time normalization bridge
+
+==============================================================================
+SCORECARD: PASS=15 FAIL=0
+==============================================================================
+
+----- stderr -----
+

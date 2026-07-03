@@ -8,16 +8,33 @@ the qubit-lattice effect algebra, covering the single-site dim-2
 case (`|Λ| = 1`) that Gleason's original projection-lattice theorem
 does not handle. It is a companion to the separate
 `GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`
-candidate, but does not depend on that row.
+candidate. The current source packet also includes a native
+effect-Gleason authority bridge for the single-site qubit case:
+[`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md),
+with runner
+[`scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py`](../scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py)
+and cache
+[`logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt`](../logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt).
 
 ## Honest scope
 
-This note **does not re-prove Busch's theorem from scratch.** It
-applies Busch's standard 2003 POVM extension (and the CFMR 2004
-refinement) to the framework's qubit-lattice effect algebra,
-including the single-site `dim H = 2` case. Same narrow-theorem
-granularity as the Gleason companion: standard mathematical-physics
-content applied to the framework's specific substrate.
+The original May packet stated the standard Busch 2003 / CFMR 2004
+effect-Gleason theorem as a named mathematical input. The current
+restricted packet routes the finite qubit-lattice claim through
+framework-local finite operator algebra instead:
+
+- for `|Λ| = 1`, the single-site qubit effect case is supplied by
+  [`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md),
+  which reproves the load-bearing `m(E)=Tr(σE)` direction from the
+  parent hypotheses (M1)-(M3) on `M_2(C)`;
+- for `|Λ| >= 2`, the projection-lattice companion
+  [`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+  supplies the projection values, while POVM additivity plus spectral
+  decomposition extends those values from projections to effects.
+
+Busch 2003 and CFMR 2004 remain the parallel literature comparators
+for the same theorem. They are no longer the only source-side route
+for the finite qubit-lattice statement claimed here.
 
 ## Claim
 
@@ -36,11 +53,13 @@ m(E) = Tr(σ · E)                                                         (1)
 
 for a unique density matrix `σ ∈ M_d(ℂ)` (positive, `Tr σ = 1`).
 
-This is Busch 2003 applied to the qubit-lattice substrate, **including
-the `dim H = 2` single-site case** that lies outside Gleason's
-original projection-lattice theorem. The form `m(E) = Tr(σ E)` is the
-**Born rule** for POVM measurements on the qubit-lattice effect
-algebra at all dimensions `≥ 2`.
+This is the finite-region effect-Gleason statement on the
+qubit-lattice substrate, **including the `dim H = 2` single-site
+case** that lies outside Gleason's original projection-lattice
+theorem. The form `m(E) = Tr(σE)` is the Born-form representation for
+POVM effect functionals on the qubit-lattice effect algebra at all
+finite dimensions `2^|Λ| >= 2`, under the stated POVM-additivity
+hypotheses.
 
 ## Setup
 
@@ -92,10 +111,11 @@ quadratic extension can fail.
 This is the **classical Gleason gap at dim 2**, addressed by going
 to the POVM-effect-algebra extension.
 
-## Step 2 — Busch's POVM extension (cited)
+## Step 2 — Replacing the bare Busch import in the restricted packet
 
-**Busch's Theorem** (Busch 2003 *Phys. Rev. Lett.* 91, 120403;
-refined Caves–Fuchs–Manne–Renes 2004 *Found. Phys.* 34, 193):
+The standard comparator theorem is Busch's theorem (Busch 2003
+*Phys. Rev. Lett.* 91, 120403; refined Caves–Fuchs–Manne–Renes 2004
+*Found. Phys.* 34, 193):
 
 On a complex Hilbert space `H` with `dim H ≥ 2`, every POVM-additive
 probability measure `m: E(H) → [0, 1]` is of the form
@@ -106,33 +126,65 @@ m(E) = Tr(σ · E)                                                         (B)
 
 for a unique density matrix `σ` on `H`.
 
-The proof relies on the **richness of the POVM effect algebra at
-dim 2**: even at dim 2, the POVM elements form a continuous family
-parameterizing the full Bloch sphere, and POVM-additivity over
-two-element decompositions `E + E^⊥ = 𝟙` plus σ-additivity over
-multi-outcome POVMs (e.g., Pauli-string POVMs) is sufficient to
-fix the density-matrix form.
+The current packet does not leave (B) as a bare theorem name. It
+spells out the finite qubit-lattice route in two branches.
 
-**Sketch of Busch's argument** (Busch 2003, §III):
+**Branch A: the single-site qubit `M_2(C)`.** The authority bridge
+[`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+matches the parent hypotheses exactly:
 
-1. **Effect-algebra structure:** the POVM effect algebra
-   `E(H)` is an order-and-additive algebra (with the partial sum
-   defined when `E_1 + E_2 ≤ 𝟙`).
-2. **Linear extension:** the POVM-additive condition (M3) forces
-   `m` to extend linearly to all positive operators in `A_Λ`.
-3. **Riesz representation:** any positive linear functional on the
-   self-adjoint operators of a finite-dim C*-algebra is of the
-   form `Tr(σ · )` for some positive `σ`.
-4. **Normalization:** `m(𝟙) = 1` forces `Tr σ = 1`.
+- (M1) `m(0)=0`;
+- (M2) `m(𝟙)=1`;
+- (M3) POVM-additivity over `Σ_i E_i = 𝟙`, with `m:E(M_2)->[0,1]`.
 
-The key bridging step is (2): POVM-additivity is *strictly stronger*
-than projection-additivity, so the dim-2 obstruction in Gleason's
-proof does not apply.
+From those hypotheses it reproves the load-bearing direction on
+`M_2(C)`:
+
+1. the two- and three-outcome POVM laws give partial additivity
+   `m(E_1+E_2)=m(E_1)+m(E_2)` whenever `E_1+E_2 <= 𝟙`;
+2. partial additivity plus boundedness gives homogeneity on effects;
+3. the functional extends real-linearly to `Herm(M_2)`;
+4. finite-dimensional Riesz representation gives `F(H)=Tr(σH)`;
+5. `m(𝟙)=1` and `m(P_ψ)>=0` force `Tr σ=1` and `σ>=0`.
+
+The paired runner
+[`scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py`](../scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py)
+and cache
+[`logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt`](../logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt)
+check the exact rational `M_2` reconstruction, randomized `M_2`
+effect/POVM tests, a `M_4` cross-check, and the dim-2 guard showing
+that projection additivity alone underdetermines the trace form while
+POVM additivity selects it.
+
+**Branch B: multi-site regions `|Λ| >= 2`.** Restrict any
+POVM-additive `m:E(H_Λ)->[0,1]` to the projections `P(H_Λ)`. Since
+orthogonal projection families are POVM subfamilies, the restriction
+is a projection-lattice probability measure. The projection-lattice
+companion
+[`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+therefore supplies a density matrix `σ` with `m(P)=Tr(σP)` for every
+projection `P` on `H_Λ`.
+
+It remains only to extend from projections to effects. If
+`E=Σ_j λ_j P_j` is the finite spectral decomposition of an effect
+(`0 <= λ_j <= 1`, pairwise orthogonal `P_j`), then homogeneity on
+effects gives `m(λ_j P_j)=λ_j m(P_j)`, and partial additivity over
+orthogonal effects gives
+
+```text
+m(E) = Σ_j m(λ_j P_j)
+     = Σ_j λ_j Tr(σP_j)
+     = Tr(σE).
+```
+
+Thus the multi-site effect theorem is obtained by the projection
+companion plus finite spectral decomposition and the same
+effect-additivity/homogeneity laws used in Branch A.
 
 ## Step 3 — Application to the qubit-lattice substrate
 
-For any `|Λ| ≥ 1` (so `dim H_Λ = 2^|Λ| ≥ 2`), Busch's hypothesis is
-satisfied. Applying Busch's theorem (B):
+For any `|Λ| ≥ 1` (so `dim H_Λ = 2^|Λ| ≥ 2`), the restricted packet now
+has a finite-region route to the effect theorem:
 
 ```text
 m(E) = Tr(σ · E)   ∀ E ∈ E(H_Λ)                                          (3)
@@ -142,23 +194,25 @@ with `σ` a unique density matrix on `H_Λ`.
 
 This covers all qubit-lattice region sizes including:
 - `|Λ| = 1` (single site, dim 2): the **single-qubit Born form**
-  — not handled by the Gleason companion, supplied here
-- `|Λ| = 2` (two sites, dim 4): both Gleason and Busch apply; they
-  give the same `Tr(σ E)` form (Busch reduces to Gleason on
-  projections)
-- `|Λ| ≥ 3`: Gleason directly applies; Busch confirms on the
-  larger POVM-effect algebra
+  — not handled by projective Gleason, supplied by the native
+  `M_2(C)` effect bridge;
+- `|Λ| >= 2` (dim `>= 4`): the projection-lattice companion gives
+  the projection values, and finite spectral decomposition extends
+  the result to every POVM effect.
 
-Together, Gleason (`|Λ| ≥ 2`) + Busch (all `|Λ| ≥ 1`) cover **all
-qubit-lattice substrate sizes**.
+Together, the single-site native effect bridge plus the multi-site
+projection/spectral route cover **all finite qubit-lattice substrate
+sizes**. Busch 2003 / CFMR 2004 remain parallel literature
+comparators for the same conclusion.
 
 ## Step 4 — Finite-region scope and inductive-limit boundary
 
 The theorem above is finite-region: every finite `Λ` has effect
-algebra `E(H_Λ)` and Busch's theorem gives the Born form on that
-finite algebra. Passing from the compatible finite-region family to a
-state on the quasi-local UHF algebra `A = ⊗_x M_2(ℂ)` is a separate
-standard operator-algebraic inductive-limit step.
+algebra `E(H_Λ)`, and the source-local single-site plus multi-site
+routes above give the Born-form representation on that finite algebra.
+Passing from the compatible finite-region family to a state on the
+quasi-local UHF algebra `A = ⊗_x M_2(ℂ)` is a separate standard
+operator-algebraic inductive-limit step.
 
 This note therefore supplies the finite-region Born form on the
 framework substrate. It does not by itself prove an all-at-once
@@ -167,11 +221,13 @@ state; those are separate rows / imports.
 
 ## What this can close after audit
 
-- **The Busch 2003 admitted-input** in
+- **The previous bare Busch/CFMR admitted-input** in
   `BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`'s
-  derivation chain. If independently retained, this row supplies the
-  framework-scoped finite-region Busch application on the qubit-lattice
-  effect algebra.
+  derivation chain. If independently retained, this row supplies a
+  framework-scoped finite-region effect-Gleason application on the
+  qubit-lattice effect algebra, with native source support for the
+  single-site case and a projection/spectral route for multi-site
+  regions.
 - **The dim-2 single-qubit Born form**, which Gleason's projection-
   lattice theorem cannot supply directly.
 - **One textbook-import slot** in the Born-support chain. This note
@@ -185,34 +241,40 @@ state; those are separate rows / imports.
   (latter handled by `PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20`),
   Lüders rule (handled by the Lüders companion + Greechie
   sequential-product bridge).
-- **Re-derivation of Busch's theorem from scratch** — cited as
-  standard mathematical-physics content; not re-proved here.
+- **A general all-Hilbert-space re-derivation of Busch's theorem** —
+  the packet proves the finite qubit-lattice cases it uses and cites
+  Busch/CFMR in parallel.
 - **Non-commutative joint-system Born forms** that go beyond the
   finite-dim POVM effect-algebra (e.g., continuous-variable
   systems) — out of scope; the framework's substrate is finite-dim
   per site.
 - **The quasi-local inductive-limit state theorem** — only the
-  finite-region Busch application is claimed here.
+  finite-region effect-Gleason application is claimed here.
 
-## Admitted inputs
+## Source dependencies and inputs
 
-1. **Busch 2003 POVM-extension theorem** on Hilbert spaces of
-   `dim ≥ 2` — standard math (Phys. Rev. Lett. 91, 120403; refined
-   in Caves–Fuchs–Manne–Renes 2004). Cited as named non-derivation
-   standard content; the framework's contribution is the application
-   to its specific effect algebra.
-2. **Standard probability axioms (M1)–(M3)** — universal background.
-3. **Standard finite-dim C*-algebra theory** (positive linear
-   functionals, Riesz representation) — universal background.
+1. **Single-site effect-Gleason bridge on `M_2(C)`** —
+   [`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md),
+   with runner/cache linked above, supplies the load-bearing dim-2
+   case.
+2. **Projection-lattice companion for `|Λ| >= 2`** —
+   [`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+   supplies `m(P)=Tr(σP)` on projections in dimensions `>= 4`.
+3. **Standard probability/effect-algebra axioms (M1)-(M3)** — the
+   stated hypotheses of this theorem.
+4. **Standard finite-dimensional spectral and Riesz representation
+   facts** — used to extend from projection values to effects and to
+   identify the representing density matrix.
 
 ## Risk classification
 
 This is a `positive_theorem` candidate at the narrow-theorem granularity.
-Standard Busch theory applied to the framework's specific effect
-algebra `E(⊗_x M_2(ℂ))`. The narrow contribution is the explicit
-application to the qubit-lattice substrate (especially the dim-2
-single-site case) plus the verification of Busch's hypotheses on
-that substrate.
+Finite effect-Gleason theory applied to the framework's specific
+effect algebra `E(⊗_x M_2(ℂ))`. The narrow contribution is the
+explicit application to the qubit-lattice substrate, with the dim-2
+single-site case supplied by a native authority bridge and the
+multi-site effect case routed through projection Gleason plus spectral
+decomposition.
 
 Granularity matches retained Clifford-algebra narrow theorems
 (positive_theorem, retained): standard math applied to the
@@ -223,8 +285,15 @@ framework's specific operator structure.
 **Upstream framework dependencies** (load-bearing; markdown links):
 
 - [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra + Z^3 substrate)
+- [`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) — native `M_2(C)` effect-Gleason bridge for the single-site gap, with exact hypotheses matched to (M1)-(M3)
+- [`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) — projection-lattice density representation for multi-site finite regions
 
-**Upstream standard-math imports** (named non-derivation):
+**Runner/cache evidence** (load-bearing for the native single-site bridge):
+
+- [`scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py`](../scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py)
+- [`logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt`](../logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt)
+
+**Parallel standard-math comparators** (not the only source route):
 
 - Busch 2003 *Phys. Rev. Lett.* 91, 120403 — original POVM-extension theorem
 - Caves–Fuchs–Manne–Renes 2004 *Found. Phys.* 34, 193 — refined / clarified proof
@@ -234,11 +303,13 @@ framework's specific operator structure.
 
 - `BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` — downstream consumer of this narrow theorem in the Born derivation chain
 - `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md` — supplies the pre-record reference `σ = ρ_ref` for the Born evaluation
-- `GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md` — companion projection-lattice candidate for `|Λ| ≥ 2`; not load-bearing for this finite-region POVM theorem
 
 ## What this file is not
 
-- Not a re-derivation of Busch's theorem (cited as standard math)
+- Not a re-derivation of Busch's theorem for arbitrary Hilbert spaces
+- Not a bare standard-math import; the finite qubit-lattice cases used
+  here are routed through source-local notes/runners, with Busch/CFMR
+  cited in parallel
 - Not a closure of the Born derivation row (other admissions remain; see "What this does not close" above)
 - Not an automatic Born promotion to retained (verdicts owned by audit lane)
 - Not a numerical-prediction change

@@ -1,0 +1,164 @@
+{
+  "claim_id": "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30",
+  "note": "docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md",
+  "manifest": {
+    "note": "docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md",
+    "primary_runner": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py",
+    "primary_cache": "logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt",
+    "manifest_runner": "scripts/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.py",
+    "manifest_cache": "logs/runner-cache/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.txt",
+    "manifest_json": "outputs/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.json"
+  },
+  "summary": {
+    "pass": 29,
+    "fail": 0
+  },
+  "results": [
+    {
+      "name": "manifest_path_exists:note",
+      "pass": true,
+      "detail": "docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md"
+    },
+    {
+      "name": "manifest_path_exists:primary_runner",
+      "pass": true,
+      "detail": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+    },
+    {
+      "name": "note_names_manifest_path:primary_runner",
+      "pass": true,
+      "detail": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py is named in docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md"
+    },
+    {
+      "name": "manifest_path_exists:primary_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt"
+    },
+    {
+      "name": "note_names_manifest_path:primary_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt is named in docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md"
+    },
+    {
+      "name": "note_names_manifest_artifact:manifest_runner",
+      "pass": true,
+      "detail": "scripts/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.py is named in docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md"
+    },
+    {
+      "name": "note_names_manifest_artifact:manifest_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.txt is named in docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md"
+    },
+    {
+      "name": "note_names_manifest_artifact:manifest_json",
+      "pass": true,
+      "detail": "outputs/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.json is named in docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md"
+    },
+    {
+      "name": "source_full_length:primary_runner",
+      "pass": true,
+      "detail": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py has 47163 bytes"
+    },
+    {
+      "name": "source_contains:primary_runner:def block_metric_per_mode",
+      "pass": true,
+      "detail": "def block_metric_per_mode present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+    },
+    {
+      "name": "source_contains:primary_runner:def block_fwd_propagator_berezin",
+      "pass": true,
+      "detail": "def block_fwd_propagator_berezin present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+    },
+    {
+      "name": "source_contains:primary_runner:def block_metric_spacetime_eigs",
+      "pass": true,
+      "detail": "def block_metric_spacetime_eigs present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+    },
+    {
+      "name": "source_contains:primary_runner:def meson_correlator_full_berezin",
+      "pass": true,
+      "detail": "def meson_correlator_full_berezin present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+    },
+    {
+      "name": "source_contains:primary_runner:def u_averaged_meson",
+      "pass": true,
+      "detail": "def u_averaged_meson present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+    },
+    {
+      "name": "source_contains:primary_runner:det(M[U]) is ACTUALLY applied",
+      "pass": true,
+      "detail": "det(M[U]) is ACTUALLY applied present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+    },
+    {
+      "name": "source_contains:primary_runner:print(f\"SCORECARD PASS={npass} FAIL={nfail}\")",
+      "pass": true,
+      "detail": "print(f\"SCORECARD PASS={npass} FAIL={nfail}\") present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+    },
+    {
+      "name": "cache_runner_matches:primary_cache",
+      "pass": true,
+      "detail": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py == scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+    },
+    {
+      "name": "cache_sha_fresh:primary_cache",
+      "pass": true,
+      "detail": "cache sha ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5 current sha ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5"
+    },
+    {
+      "name": "cache_exit_ok:primary_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_contains:primary_cache:status: ok",
+      "pass": true,
+      "detail": "status: ok"
+    },
+    {
+      "name": "cache_contains:primary_cache:P_block : Gf Berezin(M^-1) vs operator(e^-2H)",
+      "pass": true,
+      "detail": "P_block : Gf Berezin(M^-1) vs operator(e^-2H)"
+    },
+    {
+      "name": "cache_contains:primary_cache:P1      : per-config Berezin(4-ferm) == operator meson",
+      "pass": true,
+      "detail": "P1      : per-config Berezin(4-ferm) == operator meson"
+    },
+    {
+      "name": "cache_contains:primary_cache:P0      : det-weighted avg Berezin == operator meson",
+      "pass": true,
+      "detail": "P0      : det-weighted avg Berezin == operator meson"
+    },
+    {
+      "name": "cache_contains:primary_cache:K2 BREAK: per-mode-factorized Berezin gap",
+      "pass": true,
+      "detail": "K2 BREAK: per-mode-factorized Berezin gap"
+    },
+    {
+      "name": "cache_contains:primary_cache:K5 GAUGE: Wilson-line covariance residual",
+      "pass": true,
+      "detail": "K5 GAUGE: Wilson-line covariance residual"
+    },
+    {
+      "name": "cache_contains:primary_cache:This verifies the gauge-invariant, NUMBER-CONSERVING MESON Berezin==operator",
+      "pass": true,
+      "detail": "This verifies the gauge-invariant, NUMBER-CONSERVING MESON Berezin==operator"
+    },
+    {
+      "name": "cache_contains:primary_cache:SCORECARD PASS=64 FAIL=0",
+      "pass": true,
+      "detail": "SCORECARD PASS=64 FAIL=0"
+    },
+    {
+      "name": "note_has_source_packet_reaudit_section",
+      "pass": true,
+      "detail": "meson note has the 2026-06-06 repair section"
+    },
+    {
+      "name": "note_preserves_bounded_boundary",
+      "pass": true,
+      "detail": "repair section states that status movement remains audit-owned"
+    }
+  ],
+  "status_boundary": "bounded-support source-packet repair only; independent audit owns any ledger/status movement"
+}

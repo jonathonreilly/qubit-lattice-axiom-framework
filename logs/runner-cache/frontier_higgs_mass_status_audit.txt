@@ -1,54 +1,68 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_higgs_mass_status_audit.py
-runner_sha256: ff89d5f71150203f3f2742dc3eaadd7b759fddf4664501b02e9a58ff46af5dc1
+runner_sha256: 1d841eae02d3eb2ebe214a8b619a258a5929bc162a38f4a2ccb1fbae9249ae1f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
-
-----------------------------------------------------------------------------------------
-Part 1: audit packet structure
-----------------------------------------------------------------------------------------
-  [PASS (A)] contains: 'Higgs Mass From Axiom Note — Status Correction Audit'  ()
-  [PASS (A)] contains: 'HIGGS_MASS_FROM_AXIOM_NOTE.md'  ()
-  [PASS (A)] contains: 'lattice curvature'  ()
-  [PASS (A)] contains: '(m_H/v)²'  ()
-  [PASS (A)] contains: 'Same-shape obstruction as cycles 5 and 9'  ()
-  [PASS (A)] contains: 'lattice → continuum'  ()
-  [PASS (A)] contains: 'bounded support theorem'  ()
-  [PASS (A)] contains: 'proposal_allowed: false'  ()
-
-----------------------------------------------------------------------------------------
-Part 2: 4 issues identified
-----------------------------------------------------------------------------------------
-  [PASS (A)] issue: Lattice curvature → physical  ()
-  [PASS (A)] issue: Taste polynomial  ()
-  [PASS (A)] issue: EW-color and Higgs authority notes are conditional  ()
-  [PASS (A)] issue: deps=[] in ledger  ()
-
-----------------------------------------------------------------------------------------
-Part 3: 7 cert criteria assessed
-----------------------------------------------------------------------------------------
-  [PASS (A)] Criterion 1  ()
-  [PASS (A)] Criterion 2  ()
-  [PASS (A)] Criterion 3  ()
-  [PASS (A)] Criterion 4  ()
-  [PASS (A)] Criterion 5  ()
-  [PASS (A)] Criterion 6  ()
-  [PASS (A)] Criterion 7  ()
-
-----------------------------------------------------------------------------------------
-Part 4: same-shape obstruction with cycles 5 and 9
-----------------------------------------------------------------------------------------
-  [PASS (A)] sister cross-ref: #260  ()
-  [PASS (A)] sister cross-ref: #268  ()
-  [PASS (A)] sister cross-ref: M residual  ()
-  [PASS (A)] sister cross-ref: observable bridge  ()
-
-========================================================================================
-  TOTAL: PASS=23, FAIL=0
-========================================================================================
+Higgs status-correction content audit
+PASS: target note exists -- docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md
+PASS: parent note exists -- docs/HIGGS_MASS_FROM_AXIOM_NOTE.md
+PASS: cycle 5 authority note exists -- docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md
+PASS: cycle 9 authority note exists -- docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md
+PASS: cluster context pointer exists -- docs/LATTICE_PHYSICAL_MATCHING_CLUSTER_OBSTRUCTION_NOTE_2026-05-02.md
+PASS: audit ledger exists -- docs/audit/data/audit_ledger.json
+PASS: target ledger row points to the registered runner -- scripts/frontier_higgs_mass_status_audit.py
+PASS: target ledger row points to the repaired note -- docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md
+PASS: cycle 5 authority row is markdown-linkable by ledger metadata -- retained_no_go no_go
+PASS: cycle 9 authority row is markdown-linkable by ledger metadata -- retained_no_go no_go
+PASS: unaudited cluster synthesis is not used as authority
+PASS: status authority block is present
+PASS: target declares open-gate demotion/status-correction source type
+PASS: target has source-correction audit firewall
+PASS: target has dated 2026-06-12 repair section
+PASS: target has source-side no-go discipline scope gate
+PASS: target contains no external markdown links
+PASS: target markdown-links one-hop authority HIGGS_MASS_FROM_AXIOM_NOTE.md
+PASS: target markdown-links one-hop authority YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md
+PASS: target markdown-links one-hop authority GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md
+PASS: cycle 5 authority consumed at same-shape claim site
+PASS: cycle 9 authority consumed at same-shape claim site
+PASS: target scopes same-shape classification to current-packet non-derivation
+PASS: cycle 5 note states exact algebraic fraction
+PASS: cycle 5 note states no retained selector promotes to physical M
+PASS: cycle 5 note forbids broad global finite-Nc no-go
+PASS: cycle 5 algebra recomputes F_adj exactly -- F_adj=8/9
+PASS: cycle 9 note declares two completion witnesses
+PASS: cycle 9 witness delta is recomputed exactly -- delta=729/156250 decimal=0.0046656
+PASS: cycle 9 note records the same witness delta
+PASS: cycle 9 note uses distinct readouts for non-entailment
+PASS: cycle 9 note names nonperturbative escape objects
+PASS: cycle 5 cached runner total parses with FAIL=0 -- PASS=29 FAIL=0
+PASS: cycle 9 cached runner summary parses with FAIL=0 -- parsed PASS=9 FAIL=0
+PASS: parent diagnostic value recomputes to 140.3 GeV -- m_curv=140.26730276507939274605621376398
+PASS: parent labels v/(2u0) as diagnostic m_curv_tree
+PASS: parent explicitly rejects Higgs-pole prediction reading
+PASS: target records bounded diagnostic reading
+PASS: dependency surface has no positive Higgs-pole prediction wiring
+PASS: target avoids overreach phrase 'only route'
+PASS: target avoids overreach phrase 'last route'
+PASS: target avoids overreach phrase 'exhausted'
+PASS: target avoids overreach phrase 'closes the program'
+PASS: target avoids overreach phrase 'cannot be derived from standard QFT alone'
+PASS: target avoids overreach phrase 'standard QFT analytical machinery'
+PASS: target avoids overreach phrase 'After this PR lands'
+PASS: target avoids overreach phrase 'transitive descendants inherit'
+PASS: no-go discipline gate includes N1
+PASS: no-go discipline gate includes N2
+PASS: no-go discipline gate includes N3
+PASS: no-go discipline gate includes N4
+PASS: no-go discipline gate includes N5
+PASS: no-go discipline gate includes N6
+PASS: no-go discipline gate includes N7
+PASS: no-go discipline gate includes N8
+TOTAL: PASS=55, FAIL=0
 
 ----- stderr -----
 

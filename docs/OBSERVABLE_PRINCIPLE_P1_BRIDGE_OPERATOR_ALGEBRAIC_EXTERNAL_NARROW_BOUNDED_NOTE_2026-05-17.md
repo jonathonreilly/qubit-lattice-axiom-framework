@@ -53,9 +53,10 @@ Stormer 1973.
 on `Cl(3) ⊗ Z^3`, vacuum-expectation connected correlators of local
 operators at large spatial separation factorize. This is the standard
 content of Lieb-Robinson + mass gap (Hastings-Koma 2006); the on-frame
-context is the `audited_conditional`
-`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md` row,
-with the open `Δ_T > 0` mass-gap input.
+context is the `retained_bounded`
+`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md` row.
+That bounded row is context for correlator factorization, not a positive
+retained primitive deriving scalar-generator additivity.
 
 **(C5) Counterexample family — non-additive scalar functionals
 compatible with multiplicative `Z`.** For any real `p ≠ 0`, the
@@ -126,11 +127,10 @@ factorize" to "the scalar generator is additive" still requires
 defining the scalar generator via `log Z` — which packages additivity
 into the definition by way of the `log`. Furthermore, on the live
 ledger, `axiom_first_cluster_decomposition_theorem_note_2026-04-29` is
-`audited_conditional` (L2 unconditional clustering not proved on the
-canonical `Cl(3) ⊗ Z^3` Hamiltonian; mass-gap input `Δ_T > 0` open).
-The operator-algebraic attempt therefore cannot consume cluster decomposition as a
-retained-grade primitive for closing P1 even if the additivity-from-
-factorization implication held.
+`retained_bounded`, not a positive closure primitive for P1. The
+operator-algebraic attempt therefore cannot consume cluster decomposition as
+a retained positive theorem deriving scalar-generator additivity even if the
+additivity-from-factorization implication held.
 
 **(F4) Reeh-Schlieder cyclicity is about density, not about generator
 class.** The Reeh-Schlieder theorem (Reeh-Schlieder 1961, Streater-
@@ -342,9 +342,8 @@ that connected correlators of local operators factor at large
 spatial separation. Going from correlator factorization to scalar
 generator additivity still requires `W = log Z`. Status of upstream:
 `axiom_first_cluster_decomposition_theorem_note_2026-04-29` is
-`audited_conditional` with the L2 unconditional clustering open and
-the mass-gap input `Δ_T > 0` itself open; cannot be consumed as
-retained primitive. The retained bridge note
+`retained_bounded`; it supplies bounded correlator-factorization context, not
+the scalar-generator additivity criterion. The retained bridge note
 `CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`
 provides the conditional temporal transfer-matrix bridge but not the
 spatial clustering or the gap derivation. Even if cluster
@@ -378,7 +377,7 @@ algebra, re-verified in the runner.
   factor (O3): Connes-Stormer 1973, Connes 1976. No framework
   re-derivation.
 - Live ledger statuses of upstream operator-algebraic rows: cluster
-  decomposition `audited_conditional`, mass-gap bridge `retained_bounded`,
+  decomposition `retained_bounded`, mass-gap bridge `retained_bounded`,
   Reeh-Schlieder `unaudited`. None of these is consumed as a
   load-bearing dependency by this note (they enter only as named
   context to (F3) and (F4)).
@@ -530,7 +529,8 @@ Context references (plain text unless load-bearing):
   different vocabulary; this note sharpens the negative
   finding by exhibiting the (C5) counterexample family.
 - `AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`
-  — current `audited_conditional` status; named context for (F3).
+  — current `retained_bounded` status; named context for (F3), not a
+  positive retained primitive closing P1.
 - `AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md`
   — current `unaudited` status; named context for (F4).
 - `CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`

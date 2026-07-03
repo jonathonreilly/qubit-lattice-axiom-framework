@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/frontier_acphilambda_hw_complement_reading_registration_equivalence_2026_06_12.py
+runner_sha256: b586a4e1df0326e360e01340c2591ad773c33475871b8385f6f8834f71c74f0e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.17
+status: ok
+----- stdout -----
+========================================================================================
+AC_PHI_LAMBDA HW-COMPLEMENT READING REGISTRATION-EQUIVALENCE
+========================================================================================
+
+----------------------------------------------------------------------------------------
+A1-A3: Boolean corner cube and C3 frame action
+----------------------------------------------------------------------------------------
+  [PASS] A1: R(x,y,z)=(z,x,y) cycles the hw=1 and hw=2 triplets -- hw1 orbit=[(1, 0, 0), (0, 1, 0), (0, 0, 1)]; hw2 orbit=[(0, 1, 1), (1, 0, 1), (1, 1, 0)]
+  [PASS] A2: complementation maps hw=1 bijectively to hw=2 and C o R = R o C on all corners
+  [PASS] A3: orientation preserved; C o R != R^-1 o C on the named corner (1,0,0) -- CR=(1, 0, 1); R^-1C=(1, 1, 0)
+
+----------------------------------------------------------------------------------------
+A4-A5: supplied Hermitian circulant spectrum and symmetric data
+----------------------------------------------------------------------------------------
+  [PASS] A4: H(delta) eigenvalues are lambda_k = a + 2B cos(delta + 2 pi k/3)
+  [PASS] A5: e1,e2,e3 are even in delta and e3 contains phase only via cos(3 delta) -- e1=3*a; e2=-3*B**2 + 3*a**2; e3=2*B**3*cos(3*delta) - 3*B**2*a + a**3
+
+----------------------------------------------------------------------------------------
+A6-A7: degree <= 3 readout decomposition and orientation-odd line
+----------------------------------------------------------------------------------------
+  [PASS] A6a: u and v are C3-invariant; u-v is transposition-odd
+  [PASS] A6b: degree <= 3 C3-invariant space = symmetric space plus exactly one extra line -- dim C3<=3=8; dim symmetric<=3=7; quotient=1
+  [PASS] A7: (u - v)(slots) = -6 sqrt(3) B^3 sin(3 delta) exactly -- (u-v)(slots)=-6*sqrt(3)*B**3*sin(3*delta)
+
+----------------------------------------------------------------------------------------
+A8-A9: K action and additive-plus-even erasure
+----------------------------------------------------------------------------------------
+  [PASS] A8: sin(3 delta) is odd, cos(3 delta) is even, and conj(H(delta)) = H(-delta)
+  [PASS] A9a: additivity forces g(0)=0 and g(-x)=-g(x), with no continuity assumption -- g(0)=g(0)+g(0); odd plus even gives gt=-gt
+  [PASS] A9b: additive plus K-even kills the (u-v)/sin(3 delta) line: its K-even part vanishes identically, so its registrable (additive AND even) projection is zero -- (u-v)(slots, delta) + (u-v)(slots, -delta) = 0 exactly; the line is pure K-odd, and A9a shows additive+even content must be zero
+
+----------------------------------------------------------------------------------------
+A10-A11: complement readings have the same registrable spectrum
+----------------------------------------------------------------------------------------
+  [PASS] A10: equivariant transfer is order-consistent (complement of the R-orbit = R-orbit of the complement) and the complement readings have the same unordered spectrum / symmetric functions -- hw1 orbit=[(1, 0, 0), (0, 1, 0), (0, 0, 1)]; hw2 orbit (rotation-built)=[(0, 1, 1), (1, 0, 1), (1, 1, 0)]
+  [PASS] A11: frame-dependent component x1 is not constant on the supplied C3 frame orbit -- x1 - x2 nonzero as a polynomial; witness at slots (2,-1,-1): x1=2, rotated x1=-1
+
+----------------------------------------------------------------------------------------
+B12-B15: note consistency checks
+----------------------------------------------------------------------------------------
+  [PASS] B12: note stipulates the supplied slot model and the H(delta) formula in-note
+  [PASS] B13: note carries firewall, Status authority, and No-promotion statement boundaries
+  [PASS] B14: hw support note and staggered gate appear only as context names, not markdown deps
+  [PASS] B15: note .md link inventory is exactly the two load-bearing deps and both resolve -- md_links=['MINIMAL_AXIOMS_2026-06-05.md', 'REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md']
+
+========================================================================================
+SUMMARY: PASS=17 FAIL=0
+========================================================================================
+
+----- stderr -----
+

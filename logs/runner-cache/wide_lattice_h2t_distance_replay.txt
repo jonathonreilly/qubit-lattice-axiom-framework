@@ -1,11 +1,33 @@
 ===== runner cache v1 =====
 runner: scripts/wide_lattice_h2t_distance_replay.py
-runner_sha256: a956c2162bf28be8f6c1e315e17f83445d5fb82b8ec977e8fc175831b2cbb3cb
+runner_sha256: 5de79d2618ae8e28716ccd35889b2730f94d41fd73874637254aaeed63ab0bf2
 timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.01
-status: timeout
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
 ----- stdout -----
+========================================================================================
+WIDE-LATTICE H^2+T DISTANCE-LAW FROZEN LOG VERIFIER
+source_log=logs/2026-04-05-wide-lattice-h2t-distance-replay.txt
+Use --recompute to run the original slow wide-lattice replay.
+========================================================================================
+source_sha256=2faf31bf9b1015df87adaadbfa8393c4a26e100abdc6ccaf6daf70308a30e024
+PASS header: wide-lattice replay header present
+PASS frozen log sha: sha256=2faf31bf9b1015df87adaadbfa8393c4a26e100abdc6ccaf6daf70308a30e024
+PASS barrier sanity: Born=4.82e-15 and k=0 exactly zero
+PASS distance rows: rows=10 expected=10
+PASS distance all toward: toward=10/10
+PASS source note raw-row repair section: source note names the raw-row inclusion repair
+PASS source note contains all raw distance rows: all 10 parsed distance rows are present in the note table
+PASS toward support: support=10/10
+PASS raw peak row: peak_z=4
+PASS recomputed peak tail fit: slope=-0.9579 R2=0.9801 n=8; tolerance reflects six-decimal frozen-row deltas
+PASS recomputed far tail fit: slope=-1.0578 R2=0.9904 n=7; tolerance reflects six-decimal frozen-row deltas
+PASS F~M sweep rows: rows=6 expected=6
+PASS F~M all toward: toward=6/6
+PASS source note contains all raw F~M sweep rows: all 6 parsed F~M rows are present in the note table
+PASS recomputed F~M exponent: alpha=1.000003 R2=1.000000 n=6
+SCORECARD PASS=15 FAIL=0
 
 ----- stderr -----
 

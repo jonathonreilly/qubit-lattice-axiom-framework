@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_scalar_trace_tensor_nogo.py
-runner_sha256: 5ce8dce53260e73bdaf23731c97381ef219d62319484ed0953224e0ce72427f9
-timeout_sec: 120
+runner_sha256: 7c794fab6ca0353fc15c22e8ae7d83328cadb37cfe93219982dd4e1746afae3c
+timeout_sec: 240
 exit_code: 0
-elapsed_sec: 9.81
+elapsed_sec: 3.66
 status: ok
 ----- stdout -----
 Scalar-trace-only tensor completion no-go

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_wilson_action_surface_selector_real_positive_2026_05_25.py
-runner_sha256: 33d92cae0758ab951c3e7dd6602fb5f5c8d8baee73b718cca130b382e5edd1fa
+runner_sha256: d7d86a2dc9cbb386de299a5067d8de328703a7eff10b355e2ae6bbf2ec7fd70b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.17
+elapsed_sec: 1.77
 status: ok
 ----- stdout -----
 ================================================================================
@@ -12,7 +12,7 @@ status: ok
  Companion runner to:
    docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md
  Parent target: docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md
- (audited_conditional, judicial-panel verdict; first of two missing bridges)
+ (conditional parent verdict; first of two missing bridges)
 
  8 verification gates exhibiting canonical ansatz selection on SU(3).
 
@@ -73,17 +73,18 @@ status: ok
 
 === V7: Explicit F~F-proxy term construction + rejection ===
 
+  [PASS] V7.0  convention guard: Q=(Tr U-Tr U^dag)/(2i), S_theta=i theta Q; extra-i drift differs  (max form deviation = 0.00e+00; min gap to buggy extra-i form = 4.6956e-02)
   [PASS] V7.1  S = i theta Q[U] with Q = Σ_P Im Tr U_P has Im S != 0 on generic SU(3) configs  (20/20 configs reject (Im S > 1e-9))
   [PASS] V7.2  Boltzmann factor exp(-S_W - i theta Q) has Im != 0 (rejection)  (20/20 configs reject (Im BF > 1e-12 * |BF|))
   [PASS] V7.3  Control: theta = 0 gives real Boltzmann factor on ALL configs  (20/20 configs have Im BF = 0 at theta = 0)
-  [PASS] V7   F~F-proxy term iθQ rejected at action-functional + Boltzmann-factor levels  (Triple confirmation: Im S != 0, Im BF != 0, theta=0 control)
+  [PASS] V7   F~F-proxy term iθQ rejected at action-functional + Boltzmann-factor levels  (Convention guard plus triple confirmation: Im S != 0, Im BF != 0, theta=0 control)
 
 === V8: Scoped beta-matching consistency ===
 
   [PASS] V8.1  Canonical generator normalization Tr(T^a T^b) = (1/2) delta^{ab} holds on T_GEN basis  (max |Tr(T^a T^b) - target| = 1.11e-16)
   [PASS] V8.2  Scoped relation: g_bare^2 = 2 N_c / beta = 1 at beta = 6, N_c = 3  (g_bare^2 = 1.000000)
   [PASS] V8.3  Inverse: beta = 2 N_c / g_bare^2 = 6 at g_bare^2 = 1 (canonical), N_c = 3  (beta = 6.000000)
-  [PASS] V8   Scoped beta-matching consistency: beta = 6 from N_c = 3  (Canonical Wilson coefficient checked as a scoped premise, not imported retained authority)
+  [PASS] V8   Scoped beta-matching consistency: beta = 6 from N_c = 3  (Canonical Wilson coefficient checked as a scoped premise, not imported status)
 
 ================================================================================
 GATE SUMMARY (8 verification gates):
@@ -99,7 +100,7 @@ GATE SUMMARY (8 verification gates):
   GATES: PASS = 8, FAIL = 0
 
 SUB-CHECK SUMMARY:
-  PASS = 36, FAIL = 0, runtime = 0.8s
+  PASS = 37, FAIL = 0, runtime = 1.3s
 ================================================================================
 
 ----- stderr -----

@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/magnitude_reads_minimal_record_block_2026_06_06.py
+runner_sha256: b75244df7f4ffc375e7e0d406d5a8bbf3da055fb77cfe07cbea9ce8d4c972a89
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+Magnitude minimal-block readout boundary
+========================================================================
+--- Section I: finite temporal count facts ---
+PASS: eta_1(t)=(-1)^t has minimal period 2
+PASS: a single time-slice is not a translation-invariant eta_1 cell
+PASS: direct two-step contraction sample lies in (0,1]
+PASS: one-hop RP cache supplies single-step non-positivity
+PASS: one-hop RP cache supplies two-step positivity
+--- Section R: Record axiom boundary ---
+PASS: approved Record axiom boundary is present
+PASS: Record does not supply a readout-scale selector
+  minimal axioms exclude readout context, time metric, weighting, normalization, and occupancy rule
+--- Section S: conditional arithmetic only ---
+PASS: conditional UV/minimal-block exponent would be 8 x 2 = 16
+PASS: OS-continuum count sequence is a different unbounded reconstruction object
+PASS: no-go: Record plus RP two-step does not select L_t=2 over L_t -> infinity
+========================================================================
+MAGNITUDE_MINIMAL_BLOCK_SELECTED_BY_RECORD=FALSE
+CONDITIONAL_IF_UV_MINIMAL_BLOCK_READOUT_SUPPLIED=16
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

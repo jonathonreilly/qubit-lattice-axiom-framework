@@ -1,0 +1,90 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py
+runner_sha256: b1484cc0f4edd1e9f7b7c84dc40fa197ff8ea2c46f78a538322d2e3ee3daef1b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Closeout index checks
+------------------------------------------------------------------------------
+PASS six PR stack entries are expected
+PASS index declares audit-canonical meta metadata
+PASS index contains PR #2850
+PASS index contains title fragment for #2850
+PASS index contains status for #2850
+PASS index contains cached summary for #2850
+PASS index contains PR #2853
+PASS index contains title fragment for #2853
+PASS index contains status for #2853
+PASS index contains cached summary for #2853
+PASS index contains PR #2856
+PASS index contains title fragment for #2856
+PASS index contains status for #2856
+PASS index contains cached summary for #2856
+PASS index contains PR #2858
+PASS index contains title fragment for #2858
+PASS index contains status for #2858
+PASS index contains cached summary for #2858
+PASS index contains PR #2861
+PASS index contains title fragment for #2861
+PASS index contains status for #2861
+PASS index contains cached summary for #2861
+PASS index contains PR #2864
+PASS index contains title fragment for #2864
+PASS index contains status for #2864
+PASS index contains cached summary for #2864
+PASS index states stable location is not selected dial
+PASS index states no audit verdicts are applied
+
+------------------------------------------------------------------------------
+Cached summary checks
+------------------------------------------------------------------------------
+PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt has summary for PR #2850
+PASS logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt has summary for PR #2853
+PASS logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt has summary for PR #2856
+PASS logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt has summary for PR #2858
+PASS logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt has summary for PR #2861
+PASS logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt has summary for PR #2864
+
+------------------------------------------------------------------------------
+Status shape checks
+------------------------------------------------------------------------------
+PASS stack has exact-support entries
+PASS stack has no-go entries
+PASS exact-support count is four
+PASS no-go count is two
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS audit data written flag is false
+PASS audit verdict applied flag is false
+PASS promoted/retained claim flag is false
+PASS kernel selected without supplied rule flag is false
+PASS selection rule derived from Record flag is false
+PASS target vector derived from Record flag is false
+PASS sample-is-probability-law flag is false
+PASS generation/Koide dial selected flag is false
+PASS stable setting selects dial flag is false
+
+SUMMARY: PASS=53 FAIL=0
+POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX=TRUE
+DYNAMICS_STACK_PRS=6
+DYNAMICS_STACK_EXACT_SUPPORT=4
+DYNAMICS_STACK_NO_GO=2
+AUDIT_LEDGER_WRITTEN=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+STABLE_SETTING_SELECTS_DIAL=FALSE
+
+----- stderr -----
+

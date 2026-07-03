@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py
-runner_sha256: 3a67ada4385f9453eb6e93aa901d3883bfc500d3193eafc7a93d633330cdeb81
-timeout_sec: 1800
+runner_sha256: 5cb0cc95f1c0d2217b37fbea1e0ee7aa949a301f1393b5f13a0f5a7a92ee2468
+timeout_sec: 60
 exit_code: 0
-elapsed_sec: 72.41
+elapsed_sec: 40.59
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -13,8 +13,9 @@ DM SAME-SURFACE THERMAL SUPPLIED-PREMISE INTERVAL THEOREM
 ========================================================================================
 PART 0: SOURCE-NOTE SCOPE BOUNDARY
 ========================================================================================
-  [PASS] source contains required boundary phrase: **Claim type:** bounded support note
+  [PASS] source contains required boundary phrase: **Claim type:** open_gate / conditional-support interval-composition certificate
   [PASS] source contains required boundary phrase: **Type:** conditional / support
+  [PASS] source contains required boundary phrase: 2026-06-12 audit firewall: supplied-premise support only
   [PASS] source contains required boundary phrase: supplied-premise boundary
   [PASS] source contains required boundary phrase: This row does not derive
   [PASS] source contains required boundary phrase: premise packet from framework primitives
@@ -22,7 +23,14 @@ PART 0: SOURCE-NOTE SCOPE BOUNDARY
   [PASS] source omits forbidden control phrase: source-note proposal only
   [PASS] source omits forbidden control phrase: actual_current_surface_status
   [PASS] source omits forbidden control phrase: bare_retained
-  [PASS] source omits forbidden control phrase: Claim type:** bounded_theorem
+  [PASS] source omits forbidden control phrase: **Claim type:** bounded support note
+  [PASS] source omits forbidden control phrase: **Claim type:** bounded_theorem
+  [PASS] source records the 2026-06-07 current-authority reduction
+  [PASS] source no longer treats the 64:1 bridge as an open gap
+  [PASS] one-hop authority is audited_clean/retained_bounded: dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16  (audit_status=audited_clean effective_status=retained_bounded)
+  [PASS] one-hop authority is audited_clean/retained_bounded: dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17  (audit_status=audited_clean effective_status=retained_bounded)
+  [PASS] one-hop authority is audited_clean/retained_bounded: dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17  (audit_status=audited_clean effective_status=retained_bounded)
+  [PASS] one-hop authority is audited_clean/retained_bounded: dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02  (audit_status=audited_clean effective_status=retained_bounded)
 
 ========================================================================================
 PART 1: CERTIFIED CURRENT-BANK THERMAL ENVELOPES
@@ -71,10 +79,10 @@ BOTTOM LINE
     - the supplied-packet current-bank obstruction is bracketed
     - the one-scalar same-surface admitted family has a certified unique root interval
   What still remains open is the source derivation of the live-DM
-  premise packet: the 64:1 bridge, live constants, and selector premises.
+  constants and packet-completeness / selector premises.
 
 ========================================================================================
-SUMMARY: PASS=19 FAIL=0
+SUMMARY: PASS=27 FAIL=0
 ========================================================================================
 
 ----- stderr -----

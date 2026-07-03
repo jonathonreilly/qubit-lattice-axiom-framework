@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_mru_weight_class_obstruction_theorem.py
-runner_sha256: 1ed21f52547bf74065c93739703899aed60ef2e7b6c2a1b10390ab6fa224af51
+runner_sha256: 470796c290dbf4762f25c6dc8049babb8816826edb27466e91ef1a1bc4de620d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.78
+elapsed_sec: 0.51
 status: ok
 ----- stdout -----
 
@@ -20,32 +20,55 @@ status: ok
 [A] PASS: det(alpha P_+ + beta P_perp) = alpha beta^2
 [A] PASS: Unreduced weight pair (1,2) lands at kappa = 1
 
-=== Part 2: exact SO(2) quotient to the two-slot carrier ===
-[A] PASS: The doublet block power is SO(2)-orbit invariant
-[A] PASS: The scalar lane therefore quotients the ordered pair (r_1, r_2)
-[A] PASS: Reduced carrier coordinates satisfy rho_+^2 = E_+
-[A] PASS: Reduced carrier coordinates satisfy rho_perp^2 = E_perp
-[A] PASS: On the quotient carrier kappa = 2 E_+ / E_perp
+=== Part 2: context-only SO(2)-quotient algebra ===
+[C] PASS: The doublet block power is SO(2)-orbit invariant
+[C] PASS: If the scalar lane quotients the ordered pair, the radius is invariant
+[C] PASS: Reduced carrier coordinates satisfy rho_+^2 = E_+
+[C] PASS: Reduced carrier coordinates satisfy rho_perp^2 = E_perp
+[C] PASS: On the quotient carrier kappa = 2 E_+ / E_perp
 
-=== Part 3: reduced-carrier resolution ===
-[A] PASS: Reduced carrier has a unique positive log-volume stationary point  (sol=[{lam: 1/e_tot, rho_p: sqrt(2)*sqrt(e_tot)/2, rho_perp: sqrt(2)*sqrt(e_tot)/2}])
-[A] PASS: Reduced stationary point is rho_+ = rho_perp = sqrt(E_tot/2)
-[A] PASS: The reduced stationary point is exactly E_+ = E_perp
-[A] PASS: Pullback gives a^2 = 2 |b|^2
-[A] PASS: So the reduced carrier lands at kappa = 2
+=== Part 3: context-only reduced-carrier resolution ===
+[C] PASS: Reduced carrier has a unique positive log-volume stationary point  (sol=[{lam: 1/e_tot, rho_p: sqrt(2)*sqrt(e_tot)/2, rho_perp: sqrt(2)*sqrt(e_tot)/2}])
+[C] PASS: Reduced stationary point is rho_+ = rho_perp = sqrt(E_tot/2)
+[C] PASS: The reduced stationary point is exactly E_+ = E_perp
+[C] PASS: Pullback gives a^2 = 2 |b|^2
+[C] PASS: So the reduced carrier lands at kappa = 2
 
-=== Part 4: obstruction plus resolution ===
-[A] PASS: Reduced two-slot carrier has det = alpha beta
-[A] PASS: On the reduced carrier log|det| = log alpha + log beta
+=== Part 4: context-only reduced determinant check ===
+[C] PASS: Reduced two-slot carrier has det = alpha beta
+[C] PASS: On the reduced carrier log|det| = log alpha + log beta
+
+=== Part 5: source-boundary discipline ===
+[A] PASS: source note contains boundary phrase: '**Claim type:** bounded_theorem'
+[A] PASS: source note contains boundary phrase: '**Status authority:** independent audit lane.'
+[A] PASS: source note contains boundary phrase: '**Claim scope:** unreduced carrier obstruction only.'
+[A] PASS: source note contains boundary phrase: '**No-promotion statement:**'
+[A] PASS: source note contains boundary phrase: 'This source does not derive that object'
+[A] PASS: source note contains boundary phrase: 'non-load-bearing future-route context'
+[A] PASS: source note contains boundary phrase: 'not part of the theorem claim'
+[A] PASS: source note contains boundary phrase: 'cos(3 arg b)'
+[A] PASS: source note contains boundary phrase: '**not** derive the physical quotient bridge'
+[A] PASS: source note contains boundary phrase: 'use the conditional reduced-carrier calculation as a load-bearing premise'
+[A] PASS: source note omits old overclaim phrase #1
+[A] PASS: source note omits old overclaim phrase #2
+[A] PASS: source note omits old overclaim phrase #3
+[A] PASS: source note omits old overclaim phrase #4
+[A] PASS: source note omits old overclaim phrase #5
+[A] PASS: source note contains no tool-worktree paths
 
 Interpretation:
-  The old obstruction is still exact on the unreduced 3x3 carrier.
-  The branch-local closure step is the derived SO(2) quotient of the
-  non-trivial real doublet to a single scalar slot rho_perp.
-  After that reduction, the standard log-volume law is the equal-weight
-  MRU law automatically.
+  The bounded theorem is the unreduced 3x3 obstruction: determinant
+  weights (1,2) select kappa = 1, so the unreduced determinant
+  carrier cannot force MRU.
+  The quotient calculation is context only: if an independent
+  upstream bridge supplies the SO(2) quotient, the non-trivial real
+  doublet reduces to one scalar slot rho_perp and the standard
+  log-volume law becomes the equal-weight MRU law.
+  This runner does not use that context as a load-bearing premise.
+  The remaining positive-route science is still the physical quotient
+  / cos(3 arg b) decoupling bridge.
 
-classified_pass=21 fail=0
+classified_pass=37 fail=0
 
 ----- stderr -----
 

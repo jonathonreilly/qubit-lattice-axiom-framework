@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_yt_ward_ratio_tadpole_cancellation.py
-runner_sha256: 6a4f423ed33c2db96ecab741c936b4c70c12ba9112558aace81859e8aae42b16
+runner_sha256: beb76688db743629dfc4f64b153c63349d60e0388fb59f5b527d12debe5fb719
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.34
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -11,7 +11,7 @@ Audit companion (exact-symbolic) for
 YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17
 Goal: sympy-symbolic verification of (P1)
   y_t(M_Pl) / g_s(M_Pl) = y_t_bare / g_bare
-under retained CMT D14 + n_link = 1 per single-vertex (D15) inputs
+under equal single-vertex coupling-level tadpole dressing
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
@@ -20,7 +20,7 @@ Part 0: symbolic setup
   symbolic g_bare    (positive real) = g_bare
   symbolic y_t_bare  (positive real) = y_t_bare
   symbolic u_0       (positive real) = u_0
-  cited n_link (single-vertex coupling) = 1
+  conditional common n_link (single-vertex coupling) = 1
   (D1) g_s(M_Pl)  = g_bare   / sqrt(u_0)  = g_bare/sqrt(u_0)
   (D2) y_t(M_Pl)  = y_t_bare / sqrt(u_0)  = y_t_bare/sqrt(u_0)
 
@@ -50,8 +50,8 @@ Part 4: free-symbol bookkeeping after substitution
 ----------------------------------------------------------------------------------------
   [PASS (A)] (P1) LHS - RHS difference has empty free symbols after simplify  (free_symbols = set())
   pre-simplify (unevaluated) ratio = (y_t_bare/sqrt(u_0))/((g_bare/sqrt(u_0)))
-  pre-simplify ratio free_symbols = {g_bare, u_0, y_t_bare}
-  [PASS (A)] pre-simplify (D2)/(D1) contains u_0 syntactically  (u_0 in {g_bare, u_0, y_t_bare})
+  pre-simplify ratio free_symbols = {u_0, g_bare, y_t_bare}
+  [PASS (A)] pre-simplify (D2)/(D1) contains u_0 syntactically  (u_0 in {u_0, g_bare, y_t_bare})
   [PASS (A)] post-simplify ratio drops u_0 from free_symbols  (free_symbols of simplified ratio = {g_bare, y_t_bare})
   [PASS (A)] post-simplify ratio equals y_t_bare / g_bare  (got y_t_bare/g_bare)
 

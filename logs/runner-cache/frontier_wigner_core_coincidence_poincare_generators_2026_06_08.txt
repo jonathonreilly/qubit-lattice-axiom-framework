@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.py
+runner_sha256: 9972fab35d76d93640ecaf176fc783eec0e9b0723f4a8c4258c22a739d8f9bb4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+============================================================================================
+Wigner Stone-generator / differential-generator COINCIDENCE on the common core C_c^inf(H_m^+;C^2)
+============================================================================================
+
+--------------------------------------------------------------------------------------------
+A: mass-shell measure d^3p/2E is boost-invariant
+--------------------------------------------------------------------------------------------
+  [PASS] (A1a) E'(boosted p) = E cosh r + p1 sinh r  (m^2+p1'^2+.. = (E cosh r + p1 sinh r)^2)
+  [PASS] (A1b) Jacobian dp1'/dp1 = E'/E  =>  (dp1'/dp1)*(E/E') = 1  => d^3p/(2E) boost-INVARIANT
+  [PASS] (A1c) numeric: (dp1'/dp1)*(E/E') = 1 on random points
+
+--------------------------------------------------------------------------------------------
+B: COINCIDENCE  d/dt U(t)psi|_0 = -i A_diff psi  (the audit gap)
+--------------------------------------------------------------------------------------------
+  [PASS] (B1) rotation: d/dt U_Rz(t)psi|_0 = -i J_z psi (orbital + spin) => Stone gen of rotations = differential J_z
+  [PASS] (B2) boost orbital: d/dt psi(Lambda_x(-t)p)|_0 = -E d psi/dp1 => K_x^orb = -i E d/dp1 (full-line rapidity momentum)
+  [PASS] (B2b) boost Wigner-cocycle derivative gives the bounded spin multiplication term (S x p)_x/(E+m)  --  max derivative error=2.44e-10; max ||spin multiplier||=0.1852<1/2
+  [PASS] (B3) translation: U(t)=exp(i t a.p) => generator P_i = p_i (real multiplication, self-adjoint)
+
+--------------------------------------------------------------------------------------------
+C: Poincare algebra spot-checks + Casimir
+--------------------------------------------------------------------------------------------
+  [PASS] (C1) [J_z, P_x] = i P_y  ([Lz, p1] = i p2)
+  [PASS] (C2) [J_z, P_y] = -i P_x
+  [PASS] (C3) [K_x^orb, H] = -i P_x  ([-iE d/dp1, E] = -i E (dE/dp1) = -i p1)
+  [PASS] (C4) Casimir P^2 = H^2 - |p|^2 = m^2 (mass shell)
+
+--------------------------------------------------------------------------------------------
+D: C_c^inf invariance under boosts (compact support -> compact)
+--------------------------------------------------------------------------------------------
+  [PASS] (D1) boost image of a compact momentum ball is bounded (compact) => C_c^inf boost-invariant  --  max|p1'|=9.89 (finite)
+
+--------------------------------------------------------------------------------------------
+E: K_orb = -i E d/dp1 symmetric wrt d^3p/2E; spin term bounded (Kato-Rellich)
+--------------------------------------------------------------------------------------------
+  [PASS] (E1) E-weight in K_orb cancels the 1/(2E) measure -> K_orb ~ -i d/dp on flat (1/2)dp_parallel (full-line, symmetric)  --  = the rapidity reduction K_orb=-i d/dzeta
+  [PASS] (E1b) deficiency indices of -i d/dzeta on L^2(R) are (0,0): phi=exp(+-zeta) NOT in L^2 (norm^2 diverges) => K_orb ESSENTIALLY SELF-ADJOINT  --  ||exp(zeta)||^2_[-L,L] = ['1.1e+04', '2.4e+08', '5.4e+12'] -> infinity (von Neumann/Cayley: e.s.a.)
+  [PASS] (E2) Wigner spin term operator-norm = ||S||*|p|/(E+m) <= 1/2 (BOUNDED) => K = K_orb + bounded, e.s.a. on the SAME core (Kato-Rellich, rel. bound 0)  --  max ||spin term|| = 0.3739 <= 1/2
+  [PASS] (E3) half-line control (from the parent #3015 repair): same operator on a half-line LEAKS norm at the boundary  --  self-adjointness is a full-line/global-mass-shell fact, discriminating; not an algebraic coincidence
+
+--------------------------------------------------------------------------------------------
+F: Reed-Simon VIII.11 core lemma => common core => Stone gen = differential gen (all ten)
+--------------------------------------------------------------------------------------------
+  [PASS] (F1) C_c^inf(H_m^+;C^2) DENSE in L^2(H_m^+, d^3p/2E; C^2)
+  [PASS] (F2) C_c^inf U(g)-INVARIANT for all g (translations: phase; rotations: preserve support; boosts: D1 + smooth cocycle)
+  [PASS] (F3) C_c^inf subset D(A_Stone) with A_Stone|C_c^inf = A_diff  (B1-B3: strong derivative = differential generator)
+  [PASS] (F4) Reed-Simon Vol I Thm VIII.11: dense + U(t)-invariant + subset D(A) => CORE for the Stone generator A  --  premises F1+F2+F3 => C_c^inf is a common core for all ten generators
+  [PASS] (F5) => Stone generators COINCIDE with differential generators (agree on a core => identical self-adjoint closures): GAP CLOSED  --  H,P real mult; J orbital+spin; K full-line momentum + bounded spin (Kato-Rellich); algebra closes on C_c^inf; Casimir P^2=m^2
+
+============================================================================================
+TOTAL: 21 PASS / 0 FAIL
+============================================================================================
+
+----- stderr -----
+

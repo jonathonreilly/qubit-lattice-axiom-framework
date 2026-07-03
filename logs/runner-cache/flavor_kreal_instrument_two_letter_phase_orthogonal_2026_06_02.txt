@@ -1,14 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/flavor_kreal_instrument_two_letter_phase_orthogonal_2026_06_02.py
+runner_sha256: 108c8ee1324d5237d33e4b6ad81bf5002a360037ff2974410f51b448ce0d6e7c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
 [PASS] S=C+C^2 is K-even Hermitian with spectrum {2,-1,-1}
        spec(S)=[-1. -1.  2.]
 [PASS] J=i(C-C^2) is K-odd Hermitian with spectrum {-sqrt3,0,sqrt3}
        spec(J)=[-1.732051  0.        1.732051]
 [PASS] conjugation sends J to -J
 [PASS] K-even S and K-odd J commute
+[PASS] K-odd phase channel is orthogonal to the K-even record channel
+       Tr(IJ)=0+0j; Tr(SJ)=0+0j
 [PASS] H equals the Re(b)S + Im(b)J decomposition
+[PASS] K-even projection removes the Im(b)J phase channel
 [PASS] two-letter record removes exactly the doublet multiplicity entropy
        gap=0.462098
 [PASS] dimension count gives r=1 while block count gives r=1/2
+[PASS] note keeps Record downstream of a supplied readout context
+[PASS] note does not force r=1/2 or a two-letter measure selector
 
-SCORECARD PASS=7 FAIL=0
+SCORECARD PASS=11 FAIL=0
 FINDING: under a K-real instrument, the record alphabet is the K-even two-sector split while the Brannen phase lies in the K-odd channel.
 The remaining value question is the measure on that two-sector record.
+
+----- stderr -----
+

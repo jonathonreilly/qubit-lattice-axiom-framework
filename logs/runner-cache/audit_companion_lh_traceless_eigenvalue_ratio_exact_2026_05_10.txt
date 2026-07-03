@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_lh_traceless_eigenvalue_ratio_exact_2026_05_10.py
-runner_sha256: b3c463077a6e5d635741b253ec4d8999d72a45aad996de32c8c609132f0fe76f
+runner_sha256: e42092156023d4baadd83b1eb05f13511b8cfc5c59b1654fcbd08b5187cd3a85
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.67
+elapsed_sec: 0.47
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -24,6 +24,17 @@ Part 1: (R1) parametric eigenvalue ratio a : b = 1 : (-n_color)
 ----------------------------------------------------------------------------------------
   [PASS (A)] (R1) parametric: b = -n_color * a forced by (L1)  (b_solved = -a*n_color)
   [PASS (A)] (R1) parametric: a / b = -1 / n_color (equivalent ratio form)  (a/b + 1/n_color simplifies to 0)
+
+----------------------------------------------------------------------------------------
+Part 1b: zero-solution guard for the (R1) ratio claim
+----------------------------------------------------------------------------------------
+  [PASS (A)] (R1) guard (i): degenerate pair (a, b) = (0, 0) satisfies (L1)  ((L1) at (0,0) = 0)
+  [PASS (A)] (R1) guard (ii): (0,0) is the unique (L2)-excluded solution of (L1)  (branch b = -a_param*n_color; zero only at a = 0)
+  [PASS (A)] (R1) guard (iii): on nonzero branch, ratio a:b = 1:(-n_color) with b != 0  (a/b + 1/n_color = 0; denom = -a_param*n_color)
+  [PASS (A)] (R1) guard at n_color = 1: nonzero branch excludes (0,0), ratio a:b = 1:(-1) holds  ((a, b) = (1, -1), a/b = -1)
+  [PASS (A)] (R1) guard at n_color = 2: nonzero branch excludes (0,0), ratio a:b = 1:(-2) holds  ((a, b) = (1, -2), a/b = -1/2)
+  [PASS (A)] (R1) guard at n_color = 3: nonzero branch excludes (0,0), ratio a:b = 1:(-3) holds  ((a, b) = (1, -3), a/b = -1/3)
+  [PASS (A)] (R1) guard at n_color = 5: nonzero branch excludes (0,0), ratio a:b = 1:(-5) holds  ((a, b) = (1, -5), a/b = -1/5)
 
 ----------------------------------------------------------------------------------------
 Part 2: (R2) convention b = -1 fixes a = 1/n_color
@@ -87,6 +98,8 @@ Summary
 ----------------------------------------------------------------------------------------
   Verified at exact sympy precision:
     (R1) parametric eigenvalue ratio a:b = 1:(-n_color)
+    (R1) zero-solution guard: (0,0) satisfies (L1), excluded by (L2),
+         ratio holds on nonzero branch with nonzero denominator
     (R2) under b = -1 convention, a = 1/n_color
     (R3) Q(u_L), Q(d_L) closed forms parametric in n_color
     (R4) reduced-denominator parity rule, sweep across both parities
@@ -96,7 +109,7 @@ Summary
     Parity rule via sympy gcd identity across both parities
 
 ========================================================================================
-TOTAL: PASS=31, FAIL=0
+TOTAL: PASS=38, FAIL=0
 ========================================================================================
 
 ----- stderr -----

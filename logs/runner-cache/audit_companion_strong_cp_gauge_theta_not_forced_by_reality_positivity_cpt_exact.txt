@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_strong_cp_gauge_theta_not_forced_by_reality_positivity_cpt_exact.py
+runner_sha256: 1d6950565282700369518906d82de95ca154753ff8b9a6a0a6e4c3bd4078d282
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.91
+status: ok
+----- stdout -----
+PASS - (1) reality: Im-part of sector Q cancels its -Q partner for ALL theta (Z(theta) real) -> reality does NOT force theta=0
+PASS - (2) positivity: a POSITIVE Z exists at a representative nonzero theta=0.5 (toy CP-symmetric Gaussian model) -> positivity is compatible with theta!=0 -> does NOT force theta=0
+PASS - (3) physicality (GIVEN an F~F slot): F(theta)=-log Z(theta) depends on theta (F(0.5) != F(0)) in the toy model -> IF the slot is present theta is physical (cf. neutron-EDM ~ theta), not removable
+PASS - (3b) F'(0)=0 (theta=0 is the CP-symmetric point) but it is not SELECTED by reality/positivity — only a CP/T input picks it
+PASS - (4) Q is CPT-EVEN (P-odd x T-odd x C-even = +1; standard parities, bookkept) -> the Record K/CPT-orbit does NOT identify theta with -theta -> CPT does NOT force theta=0
+PASS - (5) MASS side: det of the K/CPT-real (Hermitian) circulant is REAL (Im=0) -> arg det in {0,pi}. The GAUGE theta is a topological coupling with NO determinant, so this K-reality mechanism has nothing to act on (structural) -> gauge theta is not quantized by it
+
+6 PASS, 0 FAIL
+
+GAUGE-THETA OBSTRUCTION (verified). theta_gauge=0 is NOT forced by any clean LOCAL/measure route:
+ - REFLECTION POSITIVITY: documented no-go (#2026-05-16) — RP cannot forbid the CP-odd imaginary F~F.
+ - REALITY of Z: Z(theta) is real for ALL theta (sectors pair Q<->-Q) -> does NOT force theta=0.
+ - POSITIVITY of Z: Z(theta)>0 for nonzero theta -> does NOT force theta=0.
+ - CPT (the Record K/CPT-orbit): Q is CPT-EVEN -> CPT does NOT identify theta with -theta -> does NOT force theta=0.
+ - The MASS-side {0,pi} quantization rides on the K/CPT-REALITY of the mass DETERMINANT; the gauge theta is not a
+   determinant phase, so that mechanism does NOT transfer.
+=> theta_gauge is GENUINELY ADMITTED, gated on the un-derived F~F action-class (single-plaquette excludes it;
+   multi-plaquette open). PARALLEL to Koide BAE: both Tier-A admissions ride on un-derived DYNAMICS (the gauge
+   action for theta; the matter realization for r=1/2) that the kinematic axioms {Lattice,Quantum,Record} do not fix.
+
+
+----- stderr -----
+

@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_cubic_graviton_seagull_vertex.py
+runner_sha256: e22b58266a4d2aa2e830385b627ec7a38c743ec0c725d65d66655bb255567a92
+timeout_sec: 420
+exit_code: 0
+elapsed_sec: 2.03
+status: ok
+----- stdout -----
+PASS T1 conserved-vertex triangle comparator <T T T> VANISHES (max over channels+momenta = 2.2e-18) -- 2-comp Cl(3) feature
+PASS T2 trace-containing full determinant third derivative NONZERO: <yz,yz,trace>=0.3215, <trace^3>=0.4069
+PASS T3 STRUCTURE: pure-TT^3 VANISHES (<yz^3>=-4.2e-11, <(yy-zz)^3>=-8.3e-11) but TT^2-conformal NONZERO (<(yy-zz)^2,trace>=0.1328)
+PASS T4 ROBUST: <yz,yz,trace> eps-independent (rel dev 8.9e-04) and Nyz-independent (rel dev 6.3e-04) -- genuine vertex
+PASS T5 same-coupling dD/d2D/d3D decomposition reconstructs W''' (max |sum-fd| 4.54e-04)
+PASS T5 same-coupling triangle is NONZERO in trace channels; T1 is only a separate comparator
+PASS T5 contact d3D term is load-bearing/dominant in tested trace channels
+
+Same-coupling decomposition rows (d3D, d2D*dD, dD^3 triangle, sum, finite-diff W'''):
+  <yz,yz,trace>: +0.570873  -0.108760  -0.141037  sum=+0.321076  fd=+0.321455
+  <trace,trace,trace>: +0.570873  -0.019474  -0.144916  sum=+0.406483  fd=+0.406937
+  <(yy-zz),(yy-zz),trace>: +0.570873  -0.258760  -0.179548  sum=+0.132565  fd=+0.132758
+
+Finite W-native cubic diagnostic: trace-containing full determinant channels are nonzero
+(<yz,yz,trace> and <trace^3>), and same-coupling decomposition shows the
+d3D/contact term is load-bearing while the same-coupling dD^3 triangle is nonzero.
+The separate conserved-vertex triangle comparator vanishes, but it is not used to
+localize the finite determinant response. This remains bounded: no Einstein-Hilbert
+cubic closure, cubic Ward identity, pure-TT cubic vertex, or magnitude normalization
+is claimed here.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

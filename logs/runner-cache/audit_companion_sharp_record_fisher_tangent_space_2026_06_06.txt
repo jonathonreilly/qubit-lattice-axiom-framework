@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_sharp_record_fisher_tangent_space_2026_06_06.py
+runner_sha256: 4be30cd9f5590eadc7a9d028c5b9da39c27ffd4b47c09e28fe6232e3898ef3e9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
+----- stdout -----
+==============================================================================
+Sharp-record Fisher tangent theorem
+Finite probability geometry only.
+==============================================================================
+
+[Part 1] probability-coordinate RN score
+  [PASS] probability tangent dp sums to zero
+  [PASS] RN score has zero P0-mean  (mean=0)
+  [PASS] Fisher norm is sum dp_i^2/p_i  (norm=a**2/p1 + b**2/p2 - (a + b)**2/(p1 + p2 - 1))
+
+[Part 2] normalized exponential chart
+  [PASS] constructed score O has zero reference mean
+  [PASS] exponential chart normalizes E_0[R_h]=1
+  [PASS] origin score of exponential chart is O
+
+[Part 3] two-outcome sharp signed record
+  [PASS] E_0[epsilon]=0
+  [PASS] E_0[epsilon^2]=1
+  [PASS] primitive signed score corresponds to dp=(1/2,-1/2)
+  [PASS] lambda epsilon has Fisher norm lambda^2  (norm=lambda**2)
+  [PASS] unit scaled signed tangent selects lambda=1
+
+==============================================================================
+SUMMARY
+==============================================================================
+  PASS probability tangent dp sums to zero
+  PASS RN score has zero P0-mean (mean=0)
+  PASS Fisher norm is sum dp_i^2/p_i (norm=a**2/p1 + b**2/p2 - (a + b)**2/(p1 + p2 - 1))
+  PASS constructed score O has zero reference mean
+  PASS exponential chart normalizes E_0[R_h]=1
+  PASS origin score of exponential chart is O
+  PASS E_0[epsilon]=0
+  PASS E_0[epsilon^2]=1
+  PASS primitive signed score corresponds to dp=(1/2,-1/2)
+  PASS lambda epsilon has Fisher norm lambda^2 (norm=lambda**2)
+  PASS unit scaled signed tangent selects lambda=1
+
+TOTAL: 11 PASS / 0 FAIL
+
+----- stderr -----
+

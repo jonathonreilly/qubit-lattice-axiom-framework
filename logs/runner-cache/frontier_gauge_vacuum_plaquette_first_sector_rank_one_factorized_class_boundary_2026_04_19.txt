@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_2026_04_19.py
+runner_sha256: 6c71fb8134aceae89006bbb59dacb6a55469fc0b58d9fc4667f49865fad9cd2b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 9.94
+status: ok
+----- stdout -----
+================================================================================================================
+GAUGE-VACUUM PLAQUETTE FIRST-SECTOR RANK-ONE FACTORIZED-CLASS BOUNDARY
+================================================================================================================
+
+Question:
+  Does the exact positive rank-one realization of Z_min also come from the
+  diagonal Wilson factorized-class subfamily T = exp(3J) D exp(3J)?
+
+  recurrence weights                         = [(0, 0), (0, 1), (1, 0), (1, 1)]
+  v_min                                      = [0.349606952458, 0.093393849311, 0.093393849311, 0.0]
+  Z_min                                      = [0.135165279562, 0.374012880009, 0.543843858544]
+  E_3 v_min                                  = [0.135165279562, 0.374012880009, 0.543843858544]
+  det(exp(3J))                               = 1.000000000000e+00
+  diag(D_back)                               = [0.623898384821, 0.024539009353, 0.024539009353, 0.000167528352]
+  ||offdiag(D_back)||_F / ||.||_2            = 0.250338180104 / 0.188121379170
+  D_back symmetry / conjugation gaps         = 1.459e-16 / 4.642e-16
+  best positive diagonal params              = [0.255192350403, 0.0, 0.0]
+  best diagonal vector                       = [0.265410545687, 0.152742732455, 0.152742732455, 0.064933744655]
+  best diagonal samples                      = [-0.08530213306, 0.421296973979, 0.507033541987]
+  best vector/sample residuals               = 0.135462193873 / 0.228465894557
+
+  [PASS] The completed four-weight vector evaluates to the current completed sample triple Z_min
+         ||E_3 v_min - Z_min||=1.665e-16
+  [PASS] The explicit positive rank-one transfer T_min propagates e_0 to v_min at depth three
+         ||T_min^3 e_0-v_min||=1.127e-16
+  [PASS] The Wilson half-slice multiplier is invertible, so D_back = M^-1 T_min M^-1 is the unique pullback
+         (detM,recon_gap)=(1.000e+00,2.947e-16)
+  [PASS] The unique pullback is self-adjoint and conjugation-symmetric but not diagonal
+         offdiag_frob=0.250338180104
+  [PASS] The positive conjugation-symmetric diagonal-family search reproduces the archived boundary residual for v_min
+         best=(2.551923504031e-01,4.248354255292e-18,4.248354255292e-18), gap=0.135462193873
+  [PASS] The same best diagonal family point still misses the three-sample target, so the boundary is executable
+         sample_gap=0.228465894557
+
+================================================================================================================
+RESULT
+================================================================================================================
+  Executable boundary restored:
+    - T_min is an exact positive rank-one transfer realization of Z_min
+    - the unique Wilson half-slice pullback of T_min is not diagonal
+    - therefore that rank-one realization is not in the diagonal
+      factorized-class subfamily T = exp(3J) D exp(3J)
+    - the historical positive diagonal search residual is reproduced
+    - this runner restores the missing executable artifact for re-audit
+
+PASS=6 FAIL=0
+
+----- stderr -----
+

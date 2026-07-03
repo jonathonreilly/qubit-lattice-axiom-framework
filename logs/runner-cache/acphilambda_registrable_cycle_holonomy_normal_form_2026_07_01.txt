@@ -1,0 +1,118 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_registrable_cycle_holonomy_normal_form_2026_07_01.py
+runner_sha256: fd002dcb35ea35f2c6058c358e9aca57aa85b717ea443a6374fd3669c87e7324
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.94
+status: ok
+----- stdout -----
+=== PART A: sources and boundary text ===
+SUMMARY: PASS - source exists: docs/ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md
+SUMMARY: PASS - source exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+SUMMARY: PASS - source exists: docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
+SUMMARY: PASS - source exists: docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md
+SUMMARY: PASS - source exists: docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+SUMMARY: PASS - source exists: docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md
+SUMMARY: PASS - radian boundary contains Type-B-to-radian
+SUMMARY: PASS - radian boundary contains remaining primitive
+SUMMARY: PASS - Brannen note contains H = a I + b C fragment
+SUMMARY: PASS - Brannen note contains circulant form
+SUMMARY: PASS - Brannen note contains (a, |b|, delta)
+SUMMARY: PASS - fixed-locus note excludes physical single-summand readout
+SUMMARY: PASS - Q=2/3 note exists as dependency surface
+=== PART B: T-A1 exact spectral algebra ===
+SUMMARY: PASS - sum c_k == 0
+SUMMARY: PASS - sum c_k^2 == 3/2
+SUMMARY: PASS - sum c_k^3 == (3/4) cos(3 delta)
+SUMMARY: PASS - reject wrong sum c_k^2 = 4/3
+SUMMARY: PASS - reject wrong cubic coefficient 1/2
+SUMMARY: PASS - explicit 3x3 Matrix.eigenvals returns three simple eigenvalues
+SUMMARY: PASS - eigenvalue multiset exact at a=0, |b|=1, delta=2/9
+SUMMARY: PASS - eigenvalue multiset exact at a=0, |b|=1, delta=1/7
+SUMMARY: PASS - eigenvalue multiset exact at a=0, |b|=2/5, delta=2/9
+SUMMARY: PASS - eigenvalue multiset exact at a=0, |b|=2/5, delta=1/7
+SUMMARY: PASS - eigenvalue multiset exact at a=1/2, |b|=1, delta=2/9
+SUMMARY: PASS - eigenvalue multiset exact at a=1/2, |b|=1, delta=1/7
+SUMMARY: PASS - eigenvalue multiset exact at a=1/2, |b|=2/5, delta=2/9
+SUMMARY: PASS - eigenvalue multiset exact at a=1/2, |b|=2/5, delta=1/7
+SUMMARY: PASS - delta -> delta + 2pi/3 relabels the multiset
+SUMMARY: PASS - delta -> -delta relabels k -> -k
+SUMMARY: PASS - reject generic shift delta -> delta + 1/10
+SUMMARY: PASS - generic-shift rejector has definite sign
+SUMMARY: PASS - injectivity sample cos(3*2/9) != cos(3*1/9)
+SUMMARY: PASS - injectivity sample cos(3*2/9) != cos(3*3/10)
+SUMMARY: PASS - injectivity sample cos(3*1/9) != cos(3*3/10)
+SUMMARY: PASS - strict monotonic derivative sample at delta=2/9
+SUMMARY: PASS - strict monotonic derivative sample at delta=1/9
+SUMMARY: PASS - strict monotonic derivative sample at delta=3/10
+=== PART C: T-A2 holonomy and gauge representative ===
+SUMMARY: PASS - det(b C) == b^3
+SUMMARY: PASS - (|b| exp(i delta))^3 == |b|^3 exp(i 3 delta)
+SUMMARY: PASS - constructive phi2 recurrence
+SUMMARY: PASS - constructive phi3 recurrence
+SUMMARY: PASS - cycle recurrence closes
+SUMMARY: PASS - equal-modulus lemma symbolic matrix identity
+SUMMARY: PASS - orientation convention: edge representative equals H(0,1,-Phi/3) in T-A1 C convention
+SUMMARY: PASS - reject perturbed theta1 in equal-modulus gauge
+SUMMARY: PASS - pointer caveat: generic diagonal conjugation does not fix S
+SUMMARY: PASS - [H(a,|b|,delta), S] == 0 on retained frame
+=== PART D: T-B identity-unit transport ===
+SUMMARY: PASS - core identity (omega-1)(omega^2-1) == 3
+SUMMARY: PASS - S_sum == 2/3 exactly
+SUMMARY: PASS - L3(1,2) = S_sum/3 == 2/9
+SUMMARY: PASS - reject S_sum as density 2/9
+SUMMARY: PASS - Phi(1) == 2/3
+SUMMARY: PASS - wrong-member rejector Phi(1/2) != 2/3
+SUMMARY: PASS - PR #4783 count member maps Phi(9/2) == 3, not 2/3
+SUMMARY: PASS - c=1 iff Phi(c)=2/3 in Fraction arithmetic
+SUMMARY: PASS - rescale obstruction applies verbatim on holonomy coordinates lam=1/2, c=1
+SUMMARY: PASS - rescale obstruction applies verbatim on holonomy coordinates lam=1/2, c=1/2
+SUMMARY: PASS - rescale obstruction applies verbatim on holonomy coordinates lam=2, c=1
+SUMMARY: PASS - rescale obstruction applies verbatim on holonomy coordinates lam=2, c=1/2
+SUMMARY: PASS - rescale obstruction applies verbatim on holonomy coordinates lam=7/5, c=1
+SUMMARY: PASS - rescale obstruction applies verbatim on holonomy coordinates lam=7/5, c=1/2
+SUMMARY: PASS - 3*(2/9) == 2/3
+SUMMARY: PASS - fundamental domain lower bound 0 <= 2/3
+SUMMARY: PASS - fundamental domain upper bound 2/3 < pi
+=== PART E: note discipline ===
+SUMMARY: PASS - note contains required phrase: the registrable phase content of the Brannen dial is exactly `cos(3 delta)`
+SUMMARY: PASS - note contains required phrase: W_cycle_holonomy_value
+SUMMARY: PASS - note contains required phrase: Phi = 3 delta
+SUMMARY: PASS - note contains required phrase: Phi = 2/3
+SUMMARY: PASS - note contains required phrase: unaveraged C3 fixed-point sum
+SUMMARY: PASS - note contains required phrase: This re-coordination does not derive `Phi = 2/3`
+SUMMARY: PASS - note contains required phrase: observation, not a derivation
+SUMMARY: PASS - note contains N1 header
+SUMMARY: PASS - note contains N2 header
+SUMMARY: PASS - note contains N3 header
+SUMMARY: PASS - note contains N4 header
+SUMMARY: PASS - note contains N5 header
+SUMMARY: PASS - note contains N6 header
+SUMMARY: PASS - note contains N7 header
+SUMMARY: PASS - note contains N8 header
+SUMMARY: PASS - forbidden phrase absent: only route
+SUMMARY: PASS - forbidden phrase absent: last route
+SUMMARY: PASS - forbidden phrase absent: exhausted
+SUMMARY: PASS - forbidden phrase absent: closes the route
+SUMMARY: PASS - forbidden phrase absent: AC_phi_lambda is solved
+SUMMARY: PASS - forbidden phrase absent: AC_phi_lambda is closed
+SUMMARY: PASS - forbidden phrase absent: PDG
+SUMMARY: PASS - note declares canonical bounded_theorem claim type
+SUMMARY: PASS - note does not use runner PASS as source status
+SUMMARY: PASS - note does not lean on PR #4783 as authority
+SUMMARY: PASS - note says not a terminal no-go
+SUMMARY: PASS - status-authority header present
+SUMMARY: PASS - primary runner link present
+SUMMARY: PASS - dependency markdown link present: BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
+SUMMARY: PASS - dependency markdown link present: KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md
+SUMMARY: PASS - dependency markdown link present: KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+SUMMARY: PASS - dependency markdown link present: KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md
+SUMMARY: PASS - PR #4783 note basename is not a markdown link target
+SUMMARY: PASS - PR #4783 note basename appears backticked
+SUMMARY: PASS - verification block names expected TOTAL line
+SUMMARY: PASS - claim block flattened still carries Phi(c)=c*S_sum
+RESULT: PASS - all exact symbolic and note-discipline gates passed
+TOTAL: PASS=100 FAIL=0
+
+----- stderr -----
+

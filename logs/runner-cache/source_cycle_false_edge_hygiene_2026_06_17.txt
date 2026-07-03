@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/source_cycle_false_edge_hygiene_2026_06_17.py
+runner_sha256: 14f721e8571694f4368bb042135643c2125e0219ad87060cca697d69bcc50488
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Source cycle false-edge hygiene check
+========================================================================
+PASS: s3_bilinear_to_spacetime_peer -- docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md -> S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md
+PASS: s3_spacetime_to_theta_peer -- docs/S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md -> S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md
+PASS: quark_boundary_to_ckm_five_sixths_peer -- docs/QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md -> CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md
+PASS: quark_boundary_to_taste_staircase_downstream -- docs/QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md -> QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md
+PASS: ckm_five_sixths_to_ckm_mass_hierarchy_peer -- docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md -> CKM_FROM_MASS_HIERARCHY_NOTE.md
+PASS: ckm_five_sixths_to_down_type_downstream -- docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md -> DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md
+PASS: s3 bilinear says non-authority peer pointer -- needle='non-authority peer pointer'
+PASS: s3 spacetime says not one-hop authority -- needle='not a one-hop authority'
+PASS: quark boundary states load-bearing inputs -- needle='The load-bearing inputs for this boundary are the'
+PASS: ckm five-sixths marks peer/downstream orientation -- needle='non-authority peer or'
+PASS: down-type marks follow-up not dependency -- needle='is not a one-hop dependency of this earlier'
+========================================================================
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

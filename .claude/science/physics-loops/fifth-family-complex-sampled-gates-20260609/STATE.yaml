@@ -1,0 +1,23 @@
+loop_slug: fifth-family-complex-sampled-gates-20260609
+mode: campaign_block
+branch: physics-loop/fifth-family-complex-sampled-gates-20260609
+base: origin/main
+base_commit: 8d416df97
+date: 2026-06-09
+target_claim_id: fifth_family_complex_boundary_note
+target_status: bounded-support
+artifact_role: science_correction
+active_route: compute Born/F~M/crossover gates on every sampled fifth-family complex row
+hard_residual: no family-wide complex companion claim; only the sampled drift-0.20 pair is supported
+files_touched:
+  - docs/FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md
+  - scripts/FIFTH_FAMILY_COMPLEX_TARGETED.py
+  - logs/runner-cache/FIFTH_FAMILY_COMPLEX_TARGETED.txt
+open_imports: []
+no_go_routes:
+  - seed-singleton companion claim is falsified by the repaired sampled computation
+checks:
+  - python3 scripts/FIFTH_FAMILY_COMPLEX_TARGETED.py: ASSERTIONS PASS
+  - python3 scripts/cached_runner_output.py scripts/FIFTH_FAMILY_COMPLEX_TARGETED.py: status ok
+pr_status: pending
+next_exact_action: create PR for reviewer extraction and independent audit recheck; do not edit docs/audit

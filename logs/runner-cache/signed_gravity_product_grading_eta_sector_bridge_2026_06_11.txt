@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py
+runner_sha256: 318b27626a9570b0ea9780a9f7843c8006ac22b305d2c74a668ec7648ff118bf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+============================================================================
+PRODUCT-GRADING ETA SECTOR SELECTION BRIDGE (signed-gravity, eta-half)
+the [+1, -1] source labels derived from the retained Cl(3,1) grading
+plus ONE twist datum -- no sign axiom
+============================================================================
+
+----------------------------------------------------------------------------
+[R] real Majorana Cl(3,1) representation (retained extension)
+----------------------------------------------------------------------------
+  [PASS] [R] generator squares: e_i^2 = +I (i<=3), e_4^2 = -I
+  [PASS] [R] all generator pairs anticommute
+  [PASS] [R] representation is real (Majorana cell of the retained Cl(3)->Cl(3,1) extension)
+  [PASS] [R] gamma_5^2 = -I (real Cl(3,1) volume element)
+  [PASS] [R] gamma_5 skew (orthogonal with square -I)
+  [PASS] [R] eps = i gamma_5: Hermitian involution with tr(eps) = 0
+
+----------------------------------------------------------------------------
+[T1] sector swap carries orientation reversal (retained algebra)
+----------------------------------------------------------------------------
+  [PASS] [T1] e_4 eps e_4^{-1} = -eps (the eps-sectors are exchanged by the retained odd generator)
+  [PASS] [T1] e_4 (e1 e2 e3) e_4^{-1} = -(e1 e2 e3) (the exchange reverses the boundary volume element)
+
+----------------------------------------------------------------------------
+[T2] sector selection derives the opposite label pair
+----------------------------------------------------------------------------
+  [PASS] [T2] boundary block commutes with the grading (sector selection, not mirror)
+  [PASS] [T2] eps = +1 sector carries +A(a): eta = +2, h = 0  (eta_+ = +2)
+  [PASS] [T2] eps = -1 sector carries -A(a): eta = -2, h = 0  (eta_- = -2)
+  [PASS] [T2] derived label pair (chi_+, chi_-) = (+1, -1) from ONE twist datum
+  [PASS] [T2] orientation image: eta(-U A U^dag) = -eta(A) exactly  (+1 -> -1)
+
+----------------------------------------------------------------------------
+[T3] half-integer-cutoff labels + the proposal's branch conditions
+----------------------------------------------------------------------------
+  [PASS] [T3] label table over a in {0, +/-0.1, +/-0.3, 0.49, 0.5, 0.7, 0.9} at Lambda = 20.5 matches exactly (chi quantized; branch conditions fail exactly at a = 0 and a = 1/2)
+  [PASS] [T3] a = 0 (untwisted): h_delta = 1, label undefined (gap branch condition fails)
+  [PASS] [T3] a = 1/2: spectrum reflection-symmetric, eta_delta = 0, label undefined
+  [PASS] [T3] closed floor/fractional formula for eta matches direct spectral counts on tested cutoffs
+  [PASS] [T3] uniform half-integer cutoff family Lambda in Z>=0+1/2 gives chi=+1 on (0,1/2) and chi=-1 on (-1/2,0) for sampled twists
+  [PASS] [T3] non-half-integer cutoffs Lambda=20.25 and 20.75 are excluded by explicit counterexamples at |a|=0.30
+
+----------------------------------------------------------------------------
+[T4] coexistence with the Koide-side anticommutation (escape hatch II realized)
+----------------------------------------------------------------------------
+  [PASS] [T4] [N, eps] = 0 (even element commutes with the volume grading)
+  [PASS] [T4] {e_4, eps} = 0 and {e_1, eps} = 0 (odd elements anticommute with eps)
+  [PASS] [T4] [D_gen, C_3] = 0 (C_3-equivariance of the generation block)
+  [PASS] [T4] {D_gen, G} = 0 (L4-form anticommuting pair on the generation factor)
+  [PASS] [T4] D_tot Hermitian (sym (x) sym + Hermitian, parts commute)
+  [PASS] [T4] {D_gen-part, Gamma_prod} = 0 (Koide-side anticommutation survives on the product)
+  [PASS] [T4] [D_bdy-part, Gamma_prod] = 0 (sector selection on the boundary factor)
+  [PASS] [T4] the two parts of D_tot commute ([N, eps] = 0 transfers)
+  [PASS] [T4] Gamma_prod is an involution
+
+----------------------------------------------------------------------------
+[F] falsifiers
+----------------------------------------------------------------------------
+  [PASS] [F] (F1) full-anticommuting grading forces eta = 0 (mirror spectrum) -- the grading MUST commute with the boundary block; sector selection is the only route to nonzero eta  (eta(mirror) = +0)
+  [PASS] [F] (F2) INDEX truncation at a = 1/2 fakes eta = +1 where spectral truncation gives 0 -- the truncation convention is load-bearing  (index-cutoff eta = +1, spectral-cutoff eta = +0)
+  [PASS] [F] (F3) a = 0 carries no label (h_delta = 1): consistent with the retained eta_APS = 0 bulk-vanishing row -- a nonzero label REQUIRES the twist datum
+
+============================================================================
+TOTAL: PASS=31 FAIL=0
+============================================================================
+
+----- stderr -----
+

@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/unit_conversion_is_accepted_non_bounding_ruler_runner.py
+runner_sha256: 4229c36491c43a26a8eb8a6ae9294ba930b53fea3e783e879af508be5713d3fa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+==============================================================================
+A1. dimensionLESS quantities need NO ruler (invariant under a -> lambda*a)
+==============================================================================
+   ratios / angles / counts are unchanged when the ruler is rescaled => they carry no unit
+  [PASS] dimensionless framework data (ratios, angles, counts) is ruler-invariant => needs no scale  | mixing angles, mass RATIOS, the one-tick-one-edge count: all need no ruler
+
+==============================================================================
+A2. dimensionFUL = (dimensionless) x (the ONE ruler) -- Buckingham-Pi
+==============================================================================
+   a_tau   = (1/v_front) x a_s          = 1.616e-35      (the one ruler is the only dimensionful input)
+   m_phys  = (m/M_Pl) x M_Pl            = 5.100e-04 GeV  (dimensionless ratio x the ruler)
+  [PASS] every dimensionful output = (dimensionless data) x (the single ruler a^-1=M_Pl)  | so the ONLY dimensionful input any prediction needs is the one accepted ruler
+
+==============================================================================
+A3. the ruler is an APPROVED, NON-BOUNDING primitive (policy section 6) -- not a Tier-A admitted premise
+==============================================================================
+   scale_reference_primitive (axiom_premise_nodes.json, owner-approved): chain-satisfies WITHOUT bounding
+   Tier-A admitted import (tier_a_admissions.json): chain-satisfies only at retained_bounded
+  [PASS] a row whose only non-retained dependency is the ruler is retention-eligible at the FULL tier  | relying on the ruler neither blocks nor caps the result
+
+==============================================================================
+A4. reconciliation: 'scale = clock-rate no-go' is about the RECORDS; the ruler resolves it
+==============================================================================
+   the session arc (EMERGENT_METRIC / gravity-lensing / gravity-sign / min-time-step) calls the
+   absolute scale 'the clock-rate no-go': that no-go is about the RECORDS (count, not rate).
+   the accepted ruler supplies the unit => those dimensionful results are SCALE-RESOLVED, not blocked
+   (retention-eligible modulo their DIMENSIONLESS inputs).
+   distinct objects (NOT this ruler): Y_T source-measure / g_bare action-unit = a dimensionless
+   path-integral normalization (separate Tier-A); atomic Rydberg eV scale = ruler x (m_e, alpha)
+   dimensionless ratios -- the residual there is dimensionless, not the ruler.
+  [PASS] dimensionful results are scale-resolved by the accepted non-bounding ruler; the real gaps are dimensionless  | someone must convert lattice->physical units; that converter is the accepted ruler
+
+runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

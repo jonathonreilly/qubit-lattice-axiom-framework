@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/gauging_selection_discriminator_open_gate_2026_06_08.py
+runner_sha256: 3ef6d1c28b740b1c3ad2c8a0a0dbdd9818b21497ec2c1ca99c896cf1de133b4f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+GAUGING-SELECTION OPEN GATE: four tested discriminators are blind
+====================================================================================
+[PASS] open-gate check 1 (maximality blind): SM su(3)+su(2)+u(1) (dim 12) and full u(6) (dim 36) BOTH act irreducibly on C^6 -> commutant = scalars (dim 1) for BOTH; the record/indistinguishability criterion cannot tell them apart, so it cannot select dim-12 (only the C^3(x)C^2 split = MR_color cuts u(6) to 12)
+       commutant(SM dim12)=1; commutant(u(6) dim36)=1 (identical)
+[PASS] open-gate check 2 (anomaly one-sided filter): symmetric cubic d_abc=2Tr(T_a{T_b,T_c}) is IDENTICALLY 0 for su(2) (anomaly-free for any content) and NONZERO for su(3) (max|d|=1/sqrt3); anomaly-freedom is a FILTER on a given content, never a SELECTOR of which group is gauged
+       max|d_abc| su(2)=0.00e+00 (=0); su(3)=0.577350 (=1/sqrt3=0.577350)
+[PASS] open-gate check 3 (chirality epsilon blind): [Gamma_eps, T^a]=0 (different factors), {Gamma_eps,D}=0, and {Gamma_eps, D.T^a} = {Gamma_eps, D.T^a.P_L} = {Gamma_eps, D.T^a.P_R} = 0 -> epsilon carries ZERO discrimination between vector / chiral-L / chiral-R coupling; chiral su(2)_L is a separate input
+       max|[eps,T^a]|=0.0e+00, |{eps,D}|=0.0e+00, all dressings anticommute (blind)
+[PASS] open-gate check 4 (color complex vs spatial real): reality test 'exists B: B T_a + T_a^T B = 0' -> su(3) fundamental NULLSPACE 0 (strictly complex, 3 != 3bar); su(2) doublet >=1 (pseudoreal); so(3) vector >=1 (real, B=I). Color su(3) is NOT the complexification of the spatial so(3) 3-frame.
+       invariant-bilinear nullspace: su(3)=0 (complex), su(2)=1 (pseudoreal), so(3)_vec=1 (real)
+
+SCORECARD PASS=4 FAIL=0
+runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
+VERDICT (open gate; the FOUR tested discriminators do not close it): each of the four discriminators
+checked here is BLIND to, or CIRCULAR with, the gauging selection -- maximality cannot distinguish
+dim-12 from u(6); anomaly is a one-sided filter; epsilon is blind to the coupling chirality; color is
+complex while spatial rotation is real. So the gauging selection (which symmetry is gauged + the
+physical-color identification MR_color + chiral su(2)_L) is NOT closed by these four -- it is an OPEN
+GATE, not a proven irreducible no-go (closing it as a no-go would need the full N1-N8 route
+enumeration with retained-authority failures, beyond these four checks). The factor-preserving algebra it
+sits on is itself conditional on the SUPPLIED carrier and factor-locality/MR_color premise. Audit lane
+sets the status.
+
+----- stderr -----
+

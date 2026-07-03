@@ -9,7 +9,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-NOTE = ROOT / "docs" / "BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md"
+D7_NOTE = ROOT / "docs" / "BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md"
+CONNECTED_NOTE = ROOT / "docs" / "BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md"
 OUT = ROOT / "outputs" / "frontier_beta6_d7_source_packet_manifest_2026_06_05.json"
 
 PATHS = {
@@ -46,7 +47,8 @@ def cache_header(text: str) -> dict[str, str | None]:
 
 
 def main() -> int:
-    note = NOTE.read_text(encoding="utf-8")
+    d7_note = D7_NOTE.read_text(encoding="utf-8")
+    connected_note = CONNECTED_NOTE.read_text(encoding="utf-8")
     checks: list[dict[str, object]] = []
 
     def check(name: str, ok: bool, detail: str = "") -> None:
@@ -58,7 +60,34 @@ def main() -> int:
         if label not in self_outputs:
             exists = path.exists()
             check(f"path_exists:{label}", exists, rel(path))
-        check(f"note_links:{label}", rel(path) in note, rel(path))
+        check(f"d7_note_links:{label}", rel(path) in d7_note, rel(path))
+
+    connected_required_links = [
+        "primary_runner",
+        "maxorder7_runner",
+        "maxorder7_cache",
+        "manifest_runner",
+        "manifest_cache",
+        "manifest_json",
+    ]
+    for label in connected_required_links:
+        check(f"connected_note_links:{label}", rel(PATHS[label]) in connected_note, rel(PATHS[label]))
+    check(
+        "connected_note_links:d7_companion_note",
+        rel(D7_NOTE) in connected_note or D7_NOTE.name in connected_note,
+        rel(D7_NOTE),
+    )
+    connected_markers = [
+        "d_7 = 5 / 17006112",
+        "d_7 / d_6 = 5/21",
+        "completed maxorder-7 packet",
+        "full untruncated source runner",
+        "SCORECARD: PASS=22 FAIL=0",
+        "SUMMARY: BETA6 D7 SOURCE PACKET PASS=53 FAIL=0",
+        "beta=6 closure problem remains open",
+    ]
+    for marker in connected_markers:
+        check(f"connected_note_marker:{marker}", marker in connected_note, marker)
 
     primary = PATHS["primary_runner"].read_text(encoding="utf-8")
     primary_markers = [
@@ -94,6 +123,7 @@ def main() -> int:
     max7_cache = PATHS["maxorder7_cache"].read_text(encoding="utf-8")
     for snippet in [
         "delegated_argv: 7",
+        f"primary_runner_sha256: {sha256(PATHS['primary_runner'])}",
         "V5. order-beta^7 coefficient",
         "d_7 exact value = 5/17006112",
         "d_7/d_6 = 5/21",

@@ -1,0 +1,80 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_production_residual_checklist_2026_06_05.py
+runner_sha256: 42d2eede75cbd0255942d9e2ee66e932af217fdf2f34a0e540e8b53a8d901a95
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+==============================================================================
+RECORD PRODUCTION RESIDUAL CHECKLIST
+bounded-support / audit-checklist runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Gate classification examples
+------------------------------------------------------------------------------
+  [PASS] kernel-only supports kernel
+  [PASS] kernel-only does not produce record
+  [PASS] kernel-only does not support history
+  [PASS] kernel-only does not support local observability
+  [PASS] kernel-only does not support clocked rates
+  [PASS] single register produces durable record
+  [PASS] single register supports history append
+  [PASS] single register does not imply local observability
+  [PASS] single register does not imply clocked rates
+  [PASS] global parity produces a determined durable record
+  [PASS] global parity supports history append
+  [PASS] global parity does not satisfy local observability
+  [PASS] broadcast satisfies local observability
+  [PASS] broadcast does not imply clocked rates
+  [PASS] clocked broadcast supports clocked rates
+
+------------------------------------------------------------------------------
+2. Local readability finite-code witness
+------------------------------------------------------------------------------
+  [PASS] broadcast code is locally readable
+  [PASS] parity code is not locally readable
+  [PASS] parity code has both global values
+  [PASS] parity code needs full word to compute value
+  [PASS] single fragment 0 occurs in both parity values
+  [PASS] single fragment 1 occurs in both parity values
+
+------------------------------------------------------------------------------
+3. Audit target dependency matrix
+------------------------------------------------------------------------------
+  [PASS] five audit targets classified
+  [PASS] probability target does not require realized atom
+  [PASS] produced-record target does not require local fragments
+  [PASS] history target requires append_count
+  [PASS] local objective target requires redundancy
+  [PASS] physical rate target requires clock and rate
+  [PASS] clock is not required for post-record history
+  [PASS] redundancy is not required for physical rate target
+  [PASS] no target has empty dependency set
+
+------------------------------------------------------------------------------
+4. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_PRODUCTION_RESIDUAL_CHECKLIST_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: bounded-support
+  [PASS] note contains marker: trace_class: upstream_support
+  [PASS] note contains marker: conditional_surface_status:
+  [PASS] note contains marker: Does not derive an instrument
+  [PASS] note contains marker: Does not identify nonselective density states with realized records.
+  [PASS] note contains marker: Does not select a generation/Koide dial setting.
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: instrument closure
+  [PASS] forbidden wording absent: production closure
+  [PASS] forbidden wording absent: local observability closure
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=44 FAIL=0
+
+----- stderr -----
+

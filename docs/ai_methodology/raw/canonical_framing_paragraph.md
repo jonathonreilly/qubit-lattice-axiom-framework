@@ -10,6 +10,19 @@
 
 This paragraph is the canonical version. Any deviation in a specific submission should be a deliberate scoping decision documented here.
 
+## Source boundary (2026-06-12)
+
+**Boundary:** methodology / canonical-text registration only. Effective status
+is audit-derived; this source records only the claim boundary.
+
+This file adopts and labels the submission disclosure paragraph; it does not
+derive a physics result, instantiate a scientific runner, or close a
+first-principles computation.
+
+This file may be cited for manuscript disclosure language and methodology
+framing. It may not be cited as a retained physics theorem, a runner-backed
+derivation, or an audit result for any scientific row.
+
 ---
 
 ## The Paragraph (verbatim)

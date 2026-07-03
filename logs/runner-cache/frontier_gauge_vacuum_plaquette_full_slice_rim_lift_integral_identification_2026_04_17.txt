@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_full_slice_rim_lift_integral_identification_2026_04_17.py
-runner_sha256: 951d31aaa6f71d63507e6c1fa803af91e11db12b81f72c50afff4f569230e82a
+runner_sha256: a82609feff7acf38408f9c7b65f91385b0e67240fe1e108fe18689eaf17069b5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.27
+elapsed_sec: 2.25
 status: ok
 ----- stdout -----
 ================================================================================================================
@@ -23,12 +23,13 @@ toy verifies the STRUCTURAL Fubini factorisation but B(U) and F(U)
 are U-independent at MC precision in this toy (separate from the
 physical multi-link slice setting).
 
+  [PASS] [SUPPORT] Rim-lift note declares supplied-partition safe narrow and open SU(3) slab partition
 sample        Re Tr U           B(U)           F(U)            B*F         psi(U)    |psi-B*F|/psi
   0         -0.970725   2.401193e+01   4.886941e+00   1.173449e+02   1.176798e+02        2.846e-03
   1         +0.691420   2.388375e+01   4.868277e+00   1.162727e+02   1.170498e+02        6.639e-03
   2         -0.046920   2.376884e+01   4.867750e+00   1.157008e+02   1.148116e+02        7.744e-03
 
-  [PASS] [SUPPORT] Upstream transfer theorem defines eta_beta(W) as the rim-induced boundary state on the edge slice
+  [PASS] [SUPPORT] Upstream transfer packet records eta_beta(W) in the target boundary-state identity
   [PASS] [SUPPORT] Rim-lift note records the load-bearing rim integral identification
   [PASS] [SUPPORT] Rim-lift note records the compressed descendant eta = P_cls B
   [PASS] [SUPPORT] Compressed-rim-uniqueness note records that the full slice lift B_beta(W) is the remaining open object
@@ -39,7 +40,7 @@ sample        Re Tr U           B(U)           F(U)            B*F         psi(U
   [PASS] [THEOREM] Rim integrand uses local Wilson action coupling beta/3 on the rim plaquette holonomies
          rim weight constructed as exp[(beta/3) (Re Tr V_r1 + Re Tr V_r2)] per the note's A^rim
 
-THEOREM PASS=2 SUPPORT=5 FAIL=0
+THEOREM PASS=2 SUPPORT=6 FAIL=0
 
 ----- stderr -----
 

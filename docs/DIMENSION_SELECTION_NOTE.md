@@ -7,6 +7,7 @@ repair.
 **Cached runner output:** `logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt`
 **Source packet verifier:** `scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py`
 **Source packet verifier cache:** `logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt`
+**Source packet verifier output:** `outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json`
 
 ## 2026-05-27 Scope Repair
 
@@ -46,14 +47,23 @@ the full packet explicit:
 - Finite-k bridge source: `scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py`
 - Finite-k bridge cache: `logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt`
 - Finite-k bridge JSON: `outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json`
+- Parent source-packet JSON: `outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json`
 
 The source packet verifier above checks that these paths are linked from this
-note, that the bridge and original runner sources are present and untruncated,
+note, that the bridge and original runner sources are present and complete,
 that the original runner cache contains the displayed `beta`/`I_3` lower-bound
 table and printed `alpha` values, that the bridge cache reports
 `SUMMARY: PASS=56 FAIL=0`, and that all runner caches match the current source
 SHA. This does not set an audit verdict; its generated JSON is a disposable
 runner output.
+
+The primary parent runner now also imports the original dimension runner, the
+finite-k bridge runner, and the source-packet manifest runner directly, then
+prints a companion packet check. This makes the audit helper-graph resolver
+include the packet sources rather than relying on the older dynamic-import path,
+and it pins the original and bridge caches to their current runner SHAs while
+exposing the source-packet manifest source for the independent manifest cache
+check.
 
 ## Answer
 
@@ -152,6 +162,6 @@ python3 scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
 Expected summary:
 
 ```text
-SUMMARY: PASS=26 FAIL=0
+SUMMARY: PASS=27 FAIL=0
 SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=... FAIL=0
 ```

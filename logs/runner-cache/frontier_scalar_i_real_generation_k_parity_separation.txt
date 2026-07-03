@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/frontier_scalar_i_real_generation_k_parity_separation.py
+runner_sha256: 1913c91c832d4ba34169fe6885a113245706bab115fde4a1578acca17bc79ce6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+Scalar-i and real J_cs structure K-parity separation
+========================================================================
+[PASS] Cl(3,0) volume product equals central scalar i I_2
+       ||sigma_x sigma_y sigma_z - i I_2|| = 0.000e+00
+[PASS] tensor placement shares the same central scalar i
+       ||left-right|| = 0.000e+00
+[PASS] scalar-i cluster is K-odd under the supplied entrywise conjugation
+       i I_2:odd, sigma_y:odd, volume:odd, tensor i:odd
+[PASS] Hermitian C_3 circulant phase conjugates by delta -> -delta with spectrum fixed as a multiset
+       K(M_delta)=M_-delta: True; spectra match: True
+[PASS] J_cs is real, K-even, and squares to -(I-P_triv) on the doublet
+       real=True; K-parity=even; square identity=True
+[PASS] labeled generation Vandermonde orientation is K-odd under induced delta -> -delta
+       Delta(+delta)=0.04674385; Delta(-delta)=-0.04674385
+[PASS] sorted-spectrum discriminant is a K-even multiset control, not the labeled orientation
+       sorted_Delta(+delta)=2.27184323; sorted_Delta(-delta)=2.27184323
+[PASS] scalar-i phase data and real J_cs structure lie in different K-parity sectors
+       scalar-i sector K-odd=True; J_cs sector K-even=True; labeled Vandermonde K-odd=True
+[PASS] source note keeps supplied-K and Record-boundary guardrails
+       missing=[]; forbidden_present=[]
+
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

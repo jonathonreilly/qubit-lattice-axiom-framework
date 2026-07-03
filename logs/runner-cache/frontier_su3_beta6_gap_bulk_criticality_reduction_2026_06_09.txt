@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.py
+runner_sha256: d9f3e0224701a59ba70c7b4a706c980e87a6b1b878c6ae23ab24d5254445f3d8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+SU(3) BETA=6 FIXED-LATTICE GAP REDUCTION DIAGNOSTIC
+========================================================================
+[PASS] SU(3) Weyl class quadrature normalizes the one-plaquette integral
+       normalized integral = 1.0000000000000000
+[PASS] small-beta character convention matches u(beta)/beta -> 1/18
+       u(0.05)/0.05 = 0.05579; 1/18 = 0.05556
+[PASS] leading strong-coupling coefficient is positive in the checked window
+       beta=0.5: u=0.02893, sigma_lead=3.5428; beta=1.0: u=0.06013, sigma_lead=2.8113; beta=1.5: u=0.09344, sigma_lead=2.3704; beta=2.0: u=0.12863, sigma_lead=2.0508
+[PASS] leading coefficient weakens monotonically toward weaker coupling
+       u(beta): 0.0289, 0.1286, 0.2796, 0.4225, 0.5804
+[PASS] finite positive-kernel illustration has a positive Perron-Frobenius gap
+       min illustrated gap = 0.4219
+[PASS] finite positive-kernel illustration varies continuously on the beta grid
+       max grid jump = 0.0223; max gap = 1.4930
+[PASS] weak-side non-perturbative scale is invisible to checked perturbative orders
+       checked n=1..7 near g^2=0; two-loop scale at g^2=1 is 2.35e-03
+[PASS] leading strong-coupling extrapolation misses the beta=6 comparator window
+       sigma_lead=0.8615; comparator sigma*a^2=0.0479; ratio=18.0x
+[PASS] source note states the conditional boundary and forbidden imports
+       all required guardrails present
+[PASS] comparator values are labeled as comparators, not derivation inputs
+
+TOTAL: PASS=10 FAIL=0
+SCOPE: conditional fixed-lattice reduction plus diagnostics only; the no-second-order-bulk-point premise remains open.
+
+----- stderr -----
+

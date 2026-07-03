@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lorentz_naturalness_gap_quantified_obstruction_2026_06_06.py
+runner_sha256: d371b9a294b1c9915d8aaff824cf180e774c8b6dddbd10b772b2b13e476876a1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+==============================================================================================
+Lorentz naturalness: supplied-parameter comparator estimate
+==============================================================================================
+
+----------------------------------------------------------------------------------------------
+Part A: UV regeneration delta v ~ alpha_s(M_Pl)/4pi (NOT Planck-suppressed)
+----------------------------------------------------------------------------------------------
+  [PASS] (A1) beta=6 -> g^2 = 2N/beta = 1 (SU(3)); alpha_s(M_Pl) = g^2/4pi ~ 0.08  --  g^2=1.000, alpha_s(M_Pl)=0.0796
+  [PASS] (A2) UV-regenerated marginal LV delta v|_UV ~ alpha_s/4pi ~ 6e-3 (loop- but NOT Planck-suppressed)  --  delta v|_UV = 6.333e-03  (Collins et al: the lattice dim-6 feeds the marginal coeff)
+
+----------------------------------------------------------------------------------------------
+Part B: the supplied anomalous-dimension estimate is SMALL (asymptotic freedom)
+----------------------------------------------------------------------------------------------
+     c_gamma=1: gamma = c_gamma*alpha_s(M_Pl) ~ 0.080
+     c_gamma=2: gamma = c_gamma*alpha_s(M_Pl) ~ 0.159
+     c_gamma=3: gamma = c_gamma*alpha_s(M_Pl) ~ 0.239
+  [PASS] (B1) supplied gamma range ~ 0.08-0.24 (weak, because alpha_s is small at the UV regeneration scale)  --  asymptotic freedom: the coupling is weak exactly where the regeneration occurs
+
+----------------------------------------------------------------------------------------------
+Part C: required gamma_crit to bridge the gap to each bound
+----------------------------------------------------------------------------------------------
+     observable                      bound   mu(GeV)  gamma_crit
+     photon (GRB/Fermi-LAT)          1e-20     1e+03        1.11
+     electron (clock/Penning)        1e-22     1e-03        0.90
+     nucleon (Hughes-Drever)         1e-27     1e+00        1.30
+     quark/gluon (mesons,UHECR)      1e-12     1e+00        0.51
+  [PASS] (C1) tight bounds (photon/electron/nucleon) require gamma_crit ~ 0.9-1.3  --  even the WEAKEST (quark/gluon) needs gamma_crit ~ 0.5
+  [PASS] (C2) the supplied gamma range (<=0.24) is BELOW even the weakest gamma_crit (~0.51)  --  max supplied gamma 0.239 < quark/gluon gamma_crit 0.51
+
+----------------------------------------------------------------------------------------------
+Part D: the residual gap (net delta v|_IR vs the bounds)
+----------------------------------------------------------------------------------------------
+     gamma=0.1: delta v|_IR(1 GeV) ~ 7.82e-05  | gap vs quark/gluon(1e-12) = 7.9 orders; vs photon(1e-20) = 15.9
+     gamma=0.2: delta v|_IR(1 GeV) ~ 9.65e-07  | gap vs quark/gluon(1e-12) = 6.0 orders; vs photon(1e-20) = 14.0
+     gamma=0.3: delta v|_IR(1 GeV) ~ 1.19e-08  | gap vs quark/gluon(1e-12) = 4.1 orders; vs photon(1e-20) = 12.1
+  [PASS] (D1) even for the WEAKEST bound and the most-optimistic gamma, a multi-order gap REMAINS  --  smallest gap (quark/gluon, gamma=0.3) ~ 4.1 orders; tight bounds 12-16 orders
+
+----------------------------------------------------------------------------------------------
+Part E: what the supplied comparator would need
+----------------------------------------------------------------------------------------------
+  [PASS] (E1) closing the supplied-parameter gap needs gamma >= gamma_crit ~ 1  --  this is an arithmetic threshold, not a framework-native exclusion of all mechanisms
+  [PASS] (E2) IR strong-QCD (alpha_s~1, gamma~1) acts over too FEW e-folds (~1 near Lambda_QCD) -> negligible  --  extra suppression ~ e^-1 = 0.37, vs the ~10^-14 needed
+     Scope: a custodial symmetry or hidden framework mechanism is not ruled out here;
+     the runner only quantifies what the supplied gamma range fails to do.
+
+----------------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------------
+  A  UV regeneration delta v|_UV ~ alpha_s(M_Pl)/4pi ~ 6e-3 (beta=6; NOT Planck-suppressed).
+  B  supplied gamma range ~ 0.08-0.24 (asymptotic freedom -> weak coupling at the regeneration scale).
+  C  required gamma_crit ~ 0.9-1.3 (tight bounds), ~0.5 (weakest); supplied gamma range is BELOW all.
+  D  net delta v|_IR ~ 1e-5..1e-8 -> 4-16 order GAP to the experimental LV bounds.
+  E  the supplied estimate would need gamma~1 or a separate custodial/protection mechanism.
+  => SUPPLIED-PARAMETER COMPARATOR: under the listed Collins/gamma/bound inputs,
+     gauge-flow suppression is too small. This runner does not derive the
+     regeneration coefficient, the physical gamma range, or absence of all
+     hidden protection mechanisms from framework primitives.
+
+==============================================================================================
+TOTAL: 8 PASS / 0 FAIL
+==============================================================================================
+
+----- stderr -----
+

@@ -1,0 +1,119 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_value_frontier_probe_2026_06_05.py
+runner_sha256: 907ae70489b0d1f9488e8a3e86cb1c22ba6c80e920d488232d6a92c2117522e4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+========================================================================
+HIERARCHY-VALUE FRONTIER PROBE 2026-06-05
+========================================================================
+  M_Pl        = 1.2209e+19 GeV   (framework UV anchor, P1)
+  <P>         = 0.5934   u_0 = 0.87768
+  alpha_bare  = 0.07958  (1/alpha = 12.566)
+  alpha_LM    = 0.09067  (1/alpha = 11.029)
+  alpha_s(v)  = 0.10330  (1/alpha = 9.680)
+
+------------------------------------------------------------------------
+SECTION 0  Hierarchy depths (PDG comparators)
+------------------------------------------------------------------------
+  log10(v    / M_Pl) =  -16.695   (EW scale)
+  log10(m_tau/ M_Pl) =  -18.837
+  log10(m_mu / M_Pl) =  -20.063
+  log10(m_e  / M_Pl) =  -22.378   (deepest: the ~22-decade target)
+[PASS] S0.1 EW depth ~ 17 decades (|log10(v/M_Pl)| in [16,17.5])
+[PASS] S0.2 deepest lepton (m_e) depth ~ 22 decades (in [22,23])
+
+------------------------------------------------------------------------
+SECTION 1  Angle 1: single 1-loop gauge transmutation + cascade
+------------------------------------------------------------------------
+  single DT, SU(3) full-SM  (b0=7,  alpha_LM):   -4.30 decades
+  single DT, SU(3) puregauge (b0=11, alpha_LM):   -2.74 decades
+[PASS] S1.1 single gauge DT delivers only ~4 decades (|.|<6, full-SM)
+  single DT, SU(2)_L (b0=19/6, alpha_bare):     -10.83 decades
+  U(1)_Y (b1<0, not asymptotically free):        0.00 decades (no IR pole)
+  CASCADE sum (SU3+SU2+U1):                      -15.13 decades
+  needed for EW:                                -16.70 decades
+[PASS] S1.2 SU(3) full-SM cascade term stops >10 decades short of v
+[PASS] S1.3 no single gauge factor reaches v (each >5 decades short)
+[PASS] S1.4 cascade SUM lands near v only by post-hoc factor selection (|sum-v|<3 but not controlled)
+  => cascade is NOT a controlled compounding: the gauge factors do
+     not multiply a common ruler; including/excluding factors to
+     hit -16.7 would be a post-hoc selection (no mechanism).
+
+------------------------------------------------------------------------
+SECTION 2  Angle 2a: the framework's actual EW formula is a 16th
+           POWER of alpha_LM (NOT a single transmutation)
+------------------------------------------------------------------------
+  v = M_Pl (7/8)^(1/4) alpha_LM^16 = 246.2828 GeV
+  PDG v_obs = 246.22 GeV   (rel dev +0.0255 %)
+[PASS] S2.1 reproduces canonical-chain v = 246.2828... GeV
+[PASS] S2.2 matches PDG v_obs within 0.3%
+  power-law exponent for v:        n = 16.0001  (integer 16)
+  decades per alpha_LM factor:     -1.0425
+  16 x per-factor:                 -16.6807  (vs -16.695)
+[PASS] S2.3 v exponent is the integer 16 (|n-16|<0.01)
+  alpha_LM^16            = 2.0857e-17
+  alpha_bare^16=(4pi)^-16= 2.5861e-18  (DELTA0 gate: open transport)
+[PASS] S2.4 alpha_LM^16 = alpha_bare^16 u_0^-16 (DELTA0 algebra)
+  => the ~17 EW decades come from the 16th POWER (compounded),
+     dominated by (4 pi)^-16; transport origin is the open DELTA0
+     gate.  This is bounded-match, P1-P4 open -- NOT newly closed.
+
+------------------------------------------------------------------------
+SECTION 3  Angle 2b: lepton scale = (alpha_LM^16 EW) x (small y_l)
+------------------------------------------------------------------------
+  y_e   = 2.9350e-06  (adds -5.532 decades below v)
+  y_mu  = 6.0687e-04  (adds -3.217 decades below v)
+  y_tau = 1.0206e-02  (adds -1.991 decades below v)
+
+  DECADE LEDGER (deepest = m_e):
+    M_Pl -> v       :  -16.695  (alpha_LM^16, bounded, P1-P4 open)
+    v    -> m_e      :   -5.532  (small Yukawa y_e, OPEN lane)
+    total M_Pl->m_e  :  -22.378  (= ~22 decades)
+[PASS] S3.1 ledger closes (up to sqrt2 of m=y v/sqrt2 convention)
+  power-law exponents:  n(m_tau)=18.054  n(m_mu)=19.230  n(m_e)=21.451
+[PASS] S3.2 lepton exponents are NON-integer (m_e: frac part > 0.1)
+  => the EXTRA lepton decades (~2 to ~5.5) ride on the small
+     Yukawas y_l, which the framework does NOT derive (y_tau lane
+     'stuck'; see CHARGED_LEPTON_Y_TAU_MECHANISM_STUCK_FANOUT).
+
+------------------------------------------------------------------------
+SECTION 4  Is y_l a clean power of a framework small parameter?
+           (BOUNDED NUMERICAL OBSERVATION -- NOT a derivation,
+            NOT a framework mechanism, FN charges are an import)
+------------------------------------------------------------------------
+  eps=alpha_bare=1/(4pi)                : q(y_e)= 5.033 q(y_mu)= 2.927 q(y_tau)= 1.811
+  eps=alpha_LM                          : q(y_e)= 5.307 q(y_mu)= 3.086 q(y_tau)= 1.910
+  eps=Cabibbo lambda=0.225 (comparator) : q(y_e)= 8.540 q(y_mu)= 4.966 q(y_tau)= 3.074
+  -> eps=alpha_bare: q(y_e)=5.033 (~5), q(y_mu)=2.927 (~3): suggestive integer ladder, but loose (y_tau~1.81 != 2).
+[PASS] S4.1 [observation] q(y_mu | eps=alpha_bare) rounds to 3
+[PASS] S4.2 [honesty] ladder is LOOSE: q(y_tau|alpha_bare) not within 0.1 of 2
+
+------------------------------------------------------------------------
+SECTION 5  Angle 3: is the framework's 1/alpha~11 the right input?
+------------------------------------------------------------------------
+  single DT (b0=7) reaching v would need 1/alpha = 42.83
+  framework actually has                1/alpha ~ 11.03
+  alpha_s(M_Z)=0.118 run UP to M_Pl (1-loop b0=7): 1/alpha = 52.41
+[PASS] S5.1 single-DT-to-v needs 1/alpha ~ 40-45 (framework has ~11)
+[PASS] S5.2 physical alpha_s(M_Z) run up gives 1/alpha(M_Pl) ~ 50-54
+  => the framework's bare coupling is ~4-5x too STRONG for a single
+     transmutation to span the hierarchy.  The framework instead
+     uses the 16th POWER (Section 2), which DOES span ~17 decades
+     at 1/alpha~11.  So the EW decades are mechanism-supplied (the
+     power-law, bounded); the open gate is the (4pi)^-16 transport
+     origin (DELTA0), not the decade COUNT.
+
+========================================================================
+VERDICT: FRAMEWORK-AVOIDS-PROBLEM; EW ~17 DECADES SUPPLIED BY THE
+alpha_LM^16 POWER-LAW (bounded, P1-P4/DELTA0 open); LEPTON EXTRA
+~2-5.5 DECADES RIDE ON UNDERIVED SMALL YUKAWAS (y_tau lane open).
+Best mechanism-supplied decade count: 16.7 (EW power-law).
+Single gauge transmutation: only ~4 decades (sister-branch result).
+========================================================================
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_koide_r_half_index_readout_non_susy_gated_exact.py
+runner_sha256: 0fe49c83c886853adc69cae93663c00df12843b7f6c8079ab340b69d40a232b2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.64
+status: ok
+----- stdout -----
+PASS - (1) block/multiplicity count (doublet once) -> r=1/2 ; dimension count (doublet=2) -> r=1
+PASS - (2) equivariant INDEX counts MULTIPLICITY (each C3 irrep once -> (1,1,1) -> (singlet,doublet)=(1,1)); TRACE counts DIMENSION (1,2)
+PASS - (3a) D anticommutes with the Z2 grading eps ({D,eps}=0) -- the only structure McKean-Singer needs (no supercharge)
+PASS - (3b) Str(e^{-tD^2}) is t-INDEPENDENT (a graded-trace/index fact, no SUSY)
+PASS - (4a) J_cs=(C-C^2)/sqrt3 is anti-Hermitian and commutes with C (Schur-native flavor complex structure)
+PASS - (4b) exp(theta J_cs) on the doublet is SO(2) (orthogonal, det=1) -> measure-neutral (preserves det_R AND det_C), cannot select
+PASS - (5) source note keeps the correction/localization/no-derivation boundary
+
+7 PASS, 0 FAIL
+
+CORRECTION + LOCALIZATION: the r=1/2 'count once' is the INDEX/multiplicity readout and it is NON-SUSY --
+a Z2-graded Dirac structure (McKean-Singer) + a complex structure checked locally by this runner.
+The prior 'needs a SUSY superpotential' conflated the holomorphic ACTION (superpotential)
+with the holomorphic READOUT (Dirac determinant). BUT the native pieces are NECESSARY-NOT-SUFFICIENT: J_cs is
+MEASURE-NEUTRAL, so a static i/J cannot SELECT the count. The selector is FIRST-ORDER (index, count once ->
+r=1/2) vs SECOND-ORDER (modulus, count twice -> r=1) -- a DYNAMICS question gated on the open staggered-Dirac
+corner realization. NOT a derivation of r=1/2; a foreclosure-correction (SUSY not required) + localization.
+
+----- stderr -----
+

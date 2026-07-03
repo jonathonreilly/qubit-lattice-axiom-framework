@@ -57,10 +57,13 @@ Only recurrences / generating functions / closed forms.  Every array is capped
 """
 from __future__ import annotations
 from fractions import Fraction as F
+from pathlib import Path
 import sympy as sp
 import mpmath as mp
 
 mp.mp.dps = 50
+ROOT = Path(__file__).resolve().parent.parent
+NOTE_PATH = ROOT / "docs" / "BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md"
 
 # ---- hard memory caps (no array/object may exceed these) -------------------
 MAX_DEG = 60          # max Taylor degree we ever materialise for J (61 coeffs)
@@ -77,6 +80,25 @@ def check(label: str, cond: bool, detail: str = "") -> None:
     else:
         FAIL += 1
     print(f"[{tag}] {label}" + (f"  ::  {detail}" if detail else ""))
+
+
+# ===========================================================================
+# [0] source-boundary manifest in the note
+# ===========================================================================
+note_text = NOTE_PATH.read_text(encoding="utf-8")
+note_flat = " ".join(note_text.split())
+print("=== [0] Source-boundary manifest ===")
+check("note records 2026-06-07 source-boundary manifest",
+      "2026-06-07 Source-Boundary Manifest" in note_text)
+check("note records the exact tree threshold R_tree > 6 iff g_tree < 81",
+      "R_tree > 6 iff g_tree < 81" in note_text)
+check("note records the compact 2x2x1 K-built block obstruction",
+      "compact 2x2x1 K-built block: k=4, F=16, n=15" in note_text)
+check("note records the three open growth inputs",
+      "exactly three open growth inputs" in note_flat
+      and "tree-cluster/cumulant bound" in note_flat
+      and "compact K-built face-deficit growth bound" in note_flat
+      and "baryon/epsilon-sector bound" in note_flat)
 
 
 # ===========================================================================

@@ -1,0 +1,48 @@
+{
+  "authority_packets": [
+    {
+      "cache_path": "logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt",
+      "cache_sha256": "8333ea5f74a289c1ff679757c99a9091bc97cc412891a2bb3ba05dca1ee10f11",
+      "label": "Frobenius isotype split no-go",
+      "note_path": "docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md",
+      "note_sha256": "a32f4d4a2ba4a1cc9a4e732483e2c46915ea62b07717891542b5f5d0f4b12286",
+      "runner_path": "scripts/frontier_koide_frobenius_isotype_split_uniqueness.py",
+      "runner_sha256": "193c9bbb4999181cc7b4e5a43f24142e1a2266f773765cac498b8bb2f1880d02"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_action_normalization.txt",
+      "cache_sha256": "83524a5ccc4ba41f69c10a3334813d5daf8a931bdfd410be39087a52310133be",
+      "label": "action normalization no-go",
+      "note_path": "docs/ACTION_NORMALIZATION_NOTE.md",
+      "note_sha256": "9e9bd9e58895058f580ee1a190969d79ffbcc26058ea45ca2c62f258d7bc0700",
+      "runner_path": "scripts/frontier_action_normalization.py",
+      "runner_sha256": "a846e7a4794c0d6503117c9a074272b47f048f41823ef6edeb46e97f0870f5f6"
+    },
+    {
+      "cache_path": "logs/runner-cache/generation_weight_dial_structure_2026_06_05.txt",
+      "cache_sha256": "95cc2f8da43134c2679906502da93109125d52d571296cd1d1f84ace8974d383",
+      "label": "generation weight dial structure",
+      "note_path": "docs/GENERATION_WEIGHT_DIAL_STRUCTURE_2026-06-05.md",
+      "note_sha256": "feb9dc3af2b2ff20d20b4728ba935331f7d76623d8829f98758eed9cca1f3f37",
+      "runner_path": "scripts/generation_weight_dial_structure_2026_06_05.py",
+      "runner_sha256": "966cc28a84ad7142e2c831df7b7c621d3f4350fe9a03f87b3322bbe1cbb01196"
+    },
+    {
+      "cache_path": "logs/runner-cache/charged_lepton_value_one_counting_bit.txt",
+      "cache_sha256": "118495b6525627f0324f18f916a2642fb7a9f078d3dc4e9c20dcb67ea61a517b",
+      "label": "one counting bit synthesis",
+      "note_path": "docs/CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md",
+      "note_sha256": "bb84d37f3136c9353b03d02f94a2764db4728740493ce2a64db57ce6be94d654",
+      "runner_path": "scripts/charged_lepton_value_one_counting_bit.py",
+      "runner_sha256": "a13ffa52252ed0f14f141ed72e81f75987034d7a4c7eb1029c2cf35139f7b618"
+    }
+  ],
+  "boundary": "det_C/det_R reduction only; no selected charged-lepton lane",
+  "bridge": {
+    "q_det_c": "2/3",
+    "q_det_r": "1",
+    "r_det_c": "1/2",
+    "r_det_r": "1"
+  },
+  "claim_id": "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31"
+}

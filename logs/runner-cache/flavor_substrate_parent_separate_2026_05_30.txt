@@ -1,24 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_substrate_parent_separate_2026_05_30.py
-runner_sha256: 93beb95c42e3fe6fb54a15670f7eead8e9221a36e89bcb9044acdd23397c9763
+runner_sha256: bd401ce87fbaa79ba18621f20242fa328ff17297393b7bf7bbd8b6d1f956d407
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.07
 status: ok
 ----- stdout -----
-[PASS] D1 assembled parent K splits as forced super-direct-sum (decomposable, not indecomposable)
-       even slot=I2(x)G_U1, odd slot=sx(x)H_chi, forced/non-interchangeable; coin index = bookkeeping
-[PASS] D2 G_U1 commutes Gamma_chi & C (on-block); chiral grading anticommutes & breaks C (off-block)
-       orthogonal on R^3 -- comm(C) cap anticomm(Gchi)={0} inherited by the lift
-[PASS] D3 unification channel needs ORDER-3 complex qubit charge diag(1,w) = the det_C object
-       diag(1,w): order 3, det=w (not SU(2)), complex I/Z coeffs = same complex/det_C structure as value import
+[PASS] D1 coin-blind grading forces K into even value slot plus odd chiral slot
+[PASS] D2 value side commutes with Gamma_chi and C; chiral side anticommutes with Gamma_chi
+[PASS] D3 diag(1,omega) has order 3 and determinant omega
+[PASS] D4 diag(1,omega) is not one of the supplied Z2 spin-factor charges
+[PASS] D5 source guard: native/non-native status and only-way theorem are left open
 
-SCORECARD PASS=3 FAIL=0
-VERDICT: genuinely SEPARATE (Correction 1 holds: value != chirality on R^3, and no native lift
-unifies them). BUT the single object that WOULD unify them = the imported order-3 complex (det_C)
-phase = the SAME root as the value import. So: not one GATE, but one common ROOT IMPORT (the
-complex/order-3/det_C structure the discrete Z_2-spin substrate lacks). Caveat: hinges on the
-Z_2-spin-factor reading of M_2(C) (no native order-3 charge) -- recommend audit row.
+SCORECARD PASS=5 FAIL=0
+VERDICT: on the supplied Z2 spin-factor reading, the naive lift splits
+into separate value and chirality slots. Unification on this route
+requires an order-3 complex charge diag(1,omega), but this runner does
+not decide that charge's native status in full complex M2(C).
 
 ----- stderr -----
 

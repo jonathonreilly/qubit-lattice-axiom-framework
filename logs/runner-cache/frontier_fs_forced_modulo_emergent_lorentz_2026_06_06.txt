@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.py
+runner_sha256: 0ec146e9fd08e673c4d663135ae51c7900ca17a83791d6a1e91ae0e3fc6d2549
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+============================================================================================
+FS stress-test: conditional 'forced-modulo emergent-Lorentz + R' route map
+============================================================================================
+  [PASS] note declares open_gate / conditional-support stress-test
+  [PASS] note no longer declares bounded_theorem claim type
+  [PASS] note has 2026-06-18 open-gate source-scope repair
+  [PASS] note source-scope certificate keeps actual surface open
+  [PASS] note forbids branch-local retained proposal
+  [PASS] note has 2026-06-16 post-audit scope firewall
+  [PASS] note says runner does not derive realization/Lorentz/R residuals
+  [PASS] note declares route map/stress-test, not FS closure or new axiom
+
+[BLOCK 1] The spin-statistics ENGINE: spin-1/2 bosonic is inconsistent
+  [PASS] spin-1/2 CAR Hamiltonian is bounded below (>=0)
+  [PASS] spin-1/2 CCR attempt is UNBOUNDED below (has -E): inconsistent (Streater-Wightman)
+  [PASS] comparator engine: spin-1/2 + Lorentz + positivity forces fermionic sign  --  Pauli/Streater-Wightman comparator; Lorentz/positivity are not derived here
+
+[BLOCK 2] The 4-link forcing chain + repo status (no new axiom)
+      LINK A qubit spin-1/2         | RETAINED                     | per_site_su2_spin_half; = Clifford Spin(3) bivectors (internal_external_su2_merger)
+      LINK B abstract O_h/Cl3       | SUPPORTED; external identification conditional | O_h vector rep on abstract Cl(3); algebra-3=spatial-3 remains realization-gate residual
+      LINK C emergent Lorentz       | TARGET / bounded-conditional | emergent_lorentz_invariance retained_bounded; NOT a new axiom
+      LINK D spin-statistics thm    | comparator (engine rigorous) | spin-1/2-bosonic inconsistent; Dirac-Kahler evaded
+  [PASS] LINK A retained; LINK B abstract O_h/Cl3 support is tight but external-spacetime identification remains residual
+  [PASS] residual = LINK-B realization gate + LINK-C continuum upgrade + reconstruction R (not derived by this runner)  --  R = free_field_os_wightman_reconstruction (unaudited; currently circular)
+
+[BLOCK 3] The last static opening (multi-loop graph-braid) is REFUTED (statistics-blind)
+  [PASS] HCB (boson) survives the multi-loop cocycle
+  [PASS] CAR (fermion) survives the multi-loop cocycle
+  [PASS] => BOTH survive => multi-loop is statistics-BLIND; HCB not frustrated out (opening refuted)  --  theta-graph H1 free (beta1=3, no torsion): both +-1 are homomorphisms
+
+[BLOCK 4] If ever forced: cheapest principle is WEAKER than an axiom
+  [PASS] retained fermion-parity grading supplies the two Z2 parity sectors
+  [PASS] cheapest fallback = graded locality / parity-superselection = a SIGN-SELECTION between 2 existing sectors  --  not supplied by Record; would be an extra theory principle if ever invoked
+  [PASS] NOT currently forced: the continuum/R route remains open => do not invoke it prematurely
+
+[BLOCK 5] Owner bottom line
+  [PASS] the current FS route adds no new axiom or primitive  --  it remains conditional on realization-gate identification + emergent Lorentz + R
+  [PASS] route map only: 'forced-modulo realization gate + emergent-Lorentz + R' is conditional, not closure
+  [PASS] if a principle were ever forced, it is graded-locality/parity-superselection, not Record itself
+  [PASS] no new axiom invented; all four FS no-gos remain concordant for the STATIC baseline only
+
+============================================================================================
+SCORECARD:  PASS = 23   FAIL = 0
+============================================================================================
+
+----- stderr -----
+

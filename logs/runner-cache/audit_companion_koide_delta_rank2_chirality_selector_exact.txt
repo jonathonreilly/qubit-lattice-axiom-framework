@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_koide_delta_rank2_chirality_selector_exact.py
+runner_sha256: 725d00619d9495389d7316e9f3e1d0c227628a187d79bdcd122d9f13eb000b83
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.47
+status: ok
+----- stdout -----
+PASS - (1) site-parity eps on the 3 same-parity hw=1 corners = -I3 (SCALAR) -> does NOT split the rank-2 doublet
+PASS - (2) Clifford chirality gamma5 = diag(+1,-1) on the rank-2 sector: NON-SCALAR (distinct eigenvalues) -> SPLITS it
+PASS - (3) chiral projector P+=(1+g5)/2 selects a rank-1 line (Tr P+ = 1); GLOBAL Tr(g5)=0 (index sums to 0)
+PASS - (4) single-summand: the SELECTED (+chirality) line reads local density 2/9 while the GLOBAL sum vanishes (domain-wall)
+PASS - (5) gamma5 chirality (g5^2=I, Tr=0) is OUTSIDE the scalar Wilson/APS-mark algebra -> why the mark-based no-gos missed it
+PASS - (6) the local density read is L3(1,2) = 2/9 (the forced C3 fixed-point density; core (z-1)(z^2-1)=3)
+PASS - (7) source note keeps the downgrade / not-a-full-closure / conditions boundary
+
+7 PASS, 0 FAIL
+
+NO-GO DOWNGRADE: the rank-1 selector the two no-gos demanded EXISTS and is framework-native -- the CLIFFORD/KD
+CHIRALITY gamma5 (on-site Cl(3,0) chirality), NOT the site-parity eps (scalar). gamma5 is non-scalar on the rank-2
+zero-mode sector, the chiral projector selects ONE rank-1 line reading the local 2/9 while the GLOBAL index vanishes
+(domain-wall: Fukaya index_DW=-eta/2). gamma5 is OUTSIDE the scalar Wilson-mark algebra -> why the marks-are-scalar
+no-gos missed it. NOT a full delta closure: remaining = (continuum/rooting) + (c=0 endpoint) + (edge-is-physical),
+and the separate radian/unit admission is untouched. A real advance: the eigenline-selection residual is answered
+by a native candidate (the chirality), downgrading the no-go to a conditional.
+
+----- stderr -----
+

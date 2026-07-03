@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_degenerate_supermetric_graviton_sign_no_go.py
+runner_sha256: c82020b40951b21e06296ce044b371bde8de4bd3c0a45b22384c11ab2ea7b21e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.70
+status: ok
+----- stdout -----
+PASS T1 framework lambda=0: G_trace ~ G_shear sign-equal (degenerate); conformal term vanishes on TT
+PASS T1b GR lambda=1: G_trace=-6/b^4 (neg) vs G_shear=+2/b^4 (pos) -> OPPOSITE (indefinite)
+PASS T2a retained cubic-Coxeter Regge/EH bridge present: source note and cache say the no-go comparator pair is derived from retained geometry
+PASS T2b local linearized-EH comparator derivation: V_trace=-k^2/2 and V_TT=+k^2/2 exactly
+PASS T2c finite quadratic-mode gluing law imported: omega^2=V/G for diagonal channels
+PASS T3 framework lambda=0 comparator gluing: omega^2_trace and omega^2_TT OPPOSITE-signed (omega^2_TT<0 in this convention)
+PASS T4 GR control lambda=1: omega^2_trace>0 AND omega^2_TT>0 inside the same sign convention
+PASS T5 GLOBAL-SIGN THEOREM: degenerate supermetric -> omega^2_trace*omega^2_TT<0 for EVERY overall sign (no heal)
+PASS T6 #3214: W metric-Hessian rank-1 longitudinal; TT graviton in EXACT kernel (no finite-k W origin)
+
+derived comparator potentials: V_trace=-kk**2/2  V_TT=kk**2/2
+framework lambda=0 comparator gluing: omega^2_trace=0.245  omega^2_TT=-0.245 (opposite signs)
+GR lambda=1 control in the same convention: omega^2_trace=0.122  omega^2_TT=0.245 (same positive sign)
+BOUNDARY = sign algebra for framework-derived comparator signs plus derived finite quadratic gluing;
+open = 4D/timelike Regge action/fiber metric, action orientation, and finite-k W/stress routes.
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

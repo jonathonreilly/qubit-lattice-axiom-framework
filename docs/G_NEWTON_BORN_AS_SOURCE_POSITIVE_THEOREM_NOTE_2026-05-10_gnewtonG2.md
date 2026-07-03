@@ -4,7 +4,7 @@
 **Type:** bounded_theorem (position-density extension support for admission (b) of GRAVITY_CLEAN_DERIVATION_NOTE)
 **Claim type:** bounded_theorem
 **Scope:** review-loop source-note proposal. Supplies a bounded density-operator extension for the Born-as-gravity-source admission named (b) in
-[`G_NEWTON_SELF_CONSISTENCY_BOUNDED_SHARPENING_NOTE_2026-05-10_planckP4.md`](G_NEWTON_SELF_CONSISTENCY_BOUNDED_SHARPENING_NOTE_2026-05-10_planckP4.md)
+`G_NEWTON_SELF_CONSISTENCY_BOUNDED_SHARPENING_NOTE_2026-05-10_planckP4.md`
 under the physical-lattice repo baseline + cited Born-rule operationalism + statistical mixing.
 **Status:** source-note proposal for bounded support, not closure, of admission (b). The unified position-density Born map
 `ρ_grav(x) := ⟨x| ρ̂ |x⟩` is canonical for both pure and mixed states. The previously cited
@@ -94,7 +94,7 @@ well-defined density for every state.
 | StatMix | Statistical mixing of states (classical probabilities over pure states) | standard QM ensemble formalism (no internal repo dep needed) |
 | PureBorn | Pure-state Born rule `ρ_pure(x) = |ψ(x)|²` (probability density) | standard QM / cited in [`STAGGERED_FERMION_CARD_2026-04-11.md`](STAGGERED_FERMION_CARD_2026-04-11.md) |
 | GRavCleanCondB | Admission (b) of [`GRAVITY_CLEAN_DERIVATION_NOTE.md`](GRAVITY_CLEAN_DERIVATION_NOTE.md): `ρ = |ψ|²` as gravity source | conditional, this note's bounded-support target |
-| ParentP4 | The 3-admission sharpening that identified B(b) | bounded_theorem proposal: [`G_NEWTON_SELF_CONSISTENCY_BOUNDED_SHARPENING_NOTE_2026-05-10_planckP4.md`](G_NEWTON_SELF_CONSISTENCY_BOUNDED_SHARPENING_NOTE_2026-05-10_planckP4.md) |
+| ParentP4 | The 3-admission sharpening that identified B(b) | bounded_theorem proposal: `G_NEWTON_SELF_CONSISTENCY_BOUNDED_SHARPENING_NOTE_2026-05-10_planckP4.md` |
 
 ### Forbidden imports
 
@@ -410,7 +410,7 @@ to avoid one-step relabelings of already-landed cycles. This note:
 
 ## Cross-references
 
-- Parent G_Newton self-consistency probe: [`G_NEWTON_SELF_CONSISTENCY_BOUNDED_SHARPENING_NOTE_2026-05-10_planckP4.md`](G_NEWTON_SELF_CONSISTENCY_BOUNDED_SHARPENING_NOTE_2026-05-10_planckP4.md)
+- Parent G_Newton self-consistency probe: `G_NEWTON_SELF_CONSISTENCY_BOUNDED_SHARPENING_NOTE_2026-05-10_planckP4.md`
 - Parent gravity-clean note: [`GRAVITY_CLEAN_DERIVATION_NOTE.md`](GRAVITY_CLEAN_DERIVATION_NOTE.md)
 - Companion full-self-consistency note: [`GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md`](GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md)
 - Sister Koide gravity-phase obstruction: [`KOIDE_A1_PROBE_GRAVITY_PHASE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe3.md`](KOIDE_A1_PROBE_GRAVITY_PHASE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe3.md)

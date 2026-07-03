@@ -1,0 +1,99 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_word_count_hilbert_metric_bracket_narrow_2026_06_12.py
+runner_sha256: 201b371c3f46ceb45e2f2c9e3094c5fb21cfe268a9e1dfa382b6ed5f40ce0ea5
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 5.00
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette word-count Hilbert-metric bracket attempt
+beta=6.0, tensor NMAX=4, tensor MODE_MAX=80, source NMAX=7, source MODE_MAX=200
+Status authority: independent audit lane only. This source runner does not set or predict an audit outcome.
+
+========================================================================================================
+Part 1: reduced word-count formula
+========================================================================================================
+PASS: w=2 reduced 25x25 formula reproduces direct packet rho
+      max_diff=1.665e-16
+PASS: w=2 reduced source P reproduces direct packet P
+      P_reduced=0.433061880380, P_direct=0.433061880380, eig=1.560785137725e-01
+PASS: w=3 reduced 25x25 formula reproduces direct packet rho
+      max_diff=4.352e-14
+PASS: w=3 reduced source P reproduces direct packet P
+      P_reduced=0.543142610051, P_direct=0.543142610051, eig=4.555339948442e-02
+PASS: deep-rim w=1 readout reproduces the one-word anchor
+      P1=0.434215413260
+PASS: deep-rim w=2 readout reproduces the prior finite-packet value
+      P2=0.433061880380
+PASS: deep-rim w=3 readout reproduces the prior finite-packet value
+      P3=0.543142610051
+
+========================================================================================================
+Part 2: Hilbert-metric positivity check
+========================================================================================================
+g_one zero entries = 330 of 625
+ordinary matrix-support primitivity index = 4
+w=1: reduced zero entries=330, Hilbert diameter=inf
+PASS: w=1 full-cone Birkhoff diameter is infinite
+      persistent zero entries make tanh(diam/4) unusable on the full cone
+w=2: reduced zero entries=330, Hilbert diameter=inf
+PASS: w=2 full-cone Birkhoff diameter is infinite
+      persistent zero entries make tanh(diam/4) unusable on the full cone
+w=3: reduced zero entries=330, Hilbert diameter=inf
+PASS: w=3 full-cone Birkhoff diameter is infinite
+      persistent zero entries make tanh(diam/4) unusable on the full cone
+w=4: reduced zero entries=330, Hilbert diameter=inf
+PASS: w=4 full-cone Birkhoff diameter is infinite
+      persistent zero entries make tanh(diam/4) unusable on the full cone
+PASS: ordinary matrix powers of the support become positive only after four steps
+      primitive_power=4
+PASS: entrywise powers preserve the zero pattern, so the support-power fact is not the word-count contraction
+      K_w uses g_one entrywise powers, not ordinary powers of g_one
+
+========================================================================================================
+Part 3: finite-packet limit and measured envelope
+========================================================================================================
+B00 = 0.357066142023283
+second entrywise ratio = 0.482546354923910 at (0, 1)->(0, 1)
+L00 = 0.319869137220260
+L10 = 1.197980906223103
+fundamental growth gamma = 3.791528766619178
+candidate theta = 0.263745855973467
+finite-packet fundamental-support limit P_inf = 0.615191992185898
+
+words | P_w | |P_inf-P_w| | rho10 | rho11 | rho20
+--------------------------------------------------------------------------------------------------------
+    1 | 0.434215413260 | 1.809765789260e-01 | 3.785149223171e-01 | 1.710420190918e-01 | 7.570581877783e-02
+    2 | 0.433061880380 | 1.821301118062e-01 | 3.398617060251e-01 | 1.623177773095e-01 | 6.813112950065e-02
+    3 | 0.543142610051 | 7.204938213447e-02 | 6.888685671846e+00 | 1.622752884292e-01 | 6.814373010628e-02
+    4 | 0.603630724651 | 1.156126753490e-02 | 4.145992661566e+01 | 1.622604346666e-01 | 6.800260421545e-02
+    5 | 0.612857835719 | 2.334156466489e-03 | 1.839094499046e+02 | 1.622598183057e-01 | 6.798295615431e-02
+    6 | 0.614633873361 | 5.581188248835e-04 | 7.437451313837e+02 | 1.622597999871e-01 | 6.798104672432e-02
+    7 | 0.615050158856 | 1.418333299219e-04 | 2.900917483466e+03 | 1.622597994931e-01 | 6.798087911475e-02
+    8 | 0.615155144956 | 3.684723022845e-05 | 1.114069285284e+04 | 1.622597994803e-01 | 6.798086496269e-02
+    9 | 0.615182336693 | 9.655492899330e-06 | 4.248958621452e+04 | 1.622597994799e-01 | 6.798086378729e-02
+   10 | 0.615189452932 | 2.539254029155e-06 | 1.615409363881e+05 | 1.622597994799e-01 | 6.798086369037e-02
+   11 | 0.615191323349 | 6.688367297780e-07 | 6.132685532532e+05 | 1.622597994799e-01 | 6.798086368241e-02
+   12 | 0.615191815890 | 1.762954563445e-07 | 2.326617383061e+06 | 1.622597994799e-01 | 6.798086368175e-02
+PASS: deep-rim word-count sequence is non-monotone at the start
+      P1=0.434215413260, P2=0.433061880380, P3=0.543142610051
+PASS: finite-packet limit is reproduced by the source solve with only the fundamental pair kept
+      P_inf=0.615191992186
+PASS: candidate theta is computed from packet matrices and is less than one
+      theta=0.263745855973, gamma=3.791528766619
+PASS: candidate geometric envelope holds on measured rungs w=3..12
+      C_measured=3.927112357448, max_post4_ratio=0.263585189771
+PASS: measured envelope is not promoted to a certified all-w tail by this runner
+      missing pieces: full-cone finite Hilbert diameter and ratio-denominator perturbation bound
+
+========================================================================================================
+Part 4: bounded residuals and obstruction statement
+========================================================================================================
+Obstruction: the actual reduced word-count matrices K_w have persistent zero entries, so the Birkhoff/Hilbert coefficient tanh(diam/4) is not finite on the full cone. The ordinary fourth-power positivity of the support graph does not repair this, because K_w contains entrywise powers of g_one rather than ordinary powers of a fixed positive matrix.
+Partial structure: the finite packet has an explicit reduced formula, a computed fundamental-support limiting source solve, and a matrix-derived candidate theta that matches the measured rungs. The missing certification target is a uniform positive denominator/source-perturbation bound for the readout ratio.
+Named residuals: finite dominant-weight box; finite Bessel mode support; no physical 3D unmarked spatial Wilson environment computation; no all-weight or untruncated convergence proof; no L_perp limit; no analytic P(6); no canonical repinning.
+PASS: runner reports an obstruction map rather than a certified Hilbert-metric bracket
+
+TOTAL: PASS=19, FAIL=0
+
+----- stderr -----

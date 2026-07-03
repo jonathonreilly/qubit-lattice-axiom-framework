@@ -1,0 +1,24 @@
+{
+  "audit_required_before_effective_status_movement": true,
+  "authority_surface": {
+    "audit_status_authority": "independent audit lane only",
+    "authority_surfaces": [
+      "docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md",
+      "docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md",
+      "docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md",
+      "docs/MINIMAL_AXIOMS_2026-06-05.md",
+      "docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md"
+    ]
+  },
+  "fail_count": 0,
+  "pass_count": 71,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "This closes the same-surface carrier bridge only; top coefficient, top transfer response, scalar normalization, and physical-scale g_2 remain open.",
+  "review_surface": [
+    "docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md",
+    "scripts/frontier_yt_ew_neutral_projector_same_surface_carrier.py",
+    "outputs/yt_ew_neutral_projector_same_surface_carrier_2026-06-18.json"
+  ],
+  "same_surface_carrier_theorem_closed": true,
+  "status": "exact support: the neutral EW Higgs ray is the zero spectral projector 1_0(Q_H), identical to the qubit P_- source ray on the one-Higgs carrier"
+}

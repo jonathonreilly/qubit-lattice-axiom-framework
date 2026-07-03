@@ -1,28 +1,41 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_interacting_matter_build_2026_05_30.py
-runner_sha256: 8a202ad646df92e625de3393939478cb95e750f864db370fe525621a0254d836
+runner_sha256: 89568ad0aa6df57d8eb0e6c8b8b1b28783131dec606d7d04db3b7818e742eea0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
-eps(n)=(-1)^sum on hw=1 generation corners: [-1, -1, -1] -> constant -> generation-BLIND (cannot split the C3 orbit).
-eps as (pi,pi,pi) shift maps hw=1 -> [2, 2, 2] (hw=2, out of triplet).
+FLAVOR INTERACTING MATTER BUILD: SOURCE-BOUNDARY SPLIT (verified epsilon/Q core | conditional C3-wall)
+scope: verified core = exact epsilon/Q finite algebra; C3-wall + interacting branches are conditional/diagnostic
 
-r at natural (C3-symmetric/self-dual) coupling: all 3 builds -> r=0 (Q=1/3).
-off-self-dual: SD/Fierz r=2/5 (Q=3/5, regulator artifact); two-channel onset r~0.535 (Q~0.69).
-   r=0.000 -> Q=0.3333
-   r=0.400 -> Q=0.6000
-   r=0.535 -> Q=0.6900
-   r=0.500 -> Q=0.6667
+--- VERIFIED CORE: epsilon/Q finite algebra (load-bearing) ---
+[PASS] E1 epsilon is constant on the hw=1 generation orbit -- eps(hw1)=[-1, -1, -1]
+[PASS] E2 epsilon as the (pi,pi,pi) shift maps hw=1 out of the triplet to hw=2 -- shifted Hamming weights=[2, 2, 2]
+[PASS] Q formula holds for r=0.000 -- Q=0.333333
+[PASS] Q formula holds for r=0.400 -- Q=0.600000
+[PASS] Q formula holds for r=0.500 -- Q=0.666667
+[PASS] Q formula holds for r=0.535 -- Q=0.690000
 
-GENUINE: interacting dynamics generates b!=0 (free b=0 was an exact selection rule;
-Fierz exchange feeds b). r=1/2 dynamically ACCESSIBLE (onset ~0.535). BUT not forced:
-value = continuous output of unsupplied coupling ratio; natural coupling -> r=0; no
-dynamical symmetry pins exactly 1/2 (only algebraic Tr(I^2)/Tr((J-I)^2)=3/6=HS-equipartition).
-A C3-SYMMETRIC interaction only makes the circulant b ([M,Gamma_chi]=0), never the orbit-
-splitting anticommuting operator. eps-channel generation-blind. => converges on the one
-generation-specific chiral import; framework reduces charged-lepton flavor to it + Planck.
+--- CONDITIONAL / DIAGNOSTIC: C3-wall obstruction (NOT load-bearing) ---
+[PASS] C3-1 C3 cycle has order 3
+[PASS] C3-2 C3-invariant diagonal generation operators are scalar -- diagonal invariant dimension=1
+[PASS] C3-3 non-scalar diagonal orbit splitting requires C3 breaking -- commutator norm=2.449
+
+Contextual r values converted through the checked Q formula (context only):
+  natural C3-symmetric/self-dual input: r=0.000000, Q=0.333333
+  reported SD/Fierz off-self-dual input: r=0.400000, Q=0.600000
+  reported two-channel onset input: r=0.535000, Q=0.690000
+  Koide target comparison: r=0.500000, Q=0.666667
+
+CONTEXT ONLY: this runner does not derive the three interacting builds,
+critical coupling, continuous r(g) curve, or b!=0 branch. Those remain
+external build summaries until a first-principles matter-action runner lands.
+
+VERIFIED-CORE SUBTOTAL  PASS=6 FAIL=0
+CONDITIONAL SUBTOTAL    PASS=3 FAIL=0
+
+TOTAL SUMMARY PASS=9 FAIL=0
 
 ----- stderr -----
 

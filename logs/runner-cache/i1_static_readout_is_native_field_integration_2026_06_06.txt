@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/i1_static_readout_is_native_field_integration_2026_06_06.py
+runner_sha256: 1a42507e21b31cabb6702596277e7ba119c6b1c7fd4ad3bd107e7603eabc4540
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+--- Section A: integrate out supplied quadratic field -> V(r) = -g^2 G(r) ---
+PASS: field integration yields an r-dependent interaction (the cross term -g^2 G(r))
+PASS: V(r) is EXACTLY -g^2 G(r): the interaction is the gauge propagator (not readout-additivity)
+--- Section B: the interaction lives in the field, not readout-additivity ---
+PASS: Record additivity over DISJOINT sources gives NO interaction (r-independent)
+PASS: the r-dependent interaction V(r) is NOT reproducible by additive readout of disjoint sources
+PASS: => the static potential is the REGISTERED energy of the coupled sourced-field config (register-not-read), with the interaction carried by the field
+--- Section C: massless limit -> -alpha_bare/r, alpha_bare = g^2/(4 pi) ---
+PASS: native graph-Laplacian symbol L(k) -> |k|^2 as k->0 (so G's small-k = continuum 1/k^2)
+PASS: inverse graph-Laplacian -> 1/(4 pi r): r*G(r) = (4pi/(2pi)^3)(pi/2) = 1/(4 pi) = 0.0796
+  analytic r*G(r) = 0.07958  (4 pi = native solid angle)
+PASS: => V(r) = -g^2 G(r) -> -g^2/(4 pi r) = -alpha_bare/r, alpha_bare = g^2/(4 pi) = 1/(4 pi) (g=1)
+--- Section R: residual after relocation (conditional narrowing) ---
+PASS: I1 is narrowed to field-integration + general energy-readout + native G + explicit source normalization + Casimir
+PASS: residual remains the general energy-readout bridge + source-coupling normalization + Casimir + leading-order
+
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

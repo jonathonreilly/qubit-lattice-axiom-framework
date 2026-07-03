@@ -5,11 +5,18 @@
 **Status authority:** source-note proposal only; audit verdict and
 effective status are set by the independent audit lane.
 **Primary runner:** [`scripts/frontier_g_star_sm_content_from_supplied_thermal_inventory.py`](../scripts/frontier_g_star_sm_content_from_supplied_thermal_inventory.py)
+**Thermal `7/8` bridge:** [`GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md),
+with runner
+[`scripts/audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py`](../scripts/audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py)
+and cache
+[`logs/runner-cache/audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.txt`](../logs/runner-cache/audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.txt).
 
 ## Claim
 
-Given the supplied Standard Model thermal-inventory premise packet P1-P5,
-with retained support for the generation count, color count, one-generation
+Given the registered Standard Model thermal-inventory premise packet P1-P5
+from
+[`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md),
+with support for the generation count, color count, one-generation
 singlet-completion structure, and fermion thermal weight where cited below,
 the relativistic effective degrees-of-freedom count
 
@@ -21,21 +28,24 @@ evaluated for the unbroken-Standard-Model thermal inventory at temperatures
 `T` above the electroweak crossover (so that the listed Standard Model
 particles are relativistic), is a bounded proof-walk on:
 
-- a small set of named retained group-theoretic / structural support inputs
-  (the **retained support packet** R1-R6 below);
-- an explicit Standard Model thermal-inventory premise packet
-  (P1-P5 below) declared and not re-derived here.
+- a small set of named group-theoretic / structural / thermal support inputs
+  (the **support packet** R1-R6 below);
+- the retained-bounded declared-inventory premise packet
+  (P1-P5 below) registered in `SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`.
 
 This is a bounded proof-walk of the `g_* = 106.75` arithmetic. It does not
 add a new axiom, a new repo-wide theory class, or a retained-status claim.
-The Standard Model thermal inventory itself remains an external physical
-input named in P1-P5.
+The Standard Model thermal inventory itself remains a declared physical
+inventory premise, not a framework derivation of which particles nature
+contains. The repair here is that the premise packet is no longer anonymous:
+it is routed through the retained-bounded finite declared-inventory arithmetic
+certificate.
 
-## Retained support packet (R1-R6)
+## Support packet (R1-R6)
 
-The following retained authorities support the framework-side pieces consumed
-by the proof-walk. Each is currently
-`retained` or `retained_bounded` on the live audit ledger.
+The following authorities and source bridges support the framework-side pieces
+consumed by the proof-walk. The independent audit lane owns all final status
+classification.
 
 - **R1 Three generations** (three flavour copies for each fermion species).
   Supplied by
@@ -69,21 +79,28 @@ by the proof-walk. Each is currently
   (`retained_bounded`), supplying the Fermi-Dirac versus Bose-Einstein
   occupation distinction consumed by R6.
 - **R6 Fermion-to-boson thermal weight `7/8` at `d = 4`.**
-  Supplied by
+  Supplied directly by
+  [`GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md),
+  which derives the per-fermion-degree-of-freedom Stefan-Boltzmann
+  weight from the Bose/Fermi thermal integrals
+  `I_F/I_B = η(4)/ζ(4) = 7/8`. The older
   [`HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md)
-  (`retained`), giving the per-fermion-degree-of-freedom Stefan-Boltzmann
-  weight `7/8 = η(4)/ζ(4)`.
+  remains a parallel `d=4` eta/zeta arithmetic identity, not the
+  thermal-integral authority consumed by this `g_*` row.
 
 The parent inventory note
 `SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md` is the existing
 finite declared-inventory arithmetic certificate this proof-walk traces as
-context. It is not a load-bearing dependency for this row, because this row
-repeats the arithmetic directly.
+the registered P1-P5 premise packet. It is now a load-bearing dependency for
+this row: the local proof-walk repeats the arithmetic directly, while the
+parent note supplies the retained-bounded declared-inventory boundary.
 
-## Supplied premise packet (P1-P5, not framework-retained)
+## Registered premise packet (P1-P5)
 
 The following premise packet supplies the Standard Model thermal inventory.
-P1-P5 are declared explicitly for this proof-walk; they are not derived from
+P1-P5 are declared explicitly in the retained-bounded finite inventory wrapper
+[`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md)
+and repeated here so this row is self-contained. They are not derived from
 the framework here and are not promoted to axioms.
 
 - **P1 Declared Standard Model particle inventory.** The relativistic
@@ -119,6 +136,17 @@ P1 names the particle inventory; P2-P4 name the per-particle relativistic
 state counts used in the proof-walk arithmetic; P5 names the temperature
 regime in which the relativistic count is the appropriate accounting.
 
+**Counting premise discipline.** P1-P5 are declared explicitly and are the
+load-bearing source for the Standard Model state-count conventions not
+otherwise derived here. In particular, P1 supplies the listed gauge and
+matter multiplets, P2 supplies the two-transverse-polarization state count
+for massless vector bosons, P3 supplies the four-real-component Higgs-doublet
+count, P4 supplies the Dirac/Weyl thermal state-count convention for
+fermions, and P5 supplies the relativistic-temperature regime. The retained
+support packet checks framework-side consistency where cited, while the
+retained-bounded inventory wrapper registers the finite SM inventory premise
+packet as the physical input boundary.
+
 ## Proof-walk
 
 Each row of the table is a step in the parent inventory note's arithmetic.
@@ -130,12 +158,12 @@ that no lattice-action quantity (plaquette, staggered phase, link unitary,
 | Step | Statement | Load-bearing input | Lattice-action input? |
 |---|---|---|---|
 | (B1) | Gluon DOF count `8 (color) * 2 (transverse) = 16` | R2 (`dim adj(SU(3)) = 8`) + P2 | no |
-| (B2) | SU(2)_L gauge boson DOF count `3 (W^a, a=1,2,3) * 2 = 6` | R4 (`dim adj(SU(2)) = 3`) + P1 + P2 | no |
+| (B2) | SU(2)_L gauge boson DOF count `3 (W^a, a=1,2,3) * 2 = 6` | P1 (three `W^a`) + P2 | no |
 | (B3) | U(1)_Y gauge boson DOF count `1 (B) * 2 = 2` | P1 (single B) + P2 | no |
 | (B4) | Higgs doublet DOF count `4 (real scalar components)` | P1 + P3 | no |
 | (B5) | Bosonic total `N_bosons = 16 + 6 + 2 + 4 = 28` | (B1)+(B2)+(B3)+(B4) | no |
-| (B6) | Quark DOF count `n_gen * (n_up + n_down) * N_c * 4 = 3 * 2 * 3 * 4 = 72` | R1 (`n_gen = 3`) + R2 (`N_c = 3`) + R3 (`u_R + d_R`) + P4 | no |
-| (B7) | Charged lepton DOF count `n_gen * 4 = 3 * 4 = 12` | R1 + R3 (`e_R`) + P4 | no |
+| (B6) | Quark DOF count `n_gen * (n_up + n_down) * N_c * 4 = 3 * 2 * 3 * 4 = 72` | R1 (`n_gen = 3`) + R2 (`N_c = 3`) + P1 (quark multiplets) + P4 | no |
+| (B7) | Charged lepton DOF count `n_gen * 4 = 3 * 4 = 12` | R1 + P1 (`e_R`) + P4 | no |
 | (B8) | Active neutrino DOF count `n_gen * 2 = 3 * 2 = 6` | R1 + P1 (no `nu_R` in thermal inventory) + P4 | no |
 | (B9) | Fermionic total `N_fermions = 72 + 12 + 6 = 90` | (B6)+(B7)+(B8) | no |
 | (B10) | Thermal weight `7/8` for fermions | R5 + R6 | no |
@@ -170,7 +198,7 @@ N_fermions = n_gen * [ N_c * (n_up + n_down) * 4 (Dirac)
            = 90.
 ```
 
-With the retained fermion thermal weight `7/8`,
+With the supplied fermion thermal weight bridge `7/8`,
 
 ```text
 g_*  =  N_bosons  +  (7/8) * N_fermions
@@ -188,8 +216,14 @@ parent inventory note's totals `28` and `90`.
 
 ## Dependencies
 
-Load-bearing retained support dependencies for this proof-walk:
+Load-bearing support dependencies for this proof-walk:
 
+- [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md)
+  retained-bounded finite declared-inventory arithmetic certificate for P1-P5:
+  the unbroken Standard Model thermal inventory, vector/scalar/Dirac/Weyl
+  state-count conventions, and the `T`-regime premise. This is a registered
+  physical-inventory premise wrapper, not a framework derivation of the SM
+  particle list.
 - [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
   retained three-generation observable algebra (`retained_bounded`).
 - [`THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md`](THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md)
@@ -207,14 +241,19 @@ Load-bearing retained support dependencies for this proof-walk:
   retained spin-statistics cardinality (`retained`).
 - [`SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
   retained spin-statistics Berezin route (`retained_bounded`).
+- [`GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
+  direct Stefan-Boltzmann / thermal-integral derivation of the
+  fermion-to-boson `7/8` weight.
 - [`HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md)
-  retained fermion-to-boson thermal weight at `d = 4` (`retained`).
+  parallel `d=4` eta/zeta arithmetic identity; context for the same
+  rational value, not the thermal-integral bridge.
 
-These are retained support authorities for a bounded theorem. The row remains
-unaudited until the independent audit lane reviews this note, its
-dependencies, the supplied premise packet, and the runner. The Standard Model
-thermal inventory still comes from P1-P5, not from these retained support
-authorities alone.
+These are support authorities and bridges for a bounded theorem. The row
+remains unaudited until the independent audit lane reviews this note, its
+dependencies, the registered P1-P5 premise packet, and the runner. The
+Standard Model thermal inventory still comes from P1-P5 and the finite
+declared-inventory wrapper, not from the framework-side support authorities
+alone.
 
 Non-load-bearing context:
 
@@ -226,8 +265,8 @@ Non-load-bearing context:
 - `AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md` records the
   bosonic Stefan-Boltzmann constant on the framework substrate;
   context-only here.
-- `SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md` is the parent
-  finite declared-inventory arithmetic certificate; context-only here.
+- `SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md` is load-bearing for
+  P1-P5 above. It is no longer context-only for this row.
 
 ## Boundaries
 
@@ -245,8 +284,10 @@ This proof-walk does not close:
 - derivation of the Dirac four-dof / Weyl two-dof state count per fermion
   species (premise P4);
 - the `T > 250 GeV` relativistic-content premise (P5);
-- thermal-equilibrium dynamics or kinetic-theory derivation of the
-  Boltzmann integral that defines `g_*` in the first place;
+- thermal-equilibrium dynamics, chemical-potential assumptions, or
+  decoupling thresholds beyond the supplied P1-P5 thermal-inventory
+  premise packet; the one-particle Bose/Fermi integral ratio used for
+  the `7/8` weight is supplied by R6;
 - any downstream cosmology or DM-leptogenesis claim that consumes `g_*`;
 - any parent theorem/status promotion (the proof-walk records the
   factorised arithmetic as a separate bounded identity; the parent
@@ -265,6 +306,6 @@ Expected:
 ```text
 TOTAL: PASS=<n> FAIL=0
 VERDICT: bounded proof-walk passes; g_* = 106.75 follows from the
-retained support packet R1-R6 plus supplied premise packet P1-P5 by exact
+support packet R1-R6 plus supplied premise packet P1-P5 by exact
 rational arithmetic.
 ```

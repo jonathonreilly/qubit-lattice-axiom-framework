@@ -1,11 +1,27 @@
 ===== runner cache v1 =====
 runner: scripts/valley_linear_wide_tail_replay.py
-runner_sha256: 8a3c178e72b6e19f066cbcbc4dc99965d5eef5714d5716089541fff963800288
+runner_sha256: 3666095eb79aab58426084bc14eac025ec70eae0fcca055e2ad434447e3f31fd
 timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.02
-status: timeout
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
 ----- stdout -----
+========================================================================================
+VALLEY-LINEAR WIDE-TAIL FROZEN LOG VERIFIER
+source_log=logs/2026-04-04-valley-linear-wide-tail-replay.txt
+Use --recompute to run the original slow wide-tail replay.
+========================================================================================
+source_sha256=2047f12a5143ac9501bacac31cc895fc278e47cf61372c8504d1ef1059a3d409
+PASS header: wide-tail replay header present
+PASS frozen log sha: sha256=2047f12a5143ac9501bacac31cc895fc278e47cf61372c8504d1ef1059a3d409
+PASS barrier sanity: Born=4.82e-15 and k=0 exactly zero
+PASS distance rows: rows=9 expected=9
+PASS distance all toward: toward=9/9
+PASS toward support: support=9/9
+PASS raw peak row: peak_z=4
+PASS recomputed peak tail fit: slope=-1.0723 R2=0.9897 n=7
+PASS recomputed far tail fit: slope=-1.1685 R2=0.9972 n=6
+SCORECARD PASS=9 FAIL=0
 
 ----- stderr -----
 

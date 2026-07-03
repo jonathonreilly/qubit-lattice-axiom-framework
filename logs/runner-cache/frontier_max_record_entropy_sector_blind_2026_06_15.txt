@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/frontier_max_record_entropy_sector_blind_2026_06_15.py
+runner_sha256: d370a0963b39af1db162ba304a35831b7ac789a8ddccc631dc2d1636cdc9d1e4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.43
+status: ok
+----- stdout -----
+  PASS  P_s rank 1, P_d rank 2 (C3 isotype split 1+2)
+  PASS  P_s, P_d commute with C (isotype projectors of C3)
+
+[1] 2-sector record entropy S2(r) is maximized at r=1/2 (setup; retained-bounded siblings)
+  PASS  argmax_r S2(r) = 1/2 (grid, 4e5 pts)
+  PASS  S2(1/2) = ln 2 (equipartition w_s=w_d=1/2)
+  PASS  at r=1/2 the record weights are equal (w_s=w_d=1/2)
+
+[2] MAKE-OR-BREAK conditional test: separable color cancels => argmax r=1/2
+  PASS  [lepton Nc=1] supplied separable factor d=1 leaves generation record weights invariant
+  PASS  [quark Nc=3] supplied separable factor d=3 leaves generation record weights invariant
+  PASS  [weak-doublet] supplied separable factor d=2 leaves generation record weights invariant
+  PASS  [adjoint] supplied separable factor d=8 leaves generation record weights invariant
+  PASS  argmax_r S2(r; color d=1) equals the bare selector r_star (sector-blind)
+  PASS  argmax_r S2(r; color d=2) equals the bare selector r_star (sector-blind)
+  PASS  argmax_r S2(r; color d=3) equals the bare selector r_star (sector-blind)
+  PASS  argmax_r S2(r; color d=8) equals the bare selector r_star (sector-blind)
+  PASS  all color dims give the SAME selector (max-entropy is sector-blind, computed not assumed)
+  PASS  CONTROL alpha_s=alpha_d (supplied uniform route): argmax recovers r_star=1/2
+  PASS  CONTROL alpha_s=3,alpha_d=1 (non-uniform route): argmax shifts to r=3/2 (= alpha_s/2alpha_d)
+  PASS  CONTROL: the non-uniform argmax is NOT 1/2 (sector-blindness requires supplied uniformity)
+
+[3] registered quark r are sub-maximal entropy => universal max-entropy falsifies them
+  PASS  S2(r_down=0.597) < S2(1/2) strictly (sub-maximal => not the max-entropy point)
+  PASS  S2(r_up=0.773) < S2(1/2) strictly (sub-maximal => not the max-entropy point)
+  PASS  COMPUTED max-entropy selector r_star conflicts with registered r_down=0.597 => weight-leak
+  PASS  COMPUTED max-entropy selector r_star conflicts with registered r_up=0.773 => weight-leak
+
+[4] 'max entropy' is ambiguous: weight-uniform -> r=1/2, state-uniform (I/3) -> r=1
+  PASS  state-uniform (I/3) gives r=1 (dimension weighting)
+  PASS  the two max-entropy readings give DIFFERENT r (1/2 != 1) => the reading is a measure choice
+
+[5] conditional degree-0 gauge channel is scalar on the generation index
+  PASS  supplied uniform gauge operator commutes with C
+  PASS  isotype projector P0=(I+C+C^2)/3 equals the singlet projector P_s
+  PASS  supplied uniform gauge operator leaves the isotype projector invariant ([Gop,P0]=0)
+  PASS  CONTROL: a generation-NON-uniform operator breaks [.,C]=0 (would be needed to shift r)
+
+[6] firewall: the map forces no r; all sector settings are valid dial outputs
+  PASS  Q(r)=1/3+2r/3 in [1/3,1] for r in {0,1/2,0.597,0.773,1} (all valid, none forced)
+  PASS  the four sector settings map to four DISTINCT Koide Q (free dial, none privileged by the map)
+  PASS  max-entropy selector r_star matches ONLY the lepton setting, not the quark/dimension settings
+
+[7] source-boundary guard: conditional algebraic selector theorem, not physical bridge
+  PASS  source claim type uses canonical no_go vocabulary
+  PASS  source names the supplied gauge-uniform separable selector hypothesis
+  PASS  source says the separable carrier is not a retained physical bridge
+  PASS  registered quark values are non-load-bearing comparators
+  PASS  source no longer claims retained gauge-uniformity
+
+TOTAL: PASS=35 FAIL=0
+
+----- stderr -----
+

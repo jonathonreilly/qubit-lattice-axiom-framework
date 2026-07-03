@@ -26,6 +26,10 @@ from math import erf, sqrt
 import numpy as np
 from scipy.integrate import solve_ivp
 
+# Broad scan runner. Declare the completed cache budget explicitly so audit
+# execution does not fall back to the legacy 120 s default.
+AUDIT_TIMEOUT_SEC = 600
+
 np.set_printoptions(precision=10, linewidth=120)
 
 PASS = 0

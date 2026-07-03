@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/p_flux_point_zero_set_check_2026_06_10.py
+runner_sha256: 163b65e5de13673e6041246d11684488bb9e8eb2f3ae6a5038d82d229beeed5c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 96.74
+status: ok
+----- stdout -----
+========================================================================
+[A] branch construction + zero-set geometry + comparator
+========================================================================
+[PASS]  1. [A] both branches Hermitian; frame-invariant uniform flux K0 phi=+1, K1 phi=-1 (licensed two-class surface, re-derived)
+[PASS]  2. [A] zero-mode counts: K0 (L=4,8,12) = (20,68,140); K1 = (8,8,8)
+[PASS]  3. [A] K0 kernel = lattice trace of the codimension-1 symbol surface sum_mu cos p_mu = 0 (symbol count matches eigencount at L=4,8,12)
+[PASS]  4. [A] zero-set geometry separator (computed): K0 growth exponent 1.78 (extensive, surface-like); K1 count L-independent = 8 (point-like)
+[PASS]  5. [A] comparator (scalar NN + on-site -6, declared OFF the two-class surface): point-like zero set (1,1,1) — 'point-like zero set' is non-vacuous and NOT synonymous with first-order kinetic order
+
+========================================================================
+[B] escape (i): spectral/clustering candidates are
+    branch-neutral on the licensed surface
+========================================================================
+[PASS]  6. [B] parser visibility: cluster-decomposition row retained_bounded; microcausality-LR theorem row retained_bounded; log-transfer quasilocality row retained_bounded; analytic-dispersion bridge row unaudited. These classifications are reported for context only; the selector test below uses the rows' scope and branch computations.
+[PASS]  7. [B] textual: the clustering row's load-bearing L2 is 'conditional on a transfer-matrix spectral gap Delta_T > 0' by its own claim-scope text; unconditional clustering is explicitly out of its load-bearing scope
+[PASS]  8. [B] at m=0 (the licensed surface): spectral gap = 0 on BOTH branches (L=4,8) — the gap hypothesis fails branch-neutrally; the gap-conditional clustering row cannot fire on either side
+[PASS]  9. [B] shared mass deformation: eps(x)=(-1)^(x1+x2+x3) anticommutes with BOTH branch operators; gap(h + 0.5 eps) = 0.5 EXACTLY on both branches (L=4,8) — where the gap hypothesis is satisfiable on this surface it is satisfied branch-identically, so gap-conditional clustering cannot separate
+[PASS] 10. [B] LR/locality data branch-identical (range 1, per-edge |t| multisets equal) so LR-type bounds are branch-neutral; the data that DO separate are spectral density near E=0 (L=12, window 0.5: K0 236 vs K1 8 modes) — not consumed by the linked candidate rows
+RESIDUAL (declared-open): the density-of-states / correlation-decay separator at criticality is real and computed, but the linked candidate rows do not state a requirement on it; supplying one is exactly escape (i), still open (boundary B-Z2)
+
+========================================================================
+[C] escape (ii): the count/no-proper-quotient restatement
+    dichotomy — no reading separates
+========================================================================
+[PASS] 11. [C] carrier-conditional (VERBATIM retained) reading on K1: hw=1 projectors + restricted C3 generate M_3(C) (dim 9), commutant dim 1 (irreducible => no proper quotient), count = 3
+[PASS] 12. [C] carrier-conditional reading on K0: IDENTICAL readouts (M_3(C) dim 9, commutant 1, count 3) on the embedded carrier => the verbatim retained statement is TRUE on both branches and cannot separate
+[PASS] 13. [C] kernel-global no-proper-quotient reading on K1: the restricted algebra on the FULL kernel has commutant dim 4 > 1 (the four Hamming-class blocks) — proper invariant sectors EXIST, the kernel-global reading is FALSE on the staggered branch itself
+[PASS] 14. [C] kernel-global reading on K0: commutant dim 8 > 1 — FALSE there too; the kernel-global no-proper-quotient reading is branch-neutrally FALSE (it separates nothing and is not the retained statement anyway)
+[PASS] 15. [C] kernel-global species-count readouts: distinct joint characters K1 8, K0 20; C3-orbit classes K1 4, K0 8 — NEVER 3 on either branch: the retained 'count = 3' exists only after the carrier + hw=1 restriction, which BOTH branches pass
+[PASS] 16. [C] textual license audit: both count rows retained, and both quantify ONLY over the finite carrier — the no-proper-quotient row declares 'On the retained finite C^3 carrier ... does not assert the full physical staggered-carrier realization'; the count corollary quantifies over quotients Q : H_hw=1 -> H_red — the kernel-global restatement is NOT licensed by their text
+[PASS] 17. [C] the separating increment isolated: ker-minus-carrier dim K1 (L=4,8) = (0, 0), K0 = (12, 60) — adding the single clause 'ker = carrier' to the retained battery flips K0 to FAIL; that clause appears in NO retained text and is exactly escape (ii), still unsupplied
+RESIDUAL (declared-open): the kernel-global restatement of the count/no-proper-quotient rows is irreducibly NEW input: carrier-conditional readings tie (TRUE/TRUE), kernel-global readings tie (FALSE/FALSE); only the non-retained 'ker = carrier' clause separates (boundary B-Z1)
+
+========================================================================
+[D] escape (iii) boundary, Record route, falsification,
+    inversion-guard compliance
+========================================================================
+[PASS] 18. [D] escape (iii) boundary: the log-transfer quasilocality row is by its own scope line 'free (U = 1) bilinear staggered two-step sector only', and its sharp rate arcsinh(m) -> 0 at m = 0. On the licensed massless surface this does not supply a branch-neutral point-zero-set or kernel-exactness selector.
+[PASS] 19. [D] Record route killed by the rows' own conditionality: the Record axiom 'supplies no readout context, decomposition, ... sector-generation rule'; the retained record-function row is conditional on a SUPPLIED finite decomposition — neither bounds the massless-sector dimension of a kinetic operator
+[PASS] 20. [D] falsification leg 1 (non-vacuity): the candidate requirement (carrier package AND point-like zero set / kernel exactness) selects EXACTLY K1 among {K0, K1, comparator}: K0 fails the zero-set clause, the point-zero comparator fails the carrier clause — the requirement is non-vacuous and would force phi = -1 immediately IF any clause of it were retained
+[PASS] 21. [D] falsification leg 2 (remove the non-retained input): dropping the zero-set/exactness clause and testing only the retained carrier-conditional content restores the PASS/PASS tie — the ENTIRE selection lives in the unsupplied clause
+[PASS] 22. [D] turn-1 inversion-guard compliance (computed): the matched count 3 forces nothing here — every kernel-global count readout differs from 3 on both branches, and the only reading that yields 3 (carrier + hw=1) ties; the count is consumed solely as a tested readout value, never as a forcing input (index-pairing no-go guards respected)
+RESIDUAL (declared-open): predicate-G heritage (B-P1 of the matter-content no-go): the kernel-sector realization reading remains a declared, non-retained bridge on both branches (boundary B-Z3)
+RESIDUAL (declared-open): finite volumes L in {4,8,12}, PBC; wrap-convention (L mod 4) carrier arithmetic inherited as branch-symmetric convention data (boundary B-Z4)
+RESIDUAL (declared-open): the kernel-global readings tested are the two canonical ones (invariant-subspace/quotient structure; species-count readouts); readings that first restrict to the carrier tie by the parent witness — exhaustiveness over all conceivable restatements is not claimed (boundary B-Z5)
+
+TOTAL: PASS=22 FAIL=0
+VERDICT: the point-like-zero-set / kernel-equals-carrier requirement (escapes (i)/(ii) of the matter-content
+         no-go) has NO supplier among the tested candidate rows. The clustering row is gap-conditional and branch-neutral
+         (gap 0/0 at m=0; identical gap m under the shared staggered-mass deformation); the
+         log-transfer row is scoped/rate-limited at the massless surface; Record supplies no sector-dimension
+         bound. The count/no-proper-quotient package admits NO separating reading: carrier-conditional
+         readings are TRUE on both branches, kernel-global readings are FALSE on both branches (K1's own kernel
+         is reducible, commutant dim 4; counts 8/4 vs 20/8, never 3). The entire selection lives in the single
+         non-retained clause 'ker = carrier' (0/0 vs 12/60 extra modes) — exactly N6 escape (ii), still open.
+         phi = -1 remains underived; B-BIT survives, sharpened: any future selector must supply that clause
+         as genuinely separate input.
+
+----- stderr -----
+

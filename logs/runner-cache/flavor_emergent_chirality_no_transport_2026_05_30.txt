@@ -1,11 +1,27 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_emergent_chirality_no_transport_2026_05_30.py
-runner_sha256: 58e888f938f0c1e45e3aaaccf3520113c12964c9ada5bd3c730a0e57873b0a82
+runner_sha256: 5e92e08adb79e516e33a3ac0b0e86384a7ad65c2330444f5d87ee892dc5e1891
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.21
 status: ok
 ----- stdout -----
+[PASS] SRC1 target note links the one-hop S3-time carrier notes
+       S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE_2026-05-17.md, S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE_2026-05-17.md, S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE_2026-05-17.md, S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md
+[PASS] SRC2 target note links retained-bounded chiral 3+1D authority notes
+       CHIRAL_3PLUS1D_COUPLED_COIN_NOTE.md, CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md
+[PASS] SRC3 target note links chiral runner/cache sources
+       chiral caches are present and ok
+[PASS] SRC4 chiral coupled-coin row is current retained_bounded
+       bounded authority for the declared finite coupled-coin scan
+[PASS] SRC5 chiral boundary-phase row is current retained_bounded
+       bounded authority for the declared finite boundary phase scan
+[PASS] SRC6 S3-time source notes are present but not status-promoted here
+       this runner does not claim an audit status for the S3-time carrier notes
+[PASS] SRC7 displayed forced-transport numerics are source-visible
+       the target note exposes the Q/norm numerics that motivated the audit request
+[PASS] SRC8 L3(1,2)=2/9 next-path coefficient is exact in the source packet
+       2/9 is checked as exact arithmetic; operator realization remains open
 [PASS] V1 native chirality eps|hw1=-I3: commutes R, does NOT anticommute Gamma_chi
        ||{eps,Gchi}||=3.4641
 [PASS] V2 Connes-Lott grading I3(x)sigma3 INERT: {G(x)s1, I3(x)s3}=0 for every G
@@ -15,7 +31,7 @@ status: ok
 [PASS] V4 emergent-time carrier Xi=Theta(x)V factorizes; identity on R^3_gen
        no generation index in s3_time stack -> transports no chirality
 
-SCORECARD PASS=4 FAIL=0
+SCORECARD PASS=12 FAIL=0
 VERDICT: spacetime(x)generation FACTORIZES; emergent time generation-blind;
 tensor-product loophole open but uncrossed by any NATIVE filling; the single
 unsupplied import = C3-orbit-splitting chiral grading on R^3_gen. Next path off the

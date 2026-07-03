@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gravity_closure_from_weak_field_linear_response.py
+runner_sha256: 2008eb2a1050d8b5bff9750673c1c099a05e9f3979996699ed697f61385d5a0d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
+PASS T1 closure: phi=G_0 rho satisfies Poisson H phi = rho (=> L=H=-Delta, L^{-1}=G_0)
+PASS T2 UNIQUENESS: a perturbed kernel K!=G_0 fails the field equation (H K rho != rho)
+PASS T3 FIRST-ORDER linearity: phi[a r1+b r2] = a phi[r1] + b phi[r2]
+PASS T4 point source: H (G_0 e_y) = e_y (neutral) -- the Green-function/1-over-r potential
+PASS T4b Green-function column decays with distance (potential falls off)
+PASS T5 NONLINEAR BOUNDARY: back-reaction H->H+phi changes the kernel (G_0' != G_0), loop moves
+PASS T5b => closure is LINEAR-order only (nonlinear loop nonconvergent, retained no-go)
+
+kernel-move under one back-reaction step = 0.904 (nonzero => nonlinear loop moves)
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

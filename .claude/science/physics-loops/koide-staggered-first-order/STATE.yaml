@@ -1,0 +1,33 @@
+loop_slug: koide-staggered-first-order
+mode: run
+block: 2
+branch: physics-loop/koide-staggered-first-order-block02-20260611 (stacked on block01)
+goal: >
+  Perform the not-yet-done first-order construction of the generation
+  determinant from the actual one-component staggered matter measure
+  (the named open sub-question of the 2026-06-05 meta-note and
+  2026-06-08 static-readout no-go), and locate exactly where the
+  count-twice structure enters.
+target_status: best-honest-status
+active_route: rotation-channel probe coupling on the gate-note surface
+cycle_outcome: >
+  bounded_theorem candidate landed: measure is first-order (explicit
+  Grassmann expansion); corner factorization (a+b+c)^2 * det3^2 exact;
+  count-twice localized onto the K-reality restriction c = conj(b);
+  doublet channels are one K-orbit. Runner 19/19, 4 declared residuals.
+files:
+  - docs/KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  - scripts/frontier_koide_staggered_first_order_generation_determinant_2026_06_11.py
+  - logs/runner-cache/frontier_koide_staggered_first_order_generation_determinant_2026_06_11.txt
+open_imports:
+  - probe coupling form (rotation channel declared, not derived)
+  - gate-note section-5 residuals (inherited at declared grades)
+next_exact_action: >
+  Block02 closed the channel-generality residual (complete equivariant
+  channel space classified; holomorphy channel-independent; count-twice
+  = antiunitary-tied sections). The remaining selection is the named
+  owner-decision premise (reading section: tied vs holomorphic-with-
+  K-orbit-outcomes). No further derivation cycle is queued on this atom
+  at the bilinear level; next frontier options are interacting-action
+  effects or the owner decision itself.
+stop_condition: single-block run; PR opened, then stop.

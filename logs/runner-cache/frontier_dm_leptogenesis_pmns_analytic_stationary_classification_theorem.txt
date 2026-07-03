@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.py
-runner_sha256: 32283dc68b77d4586a37f0c4895c0b14ab59fcd6bed8ef8a375b67af12ccdec7
+runner_sha256: 19c4bd274cd66273d68e53ad96beadb26343e1d64bdc722859520572a6c11eea
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 17.12
+elapsed_sec: 20.11
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -21,7 +21,7 @@ Goal:
 PART 1: ENUMERATE THE CLOSURE STATIONARY BRANCHES
 ========================================================================================
   [PASS] The current fixed-seed closure surface yields two dominant stationary branches under broad multistart enumeration  (branch count=2, sampled solves=7)
-  [PASS] The lowest branch closes the favored column exactly  (etas=[1.         0.75917895 0.48458972])
+  [PASS] The lowest branch closes the favored column exactly  (etas=[1.       0.759179 0.48459 ])
   [PASS] The broad-multistart dominant pair is separated by a finite action gap  (ΔS_pair=0.869750837948)
 
   branch 0:
@@ -30,14 +30,14 @@ PART 1: ENUMERATE THE CLOSURE STATIONARY BRANCHES
     x          = [0.471675, 0.55381 , 0.664515]
     y          = [0.208063, 0.464382, 0.247555]
     delta      = -1.856375564645e-07
-    eta/eta_obs= [1.         0.75917895 0.48458972]
+    eta/eta_obs= [1.       0.759179 0.48459 ]
   branch 1:
     count      = 1
     S_rel      = 1.110657539338
     x          = [0.790189, 0.406763, 0.493048]
     y          = [0.586185, 0.167566, 0.166248]
     delta      = -3.189531894172e-07
-    eta/eta_obs= [1.         0.94763537 0.95875999]
+    eta/eta_obs= [1.       0.947635 0.95876 ]
 
 ========================================================================================
 PART 1: CLOSED-FORM REDUCTION OF THE N_e SOURCE BLOCK
@@ -72,7 +72,7 @@ This is a residual check on the sampled representatives, not a global selector p
     delta  = -1.856375564645e-07
     logits = [-0.342766, -0.182235, -0.173793,  0.629076]
     S_rel  = 0.240906701390
-    eta    = [1.         0.75917895 0.48458972]
+    eta    = [1.       0.759179 0.48459 ]
     KKT λ  = 1.928724672850
   [PASS] Branch 1 is closure-compatible on the imported fixed chart  (eta=1.000000000000)
   [PASS] Branch 1 obeys the delta-parity reduction to the real slice  (|ΔS|=0.00e+00, |Δeta|=0.00e+00)
@@ -84,7 +84,7 @@ This is a residual check on the sampled representatives, not a global selector p
     delta  = -3.189531894172e-07
     logits = [ 0.471664, -0.192377,  1.260154,  0.007897]
     S_rel  = 1.110657539338
-    eta    = [1.         0.94763537 0.95875999]
+    eta    = [1.       0.947635 0.95876 ]
     KKT λ  = 5.277344617960
 
 ========================================================================================
@@ -100,13 +100,13 @@ PART 3: SAMPLED DOMINANT-PAIR BRANCH DIAGNOSTIC
     x          = [0.471675, 0.55381 , 0.664515]
     y          = [0.208063, 0.464382, 0.247555]
     delta      = -1.856375564645e-07
-    eta/eta_obs= [1.         0.75917895 0.48458972]
+    eta/eta_obs= [1.       0.759179 0.48459 ]
   component 1:
     action     = 1.110657539338
     x          = [0.790189, 0.406763, 0.493048]
     y          = [0.586185, 0.167566, 0.166248]
     delta      = -3.189531894172e-07
-    eta/eta_obs= [1.         0.94763537 0.95875999]
+    eta/eta_obs= [1.       0.947635 0.95876 ]
 
   bounded diagnostic:
     - the sampled representatives reduce to the real slice by delta-evenness

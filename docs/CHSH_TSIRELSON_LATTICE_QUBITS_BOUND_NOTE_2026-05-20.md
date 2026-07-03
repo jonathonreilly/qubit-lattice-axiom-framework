@@ -2,11 +2,13 @@
 
 **Date:** 2026-05-20
 **Date of scope repair:** 2026-05-30
+**Date of tensor-carrier dependency repair:** 2026-06-06
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem
 **Status:** source-side proposal — independent audit lane owns the verdict
 **Primary runner:** [`scripts/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.py`](../scripts/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.py)
 **Cached runner output:** [`logs/runner-cache/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.txt`](../logs/runner-cache/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.txt)
+**Two-site tensor-carrier bridge:** [`TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
 **Companion to:** retained
 [`CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17.md`](CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17.md)
 (`retained`, positive_theorem). The existing retained note establishes
@@ -35,24 +37,33 @@ acts on `H_x ⊗ H_y = ℂ² ⊗ ℂ²` with operator norm bounded by
 
 with equality achievable on a maximally entangled qubit pair using
 the standard Tsirelson configuration. This is the standard two-outcome
-CHSH surface: it is strictly tighter than the classical Bell bound
-`‖C‖ ≤ 2` (Bell 1964) but strictly looser than the algebraic bound
-`‖C‖ ≤ 4` (general-probability-theory).
+CHSH surface: it is strictly looser than the classical Bell bound
+`‖C‖ ≤ 2` (Bell 1964) but strictly tighter than the algebraic/no-signaling
+bound `‖C‖ ≤ 4` (general-probability-theory).
 
-The framework's qubit-lattice substrate (A1+A2 of
-[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md))
-has state-space witnesses that **saturate Tsirelson's bound** at
-maximally entangled site pairs. This is a kinematic operator-algebra
-statement, not a claim that framework dynamics prepares those Bell
-pairs.
+The framework's finite two-site qubit tensor surface, routed through the
+two-site tensor-carrier bridge above, has state-space witnesses that
+**saturate Tsirelson's bound** at maximally entangled site pairs. This is a
+kinematic operator-algebra statement, not a claim that framework dynamics
+prepares those Bell pairs.
 
 ## Setup
 
-By A1, the per-site operator algebra is `M_2(ℂ)`. By A2, sites are
-indexed by `Z^3` and compose by tensor product. For a pair of
-distinct sites `x ≠ y`, the joint Hilbert space is
-`H_{xy} = ℂ²_x ⊗ ℂ²_y` (4-dimensional) and the joint operator
-algebra is `A_{xy} = M_2(ℂ)_x ⊗ M_2(ℂ)_y = M_4(ℂ)`.
+By the current Quantum axiom in
+[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md), the
+per-site operator algebra is `M_2(ℂ)`. By the two-site tensor-carrier
+bridge
+[`TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md),
+the retained finite-block tensor surface specializes at distinct sites
+`x ≠ y` to the joint Hilbert space
+`H_{xy} = ℂ²_x ⊗ ℂ²_y` (4-dimensional) and joint operator algebra
+`A_{xy} = M_2(ℂ)_x ⊗ M_2(ℂ)_y = M_4(ℂ)`.
+
+This routing is not a derivation from operational locality alone. The
+retained no-go
+[`TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md`](TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md)
+keeps that boundary explicit: locality alone does not force the ordinary
+generated tensor product.
 
 By tensor locality
 ([`LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md`](LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md),
@@ -168,13 +179,16 @@ Tsirelson bound**.
 
 ## Admitted inputs
 
-1. **Tensor locality on the qubit lattice** — retained via
+1. **Two-site qubit tensor carrier and Bell vector state space** — routed
+   through
+   [`TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md).
+2. **Tensor locality on the qubit lattice** — retained via
    `LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10`.
-2. **Landau/Tsirelson square identity and commutator norm bound** — derived
+3. **Landau/Tsirelson square identity and commutator norm bound** — derived
    above as finite-dimensional operator algebra on the framework two-site
    tensor surface; Tsirelson 1980 and standard QI texts are cited in parallel,
    not imported as load-bearing authority.
-3. **Pauli/Bell saturation witness** — verified directly by the companion
+4. **Pauli/Bell saturation witness** — verified directly by the companion
    runner on `M_2(C) ⊗ M_2(C)`.
 
 ## Risk classification
@@ -192,9 +206,11 @@ CHSH surface between classical Bell and super-quantum PR.
 
 **Upstream framework dependencies** (load-bearing; markdown links):
 
-- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra + Z^3 substrate)
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — supplies the current Lattice and Quantum axiom wording
+- [`TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) — supplies the distinct-site `C²_x ⊗ C²_y` carrier, generated `M_4(C)` algebra, and Bell-vector state-space witness surface
 - [`CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17.md`](CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17.md) — retained companion supplying the structural CHSH bound this note tightens to Tsirelson
 - [`LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md`](LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md) — supplies tensor locality for the commuting-site-factors step
+- [`TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md`](TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md) — negative boundary showing that locality alone is not the tensor-composition proof route
 
 **Upstream standard-math imports** (named non-derivation):
 

@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/rp_trace_gibbs_radon_nikodym_certificate_2026_06_06.py
+runner_sha256: 85e5817681a6771918b954f63f909d52900e73bb1416a3140584997ed17bb946
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+[PASS] note states normalized-trace theorem as load-bearing scope
+[PASS] pre-record reference note is not a markdown load-bearing dependency
+[PASS] d=2: exp(-H) positive and Z_H=tau(exp(-H)) positive
+       min_eig(exp(-H))=2.004e-01, Z_H=4.03050163478+0j
+[PASS] d=2: D_H positive with tau(D_H)=1
+       min_eig(D_H)=4.972e-02, tau(D_H)=1+0j
+[PASS] d=2: omega_H(O)=tau(D_H O) is positive on sampled O>=0
+       2.591721e+00; 1.007605e+00; 2.265301e+00
+[PASS] d=2: normalized-trace formula equals density-matrix formula
+       max_diff=2.475e-16
+[PASS] d=4: exp(-H) positive and Z_H=tau(exp(-H)) positive
+       min_eig(exp(-H))=1.356e-01, Z_H=2.0540998341+6.93889390391e-18j
+[PASS] d=4: D_H positive with tau(D_H)=1
+       min_eig(D_H)=6.603e-02, tau(D_H)=1+1.92592994439e-34j
+[PASS] d=4: omega_H(O)=tau(D_H O) is positive on sampled O>=0
+       4.658735e+00; 1.805356e+01; 1.170425e+01
+[PASS] d=4: normalized-trace formula equals density-matrix formula
+       max_diff=9.531e-16
+[PASS] d=8: exp(-H) positive and Z_H=tau(exp(-H)) positive
+       min_eig(exp(-H))=1.123e-02, Z_H=7.34657952514-1.38777878078e-17j
+[PASS] d=8: D_H positive with tau(D_H)=1
+       min_eig(D_H)=1.529e-03, tau(D_H)=1+1.92592994439e-34j
+[PASS] d=8: omega_H(O)=tau(D_H O) is positive on sampled O>=0
+       1.239524e+01; 1.320524e+01; 1.268172e+01
+[PASS] d=8: normalized-trace formula equals density-matrix formula
+       max_diff=1.840e-15
+
+SCORECARD PASS=14 FAIL=0
+FINDING: finite Gibbs Radon-Nikodym density closes relative to tau_Lambda.
+rho_ref and Wilson/RP carrier bridges are explicitly out of scope.
+
+----- stderr -----
+

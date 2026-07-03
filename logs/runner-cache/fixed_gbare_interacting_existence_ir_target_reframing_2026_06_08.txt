@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/fixed_gbare_interacting_existence_ir_target_reframing_2026_06_08.py
+runner_sha256: 09e8565994e54be936ff1d844d6f6caa03e80b445fc0fcba8e197cd0d9801e50
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  Retained bounded dependencies for the fixed-g_bare surface
+==============================================================================
+  [PASS] G_BARE parent is retained_bounded in the current ledger  (effective_status=retained_bounded)
+  [PASS] G_BARE parent is audited as a bounded_theorem, not an unbounded positive theorem  (audit_status=audited_clean, claim_type=bounded_theorem)
+  [PASS] interacting transfer note is retained_bounded for the matter-sector floor dependency  (effective_status=retained_bounded)
+==============================================================================
+Part 2  Fixed Wilson-surface algebra
+==============================================================================
+  [PASS] beta = 2 N_c / g_bare^2 gives beta=6 for N_c=3, g_bare=1  (beta=6.0)
+  [PASS] g_bare=1 is fixed and nonzero
+  [PASS] the zero-coupling endpoint is not taken on this fixed surface
+==============================================================================
+Part 3  Source note scope guard
+==============================================================================
+  [PASS] source note contains narrowed-scope marker: No standard RG formula
+  [PASS] source note contains narrowed-scope marker: no two-loop coefficient
+  [PASS] source note contains narrowed-scope marker: asymptotic-scaling formula
+  [PASS] source note contains narrowed-scope marker: Delta_gauge(beta=6)>0
+  [PASS] source note contains narrowed-scope marker: fixed-lattice IR gap/clustering
+  [PASS] source note no longer carries load-bearing RG diagnostic: b_1=26
+  [PASS] source note no longer carries load-bearing RG diagnostic: two-loop/one-loop diagnostic
+  [PASS] source note no longer carries load-bearing RG diagnostic: finite dimensional-transmutation scale
+  [PASS] source note no longer carries load-bearing RG diagnostic: mu_conf/mu_lattice
+==============================================================================
+Part 4  Target reframing
+==============================================================================
+   FIXED SURFACE: retained_bounded g_bare=1, beta=6.
+   TARGET: fixed-lattice IR mass gap / clustering at beta=6.
+   OPEN: Delta_gauge(beta=6)>0 and coupled spectral control.
+   REMOVED: two-loop/asymptotic-scaling diagnostic as load-bearing support.
+  [PASS] reframing is bounded and does not assert interacting existence
+==============================================================================
+TOTAL: PASS=16 FAIL=0
+==============================================================================
+SCOPE: This packet is a framework-native fixed-g_bare target clarification.
+  It depends on the retained_bounded G_BARE surface and does not import
+  two-loop RG, asymptotic-scaling, or dimensional-transmutation arithmetic.
+  The open science target remains Delta_gauge(beta=6)>0 plus full coupled
+  IR spectral control. No new axiom, primitive, or audit verdict.
+runner_check_breakdown = {A: 16, B: 0, C: 0, D: 0, total_pass: 16}
+
+----- stderr -----
+

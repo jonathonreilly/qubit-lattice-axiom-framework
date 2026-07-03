@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/inventory_remote_branches.py
+runner_sha256: 6683cdeaccb1fb4ea01ec5a69a5016094aa75048cc1cf67a463d3e1db0fdb52b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+Branch cleanup inventory compatibility runner
+========================================================================
+  [PASS] branch cleanup note cites the canonical audit inventory tool
+  [PASS] canonical inventory tool exists outside scripts/ (docs/audit/scripts/inventory_remote_branches.py)
+  [PASS] canonical tool is documented as read-only inventory before execution
+  [PASS] canonical tool writes only the branch inventory data file
+  [PASS] checked-in branch inventory has a branch list
+  [PASS] checked-in branch inventory has category counts (active_24h,audit_lane,fully_merged,has_novel_paths,likely_squash_merged,protected)
+  [PASS] branch cleanup note remains documentation only
+SUMMARY: PASS=7 FAIL=0
+
+----- stderr -----
+

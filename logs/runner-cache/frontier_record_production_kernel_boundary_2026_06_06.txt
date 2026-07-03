@@ -1,0 +1,80 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_production_kernel_boundary_2026_06_06.py
+runner_sha256: d7aac1365c17096bc4bafa42052a985c4ec45438a1a1dd211c717264a1b32e0a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+
+========================================================================
+Post-record append/count layer is kernel-agnostic after atoms are supplied
+========================================================================
+[PASS] A1 target history is finite and binary
+       target=(1, 0, 1, 1, 0, 1)
+[PASS] A2 append composes supplied atoms
+[PASS] A3 count projection is additive under suffix append
+       (2, 4) + (1, 1) = (3, 5)
+[PASS] A4 post-record count of the realized target is independent of producer description
+       count=(2, 4)
+
+========================================================================
+Many distinct production kernels are valid on the same alphabet
+========================================================================
+[PASS] K normalized: fair IID
+[PASS] K normalized: dimension-biased IID
+[PASS] K normalized: reverse-biased IID
+[PASS] K normalized: Markov persistence
+[PASS] K normalized: scripted producer
+[PASS] K6 supplied kernels include distinct priors/generators
+       empty-prefix distributions=[(Fraction(0, 1), Fraction(1, 1)), (Fraction(1, 3), Fraction(2, 3)), (Fraction(1, 2), Fraction(1, 2)), (Fraction(2, 3), Fraction(1, 3))]
+
+========================================================================
+The same finite history does not identify the production law
+========================================================================
+[PASS] L positive likelihood: fair IID
+       P(target)=1/64
+[PASS] L positive likelihood: dimension-biased IID
+       P(target)=16/729
+[PASS] L positive likelihood: reverse-biased IID
+       P(target)=4/729
+[PASS] L positive likelihood: Markov persistence
+       P(target)=1/1000
+[PASS] L positive likelihood: scripted producer
+       P(target)=1
+[PASS] L6 the scripted producer can realize the target with probability one
+[PASS] L7 non-scripted kernels give different likelihoods for the same word
+       likelihoods={'fair IID': Fraction(1, 64), 'dimension-biased IID': Fraction(16, 729), 'reverse-biased IID': Fraction(4, 729), 'Markov persistence': Fraction(1, 1000), 'scripted producer': Fraction(1, 1)}
+[PASS] L8 a finite realized word is compatible with multiple kernels
+
+========================================================================
+Predictions and stable points change with the supplied kernel
+========================================================================
+[PASS] P1 fair and dimension-biased kernels give different expected next counts
+       fair=(Fraction(5, 2), Fraction(9, 2)), dimension=(Fraction(7, 3), Fraction(14, 3))
+[PASS] P2 reverse-biased kernel gives another expectation on the same post-record state
+       reverse=(Fraction(8, 3), Fraction(13, 3))
+[PASS] P3 realized next-count updates remain integral once an atom is supplied
+[PASS] P4 expected next counts are ensemble objects, not realized count updates
+       E_dimension=(Fraction(7, 3), Fraction(14, 3))
+[PASS] P5 equal-letter stationary prior is supplied, not selected by append grammar
+[PASS] P6 dimension-weighted stationary prior is also supplied on the same alphabet
+[PASS] P7 the same append/count grammar admits incompatible stable priors
+
+========================================================================
+Boundary certificate
+========================================================================
+[PASS] B1 append grammar contains no probability field
+       the append operation takes a supplied atom, not a distribution
+[PASS] B2 production kernels are extra data relative to post-record dynamics
+[PASS] B3 no finite-history observation in this runner selects a unique kernel
+[PASS] B4 stable dial language is allowed only after naming the generator/functional
+
+========================================================================
+Scorecard
+========================================================================
+PASS=29 FAIL=0
+FINDING: post-record append/count dynamics consumes realized atoms. The production kernel, likelihood law, expected update, transition rate, and stable dial point are supplied dynamics inputs, not outputs of the finite record alphabet.
+
+----- stderr -----
+

@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/pmns_tm2_trimaximal_from_record_central_sector_runner.py
+runner_sha256: 900746c3fbc549f765e636b199ca5b67df2fbf1f02c055aee47b778fc2453128
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+========================================================================
+PMNS TM2 TRIMAXIMAL COLUMN = RECORDED C3-SINGLET CENTRAL SECTOR (class A)
+========================================================================
+  [PASS] singlet central-sector projector P0 = J/3 (rank 1, onto W)
+  [PASS] central decomposition is complete & orthogonal: P0+P1=I, P0 P1=0
+  [PASS] record map is an idempotent dephasing channel (D(D(M))=D(M))
+  [PASS] singlet sector corner (flavor) overlaps |<corner|W>|^2 are all 1/3 (trimaximal)  ([0.3333, 0.3333, 0.3333])
+  [PASS] pre-record M_nu has nonzero singlet-doublet coherence (breaks W)  (||P0 M P1||=1.752)
+  [PASS] bare pre-record PMNS has NO trimaximal column
+  [PASS] recorded M_nu: singlet-doublet coherence is gone (not recorded)
+  [PASS] recorded M_nu has W as an eigenvector
+  [PASS] recorded PMNS has an exact trimaximal column  (col=[2])
+  [PASS] theta13 (within-doublet) is FREE: not pinned by the record  (min|U|^2=0.0410)
+  [PASS] recorded trimaximal column for ALL 200 random pre-record operators
+  [PASS] K-real C3 observable C+C^2 has spectrum {2,-1,-1}: singlet isolated, DOUBLET DEGENERATE
+  [PASS] => K-real monitoring resolves only 2 blocks (cannot split the doublet)
+  [PASS] splitting the doublet (3-mode) strictly needs the K-ODD i(C-C^2) (non-degenerate on doublet)
+  [PASS] monitored C3 observable C+C^dag = J - I (native double-shift corner coupling)
+  [PASS] magic reflection S = 2 P0 - I commutes with the record decomposition
+========================================================================
+TOTAL: PASS=16 FAIL=0
+VERDICT: trimaximal column = recorded C3-singlet central sector; pre-record W-breaking is not recorded. Derivable from RECORD + retained C3, modulo the K-reality predicate.
+
+----- stderr -----
+

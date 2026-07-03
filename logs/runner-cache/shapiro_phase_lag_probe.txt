@@ -1,59 +1,81 @@
 ===== runner cache v1 =====
 runner: scripts/shapiro_phase_lag_probe.py
-runner_sha256: 71ca1969a1988c73be5588a373cca951daceb0c49e1c0bc342b70d111bff9edb
-timeout_sec: 120
+runner_sha256: 9f8d3278fd6b3b689313680c8fa32c75c259461f1009cb4036841e4b63a515fb
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 193.46
 status: ok
 ----- stdout -----
 # Shapiro Delay Note
 
-**Date:** 2026-04-06
-**Status:** retained canonical replay of the discrete Shapiro-style phase lag
+**Date:** 2026-04-06; bounded-source repair 2026-06-17; static-cone rerun 2026-07-01
+**Status:** bounded finite replay / source-support packet; independent audit required before any effective status change
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
 
 ## Artifact Chain
 
 - [`scripts/shapiro_phase_lag_probe.py`](../scripts/shapiro_phase_lag_probe.py)
-- [`logs/2026-04-06-shapiro-delay-probe.txt`](../logs/2026-04-06-shapiro-delay-probe.txt)
-- [`docs/SHAPIRO_COMPLEX_INTERACTION_NOTE.md`](../docs/SHAPIRO_COMPLEX_INTERACTION_NOTE.md)
-- [`docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md`](../docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md)
-- [`docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md`](../docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md)
-- [`docs/CAUSAL_PROPAGATING_FIELD_NOTE.md`](../docs/CAUSAL_PROPAGATING_FIELD_NOTE.md)
-- [`docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md`](../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md)
+- [`logs/runner-cache/shapiro_phase_lag_probe.txt`](../logs/runner-cache/shapiro_phase_lag_probe.txt)
+- [`scripts/shapiro_delay_portable.py`](../scripts/shapiro_delay_portable.py) (finite propagation harness reused by this runner)
+- [`CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)
+- [`CAUSAL_FIELD_RECONCILIATION_NOTE.md`](CAUSAL_FIELD_RECONCILIATION_NOTE.md)
+- [`SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md`](SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md)
 
 ## Question
 
-What is the canonical in-repo replay for the retained c-dependent phase lag, keeping the exact zero control explicit and the seed-stable delay table intact?
+What finite in-repo replay supports the c-dependent proxy phase table while keeping the exact zero control and static-cone no-go boundary explicit?
 
 ## Exact Control
 
-- `c = inst`: phase lag `0.000 rad` on all three families
-- exact null survives by construction
+- `c = inst`: phase lag `0.000 rad` on all three configured families
+- exact null survives by direct detector-overlap comparison
 
-## Retained Phase Lag
+## Bounded Phase-Lag Replay
 
 | c | phase lag mean | family spread | fam1 | fam2 | fam3 |
 | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2.00 | +0.0401 rad | 0.0001 rad | +0.0401 | +0.0401 | +0.0400 |
-| 1.00 | +0.0500 rad | 0.0002 rad | +0.0499 | +0.0501 | +0.0499 |
-| 0.50 | +0.0621 rad | 0.0002 rad | +0.0621 | +0.0622 | +0.0620 |
-| 0.25 | +0.0679 rad | 0.0000 rad | +0.0679 | +0.0679 | +0.0679 |
+| `2.00` | `+0.0401 rad` | `0.0001 rad` | `+0.0401` | `+0.0401` | `+0.0400` |
+| `1.00` | `+0.0500 rad` | `0.0002 rad` | `+0.0499` | `+0.0501` | `+0.0499` |
+| `0.50` | `+0.0621 rad` | `0.0002 rad` | `+0.0621` | `+0.0622` | `+0.0620` |
+| `0.25` | `+0.0679 rad` | `0.0001 rad` | `+0.0679` | `+0.0679` | `+0.0679` |
 
-## Seed Stability
+## Static-cone discriminator rerun (2026-07-01)
 
-- the retained replay is seed-stable to three significant figures
-- family spread across the portable-grown replay stays at or below `2.0e-04 rad`
-- the phase lag increases monotonically as the field propagation speed decreases
+The static-cone mimic is recomputed in this packet against the repaired table:
+a frozen static cone field (position-only, same spatial support and values as the
+repaired cone construction, no propagation or scheduling notion) is propagated
+through a mirrored copy of the portable kernel, after the mirror is validated on
+the instantaneous field.
 
-## Narrow Read
+- kernel-mirror max detector-node delta: `0.000e+00`
+- static-cone mimic max phase delta over `24` (family, seed, c) rows: `0.000e+00 rad`
 
-- the phase lag is the discrete Shapiro-delay observable
-- the observable is portable across the three retained grown families
-- the observable remains proxy-level; absolute NV units are still external calibration work
+## Runner Checks
 
-## Final Verdict
+- `PASS` exact instantaneous zero control
+- `PASS` family spread below 2.5e-4 rad on every finite-c row
+- `PASS` phase increases monotonically as c decreases
+- `PASS` computed rows match the note table to displayed precision
+- `PASS` source note is bounded, not retained/proposed-retained
+- `PASS` source note records static-cone no-go boundary
+- `PASS` source note excludes lab calibration and physical speed claims
+- `PASS` source note points at live causal packet, not stale generated note
+- `PASS` mirrored kernel reproduces portable instantaneous detector state (max node delta < 1e-12)
+- `PASS` frozen static cone reproduces the repaired causal phase table (max row delta < 1e-10 rad)
+- `PASS` source note records the 2026-07-01 static-cone rerun against this repaired table
 
-**the retained c-dependent phase lag is a portable, seed-stable discrete Shapiro-delay observable with an exact zero control and family spread below 2e-4 rad**
+## Safe Read
+
+- family spread across the configured three-family replay stays at or below `2.4e-04 rad`
+- the proxy phase increases monotonically as the field propagation parameter `c` decreases
+- this is a finite replay over the declared harness, not a derivation of a physical Shapiro law
+- the static-cone boundary is recomputed in this packet against the repaired table: a frozen static cone shape can reproduce the same phase curve on this repaired harness, so this is not a unique causal discriminator
+- this is not a lab-calibrated diamond/NV prediction and not a physical field-speed measurement
+
+## Claim Boundary
+
+This row may support a bounded finite proxy replay if audit accepts the computation and scope. It does not retain the physical Shapiro-delay package, the failed diamond bridge rows, the complex-interaction renderer, or any unique-causality claim.
 
 ----- stderr -----
 

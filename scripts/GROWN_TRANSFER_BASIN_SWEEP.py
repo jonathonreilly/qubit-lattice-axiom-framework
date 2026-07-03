@@ -37,7 +37,7 @@ H = 0.5
 K = 5.0
 BETA = 0.8
 NL = 25
-PW = 8
+PW = 10
 MAX_D_PHYS = 3
 SEEDS = [0, 1, 2]
 SOURCE_Z = 3.0
@@ -58,9 +58,11 @@ class BasinRow:
     signed_neutral: float
     signed_exponent: float
     action_gamma0: float
+    action_gamma05: float
     action_fm0: float
     action_fm05: float
     action_toward: tuple[int, int]
+    action_away: tuple[int, int]
 
 
 def _nearest_node_in_layer(pos, layer_nodes, x_target, y_target, z_target):
@@ -258,9 +260,11 @@ def _score_row(drift: float, restore: float):
     signed_exp_vals = []
 
     action_gamma0_vals = []
+    action_gamma05_vals = []
     action_fm0_vals = []
     action_fm05_vals = []
     action_toward = [0, 0]
+    action_away = [0, 0]
     action_deflections = {g: [] for g in GAMMAS}
 
     for seed in SEEDS:
@@ -275,10 +279,13 @@ def _score_row(drift: float, restore: float):
 
         g0, fm0, fm05, toward_transition, deflection = _measure_complex_action(pos, adj, layers)
         action_gamma0_vals.append(g0)
+        action_gamma05_vals.append(deflection[0.5])
         action_fm0_vals.append(fm0)
         action_fm05_vals.append(fm05)
         action_toward[0] += toward_transition[0]
         action_toward[1] += toward_transition[1]
+        action_away[0] += 1 if deflection[0.0] < 0 else 0
+        action_away[1] += 1 if deflection[0.5] < 0 else 0
         for g, val in deflection.items():
             action_deflections[g].append(val)
 
@@ -290,9 +297,11 @@ def _score_row(drift: float, restore: float):
         signed_neutral=_mean(signed_neutral_vals),
         signed_exponent=_mean(signed_exp_vals),
         action_gamma0=_mean(action_gamma0_vals),
+        action_gamma05=_mean(action_gamma05_vals),
         action_fm0=_mean(action_fm0_vals),
         action_fm05=_mean(action_fm05_vals),
         action_toward=(action_toward[0], action_toward[1]),
+        action_away=(action_away[0], action_away[1]),
     )
 
 
@@ -309,6 +318,8 @@ def complex_action_survives(row: BasinRow) -> bool:
     return (
         row.action_toward[0] > 0
         and row.action_toward[1] == 0
+        and row.action_away[1] == len(SEEDS)
+        and row.action_gamma05 < 0.0
         and row.action_fm0 > 0.99
         and row.action_fm05 > 0.99
     )
@@ -320,12 +331,14 @@ def main() -> None:
     print("  narrow basin around the prior grown-row positives")
     print("=" * 100)
     print(f"Seeds: {SEEDS}")
+    print(f"H={H}, K={K}, BETA={BETA}, NL={NL}, PW={PW}, MAX_D_PHYS={MAX_D_PHYS}")
     print(f"Drifts: {DRIFTS}")
     print(f"Restores: {RESTORES}")
     print()
     print(
         f"{'drift':>5s} {'restore':>7s} {'zero':>12s} {'neutral':>12s} "
-        f"{'plus':>12s} {'exp':>7s} {'g0':>12s} {'F0':>6s} {'F05':>6s}"
+        f"{'plus':>12s} {'exp':>7s} {'g0':>12s} {'g05':>12s} "
+        f"{'F0':>6s} {'F05':>6s} {'toward':>11s} {'away':>11s}"
     )
     print("-" * 96)
     rows = []
@@ -337,7 +350,9 @@ def main() -> None:
                 f"{row.drift:5.2f} {row.restore:7.2f} "
                 f"{row.signed_zero:+12.3e} {row.signed_neutral:+12.3e} "
                 f"{row.signed_single:+12.3e} {row.signed_exponent:7.3f} "
-                f"{row.action_gamma0:+12.3e} {row.action_fm0:6.3f} {row.action_fm05:6.3f}"
+                f"{row.action_gamma0:+12.3e} {row.action_gamma05:+12.3e} "
+                f"{row.action_fm0:6.3f} {row.action_fm05:6.3f} "
+                f"{row.action_toward!s:>11s} {row.action_away!s:>11s}"
             )
 
     # Compact verdicts.
@@ -359,6 +374,7 @@ def main() -> None:
     print(f"  signed-source survivors: {len(signed_survivors)}/{len(rows)}")
     print(f"  complex-action survivors: {len(complex_survivors)}/{len(rows)}")
     print(f"  same-row survivors: {len(same_row_survivors)}/{len(rows)}")
+    print("  gamma=0.5 away-sign survivors require away_count == 3/3 and mean deflection < 0")
     if same_row_survivors:
         print("  narrow basin has rows surviving both observables")
     else:

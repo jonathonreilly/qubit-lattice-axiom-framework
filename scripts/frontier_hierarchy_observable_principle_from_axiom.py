@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hierarchy observable principle from the lattice axiom.
+Hierarchy observable principle with a declared finite readout boundary.
 
 Goal:
   Replace the imported "effective-action order parameter" language with a
@@ -8,16 +8,49 @@ Goal:
 
       Z[J] = det(D + J)
 
-  Given Record/P1 finite scalar additivity on independent disjoint record
-  collections and P2 (continuous phase-blind scalar-generator selection), |Z|
-  is multiplicative, so the additive scalar generator is fixed up to
-  W(r) = c log r. With the canonical c=1 generator normalization and
-  zero-source baseline, local scalar observables are therefore the
-  source-response coefficients of log|Z| (equivalently Re log Z).
+  The selection of the scalar generator is a five-input chain (Theorem 1 of
+  the parent note, inputs T1-a..T1-e):
+
+    T1-a (computed):       Berezin determinant + exact block factorization
+                           Z[J_1 (+) J_2] = Z_1[J_1] Z_2[J_2]   (Part 1)
+    T1-b (lemma, recomputed): det(D+J) in R_{>0} on the positive source cone
+                           and local invertible derivative patch, facts L1/L2
+                           of the det-positivity lemma, recomputed here on the
+                           actual runner blocks                  (Part 8)
+    T1-c (axiom premise):  Record finite scalar additivity over disjoint
+                           record collections (MINIMAL_AXIOMS_2026-06-05)
+    T1-d (declared bridge premise -- the Boundary): the readout-identification
+                           bridge: W is a continuous function of
+                           Z = det(D+J) alone on all of R_{>0}, and disjoint
+                           independent source blocks register as disjoint
+                           records. NOT derivable from the axiom memo, which
+                           excludes source/action and physical-observable
+                           identification from Record content.
+    T1-e (lemma fact L3):  Cauchy uniqueness on R_{>0}: the continuous
+                           additive solutions are exactly the family
+                           {W_c = c log r : c in R}; c = 1 is conventional.
+
+  The Cauchy family includes the degenerate c=0 null readout. The source-
+  response and selector checks below use the conventional nonzero c=1
+  representative with zero-source baseline. With that representative, local
+  scalar observables are the source-response coefficients of log|Z|
+  (equivalently log Z = Re Log Z on the positive branch). Part 2 residual-
+  checks the Theorem-2 trace formulas (first, mixed-second, and same-site-
+  second source derivatives) against central finite differences on a
+  non-uniform positive-cone source.
 
   On the minimal hierarchy block this reproduces the exact dimension-4
-  effective-potential coefficient A(L_t), and the resulting temporal kernel is
-  exactly the bosonic sign/conjugation-closed orbit kernel that selects L_t=4.
+  effective-potential coefficient A(L_t) (Part 3, verified at u0 = 0.9 and
+  u0 = 1.17 together with the exact spectral multiset and pair-product
+  determinant identity), and the resulting temporal kernel is exactly the
+  bosonic sign/conjugation-closed orbit kernel that selects L_t = 4 -- now by
+  an exact counting argument (Klein-four orbits have at most 4 elements, the
+  APBC circle has L_t phases, so any L_t > 4 splits), not by scan alone
+  (Part 4).
+
+  The out-of-scope Part 5 comparator imports the canonical plaquette-surface
+  constants locally inside its own function; the load-bearing Parts 1-4 and
+  6-8 are import-free of that helper and Part 5 contributes zero PASS gates.
 """
 
 from __future__ import annotations
@@ -27,7 +60,6 @@ import math
 import sys
 
 import numpy as np
-from canonical_plaquette_surface import CANONICAL_ALPHA_LM, CANONICAL_PLAQUETTE, CANONICAL_U0
 
 np.set_printoptions(precision=10, linewidth=120, suppress=True)
 # Determinant products in the comparison checks can transiently under/overflow;
@@ -269,53 +301,161 @@ def test_local_source_response_and_block_locality():
         f"absolute difference = {abs(self_tot - self_1):.2e}",
     )
 
+    # Theorem-2 residual checks: the trace formulas
+    #   dW/dj_x       =  Re Tr[(D+J)^{-1} P_x]
+    #   d2W/dj_x dj_y = -Re Tr[(D+J)^{-1} P_x (D+J)^{-1} P_y]
+    # are the actual observable-principle map, so they are verified against
+    # central finite differences of W = log|det(D+J)| - log|det D| on a
+    # NON-UNIFORM positive-cone source (deterministic fixed seed).
+    print("\n  Theorem-2 residual checks: trace formulas vs central finite differences")
+    rng = np.random.default_rng(20260610)
+    d = build_dirac_4d_apbc(2, 4, 0.9)
+    n = d.shape[0]
+    j_vec = rng.uniform(0.02, 0.08, size=n)
+    src = np.diag(j_vec).astype(complex)
+    inv = np.linalg.inv(d + src)
+    x_site, y_site = 3, 17
+    px = projector(n, x_site)
+    py = projector(n, y_site)
 
-def test_uniform_scalar_generator_from_axiom():
+    def w_at(extra: np.ndarray) -> float:
+        return observable_generator(d, src + extra)
+
+    # First derivative (central difference, eps = 1e-5).
+    eps1 = 1e-5
+    fd_first = (w_at(eps1 * px) - w_at(-eps1 * px)) / (2.0 * eps1)
+    tr_first = float(np.trace(inv @ px).real)
+    res_first = abs(fd_first - tr_first)
+
+    # Mixed second derivative (central 4-point stencil, eps = 1e-3).
+    eps2 = 1e-3
+    fd_mixed = (
+        w_at(eps2 * px + eps2 * py)
+        - w_at(eps2 * px - eps2 * py)
+        - w_at(-eps2 * px + eps2 * py)
+        + w_at(-eps2 * px - eps2 * py)
+    ) / (4.0 * eps2**2)
+    tr_mixed = float(-np.trace(inv @ px @ inv @ py).real)
+    res_mixed = abs(fd_mixed - tr_mixed)
+
+    # Same-site second derivative (central 3-point stencil, eps = 1e-3).
+    fd_same = (w_at(eps2 * px) - 2.0 * w_at(0.0 * px) + w_at(-eps2 * px)) / eps2**2
+    tr_same = float(-np.trace(inv @ px @ inv @ px).real)
+    res_same = abs(fd_same - tr_same)
+
+    print(f"  first:        FD={fd_first:.12e}, trace={tr_first:.12e}, residual={res_first:.2e}")
+    print(f"  mixed-second: FD={fd_mixed:.12e}, trace={tr_mixed:.12e}, residual={res_mixed:.2e}")
+    print(f"  same-second:  FD={fd_same:.12e}, trace={tr_same:.12e}, residual={res_same:.2e}")
+
+    check(
+        "Theorem-2 first-derivative trace formula matches central finite difference",
+        res_first < 1e-8,
+        f"residual = {res_first:.2e} (non-uniform positive-cone source, eps = {eps1:g})",
+    )
+    check(
+        "Theorem-2 mixed-second-derivative trace formula matches central finite difference",
+        res_mixed < 1e-4,
+        f"residual = {res_mixed:.2e} (non-uniform positive-cone source, eps = {eps2:g})",
+    )
+    check(
+        "Theorem-2 same-site-second-derivative trace formula matches central finite difference",
+        res_same < 1e-4,
+        f"residual = {res_same:.2e} (non-uniform positive-cone source, eps = {eps2:g})",
+    )
+
+
+def test_uniform_scalar_generator_from_boundary_chain():
     print("\n" + "=" * 78)
     print("PART 3: UNIFORM SCALAR SOURCE GIVES THE EXACT HIERARCHY GENERATOR")
     print("=" * 78)
 
-    u0 = 0.9
     max_gen_err = 0.0
     max_even_err = 0.0
     max_pos_err = 0.0
     max_quad_err = 0.0
+    max_spec_err = 0.0
+    max_pair_err = 0.0
 
-    for lt in [2, 4, 6, 8]:
-        d = build_dirac_4d_apbc(2, lt, u0)
-        n = d.shape[0]
-        dd = d.conj().T @ d
-        dd_inv = np.linalg.inv(dd)
-        for j in [1e-4, 1e-3, 1e-2, 1e-1]:
-            src = j * np.eye(n, dtype=complex)
-            gen = observable_generator(d, src)
-            gen_neg = observable_generator(d, -src)
-            exact = exact_uniform_generator(lt, u0, j)
-            pos = 0.5 * logabs_det(np.eye(n, dtype=complex) + (j**2) * dd_inv)
-            if j <= 1e-3:
-                quad = gen / (j**2)
-                quad_exact = exact_uniform_coefficient_total(lt, u0)
-                quad_err = abs(quad - quad_exact)
-                max_quad_err = max(max_quad_err, quad_err)
-            else:
-                quad_err = float("nan")
+    # Two distinct couplings: u0 = 0.9 (legacy single point) and u0 = 1.17,
+    # so the closed-form identity is checked as an identity in u0, not a
+    # single-point coincidence.
+    for u0 in [0.9, 1.17]:
+        print(f"\n  -- coupling u0 = {u0:g} --")
+        for lt in [2, 4, 6, 8]:
+            d = build_dirac_4d_apbc(2, lt, u0)
+            n = d.shape[0]
+            dd = d.conj().T @ d
+            dd_inv = np.linalg.inv(dd)
 
-            gen_err = abs(gen - exact)
-            even_err = abs(gen - gen_neg)
-            pos_err = abs(gen - pos)
-            max_gen_err = max(max_gen_err, gen_err)
-            max_even_err = max(max_even_err, even_err)
-            max_pos_err = max(max_pos_err, pos_err)
-
-            print(
-                f"  Lt={lt}, j={j:g}: gen={gen:.12e}, exact={exact:.12e}, "
-                f"pos_err={pos_err:.2e}, quad_err={quad_err:.2e}"
+            # Spectral multiset check: spec(D) = {+-i u0 sqrt(3 + sin^2 w)},
+            # each temporal mode w with multiplicity 4 (= L_s^3 / 2 spatial
+            # doublers per sign), totalling 8 Lt = dim(D) eigenvalues.
+            eigs = np.linalg.eigvals(d)
+            pred = []
+            for w in temporal_modes(lt):
+                lam = u0 * math.sqrt(3.0 + math.sin(w) ** 2)
+                pred.extend([lam] * 4)
+                pred.extend([-lam] * 4)
+            # spec(D) is purely imaginary (real anti-Hermitian D), so the
+            # multiset comparison is on sorted imaginary parts, with the
+            # real parts bounded separately.
+            spec_err = max(
+                float(np.max(np.abs(eigs.real))),
+                float(np.max(np.abs(np.sort(eigs.imag) - np.sort(np.array(pred))))),
             )
+            max_spec_err = max(max_spec_err, spec_err)
+
+            for j in [1e-4, 1e-3, 1e-2, 1e-1]:
+                src = j * np.eye(n, dtype=complex)
+                gen = observable_generator(d, src)
+                gen_neg = observable_generator(d, -src)
+                exact = exact_uniform_generator(lt, u0, j)
+                pos = 0.5 * logabs_det(np.eye(n, dtype=complex) + (j**2) * dd_inv)
+
+                # Pair-product determinant identity:
+                # log|det(D + jI)| = 4 sum_w log(j^2 + u0^2 (3 + sin^2 w)),
+                # each conjugate pair contributing j^2 + u0^2 (3 + sin^2 w).
+                pair = 4.0 * sum(
+                    math.log(j**2 + u0**2 * (3.0 + math.sin(w) ** 2))
+                    for w in temporal_modes(lt)
+                )
+                pair_err = abs(logabs_det(d + src) - pair)
+                max_pair_err = max(max_pair_err, pair_err)
+
+                if j <= 1e-3:
+                    quad = gen / (j**2)
+                    quad_exact = exact_uniform_coefficient_total(lt, u0)
+                    quad_err = abs(quad - quad_exact)
+                    max_quad_err = max(max_quad_err, quad_err)
+                else:
+                    quad_err = float("nan")
+
+                gen_err = abs(gen - exact)
+                even_err = abs(gen - gen_neg)
+                pos_err = abs(gen - pos)
+                max_gen_err = max(max_gen_err, gen_err)
+                max_even_err = max(max_even_err, even_err)
+                max_pos_err = max(max_pos_err, pos_err)
+
+                print(
+                    f"  Lt={lt}, j={j:g}: gen={gen:.12e}, exact={exact:.12e}, "
+                    f"pos_err={pos_err:.2e}, quad_err={quad_err:.2e}"
+                )
 
     check(
-        "uniform-source log|det| generator matches the exact Matsubara formula",
+        "uniform-source log|det| generator matches the exact Matsubara formula (u0 = 0.9 and 1.17)",
         max_gen_err < 1e-11,
         f"max absolute generator error = {max_gen_err:.2e}",
+    )
+    check(
+        "spec(D) equals the exact multiset {+-i u0 sqrt(3 + sin^2 omega)} x4 per mode",
+        max_spec_err < 1e-10,
+        f"max eigenvalue multiset error = {max_spec_err:.2e}",
+    )
+    check(
+        "pair-product determinant identity: log|det(D+jI)| = 4 sum_w log(j^2 + u0^2(3+sin^2 w))",
+        max_pair_err < 1e-10,
+        f"max pair-product identity error = {max_pair_err:.2e}",
     )
     check(
         "the scalar generator is exactly bosonic/sign-blind: W(j) = W(-j)",
@@ -336,14 +476,21 @@ def test_uniform_scalar_generator_from_axiom():
 
 def test_orbit_kernel_and_selector():
     print("\n" + "=" * 78)
-    print("PART 4: THE SOURCE-CURVATURE KERNEL FORCES THE LT=4 SELECTOR")
+    print("PART 4: THE SOURCE-CURVATURE KERNEL CERTIFIES THE LT=4 SELECTOR")
     print("=" * 78)
 
     resolved = []
+    max_orbit_size = 0
+    counting_ok = True
     for lt in range(2, 14, 2):
         parts = orbit_partition(lt)
         weights = orbit_weights(lt)
         sizes = [len(p) for p in parts]
+        max_orbit_size = max(max_orbit_size, max(sizes))
+        # Exact counting inequality: with |orbit| <= |V| = 4 and Lt distinct
+        # APBC phases, the number of orbits is >= ceil(Lt / 4).
+        if len(parts) < -(-lt // 4):
+            counting_ok = False
         print(f"  Lt={lt:2d}: num_orbits={len(parts)}, sizes={sizes}, weights={weights}")
         if len(parts) == 1 and len(parts[0]) > 2:
             resolved.append(lt)
@@ -359,11 +506,35 @@ def test_orbit_kernel_and_selector():
         f"resolved single-orbit Lt values = {resolved}",
     )
 
+    # Exact counting argument (not scan-only): the Klein-four group
+    # V = {z, -z, conj(z), -conj(z)} has order 4, so every orbit has at most
+    # 4 elements. The APBC temporal circle for Lt carries exactly Lt distinct
+    # phases exp(i (2n+1) pi / Lt). Hence a single-orbit kernel requires
+    # Lt <= 4 for EVERY Lt, not just the scanned range: any Lt > 4 has
+    # >= ceil(Lt/4) >= 2 orbits and splits. Lt = 2 gives the unresolved
+    # sign pair {+-i} (orbit size 2); Lt = 4 is the unique resolved
+    # single orbit (size 4).
+    check(
+        "Klein-four orbits never exceed the group-order bound |orbit| <= 4",
+        max_orbit_size <= 4,
+        f"max orbit size over the scan = {max_orbit_size} (group order = 4)",
+    )
+    check(
+        "exact counting: num_orbits >= ceil(Lt/4), so every Lt > 4 splits and Lt = 4 is unique for all Lt",
+        counting_ok and len(orbit_partition(2)[0]) == 2 and len(orbit_partition(4)[0]) == 4,
+        "counting inequality holds on scan; Lt=2 orbit size 2 (unresolved sign pair), Lt=4 orbit size 4",
+    )
+
 
 def test_hierarchy_value_from_internal_observable_principle():
     print("\n" + "=" * 78)
     print("PART 5: OUT-OF-SCOPE HIERARCHY COMPARATOR (INFORMATIONAL ONLY)")
     print("=" * 78)
+
+    # Imported locally so the load-bearing Parts 1-4 and 6-8 are import-free
+    # of the hard-coded canonical-surface helper; this out-of-scope comparator
+    # contributes zero PASS gates.
+    from canonical_plaquette_surface import CANONICAL_ALPHA_LM, CANONICAL_PLAQUETTE, CANONICAL_U0
 
     c4 = (7.0 / 8.0) ** 0.25
     plaquette = CANONICAL_PLAQUETTE
@@ -385,29 +556,30 @@ def test_hierarchy_value_from_internal_observable_principle():
 
 
 def test_conditional_scope_shape():
-    """Part 6 -- conditional-scope verification (2026-06-04 Record repair).
+    """Part 6 -- repaired source-scope verification.
 
-    Per the 2026-06-04 Record repair recorded in
-    `docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`, the load-bearing claim
-    of the parent note is conditional on the Record/P1+P2 scalar-selection
-    surface:
+    Per the 2026-06-04 Record repair and 2026-06-06 positive-source-cone
+    repair recorded in `docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`, the
+    load-bearing claim of the parent note is on the Record/P1 finite
+    real-positive source surface:
 
       Record/P1: finite scalar additivity on independent disjoint record
           collections
           (W[J_1 (+) J_2] = W[J_1] + W[J_2])
-      P2: continuous phase-blind scalar-generator selection
-          (the scalar bosonic generator is a continuous function of |Z| alone)
+      Source branch: D is real antisymmetric and the in-scope scalar sources
+          keep det(D+J) in R_{>0}, so no determinant phase is present.
 
     The canonical c=1 generator normalization and zero-source baseline are
     fixed conventionally; finite-block regularity and source-evenness are
-    checked as candidate consistency properties, not as derivations of the
-    broader P2 selection premise.
+    checked as source-branch consistency properties, not as a global
+    phase-blindness theorem for arbitrary complex sources.
 
     This test verifies, *as an empirical statement on the runner's lattice
     Dirac operator*, that:
 
       - if the candidate generator W = log|det(D+J)| - log|det D| is adopted
-        under Record/P1+P2, it is additive on direct sums, source-even,
+        on the Record/P1 real-positive source branch, it is additive on direct
+        sums, source-even,
         regular near zero source, and implements the baseline convention
         W(0) = 0;
 
@@ -415,14 +587,12 @@ def test_conditional_scope_shape():
         fails to be a unique additive scalar generator, confirming additivity
         is a load-bearing filter rather than a redundant assumption.
 
-    This part does NOT attempt to derive P2 from retained bridge theorems; that
-    is explicitly out of scope per the audit-named conditional scope. It only
-    verifies the conditional shape on the runner's block so reviewers can
-    independently check that the runner's PASS count matches the conditional
-    load-bearing statement of the parent note.
+    This part does NOT attempt to derive global/off-sector P2. It verifies the
+    repaired finite source shape on the runner's block so reviewers can
+    independently check that the runner's PASS count matches the source note.
     """
     print("\n" + "=" * 78)
-    print("PART 6: CONDITIONAL-SHAPE VERIFICATION (2026-06-04 RECORD/P1+P2 REPAIR)")
+    print("PART 6: REPAIRED SOURCE-SCOPE VERIFICATION (RECORD/P1 + PHASE-FREE SOURCE)")
     print("=" * 78)
 
     u0 = 0.9
@@ -483,7 +653,7 @@ def test_conditional_scope_shape():
         f"max additivity error = {p1_max_err:.2e}",
     )
     check(
-        "P2 consistency: selected phase-blind candidate is source-even, W(j) = W(-j)",
+        "source-branch consistency: real-positive candidate is source-even, W(j) = W(-j)",
         p2_max_err < 1e-12,
         f"max evenness error = {p2_max_err:.2e}",
     )
@@ -503,24 +673,22 @@ def test_conditional_scope_shape():
         f"raw |Z| additivity violation = {raw_violation:.4f}",
     )
     print(
-        "  Note: this part verifies the CONDITIONAL SHAPE only "
-        "(Record/P1+P2 plus the canonical c=1 convention select the candidate W). It does NOT derive "
-        "P2 from retained bridge theorems; that path is explicitly out of "
-        "scope per the audit-named conditional scope (see "
-        "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md §'Audit-named "
-        "conditional scope')."
+        "  Note: this part verifies the repaired finite source shape only "
+        "(Record/P1 plus the phase-free real-positive source branch select the "
+        "candidate W with the canonical c=1 convention). It does NOT derive "
+        "global/off-sector P2; arbitrary complex source phases remain out of "
+        "scope for this parent row."
     )
 
 
 def test_candidate_consistency_checks():
     """Part 7 -- runner-local consistency checks for the selected candidate.
 
-    Per the 2026-05-25 narrowing recorded in
+    Per the 2026-05-25 narrowing and 2026-06-06 source-cone repair recorded in
     `docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` §"Runner-local
-    consistency checks for P2/P3/P4", these checks do not derive the
-    broader P2 scalar-generator classification premise. They verify that the
-    selected phase-blind amplitude generator has the expected structural
-    behavior on the registered staggered block:
+    consistency checks for source regularity and normalization", these checks
+    verify that the selected real-positive source generator has the expected
+    structural behavior on the registered staggered block:
 
       * source evenness: because D is real anti-Hermitian on the runner block,
         `|det(D + jI)| = |det(D - jI)|`, so the selected candidate W is even
@@ -536,9 +704,9 @@ def test_candidate_consistency_checks():
 
     Record/P1 is supplied by the Record axiom only in the narrow finite
     scalar-additivity sense; that premise support is not a bounded-status
-    source. P2 remains an admitted scalar-selection premise. This part does not
-    promote `CPT_EXACT_NOTE`, P2, or any cited upstream row; it only checks the
-    candidate selected under the conditional surface.
+    source. Global/off-sector phase-blindness remains out of scope. This part
+    does not promote `CPT_EXACT_NOTE` or any cited upstream row; it only checks
+    the candidate on the repaired source surface.
     """
     print("\n" + "=" * 78)
     print("PART 7: RUNNER-LOCAL CONSISTENCY CHECKS FOR THE SELECTED CANDIDATE")
@@ -712,24 +880,194 @@ def test_candidate_consistency_checks():
     )
 
     print(
-        "\n  Summary: the selected Record/P1+P2 candidate passes source-evenness,\n"
+        "\n  Summary: the selected Record/P1 real-positive source candidate passes source-evenness,\n"
         "  finite-block regularity, and additive-baseline invariance checks.\n"
         "  The c=1 scale is a representative normalization, not a derived\n"
-        "  physical scale. These checks do not derive the residual P2\n"
-        "  scalar-selection surface or promote any cited upstream row."
+        "  physical scale. These checks do not derive global/off-sector P2\n"
+        "  or promote any cited upstream row."
+    )
+
+
+def test_lemma_facts_recomputed_on_runner_blocks():
+    """Part 8 -- recompute the consumed det-positivity lemma facts (T1-b).
+
+    The five-input chain of Theorem 1 consumes facts L1/L2 of
+    `docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md`.
+    Citing the lemma is class (B); this part RECOMPUTES the facts on the
+    actual runner blocks so the positivity input is verified where it is
+    used, including:
+
+      * L1 cone positivity: slogdet sign = +1 for non-uniform positive
+        diagonal sources S (deterministic fixed seed), not just uniform jI;
+      * L1 mechanism: B = S^{-1/2} D S^{-1/2} is real antisymmetric and
+        det(I + B) = prod_k (1 + lambda_k^2) >= 1, so det(S + D) =
+        det(S) det(I + B) > 0;
+      * L2 hypothesis: ||D^{-1} J||_2 < 1 for EVERY source magnitude this
+        runner differentiates or evaluates (uniform |j| <= 0.1 across all
+        blocks/couplings used, plus the Part-2 non-uniform patch sources),
+        so the Neumann sign-constancy patch actually covers the consumed
+        source surface;
+      * L2 patch positivity: slogdet sign = +1 for signed (not cone-
+        restricted) diagonal sources inside the Neumann patch.
+    """
+    print("\n" + "=" * 78)
+    print("PART 8: DET-POSITIVITY LEMMA FACTS L1/L2 RECOMPUTED ON THE RUNNER BLOCKS")
+    print("=" * 78)
+
+    rng = np.random.default_rng(20260610)
+
+    # --- L1 cone positivity + mechanism on non-uniform positive sources ---
+    cone_sign_ok = True
+    cone_min_logdet = float("inf")
+    b_antisym_max = 0.0
+    mech_max_err = 0.0
+    mech_min_logdet_ipb = float("inf")
+    for ls, lt in [(2, 2), (2, 4)]:
+        d = build_dirac_4d_apbc(ls, lt, 0.9)
+        n = d.shape[0]
+        d_real = d.real  # ||Im(D)|| = 0 is checked in Part 7
+        for _ in range(3):
+            s_diag = rng.uniform(0.02, 0.5, size=n)
+            s = np.diag(s_diag)
+            sign, logdet = np.linalg.slogdet(s + d_real)
+            cone_sign_ok = cone_sign_ok and sign == 1.0
+            cone_min_logdet = min(cone_min_logdet, logdet)
+
+            s_inv_half = np.diag(1.0 / np.sqrt(s_diag))
+            b = s_inv_half @ d_real @ s_inv_half
+            b_antisym_max = max(b_antisym_max, float(np.linalg.norm(b.T + b)))
+            lam = np.linalg.eigvals(b).imag
+            lam_pos = np.sort(lam[lam > 0])
+            # det(I + B) = prod_k (1 + lambda_k^2) >= 1 (compared in log form).
+            sign_ipb, logdet_ipb = np.linalg.slogdet(np.eye(n) + b)
+            prod_log = float(np.sum(np.log1p(lam_pos**2)))
+            mech_max_err = max(
+                mech_max_err, abs(logdet_ipb - prod_log) + (0.0 if sign_ipb == 1.0 else 1.0)
+            )
+            mech_min_logdet_ipb = min(mech_min_logdet_ipb, logdet_ipb)
+
+    check(
+        "L1 cone positivity recomputed: slogdet sign = +1 on non-uniform positive diagonal sources",
+        cone_sign_ok and math.isfinite(cone_min_logdet),
+        f"all signs +1; min log det(S+D) = {cone_min_logdet:.6f}",
+    )
+    check(
+        "L1 mechanism recomputed: B = S^(-1/2) D S^(-1/2) is real antisymmetric",
+        b_antisym_max < 1e-12,
+        f"max ||B^T + B||_F = {b_antisym_max:.2e}",
+    )
+    check(
+        "L1 mechanism recomputed: det(I+B) = prod(1 + lambda_k^2) >= 1",
+        mech_max_err < 1e-9 and mech_min_logdet_ipb >= -1e-12,
+        f"max |log det(I+B) - sum log(1+lambda^2)| = {mech_max_err:.2e}, "
+        f"min log det(I+B) = {mech_min_logdet_ipb:.6f} (>= 0)",
+    )
+
+    # --- L2 hypothesis: ||D^{-1} J|| < 1 for every source magnitude used ---
+    j_max_uniform = 0.1  # largest uniform |j| used anywhere in Parts 1, 3, 6, 7
+    neumann_max = 0.0
+    for u0 in [0.9, 1.17]:
+        for lt in [2, 4, 6, 8]:
+            d = build_dirac_4d_apbc(2, lt, u0)
+            smin = float(np.linalg.svd(d, compute_uv=False)[-1])
+            # For diagonal J with max entry j_max: ||D^{-1} J||_2 <= j_max / sigma_min(D).
+            neumann_max = max(neumann_max, j_max_uniform / smin)
+    # Part-2 non-uniform patch source on the (2,4), u0=0.9 block (entries <= 0.08
+    # plus FD stencil offsets <= 1e-3 on single sites).
+    d24 = build_dirac_4d_apbc(2, 4, 0.9)
+    smin24 = float(np.linalg.svd(d24, compute_uv=False)[-1])
+    neumann_max = max(neumann_max, (0.08 + 1e-3) / smin24)
+
+    check(
+        "L2 hypothesis recomputed: ||D^-1 J|| < 1 for every source magnitude used in this runner",
+        neumann_max < 1.0,
+        f"max ||D^-1 J||_2 bound = {neumann_max:.6f} (< 1, Neumann patch covers the consumed sources)",
+    )
+
+    # --- L2 patch positivity: signed sources inside the Neumann patch ---
+    patch_sign_ok = True
+    patch_min_logdet = float("inf")
+    for ls, lt in [(2, 2), (2, 4)]:
+        d = build_dirac_4d_apbc(ls, lt, 0.9)
+        n = d.shape[0]
+        d_real = d.real
+        smin = float(np.linalg.svd(d_real, compute_uv=False)[-1])
+        for _ in range(3):
+            j_diag = rng.uniform(-0.08, 0.08, size=n)
+            assert float(np.max(np.abs(j_diag))) / smin < 1.0  # inside the patch
+            sign, logdet = np.linalg.slogdet(d_real + np.diag(j_diag))
+            patch_sign_ok = patch_sign_ok and sign == 1.0
+            patch_min_logdet = min(patch_min_logdet, logdet)
+
+    check(
+        "L2 patch positivity recomputed: slogdet sign = +1 for signed sources in the Neumann patch",
+        patch_sign_ok and math.isfinite(patch_min_logdet),
+        f"all signs +1; min log det(D+J) = {patch_min_logdet:.6f}",
+    )
+
+    print(
+        "\n  Summary: the lemma facts this note consumes (L1 cone positivity and\n"
+        "  mechanism, L2 Neumann hypothesis and patch positivity) are recomputed\n"
+        "  on the runner's own blocks, so T1-b is runner-verified rather than\n"
+        "  citation-only. The Cauchy-uniqueness fact L3 remains cited from the\n"
+        "  lemma; its continuity-on-R_{>0} hypothesis is part of the declared\n"
+        "  readout-identification bridge premise (the Boundary, T1-d)."
+    )
+
+
+def test_t1d_independence_guardrail():
+    """Part 9 -- source guardrail for the T1-d independence no-go.
+
+    The parent row remains conditional on the readout-identification Boundary.
+    The 2026-06-16 companion no-go proves this is not a cosmetic caveat:
+    Record additivity plus determinant block factorization admits additive
+    source readouts that are not determinant-only.
+    """
+    print("\n" + "=" * 78)
+    print("PART 9: T1-D READOUT-INDEPENDENCE GUARDRAIL")
+    print("=" * 78)
+
+    repo = sys.path[0] if sys.path[0].endswith("scripts") else "scripts"
+    root = repo[:-len("scripts")] if repo.endswith("scripts") else "."
+    note_path = root + "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md"
+    no_go_path = (
+        root
+        + "docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md"
+    )
+    with open(note_path, "r", encoding="utf-8") as handle:
+        parent = handle.read()
+    with open(no_go_path, "r", encoding="utf-8") as handle:
+        no_go = handle.read()
+
+    check(
+        "parent cites the T1-d determinant-readout independence no-go",
+        "OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md"
+        in parent,
+    )
+    check(
+        "parent still declares T1-d as a Boundary, not an axiom-derived theorem",
+        "Boundary (declared bridge premise, T1-d)" in parent
+        and "not a consequence of `minimal_axioms`" in parent,
+    )
+    check(
+        "companion no-go states the determinant-only quotient is not Record-derived",
+        "must not treat T1-d as Record-derived" in no_go
+        and "does not add a new axiom" in no_go,
     )
 
 
 def main():
-    print("Hierarchy observable principle from the lattice axiom")
+    print("Hierarchy observable principle with declared finite readout boundary")
     print("=" * 78)
     test_additive_scalar_generator()
     test_local_source_response_and_block_locality()
-    test_uniform_scalar_generator_from_axiom()
+    test_uniform_scalar_generator_from_boundary_chain()
     test_orbit_kernel_and_selector()
     test_hierarchy_value_from_internal_observable_principle()
     test_conditional_scope_shape()
     test_candidate_consistency_checks()
+    test_lemma_facts_recomputed_on_runner_blocks()
+    test_t1d_independence_guardrail()
     print("\n" + "=" * 78)
     print(f"SCORECARD: {PASS_COUNT} pass, {FAIL_COUNT} fail out of {PASS_COUNT + FAIL_COUNT}")
     print("=" * 78)

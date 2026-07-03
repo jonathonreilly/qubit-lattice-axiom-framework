@@ -1,15 +1,27 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py
-runner_sha256: 7605f3fc333c72dca65c8ef1d0e15b3fc1b277d987a162794dac0784c82cff3d
+runner_sha256: e11ed7daaeec049add53092b512500a30bd019168031fdf944546779bacecaac
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.77
 status: ok
 ----- stdout -----
 
 ========================================================================================
 Koide r=1/2 is a CONDITIONAL (equal-block metric + objectivity-max), not forced
 ========================================================================================
+
+========================================================================================
+F0 - Record-era source boundary
+========================================================================================
+[PASS] F0.1 note records the 2026-06-07 Record-era source boundary
+[PASS] F0.1b note is an open-gate conditional-support source row, not a bounded theorem
+[PASS] F0.2 note keeps equal-block metric and objectivity selector as two named inputs
+[PASS] F0.3 Record axiom is not cited as selecting the sector measure
+[PASS] F0.4 source-bounded conditional certificate is the stated audit target
+[PASS] F0.5 firewall names the Record axiom's non-supply boundary
+[PASS] F0.6 note records 2026-06-16 post-audit source boundary
+[PASS] F0.7 post-audit boundary keeps both selector inputs supplied
 
 ========================================================================================
 F1 — general 2-block capacity extremum r* = w_p/(2 w_s) (weight, not pointer)
@@ -52,7 +64,7 @@ F5 — both conditional hypotheses are unforced
 ========================================================================================
 SUMMARY
 ========================================================================================
-  9/9 checks passed
+  17/17 checks passed
 
   THE HONEST RESULT: Q=2/3 is a CONDITIONAL, not a forced theorem.
     GIVEN (i) equal-block (1,1) metric AND (ii) objectivity-MAXIMIZATION,

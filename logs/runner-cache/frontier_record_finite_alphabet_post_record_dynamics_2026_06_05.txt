@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_finite_alphabet_post_record_dynamics_2026_06_05.py
+runner_sha256: f4354f7612a66cc2c8a9e85503e04eccaace62dc0f7287f1874d8ef486d64fde
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.41
+status: ok
+----- stdout -----
+[PASS] append.1 empty suffix acts as identity
+[PASS] append.2 suffix action composes by concatenating suffixes
+[PASS] append.3 append increases length by suffix length
+[PASS] append.4 append preserves the old history as prefix
+[PASS] append.5 tagged append preserves old site-record pairs
+[PASS] append.6 fixed-atom append is not a monoid endomorphism
+       append is a state update/action, not a homomorphism O* -> O*
+[PASS] C2.1 count of appended word is count plus suffix count
+[PASS] C2.2 single-atom append increments exactly one basis count
+[PASS] C2.3 count translation identity
+[PASS] C2.4 count translations compose by count addition
+[PASS] C2.5 counts are monotone under append
+[PASS] C2.6 total count is history length
+[PASS] G3.1 alphabet map extends to word homomorphism
+[PASS] G3.2 coarse count agrees with count of coarse word
+[PASS] G3.3 coarse count commutes with append dynamics
+[PASS] G3.4 coarse-graining preserves total length
+[PASS] G3.5 scalar readout is preserved for fiber-constant weights
+[PASS] G3.6 coarse count cannot preserve arbitrary non-fiber-constant scalar readout
+       singlet and doublet have same coarse count but different fine readout
+[PASS] R4.1 deterministic atom relabeling extends to a word homomorphism
+[PASS] R4.2 relabeling acts linearly on counts
+[PASS] R4.3 relabeling commutes with suffix append through the relabeled suffix
+[PASS] T5.1 realized post-record count update remains integral
+[PASS] T5.2 ensemble expectation is a different pre-record object
+       c+p is not the realized count c+e_o
+[PASS] T5.3 finite append grammar does not select which suffix occurs
+       both are admissible realized suffixes in the grammar
+[PASS] U6.1 every tested finite suffix is reached from empty
+[PASS] U6.2 tested trajectory lengths are unbounded over finite samples
+[PASS] U6.3 every reached trajectory remains finite
+[PASS] U6.4 finite-bound escape is append a suffix of length B+1
+
+=== Finite-alphabet post-record dynamics interpretation ===
+Finite suffixes act on record histories by append; counts update by translations in N^O.
+Alphabet coarse-grainings commute with append/count dynamics, with scalar preservation only under compatible readout.
+The grammar supplies post-record information dynamics, not record-production probabilities, rates, or dial selection.
+SCORECARD PASS=28 FAIL=0
+
+----- stderr -----
+

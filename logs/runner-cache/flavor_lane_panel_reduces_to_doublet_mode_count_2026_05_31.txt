@@ -1,28 +1,48 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31.py
-runner_sha256: 11f77d4c381d5f966e8b38c6740d173ca3ac0428718dde1c73b98727b74c8a13
+runner_sha256: 5df375745569dbbb94ad71eef0b3f34dd9ffad3e6501729b2b0852242f56adc3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.82
 status: ok
 ----- stdout -----
+[PASS] DEP1 target note links Frobenius isotype no-go note
+       graph-visible dependency for the scalar/traceless isotype freedom no-go
+[PASS] DEP2 target note links action-normalization no-go note
+       graph-visible dependency for convention-free action-normalization failure
+[PASS] DEP3 target note links both dependency runner paths
+       restricted packet can locate both source runners
+[PASS] DEP4 target note links both dependency caches
+       restricted packet can locate both cached outputs
+[PASS] DEP5 Frobenius dependency is current retained_no_go in ledger
+       status=audited_clean/retained_no_go
+[PASS] DEP6 action-normalization dependency is current retained_no_go in ledger
+       status=audited_clean/retained_no_go
+[PASS] DEP7 Frobenius source/cached certificate is present
+       Frobenius runner cache carries PASS=24 FAIL=0
+[PASS] DEP8 action-normalization source/cached certificate is present
+       action-normalization cache is present and records the narrowed no-go
+[PASS] DEP9 dependency runner modules expose their checked primitives
+       imports expose Frobenius algebra checks and action rescaling-degeneracy checks
 [PASS] D1 Q is a SINGLE observable = 1/3+(2/3)r, scale- and delta-invariant; {1/3,2/3,1} are r-LANES not channels
        r=0 -> 0.3333, r=1/2 -> 0.6667, r=1 -> 1.0000 (each unique over a,delta)
 [PASS] ESC1-KILLED r->1-r changes Tr(H^2) except at r=1/2 -> NOT a C_3-covariant operator involution (scalar relabeling)
        |Tr(H^2;r) - Tr(H^2;1-r)|: r=0.2->3.600, r=0.5->0.000, r=0.8->3.600
-[PASS] PRIMITIVE block-count (det_C, doublet=1 complex mode): 3a^2=6|b|^2 -> r=1/2 -> Q=2/3
+[PASS] BRANCH det_C block-count (doublet=1 complex mode): 3a^2=6|b|^2 -> r=1/2 -> Q=2/3
        r_block=0.500 -> Q=0.6667
-[PASS] PRIMITIVE dimension-count (det_R, doublet=2 real modes): 3a^2=3|b|^2 -> r=1 -> Q=1
-       r_dim=1.000 -> Q=1.0000  => SOLE decider: doublet = 1 complex vs 2 real modes
+[PASS] BRANCH det_R dimension-count (doublet=2 real modes): 3a^2=3|b|^2 -> r=1 -> Q=1
+       r_dim=1.000 -> Q=1.0000  => named decider candidate: doublet = 1 complex vs 2 real modes
 
-SCORECARD PASS=4 FAIL=0
+SCORECARD PASS=13 FAIL=0
 VERDICT (20-physicist panel + 4 meta, wf_9028152c): D1 UNANIMOUS -- Q is one observable, {1/3,2/3,1}
-are LANES not channels (corrects the four-channel capstone). Assignment open_confirmed: every escape
-collapses to ONE primitive = block-count(det_C, r=1/2) vs dimension-count(det_R, r=1) = doublet as one
-complex vs two real modes. The converged 'r=1/2 = self-dual swap fixed point' escape is a scalar
+are LANES not channels (corrects the four-channel capstone). Assignment open_confirmed: runner verifies
+the two branch consequences of the det_C/det_R candidate = block-count(det_C, r=1/2) vs
+dimension-count(det_R, r=1) = doublet as one complex vs two real modes. The stronger panel
+exhaustiveness thesis remains open pending a restricted bridge theorem. The converged 'r=1/2 = self-dual
+swap fixed point' escape is a scalar
 relabeling (changes the Casimir; no covariant involution) -- KILLED, alongside the CPT-reflection route.
 The honest decidable next calc: is the doublet-coefficient's emergent kinetic metric HOLOMORPHIC
-(det_C -> r=1/2) or doubled-REAL (det_R -> r=1)? -- derived from Axiom 1's qubit coherent-state measure.
+(det_C -> r=1/2) or doubled-REAL (det_R -> r=1)? -- derived from the Quantum axiom's one-qubit coherent-state measure.
 
 ----- stderr -----
 

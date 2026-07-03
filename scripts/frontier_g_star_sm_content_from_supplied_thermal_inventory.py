@@ -5,8 +5,8 @@ This runner supports
 docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md.
 
 It checks the exact factorised arithmetic and verifies that the proof-walk is
-limited to the named retained support packet R1-R6 and the supplied premise
-packet P1-P5. The parent inventory note is checked only as context.
+limited to the named support packet R1-R6 and the registered declared-inventory
+premise packet P1-P5. The parent inventory note is now load-bearing for P1-P5.
 """
 
 from __future__ import annotations
@@ -58,9 +58,9 @@ def check_note_structure() -> None:
         "Claim type:** bounded_theorem",
         "source-note proposal only",
         "does not add a new axiom",
-        "Standard Model thermal inventory itself remains an external",
-        "Retained support packet (R1-R6)",
-        "Supplied premise packet (P1-P5",
+        "retained-bounded finite declared-inventory arithmetic certificate",
+        "Support packet (R1-R6)",
+        "Registered premise packet (P1-P5",
         "Proof-walk",
         "Exact arithmetic check",
         "Boundaries",
@@ -70,7 +70,11 @@ def check_note_structure() -> None:
         "ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10",
         "PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02",
         "SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10",
-        "HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10",
+        "GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06",
+        "audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py",
+        "P1-P5 are declared explicitly in the retained-bounded finite inventory wrapper",
+        "P2 supplies the two-transverse-polarization state count",
+        "P4 supplies the Dirac/Weyl thermal state-count convention",
     ]
     for phrase in required:
         check(f"note contains: {phrase}", phrase in NOTE_FLAT)
@@ -113,8 +117,9 @@ def check_proof_walk_forbidden_imports() -> None:
 
 
 def check_load_bearing_retained_packet() -> None:
-    section("R1-R6 retained support packet citations are present")
+    section("R1-R6 support packet citations are present")
     retained_packet = [
+        ("P1-P5", "SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md"),
         ("R1", "THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md"),
         ("R1", "THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md"),
         ("R2", "CL3_COLOR_AUTOMORPHISM_THEOREM.md"),
@@ -123,7 +128,7 @@ def check_load_bearing_retained_packet() -> None:
         ("R4", "PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md"),
         ("R5", "SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md"),
         ("R5", "SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md"),
-        ("R6", "HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md"),
+        ("R6", "GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md"),
     ]
     for tag, fname in retained_packet:
         check(f"{tag} cites {fname} as markdown link", fname in NOTE_TEXT)
@@ -132,7 +137,7 @@ def check_load_bearing_retained_packet() -> None:
 
 
 def check_premise_packet() -> None:
-    section("P1-P5 supplied premise packet is named")
+    section("P1-P5 registered premise packet is named")
     required = [
         "**P1 Declared Standard Model particle inventory.**",
         "**P2 Two transverse polarizations per massless vector.**",
@@ -161,7 +166,7 @@ def check_boson_factorisation() -> None:
     higgs_dof = higgs_real_components
 
     check("R2: dim adj(SU(3)) = N_c^2 - 1 = 8", dim_adj_su3 == 8, str(dim_adj_su3))
-    check("R4-implied: dim adj(SU(2)) = 3", dim_adj_su2 == 3, str(dim_adj_su2))
+    check("P1 premise: SU(2)_L gauge bosons W^1,W^2,W^3 = 3", dim_adj_su2 == 3, str(dim_adj_su2))
     check("(B1) gluon DOF = 16", gluon_dof == 16, f"{dim_adj_su3} * {transverse} = {gluon_dof}")
     check("(B2) SU(2)_L gauge boson DOF = 6", su2_dof == 6, f"{dim_adj_su2} * {transverse} = {su2_dof}")
     check("(B3) U(1)_Y gauge boson DOF = 2", u1_dof == 2, f"{n_u1} * {transverse} = {u1_dof}")
@@ -322,8 +327,8 @@ def main() -> int:
     if FAIL == 0:
         print(
             "VERDICT: bounded proof-walk passes; g_* = 106.75 follows from the"
-            " retained support packet R1-R6 plus supplied premise packet P1-P5 by"
-            " exact rational arithmetic."
+            " support packet R1-R6 plus the registered P1-P5 inventory"
+            " packet by exact rational arithmetic."
         )
         return 0
     print("VERDICT: FAILED -- bounded proof-walk did not pass all checks.")

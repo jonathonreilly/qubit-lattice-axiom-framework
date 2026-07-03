@@ -3,8 +3,10 @@
 
 from __future__ import annotations
 
+import hashlib
 import os
 import sys
+from pathlib import Path
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(SCRIPT_DIR)
@@ -21,9 +23,63 @@ from CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP import (
 )
 from gate_b_no_restore_farfield import grow
 
+# Static imports are intentional: the audit packet builder discovers helper
+# runner paths from the primary runner's import graph.
+import FIFTH_FAMILY_RADIAL_FAILURE_AUDIT as failure_audit
+import FIFTH_FAMILY_RADIAL_FM_TRANSFER as fm_transfer
+import FIFTH_FAMILY_RADIAL_SWEEP as sweep
+
+
+AUDIT_TIMEOUT_SEC = 300
+ROOT_PATH = Path(ROOT)
 
 DRIFTS = [0.05, 0.10, 0.20, 0.30, 0.40]
 SEEDS = [0, 1]
+COMPANION_RUNNERS = [
+    ("sweep", sweep),
+    ("failure_audit", failure_audit),
+    ("fm_transfer", fm_transfer),
+]
+
+
+def _sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _cache_path(script_path: Path) -> Path:
+    return ROOT_PATH / "logs" / "runner-cache" / f"{script_path.stem}.txt"
+
+
+def _check_companion_packet() -> bool:
+    print()
+    print("COMPANION PACKET MANIFEST")
+    ok = True
+    for label, module in COMPANION_RUNNERS:
+        script_path = Path(module.__file__).resolve()
+        cache_path = _cache_path(script_path)
+        source_exists = script_path.is_file()
+        cache_exists = cache_path.is_file()
+        ok = ok and source_exists and cache_exists
+        if source_exists:
+            source_rel = script_path.relative_to(ROOT_PATH)
+            source_sha = _sha256(script_path)
+        else:
+            source_rel = script_path
+            source_sha = "MISSING"
+        if cache_exists:
+            cache_rel = cache_path.relative_to(ROOT_PATH)
+            cache_text = cache_path.read_text(encoding="utf-8", errors="replace")
+            cache_sha = _sha256(cache_path)
+            cache_ok = "status: ok" in cache_text and "exit_code: 0" in cache_text
+        else:
+            cache_rel = cache_path
+            cache_sha = "MISSING"
+            cache_ok = False
+        ok = ok and cache_ok
+        print(f"  {label}: source={source_rel} sha256={source_sha}")
+        print(f"  {label}: cache={cache_rel} sha256={cache_sha} status_ok={cache_ok}")
+    print(f"COMPANION_PACKET: {'PASS' if ok else 'FAIL'}")
+    return ok
 
 
 def main() -> None:
@@ -69,8 +125,10 @@ def main() -> None:
     print(
         f"  [{'PASS' if assertions_ok else 'FAIL'} (C)] finite basin assertion surface"
     )
-    print(f"ASSERTIONS: {'PASS' if assertions_ok else 'FAIL'}")
-    if not assertions_ok:
+    companion_ok = _check_companion_packet()
+    all_ok = assertions_ok and companion_ok
+    print(f"ASSERTIONS: {'PASS' if all_ok else 'FAIL'}")
+    if not all_ok:
         raise SystemExit(1)
 
 

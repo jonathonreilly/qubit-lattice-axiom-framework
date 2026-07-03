@@ -1,37 +1,35 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_carrier_not_derived_two_inputs_2026_05_31.py
-runner_sha256: 8c06c934b4e52f5935c74333971a6f4672db6997d30bffa5a771310d58806507
+runner_sha256: 355106975e889e85d0fecde370d5c0014618d49f4be4f0453a4b7e0467dab504
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
-[PASS] A1 bare doublet character tr(g|doublet)=omega+omega^2 = -1 (singlet=1, full=0); NONE equals 2/9
-       singlet=1.000, doublet=-1.000000, full=0.000
-[PASS] A2 2/9 = L_3(1,2) comes ONLY from normal-bundle denominators 1/(omega^k-1)=det(1-g)^{-1}, an INDEX/eta object
-       L_3(1,2)=0.222222 != bare character -1.000; corner-carrier 'bare character' lead REFUTED
-[PASS] A3 'finite-carrier, no manifold' reading loses the value: it returns the character -1, not 2/9
-       |bare_char - 2/9| = 1.2222 >> 0  => cannot have both finite-carrier-only AND the value 2/9
-[PASS] B1 every C_3-equivariant H=aI+bC+conj(b)C^2 commutes with C, and r=|b|^2/a^2 ranges FREELY (form fixed, r not)
-       all 2000 equivariant; r in [0.000, 787.6] -> retained-form theorems leave r unconstrained
-[PASS] C1 z=0 (r=1/2 -> Q=2/3) and z=-1/3 (r=1 -> Q=1) are BOTH admissible sections; no canonical zero-section
-       Q(r=1/2)=0.6667, Q(r=1)=1.0000; section family s_a(t)=(t,at), basepoint UNFORCED
-[PASS] D1 TWO independent irreducible inputs remain: (I) carrier/factor selection, (II) basepoint r=1/2
-       (I) species->generation-factor ID = open_gate lepton_brannen_bae_delta_two_ninths / PHYSICAL_LATTICE_NECESSITY Part 7 (retained_no_go); (II) r=1/2 zero-section = retained_no_go koide_q_delta_residual_cohomology_obstruction. They are INDEPENDENT (factor vs section).
+[PASS] A1 bare C_3 characters are singlet=1, doublet=-1, triplet=0; none equals 2/9
+       characters=(1.0, -1.0, 0.0)
+[PASS] B1 determinant inverse uses both doublet eigenvalues; each term is 1/3
+       det_inv_terms=[0.333333, 0.333333]; one_factor_terms=[(-0.5-0.288675j), (-0.5+0.288675j)]
+[PASS] B2 L_3(1,2)=2/9 comes from determinant denominators, not a bare character
+       L_3(1,2)=0.222222; doublet_character=-1.0
+[PASS] C1 C_3-equivariant circulant operators commute with C across freely chosen r values
+       r_values=[0.01, 0.5, 1.0, 4.0, 9.0]; max_commutator=0.00e+00
+[PASS] D1 Q(r)=1/3+(2/3)r verifies both r=1/2 -> 2/3 and r=1 -> 1
+       Q(1/2)=0.666667; Q(1)=1.000000
+[PASS] E1 note keeps bounded-support route-pruning status and required non-closure disclaimers
+       required phrases present
+[PASS] E2 note removes old input-count/status overclaim phrases
+       forbidden phrases absent
+[PASS] E3 audit surfaces are not retagged by this source repair
+       audit retagging left to audit/review lanes
 
-SCORECARD PASS=6 FAIL=0
-VERDICT: carrier NOT derived (corner-carrier lead REFUTED: 2/9 is an index/eta object, the bare
-doublet character is -1; and the retained theorems hold the species->flavor ID out-of-scope =
-open_gate). Basepoint r=1/2 is a separate certified-missing input. TWO independent irreducible
-flavor inputs remain (carrier-factor selection + basepoint), refining the prior 'single premise'
-framing. The prior note's core (readout gate reduces to the carrier-ID, adds no new gate) STANDS;
-what is refined is that the basepoint is a SECOND independent input, and the momentum-corner
-shortcut to DERIVE the carrier does not work (the value 2/9 is not a finite-rep character).
-Provenance verified vs origin/main 2026-05-31: open_gate lepton_brannen_bae_delta_two_ninths;
-retained_no_go PHYSICAL_LATTICE_NECESSITY / koide_q_delta_residual_cohomology_obstruction;
-retained three_generation_observable_* (out-of-scope species text: THEOREM_NOTE l.19/151-153,
-M3C_BURNSIDE l.164/179-184); retained_bounded koide_z3_equivariant_anticommuting_no_go /
-axiom_first_z_n_equivariant_spectral_asymmetry. No load-bearing on unaudited gates.
+SCORECARD PASS=8 FAIL=0
+VERDICT: bounded-support negative route pruning.
+The bare-character shortcut fails: C_3 characters are 1, -1, and 0, while
+L_3(1,2)=2/9 comes from the two-eigenvalue determinant denominator.
+Equivariance leaves r free, and Q(r) checks both r=1/2 and r=1 without
+selecting the physical basepoint. The source does not derive the physical
+carrier, does not select the basepoint, and introduces no new axiom.
 
 ----- stderr -----
 

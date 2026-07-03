@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/graph_braid_z3_anyon_exclusion_dichotomy_2026_05_29.py
-runner_sha256: b0190788edc0f3765929e0383a5e75e4b59317d194f8aaaa8b4d09a7ee0fb54b
+runner_sha256: 803035e1e7f379f21001ba09cc2e644da85bcddf4015fa113631e02fe63e21af
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 ========================================================================
-GRAPH-BRAID Z^3 ANYON-EXCLUSION DICHOTOMY (first-quantized)
+GRAPH-BRAID Z^3 ANYON-EXCLUSION WITNESS PACKET
 Note: GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md
-Claim: Z^3 site graph is non-planar 3-connected => H_1(UD_2) has Z_2 torsion
-       => first-quantized exchange phase is +-1 only {boson, fermion}; anyons EXCLUDED.
+Claim: finite graph-braid witnesses plus Hom(Z_2,U(1)) sign-phase algebra
+       no all-L or infinite-Z^3 exchange-generator theorem is proven here.
 ========================================================================
 ------------------------------------------------------------------------
 (A) Graph-braid B_2(Gamma) abelianization H_1(UD_2(Gamma)) via Smith normal form
@@ -36,19 +36,19 @@ Claim: Z^3 site graph is non-planar 3-connected => H_1(UD_2) has Z_2 torsion
 [PASS] (A) K_{3,3}: H_1 = Z^4 (+) Z_2  (non-planar, Z_2 torsion)  |C0,C1,C2|=(15, 36, 18)
 [PASS] (A) K_{3,3}: Hom(Z_2, U(1)) = {+1, -1} only (exchange forced to +-1 => boson/fermion)  images=[-1.0, 1.0]
 ------------------------------------------------------------------------
-(B) Z^3 site graph (cube of side L): NON-PLANAR (Kuratowski) and 3-CONNECTED
-    => non-planar 3-connected class (Ko-Park / HKRS): Z_2 torsion, exchange +-1 only.
+(B) Z^3 cubic-box witnesses for side L in {3,4}: NON-PLANAR by bipartite Euler obstruction and 3-CONNECTED
+    These checks do not prove the all-L or infinite-lattice exchange-generator theorem.
 ------------------------------------------------------------------------
-[PASS] (B) Z^3 cube L=3: NON-PLANAR (V=27, E=54)  planar=False
-[PASS] (B) Z^3 cube L=3: planarity counterexample is a K_{3,3} subdivision  Kuratowski subgraph V=14 E=17
-[PASS] (B) Z^3 cube L=3: 3-connected (node-connectivity = 3)  node_connectivity=3
-[PASS] (B) Z^3 cube L=4: NON-PLANAR (V=64, E=144)  planar=False
-[PASS] (B) Z^3 cube L=4: planarity counterexample is a K_{3,3} subdivision  Kuratowski subgraph V=14 E=17
-[PASS] (B) Z^3 cube L=4: 3-connected (node-connectivity = 3)  node_connectivity=3
-[PASS] (B) contrast: 2x2x2 cube Q_3 IS planar (why L >= 3 is required)  planar=True, node_connectivity=3
+[PASS] (B) Z^3 cube L=3: bipartite planar bound is violated  V=27, E=54, 2V-4=50
+[PASS] (B) Z^3 cube L=3: no one- or two-vertex cut disconnects it  first smaller cut=None
+[PASS] (B) Z^3 cube L=3: three corner neighbors form a cut, so connectivity = 3  cut=[(0, 0, 1), (0, 1, 0), (1, 0, 0)]
+[PASS] (B) Z^3 cube L=4: bipartite planar bound is violated  V=64, E=144, 2V-4=124
+[PASS] (B) Z^3 cube L=4: no one- or two-vertex cut disconnects it  first smaller cut=None
+[PASS] (B) Z^3 cube L=4: three corner neighbors form a cut, so connectivity = 3  cut=[(0, 0, 1), (0, 1, 0), (1, 0, 0)]
+[PASS] (B) contrast: 2x2x2 cube Q_3 does not violate the bipartite planar bound  V=8, E=12, 2V-4=12
 ========================================================================
 SCORECARD: PASS=25 FAIL=0
-VERDICT: At the FIRST-QUANTIZED configuration-space level, the Z^3 site graph is non-planar and 3-connected, so its graph-braid group B_2 abelianizes with a Z_2 torsion summand carrying the two-particle exchange; abelian statistics Hom(H_1, U(1)) sends the exchange to +-1 ONLY -> {boson, fermion}, continuous ANYONS EXCLUDED. Combined with the retained per-site dim-2 result (free/infinite-tower boson excluded), the surviving first-quantized matter statistics is {hard-core boson, fermion}. This does NOT select boson vs fermion and does NOT settle the open second-quantized gauge-coupled bridge.
+VERDICT: bounded witness packet only. Exact UD_2 homology checks show Z_2 torsion for K_5 and K_{3,3}; L=3,4 cubic boxes violate the bipartite planar bound and are 3-connected graph witnesses; Hom(Z_2,U(1)) gives sign phases for an already-established order-2 class. This runner does not prove the quantified all-L or infinite-Z^3 exchange-generator theorem.
 ========================================================================
 
 ----- stderr -----

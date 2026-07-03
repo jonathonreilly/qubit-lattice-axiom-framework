@@ -25,6 +25,46 @@ transport. (Naming-trap caught: the "Θ" in "theta-to-slice coupling" is the spa
 realized native chirality is C₃-equivariant, **spacetime chirality is generation-blind and the
 no-go extends to it** — consistent with retained_bounded `parity_violation_does_not_reach_generation_triplet`.
 
+### Source packet for re-audit
+
+The S3-time carrier references used by the factorization claim are now concrete
+source edges:
+
+- [`S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE_2026-05-17.md`](S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE_2026-05-17.md)
+  with runner
+  [`scripts/frontier_s3_time_spacetime_tensor_primitive.py`](../scripts/frontier_s3_time_spacetime_tensor_primitive.py).
+- [`S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE_2026-05-17.md`](S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE_2026-05-17.md)
+  with runner
+  [`scripts/frontier_s3_time_tensorized_schur_primitive.py`](../scripts/frontier_s3_time_tensorized_schur_primitive.py).
+- [`S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE_2026-05-17.md`](S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE_2026-05-17.md)
+  with runner
+  [`scripts/frontier_s3_time_transfer_matrix_bridge.py`](../scripts/frontier_s3_time_transfer_matrix_bridge.py).
+- [`S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md`](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md)
+  with runner
+  [`scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py`](../scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py).
+
+S3-time source packet is source-visible, not status-promoted: these edges let
+the restricted packet inspect the carrier notes but do not assert a new audit
+status for them.
+
+The chiral 3+1D bounded authorities used here are:
+
+- [`CHIRAL_3PLUS1D_COUPLED_COIN_NOTE.md`](CHIRAL_3PLUS1D_COUPLED_COIN_NOTE.md),
+  runner
+  [`scripts/frontier_chiral_3plus1d_coupled_coin_scan.py`](../scripts/frontier_chiral_3plus1d_coupled_coin_scan.py),
+  cache
+  [`logs/runner-cache/frontier_chiral_3plus1d_coupled_coin_scan.txt`](../logs/runner-cache/frontier_chiral_3plus1d_coupled_coin_scan.txt).
+- [`CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md`](CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md),
+  runner
+  [`scripts/frontier_chiral_3plus1d_boundary_phase_diagram.py`](../scripts/frontier_chiral_3plus1d_boundary_phase_diagram.py),
+  cache
+  [`logs/runner-cache/frontier_chiral_3plus1d_boundary_phase_diagram.txt`](../logs/runner-cache/frontier_chiral_3plus1d_boundary_phase_diagram.txt).
+
+The paired runner checks these source edges, the two chiral rows'
+`retained_bounded` effective status, the displayed forced-transport numerics
+(`Q=0.267`, `‖{D,Γ_χ}‖=1.38`), and the exact next-path coefficient
+`L3(1,2)=2/9`. It does not edit the audit ledger.
+
 ## The four candidate fillings (all native-refuted)
 | construction | anticommutes Γ_χ | breaks C₃ on R³ | native? | verdict |
 |---|---|---|---|---|

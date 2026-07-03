@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_gamma5_factor_bridge_no_go.py
+runner_sha256: 3c0a819bc6cc8ab34f52b8d8dfe1fdfb0bf963fb02326b40b3743e8e4244f952
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+
+==============================================================================
+Source anchors: companion current-gap bridge packet
+==============================================================================
+[PASS] target note links the companion current-gap no-go note
+[PASS] target note links the companion current-gap runner
+[PASS] target note links the companion current-gap runner cache
+[PASS] companion runner source is statically importable
+[PASS] companion note states the T-odd and generation-partition non-commutation requirement
+[PASS] companion note keeps r weight-clean
+
+==============================================================================
+Setup: generation factor (C^3) and on-site gamma5 (C^2)
+==============================================================================
+[PASS] C^3 = I
+[PASS] S=C+C^2 on generation C^3, eig {2,-1,-1}
+[PASS] gamma5 = diag(+1,-1) is a 2x2 operator on the site/spin C^2
+[PASS] DIMENSION MISMATCH: gamma5 is 2x2, S is 3x3 (gamma5 not on the gen factor)
+
+==============================================================================
+No-go: gamma5_spin (x) I_gen commutes with S on C^3 (partition-blind)
+==============================================================================
+[PASS] [gamma5 (x) I_gen, I_spin (x) S] = 0 EXACTLY (norm 0)  --  ||[gamma5,S]|| = 0.00e+00
+[PASS] => requirement (ii) non-commuting-with-S FAILS for gamma5_spin (x) I_gen
+[PASS] gamma5 is real (conj = gamma5) => K-EVEN, not the K-odd S-direction on gen
+[PASS] gamma5 (x) I_gen also commutes with A=i(C-C^2) (the gen K-odd current)
+
+==============================================================================
+Structural reason: any site-factor op commutes with any gen-factor op
+==============================================================================
+[PASS] [O_site (x) I_gen, I_spin (x) O_gen] = 0 for all sampled ops (max norm ~ 0)  --  max ||comm|| over 200 samples = 0.00e+00
+[PASS] => NO site-factor operator can be non-commuting-with-S on the gen factor
+
+==============================================================================
+The rank-2 sector gamma5 splits is spin/taste, not the generation C^3
+==============================================================================
+[PASS] chiral projector P+ = (1+gamma5)/2 has rank 1 on C^2 (spin)
+[PASS] P+ + P- = I_2 (a partition of the SPIN factor, not the gen factor)
+[PASS] the generation partition is {singlet(1), doublet(2)} on C^3 (eig of S), a different factor from gamma5's spin split
+
+==============================================================================
+Weight-clean: no r is forced
+==============================================================================
+[PASS] statement is r-independent: generation partition, current, and gamma5 operators carry no r dependence
+
+TOTAL: PASS=20 FAIL=0
+VERDICT: gamma5 factor-bridge no-go checks pass.
+  On-site gamma5 = gamma5_spin (x) I_gen commutes with S on the
+  generation C^3 EXACTLY and is K-even there -> supplies NEITHER half
+  of the (T-odd AND non-commuting-with-S) requirement. The rank-2
+  sector it splits is spin/taste at fixed generation character, not
+  the generation C^3 orbit. Open frontier: a ROOTED carrier entangling
+  spin into the generation index ([gamma5,S]!=0). No r forced.
+
+----- stderr -----
+

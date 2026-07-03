@@ -2,10 +2,10 @@
 """Print a compact diamond/NV phase-ramp bridge card.
 
 This is intentionally a proxy-unit bridge card, not an absolute NV
-calibration. It synthesizes the retained exact-family phase-ramp results into
-the narrowest handoff card we can state in-repo:
+calibration. It synthesizes the proxy phase-ramp rows into the narrowest
+handoff card we can state in-repo:
 
-- one highlighted retained row
+- one highlighted proxy row
 - a small source-strength sweep
 - a nearby source-depth / separation sweep
 - normalized proxy phasor components and phase-ramp slope
@@ -83,7 +83,7 @@ def build_report() -> str:
     lines.append("=" * 100)
     lines.append("")
     lines.append("Bridge row")
-    lines.append("  retained exact-family row: s = 0.004")
+    lines.append("  proxy phase-ramp row: s = 0.004")
     lines.append(f"  raw proxy phasor: X = {hi_x:+.3f}, Y = {hi_y:+.3f}, phi = {hi.phase_lag:+.3f} rad")
     lines.append(f"  raw phase-ramp slope: {hi.ramp_slope:+.4f} rad / z")
     lines.append(

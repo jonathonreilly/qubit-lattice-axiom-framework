@@ -31,9 +31,10 @@ imports the residual antiunitary condition
 as a premise. The present narrow bridge theorem closes the algebraic
 content of that premise from already-cited one-hop authorities:
 
-- [`PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md`](PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md)
+- [`PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md`](PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md)
   supplies the graph-first residual `Z_2` axis stabilizer acting on the
-  active triplet as `P_23` (swap of axes `1` and `2`).
+  active triplet as `P_23`, via the direct unitary-restriction bridge from
+  the selected `hw=1` graph axis to the active Hermitian lane.
 - [`Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md`](Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md)
   supplies the canonical residual-`Z_2`-invariant Hermitian normal form
   on the `hw=1` triplet.
@@ -186,8 +187,9 @@ channel from one-hop authorities. It does not:
 - derive the graph-first selector itself from `Cl(3)` on `Z^3` (that is
   the role of
   [`GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md`](GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md)),
-- derive the `Z_2` axis stabilizer as `P_23` (that is the role of
-  [`PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md`](PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md)),
+- derive the graph-axis-to-active-lane restriction identity itself (that is
+  the role of
+  [`PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md`](PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md)),
 - select a point in the resulting 3-real-parameter cycle subfamily.
 
 What it does close, on its own terms, is the load-bearing step in
@@ -227,8 +229,8 @@ matrix `P_23` defined above and the channel
 `A_fwd = c_1 E_12 + c_2 E_23 + c_3 E_31` from the downstream note as
 imports, and proves the antiunitary action and its fixed locus
 explicitly. The carrier identification (active `hw=1` triplet) and the
-axis-stabilizer-equals-`P_23` step are imported from the cited one-hop
-authorities and not re-derived here. Effective status remains
+axis-stabilizer-equals-`P_23` step are imported from the direct
+graph-axis-to-active-lane bridge and not re-derived here. Effective status remains
 `unaudited` until the independent audit lane assigns one.
 
 ## Scope of this rigorization

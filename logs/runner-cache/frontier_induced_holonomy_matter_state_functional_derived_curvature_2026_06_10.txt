@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/frontier_induced_holonomy_matter_state_functional_derived_curvature_2026_06_10.py
+runner_sha256: 4146947196ce1be7de543385d536600c0035258d47820733991fed892ef41ee0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  (H1) poles: sea/sea-orbit -> C = 0 exactly; off-sea: C > 0, filling-dep.
+==============================================================================
+  [PASS] the closed-shell sea induces scalar*I3 cross-blocks => links = I, C = 0 (the sea induces the FLAT sector; closed-shell/local-frame consistency)  (C_sea = 0.0e+00)
+  [PASS] sea-ORBIT states induce CENTRAL holonomy (e^{i theta} I -- the color-link U(1)/center phase; that det phase is a NAMED OPEN THREAD, not a silent quotient) => C = 0  (C_orbit = 3.3e-16)
+  [PASS] off-sea states have C > 0 (strict; the load-bearing fact) with FILLING-DEPENDENT magnitude: near-half-filling K=4,5 give mean C = O(0.7); minimal K=3 gives mean C = O(0.2) (all values seed/filling-specific magnitudes, not constants)  (mean C: K=3 0.17, K=4 0.73, K=5 0.72)
+  [PASS] NEAR-SEA QUALIFIER: a same-color particle-hole excitation stays color-diagonal => C = 0 EXACTLY ('generic' must not be read as 'typical near-sea')  (C = 0.0e+00)
+==============================================================================
+Part 2  (H2) covariance [corollary of color-link/block-01]; C exactly invariant (new)
+==============================================================================
+  [PASS] covariance Hol(g.G) = g_0 Hol(G) g_0^dag exactly [the block-01 covariant law U_eff -> g_x U_eff g_y^dag at loop level -- corollary, cited]
+  [PASS] C is EXACTLY invariant under local rotations (the NEW conjugation+center-invariant curvature scalar; max-entry distances are not conjugation-invariant and are not used)  (|dC| = 2.2e-16)
+==============================================================================
+Part 3  (H3) flow: C(t) moves [corollary]; creation from flat = t^4 TANGENTIAL
+==============================================================================
+  [PASS] from an off-sea state the derived flow moves C(t) [the block-01 induced trajectory at curvature level -- corollary, cited]; rank-3 verified along the sampled trajectory  (C(t) = [np.float64(0.6901), np.float64(0.6755), np.float64(0.7026)])
+  [PASS] CREATION: from FLAT non-stationary data (norb=1 sea-orbit, C(0) = 0 exactly) the flow leaves the flat stratum TANGENTIALLY -- quartic liftoff (Richardson order ~4), numerically small at small t, reaching O(0.1) only at t = O(1); an almost-periodic excursion, NOT relaxation  (C(0) = -8.9e-16; liftoff order p = 4.00; C(1.2) = 0.0932 (seed-specific magnitude))
+  [PASS] consistency: the STATIONARY sea stays exactly flat (creation requires non-stationary flat data; the vacuum does NOT spontaneously curve)  (C_sea(t) = ['1.1e-16', '0.0e+00'])
+  [PASS] RECONCILIATION (sibling primitivity note): the free flow's single-hop color TRANSPORTER is color-inert (scalar*I3) -- a DIFFERENT object from the state-bilinear loop above; that note's steelman explicitly leaves the composed-link route open, and this note walks through exactly that door
+==============================================================================
+Part 4  (H4) slaving with VALID one-body densities [corollary of block-01]
+==============================================================================
+  [PASS] BOTH states are VALID one-body densities (0 <= eig <= 1 asserted in-runner; equal particle number)  (eig ranges [0.050,0.950] / [0.030,0.965])
+  [PASS] same induced link field (polar is scale-invariant; diagonal-block change only) but DIFFERENT dHol/dt: the holonomy trajectory is SLAVED to the matter flow [block-01's non-autonomy at holonomy level -- corollary, cited]; no autonomous holonomy law is claimed  (||dH_A - dH_B|| = 0.227)
+==============================================================================
+TOTAL: PASS=12 FAIL=0
+==============================================================================
+SCOPE: the matter sector supplies gauge-covariant link
+  coordinates whose loops are generically non-central -- the holonomy demand
+  (local-frame orbit note: frames supply only flat) is ADDRESSED CONDITIONALLY at the kinematic/
+  state-functional level, with the dynamics SLAVED and the physical
+  identification gate OPEN.  NEW content: (i) the curvature scalar C = 1-|tr Hol|/3
+  (conjugation+center-invariant); (ii) the two-pole dichotomy -- sea/sea-orbit
+  CENTRAL (C=0 exactly) vs off-sea NON-central with FILLING-DEPENDENT magnitude
+  (near-sea excitations stay ~flat; decimals are seed/filling-specific); (iii)
+  creation-from-flat: a t^4-tangential, almost-periodic excursion off the flat
+  stratum from non-stationary flat data (the stationary sea stays exactly flat).
+  H2/H3a/H4 are corollaries of the landed block-01 trajectory note (cited).
+  C(t) from the fixed finite H is almost-periodic (no relaxation, no stationary
+  measure): HK-vs-Wilson discrimination on the induced trajectory is NOT yet
+  well-posed -- it still gates on the undelivered R1 (autonomous generator) and
+  R2 (mixing) residuals of the same-wall note.  WHICH holonomy is realized =
+  WHICH state is realized (the open-shell locus clause, state-side).  The U(1)/det holonomy
+  is a NAMED open thread.  Reconciled with the sibling primitivity note (object
+  distinction verified in-runner; its steelman leaves this route open) and the
+  native-plaquette retained_no_go (different object).  No new axiom/primitive/
+  measure/weight; r untouched; QUANTUM no-edge-DOF respected (derived data).
+  Audit lane grades.
+
+----- stderr -----
+

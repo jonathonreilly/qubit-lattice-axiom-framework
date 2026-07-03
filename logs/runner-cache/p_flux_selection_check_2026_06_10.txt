@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/p_flux_selection_check_2026_06_10.py
+runner_sha256: b3a9135604a281fe778c229eaab7bc890d85419a91a0b53845872256e597bb66
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.15
+status: ok
+----- stdout -----
+========================================================================
+[A] exact branch construction + tested-surface tie
+========================================================================
+[PASS]  1. [A] both branches Hermitian (exact)
+[PASS]  2. [A] frame-invariant uniform flux: K0 phi=+1, K1 phi=-1 (192 plaquettes each)
+[PASS]  3. [A] proper cubic rotation group generated: |O| = 24
+[PASS]  4. [A] K0 exactly invariant under translations and all 24 rotations (tested-separator tie, kinetic-class note)
+[PASS]  5. [A] K1 rotation pushforward stays uniform flux -1 under all 24 rotations (class covariance up to frame)
+[PASS]  6. [A] zeros: K0 (L=4,8) = (20,68); K1 (L=4,8) = (8,8) — matches the kinetic-class note's spectral witness
+[PASS]  7. [A] both branches Q-conserving bilinears by construction (no pairing block) => fermion-parity (-1)^Q EVEN on both (Z2-grading separator does not separate)
+
+========================================================================
+[B] carrier battery on K1 (flux -1) — generation-
+    carrier package, kernel-sector realization predicate G
+========================================================================
+[PASS]  8. [B] K1 L=4: kernel (dim 8) invariant under the three lattice translations
+[PASS]  9. [B] K1 L=4: dressed joint characters realize the FULL Klein cube {+-1}^3, multiplicity exactly 1 each (8 lines)
+[PASS] 10. [B] K1 L=4: kernel EQUALS the carrier cube exactly (extra dim 0)
+[PASS] 11. [B] K1 L=4: Hamming grading 1+3+3+1 on the carrier (substep-3 H2/H6)
+[PASS] 12. [B] K1 L=4: C3[111] preserves the kernel and cycles the carrier lines by the coordinate cycle (substep-3 H5)
+[PASS] 13. [B] K1 L=4: hw=1 joint characters exactly (-1,+1,+1)/(+1,-1,+1)/(+1,+1,-1) (substep-4 (2a)-(2c), hw1-characters row)
+[PASS] 14. [B] K1 L=4: commutant of the restricted triple on hw=1 is diagonal, dim 3 (substep-4 L4 simultaneous diagonalization)
+[PASS] 15. [B] K1 L=4: sector projectors + C3 generate M_3(C), dim 9 => irreducible => no proper quotient; observable-stable count = 3 (observable theorem + count corollary)
+[PASS] 16. [B] K1 L=4: sublattice chirality eps anticommutes with h and realizes the complementation involution c on the cube (substep-3 H7; eps is NOT per-site scalar — consistent with the no-per-site-chirality boundary)
+[PASS] 17. [B] K1 L=8: full battery PASS, kernel = carrier exactly
+
+========================================================================
+[C] the SAME battery on K0 (flux +1) — the attack's verdict
+========================================================================
+[PASS] 18. [C] K0 L=4: kernel (dim 20) invariant under the three lattice translations
+[PASS] 19. [C] K0 L=4: dressed joint characters realize the FULL Klein cube {+-1}^3 INSIDE the kernel, multiplicity exactly 1 each
+[PASS] 20. [C] K0 L=4: Hamming grading 1+3+3+1 on the embedded carrier
+[PASS] 21. [C] K0 L=4: C3[111] preserves the kernel and cycles the carrier lines by the coordinate cycle
+[PASS] 22. [C] K0 L=4: hw=1 joint characters exactly (-1,+1,+1)/(+1,-1,+1)/(+1,+1,-1)
+[PASS] 23. [C] K0 L=4: commutant on hw=1 diagonal, dim 3
+[PASS] 24. [C] K0 L=4: M_3(C) generated (dim 9) => no proper quotient; observable-stable count = 3 ON THE FLUX(+1) BRANCH
+[PASS] 25. [C] K0 L=4: chirality anticommutes and realizes c on the cube
+[PASS] 26. [C] K0 L=8: full battery PASS (kernel dim 68, carrier embedded)
+[PASS] 27. [C] K0 carrier canonicity: exactly ONE embedded pi-cube in the kernel (L=4: 1, L=8: 1) — no labeling freedom imported (substep-4 labeling no-go respected)
+[PASS] 28. [C] K1 carrier canonicity: kernel IS the unique cube (L=4 and L=8)
+RESIDUAL (declared-open): the kernel-sector realization predicate G (Definition D-G) is this note's declared reading of 'the matter sector carries the retained generation package'; G is not itself a retained requirement (boundary B-P1)
+
+========================================================================
+[D] falsification legs
+========================================================================
+[PASS] 29. [D1] battery NON-VACUOUS: anisotropic comparator t=(1,1,2) FAILS it (stage: C3[111] does not preserve/cycle the carrier); it equally violates the tested surface's cubic covariance
+[PASS] 30. [D1] comparator confirmed off-surface: C3[111] does not preserve it (|t| per direction is frame-invariant)
+[PASS] 31. [D2] under a generic site-local U(1) gauge of K1, the BARE-translation battery fails (the bare reading is frame-fragile)
+[PASS] 32. [D2] explicit dressed witness (site-local-phase x translation, site-local-phase x rotation) restores full battery PASS: predicate G is a frame-class predicate
+[PASS] 33. [D3] L=6 PBC: K1 kernel EMPTY (dim 0) — the flux(-1) branch itself loses the carrier at this wrap convention
+[PASS] 34. [D3] L=6 PBC: K0 kernel dim 24 but NO embedded pi-cube (0) — carrier loss is BRANCH-SYMMETRIC: wrap/volume convention data (B-H heritage), not a selector
+RESIDUAL (declared-open): carrier existence at finite volume is wrap-convention data (PBC/APBC, L mod 4); tested points are branch-symmetric (boundary B-P2)
+[PASS] 35. [D4] separating observable #1 (computed): kernel growth 20 -> 68 (extensive zero surface) vs 8 -> 8 (isolated Dirac points) — exactly the kinetic-order datum; this runner does not supply a point-like-zero-set requirement
+[PASS] 36. [D4] separating observable #2 (computed): kernel = carrier exactly on K1 vs carrier + 12 extra zero modes on K0 (L=4) — this runner does not supply a no-extra-sector requirement
+RESIDUAL (declared-open): both separating observables are the SAME extra residual as the kinetic-class note's B-BIT / the index-pairing no-go's kinetic-order selector (boundary B-P5); no new wall is introduced
+RESIDUAL (declared-open): route B (single-clock) and route C (positivity) are not closed here; they remain separate selector routes (boundary B-P4)
+RESIDUAL (declared-open): the mass-pattern / AC_phi_lambda side of the matter sector is out of scope; the battery tests the massless-sector carrier only (boundary B-P3)
+
+TOTAL: PASS=36 FAIL=0
+VERDICT: the existing matter-content/observable package (substep-3 cube combinatorics, substep-4 commuting-triple
+         characters, hw=1 distinct characters, M_3(C) no-proper-quotient, count = 3, Z2 grading, non-per-site
+         chirality), instantiated as the kernel-sector realization predicate G, is satisfied by BOTH kinetic
+         classes: K0 (flux +1) carries a canonical exact copy of the full generation carrier in its zero-mode
+         sector. The matter-content route does NOT select phi = -1 on this surface. The only separating
+         observables found are the extra kinetic-order data already named by B-BIT.
+
+----- stderr -----
+

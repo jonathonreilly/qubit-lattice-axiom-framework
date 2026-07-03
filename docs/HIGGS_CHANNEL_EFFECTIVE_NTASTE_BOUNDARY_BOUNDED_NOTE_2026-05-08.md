@@ -1,6 +1,6 @@
 # Higgs-Channel Effective N_taste Boundary Bounded Note
 
-**Date:** 2026-05-08
+**Date:** 2026-05-08; 2026-06-15 audited scope wording repair
 **Claim type:** bounded_theorem
 **Status authority:** source-note proposal only; audit verdict and
 effective status are set by the independent audit lane.
@@ -25,9 +25,10 @@ formula [5] of
 
 Specifically, if the Higgs is identified with a **single** Hamming-weight
 class `hw = k`, the effective `N_taste^(k) = binomial(4, k)`, and the
-five candidate single-class assignments give five distinct tree-level
-values `m_H_tree^(k)`. None of them coincide with the existing 140.3 GeV
-headline of `HIGGS_MASS_FROM_AXIOM_NOTE.md`. The `N_taste = 16` choice
+five candidate single-class assignments give three distinct tree-level
+values `m_H_tree^(k)`: `k = 0` equals `k = 4`, `k = 1` equals `k = 3`,
+and `k = 2` is the middle value. None of them coincide with the existing
+140.3 GeV headline of `HIGGS_MASS_FROM_AXIOM_NOTE.md`. The `N_taste = 16` choice
 that produces the existing 140.3 GeV headline is the **uniform**
 all-corners admission that treats the 16 corners as one Higgs channel;
 that choice is itself an admitted convention, not a structural derivation
@@ -49,17 +50,19 @@ as identified with that single class gives effective
 m_H_tree^(k)  =  v · sqrt( 4 / ( u_0^2 · binomial(4, k) ) ),             (1)
 ```
 
-with the Higgs note's stated `v = 246.22 GeV` and `u_0 = 0.8776`. The
-runner computes `(m_H_tree^(k))^2` exactly as `Fraction` and reports
-the numerical square root only for display. Numerical values rounded to
+with the Higgs note's stated `v = 246.22 GeV` and parent input
+`u_0 = <P>^(1/4) = 0.877681381` with `<P> = 0.5934` under the plaquette
+reuse license. The runner computes `(m_H_tree^(k))^2` exactly as
+`Fraction` using the parent nine-decimal `u_0` value and reports the
+numerical square root only for display. Numerical values rounded to
 0.1 GeV:
 
 | `k` | `N_taste^(k) = binomial(4, k)` | `m_H_tree^(k)` (GeV) |
 |---|---|---|
 | 0 | 1  | 561.1 |
-| 1 | 4  | 280.6 |
+| 1 | 4  | 280.5 |
 | 2 | 6  | 229.1 |
-| 3 | 4  | 280.6 |
+| 3 | 4  | 280.5 |
 | 4 | 1  | 561.1 |
 
 For comparison, the **uniform all-corners** assignment (the choice made
@@ -84,8 +87,11 @@ The runner repeats the channel-assignment computation with
 
 - `v = Fraction(24622, 100) = Fraction(12311, 50)` (the Higgs note's
   stated `v = 246.22 GeV`);
-- `u_0 = Fraction(8776, 10000) = Fraction(1097, 1250)` (the Higgs note's
-  stated `u_0 = 0.8776`);
+- `<P> = Fraction(5934, 10000) = Fraction(2967, 5000)`, consumed under
+  the plaquette reuse license;
+- `u_0 = <P>^(1/4) = 0.877681381`, represented for exact squared-value
+  checks as `Fraction(877681381, 1000000000)` (the parent Higgs B1/C1
+  boundary value);
 - `binomial(4, k)` for `k ∈ {0, 1, 2, 3, 4}` evaluated as exact integers.
 
 For each `k` the runner computes
@@ -94,8 +100,10 @@ For each `k` the runner computes
 ( m_H_tree^(k) )^2  =  v^2 · 4  /  ( u_0^2 · binomial(4, k) )            (3)
 ```
 
-as an exact `Fraction`, and verifies that the five values are pairwise
-different from the uniform-`N_taste = 16` value `v^2 / (4 u_0^2)`. The
+as an exact `Fraction`, verifies the binomial-symmetry equalities
+`k = 0 = 4` and `k = 1 = 3`, and verifies that all five single-class
+assignments are different from the uniform-`N_taste = 16` value
+`v^2 / (4 u_0^2)`. The
 runner also verifies
 
 ```text
@@ -121,6 +129,14 @@ it.
   symbol internally for the bounded staircase calculation, but the
   imported quantity should be read as `m_curv_tree` for
   first-principles-honest scope.)
+- [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
+  for B1's licensed reuse number `<P> = 0.5934`, hence
+  `u_0 = <P>^(1/4) = 0.877681381`. License: the plaquette authority
+  states that the canonical value `0.5934` may still be used by
+  downstream notes only as an admitted comparison/reuse number unless a
+  separate retained MC certificate or analytic beta=6 closure is
+  supplied. This note consumes the value exactly and only under that
+  license.
 - [`WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md`](WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md)
   for the upstream load-bearing combinatorial input (the
   `(1, 4, 6, 4, 1)` multiplicities and `(0, 2r, 4r, 6r, 8r)` Wilson
@@ -155,6 +171,14 @@ This note does not close:
 - any follow-on proof-walk for other algebraic bookkeeping notes;
 - any parent theorem/status promotion.
 
+## Changelog
+
+- 2026-06-11 (u_0 precision reconciliation, audit-requested): parent B1/C1 input synced to u_0 = <P>^{1/4} = 0.877681381 under the plaquette reuse license (PLAQUETTE_SELF_CONSISTENCY_NOTE.md, cited per the house B1 pattern); channel table regenerated from the rerun; no claim-scope change.
+- 2026-06-15 (audited scope wording repair): replaced the overbroad
+  single-class distinctness wording with the exact table statement
+  "five assignments yielding three distinct values, none equal to
+  uniform-16"; no arithmetic, dependency, or status claim changed.
+
 ## Verification
 
 Run:
@@ -169,7 +193,7 @@ Expected:
 TOTAL: PASS=N FAIL=0
 VERDICT: the Wilson Hamming-weight staircase does not by itself fix
 N_taste in HIGGS_MASS_FROM_AXIOM_NOTE.md formula [5]; the five
-single-class assignments give five distinct m_H_tree values, none of
-which coincides with the uniform-16 admission that produces the
-existing 140.3 GeV headline.
+single-class assignments give three distinct m_H_tree values
+(`k=0=4`, `k=1=3`, `k=2`), none of which coincides with the
+uniform-16 admission that produces the existing 140.3 GeV headline.
 ```

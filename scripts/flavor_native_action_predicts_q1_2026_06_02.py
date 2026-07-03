@@ -1,18 +1,19 @@
-"""Action axis: the native heat-kernel / Casimir / Connes spectral action on the generation factor
-has its interior stationary point at |b|/a ~ 1 (r=1, Q=1, the dimension/Plancherel default), NOT at
-the charged-lepton point |b|/a = 1/sqrt2 (r=1/2). And the {Wilson, HK, Manton} action-form
-degeneracy is r-IRRELEVANT: the on-site:hopping (a:|b|) split is set at quadratic order, where all
-three forms agree on the bi-invariant metric, so breaking the degeneracy at O(X^4) cannot move r.
+"""Action-axis finite scan on the generation factor.
 
-So no native action delivers r=1/2; the framework's native action-sector prediction is Q=1, and
-r=1/2 is reached only by the equal-block Hilbert-Schmidt partition 3a^2=6|b|^2 (= the admitted input
-AC_phi_lambda), a measure/reading prescription on the single invariant Tr(H^2), not a stationarity
-condition of any native action.
+For H = aI + b(C+C^2), five displayed spectral-action cutoffs have their
+finite-scan maxima near |b|/a = 1 (r=1, Q=1), not at the charged-lepton point
+|b|/a = 1/sqrt2 (r=1/2). The runner also checks that the on-site and hopping
+grades are Hilbert-Schmidt orthogonal, so a single HS quadratic norm does not
+relate the two amplitudes.
 
-This runner verifies the spectral-action critical |b|/a across several cutoff
-functions and the equal-block landmark. It reports source checks only.
+This runner does not prove a theorem for arbitrary monotone cutoffs, Casimir/HK
+Brownian time, or Wilson/HK/Manton action-form degeneracy.
 """
+from pathlib import Path
+
 import numpy as np
+
+from flavor_occupancy_boundary_checks_2026_06_13 import run_occupancy_boundary_checks
 
 C = np.array([[0, 0, 1.0], [1, 0, 0], [0, 1, 0]])
 I3 = np.eye(3)
@@ -61,7 +62,8 @@ def main():
         abs(np.sqrt(0.5) - 1 / np.sqrt(2)) < 1e-12 and abs((1 / np.sqrt(2)) ** 2 - 0.5) < 1e-12,
         f"1/sqrt2 = {1/np.sqrt(2):.6f}, r=1/2"))
 
-    # Spectral-action interior extremum |b|/a across cutoff functions -> ~1 (r=1), never 1/sqrt2.
+    # Spectral-action finite-scan maximum |b|/a across five cutoff functions -> ~1 (r=1),
+    # never 1/sqrt2. This is a finite displayed-family scan, not an arbitrary-cutoff theorem.
     cutoffs = {
         "exp(-x)": lambda x: np.exp(-x),
         "exp(-x^2)": lambda x: np.exp(-x ** 2),
@@ -73,7 +75,7 @@ def main():
     all_near_one = all(abs(v - 1.0) < 0.08 for v in crit.values())
     far_from_half = all(abs(v - 1 / np.sqrt(2)) > 0.2 for v in crit.values())
     passed.append(check(
-        "spectral-action interior extremum |b|/a ~ 1 (r=1) for every cutoff, never near 1/sqrt2=0.707",
+        "five displayed spectral-action cutoffs peak at |b|/a ~ 1 (r=1), never near 1/sqrt2=0.707",
         all_near_one and far_from_half,
         "; ".join(f"{k}:{v:.3f}" for k, v in crit.items())))
 
@@ -85,21 +87,23 @@ def main():
         np.allclose(lam_at_1, [0, 0, 3], atol=1e-9) and abs(Q_at_1 - 1.0) < 1e-9,
         f"spectrum={lam_at_1}, Q={Q_at_1:.6f}"))
 
-    # Action-form degeneracy is r-irrelevant: at quadratic order all forms give the same bi-invariant
-    # |X|^2 metric; mass (k=0) and hopping (k=1,2) live in HS-ORTHOGONAL C_3 character modes, so the
-    # bi-invariant metric only rescales the overall norm, never relates the two amplitudes.
-    # Verify the two grades are HS-orthogonal (no cross term => ratio not fixed by a single norm).
+    # Verify the two grades are HS-orthogonal (no cross term => the ratio is not fixed by a single
+    # Hilbert-Schmidt quadratic norm on this ansatz).
     cross = np.real(np.trace((a * I3).conj().T @ (b * (C + C.T))))
     passed.append(check(
         "mass grade (I) and hopping grade (C+C^2) are HS-orthogonal => one bi-invariant norm cannot fix the a:|b| ratio",
         abs(cross) < 1e-12, f"<mass,hop>_HS = {cross:.2e}"))
 
+    root = Path(__file__).resolve().parents[1]
+    passed.extend(run_occupancy_boundary_checks(root, check, "downstream occupancy atom"))
+
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
-    print("FINDING: the native heat-kernel/Casimir/spectral action interior extremum is at r=1 (Q=1) for")
-    print("every cutoff; the action-form degeneracy is r-irrelevant (mass/hop HS-orthogonal, set at")
-    print("quadratic order). The tested native action axis does not deliver r=1/2; r=1/2 is")
-    print("the equal-block partition 3a^2=6b^2 = AC_phi_lambda. Native action-sector")
-    print("tendency = Q=1 for this route.")
+    print("FINDING: the five displayed spectral-action cutoffs peak near r=1 (Q=1), not r=1/2.")
+    print("The mass/hop grades are HS-orthogonal, so one HS quadratic norm on this ansatz")
+    print("does not fix their ratio. This is a finite-scan/source-scope certificate, not")
+    print("an arbitrary native-action theorem.")
+    print("DOWNSTREAM: the residual is the explicit occupancy/slot-degree atom; no")
+    print("action-axis selector is introduced or adopted here.")
     return 0 if all(passed) else 1
 
 

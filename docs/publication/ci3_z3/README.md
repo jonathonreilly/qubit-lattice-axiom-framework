@@ -1,4 +1,4 @@
-# Qubit-Lattice Axiom Framework Publication Package
+# Lattice-Quantum-Record Framework Publication Package
 
 This directory is the public scientific package for the current `main` branch.
 
@@ -6,134 +6,74 @@ Use it if you want:
 
 - the paper-facing claim surface
 - the current prediction and falsification surface
-- the domain map of the science already in the repo
+- the domain map of the science surfaced in the repo
 - the canonical validation and reproduction path
 
 **Audit status note:** this package is now under the repo audit lane. Source
 notes self-declare only `proposed_retained` / `proposed_promoted`; only
 [../../audit/AUDIT_LEDGER.md](../../audit/AUDIT_LEDGER.md) can ratify a row as
-`retained` / `promoted` through `effective_status`. Tables in this directory
-remain the manuscript-capture surface, but until the audit ledger marks a row
-clean, read legacy `retained` / `promoted` wording as proposed package status.
+retained-grade through `effective_status`. Retained-grade statuses are
+`retained`, `retained_no_go`, and `retained_bounded`; boxed
+`decoration_under_*` rows may be cited only as decorations under their retained
+parent, not as independent retained rows. `promoted` is publication-capture
+language, not an audit `effective_status`. Tables in this directory remain the
+manuscript-capture surface, but until the audit ledger marks a row clean, read
+legacy `retained` / `promoted` wording as proposed package status.
 
 ## Read In This Order
 
-1. [Public arXiv draft](./ARXIV_DRAFT.md)
-2. [Prediction surface](./PREDICTION_SURFACE_2026-04-15.md)
-3. [Quantitative summary table](./QUANTITATIVE_SUMMARY_TABLE.md)
-4. [Reproduce guide](./REPRODUCE.md)
-5. [Manuscript claims surface](./CLAIMS_TABLE.md)
-6. [Science map by domain](./SCIENCE_MAP.md)
-7. [Inputs and qualifiers](./INPUTS_AND_QUALIFIERS_NOTE.md)
-8. [What this paper does not claim](./WHAT_THIS_PAPER_DOES_NOT_CLAIM.md)
-9. [Derivation / validation map](./DERIVATION_VALIDATION_MAP.md)
-10. [Results index](./RESULTS_INDEX.md)
-11. [Derivation atlas](./DERIVATION_ATLAS.md)
-12. [Full claim ledger](./FULL_CLAIM_LEDGER.md)
+1. [Generated front-door status snapshot](../../repo/FRONT_DOOR_STATUS.md)
+2. [Minimal Lattice/Quantum/Record axiom memo](../../MINIMAL_AXIOMS_2026-06-05.md)
+3. [Public arXiv draft](./ARXIV_DRAFT.md)
+4. [Current falsifiable predictions](./FALSIFIABLE_PREDICTIONS_2026-06-08.md)
+5. [Prediction surface](./PREDICTION_SURFACE_2026-04-15.md)
+6. [Quantitative summary table with audit badges](./QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md)
+7. [Reproduce guide](./REPRODUCE.md)
+8. [Manuscript claims with audit badges](./CLAIMS_TABLE_EFFECTIVE_STATUS.md)
+9. [Science map by domain](./SCIENCE_MAP.md)
+10. [Inputs and qualifiers](./INPUTS_AND_QUALIFIERS_NOTE.md)
+11. [What this paper does not claim](./WHAT_THIS_PAPER_DOES_NOT_CLAIM.md)
+12. [Derivation / validation map with audit badges](./DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md)
+13. [Results index with audit badges](./RESULTS_INDEX_EFFECTIVE_STATUS.md)
+14. [Derivation atlas with audit badges](./DERIVATION_ATLAS_EFFECTIVE_STATUS.md)
+15. [Full claim ledger with audit badges](./FULL_CLAIM_LEDGER_EFFECTIVE_STATUS.md)
 
 For the full package-capture inventory, use:
 
 - [PUBLICATION_MATRIX.md](./PUBLICATION_MATRIX.md)
 
-## Current Package State
+## Current Audit-Badged State
 
-- exact framework/backbone:
-  qubit-at-every-`Z^3`-site axioms with the equivalent `Cl(3,0)` local-algebra
-  reading, anomaly-forced `3+1`, exact native `SU(2)`, graph-first
-  structural `SU(3)`, exact discrete `3+1` GR, and the chosen continuum/QG
-  identification chain
-- retained quantitative package:
-  electroweak scale `v`, `alpha_s(M_Z)`, the coupling-chain identity
-  `alpha_LM^2 = alpha_bare alpha_s(v)`, electroweak normalization, YT/top
-  transport conditioned on the support-tier Ward identification, and the
-  promoted CKM atlas/axiom package, including the
-  standalone `lambda^2 = alpha_s(v)/2`, `A^2 = 2/3`, and
-  `cos^2(delta_CKM) = 1/6` structural identities plus the rescaled atlas-triangle
-  right-angle identity `alpha_0 = 90 deg`, atlas-leading first-row identities
-  `|V_us|_0^2 = alpha_s(v)/2`,
-  `|V_ub|_0^2 = alpha_s(v)^3/72`,
-  `|V_ud|_0^2 = 1 - alpha_s(v)/2 - alpha_s(v)^3/72`,
-  atlas-leading second-row identities
-  `|V_cd|_0^2 = alpha_s(v)/2`,
-  the retained NLO barred-triangle closure
-  `R_t_bar^2 = (80 + alpha_s(v)^2)/96` and
-  `R_b_bar^2 + R_t_bar^2 + rho_bar lambda^2 = 1`,
-  plus the exact barred-apex-angle closure
-  `alpha_bar = pi/2 + arctan((sqrt(5)/20) alpha_s(v))` and
-  `tan(alpha_bar) = -4 sqrt(5)/alpha_s(v)`,
-  plus the surface-exact barred circumradius and circumcenter closure
-  `R_bar^2 = 1/4 + alpha_s(v)^2/320` and
-  `(x_cc,y_cc)=(1/2,-alpha_s(v)sqrt(5)/40)`,
-  plus the exact barred-triangle center / Euler-line closure
-  `H=(rho_bar,(20+alpha_s(v))/(24 sqrt(5)))`,
-  `H-V_3=(0,alpha_s(v) sqrt(5)/20)`,
-  `G=((28-alpha_s(v))/72,sqrt(5)(4-alpha_s(v))/72)`,
-  and exact `H=3G-2O`,
-  plus the exact barred-triangle Napoleon closure
-  `N_outer^2=W_+/6`, `N_inner^2=W_-/6`, and
-  `N_outer^2 N_inner^2=P(alpha_s(v))/82944`,
-  plus the exact barred-triangle Weitzenbock/Brocard package
-  `W_+=((alpha_s(v)^2-4alpha_s(v)+96)+4sqrt(15)(4-alpha_s(v)))/48`,
-  `W_-=((alpha_s(v)^2-4alpha_s(v)+96)-4sqrt(15)(4-alpha_s(v)))/48`, and
-  `W_+W_-=P(alpha_s(v))/2304`,
-  plus the NLO Jarlskog closed form
-  `J_bar = sqrt(5) alpha_s(v)^3(4-alpha_s(v))/288`,
-  `|V_cs|_0^2 = 1 - alpha_s(v)/2 - alpha_s(v)^2/6`,
-  `|V_cb|_0^2 = alpha_s(v)^2/6`, and atlas-leading third-row identities
-  `|V_td|_0^2 = 5 alpha_s(v)^3/72`,
-  `|V_ts|_0^2 = alpha_s(v)^2/6`; the structural-counts packaging theorem
-  now isolates the common off-diagonal surface
-  `|V_us|_0^2 = alpha_s(v)/n_pair`,
-  `|V_cb|_0^2 = |V_ts|_0^2 = alpha_s(v)^2/(n_pair n_color)`,
-  `|V_ub|_0^2 = alpha_s(v)^3/(8 n_color^2)`,
-  `|V_td|_0^2 = (n_quark-1) alpha_s(v)^3/(8 n_color^2)`,
-  with explicit `n_pair` cancellation in `|V_ub|_0^2`, plus the atlas-leading
-  B_s mixing phase `phi_s = -alpha_s(v) sqrt(5)/6 = -0.03850 rad` and the NLO barred-triangle
-  protected invariant `gamma_bar = arctan(sqrt(5))`, the retained NLO beta-ratio
-  corollary `sin(2 beta_bar)/sin(2 beta_0) = 1 - alpha_s(v)/5`, plus the
-  Thales-mediated cross-system CP ratio
-  `phi_s / sin(2 beta_d) = -alpha_s(v)/2` and CP-product estimator
-  `alpha_s(v) = (18/5) sin(2 beta_d) sin(2 beta_s)` at atlas-leading order
-  plus the kaon epsilon_K
-  CKM-bracket factorization through atlas `J_0`
-- retained structural/corollary surface:
-  strong CP on the retained action surface, emergent Lorentz invariance plus
-  exact continuum-limit 1+1D / 3+1D boost-covariant free-scalar 2-point closure
-  and fixed-`H_lat` unitary-kernel closure,
-  universal theta-induced EDM-response vanishing on that retained strong-CP
-  surface,
-  `S^3` topology closure, SM hypercharge uniqueness/electric-charge
-  quantization, fractional-charge denominator from `N_c`, `SU(2)` Witten
-  global-anomaly cancellation, `SU(3)^3` cubic gauge anomaly cancellation,
-  B-L anomaly freedom as a gaugeable option on the retained content,
-  exact `I_3 = 0`, exact CPT, Bell/CHSH support,
-  retained cosmology identities/corollaries, including exact `R_base = 31/9`
-  group-theory support for the bounded DM/cosmology cascade, the FRW kinematic
-  reduction of late-time cosmology observables to the open `H_inf/H_0` ratio,
-  the [single-ratio inverse reconstruction certificate](../../COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md),
-  the [late-time Hubble structural lock](../../HUBBLE_TENSION_STRUCTURAL_LOCK_THEOREM_NOTE_2026-04-26.md)
-  and [two-degree open-number reduction](../../COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md),
-  the matter-radiation equality identity `1 + z_mr = Omega_m,0/Omega_r,0`,
-  the retained active-neutrino-count support for standard `N_eff = 3.046`,
-  and the retained scalar, vector, and TT compactness spectral towers on `S^3`,
-  including their pure-`Lambda` bridge and Lambda-independent
-  `m_TT(2)/m_vec(1) = sqrt(3)` structural ratio
-- flagship closed package:
-  dark-matter exact-target PMNS package on the manuscript surface
-- flagship open package:
-  charged-lepton Koide, with full dimensionless closure still open after the
-  native zero-section review, pointed-origin exhaustion theorem, and
-  objection-closure review and A1/radian audit; the April 25 criterion theorem
-  closes the background-zero / `Z`-erasure algebra for `Q` inside the admitted
-  reduced carrier, but the physical source-free carrier-selection theorem
-  remains open, alongside selected-line local boundary-source, based-endpoint,
-  and Type-B rational-to-radian readout theorems for `delta`, plus the
-  separate overall lepton scale `v_0`
-- bounded companion surface:
-  Higgs/vacuum, down-type CKM-dual ratios, neutrino absolute-mass observable
-  bounds, proton lifetime, neutron EDM continuation, taste-scalar companion,
-  gravitational decoherence, monopole mass, cosmology numerics, BH entropy
-  companion, GW echo null result
+This README is a navigation surface, not a status authority. Current status is
+owned by:
+
+- [../../repo/FRONT_DOOR_STATUS.md](../../repo/FRONT_DOOR_STATUS.md) for the
+  generated front-door aggregate snapshot
+- [../../audit/AUDIT_LEDGER.md](../../audit/AUDIT_LEDGER.md) for row-level
+  audit verdicts and scopes
+- the generated effective-status mirrors linked above for claim, quantitative,
+  validation, results, atlas, and full-ledger publication views
+- [PUBLICATION_AUDIT_DIVERGENCE.md](./PUBLICATION_AUDIT_DIVERGENCE.md) for
+  publication rows whose manuscript wording is ahead of audit ratification
+
+When reading the package tables, treat these as curation categories rather than
+audit badges:
+
+- framework/backbone rows: Lattice, Quantum, Record, the `Cl(3,0)` reading,
+  dimension, gauge, GR, and QG/continuum routes
+- quantitative and flavor rows: electroweak/QCD/Yukawa inputs, CKM atlas rows,
+  `alpha_s` derived rows, top transport, and related corollaries
+- structural/corollary rows: strong CP, Lorentz, topology, hypercharge/anomaly,
+  cosmology, Hubble, `N_eff`, matter-radiation equality, GR/QG, and spectral
+  tower rows
+- dark-matter, charged-lepton, and bounded companion rows: manuscript-capture
+  surfaces whose audit grade must be checked row by row
+
+Known audit-sensitive examples include the CKM atlas, `alpha_s` derived notes,
+`N_eff`, matter-radiation equality, Hubble structural rows, DM transport,
+hypercharge/anomaly rows, and GR/QG rows. Do not infer retained grade from their
+appearance in this package; use each row's ledger `effective_status` or the
+generated effective-status mirror.
 
 ## What Is Publicly Surfaced Here
 
@@ -142,7 +82,7 @@ The package is organized around four distinct surfaces:
 1. `claims`
    what the paper may claim safely
 2. `predictions`
-   what the package already predicts, including bounded and delayed-observability
+   what the prediction surface currently lists, including bounded and delayed-observability
    rows
 3. `science by domain`
    where each major physics area lives in the repo
@@ -215,7 +155,7 @@ same thing as the current active package state:
 ## Package Boundaries
 
 - framework/input boundary:
-  [MINIMAL_AXIOMS_2026-05-20.md](../../MINIMAL_AXIOMS_2026-05-20.md)
+  [MINIMAL_AXIOMS_2026-06-05.md](../../MINIMAL_AXIOMS_2026-06-05.md)
 - explicit package qualifiers:
   [INPUTS_AND_QUALIFIERS_NOTE.md](./INPUTS_AND_QUALIFIERS_NOTE.md)
 - explicit non-claims:

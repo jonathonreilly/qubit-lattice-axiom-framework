@@ -1,0 +1,17 @@
+loop_slug: mesoscopic-surrogate-planning-boundary-20260608
+branch: physics-loop/mesoscopic-surrogate-planning-boundary-20260608
+base: origin/main
+target_claim_id: mesoscopic_surrogate_alternate_family_scout_note
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: meta_support_planning_boundary
+files_touched:
+  - docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md
+  - scripts/mesoscopic_surrogate_alternate_family_scout.py
+  - logs/runner-cache/mesoscopic_surrogate_alternate_family_scout.txt
+open_imports:
+  - registered objective ranking criterion
+  - theorem-grade target-selection rule
+next_exact_action: open review PR
+stop_condition: PR opened

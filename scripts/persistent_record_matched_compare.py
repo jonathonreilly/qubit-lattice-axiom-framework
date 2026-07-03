@@ -41,6 +41,7 @@ from scripts.persistent_record_overlap_kernel import (
     record_family_ranges,
 )
 
+AUDIT_TIMEOUT_SEC = 240
 BETA = 0.8
 
 

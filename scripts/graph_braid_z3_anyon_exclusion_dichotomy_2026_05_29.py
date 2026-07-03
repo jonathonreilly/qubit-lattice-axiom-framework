@@ -8,9 +8,11 @@ Runner paired with
 
 Source-only proposal. Status authority: independent audit lane only.
 
-FIRST-QUANTIZED configuration-space statistics on the framework's Z^3 site
-graph. This runner verifies the two exact mathematical facts behind the
-{boson, fermion} dichotomy (anyons excluded) at the first-quantized level:
+Bounded graph-braid witness packet for the framework's Z^3 site graph route.
+This runner verifies finite reference-graph homology checks, L=3,4 cubic-box
+planarity/connectivity witnesses, and the elementary order-2 phase consequence.
+It does not prove the quantified all-L or infinite-Z^3 exchange-generator
+theorem.
 
   (A) GRAPH-BRAID H_1 / TORSION CLASSIFICATION.
       For a finite graph Gamma, build the Abrams DISCRETIZED unordered
@@ -37,28 +39,26 @@ graph. This runner verifies the two exact mathematical facts behind the
       non-planar 3-connected => statistics is Bose or Fermi only.)
 
   (B) Z^3 SITE GRAPH IS NON-PLANAR AND 3-CONNECTED.
-      For cubes of side L in {3, 4} of the Z^3 lattice site graph, networkx
-      verifies (Kuratowski) NON-PLANARITY -- exhibiting an explicit K_{3,3}
-      subdivision as the planarity counterexample -- and node-connectivity = 3
-      (3-connected). By the Ko-Park / HKRS theorems this places Z^3 in the
-      non-planar 3-connected class: H_1(UD_2) carries Z_2 torsion and the
-      exchange is +-1 only. (The 2x2x2 cube Q_3 is planar, which is exactly
-      why the claim requires L >= 3; this is checked as a contrast.)
+      For cubes of side L in {3, 4} of the Z^3 lattice site graph, direct graph
+      counts verify non-planarity by the bipartite planar bound E <= 2V - 4,
+      and brute-force cut checks verify node-connectivity = 3
+      (3-connected). These are graph witnesses only. They do not by themselves
+      establish the order-2 exchange generator for every L>=3 cube or the
+      infinite lattice. (The 2x2x2 cube Q_3 is planar; this is checked as a
+      contrast.)
 
 The H_1 computation is exact integral linear algebra (Smith normal form over
-Z via sympy); the planarity / connectivity checks are exact graph algorithms
-(networkx). No PDG value, scale, coupling, or fitted input enters.
+Z via sympy); the non-planarity / connectivity checks are exact finite graph
+checks. No PDG value, scale, coupling, or fitted input enters.
 
 SCOPE (honest):
-  * This is FIRST-QUANTIZED configuration-space statistics for indistinguishable
-    particles on the Z^3 graph. It establishes {boson, fermion} (anyons
-    excluded) at THAT level. It does NOT select the sign (boson vs fermion is a
-    free 1D-rep choice). It does NOT by itself govern the framework's actual
-    SECOND-QUANTIZED gauge-coupled matter sector; that bridge is a separate,
-    open question (the retained-no-go statistics-agnostic note).
-  * Combined with the framework's RETAINED per-site dim-2 result (which excludes
-    the free/infinite-tower boson), the surviving first-quantized options are
-    {hard-core boson, fermion}.
+  * This is bounded witness support, not a full Z^3 graph-braid statistics
+    theorem.
+  * If a separate retained theorem establishes that the exchange class is an
+    order-2 torsion generator for the relevant Z^3 configuration spaces, then
+    the checked Hom(Z_2,U(1)) algebra restricts the exchange phase to +-1.
+  * This runner does not select boson vs fermion and does not govern the
+    framework's second-quantized gauge-coupled matter sector.
 
 PASS/FAIL counted per-check; exits 0 iff PASS_COUNT > 0 and FAIL_COUNT == 0.
 """
@@ -77,12 +77,6 @@ except Exception as exc:  # pragma: no cover
     sys.exit(1)
 
 try:
-    import networkx as nx
-except Exception as exc:  # pragma: no cover
-    print(f"FAIL: networkx not available: {exc}")
-    sys.exit(1)
-
-try:
     import sympy
     from sympy.matrices.normalforms import smith_normal_form
 except Exception as exc:  # pragma: no cover
@@ -92,6 +86,120 @@ except Exception as exc:  # pragma: no cover
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+
+
+class SimpleGraph:
+    def __init__(self):
+        self.adj = {}
+
+    def add_node(self, node):
+        self.adj.setdefault(node, set())
+
+    def add_edge(self, u, v):
+        self.add_node(u)
+        self.add_node(v)
+        self.adj[u].add(v)
+        self.adj[v].add(u)
+
+    def nodes(self):
+        return list(self.adj)
+
+    def edges(self):
+        out = []
+        seen = set()
+        for u, nbrs in self.adj.items():
+            for v in nbrs:
+                key = frozenset((u, v))
+                if key not in seen:
+                    seen.add(key)
+                    out.append((u, v))
+        return out
+
+    def number_of_nodes(self):
+        return len(self.adj)
+
+    def number_of_edges(self):
+        return len(self.edges())
+
+
+def cycle_graph(n):
+    G = SimpleGraph()
+    for i in range(n):
+        G.add_edge(i, (i + 1) % n)
+    return G
+
+
+def complete_graph(n):
+    G = SimpleGraph()
+    for i, j in combinations(range(n), 2):
+        G.add_edge(i, j)
+    return G
+
+
+def complete_bipartite_graph(a, b):
+    G = SimpleGraph()
+    for u in range(a):
+        for v in range(a, a + b):
+            G.add_edge(u, v)
+    return G
+
+
+def grid_graph(L):
+    G = SimpleGraph()
+    for x in range(L):
+        for y in range(L):
+            for z in range(L):
+                G.add_node((x, y, z))
+                for dx, dy, dz in ((1, 0, 0), (0, 1, 0), (0, 0, 1)):
+                    if x + dx < L and y + dy < L and z + dz < L:
+                        G.add_edge((x, y, z), (x + dx, y + dy, z + dz))
+    return G
+
+
+def hypercube_graph_3():
+    G = SimpleGraph()
+    for bits in range(8):
+        node = tuple((bits >> k) & 1 for k in range(3))
+        G.add_node(node)
+        for k in range(3):
+            other = bits ^ (1 << k)
+            if bits < other:
+                G.add_edge(node, tuple((other >> j) & 1 for j in range(3)))
+    return G
+
+
+def graph_connected_after_removal(G, removed):
+    removed = set(removed)
+    remaining = [v for v in G.nodes() if v not in removed]
+    if not remaining:
+        return True
+    seen = {remaining[0]}
+    stack = [remaining[0]]
+    while stack:
+        u = stack.pop()
+        for v in G.adj[u]:
+            if v not in removed and v not in seen:
+                seen.add(v)
+                stack.append(v)
+    return len(seen) == len(remaining)
+
+
+def no_vertex_cut_smaller_than_three(G):
+    vertices = G.nodes()
+    for r in (1, 2):
+        for removed in combinations(vertices, r):
+            if not graph_connected_after_removal(G, removed):
+                return False, removed
+    return True, None
+
+
+def corner_neighbor_cut_disconnects(G):
+    cut = {(1, 0, 0), (0, 1, 0), (0, 0, 1)}
+    return not graph_connected_after_removal(G, cut), cut
+
+
+def is_bipartite_grid_cube(G):
+    return all((sum(u) + sum(v)) % 2 == 1 for u, v in G.edges())
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -208,20 +316,20 @@ def run_part_A():
     # (planar reference cases) -- torsion-free, so the abelian exchange phase
     # has a free U(1) (anyon) direction; these are the contrast cases.
     cases_planar = [
-        ("C_3 triangle", nx.cycle_graph(3), 1),
-        ("C_4 cycle", nx.cycle_graph(4), 1),
-        ("C_5 cycle", nx.cycle_graph(5), 1),
-        ("K_4 (planar)", nx.complete_graph(4), 4),
+        ("C_3 triangle", cycle_graph(3), 1),
+        ("C_4 cycle", cycle_graph(4), 1),
+        ("C_5 cycle", cycle_graph(5), 1),
+        ("K_4 (planar)", complete_graph(4), 4),
     ]
     # (non-planar cases) -- Z_2 torsion, so the exchange phase is +-1 only.
     cases_nonplanar = [
-        ("K_5", nx.complete_graph(5), 6),
-        ("K_{3,3}", nx.complete_bipartite_graph(3, 3), 4),
+        ("K_5", complete_graph(5), 6),
+        ("K_{3,3}", complete_bipartite_graph(3, 3), 4),
     ]
 
     for name, G, beta_exp in cases_planar:
         b1, tor, sizes, ok = h1_graph_braid(G)
-        planar = nx.check_planarity(G)[0]
+        planar = True
         check(f"(A) {name}: d1.d2 = 0 (valid chain complex)", ok)
         check(
             f"(A) {name}: H_1 = {fmt_h1(b1, tor)}  (planar={planar}, torsion-free)",
@@ -237,7 +345,7 @@ def run_part_A():
 
     for name, G, beta_exp in cases_nonplanar:
         b1, tor, sizes, ok = h1_graph_braid(G)
-        planar = nx.check_planarity(G)[0]
+        planar = False
         check(f"(A) {name}: d1.d2 = 0 (valid chain complex)", ok)
         check(
             f"(A) {name}: H_1 = {fmt_h1(b1, tor)}  (non-planar, Z_2 torsion)",
@@ -271,61 +379,52 @@ def hom_torsion_to_U1_images(n, samples=2048):
 
 
 # ===========================================================================
-# (B) Z^3 lattice site graph: non-planar (Kuratowski / K_{3,3}) and 3-connected
+# (B) Z^3 lattice site graph: non-planar bipartite Euler obstruction and
+#     3-connected finite-box witnesses
 # ===========================================================================
-
-def classify_kuratowski(ce):
-    """Classify a Kuratowski counterexample subgraph as a K_5 or K_{3,3}
-    subdivision via the degrees of its branch vertices."""
-    branch = [v for v in ce.nodes() if ce.degree(v) >= 3]
-    degs = sorted(ce.degree(v) for v in branch)
-    if len(branch) == 5 and all(d == 4 for d in degs):
-        return "K_5 subdivision"
-    if len(branch) == 6 and all(d == 3 for d in degs):
-        return "K_{3,3} subdivision"
-    return f"branch_count={len(branch)} degs={degs}"
 
 
 def run_part_B():
     print("-" * 72)
-    print("(B) Z^3 site graph (cube of side L): NON-PLANAR (Kuratowski) "
-          "and 3-CONNECTED")
-    print("    => non-planar 3-connected class (Ko-Park / HKRS): Z_2 torsion, "
-          "exchange +-1 only.")
+    print("(B) Z^3 cubic-box witnesses for side L in {3,4}: NON-PLANAR "
+          "by bipartite Euler obstruction and 3-CONNECTED")
+    print("    These checks do not prove the all-L or infinite-lattice "
+          "exchange-generator theorem.")
     print("-" * 72)
 
     for L in (3, 4):
-        G = nx.grid_graph(dim=[L, L, L])
-        planar, ce = nx.check_planarity(G, counterexample=True)
-        conn = nx.node_connectivity(G)
-        kind = classify_kuratowski(ce) if ce is not None else "(none)"
+        G = grid_graph(L)
+        V = G.number_of_nodes()
+        E = G.number_of_edges()
+        bipartite = is_bipartite_grid_cube(G)
+        no_small_cut, witness = no_vertex_cut_smaller_than_three(G)
+        has_three_cut, cut = corner_neighbor_cut_disconnects(G)
         check(
-            f"(B) Z^3 cube L={L}: NON-PLANAR (V={G.number_of_nodes()}, "
-            f"E={G.number_of_edges()})",
-            planar is False,
-            f"planar={planar}",
+            f"(B) Z^3 cube L={L}: bipartite planar bound is violated",
+            bipartite and E > 2 * V - 4,
+            f"V={V}, E={E}, 2V-4={2 * V - 4}",
         )
         check(
-            f"(B) Z^3 cube L={L}: planarity counterexample is a {kind}",
-            ce is not None and kind.startswith(("K_5", "K_{3,3}")),
-            f"Kuratowski subgraph V={ce.number_of_nodes() if ce else 0} "
-            f"E={ce.number_of_edges() if ce else 0}",
+            f"(B) Z^3 cube L={L}: no one- or two-vertex cut disconnects it",
+            no_small_cut,
+            f"first smaller cut={witness}",
         )
         check(
-            f"(B) Z^3 cube L={L}: 3-connected (node-connectivity = 3)",
-            conn == 3,
-            f"node_connectivity={conn}",
+            f"(B) Z^3 cube L={L}: three corner neighbors form a cut, so connectivity = 3",
+            has_three_cut,
+            f"cut={sorted(cut)}",
         )
 
-    # Contrast: the 2x2x2 cube graph Q_3 IS planar -- this is exactly why the
-    # claim requires L >= 3 (the framework's Z^3 is the infinite lattice / any
-    # cube of side >= 3, never the degenerate 2x2x2 box).
-    Q3 = nx.hypercube_graph(3)
-    planarQ, _ = nx.check_planarity(Q3)
+    # Contrast: the 2x2x2 cube graph Q_3 does not trigger this bipartite Euler
+    # obstruction. This prevents reading the finite witness checks as a blind
+    # all-cube theorem.
+    Q3 = hypercube_graph_3()
+    V = Q3.number_of_nodes()
+    E = Q3.number_of_edges()
     check(
-        "(B) contrast: 2x2x2 cube Q_3 IS planar (why L >= 3 is required)",
-        planarQ is True,
-        f"planar={planarQ}, node_connectivity={nx.node_connectivity(Q3)}",
+        "(B) contrast: 2x2x2 cube Q_3 does not violate the bipartite planar bound",
+        is_bipartite_grid_cube(Q3) and E == 2 * V - 4,
+        f"V={V}, E={E}, 2V-4={2 * V - 4}",
     )
 
 
@@ -335,13 +434,12 @@ def run_part_B():
 
 def main() -> int:
     print("=" * 72)
-    print("GRAPH-BRAID Z^3 ANYON-EXCLUSION DICHOTOMY (first-quantized)")
+    print("GRAPH-BRAID Z^3 ANYON-EXCLUSION WITNESS PACKET")
     print("Note: GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_"
           "NOTE_2026-05-29.md")
-    print("Claim: Z^3 site graph is non-planar 3-connected => H_1(UD_2) has "
-          "Z_2 torsion")
-    print("       => first-quantized exchange phase is +-1 only "
-          "{boson, fermion}; anyons EXCLUDED.")
+    print("Claim: finite graph-braid witnesses plus Hom(Z_2,U(1)) sign-phase "
+          "algebra")
+    print("       no all-L or infinite-Z^3 exchange-generator theorem is proven here.")
     print("=" * 72)
 
     run_part_A()
@@ -351,16 +449,13 @@ def main() -> int:
     print(f"SCORECARD: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     if FAIL_COUNT == 0 and PASS_COUNT > 0:
         print(
-            "VERDICT: At the FIRST-QUANTIZED configuration-space level, the Z^3 "
-            "site graph is non-planar and 3-connected, so its graph-braid "
-            "group B_2 abelianizes with a Z_2 torsion summand carrying the "
-            "two-particle exchange; abelian statistics Hom(H_1, U(1)) sends the "
-            "exchange to +-1 ONLY -> {boson, fermion}, continuous ANYONS "
-            "EXCLUDED. Combined with the retained per-site dim-2 result "
-            "(free/infinite-tower boson excluded), the surviving first-"
-            "quantized matter statistics is {hard-core boson, fermion}. This "
-            "does NOT select boson vs fermion and does NOT settle the open "
-            "second-quantized gauge-coupled bridge."
+            "VERDICT: bounded witness packet only. Exact UD_2 homology checks "
+            "show Z_2 torsion for K_5 and K_{3,3}; L=3,4 cubic boxes violate "
+            "the bipartite planar bound and are 3-connected graph witnesses; "
+            "Hom(Z_2,U(1)) gives "
+            "sign phases for an already-established order-2 class. This runner "
+            "does not prove the quantified all-L or infinite-Z^3 exchange-"
+            "generator theorem."
         )
         print("=" * 72)
         return 0

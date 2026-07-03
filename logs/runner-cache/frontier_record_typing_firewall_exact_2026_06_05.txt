@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_typing_firewall_exact_2026_06_05.py
+runner_sha256: f950f00771744ce1459bba085bf17de0c80ca985c76af55c5443b212562f7364
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+=== Record readout context ===
+[PASS] C1 central-sector set is finite
+[PASS] C2 fixed K/CPT action is an involution
+       K = {'chi0': 'chi0', 'chi1': 'chi2', 'chi2': 'chi1'}
+[PASS] C3 realized record values are K/CPT orbits
+       orbits = {'singlet': ('chi0',), 'doublet': ('chi1', 'chi2')}
+[PASS] C4 record alphabet has two atoms in this context
+
+=== Event algebra and Record additivity ===
+[PASS] E1 event algebra is the powerset of record atoms
+       |P(O)| = 4
+[PASS] E2 atoms are singleton events, not weights
+[PASS] E3 Boolean operations close on events
+[PASS] R1 Record readout has I(empty)=0
+[PASS] R2 Record readout is finitely additive over disjoint atoms
+       I(total) = 18
+[PASS] R3 Record readout is not normalized by the axiom
+       finite additivity does not impose probability normalization
+
+=== Probability is a separate state on the event algebra ===
+[PASS] P1.1 probability state 1 is normalized
+       mu = {'singlet': Fraction(1, 2), 'doublet': Fraction(1, 2)}
+[PASS] P1.2 probability state 1 is additive over disjoint events
+[PASS] P2.1 probability state 2 is normalized
+       mu = {'singlet': Fraction(1, 3), 'doublet': Fraction(2, 3)}
+[PASS] P2.2 probability state 2 is additive over disjoint events
+[PASS] P3.1 probability state 3 is normalized
+       mu = {'singlet': Fraction(1, 1), 'doublet': Fraction(0, 1)}
+[PASS] P3.2 probability state 3 is additive over disjoint events
+[PASS] P4 multiple inequivalent probability states fit the same record alphabet
+       Record supplies the alphabet, not a unique measure
+[PASS] P5 equal-letter and dimension-style priors are distinct states
+       gamma=0 letters=(1/2,1/2); gamma=1 dims=(1/3,2/3)
+
+=== Type firewall ===
+[PASS] T1 realized record atom is an event, not a probability map
+[PASS] T2 the atom can be evaluated by many states without becoming a state
+[PASS] T3 degenerate probability still has the type of a state, not an atom
+       delta_singlet evaluates the atom, but is not the atom object
+[PASS] T4 Record explicitly leaves probability/weighting/normalization unsupplied
+       the exact theorem uses that omission as a boundary, not as an extra premise
+
+=== Additive post-record histories ===
+[PASS] H1 finite post-record counts add componentwise
+[PASS] H2.1 arbitrary finite recorded count n=1 is allowed algebraically
+[PASS] H2.2 arbitrary finite recorded count n=2 is allowed algebraically
+[PASS] H2.5 arbitrary finite recorded count n=5 is allowed algebraically
+[PASS] H2.13 arbitrary finite recorded count n=13 is allowed algebraically
+
+=== Scorecard ===
+PASS=27 FAIL=0
+FINDING: from the Record axiom plus a supplied finite readout context, a realized record is an orbit/atom. A probability is a separate normalized state on the event algebra. Record supplies the former and explicitly not the latter.
+
+----- stderr -----
+

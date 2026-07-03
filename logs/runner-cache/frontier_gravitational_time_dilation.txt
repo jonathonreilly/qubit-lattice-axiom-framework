@@ -1,0 +1,335 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gravitational_time_dilation.py
+runner_sha256: bc08856b9b4c90a19c54811cb38f1b43816cd6bf1af5bde82e82822624b1ba8c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 35.57
+status: ok
+----- stdout -----
+================================================================================
+GRAVITATIONAL TIME DILATION EXPERIMENT
+================================================================================
+Grid: 81 x 81 = 6561 nodes
+Mass center: (40,0), Signal source: (0, 0)
+Postulates: phase_per_action=4.0
+
+================================================================================
+PART 1: RADIAL FIELD PROFILE f(r)
+================================================================================
+
+M=4 (actual=4 nodes in grid):
+  NOTE: 'local_clock' = 1/(1+f) is the LOCAL clock rate at radius r.
+        'path_ratio' = t_mass/t_flat is path-integrated (source-to-r).
+        These are DIFFERENT observables. Only local_clock is the
+        time dilation analog. path_ratio includes field at ALL radii
+        between source and measurement point.
+
+     r        f(r)   local_clock      t_mass      t_flat   path_ratio
+     3    0.426768      0.700885     51.1015     43.0000     1.188407
+     4    0.375726      0.726889     52.5027     44.0000     1.193244
+     5    0.335161      0.748974     53.8582     45.0000     1.196848
+     7    0.273136      0.785462     56.4639     47.0000     1.201361
+     9    0.226776      0.815145     58.9624     49.0000     1.203314
+    12    0.174603      0.851351     62.5608     52.0000     1.203092
+    15    0.135628      0.880570     66.0238     55.0000     1.200433
+    18    0.105410      0.904641     69.3837     58.0000     1.196271
+    22    0.074564      0.930610     73.7408     62.0000     1.189368
+    26    0.051302      0.951202     77.9906     66.0000     1.181676
+    30    0.033251      0.967819     82.1584     70.0000     1.173691
+
+M=9 (actual=9 nodes in grid):
+  NOTE: 'local_clock' = 1/(1+f) is the LOCAL clock rate at radius r.
+        'path_ratio' = t_mass/t_flat is path-integrated (source-to-r).
+        These are DIFFERENT observables. Only local_clock is the
+        time dilation analog. path_ratio includes field at ALL radii
+        between source and measurement point.
+
+     r        f(r)   local_clock      t_mass      t_flat   path_ratio
+     3    0.655921      0.603894     54.5989     43.0000     1.269742
+     4    0.574921      0.634952     56.2143     44.0000     1.277598
+     5    0.511902      0.661419     57.7577     45.0000     1.283505
+     7    0.417131      0.705651     60.6827     47.0000     1.291121
+     9    0.347047      0.742365     63.4446     49.0000     1.294787
+    12    0.268482      0.788344     67.3623     52.0000     1.295429
+    15    0.209729      0.826631     71.0762     55.0000     1.292294
+    18    0.163974      0.859126     74.6343     58.0000     1.286799
+    22    0.116909      0.895328     79.1919     62.0000     1.277289
+    26    0.081027      0.925046     83.5849     66.0000     1.266438
+    30    0.052845      0.949807     87.8507     70.0000     1.255010
+
+M=16 (actual=16 nodes in grid):
+  NOTE: 'local_clock' = 1/(1+f) is the LOCAL clock rate at radius r.
+        'path_ratio' = t_mass/t_flat is path-integrated (source-to-r).
+        These are DIFFERENT observables. Only local_clock is the
+        time dilation analog. path_ratio includes field at ALL radii
+        between source and measurement point.
+
+     r        f(r)   local_clock      t_mass      t_flat   path_ratio
+     3    0.748907      0.571786     56.6332     43.0000     1.317050
+     4    0.658809      0.602842     58.3370     44.0000     1.325841
+     5    0.588320      0.629596     59.9606     45.0000     1.332458
+     7    0.482064      0.674735     63.0265     47.0000     1.340990
+     9    0.402847      0.712836     65.9089     49.0000     1.345080
+    12    0.313308      0.761436     69.9770     52.0000     1.345712
+    15    0.245817      0.802686     73.8118     55.0000     1.342033
+    18    0.192915      0.838282     77.4672     58.0000     1.335642
+    22    0.138143      0.878624     82.1246     62.0000     1.324590
+    26    0.096095      0.912329     86.5898     66.0000     1.311967
+    30    0.062856      0.940861     90.9054     70.0000     1.298649
+
+M=25 (actual=25 nodes in grid):
+  NOTE: 'local_clock' = 1/(1+f) is the LOCAL clock rate at radius r.
+        'path_ratio' = t_mass/t_flat is path-integrated (source-to-r).
+        These are DIFFERENT observables. Only local_clock is the
+        time dilation analog. path_ratio includes field at ALL radii
+        between source and measurement point.
+
+     r        f(r)   local_clock      t_mass      t_flat   path_ratio
+     3    0.858281      0.538132     57.5894     43.0000     1.339289
+     4    0.758893      0.568539     59.3980     44.0000     1.349955
+     5    0.678837      0.595651     61.1169     45.0000     1.358153
+     7    0.556693      0.642388     64.3474     47.0000     1.369093
+     9    0.465604      0.682312     67.3667     49.0000     1.374831
+    12    0.362831      0.733766     71.6023     52.0000     1.376967
+    15    0.285400      0.777968     75.5702     55.0000     1.374004
+    18    0.224620      0.816580     79.3322     58.0000     1.367796
+    22    0.161482      0.860969     84.0990     62.0000     1.356435
+    26    0.112754      0.898671     88.6437     66.0000     1.343087
+    30    0.073992      0.931106     93.0147     70.0000     1.328781
+
+M=36 (actual=36 nodes in grid):
+  NOTE: 'local_clock' = 1/(1+f) is the LOCAL clock rate at radius r.
+        'path_ratio' = t_mass/t_flat is path-integrated (source-to-r).
+        These are DIFFERENT observables. Only local_clock is the
+        time dilation analog. path_ratio includes field at ALL radii
+        between source and measurement point.
+
+     r        f(r)   local_clock      t_mass      t_flat   path_ratio
+     3    0.956644      0.511079     58.7987     43.0000     1.367413
+     4    0.832762      0.545624     60.6934     44.0000     1.379396
+     5    0.743274      0.573633     62.4815     45.0000     1.388477
+     7    0.610325      0.620993     65.8294     47.0000     1.400625
+     9    0.511682      0.661515     68.9482     49.0000     1.407106
+    12    0.400123      0.714223     73.3083     52.0000     1.409775
+    15    0.315726      0.760036     77.3773     55.0000     1.406861
+    18    0.249206      0.800508     81.2214     58.0000     1.400370
+    22    0.179782      0.847614     86.0736     62.0000     1.388284
+    26    0.125913      0.888168     90.6810     66.0000     1.373954
+    30    0.082832      0.923504     95.0957     70.0000     1.358510
+
+================================================================================
+PART 2: POWER-LAW FIT f(r) = A / r^alpha
+================================================================================
+
+M= 4 (actual= 4): alpha=1.0387, A=1.791296, R^2=0.923495
+     r      f_data       f_fit   residual%
+     3    0.426768    0.572241      -34.09%
+     4    0.375726    0.424429      -12.96%
+     5    0.335161    0.336623       -0.44%
+     7    0.273136    0.237334       13.11%
+     9    0.226776    0.182806       19.39%
+    12    0.174603    0.135587       22.35%
+    15    0.135628    0.107536       20.71%
+    18    0.105410    0.088984       15.58%
+    22    0.074564    0.072241        3.12%
+    26    0.051302    0.060733      -18.38%
+    30    0.033251    0.052345      -57.42%
+
+M= 9 (actual= 9): alpha=1.0234, A=2.673887, R^2=0.925759
+     r      f_data       f_fit   residual%
+     3    0.655921    0.868680      -32.44%
+     4    0.574921    0.647140      -12.56%
+     5    0.511902    0.515017       -0.61%
+     7    0.417131    0.364985       12.50%
+     9    0.347047    0.282213       18.68%
+    12    0.268482    0.210240       21.69%
+    15    0.209729    0.167316       20.22%
+    18    0.163974    0.138837       15.33%
+    22    0.116909    0.113062        3.29%
+    26    0.081027    0.095294      -17.61%
+    30    0.052845    0.082313      -55.76%
+
+M=16 (actual=16): alpha=1.0053, A=2.986701, R^2=0.923911
+     r      f_data       f_fit   residual%
+     3    0.748907    0.989770      -32.16%
+     4    0.658809    0.741194      -12.51%
+     5    0.588320    0.592252       -0.67%
+     7    0.482064    0.422281       12.40%
+     9    0.402847    0.328003       18.58%
+    12    0.313308    0.245626       21.60%
+    15    0.245817    0.196268       20.16%
+    18    0.192915    0.163398       15.30%
+    22    0.138143    0.133547        3.33%
+    26    0.096095    0.112901      -17.49%
+    30    0.062856    0.097773      -55.55%
+
+M=25 (actual=25): alpha=0.9953, A=3.384312, R^2=0.923814
+     r      f_data       f_fit   residual%
+     3    0.858281    1.133990      -32.12%
+     4    0.758893    0.851652      -12.22%
+     5    0.678837    0.682043       -0.47%
+     7    0.556693    0.487950       12.35%
+     9    0.465604    0.379969       18.39%
+    12    0.362831    0.285365       21.35%
+    15    0.285400    0.228534       19.93%
+    18    0.224620    0.190609       15.14%
+    22    0.161482    0.156101        3.33%
+    26    0.112754    0.132190      -17.24%
+    30    0.073992    0.114643      -54.94%
+
+M=36 (actual=36): alpha=0.9892, A=3.690397, R^2=0.925843
+     r      f_data       f_fit   residual%
+     3    0.956644    1.244878      -30.13%
+     4    0.832762    0.936577      -12.47%
+     5    0.743274    0.751077       -1.05%
+     7    0.610325    0.538445       11.78%
+     9    0.511682    0.419934       17.93%
+    12    0.400123    0.315935       21.04%
+    15    0.315726    0.253360       19.75%
+    18    0.249206    0.211551       15.11%
+    22    0.179782    0.173465        3.51%
+    26    0.125913    0.147044      -16.78%
+    30    0.082832    0.127636      -54.09%
+
+================================================================================
+PART 3: MASS SCALING A(M) = B * M^beta
+================================================================================
+
+  M=  4, A=1.791296
+  M=  9, A=2.673887
+  M= 16, A=2.986701
+  M= 25, A=3.384312
+  M= 36, A=3.690397
+
+Fit: B=1.219318, beta=0.3187, R^2=0.962655
+GR predicts beta=1.0, measured beta=0.3187
+
+================================================================================
+PART 4: 2D POISSON COMPARISON
+================================================================================
+
+In 2D, the Green's function for the Laplacian is G(r) ~ -ln(r)/(2*pi).
+So for a BOUNDED domain with Dirichlet BC=0, the field from a point
+source at center is f(r) ~ C * (ln(R/r)) where R is effective boundary
+distance. This is NOT 1/r -- it's logarithmic in 2D!
+
+Let's check if f(r) ~ C * ln(R/r) fits better:
+
+M= 4 (actual= 4):
+  Logarithmic: f = 0.6132 + (-0.1739)*ln(r), R^2 = 0.998239
+  Power-law:   f = A/r^alpha, R^2 = 0.923495
+  -> LOGARITHMIC fits better (as expected for 2D Laplacian)
+  Effective boundary R_eff = 34.0 (grid half-diagonal ~ 44.7)
+
+M= 9 (actual= 9):
+  Logarithmic: f = 0.9373 + (-0.2651)*ln(r), R^2 = 0.998147
+  Power-law:   f = A/r^alpha, R^2 = 0.925759
+  -> LOGARITHMIC fits better (as expected for 2D Laplacian)
+  Effective boundary R_eff = 34.3 (grid half-diagonal ~ 44.7)
+
+M=16 (actual=16):
+  Logarithmic: f = 1.0722 + (-0.3016)*ln(r), R^2 = 0.998749
+  Power-law:   f = A/r^alpha, R^2 = 0.923911
+  -> LOGARITHMIC fits better (as expected for 2D Laplacian)
+  Effective boundary R_eff = 35.0 (grid half-diagonal ~ 44.7)
+
+M=25 (actual=25):
+  Logarithmic: f = 1.2319 + (-0.3456)*ln(r), R^2 = 0.998929
+  Power-law:   f = A/r^alpha, R^2 = 0.923814
+  -> LOGARITHMIC fits better (as expected for 2D Laplacian)
+  Effective boundary R_eff = 35.3 (grid half-diagonal ~ 44.7)
+
+M=36 (actual=36):
+  Logarithmic: f = 1.3579 + (-0.3808)*ln(r), R^2 = 0.998616
+  Power-law:   f = A/r^alpha, R^2 = 0.925843
+  -> LOGARITHMIC fits better (as expected for 2D Laplacian)
+  Effective boundary R_eff = 35.4 (grid half-diagonal ~ 44.7)
+
+LOGARITHMIC COEFFICIENT SCALING: |b|(M) = C * M^gamma
+(In 2D GR, the potential is phi = -G*M*ln(r)/(2*pi),
+ so |b| should scale linearly with M, i.e. gamma=1)
+
+  M=  4, |b|=0.173865
+  M=  9, |b|=0.265071
+  M= 16, |b|=0.301648
+  M= 25, |b|=0.345641
+  M= 36, |b|=0.380832
+
+Fit: C=0.113778, gamma=0.3469, R^2=0.968855
+2D GR predicts gamma=1.0, measured gamma=0.3469
+-> Scaling exponent deviates from 1.0 by 0.65
+
+================================================================================
+PART 5: TIME DILATION QUANTITATIVE CHECK
+================================================================================
+
+The LOCAL clock rate at position r is:
+  tau_dot = 1/(1+f(r))
+For small f: tau_dot ~ 1 - f(r)
+
+In GR (2D analog): f(r) would be the Newtonian potential phi/c^2
+The model's Laplacian relaxation IS solving Poisson's equation,
+so f IS the 2D gravitational potential (up to normalization).
+
+Clock rate profile for M=36 (actual=36):
+   r        f(r)    clock_rate   time_dilation
+                       1/(1+f)     f = 1-clock
+   3    0.956644      0.511079        0.488921
+   4    0.832762      0.545624        0.454376
+   5    0.743274      0.573633        0.426367
+   7    0.610325      0.620993        0.379007
+   9    0.511682      0.661515        0.338485
+  12    0.400123      0.714223        0.285777
+  15    0.315726      0.760036        0.239964
+  18    0.249206      0.800508        0.199492
+  22    0.179782      0.847614        0.152386
+  26    0.125913      0.888168        0.111832
+  30    0.082832      0.923504        0.076496
+
+================================================================================
+FINAL SUMMARY
+================================================================================
+
+1. FIELD EQUATION: The Laplacian relaxation solver in derive_node_field()
+   solves the discrete 2D Poisson equation with Dirichlet BC=0 at
+   the grid boundary, sourced by persistence support at mass nodes.
+
+2. 2D vs 3D: In 2D, the Coulomb/Newton potential is LOGARITHMIC:
+   phi(r) ~ -G*M*ln(r), NOT 1/r. The 1/r law is 3D-specific.
+   Our R^2 comparison above should confirm logarithmic is the
+   correct functional form.
+
+3. TIME DILATION MECHANISM: delay = L*(1+f) means:
+   - Clock rate = 1/(1+f) at each node
+   - Near mass, f > 0, so clocks run SLOWER (gravitational redshift)
+   - This is exactly the GR prediction: dtau = dt*sqrt(1-2*phi/c^2)
+     where phi = f (in natural units of the model)
+
+4. POWER-LAW FIT: alpha = 1.010 +/- 0.025, mean R^2 = 0.9246
+   (In 2D, strict 1/r would give alpha=1; logarithmic gives
+    apparent alpha > 1 when fit over limited range)
+
+5. VERDICT:
+   The model produces a LOCAL clock-rate field 1/(1+f) that is
+   slower near mass (f > 0). This is the correct SIGN for
+   gravitational time dilation.
+
+   WHAT IS CONFIRMED:
+   - The field f(r) solves the 2D Poisson equation (R^2 > 0.998)
+   - Local clock rate decreases near mass (correct sign)
+   - The mechanism (delay = L*(1+f)) naturally produces redshift
+
+   WHAT IS NOT CONFIRMED:
+   - Mass scaling is sub-linear (gamma=0.35 vs expected 1.0)
+   - Path-integrated arrival ratios =/= local clock rates
+     (these are distinct observables and should not be conflated)
+   - The claim 'matches GR' requires 3D verification with 1/r field
+
+   CAVEAT: The field solver IS a Poisson solver, so f(r) following
+   the Poisson Green's function is guaranteed by construction,
+   not a derived result. The non-trivial content is that the
+   propagator's delay mechanism produces the correct TIME DILATION
+   SIGN from the field.
+
+----- stderr -----
+

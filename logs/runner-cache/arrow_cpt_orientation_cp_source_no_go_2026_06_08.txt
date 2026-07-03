@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/arrow_cpt_orientation_cp_source_no_go_2026_06_08.py
+runner_sha256: 9c6667e4d3f7daa01023f8cda28ba866dfb58149122aa49b9ba2b4402121ec6e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.52
+status: ok
+----- stdout -----
+SCOPED CP-SOURCE ROUTE NO-GO: arrow/CPT/orientation/readout do not source coefficients
+============================================================================
+[PASS] S1: record-write generator H=(pi/2)|1><1|(x)X is REAL SYMMETRIC -> Theta U Theta^-1 = conj(U) = U^-1 (time-reversal identity) and T=e^{-H} self-adjoint with T=T^T. The arrow is NOT in the map.
+       H real-symmetric=True; conj(U)=U^-1: True; T=T^dag and T=T^T: True
+[PASS] S2: the SAME real-symmetric generator gives a forward record-INCREASE from the low-record state and a record-DECREASE from the time-reversed state -> the arrow is in the initial condition, NOT in the dynamics; no CP-odd/T-odd term lives in the map, so the arrow cannot SOURCE one.
+       record low: 0.000->0.500 (up); reversed: 0.500->0.000 (down); generator unchanged
+[PASS] S3: CPT gives Theta_CPT M Theta_CPT^-1 = M* -> det M in R for the C3 circulant (det = a^3-3a|b|^2+2|b|^3 cos3delta, Im=0) and the staggered toy (M real) -> arg det M in {0,pi}: the matter CP-odd phase is QUANTIZED/protected, NOT a continuous CP source. CPT pushes toward theta=0.
+       C3 det Im part = 0; staggered det = 15.6634 (real)
+[PASS] S4: the tested gauge-invariant-local form-class does NOT fix the CP-odd coefficients. (matter) M(delta,r) is Hermitian and C3-covariant for ALL delta and ALL r; (gauge) Re Tr U_P and the CP-odd Im Tr U_P are gauge-invariant under U_P->V U_P V^dag for ANY coefficient theta. So (r, delta, theta) are FREE coefficients inside this tested form-class.
+       M(delta,r) Hermitian+covariant for all tested (delta,r): True; Re/Im Tr U_P gauge-invariant: True/True
+[PASS] S5: Cl(3) volume omega=sigma1 sigma2 sigma3 = iI and lattice orientation det(R) in {+1,-1}; the native orientation datum is sign-only, so it can flip a coefficient sign but cannot select a continuous value.
+       omega=iI: True; orientation values=[-1, 1]
+[PASS] S6: real additive readout log|det M(delta)| is even in delta, but J=Im(M01 M12 M20)=|b|^3 sin(3delta) is a real CP-odd scalar. Real readout is CP-blind as a consumer, not a CP prohibition.
+       log|det| even: True; J formula matches: True
+
+TOTAL: PASS=6 FAIL=0
+VERDICT: the tested routes do not source CP-odd action coefficients. The arrow is a Past-
+Hypothesis BOUNDARY condition under the tested time-symmetric write generator, so it cannot source
+a CP-odd action term; CPT reality protects determinant phases rather than sourcing a continuous CP
+coefficient; the orientation datum is sign-only; and real readout is CP-blind but not CP-forbidding.
+The tested form-class leaves r, delta, and theta as free coefficients. This is a scoped route no-go,
+not a proof against future dynamics/minimality/action-selection routes. Audit lane sets status.
+
+----- stderr -----
+

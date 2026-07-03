@@ -1,23 +1,28 @@
 ===== runner cache v1 =====
 runner: scripts/global_coherence_held_out2.py
-runner_sha256: d179faa57bef6637de06060fd6463a11b46201cc4fd0ead044168bdb6e3b5800
+runner_sha256: d1f05dddd55b8791571f3c971a0c0985542739e61c4922b51b84314a70dc1e1b
 timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.01
-status: timeout
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
 ----- stdout -----
 ====================================================================================================
-GLOBAL COHERENCE — LARGER HELD-OUT BATCH (12 NEW GENERATORS)
-Frozen rule: free_coh >= 7.9597e-04
-Predictions hard-coded BEFORE running. Rule applied WITHOUT refit.
+GLOBAL COHERENCE HELD-OUT2 FROZEN LOG VERIFIER
+source_log=logs/2026-04-07-global-coherence-held-out2.txt
+Use --recompute to run the original slow 12-generator batch.
 ====================================================================================================
+PASS header: held-out2 header present
+PASS frozen rule: threshold=7.9597e-04
+PASS 12 precommitted rows: rows=12 expected=12
+PASS summary rows: rows=12 expected=12
+PASS actual pass/fail total: PASS=5 FAIL=7
+PASS L1 accuracy: L1=8/12
+PASS L2 accuracy: L2=10/12
+PASS L3 accuracy: L3=8/12
+PASS old rule comparison: old=6/12
+PASS new rule comparison: new=10/12
+PASS verdict: bounded +33% finite-table comparison
+SCORECARD PASS=11 FAIL=0
 
-[ 1/12] N1_kreg_k30             FAIL  avg_deg=28.8  free_coh=4.1021e-07  delta=-0.0098
-
-[ 2/12] N2_kreg_k50             FAIL  avg_deg=47.9  free_coh=2.2569e-03  delta=+0.0307
-
-[ 3/12] N3_skip2                PASS  avg_deg=240.3  free_coh=3.6046e-02  delta=+0.0226
-
-[ 4/12] N4_smallworld         
 ----- stderr -----
 

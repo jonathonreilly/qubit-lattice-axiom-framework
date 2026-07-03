@@ -29,7 +29,16 @@ The question is not just "does some finite-path model fit?" but
 
 from __future__ import annotations
 
+import hashlib
 import math
+from pathlib import Path
+
+# Static import is intentional: the audit packet builder discovers helper
+# runner paths from the primary runner's import graph.
+import lensing_long_path_test as long_path_test
+
+
+ROOT = Path(__file__).resolve().parent.parent
 
 
 def alpha_centered_surrogate(b, L, s=1.0):
@@ -78,6 +87,64 @@ def slope_loglog(xs, ys):
     s = sxy / sxx
     r2 = (sxy ** 2) / (sxx * syy) if syy > 0 else 1.0
     return s, r2
+
+
+def _sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _cache_header(cache_text: str) -> dict[str, str]:
+    header, _, _stdout = cache_text.partition("----- stdout -----")
+    out: dict[str, str] = {}
+    for line in header.splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        out[key.strip()] = value.strip()
+    return out
+
+
+def _check_long_path_packet() -> bool:
+    script_path = Path(long_path_test.__file__).resolve()
+    cache_path = ROOT / "logs" / "runner-cache" / f"{script_path.stem}.txt"
+    print()
+    print("=" * 80)
+    print("LONG-PATH COMPANION PACKET")
+    print("=" * 80)
+    if not script_path.is_file() or not cache_path.is_file():
+        print(f"  source={script_path} exists={script_path.is_file()}")
+        print(f"  cache={cache_path} exists={cache_path.is_file()}")
+        print("LONG_PATH_PACKET: FAIL")
+        return False
+    source_sha = _sha256(script_path)
+    cache_sha = _sha256(cache_path)
+    cache_text = cache_path.read_text(encoding="utf-8", errors="replace")
+    header = _cache_header(cache_text)
+    required_snippets = [
+        "status: ok",
+        "T_phys = 7.5",
+        "H=0.25 kubo_true:        slope = -1.4356",
+        "analytical (no fit):    slope = -1.7336",
+        "POOR MATCH",
+    ]
+    snippets_ok = all(snippet in cache_text for snippet in required_snippets)
+    header_ok = (
+        header.get("runner") == "scripts/lensing_long_path_test.py"
+        and header.get("runner_sha256") == source_sha
+        and header.get("exit_code") == "0"
+        and header.get("status") == "ok"
+    )
+    print(f"  source={script_path.relative_to(ROOT)} sha256={source_sha}")
+    print(f"  cache={cache_path.relative_to(ROOT)} sha256={cache_sha}")
+    print(
+        "  cache_header="
+        f"runner:{header.get('runner')} sha_fresh:{header.get('runner_sha256') == source_sha} "
+        f"exit_code:{header.get('exit_code')} status:{header.get('status')}"
+    )
+    print(f"  required_long_path_snippets_present={snippets_ok}")
+    ok = header_ok and snippets_ok
+    print(f"LONG_PATH_PACKET: {'PASS' if ok else 'FAIL'}")
+    return ok
 
 
 # Lane L / Lane L+ measurements (kubo_true on Fam1)
@@ -169,6 +236,10 @@ def main():
     print("explanation' is too strong. The missing ingredient is likely the actual")
     print("beam/path weighting of the detector-centroid observable, not just a plain")
     print("angle integral over a centered interaction segment.")
+    packet_ok = _check_long_path_packet()
+    print(f"ASSERTIONS: {'PASS' if packet_ok else 'FAIL'}")
+    if not packet_ok:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

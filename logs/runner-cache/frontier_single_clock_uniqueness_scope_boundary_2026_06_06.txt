@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/frontier_single_clock_uniqueness_scope_boundary_2026_06_06.py
+runner_sha256: 4e4a9445893733ac790ef2bf0b1647892174ac0241cb43340d92988607706600
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
+
+========================================================================
+Fixed T and fixed tau give a unique Stone generator
+========================================================================
+[PASS] S1 T is positive Hermitian with eigenvalues in (0,1]
+       T=Matrix([[1/2, 0], [0, 1/3]])
+[PASS] S2 H=-(1/tau)log(T) reconstructs T for fixed tau
+       H=Matrix([[log(2), 0], [0, log(3)]])
+[PASS] S3 U(t) is unitary
+[PASS] S4 U(s)U(t)=U(s+t)
+[PASS] S5 generator identity dU/dt|0=-iH holds
+
+========================================================================
+The time scale tau is not determined by T alone
+========================================================================
+[PASS] N1 same T is reconstructed by tau=2 with H rescaled
+       H_tau1=Matrix([[log(2), 0], [0, log(3)]]), H_tau2=Matrix([[log(2)/2, 0], [0, log(3)/2]])
+[PASS] N2 H_tau2 is not equal to H_tau1
+[PASS] N3 H_tau2 equals H_tau1/2 exactly
+[PASS] N4 Stone uniqueness is therefore relative to fixed tau
+       T fixes tau*H, not the physical clock unit by itself
+
+========================================================================
+Multiple supplied transfers give multiple commuting one-parameter groups
+========================================================================
+[PASS] M1 lifted transfers are positive Hermitian
+[PASS] M2 lifted generators commute
+[PASS] M3 lifted transfers commute
+[PASS] M4 two supplied commuting groups are distinct
+[PASS] M5 the product transfer has the summed generator for a chosen common tau
+[PASS] M6 Stone theorem for the product transfer does not erase the factor groups
+
+========================================================================
+No-second-clock wording needs extra premises
+========================================================================
+[PASS] B1 fixed T,tau gives uniqueness of H only for that transfer
+[PASS] B2 T alone leaves clock-unit normalization open
+[PASS] B3 finite Stone theorem permits multiple supplied commuting transfers
+[PASS] B4 excluding a second clock requires a separate axis/transfer uniqueness premise
+       e.g. unique reflection-positive axis or no independent positive transfer
+
+========================================================================
+Scorecard
+========================================================================
+PASS=19 FAIL=0
+FINDING: finite-dimensional Stone uniqueness is relative to a supplied positive transfer T and fixed time scale tau. It does not by itself fix tau, exclude other supplied positive transfers, or prove a broad framework-wide one-clock exclusion theorem.
+
+----- stderr -----
+

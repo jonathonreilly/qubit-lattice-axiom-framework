@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/magnitude_temporal_factor_is_count_not_rate_2026_06_06.py
+runner_sha256: 88a8f327e594a375fd4776dca574c29705d26fe47f23b6ecbcbfdb7ef19f7818
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
+--- Section 0: one-hop source-packet/status firewall ---
+PASS: source note contains marker: actual_current_surface_status: bounded-support
+PASS: source note contains marker: audit_required_before_effective_retained: true
+PASS: source note contains marker: bare_retained_allowed: false
+PASS: source note contains marker: 2026-06-08 source-packet repair
+PASS: count/rate boundary doc exists
+PASS: count/rate boundary runner exists
+PASS: count/rate boundary cache exists
+PASS: count/rate boundary cache reports passing checks
+PASS: count/rate boundary ledger status is retained_no_go
+PASS: temporal determinant count 8 L_t doc exists
+PASS: temporal determinant count 8 L_t runner exists
+PASS: temporal determinant count 8 L_t cache exists
+PASS: temporal determinant count 8 L_t cache reports passing checks
+PASS: temporal determinant count 8 L_t ledger status is retained_bounded
+PASS: minimal positive two-step temporal block doc exists
+PASS: minimal positive two-step temporal block runner exists
+PASS: minimal positive two-step temporal block cache exists
+PASS: minimal positive two-step temporal block cache reports passing checks
+PASS: minimal positive two-step temporal block ledger status is retained_bounded
+PASS: 2^d species-count authority doc exists
+PASS: 2^d species-count authority runner exists
+PASS: 2^d species-count authority cache exists
+PASS: 2^d species-count authority cache reports passing checks
+PASS: 2^d species-count authority ledger status is retained
+PASS: staggered BZ-corner orbit doc exists
+PASS: staggered BZ-corner orbit runner exists
+PASS: staggered BZ-corner orbit cache exists
+PASS: staggered BZ-corner orbit cache reports passing checks
+PASS: staggered BZ-corner orbit ledger status is retained
+PASS: staggered species-reduction bridge doc exists
+PASS: staggered species-reduction bridge runner exists
+PASS: staggered species-reduction bridge cache exists
+PASS: staggered species-reduction bridge cache reports passing checks
+PASS: staggered species-reduction bridge ledger status is retained_bounded
+PASS: clock-rate authority permits count-only rows to cite counts
+PASS: clock-rate authority requires rate rows to identify the denominator
+PASS: clock-rate authority forbids deriving a clock/rate/evolution law from records
+--- Section A: magnitude exponent = mode COUNT (not rate) ---
+PASS: mode count = matrix dim = 8 * L_t (L_s^3=8 spatial x L_t temporal)
+PASS: the count scales LINEARLY with L_t (a count, dim(L_t=2)/dim(L_t=1)=2)
+PASS: mode COUNT is INDEPENDENT of the hopping rate u_0 (count, not rate)
+PASS: the per-mode VALUE (eigenvalues) DOES depend on u_0 -> that is the rate (alpha_LM/DELTA0), a SEPARATE gate, not the count
+--- Section B: count-only rows are in the no-go's supported zone, rates are not ---
+PASS: the magnitude exponent is used as a transfer-step/mode COUNT, not a rate
+PASS: count-only rows are in the no-go's SUPPORTED zone
+PASS: the no-go forbids RATE/METRIC, which the exponent is NOT (exponent != per-mode value)
+--- Section C: minimal temporal block = 2 (period-2 phase + 2-step positivity) ---
+PASS: staggered temporal phase eta_1(t)=(-1)^t has minimal period 2 -> minimal temporal block = 2
+PASS: 2-step contraction e^{-2E} in (0,1] (positive, forward channel) for all p
+PASS: single-step phase alternates (period 2) so the minimal positive unit is the 2-step block
+--- Section D: count survives the normalization that divides the rate-2 out ---
+PASS: OS normalization divides the ENERGY by 2 (rate-2 dissolves): H_wrong/H = 2 exactly
+PASS: the mode COUNT (number of eigenvalues) is INVARIANT under the energy rescaling
+PASS: count-2 (cardinality) and rate-2 (energy spacing) are DIFFERENT objects
+--- Section E: minimal block L_t=2 -> exponent 16 ---
+PASS: minimal reflection-positive block L_t=2 -> mode count = 8 x 2 = 16
+PASS: per-record/UV readout selection remains outside this runner's closed claim
+
+TOTAL: PASS=52 FAIL=0
+
+----- stderr -----
+

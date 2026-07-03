@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/frontier_chirality_separate_factor_dirac_mass_algebra.py
+runner_sha256: 2888bbb2d0507cfb0a52592bf6fb58477a672737190ce4714beb26d0b9c5a666
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+SEPARATE-FACTOR CHIRAL DIRAC MASS ALGEBRA
+====================================================================
+[PASS] ALG Dirac-Clifford alpha/beta relations
+       {alpha_i,alpha_j}=2 delta_ij, {alpha_i,beta}=0, beta^2=I
+[PASS] ALG massive Hamiltonian squares to p^2+m^2
+       H^2=(p^2+m^2)I with E=1.7748
+[PASS] ALG spectrum has two positive and two negative Dirac branches
+       eigs=[-1.7748 -1.7748  1.7748  1.7748]; positive branch can be filled after field quantization
+[PASS] CHI gamma5 is a balanced chiral grading
+       gamma5^2=I and Tr(gamma5)=0
+[PASS] CHI gamma5 commutes with massless alpha.p
+       [gamma5, alpha_i]=0
+[PASS] CHI mass term flips chirality
+       {gamma5,beta}=0
+[PASS] CHI Dirac mass couples L to R, not L to L
+       P_L beta P_L=0 and P_L beta P_R!=0
+[PASS] SEP generation grading is a separate 3D involution
+       Gamma_chi=(2/3)J-I acts on generation R^3
+[PASS] SEP gamma5 is a separate 4D Dirac/LR operator
+       gamma5 acts on the Dirac L/R factor, not on generation R^3
+[PASS] SEP factorized chirality differs from the hybrid generation grading
+       I_3 x sigma_3 is not Gamma_chi x I_2
+
+TOTAL: PASS=10 FAIL=0
+VERDICT: the separate Dirac L/R factor supplies a standard chiral Dirac mass algebra, and that grading is distinct from the generation-space Gamma_chi targeted by the narrow hybrid no-go. This is algebra support only: it does not construct the emergent-time massive field, derive generation identity, derive Q=2/3, or close Koide selectors.
+
+----- stderr -----
+

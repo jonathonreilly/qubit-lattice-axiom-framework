@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/frontier_pauli_closed_shell_color_marginal_discharge_2026_06_10.py
+runner_sha256: 80dfd23b260e7cc85c2a8b63e3b5b022f67bc25a54571a96a395b8945690cad8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.30
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  (T1) 3-in-3 Pauli singlet: unique; ALL 8 su(3) charges annihilate; G = I3
+==============================================================================
+  [PASS] the 3-fermion sector of 3 modes is ONE-dimensional (Pauli-forced uniqueness)
+  [PASS] one-body color matrix EXACTLY I_3  =>  rho_color = I_3/3
+  [PASS] ALL EIGHT Gell-Mann charges annihilate the forced state (it IS the color singlet)  (max |Q psi| = 0.0e+00)
+==============================================================================
+Part 2  (T2) the exactly-full sector is Pauli-FROZEN
+==============================================================================
+  [PASS] the color-diagonal hop ANNIHILATES the all-full state
+==============================================================================
+Part 3  (T3) closed shell (L=3 ring, nf=1/color): unique GS; rho_color(x) = I3/3
+==============================================================================
+  [PASS] L=3 ring single-particle spectrum {-2, +1, +1}: nf=1 is a CLOSED shell (gap 3)  (spectrum [-2.  1.  1.])
+  [PASS] the fixed-N=3 many-body ground state is UNIQUE (closed shell => nondegenerate)  (many-body gap 3.000000)
+  [PASS] ALL cross-color coherences measured from the many-body GS are EXACTLY zero (all 9 entries, every site; nothing hard-coded)  (max |coherence| = 2.6e-17)
+  [PASS] rho_color(x) = I_3/3 at EVERY site of the closed-shell sea (measured, exact)  (max dev 1.1e-16)
+  [PASS] => the ADM-2 necessary marginal condition holds in the closed-shell sector with no extra measure/weight input (necessary != sufficient; a property of the NAMED state)
+==============================================================================
+Part 3b (T3b) open shell: degenerate manifold contains UNEQUAL-color ground states
+==============================================================================
+  [PASS] at nf=2/color (open shell) the fixed-N=6 ground manifold is DEGENERATE  (ground degeneracy 20)
+  [PASS] EXHIBIT: a ground-manifold state with rho_color(x) != I_3/3 at the same energy (the closed-shell forcing FAILS on the open shell)  (per-color counts [1.975 1.206 2.819], max dev 0.213)
+  [PASS] Z^3 finite-volume examples: cubic half filling is OPEN-shell in the checked samples (Fermi-level degeneracy 12 at L=3, 20 at L=4) -- the closed-shell discharge does NOT cover those half-filled seas; the open-shell selection is the NAMED residual  (degeneracies {3: 12, 4: 20})
+==============================================================================
+Part 4  (T4) sharp counts: coherences vanish; I3/3 <=> equal counts AND profiles
+==============================================================================
+  [PASS] sharp equal counts: local color coherences vanish EXACTLY (count selection rule)
+  [PASS] TEETH (profile condition is real): equal counts with UNEQUAL spatial profiles give an unequal local diagonal => rho != I_3/3 — the reduction is TWO conditions (count equality AND profile agreement), not one
+  [PASS] TEETH (count condition is real): UNEQUAL sharp counts (2,1,0) give rho != I_3/3  (max dev 0.333)
+  [PASS] STRICTLY WEAKER (global-invariance example reproduced): |F> has rho_A = I_3/3 exactly yet a nonzero total su(3) charge (NOT a singlet) — this note forces only the MARGINAL condition except at exact full filling (T1)  (total-charge residual 1.633)
+==============================================================================
+TOTAL: PASS=16 FAIL=0
+==============================================================================
+SCOPE (source narrowed): (T1) Pauli forces the color
+  singlet at exact full filling (unique state; all 8 charges annihilate; rho=I3/3)
+  -- 'singlet'/'neutrality' language applies to THIS sector only.  (T2) that sector
+  is hopping-frozen.  (T3) in CLOSED-SHELL sectors of the named color-diagonal free
+  hopping, the fixed-N ground state is unique and the measured color-resolved
+  rho_color(x) = I3/3 exactly at every site (no extra measure/weight input; the ADM-2
+  necessary marginal condition holds there; a property of the NAMED state, not of 'the physical
+  vacuum').  (T3b) on OPEN shells the forcing FAILS (degenerate manifold exhibits
+  rho != I3/3 at the ground energy), and finite Z^3 half-filling samples are open-shell
+  (degeneracy 12/20 at L=3/4): the open-shell ground-state selection is the NAMED
+  residual, weight-like, where the weight-dial guard re-opens -- NOT discharged.
+  (T4) for sharp-count states the excitation residual reduces to TWO discrete
+  conditions (count equality AND profile agreement); rho=I3/3 is STRICTLY WEAKER
+  than global neutrality (global-invariance example reproduced).  NOT claimed: ADM-2
+  sufficiency; confinement; which state the physical vacuum is (staggered
+  realization gate = existing separate lane); the symmetric-base->physical-color
+  bridge boundary inherited per the baryon-singlet note.  No new axiom/primitive/
+  measure/weight.  Audit lane grades.
+
+----- stderr -----
+

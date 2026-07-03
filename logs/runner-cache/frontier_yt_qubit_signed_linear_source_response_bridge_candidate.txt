@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_qubit_signed_linear_source_response_bridge_candidate.py
-runner_sha256: 4500c08bbac07c1d24f8a66320d49a5153f3b2926bf00009e418a598018e01f8
+runner_sha256: 5ff949b9e70e16b85eeb9f7727b1b71548efaa6b496d47cc0ac5dc9a3d82b28c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.39
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
 ==============================================================================
-Y_T QUBIT SIGNED-LINEAR SOURCE RESPONSE BRIDGE CANDIDATE
+Y_T QUBIT SIGNED-LINEAR SOURCE RESPONSE FINITE SUPPORT
 ==============================================================================
 
 Part 1: anchors
@@ -15,21 +15,25 @@ Part 1: anchors
 [PASS] docs/MINIMAL_AXIOMS_2026-05-20.md exists
 [PASS] docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md exists
 [PASS] docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md exists
+[PASS] docs/YT_TOP_RESPONSE_COEFFICIENT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-25.md exists
 [PASS] docs/audit/data/audit_ledger.json exists
-[PASS] note claim type is bounded support note
-[PASS] note type is conditional / support
-[PASS] old bounded_theorem header is absent
+[PASS] note claim type is bounded_theorem
+[PASS] note type excludes physical bridge
+[PASS] note contains required section: 2026-06-07 Finite-Support Boundary
 [PASS] note contains required section: Axiom-First Fork
 [PASS] note contains required section: Exact Democratic Source
 [PASS] note contains required section: Projective Probability Versus Signed Linear Response
-[PASS] note contains required section: Candidate Bridge
+[PASS] note contains required section: Boundary To Physical Y_T
 [PASS] note contains required section: Why This Is Not The Old Ward Trap
 [PASS] note contains required section: Current Status
 [PASS] note contains required section: Firewalls
 [PASS] source-action support is retained_bounded
-[PASS] EW mass theorem is retained
+[PASS] LSP projective readout is retained_bounded
+[PASS] S6-democratic C6 support is retained_bounded
+[PASS] top-response underdetermination note is not used as retained dependency: unaudited
 [PASS] minimal axioms are qubit-on-Z3 framed
 [PASS] LSP note records K_P = P
+[PASS] democratic note records 1/sqrt(6)
 
 Part 2: baseline alone does not select coefficient
 [PASS] one-parameter normalized family exists in C^6: sin(theta)**2 + cos(theta)**2
@@ -62,6 +66,10 @@ Part 5: firewalls
 [PASS] firewall phrase present: `alpha_LM`
 [PASS] firewall phrase present: plaquette/u0
 [PASS] firewall phrase present: fitted selector
+[PASS] physical-bridge boundary phrase present: top Yukawa coefficient y_33 equals that signed-linear tangent
+[PASS] physical-bridge boundary phrase present: top response/correlator
+[PASS] physical-bridge boundary phrase present: retained top-coefficient theorem
+[PASS] physical-bridge boundary phrase present: physical top-response bridge open
 [PASS] forbidden overclaim absent: Status:** retained
 [PASS] forbidden overclaim absent: Status: retained
 [PASS] forbidden overclaim absent: proposed_retained
@@ -69,9 +77,10 @@ Part 5: firewalls
 [PASS] forbidden overclaim absent: `y_t` is derived
 [PASS] forbidden overclaim absent: positive Y_T closure has been obtained
 [PASS] forbidden overclaim absent: full retained closure
+[PASS] forbidden overclaim absent: physical top-response bridge is closed
 
 wrote outputs/yt_qubit_signed_linear_source_response_bridge_candidate_2026-05-25.json
-SUMMARY: PASS=50 FAIL=0
+SUMMARY: PASS=59 FAIL=0
 
 ----- stderr -----
 

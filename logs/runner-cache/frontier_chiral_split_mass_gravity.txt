@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_chiral_split_mass_gravity.py
-runner_sha256: 8578932015a1c0ec955d987ccb1b083f48f8dc73bef37b7581875a9ea27d2616
+runner_sha256: 5d027a73d71e0587ff89a4b61db766d3b02167c7e1750954efde423e5bff4fc8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================
@@ -78,15 +78,24 @@ Baseline theta envelope CV       = 1.0825
 Split theta envelope CV          = 0.9013
 
 ========================================================================
+6) SOURCE-BOUNDARY FIREWALL
+========================================================================
+SOURCE-BOUNDARY: PASS all required downstream-use guards present
+  Allowed: fixed-theta g-linearity toy diagnostic.
+  Forbidden: framework mass-gravity/EP/theta-flattening/k-achromatic closure.
+
+========================================================================
 VERDICT
 ========================================================================
 Free KG fit OK:       True
 F∝M scaling OK:       True
 Theta sensitivity reduced in split: True
 g control is linear-ish: True
-*** OVERLOADING IS A REAL BLOCKER FOR THE theta DEPENDENCE ***
+k-achromatic closure OK: False
+Source-boundary firewall OK: True
+*** SPLIT g IS A LINEAR CONTROL AT FIXED theta; THETA/k RESIDUALS REMAIN OPEN ***
 
-Total runtime: 0.1s
+Total runtime: 0.0s
 
 ----- stderr -----
 

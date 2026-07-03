@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/frontier_orbit_occupancy_maxent_relocation_2026_06_09.py
+runner_sha256: 995b2b4e90d870dfd951a567a0e0d10005061e80916d898f605d7584897598bd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+========================================================================================
+EXPLORATORY MAXENT-R SUPPORT: MAXENT OVER THE REGISTRABLE ALGEBRA
+========================================================================================
+
+----------------------------------------------------------------------------------------
+M1: cannot-skip gate -- this support runner uses a named candidate principle
+----------------------------------------------------------------------------------------
+  [PASS] both occupancy weights exist and satisfy the tested algebraic constraints (positive, finite, K/Z_3-invariant by construction) -- so this runner uses a named candidate principle rather than claiming a durability-only derivation  --  the source-measure residual remains explicit
+  [PASS] the named candidate: MAXENT-R -- maximum entropy over the REGISTRABLE (outcome) algebra at common stiffness (Jaynes-class; universal; not Koide-specific)  --  candidate principle only; not adopted here
+
+----------------------------------------------------------------------------------------
+M2: the counting lemma -- the inter-cell factor 2 IS the fiber count (two bookkeepings)
+----------------------------------------------------------------------------------------
+  [PASS] bookkeeping A (geometric): counting {b, conj b} as distinct doubles the weight: Z(full plane)/Z(folded C/K) = 2 exactly  --  Z_plane=pi/g, Z_folded=pi/(2*g)
+  [PASS] bookkeeping B (landed cells): Z_sector/Z_orbit = 2 exactly -- the SAME factor; the entire inter-cell difference is the fiber count of the 2:1 sector->orbit map
+  [PASS] ratio-level only (the #3138/rho-map lesson): no absolute normalization is claimed; the factor 2 is convention-free
+
+----------------------------------------------------------------------------------------
+M3: Dirac context -- MAXENT-R selects the orbit cell (r=1/2, Q=2/3)
+----------------------------------------------------------------------------------------
+  [PASS] registrable alternatives: K(e1)=e2 (computed) => {b, conj b} label ONE outcome; a distribution over registrable alternatives carries NO fiber-2
+  [PASS] => MAXENT-R in a Dirac context yields the landed holomorphic cell: r = 1/2, Q = 2/3 (landed rho-map, orientation pinned by the landed table)
+
+----------------------------------------------------------------------------------------
+M4: Majorana (K-fixed) context -- the SAME principle yields the sector cell (r=1, Q=1)
+----------------------------------------------------------------------------------------
+  [PASS] K-fixedness forces the doublet coefficient REAL: conj(H)=H <=> b = conj(b) (the doublet variable collapses to ONE REAL slot -- no folding question arises)  --  b-conj(b) = 2*I*v
+  [PASS] => MAXENT-R in a K-fixed context yields the landed Majorana/real cell: r = 1, Q = 1 -- the SAME principle, zero per-context choices, reproduces BOTH realized cells  --  matches the landed Majorana-Berezin cell and rung 0 of the neutrino program
+  [PASS] NOT a fitted selector: the principle voluntarily outputs Q = 1 where structure dictates (Majorana) -- a post-hoc rule tuned to lepton data would never volunteer Q = 1  --  answers the panel's counterfactual objection head-on
+
+----------------------------------------------------------------------------------------
+M5: what the sector-side rule must import (and the framework does not retain)
+----------------------------------------------------------------------------------------
+  [PASS] the axiom text lists 'within-sector data' among what a record does NOT supply (mechanical check on the live file) -- the b-vs-conj(b) distinction is UNREGISTRABLE data
+  [PASS] the sector rule's factor 2 has exactly one structural source (M2): counting the unregistrable pair as distinct alternatives -- i.e., a sample space finer than the registrable algebra, equipped with a Liouville-class measure; NO such measure on generation space is retained (the staggered realization gate is the open Tier-A admission)  --  the Jaynes-vs-Liouville residual is SUPPORTED by retained-status asymmetry, not proven
+
+----------------------------------------------------------------------------------------
+M6: honest status -- candidate support, not adoption
+----------------------------------------------------------------------------------------
+  [PASS] the admission is NOT skipped by this note; MAXENT-R is a candidate premise, not an adopted one
+  [PASS] possible improvement if later adopted: Koide-specific binary -> universal/prior (Jaynes 1957, predates the data), context-blind (same principle everywhere), structure-blind in output (Q=1 for Majorana, 2/3 for Dirac), no per-context knob
+  [PASS] what remains a choice: maxent over REGISTRABLE alternatives vs equipartition over phase-space dof (Liouville). Supported by the framework's ontology -- the outcome algebra is axiom-grade; no Liouville measure on generation space is retained -- but SUPPORTED is not DERIVED; flagged
+  [PASS] candidate for re-panel: does MAXENT-R pass the premise-purity test that the bare binary failed? (universal, no selector-among-cells, consequence varies by structure). NOT adopted here; sets no audit status
+
+========================================================================================
+SUMMARY: PASS=16 FAIL=0
+========================================================================================
+
+----- stderr -----
+

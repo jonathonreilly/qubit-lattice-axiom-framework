@@ -8,7 +8,7 @@
 - [`scripts/causal_distance_tail_probe.py`](../scripts/causal_distance_tail_probe.py)
 - [`logs/2026-04-06-causal-distance-tail-probe.txt`](../logs/2026-04-06-causal-distance-tail-probe.txt)
 - causal propagating-field context:
-  - [`archive_unlanded/causal-field-stale-runners-2026-04-30/CAUSAL_PROPAGATING_FIELD_NOTE.md`](../archive_unlanded/causal-field-stale-runners-2026-04-30/CAUSAL_PROPAGATING_FIELD_NOTE.md)
+  - [`CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)
   - [`docs/CAUSAL_FIELD_PORTABILITY_NOTE.md`](../docs/CAUSAL_FIELD_PORTABILITY_NOTE.md)
 
 ## Question

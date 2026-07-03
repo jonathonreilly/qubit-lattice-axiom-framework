@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_tensor_variational_candidate.py
+runner_sha256: 6447e23484a84766f8cca4f93d2a20436517e395c3b258ec25b3e45b7a3d2cd1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+UNIVERSAL GR TENSOR VARIATIONAL CANDIDATE VERIFIER
+==============================================================================
+[PASS] scalar generator source is present
+    observable-principle note gives the scalar generator surface
+[PASS] 3+1 lift source is present at its inherited boundary
+    route-2 lift note supplies PL S^3 x R as a kinematic scaffold, not a dynamics theorem
+[PASS] candidate note defines a tensor-valued variational object
+    candidate note identifies the Hessian of W as the tensor action candidate
+[PASS] candidate bilinear form is symmetric
+    B(h1,h2)=6.658503e-02, B(h2,h1)=6.658503e-02
+[PASS] candidate quadratic form is well-defined on 3+1 perturbations
+    Q(h1)=-1.980113e-01, Q(h2)=-4.033741e-02
+[PASS] blocker still marks Einstein/Regge identification as missing
+    direct universal route remains open at the final identification step
+
+==============================================================================
+CANDIDATE VALUES
+==============================================================================
+B(h1,h2) = 6.658503401361e-02
+B(h2,h1) = 6.658503401361e-02
+Q(h1)    = -1.980113378685e-01
+Q(h2)    = -4.033741496599e-02
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASS=6 FAIL=0 TOTAL=6
+Direct-universal progress: the scalar observable principle and the 3+1 lift source surfaces support a tensor-valued variational candidate defined as the Hessian of W on the lifted background, with Einstein/Regge identification still blocked.
+
+----- stderr -----
+

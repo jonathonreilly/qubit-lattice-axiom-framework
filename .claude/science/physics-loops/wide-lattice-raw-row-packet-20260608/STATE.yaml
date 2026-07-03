@@ -1,0 +1,19 @@
+loop_slug: wide-lattice-raw-row-packet-20260608
+mode: campaign_block
+branch: physics-loop/wide-lattice-raw-row-packet-b-20260608
+base: origin/main
+base_commit: 135c51c2d
+date: 2026-06-08
+target_claim_id: wide_lattice_h2t_distance_law_note
+target_status: bounded-support
+artifact_role: runner_certificate
+active_route: include raw distance and F~M rows directly in source note
+hard_residual: continuum/universal theorem remains out of scope
+files_touched:
+  - docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md
+  - scripts/wide_lattice_h2t_distance_replay.py
+  - logs/runner-cache/wide_lattice_h2t_distance_replay.txt
+checks:
+  - runner_cache wide_lattice_h2t_distance_replay: SCORECARD PASS=15 FAIL=0
+pr_status: pending
+next_exact_action: create PR for reviewer and independent re-audit; do not edit docs/audit

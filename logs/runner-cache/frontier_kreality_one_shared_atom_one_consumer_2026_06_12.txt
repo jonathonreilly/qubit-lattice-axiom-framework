@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/frontier_kreality_one_shared_atom_one_consumer_2026_06_12.py
+runner_sha256: eefe6e8acac7180d3dc62e97686615de9302f52225b0bae5af8c071b934d5fca
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.88
+status: ok
+----- stdout -----
+K-reality predicate: one shared atom, one surviving consumer
+========================================================================================
+
+----------------------------------------------------------------------------------------
+P1 - exact C_3 circulant algebra for the K-real predicate
+----------------------------------------------------------------------------------------
+PASS: P1.1 C is a real order-three generator with C^T = C^2
+PASS: P1.2 Hermitian coefficient section c=conj(b) gives M^dagger = M
+PASS: P1.3 K-reality M=conj(M) on the Hermitian section forces Im(b)=0 -- K defect is proportional to the K-odd coefficient y
+PASS: P1.4 transpose-fixed M=M^T on the Hermitian section is the same y=0 condition -- with c=conj(b), b=c iff b is real
+PASS: P1.5 span_R{I,C+C^2} membership is equivalent to y=0 -- solutions=[{alpha: a, beta: x, y: 0}]
+PASS: P1.6 on the K-real section det(aI+x(C+C^2))=(a+2x)(a-x)^2 is real -- det=(-a + x)**2*(a + 2*x)
+PASS: P1.7 outside the K-real span a complex-coefficient circulant can acquire determinant phase -- det witness=97/96 - 97*I/216
+PASS: P1.8 guard: the Hermitian K-odd line is detected spectrally, not by determinant phase alone -- Hermitian off-K-real examples still have real determinant
+PASS: P1.9 eig(C+C^2)={2,-1,-1}: singlet isolated, doublet degenerate -- eigenvals={2: 1, -1: 2}
+
+----------------------------------------------------------------------------------------
+P1 - unique K-odd obstruction and omega/omega^2 resolution
+----------------------------------------------------------------------------------------
+PASS: P1.10 J=i(C-C^2) is Hermitian, C_3-invariant, and K-odd
+PASS: P1.11 the C_3-invariant K-odd Hermitian direction is unique up to scale -- solutions=[{u: 0, v: 0}]; w remains free
+PASS: P1.12 J resolves omega from omega^2 with opposite faithful-sector eigenvalues -- mu_plus=-sqrt(3); mu_minus=sqrt(3)
+PASS: P1.13 a single faithful projector is not in the K-real span -- K swaps P_omega and P_omega^2
+
+----------------------------------------------------------------------------------------
+P2 - theta-side consumer is unloaded
+----------------------------------------------------------------------------------------
+PASS: P2.1 K/CPT character invariance uses only {k, phi}, no coupling object -- free symbols=['k', 'phi']
+PASS: P2.2 all-phi determinant-character invariance forces k=0 -- linear coefficient=2*I*k; solutions=[0]
+PASS: P2.3 bridge proof sections T1-T7 plus Consequence A do not use coupling K-reality strings -- absent=['K-real coupling', 'b = c', 'span{I, C + C^2}']
+PASS: P2.4 bridge proof load-bearing inputs are additivity plus orbit-constancy of the readout -- uses additivity + K/CPT-orbit constancy of the readout
+
+----------------------------------------------------------------------------------------
+P3 - surviving consumer is Koide partition selection
+----------------------------------------------------------------------------------------
+PASS: P3.1 K-real monitored coupling has singlet/doublet eigenspaces
+PASS: P3.2 K-real monitored coupling cannot split the faithful omega pair
+PASS: P3.3 the r=0 three-mode partition strictly requires the K-odd obstruction line
+PASS: P3.4 einselection note contains the span/eigenvalue/K-odd partition authority sentence
+
+----------------------------------------------------------------------------------------
+P4 and boundary assembly
+----------------------------------------------------------------------------------------
+PASS: P4.1 assembly booleans: one predicate, theta unloaded, Koide consumes, K-odd falsifier named
+PASS: B1 standard status-authority lines are present
+PASS: B2 No-promotion statement is present
+PASS: B3 firewall keeps predicate named/supplied and not derived or registered
+PASS: B4 firewall keeps r, delta, registry, audit grades, and occupancy binary untouched
+PASS: B5 closing language is absent -- found=[]
+PASS: B6 markdown link inventory is exactly the three dependency links -- links=3
+PASS: B7 context companions are backticked, not markdown-linked
+PASS: B8 theta note still names the mass-orientation premise being unloaded
+PASS: B9 bridge dependency still names additivity and orbit phrases
+PASS: B10 target file inventory for this spec is exactly the requested pair -- note=docs/KREALITY_PREDICATE_ONE_SHARED_ATOM_ONE_CONSUMER_BOUNDED_NOTE_2026-06-12.md, runner=scripts/frontier_kreality_one_shared_atom_one_consumer_2026_06_12.py
+
+========================================================================================
+SUMMARY: PASS=32 FAIL=0
+git diff --stat (not invoked; local file summary for this no-git run)
+ docs/KREALITY_PREDICATE_ONE_SHARED_ATOM_ONE_CONSUMER_BOUNDED_NOTE_2026-06-12.md | 97 lines
+ scripts/frontier_kreality_one_shared_atom_one_consumer_2026_06_12.py | 308 lines
+ 2 files changed, 405 insertions(+)
+SUMMARY: K-reality remains a named/supplied open predicate; theta-side registrability does not consume it; Koide partition selection is the one surviving consumer.
+
+----- stderr -----
+

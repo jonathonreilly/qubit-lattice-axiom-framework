@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_diagonal_domination_rung_nine_bounded_2026_06_12.py
+runner_sha256: c2669e4c105ec66b09199cbb39214cd3f49fe97635582365d959005510563b6f
+timeout_sec: 540
+exit_code: 0
+elapsed_sec: 5.27
+status: ok
+----- stdout -----
+Native gauge-transfer diagonal-domination obstruction runner
+Finite rows are witnesses; no fitted c_J or c_D is promoted.
+
+PASS: note carries the exact required status-authority sentence
+PASS: note declares canonical open-gate claim type
+PASS: note refuses imports and fitted constants
+PASS: one-hop authorities are markdown links
+PASS: quote anchors match the cited authorities
+PASS: note avoids branch-local temp references
+PASS: note states exact finite-block Delta_J and Delta_D definitions
+PASS: note derives the saddle diagonal derivative multiplier
+PASS: note gives formal c_J and c_D expressions without numeric promotion
+PASS: note gives both ambiguity readings
+PASS: note differentiates new material from prior notes
+PASS: note avoids overreach phrases
+PASS: saddle derivative identity is exact on sample weights
+      max_error=4.441e-16
+PASS: six-neighbor Taylor expansion gives beta(J-I) -> L on interior quadratic sample
+      max_error=3.044e-13
+finite_exact_witness_rows
+  beta= 20 shell=12 CJ_wit=0.831287608242 CD_wit=0.733024709589 margin=0.098262898653 ratio=0.881794342080
+  beta= 30 shell=16 CJ_wit=0.837307840913 CD_wit=0.776931164272 margin=0.060376676642 ratio=0.927891901053
+  beta= 40 shell=18 CJ_wit=0.847762095819 CD_wit=0.793560913913 margin=0.054201181906 ratio=0.936065575268
+  beta= 50 shell=22 CJ_wit=0.845980865746 CD_wit=0.810590301970 margin=0.035390563776 ratio=0.958166236131
+PASS: finite witness rows have positive C_J margin over C_D
+PASS: tight beta=50 finite row remains fenced evidence only
+      beta50_ratio=0.958166236131
+PASS: note witness table contains recomputed beta=50 row
+PASS: wrong derivative recurrence scale flips the finite domination sign
+      logdiff=0.002417102163
+PASS: wrong source scale J=0 flips the finite domination sign on the falsifier row
+      logdiff=0.026142350801
+reduced_falsifier_rows
+  correct_saddle_ratio=0.203758341733
+  wrong_Nc2_ratio=0.273042774766
+  wrong_dimension_omitted_ratio=0.157783689333
+  wrong_source_J0_ratio=0.943492137331
+PASS: wrong Nc, dimension, and source normalization visibly change reduced rows
+PASS: note prints exact falsifier values
+PASS: negative-claim discipline gate is visible
+PASS: N1 names five distinct attack routes
+PASS: N7 steelman names a concrete route that could break the obstruction
+PASS: runner and cache paths are named in the note
+PASS: note verification section names the expected total
+PASS: formal constants are not silently assigned numeric fitted values
+PASS: source notes loaded from expected repo refs
+PASS: witness ratios are finite and bounded
+
+TOTAL: PASS=29, FAIL=0
+
+----- stderr -----
+

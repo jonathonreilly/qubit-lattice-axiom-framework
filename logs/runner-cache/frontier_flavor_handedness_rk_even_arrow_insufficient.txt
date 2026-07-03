@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/frontier_flavor_handedness_rk_even_arrow_insufficient.py
+runner_sha256: 03940129435ac73c6766b8fd59bc0d0795a02d32b97edbbcd6ce6d7ab9fd89dc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.13
+status: ok
+----- stdout -----
+PASS: H_handedness_is_sign_Delta_nonzero Delta(+2/9)=+4.674812e-02 -> sign=+1
+PASS: T_K_conjugates_circulant_to_minus_delta K: g1->conj(g1) == delta->-delta on the circulant
+PASS: T_sign_Delta_is_T_odd sign Delta(+d)=+1  sign Delta(-d)=-1
+PASS: R_is_improper_reflection det(R)=-1
+PASS: R_conjugates_C_to_C2 R C R^T = C^2 (reverses the 3-cycle)
+PASS: R_sign_Delta_is_R_odd sign Delta -> -1 under R
+PASS: R_proper_rotation_preserves_orientation C3[111] (det=+1, A_3) preserves sign(Delta)
+PASS: RK_even sign Delta under R.K = +1 (== original +1)
+PASS: RK_R_is_unitary_distinct_from_K R orthogonal (unitary), improper; K antiunitary -- distinct operations
+PASS: A_dynamics_T_symmetric_H_iD K H K = -H: H=iD is time-reversal-odd, free evolution e^{Dt} is real (T-symmetric)
+PASS: A_arrow_breaks_T_not_R arrow = T-breaking boundary datum; R (spatial reflection) untouched -> handedness unfixed
+PASS: S_magnitude_L3_1_2_separate |Delta(2/9)|=0.0467 != 2/9=L_3(1,2) (separate)
+PASS: S_cone_Q_two_thirds_firewall max|Q-2/3|=5.55e-16
+PASS: C_comparator_delta_pdg delta_PDG=0.222230
+
+TOTAL: PASS=14 FAIL=0
+VERDICT: the flavor handedness sign(Delta) (count + phase) is T-odd AND R-odd (RK-even). The time-arrow breaks only T (H=iD T-symmetric, arrow = past-hypothesis boundary); the spatial axis-swap reflection R stays a bare-lattice symmetry. So the arrow ALONE cannot fix the handedness -- it requires spatial-reflection (parity) breaking (the open residual; staggered axis-ordering is the natural candidate), RK-correlated with the arrow. Magnitude 2/9=L_3(1,2) and the r=1/2 cone untouched.
+
+----- stderr -----
+

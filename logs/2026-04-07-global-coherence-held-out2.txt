@@ -104,5 +104,5 @@ COMPARISON to old node-level rule (avg_deg >= 10.42 AND reach_frac >= 0.86)
   new free_coh on this batch: 10/12 = 83.3%
 
 VERDICT
-  CONFIRMED — frozen rule generalizes to a fresh batch at 83%
-    and beats the old node-level rule by +33%
+  BOUNDED FINITE TABLE — frozen rule scores 83% on this fresh scaffolded batch
+    and beats the old node-level rule by +33% on this batch

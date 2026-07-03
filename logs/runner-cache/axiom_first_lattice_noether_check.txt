@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_lattice_noether_check.py
-runner_sha256: 3abf8e69064af6cd8947baeaefa6e1b415b956169668c7567bd2d637ee8e96e5
+runner_sha256: a2979bff0a5ea8a11ec7b59f48dee73e59a9b5eeb712bbc40c6c11825dc3542d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.23
+elapsed_sec: 0.47
 status: ok
 ----- stdout -----
 ========================================================================
@@ -16,6 +16,10 @@ status: ok
  2026-05-10 gate-recategorization repair: + E6 (3) divergence check
  2026-05-25 Step 4b boundary repair: E6 support-only, + E7 field-level
  exact two-step Ward identity
+ 2026-06-06 onsite-generator repair: E5 arbitrary-bilinear symbolic
+ sign check; (5) scoped to onsite/internal infinitesimal generators
+ 2026-06-06 audit repair: + E5b direct U(1) local-envelope sign check
+ 2026-06-12 source-boundary repair: + E8 parent gate plain-text target
 ========================================================================
 
 --- Exhibit E1: U(1) phase symmetry condition [T_U1, M] = 0 ---
@@ -40,9 +44,20 @@ status: ok
 
 --- Exhibit E5: bilateral (5) -> (4) closure on small lattice ---
   L=4, dim=3, mass=0.3, sites checked=192
-  max |J5_real - J4| = 7.216e-16  (target: 0 to machine precision)
+  symbolic arbitrary-bilinear residual i*(i/2)*eta*(B+ + B-) - J4 = 0
+  max |J5_real - J4| = 0.000e+00  (target: 0 to machine precision)
   Bilateral (5) under T = i I closes algebraically to (4):
+  symbolic arbitrary-bilinear verdict: PASS
   E5 verdict: PASS
+
+--- Exhibit E5b: direct U(1) local-envelope sign check ---
+  L=4, dim=3, mass=0.3, sampled fields=64
+  direct delta S = -7.070390e+00+2.006146e+00j
+  |direct - bilateral plus sign| = 8.152e-15
+  |direct - historical minus sign| = 3.292e+01
+  relative historical-minus residual = 4.479e+00
+  -> direct variation selects the plus-sign bilateral current in (7c).
+  E5b verdict: PASS
 
 --- Exhibit E6: support-only (3) momentum-density divergence ---
   L=4, dim=3, mass=0.3, sites checked=64
@@ -71,6 +86,15 @@ status: ok
   -> verifies Step 4b's exact two-step Ward identity (3a).
      It does not promote the support-only density (3).
 
+--- Exhibit E8: source dependency boundary for parent staggered gate ---
+  note file exists: PASS
+  parent gate remains named as registered context: PASS
+  parent gate is not a markdown one-hop dependency: PASS
+  retained substep-1 remains the markdown load-bearing dependency: PASS
+  registered route is explicitly non-current graph dependency: PASS
+  source says parent uses no markdown edge: PASS
+  E8 verdict: PASS
+
 ========================================================================
  SUMMARY
 ========================================================================
@@ -79,15 +103,18 @@ status: ok
    E3 (current divergence-free on shell): PASS
    E4 (global charge conservation): PASS
    E5 (bilateral (5) -> (4) algebraic closure): PASS
+   E5b (direct U(1) sign-visible local variation): PASS
    E6 (support-only (3) momentum-density divergence): PASS
    E7 (field-level two-step Ward identity): PASS
+   E8 (parent gate source-boundary check): PASS
 
-   PASSED: 7/7
+   PASSED: 9/9
 
  verdict: bounded lattice Noether theorem exhibited on the admitted
-          staggered/Grassmann carrier; U(1) current closes via E5,
-          the (2Z)^d translation branch is the exact two-step Ward
-          identity checked by E7, and the old density (3) is
+          staggered/Grassmann carrier; U(1) current closes via E5
+          and sign-visible arbitrary-field E5b, the (2Z)^d
+          translation branch is the exact two-step Ward identity
+          checked by E7, and the old density (3) is
           support-only via E6.
 
 ----- stderr -----

@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/one_time_dimension_dt1_reduction_check_2026_06_17.py
+runner_sha256: 07c4562f8cbc78725fac9b84047fb41042443744800d27ec165bd90ee39a972b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+BLOCK [MULTI-TIME]: d_t=2 is kinematically REALIZABLE on H=(x)C^2 (multi-time not excluded)
+  [PASS] G1,G2 Hermitian
+  [PASS] [G1,G2]=0 (commuting clocks)
+  [PASS] span{G1,G2} is rank 2 (independent, not collinear, modulo I)
+  [PASS] U(s,t) is an R^2 group homomorphism (true 2-time evolution)
+  [PASS] U(1,0) NOT on the single-clock orbit (min gap 1.356 > 0.05)
+   => a second independent commuting clock exists on (x)C^2; bare kinematics do not exclude d_t=2.
+   => Record is a finitely-additive scalar over UNORDERED disjoint collections: it adds NO
+      constraint on the NUMBER of commuting generators. So {Q,L,Record} do not exclude multi-time.
+
+BLOCK [CLIFFORD-ODD]: the even-d / gamma_5 argument allows ALL odd d_t (does NOT pin d_t=1)
+  [PASS] d_s=3,d_t=1: total d=4 even, gamma_5 exists (anticommutes all gamma)
+  [PASS] d_s=3,d_t=3: total d=6 even, gamma_5 exists (anticommutes all gamma)
+  [PASS] d_s=3,d_t=5: total d=8 even, gamma_5 exists (anticommutes all gamma)
+   => the anomaly/Clifford LOWER bound is d_t in {1,3,5,...} (odd>=1); it does NOT exclude 3,5.
+
+BLOCK [FORCING-STATUS]: the only would-be UPPER-bound (d_t<=1) forcings, classified
+   - Tegmark/ultrahyperbolic well-posedness: needs a predictive-determinism desideratum the
+     axioms LACK (Record supplies no time order; the realized-state primitive permits
+     only pointwise evaluation at a supplied realized state, with no selection rule).
+     => IMPORTED/external, not framework-internal.
+   - Record single-total-order: Record axiom is UNORDERED finite additivity; the single
+     linear order is a SUPPLIED post-record layer => not a derivation.
+   - Stone/N5: gives uniqueness GIVEN one generator; cannot fix the generator COUNT => circular.
+  [PASS] tested current routes do not force d_t<=1 (external/circular/symmetry-blind)
+
+CONCLUSION: d_t=1 = [odd>=1 : internal-conditional] INTERSECT [<=1 : B-AXIS.3 = emergent-dynamics gate].
+Multi-time is kinematically realizable; d_t=1 REDUCES to the (existing) emergent-dynamics gate,
+not a new admission and not closed without the single-generator clause. Distinct from the arrow (direction) admission.
+
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

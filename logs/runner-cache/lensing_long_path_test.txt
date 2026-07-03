@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/lensing_long_path_test.py
 runner_sha256: 6c97ab1fe30b85a83357e7cea950013ff286e3a1765a4daa3bdea9a667d6583b
-timeout_sec: 1800
+timeout_sec: 420
 exit_code: 0
-elapsed_sec: 732.69
+elapsed_sec: 264.40
 status: ok
 ----- stdout -----
 ================================================================================

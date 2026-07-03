@@ -1,0 +1,77 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_physical_top_intervention_identification_candidate.py
+runner_sha256: 903073fd6063a4333d6d2f99a0b6e674b1a30b310fe595f67d8733314f95b619
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+========================================================================================
+Y_T PHYSICAL TOP INTERVENTION IDENTIFICATION CANDIDATE
+========================================================================================
+
+Part 1: anchors and authority boundary
+[PASS] docs/YT_PHYSICAL_TOP_INTERVENTION_IDENTIFICATION_CANDIDATE_NOTE_2026-05-25.md exists
+[PASS] docs/MINIMAL_AXIOMS_2026-05-20.md exists
+[PASS] docs/YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md exists
+[PASS] docs/YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md exists
+[PASS] docs/YT_SIGNED_LINEAR_DEMOCRATIC_TANGENT_PHYSICAL_BRIDGE_ATTEMPT_NOTE_2026-05-25.md exists
+[PASS] docs/YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md exists
+[PASS] docs/YT_TOP_RESPONSE_COEFFICIENT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-25.md exists
+[PASS] docs/SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
+[PASS] note contains required section: Baseline-As-Reality Starting Point
+[PASS] note contains required section: Operational Physical-Intervention Criterion
+[PASS] note contains required section: Proof Under The Criterion
+[PASS] note contains required section: What This Would Close If Accepted
+[PASS] note contains required section: Why This Is Still An Open Gate
+[PASS] note contains required section: Non-Claims
+[PASS] physical qubit-on-Z3 wording present
+[PASS] operational bridge supplies RN-to-action identity
+[PASS] Fisher unit packet supplies lambda=1 source unit
+[PASS] signed tangent packet supplies 1/sqrt(6) top component
+[PASS] primitive-unit no-go remains recorded
+[PASS] top coefficient no-go remains recorded
+[PASS] one-Higgs note leaves generation matrices free
+[PASS] source-action gate is not retained authority: unaudited
+[PASS] YT source-action support is retained_bounded: retained_bounded
+[PASS] one-Higgs gauge selection is not coefficient authority: unaudited
+
+Part 2: implication under operational physical-intervention criterion
+[PASS] normalized top source has unit norm: 1
+[PASS] top component is 1/sqrt(6): sqrt(6)/6
+[PASS] scaled intervention has Fisher norm lambda^2: lambda**2
+[PASS] primitive intervention source unit forces lambda=1
+[PASS] accepted criterion implies y_33=1/sqrt(6): sqrt(6)/6
+
+Part 3: counterfamily if criterion is not accepted
+[PASS] without criterion y_33(lambda)=lambda/sqrt(6): sqrt(6)*lambda/6
+[PASS] lambda=2 counterexample differs from primitive branch: sqrt(6)/3
+[PASS] current surface does not force criterion
+
+Part 4: claim status
+[PASS] bare retained is not allowed
+[PASS] proposed_retained is not allowed
+[PASS] status is open gate candidate
+
+Part 5: firewalls
+[PASS] firewall/nonclaim phrase present: `H_unit`
+[PASS] firewall/nonclaim phrase present: `yt_ward_identity`
+[PASS] firewall/nonclaim phrase present: `y_t_bare`
+[PASS] firewall/nonclaim phrase present: observed top/W/Z masses
+[PASS] firewall/nonclaim phrase present: PDG values
+[PASS] firewall/nonclaim phrase present: `alpha_LM`
+[PASS] firewall/nonclaim phrase present: plaquette/u0
+[PASS] firewall/nonclaim phrase present: fitted selector
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: proposed_retained
+[PASS] forbidden overclaim absent: full retained closure
+[PASS] forbidden overclaim absent: positive Y_T closure has been obtained
+[PASS] forbidden overclaim absent: old Ward route is repaired
+[PASS] forbidden overclaim absent: baseline plus current support forces lambda=1
+
+wrote outputs/yt_physical_top_intervention_identification_candidate_2026-05-25.json
+SUMMARY: PASS=50 FAIL=0
+
+----- stderr -----
+

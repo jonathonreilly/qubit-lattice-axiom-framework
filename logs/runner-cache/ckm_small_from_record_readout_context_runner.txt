@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/ckm_small_from_record_readout_context_runner.py
+runner_sha256: 135b159e36cd518dc2b94d20595cd81bdb8786f0564ca51879bab1674d1e6eeb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+========================================================================
+SMALL CKM vs LARGE PMNS as readout-context misalignment (conditional)  [class A]
+========================================================================
+  [PASS] both CIRCULANT (shared C3) -> CKM is a PERMUTATION (|V| in {0,1}) [retained no-go]
+  [PASS] aligned mass eigenbases (U_up=U_dn=I) -> CKM = IDENTITY permutation (refines the no-go to the identity)
+  [PASS] small registered deviation -> SMALL Cabibbo CKM (near identity)  (|V_us|^2=0.0498)
+  [PASS] CKM has NO trimaximal column (structural opposite of PMNS)
+  [PASS] C3-structured neutrino vs corner-basis charged lepton -> PMNS has a TRIMAXIMAL column  (col=[2])
+  [PASS] PMNS is LARGE (off-diagonal O(1)), unlike CKM
+  [PASS] FAILED GROUNDING: a POSITION-local observable is GENERATION-BLIND (identical expectation on each MOMENTUM generation) -> corner(momentum) basis is NOT the local basis; the detection grounding is refuted  (<P_pos> per momentum generation = [0.333, 0.333, 0.333])
+========================================================================
+TOTAL: PASS=7 FAIL=0
+VERDICT: small-CKM-vs-large-PMNS maps to readout-context misalignment (CONDITIONAL on the ungrounded posit: quark masses corner-diagonal, neutrino C3-structured). The detection/localization grounding is REFUTED -- the corner basis is momentum, and the local per-site observable is generation-blind.
+
+----- stderr -----
+

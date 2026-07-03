@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g_star_sm_content_from_supplied_thermal_inventory.py
-runner_sha256: 3707daf79f2b27cb88fb19d0a86ac5a031826873c5ffd41d13f03cb11a4b502c
+runner_sha256: babb141773442e913832851ed6bbe4d77f6752f34e328da215193a8661ba6509
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
@@ -13,9 +13,9 @@ note structure and scope
   [PASS] note contains: Claim type:** bounded_theorem
   [PASS] note contains: source-note proposal only
   [PASS] note contains: does not add a new axiom
-  [PASS] note contains: Standard Model thermal inventory itself remains an external
-  [PASS] note contains: Retained support packet (R1-R6)
-  [PASS] note contains: Supplied premise packet (P1-P5
+  [PASS] note contains: retained-bounded finite declared-inventory arithmetic certificate
+  [PASS] note contains: Support packet (R1-R6)
+  [PASS] note contains: Registered premise packet (P1-P5
   [PASS] note contains: Proof-walk
   [PASS] note contains: Exact arithmetic check
   [PASS] note contains: Boundaries
@@ -25,7 +25,11 @@ note structure and scope
   [PASS] note contains: ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10
   [PASS] note contains: PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02
   [PASS] note contains: SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10
-  [PASS] note contains: HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10
+  [PASS] note contains: GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06
+  [PASS] note contains: audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py
+  [PASS] note contains: P1-P5 are declared explicitly in the retained-bounded finite inventory wrapper
+  [PASS] note contains: P2 supplies the two-transverse-polarization state count
+  [PASS] note contains: P4 supplies the Dirac/Weyl thermal state-count convention
 
 ----------------------------------------------------------------------------------------
 proof-walk forbids lattice-action imports
@@ -41,8 +45,10 @@ proof-walk forbids lattice-action imports
   [PASS] proof-walk only references 'fitted' in the explicit non-use disclaimer (count=2)
 
 ----------------------------------------------------------------------------------------
-R1-R6 retained support packet citations are present
+R1-R6 support packet citations are present
 ----------------------------------------------------------------------------------------
+  [PASS] P1-P5 cites SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md as markdown link
+  [PASS] P1-P5 target file exists: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
   [PASS] R1 cites THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md as markdown link
   [PASS] R1 target file exists: THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
   [PASS] R1 cites THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md as markdown link
@@ -59,11 +65,11 @@ R1-R6 retained support packet citations are present
   [PASS] R5 target file exists: SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md
   [PASS] R5 cites SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md as markdown link
   [PASS] R5 target file exists: SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md
-  [PASS] R6 cites HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md as markdown link
-  [PASS] R6 target file exists: HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] R6 cites GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md as markdown link
+  [PASS] R6 target file exists: GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md
 
 ----------------------------------------------------------------------------------------
-P1-P5 supplied premise packet is named
+P1-P5 registered premise packet is named
 ----------------------------------------------------------------------------------------
   [PASS] premise present: **P1 Declared Standard Model particle inventory.**
   [PASS] premise present: **P2 Two transverse polarizations per massless vector.**
@@ -75,7 +81,7 @@ P1-P5 supplied premise packet is named
 bosonic count factorisation (R-packet + P-packet)
 ----------------------------------------------------------------------------------------
   [PASS] R2: dim adj(SU(3)) = N_c^2 - 1 = 8 (8)
-  [PASS] R4-implied: dim adj(SU(2)) = 3 (3)
+  [PASS] P1 premise: SU(2)_L gauge bosons W^1,W^2,W^3 = 3 (3)
   [PASS] (B1) gluon DOF = 16 (8 * 2 = 16)
   [PASS] (B2) SU(2)_L gauge boson DOF = 6 (3 * 2 = 6)
   [PASS] (B3) U(1)_Y gauge boson DOF = 2 (1 * 2 = 2)
@@ -144,8 +150,8 @@ runner-note self-consistency
 ----------------------------------------------------------------------------------------
   [PASS] runner path cited in note
 
-TOTAL: PASS=89 FAIL=0
-VERDICT: bounded proof-walk passes; g_* = 106.75 follows from the retained support packet R1-R6 plus supplied premise packet P1-P5 by exact rational arithmetic.
+TOTAL: PASS=95 FAIL=0
+VERDICT: bounded proof-walk passes; g_* = 106.75 follows from the support packet R1-R6 plus the registered P1-P5 inventory packet by exact rational arithmetic.
 
 ----- stderr -----
 

@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gate_rp_reground_staggered_only_discriminator.py
+runner_sha256: fe19f216a9140c05c25a5b4ae1ed00f536e0a887eb283c1a0d0d5168a582f3f4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+============================================================================
+GATE RP RE-GROUNDS ON RETAINED STAGGERED-ONLY CASE A
+============================================================================
+
+----------------------------------------------------------------------------
+Staggered M_KS structure (random SU(3) links, L=4)
+----------------------------------------------------------------------------
+  [PASS] M_KS is anti-Hermitian  (||M+M^dag||=0.0e+00)
+  [PASS] eps is a Hermitian involution (eps^2 = I)
+  [PASS] {eps, M_KS} = 0 (staggered chirality grading)  (||{eps,M}||=0.0e+00)
+
+----------------------------------------------------------------------------
+Case A: eigenvalues are +/- i sigma pairs; det(M+mI) = prod(m^2+sigma^2) > 0
+----------------------------------------------------------------------------
+  [PASS] all eigenvalues are pure imaginary  (max|Re|=3.6e-15)
+  [PASS] eigenvalues come in +/- sigma pairs
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+  [PASS] det(M_KS + mI) > 0  (sign=+1)
+  [PASS] det(M_KS + mI) = prod_i (m^2 + sigma_i^2) (over positive sigma)  (dlog=7.1e-14)
+
+----------------------------------------------------------------------------
+Robustness: det > 0 for several random SU(3) configurations
+----------------------------------------------------------------------------
+  [PASS] det(M_KS + mI) > 0 for all 5 random SU(3) configs
+
+============================================================================
+VERDICT
+============================================================================
+  GATE RP RE-GROUNDS ON THE RETAINED STAGGERED-ONLY CASE A.
+  The staggered operator M_KS is anti-Hermitian and anticommutes with
+  the chirality grading eps, so its eigenvalues are +/- i sigma pairs
+  and det(M_KS + mI) = prod(m^2 + sigma^2) > 0 for every link config --
+  the determinant-positivity component of the staggered-only Case A
+  reflection-positivity surface. This is the retained Case A
+  (staggered_only_det_positivity_case_a_note), independent of the
+  Wilson term.
+
+  Consequence: the gate-closure synthesis cites the broad RP theorem
+  (axiom_first_reflection_positivity, AUDITED_FAILED on the over-broad
+  full-Wilson surface). But the gate's fermionic realization is the
+  staggered sector, whose RP need is exactly Case A -- RETAINED. So the
+  synthesis's RP dependency re-grounds on the retained Case A, removing
+  the audited_failed broad RP theorem from the gate's load-bearing path.
+
+  Does NOT repair the broad RP theorem (the full-Wilson surface stays
+  failed); shows the gate does not need it. Does NOT close the gate --
+  the other unaudited axiom-first QFT rows remain.
+
+============================================================================
+PASS=8 FAIL=0
+
+----- stderr -----
+

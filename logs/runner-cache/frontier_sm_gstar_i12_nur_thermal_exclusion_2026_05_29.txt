@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.py
-runner_sha256: 48434c1bce18b817ec326a2f71aa543cf74f36e08d2cca499232022ba4861021
+runner_sha256: d18946f6408a5394dca7c6d544080c72eb506aa05428d01f3f98be4ff264f5f1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 
@@ -50,21 +50,23 @@ status: ok
   [PASS] small-m_nu Yukawa and thermalization Yukawa are mutually exclusive
 
 ----------------------------------------------------------------------------------------
-5. Branch table (light-Dirac / heavy-Majorana / large-Yukawa-Dirac)
+5. Branch table (light-Dirac / heavy-Majorana / thermalizing-Dirac)
 ----------------------------------------------------------------------------------------
   [PASS] Branch A light-Dirac: nu_R does NOT thermalize -> g_* = 106.75 (thermalizes=False, g_*=106.75)
   [PASS] Branch B heavy-Majorana: M_R >> T_census so nu_R is NOT a light dof -> g_* = 106.75 (M_R=1e+14 GeV >> T; light_at_census=False)
-  [PASS] Branch C large-Yukawa-Dirac: nu_R thermalizes -> g_* = 112 (thermalizes=True, g_*=112.0)
-  [PASS] Branch C is EXCLUDED by data: y~O(1) implies m_nu ~ 174 GeV >> sub-eV bound (m_nu(branch C) ~ 1.74e+11 eV)
+  [PASS] Branch C thermalizing-Dirac: y_nu >= y_thr thermalizes -> g_* = 112 (thermalizes=True, y_thr=1.19e-08, g_*=112.0)
+  [PASS] Branch C is EXCLUDED by data: y>=y_thr implies m_nu >= keV; O(1) gives 174 GeV (m_nu(min thermalizing) ~ 2.06e+03 eV; O(1) ~ 1.74e+11 eV)
   [PASS] g_* = 106.75 is ROBUST across BOTH admitted branches (light-Dirac, heavy-Majorana) ([106.75])
-  [PASS] g_* = 112 arises ONLY in the empirically-excluded large-Yukawa branch
+  [PASS] g_* = 112 arises ONLY in the empirically-excluded thermalizing-Dirac branch
   [PASS] resolution is branch-independent (framework retained no-go does not pick a branch)
 
 ----------------------------------------------------------------------------------------
 6. Note / authority cross-checks
 ----------------------------------------------------------------------------------------
+  [PASS] load-bearing authority file exists: SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md
   [PASS] load-bearing authority file exists: NEUTRINO_LANE4_DIRAC_SEESAW_FORK_NO_GO_NOTE_2026-04-27.md
   [PASS] load-bearing authority file exists: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
+  [PASS] load-bearing authority cited as markdown link: SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md
   [PASS] load-bearing authority cited as markdown link: NEUTRINO_LANE4_DIRAC_SEESAW_FORK_NO_GO_NOTE_2026-04-27.md
   [PASS] load-bearing authority cited as markdown link: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
   [PASS] plain-text pointer is non-load-bearing (no markdown-link edge): SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md
@@ -74,6 +76,8 @@ status: ok
   [PASS] note engages the retained Dirac/seesaw no-go
   [PASS] note states branch-independence (both branches -> exclusion)
   [PASS] note names small m_nu as an ADMITTED EMPIRICAL observation (not derived)
+  [PASS] comparator bridge isolates the admitted small-m_nu input
+  [PASS] comparator bridge isolates the thermalization comparator
   [PASS] note records the steelman (N7) FOR g_* = 112 and its rebuttal
   [PASS] note states the honest ceiling: I12 partially-resolved (conditioned on small m_nu)
   [PASS] note states it does NOT fully derive I12 from first principles
@@ -108,10 +112,10 @@ status: ok
 ----------------------------------------------------------------------------------------
 SCORECARD
 ----------------------------------------------------------------------------------------
-  PASS = 66
+  PASS = 70
   FAIL = 0
 
-RESULT: PASS=66 FAIL=0
+RESULT: PASS=70 FAIL=0
 
 ----- stderr -----
 

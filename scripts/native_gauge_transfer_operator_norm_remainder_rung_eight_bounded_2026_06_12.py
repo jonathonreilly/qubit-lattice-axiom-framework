@@ -1,0 +1,372 @@
+#!/usr/bin/env python3
+"""Rung-eight operator-norm remainder bounded runner.
+
+This runner witnesses the bounded note's narrowed Route B result:
+
+* exact self-contained target-surface hygiene;
+* geometric saddle-profile constants for the saddle-reduced diagonal;
+* saddle-tail multiplier constant;
+* scaled half-slice semigroup contraction on finite packet compressions;
+* algebraic eigen-ratio perturbation formula;
+* explicit refusal to promote fitted ratio residuals into a constant.
+
+No audit status, fitted bound, external citation, or physical beta=6 claim is
+made by this runner.
+"""
+
+from __future__ import annotations
+
+from math import ceil, exp, sqrt
+from pathlib import Path
+import sys
+
+import numpy as np
+
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+import frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve as src_existing
+
+
+AUDIT_TIMEOUT_SEC = 540
+
+NOTE_PATH = (
+    REPO_ROOT
+    / "docs"
+    / "NATIVE_GAUGE_TRANSFER_OPERATOR_NORM_REMAINDER_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md"
+)
+CHARACTER_NOTE_PATH = (
+    REPO_ROOT
+    / "docs"
+    / "GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md"
+)
+
+L_SAMPLE = 0.1938058
+PASS = 0
+FAIL = 0
+
+
+def check(name: str, ok: bool, detail: str = "") -> None:
+    global PASS, FAIL
+    if ok:
+        PASS += 1
+        print(f"PASS: {name}")
+    else:
+        FAIL += 1
+        print(f"FAIL: {name}")
+    if detail:
+        print(f"      {detail}")
+
+
+def note_text() -> str:
+    return NOTE_PATH.read_text(encoding="utf-8")
+
+
+def dim_su3(p: int, q: int) -> int:
+    return (p + 1) * (q + 1) * (p + q + 2) // 2
+
+
+def casimir_su3(p: int, q: int) -> float:
+    return (p * p + q * q + p * q + 3 * p + 3 * q) / 3.0
+
+
+def q_form(x: float, y: float) -> float:
+    return x * x + x * y + y * y
+
+
+def h_profile(x: float, y: float) -> float:
+    return x * y * (x + y) / 2.0
+
+
+def k_geom(a: float) -> float:
+    return 6.0 * a**4 + 3.0 * a**2 + 3.0 * a + 1.0
+
+
+def k_tail_sad(a: float) -> float:
+    return ((a + 2.0) ** 3 / 8.0) * exp(-3.0 * a * a / 4.0)
+
+
+def saddle_scaled(beta: int, p: int, q: int, constant: float = 3.0) -> float:
+    return (
+        beta ** (-1.5)
+        * dim_su3(p, q)
+        * exp(-constant * casimir_su3(p, q) / beta)
+    )
+
+
+def profile_value(beta: int, p: int, q: int) -> float:
+    x = p / sqrt(beta)
+    y = q / sqrt(beta)
+    return h_profile(x, y) * exp(-q_form(x, y))
+
+
+def max_geometric_residual(beta: int, a: float, constant: float = 3.0) -> float:
+    shell = int(ceil(a * sqrt(beta)))
+    max_resid = 0.0
+    for p in range(shell + 1):
+        for q in range(shell + 1):
+            if p <= a * sqrt(beta) + 1.0e-12 and q <= a * sqrt(beta) + 1.0e-12:
+                resid = abs(saddle_scaled(beta, p, q, constant) - profile_value(beta, p, q))
+                max_resid = max(max_resid, resid)
+    return max_resid
+
+
+def max_saddle_tail(beta: int, a: float, constant: float = 3.0) -> float:
+    # A finite scan is enough for a witness because the analytic bound is in the note.
+    # The Gaussian factor is already tiny beyond this deterministic cap.
+    cap = int(ceil((a + 8.0) * sqrt(beta)))
+    max_tail = 0.0
+    root = sqrt(beta)
+    for p in range(cap + 1):
+        for q in range(cap + 1):
+            if max(p / root, q / root) > a:
+                max_tail = max(max_tail, saddle_scaled(beta, p, q, constant))
+    return max_tail
+
+
+def weights_box(shell: int) -> list[tuple[int, int]]:
+    return [(p, q) for p in range(shell + 1) for q in range(shell + 1)]
+
+
+def build_j(shell: int) -> np.ndarray:
+    weights = weights_box(shell)
+    index = {w: i for i, w in enumerate(weights)}
+    j = np.zeros((len(weights), len(weights)), dtype=float)
+    for p, q in weights:
+        col = index[(p, q)]
+        for nb in src_existing.recurrence_neighbors(p, q):
+            row = index.get(nb)
+            if row is not None:
+                j[row, col] += 1.0 / 6.0
+    return j
+
+
+def semigroup_norm_from_j(j: np.ndarray, beta: float) -> float:
+    vals = np.linalg.eigvalsh(j - np.eye(j.shape[0]))
+    return float(np.max(np.exp((beta / 2.0) * vals)))
+
+
+def ratio_perturbation_bound(epsilon: float, limit: float = L_SAMPLE) -> float:
+    return (1.0 + limit) * epsilon / (1.0 - epsilon)
+
+
+def main() -> int:
+    print("Native gauge-transfer operator-norm remainder rung-eight bounded runner")
+    print("No fitted K is promoted; finite numerical rows are witnesses only.")
+    print()
+
+    text = note_text()
+    character_text = CHARACTER_NOTE_PATH.read_text(encoding="utf-8")
+
+    check("note declares canonical bounded theorem claim type", "**Claim type:** bounded_theorem" in text)
+    required_status = (
+        "**Status authority:** independent audit lane only. This source note does not\n"
+        "set or predict an audit outcome; later status is generated by the audit\n"
+        "pipeline after independent review."
+    )
+    check("note carries the required status-authority block", required_status in text)
+
+    required_quotes = [
+        "A uniform Wilson determinant saddle bound on the active window",
+        "| beta^(-3/2) r_(p,q)(beta) - H(x,y) exp[-Q(x,y)] |",
+        "An active-window tail bound outside `p,q <= a sqrt(beta)`",
+        "A lattice-semigroup remainder bound for",
+        "A perturbation margin for the top two `T_infty` block eigenvalues",
+        "large_beta_scaled_operator_remainder:",
+    ]
+    check(
+        "note restates the operator-remainder target forms",
+        all(q in text for q in required_quotes),
+        "checked six quote markers",
+    )
+    check(
+        "L sample is explicitly non-authority",
+        "L_sample = 0.1938058" in text
+        and "does not claim that value as a derived limiting ratio" in " ".join(text.split()),
+    )
+
+    authority_links = [
+        "[GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md)",
+        "[GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)",
+        "[GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md](GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md)",
+    ]
+    check(
+        "one-hop authorities are markdown links",
+        all(link in text for link in authority_links),
+        "checked authority-link forms",
+    )
+    check(
+        "runner and cache are portable markdown links",
+        "[scripts/native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_2026_06_12.py](../scripts/native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_2026_06_12.py)" in text
+        and "[logs/runner-cache/native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_2026_06_12.txt](../logs/runner-cache/native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_2026_06_12.txt)" in text,
+    )
+    check(
+        "note and runner avoid branch-local temp references",
+        ("." + "claude" + "/tmp") not in text
+        and ("tmp" + "/refs") not in text
+        and ("." + "claude" + "/tmp") not in Path(__file__).read_text(encoding="utf-8"),
+    )
+
+    banned_fragments = [
+        "only route",
+        "last route",
+        "exhausted",
+        "closes the program",
+        "audited_" + "clean",
+        "audited_" + "conditional",
+        "no" + "_go",
+        " retained ",
+    ]
+    lower_text = f" {text.lower()} "
+    check(
+        "note avoids audit-status predictions and overreach phrases",
+        not any(fragment in lower_text for fragment in banned_fragments),
+        "scanned banned fragment set",
+    )
+
+    a = 4.0
+    kg = k_geom(a)
+    geom_rows = []
+    for beta in [25, 50, 100, 200]:
+        resid = max_geometric_residual(beta, a)
+        geom_rows.append((beta, resid, resid * sqrt(beta), kg))
+    print("geometric_saddle_bound_rows")
+    for beta, resid, scaled, bound in geom_rows:
+        print(
+            f"  beta={beta:3d} max_resid={resid:.12e} "
+            f"sqrt_beta_resid={scaled:.12e} K_geom={bound:.12e}"
+        )
+    check(
+        "derived K_geom(a) bounds the saddle-profile residual on the witness grid",
+        all(scaled <= bound for _beta, _resid, scaled, bound in geom_rows),
+        f"a={a}, K_geom={kg:.12e}",
+    )
+    check(
+        "K_geom formula is present in the note",
+        "K_geom(a) = 6 a^4 + 3 a^2 + 3 a + 1" in text,
+    )
+
+    wrong_rows = []
+    for beta in [25, 50, 100, 200]:
+        wrong_rows.append((beta, max_geometric_residual(beta, a, constant=2.0) * sqrt(beta)))
+    print("wrong_saddle_constant_scaled_residuals")
+    for beta, scaled in wrong_rows:
+        print(f"  beta={beta:3d} wrong_constant_sqrt_beta_resid={scaled:.12e}")
+    check(
+        "wrong saddle constant does not show the same O(beta^-1/2) structure",
+        wrong_rows[-1][1] > 1.5 * wrong_rows[0][1],
+        f"first={wrong_rows[0][1]:.6e}, last={wrong_rows[-1][1]:.6e}",
+    )
+
+    tail_bound = k_tail_sad(a)
+    tail_rows = []
+    for beta in [25, 50, 100, 200]:
+        tail_rows.append((beta, max_saddle_tail(beta, a), tail_bound))
+    print("saddle_tail_bound_rows")
+    for beta, tail, bound in tail_rows:
+        print(f"  beta={beta:3d} max_tail={tail:.12e} K_tail_sad={bound:.12e}")
+    check(
+        "derived K_tail_sad(a) bounds the scanned saddle multiplier tail",
+        all(tail <= bound for _beta, tail, bound in tail_rows),
+        f"a={a}, K_tail_sad={tail_bound:.12e}",
+    )
+    check(
+        "K_tail_sad formula is present in the note",
+        "K_tail_sad(a) = ((a + 2)^3 / 8) exp[-3 a^2 / 4]" in text,
+    )
+
+    check(
+        "character authority states the six-neighbor source recurrence",
+        "X = (chi_(1,0) + chi_(0,1)) / 6" in character_text
+        and "Exact `SU(3)` dominant-weight recurrence" in character_text,
+    )
+    semigroup_rows = []
+    for shell in [2, 4, 8, 12]:
+        j = build_j(shell)
+        symmetry_err = float(np.max(np.abs(j - j.T)))
+        eig_max = float(np.max(np.linalg.eigvalsh(j)))
+        norm_beta_50 = semigroup_norm_from_j(j, 50.0)
+        semigroup_rows.append((shell, symmetry_err, eig_max, norm_beta_50))
+    print("finite_packet_semigroup_rows")
+    for shell, symmetry_err, eig_max, norm_beta_50 in semigroup_rows:
+        print(
+            f"  shell={shell:2d} symmetry_err={symmetry_err:.3e} "
+            f"lambda_max_J={eig_max:.12f} ||exp(25(J-I))||={norm_beta_50:.12f}"
+        )
+    check(
+        "finite packet J compressions are symmetric",
+        all(symmetry_err < 1.0e-14 for _shell, symmetry_err, _eig, _norm in semigroup_rows),
+    )
+    check(
+        "finite packet J compressions have top eigenvalue at most one",
+        all(eig_max <= 1.0 + 1.0e-12 for _shell, _sym, eig_max, _norm in semigroup_rows),
+    )
+    check(
+        "scaled semigroup exp((beta/2)(J-I)) is contractive on witness packets",
+        all(norm <= 1.0 + 1.0e-12 for _shell, _sym, _eig, norm in semigroup_rows),
+    )
+    check(
+        "semigroup contraction statement is present in the note",
+        "|| E_beta || <= 1" in text,
+    )
+
+    eps_rows = []
+    for epsilon in [0.01, 0.05, 0.1]:
+        bound = ratio_perturbation_bound(epsilon)
+        # Worst-case values allowed by Weyl in the normalized setting.
+        worst_ratio = (L_SAMPLE + epsilon) / (1.0 - epsilon)
+        eps_rows.append((epsilon, abs(worst_ratio - L_SAMPLE), bound))
+    print("ratio_perturbation_rows")
+    for epsilon, actual_worst, bound in eps_rows:
+        print(
+            f"  epsilon={epsilon:.3f} worst_delta={actual_worst:.12e} "
+            f"formula_bound={bound:.12e}"
+        )
+    check(
+        "ratio perturbation formula bounds the Weyl worst-case rows",
+        all(actual <= bound + 1.0e-15 for _eps, actual, bound in eps_rows),
+    )
+    epsilon_gate = (1.0 - L_SAMPLE) / 3.0
+    check(
+        "ratio bound is below one under the stated epsilon gate",
+        L_SAMPLE + ratio_perturbation_bound(epsilon_gate) < 1.0,
+        f"epsilon_gate=(1-L)/3, L_plus_bound={L_SAMPLE + ratio_perturbation_bound(epsilon_gate):.12f}",
+    )
+    check(
+        "perturbation-transfer formula is present in the note",
+        "|lambda_1/lambda_0(beta) - L|" in text
+        and "(1 + L) epsilon(beta) / (1 - epsilon(beta))" in text,
+    )
+
+    check(
+        "note names the missing Wilson-to-saddle estimate instead of declaring K",
+        "wilson_to_saddle_uniform(a)" in text
+        and "No value of `K_W(a)` is fitted or inferred here." in text,
+    )
+    check(
+        "note states that R(beta), K, and beta_0 are not assembled",
+        "does not assemble the requested" in text
+        and "numerical `K` and `beta_0` not available" in text,
+    )
+    check(
+        "negative-claim discipline gate is included",
+        "N1 - Alternative route enumeration:" in text
+        and "N8 - Cross-cycle echo:" in text
+        and "Steelman" in text,
+    )
+    check(
+        "runner and cache paths are named in the note",
+        "scripts/native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_2026_06_12.py" in text
+        and "logs/runner-cache/native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_2026_06_12.txt" in text,
+    )
+
+    print()
+    print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
+    return 0 if FAIL == 0 else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

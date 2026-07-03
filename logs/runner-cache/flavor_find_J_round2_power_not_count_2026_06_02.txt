@@ -1,28 +1,26 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_find_J_round2_power_not_count_2026_06_02.py
-runner_sha256: 9e588a5772eb0835cb930e9916b027c34470bf8b162522cc65963c876fa36563
+runner_sha256: 6ff8713bcc2802684a072c42885f17c965e9bd3de396cf0687613a5a9e86ea68
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
-[PASS] R2-1 Berezin Z=det(H) = product of 3 REAL eigenvalue factors (det_R-type product), a FUNCTION of (a,b) -- never integrates over b
-       determinant-PRODUCT functional, structurally distinct from the Frobenius block-total that gives r=1/2
-[PASS] R2-2 C_3 leaves BOTH symmetric I (C^T I C=I) and antisymmetric J=C-C^2 (C^T J C=J) invariant -> does NOT select det_C(J) over det_R(I)
-       choosing A propto J (= det_C, pairing 2 reals into 1 complex) is an unforced posit = the U(1)_b that round 1 showed measure-neutral / C^3=I-forbidden-as-continuous
-[PASS] R2-3 on equal footing both are single-power: Pf(aJ)=a and det(sI)^{-1/2}=1/s; the '1-vs-2 factor' split is a Pfaffian-vs-unrooted-det artifact
-       Pf(aJ)=2.000=a (1 factor); det(sI)^(-1/2)=0.500=1/s (1 factor) -> fermion/boson fixes the det EXPONENT, not the doublet COUNT
-[PASS] R2-4 det_C (equal power per BLOCK 3a^2=6|b|^2) -> r=1/2 -> Q=2/3 (observed); det_R (per real dim 3a^2=3|b|^2) -> r=1 -> Q=1 (A1 default)
-       the wall: det_C/r=1/2 <=> DIRAC (complex/J-paired) generation doublet; det_R/r=1 <=> MAJORANA (real)
+[PASS] R2-1 Berezin Z=det(H) is a real eigenvalue product, not the Frobenius block-total selector
+       det scales cubically under H -> tH; the Frobenius block-total scales quadratically
+[PASS] R2-2 C3 leaves both symmetric I and antisymmetric J=C-C^2 invariant, so covariance does not select J
+       choosing the antisymmetric pairing is extra structure relative to this finite C3 packet
+[PASS] R2-3 Gaussian statistics fixes determinant exponent, not generation-doublet mode count
+       Pf(aJ)=2.000=a and det(sI)^(-1/2)=0.500=1/s
+[PASS] R2-4 source boundary guard: no Q/default or Dirac-vs-Majorana conclusion is promoted by this packet
+       the packet closes algebraic non-selection of J only
 
 SCORECARD PASS=4 FAIL=0
-VERDICT (J-hunt round 2, wf_d2438beb): det_R/Q=1 stands. The FERMIONIC frame does NOT force det_C:
-POWER (det exponent) != COUNT (doublet mode-count); Berezin gives a determinant-PRODUCT (3 real
-factors), not the block-total that gives r=1/2; and C_3 admits BOTH the symmetric I and the
-antisymmetric J as invariant bilinears, so det_C's J is an unforced extra posit = the measure-neutral,
-C^3=I-forbidden-as-continuous U(1)_b. The fermionic frame is the same static J in a Berezin costume.
-WALL NOW (round 3): can framework baseline+emergent-spacetime force a DIRAC (complex) vs MAJORANA (real) reality
-structure on the generation doublet? (Charged leptons ARE Dirac -- the round-3 lever.)
+VERDICT (J-hunt round 2, wf_d2438beb): bounded-support negative route pruning.
+The fermionic/Berezin frame fixes determinant power but does not force the antisymmetric
+J=C-C^2 doublet pairing. Berezin gives a determinant product, not the Frobenius
+block-total selector; C3 admits both I and J invariant bilinears. This runner does
+not derive det_R/Q=1, det_C -> r=1/2 -> Q=2/3, or a Dirac-vs-Majorana wall.
 
 ----- stderr -----
 

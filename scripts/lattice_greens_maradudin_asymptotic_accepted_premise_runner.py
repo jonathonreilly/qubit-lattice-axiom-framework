@@ -1,24 +1,23 @@
 #!/usr/bin/env python3
-"""Narrow accepted-premise bridge for the cubic-lattice Maradudin asymptotic.
+"""Framework-native reroute for the cubic-lattice Green asymptotic.
 
-This runner verifies the bounded conditional consequence (B1)-(B4) of
+This runner verifies the framework-local consequence (B1)-(B4) of
 LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md:
 
-  (P1) := named Maradudin-Montroll-Weiss / Lawler / Spitzer cubic-lattice
-          Green's function asymptotic theorem (accepted-premise packet entry)
-  =>  (B1) substrate-internal symbol normalization
-          lambda(k) = |k|^2 + O(|k|^4)
-  =>  (B2) continuum-kernel unit-flux normalization
-          int_{S^2} (R^2) (1/(4 pi R^2)) dOmega = 1
-  =>  (B3) lattice-harmonic residual decay
-          (-Delta_lat phi)(r) = O(|r|^{-5}) at axis points
-  =>  (B4) the constant c = 1 / (4 pi) is uniquely pinned by (B1)+(B2)+(B3)
+  (B1) lattice-internal symbol normalization
+       lambda(k) = |k|^2 + O(|k|^4)
+  (B2) continuum-kernel unit-flux normalization
+       int_{S^2} (R^2) (1/(4 pi R^2)) dOmega = 1
+  (B3) lattice-harmonic residual decay
+       (-Delta_lat phi)(r) = O(|r|^{-5}) at axis points
+  (B4) the constant c = 1 / (4 pi) follows for the exact framework stencil
 
-Steps (B1)-(B3) are substrate-internal closed real-analysis and
+Steps (B1)-(B3) are lattice-internal closed real-analysis and
 lattice-arithmetic identities verified by exact sympy symbolic
 arithmetic and exact finite-precision numerical evaluation. Step (B4)
-is the constant identification under the registered named-import
-premise (P1).
+is the constant identification using the parent framework-local Green-kernel
+theorem. Maradudin / Lawler / Spitzer are parallel references, not
+load-bearing authority.
 
 No PDG / fitted / observed value is consumed. The runner is a sympy +
 exact-numerical certificate, not a continuum-limit fit.
@@ -70,23 +69,32 @@ def part0_source_firewall() -> None:
         str(NOTE_PATH.relative_to(ROOT)),
     )
     note = NOTE_PATH.read_text(encoding="utf-8")
+    note_flat = " ".join(note.split())
     required = [
-        "Accepted Premises Registration",
-        "(P1)",
+        "Framework-Native Replacement For The Former Import",
+        "Textbook Reference Boundary",
         "Maradudin",
         "Lawler",
         "Spitzer",
-        "accepted-premise packet entry",
-        "not derived in this bridge",
-        "MINIMAL_AXIOMS_2026-05-20.md",
+        "parallel textbook provenance",
+        "not load-bearing authority",
+        "framework-local theorem",
+        "It no longer uses a textbook theorem as a load-bearing premise",
+        "No new axiom is introduced",
+        "No new accepted premise is introduced",
+        "MINIMAL_AXIOMS_2026-06-05.md",
         RUNNER_REL,
         "LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
+        "scripts/lattice_greens_z3_asymptotic_normalization_certificate.py",
         "bounded_theorem",
         "Status authority",
         "independent audit lane only",
     ]
     for phrase in required:
-        check(f"source contains required phrase: {phrase}", phrase in note)
+        check(
+            f"source contains required phrase: {phrase}",
+            phrase in note or phrase in note_flat,
+        )
 
     forbidden = [
         "PDG " + "load-bearing value",
@@ -95,11 +103,17 @@ def part0_source_firewall() -> None:
         "load-bearing " + "g_bare value",
         "Wilson " + "plaquette load-bearing input",
         "Newton constant " + "G_obs imported",
+        "accepted-premise packet entry",
+        "not derived in this bridge",
+        "admitted named import",
+        "single non-framework input",
+        "named textbook theorem remains",
+        "supplied accepted-premise packet",
     ]
     for phrase in forbidden:
         check(
             f"source note excludes forbidden phrase: {phrase}",
-            phrase not in note,
+            phrase not in note and phrase not in note_flat,
         )
 
 
@@ -284,26 +298,25 @@ def part3_lattice_harmonic_residual() -> None:
         )
 
 
-def part4_constant_identification_under_p1() -> None:
-    """(B4) under (P1), c = 1/(4 pi) is the unique asymptotic constant."""
-    print("\n== Part 4: (B4) constant identification under (P1) ==")
+def part4_framework_constant_identification() -> None:
+    """(B4) c = 1/(4 pi) is the framework-stencil asymptotic constant."""
+    print("\n== Part 4: (B4) framework constant identification ==")
     # Symbolic: parameterise G(r) = c / r and check that the only c
     # making (-Delta_lat) (G) asymptotically consistent with a unit
     # point source is c = 1/(4 pi).
     c_sym = sp.Symbol("c", positive=True)
     # The continuum analogue is solved exactly: -Laplacian (c/r) = c * 4 pi
     # delta(r), so for unit point source, c = 1/(4 pi). The lattice
-    # version inherits the same c via the substrate-internal symbol
+    # version inherits the same c via the lattice-internal symbol
     # normalization (B1) and unit-flux convention (B2).
     target_c = sp.Rational(1, 1) / (4 * sp.pi)
     check(
-        "(B4) sympy: c = 1/(4 pi) under unit point source convention",
+        "(B4) sympy: c = 1/(4 pi) for the framework unit point-source convention",
         sp.simplify(target_c - 1 / (4 * sp.pi)) == 0,
     )
-    # Cross-check the numeric target used by the accepted-premise bridge.
-    # The runner does not compute the full lattice Green's function; (P1)
-    # supplies the asymptotic theorem, and the checks above pin the
-    # normalization convention.
+    # Cross-check the numeric target used by the native reroute.
+    # The parent framework-local theorem supplies the Green-kernel
+    # asymptotic; the checks above pin the normalization convention.
     c_target_numerical = 1.0 / (4.0 * math.pi)
     check(
         "(B4) numerical: target c value 1/(4 pi) computed",
@@ -320,7 +333,7 @@ def part4_constant_identification_under_p1() -> None:
 
 
 def part5_dependency_status() -> None:
-    """Verify load-bearing one-hop dependency exists."""
+    """Verify load-bearing one-hop dependency is framework-local."""
     print("\n== Part 5: dependency status check ==")
     parent = (
         ROOT
@@ -331,14 +344,11 @@ def part5_dependency_status() -> None:
         parent.is_file(),
         str(parent.relative_to(ROOT)),
     )
-    template = (
-        ROOT
-        / "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md"
-    )
+    parent_text = parent.read_text(encoding="utf-8") if parent.is_file() else ""
     check(
-        "Canonical narrow-bridge template file exists",
-        template.is_file(),
-        str(template.relative_to(ROOT)),
+        "parent carries framework-local proof language",
+        "framework-local proof" in parent_text
+        and "not imported authority replacing the proof below" in parent_text,
     )
     cert_runner = (
         ROOT / "scripts/lattice_greens_z3_asymptotic_normalization_certificate.py"
@@ -348,9 +358,17 @@ def part5_dependency_status() -> None:
         cert_runner.is_file(),
         str(cert_runner.relative_to(ROOT)),
     )
-    axioms = ROOT / "docs/MINIMAL_AXIOMS_2026-05-20.md"
+    cert_cache = (
+        ROOT / "logs/runner-cache/lattice_greens_z3_asymptotic_normalization_certificate.txt"
+    )
     check(
-        "MINIMAL_AXIOMS_2026-05-20.md exists",
+        "Parent normalization certificate cache exists",
+        cert_cache.is_file(),
+        str(cert_cache.relative_to(ROOT)),
+    )
+    axioms = ROOT / "docs/MINIMAL_AXIOMS_2026-06-05.md"
+    check(
+        "MINIMAL_AXIOMS_2026-06-05.md exists",
         axioms.is_file(),
         str(axioms.relative_to(ROOT)),
     )
@@ -387,37 +405,40 @@ def part7_no_new_axioms() -> None:
         "No new axiom is introduced" in note or "introduces no new axiom" in note
         or "no new repo-wide axiom" in note or "No new admissions" in note,
     )
-    # Verify the (P1) registration is a structural re-statement of an existing
-    # named import, not a new repo-wide premise.
     check(
-        "(P1) declared as existing named-import registration",
-        "no new admission outside the parent row's existing named-import premise"
+        "note disclaims new accepted-premise introduction",
+        "No new accepted premise is introduced" in note_flat,
+    )
+    check(
+        "legacy row consumes parent framework-local theorem",
+        "this row now depends on the parent framework-local theorem"
         in note_flat
-        and "structural re-statement of the named-import" in note_flat,
+        and "rather than on a load-bearing textbook import" in note_flat,
     )
 
 
 def main() -> int:
-    print("CUBIC-LATTICE MARADUDIN ASYMPTOTIC ACCEPTED-PREMISE BRIDGE")
+    print("CUBIC-LATTICE GREEN ASYMPTOTIC FRAMEWORK-NATIVE REROUTE")
     part0_source_firewall()
     part1_symbol_normalization_symbolic()
     part1b_symbol_normalization_numerical()
     part2_unit_flux_symbolic()
     part3_lattice_harmonic_residual()
-    part4_constant_identification_under_p1()
+    part4_framework_constant_identification()
     part5_dependency_status()
     part6_no_forbidden_imports()
     part7_no_new_axioms()
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
         print(
-            "VERDICT: bounded accepted-premise bridge passes; (B1)-(B4) follow "
-            "from the parent normalization certificate + accepted-premise "
-            "packet (P1) by substrate-internal arithmetic and "
-            "finite-precision lattice-harmonic residual evaluation."
+            "VERDICT: framework-native lattice Green asymptotic reroute passes; "
+            "(B1)-(B4) follow from the parent framework-local Green-kernel "
+            "theorem plus lattice-internal arithmetic and finite-precision "
+            "lattice-harmonic residual evaluation. Textbooks are parallel "
+            "references only."
         )
         return 0
-    print("VERDICT: bounded accepted-premise bridge FAILED.")
+    print("VERDICT: framework-native lattice Green asymptotic reroute FAILED.")
     return 1
 
 

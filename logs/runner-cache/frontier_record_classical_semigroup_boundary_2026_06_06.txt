@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_classical_semigroup_boundary_2026_06_06.py
+runner_sha256: b891830b12262a53cc5fc6bb88dd814f9aafcb93da18582cf4be79673371e263
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
+
+========================================================================
+A finite record algebra has only permutation automorphisms
+========================================================================
+[PASS] A1 every function O -> O gives a unital algebra endomorphism by pullback
+       endomorphisms=27 expected=27
+[PASS] A2 automorphisms are exactly bijections/permutations
+       automorphisms=6 expected=6
+[PASS] A3 non-bijective endomorphisms exist but are not reversible
+       noninvertible=21
+[PASS] A4 a coarse-graining/collapse map is a valid endomorphism, not an automorphism
+       phi=(0, 0, 1), rank=2
+
+========================================================================
+No nontrivial connected reversible flow on C^n
+========================================================================
+[PASS] D1 derivation equations on C^3 have full rank
+       unknowns=9, rank=9, nullity=0
+[PASS] D2 every derivation of the finite record algebra is zero
+[PASS] D3 nonidentity permutations are separated from identity
+       minimum Frobenius distance=2.0
+[PASS] D4 a continuous one-parameter automorphism path starting at identity is locally forced to identity
+       there is an open ball around identity containing no other automorphism
+
+========================================================================
+Append/count dynamics is an irreversible post-record action
+========================================================================
+[PASS] R1 suffix append composes finite histories
+[PASS] R2 count projection is equivariant under append
+       (1, 1, 2) + (1, 0, 1) = (2, 1, 3)
+[PASS] R3 count translation by a nonzero suffix is injective on N^O
+[PASS] R4 count translation by a nonzero suffix is not surjective on N^O
+       the zero count has no preimage after appending a nonempty suffix
+[PASS] R5 append/count dynamics is therefore not a reversible automorphism
+
+========================================================================
+Continuous rate dynamics belongs to the ensemble layer
+========================================================================
+[PASS] M1 supplied two-state rate matrix has stochastic semigroup at tested time
+       T=[[Fraction(5, 6), Fraction(1, 3)], [Fraction(1, 6), Fraction(2, 3)]]
+[PASS] M2 the tested semigroup step is not a permutation/write of one realized atom
+       T=[[Fraction(5, 6), Fraction(1, 3)], [Fraction(1, 6), Fraction(2, 3)]]
+[PASS] M3 the inverse linear map is not stochastic
+       T^-1=[[Fraction(4, 3), Fraction(-2, 3)], [Fraction(-1, 3), Fraction(5, 3)]]
+[PASS] M4 a Markov step from a realized atom produces an ensemble distribution
+       T e0=(Fraction(5, 6), Fraction(1, 6))
+
+========================================================================
+Stable dial locations require supplied dynamics
+========================================================================
+[PASS] S1 equal-letter stationary point is realized by supplied symmetric rates
+       pi=(Fraction(1, 2), Fraction(1, 2))
+[PASS] S2 dimension-weighted stationary point is realized by different supplied rates
+       pi=(Fraction(1, 3), Fraction(2, 3))
+[PASS] S3 the same record algebra permits another stable point under another generator
+       pi=(Fraction(2, 3), Fraction(1, 3))
+[PASS] S4 finite record algebra alone cannot distinguish those supplied generators
+       stability is a property of the chosen generator/functional
+
+========================================================================
+Scorecard
+========================================================================
+PASS=21 FAIL=0
+FINDING: finite post-record algebras have only discrete reversible permutations and zero derivations. Nontrivial continuous dynamics, transition rates, and dial attractors live on supplied Markov/ensemble or append/action layers, not in Record alone.
+
+----- stderr -----
+

@@ -51,9 +51,13 @@ correct, but it grounds the 2-channel STRUCTURE, not the equal-block WEIGHT. REA
 """
 
 import sys
+from pathlib import Path
 
 import numpy as np
 import sympy as sp
+
+ROOT = Path(__file__).resolve().parent.parent
+NOTE_PATH = ROOT / "docs" / "KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md"
 
 PASSES: list[tuple[str, bool, str]] = []
 
@@ -72,6 +76,38 @@ def section(t):
 
 def main():
     section("Koide r=1/2 is a CONDITIONAL (equal-block metric + objectivity-max), not forced")
+
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    note_flat = " ".join(note_text.split())
+    section("F0 - Record-era source boundary")
+    record("F0.1 note records the 2026-06-07 Record-era source boundary",
+           "2026-06-07 Record-Era Source Boundary" in note_text)
+    record("F0.1b note is an open-gate conditional-support source row, not a bounded theorem",
+           "**Claim type:** open_gate / conditional-support certificate" in note_text
+           and "**Claim type:** bounded_theorem" not in note_text
+           and "2026-06-12 audit firewall: conditional certificate only" in note_text)
+    record("F0.2 note keeps equal-block metric and objectivity selector as two named inputs",
+           "the row still has exactly two named inputs" in note_flat
+           and "equal-block `(1,1)` metric" in note_flat
+           and "records/objectivity maximization selector" in note_flat)
+    record("F0.3 Record axiom is not cited as selecting the sector measure",
+           "does not select the singlet/doublet sector measure" in note_flat
+           and "cannot be cited as a Record-axiom derivation" in note_flat)
+    record("F0.4 source-bounded conditional certificate is the stated audit target",
+           "source-bounded conditional algebra certificate" in note_flat
+           and "if both inputs are supplied, `r=1/2` and `Q=2/3` follow" in note_flat)
+    record("F0.5 firewall names the Record axiom's non-supply boundary",
+           "durable realized-outcome registration and finite additivity" in note_flat
+           and "does not supply weighting, normalization, probability" in note_flat
+           and "no new axiom, no Tier-A admission, and no audit-status change" in note_flat)
+    record("F0.6 note records 2026-06-16 post-audit source boundary",
+           "2026-06-16 Post-Audit Source Boundary" in note_text
+           and "conditional algebra certificate only" in note_flat)
+    record("F0.7 post-audit boundary keeps both selector inputs supplied",
+           "supplied equal-block" in note_flat
+           and "supplied records/objectivity maximization selector" in note_flat
+           and "does not derive equal-block weighting from Record" in note_flat
+           and "does not derive the objectivity selector from dephasing" in note_flat)
 
     r, ws, wp, a2, lam, T = sp.symbols("r w_s w_p a2 lam T", positive=True)
     # at FIXED TOTAL energy (T=1), with E_perp/E_+ = 6|b|^2/3a^2 = 2r:

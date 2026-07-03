@@ -16,11 +16,15 @@ no-restore lane the user asked for.
 
 from __future__ import annotations
 
+import argparse
 import cmath
+import json
 import math
 import random
+import re
 import time
 from dataclasses import dataclass
+from pathlib import Path
 
 
 BETA = 0.8
@@ -38,6 +42,21 @@ ROWS = [
     ("no restore drift=0.2", 0.2, 0.0),
     ("no restore drift=0.5", 0.5, 0.0),
 ]
+AUDIT_TIMEOUT_SEC = 180
+REPO_ROOT = Path(__file__).resolve().parents[1]
+FROZEN_LOG = REPO_ROOT / "logs" / "2026-04-05-gate-b-no-restore-joint-package.txt"
+RECOMPUTE_CERT = REPO_ROOT / "outputs" / "gate_b_no_restore_recompute_certificate_2026_06_07.json"
+BORN_TOL = 5.0e-18
+METRIC_TOL = 5.0e-4
+DECOH_TOL = 5.0e-2
+ROW_RE = re.compile(
+    r"^(?P<label>exact grid|no restore drift=[0-9.]+)\s+"
+    r"(?P<born>[0-9.]+e[+-][0-9]+)\s+"
+    r"(?P<dtv>[0-9.]+)\s+"
+    r"(?P<mi>[0-9.]+)\s+"
+    r"(?P<decoh>[0-9.]+)%$",
+    re.MULTILINE,
+)
 
 
 @dataclass
@@ -47,6 +66,15 @@ class JointRow:
     d_tv: float
     mi: float
     decoh: float
+
+    def as_dict(self) -> dict[str, float | str]:
+        return {
+            "label": self.label,
+            "born": self.born,
+            "d_tv": self.d_tv,
+            "mi": self.mi,
+            "decoh": self.decoh,
+        }
 
 
 def grow(drift: float, restore: float, seed: int):
@@ -274,7 +302,133 @@ def measure_row(label: str, drift: float, restore: float) -> JointRow:
     )
 
 
-def main():
+def _computed_rows() -> list[JointRow]:
+    return [measure_row(label, drift, restore) for label, drift, restore in ROWS]
+
+
+def _row_passes_ranges(row: JointRow) -> bool:
+    return (
+        0.0 <= row.born < 3e-15
+        and 0.0 <= row.d_tv <= 1.0
+        and 0.0 <= row.mi <= 1.0
+        and 0.0 <= row.decoh <= 100.0
+    )
+
+
+def _row_spec_payload() -> list[dict[str, float | str]]:
+    return [
+        {"label": label, "drift": drift, "restore": restore}
+        for label, drift, restore in ROWS
+    ]
+
+
+def _certificate_metadata() -> dict[str, object]:
+    return {
+        "certificate": "gate_b_no_restore_recompute_certificate_2026_06_07",
+        "generated_by": "scripts/gate_b_no_restore_joint_package.py --recompute --write-certificate",
+        "claim_id": "gate_b_no_restore_joint_package_note",
+        "h": H,
+        "k": K,
+        "beta": BETA,
+        "nl": NL,
+        "pw": PW,
+        "max_d_phys": MAX_D_PHYS,
+        "lambda": LAM,
+        "n_ybins": N_YBINS,
+        "seeds": SEEDS,
+        "rows_spec": _row_spec_payload(),
+        "frozen_log_tolerances": {
+            "born": BORN_TOL,
+            "d_tv": METRIC_TOL,
+            "mi": METRIC_TOL,
+            "decoh": DECOH_TOL,
+        },
+    }
+
+
+def _certificate_payload(rows: list[JointRow]) -> dict[str, object]:
+    return {**_certificate_metadata(), "rows": [row.as_dict() for row in rows]}
+
+
+def _write_recompute_certificate(rows: list[JointRow]) -> Path:
+    payload = _certificate_payload(rows)
+    RECOMPUTE_CERT.parent.mkdir(parents=True, exist_ok=True)
+    RECOMPUTE_CERT.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    return RECOMPUTE_CERT
+
+
+def _load_recompute_certificate(failures: list[str]) -> dict[str, JointRow]:
+    if not RECOMPUTE_CERT.exists():
+        failures.append(f"missing recompute certificate: {RECOMPUTE_CERT.relative_to(REPO_ROOT)}")
+        return {}
+    try:
+        payload = json.loads(RECOMPUTE_CERT.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        failures.append(f"bad recompute certificate json: {exc}")
+        return {}
+    for key, expected in _certificate_metadata().items():
+        actual = payload.get(key)
+        if actual != expected:
+            failures.append(f"recompute certificate metadata mismatch for {key}: {actual!r}")
+    rows_raw = payload.get("rows")
+    if not isinstance(rows_raw, list):
+        failures.append("recompute certificate has no rows list")
+        return {}
+    if not rows_raw:
+        failures.append("recompute certificate rows list is empty")
+        return {}
+    rows: dict[str, JointRow] = {}
+    for raw in rows_raw:
+        try:
+            row = JointRow(
+                label=str(raw["label"]),
+                born=float(raw["born"]),
+                d_tv=float(raw["d_tv"]),
+                mi=float(raw["mi"]),
+                decoh=float(raw["decoh"]),
+            )
+        except (KeyError, TypeError, ValueError) as exc:
+            failures.append(f"bad recompute row: {exc}")
+            continue
+        rows[row.label] = row
+    return rows
+
+
+def _compare_frozen_to_recompute(
+    frozen_rows: dict[str, JointRow],
+    recompute_rows: dict[str, JointRow],
+    expected_labels: list[str],
+    failures: list[str],
+) -> None:
+    if list(recompute_rows.keys()) != expected_labels:
+        failures.append(f"recompute row labels mismatch: {list(recompute_rows.keys())}")
+        return
+    exact = recompute_rows.get("exact grid")
+    no_restore_zero = recompute_rows.get("no restore drift=0.0")
+    if exact and no_restore_zero:
+        for attr in ("born", "d_tv", "mi", "decoh"):
+            if not math.isclose(getattr(exact, attr), getattr(no_restore_zero, attr), rel_tol=0.0, abs_tol=1e-12):
+                failures.append(f"recompute exact grid and drift=0.0 differ on {attr}")
+    for label in expected_labels:
+        frozen = frozen_rows.get(label)
+        recompute = recompute_rows.get(label)
+        if frozen is None or recompute is None:
+            continue
+        if not _row_passes_ranges(recompute):
+            failures.append(f"{label} recompute row outside bounded ranges")
+        comparisons = (
+            ("born", BORN_TOL),
+            ("d_tv", METRIC_TOL),
+            ("mi", METRIC_TOL),
+            ("decoh", DECOH_TOL),
+        )
+        for attr, tol in comparisons:
+            delta = abs(getattr(frozen, attr) - getattr(recompute, attr))
+            if delta > tol:
+                failures.append(f"{label} frozen {attr} differs from recompute by {delta:.3e}")
+
+
+def run_full_replay(write_certificate: bool = False):
     t0 = time.time()
     print("=" * 76)
     print("GATE B NO-RESTORE JOINT PACKAGE HARNESS")
@@ -285,8 +439,8 @@ def main():
     print()
     print(f"{'geometry':<20} {'Born':>10} {'d_TV':>8} {'MI':>8} {'Decoh':>8}")
 
-    for label, drift, restore in ROWS:
-        row = measure_row(label, drift, restore)
+    rows = _computed_rows()
+    for row in rows:
         print(
             f"{row.label:<20} {row.born:>10.2e} {row.d_tv:>8.3f} "
             f"{row.mi:>8.3f} {row.decoh:>7.1f}%"
@@ -298,8 +452,115 @@ def main():
     print("  The exact grid is the reference row; the no-restore rows show how")
     print("  much of the joint package survives without the restoring pull.")
     print("  Treat this as bounded evidence, not a full generated-geometry closure.")
+    if write_certificate:
+        path = _write_recompute_certificate(rows)
+        print(f"RECOMPUTE_CERTIFICATE={path.relative_to(REPO_ROOT)}")
     print(f"\nTotal time: {time.time() - t0:.0f}s")
 
 
+def verify_frozen_log() -> int:
+    text = FROZEN_LOG.read_text(encoding="utf-8")
+    rows = {
+        m.group("label"): JointRow(
+            label=m.group("label"),
+            born=float(m.group("born")),
+            d_tv=float(m.group("dtv")),
+            mi=float(m.group("mi")),
+            decoh=float(m.group("decoh")),
+        )
+        for m in ROW_RE.finditer(text)
+    }
+
+    failures: list[str] = []
+    expected_labels = [label for label, _drift, _restore in ROWS]
+    if "GATE B NO-RESTORE JOINT PACKAGE HARNESS" not in text:
+        failures.append("missing frozen-log title")
+    if list(rows.keys()) != expected_labels:
+        failures.append(f"row labels mismatch: {list(rows.keys())}")
+    if "Treat this as bounded evidence" not in text:
+        failures.append("bounded-evidence safe interpretation missing")
+    if not re.search(r"Total time:\s*\d+s", text):
+        failures.append("expected frozen live replay time marker is missing")
+
+    exact = rows.get("exact grid")
+    no_restore_zero = rows.get("no restore drift=0.0")
+    if exact and no_restore_zero:
+        for attr in ("born", "d_tv", "mi", "decoh"):
+            if not math.isclose(getattr(exact, attr), getattr(no_restore_zero, attr), rel_tol=0.0, abs_tol=1e-12):
+                failures.append(f"exact grid and drift=0.0 differ on {attr}")
+
+    for label in expected_labels:
+        row = rows.get(label)
+        if row is None:
+            continue
+        if not _row_passes_ranges(row):
+            failures.append(f"{label} frozen row outside bounded replay ranges")
+        if not (0.0 <= row.born < 3e-15):
+            failures.append(f"{label} Born value outside bounded replay range: {row.born:.3e}")
+        if not (0.0 <= row.d_tv <= 1.0):
+            failures.append(f"{label} d_TV outside probability range: {row.d_tv:.3f}")
+        if not (0.0 <= row.mi <= 1.0):
+            failures.append(f"{label} MI outside bounded replay range: {row.mi:.3f}")
+        if not (0.0 <= row.decoh <= 100.0):
+            failures.append(f"{label} decoherence outside percent range: {row.decoh:.1f}")
+
+    recompute_rows = _load_recompute_certificate(failures)
+    if recompute_rows:
+        _compare_frozen_to_recompute(rows, recompute_rows, expected_labels, failures)
+
+    print("=" * 76)
+    print("GATE B NO-RESTORE JOINT PACKAGE FROZEN LOG VERIFIER")
+    print(f"log: {FROZEN_LOG.relative_to(REPO_ROOT)}")
+    print(f"recompute certificate: {RECOMPUTE_CERT.relative_to(REPO_ROOT)}")
+    print("=" * 76)
+    for label in expected_labels:
+        row = rows.get(label)
+        if row is None:
+            continue
+        print(
+            f"{row.label:<20} Born={row.born:.2e} d_TV={row.d_tv:.3f} "
+            f"MI={row.mi:.3f} Decoh={row.decoh:.1f}% PASS"
+        )
+    print()
+    if failures:
+        for failure in failures:
+            print(f"FAIL: {failure}")
+        print(f"SCORECARD PASS=0 FAIL={len(failures)}")
+        return 1
+    print()
+    print("RECOMPUTED ROWS")
+    for label in expected_labels:
+        row = recompute_rows[label]
+        print(
+            f"{row.label:<20} Born={row.born:.4e} d_TV={row.d_tv:.6f} "
+            f"MI={row.mi:.6f} Decoh={row.decoh:.6f}% PASS"
+        )
+    print()
+    print("SAFE READ: bounded no-restore joint-package replay; drift rows remain sensitive.")
+    print(f"SCORECARD PASS={len(rows) + len(recompute_rows)} FAIL=0")
+    return 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--recompute",
+        action="store_true",
+        help="Run the original live replay instead of verifying the frozen log.",
+    )
+    parser.add_argument(
+        "--write-certificate",
+        action="store_true",
+        help="With --recompute, write the completed recompute certificate used by the default verifier.",
+    )
+    args = parser.parse_args()
+    if args.recompute:
+        run_full_replay(write_certificate=args.write_certificate)
+        return 0
+    if args.write_certificate:
+        parser.error("--write-certificate requires --recompute")
+    return verify_frozen_log()
+
+
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

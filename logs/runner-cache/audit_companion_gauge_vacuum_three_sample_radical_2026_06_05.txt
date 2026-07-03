@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_gauge_vacuum_three_sample_radical_2026_06_05.py
+runner_sha256: f8608c04198daa68e4f6f83029ae1ba277094953a5f981d249dfdd39d03e4e1e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.31
+status: ok
+----- stdout -----
+==============================================================================
+GAUGE-VACUUM THREE-SAMPLE RADICAL RECONSTRUCTION -- ABSTRACT MAP REPROOF
+==============================================================================
+
+Part A: abstract reconstruction map (free symbols a,b,c,d,e)
+  [PASS] A1: det(F) equals the named radical determinant Delta = a*c - a*e + b*e - c*d (symbolic)
+         det(F) = a*c - a*e + b*e - c*d
+  [PASS] A2: displayed reconstruction matrix equals adj(F) entry-for-entry (symbolic)
+         M_displayed == adj(F); so alpha = (1/Delta) M_displayed Z = F^{-1} Z
+  [PASS] A3: Delta * F^{-1} equals the displayed map (symbolic), i.e. F^{-1} = adj(F)/Delta
+  [PASS] A4: adjugate identity F*adj(F) = det(F)*I holds for the structured F (reproven, not imported)
+  [PASS] A5: F * (displayed reconstruction of a generic abstract Z) returns Z exactly
+         exact round trip F alpha = Z for symbolic Z; the map is the unique inverse
+  [PASS] A6: uniqueness -- nullspace(F) is trivial as a rational function of a,b,c,d,e (det != 0 generically)
+         generic invertibility => the reconstruction is the unique solution
+
+Part B: the named pi/16 radical specialization is faithful
+  [PASS] B[a]: radical entry 'a' equals 6*(cosθ1+cosθ2+cos(θ1+θ2)) at W_A (zero residue)
+         residue = 0
+  [PASS] B[b]: radical entry 'b' equals 6*(cosθ1+cosθ2+cos(θ1+θ2)) at W_B (zero residue)
+         residue = 0E-165
+  [PASS] B[d]: radical entry 'd' equals 6*(cosθ1+cosθ2+cos(θ1+θ2)) at W_C (zero residue)
+         residue = 0E-165
+  [PASS] B[chi11,W_A]: chi_(1,1) column value equals '0' (zero residue)
+         residue = 0
+  [PASS] B[chi11,W_B]: chi_(1,1) column value equals 'c' (zero residue)
+         residue = 0E-164
+  [PASS] B[chi11,W_C]: chi_(1,1) column value equals 'e' (zero residue)
+         residue = 0E-164
+  [PASS] B7: det(F_radical) = Delta_radical and is nonzero
+         det(F_radical) ~ -10.810321693970610530
+  [PASS] B8: radical reconstruction map recovers a generic coefficient triple exactly (alpha_rec = alpha_in)
+         exact inversion on the named pi/16 specialization
+
+Part C: structural facts (W_A annihilation, sign separation, block rank)
+  [PASS] C1: F_(A,2) = chi_(1,1)(W_A) = 0 exactly (antipodal eigenvalue collapse)
+         exp(-13*pi*i/16) = -exp(3*pi*i/16); fundamental char collapses, chi_(1,1)=chi_(1,0)*chi_(0,1)-1=0
+  [PASS] C2: sign separation c = 16+8Σ-8x-8y > 0 and e = 16-8Σ-8x+8y < 0 (exact surds)
+         c ~ 1.78599423688817712 > 0,  e ~ -1.17112320979155149 < 0
+  [PASS] C3: lower 2x2 block (rows B,C; cols chi_1,chi_11) is nonsingular
+         det(block) ~ -4.02048256755807723
+
+Part D: scope guard -- the beta=6 PF-seam application is conditional on four bridges
+  [PASS] D1: the narrowed note names all four bridge authorities as the conditional premise set
+         Wilson one-slab kernel / Haar rim-lift / compression / rim-evaluation
+  [PASS] D2: the note marks the beta=6 PF-seam application as NOT load-bearing and conditional
+         the rim-lift bridge is itself audited_conditional; the seam claim is conditional
+  [PASS] D3: the abstract reconstruction consumes NO beta=6 / Wilson coefficient / Haar / Monte-Carlo numeric input
+         abstract sample symbols + pure surds only; the integers are character-identity multipliers
+  [PASS] D4: the load-bearing map is proven over free symbols, hence independent of the four bridges
+         Part A used abstract a,b,c,d,e and abstract Z; no bridge premise entered the proof
+
+==============================================================================
+TOTAL: 21 PASS / 0 FAIL
+==============================================================================
+
+----- stderr -----
+

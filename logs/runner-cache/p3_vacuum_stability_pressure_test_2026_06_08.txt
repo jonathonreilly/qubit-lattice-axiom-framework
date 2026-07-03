@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/p3_vacuum_stability_pressure_test_2026_06_08.py
+runner_sha256: 6fdf020d96b361b0935d6f66e16f9904bf002a362843f4e7ff0bb19cb2ab57c2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.95
+status: ok
+----- stdout -----
+P3 PRESSURE-TEST: is 'Higgs vacuum absolutely stable' robust, or a knife-edge in y_t?
+==========================================================================================
+[PASS] V1 (RG grounding, 1-loop qualitative): lambda(v)~0.13 from m_H=125; the -6 y_t^4 term drives lambda negative at high scale for SM-like y_t (metastable), and the crossing is strongly y_t-sensitive -> a 1-loop stability boundary in the ~0.92-0.95 band (precise 2-loop boundary y_t_crit~0.93 is the literature comparator)
+       lambda(v)=0.1294; SM y_t=0.937 -> lambda crosses 0 at ~1.3e+08 GeV (metastable); 1-loop boundary ~ y_t=0.91
+[PASS] V2 (the straddle -- core finding): the framework's y_t=0.918 +-3pct band [0.890, 0.946] STRADDLES the stability boundary y_t_crit~0.93 -> the stable/metastable verdict FLIPS within the framework's OWN systematic; 'absolutely stable' is the central call only, NOT robust.
+       boundary is 0.44sigma_sys above center; Gaussian-tail diagnostic ~33pct metastable under the source sigma convention; hard-interval fraction ~28pct above y_t>0.93
+[PASS] V3 (open-gate dependency): y_t(v)=0.918 derives from the Ward-identity relation y_t(M_Pl)/g_s(M_Pl)=1/sqrt(6) (the P3 note's own 'open-gate/bounded' input, NOT retained) + SM running + the 3% systematic. So the stability SIGN rides on an un-closed relation, not a retained theorem.
+       1/sqrt(6)=0.40825; e.g. g_s(M_Pl)~0.5 -> y_t(M_Pl)~0.2041; status=open-gate (not retained)
+[PASS] V4 (verdict): P3 is a genuine BEYOND-SM signature (predicts y_t LOWER than the SM extraction 0.94 -> if tight, stable) but NOT a robust prediction -- the headline binary is unresolved within the framework's own y_t systematic (V2), and conditional on the open-gate Ward identity (V3). Honest framing: 'central-value stable; not robust within the y_t band; a ~0.75sigma beyond-SM signature pending a tighter y_t.'
+       like the rest of the floor, the stability VERDICT is gated on an admitted coupling (y_t) whose band is wider than the margin to the boundary
+
+TOTAL: PASS=4 FAIL=0
+VERDICT: P3 'absolutely stable' is NOT a robust prediction. It hinges on y_t(v)=0.918 < boundary
+~0.93, but the framework's OWN +-3pct systematic band [0.890, 0.946] straddles the
+boundary (0.44 sigma_sys above center; Gaussian-tail diagnostic ~33pct metastable; hard-interval fraction ~28pct),
+and y_t=0.918 itself rests on the open-gate Ward identity y_t(M_Pl)/g_s=1/sqrt6 (not
+retained). It IS a genuine beyond-SM signature (framework y_t < SM y_t), but the headline stable/
+metastable binary is unresolved within the framework's systematic -- a knife-edge, not a closure.
+Honest reframing: state P3 as a conditional beyond-SM signature pending a tighter (audited) y_t,
+not as 'absolutely stable'.
+----- stderr -----

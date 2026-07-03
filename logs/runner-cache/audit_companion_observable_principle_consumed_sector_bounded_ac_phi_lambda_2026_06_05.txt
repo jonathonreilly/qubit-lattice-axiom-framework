@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_observable_principle_consumed_sector_bounded_ac_phi_lambda_2026_06_05.py
+runner_sha256: 5886031367467c687716001f8541e2193ec7f8eb80c8759e71c9a02823bf7f9f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+
+=== (1) consumed sector amplitude is real-positive (no phase) ===
+[PASS] n=2 real-antisym: det(A+jI) = j^2 + a^2 (>0)  [det = a**2 + j**2]
+[PASS] n=4 real-antisym: det(A+jI) = (j^2+a^2)(j^2+b^2) (>0)  [det = (a**2 + j**2)*(b**2 + j**2)]
+[PASS] 300 real-antisym seeds (n=5,6,8): det(D+jI) is real to 1e-7
+[PASS] 300 real-antisym seeds: det(D+jI) > 0 for j>0 (incl. odd dim)
+[PASS] real-antisym spectrum is purely imaginary (Re=0)  [max|Re eig|=3.4e-16]
+
+=== (2) P2 is eliminated on the consumed sector (arg Z = 0) ===
+[PASS] consumed amplitudes Z are real-positive  [Z=[26.2114, 70.4463, 371.0404, 1180.9344]]
+[PASS] phase-blind AND phase-sensitive candidates AGREE on R_{>0} (P2 imposes nothing)  [max|G - log Z| over b in [0..100] = 0.0e+00]
+[PASS] log|Z| = Re Log Z = log Z on R_{>0} (the phase-blindness choice is moot)
+[PASS] OFF-sector (complex Z): phase-sensitive candidate DIFFERS (so P2 is non-trivial only there)  [|G-log|Z|| = 4.5000 at arg=0.90]
+
+=== (3) Record additivity + continuity => W = c log Z on R_{>0} (no P2) ===
+[PASS] c*log(x) solves f(xy)=f(x)+f(y) identically
+[PASS] additive constant is forbidden: f(1)=0 forced (no free constant)  [f(1*1)=f(1)+f(1) => f(1)=0; Cauchy/Aczel uniqueness gives c*log only]
+[PASS] the selected generator on the consumed sector is W = log Z (c=1 convention)
+
+=== (4) parent Theorem-3 Matsubara form has real-positive argument (no phase) ===
+[PASS] every Matsubara log-argument 1 + j^2/[u0^2(3+sin^2 w)] is > 0 (for all real j)  [min arg = 2.6900]
+[PASS] W(j) = 4*sum log(positive) is real (= log|det|, no phase contribution)  [W(1.3) = 29.8425]
+[PASS] Matsubara argument is even in j (j^2 only) => W(j)=W(-j) (CPT-even, automatic)
+
+=== (5) residual assembly: parent load-bearing content bounded by AC_phi_lambda ===
+    P1 (additivity)        <- Record axiom (minimal_axioms)
+    P2 (phase-blindness)   <- ELIMINATED on consumed sector by positivity (this runner, (1)-(4))
+    (M) amplitude=det(D+J) <- Berezin forcing bridge (retained_bounded)
+    physical identification<- AC_phi_lambda staggered-Dirac realization gate (REGISTERED Tier-A)
+[PASS] no separate unregistered P2 residual remains on the consumed sector  [phase-blind/phase-sensitive candidates coincide on R_{>0} => P2 imposes nothing]
+[PASS] the sole remaining residual is the registered AC_phi_lambda determinant identification  [=> re-audit target: Tier-A-bounded class, status set only by audit lane]
+
+=== scope / honesty flags ===
+[PASS] OFF the consumed sector P2 is genuinely non-trivial (handled by prior sector-resolution)  [this note bounds the LOAD-BEARING (consumed, mass-like) content only]
+[PASS] does NOT set audit status; does NOT close AC_phi_lambda; no PDG/fitted/beta=6 inputs
+
+========================================================================
+TOTAL: 19 PASS / 0 FAIL
+========================================================================
+
+LOAD-BEARING RESULT (bounded):
+  On the sector the observable-principle parent actually consumes (J=jI, where
+  Z=det(D+jI) in R_{>0} by determinant positivity), P2 is ELIMINATED: phase-blind
+  and phase-sensitive candidate generators agree (arg Z = 0), so the generator
+  W = log|det(D+jI)| is fixed by Record additivity + finite-block continuity alone
+  (Cauchy on R_{>0}). The parent's load-bearing residual is therefore the
+  (M)/Berezin determinant identification gated by the REGISTERED AC_phi_lambda
+  Tier-A target -- not a separate unregistered P2 premise.
+RE-AUDIT CASE (status set by audit lane, not here): the parent
+  `observable_principle_from_axiom_note` is a candidate for the registered
+  Tier-A-bounded class because the unregistered P2 blocker is eliminated on
+  the consumed sector. Final status remains audit-lane authority.
+
+
+----- stderr -----
+

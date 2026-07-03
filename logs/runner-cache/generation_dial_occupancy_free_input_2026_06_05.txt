@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/generation_dial_occupancy_free_input_2026_06_05.py
+runner_sha256: 304817b1a14535148e050ab00e0454651152cc83f508f203c2caa304147c582f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.45
+status: ok
+----- stdout -----
+
+=== C3-equivariant mass operator structure (Lattice/Quantum content) ===
+[PASS] [A] Y commutes with C for arbitrary (a, b)  => C3-equivariant ([Y,C]=0)
+[PASS] [A] general commutant of C is circulant c0 I + c1 C + c2 C^2 ([g,C]=0)
+[PASS] [A] Hermitian C3-operator is exactly a real, b free (Y = Y^dagger) (Y=Y^dag with a real, coeff(C^2)=conj(coeff(C)))
+[PASS] [A] trivial-isotype eigenvalue is a + 2 Re(b) (a + 2*b_re)
+[PASS] [A] standard-isotype eigenvalue pair sums to 2a - 2 Re(b) (2*a - 2*b_re)
+[PASS] [A] primitive cube-root identity 1 + w + w^2 = 0 holds (drives the sum) (w + w^2 = -1)
+
+=== Onto-ness of (a, |b|) -> r = |b|^2 / a^2 on [0, oo) ===
+[PASS] [A] preimage realizes r0 = 0: choose |b| = a*sqrt(0) (r(|b|=a*sqrt(0)) = 0)
+[PASS] [A] preimage realizes r0 = 1/2: choose |b| = a*sqrt(1/2) (r(|b|=a*sqrt(1/2)) = 1/2)
+[PASS] [A] preimage realizes r0 = 1: choose |b| = a*sqrt(1) (r(|b|=a*sqrt(1)) = 1)
+[PASS] [A] preimage realizes r0 = 2: choose |b| = a*sqrt(2) (r(|b|=a*sqrt(2)) = 2)
+[PASS] [A] preimage realizes r0 = 4: choose |b| = a*sqrt(4) (r(|b|=a*sqrt(4)) = 4)
+[PASS] [A] preimage realizes r0 = 7/13: choose |b| = a*sqrt(7/13) (r(|b|=a*sqrt(7/13)) = 7/13)
+[PASS] [A] preimage realizes r0 = 1000: choose |b| = a*sqrt(1000) (r(|b|=a*sqrt(1000)) = 1000)
+[PASS] [A] preimage realizes r0 = r0: choose |b| = a*sqrt(r0) (r(|b|=a*sqrt(r0)) = r0)
+[PASS] [A] r is non-negative for all (a>0, b): image is contained in [0, oo) (r = (b_re^2 + b_im^2)/a^2 >= 0)
+[PASS] [A] r = 0 is attained exactly at b = 0 (boundary of image is reached) (r(b=0)=0)
+[PASS] [A] map (a,|b|) -> r is ONTO [0, oo): endpoint 0 + every positive value hit (0 via b=0; each r0>0 via |b|=a*sqrt(r0))
+
+=== Lattice/Quantum/Record place NO constraint on |b|/a ===
+[PASS] [A] Lattice/C3 predicate is satisfied for all (a,b); no r-constraint
+[PASS] [A] Quantum/qubit predicate fixes form (Hermitian), not |b|/a
+[PASS] [A] Record readout is finitely additive over sectors (combination only) (f(s+d) = f(s) + f(d))
+[PASS] [A] Record supplies NO per-sector weight: block ratio is a free symbol (phi_doublet/phi_scalar unfixed by additivity)
+[PASS] [B] premise-satisfying member at r=0 exists (C3+Hermitian) (r = 0)
+[PASS] [B] premise-satisfying member at r=1/2 exists (C3+Hermitian) (r = 1/2)
+[PASS] [B] premise-satisfying member at r=1 exists (C3+Hermitian) (r = 1)
+[PASS] [B] premise-satisfying member at r=2 exists (C3+Hermitian) (r = 2)
+
+=== Derived dial axis Q = 1/3 + (2/3) r (structure fixed) ===
+[PASS] [A] block-count setting r = 1/2 -> Q = 2/3 (sibling distinguished point) (Q(1/2)=2/3)
+[PASS] [A] Born/per-DOF setting r = 1 -> Q = 1 (sibling distinguished point) (Q(1)=1)
+[PASS] [A] axis is affine and strictly monotone in r (distinct r -> distinct Q) (dQ/dr = 2/3 > 0)
+[PASS] [A] STRUCTURE derived, OCCUPANCY free: r is the lone per-sector real input (one real parameter r(s) per sector on the derived axis)
+[PASS] [B] sector-ladder r(s)=2^(s-1) is a relabel of free occupancy (s=1 -> r=1) (ladder is an indexing convention, not a derivation)
+
+=== note boundary / honesty guard ===
+[PASS] [A] note contains: Generation Koide data reduces to a single derived modulus per sector
+[PASS] [A] note contains: Claim type:** theorem
+[PASS] [A] note contains: r = |b|^2/a^2
+[PASS] [A] note contains: onto
+[PASS] [A] note contains: exactly one real modulus
+[PASS] [A] note contains: Record explicitly supplies no
+[PASS] [A] note contains: one real modulus per sector
+[PASS] [A] note omits banned phrase: T1
+[PASS] [A] note omits banned phrase: T2
+[PASS] [A] note omits banned phrase: wall-blocked
+[PASS] [A] note omits banned phrase: closes the route
+[PASS] [A] note omits banned phrase: last route
+[PASS] [A] note omits banned phrase: exhausted
+[PASS] [A] note does not self-claim retained tier: Status:** retained
+[PASS] [A] note does not self-claim retained tier: Claim type:** retained
+[PASS] [A] note does not self-claim retained tier: this result is retained
+[PASS] [A] note does not self-claim retained tier: promote to retained
+[PASS] [A] all 'retained' mentions are sibling no-go provenance (not self-tier) (non-provenance 'retained' count = 0)
+
+GENERATION_KOIDE_SINGLE_MODULUS_REDUCTION boundary certificate: PASS
+PASS=48 FAIL=0
+
+----- stderr -----
+

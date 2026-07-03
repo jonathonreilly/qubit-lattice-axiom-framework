@@ -1,609 +1,710 @@
-# Axiom-First Single-Clock Codimension-1 Unitary Evolution on Cl(3) ⊗ Z^3
+# Axiom-First Single-Clock Codimension-1 Unitary Evolution on the One-Qubit Cl(3) Pauli Factor over Z^3
 
-**Date:** 2026-05-03
-**Type:** positive_theorem (lattice form); bounded_theorem (continuum-limit
-identification with Wightman one-parameter group)
-**Claim scope:** From A_min plus the reflection-positivity
-support theorem, the spectrum-condition support theorem, the
-retained cluster-decomposition support theorem, the retained
-Cl(3)-per-site-uniqueness support theorem, and the retained
-microcausality / Lieb-Robinson support theorem, the framework's lattice
-dynamics is a **single-clock codimension-1 unitary evolution**:
-(S1) the reconstructed Hamiltonian H is the unique generator of a
-strongly-continuous one-parameter unitary group `U(t) = exp(-itH)` on
-the physical Hilbert space `H_phys`; (S2) at each lattice time slice
-`Σ_t = {t} × Z^3` the equal-time local algebra is the full
-mutually-commuting tensor product `⊗_x Cl(3)_x` and constitutes a
-codimension-1 Cauchy datum; (S3) the staggered-Dirac action's
-reflection axis is uniquely the temporal direction, so no alternative
-"second clock" reflection-positive evolution exists on the framework's
-canonical surface.
-**Status:** awaiting independent audit. Source-note status is not an
-audit verdict. Under the scope-aware classification framework
-(audit-lane proposal #291), `effective_status` is computed by the audit
-pipeline from `audit_status` + `claim_type` + dependency chain.
-**Loop:** `3plus1d-native-closure-2026-05-02`
-**Cycle:** 12 (Block 12; discharges Step 4 hypothesis used by
-`ANOMALY_FORCES_TIME_THEOREM.md`)
-**Branch:** `claude/single-clock-codimension1-evolution-theorem-2026-05-03`
-**Runner:** `scripts/axiom_first_single_clock_codimension1_evolution_check.py`
+**Date:** 2026-05-03 (hostile science-fix re-scope 2026-06-11;
+finite-range premise narrowing 2026-06-11 #2; Cl(3) complexification
+wording hygiene + B-RANGE supplier wiring 2026-06-11 #3;
+free-quasilocal propagation repair 2026-06-12; B-AXIS.1 blocked-time
+unit split 2026-06-17; see §0)
+**Type:** bounded_theorem
+**Claim scope:** **Axis-conditional single-clock codimension-1 unitary
+evolution.** Given the declared evolution-axis premise (B-AXIS) below
+and the supplied transfer data of the retained_bounded
+reflection-positivity and spectrum-condition rows — the positive
+Hermitian two-step blocked transfer `T̂²` with blocked time-step
+`2 a_τ` on the staggered fixed-background surface — the framework's
+lattice dynamics is a single-clock codimension-1 unitary evolution:
+(S1′) the generator `H := -(1/(2a_τ)) log(T̂²/M_T)` is the **unique**
+self-adjoint generator (retained finite-dim Stone uniqueness,
+transfer-relative and τ-relative) of the unique strongly continuous
+one-parameter unitary group `U(t) = exp(-itH)` on the finite block
+Hilbert space; (S2′) each lattice time slice `Σ_t = {t} × Z^3` is a
+codimension-1 Cauchy surface: the equal-time local algebra is the
+mutually commuting tensor product of per-site one-qubit `M_2(C)` Pauli
+factors selected from the retained complexification split
+`Cl(3,0) ⊗ C ≅ M_2(C) ⊕ M_2(C)`, with the physical carrier one
+summand, and slice data propagates with the
+finite quasilocal Lieb-Robinson envelope of the retained_bounded
+free-bilinear exact-log bridge on the free `U = 1` bilinear sector; no
+finite-range or interacting/fixed-background exact-log locality is
+claimed outside that sector; (S3′) **the axis
+is a premise, not a derivation**: the
+staggered-Dirac hop operator is *exactly* invariant under the
+time-space exchange unitary `W = P_{τ↔1} ∘ diag((-1)^{x_τ x_1})`
+(computed certificate, residual `0`), so RP-admissibility cannot
+single out the temporal direction, and the prior revision's S3 claim
+("the temporal direction is the unique RP-admissible reflection axis;
+hence no second clock") is **withdrawn** as false-as-written. The
+"exactly one clock" conclusion holds conditional on (B-AXIS) — one
+declared axis/transfer construction (N4), one supplied `τ` (N2), and
+no independent commuting clock factor (N5), per the retained
+single-clock uniqueness scope boundary. The continuum-limit
+identification with a Wightman one-parameter group remains bounded by
+the emergent-Lorentz program's `retained_bounded` free-sector scope.
+**Status authority:** independent audit lane only. This source note
+does not set or predict an audit outcome; audit verdict and effective
+status are set only by the independent audit lane.
+**Loop:** `3plus1d-native-closure-2026-05-02` (original);
+science-fix lane 2026-06-11 (re-scope)
+**Runner:** [`scripts/axiom_first_single_clock_codimension1_evolution_check.py`](../scripts/axiom_first_single_clock_codimension1_evolution_check.py)
+(`TOTAL: PASS=47 FAIL=0`, deterministic, runtime well under one minute)
+**Authority role:** source-note proposal. If retained, this row
+supplies the *axis-conditional* single-clock codimension-1 clauses
+(S1′)+(S2′) cited by `ANOMALY_FORCES_TIME_THEOREM.md` (its SC premise
+row), with the axis-selection content explicitly declared as (B-AXIS)
+rather than derived.
 
-## Audit-status note (2026-05-09)
+## 0. Changelog
 
-The 2026-05-05 audit verdict (`audited_conditional`, chain_closes=false)
-ratified the lattice-form S1/S2/S3 algebra as internally coherent but
-flagged that every one-hop input authority is currently unaudited or
-audited_conditional, so the rubric blocks retained closure from
-propagating through the citation chain even though each step is
-internally clean. Specifically the verdict text reads:
-
-> "multiple one-hop inputs are not retained-grade or are explicitly
-> conditional, including reflection positivity, spectrum condition,
-> cluster decomposition, microcausality/Lieb-Robinson, Cl(3) physical
-> per-site Hilbert realization, and the superseded A_min carrier for
-> A3/A4."
-
-Per-input current status:
-
-- [AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
-  — unaudited.
-- [AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
-  — unaudited.
-- [AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
-  — `audited_conditional`.
-- [AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md)
-  — unaudited; the finite-range H plus `v_LR = 2erJ` derivation now
-  lives in the bounded PR #806 bridge note.
-- [AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)
-  — narrowed to the A1-only U1–U3 representation-classification result
-  (bounded_theorem). The A3-dependent per-site Hilbert realization used
-  in (R-CL3) of this note has been moved out to the staggered-Dirac
-  gate substep and is itself currently unaudited.
-- [EMERGENT_LORENTZ_INVARIANCE_NOTE.md](EMERGENT_LORENTZ_INVARIANCE_NOTE.md)
-  — `audited_conditional` (bounded conditional structural-dispersion
-  support; bounds the continuum corollary only, not the lattice form).
-- [LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md](LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md)
-  — unaudited (bounds the continuum corollary only).
-- [MINIMAL_AXIOMS_2026-04-11.md](MINIMAL_AXIOMS_2026-04-11.md) carrier
-  — meta; the auditor flagged that A3/A4 are recategorised as open
-  gates on the current carrier surface.
-
-Blocked-on: this single-clock codimension-1 evolution theorem stays
-audited-conditional until the cited support theorems advance to
-retained-grade. The S1/S2/S3 algebra (Steps 1–5 below) is unaffected
-by this status note; the change is purely upstream propagation
-accounting on the (R-RP)/(R-SC)/(R-CD)/(R-LR)/(R-CL3) bridge premises
-and on the A3/A4 carrier-gate status. The continuum-limit corollary
-is independently bounded by the emergent-Lorentz cite chain; that
-bound is unchanged.
+- **2026-06-11 #3 (supplier wiring + wording repair; historical after
+  the 2026-06-12 B-RANGE retirement below).** Two items from the
+  2026-06-11 re-audit: (i) the inline claim-scope wording
+  `M_2(C) ≅ Cl(3,0) ⊗ C` is corrected to match the cited per-site
+  row's complexification split (`Cl(3,0) ⊗ C ≅ M_2(C) ⊕ M_2(C)`,
+  physical carrier one summand); (ii) the (B-RANGE) candidate class
+  theorem named in the not-in-scope list has landed as a source note
+  and is wired as a one-hop edge in the Inputs section, registering the
+  supplier route for the audit chain. At that revision, (B-RANGE)
+  remained a declared premise; the 2026-06-12 repair below narrows the
+  current propagation clause to the retained_bounded free-bilinear
+  quasilocal supplier and retires (B-RANGE) from current scope. The
+  (B-AXIS) supplier remains future work (Record-direction or
+  boundary-condition selection row).
+- **2026-05-03.** Original version: (S1) Stone evolution, (S2)
+  codimension-1 Cauchy slices, (S3) "the temporal direction is the
+  unique RP-admissible reflection axis, hence exactly one clock",
+  proposed as positive_theorem on A_min (A1–A4 carrier).
+- **2026-05-05 audit (archived).** `audited_conditional`,
+  chain_closes=false: every one-hop input was unaudited or
+  conditional; the A_min carrier's A3/A4 were recategorised as open
+  gates. The S1/S2/S3 algebra was ratified as internally coherent
+  *as a conditional step* only.
+- **2026-05-09.** Upstream-status bookkeeping note added (now
+  superseded by this changelog; the cited statuses have since moved).
+- **2026-06-11 (hostile science-fix re-scope; the load-bearing
+  change).** Three defects repaired:
+  1. **S3 withdrawn (critical defect — false as written).** The old
+     Step 4 tested only the *unconjugated* temporal RP template
+     against spatial reflections: it fixed the time-first staggered
+     phase convention `η_τ = 1, η_1 = (-1)^{x_τ}, …` and observed
+     that the temporal-hop phase does not flip under `θ_1`. That
+     argument quantified over one factorisation template, not over RP
+     constructions. In fact the staggered hop operator is *exactly*
+     invariant under the axis-exchange unitary
+     `W = P_{τ↔1} ∘ diag((-1)^{x_τ x_1})` (runner block [C-EX],
+     residual `0` on a `4×4×2×2` even periodic block, temporal hop
+     sector mapped exactly onto the spatial hop sector), so any RP /
+     transfer construction about the `τ` axis conjugates by `W` into
+     the identical construction about the `x_1` axis. The conclusion
+     "no spatial reflection is RP, hence no second clock" therefore
+     does not follow — and the broad no-second-clock inference is
+     independently denied by the retained
+     `SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md`
+     (retained_no_go: Stone uniqueness is transfer-relative and
+     τ-relative; N2/N4/N5 are extra premises). The old runner's
+     T8/T9 were tautologies over the convention labels (`-1 == -1`,
+     `+1 != -1`) and its T10 tested a sign-flip criterion that is
+     neither necessary nor sufficient for RP; all three are removed.
+     S3 is replaced by (S3′): the computed exchange-symmetry
+     certificate plus the declared axis premise (B-AXIS).
+  2. **S1/S2 re-based on the current retained-grade suppliers.** The
+     inline Stone re-proof is replaced by a citation to the retained
+     `SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`
+     (N1–N4); the transfer supply is the retained_bounded RP row's
+     two-step blocked `T̂²` (staggered-only, fixed background,
+     factorized `A_+^(2)` observables) with the retained_bounded
+     spectrum-condition normalization `H = -(1/(2a_τ)) log(T̂²/M_T)`;
+     equal-time tensor locality is re-cited from the audited_conditional
+     microcausality note to the retained_bounded
+     `LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md`;
+     at this revision the finite-speed clause used the retained_bounded
+     cluster row's L1/L3 only. The 2026-06-12 repair below supersedes
+     that current-scope supplier with the free-bilinear quasilocal
+     bridge. The old S2(b) spatial-clustering clause is demoted to a
+     conditional remark (the cluster row's L2 is conditional on a
+     transfer-gap bridge and unconditional spatial clustering is
+     explicitly excluded there).
+  3. **Claim type bounded, premise declared.** positive_theorem was
+     an over-claim: the transfer supply is retained_bounded (2-step,
+     staggered-only, fixed background), the clustering clause is
+     conditional, and the axis selection is a premise. The note is
+     now bounded_theorem with (B-AXIS) declared. The runner is
+     rebuilt to compute the load-bearing content with falsification
+     legs: the exchange intertwiner (exact, with a no-sign-field
+     falsifier), a two-clock tensor-factor comparator whose generator
+     span is genuinely 2-dimensional (making the single-clock
+     constraint non-vacuous), τ-rescaling (N2 is real), a
+     non-Hermitian transfer falsifier, and computed Lieb-Robinson
+     cone residuals against the cluster row's bound.
+- **2026-06-11 #2 (science-fix, finite-range premise narrowing).** The
+  2026-06-11 conditional audit identified a missing one-hop bridge in
+  S2′(c): the (R-CD) L1/L3 Lieb-Robinson authority applies to
+  finite-range Hermitian finite-block Hamiltonians, while
+  (R-RP2)/(R-SC2) supply a positive transfer and its logarithmic
+  generator `H = -(1/(2a_τ)) log(T̂²/M_T)` with no proof that this
+  `H` is finite-range. Finite-range-ness is in fact not automatic:
+  the logarithm of a product of strictly local positive factors
+  generically carries Baker-Campbell-Hausdorff commutator tails of
+  larger support (runner block [C-RANGE] exhibits a strictly local
+  3-site transfer whose log-generator has a computed nonzero
+  end-to-end Pauli component). Per the audit's offered narrowing
+  route, S2′(c) is now stated **conditional on the explicit declared
+  premise (B-RANGE)**: the dynamics consumed by the propagation
+  clause is generated by a finite-range Hermitian finite-block
+  Hamiltonian. At that historical revision, (B-RANGE) joined
+  (B-AXIS) in the premise list with a computed non-vacuity witness;
+  deriving it (a quasi-locality bridge
+  for log-transfer generators, or an exponentially-decaying-
+  interaction Lieb-Robinson authority consumed in place of (R-CD)
+  L1/L3) is named future work, not claimed here. (S1′), (S2′a,b),
+  and (S3′) are unchanged.
+- **2026-06-11 #3 (source hygiene, Cl(3) complexification wording).**
+  The headline and S2′ summary no longer write the full complexified
+  algebra as a single `M_2(C)`. They now match the retained
+  classification used below: `Cl(3,0) ⊗ C ≅ M_2(C) ⊕ M_2(C)`, with this
+  note consuming one per-site one-qubit `M_2(C)` Pauli factor. This is
+  wording synchronization only; it does not discharge the declared
+  premise (B-AXIS).
+- **2026-06-12 (B-RANGE retired by narrowing the propagation clause to
+  a retained supplier).** The current claim no longer declares
+  (B-RANGE). Instead, S2′(c) is narrowed to the free `U = 1` bilinear
+  exact-log sector and cites the retained_bounded
+  [`FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`](FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md),
+  which proves a finite-velocity quasilocal Lieb-Robinson envelope for
+  `H = -log(T_hat^2)/(2 a_tau)` when `0 < d mu < eta < arcsinh(m)`.
+  The older (B-RANGE) finite-range premise remains only historical
+  boundary text: it is still false that a strictly local transfer has a
+  finite-range logarithm in general, and this note still makes no
+  interacting or fixed-background exact-log locality claim. The only
+  current declared premise left in the statement is (B-AXIS).
+- **2026-06-15 (source-graph cycle repair, no status change).** The
+  remaining-blocker paragraph below now describes the later
+  record-durability axis-selection route-pruning result without naming
+  its exact source filename. This theorem does not consume that later
+  no-go as an input; it leaves B-AXIS open. Avoiding the filename token
+  keeps the audit citation graph from treating the forward
+  cross-reference as a load-bearing edge back to the follow-up note.
+- **2026-06-16 (APBC axis-label bridge wiring, no status change).** The
+  companion
+  [`SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+  now packages the sharpened-pin positive theorem: given a supplied
+  per-axis boundary-condition datum `APBC` on one axis and `PBC` on the
+  other three, the APBC axis is invariantly selected. This source note
+  cites that bridge only as a conditional supplier for the axis-label
+  component of (B-AXIS.2). It does not derive the APBC/PBC datum, the
+  blocked time step, the transfer construction, or the no-second-clock
+  clause, and it does not change this row's status authority.
+- **2026-06-17 (B-AXIS.1 unit split, no status promotion).** A new
+  source-support note separates the N2 blocked-time phrase into two
+  parts. The internal denominator of the supplied two-step transfer is
+  now source-supported: for the imported `T_hat^2` object the aligned
+  reconstruction uses `1/(2a_tau)`, and the `1/a_tau` denominator would
+  double the generator. The absolute physical clock unit represented
+  by `a_tau` is still not derived from Lattice, Quantum, Record, or
+  post-record counts alone. This does not close axis/transfer
+  construction uniqueness (B-AXIS.2), does not exclude independent
+  commuting transfer factors (B-AXIS.3), and does not make this row a
+  retained-grade proposal.
 
 ## Scope
 
-`ANOMALY_FORCES_TIME_THEOREM.md` (Step 4) cites "single-clock
-codimension-1 evolution" as an *external* admission needed to exclude
-ultrahyperbolic / multi-time alternatives once chirality has narrowed
-`d_t` to odd values. This note discharges that admission into a
-derived consequence of A_min plus already-retained support theorems.
+`ANOMALY_FORCES_TIME_THEOREM.md` imports its upper bound `d_t ≤ 1`
+from this note (its premise row SC). After this re-scope the supplied
+content is: **conditional on (B-AXIS), exactly one generator and one
+codimension-1 Cauchy slice structure** — i.e. `d_t ≤ 1` holds *given*
+that the framework supplies one evolution axis with one transfer
+construction and one time step, and admits no independent commuting
+clock factor. The free `U = 1` bilinear exact-log sector additionally
+has finite quasilocal propagation by the retained_bounded free-bilinear
+bridge; propagation beyond that sector is not supplied here. The axis
+premise is anomaly-free (it references no anomaly trace, no chirality
+content), so the consumer's
+non-circularity argument survives in premise-supplied form; what no
+longer exists is a derivation of the axis from reflection positivity
+alone. The consumer's SC row wording ("the temporal direction is the
+unique RP-admissible reflection axis") is stale against this revision
+and needs a follow-up edit there.
 
-The result is the lattice form of the standard Wightman / Haag-Kastler
-theorem that reflection-positivity + spectrum condition + microcausality
-+ cluster decomposition on a finite-range Hamiltonian uniquely fix a
-strongly-continuous one-parameter unitary group on a codimension-1
-Cauchy hypersurface (Streater-Wightman 1964 ch. 3; Wald 1994 ch. 14;
-Albeverio-Hoegh-Krohn 1973). On A_min, every input is already a
-retained or near-retained support theorem on this branch's authority
-chain.
+## Framework objects in use
 
-After this note, `ANOMALY_FORCES_TIME_THEOREM.md` Step 4 can quote this
-single-clock codimension-1 evolution lemma instead of treating it as an
-external admission. Combined with the framework's already-conditional
-ultrahyperbolic obstruction, the cascade reduces the bridge premise
-count for `anomaly_forces_time` from four to three.
+Current baseline carrier:
+[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+(Lattice supplies the `Z^3` carrier; Quantum supplies the one-qubit
+local algebra per site; Record is not load-bearing here).
 
-## A_min objects in use
-
-- **A1 — local algebra `Cl(3)`.** Used only via the per-site
-  algebra structure: each lattice site `x ∈ Z^3` carries an
-  independent copy of the 8-dim Cl(3) algebra acting on the
-  retained-uniqueness 2-dim complex spinor module
-  ([`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)).
-- **A2 — substrate `Z^3`.** Used as the spatial slice of the lattice
-  block `Λ = (Z/L_τ Z) × (Z/L_s Z)^3` and as the cubic graph metric
-  `d(x, y)`.
-- **A3 — finite Grassmann partition / staggered-Dirac action.**
-  Used (i) to define the reflection map under the canonical
-  staggered-phase convention `η_t(θx) = -η_t(x)`, `η_i(θx) = η_i(x)`
-  for spatial `i = 1, 2, 3` (RP companion artifact), and (ii) to
-  guarantee the Hamiltonian is finite-range (range `r_h = 1`).
-- **A4 — canonical normalization at `g_bare = 1`.** Used only via
-  positivity of the Wilson plaquette `β = 2 N_c / g_bare² > 0` and
-  the resulting bounded transfer matrix.
+- **Per-site algebra.** Each site `x ∈ Z^3` carries the one-qubit
+  algebra `M_2(C)`; the retained
+  [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)
+  identifies `Cl(3,0) ⊗ C ≅ M_2(C) ⊕ M_2(C)` with the two factors
+  exchanged by the central element, so the per-site operator content
+  is the Pauli realization of the complexified Cl(3).
+- **Spatial substrate.** `Z^3` with the cubic graph metric `d(x,y)`,
+  used for slices `Σ_t` and for the Lieb-Robinson distance.
+- **Euclidean block (supplied surface, not an axiom).** The staggered
+  Dirac + Wilson surface `Λ = (Z/L_τ Z) × (Z/L_s Z)^3` enters only
+  through the retained_bounded RP/SC supplier rows; its status as a
+  gate (not an axiom) is inherited from those rows. No A3/A4 axiom
+  status is asserted (the 2026-05-05 audit flagged that carrier as
+  superseded; this revision complies).
 
 No fitted parameters. No observed values used as proof inputs.
 
-## Retained / near-retained inputs
+## Inputs (one hop, with exact licenses)
 
-- **(R-RP) Reflection positivity.** From the
-  [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md),
-  the canonical staggered + Wilson action on Λ is RP under temporal
-  link reflection; the reconstructed transfer matrix `T : H_phys →
-  H_phys` is positive Hermitian with `‖T‖_op ≤ 1` on the canonical
-  surface, and `H = -(1/a_τ) log(T)` is self-adjoint and bounded
-  below.
-- **(R-SC) Spectrum condition.** From the
-  [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md),
-  `H ≥ 0` on `H_phys` after vacuum subtraction, and `H` is a bounded
-  operator on the finite-dim block.
-- **(R-CD) Cluster decomposition.** From the retained
-  [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md),
-  connected correlators decay exponentially at spacelike separation
-  with a Lieb-Robinson velocity `v_LR < ∞`.
-- **(R-LR) Microcausality / Lieb-Robinson.** From the
-  [`AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md)
-  (M1) at distinct lattice sites `[O_x, O_y] = 0` strictly, and (M2)
-  Heisenberg-evolved commutators are exponentially bounded outside
-  the lattice lightcone with `v_LR = 2 e r J`.
-- **(R-CL3) Per-site uniqueness.** From the retained
-  [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md),
-  the per-site Hilbert space is 2-dim complex Pauli irrep, so the
-  full equal-time algebra on a slice `Σ_t` is `⊗_{x ∈ Z^3} Cl(3)_x`
-  with bounded local operator norm.
+- **(R-STONE)** — retained positive_theorem
+  [`SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md):
+  given finite-dim positive Hermitian `T` with trivial kernel and a
+  fixed `τ > 0`, `H_gen = -(1/τ) log(T)` is unique, `U(t) =
+  exp(-itH_gen)` is the unique strongly continuous one-parameter
+  unitary group with that generator, and `T^n = U(-inτ)` (N1–N4).
+- **(R-RP2)** — retained_bounded
+  [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md):
+  bounded finite **2-step staggered-only** RP reduction for factorized
+  `A_+^(2)` observables on the fixed-background surface; supplies the
+  positive Hermitian blocked transfer `T̂²`.
+- **(R-SC2)** — retained_bounded
+  [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md):
+  with `spec(T̂²) ⊂ (0, M_T]`, functional calculus gives
+  `H := -(1/(2a_τ)) log(T̂²/M_T)` self-adjoint with `H ≥ 0`
+  (SC1–SC2 after blocked-time normalization; SC3/SC4 conditional
+  clauses not consumed here).
+- **(S-N2-SPLIT)** — exact-support/no-go source boundary
+  [`SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md`](SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md):
+  separates (B-AXIS.1)'s two meanings. The internal blocked-transfer
+  denominator for the supplied `T_hat^2` object is fixed by the
+  retained-bounded two-step normalization bridge to `2a_tau`; the
+  absolute physical clock unit or time metric represented by `a_tau`
+  is not derived from the current framework axioms or Record-count
+  layer. This source boundary does not close (B-AXIS.2) or (B-AXIS.3)
+  and does not set an audit verdict.
+- **(R-ET)** — retained_bounded
+  [`LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md`](LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md):
+  raw equal-time commutation and tensor factorization for
+  finite-dim tensor factors at distinct sites (dynamics excluded
+  there; the free-sector propagation statement below is supplied by
+  R-FBQL).
+- **(R-FBQL)** — retained_bounded
+  [`FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`](FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md):
+  on the free `U = 1` bilinear staggered two-step sector, the exact
+  reconstructed Hamiltonian `H = -log(T_hat^2)/(2 a_tau)` has a finite
+  weighted overlap and obeys the quasilocal Lieb-Robinson envelope
+  `||[alpha_t(A_x), B_y]|| <= 2 ||A_x|| ||B_y||
+  exp(-mu d_1(x,y) + 4 W_mu |t|)` whenever
+  `0 < d mu < eta < arcsinh(m)`. The row explicitly excludes strict
+  finite-range, `m = 0`, gauged/interacting log-transfer locality, and
+  full continuum microcausality.
+- **(R-CL3)** — retained positive_theorem
+  [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md):
+  the per-site complexified Cl(3) algebra classification (2-dim
+  irreducible Pauli factors).
+- **(G-SCOPE)** — retained_no_go
+  [`SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md`](SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md):
+  governing boundary. Stone uniqueness is transfer-relative and
+  τ-relative; a no-second-clock claim must separately supply N2
+  (the time step), N4 (axis/transfer-construction uniqueness), and
+  N5 (exclusion of independent commuting transfer factors). This
+  note **complies** by declaring those clauses as (B-AXIS) instead
+  of deriving them.
+- **(B-AXIS)** — **declared premise of this bounded theorem** (not
+  derived, not an axiom):
+  - (B-AXIS.1) one supplied blocked time step `2a_τ` (= N2), now split
+    by (S-N2-SPLIT): the internal denominator `2a_tau` for the supplied
+    `T_hat^2` transfer is source-supported, while the absolute
+    physical clock unit/time metric represented by `a_tau` remains a
+    supplied/open clock-rate boundary;
+  - (B-AXIS.2) one declared evolution axis carrying one RP/transfer
+    construction, namely the `(T̂², 2a_τ)` supply of (R-RP2)/(R-SC2)
+    (= N4);
+  - (B-AXIS.3) no independent commuting transfer factor is admitted
+    as a second physical clock (= N5).
+- **(B-AXIS-APBC)** — conditional supplier for the axis-label part of
+  (B-AXIS.2) only:
+  [`SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+  proves that, given a supplied APBC-on-axis/PBC-on-others boundary datum,
+  the APBC axis is the selected axis label. This does not supply the
+  datum itself, the blocked time step, the transfer construction, or
+  (B-AXIS.3). B-AXIS remains live unless the APBC/PBC datum is itself
+  supplied by the row consuming this theorem or by a later retained
+  supplier.
 
-These five inputs together are already a near-retained foundational
-chain on the branch. The single-clock codimension-1 result extracts
-their joint structural content.
+  Source-side N5 support is now isolated in
+  [`SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md`](SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md):
+  on the current single-clock source packet, the admitted physical-clock
+  inventory contains exactly the supplied `(T̂², 2a_τ)` transfer/step pair.
+  This supports the admission wording of (B-AXIS.3) only. It does not derive
+  (B-AXIS.1), does not select the axis/transfer construction in (B-AXIS.2),
+  and does not mathematically exclude arbitrary commuting positive factor
+  transfers.
+
+The older declared finite-range generator premise `(B-RANGE)` is no
+longer a current premise of this theorem. It was replaced by the
+retained_bounded R-FBQL supplier on the narrower free bilinear exact-log
+surface; outside that surface, propagation remains open rather than
+declared.
+
+The intermediate 2026-06-11 supplier route remains useful context:
+`EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md`
+gives the quasilocal class theorem once a finite weighted norm is
+supplied, and
+`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`
+supplies the free-bilinear exact-log membership. The composed
+free-bilinear LR bridge (R-FBQL) is the current one-hop propagation
+supplier consumed here; it does not prove gauged/interacting
+membership.
+
+## 2026-06-12 Remaining-Blocker Source Firewall
+
+This repair separates the already-retired propagation premise from the
+still-live axis-selection premise:
+
+- **B-RANGE is not a current blocker.** The current claim no longer
+  asks the auditor to grant finite range for a generic log-transfer
+  generator. S2'(c) is sourced only by the retained_bounded free
+  bilinear exact-log/quasilocal bridge (R-FBQL) on its own `U = 1`,
+  massive-sector surface. Interacting or fixed-background exact-log
+  propagation remains open, but it is not part of this row's current
+  theorem statement.
+- **B-AXIS remains a real declared premise.** The framework has not
+  derived the registration direction, the absolute physical clock
+  unit/time metric, or the exclusion of independent commuting transfer
+  factors from the current retained axiom surface. The internal
+  two-step denominator for `T_hat^2` is separately supported by
+  (S-N2-SPLIT); this does not make a physical clock/rate unit follow
+  from Record or from the transfer spectrum alone. The follow-up source note
+  `SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md`
+  narrows the route: Record durability, anomaly/chirality labels, and
+  the native exchange-symmetric staggered surface transport with the
+  axis and therefore do not derive B-AXIS. A future positive supplier
+  must provide a non-transportable registration-direction theorem or a
+  reviewed boundary-condition asymmetry bridge; this note does not add
+  such a premise and does not treat it as an axiom.
+- **APBC/PBC narrows the axis-label supplier shape but does not close
+  B-AXIS by itself.** The 2026-06-16 APBC bridge proves the axis-label
+  consequence if the per-axis boundary-condition datum is supplied. It
+  does not derive that datum and does not touch (B-AXIS.1) or
+  (B-AXIS.3), so this theorem remains axis-conditional on the live
+  premise surface.
+
+Source-surface summary: this is bounded support only. The repair prunes the
+old B-RANGE route from the current scope and leaves B-AXIS as the live
+declared blocker. No retained-grade proposal or status promotion is made here;
+the independent audit lane remains the only authority for effective status.
+Equivalently, B-AXIS as the live axis premise remains after the
+record-durability axis selection route-pruning context: those routes do not
+derive B-AXIS.
 
 ## Statement
 
-Let Λ = (Z/L_τ Z) × (Z/L_s Z)^3 be the canonical periodic-temporal,
-periodic-spatial lattice block with the staggered-Dirac fermion + Wilson
-plaquette action of A3+A4. Let `H_phys` be the RP-reconstructed
-physical Hilbert space (R-RP) and `T : H_phys → H_phys` the positive
-Hermitian transfer matrix. Define `H := -(1/a_τ) log(T)`. Define the
-lattice time slice `Σ_t := {t} × (Z/L_s Z)^3` for each integer
-`t ∈ Z/L_τ Z`. Then on A_min:
+Let `H_blk` be the finite block Hilbert space of the (R-RP2)
+reconstruction and `T̂² : H_blk → H_blk` the supplied positive
+Hermitian two-step transfer with `spec(T̂²) ⊂ (0, M_T]`. Fix the
+source-supported internal blocked denominator `2a_τ` for this supplied
+two-step object (B-AXIS.1a by S-N2-SPLIT), while leaving the absolute
+physical clock unit represented by `a_tau` as a supplied/open boundary
+(B-AXIS.1b), and define
+`H := -(1/(2a_τ)) log(T̂²/M_T)` per (R-SC2). Then, **conditional on
+(B-AXIS)**:
 
-**(S1) Single-clock unitary evolution.** The discrete-time iteration
-`U_n := T^n` extends, in the canonical continuum-time identification
-`t_phys = n · a_τ`, to a strongly-continuous one-parameter unitary
-group
+**(S1′) Single-clock unitary evolution (transfer- and τ-relative).**
+By (R-STONE) applied to `(T̂²/M_T, 2a_τ)`: `H` is the unique
+self-adjoint generator determined by the supplied transfer data,
+`U(t) := exp(-itH)` is the unique strongly continuous one-parameter
+unitary group with generator `H`, and the discrete iteration is
+consistent at imaginary argument, `(T̂²/M_T)^n = U(-i n · 2a_τ)`.
+`H ≥ 0` by (R-SC2). Uniqueness is exactly the (R-STONE) N1/N3
+uniqueness: **relative to the supplied `(T̂², 2a_τ)`**. The same
+`T̂²` with a different declared `τ` gives a rescaled generator
+(G-SCOPE); that is why the absolute physical clock unit in
+(B-AXIS.1b) remains supplied/open even though the internal denominator
+of the imported two-step object is fixed to `2a_tau`.
 
-```text
-    U(t)  :=  exp(-itH)                                                (1)
-```
+**(S2′) Codimension-1 Cauchy slice structure.** Each lattice slice
+`Σ_t = {t} × Z^3` (finite block: `{t} × (Z/L_s Z)^3`) carries:
 
-on `H_phys` with the following properties:
-- (a) `U(0) = I`,
-- (b) `U(s)·U(t) = U(s+t)` for all `s, t ∈ R`,
-- (c) `U(t)` is unitary: `U(t)^† U(t) = I`,
-- (d) `t ↦ U(t)` is strongly continuous on `H_phys` (automatic since
-  `H_phys` has finite dim on a finite block),
-- (e) the generator `H` is unique up to additive scalar (Stone's
-  theorem on finite-dim Hilbert space), self-adjoint, and bounded
-  below by (R-SC).
+- (a) the mutually commuting equal-time local algebra
+  `A(Σ_t) = ⊗_{x ∈ Σ_t} M_2(C)_x` — raw tensor-factor commutation
+  and factorization by (R-ET), per-site factor content by (R-CL3)
+  on the Quantum-axiom one-qubit carrier;
+- (b) codimension 1: `dim(Σ_t) = 3 = dim(Λ) - 1`;
+- (c) free-sector finite-speed propagation: on the free `U = 1`
+  bilinear exact-log sector, the same reconstructed Hamiltonian
+  `H = -log(T_hat^2)/(2 a_tau)` obeys the R-FBQL quasilocal
+  Lieb-Robinson envelope
+  `‖[α_t(A_x), B_y]‖ ≤ 2‖A_x‖‖B_y‖
+  exp(-μ d_1(x,y) + 4 W_μ |t|)` whenever
+  `0 < d μ < η < arcsinh(m)`, hence a finite lattice lightcone speed
+  `v_μ = 4 W_μ/μ`. This replaces the older broad finite-range premise:
+  strict finite-range of the exact-log generator, gauged/interacting
+  exact-log locality, and the `m = 0` gapless boundary are not claimed.
 
-In particular, there is **exactly one** time generator `H`, hence
-**exactly one** clock.
+*Conditional remark (not part of the claim):* spatial factorization
+of connected expectations on `Σ_t` (the old S2(b)) remains outside
+this theorem. The free-sector quasilocal envelope gives a finite
+propagation cone, not a general transfer-gap or clustering theorem.
 
-**(S2) Codimension-1 Cauchy hypersurface.** Each lattice slice
-`Σ_t` carries a complete, codimension-1 Cauchy datum:
-
-- (a) the equal-time local algebra on `Σ_t` is the full mutually-
-  commuting tensor product `A(Σ_t) := ⊗_{x ∈ Σ_t} Cl(3)_x` (by
-  (R-LR) M1: `[O_x, O_y] = 0` strictly for `x ≠ y` at equal time),
-- (b) connected expectations on `Σ_t` factorize under spatial
-  separation (by R-CD applied at fixed `t`),
-- (c) `dim(Σ_t) = 3 = dim(Λ) - 1`, hence `Σ_t` is codimension-1 in
-  the spacetime block,
-- (d) `T : H_phys → H_phys` propagates Cauchy data on `Σ_0` to
-  Cauchy data on `Σ_1` (and by iteration to `Σ_n`); the propagation
-  has finite speed `v_LR < ∞` by (R-LR) M2.
-
-**(S3) Uniqueness of the reflection axis (no second clock).** On the
-canonical staggered-Dirac surface (A3) with the Sharatchandra
-fermion-reflection convention used in (R-RP), the temporal direction
-`τ` is the **unique** lattice direction admitting RP. No spatial
-reflection `θ_i : x_i ↦ -1 - x_i` (for `i = 1, 2, 3`) is
-reflection-positive on the staggered-Dirac action.
-
-In particular: there exists at most one positive Hermitian transfer
-matrix on Λ admitting the (R-RP) reconstruction, hence at most one
-generator `H`, hence exactly one clock.
-
-Statements (S1)–(S3) together constitute the framework's
-**single-clock codimension-1 unitary evolution theorem** on A_min.
-
-## Proof
-
-The proof is structured in five steps. Step 1 sets up the lattice
-Stone's-theorem reconstruction. Step 2 derives single-clock unitarity
-from RP + spectrum condition. Step 3 derives codimension-1 Cauchy
-structure from microcausality + cluster decomposition + Cl(3)
-per-site uniqueness. Step 4 establishes uniqueness of the reflection
-axis on the staggered-Dirac action. Step 5 concludes.
-
-### Step 1 — Lattice Stone's theorem on H_phys
-
-By (R-RP), `T : H_phys → H_phys` is a positive Hermitian operator
-with `0 < ‖T‖_op ≤ 1`. By the spectral theorem on the finite-dim
-Hilbert space `H_phys`, write
+**(S3′) Axis selection is a premise; exchange-symmetry certificate.**
+The staggered-Dirac hop operator on an even periodic block, in the
+time-first Kogut-Susskind convention
+`η_τ = 1, η_1 = (-1)^{x_τ}, η_2 = (-1)^{x_τ+x_1},
+η_3 = (-1)^{x_τ+x_1+x_2}`, satisfies **exactly**
 
 ```text
-    T  =  Σ_k  λ_k · |k⟩⟨k|                                            (2)
+    W M_KS W^T = M_KS ,   W := P_{τ↔1} ∘ diag( (-1)^{x_τ x_1} ) ,      (1)
 ```
 
-with `λ_k > 0` (kernel of `T` is empty on the canonical surface; if
-nonempty, restrict to the orthogonal complement; either way `H_phys`
-is finite-dim and the spectrum is purely discrete).
-
-By (R-SC), `H := -(1/a_τ) log(T)` is well-defined via functional
-calculus on each eigenbranch:
+with `W` orthogonal, where `P_{τ↔1}` relabels `(t, x_1, x_2, x_3) ↦
+(x_1, t, x_2, x_3)`. Moreover `W` maps the temporal hop sector
+exactly onto the `x_1` hop sector and vice versa,
 
 ```text
-    H  =  Σ_k  E_k · |k⟩⟨k|       with  E_k := -(1/a_τ) log(λ_k) ≥ 0    (3)
+    W M_τ-hop W^T = M_1-hop ,   W M_1-hop W^T = M_τ-hop ,              (2)
 ```
 
-self-adjoint and bounded below.
+and fixes the transverse sectors. (Runner block [C-EX]: residuals are
+exactly `0`; the plain permutation without the sign field fails by a
+nonzero margin, so the identity is non-trivial.) Consequently the
+staggered phase structure does **not** distinguish the temporal axis:
+any reflection/transfer construction about the `τ` axis conjugates by
+the unitary `W` into the identical construction about the `x_1` axis
+(half-spaces, reflection planes, and hop sectors all map onto each
+other under `W`). The framework direction is the same: the approved
+[`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
+premise sets `c_t = c_s`, which makes the surface *more*
+exchange-symmetric, not less. Therefore the single-clock conclusion
+cannot be derived from RP-admissibility of the action; it holds
+conditional on (B-AXIS), exactly as the retained (G-SCOPE) boundary
+requires. A two-clock comparator exists mathematically (two commuting
+tensor-factor transfers with a 2-dimensional generator span; runner
+block [C-2CLK]) and is excluded only by (B-AXIS.3) — the premise
+excludes something realizable, so it is non-vacuous and load-bearing.
 
-The discrete-time iteration is `T^n = Σ_k λ_k^n |k⟩⟨k|`. Identifying
-discrete time `n` with continuous time `t = n · a_τ` and analytically
-continuing the eigenvalues `λ_k^n = exp(-n · a_τ · E_k) = exp(-t · E_k)`
-to all real `t`, define
+Statements (S1′)–(S3′), conditional on (B-AXIS), constitute the
+framework's **axis-conditional single-clock codimension-1 unitary
+evolution theorem**.
+
+## Derivation
+
+**Step 1 (S1′).** (R-RP2) supplies `T̂²` positive Hermitian on the
+finite-dim `H_blk`; (R-SC2) supplies the normalization
+`T := T̂²/M_T` with `spec(T) ⊂ (0, 1]` and trivial kernel. The
+hypotheses of (R-STONE) — finite-dim, Hermitian, positive, trivial
+kernel, `‖T‖_op ≤ 1`, fixed `τ = 2a_τ` — are met, so its N1–N4 apply
+verbatim: unique `H`, unique group `U(t)`, consistency
+`T^n = U(-inτ)`. `H ≥ 0` is (R-SC2) SC2. No content beyond the two
+cited rows plus functional calculus is used. ∎
+
+**Step 2 (S2′).** (a) is (R-ET)'s raw tensor-factor commutation and
+factorization applied to the per-site factors, whose algebra content
+is fixed by (R-CL3) on the one-qubit carrier. (b) is arithmetic.
+(c) is now R-FBQL, not a declared finite-range premise: on the free
+`U = 1` bilinear exact-log sector, R-FBQL has already proved the
+finite weighted overlap `W_mu < infinity` and the weighted-path
+Lieb-Robinson envelope with speed `v_mu = 4 W_mu/mu`. This theorem
+imports that retained_bounded propagation clause only on its stated
+sector. The old finite-range step remains false in general: the runner
+keeps a boundary witness showing that a strictly local positive
+transfer can have a non-range-1 logarithm, so the current statement
+does not upgrade R-FBQL to interacting/fixed-background locality. ∎
+
+**Step 3 (S3′).** Equation (1) is verified exactly: for the
+transposition `τ↔1`, the sign field `ε(x) = (-1)^{x_τ x_1}`
+intertwines the KS phases,
 
 ```text
-    U(t)  :=  Σ_k  exp(-i t E_k) · |k⟩⟨k|  =  exp(-itH).               (4)
+    η_{Pν}(Px) · ε(x) · ε(x + ν̂)  =  η_ν(x)     for all sites x, ν,    (3)
 ```
 
-On finite-dim Hilbert space, (4) is automatically a strongly-continuous
-one-parameter unitary group: properties (S1.a)–(S1.e) follow from the
-spectral expansion.
+(case check: `ν = τ`: `(-1)^{x_1} · (-1)^{x_1} = 1 = η_τ`;
+`ν = 1`: `1 · (-1)^{x_τ} = η_1`; `ν = 2, 3`: `ε` cancels and the
+relabelled phase reproduces `η_ν`), so the substitution
+`χ_x → ε(x) χ_{Px}` maps the staggered action to itself; the mass
+term is `ε²`-invariant and the Wilson plaquette is hypercubic
+invariant. Hence any RP factorisation `⟨Θ_τ(F) F⟩ ≥ 0` over the
+`τ ≥ 0` half-space algebra conjugates to
+`⟨Θ_1(W F W^†) (W F W^†)⟩ ≥ 0` over the `x_1 ≥ 0` half-space algebra:
+the `x_1` axis admits the identical construction. The old Step 4
+tested only whether the *unconjugated* temporal template transfers
+verbatim (it does not — `η_τ` does not flip under `θ_1` in the fixed
+convention), which shows nothing about conjugated constructions; its
+conclusion is withdrawn. What survives is: per declared axis and
+supplied `(T̂², 2a_τ)`, the clock is unique (Step 1); selecting the
+axis, the `τ`, and excluding commuting factor clocks is (B-AXIS). ∎
 
-The match between discrete-time `T^n` (Euclidean) and continuous-time
-`U(t)` (Lorentzian) is the lattice form of the standard Wick-rotation
-correspondence, valid because every operator in (3)–(4) acts on the
-*same* finite-dim `H_phys` and the spectral expansion is independent
-of whether the eigenvalues are exponentiated by `n·a_τ` (Euclidean) or
-`it` (Lorentzian).
+## Consistency with retained no-gos (declared, checked)
 
-This is Stone's theorem in its lattice incarnation: on a finite-dim
-Hilbert space, every self-adjoint `H` generates a unique
-strongly-continuous one-parameter unitary group via the spectral
-theorem, with no additional input. ∎
+- **`SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md`
+  (retained_no_go).** This revision asserts nothing that row denies:
+  uniqueness is stated transfer-relative and τ-relative; N2/N4/N5
+  appear verbatim as (B-AXIS.1–3) declared premises. The prior
+  revision's S3 violated its N4/N5 discipline and is withdrawn.
+- **`SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md`
+  (retained_no_go).** No SO(4)/continuum-isotropy wording is claimed
+  from spatial cubic checks; the continuum corollary stays bounded by
+  the emergent-Lorentz row. Where that row notes `c_t = c_s` is an
+  extra premise now supplied by the kinetic-isotropy primitive, this
+  note only *uses* the direction of that premise (exchange symmetry),
+  never its converse.
+- **`QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md`
+  (retained_no_go).** Nothing here derives a physical boost action
+  from the local algebra: (S1′) concerns the single time-translation
+  group only; boosts/Lorentz enter only through the bounded continuum
+  corollary, which carries that program's own bounded status.
 
-### Step 2 — Uniqueness of the generator (single clock)
+## Continuum-limit corollary (bounded, unchanged in kind)
 
-Suppose, for contradiction, that there exist two distinct
-strongly-continuous one-parameter unitary groups `U_1(t)`, `U_2(s)`
-on `H_phys`, both reconstructed from the canonical action via RP. Let
-`H_1`, `H_2` be their respective generators (Stone). Both are
-self-adjoint and bounded below by (R-SC).
+The identification of `U(t)` with the Wightman one-parameter group of
+a relativistic continuum QFT is **not** part of (S1′)–(S3′); it is
+bounded by the emergent-Lorentz program
+([`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md),
+retained_bounded free-sector structural dispersion scope only). The
+ultrahyperbolic well-posedness obstruction for `d_t > 1`
+(Craig-Weinstein 2009; Tegmark 1997) remains an external
+classical-PDE result consumed, if at all, by the downstream consumer,
+not here.
 
-Each `H_i` is the unique self-adjoint operator obtained from the
-RP-reconstructed transfer matrix `T_i` via `H_i = -(1/a_τ) log(T_i)`.
-But the RP factorisation is fixed by the action and the choice of
-reflection axis, and produces a single transfer matrix once the
-reflection axis is chosen. So distinct generators `H_1 ≠ H_2`
-require distinct reflection axes. Step 4 below rules out distinct
-RP-admissible axes on the staggered-Dirac action.
+## Downstream contract (what may be cited)
 
-Hence `T_1 = T_2`, so `H_1 = H_2`, so `U_1 = U_2`. The framework
-admits exactly one one-parameter unitary group on `H_phys`.
+For `ANOMALY_FORCES_TIME_THEOREM.md` (premise row SC):
 
-This is the single-clock conclusion (S1 + uniqueness). ∎
+- citeable now: **conditional on (B-AXIS), exactly one generator `H`
+  of one strongly continuous unitary group, and codimension-1 Cauchy
+  slice structure** — i.e. the `d_t ≤ 1` cap in axis-conditional
+  form. Free `U = 1` bilinear propagation may also cite the R-FBQL
+  finite quasilocal lightcone with speed `v_mu = 4 W_mu/mu`; no
+  interacting/fixed-background exact-log propagation clause is supplied
+  here. (B-AXIS) references no anomaly content, so the consumer's
+  non-circularity separation (time defined upstream of the anomaly
+  argument) is preserved in premise-supplied form.
+- no longer citeable: "the temporal direction is the unique
+  RP-admissible reflection axis of the staggered-Dirac action" and
+  any unconditional "no second clock" wording. The consumer's SC row
+  text predates this re-scope and needs a follow-up edit.
 
-### Step 3 — Codimension-1 Cauchy structure on each Σ_t
+## Relation to the retained Stone narrow row
 
-We show that each lattice time slice `Σ_t = {t} × (Z/L_s Z)^3`
-satisfies the standard Cauchy-hypersurface conditions:
-
-(i) **Equal-time local algebra is mutually commuting.** By (R-LR)
-M1, for any two distinct sites `x, y ∈ Σ_t` (`x ≠ y`) and any
-operators `O_x ∈ Cl(3)_x`, `O_y ∈ Cl(3)_y` supported at those
-sites, `[O_x, O_y] = 0` strictly. Hence the equal-time local algebra
-factorises as a tensor product
-
-```text
-    A(Σ_t)  =  ⊗_{x ∈ Σ_t}  Cl(3)_x.                                   (5)
-```
-
-By (R-CL3), each tensor factor `Cl(3)_x` acts on a 2-dim complex
-spinor module (Pauli irrep), so each tensor factor is finite-dim and
-the operator norms are uniformly bounded.
-
-(ii) **Spatial cluster decomposition.** By (R-CD), connected
-correlators between operators supported at distinct sites of `Σ_t`
-factorise at large spatial separation:
-`⟨O_x O_y⟩_c → 0` exponentially in `d(x, y)`. This means initial
-data on `Σ_t` is independently specifiable region-by-region — a true
-Cauchy datum, not a global degenerate constraint.
-
-(iii) **Codimension.** The lattice block has dimension `dim(Λ) =
-1 + 3 = 4` (one temporal + three spatial). Each slice `Σ_t` has
-dimension `dim(Σ_t) = 3 = dim(Λ) - 1`. Hence `Σ_t` is codimension-1
-in `Λ`.
-
-(iv) **Finite propagation, slice-to-slice.** By (R-LR) M2, the
-Heisenberg-evolved commutator is exponentially bounded outside the
-lightcone with finite Lieb-Robinson velocity `v_LR < ∞`:
-
-```text
-    ‖ [α_t(O_x), O_y] ‖_op  ≤  2 ‖O_x‖ ‖O_y‖ · exp(- d(x, y) + v_LR |t|)  (6)
-```
-
-The transfer matrix `T = exp(-a_τ H)` propagates Cauchy data on
-`Σ_t` to `Σ_{t+1}` with finite speed: the support of `T · O_{Σ_t}`
-extends only by a Lieb-Robinson cone of radius `v_LR · a_τ` per
-lattice time step. This is the lattice analogue of the
-finite-speed-of-propagation condition in the Wightman framework.
-
-Combining (i)–(iv): each `Σ_t` is a codimension-1, mutually-commuting,
-factorisation-respecting, finite-propagation Cauchy hypersurface for
-the dynamics generated by `H`. ∎
-
-### Step 4 — Uniqueness of the reflection axis on staggered-Dirac
-
-The (R-RP) proof selects the temporal direction `τ` as the
-reflection axis, with the staggered fermion-reflection convention
-`Θ χ_x = χ̄_{θx}^T`, `Θ χ̄_x = χ_{θx}^T` on temporal link reflection
-`θ x = (-1 - t, x⃗)` and the staggered-phase rule
-
-```text
-    η_t(θx)  =  -η_t(x),    η_i(θx)  =  η_i(x)   (i = 1, 2, 3).        (7)
-```
-
-We show that no spatial reflection admits the same RP factorisation
-on the staggered-Dirac action.
-
-Consider a candidate spatial reflection `θ_1 : (t, x_1, x_2, x_3) ↦
-(t, -1 - x_1, x_2, x_3)`. The staggered phases under `θ_1` transform as
-
-```text
-    η_t(θ_1 x)   =  η_t(x)         (no sign flip for temporal hop)     (8)
-    η_1(θ_1 x)   =  -η_1(x)        (sign flip for the reflected axis)  (9)
-    η_2(θ_1 x)   =  η_2(x)                                             (10)
-    η_3(θ_1 x)   =  η_3(x)                                             (11)
-```
-
-The staggered-Dirac hop term in the temporal direction transforms
-under `θ_1` as
-
-```text
-    χ̄_x η_t(x) U_t(x) χ_{x+t̂}  ↦  χ̄_{θ_1 x} η_t(θ_1 x) U_t(θ_1 x) χ_{θ_1 x + t̂}.   (12)
-```
-
-Following Sharatchandra-Thun-Weisz (1981) and Menotti-Pelissetto
-(1987), the RP factorisation `<Θ(F) F> ≥ 0` requires the staggered-
-phase rule (7) precisely in the temporal direction (the sign flip
-`η_t(θx) = -η_t(x)` is what cancels the antilinear involution
-contribution in the half-integration). Under spatial reflection
-`θ_1`, equation (8) shows the temporal hop has *no* sign flip on
-`η_t`, so the antilinear-involution / sesquilinear-pairing
-manipulation that produces the `‖ · ‖²` form in (R-RP)'s equation
-(7)/(10) does not close — the action does not factorise as
-`S_+ + Θ(S_+) + S_∂` with the required sign structure.
-
-Equivalently: a spatial reflection swaps the role of `η_1` and `η_t`
-in the (R-RP) factorisation, but only the temporal staggered phase
-satisfies the (R-RP) sign rule. Hence **no spatial reflection is RP
-on the staggered-Dirac action.**
-
-The temporal direction is the unique lattice direction admitting RP
-on (A3+A4). There is at most one RP-reconstructed transfer matrix
-on Λ, hence at most one generator `H`, hence exactly one clock.
-
-This forecloses the multi-time / multi-clock alternative in a
-direct, action-level, axiom-first way: the two-clock setup would
-require two RP-admissible reflection axes, which the staggered phase
-structure rules out.
-
-*Remark.* This is *not* a claim that the framework forbids
-permutations of the spatial axes — the spatial directions are
-mutually equivalent under the cubic point group, none of them is
-"special" relative to the others, and none of them admits RP. The
-asymmetry is between time (RP-admissible) and space (no spatial RP),
-not between distinct spatial directions. ∎
-
-### Step 5 — Conclusion
-
-Combining Steps 1–4:
-
-- (S1) Stone's theorem on `H_phys` gives a unique strongly-continuous
-  one-parameter unitary group `U(t) = exp(-itH)` from the
-  RP-reconstructed transfer matrix and the spectrum condition.
-- (S2) Microcausality + cluster decomposition + Cl(3)-per-site
-  uniqueness establish that each lattice slice `Σ_t` is a
-  codimension-1 Cauchy hypersurface with mutually-commuting,
-  factorisation-respecting, finite-propagation local data.
-- (S3) The staggered-phase sign rule forces the temporal direction
-  as the unique RP-admissible reflection axis, so there is exactly
-  one such generator and one clock.
-
-Hence the framework's lattice dynamics on A_min is a single-clock
-codimension-1 unitary evolution. QED. ∎
-
-## Continuum-limit corollary (bounded)
-
-The lattice statement (S1)–(S3) is positive_theorem grade on A_min.
-The continuum-limit identification of `U(t)` on `H_phys` with the
-Wightman one-parameter unitary group of a relativistic QFT relies on
-the framework's already-conditional emergent Lorentz / continuum
-program ([`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md);
-[`LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md`](LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md), audited_conditional).
-That continuum identification is therefore **bounded** by the
-emergent-Lorentz program's current audit status: positive_theorem on
-the lattice, bounded_theorem in the continuum.
-
-For the immediate downstream use case (discharging Step 4 of
-`ANOMALY_FORCES_TIME_THEOREM.md`), the **lattice form** (S1)–(S3) is
-sufficient: the Step 4 hypothesis is "the framework's clock structure
-preserves a single evolution parameter and one codimension-1 initial
-surface", which is exactly (S1) + (S2) on the lattice. The
-ultrahyperbolic / multi-time obstruction (Craig-Weinstein 2009;
-Tegmark 1997) takes over from there at the continuum-PDE level and is
-itself the remaining external admission in `ANOMALY_FORCES_TIME_THEOREM`.
-
-## Hypothesis set used
-
-- A1, A2, A3, A4 (no fitted parameters, no observed values).
-- (R-RP) reflection-positivity support theorem.
-- (R-SC) spectrum-condition support theorem.
-- (R-CD) retained cluster-decomposition support theorem.
-- (R-LR) retained microcausality / Lieb-Robinson support theorem.
-- (R-CL3) retained Cl(3)-per-site-uniqueness support theorem.
-
-Standard external references (cited as theorem-grade, no numerical
-input): Stone (1932) one-parameter unitary group theorem; Wightman
-reconstruction (Streater-Wightman 1964 ch. 3); Osterwalder-Schrader
-1973; Sharatchandra-Thun-Weisz 1981 staggered RP; Menotti-Pelissetto
-1987; Wald 1994 ch. 14 lattice QFT.
-
-## Corollaries (downstream tools)
-
-**C1. Discharge of `ANOMALY_FORCES_TIME` Step 4 single-clock
-hypothesis.** `ANOMALY_FORCES_TIME_THEOREM.md` Step 4 cites
-"single-clock codimension-1 evolution" as one of the four external
-bridge premises. (S1)+(S2) of this note discharge that premise into a
-derived consequence of A_min plus retained-grade support. The
-remaining external bridge premises are reduced to three: (i) ABJ
-inconsistency, (ii) opposite-chirality singlet completion, (iii)
-Clifford-volume-element chirality uniqueness, (iv) ultrahyperbolic
-codimension-1 obstruction. Premise (iv)'s "codimension-1" half is
-also discharged here; the "ultrahyperbolic well-posedness for
-`d_t > 1`" half remains an external classical-PDE result.
-
-**C2. Single-clock structural cap.** The framework cannot accommodate
-multiple independent unitary clocks on its canonical surface. This
-forecloses (a) multi-time PDE formulations on the canonical
-staggered-Dirac surface, (b) two-Hamiltonian extensions where the two
-generators commute but act on independent time directions, and
-(c) hidden-clock proposals.
-
-**C3. Cauchy-data well-posedness on Σ_t.** Initial data on a single
-codimension-1 lattice slice `Σ_t` is sufficient and necessary for
-deterministic forward evolution under `T`. This matches the standard
-hyperbolic-PDE Cauchy structure and is incompatible with the
-ultrahyperbolic / multi-time alternative.
-
-**C4. Substrate for Wightman-axiom-on-A_min.** Combined with the
-existing support chain {RP, spectrum, cluster, microcausality},
-(S1)+(S2) supply the Wightman-axiom analogue on A_min:
-- (W1) Hilbert space `H_phys` with one-parameter unitary group `U(t)`
-  (this note S1);
-- (W2) spectrum condition `H ≥ 0` (R-SC);
-- (W3) microcausality (R-LR);
-- (W4) cluster decomposition (R-CD);
-- (W5) codimension-1 Cauchy slice structure (this note S2).
-
-This is the lattice form of the Wightman framework for QFT on A_min.
+`SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`
+is consumed, not duplicated: the old inline Steps 1–2 re-proved its
+N1–N4 content and are deleted in favor of the citation. This note
+adds, beyond that row: the identification of its abstract `T` with
+the (R-RP2)/(R-SC2) supplied `T̂²/M_T` (Step 1), the (S2′) Cauchy
+slice structure (Step 2), and the (S3′) exchange-symmetry boundary
+with the declared (B-AXIS) premise (Step 3). It contradicts nothing
+in that row.
 
 ## Honest status
 
-**Source theorem on A_min plus retained / near-retained inputs.**
-The lattice form (S1)–(S3) is positive_theorem grade. The
-continuum-limit identification with the Wightman one-parameter group
-on a relativistic QFT is bounded_theorem grade because it inherits the
-audited_conditional status of the emergent-Lorentz program.
+**Bounded theorem.** (S1′) closes from retained/retained_bounded
+one-hop inputs given the declared premise; (S2′a,b) closes at the
+retained_bounded level of its suppliers and (S2′c) closes only on the
+free `U = 1` bilinear exact-log sector by the retained_bounded R-FBQL
+supplier; (S3′) is a computed exact certificate plus a declared
+premise. Not positive_theorem: the transfer supply is bounded
+(2-step, staggered-only, fixed background), spatial clustering is
+outside the claim, interacting/fixed-background exact-log propagation
+is not supplied, and the axis selection is a premise by the retained
+(G-SCOPE) no-go.
 
-The runner verifies, on a small lattice block, the structural content
-of each step: (i) Stone's theorem unitarity on a finite-dim `H_phys`,
-(ii) one-parameter group composition `U(s)·U(t) = U(s+t)`, (iii)
-equal-time tensor-product factorisation of the local algebra,
-(iv) finite-speed propagation of operator support under `T`, and (v)
-the failure of spatial RP on the staggered-Dirac action via the
-staggered-phase sign mismatch.
+The runner computes the load-bearing content: supply-hypothesis
+residuals for (R-STONE) on a concrete finite-range block transfer;
+Stone reconstruction and group-law residuals; τ-rescaling (N2
+load-bearing); a non-Hermitian-transfer falsifier; equal-time tensor
+locality and codimension arithmetic; finite-range LR sanity residuals
+with inside/outside contrast on the runner's explicit toy block; the
+exact exchange intertwiner (1)–(2) with a no-sign-field falsifier; the
+two-clock tensor-factor comparator (2-dimensional generator span,
+excluded only by B-AXIS.3); and a finite-range boundary block — a
+strictly local positive transfer whose log-generator has a computed
+nonzero end-to-end Pauli component, with the single-factor contrast
+where the log returns the local generator exactly. The retained
+free-bilinear quasilocal LR supplier has its own companion runner.
 
-**Honest claim-status fields (audit-lane handoff):**
+**Honest claim-status summary.** This is a bounded theorem on retained and
+retained-bounded one-hop inputs plus the declared B-AXIS premise. Its scope is
+axis-conditional single-clock codimension-1 unitary evolution: with the
+source-supported internal block denominator `2a_tau` for the
+retained-bounded RP/SC two-step transfer supply `T_hat^2`, a still-supplied
+absolute physical clock unit/time metric, one declared evolution axis carrying
+that transfer construction, and no independent commuting transfer factor
+admitted as a second clock, the retained finite-dim Stone row gives the unique
+generator
+`H = -(1/(2a_tau)) log(T_hat^2/M_T) >= 0` and the unique strongly continuous
+one-parameter unitary group `U(t) = exp(-itH)`. Each lattice slice `Sigma_t` is
+a codimension-1 Cauchy surface with mutually commuting per-site `M_2(C)`
+tensor-product equal-time algebra.
 
-```yaml
-proposed_claim_type: positive_theorem
-proposed_claim_scope: |
-  Lattice form: from A_min + RP + spectrum condition
-  + retained cluster decomposition + retained microcausality / Lieb-
-  Robinson + retained Cl(3) per-site uniqueness, the framework's
-  dynamics is a single-clock codimension-1 unitary evolution: (S1) the
-  reconstructed Hamiltonian H is the unique generator of a strongly
-  continuous one-parameter unitary group U(t) = exp(-itH) on H_phys,
-  (S2) each lattice time slice Σ_t = {t} × Z^3 is a codimension-1
-  Cauchy hypersurface with mutually commuting equal-time local algebra
-  and finite Lieb-Robinson propagation, and (S3) the staggered-Dirac
-  action admits only the temporal direction as an RP-admissible
-  reflection axis, so no second clock exists. The continuum-limit
-  identification with the Wightman one-parameter group of a
-  relativistic QFT is bounded by the emergent-Lorentz program's
-  current audited_conditional status; on the lattice itself the result
-  is positive_theorem grade.
-proposed_load_bearing_step_class: A (derived support theorem on A_min
-  plus retained-grade support inputs; no external admissions on the
-  lattice form; the continuum identification is bounded_theorem).
-status_authority: independent audit lane only
-actual_current_surface_status: support
-conditional_surface_status: derived support theorem on A_min + 5 retained-grade input theorems
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: true
-proposal_allowed_reason: |
-  All five load-bearing inputs are retained or near-retained on the
-  current authority surface. The proof proceeds entirely on A_min via
-  finite-dim spectral theory (Stone), the (R-RP) factorisation, and
-  the staggered-phase sign rule. No new axiom, no new fitted
-  parameter, no new observed value, no new convention is introduced.
-  Lattice form qualifies for positive_theorem; continuum identification
-  is bounded_theorem.
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
+On the free `U = 1` bilinear exact-log sector only, the retained-bounded
+free-bilinear quasilocal LR bridge supplies finite propagation with envelope
+`||[alpha_t(A_x),B_y]|| <= 2||A_x||||B_y|| exp(-mu d_1(x,y)+4 W_mu |t|)`,
+`0 < d mu < eta < arcsinh(m)`. No interacting/fixed-background exact-log
+propagation claim is made. The prior S3 claim that the temporal direction is
+the unique RP-admissible reflection axis is withdrawn: the staggered hop
+operator is exactly invariant under the time-space exchange unitary
+`W = P_{tau<->1} diag((-1)^{x_tau x_1})`, so axis selection is a premise,
+consistent with the retained single-clock uniqueness scope boundary
+(N2/N4/N5). Continuum Wightman identification stays bounded by the
+emergent-Lorentz program.
+
+Every load-bearing input is retained or retained-bounded on this source
+surface except the surviving declared/open pieces of B-AXIS: absolute
+clock-rate/unit content for (B-AXIS.1b), axis/transfer-construction uniqueness
+(B-AXIS.2), and no-independent-factor exclusion (B-AXIS.3). The older B-RANGE
+finite-range generator premise is no longer part of the current claim;
+free-sector propagation is supplied by the retained-bounded R-FBQL bridge.
+Because these B-AXIS pieces remain declared/open, this branch is not a
+retained-grade proposal. No new axiom, fitted parameter, observed value, or
+status promotion is made here; the independent audit lane remains the only
+authority for effective status.
 
 **Not in scope.**
 
-- Continuum-limit Wightman reconstruction in the strict
-  Osterwalder-Schrader sense. We prove the lattice analogue and note
-  that the continuum identification is bounded by the framework's
-  retained emergent-Lorentz / continuum program.
-- The ultrahyperbolic well-posedness obstruction for `d_t > 1`
-  remains an external classical-PDE result (Craig-Weinstein 2009;
-  Tegmark 1997). This note does not absorb that.
-- Promotion of `anomaly_forces_time_theorem` to retained-positive on
-  the live authority surface. This note's discharge is necessary but
-  not sufficient: the audit lane must ratify (S1)+(S2)+(S3) as
-  retained, after which the cascade can drop the single-clock
-  codimension-1 admission from the four-premise list of
-  `ANOMALY_FORCES_TIME_THEOREM.md`.
+- Any unconditional no-second-clock / unique-RP-axis claim (withdrawn;
+  see §0 and S3′).
+- Spatial clustering on `Σ_t` (conditional L2 of the cluster row; not
+  consumed).
+- Continuum Osterwalder-Schrader / Wightman reconstruction (bounded
+  by the emergent-Lorentz program).
+- The ultrahyperbolic `d_t > 1` well-posedness obstruction (external,
+  consumer-side).
+- Deriving the (B-AXIS) premise itself. Candidate future suppliers:
+  a Record-axiom registration-direction theorem, or a
+  boundary-condition (antiperiodic temporal BC) selection row; either
+  would be a separate note.
+- Interacting or fixed-background exact-log locality. The free
+  bilinear quasilocal LR bridge does not prove gauged/interacting
+  log-transfer locality, the gapless `m = 0` boundary, or continuum
+  microcausality.
 
 ## Citations
 
-- A_min: [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
-- reflection-positivity:
-  [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
-- spectrum condition:
+- baseline carrier: [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+- Stone core (retained): [`SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
+- transfer supply (retained_bounded):
+  [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md),
   [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
-- retained cluster decomposition:
-  [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
-- retained microcausality / Lieb-Robinson:
-  [`AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md)
-- retained Cl(3) per-site uniqueness:
+- equal-time tensor locality (retained_bounded):
+  [`LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md`](LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md)
+- free exact-log quasilocal propagation (retained_bounded, free
+  `U = 1` bilinear sector only):
+  [`FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`](FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md)
+- per-site Cl(3) algebra (retained):
   [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)
-- downstream consumer of this discharge:
-  `ANOMALY_FORCES_TIME_THEOREM.md`
-  (Step 4 single-clock codimension-1 hypothesis; cross-reference only,
-  not a one-hop dep — the consumer cites this note, not vice versa)
-- emergent-Lorentz / continuum program (bounding the
-  continuum-limit corollary):
-  [`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md),
-  [`LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md`](LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md)
+- governing boundaries (retained_no_go):
+  [`SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md`](SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md),
+  [`SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md`](SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md),
+  [`QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md`](QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md)
+- kinetic-form premise context (meta, approved premise):
+  [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
+- APBC/PBC axis-label bridge (conditional supplier; no status change):
+  [`SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+- continuum bound (retained_bounded):
+  [`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md)
+- downstream consumer (cross-reference only, not a dep):
+  `ANOMALY_FORCES_TIME_THEOREM.md` (premise row SC)
 - standard external references (theorem-grade, no numerical input):
-  Stone, M. H. (1932), "On one-parameter unitary groups in Hilbert
-  space," *Ann. Math.* 33, 643;
-  Streater, R. F. & Wightman, A. S. (1964), *PCT, Spin and Statistics,
-  and All That*, Benjamin (Wightman reconstruction);
-  Osterwalder, K. & Schrader, R. (1973), "Axioms for Euclidean Green's
-  functions," *Comm. Math. Phys.* 31, 83;
-  Sharatchandra, H. S., Thun, H. J., Weisz, P. (1981), *Nucl. Phys. B*
-  192, 205 (staggered RP);
-  Menotti, P. & Pelissetto, A. (1987), *Comm. Math. Phys.* 113, 369;
-  Wald, R. M. (1994), *Quantum Field Theory in Curved Spacetime and
-  Black Hole Thermodynamics*, Univ. Chicago Press, ch. 14 (lattice QFT);
-  Albeverio, S. & Hoegh-Krohn, R. (1973), *J. Math. Phys.* 14, 1;
-  Craig, W. & Weinstein, S. (2009), *Proc. Roy. Soc. A* 465, 3023
-  (multi-time well-posedness obstruction; cited only as an external
-  bound on the continuum corollary, not as a lattice-form input);
-  Tegmark, M. (1997), *Class. Quant. Grav.* 14, L69.
+  Stone (1932) *Ann. Math.* 33, 643; Streater-Wightman (1964) ch. 3;
+  Osterwalder-Schrader (1973) *Comm. Math. Phys.* 31, 83;
+  Sharatchandra-Thun-Weisz (1981) *Nucl. Phys. B* 192, 205;
+  Menotti-Pelissetto (1987) *Comm. Math. Phys.* 113, 369;
+  Golterman-Smit (1984) staggered lattice rotation symmetry
+  (context for the axis-exchange field redefinition);
+  Craig-Weinstein (2009) *Proc. Roy. Soc. A* 465, 3023; Tegmark
+  (1997) *Class. Quant. Grav.* 14, L69 (both consumer-side only).

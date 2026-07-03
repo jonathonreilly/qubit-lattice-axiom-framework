@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/interaction_asymmetry_delta_occupation_curvature_runner.py
+runner_sha256: 488d1c7ae410f3a74591aa8a1ba90c00a2960009eb68c907f557e1701ef06ed3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+==============================================================================
+INTERACTION ASYMMETRY delta = OCCUPATION CURVATURE, irreducibly two-body  [class A]
+==============================================================================
+
+-- (1) all-orders cancellation via factorization --
+  [PASS] L=3: full spectrum of H=eps*N+t*sum X_mu equals the L-fold per-axis SUMSET (H factorizes => energy additive)
+  [PASS] L=4: full spectrum of H=eps*N+t*sum X_mu equals the L-fold per-axis SUMSET (H factorizes => energy additive)
+  [PASS] L=5: full spectrum of H=eps*N+t*sum X_mu equals the L-fold per-axis SUMSET (H factorizes => energy additive)
+  [PASS] 2nd-order shift E2(hw)=(2hw-L)t^2/eps is AFFINE in hw => delta_2nd = 0 (reproduces the naive-2nd-order cancellation as a special case)
+  [PASS] identical-axis additive energy E(hw)=hw*eps is AFFINE => delta=0 (all orders)
+
+-- (2) delta is the occupation curvature and is irreducibly two-body --
+  [PASS] every one-body occupation functional a*hw+b is AFFINE (second difference 0) => contributes nothing to delta
+  [PASS] the pair count C(hw,2) has second difference identically +1 => it is the lowest-degree functional with nonzero curvature
+  [PASS] a pure pair term w_pair*C(hw,2) gives delta = w_pair exactly (delta is carried by the connected two-body coupling)
+
+-- (3) regime-scoped sign law sign(K_off) = sign(delta) when eps+U>0 --
+  [PASS] Schur elimination gives exact K_off = t^2*U/[eps*(eps+U)] for sampled U  (U=+0.5->K=+0.213675, formula=+0.213675; U=-0.5->K=-0.480769, formula=-0.480769; U=+1.0->K=+0.334448, formula=+0.334448; U=-1.0->K=-2.564103, formula=-2.564103)
+  [PASS] for eps>0 and eps+U>0, sign(K_off)=sign(delta)=sign(U)  (U=+0.5, eps+U=+1.80, K=+0.214; U=-0.5, eps+U=+0.80, K=-0.481; U=+1.0, eps+U=+2.30, K=+0.334; U=-1.0, eps+U=+0.30, K=-2.564)
+  [PASS] outside the eps+U>0 regime, the unconditional sign law is false/unguarded  (U=-2.600, eps+U=-1.300, formula K=+1.538)
+  [PASS] the sourced coupling has the exact C3 (J-I) form (all off-diagonals equal)
+
+-- (4) the one-body realization of delta is a forbidden (next-nearest) diagonal --
+  [PASS] n_mu n_nu carries cos(k_mu)cos(k_nu) = (1/2)[cos(k_mu+k_nu)+cos(k_mu-k_nu)] = a FACE-DIAGONAL (next-nearest) hop, which the 6-NN no-diagonal LATTICE axiom forbids => no one-body 6-NN H0 carries delta
+
+==============================================================================
+TOTAL: PASS=13 FAIL=0
+VERDICT: delta (hence K_off in the generation triplet) is the OCCUPATION-NUMBER CURVATURE E_2-2E_1+E_0; it vanishes to ALL orders for the free single-hop + axis-separable one-body dynamics (factorization), is IRREDUCIBLY TWO-BODY (= pair-count curvature), carries the regime-scoped sign law K_off=t^2*U/[eps*(eps+U)] with sign(K_off)=sign(delta) only for eps>0 and eps+U>0, and its one-body lattice realization is a forbidden diagonal -- so delta is a genuine two-body interaction object. The precise sign/scale (the leading non-import route = the retained two-body mediator channel) is left open.
+
+----- stderr -----
+

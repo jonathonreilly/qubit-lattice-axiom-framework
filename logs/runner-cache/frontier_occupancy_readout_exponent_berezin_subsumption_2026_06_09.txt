@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/frontier_occupancy_readout_exponent_berezin_subsumption_2026_06_09.py
+runner_sha256: dc2651a080f942e01a10630b7ba5fce498392e33940ccb144dcd4944e048a87b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.51
+status: ok
+----- stdout -----
+========================================================================================
+OCCUPANCY EXPONENT SUBSUMPTION: CONDITIONAL ON THE EXISTING STAGGERED GATE
+========================================================================================
+
+----------------------------------------------------------------------------------------
+B1: det_R = |det_C|^2 exactly; K maps det_C to its conjugate (symbolic)
+----------------------------------------------------------------------------------------
+  [PASS] det_R(beta acting on R^2) = x^2 + y^2 = |det_C(beta)|^2 EXACTLY
+  [PASS] K (conjugation) maps det_C = beta -> conj(beta): |det_C| is the orbit-invariant det atom; the two fork cells differ ONLY by the exponent (|det_C|^1 vs |det_C|^2)
+  [PASS] full generation block: det_R(a (+) beta) = a * |beta|^2 vs |det_C|(a (+) beta) = a * |beta| -- the doublet enters squared vs once: THE fork, as bookkeeping
+
+----------------------------------------------------------------------------------------
+B2: HOSTILE -- orbit-invariance alone does NOT pick the exponent
+----------------------------------------------------------------------------------------
+  [PASS] |det_C|^s is K-invariant for EVERY s (the orbit quotient permits all exponents; D1/granularity cannot decide the cell -- consistent with the independence theorem)  --  the free object is exactly ONE exponent bit (s=1 vs s=2)
+
+----------------------------------------------------------------------------------------
+B3: Berezin uniqueness + the engine reproduces det_C (Dirac) and Pf (Majorana)
+----------------------------------------------------------------------------------------
+  [PASS] Berezin uniqueness: translation invariance forces F(1) = 0; the functional is unique up to the overall scale F(theta) -- NO measure freedom exists  --  the 'integration measure' question is empty in the fermionic realization
+  [PASS] one Dirac mode: Berezin Gaussian = a = det_C (exponent 1 per mode; convention calibrated here and reused unchanged below)
+  [PASS] two Dirac modes, GENERIC A: the engine's top-form coefficient = +/- det_C(A) including the off-diagonal cross term a12*a21 (nontrivial; sign fixed once)  --  engine value = +1 * (a11*a22 - a12*a21)
+  [PASS] Majorana pair: Berezin Gaussian = Pf(M) = p, and Pf^2 = det_R EXACTLY -- the Majorana realization carries the exponent-2 (det_R) atom
+
+----------------------------------------------------------------------------------------
+B4: THE SUBSUMPTION -- polarization from the EXISTING gate decides the cell
+----------------------------------------------------------------------------------------
+  [PASS] cell map cross-checked VERBATIM against the landed fork table: exponent 1 (Dirac/det_C) -> holo cells (r=1/2, Q=2/3); exponent 2 (Majorana/Pf^2=det_R) -> real cells (r=1, Q=1)  (the #3138 guard)
+  [PASS] the polarization supplier is the EXISTING registered Tier-A gate (staggered_dirac_realization_gate, mechanically verified in tier_a_admissions.json) => the occupancy exponent is CONDITIONAL under {existing gate, K/CPT covariance}; MAXENT-R is not consumed; no additional Tier-A node is introduced  --  canonical_ids contains the gate: True
+
+----------------------------------------------------------------------------------------
+B5: Kraus closure of D1's classical-only gap (general quantum channels)
+----------------------------------------------------------------------------------------
+  [PASS] for ARBITRARY K-covariant quantum channels (random Kraus rank 1-4, symmetrized, CPTP) and ALL K-invariant effects: registrable statistics of e1 and e2 are IDENTICAL (200 channels x 5 effects)  --  max difference = 2.2e-16 (algebraically zero by covariance)
+
+----------------------------------------------------------------------------------------
+B6: ADVERSARIAL -- exponent 2 requires doubling the FIELD CONTENT, not a readout choice
+----------------------------------------------------------------------------------------
+  [PASS] one Dirac mode gives a (degree 1); the ONLY way to manufacture a^2 in the Berezin realization is a SECOND independent mode (computed: 2 copies -> a^2) = doubling the field content = changing the REALIZATION (gate business); the exponent is NOT a readout freedom  --  multiplicity = field multiplicity, registered in the realization
+
+----------------------------------------------------------------------------------------
+B7: stiffness-independence -- the re-panel's 'common stiffness' objection does not apply
+----------------------------------------------------------------------------------------
+  [PASS] rescaling the action A -> lambda*A rescales det_C by lambda^n and Pf by lambda^(n/2): overall powers that CANCEL in the inter-cell EXPONENT structure; the subsumption nowhere invokes 'common stiffness'  --  the exponent (1 vs 2) is scale-free; MAXENT-R's flagged clause is not used
+
+----------------------------------------------------------------------------------------
+B8: Frobenius-Schur canonical name + the quaternionic factor-4 kill condition
+----------------------------------------------------------------------------------------
+  [PASS] FS indicators of Z_3: trivial -> +1 (real), omega/omegabar -> 0 (complex pair); inter-cell factor = dim_R(End) = 2^(1-FS) in {1, 2} -- the canonical name of the exponent gap  --  FS = {'trivial': 1.0, 'omega': -0.0, 'omegabar': 0.0}; 2^(1-FS): real -> 1, complex -> 2
+  [PASS] quaternionic control (Q_8 2-dim irrep): FS = -1 computed from g^2 classes => predicted occupancy factor 2^(1-FS) = 4 -- a REGISTERED kill condition nobody chose (any quaternionic readout context must show factor 4 or the subsumption dies)  --  FS(Q_8) = -1.0; factor = 4
+  [PASS] named negative: Jones-index sqrt(2) matches NEITHER cell (|sqrt(2)-1| and |sqrt(2)-2| both >> the 2.2e-5 admixture bound) -- registered, not re-walkable
+
+----------------------------------------------------------------------------------------
+B9: net
+----------------------------------------------------------------------------------------
+  [PASS] No additional Tier-A node: the occupancy exponent is conditional under {staggered gate (existing Tier-A), K/CPT-covariant registration}; MAXENT-R is not consumed; Jaynes-vs-Liouville is moot in the Berezin realization because the functional has no measure freedom
+  [PASS] #3400 independence INTACT: it governs the UNCONDITIONAL surface; this subsumption is conditional, not an unconditional derivation
+  [PASS] falsifiers: (i) a quaternionic readout context with factor != 4; (ii) staggered-gate closure contradicting the complex-mode realization; (iii) the earlier neutrino kill conditions where independently relevant
+  [PASS] what was NOT shown: an unconditional derivation (impossible); any change to the gate's own Tier-A status; any audit status
+
+========================================================================================
+SUMMARY: PASS=20 FAIL=0
+========================================================================================
+
+----- stderr -----
+

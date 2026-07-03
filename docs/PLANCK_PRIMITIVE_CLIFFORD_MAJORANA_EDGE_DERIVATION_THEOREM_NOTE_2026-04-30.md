@@ -15,12 +15,13 @@ claim_scope: "Algebraic consistency theorem: GIVEN the rank-four carrier
   F(C^2) by oriented Majorana pairing, and the consistency identity
   c_Widom = c_cell = 1/4. The note does NOT derive the substrate-to-P_A
   selection; that step is sourced as conditional provenance to
-  PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM (unaudited
-  candidate) and remains the named open premise."
+  PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM (bounded-support
+  action-source bridge over an explicit premise) and remains the named open
+  premise."
 admitted_premises:
   - "P_A = Hamming-weight-one projector on H_cell is the active block
-    carrier (admitted from upstream conditional authority; not derived
-    here; see SUBSTRATE_TO_P_A_FORCING_THEOREM and
+    carrier (sourced from the upstream conditional action-source bridge;
+    not derived here; see SUBSTRATE_TO_P_A_FORCING_THEOREM and
     FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO for the symmetry-only
     no-go boundaries)."
   - "Complex Hilbert structure on H_cell (sourced to I3_ZERO_EXACT_THEOREM
@@ -44,15 +45,22 @@ status of this row at `audited_renaming` (status authority is the independent
 audit lane).
 
 - [`PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md`](PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md)
-  — unaudited candidate authority that supplies the conditional
-  substrate-to-`P_A` route from the named microscopic action surface. The
-  algebraic differential of the link-local staggered-Dirac / Grassmann
-  action with respect to its fundamental local link variables has support
-  on exactly the Hamming-weight-one packet `P_1`. Hodge-dual `P_3` is
-  excluded because Hodge maps a one-link source to a three-link composite,
-  which is not an automorphism of the fundamental source domain. That
-  theorem supplies the action-native provenance for the rank-four packet
-  selection on which the present note's `Cl_4(C)` construction acts.
+  — bounded-support action-source bridge that supplies the conditional
+  substrate-to-`P_A` route from the named microscopic action-source surface.
+  The algebraic differential of a link-local staggered-Dirac / Grassmann
+  action with respect to its fundamental local link variables has support on
+  exactly the Hamming-weight-one packet `P_1`. Hodge-dual `P_3` is excluded on
+  that premise because Hodge maps a one-link source to a three-link composite,
+  which is not an automorphism of the fundamental source domain. That theorem
+  supplies the action-source provenance for the rank-four packet selection on
+  which the present note's `Cl_4(C)` construction acts if the action-source
+  premise is accepted.
+- [`LINK_LOCAL_FIRST_VARIATION_SELECTOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-10.md`](LINK_LOCAL_FIRST_VARIATION_SELECTOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-10.md)
+  — exact conditional algebra split: one-link source map plus the
+  active-response/support bridge gives `P_A = P_1`, while `P_3` is excluded
+  only relative to that same source-map premise. This split is the local
+  algebraic core of the preceding Planck-specific bridge and is not a retained
+  physical source-domain derivation by itself.
 - [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)
   — companion conditional carrier note that selects `P_A` from the
   first-order coframe boundary variation under the same link-local
@@ -72,12 +80,12 @@ audit lane).
   pure symmetries), and on that enlarged surface the Hodge ambiguity is
   broken because Hodge duality maps a one-link source to a three-link
   composite.
-- `MINIMAL_AXIOMS_2026-05-03.md`
-  — current framework memo: physical `Cl(3)` on `Z^3` is the repo-wide
-  axiom set, with the staggered-Dirac / Grassmann realization recategorized
-  as an open gate rather than a framework axiom. The link-local
-  first-variation route is therefore a conditional action-surface route,
-  not a new repo-wide axiom and not retained by this note.
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+  — current framework memo: Lattice, Quantum, and Record are the repo-wide
+  axiom set, with source/action and the staggered-Dirac / Grassmann
+  realization outside the axioms. The link-local first-variation route is
+  therefore a conditional action-surface route, not a new repo-wide axiom and
+  not retained by this note.
 
 The one-hop dependencies above name the conditional substrate-to-`P_A`
 provenance and the negative boundaries it must respect. The present note's
@@ -161,9 +169,11 @@ bank.
 
 The construction cites these existing framework authorities:
 
-- [MINIMAL_AXIOMS_2026-04-11.md](./MINIMAL_AXIOMS_2026-04-11.md): the accepted
-  local `Cl(3)` on `Z^3` plus finite Grassmann / staggered-Dirac partition
-  surface.
+- [MINIMAL_AXIOMS_2026-06-05.md](./MINIMAL_AXIOMS_2026-06-05.md): the current
+  Lattice, Quantum, and Record axiom baseline. The finite Grassmann /
+  staggered-Dirac action-source surface is not supplied by the axioms here;
+  it is the conditional premise sourced through the link-local first-variation
+  bridge above.
 - [NATIVE_GAUGE_CLOSURE_NOTE.md](./NATIVE_GAUGE_CLOSURE_NOTE.md): native cubic
   `Cl(3)` gives exact `SU(2)` through the spatial Clifford / bivector
   subalgebra.
@@ -338,11 +348,12 @@ all listed constraints (see the cited
 `Cl_4(C)` construction therefore takes `K = P_A H_cell` as an input on this
 surface, and its substrate-to-`P_A` provenance is sourced explicitly to the
 cited link-local first-variation candidate authority above, which selects
-`P_A` from the algebraic first variation of the retained link-local
-microscopic action. That route survives the listed no-gos because it adds the
+`P_A` from the algebraic first variation of the named link-local microscopic
+action-source map. That route survives the listed no-gos because it adds the
 action source domain as additional structure beyond pure symmetries. The
 present note does not claim to derive that selection; it cites it as
-conditional provenance, with the named open premise being the gravitational
+conditional provenance. The named open premises are the action-source premise
+needed by the link-local first-variation bridge and the gravitational
 boundary/action density bridge inherited from the upstream
 `PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM` §5.
 
@@ -479,8 +490,8 @@ retained Cl(3) spatial bivectors                    [native_gauge_closure]
   + graph-first SU(3) / anomaly-complete gauge surface  [graph_first_su3]
   + anomaly-forced time axis                        [anomaly_forces_time]
   + complex Hilbert / Born-rule packet              [i3_zero_exact_theorem]
-  + retained link-local first-variation P_A forcing
-        [PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM, unaudited candidate]
+  + bounded/conditional link-local first-variation P_A bridge
+        [PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM]
   -> active block = P_A H_cell, rank 4              [substrate-to-P_A step]
   -> irreducible Cl_4(C) module on K                [present note]
   -> F(C^2) two-mode CAR edge                       [present note]
@@ -650,18 +661,19 @@ input.
 
 **Conditional repair route, cited (not promoted here).** The cited
 `PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM` (one-hop deps above)
-supplies a candidate substrate-to-`P_A` route by deriving `P_A = P_1` from the
-algebraic first variation of the retained link-local microscopic action (see
-that note's Theorem and §3 for why this route survives the
+supplies a bounded-support substrate-to-`P_A` route by deriving `P_A = P_1`
+from the algebraic first variation of a link-local microscopic action-source
+map (see that note's Theorem and §3 for why this route survives the
 `SUBSTRATE_TO_P_A_FORCING_THEOREM` and
 `FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO_THEOREM` no-gos). That theorem is
-currently unaudited. If it audits clean, the present note's substrate-to-`P_A`
-provenance inherits stronger derivational footing through the cited live
-authority chain. If it fails audit, the present note retains its
-`audited_renaming` status with the explicit conditional provenance of the
-`P_A` selection step recorded above. Either way, this rigorization does not
-re-open the audit verdict; the status authority remains the independent audit
-lane.
+not retained on the current authority surface because the action-source
+premise is not discharged by this note. If a later review/audit accepts that
+premise and the bridge, the present note's substrate-to-`P_A` provenance
+inherits stronger derivational footing through the cited live authority chain.
+If it fails audit, the present note retains its `audited_renaming` status with
+the explicit conditional provenance of the `P_A` selection step recorded above.
+Either way, this rigorization does not re-open the audit verdict; the status
+authority remains the independent audit lane.
 
 ## Verification
 

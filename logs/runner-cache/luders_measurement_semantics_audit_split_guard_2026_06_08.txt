@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/luders_measurement_semantics_audit_split_guard_2026_06_08.py
+runner_sha256: d9693cfdfebd3f3f795b4aeb554ac2f966b805b6833ed6c03d973b19c6b30a1f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+LUEDERS MEASUREMENT-SEMANTICS AUDIT SPLIT GUARD 2026-06-08
+PASS docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md exists
+PASS docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md exists
+PASS docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md exists
+PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md exists
+PASS docs/RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md exists
+PASS docs/MINIMAL_AXIOMS_2026-06-05.md exists
+PASS parent declares conditional-support assembly
+PASS parent says not retained/unbounded/native Lueders theorem
+PASS parent names 2026-06-08 split
+PASS parent enumerates PEP finite support
+PASS parent enumerates KP finite support
+PASS parent enumerates finite pointer-record write
+PASS parent enumerates typed record-instrument kernel
+PASS parent identifies residual measurement-semantics bridge
+PASS parent states Record axiom supplies no probability/instrument
+PASS parent keeps Born/measurement probability premise open
+PASS PEP bridge denies measurement probability semantics
+PASS KP bridge scopes out general apparatus label-mixing
+PASS record-write bridge is finite pointer-model conditional
+PASS record-write bridge denies Born/probability derivation
+PASS kernel interface is under supplied instrument
+PASS kernel interface leaves trace/effect probability open
+PASS minimal axioms deny instrument/Born content
+SUMMARY: PASS=23 FAIL=0
+
+----- stderr -----
+

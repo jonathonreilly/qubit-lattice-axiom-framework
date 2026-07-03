@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/rank1_single_source_from_K_J_minus_I_structure_runner.py
+runner_sha256: 3f1747106e9898986c11e88534d8c023bbb55408409c51d1ca670eff52cfa820
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+==============================================================================
+A1. the derived C3 coupling K = |K|(J - I): J = 3 P_singlet is RANK-1 (single source)
+==============================================================================
+   J rank = 1 (= 3 P_singlet, the single C3-singlet source): True
+   (J - I) eigenvalues = [-1. -1.  2.] : singlet isolated (+2), doublet degenerate (-1,-1)
+  [PASS] the derived K = |K|(J-I) has a RANK-1 J piece = the single C3-singlet template  | the generation-distinguishing part of K is rank-1 (single-source template)
+
+==============================================================================
+A2. K gives a distinct SINGLET + a 2-fold DEGENERATE DOUBLET (rank-1 template)
+==============================================================================
+   K eigenvalues = [-0.4 -0.4  0.8] : singlet 2|K|=0.8, doublet -|K|=-0.4 (degenerate)
+  [PASS] the C3 coupling K yields a distinct singlet + degenerate doublet (rank-1 singlet template)  | the singlet carries the distinct coupling; the doublet is degenerate
+
+==============================================================================
+A3. a degenerate doublet + C3-breaking => MAXIMAL mixing in the reduced block
+==============================================================================
+   degenerate doublet [[m,b],[b,m]] => mixing angle = 45.0deg (maximal)
+   comparator: lepton atmospheric angle theta_23 is near 45deg (observed ~49deg)
+  [PASS] a degenerate doublet (from K's template) + C3-breaking => maximal reduced-block mixing  | candidate atmospheric-angle pattern; not a standalone prediction
+
+==============================================================================
+A4. the SMALL Cabibbo requires a SPLIT doublet => GST magnitude reduces to the mass hierarchy
+==============================================================================
+   degenerate doublet -> 45.0deg (maximal);  split/hierarchical doublet -> 12.6deg (small, GST)
+   => the SMALL Cabibbo requires a SPLIT (hierarchical) doublet in the GST block; the magnitude
+      still reduces to the doublet MASS HIERARCHY (m_d << m_s) -> alpha_s. K supplies a native
+      rank-1 singlet/doublet template, not the full physical mass/readout closure.
+  [PASS] small Cabibbo needs a split doublet => GST magnitude still reduces to the mass hierarchy  | K supplies the rank-1 template; hierarchy/mass-readout remain residual
+
+runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,25 @@
+loop_slug: yt-ward-gbare-rigidity-edge-20260611
+branch: physics-loop/audit-repair-block07-20260611
+base: origin/main
+current_goal: "Unblock the YT Ward dependency-routing row by exposing the retained g_bare finite-link rigidity edge as a one-hop source dependency."
+target_status: bounded-support
+cycle_count: 1
+active_route: "dependency-edge repair"
+hard_residual: "Independent audit must still decide whether the repaired source packet is clean."
+files_touched:
+  - docs/YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md
+  - scripts/audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05.py
+  - logs/runner-cache/audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05.txt
+  - .claude/science/physics-loops/yt-ward-gbare-rigidity-edge-20260611/
+open_imports:
+  - "AC_phi_lambda remains a registered Tier-A target, not closed by this branch."
+  - "The parent YT Ward identity row remains outside this branch except as a backticked target row."
+no_go_routes:
+  - "Do not link the conditional parent YT row as a retained upstream dependency."
+  - "Do not use g_bare rigidity as a Wilson/beta, continuum, or phenomenological coupling theorem."
+  - "Do not treat this source repair as an audit verdict."
+trace_gate_classification: direct_blocker_closure
+review_findings: pending reviewer
+pr_status: pending
+next_exact_action: "Commit, push, and open the source repair PR for reviewer/auditor recheck."
+stop_condition: "Stop this block after PR creation; reviewer/auditor owns landing and status."

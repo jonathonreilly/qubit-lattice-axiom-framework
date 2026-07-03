@@ -1,0 +1,133 @@
+{
+  "claim_id": "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+  "gaussian_route_slopes": [
+    0.5999152926503377,
+    0.9187930384936202,
+    1.2680899272147963,
+    1.638485398438419,
+    2.024599461288653,
+    2.422935761972691,
+    2.8310689267632996,
+    3.2472406151443183,
+    3.670132744094181,
+    4.098730491542909,
+    4.532235134266313,
+    4.97000629986958,
+    5.411522412202545,
+    5.856352827683771,
+    6.304137729564883
+  ],
+  "repair": "replace false Nelson common-analytic-vector route with direct unitary-action integrability and wire in the Wigner strong-continuity bridge as an explicit restricted-packet dependency",
+  "results": [
+    {
+      "detail": "companion note path is explicit in the restricted source packet",
+      "name": "S1 note links companion free-Dirac Poincare representation note",
+      "pass": true
+    },
+    {
+      "detail": "companion runner path is explicit in the restricted source packet",
+      "name": "S2 note links companion free-Dirac Poincare runner",
+      "pass": true
+    },
+    {
+      "detail": "companion runner cache path is explicit in the restricted source packet",
+      "name": "S3 note links companion free-Dirac Poincare cache",
+      "pass": true
+    },
+    {
+      "detail": "bridge note path is explicit in the restricted source packet",
+      "name": "S4 note links Wigner strong-continuity bridge note",
+      "pass": true
+    },
+    {
+      "detail": "bridge runner path is explicit in the restricted source packet",
+      "name": "S5 note links Wigner strong-continuity bridge runner",
+      "pass": true
+    },
+    {
+      "detail": "bridge cache path is explicit in the restricted source packet",
+      "name": "S6 note links Wigner strong-continuity bridge cache",
+      "pass": true
+    },
+    {
+      "detail": "the linked companion note is the exact packet consumed by this repair",
+      "name": "S7 companion note carries the expected claim id",
+      "pass": true
+    },
+    {
+      "detail": "source import exposes finite Poincare closure and mass-shell/Wigner checks",
+      "name": "S8 companion runner exposes the Poincare algebra and Wigner checks",
+      "pass": true
+    },
+    {
+      "detail": "source import exposes d^3p/(2E) boost-invariance check",
+      "name": "S9 companion runner exposes the invariant-measure check",
+      "pass": true
+    },
+    {
+      "detail": "cached companion representation runner output is present and passing",
+      "name": "S10 companion cache is a passing representation certificate",
+      "pass": true
+    },
+    {
+      "detail": "runner=scripts/free_dirac_poincare_representation_2026-05-30.py status=ok exit=0 sha_fresh=True",
+      "name": "S11 companion cache is SHA-fresh and exits cleanly",
+      "pass": true
+    },
+    {
+      "detail": "bridge note is the functional-analytic dependency requested by audit",
+      "name": "S12 Wigner bridge note carries strong-continuity and Stone content",
+      "pass": true
+    },
+    {
+      "detail": "cached bridge runner output is present, passing, and firewall-clean",
+      "name": "S13 Wigner bridge cache is a passing continuity certificate",
+      "pass": true
+    },
+    {
+      "detail": "runner=scripts/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py status=ok exit=0 sha_fresh=True",
+      "name": "S14 Wigner bridge cache is SHA-fresh and exits cleanly",
+      "pass": true
+    },
+    {
+      "detail": "K_orb=-i d/dzeta on L2(R,dzeta)",
+      "name": "D1 boost orbital generator is Hermitian in rapidity",
+      "pass": true
+    },
+    {
+      "detail": "dp/dzeta=E, so the boost one-parameter generator reduces exactly to momentum on the line",
+      "name": "D2 rapidity change gives E d/dp = d/dzeta",
+      "pass": true
+    },
+    {
+      "detail": "small-shift norms=2.800e-01, 1.411e-01, 7.067e-02, 3.535e-02",
+      "name": "D3 direct boost flow is a strongly continuous unitary one-parameter group",
+      "pass": true
+    },
+    {
+      "detail": "min E=1.700000; |exp(-itE)| and |exp(iap)| equal 1",
+      "name": "D4 translation generators act by unitary mass-shell phases",
+      "pass": true
+    },
+    {
+      "detail": "log(||H^n psi||/n!)/n grows from 0.600 to 6.304",
+      "name": "D5 rapidity Gaussian is not an analytic vector for H/P",
+      "pass": true
+    },
+    {
+      "detail": "full-line momentum proxy has full ranges for K +/- i and unitary Cayley transform",
+      "name": "D6 boost Cayley/deficiency finite proxy has self-adjoint signature",
+      "pass": true
+    },
+    {
+      "detail": "the same first-order shift on a half-line loses norm at the boundary",
+      "name": "D7 half-line control is not a unitary group",
+      "pass": true
+    }
+  ],
+  "status_boundary": "bounded-support/direct-integrability repair; no Nelson Laplacian or common Gaussian analytic-vector claim remains",
+  "summary": {
+    "fail": 0,
+    "pass": 21
+  }
+}

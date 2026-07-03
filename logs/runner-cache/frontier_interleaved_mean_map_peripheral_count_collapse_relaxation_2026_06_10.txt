@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/frontier_interleaved_mean_map_peripheral_count_collapse_relaxation_2026_06_10.py
+runner_sha256: f8c84055c2ab628929ba1c2666c05ad6f465b943f60edb2f317c6daf0b462791
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.29
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  (M1) spectrum: peripheral dim 3 = per-color uniform diagonals; gap derived
+==============================================================================
+  [PASS] the peripheral spectrum (|mu| = 1) is EXACTLY 3-dimensional  (peripheral dim 3)
+  [PASS] the per-color uniform diagonals are EXACT fixed points (and span the peripheral space by the dimension count): the conserved quantities are the COLOR COUNTS
+  [PASS] everything else is strictly inside: derived PER-STEP damping gap (instance-labeled; the NEW content is the peripheral collapse, not the gap)  (gap = 0.320953 at (lambda, tau) = (0.45, 0.35))
+  [PASS] second instance (lambda, tau) = (0.25, 0.6): same structure -- peripheral dim 3, strictly positive derived gap (the structure is not tuned)  (gap = 0.174410)
+  [PASS] the matter mean RELAXES to the count-determined configuration (the sharp-count color-marginal form: rho_color(x) = diag(N_c)/N; neutral iff the conserved counts are equal in that reading; the remaining selector is the separate state-realization clause)  (dev 3.3e-15; counts [1.846 1.372 1.781])
+  [PASS] the mean link carrier dies at the DERIVED dominant non-peripheral PER-STEP ratio (clean-window match; tolerance instance-labeled)  (empirical 0.67655 vs derived 0.67905 (instance-specific tightness))
+==============================================================================
+Part 2  (M2) records BEND the orientation: the polar-invariance shortcut is FALSE
+==============================================================================
+  [PASS] one record step alone IS exact scalar damping on the cross-block (M -> (1-lambda) M; polar-invariant in isolation)
+  [PASS] but the COMPOSITION with the flow is NOT scalar (the flow re-mixes unequally damped sectors): the induced orientation departs from the record-free one at order 1 within a few steps -- records DO bend the induced gauge orientation  (orientation deviation 0.774 by step 6)
+==============================================================================
+Part 3  (M3) C(n) converges (vs record-free almost-periodic); orientation -> dominant subspace
+==============================================================================
+  [PASS] the induced curvature C(n) CONVERGES along the interleaved mean trajectory (records remove the record-free Bohr-frequency obstruction at the mean level; computed on DEFLATED genuine signal; the quoted value is ONE REALIZATION'S number -- state-realization data, not a derived constant)  (C -> 0.565613 (last-century change 1.8e-10; instance/seed-specific))
+  [PASS] the induced link orientation converges Cauchy-tight (DEFLATED projective iteration; final century drift < 1e-8; the convergent object is the polar orientation of the VANISHING centered transient -- the fixed point itself is diagonal and carries NO link)  (drift sequence per century: ['3.6e-01', '4.6e-02', '8.6e-03', '1.5e-03'] ... 2.4e-09)
+  [PASS] the convergence RATE is itself DERIVED: on deflated genuine signal the orientation-error log-slope matches ln(|mu_2|/|mu_1|) from the two leading derived families to a few percent (an earlier apparent 'crossover' was the un-deflated noise artifact; deflation restored the prediction)  (fitted -0.01762/step vs derived -0.01724/step)
+  [PASS] the converged direction's cross-block LIES IN the dominant family's cross-block image, whose rank is EXACTLY 3 (dimension-count guard; the random control's expected residual for a 3-of-9-dim image is sqrt(1-3/9) = 0.816 -- its power is dimension-counting, disclosed as such)  (rank 3; residual 6.6e-16; random-control residual 0.82)
+  [PASS] the limit is INITIAL-STATE-DEPENDENT (different states converge to different configurations): no universal selection is claimed -- the realized asymptotic configuration is state-realization data (the separate selector clause)  (orientation difference 0.536)
+==============================================================================
+Part 4  (M4) color-blind record erasure teeth (one-body exact); boundaries respected
+==============================================================================
+  [PASS] the color-blind site-pinching instrument acts on the adjacent cross-block as scalar ZERO -- instant link erasure at the instrumented site (the named record-instrument erasure, made exact at the one-body level), while the on-site color block is preserved exactly  (cross-block after 0.0e+00)
+==============================================================================
+TOTAL: PASS=14 FAIL=0
+==============================================================================
+SCOPE: NOT a step-measure delivery (no measure on SU(3); convergence to a
+  state-dependent limit is the OPPOSITE of the CLT spread).  The interleaved
+  mean map (named one-body flow + named record channel) has DERIVED structure: peripheral
+  space = EXACTLY the 3 conserved color counts (the 9->3 collapse = the new
+  content); per-step damping gap (instance-labeled); count-form relaxation
+  (sharp-count color-marginal form); the induced curvature/orientation CONVERGES
+  on deflated signal -- the record-free almost-periodicity sub-obstruction is
+  REMOVED at the mean level. The
+  convergent object = the orientation of the VANISHING transient; the fixed point
+  carries NO link; state-dependent limit, separate selector clause).  HONEST
+  LIMITS: the mean map is DISCRETE-time (no continuous generator claimed; the
+  boundaries record_classical_semigroup / record_markov_generator_embeddability
+  are untouched); mean relaxation is NOT the CLT step-measure (no measure on
+  SU(3) delivered; the i.i.d.-central-step premise remains open).  DOORS NAMED:
+  the stochastic unraveling (needs outcome-weight/Born structure), structured/
+  frame-naming instruments (= the {P_r} root), interactions (non-quadratic terms).  The
+  polar-invariance shortcut is exhibited FALSE (M2).  Conditional on the supplied
+  C^3 carrier + the named hopping + the named instrument classes (instrument
+  existence and lambda/tau are supplied parameters).  No new
+  axiom/primitive/measure/weight; r untouched.  Audit lane grades.
+
+----- stderr -----
+

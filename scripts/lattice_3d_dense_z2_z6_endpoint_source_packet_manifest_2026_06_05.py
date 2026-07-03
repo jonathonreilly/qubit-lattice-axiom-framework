@@ -19,7 +19,7 @@ MANIFEST = {
 
 REQUIRED_SOURCE_MARKERS = {
     "endpoint_checker": [
-        "from scripts import lattice_3d_dense_10prop as dense",
+        "import scripts.lattice_3d_dense_10prop as dense",
         "for z_mass in [2, 3, 4, 5, 6]",
         "dense.classify_sign",
         "ASSERTIONS:",

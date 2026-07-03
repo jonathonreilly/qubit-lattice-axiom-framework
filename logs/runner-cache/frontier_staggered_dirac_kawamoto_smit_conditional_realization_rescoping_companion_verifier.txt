@@ -1,9 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/frontier_staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_verifier.py
+runner_sha256: ccf761fb04ecea3572d32e60f4d89e2ec6e85021cb7b435013a2b6c6937f0889
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
+[PASS] epsilon is the unique scalar edge-flip grading on (2, 2, 2) up to global sign
+       rank=7, vertices=8
+[PASS] epsilon is the unique scalar edge-flip grading on (2, 3, 4) up to global sign
+       rank=23, vertices=24
 [PASS] epsilon flips on every checked nearest-neighbor link
 [PASS] omega(x)=epsilon(x) omega_global gives the required sign reversal across links
+[PASS] Omega(x)=epsilon(x) Omega_global is derived, not supplied independently
+       uses the chirality-parity bridge normalization Omega_global=iI
 [PASS] Kawamoto-Smit eta_1 is identically one
 [PASS] Kawamoto-Smit eta_2 is (-1)^x_1
 [PASS] Kawamoto-Smit eta_3 is (-1)^(x_1+x_2)
 [PASS] global phase gauge cancels in the chirality ratio
 
-SCORECARD PASS=6 FAIL=0
-FINDING: H_staggered_chirality is a clean conditional premise; given it, the checked Kawamoto-Smit phase surface is consistent.
+SCORECARD PASS=9 FAIL=0
+FINDING: H_staggered_chirality is supplied by the narrow chirality-parity bridge; the checked Kawamoto-Smit phase surface is still bounded and does not close the full staggered-Dirac gate.
+
+----- stderr -----
+

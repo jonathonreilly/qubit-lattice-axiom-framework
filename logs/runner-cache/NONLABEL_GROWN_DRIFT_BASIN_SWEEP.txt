@@ -1,11 +1,40 @@
 ===== runner cache v1 =====
 runner: scripts/NONLABEL_GROWN_DRIFT_BASIN_SWEEP.py
-runner_sha256: 1160871e90b46b095d6b28471064a34f298b6724a061d4815fb674bc92db7e4b
+runner_sha256: 29c33217289a76973974194887ae7bda389612391585891048fb3a60b9c8398b
 timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.01
-status: timeout
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
 ----- stdout -----
+==========================================================================================
+NON-LABEL GROWN DRIFT BASIN FROZEN LOG VERIFIER
+log: logs/2026-04-06-nonlabel-grown-drift-basin-sweep.txt
+==========================================================================================
+drift=0.15 seed=0 zero=+0.000e+00 neutral=+0.000e+00 plus=-3.582e-05 minus=+3.580e-05 double=-7.164e-05 exp=1.000 PASS
+drift=0.15 seed=1 zero=+0.000e+00 neutral=+0.000e+00 plus=-4.494e-05 minus=+4.493e-05 double=-8.989e-05 exp=1.000 PASS
+drift=0.15 seed=2 zero=+0.000e+00 neutral=+0.000e+00 plus=-3.335e-05 minus=+3.334e-05 double=-6.672e-05 exp=1.000 PASS
+drift=0.20 seed=0 zero=+0.000e+00 neutral=+0.000e+00 plus=-3.535e-05 minus=+3.534e-05 double=-7.071e-05 exp=1.000 PASS
+drift=0.20 seed=1 zero=+0.000e+00 neutral=+0.000e+00 plus=-4.754e-05 minus=+4.754e-05 double=-9.510e-05 exp=1.000 PASS
+drift=0.20 seed=2 zero=+0.000e+00 neutral=+0.000e+00 plus=-3.163e-05 minus=+3.162e-05 double=-6.327e-05 exp=1.000 PASS
+drift=0.25 seed=0 zero=+0.000e+00 neutral=+0.000e+00 plus=-3.486e-05 minus=+3.485e-05 double=-6.974e-05 exp=1.000 PASS
+drift=0.25 seed=1 zero=+0.000e+00 neutral=+0.000e+00 plus=-5.007e-05 minus=+5.006e-05 double=-1.001e-04 exp=1.000 PASS
+drift=0.25 seed=2 zero=+0.000e+00 neutral=+0.000e+00 plus=-2.967e-05 minus=+2.966e-05 double=-5.934e-05 exp=1.000 PASS
+
+Live drift recompute artifact
+  runner=scripts/nonlabel_grown_drift_basin_recompute_audit_2026_06_08.py status=ok exit=0
+  runner_sha_fresh=True rows=9 scorecard_pass=True
+  recompute drift=0.15 seed=0 plus=-3.581520247076e-05 minus=+3.580391460085e-05 double=-7.164167797833e-05 exp=1.000227030333 PASS
+  recompute drift=0.15 seed=1 plus=-4.494182760190e-05 minus=+4.493278558378e-05 double=-8.989268092728e-05 exp=1.000144861852 PASS
+  recompute drift=0.15 seed=2 plus=-3.335466021460e-05 minus=+3.334332694150e-05 double=-6.672063979212e-05 exp=1.000244778441 PASS
+  recompute drift=0.20 seed=0 plus=-3.534838056581e-05 minus=+3.533742984684e-05 double=-7.070769755103e-05 exp=1.000223160122 PASS
+  recompute drift=0.20 seed=1 plus=-4.754446944324e-05 minus=+4.753643847426e-05 double=-9.509695367944e-05 exp=1.000121595791 PASS
+  recompute drift=0.20 seed=2 plus=-3.162959538369e-05 minus=+3.161845900196e-05 double=-6.327031399777e-05 exp=1.000253655136 PASS
+  recompute drift=0.25 seed=0 plus=-3.486319988640e-05 minus=+3.485264793394e-05 double=-6.973693807340e-05 exp=1.000218029402 PASS
+  recompute drift=0.25 seed=1 plus=-5.006930848891e-05 minus=+5.006228368638e-05 double=-1.001456258909e-04 exp=1.000100973736 PASS
+  recompute drift=0.25 seed=2 plus=-2.966615744143e-05 minus=+2.965522486762e-05 double=-5.934323513057e-05 exp=1.000265506876 PASS
+
+SAFE READ: bounded positive drift basin; verifier checks frozen rows and the SHA-fresh live recompute artifact.
+SCORECARD PASS=10 FAIL=0
 
 ----- stderr -----
 

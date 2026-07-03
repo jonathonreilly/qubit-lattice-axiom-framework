@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/delta_magnitude_massless_gravity_scale_runner.py
+runner_sha256: 192985a7aab88be42857764da0d1c1fb782e12f3fd4ac1af5ca7610b86675bf9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+==============================================================================
+delta MAGNITUDE routes to the massless-gravity IR scale; FORM robust  [class A]
+==============================================================================
+
+-- (1) massless gravity (mu^2->0): monopole diverges, corner-Fock G/8 is IR-safe --
+  [PASS] the q=0 monopole |Vq(0)| = G/mu^2 DIVERGES as mu^2 -> 0 (massless-gravity IR scale)  (|Vq(0)|(mu2=1e-2,1e-4,1e-6) = ['5.0e+03', '5.0e+05', '5.0e+07'])
+  [PASS] the corner (Fock) part |Vq(Delta k)| = G/(8+mu^2) -> G/8 is mu^2-INDEPENDENT (the IR-SAFE piece)  (-> G/8 = 6.2500)
+
+-- (2) the J-I FORM is corner-protected and IR-robust --
+  [PASS] eps(Delta k)=8 for all three generation pairs (mu^2-independent) => exact C3 (J-I) form is corner-protected, independent of the magnitude  (eps(Delta k) = [8.0, 8.0, 8.0])
+
+-- (3) the emergent coupling is K-real (lies in the sieve's span_R{I, C+C^2}) --
+  [PASS] the C3-invariant coupling J-I equals the einselection sieve's cone generator C+C^2
+  [PASS] delta=-0.4: the emergent |K| is K-REAL (real coeff on J-I=C+C^2 => K-real cone => 2-sector partition)  (max|Im(K)|=0e+00)
+  [PASS] delta=+0.4: the emergent |K| is K-REAL (real coeff on J-I=C+C^2 => K-real cone => 2-sector partition)  (max|Im(K)|=0e+00)
+
+-- (4) conditional hierarchy-window check (sieve selects by |K|-vs-mass order) --
+  [PASS] inside a supplied hierarchy window, the lightest sector is |K|-dominated and the heaviest is mass-dominated: the ordering argument is insensitive to the precise magnitude and sign of K in that window  (window spans 1e-03..1e+03; only the |K|-vs-mass ORDER matters)
+
+==============================================================================
+TOTAL: PASS=7 FAIL=0
+VERDICT: the magnitude of delta/|K| routes to the framework's MASSLESS-GRAVITY mediator scale (the monopole is the IR-divergent gravity scale; the corner-Fock G/8 is IR-safe) = the single open gravity-scale derivation (scale-reference primitive); it does not close a flavor value. The C3 (J-I) FORM is corner-protected and IR-robust, the real single-hop emergent |K| is K-real, and a supplied hierarchy window can make the pointer-ordering argument insensitive to the precise magnitude. No flavor value (r, Q) is forced.
+
+----- stderr -----
+

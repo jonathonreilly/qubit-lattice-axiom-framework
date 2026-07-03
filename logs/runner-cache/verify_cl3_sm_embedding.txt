@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/verify_cl3_sm_embedding.py
-runner_sha256: 136a875283bac7d12c588df8ddd0524dba1482781444e1c97ab986934c1347f5
+runner_sha256: c4e016929e5444bbca9d0c7b7c9ce0d7784980c9f10512927199744d821c5cd5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 
@@ -70,7 +70,7 @@ status: ok
   [PASS] Section E
 
 ==============================================================
-  F: Hypercharge Y: eigenvalues +1/3 (6D quark) and -1 (2D lepton)
+  F: Y operator: eigenvalues +1/3 (6D symmetric) and -1 (2D antisymmetric)
 ==============================================================
   [PASS]   P_symm is a projector
   [PASS]   P_antisymm is a projector
@@ -80,12 +80,12 @@ status: ok
   [PASS]   Tr(Y) = 0  (Tr(Y) = -2.22e-16)
   [PASS]   Y eigenvalue +1/3 has multiplicity 6  (got 6)
   [PASS]   Y eigenvalue -1 has multiplicity 2  (got 2)
-  [PASS]   SM interpretation: Y=+1/3 matches quark L doublet (3c x 2 iso = 6D)  (3 color x 2 weak-doublet states)
-  [PASS]   SM interpretation: Y=-1 matches lepton L doublet (1 x 2 iso = 2D)  (1 antisym-base x 2 weak-doublet states)
+  [PASS]   Y=+1/3 symmetric block has dimension 6  (six-dimensional symmetric block)
+  [PASS]   Y=-1 antisymmetric block has dimension 2  (two-dimensional antisymmetric block)
   [PASS] Section F
 
 ==============================================================
-  G: S3 action on taste cube: C^8 = 4A1+2E; hw=1 triplet = 3 generations
+  G: S3 action on taste cube: C^8 = 4A1+2E; hw=1 triplet = Z3 orbit
 ==============================================================
   [PASS]   T12^2 = I8
   [PASS]   T23^2 = I8
@@ -99,8 +99,8 @@ status: ok
   [PASS]   chi(3-cycle)=2  (got 2.0)
   [PASS]   C^8 = 4*A1 + 0*A2 + 2*E  (n_A1=4.0, n_A2=0.0, n_E=2.0)
   [PASS]   hw=1 triplet: chi(2c)=1, chi(3c)=0  (  -> A1+E (permutation rep of 3-orbit))
-  [PASS]   hw=1 Y spectrum: {-1, +1/3, +1/3}  (quark-like x2, lepton-like x1)  (got [-1.      0.3333  0.3333])
-  [PASS]   hw=1 T3 eigenvalues: {-1/2, +1/2, +1/2}  (one down-type, two up-type)  (got [-0.5  0.5  0.5])
+  [PASS]   hw=1 Y spectrum: {-1, +1/3, +1/3}  (got [-1.      0.3333  0.3333])
+  [PASS]   hw=1 T3 eigenvalues: {-1/2, +1/2, +1/2}  (got [-0.5  0.5  0.5])
   [PASS] Section G
 
 ==============================================================
@@ -123,6 +123,10 @@ status: ok
   [PASS]   R_conn = (N_c^2-1)/N_c^2 = 0.888889 = 8/9
   [PASS]   Fierz: sum_a T^a_ij T^a_kl = delta/2 - delta/(2N_c)  (max err 5.6e-17)
   [PASS]   R_conn from Fierz = 0.888889 = (N_c^2-1)/N_c^2
+  [PASS]   identity generator T^0 = I/sqrt(2N_c) has Tr(T^0 T^0)=1/2  (trace=0.500000)
+  [PASS]   T^0 channel contributes delta_ij delta_kl/(2N_c)  (max err 5.6e-17)
+  [PASS]   HS unit S=I/sqrt(N_c) contributes delta_ij delta_kl/N_c  (Tr(S^2)=1.000000, max err 1.1e-16)
+  [PASS]   SU(N) Fierz plus T^0 gives full U(N) completeness with T_F=1/2  (max err 1.1e-16)
   [PASS]   EW correction sqrt(1/R_conn) = sqrt(9/8) = 1.060660
   [PASS] Section I
 
@@ -143,10 +147,10 @@ status: ok
   [PASS] Section J
 
 ==============================================================
-  SUMMARY  [PASS=95, FAIL=0]
+  SUMMARY  [PASS=99, FAIL=0]
 ==============================================================
 
-Cl(3)/Z^3 -> SM Embedding Theorem — algebraic checks complete.
+Finite Cl(3)/taste-cube support packet — algebraic checks complete.
 
   A. Cl(3) generators {Gamma_i} on 8D taste space: anticommutation exact.
   B. Cl+(3) ≅ H: bivectors square to -I, quaternion products correct, su(2) closes.
@@ -157,10 +161,10 @@ Cl(3)/Z^3 -> SM Embedding Theorem — algebraic checks complete.
      sin^2(theta_W)(bare) = 4/9.
   E. Physical SU(2)_weak = fiber ops {I4 x sigma_i/2} commute with Y.
      Isomorphic to Cl+(3) bivector SU(2) as abstract Lie algebra.
-  F. Hypercharge Y: +1/3 on 6D quark block, -1 on 2D lepton block. Traceless.
-  G. S3 on C^8 = 4A1+2E; hw=1 triplet = 3 generation candidates, Z3-related.
+  F. Y operator: +1/3 on 6D symmetric block, -1 on 2D antisymmetric block. Traceless.
+  G. S3 on C^8 = 4A1+2E; hw=1 triplet is a Z3-related three-state orbit.
   H. SU(3)_c on symmetric base: T_F=1/2; [SU(3),SU(2)]=0; [SU(3),Y]=0.
-  I. N_c=3 from Z^3; R_conn=8/9; sqrt(9/8) EW correction; Fierz verified.
+  I. N_c=3 from Z^3; R_conn=8/9; sqrt(9/8) EW correction; Fierz + identity channel verified.
   J. L-sector determinant support: det(H_L)>=0 forced by Kramers degeneracy T^2<0 on L-sector.
 
 Support targets sharpened by this packet:

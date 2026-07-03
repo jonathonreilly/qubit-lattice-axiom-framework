@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
 """
-DM PMNS chamber spectral completeness theorem.
+DM PMNS chamber spectral listed-root support packet.
 
 Question:
-  After the asymptotic pure-source no-go closes the infinity loophole, can the
-  remaining compact chamber problem be solved exactly enough to enumerate the
-  chamber chi^2 = 0 PMNS roots?
+  After the asymptotic pure-source no-go closes the infinity loophole, what is
+  actually supported for the remaining compact chamber problem?
 
 Answer:
-  Yes, on this branch.  The ordered-eigenvalue inverse system on the two
-  electron-axis-3 branches has exactly four real roots on each parity branch,
-  and the chamber inequality keeps exactly three of them:
+  Bounded listed-root support only.  The ordered-eigenvalue inverse system on
+  the two electron-axis-3 branches recovers four listed real roots on each
+  parity branch in this finite multistart run, and the chamber inequality
+  keeps three listed survivors:
 
     sigma = (2,1,0): Basin 1, Basin 2, Basin N, Basin P   -> chamber keeps 1,2
     sigma = (2,0,1): Basin X, X_a, X_b, X_c               -> chamber keeps X
 
-  An independent direct chamber solve over all six row permutations returns the
-  same three chamber roots and no others.
+  The Krawczyk companion certifies existence/local uniqueness and chamber sign
+  for the listed boxes.  The upper-bound/no-other-roots side remains open.
 """
 
 from __future__ import annotations
@@ -370,7 +370,7 @@ def print_branch_table(label: str, roots: list[np.ndarray], chart_fn, perm: tupl
 
 def main() -> int:
     print("=" * 88)
-    print("DM PMNS CHAMBER SPECTRAL COMPLETENESS THEOREM")
+    print("DM PMNS CHAMBER SPECTRAL LISTED-ROOT SUPPORT PACKET")
     print("=" * 88)
 
     basin1 = (0.6570613422097703, 0.9338063437590336, 0.7150423295873919)
@@ -401,7 +401,11 @@ def main() -> int:
         rng_seed=20260420,
     )
     print_branch_table("sigma=(2,1,0)", roots_210, sigma210_chart_from_lams, SIGMA_210)
-    check("sigma=(2,1,0) reduced system has exactly four real ordered roots", len(roots_210) == 4, f"count={len(roots_210)}")
+    check(
+        "finite multistart recovers the four listed sigma=(2,1,0) ordered roots",
+        len(roots_210) == 4,
+        f"count={len(roots_210)}; not a global upper-bound certificate",
+    )
     check(
         "sigma=(2,1,0) roots reproduce the expected Basin 1 / Basin 2 / Basin N / Basin P chart points",
         all(
@@ -423,7 +427,11 @@ def main() -> int:
         rng_seed=20260421,
     )
     print_branch_table("sigma=(2,0,1)", roots_201, sigma201_chart_from_lams, SIGMA_201)
-    check("sigma=(2,0,1) reduced system has exactly four real ordered roots", len(roots_201) == 4, f"count={len(roots_201)}")
+    check(
+        "finite multistart recovers the four listed sigma=(2,0,1) ordered roots",
+        len(roots_201) == 4,
+        f"count={len(roots_201)}; not a global upper-bound certificate",
+    )
     check(
         "sigma=(2,0,1) reduced system contains the known Basin X chamber root",
         any(np.linalg.norm(sigma201_chart_from_lams(root) - np.array(basin_x)) < 1e-6 for root in roots_201),
@@ -433,11 +441,11 @@ def main() -> int:
     print("Part 3: chamber cut on the reduced spectral roots")
     chamber_210 = [sigma210_chart_from_lams(root) for root in roots_210 if sigma210_chart_from_lams(root)[1] + sigma210_chart_from_lams(root)[2] >= E1 - 1e-9]
     chamber_201 = [sigma201_chart_from_lams(root) for root in roots_201 if sigma201_chart_from_lams(root)[1] + sigma201_chart_from_lams(root)[2] >= E1 - 1e-9]
-    check("sigma=(2,1,0) contributes exactly two chamber roots", len(chamber_210) == 2, f"count={len(chamber_210)}")
-    check("sigma=(2,0,1) contributes exactly one chamber root", len(chamber_201) == 1, f"count={len(chamber_201)}")
+    check("listed sigma=(2,1,0) packet contributes two chamber roots", len(chamber_210) == 2, f"count={len(chamber_210)}")
+    check("listed sigma=(2,0,1) packet contributes one chamber root", len(chamber_201) == 1, f"count={len(chamber_201)}")
     expected_chamber = [np.array(basin1), np.array(basin2), np.array(basin_x)]
     check(
-        "the chamber survivors are exactly Basin 1, Basin 2, and Basin X",
+        "the listed chamber survivors match Basin 1, Basin 2, and Basin X",
         all(any(np.linalg.norm(point - expected) < 1e-6 for expected in expected_chamber) for point in chamber_210 + chamber_201)
         and len(chamber_210 + chamber_201) == 3,
     )
@@ -454,7 +462,11 @@ def main() -> int:
             f"margin={point[1] + point[2] - E1:+.12f}  "
             f"(s12^2,s13^2,s23^2)=({obs['s12sq']:.12f}, {obs['s13sq']:.12f}, {obs['s23sq']:.12f})"
         )
-    check("independent direct chamber solve finds exactly three (point, sigma) roots", len(chamber_roots) == 3, f"count={len(chamber_roots)}")
+    check(
+        "finite direct chamber sweep returns the three listed (point, sigma) roots",
+        len(chamber_roots) == 3,
+        f"count={len(chamber_roots)}; not a global upper-bound certificate",
+    )
     direct_expected = [
         (SIGMA_210, np.array(basin1)),
         (SIGMA_210, np.array(basin2)),
@@ -468,30 +480,34 @@ def main() -> int:
         ),
     )
     check(
-        "the other four row permutations carry no chamber chi^2 = 0 roots in the direct solve",
+        "finite direct chamber sweep finds no listed roots on the other four row permutations",
         {perm for perm, _ in chamber_roots} == {SIGMA_210, SIGMA_201},
         f"perms={sorted({perm for perm, _ in chamber_roots})}",
     )
 
     print()
-    print("Part 5: chamber completeness verdict")
+    print("Part 5: source-support boundary")
     check(
-        "compact chamber completeness closes on this branch: chamber chi^2 = 0 set = {Basin 1, Basin 2, Basin X}",
+        "bounded listed-root support only; chamber upper-bound exclusion remains open",
         True,
-        "reduced spectral solve + independent all-permutation chamber solve agree",
+        "reduced spectral solve + finite all-permutation chamber sweep agree on the listed survivors",
     )
 
     print()
     print("=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  The compact chamber chi^2 = 0 PMNS set is exactly:")
+    print("  The supported listed chamber chi^2 = 0 PMNS packet contains:")
     print("    - Basin 1 on sigma=(2,1,0)")
     print("    - Basin 2 on sigma=(2,1,0)")
     print("    - Basin X on sigma=(2,0,1)")
     print()
-    print("  Off-chamber real roots still exist on both parity branches, but they are")
-    print("  not part of the active chamber completeness problem.")
+    print("  Off-chamber listed real roots still exist on both parity branches, but")
+    print("  they are not part of the active chamber-side packet.")
+    print()
+    print("  DM_PMNS_CHAMBER_LISTED_ROOTS_SUPPORTED=TRUE")
+    print("  DM_PMNS_CHAMBER_COMPLETENESS_UPPER_BOUND_CERTIFIED=FALSE")
+    print("  RESIDUAL_DM_PMNS_CHAMBER=global_upper_bound_no_other_roots")
     print()
     print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

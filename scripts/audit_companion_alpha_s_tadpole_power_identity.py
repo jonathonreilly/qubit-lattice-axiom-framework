@@ -48,6 +48,8 @@ except ImportError:
 
 PASS = 0
 FAIL = 0
+REPO_ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = REPO_ROOT / "docs" / "ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md"
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -80,6 +82,19 @@ def main() -> int:
     # ---------------------------------------------------------------------
     section("Part 0: symbolic setup")
     # ---------------------------------------------------------------------
+
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    check(
+        "source note records the powers=(1,1) counterfactual as the nonidentity diff",
+        "alpha_bare^2*(1 - u_0)/u_0^2" in note_text
+        and "u_0 = 1" in note_text,
+        "prevents source-runner drift in the Validation bullet",
+    )
+    check(
+        "source note no longer states the powers=(1,1) counterfactual as alpha_bare = u_0",
+        "couplings, `(P1)` reduces to `alpha_bare = u_0`" not in note_text,
+        "the correct special boundary is u_0 = 1",
+    )
 
     alpha_bare = Symbol("alpha_bare", positive=True, real=True)
     u_0 = Symbol("u_0", positive=True, real=True)

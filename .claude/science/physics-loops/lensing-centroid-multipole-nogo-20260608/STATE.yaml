@@ -1,0 +1,23 @@
+loop: lensing-centroid-multipole-nogo-20260608
+date: 2026-06-08
+branch: physics-loop/lensing-centroid-multipole-nogo-20260608
+base: origin/main
+mode: run
+target_status: best-honest-status
+active_route: lensing detector-centroid multipole/no-go
+actual_current_surface_status: exact-support/no-go on fixed finite harness
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+target_claim_id: lensing_finite_path_explanation_note
+target_blocker_text: "missing layer-weighted analytical bridge from literal static-mass geometry to detector-centroid kubo_true observable"
+files_touched:
+  - docs/LENSING_CENTROID_MULTIPOLE_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md
+  - scripts/frontier_lensing_centroid_multipole_no_go.py
+  - logs/runner-cache/frontier_lensing_centroid_multipole_no_go.txt
+open_imports:
+  - exact all-refinement/all-family adjoint-centroid cancellation is not proved
+  - independent audit remains required
+no_go_routes:
+  - nonzero nonnegative scalar-potential path/layer reduction of kubo_true
+next_exact_action: "Review-loop should check the no-go boundary and decide whether this should reframe the lensing finite-path blocker around the native adjoint Kubo functional."
+stop_condition: "Coherent science block packaged for PR."

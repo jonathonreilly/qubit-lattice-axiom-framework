@@ -1,0 +1,24 @@
+loop_slug: plaquette-perron-diagnostic-cleanup-20260608
+branch: physics-loop/plaquette-perron-diagnostic-cleanup-20260608
+base: origin/main
+mode: physics-loop
+status: ready_for_review
+target_claim_id: gauge_vacuum_plaquette_tensor_transfer_perron_solve_note
+target_status: exact-support
+active_route: repair the audited conditional cleanup defects in the bounded Perron-solve packet
+hard_residual_attacked: "one-plaquette reference differentiated the wrong truncated identity-evaluation sum; endpoint language overclaimed positivity for degenerate rho samples"
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md
+  - scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py
+  - logs/runner-cache/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.txt
+  - .claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/
+open_imports:
+  - The physical 3D spatial Wilson environment rho_(p,q)(6) remains outside this bounded reference-solve packet.
+  - Canonical P(6)=0.5934 is still a comparator, not an input or derived closure.
+review_disposition: local_pre_review_pass_external_review_requested
+audit_edits: none
+runner_status:
+  perron_runner: "THEOREM PASS=6 SUPPORT=4 FAIL=0"
+next_exact_action: "Submit PR to Codex reviewer/re-audit; do not edit docs/audit in this branch."

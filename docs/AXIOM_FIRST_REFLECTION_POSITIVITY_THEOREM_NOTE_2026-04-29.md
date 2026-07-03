@@ -3,17 +3,25 @@
 **Date:** 2026-04-29 (original); 2026-05-26 (staggered-only narrowing);
 2026-05-27 (single-step spin-basis no-go acknowledgment + 2-step
 narrowing); 2026-05-28 (in-repo first-principles 2-step transfer-matrix
-positivity replacing the prior citation-only treatment).
+positivity replacing the prior citation-only treatment); 2026-06-07
+(Wilson-plane sign-repair source packet, conditional on independent audit of
+the companion bridge note); 2026-06-08 (rerouted through the retained-bounded
+Wilson temporal-gauge bridge).
 **Type:** bounded_theorem
 **Loop:** `axiom-first-foundations`
 **Status authority:** independent audit lane only.
-**Primary runner:** [`scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py`](../scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py)
-(positive 2-step exhibit; in-repo construction + proof: the free staggered-KS 2-step blocked
-transfer matrix `T_hat^2` is positive Hermitian, `T_hat^2 = B^dag B`,
-`H_hat = -log(T_hat^2)/(2 a_tau) >= 0`, derived from the action and
-anchored to the exact free staggered dispersion; single-step `T_hat` is
-shown non-positive in the same construction).
-**Cached positive-runner output:** [`logs/runner-cache/axiom_first_rp_two_step_transfer_matrix_positivity.txt`](../logs/runner-cache/axiom_first_rp_two_step_transfer_matrix_positivity.txt)
+**Primary runner:** [`scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py`](../scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py)
+(parent reroute guard: replays the free staggered 2-step checks C1-C6 through
+the construction runner below, then verifies the retained-bounded Wilson
+temporal-gauge reroute and factorized reduction guard C7).
+**Cached primary-runner output:** [`logs/runner-cache/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.txt`](../logs/runner-cache/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.txt)
+**Free-case construction runner:** [`scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py`](../scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py)
+(positive 2-step exhibit; in-repo construction + proof: the free staggered-KS
+2-step blocked transfer matrix `T_hat^2` is positive Hermitian,
+`T_hat^2 = B^dag B`, `H_hat = -log(T_hat^2)/(2 a_tau) >= 0`, derived from
+the action and anchored to the exact free staggered dispersion; single-step
+`T_hat` is shown non-positive in the same construction).
+**Cached free-case output:** [`logs/runner-cache/axiom_first_rp_two_step_transfer_matrix_positivity.txt`](../logs/runner-cache/axiom_first_rp_two_step_transfer_matrix_positivity.txt)
 **Secondary no-go runner:** [`scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py`](../scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py)
 (no-go demonstration: single-step Lagrangian RP for staggered KS in
 spin basis is verifiably non-PSD; this is the load-bearing exhibit for
@@ -154,15 +162,33 @@ gauge-case reduction, plus the single-step no-go runner:
   explicitly disclaims the Wilson-plaquette boundary application; this
   row therefore cites it only for the abstract identity, not for a
   Wilson-plaquette boundary closure.
+- The **Wilson temporal-gauge bridge for the gauge-half / Wilson-plane
+  application** is supplied by
+  [AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+  and
+  [`audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py`](../scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py).
+  That retained-bounded bridge translates the abstract gauge-half
+  Cauchy-Schwarz hypotheses to the Wilson plaquette temporal-gauge
+  boundary setup: it fixes the Wilson sign as
+  `S_W = -B + constant`, proves the reflection split
+  `B = B_+ + B_- + B_0` with `B_- = Theta B_+`, certifies the
+  reflection-plane kernel `exp(B_0)` as a nonnegative character-coefficient
+  Gram kernel on the displayed tractable groups, and verifies the integrated
+  three-factor form `G = W diag(kappa) W^dag` with `kappa >= 0` on the
+  `A_+^(2)` observable basis. This is the current load-bearing route for
+  the Wilson-plane/gauge-half factor. The older
+  `RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06`
+  source packet is historical context only here and is not a load-bearing
+  dependency of this parent row.
 
 The det-positivity and Cauchy-Schwarz authorities are cited only for
 their stated narrow surfaces, each covering one named factor of the
 proposed gauge-case reduction. The free-case derivation below (now
 captured in the standalone free-case note) is the load-bearing positive
 theorem support, and the fixed-`SU(3)` gauge-extension note carries it
-to nontrivial background; the full interacting gauge closure remains
-limited to the named three-factor reduction claim and must be judged by
-the independent audit lane. This note does not import any fitted value,
+to nontrivial background; the full interacting gauge closure remains limited
+to the named factorized reduction claim and must be judged by the independent
+audit lane. This note does not import any fitted value,
 observed target value, literature numerical comparator, same-surface
 family selector, or admitted unit convention.
 
@@ -188,6 +214,73 @@ space `H_phys^(2)`. With vacuum-energy subtraction,
 
 one has `||T_hat_tilde^2|| = 1` and `H_hat_tilde >= 0`, i.e., the
 2-step-blocked lattice energy spectrum is non-negative.
+
+### 2026-06-08 Wilson temporal-gauge bridge reroute
+
+The latest conditional audit of this row names one remaining parent blocker:
+derive the full Wilson-plaquette gauge-half sesquilinear PSD form for the
+non-time-symmetric, `U`-integrated configuration space, or keep the row
+bounded. Current `main` now has a retained-bounded bridge for exactly the
+Wilson plaquette temporal-gauge / gauge-half application:
+[`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md).
+This row is therefore rerouted through that bridge rather than through the
+unaudited June 6 sign-repair packet.
+
+On the finite factorized `A_+^(2)` surface above, for generators
+
+```text
+    F(U,chi) = F_G(U) F_f(chi),
+```
+
+the audited temporal-gauge bridge uses the corrected Wilson sign convention
+
+```text
+    S_W = -B + constant,       exp(-S_W) = constant * exp(B),
+```
+
+so the reflection-plane Boltzmann factor is `exp(B_0)`, not an
+anti-ferromagnetic `exp(-beta Re Tr)` kernel. The bridge proves the reflection
+split `B = B_+ + B_- + B_0`, realizes the Wilson-plane kernel as a
+nonnegative character-coefficient Gram kernel, and verifies the integrated
+three-factor RP form
+
+```text
+    G = W diag(kappa) W^dag,      kappa >= 0
+```
+
+on the stated `A_+^(2)` observable basis. Under that bridge, the parent
+reflected form decomposes into the product/integral of four non-negative
+factors:
+
+```text
+    <Theta(F) F>
+      = integral dU
+          K_mixed(U)
+          det(M_KS[U] + m I)
+          || exp(-S_+(U)) F_G(U) ||^2
+          <vac_U | F_f^dag T_hat^2[U] F_f | vac_U>.
+```
+
+The signs of the four factors are supplied one hop:
+
+- `K_mixed(U) > 0` from the temporal-gauge mixed-kernel factorization
+  theorem
+  [GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md](GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md);
+- `det(M_KS[U] + m I) > 0` from the staggered determinant positivity
+  theorem;
+- the gauge-half norm square / plane-kernel PSD from the audited Wilson
+  temporal-gauge bridge, with the abstract Cauchy-Schwarz note used only for
+  the finite norm-square identity it actually proves;
+- `<vac_U | F_f^dag T_hat^2[U] F_f | vac_U> >= 0` from the fixed-background
+  two-step transfer positivity theorem, with the free construction below as
+  its explicit specialization.
+
+Finite linear combinations inherit a positive semidefinite Gram form by
+polarization over these same factorized generators. This reroute supplies the
+missing Wilson-plane application named in this row's latest conditional verdict
+from a retained-bounded source. This note still does not mark this parent row
+or any downstream row retained; independent audit must judge the composed
+parent claim.
 
 ### In-repo first-principles construction and proof (free case)
 
@@ -304,9 +397,10 @@ The intended `SU(3)`-gauged staggered 2-step RP closure is the
 following reduction target:
 
 ```text
-    (fermion-sector 2-step transfer positivity)         [in-repo derived]
-  x (positive determinant weight det(M_KS + m I) > 0)   [retained dep]
-  x (gauge-half Cauchy-Schwarz norm-square)             [retained_bounded dep]
+    (temporal-gauge mixed kernel K_mixed(U) > 0)          [retained dep]
+  x (positive determinant weight det(M_KS + m I) > 0)     [retained dep]
+  x (Wilson gauge-half plane-kernel/norm-square bridge)   [retained_bounded dep]
+  x (fixed-background 2-step fermion transfer positivity) [retained_bounded dep]
 ```
 
 The fermion-sector 2-step transfer-matrix positivity is supplied
@@ -319,10 +413,12 @@ temporal gauge) is the retained_bounded note
 [RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md).
 The positive gauge weight is the retained Case A determinant note
 (`det(M_KS + m I) = prod (m^2 + sigma_i^2) >= m^n > 0`
-config-by-config on every `SU(3)` background), and the gauge/bosonic
-half is the retained gauge-half Cauchy-Schwarz norm-square note. The
-full interacting `U`-integrated positivity is not claimed beyond this
-explicitly scoped three-factor reduction target.
+config-by-config on every `SU(3)` background). The gauge/bosonic half is
+now routed through the retained-bounded Wilson temporal-gauge bridge plus the
+abstract gauge-half Cauchy-Schwarz identity, rather than through the abstract
+identity alone. The full interacting `U`-integrated positivity is not claimed
+beyond this explicitly scoped factorized reduction target and remains subject
+to independent audit of this parent row.
 
 This replaces the prior citation-only treatment: the 2-step blocked
 positivity is now the in-repo first-principles result above (free case
@@ -431,12 +527,15 @@ does **not** claim:
 - a universal impossibility theorem for every conceivable one-step
   staggered transfer-matrix construction;
 - a from-scratch full interacting `SU(3)` 2-step RP proof: the gauge
-  case is reduced to the two named retained deps (positive determinant
-  weight + gauge-half norm-square), not re-derived;
+  case is reduced to named retained/retained-bounded factor authorities,
+  not re-derived;
 - an interacting-fermion-sector 2-step transfer positivity from scratch
   on a non-trivial `SU(3)` background: the explicit construction is the
   free (`U = 1`) case, and the gauge sector enters only through the
   retained positive determinant weight;
+- an author-applied retained status for this parent row; the Wilson
+  temporal-gauge bridge is cited at its own retained-bounded scope, and this
+  row's composed parent claim still requires independent audit;
 - a full staggered + Wilson fermion RP theorem;
 - an unconditional Wilson-sector determinant positivity statement;
 - continuum-limit / OS-reconstruction RP from this lattice setup
@@ -549,3 +648,9 @@ What this does not support:
   reduction target to the two named retained deps;
 - a full staggered + Wilson-fermion RP theorem;
 - an unconditional Wilson-sector determinant positivity statement.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02](GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md)

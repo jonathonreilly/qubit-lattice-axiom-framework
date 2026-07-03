@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_same_source_ew_higgs_authority_gate.py
+runner_sha256: 91df4ba1c8afd4611251dbe16a32b29273f22557504b0caed61bf66eca6782fb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.69
+status: ok
+----- stdout -----
+==============================================================================
+Y_T SAME-SOURCE EW/HIGGS AUTHORITY GATE
+==============================================================================
+
+Part 1: anchors and audit status
+[PASS] docs/YT_SAME_SOURCE_EW_HIGGS_AUTHORITY_GATE_NOTE_2026-05-25.md exists
+[PASS] docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md exists
+[PASS] docs/YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md exists
+[PASS] docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md exists
+[PASS] docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
+[PASS] note contains required section: Authority Test
+[PASS] note contains required section: Why The Qubit / Signed-Record Axiom Helps But Does Not Finish
+[PASS] note contains required section: Exact Obstruction Witness
+[PASS] note contains required section: What This Adds
+[PASS] note contains required section: Non-Claims
+[PASS] source-action support status is retained_bounded
+[PASS] EW Higgs gauge-mass theorem is retained
+
+Part 2: source-action support identity
+[PASS] site 0 RN score is centered signed record: 7.568834448079542e-11
+[PASS] site 1 RN score is centered signed record: 8.70310490341808e-11
+[PASS] primitive source carrier is real one-component per site: epsilon_x in {-1,+1}
+
+Part 3: EW Higgs theorem requires doublet/covariant structure
+[PASS] Higgs vacuum is a two-component complex doublet
+[PASS] T1 acts nontrivially on H0: Matrix([[sqrt(2)*v/4], [0]])
+[PASS] T2 acts nontrivially on H0: Matrix([[-sqrt(2)*I*v/4], [0]])
+[PASS] T3 + Y leaves H0 neutral
+[PASS] hypercharge generator has Y_H=1/2 on H
+
+Part 4: carrier ray is present; full EW transfer response is not
+[PASS] neutral carrier-ray bridge is present
+[PASS] strict W/Z denominator response is present
+[PASS] symbolic top response row is present
+[PASS] source-action support says it is not full physical neutral EW/Higgs authority
+[PASS] EW theorem assumes Higgs doublet
+[PASS] EW theorem assumes standard covariant derivative
+[PASS] two radial embeddings differ unless slope is separately fixed: [a1]
+[PASS] no coefficient-certified top/W FH row certificate exists
+
+Part 5: firewalls
+[PASS] firewall phrase present: `H_unit`
+[PASS] firewall phrase present: `yt_ward_identity`
+[PASS] firewall phrase present: `y_t_bare`
+[PASS] firewall phrase present: `alpha_LM`
+[PASS] firewall phrase present: plaquette/u0
+[PASS] firewall phrase present: PDG
+[PASS] firewall phrase present: observed W/Z/top masses
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: proposed_retained
+[PASS] forbidden overclaim absent: This gate proves positive Y_T closure
+[PASS] forbidden overclaim absent: This note derives `y_t`
+[PASS] forbidden overclaim absent: This note derives the Higgs doublet
+
+wrote outputs/yt_same_source_ew_higgs_authority_gate_2026-05-25.json
+SUMMARY: PASS=41 FAIL=0
+
+----- stderr -----
+

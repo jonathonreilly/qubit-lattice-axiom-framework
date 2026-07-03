@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_graviton_isotropy_staggered.py
+runner_sha256: 342bbaed8c4a7b6ec965504fb2b6687b629f525476ac845f5820460a0f48b6bd
+timeout_sec: 420
+exit_code: 0
+elapsed_sec: 17
+status: ok
+----- stdout -----
+PASS T1 continuum Dirac tensor diagnostic isotropic: Zener A=0.991 (~1; anisotropy is a lattice effect)
+PASS T2 naive Dirac tensor diagnostic STRONGLY anisotropic: Zener A=2.099 (>1.7, O(1) wrong-fermion artifact)
+PASS T2b naive anisotropy is LEADING (does not vanish as k0->0): A=2.099@k0=0.52 vs 2.093@k0=0.39 (stable)
+PASS T3 staggered op exact scalar spectrum Delta=m^2+sum sin^2(P_mu/2)=1.08156, 4-fold taste mult (max dev 1.3e-15)
+PASS T4 STAGGERED Kaehler-Dirac diagnostic APPROX ISOTROPIC: Zener A=0.975 (N=6), 0.972 (N=8) -- ~40x better than naive
+PASS T4b mass-robust (no naive-Dirac pathology): A=0.982 (m=1), 0.965 (m=0.5) -- stays ~isotropic
+PASS T5 E_g/T_2g CONVERGE on staggered (|A-1|=0.028, few %) vs DIVERGE on naive (|A-1|=1.099, ~40x worse)
+
+Staggered Kaehler-Dirac finite-BZ tensor diagnostic: the framework's staggered
+Kaehler-Dirac fermion gives an APPROXIMATELY ISOTROPIC Zener readout (A~0.97; E_g/T_2g agree to a few %),
+a ~40x improvement over the naive Dirac (A~2.1-2.7, O(1) wrong-fermion anisotropy). The continuum
+is exactly isotropic, so the residual is a small lattice (l=4 cubic-harmonic / vertex-scheme)
+effect, consistent with retained matter-sector SO(4) and the known small cubic lattice-gravity
+anisotropy. BOUNDED on the ~3%% residual and the open conserved-vertex/W-metric bridge.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

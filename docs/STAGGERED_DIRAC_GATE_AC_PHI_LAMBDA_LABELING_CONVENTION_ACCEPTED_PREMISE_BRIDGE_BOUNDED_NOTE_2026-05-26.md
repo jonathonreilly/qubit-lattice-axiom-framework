@@ -62,7 +62,7 @@ an accepted-premise packet entry. The bridge does **not** derive
 (P1) itself — that is the standard labeling-convention move
 foreshadowed by the C_3-preserved meta note (2026-05-08) and proven
 exhaustive by the substep-4 labeling no-go theorem (2026-05-17). The
-bridge does **not** close the parent gate's `audited_renaming`
+bridge does **not** close the parent gate's ledger-recorded audit
 status; that is the independent audit lane's call after reviewing
 this bridge plus its dependency graph.
 
@@ -132,7 +132,7 @@ fitted observational value. All steps (B1)-(B5) are upstream forcing
 arguments plus rational sort arithmetic on three pairwise-distinct
 external sort-key values once (P1) is registered.
 
-The bridge does **not** close the parent gate's `audited_renaming`
+The bridge does **not** close the parent gate's ledger-recorded audit
 status — that is the independent audit lane's call after reviewing
 this bridge plus its dependency graph. The bridge's content is
 limited to: registering (P1) in named-premise form per the auditor's
@@ -203,7 +203,7 @@ arithmetic once (P1) is registered.
   — supplies the substep-4 labeling no-go theorem with explicit
   exhaustiveness of (P1)/(P2)/(P3) closure paths (used in step (B2);
   source note `claim_type = no_go`; audit verdict pending).
-- [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   — supplies the parent-gate context where `AC_φλ` is already named
   as an admitted-context residual. This bridge does not assume parent
   promotion.
@@ -215,8 +215,8 @@ arithmetic once (P1) is registered.
 
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   is the parent gate whose §2.1 carries `AC_φλ` as an explicit
-  admitted-context residual. The gate parent is currently
-  `audited_renaming` (governance status); this bridge formalizes
+  admitted-context residual. The parent-gate audit status is
+  ledger-recorded; this bridge formalizes
   `AC_φλ` in named-premise form per the auditor's "accepted-premise
   packet entries" path. Parent context only; the conditional species-
   label consequence inside that row's prose is reproduced here on
@@ -250,7 +250,7 @@ This bridge does **not** close:
 - derivation of (P1) itself (the standard labeling convention is an
   external naming move foreshadowed by the C_3-preserved meta-note
   and proven exhaustive by the substep-4 labeling no-go);
-- the parent gate's `audited_renaming` status (the gate parent's
+- the parent gate's ledger-recorded audit status (the gate parent's
   audit verdict is the independent audit lane's call after reviewing
   this bridge plus its dependency graph);
 - the gate-closure synthesis's `unaudited` status (the synthesis is

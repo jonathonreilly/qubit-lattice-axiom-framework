@@ -1,11 +1,11 @@
-# Plaquette V=1 Picard-Fuchs ODE: Rank-Bound Citation Note
+# Plaquette V=1 Picard-Fuchs ODE: Finite-Window Rank-Bound Boundary Note
 
-**Date:** 2026-05-06
+**Date:** 2026-05-06; 2026-06-07 finite-window boundary repair.
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
 **Primary runner:** [`scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py`](../scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py)
-(SUMMARY: ALL-ORDER CERTIFICATE PASS=5 FAIL=0)
+(SUMMARY: FINITE-WINDOW BOUNDARY PASS=5 FAIL=0)
 **Cached runner output:** [`logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt`](../logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt)
 **Certificate JSON:** [`outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json`](../outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json)
 **Source packet verifier:** [`scripts/frontier_su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.py`](../scripts/frontier_su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.py)
@@ -14,8 +14,33 @@
 **Source packet verifier JSON:** [`outputs/su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.json`](../outputs/su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.json)
 **Companion context notes:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md)
 and [`PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md).
-The load-bearing all-order bridge for this row is the primary runner and
-certificate JSON above.
+The load-bearing current bridge for this row is finite-window support plus an
+explicit open blocker: the primary runner does **not** certify all-degree
+minimal-annihilator closure.
+
+## 2026-06-07 Audit Boundary Repair
+
+The prior source wording overclaimed the primary runner as an all-order
+minimal-annihilator certificate. The independent audit correctly identified the
+gap: T2 excludes order-`<=2` annihilator cells only on a finite
+`degree <= 30` search grid, so it does not prove absence of lower-order
+polynomial-coefficient annihilators at arbitrary degree.
+
+This repair preserves the useful science and removes the overclaim:
+
+- T1 remains a D-finiteness witness for the Bars/Bessel determinant packet.
+- T2 is finite-grid support: all scanned `r <= 2, d <= 30` cells vanish, and
+  the order-3 degree-2 candidate appears in the grid.
+- T3 is only conditional Bostan-Salvy-Schost arithmetic: if an external
+  all-degree `R=3,D=2` minimal-annihilator bound is supplied, the depth
+  threshold would be exceeded.
+- T4 remains the Frobenius-branch/indicial-polynomial check for the candidate
+  operator.
+- T5 remains the depth-200 regression of the Taylor/recurrence certificates.
+
+**Current source-side status:** bounded finite-window support. This note does
+not claim the all-degree lower-order exclusion and does not promote the V=1
+Picard-Fuchs row beyond independent audit.
 
 ## 2026-06-04 Source Packet Exposure Repair
 
@@ -26,14 +51,14 @@ restricted packet as repo files instead of prose-only excerpts.
 
 **Complete source packet manifest:**
 
-- Primary all-order runner: [`scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py`](../scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py)
+- Primary finite-window boundary runner: [`scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py`](../scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py)
 - Finite-window helper runner: [`scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py`](../scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py)
 - Extended minimality helper runner: [`scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py`](../scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py)
 - Original ODE runner: [`scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py`](../scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py)
-- Primary all-order cache: [`logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt`](../logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt)
+- Primary finite-window boundary cache: [`logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt`](../logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt)
 - Finite-window helper cache: [`logs/runner-cache/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.txt`](../logs/runner-cache/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.txt)
 - Extended helper cache: [`logs/runner-cache/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.txt`](../logs/runner-cache/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.txt)
-- Primary all-order JSON: [`outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json`](../outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json)
+- Primary finite-window boundary JSON: [`outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json`](../outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json)
 - Finite-window helper JSON: [`outputs/su3_v1_picard_fuchs_minimality_2026_05_06.json`](../outputs/su3_v1_picard_fuchs_minimality_2026_05_06.json)
 - Extended helper JSON: [`outputs/su3_v1_picard_fuchs_minimality_extended_2026_05_06.json`](../outputs/su3_v1_picard_fuchs_minimality_extended_2026_05_06.json)
 
@@ -41,10 +66,16 @@ The verifier above checks that all manifest paths exist, the note names each
 path, the helper sources contain the load-bearing exact-rank functions
 `matrix_for_ansatz` and `_rank_via_numeric`, and the runner caches are
 SHA-pinned to the current untruncated source files. This does not set an audit
-verdict; it makes the existing all-order certificate packet independently
-reauditable.
+verdict; it makes the existing certificate packet independently reauditable
+as a finite-window boundary packet.
 
-## 2026-05-29 Audit Repair (all-order certificate wired)
+## 2026-05-29 Audit Repair Attempt (superseded boundary)
+
+The text below records the previous attempted all-order repair route. It is no
+longer the live claim boundary after the 2026-06-07 repair above. In
+particular, statements that T2 supplies an all-degree minimal-annihilator
+certificate are superseded by the finite-window boundary: T2 scans
+`r <= 2, d <= 30` and does not exclude arbitrary coefficient degree.
 
 The 2026-05-28 audit verdict was `audited_conditional`:
 
@@ -52,32 +83,30 @@ The 2026-05-28 audit verdict was `audited_conditional`:
 
 with repair: *"missing_bridge_theorem: provide either a retained explicit SU(3) order/rank ≤ 3 citation or an auditable creative-telescoping/minimal-annihilator certificate closing the all-degree lower-order exclusion."*.
 
-The repo already contains the needed certificate runner and cached output:
+The repo contains a useful finite-window certificate runner and cached output:
 `frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py`.
-This revision wires that certificate as the primary support for this row.
-It supplies the second audit-requested route: an auditable
-creative-telescoping/minimal-annihilator certificate, not a new citation
-or new axiom.
+This runner no longer supplies the audit-requested all-degree
+creative-telescoping/minimal-annihilator closure. It supplies bounded support
+and preserves the open all-degree blocker.
 
-The all-order packet proves:
+The finite-window packet supports:
 
 - `[T1]` `J(β)` is D-finite via the Bars Bessel-determinant identity,
   an explicit holonomic-closure annihilator for the `D_0` summand, and
   Stanley/Lipshitz closure;
-- `[T2]` the effective minimal annihilator has order `R = 3` and
-  coefficient degree `D = 2`; all order-`≤2` cells in the scanned
-  Koutschan-style certificate vanish through coefficient degree `30`;
-- `[T3]` the Bostan-Salvy-Schost depth-sufficiency threshold is
-  `M_0 = 17`, while the runner verifies the candidate ODE through
-  degree `196`, so `L · J = 0` holds identically in `Q[[β]]`;
+- `[T2]` all order-`≤2` cells in the scanned Koutschan-style certificate
+  vanish through coefficient degree `30`, and the order-3 degree-2 candidate
+  appears in that grid;
+- `[T3]` the Bostan-Salvy-Schost depth-sufficiency threshold arithmetic would
+  be `M_0 = 17` if an external all-degree `R=3,D=2` minimal-annihilator bound
+  were supplied; the runner verifies the candidate ODE through degree `196`,
+  but this is conditional arithmetic, not standalone all-order closure;
 - `[T4]` the indicial polynomial `6s(s+3)(s+4)` identifies the unique
   analytic Frobenius branch at `β=0`, normalized by `J(0)=1`;
 - `[T5]` the depth-200 regression rechecks the Taylor and recurrence
   certificates.
 
-Therefore the old split-path statement that the all-degree lower-order
-exclusion was unresolved is superseded for this row by the cached
-all-order certificate.
+Therefore the all-degree lower-order exclusion remains unresolved for this row.
 
 ## Audit gap addressed
 
@@ -179,20 +208,20 @@ coefficient degree ≤ 12.
 
 ## What this gives us
 
-Combining Framework D with the all-order runner certificates, we obtain:
+Combining Framework D with the repaired runner certificates, we obtain only
+bounded finite-window support:
 
-**Theorem (PF ODE and minimal-annihilator certificate):** With `J(β)`
+**Bounded support statement (PF ODE finite-window boundary):** With `J(β)`
 and `L` as above,
 
-(i) `L · J(β) = 0` identically in `Q[[β]]`, not merely through a
-    finite Taylor window. Certificate `[T3]` supplies the
-    Bostan-Salvy-Schost finite-depth sufficiency threshold
-    `M_0 = 17`; the runner verifies zero residual through degree `196`.
+(i) `L · J(β) = 0` is verified by exact Taylor/recurrence checks through the
+    depth-200 packet (`L · J` zero through degree `196`). Promoting this to an
+    identity in `Q[[β]]` requires the external all-degree `R=3,D=2`
+    minimal-annihilator bound that this runner does not certify.
 
-(ii) The effective minimal annihilator has order `3` and coefficient
-     degree `2`. Certificate `[T2]` supplies the Koutschan-style
-     minimal-annihilator/rank certificate and excludes lower-order
-     cells in the recorded search grid.
+(ii) The finite Koutschan-style grid excludes all order-`<=2`,
+     degree-`<=30` cells and finds the order-3 degree-2 candidate `L`.
+     Arbitrary-degree lower-order annihilators remain open.
 
 (iii) The analytic Frobenius branch at `β=0` is unique after
       normalization `J(0)=1`. Certificate `[T4]` computes the indicial
@@ -210,11 +239,11 @@ all-order creative-telescoping/minimal-annihilator certificate.
 
 ## Honest assessment
 
-This note no longer relies on a missing named SU(N) order/rank citation.
-The all-order bridge is supplied by the certificate runner. The result is
-still scoped to the V=1 single-plaquette Wilson integral and does not
-promote any thermodynamic-limit, multi-plaquette, higher-irrep, or
-downstream coupling claim.
+This note no longer claims a missing named SU(N) order/rank citation supplies
+the result. It also no longer claims the runner supplies an all-order bridge.
+The result is scoped to bounded finite-window support for the V=1
+single-plaquette Wilson integral and does not promote any thermodynamic-limit,
+multi-plaquette, higher-irrep, or downstream coupling claim.
 
 ## Errata on the companion note
 
@@ -230,7 +259,7 @@ Aomoto-Gelfand rank theorem.
 
 ```bash
 python3 scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py
-# SUMMARY: ALL-ORDER CERTIFICATE PASS=5 FAIL=0
+# SUMMARY: FINITE-WINDOW BOUNDARY PASS=5 FAIL=0
 ```
 
 The cached run completed with exit code `0` in
@@ -290,10 +319,11 @@ all_order_runner_path: scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certif
 claim_type: bounded_theorem
 claim_scope: >
   V=1 SU(3) PF ODE rank/minimal-annihilator bridge. The all-order
-  certificate proves L.J=0 identically in Q[[beta]], identifies the
-  analytic Frobenius branch at beta=0, and supplies the effective
-  order-3 degree-2 minimal-annihilator certificate. It also records
-  errata on the companion note's "rk(SU(3)) = 3" wording.
+  certificate claim is not retained here. The repaired runner gives
+  finite-window support: L.J is checked through degree 196, the scanned
+  r<=2,d<=30 lower-order grid is empty, the order-3 degree-2 candidate
+  appears, and the Frobenius branch at beta=0 is identified. Arbitrary-degree
+  lower-order annihilator exclusion remains open.
 proposes_addendum_for: plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06
 deps:
   - PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md
@@ -306,7 +336,7 @@ status_authority: independent audit lane
 
 ## Recommended follow-up
 
-Submit this row for independent re-audit with the all-order certificate
+Submit this row for independent re-audit with the repaired finite-window
 runner and JSON output in the restricted packet. Further work should only
 broaden scope beyond V=1 single-plaquette if a separate target asks for
 thermodynamic-limit, multi-plaquette, higher-irrep, or downstream coupling
@@ -314,7 +344,7 @@ claims.
 
 ## Command
 
-The all-order certificate command is:
+The finite-window boundary command is:
 
 ```bash
 python3 scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py
@@ -322,5 +352,5 @@ python3 scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_0
 
 Expected summary (unchanged):
 ```text
-SUMMARY: ALL-ORDER CERTIFICATE PASS=5 FAIL=0
+SUMMARY: FINITE-WINDOW BOUNDARY PASS=5 FAIL=0
 ```

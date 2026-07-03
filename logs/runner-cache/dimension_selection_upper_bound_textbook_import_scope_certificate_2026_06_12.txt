@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/dimension_selection_upper_bound_textbook_import_scope_certificate_2026_06_12.py
+runner_sha256: 80b34c06abe33ed394e00a26a8a63cee2265cdbcf808f48c9d3b237ae14c2909
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Dimension upper-bound textbook-import wrapper scope certificate
+========================================================================
+PASS docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md exists
+PASS docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md exists
+PASS docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md exists
+PASS docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md exists
+PASS scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py exists
+PASS scripts/frontier_coulomb_stability_scaling_repair.py exists
+PASS logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt exists
+PASS logs/runner-cache/frontier_coulomb_stability_scaling_repair.txt exists
+PASS logs/runner-cache/frontier_d3_upper_bound_import_scope_gate_2026_06_06.txt exists
+PASS wrapper has 2026-06-12 Coulomb scope narrowing
+PASS wrapper names this source-packet runner
+PASS wrapper keeps native stable orbit as decisive selector
+PASS wrapper demotes Coulomb side to compatible support
+PASS wrapper no longer asserts hydrogenic spectrum as load-bearing
+PASS wrapper explicitly forbids hydrogenic spectral theorem
+PASS textbook references are parallel context only
+PASS Coulomb support note remains scaling-only
+PASS stable support note keeps full Bertrand theorem out of scope
+PASS D3 gate records finite-set composition
+PASS existing dependency-edge runner stays verdict-free
+PASS Coulomb runner says no EM-sector claim
+PASS stable-orbit cache PASS=8
+PASS Coulomb cache PASS=53 FAIL=0
+PASS D3 gate cache PASS=34 FAIL=0
+PASS wrapper has no audit-retag authority language
+PASS lower packet is {3,4,5}
+PASS native stable upper gives {3}
+PASS Coulomb scaling upper gives {3,4}
+PASS Coulomb scaling is not the selector
+PASS Coulomb scaling is compatible with d=3
+========================================================================
+AUDIT_VERDICT_APPLIED=FALSE
+SUMMARY: PASS=30 FAIL=0
+
+----- stderr -----
+

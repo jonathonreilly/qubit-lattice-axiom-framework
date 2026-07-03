@@ -1,0 +1,80 @@
+===== runner cache v1 =====
+runner: scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py
+runner_sha256: 074624d9d587cad730972355ea14d4370f88f0330f60187f23d893f33fcd1f15
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.61
+status: ok
+----- stdout -----
+
+========================================================================================
+[A] Frame-blindness of every retained substep-1 input (why the retained rows cannot select)
+========================================================================================
+[A] PASS: per-site Fock dim: hard-core = 2 and Grassmann pair = 2 (equal)  (dimension readout is constant across the two frames)
+[A] PASS: ungraded algebra: <sigma_+^(x), sigma_3^(x)> spans dim 64 = 4^3 = full M_{2^3}(C)
+[A] PASS: ungraded algebra: <c_x, c_x^+> spans dim 64 = 4^3 = same full matrix algebra  (identical ungraded algebra: statistics is a frame choice (no-go (C)))
+[A] PASS: retained grading: F^2 = I and Spec(F) = {+1, -1}
+[A] PASS: F-oddness of the hard-core fields: {F, sigma_+^(x)} = 0 for all x
+[A] PASS: F-oddness of the JW fields: {F, c_x} = 0 for all x  (BOTH frames are F-odd: the retained Z2-grading row is frame-blind)
+[A] PASS: F-evenness of bilinears in both frames: [F, a_x^+ a_y] = [F, c_x^+ c_y] = 0
+[A] PASS: open-chain L=4 nearest-neighbour hopping: H_hard_core == H_JW exactly  (T = exp(-tau H) identical => transfer positivity sees no frame difference)
+
+========================================================================================
+[B] The discriminator GL(F): cross-site graded locality relative to the retained parity grading
+========================================================================================
+[B] PASS: JW/Grassmann frame PASSES GL(F): {c_x, c_y} = {c_x, c_y^+} = 0 for x != y
+[B] PASS: JW/Grassmann frame on-site CAR: {c_x, c_x^+} = I, c_x^2 = 0
+[B] PASS: hard-core frame FAILS GL(F): {sigma_+^(x), sigma_+^(y)} != 0 for x != y
+[B] PASS: hard-core frame commutes cross-site instead: [sigma_+^(x), sigma_+^(y)] = 0  (F-odd fields that commute cross-site violate graded locality)
+[B] PASS: free boson: no finite truncation satisfies CCR ([a, a^+] = I impossible, Tr[a, a^+] = 0 != Tr I)  (per-site dim 2 excludes it (retained 05-16 readout))
+[B] PASS: selection certificate: exactly one of three candidates passes {dim = 2} AND GL(F): ['Grassmann/CAR']  (the forcing is CONDITIONAL on GL(F); the baseline does not supply GL(F))
+
+========================================================================================
+[C] Falsification leg: remove GL(F) and the tie returns (the retained no-go is reproduced)
+========================================================================================
+[C] PASS: with GL(F) removed, every remaining tested predicate is constant across the two frames (tie restored)  (reproduces STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING facts (C)/(D))
+[C] PASS: GL(F) is not ungraded-algebra data: the SAME M_{2^N}(C) contains a GL(F)-passing family (c_x) and a GL(F)-failing family (sigma_+^(x))  (no functional of the ungraded algebra alone decides GL(F))
+
+========================================================================================
+[D] Boundary diagnostic (non-load-bearing): this GL(F) row does not consume 04-29 as a supplier
+========================================================================================
+[D] PASS: hard-core ladders VIOLATE the 04-29 S2 hypothesis on-site: [a, a^+] = 1 - 2n != I (defect norm = 2)  (boundary diagnostic only: this note does not consume 04-29 as a GL(F) supplier)
+[D] PASS: so the 04-29 bosonic exclusion is scoped to the FREE (CCR) boson only -- it re-proves the retained dimensional half, not the tie-breaker
+[D] PASS: retained Z2-grading row is carrier, not selector (frame-blindness computed in [A])
+[D] PASS: retained positivity surface is frame-blind (H_hard_core == H_JW computed in [A])  (consistent with retained car_from_positivity_neutrality no-go)
+
+========================================================================================
+[E] Source-packet freshness: one-hop authorities match current main
+========================================================================================
+[E] PASS: source packet status: 04-29 spin-statistics row is retained_bounded and consumed only for CCR/free-boson exclusion
+[E] PASS: source packet status: 05-16 Grassmann/free-CCR bridge is retained
+[E] PASS: source packet status: retained no-go and retained parity-grading rows remain the baseline/non-supplier inputs
+[E] PASS: stale missing-dependency language removed: the note no longer treats 04-29 spin-statistics as unaudited or the 05-16 bridge as pending
+
+========================================================================================
+Summary
+========================================================================================
+  Verified (numpy, tol 1e-12, exact integer-entry constructions):
+    [A] dim, ungraded algebra, retained Z2 grading F, and transfer
+        positivity are each CONSTANT across the two tied frames;
+    [B] GL(F) (cross-site graded locality w.r.t. retained F) is
+        NON-constant: Grassmann/CAR passes, hard-core fails; with the
+        retained dim-2 readout, exactly one candidate survives;
+    [C] removing GL(F) restores the tie (retained no-go reproduced);
+        GL(F) is strictly additional input, not algebra data;
+    [D] boundary diagnostic only: the 04-29 spin-statistics source
+        note's S2 hypothesis is the canonical CCR, which the hard-core
+        boson violates on-site, so this row does not consume 04-29 as
+        a GL(F) supplier;
+    [E] the source packet consumes current retained/retained_bounded
+        one-hop authorities and carries no stale missing-dependency text.
+  BOUNDARY (declared, not claimed): GL(F) is NOT retained and NOT a
+  Tier-A admission. This runner proves a CONDITIONAL selection only;
+  unconditionally, the retained 2026-05-25 no-go stands.
+
+========================================================================================
+TOTAL: PASS=24 FAIL=0
+========================================================================================
+
+----- stderr -----
+

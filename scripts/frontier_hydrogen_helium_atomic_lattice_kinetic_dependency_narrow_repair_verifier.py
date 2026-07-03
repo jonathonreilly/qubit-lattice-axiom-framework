@@ -31,10 +31,10 @@ def record(name: str, ok: bool, detail: str = "") -> None:
     global PASS, FAIL
     if ok:
         PASS += 1
-        LOG.append(f"[PASS] {name}" + (f"  ({detail})" if detail else ""))
+        LOG.append(f"PASS: {name}" + (f" -- {detail}" if detail else ""))
     else:
         FAIL += 1
-        LOG.append(f"[FAIL] {name}" + (f"  ({detail})" if detail else ""))
+        LOG.append(f"FAIL: {name}" + (f" -- {detail}" if detail else ""))
 
 
 # ======================================================================
@@ -250,9 +250,10 @@ print("Scope: bounded_theorem; three narrow repairs (R-A, R-B, R-C) against the 
 print("Does NOT modify parent text. Does NOT claim parent status lifts. Residuals R-D, R-E remain open.\n")
 for line in LOG:
     print(line)
-print(f"\nPASS={PASS}  FAIL={FAIL}\n")
 if FAIL == 0:
-    print("All checks PASSED. Independent review decides status; runner proposes no ledger state.")
+    print("\nAll checks passed. Independent review decides status; runner proposes no ledger state.")
 else:
-    print(f"{FAIL} CHECK(S) FAILED.")
+    print(f"\n{FAIL} check(s) failed.")
+print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
+if FAIL:
     sys.exit(1)

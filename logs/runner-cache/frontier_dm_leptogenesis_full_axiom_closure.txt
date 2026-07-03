@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_leptogenesis_full_axiom_closure.py
+runner_sha256: 04e3cfcdb791ee81c868ab3eece0f18f1a6374e3e01a078973c6dafff22eaf1e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
+DM leptogenesis historical full-closure boundary compatibility
+========================================================================
+  [PASS] 2026-04-15 note cites the legacy runner path
+  [PASS] 2026-04-16 note cites the legacy runner path
+  [PASS] 2026-04-15 note records non-closure and retained transport boundary
+  [PASS] 2026-04-16 note records exact non-closure and H_rad boundary
+  [PASS] exact package keeps the DI saturation ratio fixed (epsilon/epsilon_DI=0.9276209209197268)
+  [PASS] ODE and formal transport agree at the current boundary (direct=4.8295452907666210e-03, formal=4.8295462101914811e-03)
+  [PASS] framework-native exact transport reproduces the historical boundary value (eta/eta_obs=0.1887859295019441)
+Result: historical compatibility only; no full-closure promotion.
+SUMMARY: PASS=7 FAIL=0
+
+----- stderr -----
+

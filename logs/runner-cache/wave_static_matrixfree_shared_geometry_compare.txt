@@ -1,14 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/wave_static_matrixfree_shared_geometry_compare.py
-runner_sha256: 57e92056ecd9526d6aa3e4dc5ac4ffa66a80c4632e9575fec5b4cc939e476340
+runner_sha256: 43510da9662b171b7b6d34cc725113a94bf73a5fae61a9a4be860ca5792f89ac
 timeout_sec: 120
-exit_code: 0
-elapsed_sec: 59.84
-status: ok
+exit_code: -9
+elapsed_sec: 120.02
+status: timeout
 ----- stdout -----
 ============================================================================================================
 WAVE STATIC MATRIX-FREE SHARED-GEOMETRY COMPARE
 ============================================================================================================
+
+------------------------------------------------------------------------------------------------------------
 Shared H = 0.350
 Frozen source z_phys = 3.000 (realized z = 3.150)
 NL=43  PW=5.950  src_layer=14

@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_r_polarization_orbit_quotient_2026_06_09.py
+runner_sha256: c68c09cb111aa50e10bff2902a351166e7f697a44372ea453f4e982ea80d3906
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
+========================================================================================
+KOIDE r-POLARIZATION: ORBIT-QUOTIENT GATE SHARPENING
+========================================================================================
+
+----------------------------------------------------------------------------------------
+K1: landed fork foundations re-derived + cell-by-cell cross-check (hard gate)
+----------------------------------------------------------------------------------------
+  [PASS] central idempotents orthogonal, rank-1, complete
+  [PASS] doublet complex structure: J real, J^2 = -P_d (the canonical J of R[Z_3])
+  [PASS] Koide lever Q = (1+2r)/3 with r = |b|^2/a^2 (re-derived, 300 random draws)
+  [PASS] holomorphic Berezin integral = det (1 complex slot per mode)
+  [PASS] Majorana Berezin = Pfaffian, Pf^2 = det_R (2 real slots per doublet)
+  [PASS] CROSS-CHECK GATE: all four derived cells match the LANDED fork table exactly (real->r=1,Q=1 ; holomorphic->r=1/2,Q=2/3; statistics not decisive)  --  {'real_gaussian': ('1', '1'), 'majorana_berezin': ('1', '1'), 'holo_gaussian': ('1/2', '2/3'), 'holo_berezin': ('1/2', '2/3')}
+
+----------------------------------------------------------------------------------------
+K2: COMPLETENESS -- the polarization dichotomy is exhaustive (new)
+----------------------------------------------------------------------------------------
+  [PASS] Z_3-commutant on the doublet is 2-dimensional: span{1, J} (computed symbolically)  --  free parameters = 2 (x*1 + y*J)
+  [PASS] complex structures compatible with Z_3 are EXACTLY {+J, -J} (x=0, y=+-1)  --  solutions = [(0.0, -1.0), (0.0, 1.0)]
+  [PASS] quaternionic polarization impossible on the doublet (dim_R = 2 < 4)  --  a quaternionic structure needs >= 4 real dims
+  [PASS] the canonical conjugation K maps e_1 <-> e_2, hence J -> -J (the two holomorphic cells are ONE K-orbit)  --  K(e1)=e2 verified
+  [PASS] => the polarization fork {real, holomorphic} is EXHAUSTIVE: r in {1, 1/2}, Q in {1, 2/3} -- a complete dichotomy, not two options among many  --  commutant classification above
+
+----------------------------------------------------------------------------------------
+K3: THE ORBIT QUOTIENT IS THE COMPLEX-SLOT QUOTIENT (new; narrow entailment)
+----------------------------------------------------------------------------------------
+  [PASS] Record (2026-06-05 wording): outcome = K/CPT orbit of the realized central sector; here the orbit partition is {e0} and {e1,e2} (K(e1)=e2 computed above)  --  orbits = [('e0',), ('e1', 'e2')]
+  [PASS] the orbit partition COINCIDES with the R-block/C-block partition of R[Z_3] = R (+) C: orbit {e0} <-> R, orbit {e1,e2} <-> C => the orbit quotient IS the doublet complex-slot quotient (the fork note's named positive route, exhibited)
+  [PASS] ENTAILMENT: a readout on orbits cannot distinguish e_1 from e_2 -- phase-RESOLVED record readouts are excluded; doublet conjugation-invariance I(b) = I(conj b) is ENTAILED by orbit granularity  --  the displayed sector-resolved assignment is NOT a function of the orbit
+  [PASS] HONEST BOUNDARY: both degree-1 (|b|) and degree-2 (|b|^2) functionals factor through the orbit quotient -- orbit granularity does NOT select the slot degree; the residual selector is exactly the existing modulus/(M) atom  --  K-invariance holds for both candidate degrees
+  [PASS] => GATE SHARPENED, not closed: Koide-r and the P2/(M) modulus question are ONE residual atom on the orbit quotient (phase-resolved record readouts excluded; degree selection open)  --  unification, no closure claimed
+
+----------------------------------------------------------------------------------------
+K4: landed measure-weight mechanism + PDG comparator (labeled, never an input)
+----------------------------------------------------------------------------------------
+  [PASS] landed measure fork re-exhibited: real doublet Gaussian weight 2*pi/g vs holomorphic weight pi/g (the factor-2 slot weight behind r = 1 vs 1/2)
+  [PASS] COMPARATOR: the empirical charged-lepton Koide ratio sits on the holomorphic cell Q = 2/3 to ~2e-5 (and the real cell Q = 1 is excluded by ~50%)  --  Q_PDG = 0.666661 vs 2/3 = 0.666667 (diff 6.2e-06)
+  [PASS] honest tension stated: the supplied CW/fluctuation-modulus dynamical route favors the REAL cell (r = 1, refs #2624/#2688) but does not select the readout here; the selector is the named open atom
+
+----------------------------------------------------------------------------------------
+K5: scope
+----------------------------------------------------------------------------------------
+  [PASS] NOT a derivation of r = 1/2; NOT a polarization-selector closure; NOT a mass prediction; the landed fork note's open gate remains open, SHARPENED
+  [PASS] no re-walk of refuted routes: chiral->r=1/2 (refuted), Dyson/Pfaffian det_C (refuted; landed table cross-checked verbatim above), charge-forecloses-r=1/2 (refuted)
+  [PASS] the K3 entailment is NARROW: conjugation-invariance of the doublet record readout, NOT full P2/modulus (which remains its own atom; the earlier 'P2 not Record-derivable' result concerned full modulus and is untouched)
+  [PASS] named next target (sharp, new): does orbit granularity constrain the orbit-space MEASURE class (one-complex-slot vs two-real-slot weights)? -- the precise remaining question, possibly independence-provable
+
+========================================================================================
+SUMMARY: PASS=23 FAIL=0
+========================================================================================
+
+----- stderr -----
+

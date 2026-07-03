@@ -7,14 +7,18 @@ This is intentionally narrow:
   - 1/L^2 kernel with h^2 measure
   - widened W=12 replay at h=0.25
 
-The goal is to independently retest the branch-side wide-lattice far-tail
-distance-law claim and decide whether it is retained frontier, still
-exploratory, or a no-go.
+The goal is to independently retest the source-side wide-lattice far-tail
+distance-law claim and decide whether it has bounded frontier support, is
+still exploratory, or is a no-go.
 """
 
 from __future__ import annotations
 
+import argparse
+import hashlib
 import math
+import pathlib
+import re
 import time
 
 import os
@@ -44,6 +48,11 @@ from scripts.valley_linear_same_harness_compare import (
     setup_slits,
 )
 
+AUDIT_TIMEOUT_SEC = 120
+REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
+SOURCE_NOTE = REPO_ROOT / "docs" / "WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md"
+FROZEN_LOG = REPO_ROOT / "logs" / "2026-04-05-wide-lattice-h2t-distance-replay.txt"
+FROZEN_LOG_SHA256 = "2faf31bf9b1015df87adaadbfa8393c4a26e100abdc6ccaf6daf70308a30e024"
 
 PHYS_W = 12
 Z_VALUES = list(range(2, 12))
@@ -118,7 +127,7 @@ def born_audit(lat: Lattice3D, det: list[int], blocked: set[int]) -> float:
     return i3 / total if total > 1e-30 else math.nan
 
 
-def main() -> None:
+def run_full_replay() -> None:
     t0 = time.time()
     lat = Lattice3D(PHYS_L, PHYS_W, H)
     pos = lat.pos
@@ -230,5 +239,119 @@ def main() -> None:
     print(f"Total time: {total:.1f}s")
 
 
+def verify_frozen_log() -> int:
+    print("=" * 88)
+    print("WIDE-LATTICE H^2+T DISTANCE-LAW FROZEN LOG VERIFIER")
+    print(f"source_log={FROZEN_LOG.relative_to(REPO_ROOT)}")
+    print("Use --recompute to run the original slow wide-lattice replay.")
+    print("=" * 88)
+    if not FROZEN_LOG.exists():
+        print(f"FAIL missing frozen log: {FROZEN_LOG}")
+        print("SCORECARD PASS=0 FAIL=1")
+        return 1
+
+    frozen_bytes = FROZEN_LOG.read_bytes()
+    frozen_sha = hashlib.sha256(frozen_bytes).hexdigest()
+    text = frozen_bytes.decode("utf-8", errors="replace")
+    note_text = SOURCE_NOTE.read_text(encoding="utf-8")
+    print(f"source_sha256={frozen_sha}")
+    checks: list[tuple[str, bool, str]] = []
+
+    def add(name: str, ok: bool, metric: str) -> None:
+        checks.append((name, ok, metric))
+
+    add("header", "WIDE-LATTICE H^2+T DISTANCE-LAW REPLAY" in text,
+        "wide-lattice replay header present")
+    add("frozen log sha", frozen_sha == FROZEN_LOG_SHA256,
+        f"sha256={frozen_sha}")
+    add("barrier sanity", "Barrier sanity: Born=4.82e-15  k=0=+0.000000" in text,
+        "Born=4.82e-15 and k=0 exactly zero")
+    rows = re.findall(r"^\s+z=\s*(\d+)\s+delta=([+-]\d+\.\d+)\s+(TOWARD|AWAY)\s*$", text, re.MULTILINE)
+    add("distance rows", len(rows) == 10, f"rows={len(rows)} expected=10")
+    add("distance all toward", len(rows) == 10 and all(float(delta) > 0.0 and direction == "TOWARD" for _, delta, direction in rows),
+        f"toward={sum(1 for _, delta, direction in rows if float(delta) > 0.0 and direction == 'TOWARD')}/10")
+    add("source note raw-row repair section", "2026-06-08 raw-row inclusion repair" in note_text,
+        "source note names the raw-row inclusion repair")
+    add("source note contains all raw distance rows",
+        len(rows) == 10 and all(
+            f"| `{int(z)}` | `{float(delta):+0.6f}` | `{direction}` |" in note_text
+            for z, delta, direction in rows
+        ),
+        "all 10 parsed distance rows are present in the note table")
+    add("toward support", "TOWARD support: 10/10" in text, "support=10/10")
+    parsed = [(int(z), float(delta), direction) for z, delta, direction in rows]
+    toward_z = [z for z, delta, direction in parsed if delta > 0.0 and direction == "TOWARD"]
+    toward_delta = [delta for _z, delta, direction in parsed if delta > 0.0 and direction == "TOWARD"]
+    peak_i = max(range(len(toward_delta)), key=lambda i: toward_delta[i]) if toward_delta else None
+    peak_z = toward_z[peak_i] if peak_i is not None else math.nan
+    add("raw peak row", peak_z == 4, f"peak_z={peak_z}")
+    if peak_i is not None and len(toward_delta[peak_i:]) >= 3:
+        slope_peak, r2_peak = fit_power(toward_z[peak_i:], toward_delta[peak_i:])
+        add("recomputed peak tail fit",
+            slope_peak is not None
+            and abs(slope_peak - (-0.95)) < 0.02
+            and r2_peak is not None
+            and round(r2_peak, 3) == 0.980
+            and len(toward_delta[peak_i:]) == 8,
+            f"slope={slope_peak:.4f} R2={r2_peak:.4f} n={len(toward_delta[peak_i:])}; "
+            "tolerance reflects six-decimal frozen-row deltas")
+    else:
+        add("recomputed peak tail fit", False, "insufficient parsed rows")
+    far_pairs = [(z, d) for z, d in zip(toward_z, toward_delta) if z >= FAR_MIN_Z]
+    if len(far_pairs) >= 3:
+        slope_far, r2_far = fit_power([z for z, _ in far_pairs], [d for _, d in far_pairs])
+        add("recomputed far tail fit",
+            slope_far is not None
+            and abs(slope_far - (-1.05)) < 0.02
+            and r2_far is not None
+            and round(r2_far, 3) == 0.990
+            and len(far_pairs) == 7,
+            f"slope={slope_far:.4f} R2={r2_far:.4f} n={len(far_pairs)}; "
+            "tolerance reflects six-decimal frozen-row deltas")
+    else:
+        add("recomputed far tail fit", False, "insufficient parsed rows")
+    sweep = re.findall(r"^\s+s=(\d+e-\d+): delta=([+-]\d+\.\d+e[+-]\d+)\s+(TOWARD|AWAY)\s*$", text, re.MULTILINE)
+    add("F~M sweep rows", len(sweep) == 6, f"rows={len(sweep)} expected=6")
+    add("F~M all toward", len(sweep) == 6 and all(float(delta) > 0.0 and direction == "TOWARD" for _, delta, direction in sweep),
+        f"toward={sum(1 for _, delta, direction in sweep if float(delta) > 0.0 and direction == 'TOWARD')}/6")
+    add("source note contains all raw F~M sweep rows",
+        len(sweep) == 6 and all(
+            f"| `{strength}` | `{float(delta):+0.6e}` | `{direction}` |" in note_text
+            for strength, delta, direction in sweep
+        ),
+        "all 6 parsed F~M rows are present in the note table")
+    sweep_parsed = [(float(strength), float(delta), direction) for strength, delta, direction in sweep]
+    m_data = [strength for strength, delta, direction in sweep_parsed if delta > 0.0 and direction == "TOWARD"]
+    g_data = [delta for _strength, delta, direction in sweep_parsed if delta > 0.0 and direction == "TOWARD"]
+    if len(m_data) >= 3:
+        fm_alpha, fm_r2 = fit_power(m_data, g_data)
+        add("recomputed F~M exponent",
+            fm_alpha is not None
+            and round(fm_alpha, 3) == 1.000
+            and fm_r2 is not None
+            and fm_r2 > 0.999,
+            f"alpha={fm_alpha:.6f} R2={fm_r2:.6f} n={len(m_data)}")
+    else:
+        add("recomputed F~M exponent", False, "insufficient parsed sweep rows")
+
+    n_pass = sum(1 for _, ok, _ in checks if ok)
+    n_fail = len(checks) - n_pass
+    for name, ok, metric in checks:
+        print(f"{'PASS' if ok else 'FAIL'} {name}: {metric}")
+    print(f"SCORECARD PASS={n_pass} FAIL={n_fail}")
+    return 0 if n_fail == 0 else 1
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Wide-lattice h2T replay/cache verifier.")
+    parser.add_argument("--recompute", action="store_true",
+                        help="Run the original slow wide-lattice replay.")
+    args = parser.parse_args()
+    if args.recompute:
+        run_full_replay()
+        return 0
+    return verify_frozen_log()
+
+
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

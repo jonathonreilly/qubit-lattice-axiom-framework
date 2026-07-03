@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_source_measure_sharp_record_onb_2026_06_05.py
+runner_sha256: ff04dcbe0c19a648273860d1a6ec417802a854054431f95217e6434294387efb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.30
+status: ok
+----- stdout -----
+================================================================================
+SIX DIAGONAL E_ii OPERATORS — FINITE ORTHONORMAL-BASIS REPROOF
+================================================================================
+
+Part 1: source-note boundary
+[PASS] companion note exists: docs/SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md
+[PASS] note declares pure diagonal component-response lemma
+[PASS] note says it is not a physical Y_T/top/W response theorem
+[PASS] note says it does not derive g_bare
+[PASS] old same-source Y_T/top/W basis phrase is absent
+[PASS] old top/W form-factor matching claim is absent
+[INFO] context target present: docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md
+
+Part 2: fixed C^6 diagonal carrier
+[PASS] ambient vector space dimension is fixed to 6: 6
+[PASS] there are exactly six operators O_i: 6
+[PASS] all six O_i act on the same C^6 ambient space
+[PASS] each O_i is Hermitian
+[PASS] each O_i is idempotent
+[PASS] each O_i has exactly one nonzero diagonal entry: [((0, 0),), ((1, 1),), ((2, 2),), ((3, 3),), ((4, 4),), ((5, 5),)]
+[PASS] the six supports are distinct
+
+Part 3: Hilbert-Schmidt Gram = I_6
+[PASS] HS Gram matrix equals the 6x6 identity: Matrix([[1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0], [0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1]])
+[PASS] each O_i has unit HS norm
+[PASS] distinct O_i are HS-orthogonal
+[PASS] coordinate-vector realization gives the same identity Gram: Matrix([[1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0], [0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1]])
+
+Part 4: diagonal completeness and reconstruction
+[PASS] the six O_i are linearly independent: 6
+[PASS] rank equals dim(D_6) = 6
+[PASS] the six O_i resolve the identity: sum_i O_i = I_6: Matrix([[1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0], [0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1]])
+[PASS] HS coefficients recover the diagonal entries d_i
+[PASS] every symbolic diagonal operator reconstructs exactly
+
+Part 5: democratic diagonal unit
+[PASS] O_dem has unit HS norm: 1
+[PASS] all six components of O_dem equal 1/sqrt(6): [sqrt(6)/6, sqrt(6)/6, sqrt(6)/6, sqrt(6)/6, sqrt(6)/6, sqrt(6)/6]
+[PASS] component amplitude is 1/sqrt(6)
+[PASS] O_dem is invariant under adjacent coordinate swap 0<->1
+[PASS] O_dem is invariant under adjacent coordinate swap 1<->2
+[PASS] O_dem is invariant under adjacent coordinate swap 2<->3
+[PASS] O_dem is invariant under adjacent coordinate swap 3<->4
+[PASS] O_dem is invariant under adjacent coordinate swap 4<->5
+[PASS] adjacent-swap fixed subspace has nullity one: {'rank': 5, 'nullity': 1}
+[PASS] lambda*O_dem has HS norm lambda^2: lambda**2
+[PASS] unit-response condition selects lambda = 1
+
+Part 6: numpy cross-check
+[PASS] numpy HS Gram = I_6 to 1e-12: 0.0
+[PASS] numpy rank of the six O_i is 6: 6
+[PASS] numpy identity resolution holds to 1e-12: 0.0
+[PASS] numpy diagonal reconstruction holds to 1e-12: 0.0
+
+wrote outputs/audit_companion_source_measure_sharp_record_onb_2026_06_05.json
+
+================================================================================
+TOTAL: 37 PASS / 0 FAIL
+SUMMARY: PASS=37 FAIL=0
+
+----- stderr -----
+

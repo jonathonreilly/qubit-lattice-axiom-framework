@@ -1,0 +1,26 @@
+loop_slug: emergent-metric-causal-source-packet-20260608
+branch: physics-loop/emergent-metric-causal-source-packet-20260608
+base: origin/main@467001586
+goal: "Repair audited_conditional missing_dependency_edge on the emergent metric conformal-class note without editing audit data."
+target_status: conditional-support
+actual_current_surface_status: conditional-support
+cycle_count: 1
+active_route: "Explicit one-hop causal-source packet plus source-side status firewall."
+hard_residual: "record_history_order_time_rate_firewall_2026-06-05 and reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06 are unaudited on current main."
+files_touched:
+  - docs/EMERGENT_METRIC_CONFORMAL_CLASS_FROM_RECORDS_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md
+  - scripts/emergent_metric_conformal_class_from_records_runner.py
+  - logs/runner-cache/emergent_metric_conformal_class_from_records_runner.txt
+open_imports:
+  - "HKM/Malament theorem used under explicitly stated Lorentzian-manifold assumptions."
+  - "Record-order and reconstructed-H/LR causal inputs remain conditional until audit retains them."
+trace_gate_classification: direct_blocker_closure
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+verification:
+  - "PYTHONPATH=scripts python3 scripts/emergent_metric_conformal_class_from_records_runner.py -> TOTAL: PASS=52 FAIL=0"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/emergent_metric_conformal_class_from_records_runner.py --force --push-mode=none --allow-non-main --concurrency 1 -> ok"
+  - "git diff -- docs/audit -> empty"
+next_exact_action: "Open PR for review-loop/audit re-audit; do not merge directly."
+stop_condition: "PR opened and verified."

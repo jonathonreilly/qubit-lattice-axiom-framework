@@ -1,0 +1,81 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_signed_linear_democratic_tangent_physical_bridge_attempt.py
+runner_sha256: 0459d906f37b532dc4f3ee341ceee82ffdc07ab0b893a9b5361121f2bd5b05ce
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.90
+status: ok
+----- stdout -----
+========================================================================================
+Y_T SIGNED-LINEAR DEMOCRATIC TANGENT PHYSICAL-BRIDGE ATTEMPT
+========================================================================================
+
+Part 1: anchors and current authority
+[PASS] docs/YT_SIGNED_LINEAR_DEMOCRATIC_TANGENT_PHYSICAL_BRIDGE_ATTEMPT_NOTE_2026-05-25.md exists
+[PASS] docs/MINIMAL_AXIOMS_2026-05-20.md exists
+[PASS] docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md exists
+[PASS] docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md exists
+[PASS] docs/SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md exists
+[PASS] docs/YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md exists
+[PASS] docs/YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md exists
+[PASS] docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
+[PASS] note contains required section: Normalized Physical Trilinear Tensor
+[PASS] note contains required section: Signed-Linear Source Tangent
+[PASS] note contains required section: Exact Lambda Obstruction
+[PASS] note contains required section: Primitive-Unit Branch
+[PASS] note contains required section: Current Status
+[PASS] note contains required section: Why This Is Not The Old Ward Trap
+[PASS] source-action support is retained_bounded
+[PASS] LSP signed-record source support is not retained coefficient authority
+[PASS] one-Higgs gauge selection is not retained coefficient authority
+[PASS] EW mass theorem is retained
+
+Part 2: normalized physical trilinear tensor
+[PASS] color singlet coefficient is 1/sqrt(3): sqrt(3)/3
+[PASS] isospin singlet coefficient is 1/sqrt(2): sqrt(2)/2
+[PASS] combined normalized trilinear coefficient is 1/sqrt(6): sqrt(6)/6
+[PASS] six component coefficients have unit norm: 1
+[PASS] each component coefficient is equal: sqrt(6)/6
+
+Part 3: signed-linear democratic source tangent
+[PASS] component 0 tangent coefficient is 1/sqrt(6): sqrt(6)/6
+[PASS] component 2 tangent coefficient is 1/sqrt(6): sqrt(6)/6
+[PASS] component 5 tangent coefficient is 1/sqrt(6): sqrt(6)/6
+
+Part 4: lambda family obstruction
+[PASS] lambda family gives y_33(lambda)=lambda/sqrt(6): sqrt(6)*lambda/6
+[PASS] positive lambda preserves the democratic ray: Matrix([[sqrt(6)/6], [sqrt(6)/6], [sqrt(6)/6], [sqrt(6)/6], [sqrt(6)/6], [sqrt(6)/6]])
+[PASS] LSP projective probability remains 1/6 on the ray: 1/6
+[PASS] projective probability cannot distinguish lambda: 0
+[PASS] same W denominator row admits different top coefficients: sqrt(2)*y_a/g_2 - sqrt(2)*y_b/g_2
+
+Part 5: primitive-unit branch
+[PASS] primitive signed-record score forces lambda=1: [1]
+[PASS] primitive-unit branch gives y_33=1/sqrt(6): sqrt(6)/6
+[PASS] physical Yukawa equals primitive source tangent remains open
+
+Part 6: firewalls and old-trap audit
+[PASS] firewall phrase present: `H_unit`
+[PASS] firewall phrase present: `yt_ward_identity`
+[PASS] firewall phrase present: `y_t_bare`
+[PASS] firewall phrase present: observed W/Z/top masses
+[PASS] firewall phrase present: PDG values
+[PASS] firewall phrase present: `alpha_LM`
+[PASS] firewall phrase present: plaquette/u0
+[PASS] firewall phrase present: fitted selector
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: Status: retained
+[PASS] forbidden overclaim absent: proposed_retained
+[PASS] forbidden overclaim absent: positive retained Y_T closure
+[PASS] forbidden overclaim absent: unconditional y_33
+[PASS] forbidden overclaim absent: full retained closure
+[PASS] forbidden overclaim absent: old Ward route is repaired
+[PASS] old Ward note records H_unit definition trap
+[PASS] new note does not import old Ward as authority
+
+wrote outputs/yt_signed_linear_democratic_tangent_physical_bridge_attempt_2026-05-25.json
+SUMMARY: PASS=52 FAIL=0
+
+----- stderr -----
+

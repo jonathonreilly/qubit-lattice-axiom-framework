@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cluster_decomp_lr_poisson_tail_repair_2026_06_06.py
+runner_sha256: dd1b2650bbf567d6484c6aff6f52c7ff7b6b37f35d7ca9897f3df9ccca9c043b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+================================================================================
+Repair: Lieb-Robinson / Poisson-tail estimate for cluster_decomposition Step 3
+(addresses the audited_failed proof break; supplies the correct estimate)
+================================================================================
+
+[BLOCK 1] The cited 'elementary inequality' is FALSE (the audited break)
+  [PASS] (a/n)^n <= exp(-n) exp(n log(a/n)) is FALSE for all tested n>0  --  reduces to 1 <= exp(-n) <=> n <= 0
+
+[BLOCK 2] The correct elementary inequalities
+  [PASS] Stirling lower bound: n! >= (n/e)^n  (n=1..60)
+  [PASS] tangent bound: log z >= 1 - 1/z  (all z>0)
+
+[BLOCK 3] The correct Poisson-tail -> light-cone chain
+  [PASS] x=3.0, R=12: tail <= e^x x^R/R! <= e^x(ex/R)^R <= e^(1+e)x e^-R  --  tail=1.43e-03 <= 2.23e-02 <= 1.95e-01 <= 4.29e-01
+  [PASS] x=5.0, R=20: tail <= e^x x^R/R! <= e^x(ex/R)^R <= e^(1+e)x e^-R  --  tail=5.12e-05 <= 5.82e-03 <= 6.55e-02 <= 2.44e-01
+  [PASS] x=2.0, R=9: tail <= e^x x^R/R! <= e^x(ex/R)^R <= e^(1+e)x e^-R  --  tail=1.75e-03 <= 1.04e-02 <= 7.91e-02 <= 2.09e-01
+  [PASS] x=1.0, R=8: tail <= e^x x^R/R! <= e^x(ex/R)^R <= e^(1+e)x e^-R  --  tail=2.79e-05 <= 6.74e-05 <= 4.83e-04 <= 1.38e-02
+  [PASS] => exponential light cone exp(-(d - v_LR|t|)/xi) with R=d/R_int (R>ex)
+
+[BLOCK 4] Light-cone behaviour: decays once outside the cone (R > e x)
+  [PASS] tail strictly decreases as R grows past e*x (genuine clustering outside cone)  --  e*x=8.15; tails=['7.6e-02', '1.4e-03', '2.5e-06', '5.2e-13', '4.4e-25']
+  [PASS] TEETH: inside the cone (R < e x) the tail is O(e^x) (no clustering) -- as expected  --  R=8 < e*x=54.4: tail=4.85e+08 (not small)
+
+[BLOCK 5] Scope of the repair
+  [PASS] repairs L1 (Lieb-Robinson commutator bound / Step 3 math)
+  [PASS] does NOT alone promote L2 (spatial clustering): needs a retained mass-gap authority  --  source note's own scope: LR controls commutators, not static correlators
+  [PASS] constants are honest O(1) light-cone constants (v_LR ~ e J_* D_int R_int, xi=R_int)  --  not a tuned fit
+
+================================================================================
+SCORECARD:  PASS = 13   FAIL = 0
+================================================================================
+
+----- stderr -----
+

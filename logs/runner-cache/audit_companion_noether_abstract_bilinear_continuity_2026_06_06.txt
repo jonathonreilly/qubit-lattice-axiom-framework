@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_noether_abstract_bilinear_continuity_2026_06_06.py
+runner_sha256: 46936a422d52acb0eacbf875f5e9921b12f7b109d37dc5379a1a63e41c4d7a10
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.52
+status: ok
+----- stdout -----
+==============================================================================
+Abstract bilinear continuity and support-envelope theorem
+No staggered carrier, KS phase, physical density bridge, or external input.
+==============================================================================
+
+[Part 0] matrix-unit commutator identity
+  [PASS] [E_ij,E_pq] structure constants hold in concrete Mat_4  (bad_cells=0)
+
+[Part 1] symbolic local continuity for arbitrary bilinear
+  [PASS] global number charge Q commutes with arbitrary H
+  [PASS] i[H,rho_p] equals sum_q J_{p<-q} for every p
+  [PASS] d rho_p/dt + (div J)_p = 0 with outflow divergence
+  [PASS] sum_p d rho_p/dt vanishes exactly
+
+[Part 2] support envelope, orientation, and sign teeth
+  [PASS] J_{p<-q} = -J_{q<-p} orientation antisymmetry
+  [PASS] pair current depends only on c_pq and c_qp
+  [PASS] pair current vanishes when c_pq=c_qp=0
+  [PASS] finite graph coefficient support gives the same finite current support
+  [PASS] flipped continuity sign fails generically  (nonzero_terms=6)
+
+[Part 3] diagonal terms do not create oriented currents
+  [PASS] pure diagonal H gives d rho_p/dt = 0 for every p
+
+==============================================================================
+SUMMARY
+==============================================================================
+  PASS [E_ij,E_pq] structure constants hold in concrete Mat_4 (bad_cells=0)
+  PASS global number charge Q commutes with arbitrary H
+  PASS i[H,rho_p] equals sum_q J_{p<-q} for every p
+  PASS d rho_p/dt + (div J)_p = 0 with outflow divergence
+  PASS sum_p d rho_p/dt vanishes exactly
+  PASS J_{p<-q} = -J_{q<-p} orientation antisymmetry
+  PASS pair current depends only on c_pq and c_qp
+  PASS pair current vanishes when c_pq=c_qp=0
+  PASS finite graph coefficient support gives the same finite current support
+  PASS flipped continuity sign fails generically (nonzero_terms=6)
+  PASS pure diagonal H gives d rho_p/dt = 0 for every p
+
+TOTAL: 11 PASS / 0 FAIL
+
+----- stderr -----
+

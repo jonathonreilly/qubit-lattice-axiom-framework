@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_reduced_a2_closed_form_rung_sixteen_bounded_2026_06_12.py
+runner_sha256: 2263affa98a2ec3a09ea7f42d298ca9d7affd68b29e0c2e160b9430568326da0
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 7.46
+status: ok
+----- stdout -----
+W95 reduced-A2 closed-form bounded runner
+Exact algebra is load-bearing; finite rows are witnesses only.
+PASS: A2 coordinate change diagonalizes Q exactly
+      Q(u,v) = (3*u**2 + v**2)/4
+PASS: A2 coordinate change turns H into the exact cubic chamber multiplier
+      H(u,v) = u*(u - v)*(u + v)/8
+PASS: A2 coordinate change diagonalizes L exactly
+      L = (1/3) partial_uu + partial_vv
+PASS: A2 chamber is a wedge, not a product domain
+      (1, 1) and (2, -2) are in the chamber, but cross point (1, -2) is not
+PASS: H chamber multiplier is not a separated f(u) g(v) product
+      separability determinant = 15/32
+PASS: H carries the chamber-wall vanishing from the dimension factor
+      H(2,2)=0, H(2,-2)=0, H(2,0)=1
+PASS: falsifier: omitting the H dimension factor erases the nonseparability witness
+      correct determinant=15/32, omitted-dimension determinant=0
+PASS: falsifier: wrong N_c changes the leading diagonal-derivative multiplier
+      at (x,y)=(1,2): correct N_c=3 gives 7, wrong N_c=2 gives 14/3
+PASS: falsifier: wrong J normalization changes the L coefficient
+      L(u^2+v^2)=8/3, raw unnormalized operator gives 8
+finite_rung_eleven_witness_rows
+  beta shell c_J c_D margin beta_margin lambda1_over_lambda0
+    15    16 0.811415447696 0.702464978092 0.108950469604 1.634257044064 0.216335855768
+    30    21 0.834363055423 0.779366847031 0.054996208392 1.649886251770 0.204812933383
+    60    28 0.847469446625 0.819818554081 0.027650892544 1.659053552666 0.199245016875
+   120    37 0.854700610938 0.840331338492 0.014369272446 1.724312693536 0.196503452859
+PASS: finite rung-eleven witness keeps c_D < c_J on the sampled grid
+      margins=[0.108950469604, 0.054996208392, 0.027650892544, 0.014369272446]
+PASS: finite rung-eleven witness shows c_D/c_J increasing toward tightness
+      c_D/c_J=[0.86572788, 0.934086, 0.9673724, 0.98318795]
+PASS: finite rung-eleven witness keeps beta*(c_J-c_D) positive and same-scale
+      beta_margins=[1.63425704, 1.64988625, 1.65905355, 1.72431269]
+PASS: note contains required status-authority line
+PASS: note declares source-side claim type without audit verdict
+PASS: note avoids forbidden overreach fragments
+      bad=[]
+PASS: note fences finite rung-eleven numbers as witnesses, not proof inputs
+PASS: note names the exact obstruction step
+PASS: anti-fab source scan: no fit helpers or float-to-rational promotion
+NO DERIVED Phi_i/A_i/B_i CLOSED FORM EMITTED: obstruction at the reduced spectral eigenfunction step.
+TOTAL: PASS=18, FAIL=0
+
+----- stderr -----
+

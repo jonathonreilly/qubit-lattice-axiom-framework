@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_wilson_m_h_tree_at_extremum_leading_order_in_r.py
-runner_sha256: 13508a1c6ba1129109d5d1f09f5751521497a7eb17b3e3d28fbbee4989342857
+runner_sha256: 506ffb4fa372af5a5da423448fd2d052ee766f726934d44a2b85185cfad035bd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 
@@ -24,6 +24,7 @@ status: ok
   [PASS] contains: Claim section header  (marker = '## Claim')
   [PASS] contains: Proof-Walk section header  (marker = '## Proof-Walk')
   [PASS] contains: Exact Arithmetic Check section header  (marker = '## Exact Arithmetic Check')
+  [PASS] contains: post-audit repair section header  (marker = '## Post-audit readout-boundary repair')
   [PASS] contains: Dependencies section header  (marker = '## Dependencies')
   [PASS] contains: Boundaries section header  (marker = '## Boundaries')
   [PASS] contains: Verification section header  (marker = '## Verification')
@@ -34,7 +35,10 @@ status: ok
   [PASS] contains: Wilson correction reduces m_H statement  (marker = 'Wilson correction *reduces* `m_H_tree^W`')
   [PASS] contains: leading-order closure value r ≈ 0.235 stated  (marker = 'r ≈ 0.235')
   [PASS] contains: perturbative validity boundary stated  (marker = 'perturbative expansion fails at')
+  [PASS] contains: Taylor residual repair stated  (marker = 'Taylor-validity certificate')
   [PASS] contains: uniform-N_taste=16 admission cited  (marker = 'uniform-`N_taste = 16`')
+  [PASS] contains: readout boundary certificate cited  (marker = 'WILSON_EXTREMUM_CURVATURE_READOUT_BOUNDARY_CERTIFICATE_2026-06-15')
+  [PASS] contains: all-orders consistency certificate cited  (marker = 'WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08')
   [PASS] contains: non-derived admission flagged in boundaries  (marker = 'non-derived')
   [PASS] contains: V_taste^W extremum upstream cited (sister)  (marker = 'WILSON_VTASTE_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08')
   [PASS] contains: V_taste^W formula upstream cited (sister)  (marker = 'WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08')
@@ -65,6 +69,8 @@ status: ok
  Part 3: cited upstreams (with graceful same-batch handling)
 ----------------------------------------------------------------------------------------
   [PASS] upstream exists: docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md
+  [PASS] upstream exists: docs/WILSON_EXTREMUM_CURVATURE_READOUT_BOUNDARY_CERTIFICATE_2026-06-15.md
+  [PASS] upstream exists: docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md
   [PASS] upstream exists: docs/HIGGS_MASS_FROM_AXIOM_NOTE.md
   [PASS] upstream exists: docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md
   [PASS] upstream exists: docs/MINIMAL_AXIOMS_2026-05-03.md
@@ -115,7 +121,7 @@ status: ok
   [PASS] leading-order matching value r ≈ 0.235 (with u_0 = 0.8776)  (computed r^2 = 0.055563, expected ≈ 0.235^2, diff = 0.000338)
 
 ----------------------------------------------------------------------------------------
- Part 8: perturbative-expansion validity (fails at r = O(u_0))
+ Part 8: perturbative-expansion validity and Taylor residuals
 ----------------------------------------------------------------------------------------
   [PASS] r = 0.100: ratio_sq = 0.9610, valid = True (expected True)  (validity criterion ratio_sq > 0)
   [PASS] r = 0.235: ratio_sq = 0.7849, valid = True (expected True)  (validity criterion ratio_sq > 0)
@@ -125,6 +131,27 @@ status: ok
   critical r^2 = u_0^2 / 3 = 0.256727
   critical r ≈ 0.506683
   [PASS] critical r at validity boundary ≈ 0.507 (where ratio_sq = 0)  (computed r_crit^2 = 0.256727, expected ≈ 0.507^2)
+  [PASS] r = 0.010: closed sqrt agrees with first Taylor through O(x^2)  (x=3.895184e-04, error=1.896927e-08, next_term=1.896558e-08)
+  [PASS] r = 0.050: closed sqrt agrees with first Taylor through O(x^2)  (x=9.737961e-03, error=1.191155e-05, next_term=1.185349e-05)
+  [PASS] r = 0.100: closed sqrt agrees with first Taylor through O(x^2)  (x=3.895184e-02, error=1.934419e-04, next_term=1.896558e-04)
+
+  closed-form vs leading Taylor factor:
+    r=0.100: closed=0.980330636, taylor=0.980524078, abs_err=1.934e-04, rel_err=1.973e-04
+    r=0.235: closed=0.885939298, taylor=0.892444220, abs_err=6.505e-03, rel_err=7.342e-03
+    r=0.500: closed=0.161876164, taylor=0.513101946, abs_err=3.512e-01, rel_err=2.170e+00
+  [PASS] Taylor truncation agrees with closed form in the small-r control row  (r=0.100, relative error=1.973e-04)
+  [PASS] Taylor truncation remains sub-percent at the displayed matching row  (r=0.235, relative error=7.342e-03)
+  [PASS] Taylor truncation visibly breaks down near the validity edge  (r=0.500, absolute error=3.512e-01, relative error=2.170e+00)
+  Taylor sample r=0.010: x=3.895184e-04, closed=0.999805221809, first_err=1.897e-08, second_err=3.695e-12
+  Taylor sample r=0.020: x=1.558074e-03, closed=0.999220659428, first_err=3.037e-07, second_err=2.366e-10
+  Taylor sample r=0.040: x=6.232295e-03, closed=0.996878982079, first_err=4.870e-06, second_err=1.519e-08
+  [PASS] second Taylor truncation improves over first for all small-r samples
+  [PASS] first Taylor residual coefficient is near 1/8  (coeffs=[0.12502435094686065, 0.125097474564901, 0.12539104233882237])
+  [PASS] second Taylor residual coefficient is near 1/16  (coeffs=[0.06251487547843632, 0.06256092966571172, 0.06274451579312454])
+  all-orders square residual r=0.05000: 4.210e-05
+  all-orders square residual r=0.02500: 2.662e-06
+  all-orders square residual r=0.01250: 1.668e-07
+  [PASS] all-orders-minus-leading square residual scales as O(r^4)  (ratios=[15.817525477270529, 15.953832961945544])
 
 ----------------------------------------------------------------------------------------
  Part 9: stdlib-only / no PDG pins (other than declared comparison)
@@ -138,6 +165,8 @@ status: ok
 ----------------------------------------------------------------------------------------
   [PASS] note explicitly does not close: the +12% Higgs gap chain
   [PASS] note explicitly does not close: the physical Higgs mass `m_H` numerical value
+  [PASS] note explicitly does not close: the physical Higgs-pole readout from the diagnostic curvatur
+  [PASS] note explicitly does not close: the channel-selection principle
   [PASS] note explicitly does not close: the all-orders Wilson correction
   [PASS] note explicitly does not close: the value of the Wilson coefficient `r` itself
   [PASS] note explicitly does not close: the plaquette mean-field link `u_0` numerical value
@@ -151,7 +180,7 @@ status: ok
   [PASS] matching value flagged as conditional on non-zero Wilson coefficient r
 
 ========================================================================================
- TOTAL: PASS=77, FAIL=0
+ TOTAL: PASS=95, FAIL=0
 ========================================================================================
 
  VERDICT: m_H_tree^W = (v / (2 u_0)) · sqrt(1 - 3 r^2 / u_0^2) at the

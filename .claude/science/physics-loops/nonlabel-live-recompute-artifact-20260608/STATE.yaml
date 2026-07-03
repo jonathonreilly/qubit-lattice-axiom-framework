@@ -1,0 +1,25 @@
+loop_slug: nonlabel-live-recompute-artifact-20260608
+branch: physics-loop/nonlabel-live-recompute-artifact-20260608
+base: origin/main
+mode: physics-loop
+status: ready_for_review
+target_claim_id: nonlabel_grown_basin_note
+target_status: exact-support
+active_route: wire SHA-fresh live recompute artifact into the primary verifier and correct displayed charge-exponent precision
+hard_residual_attacked: "conditional audit asked for completed live recompute evidence and corrected/justified charge-exponent entries"
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/NONLABEL_GROWN_BASIN_NOTE.md
+  - scripts/NONLABEL_GROWN_BASIN_TARGETED.py
+  - logs/runner-cache/NONLABEL_GROWN_BASIN_TARGETED.txt
+  - .claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/
+open_imports:
+  - The result remains bounded to seed 0, drift 0.2, and restore values 0.60, 0.70, 0.80.
+  - No unbounded basin or family theorem is claimed.
+review_disposition: local_pre_review_pass_external_review_requested
+audit_edits: none
+runner_status:
+  primary: "SCORECARD PASS=4 FAIL=0"
+  live_recompute_dependency: "SCORECARD PASS=3 FAIL=0"
+next_exact_action: "Submit PR to Codex reviewer/re-audit; do not edit docs/audit in this branch."

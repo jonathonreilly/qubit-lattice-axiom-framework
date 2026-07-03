@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/observable_principle_p1_br_license_check_2026_06_10.py
+runner_sha256: 0e4b11a6ad07674bf69bc4ff0e357c690590b59ccbea7aec56e7850d1fe2cf59
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.54
+status: ok
+----- stdout -----
+== T1: the clause under hunt — (BR) and its selection chain, recomputed ==
+  [PASS][A] family normalization: g_p(1) = 0, g_p'(1) = 1, p -> 0 limit is log z (selected member)
+  [PASS][A] log-scale response identity: z*(s g_p)' = s z^p exactly; log passes (BR) with sup|zW'| = |s|
+  [PASS][A] (BR) selection chain recomputed: pass set on {s*g_p} over p in {0, 2, 1, 1/2, -1/2} is exactly {p = 0} (rescaling cannot rescue: |s| is linear, z-unboundedness s-invariant)
+== T2: Lemma W — second demand reduction (BR) => (BR-int), and (BR-int) still point-selects ==
+  [PASS][A] e-fold increment identity: s*(g_p(e^{u+1}) - g_p(e^u)) = s e^{pu}(e^p - 1)/p exactly
+  [PASS][A] p != 0 increments unbounded (p > 0 at u -> +oo, p < 0 at u -> -oo; includes the linear member p = 1 with no curvature leg); p = 0 increment identically s
+  [PASS][A] (BR) => (BR-int) verified (mean value): log has increment = s = sup|zW'| (equality); cos witness increment = 1 - (1/5) sin(1/2) sin(u + 1/2), so sup-increment 1 + (1/5) sin(1/2) <= sup|h'| = 11/10  (<=> 2 sin(1/2) <= 1)
+  [PASS][A] (BR-int) selection: pass set on the family is exactly {p = 0} — the strictly weaker increment clause is still a point-selector
+== T3: (BR-int) escapes the extended irreducible class (witness family recomputed) ==
+  [PASS][A] cos witness passes (BR-int) (sup-increment <= 1 + (1/5) sin(1/2) < 11/10) yet violates the additive identity at (e, e) AND at the reciprocal pair (e, 1/e): residuals nonzero  -- res(e,e)=-0.049675, res(e,1/e)=0.091940
+  [PASS][A] sin witness ((BR-int)-passing: increments of u + eps sin(omega u) bounded by 1 + 2|eps|): additive residual -eps omega^3 uA uB (uA+uB)/2 + O(omega^5); cos witness covers the uA + uB = 0 slice (residual 2 eps (1 - cos(omega uA)) != 0) — (BR-int) entails NO additive-identity instance at any nondegenerate pair: outside the extended class
+== T4: strictness — W_V separates (BR-int) from (BR); the full demand ladder ==
+  [PASS][A] W_V = log z + (sin z - sin 1)/(1 + log^2 z): W_V(1) = 0, smooth on R_>0; |phi| <= (1 + sin 1)/(1 + u^2) <= 1 + sin 1, so every e-fold increment is bounded by 1 + 2(1 + sin 1) < 5: (BR-int) HOLDS
+  [PASS][D] yet (BR) FAILS for W_V: at z_m = 2 pi m (sin(2 pi m) = 0, cos(2 pi m) = 1 exactly), z W' = 1 + [2 pi m (1+L^2) + 2 L sin 1]/(1+L^2)^2, L = log(2 pi m) — exceeds caps 10/100/1000 at m = 1e2/1e4/1e6: response unbounded, so (BR-int) is STRICTLY weaker  -- zW'(2pi*1e6) = 25539.4
+  [PASS][A] demand ladder (Add) => (NU) => (BR) => (BR-int), ALL strict: (Add)+cont => c log z with nu = |c| (in class); cos witness has (NU) w/o (Add) (curvature -1 - (sqrt2/10) cos(u+pi/4) constant sign); W_F = log((z+1/z)/2) has (BR) w/o (NU) (curvature zero at tanh u0 = (sqrt5-1)/2 with zW' != 0, sup|zW'| = 1); W_V has (BR-int) w/o (BR)
+== T5: Lemma C — the conditional record-capacity theorem (Route A's honest yield) ==
+  [PASS][C] retained finite-sector identity recomputed (not cited blind): I(A) = chi_A . v and I(A u B) = I(A) + I(B) on ALL 81 ordered disjoint subset pairs of a 4-sector model  -- pairs=81
+  [PASS][A] capacity bound: |I(A_z)| = |sum v_i| <= K*M by finite additivity + triangle inequality (extremal instance sum = 5M = K*M; mixed-sign instance |7M/6| <= 5M, K = 5)
+  [PASS][A] Lemma C chain: (CAP-real)+(CAP-M)+(CAP-K) => every e-fold increment <= K*M => (BR-int) => pass set exactly {p = 0} (selection completed conditionally — the gap is exactly the caps)
+  [PASS][A] unit-record normalization: in the conditional unbounded-additivity schema every unit datum is exactly 1, so (CAP-M) holds there with M = 1 by normalization (I(R_7) = 7 recomputed); the open content is the supplied-record realization clause + the rate cap (CAP-K)
+== T6: the no-go — neither capacity sub-clause has a retained supplier (witnesses) ==
+  [PASS][D] (CAP-M) unsupplied for general sector data: the finite-sector algebra's own freedom recomputed — for ANY p in (0,1), d = p u/(1-p) gives normalized coordinate d/(u+d) = p exactly: sector data are arbitrary scalars, no magnitude cap is retained
+  [PASS][D] witness W_Q = (z^2-1)/2 registered as ONE sector per e-fold (K = 1 bounded!): satisfies the finite-sector algebra verbatim (singleton decomposition, additivity trivially exact) yet its e-fold increment z^2 (e^2-1)/2 -> oo: bounded count + unbounded datum kills any 'the algebra alone bounds the response' claim
+  [PASS][D] (CAP-K) unsupplied — and the schema affirmatively licenses its violation: assign 4^k UNIT records to e-fold k (M = 1 holds); every prefix is an exact finite disjoint collection (sum_{k<=K} 4^k = (4^{K+1}-1)/3 recomputed), yet the per-e-fold count 4^k exceeds ANY cap (4^10 = 1048576 > 10^6): a fully schema-compliant unit-record realization violates (BR-int) — the sub-clauses fail independently (W_Q: K fine/M unbounded; 4^k: M = 1/K unbounded)  -- 4^10 = 1048576
+  [PASS][B] adjacent retained wall agrees: the finite-to-unbounded family-lift no-go (retained_no_go) blocks certifying the uniform cap from finitely many e-fold checks ('finite post-record certificate alone => unbounded retained law' is not a valid route)
+== T7: Route B (quantum) — finite local dimension gives an M-shaped fact, never the rate ==
+  [PASS][C] qubit effect bound (per-register datum): effects on M_2 have spectrum in [0,1]; for any density sigma the value Tr(sigma E) is multilinear in (a, b, q) and lies in [0,1] at all 8 corners (so on the whole box) — bounded per-register increment, an (CAP-M)-shaped fact; NOTE: as a Busch/Gleason frame-function statement it is conditional on a SUPPLIED probability measure (count-probability firewall: blocked as a supplier)
+  [PASS][C] the K-side cannot follow from finite local dimension: Z^3 supplies strictly increasing register counts (2n+1)^3 (derivative 6(2n+1)^2 > 0; (2*50+1)^3 = 1030301 > 10^6) with no cap — per-site boundedness times unbounded site count yields NO per-e-fold cap; no retained row couples amplitude e-folds to register counts
+  [PASS][B] effect-side rows are readout-blind: Busch/Gleason/local-tomography notes present, their subject is the effect/state measure (Busch note's load-bearing direction is m(E)=Tr(sigma E)), and none of them contains readout-response vocabulary — the readout W does not occur in their statements, so they cannot discriminate (BR) from its violations
+== T8: falsification legs — compact collapse and the granted-clause completion ==
+  [PASS][D] compact collapse: on [1, e] and on the licensed L2 Neumann image [1, 85/64] every member has finite response and finite e-fold increment (monotone endpoint evaluation) — (BR)/(BR-int)/(CAP) select NOTHING there; the full-R_>0 clause is exactly the declared T1-d / lemma-L3 domain hypothesis, no hidden domain freedom
+  [PASS][D] granting the missing capacity clauses completes the selection exactly: with (CAP-M)+(CAP-K) granted the pass set is {p = 0} and W = c log z follows with T1-d's remaining clauses — the missing license is the single load-bearing gap
+== T9: ledger scan — zero retained-grade capacity/rate suppliers (extends NU-note T9) ==
+  [PASS][B] extended ledger scan: ZERO retained-grade rows match capacity/rate/resolution/response-bound vocabulary — (BR), (BR-int), and the (CAP) clauses are all unlicensed  -- matches=[]
+  [PASS][B] cited rows present at their current admissible effective statuses; unbounded Record is audited_conditional and local tomography is retained_bounded or retained_pending_chain in the live ledger  -- mismatches={}
+  [PASS][B] the three candidate record-capacity suppliers are visible rows (assessed at full strength, not strawmanned)
+  [PASS][B] campaign chain on disk: the NU-license note names the record-capacity/finite-resolution hunt target and the barrier note declares its premise unlicensed
+== T10: note honest-scope, firewall-compliance, and boundary strings ==
+  [PASS][B] note honest-scope and firewall-compliance strings present  -- missing=[]
+  [PASS][B] forbidden promotion strings absent  -- found=[]
+
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

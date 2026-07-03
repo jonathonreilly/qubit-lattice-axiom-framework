@@ -1,0 +1,102 @@
+===== runner cache v1 =====
+runner: scripts/k_dependence_fixed_window_review.py
+runner_sha256: dcf340fb3d33f85609f73dbdf4216ee0630fedf33d31519a9eec4f4e1d875a4c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 23.03
+status: ok
+----- stdout -----
+============================================================================================
+K-DEPENDENCE REVIEW-SAFE RERUN
+  fixed N window across k, shared seed set, per-seed slopes + bootstrap CI
+  N window = [25, 30, 40, 60, 80]
+  seeds = 16, bootstrap samples = 2000
+============================================================================================
+
+Complete shared seeds across all k and N: 16 / 16
+
+    k  n_ok   seed_alpha       SE            boot95%   pooled_alpha  pooled_R2
+------------------------------------------------------------------------------
+  1.0    16       -3.931    0.904   [-5.674, -2.255]         -1.846      0.685
+  2.0    16       -2.881    0.987   [-4.784, -1.094]         -0.636      0.585
+  3.0    16       -2.286    0.897   [-4.036, -0.528]         -0.316      0.340
+  5.0    16       -3.322    1.254   [-5.745, -0.920]         -1.800      0.792
+  7.0    16       -2.827    1.384   [-5.306, -0.198]         -0.655      0.506
+ 10.0    16       -3.813    1.301   [-6.389, -1.242]         -2.518      0.773
+ 15.0    16       -2.773    1.348   [-5.307, -0.455]         -1.236      0.737
+
+Interpretation guide:
+  - seed_alpha: mean of per-seed slope fits on the fixed N window
+  - boot95%: bootstrap CI on the mean seed_alpha
+  - pooled_alpha: fit to the mean curve, shown only as a diagnostic
+
+Review-safe rule:
+  If the bootstrapped intervals overlap heavily across k, the old alpha(k)
+  story was mostly a fit-window artifact. If they separate cleanly, the k
+  dependence survives on a fixed window.
+
+============================================================================================
+VALIDATION (frozen-value asserts vs K_DEPENDENCE_REVIEW_SAFE_NOTE.md)
+============================================================================================
+  [PASS] k= 1.0 mean_alpha: computed=-3.9313 expected=-3.9310 tol=1.0e-02
+  [PASS] k= 1.0 boot_lo: computed=-5.6739 expected=-5.6740 tol=5.0e-02
+  [PASS] k= 1.0 boot_hi: computed=-2.2549 expected=-2.2550 tol=5.0e-02
+  [PASS] k= 1.0 pooled_alpha: computed=-1.8464 expected=-1.8460 tol=1.0e-02
+  [PASS] k= 2.0 mean_alpha: computed=-2.8809 expected=-2.8810 tol=1.0e-02
+  [PASS] k= 2.0 boot_lo: computed=-4.7841 expected=-4.7840 tol=5.0e-02
+  [PASS] k= 2.0 boot_hi: computed=-1.0936 expected=-1.0940 tol=5.0e-02
+  [PASS] k= 2.0 pooled_alpha: computed=-0.6359 expected=-0.6360 tol=1.0e-02
+  [PASS] k= 3.0 mean_alpha: computed=-2.2856 expected=-2.2860 tol=1.0e-02
+  [PASS] k= 3.0 boot_lo: computed=-4.0358 expected=-4.0360 tol=5.0e-02
+  [PASS] k= 3.0 boot_hi: computed=-0.5281 expected=-0.5280 tol=5.0e-02
+  [PASS] k= 3.0 pooled_alpha: computed=-0.3161 expected=-0.3160 tol=1.0e-02
+  [PASS] k= 5.0 mean_alpha: computed=-3.3224 expected=-3.3220 tol=1.0e-02
+  [PASS] k= 5.0 boot_lo: computed=-5.7452 expected=-5.7450 tol=5.0e-02
+  [PASS] k= 5.0 boot_hi: computed=-0.9205 expected=-0.9200 tol=5.0e-02
+  [PASS] k= 5.0 pooled_alpha: computed=-1.8002 expected=-1.8000 tol=1.0e-02
+  [PASS] k= 7.0 mean_alpha: computed=-2.8268 expected=-2.8270 tol=1.0e-02
+  [PASS] k= 7.0 boot_lo: computed=-5.3059 expected=-5.3060 tol=5.0e-02
+  [PASS] k= 7.0 boot_hi: computed=-0.1984 expected=-0.1980 tol=5.0e-02
+  [PASS] k= 7.0 pooled_alpha: computed=-0.6554 expected=-0.6550 tol=1.0e-02
+  [PASS] k=10.0 mean_alpha: computed=-3.8131 expected=-3.8130 tol=1.0e-02
+  [PASS] k=10.0 boot_lo: computed=-6.3887 expected=-6.3890 tol=5.0e-02
+  [PASS] k=10.0 boot_hi: computed=-1.2422 expected=-1.2420 tol=5.0e-02
+  [PASS] k=10.0 pooled_alpha: computed=-2.5184 expected=-2.5180 tol=1.0e-02
+  [PASS] k=15.0 mean_alpha: computed=-2.7734 expected=-2.7730 tol=1.0e-02
+  [PASS] k=15.0 boot_lo: computed=-5.3066 expected=-5.3070 tol=5.0e-02
+  [PASS] k=15.0 boot_hi: computed=-0.4547 expected=-0.4550 tol=5.0e-02
+  [PASS] k=15.0 pooled_alpha: computed=-1.2363 expected=-1.2360 tol=1.0e-02
+
+============================================================================================
+WINDOW-COMPARISON (closes the 'fit-window-sensitive' claim)
+  Re-run with the smaller late-N window [40, 60, 80] and check that
+  the seed_alpha values shift materially vs the canonical window.
+============================================================================================
+  N window = [40, 60, 80]
+
+    k  n_ok   seed_alpha       SE            boot95%   pooled_alpha  pooled_R2
+------------------------------------------------------------------------------
+  1.0    16       -6.403    1.237   [-8.841, -4.020]         -2.313      0.487
+  2.0    16       -5.347    1.373   [-8.168, -2.979]         -1.016      0.535
+  3.0    16       -5.186    1.496   [-8.106, -2.361]         +0.049      0.075
+  5.0    16       -6.354    1.604   [-9.633, -3.514]         -2.946      0.993
+  7.0    16       -5.880    1.819   [-9.280, -2.408]         -1.359      0.728
+ 10.0    16       -7.346    1.519  [-10.419, -4.591]         -3.558      0.714
+ 15.0    16       -5.511    1.596   [-8.629, -2.790]         -1.569      0.688
+
+  k= 1.0: canonical seed_alpha=-3.931  alt seed_alpha=-6.403  diff=+2.472
+  k= 2.0: canonical seed_alpha=-2.881  alt seed_alpha=-5.347  diff=+2.466
+  k= 3.0: canonical seed_alpha=-2.286  alt seed_alpha=-5.186  diff=+2.900
+  k= 5.0: canonical seed_alpha=-3.322  alt seed_alpha=-6.354  diff=+3.032
+  k= 7.0: canonical seed_alpha=-2.827  alt seed_alpha=-5.880  diff=+3.053
+  k=10.0: canonical seed_alpha=-3.813  alt seed_alpha=-7.346  diff=+3.533
+  k=15.0: canonical seed_alpha=-2.773  alt seed_alpha=-5.511  diff=+2.737
+
+  [PASS] window comparison: at least one |Δseed_alpha| > 0.3 (fit-window sensitivity): computed=+3.2326 expected sign=+1
+
+============================================================================================
+K_DEPENDENCE_FIXED_WINDOW_REVIEW: PASS=29  FAIL=0
+============================================================================================
+
+----- stderr -----
+

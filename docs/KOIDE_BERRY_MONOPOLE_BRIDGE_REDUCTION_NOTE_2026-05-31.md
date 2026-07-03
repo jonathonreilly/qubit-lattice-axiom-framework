@@ -1,12 +1,15 @@
-# Koide Berry-Monopole Bridge Reduction: native circulant gives Q=1; Q=2/3 remains the chiral/nonzero-Berry criterion
+# Koide Berry-Monopole Bridge Reduction: finite native algebra only; Q-branch selection remains open
 
 **Date:** 2026-05-31
 **Claim type:** bounded_theorem
-**Claim boundary:** source-side bridge reduction only. The runner verifies a
-native `C_3` index map, zero Berry curvature for the native circulant mass, and
-a two-band comparison in which a `Gamma_chi`-anticommuting coupling carries
-nonzero Berry curvature. It does not derive the existence of that chiral
-coupling in the framework, approve an import, or set an audit verdict.
+**Claim boundary:** finite source-side algebra only. The runner verifies a
+native `C_3` index map, zero Berry curvature for the native circulant mass, a
+two-band comparison in which a `Gamma_chi`-anticommuting coupling carries
+nonzero Berry curvature, the native circulant commutation obstruction, and the
+standalone algebraic identities `Q(r=1/2)=2/3` and `Q(r=1)=1`. It does **not**
+derive any Berry/chirality-to-`r` weighting rule, select a physical `Q` branch,
+derive the existence of a framework chiral coupling, approve an import, or set
+an audit verdict.
 **Primary runner:**
 `scripts/frontier_koide_berry_monopole_bridge_reduction_2026_05_31.py`
 with cache
@@ -15,10 +18,10 @@ with cache
 ## Result (one sentence)
 
 The native circulant generation mass has a choice-free `C_3` index map,
-`b`-independent Fourier eigenvectors, and zero Berry curvature, so it lands on
-the second-order/per-dimension `Q=1` branch; the observed `Q=2/3` value remains
-pinned to the separate chiral/nonzero-Berry coupling criterion rather than being
-derived by this native mass.
+`b`-independent Fourier eigenvectors, and zero Berry curvature, while a separate
+toy two-band anticommuting comparator has nonzero Berry curvature; this packet
+does not derive a rule that assigns either Berry fact to an `r` weighting or a
+physical `Q` branch.
 
 ## What builds, natively
 
@@ -28,57 +31,50 @@ Fourier-grade projection `(1/3)Tr(C^-1 H) = b` identifies `b` as the **`C_3`-dou
 Fourier amplitude** of `H = aI + bC + b-bar C^2` (`a` the singlet amplitude). Only
 `arg(b)` (Brannen `delta`, `Q`-orthogonal) and orientation are convention.
 
-**The native effective-action order is second (Q=1) -- derived, not assumed (F2).**
+**The native Berry curvature is zero -- derived, not assumed (F2).**
 On the real circulant coordinate plane
 `H = aI + u(C + C^2) + v i(C - C^2)` matching the Fourier-amplitude
 coordinates from F1, the Berry curvature of the filled band is **zero**
 (plaquette Berry `~1e-16`) by **eigenvector rigidity**: the eigenvectors are the
 **`(u,v)`-independent** Fourier modes (verified `|<Fourier_k|eigvec>| = 1`), so
-the doublet coordinate shifts eigenvalues without rotating eigenvectors. Zero
-Berry supplies the bounded support for the second-order/per-dimension branch;
-F4 verifies that branch as `Q=1`.
+the doublet coordinate shifts eigenvalues without rotating eigenvectors. This
+is the finite native Berry statement. It is not a branch-selection theorem.
 
-## The unification (the payoff)
+## The finite comparison
 
-The two-band comparison isolates **one** computable criterion (F3): a coupling
+The two-band comparison isolates **one** finite algebraic distinction (F3): a coupling
 that **anticommutes** with the chiral grading `Gamma_chi` (`= sigma_z`; e.g.
 `u sigma_x + v sigma_y`) carries a **nonzero Berry monopole**, while a coupling
-that **commutes** with `Gamma_chi` has **zero** Berry. Within the existing
-Koide block-weight frontier, this is the criterion that would have to be
-supplied to use the `r=1/2` / per-block branch:
+that **commutes** with `Gamma_chi` has **zero** Berry. The runner also keeps the
+separate finite Koide algebra identities `Q(r=1/2)=2/3` and `Q(r=1)=1`.
 
-> **`first-order / per-block / det_C / equal-block / Q=2/3` requires the
-> `Gamma_chi`-anticommuting (chiral) / nonzero-Berry branch**, while
-> **`second-order / per-dim / det_R / trace / Q=1` is the native
-> `Gamma_chi`-commuting / zero-Berry branch.**
+What remains missing is the bridge theorem that would turn that finite
+distinction into a framework-native weighting rule:
 
-This criterion aligns the previously separate axes -- effective-action order,
-the `det_C`-vs-`det_R` reality type (the native Kähler-Dirac `D_KD` is
-real-antisymmetric, hence Majorana/Pfaffian/per-dimension), and the
-equal-block-vs-trace measure -- around one operator question: chiral vs
-non-chiral generation mass. The runner does **not** derive `Q=2/3` from the
-bare native `H[b]`; it derives the native zero-Berry branch and demonstrates
-the separate chiral/nonzero-Berry criterion that would be needed for the
-`Q=2/3` branch. The per-block count is orientation-blind, so this is about the
-chiral coupling existing, not a `+i`/`-i` orientation choice.
+> Does the framework derive a Berry/chirality-to-`r` selection rule, and if so
+> which admissible operator supplies the physical readout?
 
-## The native mass is non-chiral → Q=1
+This narrowed row may be used as a finite-matrix support packet for that
+question. It may not be used as a derivation that zero Berry selects `r=1`, that
+nonzero Berry selects `r=1/2`, or that the native circulant mass realizes the
+physical `Q=1` branch.
+
+## The native mass is non-chiral
 
 Every native circulant `Lambda^1` mass **commutes** with `Gamma_chi = 2 P_singlet - I`
 (itself circulant): `[H, Gamma_chi] = 0`, so `{H, Gamma_chi} != 0` — it **never**
-anticommutes (F4). Hence the native branch is zero-Berry and gives `Q=1`, while
-`Q=2/3` (`r=1/2`) is a tuned point on the `Gamma_chi`-commuting family unless a
-separate chiral/nonzero-Berry mechanism is supplied. The `Q=2/3` value remains
-the chiral criterion/import boundary shared with the generation-identification
-gate.
+anticommutes (F4). Hence the native circulant algebra supplies the zero-Berry /
+commuting side of the finite comparison. It does not by itself select the
+physical `Q` branch; a separate retained bridge would have to identify the
+physical source/readout and the `r` weighting.
 
 ## Boundary
 
-This is **not** a derivation of `Q=2/3`; it is a bridge-reduction. The index-map
-is native; the native circulant branch is bounded to `Q=1`; and the missing
-positive route is pinned to a single computable criterion (chiral mass /
-nonzero Berry monopole). On the generation `R^3` factor the chiral grading is
-blocked by the bounded
+This is **not** a derivation of `Q=2/3` or `Q=1`; it is a finite-matrix support
+packet. The index map is native; the native circulant Berry curvature is zero;
+an anticommuting two-band comparator has nonzero Berry curvature; and the
+Koide `Q(r)` identities are checked as algebra. On the generation `R^3` factor
+the anticommuting route is blocked by the bounded
 [KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md](KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md):
 `comm(C) cap anticomm(Gamma_chi) = {0}` for the native circulant algebra. This
 does not rule out a chiral factor sourced outside the generation `R^3`.
@@ -87,9 +83,10 @@ does not rule out a chiral factor sourced outside the generation `R^3`.
 generation `R^3`**, but does **not** touch one sourced from a tensor factor **distinct**
 from the generation `R^3` (a separate-factor / Connes-Lott-type direction). The sharp,
 not-yet-computed question: can an **off-generation** factor (a horizontal/`2`-Higgs
-factor) supply a `Gamma_chi`-anticommuting coupling `-> ` nonzero Berry monopole `-> `
-`Q=2/3` **without** breaking `C^3=I` on the generation factor? (The qubit-factor route is
-already shown import-sourced and `r`-non-selective; the spacetime `gamma_5` acts
+factor) supply a `Gamma_chi`-anticommuting coupling, and can an independent
+retained theorem relate that coupling to the physical `r` weighting **without**
+breaking `C^3=I` on the generation factor? (The qubit-factor route is already
+shown import-sourced and `r`-non-selective; the spacetime `gamma_5` acts
 `C_3`-trivially.)
 
 ## Anchors (live-ledger tiers)

@@ -1,23 +1,20 @@
 #!/usr/bin/env python3
 """
-DM leptogenesis PMNS multistart selector support on the refreshed branch.
-
-Framework convention:
-  "axiom" means only the single framework axiom Cl(3) on Z^3.
+DM leptogenesis PMNS multistart runner diagnostic on the refreshed branch.
 
 Purpose:
   Record the current broad multistart constrained-scan support for the
-  PMNS-assisted N_e selector on the fixed native seed surface.
+  PMNS-assisted N_e diagnostic on the runner-defined fixed seed surface.
 
 Method on the exact refreshed branch:
-  1. generate many exact closure starts on the fixed native N_e seed surface;
+  1. generate closure starts on the runner-defined fixed N_e seed surface;
   2. solve the constrained effective-action stationary problem from each start;
   3. cluster all converged stationary points into closure branches;
-  4. verify there is one unique lowest-action branch and a finite gap to the
-     next branch.
+  4. verify that, within the recovered sampled branches, one lowest-action
+     branch is separated by a finite gap to the next branch.
 
-This is support for the reduced-surface selector structure, not a live theorem-
-grade closure claim.
+This is support for a runner-defined reduced-surface diagnostic, not a live
+theorem-grade selector or native-readout closure claim.
 """
 
 from __future__ import annotations
@@ -30,6 +27,8 @@ import numpy as np
 from scipy.optimize import differential_evolution
 
 import frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem as stat
+
+AUDIT_TIMEOUT_SEC = 600
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -143,12 +142,12 @@ def part1_enumerate_stationary_branches() -> tuple[int, list[Branch]]:
     branches = cluster_solutions(sols, i_star)
 
     check(
-        "The current fixed-seed closure surface yields two dominant stationary branches under broad multistart enumeration",
+        "The runner-defined fixed-seed closure surface yields two dominant stationary branches under broad multistart enumeration",
         len(branches) == 2,
         f"branch count={len(branches)}, sampled solves={len(sols)}",
     )
     check(
-        "The lowest branch closes the favored column exactly",
+        "The lowest branch satisfies the runner-normalized favored-column closure",
         abs(branches[0].etas[i_star] - 1.0) < 1e-10,
         f"etas={np.round(branches[0].etas, 12)}",
     )
@@ -181,29 +180,26 @@ def part2_support_readout(branches: list[Branch]) -> None:
     miss_factor = 1.0 / float(low.etas[0])
 
     check(
-        "The lowest-action branch gives exact PMNS-assisted closure on the favored column",
+        "The lowest-action branch gives runner-normalized PMNS-assisted closure on the favored column",
         abs(float(low.etas[0]) - 1.0) < 1e-10,
         f"eta/eta_obs={low.etas[0]:.12f}",
     )
     check(
-        "The old one-flavor 5.297x miss is gone on the full-closure selector branch",
+        "The old one-flavor 5.297x diagnostic miss is gone on the sampled low-action branch",
         abs(miss_factor - 1.0) < 1e-10,
         f"miss factor={miss_factor:.12f}",
     )
-    print("  [INFO] This runner is broad multistart support for the selector structure.")
+    print("  [INFO] This runner is broad multistart support for a runner-defined diagnostic surface.")
 
 
 def main() -> int:
     print("=" * 88)
-    print("DM LEPTOGENESIS PMNS MULTISTART SELECTOR SUPPORT")
+    print("DM LEPTOGENESIS PMNS MULTISTART RUNNER DIAGNOSTIC")
     print("=" * 88)
-    print()
-    print("Framework convention:")
-    print('  "axiom" means only Cl(3) on Z^3.')
     print()
     print("Question:")
     print("  Does the current broad multistart constrained scan recover a stable")
-    print("  low-action selector branch on the fixed native N_e seed surface?")
+    print("  low-action diagnostic branch on the runner-defined fixed N_e seed surface?")
 
     i_star, branches = part1_enumerate_stationary_branches()
     _ = i_star
@@ -214,16 +210,15 @@ def main() -> int:
     print("=" * 88)
     print("  Broad multistart support result:")
     print("    - the current broad multistart constrained scan resolves two dominant")
-    print("      stationary closure branches on the fixed native N_e seed surface")
+    print("      stationary closure branches on the runner-defined fixed N_e seed surface")
     print("    - the low branch is separated from the higher dominant branch by a")
     print("      finite action gap")
-    print("    - that branch gives exact eta/eta_obs = 1 on the favored column")
-    print("    - the later certified-global theorem sharpens the exact reduced-surface")
-    print("      stationary set to three branches and proves the same low branch is")
-    print("      the lower branch seen in the stronger reduced-surface support pass")
+    print("    - that branch gives eta/eta_obs = 1 on the imposed favored-column closure surface")
+    print("    - later reduced-surface support sharpens the sampled branch count")
+    print("      without changing the recovered low-action branch")
     print()
-    print("  This is support for the reduced-surface selector story, not a live")
-    print("  theorem-grade closure statement by itself.")
+    print("  This is support for the runner-defined reduced-surface diagnostic,")
+    print("  not a live theorem-grade selector or native-readout closure statement.")
     print()
     print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/multisite_pauli_group_check.py
-runner_sha256: 5b711a97b80d13eebc3455bba7e6717db6486d281703af3df39919e9397c3958
+runner_sha256: 534cce783b7f19ac8d45d1be387f0ff1033149287654446605f8ff37f831f135
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.98
+elapsed_sec: 2.91
 status: ok
 ----- stdout -----
 ========================================================================

@@ -1,0 +1,11 @@
+loop: fifth-family-radial-unblock-20260608
+target_claim_id: fifth_family_radial_boundary_note
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+blocker: "missing_bridge_theorem: provide an independent derivation of zero/neutral exactness and the radial-shell sign-orientation flip from retained primitives, separate from the runner implementation path."
+files_touched:
+  - docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md
+  - scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py
+  - logs/runner-cache/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.txt
+stop_condition: packaged_for_review_pr

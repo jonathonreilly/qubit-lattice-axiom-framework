@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/frontier_planck_mass_conventional_anchor_meta_verifier.py
+runner_sha256: 17c89d9c8f43fd75042623ac87439832366d79daa0cf40287721e925b6524c4d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+[PASS] note exists
+[PASS] claim type is meta
+[PASS] explicitly no audit verdict
+[PASS] explicitly no new axiom
+[PASS] explicitly no dimensional derivation
+[PASS] uses native Planck-mass conventional anchor wording
+[PASS] states Buckingham-Pi dimensional-analysis boundary
+[PASS] does not claim zero-anchor SI prediction
+[PASS] does not include PR-local P1 label
+[PASS] does not propose retained/effective status
+[PASS] does not hand-author audit status
+[PASS] does not cite PDG as derivation input
+[PASS] precedent exists locally: CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md
+[PASS] precedent exists on origin/main: CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md
+[PASS] precedent exists locally: RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-05-10_radianconv.md
+[PASS] precedent exists on origin/main: RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-05-10_radianconv.md
+PASS=16 FAIL=0
+
+----- stderr -----
+

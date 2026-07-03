@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_born_frequency_boundary_2026_06_05.py
+runner_sha256: 0af6108b676a2c0b3c44322eb4bca0e8f24eacea49bf6688064e43e3221faf8b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+==============================================================================
+RECORD BORN-FREQUENCY BOUNDARY
+no-go / finite history-count runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Finite histories have exact counts
+------------------------------------------------------------------------------
+  [PASS] all binary histories of length 4 are enumerated
+  [PASS] frequency set has five finite values ([0.0, 0.25, 0.5, 0.75, 1.0])
+  [PASS] all-zero history has frequency zero
+  [PASS] all-one history has frequency one
+  [PASS] append adds one atom
+  [PASS] append updates count exactly
+  [PASS] count class k=2 has six histories
+  [PASS] counts are many-to-one over histories
+
+------------------------------------------------------------------------------
+2. Counts do not force a probability
+------------------------------------------------------------------------------
+  [PASS] chosen pre-record probability is not a finite-history theorem
+  [PASS] history with frequency zero is compatible as a word
+  [PASS] history with frequency one is compatible as a word
+  [PASS] finite frequency can differ from p by 0.7
+  [PASS] finite frequency can differ from p by 0.3
+  [PASS] history grammar has no IID flag
+  [PASS] history grammar has no convergence flag
+  [PASS] history grammar has no dial selector
+
+------------------------------------------------------------------------------
+3. Probability model is an extra input
+------------------------------------------------------------------------------
+  [PASS] supplied binomial weights sum to one
+  [PASS] binomial weights use supplied p
+  [PASS] without supplied p, binomial weights are undefined by history
+  [PASS] selective atoms supply counts, not model
+  [PASS] finite count frequency is empirical information
+  [PASS] empirical frequency is not identical to p here
+
+------------------------------------------------------------------------------
+4. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_BORN_FREQUENCY_BOUNDARY_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: no-go
+  [PASS] note contains marker: trace_class: negative_route_pruning
+  [PASS] note contains marker: Born-frequency law remains a separate probability-model gate
+  [PASS] note contains marker: Does not derive Born frequencies
+  [PASS] note contains marker: history grammar supplies IID trials
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: born closure
+  [PASS] forbidden wording absent: iid closure
+  [PASS] forbidden wording absent: convergence closure
+  [PASS] forbidden wording absent: selection closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=35 FAIL=0
+
+----- stderr -----
+

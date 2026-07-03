@@ -1,76 +1,86 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_qcd_low_energy_running_bridge.py
-runner_sha256: e258ad4e6ce3380f2aaee63008e49423af1e5afbb7e6bf5fc7b2fae800987117
+runner_sha256: 36b69b56c7791c6d0043e95cee02eb3e32c98da2e87236bd553c838490b7cf0b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.55
+elapsed_sec: 0.72
 status: ok
 ----- stdout -----
 ==============================================================================
-QCD Low-Energy Running Bridge: alpha_s(v) -> alpha_s(M_Z)
+QCD v -> M_Z running transfer-map kernel theorem (K1-K5)
 ==============================================================================
 
-Bounded-scope same-surface running bridge using standard SM 2-loop
-RGE plus quark-mass threshold matching at m_t, m_b, m_c.
-Boundary: alpha_s(v=246.28) = 0.103304
-Target:   alpha_s(M_Z=91.1876) ~ 0.1180 +/- 0.0009 (PDG)
+Theorem surface: exact T_1 on D plus a bounded T_2 grid certificate
+over D = [0.085, 0.13] under the declared imports.
+No specific boundary value alpha_s(v) appears in any load-bearing check;
+PDG comparisons are confined to the labeled class-D appendix (Part 8).
 
+=== Part 1: SU(3) group factors derived from Gell-Mann generators ===
 
-=== Part 1: 1-loop QCD beta-coefficient sanity ===
+  [PASS] [A] trace normalization Tr(T^a T^b) = T_F delta_ab with T_F = 1/2  (T_F = 0.500000000000000, max off-diagonal deviation = 1.11e-16)
+  [PASS] [A] structure constants f^{abc} totally antisymmetric (computed, not asserted)  (max |f^abc + f^bac| = 0.00e+00, max |f^abc + f^acb| = 0.00e+00)
+  [PASS] [A] adjoint Casimir f^{acd} f^{bcd} = C_A delta^ab with C_A = 3  (C_A = 3.000000000000000, max off-diagonal deviation = 1.33e-15)
+  [PASS] [A] fundamental Casimir sum_a T^a T^a = C_F * I with C_F = 4/3  (C_F = 1.333333333333333, deviation from C_F*I = 2.22e-16)
+  [PASS] [A] b0(n_f) = (11/3)C_A - (4/3)T_F n_f gives b0(6) = 7, b0(5) = 23/3 (= 11 - 2 n_f/3, derived not asserted)  (b0(6) = 7.000000000000, b0(5) = 7.666666666667; b0(5) > b0(6) > 0)
 
-  [PASS] [BOUNDED] b_3(n_f=5) = -(11 - 10/3) = -23/3 (asymptotic freedom holds)  (b_3(5) = -7.666667, expected -23/3 = -7.666667)
-  [PASS] [BOUNDED] b_3(n_f=6) = -(11 - 12/3) = -7 (top-active asymptotic freedom)  (b_3(6) = -7.000000)
-  [PASS] [BOUNDED] b_3 < 0 for all n_f <= 16 (asymptotic freedom)  (QCD remains asymptotically free for the SM matter content)
+=== Part 2 (K1): well-definedness on D = [0.085, 0.130] ===
 
-=== Part 2: threshold-matching continuity ===
+  [PASS] [A] closed-form constant L matches the note-declared value 1.1746670551  (L = 1.1746670550677, |L - declared| = 3.23e-11)
+  [PASS] [A] Landau margin: pole 1/L lies a factor 6.55 above the domain edge (1 - L a > 0 on all of D)  (1/L = 0.851305, margin (1/L)/a_max = 6.5485)
+  [PASS] [A] T_1 finite and positive at every point of the 10-point grid on D  (T_1 range on D: [0.094428, 0.153430])
 
-  [PASS] [BOUNDED] threshold n_f flip changes slope but not the value AT the threshold (LO)  (|Delta g_3(m_t; n_f=6 vs n_f=5)|/g_3 = 0.0020 (slope-only at LO))
-  [PASS] [BOUNDED] g_3 monotonically grows toward IR through m_b, m_c (asymptotic freedom)  (g_3(v) = 1.1394, g_3(m_b)=1.6340, g_3(m_c)=2.1598)
+=== Part 3 (K2): exact 1-loop closed form vs independent integration ===
 
-=== Part 3: one-decade transfer v -> M_Z ===
+  [PASS] [A] closed form 1/T_1 = 1/a - L matches RK45 integration at the domain center a = 0.1075  (residual = 4.44e-16)
+  [PASS] [A] closed form matches RK45 at every grid point of D  (max residual over grid = 8.05e-16)
+  [PASS] [A] two-integrator independence: T_2 via RK45 vs DOP853 agree  (|RK45 - DOP853| = 4.27e-15)
 
-  Boundary: alpha_s(v=246.28 GeV) = 0.103304
-  Result:   alpha_s(M_Z=91.1876 GeV) = 0.118067
-  PDG ref:  0.1180 +/- 0.0009
-  [PASS] [BOUNDED] alpha_s(M_Z) within 2% of PDG world average  (alpha_s(M_Z) = 0.118067, PDG = 0.118, rel = 0.06%)
-  [PASS] [BOUNDED] alpha_s(M_Z) within 1-sigma of PDG world average (0.1180 +/- 0.0009)  (|alpha_s(M_Z) - 0.1180| = 0.0001, sigma = 0.0009)
-  [PASS] [BOUNDED] alpha_s(M_Z) reproduces canonical 0.1181 to within 0.001  (alpha_s(M_Z) = 0.118067, canonical = 0.1181)
+=== Part 4 (K3): exact T_1 plus T_2 grid monotonicity/expansivity ===
 
-=== Part 4: bridge structural independence from plaquette insertion ===
+  [PASS] [A] exact Jacobian identity dT_1/da = (T_1/a)^2 holds on the grid (and matches a finite difference at the center)  (max |1/(1-La)^2 - (T_1/a)^2| = 2.22e-16, FD rel dev = 2.55e-12)
+  [PASS] [A] T_1 strictly increasing and expansive on D (dT_1/da > 1 everywhere)  (min dT_1/da on D = 1.234147 > 1)
+  [PASS] [A] T_2 strictly increasing on the 10-point grid  (T_2 image on grid: [0.094687, 0.154520])
+  [PASS] [A] T_2 grid expansivity: every grid slope > 1; central Jacobian J_2 = 1.328  (min slope = 1.2530, J_2(0.1075) = 1.3278)
+  [PASS] [A] inverse round-trip: T_2^{-1}(T_2(0.1075)) recovers 0.1075  (|round-trip - 0.1075| = 7.22e-16)
 
-  Varying alpha_s(v) in [0.0950, 0.1100] (a 7% window around 0.1033):
-    alpha_s(v)     g_3(v)   alpha_s(M_Z)
-  --------------------------------------------
-        0.0950     1.0926       0.107308
-        0.1000     1.1210       0.113755
-        0.1033     1.1393       0.118062
-        0.1066     1.1574       0.122411
-        0.1100     1.1757       0.126936
-  [PASS] [BOUNDED] alpha_s(M_Z) monotonically tracks alpha_s(v) (bridge has no hidden discontinuity)  (monotone propagation across the full 7% window)
-  [PASS] [BOUNDED] bridge transfer Jacobian d(alpha_s(M_Z)) / d(alpha_s(v)) is structurally consistent  (d(alpha_s(M_Z))/d(alpha_s(v)) = 1.3086 (compressive RGE flow))
+=== Part 5 (K4): auxiliary-tuple insensitivity (anti-tuning) ===
 
-=== Part 5: 1-loop vs 2-loop truncation envelope ===
+    g1 x 1.05: |delta T_2| = 3.620e-07
+    g1 x 0.95: |delta T_2| = 3.447e-07
+    g2 x 1.05: |delta T_2| = 3.040e-06
+    g2 x 0.95: |delta T_2| = 2.887e-06
+    yt x 1.05: |delta T_2| = 2.845e-06
+    yt x 0.95: |delta T_2| = 2.720e-06
+    lambda x 1.05: |delta T_2| = 2.743e-11
+    lambda x 0.95: |delta T_2| = 2.799e-11
+  [PASS] [A] max single-parameter 5% variation of the auxiliary tuple shifts T_2 by < 3.1e-6  (worst = 3.040e-06 (g2); the tuple is not a tuning knob)
+  [PASS] [A] joint 5% variation of all four auxiliary parameters shifts T_2 by < 3.1e-6  (joint up/down = 5.553e-07 / 5.130e-07)
 
-  2-loop alpha_s(M_Z) = 0.118067
-  1-loop alpha_s(M_Z) = 0.117571
-  Truncation shift   = 0.000496
-  [PASS] [BOUNDED] 1-loop and 2-loop agree within 5% (truncation envelope)  (|2L - 1L| = 0.0005, 5% of 2L = 0.0059)
-  [PASS] [BOUNDED] truncation envelope is positive (well-defined residual)  (residual = 0.0005)
+=== Part 6 (K5 + falsification legs): envelope, threshold bracket, sign flip ===
 
-=== Part 6: PDG envelope cross-check ===
+  [PASS] [A] truncation envelope T_2 - T_1 = +5.7e-4 at the domain center (positive, bounded)  (T_2 - T_1 = +5.678e-04)
+  [PASS] [A] derived strict threshold bracket T_2[nf=6 only] < T_2[matched] < T_2[nf=5 only] (from b0(5) > b0(6) > 0)  (0.122576 < 0.123604 < 0.124185)
+  [PASS] [A] falsification: removing the top threshold shifts T_2 by ~1.03e-3, more than 1e4 x the two-integrator residual (check is not vacuous)  (shift = 1.028e-03, 1e4 x residual = 4.274e-11)
+  [PASS] [A] falsification: sign-flipped kernel 1/T = 1/a + L contracts (T < a, Jacobian < 1) — expansivity is a real property, not a tautology  (T_flip(0.1075) = 0.095447 < 0.1075, J_flip = 0.7883 < 1)
 
-  [PASS] [BOUNDED] alpha_s(M_Z) inside PDG world-average 1-sigma band (0.1180 +/- 0.0009)  (alpha_s(M_Z) = 0.118067)
-  [PASS] [BOUNDED] alpha_s(M_Z) inside PDG restricted-average 2-sigma band (0.1179 +/- 0.0008)  (alpha_s(M_Z) = 0.118067)
+=== Part 7: note/runner manifest sync (bookkeeping, class B) ===
 
-=== Part 7: explicit-scope assertions ===
+  [PASS] [B] note declares the same closed-form constant L = 1.1746670551 and the same kernel domain [0.085, 0.130]  (note text carries the runner's L and domain)
+  [PASS] [B] note declares the same import scales v, m_t, M_Z and auxiliary tuple  (v = 246.282818290129, m_t = 172.69, M_Z = 91.1876)
+  [PASS] [B] the boundary value 0.103304 is absent from the kernel-theorem claim surface and confined to the labeled class-D comparator appendix  (claim surface is boundary-value-free)
 
-  [PASS] [BOUNDED] note declares bounded-scope (not framework-native derivation)  (QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md status = bounded)
-  [PASS] [BOUNDED] quark-mass thresholds are PDG infrastructure inputs (not framework-derived)  (m_t = 172.69 GeV, m_b = 4.18 GeV, m_c = 1.27 GeV from PDG)
-  [PASS] [BOUNDED] M_Z is a PDG infrastructure input (not framework-derived)  (M_Z = 91.1876 GeV from PDG)
-  [PASS] [BOUNDED] 2-loop SM RGE is standard Machacek-Vaughn / Arason et al infrastructure  (Nucl. Phys. B 222, 83 (1983); Phys. Rev. D 46, 3945 (1992))
+=== Part 8: comparator appendix (class D; NOT load-bearing) ===
+
+  These two checks are external PDG comparisons recorded for
+  downstream context only. The kernel theorem K1-K5 above does not
+  depend on them; the T2 theorem surface is grid/center certified over D.
+
+  [PASS] [D] worked example: T_2(0.103304) = 0.118067, inside the PDG band 0.1180 +/- 0.0009  (T_2(0.103304) = 0.118067)
+  [PASS] [D] PDG-band pullback window T_2^{-1}([0.1171, 0.1189]) = [0.10257, 0.10394] (interior to D)  (window = [0.10257, 0.10394])
 
 ==============================================================================
-SUMMARY: PASS=18  FAIL=0
+CHECK CLASSES: A=22  B=3  D=2  (D-comparators are a labeled minority; no C-class first-principles claims made)
+SUMMARY: PASS=27  FAIL=0
 ==============================================================================
 
 ----- stderr -----

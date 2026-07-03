@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_dynamics_koide_dial_firewall_2026_06_05.py
+runner_sha256: 08161fa02dd4a27e0709ce4567cf74829f28752b521d2e54b48328f690fca9c0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+==============================================================================
+RECORD DYNAMICS KOIDE DIAL FIREWALL
+no-go / supplied-setting readout classifier
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Gate separation
+------------------------------------------------------------------------------
+  [PASS] record gates do not include dial_selector
+  [PASS] record gates do not include produced_record
+  [PASS] external gates include stable_setting_supplied
+  [PASS] external gates include dial_selector
+  [PASS] history gate is record-dynamics only
+  [PASS] epsilon reset is not dial selection
+
+------------------------------------------------------------------------------
+2. Claim classifications
+------------------------------------------------------------------------------
+  [PASS] register_supplied_dial: required gates declared
+  [PASS] register_supplied_dial: classification (conditional_on_produced_record)
+  [PASS] history_of_supplied_dial: required gates declared
+  [PASS] history_of_supplied_dial: classification (conditional_on_produced_record)
+  [PASS] select_dial_location: required gates declared
+  [PASS] select_dial_location: classification (selector_open)
+  [PASS] force_koide_value: required gates declared
+  [PASS] force_koide_value: classification (selector_open)
+  [PASS] stable_location_on_dial: required gates declared
+  [PASS] stable_location_on_dial: classification (selector_open)
+
+------------------------------------------------------------------------------
+3. Overclaim firewall
+------------------------------------------------------------------------------
+  [PASS] history selects dial
+  [PASS] reset gates select dial
+  [PASS] epsilon reset stabilizes Koide value
+  [PASS] local observability forces dial
+  [PASS] stable readout means selected location
+  [PASS] record stack can register supplied setting only conditionally
+
+------------------------------------------------------------------------------
+4. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_DYNAMICS_KOIDE_DIAL_FIREWALL_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: no-go
+  [PASS] note contains marker: trace_class: negative_route_pruning
+  [PASS] note contains marker: does not select the dial location
+  [PASS] note contains marker: Does not derive Koide
+  [PASS] note contains marker: Does not update repo-wide authority surfaces.
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: koide closure
+  [PASS] forbidden wording absent: mass closure
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: audit verdict
+  [PASS] forbidden wording absent: authority edit
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=35 FAIL=0
+
+----- stderr -----
+

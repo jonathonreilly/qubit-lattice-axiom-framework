@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/frontier_ew_kappa_self_energy_object_pin.py
+runner_sha256: 28dbc8b0b680b3bd597ae3c9549b6426bdcc3bdf5543eba1b600c0d3e00f40aa
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 16.34
+status: ok
+----- stdout -----
+==============================================================================
+EW kappa_EW object-pin + MC-undecidability runner (zero PDG inputs)
+==============================================================================
+
+(A) SU(N_c) Fierz completeness: Tr[M^dag M] = (1/N_c)|Tr M|^2 + 2 sum|Tr[M t^A]|^2
+  [PASS] N_c=2: gens orthonormal=True, count 3=N_c^2-1=True, C=2*sum|Tr[M t^A]|^2 (err 8.9e-16), S+C=T=True
+  [PASS] N_c=3: gens orthonormal=True, count 8=N_c^2-1=True, C=2*sum|Tr[M t^A]|^2 (err 1.8e-15), S+C=T=True
+  [PASS] N_c=4: gens orthonormal=True, count 15=N_c^2-1=True, C=2*sum|Tr[M t^A]|^2 (err 0.0e+00), S+C=T=True
+  [PASS] N_c=5: gens orthonormal=True, count 24=N_c^2-1=True, C=2*sum|Tr[M t^A]|^2 (err 1.4e-14), S+C=T=True
+
+(B) The bare connected color-blind correlator computes Tr(Q^2)*(S+C): the OBJECT (not the readout)
+  [PASS] color-blind loop Tr[G G^dag] = S+C = T (loop 17.5890 vs T 17.5890)
+  [PASS] direct-product factorization Tr[(Q⊗I)(V⊗G)(Q⊗I)(V'⊗G†)] = Tr(QVQV')*Tr(GG†) (err 3.6e-15)
+  [PASS] trivial-internal weight of (S+C) = Tr(Q^2) = 1/2 (got 0.5000)
+  [PASS] counterexample M=I_color: S=N_c=3, C=0 (got 0.0e+00); singlet carries Tr(T_3^2)*S = 1.50
+
+(B') Color reflection G(y,x)=eps(x)eps(y)G(x,y)^dag from staggered eps-hermiticity (real lattice, random SU(3))
+  [PASS] staggered D_m^dag = eps D_m eps (err 0.0e+00) => G^dag = eps G eps (err 5.0e-15); reflection is a theory property, not an assumption
+
+(C) Channel split is a kinematic gauge-orbit fraction: <S>/<T> = 1/N_c^2 for ANY dressing
+  [PASS] N_c=2: arbitrary-dressing orbit-avg <S>/T=0.2507 (=1/N_c^2=0.2500, Weingarten); cross-check free+gauge=0.2490, Haar=0.2507 => R_conn=0.7500
+  [PASS] N_c=3: arbitrary-dressing orbit-avg <S>/T=0.1114 (=1/N_c^2=0.1111, Weingarten); cross-check free+gauge=0.1109, Haar=0.1106 => R_conn=0.8889
+  [PASS] N_c=4: arbitrary-dressing orbit-avg <S>/T=0.0626 (=1/N_c^2=0.0625, Weingarten); cross-check free+gauge=0.0622, Haar=0.0625 => R_conn=0.9375
+  [PASS] N_c=5: arbitrary-dressing orbit-avg <S>/T=0.0399 (=1/N_c^2=0.0400, Weingarten); cross-check free+gauge=0.0396, Haar=0.0398 => R_conn=0.9600
+    => the gauge-orbit singlet fraction is dressing(beta)-independent: R_conn = 8/9 has no continuum trend
+
+(D) Color-blindness leaves kappa free: both kappa=1 and kappa=0 are external scheme choices
+  [PASS] multiplicative color-scalar renorm scales S,C equally -> R_conn invariant (0.995014 -> 0.995014); color-blindness selects neither completion
+  [PASS] kappa=0 = active singlet projection removes S (S 0.086 -> 9.2e-33, C unchanged); a non-color-blind op
+  [PASS] kappa=1 = identity readout, retain full trace T=S+C (17.256); selecting it as physical is still external
+    => color-blindness fixes neither completion; kappa=0 (OZI/planar projection) and kappa=1 (identity
+       readout) are both external continuum scheme choices -- neither is privileged by the lattice current
+
+(E) Structural Monte-Carlo-undecidability of kappa_EW
+  [PASS] K_EW(0) = 9/8 (got 9/8) ; K_EW(1) = 1 (got 1)
+  [PASS] bare gauge-invariant correlator = <T> = 1 (full trace S+C); this is the OBJECT, not yet the physical readout
+  [PASS] Pi_phys(kappa=0)=8/9 (singlet-subtracted) and Pi_phys(kappa=1)=1 (full trace) are BOTH built from the SAME measured {S=1/9,C=8/9,T=1} -> no MC observable is a function of kappa alone
+    => kappa_EW is not Monte-Carlo-decidable: the channel split is an ensemble observable, but the readout
+       weight (which channels the matched physical coupling retains) is a continuum scheme choice external
+       to it; neither completion is privileged by any lattice measurement
+
+(F) sin^2(theta_W) is kappa-invariant (K_EW cancels in the g_1/g_2 ratio)
+  [PASS] sin^2(theta_W) independent of kappa (residual 0)
+
+==============================================================================
+RUNNER STATUS: PASS (PASS=20 FAIL=0)
+runner_check_breakdown = {A: 20, B: 0, C: 0, D: 0, total_pass: 20}
+==============================================================================
+
+----- stderr -----
+

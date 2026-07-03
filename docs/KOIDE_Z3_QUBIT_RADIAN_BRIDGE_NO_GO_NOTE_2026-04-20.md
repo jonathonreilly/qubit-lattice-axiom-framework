@@ -6,7 +6,9 @@
 the physical selected-line CP¹ base. The precise obstruction and the minimal
 additional structural input are named.
 **Primary runner:** `scripts/frontier_koide_z3_qubit_radian_bridge_no_go.py` (PASS=23 FAIL=0)
-**Companion:** `docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md` §4 (names P).
+**Companion:** `docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`
+is now a formal-only Q-Delta identity. This no-go note, not that repaired
+parent, carries the radian-bridge obstruction context.
 
 ---
 
@@ -174,7 +176,8 @@ form is (a), (b), or (c).
 
 ## 7. Cross-references
 
-- KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md (P named)
+- KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md (formal-only
+  Q-Delta identity; context only)
 - KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md (R1)
 - KOIDE_BERRY_BUNDLE_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md (R2)
 - KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md (R3, A.2)

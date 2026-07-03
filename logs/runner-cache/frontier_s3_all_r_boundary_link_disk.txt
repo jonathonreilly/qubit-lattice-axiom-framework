@@ -1,0 +1,130 @@
+===== runner cache v1 =====
+runner: scripts/frontier_s3_all_r_boundary_link_disk.py
+runner_sha256: 4353e81c5d65ea2555bd024d59e2dfe112982ee2139b0f7523b4048f0c928fc3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 19.66
+status: ok
+----- stdout -----
+======================================================================
+  CUBICAL-BALL ALL-R BOUNDARY-LINK DISK THEOREM: VERIFICATION
+======================================================================
+
+  Closes the single open analytic gap of
+  S3_BOUNDARY_LINK_THEOREM_NOTE.md (the v_i<=-2 bridge lemma),
+  converting the boundary-link PL 2-disk certificate from a
+  finite-radius bounded certificate to an all-R positive theorem.
+
+  The load-bearing new content is the R-FREE per-coordinate
+  FORCED-CUBE IDENTITY g(v_a+s_forced)=max(H(v_a),H(v_a+eps)).
+
+======================================================================
+  LEMMA H: closed form H(t) = t^2 (|t|>=1), H(0) = 1
+======================================================================
+  Range checked: |t| <= 200
+  H(t) != H_closed(t) violations: 0
+  [PASS] [EXACT] LEMMA H: H(t)=min(g(t),g(t-1)) equals t^2 for |t|>=1 and 1 at t=0  (0 violations over |t|<=200; H is the least incident-cube axis penalty)
+
+======================================================================
+  LEMMA SITE: w in sites(B_R)  <=>  B(w)=sum_i H(w_i) <= R^2
+======================================================================
+  (point, R) pairs checked over R=2..22: 662823
+  Mismatches vs canonical cubical_ball site set: 0
+  B(w) != min_s Phi(w,s) mismatches (31^3 box):  0
+  [PASS] [EXACT] LEMMA SITE: membership predicate B(w)<=R^2 matches the canonical cubical-ball site set exactly  (662823 (point,R) pairs, 0 mismatch (R=2..22))
+  [PASS] [EXACT] LEMMA SITE: B(w) equals the least incident-cube farthest-corner squared distance min_s Phi(w,s)  (0 mismatch over the 31^3 lattice box)
+
+======================================================================
+  LEMMA FORCED: g(v_a+s_forced) = max(H(v_a), H(v_a+eps))
+                (the all-R bridge content; an EQUALITY in every region)
+======================================================================
+  Range checked: |v_a| <= 500, both eps in {+1,-1}
+  cases: 2002   EQUALITY holds: 2002   inequality (<=) holds: 2002
+  [PASS] [EXACT] LEMMA FORCED: per-coordinate forced-cube identity holds as an EQUALITY for all integer v_a and both directions  (2002/2002 equality (|v_a|<=500); closes the v_i<=-2 regime the note left empirical)
+  [PASS] [EXACT] LEMMA FORCED (valley): g(v_k+s_pref)=H(v_k) for the preferred (free-axis) sign  (1001/1001 valley identities)
+
+======================================================================
+  FORCED-WITNESS DOMINATION: Phi(W) <= max_{q corner of sigma} B(q)
+  (universal integer fact; gives Phi(W)<=R^2 when sigma in true link)
+======================================================================
+  Lattice box checked: |coord| <= 20, all simplex types (vertices/edges/triangles)
+  cases: 1791946   violations: 0
+  [PASS] [EXACT] FORCED-WITNESS DOMINATION: forced witness cube W satisfies Phi(W) <= max corner-potential of the simplex, all simplex types  (1791946 (vertex,simplex-type) cases, 0 violations (|coord|<=20); yields Phi(W)<=R^2 for every true-link simplex)
+
+======================================================================
+  BRIDGE THEOREM (all-R): link(v, B_R) == K_simp(P), R=2..24
+======================================================================
+  R range checked: 2..24 (note's empirical check was only R=2..6)
+  Matches:    84238
+  Mismatches: 0
+  [PASS] [EXACT] BRIDGE THEOREM: actual link(v,B_R) coincides with the simplicial closure K_simp(P) for every boundary vertex, R=2..24  (84238 match / 0 mismatch; the analytic FORCED identity makes this exact for ALL R)
+
+======================================================================
+  PROPOSITION Z (re-verify): every Q_3-both-connected K_simp(P) is a PL 2-disk
+======================================================================
+  Nonempty proper subsets:        254
+  Both sides connected in Q_3:     126
+  Of those: PL 2-disk:             126/126
+  Cubical-ball-realizable (downset): 102
+  Of those: PL 2-disk:             102/102
+  [PASS] [EXACT] PROPOSITION Z: all Q_3-both-connected octahedral subset closures are PL 2-disks (exhaustive 126-subset enumeration)  (126/126 disks (integer SNF + boundary-BFS + vertex-link manifoldness))
+
+======================================================================
+  PROPERTY 2/2a CONSISTENCY: every realized present set is Q_3-both-connected
+======================================================================
+  Realized labelled present-set types: 102
+  [PASS] [EXACT] PROPERTY 2/2a: every realized present set P is a Q_3-both-connected partition (downset/upset)  (102 realized types, all both-connected -> Proposition Z applies to each)
+
+======================================================================
+  ALL-R BOUNDARY-LINK DISK THEOREM (assembled)
+======================================================================
+  Chain: (a) Property 2/2a [all-R] + (b) BRIDGE THEOREM via the
+  FORCED identity [all-R, this runner] + (c) Proposition Z [EXACT]
+  ==> link(v,B_R) is a PL 2-disk for EVERY boundary vertex of EVERY
+      cubical ball B_R, with NO finite-radius truncation.
+  [PASS] [EXACT] ALL-R BOUNDARY-LINK DISK THEOREM: link(v,B_R) is a PL 2-disk for every boundary vertex of every B_R, all R  (removes the finite-radius bound on the boundary-link disk certificate (Part A); proof is R-free (separable forced-cube identity))
+
+======================================================================
+  TYPE STABILIZATION (descriptive corroboration, R_0 = 6)
+======================================================================
+  Cumulative distinct labelled present-set types: R=2:26, R=3:58, R=4:78, R=5:78, R=6:102, R=7:102, R=8:102, ...
+  Total labelled types: 102; first reached at R_0 = 6; frozen R=6..25: True
+  [PASS] [EXACT] TYPE STABILIZATION: labelled present-set type count is frozen at 102 for all R >= R_0 = 6 (R=6..25)  (descriptive account of the note's 102 realizable types; NOT the load-bearing all-R step (the FORCED identity is))
+
+  O_h (order 48) orbit decomposition of the 102 labelled types:
+    number of orbits: 8   sizes: [6, 8, 8, 8, 12, 12, 24, 24]   sum: 102
+    realized set O_h-closed: True
+    orbits by present-cube count |P|: {5: [24], 1: [8], 7: [8], 3: [24], 4: [6, 8], 2: [12], 6: [12]}
+  [PASS] [EXACT] O_h ORBIT DECOMPOSITION: the 102 labelled types form 8 O_h orbits (sizes sum to 102) and the realized set is O_h-closed  (8 orbits of sizes [6, 8, 8, 8, 12, 12, 24, 24]; structural account of the 102-type count via the cube symmetry group)
+
+======================================================================
+  INTERIOR-VERTEX LINKS: full octahedral S^2 (R-independent)
+======================================================================
+  Interior vertices checked (R=2..11): 10316
+  Non-full-octahedron links: 0
+  [PASS] [EXACT] INTERIOR LINKS: every interior-vertex link is the full octahedral S^2 (6 verts, 12 edges, 8 triangles)  (10316 interior vertices, 0 non-full (R=2..11); supports the boundary-is-PL-2-sphere step (downstream of Part A))
+
+======================================================================
+  SUMMARY
+======================================================================
+  PASS: 13   FAIL: 0
+  EXACT: 13   BOUNDED: 0
+  Time: 19.5s
+
+  RESULT: ALL CHECKS PASS
+
+  The all-R boundary-link PL 2-disk theorem passes with NO
+  finite-radius residue.  The bridge lemma's v_i<=-2 regime is
+  discharged analytically by the R-free FORCED-CUBE IDENTITY
+  (an equality, reproven in exact integer arithmetic), replacing
+  the note's empirical R=2..6 check.  This converts the boundary-
+  link disk certificate (Part A) from finite-radius support to an
+  all-R theorem surface.
+
+  OUT OF SCOPE (unchanged): the PL S^3 cone-cap identification
+  (Part B) still requires external PL facts not registered as
+  import nodes; S3_CAP_UNIQUENESS_NOTE.md stays finite-radius
+  bounded.
+
+----- stderr -----
+

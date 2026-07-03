@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_qg_canonical_textbook_continuum_gr_closure.py
+runner_sha256: 34cdac189e927c8075c3e3a6139f83eda7926a787f49bd40ab9d37ee284837d4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+[EXACT] PASS: the route already has textbook geometric/action equivalence, smooth global weak/Gaussian gravitational closure, and Lorentzian/global Einstein/Regge atlas closure
+    this theorem composes the already-closed canonical textbook geometric/action family with the already-closed positive-sector global weak/Gaussian family and the already-closed Lorentzian/global atlas closure
+[EXACT] PASS: the positive-sector weak/Gaussian family closes globally as an exact projective action family
+    max Schur operator error=2.776e-17, max Schur source error=2.220e-16, max stationary projection error=2.132e-13, max covariance projection error=7.461e-14
+[EXACT] PASS: the Lorentzian sector remains globally stationary and chart-covariant on the same canonical textbook family
+    lorentzian signature=(21, 9, 0), lorentzian stationary error=3.553e-14, lorentzian covariance error=2.132e-14
+[EXACT] PASS: the chosen canonical textbook target therefore already carries one global continuum gravitational weak/stationary action family
+    the positive weak/Gaussian and Lorentzian stationary sectors are now one canonical textbook continuum gravitational family on the chosen target
+[EXACT] PASS: there is no remaining theorem gap on the chosen canonical textbook continuum target
+    what remains after this is only alternative textbook packaging, gauge, or normalization comparison, not a missing theorem on the chosen target
+UNIVERSAL QG CANONICAL TEXTBOOK CONTINUUM GR CLOSURE
+==============================================================================
+max Schur operator error             = 2.776e-17
+max Schur source error               = 2.220e-16
+max stationary projection error      = 2.132e-13
+max covariance projection error      = 7.461e-14
+lorentzian signature                 = (21, 9, 0)
+lorentzian stationary error          = 3.553e-14
+lorentzian covariance error          = 2.132e-14
+
+Verdict:
+The direct-universal route already closes as one canonical textbook continuum gravitational weak/stationary action family on the chosen smooth target.
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASS=5 FAIL=0 TOTAL=5
+
+----- stderr -----
+

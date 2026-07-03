@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/frontier_ew_kappa_weighting_not_axiom_derivable.py
+runner_sha256: 189796ca373cd697f83379cf006f22f08a2c1905fb7f190e1deabf41e9be94c0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+EW KAPPA WEIGHTING NOT AXIOM-DERIVABLE NO-GO
+========================================================================
+[PASS] central-sector count is not the inter-sector kappa_EW weight
+       count=0.888888888889; Pi(0)=10.258910; Pi(1)=15.137917; S=4.879007
+[PASS] Record axiom section explicitly does not supply weighting/readout/normalization
+[PASS] Quantum axiom section explicitly does not supply a physical observable bridge
+[PASS] approved primitives do not include a kappa_EW weighting primitive
+       kinetic_isotropy_primitive:KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md, scale_reference_primitive:SCALE_REFERENCE_PRIMITIVE_NOTE.md
+[PASS] current Tier-A registry does not register kappa_EW
+       count=2; ids=['staggered_dirac_realization_gate_note_2026-05-03', 'strong_cp_theta_zero_note']
+[PASS] within the existing construction a common K_EW factor cancels from sin^2(theta_W)
+       values=0.234740083318, 0.234740083318, 0.234740083318, 0.234740083318
+[PASS] source note carries no-go discipline and governance guardrails
+       all required guardrails present
+
+RUNNER STATUS: PASS (PASS=7 FAIL=0)
+SCOPE: kappa_EW is not derivable from the current approved axiom/primitive baseline alone; future derivation or owner-approved admission remains open.
+
+----- stderr -----
+

@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/free_staggered_two_step_dispersion_d_dimensional_2026_06_12.py
+runner_sha256: f82b9a7226c8bc53fb70d71bda5f8a89b9681481fe3195cb3a611abcf1128e8f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.22
+status: ok
+----- stdout -----
+FREE STAGGERED TWO-STEP DISPERSION IN D DIMENSIONS
+Deterministic checks; no random inputs.
+PASS: source note has audit-authority guardrail, one-hop links, positive-rate/sign boundary, and no status/stale-LR tokens (8/8 text guards satisfied)
+PASS: two-site-cell staggered phase matrices satisfy Gamma_mu^2=I and anticommutation (d=2: max Clifford residual 0.0e+00; d=3: max Clifford residual 0.0e+00)
+PASS: folded spatial hop has scalar square -sum_mu sin^2(k_mu) in each cell-momentum sector (d=2: max ||A(k)^2 + |sin k|^2 I||_inf 3.1e-17; d=3: max ||A(k)^2 + |sin k|^2 I||_inf 2.8e-16)
+PASS: position-space blocked T_odd T_even decaying spectrum equals exp(-2E(p)) on d=2 and d=3 tori (d=2,L=4: count 16/16, max residual 1.5e-15, max imag 1.1e-16; d=2,L=6: count 36/36, max residual 1.7e-15, max imag 5.8e-16; d=3,L=4: count 64/64, max residual 5.9e-15, max imag 1.5e-15)
+PASS: kernel support is on even spatial offsets after two-step blocking (d=2: max odd-offset |h| 1.1e-17; d=3: max odd-offset |h| 1.5e-17)
+PASS: axis kernel decay rate matches arcsinh(m) on d=2 and d=3 resolved blocks (d=2: rate 0.296138 vs arcsinh(m) 0.295673, rel 0.157%, prefactor 1.96; d=3: rate 0.296667 vs arcsinh(m) 0.295673, rel 0.336%, prefactor 2.42)
+PASS: all-direction contour bound is respected; it gives an explicit positive l1 rate arcsinh(m)/(2d) (d=2: max ratio 0.103, concrete l1 rate r_d=arcsinh(m)/(2d)=0.073918; d=3: max ratio 0.062, concrete l1 rate r_d=arcsinh(m)/(2d)=0.049279)
+TOTAL: PASS=7, FAIL=0
+
+----- stderr -----

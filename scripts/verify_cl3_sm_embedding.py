@@ -1,20 +1,20 @@
 """
 verify_cl3_sm_embedding.py
 
-Algebraic verification of the Cl(3) -> SM embedding theorem.
+Algebraic verification of finite Cl(3)/taste-cube support checks.
 
 Framework axiom: local algebra Cl(3) on spatial substrate Z^3.
 
 STRUCTURE OF THE PROOF:
-  A. Cl(3) = {Gamma_i} on 8D taste space via Z^3 staggered phases
+  A. Cl(3) = {Gamma_i} on an explicit 8D Pauli-tensor taste-cube model
   B. Cl+(3) = even subalgebra, isomorphic to H (quaternions), containing su(2)
   C. Pseudoscalar omega = G1G2G3 is central with omega^2=-I, generating U(1)_Y center
   D. Dimension theorem: dim(Cl+(3)) = d+1 = 4 -> g2^2 = 1/4;
                         dim(Cl+(3)+{omega}) = d+2 = 5 -> g_Y^2 = 1/5
   E. Physical SU(2)_weak: fiber operators commute with hypercharge Y
      Isomorphism: fiber SU(2) ~ Clifford SU(2) proves Cl+(3) contains the gauge group
-  F. Hypercharge Y: eigenvalues +1/3 (6D quark block) and -1 (2D lepton block)
-  G. Z^3 taste cube S3 action: C^8 = 4A_1+2E; hw=1 triplet = 3 generations via Z3
+  F. Hypercharge Y: eigenvalues +1/3 (6D symmetric block) and -1 (2D antisymmetric block)
+  G. Abstract taste-cube S3 action: C^8 = 4A_1+2E; hw=1 triplet is a Z3 orbit
   H. SU(3)_c from symmetric-base commutant of SU(2)_weak: T_F = 1/2, [SU(3),SU(2)]=0
   I. N_c = 3 from dim(Z^3); R_conn = 8/9 from Fierz; sqrt(9/8) EW correction
   J. L-sector determinant support: det(H_L) >= 0 from Kramers degeneracy on chiral sector
@@ -63,7 +63,7 @@ def state_idx(b1, b2, b3):
 
 
 # ---------------------------------------------------------------------------
-# Cl(3) generators on 8D taste space via Z^3 staggered phases.
+# Cl(3) generators on an explicit 8D Pauli-tensor taste-cube model.
 # State |b1 b2 b3> in {0,1}^3, n = 4*b1 + 2*b2 + b3.
 #
 # Gamma_1 = sigma_1 x I2 x I2   (flip b1, eta_1=1)
@@ -292,9 +292,9 @@ ok_E &= check("  Clifford J_i and fiber Jf_i are DIFFERENT 8x8 matrices",
 check("Section E", ok_E)
 
 # ---------------------------------------------------------------------------
-# Section F: Hypercharge eigenvalues +1/3 (6D) and -1 (2D)
+# Section F: Y-operator eigenvalues +1/3 (6D) and -1 (2D)
 # ---------------------------------------------------------------------------
-section("F: Hypercharge Y: eigenvalues +1/3 (6D quark) and -1 (2D lepton)")
+section("F: Y operator: eigenvalues +1/3 (6D symmetric) and -1 (2D antisymmetric)")
 
 ok_F = True
 
@@ -324,18 +324,17 @@ n_minus = sum(1 for e in evals_Y if abs(e + 1) < 1e-5)
 ok_F &= check(f"  Y eigenvalue +1/3 has multiplicity 6", n_plus == 6, f"got {n_plus}")
 ok_F &= check(f"  Y eigenvalue -1 has multiplicity 2", n_minus == 2, f"got {n_minus}")
 
-# Physical interpretation: +1/3 = quark-like (3 colors x 2 isospin), -1 = lepton-like
-ok_F &= check("  SM interpretation: Y=+1/3 matches quark L doublet (3c x 2 iso = 6D)",
-              n_plus == 6, "3 color x 2 weak-doublet states")
-ok_F &= check("  SM interpretation: Y=-1 matches lepton L doublet (1 x 2 iso = 2D)",
-              n_minus == 2, "1 antisym-base x 2 weak-doublet states")
+ok_F &= check("  Y=+1/3 symmetric block has dimension 6",
+              n_plus == 6, "six-dimensional symmetric block")
+ok_F &= check("  Y=-1 antisymmetric block has dimension 2",
+              n_minus == 2, "two-dimensional antisymmetric block")
 
 check("Section F", ok_F)
 
 # ---------------------------------------------------------------------------
-# Section G: Z^3 taste cube S3 action -> 3 generations via Z3 symmetry
+# Section G: abstract taste-cube S3 action -> Z3 three-state orbit
 # ---------------------------------------------------------------------------
-section("G: S3 action on taste cube: C^8 = 4A1+2E; hw=1 triplet = 3 generations")
+section("G: S3 action on taste cube: C^8 = 4A1+2E; hw=1 triplet = Z3 orbit")
 
 ok_G = True
 
@@ -407,12 +406,11 @@ ok_G &= check(f"  hw=1 triplet: chi(2c)={chi_hw1_2c:.0f}, chi(3c)={chi_hw1_3c:.0
               np.isclose(chi_hw1_2c, 1) and np.isclose(chi_hw1_3c, 0),
               f"  -> A1+E (permutation rep of 3-orbit)")
 
-# hw=1 Y eigenvalue spectrum: restricted 3×3 Y matrix has eigenvalues {-1, +1/3, +1/3}
-# (two quark-like states at Y=+1/3 and one lepton-like state at Y=-1)
+# hw=1 Y eigenvalue spectrum: restricted 3x3 Y matrix has eigenvalues {-1, +1/3, +1/3}
 Y_hw1 = Y[np.ix_(hw1_idx, hw1_idx)]
 evals_Y_hw1 = sorted(np.linalg.eigvalsh(Y_hw1.real))
 expected_Y_hw1 = sorted([-1.0, 1/3, 1/3])
-ok_G &= check("  hw=1 Y spectrum: {-1, +1/3, +1/3}  (quark-like x2, lepton-like x1)",
+ok_G &= check("  hw=1 Y spectrum: {-1, +1/3, +1/3}",
               np.allclose(evals_Y_hw1, expected_Y_hw1, atol=1e-8),
               f"got {np.round(evals_Y_hw1, 4)}")
 
@@ -421,7 +419,7 @@ ok_G &= check("  hw=1 Y spectrum: {-1, +1/3, +1/3}  (quark-like x2, lepton-like 
 # e3=(0,0,1) has b3=1 → T3=-1/2 (s3|1>=-|1>)
 Jf3_hw1 = Jf3[np.ix_(hw1_idx, hw1_idx)]
 evals_T3_hw1 = sorted(np.linalg.eigvalsh(Jf3_hw1.real))
-ok_G &= check("  hw=1 T3 eigenvalues: {-1/2, +1/2, +1/2}  (one down-type, two up-type)",
+ok_G &= check("  hw=1 T3 eigenvalues: {-1/2, +1/2, +1/2}",
               np.allclose(evals_T3_hw1, sorted([-0.5, 0.5, 0.5]), atol=1e-8),
               f"got {np.round(evals_T3_hw1, 4)}")
 
@@ -576,6 +574,35 @@ R_fierz = 1 - 1/N_c**2
 ok_I &= check(f"  R_conn from Fierz = {R_fierz:.6f} = (N_c^2-1)/N_c^2",
               np.isclose(R_fierz, 8/9))
 
+# Identity-channel normalization in the same T_F = 1/2 convention.
+# The trace-normalized U(N) identity generator is T^0 = I/sqrt(2N_c).
+T0_tf = np.eye(N_c, dtype=complex) / np.sqrt(2 * N_c)
+T0_hs = np.eye(N_c, dtype=complex) / np.sqrt(N_c)
+T0_tf_outer = np.einsum('ij,kl->ijkl', T0_tf, T0_tf)
+T0_hs_outer = np.einsum('ij,kl->ijkl', T0_hs, T0_hs)
+T0_tf_rhs = np.zeros((N_c, N_c, N_c, N_c), dtype=complex)
+T0_hs_rhs = np.zeros((N_c, N_c, N_c, N_c), dtype=complex)
+Full_uN_rhs = np.zeros((N_c, N_c, N_c, N_c), dtype=complex)
+for i, j, k, l in iproduct(range(N_c), repeat=4):
+    T0_tf_rhs[i, j, k, l] = (1 / (2 * N_c)) * (i == j) * (k == l)
+    T0_hs_rhs[i, j, k, l] = (1 / N_c) * (i == j) * (k == l)
+    Full_uN_rhs[i, j, k, l] = 0.5 * (i == l) * (k == j)
+t0_tf_trace = np.trace(T0_tf @ T0_tf).real
+t0_tf_err = np.max(np.abs(T0_tf_outer - T0_tf_rhs))
+t0_hs_trace = np.trace(T0_hs @ T0_hs).real
+t0_hs_err = np.max(np.abs(T0_hs_outer - T0_hs_rhs))
+full_uN_err = np.max(np.abs(Fierz_lhs + T0_tf_outer - Full_uN_rhs))
+ok_I &= check("  identity generator T^0 = I/sqrt(2N_c) has Tr(T^0 T^0)=1/2",
+              abs(t0_tf_trace - 0.5) < EPS,
+              f"trace={t0_tf_trace:.6f}")
+ok_I &= check("  T^0 channel contributes delta_ij delta_kl/(2N_c)",
+              t0_tf_err < EPS, f"max err {t0_tf_err:.1e}")
+ok_I &= check("  HS unit S=I/sqrt(N_c) contributes delta_ij delta_kl/N_c",
+              abs(t0_hs_trace - 1.0) < EPS and t0_hs_err < EPS,
+              f"Tr(S^2)={t0_hs_trace:.6f}, max err {t0_hs_err:.1e}")
+ok_I &= check("  SU(N) Fierz plus T^0 gives full U(N) completeness with T_F=1/2",
+              full_uN_err < EPS, f"max err {full_uN_err:.1e}")
+
 sqrt_corr = np.sqrt(1/R_conn)
 ok_I &= check(f"  EW correction sqrt(1/R_conn) = sqrt(9/8) = {sqrt_corr:.6f}",
               np.isclose(sqrt_corr, np.sqrt(9/8)))
@@ -657,7 +684,7 @@ check("Section J", ok_J)
 section(f"SUMMARY  [PASS={PASS_COUNT}, FAIL={FAIL_COUNT}]")
 
 print(f"""
-Cl(3)/Z^3 -> SM Embedding Theorem — algebraic checks complete.
+Finite Cl(3)/taste-cube support packet — algebraic checks complete.
 
   A. Cl(3) generators {{Gamma_i}} on 8D taste space: anticommutation exact.
   B. Cl+(3) ≅ H: bivectors square to -I, quaternion products correct, su(2) closes.
@@ -668,10 +695,10 @@ Cl(3)/Z^3 -> SM Embedding Theorem — algebraic checks complete.
      sin^2(theta_W)(bare) = 4/9.
   E. Physical SU(2)_weak = fiber ops {{I4 x sigma_i/2}} commute with Y.
      Isomorphic to Cl+(3) bivector SU(2) as abstract Lie algebra.
-  F. Hypercharge Y: +1/3 on 6D quark block, -1 on 2D lepton block. Traceless.
-  G. S3 on C^8 = 4A1+2E; hw=1 triplet = 3 generation candidates, Z3-related.
+  F. Y operator: +1/3 on 6D symmetric block, -1 on 2D antisymmetric block. Traceless.
+  G. S3 on C^8 = 4A1+2E; hw=1 triplet is a Z3-related three-state orbit.
   H. SU(3)_c on symmetric base: T_F=1/2; [SU(3),SU(2)]=0; [SU(3),Y]=0.
-  I. N_c=3 from Z^3; R_conn=8/9; sqrt(9/8) EW correction; Fierz verified.
+  I. N_c=3 from Z^3; R_conn=8/9; sqrt(9/8) EW correction; Fierz + identity channel verified.
   J. L-sector determinant support: det(H_L)>=0 forced by Kramers degeneracy T^2<0 on L-sector.
 
 Support targets sharpened by this packet:

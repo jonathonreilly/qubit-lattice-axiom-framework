@@ -33,10 +33,34 @@ from __future__ import annotations
 
 import math
 import sys
+from pathlib import Path
 from typing import List, Tuple, Dict
 
 import numpy as np
 import cvxpy as cp
+
+ROOT = Path(__file__).resolve().parents[1]
+PASS_COUNT = 0
+FAIL_COUNT = 0
+
+
+def check(name: str, condition: bool, detail: str = "") -> bool:
+    global PASS_COUNT, FAIL_COUNT
+    status = "PASS" if condition else "FAIL"
+    if condition:
+        PASS_COUNT += 1
+    else:
+        FAIL_COUNT += 1
+    msg = f"  [{status}] {name}"
+    if detail:
+        msg += f"  ({detail})"
+    print(msg)
+    return condition
+
+
+def is_psd(mat: np.ndarray, tol: float = 1e-10) -> bool:
+    eigs = np.linalg.eigvalsh(np.array(mat, dtype=float))
+    return bool(np.min(eigs) >= -tol)
 
 
 # ---------------------------------------------------------------------------
@@ -203,6 +227,81 @@ def lattice_bootstrap_problem(
 
 
 # ---------------------------------------------------------------------------
+# Section 2: Exact obstruction certificate independent of solver numerics
+# ---------------------------------------------------------------------------
+
+def exact_all_ones_upper_obstruction_certificate(N_c: int = 3) -> None:
+    """Certify that the encoded SDP surface cannot prove p1 < 1.
+
+    The point with every encoded Wilson-loop moment and cross-correlator equal
+    to one is feasible for all constraints used in `lattice_bootstrap_problem`.
+    Since the support constraint also enforces p1 <= 1, the upper optimum of
+    this constraint surface is exactly 1. This is the source-side theorem; the
+    optional p1 >= 0.4225 lower-bound switch is not used except to show that it
+    does not remove the p1 = 1 feasible point.
+    """
+    print()
+    print("--- Exact no-upper-bound certificate (solver-independent) ---")
+    a, b = -1.0 / N_c, 1.0
+    p1 = p2 = p3 = p4 = 1.0
+    r1 = r2 = q1 = q2 = 1.0
+    pr = pq = rq = 1.0
+
+    H = np.array([[1.0, p1, p2], [p1, p2, p3], [p2, p3, p4]])
+    H1 = np.array([[p1 - a, p2 - a * p1], [p2 - a * p1, p3 - a * p2]])
+    H2 = np.array([[b - p1, b * p1 - p2], [b * p1 - p2, b * p2 - p3]])
+    G = np.array(
+        [[1.0, p1, r1, q1],
+         [p1, p2, pr, pq],
+         [r1, pr, r2, rq],
+         [q1, pq, rq, q2]]
+    )
+
+    check("all-ones plaquette Hankel matrix is PSD", is_psd(H),
+          f"rank={np.linalg.matrix_rank(H)}")
+    check("shifted Hausdorff lower matrix is PSD", is_psd(H1),
+          f"min_eig={np.min(np.linalg.eigvalsh(H1)):.3e}")
+    check("shifted Hausdorff upper matrix is PSD", is_psd(H2),
+          f"max_abs={np.max(np.abs(H2)):.3e}")
+    check("{1,P,R,Q} all-ones Gram matrix is PSD", is_psd(G),
+          f"rank={np.linalg.matrix_rank(G)}")
+
+    support_ok = (
+        a <= p1 <= b and a <= r1 <= b and a <= q1 <= b
+        and 0 <= p2 <= 1 and -1 <= p3 <= 1 and 0 <= p4 <= 1
+        and 0 <= r2 <= 1 and 0 <= q2 <= 1
+        and all(-1 <= x <= 1 for x in (pr, pq, rq))
+    )
+    check("all support and cross-correlator bounds hold at p1=1", support_ok)
+    check("moment monotonicity p4 <= p2 is saturated", p4 <= p2)
+    check("area-law inequalities r1 <= p2 and q1 <= p4 are saturated",
+          r1 <= p2 and q1 <= p4)
+    check("optional admitted lower-bound switch p1 >= 0.4225 does not remove p1=1",
+          p1 >= 0.4225)
+    check("support bound p1 <= 1 plus feasible p1=1 proves max p1 = 1",
+          p1 == 1.0 and b == 1.0)
+
+
+def source_boundary_firewall() -> None:
+    print()
+    print("--- Source-boundary firewall ---")
+    note = (ROOT / "docs" / "INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md").read_text(
+        encoding="utf-8"
+    )
+    compact = " ".join(note.replace("`", "").split())
+    required = [
+        "exact obstruction certificate",
+        "p1 = 1 is feasible",
+        "not load-bearing for the no-upper-bound obstruction",
+        "comparison/admitted context only",
+        "No status edit",
+        "not an exhaustive no-go against SDP/bootstrap routes",
+    ]
+    for phrase in required:
+        check(f"note records source-boundary phrase: {phrase}", phrase in compact)
+
+
+# ---------------------------------------------------------------------------
 # Section 2: Bracket sweep at β=6
 # ---------------------------------------------------------------------------
 
@@ -289,6 +388,16 @@ def main() -> int:
         print(f"  CVXPY-derived bracket: ⟨P⟩(β=6) ∈ [{res_min['objective']:.6f}, {res_max['objective']:.6f}]")
         print(f"  Width: {res_max['objective'] - res_min['objective']:.6f}")
         print(f"  Contains MC value 0.5934? {res_min['objective'] <= 0.5934 <= res_max['objective']}")
+        check(
+            "full SDP upper solve saturates the support endpoint p1=1",
+            abs(res_max["objective"] - 1.0) <= 5e-5,
+            f"max={res_max['objective']:.6f}",
+        )
+        check(
+            "admitted-lower-bound solve has lower endpoint near 0.4225",
+            abs(res_min["objective"] - 0.4225) <= 5e-5,
+            f"min={res_min['objective']:.6f}",
+        )
 
         # Detail of the upper-bound configuration
         print()
@@ -297,6 +406,9 @@ def main() -> int:
             v = res_max[k]
             if v is not None:
                 print(f"    {k:6s} = {v:.6f}")
+
+    exact_all_ones_upper_obstruction_certificate(N_c=N_c)
+    source_boundary_firewall()
 
     print()
     print("=" * 78)
@@ -312,8 +424,9 @@ def main() -> int:
     print("    (b) no explicit Migdal-Makeenko loop equations")
     print("    (c) CLARABEL/SCS solver precision (no Mosek)")
     print("  - Tightening to industrial precision (~10^-2) requires Mosek + larger L_max")
+    print(f"  - Certificate checks: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print("=" * 78)
-    return 0
+    return 0 if FAIL_COUNT == 0 else 1
 
 
 if __name__ == "__main__":

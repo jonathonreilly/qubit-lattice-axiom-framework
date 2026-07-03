@@ -3,7 +3,7 @@
 **Date:** 2026-05-31
 **Claim type:** bounded_theorem
 **Claim boundary:** bounded characterization (a gap-reduction) + one new positive structural fact. Not a closure; not an import.
-**Runner:** `scripts/flavor_generation_space_bridge_reduces_to_open_gate_2026_05_31.py` (SCORECARD 10/10).
+**Runner:** `scripts/flavor_generation_space_bridge_reduces_to_open_gate_2026_05_31.py` (SCORECARD 15/15).
 **Source:** workflow `wf_d994df21-e74` — 5 attack routes + 3-lens adversarial verification + synthesis (18 agents).
 
 ## Question
@@ -42,9 +42,12 @@ by Schur, prior campaign work) supplies the holomorphic/Dolbeault denominator fo
 ### Finding B (the single irreducible gap) — promoting an intensive summand of a vanishing total
 Under framework baseline+retained the genuine equivariant-index **invariants** are **extensive** and **vanish** on
 the retained C₃-equivariant native staggered Dirac: `Γ₅=(−1)^{x+y+z}` forces ± spectral pairing, so
-the global η = 0, the global Lefschetz sum = 0, and the Euler characteristic χ = 0. The number 2/9 is
-a **per-fixed-point summand** of that vanishing global sum (`global = L·(2/9)`, `L`-dependent: `L=3→2/3`,
-`L=8→16/9`), surviving **only by refusing to sum**.
+the global η = 0, the signed global Lefschetz invariant = 0, and the Euler characteristic χ = 0. The
+number 2/9 is a **per-fixed-point local density**. If one forms an unsigned same-orientation diagnostic
+from `L` identical local summands, it scales as `L·(2/9)` (`L=3→2/3`, `L=8→16/9`), but that diagnostic
+is not the signed global invariant. The invariant sum cancels after the retained `Γ₅` pairing. Thus
+the 2/9 value survives **only by refusing the signed global sum** and selecting one intensive local
+summand as the observable.
 
 The one unforced step is therefore: **promote the intensive single-fixed-point local density 2/9 to
 THE physical flavor-asymmetry observable**, rather than treating it as a contribution to the
@@ -94,3 +97,35 @@ but still routes through the **same** open gate (none of them closes the bridge)
 - `axiom_first_z_n_equivariant_spectral_asymmetry_narrow`, `koide_aps_block_by_block_forcing` — **retained_bounded**.
 - `three_generation_observable_theorem` (+ `_no_proper_quotient`, `_m3c_burnside`) — **retained** (the count side).
 - Does **NOT** load-bear on `closure_c_staggered_dirac_gate` or `koide_phase_aps_eta_parity_route` (both **unaudited**).
+
+## 2026-06-07 Source-Packet Repair: exact residual matching
+
+The audit blocker asked this row to include the source packet for the named
+residual gate. This branch supplies that restricted-packet visibility without
+promoting the residual:
+
+- [`LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md`](LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md)
+  is the audited-clean open-gate source packet for the conditional
+  Brannen-BAE `delta = 2/9` comparator.
+- [`scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py`](../scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py)
+  is the paired runner.
+- [`logs/runner-cache/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.txt`](../logs/runner-cache/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.txt)
+  is the paired SHA-pinned cache, expected `TOTAL: PASS=17 FAIL=0`.
+
+Raw restricted-packet paths:
+
+- `docs/LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md`
+- `scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py`
+- `logs/runner-cache/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.txt`
+
+This repairs the source-packet part of the restricted-packet blocker: the
+downstream note now exposes the exact open-gate comparator packet it names as
+the residual. It does **not** derive the phase `delta = 2/9`, the `sqrt(2)`
+Brannen/BAE coefficient, the charged-lepton mass scale, or the physical rule
+selecting one fixed-point summand as the charged-lepton asymmetry observable.
+
+The remaining blocker is unchanged and explicit: a future source theorem would
+still have to prove that the physical charged-lepton generation space is the
+`C3[111]` fixed locus and that the readout consumes one intensive local
+Lefschetz density rather than the vanishing signed global invariant or the
+extensive sum.

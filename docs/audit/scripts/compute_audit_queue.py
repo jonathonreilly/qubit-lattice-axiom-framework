@@ -25,6 +25,8 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+import premise_nodes
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 LEDGER_PATH = DATA_DIR / "audit_ledger.json"
@@ -50,7 +52,20 @@ def dep_ready(status: str | None) -> bool:
 
 
 def is_ready(row: dict, rows: dict[str, dict]) -> bool:
+    """All deps are stable auditor inputs.
+
+    A dep is a stable input when its effective_status is retained-grade /
+    meta / decoration_under_*, or when it is an accepted premise
+    (axiom/primitive premise node or Tier-A admitted derivation target) per
+    `premise_nodes.is_accepted_premise_dep`. The latter mirrors
+    `compute_effective_status`: a row whose only non-retained dep is a Tier-A
+    target is auditable now and resolves to `retained_bounded` on a clean
+    verdict, so the queue must not hold it back waiting on the admission's
+    own row.
+    """
     for d in row.get("deps", []):
+        if premise_nodes.is_accepted_premise_dep(d):
+            continue
         d_eff = rows.get(d, {}).get("effective_status") or "unknown"
         if not dep_ready(d_eff):
             return False
@@ -202,7 +217,7 @@ def main() -> int:
         "# Audit Queue",
         "",
         f"**Total pending:** {queue['total_pending']}",
-        f"**Ready (all deps already at retained-grade or metadata tiers):** {queue['ready_count']}",
+        f"**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** {queue['ready_count']}",
         "",
         "By criticality:",
     ]

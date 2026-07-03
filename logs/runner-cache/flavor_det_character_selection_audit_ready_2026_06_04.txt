@@ -1,28 +1,35 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_det_character_selection_audit_ready_2026_06_04.py
-runner_sha256: aa37b202baa7a7f911810939ac8b9ce40734259a3f797966f4fa0eb7a1e3c02d
+runner_sha256: 59d759185081926cfd6bdb52ab92bc56c9771e22ff2cfd9a87aed550c430e364
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
-[PASS] det is multiplicative under COMPOSITION: det(A.S)=det(A)det(S)
-[PASS] tr FAILS composition-multiplicativity: tr(A.S) != tr(A)tr(S) (so tr is EXCLUDED on this axis)
-[PASS] power-trace tr(M^2) FAILS composition-multiplicativity (excluded)
-[PASS] elementary symmetric e_2 FAILS composition-multiplicativity (excluded)
-[PASS] integer powers det^m obey composition-multiplicativity (regular GL(n) characters)
-[PASS] fractional complex branches such as det^(1/2) are NOT global composition characters
-       sqrt(det(F.F))=(1+0j), sqrt(det F)sqrt(det F)=(-1+1.2246467991473532e-16j)
-[PASS] PATTERN L (honest bound): tr IS additive over direct sums (tr(A(+)B)=tr(A)+tr(B)) -- so additivity ALONE cannot exclude tr; the COMPOSITION premise is required
-[PASS] Z=|det| multiplies over patches; regular additive readout is W=c log|det| (Record axis + regularity)
+[PASS] det is multiplicative under composition: det(A S)=det(A)det(S)
+[PASS] tr fails composition-multiplicativity, so tr is excluded on this axis
+[PASS] power-trace tr(M^2) fails composition-multiplicativity
+[PASS] elementary symmetric e_2 fails composition-multiplicativity
+[PASS] integer powers det^m obey composition-multiplicativity
+[PASS] fractional complex branches such as det^(1/2) are not global characters
+       sqrt(det(F F))=(1+0j), sqrt(det F)sqrt(det F)=(-1+1.2246467991473532e-16j)
+[PASS] Pattern L: tr is additive over direct sums, so additivity alone cannot select det
+[PASS] finite Berezin signed-permutation sum gives det(M) on source patch 1
+       berezin=3.36+0j, det=3.36+0j
+[PASS] finite Berezin signed-permutation sum gives det(M) on source patch 2
+       berezin=3.822+0j, det=3.822+0j
+[PASS] independent block source patches multiply: det(M1 oplus M2)=det(M1)det(M2)
+       det_sum=12.84192+0j, product=12.84192+0j
+[PASS] positive branch log|det| adds, while raw powers remain multiplicative not additive
+[PASS] real-positive finite branch is regular: d log det(M+tP)=Tr(M^-1 P)
+       finite_diff=0.0730088496326, trace=0.0730088495575
 
-SCORECARD PASS=8 FAIL=0
-AUDIT-READY TARGET: det-selection on the COMPOSITION axis is clean GL(n)-abelianization math
-(integer det powers; tr/power-trace/elementary-symmetric excluded; fractional complex branches
-are not global characters). Additive-of-multiplicative plus regularity fixes W=c*log|det|.
-HONEST BOUND: additivity alone can't exclude tr (Pattern L); the composition premise (M) is
-the residual fermionic/Berezin origin of Z=det, not the det-selection math. Sets no audit
-status; edits no existing row.
+SCORECARD PASS=12 FAIL=0
+RE-AUDIT TARGET: supplied finite Grassmann/CAR independent source patches
+give determinant amplitudes, determinant is the composition character,
+and regular positive-branch additive readouts are c*log|det|.
+BOUNDARY: this does not force FS/CAR from the baseline axioms and does
+not factorize a coupled KS/Dirac surface with off-block couplings.
 
 ----- stderr -----
 

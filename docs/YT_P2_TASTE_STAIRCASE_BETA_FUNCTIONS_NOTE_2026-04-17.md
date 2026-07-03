@@ -1,11 +1,31 @@
-# P2 Taste-Staircase Beta Functions: Retained No-Go
+# P2 Taste-Staircase Per-Step 1-Loop Perturbative Beta Functions: Retained No-Go (Blocking-RG / Strong-Coupling Routes Not Foreclosed)
 
-**Date:** 2026-04-17
-**Status:** NO-GO for per-step perturbative beta functions.
+**Date:** 2026-04-17 (2026-06-11: title-scope clarification — see
+changelog below; no claim change)
+**Status:** NO-GO for per-step 1-LOOP PERTURBATIVE beta functions only.
 PARTIAL closure of P2 (via the prior taste-staircase note and prior
-v-matching note) remains the canonical surface.
+v-matching note) remains the canonical surface. Non-perturbative
+closure routes (blocking RG, strong-coupling expansion) are explicitly
+NOT ruled out by this note (see Safe claim boundary); the note itself
+names the staircase mechanism a non-perturbative blocking
+renormalization (Abstract / Part 8).
 **Runner:** `scripts/frontier_yt_p2_taste_staircase_beta.py`
 **Log:** `logs/retained/yt_p2_taste_staircase_beta_2026-04-17.log`
+
+## Changelog
+
+- **2026-06-11 (title-scope clarification; no claim change).** Retitled
+  from "P2 Taste-Staircase Beta Functions: Retained No-Go" so the
+  headline matches the proof scope. The no-go covers ONLY per-step
+  1-loop perturbative beta integration with `n_taste` replacement
+  (Landau-pole breakdown driven by the marginal `b_3(16) = 1/3` at the
+  lattice UV anchor). The safe-claim boundary already stated that
+  alternative non-perturbative mechanisms (blocking RG, strong-coupling
+  expansion) are not ruled out, and Part 8 names the staircase a
+  non-perturbative blocking renormalization — but downstream summaries
+  had compressed the headline to "the staircase transport route is
+  closed", which over-reads the theorem. Title and Status lines now
+  carry the scope explicitly. No claim, runner, log, or status change.
 
 ---
 

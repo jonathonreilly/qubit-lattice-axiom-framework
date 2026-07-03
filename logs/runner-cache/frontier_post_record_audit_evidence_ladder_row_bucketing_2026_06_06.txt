@@ -1,0 +1,126 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.py
+runner_sha256: 3a947351ceeadc9052a926aca21e3551c4a5119928f4af77ce88fc13de454397
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.03
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md exists
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: read-only scanner
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: scans `1888` bounded/conditional
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: touches `451` rows
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: `selector_or_dial_needed` | 383
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: bounded/conditional-scope rows
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: bucket counts sum to the scoped count
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: audit ledger hash is unchanged
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: Does not select or force a generation/Koide dial location
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md exists
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: conditional audit evidence ladder
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: expectation-only evidence cannot certify p-values
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: simulation evidence is support-only
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: stable settings are not selected dials
+PASS docs/RECORD_TYPING_AUDIT_UNLOCK_MAP_2026-06-05.md exists
+PASS docs/RECORD_TYPING_AUDIT_UNLOCK_MAP_2026-06-05.md contains: bounded/conditional scoped rows | 1304
+PASS docs/RECORD_TYPING_AUDIT_UNLOCK_MAP_2026-06-05.md contains: selector_split_after_type
+PASS docs/RECORD_TYPING_AUDIT_UNLOCK_MAP_2026-06-05.md contains: dynamics_split_after_type
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md exists
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: bounded and conditional lanes
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: probability/source/instrument/dynamics rows
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: Does not select a Koide/generation dial location.
+
+------------------------------------------------------------------------------
+Ledger bucketing checks
+------------------------------------------------------------------------------
+PASS audit ledger has rows object
+PASS ledger row count matches current map :: 3596
+PASS bounded/conditional scope count matches current map :: 1888
+PASS each scoped row gets one bucket :: Counter({'not_record_ladder_relevant': 1437, 'selector_or_dial_needed': 383, 'simulation_support_only': 50, 'finite_law_or_certificate_needed': 12, 'production_dynamics_needed': 6})
+PASS bucket counts match current source map :: Counter({'not_record_ladder_relevant': 1437, 'selector_or_dial_needed': 383, 'simulation_support_only': 50, 'finite_law_or_certificate_needed': 12, 'production_dynamics_needed': 6, 'append_count_ready': 0, 'record_type_support_only': 0})
+PASS touched ladder rows match current source map :: 451
+PASS selector/dial bucket nonempty :: 383
+PASS production/dynamics bucket nonempty :: 6
+PASS finite-law/certificate bucket nonempty :: 12
+PASS append/count bucket matches current source zero
+PASS record-type support bucket matches current source map
+PASS representative row present in selector_or_dial_needed :: architecture_note_directional_measure
+PASS representative row present in production_dynamics_needed :: persistent_record_overlap_kernel_note
+PASS representative row present in finite_law_or_certificate_needed :: poisson_self_gravity_born_audit_note
+PASS audit ledger hash is unchanged :: 15efee196a7b3738ec370120bc338105f64b4c82d0b236c80b0c47b5d5b7b95f
+
+Bucket counts:
+  append_count_ready: 0
+  finite_law_or_certificate_needed: 12
+  not_record_ladder_relevant: 1437
+  production_dynamics_needed: 6
+  record_type_support_only: 0
+  selector_or_dial_needed: 383
+  simulation_support_only: 50
+
+[append_count_ready]
+
+[record_type_support_only]
+
+[finite_law_or_certificate_needed]
+  dirac_decoherence_probe_note | audited_clean | retained_bounded | bounded_theorem | docs/DIRAC_DECOHERENCE_PROBE_NOTE.md
+  fifth_family_radial_boundary_note | audited_clean | retained_bounded | bounded_theorem | docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md
+  gw_echo_null_result_note | unaudited | unaudited | bounded_theorem | docs/GW_ECHO_NULL_RESULT_NOTE.md
+  inverse_problem_note | audited_clean | retained_bounded | bounded_theorem | docs/INVERSE_PROBLEM_NOTE.md
+  persistent_object_blended_readout_transfer_sweep_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_OBJECT_BLENDED_READOUT_TRANSFER_SWEEP_NOTE_2026-04-16.md
+  poisson_self_gravity_born_audit_note | audited_clean | retained_bounded | bounded_theorem | docs/POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md
+  record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md
+  self_consistency_structured_null_note_2026-04-11 | audited_clean | retained_bounded | bounded_theorem | docs/SELF_CONSISTENCY_STRUCTURED_NULL_NOTE_2026-04-11.md
+
+[simulation_support_only]
+  blocking_isometry_reduces_to_pointer_frame_admission_narrow_theorem_note_2026-06-09 | audited_clean | retained_bounded | bounded_theorem | docs/BLOCKING_ISOMETRY_REDUCES_TO_POINTER_FRAME_ADMISSION_NARROW_THEOREM_NOTE_2026-06-09.md
+  branching_slack_rate_projective_limit_bounded_theorem_note_2026-06-12 | audited_clean | retained_bounded | bounded_theorem | docs/BRANCHING_SLACK_RATE_PROJECTIVE_LIMIT_BOUNDED_THEOREM_NOTE_2026-06-12.md
+  color_depolarization_single_frame_dephasing_insufficiency_and_multiframe_exhibit_narrow_theorem_note_2026-06-09 | unaudited | unaudited | bounded_theorem | docs/COLOR_DEPOLARIZATION_SINGLE_FRAME_DEPHASING_INSUFFICIENCY_AND_MULTIFRAME_EXHIBIT_NARROW_THEOREM_NOTE_2026-06-09.md
+  conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12 | audited_clean | retained_bounded | bounded_theorem | docs/CONDITIONAL_LAW_PREFIX_LADDER_NO_FINITE_K_EXHAUSTION_BOUNDED_THEOREM_NOTE_2026-06-12.md
+  dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md
+  dm_selector_branch_conclusion_note_2026-04-17 | unaudited | unaudited | bounded_theorem | docs/DM_SELECTOR_BRANCH_CONCLUSION_NOTE_2026-04-17.md
+  fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09 | unaudited | unaudited | bounded_theorem | docs/FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md
+  fifth_family_radial_fm_transfer_note | audited_clean | retained_bounded | bounded_theorem | docs/FIFTH_FAMILY_RADIAL_FM_TRANSFER_NOTE.md
+
+[selector_or_dial_needed]
+  a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1 | unaudited | unaudited | bounded_theorem | docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md
+  acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01 | unaudited | unaudited | bounded_theorem | docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md
+  acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11 | unaudited | unaudited | bounded_theorem | docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md
+  acphilambda_pointer_labeled_refinement_finer_record_clock_2026-07-02 | unaudited | unaudited | bounded_theorem | docs/ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md
+  acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11 | unaudited | unaudited | bounded_theorem | docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18 | unaudited | unaudited | bounded_theorem | docs/ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md
+  action_family_character_semigroup_discriminator_bounded_note_2026-07-02 | unaudited | unaudited | bounded_theorem | docs/ACTION_FAMILY_CHARACTER_SEMIGROUP_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md
+  action_form_no_go_equivalence_premise_continuum_removal_scoped_relocation_note_2026-06-08 | unaudited | unaudited | bounded_theorem | docs/ACTION_FORM_NO_GO_EQUIVALENCE_PREMISE_CONTINUUM_REMOVAL_SCOPED_RELOCATION_NOTE_2026-06-08.md
+
+[production_dynamics_needed]
+  chiral_3plus1d_boundary_phase_note | audited_clean | retained_bounded | bounded_theorem | docs/CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md
+  persistent_object_adaptive_readout_note | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_OBJECT_ADAPTIVE_READOUT_NOTE.md
+  persistent_object_readout_localization_note | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_OBJECT_READOUT_LOCALIZATION_NOTE.md
+  persistent_record_matched_compare_note | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_RECORD_MATCHED_COMPARE_NOTE.md
+  persistent_record_overlap_kernel_note | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md
+  persistent_record_refinement_note | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_RECORD_REFINEMENT_NOTE.md
+
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS audit data written flag is false
+PASS audit verdict applied flag is false
+PASS promoted/retained claim flag is false
+PASS Record-derived probability flag is false
+PASS expectation-derived concentration flag is false
+PASS simulation calibrated flag is false
+PASS generation/Koide dial selected flag is false
+
+SUMMARY: PASS=44 FAIL=0
+SCOPED_ROWS=1888
+TOUCHED_ROWS=451
+AUDIT_LEDGER_WRITTEN=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

@@ -1,0 +1,77 @@
+===== runner cache v1 =====
+runner: scripts/frontier_alpha_s_derived_bounded_chain.py
+runner_sha256: 9e77797302a8180ebb9f22e20f1a704bf5870a784abaae9d41beb03916ead040
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+============================================================================
+alpha_s derived note — dedicated bounded-chain runner
+T1: alpha_s(v) = 1/(4 pi sqrt(<P>)) over declared boundary inputs B1-B4
+C1: bounded v -> M_Z corollary (quarantined; not load-bearing)
+============================================================================
+
+=== T1: forward computation over declared boundary inputs B1-B4 ===
+
+  [PASS][A] S2: u_0 = <P>^(1/4) = 0.877681381 and u_0^4 reproduces <P>  (u_0 = 0.877681381199, |u_0^4 - <P>| = 1.110e-16)
+  [PASS][A] S3: alpha_bare = g_bare^2 / (4 pi) = 1 / (4 pi) at g_bare = 1  (alpha_bare = 0.079577471546)
+  [PASS][A] S4: routes I/II/III agree to 1e-16 (stepwise chain vs closed form vs log-domain)  (|I-II| = 1.388e-17, |I-III| = 1.388e-17)
+  [PASS][A] exact-identity residual |4 pi sqrt(<P>) alpha_s(v) - 1| <= 1e-15  (residual = 2.220e-16)
+  [PASS][A] T1 headline: alpha_s(v) = 0.10330382 (8-decimal agreement)  (alpha_s(v) = 0.1033038161)
+  [PASS][A] exact identity alpha_LM^2 = alpha_bare * alpha_s(v)  (residual = 1.735e-18)
+  [PASS][A] analytic sensitivity d alpha_s/d<P> = -alpha_s/(2<P>) matches central difference  (analytic = -0.087043997, numeric = -0.087043997, rel = 1.366e-09)
+  [PASS][A] zero-free-parameter form: alpha_s(<P>) strictly monotone in the single boundary input, no second parameter  (alpha_s decreasing in <P> across [0.50, 0.70])
+
+=== Cross-note consistency residuals (class B, non-load-bearing for T1) ===
+
+  [PASS][B] helper canonical_plaquette_surface.CANONICAL_PLAQUETTE equals declared boundary input B1  (helper = 0.5934, B1 = 0.5934)
+  [PASS][B] helper CANONICAL_ALPHA_S_V agrees with the T1 forward value to 1e-15  (|helper - T1| = 0.000e+00)
+  [PASS][B] bridge note's boundary alpha_s(v) = 0.103304 is the 6-decimal rounding of the T1 value  (|0.103304 - 0.10330382| = 1.839e-07)
+
+=== Source-status firewall (class B, non-load-bearing for T1) ===
+
+  [PASS][B] 2026-06-12 firewall says row remains bounded, not retained
+  [PASS][B] firewall keeps B1 plaquette value admitted until certified
+  [PASS][B] firewall keeps B3 channel-selection/coupling-map bridge open
+  [PASS][B] firewall keeps B4 lattice-to-MSbar scheme/scale bridge open
+
+=== C1 (bounded corollary, NOT load-bearing for T1): v -> M_Z transfer ===
+
+  2-loop alpha_s(M_Z) = 0.118067
+  1-loop alpha_s(M_Z) = 0.117571
+  truncation envelope = 0.000496
+  [PASS][B] C1: self-contained 2-loop transfer reproduces the bridge note's published 0.1181 within 0.001  (alpha_s(M_Z) = 0.118067, bridge note value = 0.1181)
+  [PASS][B] C1 truncation envelope: 1-loop/2-loop shift ~5e-4, positive and below 1% of the readout  (envelope = 0.000496)
+
+=== Quarantined class-D terminal section: PDG comparators (never load-bearing) ===
+
+  [PASS][D] C1 readout inside PDG world-average 1-sigma band (0.1180 +/- 0.0009)  (|0.118067 - 0.1180| = 0.0001)
+  [PASS][D] C1 readout inside PDG restricted-average 2-sigma band (0.1179 +/- 0.0008)  (|0.118067 - 0.1179| = 0.0002)
+
+Scope notes for the auditor:
+  - T1 is exact arithmetic over the DECLARED boundary inputs B1-B4;
+    the plaquette value 0.5934 is licensed upstream only as a reuse
+    number and is treated exactly that way here.
+  - The helper module canonical_plaquette_surface.py is consulted
+    only for the tagged class-B consistency residuals above; every
+    T1 number is recomputed forward inside this runner.
+  - B3 consumes n_link = 2 as the staggered-Dirac gauge
+    vacuum-polarization channel count; the channel-selection step
+    into alpha_s(v) := alpha_bare/u_0^2 is declared in the note.
+  - C1 uses a self-contained 2-loop SM RGE reimplementation with
+    LO top-threshold matching; PDG constants appear only in the
+    terminal class-D section and in the C1 threshold/scale inputs.
+  - The M_Z readout uses the running-bridge note's bounded
+    transfer-kernel scope; it is a corollary, not part of
+    the T1 claim surface.
+  - The source firewall keeps B1, B3 channel-selection, and
+    B4 open; this runner does not promote the row.
+
+============================================================================
+Breakdown: A=8 B=9 D=2
+TOTAL: PASS=19 FAIL=0
+============================================================================
+
+----- stderr -----
+

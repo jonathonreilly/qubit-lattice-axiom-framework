@@ -1,7 +1,15 @@
-# Lane 5 `(C1)` Gate — A5 Minimal-Carrier-Axiom Audit
+# Historical Lane 5 `(C1)` Gate A5 Carrier-Axiom Packet (Retracted)
 
 **Date:** 2026-04-28
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/stale-frames-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
+
 **Lane:** 5 — Hubble constant `H_0` derivation
 **Loop:** `hubble-c1-absolute-scale-gate-20260428`
 **Runner:** `scripts/frontier_hubble_c1_a5_minimal_carrier_axiom_audit.py`
@@ -21,7 +29,25 @@ Do NOT cite the numerical results, tables, or threshold values in the original c
 
 ---
 
-## 0. Context
+## 2026-06-16 archive firewall
+
+This archived packet is historical / diagnostic and retired as evidence. It is
+not an active A5 audit, not live support for `(G1)` or `(C1)` closure, and not
+authority for a minimal carrier-axiom narrative.
+
+The safe residue is archive recovery history only. Any future carrier-axiom
+analysis must start from a fresh proof surface rather than this failed wrapper
+frame.
+
+## 2026-06-18 registered-runner contract
+
+The registered runner for this archived row is a firewall witness only. It
+verifies this note's current-surface certificate, retraction, and archive
+boundary. It must not be used to re-prove the historical minimal-carrier
+theorem. A PASS does not certify a minimal carrier axiom, close `(G1)` or
+`(C1)`, or provide live support for the failed wrapper frame.
+
+## 0. Historical context (retracted)
 
 Cycles 2-4 closed `A1`, `A2`, `A4` negatively. `A5` is the audit's
 designated fallback frame: identify the **minimal carrier axiom**
@@ -75,7 +101,7 @@ This combines the parity-gate Z_2 structure (closed in Cycle 4 as
 non-CAR-distinguishing on its own) with a stronger Hermitian-
 anticommutator content.
 
-## 2. Theorem (audit)
+## 2. Historical theorem statement (retracted)
 
 > **Theorem (A5 audit).** Modulo the strict weakness of (c), the
 > four candidate carrier axioms (a), (b), (c), (d) collapse to a
@@ -88,7 +114,7 @@ anticommutator content.
 > `A_min` by an explicit Cl_4(C) carrier axiom, or (ii) accepting
 > that `(G1)` and `(C1)` remain open in the current `A_min` posture.
 
-### Proof.
+### Historical proof sketch (retracted)
 
 **(a) ⇔ (b).** The two-mode CAR algebra on `F(C^2)` is generated
 by four Hermitian Majoranas `γ_a = c_a + c_a^†`, `γ_a' = -i (c_a -
@@ -195,7 +221,7 @@ The runner does not import any observed value, fitted parameter,
 literature constant, or carrier-axiom posit. The audit content is
 entirely structural.
 
-## 4. What this audit closes
+## 4. Historical closure summary (retracted)
 
 - `A5` (minimal-carrier-axiom audit) is **landed**. The audit's six
   attack frames are now fully accounted for: `A1`, `A2`, `A4`
@@ -218,7 +244,7 @@ entirely structural.
   beyond the audit's own A1-A6 frames; per Deep Work Rules, that is
   the next cycle's task.
 
-## 6. Implication for Cycle ordering
+## 6. Historical cycle-ordering note (retracted as active guidance)
 
 - **Cycle 6 (next):** stuck fan-out per Deep Work Rules. Generate
   3-5 orthogonal premises beyond the audit's `A1`-`A6` frames.
@@ -248,12 +274,9 @@ entirely structural.
 - Loop pack:
   `.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/`.
 
-## 8. Boundary
+## 8. Archive boundary
 
-This is an **audit** note, not a stretch attempt. It identifies the
-minimal carrier-axiom class for `(G1)` closure but does not retain
-`(G1)`, `(G2)`, or `(C1)`. It does not extend `A_min` by the
-identified carrier axiom; that is a science-level decision for the
-user. Per Deep Work Rules, Cycle 6 should run a stuck fan-out across
-orthogonal premises beyond the audit's primary frames before any
-honest stop.
+This is an archive-only recovery note, not an active audit. The old
+minimal-carrier framing is retracted as live support for `(G1)` or `(C1)`
+closure. A future carrier-axiom analysis must be rebuilt from a fresh proof
+surface and current dependencies.

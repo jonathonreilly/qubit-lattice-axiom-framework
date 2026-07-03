@@ -1,0 +1,83 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_primitive_source_unit_fisher_normalization.py
+runner_sha256: b8ce9fd711b787d365a235ad3a5f17e4a103da631629e39112cc1df44a0a33f7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.25
+status: ok
+----- stdout -----
+========================================================================================
+Y_T PRIMITIVE SOURCE-UNIT FISHER NORMALIZATION
+========================================================================================
+
+Part 1: anchors and authority boundary
+[PASS] docs/YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md exists
+[PASS] docs/MINIMAL_AXIOMS_2026-05-20.md exists
+[PASS] docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md exists
+[PASS] docs/OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md exists
+[PASS] docs/RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md exists
+[PASS] docs/YT_SIGNED_LINEAR_DEMOCRATIC_TANGENT_PHYSICAL_BRIDGE_ATTEMPT_NOTE_2026-05-25.md exists
+[PASS] docs/YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
+[PASS] note contains required section: Theorem Statement
+[PASS] note contains required section: Six-Component Top Trilinear Source
+[PASS] note contains required section: Action-Source Bridge
+[PASS] note contains required section: What This Closes
+[PASS] note contains required section: What This Does Not Close
+[PASS] note contains required section: Why This Is Not The Old Ward Trap
+[PASS] LSP support records signed RN score epsilon
+[PASS] LSP support records exponential RN uniqueness
+[PASS] source-action note is open_gate
+[PASS] source-action note records source derivatives of S convention
+[PASS] RN template records finite Gibbs density
+[PASS] LSP source support is not retained coefficient authority: audited_renaming
+[PASS] source-action gate is not retained authority: unaudited
+[PASS] YT finite source-action support is retained_bounded: retained_bounded
+
+Part 2: primitive binary source unit
+[PASS] score at + record is +1: 1
+[PASS] score at - record is -1: -1
+[PASS] primitive Fisher information is 1: 1
+[PASS] lambda-scaled + score is lambda: lambda
+[PASS] lambda-scaled - score is -lambda: -lambda
+[PASS] lambda-scaled Fisher information is lambda^2: lambda**2
+[PASS] Fisher-unit condition forces lambda=1
+[PASS] KL curvature at primitive origin is 1: 1
+[PASS] KL curvature at scaled origin is lambda^2: lambda**2
+
+Part 3: six-component top source
+[PASS] democratic top vector has unit norm: 1
+[PASS] component 0 is 1/sqrt(6): sqrt(6)/6
+[PASS] component 3 is 1/sqrt(6): sqrt(6)/6
+[PASS] component 5 is 1/sqrt(6): sqrt(6)/6
+[PASS] scaled top-source Fisher norm is lambda^2: lambda**2
+[PASS] unit top-source Fisher condition forces lambda=1
+[PASS] primitive unit top source gives y_33=1/sqrt(6): sqrt(6)/6
+
+Part 4: source-coupled action bridge
+[PASS] unit action source score is O: O
+[PASS] lambda action source score is lambda O: O*lambda
+[PASS] requiring unit action score forces lambda=1
+[PASS] source/action convention remains open on current surface
+
+Part 5: firewalls
+[PASS] firewall phrase present: `H_unit`
+[PASS] firewall phrase present: `yt_ward_identity`
+[PASS] firewall phrase present: `y_t_bare`
+[PASS] firewall phrase present: observed W/Z/top masses
+[PASS] firewall phrase present: PDG values
+[PASS] firewall phrase present: `alpha_LM`
+[PASS] firewall phrase present: plaquette/u0
+[PASS] firewall phrase present: fitted selector
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: proposed_retained
+[PASS] forbidden overclaim absent: full retained closure
+[PASS] forbidden overclaim absent: positive Y_T closure has been obtained
+[PASS] forbidden overclaim absent: source-coupled local action convention is derived from the baseline
+[PASS] forbidden overclaim absent: old Ward route is repaired
+
+wrote outputs/yt_primitive_source_unit_fisher_normalization_2026-05-25.json
+SUMMARY: PASS=56 FAIL=0
+
+----- stderr -----
+

@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 852 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
-| Unaudited rows | 1961 |
+| Unaudited rows | 1960 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 25 |
 | Audited renaming rows | 19 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`observable_principle_from_axiom_note`](../../docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md) - critical; unaudited
+- [`observable_principle_from_axiom_note`](../../docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md) - critical; audit_in_progress
 - [`staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md) - critical; unaudited
 - [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
 - [`ew_current_matching_rule_open_gate_note_2026-05-03`](../../docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md) - critical; unaudited
@@ -61,11 +61,12 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 187 |
+| critical | `unaudited` | 186 |
 | high | `unaudited` | 151 |
 | medium | `unaudited` | 98 |
 | medium | `open_gate` | 3 |
 | high | `audited_numerical_match` | 2 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_conditional` | 1 |
 | high | `audited_conditional` | 1 |
 | high | `open_gate` | 1 |
@@ -89,7 +90,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1148 descendants; score 67.166
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 198 descendants; score 65.137
 - `graph_first_su3_integration_note` - critical; 1578 descendants; score 65.125
-- `observable_principle_from_axiom_note` - critical; 1201 descendants; score 64.231
+- `observable_principle_from_axiom_note` - critical; 1202 descendants; score 64.732
 - `plaquette_self_consistency_note` - critical; 1248 descendants; score 53.287
 - `minimal_axioms_2026-05-03` - critical; 1153 descendants; score 48.172
 - `key_terminology` - critical; 1253 descendants; score 46.792

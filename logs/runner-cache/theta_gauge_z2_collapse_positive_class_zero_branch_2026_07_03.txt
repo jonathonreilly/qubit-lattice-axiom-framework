@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/theta_gauge_z2_collapse_positive_class_zero_branch_2026_07_03.py
-runner_sha256: 8b893054779cc287878d20d5aaa5057d8a2ef4fe778023523e254dc91c266627
+runner_sha256: 88384c0f620f9928535407ddd719f596b8addbd9f510bc11ae2944bbbe817689
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 PASS: A1 Z2 character collapse with odd support :: z^Q = z^{-Q} for all Q with 1 in the support iff z^2 = 1; scan_count=2
@@ -22,7 +22,13 @@ PASS: B4 two-mechanism honesty for positive class selection :: orientation draws
 PASS: B5a mass-side mirror antisymmetric pairing :: min det(M+mI) on n=4,6,8 grid=8.995e+00
 PASS: B5b symmetric refutation leg loses sign guarantee :: m=-1.90, det=-2.349e-01
 PASS: B6 two-sided Z2 table zero branch :: (0,0)->0; (0,pi)->pi; (pi,0)->pi; (pi,pi)->0
-TOTAL: PASS=16 FAIL=0
+PASS: C1 note declares bounded_theorem Type header
+PASS: C2 note keeps branch-table result formal and scoped
+PASS: C3 note does not assert physical theta_bar value
+PASS: C4 note states class-to-action adjudication remains open
+PASS: C5 note keeps orientation evenness as a hypothesis
+PASS: C6 note has no landed/unconditional authority wording
+TOTAL: PASS=22 FAIL=0
 
 ----- stderr -----
 

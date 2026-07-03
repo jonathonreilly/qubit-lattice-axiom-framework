@@ -4,13 +4,19 @@ Sections:
 - A: Z2 character collapse with odd support.
 - B: positive class zero branch selection and mass-side mirror checks.
 
-Expected close: TOTAL: PASS=16 FAIL=0
+Expected close: TOTAL: PASS=22 FAIL=0
 """
 
 from itertools import permutations, product
+from pathlib import Path
 
 import numpy as np
 
+
+BASE = Path(__file__).resolve().parents[1]
+NOTE_PATH = BASE / "docs/THETA_GAUGE_Z2_CHARACTER_COLLAPSE_ODD_SUPPORT_AND_POSITIVE_CLASS_ZERO_BRANCH_SELECTION_BOUNDED_THEOREM_NOTE_2026-07-03.md"
+NOTE_TEXT = NOTE_PATH.read_text(encoding="utf-8")
+NOTE_FLAT = " ".join(NOTE_TEXT.split())
 
 rng = np.random.default_rng(7)
 PASS = 0
@@ -472,6 +478,34 @@ check(
     "B6 two-sided Z2 table zero branch",
     len(selected) == 1 and len(selected_zero) == 1 and len(zero_cells_under_selections) == 1,
     table_detail,
+)
+
+check(
+    "C1 note declares bounded_theorem Type header",
+    "**Type:** bounded_theorem" in NOTE_TEXT,
+)
+check(
+    "C2 note keeps branch-table result formal and scoped",
+    "formal branch table" in NOTE_TEXT
+    and "within the stated surfaces and classes only" in NOTE_TEXT,
+)
+check(
+    "C3 note does not assert physical theta_bar value",
+    "nothing here asserts the physical value of `theta_bar`" in NOTE_TEXT,
+)
+check(
+    "C4 note states class-to-action adjudication remains open",
+    "Whether the physical action class lies in (or reduces to) this class" in NOTE_FLAT
+    and "this note does not decide it" in NOTE_FLAT,
+)
+check(
+    "C5 note keeps orientation evenness as a hypothesis",
+    "orientation-evenness" in NOTE_TEXT
+    and "enters only as a named hypothesis" in NOTE_TEXT,
+)
+check(
+    "C6 note has no landed/unconditional authority wording",
+    "landed" not in NOTE_TEXT.lower() and "unconditional" not in NOTE_TEXT.lower(),
 )
 
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

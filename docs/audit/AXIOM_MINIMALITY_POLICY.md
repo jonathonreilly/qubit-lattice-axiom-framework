@@ -76,15 +76,20 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
 
 Recorded explicitly approved axiom updates:
 
-- **2026-07-03 -- Record one-record-per-site restoration: "A site never
-  carries more than one record."** The Record axiom's first sentence is
-  edited in place (owner-approved, 2026-07-03): the lost uniqueness half is
-  restored; the blankness half is carried, stated once, by the next
-  sentence's "When present" conditional (possible absence asserted there).
-  In-file evidence: the axiom's own singular phrasing ("When present, a
-  record locks..."). Under this clause the readout sentence's
-  "pairwise-disjoint" qualifier is automatically satisfied. Historical
-  record of the approval only.
+- **2026-07-03 -- Record section polish: one-record-per-site restored and
+  the record block unified.** The Record axiom's opening is edited in place
+  (owner-approved, 2026-07-03) to one two-sentence block: "When present, a
+  record locks exactly one admissible local possibility. A site never
+  carries more than one record; records are permanent." Content notes: the
+  lost uniqueness half ("never carries more than one") is restored, with
+  blankness carried by the "When present" conditional; "admissible local
+  possibility" is the adjectival form of "one local possibility from the
+  subset available at that site under Admissibility" (no content change;
+  "local possibility" is the Qubit axiom's own phrase, "admissible" the
+  Admissibility axiom's adjective); the landed permanence clause moves,
+  unchanged, to pair with the site-uniqueness clause. Under the uniqueness
+  clause the readout sentence's "pairwise-disjoint" qualifier is
+  automatically satisfied. Historical record of the approval only.
 
 - **2026-07-03 -- Record permanence restoration: "records are permanent."**
   The Record axiom in `docs/MINIMAL_AXIOMS_2026-06-29.md` is edited in place

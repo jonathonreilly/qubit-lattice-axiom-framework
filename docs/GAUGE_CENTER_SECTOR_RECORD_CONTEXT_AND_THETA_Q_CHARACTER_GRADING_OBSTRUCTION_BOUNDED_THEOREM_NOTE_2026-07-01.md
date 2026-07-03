@@ -100,12 +100,11 @@ identification checkpoint below).
 2. **Record axiom** (approved axiom node `minimal_axioms`,
    [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)), quoted:
 
-   > "When present, a record locks exactly one local possibility from the
-   > subset available at that site under Admissibility; records are permanent.
-   > Only records are readable. A readout
-   > value is determined by record content alone. For any finite collection of
-   > pairwise-disjoint records, scalar readout `I` is additive, with
-   > `I(empty)=0`."
+   > "When present, a record locks exactly one admissible local possibility.
+   > A site never carries more than one record; records are permanent. Only
+   > records are readable. A readout value is determined by record content
+   > alone. For any finite collection of pairwise-disjoint records, scalar
+   > readout `I` is additive, with `I(empty)=0`."
 
    Per the axiom's non-supply clause and the Tier-A registry description,
    central-sector decompositions are downstream readout-context content: they
@@ -247,7 +246,8 @@ On the retained `SU(3)` character surface:
 5. **Record registration (interface match, bounded).** `{P_0, P_1, P_2}` is a
    finite family of mutually exclusive alternatives with `sum_k P_k = I`. That
    is exactly the shape the Record axiom registers: a record, when present,
-   locks exactly one available alternative, invariant under repeated readout,
+   locks exactly one admissible alternative and is permanent (hence
+   invariant under repeated readout),
    and the scalar readout is additive over finite pairwise-disjoint record
    collections — carrying the mod-3-additive sector label over disjoint
    regions. The weights `Z_k` are nonnegative, normalized, conjugation-paired,

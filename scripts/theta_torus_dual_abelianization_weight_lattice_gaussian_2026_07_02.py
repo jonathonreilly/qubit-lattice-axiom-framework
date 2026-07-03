@@ -38,11 +38,13 @@ Sections:
      breaks Weyl anti-invariance — no continuous W-consistent label-shift
      theta slot exists on the nonabelian torus dual.
 
-Expected close: TOTAL: PASS=17 FAIL=0
+Expected close: TOTAL: PASS=25 FAIL=0
 """
 from __future__ import annotations
 
 from itertools import permutations
+from pathlib import Path
+import re
 
 import numpy as np
 
@@ -379,5 +381,34 @@ check("E3 every tested nonzero lattice shift of the SU(3) dual table"
       " (including diagonal shifts) breaks full-W anti-invariance: the"
       " U(1)-template label-shift theta slot does not lift to the"
       " nonabelian torus dual", ok_shift)
+
+
+def markdown_targets(text: str) -> list[str]:
+    return re.findall(r"\[[^\]]+\]\(([^)]+)\)", text)
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = (
+    ROOT
+    / "docs"
+    / "THETA_TORUS_DUAL_ABELIANIZATION_SHIFTED_WEIGHT_LATTICE_GAUSSIAN_GLUING_STABLE_WEYL_SHIFT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-02.md"
+).read_text(encoding="utf-8")
+TARGETS = markdown_targets(NOTE)
+MD_TARGETS = [target for target in TARGETS if target.endswith(".md")]
+PY_TARGETS = [target for target in TARGETS if target.endswith(".py")]
+CACHE_TARGETS = [target for target in TARGETS if "logs/runner-cache/" in target]
+EXPECTED_DEPS = {
+    "MINIMAL_AXIOMS_2026-06-29.md",
+    "GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md",
+    "STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md",
+}
+check("F1 note declares canonical claim type", "**Type:** bounded_theorem" in NOTE)
+check("F2 legacy source status labels absent", "Claim type" not in NOTE and "Status authority" not in NOTE and "**Status:**" not in NOTE)
+check("F3 source-side audit status fields absent", "effective_status" not in NOTE and "audited_clean" not in NOTE and "retained_bounded" not in NOTE)
+check("F4 primary runner is markdown-linked", len(PY_TARGETS) == 1 and "theta_torus_dual_abelianization_weight_lattice_gaussian_2026_07_02.py" in PY_TARGETS[0])
+check("F5 cache is markdown-linked under logs", len(CACHE_TARGETS) == 1 and CACHE_TARGETS[0].endswith("theta_torus_dual_abelianization_weight_lattice_gaussian_2026_07_02.txt"))
+check("F6 load-bearing markdown dependencies are exact", EXPECTED_DEPS == {Path(target).name for target in MD_TARGETS})
+check("F7 stale in-flight wording absent", "in-flight" not in NOTE)
+check("F8 historical PR #4768 is not a dependency", "PR #4768 is historical context, not a dependency" in " ".join(NOTE.split()))
 
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

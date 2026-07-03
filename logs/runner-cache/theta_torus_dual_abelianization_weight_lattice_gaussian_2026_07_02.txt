@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/theta_torus_dual_abelianization_weight_lattice_gaussian_2026_07_02.py
-runner_sha256: 19fc3e25b270060a74b9ffaea0a6c6c99c4742443b0bd80aed48e4baf1ecaaa4
+runner_sha256: 75afc8a06cdf3404ef7812a9d01c4d34ce0a3496354b39318c351b33e8b87689
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 Section A: SU(2) torus dual
@@ -30,9 +30,17 @@ Section D: gluing stability
 Section E: Weyl-shift obstruction
   [PASS] E1 su(2): the W-average of the Cartan action is 0 (fixed subspace zero)
   [PASS] E2 su(3): the W-average restricted to the Cartan (sum-zero subspace) is exactly 0 — no W-fixed direction exists
-         norm = 9.35e-33
+         norm = 9.80e-33
   [PASS] E3 every tested nonzero lattice shift of the SU(3) dual table (including diagonal shifts) breaks full-W anti-invariance: the U(1)-template label-shift theta slot does not lift to the nonabelian torus dual
-TOTAL: PASS=17 FAIL=0
+  [PASS] F1 note declares canonical claim type
+  [PASS] F2 legacy source status labels absent
+  [PASS] F3 source-side audit status fields absent
+  [PASS] F4 primary runner is markdown-linked
+  [PASS] F5 cache is markdown-linked under logs
+  [PASS] F6 load-bearing markdown dependencies are exact
+  [PASS] F7 stale in-flight wording absent
+  [PASS] F8 historical PR #4768 is not a dependency
+TOTAL: PASS=25 FAIL=0
 
 ----- stderr -----
 

@@ -1,12 +1,10 @@
 # Torus-Dual Abelianization of SU(N) Class Weights: the Heat-Kernel Member Is an Exact Signed Gaussian on the Regular Rho-Shifted Weight Lattice, the Structure Is Gluing-Stable, the Block-1 Center Grading Is Its Coset Shadow — and a Continuous Weyl-Consistent Theta Shift-Slot on the Nonabelian Torus Dual Is Obstructed (Bounded Theorem)
 
 **Date:** 2026-07-02
-**Claim type:** bounded_theorem (exact finite constructions on witness weight
-classes plus a scoped obstruction; not a terminal no-go, not a discharge of
-the theta admission).
-**Status authority:** independent audit lane only. This note does not set an
-audit verdict, edit registries, register primitives, change axioms, retire or
-re-grade any Tier-A admission, or claim Strong-CP closure.
+**Type:** bounded_theorem
+This source note does not set an audit verdict, edit registries, register
+primitives, change axioms, retire or re-grade any Tier-A admission, or claim
+Strong-CP closure.
 **Primary runner:**
 [`scripts/theta_torus_dual_abelianization_weight_lattice_gaussian_2026_07_02.py`](../scripts/theta_torus_dual_abelianization_weight_lattice_gaussian_2026_07_02.py)
 **Runner cache:**
@@ -14,7 +12,7 @@ re-grade any Tier-A admission, or claim Strong-CP closure.
 
 ## Question
 
-The theta campaign's block 3 (PR #4811, in-flight; companions PRs #4784 and
+The theta campaign's landed block 3 (PR #4811; companions PRs #4784 and
 #4796) sharpened `W_theta_Q_context` to three named residuals, of which the
 second is:
 
@@ -93,7 +91,7 @@ window):
    block 3 derived on the closed-branch surface and named as residual
    (ii'). Two independent directions now converge on that shape.
 
-**Also closed into a circle:** the block-1 center grading is recovered as
+**Also connected back to block 1:** the block-1 center grading is recovered as
 the **coset shadow** of the dual lattice. Restricting `SU(2)` to integer
 spins (the center-even subalgebra) depopulates exactly one lattice coset;
 the `SU(3)` dual support decomposes into the three triality cosets of the
@@ -110,11 +108,11 @@ classifies; its fusion-visible shadow is precisely the `Z_N` grading.
    only as background discipline here; no record-registration claim is made
    for any torus-dual object (see the identification checkpoint).
 
-2. **Retained `SU(3)` character surface**
+2. **`SU(3)` character recurrence surface**
    ([`GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md),
-   ledger `effective_status = retained`): supplies the `SU(3)` Wilson weight
-   and character basis used for the Wilson-member checks (dual support and
-   the `tau_R/C2` form-instability witness at `beta = 6`).
+   landed source): supplies the `SU(3)` Wilson weight and character basis used
+   for the Wilson-member checks (dual support and the `tau_R/C2`
+   form-instability witness at `beta = 6`).
 
 3. **Tier-A theta registry text** (docs/audit/data/tier_a_admissions.json,
    gauge side): the residual is "localized to the multi-plaquette /
@@ -188,10 +186,10 @@ registry-tracked absence of a local per-plaquette cross-plane slot.
 
 ## Corollary (wall state for W_theta_Q_context)
 
-Residual (i-b) is refined, not discharged:
+Residual (i-b) is narrowed, not discharged:
 
 ```text
-(i-b) resolved at the class-weight level: the abelianized torus dual with
+(i-b) class-weight answer: the abelianized torus dual with
       Z^rank integer flux data EXISTS EXACTLY (regular shifted weight
       lattice; Gaussian for the heat-kernel member) and is gluing-stable.
 
@@ -218,14 +216,13 @@ properties — not a registration claim.
 
 ## Relation to the RP-half no-go (route independence)
 
-The retained no-go row
-strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16
+The no-go row
+[`STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md`](STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md)
 forecloses only "the RP half-square identity alone cannot derive a
-no-bare-theta-slot exclusion." No reflection-positivity identity appears
-here, and the shift-slot obstruction of Theorem 4 is a Weyl-symmetry
-statement about the torus dual, not a bare-theta-slot exclusion: it
-relocates where theta can act (pairing, not label shift); it does not forbid
-theta.
+no-bare-theta-slot exclusion." No reflection-positivity identity appears here,
+and the shift-slot obstruction of Theorem 4 is a Weyl-symmetry statement about
+the torus dual, not a bare-theta-slot exclusion: it relocates where theta can
+act (pairing, not label shift); it does not forbid theta.
 
 ## What moves
 
@@ -248,7 +245,8 @@ W_theta_Q_context (current decomposition):
          framework surface (block 3 supplies its exact sector reduction;
          this note obstructs the alternative shift-slot shape).
 
-W_theta_bar_assembly: unchanged (in-flight PR #4768).
+W_theta_bar_assembly: unchanged; PR #4768 is historical context, not a
+dependency of this note.
 ```
 
 ## Non-claims
@@ -273,7 +271,7 @@ This note does not claim:
 
 ## No-Go Discipline Gate (for the negative boundary)
 
-**Status:** PASS as bounded scoping inside positive constructions. The
+**Boundary:** bounded scoping inside positive constructions. The
 negative content is exactly: (a) no continuous Weyl-consistent label-shift
 theta slot exists on the `SU(N)` torus dual (zero fixed subspace; shifted
 tables break full-W anti-invariance); (b) the Wilson member is not
@@ -372,7 +370,7 @@ python3 scripts/theta_torus_dual_abelianization_weight_lattice_gaussian_2026_07_
 Expected close:
 
 ```text
-TOTAL: PASS=17 FAIL=0
+TOTAL: PASS=25 FAIL=0
 ```
 
 Sections: A `SU(2)` dual (support, Gaussian coefficients, anti-invariance,

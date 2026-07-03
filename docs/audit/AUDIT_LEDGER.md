@@ -23,7 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 853 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1960 |
+| unaudited | 1959 |
+| audit_in_progress | 1 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -59,14 +60,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 11 |
+| `audit_in_progress` | 12 |
 | `audited_clean` | 1229 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2273 |
+| `unaudited` | 2272 |
 
 | claim_type | count |
 |---|---:|
@@ -104,7 +105,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1148 | 67.17 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 198 | 65.14 | `audited_clean` | **retained** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1578 | 65.12 | `audited_clean` | **retained** |
-| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1202 | 64.73 | `audited_clean` | **retained_bounded** |
+| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1202 | 64.23 | `audited_clean` | **retained_bounded** |
 | 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1248 | 53.29 | `audited_clean` | **retained_bounded** |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1153 | 48.17 | `unaudited` | meta |
 | 8 | `key_terminology` | meta | critical | 1253 | 46.79 | `unaudited` | meta |
@@ -142,6 +143,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |

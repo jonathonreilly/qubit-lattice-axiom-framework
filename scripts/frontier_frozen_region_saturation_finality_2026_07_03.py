@@ -19,11 +19,31 @@ Conventions (exactness firewall):
     claim about the full one-site M_2(C) possibility domain.
   * A configuration C is a dict {site: locked_value}: "site carries a record
     with that locked value"; sites absent from C carry no record.
-  * A history is a finite tuple (C_0, ..., C_T). Under permanence (PR #4874,
-    in-flight, owner-approved 2026-07-03) together with the axiom sentence
-    "A state is a configuration of records", record sets are nested along a
-    realized history and locked values agree on the smaller domain. An EVENT at
-    stage t is a new registration: a site in dom(C_t) \\ dom(C_{t-1}).
+  * A history is a finite tuple (C_0, ..., C_T).
+
+Layering of the derivations (this repair makes the halting content reading-free):
+  * DOMAIN MONOTONICITY (permanence-derived, reading-free). Under permanence
+    (PR #4874, in-flight, owner-approved 2026-07-03; final wording "records are
+    permanent.") together with "A state is a configuration of records", record
+    sets are nested along a realized history and locked values agree on the
+    smaller domain, so the recorded-site domain grows monotonically:
+    dom(C_{t-1}) subset of dom(C_t). A FIRST-REGISTRATION (dom-event) at stage t
+    is a site in dom(C_t) \\ dom(C_{t-1}). Monotonicity is the primary lever for
+    T2's halting and T4's finite-lattice bound; it needs no reading beyond
+    permanence.
+  * MODEL POSTULATE M1 (a named note-level reading). Reading "A state is a
+    configuration of records" plus the singular "a record locks exactly one
+    local possibility" phrasing, a state is a site-functional SET of records,
+    each individuated as (site, value), with at most one record per site; a
+    same-value re-registration is the SAME element (a non-event by identity, not
+    by prohibition). M1 CLOSES what the axiom leaves open: the Record readout
+    clause quantifies over "any finite collection of pairwise-disjoint records",
+    which contemplates non-disjoint (overlapping, same-site) records as a live
+    axiom-level possibility and merely withholds additivity from them. M1 is
+    load-bearing ONLY for T1's set-constancy 4^8 enumeration and T4's
+    distinct-record pigeonhole tail. Event layering: a same-value re-registration
+    is a non-event under BOTH the dom-based definition (no domain growth) and the
+    M1 set definition (same element).
 
 The covariant neighbor-dependent availability rule and the record-inclusion
 event-ordering are REBUILT here from scratch (small exact windows). The
@@ -72,17 +92,18 @@ def neighbors(s):
     return tuple(add(s, u) for u in UNIT)
 
 
+def neighbor_values(s, C):
+    """Recorded-neighbor value set V(s) = { C[nb] : nb a neighbor of s, nb in C }.
+    Under permanence this set is monotonically nondecreasing along a history."""
+    return frozenset(C[nb] for nb in neighbors(s) if nb in C)
+
+
 def available_at(s, C):
     """Covariant neighbor-dependent availability rule (rebuilt exactly):
-    available_at(s) = { locked values of records on nearest neighbors of s }
-    if that set is nonempty, else the full possibility set {+1,-1}."""
-    vals = set()
-    for nb in neighbors(s):
-        if nb in C:
-            vals.add(C[nb])
-    if vals:
-        return frozenset(vals)
-    return FULL
+    available_at(s) = V(s) = { locked values of records on nearest neighbors of
+    s } if that set is nonempty, else the full possibility set {+1,-1}."""
+    v = neighbor_values(s, C)
+    return v if v else FULL
 
 
 def registrable_sites(R, C):
@@ -106,13 +127,15 @@ def block(ranges):
 
 
 def events(prev, cur):
-    """New registrations from configuration prev to configuration cur."""
+    """First-registrations (dom-events) from configuration prev to cur:
+    dom(cur) \\ dom(prev). A same-value re-registration is NOT an event."""
     return frozenset(s for s in cur if s not in prev)
 
 
 def nested_with_agreement(hist):
     """Permanence + state-as-record-configuration => record sets nested and
-    locked values agree on the smaller domain, at every succession step."""
+    locked values agree on the smaller domain, at every succession step; hence
+    the recorded-site domain is monotone (dom(prev) subset of dom(cur))."""
     for i in range(1, len(hist)):
         prev, cur = hist[i - 1], hist[i]
         if not all(s in cur for s in prev):
@@ -124,7 +147,9 @@ def nested_with_agreement(hist):
 
 # ---------------------------------------------------------------------------
 # Quote guards -- the note's quotes must match docs/MINIMAL_AXIOMS_2026-06-29.md
-# (the PRE-restoration Record sentence lives in THIS worktree copy).
+# (the PRE-restoration Record sentence lives in THIS worktree copy). Five live
+# guards: Record locking, Admissibility, state-as-configuration (M1 basis),
+# Lattice, and Record readout-additivity. Qubit is cited but carries no quote.
 # ---------------------------------------------------------------------------
 def axioms_normalized():
     here = os.path.dirname(os.path.abspath(__file__))
@@ -144,14 +169,28 @@ def quote_guards():
     adm = ("the available possibilities are determined by, and vary with, the "
            "nearest-neighbor conditions")
     stt = "A state is a configuration of records."
+    lat = ("Physical sites are the points of the cubic lattice `Z^3`, with "
+           "nearest-neighbor adjacency, standard translations, and proper cubic "
+           "rotations about each site.")
+    rda = ("For any finite collection of pairwise-disjoint records, scalar "
+           "readout `I` is additive, with `I(empty)=0`.")
     check("quote guard: pre-restoration Record locking+readout-invariance "
           "sentence present verbatim in MINIMAL_AXIOMS_2026-06-29.md",
           txt is not None and rec in txt)
     check("quote guard: Admissibility 'determined by, and vary with, the "
           "nearest-neighbor conditions' present verbatim",
           txt is not None and adm in txt)
-    check("quote guard: 'A state is a configuration of records.' present verbatim",
+    check("quote guard: 'A state is a configuration of records.' present "
+          "verbatim (named basis for model postulate M1)",
           txt is not None and stt in txt)
+    check("quote guard: Lattice 'Physical sites are the points of the cubic "
+          "lattice Z^3 ... proper cubic rotations about each site.' present "
+          "verbatim (guards the load-bearing infinite-lattice sentence)",
+          txt is not None and lat in txt)
+    check("quote guard: Record readout 'For any finite collection of "
+          "pairwise-disjoint records, scalar readout I is additive, with "
+          "I(empty)=0.' present verbatim (guards the pairwise-disjoint clause)",
+          txt is not None and rda in txt)
 
 
 # ===========================================================================
@@ -169,11 +208,27 @@ def T1():
     check("T1 3x3x3 window record-saturated (|R|=27) => zero registrable sites in R",
           len(R3) == 27 and len(registrable_sites(R3, C3)) == 0)
 
-    # constancy of the R-restriction is FORCED, by exact enumeration over
-    # ALPHABET^8 candidate later R-restrictions:
-    #   'absent' -> record removed      : barred by permanence
-    #   +1 / -1  -> a locked value      : value change (alteration) barred by permanence
-    #   'double' -> a second record     : barred by "locks exactly one"
+    # PRIMARY (dom-based, reading-free): permanence => domain monotone, so once R
+    # is saturated R subset of dom(C_t) at every later stage and NO first-
+    # registration (dom-event) can occur in R again. No per-site uniqueness.
+    fin_hist = (dict(C2),
+                {**C2, (2, 0, 0): 1},
+                {**C2, (2, 0, 0): 1, (2, 1, 0): 1})
+    R_in_dom = all(all(s in H for s in R2) for H in fin_hist)
+    dom_events_in_R = tuple(len(events(fin_hist[i - 1], fin_hist[i]) & R2)
+                            for i in range(1, len(fin_hist)))
+    check("T1 dom-based finality (reading-free, primary): R saturated => R subset "
+          "of dom(C_t) at every later stage (domain monotone under permanence), "
+          "so zero first-registrations in R thereafter -- no per-site uniqueness",
+          R_in_dom and dom_events_in_R == (0, 0))
+
+    # STRONGER (model-relative, uses M1): the record SET on R is FORCED constant.
+    # The candidate alphabet is a MODEL-RELATIVE device --
+    #   'absent' -> record removed        : barred by permanence
+    #   +1 / -1  -> a locked value        : value change (alteration) barred by permanence
+    #   'double' -> a second, DISTINCT record : inexpressible inside the partial-map
+    #               model and only multi-valued outside it; barred by M1
+    #               (site-functional set, at most one record per site).
     ALPHABET = ("absent", 1, -1, "double")
     sites = sorted(R2)
 
@@ -181,44 +236,53 @@ def T1():
         if tag == "absent":
             return False                 # removal barred by permanence
         if tag == "double":
-            return False                 # second record barred by locks-exactly-one
+            return False                 # second record barred by M1 (site-functional set)
         return tag == C2[site]           # only the unchanged locked value survives
 
     survivors = [combo for combo in itertools.product(ALPHABET, repeat=len(sites))
                  if all(guard_ok(site, tag) for site, tag in zip(sites, combo))]
-    check("T1 constancy FORCED: exactly one later R-restriction survives "
-          "permanence+locks-one, and it equals C|R (history constant on R)",
+    check("T1 M1 set-constancy (model-relative): over the 4^8 model-relative "
+          "candidate R-restrictions, exactly one survives permanence (no removal/"
+          "alteration) + M1 (no second record), and it equals C|R -- the record "
+          "set on R is constant",
           len(survivors) == 1
           and dict(zip(sites, survivors[0])) == {s: C2[s] for s in sites})
-    check("T1 guards have teeth: removal, alteration, and double-record "
-          "candidates are each rejected",
+    check("T1 guards have teeth: removal (permanence), alteration (permanence), "
+          "and second-record 'double' (M1) candidates are each rejected",
           (not guard_ok(sites[0], "absent"))
           and (not guard_ok(sites[0], -1))
           and (not guard_ok(sites[0], "double")))
 
-    # global corollary: a globally-saturated all-(+1) configuration is
-    # ADMISSIBLE against the note-level availability model, and readout is
-    # additive over disjoint sub-collections with readout(empty)=0.
+    # global corollary (RULE-DEPENDENT, within the note-level model): the all-(+1)
+    # saturated config is admissible against the EXHIBITED availability rule, and
+    # readout is additive over disjoint sub-collections with readout(empty)=0.
     admissible = all(C2[s] in available_at(s, C2) for s in R2)
     Ha = {s: C2[s] for s in R2 if s[0] == 0}
     Hb = {s: C2[s] for s in R2 if s[0] == 1}
-    check("T1 global corollary: all-(+1) saturated config admissible (each "
-          "locked value lies in its neighbor-determined availability set); "
-          "readout additive over disjoint halves; readout(empty)=0",
+    check("T1 global corollary (rule-dependent): all-(+1) saturated config "
+          "admissible under the exhibited rule (each locked value lies in its "
+          "neighbor-determined availability set); readout additive over disjoint "
+          "halves; readout(empty)=0",
           admissible and readout({}) == 0
           and readout(C2) == readout(Ha) + readout(Hb) == 8)
 
-    # discriminating control: the admissibility check is not vacuous.
+    # discriminating control (RULE-DEPENDENT): flipping one CORNER site (the 2x2x2
+    # block has no interior site) to -1 amid +1 neighbors yields NON-admissible
+    # under the exhibited rule. A different covariant rule could reverse both
+    # this and the all-(+1) verdict above (rule-dependence residue, T1 corollary).
     Cbad = dict(C2)
     Cbad[(0, 0, 0)] = -1
     bad_ok = all(Cbad[s] in available_at(s, Cbad) for s in R2)
-    check("T1 discriminating control: flipping one interior site to -1 amid +1 "
-          "neighbors yields a NON-admissible config (check has teeth)",
+    check("T1 discriminating control (rule-dependent): flipping one CORNER site "
+          "(0,0,0) to -1 amid +1 neighbors yields a NON-admissible config under "
+          "the exhibited rule (check has teeth)",
           (not bad_ok) and (Cbad[(0, 0, 0)] not in available_at((0, 0, 0), Cbad)))
 
 
 # ===========================================================================
-# T2 -- LOCAL TIME STOPS (bounded, conditional on permanence)
+# T2 -- LOCAL RECORD-TIME STOPS (bounded, conditional on permanence)
+#   Primary derivation is dom-based (reading-free): saturation => the region is
+#   inside the monotone domain forever => in-region first-registrations halt.
 # ===========================================================================
 def T2():
     R = block((range(2), range(2), range(2)))          # region, 8 sites
@@ -233,7 +297,7 @@ def T2():
     hist = (C0, C1, C2, C3, C4)
 
     check("T2 permanence: record sets nested and locked values agree at every "
-          "succession step of the history",
+          "succession step (recorded-site domain monotone, dom(prev) subset dom(cur))",
           nested_with_agreement(hist))
 
     r_sat = tuple(all(s in hist[t] for s in R) for t in range(len(hist)))
@@ -241,17 +305,19 @@ def T2():
           "region is produced)",
           (r_sat[1] is False) and (r_sat[2] is True))
 
+    # dom-based halting (reading-free): in-R first-registration (dom-event) count
+    # goes to zero once R is inside the monotone domain; outside events continue.
     in_R = tuple(len(events(hist[t - 1], hist[t]) & R) for t in range(1, len(hist)))
     out_R = tuple(len(events(hist[t - 1], hist[t]) - R) for t in range(1, len(hist)))
-    check("T2 per-stage in-R event counts == (4,4,0,0): R event count halts "
-          "after saturation (record-time in R ends)",
+    check("T2 in-R first-registration counts == (4,4,0,0): the dom-event count in "
+          "R halts after saturation (local record-time in R ends) -- reading-free",
           in_R == (4, 4, 0, 0))
-    check("T2 per-stage outside-R event counts == (0,0,2,2): events continue on "
-          "the unsaturated complement at stages 3,4",
+    check("T2 outside-R first-registration counts == (0,0,2,2): events continue "
+          "on the unsaturated complement at stages 3,4",
           out_R == (0, 0, 2, 2))
 
     r_count = tuple(len(set(hist[t]) & R) for t in range(len(hist)))
-    check("T2 restricted record set in R is constant (==8) for stages 2,3,4 -- "
+    check("T2 recorded-site count in R is constant (==8) for stages 2,3,4 -- "
           "record-time in R is halted",
           r_count[2] == r_count[3] == r_count[4] == 8)
 
@@ -260,9 +326,23 @@ def T2():
           "R is frozen (time flows where unwritten possibility remains)",
           out_cum[2] < out_cum[3] < out_cum[4])
 
+    # event-definition layering (explicit): a same-value re-registration is a
+    # NON-EVENT under BOTH definitions -- zero domain growth (dom-based) and the
+    # same (site,value) element (M1 set).
+    C2_re = dict(hist[2]); C2_re[(0, 0, 0)] = 1        # re-register an existing +1
+    dom_growth = len(events(hist[2], C2_re))
+    m1_same = (frozenset((s, hist[2][s]) for s in hist[2])
+               == frozenset((s, C2_re[s]) for s in C2_re))
+    check("T2 event-definition layering: a same-value re-registration at an "
+          "already-recorded site is a NON-EVENT under both definitions -- zero "
+          "domain growth (dom-based) and the same (site,value) element (M1)",
+          dom_growth == 0 and m1_same)
+
 
 # ===========================================================================
 # T3 -- BOUNDARY INFLUENCE WITHOUT EVOLUTION (bounded)
+#   General content: MONOTONE CONTAINMENT (the region value stays available at a
+#   neighbor forever). Full SINGLETON pinning holds exactly for CAVITY sites.
 # ===========================================================================
 def rotate_z(s):
     x, y, z = s
@@ -273,31 +353,73 @@ def T3():
     R = block((range(2), range(2), range(2)))
     base = {s: 1 for s in R}                 # saturated block, all +1
     s_bd = (2, 0, 0)                         # outside boundary site; neighbor (1,0,0) in R
-    f_far = (5, 5, 5)                        # far outside site; no recorded neighbors
-    H1 = dict(base)
-    H2 = dict(H1); H2[(0, 0, 7)] = 1         # distant event, not adjacent to s_bd or f_far
-    H3 = dict(H2); H3[(0, 7, 0)] = 1         # distant event
-    hist = (H1, H2, H3)
+    f_far = (5, 5, 5)                         # far outside site; no recorded neighbors
+    G1 = dict(base)
+    G2 = dict(G1); G2[(0, 0, 7)] = 1          # distant event, not adjacent to s_bd or f_far
+    G3 = dict(G2); G3[(0, 7, 0)] = 1          # distant event
+    ghist = (G1, G2, G3)
 
-    pin = tuple(available_at(s_bd, H) for H in hist)
-    check("T3 boundary pin: outside site adjacent to the saturated block has "
-          "availability {+1} at every stage",
-          all(a == frozenset((1,)) for a in pin))
+    # general content: MONOTONE CONTAINMENT. V(s_bd) is monotonically
+    # nondecreasing under permanence; the region value +1 is available forever.
+    Vseq = tuple(neighbor_values(s_bd, H) for H in ghist)
+    mono = all(Vseq[i - 1] <= Vseq[i] for i in range(1, len(Vseq)))
+    contains_region_value = all(1 in available_at(s_bd, H) for H in ghist)
+    check("T3 monotone containment (general, within the note-level model): the "
+          "recorded-neighbor value set at a boundary site is monotonically "
+          "nondecreasing under permanence, and the region value +1 stays "
+          "available at every stage (once available it never leaves)",
+          mono and contains_region_value and Vseq[0] == frozenset((1,)))
 
-    far = tuple(available_at(f_far, H) for H in hist)
-    check("T3 far site retains full availability {+1,-1} at every stage",
+    # seat-1 RELAXATION counterexample: a later ADMISSIBLE -1 record on a
+    # DIFFERENT neighbor of s_bd relaxes availability {+1} -> {+1,-1}. The
+    # singleton pin is NOT permanent for a boundary site; only containment is.
+    diff_nb = (3, 0, 0)                       # neighbor of s_bd, distinct from in-R (1,0,0)
+    before = dict(base)
+    minus_admissible = (-1) in available_at(diff_nb, before)   # neighbors unrecorded => FULL
+    after = dict(before); after[diff_nb] = -1
+    relaxed = available_at(s_bd, after)
+    check("T3 relaxation counterexample (exact): an admissible -1 on a DIFFERENT "
+          "neighbor (3,0,0) relaxes availability at the boundary site from {+1} "
+          "to {+1,-1} -- the singleton pin is NOT permanent; +1 stays available "
+          "(monotone containment survives the relaxation)",
+          available_at(s_bd, before) == frozenset((1,))
+          and minus_admissible
+          and relaxed == FULL
+          and (1 in relaxed)
+          and diff_nb in neighbors(s_bd) and diff_nb != (1, 0, 0))
+
+    # CAVITY singleton pinning (exact): a cavity site -- all six neighbors inside
+    # the saturated region -- is pinned to {+1} FOREVER, regardless of any outside
+    # events. Shell = 3x3x3 minus its center; cavity c = the (unrecorded) center.
+    shell = block((range(3), range(3), range(3))) - frozenset({(1, 1, 1)})
+    cav_base = {s: 1 for s in shell}          # 26-site saturated shell, all +1
+    c = (1, 1, 1)
+    all_nb_in_shell = all(nb in shell for nb in neighbors(c))
+    K1 = dict(cav_base)
+    K2 = dict(K1); K2[(9, 0, 0)] = -1         # admissible far -1 (its neighbors unrecorded)
+    K3 = dict(K2); K3[(0, 0, 9)] = 1          # further outside event
+    khist = (K1, K2, K3)
+    cav_pin = tuple(available_at(c, H) for H in khist)
+    far_minus_admissible = (-1) in available_at((9, 0, 0), K1)
+    check("T3 cavity singleton pinning (exact, within the note-level model): a "
+          "cavity site with all six neighbors inside the saturated shell has "
+          "availability {+1} at every stage regardless of arbitrary outside "
+          "events (incl. an admissible far -1) -- full singleton for cavity sites",
+          all_nb_in_shell and (c not in shell) and len(shell) == 26
+          and far_minus_admissible
+          and all(a == frozenset((1,)) for a in cav_pin))
+
+    far = tuple(available_at(f_far, H) for H in ghist)
+    check("T3 far site (no recorded neighbors) retains full availability {+1,-1} "
+          "at every stage",
           all(a == FULL for a in far))
 
-    check("T3 pin is PERMANENT: the in-R neighbor record (1,0,0)=+1 is constant "
-          "along the history, so availability at s never relaxes",
-          all(H.get((1, 0, 0)) == 1 for H in hist)
-          and all(available_at(s_bd, H) == frozenset((1,)) for H in hist))
-
-    # influence is possibility-level, NOT a force: s_bd is never itself recorded;
-    # its availability is constrained but no record is placed on it.
-    check("T3 influence is possibility-level (not dynamical): s stays registrable "
-          "(unrecorded) at every stage while its availability is pinned",
-          all(s_bd not in H for H in hist))
+    # influence is possibility-level, NOT a force: the boundary and cavity sites
+    # are never themselves recorded; availability is constrained, no record placed.
+    check("T3 influence is possibility-level (not dynamical): the boundary site "
+          "and the cavity site stay registrable (unrecorded) at every stage while "
+          "their availability is constrained -- no record placed, no evolution",
+          all(s_bd not in H for H in ghist) and all(c not in H for H in khist))
 
     # covariance of the rule under lattice translations and proper cubic rotations
     probes = [(2, 0, 0), (1, 1, 1), (0, 0, 0), (3, 3, 3), (5, 5, 5)]
@@ -373,10 +495,29 @@ def T4():
           "a finite stage => global saturation NOT reached at any finite stage",
           witness not in recorded)
 
-    # owner structural remark, checked: on a FINITE lattice one-record-per-stage
-    # saturates within #sites stages; record-time then ends.
+    # finite lattice
     Lat = block((range(2), range(2), range(2)))   # finite N-site lattice, N=8
     N = len(Lat)
+
+    # PRIMARY (dom-based, reading-free): a saturating history has exactly N
+    # first-registrations, and every attempted (N+1)-th registration on the
+    # saturated lattice yields zero domain growth (a forced non-event). No M1.
+    domhist = [dict()]
+    accd = {}
+    for site in sorted(Lat):
+        accd[site] = 1
+        domhist.append(dict(accd))
+    domev = tuple(len(events(domhist[i - 1], domhist[i])) for i in range(1, len(domhist)))
+    extend_growth = tuple(len(events(accd, {**accd, site: 1})) for site in sorted(Lat))
+    check("T4 dom-based finite bound (reading-free): a saturating history on the "
+          "N-site lattice has exactly N first-registrations (dom-events == (1,)*8, "
+          "sum == N == 8); every attempted (N+1)-th registration yields zero "
+          "domain growth -- at most N first-registrations, no M1 needed",
+          domev == tuple([1] * N) and sum(domev) == N and N == 8
+          and extend_growth == tuple([0] * N))
+
+    # owner structural remark, checked: on a FINITE lattice one-record-per-stage
+    # saturates within #sites stages; record-time then ends.
     Cfin = {}
     stages = 0
     for site in sorted(Lat):
@@ -387,12 +528,17 @@ def T4():
           stages == N and all(s in Cfin for s in Lat)
           and len(registrable_sites(Lat, Cfin)) == 0)
 
-    # pigeonhole: after N distinct records no further registration is possible on
-    # the finite lattice; unbounded record-time therefore requires infinite Z^3.
-    check("T4 pigeonhole: after N distinct records the finite lattice has zero "
-          "registrable sites (no (N+1)-th event) -- infinite Z^3 is load-bearing "
-          "for unbounded record-time",
-          len(registrable_sites(Lat, Cfin)) == 0)
+    # STRONGER (model-relative, uses M1): distinct-record pigeonhole tail. Under
+    # M1's site-functional (site,value) individuation the saturated lattice holds
+    # exactly N distinct record elements and a same-value re-registration adds
+    # none, so no (N+1)-th DISTINCT record exists. M1-load-bearing.
+    elements = frozenset((s, Cfin[s]) for s in Cfin)
+    after_reg = elements | frozenset((s, 1) for s in sorted(Lat))
+    check("T4 M1 pigeonhole tail (model-relative, M1-load-bearing): the saturated "
+          "N-site lattice carries exactly N distinct (site,value) records; "
+          "re-registration adds no element (M1 same-element identity), so no "
+          "(N+1)-th distinct record exists -- infinite Z^3 is load-bearing",
+          len(elements) == N and after_reg == elements and len(after_reg) == N)
 
 
 def main():

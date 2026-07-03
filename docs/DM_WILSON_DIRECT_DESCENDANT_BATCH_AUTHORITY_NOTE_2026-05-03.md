@@ -7,7 +7,7 @@ single bounded-support-batch pointer for the DM Wilson direct-descendant
 route-history sub-stack; it introduces no new derivation, does not promote the
 DM flagship lane out of `open flagship lane` status in
 [`ASSUMPTION_DERIVATION_LEDGER.md`](ASSUMPTION_DERIVATION_LEDGER.md), and does
-not modify any of the 14 cataloged source notes.
+not promote any of the cataloged source notes.
 **Authority role:** publication/control-plane entrypoint for the DM Wilson
 direct-descendant theorem-note family.
 **Scope qualifier:** historical / diagnostic; route history of the
@@ -47,7 +47,7 @@ independently closes the DM flagship lane; the lane remains
 | [`DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_POSITIVE_CLOSURE_MANIFOLD_THEOREM_NOTE_2026-04-18.md`](DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_POSITIVE_CLOSURE_MANIFOLD_THEOREM_NOTE_2026-04-18.md) | support - structural / confirmatory support note | exhibits a continuous closure manifold inside the constructive positive sign chamber. |
 | [`DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_POSITIVE_CLOSURE_MULTIPLICITY_THEOREM_NOTE_2026-04-18.md`](DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_POSITIVE_CLOSURE_MULTIPLICITY_THEOREM_NOTE_2026-04-18.md) | exact multiplicity theorem on the constructive positive branch | proves at least three distinct one-parameter exact `eta/eta_obs = 1` witness families coexist inside the constructive positive branch. |
 | [`DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_THEOREM_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_THEOREM_NOTE_2026-04-19.md) | exact current-branch nonuniqueness theorem | exact constructive-sign transport extremality plateau on the fixed native `N_e` seed surface. |
-| [`DM_WILSON_DIRECT_DESCENDANT_FLAGSHIP_FRONTIER_COLLAPSE_THEOREM_NOTE_2026-04-18.md`](DM_WILSON_DIRECT_DESCENDANT_FLAGSHIP_FRONTIER_COLLAPSE_THEOREM_NOTE_2026-04-18.md) | exact flagship-route refinement theorem | reduces the live flagship blocker to the right-sensitive microscopic value/selector law on `L_e = Schur_{E_e}(D_-)` once the PMNS interface fixes the lepton supports. |
+| [`DM_WILSON_DIRECT_DESCENDANT_FLAGSHIP_FRONTIER_COLLAPSE_THEOREM_NOTE_2026-04-18.md`](DM_WILSON_DIRECT_DESCENDANT_FLAGSHIP_FRONTIER_COLLAPSE_THEOREM_NOTE_2026-04-18.md) | bounded-support fixed-support diagnostic | shows that, once `E_e` and `L_e = Schur_{E_e}(D_-)` are supplied, ambient completion freedom above the Schur block does not change the downstream diagnostic; it no longer imports PMNS support selection as closed. |
 | [`DM_WILSON_DIRECT_DESCENDANT_LOCAL_OBSERVABLE_COORDINATE_THEOREM_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_LOCAL_OBSERVABLE_COORDINATE_THEOREM_NOTE_2026-04-19.md) | exact local differential theorem on the open DM selector gate | shows the projected-source observable pack `(eta_1, gamma, E1, E2, Delta_src)` has full local rank at the constructive positive exact-closure root. |
 | [`DM_WILSON_DIRECT_DESCENDANT_LOCAL_SCHUR_BRANCH_DISCRIMINANT_THEOREM_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_LOCAL_SCHUR_BRANCH_DISCRIMINANT_THEOREM_NOTE_2026-04-19.md) | exact source-side reduction theorem on the open DM gate | reduces the positive-branch discriminator to a local quantity on the descended charged Schur block `L_e`. |
 | [`DM_WILSON_DIRECT_DESCENDANT_LOCAL_SCHUR_SOURCE_FAMILY_THEOREM_NOTE_2026-04-18.md`](DM_WILSON_DIRECT_DESCENDANT_LOCAL_SCHUR_SOURCE_FAMILY_THEOREM_NOTE_2026-04-18.md) | exact conditional local Schur reduction note | once an invertible charged microscopic block `D_-` and charged support `E_e` are supplied, the descended determinant-response law reduces exactly to the charged Schur block `L_e`. |
@@ -67,9 +67,10 @@ flagship lane closure is re-attempted.
 
 ## Common premises (shared across the cataloged stack)
 
-- imported PMNS-interface support data: lepton supports `E_nu` and `E_e` are
-  fixed by the live PMNS-assisted DM route; no new support-selection theorem
-  is invented inside this batch (per
+- supplied/conditional support data: individual rows may consume lepton support
+  blocks such as `E_e`, but the repaired PMNS projector interface is only a
+  bounded raw pair-to-projector algebra row and does not close carrier
+  authority, physical `N1` column selection, or support provenance (per
   [`DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md));
 - conditional charged microscopic data: an invertible charge-preserving
   microscopic operator `D = D_0 (+) D_- (+) D_+` and the charged support
@@ -84,8 +85,8 @@ flagship lane closure is re-attempted.
 ## Forbidden imports (none of these is permitted inside the batch)
 
 - no Wilson-native derivation of `D_-` is claimed by any cataloged note;
-- no charged support split selection theorem is loaded; the support data is
-  imported from the PMNS interface, not derived here;
+- no charged support split selection theorem is loaded; support data is
+  supplied conditionally when consumed and is not derived here;
 - no final DM source point is selected; the right-sensitive microscopic
   selector law on `L_e` remains the open last-mile gate;
 - no quantitative DM number, `eta` value, dark-matter mass, or transport

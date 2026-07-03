@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/velocity_rg_logflow_framework_internal_2026_06_21.py
+runner_sha256: b24feb11ad9846b9b77400779b04785a0fd6b1f82d23018975c26d4bc4165713
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.57
+status: ok
+----- stdout -----
+
+============================================================================
+Group weights factor exactly (so the form-factor question = kinematic cores)
+============================================================================
+[PASS] C_F = sum_a T^a T^a = (4/3) I (fermion drag weight) -- diag=[1.333333, 1.333333, 1.333333]
+[PASS] T_F = tr(T^a T^b) = (1/2) delta^ab (gauge vacuum-pol weight) -- max off-diag=0.00e+00
+[PASS] C_A = f^acd f^bcd = 3 delta^ab (gauge self-weight) -- diag0=3.0000
+  => a = C_F * f_a^kin, b = (T_F N_f) * f_b^kin ; f0 <=> f_a^kin == f_b^kin
+
+============================================================================
+Soft/IR region: gauge and fermion lines coincide (common form factor, log-flow)
+============================================================================
+[PASS] gauge/fermion line ratio -> 1 as k->0 (soft cores coincide) -- ratios at k=[0.1, 0.01, 0.001, 0.0001] = [np.float64(1.002504), np.float64(1.000025), np.float64(1.0), np.float64(1.0)]
+[PASS] both lines have leading coefficient 1 * k^2 (l=0 speed channel shared) -- 2-2cos k ~ k^2, sin^2 k ~ k^2
+
+============================================================================
+BZ-edge: gauge line nonzero (no doubler), fermion line zero (doublers)
+============================================================================
+[PASS] gauge line at k=pi (all axes) = 16 = 4 per direction (NO doubler zero) -- Dg(pi)= 16.000000 (per-direction 2-2cos pi = 4)
+[PASS] staggered fermion line at k=pi = 0 (doubler zero) -- Df(pi)= 6.00e-32
+[PASS] fermion line has doubler zeros on every BZ-edge corner (sin^2 pi = 0) -- fermion 0, gauge 4 at a single-axis edge
+
+============================================================================
+Form-factor ratio: IR ~ 1 (common) vs full/UV != 1 (no common form factor)
+============================================================================
+[PASS] IR form-factor ratio f_a/f_b -> 1 (soft cores coincide => log-flow common f0) -- IR <Dg>/<Df> = 1.0272
+[PASS] UV form-factor ratio f_a/f_b clearly != 1 (power-divergent: NO common f0) -- UV <Dg>/<Df> = 4.0324
+[PASS] full-BZ ratio = <2-2cos>/<sin^2> = 2/0.5 = 4 (exact; gauge != fermion away from IR) -- BZ <Dg>/<Df> = 4.0000
+[PASS] line-swap: identical internal lines give ratio 1 (mismatch is purely the internal line) -- swap ratio = 1.000000000000
+
+============================================================================
+Heat-kernel gauge propagator denominator = k_hat^2 (DERIVED), BZ-edge robust
+============================================================================
+[PASS] HK/Villain plaquette action is (beta/2) theta^2 at quadratic order (S''(0)=beta) -- S''(0)=1.70000=beta, even in theta -> k-structure = lattice curl only
+[PASS] HK denominator NONZERO at every BZ-edge corner k in {0,pi}^4\{0} (no doubler) -- min corner = 4.0 (fermion sin^2 = 0 here)
+[PASS] HK gauge free line == the lattice Laplacian used above (k_hat^2)
+[PASS] HK power-divergent form-factor ratio matches Wilson (action-robust negative) -- UV ratio HK=4.0324 vs Wilson=4.0324
+
+============================================================================
+SUMMARY
+============================================================================
+group weights: SU(3) C_F=4/3, T_F=1/2, C_A=3 factor EXACTLY -> the
+    form-factor question reduces to whether the kinematic cores coincide.
+soft/IR -> gauge and fermion lines coincide (both ~k^2) -> common form factor;
+    both log-flow drags positive -> eta=v_F/v_b -> 1 FRAMEWORK-INTERNALLY,
+    corroborating the literature (Chadha-Nielsen/graphene) form for the log piece.
+BZ-edge -> gauge line = 4/dir (no doubler), fermion line = 0 (doublers);
+    SAME for Wilson and heat-kernel (canonical group Laplacian) -> ROBUST.
+region split IR a/b ~ O(1) (common) vs UV a/b off (NO common form factor);
+    line-swap proves the mismatch is purely the internal-line shape.
+NET: log-flow attractor framework-internal; power-divergent residual D has NO
+     common form factor (action-robust). Proxy-level drag; full counterterm +
+     residual D (lambda, ~1e-20 sufficiency) stay OPEN. Support + route no-go, NOT closure.
+
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

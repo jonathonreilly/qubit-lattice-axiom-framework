@@ -241,7 +241,11 @@ def main() -> int:
 
     downstream_guard(
         DOCS / "YT_EW_COLOR_PROJECTION_THEOREM.md",
-        required=["kappa_EW", "K_EW(kappa_EW)", "audited_conditional / bounded"],
+        required=[
+            "kappa_EW",
+            "K_EW(kappa_EW)",
+            'must say "conditional on the connected-trace specialization',
+        ],
         forbidden_windows=[
             "**Status:** " + "proposed" + "_retained EW normalization lane",
             "The correction 9/8 on the EW couplings is derived from",

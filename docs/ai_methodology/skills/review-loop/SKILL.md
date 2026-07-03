@@ -117,16 +117,23 @@ claimed.
 
 The framework baseline (per `MINIMAL_AXIOMS_2026-06-29.md`) is the four named
 axioms Lattice, Qubit, Admissibility, and Record. Lattice is the cubic `Z^3`
-lattice with nearest-neighbor adjacency. Qubit is the domain of local
-possibilities with full one-site algebraic presentation `M_2(ℂ)`; `Cl(3,0)` is
-equivalent notation, not extra primitive structure.
+lattice with nearest-neighbor adjacency, standard translations, and proper
+cubic rotations about each site; no site is privileged, and sites are
+distinguished by the supplied lattice structure alone. Qubit is the domain of
+local possibilities with full one-site algebraic presentation `M_2(ℂ)`;
+`Cl(3,0)` is equivalent notation, not extra primitive structure, and no
+possibility is privileged; possibilities are distinguished by the supplied
+algebraic structure alone.
 Admissibility is one fixed finite-neighborhood rule, the same at every lattice
 translate; for each site, the available possibilities are determined by, and
 vary with, the nearest-neighbor conditions, consistent with local records. A
-site need not carry a record;
-when present, a record locks exactly one local possibility from the subset
-available at that site under Admissibility, with finite scalar readout additive
-over finite pairwise-disjoint record collections. Additional
+site need not carry a record; when present, a record locks exactly one local
+possibility from the subset available at that site under Admissibility. Only
+records are readable; a readout value is determined by record content alone;
+finite scalar readout is additive over finite pairwise-disjoint record
+collections. A state is a configuration of records. A law privileges no states:
+its domain is a supplied condition, and where that condition holds it gives
+exactly one answer. Additional
 structures such as readout-context selection, decomposition, `K`/CPT
 structure, sector-generation rules, weighting, normalization, probability,
 measurement/decoherence dynamics, occurrence rules, update laws, time metric,
@@ -707,6 +714,34 @@ a stale ratification is a real integrity violation. Resolve it by re-auditing
 (the audit lane re-seeds and archives the prior verdict) or by demoting the edit
 per the audit-hash churn guard — never by refreshing the hash while keeping the
 retained verdict.
+
+**Stuck-row repair requeue gate.** Terminal non-clean rows
+(`audited_conditional` / `audited_renaming` / `audited_failed` /
+`audited_numerical_match`) re-enter the audit queue only through their own
+note or paired-runner hash drift, an upstream `deps_changed` invalidation, or
+a dispatcher-sidecar re-audit target. Dependent-side edits never reschedule
+the stuck row. When a branch's stated purpose is repairing such a row (the PR
+title/body names the row or quotes its audit repair target):
+
+1. Verify the stuck row itself will requeue: its note or paired runner
+   changes on the branch, or the branch ships dispatcher-sidecar targeting
+   metadata naming the row.
+2. If the audit-named repair is dependent-side only (for example, narrowing
+   dependents' citing sentences to the audited scope), add a dated
+   downstream-hygiene line to the stuck row's own note boundary as part of
+   the landing: a one-line source-side record of what changed downstream
+   (date + what was narrowed + PR number), with no grade or verdict
+   language. The hash drift re-enters the row into the ordinary queue and
+   the re-auditor (or second auditor) sees the recorded condition.
+3. Run the validation pipeline and confirm the row is queued or re-queued as
+   intended, then restore generated audit outputs per the
+   pipeline-output-stripped gate below.
+4. Repair-PR review checklist: the audit repair target is quoted verbatim
+   (from `verdict_rationale` / `notes_for_re_audit_if_any`) in the PR body;
+   a sibling-runner pin sweep was done before every note edit (grep
+   `scripts/` for runners pinning the edited sentences); no authored grade
+   language anywhere; no `docs/audit/data/` content beyond
+   dispatcher-sidecar targeting metadata.
 
 7. **Pipeline-output-stripped PASS gate (hard).** After running the pipeline
    for validation, the framework PR must NOT land any pipeline-regenerated

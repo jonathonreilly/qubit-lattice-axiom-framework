@@ -6,6 +6,7 @@ stretch attempts (cycles 5, 9, 11 of audit-backlog-campaign-20260502)
 into a unified cluster obstruction. Per skill workflow #6 route type
 "no-go/obstruction": collapse a tempting route family into reusable
 negative evidence.
+**Type:** no_go
 **Primary runner:** `scripts/frontier_lattice_physical_matching_cluster_obstruction.py`
 **Authority role:** cluster no-go theorem identifying the Nature-grade
 target shared across multiple lanes.
@@ -20,7 +21,7 @@ The following three residuals share an identical structural obstruction:
 |---|---|---|---|
 | 5 | `R_conn = (N_c² − 1)/N_c² = 8/9` exact at finite N_c | yt_ew matching rule M | [`YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md`](YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md) / [#260](https://github.com/jonathonreilly/cl3-lattice-framework/pull/260) |
 | 9 | `⟨P⟩_full = R_O(β_eff)` exact bridge | gauge-scalar observable bridge | [`GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md`](GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md) / [#268](https://github.com/jonathonreilly/cl3-lattice-framework/pull/268) |
-| 11 | `lattice curvature ↔ (m_H/v)²` exact bridge | Higgs mass from axiom | [`HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md`](HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md) / [#271](https://github.com/jonathonreilly/cl3-lattice-framework/pull/271) |
+| 11 | `lattice curvature ↔ (m_H/v)²` exact bridge | Higgs mass from axiom | [`HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md`](HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md) (status-correction record only: diagnostic `m_curv_tree` demotion with the Higgs-pole bridge open; not itself a no-go authority) / [#271](https://github.com/jonathonreilly/cl3-lattice-framework/pull/271) |
 
 Each requires a **lattice/operator-level → physical/observable-level
 matching theorem** that cannot be derived from minimal repo primitives

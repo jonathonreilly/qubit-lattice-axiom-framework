@@ -66,7 +66,7 @@ LOG_CHECKS = {
         "SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE=TRUE",
     ],
     "logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt": [
-        "SUMMARY: PASS=32 FAIL=0",
+        "SUMMARY: PASS=36 FAIL=0",
         "SELECTION_RULE_TARGET_VECTOR_FIREWALL=TRUE",
     ],
     "logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt": [

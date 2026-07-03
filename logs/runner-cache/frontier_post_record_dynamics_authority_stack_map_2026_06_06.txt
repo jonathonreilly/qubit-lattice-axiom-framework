@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py
-runner_sha256: f5609cd17be31f1513ffc6ef4328e0fddb3869e4223796ae2db052abc9a00779
+runner_sha256: 0e676f6cfbe05acadb8c4e7fc420cdac2734e878f4a9473de50e51ffc9b023d9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.16
 status: ok
 ----- stdout -----
 
@@ -47,7 +47,7 @@ PASS logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_inter
 PASS logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt contains: SUMMARY: PASS=39 FAIL=0
 PASS logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt contains: SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE=TRUE
 PASS logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt exists
-PASS logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt contains: SUMMARY: PASS=32 FAIL=0
+PASS logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt contains: SUMMARY: PASS=36 FAIL=0
 PASS logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt contains: SELECTION_RULE_TARGET_VECTOR_FIREWALL=TRUE
 PASS logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt exists
 PASS logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt contains: SUMMARY: PASS=30 FAIL=0

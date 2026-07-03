@@ -12,8 +12,12 @@ Checks:
   D. The tested eta/Berry routes do not output bare 2/9 for these finite objects.
   E. (N^2-1)/(12N) and (N-1)/N^2 coincide at N=3 only.
 """
+from pathlib import Path
+
 import numpy as np
 import sympy as sp
+
+from lepton_brannen_boundary_checks_2026_06_13 import run_delta_boundary_checks
 
 PASSES = []
 def record(name, ok, detail=""):
@@ -122,6 +126,10 @@ record("they coincide ONLY at N=3 (both = 2/9); diverge at N=2,4,5",
        sp.solve(sp.Eq(fam1,fam2),Nn) and abs(float(fam1.subs(Nn,3))-2/9)<1e-12 and abs(float(fam2.subs(Nn,3))-2/9)<1e-12
        and abs(float(fam1.subs(Nn,5))-float(fam2.subs(Nn,5)))>1e-6,
        f"N=5: (N^2-1)/12N={float(fam1.subs(Nn,5)):.4f} vs (N-1)/N^2={float(fam2.subs(Nn,5)):.4f}")
+
+root = Path(__file__).resolve().parents[1]
+for ok in run_delta_boundary_checks(root, lambda n, c, d="": (record(n, c, d) or c), "downstream delta boundary"):
+    pass
 
 # ----------------------------------------------------------------------
 section("RESULT")

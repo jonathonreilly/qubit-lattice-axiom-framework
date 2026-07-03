@@ -167,7 +167,7 @@ def main() -> int:
     labels = list(PLATEAU_LABELS)
 
     with contextlib.redirect_stdout(io.StringIO()):
-        x_ext, y_ext, delta_ext, _packet_ext, etas_ext = cand.part2_transport_extremality_selects_a_positive_off_seed_candidate()
+        x_ext, y_ext, delta_ext, _packet_ext, etas_ext = cand.part2_transport_search_finds_an_off_seed_overshoot_witness()
     global_extremal = float(np.max(etas_ext))
 
     print("\n" + "=" * 88)

@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 849 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
-| Unaudited rows | 1965 |
+| Unaudited rows | 1964 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 25 |
 | Audited renaming rows | 19 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
+- [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; audit_in_progress
 - [`staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md) - critical; unaudited
 - [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
 - [`ew_current_matching_rule_open_gate_note_2026-05-03`](../../docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md) - critical; unaudited

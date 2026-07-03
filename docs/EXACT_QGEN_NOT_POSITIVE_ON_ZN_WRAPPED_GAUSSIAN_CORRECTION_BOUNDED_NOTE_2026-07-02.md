@@ -3,14 +3,12 @@
 **Date:** 2026-07-02  
 **Type:** bounded theorem (positivity lemma + exact incompatibility + certified corrections)  
 **Claim type:** bounded_theorem  
-**Status:** source proposal / bounded-theorem artifact. This note does not set
-an audit outcome, derive a Record bridge, or select an action.  
 **Status authority:** independent audit lane only. This source note does not set
-or predict an audit outcome.  
+or predict an audit outcome, derive a Record bridge, or select an action.
 **Paired runner:**
 [`scripts/frontier_exact_qgen_wrapped_gaussian_correction_2026_07_02.py`](../scripts/frontier_exact_qgen_wrapped_gaussian_correction_2026_07_02.py)  
 **Cached output:**
-[`outputs/frontier_exact_qgen_wrapped_gaussian_correction_2026_07_02.txt`](../outputs/frontier_exact_qgen_wrapped_gaussian_correction_2026_07_02.txt)
+[`logs/runner-cache/frontier_exact_qgen_wrapped_gaussian_correction_2026_07_02.txt`](../logs/runner-cache/frontier_exact_qgen_wrapped_gaussian_correction_2026_07_02.txt)
 
 ## Purpose
 
@@ -283,12 +281,13 @@ it does not select a horn.
 - Block10 sibling:
   [`SINGLE_STEP_LOCALITY_EXCLUDES_QUADRATIC_GENERATOR_BOUNDED_NOTE_2026-07-02.md`](SINGLE_STEP_LOCALITY_EXCLUDES_QUADRATIC_GENERATOR_BOUNDED_NOTE_2026-07-02.md).
   Role: supplies the exact finite full-step matching data and the signed-weight
-  obstruction for tested `Z_N`. This sibling is stacked and unaudited.
+  obstruction for tested `Z_N`. Independent audit owns its verdict and any
+  retained-grade dependency closure.
 - Block09 sibling:
   [`SEMIGROUP_CLOSURE_DOES_NOT_FORCE_HEAT_KERNEL_QUADRATIC_CONDITION_BOUNDED_NOTE_2026-07-02.md`](SEMIGROUP_CLOSURE_DOES_NOT_FORCE_HEAT_KERNEL_QUADRATIC_CONDITION_BOUNDED_NOTE_2026-07-02.md).
   Role: supplies the broad semigroup class `c_n(t)=exp(-t psi(n))` and the
-  correction that semigroup closure alone does not force exact `Q-gen`. This
-  sibling is stacked and unaudited.
+  correction that semigroup closure alone does not force exact `Q-gen`.
+  Independent audit owns its verdict and any retained-grade dependency closure.
 
 ## Paired runner
 

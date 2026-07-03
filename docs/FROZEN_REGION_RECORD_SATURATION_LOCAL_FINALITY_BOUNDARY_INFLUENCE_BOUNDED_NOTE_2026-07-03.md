@@ -9,16 +9,18 @@ promoted, ruled, or admitted as a premise by this note.
 **No-verdict:** the note states bounded/narrow theorem content and its residues
 only; it issues no audit verdict and predicts none.
 **Runner:** `scripts/frontier_frozen_region_saturation_finality_2026_07_03.py`
-**Runner output:** `outputs/frontier_frozen_region_saturation_finality_2026_07_03.txt` (exact-arithmetic; int/tuple/set only; 27/27 per-check PASS; nonzero exit on any FAIL)
+**Runner output:** `outputs/frontier_frozen_region_saturation_finality_2026_07_03.txt` (exact-arithmetic; int/tuple/set/frozenset only; 33/33 per-check PASS; nonzero exit on any FAIL)
 
 ## Firewall (read first)
 
-- **Conditional on PR #4874.** Permanence-dependent content (T1, T2, and the
-  permanence half of T3) is grounded CONDITIONALLY on the in-flight,
-  owner-approved (2026-07-03) PR #4874, which replaces the Record clause "the
-  locked possibility is invariant under repeated readout" with "records are
-  permanent." Without #4874 these theorems revert to readout-invariance only.
-  Supervisor-supplied.
+- **Conditional on PR #4874.** Permanence-dependent content is grounded
+  CONDITIONALLY on the in-flight, owner-approved (2026-07-03) PR #4874, which
+  replaces the Record clause "the locked possibility is invariant under repeated
+  readout" with "records are permanent." Permanence yields DOMAIN MONOTONICITY
+  (reading-free), which is the primary lever for T2's halting and T4's
+  finite-lattice bound; T1's no-removal/no-alteration bars and T3's monotone
+  containment also rest on it. Without #4874 these revert to readout-invariance
+  only. Supervisor-supplied.
 - **Interpretive labels are readings, not claims.** "Frozen star",
   "black-hole-like", and "local time ended" are an owner interpretive READING of
   the record-level phenomenon; they are not asserted as results.
@@ -31,6 +33,17 @@ only; it issues no audit verdict and predicts none.
   contingent realized data, not law (vacuum-solution analogy); every theorem
   conditions on the realized sector explicitly, and the empty and saturated
   worlds are equally legal solutions.
+- **Model postulate M1's content is now in-flight axiom text.** After this
+  note was drafted, the owner extended PR #4874 with a second restored
+  clause: the Record axiom's first sentence becomes "A site never carries
+  more than one record." (owner-approved 2026-07-03). On #4874 landing, M1
+  upgrades from a named note-level reading to axiom text and the M1-based
+  results lose their reading residue. Until then, M1 stands as stated
+  below. The site-functional
+  one-record-per-site set reading (below) is a note-level MODEL POSTULATE that
+  closes what the axiom leaves open; it is load-bearing only for the set-level
+  statements (T1's `4^8` enumeration, T4's distinct-record tail) and is flagged
+  as residue.
 - **Nothing adopted.** The event-ordering and static-world admissibility are
   REBUILT from scratch as small exact constructions; the review-pending sibling
   (PR #4873, branch-only) is cited by number only and was not read. The audit
@@ -41,31 +54,39 @@ only; it issues no audit verdict and predicts none.
 State, at note level with exact finite witnesses, four bounded/narrow theorems
 about record-saturated regions of `Z^3`: (T1) a saturated region is locally
 final; (T2) its local record-time halts while events continue outside; (T3) it
-exerts a permanent possibility-level boundary constraint without any dynamical
-claim; (T4) global saturation is unreachable at any finite stage in the named
-finitary realized sector, so the infinite lattice is load-bearing for unbounded
-record-time. T5 gives the consequence map and the complete residue set.
+exerts a MONOTONE possibility-level boundary constraint (containment in general,
+exact singleton pinning for cavity sites) within the note-level model, without
+any dynamical claim; (T4) global saturation is unreachable at any finite stage in
+the named finitary realized sector, so the infinite lattice is load-bearing for
+unbounded record-time. T5 gives the consequence map and the complete residue set.
+The halting content (T2, T4's finite bound) is derived reading-free from domain
+monotonicity; the record-SET content (T1's set-constancy, T4's distinct-record
+tail) additionally uses model postulate M1.
 
 ## Supplied surface (quotes)
 
 Axiom sentences quoted verbatim from `docs/MINIMAL_AXIOMS_2026-06-29.md` (this
 worktree copy carries the PRE-restoration Record wording; runner quote guards
-match this file at checks 1-3):
+match this file at checks 1-5):
 
 - Record: "When present, a record locks exactly one local possibility from the
   subset available at that site under Admissibility; the locked possibility is
   invariant under repeated readout."
 - Record (readout): "For any finite collection of pairwise-disjoint records,
-  scalar readout `I` is additive, with `I(empty)=0`."
+  scalar readout `I` is additive, with `I(empty)=0`." (Honesty: quantifying over
+  "pairwise-disjoint records" CONTEMPLATES non-disjoint, same-site records as a
+  live axiom-level possibility and merely WITHHOLDS additivity from them; it does
+  not bar them. Model postulate M1 elects the site-functional reading.)
 - Admissibility: "For each site, the available possibilities are determined by,
   and vary with, the nearest-neighbor conditions" under "one fixed
   nearest-neighbor admissibility rule, covariant under lattice translations and
   proper cubic rotations."
 - Lattice: "Physical sites are the points of the cubic lattice `Z^3`, with
-  nearest-neighbor adjacency, standard translations, and proper cubic rotations."
+  nearest-neighbor adjacency, standard translations, and proper cubic rotations
+  about each site."
 - Qualification: "A state is a configuration of records."
 
-Supervisor-supplied surface (not read from repo files; used as stated): PR #4874
+Supervisor-supplied surface (not read from repo files; used as stated): PR #4874 (TWO restored clauses: "records are permanent." and "A site never carries more than one record.")
 (in-flight) makes the Record clause "records are permanent", readout-invariance
 becoming a derived lemma. Owner ruling: non-triviality is contingent realized
 data, not law (vacuum-solution analogy); theorems condition on the realized
@@ -79,109 +100,183 @@ black-hole-like" -- fully written reality, local time ended.
 Note-level model (exactness firewall). A locked value is modelled by a scalar tag
 in `{+1,-1}` -- the note-level image of the Record locking clause, NOT a claim
 about the full one-site `M_2(C)` domain. A configuration is a partial map
-site -> locked value; under permanence (#4874) plus "A state is a configuration
-of records" a realized history has nested record sets with agreeing values, and
-an EVENT at stage `t` is a new registration (`dom(C_t) \ dom(C_{t-1})`). The
-availability model is `available_at(s) = { locked values of records on nearest
-neighbors of s }` if nonempty, else `{+1,-1}`.
+site -> locked value. The availability model is `available_at(s) = { locked
+values of records on nearest neighbors of s }` if nonempty, else `{+1,-1}`.
 
-## T1 -- Saturation implies local finality (bounded, conditional) [checks 4-9]
+Domain monotonicity (permanence-derived, reading-free). Under permanence
+("records are permanent.") plus "A state is a configuration of records", a
+realized history has record sets nested with agreeing values, so the
+recorded-site domain grows monotonically: `dom(C_{t-1})` is a subset of
+`dom(C_t)`. A FIRST-REGISTRATION (dom-event) at stage `t` is a site in
+`dom(C_t) \ dom(C_{t-1})`. Monotonicity is the primary lever for T2's halting and
+T4's finite-lattice bound; it needs no reading beyond permanence.
+
+Model postulate M1 (a named note-level reading). Reading "A state is a
+configuration of records" together with the singular "a record locks exactly one
+local possibility" phrasing, this note models a state as a site-functional SET of
+records, each individuated as a pair `(site, value)`, with at most one record per
+site. A same-value re-registration at an already-recorded site is the SAME set
+element -- a non-event by IDENTITY, not by prohibition. M1 CLOSES what the axiom
+leaves open: "locks exactly one local possibility" quantifies possibilities per
+record, NOT records per site; permanence bars removal and alteration but NOT the
+ADDITION of a second record; and the readout clause's "pairwise-disjoint records"
+contemplates non-disjoint (same-site) records and merely withholds additivity
+from them. M1 elects the site-functional individuation. M1 is load-bearing ONLY
+where flagged: T1's set-constancy `4^8` enumeration and T4's distinct-record
+pigeonhole tail. Event layering: a same-value re-registration is a non-event
+under BOTH the dom-based definition (no domain growth) and the M1 set definition
+(same element); the two event notions agree on same-value re-registration and
+differ only on the overlapping/multi-valued case the axiom withholds and M1
+elects away.
+
+## T1 -- Saturation implies local finality (bounded, conditional) [checks 6-12]
 
 A region `R` is record-saturated in `C` iff every site of `R` carries a record.
-Since a record "locks exactly one local possibility" per site (quoted) and
-permanence bars removal or alteration, no site of `R` can host a new registration
-in any later configuration of a realized history: the `R`-restriction is constant
-from the first saturated stage. Exact witnesses -- the `2x2x2` (8-site) and
-`3x3x3` (27-site) windows, one record per site -- each yield zero registrable
-sites [checks 4-5]. Constancy is FORCED, by exact enumeration over all `4^8`
-candidate later `R`-restrictions on the `2x2x2` window: each per-site candidate is
-a removal, a value change, or a second record; permanence bars the first two and
-"locks exactly one" bars the third, so exactly one candidate survives and it
-equals `C|R` [check 6]; the three barred kinds are each independently rejected
-[check 7]. Global corollary: a globally saturated all-`(+1)` configuration is
-admissible -- every locked value lies in its neighbor-determined availability set,
-and readout is additive over disjoint sub-collections with `readout(empty)=0`
-[check 8]; the check has teeth, since flipping one interior site to `-1` amid `+1`
-neighbors makes the configuration non-admissible [check 9]. Per the owner ruling,
-the static globally saturated world is a legal solution (final and physical, like
-a vacuum solution), not a defect.
+Both exact windows -- the `2x2x2` (8-site) and `3x3x3` (27-site), one record per
+site -- have zero registrable sites [checks 6-7].
 
-## T2 -- Local record-time stops (bounded, conditional) [checks 10-15]
+Primary statement (dom-based, reading-free). Permanence makes the recorded-site
+domain monotone. Once `R` is saturated, `R` is a subset of `dom(C_t)` at every
+later stage, so no first-registration (dom-event) can ever occur in `R` again --
+the `R`-restriction of the domain is final. This needs NO per-site uniqueness
+[check 8].
 
-Record-inclusion event-ordering (rebuilt, three lines): permanence plus "A state
-is a configuration of records" gives nested record sets along any realized
-history; locked values agree on the smaller domain; an EVENT at stage `t` is a
-new registration. Inside a saturated region the restricted record set is
-constant, so its event count halts -- local record-time in `R` ends -- while
-events continue on the unsaturated complement. Exact witness history (4 stages on
-a 16-site window; `R` = the `2x2x2` block): record sets are nested with agreeing
-values [check 10]; `R` is unsaturated at stage 1, saturated at stage 2, so a
-frozen region is produced [check 11]; per-stage in-`R` event counts are
-`(4,4,0,0)` [check 12] while outside-`R` counts are `(0,0,2,2)` [check 13]; the
-record set in `R` is constant at 8 for stages 2,3,4 [check 14]; the outside count
-strictly increases at stages 3 and 4 while `R` is frozen [check 15]. Frontier
-picture (count-level only): record-time flows exactly where unwritten possibility
-remains.
+Stronger statement (model-relative, uses M1). That the record SET on `R` is
+constant is proven by exact enumeration over the `4^8` MODEL-RELATIVE candidate
+later `R`-restrictions on the `2x2x2` window. The four-symbol per-site alphabet
+`{absent, +1, -1, double}` is itself a modeling device: `absent` is removal and
+each of `+1,-1` a possible locked value, while `double` -- a second, DISTINCT
+record at an already-recorded site -- is inexpressible inside the partial-map
+model and only multi-valued outside it. Permanence bars removal and alteration;
+the `double` candidate is barred by model postulate M1 (site-functional set, at
+most one record per site), NOT by "locks exactly one" (which quantifies
+possibilities per record). Exactly one candidate survives and it equals `C|R`
+[check 9]; the three barred kinds are each independently rejected [check 10].
 
-## T3 -- Boundary influence without evolution (bounded) [checks 16-21]
+Global corollary (rule-dependent, within the note-level model). A globally
+saturated all-`(+1)` configuration is admissible against the EXHIBITED
+availability rule -- every locked value lies in its neighbor-determined
+availability set -- and readout is additive over disjoint sub-collections with
+`readout(empty)=0` [check 11]; the check has teeth, since flipping one CORNER
+site (the `2x2x2` block has no interior site) to `-1` amid `+1` neighbors makes
+the configuration non-admissible [check 12]. Both verdicts are decided by the
+exhibited covariant rule, not by axiom text: a different covariant admissibility
+rule could reverse them (rule-dependence residue, extended to T1). Per the owner
+ruling, the static globally saturated world is a legal solution (final and
+physical, like a vacuum solution), not a defect.
 
-Under the covariant neighbor-dependent availability rule (rebuilt exactly), a
-saturated region's records permanently constrain the available possibilities at
-adjacent OUTSIDE sites. Exact witness: an outside site adjacent to the saturated
-block, all of whose in-`R` neighbors record `+1`, has availability `{+1}` at every
-stage [check 16], while a far site retains `{+1,-1}` [check 17]. The pin is
-PERMANENT: the in-`R` neighbor record is constant along the history, so
-availability never relaxes [check 18]. The influence is possibility-level, not a
-force: the boundary site stays registrable (unrecorded) at every stage while its
-availability is pinned [check 19] -- no record is placed on it, no evolution is
-asserted. The rule is covariant under lattice translation [check 20] and under a
-proper cubic rotation [check 21], matching the Admissibility clause.
+## T2 -- Local record-time stops (bounded, conditional) [checks 13-19]
+
+Primary statement (dom-based, reading-free). Permanence plus "A state is a
+configuration of records" makes the recorded-site domain monotone along any
+realized history; a first-registration (dom-event) at stage `t` is a site in
+`dom(C_t) \ dom(C_{t-1})`. Once `R` is saturated, `R` is a subset of `dom(C_t)`
+forever, so its in-`R` first-registration count halts -- local record-time in `R`
+ends -- while first-registrations continue on the unsaturated complement. NO
+per-site uniqueness is used.
+
+Exact witness history (4 stages on a 16-site window; `R` = the `2x2x2` block):
+record sets are nested with agreeing values so the domain is monotone [check 13];
+`R` is unsaturated at stage 1, saturated at stage 2, so a frozen region is
+produced [check 14]; per-stage in-`R` first-registration counts are `(4,4,0,0)`
+[check 15] while outside-`R` counts are `(0,0,2,2)` [check 16]; the recorded-site
+count in `R` is constant at 8 for stages 2,3,4 [check 17]; the outside count
+strictly increases at stages 3 and 4 while `R` is frozen [check 18].
+
+Event-definition layering (explicit). A same-value re-registration at an
+already-recorded site is a NON-EVENT under BOTH definitions: it does not enlarge
+the domain (dom-based), and it is the same `(site,value)` element (M1 set)
+[check 19]. Frontier picture (count-level only): record-time flows exactly where
+unwritten possibility remains.
+
+## T3 -- Boundary influence without evolution (bounded) [checks 20-26]
+
+General statement (monotone containment, within the note-level model). Under the
+exhibited covariant neighbor-dependent availability rule, permanence makes the
+recorded-neighbor value set at any site monotonically nondecreasing: once the
+frozen region's value is available at a neighbor site (some recorded neighbor
+carries it), it remains available FOREVER. Exact witness: a boundary site adjacent
+to the saturated `2x2x2` block, whose in-`R` neighbor records `+1`, has `+1`
+available at every stage and its recorded-neighbor value set never loses `+1`
+[check 20]. A far site with no recorded neighbors retains `{+1,-1}` at every stage
+[check 23].
+
+The singleton pin is NOT permanent for a boundary site. A later ADMISSIBLE `-1`
+record on a DIFFERENT neighbor of the boundary site relaxes its availability from
+`{+1}` to `{+1,-1}` -- monotone containment of `+1` still holds, but the
+singleton is broken [check 21]. Full singleton pinning holds EXACTLY for CAVITY
+sites: a site all six of whose neighbors lie inside the saturated region has
+availability `{+1}` at every stage regardless of any outside events (its neighbor
+set is complete and permanent) -- checked on a `3x3x3` saturated shell with a
+hollow (unrecorded) center [check 22].
+
+The influence is possibility-level, not a force: the boundary and cavity sites
+stay registrable (unrecorded) at every stage while their availability is
+constrained [check 24] -- no record is placed on them, no evolution is asserted.
+The rule is covariant under lattice translation [check 25] and under a proper
+cubic rotation [check 26], matching the Admissibility clause.
 
 Honesty scope. The availability rule is a NOTE-LEVEL model of the Admissibility
 clause "determined by, and vary with, the nearest-neighbor conditions"; the axiom
-fixes the clause, not the specific rule. The proven content is the exact pinning
-for the EXHIBITED covariant rule. The general statement -- that ANY rule with
-determined-by + vary-with + covariance carries SOME permanent boundary constraint
-from a saturated neighborhood -- is stated as the named conditional and flagged as
-rule-dependence residue, not claimed here.
+fixes the clause, not the specific rule. The proven content is: monotone
+containment in general, exact singleton pinning for cavity sites, and
+witness-level pinning otherwise, all for the EXHIBITED covariant rule. The general
+statement -- that ANY rule with determined-by + vary-with + covariance carries
+SOME permanent boundary constraint from a saturated neighborhood -- is the named
+conditional and is flagged as rule-dependence residue, not claimed here.
 
-## T4 -- Global saturation unreachable at finite stage (narrow, scoped) [checks 22-27]
+## T4 -- Global saturation unreachable at finite stage (narrow, scoped) [checks 27-33]
 
 Scope (named realized-sector class): histories with finite initial record support
 and finitely many registrations per step. Then the recorded set is finite at every
-finite stage [check 22], because a finite union of finite sets is finite
-[check 23]. Since `Z^3` minus a finite set is infinite, unrecorded sites remain
+finite stage [check 27], because a finite union of finite sets is finite
+[check 28]. Since `Z^3` minus a finite set is infinite, unrecorded sites remain
 without bound: the unrecorded count in the `(2k+1)^3` window strictly increases as
-`(25,122,339)` for `k=1,2,3` [check 24], and an explicit unrecorded witness
+`(25,122,339)` for `k=1,2,3` [check 29], and an explicit unrecorded witness
 `(M+1,0,0)` sits outside the recorded bounding window at any finite stage
-[check 25]. So global saturation is never reached at any finite stage; it is at
-most a limit notion. Owner structural remark, checked: on any FINITE lattice of
-`N` sites a one-record-per-stage history saturates in exactly `N` stages with zero
-registrable sites afterward [check 26], and by pigeonhole no `(N+1)`-th distinct
-registration is possible [check 27]. Unbounded record-time therefore requires the
-infinite `Z^3` of the Lattice axiom -- it is load-bearing. Consequence: the frozen
-WORLD is admissible as an initial/boundary datum but is not producible from sparse
-beginnings in finite record-time; frozen REGIONS are producible (T2 produced one).
+[check 30]. So global saturation is never reached at any finite stage; it is at
+most a limit notion.
+
+Finite-lattice bound. Primary statement (dom-based, reading-free): on an `N`-site
+lattice the domain is monotone and bounded by `N`, so a saturating history has
+exactly `N` first-registrations and every attempted `(N+1)`-th registration
+yields zero domain growth (a forced non-event) [check 31]. A one-record-per-stage
+history saturates in exactly `N` stages with zero registrable sites afterward
+[check 32]. Stronger statement (model-relative, uses M1): under M1's
+site-functional `(site,value)` individuation the saturated lattice carries
+exactly `N` distinct record elements and a same-value re-registration adds none,
+so no `(N+1)`-th DISTINCT record exists (the pigeonhole tail) [check 33].
+Unbounded record-time therefore requires the infinite `Z^3` of the Lattice axiom
+-- it is load-bearing. Consequence: the frozen WORLD is admissible as an
+initial/boundary datum but is not producible from sparse beginnings in finite
+record-time; frozen REGIONS are producible (T2 produced one).
 
 ## T5 -- Consequence map and complete residues
 
 Consequence map. A record-saturated region is locally final (T1), its local
 record-time is halted (T2), and it constrains its boundary at the possibility
-level without evolving (T3); any finite frozen region is producible, while the
-globally frozen world is only a limit / datum in the finitary sector (T4). The
+level -- monotone containment in general, singleton pinning for cavity sites --
+without evolving (T3); any finite frozen region is producible, while the globally
+frozen world is only a limit / datum in the finitary sector (T4). The
 "frozen-star / black-hole-like" label is the owner interpretive READING of this
 record-level picture and carries no GR content.
 
 Complete residues (this campaign's #1 refutation failure mode is a dropped
 residue, so the set is stated in full):
 
-1. **PR #4874 in-flight** -- permanence is the premise for T1, T2, and the
-   permanence half of T3; all are conditional on #4874 landing.
+1. **PR #4874 in-flight** -- permanence ("records are permanent.") is the premise
+   for the DOMAIN MONOTONICITY that grounds T2's halting and T4's finite-lattice
+   bound, for T1's no-removal/no-alteration bars, and for the monotone-containment
+   half of T3; all are conditional on #4874 landing. Domain monotonicity itself
+   is permanence-derived (reading-free) and is the load-bearing permanence
+   consequence after the dom-based rederivation.
 2. **Realized-sector / finitary scoping of T4** -- finite initial support plus
    finitely many registrations per step is a named scope, not a universal claim.
 3. **Availability-rule dependence of T3** -- the axiom fixes the clause
    "determined by, and vary with, the nearest-neighbor conditions", not the
-   specific rule; the exhibited rule is a note-level model.
+   specific rule; the exhibited union-over-recorded-neighbors rule is a note-level
+   model, and the monotone-containment / cavity-singleton split is a property of
+   THIS rule.
 4. **No rate / metric / clock content** anywhere; the landed count-not-rate
    firewalls are cited as review-pending / unaudited post-reset.
 5. **Event-ordering matches the review-pending sibling** PR #4873 (branch-only,
@@ -190,32 +285,45 @@ residue, so the set is stated in full):
 7. **Nothing adopted**; the static world's admissibility is the sibling's result
    rebuilt as an exact witness, not new content.
 8. **Audit lane owns all statuses**; this note sets and predicts none.
+9. **Model postulate M1 (site-functional set reading; upgrades to axiom text on #4874 landing via the restored first sentence "A site never carries more than one record.")** -- the note-level reading
+   individuating records as `(site,value)` with at most one per site, closing the
+   axiom's withheld overlapping/multi-valued case. Load-bearing for T1's
+   set-constancy `4^8` enumeration and T4's distinct-record pigeonhole tail; NOT
+   used for the dom-based halting content.
+10. **Rule-dependence of T1's corollary** -- the all-`(+1)` admissibility verdict
+    and the `-1`-flip control are decided by the exhibited covariant rule, not by
+    axiom text; a different covariant rule could reverse both.
 
 ## Consequence
 
 Conditional on #4874 and within the note-level model, record saturation is the
 end of local registration: a region becomes final (T1), its local event count
-halts (T2), and it pins its boundary's available possibilities permanently yet
-possibility-level, never a force or evolution law (T3). Globally the finitary
-realized sector cannot saturate in finite record-time, so the infinite lattice
-supports unbounded record-time (T4).
+halts (T2), and it constrains its boundary's available possibilities -- monotone
+containment in general, singleton only for cavity sites -- never a force or
+evolution law (T3). Globally the finitary realized sector cannot saturate in
+finite record-time, so the infinite lattice supports unbounded record-time (T4).
 
 ## Does NOT
 
 This note does not assert GR content, rate, duration, metric, or clock; does not
 choose a dynamics, Hamiltonian, transition rule, or record-production process;
-does not fix the admissibility rule beyond the quoted clause; does not claim the
-globally frozen world is produced (only that it is an admissible datum); does not
-adopt, promote, or rule; and does not read the review-pending sibling or predict
-any audit outcome.
+does not fix the admissibility rule beyond the quoted clause; does not claim
+general (non-cavity) singleton boundary pinning -- only monotone containment;
+does not claim the globally frozen world is produced (only that it is an
+admissible datum); does not adopt, promote, or rule; and does not read the
+review-pending sibling or predict any audit outcome.
 
 ## Dependencies
 
-Lattice, Qubit, Admissibility, Record axioms (`docs/MINIMAL_AXIOMS_2026-06-29.md`,
-quoted at checks 1-3); the permanence clause of PR #4874 (in-flight); the
-supervisor-supplied covariant availability model and owner realized-sector ruling.
-The event-ordering and static-world admissibility overlap the review-pending
-sibling PR #4873 (cited, not read).
+Lattice, Qubit, Admissibility, Record axioms (`docs/MINIMAL_AXIOMS_2026-06-29.md`);
+quote guards at checks 1-5 cover the Record locking sentence, the Admissibility
+clause, "A state is a configuration of records." (M1's named basis), the Lattice
+sentence, and the Record readout-additivity sentence -- Qubit is cited but is not
+separately quote-guarded. Further premises: the permanence clause of PR #4874
+(in-flight); domain monotonicity (permanence-derived); model postulate M1 (a
+note-level reading, residue 9); the supervisor-supplied covariant availability
+model and owner realized-sector ruling. The event-ordering and static-world
+admissibility overlap the review-pending sibling PR #4873 (cited, not read).
 
 ## No-Promotion
 
@@ -226,9 +334,10 @@ and lands nothing.
 
 ## Summary (<=10 lines)
 
-- T1: a saturated region is locally final; its `R`-restriction is forced constant by permanence + locks-exactly-one (exact `4^8` enumeration).
-- T2: local record-time halts inside a saturated region while events continue outside (exact 4-stage witness; in-`R` counts `(4,4,0,0)`).
-- T3: a saturated region permanently and covariantly pins its boundary's availability, with no force or evolution claim.
+- Layering: the halting content is dom-based and reading-free -- permanence makes the recorded-site domain monotone, so first-registrations in a saturated region halt (T2) and an `N`-site lattice admits at most `N` first-registrations (T4).
+- Model postulate M1 (site-functional set of `(site,value)` records, at most one per site) is load-bearing ONLY for the set-level statements: T1's `4^8` set-constancy enumeration and T4's distinct-record pigeonhole tail.
+- T1: a saturated region is locally final (domain-level, reading-free); its record SET is forced constant under permanence + M1 (model-relative `4^8` enumeration).
+- T3 (corrected): the boundary constraint is MONOTONE CONTAINMENT in general (the region value stays available forever), exact SINGLETON pinning only for CAVITY sites (all six neighbors inside `R`); a boundary singleton RELAXES under an admissible `-1` on a different neighbor -- all within the note-level model.
 - T4: in the finitary realized sector, global saturation is unreachable at any finite stage; the infinite `Z^3` is load-bearing for unbounded record-time.
-- T5: frozen-star label is an owner reading (no GR content); residues 1-8 are stated in full.
-- Conditional on PR #4874; nothing adopted; audit lane owns all statuses; runner 27/27 exact checks PASS.
+- T5: frozen-star label is an owner reading (no GR content); residues now number 10 (adds M1 reading and T1-corollary rule-dependence).
+- Conditional on PR #4874; nothing adopted; audit lane owns all statuses; runner 33/33 exact checks PASS.

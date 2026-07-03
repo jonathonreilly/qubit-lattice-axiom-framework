@@ -1,0 +1,77 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_log_barrier_record_primitive_gate_2026_06_21.py
+runner_sha256: 19c705aea269f1340991af47c1a8127a5a5be90dda97587861db1a7b1d27f69b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Route-2 log-barrier Record primitive gate
+========================================================================================
+
+----------------------------------------------------------------------------------------
+1. Current-surface boundaries
+----------------------------------------------------------------------------------------
+PASS: Record explicitly supplies no readout context or weighting
+PASS: Record no-go says additivity does not derive the branch-to-scalar map
+PASS: observable parent keeps readout-identification as a declared boundary
+PASS: determinant-context bridge is conditional on a supplied context
+PASS: Route-2 exact readout note names beta_E/alpha_E=21/4 as missing
+PASS: S3 parent remains open on the readout-map endpoint triple
+PASS: Schur note names inverse-square channel lift as the exact gap
+PASS: E-center blindness note requires a genuine E-center lift or readout primitive
+
+----------------------------------------------------------------------------------------
+2. Pure log-barrier conditional arithmetic
+----------------------------------------------------------------------------------------
+w_E=1/3, w_T1=1/2
+pure log Hessian coefficients: C_E=9, C_T=4, lambda=9/4
+endpoint from pure log barrier: q_E=15/8, rho_E=21/4, c_TE=-8/9
+PASS: Route-2 channel weights are w_E=1/3 and w_T1=1/2
+PASS: pure log-barrier Hessian gives lambda=9/4
+PASS: pure log-barrier Hessian gives q_E=15/8
+       q_E=15/8
+PASS: pure log-barrier Hessian gives rho_E=21/4
+       rho_E=21/4
+PASS: pure log-barrier Hessian gives c_TE=-8/9
+       c_TE=-8/9
+
+----------------------------------------------------------------------------------------
+3. Additive counterterm countermodel
+----------------------------------------------------------------------------------------
+epsilon=1 counterterm coefficients: C_E=11, C_T=6, lambda=11/6
+endpoint from epsilon=1 countermodel: q_E=55/36, rho_E=19/6, c_TE=-12/11
+PASS: polynomial channel counterterm is additive over disjoint supplied channel records
+       left=61/144, right=61/144
+PASS: epsilon=0 is the pure log-barrier target
+PASS: epsilon=1 changes the Hessian ratio while preserving channel additivity
+       lambda_epsilon=11/6
+PASS: epsilon=1 does not return the target endpoint
+       q_E=55/36, rho_E=19/6, c_TE=-12/11
+PASS: determinant quotient is the kind of extra rule that excludes additive trace-like terms
+
+----------------------------------------------------------------------------------------
+4. Coordinate and readout gate
+----------------------------------------------------------------------------------------
+PASS: in the w coordinate d2(-log w)/dw2 gives the second-dual law
+PASS: in the log coordinate u=log w, d2(-u)/du2 is zero
+PASS: Hessian-to-readout therefore needs a coordinate/readout bridge
+       w-coordinate=9, log-coordinate=0
+
+----------------------------------------------------------------------------------------
+5. Current-bank verdict
+----------------------------------------------------------------------------------------
+PASS: checked current bank does not name a Route-2 log-barrier primitive
+PASS: checked current bank does not supply a Hessian-to-readout bridge phrase
+PASS: no observed endpoint value is used as a proof input
+PASS: current status is no-go for Record/log-det-alone derivation
+PASS: conditional target is now precise: determinant quotient plus w-Hessian E-center bridge
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+TOTAL: PASS=26, FAIL=0
+VERDICT: no-go / conditional support boundary. Pure log-barrier channel curvature would give the Route-2 endpoint exactly, but Record/log-det additivity alone does not force that primitive; it still needs a supplied channel determinant quotient and a w-coordinate Hessian-to-E-center readout bridge.
+
+----- stderr -----
+

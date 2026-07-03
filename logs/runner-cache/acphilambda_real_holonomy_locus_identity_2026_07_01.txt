@@ -1,0 +1,111 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_real_holonomy_locus_identity_2026_07_01.py
+runner_sha256: f7aaa8b39dd32f847f9a1062bde14cb23d87f1af89a98f56f96160c4402ec01e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+AC_phi_lambda real-holonomy locus identity runner
+========================================================================
+[PASS] paired note exists
+       docs/ACPHILAMBDA_REAL_HOLONOMY_LOCUS_IDENTITY_2026-07-01.md
+[PASS] paired runner exists
+       scripts/acphilambda_real_holonomy_locus_identity_2026_07_01.py
+[PASS] Brannen circulant source exists
+       docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
+[PASS] modulus no-go source exists
+       docs/KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md
+[PASS] custody-chain source exists
+       docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md
+[PASS] Tier-A registry data exists
+       docs/audit/data/tier_a_admissions.json
+[PASS] custody pins time-reversal-reality
+[PASS] custody pins b=c-bar definition
+[PASS] modulus pins stationary candidates
+[PASS] modulus pins degeneracy
+[PASS] registry pins K-real arg-det sentence
+[PASS] registry pins shared C3 object sentence
+[PASS] Brannen pins circulant form
+[PASS] Brannen pins coupling coordinates
+[PASS] omega is an exact primitive cube root
+[PASS] Lemma R power sum cos is zero
+[PASS] Lemma R power sum cos^2 is 3/2
+[PASS] Lemma R power sum cos^3 is (3/4)cos(3delta)
+[PASS] spectrum mean determines a
+[PASS] centered quadratic determines |b|
+[PASS] centered cubic determines cos(3delta)
+[PASS] cos(3delta) invariant under +2pi/3
+[PASS] cos(3delta) invariant under reflection
+[PASS] shift relabels the eigenvalue multiset
+[PASS] reflection relabels the eigenvalue multiset
+[PASS] wrong generic shift changes registrable content
+       -1 + cos(3/10)
+[PASS] b=1 has K-real phase delta=0
+[PASS] b=-2/5 has K-real phase delta=pi
+[PASS] delta=0 gives real holonomy +1
+[PASS] delta=pi gives real holonomy -1
+[PASS] all k/3 rational representatives are on-locus
+[PASS] off-grid dhat=1/4 rejects |cos(3pi*dhat)|=1
+[PASS] off-grid dhat=1/5 rejects |cos(3pi*dhat)|=1
+[PASS] off-grid dhat=5/12 rejects |cos(3pi*dhat)|=1
+[PASS] G-orbit of {0,1} equals all thirds
+       [Fraction(0, 1), Fraction(1, 3), Fraction(2, 3), Fraction(1, 1), Fraction(4, 3), Fraction(5, 3)]
+[PASS] G-orbit has six representatives
+[PASS] wrong-value rejector: 1/4 not in K-real orbit
+[PASS] wrong orbit from 1/4 misses all thirds
+       [Fraction(1, 4), Fraction(5, 12), Fraction(11, 12), Fraction(13, 12), Fraction(19, 12), Fraction(7, 4)]
+[PASS] L2 equals L3 on denominator-12 rational grid
+       [Fraction(0, 1), Fraction(1, 3), Fraction(2, 3), Fraction(1, 1), Fraction(4, 3), Fraction(5, 3)]
+[PASS] thirds set is closed under +2/3
+[PASS] thirds set is closed under reflection
+[PASS] physical delta is positive
+[PASS] physical delta lies below pi/3 exactly
+[PASS] physical delta is not k*pi/3 for |k|<=3
+       [True, True, True, True, True, True, True]
+[PASS] identity-unit holonomy is Phi=2/3
+[PASS] holonomy lies in the open interval (0,pi)
+[PASS] cos(2/3) is not +1
+[PASS] cos(2/3) is not -1
+[PASS] theta parallel beta=2 has arg(beta^3)=0
+[PASS] theta parallel beta=-3/7 has arg(beta^3)=pi
+[PASS] wrong-value rejector: delta=pi/3 is on-locus
+[PASS] wrong-value rejector distinguishes delta=2/9 from pi/3
+[PASS] note contains required phrase: any derivation of the charged-lepton phase value must supply K-reality-breaking registered content
+[PASS] note contains required phrase: real-holonomy locus
+[PASS] note contains required phrase: observation, not a derivation
+[PASS] note contains required phrase: not a terminal no-go
+[PASS] note contains required phrase: `W_cycle_holonomy_value`
+[PASS] note contains N1 gate
+[PASS] note contains N2 gate
+[PASS] note contains N3 gate
+[PASS] note contains N4 gate
+[PASS] note contains N5 gate
+[PASS] note contains N6 gate
+[PASS] note contains N7 gate
+[PASS] note contains N8 gate
+[PASS] note excludes forbidden phrase: only route
+[PASS] note excludes forbidden phrase: last route
+[PASS] note excludes forbidden phrase: exhausted
+[PASS] note excludes forbidden phrase: closes the route
+[PASS] note excludes forbidden phrase: PDG
+[PASS] note excludes forbidden phrase: theta is closed
+[PASS] note excludes forbidden phrase: r=1/2 is forced
+[PASS] note declares canonical bounded_theorem claim type
+[PASS] note does not use runner PASS as source status
+[PASS] note does not lean on PR #4783 as authority
+[PASS] dep link present as markdown label: docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
+[PASS] dep link present as markdown label: docs/KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md
+[PASS] dep link present as markdown label: docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md
+[PASS] only the three origin/main md files are linked
+       ['BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md', 'KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md', 'CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md']
+[PASS] in-flight context name appears: ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM
+[PASS] in-flight context name is not a markdown target: ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM
+[PASS] in-flight context name appears: ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION
+[PASS] in-flight context name is not a markdown target: ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION
+[PASS] primary runner is linked
+[PASS] status authority header is standard
+TOTAL: PASS=85 FAIL=0
+
+----- stderr -----
+

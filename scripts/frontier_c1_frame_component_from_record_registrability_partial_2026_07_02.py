@@ -69,15 +69,25 @@ def main() -> int:
 
     # T3: S3 is Y/spectral-data dependent and orbit-constant under imported bases.
     t = -2 + sp.Rational(3, 2) * sqrt2
+    Y3 = I3 + t * B3
     lam0 = 1 + 2 * t
     lam1 = 1 - t
     s3_relation = sp.simplify(lam0**2 - 2 * lam1**2)
     r_s3 = sp.simplify(t**2)
     check("T3 parent S3 spectral relation holds", s3_relation == 0)
     check("T3 S3 r equals 17/2 - 6*sqrt(2)", sp.simplify(r_s3 - (sp.Rational(17, 2) - 6 * sqrt2)) == 0)
-    spectral_multiset = sorted([sp.simplify(lam0**2), sp.simplify(lam1**2), sp.simplify(lam1**2)], key=str)
-    spectral_multiset_again = sorted([sp.simplify(lam0**2), sp.simplify(lam1**2), sp.simplify(lam1**2)], key=str)
-    check("T3 S3 value is unchanged by imported-basis relabeling", spectral_multiset == spectral_multiset_again)
+    r_from_trace = sp.simplify(
+        (sp.trace(Y3.T * Y3) - 3 * (sp.trace(Y3) / 3) ** 2)
+        / (6 * (sp.trace(Y3) / 3) ** 2)
+    )
+    check("T3 trace formula recovers S3 r", sp.simplify(r_from_trace - r_s3) == 0)
+    P3 = sp.Matrix([[0, 1, 0], [0, 0, 1], [1, 0, 0]])
+    Y3_rebased = sp.simplify(P3.T * Y3 * P3)
+    r_rebased = sp.simplify(
+        (sp.trace(Y3_rebased.T * Y3_rebased) - 3 * (sp.trace(Y3_rebased) / 3) ** 2)
+        / (6 * (sp.trace(Y3_rebased) / 3) ** 2)
+    )
+    check("T3 S3 trace value is unchanged by imported-basis relabeling", sp.simplify(r_rebased - r_from_trace) == 0)
 
     # T4: exact finite subgroup average collapses per-mode squares to total energy.
     generators = [H, Z]

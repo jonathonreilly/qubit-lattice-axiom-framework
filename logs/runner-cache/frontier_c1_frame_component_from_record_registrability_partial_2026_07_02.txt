@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_c1_frame_component_from_record_registrability_partial_2026_07_02.py
+runner_sha256: 304d63d92a616a1024295c7b44cfbd1cdd32f9d969b23596fb1c1a3838109407
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.31
+status: ok
+----- stdout -----
 PASS: T1 Hadamard sends (1,1) to (sqrt(2),0) -- Matrix([[sqrt(2)], [0]])
 PASS: T1 S2 verdict true in original imported basis
 PASS: T1 S2 verdict false in Hadamard imported basis
@@ -10,10 +18,14 @@ PASS: T2 Hadamard first mixed cell is not unit
 PASS: T2 Hadamard second mixed cell not HS-orthogonal to unit
 PASS: T3 parent S3 spectral relation holds
 PASS: T3 S3 r equals 17/2 - 6*sqrt(2)
-PASS: T3 S3 value is unchanged by imported-basis relabeling
+PASS: T3 trace formula recovers S3 r
+PASS: T3 S3 trace value is unchanged by imported-basis relabeling
 PASS: T4 Hadamard/sign subgroup has 16 elements -- 16
 PASS: T4 every subgroup element is orthogonal
 PASS: T4 averaged first per-mode square is invariant total/2
 PASS: T4 averaged second per-mode square is invariant total/2
 PASS: T4 averaged S2 split is equal by construction
-TOTAL: PASS=18 FAIL=0
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

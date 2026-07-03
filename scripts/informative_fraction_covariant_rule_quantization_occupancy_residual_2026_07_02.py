@@ -493,7 +493,7 @@ def run_source_boundary_guards():
         check(label, needle in text)
 
     preserve_markers = (
-        "set only by the independent audit lane",
+        "the independent audit lane owns all verdicts",
         "recorded-neighborhood baseline",
         "quantized",
         "k/64",

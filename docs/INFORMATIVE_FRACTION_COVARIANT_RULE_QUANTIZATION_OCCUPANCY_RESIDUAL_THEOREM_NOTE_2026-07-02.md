@@ -2,9 +2,9 @@
 
 **Date:** 2026-07-02
 
-**Claim type:** bounded_theorem
+**Type:** bounded_theorem
 
-**Audit status:** set only by the independent audit lane. This source note does not set, predict, or apply an audit verdict.
+**Audit boundary:** the independent audit lane owns all verdicts. This source note does not set, predict, or apply an audit verdict.
 
 **Primary runner:** [`scripts/informative_fraction_covariant_rule_quantization_occupancy_residual_2026_07_02.py`](../scripts/informative_fraction_covariant_rule_quantization_occupancy_residual_2026_07_02.py)
 
@@ -232,7 +232,7 @@ Section F source-boundary guards:
 - the axioms dependency must contain the no-weights phrase
 - the rigidity dependency must contain `no independent scalar-normalization freedom`
 - the semigroup dependency must contain `continuous Markov semigroups live on the probability/ensemble`
-- this note must preserve `set only by the independent audit lane`
+- this note must preserve `the independent audit lane owns all verdicts`
 - this note must preserve `recorded-neighborhood baseline`
 - this note must preserve `quantized`
 - this note must preserve `k/64`

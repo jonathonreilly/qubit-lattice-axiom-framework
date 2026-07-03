@@ -75,6 +75,7 @@ def main():
     )
 
     x = sp.symbols("x")
+    zeta5 = sp.exp(2 * sp.pi * sp.I / 5)
     for mode in range(5):
         eig = sp.cos(2 * sp.pi * mode / 5)
         y = x**mode
@@ -87,13 +88,8 @@ def main():
             rem = sp.rem(sp.Poly(left - right, x), sp.Poly(x**5 - 1, x)).as_expr()
             diagonalizes = diagonalizes and (sp.expand(rem) == 0)
         check(f"T1_Fourier_diagonalization_mode_{mode}", diagonalizes)
-        eig_rem = sp.rem(
-            sp.Poly(formal_eig - eig, x, extension=True), sp.Poly(x**5 - 1, x, extension=True)
-        ).as_expr()
-        if mode == 0:
-            eig_matches_trig = sp.simplify(eig_rem) == 0
-        else:
-            eig_matches_trig = sp.simplify(eig - sp.cos(2 * sp.pi * mode / 5)) == 0
+        evaluated_eig = sp.simplify(sp.expand_complex(formal_eig.subs(x, zeta5)))
+        eig_matches_trig = sp.simplify(evaluated_eig - eig) == 0
         check(f"T1_Fourier_eigenvalue_trig_mode_{mode}", eig_matches_trig)
         check(
             f"T1_character_generator_mode_{mode}",

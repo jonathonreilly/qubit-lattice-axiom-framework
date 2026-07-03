@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/realized_kinetic_branch_selected_by_admissibility_variation_2026_07_02.py
+runner_sha256: 8753ae341e3a4cf78ff6ca1003b5ac0200a6e04e54cebc34db45dcc073278a93
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+==============================================================================
+realized kinetic branch selected by Admissibility variation (2026-07-02)
+==============================================================================
+[PASS] [T1]  1. proper cubic rotations generate 24 rotations and all 6 axis permutations  |  rotations=24, axis permutations=6
+[PASS] [T1]  2. rule-level classification: covariant per-direction algebra dimensions are constant across axes  |  patterns=[(1, 1, 1), (2, 2, 2)]
+[PASS] [T1]  3. any varying covariant structure requires direction-tagged dim-2 algebras on all axes  |  varying patterns=[((2, 2, 2), (True, True, True))]
+[PASS] [T1]  4. neighbor-constant availability is covariant for every enumerated internal dimension pattern  |  constant map returns the full one-site subset
+[PASS] [T1]  5. dims [1,1,1] cannot realize variation with nearest-neighbor conditions  |  K0 maps=1, conditioned=0, gaps=[0.0, 0.0, 0.0]
+[PASS] [T2]  6. surface flux anchor on L=4: K0 all +1 and K1 all -1  |  plaquettes=192
+[PASS] [T2]  7. surface flux anchor on L=6: K0 all +1 and K1 all -1  |  plaquettes=648
+[PASS] [T2]  8. sibling K0/K1 constructions reproduced: K1 symbol reconstructs and K0 coefficients are scalar  |  K1 recon=0.00e+00, spread=0.00e+00, K0 scalar residual=0.00e+00
+[PASS] [T2]  9. K1 supplies the direction-tagged varying availability witness while K0 is neighbor-constant  |  K0 dims=[1, 1, 1], K1 dims=[2, 2, 2], K1 gaps=[1.414, 1.414, 1.414]
+[PASS] [T2] 10. clarified Admissibility variation selects K1 on the licensed two-class surface  |  selected=['K1']
+[PASS] [T2] 11. selected K1 carries the Dirac-square and Clifford-capacity consequences  |  anticommutator=0.00e+00, square error=6.29e-16, fourth nullity=0
+[PASS] [T3] 12. dropping variation recomputes the pre-clarification determination-only survivors  |  survivors=['K0', 'K1']
+[PASS] [T3] 13. under determination only, K0 survives through the same neighbor-constant machinery  |  K0 dims=[1, 1, 1], variation gaps=[0.0, 0.0, 0.0]
+[PASS] [T4] 14. classification and variation witness are stable under local U(1) edge frames  |  framed K0 dims=[1, 1, 1], framed K1 dims=[2, 2, 2]
+[PASS] [T4] 15. improper mirror and sub-region SU2 frame are contrast legs outside the allowed covariance  |  chirality=1.0+0.0j, mirror chirality=-1.0-0.0j, illegal spread=1.000
+
+SUMMARY: representative-level selection on the parent licensed surface; variation in the clarified Admissibility clause selects K1; dropping variation leaves K0 as the parent countermodel.
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

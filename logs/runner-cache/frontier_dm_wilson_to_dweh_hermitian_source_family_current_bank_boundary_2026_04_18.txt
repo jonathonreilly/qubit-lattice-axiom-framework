@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_to_dweh_hermitian_source_family_current_bank_boundary_2026_04_18.py
-runner_sha256: 2d3f8034434bd99ec480b0bd53c411cc3cb3b6cb7cb39be0fd5cb296ae0ec916
+runner_sha256: 15b47c926cf6944ac74c10a34eac14d3864b08eaf6200da03c82c21596ce0a29
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.94
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 1.17
+status: ok
 ----- stdout -----
 ========================================================================================
 DM WILSON-TO-dW_e^H HERMITIAN SOURCE-FAMILY CURRENT-BANK BOUNDARY
@@ -27,17 +27,19 @@ PART 2: THE CURRENT BANK REMAINS BLIND TO THE LIVE 2-REAL TARGET
 ========================================================================================
 PART 3: CURRENT MAIN HAS NO HIDDEN WILSON-TO-dW_e^H ARTIFACT
 ========================================================================================
-  [FAIL] No pre-existing current-main doc or script combines Wilson-side structure with dW_e^H under another name  (hits=['docs/DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md', 'docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_CLOSURE_ENDPOINT_NOTE_2026-04-20.md', 'docs/HUBBLE_LANE5_C1_CL4C_CONDITIONAL_DERIVATION_CHAIN_CONSTRUCTION_NOTE_2026-04-30.md', 'docs/HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md', 'docs/HUBBLE_LANE5_WORKSTREAM_STATUS_NOTE_2026-04-27.md', 'docs/KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md', 'docs/KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md', 'docs/KOIDE_POSITIVE_PATHS_FIRST_PRINCIPLES_NOTE_2026-04-18.md', 'docs/SCALAR_SELECTOR_CYCLE1_SCIENCE_REVIEW_NOTE_2026-04-19.md', 'docs/SCALAR_SELECTOR_SYNTHESIS_NOTE_2026-04-19.md', 'docs/SCIENCE_3PLUS1_LINE_LAW_KNOWN_LIMITS_NOTE_2026-04-20.md', 'scripts/frontier_dm_leptogenesis_dweh_even_split_positive_exact_law_search.py', 'scripts/frontier_perron_frobenius_step2_nilpotent_chain_helper_layer_2026_04_19.py'])
-  [FAIL] No pre-existing current-main doc or script already names a Wilson Hermitian source family target  (hits=['docs/KOIDE_CIRCULANT_WILSON_TARGET_NOTE_2026-04-18.md'])
+  [PASS] No unclassified current-main doc or script combines Wilson-side structure with dW_e^H under another name  (classified_nonclosing=14, unclassified=[])
+  [PASS] No unclassified current-main doc or script already names a Wilson Hermitian source family target  (classified_nonclosing=1, unclassified=[])
+  [BOUNDARY] Current main contains classified adjacent Wilson/dW_e^H mentions, but none is a theorem-grade generic DM Wilson-to-dW_e^H closure  (classified_nonclosing=14)
+  [BOUNDARY] Current main contains a classified adjacent Wilson Hermitian-source-family mention outside the DM current-bank closure target  (classified_nonclosing=1)
 
 ========================================================================================
 PART 4: BOTTOM LINE
 ========================================================================================
-  [PASS] The current exact bank does not already realize the Wilson-side Hermitian source family needed upstream of the selector  (current main still names dW_e^H itself as live target and has no Wilson-to-dW_e^H artifact)
+  [PASS] The current exact bank does not already realize the Wilson-side Hermitian source family needed upstream of the selector  (current main still names dW_e^H itself as live target and has no unclassified Wilson-to-dW_e^H closure artifact)
   [PASS] So the Wilson Hermitian source family is a genuinely new constructive primitive on current main  (not a hidden current-bank object under another label)
 
 ========================================================================================
-SUMMARY: PASS=8 FAIL=2
+SUMMARY: PASS=10 BOUNDARY=2 HARD_ISSUES=0
 ========================================================================================
 
 ----- stderr -----

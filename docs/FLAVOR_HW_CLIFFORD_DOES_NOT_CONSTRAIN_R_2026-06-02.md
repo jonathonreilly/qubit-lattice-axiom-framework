@@ -1,11 +1,15 @@
 # Flavor — the Heisenberg-Weyl / Fourier symmetry axis does not force r=1/2
 
 **Date:** 2026-06-02
-**Claim type:** open_gate.
-**Review boundary:** source proposal for independent audit. No verdict or
-downstream grade is set here.
-**Runner:** `scripts/flavor_hw_clifford_does_not_constrain_r_2026_06_02.py` (SCORECARD 6/6).
-**Runner cache:** `logs/runner-cache/flavor_hw_clifford_does_not_constrain_r_2026_06_02.txt`
+**Type:** open_gate
+**Claim type:** open_gate
+**Status authority:** independent audit lane only. This source note sets source
+claim metadata only; it does not set, predict, or edit any audit outcome.
+**Primary runner:** [`scripts/flavor_hw_clifford_does_not_constrain_r_2026_06_02.py`](../scripts/flavor_hw_clifford_does_not_constrain_r_2026_06_02.py)
+**Runner cache:** [`logs/runner-cache/flavor_hw_clifford_does_not_constrain_r_2026_06_02.txt`](../logs/runner-cache/flavor_hw_clifford_does_not_constrain_r_2026_06_02.txt)
+**No-promotion statement:** This source note creates no promotion, no registry
+edit, no audit verdict, and no downstream status change; status remains owned
+by the independent audit lane.
 
 ## 2026-06-06 HW/Fourier scope repair
 
@@ -56,6 +60,30 @@ Heisenberg-Weyl/Fourier fixed point**. The clean new derived fact is the **`b=c`
 F-covariance constraint** with `a` still free. This row does not claim that the framework-native value
 is `r=1`, does not prove a discrete-Wigner/PSD/full-orbit landmark theorem, and does not close the
 readout-selection problem.
+
+## 2026-06-13 Downstream Boundary Alignment
+
+The downstream occupancy-independence theorem
+[`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+identifies the shared residual as the occupancy/slot-degree atom. This HW row
+therefore contributes one route-local negative: the tested Fourier/HW equations
+do not supply that atom. The runner now also checks the downstream facts that:
+
+- the occupancy theorem is the bounded source that names the residual;
+- Record declines weighting/occupancy supply;
+- sector and orbit occupancy weights differ by the exact factor `2`; and
+- the orientation sends sector occupancy to `r = 1` and orbit occupancy to
+  `r = 1/2`.
+
+No Clifford, Wigner, or HW equation is promoted to a selector here.
+
+## Dependencies
+
+- [`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+  (downstream occupancy/slot-degree boundary; bounded-theorem source, not an
+  audit verdict).
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+  (Record axiom boundary and scope reference).
 
 ## The next paths this opens (not closing)
 - The `b=c` off-diagonal constraint is a clean derived fact worth testing against the CKM/quark

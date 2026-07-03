@@ -200,7 +200,7 @@ audit status remains audit-lane-only.
    carries no tested C₃-grade number, selector, ordering, or weight, and it
    is the same identification every gauge theory makes between abstract
    representation content and named physical species
-   (`SPECIES_IDENTIFICATION_UNIVERSAL_FLOOR_CLASSIFICATION_BOUNDED_NOTE_2026-07-03.md`).
+   (`SPECIES_IDENTIFICATION_UNIVERSAL_FLOOR_CLASSIFICATION_NOTE_2026-07-03.md`).
    It stays listed on the universal-floor surface below and is not counted
    as framework-specific content. Naming remains vacuous per the
    species-labeling no-go.
@@ -213,7 +213,7 @@ audit status remains audit-lane-only.
 - **The species identification (added 2026-07-03)** — the abstract-sector →
   physical-species identification at the C₃-structural grade; carries no
   tested number, selector, ordering, or weight
-  (`SPECIES_IDENTIFICATION_UNIVERSAL_FLOOR_CLASSIFICATION_BOUNDED_NOTE_2026-07-03.md`).
+  (`SPECIES_IDENTIFICATION_UNIVERSAL_FLOOR_CLASSIFICATION_NOTE_2026-07-03.md`).
 
 Discriminator that keeps this bucket small: an input qualifies only if it
 carries **no dimensionless number or measured structure to derive**. θ carries

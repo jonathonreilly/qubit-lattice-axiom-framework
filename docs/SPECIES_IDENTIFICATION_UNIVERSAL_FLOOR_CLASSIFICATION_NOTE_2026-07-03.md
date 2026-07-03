@@ -1,6 +1,6 @@
 ---
-claim_id: species_identification_universal_floor_classification_bounded_note_2026-07-03
-claim_type: bounded_classification_support
+claim_id: species_identification_universal_floor_classification_note_2026-07-03
+claim_type: meta
 claim_scope: "Owner-gated classification-support note: assembles the case that AC_phi_lambda(iii), the abstract-sector to physical-species identification, meets the universal-floor/no-number standard beside the past hypothesis. The owner rules on Tier-A registry placement; this note adopts, reclassifies, and edits nothing."
 upstream_dependencies:
   - species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13
@@ -13,7 +13,9 @@ runner: scripts/frontier_species_universal_floor_classification_2026_07_03.py
 # Species Identification Universal-Floor Classification Support (Owner-Gated)
 
 **Date:** 2026-07-03
-**Claim type:** bounded classification-support note.
+**Type:** meta
+**Claim type:** meta (owner-gated classification support; no audit verdict or
+registry ruling).
 **Owner-gated surface:** the owner rules on Tier-A registry placement. This
 note assembles the argument, the counterargument, and the scope limits for the
 owner. It does not adopt, reclassify, or edit anything.

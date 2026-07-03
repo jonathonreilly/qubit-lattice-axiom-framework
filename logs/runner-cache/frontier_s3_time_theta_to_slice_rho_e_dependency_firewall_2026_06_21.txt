@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/frontier_s3_time_theta_to_slice_rho_e_dependency_firewall_2026_06_21.py
+runner_sha256: a7ff7e15e1507fd4774dd0a1dfea68582fe3b00a6eda61e48e87c5c6dc8cd9db
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.66
+status: ok
+----- stdout -----
+S3-time theta-to-slice rho_E dependency firewall
+========================================================================================
+[PASS] reduced family P(rho_E) gives fixed E-shell, T-shell, and T-center source factors
+       E-shell=(Fraction(1, 1), Fraction(0, 1)), T-shell=(Fraction(0, 1), Fraction(-2, 1)), T-center=(Fraction(0, 1), Fraction(-5, 3))
+[PASS] E-center source factor is exactly q_E(rho_E)=1+rho_E/6; target rho_E=21/4 gives q_E=15/8
+       q_E(0)=1, q_E(21/4)=15/8
+[PASS] rho_E variation is zero on E-shell/T-shell/T-center and equals (rho/6,0) on E-center
+       deltas={'E-shell': (Fraction(0, 1), Fraction(0, 1)), 'E-center': (Fraction(7, 8), Fraction(0, 1)), 'T-shell': (Fraction(0, 1), Fraction(0, 1)), 'T-center': (Fraction(0, 1), Fraction(0, 1))}
+[PASS] near-live rho_E comparison changes only the same E-center scalar, not the dependency support
+       q_E(526/100)=563/300
+[PASS] slice backbone is independent of rho_E: Lambda_R SPD and T_R contractive
+       min eig Lambda=1.148587e+00, max eig T=3.170846e-01
+[PASS] for all checked times, E-shell/T-shell/T-center Xi_P are rho_E-independent
+       times=[0.0, 0.5, 1.0, 2.0]
+[PASS] for all checked times, E-center Xi_P is affine with delta=(rho_E/6) e_E tensor V_R(t)
+       target delta factor=7/8
+[PASS] target-vs-zero E-center tensor separation has norm (7/8)*||V_R(t)|| at every checked time
+       ratio=7/8 for rho_E=21/4 versus rho_E=0
+[PASS] rho_E-dependent E-center tensor evolves by the same exact slice semigroup
+       checked t -> t+0.5 where both times are in the sample set
+[PASS] the target endpoint factor q_E=15/8 is exactly the E-center/E-shell source ratio
+       center/shell=15/8
+
+========================================================================================
+PASS=10 FAIL=0
+
+VERDICT: exact-support firewall for the theta-to-slice consumer. The unresolved
+rho_E entry propagates only through the E-center source factor q_E=1+rho_E/6.
+Shell couplings and T-channel couplings are rho-independent for every checked
+time, and the rho-dependent E-center tensor is just a rank-one source factor
+times the same exact slice seed V_R(t). This narrows the consumer ambiguity but
+does not derive rho_E=21/4.
+
+----- stderr -----
+

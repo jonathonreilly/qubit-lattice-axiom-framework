@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py
-runner_sha256: c80bb67ce5f2d6895e6ba2b859cd2ffe2bb0e761ba7d17d00737339c4ff358c6
+runner_sha256: dfb0b5995decd08e88966c3b8edbad95387bb9addd3b36df99f469ab49970069
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.57
+elapsed_sec: 2.32
 status: ok
 ----- stdout -----
 
@@ -37,10 +37,10 @@ PASS docs/MINIMAL_AXIOMS_2026-06-05.md contains: weighting, normalization, proba
 PASS docs/MINIMAL_AXIOMS_2026-06-05.md contains: measurement/decoherence dynamics
 PASS docs/audit/data/axiom_premise_nodes.json exists
 PASS docs/audit/data/axiom_premise_nodes.json contains: "minimal_axioms"
-PASS docs/audit/data/axiom_premise_nodes.json contains: "current_path": "docs/MINIMAL_AXIOMS_2026-06-05.md"
-PASS docs/audit/data/axiom_premise_nodes.json contains: it still supplies no readout context, sector-generation rule, weighting, normalization, probability, dynamics, or downstream theory consequence
+PASS docs/audit/data/axiom_premise_nodes.json contains: "current_path": "docs/MINIMAL_AXIOMS_2026-06-29.md"
+PASS docs/audit/data/axiom_premise_nodes.json contains: It still supplies no context-selection rule, occurrence rule, weighting, normalization, probability, update law, measurement/decoherence dynamics, K/CPT structure, central-sector decomposition, source/action bridge, physical observable bridge, state-selection rule, law-domain derivation, or downstream theory consequence
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md exists
-PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: `selector_tangent_readout_weight` | 13
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: `selector_tangent_readout_weight` | 16
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: live count printed by the runner supersedes this diagnostic export
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: selector/tangent readout-weight rows need a supplied readout/tangent bridge
 PASS scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py exists
@@ -76,24 +76,28 @@ PASS negative supplied weights are rejected
 ------------------------------------------------------------------------------
 Selector/tangent row checks
 ------------------------------------------------------------------------------
-PASS selector/tangent row count is current snapshot :: 12
-PASS representative row present: hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16
+PASS selector/tangent row count is current snapshot :: 16
+PASS representative row present: strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12
 PASS representative row present: teleportation_preparation_readout_probe_note
 PASS representative row present: yt_exact_hessian_selector_uniqueness_note
-PASS audit ledger hash is unchanged :: 9877713317c1a499102c725acb9db58046a09e744f140b6685e4a9f77d3c14a0
+PASS audit ledger hash is unchanged :: 15efee196a7b3738ec370120bc338105f64b4c82d0b236c80b0c47b5d5b7b95f
 
 Selector/tangent/readout rows:
   alpha_bare_four_pi_from_z3_plancherel_bridge_bounded_note_2026-05-26 | effective unaudited | bounded_theorem | docs/ALPHA_BARE_FOUR_PI_FROM_Z3_PLANCHEREL_BRIDGE_BOUNDED_NOTE_2026-05-26.md
   hierarchy_bosonic_bilinear_selector_note | effective unaudited | bounded_theorem | docs/HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md
-  hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16 | effective retained_bounded | bounded_theorem | docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md
   hierarchy_delta0_s1_exact_one_link_strong_coupling_probe_note_2026-06-11 | effective unaudited | bounded_theorem | docs/HIERARCHY_DELTA0_S1_EXACT_ONE_LINK_STRONG_COUPLING_PROBE_NOTE_2026-06-11.md
   higgs_taste_singlet_projection_bounded_note_2026-05-09 | effective unaudited | bounded_theorem | docs/HIGGS_TASTE_SINGLET_PROJECTION_BOUNDED_NOTE_2026-05-09.md
-  lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05 | effective retained_bounded | bounded_theorem | docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md
+  magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06 | effective unaudited | bounded_theorem | docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md
   observable_principle_consumed_sector_bounded_by_ac_phi_lambda_narrow_theorem_note_2026-06-05 | effective unaudited | bounded_theorem | docs/OBSERVABLE_PRINCIPLE_CONSUMED_SECTOR_BOUNDED_BY_AC_PHI_LAMBDA_NARROW_THEOREM_NOTE_2026-06-05.md
-  spin_statistics_fs_admission_located_exercise_note_2026-06-06 | effective retained_bounded | bounded_theorem | docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md
+  observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18 | effective retained_bounded | bounded_theorem | docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md
+  quark_route2_e_center_single_adjoint_line_selector_conditional_support_note_2026-06-21 | effective unaudited | bounded_theorem | docs/QUARK_ROUTE2_E_CENTER_SINGLE_ADJOINT_LINE_SELECTOR_CONDITIONAL_SUPPORT_NOTE_2026-06-21.md
+  quark_route2_nonblind_e_center_lift_selector_equivalence_exact_support_note_2026-06-21 | effective unaudited | bounded_theorem | docs/QUARK_ROUTE2_NONBLIND_E_CENTER_LIFT_SELECTOR_EQUIVALENCE_EXACT_SUPPORT_NOTE_2026-06-21.md
+  quark_route2_nonlinear_log_curvature_readout_candidate_note_2026-06-21 | effective unaudited | bounded_theorem | docs/QUARK_ROUTE2_NONLINEAR_LOG_CURVATURE_READOUT_CANDIDATE_NOTE_2026-06-21.md
+  s3_time_factor_rigidity_readout_primitive_split_note_2026-06-21 | effective unaudited | bounded_theorem | docs/S3_TIME_FACTOR_RIGIDITY_READOUT_PRIMITIVE_SPLIT_NOTE_2026-06-21.md
+  s3_time_readout_primitive_bridge_assessment_bounded_note_2026-06-12 | effective unaudited | bounded_theorem | docs/S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md
   strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12 | effective unaudited | bounded_theorem | docs/STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md
   teleportation_preparation_readout_probe_note | effective unaudited | bounded_theorem | docs/TELEPORTATION_PREPARATION_READOUT_PROBE_NOTE.md
-  theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11 | effective audited_conditional | bounded_theorem | docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11 | effective unaudited | bounded_theorem | docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md
   yt_exact_hessian_selector_uniqueness_note | effective unaudited | bounded_theorem | docs/YT_EXACT_HESSIAN_SELECTOR_UNIQUENESS_NOTE.md
 
 ------------------------------------------------------------------------------
@@ -119,7 +123,7 @@ PASS production dynamics derived flag is false
 PASS Record-derived physical arrow flag is false
 
 SUMMARY: PASS=81 FAIL=0
-SELECTOR_TANGENT_READOUT_WEIGHT_ROWS=12
+SELECTOR_TANGENT_READOUT_WEIGHT_ROWS=16
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE
 SELECTOR_AUTHORITY_DERIVED=FALSE

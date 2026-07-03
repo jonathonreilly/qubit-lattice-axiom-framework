@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ew_current_matching_rule_no_go.py
-runner_sha256: 7aa82a9c39113b30d84d2bb7d1c4d20f96d32801f140a10880723839727d241c
-timeout_sec: 120
+runner_sha256: 7bdac91493b35d7f352dce9450910f7c7d446b1f16a67725f3587c321a7de985
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -39,7 +39,7 @@ EW CURRENT MATCHING-RULE NO-GO
 [PASS] note records the two-completion witness: independence witness present
 [PASS] docs/YT_EW_COLOR_PROJECTION_THEOREM.md contains 'kappa_EW': downstream conditional wording present
 [PASS] docs/YT_EW_COLOR_PROJECTION_THEOREM.md contains 'K_EW(kappa_EW)': downstream conditional wording present
-[PASS] docs/YT_EW_COLOR_PROJECTION_THEOREM.md contains 'audited_conditional / bounded': downstream conditional wording present
+[PASS] docs/YT_EW_COLOR_PROJECTION_THEOREM.md contains 'must say "conditional on the connected-trace specialization': downstream conditional wording present
 [PASS] docs/YT_EW_COLOR_PROJECTION_THEOREM.md avoids '**Status:** proposed_retained EW normalization lane': unconditional EW-retention wording absent
 [PASS] docs/YT_EW_COLOR_PROJECTION_THEOREM.md avoids 'The correction 9/8 on the EW couplings is derived from': unconditional EW-retention wording absent
 [PASS] docs/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE.md contains 'matching-rule conditional': downstream conditional wording present

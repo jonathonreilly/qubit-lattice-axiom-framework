@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_c3_p1_positive_parent_readout_no_go.py
-runner_sha256: ab96cfede47f8c274abf0e296af3bb6aed0afd16010ee7107e059e2802658879
-timeout_sec: 120
+runner_sha256: fe66498fd0a542bc30e30ff4a5bdfc824f6d2eb39bc9d967690b3d9ac8841853
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -25,7 +25,7 @@ PASS: sqrtm note says parent/readout remains open
 PASS: block07 keeps P1 load-bearing
 PASS: block08 keeps A1 source-domain separate
 PASS: one-Higgs note leaves generation matrices free
-PASS: Koide character note keeps P1 non-retained
+PASS: Koide character note and P1 no-go note keep the P1 readout non-retained
 PASS: Lane 3 firewall blocks bounded promotion
 
 B. Exact positive-parent algebra

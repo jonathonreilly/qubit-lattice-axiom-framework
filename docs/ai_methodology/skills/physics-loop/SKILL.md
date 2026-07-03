@@ -288,10 +288,10 @@ until retired. The approved axiom baseline is the current
 Lattice/Qubit/Admissibility/Record surface: no site is privileged; sites are
 distinguished by the supplied lattice structure alone; no possibility is
 privileged; possibilities are distinguished by the supplied algebraic structure
-alone; a site need not carry a record; when present, a record locks exactly one
-available local possibility, and records are permanent; only records are
-readable; readout value is determined by record content alone; finite scalar
-readout is additive over
+alone; a record, when present, locks exactly one admissible local possibility;
+a site never carries more than one record; records are permanent; only records
+are readable; readout value is determined by record content alone; finite
+scalar readout is additive over
 finite pairwise-disjoint record collections; a state is a configuration of
 records; and a law privileges no states, has a supplied condition as its
 domain, and gives exactly one answer where the condition holds. It does not

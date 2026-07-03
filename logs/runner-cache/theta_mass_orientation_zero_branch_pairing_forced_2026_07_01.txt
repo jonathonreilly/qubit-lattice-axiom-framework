@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/theta_mass_orientation_zero_branch_pairing_forced_2026_07_01.py
+runner_sha256: 51a1e316b3f18832078f31da3b67bd4bf5e1334b972e8654a18ef0c1d55e64b6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+
+========================================================================
+THETA MASS-ORIENTATION ZERO BRANCH — PAIRING-FORCED ON K-REAL SURFACE
+========================================================================
+
+Companion: docs/THETA_MASS_ORIENTATION_ZERO_BRANCH_PAIRING_FORCED_ON_K_REAL_SURFACE_NARROW_THEOREM_NOTE_2026-07-01.md
+Object: Case-A staggered M_KS (real antisymmetric, {eps, M} = 0) with
+real scalar mass m of EITHER sign, or a Hermitian generation mass A on
+the flavor tensor factor (Brannen dial, signed roots included).
+
+T1 — Case-A structure on every tested configuration
+  [PASS] T1a [A] M_KS is exactly real antisymmetric on all configs
+  [PASS] T1b [A] spectrum purely imaginary (max |Re| < 1e-12)
+  [PASS] T1c [A] exact +/-lambda pairing of the spectrum
+  [PASS] T1d [A] bipartite grading {eps, M_KS} = 0 exactly
+  [PASS] T1e [A] kernel dimension is even  (d=1 n=8 free: kernel=0; d=2 L=4 free: kernel=0; d=2 L=4 Z2(seed 1): kernel=0; d=2 L=4 Z2(seed 2): kernel=2)
+T2 — det(M_KS + m I) for ALL real m: pairing formula, sign, evenness
+  [PASS] T2a [A] pairing formula det = prod(m^2 + lambda^2) * m^(2z) at machine precision on every config and mass  (worst |ratio - 1| = 1.59e-14)
+  [PASS] T2b [A] det(M_KS + m I) > 0 for every tested real m of BOTH signs
+  [PASS] T2c [A] det is an EVEN function of m: det(M+mI) = det(M-mI)
+  [PASS] T2d [A] strict positivity specifically on the m < 0 half: the positive-mass convention is not load-bearing for the orientation  (min det over m<0 grid = 1.663e-04 > 0)
+T3 — Hermitian generation mass on the flavor factor, signed roots
+  [PASS] T3a [A] exact tensor factorization det(M(x)I + I(x)A) = prod_k det(M + a_k I) across the dial grid  (worst |ratio - 1| = 1.27e-14 (d=2 L=4 free))
+  [PASS] T3b [A] determinant > 0 (zero branch) on EVERY dial, negative signed-Brannen roots included  (18 dials, 10 with a negative root)
+  [PASS] T3c [A] explicit negative-root dial (a=1, |b|=1.2, delta=0.3): min eigenvalue < 0 AND composed det > 0  (roots = [-0.7606  0.4678  3.2928], det = 2.262e+10)
+T4 — squared mass class: det(A^2) = (det A)^2
+  [PASS] T4a [A] det(A^2) = (det A)^2 identically across the dial grid
+  [PASS] T4b [A] dials with det A < 0 exist, and their squared-class det is still on the zero branch: the sign of det A never reaches the orientation
+T5 — refutation: breaking the pairing (real symmetric perturbation)
+  [PASS] T5a [C] a real symmetric pairing-breaking perturbation yields det < 0 at a real mass: the pairing (not realness alone) selects the zero branch  (det = -4.671e+05 at m = -3.000)
+  [PASS] T5b [C] at the same real mass the UNPERTURBED Case-A operator stays on the zero branch  (unperturbed det = 9.900e+07)
+T6 — refutation: non-K-real flavor block leaves {0, pi}
+  [PASS] T6a [C] non-Hermitian flavor block: arg det leaves {0, pi} by a finite margin — K-reality is what discretizes the orientation  (arg det = 0.5112 rad, distance from {0, pi} = 0.5112)
+  [PASS] T6b [C] restoring Hermiticity returns arg det to 0 exactly  (arg det = -7.80e-17)
+
+========================================================================
+SUMMARY
+========================================================================
+  Scope: staggered-only Case-A surface; scalar real mass (both signs)
+  or Hermitian flavor-factor mass; Wilson shifts, non-commuting
+  flavor-kinetic couplings, theta_gauge, and the physical determinant-
+  channel identification are OUTSIDE this runner's claims.
+  TOTAL: PASS=18 FAIL=0
+  OVERALL: PASS
+
+
+----- stderr -----
+

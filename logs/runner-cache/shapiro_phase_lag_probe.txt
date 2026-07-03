@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/shapiro_phase_lag_probe.py
-runner_sha256: 1fbd4e2808e851b548d8c4c504e6b7bbac79f63c4b6fcf9266cab8eb83de0f83
-timeout_sec: 600
+runner_sha256: 9f8d3278fd6b3b689313680c8fa32c75c259461f1009cb4036841e4b63a515fb
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 151.52
+elapsed_sec: 193.46
 status: ok
 ----- stdout -----
 # Shapiro Delay Note
 
-**Date:** 2026-04-06; bounded-source repair 2026-06-17
+**Date:** 2026-04-06; bounded-source repair 2026-06-17; static-cone rerun 2026-07-01
 **Status:** bounded finite replay / source-support packet; independent audit required before any effective status change
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem
@@ -40,6 +40,17 @@ What finite in-repo replay supports the c-dependent proxy phase table while keep
 | `0.50` | `+0.0621 rad` | `0.0002 rad` | `+0.0621` | `+0.0622` | `+0.0620` |
 | `0.25` | `+0.0679 rad` | `0.0001 rad` | `+0.0679` | `+0.0679` | `+0.0679` |
 
+## Static-cone discriminator rerun (2026-07-01)
+
+The static-cone mimic is recomputed in this packet against the repaired table:
+a frozen static cone field (position-only, same spatial support and values as the
+repaired cone construction, no propagation or scheduling notion) is propagated
+through a mirrored copy of the portable kernel, after the mirror is validated on
+the instantaneous field.
+
+- kernel-mirror max detector-node delta: `0.000e+00`
+- static-cone mimic max phase delta over `24` (family, seed, c) rows: `0.000e+00 rad`
+
 ## Runner Checks
 
 - `PASS` exact instantaneous zero control
@@ -50,13 +61,16 @@ What finite in-repo replay supports the c-dependent proxy phase table while keep
 - `PASS` source note records static-cone no-go boundary
 - `PASS` source note excludes lab calibration and physical speed claims
 - `PASS` source note points at live causal packet, not stale generated note
+- `PASS` mirrored kernel reproduces portable instantaneous detector state (max node delta < 1e-12)
+- `PASS` frozen static cone reproduces the repaired causal phase table (max row delta < 1e-10 rad)
+- `PASS` source note records the 2026-07-01 static-cone rerun against this repaired table
 
 ## Safe Read
 
 - family spread across the configured three-family replay stays at or below `2.4e-04 rad`
 - the proxy phase increases monotonically as the field propagation parameter `c` decreases
 - this is a finite replay over the declared harness, not a derivation of a physical Shapiro law
-- the static-cone discriminator remains load-bearing: a static cone shape can reproduce the same phase curve, so this is not a unique causal discriminator
+- the static-cone boundary is recomputed in this packet against the repaired table: a frozen static cone shape can reproduce the same phase curve on this repaired harness, so this is not a unique causal discriminator
 - this is not a lab-calibrated diamond/NV prediction and not a physical field-speed measurement
 
 ## Claim Boundary

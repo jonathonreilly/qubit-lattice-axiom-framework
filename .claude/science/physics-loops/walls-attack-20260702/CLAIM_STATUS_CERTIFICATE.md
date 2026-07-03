@@ -47,3 +47,40 @@ Review-loop disposition (branch-local): recorded in REVIEW_HISTORY.md after
 supervisor line-by-line review.
 
 Independent audit remains required before any effective status.
+
+# Claim status certificate — block17 (w scale-absorption classification)
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: >
+  On the block11/16 class: all ratios and degree-0 functionals of diagonal
+  (flow-selected) readouts are w-free; single-family calibrated dimensionful
+  readouts are w-free with the prefactor riding the scale-reference slot;
+  every landed instance surveyed (sin^2 theta_W shape, Koide shape, mass
+  ratios, calibrated absolute scale, 8/9 count) classifies w-free —
+  generation rows conditional on the landed chain's flow-selection premise,
+  EW rows conditional on CTX-match; the residual w-sensitive class is exactly
+  the named triple (off-diagonal, cross-family, non-scale-referenced
+  absolute). No inconsistency claim is made for the set-level reading; the
+  equivariant-escape steelman is exhibited.
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: >
+  exact finite rational computations; instance rows inherit named
+  conditionality from their landed chains; the reading-exclusion section is
+  conditional on the in-flight owner-gated axiom PR; bounded_theorem ceiling
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+Negative-claim handling: T5 exhibits the counting-collapse consequence and the
+equivariant-escape counterexample precisely to AVOID an unsupported no_go
+("set-level reading inconsistent") — the stronger claim is explicitly not
+made; no standalone no_go ships, so N1-N8 does not gate; the steelman is
+in-note.
+
+Review-loop disposition (branch-local): recorded in REVIEW_HISTORY.md after
+supervisor line-by-line review. Independent audit remains required.

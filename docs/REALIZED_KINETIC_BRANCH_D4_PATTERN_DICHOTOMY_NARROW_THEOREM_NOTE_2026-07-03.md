@@ -17,7 +17,8 @@ the Admissibility reading is not decided here.
 **Status authority:** independent audit lane only. This source note does not set or predict an audit outcome.
 **Primary runner:**
 [`scripts/realized_kinetic_branch_d4_pattern_dichotomy_2026_07_03.py`](../scripts/realized_kinetic_branch_d4_pattern_dichotomy_2026_07_03.py)
-**Runner cache:** `logs/runner-cache/realized_kinetic_branch_d4_pattern_dichotomy_2026_07_03.txt`
+**Runner cache:**
+[`logs/runner-cache/realized_kinetic_branch_d4_pattern_dichotomy_2026_07_03.txt`](../logs/runner-cache/realized_kinetic_branch_d4_pattern_dichotomy_2026_07_03.txt)
 
 ## Why This Note Exists
 
@@ -198,7 +199,7 @@ Primary runner:
 [`scripts/realized_kinetic_branch_d4_pattern_dichotomy_2026_07_03.py`](../scripts/realized_kinetic_branch_d4_pattern_dichotomy_2026_07_03.py)
 
 Expected cache target:
-`logs/runner-cache/realized_kinetic_branch_d4_pattern_dichotomy_2026_07_03.txt`
+[`logs/runner-cache/realized_kinetic_branch_d4_pattern_dichotomy_2026_07_03.txt`](../logs/runner-cache/realized_kinetic_branch_d4_pattern_dichotomy_2026_07_03.txt)
 
 Current local runner result:
 

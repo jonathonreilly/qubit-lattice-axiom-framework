@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/realized_kinetic_branch_d4_pattern_dichotomy_2026_07_03.py
-runner_sha256: a34aa8f5b8da08aed5f57e6cc679a73950c7b57dc8ce448af7c02062e87788d1
+runner_sha256: f983ea710d43119ef4e3a2ee7697628fe5c1f0d04ede1504ea21080943d13fa0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.79
+elapsed_sec: 0.60
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -21,7 +21,7 @@ realized kinetic branch D4 pattern dichotomy (2026-07-03)
 
 TOTAL: PASS=9 FAIL=0
 
-VERDICT: On the parent two-flux-class kinetic surface, the D4 per-direction algebra-dimension
+SUMMARY: On the parent two-flux-class kinetic surface, the D4 per-direction algebra-dimension
          discriminator is a BINARY CLASS INVARIANT on the covariant surface: for Hermitian
          nearest-neighbor symbols on the one-site C^2 carrier covariant under the proper cubic
          rotations the per-direction unital star-algebra dimension is CONSTANT across the three

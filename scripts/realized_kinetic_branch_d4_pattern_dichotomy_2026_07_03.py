@@ -493,7 +493,7 @@ def main():
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print()
     print(
-        "VERDICT: On the parent two-flux-class kinetic surface, the D4 "
+        "SUMMARY: On the parent two-flux-class kinetic surface, the D4 "
         "per-direction algebra-dimension"
     )
     print(

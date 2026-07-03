@@ -26,47 +26,40 @@ EXPECTED_LINKS = {
     "../scripts/acphilambda_cross_arc_unit_classification_wiring_2026_07_02.py",
     "KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md",
     "BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+    "RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
 }
 
 
 def check(label: str, ok: bool, detail: str = "") -> bool:
     global PASS, FAIL
-    if ok:
-        PASS += 1
-        tag = "PASS"
-    else:
-        FAIL += 1
-        tag = "FAIL"
+    PASS += int(ok)
+    FAIL += int(not ok)
+    tag = "PASS" if ok else "FAIL"
     suffix = f" -- {detail}" if detail else ""
     print(f"  [{tag}] {label}{suffix}")
     return ok
 
 
 def section(title: str) -> None:
-    print("\n" + "-" * 88)
-    print(title)
-    print("-" * 88)
+    print("\n" + "-" * 88 + f"\n{title}\n" + "-" * 88)
 
 
 def read(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
 
+def read_landed_doc(filename: str) -> str:
+    path = DOCS / filename
+    if path.exists():
+        return read(path)
+    return subprocess.check_output(
+        ["git", "show", f"origin/main:docs/{filename}"], cwd=ROOT, text=True
+    )
+
+
 def norm(text: str) -> str:
     text = text.replace("\\|", "|")
     return re.sub(r"\s+", " ", text).strip()
-
-
-def git_show(spec: str) -> str:
-    proc = subprocess.run(
-        ["git", "show", spec],
-        cwd=ROOT,
-        check=True,
-        text=True,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-    )
-    return proc.stdout
 
 
 def ledger_row(rows: dict, note_path: str) -> dict:
@@ -94,13 +87,13 @@ def table_rows(text: str) -> list[str]:
 
 def source_texts() -> dict[str, str]:
     return {
-        "pr4783": git_show("d4fa76a5d7:docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md"),
-        "pr4788": git_show("8f7eefba70:docs/ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md"),
-        "pr4794": git_show("93d886f9f3:docs/ACPHILAMBDA_FLUXED_RING_SPECTRAL_FUNCTIONAL_ROUTE_NO_GO_2026-07-02.md"),
-        "pr4831": git_show("97b4039c93:docs/ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md"),
-        "pr4835": git_show("64ac5a05e7:docs/ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md"),
-        "pr4837": git_show("6097797120:docs/ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md"),
-        "pr4840": git_show("928f93ced0:docs/ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md"),
+        "pr4783": read_landed_doc("ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md"),
+        "pr4788": read_landed_doc("ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md"),
+        "pr4794": read_landed_doc("ACPHILAMBDA_FLUXED_RING_SPECTRAL_FUNCTIONAL_ROUTE_NO_GO_2026-07-02.md"),
+        "pr4831": read_landed_doc("ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md"),
+        "pr4835": read_landed_doc("ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md"),
+        "pr4837": read_landed_doc("ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md"),
+        "pr4840": read_landed_doc("ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md"),
         "koide": read(KOIDE),
         "brannen": read(BRANNEN),
         "record": read(RECORD),
@@ -208,6 +201,11 @@ def main() -> int:
     check("L3 = 2/9 = (1/3)(2/3)", Fraction(2, 9) == Fraction(1, 3) * Fraction(2, 3))
 
     section("D: note discipline")
+    check("Type metadata is bounded_theorem", "**Type:** bounded_theorem" in note)
+    check("Claim type metadata is canonical bounded_theorem", "**Claim type:** bounded_theorem" in note)
+    check("scope boundary blocks value and registry claims", "Cross-arc unit-classification wiring only" in note and "no derivation of `delta = 2/9`, `Phi = 2/3`, R-eta, a value equation" in note and "registry/publication edit" in note)
+    check("audit boundary is independent-lane only", "**Audit boundary:** independent audit lane only" in note)
+    check("legacy status-authority metadata absent", "**Status authority:**" not in note)
     for sentence in PRESERVE:
         check(f"preserve sentence embedded: {sentence[:42]}", sentence in note)
     for i in range(1, 9):
@@ -218,12 +216,13 @@ def main() -> int:
     wall_names = set(re.findall(r"\bW_[A-Za-z0-9_]+", note))
     check("W_ names are whitelisted", wall_names <= {"W_cycle_holonomy_value", "W_defect_identity_unit", "W_defect_readout_selection"}, detail=str(sorted(wall_names)))
     got_links = set(links(note))
-    check("markdown link inventory exactly two deps plus runner", got_links == EXPECTED_LINKS, detail=str(sorted(got_links)))
+    check("markdown link inventory exactly three deps plus runner", got_links == EXPECTED_LINKS, detail=str(sorted(got_links)))
     check("no linked in-flight or Arc B note target", all("ACPHILAMBDA_" not in link and "RETA_" not in link for link in got_links if link.endswith(".md")))
     check("audit-grade authorship absent", not re.search(r"audited_(clean|conditional|failed)|grade prediction|audit grade", note, re.I))
     leaks = ["PRESERVE VERBATIM", "MUST BE ABSENT", "Acceptance contract", "Content to encode", "RULES (binding)", "/tmp/spec-crossarc"]
     check("instruction-language leakage absent from note", not any(item in note for item in leaks))
     check("no unaudited item linked statement present", "No unaudited/in-flight item is linked; audit statuses pending on all of them." in note)
+    check("three retained dependency scopes statement present", "The three retained dependency scopes remain exactly the ledger scopes quoted above." in note)
     check("Audit Consequence names classification-answered pending audit", "classification-answered pending audit" in note)
     check("note line count in requested band", 150 <= len(note.splitlines()) <= 190, detail=f"lines={len(note.splitlines())}")
     check("runner line count in requested band", 180 <= len(read(SELF).splitlines()) <= 240, detail=f"lines={len(read(SELF).splitlines())}")

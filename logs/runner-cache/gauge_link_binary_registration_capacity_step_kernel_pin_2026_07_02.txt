@@ -1,0 +1,101 @@
+===== runner cache v1 =====
+runner: scripts/gauge_link_binary_registration_capacity_step_kernel_pin_2026_07_02.py
+runner_sha256: b8f21aa703b6a9450b5e62e7a7676e866426dd4da2f9a68d2fce17ad5f07d02f
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 3.53
+status: ok
+----- stdout -----
+Gauge-link binary registration capacity step-kernel pin runner
+Seed: 20260702
+
+SECTION A -- capacity lemmas
+PASS A1-seeded-binary-partitions: observed sorted rank pairs [(1, 1), (2, 0)]
+PASS A1-no-room-for-third-cell: computed orthocomplement dimension 2 - rank(P) - rank(I-P) is 0 for every partition
+PASS A1-C3-discriminating-contrast: three rank-1 cells sum to I_3
+PASS A2-pullback-povm-sum: two pulled-back cells sum to I_4
+PASS A2-pullback-positive-counting: min pulled-back effect eigenvalue -1.526e-16; count <= 2 by construction
+
+SECTION B -- native carrier, collapse, pin
+PASS B0-casimir-spectrum: spectrum [0.         0.         1.33333333 1.33333333 1.33333333 1.33333333
+ 1.33333333 1.33333333]
+PASS B1-one-sided-two-sided-collapse: max difference 5.329e-15
+PASS B1-closed-character-formula: max formula difference 1.066e-14
+PASS B2-pinned-TV-grid-identity: max grid difference 3.553e-15
+
+SECTION C -- exact identities
+  <chi8 s2_naive> M1600=0.444444444436 M3200=0.444444444444
+PASS C1-chi8-s2-naive-anchor: error 5.565e-13
+PASS C1-chi8-s2-naive-converges: errors 8.917e-12 -> 5.565e-13
+  <s2_naive> M1600=9.425159956654 M3200=9.425159956645
+PASS C2-s2-naive-pi2-anchor: error 5.578e-13
+PASS C2-s2-naive-converges: errors 8.919e-12 -> 5.578e-13
+  <chi8 s2_min> M1600=0.592592592594 M3200=0.592592592593
+PASS C3-chi8-s2-min-anchor: error 8.360e-14
+PASS C3-chi8-s2-min-converges: errors 1.322e-12 -> 8.360e-14
+  <s2_min>_Haar M3200=9.466227112322
+PASS C4-s2-min-haar-anchor: value 9.466227112322
+PASS C4-m2-haar-anchor: value 2.366556778080
+PASS C5-density-M1600: value 1.000000000000
+PASS C5-density-M3200: value 1.000000000000
+
+SECTION D -- composed family and unreachability
+  m2(1) = 2.440630852154
+  m2(2) = 2.371186407710
+  m2(3) = 2.366846129932
+  m2(4) = 2.366574862571
+  m2(5) = 2.366557908361
+  m2(6) = 2.366556848723
+PASS D1-closed-form-m2-native: m2(1) 2.440630852154
+PASS D2-w8-TV: w8 0.062500000000
+PASS D2-k2-eigenvalue-power: w8^2 0.003906250000
+  rejection sampling accepted 400000 from 2000000 Haar proposals
+  MC m2(2) estimate 2.372073979133; closed target 2.371186407710
+PASS D3-independent-MC-composition-k2: difference 0.000888
+PASS D4-first-six-above-2p36: min 2.366556848723
+PASS D4-monotone-decreasing: strictly decreasing for k=1..6
+PASS D4-unit-margin: m2(6)-1 = 1.366556848723
+
+SECTION E -- informative-fraction dial
+  p_star = 0.409730132
+PASS E1-p-star-anchor: value 0.409730132
+PASS E2-p-star-interior: 0 < p* < 1
+PASS E2-p-star-not-half: |p*-0.5| = 0.090269868
+PASS E2-p-star-not-one: |p*-1| = 0.590269868
+PASS E2-p-star-not-zero: p* = 0.409730132
+  Dial discipline: p* located, not forced
+PASS E3-lazy-family-linearity (definitional: delta contributes zero variance): variance of (1-p) delta + p T_V equals p * <s2>_{T_V} at p in {1/4, 1/2, 3/4}
+
+SECTION F -- source-boundary guards
+PASS F0-note-exists: docs/GAUGE_LINK_BINARY_REGISTRATION_CAPACITY_STEP_KERNEL_PIN_THEOREM_NOTE_2026-07-02.md
+PASS F0-dep-exists-axioms: docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS F0-dep-exists-graph-first: docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md
+PASS F0-dep-exists-rigidity: docs/G_BARE_RIGIDITY_THEOREM_NOTE.md
+PASS F0-dep-exists-controlled-copy: docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md
+PASS F0-dep-exists-semigroup: docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md
+PASS F1-axioms-qubit-clause: needle='The full one-site possibility domain has algebraic presentation `M_2(C)`.'
+PASS F1-axioms-record-clause: needle='a record locks exactly one local possibility'
+PASS F1-axioms-no-weights-clause: needle='transition probabilities or weights'
+PASS F1-graph-first-marker: needle='the joint commutant has dimension `10`'
+PASS F1-rigidity-marker: needle='no independent scalar-normalization freedom'
+PASS F1-controlled-copy-marker: needle='projective record-write isometry'
+PASS F1-semigroup-marker: needle='continuous Markov semigroups live on the probability/ensemble'
+PASS F2-note-marker: set only by the independent audit lane: needle='set only by the independent audit lane'
+PASS F2-note-marker: binary: needle='binary'
+PASS F2-note-marker: pinned: needle='pinned'
+PASS F2-note-marker: informative-step fraction: needle='informative-step fraction'
+PASS F2-note-marker: located on the dial, not forced: needle='located on the dial, not forced'
+PASS F2-note-marker: not a distinguished setting: needle='not a distinguished setting'
+PASS F2-note-marker: does not derive that a record step occurs: needle='does not derive that a record step occurs'
+PASS F2-note-marker: not a citation-graph dependency: needle='not a citation-graph dependency'
+PASS F2-note-marker: does not claim:: needle='does not claim:'
+PASS F2-note-marker: an audit verdict or any effective-status promoti: needle='an audit verdict or any effective-status promotion'
+PASS F2-note-marker: 16/27: needle='16/27'
+PASS F2-note-marker: pi^2 - 4/9: needle='pi^2 - 4/9'
+PASS F2-note-marker: m^2(k) = m^2_Haar + (2/27) * 16^(1-k): needle='m^2(k) = m^2_Haar + (2/27) * 16^(1-k)'
+PASS F2-note-marker: p* = 4 / <s2>_T_V: needle='p* = 4 / <s2>_T_V'
+PASS F3-forbidden-strings-absent: clean
+
+TOTAL: PASS=60 FAIL=0
+
+----- stderr -----

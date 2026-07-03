@@ -165,6 +165,74 @@ audit that writes the scoped `claim_type`; missing `claim_type` fields in the
 old confirmation summaries are migration debt, not a cross-confirmation
 disagreement.
 
+## Claim typing at authoring time
+
+Every new source note under `docs/` must declare its claim class with an
+explicit header line the graph builder can read:
+
+```
+**Type:** positive_theorem | bounded_theorem | no_go | open_gate | decoration | meta
+```
+
+`seed_audit_ledger.default_claim_type_for` resolves the seeded `claim_type`
+in this precedence order (the auditor always owns the final value):
+
+1. `data/meta_source_patterns.txt` — curated per-file registry for
+   catalog/index/infrastructure docs (e.g. `docs/CANONICAL_HARNESS_INDEX.md`);
+   applies even over author hints.
+2. The explicit `Type:` / `Claim type:` header, else the legacy
+   Status-line migration hint.
+3. Infrastructure directory families
+   (`seed_audit_ledger.INFRA_META_PATH_PREFIXES`: `docs/repo/`,
+   `docs/work_history/`, `docs/lanes/`, `docs/publication/`,
+   `docs/ai_methodology/` — the same families as
+   `data/excluded_source_patterns.txt`): hint-less notes under these paths
+   seed as `meta` (documentation, not claims).
+4. Fallback: `positive_theorem` with provenance `default_positive_theorem`.
+
+Tier 4 is visible debt, not a hidden state: `audit_lint.py` warns on every
+such row (`claim_type_defaulted`), and `pre_commit_audit_check.sh` (via
+`check_staged_claim_typing.py`) refuses staged notes that would enter or
+stay in the defaulted class, so the legacy backlog can only shrink.
+
+`meta` deserves care in both directions: meta rows are never queued for
+audit and chain-satisfy their dependents as stable context, so `meta` is
+reserved for documents that carry no claim any dependent could consume as
+evidence.
+
+Exclusion is history-preserving: a ledger row whose path matches
+`data/excluded_source_patterns.txt` is dropped at the next seeding run
+only when it is an unaudited unknown — no terminal or in-flight
+`audit_status` and no archived `previous_audits` (lint notice
+`excluded_path_row_pending_drop` until then; the seeder also strips the
+dropped row's ids from dependents' dep lists, so no dangling edges).
+Rows carrying audit history are never auto-dropped — retroactive
+exclusion must not erase audit evidence; they stay in the ledger,
+surface as `excluded_path_row_grandfathered` lint notices, and retiring
+them is an owner/audit-lane decision. Exact paths in
+`data/never_gate_source_paths.txt` always stay.
+
+### Draining the `claim_type_defaulted` backlog
+
+The `claim_type_defaulted` lint warning list is the worklist; the
+pre-commit gate stops regrowth. Per row, in order of preference:
+
+1. **Infrastructure/doc rows** — covered by the meta tiers above or by
+   exclusion; nothing to do beyond the next seeding run.
+2. **Claim notes whose own text states the class** — add the matching
+   `Type:` header. This is an author hint only: the auditor confirms the
+   type at audit, and a header must describe the note as written, never
+   retype content to fit a desired class.
+3. **Evidence-adjacent catalogs** (package READMEs, `*_ledger` /
+   `*_packet` summaries with citers) — do **not** register these as meta
+   first; meta chain-satisfies dependents unaudited, so premature meta
+   typing launders evidence edges. Apply the dependency-honesty protocol
+   (precedent: PR #4780): read each citing note, rewire edges that
+   consume evidence to the underlying evidence notes, demote navigation
+   references to backticked context — and only when no dependent
+   consumes the catalog as evidence, register it in
+   `data/meta_source_patterns.txt`.
+
 ## The hard rules
 
 1. **Retained grade is audit-only.** The audit lane may grant
@@ -249,9 +317,9 @@ compute blocker when supported, and then continues to the next ready row.
 Rows skipped this way need a completed run artifact, reduced deterministic
 runner, or proof-level replacement before re-audit.
 
-For every `audited_conditional` result, the auditor must make the repair lane
-machine-sortable by prefixing `notes_for_re_audit_if_any` with one repair
-class:
+For every `audited_conditional` or `audited_renaming` result, the auditor
+must make the repair lane machine-sortable by prefixing
+`notes_for_re_audit_if_any` with one repair class:
 
 - `missing_dependency_edge` — a needed source note or authority exists or is
   named, but is not wired as a direct dependency for the audited claim.
@@ -273,6 +341,14 @@ add an explicit citation/dependency edge, audit a named dependency first,
 create/open a bridge theorem, split a clean bounded core from a conditional
 extension, or repair/slice a runner. The audit lane surfaces these repairs; it
 does not perform them unless explicitly asked.
+
+When the cheapest repair action is dependent-side (for example, narrowing
+downstream citing sentences to the audited scope), the named action must also
+include adding a dated downstream-hygiene line to the audited note's own
+boundary. Terminal rows re-enter the audit queue only through their own
+note/runner hash drift or a dispatcher sidecar; a dependent-side repair that
+never touches the stuck row itself satisfies the audit's condition without
+ever rescheduling the row for re-audit.
 
 For high-stakes claims (`criticality = critical` by transitive-descendant
 count; the audit lane does not use author-declared flagship status), a second independent

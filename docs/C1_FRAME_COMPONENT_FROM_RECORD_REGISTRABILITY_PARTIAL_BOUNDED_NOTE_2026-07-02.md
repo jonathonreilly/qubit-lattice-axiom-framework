@@ -4,7 +4,10 @@
 **Type:** bounded theorem (partial supplier derivation, conditional on the named registrability reading R*)
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not set or predict an audit outcome.
-**Actual current surface status:** conditional-support; conditional on the registrability reading R*; C1b remains open.
+**Paired runner:**
+[`scripts/frontier_c1_frame_component_from_record_registrability_partial_2026_07_02.py`](../scripts/frontier_c1_frame_component_from_record_registrability_partial_2026_07_02.py)
+**Cached output:**
+[`logs/runner-cache/frontier_c1_frame_component_from_record_registrability_partial_2026_07_02.txt`](../logs/runner-cache/frontier_c1_frame_component_from_record_registrability_partial_2026_07_02.txt)
 
 ## Purpose
 
@@ -25,7 +28,7 @@ The supplied finite structure used here is only:
 - the realized Yukawa/circulant readout `Y`, available only through the
   realized-state primitive interface quoted below;
 - the Record axiom sentences quoted below;
-- the Block01 and Block02 sibling finite witness classes.
+- the landed Block01 and Block02 finite witness classes.
 
 The Record axiom surface is:
 
@@ -101,7 +104,7 @@ slot model only. This note uses the mechanism as a precedent pattern; it does
 not treat the complement note as a transportable general registrability theorem.
 
 The repo's existing registrability characterization is
-`docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
+[`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
 (bounded theorem, unaudited at the time of writing): **in a supplied readout
 context** with a finite central-sector decomposition, registrable scalar
 readouts are finitely additive and orbit-constant, and its Conditional
@@ -263,15 +266,6 @@ possibility is "invariant under repeated readout." A future note could test
 whether repeated-readout invariance supplies partition state-independence and
 therefore C1b. This note makes no such claim.
 
-## N-Checklist Pointer
-
-The no-go discipline checklist for the narrow negative "imported-basis
-scorings are not R*-registrable" is branch-local:
-
-```text
-.claude/science/physics-loops/walls-attack-20260702/NO_GO_DISCIPLINE_CHECKLIST.md
-```
-
 ## What This Note Does NOT Claim
 
 - R* is not asserted as axiom content.
@@ -289,12 +283,12 @@ scorings are not R*-registrable" is branch-local:
 
 | path | role |
 |---|---|
-| `docs/ACPHILAMBDA_HW_COMPLEMENT_READING_REGISTRATION_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md` | Supplies the scoped precedent pattern: on its supplied slot model, registrable scalar content is symmetric spectral content and frame-dependent components are not registrable. |
-| `docs/FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md` | Block01 sibling; supplies the three parent-named scoring rules, Hadamard witnesses, and the no-imported-frame residual. Dependency class: stacked branch-local, unaudited. |
-| `docs/SUPPLIED_READOUT_CONTEXT_TWO_COMPONENT_DECOMPOSITION_BOUNDED_NOTE_2026-07-02.md` | Block02 sibling; supplies the C1/C2 separation and the independence of C1a from C2 at witness level. Dependency class: stacked branch-local, unaudited. |
-| `docs/MINIMAL_AXIOMS_2026-06-29.md` | Supplies the Record locking, repeated-readout invariance, readability, and finite-additivity sentences; also shows measurement basis and context selection remain outside axiom content. |
-| `docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md` | Supplies the pointwise realized-state evaluation interface and the no-state-content boundary for `Y`. |
-| `docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md` | The repo's existing registrability characterization (supplied-context boundary; Conditional Implication B). Role: in-repo source of the orbit-constancy mechanism that R* transports to unsupplied choices. Dependency class: unaudited bounded theorem — conditional citation; `dependency_not_retained` expected on first audit. |
+| [`ACPHILAMBDA_HW_COMPLEMENT_READING_REGISTRATION_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md`](ACPHILAMBDA_HW_COMPLEMENT_READING_REGISTRATION_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md) | Supplies the scoped precedent pattern: on its supplied slot model, registrable scalar content is symmetric spectral content and frame-dependent components are not registrable. |
+| [`FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md`](FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md) | Landed Block01 dependency; supplies the three parent-named scoring rules, Hadamard witnesses, and the no-imported-frame residual. Independent audit still owns its verdict and any retained-grade dependency closure. |
+| [`SUPPLIED_READOUT_CONTEXT_TWO_COMPONENT_DECOMPOSITION_BOUNDED_NOTE_2026-07-02.md`](SUPPLIED_READOUT_CONTEXT_TWO_COMPONENT_DECOMPOSITION_BOUNDED_NOTE_2026-07-02.md) | Landed Block02 dependency; supplies the C1/C2 separation and the independence of C1a from C2 at witness level. Independent audit still owns its verdict and any retained-grade dependency closure. |
+| [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | Supplies the Record locking, repeated-readout invariance, readability, and finite-additivity sentences; also shows measurement basis and context selection remain outside axiom content. |
+| [`REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) | Supplies the pointwise realized-state evaluation interface and the no-state-content boundary for `Y`. |
+| [`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md) | The repo's existing registrability characterization (supplied-context boundary; Conditional Implication B). Role: in-repo source of the orbit-constancy mechanism that R* transports to unsupplied choices. Dependency class: unaudited bounded theorem; independent audit must adjudicate it before retained-grade dependency closure. |
 
 ## Paired Runner
 
@@ -307,5 +301,5 @@ scripts/frontier_c1_frame_component_from_record_registrability_partial_2026_07_0
 Expected terminal line:
 
 ```text
-TOTAL: PASS=18 FAIL=0
+TOTAL: PASS=19 FAIL=0
 ```

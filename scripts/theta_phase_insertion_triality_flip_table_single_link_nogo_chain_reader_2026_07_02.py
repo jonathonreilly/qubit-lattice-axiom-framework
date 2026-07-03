@@ -18,7 +18,7 @@ fits, no external comparators, no measured values, no Monte Carlo.
 
 Sections:
   A. Abelian shadow: on U(1) the truncated triality-phase weight is exactly
-     the argument-shifted weight 1 + 2c cos(phi + alpha) — the block-2 theta
+     the argument-shifted weight 1 + 2c cos(phi + alpha) — the abelian theta
      slot — with Fourier coefficients c e^{+-i alpha} at n = +-1.
   B. Flip table (projector-exact, several alpha): dagger and bar send
      alpha -> -alpha; transpose preserves G_alpha; diagonal conjugation
@@ -31,7 +31,7 @@ Sections:
      no single-link class-weight insertion reads the chiral sign.
   D. The chain reader: D_chain = tr(S1 S2 S3) - tr(S1 S3 S2) is
      diagonal-conjugation invariant, transpose-ODD, nonzero, with the
-     block-7 parity table (dagger: -conj, bar: conj) — the chiral sign is
+     dagger/bar parity table (dagger: -conj, bar: conj) — the chiral sign is
      read by path-antisymmetrized multi-link observables.
 
 Expected close: TOTAL: PASS=14 FAIL=0
@@ -159,7 +159,7 @@ w_u1 = 1 + CBASE * np.exp(1j * ALPHA0) * np.exp(1j * PHI) \
     + CBASE * np.exp(-1j * ALPHA0) * np.exp(-1j * PHI)
 shifted = 1 + 2 * CBASE * np.cos(PHI + ALPHA0)
 check("A1 U(1) case: the triality-phase weight IS the argument-shifted"
-      " weight 1 + 2c cos(phi + alpha) — the block-2 abelian theta slot",
+      " weight 1 + 2c cos(phi + alpha) — the abelian theta-slot shape",
       bool(np.allclose(w_u1.real, shifted, atol=1e-12))
       and bool(np.allclose(w_u1.imag, 0, atol=1e-12)))
 
@@ -272,7 +272,7 @@ ddag = (t(S1.conj().T @ S2.conj().T @ S3.conj().T)
         - t(S1.conj().T @ S3.conj().T @ S2.conj().T))
 dbar = (t(S1.conj() @ S2.conj() @ S3.conj())
         - t(S1.conj() @ S3.conj() @ S2.conj()))
-check("D3 the chain reader's parity table matches block 7:"
+check("D3 the chain reader's dagger/bar parity table:"
       " dagger(D) = -conj(D), bar(D) = conj(D)",
       abs(ddag + np.conj(d)) < 1e-12 and abs(dbar - np.conj(d)) < 1e-12)
 

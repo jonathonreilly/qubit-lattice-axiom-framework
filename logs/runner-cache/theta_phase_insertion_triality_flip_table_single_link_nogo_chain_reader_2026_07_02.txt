@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/theta_phase_insertion_triality_flip_table_single_link_nogo_chain_reader_2026_07_02.py
-runner_sha256: 423d589213b6aac8eeabaa927f373386efc2b3f7da441e2dcb2183359b845c54
+runner_sha256: afd87d9255d3e202dd8c750aa898ae0e0395dfd36865d5c6746f6ab7c551add5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.57
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
 Section A: abelian shadow of the triality-phase insertion
-  [PASS] A1 U(1) case: the triality-phase weight IS the argument-shifted weight 1 + 2c cos(phi + alpha) — the block-2 abelian theta slot
+  [PASS] A1 U(1) case: the triality-phase weight IS the argument-shifted weight 1 + 2c cos(phi + alpha) — the abelian theta-slot shape
   [PASS] A2 its Fourier coefficients are the phased pair c e^{+i alpha}, c e^{-i alpha} at n = +1, -1 (dual-label asymmetry = the theta reading of the flux sign)
 Section B: flip table of the phased star
   [PASS] B1 dagger sends alpha -> -alpha: G_a(S^dag) = G_{-a}(S) (the parity-like flip conjugates the insertion)
@@ -27,7 +27,7 @@ Section D: the multi-link chain reader
   [PASS] D1 the path-antisymmetrized chain observable D = tr(S1 S2 S3) - tr(S1 S3 S2) is diagonal-conjugation invariant (frame-licensed, configurational)
   [PASS] D2 D is transpose-ODD and nonzero: the chiral sign IS read by multi-link path-ordered observables
          D = 0.599544-0.292698j
-  [PASS] D3 the chain reader's parity table matches block 7: dagger(D) = -conj(D), bar(D) = conj(D)
+  [PASS] D3 the chain reader's dagger/bar parity table: dagger(D) = -conj(D), bar(D) = conj(D)
 TOTAL: PASS=14 FAIL=0
 
 ----- stderr -----

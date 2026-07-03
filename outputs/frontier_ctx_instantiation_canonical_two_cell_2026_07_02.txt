@@ -50,9 +50,12 @@ CHECK 23: PASS -- off-diagonal (x_C != x_S) ratio is kappa-sensitive: the honest
 Boundary greps on the generated note (firewall language)
 ------------------------------------------------------------------------------
 CHECK 24: PASS -- note carries firewall phrases: 'nothing is adjudicated', 'not closed', 'review-pending', 'instance premise' [all present]
-CHECK 25: PASS -- ledger guard: the parent kappa row's rationale spells 8/9 = (3^2 - 1)/3^2
-CHECK 26: PASS -- ratification-record guard: policy section 6 names the C3 canonical definition note
+CHECK 25: PASS -- note metadata uses canonical Type/Claim type and audit boundary, with no legacy status-authority fields
+CHECK 26: PASS -- load-bearing dependency surfaces are markdown links for citation-graph seeding
+CHECK 27: PASS -- review-pending sibling PRs are PR-number context only, not markdown dependency links [none linked]
+CHECK 28: PASS -- ledger guard: the parent kappa row's rationale spells 8/9 = (3^2 - 1)/3^2
+CHECK 29: PASS -- ratification-record guard: policy section 6 names the C3 canonical definition note
 
 ==============================================================================
-TOTAL: PASS=26 FAIL=0
+TOTAL: PASS=29 FAIL=0
 ==============================================================================

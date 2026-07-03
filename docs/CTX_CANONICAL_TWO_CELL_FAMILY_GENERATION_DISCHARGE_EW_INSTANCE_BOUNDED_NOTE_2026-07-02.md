@@ -1,20 +1,22 @@
 # CTX Canonical Two-Cell Family: Generation Discharge and the EW Instance
 
 **Date:** 2026-07-02
-**Type:** bounded theorem (family definition + discharge + instance)
+**Type:** bounded_theorem
 **Claim type:** bounded_theorem
-**Status authority:** independent audit lane only. This note writes no audit
-verdict, sets no audit status, and predicts no audit outcome. Any status change
-is effective only upon the independent audit lane's own action.
-**Actual current surface status:** the parent EW `kappa_EW` no-go stands as
-written; the generation-side and EW-side CTX questions live in review-pending
-sibling blocks whose statuses belong to the audit lane. This note adds a
-note-level family definition and exhibits finite witnesses; it moves no wall.
+**Scope boundary:** Bounded note-level family definition, generation CTX
+discharge to landed `C_3` ratification, and EW instance witness only; no
+sibling status is set, no kappa value is claimed, no wall/gate is closed, no
+adjudication/ratification is made, and no axiom, policy, primitive, registry,
+audit, or publication surface is edited.
+**Audit boundary:** independent audit lane only. This note writes no audit
+verdict, sets no audit status, predicts no audit outcome, and derives no
+effective status. Any status change is effective only upon the independent
+audit lane's own action.
 **Primary runner:**
 [`scripts/frontier_ctx_instantiation_canonical_two_cell_2026_07_02.py`](../scripts/frontier_ctx_instantiation_canonical_two_cell_2026_07_02.py)
 **Runner output:**
 [`outputs/frontier_ctx_instantiation_canonical_two_cell_2026_07_02.txt`](../outputs/frontier_ctx_instantiation_canonical_two_cell_2026_07_02.txt)
-— `TOTAL: PASS=24 FAIL=0`.
+— `TOTAL: PASS=29 FAIL=0`.
 
 ## FIREWALL (read first)
 
@@ -269,18 +271,22 @@ moves; the value question is untouched.
   content; those remain the registered-number owner surface.
 - Does **not** set, retag, or predict any audit status.
 
-## Dependencies
+## Dependencies And Context
 
 Landed, on-main:
 
-- `docs/C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md`
+- [`docs/C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md`](C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md)
   (owner-ratified canonical `C_3` context Definition and naming equivalence).
-- `docs/EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md`
+- [`docs/EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md`](EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md)
   (parent kappa no-go; Load-Bearing Fact 1; the `8/9` count).
-- `docs/MINIMAL_AXIOMS_2026-06-29.md` (Lattice and Qubit distinction clauses;
-  Record content-determination and additivity).
+- [`docs/MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
+  (Lattice and Qubit distinction clauses; Record content-determination and
+  additivity).
+- [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](audit/AXIOM_MINIMALITY_POLICY.md)
+  (2026-07-02 owner ratification record for the canonical `C_3` definition).
 
-Review-pending (quoted only; branches not read; statuses the audit lane's):
+Review-pending PR-number context only (not graph dependencies; branches not
+read; statuses the audit lane's):
 PR #4823 (block08), PR #4826 (block11), PR #4846 (block16), PR #4849 (block17),
 PR #4852 (block18).
 

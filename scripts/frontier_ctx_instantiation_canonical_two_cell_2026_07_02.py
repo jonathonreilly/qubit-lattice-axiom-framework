@@ -46,6 +46,7 @@ DOCS = ROOT / "docs"
 C3_NOTE = DOCS / "C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md"
 KAPPA_NOTE = DOCS / "EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md"
 AXIOM_MEMO = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
+AXIOM_POLICY = DOCS / "audit" / "AXIOM_MINIMALITY_POLICY.md"
 THIS_NOTE = DOCS / "CTX_CANONICAL_TWO_CELL_FAMILY_GENERATION_DISCHARGE_EW_INSTANCE_BOUNDED_NOTE_2026-07-02.md"
 
 PASS = 0
@@ -445,7 +446,8 @@ def main() -> int:
     section("Boundary greps on the generated note (firewall language)")
 
     if THIS_NOTE.exists():
-        note = squash(THIS_NOTE.read_text(encoding="utf-8"))
+        note_raw = THIS_NOTE.read_text(encoding="utf-8")
+        note = squash(note_raw)
         needed = ["nothing is adjudicated", "not closed", "review-pending", "instance premise", "one named premise rung"]
         missing = [s for s in needed if s not in note]
         check(
@@ -453,6 +455,34 @@ def main() -> int:
             "'review-pending', 'instance premise'",
             not missing,
             detail="all present" if not missing else f"missing: {missing}",
+        )
+        check(
+            "note metadata uses canonical Type/Claim type and audit boundary, with no legacy status-authority fields",
+            ("**Type:** bounded_theorem" in note_raw)
+            and ("**Claim type:** bounded_theorem" in note_raw)
+            and ("**Audit boundary:** independent audit lane only" in note_raw)
+            and ("**Scope boundary:**" in note_raw)
+            and ("**Status authority:**" not in note_raw)
+            and ("**Actual current surface status:**" not in note_raw),
+        )
+        dependency_links = [
+            "[`docs/C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md`](C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md)",
+            "[`docs/EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md`](EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md)",
+            "[`docs/MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)",
+            "[`docs/audit/AXIOM_MINIMALITY_POLICY.md`](audit/AXIOM_MINIMALITY_POLICY.md)",
+        ]
+        check(
+            "load-bearing dependency surfaces are markdown links for citation-graph seeding",
+            all(link in note_raw for link in dependency_links),
+        )
+        linked_siblings = [
+            token for token in ("#4823", "#4826", "#4846", "#4849", "#4852")
+            if f"]({token}" in note_raw or f"](.{token}" in note_raw
+        ]
+        check(
+            "review-pending sibling PRs are PR-number context only, not markdown dependency links",
+            ("Review-pending PR-number context only" in note_raw) and not linked_siblings,
+            detail="none linked" if not linked_siblings else f"linked: {linked_siblings}",
         )
     else:
         check(
@@ -481,7 +511,7 @@ def main() -> int:
         "ledger guard: the parent kappa row's rationale spells 8/9 = (3^2 - 1)/3^2",
         ledger_ok,
     )
-    policy_text = (ROOT / "docs" / "audit" / "AXIOM_MINIMALITY_POLICY.md").read_text(encoding="utf-8")
+    policy_text = AXIOM_POLICY.read_text(encoding="utf-8")
     check(
         "ratification-record guard: policy section 6 names the C3 canonical definition note",
         "C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md" in policy_text,

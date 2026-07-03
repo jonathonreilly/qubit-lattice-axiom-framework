@@ -56698,11 +56698,23 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+      "to": "no_per_site_chirality_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
     },
     {
       "from": "repo.front_door_status",
       "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "ew_current_matching_rule_open_gate_note_2026-05-03"
     },
     {
       "from": "repo.front_door_status",
@@ -56715,18 +56727,6 @@
     {
       "from": "repo.front_door_status",
       "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "hopping_bilinear_hermiticity_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -59267,7 +59267,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bb08be69a2b5b64653057b2e9e045551435d4aedc4a94734ac4e86b81a4e4446",
+      "note_hash": "85d7c0642f92376427e5cc83a249a8f213b5d816c0059cea35f1a76f6ada98f7",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Audit Loop"
@@ -59410,7 +59410,7 @@
         "ai_methodology.skills.physics-loop.references.long-running-execution"
       ],
       "helper_runner_paths": [],
-      "note_hash": "91dee267473a93a643a143c3c0867fec59525a25bee68b75c34e4012b5829b3a",
+      "note_hash": "6d0952390241e8e2c077ede3c809d7df3315fbc568bdc8c4ce22b90044cbf869",
       "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
       "runner_path": null,
       "title": "Physics Loop"
@@ -59437,7 +59437,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9446729a42d5b7e808575e860aaf428bb34063a2a485c521a0537e733be69395",
+      "note_hash": "b98cb858e9c15f1a0499feee0fbe1ee82abe70910de587d2c8c0d8e56144b09c",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"
@@ -93817,7 +93817,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "70324c45f8473c77118d68879e12618ff8366ecf9d4843ce91094a61dca6bc8a",
+      "note_hash": "7b581f9f475c7bf16a02e664ef48a271d20d0404d8b2b1f7e58bc41ab3d50a24",
       "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
       "runner_path": "scripts/audit_companion_minimal_axioms_clean_base_exact.py",
       "title": "Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)"
@@ -107997,7 +107997,7 @@
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6b9e347932a4ad5a3ab676d71c35830988134f2c6937fc89a96c7eb642e9b237",
+      "note_hash": "2f398fffc9d2fff7fecf93f457d61c88fb356a2f2b254df82b43cc9907d4f8f9",
       "path": "docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md",
       "runner_path": "scripts/realized_kinetic_branch_discriminators_2026_07_02.py",
       "title": "Realized Kinetic Branch: Discriminator Dichotomy on the Two-Flux-Class Surface"
@@ -109232,7 +109232,7 @@
         "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5bea212c62053a6c3e1edd5ae106d4a9764b7f1b7d3c4d8a03b4ea7257f81d07",
+      "note_hash": "70cce2d832dc0760771fa8406c340de004f3da08a371f8c75bc4c2ad8da4ef1b",
       "path": "docs/repo/CONTROLLED_VOCABULARY.md",
       "runner_path": null,
       "title": "Controlled Vocabulary"
@@ -109243,17 +109243,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+        "no_per_site_chirality_theorem_note_2026-05-02",
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "ew_current_matching_rule_open_gate_note_2026-05-03",
         "cl3_taste_generation_theorem",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
-        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
-        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
-        "hopping_bilinear_hermiticity_theorem_note_2026-05-02"
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "761cc51e0463bfc9c5559ef45c040bb47287f1b18f5bec4ffe443461eb0913cc",
+      "note_hash": "d2e942ed7d4a720a65925cc1a0b8ccc0c737b0ba2bd480c2df21914c5e7578de",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

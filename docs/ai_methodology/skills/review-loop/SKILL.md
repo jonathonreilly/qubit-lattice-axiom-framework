@@ -117,10 +117,13 @@ claimed.
 
 The framework baseline (per `MINIMAL_AXIOMS_2026-06-29.md`) is the four named
 axioms Lattice, Qubit, Admissibility, and Record. Lattice is the cubic `Z^3`
-lattice with nearest-neighbor adjacency. Qubit is the domain of local
-possibilities with full one-site algebraic presentation `M_2(ℂ)`; `Cl(3,0)` is
-equivalent notation, not extra primitive structure, and no possibility is
-privileged.
+lattice with nearest-neighbor adjacency, standard translations, and proper
+cubic rotations about each site; no site is privileged, and sites are
+distinguished by the supplied lattice structure alone. Qubit is the domain of
+local possibilities with full one-site algebraic presentation `M_2(ℂ)`;
+`Cl(3,0)` is equivalent notation, not extra primitive structure, and no
+possibility is privileged; possibilities are distinguished by the supplied
+algebraic structure alone.
 Admissibility is one fixed finite-neighborhood rule, the same at every lattice
 translate; for each site, the available possibilities are determined by, and
 vary with, the nearest-neighbor conditions, consistent with local records. A

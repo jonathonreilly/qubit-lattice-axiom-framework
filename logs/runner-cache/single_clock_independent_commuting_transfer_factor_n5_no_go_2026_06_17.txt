@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/single_clock_independent_commuting_transfer_factor_n5_no_go_2026_06_17.py
+runner_sha256: 12e9e909ab279a787a584791630e467d48e4125fcfd1844754d1d8d3cd698605
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
+single-clock independent commuting transfer factor N5 no-go
+========================================================================
+PASS: note states claim boundary
+PASS: note blocks physical-clock overclaim
+PASS: SINGLE_CLOCK_INDEPENDENT_COMMUTING_TRANSFER_FACTOR_N5_NO_GO_NOTE_2026-06-17.md contains 'Does not alter the axiom count'
+PASS: SINGLE_CLOCK_INDEPENDENT_COMMUTING_TRANSFER_FACTOR_N5_NO_GO_NOTE_2026-06-17.md contains 'AUDIT_LEDGER_WRITTEN=FALSE'
+PASS: SINGLE_CLOCK_INDEPENDENT_COMMUTING_TRANSFER_FACTOR_N5_NO_GO_NOTE_2026-06-17.md contains 'B_AXIS_DERIVED=FALSE'
+PASS: SINGLE_CLOCK_INDEPENDENT_COMMUTING_TRANSFER_FACTOR_N5_NO_GO_NOTE_2026-06-17.md contains 'SECOND_PHYSICAL_CLOCK_PROVED=FALSE'
+PASS: note names irreducibility supplier
+PASS: note names clock-admission supplier
+PASS: note names gauge-redundancy supplier
+PASS: minimal Lattice/Quantum surface supplies no dynamics
+PASS: Record axiom explicitly supplies no time metric
+PASS: Record readout context is explicit
+PASS: tensor-locality note supplies disjoint-factor commutation
+PASS: tensor note excludes dynamics
+PASS: scope boundary keeps N5 explicit
+PASS: scope boundary names the N5 wall
+PASS: single-clock source contains B-AXIS.3
+PASS: single-clock source target text visible
+PASS: axis-label no-go leaves N5 visible
+PASS: KMS/APBC no-go leaves N5 visible
+PASS: T_A x I is positive with trivial kernel -- min_eig=0.212248
+PASS: I x T_B is positive with trivial kernel -- min_eig=0.141564
+PASS: lifted factor transfers commute exactly -- resid=0.00e+00
+PASS: lifted factor generators commute exactly -- resid=0.00e+00
+PASS: factor-generator tangent span is two-dimensional -- rank=2
+PASS: product transfer Stone generator is H_A x I + I x H_B -- resid=2.22e-16
+PASS: U_A(1) x I is not on the diagonal one-clock product orbit -- min_gap=0.2920
+PASS: two-parameter unitary family is abelian on disjoint factors -- resid=0.00e+00
+PASS: disjoint record projectors commute -- resid=0.00e+00
+PASS: record counter 0 <= P_A is operator-monotone
+PASS: record counter P_A <= P_A + P_B is operator-monotone
+PASS: finite scalar readout is additive on disjoint records -- tr(P_A+P_B)=4.0
+PASS: nonfactorizing coupling would obstruct independent factor clocks -- comm_a=0.700, comm_b=0.500
+PASS: note classifies the coupling escape as an extra bridge, not an axiom consequence
+
+SUMMARY: PASS=34 FAIL=0
+AUDIT_LEDGER_WRITTEN=FALSE
+B_AXIS_DERIVED=FALSE
+SECOND_PHYSICAL_CLOCK_PROVED=FALSE
+
+----- stderr -----
+

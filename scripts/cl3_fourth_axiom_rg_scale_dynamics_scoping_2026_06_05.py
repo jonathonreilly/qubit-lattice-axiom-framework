@@ -45,9 +45,12 @@ bar and formalizes the relocation/input-count bar for the modulus.
 
 import numpy as np
 import sympy as sp
+from pathlib import Path
 
 
 TOL = 1e-9
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs/FOURTH_AXIOM_RG_SCALE_DYNAMICS_SCOPING_2026-06-05.md"
 
 
 # ====================================================================
@@ -481,6 +484,26 @@ def main():
     print("# Fourth-Axiom Scoping: RG / Scale Dynamics for generation moduli")
     print("#" * 70)
     print()
+    note = NOTE.read_text(encoding="utf-8")
+    note_results = [
+        (
+            "**Type:** meta" in note and "**Claim type:** meta" in note,
+            "note declares meta metadata",
+        ),
+        (
+            "**Scope boundary:** Historical/provenance banking only" in note
+            and "does not add, approve, or revise any framework axiom" in note,
+            "note declares historical scoping boundary",
+        ),
+        (
+            "**Audit boundary:** Independent audit lane only" in note
+            and "sets no `effective_status`" in note,
+            "note leaves audit verdicts to independent lane",
+        ),
+    ]
+    for ok, label in note_results:
+        print(f"NOTE-CHECK: {label}: {ok}")
+    print()
 
     all_results = []
     all_results += section1_generic_values_bar()
@@ -493,20 +516,24 @@ def main():
     n_total = len(all_results)
     n_pass = sum(bool(x) for x in all_results)
     n_fail = n_total - n_pass
+    note_total = len(note_results)
+    note_pass = sum(bool(ok) for ok, _ in note_results)
+    note_fail = note_total - note_pass
 
     print()
     print("=" * 70)
+    print(f"NOTE       : PASS = {note_pass}, FAIL = {note_fail}")
     print(f"EXACT      : PASS = {n_pass}, FAIL = {n_fail}")
     print(f"BOUNDED    : PASS = 0, FAIL = 0")
-    print(f"TOTAL      : PASS = {n_pass}, FAIL = {n_fail}")
-    print(f"=== TOTAL: PASS={n_pass}, FAIL={n_fail} ===")
+    print(f"TOTAL      : PASS = {n_pass + note_pass}, FAIL = {n_fail + note_fail}")
+    print(f"=== TOTAL: PASS={n_pass + note_pass}, FAIL={n_fail + note_fail} ===")
     print("=" * 70)
     print()
     print("Scoping verdict: RELOCATES (UV boundary condition / matter-sector")
     print("beta coefficients) + WRONG-VALUES single-fixed-point corner.")
     print("Inputs >= N moduli + 1 scale reference. No fourth axiom adopted.")
 
-    if n_fail != 0:
+    if n_fail != 0 or note_fail != 0:
         raise SystemExit(1)
 
 

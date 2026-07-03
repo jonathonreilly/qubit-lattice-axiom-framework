@@ -1,7 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/cl3_fourth_axiom_rg_scale_dynamics_scoping_2026_06_05.py
+runner_sha256: faca1e06ad670106848af5292a40d040e9fecca4567664a2dc5774a1c8631112
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.73
+status: ok
+----- stdout -----
 
 ######################################################################
 # Fourth-Axiom Scoping: RG / Scale Dynamics for generation moduli
 ######################################################################
+
+NOTE-CHECK: note declares meta metadata: True
+NOTE-CHECK: note declares historical scoping boundary: True
+NOTE-CHECK: note leaves audit verdicts to independent lane: True
 
 ======================================================================
 Section 1: BAR 1 — Generic-values (four distinct observed moduli)
@@ -165,12 +177,16 @@ Section 6: VERDICT
   No fourth axiom is adopted. Owner-authorized SCOPING only.
 
 ======================================================================
+NOTE       : PASS = 3, FAIL = 0
 EXACT      : PASS = 15, FAIL = 0
 BOUNDED    : PASS = 0, FAIL = 0
-TOTAL      : PASS = 15, FAIL = 0
-=== TOTAL: PASS=15, FAIL=0 ===
+TOTAL      : PASS = 18, FAIL = 0
+=== TOTAL: PASS=18, FAIL=0 ===
 ======================================================================
 
 Scoping verdict: RELOCATES (UV boundary condition / matter-sector
 beta coefficients) + WRONG-VALUES single-fixed-point corner.
 Inputs >= N moduli + 1 scale reference. No fourth axiom adopted.
+
+----- stderr -----
+

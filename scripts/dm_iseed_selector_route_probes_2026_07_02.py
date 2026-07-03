@@ -12,10 +12,11 @@ Paired note:
 That note is explicit that the minimum-information selector `I_seed` and the
 favored-column equality constraint `eta_{i_*} / eta_obs = 1` are ADOPTED
 (imported from information geometry), not derived from the Lattice + Qubit +
-Record baseline. These probes test three route claims about WHY the selector is
-non-baseline. Each probe is refutation-shaped: it states a hypothesis that could
-be false, computes a witness, and FAILS honestly if the witness does not exist.
-An honest miss reported as a FAIL is a win; a fake pass is not.
+Admissibility + Record baseline. These probes test three route claims about WHY
+the selector is non-baseline. Each probe is refutation-shaped: it states a
+hypothesis that could be false, computes a witness, and FAILS honestly if the
+witness does not exist. An honest miss reported as a FAIL is a win; a fake pass
+is not.
 
 Objects reused verbatim from the gate note and its primary runner
 (scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py):

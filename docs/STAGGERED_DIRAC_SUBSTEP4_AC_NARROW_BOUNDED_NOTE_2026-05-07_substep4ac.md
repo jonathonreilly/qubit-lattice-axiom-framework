@@ -118,7 +118,7 @@ catalog comparison to an unscored documentation echo. See Changelog.
 | cluster decomposition | Cluster decomposition + unique vacuum | upstream authority: [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md) |
 | Lieb-Robinson microcausality | Lieb-Robinson microcausality | upstream authority: [`AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md) |
 | lattice Noether fermion number | Lattice Noether fermion-number `Q̂` on H_phys | upstream authority: [`AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md) |
-| single-clock evolution | Single-clock codimension-1 evolution | upstream authority: [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) |
+| single-clock evolution | Axis-conditional single-clock codimension-1 evolution under B-AXIS: one supplied blocked time step, one declared evolution axis/transfer construction, and no admitted independent commuting transfer factor | conditional upstream source: [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md); temporal-axis selection is not derived from RP uniqueness |
 | BZ-corner triplet authority | hw=1 BZ-corner triplet has M_3(C) algebra with distinct joint translation characters | upstream authorities: [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md) and [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md) |
 | no-proper-quotient authority | M_3(C) on hw=1 has no proper exact quotient | upstream authority: [`THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md`](THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md) |
 | Kawamoto-Smit phase class | Kawamoto-Smit phase gauge class η_1=1, η_2(x)=(−1)^{x_1}, η_3(x)=(−1)^{x_1+x_2} and kinetic form `D = (1/2)Σ_{x,μ} η_μ(x)(χ̄_{x+μ̂}χ_x − χ̄_xχ_{x+μ̂})`, unique up to local Z2 gauge + boundary holonomy + axis permutation; bounded on its declared substep-1 Grassmann + spin-diagonalization premises (load-bearing input for AC_λ) | upstream bounded theorem: [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md) |
@@ -277,11 +277,13 @@ dependency chain, AC_λ can be removed from the admitted-context stack.
 
 ### Step 2: AC_φ is an observable-distinguishability condition on hw=1
 
-By RP A11 + OS reconstruction, `H_phys` exists with vacuum `|Ω⟩`,
-and by single-clock codimension-1 evolution there is a self-adjoint
-Hamiltonian generator `H` on `H_phys`. AC_φ asks for a physical
-observable on `H_{hw=1}` whose corner-basis expectation values
-distinguish the three states.
+By RP A11 + OS reconstruction, `H_phys` exists with vacuum `|Ω⟩`.
+Given the B-AXIS boundary of the single-clock source note, there is one
+axis-relative self-adjoint Hamiltonian generator `H` on `H_phys`; this
+note does not derive the axis, the blocked time unit, or the
+no-second-clock exclusion. AC_φ asks for a physical observable on
+`H_{hw=1}` whose corner-basis expectation values distinguish the three
+states.
 
 This is a bounded observable-distinguishability check. It should not
 be read as deriving the full Wightman spectrum condition or as

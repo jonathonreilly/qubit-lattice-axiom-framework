@@ -166,7 +166,7 @@ def part2_the_constructive_sign_chamber_already_reaches_the_transport_extremal_v
     print("=" * 88)
 
     x_ext, y_ext, delta_ext, _packet_ext, etas_ext = quiet_call(
-        cand.part2_transport_extremality_selects_a_positive_off_seed_candidate
+        cand.part2_transport_search_finds_an_off_seed_overshoot_witness
     )
     ext_triplet = triplet_from_projected_response_pack(
         hermitian_linear_responses(canonical_h(x_ext, y_ext, delta_ext))

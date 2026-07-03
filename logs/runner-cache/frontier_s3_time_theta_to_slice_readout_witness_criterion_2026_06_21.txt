@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/frontier_s3_time_theta_to_slice_readout_witness_criterion_2026_06_21.py
+runner_sha256: 2d9bb1b66ebcc5e00aa65b20f59470b15eafa39e95b3b45d987918fc038ca9d3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.49
+status: ok
+----- stdout -----
+s3-time readout witness criterion verifier
+========================================================================
+PASS: note is scoped as bounded support, not endpoint-triple closure
+PASS: parent note still names the endpoint triple as the blocker
+PASS: factor-rigidity note supplies the shared time-factor premise
+PASS: readout-map authority supplies the normalized one-parameter family
+PASS: E-shell ambiguity vector matches (rho_delta*c3,0) tensor V (residual=3.469e-18)
+PASS: E-center ambiguity vector matches (rho_delta*c3,0) tensor V (residual=1.388e-17)
+PASS: T-shell ambiguity vector matches (rho_delta*c3,0) tensor V (residual=0.000e+00)
+PASS: T-center ambiguity vector matches (rho_delta*c3,0) tensor V (residual=0.000e+00)
+PASS: normalized E-center witness reads the exact 7/8 increment (increment=0.875000000000)
+PASS: T-row witness is blind to rho_E (T-row response=0.000e+00)
+PASS: slice dual orthogonal to V_R(t) is blind to rho_E (orthogonal response=0.000e+00)
+PASS: rank-one dual formula holds for a mixed channel and slice witness (lhs=1.104771290721e+00, rhs=1.104771290721e+00)
+PASS: time-attenuation norm ratio is blind to rho_E (ratio_0=3.187811813930, ratio_21=3.187811813930)
+PASS: target readout witness gives shell 1 and center 15/8 (shell=1.000000000000, center=1.875000000000)
+PASS: witness target is equivalent to the Route-2 endpoint chain (q_T=5/6, q_E=15/8, c_TE=-8/9, rho_E=21/4)
+PASS: current authorities do not supply the E-center witness value as a theorem
+========================================================================
+TOTAL: PASS=16, FAIL=0
+
+----- stderr -----
+

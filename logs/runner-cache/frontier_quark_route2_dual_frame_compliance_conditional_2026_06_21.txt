@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_dual_frame_compliance_conditional_2026_06_21.py
+runner_sha256: a1ad55fc8f66a25e05fa134a25643f5a6206825a7284aac646231fe970a3b25c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+Route-2 two-sided canonical-dual compliance conditional theorem
+Status: conditional-support; not an audit verdict.
+TRACE: upstream_support
+
+PART 1: six-arm O_h Schur projector weights
+PASS: projector ranks are A1=1, E=2, T=3
+      ranks=(Fraction(1, 1), Fraction(2, 1), Fraction(3, 1))
+PASS: per-arm weights are w_A1=1/6, w_E=1/3, w_T=1/2
+      weights=(Fraction(1, 6), Fraction(1, 3), Fraction(1, 2))
+PASS: same-domain leverage kappa=w_T/w_E=3/2
+      kappa=3/2
+
+PART 2: two-sided canonical-dual compliance
+PASS: two-sided dual law gives lambda=q_E/q_T=(w_E/w_T)^-2=9/4
+      lambda=9/4
+PASS: with q_T=5/6, the law gives q_E=15/8 and rho_E=21/4
+      q_E=15/8, rho_E=21/4
+PASS: with shell T/E=-2, the same law gives center T/E=-8/9
+      center T/E=-8/9
+
+PART 3: wrong-exponent controls
+   channel-neutral: p=+0, lambda=1, q_E=5/6, rho_E=-1, center T/E=-2
+    one-sided-dual: p=+1, lambda=3/2, q_E=5/4, rho_E=3/2, center T/E=-4/3
+    two-sided-dual: p=+2, lambda=9/4, q_E=15/8, rho_E=21/4, center T/E=-8/9
+     primal-square: p=-2, lambda=4/9, q_E=10/27, rho_E=-34/9, center T/E=-9/2
+PASS: only the two-sided-dual control lands rho_E=21/4
+PASS: one-sided dual gives p=1 and misses the endpoint
+      rho_E=3/2
+PASS: ordinary projector-square scaling gives the wrong channel direction
+      rho_E=-34/9
+
+PART 4: note and status firewall
+PASS: note contains marker: **Actual current-surface status:** conditional support
+PASS: note contains marker: two-sided canonical-dual Schur compliance
+PASS: note contains marker: new source/readout premise
+PASS: note contains marker: This is not an audit verdict
+PASS: note contains marker: does not close the parent
+PASS: note contains marker: does not derive the T-side candidates
+PASS: note avoids overclaim marker: legacy source-status certificate
+PASS: note avoids overclaim marker: parent-closure phrase
+PASS: note avoids overclaim marker: current-surface endpoint-derivation phrase
+PASS: note avoids overclaim marker: audit-ratification phrase
+PASS: note avoids overclaim marker: branch-local status-promotion phrase
+PASS: note avoids overclaim marker: future-retention phrase
+PASS: note avoids overclaim marker: promotion-to-retention phrase
+
+TOTAL: PASS=22, FAIL=0
+VERDICT: conditional-support. A two-sided canonical-dual Schur compliance premise gives p=2 and therefore rho_E=21/4 exactly, but that premise is new and remains the open source/readout theorem.
+
+----- stderr -----
+

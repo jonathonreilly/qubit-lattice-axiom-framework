@@ -1,0 +1,54 @@
+# ---- T1  PERMANENCE SCOPE GAP (bounded theorem) ----
+CHECK 01: PASS -- T1 readout idempotent (repeated readout: same value, record unchanged)
+CHECK 02: PASS -- T1 readout value determined by record content alone (pure, no side effect)
+CHECK 03: PASS -- T1 scalar readout I additive over disjoint records, I(empty)=0
+CHECK 04: PASS -- T1 each record locks exactly one Admissibility-available possibility
+CHECK 05: PASS -- T1 every quoted Record-axiom sentence holds BEFORE the mortal step
+CHECK 06: PASS -- T1 mortal step deletes one record, quoted axioms hold AFTER: readout-invariance does NOT entail permanence
+# ---- T2  ORDERING DERIVED (bounded theorem, conditional on permanence) ----
+CHECK 07: PASS -- T2 inclusion order reflexive
+CHECK 08: PASS -- T2 inclusion order antisymmetric
+CHECK 09: PASS -- T2 inclusion order transitive
+CHECK 10: PASS -- T2 realized history: strict inclusion chain, +1 record/step
+CHECK 11: PASS -- T2 strict monotone count: no cycles (a return step must delete -> forbidden)
+CHECK 12: PASS -- T2 order is relabel-invariant (site perm = order iso) and merge-monotone
+CHECK 13: PASS -- T2 firewall-scoped: order+count only (rate 1 vs 1/2 not fixed); forward is definitional inclusion, not thermodynamic
+# ---- T3  ACCUMULATION IRREDUCIBLE (narrow no-go, axiom-first) ----
+CHECK 14: PASS -- T3(i) STATIC guard: Lattice -- sites are Z^3 points, no site privileged
+CHECK 15: PASS -- T3(i) STATIC guard: Qubit -- locked values in possibility domain
+CHECK 16: PASS -- T3(i) STATIC guard: Admissibility holds across the constant history
+CHECK 17: PASS -- T3(i) STATIC guard: Record -- need-not-carry, locks-one+readout-invariant, additive
+CHECK 18: PASS -- T3(i) STATIC guard: State -- every history element is a config of records
+CHECK 19: PASS -- T3(i) STATIC guard: Law -- identity law total + single-valued, privileges no state
+CHECK 20: PASS -- T3(i) constant history registers 0 new records: non-triviality NOT forced
+CHECK 21: PASS -- T3(ii) H=0 witness: zero generator in gauge-covariant class (nonzero too; sx control fails) -> non-triviality is new content
+# ---- T4  THE COMPRESSION MAP (bounded support) ----
+CHECK 22: PASS -- T4(a) production definitional: event:=registration, count == +records on chain
+CHECK 23: PASS -- T4(b) #4854 P2/P3 discharged by accumulation+definitional-event (P1/P4/CHART-MIX untouched)
+CHECK 24: PASS -- T4(c) #4855 C-add: chain-concat associative + additive; kernel-convolution NAMED OPEN
+CHECK 25: PASS -- T4(d) conditional ladder re-hangs: each rung premised, terminal Dirac branch review-pending
+CHECK 26: PASS -- T4(e) ordering->transfer-axis (B-AXIS) NOT auto-supplied: NAMED OPEN target
+CHECK 27: PASS -- T4(f) permanent non-goals (rate/metric/clock, arrow, ABJ-externality) never discharged
+CHECK 28: PASS -- T4 residue table complete (17 rows, closed status vocab, nothing adopted/retained)
+# ---- residue table (conserved; nothing adopted) ----
+#   [owner-surface       ] permanence premise (pending owner clarity fix)
+#   [owner-surface       ] accumulation sentence (new axiom content)
+#   [derivation-target   ] kernel-convolution clause (#4855)
+#   [derivation-target   ] ordering->transfer-axis B-AXIS bridge
+#   [external-premise    ] ABJ parity external premise
+#   [named-premise       ] B-AXIS supplied-axis premise
+#   [named-premise       ] single-generator N5 cap (d_t=1)
+#   [carried-open        ] past-hypothesis boundary condition (universal-floor)
+#   [permanent-no-go     ] rate no-go (record order/count)
+#   [permanent-no-go     ] metric no-go (record order/count)
+#   [permanent-no-go     ] clock no-go (record order/count)
+#   [review-pending      ] #4797 Dirac-branch (REALIZED_KINETIC_BRANCH)
+#   [review-pending      ] #4854 premise family P1-P4/CHART-MIX
+#   [review-pending      ] #4855 premise family C-add/POS/LOC
+#   [landed-given-bridges] form-forced (gauge-invariant-local class)
+#   [landed-conditional  ] Stone-unique generator (given axis)
+#   [carried-open        ] all cited notes: unaudited post 2026-06-29 reset
+# ---- T5  GOVERNANCE MAP ----
+CHECK 29: PASS -- T5 exactly two owner surfaces (1 clarity-fix + 1 new-content), nothing adopted
+CHECK 30: PASS -- T5 TOE-leverage: two surfaces target {B-AXIS,H!=0}; named externals stay external
+TOTAL: PASS=30 FAIL=0

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/three_family_card_missing_distance_live_bridge_2026_06_18.py
-runner_sha256: 743ed1c21686a1a838b9990f14bd1c383aedd329925b522cf586abf88e19034c
-timeout_sec: 120
+runner_sha256: 1e1c07b8418f69c92c3ab24b296bef0ee8fd9524879011006dafeca512464976
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -53,10 +53,10 @@ THREE FAMILY CARD MISSING DISTANCE LIVE BRIDGE
 [PASS] cache result phrase: tail gate: PASS
 [PASS] cache result phrase: +1.764e-04
 [PASS] cache result phrase: -1.764e-04
-[PASS] cache result phrase: alpha': -1.1501244371653223
-[PASS] cache result phrase: tail_r2': 0.9713658329628312
 [PASS] cache result phrase: 'toward': 5
 [PASS] cache result phrase: 'tail_ok': True
+[PASS] cache tail_alpha within 1e-9 of -1.150124437165294: got -1.150124437165294
+[PASS] cache tail_r2 within 1e-9 of 0.9713658329618666: got 0.9713658329618666
 [PASS] archive still marks Family 3 old table incomplete
 [PASS] bridge does not claim all-nine repair
 [PASS] bridge expected summary matches

@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/frontier_rstar_dtotality_axiom_text_instances_2026_07_02.py
+runner_sha256: 11f46a51227145e2e6c8a297ceaebd12d47369392380f5121dcd942f86c3e828
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+RSTAR / D-TOTALITY AXIOM-TEXT INSTANCES
+bounded support runner -- finite witnesses, stdlib only
+==============================================================================
+
+------------------------------------------------------------------------------
+Source guards
+------------------------------------------------------------------------------
+CHECK 01: PASS -- minimal axiom memo carries Record finite additivity
+CHECK 02: PASS -- minimal axiom memo carries Record content-determination
+CHECK 03: PASS -- minimal axiom memo carries the law-domain exactly-one-answer sentence
+CHECK 04: PASS -- minimal axiom memo carries the no-possibility-privilege distinction clause
+CHECK 05: PASS -- realized-state primitive permits pointwise evaluation
+CHECK 06: PASS -- realized-state primitive supplies no state-selection rule
+CHECK 07: PASS -- realized-state primitive supplies no preferred/default state
+
+------------------------------------------------------------------------------
+R* finite additivity and content-determination instances
+------------------------------------------------------------------------------
+CHECK 08: PASS -- finite scalar readout has I(empty)=0
+CHECK 09: PASS -- finite scalar readout is additive over pairwise-disjoint records [10=5+5]
+CHECK 10: PASS -- imported-basis readout varies while record content is fixed [values=['down', 'up']]
+CHECK 11: PASS -- therefore imported-basis readout is not determined by record content alone
+CHECK 12: PASS -- record-content-only readout is constant over the same unsupplied-choice orbit
+
+------------------------------------------------------------------------------
+D-totality law-domain exactly-one-answer instances
+------------------------------------------------------------------------------
+CHECK 13: PASS -- partial rule fails exactly-one-answer totality on its stated supplied domain
+CHECK 14: PASS -- multivalued in-domain rule fails exactly-one-answer totality
+CHECK 15: PASS -- single-valued total rule passes exactly-one-answer totality on its stated domain
+
+------------------------------------------------------------------------------
+Realized-state boundary
+------------------------------------------------------------------------------
+CHECK 16: PASS -- pointwise evaluation of an already-defined functional at the realized state is well-defined
+CHECK 17: PASS -- different realized states can give different registered data without being derivation output
+CHECK 18: PASS -- realized-state primitive supplies no domain certificate
+
+------------------------------------------------------------------------------
+Note firewall and dependency hygiene
+------------------------------------------------------------------------------
+CHECK 19: PASS -- note carries no-adjudication/no-motion-closure/no-promotion firewall phrases [all present]
+CHECK 20: PASS -- note links only landed premise dependencies
+CHECK 21: PASS -- note does not carry stale overclaim/raw-output phrases [none present]
+
+==============================================================================
+TOTAL: PASS=21 FAIL=0
+==============================================================================
+
+----- stderr -----
+

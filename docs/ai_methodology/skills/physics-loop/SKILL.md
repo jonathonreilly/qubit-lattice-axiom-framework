@@ -288,17 +288,19 @@ until retired. The approved axiom baseline is the current
 Lattice/Qubit/Admissibility/Record surface: no site is privileged; sites are
 distinguished by the supplied lattice structure alone; no possibility is
 privileged; possibilities are distinguished by the supplied algebraic structure
-alone; a site need not carry a record; when present, a record locks exactly one
-available local possibility; only records are readable; readout value is
-determined by record content alone; finite scalar readout is additive over
+alone; a record, when present, locks exactly one admissible local possibility;
+a site never carries more than one record; records are permanent; only records
+are readable; readout value is determined by record content alone; finite
+scalar readout is additive over
 finite pairwise-disjoint record collections; a state is a configuration of
 records; and a law privileges no states, has a supplied condition as its
 domain, and gives exactly one answer where the condition holds. It does not
 supply the readout context, decomposition, `K`/CPT structure,
 sector-generation rule, weighting, normalization, probability,
-measurement/decoherence dynamics, occurrence rule, update law, time metric,
-within-sector data, occupancy rule, P2/modulus, log-det, source/action,
-scale, state-selection rule, law-domain derivation, or arbitrary observable
+measurement/decoherence dynamics, record-production dynamics, physical
+persistence dynamics, occurrence rule, update law, time metric, within-sector
+data, occupancy rule, P2/modulus, log-det, source/action, scale,
+state-selection rule, law-domain derivation, or arbitrary observable
 identification. The
 scale-reference primitive is the approved units primitive; do not describe it
 as a Tier-A admission or a bounded Planck import. The kinetic-isotropy

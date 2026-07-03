@@ -76,6 +76,33 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
 
 Recorded explicitly approved axiom updates:
 
+- **2026-07-03 -- Record section polish: one-record-per-site restored and
+  the record block unified.** The Record axiom's opening is edited in place
+  (owner-approved, 2026-07-03) to one two-sentence block: "When present, a
+  record locks exactly one admissible local possibility. A site never
+  carries more than one record; records are permanent." Content notes: the
+  lost uniqueness half ("never carries more than one") is restored, with
+  blankness carried by the "When present" conditional; "admissible local
+  possibility" is the adjectival form of "one local possibility from the
+  subset available at that site under Admissibility" (no content change;
+  "local possibility" is the Qubit axiom's own phrase, "admissible" the
+  Admissibility axiom's adjective); the landed permanence clause moves,
+  unchanged, to pair with the site-uniqueness clause. Under the uniqueness
+  clause the readout sentence's "pairwise-disjoint" qualifier is
+  automatically satisfied. Historical record of the approval only.
+
+- **2026-07-03 -- Record permanence restoration: "records are permanent."**
+  The Record axiom in `docs/MINIMAL_AXIOMS_2026-06-29.md` is edited in place
+  (owner-approved, 2026-07-03): the clause "the locked possibility is
+  invariant under repeated readout" now reads "records are permanent." This
+  restores the durability content of the 2026-06-05 lineage ("durable
+  realized-outcome registration") that was dropped in the reset rewording.
+  The removed readout-invariance phrase is not separate primitive axiom
+  content; repeated-readout agreement should be treated as downstream
+  derivable content from permanence plus the axiom's content-determination
+  sentence, per the Qualification's primitive-content rule. Historical record
+  of the approval only.
+
 - **2026-07-02 -- Lattice site-distinction clause: site distinctions are
   structural; rotations named about each site.** The Lattice axiom in
   `docs/MINIMAL_AXIOMS_2026-06-29.md` is edited in place (owner-approved,

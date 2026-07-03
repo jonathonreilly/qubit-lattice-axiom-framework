@@ -2570,7 +2570,36 @@ drive.
 
 Auditor judged that a clean bounded core exists inside a claim whose current scope includes an unclosed extension. To close: split the clean bounded core out as its own retained-grade claim and demote the extension to bounded or open scope.
 
-_1 rows in this category._
+_2 rows in this category._
+
+
+### `hypercharge_identification_note`
+
+**Note:** [docs/HYPERCHARGE_IDENTIFICATION_NOTE.md](docs/HYPERCHARGE_IDENTIFICATION_NOTE.md)  |  **Descendants:** 1390  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/HYPERCHARGE_IDENTIFICATION_NOTE.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: A
+- claim_scope: Bounded chain assembly on the LH-doublet surface: L1 ratio, L2 matter assignment, L3 alpha scale, and L4 GMN readout reproduce the Q_L/L_L hypercharge and electric-charge table; no full-spectrum or GUT-normalization closure.
+
+Auditor's verdict_rationale:
+The LH-doublet chain itself is an algebraic closure over the provided one-hop inputs: the 6+2 tracelessness ratio gives 1:(-3), L2 supplies the representation-to-matter assignment, L3 supplies the alpha = 1/3 bounded normalization, and L4 supplies the GMN coefficient. However, the source and runner also carry downstream GUT-normalization quantitative claims; for the stated Y_alpha = alpha(P_sym - 3P_anti), Tr[Y_alpha^2] is 24 alpha^2, with 8/3 only at alpha = 1/3, and the runner Part 6 prints inconsistent SU(2) trace/sin^2 checks without executable assertions. Under the current math-audit policy, that unquarantined quantitative drift prevents a clean verdict as written.
+
+Auditor-quoted load-bearing step:
+The combined SM-Y matching follows from the 1:(-3) ratio plus the LHCM matter assignment once the alpha = 1/3 normalization boundary is fixed.
+
+Auditor's repair target (canonical class + action):
+scope_too_broad: remove or explicitly quarantine the GUT-normalization/sin^2 downstream quantitative claims from this note and runner, or add a direct audited squared-trace authority; because this is a downstream-scope repair, add a dated downstream-hygiene line to this note's own boundary so hash drift requeues the row.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
 
 
 ### `n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17`
@@ -2606,41 +2635,12 @@ drive.
 
 Auditor judged that the chain needs a new theorem for a physical carrier, readout, unit map, boundary condition, sector choice, normalization, or observable bridge. To close: derive the missing bridge from retained primitives so the audited claim no longer asserts it.
 
-_16 rows in this category._
-
-
-### `hypercharge_identification_note`
-
-**Note:** [docs/HYPERCHARGE_IDENTIFICATION_NOTE.md](docs/HYPERCHARGE_IDENTIFICATION_NOTE.md)  |  **Descendants:** 1124  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/HYPERCHARGE_IDENTIFICATION_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Conditional chain assembly: given the traceless U(1) ratio, the LHCM SU(3) representation-to-matter assignment, and the alpha=1/3 normalization/GMN readout, the LH-doublet hypercharge and charge tables match the SM values.
-
-Auditor's verdict_rationale:
-Issue: The algebraic assembly is correct only after accepting the LHCM matter-assignment convention and the alpha=1/3/GMN/electron-charge premise packet, and those readout and normalization premises are explicitly not derived in the restricted packet. Why this blocks: the runner computes projector, trace, commutation, and charge consistency, but it imports the physical readout and normalization rather than deriving them. Repair target: derive or formally ratify the Anti^2-as-L_L readout, GMN relation, T3(e_L), and Q(e_L) premise packet as retained or accepted inputs; claim boundary until fixed is conditional LH-doublet chain assembly.
-
-Auditor-quoted load-bearing step:
-The combined SM-Y matching follows from the +1:(-3) ratio plus the LHCM Sym^2/Anti^2 matter assignment once the alpha=1/3 normalization/readout convention is fixed.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: cheapest repair is a retained or explicitly accepted bridge for the matter/readout and alpha-normalization premise packet, or keep the row scoped as conditional chain assembly.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
+_12 rows in this category._
 
 
 ### `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`
 
-**Note:** [docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)  |  **Descendants:** 503  |  **Class:** E
+**Note:** [docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)  |  **Descendants:** 1002  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md.
@@ -2667,38 +2667,9 @@ drive.
 ```
 
 
-### `shapiro_delay_note`
-
-**Note:** [docs/SHAPIRO_DELAY_NOTE.md](docs/SHAPIRO_DELAY_NOTE.md)  |  **Descendants:** 89  |  **Class:** C
-
-```
-Use the physics-loop skill to close the conditional audit on docs/SHAPIRO_DELAY_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: C
-- claim_scope: Bounded finite three-family/two-seed proxy phase replay over the declared Shapiro delay harness, including the asserted inherited static-cone non-uniqueness boundary and excluding physical Shapiro-law, lab-calibration, and field-speed claims.
-
-Auditor's verdict_rationale:
-Issue: the finite replay table is computed rather than printed, but the source also says a static cone shape can reproduce the same phase curve. Why this blocks: the supplied retained_no_go static-discriminator authority shows a different causal/static curve than the repaired table, and the primary runner only text-checks that the boundary is mentioned. Repair target: rerun or prove the static-cone discriminator against the repaired shapiro_delay_portable table, or narrow the note to say only that no uniqueness claim is made. Claim boundary until fixed: the bounded finite c-dependent replay with exact zero control, small family spread, and monotone phase is supported; the exact same-curve static mimic for this repaired table is not closed by the packet.
-
-Auditor-quoted load-bearing step:
-The primary runner recomputes the bounded c-dependent phase table from scripts/shapiro_delay_portable.py and asserts exact zero control, small family spread, monotone phase increase as c decreases, table agreement, and bounded non-physical scope.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem — add a refreshed static-cone discriminator run or theorem for the repaired shapiro_delay_portable table, or narrow the safe read to exclude same-curve mimic.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
 ### `ckm_five_sixths_bridge_support_note`
 
-**Note:** [docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md](docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md)  |  **Descendants:** 67  |  **Class:** D
+**Note:** [docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md](docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md)  |  **Descendants:** 68  |  **Class:** D
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md.
@@ -2717,35 +2688,6 @@ The bounded bridge asserts |V_cb| = (m_s/m_b)^(5/6), so [alpha_s(v)/sqrt(6)]^(6/
 
 Auditor's repair target (canonical class + action):
 missing_bridge_theorem: derive the 5/6 CKM-to-mass-ratio bridge and the threshold-local scale-selection rule from approved premises, then update the runner to compute rather than assume those steps.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17`
-
-**Note:** [docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md](docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md)  |  **Descendants:** 49  |  **Class:** B
-
-```
-Use the physics-loop skill to close the conditional audit on docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: open_gate
-- load_bearing_step_class: B
-- claim_scope: Conditional supplied-premise interval-composition certificate for same-surface DM thermal endpoint bounds and admitted one-scalar root bracketing, using retained-bounded thermal/channel authorities plus supplied live constants and selector/packet premises.
-
-Auditor's verdict_rationale:
-The runner does real interval/bracketing work and the displayed endpoint/root checks pass, but it imports load-bearing helper constants and certified-enclosure routines rather than deriving the live DM packet from framework primitives. The live constants edge certificate is only bounded support and explicitly does not derive CANONICAL_PLAQUETTE = 0.5934, ETA_OBS, or OMEGA_DM_OBS; PLAQUETTE_SELF_CONSISTENCY_NOTE likewise withholds the canonical 0.5934 value. The packet-completeness/selector premise remains open even on the source note's own terms, so the row is a valid conditional interval certificate rather than a clean closure theorem.
-
-Auditor-quoted load-bearing step:
-Given the endpoint constants and certified helper enclosures, the interval arithmetic, disjointness, target bracketing, and one-scalar root bracketing all close in the visible runner.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: supply retained one-hop derivations for the live plaquette/eta/Omega constants and the packet-completeness/selector premise, then re-audit the same interval-composition runner.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.
@@ -2949,35 +2891,6 @@ Generation-uniform scalar actions cancel in r=|b|^2/a^2 and any function of the 
 
 Auditor's repair target (canonical class + action):
 missing_bridge_theorem: add and audit a retained theorem deriving the SM sector-to-representation/readout bridge, or split the row so the audited scope is explicitly conditional on that premise; rerun no-go-discipline N1-N8 before any clean no-go verdict.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16`
-
-**Note:** [docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md](docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: open_gate
-- load_bearing_step_class: A
-- claim_scope: External open gate recording the fractional-instanton action arithmetic on twisted T^4 as an algebraic decoration, with the dilute-gas/condensate and hierarchy bridge left open.
-
-Auditor's verdict_rationale:
-The runner source performs symbolic arithmetic and source-boundary checks, and its PASS=44 output is consistent with the note's narrowed action-core decoration. However, the note itself keeps the dilute-gas and condensate bridge open and the cited retained-bounded authorities expressly support only the action-core arithmetic. This is therefore not a closed positive theorem for a condensate, hierarchy bridge, determinant prescription, or framework substrate/observable identification.
-
-Auditor-quoted load-bearing step:
-The retained-bounded action normalization plus twisted Q = k/N arithmetic gives S_frac(k,N) = (8*pi^2/g^2)|k/N|, while the dilute-gas determinant/measure/coupling-scale/convergence bridge is explicitly not supplied.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: supply a retained bridge deriving the dilute-gas determinant, measure, phase-space density, coupling-scale prescription, validity regime, convergence/condensate criterion, and any framework substrate/observable identification.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.

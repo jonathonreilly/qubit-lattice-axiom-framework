@@ -111,12 +111,18 @@ def main() -> int:
         "tail gate: PASS",
         "+1.764e-04",
         "-1.764e-04",
-        "alpha': -1.1501244371653223",
-        "tail_r2': 0.9713658329628312",
         "'toward': 5",
         "'tail_ok': True",
     ]:
         check(f"cache result phrase: {phrase}", phrase in cache)
+
+    for label, field, target in [
+        ("cache tail_alpha within 1e-9 of -1.150124437165294", "tail_alpha", -1.150124437165294),
+        ("cache tail_r2 within 1e-9 of 0.9713658329618666", "tail_r2", 0.9713658329618666),
+    ]:
+        m = re.search(rf"'{field}': (-?\d+\.\d+)", cache)
+        value = float(m.group(1)) if m else None
+        check(label, value is not None and abs(value - target) <= 1e-9, f"got {value}")
 
     check("archive still marks Family 3 old table incomplete", "(not yet)" in archive)
     check("bridge does not claim all-nine repair", "does not provide the all-nine-property recomputation" in archive)

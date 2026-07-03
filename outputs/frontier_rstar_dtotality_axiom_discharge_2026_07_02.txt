@@ -19,4 +19,7 @@ CHECK 18: PASS — note asserts it adjudicates nothing
 CHECK 19: PASS — note asserts no wall is closed
 CHECK 20: PASS — note flags siblings as review-pending citations
 CHECK 21: PASS — note states 'evaluation is not a domain'
-TOTAL: PASS=21 FAIL=0
+CHECK 22: PASS — metadata: note declares canonical bounded_theorem type fields
+CHECK 23: PASS — metadata: note uses audit boundary, not legacy status-authority/status-surface wording
+CHECK 24: PASS — dependency hygiene: landed premise surfaces are linked and review-pending siblings are not dependency links
+TOTAL: PASS=24 FAIL=0

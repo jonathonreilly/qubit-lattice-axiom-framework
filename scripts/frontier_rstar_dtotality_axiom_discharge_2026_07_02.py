@@ -28,7 +28,8 @@ Check map (theorem -> checks), matching the note's [checks i-j] markers:
     T2  D-totality -> law sentence       : CHECK 10-11
     T3(a) pointwise escape / motion      : CHECK 12-14
     T3(b) narrowed domain / supplier     : CHECK 15-16
-    T4  ladder consequence (note greps)  : CHECK 17-20
+    T4  ladder consequence (note greps)  : CHECK 17-21
+    Metadata/dependency hygiene          : CHECK 22-24
 """
 
 import os
@@ -331,6 +332,22 @@ check(contains_norm(NOTE, "review-pending"), "note flags siblings as review-pend
 check(
     contains_norm(NOTE, "evaluation is not a domain"),
     "note states 'evaluation is not a domain'",
+)
+check(
+    "**Type:** bounded_theorem" in NOTE and "**Claim type:** bounded_theorem" in NOTE,
+    "metadata: note declares canonical bounded_theorem type fields",
+)
+check(
+    "**Audit boundary:** independent audit lane only" in NOTE
+    and "**Status authority:**" not in NOTE
+    and "**Actual current surface status:**" not in NOTE,
+    "metadata: note uses audit boundary, not legacy status-authority/status-surface wording",
+)
+check(
+    "(MINIMAL_AXIOMS_2026-06-29.md)" in NOTE
+    and "(REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md)" in NOTE
+    and "Review-pending sibling details are listed as PR numbers only and are not dependency links." in NOTE,
+    "dependency hygiene: landed premise surfaces are linked and review-pending siblings are not dependency links",
 )
 
 # ---------------------------------------------------------------------------

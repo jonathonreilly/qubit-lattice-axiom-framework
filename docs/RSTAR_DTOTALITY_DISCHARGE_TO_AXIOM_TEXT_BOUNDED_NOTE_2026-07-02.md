@@ -1,16 +1,12 @@
 # R* and D-totality Discharge To Landed Axiom Text (Bounded Note)
 
 **Date:** 2026-07-02
-**Type:** bounded theorem (interpretive-premise discharge)
+**Type:** bounded_theorem
 **Claim type:** bounded_theorem
-**Status authority:** Audit status is set only by the independent audit lane.
-This note carries no audit verdict and requests none; nothing here sets,
-implies, or predicts the status of any row, block, wall, or pull request.
-**Actual current surface status:** a bounded discharge result over landed axiom
-text plus finite witnesses. Every sibling it leans on (blocks 03, 05, 16, 17;
-PR #4851) is review-pending; their statuses belong to the audit lane alone.
-**Primary runner:** `scripts/frontier_rstar_dtotality_axiom_discharge_2026_07_02.py`
-**Runner output:** `outputs/frontier_rstar_dtotality_axiom_discharge_2026_07_02.txt`
+**Scope boundary:** Bounded discharge of R* and D-totality premise clauses to already-landed axiom/primitive text plus finite witnesses only; no sibling status is set, no wall or gate is closed, no adjudication or de-listing is made, and no axiom, policy, primitive, registry, audit, or publication surface is edited.
+**Audit boundary:** independent audit lane only. This note carries no audit verdict and requests none; nothing here sets, implies, or predicts the status of any row, block, wall, or pull request.
+**Primary runner:** [`scripts/frontier_rstar_dtotality_axiom_discharge_2026_07_02.py`](../scripts/frontier_rstar_dtotality_axiom_discharge_2026_07_02.py)
+**Runner output:** [`outputs/frontier_rstar_dtotality_axiom_discharge_2026_07_02.txt`](../outputs/frontier_rstar_dtotality_axiom_discharge_2026_07_02.txt)
 
 ## Firewall
 
@@ -32,7 +28,7 @@ interpretive premise flagged for audit adjudication rather than asserted as
 axiom content. This note takes the two readings named by review-pending
 siblings — **R\*** (registrability reading, PR #4818 block03) and **D-totality**
 (PR #4820 block05) — and shows each is an instance of an already-landed
-sentence in `docs/MINIMAL_AXIOMS_2026-06-29.md`. Discharging a reading to axiom
+sentence in [`docs/MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md). Discharging a reading to axiom
 text proposes that nothing remains to adjudicate: the premise's content is a
 sentence the framework already carries. Whether to de-list any adjudication
 item is the audit lane's own triage call. This decides nothing about whether
@@ -42,7 +38,7 @@ clause from each.
 ## Supplied Surface
 
 Every sentence used below is quoted verbatim from the landed axiom memo
-`docs/MINIMAL_AXIOMS_2026-06-29.md`. The runner guards each by
+[`docs/MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md). The runner guards each by
 whitespace-normalized containment. **[checks 1-6]**
 
 Record axiom (readout content and additivity):
@@ -162,7 +158,7 @@ and content-specifiable, hence a lawful narrow domain — but like variant (b) i
 is silent at every other admissible state, so it is no full-surface context
 supplier and relocates with variant (b) **[check 14]**. "A law privileges no
 states" independently bars the intensional preferred-state form.
-Independently, the realized-state primitive's own interface disclaims supplying
+Independently, the [`realized-state primitive`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md)'s own interface disclaims supplying
 any domain certificate: "pointwise evaluation, not a state-selection rule ... no
 preferred state, default state." Pointwise **evaluation** of a lawful rule at the
 realized state is untouched — the runner evaluates a motion-closed rule at the
@@ -229,11 +225,12 @@ attached to either.
   registry content.
 - Does **not** read any branch content beyond the supervisor-supplied excerpts.
 
-## Dependencies
+## Dependencies And Context
 
-- `docs/MINIMAL_AXIOMS_2026-06-29.md` — the landed axiom memo (Record additivity
+- [`docs/MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — the landed axiom memo (Record additivity
   sentence; "A readout value is determined by record content alone."; the law
   sentence; the two distinction clauses; "about each site").
+- [`docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) — approved framework primitive interface for pointwise evaluation, not state-domain certification.
 - Review-pending PR #4818 (block03) — R\* and the C1a/C1b result shape.
 - Review-pending PR #4820 (block05) — D-totality, the degeneracy-loci
   three-horn provenance collapse, and the T4 escape.
@@ -241,8 +238,7 @@ attached to either.
   theorem (restated inline in T3(a)).
 - Review-pending blocks 16/17 — the w-supplier rung (forcing fork; scale
   absorption / `W_readout_coupling` residue).
-- The realized-state primitive (approved framework primitive) — quoted as its
-  interface: pointwise evaluation carries zero state-contingent content.
+- Review-pending sibling details are listed as PR numbers only and are not dependency links.
 
 ## No-Promotion Statement
 

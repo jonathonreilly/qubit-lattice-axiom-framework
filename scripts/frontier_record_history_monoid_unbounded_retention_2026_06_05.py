@@ -21,6 +21,7 @@ from __future__ import annotations
 
 from collections import Counter
 from itertools import product
+from pathlib import Path
 from typing import Iterable
 
 import sympy as sp
@@ -31,6 +32,8 @@ FAIL = 0
 
 
 ALPHABET = ("singlet", "doublet", "other")
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md"
 
 
 def check(name: str, cond: bool, detail: str = "") -> bool:
@@ -187,10 +190,23 @@ def main() -> int:
     check("B7.2 lengths are unbounded over finite N samples", max(finite_lengths) > 10)
     check("B7.3 no single constructed history has infinite length", all(isinstance(length, int) for length in finite_lengths))
 
+    # ------------------------------------------------------------------
+    # 8. Source-boundary guardrails.
+    # ------------------------------------------------------------------
+    note_text = NOTE.read_text(encoding="utf-8")
+    note_flat = " ".join(note_text.split())
+    check("G8.1 source note declares bounded theorem, not positive closure", "**Claim type:** bounded_theorem" in note_text)
+    check("G8.2 source note records exact post-record support boundary", "exact post-record support theorem" in note_text)
+    check("G8.3 source note says production is not derived", "Does not prove that nonzero records are physically produced" in note_text)
+    check("G8.4 source note says readout context/alphabet are supplied", "supplied finite record alphabet" in note_flat and "Does not derive the readout context" in note_text)
+    check("G8.5 source note keeps probability and IID outside the result", "Does not derive probability, independence, IID structure" in note_text)
+    check("G8.6 source note blocks retained-status proposal language", "makes no retained-status proposal" in note_flat and "does not use bare retained language" in note_flat)
+    check("G8.7 source note names downstream additivity row without promoting it", "RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md" in note_text and "does not claim" in note_flat)
+
     print("\n=== Record history interpretation ===")
     print("Finite record histories form an append-only free monoid; counts form N^O.")
     print("Z^3 gives arbitrarily many distinct sites for any finite N, so no fixed finite cap is imposed by the framework carrier.")
-    print("This is unbounded finite retention, not completed infinity and not coherent qubit-state storage.")
+    print("This is bounded post-record support for unbounded finite retention, not production closure, completed infinity, or coherent qubit-state storage.")
     print(f"SCORECARD PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
 

@@ -130,8 +130,8 @@ def main() -> int:
     )
     check(
         "parent preserves dilute-gas and condensate blockers",
-        "dilute-gas determinant/measure/coupling-scale/convergence bridge remains open" in flat_parent
-        and "condensate formation remains external model-regime language" in flat_parent,
+        "it is **not** authority for the dilute-gas determinant, measure, phase-space density, coupling-scale prescription, finite-volume/temperature regime, convergence, or condensate formation" in flat_parent
+        and "dilute-gas/condensate content segregated as the unsupplied bridge" in flat_parent,
     )
     check(
         "parent remains an open gate with no status promotion",

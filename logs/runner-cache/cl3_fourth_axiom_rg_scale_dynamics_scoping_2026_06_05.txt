@@ -1,0 +1,192 @@
+===== runner cache v1 =====
+runner: scripts/cl3_fourth_axiom_rg_scale_dynamics_scoping_2026_06_05.py
+runner_sha256: faca1e06ad670106848af5292a40d040e9fecca4567664a2dc5774a1c8631112
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.73
+status: ok
+----- stdout -----
+
+######################################################################
+# Fourth-Axiom Scoping: RG / Scale Dynamics for generation moduli
+######################################################################
+
+NOTE-CHECK: note declares meta metadata: True
+NOTE-CHECK: note declares historical scoping boundary: True
+NOTE-CHECK: note leaves audit verdicts to independent lane: True
+
+======================================================================
+Section 1: BAR 1 — Generic-values (four distinct observed moduli)
+======================================================================
+  observed r_lep   = 0.5000
+  observed r_down  = 0.5970
+  observed r_up    = 0.7735
+  observed r_nu     <  0.5   (hierarchical, band only)
+
+  spread over (lep,down,up) = 0.2735  (r in [0.500, 0.773])
+  best single r* (midrange) = 0.6367; worst-sector miss = 0.1367
+  -> four moduli genuinely distinct (spread>0.2): True
+  -> a single universal fixed point fails BAR 1 (miss>0.1): True
+
+======================================================================
+Section 2: Toy beta(r) — fixed points and IR attractivity (sympy)
+======================================================================
+  beta(r) = c1 * r * (r - rstar)
+  fixed points (beta=0): [0, rstar]
+  beta'(0)     = -c1*rstar
+  beta'(rstar) = c1*rstar
+  IR convention: t -> -inf is IR; IR-attractive <=> beta'(r*) > 0
+  with c1>0, 0<rstar<1:  r=0 is IR-repulsive, r=rstar is
+  the unique IR attractor (ONE number = an INPUT of beta).
+
+  IR funnel test (integrate to IR from 7 UV seeds, c1=1, rstar=0.5):
+    r_UV = 0.05  ->  r_IR = 0.5000
+    r_UV = 0.20  ->  r_IR = 0.5000
+    r_UV = 0.45  ->  r_IR = 0.5000
+    r_UV = 0.55  ->  r_IR = 0.5000
+    r_UV = 0.70  ->  r_IR = 0.5000
+    r_UV = 0.90  ->  r_IR = 0.5000
+    r_UV = 1.20  ->  r_IR = 0.5000
+  basin seeds all land on the SINGLE attractor 0.5: True
+  => an IR attractor funnels GENERIC UV data to ONE value,
+     so it CANNOT produce four distinct sector moduli. (BAR 1)
+
+======================================================================
+Section 3: BAR 2 — running from a UV boundary condition (relocation)
+======================================================================
+  toy flow dr/dt = -k r,  k=0.03, window=17.0 decades
+  closed form: r_IR = exp(-k * t_window) * r_UV = 0.3090 * r_UV
+  UV->IR map (monotone, invertible):
+    r_UV=0.10  ->  r_IR=0.0309   (recover r_UV = r_IR/0.3090)
+    r_UV=0.30  ->  r_IR=0.0927   (recover r_UV = r_IR/0.3090)
+    r_UV=0.50  ->  r_IR=0.1545   (recover r_UV = r_IR/0.3090)
+    r_UV=0.60  ->  r_IR=0.1854   (recover r_UV = r_IR/0.3090)
+    r_UV=0.77  ->  r_IR=0.2380   (recover r_UV = r_IR/0.3090)
+    r_UV=1.00  ->  r_IR=0.3090   (recover r_UV = r_IR/0.3090)
+    r_UV=1.50  ->  r_IR=0.4635   (recover r_UV = r_IR/0.3090)
+  map strictly monotone (=> invertible 1-to-1): True
+
+  To hit each OBSERVED sector r at the IR, solve the required UV BC:
+    r_lep^IR = 0.5000  <=  requires r_UV = 1.6180
+    r_down^IR = 0.5970  <=  requires r_UV = 1.9317
+    r_up^IR = 0.7735  <=  requires r_UV = 2.5029
+  Each observed value is reachable -- but ONLY by tuning its own
+  UV boundary condition. The modulus is RELOCATED to the BC,
+  not derived. (BAR 2 failure mode for the running option.)
+
+  INPUT/OUTPUT count (UV-boundary-condition running, per sector):
+    INPUTS  : (i) UV boundary condition r_UV  [the modulus, relabeled]
+              (ii) scale reference / window length (decades)
+              (iii) anomalous-dimension coefficient k  [beta input]
+    OUTPUTS : r_IR  (= a function of the three inputs)
+    NET     : 3 inputs -> 1 output; the modulus enters via (i).
+              Outputs <= inputs: nothing is gained. RELOCATES.
+
+======================================================================
+Section 4: THIRD OPTION — IR-attractive funnel to FOUR values
+======================================================================
+  (a) Single universal attractor rstar:
+      funnels every sector to ONE value -> 1 output, 4 needed.
+      Reproduces at most one sector. FAILS BAR 1.
+
+  (b) Sector-dependent attractor (one rstar_s per sector):
+      sector lep : seed 0.95 -> r_IR=0.5000  (attractor set to observed 0.5000)
+      sector down: seed 0.95 -> r_IR=0.5970  (attractor set to observed 0.5970)
+      sector up  : seed 0.95 -> r_IR=0.7735  (attractor set to observed 0.7735)
+      Works ONLY because rstar_s was SET to the observed modulus.
+      => the attractor location re-encodes the modulus: 1 input
+         per sector. 4 sectors -> 4 inputs. RELOCATES (to rstar_s).
+
+  (c) Sector-independent beta, four distinct UV seeds:
+      requires NO in-window attractor (else all collapse, case a).
+      Then r_IR = Phi(r_UV) invertibly (Section 3): the four
+      observed values need four UV boundary conditions = 4 inputs.
+      Same count as the free moduli themselves. RELOCATES.
+
+  (d) STEELMAN: one universal beta + one shared UV BC, driven by
+      an EXISTING sector charge q_s (no new free input):
+      charge='hypercharge-like Y^2': k fixed by lep -> pred down=0.926 (obs 0.597), up=0.735 (obs 0.773); worst miss=0.329
+      charge='color/triality n_c': k fixed by lep -> pred down=0.125 (obs 0.597), up=0.125 (obs 0.773); worst miss=0.648
+      => no existing single sector charge + universal law
+         reproduces all four moduli (worst miss >> 0.05): works=False
+      The steelman FAILS on the observed numbers: the moduli are
+      not a universal function of an existing sector charge. So
+      the escape that would beat relocation is empirically closed
+      (for these natural charges); any fit re-tunes per sector.
+
+  TOY STRUCTURE THEOREM: producing N distinct sector moduli via
+  scale dynamics costs N inputs (N attractor sites OR N UV BCs).
+  No configuration yields outputs > inputs for the modulus.
+  The 'funnel' third option does not beat relocation.
+
+======================================================================
+Section 5: Input ledger for a *standard* RG flow on the modulus
+======================================================================
+  A renormalization-group flow that could move r requires:
+    - UV boundary condition r(Lambda_UV)
+        role: IS the modulus at the cutoff — the input, relabeled to high scale
+    - scale reference (Lambda_UV / mu_IR ratio, # decades)
+        role: a NEW dimensionful primitive A1/A2/A3 do not contain
+    - gauge / Yukawa couplings entering beta_r
+        role: multiplicative gauge dressing CANCELS in the ratio |b|^2/a^2
+    - anomalous-dimension / self-coupling coefficients in beta_r
+        role: matter-sector circulant beta is NOT retained; an import
+
+  The gauge-coupling channel cannot supply r: a uniform
+  dressing Y -> f(mu) Y leaves |b|^2/a^2 invariant. So the only
+  channels that move r are (UV BC) and (matter-sector beta coeffs)
+  -- the first IS the modulus, the second is an unretained import.
+  This matches the Higgs lambda(M_Pl)=0 precedent (Z/Y-S4b-RGE):
+  RG closure there is BC+import-contaminated -> bounded, not derived.
+
+  numeric check: |b|^2/a^2 under uniform dressing Y->f*Y:
+    base r = 0.360000;  dressed r = ['0.360000', '0.360000', '0.360000', '0.360000']
+    invariant under gauge-type dressing: True
+
+======================================================================
+Section 6: VERDICT
+======================================================================
+  BAR 1 (generic values): the four observed moduli are distinct
+    (lep 0.500, down 0.597, up 0.774, nu<0.5). A single scale-
+    invariant fixed point gives ONE number -> WRONG-VALUES for
+    >=2 sectors. An IR attractor funnels generic UV data to ONE
+    value -> also one number. The fixed-point option is falsified
+    by the quark sectors.
+
+  BAR 2 (relocation): a generic UV->IR run is an invertible map
+    r_IR = Phi(r_UV). Hitting an observed value requires tuning
+    its UV boundary condition. Producing N distinct moduli costs
+    N inputs (N attractor sites OR N UV BCs). Outputs never exceed
+    inputs. The modulus is RELOCATED to the UV boundary condition.
+
+  THIRD OPTION (IR-attractive funnel): does NOT beat relocation.
+    One attractor -> one value (BAR 1 fail); per-sector attractors
+    -> the attractor location IS each modulus (BAR 2 fail).
+
+  Plus a NEW dimensionful scale-reference primitive (the UV cutoff /
+  # decades) is required that A1/A2/A3 do not contain.
+
+  OVERALL VERDICT: RELOCATES (to a UV boundary condition / the
+    matter-sector beta coefficients), with a WRONG-VALUES corner
+    for the single-fixed-point sub-option (falsified by quarks).
+    INPUT COUNT: >= N (one per sector) + 1 scale reference; never
+    fewer inputs than the N moduli it would explain.
+
+  This generalizes Probe-5 (r_lep=1/2 fixed-point bounded
+  obstruction) to all four sectors and formalizes the input count.
+  No fourth axiom is adopted. Owner-authorized SCOPING only.
+
+======================================================================
+NOTE       : PASS = 3, FAIL = 0
+EXACT      : PASS = 15, FAIL = 0
+BOUNDED    : PASS = 0, FAIL = 0
+TOTAL      : PASS = 18, FAIL = 0
+=== TOTAL: PASS=18, FAIL=0 ===
+======================================================================
+
+Scoping verdict: RELOCATES (UV boundary condition / matter-sector
+beta coefficients) + WRONG-VALUES single-fixed-point corner.
+Inputs >= N moduli + 1 scale reference. No fourth axiom adopted.
+
+----- stderr -----
+

@@ -18,7 +18,7 @@ CAMPAIGN_INDEX = [
     "#4824 block09",
     "#4825 block10",
     "#4828 block13",
-    "#pending block14",
+    "#4829 block14",
     "#4822 block07 moduli",
     "#4827 block12",
 ]
@@ -56,6 +56,9 @@ def main() -> int:
     passed += p
     total += t
     p, t = check("boundary denies audit prediction", "predicts no audit outcome" in text)
+    passed += p
+    total += t
+    p, t = check("no pending PR placeholder remains", "#pending" not in text)
     passed += p
     total += t
 

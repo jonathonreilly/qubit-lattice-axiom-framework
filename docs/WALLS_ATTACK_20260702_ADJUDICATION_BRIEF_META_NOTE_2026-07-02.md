@@ -8,38 +8,39 @@ status, writes no audit verdict, predicts no audit outcome, and does not retag
 any ledger row.
 **Runner:** no runner is needed for the meta note itself; under the repo
 convention, runners verify executable claim content, while this document is a
-review-pending campaign index and owner/audit-lane decision aid. A trivial
-index self-check is included at
-`scripts/frontier_walls_attack_brief_index_selfcheck_2026_07_02.py` and should
-print `PASS/TOTAL` if the supplied PR-number index and ladder list are present
-and internally consistent.
+campaign index and owner/audit-lane decision aid. A trivial index self-check is
+included at
+[`scripts/frontier_walls_attack_brief_index_selfcheck_2026_07_02.py`](../scripts/frontier_walls_attack_brief_index_selfcheck_2026_07_02.py)
+and should print `PASS/TOTAL` if the supplied PR-number index and ladder list
+are present and internally consistent.
 
 ## Three-Line Summary
 
 This note indexes the walls-attack-20260702 campaign for owner and audit-lane
 consumption.
-The campaign consists of 14 review-pending PRs, all bounded or conditional;
-nothing in this brief is retained authority.
+The campaign consists of landed, reviewed, and still-stacked PRs, all bounded
+or conditional; nothing in this brief is retained authority.
 The live decision surface is the carrier/kappa ladder, the action-object
 bifurcation, and the moduli word-supplier question.
 
 ## Purpose
 
 This is a meta decision aid for the walls-attack-20260702 campaign. The
-campaign is indexed here as 14 review-pending PRs, all bounded or conditional:
+campaign is indexed here as landed, reviewed, and still-stacked PRs, all
+bounded or conditional:
 #4816, #4817, #4818, #4820, #4821, #4823, #4826, #4819, #4824, #4825, #4828,
-#pending block14, #4822, and #4827. Nothing in those campaign notes is retained
-on this branch, and nothing in this brief grants authority to them. The audit
-lane is the sole authority for any retained status, scope ruling, or later
-verdict.
+#4829 block14, #4822, and #4827. Nothing in the campaign notes is retained by
+this brief, and nothing in this brief grants authority to them. The audit lane
+is the sole authority for any retained status, scope ruling, or later verdict.
 
 The parent wall for this brief is the carrier-measure boundary note,
-`FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30`: Record supplies finite
-additive readout coordinates, while the generator-channel Hilbert-Schmidt
-weight remains a supplied carrier/readout-selection bridge. The kappa wall is
-`EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09`: `kappa_EW`
-remains a weighting/readout-bridge choice not supplied by the current approved
-baseline alone. This brief uses those walls only as boundary context.
+[`FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md`](FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md):
+Record supplies finite additive readout coordinates, while the generator-channel
+Hilbert-Schmidt weight remains a supplied carrier/readout-selection bridge. The
+kappa wall is
+[`EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md`](EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md):
+`kappa_EW` remains a weighting/readout-bridge choice not supplied by the current
+approved baseline alone. This brief uses those walls only as boundary context.
 
 ## Campaign Index
 
@@ -54,7 +55,7 @@ baseline alone. This brief uses those walls only as boundary context.
 - #4824 block09: composition additivity selects the semigroup CLASS only (Z5 jump witness); Q-gen named.
 - #4825 block10: single-step locality excludes Q-gen (deficit 4sin^2(pi/N)); signed-weight obstruction; selection trichotomy.
 - #4828 block13: exact Q-gen fails positivity on tested Z_N (explicit witnesses); positive object = wrapped Gaussian (certified corrections).
-- #pending block14: all-odd-N closed-form Metzler violation at j=2 - in-flight.
+- #4829 block14: all-odd-N closed-form Metzler violation at j=2 - in-flight.
 - #4822 block07 moduli: selector constraint map (ratio-direct; dial-point structure; non-color sector label).
 - #4827 block12: word dial sets densify in [1/2,1], exact boundary 1/2; word-supplier residual; 2^(-1/3) lead recontextualized.
 
@@ -69,7 +70,7 @@ TRUE, it conditionally unlocks C1a as a candidate discharge of the
 no-imported-basis side of C1 for both the carrier and kappa_EW walls. If
 adjudicated FALSE, C1a returns to a supplied-context residual, so the campaign
 does not get a reading-level path from registrability into no-imported-basis.
-This lives in review-pending PR #4818 block03.
+This is indexed in PR #4818 block03.
 
 **D-totality.** D-totality is the proposed condition under which C1b can be
 treated as closed by the fine-partition recovery obstruction rather than left
@@ -78,8 +79,8 @@ are not Y-recoverable at admissible degeneracy loci under D-totality, while the
 pointwise escape stands without D-totality. If adjudicated TRUE, it
 conditionally unlocks C1b as a campaign closure path for the no-imported-frame
 residual identified in the carrier ladder. If adjudicated FALSE, C1b remains
-open because the pointwise escape is still available. This lives in
-review-pending PR #4820 block05.
+open because the pointwise escape is still available. This is indexed in PR
+#4820 block05.
 
 **w-supplier.** The w-supplier is the missing selector for the weighting
 parameter after C2 has been reduced to normal form. Its exact discriminator is
@@ -87,8 +88,8 @@ parameter after C2 has been reduced to normal form. Its exact discriminator is
 content-determined rational class. If adjudicated TRUE, it conditionally
 unlocks C2 as a supplied weighting bridge that can be compared against the
 parent kappa wall's missing weighting/readout-bridge rule. If adjudicated
-FALSE, C2 remains a one-parameter freedom rather than a selected value. This
-lives in review-pending PR #4826 block11.
+FALSE, C2 remains a one-parameter freedom rather than a selected value. This is
+indexed in PR #4826 block11.
 
 **CTX-match.** CTX-match is the weakened residual left after E-ident separates
 component-dictionary weights from the channel-energy question. Its exact
@@ -99,8 +100,8 @@ readout-context supplier family, aligning the carrier-side component dictionary
 with the context question instead of treating it as an independent energy
 selection. If adjudicated FALSE, the E-ident split does not reduce the residual
 to context matching, and the S1-vs-S2 residual remains the sharper unresolved
-surface. This lives in review-pending PR #4823 block08, with the exact
-S1-vs-S2 residual equivalence indexed by review-pending PR #4821 block06.
+surface. This is indexed in PR #4823 block08, with the exact S1-vs-S2 residual
+equivalence indexed by PR #4821 block06.
 
 ## The Action Bifurcation
 
@@ -117,9 +118,9 @@ the Q-gen versus locality tension: single-step locality excludes Q-gen by the
 deficit `4sin^2(pi/N)`, adds the signed-weight obstruction, and leaves a
 selection trichotomy. #4828 block13 sharpens the object bifurcation: exact Q-gen
 fails positivity on tested Z_N by explicit witnesses, while the positive object
-is the wrapped Gaussian with certified corrections. #pending block14 is
-in-flight and may be cited only as "all-odd-N closed-form Metzler violation at
-j=2" with no status.
+is the wrapped Gaussian with certified corrections. #4829 block14 proposes the
+all-odd-N closed-form Metzler violation at j=2; while it remains unlanded, cite
+it with no status.
 
 The owner question is therefore not whether this brief selects an action. It
 does not. The owner question is: if a future bridge were admitted or derived,
@@ -153,8 +154,8 @@ for audit adjudication.
 
 ## Boundary
 
-This brief sets no status, predicts no audit outcome, and is itself
-review-pending. It is a meta index for owner and audit-lane consumption only.
+This brief sets no status, predicts no audit outcome, and is itself a meta
+decision aid. It is a meta index for owner and audit-lane consumption only.
 Any retained claim, admissible import, bridge status, or audit verdict must come
 from the independent audit lane or an owner-approved governance action, not
 from this note.

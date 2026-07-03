@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lepton_mass_scale_mw_over_256_empirical_open_gate.py
-runner_sha256: a5b0055d6d66b50dfdd59a1bdc0909d7fe6dd862437b4f441c21f0494d70ea22
+runner_sha256: 9c086aa3f9031e6ff088183047e3917461642cc26752fdf86f4d42bd5c477523
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
 ================================================================================
@@ -81,9 +81,18 @@ Explicit non-claims (audit-discipline)
   [PASS] Does NOT predict any audit verdict
   [PASS] Does NOT promote/retire/re-classify any existing audit row
   [PASS] Does NOT claim lepton-sector closure
+  [PASS] downstream scale boundary: M2 tensor d4 dimension 256 row is registered as bounded_theorem  (m2_tensor_d4_dimension_256_bounded_note_2026-05-26: claim_type=bounded_theorem, note_path=docs/M2_TENSOR_D4_DIMENSION_256_BOUNDED_NOTE_2026-05-26.md)
+  [PASS] downstream scale boundary: exact bookkeeping factor is dim_C(M2(C))^4 = 256  (4^4=256)
+  [PASS] downstream scale boundary: 256 support is not an m_W or lepton-mass derivation  (bounded tensor-dimension support leaves electroweak scale and observations external)
+  [PASS] downstream delta boundary: finite 2/9 weight row is registered as bounded_theorem  (flavor_asymmetry_2over9_forced_weight_2026-05-31: claim_type=bounded_theorem, note_path=docs/FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md)
+  [PASS] downstream delta boundary: radian native-unit separation row is registered as bounded_theorem  (koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25: claim_type=bounded_theorem, note_path=docs/KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md)
+  [PASS] downstream delta boundary: A1 radian bridge irreducibility row is registered as no_go  (koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24: claim_type=no_go, note_path=docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
+  [PASS] downstream delta boundary: delta orientation row is registered as bounded_theorem  (koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08: claim_type=bounded_theorem, note_path=docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md)
+  [PASS] downstream delta boundary: finite rational 2/9 is not the bare-radian phase by itself  (2/9, pi*(2/9), 2*pi*(2/9) remain distinct)
+  [PASS] downstream delta boundary: finite 2/9 family coincidence is N=3-specific  (prevents promoting a family identity from the N=3 coincidence)
 
 ================================================================================
-Summary: PASS=28 FAIL=0
+Summary: PASS=37 FAIL=0
 ================================================================================
 Empirical comparator a²_lepton ~= m_W / 256 = m_W / (dim_C(M_2(C)))^4
   m_W / 256 = 313.9422 MeV

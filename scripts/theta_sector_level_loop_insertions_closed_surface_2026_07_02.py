@@ -8,15 +8,18 @@ settles how LOOP INSERTIONS act at sector level, establishing everything by
 direct enumeration / character quadrature versus the closed form -- never a
 formula checked against itself.
 
-Abelian (U(1)) mechanism, established by constrained dual enumeration:
+Abelian (U(1)) mechanism, established by finite-window constrained dual
+enumeration:
   Inserting a charge-q Wilson loop around ONE plaquette shifts that
   plaquette's effective dual label to n_p + q in every link constraint it
   enters. The surviving assignments have the enclosed plaquette's bare label
   offset by -q from the common exterior label n, so
       Z_q = sum_n c_n^{V-1} c_{n+q}       (V = 4 here),
-  and the insertion is DIAGONAL in the exterior sector sum: each enumeration
+  and the insertion is DIAGONAL in the exterior sector sum: each enumerated
   term belongs to one exterior label n. Loop insertion = fusion at the
-  abelian level = a label shift of the enclosed region.
+  abelian level = a label shift of the enclosed region. The runner checks the
+  termwise mechanism on the finite label window |n| <= 6; it does not assert an
+  analytic tail bound for the infinite U(1) character expansion.
 
 Nonabelian (SU(2)) analogue, established by S^3 character quadrature:
   Heat-kernel plaquette weight b_j = exp(-t j(j+1)). No-insertion gluing of a
@@ -33,21 +36,23 @@ Nonabelian (SU(2)) analogue, established by S^3 character quadrature:
   channel with weight equal to the exact fusion multiplicity. The generic-XY
   form [N/d_{j2}] chi_{j2}(XY) of the sketch was tested and REJECTED here as
   convention-dependent (the coefficient is not (X,Y)-independent); the verified
-  convention is the class-trace form above.
+  convention is the class-trace form above, and the runner includes an
+  open-argument coefficient rejector.
 
-Sections and checks (A1-A4, B1, C1, C2 = 7):
+Sections and checks (A1-A4, B1, C1-C3 = 8):
   A. U(1) ground: enumeration versus closed form on the 2x2 torus dual, with
      and without a charge-q loop around one plaquette; sector-diagonality.
   B. Conjugation equivariance: c_n = c_{-n} and charge flip q -> -q maps the
      per-sector weights n -> -n.
   C. SU(2) fusion at sector level: derive/verify the fusion-gluing identity by
-     S^3 quadrature, with a discriminating non-fusion zero, then assemble the
-     two-cell insertion value and report the sector-pair table.
+     S^3 quadrature, with a discriminating non-fusion zero, assemble the
+     two-cell insertion value and report the sector-pair table, then reject the
+     generic-argument coefficient sketch.
 
 Deterministic: numpy only, fixed seed, midpoint quadratures, no scipy, no fits,
 no network.
 
-Expected close: TOTAL: PASS=7 FAIL=0
+Expected close: TOTAL: PASS=8 FAIL=0
 """
 from __future__ import annotations
 
@@ -133,9 +138,10 @@ def enumerate_dual(insert_plaq=None, q: int = 0):
     deltas force the exterior plaquettes' common label n to equal the enclosed
     plaquette's bare label MINUS q, i.e. the enclosed weight is c_{n+q} while
     the three exterior weights are c_n. Grouped by the exterior sector label n
-    the per-sector weight is then exactly c_n^{V-1} c_{n+q}. The +q vs -q sign
-    of the constraint shift is fixed here by that term-by-term match; the total
-    Z_q is relabeling-invariant either way.
+    the per-sector weight is then exactly c_n^{V-1} c_{n+q} on the enumerated
+    finite label window. The +q vs -q sign of the constraint shift is fixed
+    here by that term-by-term match; the total Z_q is relabeling-invariant
+    either way.
     """
     Z = 0.0
     per_sector: dict[int, float] = {}
@@ -178,7 +184,8 @@ print("A. U(1) ground (sector-level loop insertions; fusion = label shift):")
 Z0_enum, sect0 = enumerate_dual(insert_plaq=None, q=0)
 Z0_form = sum(C[n] ** 4 for n in _RANGE)
 check(
-    "A1 no insertion (q=0): constrained enumeration = sum_n c_n^4 (re-earn glue)",
+    "A1 no insertion (q=0): finite-window constrained enumeration = "
+    "sum_n c_n^4 (re-earn glue)",
     abs(Z0_enum - Z0_form) < 1e-13,
     f"enum={Z0_enum:.12e} form={Z0_form:.12e} |diff|={abs(Z0_enum - Z0_form):.2e}",
 )
@@ -186,7 +193,8 @@ check(
 Z1_enum, sect1 = enumerate_dual(insert_plaq=(0, 0), q=1)
 Z1_form = closed_form(1)
 check(
-    "A2 charge-1 loop around one plaquette: enumeration = sum_n c_n^3 c_{n+1}",
+    "A2 charge-1 loop around one plaquette: finite-window enumeration = "
+    "sum_n c_n^3 c_{n+1}",
     abs(Z1_enum - Z1_form) < 1e-13,
     f"enum={Z1_enum:.12e} form={Z1_form:.12e} |diff|={abs(Z1_enum - Z1_form):.2e}",
 )
@@ -196,7 +204,7 @@ Z2_form = closed_form(2)
 wrong_fusion = closed_form(1)          # q=1 form is the wrong-fusion rejector
 rel_margin = abs(Z2_enum - wrong_fusion) / abs(Z2_enum)
 check(
-    "A3 charge-2 loop: enumeration = sum_n c_n^3 c_{n+2}; wrong-fusion "
+    "A3 charge-2 loop: finite-window enumeration = sum_n c_n^3 c_{n+2}; wrong-fusion "
     "sum_n c_n^3 c_{n+1} rejected (relative margin > 1e-3)",
     abs(Z2_enum - Z2_form) < 1e-13 and rel_margin > 1e-3,
     f"enum={Z2_enum:.12e} form={Z2_form:.12e} wrong={wrong_fusion:.12e} "
@@ -215,7 +223,7 @@ for q, sect in ((0, sect0), (1, sect1), (2, sect2)):
             diagonal_ok = False
 check(
     "A4 insertion acts diagonally in the sector sum: exterior label n "
-    "contributes exactly c_n^3 c_{n+q} for q in {0,1,2}",
+    "contributes exactly c_n^3 c_{n+q} for q in {0,1,2} on the finite window",
     diagonal_ok,
     f"worst per-sector term mismatch = {worst:.2e}",
 )
@@ -409,6 +417,49 @@ check(
     f"worst orthonormality mismatch={worst_ortho:.2e} "
     f"sector pairs (j1<=3/2): "
     f"{[(a, b) for (a, b, _) in sector_table if a <= 1.5]}",
+)
+
+
+def generic_argument_coefficient(
+    j1: float, j2: float, X: np.ndarray, Y: np.ndarray
+) -> tuple[float, float, float]:
+    """Return (coefficient, integral, denominator) for the rejected sketch."""
+    val = haar_integrate(
+        lambda U: su2_char(j1, X @ U)
+        * su2_char(J_LOOP, U)
+        * su2_char(j2, U.conj().T @ Y)
+    )
+    denom = su2_char(j2, X @ Y)
+    return val / denom, val, denom
+
+
+# C3: reject the generic-argument sketch that the same coefficient
+# (N/d_{j2}) multiplies chi_{j2}(XY) for open arguments. For the fusion pair
+# (j1, j2) = (1/2, 1), class trace gives 1/d_1 = 1/3. Moving X off identity
+# changes the inferred coefficient by an order-one amount, so the bare
+# fusion-multiplicity coefficient is a class-trace statement, not a generic
+# open-transport statement.
+I2 = np.eye(2, dtype=complex)
+X_OPEN = su2_element(0.7, 0.4, 0.2)
+Y_OPEN = su2_element(1.3, 0.7, 1.7)
+coeff_trace, val_trace, den_trace = generic_argument_coefficient(0.5, 1.0, I2, I2)
+coeff_x, val_x, den_x = generic_argument_coefficient(0.5, 1.0, X_OPEN, I2)
+coeff_xy, val_xy, den_xy = generic_argument_coefficient(0.5, 1.0, X_OPEN, Y_OPEN)
+coeffs = [coeff_trace, coeff_x, coeff_xy]
+coeff_spread = max(coeffs) - min(coeffs)
+denoms_safe = min(abs(den_trace), abs(den_x), abs(den_xy)) > 0.1
+class_trace_ok = abs(coeff_trace - (1.0 / d_spin(1.0))) < TOL
+generic_rejected = coeff_spread > 5e-2
+
+check(
+    "C3 generic-argument gluing sketch rejected: inferred coefficient in "
+    "Int chi_{1/2}(XU) chi_{1/2}(U) chi_1(U^dag Y) / chi_1(XY) is not "
+    "argument-independent; class-trace coefficient is the stable fusion "
+    "weight",
+    denoms_safe and class_trace_ok and generic_rejected,
+    f"coeffs=[class {coeff_trace:.6f}, X {coeff_x:.6f}, X/Y {coeff_xy:.6f}] "
+    f"spread={coeff_spread:.3e} vals=[{val_trace:.3e}, {val_x:.3e}, "
+    f"{val_xy:.3e}] denoms=[{den_trace:.3e}, {den_x:.3e}, {den_xy:.3e}]",
 )
 
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")

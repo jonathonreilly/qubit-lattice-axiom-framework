@@ -56710,11 +56710,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
     },
     {
       "from": "repo.front_door_status",
-      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
+      "to": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
     },
     {
       "from": "repo.front_door_status",
@@ -109284,8 +109284,8 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "ew_current_matching_rule_open_gate_note_2026-05-03",
         "cl3_taste_generation_theorem",
@@ -109294,7 +109294,7 @@
         "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7f5f67fb11bbd938291bd77ae5bd057a116a683a46a7afa75112fcc2cc6de354",
+      "note_hash": "5df51f16a434047cc091910ae792df18c2b77638b29ba51001a2b46e97a2fb73",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

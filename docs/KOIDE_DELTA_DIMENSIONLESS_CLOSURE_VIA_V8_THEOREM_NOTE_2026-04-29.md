@@ -22,7 +22,9 @@ numerical witness, NOT promoted by this note. Bare `retained` /
   — Plancherel identity `arg(b) = δ (mod 2π)` inside the Brannen
   parameterization; support-grade.
 - [KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md](KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
-  — Q-δ linking relation; the `δ = Q/d` chain, retained as conditional.
+  — formal definition-level `Delta_d = Q_d/d` identity (the `δ = Q/d`
+  chain); cited for that formal identity only, not as a selector or
+  radian-bridge authority. Status is audit-lane-owned.
 - [KOIDE_Q_EQ_3DELTA_IDENTITY_NOTE_2026-04-21.md](KOIDE_Q_EQ_3DELTA_IDENTITY_NOTE_2026-04-21.md)
   — `Q = p · δ` arithmetic identity; retained.
 - [KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md](KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md)

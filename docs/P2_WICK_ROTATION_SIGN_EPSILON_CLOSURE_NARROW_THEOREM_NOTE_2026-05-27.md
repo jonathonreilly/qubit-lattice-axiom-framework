@@ -7,9 +7,10 @@
 sign-`ε` extension narrow which restates P2 as the binary question
 `ε = e_4^2 ∈ {+1, -1}`; (C-Sc) the
 [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
-single-clock codimension-1 evolution theorem which derives a
-strongly-continuous one-parameter unitary group `U(t) = exp(-itH)` on
-the physical Hilbert space `H_phys` with REAL parameter `t ∈ R`;
+single-clock codimension-1 evolution theorem which derives, conditional
+on B-AXIS, an axis-relative strongly-continuous one-parameter unitary
+group `U(t) = exp(-itH)` on the physical Hilbert space `H_phys` with
+REAL parameter `t ∈ R`;
 (C-Aft) the
 [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md)
 parent which (combined with C-Sc) fixes total spacetime dimension at
@@ -68,7 +69,9 @@ The composition step we record is:
                                     of the reconstructed real-time theory.
 
 Single-clock (C-Sc) constructs U(t) = exp(-itH) on H_phys with real t ∈ R
-and U(t) unitary. RP (C-RP) gives T = exp(-a_τ H) as discrete-Euclidean
+and U(t) unitary, conditional on B-AXIS supplying the blocked time unit
+and evolution-axis/transfer construction. RP (C-RP) gives T =
+exp(-a_τ H) as discrete-Euclidean semigroup. The Wick-rotation
 semigroup. The finite spectral bridge `T^n = U(-inτ)` is the current
 (C-Sc)/(R-STONE) transfer calculus; it is the exact finite-dimensional
 piece this P2 note consumes.

@@ -2,8 +2,20 @@
 # instead of being dropped from the graph or treated as scientific claims.
 # seed_audit_ledger.py reads this file. One fnmatch glob per line. Lines
 # starting with `#` and blank lines are ignored.
+#
+# Precedence: entries here type a source as `meta` BEFORE author
+# `Type:`/`Claim type:` hints are consulted
+# (seed_audit_ledger.default_claim_type_for tier 1). Use this registry for
+# docs-root catalog/index files. Whole infrastructure directories (repo/,
+# work_history/, lanes/, publication/, ai_methodology/) are covered by the
+# hint-respecting prefix tier (seed_audit_ledger.INFRA_META_PATH_PREFIXES)
+# instead, so lane docs and other hinted notes keep their declared types.
+# `meta` rows are never queued for audit and chain-satisfy dependents as
+# stable context — only register documents that carry no claim any
+# dependent could consume as evidence.
 
 docs/AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_*.md
+docs/CANONICAL_HARNESS_INDEX.md
 docs/PHYSICAL_LATTICE_NECESSITY_DEP_DECLARATION_AUDIT_NOTE_*.md
 docs/SCALAR_SELECTOR_FULL_STACK_RECOVERY_NOTE_*.md
 docs/TELEPORTATION_ACCEPTANCE_SUITE_NOTE.md

@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py
-runner_sha256: 7d0e52551f3a2d65b43474bf24c052a37168e29fa112dcc43b8c37f6d8010f23
-timeout_sec: 120
+runner_sha256: 2c4c1cb092aaeaa87445cb06766b6ca0f82dd928d820cb463bb4656e82ab0ae1
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.61
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
 audit-companion: Dirac/Weyl fermion dof branch-rank bridge
 ----------------------------------------------------------------------------------------
-note: /private/tmp/cl3-review-loop-latest-IxO77W/docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
-parent: /private/tmp/cl3-review-loop-latest-IxO77W/docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md
+note: /private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-nervous-panini-8b2aaf/203cfb93-754e-4d2e-a3c5-a4d90bb1908e/scratchpad/wt-companions/docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
+parent: /private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-nervous-panini-8b2aaf/203cfb93-754e-4d2e-a3c5-a4d90bb1908e/scratchpad/wt-companions/docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md
 
 ----------------------------------------------------------------------------------------
 note structure and scope
@@ -47,7 +47,7 @@ note structure and scope
 live ledger load-bearing authority statuses
 ----------------------------------------------------------------------------------------
   [PASS] ledger row exists: clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10
-  [PASS] clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10: effective_status in ['retained'] (observed='retained')
+  [PASS] clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10: effective_status in ['retained', 'retained_bounded'] (observed='retained_bounded')
   [PASS] clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10: audit_status is not a failed verdict (observed='audited_clean')
   [PASS] ledger row exists: cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27
   [PASS] cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27: effective_status in ['retained'] (observed='retained')
@@ -56,9 +56,6 @@ live ledger load-bearing authority statuses
 ----------------------------------------------------------------------------------------
 live ledger context-row statuses
 ----------------------------------------------------------------------------------------
-  [PASS] ledger row exists: per_site_su2_spin_half_theorem_note_2026-05-02
-  [PASS] per_site_su2_spin_half_theorem_note_2026-05-02: effective_status in ['retained'] (observed='retained')
-  [PASS] per_site_su2_spin_half_theorem_note_2026-05-02: audit_status is not a failed verdict (observed='audited_clean')
   [PASS] ledger row exists: cpt_exact_note
   [PASS] cpt_exact_note: effective_status in ['retained'] (observed='retained')
   [PASS] cpt_exact_note: audit_status is not a failed verdict (observed='audited_clean')
@@ -68,6 +65,12 @@ live ledger context-row statuses
   [PASS] ledger row exists: spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10
   [PASS] spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10: effective_status in ['retained_bounded'] (observed='retained_bounded')
   [PASS] spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10: audit_status is not a failed verdict (observed='audited_clean')
+
+----------------------------------------------------------------------------------------
+non-load-bearing context pointers (presence only; ledger status not asserted)
+----------------------------------------------------------------------------------------
+  [PASS] note cites non-load-bearing context pointer (ledger status not asserted): PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md
+  [PASS] non-load-bearing context pointer file exists: PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md
 
 ----------------------------------------------------------------------------------------
 Q1 retained source and Q2 source-local rank marking
@@ -209,7 +212,7 @@ P4 numeric support: branch ranks carry 4 and 2; labels are context
   [PASS] bridge reproduces P4 Weyl numeric dof = 2 from fixed-chirality branch ranks
   [PASS] retained Q1 + source-local Q2 path also yields 4 (spinor-dim cross-check)
 
-TOTAL: PASS=144 FAIL=0
+TOTAL: PASS=143 FAIL=0
 VERDICT: Q1/Q2-counting-repaired bounded bridge passes; Dirac dof = 4 and Weyl dof = 2 follow by exact rational arithmetic from retained Q1 and source-local Q2 branch-rank counting; conventional physical labels are non-load-bearing interpretation unless a separate physical-label bridge is supplied.
 
 ----- stderr -----

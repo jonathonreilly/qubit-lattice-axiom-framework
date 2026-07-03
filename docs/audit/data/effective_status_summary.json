@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1877,
-    "decoration": 60,
-    "meta": 315,
-    "no_go": 432,
+    "bounded_theorem": 1920,
+    "decoration": 50,
+    "meta": 319,
+    "no_go": 433,
     "open_gate": 171,
-    "positive_theorem": 741
+    "positive_theorem": 743
   },
   "cycle_examples": [
     [
@@ -166,13 +166,11 @@
   ],
   "cycles_detected": 14,
   "effective_status_counts": {
-    "audited_conditional": 28,
+    "audited_conditional": 25,
     "audited_failed": 1,
     "audited_numerical_match": 10,
-    "audited_renaming": 21,
-    "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 2,
+    "audited_renaming": 19,
     "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
-    "decoration_under_cl3_color_automorphism_theorem": 8,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 6,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
     "decoration_under_cpt_exact_note": 4,
@@ -199,14 +197,13 @@
     "decoration_under_three_generation_observable_theorem_note": 3,
     "decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
-    "decoration_under_yt_ew_color_projection_theorem": 1,
-    "meta": 309,
+    "meta": 313,
     "open_gate": 24,
-    "retained": 193,
-    "retained_bounded": 871,
-    "retained_no_go": 195,
+    "retained": 189,
+    "retained_bounded": 849,
+    "retained_no_go": 191,
     "retained_pending_chain": 4,
-    "unaudited": 1884
+    "unaudited": 1966
   },
   "retained_pending_chain_count": 4,
   "retained_pending_chain_examples": [

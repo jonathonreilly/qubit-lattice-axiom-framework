@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """The epsilon-assembled cross-plane pair density: its exact quadratic form
-is the cross-plane trace pairing (equal to the block-5 Gram pairing with
-coefficient one on Cartan data, and to the abelian intersection density for
-U(1)); its parity is GEOMETRIC (the epsilon assembly flips under coordinate
+is the cross-plane trace pairing (equal to a coefficient-one Cartan Gram
+pairing, and to the abelian intersection-density shape for U(1)); its
+parity is GEOMETRIC (the epsilon assembly flips under coordinate
 reflection) while its internal flips are even; the connected (shifted)
 version is gauge-invariant with connector transport supplying the frame and
 the ordering content entering exactly with connectors.
@@ -24,9 +24,9 @@ Sections:
      quadratic form with remainder O(eps^4) (convergence-ratio gate,
      ratio ~ 16 under eps-halving); D is real.
   B. Reductions: on dual-basis Cartan elements the trace pairing equals the
-     block-5 Gram pairing with coefficient exactly ONE (exact rationals,
+     coefficient-one Cartan Gram pairing (exact rationals,
      parameter-free); the U(1) case reduces to the epsilon-paired product
-     of plane fluxes — the abelian intersection density shape — with
+     of plane fluxes — the abelian intersection-density shape — with
      single-plane squares cancelled.
   C. Parities: the full same-site pair object maps to its conjugate under
      simultaneous dagger and under simultaneous bar, and to itself under
@@ -203,7 +203,7 @@ for (a, b) in [(1, 0), (0, 1), (2, -1), (1, 1), (3, -2)]:
         gg = pair_gram((a, b), (c, d))
         ok_cartan = ok_cartan and abs(tr - float(gg)) < 1e-12
 check("B1 on dual-basis Cartan elements the trace pairing EQUALS the"
-      " block-5 Gram pairing with coefficient exactly one (parameter-free)",
+      " coefficient-one Cartan Gram pairing (parameter-free)",
       ok_cartan)
 
 FVAL = {pl: float(RNG.normal()) for pl in PLANES}
@@ -323,7 +323,7 @@ series = lambda e: 3 + 1j * e * (np.trace(A1h) + np.trace(A2h)) \
 c1 = abs(conn_pair(0.02) - series(0.02))
 c2 = abs(conn_pair(0.01) - series(0.01))
 check("D2 the connected pair's quadratic cross term is the TRANSPORTED"
-      " pairing tr(A1 . L A2 L^dag) (ratio gate; block-6 frame transport"
+      " pairing tr(A1 . L A2 L^dag) (ratio gate; connector transport"
       " appears inside the density)",
       6.0 < c1 / c2 < 10.0, f"ratio = {c1 / c2:.2f}")
 
@@ -333,7 +333,7 @@ v_Lalt = np.trace(expiH(A1h, 0.5) @ Lalt @ expiH(A2h, 0.5) @ Lalt.conj().T)
 loop = Lalt.conj().T @ L0
 check("D3 two connectors differ by a loop insertion: the values differ and"
       " the difference datum is the loop holonomy (configurational path"
-      " dependence, block-6 pattern)",
+      " dependence)",
       abs(v_L - v_Lalt) > 1e-3,
       f"|difference| = {abs(v_L - v_Lalt):.6f},"
       f" loop trace = {np.trace(loop):.4f}")

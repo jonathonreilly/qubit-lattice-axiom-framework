@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/theta_cross_plane_pair_density_geometric_oddness_connector_transport_2026_07_02.py
-runner_sha256: 480bd0f5cae01f2a3c56221fc33dfee486f834fbfe74aa56e1edc4423ea1ef95
+runner_sha256: 15caa6fe3f3643a022c36ca822ce0ebe97f413de1ea8f583cc3189a09dee3674
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.13
@@ -12,7 +12,7 @@ Section A: epsilon assembly and the exact quadratic form
          Q = 20.566586, ratios = 16.00, 16.00
   [PASS] A3 the assembled pair sum is real
 Section B: Cartan/Gram and U(1) reductions
-  [PASS] B1 on dual-basis Cartan elements the trace pairing EQUALS the block-5 Gram pairing with coefficient exactly one (parameter-free)
+  [PASS] B1 on dual-basis Cartan elements the trace pairing EQUALS the coefficient-one Cartan Gram pairing (parameter-free)
   [PASS] B2 U(1) reduction: the quadratic form is the epsilon-paired product of plane fluxes (the abelian intersection-density shape), squares cancelled (ratio gate)
          Q_U1 = -1.330550, ratio = 16.00
 Section C: internal flips even, geometric reflection odd
@@ -20,13 +20,13 @@ Section C: internal flips even, geometric reflection odd
   [PASS] C2 GEOMETRIC oddness: reflecting axis 0 (A_{0i} -> -A_{0i}) flips the quadratic density exactly — the theta parity lives in the epsilon assembly, not in internal flips
          Q = 20.566586, reflected = -20.566586
   [PASS] C3 the full assembled object is EXACTLY odd under the reflection at all orders: D_reflected = -D (large-eps identity check)
-         |D + D_reflected| = 8.89e-16 at eps = 0.5
+         |D + D_reflected| = 1.39e-16 at eps = 0.5
 Section D: connectors, gauge invariance, ordering content
   [PASS] D1 the connected pair tr[P1 L P2 L^dag] is invariant under arbitrary local gauge transformations (derived from the LINK transformation law on an explicit graph, not assumed)
          observable = -0.33082698+0.83070226j
-  [PASS] D2 the connected pair's quadratic cross term is the TRANSPORTED pairing tr(A1 . L A2 L^dag) (ratio gate; block-6 frame transport appears inside the density)
+  [PASS] D2 the connected pair's quadratic cross term is the TRANSPORTED pairing tr(A1 . L A2 L^dag) (ratio gate; connector transport appears inside the density)
          ratio = 8.03
-  [PASS] D3 two connectors differ by a loop insertion: the values differ and the difference datum is the loop holonomy (configurational path dependence, block-6 pattern)
+  [PASS] D3 two connectors differ by a loop insertion: the values differ and the difference datum is the loop holonomy (configurational path dependence)
          |difference| = 0.346248, loop trace = -0.1308-0.4252j
   [PASS] D4 ordering content enters exactly with connectors: same-site pairs are cyclically ordering-free (tr[U1 U2] = tr[U2 U1] exactly) while connected pairs are not
          connected ordering asymmetry = 1.735428

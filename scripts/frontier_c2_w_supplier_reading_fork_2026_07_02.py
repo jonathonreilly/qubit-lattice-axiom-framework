@@ -428,7 +428,22 @@ check(
 )
 
 
-note_text = read_text(NOTE_PATH).lower()
+note_raw = read_text(NOTE_PATH)
+note_text = note_raw.lower()
+check(
+    "**Type:** bounded_theorem" in note_raw and "**Claim type:** bounded_theorem" in note_raw,
+    "metadata: note declares canonical bounded_theorem type fields",
+)
+check(
+    "**Audit boundary:** independent audit lane only" in note_raw
+    and "**Status authority:**" not in note_raw,
+    "metadata: note uses audit boundary, not legacy status-authority wording",
+)
+check(
+    "OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md](" not in note_raw
+    and "C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md](" not in note_raw,
+    "dependency hygiene: inline-recomputed context surfaces are not markdown dependency links",
+)
 check(
     "does not adjudicate" in note_text,
     "boundary-denial: note says it does not adjudicate readings",

@@ -23,7 +23,10 @@ CHECK 22: PASS — T4: unequal cell-level weights leave kappa as v/u rather than
 CHECK 23: PASS — T4: diagonal EW readout ratios are kappa-independent for multiple exact samples
 CHECK 24: PASS — T5 index: ladder replaces the independent w-supplier number with READ adjudication
 CHECK 25: PASS — T5 index: READ slot is a binary reading fork rather than a numeric supplier
-CHECK 26: PASS — boundary-denial: note says it does not adjudicate readings
-CHECK 27: PASS — boundary-denial: note says no wall closed
-CHECK 28: PASS — boundary-denial: note marks unmerged sibling citations review-pending
-TOTAL: PASS=28 FAIL=0
+CHECK 26: PASS — metadata: note declares canonical bounded_theorem type fields
+CHECK 27: PASS — metadata: note uses audit boundary, not legacy status-authority wording
+CHECK 28: PASS — dependency hygiene: inline-recomputed context surfaces are not markdown dependency links
+CHECK 29: PASS — boundary-denial: note says it does not adjudicate readings
+CHECK 30: PASS — boundary-denial: note says no wall closed
+CHECK 31: PASS — boundary-denial: note marks unmerged sibling citations review-pending
+TOTAL: PASS=31 FAIL=0

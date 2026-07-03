@@ -3,7 +3,7 @@ runner: scripts/staggered_dirac_coupling_sign_channel_registration_check_2026_07
 runner_sha256: 042efc0b572e944ebab03e7bf75253837814635580d1131602811214f9a5318c
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.97
+elapsed_sec: 0.86
 status: ok
 ----- stdout -----
 [PASS] [S1]  1. 3D eta has flux -1 and satisfies F2/F3 on 4^3 open patch  |  flux=True, F2=True, F3=True
@@ -34,8 +34,8 @@ status: ok
 [PASS] [S6] 26. beta=-25 mass within |theta-pi|<0.5 exceeds 0.98  |  mass=0.986145044225
 [PASS] [S6] 27. beta=+25 mass within |theta-pi|<0.5 is tiny  |  mass=1.694e-21
 [PASS] [S6] 28. circular width ratio follows 1/sqrt(|beta|)  |  ratio=2.01559040759
-[PASS] [S7] 29. K0 eigenvalues match 2 sum_i cos(k_i) for L=4,6  |  max=1.510e-14
-[PASS] [S7] 30. K1 H^2 eigenvalues match 4 sum_i cos^2(k_i) for L=4,6  |  max=2.132e-14
+[PASS] [S7] 29. K0 eigenvalues match 2 sum_i cos(k_i) for L=4,6  |  max=1.310e-14
+[PASS] [S7] 30. K1 H^2 eigenvalues match 4 sum_i cos^2(k_i) for L=4,6  |  max=2.842e-14
 [PASS] [S7] 31. operator identity H[eta]^2 = sum_i(S_2i+S_2i^T+2I)  |  max=0.000e+00
 [PASS] [S7] 32. wrong cochain rejects the operator and spectral anchors  |  resid=4.000e+00, eig_dev=8.000e+00
 [PASS] [S7] 33. K1 exact zero count is 8 for L=4,8  |  counts=[8, 8]
@@ -48,4 +48,3 @@ status: ok
 TOTAL: PASS=39 FAIL=0
 
 ----- stderr -----
-

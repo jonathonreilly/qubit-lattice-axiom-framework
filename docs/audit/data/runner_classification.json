@@ -30252,6 +30252,30 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_rd_fixedness_arrow_invariant_2026_06_12.py"
     },
+    "reading_note_claims_are_axiom_text_theorems_bounded_note_2026-07-02": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_reading_note_derivations_2026_07_02.py"
+    },
+    "reading_note_final_derivations_motion_closure_bounded_note_2026-07-02": {
+      "assert_count": 3,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_answer_condition_motion_closure_2026_07_02.py"
+    },
     "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08": {
       "assert_count": 1,
       "counts": {
@@ -34139,6 +34163,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py"
+    },
+    "staggered_dirac_coupling_sign_channel_registration_narrow_theorem_note_2026-07-03": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 39,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/staggered_dirac_coupling_sign_channel_registration_check_2026_07_03.py"
     },
     "staggered_dirac_exercise_honest_reassessment_note_2026-06-06": {
       "assert_count": 0,
@@ -50904,6 +50940,21 @@
       "counts": {
         "A": 0,
         "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/frontier_answer_condition_motion_closure_2026_07_02.py": {
+      "assert_count": 3,
+      "claims": [
+        "reading_note_final_derivations_motion_closure_bounded_note_2026-07-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
         "C": 0,
         "D": 0
       },
@@ -72560,6 +72611,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_reading_note_derivations_2026_07_02.py": {
+      "assert_count": 1,
+      "claims": [
+        "reading_note_claims_are_axiom_text_theorems_bounded_note_2026-07-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_record_asymptotic_reset_convergence_ledger_2026_06_05.py": {
       "assert_count": 1,
       "claims": [
@@ -88846,6 +88912,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/staggered_dirac_coupling_sign_channel_registration_check_2026_07_03.py": {
+      "assert_count": 1,
+      "claims": [
+        "staggered_dirac_coupling_sign_channel_registration_narrow_theorem_note_2026-07-03"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 39,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py": {
       "assert_count": 1,
       "claims": [
@@ -90599,16 +90680,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 688,
+    "decoration_candidates": 690,
     "dominant_class_distribution": {
       "A": 488,
-      "B": 632,
-      "C": 1272,
+      "B": 634,
+      "C": 1273,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3299,
-    "runners_with_C": 1729,
+    "runners_classified": 3302,
+    "runners_with_C": 1730,
     "runners_with_D": 1061
   }
 }

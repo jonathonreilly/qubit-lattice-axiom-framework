@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_composition_bridge_positivity_2026_07_02.py
+runner_sha256: ad9ff8cab967573e11fd4b3e7d2eef576c7811525931eb76982952221c33fc0b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+==============================================================================
+frontier_record_composition_bridge_positivity_2026_07_02
+bounded theorem (bridge decomposition + exact candidate-separation facts)
+EXACT arithmetic only (Fraction; Q[sqrt5] as Fraction pairs); no floats.
+THREE named premises (C-add, POS, LOC); NONE adopted; audit lane owns status.
+Named-candidate finite-N witness = nearest-neighbor heat family; wrapped Gaussian
+is its un-taken a->0 limit. Z_N toys witness premise structure, not the SU(3) wall.
+==============================================================================
+CHECK 01: PASS -- guard: axiom memo states 'A state is a configuration of records.' (Composition Premise objects)
+CHECK 02: PASS -- guard: Record additivity sentence present (READOUT additive over disjoint union)
+CHECK 03: PASS -- guard: dynamics-section disclaimer present (axioms supply NO record-production process/kernel)
+CHECK 04: PASS -- guard: law sentence present (domain-restricted single-valued law)
+CHECK 05: PASS -- Composition Premise axiom leg: readout I additive over disjoint record union, I(empty)=0 (Record axiom)
+CHECK 06: PASS -- Composition Premise C-add clause: INDEPENDENT weight matrix -> two-step class-weight vector = one-step convolution p*p
+CHECK 07: PASS -- Composition Premise control: correlated weight matrix has IDENTICAL one-step row AND column sums as the independent one
+CHECK 08: PASS -- Composition Premise correlated readout additivity (COMPUTED over support): I two-step = I step1 + I step2 on every supported cell
+CHECK 09: PASS -- Composition Premise independent content: correlated two-step class-weight != convolution (also unnormalized) => C-add clause (iii) is NOT supplied
+CHECK 10: PASS -- Semigroup Class Boundary closure (ACTUAL Q[sqrt5] convolution): K_{1/2} * K_{1/3} = K_{1/6} for the spectral q^(n^2) family
+CHECK 11: PASS -- Semigroup Class Boundary consistency identity (cannot fail by construction): q^a r^a = (q r)^a, the exponential composition law
+CHECK 12: PASS -- Semigroup Class Boundary class-not-member (convolves): off-family symbol self-convolves to c^2 yet c_2 != c_1^4 (off q^(n^2)) (PR #4824, review-pending)
+CHECK 13: PASS -- Named Candidate Separation Q[sqrt5] sanity: cos(2pi/5) satisfies 4c^2+2c-1=0 exactly (extension multiplication is correct)
+CHECK 14: PASS -- Named Candidate Separation root-of-unity identity: 2cos(2pi/5)+2cos(4pi/5) = -1 exactly in Q[sqrt5]
+CHECK 15: PASS -- Named Candidate Separation root-of-unity identity: sum_{n=0}^{4} cos(2pi n/5) = 0 exactly in Q[sqrt5]
+CHECK 16: PASS -- Named Candidate Separation (a) generator Metzler-OK at j=1: L_{0,1} = 1/2 + (3/10)sqrt5 > 0 (exact)
+CHECK 17: PASS -- Named Candidate Separation (a) generator Metzler violation at j=2: L_{0,2} = (5-3sqrt5)/10 < 0 strictly (PR #4829, review-pending)
+CHECK 18: PASS -- Named Candidate Separation (a) negative-kernel witness: exact-Q-gen kernel K(2) at q=9/10 = (4439-2439sqrt5)/100000 < 0 (POS fails)
+CHECK 19: PASS -- Named Candidate Separation (a) sign is q-dependent: same kernel K(2) at q=1/2 = (23-7sqrt5)/160 > 0 (q=1/2,1/3 sampling missed the flip)
+CHECK 20: PASS -- Named Candidate Separation (b) spatial-wrap positivity q in {1/2,1/3}: K_t(j) >= S_M(j) > 0 for all j, tail geometrically bounded (exact)
+CHECK 21: PASS -- Named Candidate Separation (b) non-membership witness: q^2 coeff of (W_q*W_q)(0) is 2 but of W_{q^2}(0)/W_s(0) is 0 (not convolution-closed)
+CHECK 22: PASS -- Named Candidate Separation (c) NN heat generator: off-diagonals = 1 (Metzler, integer), row-sum 0, single-step local (dist-2 entries 0)
+CHECK 23: PASS -- Named Candidate Separation (c) NN spectrum: lambda_n = -4 sin^2(pi n/5), |lambda_1| = (5-sqrt5)/2 (= locality deficit), != -bal(n)^2 (non-quadratic)
+CHECK 24: PASS -- Named Candidate Separation canonicity: literal-label spectrum {0,-13/2,-13/2,-17/2,-17/2} != -bal(k)^2; bal(n)^2 even, literal n^2 not (balanced FORCED)
+CHECK 25: PASS -- Named Candidate Separation canonicity: literal-label off-diagonals 3/2 -/+ sqrt5/5 both > 0 (Metzler restored) -- violation is representative-relative
+CHECK 26: PASS -- Locality leg: single-step deficit 4 sin^2(pi/5) = (5-sqrt5)/2 != 0 = |lambda_1(NN)| (PR #4825, review-pending)
+CHECK 27: PASS -- Action-Wall End-State boundary: note asserts 'not adopted' + 'no wall is closed' + 'review-pending'; no literal empty-family selection
+CHECK 28: PASS -- Residue and Governance Map boundary: note carries 'three named premises', 'nearest-neighbor heat', 'un-taken', 'canonicity', POS, LOC, SU(3), owner review
+------------------------------------------------------------------------------
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

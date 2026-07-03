@@ -102,9 +102,10 @@ identification checkpoint below).
 
    > "When present, a record locks exactly one local possibility from the
    > subset available at that site under Admissibility; the locked possibility
-   > is invariant under repeated readout. Only records are readable. For any
-   > finite collection of pairwise-disjoint records, scalar readout `I` is
-   > additive, with `I(empty)=0`."
+   > is invariant under repeated readout. Only records are readable. A readout
+   > value is determined by record content alone. For any finite collection of
+   > pairwise-disjoint records, scalar readout `I` is additive, with
+   > `I(empty)=0`."
 
    Per the axiom's non-supply clause and the Tier-A registry description,
    central-sector decompositions are downstream readout-context content: they

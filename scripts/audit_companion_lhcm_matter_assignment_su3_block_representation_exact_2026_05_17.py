@@ -184,13 +184,15 @@ def main() -> int:
         ),
     )
 
-    # Retained-substrate citation discipline: only three markdown-link
+    # Retained-substrate citation discipline: the markdown-link
     # load-bearing upstream dependencies should appear as `[...](X.md)` for
-    # the retained inputs.
+    # the retained inputs. The LH-doublet ratio note was deliberately
+    # demoted (2026-05-17) from a markdown-linked load-bearing authority
+    # to a plain-text non-load-bearing (C2) consistency cross-check, so it
+    # is checked below for plain-text presence only.
     cited_load_bearing = [
         "GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
         "GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md",
-        "LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md",
     ]
     for cite in cited_load_bearing:
         # Markdown-link form `[X](X)` should appear
@@ -199,6 +201,14 @@ def main() -> int:
             f"note has markdown-link form of retained authority: {cite}",
             link_form in note_text,
         )
+
+    c2_cross_check = (
+        "LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md"
+    )
+    check(
+        f"note references (non-load-bearing (C2) consistency cross-check): {c2_cross_check}",
+        c2_cross_check in note_text,
+    )
 
     # The audited_decoration parent note and audited_conditional proof-walk
     # should NOT appear as markdown-link load-bearing dependencies.

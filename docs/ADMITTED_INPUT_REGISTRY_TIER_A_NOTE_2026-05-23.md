@@ -46,7 +46,7 @@ AC_φλ naming, explicitly **not** counted as admitted inputs (see
 
 | id | statement (minimum form, 2026-06-11 — see the minimum-statement section below for the decompositions) | leverage | no-go portfolio (verified `retained_no_go` rows) |
 |---|---|---|---|
-| **AC_φλ** | three named sub-admissions, nothing else: **(i)** the doublet **reading/occupancy selection** (one binary — sector-tied vs orbit/holomorphic count, `r ∈ {1, 1/2}`); **(ii)** the δ **readout identification** (R-η: density-read-as-angle; the magnitude `2/9` is fixed-locus arithmetic conditional on R-η, not an admitted number); **(iii)** the abstract-sector → physical-species **bridge**. The *naming* (which sector is e/μ/τ) remains a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
+| **AC_φλ** | three named sub-admissions, nothing else: **(i)** the doublet **reading/occupancy selection** (one binary — sector-tied vs orbit/holomorphic count, `r ∈ {1, 1/2}`); **(ii)** the δ **readout identification** (R-η: density-read-as-angle; the magnitude `2/9` is fixed-locus arithmetic conditional on R-η, not an admitted number); **(iii — reclassified universal-floor, 2026-07-03)** the abstract-sector → physical-species identification is classed **universal-floor** beside the past hypothesis (carries no tested C₃-grade number, selector, ordering, or weight; see the universal-floor subsection below). The *naming* (which sector is e/μ/τ) remains a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
 | **θ** | with `θ̄ = θ_gauge + arg det(M_q)`: **(a)** gauge side — `θ_gauge = 0` in the topological-sector weighting, residual localized to the **multi-plaquette / large-gauge-winding** account (within the supplied per-plaquette class the local cross-plane `F·F̃` slot is derived-absent; RP, reality, positivity, CPT, parity-measure, and arrow-orientation are tracked in landed source notes as non-forcing/non-sourcing route surfaces); **(b)** mass side — the discrete orientation `arg det M ∈ {0, π} → 0` on the K-real reading (the *same* C₃ K-real structure as AC_φλ (i)), localized onto the named **determinant-readout bridge**. Also unsolved in the Standard Model. | ~20 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` (1) |
 
 Notes:
@@ -77,7 +77,7 @@ Notes:
   (labeling-convention / C₃-breaking dynamics / PDG) and its `a3_route1..5`
   attempts (`unaudited`, not retained no-gos, listed as *attempts*) target the
   **pattern**, not the names. Net: AC_φλ is *not* a discrete 6-way labeling
-  choice; the irreducible content is "the δ-pattern + the species bridge."
+  choice; the irreducible content is "the δ-pattern + the species bridge." (The species-bridge half was reclassified universal-floor on 2026-07-03; the δ-pattern half stays framework-specific.)
 - **AC_φλ — charged-lepton sharpening (2026-06-02).** For the charged-lepton
   sector specifically, the "mass pattern" admission decomposes (verified, see
   `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`) into **two named,
@@ -144,7 +144,7 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
   retirement does not promote the old `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
   parent, which contains additional non-axiom material.
 - **θ and AC_φλ:** stand as genuine admitted derivation targets (θ shared with
-  the SM; AC_φλ = δ-pattern + species bridge, naming excluded).
+  the SM; AC_φλ = δ-pattern, naming excluded; the species identification was reclassified universal-floor on 2026-07-03).
 - **Scale reference:** removed from Tier A and registered as the
   explicitly approved `scale_reference_primitive`. It is a units primitive, not a
   derivation-target admission and not a status-bounding dependency.
@@ -195,9 +195,30 @@ audit status remains audit-lane-only.
    R-η (the C₃[111] fixed-locus spectral density read directly as the
    angle); the magnitude `2/9` is retained-bounded fixed-locus arithmetic
    given R-η and is **not** itself an admitted number.
-3. **The abstract-sector → physical-species bridge.** Unchanged (the
-   interpretive identification; naming remains vacuous per the
-   species-labeling no-go).
+3. **The abstract-sector → physical-species identification (reclassified
+   2026-07-03).** Classed universal-floor beside the past hypothesis: it
+   carries no tested C₃-grade number, selector, ordering, or weight, and it
+   is the same identification every gauge theory makes between abstract
+   representation content and named physical species
+   (`SPECIES_IDENTIFICATION_UNIVERSAL_FLOOR_CLASSIFICATION_BOUNDED_NOTE_2026-07-03.md`).
+   It stays listed on the universal-floor surface below and is not counted
+   as framework-specific content. Naming remains vacuous per the
+   species-labeling no-go.
+
+### Universal-floor inputs (listed, shared by every physical theory of the relevant class; not framework-specific)
+
+- **The past hypothesis** — the low-record/low-entropy initial condition every
+  theory with time-symmetric microdynamics needs for a thermodynamic arrow
+  (`ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`).
+- **The species identification (added 2026-07-03)** — the abstract-sector →
+  physical-species identification at the C₃-structural grade; carries no
+  tested number, selector, ordering, or weight
+  (`SPECIES_IDENTIFICATION_UNIVERSAL_FLOOR_CLASSIFICATION_BOUNDED_NOTE_2026-07-03.md`).
+
+Discriminator that keeps this bucket small: an input qualifies only if it
+carries **no dimensionless number or measured structure to derive**. θ carries
+θ̄ and stays a framework-counted derivation target; CKM/PMNS carries measured
+mixing structure and stays a separate open residual.
 
 ### θ — minimum decomposition (two named residuals)
 

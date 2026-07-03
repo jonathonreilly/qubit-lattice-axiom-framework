@@ -42,9 +42,20 @@ Check groups (each line tagged, PASS/FAIL; final line
          (This makes the note's scope boundary runner-visible and
          reproduces the 2026-05-25 no-forcing note's third candidate.)
 
-  [S1]   Grassmann/CAR consequences conditional on the declared Grassmann
-         frame: {c,c^+} = I, c^2 = 0 on the 2-dim Fock space, and
-         full pairwise CAR for N Jordan-Wigner modes.
+  [S1]   The note's displayed Grassmann relations (eq. (3)): realized
+         EXACTLY by left exterior (wedge) multiplication of the 2N
+         generators (chi_x, chibar_x) on the 2^{2N}-dimensional
+         Grassmann algebra Lambda_{2N} itself -- ALL anticommutators
+         zero, including every chibar/chi cross pair, all generators
+         nilpotent, and the realization is faithful (left regular
+         representation, rank 2^{2N}).
+  [S1-CAR] SEPARATELY LABELED operator realization: the Jordan-Wigner
+         construction on the 2^N-dim Fock space satisfies the CAR
+         {c_i, c^+_j} = delta_ij I -- a NONZERO mixed anticommutator,
+         hence a different algebra that is NOT a realization of
+         eq. (3).  A refutation-shaped [S1] contrast line computes the
+         difference (exterior cross anticommutators exactly 0 vs CAR
+         mixed anticommutator exactly I) rather than asserting it.
 
   [S3]   Berezin determinant identity: |det(M)| = |Pf(A)| for the
          antisymmetrised quadratic form of the canonical staggered
@@ -68,7 +79,7 @@ from __future__ import annotations
 
 import sys
 import math
-from itertools import product
+from itertools import combinations, product
 
 import numpy as np
 from numpy.linalg import det, eigvalsh
@@ -113,6 +124,26 @@ def jw_modes(N):
         chain = [SZ] * i + [SP] + [I2] * (N - i - 1)
         c_list.append(kron_chain(chain))
     return c_list, [c.conj().T for c in c_list]
+
+
+def exterior_left_mult(n_gen):
+    """Left (wedge) multiplication operators L_i for the generators
+    theta_1..theta_{n_gen} of the finite Grassmann algebra Lambda_{n_gen},
+    acting on the 2^{n_gen}-dimensional algebra itself.  Basis = ordered
+    monomials encoded as bitmasks; moving theta_i past the occupied
+    generators below i gives the sign (-1)^{#occupied j < i}.  Entries are
+    exactly 0/+-1, so all anticommutator checks below are exact."""
+    dim = 2 ** n_gen
+    ops = []
+    for i in range(n_gen):
+        L = np.zeros((dim, dim))
+        for S in range(dim):
+            if S & (1 << i):
+                continue          # theta_i wedge (monomial containing theta_i) = 0
+            sign = (-1) ** bin(S & ((1 << i) - 1)).count("1")
+            L[S | (1 << i), S] = sign
+        ops.append(L)
+    return ops
 
 
 def anticomm(A, B):
@@ -262,16 +293,52 @@ def checks_FALS(tol=1e-12):
 
 
 # ---------------------------------------------------------------------------
-# [S1] Grassmann/CAR consequences (conditional on the declared Grassmann frame)
+# [S1] displayed Grassmann relations: exterior realization (conditional on the
+#      declared Grassmann frame), the separately labeled CAR/Jordan-Wigner
+#      operator realization, and the refutation-shaped contrast between them
 # ---------------------------------------------------------------------------
 
 def checks_S1(N=4, tol=1e-12):
+    # (a) eq. (3) of the note, realized exactly: 2N generators
+    # (chi_x = L[x], chibar_x = L[N+x]) acting by left exterior (wedge)
+    # multiplication on the 2^{2N}-dimensional Grassmann algebra itself
+    n_gen = 2 * N
+    dim = 2 ** n_gen
+    L = exterior_left_mult(n_gen)
+    chi = L[:N]
+    chibar = L[N:]
+    max_all = max(float(np.max(np.abs(anticomm(L[i], L[j]))))
+                  for i in range(n_gen) for j in range(n_gen))
+    max_cross = max(float(np.max(np.abs(anticomm(chibar[x], chi[y]))))
+                    for x in range(N) for y in range(N))
+    max_nilp = max(float(np.max(np.abs(L[i] @ L[i]))) for i in range(n_gen))
+    check("S1", max_all == 0.0 and max_cross == 0.0 and max_nilp == 0.0,
+          f"displayed relations (3) realized by left exterior (wedge) multiplication on the "
+          f"Grassmann algebra Lambda_{{2N}}, N={N} modes (algebra dim 2^{{2N}} = {dim}): "
+          f"max |{{theta_i,theta_j}}| over ALL {n_gen}x{n_gen} generator pairs = {max_all:.1f}, "
+          f"max |{{chibar_x,chi_y}}| incl. x=y = {max_cross:.1f}, all generators nilpotent "
+          f"(max |theta^2| = {max_nilp:.1f}); every anticommutator ZERO, cross terms included")
+
+    # (b) the exterior realization is faithful at the right algebra dimension:
+    # the monomial images of the unit span all of Lambda_{2N}
+    unit = np.zeros(dim)
+    unit[0] = 1.0
+    vecs = []
+    for k in range(n_gen + 1):
+        for subset in combinations(range(n_gen), k):
+            v = unit.copy()
+            for i in reversed(subset):
+                v = L[i] @ v
+            vecs.append(v)
+    rank = int(np.linalg.matrix_rank(np.array(vecs)))
+    check("S1", rank == dim,
+          f"exterior realization is FAITHFUL at the right dimension: the 2^{{2N}} = {dim} monomial "
+          f"images of the unit have rank {rank} (left regular representation, L_a 1 = a)")
+
+    # (c) SEPARATELY LABELED operator realization: CAR/Jordan-Wigner on the
+    # 2^N-dim Fock space -- nonzero mixed anticommutator, a different algebra
     car_single = np.max(np.abs(anticomm(SP, SM) - I2)) < tol
     nilp = np.max(np.abs(SP @ SP)) < tol
-    check("S1", car_single and nilp,
-          "Grassmann CAR realized on the 2-dim per-site Fock space: {c, c^+} = I, c^2 = 0 "
-          "(matches the dim-2 Cl(3) spinor module)")
-
     c, cdag = jw_modes(N)
     eye = np.eye(2 ** N, dtype=complex)
     max_off = 0.0
@@ -285,9 +352,22 @@ def checks_S1(N=4, tol=1e-12):
                 max_diag = max(max_diag, float(np.max(np.abs(ac - eye))))
             else:
                 max_off = max(max_off, float(np.max(np.abs(ac))))
-    check("S1", max_off < tol and max_diag < tol,
-          f"pairwise CAR for N={N} modes (Hilbert dim {2**N}): "
-          f"max off-diag anticommutator {max_off:.1e}, max |{{c_i,c_i^+}} - I| {max_diag:.1e}")
+    check("S1-CAR", car_single and nilp and max_off < tol and max_diag < tol,
+          f"SEPARATE CAR/Jordan-Wigner OPERATOR realization on the 2^N-dim Fock space "
+          f"(N={N}, Hilbert dim {2**N}): pairwise CAR {{c_i,c_j}} = 0, {{c_i,c^+_j}} = delta_ij I "
+          f"(max dev {max(max_off, max_diag):.1e}); on-site {{c,c^+}} = I, c^2 = 0 matches the "
+          f"dim-2 Cl(3) spinor module; the mixed anticommutator is NOT zero, so this realizes "
+          f"the CAR algebra, not eq. (3)")
+
+    # (d) refutation-shaped contrast: the two realizations differ exactly on
+    # the cross anticommutator, and eq. (3) pins the exterior one
+    car_mixed = max(float(np.max(np.abs(anticomm(c[i], cdag[i])))) for i in range(N))
+    check("S1", max_cross == 0.0 and abs(car_mixed - 1.0) < tol,
+          f"refutation-shaped contrast: exterior cross anticommutators are ZERO exactly "
+          f"(max = {max_cross:.1f}) while the CAR mixed anticommutator is NOT "
+          f"({{c_x,c^+_x}} = I, max |.| = {car_mixed:.1f}) => the displayed relations (3) are "
+          f"realized on the 2^{{2N}}-dim exterior algebra, NOT by the CAR operators on the "
+          f"2^N-dim Fock space")
 
 
 # ---------------------------------------------------------------------------

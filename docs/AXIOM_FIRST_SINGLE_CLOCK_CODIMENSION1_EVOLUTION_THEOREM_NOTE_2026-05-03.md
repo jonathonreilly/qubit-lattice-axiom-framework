@@ -3,7 +3,8 @@
 **Date:** 2026-05-03 (hostile science-fix re-scope 2026-06-11;
 finite-range premise narrowing 2026-06-11 #2; Cl(3) complexification
 wording hygiene + B-RANGE supplier wiring 2026-06-11 #3;
-free-quasilocal propagation repair 2026-06-12; see §0)
+free-quasilocal propagation repair 2026-06-12; B-AXIS.1 blocked-time
+unit split 2026-06-17; see §0)
 **Type:** bounded_theorem
 **Claim scope:** **Axis-conditional single-clock codimension-1 unitary
 evolution.** Given the declared evolution-axis premise (B-AXIS) below
@@ -45,7 +46,7 @@ status are set only by the independent audit lane.
 **Loop:** `3plus1d-native-closure-2026-05-02` (original);
 science-fix lane 2026-06-11 (re-scope)
 **Runner:** [`scripts/axiom_first_single_clock_codimension1_evolution_check.py`](../scripts/axiom_first_single_clock_codimension1_evolution_check.py)
-(`TOTAL: PASS=45 FAIL=0`, deterministic, runtime well under one minute)
+(`TOTAL: PASS=47 FAIL=0`, deterministic, runtime well under one minute)
 **Authority role:** source-note proposal. If retained, this row
 supplies the *axis-conditional* single-clock codimension-1 clauses
 (S1′)+(S2′) cited by `ANOMALY_FORCES_TIME_THEOREM.md` (its SC premise
@@ -182,6 +183,27 @@ rather than derived.
   no-go as an input; it leaves B-AXIS open. Avoiding the filename token
   keeps the audit citation graph from treating the forward
   cross-reference as a load-bearing edge back to the follow-up note.
+- **2026-06-16 (APBC axis-label bridge wiring, no status change).** The
+  companion
+  [`SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+  now packages the sharpened-pin positive theorem: given a supplied
+  per-axis boundary-condition datum `APBC` on one axis and `PBC` on the
+  other three, the APBC axis is invariantly selected. This source note
+  cites that bridge only as a conditional supplier for the axis-label
+  component of (B-AXIS.2). It does not derive the APBC/PBC datum, the
+  blocked time step, the transfer construction, or the no-second-clock
+  clause, and it does not change this row's status authority.
+- **2026-06-17 (B-AXIS.1 unit split, no status promotion).** A new
+  source-support note separates the N2 blocked-time phrase into two
+  parts. The internal denominator of the supplied two-step transfer is
+  now source-supported: for the imported `T_hat^2` object the aligned
+  reconstruction uses `1/(2a_tau)`, and the `1/a_tau` denominator would
+  double the generator. The absolute physical clock unit represented
+  by `a_tau` is still not derived from Lattice, Quantum, Record, or
+  post-record counts alone. This does not close axis/transfer
+  construction uniqueness (B-AXIS.2), does not exclude independent
+  commuting transfer factors (B-AXIS.3), and does not make this row a
+  retained-grade proposal.
 
 ## Scope
 
@@ -245,6 +267,15 @@ No fitted parameters. No observed values used as proof inputs.
   `H := -(1/(2a_τ)) log(T̂²/M_T)` self-adjoint with `H ≥ 0`
   (SC1–SC2 after blocked-time normalization; SC3/SC4 conditional
   clauses not consumed here).
+- **(S-N2-SPLIT)** — exact-support/no-go source boundary
+  [`SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md`](SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md):
+  separates (B-AXIS.1)'s two meanings. The internal blocked-transfer
+  denominator for the supplied `T_hat^2` object is fixed by the
+  retained-bounded two-step normalization bridge to `2a_tau`; the
+  absolute physical clock unit or time metric represented by `a_tau`
+  is not derived from the current framework axioms or Record-count
+  layer. This source boundary does not close (B-AXIS.2) or (B-AXIS.3)
+  and does not set an audit verdict.
 - **(R-ET)** — retained_bounded
   [`LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md`](LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md):
   raw equal-time commutation and tensor factorization for
@@ -275,12 +306,34 @@ No fitted parameters. No observed values used as proof inputs.
   of deriving them.
 - **(B-AXIS)** — **declared premise of this bounded theorem** (not
   derived, not an axiom):
-  - (B-AXIS.1) one supplied blocked time step `2a_τ` (= N2);
+  - (B-AXIS.1) one supplied blocked time step `2a_τ` (= N2), now split
+    by (S-N2-SPLIT): the internal denominator `2a_tau` for the supplied
+    `T_hat^2` transfer is source-supported, while the absolute
+    physical clock unit/time metric represented by `a_tau` remains a
+    supplied/open clock-rate boundary;
   - (B-AXIS.2) one declared evolution axis carrying one RP/transfer
     construction, namely the `(T̂², 2a_τ)` supply of (R-RP2)/(R-SC2)
     (= N4);
   - (B-AXIS.3) no independent commuting transfer factor is admitted
     as a second physical clock (= N5).
+- **(B-AXIS-APBC)** — conditional supplier for the axis-label part of
+  (B-AXIS.2) only:
+  [`SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+  proves that, given a supplied APBC-on-axis/PBC-on-others boundary datum,
+  the APBC axis is the selected axis label. This does not supply the
+  datum itself, the blocked time step, the transfer construction, or
+  (B-AXIS.3). B-AXIS remains live unless the APBC/PBC datum is itself
+  supplied by the row consuming this theorem or by a later retained
+  supplier.
+
+  Source-side N5 support is now isolated in
+  [`SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md`](SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md):
+  on the current single-clock source packet, the admitted physical-clock
+  inventory contains exactly the supplied `(T̂², 2a_τ)` transfer/step pair.
+  This supports the admission wording of (B-AXIS.3) only. It does not derive
+  (B-AXIS.1), does not select the axis/transfer construction in (B-AXIS.2),
+  and does not mathematically exclude arbitrary commuting positive factor
+  transfers.
 
 The older declared finite-range generator premise `(B-RANGE)` is no
 longer a current premise of this theorem. It was replaced by the
@@ -311,9 +364,12 @@ still-live axis-selection premise:
   propagation remains open, but it is not part of this row's current
   theorem statement.
 - **B-AXIS remains a real declared premise.** The framework has not
-  derived the registration direction, the blocked time unit, or the
-  exclusion of independent commuting transfer factors from the current
-  retained axiom surface. The follow-up source note
+  derived the registration direction, the absolute physical clock
+  unit/time metric, or the exclusion of independent commuting transfer
+  factors from the current retained axiom surface. The internal
+  two-step denominator for `T_hat^2` is separately supported by
+  (S-N2-SPLIT); this does not make a physical clock/rate unit follow
+  from Record or from the transfer spectrum alone. The follow-up source note
   `SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md`
   narrows the route: Record durability, anomaly/chirality labels, and
   the native exchange-symmetric staggered surface transport with the
@@ -321,18 +377,30 @@ still-live axis-selection premise:
   must provide a non-transportable registration-direction theorem or a
   reviewed boundary-condition asymmetry bridge; this note does not add
   such a premise and does not treat it as an axiom.
+- **APBC/PBC narrows the axis-label supplier shape but does not close
+  B-AXIS by itself.** The 2026-06-16 APBC bridge proves the axis-label
+  consequence if the per-axis boundary-condition datum is supplied. It
+  does not derive that datum and does not touch (B-AXIS.1) or
+  (B-AXIS.3), so this theorem remains axis-conditional on the live
+  premise surface.
 
 Source-surface summary: this is bounded support only. The repair prunes the
 old B-RANGE route from the current scope and leaves B-AXIS as the live
 declared blocker. No retained-grade proposal or status promotion is made here;
 the independent audit lane remains the only authority for effective status.
+Equivalently, B-AXIS as the live axis premise remains after the
+record-durability axis selection route-pruning context: those routes do not
+derive B-AXIS.
 
 ## Statement
 
 Let `H_blk` be the finite block Hilbert space of the (R-RP2)
 reconstruction and `T̂² : H_blk → H_blk` the supplied positive
 Hermitian two-step transfer with `spec(T̂²) ⊂ (0, M_T]`. Fix the
-blocked time step `2a_τ` (B-AXIS.1) and define
+source-supported internal blocked denominator `2a_τ` for this supplied
+two-step object (B-AXIS.1a by S-N2-SPLIT), while leaving the absolute
+physical clock unit represented by `a_tau` as a supplied/open boundary
+(B-AXIS.1b), and define
 `H := -(1/(2a_τ)) log(T̂²/M_T)` per (R-SC2). Then, **conditional on
 (B-AXIS)**:
 
@@ -345,7 +413,9 @@ consistent at imaginary argument, `(T̂²/M_T)^n = U(-i n · 2a_τ)`.
 `H ≥ 0` by (R-SC2). Uniqueness is exactly the (R-STONE) N1/N3
 uniqueness: **relative to the supplied `(T̂², 2a_τ)`**. The same
 `T̂²` with a different declared `τ` gives a rescaled generator
-(G-SCOPE); that is why (B-AXIS.1) is a premise.
+(G-SCOPE); that is why the absolute physical clock unit in
+(B-AXIS.1b) remains supplied/open even though the internal denominator
+of the imported two-step object is fixed to `2a_tau`.
 
 **(S2′) Codimension-1 Cauchy slice structure.** Each lattice slice
 `Σ_t = {t} × Z^3` (finite block: `{t} × (Z/L_s Z)^3`) carries:
@@ -549,11 +619,13 @@ free-bilinear quasilocal LR supplier has its own companion runner.
 
 **Honest claim-status summary.** This is a bounded theorem on retained and
 retained-bounded one-hop inputs plus the declared B-AXIS premise. Its scope is
-axis-conditional single-clock codimension-1 unitary evolution: with one supplied
-blocked time step `2a_tau`, one declared evolution axis carrying the
-retained-bounded RP/SC two-step transfer supply `T_hat^2`, and no independent
-commuting transfer factor admitted as a second clock, the retained finite-dim
-Stone row gives the unique generator
+axis-conditional single-clock codimension-1 unitary evolution: with the
+source-supported internal block denominator `2a_tau` for the
+retained-bounded RP/SC two-step transfer supply `T_hat^2`, a still-supplied
+absolute physical clock unit/time metric, one declared evolution axis carrying
+that transfer construction, and no independent commuting transfer factor
+admitted as a second clock, the retained finite-dim Stone row gives the unique
+generator
 `H = -(1/(2a_tau)) log(T_hat^2/M_T) >= 0` and the unique strongly continuous
 one-parameter unitary group `U(t) = exp(-itH)`. Each lattice slice `Sigma_t` is
 a codimension-1 Cauchy surface with mutually commuting per-site `M_2(C)`
@@ -572,12 +644,15 @@ consistent with the retained single-clock uniqueness scope boundary
 emergent-Lorentz program.
 
 Every load-bearing input is retained or retained-bounded on this source
-surface except the declared B-AXIS premise. The older B-RANGE finite-range
-generator premise is no longer part of the current claim; free-sector
-propagation is supplied by the retained-bounded R-FBQL bridge. Because B-AXIS
-remains declared, this branch is not a retained-grade proposal. No new axiom,
-fitted parameter, observed value, or status promotion is made here; the
-independent audit lane remains the only authority for effective status.
+surface except the surviving declared/open pieces of B-AXIS: absolute
+clock-rate/unit content for (B-AXIS.1b), axis/transfer-construction uniqueness
+(B-AXIS.2), and no-independent-factor exclusion (B-AXIS.3). The older B-RANGE
+finite-range generator premise is no longer part of the current claim;
+free-sector propagation is supplied by the retained-bounded R-FBQL bridge.
+Because these B-AXIS pieces remain declared/open, this branch is not a
+retained-grade proposal. No new axiom, fitted parameter, observed value, or
+status promotion is made here; the independent audit lane remains the only
+authority for effective status.
 
 **Not in scope.**
 
@@ -618,6 +693,8 @@ independent audit lane remains the only authority for effective status.
   [`QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md`](QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md)
 - kinetic-form premise context (meta, approved premise):
   [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
+- APBC/PBC axis-label bridge (conditional supplier; no status change):
+  [`SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
 - continuum bound (retained_bounded):
   [`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md)
 - downstream consumer (cross-reference only, not a dep):

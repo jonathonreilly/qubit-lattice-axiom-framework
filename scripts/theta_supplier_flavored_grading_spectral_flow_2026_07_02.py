@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import sys
+from pathlib import Path
 
 import numpy as np
 
@@ -7,6 +8,8 @@ import numpy as np
 PASS = 0
 FAIL = 0
 BUILD_CACHE = {}
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs/THETA_SUPPLIER_FLAVORED_GRADING_SPECTRAL_FLOW_REGISTERS_WINDING_2D_NARROW_THEOREM_NOTE_2026-07-02.md"
 
 
 def report(name, ok, detail=""):
@@ -152,6 +155,26 @@ def heat_trace_eps(D, E, t):
 def main():
     ms = [0.1, 0.2, 0.3, 0.4, 0.5]
     ms_deform = [0.05, 0.1, 0.2, 0.3, 0.4, 0.5]
+    note = NOTE.read_text(encoding="utf-8")
+    report(
+        "note declares bounded_theorem metadata",
+        "**Type:** bounded_theorem" in note and "**Claim type:** bounded_theorem" in note,
+    )
+    report(
+        "note declares bounded 2D scope",
+        "**Scope boundary:**" in note
+        and "Finite even-L 2D U(1) staggered surfaces" in note
+        and "no 4D carrier" in note
+        and "no SU(3) extension" in note
+        and "no continuum limit" in note,
+    )
+    report(
+        "note leaves audit verdicts to independent lane",
+        "**Audit boundary:** Independent audit lane only" in note
+        and "audit_status" in note
+        and "effective_status" in note
+        and "pipeline/auditor-owned" in note,
+    )
 
     free8 = parts_for(8, 0)
     q1_8 = parts_for(8, 1)

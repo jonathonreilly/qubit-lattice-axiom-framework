@@ -2,6 +2,10 @@
 
 **Date:** 2026-07-02
 **Primary runner:** `python3 scripts/theta_supplier_flavored_grading_spectral_flow_2026_07_02.py`
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem (finite 2D flavored-grading spectral-flow registration theorem)
+**Scope boundary:** Finite even-L 2D U(1) staggered surfaces and the tested flux/deformation family only; no 4D carrier, no SU(3) extension, no continuum limit, no physical theta value, and no record/readout-chain identification.
+**Audit boundary:** Independent audit lane only. This note proposes a bounded theorem row; `audit_status` and `effective_status` remain pipeline/auditor-owned.
 
 ## Claim
 

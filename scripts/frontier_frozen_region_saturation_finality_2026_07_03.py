@@ -6,9 +6,8 @@ frontier_frozen_region_saturation_finality_2026_07_03.py
 Exact-arithmetic runner for the bounded + narrow-scoped theorems of the note:
   docs/FROZEN_REGION_RECORD_SATURATION_LOCAL_FINALITY_BOUNDARY_INFLUENCE_BOUNDED_NOTE_2026-07-03.md
 
-Worker draft under the workhorse execution split. Audit status is set only by
-the independent audit lane; nothing here is adopted, promoted, or ruled, and no
-audit outcome is predicted.
+Audit status is set only by the independent audit lane; nothing here is adopted,
+promoted, or ruled, and no audit outcome is predicted.
 
 Conventions (exactness firewall):
   * Exact only -- Python int / tuple / set / frozenset. NO float anywhere.
@@ -52,11 +51,10 @@ Layering of the derivations (this repair makes the halting content reading-free)
     model-postulate-pending to grounded on landed axiom text.
 
 The covariant neighbor-dependent availability rule and the record-inclusion
-event-ordering are REBUILT here from scratch (small exact windows). The
-review-pending sibling PR #4882 (recut of closed #4873; branch-only) is cited by number only and is
-NOT read. The frozen-star / black-hole label is an owner interpretive READING,
-not a claim; this runner asserts no GR content (no metric, horizon, curvature)
-and no rate / clock content.
+event-ordering are REBUILT here from scratch (small exact windows). PR #4882 is
+context only and is not load-bearing. The frozen-star / black-hole label is an
+owner interpretive READING, not a claim; this runner asserts no GR content (no
+metric, horizon, curvature) and no rate / clock content.
 """
 
 import itertools

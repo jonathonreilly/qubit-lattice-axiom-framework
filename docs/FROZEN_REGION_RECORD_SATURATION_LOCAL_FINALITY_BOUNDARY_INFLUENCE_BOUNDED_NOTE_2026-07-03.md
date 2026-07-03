@@ -1,8 +1,10 @@
 # Frozen-Region Record Saturation: Local Finality, Halting Local Record-Time, and Bounded Boundary Influence
 
 **Date:** 2026-07-03
-**Type:** bounded theorem (T1, T2, T3) + narrow scoped theorem (T4) + consequence/residue map (T5)
-**Status:** worker draft under the workhorse execution split; the supervising lane reviews and lands.
+**Type:** bounded_theorem
+**Claim boundary:** bounded theorem (T1, T2, T3), narrow scoped theorem (T4),
+and consequence/residue map (T5). This source note proposes the scoped claim
+for independent audit; it does not set audit status or effective status.
 **Status authority:** this note asserts no audit status and no promotion. Audit
 status is set only by the independent audit lane. Nothing here is adopted,
 promoted, ruled, or admitted as a premise by this note.
@@ -23,7 +25,7 @@ only; it issues no audit verdict and predicts none.
   with readout-invariance surviving as a derived lemma. This block grounds on
   the landed restoration: the runner's Record locking guard (check 1) keys to
   the current landed Record section (permanence at commit 50f0db6187, one-per-
-  site at commit 7950d9202c). Supervisor-supplied.
+  site at commit 7950d9202c).
 - **Interpretive labels are readings, not claims.** "Frozen star",
   "black-hole-like", and "local time ended" are an owner interpretive READING of
   the record-level phenomenon; they are not asserted as results.
@@ -46,9 +48,9 @@ only; it issues no audit verdict and predicts none.
   site-functional one-record-per-site set individuation (below) now rests on the
   landed sentence; M1's mathematical content is unchanged.
 - **Nothing adopted.** The event-ordering and static-world admissibility are
-  REBUILT from scratch as small exact constructions; the review-pending sibling
-  (PR #4882, recut of closed #4873, branch-only) is cited by number only and was not read. The audit
-  lane owns all statuses.
+  REBUILT from scratch as small exact constructions. PR #4882 is context only,
+  not a dependency edge, and no branch-local sibling result is imported. The
+  audit lane owns all statuses.
 
 ## Purpose
 
@@ -66,8 +68,9 @@ tail) additionally uses model postulate M1.
 
 ## Supplied surface (quotes)
 
-Axiom sentences quoted verbatim from `docs/MINIMAL_AXIOMS_2026-06-29.md` (merged
-to current main; the runner's Record locking guard at check 1 keys to the current
+Axiom sentences quoted verbatim from
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) (merged to
+current main; the runner's Record locking guard at check 1 keys to the current
 landed Record section -- one-per-site landed at commit 7950d9202c (PR #4879),
 permanence at commit 50f0db6187 (PR #4874); checks 2-5 match this merged file
 verbatim):
@@ -93,18 +96,17 @@ verbatim):
   about each site."
 - Qualification: "A state is a configuration of records."
 
-Supervisor-supplied surface (not read from repo files; used as stated): the
-permanence restoration that makes the Record locking clause end "records are
-permanent." (readout-invariance becoming a derived lemma) is LANDED on main
-(commit 50f0db6187; drafted as PR #4874, review-loop-closed). The one-per-site
-clause "A site never carries more than one record." is LANDED via PR #4879
-(commit 7950d9202c, "axioms: restore one record per site"). Owner ruling: non-triviality is contingent realized
-data, not law (vacuum-solution analogy); theorems condition on the realized
-sector. Sibling PR #4882 (recut of closed #4873; review-pending, branch-only, NOT read) derives the
-event-ordering from permanence + "A state is a configuration of records",
-exhibits the admissible static world, and carries an exact `2x2x2` saturation
-witness with covariant boundary pinning -- rebuilt here from scratch. Owner
-reading (a name, not a claim): a saturated region is "frozen-star /
+Current surface: the permanence restoration that makes the Record locking clause
+end "records are permanent." (readout-invariance becoming a derived lemma) is
+LANDED on main (commit 50f0db6187; drafted as PR #4874, review-loop-closed).
+The one-per-site clause "A site never carries more than one record." is LANDED
+via PR #4879 (commit 7950d9202c, "axioms: restore one record per site"). Owner
+ruling: non-triviality is contingent realized data, not law (vacuum-solution
+analogy); theorems condition on the realized sector. The event-ordering from
+permanence + "A state is a configuration of records", the admissible static
+world, and the exact `2x2x2` saturation witness with covariant boundary pinning
+are rebuilt here from scratch. PR #4882 is context only and is not load-bearing.
+Owner reading (a name, not a claim): a saturated region is "frozen-star /
 black-hole-like" -- fully written reality, local time ended.
 
 Note-level model (exactness firewall). A locked value is modelled by a scalar tag
@@ -296,11 +298,12 @@ residue, so the set is stated in full):
    THIS rule.
 4. **No rate / metric / clock content** anywhere; the landed count-not-rate
    firewalls are cited as review-pending / unaudited post-reset.
-5. **Event-ordering matches the review-pending sibling** PR #4882 (recut of closed #4873; branch-only,
-   not read); its status is review-pending.
+5. **Event-ordering convention is self-contained** -- it is rebuilt here from
+   permanence plus "A state is a configuration of records"; PR #4882 is context
+   only and is not a dependency edge.
 6. **No GR claims**; the frozen-star label is an interpretive reading only.
-7. **Nothing adopted**; the static world's admissibility is the sibling's result
-   rebuilt as an exact witness, not new content.
+7. **Nothing adopted**; the static world's admissibility is rebuilt here as an
+   exact witness rather than imported from a sibling branch.
 8. **Audit lane owns all statuses**; this note sets and predicts none.
 9. **Model postulate M1 (site-functional set individuation; one-per-site content now LANDED as axiom text, commit 7950d9202c, PR #4879, via the sentence "A site never carries more than one record.")** -- the site-functional individuation of
    records as `(site,value)` with at most one per site, now grounded on landed
@@ -330,12 +333,13 @@ choose a dynamics, Hamiltonian, transition rule, or record-production process;
 does not fix the admissibility rule beyond the quoted clause; does not claim
 general (non-cavity) singleton boundary pinning -- only monotone containment;
 does not claim the globally frozen world is produced (only that it is an
-admissible datum); does not adopt, promote, or rule; and does not read the
-review-pending sibling or predict any audit outcome.
+admissible datum); does not adopt, promote, or rule; and does not import any
+sibling result or predict any audit outcome.
 
 ## Dependencies
 
-Lattice, Qubit, Admissibility, Record axioms (`docs/MINIMAL_AXIOMS_2026-06-29.md`);
+Lattice, Qubit, Admissibility, Record axioms
+([`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md));
 quote guards at checks 1-5 cover the Record locking sentence (check 1 keys to the
 current landed Record section -- one-per-site at commit 7950d9202c, permanence at
 commit 50f0db6187), the
@@ -345,16 +349,16 @@ but is not separately quote-guarded. Further premises: the LANDED permanence
 clause "records are permanent." (commit 50f0db6187; drafted as PR #4874,
 review-loop-closed); domain monotonicity (permanence-derived); model postulate M1
 (residue 9; one-per-site content now grounded on landed axiom text, commit 7950d9202c); the
-supervisor-supplied covariant availability model and owner realized-sector ruling.
-The event-ordering and static-world admissibility overlap the review-pending
-sibling PR #4882, recut of closed #4873 (cited, not read).
+covariant availability model and owner realized-sector ruling. The
+event-ordering and static-world admissibility overlap PR #4882 in topic only;
+this note rebuilds the needed finite constructions here and does not cite that
+sibling as a dependency.
 
 ## No-Promotion
 
-Nothing here is a Tier-A admission, primitive, axiom, or source of bounded status.
-It prepares a reviewer-facing bounded/narrow theorem surface only. The audit and
-review lanes own every status and landing decision; this worker draft hands off
-and lands nothing.
+Nothing here is a Tier-A admission, primitive, axiom, or source of audit status.
+It prepares a reviewer-facing bounded/narrow theorem surface only. The audit
+lane owns every status and effective-status decision.
 
 ## Summary (<=10 lines)
 
@@ -364,4 +368,4 @@ and lands nothing.
 - T3 (corrected): the boundary constraint is MONOTONE CONTAINMENT in general (the region value stays available forever), exact SINGLETON pinning only for CAVITY sites (all six neighbors inside `R`); a boundary singleton RELAXES under an admissible `-1` on a different neighbor -- all within the note-level model.
 - T4: in the finitary realized sector, global saturation is unreachable at any finite stage; the infinite `Z^3` is load-bearing for unbounded record-time.
 - T5: frozen-star label is an owner reading (no GR content); residues now number 10 (adds the M1 grounding note and T1-corollary rule-dependence).
-- Permanence LANDED (commit 50f0db6187, drafted as PR #4874, review-loop-closed); one-per-site LANDED as PR #4879 (commit 7950d9202c; M1's set-level content grounded on it); the check-1 quote guard is live on the current landed Record section; nothing adopted; audit lane owns all statuses; runner 33/33 exact checks PASS.
+- Permanence LANDED (commit 50f0db6187, drafted as PR #4874, review-loop-closed); one-per-site LANDED as PR #4879 (commit 7950d9202c; M1's set-level content grounded on it); the check-1 quote guard is live on the current landed Record section; PR #4882 is context only, not a dependency; nothing adopted; audit lane owns all statuses; runner 33/33 exact checks PASS.

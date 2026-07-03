@@ -1,0 +1,97 @@
+===== runner cache v1 =====
+runner: scripts/record_content_readout_license_split_registration_unreachability_2026_07_02.py
+runner_sha256: 8357007b9c4b04781e66e8d2f6b8d620a4b436f687f20952afe0a8168b8b4ffd
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.57
+status: ok
+----- stdout -----
+Record-content readout license split runner
+Computing Weyl grids M=1600 and M=3200
+
+SECTION A -- kernels re-derived on the Weyl grid
+PASS A0-haar-density-mean-M1600 -- value=1.000000000000
+PASS A1-exact-difference-TV-minus-Tid-M1600 -- max=1.554e-15
+PASS A1-exact-difference-TV-minus-Tid-M3200 -- max=1.554e-15
+PASS A2-TV-normalization -- value=1.000000000000
+PASS A2-Tid-normalization -- value=1.000000000000
+PASS A3-w3-Tid -- value=0.166666666667
+PASS A3-w3-TV -- value=-3.031649005910e-17
+PASS A3-w8-TV -- value=0.062500000000
+PASS A3-w8-Tid -- value=0.062500000000
+
+SECTION B -- branch moments and exact identities
+  <Re chi_3 * s2_naive> M1600=-2.375000000005
+  <Re chi_3 * s2_naive> M3200=-2.375000000000
+PASS B1-naive-branch-exact-identity -- error=3.411e-13
+PASS B1-naive-branch-double-grid-convergence -- errors 5.450e-12 -> 3.411e-13
+PASS B2-zero-sum-Rechi3-s2-min-anchor -- value=-2.422278269774
+PASS B2-zero-sum-s2-min-Haar-anchor -- value=9.466227112322
+PASS B2-zero-sum-s2-TV-anchor -- value=9.762523408618
+  increment=2.422278269774 floor=7.340245138844 total=9.762523408618
+  Delta m^2=0.605569567443
+PASS B3-increment-anchor -- value=2.422278269774
+PASS B3-floor-anchor -- value=7.340245138844
+PASS B3-definitional-consistency-increment-plus-floor -- residual=0.000e+00
+PASS B3-Delta-m2-anchor -- value=0.605569567443
+
+SECTION C -- unreachability
+  margin=1-Delta m^2=0.394430432557
+  required informative fraction=1.651337936650
+PASS C1-Delta-m2-less-than-one -- Delta m^2=0.605569567443
+PASS C1-unit-exclusion-margin -- margin=0.394430432557
+PASS C2-required-fraction-unreachable -- value=1.651337936650
+PASS C2-required-fraction-margin -- value=1.651337936650
+PASS C3-monotone-family-bound-p=1/4 (definitional) -- p*Delta m^2=0.151392391861
+PASS C3-monotone-family-bound-p=1/2 (definitional) -- p*Delta m^2=0.302784783722
+PASS C3-monotone-family-bound-p=3/4 (definitional) -- p*Delta m^2=0.454177175583
+PASS C3-monotone-family-bound-p=1 (definitional) -- p*Delta m^2=0.605569567443
+
+SECTION D -- shares at the unit point
+  p*=0.409730132
+  record share=0.248120099
+  reconstruction share=0.751879901
+PASS D1-p-star-anchor -- value=0.409730132
+PASS D2-record-share-anchor -- value=0.248120099
+PASS D2-reconstruction-share-anchor -- value=0.751879901
+PASS D3-shares-sum-definitional -- sum=1.000000000000
+PASS D3-record-share-interior -- value=0.248120099
+PASS D3-reconstruction-share-interior -- value=0.751879901
+
+SECTION E -- source-boundary guards
+PASS E0-note-exists -- docs/RECORD_CONTENT_READOUT_LICENSE_SPLIT_REGISTRATION_UNREACHABILITY_THEOREM_NOTE_2026-07-02.md
+PASS E0-dep-exists-axioms -- docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS E0-dep-exists-graph-first -- docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md
+PASS E0-dep-exists-rigidity -- docs/G_BARE_RIGIDITY_THEOREM_NOTE.md
+PASS E0-dep-exists-semigroup -- docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md
+PASS E1-axioms-readout-marker-1 -- needle='Only records are readable. A readout value is determined by record content alone.'
+PASS E1-axioms-readout-marker-2 -- needle='For any finite collection of pairwise-disjoint records, scalar readout `I` is additive, with `I(empty)=0`.'
+PASS E1-graph-first-marker -- needle='the joint commutant has dimension `10`'
+PASS E1-rigidity-marker -- needle='no independent scalar-normalization freedom'
+PASS E1-semigroup-marker -- needle='continuous Markov semigroups live on the probability/ensemble'
+PASS E2-note-preserve-marker: set only by the independent audit lane -- needle='set only by the independent audit lane'
+PASS E2-note-preserve-marker: license split -- needle='license split'
+PASS E2-note-preserve-marker: record-determined -- needle='record-determined'
+PASS E2-note-preserve-marker: readout-construction -- needle='readout-construction'
+PASS E2-note-preserve-marker: T_V - T_id = -Re chi_3 -- needle='T_V - T_id = -Re chi_3'
+PASS E2-note-preserve-marker: -19/8 -- needle='-19/8'
+PASS E2-note-preserve-marker: 0.605570 -- needle='0.605570'
+PASS E2-note-preserve-marker: not attainable as record-determined content -- needle='not attainable as record-determined content'
+PASS E2-note-preserve-marker: 0.248120 -- needle='0.248120'
+PASS E2-note-preserve-marker: 0.751880 -- needle='0.751880'
+PASS E2-note-preserve-marker: located, never forced -- needle='located, never forced'
+PASS E2-note-preserve-marker: not a citation-graph dependency -- needle='not a citation-graph dependency'
+PASS E2-note-preserve-marker: does not claim: -- needle='does not claim:'
+PASS E2-note-preserve-marker: an audit verdict or any effective-status promoti -- needle='an audit verdict or any effective-status promotion'
+PASS E2-note-preserve-marker: does not adjudicate which component -- needle='does not adjudicate which component'
+PASS E3-forbidden-absent: audit_status: -- needle='audit_status:'
+PASS E3-forbidden-absent: effective_status: -- needle='effective_status:'
+PASS E3-forbidden-absent: only route -- needle='only route'
+PASS E3-forbidden-absent: exhausted -- needle='exhausted'
+PASS E3-forbidden-absent: closes the route -- needle='closes the route'
+PASS E3-forbidden-absent: the total is unlicensed -- needle='the total is unlicensed'
+
+TOTAL: PASS=63 FAIL=0
+
+----- stderr -----
+

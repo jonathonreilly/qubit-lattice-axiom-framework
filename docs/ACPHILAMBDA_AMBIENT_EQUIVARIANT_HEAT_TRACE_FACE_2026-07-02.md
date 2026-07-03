@@ -47,7 +47,7 @@ It supplies the pinned local row: "**(B) The weight `(1,2)` is forced and gives 
 It also pins the scope exclusion: "It does **not** supply the physical single-summand readout".
 The axiom memo `docs/MINIMAL_AXIOMS_2026-06-29.md` supplies the lattice objects:
 "Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor
-adjacency, standard translations, and proper cubic rotations."
+adjacency, standard translations, and proper cubic rotations about each site."
 Campaign context is `PR #4783
 ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01`,
 `PR #4788 ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01`,

@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/theta_phase_insertion_triality_flip_table_single_link_nogo_chain_reader_2026_07_02.py
+runner_sha256: 423d589213b6aac8eeabaa927f373386efc2b3f7da441e2dcb2183359b845c54
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.57
+status: ok
+----- stdout -----
+Section A: abelian shadow of the triality-phase insertion
+  [PASS] A1 U(1) case: the triality-phase weight IS the argument-shifted weight 1 + 2c cos(phi + alpha) — the block-2 abelian theta slot
+  [PASS] A2 its Fourier coefficients are the phased pair c e^{+i alpha}, c e^{-i alpha} at n = +1, -1 (dual-label asymmetry = the theta reading of the flux sign)
+Section B: flip table of the phased star
+  [PASS] B1 dagger sends alpha -> -alpha: G_a(S^dag) = G_{-a}(S) (the parity-like flip conjugates the insertion)
+  [PASS] B2 bar sends alpha -> -alpha: G_a(conj S) = G_{-a}(S)
+  [PASS] B3 transpose preserves the phased star for EVERY tested alpha: G_a(S^T) = G_a(S)
+  [PASS] B4 the phased star is real (conjugate channel pairing)
+  [PASS] B5 diagonal-conjugation invariance holds at alpha != 0 (the phased insertion is frame-licensed: a class-function weight)
+Section C: what the phase insertion reads
+  [PASS] C1 the alpha-odd part matches the exact channel formula (projector vs formula)
+         O = -0.16195465
+  [PASS] C2 the read is nonzero: |O| > 0.05
+         |O| = 0.161955
+  [PASS] C3 the pair channels are exact transport composites: I(F,1,F) = tr(S3 S1)/3 and I(1,F,F) = tr(S3 S2)/3 — the phase insertion reads imaginary parts of pair-composite traces (the abelian/center shadow) plus the epsilon channel
+  [PASS] C4 the single-link no-go: O is transpose-EVEN (O(S^T) = O(S) exactly) while the chiral datum flips sign (d(S^T) = -d, |d| > 0.1): no single-link class-weight insertion — real or phased, any alpha — reads the chiral sign
+         |d| = 0.6672
+Section D: the multi-link chain reader
+  [PASS] D1 the path-antisymmetrized chain observable D = tr(S1 S2 S3) - tr(S1 S3 S2) is diagonal-conjugation invariant (frame-licensed, configurational)
+  [PASS] D2 D is transpose-ODD and nonzero: the chiral sign IS read by multi-link path-ordered observables
+         D = 0.599544-0.292698j
+  [PASS] D3 the chain reader's parity table matches block 7: dagger(D) = -conj(D), bar(D) = conj(D)
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_minimal_axioms_clean_base_exact.py
-runner_sha256: 649ea9f31f35707e57eb14adbebbae788f198bac4df4107cb3e0edb6ab276150
+runner_sha256: efb20a41810c763fd7b4fcfb40a8995317d0084aa18557f21b05186e2b0cb57b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 PASS: Source note exists
@@ -44,9 +44,13 @@ PASS: Registry note blocks observable-principle laundering
       
 PASS: Registry note records Admissibility and downstream-boundary firewall
       
-PASS: Registry note records 2026-07-02 no-privilege/readout/state/law wording
+PASS: Registry note records 2026-07-02/03 no-privilege/readout/state/law/record wording
       
 PASS: Policy records 2026-07-02 foundation wording additions
+      
+PASS: Policy records 2026-07-03 Record permanence restoration
+      
+PASS: Policy records 2026-07-03 Record section polish
       
 PASS: Policy records 2026-06-29 foundation reset
       
@@ -102,6 +106,8 @@ PASS: Open gates outside axioms include theta
       
 PASS: Open gates outside axioms include context selection and occurrence rules
       
+PASS: Open gates outside axioms include physical persistence dynamics
+      
 PASS: Open gates outside axioms include g_bare
       
 PASS: Open gates outside axioms include scale self-consistency
@@ -118,8 +124,10 @@ PASS: Admissibility: nearest-neighbor conditions can constrain possibility avail
       toy predicate only: neighbor conditions can make a candidate unavailable; no probability, transition, or dynamics is used
 PASS: Record: finite scalar record functional is additive over disjoint collections
       I(R1 union R2)=I(R1)+I(R2) and I(empty)=0 checked for finite weighted records
-PASS: Record: locked possibility is invariant under repeated readout
-      same record identity returns the same locked possibility; no resampling or re-selection is used
+PASS: Record: a site never carries more than one record
+      toy configuration maps one site to one record identity; no double-lock at a site is used
+PASS: Record: records are permanent
+      same record identity and locked possibility persist; no resampling, re-selection, or removal is used
 PASS: Qubit: no possibility is privileged by the one-site domain
       finite toy relabeling preserves the possibility domain; no default, weight, or selector is introduced
 PASS: Qualification: a state can be read as a configuration of records
@@ -129,8 +137,8 @@ PASS: Qualification: supplied-condition law gives one answer where its condition
 PASS: Boundary: runner imports no context-selection/log-det/P2/measurement/dynamics/scale conclusion
       script checks only algebraic notation, graph adjacency, local availability bookkeeping, fixed record readout, and finite additivity
 
-runner_check_breakdown = {A: 61, B: 0, C: 0, D: 0, total_pass: 61}
-TOTAL: PASS=61 FAIL=0
+runner_check_breakdown = {A: 65, B: 0, C: 0, D: 0, total_pass: 65}
+TOTAL: PASS=65 FAIL=0
 RESULT: PASS
 
 ----- stderr -----

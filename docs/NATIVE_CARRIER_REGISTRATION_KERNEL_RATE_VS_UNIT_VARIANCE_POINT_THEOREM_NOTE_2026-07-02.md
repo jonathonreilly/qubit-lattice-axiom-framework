@@ -322,3 +322,21 @@ Expected final line:
 ```text
 TOTAL: PASS=68 FAIL=0
 ```
+
+## 2026-07-02 readout-discipline reconciliation
+
+The Record axiom was clarified after this packet was drafted and now states:
+
+> "Only records are readable. A readout value is determined by record content
+> alone."
+
+Under this clause the two components of the reading used here acquire
+distinct status. The identity-channel readout floor `T_id` is produced with
+no record written, so the motion this reading assigns to it is
+readout-construction content rather than record-determined content. The
+registration increment, exactly `T_V - T_id = -Re chi_3` (the dephasing of
+the `3`/`3bar` coherence blocks, per-direction second moment `0.605570`), is
+the record-determined component. The license split and its consequences are
+left outside this note; this block does not create a citation-graph
+dependency. This block is descriptive; no claim of this note changes, and the
+floor-versus-increment decomposition reported above is unchanged.

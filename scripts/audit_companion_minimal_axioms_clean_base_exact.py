@@ -159,9 +159,12 @@ def source_boundary_checks() -> list[Check]:
             "",
         ),
         Check(
-            "Registry note records 2026-07-02 no-privilege/readout/state/law wording",
+            "Registry note records 2026-07-02/03 no-privilege/readout/state/law/record wording",
             "no possibility privileged" in node.get("note", "")
+            and "record locks exactly one admissible local possibility" in node.get("note", "")
+            and "a site never carries more than one record" in node.get("note", "")
             and "a readout value is determined by record content alone" in node.get("note", "")
+            and "records are permanent" in node.get("note", "")
             and "A state is a configuration of records" in node.get("note", "")
             and "A law privileges no states" in node.get("note", ""),
             "",
@@ -173,6 +176,19 @@ def source_boundary_checks() -> list[Check]:
             and contains(policy, "A readout value is determined by record content alone")
             and contains(policy, "A state is a configuration of records")
             and contains(policy, "A law privileges no states"),
+            "",
+        ),
+        Check(
+            "Policy records 2026-07-03 Record permanence restoration",
+            "2026-07-03 -- Record permanence restoration" in policy
+            and contains(policy, "records are permanent"),
+            "",
+        ),
+        Check(
+            "Policy records 2026-07-03 Record section polish",
+            "2026-07-03 -- Record section polish" in policy
+            and contains(policy, "record locks exactly one admissible local possibility")
+            and contains(policy, "A site never carries more than one record"),
             "",
         ),
         Check("Policy records 2026-06-29 foundation reset", "2026-06-29 -- Foundation reset: site possibility and local admissibility" in policy, ""),
@@ -268,8 +284,9 @@ def source_boundary_checks() -> list[Check]:
         ),
         Check(
             "Record fixed-reality clause is present",
-            contains(note, "A site need not carry a record.")
-            and contains(note, "locks exactly one local possibility from the subset\navailable at that site under Admissibility")
+            contains(note, "When present, a record locks exactly one admissible local possibility.")
+            and contains(note, "A\nsite never carries more than one record")
+            and contains(note, "records are permanent")
             and contains(note, "Only records are readable")
             and contains(note, "A readout value is determined by record content alone")
             and contains(note, "For any finite collection of pairwise-disjoint records, scalar readout `I` is additive")
@@ -290,6 +307,7 @@ def source_boundary_checks() -> list[Check]:
         Check("Open gates outside axioms include staggered realization", "staggered-Dirac/finite-Grassmann realization" in note, ""),
         Check("Open gates outside axioms include theta", "strong-CP theta admission" in note, ""),
         Check("Open gates outside axioms include context selection and occurrence rules", "context selection" in note and "occurrence rules" in note, ""),
+        Check("Open gates outside axioms include physical persistence dynamics", "physical persistence dynamics" in note, ""),
         Check("Open gates outside axioms include g_bare", "`g_bare = 1` convention handling" in note, ""),
         Check("Open gates outside axioms include scale self-consistency", "natural unit equals the Planck length" in note, ""),
     ]
@@ -381,12 +399,23 @@ def run_checks() -> list[Check]:
     )
 
     record = {"site": origin, "record_id": "r1", "possibility": "down"}
-    durable = record["possibility"] == "down" == record["possibility"]
+    same_site_record_ids = {record["site"]: record["record_id"]}
+    one_record_per_site = len(same_site_record_ids) == 1
     checks.append(
         Check(
-            "Record: locked possibility is invariant under repeated readout",
-            durable,
-            "same record identity returns the same locked possibility; no resampling or re-selection is used",
+            "Record: a site never carries more than one record",
+            one_record_per_site,
+            "toy configuration maps one site to one record identity; no double-lock at a site is used",
+        )
+    )
+
+    later_record = dict(record)
+    permanent = later_record == record
+    checks.append(
+        Check(
+            "Record: records are permanent",
+            permanent,
+            "same record identity and locked possibility persist; no resampling, re-selection, or removal is used",
         )
     )
 

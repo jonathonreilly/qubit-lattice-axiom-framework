@@ -62,11 +62,8 @@ the nearest-neighbor conditions.
 
 ### Record / Fixed Reality
 
-A site need not carry a record.
-
-When present, a record locks exactly one local possibility from the subset
-available at that site under Admissibility; the locked possibility is invariant
-under repeated readout.
+When present, a record locks exactly one admissible local possibility. A
+site never carries more than one record; records are permanent.
 
 Only records are readable. A readout value is determined by record content
 alone. For any finite collection of pairwise-disjoint records, scalar readout
@@ -107,7 +104,8 @@ nearest-neighbor rule: for each site, the available possibilities are
 determined by, and vary with, the nearest-neighbor conditions. It does not
 choose a Hamiltonian or transfer operator, supply transition probabilities or
 weights, select a scalar or nonzero kinetic branch, assert a Dirac-square
-carrier, define a time metric, or provide a record-production process.
+carrier, define a time metric, or provide a record-production process or
+physical persistence dynamics.
 
 Static spatial kinetic questions, probability/process questions, and temporal
 evolution questions should be tracked separately. A realized kinetic branch, if
@@ -145,8 +143,9 @@ readout structure:
 - Admissibility names the nearest-neighbor rule by which, for each site, the
   available possibilities are determined by, and vary with, the
   nearest-neighbor conditions.
-- Record names the fixed locking of one available local possibility, plus finite
-  scalar readout additivity over disjoint record collections.
+- Record names the fixed locking of one admissible local possibility,
+  one-record-per-site uniqueness, permanence, and finite scalar readout
+  additivity over disjoint record collections.
 - `K`/CPT orbit structure, central-sector decomposition, and any sector
   generation rule are downstream readout-context content, not generic axiom
   content.

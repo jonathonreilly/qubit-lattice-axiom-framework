@@ -1,0 +1,130 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dynamics_sort_records_accumulate_2026_07_03.py
+runner_sha256: 84e9416454a0ecfb16bab1ddca8c5ac1b9e3e7a8527d881f079172c128726bc3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+# ---- SOURCE LIVENESS (quotes are live, not dead data) ----
+#   [lattice_sites] axiom-block sentence live in file: True
+#   [lattice_no_privileged_site] axiom-block sentence live in file: True
+#   [lattice_distinguishes_sites] axiom-block sentence live in file: True
+#   [qubit_possibility_domain] axiom-block sentence live in file: True
+#   [qubit_one_site_algebra] axiom-block sentence live in file: True
+#   [qubit_cl30_equivalent] axiom-block sentence live in file: True
+#   [qubit_no_privileged_possibility] axiom-block sentence live in file: True
+#   [qubit_distinguishes_possibilities] axiom-block sentence live in file: True
+#   [admissibility_fixed_covariant_rule] axiom-block sentence live in file: True
+#   [admissibility_varies_with_neighbors] axiom-block sentence live in file: True
+#   [record_optional_at_site] axiom-block sentence live in file: True
+#   [record_locks_one_readout_invariant_possibility] axiom-block sentence live in file: True
+#   [record_only_records_readable] axiom-block sentence live in file: True
+#   [record_readout_content_only] axiom-block sentence live in file: True
+#   [record_finite_additive_readout] axiom-block sentence live in file: True
+#   [qualification_named_content_only] axiom-block sentence live in file: True
+#   [qualification_extra_structure_needs_authority] axiom-block sentence live in file: True
+#   [qualification_state_is_records] axiom-block sentence live in file: True
+#   [qualification_law_no_privileged_state] axiom-block sentence live in file: True
+#   [qualification_law_single_answer] axiom-block sentence live in file: True
+CHECK 01: PASS -- source liveness: all 20 axiom-block sentences are live substrings of the axioms file (sentence-complete list)
+#   [ORDER_RATE] firewall/form/arrow quote live: True
+#   [NONTRIV   ] firewall/form/arrow quote live: True
+#   [FORM      ] firewall/form/arrow quote live: True
+#   [FORM      ] firewall/form/arrow quote live: True
+#   [ARROW     ] firewall/form/arrow quote live: True
+#   [ARROW     ] firewall/form/arrow quote live: True
+CHECK 02: PASS -- source liveness: all 6 firewall/form/arrow quotes are live substrings of their source files
+CHECK 03: PASS -- source liveness: permanence option-(a) intent evidence live: 'Record / Fixed Reality' heading + durable-realized-outcome lineage line
+# ---- PERMANENCE SCOPE GAP (bounded theorem) ----
+CHECK 04: PASS -- permanence scope gap readout idempotent (repeated readout: same value, record unchanged)
+CHECK 05: PASS -- permanence scope gap readout value determined by record content alone (pure, no side effect)
+CHECK 06: PASS -- permanence scope gap scalar readout I additive over disjoint records, I(empty)=0
+CHECK 07: PASS -- permanence scope gap each record locks one Admissibility-available possibility (covariant rule)
+CHECK 08: PASS -- permanence scope gap every quoted Record-axiom sentence holds BEFORE the mortal step
+CHECK 09: PASS -- permanence scope gap covariance: availability commutes with translation (odd-parity + general) and proper cubic rotation
+CHECK 10: PASS -- permanence scope gap variation: different neighbor conditions give different available sets ({+1} vs {+1,-1})
+CHECK 11: PASS -- permanence scope gap no-fiat: availability reads neighbor record content only, not coordinate parity (different-parity sites share an available set)
+CHECK 12: PASS -- permanence scope gap mortal step deletes one record; survivors still admissible; availability changes at (0,1,0); readout-invariance does NOT entail permanence
+# ---- CONDITIONAL RECORD ORDERING (bounded theorem, conditional on permanence) ----
+CHECK 13: PASS -- conditional record ordering inclusion order reflexive (partial order)
+CHECK 14: PASS -- conditional record ordering inclusion order antisymmetric
+CHECK 15: PASS -- conditional record ordering inclusion order transitive
+CHECK 16: PASS -- conditional record ordering realized history: forward inclusion each step; idle steps give equal consecutive states (positions 0,2)
+CHECK 17: PASS -- conditional record ordering strict increase exactly at registration events (positions 1,3); multi-registration step adds 2; registration_events sums set-diffs = 3
+CHECK 18: PASS -- conditional record ordering record-time = event-time coarser than step-time (3 states, 2 events, 4 steps; counts non-decreasing)
+CHECK 19: PASS -- conditional record ordering no cycles: a return step must delete a record (permanence-forbidden)
+CHECK 20: PASS -- conditional record ordering order is relabel-invariant (site perm = order iso) and merge-monotone
+CHECK 21: PASS -- conditional record ordering firewall-scoped: order+count only (rate 1 vs 1/2 not fixed); forward is definitional inclusion, not thermodynamic
+# ---- ACCUMULATION IRREDUCIBILITY (narrow no-go, axiom-first) ----
+CHECK 22: PASS -- accumulation irreducibility(i) static witness admissible under the covariant rule across the constant history
+#   [lattice_sites] static witness satisfies sentence: True
+#   [lattice_no_privileged_site] static witness satisfies sentence: True
+#   [lattice_distinguishes_sites] static witness satisfies sentence: True
+#   [qubit_possibility_domain] static witness satisfies sentence: True
+#   [qubit_one_site_algebra] static witness satisfies sentence: True
+#   [qubit_cl30_equivalent] static witness satisfies sentence: True
+#   [qubit_no_privileged_possibility] static witness satisfies sentence: True
+#   [qubit_distinguishes_possibilities] static witness satisfies sentence: True
+#   [admissibility_fixed_covariant_rule] static witness satisfies sentence: True
+#   [admissibility_varies_with_neighbors] static witness satisfies sentence: True
+#   [record_optional_at_site] static witness satisfies sentence: True
+#   [record_locks_one_readout_invariant_possibility] static witness satisfies sentence: True
+#   [record_only_records_readable] static witness satisfies sentence: True
+#   [record_readout_content_only] static witness satisfies sentence: True
+#   [record_finite_additive_readout] static witness satisfies sentence: True
+#   [qualification_named_content_only] static witness satisfies sentence: True
+#   [qualification_extra_structure_needs_authority] static witness satisfies sentence: True
+#   [qualification_state_is_records] static witness satisfies sentence: True
+#   [qualification_law_no_privileged_state] static witness satisfies sentence: True
+#   [qualification_law_single_answer] static witness satisfies sentence: True
+CHECK 23: PASS -- accumulation irreducibility(i) static witness satisfies EVERY one of the 20 axiom-block sentences (sentence-complete; no sentence forces change)
+CHECK 24: PASS -- accumulation irreducibility(i) constant history registers 0 new records: non-triviality NOT forced
+CHECK 25: PASS -- accumulation irreducibility(ii) H=0 witness: zero generator in gauge-covariant class (nonzero too; sx control fails) -> non-triviality is new content
+# ---- COMPRESSION MAP (bounded support) ----
+CHECK 26: PASS -- compression map(a) production definitional: event:=registration, count == +records on chain
+CHECK 27: PASS -- compression map(a') registration_events sums set-differences: multi-registration {}->{r1,r2}=2; realized history (with idle steps) = 3
+CHECK 28: PASS -- compression map(b) single discharge map P3<->permanence, P2<->accumulation (form-conditional); touches only P2/P3; identical to the note's own text (live grep)
+CHECK 29: PASS -- compression map(c) #4855 C-add: chain-concat associative + additive; kernel-convolution NAMED OPEN
+CHECK 30: PASS -- compression map(d) conditional ladder re-hangs: each rung premised, B-AXIS external, terminal Dirac branch review-pending
+CHECK 31: PASS -- compression map(e) ordering->transfer-axis (B-AXIS) NOT supplied by ordering {order,count}: NAMED OPEN target
+CHECK 32: PASS -- compression map(f) permanent non-goals (rate/metric/clock, arrow, ABJ-externality) never discharged
+# ---- residue table parsed from the note (single source of truth) ----
+#   [owner-surface flag only] Record permanence premise (owner surface; OPEN (a) clarity / (b) new-content)
+#   [owner-surface flag only] Accumulation sentence FORM-E (per-event)
+#   [owner-surface flag only] Accumulation sentence FORM-H (per-history)
+#   [review-pending; carried open] P1 (#4854 premise family)
+#   [maps to accumulation sentence] P2 production premise
+#   [maps to permanence sentence] P3 persistence premise
+#   [review-pending; carried open] P4 (#4854 premise family)
+#   [review-pending; carried external] CHART-MIX (#4854 premise family)
+#   [review-pending; carried open] C-add (#4855 composition premise)
+#   [review-pending; carried open] POS (#4855 premise family)
+#   [review-pending; carried open] LOC (#4855 premise family)
+#   [derivation target (open)] Kernel-convolution clause (composition + locality + record-compatibility)
+#   [carried open] One-parameter composition (kernel-target ingredient)
+#   [carried open] Record-compatibility (kernel-target ingredient)
+#   [external premise; not supplied by ordering] B-AXIS supplied-axis premise (EXTERNAL)
+#   [derivation target (open)] Ordering-to-transfer-axis (B-AXIS) bridge
+#   [compressed by accumulation surface if owner accepts] Nonzero-dynamics premise (PR #4843)
+#   [review-pending external] Dirac-branch premise (PR #4843) / #4797 review-pending
+#   [landed-given-bridges] Form-forced (gauge-invariant-local class)
+#   [landed-conditional] Stone-unique generator (given axis)
+#   [external premise; unchanged] ABJ parity external premise
+#   [named premise] d_t parity (consequence from ABJ premise)
+#   [named premise] d_t=1 single-generator N5 cap
+#   [carried open; permanently out of scope] Past-hypothesis boundary (universal-floor)
+#   [permanent no-go] Rate no-go (record order/count)
+#   [permanent no-go] Metric no-go (record order/count)
+#   [permanent no-go] Clock no-go (record order/count)
+#   [import; carried open] Realized-history import (supplied sequence of states)
+#   [carried open; audit lane owns] All cited notes: unaudited post 2026-06-29 reset
+#   [untouched] Audit statuses (audit-lane authority)
+CHECK 33: PASS -- compression map residue table parsed from the note: 30 rows, all 29 required keys present, no adoption/promotion status
+# ---- GOVERNANCE MAP ----
+CHECK 34: PASS -- governance map two owner surfaces: permanence (OPEN (a)/(b), not foreclosed) + accumulation (both FORM-E/FORM-H); nothing adopted
+CHECK 35: PASS -- governance map leverage: two surfaces replace {H!=0 nonzero-dynamics premise, event-ordering}; B-AXIS stays EXTERNAL (bridge OPEN); other named rungs keep their statuses
+TOTAL: PASS=35 FAIL=0
+
+----- stderr -----
+

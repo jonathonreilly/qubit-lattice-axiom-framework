@@ -5,9 +5,10 @@
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome.
-**Actual current surface status:** conditional-support; conditional on
-D-totality, which is not adjudicated here. The pointwise escape in T4 stands
-without D-totality.
+**Paired runner:**
+[`scripts/frontier_c1b_degeneracy_locus_partition_totality_2026_07_02.py`](../scripts/frontier_c1b_degeneracy_locus_partition_totality_2026_07_02.py)
+**Cached output:**
+[`logs/runner-cache/frontier_c1b_degeneracy_locus_partition_totality_2026_07_02.txt`](../logs/runner-cache/frontier_c1b_degeneracy_locus_partition_totality_2026_07_02.txt)
 
 ## Purpose
 
@@ -302,10 +303,10 @@ already adopted either reading.
 
 | path | role | dependency class |
 |---|---|---|
-| `docs/FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md` | Block01 sibling; supplies S1/S2/S3 definitions, partition provenance, and the equal-channel-energy parent surface. | stacked branch-local sibling, unaudited |
-| `docs/C1_FRAME_COMPONENT_FROM_RECORD_REGISTRABILITY_PARTIAL_BOUNDED_NOTE_2026-07-02.md` | Block03 sibling; supplies the C1a/C1b split, R*, and the honest limit that R* does not exclude realized-`Y`-dependent partitions. | stacked branch-local sibling, unaudited |
-| `docs/MINIMAL_AXIOMS_2026-06-29.md` | Supplies the Record sentences, especially locked possibility under repeated readout, readability, finite additivity, and the open-gates boundary for measurement basis/context selection. | current axiom memo; audit status remains independent |
-| `docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md` | Supplies pointwise realized-state evaluation and the no-averaging/no-measure/no-typicality/no-state-selection boundary. | framework primitive declaration; audit status remains independent |
+| [`FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md`](FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md) | Supplies S1/S2/S3 definitions, partition provenance, and the equal-channel-energy parent surface. | landed dependency; independent audit owns its verdict and any retained-grade dependency closure |
+| [`C1_FRAME_COMPONENT_FROM_RECORD_REGISTRABILITY_PARTIAL_BOUNDED_NOTE_2026-07-02.md`](C1_FRAME_COMPONENT_FROM_RECORD_REGISTRABILITY_PARTIAL_BOUNDED_NOTE_2026-07-02.md) | Supplies the C1a/C1b split, R*, and the honest limit that R* does not exclude realized-`Y`-dependent partitions. | landed dependency; independent audit owns its verdict and any retained-grade dependency closure |
+| [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | Supplies the Record sentences, especially locked possibility under repeated readout, readability, finite additivity, and the open-gates boundary for measurement basis/context selection. | audit status remains independent |
+| [`REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) | Supplies pointwise realized-state evaluation and the no-averaging/no-measure/no-typicality/no-state-selection boundary. | audit status remains independent |
 
 ## Paired Runner
 

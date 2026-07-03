@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_occupancy_possibility_individuation_2026_07_03.py
+runner_sha256: 47c2eb3ccf12686fb101f69212156a49a00f79214b6748dfe3f4069a26220c9f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+CHECK 01: PASS -- live quote guard: state as records -- source=docs/MINIMAL_AXIOMS_2026-06-29.md
+CHECK 02: PASS -- live quote guard: record locks one possibility -- source=docs/MINIMAL_AXIOMS_2026-06-29.md
+CHECK 03: PASS -- live quote guard: record-only readout -- source=docs/MINIMAL_AXIOMS_2026-06-29.md
+CHECK 04: PASS -- live quote guard: possibility distinction -- source=docs/MINIMAL_AXIOMS_2026-06-29.md
+CHECK 05: PASS -- live quote guard: lattice mirror distinction -- source=docs/MINIMAL_AXIOMS_2026-06-29.md
+CHECK 06: PASS -- live quote guard: nearest-neighbor admissibility -- source=docs/MINIMAL_AXIOMS_2026-06-29.md
+CHECK 07: PASS -- live quote guard: law sentence -- source=docs/MINIMAL_AXIOMS_2026-06-29.md
+CHECK 08: PASS -- live quote guard: qualification boundary -- source=docs/MINIMAL_AXIOMS_2026-06-29.md
+CHECK 09: PASS -- live quote guard: open gates withhold rules -- source=docs/MINIMAL_AXIOMS_2026-06-29.md
+CHECK 10: PASS -- live quote guard: category-slip wall -- source=docs/KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md
+CHECK 11: PASS -- live quote guard: measure-neutral selector wall -- source=docs/KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md
+CHECK 12: PASS -- live quote guard: Record supplies no occupancy -- source=docs/KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md
+CHECK 13: PASS -- live quote guard: N1 record-orbit pruning row -- source=docs/KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md
+CHECK 14: PASS -- live quote guard: operative record-orbit pruning sentence -- source=docs/KOIDE_RECORD_ORBIT_COUNT_DOES_NOT_SELECT_R_HALF_NO_GO_NOTE_2026-06-07.md
+CHECK 15: PASS -- live quote guard: separator requirement -- source=docs/ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md
+CHECK 16: PASS -- live quote guard: scalar blindness result -- source=docs/ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md
+CHECK 17: PASS -- live quote guard: adjacent K-odd trace wall -- source=docs/ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md
+CHECK 18: PASS -- live quote guard: prior bridge sentence -- source=docs/KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md
+CHECK 19: PASS -- note has repaired title
+CHECK 20: PASS -- note declares canonical open-gate type
+CHECK 21: PASS -- note declares factorization claim type
+CHECK 22: PASS -- note uses independent audit lane status authority
+CHECK 23: PASS -- note includes adversarial-refutation provenance
+CHECK 24: PASS -- note names the decisive open question
+CHECK 25: PASS -- note omits the old premise-shape wall framing
+CHECK 26: PASS -- orbit candidate set has two possibilities
+CHECK 27: PASS -- phase-readout candidate set has three possibilities
+CHECK 28: PASS -- orbit grading is lawful on orbit candidate set
+CHECK 29: PASS -- real-coordinate grading is unlawful on orbit candidate set -- real_part is outside the candidate possibility set; imaginary_part is outside the candidate possibility set; the grading does not range exactly over the candidate set
+CHECK 30: PASS -- orbit grading is unlawful on phase-readout candidate set -- conjugate_orbit is outside the candidate possibility set; the grading does not range exactly over the candidate set
+CHECK 31: PASS -- real-coordinate grading is lawful on phase-readout candidate set
+CHECK 32: PASS -- slot-range verdict flips with the supplied possibility set
+CHECK 33: PASS -- trace value t0 is the true matrix trace -- t0=22
+CHECK 34: PASS -- real-symmetric scalar trace is K-even -- Tr(OR)=19, Tr(OR2)=19
+CHECK 35: PASS -- scalar character contents are equal when T1=T2 is real -- I1=QOmega(p=Fraction(1, 1), q=Fraction(0, 1)), I2=QOmega(p=Fraction(1, 1), q=Fraction(0, 1))
+CHECK 36: PASS -- scalar invariant enumeration has six items
+CHECK 37: PASS -- every enumerated scalar invariant is equal on b and conj(b) -- []
+CHECK 38: PASS -- every enumerated scalar invariant is U(1)-rephasing invariant -- []
+CHECK 39: PASS -- enumerated b-dependent scalars are functions of norm squared on the test point
+CHECK 40: PASS -- Im(b) separates the conjugates -- 3 versus -3
+CHECK 41: PASS -- Im(b) is not invariant under the supplied U(1) rephasing -- 3 versus 17/5
+CHECK 42: PASS -- excluding Im(b) requires the named P-phase premise -- P-phase: no supplied conjugate-sector phase readout; record content fixes |b|^2 and not the conjugate-sector relative phase.
+CHECK 43: PASS -- factorization has exactly three named premises
+CHECK 44: PASS -- factorization names P-transport
+CHECK 45: PASS -- factorization names P-phase
+CHECK 46: PASS -- factorization names P-occupancy
+CHECK 47: PASS -- old bridge is exchanged for three premises rather than eliminated
+CHECK 48: PASS -- theta mass-side conditional count is three named premises, not zero -- after_exchange=3
+CHECK 49: PASS -- orbit arithmetic remains conditional and gives r=1/2 only with the premises -- r_sector=1, r_orbit=1/2
+CHECK 50: PASS -- note states scalar list has no completeness theorem
+CHECK 51: PASS -- note states slot range is conditional
+CHECK 52: PASS -- note states Record supplies no occupancy rule
+CHECK 53: PASS -- note states the theta conditional does not drop to zero
+CHECK 54: PASS -- note cites adjacent K-odd trace note
+TOTAL: PASS=54 FAIL=0
+SUMMARY files/checks: docs/KOIDE_OCCUPANCY_DERIVED_FROM_POSSIBILITY_INDIVIDUATION_BOUNDED_NOTE_2026-07-03.md; scripts/frontier_koide_occupancy_possibility_individuation_2026_07_03.py; checks=54 PASS=54 FAIL=0
+SUMMARY P-transport: P-transport: one-site individuation discipline transports to the derived doublet.
+SUMMARY P-phase: P-phase: no supplied conjugate-sector phase readout; record content fixes |b|^2 and not the conjugate-sector relative phase.
+SUMMARY P-occupancy: P-occupancy: one statistical slot per possibility.
+SUMMARY decisive-open-question/uncertainties: IS THE CONJUGATE-SECTOR RELATIVE PHASE A REGISTRABLE RECORD OUTCOME?; uncertainties=P-phase open, P-transport open, P-occupancy open, scalar list not complete
+
+----- stderr -----
+

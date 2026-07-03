@@ -1,10 +1,16 @@
 # Koide Occupancy: Individuation Route Factorizes The Bridge And Does Not Escape The Walls (Bounded Note)
 
 **Date:** 2026-07-03
-**Claim type:** bounded factorization + sharpened wall
-**Status authority:** audit lane.
+**Type:** open_gate
+**Claim type:** open_gate (bounded factorization + sharpened wall; the
+current axioms do not decide the conjugate-sector relative-phase
+registrability question).
+**Status authority:** independent audit lane only. This source note does
+not set or predict an audit outcome.
 **Primary runner:**
 [`scripts/frontier_koide_occupancy_possibility_individuation_2026_07_03.py`](../scripts/frontier_koide_occupancy_possibility_individuation_2026_07_03.py)
+**Runner cache:**
+[`logs/runner-cache/frontier_koide_occupancy_possibility_individuation_2026_07_03.txt`](../logs/runner-cache/frontier_koide_occupancy_possibility_individuation_2026_07_03.txt)
 
 A three-seat adversarial refutation pass returned a convergent negative on the derivation form of this note; this is the repaired convergent wording.
 
@@ -230,3 +236,18 @@ python3 scripts/frontier_koide_occupancy_possibility_individuation_2026_07_03.py
 Expected terminal form: `CHECK NN: PASS/FAIL -- <description>` lines,
 `TOTAL: PASS=<n> FAIL=0`, then five `SUMMARY` lines naming the files, check
 count, three premises, decisive open question, and remaining uncertainties.
+
+## Dependencies
+
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) - guarded
+  live axiom sentences and open-gate boundary.
+- [`KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md`](KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md)
+  - category-slip, measure-neutral selector, and no-occupancy walls.
+- [`KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md`](KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md)
+  - bridge sentence factored here.
+- [`ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md`](ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md)
+  - scalar blindness sentences used for the narrow negative surface.
+- [`KOIDE_RECORD_ORBIT_COUNT_DOES_NOT_SELECT_R_HALF_NO_GO_NOTE_2026-06-07.md`](KOIDE_RECORD_ORBIT_COUNT_DOES_NOT_SELECT_R_HALF_NO_GO_NOTE_2026-06-07.md)
+  - orbit-count pruning wall.
+- [`ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md`](ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md)
+  - adjacent boundary evidence only, not proof of this note.

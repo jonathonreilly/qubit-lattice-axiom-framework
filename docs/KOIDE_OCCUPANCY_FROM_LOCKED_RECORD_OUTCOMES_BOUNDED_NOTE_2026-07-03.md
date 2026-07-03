@@ -1,12 +1,15 @@
 # Occupancy from Locked Record Outcomes: Flavor Piece (i) Bridge (Bounded Note)
 
 **Date:** 2026-07-03
+**Type:** bounded_theorem
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note sets no audit
 outcome and changes no registry row.
 
 **Primary runner:**
 [`scripts/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.py`](../scripts/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.py)
+**Runner cache:**
+[`logs/runner-cache/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.txt`](../logs/runner-cache/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.txt)
 
 ## Question
 
@@ -130,3 +133,10 @@ python3 scripts/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.py
 
 Expected terminal form: `CHECK NN: PASS/FAIL -- <description>` lines followed
 by the five-line summary whose final line is `TOTAL: PASS=13 FAIL=0`.
+
+## Dependencies
+
+- [`KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md`](KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- [`KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md`](KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md)
+- [`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)

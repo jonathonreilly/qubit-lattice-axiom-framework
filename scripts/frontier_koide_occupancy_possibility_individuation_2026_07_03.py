@@ -161,8 +161,9 @@ PROVENANCE = (
 DECISIVE_QUESTION = "IS THE CONJUGATE-SECTOR RELATIVE PHASE A REGISTRABLE RECORD OUTCOME?"
 
 check("note has repaired title", NOTE_TITLE in TARGET_TEXT)
-check("note declares factorization claim type", "**Claim type:** bounded factorization + sharpened wall" in TARGET_TEXT)
-check("note uses audit lane status authority", "**Status authority:** audit lane." in TARGET_TEXT)
+check("note declares canonical open-gate type", "**Type:** open_gate" in TARGET_TEXT)
+check("note declares factorization claim type", "**Claim type:** open_gate" in TARGET_TEXT and "bounded factorization + sharpened wall" in TARGET_TEXT)
+check("note uses independent audit lane status authority", "**Status authority:** independent audit lane only." in TARGET_TEXT)
 check("note includes adversarial-refutation provenance", normalized(PROVENANCE) in normalized(TARGET_TEXT))
 check("note names the decisive open question", normalized(DECISIVE_QUESTION) in normalized(TARGET_TEXT))
 check("note omits the old premise-shape wall framing", "premise-shape disjointness" not in TARGET_TEXT.lower())

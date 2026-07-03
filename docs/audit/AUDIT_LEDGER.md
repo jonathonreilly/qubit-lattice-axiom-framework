@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 190 |
 | **retained_no_go** | 193 |
-| **retained_bounded** | 853 |
+| **retained_bounded** | 854 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
 | unaudited | 1959 |
-| audit_in_progress | 1 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 12 |
-| `audited_clean` | 1229 |
+| `audit_in_progress` | 11 |
+| `audited_clean` | 1230 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
@@ -143,7 +142,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1153,6 +1151,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -16145,6 +16144,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The path-product transport around each plaquette is identity exactly when the phases satisfy the Clifford -1 plaquette cocycle, and on simply connected regions the ratio of any two cocycle solutions is an exact local gauge one-cochain.  _(class `A`)_
 - **chain closes:** True — The bounded local theorem closes from Clifford anticommutation, unitary transport, and standard simply connected cubical cohomology. It does not derive P-KIN/P-SD or torus holonomy choices, but those are explicitly outside the audited claim scope.
 - **rationale:** The load-bearing step is exact algebra, not a definition, renaming, or numerical comparator: independently, gamma_nu gamma_mu gamma_nu gamma_mu = -I and the -1 cocycle makes the plaquette transport +I. The one-gauge-class claim follows because a closed U(1) or Z2 one-cochain is exact on the stated simply connected cubical regions. The runner source genuinely enumerates the unit cube and computes GF(2) ranks at scale rather than merely printing the claimed result.
+- **auditor confidence:** high
+
+### `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10`
+
+- **Note:** [`STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the adjacency-licensed Q-conserving NN bilinear surface over the current Lattice/Qubit one-site C^2/M2(C) baseline, with translation and proper cubic covariance up to site-local U(1) frame on simply connected regions, kinetic phases reduce to K0/K1; on K1 the absorbing frame exists, lands in K1, and is unique up to site-local gauge x global frame; K0 shows the K1 selector bit is not forced.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-fresh-staggered-kinetic-auditor-20260703b`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On D-kin with translation/proper-cubic covariance up to site-local frame, uniform plaquette flux is forced real so the simply connected frame classes are exactly K0/K1; K1 admits the Pauli absorbing frame, while K0 satisfies the imposed constraints as the countermodel to forcing the K1 selector.  _(class `C`)_
+- **chain closes:** True — Within the declared bounded surface, the dependencies supply Z^3 adjacency/rotations, one-site M2(C)/C^2 qubit carrier, Pauli/Cl(3) module facts, translation/Q_total identities, and parity grading. The note treats NN, Q-conserving, site-local, and simply connected restrictions as scope boundaries, not derived exclusions, and leaves the K1-vs-K0 selector open.
+- **rationale:** The claim is a bounded compression/countermodel result, not an imported kinetic selector: it proves the K0/K1 collapse inside the licensed surface and explicitly preserves B-BIT as open. The 2026-06-29 minimal-axiom wording renames the older Quantum axiom to Qubit but preserves the consumed Lattice Z^3 adjacency/rotations and one-site M2(C)/Cl(3,0) content, while also confirming that no Hamiltonian or kinetic branch is axiomatically selected. The runner constructs the rotations, cochain ranks, sign-system enumeration, Pauli/CAR algebra, gauge tests, K0/K1 witnesses, and falsification legs rather than printing a hard-coded verdict; current run was PASS=28 FAIL=0. Residual risk is limited to the standard cochain-exactness generalization from finite certificates to simply connected regions, with finite-torus wrap holonomy excluded by scope.
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17`

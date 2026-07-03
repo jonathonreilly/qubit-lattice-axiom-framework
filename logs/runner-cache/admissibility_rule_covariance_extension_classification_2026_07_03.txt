@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_covariance_extension_classification_2026_07_03.py
+runner_sha256: d1ca040d6fa52483e20b695d20ec42e9d9d77361ba89f39f79431c6ad90e587d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.33
+status: ok
+----- stdout -----
+PASS: A1 inversion central | generated=48; det(P)=-1
+PASS: A2 direction action faithful | distinct direction permutations=48
+PASS: A3 inversion outside proper image | proper image size=24; P_perm=(1, 0, 3, 2, 5, 4)
+PASS: A4 proper-times-inversion factorization | factorized=48; proper=24
+PASS: B1 openness patterns achiral | Burnside proper/full=10/10; direct proper/full=10/10; p-related=64
+PASS: B2 ternary chiral pair count | Burnside proper/full=57/56; difference=1; direct chiral orbit sizes=[24, 24]; representative=(0, 1, 0, 2, 1, 2) (every axis bi-colored, every color used twice)
+PASS: B3 quaternary chiral pair count | Burnside proper/full=240/220; difference=20; direct chiral pairs=20
+PASS: B4 oriented frame witness membership | witness=(1, 0, 2, 0, 3, 0); k=4 orbit pair=(65, 72)
+PASS: B5 witness P-image separation | proper maps found=0
+PASS: C1 frame_sign proper split | full orbit=48; proper split=24/24
+PASS: C2 chiral orbit odd channel dimension | proper-invariant rank=2; P-odd factors=0.5,-0.5
+PASS: D0 antilinear value premise | Pauli generators map to their negatives; scalar coefficients conjugate
+PASS: D1 twisted imaginary sign invariant | group elements checked=48; orbit size=48
+PASS: D2 real sign determinant character | group elements checked=48; orbit size=48
+PASS: D3 achiral scalar readout zero | nonzero imaginary example=(0, 1, 0, 2, 0, 3)
+PASS: D4 twist load-bearing | P under untwisted action sends R0 to -R0 on 48 colorings
+PASS: E1 chiral rule pair exchange | proper-fixed pair is distinct and exchanged by inversion
+PASS: E2 theta seed transport | draws=50; nonzero D=49; signs=1/-1
+PASS: E3 scalar and pair cancellation | pair sum=0; readable real zero=True
+PASS: E4 one orientation bit | draws=20; base sign=1; flipped sign=-1
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

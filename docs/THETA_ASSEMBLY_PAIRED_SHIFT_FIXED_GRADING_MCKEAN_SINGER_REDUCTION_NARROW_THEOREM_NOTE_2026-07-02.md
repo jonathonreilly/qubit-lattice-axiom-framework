@@ -1,6 +1,14 @@
 # Theta Assembly Paired-Shift Law From Fixed Grading
 
 **Date:** 2026-07-02
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem (finite fixed-grading paired-shift theorem)
+**Scope boundary:** the bounded theorem content is the finite fixed-grading
+bookkeeping law `n = 2 tr(eps)` and its balanced-collapse/supplier-reduction
+corollaries. It does not supply either side's physical value, derive the
+continuum ABJ anomaly, or close the nontrivial supplier direction.
+**Audit boundary:** the independent audit lane owns all `audit_status` and
+`effective_status` verdicts.
 **Primary runner:** `scripts/theta_assembly_paired_shift_fixed_grading_mckean_singer_2026_07_02.py`
 
 ## Claim
@@ -109,7 +117,7 @@ Run:
 python3 scripts/theta_assembly_paired_shift_fixed_grading_mckean_singer_2026_07_02.py
 ```
 
-Observed:
+Observed (`TOTAL: PASS=85 FAIL=0`; table excerpt retained below):
 
 | Gate | Quantity | Tolerance | Measured | Result |
 |---|---|---:|---:|---|

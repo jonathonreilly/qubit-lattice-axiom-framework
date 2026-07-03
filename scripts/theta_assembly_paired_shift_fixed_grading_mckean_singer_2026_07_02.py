@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 import sys
+from pathlib import Path
 
 import numpy as np
 
 
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "THETA_ASSEMBLY_PAIRED_SHIFT_FIXED_GRADING_MCKEAN_SINGER_REDUCTION_NARROW_THEOREM_NOTE_2026-07-02.md"
 SEED = 20260702
 TINY_ANTICOM = 1e-14
 T_L1 = 1e-10
@@ -105,8 +108,9 @@ def heat_index(d_mat, eps_diag, t_val):
 def determinant_ratio(d_mat, eps_diag, alpha, mass):
     ident = np.eye(d_mat.shape[0], dtype=complex)
     twist = np.diag(mass * np.exp(2j * alpha * eps_diag))
-    sign_1, log_1 = np.linalg.slogdet(d_mat + twist)
-    sign_0, log_0 = np.linalg.slogdet(d_mat + mass * ident)
+    with np.errstate(divide="ignore", over="ignore", invalid="ignore"):
+        sign_1, log_1 = np.linalg.slogdet(d_mat + twist)
+        sign_0, log_0 = np.linalg.slogdet(d_mat + mass * ident)
     return sign_1 / sign_0, float(log_1), float(log_0)
 
 
@@ -349,6 +353,30 @@ def main():
         f"<{T_PHASE:.1e}",
         f"max_resid={f17(max(toy_det_resids))}",
         max(toy_det_resids) < T_PHASE,
+    )
+
+    note_text = NOTE.read_text(encoding="utf-8")
+    record(
+        "G8[note,type]",
+        "canonical bounded_theorem metadata",
+        "headers present",
+        "Type/Claim type present",
+        "**Type:** bounded_theorem" in note_text
+        and "**Claim type:** bounded_theorem" in note_text,
+    )
+    record(
+        "G8[note,boundary]",
+        "scope and audit boundary present",
+        "boundaries present",
+        "Scope/Audit boundary present",
+        "**Scope boundary:**" in note_text and "**Audit boundary:**" in note_text,
+    )
+    record(
+        "G8[note,no-legacy-status]",
+        "legacy source status headers absent",
+        "legacy headers absent",
+        "Status headers absent",
+        "**Status:**" not in note_text and "**Status authority:**" not in note_text,
     )
 
     passes = sum(1 for ok in rows if ok)

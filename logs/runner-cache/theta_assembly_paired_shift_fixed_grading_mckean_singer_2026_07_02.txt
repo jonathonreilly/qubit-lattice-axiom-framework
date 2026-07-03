@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/theta_assembly_paired_shift_fixed_grading_mckean_singer_2026_07_02.py
-runner_sha256: 6492728548ea7d26b76793f603c6ef1a690b62688f75738b463b9b260b6b47da
+runner_sha256: cefc6206c6e64a168c8a753ba2736c668ba5b9ed65465067f9182b884c3c9829
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 | Gate | Quantity | Tolerance | Measured | Result |
@@ -21,77 +21,80 @@ status: ok
 | G1[B2Q(2)] | max anticommutator entry and anti-Hermitian entry | each<1.0e-14 | anticom=0.00000000000000000e+00; antiherm=0.00000000000000000e+00 | PASS |
 | G1[B2Q(-2)] | max anticommutator entry and anti-Hermitian entry | each<1.0e-14 | anticom=0.00000000000000000e+00; antiherm=0.00000000000000000e+00 | PASS |
 | G1[Btoy] | max anticommutator entry and anti-Hermitian entry | each<1.0e-14 | anticom=0.00000000000000000e+00; antiherm=0.00000000000000000e+00 | PASS |
-| G2[B4free] | max abs(A_t - tr(eps)) over t=0.3,1.0,3.0 | <1.0e-10 | t=0.3:resid=2.44249065417534439e-15; t=1.0:resid=3.83026943495679006e-15; t=3.0:resid=1.39489114703295058e-14; max=1.39489114703295058e-14 | PASS |
-| G2[B4rand] | max abs(A_t - tr(eps)) over t=0.3,1.0,3.0 | <1.0e-10 | t=0.3:resid=2.44249065417534439e-14; t=1.0:resid=2.43971509661378150e-14; t=3.0:resid=2.49305784350006832e-14; max=2.49305784350006832e-14 | PASS |
-| G2[B2Q(0)] | max abs(A_t - tr(eps)) over t=0.3,1.0,3.0 | <1.0e-10 | t=0.3:resid=1.99840144432528177e-15; t=1.0:resid=1.11022302462515654e-15; t=3.0:resid=4.99600361081320443e-16; max=1.99840144432528177e-15 | PASS |
-| G2[B2Q(1)] | max abs(A_t - tr(eps)) over t=0.3,1.0,3.0 | <1.0e-10 | t=0.3:resid=8.21565038222615840e-15; t=1.0:resid=7.29971638691040425e-15; t=3.0:resid=7.68829444552920904e-15; max=8.21565038222615840e-15 | PASS |
-| G2[B2Q(-1)] | max abs(A_t - tr(eps)) over t=0.3,1.0,3.0 | <1.0e-10 | t=0.3:resid=8.21565038222615840e-15; t=1.0:resid=7.29971638691040425e-15; t=3.0:resid=7.68829444552920904e-15; max=8.21565038222615840e-15 | PASS |
-| G2[B2Q(2)] | max abs(A_t - tr(eps)) over t=0.3,1.0,3.0 | <1.0e-10 | t=0.3:resid=1.52655665885959024e-15; t=1.0:resid=1.94289029309402395e-15; t=3.0:resid=2.80331313717852026e-15; max=2.80331313717852026e-15 | PASS |
-| G2[B2Q(-2)] | max abs(A_t - tr(eps)) over t=0.3,1.0,3.0 | <1.0e-10 | t=0.3:resid=1.52655665885959024e-15; t=1.0:resid=1.94289029309402395e-15; t=3.0:resid=2.80331313717852026e-15; max=2.80331313717852026e-15 | PASS |
-| G2[Btoy] | max abs(A_t - tr(eps)) over t=0.3,1.0,3.0 | <1.0e-10 | t=0.3:resid=4.44089209850062616e-16; t=1.0:resid=1.11022302462515654e-16; t=3.0:resid=0.00000000000000000e+00; max=4.44089209850062616e-16 | PASS |
-| G2b[B2Q(0)] | Q-blind A_1 residual; sigma_min diagnostic | A_1<1.0e-10; sigma no gate | A1_resid=1.11022302462515654e-15; sigma_min=2.21301005575440376e-17 | PASS |
-| G2b[B2Q(1)] | Q-blind A_1 residual; sigma_min diagnostic | A_1<1.0e-10; sigma no gate | A1_resid=7.29971638691040425e-15; sigma_min=4.41783507936554958e-17 | PASS |
-| G2b[B2Q(-1)] | Q-blind A_1 residual; sigma_min diagnostic | A_1<1.0e-10; sigma no gate | A1_resid=7.29971638691040425e-15; sigma_min=4.41783507936554958e-17 | PASS |
-| G2b[B2Q(2)] | Q-blind A_1 residual; sigma_min diagnostic | A_1<1.0e-10; sigma no gate | A1_resid=1.94289029309402395e-15; sigma_min=5.86239662106997310e-17 | PASS |
-| G2b[B2Q(-2)] | Q-blind A_1 residual; sigma_min diagnostic | A_1<1.0e-10; sigma no gate | A1_resid=1.94289029309402395e-15; sigma_min=5.86239662106997310e-17 | PASS |
-| G3[B4free,alpha=0.3,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=1.42108547152020037e-14; phase_resid=2.91393646794427307e-15 | PASS |
-| G3[B4free,alpha=0.3,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=1.42108547152020037e-14; phase_resid=1.66976458451096373e-15 | PASS |
-| G3[B4free,alpha=0.7,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=7.10542735760100186e-15; phase_resid=5.36620025422423109e-16 | PASS |
-| G3[B4free,alpha=0.7,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=2.84217094304040074e-14; phase_resid=2.32071456886134650e-15 | PASS |
-| G3[B4free,alpha=pi/3,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=3.55271367880050093e-14; phase_resid=1.18459386534184373e-16 | PASS |
-| G3[B4free,alpha=pi/3,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=1.42108547152020037e-14; phase_resid=1.24802310199208968e-15 | PASS |
-| G3[B4rand,alpha=0.3,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=3.90798504668055102e-14; phase_resid=1.81172247717811585e-14 | PASS |
-| G3[B4rand,alpha=0.3,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=7.10542735760100186e-15; phase_resid=5.12657471082411504e-15 | PASS |
-| G3[B4rand,alpha=0.7,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=8.88178419700125232e-15; phase_resid=8.00241963095440696e-15 | PASS |
-| G3[B4rand,alpha=0.7,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=1.42108547152020037e-14; phase_resid=1.84605264881274186e-15 | PASS |
-| G3[B4rand,alpha=pi/3,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=3.55271367880050093e-15; phase_resid=9.48269007025751048e-15 | PASS |
-| G3[B4rand,alpha=pi/3,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=1.42108547152020037e-14; phase_resid=3.44794363427710040e-15 | PASS |
-| G3[B2Q(1),alpha=0.3,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=0.00000000000000000e+00; phase_resid=7.64682840691782119e-16 | PASS |
-| G3[B2Q(1),alpha=0.3,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=4.44089209850062616e-16; phase_resid=3.54658581424633528e-16 | PASS |
-| G3[B2Q(1),alpha=0.7,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=0.00000000000000000e+00; phase_resid=5.74635737428243914e-16 | PASS |
-| G3[B2Q(1),alpha=0.7,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=1.33226762955018785e-15; phase_resid=7.19896908384460678e-16 | PASS |
-| G3[B2Q(1),alpha=pi/3,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=1.77635683940025046e-15; phase_resid=4.03368667388874770e-16 | PASS |
-| G3[B2Q(1),alpha=pi/3,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=2.66453525910037570e-15; phase_resid=9.20582855313245169e-16 | PASS |
-| G3[Btoy,alpha=0.3,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=2.22044604925031308e-16; phase_resid=1.11022302462515654e-16 | PASS |
-| G3[Btoy,alpha=0.3,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=0.00000000000000000e+00; phase_resid=1.11022302462515654e-16 | PASS |
-| G3[Btoy,alpha=0.7,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=4.44089209850062616e-16; phase_resid=2.61845576667213508e-16 | PASS |
+| G2[B4free] | max abs(A_t - tr(eps)) over t=0.3,1.0,3.0 | <1.0e-10 | t=0.3:resid=2.66453525910037570e-15; t=1.0:resid=8.57647286522933427e-15; t=3.0:resid=1.58245812287294285e-14; max=1.58245812287294285e-14 | PASS |
+| G2[B4rand] | max abs(A_t - tr(eps)) over t=0.3,1.0,3.0 | <1.0e-10 | t=0.3:resid=2.76445533131663979e-14; t=1.0:resid=1.77358128183868757e-14; t=3.0:resid=1.25951766377641050e-14; max=2.76445533131663979e-14 | PASS |
+| G2[B2Q(0)] | max abs(A_t - tr(eps)) over t=0.3,1.0,3.0 | <1.0e-10 | t=0.3:resid=8.88178419700125232e-16; t=1.0:resid=1.44328993201270350e-15; t=3.0:resid=2.91433543964103592e-15; max=2.91433543964103592e-15 | PASS |
+| G2[B2Q(1)] | max abs(A_t - tr(eps)) over t=0.3,1.0,3.0 | <1.0e-10 | t=0.3:resid=1.99840144432528177e-15; t=1.0:resid=2.02615701994091069e-15; t=3.0:resid=3.91353616180367680e-15; max=3.91353616180367680e-15 | PASS |
+| G2[B2Q(-1)] | max abs(A_t - tr(eps)) over t=0.3,1.0,3.0 | <1.0e-10 | t=0.3:resid=1.99840144432528177e-15; t=1.0:resid=2.02615701994091069e-15; t=3.0:resid=3.91353616180367680e-15; max=3.91353616180367680e-15 | PASS |
+| G2[B2Q(2)] | max abs(A_t - tr(eps)) over t=0.3,1.0,3.0 | <1.0e-10 | t=0.3:resid=9.43689570931383059e-16; t=1.0:resid=1.88737914186276612e-15; t=3.0:resid=4.46864767411625508e-15; max=4.46864767411625508e-15 | PASS |
+| G2[B2Q(-2)] | max abs(A_t - tr(eps)) over t=0.3,1.0,3.0 | <1.0e-10 | t=0.3:resid=9.43689570931383059e-16; t=1.0:resid=1.88737914186276612e-15; t=3.0:resid=4.46864767411625508e-15; max=4.46864767411625508e-15 | PASS |
+| G2[Btoy] | max abs(A_t - tr(eps)) over t=0.3,1.0,3.0 | <1.0e-10 | t=0.3:resid=0.00000000000000000e+00; t=1.0:resid=1.11022302462515654e-16; t=3.0:resid=6.66133814775093924e-16; max=6.66133814775093924e-16 | PASS |
+| G2b[B2Q(0)] | Q-blind A_1 residual; sigma_min diagnostic | A_1<1.0e-10; sigma no gate | A1_resid=1.44328993201270350e-15; sigma_min=1.46164300680753769e-17 | PASS |
+| G2b[B2Q(1)] | Q-blind A_1 residual; sigma_min diagnostic | A_1<1.0e-10; sigma no gate | A1_resid=2.02615701994091069e-15; sigma_min=1.84222157356400692e-17 | PASS |
+| G2b[B2Q(-1)] | Q-blind A_1 residual; sigma_min diagnostic | A_1<1.0e-10; sigma no gate | A1_resid=2.02615701994091069e-15; sigma_min=1.84222157356400692e-17 | PASS |
+| G2b[B2Q(2)] | Q-blind A_1 residual; sigma_min diagnostic | A_1<1.0e-10; sigma no gate | A1_resid=1.88737914186276612e-15; sigma_min=2.84159141901630402e-17 | PASS |
+| G2b[B2Q(-2)] | Q-blind A_1 residual; sigma_min diagnostic | A_1<1.0e-10; sigma no gate | A1_resid=1.88737914186276612e-15; sigma_min=2.84159141901630402e-17 | PASS |
+| G3[B4free,alpha=0.3,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=1.42108547152020037e-14; phase_resid=5.53092650328120221e-15 | PASS |
+| G3[B4free,alpha=0.3,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=0.00000000000000000e+00; phase_resid=1.38550732506234269e-15 | PASS |
+| G3[B4free,alpha=0.7,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=2.84217094304040074e-14; phase_resid=2.16624449814645342e-16 | PASS |
+| G3[B4free,alpha=0.7,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=1.42108547152020037e-14; phase_resid=2.22089877454491727e-15 | PASS |
+| G3[B4free,alpha=pi/3,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=7.10542735760100186e-15; phase_resid=6.10622663543836097e-16 | PASS |
+| G3[B4free,alpha=pi/3,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=1.42108547152020037e-14; phase_resid=1.84749928162902644e-15 | PASS |
+| G3[B4rand,alpha=0.3,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=1.77635683940025046e-14; phase_resid=8.19397823449676532e-15 | PASS |
+| G3[B4rand,alpha=0.3,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=0.00000000000000000e+00; phase_resid=3.69884815163279700e-15 | PASS |
+| G3[B4rand,alpha=0.7,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=2.13162820728030056e-14; phase_resid=3.07451692367817034e-15 | PASS |
+| G3[B4rand,alpha=0.7,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=2.13162820728030056e-14; phase_resid=1.79785802040265152e-15 | PASS |
+| G3[B4rand,alpha=pi/3,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=7.10542735760100186e-15; phase_resid=9.04346984206842666e-15 | PASS |
+| G3[B4rand,alpha=pi/3,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=4.26325641456060112e-14; phase_resid=7.31029853672774457e-16 | PASS |
+| G3[B2Q(1),alpha=0.3,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=5.32907051820075139e-15; phase_resid=6.53715359414526613e-16 | PASS |
+| G3[B2Q(1),alpha=0.3,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=4.44089209850062616e-16; phase_resid=8.92947224597049999e-16 | PASS |
+| G3[B2Q(1),alpha=0.7,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=2.66453525910037570e-15; phase_resid=7.44863523412407562e-16 | PASS |
+| G3[B2Q(1),alpha=0.7,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=4.44089209850062616e-16; phase_resid=7.03610933883855435e-16 | PASS |
+| G3[B2Q(1),alpha=pi/3,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=3.55271367880050093e-15; phase_resid=2.80628683911654784e-16 | PASS |
+| G3[B2Q(1),alpha=pi/3,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=8.88178419700125232e-16; phase_resid=1.11564285326994974e-15 | PASS |
+| G3[Btoy,alpha=0.3,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=2.22044604925031308e-16; phase_resid=2.22044604925031308e-16 | PASS |
+| G3[Btoy,alpha=0.3,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=4.44089209850062616e-16; phase_resid=1.57009245868377517e-16 | PASS |
+| G3[Btoy,alpha=0.7,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=4.44089209850062616e-16; phase_resid=5.23691153334427015e-16 | PASS |
 | G3[Btoy,alpha=0.7,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=0.00000000000000000e+00; phase_resid=1.57009245868377517e-16 | PASS |
-| G3[Btoy,alpha=pi/3,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=2.22044604925031308e-16; phase_resid=1.11022302462515654e-16 | PASS |
+| G3[Btoy,alpha=pi/3,m=0.1] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=2.22044604925031308e-16; phase_resid=2.22044604925031308e-16 | PASS |
 | G3[Btoy,alpha=pi/3,m=0.5] | slogdet logabs equality and determinant phase identity | log<1.0e-09; phase<1.0e-10 | log_resid=0.00000000000000000e+00; phase_resid=1.24126707662363656e-16 | PASS |
-| G4[B4free,alpha=0.3,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=2.91393646794427307e-15 | PASS |
-| G4[B4free,alpha=0.3,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=1.66976458451096373e-15 | PASS |
-| G4[B4free,alpha=0.7,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=5.36620025422423109e-16 | PASS |
-| G4[B4free,alpha=0.7,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=2.32071456886134650e-15 | PASS |
-| G4[B4free,alpha=pi/3,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=1.18459386534184373e-16 | PASS |
-| G4[B4free,alpha=pi/3,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=1.24802310199208968e-15 | PASS |
-| G4[B4rand,alpha=0.3,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=1.81172247717811585e-14 | PASS |
-| G4[B4rand,alpha=0.3,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=5.12657471082411504e-15 | PASS |
-| G4[B4rand,alpha=0.7,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=8.00241963095440696e-15 | PASS |
-| G4[B4rand,alpha=0.7,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=1.84605264881274186e-15 | PASS |
-| G4[B4rand,alpha=pi/3,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=9.48269007025751048e-15 | PASS |
-| G4[B4rand,alpha=pi/3,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=3.44794363427710040e-15 | PASS |
-| G4[B2Q(1),alpha=0.3,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=7.64682840691782119e-16 | PASS |
-| G4[B2Q(1),alpha=0.3,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=3.54658581424633528e-16 | PASS |
-| G4[B2Q(1),alpha=0.7,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=5.74635737428243914e-16 | PASS |
-| G4[B2Q(1),alpha=0.7,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=7.19896908384460678e-16 | PASS |
-| G4[B2Q(1),alpha=pi/3,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=4.03368667388874770e-16 | PASS |
-| G4[B2Q(1),alpha=pi/3,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=9.20582855313245169e-16 | PASS |
-| G4[Btoy,alpha=0.3,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=5.96037985002822259e-17 | PASS |
-| G4[Btoy,alpha=0.3,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=8.75380130025642529e-17 | PASS |
-| G4[Btoy,alpha=0.7,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=2.45551874705944676e-16 | PASS |
+| G4[B4free,alpha=0.3,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=5.53092650328120221e-15 | PASS |
+| G4[B4free,alpha=0.3,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=1.38550732506234269e-15 | PASS |
+| G4[B4free,alpha=0.7,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=2.16624449814645342e-16 | PASS |
+| G4[B4free,alpha=0.7,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=2.22089877454491727e-15 | PASS |
+| G4[B4free,alpha=pi/3,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=6.10622663543836097e-16 | PASS |
+| G4[B4free,alpha=pi/3,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=1.84749928162902644e-15 | PASS |
+| G4[B4rand,alpha=0.3,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=8.19397823449676532e-15 | PASS |
+| G4[B4rand,alpha=0.3,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=3.69884815163279700e-15 | PASS |
+| G4[B4rand,alpha=0.7,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=3.07451692367817034e-15 | PASS |
+| G4[B4rand,alpha=0.7,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=1.79785802040265152e-15 | PASS |
+| G4[B4rand,alpha=pi/3,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=9.04346984206842666e-15 | PASS |
+| G4[B4rand,alpha=pi/3,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=7.31029853672774457e-16 | PASS |
+| G4[B2Q(1),alpha=0.3,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=6.53715359414526613e-16 | PASS |
+| G4[B2Q(1),alpha=0.3,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=8.92947224597049999e-16 | PASS |
+| G4[B2Q(1),alpha=0.7,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=7.44863523412407562e-16 | PASS |
+| G4[B2Q(1),alpha=0.7,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=7.03610933883855435e-16 | PASS |
+| G4[B2Q(1),alpha=pi/3,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=2.80628683911654784e-16 | PASS |
+| G4[B2Q(1),alpha=pi/3,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=1.11564285326994974e-15 | PASS |
+| G4[Btoy,alpha=0.3,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=2.46450314944234075e-16 | PASS |
+| G4[Btoy,alpha=0.3,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=1.15549433226635412e-16 | PASS |
+| G4[Btoy,alpha=0.7,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=4.89491341038434454e-16 | PASS |
 | G4[Btoy,alpha=0.7,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=1.73784038490735611e-16 | PASS |
-| G4[Btoy,alpha=pi/3,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=1.15880045472754345e-16 | PASS |
+| G4[Btoy,alpha=pi/3,m=0.1] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=2.59001242041919409e-16 | PASS |
 | G4[Btoy,alpha=pi/3,m=0.5] | measure deposit times mass-det shift | <1.0e-10 | invariance_resid=2.24512894665323291e-16 | PASS |
 | G4[Btoy,alpha=0.7,m=0.5,nontriviality] | abs(mass-det shift - 1) | >1.0e-01 | nontriviality=1.28843537447538181e+00 | PASS |
 | G5a[B2rand,wrong-eps] | broken-premise anticommutator magnitude | >1.0e-01 | anticom=1.00000000000000022e+00 | PASS |
-| G5a[B2rand,wrong-eps] | wrong-grading determinant identity rejector | >1.0e-03 | phase_resid=1.94381779301609520e-01 | PASS |
-| DIAG[G5a,B2rand,wrong-eps] | A_1(eps') diagnostic | no gate | A1_wrong=8.64590992243524648e-03 | INFO |
-| G5b[B2rand,Dpert] | broken-anticommutation heat-index t-dependence | >1.0e-06 | abs(A0.3-A3.0)=1.79895233830061563e-01 | PASS |
+| G5a[B2rand,wrong-eps] | wrong-grading determinant identity rejector | >1.0e-03 | phase_resid=1.94381779301607910e-01 | PASS |
+| DIAG[G5a,B2rand,wrong-eps] | A_1(eps') diagnostic | no gate | A1_wrong=8.64590992243641221e-03 | INFO |
+| G5b[B2rand,Dpert] | broken-anticommutation heat-index t-dependence | >1.0e-06 | abs(A0.3-A3.0)=1.79895233830061674e-01 | PASS |
 | G6[Btoy,wrong-n] | reject tr(eps)+1 determinant phase | >1.0e-03 | phase_resid=1.28843537447538203e+00 | PASS |
 | G6[B2Q(1),wrong-Q-as-n] | reject pretending n is set by Q | >1.0e-03 | phase_resid=1.28843537447538270e+00 | PASS |
-| G7[Btoy,A_t] | toy A_t exactness over t=0.3,1.0,3.0 | <1.0e-10 | max_resid=4.44089209850062616e-16 | PASS |
-| G7[Btoy,det] | toy determinant ratio exactness over G3 grid | <1.0e-10 | max_resid=2.61845576667213508e-16 | PASS |
-TOTAL: PASS=82 FAIL=0
+| G7[Btoy,A_t] | toy A_t exactness over t=0.3,1.0,3.0 | <1.0e-10 | max_resid=6.66133814775093924e-16 | PASS |
+| G7[Btoy,det] | toy determinant ratio exactness over G3 grid | <1.0e-10 | max_resid=5.23691153334427015e-16 | PASS |
+| G8[note,type] | canonical bounded_theorem metadata | headers present | Type/Claim type present | PASS |
+| G8[note,boundary] | scope and audit boundary present | boundaries present | Scope/Audit boundary present | PASS |
+| G8[note,no-legacy-status] | legacy source status headers absent | legacy headers absent | Status headers absent | PASS |
+TOTAL: PASS=85 FAIL=0
 
 ----- stderr -----
 

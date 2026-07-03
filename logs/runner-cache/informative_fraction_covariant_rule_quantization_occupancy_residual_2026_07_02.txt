@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/informative_fraction_covariant_rule_quantization_occupancy_residual_2026_07_02.py
-runner_sha256: 4d0b1fb53f8edecf4f85414de5b771ac9898603a66fd47606957fb6c1eba012b
+runner_sha256: 7983c728a9f5402f49816ed739e4bb4a4b4a6e37377ea2192d967a0d6eb2c3f5
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 
@@ -68,7 +68,7 @@ PASS: F dep marker axioms no weights
 PASS: F dep marker axioms no privileged possibility
 PASS: F dep marker rigidity normalization
 PASS: F dep marker semigroup boundary
-PASS: F note preserve marker: set only by the independent audit lane
+PASS: F note preserve marker: the independent audit lane owns all verdicts
 PASS: F note preserve marker: recorded-neighborhood baseline
 PASS: F note preserve marker: quantized
 PASS: F note preserve marker: k/64

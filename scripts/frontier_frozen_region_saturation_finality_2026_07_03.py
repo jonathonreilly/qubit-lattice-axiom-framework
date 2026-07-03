@@ -23,8 +23,9 @@ Conventions (exactness firewall):
 
 Layering of the derivations (this repair makes the halting content reading-free):
   * DOMAIN MONOTONICITY (permanence-derived, reading-free). Under permanence
-    (PR #4874, in-flight, owner-approved 2026-07-03; final wording "records are
-    permanent.") together with "A state is a configuration of records", record
+    (LANDED on main, commit 50f0db6187; drafted as PR #4874, review-loop-closed;
+    wording "records are permanent.") together with "A state is a configuration
+    of records", record
     sets are nested along a realized history and locked values agree on the
     smaller domain, so the recorded-site domain grows monotonically:
     dom(C_{t-1}) subset of dom(C_t). A FIRST-REGISTRATION (dom-event) at stage t
@@ -43,7 +44,11 @@ Layering of the derivations (this repair makes the halting content reading-free)
     load-bearing ONLY for T1's set-constancy 4^8 enumeration and T4's
     distinct-record pigeonhole tail. Event layering: a same-value re-registration
     is a non-event under BOTH the dom-based definition (no domain growth) and the
-    M1 set definition (same element).
+    M1 set definition (same element). M1's one-per-site content is OPEN as
+    PR #4879 (owner-approved: "A site never carries more than one record."),
+    separate from the landed permanence restoration; on PR #4879 landing M1
+    upgrades to axiom text and the M1-load-bearing results lose their reading
+    residue.
 
 The covariant neighbor-dependent availability rule and the record-inclusion
 event-ordering are REBUILT here from scratch (small exact windows). The
@@ -146,10 +151,17 @@ def nested_with_agreement(hist):
 
 
 # ---------------------------------------------------------------------------
-# Quote guards -- the note's quotes must match docs/MINIMAL_AXIOMS_2026-06-29.md
-# (the PRE-restoration Record sentence lives in THIS worktree copy). Five live
-# guards: Record locking, Admissibility, state-as-configuration (M1 basis),
-# Lattice, and Record readout-additivity. Qubit is cited but carries no quote.
+# Quote guards -- the note's quotes must match docs/MINIMAL_AXIOMS_2026-06-29.md.
+# Five live guards: Record locking, Admissibility, state-as-configuration (M1
+# basis), Lattice, and Record readout-additivity. Qubit is cited but carries no
+# quote. The Record locking guard is a TRANSITIONAL either-or: it accepts BOTH
+# the pre-restoration form ("... the locked possibility is invariant under
+# repeated readout"), which lives in THIS worktree copy, AND the LANDED form
+# ("... records are permanent.") on current main. The landed form is
+# authoritative (commit 50f0db6187); this block grounds on the landed
+# restoration. The either-or passes on BOTH this worktree (pre-restoration) and
+# current main (landed); it would fail only on a Record clause carrying NEITHER
+# form (a further change).
 # ---------------------------------------------------------------------------
 def axioms_normalized():
     here = os.path.dirname(os.path.abspath(__file__))
@@ -163,9 +175,11 @@ def quote_guards():
         txt = axioms_normalized()
     except Exception:
         txt = None
-    rec = ("a record locks exactly one local possibility from the subset "
-           "available at that site under Admissibility; the locked possibility "
-           "is invariant under repeated readout")
+    rec_prefix = ("a record locks exactly one local possibility from the subset "
+                  "available at that site under Admissibility;")
+    rec_old = (rec_prefix + " the locked possibility is invariant under "
+               "repeated readout")           # pre-restoration form (this worktree copy)
+    rec_landed = rec_prefix + " records are permanent."   # LANDED form, commit 50f0db6187
     adm = ("the available possibilities are determined by, and vary with, the "
            "nearest-neighbor conditions")
     stt = "A state is a configuration of records."
@@ -174,9 +188,16 @@ def quote_guards():
            "rotations about each site.")
     rda = ("For any finite collection of pairwise-disjoint records, scalar "
            "readout `I` is additive, with `I(empty)=0`.")
-    check("quote guard: pre-restoration Record locking+readout-invariance "
-          "sentence present verbatim in MINIMAL_AXIOMS_2026-06-29.md",
-          txt is not None and rec in txt)
+    # TRANSITIONAL either-or: passes on the pre-restoration worktree copy AND on
+    # landed-main text. The landed form ("records are permanent.") is
+    # authoritative -- commit 50f0db6187. readout-invariance survives as a
+    # derived lemma.
+    check("quote guard (transitional either-or): Record locking sentence present "
+          "verbatim in MINIMAL_AXIOMS_2026-06-29.md in EITHER the pre-restoration "
+          "form ('... the locked possibility is invariant under repeated "
+          "readout') OR the LANDED form ('... records are permanent.') -- the "
+          "landed form is authoritative, commit 50f0db6187",
+          txt is not None and (rec_old in txt or rec_landed in txt))
     check("quote guard: Admissibility 'determined by, and vary with, the "
           "nearest-neighbor conditions' present verbatim",
           txt is not None and adm in txt)
@@ -194,7 +215,8 @@ def quote_guards():
 
 
 # ===========================================================================
-# T1 -- SATURATION IMPLIES LOCAL FINALITY (bounded, conditional on permanence)
+# T1 -- SATURATION IMPLIES LOCAL FINALITY (bounded; permanence LANDED 50f0db6187,
+#       set-constancy M1/#4879-conditional)
 # ===========================================================================
 def T1():
     # exact saturated windows: one record per site, all locked +1
@@ -280,7 +302,7 @@ def T1():
 
 
 # ===========================================================================
-# T2 -- LOCAL RECORD-TIME STOPS (bounded, conditional on permanence)
+# T2 -- LOCAL RECORD-TIME STOPS (bounded; permanence LANDED 50f0db6187)
 #   Primary derivation is dom-based (reading-free): saturation => the region is
 #   inside the monotone domain forever => in-region first-registrations halt.
 # ===========================================================================

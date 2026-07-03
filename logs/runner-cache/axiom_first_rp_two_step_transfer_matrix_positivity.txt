@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
-runner_sha256: 456a3fc46c919950863e1bfb22fba0c6ac5c7cc2921f141cb5e4ed52b6f6a08b
-timeout_sec: 120
+runner_sha256: 0d7989fc6afad081fa2b0a8870994c90e1670f9fadaa4bdd57222da4f82f00eb
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -18,16 +18,16 @@ C1  DISPERSION ANCHOR (faithfulness): 2-step decaying eigenvalue == e^{-2E(p)}
 ------------------------------------------------------------------------------
     p= 0.000: decay-mode=+0.38196601+2e-32j  e^-2E=0.38196601  |res|=1.11e-16
     p= 0.393: decay-mode=+0.30478499+9e-17j  e^-2E=0.30478499  |res|=1.40e-16
-    p= 0.785: decay-mode=+0.20871215-8e-17j  e^-2E=0.20871215  |res|=1.18e-16
-    p= 1.178: decay-mode=+0.15988938-4e-17j  e^-2E=0.15988938  |res|=2.25e-16
-    p= 1.571: decay-mode=+0.14589803+6e-17j  e^-2E=0.14589803  |res|=3.38e-16
-    p= 1.963: decay-mode=+0.15988938-4e-17j  e^-2E=0.15988938  |res|=2.25e-16
-    p= 2.356: decay-mode=+0.20871215-4e-17j  e^-2E=0.20871215  |res|=6.96e-17
-    p= 2.749: decay-mode=+0.30478499-9e-17j  e^-2E=0.30478499  |res|=1.02e-16
+    p= 0.785: decay-mode=+0.20871215-3e-16j  e^-2E=0.20871215  |res|=2.94e-16
+    p= 1.178: decay-mode=+0.15988938-8e-17j  e^-2E=0.15988938  |res|=2.35e-16
+    p= 1.571: decay-mode=+0.14589803+1e-16j  e^-2E=0.14589803  |res|=1.28e-16
+    p= 1.963: decay-mode=+0.15988938-8e-17j  e^-2E=0.15988938  |res|=2.35e-16
+    p= 2.356: decay-mode=+0.20871215-2e-16j  e^-2E=0.20871215  |res|=2.24e-16
+    p= 2.749: decay-mode=+0.30478499-4e-17j  e^-2E=0.30478499  |res|=1.17e-16
     p= 3.142: decay-mode=+0.38196601-2e-78j  e^-2E=0.38196601  |res|=1.11e-16
     ... (16 momenta over the Brillouin zone)
-    max dispersion residual = 3.384e-16  (tol 1e-09)
-    max |Im(decay-mode)|    = 1.340e-16
+    max dispersion residual = 2.945e-16  (tol 1e-09)
+    max |Im(decay-mode)|    = 2.597e-16
     C1 = PASS
 
 ------------------------------------------------------------------------------
@@ -48,9 +48,9 @@ C3  TWO-STEP POSITIVITY: T_hat^2 = Gamma(t1^(2)) positive Hermitian = B^dag B
     t1^(2)(p) = e^{-2E(p)} (action-derived decaying eigenvalue, from C1)
 ------------------------------------------------------------------------------
     L_s=2 dim=  4: T_hat^2 min eig=1.458980e-01 max=1.000000  Herm-err=0.0e+00  ||T_hat^2 - B^dag B||=5.6e-17  max|Im(kernel)|=1.9e-32
-    L_s=3 dim=  8: T_hat^2 min eig=1.124403e-02 max=1.000000  Herm-err=0.0e+00  ||T_hat^2 - B^dag B||=5.6e-17  max|Im(kernel)|=9.5e-17
-    L_s=4 dim= 16: T_hat^2 min eig=3.105620e-03 max=1.000000  Herm-err=0.0e+00  ||T_hat^2 - B^dag B||=5.6e-17  max|Im(kernel)|=6.0e-17
-    L_s=6 dim= 64: T_hat^2 min eig=1.264282e-04 max=1.000000  Herm-err=0.0e+00  ||T_hat^2 - B^dag B||=5.6e-17  max|Im(kernel)|=9.5e-17
+    L_s=3 dim=  8: T_hat^2 min eig=1.124403e-02 max=1.000000  Herm-err=0.0e+00  ||T_hat^2 - B^dag B||=5.6e-17  max|Im(kernel)|=1.7e-16
+    L_s=4 dim= 16: T_hat^2 min eig=3.105620e-03 max=1.000000  Herm-err=0.0e+00  ||T_hat^2 - B^dag B||=5.6e-17  max|Im(kernel)|=9.7e-17
+    L_s=6 dim= 64: T_hat^2 min eig=1.264282e-04 max=1.000000  Herm-err=0.0e+00  ||T_hat^2 - B^dag B||=5.6e-17  max|Im(kernel)|=1.7e-16
     C3 = PASS  (positive Hermitian, exact B^dag B, all L_s)
 
 ------------------------------------------------------------------------------
@@ -79,14 +79,14 @@ C6  DECAYING-CHANNEL BRIDGE: spectral projector of action-derived T_odd T_even
     selects the forward contraction kernel; finite exterior/Gamma image is positive = B^dag B
 ------------------------------------------------------------------------------
     L_s=2: lambda_dec in [3.819660e-01, 3.819660e-01], lambda_grow in [2.618034e+00, 2.618034e+00], proj idem=5.6e-16, T2P-lambdaP=1.2e-15, split=3.0e-95, orth=5.5e-16, Gamma tensor err=0.0e+00, BdagB err=5.6e-17
-    L_s=3: lambda_dec in [1.715729e-01, 3.819660e-01], lambda_grow in [2.618034e+00, 5.828427e+00], proj idem=6.1e-16, T2P-lambdaP=3.4e-15, split=0.0e+00, orth=6.1e-16, Gamma tensor err=0.0e+00, BdagB err=5.6e-17
-    L_s=4: lambda_dec in [1.458980e-01, 3.819660e-01], lambda_grow in [2.618034e+00, 6.854102e+00], proj idem=5.6e-16, T2P-lambdaP=2.9e-15, split=3.0e-95, orth=5.5e-16, Gamma tensor err=3.5e-18, BdagB err=5.6e-17
-    L_s=6: lambda_dec in [1.715729e-01, 3.819660e-01], lambda_grow in [2.618034e+00, 5.828427e+00], proj idem=6.1e-16, T2P-lambdaP=3.4e-15, split=1.5e-33, orth=6.1e-16, Gamma tensor err=3.5e-18, BdagB err=5.6e-17
+    L_s=3: lambda_dec in [1.715729e-01, 3.819660e-01], lambda_grow in [2.618034e+00, 5.828427e+00], proj idem=6.1e-16, T2P-lambdaP=3.4e-15, split=9.2e-33, orth=6.1e-16, Gamma tensor err=0.0e+00, BdagB err=5.6e-17
+    L_s=4: lambda_dec in [1.458980e-01, 3.819660e-01], lambda_grow in [2.618034e+00, 6.854102e+00], proj idem=5.6e-16, T2P-lambdaP=1.5e-15, split=3.0e-95, orth=5.5e-16, Gamma tensor err=3.5e-18, BdagB err=5.6e-17
+    L_s=6: lambda_dec in [1.715729e-01, 3.819660e-01], lambda_grow in [2.618034e+00, 5.828427e+00], proj idem=6.1e-16, T2P-lambdaP=3.4e-15, split=9.2e-33, orth=6.1e-16, Gamma tensor err=3.5e-18, BdagB err=5.6e-17
     C6 = PASS  (decaying spectral channel derives the Fock kernel)
 
 ------------------------------------------------------------------------------
-C7  WILSON-BOUNDARY THREE-FACTOR BRIDGE GUARD
-    source wiring: OS Step 1 + mixed kernel + det positivity + Cauchy-Schwarz + T_hat^2[U]
+C7  WILSON TEMPORAL-GAUGE BRIDGE REROUTE GUARD
+    source wiring: temporal-gauge bridge + mixed kernel + det positivity + Cauchy-Schwarz + T_hat^2[U]
     finite product sanity: positive factors compose to a non-negative integrand
 ------------------------------------------------------------------------------
     required source bridge phrases present: YES
@@ -114,13 +114,13 @@ GAUGE CASE REDUCTION / 2026-06-06 PARENT BRIDGE
 ==============================================================================
 SUMMARY
 ==============================================================================
-  C1 dispersion anchor   : PASS  (max residual 3.38e-16)
+  C1 dispersion anchor   : PASS  (max residual 2.94e-16)
   C2 single-step non-PSD : PASS  (min |Im eig| for sin(p)!=0 0.562; sin(p)=0 negative mode YES)
   C3 2-step positivity   : PASS  (T_hat^2 positive Hermitian = B^dag B)
   C4 R2 OS Gram PSD      : PASS  (2-step OS Gram Hermitian PSD)
   C5 functor identity    : PASS  (Gamma=B^dag B verified in-repo)
   C6 decaying bridge     : PASS  (spectral projector -> Fock kernel)
-  C7 bridge guard        : PASS  (Wilson-boundary three-factor source wiring)
+  C7 bridge guard        : PASS  (Wilson temporal-gauge reroute source wiring)
 
 PASS=7 FAIL=0
 

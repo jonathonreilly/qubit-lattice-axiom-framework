@@ -1,0 +1,28 @@
+CHECK 01: PASS -- quote guard: pre-restoration Record locking+readout-invariance sentence present verbatim in MINIMAL_AXIOMS_2026-06-29.md
+CHECK 02: PASS -- quote guard: Admissibility 'determined by, and vary with, the nearest-neighbor conditions' present verbatim
+CHECK 03: PASS -- quote guard: 'A state is a configuration of records.' present verbatim
+CHECK 04: PASS -- T1 2x2x2 window record-saturated (|R|=8) => zero registrable sites in R
+CHECK 05: PASS -- T1 3x3x3 window record-saturated (|R|=27) => zero registrable sites in R
+CHECK 06: PASS -- T1 constancy FORCED: exactly one later R-restriction survives permanence+locks-one, and it equals C|R (history constant on R)
+CHECK 07: PASS -- T1 guards have teeth: removal, alteration, and double-record candidates are each rejected
+CHECK 08: PASS -- T1 global corollary: all-(+1) saturated config admissible (each locked value lies in its neighbor-determined availability set); readout additive over disjoint halves; readout(empty)=0
+CHECK 09: PASS -- T1 discriminating control: flipping one interior site to -1 amid +1 neighbors yields a NON-admissible config (check has teeth)
+CHECK 10: PASS -- T2 permanence: record sets nested and locked values agree at every succession step of the history
+CHECK 11: PASS -- T2 region R unsaturated at stage 1, saturated at stage 2 (a frozen region is produced)
+CHECK 12: PASS -- T2 per-stage in-R event counts == (4,4,0,0): R event count halts after saturation (record-time in R ends)
+CHECK 13: PASS -- T2 per-stage outside-R event counts == (0,0,2,2): events continue on the unsaturated complement at stages 3,4
+CHECK 14: PASS -- T2 restricted record set in R is constant (==8) for stages 2,3,4 -- record-time in R is halted
+CHECK 15: PASS -- T2 outside-R record count strictly increases at stages 3 and 4 while R is frozen (time flows where unwritten possibility remains)
+CHECK 16: PASS -- T3 boundary pin: outside site adjacent to the saturated block has availability {+1} at every stage
+CHECK 17: PASS -- T3 far site retains full availability {+1,-1} at every stage
+CHECK 18: PASS -- T3 pin is PERMANENT: the in-R neighbor record (1,0,0)=+1 is constant along the history, so availability at s never relaxes
+CHECK 19: PASS -- T3 influence is possibility-level (not dynamical): s stays registrable (unrecorded) at every stage while its availability is pinned
+CHECK 20: PASS -- T3 availability rule is covariant under lattice translation (available_at(s+v; C+v) == available_at(s; C))
+CHECK 21: PASS -- T3 availability rule is covariant under a proper cubic rotation (available_at(Rs; RC) == available_at(s; C))
+CHECK 22: PASS -- T4 finite initial support + finite per-step batches => recorded set size is a finite integer at every stage (sizes == [1,3,6,7,11])
+CHECK 23: PASS -- T4 finite union of finite sets is finite: |union| is an integer and <= sum of sizes (7 <= 8)
+CHECK 24: PASS -- T4 unrecorded-site count in (2k+1)^3 window strictly increases for k=1,2,3 ((25, 122, 339)): infinitely many unrecorded sites remain
+CHECK 25: PASS -- T4 explicit unrecorded site (M+1,0,0) outside the bounding window at a finite stage => global saturation NOT reached at any finite stage
+CHECK 26: PASS -- T4 finite N-site lattice: a one-per-stage history saturates in exactly N stages, with zero registrable sites afterward
+CHECK 27: PASS -- T4 pigeonhole: after N distinct records the finite lattice has zero registrable sites (no (N+1)-th event) -- infinite Z^3 is load-bearing for unbounded record-time
+TOTAL: PASS=27 FAIL=0

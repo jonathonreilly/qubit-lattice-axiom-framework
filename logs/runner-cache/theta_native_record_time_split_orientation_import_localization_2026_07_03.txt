@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/theta_native_record_time_split_orientation_import_localization_2026_07_03.py
-runner_sha256: feb3976f2d605933e1a542b5efdf092bead08a952821c169e18dca276d5a6daf
+runner_sha256: a125ca30d855707fa24bb143d09eba3cb1f8cd5f3a45d86b9779f7c466cc5856
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.62
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 Section A: native carrier split (record-time = direction 0)

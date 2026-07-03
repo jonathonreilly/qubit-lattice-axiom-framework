@@ -12,6 +12,7 @@ Expected close: TOTAL: PASS=20 FAIL=0
 """
 
 import itertools
+import sys
 
 import numpy as np
 
@@ -626,3 +627,4 @@ for _ in range(20):
 check("E4 imported orientation frame makes the odd pairing constructible", ok_e4 and nonzero_density_count >= 15, f"nonzero density count={nonzero_density_count}/20")
 
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+sys.exit(0 if FAIL == 0 else 1)

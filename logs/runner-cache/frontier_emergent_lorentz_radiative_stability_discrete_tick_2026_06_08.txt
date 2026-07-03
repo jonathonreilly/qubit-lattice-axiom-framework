@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/frontier_emergent_lorentz_radiative_stability_discrete_tick_2026_06_08.py
+runner_sha256: 30579596b21e21fe053ff3fede9d050f59291dc72102aad8e68df2b304d024cf
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.41
+status: ok
+----- stdout -----
+========================================================================================
+B4 HYPERCUBIC VELOCITY-ANISOTROPY BOUNDARY
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Invariant-count gate
+----------------------------------------------------------------------------------------
+  [PASS] spatial O_h alone leaves two diagonal kinetic coefficients  --  invariant dimension=2 (c_t and c_s independent)
+  [PASS] B4 leaves one diagonal kinetic coefficient  --  invariant dimension=1 (c_t=c_s forced)
+
+----------------------------------------------------------------------------------------
+Finite relabeling gate
+----------------------------------------------------------------------------------------
+  nk=8: |Sigma_t - Sigma_s| = 4.337e-19
+  nk=10: |Sigma_t - Sigma_s| = 4.337e-19
+  nk=12: |Sigma_t - Sigma_s| = 0.000e+00
+  [PASS] B4-symmetric self-energy coefficients agree to machine precision  --  max diff=4.337e-19
+  [PASS] representation factors cannot produce a marginal species velocity difference from a zero spacetime difference  --  max Casimir-weighted species gap=1.446e-18
+
+----------------------------------------------------------------------------------------
+Form-equality gate
+----------------------------------------------------------------------------------------
+  [PASS] isotropic naive and Wilson forms keep the B4 equality  --  naive=1.735e-18, Wilson=4.337e-19
+  [PASS] an explicit temporal/spatial form break reintroduces the marginal anisotropy  --  r_t=2, r_s=1 diff=3.091e-04
+
+----------------------------------------------------------------------------------------
+Dimension-6 residual scale
+----------------------------------------------------------------------------------------
+  [PASS] the first lattice dispersion correction is dimension-6  --  k^4 coefficient=-a**2/3
+  [PASS] using the scale-reference primitive as units conversion makes the 1 GeV dimension-6 estimate tiny  --  (1/3)(1 GeV/M_Pl)^2=2.240e-39
+
+========================================================================================
+SUMMARY: PASS=8 FAIL=0
+========================================================================================
+
+----- stderr -----
+

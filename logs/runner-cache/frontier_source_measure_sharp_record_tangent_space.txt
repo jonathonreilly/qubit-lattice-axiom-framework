@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_source_measure_sharp_record_tangent_space.py
-runner_sha256: e00f26785e8da18bd9671bc4e7d42269374229640b611c3fa296e6af7c4d108e
+runner_sha256: a68a8d7da18e0898fdc4b609705e70673c33d5a3ba1447d288cb42a57b6adaab
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.45
+elapsed_sec: 0.60
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -12,18 +12,38 @@ SOURCE/MEASURE SHARP-RECORD TANGENT-SPACE THEOREM
 
 Part 1: document/status boundary
 [PASS] docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
 [PASS] docs/SOURCE_MEASURE_PCAL_RN_COCYCLE_THEOREM_NOTE_2026-05-30.md exists
 [PASS] docs/SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md exists
-[PASS] docs/MINIMAL_AXIOMS_2026-05-20.md exists
+[PASS] docs/SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md exists
+[PASS] docs/SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md exists
+[PASS] docs/MINIMAL_AXIOMS_2026-06-05.md exists
 [PASS] docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md exists
 [PASS] note contains required phrase: Theorem
 [PASS] note contains required phrase: Tangent-space proof
 [PASS] note contains required phrase: Exponential chart
-[PASS] note contains required phrase: Y_T source unit
+[PASS] note contains required phrase: Conditional corollary: supplied Y_T source unit
 [PASS] note contains required phrase: Status boundary
 [PASS] note contains required phrase: Non-claims
-[PASS] note marks exact-support status
+[PASS] note contains required phrase: 2026-06-08 finite-boundary repair
+[PASS] note contains required phrase: 2026-06-07 authority split
+[PASS] note contains required phrase: SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06
+[PASS] note contains required phrase: SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05
+[PASS] note marks bounded-support status
+[PASS] note names finite load-bearing claim
+[PASS] note marks Y_T interpretation as conditional corollary only
 [PASS] note forbids bare retained
+[PASS] boundary phrase present: does not supply those bridges
+[PASS] boundary phrase present: does not prove that this basis is the physical top source basis
+[PASS] boundary phrase present: strict same-source top/W response
+[PASS] boundary phrase present: unbounded retained Y_T closure
+[PASS] retained Fisher tangent dependency present in ledger
+[PASS] six-diagonal basis dependency present in ledger
+[PASS] Fisher tangent dependency is audited clean: audited_clean
+[PASS] Fisher tangent dependency is retained: retained
+[PASS] six-diagonal basis dependency is audited clean: audited_clean
+[PASS] six-diagonal basis dependency is retained_bounded: retained_bounded
+[PASS] dependency rows have no open dependency paths
 
 Part 2: finite probability tangent space
 [PASS] probability tangent sums to zero: 0
@@ -40,11 +60,11 @@ Part 3: scaled tangent and exponential chart
 [PASS] exponential chart has requested score: {1: 1, -1: -1}
 [PASS] chart normalizer is log moment generator: log(exp(h)/2 + exp(-h)/2)
 
-Part 4: Y_T source unit
-[PASS] six-component top tangent has unit Fisher norm: 1
-[PASS] lambda-scaled top tangent has norm lambda^2: lambda**2
+Part 4: supplied six-diagonal basis unit
+[PASS] supplied six-component democratic tangent has unit norm: 1
+[PASS] lambda-scaled supplied tangent has norm lambda^2: lambda**2
 [PASS] unit tangent selects lambda=1
-[PASS] component coefficient is 1/sqrt(6): sqrt(6)/6
+[PASS] supplied-basis component coefficient is 1/sqrt(6): sqrt(6)/6
 
 Part 5: firewall
 [PASS] forbidden import named in firewall: H_unit
@@ -59,7 +79,7 @@ Part 5: firewall
 [PASS] forbidden overclaim absent: audit-clean retained
 
 ========================================================================================
-SUMMARY: PASS=38 FAIL=0
+SUMMARY: PASS=58 FAIL=0
 Wrote outputs/source_measure_sharp_record_tangent_space_2026-05-30.json
 
 ----- stderr -----

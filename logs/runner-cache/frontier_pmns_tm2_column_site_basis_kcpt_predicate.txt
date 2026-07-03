@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/frontier_pmns_tm2_column_site_basis_kcpt_predicate.py
+runner_sha256: a5bf14b2a6503b321f8f7e8060e1e9271aec2ec04f2c70f73ff487af81f98b8a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
+PASS T1 corner overlaps |<e_a|W>|^2 = 1/3 (trimaximal column)
+PASS T2 D(M_nu): W is an eigenvector for arbitrary (W-breaking) M_nu (3000)
+PASS T2b explicit W-breaking M has ||P0 M P1||!=0 but D drops it (P0 D(M) P1 = 0)
+PASS T3 D preserves within-doublet block P1 M P1 (theta_13/12 free => TM2 not TM3)
+PASS T4 S = C+C^2 = J-I
+PASS T4b spectrum {2,-1,-1} (singlet isolated, doublet degenerate => 2-block)
+PASS T5 central-sector singlet P0=J/3 == C3-character Pchar(0)
+PASS T5b site-basis K/CPT: conj(Pchar0)=Pchar0, conj(Pchar1)=Pchar2, conj(Pchar2)=Pchar1
+PASS T5c site-conjugation transports to swap(1,2) (real) = the site-basis K
+PASS T6 A=i(C-C^2) is K-odd (conj(A)=-A) and partition-blind ([A,S]=0)
+PASS CTRL K-real monitor keeps doublet degenerate (2-block)
+PASS CTRL K-odd (A-component) monitor splits doublet (teeth: non-K-real breaks TM2)
+
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

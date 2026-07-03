@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/gravity_sign_not_forced_by_arrow_stability_spectral_runner.py
+runner_sha256: 53f706515086da003d3e50dcec6ae96f31a392e25cff3f45dc1d3c5b026d4aa8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+==============================================================================
+ROUTE A (graph-Laplacian spectral): Green's function POSITIVE, but sign(G) NOT fixed
+==============================================================================
+   (L+mu^2)^-1 all entries > 0: True (min 0.0366); rhoA^T G rhoB = 0.0550 > 0
+   Gc=+1 -> E_mut=-0.0550 (attractive); Gc=-1 -> E_mut=+0.0550 (repulsive)
+  [PASS] spectral route gives the positive MAGNITUDE structure but does NOT fix sign(G_coupling)  | attraction <=> Gc>0, but the Green's function is sign(Gc)-blind
+
+==============================================================================
+ROUTE B (energy-stability): FAVORS THE WRONG SIGN (attraction = unbounded-below)
+==============================================================================
+   Gc=+1 (attraction): E_self(sig=0.5..4) = [-0.041, -0.031, -0.027, -0.026, -0.026] -> lowers on CLUMPING (unbounded)
+   Gc=-1 (repulsion):  E_self(sig=0.5..4) = [0.041, 0.031, 0.027, 0.026, 0.026] -> lowers on SPREADING (bounded)
+  [PASS] energy-stability favors REPULSION (the wrong sign): attraction is the no-ground-state direction  | a bounded-below ground state selects Gc<0 => cannot force attraction
+
+==============================================================================
+ROUTE C (arrow/entropy): SIGN-AGNOSTIC (clumping lowers configurational entropy)
+==============================================================================
+   S(uniform) = 4.159  >  S(clumped) = 3.463  => clumping LOWERS configurational S
+   entropy still rises via OTHER channels (gravitational/kinetic dof, Penrose) AND cosmic expansion;
+   so 'entropy increases' does NOT uniquely pick attraction -> the arrow is sign-agnostic for the spatial force.
+  [PASS] the records' arrow (entropy increase) is SIGN-AGNOSTIC: fixes the time-direction, not the spatial sign  | Penrose-arrow candidate refuted: entropy rises for both clumping and expansion
+
+==============================================================================
+CONCLUSION: the sign is a separate residual beside the records-clock-rate boundary and local chi-selector
+==============================================================================
+   The records derive the Poisson LAW (self_consistency_forces_poisson) and the positive Green's-
+   function MAGNITUDE; the coupling SIGN (attraction) is NOT forced by the spectral, energy-stability,
+   or arrow routes. The sign sits beside the conformal-factor records-clock-rate boundary
+   and the local chi-selector no-go; it is not the approved scale-reference primitive.
+  [PASS] the gravity sign is not forced by these 3 records-native routes; it is the located residual  | sign = separate residual beside clock-rate boundary + chi-selector; law + magnitude are records-derived
+
+runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

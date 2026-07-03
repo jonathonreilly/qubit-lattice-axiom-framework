@@ -1,6 +1,6 @@
 # SU(3) Wilson Plaquette Closed-Form Fan-Out at β = 6
 
-**Date:** 2026-05-04
+**Date:** 2026-05-04; 2026-06-06 M5 weak-coupling normalization repair
 **Claim type:** bounded_theorem
 **Status:** bounded support theorem — closed-form fan-out, unaudited.
 **Primary runner:** `scripts/frontier_su3_wilson_closed_form_fanout_2026_05_04.py`
@@ -21,7 +21,7 @@ does not depend on them being audit-clean.
 The original framing said the comparison "rules out" the four closed-form
 methods. That phrasing is comparator-conditional: the only structural
 content of this note that does not depend on the imported MC value is the
-quartet of derived numbers `(M1, M2, M4, M5) = (0.4225, 0.3333, 0.8740, 0.9259)`,
+quartet of derived numbers `(M1, M2, M4, M5) = (0.4225, 0.3333, 0.8740, 0.6667)`,
 each computed from framework-allowed primitives. The "ruling out at
 `epsilon_witness`" reading is conditional on the comparator and is no
 stronger than the comparator's own provenance. This note is therefore
@@ -42,14 +42,15 @@ ruling-out theorem.
 | M1: single-plaquette character (Haar) | 0.4225 | 0.171 | 564× |
 | M2: strong-coupling leading β/(2N²) | 0.3333 | 0.260 | 858× |
 | M4: mean-field self-consistency | 0.8740 | 0.281 | 926× |
-| M5: weak-coupling 1-loop | 0.9259 | 0.333 | 1097× |
+| M5: weak-coupling 1-loop | 0.6667 | 0.073 | 242× |
 | **MC reference (canonical)** | **0.5934** | 0 | 0× |
 
-All 4 closed-form estimates are **far-misses** (gap ≥ 0.05). β=6 is the SU(3) crossover regime: strong-coupling estimates undershoot (M1, M2), weak-coupling estimates overshoot (M4, M5), and the MC value 0.5934 sits between them. No single-plaquette / leading-perturbative method captures the connected multi-plaquette structure that drives `<P>` to ~0.59.
+All 4 closed-form estimates are **far-misses** (gap ≥ 0.05). β=6 is the SU(3) crossover regime: strong-coupling estimates undershoot (M1, M2), weak-coupling / mean-field estimates overshoot (M5, M4), and the MC value 0.5934 sits between them. No single-plaquette / leading-perturbative method captures the connected multi-plaquette structure that drives `<P>` to ~0.59.
 
 **Verdict:** among the tested simple closed-form attacks, none closes
-the plaquette value. The L_s ≥ 3 Wigner-Racah engine remains the next
-exact-cube route rather than an already completed closure.
+the plaquette value. The L_s ≥ 3 Wigner-Racah engine remains a
+non-load-bearing planning pointer rather than an already completed
+closure or theorem consequence.
 
 ## 1. Methods
 
@@ -95,12 +96,27 @@ The mean-field self-consistency adds the coordination effect of `z = 6` neighbor
 ### 1.5 M5 — weak-coupling 1-loop
 
 ```text
-<P>_WC = 1 - (N²-1)/(8 N²) · 4/β
-       = 1 - 4/54
-       = 0.925926.
+W_1loop := 1 - (1/N) Re Tr U_p
+         = c_1 / β + O(β^-2),
+    c_1 = (N² - 1)/4.
+
+For SU(3), c_1 = 2, so
+
+<P>_WC = 1 - W_1loop
+       = 1 - 2/6
+       = 0.666667.
 ```
 
-Standard 4D Wilson lattice perturbation theory at one loop. **M5 overshoots**: weak coupling is not yet asymptotic at β = 6.
+This uses the standard Wilson-action plaquette-deficit normalization
+`W = 1 - (1/N) Re Tr U_p`. As a convention check, Di Renzo and
+Scorzato define the SU(3) basic plaquette deficit this way and report
+the first perturbative coefficient `c_1 = 2` for the large-volume
+SU(3) plaquette expansion. The citation is a normalization cross-check;
+the runner computes the coefficient from `c_1=(N²-1)/4`.
+
+**M5 still overshoots** the comparator, but by `0.0733` rather than the
+previously frozen `0.3325`. The conclusion that the leading weak-coupling
+closed form does not close β=6 remains unchanged.
 
 ## 2. Theorem statement
 
@@ -112,7 +128,7 @@ expectation value at β = 6:
 (a) M1 (single-plaquette character expansion): `<P>_1plaq = 0.4225`;
 (b) M2 (strong-coupling leading order): `<P>_SC1 = 0.3333`;
 (c) M4 (mean-field self-consistency, z = 6): `<P>_MF = 0.8740`;
-(d) M5 (weak-coupling 1-loop): `<P>_WC = 0.9259`.
+(d) M5 (weak-coupling 1-loop): `<P>_WC = 0.6667`.
 
 **Bounded comparator (conditional on imported `<P>_MC = 0.5934` and
 `epsilon_witness = 3.03e-4`).** Under the comparator-only assumption
@@ -126,14 +142,14 @@ evaluation on framework-allowed primitives (Bessel-determinant
 character coefficients for M1, M3, M4; pure SU(N) algebra for M2, M5).
 Numerical evaluation gives the four numbers above. The gap-to-MC values
 are computed by the runner from the imported comparator. The bounded
-internal content is the quartet `(0.4225, 0.3333, 0.8740, 0.9259)`; the
+internal content is the quartet `(0.4225, 0.3333, 0.8740, 0.6667)`; the
 comparator wing is conditional. ∎
 
 ## 3. Interpretation
 
-β = 6 sits in the **SU(3) crossover regime**: it is the boundary where the correlation length ξ exceeds 2 lattice spacings (so L_s = 2 PBC fails, per the SU(3) Wigner L_s=2 orientation verdict, legacy Block 5) and where neither strong-coupling expansion (M1, M2) nor weak-coupling perturbation (M5) is a good asymptotic. Mean-field (M4) sits awkwardly between because its self-consistent β_eff jumps deep into weak coupling.
+β = 6 sits in the **SU(3) crossover regime**: it is the boundary where the correlation length ξ exceeds 2 lattice spacings (so L_s = 2 PBC fails, per the SU(3) Wigner L_s=2 orientation verdict, legacy Block 5) and where neither strong-coupling expansion (M1, M2) nor leading weak-coupling perturbation (M5) is a good asymptotic. Mean-field (M4) sits awkwardly between because its self-consistent β_eff jumps deep into weak coupling.
 
-The MC value 0.5934 is **sandwiched** between strong-coupling estimates (0.33, 0.42) and weak-coupling estimates (0.87, 0.93). Closing this gap requires the full **connected multi-plaquette tensor-network structure** that:
+The MC value 0.5934 is **sandwiched** between strong-coupling estimates (0.33, 0.42) and leading weak-coupling / mean-field estimates (0.6667, 0.8740). Closing this gap requires the full **connected multi-plaquette tensor-network structure** that:
 
 - L_s = 2 PBC cannot host (SU(3) Wigner L_s=2 orientation verdict, legacy Block 5);
 - No single-plaquette closed form captures (this Block);
@@ -152,8 +168,9 @@ L_s ≥ 3 cube Wigner-Racah Perron data would be needed.
 
 - 4 closed-form Wilson plaquette estimates at β = 6 (M1, M2, M4, M5).
 - Comparison to canonical MC reference and ε_witness.
-- Strengthened verdict that L_s ≥ 3 Wigner-Racah work is the next
-  exact-cube route after these simpler frames fail.
+- Non-load-bearing planning pointer that L_s ≥ 3 Wigner-Racah work is
+  a plausible next engineering route after these simpler frames miss
+  the comparator.
 
 ### 4.2 Out of scope
 
@@ -171,7 +188,7 @@ L_s ≥ 3 cube Wigner-Racah Perron data would be needed.
   The ruling-out language is comparator-conditional and inherits the
   provenance of `<P>_MC = 0.5934` and `epsilon_witness = 3.03e-4`. The
   bounded internal content of this note is the four derived numbers
-  `(0.4225, 0.3333, 0.8740, 0.9259)`.
+  `(0.4225, 0.3333, 0.8740, 0.6667)`.
 
 ## 5. Audit queue seed (review-only)
 
@@ -189,13 +206,14 @@ deps:
 review_scope: |
   Bounded internal record of 4 closed-form Wilson <P>(beta=6)
   estimates. M1 (single-plaq char) = 0.4225, M2 (SC leading) = 0.3333,
-  M4 (mean-field) = 0.8740, M5 (WC 1-loop) = 0.9259; MC = 0.5934.
+  M4 (mean-field) = 0.8740, M5 (WC 1-loop) = 0.6667; MC = 0.5934.
   The gap-to-MC reading is comparator-conditional on the imported MC
   value and epsilon_witness target.
 
-  Provides bounded support adjacent to the SU(3) Wigner intertwiner
-  L_s=2 PBC orientation verdict (legacy Block 5) without changing that
-  parent verdict.
+  Provides a bounded fan-out record adjacent to the SU(3) Wigner
+  intertwiner L_s=2 PBC orientation verdict (legacy Block 5) without
+  changing that parent verdict. Any L_s>=3 route language is a
+  non-load-bearing planning pointer only.
 
   Does not promote bridge parent chain. Does not claim MC value as
   derived. No forbidden imports (numpy + scipy.special only; MC
@@ -212,6 +230,11 @@ review_scope: |
 - Framework `P_triv` reference (= M1 here under different alias):
   [`GAUGE_VACUUM_PLAQUETTE_BRIDGE_SUPPORT_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_BRIDGE_SUPPORT_NOTE.md),
   [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md).
+- Weak-coupling plaquette-deficit normalization context:
+  Di Renzo and Scorzato, *A consistency check for Renormalons in
+  Lattice Gauge Theory: beta^(-10) contributions to the SU(3)
+  plaquette*, arXiv:hep-lat/0011067. The note uses this only to
+  cross-check the `W = 1 - (1/3) Re Tr U_p`, `c_1=2` convention.
 
 ## 7. Command
 

@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_stress_ward_transverse_seagull.py
+runner_sha256: 4c013f5924b71993393a2dee11d8c4047e6fdfdcdb96482d72c4b4e45587bd5f
+timeout_sec: 360
+exit_code: 0
+elapsed_sec: 44
+status: ok
+----- stdout -----
+PASS T1 native iD elliptic: det=m^2+|sin|^2>0 on ALL BZ modes (valid Z)
+PASS T1b bare-Hermitian sigma.sin sign-indefinite (3304/4096 modes det<=0, invalid Z, #3222 control)
+PASS T2a single-current operator Ward sum_a 2sin(k_a/2)G_a=D(q+k)-D(q) EXACT (err=1.1e-15)
+PASS T2b photon Pi_ab EXACTLY transverse (sum_a 2sin(k_a/2)Pi_ab=0, max=9.4e-16) -- U(1) exact on lattice
+PASS T3 naive stress vertex FAILS transversality: residual ~0.17 (large)
+PASS T3b naive residual N-INDEPENDENT at fixed k0 (0.1675@N12 vs 0.1675@N18 -> genuine finite-k, not discretization)
+PASS T4a C2 (no seagull) residual LINEAR in k0 (res/k0=0.080, 0.083, 0.084 ~const => longitudinal self-energy O(1))
+PASS T4b C2 + seagull residual CUBIC in k0 (res/k0^3=0.0109, 0.0113, 0.0114 ~const => leading O(k0) longitudinal violation REMOVED)
+PASS T4c seagull improves transversality by ~1/k0^2 (residual ratio nosg/sg=19, 37, 61, grows as k0->0)
+PASS T4d seagulled residual N-INDEPENDENT at fixed k0 (0.01143@N12 vs 0.01143@N18 -> genuine continuum quantity)
+PASS T4e transversality holds OFF-AXIS k=(k0,k0,0) too (residual=0.0024, small)
+PASS T5 healthy POSITIVE TT (yz) stiffness survives scheme-clean vertex+seagull (induced-action slope=+0.01258, +0.01286, +0.01299)
+PASS T5b mass-robust: TT stiffness > 0 for m in {0.5,1,1.5} (+0.03301, +0.01286, +0.00513)
+PASS T6 seagull tadpole reproduces the k->0 longitudinal contact term in all channels (max|bub-tad|=1.8e-03)
+PASS T6b small-k contact-basis solve recovers S=-B0+B1+B5 within finite-k error (coef=-0.980,+0.978,+0.978; integer maxerr=1.8e-03)
+
+Runner-defined conserved velocity x momentum stress vertex + local seagull -> finite-BZ
+stress two-point function transverse to leading physical order (residual O(k0^3), leading
+longitudinal violation removed); healthy positive TT sign preserved in this scheme. BOUNDED
+on the open full metric-Hessian/contact-term bridge and the continuum Ward/isotropy limits.
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

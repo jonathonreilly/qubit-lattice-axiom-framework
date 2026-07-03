@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py
+runner_sha256: 8de13bec7f9bcb288f84bf219ed396bd49665c8553ffbd7abf8ab4e7c4351ea5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+PASS: (1a) Sum lambda = 3a, Sum lambda^2 = 3a^2+6|b|^2 (both delta-INDEPENDENT) -> U(1)_b is a red herring
+PASS: (1b) Q=(1+2r)/3 with r=|b|^2/a^2 -> Q=2/3 iff r=1/2; Q has NO delta dependence (count is a functional choice, not a symmetry quotient)
+PASS: (2a) clock grading: Omega^-1 C Omega = w * C (genuine nontrivial Z3 action, character k on C^k line)
+PASS: (2b) discrete Z3 character index -> multiplicity (1,1,1), so the conditional (singlet,doublet)=(1,1) block-balance algebra respects C^3=I
+PASS: (3a) Gamma_chi=(2/3)(I+C+C^2)-I is circulant with eigenvalues {+1,-1,-1} (generation chirality grading)
+PASS: (3b) comm(C) cap anticomm(Gamma_chi) = {0}: the ONLY C3-equivariant Gamma_chi-anticommuting operator is 0 -> within R^3, first-order is forbidden
+PASS: (3c) converse guard: an operator can commute with Gamma_chi while failing C3-equivariance, so the source may claim only the forward/native-circulant implication
+PASS: (4) on R^3(x)C^2: O=I3(x)sx COMMUTES with C(x)I (C3-equivariant) AND ANTICOMMUTES with I3(x)sz (chirality) -> the escape EXISTS across factors
+PASS: (5) M(b) f_k = (a+b w^k + bbar w^2k) f_k for b-INDEPENDENT Fourier f_k -> eigenvectors b-independent -> Berry-flat commuting side; no physical r weighting is selected here
+PASS: (6) source note keeps the bounded localization/no-derivation boundary and removes old positive-selector wording
+
+TOTAL: PASS=10 FAIL=0
+SUMMARY: PASS=10 FAIL=0
+
+BOUNDED-LOCALIZATION SYNTHESIS verified: (1) U(1)_b is a RED HERRING (Q delta-independent; count=functional choice).
+(2) the DISCRETE Z3-character index gives the conditional (1,1) block-balance algebra while respecting C^3=I,
+so an index can encode that balance without a continuous symmetry. (3) WITHIN R^3, C3-equivariant/native
+circulant mass has comm(C) cap anticomm(Gamma_chi)={0}; the converse commutes-with-Gamma_chi=>C3-equivariant
+is false and is not claimed. (4) the factor-crossing L-R coupling shape M(b)(x)sigma_+ exists in the algebra.
+(5) the native mass is Berry-flat/commuting. NET: this is bounded algebraic localization only; the framework
+supplies the grading eps but NOT the physical coupling or r-weighting rule -> gated on the AC_phi_lambda corner
+realization. NOT a derivation of r=1/2 and NOT a retained positive selector theorem.
+
+----- stderr -----
+

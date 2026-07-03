@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py
+runner_sha256: c0ac61ca9f5bec2787d128f9620b3a0cabc65364f42d039190c96e2319ca147f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
+Record clock/rate normalization stable-dial gate
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+
+A. post-record counts are not probability states
+[PASS] count update is integral append/count information -- count'=[2, 1, 1]
+[PASS] count update increases total count, not normalized probability -- sum=4
+[PASS] dial probability state is normalized -- pi=[1/3, 1/3, 1/3]
+[PASS] post-record count vector is not the dial probability vector
+
+B. supplied generators can stabilize distinct dial locations
+[PASS] dial s=1 is a normalized positive distribution -- pi=[1/3, 1/3, 1/3]
+[PASS] supplied Q(s=1) is a Markov generator
+[PASS] pi(s=1) is stationary for Q(s=1)
+[PASS] Q(s=1) has one zero mode and stable negative transverse modes -- {-9: 2, 0: 1}
+[PASS] dial s=2 is a normalized positive distribution -- pi=[1/7, 2/7, 4/7]
+[PASS] supplied Q(s=2) is a Markov generator
+[PASS] pi(s=2) is stationary for Q(s=2)
+[PASS] Q(s=2) has one zero mode and stable negative transverse modes -- {-49/4 - 7*sqrt(7)/4: 1, -49/4 + 7*sqrt(7)/4: 1, 0: 1}
+[PASS] dial s=3 is a normalized positive distribution -- pi=[1/13, 3/13, 9/13]
+[PASS] supplied Q(s=3) is a Markov generator
+[PASS] pi(s=3) is stationary for Q(s=3)
+[PASS] Q(s=3) has one zero mode and stable negative transverse modes -- {-169/9 - 26*sqrt(13)/9: 1, -169/9 + 26*sqrt(13)/9: 1, 0: 1}
+[PASS] different supplied generators stabilize different dial locations
+
+C. rate-clock normalization is a separate quotient
+[PASS] rate-scaled generator is still a valid generator
+[PASS] rate scaling preserves the stable dial location
+[PASS] rate scaling changes off-diagonal rates -- old=7/2, new=35/2
+[PASS] rate scaling scales nonzero eigenvalues -- {-245/4 - 35*sqrt(7)/4: 1, -245/4 + 35*sqrt(7)/4: 1, 0: 1}
+[PASS] same transition kernel can come from different rate/clock pairs
+[PASS] the two rate values are different -- r1=log(2)/2, r2=log(2)/4
+[PASS] the dimensionless products agree
+[PASS] shared two-state step is stochastic -- P=Matrix([[3/4, 1/4], [1/4, 3/4]])
+
+D. claim firewalls
+[PASS] stable dial is a supplied-generator property, not a Record-only output
+[PASS] absolute physical rate still needs a clock/rate unit
+[PASS] pre-record probabilities still need a probability-origin bridge
+[PASS] no Koide or generation dial value is selected
+[PASS] the result licenses stable-location tests without Record selecting the dial
+
+SCORECARD: PASS=30 FAIL=0
+VERDICT: exact support for the record clock/rate normalization gate. A supplied generator can stabilize a dial location, but Record alone does not select that location and absolute physical rates still require clock/rate normalization.
+
+----- stderr -----
+

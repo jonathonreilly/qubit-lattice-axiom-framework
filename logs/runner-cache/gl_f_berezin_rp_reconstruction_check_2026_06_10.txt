@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/gl_f_berezin_rp_reconstruction_check_2026_06_10.py
+runner_sha256: b8531ce758a4555c983e665dfab5f9305b9990b63e9862182f83f64194116fa3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.51
+status: ok
+----- stdout -----
+==============================================================================
+GL(F) from Berezin-RP reconstruction -- exact certificate (2026-06-10)
+==============================================================================
+
+--- [A] Berezin / measure surface ---
+[A] PASS: Berezin (Grassmann) partition readout Z[M] = det(M) exactly (n = 2, 3, generic rational M)  (Berezin-determinant identity recomputed)
+[A] PASS: commuting-nilpotent (ungraded) partition readout Z_cn[M] = perm(M) exactly (n = 2, 3)  (the hard-core-frame integrand has a PERMANENT readout, not det)
+[A] PASS: det != perm witness on the same M: the two integrand classes are separated by the determinant readout  (det = -2, perm = 10)
+[A] PASS: free-boson (CCR) tower readout diverges from the Grassmann scalar readout: truncated traces strictly increase, Grassmann trace = 1 + e^-m  (free boson excluded by the per-site dim-2 readout; Gaussian boson would give det^(-1/2), a third distinct class)
+
+--- [B] OS reconstruction from the Berezin functional (exact, N = 2, 3) ---
+[B] PASS: N = 2: the action S is Theta-symmetric (Theta(S) = S exactly; link reflection t -> 1-t, chi <-> chibar, antilinear, product-reversing)
+[B] PASS: N = 2: Z = Berezin integral of e^{-S} is nonzero (the measure is nondegenerate)  (Z_top = 1)
+[B] PASS: N = 2: OS Gram on the full A_+ basis (16 monomials) is symmetric and PSD (exact rational LDL certificate)  (rank = 4)
+[B] PASS: N = 2: GNS quotient dimension = rank(Gram) = 2^N = 4 -- the reconstructed Hilbert space matches the Quantum-axiom qubit net dimension per site
+[B] PASS: N = 2: the chibar-monomial (occupation) sub-basis has exactly positive-definite Gram (all 4 pivots > 0) -- it spans the quotient
+[B] PASS: N = 2: the OS null space is invariant under left multiplication by every FIELD generator chi_{1x} -- the reconstructed fields psi_x = [chi_{1x} . ] are canonically well-defined on the quotient (checked on all 12 exact kernel vectors)  (GL(F) concerns psi_x and its Hilbert adjoint, both canonical)
+[B] PASS: N = 2: declared structure -- chibar_{1x} multiplication does NOT preserve the null space (violations detected), so the creator phi_x is defined on the distinguished boundary creation subalgebra Lambda[chibar_1] (positive-definite Gram, isomorphic onto the quotient): the standard Fock/holomorphic transfer picture, recorded honestly
+[B] PASS: N = 3: the action S is Theta-symmetric (Theta(S) = S exactly; link reflection t -> 1-t, chi <-> chibar, antilinear, product-reversing)
+[B] PASS: N = 3: Z = Berezin integral of e^{-S} is nonzero (the measure is nondegenerate)  (Z_top = 1)
+[B] PASS: N = 3: OS Gram on the full A_+ basis (64 monomials) is symmetric and PSD (exact rational LDL certificate)  (rank = 8)
+[B] PASS: N = 3: GNS quotient dimension = rank(Gram) = 2^N = 8 -- the reconstructed Hilbert space matches the Quantum-axiom qubit net dimension per site
+[B] PASS: N = 3: the chibar-monomial (occupation) sub-basis has exactly positive-definite Gram (all 8 pivots > 0) -- it spans the quotient
+[B] PASS: N = 3: the OS null space is invariant under left multiplication by every FIELD generator chi_{1x} -- the reconstructed fields psi_x = [chi_{1x} . ] are canonically well-defined on the quotient (checked on all 56 exact kernel vectors)  (GL(F) concerns psi_x and its Hilbert adjoint, both canonical)
+[B] PASS: N = 3: declared structure -- chibar_{1x} multiplication does NOT preserve the null space (violations detected), so the creator phi_x is defined on the distinguished boundary creation subalgebra Lambda[chibar_1] (positive-definite Gram, isomorphic onto the quotient): the standard Fock/holomorphic transfer picture, recorded honestly
+
+--- [C] Reconstructed exchange relations (the GL(F) certificate) ---
+[C] PASS: N = 2: chi_{1x} chi_{1y} + chi_{1y} chi_{1x} = 0 is an IDENTITY of the Grassmann algebra (before any action, form, or quotient) -- the exchange sign is carried by the integration variables
+[C] PASS: N = 2: reconstructed {psi_x, psi_y} = 0 for ALL x, y (exact matrices on the 2^N-dim reconstructed space; includes psi_x^2 = 0)
+[C] PASS: N = 2: reconstructed multiplication pair satisfies {psi_x, phi_y} = delta_xy I exactly (the on-site CAR ladder structure emerges from the equal-slice Wick contraction)
+[C] PASS: N = 2: {psi_x, psi_y^dag} (dag = OS adjoint) is CENTRAL: = C_xy I with C = K^{-1} exactly, a positive-definite c-number covariance -- no operator-valued obstruction
+[C] PASS: N = 2: exact rational normalizer B with B C B^T = I exists (field-multiplet rotation; cannot change exchange signs)
+[C] PASS: N = 2: GL(F) CERTIFICATE -- the canonically normalized reconstructed fields satisfy {psi_x, psi_y} = 0 AND {psi_x, psi_y^dag} = 0 for x != y, with {psi_x, psi_x^dag} = I (exact CAR; cross-site anticommutation is a THEOREM of the reconstruction, not a postulate)
+[C] PASS: N = 2: the reconstructed parity F-hat (the integrand grading chi -> -chi pushed to the quotient) preserves the OS form, anticommutes with every reconstructed field, and equals tensor-sigma_3 in the occupation identification -- GL(F) holds w.r.t. the framework grading
+[C] PASS: N = 3: chi_{1x} chi_{1y} + chi_{1y} chi_{1x} = 0 is an IDENTITY of the Grassmann algebra (before any action, form, or quotient) -- the exchange sign is carried by the integration variables
+[C] PASS: N = 3: reconstructed {psi_x, psi_y} = 0 for ALL x, y (exact matrices on the 2^N-dim reconstructed space; includes psi_x^2 = 0)
+[C] PASS: N = 3: reconstructed multiplication pair satisfies {psi_x, phi_y} = delta_xy I exactly (the on-site CAR ladder structure emerges from the equal-slice Wick contraction)
+[C] PASS: N = 3: {psi_x, psi_y^dag} (dag = OS adjoint) is CENTRAL: = C_xy I with C = K^{-1} exactly, a positive-definite c-number covariance -- no operator-valued obstruction
+[C] PASS: N = 3: exact rational normalizer B with B C B^T = I exists (field-multiplet rotation; cannot change exchange signs)
+[C] PASS: N = 3: GL(F) CERTIFICATE -- the canonically normalized reconstructed fields satisfy {psi_x, psi_y} = 0 AND {psi_x, psi_y^dag} = 0 for x != y, with {psi_x, psi_x^dag} = I (exact CAR; cross-site anticommutation is a THEOREM of the reconstruction, not a postulate)
+[C] PASS: N = 3: the reconstructed parity F-hat (the integrand grading chi -> -chi pushed to the quotient) preserves the OS form, anticommutes with every reconstructed field, and equals tensor-sigma_3 in the occupation identification -- GL(F) holds w.r.t. the framework grading
+[C] PASS: staggered leg: the action-derived classical 2-step transfer matrix T_odd T_even reproduces the exact free staggered dispersion eigenvalue e^{-2E(p)}, E = arcsinh sqrt(m^2 + sin^2 p) (two-step transfer object recomputed)  (L_s = 4, m = 0.5)
+[C] PASS: staggered leg: the L_s = 4 two-slice Berezin action with the staggered 2-step kernel K_stag is Theta-symmetric
+[C] PASS: staggered leg: occupation-basis OS Gram is positive definite (float Cholesky, dim = 2^4 = 16)
+[C] PASS: staggered leg: reconstructed fields from the staggered-kernel Berezin functional satisfy {psi_x, psi_y} = 0 and {psi_x, phi_y} = delta_xy I at L_s = 4 (tol 1e-9) -- GL(F) on the two-step staggered transfer surface
+
+--- [D] Falsification legs (the Grassmann and RP inputs are load-bearing) ---
+[D] PASS: N = 2: the commuting-nilpotent (ungraded) integrand ALSO has a Theta-symmetric action and a PSD OS Gram of rank 2^N -- the reconstruction functor runs on both integrand classes
+[D] PASS: N = 2: the SAME functor on the ungraded integrand reconstructs cross-site COMMUTING operators ([theta_x, theta_y] = 0, {theta_x, theta_y} != 0 cross-site) -- the hard-core frame; the exchange sign of the reconstructed operators equals the exchange parity of the integration variables, so the Grassmann input is LOAD-BEARING
+[D] PASS: N = 3: the commuting-nilpotent (ungraded) integrand ALSO has a Theta-symmetric action and a PSD OS Gram of rank 2^N -- the reconstruction functor runs on both integrand classes
+[D] PASS: N = 3: the SAME functor on the ungraded integrand reconstructs cross-site COMMUTING operators ([theta_x, theta_y] = 0, {theta_x, theta_y} != 0 cross-site) -- the hard-core frame; the exchange sign of the reconstructed operators equals the exchange parity of the integration variables, so the Grassmann input is LOAD-BEARING
+[D] PASS: identity leg: in the Grassmann algebra the left-multiplication anticommutator vanishes BEFORE any quotient (chi_x chi_y = - chi_y chi_x exactly), so NO choice of action, reflection, or null quotient on a Grassmann integrand can reconstruct the cross-site-commuting hard-core frame with nonvanishing anticommutator  (the +1 exchange class is unreachable from the Berezin measure)
+[D] PASS: RP leg: a Theta-ASYMMETRIC kernel (K != K^T) destroys the OS symmetry (Theta(S) != S and the Gram is not symmetric) -- the reflection-positivity input is load-bearing for the existence of the reconstructed Hilbert space
+[D] PASS: RP leg: a symmetric but INDEFINITE kernel (eigenvalues 3, -1) gives a non-PSD OS Gram (exact LDL detects a negative pivot) -- positivity of the transfer kernel is also load-bearing
+[D] PASS: transmission certificate: psi_x psi_y != 0 and the reconstructed cross-site exchange sign EQUALS the exchange parity of the integration variables on both branches (Grassmann integrand -> sign -1; ungraded integrand -> sign +1) -- the measure surface carries exactly the frame bit the prior static negative notes prove invisible to dimension, ungraded algebra, positivity spectra, and loop data
+
+--- [E] Source-graph bridge wire-up after re-audit feedback ---
+[E] PASS: parent note records the exact post-audit blocker and the sibling bridge packet as the reconstruction-identification repair
+[E] PASS: bridge note decomposes the identification into carrier, parity, dictionary, and matter-functional clauses
+[E] PASS: bridge runner cache is present, SHA-fresh, and passing  (bridge cache validates the sibling packet without rerunning it here)
+[E] PASS: remaining boundary is only the matter-functional/action-surface supplier; no audit status movement or new primitive is claimed
+
+TOTAL: PASS=48 FAIL=0
+
+----- stderr -----
+

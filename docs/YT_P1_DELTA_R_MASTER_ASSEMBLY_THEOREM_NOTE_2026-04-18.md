@@ -1,6 +1,24 @@
 # P1 Δ_R Master Assembly Theorem Note (Three-Channel Ratio Correction Roll-Up)
 
-**Date:** 2026-04-18 (amended 2026-04-18 with canonical-central supersession notice)
+> ## ⚠ CORRECTION (2026-06-16) — BOTH canonical centrals below are DEFECTIVE
+>
+> The §0 "canonical central" `Δ_R = −3.77 %` and the literature-cited
+> `Δ_R = −3.27 %` are **both invalid**. The full-staggered-PT quadrature they
+> rest on has two defects (see
+> [YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md](YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md)):
+> 1. **`I_v_scalar = +3.90` is a `/N_TASTE` double-count.** Corrected `I_S = 32.4`
+>    → `Δ_1 = +58.9` (not +1.8/+2) → C_F channel **+56.6 %** (not +1.7 %).
+> 2. **`I_SE_fermion = +0.996` is not a matching constant** — `F_g/D_psi²` is
+>    log-divergent at all 16 BZ doublers but only `k=0` is subtracted, so it is
+>    IR-regulator-dependent (`d/d log m² → −28`); the value is an `m²=0.01`
+>    artifact and `/N_TASTE²` cannot fix it.
+> Δ_2 (C_A gluonic) is clean. **Corrected Δ_R ≈ +50 %, an O(50%) UNCONTROLLED
+> quantity** (dominated by the non-perturbative single-link scalar channel), NOT
+> a small negative few-percent. The §0/§§2–9 per-channel "agreement within the
+> cited bracket" was an artifact of the buggy small `I_v_scalar`. The body below
+> is preserved unchanged for history but is SUPERSEDED.
+
+**Date:** 2026-04-18 (amended 2026-04-18 with canonical-central supersession notice; corrected 2026-06-16)
 **Status:** proposed_retained **literature-cited master assembly theorem** on the P1
 ratio correction. The literature-cited central `Δ_R = −3.27 %` recorded below
 remains a defensible three-channel roll-up of the cited Δ_1/Δ_2/Δ_3

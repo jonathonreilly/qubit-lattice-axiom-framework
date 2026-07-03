@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_induced_graviton_w_native_finite_k.py
+runner_sha256: 82d1178ef41bde2b3dc0528c8791805692c69459aaa263395e18318537cd5026
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2
+status: ok
+----- stdout -----
+PASS T1 native anti-Herm iD elliptic: det=m^2+|sin|^2 > 0 on ALL BZ modes (valid Z)
+PASS T1b bare-Hermitian sigma.sin: det=m^2-|sin|^2 sign-indefinite (3304/4096 modes <=0, invalid Z)
+PASS T2 yz channel (k along x): k^i h_ij=0 and tr h=0 inside this runner-defined channel
+PASS T3 native elliptic iD: TT k^2 slope POSITIVE for all N (+0.0183, +0.0186, +0.0187, +0.0188)
+PASS T3b convergent in BZ size (spread over N=10..22 < 0.002)
+PASS T4 mass-robust: TT slope > 0 for m in {0.5,1,1.5,2} (+0.0386, +0.0186, +0.0085, +0.0040)
+PASS T4b diagnostic channels split, yz TT(+0.0186) OPPOSITE-signed to trace(-0.0129)
+PASS T5 CONTROL: non-elliptic sigma.sin -> NEGATIVE slope (-66, -817, -288), N-divergent (not the native generator)
+
+native elliptic iD yz TT finite-k bubble slope is positive, convergent, and mass-robust.
+non-elliptic bare-Hermitian control is negative and N-divergent.
+BOUNDED on: runner-defined yz channel; open = full W metric Hessian/contact terms,
+full Ward identity, E_g/T_2g spin-2 isotropy continuum limit, G_Newton magnitude, chiral limit.
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

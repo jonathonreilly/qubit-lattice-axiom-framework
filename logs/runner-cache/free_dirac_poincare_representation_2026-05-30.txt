@@ -3,7 +3,7 @@ runner: scripts/free_dirac_poincare_representation_2026-05-30.py
 runner_sha256: 39ef1b94d75d24dff2d2bb3f11d4ed5661b0c335c11c7c4bab0960ba4211f214
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 ==============================================================================

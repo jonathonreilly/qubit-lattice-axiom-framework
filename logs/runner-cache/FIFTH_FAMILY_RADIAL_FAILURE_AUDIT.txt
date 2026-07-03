@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py
-runner_sha256: 8dc375aedf41720481a57b2e6e81a23cd630c7445fb26a622ff8623ce0a5f0c5
+runner_sha256: 31c03bd5abf6a95e4c8b7bae980bd37259a96c83882148b68dfd0aaad6916709
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 71.95
+elapsed_sec: 52.04
 status: ok
 ----- stdout -----
 ================================================================================================
@@ -22,6 +22,14 @@ SAFE READ
   failing rows: 1
     drift=0.20 seed=0 plus=-2.028e-06 minus=+2.028e-06 exp=1.000
   the miss is a sign-orientation boundary, not a control leak
+
+INDEPENDENT ORIENTATION CERTIFICATE
+  runner=scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py status=ok exit=0 sha_fresh=True
+  source_sha256=a542e8f2dc6f985310b79cea07b4f0e629b1c6c8b41acf22b599a829a68c6604
+  source_bytes=9706
+  direct_certificate=PASS zero=+0.000000000000e+00 neutral=+0.000000000000e+00 plus=-2.028481895566e-06 minus=+2.028191385950e-06 slope=-2.028336655911e-06
+  certificate=PASS
+ASSERTIONS: PASS
 
 ----- stderr -----
 

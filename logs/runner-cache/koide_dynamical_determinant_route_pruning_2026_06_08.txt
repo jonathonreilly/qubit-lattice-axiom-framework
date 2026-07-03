@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/koide_dynamical_determinant_route_pruning_2026_06_08.py
+runner_sha256: 5a73b9566ec66857447a2e0aebdfc826935fe311a640d95ba58b4f7bab80b279
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+KOIDE r=1/2 DYNAMICAL DETERMINANT ROUTE PRUNING
+======================================================================================
+[PASS] Pfaffian/Majorana route: Pf([[0,M],[-M^T,0]]) = +- det M -> the Pfaffian removes only the outer L/R doubling, NOT the intra-M doublet multiplicity; |Pf| = |det M| = prod(singular values) -> r=1 (Majorana does not give a one-slot count)
+       |Pf(A)| = 0.5317, |det M| = 0.5317, prod(sigma) = 0.5317
+[PASS] C3-equivariant antisymmetric kernel check: the only antisymmetric C3-equivariant kernel is J_cs, which annihilates the singlet (J_cs.(1,1,1)=0) -> cannot form the Koide Q (no singlet channel)
+       ||J_cs + J_cs^T|| = 0.0e+00, ||J_cs.triv|| = 2.9e-18
+[PASS] Reflection-positivity route: the tested first-order holomorphic W_h = aI + bC has a COMPLEX spectrum for b!=0 (non-self-adjoint -> not reflection-positive); the Dirac D is Hermitian and D^dag D (= OS transfer B^dag B) is positive (second order). This prunes the tested RP first-order route.
+       max|Im eig(W_h)| = 0.798 (>0 -> complex), D Hermitian=True, D^dag D PSD=True
+[PASS] Berezin-power route: the Berezin determinant POWER p (Dirac 2, Majorana 1, rooted 1/2) multiplies every isotype log-weight uniformly -> cancels in the singlet:doublet ratio -> r is p-INDEPENDENT (the halving comes from POLARIZATION, not statistics)
+       r(power p) = w_d/(2*w_s) = r(p=1) = w_d/(2*w_s)  (p cancels)
+
+SCORECARD PASS=4 FAIL=0
+VERDICT: Pfaffian/Majorana -> |det M| (no one-slot count); the tested non-self-adjoint first-order operator is not RP-compatible while the Hermitian Dirac object is second order; the Berezin measure power is r-neutral. This prunes the tested determinant-family routes only and does not classify Koide r=1/2 globally. The independent audit lane owns status.
+
+----- stderr -----
+

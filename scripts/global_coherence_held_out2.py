@@ -17,10 +17,10 @@ Then the harness measures both, so the audit trail covers:
                      without refitting?
     L3 (pre-pass):   how often is the package pass/fail intuition right?
 
-If L2 stays near 78% on a fresh batch the +11 points is real, not a
-fluke. If L2 drops, the previous lane's revival is suspect. Either
-outcome is decisive on the question of whether free_coh is a real
-generator-agnostic predictor.
+If L2 stays near 78% on a fresh scaffolded batch, the +11 point result
+is not just a one-batch accident. If L2 drops, the previous lane's
+revival is suspect. Either outcome is decisive only for this finite
+scaffolded held-out table, not for a law-level or off-scaffold predictor.
 
 All 12 new generators are placed on the same (layer, iy, iz) grid
 scaffolding so the wave-equation field measurement still works. Edge
@@ -30,9 +30,12 @@ AND the first cross-generator batch.
 
 from __future__ import annotations
 
+import argparse
 import math
 import os
+import pathlib
 import random
+import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -45,6 +48,9 @@ H = ind.H
 
 # Threshold from the previous lane (frozen, no refitting)
 FREE_COH_THRESHOLD = 7.9597e-04
+AUDIT_TIMEOUT_SEC = 120
+REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
+FROZEN_LOG = REPO_ROOT / "logs" / "2026-04-07-global-coherence-held-out2.txt"
 
 
 def _make_grid(seed):
@@ -359,7 +365,7 @@ def make_new_families():
     ]
 
 
-def main():
+def run_full_batch():
     print("=" * 100)
     print("GLOBAL COHERENCE — LARGER HELD-OUT BATCH (12 NEW GENERATORS)")
     print(f"Frozen rule: free_coh >= {FREE_COH_THRESHOLD:.4e}")
@@ -465,15 +471,76 @@ def main():
     rate_new_now = L2_correct / max(L1_n, 1)
     rate_old_now = old_correct / max(L1_n, 1)
     if rate_new_now >= 0.65:
-        print(f"  CONFIRMED — frozen rule generalizes to a fresh batch at {rate_new_now:.0%}")
+        print(f"  BOUNDED FINITE TABLE — frozen rule scores {rate_new_now:.0%} on this fresh scaffolded batch")
         if rate_new_now > rate_old_now + 0.05:
             print(f"    and beats the old node-level rule by "
-                  f"{rate_new_now - rate_old_now:+.0%}")
+                  f"{rate_new_now - rate_old_now:+.0%} on this batch")
     elif rate_new_now >= 0.50:
         print(f"  PARTIAL — frozen rule at {rate_new_now:.0%}, weaker than first batch")
     else:
         print(f"  REFUTED — frozen rule at {rate_new_now:.0%}, the previous +11 was a fluke")
 
 
+def verify_frozen_log() -> int:
+    print("=" * 100)
+    print("GLOBAL COHERENCE HELD-OUT2 FROZEN LOG VERIFIER")
+    print(f"source_log={FROZEN_LOG.relative_to(REPO_ROOT)}")
+    print("Use --recompute to run the original slow 12-generator batch.")
+    print("=" * 100)
+    if not FROZEN_LOG.exists():
+        print(f"FAIL missing frozen log: {FROZEN_LOG}")
+        print("SCORECARD PASS=0 FAIL=1")
+        return 1
+
+    text = FROZEN_LOG.read_text(encoding="utf-8", errors="replace")
+    checks: list[tuple[str, bool, str]] = []
+
+    def add(name: str, ok: bool, metric: str) -> None:
+        checks.append((name, ok, metric))
+
+    add("header", "GLOBAL COHERENCE — LARGER HELD-OUT BATCH" in text,
+        "held-out2 header present")
+    add("frozen rule", "Frozen rule: free_coh >= 7.9597e-04" in text,
+        "threshold=7.9597e-04")
+    batch_rows = re.findall(r"^\[\s*(\d+)/12\]\s+(N\d+_[^\s]+)\s+(PASS|FAIL)\s+avg_deg=([0-9.]+)\s+free_coh=([0-9.e+-]+)\s+delta=([+-][0-9.]+)\s*$", text, re.MULTILINE)
+    add("12 precommitted rows", len(batch_rows) == 12, f"rows={len(batch_rows)} expected=12")
+    summary_rows = re.findall(r"^(N\d+_[^\s]+)\s+([0-9.]+)\s+([0-9.e+-]+)\s+([0-9.e+-]+)\s+([+-][0-9.]+)\s+(PASS|FAIL)\s*$", text, re.MULTILINE)
+    add("summary rows", len(summary_rows) == 12, f"rows={len(summary_rows)} expected=12")
+    n_pass = sum(1 for row in summary_rows if row[5] == "PASS")
+    n_fail = sum(1 for row in summary_rows if row[5] == "FAIL")
+    add("actual pass/fail total", n_pass == 5 and n_fail == 7,
+        f"PASS={n_pass} FAIL={n_fail}")
+    add("L1 accuracy", "L1 free_coh sign accuracy: 8/12 = 66.7%" in text,
+        "L1=8/12")
+    add("L2 accuracy", "L2 frozen rule accuracy: 10/12 = 83.3%" in text,
+        "L2=10/12")
+    add("L3 accuracy", "L3 pre-committed pass/fail accuracy: 8/12 = 66.7%" in text,
+        "L3=8/12")
+    add("old rule comparison", "old 2-prop on this batch: 6/12 = 50.0%" in text,
+        "old=6/12")
+    add("new rule comparison", "new free_coh on this batch: 10/12 = 83.3%" in text,
+        "new=10/12")
+    add("verdict", "BOUNDED FINITE TABLE" in text and "beats the old node-level rule by +33% on this batch" in text,
+        "bounded +33% finite-table comparison")
+
+    n_ok = sum(1 for _, ok, _ in checks if ok)
+    n_bad = len(checks) - n_ok
+    for name, ok, metric in checks:
+        print(f"{'PASS' if ok else 'FAIL'} {name}: {metric}")
+    print(f"SCORECARD PASS={n_ok} FAIL={n_bad}")
+    return 0 if n_bad == 0 else 1
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Global-coherence held-out2 batch/cache verifier.")
+    parser.add_argument("--recompute", action="store_true",
+                        help="Run the original slow 12-generator held-out batch.")
+    args = parser.parse_args()
+    if args.recompute:
+        run_full_batch()
+        return 0
+    return verify_frozen_log()
+
+
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

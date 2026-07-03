@@ -1,11 +1,11 @@
 """SU(3) Wilson plaquette closed-form fan-out at beta = 6.
 
 Per physics-loop guidance (deep-work / stuck-fan-out): before treating
-the L_s>=3 Wigner-Racah engine path as the next exact-cube route, run a fan-out of
+the L_s>=3 Wigner-Racah engine path as a possible engineering route, run a fan-out of
 3-5 orthogonal closed-form estimates of <P>(beta=6) on standard SU(3)
 Wilson primitives. The point is to strengthen the SU(3) Wigner L_s=2
-PBC orientation verdict (legacy Block 5) by explicitly ruling out
-simpler closed-form alternatives, not to actually close the bridge.
+PBC orientation verdict (legacy Block 5) by explicitly recording
+simpler closed-form comparator misses, not to actually close the bridge.
 
 Methods evaluated:
 
@@ -25,8 +25,10 @@ Methods evaluated:
       mean-field): solve <P>_MF = (1/3) Re[c_(1,0)(z beta <P>_MF) /
       c_(0,0)(z beta <P>_MF)] iteratively.
 
-  M5. Weak-coupling 1-loop perturbative: <P>_WC = 1 - (N^2-1)/(8N^2)
-      * 4/beta + O(1/beta^2), the standard 4D lattice Wilson result.
+  M5. Weak-coupling 1-loop perturbative: with the standard Wilson
+      plaquette-deficit normalization W = 1 - (1/N) Re Tr U_p,
+      W = c_1 / beta + O(beta^-2), c_1 = (N^2 - 1)/4. For SU(3),
+      <P>_WC = 1 - 2/beta.
 
   M6. Lattice MC reference: <P>_MC = 0.5934 (canonical SU(3) value at
       beta = 6, used as comparator only).
@@ -175,16 +177,19 @@ def m4_mean_field_self_consistent(beta: float, z: int = 6,
 # ===========================================================================
 
 def m5_weak_coupling_1loop(beta: float) -> float:
-    """Weak-coupling 1-loop: <P>_WC = 1 - (N^2-1)/(8 N^2) * 4 / beta + ...
+    """Weak-coupling 1-loop Wilson plaquette estimate.
 
-    Standard 4D Wilson lattice perturbation at 1 loop.
-    For SU(3): coefficient = 8/72 = 1/9, giving
-      <P>_WC = 1 - 4 / (9 beta).
-    At beta = 6: 1 - 4/54 ~ 0.926.
+    Use the plaquette-deficit normalization
+
+        W = 1 - (1/N) Re Tr U_p = c_1 / beta + O(beta^-2),
+        c_1 = (N^2 - 1) / 4.
+
+    For SU(3), c_1 = 2, so at beta=6:
+
+        <P>_WC = 1 - W = 1 - 2/6 = 2/3.
     """
-    n2_minus_1 = N_COLOR ** 2 - 1
-    eight_n2 = 8 * N_COLOR ** 2
-    return 1.0 - (n2_minus_1 / eight_n2) * 4.0 / beta
+    c1 = (N_COLOR ** 2 - 1) / 4.0
+    return 1.0 - c1 / beta
 
 
 # ===========================================================================
@@ -196,8 +201,8 @@ def driver() -> int:
     print("SU(3) Wilson Plaquette Closed-Form Fan-Out at beta = 6")
     print("=" * 78)
     print()
-    print("Goal: rule out simpler closed-form paths to <P>(beta=6) before")
-    print("committing multi-day engineering on the L_s>=3 Wigner-Racah engine.")
+    print("Goal: test simpler closed-form paths to <P>(beta=6) before")
+    print("treating the L_s>=3 Wigner-Racah engine as a planning candidate.")
     print()
     print(f"  Reference: <P>_MC(beta=6) = {P_MC_REFERENCE:.4f} (canonical lattice MC)")
     print(f"  epsilon_witness = {EPSILON_WITNESS:.3e}")
@@ -271,7 +276,9 @@ def driver() -> int:
     # --- M5: weak-coupling 1-loop ---
     print("--- M5: weak-coupling 1-loop perturbation ---")
     p5 = m5_weak_coupling_1loop(BETA)
-    print(f"  <P>_WC = 1 - (N^2-1)/(8 N^2) * 4 / beta = 1 - 4/54 = {p5:.6f}")
+    print("  W = 1 - (1/N) Re Tr U_p = c_1 / beta + O(beta^-2)")
+    print("  c_1 = (N^2 - 1) / 4 = 2 for SU(3)")
+    print(f"  <P>_WC = 1 - W = 1 - 2/6 = {p5:.6f}")
     print(f"  gap to MC: {abs(p5 - P_MC_REFERENCE):.4f} = "
           f"{abs(p5 - P_MC_REFERENCE)/EPSILON_WITNESS:.0f}x epsilon_witness")
     estimates.append({'method': 'M5: weak-coupling 1-loop',
@@ -326,10 +333,10 @@ def driver() -> int:
         print("  Haar, strong-coupling, mean-field, weak-coupling 1-loop)")
         print("  CANNOT reproduce <P>(beta=6) = 0.5934 within epsilon_witness.")
         print()
-        print("  The L_s>=3 Wigner-Racah engine path remains the next")
-        print("  exact-cube route among the tested methods. The SU(3) Wigner")
-        print("  L_s=2 PBC orientation verdict (legacy Block 5) is strengthened")
-        print("  by this explicit ruling-out of orthogonal closed-form attack frames.")
+        print("  The L_s>=3 Wigner-Racah engine path remains a non-load-bearing")
+        print("  planning candidate among the tested methods. The SU(3) Wigner")
+        print("  L_s=2 PBC orientation verdict (legacy Block 5) is not changed")
+        print("  by this comparator fan-out.")
     print()
 
     print("  Method-by-method commentary:")
@@ -339,14 +346,13 @@ def driver() -> int:
     print(f"    M2 (SC1):              {p2:.4f} — strict leading-order")
     print( "                            beta/18; ignores all corrections.")
     print(f"    M4 (MF):               {p4:.4f} — adds coordination effect;")
-    print( "                            saturates near M1 for SU(3) at beta=6")
-    print( "                            because the self-consistent beta_eff")
-    print( "                            stays in the strong-coupling regime.")
+    print( "                            self-consistent beta_eff jumps deep")
+    print( "                            into weak coupling and overshoots.")
     print(f"    M5 (WC 1-loop):        {p5:.4f} — overshoots; beta=6 is")
     print( "                            in the CROSSOVER regime where neither")
-    print( "                            strong-coupling (M1, M2, M4) nor")
-    print( "                            weak-coupling (M5) is a good")
-    print( "                            asymptotic.")
+    print( "                            strong-coupling (M1, M2) nor")
+    print( "                            leading weak-coupling/mean-field")
+    print( "                            (M5, M4) is a good asymptotic.")
     print()
     print("  beta = 6 is the SU(3) crossover regime where the correlation")
     print("  length exceeds 2 lattice spacings (so L_s=2 fails per the")
@@ -363,7 +369,7 @@ def driver() -> int:
     assert abs(p1 - 0.4225) <= 5e-4, f"M1 drift: {p1:.6f} vs 0.4225 (note table)"
     assert abs(p2 - 0.3333) <= 5e-4, f"M2 drift: {p2:.6f} vs 0.3333 (note table)"
     assert abs(p4 - 0.8740) <= 5e-4, f"M4 drift: {p4:.6f} vs 0.8740 (note table)"
-    assert abs(p5 - 0.9259) <= 5e-4, f"M5 drift: {p5:.6f} vs 0.9259 (note table)"
+    assert abs(p5 - 0.6667) <= 5e-4, f"M5 drift: {p5:.6f} vs 0.6667 (note table)"
     assert abs(p3 - p1) <= 1e-9, f"M3 != M1 (closed form should match exactly)"
     print("PASS: comparator-independent (M1, M2, M4, M5) closed-form table "
           "matches the bounded internal record in the note.")
@@ -389,8 +395,8 @@ def driver() -> int:
     print(f"    M5 WC 1-loop        = {p5:.4f}  (gap "
           f"{abs(p5-P_MC_REFERENCE)/EPSILON_WITNESS:.0f}x eps)")
     print(f"    MC reference        = {P_MC_REFERENCE:.4f}")
-    print(f"  Verdict: 4 simpler closed-form paths explicitly ruled out;")
-    print(f"  L_s>=3 Wigner-Racah path remains the next exact-cube route.")
+    print(f"  Verdict: 4 simpler closed-form paths miss the comparator;")
+    print(f"  L_s>=3 Wigner-Racah remains a non-load-bearing planning candidate.")
 
     return 0 if fail_count == 0 else 1
 

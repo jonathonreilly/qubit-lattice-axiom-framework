@@ -5,14 +5,16 @@
 NUMERICAL VARIATIONAL COMPANION ON THE LATTICE HAMILTONIAN SURFACE
 ==========================================================================
 
-AXIOM 1: The physical local algebra is Cl(3).
-AXIOM 2: The spatial substrate is the cubic lattice Z³.
-Sources: MINIMAL_AXIOMS_2026-04-11.md
+Framework surface: current minimal Cl(3)/Z³ primitives plus the narrowed
+scalar graph-Laplacian and lattice Green-kernel dependency repair.
+Sources: MINIMAL_AXIOMS_2026-06-04.md;
+HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md;
+LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md.
 
 Steps 1–3: Same as hydrogen
 (`frontier_atomic_hydrogen_lattice_companion.py`).
-    H_free = -Δ_Z³   [DERIVED from Cl(3)]
-    V(r) = -g/|r|     [DERIVED from Z³ Green's function]
+    H_free = -Δ_Z³   [narrowed scalar graph-Laplacian surface]
+    V(r) = -g/|r|     [lattice Green-kernel repair]
 
 --------------------------------------------------------------------------
 STEP 4: TWO-BODY HAMILTONIAN  [extension, same kernel]
@@ -62,20 +64,31 @@ over all normalized φ ∈ l²(Z³) yields the self-consistency equation:
 
     [-Δ + V_nuc + V_H[φ]] φ = ε φ
 
-where V_H[φ](r) = ∫ |φ(r')|² / |r - r'| dr' (Hartree potential).
+where V_H[φ](r) = g_EM Σ_{r'} |φ(r')|² / max(|r - r'|, 0.5)
+(Hartree potential, using the same finite-box kernel as V_ee).
 
 This is the Hartree stationarity equation for the product-state ansatz on
 the lattice Hamiltonian surface. Mathematically it is the same variational
 structure used in standard atomic numerics; the point here is that it is
 applied to the already-retained lattice kinetic+kernel operator.
 
-Total energy from the variational ansatz:
+Density convention and total energy from the variational ansatz:
 
-    E_var = 2ε - E_J
+    ρ(r) = |φ(r)|²,        Σ_r ρ(r) = 1        (one-electron density)
+    V_H[ρ](r) = Σ_r' ρ(r') g_EM / max(|r-r'|, 0.5)
+    E_pair = Σ_r ρ(r) V_H[ρ](r)
+           = Σ_{r,r'} ρ(r)ρ(r') g_EM / max(|r-r'|, 0.5)
 
-where E_J = ⟨φ⊗φ | V_ee | φ⊗φ⟩ = (1/2) ∫ |φ|² V_H dr (Coulomb integral).
-The factor 2ε counts each electron's orbital energy; E_J is subtracted
-to correct the double-counting of the e-e interaction.
+`E_pair` is already the single unordered electron-electron pair integral
+for the product state φ(r₁)φ(r₂).  The familiar total-density Hartree
+factor 1/2 is not applied to this one-density expression; if n=2ρ is used
+instead, the same one-pair integral is (1/4)Σ_r n(r)V_H[n](r).
+
+    E_var = 2ε - E_pair
+
+where E_pair = ⟨φ⊗φ | V_ee | φ⊗φ⟩ = Σ_r |φ(r)|² V_H(r).
+The factor 2ε counts each electron's orbital energy; E_pair is
+subtracted once because 2ε counts the same electron-electron pair twice.
 
 This formula is DERIVED from the product-state ansatz, not postulated.
 
@@ -124,11 +137,11 @@ BLOCKERS:
 from __future__ import annotations
 
 import os
-import time
 
 import numpy as np
 from scipy import sparse
-from scipy.sparse.linalg import eigsh, spsolve
+from scipy.signal import fftconvolve
+from scipy.sparse.linalg import eigsh
 
 
 # ---------------------------------------------------------------------------
@@ -177,35 +190,79 @@ def solve_single_particle(T: sparse.csr_matrix,
 
 
 # ---------------------------------------------------------------------------
-# Poisson solver for Hartree potential (derived from V_ee = g_EM/|r₁-r₂|)
+# Direct finite-box Hartree potential (derived from V_ee = g_EM/|r₁-r₂|)
 # ---------------------------------------------------------------------------
 
 def solve_poisson_for_hartree(N: int, rho: np.ndarray,
                                T: sparse.csr_matrix,
                                g_em: float) -> np.ndarray:
-    """Solve (-Δ_Z³) V_H = 4π × g_EM × ρ for the Hartree potential.
+    """Build V_H(r)=Σ_r' rho(r') g_EM/max(|r-r'|, 0.5) by convolution.
 
-    Derivation: V_H(r) = g_EM ∫ ρ(r') / |r-r'| dr'
-    Taking (-Δ) of both sides and using (-Δ) G(r) = δ(r):
-        (-Δ) V_H = g_EM × 4π × ρ
-
-    This uses the same Z³ Green's function theorem as the nuclear term.
-    No new physics is introduced — V_ee and V_nuc use the same kernel.
-
-    The factor 4π comes from (-Δ) G(r) = δ(r) in 3D (G(r)=1/(4πr)).
+    The function name is kept for packet compatibility with the previous
+    audit surface, but the computation is now the direct finite-box Coulomb
+    kernel used by V_nuc and V_ee.  This removes the old normalization
+    ambiguity between a Dirichlet Poisson surrogate and the stated two-body
+    Hamiltonian.
     """
-    rhs = 4.0 * np.pi * g_em * rho
-    try:
-        V = spsolve(T.tocsc(), rhs)
-    except Exception:
-        from scipy.sparse.linalg import cg
-        V, _ = cg(T, rhs, maxiter=2000, tol=1e-8)
-    return V
+    _ = T  # The direct kernel fixes the finite-box operator convention.
+    rho_3d = rho.reshape(N, N, N)
+    offsets = np.arange(-(N - 1), N, dtype=float)
+    dx, dy, dz = np.meshgrid(offsets, offsets, offsets, indexing="ij")
+    r = np.sqrt(dx * dx + dy * dy + dz * dz)
+    kernel = g_em / np.maximum(r, 0.5)
+    return fftconvolve(rho_3d, kernel, mode="same").reshape(-1)
 
 
 def hartree_energy(rho: np.ndarray, V_H: np.ndarray) -> float:
-    """E_J = (1/2) sum_r ρ(r) V_H(r)  [Coulomb self-energy of the charge density]."""
-    return 0.5 * float(np.sum(rho * V_H))
+    """E_pair = sum_r rho(r) V_H(r), the one electron-electron pair integral."""
+    return float(np.sum(rho * V_H))
+
+
+def direct_pair_integral(N: int, rho: np.ndarray, g_em: float) -> float:
+    """Brute-force one-pair Coulomb integral for small-grid normalization checks."""
+    coords = np.array(np.unravel_index(np.arange(N**3), (N, N, N))).T
+    total = 0.0
+    for a, ra in enumerate(coords):
+        for b, rb in enumerate(coords):
+            dist = float(np.linalg.norm(ra - rb))
+            total += rho[a] * rho[b] * g_em / max(dist, 0.5)
+    return float(total)
+
+
+def pair_integral_normalization_certificate() -> dict[str, float]:
+    """Certify the one-density Hartree convention against direct summation.
+
+    The audit-relevant point is the factor of two: this runner uses
+    ρ=|φ|² with Σρ=1, so ΣρV_H[ρ] is the one electron-pair energy.  If a
+    total density n=2ρ is used, the equivalent expression is
+    (1/4)Σ n V_H[n], while the common (1/2)Σ n V_H[n] total-density
+    Hartree functional counts twice the single pair represented here.
+    """
+    N = 4
+    g_em = 0.5
+    raw = np.arange(1, N**3 + 1, dtype=float)
+    rho = raw / np.sum(raw)
+    T = build_graph_laplacian(N)
+
+    V_one = solve_poisson_for_hartree(N, rho, T, g_em)
+    one_density_pair = hartree_energy(rho, V_one)
+    direct_pair = direct_pair_integral(N, rho, g_em)
+
+    n_total = 2.0 * rho
+    V_total = solve_poisson_for_hartree(N, n_total, T, g_em)
+    quarter_total_density_form = 0.25 * float(np.sum(n_total * V_total))
+    half_total_density_form = 0.5 * float(np.sum(n_total * V_total))
+
+    return {
+        "N": float(N),
+        "g_em": g_em,
+        "one_density_pair": one_density_pair,
+        "direct_pair": direct_pair,
+        "quarter_total_density_form": quarter_total_density_form,
+        "half_total_density_form": half_total_density_form,
+        "direct_ratio": one_density_pair / direct_pair,
+        "half_total_to_pair": half_total_density_form / one_density_pair,
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -275,7 +332,7 @@ def helium_variational_scf(N: int,
     delta_rhos = []
 
     for iteration in range(max_iter):
-        # Step A: Poisson — compute V_H from current ρ
+        # Step A: compute V_H from the same finite-box Coulomb kernel as V_ee
         V_H_new = solve_poisson_for_hartree(N, rho, T, g_em)
 
         # Step B: Mix for stability
@@ -291,7 +348,7 @@ def helium_variational_scf(N: int,
         delta_rho = float(np.sqrt(np.sum((rho_new - rho)**2)))
         delta_rhos.append(delta_rho)
 
-        # Variational energy E_var = 2ε - E_J  (DERIVED from product ansatz)
+        # Variational energy E_var = 2ε - E_pair (DERIVED from product ansatz)
         eps = float(evals_new[0])
         E_J = hartree_energy(rho_new, V_H_mix)
         E_var = 2.0 * eps - E_J
@@ -305,7 +362,7 @@ def helium_variational_scf(N: int,
         })
 
         if iteration < 5 or (iteration + 1) % 10 == 0:
-            print(f"    iter {iteration+1:3d}: ε={eps:.5f}  E_J={E_J:.5f}  "
+            print(f"    iter {iteration+1:3d}: ε={eps:.5f}  E_pair={E_J:.5f}  "
                   f"E_var={E_var:.5f}  Δρ={delta_rho:.2e}")
 
         phi = phi_new
@@ -358,7 +415,7 @@ def run_experiment() -> None:
     log("  Coupling ratio: g_ee/g_nuc = 1/Z = 1/2  [exact, charge arithmetic]")
     log("  Variational ansatz: ψ(r₁,r₂) = φ(r₁)×φ(r₂)  [separable, not assumed]")
     log("  Stationarity → Hartree equation  [DERIVED, not imported]")
-    log("  E_var = 2ε - E_J  [DERIVED from product ansatz]")
+    log("  E_var = 2ε - E_pair  [DERIVED from product ansatz]")
     log()
 
     # ------------------------------------------------------------------
@@ -397,13 +454,11 @@ def run_experiment() -> None:
     log("─" * 60)
     log()
 
-    t0 = time.time()
     hep = solve_he_plus(N, G_NUC)
-    dt = time.time() - t0
     log(f"  E₁(He⁺) lattice:   {hep['E1_lat']:.6f}  [lattice spectral units]")
     log(f"  E₁(He⁺) continuum: {hep['E1_exact_continuum']:.6f}  [= -g_nuc²/4]")
     log(f"  Lattice error: {hep['error_pct']:+.3f}%")
-    log(f"  Time: {dt:.1f}s")
+    log("  Compute timing: omitted from audit cache for deterministic replay.")
     log()
     log("  Note: E₁(He⁺) = -g_nuc²/4 = -Z² × (g_EM²/4) = -Z² × E₀(H)")
     log("  → He⁺ binds Z² times more than H. This is the scaling prediction.")
@@ -419,16 +474,15 @@ def run_experiment() -> None:
     log("  Minimizing E[φ] = ⟨φ⊗φ | H₂ | φ⊗φ⟩ over separable φ.")
     log(f"  Building Laplacian ({N}³ = {N**3} sites) ...")
 
-    t0 = time.time()
     he = helium_variational_scf(N, G_NUC, G_EM, max_iter=60, tol=1e-6, mix=0.5)
-    dt = time.time() - t0
+    norm = pair_integral_normalization_certificate()
     log()
     log(f"  Variational result:")
     log(f"    SCF orbital energy: ε   = {he['eps']:.6f}")
-    log(f"    Coulomb integral:   E_J = {he['E_J']:.6f}")
-    log(f"    Variational energy: E_var = 2ε - E_J = {he['E_var']:.6f}")
+    log(f"    Coulomb pair integral: E_pair = {he['E_J']:.6f}")
+    log(f"    Variational energy: E_var = 2ε - E_pair = {he['E_var']:.6f}")
     log(f"    Iterations: {he['n_iter']},  converged: {he['converged']}")
-    log(f"    Time: {dt:.1f}s")
+    log("    Compute timing: omitted from audit cache for deterministic replay.")
     log()
 
     # ------------------------------------------------------------------
@@ -462,7 +516,7 @@ def run_experiment() -> None:
     log()
     log(f"  Dimensionless ratios (pure Z³-geometry predictions):")
     log(f"    |E(He)| / |E(He⁺)|  = {ratio_he_heplus:.5f}")
-    log(f"    Variational bound:    ≥ 1.424  (Hartree target)")
+    log(f"    Hartree checkpoint:   ~1.424")
     log(f"    Historical (full CI):   1.452  (upper checkpoint)")
     log()
     log(f"    IE₁ / IE₂ = {ratio_IE1_IE2:.5f}")
@@ -477,11 +531,20 @@ def run_experiment() -> None:
     log("─" * 60)
     log()
     log("  From the product-state ansatz (DERIVED, not assumed):")
-    log("    E_var = 2ε - E_J")
+    log("    ρ = |φ|² is a one-electron density with Σρ = 1")
+    log("    E_pair = Σρ V_H[ρ] = Σρ(r)ρ(r') g_EM/max(|r-r'|, 0.5)")
+    log("    E_var = 2ε - E_pair")
     log()
     log(f"    2ε  = {2*he['eps']:.5f}  [two orbital energies, each includes V_H]")
-    log(f"    E_J = {he['E_J']:.5f}   [Coulomb integral; double-counting removed]")
+    log(f"    E_pair = {he['E_J']:.5f}   [one e-e pair integral; double-counting removed]")
     log(f"    E_var = {he['E_var']:.5f}")
+    log()
+    log("  Normalization guard (small-grid direct certificate):")
+    log(f"    pair_norm_direct_ratio={norm['direct_ratio']:.6f}")
+    log(f"    one_density_pair={norm['one_density_pair']:.12f}")
+    log(f"    direct_pair={norm['direct_pair']:.12f}")
+    log(f"    quarter_total_density_form={norm['quarter_total_density_form']:.12f}")
+    log(f"    half_total_to_pair={norm['half_total_to_pair']:.6f}  [total-density 1/2 form counts two pairs here]")
     log()
     log("  Independent-electron limit (no e-e, same g_nuc):")
     log(f"    E_indep = 2 × E₁(He⁺) = {2*E_heplus:.5f}")
@@ -495,7 +558,7 @@ def run_experiment() -> None:
     log("STEP 6: SCF convergence history")
     log("─" * 60)
     log()
-    log(f"  {'Iter':>5}  {'ε':>10}  {'E_J':>9}  {'E_var':>10}  {'Δρ':>9}")
+    log(f"  {'Iter':>5}  {'ε':>10}  {'E_pair':>9}  {'E_var':>10}  {'Δρ':>9}")
     log("  " + "─" * 46)
     for h in he["history"][:10]:
         log(f"  {h['iter']:5d}  {h['eps']:10.5f}  {h['E_J']:9.5f}  "
@@ -544,7 +607,7 @@ def run_experiment() -> None:
     log("  DERIVATION STATUS:")
     log("  ✓ H₂ = H_1 + H_2 + V_ee follows from Z³ axioms (same Green's function)")
     log("  ✓ Hartree equation derived as stationarity of E[φ] (variational math)")
-    log("  ✓ E_var = 2ε - E_J derived from product-state ansatz")
+    log("  ✓ E_var = 2ε - E_pair derived from product-state ansatz")
     log("  ✓ Coupling ratio g_ee/g_nuc = 1/Z follows from charge arithmetic")
     log("  ✓ Helium is bound: E_var < E(He⁺)  (IE₁ > 0)")
     log()
@@ -559,14 +622,73 @@ def run_experiment() -> None:
     log(f"  IE₁/IE₂           = {ratio_IE1_IE2:.4f}  vs Hartree ~0.424")
     log("=" * 72)
 
+    audit_checks = [
+        (
+            "hartree_he2plus_identity",
+            abs(E_he2plus) < 1e-12,
+            f"E_he2plus={E_he2plus:.6f}",
+        ),
+        (
+            "hartree_heplus_finite_box_row",
+            abs(E_heplus / E0 - (-3.7908)) < 5e-4,
+            f"E_heplus_over_E0={E_heplus / E0:.4f}",
+        ),
+        (
+            "hartree_helium_bound_product_state",
+            E_he < E_heplus,
+            f"E_he={E_he:.6f}, E_heplus={E_heplus:.6f}",
+        ),
+        (
+            "hartree_ratio_pin",
+            abs(ratio_he_heplus - 1.43102) < 5e-5,
+            f"ratio={ratio_he_heplus:.5f}",
+        ),
+        (
+            "hartree_ie_ratio_pin",
+            abs(ratio_IE1_IE2 - 0.43102) < 5e-5,
+            f"ratio_IE1_IE2={ratio_IE1_IE2:.5f}",
+        ),
+        (
+            "hartree_scf_converged",
+            bool(he["converged"]),
+            f"iterations={he['n_iter']}",
+        ),
+        (
+            "hartree_pair_integral_direct_normalization",
+            abs(norm["one_density_pair"] - norm["direct_pair"]) < 1e-12,
+            f"pair_norm_direct_ratio={norm['direct_ratio']:.6f}",
+        ),
+        (
+            "hartree_total_density_conversion_guard",
+            abs(norm["quarter_total_density_form"] - norm["one_density_pair"]) < 1e-12
+            and abs(norm["half_total_to_pair"] - 2.0) < 1e-12,
+            f"quarter_total={norm['quarter_total_density_form']:.12f}, "
+            f"half_total_to_pair={norm['half_total_to_pair']:.6f}",
+        ),
+    ]
+    pass_count = 0
+    fail_count = 0
+    log()
+    log("AUDIT CHECK SUMMARY")
+    for name, ok, detail in audit_checks:
+        if ok:
+            pass_count += 1
+            log(f"PASS: {name} -- {detail}")
+        else:
+            fail_count += 1
+            log(f"FAIL: {name} -- {detail}")
+    total_line = f"TOTAL: PASS={pass_count}, FAIL={fail_count}"
+
     os.makedirs("logs", exist_ok=True)
-    log_path = f"logs/{time.strftime('%Y-%m-%d')}-atomic_helium_hartree_companion.txt"
+    log_path = "logs/frontier_atomic_helium_hartree_companion.latest.txt"
     try:
         with open(log_path, "w") as f:
-            f.write("\n".join(LOG))
-        print(f"\nLog saved to: {log_path}")
-    except Exception as e:
-        print(f"  (Could not write log: {e})")
+            f.write("\n".join(LOG + [total_line]) + "\n")
+    except Exception:
+        pass
+    print(total_line)
+    if fail_count:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

@@ -7,7 +7,7 @@
     },
     {
       "detail": "scripts/frontier_beta6_connected_coefficient_2026_05_30.py",
-      "name": "note_links:primary_runner",
+      "name": "d7_note_links:primary_runner",
       "ok": true
     },
     {
@@ -17,7 +17,7 @@
     },
     {
       "detail": "scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py",
-      "name": "note_links:maxorder7_runner",
+      "name": "d7_note_links:maxorder7_runner",
       "ok": true
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "detail": "logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt",
-      "name": "note_links:maxorder7_cache",
+      "name": "d7_note_links:maxorder7_cache",
       "ok": true
     },
     {
@@ -37,7 +37,7 @@
     },
     {
       "detail": "scripts/frontier_beta6_d9_coefficient_2026_06_04.py",
-      "name": "note_links:d9_runner",
+      "name": "d7_note_links:d9_runner",
       "ok": true
     },
     {
@@ -47,7 +47,7 @@
     },
     {
       "detail": "logs/runner-cache/frontier_beta6_d9_coefficient_2026_06_04.txt",
-      "name": "note_links:d9_cache",
+      "name": "d7_note_links:d9_cache",
       "ok": true
     },
     {
@@ -57,17 +57,87 @@
     },
     {
       "detail": "scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py",
-      "name": "note_links:manifest_runner",
+      "name": "d7_note_links:manifest_runner",
       "ok": true
     },
     {
       "detail": "logs/runner-cache/frontier_beta6_d7_source_packet_manifest_2026_06_05.txt",
-      "name": "note_links:manifest_cache",
+      "name": "d7_note_links:manifest_cache",
       "ok": true
     },
     {
       "detail": "outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json",
-      "name": "note_links:manifest_json",
+      "name": "d7_note_links:manifest_json",
+      "ok": true
+    },
+    {
+      "detail": "scripts/frontier_beta6_connected_coefficient_2026_05_30.py",
+      "name": "connected_note_links:primary_runner",
+      "ok": true
+    },
+    {
+      "detail": "scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py",
+      "name": "connected_note_links:maxorder7_runner",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt",
+      "name": "connected_note_links:maxorder7_cache",
+      "ok": true
+    },
+    {
+      "detail": "scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py",
+      "name": "connected_note_links:manifest_runner",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/frontier_beta6_d7_source_packet_manifest_2026_06_05.txt",
+      "name": "connected_note_links:manifest_cache",
+      "ok": true
+    },
+    {
+      "detail": "outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json",
+      "name": "connected_note_links:manifest_json",
+      "ok": true
+    },
+    {
+      "detail": "docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md",
+      "name": "connected_note_links:d7_companion_note",
+      "ok": true
+    },
+    {
+      "detail": "d_7 = 5 / 17006112",
+      "name": "connected_note_marker:d_7 = 5 / 17006112",
+      "ok": true
+    },
+    {
+      "detail": "d_7 / d_6 = 5/21",
+      "name": "connected_note_marker:d_7 / d_6 = 5/21",
+      "ok": true
+    },
+    {
+      "detail": "completed maxorder-7 packet",
+      "name": "connected_note_marker:completed maxorder-7 packet",
+      "ok": true
+    },
+    {
+      "detail": "full untruncated source runner",
+      "name": "connected_note_marker:full untruncated source runner",
+      "ok": true
+    },
+    {
+      "detail": "SCORECARD: PASS=22 FAIL=0",
+      "name": "connected_note_marker:SCORECARD: PASS=22 FAIL=0",
+      "ok": true
+    },
+    {
+      "detail": "SUMMARY: BETA6 D7 SOURCE PACKET PASS=53 FAIL=0",
+      "name": "connected_note_marker:SUMMARY: BETA6 D7 SOURCE PACKET PASS=53 FAIL=0",
+      "ok": true
+    },
+    {
+      "detail": "beta=6 closure problem remains open",
+      "name": "connected_note_marker:beta=6 closure problem remains open",
       "ok": true
     },
     {
@@ -121,7 +191,7 @@
       "ok": true
     },
     {
-      "detail": "aebfcc8711b77c4f7e170eff9b7002354b519c87b29b0f5daa28f62ac9f5bcf0 == aebfcc8711b77c4f7e170eff9b7002354b519c87b29b0f5daa28f62ac9f5bcf0",
+      "detail": "0dd340b81de3f925eba1dd917522913cec4c99ff3250f84c88af3ffb19237dfb == 0dd340b81de3f925eba1dd917522913cec4c99ff3250f84c88af3ffb19237dfb",
       "name": "cache_sha_fresh:maxorder7_cache",
       "ok": true
     },
@@ -148,6 +218,11 @@
     {
       "detail": "delegated_argv: 7",
       "name": "maxorder7_cache_snippet:delegated_argv: 7",
+      "ok": true
+    },
+    {
+      "detail": "primary_runner_sha256: dc6319dffac36c4fea8b4b1a33c364325859106606a924f1b85893e57b10635e",
+      "name": "maxorder7_cache_snippet:primary_runner_sha256: dc6319dffac36c4fea8b4b1a33c364325859106606a924f1b85893e57b10635e",
       "ok": true
     },
     {
@@ -192,5 +267,5 @@
     }
   ],
   "fail": 0,
-  "pass": 38
+  "pass": 53
 }

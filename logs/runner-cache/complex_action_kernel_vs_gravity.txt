@@ -1,11 +1,73 @@
 ===== runner cache v1 =====
 runner: scripts/complex_action_kernel_vs_gravity.py
-runner_sha256: efefb0323b31e07da1b08a5edc68ccf2b83a847d785c8b920ac44f23ae4cc85b
-timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.01
-status: timeout
+runner_sha256: bde1bb69a44750c46001f01762a51581c39d5f0b46e2b2de7709f762e6a49ae8
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 83.72
+status: ok
 ----- stdout -----
+===========================================================================
+COMPLEX ACTION: LOCAL KERNEL DAMPING vs DETECTOR ESCAPE
+drift=0.2, restore=0.7
+===========================================================================
+
+FIELD: ZERO
+   gamma toward/2     avg_defl    avg_esc
+  ------------------------------------------
+     0.0      0/2  +0.0000e+00A     1.0000
+     0.1      0/2  +0.0000e+00A     1.0000
+     0.2      0/2  +0.0000e+00A     1.0000
+     0.5      0/2  +0.0000e+00A     1.0000
+
+FIELD: UNIFORM (f=0.005)
+   gamma toward/2     avg_defl    avg_esc
+  ------------------------------------------
+     0.0      1/2  -8.9684e-04A     1.2043
+     0.1      1/2  -8.0419e-04A     1.1065
+     0.2      1/2  -7.1166e-04A     1.0167
+     0.5      1/2  -4.3482e-04A     0.7888
+
+FIELD: UNIFORM (f=0.01)
+   gamma toward/2     avg_defl    avg_esc
+  ------------------------------------------
+     0.0      1/2  -1.8192e-03A     1.4503
+     0.1      1/2  -1.6477e-03A     1.2245
+     0.2      1/2  -1.4752e-03A     1.0340
+     0.5      1/2  -9.5182e-04A     0.6229
+
+FIELD: GRAVITY (s=0.004)
+   gamma toward/2     avg_defl    avg_esc
+  ------------------------------------------
+     0.0      2/2  +1.0718e-02T     1.0299
+     0.1      1/2  +3.0794e-03T     1.0157
+     0.2      0/2  -4.5317e-03A     1.0017
+     0.5      0/2  -2.7203e-02A     0.9608
+
+SEPARATION OF EFFECTS
+
+  LOCAL KERNEL DAMPING:
+    exp(-k*gamma*L*f_ij) < 1 for each link with f_ij > 0 and gamma > 0
+    this is local link attenuation, not a detector-escape theorem
+
+  DETECTOR ESCAPE (tested finite setup):
+    gamma=0.5 suppresses total detector escape for the tested nonzero fields
+    gamma=0.1 and gamma=0.2 do not uniformly suppress total detector escape
+
+  GRAVITY-SPECIFIC (deflection TOWARD -> AWAY):
+    tested 1/r field flips TOWARD at gamma=0 to AWAY by gamma=0.2
+    uniform controls do not show that crossover
+    mechanism: 1/r gradient couples to beam centroid
+
+BOUNDARY CHECKS
+PASS: local attenuation factor is below one for f>0 and gamma>0 -- exp(-5*0.1*1*0.005)=0.997503122397
+PASS: zero field leaves detector escape and centroid unchanged
+PASS: gamma=0.5 suppresses detector escape for all tested nonzero fields -- UNIFORM (f=0.005): 0.7888, UNIFORM (f=0.01): 0.6229, GRAVITY (s=0.004): 0.9608
+PASS: small-gamma detector-escape overclaim is explicitly blocked -- UNIFORM (f=0.005)@0.1: 1.1065, UNIFORM (f=0.005)@0.2: 1.0167, UNIFORM (f=0.01)@0.1: 1.2245, UNIFORM (f=0.01)@0.2: 1.0340, GRAVITY (s=0.004)@0.1: 1.0157, GRAVITY (s=0.004)@0.2: 1.0017
+PASS: tested gravity field has TOWARD -> AWAY centroid crossover by gamma=0.2
+PASS: uniform controls do not carry the gravity centroid crossover
+PASS: archived note states the narrowed boundary
+TOTAL: PASS=7 FAIL=0
+VERDICT: THRESHOLDED DETECTOR-ESCAPE BOUNDARY VERIFIED
 
 ----- stderr -----
 

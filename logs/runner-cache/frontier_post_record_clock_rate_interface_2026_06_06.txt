@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_clock_rate_interface_2026_06_06.py
+runner_sha256: bb702d32ae1c2cc2e126aade786d616f63555b883f4d32171e5c66b42117f7f3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md contains: actual_current_surface_status: no-go
+PASS docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md contains: trace_class: negative_route_pruning
+PASS docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md contains: post-record word/count stream
+PASS docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md contains: Without the supplied `tau`
+PASS docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md contains: Does not select a generation or Koide dial location.
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md exists
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: transition rates or a time metric
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: Does not derive a time metric or clock rate
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: finite suffix append is a right monoid action
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md exists
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md contains: append-only finite-history sector
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md contains: Does not introduce a time metric or clock rate
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md contains: Rows that need record-production dynamics
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md exists
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: post-record information dynamics
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: a clock/time metric
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: probabilities/rates/time
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: exact post-record dynamics has no edge to production, probabilities, rates
+
+------------------------------------------------------------------------------
+Event-indexed post-record structure
+------------------------------------------------------------------------------
+PASS prefix list has n+1 event-index states
+PASS event indices are determined by prefix length
+PASS old records are prefix-preserved at every event index
+PASS final count vector is determined by word :: (2, 1, 1)
+PASS event order is not a physical elapsed-time value
+
+------------------------------------------------------------------------------
+Clock/rate non-uniqueness
+------------------------------------------------------------------------------
+PASS all candidate clocks are strict maps on the same event indices
+PASS all clocks preserve the same word
+PASS all clocks preserve the same counts
+PASS same word has different total rates under different clocks :: {'uniform': Fraction(1, 1), 'slow': Fraction(1, 2), 'accelerating': Fraction(2, 5)}
+PASS nonuniform clock has nonconstant interval rates :: (Fraction(1, 1), Fraction(1, 2), Fraction(1, 3), Fraction(1, 4))
+PASS affine clock rescaling changes rates but not word/count
+PASS per-letter rates depend on supplied elapsed time :: (Fraction(1, 2), Fraction(1, 4), Fraction(1, 4)) vs (Fraction(1, 4), Fraction(1, 8), Fraction(1, 8))
+
+------------------------------------------------------------------------------
+Supplied-clock interface
+------------------------------------------------------------------------------
+PASS durations are derived after clock is supplied :: (Fraction(1, 1), Fraction(2, 1), Fraction(3, 1), Fraction(4, 1))
+PASS interval rates are derived after clock is supplied :: (Fraction(1, 1), Fraction(1, 2), Fraction(1, 3), Fraction(1, 4))
+PASS total event rate is derived after clock is supplied
+PASS letter rates are derived after clock is supplied
+PASS count-alone clock derivation flag is false
+PASS count-alone transition-rate derivation flag is false
+PASS count-alone Hamiltonian/transfer selection flag is false
+PASS count-alone Born/probability selection flag is false
+PASS count-alone generation/Koide dial selection flag is false
+
+SUMMARY: PASS=40 FAIL=0
+POST_RECORD_COUNTS_DERIVE_CLOCK_OR_RATE=FALSE
+SUPPLIED_CLOCK_GIVES_CONDITIONAL_RATES=TRUE
+HAMILTONIAN_OR_TRANSFER_SELECTED=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/frontier_slow_variables_derived_one_body_closure_2026_06_09.py
+runner_sha256: 140214f71ee3087b2ce4d3a044c928efb352372cf13c92bbb2be7ebdb82f3ff1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  (T1) operator-level closure of the one-body bilinears (state-independent)
+==============================================================================
+  [PASS] Heisenberg flow of a_i^dag a_j stays EXACTLY in the bilinear span (4 representative pairs, full 64-dim Fock space)  (max dev 4.5e-16 -- closure is operator-level, state-independent)
+  [PASS] G(t) = conj(W) G(0) W^T on a NON-GAUSSIAN state (the derived convention; exact)  (max dev 1.8e-16)
+==============================================================================
+Part 2  (T2) record channels preserve the closure (exact one-body rules, non-Gaussian)
+==============================================================================
+  [PASS] I-A (occupation dephasing): G -> (1-lam) G + lam diag(G) EXACTLY on a non-Gaussian state (the closure survives the record step)  (max dev 5.6e-17)
+   (I-B site-pinching Lueders: same structure; exact one-body rules established in
+    the record-instrument source note with Fock-anchored checks to 6e-17 -- cited,
+    not re-proven.)
+==============================================================================
+Part 3  (T3) U_eff = polar(G_xy): a nonlinear coordinate; Sylvester law re-derived
+==============================================================================
+  [PASS] K=3 Slater: the cross block G_xy is full-rank (the PR #3398 precondition)
+  [PASS] the induced-trajectory Sylvester law evaluated ON THE TRUE G-flow generator: dU_eff/dt = U*Omega matches the finite difference of the ACTUAL evolution  (max dev 1.5e-05)
+  [PASS] CONTROL: a wrong generator (reversed arrow) FAILS the same test (the check has discriminating power; not generator-circular)  (wrong-generator dev 5.1e+00)
+  [PASS] the cross-block (U,Q)~M alone does NOT close: same G_xy, different diagonal blocks => different dG_xy (the registered route's chosen set is insufficient; only the FULL one-body G closes)  (dG_xy difference 0.691)
+   => the induced-trajectory non-autonomy = COORDINATE non-autonomy:
+      U_eff (and even (U,Q))
+      discards G data that the closed derived flow carries; the link acquires NO
+      autonomous law (consistent with the campaign's vacuous-link-generator result).
+==============================================================================
+Part 4  (T4) teeth: a non-quadratic (quartic) term breaks the one-body closure
+==============================================================================
+  [PASS] with a quartic term, a_0^dag a_3 (t) LEAVES the bilinear span (closure broken: residual O(1)) -- the closure is a property of the named quadratic hopping  (projection residual 0.232)
+==============================================================================
+TOTAL: PASS=8 FAIL=0
+==============================================================================
+SCOPE (retire-mode): the route-(i) 'added slow variables' promotion premise is
+  retired as a source proposal -- the closing variable set is DERIVED, not admitted:
+  the one-body bilinear algebra closes under the named quadratic hopping at the
+  OPERATOR level (state-independent), the campaign's record channels act by exact
+  one-body rules (closure survives), and the composite link is a nonlinear lossy
+  COORDINATE of this closed flow (the induced-trajectory Sylvester law is
+  re-derived from it; its non-autonomy = coordinate non-autonomy).  A quartic
+  term breaks the closure --
+  the result is conditional on the named quadratic generator (realization gate a
+  separate lane) + the supplied C^3 carrier.  Does NOT touch the pointer-frame
+  admission {P_r} or the stratification theorem; the audit lane grades status.
+
+----- stderr -----
+

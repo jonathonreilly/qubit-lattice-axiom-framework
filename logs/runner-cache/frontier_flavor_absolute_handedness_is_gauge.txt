@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/frontier_flavor_absolute_handedness_is_gauge.py
+runner_sha256: 69a290602e5eb964fbd43f6ea44aeef84fa6faacaf4170becb84cf8419f05c90
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.37
+status: ok
+----- stdout -----
+PASS: M_same_mass_multiset_at_plus_minus_delta sorted masses identical: True
+PASS: M_sqrt_m_minus_delta_is_relabeled_plus_delta sqrt m_k(-d) = sqrt m_{-k}(+d) (R-relabeling)
+PASS: S_S3_has_3_reflections_3_rotations |transpositions|=3 (sgn -1), |A_3|=3 (sgn +1)
+PASS: S_transposition_R_flips_sign_Vand sign Vand -> -1 under R
+PASS: S_R_unbroken_parent_source_named source note names the staggered S3 parent for unbroken R
+PASS: G_sign_Vand_is_S3_sign_rep odd under all 3 transpositions, even under A_3 -> the sign rep
+PASS: G_absolute_handedness_is_gauge odd under an unbroken physical symmetry (R) => not gauge-invariant => GAUGE
+PASS: P_magnitude_is_S3_invariant |Vand| same at +/-delta: 0.046748
+PASS: P_relative_orientation_R_invariant sign(V1)*sign(V2)=+1 = under R-on-both +1 (invariant candidate only)
+PASS: P_operator_side_L312_identity_is_2_9 L_3(1,2)=0.222222; physical readout bridge is not checked here
+PASS: number_three_is_separate the NUMBER 3 = triplet dimension (separate from the gauge orientation)
+PASS: firewall_cone_Q_two_thirds max|Q-2/3|=5.55e-16
+PASS: C_comparator_delta_pdg delta_PDG=0.222230
+PASS: B_note_title_is_gauge_only_boundary title records gauge theorem plus open readouts
+PASS: B_physical_2_9_readout_left_open 2/9 physical readout bridge left open
+PASS: B_relative_orientation_CP_bridge_left_open relative orientation CP/mixing bridge left open
+PASS: B_no_stale_physical_survivor_overclaim_phrases stale physical-survivor promotion phrases absent
+
+TOTAL: PASS=17 FAIL=0
+VERDICT: the ABSOLUTE flavor handedness sign(Delta) is GAUGE -- it is odd under the orientation-reversing transposition R, an UNBROKEN physical symmetry of the staggered kinematics (retained full S_3), and +delta/-delta are the same masses R-relabeled. The runner also checks invariant survivors -- |Delta| and relative sign -- only as candidates whose physical readout bridges remain open. The handedness residual is RESOLVED as gauge; the number 3 and the r=1/2 cone are separate/untouched.
+
+----- stderr -----
+

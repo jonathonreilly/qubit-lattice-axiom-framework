@@ -1,29 +1,40 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py
-runner_sha256: ea70be3efbe95b445112a5dc3972029c70f8469120cec88bcdfce471a43496c6
+runner_sha256: 7776770a90e0ebb47fb29e7d51fb206a56b5d3a17268ab012736b897ba986b77
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ========================================================================
-DM eta conditional support from supplied N_sites · v premise
+DM eta open-gate conditional arithmetic certificate
 ========================================================================
 
 Section 1: chain authority audits
 ------------------------------------------------------------------------
 [PASS] Note exists at expected path  --  DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md
-[PASS] Note claim type is bounded support note
-[PASS] Note type is conditional / support
-[PASS] Old bounded_theorem header is absent
+[PASS] Note claim type is open_gate conditional-support certificate
+[PASS] Note type is open_gate / conditional-support
+[PASS] Old bounded theorem claim-type headers are absent
 [PASS] Note status authority is independent audit lane only
-[PASS] Note records conditional support over supplied premise packet
+[PASS] Note records conditional support over the P_DM_ETA input packet
+[PASS] Note records 2026-06-18 open-gate source-scope repair
+[PASS] Source-scope certificate marks actual current surface open
+[PASS] Source-scope certificate forbids retained proposal language
+[PASS] Note records 2026-06-12 P5 retained-input repair
+[PASS] Note records 2026-06-16 post-audit residual certificate
+[PASS] Post-audit certificate keeps P1-P4 and P6-P7 as live residuals
+[PASS] Post-audit certificate keeps eta_obs comparator-only
+[PASS] Note records 2026-06-16 BBN coefficient precision repair
+[PASS] BBN precision repair uses precise local P3 factor
+[PASS] Note records 2026-06-07 source-boundary repair
+[PASS] Note records P_DM_ETA packet
+[PASS] P_DM_ETA records P5 as retained_bounded finite-inventory authority
+[PASS] Source cites retained_bounded SM finite-inventory authority for P5
+[PASS] Source no longer says g_* = 106.75 is supplied as P5
+[PASS] Note records corrected exact central R ratio 1643/300
+[PASS] Old central R display 5.4811 is absent
 [PASS] Note omits source-side status control phrase: source-note proposal only
-[PASS] Note omits source-side status control phrase: actual_current_surface_status
-[PASS] Note omits source-side status control phrase: conditional_surface_status
-[PASS] Note omits source-side status control phrase: proposal_allowed
-[PASS] Note omits source-side status control phrase: audit_required_before_effective_retained
-[PASS] Note omits source-side status control phrase: bare_retained_allowed
 [PASS] R_base authority exists  --  R_BASE_GROUP_THEORY_DERIVATION authority
 [PASS] R_base = 31/9 stated in authority
 [PASS] eta_188 authority exists  --  ETA_188_STRUCTURAL_ORIGIN authority
@@ -47,40 +58,41 @@ Section 3: structural composed product P2: m_DM = N_sites · v
 [PASS] N_sites = 2^d with d = 4 gives N_sites = 16
 [PASS] v VEV value 246.282818290129 GeV (composed input)
 [PASS] m_DM = N_sites · v evaluates to ≈ 3940.5 GeV  --  computed 3940.5251 GeV
-[PASS] m_DM ≈ 3.94 TeV (falsifiable single-mass readout)  --  computed 3.941 TeV
-[PASS] Note records the falsifiable readout `m_DM ~ 3.94 TeV`
+[PASS] m_DM ≈ 3.94 TeV (supplied single-mass readout)  --  computed 3.941 TeV
+[PASS] Note records the supplied readout `m_DM ~ 3.94 TeV`
 
 Section 4: freeze-out-bypass identity arithmetic (M0)
 ------------------------------------------------------------------------
 [PASS] Canonical plaquette 0.5934 used as cited surface
 [PASS] u_0 = <P>^(1/4) ≈ 0.8777  --  computed 0.877681
 [PASS] alpha_LM = (1/(4π))/u_0 ≈ 0.09067  --  computed 0.090668
-[PASS] R(central) = R_base * 1.59 ≈ 5.481  --  computed 5.4767
-[PASS] C(central) ≈ 4.108e-17 GeV^-2  --  computed 4.1077e-17
+[PASS] R(central) = (31/9) * 1.59 = 1643/300 exactly  --  computed 1643/300
+[PASS] R(central) float ≈ 5.4767  --  computed 5.4767
+[PASS] C(central) ≈ 4.106e-17 GeV^-2  --  computed 4.1060e-17
 
 Section 5: central evaluation eta_pred(central)
 ------------------------------------------------------------------------
-[PASS] eta_pred(central) ≈ 6.38e-10  --  computed 6.3783e-10
-[PASS] Central deviation ≈ +4.22% vs eta_obs  --  computed +4.220%
+[PASS] eta_pred(central) ≈ 6.38e-10  --  computed 6.3756e-10
+[PASS] Central deviation ≈ +4.18% vs eta_obs  --  computed +4.177%
 
-Section 6: bounded band over (x_F, S_vis/S_dark) rectangle
+Section 6: conditional band over (x_F, S_vis/S_dark) rectangle
 ------------------------------------------------------------------------
-[PASS] grid (M0) (22.0, 1.7) -> 5.25e-10  --  computed 5.250e-10
-[PASS] grid (M0) (22.0, 1.59) -> 5.61e-10  --  computed 5.613e-10
-[PASS] grid (M0) (22.0, 1.4) -> 6.38e-10  --  computed 6.375e-10
-[PASS] grid (M0) (25.0, 1.7) -> 5.97e-10  --  computed 5.966e-10
-[PASS] grid (M0) (25.0, 1.59) -> 6.38e-10  --  computed 6.378e-10
-[PASS] grid (M0) (25.0, 1.4) -> 7.24e-10  --  computed 7.244e-10
-[PASS] grid (M0) (28.0, 1.59) -> 7.14e-10  --  computed 7.144e-10
-[PASS] grid (M0) (28.0, 1.4) -> 8.11e-10  --  computed 8.113e-10
-[PASS] Bounded band low corner (x_F=22, S=1.7) ≈ 5.25e-10  --  computed 5.250e-10
-[PASS] Bounded band high corner (x_F=28, S=1.4) ≈ 8.10e-10  --  computed 8.113e-10
+[PASS] grid (M0) (22.0, 1.7) -> 5.25e-10  --  computed 5.248e-10
+[PASS] grid (M0) (22.0, 1.59) -> 5.61e-10  --  computed 5.611e-10
+[PASS] grid (M0) (22.0, 1.4) -> 6.37e-10  --  computed 6.372e-10
+[PASS] grid (M0) (25.0, 1.7) -> 5.96e-10  --  computed 5.963e-10
+[PASS] grid (M0) (25.0, 1.59) -> 6.38e-10  --  computed 6.376e-10
+[PASS] grid (M0) (25.0, 1.4) -> 7.24e-10  --  computed 7.241e-10
+[PASS] grid (M0) (28.0, 1.59) -> 7.14e-10  --  computed 7.141e-10
+[PASS] grid (M0) (28.0, 1.4) -> 8.11e-10  --  computed 8.110e-10
+[PASS] Conditional band low corner (x_F=22, S=1.7) ≈ 5.25e-10  --  computed 5.248e-10
+[PASS] Conditional band high corner (x_F=28, S=1.4) ≈ 8.11e-10  --  computed 8.110e-10
 [PASS] Note records direct lower band 5.25e-10
 [PASS] Note records direct upper band 8.11e-10
 [PASS] Note records inherited audit-companion interval as context only
 [PASS] Bracketing (direct fixed-alpha band): low <= eta_obs <= high
-[PASS] (M0) low corner equals (22, 1.7) ≈ 5.25e-10  --  computed 5.250e-10
-[PASS] (M0) high corner equals (28, 1.4) ≈ 8.11e-10  --  computed 8.113e-10
+[PASS] (M0) low corner equals (22, 1.7) ≈ 5.25e-10  --  computed 5.248e-10
+[PASS] (M0) high corner equals (28, 1.4) ≈ 8.11e-10  --  computed 8.110e-10
 
 Section 7: cross-check vs ETA_188 structural decomposition
 ------------------------------------------------------------------------
@@ -89,7 +101,7 @@ Section 7: cross-check vs ETA_188 structural decomposition
 [PASS] g_S = 43/11 (CMB DOF today)
 [PASS] C_sph = 28/79 (sphaleron conversion)
 
-Section 8: note-text records named premise packet P1-P7
+Section 8: note-text records named local input packet P1-P7
 ------------------------------------------------------------------------
 [PASS] Note records named premise P1 freeze-out-bypass identity
 [PASS] Note records named premise P2 structural mass candidate
@@ -103,6 +115,7 @@ Section 9: note-text records audit-companion vs load-bearing classification
 ------------------------------------------------------------------------
 [PASS] Note lists R_base authority under load-bearing dependencies
 [PASS] Note lists eta_188 authority under load-bearing dependencies
+[PASS] Note lists retained_bounded SM_RELATIVISTIC_DOF authority under load-bearing dependencies
 [PASS] Note lists DM_ETA_FREEZEOUT_BYPASS as audit-companion (not retained)
 [PASS] Note lists DM_ETA_NSITES_V_LIFT as audit-companion (not retained)
 [PASS] Note lists HIGGS_MASS_FROM_AXIOM as audit-companion (not retained)
@@ -112,16 +125,14 @@ Section 9: note-text records audit-companion vs load-bearing classification
 Section 10: status discipline
 ------------------------------------------------------------------------
 [PASS] Note keeps source-side status control absent: source-note proposal only
-[PASS] Note keeps source-side status control absent: actual_current_surface_status
-[PASS] Note keeps source-side status control absent: conditional_surface_status
-[PASS] Note keeps source-side status control absent: proposal_allowed
-[PASS] Note keeps source-side status control absent: audit_required_before_effective_retained
-[PASS] Note keeps source-side status control absent: bare_retained_allowed
+[PASS] Note keeps actual surface as open
+[PASS] Note keeps conditional support separate from actual surface
+[PASS] Note forbids branch-local retained proposal
 [PASS] Note does NOT use bare 'proposed_retained' or 'retained:' status language
 
 ========================================================================
-TOTAL: PASS=79 FAIL=0
-VERDICT: conditional bounded-support arithmetic passes; eta_pred bracketed inside [5.25e-10, 8.11e-10] with central +4.22% vs eta_obs; m_DM = 3.94 TeV is the supplied composed-product readout; (C2.eta) remains open.
+TOTAL: PASS=90 FAIL=0
+VERDICT: open-gate conditional arithmetic certificate passes; eta_pred bracketed inside [5.25e-10, 8.11e-10] with central +4.18% vs eta_obs comparator; m_DM = 3.94 TeV is the supplied composed-product readout; P1-P4/P6-P7 and (C2.eta) remain open.
 
 ----- stderr -----
 

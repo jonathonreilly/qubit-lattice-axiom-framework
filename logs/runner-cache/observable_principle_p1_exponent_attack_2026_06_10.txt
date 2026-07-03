@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/observable_principle_p1_exponent_attack_2026_06_10.py
+runner_sha256: 211cdbe8d55f41c97834ffa236d7b003ad3d7d5f26988d9877ee18a9d4c2aa9e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.09
+status: ok
+----- stdout -----
+== T1: family well-posedness (normalized exponent family) ==
+  [PASS][A] g_p(1) = 0
+  [PASS][A] g_p'(1) = 1
+  [PASS][A] p -> 0 limit of g_p is log z (the family's log member)
+== T2: Lemma R — single-pair additive rigidity (class-extension core) ==
+  [PASS][A] additive-instance residual factorizes: (x-1)(y-1)
+  [PASS][A] instance at (2,3): residual = (2^p-1)(3^p-1)/p exactly
+  [PASS][A] sinh factorization: (2^p-1)(3^p-1) = 4*6^{p/2} sinh(p ln2/2) sinh(p ln3/2)
+  [PASS][A] sinh factors share the sign of p (sinh of same-sign args) => product > 0 for p != 0
+  [PASS][A] scale freedom cannot rescue: s*(x-1)(y-1)/p = 0 at (x,y)=(2,3) only at s = 0
+== T3: scale-free response kernel REDUCES to (Add) ==
+  [PASS][A] z*Phi' = c with Phi(1)=0 has unique solution Phi = c*log z
+  [PASS][A] (Add) member has constant kernel: z*W'(z) = c for all z
+== T4: mode-product linearization REDUCES to additive sector decomposition ==
+  [PASS][A] Q is exactly orthogonal (rational Givens mix)
+  [PASS][A] B = Q (blocks) Q^T is real antisymmetric
+  [PASS][A] L1 product-over-modes: det(I+B) = (1+1^2)(1+2^2) = 10 exactly
+  [PASS][A] linearization at mode pair (2,5): residual = (2^p-1)(5^p-1)/p (Lemma R applies)
+== T5: inversion antisymmetry REDUCES to an additive instance on the reciprocal slice ==
+  [PASS][A] g_p(1/z) + g_p(z) = (z^{p/2} - z^{-p/2})^2/p identically
+  [PASS][A] the square is nonzero for p != 0, z != 1 (so only p = 0 is antisymmetric)
+  [PASS][A] operator realization: det(M (+) M^{-1}) = 1 (unit-determinant reciprocal pair)
+  [PASS][A] witness log z + log^3 z: inversion-antisymmetric
+  [PASS][A] witness is NOT additive (residual = 6 at (e,e))
+== T6: cone conditions (outside the class) UNDER-SELECT — interval not point ==
+  [PASS][A] monotonicity: g_p' = z^{p-1} > 0 for all p (non-selective)
+  [PASS][A] operator monotonicity retains p=1: g_1(A)-g_1(B) = A-B (PSD preserved)
+  [PASS][A] concavity: g_p'' = (p-1) z^{p-2}; p=0 and p=1/2 both concave (interval)
+  [PASS][A] Bernstein/CM sign formula holds for n=1..5 (symbolic in p)
+  [PASS][A] CM retains both p=0 (factors k>0) and p=1/2 (factors k-1/2>0): interval
+== T7: THE SELECTOR — finite barrier parameter on all of R_>0 point-selects p=0 ==
+  [PASS][A] ratio formula: g_p'^2 / g_p'' = z^p/(p-1) exactly
+  [PASS][A] p = 1/2: sup_{z->oo} |ratio| = oo (selector rejects)
+  [PASS][A] p = -1/2: sup_{z->0+} |ratio| = oo (selector rejects)
+  [PASS][A] p = 2 (convex member, SC-passing quadratic): ratio = z^2 -> oo (rejected by nu, not by SC)
+  [PASS][A] p = 1: g_1'' = 0 (degenerate, excluded); g_1 non-additive: residual (r1-1)(r2-1)
+  [PASS][A] p = 0: W'^2/W'' = -1 identically => nu[log] = 1 (canonical barrier)
+  [PASS][A] log is SC-extremal: |W'''| = 2|W''|^{3/2} exactly (equality case)
+  [PASS][A] scaling robustness: ratio[s*g_p] = s * z^p/(p-1) — rescaling cannot rescue p != 0
+== T8: CLASS ESCAPE — the selector is provably outside the irreducible class ==
+  [PASS][A] witness curvature closed form: z^2 W'' = -1 - (sqrt(2)/10) cos(log z + pi/4)
+  [PASS][A] witness curvature bound: z^2 W'' <= -1 + sqrt(2)/10 < 0 (constant sign on R_>0)
+  [PASS][A] witness kernel closed form: z W' = 1 - (1/10) sin(log z)
+  [PASS][A] witness nu-bound: nu[W] <= (1+eps)^2/(1-eps*sqrt(2)) (finite) — selector PASSES
+  [PASS][A] additivity violated at generic pair (e,e): |residual| > 1/10 (exact closed form)
+  [PASS][A] additivity violated at reciprocal pair (e,1/e): residual = (1 - 2cos1)/10 != 0
+  [PASS][A] sin-witness small-omega series = -omega^3 u1 u2 (u1+u2)/2 (every-pair coverage)
+  [PASS][A] sin-witness curvature: |z^2 W'' + 1| <= eps*omega*(1+omega) < 1 (constant sign)
+  [PASS][A] structural: selector expressions contain NO two-block source symbols (j_a, j_b)
+  [PASS][A] contrast: normalized gradient = d(log Z)/dj for ALL p (exponent-blind), nu-selector is not
+== T9: falsification leg — removing the declared full-R_>0 domain breaks selection ==
+  [PASS][A] on compact [1,2] every p has finite sup (monotone z^p): NO selection without full R_>0
+  [PASS][A] ratio |z^p/(p-1)| is monotone in z (sup on [a,b] at an endpoint): endpoint check valid
+== T10: source-boundary check — barrier premise remains open ==
+  [PASS][B] barrier premise is declared open/unlicensed in the source note
+  [PASS][B] source note does not claim P1 closure or parent-boundary repair
+  [PASS][B] external barrier mathematics is comparator only
+== T11: note honest-scope and boundary strings ==
+  [PASS][B] note honest-scope strings present  -- missing=[]
+  [PASS][B] forbidden promotion strings absent  -- found=[]
+
+TOTAL: PASS=49 FAIL=0
+
+----- stderr -----
+

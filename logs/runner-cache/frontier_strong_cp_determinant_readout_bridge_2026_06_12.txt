@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/frontier_strong_cp_determinant_readout_bridge_2026_06_12.py
+runner_sha256: 583972badcf1b7829e0e224d57d194ce5070a3ec5d81fbfc319ff00a3cabca45
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+Strong-CP determinant-readout bridge verifier
+========================================================================
+PASS bridge note exists and declares bounded theorem
+PASS bridge names the theta P2/K-CPT row it feeds
+PASS bridge is explicitly mass-determinant-channel only
+PASS bridge does not claim action/gauge theta closure
+PASS Record boundary remains supplied-context only
+PASS strong-CP parent is cited but not promoted
+PASS U(1) character k=-3 is multiplicative over determinant products
+PASS U(1) character k=-2 is multiplicative over determinant products
+PASS U(1) character k=-1 is multiplicative over determinant products
+PASS U(1) character k=0 is multiplicative over determinant products
+PASS U(1) character k=1 is multiplicative over determinant products
+PASS U(1) character k=2 is multiplicative over determinant products
+PASS U(1) character k=3 is multiplicative over determinant products
+PASS K/CPT invariance leaves only k=0 among sampled determinant phase characters -- [0]
+PASS hostile cos(arg det) probe is K-even
+PASS hostile cos(arg det) probe violates independent-block multiplicativity -- gap=0.305042
+PASS direct-sum determinant product law represented on supplied determinants
+PASS K/CPT conjugation reverses determinant phase -- phi=0.400000
+PASS theta note wires this bridge without claiming gauge/action closure
+========================================================================
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

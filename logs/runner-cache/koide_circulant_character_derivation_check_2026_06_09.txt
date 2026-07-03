@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/koide_circulant_character_derivation_check_2026_06_09.py
+runner_sha256: 0920711f580406efabc10d054fc63918a27dbfdb499aa311c18e19cfa67cd54b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.32
+status: ok
+----- stdout -----
+==========================================================================
+KOIDE CIRCULANT / CHARACTER DERIVATION -- BOUNDED-THEOREM COMPANION
+==========================================================================
+  [PASS] C1 [C] C^3 = I and C != I, C^2 != I (C generates Z_3 exactly)
+  [PASS] C2 [C] Ad(C_3) isotypic multiplicities on M_3(C) are (3,3,3) :: m_triv,m_omega,m_omegabar = [3, 3, 3]
+  [PASS] C3 [A] H_gen is the generic Hermitian (H_gen.H == H_gen, 9 real params)
+  [PASS] C4 [C] commutant solve C H = H C has a unique solution branch
+  [PASS] C5 [C] commutant of Ad(C_3) in Herm(3) is a 3-real-parameter family :: free real parameters: [x2, x7, x8]
+  [PASS] C6 [C] commutant family is EXACTLY {a*I + b*C + conj(b)*C^2} under the bijection a = x2, b = x7 - i*x8 :: circulant form forced, not assumed
+  [PASS] C7 [A] a*I + b*C + conj(b)*C^2 is Hermitian for all real a, complex b
+  [PASS] C8 [A] circulant family is Ad(C)-invariant (trivial isotypic component)
+  [PASS] A9 [A] eig(H) = { a + 2|b| cos(arg b + 2 pi k/3) }, exact, symbolic delta
+  [PASS] A10 [A] ||H||_F^2 = 3 a^2 + 6 |b|^2 exactly
+  [PASS] A11 [A] a_0 = sqrt(3) * a (character coefficient of eigenvalue triple)
+  [PASS] A12 [A] z = sqrt(3) * b (character coefficient of eigenvalue triple)
+  [PASS] A13 [A] a_0^2 - 2|z|^2 = 3a^2 - 6|b|^2 (Frobenius equipartition <=> equal character weight) :: Frobenius equipartition is the operator-space lift, not a new independent premise
+  [PASS] A14 [A] sum_k cos(delta + 2 pi k/3) = 0, symbolic delta
+  [PASS] A15 [A] sum_k cos^2(delta + 2 pi k/3) = 3/2, symbolic delta
+  [PASS] A16 [A] 3a^2 = 6|b|^2 <=> 2|b|/a = sqrt(2) for a,|b| > 0
+  [PASS] A17 [A] under Frobenius-equipartition condition: sum_k lambda_k = 3a exactly
+  [PASS] A18 [A] under Frobenius-equipartition condition: sum_k lambda_k^2 = 6a^2 exactly
+  [PASS] A19 [A] conditional Koide: Q = (sum m)/(sum sqrt m)^2 = 2/3 EXACTLY, delta-independent (square-root readout identification: lambda_k = sqrt(m_k)) :: Q = 2/3 for symbolic delta
+  [PASS] A20 [A] alternative reading lambda_k = m_k FAILS Koide (|Q_alt - 2/3| > 0.05 at delta = 2/9) :: Q_alt = 0.47803534
+  [PASS] A21 [A] under Frobenius-equipartition condition, a>0: sup_delta lambda_k / a = 1 + sqrt(2) exactly (symbolic maximum over the whole real delta line) :: sup over delta = 1 + sqrt(2) for each k
+  [PASS] A22 [A] delta = pi/12 gives EXACTLY one massless eigenvalue (1 + sqrt(2) cos(3 pi/4) = 0 exactly) :: eigs/a at pi/12: [sqrt(3)/2 + 3/2, 0, 3/2 - sqrt(3)/2]
+  [PASS] A23 [A] delta = 2/9 lies strictly inside the positivity window (all lambda_k > 0); 2/9 < pi/12 with gap 0.0396 rad :: pi/12 - 2/9 = 0.03958 rad
+  [PASS] A24 [A] positivity window is REAL: delta = 0.3 > pi/12 gives a negative eigenvalue (square-root readout identification needs the window hypothesis) :: min eig/a at delta=0.3: -0.037462
+  [PASS] A25 [A] Appendix A.2 candidate-delta residuals: 0.41%, 0.98%, 4.72% :: 2*atan(1/9): 0.41% off; pi/14: 0.98% off; 2*pi/27: 4.72% off
+  [PASS] A26 [A] 2/9 = 2/dim_R Herm(3) = 2/|C_3|^2 (exact arithmetic identity; the radian unit bridge stays OPEN)
+  [PASS] D27 [D] sqrt-mass data: sqrt(m_e,mu,tau) = (0.71484, 10.27903, 42.15282) sqrt(MeV); v_0 = 17.71556 (FITTED scale) :: v_0 = 17.71556 sqrt(MeV)
+  [PASS] D28 [D] empirical Koide ratio Q_PDG = 0.6666605; |Q_PDG - 2/3| = 6.2e-6 (comparator, not a derivation) :: Q_PDG - 2/3 = -6.15e-6
+  [PASS] D29 [D] exact character projection of PDG triple: delta_fit = 0.2222296 (|delta_fit - 2/9| = 7.4e-6 rad; FITTED phase) :: delta_fit = 0.22222963
+  [PASS] D30 [D] rho_fit = 2|b|/a = 1.4142005; |rho_fit - sqrt(2)| = 1.3e-5 (Frobenius equipartition holds to 1e-5 empirically; selection NOT derived) :: rho_fit = 1.4142005
+  [PASS] D31 [D] corrected prediction table at delta = 2/9: residuals tau +0.0006%, e -0.0029%, mu -0.0024% (all < 0.01%) :: tau: pred 42.1531 vs 42.1528 (0.00063%); e: pred 0.714821 vs 0.714842 (-0.0029%); mu: pred 10.2788 vs 10.279 (-0.0024%)
+  [PASS] D32 [D] top overshoots the Frobenius-equipartition condition ceiling: ratio 2.754 -> required cos = 1.240 > 1 (impossible); bottom 2.536 -> 1.086 > 1 :: required cos: up 1.24, down 1.086
+  [PASS] D33 [D] tau sits at 98.6% of the 1+sqrt(2) ceiling (ratio 2.37942) :: tau ratio/ceiling = 0.98559
+  [PASS] D34 [D] A.1 heuristic arithmetic: v*a_LM^2 = 2.0260 GeV; *(7/8) = 1.7728 (-0.23% vs m_tau); *sqrt(7/8) = 1.8952 (+0.65%); v_0 route 17.695 (-0.12%) -- heuristic, NOT retained :: x1=2.026 x2=1.7728 x3=1.8952 v0_h=17.6951
+
+Check classes: C=5 A=21 D=8 (B=0, E=0, F=0, G=0)
+TOTAL: PASS=34 FAIL=0
+
+Verdict (bounded):
+  - UNCONDITIONAL: commutant => circulant form, cosine
+    spectrum, Frobenius equipartition <=> equal-character-weight bridge,
+    and the exact delta-independent implication
+    circulant commutant + cosine spectrum + Frobenius equipartition
+    + square-root readout => Q = 2/3, plus the 1+sqrt(2) ceiling
+    and pi/12 positivity boundary. All exact in sympy.
+  - OPEN BOUNDARY (not claimed, not checked as theorem):
+    selection principle for Frobenius equipartition, derivation of square-root readout,
+    the phase delta = 2/9, and the scale v_0.
+  - PART D is PDG comparator decoration at fitted delta, v_0.
+
+  KOIDE_CIRCULANT_CHARACTER_DERIVATION_BOUNDED=TRUE
+
+----- stderr -----
+

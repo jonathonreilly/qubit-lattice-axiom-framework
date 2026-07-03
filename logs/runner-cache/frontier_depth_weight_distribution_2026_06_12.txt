@@ -1,0 +1,88 @@
+===== runner cache v1 =====
+runner: scripts/frontier_depth_weight_distribution_2026_06_12.py
+runner_sha256: 0cb773b3112fc696a6e58ea71148a5997287cad6ba6f85a61d1ca66939a397fd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.36
+status: ok
+----- stdout -----
+==============================================================================
+Depth weight distribution runner: L=3 det-phase coupled tones
+==============================================================================
+constants: L=3, NC=3, tau=0.35, T=256
+Hankel capture window=64, rank window=128, rank relative threshold=1.0e-06, coupling floor=1.0e-08
+
+S0 anchors
+------------------------------------------------------------------------------
+  [PASS] ANCHOR: K=3 capture@order4/window64 reproduces 0.898  (observed=0.898130088565, tol=1.0e-02)
+  [PASS] ANCHOR: K=4 capture@order4/window64 reproduces 0.778  (observed=0.777619557343, tol=1.0e-02)
+  [PASS] ANCHOR: K=6 capture@order4/window64 reproduces 0.995  (observed=0.994936516891, tol=1.0e-02)
+  [PASS] ANCHOR: capture@order4/window64 frozen table is reproduced  (K3:0.898130088565, K4:0.777619557343, K5:0.899155545493, K6:0.994936516891)
+  [PASS] ANCHOR: trajectory ranks at window=128 threshold=1e-6 reproduce 71/84/36/35  (((3, 71), (4, 84), (5, 36), (6, 35)))
+  [PASS] ANCHOR: coupled spectral gap count is exactly 3 for every state  (((3, 3), (4, 3), (5, 3), (6, 3)))
+  [PASS] anti-fabrication: every state has max tone weight above 1e-8  (K3:2.54454143144, K4:3.08892013334, K5:3.89161320795, K6:4.68322203182)
+
+S1 tone-weight tables
+------------------------------------------------------------------------------
+  K=3          seed=391 capture4_w64=0.8981300885645052 rank_w128=71 gap_count=3
+    g=-3.0  w=0.370985256950557  share=0.1128811527604004
+    g=+0.0  w=2.544541431436687  share=0.7742376944791992
+    g=+3.0  w=0.370985256950557  share=0.1128811527604004
+    PR=1.600183529914885  entropy=0.6905914723328893  exp_entropy=1.994895109629657  center_share=0.7742376944791992  gap2=2.031860749687207
+  K=4          seed= 99 capture4_w64=0.7776195573427411 rank_w128=84 gap_count=3
+    g=-3.0  w=0.4776873625550926  share=0.1181138812262248
+    g=+0.0  w=3.088920133342336  share=0.7637722375475505
+    g=+3.0  w=0.4776873625550926  share=0.1181138812262248
+    PR=1.635992331982613  entropy=0.7104332065111594  exp_entropy=2.034872587788616  center_share=0.7637722375475505  gap2=2.126049862072046
+  K=5(seed=99) seed= 99 capture4_w64=0.8991555454934871 rank_w128=36 gap_count=3
+    g=-3.0  w=0.3873438470039127  share=0.08300875900260604
+    g=+0.0  w=3.891613207945812  share=0.833982481994788
+    g=+3.0  w=0.3873438470039127  share=0.08300875900260604
+    PR=1.409825406280974  entropy=0.5645895003314196  exp_entropy=1.758725678212094  center_share=0.833982481994788  gap2=1.494157662046909
+  K=6          seed=466 capture4_w64=0.9949365168913127 rank_w128=35 gap_count=3
+    g=-3.0  w=0.2298062233414999  share=0.04468474035128705
+    g=+0.0  w=4.683222031818805  share=0.9106305192974259
+    g=+3.0  w=0.2298062233414999  share=0.04468474035128705
+    PR=1.200132406216244  entropy=0.3630228030059378  exp_entropy=1.437668642034016  center_share=0.9106305192974259  gap2=0.8043253263231669
+  [PASS] S1: frozen tone-weight table is reproduced exactly within 5e-12  (weights by K in sorted gap order (-3,0,+3))
+
+S2 concentration gates
+------------------------------------------------------------------------------
+  [PASS] S2: frozen participation-ratio table is reproduced  (K3:1.60018352991, K4:1.63599233198, K5:1.40982540628, K6:1.20013240622)
+  [PASS] S2: frozen entropy table is reproduced  (K3:0.690591472333, K4:0.710433206511, K5:0.564589500331, K6:0.363022803006)
+  [PASS] S2: frozen center-share table is reproduced  (K3:0.774237694479, K4:0.763772237548, K5:0.833982481995, K6:0.910630519297)
+  [PASS] S2: lower PR means stronger concentration; order is K6<K5<K3<K4  (PR order=(6, 5, 3, 4))
+  [PASS] S2: entropy gives the same concentration order K6<K5<K3<K4  (entropy order=(6, 5, 3, 4))
+  [PASS] S2: center-tone share ranks K6,K5,K3,K4  (center order=(6, 5, 3, 4))
+  [PASS] S2: capture-at-order-4 is monotone with inverse PR over the four realized states  (capture order=(6, 5, 3, 4), PR order=(6, 5, 3, 4))
+
+S3 cyclic permutation null
+------------------------------------------------------------------------------
+  K=3: cyclic-null center_share=0.1128811527604004 gap2=7.984069625156396 delta_gap2=5.952208875469188
+  K=4: cyclic-null center_share=0.1181138812262248 gap2=7.936975068963978 delta_gap2=5.810925206891932
+  K=5: cyclic-null center_share=0.08300875900260604 gap2=8.252921168976547 delta_gap2=6.758763506929638
+  K=6: cyclic-null center_share=0.04468474035128705 gap2=8.597837336838417 delta_gap2=7.79351201051525
+  [PASS] S3: cyclic shuffle preserves the fixed three-tone support  (((3, 3), (4, 3), (5, 3), (6, 3)))
+  [PASS] S3: cyclic-null center-share table is frozen and reproduced  (K3:0.11288115276, K4:0.118113881226, K5:0.0830087590026, K6:0.0446847403513)
+  [PASS] S3: real gap-second-moment table is frozen and reproduced  (K3:2.03186074969, K4:2.12604986207, K5:1.49415766205, K6:0.804325326323)
+  [PASS] S3: cyclic-null gap-second-moment table is frozen and reproduced  (K3:7.98406962516, K4:7.93697506896, K5:8.25292116898, K6:8.59783733684)
+  [PASS] S3: cyclic shuffle changes the depth-relevant gap-second-moment by frozen nonzero deltas  (K3:5.95220887547, K4:5.81092520689, K5:6.75876350693, K6:7.79351201052)
+  [PASS] S3: cyclic-null center order is K4,K3,K5,K6, not the capture order  (null center order=(4, 3, 5, 6), capture order=(6, 5, 3, 4))
+
+S4 note hygiene
+------------------------------------------------------------------------------
+  [PASS] S4: canonical claim type and status-authority front matter are present
+  [PASS] S4: dependency links are exactly the depth anchors plus realized-state primitive  (links=[('`DET_PHASE_HARMONIC_DEPTH_STATE_DEPENDENT_BOUNDED_THEOREM_NOTE_2026-06-12.md`', 'DET_PHASE_HARMONIC_DEPTH_STATE_DEPENDENT_BOUNDED_THEOREM_NOTE_2026-06-12.md'), ('`HARMONIC_DEPTH_HANKEL_RANK_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md`', 'HARMONIC_DEPTH_HANKEL_RANK_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md'), ('`REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`', 'REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md')])
+  [PASS] S4: realized-state primitive boundary is not widened
+  [PASS] S4: causal/generative interpretation remains outside this runner
+  [PASS] S4: note, runner, and cache are the touched files in this spec path set
+==============================================================================
+TOTAL: PASS=26 FAIL=0
+==============================================================================
+SCOPE: exact finite one-body L=3 gauge-link system, realized seeds only.
+CLAIM TESTED: coupled-gap count is identical (3 each), while the tone-weight
+  distribution is ordered by concentration: K6 is most concentrated, K3/K4
+  are least concentrated, and inverse PR is monotone with order-4 capture.
+
+----- stderr -----
+

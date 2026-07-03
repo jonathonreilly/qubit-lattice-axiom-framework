@@ -1,0 +1,86 @@
+===== runner cache v1 =====
+runner: scripts/axiom_first_spin_statistics_source_packet_certificate_2026_06_11.py
+runner_sha256: d51abfcaa99fca265276f66b5017240c47d92e4a41095aee53b53d1dc1eeeb6d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+axiom-first spin-statistics source-packet certificate 2026-06-11
+PASS: exists: docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md
+PASS: exists: scripts/axiom_first_spin_statistics_check.py
+PASS: exists: logs/runner-cache/axiom_first_spin_statistics_check.txt
+PASS: exists: docs/MINIMAL_AXIOMS_2026-06-05.md
+PASS: exists: docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md
+PASS: exists: docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md
+PASS: exists: docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md
+PASS: exists: docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md
+PASS: note contains status/scope phrase: **Type:** bounded_theorem
+PASS: note contains status/scope phrase: **Claim type:** bounded_theorem
+PASS: note contains status/scope phrase: Status authority:** independent audit lane only
+PASS: note contains status/scope phrase: does not set or predict an audit outcome
+PASS: note contains status/scope phrase: source-note proposal
+PASS: note contains status/scope phrase: free-boson/CCR exclusion
+PASS: note contains status/scope phrase: statistics *forcing* claim is WITHDRAWN
+PASS: note contains status/scope phrase: No statistics forcing
+PASS: note contains status/scope phrase: No hard-core exclusion
+PASS: note contains status/scope phrase: Sets, promotes, or changes **no** row's effective status
+PASS: note excludes overclaim: **Status:** retained
+PASS: note excludes overclaim: **Status:** source-note proposal
+PASS: note excludes overclaim: retained branch-local
+PASS: note excludes overclaim: would become retained
+PASS: note excludes overclaim: promoted to retained
+PASS: note excludes overclaim: anticommutation is forced by the baseline
+PASS: note excludes overclaim: hard-core boson is excluded
+PASS: note excludes overclaim: Grassmann Fock space is the only finite-dimensional alternative
+PASS: note markdown link present: ../scripts/axiom_first_spin_statistics_check.py
+PASS: note markdown link present: MINIMAL_AXIOMS_2026-06-05.md
+PASS: note markdown link present: AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md
+PASS: note markdown link present: STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md
+PASS: note markdown link present: STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md
+PASS: superseded 2026-04-11 axiom file is not a markdown dependency
+PASS: superseded 2026-04-11 cite is historical only
+PASS: current minimal axiom supplies one-qubit-per-site clause
+PASS: proof contains repaired bridge phrase: canonical CCR (6) has no finite-dimensional realization
+PASS: proof contains repaired bridge phrase: Quantum axiom's one-qubit-per-site content
+PASS: proof contains repaired bridge phrase: `k = 1 ⇒ dim_C H_x = 2`
+PASS: proof contains repaired bridge phrase: explicit one-hop
+authority for the finite/dim-2 hypothesis
+PASS: proof contains repaired bridge phrase: free boson is excluded
+PASS: authorities section contains: MINIMAL_AXIOMS_2026-06-05.md
+PASS: authorities section contains: STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md
+PASS: authorities section contains: Quantum axiom
+PASS: authorities section contains: one-qubit-per-site clause
+PASS: authorities section contains: k = 1
+PASS: authorities section contains: dim_C H_x = 2
+PASS: authorities section contains: Grassmann choice remains a
+PASS: authorities section contains: declared frame hypothesis
+PASS: packet section contains: does not apply an audit verdict
+PASS: packet section contains: current registered axiom surface
+PASS: packet section contains: single-module `k = 1 => dim_C H_x = 2` authority
+PASS: packet section contains: superseded 2026-04-11 axiom file is historical only
+PASS: packet section contains: hard-core/CAR selection remains out of scope
+PASS: single-module authority contains: **Claim type:** positive_theorem
+PASS: single-module authority contains: If* the per-site Hilbert space `H_x`
+PASS: single-module authority contains: `k(x) = 1`
+PASS: single-module authority contains: `dim_C H_x = 2` exactly
+PASS: single-module authority contains: U4 statement that this note does not close
+PASS: single-module authority contains: No new
+PASS: single-module authority contains: axioms
+PASS: primary cache header is v1
+PASS: primary cache names runner
+PASS: primary cache pins current runner SHA
+PASS: primary cache exit code zero
+PASS: primary cache status ok
+PASS: primary cache has expected total
+PASS: primary cache contains tag: [S2] PASS
+PASS: primary cache contains tag: [FALS] PASS
+PASS: primary cache contains tag: [S1] PASS
+PASS: primary cache contains tag: [S1-CAR] PASS
+PASS: primary cache contains tag: [S3] PASS
+PASS: primary cache contains tag: [S4] PASS
+PASS: primary cache contains tag: [CTX] PASS
+TOTAL: PASS=72 FAIL=0
+
+----- stderr -----
+

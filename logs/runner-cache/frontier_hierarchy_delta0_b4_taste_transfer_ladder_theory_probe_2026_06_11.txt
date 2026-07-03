@@ -1,0 +1,116 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_delta0_b4_taste_transfer_ladder_theory_probe_2026_06_11.py
+runner_sha256: 3eec93dc160c4e73dfa125ff2b88d98607490da1733fe481da1855e8e864c954
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
+==============================================================================
+ frontier_hierarchy_delta0_b4_taste_transfer_ladder_theory_probe_2026_06_11.py
+ Block12 of the DELTA0 campaign: the taste-pairing transfer ladder —
+ the first PROPOSED attachment mechanism satisfying all block11 constraints
+ (outside K1-K8; log-additive; threshold-scale; two-link dressing; d = 3) —
+ graded by computation: vertex leg = sigma_U^2 x |<t|h_b|t'>|^2 / (4 u_0)^2,
+ kernel leg = 1/(4 pi) (landed, block10b).  Does V x (1/(4 pi)) = alpha_s?
+ Parent note: docs/HIERARCHY_DELTA0_B4_TASTE_TRANSFER_LADDER_THEORY_PROBE_
+              NOTE_2026-06-11.md
+==============================================================================
+
+--- Section A [C]: block01 reuse — exact block, taste basis, and the frozen-link ZERO cross-taste coupling ---
+  [PASS][C] A1 block01 baseline reproduced: D real antisymmetric, D^2 = -4 u^2 I, exact Gaussian-rational taste eigenbasis with T^-1 T = I (same construction code as block01)
+  [PASS][C] A2 frozen-link taste-diagonality EXACT (block01's load-bearing zero): the FULL kinetic operator has ZERO cross-taste coupling in the taste eigenbasis — the proposed transfer is non-trivially zero at frozen links  (D' = diag(+-2i), all 240 off-diag exact 0)
+
+--- Section B [C]: P1 machinery — connected link variance sigma_U^2(h) per group (exact identities + quadrature) ---
+  [PASS][C] B1 U(1) EXACT: <U U*>_h = 1 identically (|e^{i th}| = 1) so sigma_U^2 = 1 - (I1(h)/I0(h))^2; Gautschi ratio vs 512-pt quadrature < 1e-12 at 4 test h; Haar limit sigma_U^2(0) = 1
+  [PASS][C] B2 SU(2) EXACT Bessel identity: <cos^2 th>_h = 1/4 + (3/4) I3(2h)/I1(2h) (Z = pi I1(x)/x route), so sigma_U^2 = 1/4 + (3/4) I3/I1 - (I2/I1)^2; verified vs 512-pt Weyl quadrature < 1e-12 at 4 test h; Haar limit sigma_U^2(0) = <(Tr U/2)^2>_Haar = 1/4
+  [PASS][C] B3 SU(3) Weyl torus quadrature certified: Haar moments <1> = 1, <Re Tr U> = 0, <(Re Tr U)^2> = 1/2, <|Tr U|^2> = 1 (fundamental-character orthonormality) all < 1e-12; 64- vs 96-grid sigma_U^2 agreement < 1e-12 at 4 test h; Haar limit sigma_U^2(0) = 1/9  (<|Tr U|^2>_Haar = 1.00000000000000)
+
+--- Section C [A]: P1 solves — threshold bath F(h) = u_0 and the beta = 6 mean-field bath; sigma_U^2 tabulated ---
+    U(1) threshold bath:  h_A = 4.4118306, F(h_A) = u_0 = 0.8776814, sigma_U^2 = 0.2296753931
+    SU(2) threshold bath:  h_A = 5.9915554, F(h_A) = u_0 = 0.8776814, sigma_U^2 = 0.0099457922
+    SU(3) threshold bath:  h_A = 10.8034378, F(h_A) = u_0 = 0.8776814, sigma_U^2 = 0.0038357087
+  [PASS][A] C1 threshold bath per group: h_A solving F(h) = u_0 = 0.8776814 (one bisection each, residual < 1e-12); sigma_U^2(h_A) tabulated
+    U(1) mean-field bath:  u* = 0.9853749, h_B = 34.4434761, sigma_U^2 = 0.0290363241
+    SU(2) mean-field bath:  u* = 0.9521287, h_B = 15.5367255, sigma_U^2 = 0.0015272266
+    SU(3) mean-field bath:  NO nontrivial pure-gauge root at beta = 6 (disordered mean-field branch; block04 F1 diagnostic reproduced) — bath B DECLARED ABSENT, threshold bath A carries this group
+  [PASS][A] C2 beta = 6 mean-field bath (block04 M1, kappa = 0, dressed branch): U(1) and SU(2) saddles solved with residual < 1e-12 and sigma_U^2(h_B) tabulated; SU(3) has NO nontrivial pure-gauge root at beta = 6 (block04's recorded disordered-branch diagnostic reproduced) — bath B declared absent for SU(3)
+  [PASS][A] C3 cross-checks: U(1) threshold-bath variance equals 1 - u_0^2 = 1 - <P>^(1/2) = 0.2296757 exactly (since F(h_A) = u_0 by construction); every sigma_U^2 strictly inside (0, 1) — the structural bound input for E3  (1 - u_0^2 = 0.2296754)
+
+--- Section D [C]: P2 — single-bond hop operator in the taste basis, exact 16 x 16 transfer table ---
+  [PASS][C] D1 the 64 single-link hop operators h_b (one per oriented link, eta and antiperiodic wrap signs included) are each real antisymmetric with Frobenius norm^2 = 1/2 and sum EXACTLY to the block01 operator D
+    |<t|h_b0|t'>|^2 table in units of 1/64 (rows/cols = taste modes; bond b0 = (0000, mu=0)):
+       4  0  0  0  1  1  1  0  0  0  0  0  1  1  1  0
+       0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+       0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+       0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+       1  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0
+       1  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0
+       1  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0
+       0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+       0  0  0  0  1  1  1  0  4  0  0  0  1  1  1  0
+       0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+       0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+       0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+       1  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0
+       1  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0
+       1  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0
+       0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  [PASS][C] D2 exact taste-basis table for the declared bond b0: entries take ONLY the values {0, 1/64, 1/16} with counts {230, 24, 2}; |<t|h|t'>| = |<t'|h|t>| (anti-Hermitian magnitude symmetry); Frobenius sum = 1/2 preserved (unitary-invariance cross-check)
+  [PASS][C] D3 structure: h_b0 is NOT taste-diagonal (the single bond DOES couple taste sectors); same-corner opposite-sign element EXACTLY ZERO; off-diagonal row sums: 2 anchored rows = 3/32 each, 6 neighbor rows = 1/32, 8 far rows = 0 (exact rationals)  (S_bond = 3/32 = sum over the 15 kept channels, anchored row)
+  [PASS][C] D4 consistency with block01: Sigma_b H'_b = diag(+-2i) EXACTLY — the 64 single-bond cross-taste couplings cancel identically in the bond sum, restoring the frozen-link taste-diagonality of A2
+  [PASS][C] D5 all-bond aggregate Sigma_b Sigma_{t' != t} |<t|h_b|t'>|^2 = 3/2 EXACTLY for every one of the 16 tastes (mode independence of the transfer weight)  (S_all = 3/2)
+  [PASS][C] D6 EXACT u_0-degree of the declared vertex V = sigma_U^2 S/(E_t + E_t')^2 with the dressed gaps E = 2 u_0 (verified: eigenvalues of u D are +-2iu exactly): two-point Fraction ratio at u in {2/3, 3/5} gives degree EXACTLY -2 — the mechanism-required power (V u_0^2 = S/16, u_0-independent)  (u_0-degree(V) = -2: the two-dressed-hop shape holds)
+
+--- Section E [A]: P3 — graded identity: V x [kernel leg 1/(4 pi)] vs alpha_s = 0.1033038 ---
+    U(1) bath A [bond]: sigma_U^2 = 0.2296754, V = 1.7469963e-03, V/(4 pi) = 1.3902155e-04, factor/alpha_s = 0.001346  (743.1x short)
+    U(1) bath A [all ]: sigma_U^2 = 0.2296754, V = 2.7951941e-02, V/(4 pi) = 2.2243448e-03, factor/alpha_s = 0.021532  (46.4x short)
+    U(1) bath B [bond]: sigma_U^2 = 0.0290363, V = 2.2086106e-04, V/(4 pi) = 1.7575565e-05, factor/alpha_s = 0.000170  (5877.7x short)
+    U(1) bath B [all ]: sigma_U^2 = 0.0290363, V = 3.5337770e-03, V/(4 pi) = 2.8120904e-04, factor/alpha_s = 0.002722  (367.4x short)
+    SU(2) bath A [bond]: sigma_U^2 = 0.0099458, V = 7.5651388e-05, V/(4 pi) = 6.0201462e-06, factor/alpha_s = 0.000058  (17159.7x short)
+    SU(2) bath A [all ]: sigma_U^2 = 0.0099458, V = 1.2104222e-03, V/(4 pi) = 9.6322339e-05, factor/alpha_s = 0.000932  (1072.5x short)
+    SU(2) bath B [bond]: sigma_U^2 = 0.0015272, V = 1.1616653e-05, V/(4 pi) = 9.2442385e-07, factor/alpha_s = 0.000009  (111749.4x short)
+    SU(2) bath B [all ]: sigma_U^2 = 0.0015272, V = 1.8586644e-04, V/(4 pi) = 1.4790782e-05, factor/alpha_s = 0.000143  (6984.3x short)
+    SU(3) bath A [bond]: sigma_U^2 = 0.0038357, V = 2.9175825e-05, V/(4 pi) = 2.3217384e-06, factor/alpha_s = 0.000022  (44494.2x short)
+    SU(3) bath A [all ]: sigma_U^2 = 0.0038357, V = 4.6681319e-04, V/(4 pi) = 3.7147814e-05, factor/alpha_s = 0.000360  (2780.9x short)
+  [PASS][A] E1 per-threshold factor computed per variant (10 rows: 3 groups x declared baths x 2 aggregations; SU(3) bath B absent per C2): V = sigma_U^2 S/(16 u_0^2) and factor = V/(4 pi); all finite and positive; the EXACT u_0-free displacement identity factor/alpha_s = sigma_U^2 x S/16 holds to < 1e-14 in every row
+  [PASS][A] E2 STRINGENT window logic (declared up front): the CANDIDATE-MECHANISM window [0.99, 1.01] fires in NO variant; the factor-2 observation window [0.5, 2.0] fires in NO variant — the proposal's vertex leg is DISPLACED in every declared variant  (closest approach = 0.021532x alpha_s (46x short), farthest = 8.95e-06x)
+  [PASS][A] E3 structural displacement bound: sigma_U^2 < 1 for every bath (one-link variance of a bounded trace), so factor/alpha_s = sigma_U^2 S/16 <= S_all/16 = 3/32 = 0.09375 under the declared second-order form — the candidate window (and even the factor-2 window) is UNREACHABLE for ANY bath variance: the displacement is structural, not a tuning failure  (max sigma_U^2 = 0.229675, bound = 3/32 = 0.09375)
+  OBSERVATION (bounded, numerology-risk flagged): the REQUIRED vertex V_req = 4 pi x alpha_s = u_0^(-2) = 1.2981704 is the supplier-chain identity alpha_s = (1/(4 pi)) x u_0^(-2) restated as a vertex requirement — DEFINITIONAL, zero mechanism content (the block11 K2-cell lesson); it is recorded so the shortfall V_req/V is read as a displacement, never as a target 'discovered' by this probe.
+
+--- Section F [A]: P4 — vacuum overlap |<vac_16|vac_15>|^2 (Anderson-orthogonality reading, declared form) ---
+  [PASS][A] F1 declared second-order overlap |<vac_16|vac_15>|^2 = 1 - sigma_U^2 Sigma_{t' kept} |<t|h_b|t'>|^2/(4 u_0)^2 = 1 - V_bond (one fluctuating bond, threshold bath): near 1 in every group and O(10x) DISPLACED from alpha_s — the secondary candidate is displaced as expected (completeness leg, no claim)  (U(1): 0.9982530 (9.66x alpha_s); SU(2): 0.9999243 (9.68x alpha_s); SU(3): 0.9999708 (9.68x alpha_s))
+
+--- Section G [B]: constraint set, supplier chain, and honesty fences on disk ---
+  [PASS][B] G1 block11 constraint set on disk: the attachment observable is 'not among the K1-K8 declared readouts'; block10b's four consequences named (log-additivity, threshold-scale evaluation, two-link vertex dressing, d = 3 substrate) — the constraints this proposal is built to satisfy
+  [PASS][B] G2 supplier chain on disk: block01's zero cross-taste coupling ('EXACTLY ZERO induced coupling shift' — the load-bearing fact); block02's target 'alpha_s = 0.1033038' 'per taste decoupling'; block10b's per-taste IR kernel slope (the kernel leg, LANDED — declared not recomputed here); the B1 plaquette reuse license
+  [PASS][B] G3 parent-note honesty fences on disk: the note labels the mechanism a 'proposed mechanism' (the taste-pairing transfer ladder), records the computed grade 'displaced', carries the channel-factorization 'open theorem' with 'kill criteria', fences 'declared model' content, and states it 'does not close the DELTA0 gate'; forbidden closure tokens absent  (missing = [], hit = [])
+
+  RESIDUAL (declared-open): P5, the channel-factorization OPEN THEOREM (what would promote the proposal had P3 landed; stated for the record): (i) the EW condensate channel factorizes through exactly ONE link-fluctuation exchange per taste threshold at leading order in the fluctuation expansion; (ii) the kernel leg attaches with readout normalization 4 pi G -> 1 at the threshold scale; (iii) corrections are O(alpha_s^2) per rung, preserving the integer 16.  KILL CRITERIA: factorization fails (multiple exchanges at the same order), vertex u_0-degree != -2, or k-dependence in the per-threshold factor.  THIS BLOCK'S COMPUTATION: the u_0-degree IS -2 (D6 passes), but the vertex MAGNITUDE is structurally displaced (E3) — the theorem remains open AND its declared-form vertex is displaced.
+  RESIDUAL (declared-open): the B4 attachment-observable identification (block10b R2, constrained 'not K1-K8' by block11) remains UNSUPPLIED: this block contributes the FIRST proposal satisfying all block11 constraints (outside K1-K8, log-additive by construction, threshold-scale bath, two-dressed-hop u_0^(-2), d = 3 kernel leg), and grades it DISPLACED under the declared second-order one-exchange form: factor/alpha_s = sigma_U^2 S/16 <= 3/32 for any bath.
+  RESIDUAL (declared-open): the DELTA0 magnitude gate (HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) remains OPEN: this probe grades a proposal and sharpens the constraint surface (a mechanism-shaped vertex with the right u_0-degree exists but is >= 10.7x too small at saturation); it does not close the gate.
+
+--- Terminal class-D fence: external comparators ---
+  (No PDG quantity is needed or consumed by this probe; the transfer table,
+   the baths, and the displacement are internal structure only.)
+  [PASS][D] H1 self-scan: the PDG VEV literal appears ZERO times in this runner's source — no comparator consumed anywhere
+
+==============================================================================
+ Breakdown: A=7 B=3 C=11 D=1 RESIDUAL=3 OBSERVATION=1
+ TOTAL: PASS=22 FAIL=0
+ VERDICT: proposal graded DISPLACED (vertex leg).  Established (bounded,
+   exact): the single-bond hop operator is NOT taste-diagonal (table exact;
+   anchored row 3/32, all-bond 3/2, bond sum restores diagonality), and the
+   declared one-exchange vertex has u_0-degree EXACTLY -2 — the mechanism's
+   required shape.  Graded (declared models): its MAGNITUDE is structurally
+   short — factor/alpha_s = sigma_U^2 S/16 <= 3/32 = 0.094 for ANY bath, so
+   the candidate window is unreachable in the declared second-order form;
+   computed displacements 8.9e-06x to 2.2e-02x of alpha_s.  The vacuum-overlap
+   reading is near 1 and displaced (P4).  NOT claimed: closure, the channel-
+   factorization theorem (open, with kill criteria), or any licensed-surface
+   reproduction.  DELTA0 stays open; the proposal stands as the first
+   constraint-compliant candidate, graded honestly by its arithmetic.
+==============================================================================
+
+----- stderr -----
+

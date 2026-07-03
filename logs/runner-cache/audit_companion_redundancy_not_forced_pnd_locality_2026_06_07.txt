@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_redundancy_not_forced_pnd_locality_2026_06_07.py
+runner_sha256: 1253f72569c18e615caa5b8ed86ad6383e72f469ea0ac9b79ed019c56c397f21
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+REDUNDANCY IS NOT FORCED BY {DURABILITY/PND + Z^3-LOCALITY + LEADING-RANGE}  (NO-GO)
+==================================================================================
+
+-- B0. recoverable pointer info = Holevo deficit, NOT quantum mutual information --
+[PASS] anti-witness Z_S Z_1 Z_2=+1: fragment {1} has FULL quantum mutual info I(S:1)=1 bit yet ZERO Holevo pointer info (chi=0) -> mutual information is the WRONG QD measure (this refinement holds)
+       I(S:1)=1.000 bit, Holevo chi({1})=0.0e+00
+
+-- A. The R_delta=N broadcast exists only at a fine-tuned coupling form AND time --
+[PASS] at the CNOT point (g t = pi/4) the pure single-site-sum coupling gives R_delta = N = 4 (every fragment reaches the (1-delta) deficit) -- the broadcast EXISTS here
+       R_delta=4, per-fragment Holevo chi=1.000 = H_S=1.000
+[PASS] but at g t = pi/6 the SAME coupling gives per-fragment Holevo chi = 0.811 < 0.9*H_S, trace distance 0.866 -> R_delta = 0: the broadcast is FINE-TUNED in time, not robust
+       R_delta=0, Holevo chi=0.811, trace distance=0.866
+
+-- B. CORRECTED genericity over the full PND family H = c0 Z_S X_1 + c1 Z_S X_2 + c2 Z_S X_1 X_2 --
+[PASS] generic PND coupling [t=1]: R_delta = 2 (both single fragments reach the (1-delta) deficit) in only 2/300 samples -> generic PND is NOT redundant. Redundant broadcast is measure-zero, NOT the generic outcome
+       redundant in 2/300 = 0.7% of generic PND couplings
+[PASS] generic PND coupling [t=pi/4]: R_delta = 2 (both single fragments reach the (1-delta) deficit) in only 1/300 samples -> generic PND is NOT redundant. Redundant broadcast is measure-zero, NOT the generic outcome
+       redundant in 1/300 = 0.3% of generic PND couplings
+[PASS] concrete counterexample: H = 0.5(Z_S X_1 + Z_S X_2) + Z_S X_1 X_2 has the range-2 monitoring PRESENT (coeff 0.5) yet gives R_delta = 0 -> 'leading range present' does NOT force redundancy; a higher-range admixture destroys it
+       R_delta=0; Holevo chi({1})=-0.000 < 0.900
+
+-- C. PND alone does NOT force redundancy: a higher-range PND coupling gives R_delta=0 --
+[PASS] Z_S X_1 X_2 is pointer-non-demolition ([H, Z_S]=0) yet R_delta=0 for disjoint single-site fragments -> RECORD_FORMATION item 1's '[H,Pi_S]=0 => R_delta=n' holds only for the single-site-SUM coupling, not for general PND
+       ||[Z_S X_1 X_2, Z_S]||=0.0e+00, single-site R_delta=0
+
+SCORECARD PASS=7 FAIL=0
+VERDICT (NO-GO): redundant broadcast / local observability is NOT forced by {durability/PND (clean, redundancy-free) + Z^3-locality + leading-range}. It exists only at a measure-zero, fine-tuned set (pure single-site-sum monitoring at the CNOT time); a generic pointer-non-demolition coupling is non-redundant. The premise that does force it -- a pure sum of independent single-site monitorings (conditional independence / multiplicity) -- IS local observability restated. This CONFIRMS + QUANTIFIES the landed open-gate note: local observability is a NAMED OPEN PREMISE not supplied by the axioms. Audit lane sets the verdict.
+
+----- stderr -----
+

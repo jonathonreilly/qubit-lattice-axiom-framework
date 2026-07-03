@@ -1,25 +1,28 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_cube_perron_solve.py
-runner_sha256: 9fbe54e165903bc61a0734b955e4661aff2f04b20bd0dae6d055c789dbdd62f5
+runner_sha256: 9fae00288c51ae4040c26384c0513535988a209374656360281d093e7fe2e09e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.66
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 ==============================================================================
-SU(3) Tensor-Network Engine + L_s=2 APBC Cube Perron Solve
-(combined deliverable; supersedes the 5-PR roadmap)
+SU(3) Tensor-Network Engine + L_s=2 Quotient-Encoder Perron Solve
+(narrowed scope: all-forward quotient encoder + bipartite adjacency + trivial-sector Reference B recovery)
 ==============================================================================
+
+--- Section 0.1: source-boundary guard ---
+  PASS: source note declares the all-forward quotient-encoder boundary.
 
 --- Section A: SU(3) fusion engine sanity ---
   Dominant-weight box (NMAX=4): 25 weights
   Self-conjugate irreps in box: [(0, 0), (1, 1), (2, 2), (3, 3), (4, 4)]
   PASS: fusion engine module loaded with API exposed.
 
---- Section B: L_s=2 PBC spatial cube geometry ---
+--- Section B: L_s=2 all-forward quotient encoder ---
   Total directed links: 24 (3 directions x 8 starting positions)
   Total unique plaquettes: 12
-  PASS: 12 unique unoriented spatial plaquettes constructed.
+  PASS: 12 encoded quotient plaquette loops constructed.
 
     plaq[0]: start=(0, 0, 0), plane=(+x, +y), links=[(0, 0, 0, 0), (1, 0, 0, 1), (1, 1, 0, 0), (0, 1, 0, 1)]
     plaq[1]: start=(1, 0, 0), plane=(+x, +y), links=[(1, 0, 0, 0), (0, 0, 0, 1), (0, 1, 0, 0), (1, 1, 0, 1)]
@@ -29,7 +32,7 @@ SU(3) Tensor-Network Engine + L_s=2 APBC Cube Perron Solve
 --- Section C: link-orientation analysis ---
   PASS: each of 24 directed links is in exactly 2 plaquettes.
 
-  PASS: all 48 link-plaquette incidences are forward orientation.
+  PASS: all 48 link-plaquette incidences are forward by encoder convention.
 
 --- Section D: plaquette adjacency graph + 2-colorability ---
   Plaquette adjacency edges: 24 (one per directed link)
@@ -66,7 +69,7 @@ SU(3) Tensor-Network Engine + L_s=2 APBC Cube Perron Solve
   (lambda = (n,n) with n >= 1), this trace is the contraction of
   D^lambda representation matrices on the cube tensor network and
   REQUIRES the SU(3) Wigner intertwiner machinery (originally
-  PR 2 of the 5-PR roadmap). Without it, the (d_lambda c_lambda)^12
+  a separate future intertwiner-trace computation). Without it, the (d_lambda c_lambda)^12
   factor over-counts massively (it ignores the (1/d_lambda) factors
   from each link integration plus the actual intertwiner contractions).
 
@@ -86,13 +89,13 @@ SU(3) Tensor-Network Engine + L_s=2 APBC Cube Perron Solve
 
   PASS: trivial-sector P(6) recovers Reference B = 0.4225 to 1e-3.
 
---- Section H: honest verdict (combined PR scope) ---
+--- Section H: honest summary (narrowed note scope) ---
 
   STRUCTURAL FINDINGS (all PASS):
-    1. L_s=2 APBC cube has 12 unique unoriented spatial plaquettes,
+    1. L_s=2 quotient encoder has 12 encoded plaquette loops,
        24 directed links, 8 sites.
     2. Each directed link is in exactly 2 plaquettes.
-    3. All 48 link-plaquette incidences are FORWARD orientation.
+    3. All 48 link-plaquette incidences are FORWARD by encoder convention.
     4. The 2-link Haar selection rule forces lambda_B = bar(lambda_A)
        for adjacent plaquettes.
     5. Plaquette adjacency graph IS BIPARTITE (color partition 6:6).
@@ -115,7 +118,7 @@ SU(3) Tensor-Network Engine + L_s=2 APBC Cube Perron Solve
     Distance from upper bound:           0.170968
 
   HONEST PATH A: gap from upper bound is 0.171, not closer to
-  epsilon_witness = 3e-4. The combined PR establishes the structural
+  epsilon_witness = 3e-4. The narrowed note establishes the structural
   skeleton (geometry + bipartite finding + trivial-sector computation)
   but does NOT close the no-go quantitatively. The intertwiner traces
   for non-trivial self-conjugate and bipartite-alternating sectors
@@ -125,16 +128,16 @@ SU(3) Tensor-Network Engine + L_s=2 APBC Cube Perron Solve
   SUPPORT: real structural progress toward eventual closure.
 
 ==============================================================================
-SUMMARY: THEOREM PASS=7 SUPPORT=2 FAIL=0
+SUMMARY: THEOREM PASS=8 SUPPORT=2 FAIL=0
 ==============================================================================
 
 Headline:
-  Combined SU(3) tensor-network engine + L_s=2 cube structural analysis.
-  Cube geometry: 12 plaquettes, 24 directed links, all forward.
+  Narrowed SU(3) tensor-network engine + L_s=2 quotient-encoder analysis.
+  Encoder geometry: 12 plaquette loops, 24 directed links, all forward by convention.
   Plaquette graph BIPARTITE (NEW finding; admits alternating lambda).
   Trivial-sector P(6) = 0.422532 (recovers Reference B).
   Non-trivial-sector P(6) requires intertwiner traces (deferred).
-  Final verdict: HONEST PATH A (structural skeleton landed,
+  Final summary: HONEST PATH A (structural skeleton landed,
     quantitative closure deferred to intertwiner-PR follow-up).
 
 ----- stderr -----

@@ -9,7 +9,7 @@ ledger state; this note does not set or predict it.
 ## Purpose
 
 This companion repairs a narrow dependency and scope problem in
-[`work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md`](work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md).
+`work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md`.
 The parent atomic note uses the scalar lattice Hamiltonian
 
 ```text
@@ -45,7 +45,10 @@ Load-bearing links:
 - [`STAGGERED_HAMILTONIAN_DIRECTION_DECOMPOSITION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_HAMILTONIAN_DIRECTION_DECOMPOSITION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md)
   supplies the staggered Hermitian-lift comparison surface used only for the
   scope disambiguation in section 3.
-- [`work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md`](work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md)
+
+Target row label, not a source-graph dependency:
+
+- `work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md`
   is the parent note whose dependency chain this companion narrows.
 
 ## 1. Scalar Lattice-Kinetic Stencil

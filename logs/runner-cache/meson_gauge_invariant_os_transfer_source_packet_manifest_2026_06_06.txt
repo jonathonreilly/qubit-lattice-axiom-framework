@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.py
+runner_sha256: 532bfa4e8f46ca88c098e396083b3fd86f842093712894eed8c411adadc0f998
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+======================================================================================
+MESON OS TRANSFER: RESTRICTED SOURCE PACKET MANIFEST
+======================================================================================
+[PASS] manifest_path_exists:note: docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
+[PASS] manifest_path_exists:primary_runner: scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] note_names_manifest_path:primary_runner: scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py is named in docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
+[PASS] manifest_path_exists:primary_cache: logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt
+[PASS] note_names_manifest_path:primary_cache: logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt is named in docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
+[PASS] note_names_manifest_artifact:manifest_runner: scripts/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.py is named in docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
+[PASS] note_names_manifest_artifact:manifest_cache: logs/runner-cache/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.txt is named in docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
+[PASS] note_names_manifest_artifact:manifest_json: outputs/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.json is named in docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
+[PASS] source_full_length:primary_runner: scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py has 47163 bytes
+[PASS] source_contains:primary_runner:def block_metric_per_mode: def block_metric_per_mode present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] source_contains:primary_runner:def block_fwd_propagator_berezin: def block_fwd_propagator_berezin present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] source_contains:primary_runner:def block_metric_spacetime_eigs: def block_metric_spacetime_eigs present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] source_contains:primary_runner:def meson_correlator_full_berezin: def meson_correlator_full_berezin present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] source_contains:primary_runner:def u_averaged_meson: def u_averaged_meson present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] source_contains:primary_runner:det(M[U]) is ACTUALLY applied: det(M[U]) is ACTUALLY applied present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] source_contains:primary_runner:print(f"SCORECARD PASS={npass} FAIL={nfail}"): print(f"SCORECARD PASS={npass} FAIL={nfail}") present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] cache_runner_matches:primary_cache: scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py == scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] cache_sha_fresh:primary_cache: cache sha ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5 current sha ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5
+[PASS] cache_exit_ok:primary_cache: exit_code=0 status=ok
+[PASS] cache_contains:primary_cache:status: ok: status: ok
+[PASS] cache_contains:primary_cache:P_block : Gf Berezin(M^-1) vs operator(e^-2H): P_block : Gf Berezin(M^-1) vs operator(e^-2H)
+[PASS] cache_contains:primary_cache:P1      : per-config Berezin(4-ferm) == operator meson: P1      : per-config Berezin(4-ferm) == operator meson
+[PASS] cache_contains:primary_cache:P0      : det-weighted avg Berezin == operator meson: P0      : det-weighted avg Berezin == operator meson
+[PASS] cache_contains:primary_cache:K2 BREAK: per-mode-factorized Berezin gap: K2 BREAK: per-mode-factorized Berezin gap
+[PASS] cache_contains:primary_cache:K5 GAUGE: Wilson-line covariance residual: K5 GAUGE: Wilson-line covariance residual
+[PASS] cache_contains:primary_cache:This verifies the gauge-invariant, NUMBER-CONSERVING MESON Berezin==operator: This verifies the gauge-invariant, NUMBER-CONSERVING MESON Berezin==operator
+[PASS] cache_contains:primary_cache:SCORECARD PASS=64 FAIL=0: SCORECARD PASS=64 FAIL=0
+[PASS] note_has_source_packet_reaudit_section: meson note has the 2026-06-06 repair section
+[PASS] note_preserves_bounded_boundary: repair section states that status movement remains audit-owned
+======================================================================================
+SUMMARY: MESON OS TRANSFER SOURCE PACKET PASS=29 FAIL=0
+======================================================================================
+Output written: outputs/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.json
+
+----- stderr -----
+

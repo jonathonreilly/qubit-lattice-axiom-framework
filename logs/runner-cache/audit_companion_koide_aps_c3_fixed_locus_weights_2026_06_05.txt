@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py
+runner_sha256: 49f84be942449ca55ec45b1ec9382e4b19313a73b5b3f2a55586c4812ae7905b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.46
+status: ok
+----- stdout -----
+==========================================================================
+KOIDE APS C_3 FIXED-LOCUS (1,2) WEIGHTS AND LOCAL DENSITY -- NARROW COMPANION
+==========================================================================
+=== PART A: C_3[111] fixed locus + transverse (1,2) weights ===
+  [PASS] fixed-locus.1 C_3[111] Rodrigues(2pi/3,(1,1,1)) == cyclic axis permutation P: body-diagonal rotation is the cyclic relabelling of the three lattice axes
+  [PASS] fixed-locus.2 char poly of P is 1 - x^3 (eigenvalues = cube roots of unity; p=3 forced): det(P - xI) = 1 - x**3
+  [PASS] A2b. three distinct roots, each a cube root of unity: roots = [1, -1/2 - sqrt(3)*I/2, -1/2 + sqrt(3)*I/2]
+  [PASS] fixed-locus.3 rank(P - I) = 2 -> fixed locus is the 1-dim body diagonal (codim 2 in R^3): rank(P-I) = 2; fixed dir (1,1,1) since P*(1,1,1)=(1,1,1)
+  [PASS] A3b. (1,1,1) is the fixed direction: body diagonal fixed
+  [PASS] A4. transverse eigenvalues are {omega, omega^2} (primitive cube roots): transverse eigvals = [-1/2 - sqrt(3)*I/2, -1/2 + sqrt(3)*I/2]
+  [PASS] A4b. transverse weights read off as (a,b) = (1,2) mod 3: (a,b) = (1,2)
+
+=== PART B: (1,2) is FORCED (unique trace-free pair) -> density 2/9 ===
+  [PASS] B1. trace-free transverse pair (a+b=0 mod 3) is UNIQUELY {(1,2),(2,1)}: trace-free pairs = [(1, 2), (2, 1)]; (1,1),(2,2) have a+b != 0 mod 3
+  [PASS] B1b. equivalent: det of transverse action is the singlet (omega^{a+b}=1) only for (1,2)/(2,1): omega^{1+2}=1; omega^{1+1}=omega^2!=1; omega^{2+2}=omega!=1
+  [PASS] B2. local density L_3(1,2) = 2/9 (forced trace-free pair): L_3(1,2) = 2/9
+  [PASS] B2b. degenerate L_3(1,1) = L_3(2,2) = 1/9 != 2/9: degenerate (non-trace-free) weights give 1/9, not 2/9
+  [PASS] B3. (omega-1)(omega^2-1) = 3 exactly (sum collapse: 2*(1/3)/3 = 2/9): (omega-1)(omega^2-1) = 3
+  [PASS] B4. L_3(1,2) = L_3(2,1) (well-defined on the unordered forced pair): swap-invariant
+
+=== BOUNDARY DIAGNOSTIC C: local ABSS prerequisites (not part of narrowed claim) ===
+  [PASS] boundary.C1 normal-action Morse-Bott: det(R_normal - I) = 3 != 0: isolated transverse fixed point is non-degenerate
+  [PASS] boundary.C2 S^3 = SU(2) parallelizable (3 independent left-inv fields) -> w_2=0 -> spin: i^2=j^2=k^2=-1; global trivialization of TS^3 exists
+  [PASS] boundary.C2b H^1(S^3 x R; Z_2) = 0 (S^3 simply connected) -> spin structure UNIQUE: pi_1(S^3)=0 -> H_1=0 -> H^1(.;Z_2)=0
+  [PASS] boundary.C3 SO(3) C_3 lifts to unit quaternion q in SU(2) with |q|=1 and q^3=-1: |q|^2=1, q^3 scalar=-1
+  [PASS] boundary.C4 pi_i(PL/O)=0 for i<=4 (Cerf-Munkres) -> local PL smoothability: pi_i(PL/O), i=0..4: [0, 0, 0, 0, 0]
+  [PASS] boundary.C5 local ABSS prerequisites hold only as a diagnostic conditional on PL S^3 x R: conditional on the ambient being PL S^3 x R (that identification is PART D)
+
+=== BOUNDARY DIAGNOSTIC D: global Cl(3)/Z^3 -> PL S^3 x R remains open ===
+  [PASS] boundary.D1 finite cone-cap boundary has chi = 2 (a 2-sphere), reproven from V-E+F: octahedral boundary chi = 6-12+8 = 2
+  [PASS] boundary.D1b cone-cap (solid) has chi = 1 (contractible), reproven from V-E+F-T: cap chi = 7-18+20-8 = 1
+  [PASS] boundary.D2 chi cannot distinguish S^3 from lens / S^1xS^2 (all chi=0) -> open gap real: Euler char is blind among closed orientable 3-manifolds; needs Perelman/Moise/van Kampen
+  [PASS] boundary.D3 global PL S^3 x R route recorded as a LIVE open bridge (not a no-go): route = discharge Perelman/Moise/van Kampen on the framework surface (open target)
+
+=== PART E: composite (narrowed re-audit case) ===
+  [PASS] E1. A/B narrowed fixed-locus/local-density statement is fully executable: fixed-locus (1,2) weights forced + local density 2/9
+  [PASS] boundary.E2 C/D diagnostics are non-claim boundary checks only: local ABSS/global PL material remains diagnostic, not part of narrowed claim
+
+TOTAL: 25 PASS / 0 FAIL
+
+Verdict (narrowed):
+  - C_3[111] fixed locus forces p=3 and transverse weights (1,2),
+    the UNIQUE trace-free pair -> local Lefschetz density 2/9.
+  - Parts C/D are boundary diagnostics only: local/global ABSS is
+    NOT part of this row's narrowed audited claim.
+  - The GLOBAL Cl(3)/Z^3 -> PL S^3 x R identification remains a
+    named OPEN bridge for future work.
+
+  KOIDE_APS_C3_FIXED_LOCUS_LOCAL_DENSITY_NARROW=TRUE
+
+----- stderr -----
+

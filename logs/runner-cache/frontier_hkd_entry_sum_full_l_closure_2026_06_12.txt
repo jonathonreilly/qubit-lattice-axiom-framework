@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hkd_entry_sum_full_l_closure_2026_06_12.py
+runner_sha256: 1625130762f336e5ce8e7146b4ee3ba474a6898bdc270f3001b719a9ce96cce5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.54
+status: ok
+----- stdout -----
+H_kd entry-support full-L period-parity runner
+parameters: d=3, t=1.0, mu=5.0
+anchor_L_values=(8, 10, 12, 14, 16, 18); full_L_values=(8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40)
+chart family: K-periods=(L/2,L,L/2)
+S0 anchors
+PASS: S0 L=8 H_kd_after reproduces frozen anchor :: computed=0.0000000000000000e+00, frozen=0.0000000000000000e+00, anchor_tol=1.0e-12, protection_tol=1.0e-14
+PASS: S0 L=10 H_kd_after reproduces frozen anchor :: computed=7.4832497863019298e-01, frozen=7.4832497863019298e-01, anchor_tol=1.0e-12, protection_tol=1.0e-14
+PASS: S0 L=12 H_kd_after reproduces frozen anchor :: computed=0.0000000000000000e+00, frozen=0.0000000000000000e+00, anchor_tol=1.0e-12, protection_tol=1.0e-14
+PASS: S0 L=14 H_kd_after reproduces frozen anchor :: computed=7.4732149222164002e-01, frozen=7.4732149222164002e-01, anchor_tol=1.0e-12, protection_tol=1.0e-14
+PASS: S0 L=16 H_kd_after reproduces frozen anchor :: computed=0.0000000000000000e+00, frozen=0.0000000000000000e+00, anchor_tol=1.0e-12, protection_tol=1.0e-14
+PASS: S0 L=18 H_kd_after reproduces frozen anchor :: computed=7.4728589243652488e-01, frozen=7.4728589243652488e-01, anchor_tol=1.0e-12, protection_tol=1.0e-14
+PASS: S0 anti-fabrication H_kd_before is nonzero on every anchor L :: min_H_kd_before=7.4728589243652488e-01, nonzero_tol=1.0e-12
+PASS: S0 step-1 dense Schur anchor matches frozen zero error :: L=8, computed_error=0.000e+00, frozen=0.0e+00, tol=1.0e-12
+PASS: S0 step-1 eliminated block offdiagonal matches frozen zero :: L=8, computed_offdiag=0.000e+00, frozen=0.0e+00, tol=1.0e-12
+PASS: S0 dense Hamiltonian construction is restricted to the frozen anchor grid :: dense_L_values=(8, 10, 12, 14, 16, 18), max_dense_L=18
+S1 L-independent survivor criterion
+  criterion: kept-decimated survivor after even-d2 truncation is the parity cell left_chart=0, right_chart=1, d2=0; in this cell chart_pair_parity=1 != d2_parity=0, so each nonzero survivor is misaligned.
+  per-axis dependence: even period has flip support {0}; odd period has flip support {0,1}.  Only period parity enters the existence criterion.
+S1 anchor entry-decomposition table
+  L   periods        all_even  H_kd_before        H_kd_after         nonzero_before  d2_even_survivors  aligned  misaligned
+   8  (4, 8, 4)      True      7.5322071744240682e-01  0.0000000000000000e+00            4096                  0        0           0
+  10  (5, 10, 5)     False     7.4832497863019309e-01  7.4832497863019298e-01           15625               5700        0        5700
+  12  (6, 12, 6)     True      7.4747736396794551e-01  0.0000000000000000e+00           46656                  0        0           0
+  14  (7, 14, 7)     False     7.4732149222164002e-01  7.4732149222164002e-01          117649              43512        0       43512
+  16  (8, 16, 8)     True      7.4729172444226410e-01  0.0000000000000000e+00          262144                  0        0           0
+  18  (9, 18, 9)     False     7.4728589243652488e-01  7.4728589243652488e-01          531441             197640        0      197640
+PASS: S1 dense Hamiltonian misaligned counts reproduce frozen grid counts :: observed=((8, 0), (10, 5700), (12, 0), (14, 43512), (16, 0), (18, 197640))
+PASS: S1 combinatorial predictor reproduces frozen grid counts :: observed=((8, 0), (10, 5700), (12, 0), (14, 43512), (16, 0), (18, 197640))
+PASS: S1 combinatorial predictor equals Hamiltonian truth on the anchor grid :: combinatorial=((8, 0), (10, 5700), (12, 0), (14, 43512), (16, 0), (18, 197640)), dense=((8, 0), (10, 5700), (12, 0), (14, 43512), (16, 0), (18, 197640))
+PASS: S1 axis flip support depends only on period parity :: signature=((0, (0,), (0,)), (1, (0, 1), (0, 1)))
+S2 full-L combinatorial support dichotomy table
+  L   periods          q_parity   count       exists  L!=0mod4  some_q_odd
+   8  (4, 8, 4)        (0, 0, 0)           0  False   False     False     
+  10  (5, 10, 5)       (1, 0, 1)        5700  True    True      True      
+  12  (6, 12, 6)       (0, 0, 0)           0  False   False     False     
+  14  (7, 14, 7)       (1, 0, 1)       43512  True    True      True      
+  16  (8, 16, 8)       (0, 0, 0)           0  False   False     False     
+  18  (9, 18, 9)       (1, 0, 1)      197640  True    True      True      
+  20  (10, 20, 10)     (0, 0, 0)           0  False   False     False     
+  22  (11, 22, 11)     (1, 0, 1)      660660  True    True      True      
+  24  (12, 24, 12)     (0, 0, 0)           0  False   False     False     
+  26  (13, 26, 13)     (1, 0, 1)     1802892  True    True      True      
+  28  (14, 28, 14)     (0, 0, 0)           0  False   False     False     
+  30  (15, 30, 15)     (1, 0, 1)     4258800  True    True      True      
+  32  (16, 32, 16)     (0, 0, 0)           0  False   False     False     
+  34  (17, 34, 17)     (1, 0, 1)     9030672  True    True      True      
+  36  (18, 36, 18)     (0, 0, 0)           0  False   False     False     
+  38  (19, 38, 19)     (1, 0, 1)    17609580  True    True      True      
+  40  (20, 40, 20)     (0, 0, 0)           0  False   False     False     
+PASS: S2 full-L support criterion has zero counterexamples on every even L in {8,...,40} :: counterexamples=(), frozen=0
+PASS: S2 existence classes are determined by chart-period parity :: classes=(((0, 0, 0), (False,)), ((1, 0, 1), (True,)))
+S3 L=22 combinatorial witness
+  L=22 periods=(11, 22, 11), witness=((0, 0, 0), (0, 1, 6), (0, 1, -5), 0, 1), misaligned_count=660660
+PASS: S3 L=22 witness uses a=(q+1)/2 on an odd axis and is a valid surviving misaligned entry :: left=(0, 0, 0), right=(0, 1, 6), delta=(0, 1, -5), d2_parity=0, chart_pair_parity=1, frozen=((0, 0, 0), (0, 1, 6), (0, 1, -5), 0, 1), count=660660, witness_magnitude_min=1.0e-06 applies only to dense anchors
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

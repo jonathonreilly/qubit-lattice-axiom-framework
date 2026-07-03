@@ -23,7 +23,7 @@ is introduced.
 
 ## 2026-06-04 Source Packet Exposure Repair
 
-The current audit blocker asks for the complete untruncated source of
+The current audit blocker asks for the complete source of
 `scripts/frontier_staggered_backreaction_prototype.py` and a rerun of the
 restricted packet. The source packet is now explicit:
 
@@ -37,7 +37,7 @@ restricted packet. The source packet is now explicit:
 The source packet verifier above checks that every path is linked from this
 note, that the packet checker imports the Green-closure source, that the
 Green-closure source imports the prototype helper, that the load-bearing helper
-functions are present in the untruncated source files, and that the caches are
+functions are present in the complete source files, and that the caches are
 SHA-fresh. This does not set an audit verdict; it makes the same bounded packet
 reauditable with the missing helper source exposed.
 

@@ -1,0 +1,88 @@
+===== runner cache v1 =====
+runner: scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py
+runner_sha256: b3e3b36286267b8d91c8440501429289b8ace7a6e6c3d7c66bd2c5e7f6f42d49
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.82
+status: ok
+----- stdout -----
+
+========================================================================================
+Setup - circulance and phase routes
+========================================================================================
+PASS setup: three directed edge correlators are equal by circulance :: max residual=2.371e-16
+PASS setup: phi = 3 arg g(-1) agrees with directed-product phase :: wrapped residual=2.665e-15
+PASS setup: polar_u/link route agrees with directed-product route :: wrapped residual=0.000e+00
+
+========================================================================================
+Readback and projector-blind symbolic checks
+========================================================================================
+PASS readback-symbolic: f = identity gives directed product B^3 exp(3 i delta)
+PASS readback-scan: identity cycle phase equals 3 delta numerically :: max residual=4.441e-16
+PASS projector-symbolic: Fourier eigenvector matrix diagonalizes H(delta) with no delta-moving eigenvectors
+PASS projector-symbolic: P_k entries are omega^{k(x-y)}/3 and carry no delta
+PASS projector-scan: all nonzero rank-one/rank-two band projectors have delta-independent phi :: max spread=0.000e+00
+
+========================================================================================
+Thermal state-contingent branch
+========================================================================================
+PASS thermal-K-odd: thermal phi is K-ODD, phi(-delta) = -phi(delta) :: max wrapped residual=0.000e+00
+PASS thermal-scan: thermal phi is delta-dependent for beta in {1,4} :: variations=beta=1:2.741663, beta=4:2.914294
+thermal grid spread at delta=2/9:
+  beta=1: min=-2.915826787849288 max=-1.566908976854941 spread= 1.348917810994347
+  beta=4: min=-3.141181641076278 max=-0.108855060760363 spread= 3.032326580315915
+PASS thermal-grid: (a,B)-grid spread is order 0.2-3.0 and state-class-contingent
+thermal cross-f spread at delta=2/9: min=0.017480638969558 max=1.655148925786208
+PASS thermal-grid: cross-f spread is computed and nontrivial :: max |wrapped beta4-beta1|=1.655149
+thermal delta=2/9 comparison table (distance uses |phi|):
+  beta=1 a= 0.00 B= 1.00 phi=-2.492499460311642 |phi|= 2.492499460311642 nearest=pi/3:1.445302
+  beta=1 a= 0.50 B= 1.00 phi=-2.294533331085194 |phi|= 2.294533331085194 nearest=pi/3:1.247336
+  beta=1 a= 1.00 B= 2.00 phi=-2.058481409211523 |phi|= 2.058481409211523 nearest=pi/3:1.011284
+  beta=4 a= 0.00 B= 1.00 phi=-2.922257671611519 |phi|= 2.922257671611519 nearest=pi/3:1.875060
+  beta=4 a= 0.50 B= 1.00 phi=-1.955905735770534 |phi|= 1.955905735770534 nearest=pi/3:0.908708
+  beta=4 a= 1.00 B= 2.00 phi=-2.184762772542016 |phi|= 2.184762772542016 nearest=pi/3:1.137565
+  beta=4 a=-0.50 B= 1.50 phi=-3.131734222491982 |phi|= 3.131734222491982 nearest=pi/3:2.084537
+PASS thermal-comparison: no tested thermal class lands within 0.1 of any candidate constant
+
+========================================================================================
+Cos(3 delta) inversion and dichotomy assembly
+========================================================================================
+PASS inversion-symbolic: determinant has derived coefficient 3 via cos(3 delta)
+PASS inversion-numeric: e3 symmetric data recover |delta| on (0, pi/3) :: max residual=2.065e-14
+PASS inversion-uniqueness: cos(3 delta) is strictly monotone on (0, pi/3) :: max derivative=-9.000e-04
+PASS dichotomy (tested classes only, not surface exhaustion): each tested class falls in exactly one of {readback, blind, state-contingent} :: {'identity': (True, False, False), 'rank-one/rank-two projectors': (False, True, False), 'thermal beta=1': (False, False, True), 'thermal beta=4': (False, False, True)}
+
+========================================================================================
+B-checks - note firewall, open targets, links, and status
+========================================================================================
+PASS B1: firewall and open-target sentences are present
+PASS B2: forbidden overclaim phrases are absent :: checked=closes, exhausted, only path, only route, underivable theorem, carrier-class elimination pattern, removes a state-independent carrier-angle middleman
+PASS B3: R-eta firewall is explicit and no fixed r value is used
+PASS B4: No-promotion statement present
+PASS B5: status-authority and claim-type lines present
+PASS B6: readback consistency-vs-derivation sentence present
+PASS B7: markdown link inventory is <= 3 and exactly the chosen dependency links :: links=[('`MINIMAL_AXIOMS_2026-06-05.md`', 'MINIMAL_AXIOMS_2026-06-05.md'), ('`REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`', 'REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md')]
+PASS B8: context references are backticked
+PASS B9: target files exist and no runner cache path is declared
+PASS B10: No-Go Discipline Gate is present and surface-local
+PASS B11: carrier-class exhaustion remains explicit future work
+PASS B12: title and N2 are scoped to the tested classes, not surface-wide exhaustion
+PASS B13: 2026-06-20 repair section narrows to the bounded checks and frames exhaustion as an open bridge
+
+========================================================================================
+Manual git diff --stat equivalent (no git invoked)
+========================================================================================
+ docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md | 261 +
+ scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py | 377 +
+ 2 files changed, 638 insertions(+)
+
+SUMMARY:
+  Identity phases are readback: phi=3 delta exactly.
+  Spectral projector phases are delta-blind because Fourier projectors do not move.
+  Thermal phases are K-odd and state-contingent registered data, not universal readout identifications.
+  Symmetric data recover |delta| through the derived cos(3 delta) inversion, leaving the named next paths open.
+
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

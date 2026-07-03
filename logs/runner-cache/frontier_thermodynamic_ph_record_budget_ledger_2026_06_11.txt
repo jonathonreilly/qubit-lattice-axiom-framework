@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/frontier_thermodynamic_ph_record_budget_ledger_2026_06_11.py
+runner_sha256: 1625774325ba42ad27ad07e76de7e00b4e75c7205541a9c3d60bbe2fc46fdffe
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+==============================================================================
+L1  Full-alignment count/marginal-sum entropy coincidence, with
+    off-alignment divergence disclosed
+==============================================================================
+  [PASS] L1a clean records form one per broadcast step: counts [0, 1, 2, 3]
+  [PASS] L1b each record CONSUMES exactly one aligned-blank register: blanks [3, 2, 1, 0]
+  [PASS] L1c at full Z-alignment each record coincides with one bit of marginal-sum entropy: Sum_i S_i = [0.0, 1.0, 2.0, 3.0] -- a FULL-ALIGNMENT coincidence
+  [PASS] L1d anti-aligned (|1>) registers are equally consumable (the resource class is Z-aligned purity, not the |0> label): records [0, 1, 2, 3]
+  [PASS] L1e the exact count=production identity is a FULL-ALIGNMENT coincidence (measure-zero in pointer angle): off-alignment each written register follows smooth H(cos^2 t), while the integer count is thresholded  (t=0.2: H=0.239855, sum=0.719564, N=0; t=0.5: H=0.777748, sum=2.333243, N=3; t=0.9: H=0.962436, sum=2.887309, N=3; t=1.2: H=0.561001, sum=1.683004, N=0)
+  [PASS] L1f partially-mixed Z pointer diverges too: records=3 by connected correlator, marginal-sum production=3*H(0.3) != 3, and boundary register deficit still bounds N  (corr=0.84, sum=2.643873, deficit=3.000000)
+==============================================================================
+L2  Deficit alone is NOT the resource: alignment matters (Penrose-deficit
+    necessary, not sufficient; alignment is basis-relative)
+==============================================================================
+  [PASS] L2a X-aligned pure registers (same 1-bit deficit vs max-mixed) yield ZERO records and ZERO marginal-sum entropy change (CNOT-transparent): records [0, 0, 0, 0]
+  [PASS] L2b maximally-mixed registers (ZERO deficit) yield ZERO records and zero marginal-sum entropy change: records [0, 0, 0, 0]
+  [PASS] L2c the specific clean-reset transfer channel (arbitrary old fragments -> clean broadcast, no sink) has rank 2, not 16
+  [PASS] L2d alignment is basis-relative and unitarily mutable: the aligned-count bound FAILS under closed pre-processing; the basis-free register deficit bound survives  (aligned 0->3, N=3, deficit=3.000000)
+==============================================================================
+L3  The sink escape conserves the ledger (reset-with-sink, re-proved)
+==============================================================================
+  [PASS] L3a the reset-with-sink map (s,e,g) -> (s, g xor s, e) is an exact permutation (the landed escape, re-proved)
+  [PASS] L3b the sink's blanks are consumed 1:1 (the sink afterwards holds the old fragment word; it is blank only if the fragments already were): the regress is priced, total records <= TOTAL initial register deficit cashable as aligned blanks (fragments + sink hierarchy)
+  [PASS] L3c equality exhibit: blank fragments (3) + blank sink (3) = budget 6 -> 3 records, reset via sink, 3 more records = 6 records, budget exhausted (arithmetic on L1+L3a/b)
+==============================================================================
+L4  The quantitative clause: realized record depth N => boundary deficit
+    >= N bits (derived implication; N itself is registered data)
+==============================================================================
+  [PASS] L4a the one-directional bound: realized record depth <= boundary register-sector deficit (basis-free); converse fails (L2a); strict gap exhibited (the Penrose regime is the huge-gap case)  (superposed pointer, 3 blanks: N=3, deficit=3.000000; superposed pointer, 2 blanks + 1 X-pure: N=2, deficit=3.000000; superposed pointer, 1 blank + 2 mixed: N=1, deficit=1.000000; eigenstate pointer, 3 blanks: N=0, deficit=3.000000; partial-superposition pointer t=0.2: N=0, deficit=3.000000; partial-superposition pointer t=0.5: N=3, deficit=3.000000; partial-superposition pointer t=0.9: N=3, deficit=3.000000; partial-superposition pointer t=1.2: N=0, deficit=3.000000; partially-mixed Z pointer p=0.3: N=3, deficit=3.000000; Hadamard-regenerated X-pure registers: N=3, deficit=3.000000; partial broadcast strict gap: N=1, deficit=3.000000)
+  [PASS] L4b the count/marginal-sum entropy coincidence is retained on the full-alignment broadcast exhibits only
+  [PASS] L4c the deficit reading: a boundary that supports N records held register-sector deficit >= N bits -- the boundary was wound up by AT LEAST as much as the world has registered (lower bound)
+==============================================================================
+L5  Disclosure: global fine-grained entropy is CONSTANT (unitarity) --
+    marginal-sum entropy is correlation bookkeeping, not Clausius production
+==============================================================================
+  [PASS] L5a global fine-grained S is constant (0 bits, pure, all steps): the deficit/marginal-sum entropy statements are about generated total correlation and register-sector resource bookkeeping, never global fine-grained entropy -- the standard coarse/fine distinction, disclosed  (global S [0.0, 0.0, 0.0, 0.0])
+  [PASS] L5b the coarse and fine ledgers differ by exactly the generated correlations (marginal-sum 3 bits vs joint fragment entropy 1 bit at full broadcast: 2 bits of correlation): nothing is hidden in the accounting
+==============================================================================
+TOTAL: PASS=18 FAIL=0
+==============================================================================
+SCOPE: In the broadcast record model, the thermodynamic past hypothesis's
+  quantitative clause is treated as a consistency relation among realized-state
+  data: realized record depth N implies boundary register-sector deficit >= N
+  bits (L4).  At full Z-alignment, count and marginal-sum entropy coincide,
+  but that exactness is a FULL-ALIGNMENT coincidence: off alignment,
+  marginal-sum entropy is smooth and the record count is thresholded (L1).
+  marginal-sum entropy (generated total correlation; un-produces under the
+  inverse step -- correlation bookkeeping, not Clausius production) names the
+  coarse register-sector quantity.  Alignment is basis-relative and unitarily
+  mutable: the aligned-count bound fails under closed Hadamard pre-processing,
+  while the basis-free register deficit bound survives (L2d).  The sink
+  escape conserves the ledger (L3).  The boundary was wound up by AT LEAST as
+  much as the world has registered.  NOT claimed: heat bath, temperature,
+  rate, cost law, boundary preparation dynamics, derivation of N, anything
+  outside the broadcast model.
+  the past hypothesis's specialness/atypicality claim (low-entropy AMONG PERMITTED STATES -- which needs a measure over states, exactly what the realized-state primitive forbids supplying) is NOT derived; the existing carve-out stands unchanged.
+  No new axiom/primitive/measure/weight; r untouched.  Audit lane grades.
+
+----- stderr -----
+

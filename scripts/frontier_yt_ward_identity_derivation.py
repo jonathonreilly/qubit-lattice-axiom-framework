@@ -1,53 +1,85 @@
 #!/usr/bin/env python3
 """
-H_unit Scalar-Singlet Matrix Element Core Verifier: y_t_bare = g_bare/sqrt(6)
+Staggered Vector Ward Identity + H_unit Matrix-Element Verifier
 ================================================================================
 
-Independently reconstructs every load-bearing coefficient of the support /
-open-gate note YT_WARD_IDENTITY_DERIVATION_THEOREM.md via direct computation.
-No hard-coded physical y_t/g_s bridge assumptions appear in the load-bearing
-checks; every core pass is an arithmetic check of a computed quantity against
-a predicted value.
+Verifies every load-bearing step of docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md:
 
-STRUCTURE:
+  (W1) the exact lattice Noether / Schwinger-Dyson vector Ward identity of the
+       staggered Q_L action on an explicit finite Z^3 block with an arbitrary
+       fixed SU(3) link background, COMPUTED (not asserted) at the kernel level
+       and at the propagator level, including contact terms;
+  (W2) falsification legs: the same residual is COMPUTED to be NONZERO when the
+       current is deliberately mismatched to the action's symmetry (gauge links
+       stripped from the point-split current; eta phases mismatched) and when
+       the symmetry itself is explicitly broken (iso-split bare mass), and the
+       broken-symmetry residual is shown to equal the exact mass-insertion term;
+  (W3) an exact-arithmetic certificate (sympy rationals, exact unimodular
+       links): the Ward residual is EXACTLY zero, not merely < 1e-12;
+  (T1) the H_unit scalar-singlet matrix-element corollary
+       y_t_bare = g_bare/sqrt(6) (Clebsch-Gordan + canonical normalization),
+       with the singlet uniformity derived from symmetry (Schur/commutant)
+       rather than asserted.
 
-  Block 1:  Selected (2,3) block dimensions from the retained native
-            nonabelian SU(2) x SU(3) surface.
-  Block 2:  Canonical Higgs Z = sqrt(6) from unit-residue 2-point function.
-            Computes the 2-point function residue by enumerating all
-            (alpha, a, beta, b) index contractions on the Q_L block.
-  Block 3:  Cross-check against the YCP:112 free-theory singlet value
-            (Tr[M M^dag]_singlet = N_c |G_0|^2); our formula reproduces it.
-  Block 4:  Color Fierz identity SU(3), verified by explicit computation
-            of sum_A T^A_{ab} T^A_{cd} from Gell-Mann matrices against the
-            Fierz prediction (YCP_EW:169-172).  Color-singlet coefficient
-            extracted: -1/(2 N_c).
-  Block 5:  Direction uniqueness -- other irreps ((1,8), (3,1), ...) give
-            different Fierz coefficients.  Verifies the scalar singlet is
-            selected uniquely by the stated operator quantum numbers.
-  Block 6:  Q_L singlet composite: unit-normalized state construction;
-            Clebsch-Gordan on basis components (all six components give
-            1/sqrt(6) by singlet uniformity).
-  Block 7:  UV 4-fermion perturbative coefficient C_pert = g_s^2 / (2 N_c)
-            from Fierz identity.  Computed at machine precision.
-  Block 7a: UV 4-fermion strong-coupling coefficient C_strong = 1/N_c^2
-            from Haar-sampled SU(3) one-link integral (100,000 samples).
-            Confirms pert != strong; tadpole-improved surface selects pert.
-  Block 8:  Dirac Fierz decomposition of (gamma^mu)(gamma_mu) explicitly
-            from 4x4 Dirac matrices.  Computes each Fierz basis coefficient
-            c_S, c_P, c_V, c_A, c_T independently.  Verifies Clifford algebra.
-  Block 9:  Tadpole-improved NLO systematic:
-            compute alpha_LM, C_F from inputs, derive NLO = alpha_LM*C_F/(2pi).
-            No hard-coded y_t.
-  Block 10: Conditional canonical-surface tadpole context.  Computes the
-            OGE-side coefficient and shows what the older Planck-ratio
-            statement would require, but does not certify that bridge as
-            load-bearing for this source note.
-  Block 11: Direct H_unit matrix-element computation of y_t_bare = 1/sqrt(6).
+WARD BLOCKS (load-bearing for the Ward-identity theorem):
 
-Every algebraic coefficient checked by this support runner is COMPUTED, not
-assumed. The runner does not certify the physical top-Yukawa readout map or
-shared tadpole transport as first-principles closures.
+  Block W1:  Staggered Q_L action on a (2,3,4) periodic Z^3 block with random
+             SU(3) links; kernel-level Noether identity
+             sum_mu [J_mu(x) - J_mu(x-mu)] = [E_x, M] at machine precision.
+  Block W2:  Propagator-level Ward identity with contact terms,
+             sum_mu D^-_mu <V_mu(x) psi(y) psibar(z)> = (d_{xz}-d_{xy}) G_{yz},
+             full Wick (connected + disconnected), all sites; current
+             conservation <div V> = 0; exactness under a random gauge
+             transformation of the link background.
+  Block W3:  FALSIFICATION leg A: gauge links stripped from the point-split
+             current -> residual is large and nonzero; restoring U = 1
+             links removes the failure (locates it in gauge covariance).
+  Block W4:  FALSIFICATION leg B: eta phases mismatched between current and
+             action -> residual nonzero (max over sites); vanishes only at
+             sites where all eta = +1 (locality of the mismatch).
+  Block W5:  Iso-vector (charged) current: conserved at degenerate bare mass;
+             with split masses (m1 != m2) the Ward identity acquires exactly
+             the mass-insertion term (m2-m1) psibar tau+ psi -- verified at
+             machine precision WITH the insertion, nonzero WITHOUT it.
+  Block W6:  EXACT-arithmetic certificate: 2x3 staggered block, exact
+             unimodular Gaussian-rational links, sympy exact inverse; kernel
+             and propagator Ward residuals are exactly zero; the dropped-link
+             falsification residual is an exact nonzero rational.
+  Block W7:  Symmetry => singlet uniformity: the commutant of the actual
+             U(2)_iso x SU(3)_color product action on C^2 x C^3 is computed
+             to be 1-dimensional (Schur), forcing the invariant unit-norm
+             bilinear to have all 6 components equal to 1/sqrt(6).
+
+ALGEBRAIC BLOCKS (load-bearing for the (T1) matrix-element corollary):
+
+  Block 1:   Q_L = (2,3) block dimensions (cited framework input).
+  Block 2:   Canonical Z = sqrt(6) from unit-residue 2-point function by
+             explicit index-contraction enumeration.
+  Block 3:   Color-only singlet-residue cross-check.
+  Block 4:   SU(3) Fierz identity verified from explicit Gell-Mann matrices.
+  Block 5:   Direction uniqueness -- other irreps give different Z.
+  Block 6:   Clebsch-Gordan overlap = 1/sqrt(6) on all 6 basis components.
+  Block 7:   Perturbative one-gluon-exchange singlet coefficient 1/(2 N_c).
+  Block 7a:  Strong-coupling one-link integral cross-check (Haar sampling).
+  Block 8:   Dirac Fierz coefficients computed from explicit 4x4 gammas.
+  Block 11:  Same-1PI scalar-singlet residue identity: Representation A (OGE)
+             and Representation B (H_unit matrix element) computed
+             independently, then compared.
+
+CONTEXT BLOCKS (non-load-bearing; printed, with NO PASS/FAIL lines attached
+to any helper-imported plaquette constant):
+
+  Block 9:   Perturbative NLO magnitude context (uses canonical plaquette
+             helper constants; log-only).
+  Block 10:  Conditional canonical-surface tadpole-ratio context (log-only
+             where helper constants enter; algebra-only checks kept).
+  Block 12:  Two-gluon color-trace algebra (exact SU(3) facts kept as
+             checks; topology-counting and NNLO-magnitude lines log-only).
+
+Every PASS is a computed check.  The Ward residuals are computed on explicit
+lattice constructions whose link backgrounds are random (not present in any
+input), vanish exactly under the derived conditions, and are demonstrated NOT
+to vanish when the symmetry or the current is deliberately broken.
 """
 
 from __future__ import annotations
@@ -69,7 +101,7 @@ np.set_printoptions(precision=12, linewidth=120)
 
 # Cited inputs (none of these are the claimed ratio)
 N_c = 3                           # SU(3) color, cited from NATIVE_GAUGE_CLOSURE
-N_iso = 2                         # SU(2)_L doublet, cited from CKM_ATLAS:56 n_pair=2
+N_iso = 2                         # SU(2)_L doublet, cited framework input
 DIM_Q_L = N_c * N_iso             # Q_L = (2,3) rep dimension (group theory)
 PI = math.pi
 PLAQ = CANONICAL_PLAQUETTE
@@ -93,9 +125,629 @@ def check(name: str, condition: bool, detail: str = "", cls: str = "C") -> None:
     log(line)
 
 
+def random_sun_haar(N: int, rng: np.random.Generator) -> np.ndarray:
+    """Sample a random SU(N) matrix under Haar measure via QR + phase fixing."""
+    Z_mat = (rng.standard_normal((N, N)) + 1j * rng.standard_normal((N, N))) / math.sqrt(2.0)
+    Q, R = np.linalg.qr(Z_mat)
+    diag_phases = np.diag(R) / np.abs(np.diag(R))
+    Q = Q @ np.diag(diag_phases.conj())
+    det_Q = np.linalg.det(Q)
+    Q = Q * (det_Q.conj()) ** (1.0 / N)
+    return Q
+
+
+# ============================================================
+# Ward-identity machinery: staggered Q_L action on a finite Z^3 block
+# ============================================================
+#
+# Lattice: periodic block of shape L = (2, 3, 4)  (24 sites; includes an
+# even, an odd, and a larger extent -- no special-size coincidences).
+# Internal space per site: iso (N_iso = 2)  tensor  color (N_c = 3), dim 6.
+# Index layout: idx(site, alpha, a) = (site_index * N_iso + alpha) * N_c + a,
+# i.e. internal = kron(iso, color).
+#
+# Staggered action  S = psibar M psi  with
+#   M = m * 1  +  D,
+#   D(x, x+mu) = +eta_mu(x)/2 * (1_iso  kron  U_mu(x)),
+#   D(x+mu, x) = -eta_mu(x)/2 * (1_iso  kron  U_mu(x)^dag),
+#   eta_1 = 1, eta_2(x) = (-1)^{x_1}, eta_3(x) = (-1)^{x_1+x_2}.
+#
+# Point-split vector current kernel (the lattice Noether current of the
+# local U(1) phase rotation psi(x) -> e^{i alpha(x)} psi(x)):
+#   J_mu(x):  +eta_mu(x)/2 * (1 kron U_mu(x))      at (x, x+mu)
+#             +eta_mu(x)/2 * (1 kron U_mu(x)^dag)  at (x+mu, x)
+# so that V_mu(x) = psibar J_mu(x) psi.
+
+L_SHAPE = (2, 3, 4)
+SITES = [(x, y, z) for x in range(L_SHAPE[0]) for y in range(L_SHAPE[1]) for z in range(L_SHAPE[2])]
+SIDX = {s: i for i, s in enumerate(SITES)}
+N_SITES = len(SITES)
+D_INT = N_iso * N_c
+N_TOT = N_SITES * D_INT
+
+
+def eta_phase(mu: int, s: tuple) -> float:
+    """Staggered eta phases: eta_1 = 1, eta_2 = (-1)^x1, eta_3 = (-1)^(x1+x2)."""
+    return 1.0 if mu == 0 else (-1.0) ** (sum(s[:mu]))
+
+
+def shift_site(s: tuple, mu: int, d: int = 1) -> tuple:
+    t = list(s)
+    t[mu] = (t[mu] + d) % L_SHAPE[mu]
+    return tuple(t)
+
+
+def site_block(mat: np.ndarray, i: int, j: int) -> np.ndarray:
+    return mat[i * D_INT:(i + 1) * D_INT, j * D_INT:(j + 1) * D_INT]
+
+
+def build_links(rng: np.random.Generator, trivial: bool = False) -> dict:
+    """Random SU(3) color links (identity on iso); or trivial U = 1."""
+    links = {}
+    for s in SITES:
+        for mu in range(3):
+            U3 = np.eye(N_c, dtype=complex) if trivial else random_sun_haar(N_c, rng)
+            links[(s, mu)] = np.kron(np.eye(N_iso, dtype=complex), U3)
+    return links
+
+
+def build_staggered_matrix(links: dict, mass_internal: np.ndarray) -> np.ndarray:
+    """M = mass + staggered hopping with the given link background."""
+    M = np.zeros((N_TOT, N_TOT), dtype=complex)
+    for s in SITES:
+        i = SIDX[s]
+        M[i * D_INT:(i + 1) * D_INT, i * D_INT:(i + 1) * D_INT] += mass_internal
+        for mu in range(3):
+            sp = shift_site(s, mu)
+            j = SIDX[sp]
+            e = eta_phase(mu, s)
+            Um = links[(s, mu)]
+            M[i * D_INT:(i + 1) * D_INT, j * D_INT:(j + 1) * D_INT] += 0.5 * e * Um
+            M[j * D_INT:(j + 1) * D_INT, i * D_INT:(i + 1) * D_INT] += -0.5 * e * Um.conj().T
+    return M
+
+
+def current_kernel(links: dict, s: tuple, mu: int,
+                   keep_links: bool = True, keep_eta: bool = True) -> np.ndarray:
+    """Point-split vector-current kernel J_mu(x); flags deliberately break it."""
+    K = np.zeros((N_TOT, N_TOT), dtype=complex)
+    i = SIDX[s]
+    j = SIDX[shift_site(s, mu)]
+    e = eta_phase(mu, s) if keep_eta else 1.0
+    Um = links[(s, mu)] if keep_links else np.eye(D_INT, dtype=complex)
+    K[i * D_INT:(i + 1) * D_INT, j * D_INT:(j + 1) * D_INT] += 0.5 * e * Um
+    K[j * D_INT:(j + 1) * D_INT, i * D_INT:(i + 1) * D_INT] += 0.5 * e * Um.conj().T
+    return K
+
+
+def site_projector(s: tuple) -> np.ndarray:
+    E = np.zeros((N_TOT, N_TOT), dtype=complex)
+    i = SIDX[s]
+    E[i * D_INT:(i + 1) * D_INT, i * D_INT:(i + 1) * D_INT] = np.eye(D_INT)
+    return E
+
+
+def kernel_divergence(links: dict, s: tuple,
+                      keep_links: bool = True, keep_eta: bool = True) -> np.ndarray:
+    """sum_mu [J_mu(x) - J_mu(x - mu)] (backward lattice divergence kernel)."""
+    dJ = np.zeros((N_TOT, N_TOT), dtype=complex)
+    for mu in range(3):
+        dJ += current_kernel(links, s, mu, keep_links, keep_eta)
+        dJ -= current_kernel(links, shift_site(s, mu, -1), mu, keep_links, keep_eta)
+    return dJ
+
+
+def wick_bilinear_3pt(G: np.ndarray, A: np.ndarray) -> np.ndarray:
+    """<(psibar A psi) psi_c psibar_d> by Wick:  -Tr(A G) G + G A G  (full,
+    connected + disconnected)."""
+    return -np.trace(A @ G) * G + G @ A @ G
+
+
+def ward_residual_propagator(links: dict, M: np.ndarray, G: np.ndarray,
+                             keep_links: bool = True, keep_eta: bool = True) -> float:
+    """max over sites x and all (y, z) of
+       | sum_mu D^-_mu <V_mu(x) psi(y) psibar(z)>  -  (d_{xz} - d_{xy}) G |."""
+    worst = 0.0
+    for s in SITES:
+        tot = np.zeros((N_TOT, N_TOT), dtype=complex)
+        for mu in range(3):
+            tot += wick_bilinear_3pt(G, current_kernel(links, s, mu, keep_links, keep_eta))
+            tot -= wick_bilinear_3pt(
+                G, current_kernel(links, shift_site(s, mu, -1), mu, keep_links, keep_eta))
+        E = site_projector(s)
+        contact = G @ E - E @ G
+        worst = max(worst, float(np.max(np.abs(tot - contact))))
+    return worst
+
+
+# ============================================================
+# BLOCK W1: Kernel-level lattice Noether identity (machine precision)
+# ============================================================
+log("=" * 72)
+log("BLOCK W1: Kernel Noether identity  sum_mu [J_mu(x) - J_mu(x-mu)] = [E_x, M]")
+log("          staggered Q_L action, (2,3,4) periodic Z^3 block,")
+log("          RANDOM SU(3) link background, bare mass m = 0.73")
+log("=" * 72)
+log()
+log("  Derivation being checked (note Step 0): localize the U(1) vector phase")
+log("  rotation psi(x) -> e^{i alpha(x)} psi(x).  The variation of the staggered")
+log("  action is  delta S = -i sum_x alpha(x) (D^- . V)(x)  with the point-split")
+log("  current V_mu(x) = psibar J_mu(x) psi, and equally  delta S = i sum_x")
+log("  alpha(x) psibar [M, E_x] psi.  Equating coefficient kernels of alpha(x):")
+log("    sum_mu [J_mu(x) - J_mu(x-mu)] = [E_x, M]   for every site x.")
+log("  This is checked below as a matrix identity on the explicit construction.")
+log()
+
+rng_w = np.random.default_rng(20260609)
+MASS_DEG = 0.73 * np.eye(D_INT, dtype=complex)
+LINKS = build_links(rng_w)
+M_STAG = build_staggered_matrix(LINKS, MASS_DEG)
+
+hop = M_STAG - 0.73 * np.eye(N_TOT)
+check(
+    "Staggered hopping matrix is antihermitian (D^dag = -D)",
+    float(np.max(np.abs(hop + hop.conj().T))) < 1e-13,
+    f"max |D + D^dag| = {np.max(np.abs(hop + hop.conj().T)):.3e}",
+    cls="A",
+)
+
+worst_kernel = 0.0
+for s in SITES:
+    E = site_projector(s)
+    resid = kernel_divergence(LINKS, s) - (E @ M_STAG - M_STAG @ E)
+    worst_kernel = max(worst_kernel, float(np.max(np.abs(resid))))
+check(
+    "Kernel Noether identity holds at ALL 24 sites (random SU(3) links)",
+    worst_kernel < 1e-13,
+    f"max residual over sites = {worst_kernel:.3e}",
+)
+
+LINKS_B = build_links(np.random.default_rng(424242))
+M_STAG_B = build_staggered_matrix(LINKS_B, MASS_DEG)
+worst_kernel_b = max(
+    float(np.max(np.abs(
+        kernel_divergence(LINKS_B, s)
+        - (site_projector(s) @ M_STAG_B - M_STAG_B @ site_projector(s)))))
+    for s in SITES
+)
+check(
+    "Kernel identity holds on a SECOND independent random link background",
+    worst_kernel_b < 1e-13,
+    f"max residual = {worst_kernel_b:.3e} (identity is configuration-by-configuration)",
+)
+
+
+# ============================================================
+# BLOCK W2: Propagator-level Ward identity with contact terms
+# ============================================================
+log()
+log("=" * 72)
+log("BLOCK W2: Propagator-level Ward identity (full Wick, contact terms)")
+log("=" * 72)
+log()
+log("  Checked:  sum_mu D^-_mu <V_mu(x) psi(y) psibar(z)>")
+log("              = (delta_{x,z} - delta_{x,y}) <psi(y) psibar(z)>")
+log("  for ALL x (24 sites) and ALL (y, z) (144 x 144 index pairs), with the")
+log("  full Wick value <V F> = -Tr(J G) G + G J G  (disconnected + connected).")
+log()
+
+G_STAG = np.linalg.inv(M_STAG)
+
+iso_offdiag = 0.0
+for si in range(N_SITES):
+    for sj in range(N_SITES):
+        blk = site_block(G_STAG, si, sj).reshape(N_iso, N_c, N_iso, N_c)
+        iso_offdiag = max(iso_offdiag, float(np.max(np.abs(blk[0, :, 1, :]))),
+                          float(np.max(np.abs(blk[1, :, 0, :]))))
+check(
+    "Propagator is exactly iso-diagonal (U(2)_iso symmetry of M at fixed links)",
+    iso_offdiag < 1e-13,
+    f"max iso-offdiagonal |G| = {iso_offdiag:.3e}",
+    cls="A",
+)
+
+ward_resid = ward_residual_propagator(LINKS, M_STAG, G_STAG)
+check(
+    "Exact point-split Ward identity: max residual over all (x; y, z) at machine zero",
+    ward_resid < 1e-12,
+    f"max |D^-.<V psi psibar> - contact| = {ward_resid:.3e} on random SU(3) background",
+)
+
+cons_resid = max(
+    abs(sum(
+        -np.trace(current_kernel(LINKS, s, mu) @ G_STAG)
+        + np.trace(current_kernel(LINKS, shift_site(s, mu, -1), mu) @ G_STAG)
+        for mu in range(3)))
+    for s in SITES
+)
+check(
+    "Current conservation in expectation: sum_mu D^-_mu <V_mu(x)> = 0 at every site",
+    cons_resid < 1e-12,
+    f"max |div <V>| = {cons_resid:.3e}",
+)
+
+# Random local gauge transformation: U'_mu(x) = g(x) U_mu(x) g(x+mu)^dag.
+rng_g = np.random.default_rng(777)
+gauge = {s: np.kron(np.eye(N_iso, dtype=complex), random_sun_haar(N_c, rng_g)) for s in SITES}
+LINKS_GT = {
+    (s, mu): gauge[s] @ LINKS[(s, mu)] @ gauge[shift_site(s, mu)].conj().T
+    for s in SITES for mu in range(3)
+}
+M_GT = build_staggered_matrix(LINKS_GT, MASS_DEG)
+G_GT = np.linalg.inv(M_GT)
+ward_resid_gt = ward_residual_propagator(LINKS_GT, M_GT, G_GT)
+check(
+    "Ward identity exact after a RANDOM local SU(3) gauge transformation of links",
+    ward_resid_gt < 1e-12,
+    f"max residual = {ward_resid_gt:.3e} (gauge covariance of the point-split current)",
+)
+
+
+# ============================================================
+# BLOCK W3: FALSIFICATION leg A -- gauge links stripped from the current
+# ============================================================
+log()
+log("=" * 72)
+log("BLOCK W3: FALSIFICATION leg A: naive (link-stripped) current FAILS")
+log("=" * 72)
+log()
+log("  The same residuals are recomputed with the gauge links deliberately")
+log("  REMOVED from the point-split current (action unchanged).  The Ward")
+log("  identity must fail on a nontrivial link background -- the conservation")
+log("  is a property of the action's symmetry current, not of bookkeeping.")
+log()
+
+worst_kernel_naive = max(
+    float(np.max(np.abs(
+        kernel_divergence(LINKS, s, keep_links=False)
+        - (site_projector(s) @ M_STAG - M_STAG @ site_projector(s)))))
+    for s in SITES
+)
+check(
+    "Link-stripped current VIOLATES the kernel identity (residual >> 0)",
+    worst_kernel_naive > 0.05,
+    f"max kernel residual = {worst_kernel_naive:.4f} (vs < 1e-13 for the true current)",
+)
+
+ward_resid_naive = ward_residual_propagator(LINKS, M_STAG, G_STAG, keep_links=False)
+check(
+    "Link-stripped current VIOLATES the propagator-level Ward identity",
+    ward_resid_naive > 1e-3,
+    f"max residual = {ward_resid_naive:.6f} (vs {ward_resid:.3e} for the true current)",
+)
+
+LINKS_TRIV = build_links(rng_w, trivial=True)
+M_TRIV = build_staggered_matrix(LINKS_TRIV, MASS_DEG)
+worst_kernel_triv = max(
+    float(np.max(np.abs(
+        kernel_divergence(LINKS_TRIV, s, keep_links=False)
+        - (site_projector(s) @ M_TRIV - M_TRIV @ site_projector(s)))))
+    for s in SITES
+)
+check(
+    "With trivial links U = 1 the 'stripped' current is the true current: residual = 0",
+    worst_kernel_triv < 1e-13,
+    f"max residual = {worst_kernel_triv:.3e} (failure is located in gauge covariance)",
+)
+
+
+# ============================================================
+# BLOCK W4: FALSIFICATION leg B -- eta phases mismatched in the current
+# ============================================================
+log()
+log("=" * 72)
+log("BLOCK W4: FALSIFICATION leg B: eta-mismatched current FAILS")
+log("=" * 72)
+log()
+log("  The point-split current is rebuilt with eta = +1 everywhere while the")
+log("  action keeps the staggered eta phases.  The Noether identity must fail")
+log("  at any site where some entering eta = -1, and remain satisfied at the")
+log("  sites where all entering eta = +1 (the mismatch is local).")
+log()
+
+per_site_eta_resid = {
+    s: float(np.max(np.abs(
+        kernel_divergence(LINKS, s, keep_eta=False)
+        - (site_projector(s) @ M_STAG - M_STAG @ site_projector(s)))))
+    for s in SITES
+}
+worst_kernel_eta = max(per_site_eta_resid.values())
+check(
+    "Eta-mismatched current VIOLATES the kernel identity (max over sites >> 0)",
+    worst_kernel_eta > 0.05,
+    f"max kernel residual over sites = {worst_kernel_eta:.4f}",
+)
+s_allplus = (0, 0, 0)   # all eta entering the divergence at this site are +1
+check(
+    "Eta mismatch is LOCAL: residual vanishes at the all-eta=+1 site (0,0,0)",
+    per_site_eta_resid[s_allplus] < 1e-13
+    and any(v > 0.05 for v in per_site_eta_resid.values()),
+    f"residual at (0,0,0) = {per_site_eta_resid[s_allplus]:.3e}; "
+    f"max elsewhere = {worst_kernel_eta:.4f}",
+)
+
+
+# ============================================================
+# BLOCK W5: Iso-vector (charged) current -- conservation and exact breaking
+# ============================================================
+log()
+log("=" * 72)
+log("BLOCK W5: Iso-vector charged current: conserved at degenerate mass;")
+log("          exact mass-insertion breaking form at split mass")
+log("=" * 72)
+log()
+log("  For t acting on iso (commutes with color links), the kernel identity is")
+log("    sum_mu D^-_mu J^t_mu(x) = [E_x t, M] - E_x [t, mhat],")
+log("  so the charged-current Ward identity reads")
+log("    sum_mu D^-_mu <V^t_mu(x) F> + <(psibar E_x [t, mhat] psi) F>")
+log("       = contact terms,")
+log("  with [tau+, diag(m1, m2)] = (m2 - m1) tau+ : the breaking term is the")
+log("  explicit (m2 - m1) psibar tau+ psi insertion, nothing else.")
+log()
+
+TAU_PLUS = np.array([[0.0, 1.0], [0.0, 0.0]], dtype=complex)
+T_INT = np.kron(TAU_PLUS, np.eye(N_c, dtype=complex))          # tau+ on iso
+T_FULL = np.kron(np.eye(N_SITES, dtype=complex), T_INT)
+
+# kernel-level: [tau+, mhat] = (m2 - m1) tau+
+m1, m2 = 0.73, 1.19
+MASS_SPLIT = np.kron(np.diag([m1, m2]).astype(complex), np.eye(N_c, dtype=complex))
+comm_t_m = T_INT @ MASS_SPLIT - MASS_SPLIT @ T_INT
+check(
+    "Breaking kernel identity: [tau+, diag(m1,m2) (x) 1_c] = (m2 - m1) (tau+ (x) 1_c)",
+    float(np.max(np.abs(comm_t_m - (m2 - m1) * T_INT))) < 1e-14,
+    f"(m2 - m1) = {m2 - m1:.4f}; max |comm - (m2-m1) tau+| = "
+    f"{np.max(np.abs(comm_t_m - (m2 - m1) * T_INT)):.3e}",
+    cls="A",
+)
+
+
+def charged_ward_residuals(mass_internal: np.ndarray) -> tuple:
+    """(residual WITH exact mass insertion, residual WITHOUT insertion)."""
+    Mx = build_staggered_matrix(LINKS, mass_internal)
+    Gx = np.linalg.inv(Mx)
+    comm = T_INT @ mass_internal - mass_internal @ T_INT
+    worst_with, worst_without = 0.0, 0.0
+    for s in SITES:
+        tot = np.zeros((N_TOT, N_TOT), dtype=complex)
+        for mu in range(3):
+            tot += wick_bilinear_3pt(Gx, current_kernel(LINKS, s, mu) @ T_FULL)
+            tot -= wick_bilinear_3pt(
+                Gx, current_kernel(LINKS, shift_site(s, mu, -1), mu) @ T_FULL)
+        E = site_projector(s)
+        contact = Gx @ (E @ T_FULL) - (E @ T_FULL) @ Gx
+        ETM = np.zeros((N_TOT, N_TOT), dtype=complex)
+        i = SIDX[s]
+        ETM[i * D_INT:(i + 1) * D_INT, i * D_INT:(i + 1) * D_INT] = comm
+        insertion = wick_bilinear_3pt(Gx, ETM)
+        worst_with = max(worst_with, float(np.max(np.abs(tot + insertion - contact))))
+        worst_without = max(worst_without, float(np.max(np.abs(tot - contact))))
+    return worst_with, worst_without
+
+
+resid_deg_with, resid_deg_without = charged_ward_residuals(MASS_DEG)
+check(
+    "Degenerate mass: charged-current Ward identity EXACT (no breaking term needed)",
+    resid_deg_without < 1e-12,
+    f"max residual = {resid_deg_without:.3e} ([tau+, m 1] = 0)",
+)
+
+resid_split_with, resid_split_without = charged_ward_residuals(MASS_SPLIT)
+check(
+    "Split mass m1 != m2: charged current NOT conserved (residual >> 0 w/o insertion)",
+    resid_split_without > 1e-2,
+    f"max residual without insertion = {resid_split_without:.6f}",
+)
+check(
+    "Split mass: residual equals the EXACT (m2-m1) psibar tau+ psi insertion",
+    resid_split_with < 1e-12,
+    f"max residual WITH exact mass insertion = {resid_split_with:.3e}",
+)
+
+
+# ============================================================
+# BLOCK W6: EXACT-arithmetic Ward certificate (sympy rationals)
+# ============================================================
+log()
+log("=" * 72)
+log("BLOCK W6: EXACT-arithmetic certificate: Ward residual is EXACTLY zero")
+log("          (sympy rationals; 2x3 staggered block; exact unimodular links)")
+log("=" * 72)
+log()
+log("  Links are exact unimodular Gaussian rationals (|z| = 1 exactly, e.g.")
+log("  z = 3/5 + 4i/5), mass m = 7/10, propagator by exact matrix inverse.")
+log("  The residuals below are exact symbolic zeros / exact nonzero rationals,")
+log("  not floating-point smallness.")
+log()
+
+import sympy as sp  # noqa: E402  (deliberately local: exact-arithmetic leg only)
+
+L2 = (2, 3)
+SITES2 = [(x, y) for x in range(L2[0]) for y in range(L2[1])]
+SIDX2 = {s: i for i, s in enumerate(SITES2)}
+N2 = len(SITES2)
+
+Z_POOL = [
+    sp.Rational(3, 5) + sp.Rational(4, 5) * sp.I,
+    sp.Rational(5, 13) + sp.Rational(12, 13) * sp.I,
+    sp.Rational(8, 17) - sp.Rational(15, 17) * sp.I,
+    sp.Rational(20, 29) + sp.Rational(21, 29) * sp.I,
+    sp.Rational(7, 25) - sp.Rational(24, 25) * sp.I,
+    sp.Rational(9, 41) + sp.Rational(40, 41) * sp.I,
+    sp.Rational(12, 37) - sp.Rational(35, 37) * sp.I,
+    sp.Rational(28, 53) + sp.Rational(45, 53) * sp.I,
+    sp.Rational(33, 65) + sp.Rational(56, 65) * sp.I,
+    sp.Rational(16, 65) - sp.Rational(63, 65) * sp.I,
+    sp.Rational(48, 73) + sp.Rational(55, 73) * sp.I,
+    sp.Rational(13, 85) - sp.Rational(84, 85) * sp.I,
+]
+check(
+    "All exact links are unimodular: z * conj(z) = 1 EXACTLY for all 12 links",
+    all(sp.simplify(z * sp.conjugate(z) - 1) == 0 for z in Z_POOL),
+    "Gaussian-rational points on the unit circle (Pythagorean)",
+    cls="A",
+)
+
+ULINK2 = {}
+_k = 0
+for s in SITES2:
+    for mu in range(2):
+        ULINK2[(s, mu)] = Z_POOL[_k % len(Z_POOL)]
+        _k += 1
+
+
+def eta2(mu: int, s: tuple) -> int:
+    return 1 if mu == 0 else (-1) ** (s[0])
+
+
+def shift2(s: tuple, mu: int, d: int = 1) -> tuple:
+    t = list(s)
+    t[mu] = (t[mu] + d) % L2[mu]
+    return tuple(t)
+
+
+M_EXACT = sp.zeros(N2, N2)
+m_exact = sp.Rational(7, 10)
+for s in SITES2:
+    i = SIDX2[s]
+    M_EXACT[i, i] += m_exact
+    for mu in range(2):
+        j = SIDX2[shift2(s, mu)]
+        e = eta2(mu, s)
+        u = ULINK2[(s, mu)]
+        M_EXACT[i, j] += sp.Rational(1, 2) * e * u
+        M_EXACT[j, i] += -sp.Rational(1, 2) * e * sp.conjugate(u)
+
+
+def j_exact(s: tuple, mu: int, keep_links: bool = True) -> sp.Matrix:
+    K = sp.zeros(N2, N2)
+    i = SIDX2[s]
+    j = SIDX2[shift2(s, mu)]
+    e = eta2(mu, s)
+    u = ULINK2[(s, mu)] if keep_links else sp.Integer(1)
+    K[i, j] += sp.Rational(1, 2) * e * u
+    K[j, i] += sp.Rational(1, 2) * e * sp.conjugate(u)
+    return K
+
+
+def e_exact(s: tuple) -> sp.Matrix:
+    E = sp.zeros(N2, N2)
+    E[SIDX2[s], SIDX2[s]] = 1
+    return E
+
+
+kernel_exact_ok = True
+for s in SITES2:
+    dJ = sp.zeros(N2, N2)
+    for mu in range(2):
+        dJ += j_exact(s, mu) - j_exact(shift2(s, mu, -1), mu)
+    R = sp.expand(dJ - (e_exact(s) * M_EXACT - M_EXACT * e_exact(s)))
+    if any(sp.simplify(R[i, j]) != 0 for i in range(N2) for j in range(N2)):
+        kernel_exact_ok = False
+check(
+    "EXACT kernel Noether identity: residual is the exact zero matrix (all 6 sites)",
+    kernel_exact_ok,
+    "sympy exact arithmetic, no floating point",
+)
+
+G_EXACT = M_EXACT.inv()
+ward_exact_ok = True
+for s in SITES2:
+    tot = sp.zeros(N2, N2)
+    for mu in range(2):
+        for (sx, sgn) in [(s, 1), (shift2(s, mu, -1), -1)]:
+            J = j_exact(sx, mu)
+            tot += sgn * (-(J * G_EXACT).trace() * G_EXACT + G_EXACT * J * G_EXACT)
+    E = e_exact(s)
+    R = sp.expand(tot - (G_EXACT * E - E * G_EXACT))
+    if any(sp.simplify(R[i, j]) != 0 for i in range(N2) for j in range(N2)):
+        ward_exact_ok = False
+check(
+    "EXACT propagator-level Ward identity: residual is the exact zero matrix",
+    ward_exact_ok,
+    "contact terms (delta_xz - delta_xy) G reproduced exactly",
+)
+
+# Exact falsification: strip links from the current at one site with nontrivial u.
+s_bad = SITES2[0]
+dJ_bad = sp.zeros(N2, N2)
+for mu in range(2):
+    dJ_bad += j_exact(s_bad, mu, keep_links=False) - j_exact(shift2(s_bad, mu, -1), mu, keep_links=False)
+R_bad = sp.expand(dJ_bad - (e_exact(s_bad) * M_EXACT - M_EXACT * e_exact(s_bad)))
+bad_entries = [sp.simplify(R_bad[i, j]) for i in range(N2) for j in range(N2)]
+max_bad = max((abs(complex(v)) for v in bad_entries if v != 0), default=0.0)
+check(
+    "EXACT falsification: link-stripped current residual is an exact NONZERO rational",
+    any(v != 0 for v in bad_entries) and max_bad > 0.05,
+    f"largest exact residual entry magnitude = {max_bad:.4f}",
+)
+
+
+# ============================================================
+# BLOCK W7: Symmetry forces singlet uniformity (Schur / commutant = scalars)
+# ============================================================
+log()
+log("=" * 72)
+log("BLOCK W7: Singlet uniformity from symmetry (commutant computation)")
+log("=" * 72)
+log()
+log("  The bilinear matrix s_{kl} = <k l*|S> transforms as s -> U s U^dag.")
+log("  For the channel used here, U is generated by U(2)_iso on C^2 and")
+log("  SU(3)_color on C^3.  Invariance under those actual product symmetries")
+log("  forces s into the commutant.  Computed: that commutant is")
+log("  1-dimensional (scalars), so the invariant unit-norm bilinear is")
+log("  s = 1/sqrt(6) * Identity -- all 6 overlaps EQUAL 1/sqrt(6).")
+log("  This derives the 'singlet uniformity' step rather than asserting it.")
+log()
+
+pauli_1 = np.array([[0, 1], [1, 0]], dtype=complex)
+pauli_2 = np.array([[0, -1j], [1j, 0]], dtype=complex)
+pauli_3 = np.array([[1, 0], [0, -1]], dtype=complex)
+gell_mann_local = [
+    np.array([[0, 1, 0], [1, 0, 0], [0, 0, 0]], dtype=complex),
+    np.array([[0, -1j, 0], [1j, 0, 0], [0, 0, 0]], dtype=complex),
+    np.array([[1, 0, 0], [0, -1, 0], [0, 0, 0]], dtype=complex),
+    np.array([[0, 0, 1], [0, 0, 0], [1, 0, 0]], dtype=complex),
+    np.array([[0, 0, -1j], [0, 0, 0], [1j, 0, 0]], dtype=complex),
+    np.array([[0, 0, 0], [0, 0, 1], [0, 1, 0]], dtype=complex),
+    np.array([[0, 0, 0], [0, 0, -1j], [0, 1j, 0]], dtype=complex),
+    np.array([[1, 0, 0], [0, 1, 0], [0, 0, -2]], dtype=complex) / math.sqrt(3),
+]
+product_generators = [
+    np.kron(0.5 * p, np.eye(N_c, dtype=complex))
+    for p in (pauli_1, pauli_2, pauli_3)
+] + [
+    np.kron(np.eye(N_iso, dtype=complex), 0.5 * lam)
+    for lam in gell_mann_local
+]
+constraint_blocks = []
+for G_prod in product_generators:
+    cols = []
+    for i in range(DIM_Q_L):
+        for j in range(DIM_Q_L):
+            Eij = np.zeros((DIM_Q_L, DIM_Q_L), dtype=complex)
+            Eij[i, j] = 1.0
+            cols.append((G_prod @ Eij - Eij @ G_prod).reshape(-1))
+    constraint_blocks.append(np.stack(cols, axis=1))
+constraint = np.vstack(constraint_blocks)
+svals = np.linalg.svd(constraint, compute_uv=False)
+commutant_dim = int(np.sum(svals < 1e-10))
+check(
+    "Commutant of U(2)_iso x SU(3)_color product action is 1-dimensional",
+    commutant_dim == 1,
+    f"nullspace dimension = {commutant_dim} (Schur: invariant bilinear is scalar)",
+)
+check(
+    "Unique invariant unit-norm bilinear has ALL 6 diagonal components = 1/sqrt(6)",
+    abs(1.0 / math.sqrt(DIM_Q_L) - 1.0 / math.sqrt(6.0)) < 1e-15 and commutant_dim == 1,
+    "s = c * I with ||s|| = 1 and c > 0 forces c = 1/sqrt(6)",
+)
+
+
 # ============================================================
 # BLOCK 1: Q_L block dimensions
 # ============================================================
+log()
 log("=" * 72)
 log("BLOCK 1: Q_L = (2,3) rep dimension (cited framework input)")
 log("=" * 72)
@@ -180,14 +832,14 @@ log("BLOCK 4: SU(N_c) Fierz identity (YCP_EW:169-172), verified explicitly")
 log("=" * 72)
 
 # Build SU(3) fundamental generators from Gell-Mann matrices
-l1 = np.array([[0,1,0],[1,0,0],[0,0,0]], dtype=complex)
-l2 = np.array([[0,-1j,0],[1j,0,0],[0,0,0]], dtype=complex)
-l3 = np.array([[1,0,0],[0,-1,0],[0,0,0]], dtype=complex)
-l4 = np.array([[0,0,1],[0,0,0],[1,0,0]], dtype=complex)
-l5 = np.array([[0,0,-1j],[0,0,0],[1j,0,0]], dtype=complex)
-l6 = np.array([[0,0,0],[0,0,1],[0,1,0]], dtype=complex)
-l7 = np.array([[0,0,0],[0,0,-1j],[0,1j,0]], dtype=complex)
-l8 = np.array([[1,0,0],[0,1,0],[0,0,-2]], dtype=complex) / math.sqrt(3)
+l1 = np.array([[0, 1, 0], [1, 0, 0], [0, 0, 0]], dtype=complex)
+l2 = np.array([[0, -1j, 0], [1j, 0, 0], [0, 0, 0]], dtype=complex)
+l3 = np.array([[1, 0, 0], [0, -1, 0], [0, 0, 0]], dtype=complex)
+l4 = np.array([[0, 0, 1], [0, 0, 0], [1, 0, 0]], dtype=complex)
+l5 = np.array([[0, 0, -1j], [0, 0, 0], [1j, 0, 0]], dtype=complex)
+l6 = np.array([[0, 0, 0], [0, 0, 1], [0, 1, 0]], dtype=complex)
+l7 = np.array([[0, 0, 0], [0, 0, -1j], [0, 1j, 0]], dtype=complex)
+l8 = np.array([[1, 0, 0], [0, 1, 0], [0, 0, -2]], dtype=complex) / math.sqrt(3)
 T_gens = [lam / 2.0 for lam in (l1, l2, l3, l4, l5, l6, l7, l8)]
 n_gen = N_c * N_c - 1   # = 8 for SU(3)
 
@@ -294,7 +946,7 @@ for k in range(DIM_Q_L):
     overlaps.append(overlap)
 
 check(
-    "All 6 basis Clebsch-Gordan overlaps equal 1/sqrt(6) (singlet uniformity)",
+    "All 6 basis Clebsch-Gordan overlaps equal 1/sqrt(6) (uniformity from Block W7)",
     all(abs(o - 1.0 / math.sqrt(6.0)) < 1e-14 for o in overlaps),
     f"overlaps = {[f'{o:.4f}' for o in overlaps]}",
 )
@@ -333,18 +985,6 @@ log("  Exact SU(N_c) one-link integral: dU U_{ab} U^dag_{cd} = (1/N_c) delta_{ad
 log("  Verify numerically by Haar-sampling SU(3).")
 log()
 
-
-def random_sun_haar(N: int, rng: np.random.Generator) -> np.ndarray:
-    """Sample a random SU(N) matrix under Haar measure via QR + phase fixing."""
-    Z_mat = (rng.standard_normal((N, N)) + 1j * rng.standard_normal((N, N))) / math.sqrt(2.0)
-    Q, R = np.linalg.qr(Z_mat)
-    diag_phases = np.diag(R) / np.abs(np.diag(R))
-    Q = Q @ np.diag(diag_phases.conj())
-    det_Q = np.linalg.det(Q)
-    Q = Q * (det_Q.conj()) ** (1.0 / N)
-    return Q
-
-
 rng = np.random.default_rng(42)
 N_samples = 100_000
 sample_integral = np.zeros((N_c, N_c, N_c, N_c), dtype=complex)
@@ -373,7 +1013,7 @@ check(
     "C_pert and C_strong are distinct (different expansions)",
     abs(C_pert_color_singlet - C_strong) > 0.01,
     f"|C_pert - C_strong| = {abs(C_pert_color_singlet - C_strong):.4f}; "
-    "tadpole-improved surface selects C_pert",
+    "no bridge between the expansions is claimed here",
 )
 
 
@@ -425,10 +1065,6 @@ for mu in range(4):
 
 def fierz_coeff(Gamma_X, sign_dagger=1):
     """Compute Fierz coefficient of (gamma^mu)(gamma_mu) expansion in basis Gamma_X."""
-    # c = (1/16) sum Gamma_X_{DA} (Gamma_X^conj)_{BC} F[A,B,C,D]
-    # For most basis elements Gamma_X is Hermitian, so conj = Gamma_X^T
-    # Simplified: c = (1/16) Tr[Gamma_X.T Gamma_X_{BC}] contracted with F
-    # Actually do the straightforward contraction:
     val = 0.0 + 0.0j
     for A, B, C, D in product(range(4), repeat=4):
         val += Gamma_X[D, A] * np.conj(Gamma_X[B, C]) * F[A, B, C, D]
@@ -449,10 +1085,10 @@ for mu in range(4):
 
 log(f"  Computed Fierz coefficients for (gamma^mu)(gamma_mu) decomposition:")
 log(f"    c_S (scalar,           I   otimes I   )   = {c_S:+.6f}")
-log(f"    c_P (pseudoscalar, i γ_5 otimes i γ_5)   = {c_P:+.6f}")
-log(f"    c_V (vector,       γ^μ  otimes γ_μ  )   = {c_V_total:+.6f}")
-log(f"    c_A (axial,        γ^μγ_5 otimes γ_μγ_5) = {c_A_total:+.6f}")
-log(f"    c_T (tensor,      σ^{{μν}} otimes σ_{{μν}}) = {c_T_total:+.6f}")
+log(f"    c_P (pseudoscalar, i g_5 otimes i g_5)   = {c_P:+.6f}")
+log(f"    c_V (vector,       g^mu  otimes g_mu  )   = {c_V_total:+.6f}")
+log(f"    c_A (axial,        g^mu g_5 otimes g_mu g_5) = {c_A_total:+.6f}")
+log(f"    c_T (tensor,      sigma^munu otimes sigma_munu) = {c_T_total:+.6f}")
 log()
 
 # Known result (cf. Itzykson-Zuber, Peskin-Schroeder conventions): the
@@ -478,64 +1114,36 @@ check(
 
 
 # ============================================================
-# BLOCK 9: Perturbative NLO (SUPPORT-ONLY — not part of core identification)
+# BLOCK 9: Perturbative NLO context (LOG-ONLY -- no PASS/FAIL lines)
 # ============================================================
 log()
 log("=" * 72)
-log("BLOCK 9: Perturbative 1-loop vertex correction (SUPPORT-ONLY)")
+log("BLOCK 9: Perturbative 1-loop vertex correction (CONTEXT, LOG-ONLY)")
 log("This block documents the perturbative 1-loop vertex correction")
-log("magnitude; it is NOT part of the core identification surface.")
-log("The support note makes no precision claim; see bridge note.")
+log("magnitude using the canonical plaquette helper constants.  It is NOT")
+log("part of the auditable claim and attaches NO PASS/FAIL line to any")
+log("helper-imported constant.  The source note makes no precision claim.")
 log("=" * 72)
 
-# Independent computation from inputs (not from the claimed ratio)
 C_F = (N_c * N_c - 1.0) / (2.0 * N_c)   # fundamental Casimir = 4/3 for SU(3)
-log(f"  alpha_LM = alpha_bare / u_0 = {ALPHA_LM:.6f}")
+log(f"  alpha_LM = alpha_bare / u_0 = {ALPHA_LM:.6f}   (helper constant, context)")
 log(f"  C_F = (N_c^2 - 1)/(2 N_c) = {C_F:.6f}")
-
-# Perturbative regime check: asymptotic series optimal truncation
 n_opt = PI / ALPHA_LM
-check(
-    "Asymptotic series optimal truncation n_opt >> 1",
-    n_opt > 10,
-    f"n_opt = pi/alpha_LM = {n_opt:.1f} loops (convergent at 1-loop and 2-loop)",
-)
-
-# NLO correction to the coupling ratio
 NLO_correction_ratio = ALPHA_LM * C_F / (2.0 * PI)
-# NNLO
 NNLO_correction = (ALPHA_LM / PI) ** 2 * C_F ** 2
-
-log(f"  NLO correction to y_t/g_s: alpha_LM * C_F / (2 pi) = {NLO_correction_ratio*100:.3f}%")
-log(f"  NNLO: (alpha_LM/pi)^2 * C_F^2 = {NNLO_correction*100:.4f}%")
-
-# Framework's existing Yukawa-lane systematic (MINIMAL_AXIOMS:68)
-lane_systematic = 0.03
-
-check(
-    "NLO correction within existing Yukawa-lane systematic (~3%)",
-    NLO_correction_ratio < lane_systematic,
-    f"NLO {NLO_correction_ratio*100:.2f}% < {lane_systematic*100:.0f}% (lane budget)",
-)
-check(
-    "NNLO correction is negligible (< 0.5%)",
-    NNLO_correction < 0.005,
-    f"NNLO = {NNLO_correction*100:.4f}%",
-)
+log(f"  asymptotic-series optimal truncation n_opt = pi/alpha_LM = {n_opt:.1f} loops")
+log(f"  NLO vertex-correction magnitude: alpha_LM * C_F / (2 pi) = {NLO_correction_ratio*100:.3f}%")
+log(f"  NNLO magnitude: (alpha_LM/pi)^2 * C_F^2 = {NNLO_correction*100:.4f}%")
+log("  (context only; no lane budget, no precision claim, no check line)")
 
 
 # ============================================================
-# BLOCK 10: Conditional canonical-surface context
+# BLOCK 10: Same-1PI identity inputs + conditional tadpole context
 # ============================================================
 log()
 log("=" * 72)
-log("BLOCK 10: Conditional tadpole-ratio context (NON-LOAD-BEARING)")
+log("BLOCK 10: Same-1PI-function inputs (checked) + tadpole context (log-only)")
 log("=" * 72)
-log()
-log("  The source note's load-bearing claim is the bare H_unit matrix element")
-log("  y_t_bare = g_bare/sqrt(6), verified directly in Block 11.")
-log("  This block keeps the older canonical-surface tadpole arithmetic as")
-log("  context only; it does not certify the shared tadpole transport bridge.")
 log()
 log("  Step 3 (same-1PI-function residue identity, scalar-singlet only):")
 log("    Define Gamma^(4)(q^2) := P_{S,(1,1)} <psi-bar psi(q) psi-bar psi(-q)>_1PI,amp")
@@ -543,68 +1151,47 @@ log()
 log("    Representation A (direct OGE in bare action):")
 log("      D16: only OGE diagram contributes at tree (Wilson plaq + staggered)")
 log("      D12: color singlet Fierz coefficient -1/(2 N_c) (Block 4)")
-log("      S2:  Lorentz scalar projection |c_S| = 1 (Block 8)")
+log("      Lorentz-Clifford scalar projection |c_S| = 1 (Block 8)")
 log("      => Gamma^(4)|_OGE = -c_S * g_bare^2 / (2 N_c * q^2) * O_S")
 log()
 log("    Representation B (composite operator H_unit):")
 log("      D9:  H_unit is composite operator, not independent field")
-log("      D17: H_unit is UNIQUE scalar (1,1) composite on Q_L (Block 5)")
+log("      D17: H_unit is UNIQUE scalar (1,1) composite on Q_L (Blocks 5, W7)")
 log("      => Gamma^(4)|_H_unit-rep = -y_t_bare^2 / q^2 * O_S")
 log()
-log("    Same Green's function in same theory => coefficients agree:")
-log("      y_t_bare^2 = g_bare^2 / (2 N_c) = 1/6  (Block 11)")
-log()
-log("  Conditional context: if a later retained bridge supplies the same")
-log("  1/sqrt(u_0) dressing for both the scalar-singlet matrix element and")
-log("  the gauge vertex, the ratio would remain 1/sqrt(2 N_c) = 1/sqrt(6).")
-log()
 
-# === Block 10 computes only the OGE coefficient (Representation A side) ===
-# It does NOT derive y_t_bare here.  y_t_bare is derived independently in
-# Block 11 from the H_unit matrix element (Representation B).  Block 10
-# computes the OGE Green's-function coefficient and records the conditional
-# canonical-surface tadpole arithmetic.  The y_t_bare value used in the
-# consistency check comes from Block 11 (Representation B), and Block 11
-# verifies it numerically agrees with the OGE coefficient computed here.
-
-# C_pert (color-singlet Fierz coefficient from Block 7/D12) = 1/(2 N_c) = 1/6
+# C_pert (color-singlet Fierz coefficient from Block 4/D12) = 1/(2 N_c) = 1/6
 C_pert_from_block7 = 1.0 / (2.0 * N_c)
 check(
     "C_pert from D12 (Block 4/7): SU(N_c) color-singlet Fierz = 1/(2 N_c) = 1/6",
     abs(C_pert_from_block7 - 1.0 / 6.0) < 1e-14,
     f"C_pert = {C_pert_from_block7:.10f}",
+    cls="A",
 )
 
 # |c_S| from Block 8 (Lorentz Dirac Fierz scalar-scalar coefficient)
-c_S_from_block8 = abs(c_S)  # c_S computed in Block 8
+c_S_from_block8 = abs(c_S)
 check(
-    "|c_S| from S2 (Block 8): Lorentz scalar projection coefficient = 1",
+    "|c_S| from Lorentz-Clifford standard identity (Block 8): scalar projection coefficient = 1",
     abs(c_S_from_block8 - 1.0) < 1e-12,
     f"|c_S| = {c_S_from_block8:.10f}",
+    cls="A",
 )
 
 # === Representation A coefficient: q^2 |Gamma^(4)|_OGE = |c_S| * g^2 / (2 N_c) ===
-# This is the OGE-side value of the same-1PI Green's function.  It is NOT
-# the definition of y_t_bare (that lives in Block 11 via the H_unit matrix
-# element).  This is just one of the two independent computations that
-# must agree by the same-1PI-function consistency check.
-g_bare = 1.0  # C2: canonical normalization choice
+g_bare = 1.0  # C2: canonical rescaling convention; form factor is g_bare-flat.
 gamma4_qq_OGE = c_S_from_block8 * (g_bare**2) * C_pert_from_block7
-log(f"  Representation A side (OGE-only, from D12 + S2):")
+log(f"  Representation A side (OGE-only, from D12 + Lorentz-Clifford scalar projection):")
 log(f"    q^2 |Gamma^(4)|_OGE = |c_S| * g_bare^2 * C_pert")
 log(f"                       = {c_S_from_block8:.6f} * {g_bare**2:.6f} * {C_pert_from_block7:.6f}")
 log(f"                       = {gamma4_qq_OGE:.10f}  (= 1/6 at canonical g_bare = 1)")
 
 check(
-    "Representation A: q^2 |Gamma^(4)|_OGE = g_bare^2/(2 N_c) from D12 + S2",
+    "Representation A: q^2 |Gamma^(4)|_OGE = g_bare^2/(2 N_c) from D12 + Lorentz-Clifford projection",
     abs(gamma4_qq_OGE - 1.0 / (2.0 * N_c)) < 1e-14,
     f"OGE-side coefficient = {gamma4_qq_OGE:.10f}, target 1/(2 N_c) = {1.0/(2.0*N_c):.10f}",
 )
 
-# y_t_bare is DEFINED via Block 11's matrix-element computation.  Block 10
-# uses that downstream value to compute the canonical-surface continuum
-# observables.  Block 11 separately verifies the value agrees with the
-# OGE-side number (gamma4_qq_OGE) computed here.
 y_t_bare = 1.0 / math.sqrt(2.0 * N_c)  # = 1/sqrt(6); derived in Block 11 from H_unit matrix element
 y_t_bare_sq = y_t_bare ** 2
 
@@ -612,7 +1199,6 @@ log()
 log(f"  y_t_bare value used downstream (derived independently in Block 11):")
 log(f"    y_t_bare = 1/sqrt(2 N_c) = {y_t_bare:.10f}    (from H_unit matrix element)")
 log(f"    y_t_bare^2              = {y_t_bare_sq:.10f}")
-log(f"  Block 11 confirms y_t_bare^2 = q^2 |Gamma^(4)|_OGE = {gamma4_qq_OGE:.10f}")
 
 # === Block 6's Clebsch-Gordan overlap is the same number used for y_t_bare ===
 cg_overlap_top = overlaps[0]
@@ -620,98 +1206,36 @@ check(
     "Cross-check: Block 6 Clebsch-Gordan overlap = y_t_bare from H_unit (Block 11)",
     abs(cg_overlap_top - y_t_bare) < 1e-14,
     f"overlap = {cg_overlap_top:.10f}, y_t_bare from Rep B = {y_t_bare:.10f} (same 1/sqrt(6))",
+    cls="A",
 )
 
 log()
-log(f"  Bare level (g_bare = {g_bare}):")
-log(f"    y_t(bare) = {y_t_bare:.6f} = 1/sqrt(6)  (from H_unit matrix element, Block 11)")
-log(f"    g_s(bare) = g_bare = {g_bare:.6f}")
-log(f"    ratio = 1/sqrt(6) = {y_t_bare/g_bare:.10f}")
-
-# === Canonical-surface tadpole factor (D15: n_link = 1 per vertex) ===
+log("  --- Conditional canonical-surface tadpole context (LOG-ONLY) ---")
+log(f"  Bare level (g_bare = {g_bare}): y_t(bare)/g_s(bare) = 1/sqrt(6) = {y_t_bare:.10f}")
 tadpole_factor = 1.0 / math.sqrt(U0)
 g_s_MPl = g_bare * tadpole_factor
 y_t_MPl = y_t_bare * tadpole_factor
-log()
-log(f"  Canonical surface (D15: n_link = 1 per vertex, common tadpole):")
-log(f"    tadpole factor = 1/sqrt(u_0) = {tadpole_factor:.6f}")
-log(f"    g_s(M_Pl)  = g_bare * tadpole = {g_s_MPl:.6f}")
-log(f"    y_t(M_Pl)  = y_t(bare) * tadpole = {y_t_MPl:.6f}")
-
-# === Two independent routes to g_s(M_Pl) agree ===
+log(f"  IF a later accepted bridge supplies a common 1/sqrt(u_0) dressing for both")
+log(f"  vertices (NOT certified here): tadpole factor = {tadpole_factor:.6f},")
+log(f"  g_s -> {g_s_MPl:.6f}, y_t -> {y_t_MPl:.6f}, ratio stays {y_t_MPl/g_s_MPl:.10f}.")
 g_s_alpha = math.sqrt(4.0 * PI * ALPHA_LM)
-check(
-    "CONTEXT: g_s(M_Pl) = 1/sqrt(u_0) = sqrt(4 pi alpha_LM) if tadpole bridge is admitted",
-    abs(g_s_MPl - g_s_alpha) < 1e-14,
-    f"both = {g_s_MPl:.10f}",
-)
-
-# === Ratio is tadpole-invariant (as the framework-native derivation predicts) ===
-ratio_MPl = y_t_MPl / g_s_MPl
-check(
-    "CONTEXT: y_t(M_Pl) / g_s(M_Pl) = 1/sqrt(6) if shared tadpole bridge is admitted",
-    abs(ratio_MPl - 1.0 / math.sqrt(6.0)) < 1e-14,
-    f"ratio = {ratio_MPl:.10f}",
-)
-
-log("  Downstream numerical top-Yukawa values are intentionally not checked here.")
-log("  This runner does not import the old 0.4358 comparison as authority.")
-
-# === Dependency trace: Block 10 traces through Blocks 2 and 6 ===
-# If the Clebsch-Gordan overlap (Block 6) were different, y_t_bare would change,
-# and y_t(M_Pl) would change correspondingly.  Test this by computing a
-# counterfactual with a perturbed overlap.
-counterfactual_overlap = cg_overlap_top * 1.1  # hypothetical 10% shift
-counterfactual_y_t = counterfactual_overlap * g_bare * tadpole_factor
-check(
-    "CONTEXT: conditional y_t(M_Pl) tracks Clebsch-Gordan overlap (Block 6)",
-    abs(counterfactual_y_t - y_t_MPl) > 0.01,
-    f"counterfactual (10% shift in overlap): y_t -> {counterfactual_y_t:.6f}, "
-    f"differs from derived {y_t_MPl:.6f}",
-)
-
-log()
-log("  === Support chain (same-1PI-function residue identity) ===")
-log()
-log("  The support note makes NO quantitative precision claim.")
-log("  It states only the exact same-1PI-function residue identity")
-log("  on the scalar-singlet channel:")
-log()
-log("    A1 (one-qubit/physical-Cl(3)) + A2 (Z^3) + D1-D17 + S1 + S2 ->")
-log()
-log("    [Representation A — OGE-side computation, this Block 10]")
-log("       Color singlet Fierz: -1/(2 N_c) [D12, Block 4]")
-log("       Lorentz scalar projection: |c_S| = 1 [S2, Block 8]")
-log("       D16: only OGE at tree on scalar-singlet channel")
-log("       => q^2 |Gamma^(4)|_OGE = |c_S| * g_bare^2 / (2 N_c) = 1/6")
-log()
-log("    [Representation B — H_unit operator-side computation, Block 11]")
-log("       y_t_bare := <0 | H_unit | t-bar t> = (1/sqrt(N_c N_iso)) * 1")
-log("       D9 + D17 + Steps 1-2 fix the H_unit content; Wick contraction")
-log("       gives y_t_bare = 1/sqrt(6) INDEPENDENTLY (no OGE input)")
-log("       => q^2 |Gamma^(4)|_H = y_t_bare^2 = 1/6")
-log()
-log("    Both A and B independently give 1/6; consistency confirmed in Block 11.")
-log("    Conditional tadpole context: if both vertices share the same dressing,")
-log("       y_t(M_Pl)/g_s(M_Pl) remains 1/sqrt(6). This is not load-bearing.")
-log()
-log("  Quantitative NLO / precision / systematic discussion is SUPPORT-ONLY")
-log("  (see Block 9 and docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md).")
-log("  It is NOT part of the core support chain.")
+log(f"  (cross-note context: sqrt(4 pi alpha_LM) = {g_s_alpha:.6f} -- helper constant)")
+log("  These tadpole lines are context only: no PASS/FAIL is attached to them,")
+log("  and this runner does NOT certify the shared-tadpole transport bridge.")
 
 
 # ============================================================
-# BLOCK 11: Scalar-singlet 1PI residue audit (Step 3, scalar channel only)
+# BLOCK 11: Scalar-singlet 1PI residue check (Step 3, scalar channel only)
 # ============================================================
 log()
 log("=" * 72)
-log("BLOCK 11: Scalar-singlet 1PI residue identity audit")
+log("BLOCK 11: Scalar-singlet 1PI residue identity check")
 log("=" * 72)
 log()
-log("  This block audits ONLY the load-bearing scalar-singlet channel.")
+log("  This block checks ONLY the load-bearing scalar-singlet channel.")
 log()
-log("  The support runner evaluates y_t_bare = 1/sqrt(6) by TWO")
-log("  computations within the same cited framework surface:")
+log("  The runner evaluates y_t_bare = 1/sqrt(6) by TWO computations within")
+log("  the same cited framework surface:")
 log()
 log("    Representation A (OGE in bare action, Block 7 + 4 + 8):")
 log("        Gamma^(4)(q^2) = -c_S * g_bare^2 / (2 N_c * q^2) * O_S")
@@ -729,23 +1253,24 @@ log()
 
 # (a) Color singlet Fierz coefficient from D12 (Block 4)
 color_singlet_coeff = -1.0 / (2.0 * N_c)
-# (b) Lorentz scalar projection c_S from S2 (Block 8)
+# (b) Lorentz scalar projection c_S from the standard Clifford identity (Block 8)
 scalar_proj_c_S = c_S
 
 check(
     "Color-singlet Fierz coefficient -1/(2 N_c) computed from D12 (Block 4)",
     abs(color_singlet_coeff - (-1.0 / (2.0 * N_c))) < 1e-14,
     f"-1/(2 N_c) = {color_singlet_coeff:.10f} (exact SU(N_c) algebra)",
+    cls="A",
 )
 
 check(
-    "Lorentz scalar projection coefficient |c_S| = 1 (S2, Block 8)",
+    "Lorentz scalar projection coefficient |c_S| = 1 (standard Clifford identity, Block 8)",
     abs(abs(scalar_proj_c_S) - 1.0) < 1e-12,
     f"|c_S| = {abs(scalar_proj_c_S):.10f} (exact Clifford-algebra identity)",
+    cls="A",
 )
 
 # === Representation A: OGE coefficient ===
-# Gamma^(4)|_OGE = -c_S * g_bare^2 / (2 N_c * q^2) -> q^2 * |Gamma^(4)| = |c_S| * g_bare^2/(2 N_c)
 g_bare_for_test = 1.0
 gamma4_coeff_A_qq = abs(scalar_proj_c_S) * g_bare_for_test**2 / (2.0 * N_c)
 
@@ -760,8 +1285,6 @@ check(
 )
 
 # === Representation B: H_unit operator matrix element (INDEPENDENT computation) ===
-# y_t_bare := <0 | H_unit | t-bar t > = (1/sqrt(N_c N_iso)) * (Wick contraction = 1)
-# This is DIRECTLY computed from the H_unit operator content, with NO reference to OGE.
 clebsch_gordan_factor = 1.0 / math.sqrt(N_c * 2.0)   # 1/sqrt(N_c * N_iso) with N_iso=2
 fermion_wick_amplitude = 1.0                          # canonical fermion-state normalization
 y_t_bare_from_matrix_element = clebsch_gordan_factor * fermion_wick_amplitude
@@ -804,11 +1327,12 @@ check(
     "Cross-check: Block 6 Clebsch-Gordan overlap = y_t_bare from Rep B",
     abs(cg_overlap_top - y_t_bare_from_matrix_element) < 1e-12,
     f"Block 6 CG = {cg_overlap_top:.10f}, Rep B y_t_bare = {y_t_bare_from_matrix_element:.10f}",
+    cls="A",
 )
 
 
 # ============================================================
-# BLOCK 12: Two-gluon color traces (SUPPORT-ONLY — not part of core support)
+# BLOCK 12: Two-gluon color traces (SUPPORT-ONLY -- not part of core support)
 # ============================================================
 log()
 log("=" * 72)
@@ -819,31 +1343,19 @@ log("identification surface; it documents SU(N_c) algebraic facts.")
 log("=" * 72)
 log()
 
-# Compute two color-trace structures that arise in 2-gluon exchange:
-# PLANAR 2-gluon (gluons uncrossed): Tr(T^a T^b) Tr(T^a T^b)
-# NON-PLANAR 2-gluon (crossed):      Tr(T^a T^b T^a T^b)
-# (Both summed over a, b from 1 to N_c^2 - 1.)
-# For an external color-singlet 4-fermion amplitude, these trace structures
-# appear with relative coefficient (1/N_c)^(number of color-singlet projections).
-
 planar_trace = 0.0
 nonplanar_trace = 0.0
 for a in range(n_gen):
     for b in range(n_gen):
         TaTb = T_gens[a] @ T_gens[b]
-        # Planar: Tr(T^a T^b) * Tr(T^a T^b) [two separate color traces]
         tr_ab = np.trace(TaTb).real
         planar_trace += tr_ab * tr_ab
-        # Non-planar: Tr(T^a T^b T^a T^b) [single color trace with crossing]
         TaTbTaTb = TaTb @ TaTb
         nonplanar_trace += np.trace(TaTbTaTb).real
 
 log(f"  Sum over a,b of Tr(T^a T^b)^2  [planar]     = {planar_trace:+.6f}")
 log(f"  Sum over a,b of Tr(T^a T^b T^a T^b) [non-pl] = {nonplanar_trace:+.6f}")
 
-# For SU(N_c):
-# Sum_{a,b} Tr(T^a T^b) Tr(T^a T^b) = Sum_a (1/2)^2 [delta^aa] = (N_c^2 - 1)/4
-# Sum_{a,b} Tr(T^a T^b T^a T^b) = (N_c^2 - 1) * (-1/(4 N_c)) (standard SU(N) identity)
 planar_expected = (N_c * N_c - 1) / 4.0
 nonplanar_expected = -(N_c * N_c - 1) / (4.0 * N_c)
 
@@ -851,16 +1363,15 @@ check(
     f"Planar 2-gluon color trace = (N_c^2 - 1)/4 = {planar_expected:.4f}",
     abs(planar_trace - planar_expected) < 1e-10,
     f"computed = {planar_trace:.6f}, SU({N_c}) exact",
+    cls="A",
 )
 check(
     f"Non-planar 2-gluon color trace = -(N_c^2 - 1)/(4 N_c) = {nonplanar_expected:.4f}",
     abs(nonplanar_trace - nonplanar_expected) < 1e-10,
     f"computed = {nonplanar_trace:.6f}, SU({N_c}) exact",
+    cls="A",
 )
 
-# Ratio: the non-planar contribution is suppressed relative to planar by
-# a factor of 1/N_c (from the two traces merging into one with an extra 1/N_c)
-# and an additional sign flip.
 ratio_NP_to_P = abs(nonplanar_trace / planar_trace)
 expected_ratio = 1.0 / N_c  # = 1/3 for SU(3)
 log()
@@ -869,52 +1380,18 @@ check(
     "Non-planar suppression from color: ratio = 1/N_c = 1/3 for SU(3)",
     abs(ratio_NP_to_P - expected_ratio) < 1e-10,
     f"|NP/P| = {ratio_NP_to_P:.6f}, expected 1/N_c = {expected_ratio:.6f}",
+    cls="A",
 )
 
 log()
-log("  KEY RESULT: at O(alpha_LM) (NLO), there is only ONE 1-loop topology")
-log("  contributing to the y_t/g_s ratio: the planar vertex correction.")
-log("  Non-planar topologies require >= 2 gluons in a loop with crossed")
-log("  propagators, which first appear at O(alpha_LM^2) = NNLO.")
-log()
-log("  Therefore at NLO, non-planar corrections are IDENTICALLY ZERO.")
-log("  The 1.92% vertex-correction bound (Block 9) is the COMPLETE NLO.")
-log()
-log("  The trace computation below shows the magnitude of non-planar")
-log("  suppression IF it were to appear at NLO (it doesn't, but the")
-log("  ratio 1/N_c = 1/3 is a rigorous SU(3) algebraic fact).")
-log()
-
-# NLO topology counting: how many 1-loop diagrams contribute at O(alpha_LM)?
-# At 1-loop, the 4-point function gets contributions from:
-#   (a) vertex correction on Yukawa side: 1 planar diagram
-#   (b) vertex correction on gauge side: 1 planar diagram
-#   (c) external fermion self-energy: 1 planar diagram per leg, 4 legs
-#   (d) gluon self-energy: 1 planar diagram (quark bubble)
-# Total: all PLANAR. Non-planar requires 2+ gluons in a loop (NNLO).
-nlo_diagrams_planar = 1 + 1 + 4 + 1   # (a) + (b) + (c) * 4 legs + (d)
-nlo_diagrams_nonplanar = 0             # first appears at NNLO
-
-check(
-    "NLO topology counting: non-planar contributions are IDENTICALLY ZERO at O(alpha_LM)",
-    nlo_diagrams_nonplanar == 0,
-    f"non-planar 1-loop diagrams at NLO = {nlo_diagrams_nonplanar}; "
-    f"planar 1-loop diagrams = {nlo_diagrams_planar} (all counted in Block 9's delta_PT)",
-)
-
-# NNLO non-planar estimate (for the record; negligible since alpha_LM^2 * 1/N_c^2)
+log("  CONTEXT (log-only): at O(alpha_LM) the 1-loop topologies entering the")
+log("  4-point function are all planar; crossed-2-gluon (non-planar) topologies")
+log("  first appear at O(alpha_LM^2).  Using the helper alpha_LM constant the")
+log("  NNLO non-planar magnitude would be")
 alpha_LM_sq_C_F_sq = (ALPHA_LM * C_F / PI) ** 2
 delta_NNLO_nonplanar = alpha_LM_sq_C_F_sq / (N_c ** 2)
-log()
-log(f"  NNLO non-planar magnitude (for the record, where 1/N_c^2 enters):")
-log(f"    delta_NNLO_NP = (alpha_LM * C_F / pi)^2 * 1/N_c^2")
-log(f"                  = {alpha_LM_sq_C_F_sq:.6f} * {1/N_c**2:.6f}")
-log(f"                  = {delta_NNLO_nonplanar*100:.4f}%  (negligible)")
-check(
-    "NNLO non-planar correction is negligible (< 0.05%)",
-    delta_NNLO_nonplanar < 0.0005,
-    f"delta_NNLO_NP = {delta_NNLO_nonplanar*100:.4f}% (genuinely negligible)",
-)
+log(f"    delta_NNLO_NP = (alpha_LM * C_F / pi)^2 / N_c^2 = {delta_NNLO_nonplanar*100:.4f}%")
+log("  -- context only, no PASS/FAIL attached, no precision claim.")
 
 
 # ============================================================
@@ -927,40 +1404,38 @@ log("=" * 72)
 log(f"  PASS: {COUNTS['PASS']}")
 log(f"  FAIL: {COUNTS['FAIL']}")
 log()
-log("  Every load-bearing coefficient in YT_WARD_IDENTITY_DERIVATION_THEOREM")
-log("  is computed independently from inputs:")
+log("  WARD-IDENTITY THEOREM (load-bearing, Blocks W1-W6):")
+log("  - W1: kernel Noether identity sum_mu D^-_mu J_mu(x) = [E_x, M] computed")
+log("        at machine zero on explicit (2,3,4) Z^3 blocks with two")
+log("        independent RANDOM SU(3) link backgrounds.")
+log("  - W2: propagator-level Ward identity with contact terms exact for all")
+log("        (x; y, z); <div V> = 0; exact under random gauge transformation.")
+log("  - W3/W4: FALSIFICATION -- the residual is COMPUTED NONZERO when the")
+log("        point-split current is link-stripped or eta-mismatched; the")
+log("        identity is a property of the action's symmetry, not a definition.")
+log("  - W5: iso-vector current conserved at degenerate mass; at split mass the")
+log("        residual equals the exact (m2-m1) psibar tau+ psi insertion.")
+log("  - W6: EXACT-arithmetic certificate (sympy rationals): residuals exactly 0.")
+log("  - W7: singlet uniformity DERIVED via commutant/Schur computation.")
+log()
+log("  MATRIX-ELEMENT COROLLARY (T1) (Blocks 1-8, 11):")
 log("  - Block 2: Z^2 = N_c N_iso from explicit index-contraction sum")
-log("  - Block 4: Fierz identity verified against Gell-Mann-matrix computation")
-log("  - Block 6: Clebsch-Gordan overlap computed from unit-norm singlet state")
-log("  - Block 7: C_pert = 1/(2 N_c) extracted from Fierz (Block 4)")
-log("  - Block 7a: C_strong = 1/N_c^2 from Haar-sampled one-link integral")
-log("  - Block 8: Dirac Fierz c_S, c_P, ... computed from 4x4 Clifford matrices")
-log("  - Block 9: SUPPORT-ONLY — perturbative 1-loop vertex correction")
-log("             magnitude from alpha_LM, C_F inputs.  Not part of the")
-log("             core support chain.")
-log("  - Block 10: computes the OGE-side coefficient (Representation A) of")
-log("             the same-1PI-function identity using D12 + S2; uses the")
-log("             y_t_bare value derived independently in Block 11 to drive")
-log("             a conditional canonical-surface tadpole context check.")
-log("             This context is NON-LOAD-BEARING and does not certify")
-log("             y_t(M_Pl)/g_s(M_Pl) as a retained bridge.")
-log("  - Block 11: evaluates y_t_bare = 1/sqrt(6) INDEPENDENTLY from the")
-log("             H_unit operator matrix element (Clebsch-Gordan + canonical")
-log("             normalization, no OGE input); then verifies the value")
-log("             agrees with Block 10's OGE-side coefficient as a")
-log("             same-1PI-function consistency check.")
-log("  - Block 9, Block 12: SUPPORT-ONLY (perturbative NLO discussion")
-log("             and 2-gluon color-trace algebra). Not part of the")
-log("             core support chain. Documented in the bridge note.")
+log("  - Block 4: SU(3) Fierz verified from Gell-Mann matrices")
+log("  - Block 6: Clebsch-Gordan overlap from unit-norm singlet state")
+log("  - Block 8: Dirac Fierz coefficients from explicit 4x4 Clifford matrices")
+log("  - Block 11: y_t_bare = 1/sqrt(6) evaluated INDEPENDENTLY from the H_unit")
+log("        matrix element; agrees with the OGE-side same-1PI coefficient.")
 log()
-log("  Support result (exact tree-level algebraic identity on the stated surface):")
-log("    y_t_bare = g_bare / sqrt(6)")
-log("    Conditional context only: a later retained shared-tadpole bridge would")
-log("      preserve y_t(M_Pl) / g_s(M_Pl) = 1/sqrt(6), but this runner does not")
-log("      certify that bridge.")
+log("  CONTEXT ONLY (no PASS/FAIL attached to helper plaquette constants):")
+log("  - Block 9 (NLO magnitude), Block 10 tadpole lines, Block 12 NNLO line.")
+log("  This runner does NOT certify the physical top-Yukawa readout map, the")
+log("  shared tadpole transport bridge, or any precision claim.")
 log()
-log("  No precision bound is attached to this support note.")
-log("  Quantitative corrections and physical top-Yukawa readout are out of scope.")
+log("  Result on the stated bounded surface:")
+log("    (W1)  exact point-split vector Ward identity of the staggered Q_L action")
+log("    (T1)  y_t_bare = g_bare / sqrt(6)   (g_bare-flat form factor)")
+log()
+log(f"TOTAL: PASS={COUNTS['PASS']} FAIL={COUNTS['FAIL']}")
 log("  See docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md for the source note.")
 
 if COUNTS["FAIL"] > 0:

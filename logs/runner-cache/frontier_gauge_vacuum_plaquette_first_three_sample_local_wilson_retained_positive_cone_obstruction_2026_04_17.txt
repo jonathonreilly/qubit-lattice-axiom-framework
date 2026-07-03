@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py
-runner_sha256: 34660cbd8cc025af6e50d43d5157e93e4ee9cefa34bc14db5c842874666af40c
+runner_sha256: 2968abf6179bf963da7225140daa9f4afde4fa2558d2e0c9e290337b9a03691d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 14.71
+elapsed_sec: 8.86
 status: ok
 ----- stdout -----
 ================================================================================================================
@@ -32,6 +32,8 @@ Exact reconstructed first-symmetric retained coordinates a_loc = F^(-1) Z_loc
   [PASS] [SUPPORT] Positive-cone note already fixes cone membership as the exact half-space test F^(-1) Z >= 0
   [PASS] [SUPPORT] Local Wilson partial-evaluation note already fixes the exact normalized local one-plaquette sample triple
   [PASS] [SUPPORT] Full-slice rim-lift note still records that explicit B_6(W) remains open, so any fix must come from the nonlocal completion side
+  [PASS] [THEOREM] The Bessel-determinant one-plaquette partition normalization reproduces the displayed local sample triple
+         Z_(1plaq)(6)=3.441440354987778, mode cutoff=8, max displayed-sample error=5.551e-16
   [PASS] [THEOREM] The exact local Wilson sample triple reconstructs uniquely through the radical map
          max |F a_loc - Z_loc|=1.435e-82, |det(F)|=10.810321693971
   [PASS] [THEOREM] The reconstructed local retained coordinates have a strictly negative adjoint component
@@ -43,7 +45,7 @@ Exact reconstructed first-symmetric retained coordinates a_loc = F^(-1) Z_loc
   [PASS] [THEOREM] Any first-symmetric retained positive-type repair needs a positive adjoint-channel correction of at least -a_loc_(1,1)
          minimal retained-channel repair in the adjoint coordinate=0.031909612770024
 
-THEOREM PASS=5 SUPPORT=4 FAIL=0
+THEOREM PASS=6 SUPPORT=4 FAIL=0
 
 ----- stderr -----
 

@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_selective_instrument_atom_criterion_2026_06_05.py
+runner_sha256: c5a9764d2994d7ec4a99e8c6d5d10342b4c8bd35066bc4d00526ec5793fbed80
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+==============================================================================
+RECORD SELECTIVE INSTRUMENT ATOM CRITERION
+bounded-support / selective post-record gate runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Selective branch probabilities
+------------------------------------------------------------------------------
+  [PASS] input state is normalized
+  [PASS] branch probability p0 is recovered
+  [PASS] branch probability p1 is recovered
+  [PASS] branch probabilities sum to one
+  [PASS] both branches have positive support
+  [PASS] nonselective output is the sum of branches
+  [PASS] nonselective output is not one-hot
+  [PASS] coherence is removed in nonselective output
+
+------------------------------------------------------------------------------
+2. Normalized branch states and repeat stability
+------------------------------------------------------------------------------
+  [PASS] branch 0: normalized trace one
+  [PASS] branch 0: one-hot state
+  [PASS] branch 0: repeat readout stable
+  [PASS] branch 1: normalized trace one
+  [PASS] branch 1: one-hot state
+  [PASS] branch 1: repeat readout stable
+  [PASS] branch 0 and branch 1 are distinct atoms
+
+------------------------------------------------------------------------------
+3. History append gate
+------------------------------------------------------------------------------
+  [PASS] empty history has no atom
+  [PASS] selected atom appends to history
+  [PASS] second selected atom appends in order
+  [PASS] nonselective density is not appended as atom
+  [PASS] history length counts selected atoms
+
+------------------------------------------------------------------------------
+4. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_SELECTIVE_INSTRUMENT_ATOM_CRITERION_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: bounded-support
+  [PASS] note contains marker: trace_class: upstream_support
+  [PASS] note contains marker: selective atom criterion
+  [PASS] note contains marker: Does not derive outcome selection
+  [PASS] note contains marker: nonselective state `sum_i M_i(rho)` is not a single atom
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: selection closure
+  [PASS] forbidden wording absent: born closure
+  [PASS] forbidden wording absent: collapse closure
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=33 FAIL=0
+
+----- stderr -----
+

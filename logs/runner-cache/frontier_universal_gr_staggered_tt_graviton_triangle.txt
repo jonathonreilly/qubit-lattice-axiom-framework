@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_staggered_tt_graviton_triangle.py
+runner_sha256: 41f142430398483f422e035795700253cec5feb57134ec1449ca9af3e69b0f22
+timeout_sec: 480
+exit_code: 0
+elapsed_sec: 9.32
+status: ok
+----- stdout -----
+TT-PROJECTED STAGGERED STRESS-TRIANGLE SUPPORT
+========================================================================
+[PASS] T1 all tested external legs are genuine TT tensors for their own momenta
+       trace(E)=0 and k.E=0 for plus/cross bases on k1, k2, and k3=-(k1+k2)
+[PASS] T2 staggered TT-projected mixed channels are nonzero at N=6
+       plus,cross,cross=+0.03344, cross,plus,cross=+0.03344, cross,cross,plus=+0.01623
+[PASS] T3 nonzero TT support persists under one Brillouin-zone refinement
+       plus,cross,cross=+0.05344, cross,plus,cross=+0.05344, cross,cross,plus=+0.03603
+[PASS] T4 selected two-component Cl(3) TT control channels vanish while staggered channels do not
+       plus,cross,cross: 2c=-4.63e-18, cross,plus,cross: 2c=-1.89e-17, cross,cross,plus: 2c=-1.68e-17
+[PASS] T5 guardrail: this runner does not prove all-same-helicity vanishing
+       right,right,right at N=6 has |amplitude|=0.11837
+
+TOTAL: PASS=5 FAIL=0
+VERDICT: the proper staggered Kaehler-Dirac fermion has nonzero finite-momentum, TT-projected paramagnetic stress three-point channels, with selected two-component controls vanishing on the same TT kinematics. This supports a W-native pure-TT cubic ingredient. It does not establish all-same-helicity vanishing, a quantitative Einstein-Hilbert cubic match, the cubic diffeomorphism Ward identity, or nonlinear GR closure.
+
+----- stderr -----
+

@@ -1,0 +1,176 @@
+===== runner cache v1 =====
+runner: scripts/frontier_d2_sign_boundary_bisection_2026_06_12.py
+runner_sha256: 5d890f6dcfbbb93cd56865b0f997b14189b7f1d8d57c3be22e2972d4fa4d2406
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 24.97
+status: ok
+----- stdout -----
+PASS: finite-lattice size probe: q=24 is even
+PASS: finite-lattice wraparound probe: q=24 magnetic phase exp(i B_q q)=1
+PASS: finite-lattice wraparound probe: q=24 Harper matrix is Hermitian
+PASS: finite-lattice wraparound probe: q=24 x-boundary Bloch phase is present
+PASS: finite-lattice wraparound probe: q=24 second sector x-boundary Bloch phase is present
+PASS: finite-lattice size probe: q=32 is even
+PASS: finite-lattice wraparound probe: q=32 magnetic phase exp(i B_q q)=1
+PASS: finite-lattice wraparound probe: q=32 Harper matrix is Hermitian
+PASS: finite-lattice wraparound probe: q=32 x-boundary Bloch phase is present
+PASS: finite-lattice wraparound probe: q=32 second sector x-boundary Bloch phase is present
+PRECOMPUTE m=0.200: q=24 n=96/n=192 and q=32 n=96
+PRECOMPUTE m=0.500: q=24 n=96/n=192 and q=32 n=96
+PASS: V1a endpoint mu=1.5 at (m=0.2,T=0.2): chi < 0 | chi=-3.207604529651e-03
+PASS: V1a endpoint mu=2.0 at (m=0.2,T=0.2): chi > 0 | chi=4.091992686436e-03
+PASS: V1a bracket [1.5,2.0] at (m=0.2,T=0.2) has a chi sign change | chi(1.5)=-3.207604529651e-03 chi(2.0)=4.091992686436e-03
+PASS: Gauss-Legendre doubling gate: q=24 chi(mu=1.5,m=0.2,T=0.2) n=96 to n=192 differs by <=1e-8 | diff=8.475019731141e-12
+PASS: q=32 size probe: chi(mu=1.5,m=0.2,T=0.2) agrees with q=24 within 5% | q24=-3.207604529651e-03 q32=-3.166107441026e-03 rel=1.293710e-02
+PASS: Gauss-Legendre doubling gate: q=24 chi(mu=2.0,m=0.2,T=0.2) n=96 to n=192 differs by <=1e-8 | diff=6.971805077693e-12
+PASS: q=32 size probe: chi(mu=2.0,m=0.2,T=0.2) agrees with q=24 within 5% | q24=4.091992686436e-03 q32=4.104641275084e-03 rel=3.081533e-03
+PASS: V1b q=24 (m=0.2,T=0.2): initial bisection bracket retains sign change | [1.500000, 2.000000]
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 01 pre-update bracket retains sign change | lo=1.500000 hi=2.000000
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 01 bracket width does not increase | width=2.500000000000e-01
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 01 post-update bracket retains sign change | lo=1.500000 hi=1.750000
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 02 pre-update bracket retains sign change | lo=1.500000 hi=1.750000
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 02 bracket width does not increase | width=1.250000000000e-01
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 02 post-update bracket retains sign change | lo=1.625000 hi=1.750000
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 03 pre-update bracket retains sign change | lo=1.625000 hi=1.750000
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 03 bracket width does not increase | width=6.250000000000e-02
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 03 post-update bracket retains sign change | lo=1.687500 hi=1.750000
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 04 pre-update bracket retains sign change | lo=1.687500 hi=1.750000
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 04 bracket width does not increase | width=3.125000000000e-02
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 04 post-update bracket retains sign change | lo=1.687500 hi=1.718750
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 05 pre-update bracket retains sign change | lo=1.687500 hi=1.718750
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 05 bracket width does not increase | width=1.562500000000e-02
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 05 post-update bracket retains sign change | lo=1.703125 hi=1.718750
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 06 pre-update bracket retains sign change | lo=1.703125 hi=1.718750
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 06 bracket width does not increase | width=7.812500000000e-03
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 06 post-update bracket retains sign change | lo=1.703125 hi=1.710938
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 07 pre-update bracket retains sign change | lo=1.703125 hi=1.710938
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 07 bracket width does not increase | width=3.906250000000e-03
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 07 post-update bracket retains sign change | lo=1.707031 hi=1.710938
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 08 pre-update bracket retains sign change | lo=1.707031 hi=1.710938
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 08 bracket width does not increase | width=1.953125000000e-03
+PASS: V1b q=24 (m=0.2,T=0.2): bisection iter 08 post-update bracket retains sign change | lo=1.707031 hi=1.708984
+PASS: V1b q=24 (m=0.2,T=0.2): final bisection width locates mu* to 1e-3 | width=1.953125000000e-03
+mu*(m=0.2, T=0.2, q=24) = 1.708008  chi=1.776554079231e-06  bracket_width=1.953125000000e-03
+PASS: Gauss-Legendre doubling gate: q=24 chi(mu*=m0.2T0.2) n=96 to n=192 differs by <=1e-8 | diff=7.872437941625e-12
+PASS: q=32 size probe (m=0.2,T=0.2): scanned bracket has endpoint sign change | [1.658008, 1.708008] fa=-7.040e-04 fb=3.864e-05
+PASS: q=32 size probe (m=0.2,T=0.2): initial bisection bracket retains sign change | [1.658008, 1.708008]
+PASS: q=32 size probe (m=0.2,T=0.2): bisection iter 01 pre-update bracket retains sign change | lo=1.658008 hi=1.708008
+PASS: q=32 size probe (m=0.2,T=0.2): bisection iter 01 bracket width does not increase | width=2.500000000000e-02
+PASS: q=32 size probe (m=0.2,T=0.2): bisection iter 01 post-update bracket retains sign change | lo=1.683008 hi=1.708008
+PASS: q=32 size probe (m=0.2,T=0.2): bisection iter 02 pre-update bracket retains sign change | lo=1.683008 hi=1.708008
+PASS: q=32 size probe (m=0.2,T=0.2): bisection iter 02 bracket width does not increase | width=1.250000000000e-02
+PASS: q=32 size probe (m=0.2,T=0.2): bisection iter 02 post-update bracket retains sign change | lo=1.695508 hi=1.708008
+PASS: q=32 size probe (m=0.2,T=0.2): bisection iter 03 pre-update bracket retains sign change | lo=1.695508 hi=1.708008
+PASS: q=32 size probe (m=0.2,T=0.2): bisection iter 03 bracket width does not increase | width=6.250000000000e-03
+PASS: q=32 size probe (m=0.2,T=0.2): bisection iter 03 post-update bracket retains sign change | lo=1.701758 hi=1.708008
+PASS: q=32 size probe (m=0.2,T=0.2): bisection iter 04 pre-update bracket retains sign change | lo=1.701758 hi=1.708008
+PASS: q=32 size probe (m=0.2,T=0.2): bisection iter 04 bracket width does not increase | width=3.125000000000e-03
+PASS: q=32 size probe (m=0.2,T=0.2): bisection iter 04 post-update bracket retains sign change | lo=1.704883 hi=1.708008
+PASS: q=32 size probe (m=0.2,T=0.2): bisection iter 05 pre-update bracket retains sign change | lo=1.704883 hi=1.708008
+PASS: q=32 size probe (m=0.2,T=0.2): bisection iter 05 bracket width does not increase | width=1.562500000000e-03
+PASS: q=32 size probe (m=0.2,T=0.2): bisection iter 05 post-update bracket retains sign change | lo=1.704883 hi=1.706445
+PASS: q=32 size probe (m=0.2,T=0.2): final bisection width locates mu* to 1e-3 | width=1.562500000000e-03
+PASS: q=32 size probe: mu* agrees with q=24 within 5% for (m=0.2,T=0.2) | q24=1.708008 q32=1.705664 rel=1.372213e-03
+PASS: V1b q=24 (m=0.5,T=0.2): scanned bracket has endpoint sign change | [1.746696, 1.825470] fa=-1.023e-04 fb=1.051e-03
+PASS: V1b q=24 (m=0.5,T=0.2): initial bisection bracket retains sign change | [1.746696, 1.825470]
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 01 pre-update bracket retains sign change | lo=1.746696 hi=1.825470
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 01 bracket width does not increase | width=3.938674868906e-02
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 01 post-update bracket retains sign change | lo=1.746696 hi=1.786083
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 02 pre-update bracket retains sign change | lo=1.746696 hi=1.786083
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 02 bracket width does not increase | width=1.969337434453e-02
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 02 post-update bracket retains sign change | lo=1.746696 hi=1.766390
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 03 pre-update bracket retains sign change | lo=1.746696 hi=1.766390
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 03 bracket width does not increase | width=9.846687172264e-03
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 03 post-update bracket retains sign change | lo=1.746696 hi=1.756543
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 04 pre-update bracket retains sign change | lo=1.746696 hi=1.756543
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 04 bracket width does not increase | width=4.923343586132e-03
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 04 post-update bracket retains sign change | lo=1.751620 hi=1.756543
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 05 pre-update bracket retains sign change | lo=1.751620 hi=1.756543
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 05 bracket width does not increase | width=2.461671793066e-03
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 05 post-update bracket retains sign change | lo=1.751620 hi=1.754081
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 06 pre-update bracket retains sign change | lo=1.751620 hi=1.754081
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 06 bracket width does not increase | width=1.230835896533e-03
+PASS: V1b q=24 (m=0.5,T=0.2): bisection iter 06 post-update bracket retains sign change | lo=1.752851 hi=1.754081
+PASS: V1b q=24 (m=0.5,T=0.2): final bisection width locates mu* to 1e-3 | width=1.230835896533e-03
+mu*(m=0.5, T=0.2, q=24) = 1.753466  chi=-1.864182924607e-06  bracket_width=1.230835896533e-03
+PASS: Gauss-Legendre doubling gate: q=24 chi(mu*=m0.5T0.2) n=96 to n=192 differs by <=1e-8 | diff=4.367097261470e-12
+PASS: q=32 size probe (m=0.5,T=0.2): scanned bracket has endpoint sign change | [1.703466, 1.753466] fa=-7.186e-04 fb=3.308e-05
+PASS: q=32 size probe (m=0.5,T=0.2): initial bisection bracket retains sign change | [1.703466, 1.753466]
+PASS: q=32 size probe (m=0.5,T=0.2): bisection iter 01 pre-update bracket retains sign change | lo=1.703466 hi=1.753466
+PASS: q=32 size probe (m=0.5,T=0.2): bisection iter 01 bracket width does not increase | width=2.500000000000e-02
+PASS: q=32 size probe (m=0.5,T=0.2): bisection iter 01 post-update bracket retains sign change | lo=1.728466 hi=1.753466
+PASS: q=32 size probe (m=0.5,T=0.2): bisection iter 02 pre-update bracket retains sign change | lo=1.728466 hi=1.753466
+PASS: q=32 size probe (m=0.5,T=0.2): bisection iter 02 bracket width does not increase | width=1.250000000000e-02
+PASS: q=32 size probe (m=0.5,T=0.2): bisection iter 02 post-update bracket retains sign change | lo=1.740966 hi=1.753466
+PASS: q=32 size probe (m=0.5,T=0.2): bisection iter 03 pre-update bracket retains sign change | lo=1.740966 hi=1.753466
+PASS: q=32 size probe (m=0.5,T=0.2): bisection iter 03 bracket width does not increase | width=6.250000000000e-03
+PASS: q=32 size probe (m=0.5,T=0.2): bisection iter 03 post-update bracket retains sign change | lo=1.747216 hi=1.753466
+PASS: q=32 size probe (m=0.5,T=0.2): bisection iter 04 pre-update bracket retains sign change | lo=1.747216 hi=1.753466
+PASS: q=32 size probe (m=0.5,T=0.2): bisection iter 04 bracket width does not increase | width=3.125000000000e-03
+PASS: q=32 size probe (m=0.5,T=0.2): bisection iter 04 post-update bracket retains sign change | lo=1.750341 hi=1.753466
+PASS: q=32 size probe (m=0.5,T=0.2): bisection iter 05 pre-update bracket retains sign change | lo=1.750341 hi=1.753466
+PASS: q=32 size probe (m=0.5,T=0.2): bisection iter 05 bracket width does not increase | width=1.562500000000e-03
+PASS: q=32 size probe (m=0.5,T=0.2): bisection iter 05 post-update bracket retains sign change | lo=1.750341 hi=1.751904
+PASS: q=32 size probe (m=0.5,T=0.2): final bisection width locates mu* to 1e-3 | width=1.562500000000e-03
+PASS: q=32 size probe: mu* agrees with q=24 within 5% for (m=0.5,T=0.2) | q24=1.753466 q32=1.751122 rel=1.336638e-03
+PASS: V1b q=24 (m=0.2,T=0.4): scanned bracket has endpoint sign change | [1.736353, 1.814582] fa=-8.948e-04 fb=2.947e-04
+PASS: V1b q=24 (m=0.2,T=0.4): initial bisection bracket retains sign change | [1.736353, 1.814582]
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 01 pre-update bracket retains sign change | lo=1.736353 hi=1.814582
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 01 bracket width does not increase | width=3.911454040521e-02
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 01 post-update bracket retains sign change | lo=1.775467 hi=1.814582
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 02 pre-update bracket retains sign change | lo=1.775467 hi=1.814582
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 02 bracket width does not increase | width=1.955727020261e-02
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 02 post-update bracket retains sign change | lo=1.775467 hi=1.795024
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 03 pre-update bracket retains sign change | lo=1.775467 hi=1.795024
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 03 bracket width does not increase | width=9.778635101303e-03
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 03 post-update bracket retains sign change | lo=1.785246 hi=1.795024
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 04 pre-update bracket retains sign change | lo=1.785246 hi=1.795024
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 04 bracket width does not increase | width=4.889317550651e-03
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 04 post-update bracket retains sign change | lo=1.790135 hi=1.795024
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 05 pre-update bracket retains sign change | lo=1.790135 hi=1.795024
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 05 bracket width does not increase | width=2.444658775326e-03
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 05 post-update bracket retains sign change | lo=1.792580 hi=1.795024
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 06 pre-update bracket retains sign change | lo=1.792580 hi=1.795024
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 06 bracket width does not increase | width=1.222329387663e-03
+PASS: V1b q=24 (m=0.2,T=0.4): bisection iter 06 post-update bracket retains sign change | lo=1.793802 hi=1.795024
+PASS: V1b q=24 (m=0.2,T=0.4): final bisection width locates mu* to 1e-3 | width=1.222329387663e-03
+mu*(m=0.2, T=0.4, q=24) = 1.794413  chi=-8.120573906920e-06  bracket_width=1.222329387663e-03
+PASS: Gauss-Legendre doubling gate: q=24 chi(mu*=m0.2T0.4) n=96 to n=192 differs by <=1e-8 | diff=6.479372770198e-14
+PASS: q=32 size probe (m=0.2,T=0.4): scanned bracket has endpoint sign change | [1.744413, 1.794413] fa=-7.398e-04 fb=2.099e-05
+PASS: q=32 size probe (m=0.2,T=0.4): initial bisection bracket retains sign change | [1.744413, 1.794413]
+PASS: q=32 size probe (m=0.2,T=0.4): bisection iter 01 pre-update bracket retains sign change | lo=1.744413 hi=1.794413
+PASS: q=32 size probe (m=0.2,T=0.4): bisection iter 01 bracket width does not increase | width=2.500000000000e-02
+PASS: q=32 size probe (m=0.2,T=0.4): bisection iter 01 post-update bracket retains sign change | lo=1.769413 hi=1.794413
+PASS: q=32 size probe (m=0.2,T=0.4): bisection iter 02 pre-update bracket retains sign change | lo=1.769413 hi=1.794413
+PASS: q=32 size probe (m=0.2,T=0.4): bisection iter 02 bracket width does not increase | width=1.250000000000e-02
+PASS: q=32 size probe (m=0.2,T=0.4): bisection iter 02 post-update bracket retains sign change | lo=1.781913 hi=1.794413
+PASS: q=32 size probe (m=0.2,T=0.4): bisection iter 03 pre-update bracket retains sign change | lo=1.781913 hi=1.794413
+PASS: q=32 size probe (m=0.2,T=0.4): bisection iter 03 bracket width does not increase | width=6.250000000000e-03
+PASS: q=32 size probe (m=0.2,T=0.4): bisection iter 03 post-update bracket retains sign change | lo=1.788163 hi=1.794413
+PASS: q=32 size probe (m=0.2,T=0.4): bisection iter 04 pre-update bracket retains sign change | lo=1.788163 hi=1.794413
+PASS: q=32 size probe (m=0.2,T=0.4): bisection iter 04 bracket width does not increase | width=3.125000000000e-03
+PASS: q=32 size probe (m=0.2,T=0.4): bisection iter 04 post-update bracket retains sign change | lo=1.791288 hi=1.794413
+PASS: q=32 size probe (m=0.2,T=0.4): bisection iter 05 pre-update bracket retains sign change | lo=1.791288 hi=1.794413
+PASS: q=32 size probe (m=0.2,T=0.4): bisection iter 05 bracket width does not increase | width=1.562500000000e-03
+PASS: q=32 size probe (m=0.2,T=0.4): bisection iter 05 post-update bracket retains sign change | lo=1.792851 hi=1.794413
+PASS: q=32 size probe (m=0.2,T=0.4): final bisection width locates mu* to 1e-3 | width=1.562500000000e-03
+PASS: q=32 size probe: mu* agrees with q=24 within 5% for (m=0.2,T=0.4) | q24=1.794413 q32=1.793632 rel=4.353791e-04
+PASS: V1c fixed-direction gate: mu* increases with m at T=0.2 (mu*(m=0.5) > mu*(m=0.2)) | 1.753466 > 1.708008
+PASS: V1c fixed-direction gate: mu* increases with T at m=0.2 (mu*(T=0.4) > mu*(T=0.2)) | 1.794413 > 1.708008
+V1d zero-field analytic landmarks:
+PASS: V1d analytic upper band edge equals sqrt(m^2+16) for m=0.2 | Emax=4.004996878900
+PASS: V1d analytic staggered-spectrum van Hove energy equals |m| for m=0.2 | E_vH=0.200000000000
+  (m=0.2,T=0.2) mu*=1.708008, E_vH=0.200000, E_upper=4.004997, |mu*-E_vH|=1.508008, |mu*-E_upper|=2.296989
+PASS: V1d analytic upper band edge equals sqrt(m^2+16) for m=0.5 | Emax=4.031128874149
+PASS: V1d analytic staggered-spectrum van Hove energy equals |m| for m=0.5 | E_vH=0.500000000000
+  (m=0.5,T=0.2) mu*=1.753466, E_vH=0.500000, E_upper=4.031129, |mu*-E_vH|=1.253466, |mu*-E_upper|=2.277663
+PASS: V1d analytic upper band edge equals sqrt(m^2+16) for m=0.2 | Emax=4.004996878900
+PASS: V1d analytic staggered-spectrum van Hove energy equals |m| for m=0.2 | E_vH=0.200000000000
+  (m=0.2,T=0.4) mu*=1.794413, E_vH=0.200000, E_upper=4.004997, |mu*-E_vH|=1.594413, |mu*-E_upper|=2.210584
+PASS: V1d anchor: every sampled mu* lies strictly between the analytic van Hove energy |m| and the upper band edge sqrt(m^2+16), anchored to NEITHER at the sampled instances (distances printed; the landmark question stays open)
+SCOPE: sampled instances only; bisection-bracketed finite-field boundary; no continuum claim
+TOTAL: PASS=154 FAIL=0
+
+----- stderr -----
+

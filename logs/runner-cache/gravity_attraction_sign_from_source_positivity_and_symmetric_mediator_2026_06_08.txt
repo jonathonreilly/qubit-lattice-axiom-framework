@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/gravity_attraction_sign_from_source_positivity_and_symmetric_mediator_2026_06_08.py
+runner_sha256: 0444d6b24b75453069f7e0d0a0119564d99e885447389236c12e145606ca15ce
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
+GRAVITY ATTRACTION SIGN: bounded source/action exchange reduction
+==============================================================================
+[PASS] E0 exchange sign derived by finite quadratic on-shell elimination
+       cross_term=-1/(K*sigma); for sigma=+/-1 this has sign -sigma when K>0
+[PASS] E1 numerator contractions
+       scalar=+1.0, vector=-1.0, tensor=+0.5
+[PASS] E2 healthy exchange signs
+       signs={'scalar_same_source': -1.0, 'vector_like_charge': 1.0, 'tensor_positive_source': -1.0} (-1 attraction, +1 repulsion)
+[PASS] E3 tensor attraction iff healthy kinetic sign for positive sources
+       healthy sign=-1, ghost sign=+1
+[PASS] E4 source note keeps the exchange premises explicit
+       guardrails present for kinetic sign, source/action normalization, local energy, and primitive scope
+[PASS] E5 source note treats textbook QFT only as parallel reference
+
+TOTAL: PASS=6 FAIL=0
+VERDICT: PASS for the bounded sign reduction only. The exchange sign is derived by
+finite quadratic on-shell elimination inside the displayed source/action model.
+Positive sources plus a healthy spin-2 kinetic sign give attraction; flipping the
+kinetic sign flips the force. The runner does not derive the kinetic sign or the
+source/action normalization.
+
+----- stderr -----
+

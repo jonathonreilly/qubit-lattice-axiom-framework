@@ -1,0 +1,93 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_audit_application_map_2026_06_06.py
+runner_sha256: 446f5731958de8315b7af02afd37d93d85684dc1e722864f330892d2a391c8a4
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Record axiom audit-application map
+actual_current_surface_status: bounded-support
+trace_class: upstream_support
+reachability_to_target: supports
+proposal_allowed: false
+audit_required_before_effective_retained: true
+
+A. source availability and anchors
+[PASS] record_unbounded_additivity_schema: source file exists -- docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md
+[PASS] record_unbounded_additivity_schema: anchor phrase present -- arbitrary finite-prefix schema
+[PASS] record_unbounded_additivity_schema: anchor phrase present -- This row does not derive record production
+[PASS] flavor_det_character_selection: source file exists -- docs/FLAVOR_DET_CHARACTER_SELECTION_AUDIT_READY_2026-06-04.md
+[PASS] flavor_det_character_selection: anchor phrase present -- the exact Record typing theorem supplies the object-type firewall
+[PASS] flavor_det_character_selection: anchor phrase present -- regular additive readouts of positive multiplicative amplitudes
+[PASS] darwinism_local_observability: source file exists -- docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md
+[PASS] darwinism_local_observability: anchor phrase present -- local-observability
+[PASS] darwinism_local_observability: anchor phrase present -- Additivity != redundancy
+[PASS] dynamics_form_record_preservation: source file exists -- docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md
+[PASS] dynamics_form_record_preservation: anchor phrase present -- record-preservation + locality + Hermiticity
+[PASS] dynamics_form_record_preservation: anchor phrase present -- couplings
+[PASS] color_su3_record_invariance: source file exists -- docs/COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md
+[PASS] color_su3_record_invariance: anchor phrase present -- matter realization
+[PASS] color_su3_record_invariance: anchor phrase present -- not forced by Lattice + Quantum + Record
+[PASS] chirality_record_typing: source file exists -- docs/CHIRALITY_RECORD_TYPING_INTERFACE_2026-06-05.md
+[PASS] chirality_record_typing: anchor phrase present -- record dynamics is a consumer
+[PASS] chirality_record_typing: anchor phrase present -- carrier/readout bridge
+[PASS] arrow_from_record_formation: source file exists -- docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md
+[PASS] arrow_from_record_formation: anchor phrase present -- past hypothesis
+[PASS] arrow_from_record_formation: anchor phrase present -- record-production dynamics
+
+B. gate classification
+case: record_unbounded_additivity_schema
+  classification=record_schema_sufficient
+  supported=('arbitrary_finite_prefix_schema', 'durable_realized_outcome', 'finite_additivity')
+  missing=()
+[PASS] record_unbounded_additivity_schema: supported gate set matches expectation -- arbitrary_finite_prefix_schema,durable_realized_outcome,finite_additivity
+[PASS] record_unbounded_additivity_schema: missing gate set matches expectation -- none
+case: flavor_det_character_selection
+  classification=record_schema_partial
+  supported=('finite_additivity',)
+  missing=('composition_multiplicativity', 'determinant_partition_origin', 'regularity_smoothness')
+[PASS] flavor_det_character_selection: supported gate set matches expectation -- finite_additivity
+[PASS] flavor_det_character_selection: missing gate set matches expectation -- composition_multiplicativity,determinant_partition_origin,regularity_smoothness
+case: darwinism_local_observability
+  classification=record_schema_partial
+  supported=('durable_realized_outcome', 'finite_additivity')
+  missing=('local_observability', 'locality', 'redundant_broadcast')
+[PASS] darwinism_local_observability: supported gate set matches expectation -- durable_realized_outcome,finite_additivity
+[PASS] darwinism_local_observability: missing gate set matches expectation -- local_observability,locality,redundant_broadcast
+case: dynamics_form_record_preservation
+  classification=record_schema_partial
+  supported=('durable_realized_outcome',)
+  missing=('coupling_selection', 'hermiticity', 'minimality_truncation', 'record_preservation_dynamics', 'two_endpoint_gauss_structure')
+[PASS] dynamics_form_record_preservation: supported gate set matches expectation -- durable_realized_outcome
+[PASS] dynamics_form_record_preservation: missing gate set matches expectation -- coupling_selection,hermiticity,minimality_truncation,record_preservation_dynamics,two_endpoint_gauss_structure
+case: color_su3_record_invariance
+  classification=record_schema_partial
+  supported=('post_record_label_consumption',)
+  missing=('link_color_routing', 'matter_realization', 'record_invariance_commutant', 'symmetric_base_carrier')
+[PASS] color_su3_record_invariance: supported gate set matches expectation -- post_record_label_consumption
+[PASS] color_su3_record_invariance: missing gate set matches expectation -- link_color_routing,matter_realization,record_invariance_commutant,symmetric_base_carrier
+case: chirality_record_typing
+  classification=record_schema_partial
+  supported=('post_record_label_consumption',)
+  missing=('car_frame', 'carrier_chirality', 'generation_transport', 'signed_readout_choice')
+[PASS] chirality_record_typing: supported gate set matches expectation -- post_record_label_consumption
+[PASS] chirality_record_typing: missing gate set matches expectation -- car_frame,carrier_chirality,generation_transport,signed_readout_choice
+case: arrow_from_record_formation
+  classification=record_schema_partial
+  supported=('durable_realized_outcome',)
+  missing=('low_record_boundary', 'past_hypothesis', 'record_formation_dynamics')
+[PASS] arrow_from_record_formation: supported gate set matches expectation -- durable_realized_outcome
+[PASS] arrow_from_record_formation: missing gate set matches expectation -- low_record_boundary,past_hypothesis,record_formation_dynamics
+
+C. audit discipline
+[PASS] only the schema artifact itself is fully covered by Record schema -- ['record_unbounded_additivity_schema']
+[PASS] real downstream lanes are partial, not promoted -- ['flavor_det_character_selection', 'darwinism_local_observability', 'dynamics_form_record_preservation', 'color_su3_record_invariance', 'chirality_record_typing', 'arrow_from_record_formation']
+[PASS] forbidden closure claims are absent from classifier outputs
+[PASS] classifier emits only support/gate language
+
+SCORECARD: PASS=39 FAIL=0
+VERDICT: The Record schema fully covers only durable finite additivity/count-readout requirements. Concrete downstream lanes remain partial whenever they need regularity, log-det origin, local observability, record-production dynamics, chirality, color matter realization, rates, or dial selection.
+
+----- stderr -----
+

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_readout_factorization_theorem.py
-runner_sha256: 9fa7d82f137a84d2b952999d021156b12c30f1363743f259b28ce04d2c74f69c
+runner_sha256: 21e5d1109165c7800424420b158c82685a2ff1e48a65bdb06d8f08acbead6cf5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.39
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 
@@ -42,21 +42,21 @@ C. C3 covariance and quadratic invariants on the image
        invariant quadratic family = Matrix([[q33, q23, q23], [q23, q33, q23], [q23, q23, q33]])
 
 ========================================================================================
-D. Conditional extension (NOT VERIFIED HERE) - admissibility-implies-kernel-invariance
+D. First-live kernel-invariance theorem
 ========================================================================================
-The broader claim that local bosonic first-live species-resolving
-C_3-covariant admissibility forces every admissible scalar selector
-to be constant on span(e_z) is NOT verified by this runner. It is
-recorded as a conditional extension in the source note and would
-require its own theorem-and-runner check. Until then, the bounded
-theorem of this runner is only the linear-algebraic quotient/kernel
-structure of L together with its C_3 covariance and the C_3-invariant
-quadratic family on Diag_3.
+[PASS] D.1 an unreachable-slot shift leaves the returned first-live operator unchanged
+       L(W + eta e_z) = Matrix([[u], [v], [w]])
+[PASS] D.2 any first-live scalar Phi(L(W)) is constant on span(e_z)
+       Phi(L(W + eta e_z)) = Phi(u, v, w)
+[PASS] D.3 a z-sensitive scalar is not first-live because it distinguishes equal returned operators
+       z-sensitive shift: z -> eta + z
+[PASS] D.4 C3-invariant quadratic first-live scalars are also kernel-invariant
+       quadratic first-live scalar = alpha*u**2 + 2*alpha*u*v + 2*alpha*u*w + alpha*v**2 + 2*alpha*v*w + alpha*w**2 + 2*beta*u**2 - 2*beta*u*v - 2*beta*u*w + 2*beta*v**2 - 2*beta*v*w + 2*beta*w**2
 
 ========================================================================================
 Summary
 ========================================================================================
-PASSED: 9/9
+PASSED: 13/13
   [PASS] A.1 the four single-slot second-order images are e1, e2, e3, and 0
   [PASS] A.2 the first-live readout map has exact matrix L = [[1,0,0,0],[0,1,0,0],[0,0,1,0]]
   [PASS] A.3 the map has rank 3 and image equal to the full diagonal species space
@@ -66,18 +66,18 @@ PASSED: 9/9
   [PASS] B.3 the first-live readout realizes the exact quotient R^4 / span(e_unreach) ≅ Diag_3
   [PASS] C.1 the readout map intertwines the species 3-cycle with the reachable-slot 3-cycle
   [PASS] C.2 every C3-invariant quadratic scalar on Diag_3 is a scalar on diag(u,v,w)
+  [PASS] D.1 an unreachable-slot shift leaves the returned first-live operator unchanged
+  [PASS] D.2 any first-live scalar Phi(L(W)) is constant on span(e_z)
+  [PASS] D.3 a z-sensitive scalar is not first-live because it distinguishes equal returned operators
+  [PASS] D.4 C3-invariant quadratic first-live scalars are also kernel-invariant
 
 VERDICT (bounded): on the retained Γ_1 / T_1 grammar, the first-live
 second-order readout map L : R^4 -> Diag_3 has rank 3 and kernel
 span(e_z), so R^4 / span(e_z) ≅ Diag_3. The map intertwines the
-species 3-cycle with the reachable-slot 3-cycle, and every
-C_3-invariant quadratic scalar on Diag_3 is a scalar on diag(u,v,w).
-
-NOT VERIFIED HERE: that admissibility (local + bosonic + first-live +
-species-resolving + C_3-covariant) by itself forces every admissible
-scalar selector to be constant on span(e_z). That step is recorded
-as a conditional extension in the source note and requires its own
-theorem-and-runner check.
+species 3-cycle with the reachable-slot 3-cycle, every C_3-invariant
+quadratic scalar on Diag_3 is a scalar on diag(u,v,w), and every
+selector admitted as first-live is constant on span(e_z) because it
+factors through L(W).
 
 This is science-only and does not modify the repo's authority surfaces.
 

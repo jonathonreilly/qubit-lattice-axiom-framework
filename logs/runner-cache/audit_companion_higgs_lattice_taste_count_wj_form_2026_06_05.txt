@@ -1,0 +1,92 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py
+runner_sha256: d6e9f097a67a3eb7d16f04a91c347085a953cf850fd21f28b7a8ef427e51f279
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.95
+status: ok
+----- stdout -----
+
+----------------------------------------------------------------------------------------
+Part 1: Bridge (1) — d=4 naive taste count N_taste = 2^d = 16
+----------------------------------------------------------------------------------------
+  [PASS (A)] constructed d=4 Euclidean gamma matrices (4x4 each)
+  [PASS (A)] Euclidean Clifford {g_mu,g_nu} = 2 delta_munu I verified by matrix algebra
+  [PASS (A)] D(p)^dag D(p) = (sum_mu sin^2 p_mu) * I  (massless naive symbol)
+  [PASS (A)] sin(p_mu)=0 on (-pi,pi] has exactly the two solutions {0, pi}  ({0, pi})
+  [PASS (A)] d=1: |{0,pi}^d| = 2^d = 2 corners, all simultaneous sin-zeros  (count=2)
+  [PASS (A)] d=2: |{0,pi}^d| = 2^d = 4 corners, all simultaneous sin-zeros  (count=4)
+  [PASS (A)] d=3: |{0,pi}^d| = 2^d = 8 corners, all simultaneous sin-zeros  (count=8)
+  [PASS (A)] d=4: |{0,pi}^d| = 2^d = 16 corners, all simultaneous sin-zeros  (count=16)
+  [PASS (A)] d=5: |{0,pi}^d| = 2^d = 32 corners, all simultaneous sin-zeros  (count=32)
+  [PASS (A)] Bridge (1) result: N_taste = 2^4 = 16 at d=4
+  [PASS (A)] numeric: D^dag D = 0 (4x4) at all 16 d=4 corners
+  [PASS (A)] numeric: D^dag D != 0 at a generic interior momentum (no spurious zero)
+  [PASS (A)] PBC even L=2, d=4: per-axis sin-zeros=2 -> corner count 16 = 16
+  [PASS (A)] PBC even L=4, d=4: per-axis sin-zeros=2 -> corner count 16 = 16
+  [PASS (A)] PBC even L=6, d=4: per-axis sin-zeros=2 -> corner count 16 = 16
+  [PASS (A)] PBC even L=8, d=4: per-axis sin-zeros=2 -> corner count 16 = 16
+  [PASS (A)] APBC even L=4: no exact sin-zero momenta on the strict anti-periodic grid
+  [PASS (A)] APBC even L=6: no exact sin-zero momenta on the strict anti-periodic grid
+  [PASS (A)] APBC even L=8: no exact sin-zero momenta on the strict anti-periodic grid
+  [PASS (A)] APBC even L=10: no exact sin-zero momenta on the strict anti-periodic grid
+  [PASS (A)] APBC odd L=3: only one boundary zero per axis, not the two-corner set
+  [PASS (A)] APBC odd L=5: only one boundary zero per axis, not the two-corner set
+
+----------------------------------------------------------------------------------------
+Part 2: Bridge (2a) — Berezin Z_F[M] = det(M) ⇒ W(J) = log det(D+J)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Berezin: Leibniz sum == det(M) for N=1
+  [PASS (A)] Berezin: Leibniz sum == det(M) for N=2
+  [PASS (A)] Berezin: Leibniz sum == det(M) for N=3
+  [PASS (A)] Berezin: Leibniz sum == det(M) for N=4
+  [PASS (A)] Berezin identity Z_F[M] = det(M) reproven (N=1..4)
+  [PASS (A)] log det(D+J) = sum_k log lambda_k(D+J) (det = product of eigenvalues)
+
+----------------------------------------------------------------------------------------
+Part 3: Bridge (2b) — paired-spectrum determinant algebra
+----------------------------------------------------------------------------------------
+  [PASS (A)] per-pair determinant (J + i a)(J - i a) = J^2 + a^2  (J**2 + a**2)
+  [PASS (A)] with a = 2 u_0: per-pair det = J^2 + 4 u_0^2
+  [PASS (A)] paired determinant algebra awaits Part 4 spectrum derivation a = 2 u_0
+  [PASS (A)] numeric: real-antisymmetric blocks have purely-imaginary, conjugate-paired (+/- i lambda) eigenvalues
+
+----------------------------------------------------------------------------------------
+Part 4: Bridge (2b) — tadpole mean-field spectrum D_mf = i u_0 D_taste
+----------------------------------------------------------------------------------------
+  [PASS (A)] D_taste = sum_mu gamma_mu satisfies D_taste^2 = d*I = 4*I (cross terms cancel)
+  [PASS (A)] => |lambda_taste| = sqrt(d) = 2; at mean-link u_0 the magnitude a = 2 u_0
+  [PASS (A)] D_mf = i u_0 D_taste has characteristic polynomial (lambda^2 + 4u_0^2)^2  (char=(lambda**2 + 4*u0**2)**2)
+  [PASS (A)] det(D_mf + J I_4) = (J^2 + 4u_0^2)^2: two identical conjugate pairs  (det=(J**2 + 4*u0**2)**2)
+  [PASS (A)] the uniform +/-2i*u_0 mean-field spectrum is derived from the explicit Cl(4) block
+
+----------------------------------------------------------------------------------------
+Part 5: Bridge (2c) — W(J) = (N_tot/2) log(J^2+4u_0^2), W''(0)=N_tot/(4u_0^2)
+----------------------------------------------------------------------------------------
+  [PASS (A)] W''(0) for W=(N_tot/2)log(J^2+4u_0^2) equals N_tot/(4 u_0^2)  (W''(0)=Ntot/(4*u0**2))
+  [PASS (A)] per-mode curvature W''(0)/N_tot = 1/(4 u_0^2)
+  [PASS (A)] general identity d^2/dJ^2 log det(D+J) = -Tr[(D+J)^-2] (analytic vs finite-diff)  (max err = 2.49e-07)
+
+----------------------------------------------------------------------------------------
+Part 6: declared dependencies retained-grade; target row is the repair target
+----------------------------------------------------------------------------------------
+  [PASS (A)] dependency retained-grade: clifford_chirality_dimension_narrow_theorem_note_2026-05-10  (effective_status='retained')
+  [PASS (A)] dependency retained-grade: spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10  (effective_status='retained_bounded')
+  [PASS (A)] dependency retained-grade: staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16  (effective_status='retained_bounded')
+  [PASS (A)] dependency retained-grade: u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17  (effective_status='retained_bounded')
+  [PASS (A)] target row higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 exists and is audited_conditional (the row this bridge repairs)  (effective_status='audited_conditional')
+  [PASS (A)] target's recorded repair item is missing_bridge_theorem naming N_taste=16 and W(J)  (missing_bridge_theorem: provide a retained one-hop bridge deriving the d=4/Z^4 A...)
+  [PASS (A)] note contains expected source-side token: 'Status authority:** independent audit lane only'
+  [PASS (A)] note contains expected source-side token: 'Type:** bounded_theorem'
+  [PASS (A)] note contains expected source-side token: 'N_taste = 2^d = 16'
+  [PASS (A)] note contains expected source-side token: 'W(J) = log det(D + J)'
+  [PASS (A)] note contains expected source-side token: 'missing_bridge_theorem'
+  [PASS (A)] note avoids forbidden physical claim: 'R_lattice = (m_H/v)^2 is hereby derived'
+  [PASS (A)] note avoids forbidden physical claim: 'physical Higgs mass is established'
+
+========================================================================================
+  TOTAL: 53 PASS / 0 FAIL
+========================================================================================
+
+----- stderr -----
+

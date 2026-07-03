@@ -1,0 +1,77 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_pointer_broadcast_hamiltonian_2026_06_05.py
+runner_sha256: 64fdb2c15c93a80c47180dd9dd6959cb3396e9b2f28188013ab59db742a4555c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+==============================================================================
+RECORD POINTER BROADCAST HAMILTONIAN CONDITIONAL
+bounded-support / conditional finite construction runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Controlled terms
+------------------------------------------------------------------------------
+  [PASS] C_1 is Hermitian
+  [PASS] C_1 is involutive
+  [PASS] C_1 is unitary
+  [PASS] C_2 is Hermitian
+  [PASS] C_2 is involutive
+  [PASS] C_2 is unitary
+  [PASS] C_3 is Hermitian
+  [PASS] C_3 is involutive
+  [PASS] C_3 is unitary
+  [PASS] controlled terms commute pairwise
+  [PASS] product of controlled terms is fanout
+
+------------------------------------------------------------------------------
+2. Hamiltonian endpoint
+------------------------------------------------------------------------------
+  [PASS] H(1) is Hermitian
+  [PASS] exp(-i H(1) * 1) is fanout
+  [PASS] H(1) commutes with pointer Z
+  [PASS] fanout commutes with pointer Z
+
+------------------------------------------------------------------------------
+3. Time/coupling scale remains a supplied normalization
+------------------------------------------------------------------------------
+  [PASS] H(2) is Hermitian
+  [PASS] exp(-i H(2) * 2) is the same fanout
+  [PASS] H(2) is a rescaled H(1)
+  [PASS] different durations use different Hamiltonian scales
+  [PASS] endpoint gate does not choose T
+
+------------------------------------------------------------------------------
+4. Residual classes
+------------------------------------------------------------------------------
+  [PASS] controlled terms are explicit inputs
+  [PASS] duration is an explicit input
+  [PASS] output includes pointer-preserving generator
+  [PASS] missing gates are disjoint from output
+  [PASS] clock/rate selection remains missing
+
+------------------------------------------------------------------------------
+5. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_POINTER_BROADCAST_HAMILTONIAN_CONDITIONAL_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: bounded-support
+  [PASS] note contains marker: trace_class: upstream_support
+  [PASS] note contains marker: conditional_surface_status:
+  [PASS] note contains marker: Does not derive the physical Hamiltonian
+  [PASS] note contains marker: Does not apply audit verdicts.
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: hamiltonian closure
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: basis closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=37 FAIL=0
+
+----- stderr -----
+

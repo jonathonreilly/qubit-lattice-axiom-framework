@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/yt_ew_m_residual_channel_check.py
-runner_sha256: 84337aff075d6a06d7100ec702d98ed0ab79231ee69efaf8e3e8073b4cd37829
+runner_sha256: 540ff06a30b3d44aaadbff8ffadd088767863ee698b6f0ee47bce91decafafe8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.67
 status: ok
 ----- stdout -----
 ========================================================================
@@ -52,25 +52,28 @@ TEST 5: G_full = u_0 · G_V factorization: S_full = u_0² · S_V, C_full = u_0²
   STATUS: PASS
 
 ------------------------------------------------------------------------
-TEST 6: Random SU(N) link V (Tr V = N → trace-normalized fluctuation)
-        generates non-trivial adjoint content C > 0
+TEST 6: Haar SU(N) link V generates non-trivial adjoint content
+        with unitarity and determinant-one residuals checked explicitly
 ------------------------------------------------------------------------
 
-  N | mean(C/(S+C)) over 100 random V trials | expected (N²-1)/N²
+  N | mean(C/(S+C)) over 5000 Haar-SU(N) trials | expected (N²-1)/N²
   ---|----------------------------------------|------------------
-  2 | 0.7418                                 | 0.7500
-  3 | 0.8883                                 | 0.8889
+  2 | 0.7535                                 | 0.7500
+      max ||V†V-I||=3.34e-15, max |det(V)-1|=1.89e-15
+  3 | 0.8878                                 | 0.8889
+      max ||V†V-I||=3.96e-15, max |det(V)-1|=2.78e-15
   STATUS: PASS
-  ⇒ Random complex matrices statistically realize the (N²-1)/N² adjoint fraction.
+  ⇒ Haar SU(N) links statistically realize the (N²-1)/N² adjoint fraction.
 
 ------------------------------------------------------------------------
 TEST 7: At N=3 (framework's N_c), adjoint fraction = 8/9 ≈ 0.8889
 ------------------------------------------------------------------------
 
-  N=3 with 1000 random complex matrix trials:
-    mean(C/(S+C)) = 0.8953 ± 0.0030
+  N=3 with 5000 Haar-SU(3) link trials:
+    mean(C/(S+C)) = 0.8860 ± 0.0016
     expected (N²-1)/N² = 8/9 = 0.8889
-    deviation = 0.0064
+    deviation = 0.0029
+    max ||V†V-I||=3.50e-15, max |det(V)-1|=2.66e-15
   STATUS: PASS
 
 ========================================================================
@@ -79,7 +82,7 @@ TEST 7: At N=3 (framework's N_c), adjoint fraction = 8/9 ≈ 0.8889
   Test 3 (channel decomposition on random G):             PASS
   Test 4 (color-diagonal G has only singlet, no adjoint): PASS
   Test 5 (CMT u_0 factorization preserves S, C):          PASS
-  Test 6 (random V-fluctuation generates adjoint):        PASS
+  Test 6 (Haar SU(N) V-fluctuation generates adjoint):   PASS
   Test 7 (N=3 adjoint fraction = 8/9):                    PASS
   OVERALL: PASS
 

@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_supplied_orientation_bridge_interface_2026_06_06.py
+runner_sha256: 635af6fdf7ea4e65e4e7e890eb70a974c82a632805f4f16595b01945711d605e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md contains: supplied orientation bridge
+PASS docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md contains: The physical forward order is a supplied bridge
+PASS docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md contains: does not derive an orientation
+PASS docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md contains: directed post-record certificates are available only under supplied orientation/law/clock/kernel bridges
+PASS docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md exists
+PASS docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md contains: count pushforward is invariant under reversal
+PASS docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md contains: oriented law, boundary condition, clock, or production kernel
+PASS docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md contains: post-record counts do not orient a physical arrow
+PASS docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md contains: certificate = (law id, event predicate, epsilon)
+PASS docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md contains: verified law-scoped concentration certificate
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md exists
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: arrow_or_dynamics_bridge
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: physical arrow, Hamiltonian
+
+------------------------------------------------------------------------------
+Supplied orientation bridge checks
+------------------------------------------------------------------------------
+PASS test law normalizes
+PASS forward directed certificate valid at equality :: exact=1/2
+PASS too-tight directed certificate rejected :: exact=1/2
+PASS reverse directed certificate valid under reverse bridge :: exact=0
+PASS missing orientation rejected for directed certificate
+PASS wrong law scope rejected :: exact=1/2
+PASS orientation can change directed endpoint probability :: 1/2 vs 0
+PASS count-only event probability remains orientation-invariant :: 1/2
+PASS count pushforward remains orientation-invariant
+
+------------------------------------------------------------------------------
+Supplied kernel checks
+------------------------------------------------------------------------------
+PASS supplied forward empirical kernel is row-stochastic :: {'A': {'A': Fraction(0, 1), 'B': Fraction(1, 1), 'C': Fraction(0, 1)}, 'B': {'A': Fraction(0, 1), 'B': Fraction(1, 2), 'C': Fraction(1, 2)}, 'C': {'A': Fraction(1, 1), 'B': Fraction(0, 1), 'C': Fraction(0, 1)}}
+PASS supplied reversed empirical kernel is row-stochastic :: {'A': {'A': Fraction(0, 1), 'B': Fraction(0, 1), 'C': Fraction(1, 1)}, 'B': {'A': Fraction(1, 2), 'B': Fraction(1, 2), 'C': Fraction(0, 1)}, 'C': {'A': Fraction(0, 1), 'B': Fraction(1, 1), 'C': Fraction(0, 1)}}
+PASS forward and reversed supplied kernels differ
+PASS identical count state does not select either supplied kernel
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS audit data written flag is false
+PASS audit verdict applied flag is false
+PASS promoted/retained claim flag is false
+PASS Record-derived physical arrow flag is false
+PASS Record-derived orientation flag is false
+PASS production-kernel selected flag is false
+PASS clock/rate derived flag is false
+PASS stable setting selects dial flag is false
+PASS generation/Koide dial selected flag is false
+
+SUMMARY: PASS=37 FAIL=0
+SUPPLIED_ORIENTATION_BRIDGE_INTERFACE=TRUE
+DIRECTED_CERTIFICATE_REQUIRES_SUPPLIED_ORIENTATION=TRUE
+ORIENTATION_DERIVED_FROM_RECORD=FALSE
+PHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE
+PRODUCTION_KERNEL_SELECTED=FALSE
+CLOCK_OR_RATE_DERIVED=FALSE
+STABLE_SETTING_SELECTS_DIAL=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+AUDIT_LEDGER_WRITTEN=FALSE
+
+----- stderr -----
+

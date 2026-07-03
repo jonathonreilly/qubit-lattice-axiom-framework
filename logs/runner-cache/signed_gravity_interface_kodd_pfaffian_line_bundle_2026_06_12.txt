@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/signed_gravity_interface_kodd_pfaffian_line_bundle_2026_06_12.py
+runner_sha256: 3a92e60e117b1e98bc51d61694fabfb7e13468fdd84b4adc9d6908b7763a177e
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 236.95
+status: ok
+----- stdout -----
+MEASURE: gate theta=pi size=20x30 profile=step
+MEASURE: O-real residuals O2=0.000e+00 O_anticomm=0.000e+00 B_imag=6.303e-18 B_asym=0.000e+00
+MEASURE: interface localization rows=[13, 14, 15, 16] min_top4_weight=0.981816969333 peak_rows=[14, 15, 14, 15] pair_res=1.665e-16
+PASS: O^2 residual :: 0.000e+00
+PASS: O anticommutes with K_odd :: 0.000e+00
+PASS: O-real B imaginary residual :: 6.303e-18
+PASS: O-real B antisymmetry residual :: 0.000e+00
+PASS: top |K_odd| states are interface-localized :: min_top4_weight=0.981816969333
+PASS: K_odd spectrum has +/- pairing :: 1.665e-16
+MEASURE: line 20x30:step:rel0.05 theta_count=63 rank_changes=[0.050000->36] gap_rel_above_min=0.151986776508 gap_rel_tol=0.05 gap_rel_below_max=0.0171563748597 gap_ratio_min=8.85891 raw_svd_orientation_flips=30 transport_events=0 sign_changes=[] min_overlap_sv=0.999999981849 min_support_abs_eig=0.000379536904314 min_support_theta=0.05 max_support_abs_eig=0.153060830405
+PASS: 20x30:step:rel0.05 relative tol lies inside measured gap :: above_min=0.151987 tol=0.05 below_max=0.0171564
+PASS: 20x30:step:rel0.05 rank is constant on grid :: changes=[0.050000->36]
+PASS: 20x30:step:rel0.05 alignment has no orientation-transport event :: events=[]
+PASS: 20x30:step:rel0.05 transported Pf sign has no flip :: sign_changes=[]
+PASS: 20x30:step:rel0.05 support spectrum stays away from zero :: min_abs_eig=0.000379537 at theta=0.05
+MEASURE: line 28x44:step:rel0.05 theta_count=63 rank_changes=[0.050000->52] gap_rel_above_min=0.106880650901 gap_rel_tol=0.05 gap_rel_below_max=0.0171565154638 gap_ratio_min=6.22974 raw_svd_orientation_flips=28 transport_events=0 sign_changes=[] min_overlap_sv=0.99999999015 min_support_abs_eig=0.00019064288515 min_support_theta=0.05 max_support_abs_eig=0.110657816789
+PASS: 28x44:step:rel0.05 relative tol lies inside measured gap :: above_min=0.106881 tol=0.05 below_max=0.0171565
+PASS: 28x44:step:rel0.05 rank is constant on grid :: changes=[0.050000->52]
+PASS: 28x44:step:rel0.05 alignment has no orientation-transport event :: events=[]
+PASS: 28x44:step:rel0.05 transported Pf sign has no flip :: sign_changes=[]
+PASS: 28x44:step:rel0.05 support spectrum stays away from zero :: min_abs_eig=0.000190643 at theta=0.05
+MEASURE: line 20x30:smooth:rel0.05 theta_count=63 rank_changes=[0.050000->96] gap_rel_above_min=0.0518695190328 gap_rel_tol=0.05 gap_rel_below_max=0.0479502111247 gap_ratio_min=1.08382 raw_svd_orientation_flips=31 transport_events=0 sign_changes=[] min_overlap_sv=0.999984365884 min_support_abs_eig=6.32107821063e-05 min_support_theta=0.05 max_support_abs_eig=0.0755620825626
+PASS: 20x30:smooth:rel0.05 relative tol lies inside measured gap :: above_min=0.0518695 tol=0.05 below_max=0.0479502
+PASS: 20x30:smooth:rel0.05 rank is constant on grid :: changes=[0.050000->96]
+PASS: 20x30:smooth:rel0.05 alignment has no orientation-transport event :: events=[]
+PASS: 20x30:smooth:rel0.05 transported Pf sign has no flip :: sign_changes=[]
+PASS: 20x30:smooth:rel0.05 support spectrum stays away from zero :: min_abs_eig=6.32108e-05 at theta=0.05
+MEASURE: line 28x44:smooth:rel0.05 theta_count=63 rank_changes=[0.050000->144] gap_rel_above_min=0.0513005797941 gap_rel_tol=0.05 gap_rel_below_max=0.0414476259239 gap_ratio_min=1.2397 raw_svd_orientation_flips=34 transport_events=0 sign_changes=[] min_overlap_sv=0.999992390839 min_support_abs_eig=4.4926725643e-05 min_support_theta=0.05 max_support_abs_eig=0.0542697333235
+PASS: 28x44:smooth:rel0.05 relative tol lies inside measured gap :: above_min=0.0513006 tol=0.05 below_max=0.0414476
+PASS: 28x44:smooth:rel0.05 rank is constant on grid :: changes=[0.050000->144]
+PASS: 28x44:smooth:rel0.05 alignment has no orientation-transport event :: events=[]
+PASS: 28x44:smooth:rel0.05 transported Pf sign has no flip :: sign_changes=[]
+PASS: 28x44:smooth:rel0.05 support spectrum stays away from zero :: min_abs_eig=4.49267e-05 at theta=0.05
+MEASURE: absolute_tol_trap tol=1.0e-10 sample_ranks=0.3->140, 1->148, 2->156, 3.14159265359->164
+MEASURE: absolute_tol_trap_line rank_changes=[0.050000->128, 0.150000->132, 0.300000->140, 0.450000->148, 1.600000->156, 2.450000->164] refined_rank_crossings=[0.10867961,0.10867962]:128->130, [0.10868011,0.10868011]:130->132, [0.29468344,0.29468345]:132->134, [0.29468518,0.29468518]:134->136, [0.29468622,0.29468623]:136->138, [0.29468812,0.29468812]:138->140, [0.44964845,0.44964846]:140->142, [0.44964883,0.44964883]:142->140, [0.44964893,0.44964893]:140->142, [0.44964904,0.44964905]:142->144, [0.44965084,0.44965085]:144->146, [0.44965088,0.44965089]:146->142, [0.44965089,0.44965090]:142->144, [0.44965092,0.44965093]:144->146, [0.44965094,0.44965094]:146->144, [0.44965095,0.44965096]:144->142, [0.44965098,0.44965099]:142->146, [0.44965099,0.44965099]:146->144, [0.44965101,0.44965101]:144->146, [0.44965114,0.44965115]:146->144, [0.44965129,0.44965130]:144->146, [0.44965273,0.44965273]:146->148, [1.55012965,1.55012965]:148->150, [1.55013475,1.55013475]:150->148, [1.55013475,1.55013476]:148->150, [1.55013476,1.55013477]:150->152, [1.55013479,1.55013480]:152->150, [1.55013483,1.55013484]:150->152, [1.55013731,1.55013732]:152->150, [1.55013732,1.55013733]:150->154, [1.55013733,1.55013734]:154->152, [1.55014268,1.55014269]:152->154, [1.55014598,1.55014598]:154->156, [2.40919194,2.40919195]:156->158, [2.40919647,2.40919648]:158->160, [2.40919706,2.40919706]:160->162, [2.40919731,2.40919732]:162->160, [2.40919976,2.40919977]:160->162, [2.40920104,2.40920105]:162->164 transport_events=0 same-rank_sign_changes=[] min_included_abs_eig=1.00086246626e-10 min_included_theta=0.45
+PASS: absolute 1e-10 reproduces reviewer rank-jump scale :: 0.3->140, 1->148, 2->156, 3.14159265359->164
+PASS: absolute 1e-10 lane has rank-policy crossings :: [0.10867961,0.10867962]:128->130, [0.10868011,0.10868011]:130->132, [0.29468344,0.29468345]:132->134, [0.29468518,0.29468518]:134->136, [0.29468622,0.29468623]:136->138, [0.29468812,0.29468812]:138->140, [0.44964845,0.44964846]:140->142, [0.44964883,0.44964883]:142->140, [0.44964893,0.44964893]:140->142, [0.44964904,0.44964905]:142->144, [0.44965084,0.44965085]:144->146, [0.44965088,0.44965089]:146->142, [0.44965089,0.44965090]:142->144, [0.44965092,0.44965093]:144->146, [0.44965094,0.44965094]:146->144, [0.44965095,0.44965096]:144->142, [0.44965098,0.44965099]:142->146, [0.44965099,0.44965099]:146->144, [0.44965101,0.44965101]:144->146, [0.44965114,0.44965115]:146->144, [0.44965129,0.44965130]:144->146, [0.44965273,0.44965273]:146->148, [1.55012965,1.55012965]:148->150, [1.55013475,1.55013475]:150->148, [1.55013475,1.55013476]:148->150, [1.55013476,1.55013477]:150->152, [1.55013479,1.55013480]:152->150, [1.55013483,1.55013484]:150->152, [1.55013731,1.55013732]:152->150, [1.55013732,1.55013733]:150->154, [1.55013733,1.55013734]:154->152, [1.55014268,1.55014269]:152->154, [1.55014598,1.55014598]:154->156, [2.40919194,2.40919195]:156->158, [2.40919647,2.40919648]:158->160, [2.40919706,2.40919706]:160->162, [2.40919731,2.40919732]:162->160, [2.40919976,2.40919977]:160->162, [2.40920104,2.40920105]:162->164
+PASS: absolute 1e-10 crossings are threshold events not zero modes :: min_included_abs_eig=1.00086e-10
+TOTAL: PASS=29, FAIL=0
+
+----- stderr -----
+

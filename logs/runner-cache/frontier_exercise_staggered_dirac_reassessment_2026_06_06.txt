@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/frontier_exercise_staggered_dirac_reassessment_2026_06_06.py
+runner_sha256: 81e6f0b750405a6e4819e659866a3bd2a3ed61fd3336622f1a8bf60964ccd1a9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+========================================================================================
+EXERCISE: staggered-Dirac gate -- honest re-assessment (corrects 'essentially closed') + leads
+========================================================================================
+
+[BLOCK 1] CORRECTION: statistics/signature/chirality are admissions, not forced
+  [PASS] dimension forces carrier SIZE: Wilson dim 16 != qubit dim 2 (excluded)
+  [PASS] but hard-core BOSON dim 2 == qubit dim 2 == Grassmann dim 2: statistics NOT dim-forced  --  substep-1 is retained_no_go (statistics-agnostic) -> FS is an admission
+  [PASS] Dirac operator d-delta needs signature/time + Hodge metric (no time axiom) -> hidden import
+  [PASS] chirality eps(x) is 'out of scope' in substeps -> hidden admission (gated on unaudited spin-statistics)
+  [PASS] => gate is NOT essentially closed: hidden admissions {FS, signature/time, eps} beyond AC_phi_lambda  --  corrects #2956/#2967 'forced x6 / essentially closed'
+
+[BLOCK 2] LEAD 1 (verified): eta is the unique Z2 1-cochain with Clifford-2-cocycle curvature
+  [PASS] eta_mu(x) plaquette curvature = -1 on ALL plaquettes (the Clifford 2-cocycle)  --  checked 192 plaquettes, bad=0
+  [PASS] => eta is unique mod coboundary (global gauge): cohomological forcing, sidesteps JW/CAR no-go  --  eta is a c-number cochain, not the statistics string
+
+[BLOCK 3] LEAD 2 (verified): Kahler-Dirac D=d-delta = the Cl(3) Clifford action
+  [PASS] dim Lambda(C^3) = 8 = dim Cl(3)_C (one qubit = one Cl(3) chiral block / spinor module)
+  [PASS] gamma_mu = e_mu^ - iota_mu satisfy {gamma_mu,gamma_nu} = -2 delta (Clifford)
+  [PASS] Hamming-degree grading of the cube-forms = 1,3,3,1 (= substep-3 taste/doubler pattern)  --  {0: 1, 1: 3, 2: 3, 3: 1}
+  [PASS] => the Dirac/gamma structure is the qubit's OWN geometric-algebra action (not imported)
+
+[BLOCK 4] Route portfolio (synthesis)
+  [PASS] route: R1 chirality-selector enumerator (open atom)  --  one-link enumerator over on-site sign omega(x): >=2 survivors => eps free selector (admission); =1 => forcing lemma
+  [PASS] route: R2 FS statistics admission  --  record fermion-parity grading as a Tier-A `FS` candidate (substep-1 retained_no_go); seek a derived graded-locality/spin-statistics selector
+  [PASS] route: R3 signature/time hidden import  --  name the Euclidean-signature/Hodge-metric input the Kahler-Dirac d-delta consumes; not in {Lattice,Quantum,Record}
+  [PASS] route: R4 eta-cohomology forcing (verified lead 1)  --  ship the Z2-1-cochain/Clifford-2-cocycle uniqueness as the eta-forcing (cohomological)
+  [PASS] route: R5 Kahler-Dirac = Cl(3) action (verified lead 2)  --  ship the qubit-as-Cl(3)-spinor-module Dirac-structure reproof
+  [PASS] NO route requires a new axiom (forbidden outcome avoided)
+  [PASS] highest-value first artifact = R1 chirality-selector enumerator (decides eps: selector vs forced)
+
+========================================================================================
+SCORECARD:  PASS = 18   FAIL = 0
+========================================================================================
+
+----- stderr -----
+

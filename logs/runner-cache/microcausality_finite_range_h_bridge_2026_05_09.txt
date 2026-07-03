@@ -1,27 +1,35 @@
 ===== runner cache v1 =====
 runner: scripts/microcausality_finite_range_h_bridge_2026_05_09.py
-runner_sha256: 1c4f3940000171ef490092dd12ac176c864e467aa9bdbc274f288fc5ec6ea4e6
-timeout_sec: 120
+runner_sha256: d5f6a9dcf7c94c39b68a572a9ff80e723e5fb87eabf7dec5ba07539813b14348
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.89
+elapsed_sec: 45.85
 status: ok
 ----- stdout -----
 
 ========================================================================
-MICROCAUSALITY ACTION-SUPPORT J-BOUND RUNNER
+MICROCAUSALITY ACTION-SUPPORT BUDGET + PROVED FINITE-RANGE LR RUNNER
 ========================================================================
 
-Narrows the gap on AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md
-by checking action-density support and a conservative J budget from the
-canonical staggered + Wilson + plaquette coefficients (parent RP note eqs. 1-2).
+Narrows the gap on AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md:
+carrier support/J/W budgets, an in-note proved Lieb-Robinson lemma with
+derived velocity v_LR = 2eqWR, an unconditional finite-range LR theorem for
+the framework hopping Hamiltonian, and a falsification leg.
 
 References:
   - Bridge note: docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md
   - Parent: docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md
   - RP note: docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
+  - Hopping note: docs/HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md
 
 ========================================================================
-TEST F1: finite-range support of h_z (radius r = 1 lattice spacing)
+TEST F0: note manifest matches the proved-lemma repair surface
+========================================================================
+  [PASS] F0 — note/runner manifest matches the 2026-06-10 proved-lemma surface
+         proved-lemma surface markers present; no stale imported-constant claims
+
+========================================================================
+TEST F1: finite-range support of h_z (matter terms, radius r = 1)
 ========================================================================
 
   Setup: 1D chain L=8, base site z=3, mass=0.3
@@ -46,109 +54,183 @@ TEST F1: finite-range support of h_z (radius r = 1 lattice spacing)
 TEST F2: J_max bound from action coefficients (gauge-background-independent)
 ========================================================================
 
-  Build local Hamiltonian density h_z on a small SU(3) lattice block.
-  Compute ||h_z||_op numerically, compare against closed-form J_max.
+  Build the per-site action-density budget on random SU(3) backgrounds.
+  Compare against the closed-form J_max.
 
   d=4, r_W=1.0, m=0.3, β=6.0, N_c=3
-  J_max (from action) = |m| + d/2 + r_W·d + 2·(β/N_c)·d(d-1)/2
-                       = 0.3 + 2.0 + 4.0 + 24.0
-                       = 30.3
+  J_max (from action) = |m| + d/2 + r_W·d + 2·β·d(d-1)/2
+                       = 0.3 + 2.0 + 4.0 + 72.0
+                       = 78.3
 
-    config     ||h_z||_op (direct)     J_max (closed-form)      OK
+    config       ||h_z||_op budget     J_max (closed-form)      OK
   --------  ----------------------  ----------------------  ------
-         0            6.300000e+00            3.030000e+01      OK
-         1            1.860211e+01            3.030000e+01      OK
-         2            1.760672e+01            3.030000e+01      OK
-         3            1.886212e+01            3.030000e+01      OK
-         4            2.031683e+01            3.030000e+01      OK
-         5            1.967726e+01            3.030000e+01      OK
-         6            1.629066e+01            3.030000e+01      OK
-         7            1.726896e+01            3.030000e+01      OK
-         8            1.917484e+01            3.030000e+01      OK
-         9            1.808412e+01            3.030000e+01      OK
-        10            2.027728e+01            3.030000e+01      OK
-        11            1.757491e+01            3.030000e+01      OK
-        12            2.032410e+01            3.030000e+01      OK
-        13            1.687720e+01            3.030000e+01      OK
-        14            1.859192e+01            3.030000e+01      OK
-        15            1.688159e+01            3.030000e+01      OK
-        16            1.720043e+01            3.030000e+01      OK
-        17            1.928535e+01            3.030000e+01      OK
-        18            1.903375e+01            3.030000e+01      OK
-        19            1.852540e+01            3.030000e+01      OK
+         0            6.300000e+00            7.830000e+01      OK
+         1            4.320634e+01            7.830000e+01      OK
+         2            4.022017e+01            7.830000e+01      OK
+         3            4.398637e+01            7.830000e+01      OK
+         4            4.835050e+01            7.830000e+01      OK
+         5            4.643178e+01            7.830000e+01      OK
+         6            3.627197e+01            7.830000e+01      OK
+         7            3.920689e+01            7.830000e+01      OK
+         8            4.492452e+01            7.830000e+01      OK
+         9            4.165235e+01            7.830000e+01      OK
+        10            4.823183e+01            7.830000e+01      OK
+        11            4.012472e+01            7.830000e+01      OK
+        12            4.837231e+01            7.830000e+01      OK
+        13            3.803159e+01            7.830000e+01      OK
+        14            4.317577e+01            7.830000e+01      OK
+        15            3.804478e+01            7.830000e+01      OK
+        16            3.900130e+01            7.830000e+01      OK
+        17            4.525604e+01            7.830000e+01      OK
+        18            4.450125e+01            7.830000e+01      OK
+        19            4.297619e+01            7.830000e+01      OK
 
-  Max observed ||h_z||_op = 2.032410e+01
-  J_max (closed-form) = 3.030000e+01
+  Max observed budget = 4.837231e+01
+  J_max (closed-form) = 7.830000e+01
   [PASS] F2 — closed-form J_max bound holds across all random SU(3) configs
-         max_observed/J_max = 0.6708
+         max_observed/J_max = 0.6178
 
 ========================================================================
-TEST F3: Lieb-Robinson velocity v_LR = 2 e r J from F1 + F2
+TEST F2b: carrier-faithful Wilson branch (displayed eq. (8) term)
 ========================================================================
 
-  Conditionally plugging r_action = 2 (F1) and J = 30.3000 (F2):
-  v_LR = 2 · e · r · J = 2 · 2.718282 · 2 · 30.3000
-       = 329.455758 (lattice units)
+  (a) pair norm || [[0,U],[U†,0]] ||_op over 25 SU(3) configs:
+      max |norm - 1| = 8.882e-16
+  [PASS] F2b(a) — unit pair norm for SU(3) hop blocks
+         ‖a†(U b) + h.c.‖_op = ‖U‖_op = 1, grounding coefficient×1 link counting
 
-  Continuum limit: v_LR · a_s/a_τ → c (parent (M3))
+  (b) grouped spatial-Wilson block over 20 SU(3) configs:
+      max ||h_z^W||_op = 3.232051  <=  d_s·(r_W + r_W/2) = 4.5
+  [PASS] F2b(b) — grouped Wilson block bounded by d_s·(r_W + r_W/2)
+         max observed 3.232051 vs budget 4.5
 
-  1D toy verification: L=8 sites, J_eff=1.0, v_LR_toy=5.4366
-
-    d       t   || [α_t(O_0), O_d] ||        LR bound      OK
-  ---  ------  ----------------------  --------------  ------
-    2   0.050            1.503685e-03    3.552176e-01      OK
-    2   0.100            6.028699e-03    4.661739e-01      OK
-    2   0.200            2.414793e-02    8.028880e-01      OK
-    3   0.050            2.244972e-05    1.306773e-01      OK
-    3   0.100            1.789471e-04    1.714958e-01      OK
-    3   0.200            1.418324e-03    2.953660e-01      OK
-    4   0.050            3.527810e-07    4.807348e-02      OK
-    4   0.100            5.658004e-06    6.308978e-02      OK
-    4   0.200            9.071261e-05    1.086591e-01      OK
-    5   0.050            5.102877e-09    1.768524e-02      OK
-    5   0.100            1.635341e-07    2.320943e-02      OK
-    5   0.200            5.232008e-06    3.997344e-02      OK
-    6   0.050            3.329388e-11    6.506038e-03      OK
-    6   0.100            2.132913e-09    8.538274e-03      OK
-    6   0.200            1.364303e-07    1.470541e-02      OK
-
-  [PASS] F3 — Lieb-Robinson bound holds with explicit v_LR = 2erJ
-         toy v_LR = 2·e·1·J_eff = 5.43656365691809 (J_eff = 1.0)
+  (c) exact budgets (above |m|): surface = 78, carrier = 157/2, envelope = 80
+  [PASS] F2b(c) — branch arithmetic 78 <= 78.5 <= 80 exact
+         J_max branches: supplied surface 78, displayed carrier 157/2, envelope 80
 
 ========================================================================
-TEST F4: outside-lightcone exponential decay (operational check)
+TEST F2c: per-site overlap weights W (Lieb-Robinson lemma input)
 ========================================================================
 
-  L=9, J_eff=1.0, t=0.1, v_LR·t = 0.5437
+  per-site support counts on Z^4: site terms = 1, links = 8, plaquettes = 24 (norm ≤ 12 each)
+  W_surface  - |m| = 296   (expect 296)
+  W_carrier  - |m| = 298   (expect 298)
+  W_envelope - |m| = 300   (expect 300)
 
-    d     lightcone      commutator       log(commutator)
-    2       outside    5.754041e-03             -5.157853
-    3       outside    2.126606e-04             -8.455813
-    4       outside    4.070340e-06            -12.411784
-    5       outside    6.190648e-08            -16.597641
-    6       outside    1.427171e-09            -20.367572
-    7       outside    1.103643e-11            -25.229819
-    8       outside    2.095298e-13            -29.193911
+  conditional ceilings (m -> 0), v = 2·e·q·W·R = 16·e·W:
+    surface  : v ≤ 16·e·296 = 12873.8
+    carrier  : v ≤ 16·e·298 = 12960.8
+    envelope : v ≤ 16·e·300 = 13047.8
+  [PASS] F2c — overlap weights W = |m| + {296, 298, 300} exact and ordered
+         v ceilings (m->0): 12873.8 / 12960.8 / 13047.8 lattice units
 
-  [PASS] F4 — outside-lightcone exponential decay
+========================================================================
+TEST F3: proved LR lemma vs exact commutators on the framework hopping H
+========================================================================
+
+  Framework H on periodic chain: L=10, m=0.3
+  support family: q=2, R=1, W=|m|+2=2.3
+  derived velocity v_LR = 2·e·q·W·R = 25.0082 lattice units
+
+  (a) all 10 link terms: max | ||H_xy|| - 1 | = 0.000e+00;
+      [H_xy, σ_z(w)] = 0 for every w outside {x, y}: True
+  [PASS] F3(a) — ||H_xy||_op = 1 and supp(H_xy) ⊆ {x,y} on the framework chain
+         finite range verified term-by-term on the actual hopping Hamiltonian
+
+    d       t   measured ||[..]||   L1 series bound    L2 exp bound    OK
+  ---  ------  ------------------  ----------------  --------------  ----
+    2   0.020        7.998933e-04      1.801582e-02    3.530446e-01    OK
+    3   0.020        5.332800e-06      1.087823e-03    1.298778e-01    OK
+    4   0.020        2.666489e-08      4.957243e-05    4.777939e-02    OK
+    5   0.020        2.133195e-10      1.812899e-06    1.757705e-02    OK
+    2   0.050        4.995831e-03      1.240740e-01    7.475791e-01    OK
+    3   0.050        8.328126e-05      1.827398e-02    2.750190e-01    OK
+    4   0.050        1.041233e-06      2.051318e-03    1.011738e-01    OK
+    5   0.050        2.082466e-08      1.857117e-04    3.721977e-02    OK
+    2   0.100        1.993317e-02      5.892904e-01    2.610376e+00    OK
+    3   0.100        6.650017e-04      1.660904e-01    9.603038e-01    OK
+    4   0.100        1.663891e-05      3.630906e-02    3.532760e-01    OK
+    5   0.100        6.655564e-07      6.459350e-03    1.299630e-01    OK
+    2   0.200        7.892328e-02      3.456538e+00    3.182696e+01    OK
+    3   0.200        5.280218e-03      1.763738e+00    1.170848e+01    OK
+    4   0.200        2.648940e-04      7.254876e-01    4.307311e+00    OK
+    5   0.200        2.119152e-05      2.478923e-01    1.584571e+00    OK
+
+  [PASS] F3(b) — L1 exact series bound holds at every (d, t) grid point
+         min bound/measured margin = 22.52x (bound is rigorous, not tuned)
+  [PASS] F3(c) — L2 exponential bound with v_LR = 2eqWR holds at every grid point
+         v_LR = 25.0082 derived from (q, W, R) — no imported constant
+
+========================================================================
+TEST F4: outside-lightcone exponential decay (framework hopping H)
+========================================================================
+
+  L=10 (periodic), m=0.3, t=0.1
+
+    d      commutator     log(commutator)
+    1    3.960282e-01           -0.926270
+    2    1.993317e-02           -3.915370
+    3    6.650017e-04           -7.315721
+    4    1.663891e-05          -11.003767
+    5    6.655564e-07          -14.222643
+
+  [PASS] F4 — outside-lightcone exponential decay on the framework hopping H
          log(commutator) decreases monotonically with d (microcausal lightcone)
+
+========================================================================
+TEST F5: falsification — long-range perturbation breaks the LR bound
+========================================================================
+
+  (a) perturbation ε(a_0†a_5 + h.c.), ε = 1.0:
+      ||[H_bond, σ_z(0)]|| = 2.0000, ||[H_bond, σ_z(5)]|| = 2.0000
+      -> support contains sites at distance 5 > R = 1: True
+  [PASS] F5(a) — long-range bond violates the finite-range premise (diam 5 > R = 1)
+         the perturbed family has no R = 1 support assignment
+
+  (b) at (d, t) = (5, 0.1): measured = 3.973387e-01
+      finite-range L1 bound = 6.459350e-03  -> violation ratio 61.5x
+      finite-range L2 bound = 1.299630e-01  -> violation ratio 3.06x
+  [PASS] F5(b) — measured commutator violates the finite-range bounds (>10x on L1)
+         L1 violated 61.5x, L2 violated 3.06x — bound premise is load-bearing
+
+========================================================================
+TEST F6: Z^3 NN link family on the minimal periodic 2x2x2 block
+========================================================================
+
+  8 sites, 24 link-family members (B4 family, all (x, x+e_mu))
+  ||H - H†|| = 0.000e+00,  ||[H, Q_total]|| = 0.000e+00
+  every H_xy supported on its two tensor factors: True
+  link-family members per site: [6] (expect [6] = 2d)
+  W = |m| + 2d = 6.3,  unconditional v_LR ≤ 2·e·q·W·R = 4·e·(|m| + 6) = 68.5007
+  [PASS] F6 — Z^3 block: Hermitian, Q-conserving, finite-range, W = |m| + 6
+         unconditional Z^3 leg: v_LR ≤ 4·e·(|m| + 2d) = 68.5007 at m = 0.3
 
 ========================================================================
 SUMMARY
 ========================================================================
-  F1 action-density local support:                       PASS
-  F2 explicit J_max bound from action coefficients:      PASS
-  F3 conditional v_LR = 2erJ LR bound holds on toy H:    PASS
-  F4 outside-lightcone exponential decay:                PASS
+  F0  note manifest / proved-lemma surface guard:          PASS
+  F1  action-density local support:                        PASS
+  F2  explicit J_max bound from action coefficients:       PASS
+  F2b carrier-faithful Wilson branch bracket:              PASS
+  F2c per-site overlap weights W (lemma input):            PASS
+  F3  proved LR lemma vs exact commutators (framework H):  PASS
+  F4  outside-lightcone exponential decay:                 PASS
+  F5  falsification: long-range bond breaks the bound:     PASS
+  F6  Z^3 block: Hermitian, finite-range, W = |m| + 6:     PASS
 
-  PASS=4, FAIL=0
+  PASS=14, FAIL=0
   OVERALL: PASS
 
-The runner checks bounded action-support/J-budget pieces only.
-It does not construct the exact reconstructed logarithmic H. Cited authority chain:
-  - parent RP note (action carriers)
-  - hopping_bilinear_hermiticity (B2, B4 for translation-covariance)
-  - staggered_wilson_det_positivity_bridge (M_W = r_W d I form)
+Scope notes for the auditor:
+  - The LR velocity is DERIVED in the companion note (v_LR = 2eqWR);
+    this runner checks the derived bound against exact commutator norms
+    on the actual framework hopping Hamiltonian (class C compute).
+  - The exact reconstructed logarithmic H = -log(T)/a_tau is NOT
+    constructed; the carrier-velocity corollary remains conditional.
+  - Cited authority chain: parent RP note (staggered-only surface names),
+    hopping_bilinear_hermiticity (B1-B6 hopping Hamiltonian),
+    staggered_wilson_det_positivity_bridge (supplied M_W = r_W d I
+    surface; F2 branch value only — non-load-bearing after F2b).
 
 
 ----- stderr -----

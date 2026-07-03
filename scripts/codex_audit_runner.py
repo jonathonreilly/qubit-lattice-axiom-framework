@@ -86,6 +86,13 @@ MODEL_FALLBACK = "gpt-5.5"
 # only gpt-5.5 and newer are accepted.
 MIN_AUDIT_MODEL_RANK = (5, 5)
 
+# The prompt template promises source visibility, and several current
+# runner-artifact blockers hinge on elided load-bearing functions. Keep the
+# packet bounded, but high enough to include the largest ordinary runners and
+# helpers now used by the audit queue.
+RUNNER_SOURCE_CHAR_LIMIT = 120_000
+HELPER_SOURCE_CHAR_LIMIT = 120_000
+
 
 def _meets_floor(model: str | None) -> bool:
     """True if model parses to a rank >= MIN_AUDIT_MODEL_RANK."""
@@ -472,6 +479,42 @@ def runner_timeout_for(runner_path: str, default_sec: int) -> int:
     return rc.runner_timeout_for(runner_path, default_sec=default_sec)
 
 
+def canonical_runner_path(runner_path: str | Path) -> str:
+    """Map legacy runner references to checked-out repo-local runners.
+
+    Historical ledger rows may carry bare script names or absolute paths from
+    temporary worktrees. For audit prompt rendering, use the current checkout's
+    ``scripts/<basename>.py`` when it exists; truly absent historical runners
+    remain missing.
+    """
+    raw = str(runner_path).strip()
+    if not raw:
+        return raw
+    raw_path = Path(raw)
+    basename = raw_path.name
+
+    candidates: list[str] = []
+    if raw_path.is_absolute():
+        if basename.endswith(".py"):
+            candidates.append(f"scripts/{basename}")
+    elif raw.startswith("scripts/"):
+        candidates.append(raw)
+    else:
+        candidates.extend([raw, f"scripts/{raw}"])
+    if basename.endswith(".py"):
+        candidates.append(f"scripts/{basename}")
+
+    seen: set[str] = set()
+    for candidate in candidates:
+        if candidate in seen:
+            continue
+        seen.add(candidate)
+        p = REPO_ROOT / candidate
+        if p.exists():
+            return p.relative_to(REPO_ROOT).as_posix()
+    return raw
+
+
 def find_cached_runner_output(runner_path: str) -> str | None:
     """Return cached runner stdout via the SHA-pinned cache layout
     (`logs/runner-cache/<stem>.txt`). Returns None if no cache exists or
@@ -481,6 +524,7 @@ def find_cached_runner_output(runner_path: str) -> str | None:
     """
     if not runner_path:
         return None
+    runner_path = canonical_runner_path(runner_path)
     return rc.cache_excerpt_for_audit(runner_path)
 
 
@@ -494,6 +538,7 @@ def get_runner_stdout(runner_path: str | None, default_timeout_sec: int,
     """
     if not runner_path:
         return ""
+    runner_path = canonical_runner_path(runner_path)
     if use_cache:
         cached = find_cached_runner_output(runner_path)
         if cached:
@@ -533,7 +578,8 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
     """
     cid = row["claim_id"]
     note_path = row.get("note_path") or ledger_rows.get(cid, {}).get("note_path") or ""
-    runner_path = row.get("runner_path") or ledger_rows.get(cid, {}).get("runner_path") or ""
+    raw_runner_path = row.get("runner_path") or ledger_rows.get(cid, {}).get("runner_path") or ""
+    runner_path = canonical_runner_path(raw_runner_path) if raw_runner_path else ""
     claim_type_hint = (
         row.get("claim_type")
         or ledger_rows.get(cid, {}).get("claim_type")
@@ -587,10 +633,9 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         if rp.exists():
             try:
                 src = rp.read_text(encoding="utf-8", errors="replace")
-                MAX = 30_000
-                if len(src) > MAX:
-                    head = src[: MAX // 2]
-                    tail = src[-MAX // 2 :]
+                if len(src) > RUNNER_SOURCE_CHAR_LIMIT:
+                    head = src[: RUNNER_SOURCE_CHAR_LIMIT // 2]
+                    tail = src[-RUNNER_SOURCE_CHAR_LIMIT // 2 :]
                     runner_source = (
                         f"{head}\n\n"
                         f"... [truncated; runner is {len(src)} chars total] ...\n\n"
@@ -615,7 +660,8 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         or []
     )
     helper_sources_blocks: list[str] = []
-    for hp in helper_runner_paths:
+    for hp_raw in helper_runner_paths:
+        hp = canonical_runner_path(hp_raw)
         full_hp = REPO_ROOT / hp
         if not full_hp.exists():
             helper_sources_blocks.append(
@@ -626,18 +672,27 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
             continue
         try:
             hsrc = full_hp.read_text(encoding="utf-8", errors="replace")
-            MAX_HELPER = 20_000
-            if len(hsrc) > MAX_HELPER:
-                head = hsrc[: MAX_HELPER // 2]
-                tail = hsrc[-MAX_HELPER // 2 :]
+            if len(hsrc) > HELPER_SOURCE_CHAR_LIMIT:
+                head = hsrc[: HELPER_SOURCE_CHAR_LIMIT // 2]
+                tail = hsrc[-HELPER_SOURCE_CHAR_LIMIT // 2 :]
                 hsrc = (
                     f"{head}\n\n"
                     f"... [truncated; helper is {len(hsrc)} chars total] ...\n\n"
                     f"{tail}"
                 )
+            if skip_runner_stdout:
+                hcache = "(helper cache suppressed by --no-runner)"
+            else:
+                hcache = find_cached_runner_output(hp)
+                if hcache is None:
+                    cache_name = rc.cache_path_for(hp).relative_to(REPO_ROOT)
+                    hcache = f"[helper runner cache missing or stale: {cache_name}]"
             helper_sources_blocks.append(
                 f"=== BEGIN HELPER RUNNER: {hp} ===\n"
                 f"{hsrc}\n"
+                f"=== BEGIN HELPER RUNNER CACHE: {hp} ===\n"
+                f"{hcache}\n"
+                f"=== END HELPER RUNNER CACHE: {hp} ===\n"
                 f"=== END HELPER RUNNER: {hp} ==="
             )
         except OSError as e:
@@ -1154,7 +1209,8 @@ def main() -> int:
             # has no log, the audit cannot judge load-bearing class without
             # invoking the runner inline — which breaks the "fresh-look in an
             # isolated workdir" model.
-            runner_path = row.get("runner_path") or full_led_row.get("runner_path")
+            raw_runner_path = row.get("runner_path") or full_led_row.get("runner_path")
+            runner_path = canonical_runner_path(raw_runner_path) if raw_runner_path else raw_runner_path
             if (
                 args.require_runner_output
                 and runner_path

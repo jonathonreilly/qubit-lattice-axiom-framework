@@ -1,0 +1,88 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_su3_matter_realization_residual_map_2026_06_05.py
+runner_sha256: 2b1ab2dd3bae9d1e1a184b548dcce9068d877583e1f7f2db1f71a0fceb4c4b60
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+==============================================================================
+COLOR SU(3) MATTER-REALIZATION RESIDUAL MAP
+meta support-map / negative-route-pruning runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Carrier dimensions and algebra dimensions
+------------------------------------------------------------------------------
+  [PASS] dim Sym^2(C^2) = 3 (got 3)
+  [PASS] dim su(3) = 8 (got 8)
+  [PASS] matrix algebra on color fundamental has dim 9
+  [PASS] one qubit Hilbert dimension is 2
+  [PASS] one qubit matrix algebra dim is 4
+  [PASS] one qubit traceless local Lie dim is 3
+  [PASS] primitive qubit endpoint is not the color fundamental carrier (2 != 3)
+  [PASS] primitive qubit traceless algebra is not su(3) (3 != 8)
+
+------------------------------------------------------------------------------
+2. Endpoint-invariance profile is not a group selector
+------------------------------------------------------------------------------
+  [PASS] base SU(3) profile is 0->1->2
+  [PASS] fiber SU(2) profile is 0->1->2
+  [PASS] endpoint profile equality holds
+  [PASS] profile cannot discriminate which group is gauged (same profile, different carrier/algebra dimensions)
+
+------------------------------------------------------------------------------
+3. Typed layer interface
+------------------------------------------------------------------------------
+  [PASS] post-record layer has defined inputs
+  [PASS] post-record layer produces finite histories
+  [PASS] post-record layer produces count states
+  [PASS] post-record layer produces coarse-graining maps
+  [PASS] MR_color has carrier assignment output
+  [PASS] MR_color has record-algebra assignment output
+  [PASS] MR_color has link-index routing output
+  [PASS] post-record outputs do not overlap MR_color outputs (overlap=[])
+
+------------------------------------------------------------------------------
+4. Route-pruning ledger
+------------------------------------------------------------------------------
+  [PASS] append_count_selects_color: verdict is pruned (append/count acts after realized atoms and has no carrier-assignment output)
+  [PASS] append_count_selects_color: required output is not post-record output (requires quark_in_symmetric_base_fundamental)
+  [PASS] endpoint_profile_selects_color: verdict is pruned (base SU(3) and fiber SU(2) share the same 0->1->2 profile once represented)
+  [PASS] endpoint_profile_selects_color: required output is not post-record output (requires gauss_generator_choice)
+  [PASS] one_qubit_link_is_color: verdict is pruned (one qubit supplies a 2D carrier / su(2)-sized traceless algebra, not a 3D color fundamental / su(3))
+  [PASS] one_qubit_link_is_color: required output is not post-record output (requires base_su3_index_on_links)
+  [PASS] z3_dimension_identifies_physical_color: verdict is pruned (dimension supports the algebraic carrier but not the physical matter readout)
+  [PASS] z3_dimension_identifies_physical_color: required output is not post-record output (requires color_singlets_are_physical_records)
+  [PASS] stable_dial_fixes_mr_color: verdict is pruned (a stable parameter location is not a matter/link realization theorem)
+  [PASS] stable_dial_fixes_mr_color: required output is not post-record output (requires quark_in_symmetric_base_fundamental)
+
+------------------------------------------------------------------------------
+5. Positive support decomposition
+------------------------------------------------------------------------------
+  [PASS] support map has four typed pieces
+  [PASS] algebraic SU(3) is not classified as physical closure
+  [PASS] post-record layer is classified as consumer
+  [PASS] record-invariance half remains bounded related input
+  [PASS] matter realization remains residual
+
+------------------------------------------------------------------------------
+6. Wording and artifact sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/COLOR_SU3_MATTER_REALIZATION_RESIDUAL_MAP_2026-06-05.md)
+  [PASS] forbidden wording absent: status-transition overclaim
+  [PASS] forbidden wording absent: promotion overclaim
+  [PASS] forbidden wording absent: actual-surface overclaim
+  [PASS] forbidden wording absent: physical-color derivation overclaim
+  [PASS] forbidden wording absent: Koide selector overclaim
+  [PASS] note declares meta claim type
+  [PASS] note records no-go discipline gate
+  [PASS] note keeps dial selection out of scope
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=44 FAIL=0
+
+----- stderr -----
+

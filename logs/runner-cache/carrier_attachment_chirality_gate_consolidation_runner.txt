@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/carrier_attachment_chirality_gate_consolidation_runner.py
+runner_sha256: f8345e43497aeedf7a6c8813c9d3bb96736e9149920c03099b66d451ede2d7c9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
+==============================================================================
+Cover blindness: operator-frame conjugation factors through SO(3)
+==============================================================================
+   STATE U(2pi) = -I (faithful j=1/2 double cover): True
+   OPERATOR conj by U and by -U identical, R(2pi)=+I (factors through SO(3)): True
+  [PASS] operator-frame conjugation is the adjoint SO(3), BLIND to the SU(2) cover (the Z2 state datum)  | same gap as the retained_no_go boost note, at the rotation level
+
+==============================================================================
+Trivial lift: V(R)=I_2 satisfies every operator-frame constraint
+==============================================================================
+   operator covariance holds independent of the state law: True
+   active (Model A) vs passive (Model B) measured numbers identical: True
+  [PASS] trivial scalar lift V(R)=I_2 is operator-frame-compatible => the j=1/2 STATE law is a separate datum  | Model A (faithful) and Model B (scalar) have identical Quantum content
+
+==============================================================================
+Kernel route: the spin-blind scalar kernel admits the scalar; only spinful sigma.p excludes it
+==============================================================================
+   spin-blind scalar kernel H*I commutes with sigma_i (scalar attachment kernel-compatible): True
+   only the spinful sigma.p kernel excludes the scalar (differs, non-central): True
+  [PASS] the selector that excludes the trivial scalar is the spinful sigma.p kernel  | kernel-covariance alone admits the scalar; the spinful kernel is the matter-attachment
+
+==============================================================================
+Staggered boundary: the displayed D has {eps, D} = 0
+==============================================================================
+   staggered D anti-Hermitian: True;  {eps, D} = 0 (chiral): True
+   => this is the local Dirac/staggered chirality surface used by the open KS route
+  [PASS] the displayed staggered D has the local chirality boundary {eps,D}=0  | does not by itself close KS/Grassmann physical-state-law selection
+
+==============================================================================
+Source-boundary guardrail
+==============================================================================
+   source note forbids treating this as closed KS/Grassmann or generation/r=1/2 consolidation: True
+  [PASS] source boundary prevents overclaiming the unresolved chirality/state-law bridge  | runner verifies the repair target introduced by the conditional audit
+
+runner_check_breakdown = {A: 5, B: 0, C: 0, D: 0, total_pass: 5}
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

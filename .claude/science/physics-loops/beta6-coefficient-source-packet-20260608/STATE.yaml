@@ -1,0 +1,38 @@
+loop_slug: beta6-coefficient-source-packet-20260608
+mode: run
+target_status: exact-support
+actual_current_surface_status: exact-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "This block repairs coefficient-packet provenance for a harness; it does not propose beta=6 closure."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+branch: physics-loop/beta6-coefficient-source-packet-20260608
+base: origin/main
+target_claim_id: beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30
+target_blocker_text: "The load-bearing physical classifications depend on d_6..d_11 being exact, and the restricted packet supplies those values only as embedded constants."
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: runner_certificate
+active_route: "Wire the beta6 harness to the paired exact d11 coefficient source packet and check cache freshness."
+files_touched:
+  - docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md
+  - scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py
+  - logs/runner-cache/frontier_beta6_resummation_ansatz_test_2026_05_30.txt
+  - .claude/science/physics-loops/beta6-coefficient-source-packet-20260608/
+open_imports:
+  - "Retained coefficient-packet audit for the d9/d10/d11 source runners."
+  - "All-order connected hierarchy beyond d11."
+  - "Beta=6 plaquette closure."
+no_go_routes:
+  - "Do not claim the resummation harness derives the coefficient packet."
+  - "Do not use the Monte Carlo plaquette comparator as a derivation input."
+verification:
+  - "python3 scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py -> SCORECARD: PASS=30 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py -> status ok"
+review_findings: []
+pr_status: pending
+next_exact_action: "Open a review PR for the coefficient-source packet repair."
+stop_condition: "PR opened and verified; any beta=6 closure or coefficient retention work belongs in a separate block."

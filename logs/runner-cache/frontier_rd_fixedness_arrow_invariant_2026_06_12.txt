@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/frontier_rd_fixedness_arrow_invariant_2026_06_12.py
+runner_sha256: d4f8f8c776c70145d6a7ebbbd770a73d03f8ba0f7ad9eee3184816bdc23daaa3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.60
+status: ok
+----- stdout -----
+R-D fixedness arrow-invariance runner
+
+[PASS] F1.1 g(phi(r)) = r symbolically on r >= 0  [g(phi(r))=r]
+[PASS] F1.2 phi(g(r)) = r symbolically on r >= 0  [phi(g(r))=r]
+[PASS] F2.1 Fix(phi) = {0, 1/2}  [Fix(phi)=[0, 1/2]]
+[PASS] F2.2 Fix(g) = {0, 1/2} over r >= 0  [Fix(g)=[0, 1/2]]
+[PASS] F2.3 fixed sets are equal
+[PASS] F2.4 projective infinity: s=1/r conjugation fixes s=0 for both maps  [phi_s=s**2/2, g_s=sqrt(2)*sqrt(s)]
+[PASS] F2.5 general lemma instance Fix(f)=Fix(f^-1), symbolic substitution plus concrete pair  [Eq(H(x), x); Eq(F(x), x)]
+[PASS] F3.1 phi'(1/2) = 2 exactly  [phi'=2]
+[PASS] F3.2 g'(1/2) = 1/2 exactly  [g'=1/2]
+[PASS] F3.3 inverse-pair multiplier product equals 1  [product=1]
+[PASS] F4.1 r=0 excluded by registered delta != 0: B -> 0 gives degenerate [a,a,a]  [B=0 spectrum=[a, a, a]]
+[PASS] F4.2 r -> infinity excluded by unsigned branch: trace is 3a with positive channel weights  [trace=3*a; a positive=True]
+[PASS] F4.3 phi admissible set {0,1/2,inf} minus side-condition exclusions = {1/2}  [selected_phi={1/2}]
+[PASS] F4.4 g admissible set {0,1/2,inf} minus side-condition exclusions = {1/2}  [selected_g={1/2}]
+[PASS] F4.5 negative control: stability verdict differs while fixedness-based selection is invariant  [phi=repeller, g=attractor]
+[PASS] B1 separatrix dependency contains the supplied phi map definition
+[PASS] B2 separatrix dependency contains its physical-boundary sentence
+[PASS] B3 thermalizing dependency contains the supplied g map definition
+[PASS] B4 thermalizing dependency contains its physical-boundary sentence
+[PASS] B5 this note contains the required firewall sentences
+[PASS] B6 closing language is absent
+[PASS] B7 markdown link inventory is exactly the two load-bearing dependency links  [links=['FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md', 'FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md']]
+[PASS] B8 context companions are backticked only, not markdown-linked
+[PASS] B9 No-promotion statement is present
+
+git diff --stat
+(no diff stat output)
+SUMMARY: PASS=24 FAIL=0
+
+----- stderr -----
+

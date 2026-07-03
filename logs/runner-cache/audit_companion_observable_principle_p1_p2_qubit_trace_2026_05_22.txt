@@ -1,0 +1,89 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py
+runner_sha256: 32ec1408984041f27c0c2eaf82ab3008630d40b41fd87b552a627696b4e2e5f5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.56
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (sympy exact + scipy numeric) for
+OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20
+Goal: verify Step 1 (P1, trace-tensor factorization) at exact
+      sympy precision on small qubit blocks, check Step 2
+      (P2, positivity) by symbolic Hermitian-spectrum algebra,
+      plus randomized numeric checks on 2-site and 3-site
+      qubit registers.
+Scope-boundary: gate-conditional on staggered-Dirac
+  realization gate for transfer to W = log|det(D+J)| form.
+========================================================================================
+
+----------------------------------------------------------------------------------------
+T1: Symbolic 1-qubit factorization exp(-(H_A (x) I + I (x) H_B + J_A (x) I + I (x) J_B)) = exp(-(H_A + J_A)) (x) exp(-(H_B + J_B))
+----------------------------------------------------------------------------------------
+  [PASS] H_A is Hermitian (symbolic)
+  [PASS] H_B is Hermitian (symbolic)
+  [PASS] J_A is Hermitian (symbolic)
+  [PASS] J_B is Hermitian (symbolic)
+  [PASS] exp(-(H_A (x) I + I (x) H_B + J_A (x) I + I (x) J_B)) = exp(-(H_A + J_A)) (x) exp(-(H_B + J_B)) (exact symbolic)  (diagonal 1-qubit Hermitian sources; commuting-summand expm split)
+  [PASS] Tr(exp(-(H_A (x) I + I (x) H_B + J_A (x) I + I (x) J_B))) = Tr(exp(-(H_A + J_A))) * Tr(exp(-(H_B + J_B))) (exact symbolic)  (diagonal 1-qubit Hermitian sources; exact match after expand)
+
+----------------------------------------------------------------------------------------
+T2: log-additivity W_qubit[J_A (+) J_B] = W_qubit[J_A] + W_qubit[J_B]
+----------------------------------------------------------------------------------------
+  [PASS] W_qubit[J_A (+) J_B] = W_qubit[J_A] + W_qubit[J_B] at high-precision rational sympy evalf (3 substitutions, 50-digit)  (max residual = 0.0)
+
+----------------------------------------------------------------------------------------
+T3: trace-tensor identity Tr(B_A (x) B_B) = Tr(B_A) * Tr(B_B) — standard linear algebra (used in Step 1)
+----------------------------------------------------------------------------------------
+  [PASS] Tr(B_A (x) B_B) = Tr(B_A) * Tr(B_B) on 10 random rational 2x2 pairs
+
+----------------------------------------------------------------------------------------
+T4: boundary normalization W_qubit[0] = 0 (P4)
+----------------------------------------------------------------------------------------
+  [PASS] W_qubit[0] = log Z[0] - log Z[0] = 0 by definition (symbolic)
+  [PASS] W_qubit[0] = 0 numerically on a random 4x4 Hermitian H  (W = 0.000e+00, Z[0] = 29.719421)
+
+----------------------------------------------------------------------------------------
+T5: 2-site numeric factorization (random Hermitian 2x2 H_A, H_B, J_A, J_B)
+----------------------------------------------------------------------------------------
+  [PASS] |Tr(exp(-(H_AB + J_AB))) - Tr(exp(-(H_A+J_A))) * Tr(exp(-(H_B+J_B)))| < 1e-12 across 25 random 2-site Hermitian samples  (max residual = 6.825e-13)
+
+----------------------------------------------------------------------------------------
+T6: 3-site (8x8) numeric factorization across a 1+2 qubit split
+----------------------------------------------------------------------------------------
+  [PASS] |Tr(exp(-(H_AB + J_AB))) - Tr(exp(-(H_A+J_A))) * Tr(exp(-(H_B+J_B)))| < 1e-10 across 15 random 3-site (1+2 split) Hermitian samples  (max residual = 1.023e-12)
+
+----------------------------------------------------------------------------------------
+T7: positivity (P2 phase-blindness side condition) — Tr(exp(-M)) > 0 for Hermitian M
+----------------------------------------------------------------------------------------
+  [PASS] M = [[x, z+iw], [z-iw, y]] is Hermitian (symbolic)
+  [PASS] Hermitian 2x2 M eigenvalue discriminant (x-y)^2 + 4(z^2+w^2) is a manifest sum of real squares; eigenvalues are real  (got 2 eigvals of the expected (x+y)/2 ± sqrt(D)/2 form, D = 4*w**2 + 4*z**2 + (x - y)**2)
+  [PASS] Tr(exp(-M)) > 0 evaluated at a real Hermitian sample (symbolic eigval sum)  (Tr(exp(-M)) = 2.216719)
+  [PASS] Tr(exp(-M)) > 0 strictly across 100 random Hermitian samples (d in {2, 4}, 50 each)  (positive: 100/100)
+
+----------------------------------------------------------------------------------------
+T8: CPT-equivariance shape check Tr(Theta^-1 exp(-(H+J)) Theta) = Tr(exp(-(H+J')))
+----------------------------------------------------------------------------------------
+  [PASS] Tr((exp(-(H+J)))*) = Tr(exp(-(H + J*))) for real H + Hermitian J (complex-conjugation Theta numeric check)  (|lhs - rhs| = 0.000e+00)
+  [PASS] |Z[J]| = |Z[Theta J Theta^{-1}]| (modulus equivariance, numeric)  (|Z| = 8.799958, |Z_T| = 8.799958)
+
+----------------------------------------------------------------------------------------
+T9: source-note boundary check (claim type, status authority, no overclaim)
+----------------------------------------------------------------------------------------
+  [PASS] all required source-note boundary strings are present  (all present)
+  [PASS] no forbidden declarative overclaim phrases present in the source note  (none)
+
+----------------------------------------------------------------------------------------
+T10: independence — [J_A (x) I, I (x) J_B] = 0 (microcausality input)
+----------------------------------------------------------------------------------------
+  [PASS] J_A is Hermitian (symbolic)
+  [PASS] J_B is Hermitian (symbolic)
+  [PASS] [J_A (x) I, I (x) J_B] = 0 for arbitrary 2x2 Hermitian J_A, J_B (exact symbolic, disjoint-register microcausality)
+
+========================================================================================
+TOTAL: PASS=23 FAIL=0
+========================================================================================
+
+----- stderr -----
+

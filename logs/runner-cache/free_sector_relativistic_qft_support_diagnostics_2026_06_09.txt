@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/free_sector_relativistic_qft_support_diagnostics_2026_06_09.py
+runner_sha256: 0f670a974fe11fa5c99000354b76fe5c3eb4e927861adf81ae866372ecf1862a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+========================================================================================
+FREE-SECTOR RELATIVISTIC-QFT SUPPORT DIAGNOSTICS
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part A: sampled Wick expressions inherit covariance convergence rate
+----------------------------------------------------------------------------------------
+  4-point: err(0.20)=1.268e-03 err(0.10)=3.171e-04 err(0.05)=7.927e-05 ratios=4.00,4.00
+  6-point: err(0.20)=9.764e-04 err(0.10)=2.442e-04 err(0.05)=6.105e-05 ratios=4.00,4.00
+  [PASS] sampled Wick-built 4-point and 6-point expressions show O(a^2) convergence  --  support only; not a full measure-convergence theorem
+
+----------------------------------------------------------------------------------------
+Part B: necessary free 4D Hamiltonian/transfer positivity checks
+----------------------------------------------------------------------------------------
+  [PASS] sampled 4D free Dirac H(p) is Hermitian with +/-E spectrum
+  [PASS] sampled two-step transfer exp(-2a|H|) is positive-definite
+
+----------------------------------------------------------------------------------------
+Part C: equal-time spacelike parity diagnostic for statistics route
+----------------------------------------------------------------------------------------
+  equal-time r=1.3: |antisymmetric|=0.000e+00, |symmetric|=4.980e-02
+  [PASS] antisymmetric two-point combination vanishes in the sampled equal-time spacelike check
+  [PASS] symmetric two-point combination is nonzero in the sampled equal-time spacelike check
+  [PASS] diagnostic supplies input for a spin-statistics route but does not select statistics by itself  --  requires the separate relativistic reconstruction/locality theorem
+
+----------------------------------------------------------------------------------------
+Part D: one-loop symmetric-surface anisotropy diagnostic
+----------------------------------------------------------------------------------------
+  [PASS] sampled one-loop velocity coefficient is time/space symmetric on the supplied symmetric surface  --  |z_t - z_s|=1.04e-17; support only, not an all-orders theorem
+  [PASS] non-perturbative interacting continuum existence remains outside this diagnostic  --  explicit boundary
+
+========================================================================================
+TOTAL: PASS=8 FAIL=0
+Boundary: support diagnostics only; no domino closure or audit verdict.
+========================================================================================
+
+----- stderr -----
+

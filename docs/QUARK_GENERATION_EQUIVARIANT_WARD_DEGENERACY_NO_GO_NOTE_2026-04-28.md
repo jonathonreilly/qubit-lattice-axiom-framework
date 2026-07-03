@@ -2,7 +2,12 @@
 
 **Date:** 2026-04-28
 **Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)
-**Admitted context inputs:** staggered-Dirac realization derivation target (canonical parent: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`).
+**Carrier authority:** the bounded carrier premise is supplied by
+[`THREE_GENERATION_STRUCTURE_NOTE.md`](THREE_GENERATION_STRUCTURE_NOTE.md),
+whose audited scope is already bounded to the registered Tier-A
+staggered-Dirac/Wilson `Z^3` surface. This note does not directly depend on
+the realization-gate source row; it uses the retained-bounded `hw=1` triplet
+and the abstract retained `S_3` decomposition authority cited below.
 
 **Status:** support / exact negative boundary for Lane 3 target 3C. This block-05
 artifact tests whether a generation-equivariant Ward operator on the retained
@@ -33,8 +38,10 @@ generation Ward eigenvalues if the Ward operator is S_3-equivariant?
 
 Allowed premises:
 
-1. the retained `hw=1` triplet generation surface;
-2. exact `S_3` axis-permutation support on the taste cube;
+1. the retained-bounded `hw=1` triplet generation surface from
+   [`THREE_GENERATION_STRUCTURE_NOTE.md`](THREE_GENERATION_STRUCTURE_NOTE.md);
+2. exact `S_3` axis-permutation support on the taste cube from
+   [`S3_TASTE_CUBE_DECOMPOSITION_NOTE.md`](S3_TASTE_CUBE_DECOMPOSITION_NOTE.md);
 3. the decomposition of the `hw=1` sector as the three-point permutation
    representation
 
@@ -51,7 +58,7 @@ Forbidden proof inputs:
 2. fitted Yukawa entries;
 3. hidden generation labels or projectors;
 4. CKM mixing data treated as mass-eigenvalue input;
-5. breaking `S_3` without naming the new source/readout primitive.
+5. breaking `S_3` without naming the source/readout/symmetry-breaking input.
 
 ## 3. Equivariant Ward Operators On `A_1 + E`
 
@@ -104,10 +111,10 @@ generation-uniform. It cannot even produce the `A_1/E` two-level split.
 A future retained 3C route may still exist, but it must add new theorem
 content. Examples:
 
-1. a source-domain primitive that breaks or orients the `E` doublet;
+1. a source-domain input that breaks or orients the `E` doublet;
 2. a physical readout functor that selects a basis inside the retained
    `M_3(C)` generation observable algebra;
-3. a reduced `C_3` or oriented-cycle primitive with a derived reflection
+3. a reduced `C_3` or oriented-cycle input with a derived reflection
    breaking source;
 4. a loop-normalization theorem that is not `S_3`-equivariant on the
    generation triplet.
@@ -124,7 +131,8 @@ two distinct generation eigenvalues, with a double degeneracy on the standard
 `E` subspace. If it is also diagonal in the generation basis, it is scalar.
 Therefore the retained `S_3` generation symmetry by itself cannot derive
 generation-stratified quark Yukawa Ward identities for `u,c,t` or `d,s,b`.
-Target 3C requires an additional source/readout/symmetry-breaking primitive.
+Target 3C requires an additional source/readout/symmetry-breaking input or
+bridge.
 
 ## 7. What This Retires
 
@@ -140,8 +148,8 @@ carrier cannot split all three.
 
 ## 8. What Remains Open
 
-Lane 3 remains open. The next 3C route must name the missing primitive that
-breaks, orients, or reads out the generation triplet without importing
+Lane 3 remains open. The next 3C route must name the missing input or bridge
+that breaks, orients, or reads out the generation triplet without importing
 observed quark masses or fitted Yukawa entries.
 
 ## 9. Verification
@@ -155,31 +163,45 @@ PYTHONPATH=scripts python3 scripts/frontier_quark_generation_equivariant_ward_de
 Expected result:
 
 ```text
-TOTAL: PASS=44, FAIL=0
+TOTAL: PASS=47, FAIL=0
 VERDICT: S_3-equivariant Ward operators cannot stratify three quark
-generation Yukawa eigenvalues without a new source/readout primitive.
+generation Yukawa eigenvalues without an additional source/readout bridge.
 ```
 
+This expected certificate was synced on 2026-06-17 to the current paired
+runner/cache output. The theorem boundary is unchanged: this remains a bounded
+representation-theoretic no-go on the supplied `hw=1` `S_3` carrier, not a
+closure of quark Yukawa values or a no-go for every Lane 3 route.
 
-## Hypothesis set used (axiom-reset 2026-05-03)
 
-Per `MINIMAL_AXIOMS_2026-05-03.md`, this note depends on the **staggered-Dirac realization derivation target**, which is currently an open gate. The note's load-bearing claim defines or relies on fermion fields, fermion-number operators, fermion correlators, fermion bilinears, the staggered Dirac action, the BZ-corner doubler structure, the `hw=1` triplet, charged-lepton sector content, neutrino sector content, quark / hadron content, the Koide / PMNS / CKM observable surfaces, or the Grassmann CAR boundary structure — all of which depend on the staggered-Dirac realization derivation target listed in `MINIMAL_AXIOMS_2026-05-03.md`.
+## Dependency-scope repair (2026-06-14)
 
-Canonical parent note: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (`claim_type: open_gate`). In-flight supporting work (see `MINIMAL_AXIOMS_2026-05-03.md`):
+An earlier source-boundary paragraph over-routed this row directly to the
+staggered-Dirac realization gate. That was broader than the theorem proved
+here. The load-bearing no-go is only:
 
-- `PHYSICAL_LATTICE_NECESSITY_NOTE.md`
-- `THREE_GENERATION_STRUCTURE_NOTE.md`
-- `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`
-- `scripts/frontier_generation_rooting_undefined.py`
-- `GENERATION_AXIOM_BOUNDARY_NOTE.md` (preserved)
+```text
+retained-bounded hw=1 triplet with S3 permutation action
++ abstract S3 finite-group commutant algebra
+=> S3-equivariant Hermitian Ward endomorphisms cannot split three
+   generation eigenvalues.
+```
 
-Therefore `claim_type: bounded_theorem` until that gate closes. When that gate closes, the lane becomes eligible for independent audit/governance retagging as `positive_theorem`; the audit pipeline recomputes `effective_status`, but it does not silently invent a new `claim_type`. The substantive science content of this note is unchanged by this retag.
+The retained-bounded three-generation authority already records the
+underlying admitted surface in its own audited scope. This note does not
+re-audit or consume the realization gate directly, and it does not derive
+physical quark masses, CKM data, full matter content, rooting, chirality, or
+SM-generation identification. It is a bounded representation-theoretic no-go
+on the supplied `hw=1` S3 carrier.
+
+Therefore `claim_type: bounded_theorem` remains the correct source type. The
+substantive science content of this note is unchanged by this dependency
+repair.
 
 ## Audit dependency repair links
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [staggered_dirac_realization_gate_note_2026-05-03](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
 - [three_generation_structure_note](THREE_GENERATION_STRUCTURE_NOTE.md)
 - [s3_taste_cube_decomposition_note](S3_TASTE_CUBE_DECOMPOSITION_NOTE.md)
 - [quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28](QUARK_GENERATION_STRATIFIED_WARD_FREE_MATRIX_NO_GO_NOTE_2026-04-28.md)

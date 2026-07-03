@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py
+runner_sha256: a6e0a2a2fb580072c6af6bbc07c8ebd00a5d9c26773156fa0c0e620ef8bff0e1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.30
+status: ok
+----- stdout -----
+
+=== Hydrogen/Helium Atomic Companion -- Lattice-Kinetic + Coulomb-Kernel Dependency Edge Repair Verifier ===
+
+Scope: bounded_theorem; three narrow repairs (R-A, R-B, R-C) against the parent source note.
+Does NOT modify parent text. Does NOT claim parent status lifts. Residuals R-D, R-E remain open.
+
+PASS: A.maradudin.stencil_match: build_graph_laplacian == Maradudin stencil on N=4 -- max gap = 0.00e+00
+PASS: A.maradudin.diagonal_6: interior diagonal entry = 6 -- 6.0000
+PASS: A.maradudin.offdiag_neg1: nearest-neighbor off-diagonal = -1 -- -1.0000
+PASS: B.1.maradudin.symbol_smallk: lambda(k) = |k|^2 + O(|k|^4) -- verified at eps in {1e-1, 5e-2, 2.5e-2, 1.25e-2}
+PASS: B.2.continuum.flux_unit: 1/(4 pi r) carries unit outward flux -- verified at R in {1, 2, 5, 10}
+PASS: B.3.coulomb.kernel_form: V_lat = -4 pi g G(r) -> -g/|r| identically -- verified r in {10, 100, 1000}; matches parent's V(r)=-g/|r|
+PASS: B.4.coulomb.translation_invariance: stencil translation-invariant interior -- verified on N=4 interior NN pairs
+PASS: B.coulomb.charge_subst: V_nuc(r) = -Z g_EM / r via -g -> -Z g_EM -- V_nuc(1) = -1.0000
+PASS: C.staggered.D_antihermitian: D + D.T = 0 -- max gap = 0.00e+00
+PASS: C.staggered.square_is_not_minus_laplacian: ||H_Dirac^2 - (-Delta_lat)||_F >> 0 -- Frobenius gap = 41.5692 on 4^3 torus
+PASS: C.staggered.diagonal_disagreement: H_Dirac^2[x,x] = 1.5 != 6 = -Delta_lat[x,x] -- H_Dirac^2[0,0]=1.5000, -Delta_lat[0,0]=6.0000
+PASS: C.staggered.nn_disagreement: H_Dirac^2[NN] (KS-cancelled) != -Delta_lat[NN] = -1 -- H_Dirac^2[NN]=-0.0000, -Delta_lat[NN]=-1.0000
+PASS: C.staggered.axis2_in_H2_only: distance-2 axis entry in H_Dirac^2 only -- H_Dirac^2[d2]=-0.5000, -Delta_lat[d2]=0.0000
+PASS: D.cited.LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-: Maradudin lattice Green-function source on origin/main -- verified
+PASS: D.cited.STAGGERED_HAMILTONIAN_DIRECTION_DECOMPOSITION_BOUNDED_NARROW: staggered direction-decomposition source on origin/main -- verified
+PASS: D.cited.HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md: atomic parent source on origin/main -- verified
+PASS: D.cited.MINIMAL_AXIOMS_2026-06-04.md: current named baseline on origin/main -- verified
+PASS: D.no_parent_modification -- narrow companion; parent text untouched
+PASS: D.no_status_lift_claim -- later review must decide ledger state
+PASS: D.no_axiom -- uses current named baseline plus Maradudin source
+PASS: D.no_import -- uses Maradudin plus staggered-decomposition source
+PASS: D.no_no_go_weakening -- no no_go row touched
+PASS: D.no_continuum_limit_claim -- finite-Lambda only; inherits parent scope
+PASS: D.no_absolute_eV_claim -- dimensionless / coupling-relative only
+PASS: D.no_kinetic_from_cl3_claim -- R-C.1 drops 'uniqueness from Cl(3)'
+PASS: D.textbook_proved_inline -- Lemma R-B.1 four-line proof in Part B
+PASS: D.staggered_disambiguated_numerically -- Part C: H_Dirac^2 != -Delta_lat exhibits
+PASS: D.d3_finite_rydberg_dropped -- parent's 'finite Rydberg' line replaced
+
+All checks passed. Independent review decides status; runner proposes no ledger state.
+TOTAL: PASS=28, FAIL=0
+
+----- stderr -----
+

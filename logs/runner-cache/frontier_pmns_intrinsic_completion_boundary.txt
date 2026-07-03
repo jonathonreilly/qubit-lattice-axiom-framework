@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_pmns_intrinsic_completion_boundary.py
+runner_sha256: b64d03c6536ac74e0757da35eea8b4dad4e392f3ac5229d5fad4bdbec365a0ca
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+PMNS intrinsic completion boundary compatibility
+========================================================================
+  [PASS] current PMNS selector stack remains zero
+  [PASS] right polar section gives only a sheet-even positive representative
+  [PASS] branch-conditioned quadratic closure keeps the residual branch condition
+  [PASS] archived intrinsic-completion note records the one-sheet boundary
+  [PASS] superseded EWSB residual-chain notes remain absent from current docs (absent=5/5)
+Result: compatibility with supersession boundary; no PMNS closure promotion.
+SUMMARY: PASS=5 FAIL=0
+
+----- stderr -----
+

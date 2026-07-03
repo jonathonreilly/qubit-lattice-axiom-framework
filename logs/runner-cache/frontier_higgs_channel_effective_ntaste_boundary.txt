@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_higgs_channel_effective_ntaste_boundary.py
-runner_sha256: 1e97cfc3299001884b13d8e20c19db38bca6bffc0e16f831f4ae2a01cc41df12
+runner_sha256: 2e81cbd27b03405235b66aca71989245df709d29767906dd8d4afd62b7d4890a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 
@@ -12,8 +12,9 @@ status: ok
 ========================================================================================
  Bounded boundary statement: the Wilson Hamming-weight staircase
  does not by itself fix N_taste in HIGGS_MASS_FROM_AXIOM_NOTE.md
- formula [5]; the five single-class assignments give five
- distinct m_H_tree values, none matching the uniform-16 admission
+ formula [5]; the five single-class assignments give three
+ distinct m_H_tree values (k=0=4, k=1=3, k=2), none matching
+ the uniform-16 admission
  that produces the existing 140.3 GeV headline.
 
 ----------------------------------------------------------------------------------------
@@ -69,41 +70,43 @@ status: ok
  Part 4: channel-assignment table at exact Fraction precision
 ----------------------------------------------------------------------------------------
   [PASS] v = 246.22 as exact Fraction(12311, 50)  (V = 12311/50)
-  [PASS] u_0 = 0.8776 as exact Fraction(1097, 1250)  (U0 = 1097/1250)
+  [PASS] plaquette B1 = 0.5934 as exact Fraction(2967, 5000)  (PLAQUETTE = 2967/5000)
+  [PASS] u_0 = <P>^(1/4) rounds to parent input 0.877681381  (computed 0.87768138119868435683702379706960834536875940690695)
+  [PASS] u_0 = 0.877681381 as exact Fraction(877681381, 1000000000)  (U0 = 877681381/1000000000)
   [PASS] v stated = 24622 / 100
-  [PASS] u_0 stated = 8776 / 10000
+  [PASS] u_0 stated = 877681381 / 1000000000
   [PASS] k = 0 and k = 4 share N_taste = 1 (binomial symmetry)
   [PASS] k = 1 and k = 3 share N_taste = 4 (binomial symmetry)
   [PASS] k = 2 has N_taste = 6
-  [PASS] k = 0 and k = 4 give equal (m_H_tree)^2 (binomial symmetry)  (378901802500/1203409 vs 378901802500/1203409)
-  [PASS] k = 1 and k = 3 give equal (m_H_tree)^2 (binomial symmetry)  (94725450625/1203409 vs 94725450625/1203409)
+  [PASS] k = 0 and k = 4 give equal (m_H_tree)^2 (binomial symmetry)  (242497153600000000000000/770324606554067161 vs 242497153600000000000000/770324606554067161)
+  [PASS] k = 1 and k = 3 give equal (m_H_tree)^2 (binomial symmetry)  (60624288400000000000000/770324606554067161 vs 60624288400000000000000/770324606554067161)
   [PASS] k = 0/4, k = 1/3, k = 2 give three pairwise-distinct (m_H_tree)^2  (distinct = 3)
-  [PASS] k = 0: N_taste = 1, m_H_tree ≈ 561.1 GeV  ((m_H_tree)^2 = 378901802500/1203409)
-  [PASS] k = 1: N_taste = 4, m_H_tree ≈ 280.6 GeV  ((m_H_tree)^2 = 94725450625/1203409)
-  [PASS] k = 2: N_taste = 6, m_H_tree ≈ 229.1 GeV  ((m_H_tree)^2 = 189450901250/3610227)
-  [PASS] k = 3: N_taste = 4, m_H_tree ≈ 280.6 GeV  ((m_H_tree)^2 = 94725450625/1203409)
-  [PASS] k = 4: N_taste = 1, m_H_tree ≈ 561.1 GeV  ((m_H_tree)^2 = 378901802500/1203409)
+  [PASS] k = 0: N_taste = 1, m_H_tree ≈ 561.1 GeV  ((m_H_tree)^2 = 242497153600000000000000/770324606554067161)
+  [PASS] k = 1: N_taste = 4, m_H_tree ≈ 280.5 GeV  ((m_H_tree)^2 = 60624288400000000000000/770324606554067161)
+  [PASS] k = 2: N_taste = 6, m_H_tree ≈ 229.1 GeV  ((m_H_tree)^2 = 121248576800000000000000/2310973819662201483)
+  [PASS] k = 3: N_taste = 4, m_H_tree ≈ 280.5 GeV  ((m_H_tree)^2 = 60624288400000000000000/770324606554067161)
+  [PASS] k = 4: N_taste = 1, m_H_tree ≈ 561.1 GeV  ((m_H_tree)^2 = 242497153600000000000000/770324606554067161)
   [PASS] k = 0: rounded m_H_tree ≈ 561.1 GeV (display only)  (computed 561.1)
-  [PASS] k = 1: rounded m_H_tree ≈ 280.6 GeV (display only)  (computed 280.6)
+  [PASS] k = 1: rounded m_H_tree ≈ 280.5 GeV (display only)  (computed 280.5)
   [PASS] k = 2: rounded m_H_tree ≈ 229.1 GeV (display only)  (computed 229.1)
-  [PASS] k = 3: rounded m_H_tree ≈ 280.6 GeV (display only)  (computed 280.6)
+  [PASS] k = 3: rounded m_H_tree ≈ 280.5 GeV (display only)  (computed 280.5)
   [PASS] k = 4: rounded m_H_tree ≈ 561.1 GeV (display only)  (computed 561.1)
 
 ----------------------------------------------------------------------------------------
  Part 5: uniform-N_taste = 16 admission and 140.3 GeV identity
 ----------------------------------------------------------------------------------------
   [PASS] sum_{k=0}^{4} binomial(4, k) = 16  (sum = 16)
-  [PASS] uniform-16: (m_H_tree)^2 = v^2 / (4 u_0^2) = (v/(2 u_0))^2  (94725450625/4813636 vs 94725450625/4813636)
+  [PASS] uniform-16: (m_H_tree)^2 = v^2 / (4 u_0^2) = (v/(2 u_0))^2  (15156072100000000000000/770324606554067161 vs 15156072100000000000000/770324606554067161)
   [PASS] uniform-16: m_H_tree rounds to 140.3 GeV (display)  (computed 140.3)
 
 ----------------------------------------------------------------------------------------
  Part 6: single-class assignments distinct from uniform-16
 ----------------------------------------------------------------------------------------
-  [PASS] k = 0 (N_taste = 1): (m_H_tree)^2 != uniform-16 (m_H_tree)^2  (378901802500/1203409 vs 94725450625/4813636)
-  [PASS] k = 1 (N_taste = 4): (m_H_tree)^2 != uniform-16 (m_H_tree)^2  (94725450625/1203409 vs 94725450625/4813636)
-  [PASS] k = 2 (N_taste = 6): (m_H_tree)^2 != uniform-16 (m_H_tree)^2  (189450901250/3610227 vs 94725450625/4813636)
-  [PASS] k = 3 (N_taste = 4): (m_H_tree)^2 != uniform-16 (m_H_tree)^2  (94725450625/1203409 vs 94725450625/4813636)
-  [PASS] k = 4 (N_taste = 1): (m_H_tree)^2 != uniform-16 (m_H_tree)^2  (378901802500/1203409 vs 94725450625/4813636)
+  [PASS] k = 0 (N_taste = 1): (m_H_tree)^2 != uniform-16 (m_H_tree)^2  (242497153600000000000000/770324606554067161 vs 15156072100000000000000/770324606554067161)
+  [PASS] k = 1 (N_taste = 4): (m_H_tree)^2 != uniform-16 (m_H_tree)^2  (60624288400000000000000/770324606554067161 vs 15156072100000000000000/770324606554067161)
+  [PASS] k = 2 (N_taste = 6): (m_H_tree)^2 != uniform-16 (m_H_tree)^2  (121248576800000000000000/2310973819662201483 vs 15156072100000000000000/770324606554067161)
+  [PASS] k = 3 (N_taste = 4): (m_H_tree)^2 != uniform-16 (m_H_tree)^2  (60624288400000000000000/770324606554067161 vs 15156072100000000000000/770324606554067161)
+  [PASS] k = 4 (N_taste = 1): (m_H_tree)^2 != uniform-16 (m_H_tree)^2  (242497153600000000000000/770324606554067161 vs 15156072100000000000000/770324606554067161)
   [PASS] k = 0: ratio (m_H_tree^(k))^2 / (uniform-16)^2 = 16 / binomial(4, 0) = 16  (ratio = 16)
   [PASS] k = 1: ratio (m_H_tree^(k))^2 / (uniform-16)^2 = 16 / binomial(4, 1) = 4  (ratio = 4)
   [PASS] k = 2: ratio (m_H_tree^(k))^2 / (uniform-16)^2 = 16 / binomial(4, 2) = 8/3  (ratio = 8/3)
@@ -111,12 +114,15 @@ status: ok
   [PASS] k = 4: ratio (m_H_tree^(k))^2 / (uniform-16)^2 = 16 / binomial(4, 4) = 16  (ratio = 16)
 
 ----------------------------------------------------------------------------------------
- Part 7: cited upstream files exist on this branch
+ Part 7: cited upstream files and value anchors exist on this branch
 ----------------------------------------------------------------------------------------
   [PASS] upstream exists: docs/HIGGS_MASS_FROM_AXIOM_NOTE.md
+  [PASS] upstream exists: docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md
   [PASS] upstream exists: docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md
   [PASS] upstream exists: docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md
   [PASS] upstream exists: docs/MINIMAL_AXIOMS_2026-05-03.md
+  [PASS] parent Higgs B1/C1 anchor states u_0 = <P>^(1/4) = 0.877681381
+  [PASS] boundary note has no stale displayed u_0 = 0.8776 literal
 
 ----------------------------------------------------------------------------------------
  Part 8: stdlib-only / no PDG-value pins in runner code
@@ -141,13 +147,14 @@ status: ok
   [PASS] boundary explicitly states staircase does not by itself fix N_taste
 
 ========================================================================================
- TOTAL: PASS=88, FAIL=0
+ TOTAL: PASS=93, FAIL=0
 ========================================================================================
 
  VERDICT: the Wilson Hamming-weight staircase does not by itself
  fix N_taste in HIGGS_MASS_FROM_AXIOM_NOTE.md formula [5]; the
- five single-class assignments give five distinct m_H_tree
- values, none of which coincides with the uniform-16 admission
+ five single-class assignments give three distinct m_H_tree
+ values (k=0=4, k=1=3, k=2), none of which coincides
+ with the uniform-16 admission
  that produces the existing 140.3 GeV headline.
 
 ----- stderr -----

@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_oo_rd_premise_equivalence_2026_06_11.py
+runner_sha256: 6e7b4250dc14e9bcfb8b6e864c2e926b78c2e842606ecd12348d88bc6ed8d5c3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+========================================================================
+Orbit-occupancy vs R-D durability -- consequence-level equivalence
+========================================================================
+
+--- A. both chains recomputed end to end
+[PASS] (01) OO chain with orientation guard: the landed rho-map orientation reproduces the landed cells (Z_d = 2pi/g -> r = 1; Z_d = pi/g -> r = 1/2) and the inverted orientation is rejected against them; OO (Z_d = pi/g) -> rho = 1 -> r = 1/2 -> Q = 2/3
+[PASS] (02) R-D chain recomputed: stationary set {0, 1/2, infinity}; r = 0 is the exactly degenerate (no-C_3-breaking) point excluded by the registered delta content; r = infinity (a = 0, sum lambda = 0) excluded on the unsigned branch -> r = 1/2 -> Q = 2/3
+RESIDUAL (declared-open): both chains consume the 2-sector partition prong (custody selector i) and the landed rho-map orientation at their declared grades; the R-D chain additionally consumes the Lueders records-map identification at the retained_bounded grade of its grounding. Neither premise is adopted here.
+
+--- B. identical registered configuration under either premise
+[PASS] (03) extensional equivalence: both chains force the IDENTICAL registered configuration (r, Q, rho, Z_d/(pi/g)) = (1/2, 2/3, 1, 1), with the equal-power weight |b|^2 = a^2/2 recovered on the R-D side
+[PASS] (04) the registered spectrum at the forced configuration (r = 1/2, |b| = a/sqrt(2), registered |delta| = 2/9 content) is one and the same under either premise -- three distinct positive weights; neither premise touches delta
+
+--- C. separation witnesses off the side conditions
+[PASS] (05) witness W1 (delta content dropped): the r = 0 model is records-flow stationary (f(0) = 0, R-D-consistent) with an exactly degenerate spectrum, but violates the OO-forced value r = 1/2: a model of R-D that is not a model of OO
+[PASS] (06) witness W2 (signed branch): the r = infinity endpoint (p_d = 1) is records-flow stationary (R-D-consistent on the signed branch) but violates the OO-forced value: a second separation -- and exactly the signed/Brannen endpoint (flagged, not consumed)
+[PASS] (07) no converse witness exists given the Lueders grounding: an OO registration is p = (1/2, 1/2), the barycenter FIXED POINT of the records flow (and r = 1/2 is f-fixed) -- OO registrations automatically satisfy R-D's invariance requirement; the consequence-level relation is strictly one-way
+RESIDUAL (declared-open): the one-way relation is at the consequence level GIVEN the Lueders records-map grounding: OO does not itself assert the map; a registration theory with non-Lueders re-registration is outside this comparison (declared scope boundary).
+
+--- D. one decision, two formulations; interface pins
+[PASS] (08) interface pins: both premise statements are present verbatim in their source notes (OO in the 06-09 occupancy note; R-D in the 06-11 durability chain note)
+[PASS] (09) decision corollary (statement check): on the current registered surface the two candidates force the identical registered configuration (check 3), so the standing owner decision is ONE decision with two formulations -- a single section-6 proposal can carry both, with the strictly weaker unconditioned content (R-D) and the static formulation (OO) stated as provably configuration-equivalent given the registered content
+RESIDUAL (declared-open): nothing is routed, drafted, or adopted: the section-6 proposal shape is named as a consequence; the owner decision remains open. The registered side conditions (delta content; unsigned branch) are consumed at their admitted statuses.
+RESIDUAL (declared-open): inherited gate-note residuals remain at their declared grades (kinetic-class premise, spin-statistics support tier, boundary-holonomy convention, AC_phi_lambda labeling convention).
+
+TOTAL: PASS=9 FAIL=0
+VERDICT: on the current registered surface, orbit-occupancy and the R-D durability bridge are EXTENSIONALLY EQUIVALENT -- each forces the identical registered configuration (r, Q, rho, Z_d) = (1/2, 2/3, 1, pi/g) and the same registered spectrum -- and STRICTLY INEQUIVALENT off the side conditions (two computed separation witnesses: the delta-free r = 0 model and the signed-branch r = infinity endpoint, both R-D-consistent and OO-violating; no converse witness exists given the Lueders grounding). The standing owner decision is one decision with two formulations. No premise adopted; no audit status set.
+
+----- stderr -----
+

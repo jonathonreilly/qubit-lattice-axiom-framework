@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/de_sitter_curvature_gap_not_fierz_pauli_mass_diagnostic_2026_06_08.py
+runner_sha256: 1b612b577fafc58dbd9cc440f7348a9e5da5938d41e9ec756ceeba9d2f53e806
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+DE SITTER CURVATURE GAP NOT FIERZ-PAULI MASS DIAGNOSTIC
+========================================================================
+[PASS] curvature spectral scale is proportional to 1/R and vanishes in the flat limit
+       E_gap(R)=3.55e-33 eV; E_gap(1000R)=3.55e-36 eV
+[PASS] Hubble-radius comparator gives a Compton length of order the curvature radius
+       R=1.36e+26 m; lambda_C=R/sqrt(6)=5.56e+25 m
+[PASS] Yukawa factor from the curvature scale is negligible below cosmological distances
+       deviations: lab=0.00e+00, 1 AU=2.66e-15, galaxy=1.80e-05, cluster=1.80e-03, curvature radius=9.14e-01
+[PASS] source note guardrails block broader gravity-chain closure readings
+       all required guardrails present
+
+TOTAL: PASS=4 FAIL=0
+SCOPE: a 1/R curvature gap is not a scale-independent Fierz-Pauli mass; no spin-2, diffeomorphism, lambda, or gravity-sign closure is claimed.
+
+----- stderr -----
+

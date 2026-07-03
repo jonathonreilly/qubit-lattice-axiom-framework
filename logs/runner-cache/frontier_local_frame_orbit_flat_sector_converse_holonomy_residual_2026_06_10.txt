@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/frontier_local_frame_orbit_flat_sector_converse_holonomy_residual_2026_06_10.py
+runner_sha256: 5b969552b76a95a7765d7b3fb4909b2640070c6e0a23360457455e5d5f00dd4c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 11.02
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  (R1) local fusion (instrument covariance + cyclicity)
+==============================================================================
+  [PASS] cited covariance identity, general links (Fock level): Gamma({g}) H[U] Gamma† = H[g_x U_xy g_y†]
+  [PASS] its U = I case: Gamma H_free Gamma† = H[g_x g_y†] (the comparator law used below)
+  [PASS] non-vacuity of the cited forcing argument is preserved: WITHOUT the compensator the free hopping breaks under local frames (||Gamma H_free Gamma† - H_free|| = O(1))  (breaking norm 1.38)
+  [PASS] LOCAL FUSION: record content (probs + interleaved-dynamics sequences) exactly invariant under the simultaneous local action (state + frames + links)  (max dev 5.4e-16)
+  [PASS] teeth: a frames-only local rotation changes content at order 1 (relative data real; only the absolute field is jointly vacuous — the KINEMATIC statement)  (shift 0.030)
+==============================================================================
+Part 2  (R2) the orbit-converse: frame orbit of the free hopping = the FLAT sector
+==============================================================================
+  [PASS] forward (from R1's law): comparator fields are FLAT — holonomy(g_x g_y†) = I exactly (forward direction)
+  [PASS] CONVERSE (new): every trivial-holonomy link field is comparator form — explicit construction g_0=I, g_1=W_01†, g_2=(W_01 W_12)† reproduces all three links exactly
+  [PASS] hence H[flat W] = Gamma H_free Gamma†: the orbit of the free hopping is the ENTIRE flat sector and nothing else — a two-directional orbit characterization
+  [PASS] flag-frame subtlety: flag-level frames are torus-blind (u and u*t give identical instruments) while their comparators differ — unitary frames are used for the converse
+==============================================================================
+Part 3  (R3) holonomy residual
+==============================================================================
+  [PASS] the holonomy conjugacy class is invariant under the local action (holonomy -> g_0 holonomy g_0†) => no frame field reaches a nontrivial class
+  [PASS] a generic-flux field has a NONTRIVIAL holonomy class (det = +1: genuine SU(3))
+  [PASS] generic flux: the full Fock spectra differ from free  (ground -6.0000 vs -5.6542)
+  [PASS] RECORD separation: the color-blind (Pauli-singlet) probe separates generic flux from free at order 10x  (0.012636 vs 0.000195)
+  [PASS] while EVERY frame-induced (flat) field gives EXACTLY the free value on that probe  (flat 0.012636)
+  [PASS] the accident representative is genuine SU(3): det(diag(-1,-1,1)) = +1 (diag(-1,1,1) would have det = -1: U(3), not SU(3))
+  [PASS] CAUTION (corrected wording): at the accident flux the field is record-INDISTINGUISHABLE from free on these probes — Fock spectra coincide AND all single-particle return records coincide (particle-hole conjugacy); only the eigenvalue lists differ. Genericity of the separating flux is LOAD-BEARING  (Fock spectra equal; max single-particle record gap 0.0e+00)
+==============================================================================
+Part 4  (R4) fixed-driver pointer-frame selection remains open
+==============================================================================
+  [PASS] WITH THE DRIVER FIXED, the frame choice changes the physical outcome (which basis dephases): ||D_u1(rho) - D_u2(rho)|| = O(1) — the pointer-frame SELECTION question is real, dynamics-level, and NOT touched by this note  (difference 0.138)
+  [PASS] while the JOINT co-rotation is exactly covariant (D_{gu}(g rho g†) = g D_u(rho) g†): the kinematic absolute-frame content is vacuous; the SELECTION content is the part that persists
+==============================================================================
+TOTAL: PASS=18 FAIL=0
+==============================================================================
+SCOPE: the runner verifies the finite-surface local fusion, flat-sector
+  orbit-converse, holonomy residual existence, and fixed-driver pointer-frame
+  selection non-dissolution described in the paired source note. It does not
+  derive gauge dynamics, a pointer-frame selector, a probability law, or any
+  completeness claim for holonomy. No audit grade is authored here.
+
+----- stderr -----
+

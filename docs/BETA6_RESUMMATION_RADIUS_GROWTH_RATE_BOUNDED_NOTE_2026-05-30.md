@@ -9,6 +9,31 @@ no value of `<P>(6)`)
 **Status:** review-loop source proposal. This note writes no audit verdict and
 supplies no direct effective-status change.
 **Primary runner:** [`scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py`](../scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py)
+**Cached log:** [`logs/runner-cache/frontier_beta6_resummation_radius_growth_rate_2026_05_30.txt`](../logs/runner-cache/frontier_beta6_resummation_radius_growth_rate_2026_05_30.txt) (PASS=32 FAIL=0)
+
+## 2026-06-07 Source-Boundary Manifest
+
+This repair makes the audit boundary explicit without broadening the claim. The
+runner proves the finite tree-sector algebra and compact-deficit counterexample
+from on-main recurrences and cubical incidence checks:
+
+```text
+R_tree(g_tree) = 18 / g_tree^(1/4),
+R_tree > 6 iff g_tree < 81,
+compact 2x2x1 K-built block: k=4, F=16, n=15.
+```
+
+The row still has exactly three open growth inputs:
+
+1. a retained or explicitly admitted `g_tree = lambda_tree rho_tree < 81`
+   tree-cluster/cumulant bound;
+2. a compact K-built face-deficit growth bound; and
+3. a separate `>=3`-face baryon/epsilon-sector bound.
+
+Accordingly, this row can be re-audited as a bounded source certificate for the
+tree-sector product threshold and the finite compact-deficit obstruction. It
+cannot be used as an all-K-built convergence proof, a beta=6 plaquette value,
+or a closure of the full connected strong-coupling series.
 
 ## 0. Scope and what this note is for
 
@@ -298,7 +323,7 @@ degree 30; peak RSS `~65 MB`; no enumeration of cluster topologies):
   `g_crit=81`; if an external `lambda_tree <= 7` bound is supplied later, the
   corresponding `rho_crit = 81/7 = 11.5714`.
 
-**SCORECARD: PASS = 28, FAIL = 0.**
+**SCORECARD: PASS = 32, FAIL = 0.**
 
 ## See also
 

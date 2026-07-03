@@ -1,0 +1,21 @@
+loop_slug: packet-memory-bridge-boundary-20260608
+branch: physics-loop/packet-memory-bridge-boundary-20260608
+base: origin/main
+target_claim_id: packet_memory_note
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: pure_deterministic_runner_scope_repair
+files_touched:
+  - docs/PACKET_MEMORY_NOTE.md
+  - scripts/packet_memory.py
+  - logs/runner-cache/packet_memory.txt
+open_imports:
+  - growth rule from retained primitives
+  - propagation kernel from retained primitives
+  - imposed-field/gravity coupling
+  - detector normalization
+  - overlap-to-decoherence readout
+  - physical gravity interpretation
+next_exact_action: open review PR
+stop_condition: PR opened and remaining fresh conditionals scanned

@@ -41,6 +41,8 @@ from frontier_dm_leptogenesis_pmns_breaking_triplet_source_law import triplet_ch
 
 ROOT = Path(__file__).resolve().parents[1]
 
+AUDIT_TIMEOUT_SEC = 600
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 

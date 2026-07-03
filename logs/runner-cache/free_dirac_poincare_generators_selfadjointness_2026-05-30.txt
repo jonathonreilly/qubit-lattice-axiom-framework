@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py
+runner_sha256: 5d76aecb86c966ec587805e761813f3a8c8fa3b32a5cb8c64bad37f8dd6e865d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+[PASS] S1 note links companion free-Dirac Poincare representation note
+       companion note path is explicit in the restricted source packet
+[PASS] S2 note links companion free-Dirac Poincare runner
+       companion runner path is explicit in the restricted source packet
+[PASS] S3 note links companion free-Dirac Poincare cache
+       companion runner cache path is explicit in the restricted source packet
+[PASS] S4 note links Wigner strong-continuity bridge note
+       bridge note path is explicit in the restricted source packet
+[PASS] S5 note links Wigner strong-continuity bridge runner
+       bridge runner path is explicit in the restricted source packet
+[PASS] S6 note links Wigner strong-continuity bridge cache
+       bridge cache path is explicit in the restricted source packet
+[PASS] S7 companion note carries the expected claim id
+       the linked companion note is the exact packet consumed by this repair
+[PASS] S8 companion runner exposes the Poincare algebra and Wigner checks
+       source import exposes finite Poincare closure and mass-shell/Wigner checks
+[PASS] S9 companion runner exposes the invariant-measure check
+       source import exposes d^3p/(2E) boost-invariance check
+[PASS] S10 companion cache is a passing representation certificate
+       cached companion representation runner output is present and passing
+[PASS] S11 companion cache is SHA-fresh and exits cleanly
+       runner=scripts/free_dirac_poincare_representation_2026-05-30.py status=ok exit=0 sha_fresh=True
+[PASS] S12 Wigner bridge note carries strong-continuity and Stone content
+       bridge note is the functional-analytic dependency requested by audit
+[PASS] S13 Wigner bridge cache is a passing continuity certificate
+       cached bridge runner output is present, passing, and firewall-clean
+[PASS] S14 Wigner bridge cache is SHA-fresh and exits cleanly
+       runner=scripts/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py status=ok exit=0 sha_fresh=True
+[PASS] D1 boost orbital generator is Hermitian in rapidity
+       K_orb=-i d/dzeta on L2(R,dzeta)
+[PASS] D2 rapidity change gives E d/dp = d/dzeta
+       dp/dzeta=E, so the boost one-parameter generator reduces exactly to momentum on the line
+[PASS] D3 direct boost flow is a strongly continuous unitary one-parameter group
+       small-shift norms=2.800e-01, 1.411e-01, 7.067e-02, 3.535e-02
+[PASS] D4 translation generators act by unitary mass-shell phases
+       min E=1.700000; |exp(-itE)| and |exp(iap)| equal 1
+[PASS] D5 rapidity Gaussian is not an analytic vector for H/P
+       log(||H^n psi||/n!)/n grows from 0.600 to 6.304
+[PASS] D6 boost Cayley/deficiency finite proxy has self-adjoint signature
+       full-line momentum proxy has full ranges for K +/- i and unitary Cayley transform
+[PASS] D7 half-line control is not a unitary group
+       the same first-order shift on a half-line loses norm at the boundary
+
+FREE DIRAC POINCARE DIRECT-INTEGRABILITY REPAIR CERTIFICATE
+OUTPUT_JSON=outputs/free_dirac_poincare_generators_selfadjointness_2026_05_30.json
+SCORECARD PASS=21 FAIL=0
+VERDICT: the old Nelson/Gaussian route is rejected; the repaired route
+uses the explicit unitary mass-shell action and one-parameter Stone/self-adjointness checks.
+
+----- stderr -----
+

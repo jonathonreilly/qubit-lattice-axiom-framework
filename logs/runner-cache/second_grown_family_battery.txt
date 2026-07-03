@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/second_grown_family_battery.py
+runner_sha256: cb5565fb38d82dc32a13bf39689d7a48c4fdacbfa588abf419adbe1fa8d10548
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+========================================================================================================
+SECOND GROWN FAMILY CURRENT BATTERY VERIFIER
+========================================================================================================
+
+Question:
+  Does current main contain an auditable replacement battery for the
+  archived second-grown-family missing-runner row?
+
+  [PASS] scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py source is imported into this restricted packet
+         module=scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py, expected=scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py
+  [PASS] scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py source exists and matches cache SHA
+         source=scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py, live_sha=551c91c17688b785c9bf8d26f05a1bf977e4edd831b00402ad3150b8369c0b9e, cache_sha=551c91c17688b785c9bf8d26f05a1bf977e4edd831b00402ad3150b8369c0b9e
+  [PASS] scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py has a fresh ok cache
+         cache=logs/runner-cache/SECOND_GROWN_FAMILY_SIGN_SWEEP.txt, status=fresh, header={'runner_path': 'scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py', 'runner_sha256': '551c91c17688b785c9bf8d26f05a1bf977e4edd831b00402ad3150b8369c0b9e', 'status': 'ok', 'exit_code': '0'}
+  [PASS] scripts/SECOND_GROWN_FAMILY_COMPLEX.py source is imported into this restricted packet
+         module=scripts/SECOND_GROWN_FAMILY_COMPLEX.py, expected=scripts/SECOND_GROWN_FAMILY_COMPLEX.py
+  [PASS] scripts/SECOND_GROWN_FAMILY_COMPLEX.py source exists and matches cache SHA
+         source=scripts/SECOND_GROWN_FAMILY_COMPLEX.py, live_sha=4ab7a30039285b0b7e45e9cbe2db48d946903547fb93e488f9a456149f52d90e, cache_sha=4ab7a30039285b0b7e45e9cbe2db48d946903547fb93e488f9a456149f52d90e
+  [PASS] scripts/SECOND_GROWN_FAMILY_COMPLEX.py has a fresh ok cache
+         cache=logs/runner-cache/SECOND_GROWN_FAMILY_COMPLEX.txt, status=fresh, header={'runner_path': 'scripts/SECOND_GROWN_FAMILY_COMPLEX.py', 'runner_sha256': '4ab7a30039285b0b7e45e9cbe2db48d946903547fb93e488f9a456149f52d90e', 'status': 'ok', 'exit_code': '0'}
+  [PASS] scripts/SECOND_GROWN_FAMILY_COMPLEX_QUICK.py source is imported into this restricted packet
+         module=scripts/SECOND_GROWN_FAMILY_COMPLEX_QUICK.py, expected=scripts/SECOND_GROWN_FAMILY_COMPLEX_QUICK.py
+  [PASS] scripts/SECOND_GROWN_FAMILY_COMPLEX_QUICK.py source exists and matches cache SHA
+         source=scripts/SECOND_GROWN_FAMILY_COMPLEX_QUICK.py, live_sha=b1889fc22e22539eb491a5e909600716ba8734e782528e52d7e7b7b53915ede5, cache_sha=b1889fc22e22539eb491a5e909600716ba8734e782528e52d7e7b7b53915ede5
+  [PASS] scripts/SECOND_GROWN_FAMILY_COMPLEX_QUICK.py has a fresh ok cache
+         cache=logs/runner-cache/SECOND_GROWN_FAMILY_COMPLEX_QUICK.txt, status=fresh, header={'runner_path': 'scripts/SECOND_GROWN_FAMILY_COMPLEX_QUICK.py', 'runner_sha256': 'b1889fc22e22539eb491a5e909600716ba8734e782528e52d7e7b7b53915ede5', 'status': 'ok', 'exit_code': '0'}
+  [PASS] scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py source is imported into this restricted packet
+         module=scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py, expected=scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py
+  [PASS] scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py source exists and matches cache SHA
+         source=scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py, live_sha=539702067c29e0e678c86b3ef995efda6a636d35832ebb3d3def6e42b6d9a091, cache_sha=539702067c29e0e678c86b3ef995efda6a636d35832ebb3d3def6e42b6d9a091
+  [PASS] scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py has a fresh ok cache
+         cache=logs/runner-cache/DISTANCE_LAW_BREAKPOINT_COMPARE.txt, status=fresh, header={'runner_path': 'scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py', 'runner_sha256': '539702067c29e0e678c86b3ef995efda6a636d35832ebb3d3def6e42b6d9a091', 'status': 'ok', 'exit_code': '0'}
+  [PASS] scripts/impact_parameter_portability_probe.py source is imported into this restricted packet
+         module=scripts/impact_parameter_portability_probe.py, expected=scripts/impact_parameter_portability_probe.py
+  [PASS] scripts/impact_parameter_portability_probe.py source exists and matches cache SHA
+         source=scripts/impact_parameter_portability_probe.py, live_sha=b729e140430cd092335575721f63d4c7303062c8dc1e0d467492168634501269, cache_sha=b729e140430cd092335575721f63d4c7303062c8dc1e0d467492168634501269
+  [PASS] scripts/impact_parameter_portability_probe.py has a fresh ok cache
+         cache=logs/runner-cache/impact_parameter_portability_probe.txt, status=fresh, header={'runner_path': 'scripts/impact_parameter_portability_probe.py', 'runner_sha256': 'b729e140430cd092335575721f63d4c7303062c8dc1e0d467492168634501269', 'status': 'ok', 'exit_code': '0'}
+
+Current evidence packet:
+  sign slice: no-restore geometry-sector second-family sweep
+  distance/impact slice: restored Fam2 row at drift=0.05, restore=0.30
+  complex slice: narrow no-restore anchor-row pass plus quick-window boundary
+
+  [PASS] Archived audit blocker names this missing battery path and allows replacement by audit-clean sign/complex notes
+  [PASS] The current sign packet has a complete passing sweep on the no-restore second-family slice
+  [PASS] The restored Fam2 distance/impact packet carries the drift=0.05, restore=0.30 distance law evidence
+  [PASS] The current complex packet has an executable narrow anchor-row positive check
+  [PASS] The quick complex packet exposes the boundary rather than inflating the result family-wide
+  [PASS] Therefore the missing battery path is restored as a current evidence verifier, not as a resurrection of the old broad table
+         expected 20 prior checks before final gate; legacy broad status remains for independent audit to decide
+
+========================================================================================================
+RESULT
+========================================================================================================
+  Current-source battery restored:
+    - the missing runner path now exists
+    - it verifies fresh caches for the current sign, distance/impact, and
+      complex second-family evidence
+    - it keeps the complex-action result narrow and boundary-aware
+    - it does not edit audit results or claim ledger status movement
+
+PASS=21 FAIL=0
+
+----- stderr -----
+

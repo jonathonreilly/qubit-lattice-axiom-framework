@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_r_half_durability_stationarity_chain_2026_06_11.py
+runner_sha256: 72d179f5bb08374a8a2b88ac7d3b11d581c75d94cba5bc141a8ff41c5d1ee60b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
+========================================================================
+Koide r=1/2 durability-stationarity conditional chain
+========================================================================
+
+--- A. the 2-sector records/Lueders map, re-derived exactly
+[PASS] (01) Lueders sharpening p -> p^2/Z on the 2-sector distribution (p_s, p_d) = (1/(1+2r), 2r/(1+2r)) reduces EXACTLY to r -> 2r^2 (the separatrix note's map, re-derived)
+RESIDUAL (declared-open): the 2-SECTOR partition defining (p_s, p_d) is the custody selector (i) prong, consumed at its declared admitted-input status (CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02); the 06-11 channel-space work supplies K-orbit support (the omega/omega-bar pair is one K-orbit for every equivariant channel) as context, not closure.
+
+--- B. the complete stationary set on the closed simplex
+[PASS] (02) fixed points of 2-outcome Lueders sharpening on the CLOSED simplex are exactly p_d in {0, 1/2, 1}  [computed: [0, 1/2, 1]]
+[PASS] (03) in the r coordinate the stationary set is {0, 1/2, infinity}: finite fixed points of r -> 2r^2 are {0, 1/2}, and p_d = 1 is the projective end r = infinity (a = 0, vanishing singlet coupling) -- a THIRD stationary point the 06-02 notes did not discuss
+
+--- C. scope: the no-go closed attraction; stationarity is open
+[PASS] (04) multipliers computed: f'(0) = 0 (stable), f'(1/2) = 2 (unstable separatrix) -- r = 1/2 is STATIONARY but not attracting; durability needs fixedness, not attraction
+[PASS] (05) textual scope interface: the stabilizer-fails no-go's own N4 restricts its residual to the ATTRACTOR question, its N6 names only the measure-admission alternative, and its 2026-06-11 scope statement explicitly places stationarity/durability occupancy OUTSIDE the closed scope -- the durability route is not a reopening
+[PASS] (06) textual interface: the separatrix note frames the knife-edge as needing a STABILIZER (an attraction mechanism); the durability chain replaces that demand with fixedness under re-registration, which the separatrix property itself supports (see check 12)
+[PASS] (07) Record-axiom interface: the live axiom text contains both the DURABILITY of registration (the property the R-D bridge formalizes) and the non-supply clause ('occupancy rule') that forces R-D to be a NAMED bridge rather than an axiom consequence
+RESIDUAL (declared-open): R-D durability bridge (named, NOT adopted): the durably registered 2-sector weight coordinate is invariant under records-flow self-composition (the retained_bounded Lueders map). Record's non-supply clause means this identification must be supplied as an explicit premise; this chain is a theorem CONDITIONAL on it, in the R-eta pattern of the |delta| = 2/9 chain.
+
+--- D. exclusion of the other stationary points (no PDG)
+[PASS] (08) r = 0 (b = 0) forces the EXACTLY degenerate spectrum [a, a, a] for every delta: there is no C_3-breaking left to register -- incompatible with the lane's registered C_3-breaking content (the delta admission), so r = 0 is not a registrable charged-lepton configuration
+RESIDUAL (declared-open): the exclusion of r = 0 consumes the lane's REGISTERED C_3-breaking content (the delta != 0 admission inside AC_phi_lambda, e.g. the |delta| = 2/9 chain's carrier gate) at its admitted status -- not a PDG input.
+[PASS] (09) sum of the three channel weights = 3a exactly (delta-independent), so r = infinity (a = 0) forces sum lambda = 0: impossible when all three sqrt-m weights are positive -- the UNSIGNED charged-lepton branch excludes the third stationary point
+RESIDUAL (declared-open): the unsigned (all-positive-sqrt-m) branch premise is consumed for the r = infinity exclusion; the r = infinity stationary point is exactly the signed/Brannen-branch endpoint (one negative sqrt-m, sum sqrt-m -> 0), flagged as the candidate neutrino-side consumer -- NOT consumed or claimed here.
+
+--- E. uniqueness, Q = 2/3, and the equal-power corollary
+[PASS] (10) uniqueness: stationary set {0, 1/2, infinity} minus the two excluded points leaves r = 1/2 alone; Q = 1/3 + (2/3) r = 2/3 exactly
+[PASS] (11) corollary: r = 1/2 is exactly the HS 2-sector equipartition 3a^2 = 6|b|^2 (|b|^2 = a^2/2) -- the equal-power-per-block WEIGHT (custody prong ii) emerges as a stationarity corollary on this chain instead of a stipulated measure
+[PASS] (12) custody interface: the two named selectors are present in the custody note; this chain consumes prong (i) (the 2-sector partition) and conditionally REPLACES prong (ii) (equal-power weight) with the R-D stationarity corollary
+
+--- F. knife-edge, erasure honesty, thermal consistency
+[PASS] (13) knife-edge quantified: r = 1/2 exactly persists forever under the records flow, while an offset of 1e-5 (the observed Koide precision scale) leaves the neighbourhood in O(20) records-flow steps -- durable persistence at that precision requires EXACTNESS, turning the separatrix instability into the sharpening of the claim  [steps: exact = cap(200), -1e-5: 14, +1e-5: 14]
+[PASS] (14) g(f(r)) = r exactly: the 'thermalizing' reverse map is the functional INVERSE (erasure) of the records map -- consistent with the stabilizer-fails no-go; this chain does NOT use g as a stabilizer or reopen that route
+[PASS] (15) thermal consistency: I/3 gives p = (1/3, 2/3) -> r = 1 (the no-go's computed value, interface-checked), and r = 1 is NOT records-stationary (f(1) = 2 != 1): thermal-ensemble values are not durable registrations -- the Q = 1 cell's consumer is ensemble statistics, with no conflict with the registered Q = 2/3
+RESIDUAL (declared-open): the records-map identification itself (registration composes by the Lueders map) is consumed at the retained_bounded grade of luders_rule_from_composition_consistency via the separatrix note; binding PHYSICAL charged-lepton re-registration to that map is part of the R-D bridge, not derived here.
+
+TOTAL: PASS=15 FAIL=0
+VERDICT: conditional on the named R-D durability bridge and the custody 2-sector partition prong, the unique durably registrable 2-sector weight is r = 1/2 (Q = 2/3): the complete records-flow stationary set is {0, 1/2, infinity}; r = 0 is excluded by the registered C_3-breaking content and r = infinity by the unsigned branch (it is the signed/Brannen endpoint); the equal-power weight admission becomes a corollary. Attraction is neither claimed nor needed; the stabilizer-fails no-go's closed scope is respected. No premise is adopted; no audit status is set.
+
+----- stderr -----
+

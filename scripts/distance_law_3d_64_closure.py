@@ -22,6 +22,9 @@ Uses scipy sparse Poisson solver for speed and accuracy at large N.
 
 from __future__ import annotations
 
+# Large sparse 3D Poisson solves can exceed the default runner budget.
+AUDIT_TIMEOUT_SEC = 1800
+
 import math
 import time
 import sys

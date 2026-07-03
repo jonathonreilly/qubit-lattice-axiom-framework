@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/frontier_spatial_cubic_time_anisotropy_gate_2026_06_06.py
+runner_sha256: 52758f18e2d5c545edc69a37d8228bb8eeafbb4dcccc4a15fd4866303e9f03f6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
+
+========================================================================
+Group and invariant-space checks
+========================================================================
+[PASS] G1 spatial signed-permutation group has 48 elements
+       |O_h|=48
+[PASS] G2 4D signed-permutation hypercubic group has 384 elements
+       |B_4|=384
+[PASS] G3 spatial cubic + time parity leaves two quadratic kinetic invariants
+       dim=2: span(t^2, x^2+y^2+z^2)
+[PASS] G4 4D hypercubic symmetry leaves one quadratic kinetic invariant
+       dim=1: span(t^2+x^2+y^2+z^2)
+
+========================================================================
+Marginal anisotropy allowed by spatial cubic symmetry
+========================================================================
+[PASS] A1 anisotropic kinetic form is invariant under all spatial O_h operations
+       Q=2 t^2 + |x|^2 gives 31 on p=(1, 2, 3, 4)
+[PASS] A2 the same anisotropic form fails a time-space swap
+       Q(p)=31, Q(swap_tx p)=34
+[PASS] A3 the same anisotropic form fails a 45-degree SO(4) rotation
+       Q(p)=31, Q(R45 p)=69/2
+[PASS] A4 isotropic kinetic form survives the same tested SO(4) rotation
+
+========================================================================
+Cubic-harmonic checks do not remove the marginal anisotropy
+========================================================================
+[PASS] C1 spatial quartic cubic artifact is O_h invariant
+       H4_spatial=33
+[PASS] C2 changing time normalization leaves the same quartic spatial artifact
+       Q_iso=18, Q_aniso=27, H4=33
+[PASS] C3 a quartic-only power-counting test cannot determine c_t/c_s
+       the obstruction is degree-2/marginal, not the checked quartic artifact
+
+========================================================================
+Scope-repair alternatives
+========================================================================
+[PASS] S1 adding Euclidean kinetic-normalization c_t=c_s closes this obstruction
+[PASS] S2 adding 4D hypercubic symmetry also removes independent c_t/c_s at quadratic order
+[PASS] S3 without one of those premises, the honest claim is spatial cubic artifact power counting
+[PASS] S4 spatial O_h support alone is insufficient for full SO(4) all-n-point continuum language
+
+========================================================================
+Review-gate certificate
+========================================================================
+[PASS] R1 exact spatial O_h checks can be useful but are scope-limited
+[PASS] R2 marginal anisotropy is symmetry-allowed on Z^3 x Z_tau
+[PASS] R3 salvage choices are explicit premise or narrowed theorem
+       add c_t=c_s / 4D hypercubic premise, or narrow to spatial cubic artifact power counting
+
+========================================================================
+Scorecard
+========================================================================
+PASS=18 FAIL=0
+FINDING: spatial cubic power counting does not exclude marginal time-vs-space kinetic anisotropy. Full SO(4) continuum wording needs an explicit Euclidean normalization / 4D hypercubic premise, or the claim must be narrowed to spatial cubic artifact power counting.
+
+----- stderr -----
+

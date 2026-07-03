@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py
+runner_sha256: f56f55fee4f3f192ab7f091f66341710602fd8d2be7c94bd26782c607b20f41e
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 4.33
+status: ok
+----- stdout -----
+========================================================================
+Obstruction I+II: writhe (Z-valued) framing vanishes on the 2-torsion swap
+========================================================================
+[PASS] K_{3,3}: UD_2 carries a Z_2 exchange-torsion class t
+[PASS] K_{3,3}: t is a 1-cycle (d1 t = 0)
+[PASS] K_{3,3}: 2t in im(d2) and t not in im(d2)  (t is exactly 2-torsion)
+[PASS] K_{3,3}: EVERY integral 1-cocycle pairs to 0 with the swap t (dim Z^1_Z=18)  -- writhe/SO(2)-framing -> +1 on the swap, cannot be the fermionic -1
+[PASS] K_5: UD_2 carries a Z_2 exchange-torsion class t
+[PASS] K_5: t is a 1-cycle (d1 t = 0)
+[PASS] K_5: 2t in im(d2) and t not in im(d2)  (t is exactly 2-torsion)
+[PASS] K_5: EVERY integral 1-cocycle pairs to 0 with the swap t (dim Z^1_Z=15)  -- writhe/SO(2)-framing -> +1 on the swap, cannot be the fermionic -1
+[PASS] Z^3 slab 3x3x2: UD_2 carries a Z_2 exchange-torsion class t
+[PASS] Z^3 slab 3x3x2: t is a 1-cycle (d1 t = 0)
+[PASS] Z^3 slab 3x3x2: 2t in im(d2) and t not in im(d2)  (t is exactly 2-torsion)
+[PASS] Z^3 slab 3x3x2: EVERY integral 1-cocycle pairs to 0 with the swap t (dim Z^1_Z=168)  -- writhe/SO(2)-framing -> +1 on the swap, cannot be the fermionic -1
+
+========================================================================
+Obstruction I (group/codimension): normal bundle of a Z^3 edge is SO(2)
+========================================================================
+[PASS] Z^3 edge normal-bundle rank = 2 (codim of 1-complex in R^3)
+[PASS] normal-bundle structure group is SO(2); pi_1(SO(2))=Z (writhe valued in Z)  -- framing self-linking (Calugareanu) is an INTEGER
+[PASS] fermionic swap sign is pi_1(SO(3))=Z_2 (SU(2) double cover) -- a DIFFERENT group  -- Z (writhe) -/-> Z_2 (spin sign) on the torsion class
+
+========================================================================
+Obstruction III: the -1 needs the SPIN rep; vector(adjoint) frame gives +1
+========================================================================
+[PASS] R^3 VECTOR/adjoint frame after 2pi exchange rotation = +I_3 (trivial)  -- the embedding's O(3) frame (and Ad(-I)=I_3) sees the swap as +1
+[PASS] SPIN-1/2 frame after 2pi exchange rotation = -I_2 (the swap sign)  -- the -1 lives ONLY in the spinor (matter-state) rep
+[PASS] Ad(-I_2) = I_3 on su(2): the on-site spinor 2pi sign is quotiented in the operator(adjoint) frame
+
+========================================================================
+Consistency with the parent no-go's P(t)=0 (the framing is a CONFIG-SPACE,
+not base-edge, object): a non-fibered GF(2) cocycle nonzero on t EXISTS but
+is NOT integral -- so it is NOT a writhe; it is genuine Z_2/Bockstein data.
+========================================================================
+[PASS] K_{3,3}: a GF(2) cocycle phi with phi(t)=1 EXISTS (swap sign realizable as config-space data)
+[PASS] K_{3,3}: that swap cocycle is NON-FIBERED (depends on parked token, not a base-edge connection)
+[PASS] K_{3,3}: the swap sign is NOT in the image of integral framing classes (2-torsion, Bockstein) -> writhe cannot realize it
+
+========================================================================
+Obstruction IV: the SO(2)/U(1) framing CONNECTION route is closed too
+(t = 0 in H_1(;R): every FLAT real framing connection gives holonomy +1)
+========================================================================
+[PASS] K_{3,3}: t = 0 in H_1(;R) (rational boundary) => every flat U(1)/SO(2) framing connection has holonomy +1 on the swap  -- abelian framing (flat-Z_2, integral-writhe, OR real-holonomy) is blind to the swap; only the non-abelian SU(2)/spin torsion detects it
+[PASS] K_5: t = 0 in H_1(;R) (rational boundary) => every flat U(1)/SO(2) framing connection has holonomy +1 on the swap  -- abelian framing (flat-Z_2, integral-writhe, OR real-holonomy) is blind to the swap; only the non-abelian SU(2)/spin torsion detects it
+[PASS] Z^3 slab 3x3x2: t = 0 in H_1(;R) (rational boundary) => every flat U(1)/SO(2) framing connection has holonomy +1 on the swap  -- abelian framing (flat-Z_2, integral-writhe, OR real-holonomy) is blind to the swap; only the non-abelian SU(2)/spin torsion detects it
+
+SCORECARD: PASS=24 FAIL=0
+
+----- stderr -----

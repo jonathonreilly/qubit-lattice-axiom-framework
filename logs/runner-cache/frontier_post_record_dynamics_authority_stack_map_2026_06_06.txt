@@ -1,0 +1,96 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py
+runner_sha256: 0e676f6cfbe05acadb8c4e7fc420cdac2734e878f4a9473de50e51ffc9b023d9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.16
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md exists
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md contains: supplied finite law plus supplied orientation bridge
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md contains: examples do not derive an arrow, clock, kernel, or selected dial
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md exists
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md contains: Directed certificates do not select a production kernel
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md contains: kernel remains a supplied bridge input
+PASS docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md contains: supplied finite candidate family plus supplied selection rule
+PASS docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md contains: The rule is supplied
+PASS docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md exists
+PASS docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md contains: target vector and loss weights are supplied rule data
+PASS docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md contains: Record does not derive the target vector or weights
+PASS docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md contains: supplied finite post-record sample plus supplied statistic set
+PASS docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md contains: The sample is admitted observation data, not a probability law
+PASS self note contains: supplied, admitted, and blocked authority classes
+PASS self note contains: stable location is not selected dial
+PASS self note contains: post-record samples are realized information, not probability laws
+PASS self note contains: Cited authority/cache packet
+PASS self note contains: docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md
+PASS self note contains: logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt
+PASS self note contains: docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md
+PASS self note contains: logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt
+
+------------------------------------------------------------------------------
+Cached log checks
+------------------------------------------------------------------------------
+PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt contains: SUMMARY: PASS=64 FAIL=0
+PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt contains: SUPPLIED_DIRECTED_CERTIFICATE_EXAMPLES=TRUE
+PASS logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt contains: SUMMARY: PASS=52 FAIL=0
+PASS logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt contains: DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL=TRUE
+PASS logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt contains: SUMMARY: PASS=39 FAIL=0
+PASS logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt contains: SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE=TRUE
+PASS logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt contains: SUMMARY: PASS=36 FAIL=0
+PASS logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt contains: SELECTION_RULE_TARGET_VECTOR_FIREWALL=TRUE
+PASS logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt contains: SUMMARY: PASS=30 FAIL=0
+PASS logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt contains: ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE=TRUE
+
+------------------------------------------------------------------------------
+Authority layer checks
+------------------------------------------------------------------------------
+PASS five dynamics layers are mapped
+PASS no-go and exact-support statuses both appear
+PASS every layer has an authority class
+PASS every layer has a summary flag
+directed examples: exact-support | supplied law/orientation/clock/kernel | SUPPLIED_DIRECTED_CERTIFICATE_EXAMPLES=TRUE
+kernel selection firewall: no-go | blocked Record-derived kernel selection | DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL=TRUE
+supplied kernel selection rule: exact-support | supplied candidate family and rule | SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE=TRUE
+target vector firewall: no-go | blocked Record-derived targets/weights | SELECTION_RULE_TARGET_VECTOR_FIREWALL=TRUE
+admitted sample vector: exact-support | admitted observation sample | ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE=TRUE
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS audit data written flag is false
+PASS audit verdict applied flag is false
+PASS promoted/retained claim flag is false
+PASS Record-derived physical arrow flag is false
+PASS kernel selected without supplied rule flag is false
+PASS selection rule derived from Record flag is false
+PASS target vector derived from Record flag is false
+PASS sample-is-probability-law flag is false
+PASS generation/Koide dial selected flag is false
+PASS stable setting selects dial flag is false
+
+SUMMARY: PASS=52 FAIL=0
+POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP=TRUE
+DYNAMICS_AUTHORITY_LAYERS=5
+PRODUCTION_KERNEL_SELECTED_WITHOUT_RULE=FALSE
+SELECTION_RULE_DERIVED_FROM_RECORD=FALSE
+TARGET_VECTOR_DERIVED_FROM_RECORD=FALSE
+SAMPLE_IS_PROBABILITY_LAW=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+STABLE_SETTING_SELECTS_DIAL=FALSE
+AUDIT_LEDGER_WRITTEN=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+
+----- stderr -----
+

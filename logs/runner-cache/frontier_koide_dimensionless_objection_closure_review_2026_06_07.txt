@@ -1,0 +1,85 @@
+========================================================================================
+Koide dimensionless countermodel no-go
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: note boundary and claim-status checks
+----------------------------------------------------------------------------------------
+  [PASS] [A] note boundary contains: Claim type:** no_go
+  [PASS] [A] note boundary contains: Status:** exact countermodel no-go
+  [PASS] [A] note boundary contains: not a physical source/readout closure theorem
+  [PASS] [A] note boundary contains: does not force full dimensionless closure
+  [PASS] [A] note boundary contains: does not claim
+  [PASS] [A] note boundary contains: any new axiom or audit verdict
+  [PASS] [A] note omits stale closure phrase: KOIDE_DIMENSIONLESS_RETAINED_CLOSURE
+  [PASS] [A] note omits stale closure phrase: Admitted input
+  [PASS] [A] note omits stale closure phrase: promoted to an open admission
+
+----------------------------------------------------------------------------------------
+Part 1: Q zero-background support and traceless-background residual
+----------------------------------------------------------------------------------------
+  [PASS] [A] zero-background source-response gives Q=2/3  (Q=2/3)
+  [PASS] [A] common source background cancels from dimensionless Q  (Q(s=1/5,z=0)=2/3)
+  [PASS] [A] traceless source-label background changes Q  (Q(s=0,z=1/4)=8/9)
+  [PASS] [A] opposite traceless background changes Q in the opposite direction  (Q(z=-1/4)=8/15)
+
+----------------------------------------------------------------------------------------
+Part 2: Z label survives observable completeness
+----------------------------------------------------------------------------------------
+  [PASS] [A] Z^2=I on the two-channel source label  (Z^2=(1, 1))
+  [PASS] [A] Z expectation distinguishes non-midpoint source states  (<Z>=[Fraction(0, 1), Fraction(-1, 3), Fraction(1, 2)])
+  [PASS] [A] midpoint is the only listed state with <Z>=0
+
+----------------------------------------------------------------------------------------
+Part 3: delta selected-line local endpoint support
+----------------------------------------------------------------------------------------
+  [PASS] [A] selected-line local source algebra End(L_chi) is one-dimensional
+  [PASS] [A] ambient End(V) has extra endpoint-source directions
+  [PASS] [A] selected-line projector gives selected_channel=1
+  [PASS] [A] selected-line projector kills spectator_channel
+  [PASS] [A] selected-line local support conditionally transfers eta_APS to delta
+  [PASS] [A] normal endpoint source is pullback-kernel data for selected-line readout
+
+----------------------------------------------------------------------------------------
+Part 4: delta ambient-source and endpoint-torsor countermodels
+----------------------------------------------------------------------------------------
+  [PASS] [A] closing endpoint countermodel has expected delta  (delta=2/9)
+  [PASS] [A] spectator endpoint countermodel has expected delta  (delta=0)
+  [PASS] [A] mixed endpoint countermodel has expected delta  (delta=1/9)
+  [PASS] [A] shifted endpoint countermodel has expected delta  (delta=1/3)
+  [PASS] [A] ambient rank-two source leaves a free selected/spectator mixture  (p=1/2 gives delta=1/9)
+
+----------------------------------------------------------------------------------------
+Part 5: closure no-go verdict
+----------------------------------------------------------------------------------------
+  [PASS] [A] Q closure is blocked by traceless Z background
+  [PASS] [A] delta closure is blocked by ambient spectator source
+  [PASS] [A] full dimensionless closure is not forced by the finite algebra
+
+----------------------------------------------------------------------------------------
+Part 6: regenerated audit metadata
+----------------------------------------------------------------------------------------
+  [PASS] [A] ledger claim_type is no_go  (no_go)
+  [PASS] [A] ledger audit_status is a no-go-compatible state  (audited_clean)
+  [PASS] [A] ledger effective_status is no-go-compatible  (retained_no_go)
+  [PASS] [A] ledger runner_path registered  (scripts/frontier_koide_dimensionless_objection_closure_review.py)
+  [PASS] [A] ledger has no direct deps  ([])
+  [PASS] [A] no open dependency paths remain  ([])
+  [PASS] [A] active queue entry absent only after retained no-go audit  (audit_status=audited_clean, effective_status=retained_no_go)
+  [PASS] [B] descendant chain remains material  (78)
+
+========================================================================================
+SUMMARY: PASS=38 FAIL=0
+PASSED: 38/38
+========================================================================================
+KOIDE_DIMENSIONLESS_COUNTERMODEL_NOGO=TRUE
+Q_DIMENSIONLESS_OBJECTION_CLOSES_Q=FALSE
+DELTA_DIMENSIONLESS_OBJECTION_CLOSES_DELTA=FALSE
+FULL_DIMENSIONLESS_OBJECTION_CLOSES_LANE=FALSE
+FULL_DIMENSIONLESS_CLOSURE_FORCED_BY_FINITE_ALGEBRA=FALSE
+Q_FORCED_WITHOUT_Z_ZERO_LAW=FALSE
+DELTA_FORCED_WITHOUT_LINE_LOCAL_BASEPOINT_LAW=FALSE
+CONDITIONAL_Q_IF_BACKGROUND_Z_ZERO=TRUE
+CONDITIONAL_DELTA_IF_SELECTED_LINE_LOCAL_AND_BASED=TRUE
+RESIDUAL_Q=derive_physical_background_source_zero_or_Z_erasure
+RESIDUAL_DELTA=derive_selected_line_local_boundary_source_and_based_endpoint

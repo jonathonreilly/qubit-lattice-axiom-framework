@@ -7,12 +7,12 @@ Verifies the Brannen phase reduction theorem:
   - delta = Q / d where Q = n_eff / d = 2/3 (Koide ratio identity)
   - Route 2: flat-connection obstruction (A = d(theta) has zero curvature)
   - Route 1: bundle obstruction (physical Koide base is interval, c_1 = 0)
-  - Conditional closure: delta = Q/d = 2/9 given Q = 2/3
+  - Conditional closure: delta = Q/d = 2/9 given supplied Q = 2/3
 
 All checks use exact arithmetic (fractions / sympy where possible) or
 floating-point with tight tolerances (< 1e-12).
 
-Expected: PASS=10 FAIL=0.
+Expected: PASS=16 FAIL=0.
 """
 
 import math
@@ -40,7 +40,7 @@ def check(label, condition, details=""):
 
 D = Fraction(3)          # |C_3| group order
 N_EFF = Fraction(2)      # doublet effective charge (to be derived below)
-Q_KOIDE = Fraction(2, 3) # Koide ratio (retained observational I1)
+Q_KOIDE = Fraction(2, 3) # supplied Koide-ratio input I1; not derived here
 
 # Floating-point helpers
 d_f  = float(D)
@@ -141,9 +141,9 @@ check("Q = n_eff / d = 2/3 (exact rational)",
       Q_from_n_eff == Fraction(2, 3),
       f"Q = {Q_from_n_eff}")
 
-check("Q = n_eff / d matches retained Koide ratio Q = 2/3",
+check("Q = n_eff / d matches supplied Koide-ratio input Q = 2/3",
       Q_from_n_eff == Q_KOIDE,
-      f"Q_formula = {Q_from_n_eff}, Q_retained = {Q_KOIDE}")
+      f"Q_formula = {Q_from_n_eff}, Q_supplied = {Q_KOIDE}")
 
 # Equivalence: delta = Q / d
 delta_from_Q = Q_KOIDE / D
@@ -208,13 +208,13 @@ check("But S^2 completion requires c_1 = n_eff = 2, equivalent to Q = n_eff/d = 
 
 
 # ============================================================
-# B6. Conditional closure: given Q = 2/3, delta = Q/d = 2/9 is exact
+# B6. Conditional closure: given supplied Q = 2/3, delta = Q/d = 2/9 is exact
 # ============================================================
-print("\nB6. Conditional closure: delta = Q/d given Q = 2/3")
+print("\nB6. Conditional closure: delta = Q/d given supplied Q = 2/3")
 
-# Given I1 (Q = 2/3) as retained input:
+# Given I1 (Q = 2/3) as a supplied input:
 delta_conditional = Q_KOIDE / D
-check("Given Q = 2/3, delta = Q/d = 2/9 (exact rational, uniquely forced)",
+check("Given supplied Q = 2/3, delta = Q/d = 2/9 (exact rational, uniquely forced)",
       delta_conditional == Fraction(2, 9),
       f"delta = {delta_conditional}")
 
@@ -226,7 +226,7 @@ check("Counterfactual: Q' = 3/4 gives delta' = 1/4 != 2/9",
       f"delta' = {delta_prime}")
 
 # Verify: n_eff = 2 is derived (not observational), d = 3 is structural
-# The only retained input required is Q = 2/3 (I1)
+# The only supplied input required for the algebraic reduction is Q = 2/3 (I1)
 check("n_eff = 2 is structural (conjugate-pair, no retained input)",
       N_EFF == Fraction(2),
       "doublet L_omegabar = conj(L_omega) forces n_eff = 2")
@@ -241,7 +241,7 @@ check("d = 3 is structural (|C_3|, no retained input)",
 print(f"\n{'='*60}")
 print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
 if FAIL_COUNT == 0:
-    print("All checks passed. I2 conditionally closed on I1.")
+    print("All checks passed. The algebraic I2 reduction is conditional on supplied I1.")
     print("  n_eff = 2  (structural: conjugate-pair forcing)")
     print("  d     = 3  (structural: |C_3|)")
     print("  delta = n_eff / d^2 = 2/9  (given Q = n_eff/d = 2/3)")

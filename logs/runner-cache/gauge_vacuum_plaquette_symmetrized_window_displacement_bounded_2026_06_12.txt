@@ -1,0 +1,114 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_2026_06_12.py
+runner_sha256: f36193e8ee598adf376a1de0d7d2ff297d240b3d54329a0a3cd2615c8c50ce47
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 3.77
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette W54 conjugate-symmetrized window displacement runner
+Status authority: independent audit lane only. This source runner does not set, predict, promote, or demote any audit outcome.
+No new imports: repo-internal finite packet quantities only.
+No randomness or runtime dates are used.
+
+================================================================================================================
+Part 1: packet, strip layer, and CG-library gates
+================================================================================================================
+one-rail state count = 25
+pair state count = 625
+strip Perron eigenvalue = 2.135111708649120
+strip Perron residual = 4.441e-16
+fundamental isometries from B4 sources = 65
+antifundamental isometries from B4 sources = 65
+max intertwiner residual = 9.212e-10
+max V^dag V - I residual = 3.331e-15
+max VV^dag - P_C2 residual = 1.887e-15
+max product completeness residual = 2.220e-15
+PASS: one-rail finite packet has 25 states
+PASS: pair finite packet has 625 states
+PASS: generated fusion table reproduces B4 fundamental recurrences
+PASS: generated fusion table reproduces B4 antifundamental recurrences
+PASS: strip Perron residual is small
+PASS: fundamental and antifundamental B4-source isometry counts are 65 each
+PASS: CG isometries solve the generator intertwiner equations
+      max=9.212e-10
+PASS: CG columns are orthonormal
+      max=3.331e-15
+PASS: CG projectors equal the selected Casimir blocks
+      max=1.887e-15
+PASS: full B4-source products close in the one-step halo
+PASS: full B4-source products are complete
+      max=2.220e-15
+
+================================================================================================================
+Part 2: Wilson weights and orientation bond construction
+================================================================================================================
+c_fund(6)/c_0(6) = 1.267595218949950
+c_antifund(6)/c_0(6) = 1.267595218949950
+c_(1,1)(6)/c_0(6) = 1.298078395839505
+adjoint displacement = OUT_OF_SCOPE: this CG library has no 8 x (p,q) isometry family
+fundamental branch nonzero entries = 3136
+antifundamental branch nonzero entries = 3136
+fundamental/antifundamental support overlap = 0
+fundamental factor min/max = 0.111111111111111 / 0.111111111111111
+antifundamental factor min/max = 0.111111111111111 / 0.111111111111111
+conjugation transform residual = 3.886e-16
+mechanism = the two orientation characters enter as a linear sum of nonnegative branch bonds before the Perron/source readout.
+PASS: Wilson weights satisfy c_fund(6) = c_antifund(6) on the finite packet
+      diff=+0.000e+00
+PASS: adjoint Wilson weight is printed and not contracted by this library
+      c_adj/c0=1.298078395839505
+PASS: both orientation branch supports match the W52 56 x 56 count
+PASS: orientation branch supports are disjoint on B4
+PASS: fundamental projector factor is 1/9 on every allowed branch entry
+PASS: antifundamental projector factor is 1/9 on every allowed branch entry
+PASS: antifundamental branch is the conjugation transform of the W53 branch
+      residual=3.886e-16
+PASS: symmetrized branch is a coherent positive bond sum, not a cancellation
+
+================================================================================================================
+Part 3: W44 k=2 direct readout
+================================================================================================================
+zero_window: eig=1.664872828075301e-01; residual=4.564e-15; iterations=29; P=0.449370834209279; delta=-1.942890293094024e-15; vector_min=0.000e+00
+oriented_fundamental: eig=1.951223619010708e-01; residual=1.177e-14; iterations=37; P=0.445084590711323; delta=-4.286243497957531e-03; vector_min=0.000e+00
+oriented_antifundamental: eig=1.951223619010709e-01; residual=1.178e-14; iterations=37; P=0.445084590711324; delta=-4.286243497956643e-03; vector_min=0.000e+00
+conjugate_symmetrized: eig=2.411272092885757e-01; residual=1.380e-14; iterations=36; P=0.443437364621406; delta=-5.933469587874829e-03; vector_min=0.000e+00
+W44 k=2 anchor = 0.449370834209281
+W53 oriented displacement reference = -4.286243497957531e-03
+P(k=2, symmetrized window) = 0.443437364621406
+displacement_vs_anchor = -5.933469587874829e-03
+ratio_sym_displacement_to_oriented = 1.384305299197824
+readout combination = added orientation bonds with nonlinear Perron/source readout; the measured displacement is not a literal factor of two.
+PASS: zero-window direct solve reproduces the W44 k=2 anchor
+      delta=-1.943e-15
+PASS: zero-window power residual is small
+PASS: oriented branch reproduces the W53 P value
+      P=0.445084590711323
+PASS: oriented branch reproduces the W53 displacement
+      delta=-4.286243497957531e-03
+PASS: conjugate branch gives the same individual readout as the W53 branch
+PASS: oriented branch residual is small
+PASS: conjugate branch residual is small
+PASS: symmetrized branch residual is small
+PASS: symmetrized Perron vector is nonnegative up to tolerance
+      min=0.000e+00
+PASS: symmetrized displacement is finite and negative on this finite surface
+      delta=-5.933469587874829e-03
+PASS: symmetrized displacement is larger in magnitude than one oriented branch
+      |sym|=5.933469587874829e-03, |oriented|=4.286243497957531e-03
+
+================================================================================================================
+Part 4: note hygiene
+================================================================================================================
+PASS: note delegates status to the independent audit lane
+PASS: note carries canonical source-proposal metadata
+PASS: note uses markdown links for one-hop authorities
+PASS: context refs are repo-local plain-text script paths
+PASS: note contains no tool provenance text
+PASS: note avoids overreach closure phrases
+PASS: note avoids prohibited audit-status tokens
+PASS: note reports the symmetrized k=2 measurement
+TOTAL: PASS=38, FAIL=0
+
+----- stderr -----
+

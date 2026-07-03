@@ -1,0 +1,80 @@
+===== runner cache v1 =====
+runner: scripts/frontier_g_bare_parent_promotion_gate_map_2026_06_06.py
+runner_sha256: b5e0d415f4e74957f16a45afea0f994543889464741154f8eef1263b95f5cd2a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+
+----------------------------------------------------------------------------------------
+Part 1: active review gate is present
+----------------------------------------------------------------------------------------
+  [PASS] active queue contains the g_bare parent gate id
+  [PASS] active queue scopes G_BARE_DERIVATION_NOTE and downstream g_bare surfaces
+  [PASS] active queue requires independent audit of both candidate rows
+  [PASS] active queue disposition remains science-needed
+
+----------------------------------------------------------------------------------------
+Part 2: parent note carries dependency-chain gate
+----------------------------------------------------------------------------------------
+  [PASS] parent note contains: Parent dependency-chain gate
+  [PASS] parent note contains: G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md
+  [PASS] parent note contains: G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md
+  [PASS] parent note contains: parent re-audit required
+  [PASS] parent note contains: not a retained-status\npromotion
+  [PASS] parent note contains: canonical normalization itself remains the admitted\nupstream convention layer
+  [PASS] parent note contains: not a dynamical calculation
+  [PASS] parent note contains: not a fit
+  [PASS] parent note contains: not a\nfixed-point condition
+  [PASS] rescaling repair candidate exists  (/private/tmp/cl3-audit-backlog-scan-20260610/docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)
+  [PASS] constraint/convention repair candidate exists  (/private/tmp/cl3-audit-backlog-scan-20260610/docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md)
+
+----------------------------------------------------------------------------------------
+Part 3: promotion panel identifies the blocking premise
+----------------------------------------------------------------------------------------
+  [PASS] promotion panel contains: Do NOT promote
+  [PASS] promotion panel contains: N_F = 1/2
+  [PASS] promotion panel contains: CONVENTION
+  [PASS] promotion panel contains: single load-bearing admission
+  [PASS] promotion panel contains: invariance, not uniqueness
+  [PASS] promotion panel contains: does NOT close the L3b admission
+  [PASS] promotion panel contains: per-site SU(2)
+  [PASS] promotion panel contains: gauge su(3) lives on `V_3 = C^3`
+  [PASS] promotion panel contains: staggered-Dirac realization gate
+  [PASS] promotion panel contains: conditional** algebraic core
+  [PASS] promotion panel contains: No further promotion is needed there
+
+----------------------------------------------------------------------------------------
+Part 4: logical gate classifier
+----------------------------------------------------------------------------------------
+  [PASS] conditional algebra core is available
+  [PASS] both repair candidate files are present
+  [PASS] parent re-audit is still required
+  [PASS] canonical normalization is still admitted upstream
+  [PASS] N_F forced by baseline is false on current panel surface
+  [PASS] L3 invariance does not imply uniqueness
+  [PASS] staggered-Dirac gate is not treated as closed
+  [PASS] parent promotion route is blocked
+
+----------------------------------------------------------------------------------------
+Part 5: branch-local note hygiene
+----------------------------------------------------------------------------------------
+  [PASS] gate note contains: branch-local no-go gate map
+  [PASS] gate note contains: negative route pruning
+  [PASS] gate note contains: conditional algebra core + L3 invariance => parent promotion
+  [PASS] gate note contains: is blocked on the current surface
+  [PASS] gate note contains: No repo-wide audit verdict is applied here
+  [PASS] gate note contains: No claim is made that `g_bare = 1` is false
+  [PASS] gate note avoids banned phrase: retained branch-local
+  [PASS] gate note avoids banned phrase: would become retained
+  [PASS] gate note avoids banned phrase: promoted to retained
+  [PASS] gate note avoids banned phrase: retained on the actual surface
+  [PASS] gate note avoids banned phrase: full retained at this time
+
+========================================================================================
+  TOTAL: PASS=45, FAIL=0
+========================================================================================
+
+----- stderr -----
+

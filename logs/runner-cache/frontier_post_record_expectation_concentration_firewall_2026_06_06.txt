@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_expectation_concentration_firewall_2026_06_06.py
+runner_sha256: 35cf0846a691558c22e48bfed77a4b5ece9957f09f7bc73ef42e9663d2343bab
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_EXPECTATION_CONCENTRATION_FIREWALL_2026-06-06.md exists
+PASS docs/POST_RECORD_EXPECTATION_CONCENTRATION_FIREWALL_2026-06-06.md contains: actual_current_surface_status: no-go
+PASS docs/POST_RECORD_EXPECTATION_CONCENTRATION_FIREWALL_2026-06-06.md contains: Expected empirical frequencies do not determine finite tail probabilities
+PASS docs/POST_RECORD_EXPECTATION_CONCENTRATION_FIREWALL_2026-06-06.md contains: expected post-record frequency
+PASS docs/POST_RECORD_EXPECTATION_CONCENTRATION_FIREWALL_2026-06-06.md contains: concentration and p-values remain conditional
+PASS docs/POST_RECORD_EXPECTATION_CONCENTRATION_FIREWALL_2026-06-06.md contains: generation/Koide dials
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md exists
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: realized counts stay integral while ensemble expectations can be fractional
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: Does not derive probabilities
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: Does not derive a time metric or clock rate
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md exists
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md contains: post-record update is integral
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md contains: predictive expectation
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md contains: belongs to the pre-record or ensemble layer
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md exists
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: probability laws, Born typicality, and transition rates
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: clock/time metric
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: post-record information dynamics
+
+------------------------------------------------------------------------------
+Counterexample checks
+------------------------------------------------------------------------------
+PASS iid fair law normalizes
+PASS correlated fair law normalizes
+PASS expected counts match :: (Fraction(2, 1), Fraction(2, 1))
+PASS one-time marginal 0 matches
+PASS one-time marginal 1 matches
+PASS one-time marginal 2 matches
+PASS one-time marginal 3 matches
+PASS iid extreme-tail probability is exact :: 1/8
+PASS correlated extreme-tail probability is exact :: 1
+PASS same expectation has different tail probabilities
+PASS same observed word gets different p-values :: 1/8 vs 1
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS Record-derived concentration flag is false
+PASS Record-derived p-value flag is false
+PASS Record-derived kernel flag is false
+PASS Record-derived clock/rate flag is false
+PASS Record-derived Born/instrument flag is false
+PASS Record-derived Hamiltonian flag is false
+PASS generation/Koide dial selected flag is false
+PASS audit verdict applied flag is false
+
+SUMMARY: PASS=37 FAIL=0
+EXPECTATION_IMPLIES_CONCENTRATION=FALSE
+SAME_EXPECTATION_DIFFERENT_TAILS=TRUE
+RECORD_DERIVES_P_VALUE=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

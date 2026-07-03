@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/bw_bridge_reduction_os0_ir_slope_2026_06_10.py
+runner_sha256: 1579214f3888e89ed4cfda16c854adfbb50503a79ed02221770ea584dee83fdc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.58
+status: ok
+----- stdout -----
+PART A -- second-order carrier: exact dispersion and the inverse map xi = 1/v^2
+==============================================================================
+  [PASS] A1 E(p) = 2 asinh(sqrt(c_s/c_t) sin(p/2)) solves the massless transfer relation exactly
+  [PASS] A2 cone slope v = sqrt(c_s/c_t) exactly (symbolic series)
+  [PASS] A3 inverse map: xi := c_t/c_s = 1/v^2 exactly
+  [PASS] A4 contrast: the O_h-invariant form leaves xi free (v sweeps with c_t at fixed c_s)  --  reproduces the anisotropy gate's two-coefficient freedom; nothing here forces xi
+
+PART B -- first-order carrier: exact slope and the inverse map xi = 1/v
+==============================================================================
+  [PASS] B1 first-order carrier slope v = c_s/c_t exactly
+  [PASS] B2 inverse map: xi = 1/v exactly for the first-order carrier
+  [PASS] B3 injectivity on v > 0 for both carriers: v = 1 is the unique preimage of xi = 1
+
+PART C -- the Wick spectral mapping at a SUPPLIED (transfer, tau) pair
+==============================================================================
+  [PASS] C1 Wick pair at supplied (T,tau): quasi-energy phase = -tau E exactly (20 instances)  --  shared generator => shared dispersion; this is what W-IR asserts at the cone point only
+  [PASS] C2 Stone uniqueness, scope-compliant: H is unique GIVEN (T, tau)
+  [PASS] C3 tau-relativity reproduced: (T, 2 tau) reconstructs H/2 -- tau is SUPPLIED, not derived  --  the scope-boundary note's point; the blocked-time bridge supplies the convention
+
+PART D -- UV-insensitivity: the quadratic OS0 extraction consumes ONLY the slope
+==============================================================================
+  [PASS] D1 three slope-1 bands with different UV shapes all give xi = 1 (|err| < 1e-9)  --  arcsinh(sin p): xi=1.000000000001; |p| (saturating/dichotomy band): xi=1.000000000000; sin p + 0.3 sin^3 p: xi=1.000000000000
+  [PASS] D2 two slope-1/2 bands with different UV shapes both give xi = 4 (second-order read)  --  the mismatch diagnostic: xi = 1/v^2 regardless of UV band shape
+      mismatch diagnostic: v -> xi  (second order / first order)
+        v = 0.50  ->  xi_2nd =  4.0000   xi_1st =  2.0000
+        v = 0.90  ->  xi_2nd =  1.2346   xi_1st =  1.1111
+        v = 1.00  ->  xi_2nd =  1.0000   xi_1st =  1.0000
+        v = 1.10  ->  xi_2nd =  0.8264   xi_1st =  0.9091
+        v = 2.00  ->  xi_2nd =  0.2500   xi_1st =  0.5000
+  [PASS] D3 the diagnostic is computed from the inverse maps verified in A3/B2 (consistency)
+
+PART E -- the FULL Wick-pair premise is refuted for strict ticks (W-IR is forced)
+==============================================================================
+  [PASS] E1 the exponential tick of the transfer's H leaks beyond radius 1 at every nonzero step  --  a=0.3: |U[0,2]|=1.117e-02; a=0.6: |U[0,2]|=4.367e-02; a=1.0: |U[0,2]|=1.149e-01
+  [PASS] E2 contrapositive: a strict radius-1 tick has distance-2 amplitude EXACTLY 0, the exponential tick does not -- they are different maps  --  W-IR asserts only first-order cone-point agreement -- the minimal surviving identification
+
+PART F -- end-to-end chain instance: |v| = 1 (dichotomy band) + W-IR => xi = 1
+==============================================================================
+  [PASS] F[D=0.0, w=+1] saturating dichotomy band through the bridge: xi = 1 exactly  --  xi = 1.000000000165
+  [PASS] F[D=0.8, w=-1] saturating dichotomy band through the bridge: xi = 1 exactly  --  xi = 1.000000000165
+  [PASS] F3 chain consistency: v = 1 is the unique fixed point where BOTH carrier reads give xi = 1  --  first- and second-order reads agree at, and only at, the isotropic point
+
+PART G -- scope honesty: what is NOT proved here
+==============================================================================
+  [PASS] G1 W-IR is a NAMED premise: nothing in Parts A-F derives cone-point agreement between the strict tick and the transfer  --  its grounding is the one-spectrum question (scope-boundary N5 slot), a separate row
+  [PASS] G2 tau is SUPPLIED (blocked-time normalization), not derived: the tau-relativity check C3 is the guard
+
+==============================================================================
+SCORECARD: PASS=20 FAIL=0
+==============================================================================
+
+----- stderr -----
+

@@ -3,7 +3,7 @@
 **Date:** 2026-05-31
 **Claim type:** bounded_theorem
 **Claim boundary:** bounded result on the final physical-identification step (honest: not closed, not a no-go).
-**Runner:** `scripts/flavor_asymmetry_identification_principled_not_forced_2026_05_31.py` (SCORECARD PASS=5).
+**Runner:** `scripts/flavor_asymmetry_identification_principled_not_forced_2026_05_31.py` (SCORECARD PASS=9).
 **Source:** final-step build `wf_c982812a` (intensive-vs-extensive / why-not-global-zero / Cl(3)-bridge / adversary → adjudication), verified numerically (L=4,6) + against the origin/main ledger.
 
 ## Question
@@ -74,3 +74,30 @@ radian-bridge no-go is a different surface and is not invoked here.
 The generation-space/ABSS/PL-S³ physical readout bridge remains **undischarged**: this note still does not
 prove that the charged-lepton observable reads one fixed-point local summand rather than the vanishing global
 invariant or the extensive sum.
+
+## 2026-06-07 Source-Packet Repair: exact residual matching
+
+The paired source packet for the named residual gate is now part of this
+restricted packet:
+
+- [`LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md`](LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md)
+  records the audited-clean open-gate Brannen-BAE `delta = 2/9` comparator.
+- [`scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py`](../scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py)
+  is the paired runner.
+- [`logs/runner-cache/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.txt`](../logs/runner-cache/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.txt)
+  is the paired SHA-pinned cache, expected `TOTAL: PASS=17 FAIL=0`.
+
+Raw restricted-packet paths:
+
+- `docs/LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md`
+- `scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py`
+- `logs/runner-cache/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.txt`
+
+This closes only the source-packet visibility part of the blocker. The lepton
+packet is an open-gate comparator: it does not derive `delta = 2/9`, the
+`sqrt(2)` Brannen/BAE coefficient, the mass scale, or the physical
+single-fixed-point readout selector.
+
+The science boundary stays the same: this row is still
+derived-modulo-the-generation-space/readout bridge, not a fully closed
+charged-lepton topological prediction.

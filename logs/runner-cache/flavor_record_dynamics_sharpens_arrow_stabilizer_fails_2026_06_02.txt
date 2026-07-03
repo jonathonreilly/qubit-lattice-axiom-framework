@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026_06_02.py
+runner_sha256: 64d5bbb882cde46fc48c4c360b2ff18635be1adbe7af048d4cfcdcfa0ef38334
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
 [PASS] Lueders sharpening r->2r^2 makes r=1/2 unstable
        f(0.5)=0.500000; f'(0.5)=2.000000
 [PASS] iteration from r=0.49 runs away from 1/2
@@ -12,3 +20,6 @@
 SCORECARD PASS=5 FAIL=0
 FINDING: the tested record dynamics does not make r=1/2 a dynamical attractor.
 The remaining value route is a measure/reference choice.
+
+----- stderr -----
+

@@ -1,61 +1,120 @@
-# Flavor — the flavor-U(1)-on-idempotents route collapses; C³=I no-go is narrower than stated; the ordering has no native indexing parameter
+# Flavor Idempotent U(1) Collapse Boundary
 
 **Date:** 2026-05-30
+**Updated:** 2026-06-07
 **Claim type:** bounded_theorem
-**Claim boundary:** bounded negative (route collapses) + one refinement (no-go narrowed) + one honest negative (ordering not natively indexed).
-**Runner:** `scripts/flavor_idempotent_u1_collapses_2026_05_30.py` (SCORECARD PASS=4).
-**Source:** 6-agent build `wf_561034c7` (map → 4 tests → adjudication).
+**Claim boundary:** exact finite negative boundary for the idempotent-U(1)
+route. The note proves the idempotent U(1) is native and inert, and that the
+opposite-charge route leaves the idempotent span. It does not claim a physical
+sector-ordering theorem or a framework-native selector for charged-fermion
+mass ordering.
+**Runner:** `scripts/flavor_idempotent_u1_collapses_2026_05_30.py`
+(SCORECARD PASS=7 FAIL=0).
 
-## Question
-A candidate route tested here: a derived continuous **flavor/horizontal U(1) on the singlet⊕doublet idempotent split**
-(`P_s=J/3, P_d=I−J/3`) — *not* a rephasing of the generator `C`, so potentially dodging `C³=I` — that
-orients `J_cs` (→ det_C → Q=2/3) **and** reproduces the ordering `r = 0.50(lep) < 0.60(down) < 0.77(up)`.
+## Scope
 
-## Result — collapses three ways
-The idempotent U(1) `U(φ,ψ)=e^{iφ}P_s+e^{iψ}P_d` is native (a polynomial in `C`) and is `diag(e^{iφ},e^{iψ},e^{iψ})`
-in the C₃-Fourier basis — *same* phase on both doublet modes (vs a Hermitian b-rephasing, which needs
-*opposite* phases). So it **commutes with `C`** and **genuinely dodges `C³=I`**. But:
-1. **Inert by conjugation:** `[U,C]=0` ⇒ `U H U† = H` exactly (verified) for any circulant H — `b`, `r` unchanged. It pins nothing.
-2. **The only nontrivial action is the one-sided chiral `H → H U†`**, which **breaks Hermiticity** (complex
-   eigenvalues, killing the signed Brannen readout the closure rests on) with value set by the **free** angle
-   ψ — and that chiral split **is exactly the grading blocked by retained `koide_z3_equivariant_anticommuting_no_go`** (the same generation-chirality import).
-3. **The gauge-charge det_C route collapses to the forbidden move:** gluing the doublet into one charged
-   complex field requires *opposite* charge on the `ω, ω̄` modes = a rephasing of `C` = the `C³=I`-forbidden
-   operation. Equal charge (the genuine idempotent U(1)) selects nothing.
+The tested route is the continuous idempotent symmetry
 
-## The one refinement (worth recording)
-**The `C³=I` obstruction is narrower than its blanket phrasing.** Step-4b reads as "no continuous doublet
-U(1)"; precisely, it forbids *rephasing the generator `C`* (or, equivalently, the opposite-phase mode gluing).
-A *distinct* U(1) — the idempotent one, which commutes with `C` — does dodge it. The obstruction is real but
-specific; it is not a blanket ban on all doublet U(1)s.
+```text
+U(phi,psi) = exp(i phi) P_s + exp(i psi) P_d,
+P_s = J/3,        P_d = I - J/3.
+```
 
-## The honest negative on the ordering
-The ladder `r = 0.500(lep) < 0.597(down) < 0.773(up) < 1.0(rank-1)` is **real and native** — it is a function
-of the mass spectrum alone, scale-invariant, with no CKM/QCD contamination (CKM does not enter a
-diagonal-mass Koide readout; only ratios matter). **But it has no native indexing parameter:**
-- `|Q_em|` = `(1, 1/3, 2/3)` — **non-monotone** with r (leptons have the *largest* |charge| but the *smallest* r).
-- color = `(1, 3, 3)` — **non-monotone** (down = up).
-- Only "mass-dominance" tracks r, which is **tautological** with Q.
+This is a polynomial in the `C_3` shift and is distinct from rephasing the
+generator. In the Fourier basis it applies the same phase to the two doublet
+modes. That is the exact route tested here.
 
-So the ordering does *not* hand us a new handle: there is no charge/color/Yukawa quantity *inside* the
-generation C₃ algebra to index which sector gets which `r`. **The generation C₃ algebra is pure flavor** — the
-charge/color/Yukawa structure lives on the spinor/color/Higgs factors, which are generation-blind. This is the
-sharp, recurring reason: nothing internal to the generation factor can place the sectors on the ladder.
+## Exact Collapse
 
-## Honest verdict
-The flavor-U(1)-on-idempotents route — this symmetry-side candidate — **collapses** (inert-by-conjugation,
-or the already-blocked chiral grading, or the `C³=I`-forbidden charge gluing). The `C³=I` no-go is *narrowed*
-(useful), and the ordering is *real but unindexed* (honest negative). The two gates are unchanged and now
-maximally sharp:
-1. **`r=1/2` fixing** — the det_C-vs-det_R measure on the doublet (`J_cs` forced, orientation/measure free).
-2. **the sector-selector** — what connects the (pure-flavor, generation-blind-decoupled) generation algebra to
-   the charge/color/Yukawa factors so that each sector lands at its observed `r`.
+### 1. The Idempotent U(1) Is Native But Inert
 
-Both require a *cross-factor* coupling between the generation algebra and the charge/scale factors — exactly
-the connection the framework keeps showing is absent (generation-blindness). That is the precise, structural
-statement of what the charged-lepton (and full charged-fermion) mass value is waiting on.
+The idempotent U(1) commutes with the `C_3` generator:
 
-## Stale-citation flags
-- Anchors: `koide_z3_equivariant_anticommuting_no_go` (retained_bounded — the chiral grading the chiral action
-  reduces to), `koide_c3_generator_rephasing_obstruction` (retained — now seen as *narrow*: forbids C-rephasing,
-  not the idempotent U(1)), `three_generation_observable` (retained — the idempotents are native).
+```text
+[U,C] = 0.
+```
+
+Therefore it is silent with respect to the generator-rephasing obstruction
+and genuinely dodges a blanket "no doublet U(1)" reading. But the same
+commutation makes it inert by conjugation on any circulant Hamiltonian:
+
+```text
+U H U^dagger = H.
+```
+
+So it cannot orient `b`, fix `r`, or select a Koide weight.
+
+### 2. The Nontrivial One-Sided Action Is Not A Hermitian Route
+
+The one-sided operation
+
+```text
+H -> H U^dagger
+```
+
+is generally non-Hermitian and has complex eigenvalues. It is not the signed
+Hermitian Brannen readout used by the Koide value lane. Algebraically, this is
+the chiral/asymmetric split that the
+[`KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`](KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md)
+boundary rules out for the `C_3`-equivariant anticommuting route.
+
+### 3. Opposite Doublet Charge Leaves The Idempotent Span
+
+Let `P_0,P_1,P_2` be the `C_3` spectral projectors. The equal doublet charge
+
+```text
+P_1 + P_2
+```
+
+is exactly `P_d` and is idempotent-native. The opposite charge
+
+```text
+P_1 - P_2
+```
+
+is not in `span{P_s,P_d}`. It is the mode-splitting move associated with
+generator rephasing, the route handled by
+[`KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md`](KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md).
+
+## Ordering Table Demoted To Comparator
+
+The older note also discussed the observed ordering
+
+```text
+r_lepton < r_down < r_up.
+```
+
+That table is not used as a theorem here. The runner keeps a minimal
+non-load-bearing check: the supplied charge and color labels do not monotonely
+index the supplied `r` order. This does not prove the absence of every possible
+sector selector, and it does not derive charged-fermion ordering from the
+framework.
+
+The only retained role is route-pruning:
+
+```text
+the idempotent U(1) does not supply the selector.
+```
+
+## One-Hop Authorities
+
+- [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
+  supports the native finite `C_3`/idempotent generation algebra context.
+- [`KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md`](KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md)
+  supplies the generator-rephasing boundary.
+- [`KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`](KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md)
+  supplies the chiral/anticommuting route boundary.
+
+## Bottom Line
+
+The idempotent-U(1) route is a clean finite negative boundary:
+
+```text
+native equal-doublet U(1) -> inert;
+one-sided action -> non-Hermitian/chiral boundary;
+opposite doublet charge -> outside idempotent span / generator-rephasing route.
+```
+
+It sharpens the old `C^3=I` wording: the obstruction is not a blanket ban on
+all doublet U(1)s. The idempotent U(1) exists, but it selects nothing. The
+charged-fermion sector selector remains a separate open bridge.

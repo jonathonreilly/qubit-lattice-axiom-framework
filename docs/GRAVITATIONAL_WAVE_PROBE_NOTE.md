@@ -5,6 +5,7 @@
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
 **Primary runner:** [`scripts/frontier_grav_wave_post_newtonian.py`](../scripts/frontier_grav_wave_post_newtonian.py)
+**Cached runner output:** [`logs/runner-cache/frontier_grav_wave_post_newtonian.txt`](../logs/runner-cache/frontier_grav_wave_post_newtonian.txt)
 
 ## 2026-05-29 Audit Repair
 
@@ -20,7 +21,7 @@ still needed before citing physical PN/GW observables.
 This repair addresses the artifact/scope part only. The primary runner source
 in this branch contains complete implementations of Test B
 `test_post_newtonian_moving_source` and Test C `test_wave_vs_laplace`; neither
-is represented by a truncation marker. The note and runner are also narrowed so
+is replaced by a placeholder marker. The note and runner are also narrowed so
 the load-bearing claim is only finite toy-lattice sensitivity, not physical
 post-Newtonian or gravitational-wave closure.
 
@@ -46,7 +47,7 @@ inside the runner. Neither is derived from retained framework primitives.
 On the supplied finite runner:
 
 1. **Poisson-field gravitational waves are not established.** The Poisson field
-   is elliptic/instantaneous. Truncated-field tests show the beam deflection is
+   is elliptic/instantaneous. Radius-limited-field tests show the beam deflection is
    mostly controlled by field values near the sampled path; this is a bounded
    sensitivity result, not a dynamical wave equation.
 2. **Imposed retarded-source sampling is distinguishable from instantaneous
@@ -85,7 +86,7 @@ The runner exits successfully and performs assertion checks on the returned
 finite-runner data structures. It also performs executable artifact-source
 checks that the Test B body, Test C body, and quantitative table-generation
 strings (`d_instant`, `d_retarded`, `diff%`, `VL delta_z`, `PN delta_z`) are
-present in the untruncated primary runner source before running the finite
+present in the complete primary runner source before running the finite
 toy-model tests.
 
 Observed output includes:
@@ -124,8 +125,18 @@ Expected:
 
 ```text
 Poisson-field gravitational waves: NEGATIVE.
-...
+Retarded-source sampling differs from instantaneous sampling up to about 15%
+The imposed f^2 action term becomes distinguishable in the tested range
 This runner does not derive GR, physical gravitational waves, a
 post-Newtonian observable, c_lattice normalization, or an f^2 coefficient from
 retained framework primitives.
+```
+
+Current cache also reports:
+
+```text
+ARTIFACT SOURCE CHECKS
+  [PASS] Test B function body present
+  [PASS] Test C function body present
+  [PASS] source has full implementation span
 ```

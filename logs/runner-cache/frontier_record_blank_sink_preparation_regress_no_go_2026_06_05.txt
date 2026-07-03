@@ -1,0 +1,111 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_blank_sink_preparation_regress_no_go_2026_06_05.py
+runner_sha256: f5b9865b8e5c245db6d114200b98408d368ef33d96a26c4440ea7ee9d3f8ca62
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+==============================================================================
+RECORD BLANK-SINK PREPARATION REGRESS NO-GO
+no-go / finite capacity ledger runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Closed blanking is many-to-one
+------------------------------------------------------------------------------
+  [PASS] k=1: arbitrary old sink has 2^k labels
+  [PASS] k=1: closed blanking range has one label
+  [PASS] k=1: closed blanking is not injective
+  [PASS] k=1: closed blanking loses k finite bits
+  [PASS] k=1: outer-sink blank-boundary domain has 2^k labels
+  [PASS] k=1: outer-sink route preserves support
+  [PASS] k=1: outer-sink route stores old word
+  [PASS] k=1: inner sink is blank after outer-sink route
+  [PASS] k=2: arbitrary old sink has 2^k labels
+  [PASS] k=2: closed blanking range has one label
+  [PASS] k=2: closed blanking is not injective
+  [PASS] k=2: closed blanking loses k finite bits
+  [PASS] k=2: outer-sink blank-boundary domain has 2^k labels
+  [PASS] k=2: outer-sink route preserves support
+  [PASS] k=2: outer-sink route stores old word
+  [PASS] k=2: inner sink is blank after outer-sink route
+  [PASS] k=3: arbitrary old sink has 2^k labels
+  [PASS] k=3: closed blanking range has one label
+  [PASS] k=3: closed blanking is not injective
+  [PASS] k=3: closed blanking loses k finite bits
+  [PASS] k=3: outer-sink blank-boundary domain has 2^k labels
+  [PASS] k=3: outer-sink route preserves support
+  [PASS] k=3: outer-sink route stores old word
+  [PASS] k=3: inner sink is blank after outer-sink route
+  [PASS] k=4: arbitrary old sink has 2^k labels
+  [PASS] k=4: closed blanking range has one label
+  [PASS] k=4: closed blanking is not injective
+  [PASS] k=4: closed blanking loses k finite bits
+  [PASS] k=4: outer-sink blank-boundary domain has 2^k labels
+  [PASS] k=4: outer-sink route preserves support
+  [PASS] k=4: outer-sink route stores old word
+  [PASS] k=4: inner sink is blank after outer-sink route
+  [PASS] k=5: arbitrary old sink has 2^k labels
+  [PASS] k=5: closed blanking range has one label
+  [PASS] k=5: closed blanking is not injective
+  [PASS] k=5: closed blanking loses k finite bits
+  [PASS] k=5: outer-sink blank-boundary domain has 2^k labels
+  [PASS] k=5: outer-sink route preserves support
+  [PASS] k=5: outer-sink route stores old word
+  [PASS] k=5: inner sink is blank after outer-sink route
+
+------------------------------------------------------------------------------
+2. Repeated clean resets require growing exported capacity
+------------------------------------------------------------------------------
+  [PASS] cycles=1: exported support size is 2^(k*m) (8)
+  [PASS] cycles=1: exported capacity is k*m bits (3.0)
+  [PASS] cycles=2: exported support size is 2^(k*m) (64)
+  [PASS] cycles=2: exported capacity is k*m bits (6.0)
+  [PASS] cycles=3: exported support size is 2^(k*m) (512)
+  [PASS] cycles=3: exported capacity is k*m bits (9.0)
+  [PASS] cycles=4: exported support size is 2^(k*m) (4096)
+  [PASS] cycles=4: exported capacity is k*m bits (12.0)
+  [PASS] cycles=5: exported support size is 2^(k*m) (32768)
+  [PASS] cycles=5: exported capacity is k*m bits (15.0)
+  [PASS] B=0: max arbitrary cycles floor(B/k) (0)
+  [PASS] B=0: next cycle exceeds fixed capacity (need 3)
+  [PASS] B=3: max arbitrary cycles floor(B/k) (1)
+  [PASS] B=3: next cycle exceeds fixed capacity (need 6)
+  [PASS] B=6: max arbitrary cycles floor(B/k) (2)
+  [PASS] B=6: next cycle exceeds fixed capacity (need 9)
+  [PASS] B=9: max arbitrary cycles floor(B/k) (3)
+  [PASS] B=9: next cycle exceeds fixed capacity (need 12)
+
+------------------------------------------------------------------------------
+3. k=3 reset-stack witness
+------------------------------------------------------------------------------
+  [PASS] k=3 closed preparation collapses eight labels
+  [PASS] k=3 outer sink restores eight output labels
+  [PASS] k=3 old sink word 101 moves outward
+  [PASS] k=3 fixed 9-bit environment supports three cycles, not four
+
+------------------------------------------------------------------------------
+4. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_BLANK_SINK_PREPARATION_REGRESS_NO_GO_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: no-go
+  [PASS] note contains marker: trace_class: negative_route_pruning
+  [PASS] note contains marker: closed finite blank-sink preparation
+  [PASS] note contains marker: Does not derive a low-record boundary
+  [PASS] note contains marker: Does not say open-system erasure is impossible.
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: boundary closure
+  [PASS] forbidden wording absent: sink closure
+  [PASS] forbidden wording absent: cost closure
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=75 FAIL=0
+
+----- stderr -----
+

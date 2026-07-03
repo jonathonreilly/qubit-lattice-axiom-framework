@@ -1,58 +1,69 @@
 # /frontier — Frontier Map & Gap Analysis
 
-You are the Research Strategist mapping explored vs. unexplored territory for this discrete event-network toy physics project.
+You are the Research Strategist mapping explored vs. unexplored territory for
+the qubit-lattice axiom framework.
 
 ## Data Collection
 
-1. Scan ALL log files in `logs/`:
+1. Ledger statistics — counts by `effective_status` and `claim_type`:
    ```bash
-   ls -la logs/*.txt | wc -l
-   ls -la logs/*.txt | tail -20
+   python3 - <<'PY'
+   import json, collections
+   rows = json.load(open("docs/audit/data/audit_ledger.json"))["rows"]
+   eff = collections.Counter(r.get("effective_status") for r in rows.values())
+   ct  = collections.Counter(r.get("claim_type") for r in rows.values())
+   print("effective_status:", dict(eff))
+   print("claim_type:", dict(ct))
+   PY
    ```
-2. Scan ALL scripts in `scripts/`:
-   ```bash
-   ls scripts/*.py | wc -l
-   ```
-3. Read `README.md` for confirmed results and current frontier description.
-4. Read latest `AUTOPILOT_WORKLOG.md` entries (top 10).
-5. Read any existing frontier documents in `.claude/science/frontier/`.
+2. Audit-lane backlog: `docs/audit/AUDIT_QUEUE.md` depth and
+   `docs/audit/data/reaudit_candidates.json`.
+3. Lane surfaces: `docs/repo/LANE_REGISTRY.yaml`,
+   `docs/work_history/repo/LANE_STATUS_BOARD.md`,
+   `docs/repo/ACTIVE_REVIEW_QUEUE.md`.
+4. Loop state: `OPPORTUNITY_QUEUE.md`, `NO_GO_LEDGER.md`, and `HANDOFF.md`
+   files under `.claude/science/physics-loops/*/` and
+   `.claude/science/research-lanes/*/`.
+5. In-flight work: `gh pr list --state open` (science and physics-loop
+   branches), plus recent landings:
+   `git log --oneline --since="2 weeks ago" -- docs/ scripts/ | head -40`.
+6. `README.md` current package state.
 
 ## Analysis
 
-### 1. Mechanism Family Census
-- Group scripts by mechanism family (pocket_wrap, taper, threshold, wider, etc.)
-- For each family: how many scripts, how many log files, what parameter ranges covered.
-- Present as a table:
+### 1. Lane Census
+- Group active work by lane/domain. For each: retained-grade results,
+  bounded results with named admissions, open gates, standing no-gos.
+- Present as a table: | Lane | Retained | Bounded | Open gates | No-gos | Status |
 
-| Family | Scripts | Logs | Parameter Range | Status |
-|--------|---------|------|-----------------|--------|
-| pocket_wrap | N | N | ... | ACTIVE/EXHAUSTED/PARTIAL |
+### 2. Blocker Fanout (the keystone view)
+- Which open gates, unaudited rows, and `audited_conditional` blockers sit
+  upstream of the most downstream work? Use the ledger `deps` graph (and
+  load-bearing/descendant fields where present) to rank blockers by how much
+  they unblock. Closing a high-fanout root beats closing a leaf.
 
-### 2. Parameter Space Map
-- What parameters have been swept?
-- What ranges have been covered?
-- Where are there GAPS (parameter regions with zero or few data points)?
-- Present gaps ranked by expected information value.
-
-### 3. Observable Coverage
-- What observables have been measured?
-- Which observables have been measured across MULTIPLE families?
-- Which observables exist in code but have NOT been measured yet?
+### 3. Premise Coverage
+- Which Tier-A admissions and named imports are still load-bearing, and
+  which lanes are queued to retire them?
+- Which named derivation lanes (dynamics, Born weights, readout bridges,
+  species identification, ...) have no active work at all?
 
 ### 4. Confirmed vs. Unvalidated
-- Results that have been through `/validate`: list them.
-- Results that are "observed but not validated": list them.
-- Results that were refuted: list them.
+- Landed-and-audited (retained-grade) vs. landed-but-unaudited vs.
+  branch-local working results. Only the ledger separates these — list each
+  bucket explicitly.
 
 ### 5. Dead Ends
-- Parameter regions or mechanism families that have been exhausted.
-- Mark clearly: "do not re-explore unless new theory motivates it."
+- Standing no-go notes and `NO_GO_LEDGER.md` routes. Mark clearly: "do not
+  re-attack without a new named premise" — and name what kind of premise
+  would qualify, since retired walls do get retired by reframes.
 
 ### 6. Highest-Value Gaps
-Rank the top 5 unexplored or under-explored areas by:
-- Expected information gain (high if it could confirm or refute a pending hypothesis)
-- Feasibility (can it be tested with existing scripts or does it need new code?)
-- Estimated effort (interactive / autopilot / multi-day)
+Rank the top 5 unexplored or under-explored targets by:
+- expected claim-state movement (could it retire an import, close a gate,
+  unblock a high-fanout chain, or prove a useful no-go?);
+- feasibility with existing runners vs. new code;
+- estimated effort (interactive / unattended block / multi-day campaign).
 
 ## Output
 
@@ -62,34 +73,47 @@ Write to `.claude/science/frontier/{date}-frontier-map.md`:
 # Frontier Map: {date}
 
 ## Coverage Summary
-- Total scripts: N
-- Total log files: N
-- Mechanism families: N
-- Confirmed results: N
-- Unvalidated observations: N
-- Dead ends: N
+{ledger counts, queue depth, open PRs, active loops}
 
-## Family Census
+## Lane Census
 {table}
 
-## Parameter Space Gaps
-{ranked list}
+## Blocker Fanout
+{ranked blockers with what each unblocks}
 
-## Observable Coverage
-{table}
+## Premise Coverage
+{load-bearing admissions/imports and their retirement lanes}
 
 ## Top 5 Highest-Value Gaps
-1. {gap} — {why it matters} — {effort level}
-2. ...
+1. {gap} — {why it matters} — {effort}
+...
 
-## Dead Ends (do not revisit)
-- {family/region} — {why it's exhausted}
+## Dead Ends (do not revisit without a new named premise)
+- {route} — {wall} — {what kind of premise would reopen it}
 ```
 
 ## Rules
 
 - No lock needed — read-only analysis.
-- Do not fabricate data. If a family has no logs, say "0 logs."
-- Distinguish between "unexplored" (never tested) and "exhausted" (tested, nothing there).
-- The ranking of gaps by information value is the most important output. Spend the most thought here.
-- This skill pairs naturally with `/progress` — run them together for a full research status.
+- Do not fabricate coverage. If a lane has no artifacts, say so.
+- Distinguish "unexplored" (never attacked) from "exhausted" (attacked,
+  walled, no-go on record).
+- The gap ranking is the most important output — spend the most thought
+  there. This skill pairs naturally with `/progress`.
+- Mapping only: this skill proposes targets, it does not move claim states.
+  Execution belongs to `/physics-loop` or an interactive science session.
+
+## Execution Mechanism (standing — 2026-06-12)
+
+All execution under this command runs through the workhorse split (see the
+`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
+line-by-line, and lands; the strongest configured text worker via `codex exec`
+executes bounded note/runner drafting, scratch computation, structured
+extraction, and panel lens execution (lenses run `-s read-only`; verdict
+synthesis is never delegated).
+No-go planning discipline applies: read the actual no-go note's primary text
+and plan against its exact audited scope, never its title or a secondary
+summary; if work reveals no-go language broader than its audited
+`claim_scope`, queue a narrowing repair PR. Where this command references
+review-loop or audit steps, those lanes are owner-operated (standing rule
+2026-06-11): prepare the PR/review surface and hand off; never run them.

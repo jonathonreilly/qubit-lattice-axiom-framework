@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Discrete Shapiro delay: five-family portability probe.
 
-This extends the retained three-family Shapiro-family portability card onto the
-two additional structured families already retained for the sign-law package.
+This extends the three-family Shapiro-family portability card onto two
+additional structured sign-law family samples.
 
 The question is deliberately narrow:
 
@@ -16,6 +16,11 @@ The claim surface stays small:
 """
 
 from __future__ import annotations
+
+# Heavy compute runner. The five-family packet runs eight grown samples and
+# several detector-line propagations per sample, so the default 120 s cache
+# ceiling is too tight on this machine.
+AUDIT_TIMEOUT_SEC = 300
 
 import argparse
 import math
@@ -68,7 +73,8 @@ class SampleSpec:
 class FamilySummary:
     label: str
     sample_desc: str
-    zero_max: float
+    zero_control_max: float
+    source_off_gap_max: float
     seed_phases: dict[int, dict[float, float]]
     phases: dict[float, tuple[float, float]]
 
@@ -123,43 +129,47 @@ def _grow_sample(spec: SampleSpec):
     return built.positions, built.adj, nmap
 
 
-def _measure_sample(spec: SampleSpec) -> tuple[float, dict[float, float]]:
+def _detector_phase(ref: list[complex], other: list[complex], detector_start: int) -> float:
+    ref_det = ref[detector_start:]
+    other_det = other[detector_start:]
+    n_ref = math.sqrt(sum(abs(a) ** 2 for a in ref_det))
+    n_other = math.sqrt(sum(abs(a) ** 2 for a in other_det))
+    if n_ref <= 0.0 or n_other <= 0.0:
+        return 0.0
+    overlap = sum(
+        a.conjugate() / n_ref * b / n_other for a, b in zip(ref_det, other_det)
+    )
+    return math.atan2(overlap.imag, overlap.real)
+
+
+def _measure_sample(spec: SampleSpec) -> tuple[float, float, dict[float, float]]:
     pos, adj, nmap = _grow_sample(spec)
     hw = int(PW / H)
     npl = (2 * hw + 1) ** 2
     ds = len(pos) - npl
 
     psi_inst = _prop_field(pos, adj, nmap, S, MASS_Z, K, c_field=None)
-    det_inst = psi_inst[ds:]
-    n_inst = math.sqrt(sum(abs(a) ** 2 for a in det_inst))
 
     phases: dict[float, float] = {}
     for c in C_VALUES:
         psi_c = _prop_field(pos, adj, nmap, S, MASS_Z, K, c_field=c)
-        det_c = psi_c[ds:]
-        n_c = math.sqrt(sum(abs(a) ** 2 for a in det_c))
-        if n_inst > 0.0 and n_c > 0.0:
-            overlap = sum(
-                a.conjugate() / n_inst * b / n_c for a, b in zip(det_inst, det_c)
-            )
-            phase = math.atan2(overlap.imag, overlap.real)
-        else:
-            phase = 0.0
-        phases[c] = phase
+        phases[c] = _detector_phase(psi_inst, psi_c, ds)
 
-    # Compute actual zero-field control: propagate with s=0
-    psi_zero = _prop_field(pos, adj, nmap, 0.0, MASS_Z, K, c_field=None)
-    det_zero = psi_zero[ds:]
-    n_zero = math.sqrt(sum(abs(a) ** 2 for a in det_zero))
-    if n_inst > 0.0 and n_zero > 0.0:
-        overlap_zero = sum(
-            a.conjugate() / n_inst * b / n_zero for a, b in zip(det_inst, det_zero)
-        )
-        zero_phase = abs(math.atan2(overlap_zero.imag, overlap_zero.real))
-    else:
-        zero_phase = 0.0
+    # Correct zero-source control: compare instantaneous and finite-c fields at
+    # the same source strength s=0. Because the source amplitude is zero, the
+    # finite-c reach rule multiplies a zero field and must match the
+    # instantaneous zero-source propagation. One representative c run is enough
+    # for the executable gate; the expression is independent of c when s=0.
+    psi_zero_inst = _prop_field(pos, adj, nmap, 0.0, MASS_Z, K, c_field=None)
+    psi_zero_c = _prop_field(pos, adj, nmap, 0.0, MASS_Z, K, c_field=C_VALUES[0])
+    zero_control_phase = abs(_detector_phase(psi_zero_inst, psi_zero_c, ds))
 
-    return zero_phase, phases
+    # Diagnostic only: this is the old mislabeled number, comparing source-off
+    # propagation against source-on instantaneous propagation. It is expected
+    # to be nonzero and is not a zero-control gate.
+    source_off_gap = abs(_detector_phase(psi_inst, psi_zero_inst, ds))
+
+    return zero_control_phase, source_off_gap, phases
 
 
 def _family_table() -> list[FamilySummary]:
@@ -173,12 +183,14 @@ def _family_table() -> list[FamilySummary]:
     summaries: list[FamilySummary] = []
 
     for label, specs in grouped.items():
-        zero_max = 0.0
+        zero_control_max = 0.0
+        source_off_gap_max = 0.0
         seed_phases: dict[int, dict[float, float]] = {}
         phase_rows: dict[float, list[float]] = {c: [] for c in C_VALUES}
         for spec in specs:
-            zero_phase, phases = _measure_sample(spec)
-            zero_max = max(zero_max, abs(zero_phase))
+            zero_phase, source_off_gap, phases = _measure_sample(spec)
+            zero_control_max = max(zero_control_max, abs(zero_phase))
+            source_off_gap_max = max(source_off_gap_max, abs(source_off_gap))
             seed_phases[spec.seed] = dict(phases)
             for c, phase in phases.items():
                 phase_rows[c].append(phase)
@@ -199,7 +211,8 @@ def _family_table() -> list[FamilySummary]:
             FamilySummary(
                 label=label,
                 sample_desc=sample_desc,
-                zero_max=zero_max,
+                zero_control_max=zero_control_max,
+                source_off_gap_max=source_off_gap_max,
                 seed_phases=seed_phases,
                 phases={
                     c: (sum(vals) / len(vals), max(vals) - min(vals))
@@ -212,22 +225,56 @@ def _family_table() -> list[FamilySummary]:
 
 def _render_report() -> str:
     summaries = _family_table()
+    max_spread = 0.0
+    min_phase = math.inf
+    monotone_ok = True
+    phase_by_c: dict[float, list[float]] = {}
+    for c in C_VALUES:
+        values = [summary.phases[c][0] for summary in summaries]
+        phase_by_c[c] = values
+        max_spread = max(max_spread, max(values) - min(values))
+        min_phase = min(min_phase, min(values))
+    for summary in summaries:
+        ordered = [summary.phases[c][0] for c in C_VALUES]
+        # C_VALUES is descending, so phase should not increase as c increases;
+        # equivalently it should grow along the listed sequence.
+        monotone_ok = monotone_ok and all(
+            later >= earlier - 1e-5 for earlier, later in zip(ordered, ordered[1:])
+        )
+    zero_ok = all(summary.zero_control_max < 1e-12 for summary in summaries)
+    source_off_gap_ok = all(summary.source_off_gap_max > 0.05 for summary in summaries)
+    spread_ok = max_spread < 0.003
+    phase_ok = min_phase > 0.0 and monotone_ok
+    assertions_ok = zero_ok and source_off_gap_ok and spread_ok and phase_ok
+
     lines: list[str] = []
     lines.append("=" * 88)
     lines.append("DISCRETE SHAPIRO DELAY: FIVE-FAMILY PORTABILITY")
     lines.append(f"NL={NL}, W={PW}, s={S}, z_src={MASS_Z}")
     lines.append(
-        "Families: 5 (three-family core plus quadrant and radial sign-law families), "
+        "Families: 5 (three-family core plus quadrant and radial sign-law samples), "
         f"c values: {C_VALUES}"
     )
     lines.append("=" * 88)
     lines.append("")
-    lines.append("ZERO CONTROL")
+    lines.append("ZERO-SOURCE C-CONTROL")
     for summary in summaries:
         lines.append(
-            f"  {summary.label}: zero lag = {summary.zero_max:+.3e} (exact by construction)"
+            f"  {summary.label}: max phase(inst s=0, finite-c s=0) = "
+            f"{summary.zero_control_max:+.3e}"
         )
     lines.append("  -> exact zero control survives on all five families")
+    lines.append("")
+    lines.append("SOURCE-OFF DIAGNOSTIC (not a zero control)")
+    for summary in summaries:
+        lines.append(
+            f"  {summary.label}: phase(source-on inst, source-off inst) = "
+            f"{summary.source_off_gap_max:+.3e}"
+        )
+    lines.append(
+        "  -> these nonzero source-off gaps were the old mislabeled values; "
+        "they are not used as zero-control evidence"
+    )
     lines.append("")
     lines.append("CROSS-FAMILY PHASE TABLE")
     lines.append(
@@ -237,7 +284,7 @@ def _render_report() -> str:
     lines.append("-" * 94)
     lines.append(f"{'inst':>7s} {0.0:+14.4f} {0.0:+14.4f} {0.0:+14.4f} {0.0:+14.4f} {0.0:+14.4f} {0.0:12.4f}")
     for c in C_VALUES:
-        values = [summary.phases[c][0] for summary in summaries]
+        values = phase_by_c[c]
         max_diff = max(values) - min(values)
         lines.append(
             f"{c:7.2f} "
@@ -262,13 +309,26 @@ def _render_report() -> str:
     lines.append("NARROW CONCLUSION")
     lines.append(
         "  The Shapiro-style phase lag extends beyond the three-family core onto the additional "
-        "retained quadrant and radial families on the sampled rows."
+        "quadrant and radial samples on the tested rows."
     )
     lines.append(
-        "  The phase observable remains portable, exact zero control survives, and the extra "
-        "families stay within a few milliradians of the core curve."
+        "  The phase observable remains portable, the corrected zero-source control "
+        "survives, and the extra families stay within a few milliradians of the core curve."
     )
     lines.append("  The claim remains proxy-level and row-sampled, not a family-wide theorem.")
+    lines.append("")
+    lines.append("ASSERTION GATES")
+    lines.append(f"  zero-source c-control < 1e-12: {'PASS' if zero_ok else 'FAIL'}")
+    lines.append(
+        f"  source-off diagnostic remains nonzero (>0.05 rad): "
+        f"{'PASS' if source_off_gap_ok else 'FAIL'}"
+    )
+    lines.append(f"  cross-family max spread < 0.003 rad: {'PASS' if spread_ok else 'FAIL'}")
+    lines.append(
+        f"  all finite-c phases positive and monotone with slower c: "
+        f"{'PASS' if phase_ok else 'FAIL'}"
+    )
+    lines.append(f"ASSERTIONS: {'PASS' if assertions_ok else 'FAIL'}")
     return "\n".join(lines)
 
 
@@ -285,7 +345,7 @@ def main() -> int:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(rendered + "\n", encoding="utf-8")
 
-    return 0
+    return 0 if "ASSERTIONS: PASS" in rendered else 1
 
 
 if __name__ == "__main__":

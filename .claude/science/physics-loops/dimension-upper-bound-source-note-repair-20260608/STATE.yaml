@@ -1,0 +1,20 @@
+loop: dimension-upper-bound-source-note-repair-20260608
+branch: physics-loop/dimension-upper-bound-source-note-repair-20260608
+base: origin/main@d78d9dfed
+mode: run
+target_status: best-honest-status
+cycle: 1
+active_route: canonical source note plus paired runner for dimension upper-bound dependency edge
+files_touched:
+  - docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md
+  - scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py
+  - logs/runner-cache/dimension_upper_bound_dependency_edge_repair_2026_06_08.txt
+  - docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md
+open_imports:
+  - full Bertrand theorem is not framework-derived here
+  - full atomic-stability theorem and framework-native EM sector are not derived here
+trace_gate_classification: direct_blocker_closure
+review_findings: "PR #3157 feedback required a canonical source theorem/no-go/open-gate note plus paired runner."
+pr_status: pending
+next_exact_action: commit, push, and open review PR
+stop_condition: review PR opened

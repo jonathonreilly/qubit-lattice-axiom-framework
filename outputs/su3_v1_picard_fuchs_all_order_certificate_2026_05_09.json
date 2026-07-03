@@ -1,6 +1,6 @@
 {
   "candidate_ode": "L = 6 beta^2 J''' + (60 beta - beta^2) J'' + (-4 beta^2 - 2 beta + 120) J' - (beta^2 + 10 beta) J",
-  "claim": "L . J(beta) = 0 IDENTICALLY in Q[[beta]] (all-order)",
+  "claim": "Finite-window boundary packet for the V=1 Picard-Fuchs ODE; all-degree minimal-annihilator closure is not certified by this runner",
   "taylor_order": 200,
   "certificate_T1_dfiniteness_witness": {
     "name": "D-finiteness witness via D_0 explicit holonomic-closure ODE",
@@ -14,7 +14,7 @@
         "B0 B2^2": 6
       },
       "D0_holonomic_annihilator_order": 20,
-      "construction_elapsed_sec": 61.62,
+      "construction_elapsed_sec": 26.07,
       "safe_residual_degree_window": 58,
       "holonomic_annihilator_kills_closed_form_to_safe_degree": true
     }
@@ -22,10 +22,11 @@
   "certificate_T2_algorithmic_rank_bound": {
     "name": "Effective annihilator-order bound via Koutschan-style guess",
     "pass": true,
-    "message": "Algorithmic rank bound: ALL (r in {1,2}, d in {0..30}) excluded (62 cells, kernel=0); (r=3,d=2) kernel=1 matches L. Order(minAnn(J)) = 3, deg(minAnn(J)) = 2.",
+    "message": "Finite-grid rank support: ALL (r in {1,2}, d in {0..30}) excluded (62 cells, kernel=0); (r=3,d=2) kernel=1 matches L. This supports the order-3 degree-2 candidate inside the scanned grid, but does not certify all-degree minimality.",
     "details": {
       "r_max_excluded": 2,
       "d_max_excluded": 30,
+      "all_degree_minimality_certified": false,
       "cells_checked_r_le_2": 62,
       "cells_failed": 0,
       "kernel_dim_at_(r=3,d=2)": 1,
@@ -36,7 +37,7 @@
   "certificate_T3_bostan_schost_threshold": {
     "name": "Bostan-Salvy-Schost depth-sufficiency principle",
     "pass": true,
-    "message": "Bostan-Salvy-Schost threshold M_0 = 17 is exceeded by the verified depth 196 (margin = 179). L . J = 0 holds identically as a power-series identity in Q[[beta]].",
+    "message": "Conditional Bostan-Salvy-Schost threshold M_0 = 17 is exceeded by the verified depth 196 (margin = 179) IF an external all-degree R=3, D=2 minimal-annihilator bound is supplied. This runner does not certify that external premise.",
     "details": {
       "Bostan_Schost_threshold_M_0": 17,
       "verified_zero_through_degree": 196,
@@ -44,6 +45,8 @@
       "D_bound": 2,
       "candidate_order_r": 3,
       "candidate_degree_d": 2,
+      "conditional_on_external_all_degree_R_D_bound": true,
+      "all_order_identity_certified_by_this_runner": false,
       "margin_above_threshold": 179
     }
   },
@@ -80,7 +83,9 @@
   "summary": {
     "pass": 5,
     "fail": 0,
-    "all_order_certificate_passed": true,
+    "finite_window_boundary_passed": true,
+    "all_order_certificate_passed": false,
+    "all_degree_minimality_certified": false,
     "audit_status_authority": "independent audit lane only"
   }
 }

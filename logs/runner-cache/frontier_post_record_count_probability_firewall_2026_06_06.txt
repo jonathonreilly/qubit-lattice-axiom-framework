@@ -1,0 +1,89 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_count_probability_firewall_2026_06_06.py
+runner_sha256: efc8c18f4003f9f171b5463b73cb1544ab981480726e9a76a4c3ddd136e4ab60
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md exists
+PASS docs/POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md contains: actual_current_surface_status: no-go
+PASS docs/POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md contains: trace_class: negative_route_pruning
+PASS docs/POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md contains: post-record counts
+PASS docs/POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md contains: They cannot derive the model.
+PASS docs/POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md contains: Does not select a generation or Koide dial location.
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md exists
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: probability vector
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: a selector for which atom will be produced next
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: realized counts stay integral while ensemble expectations can be fractional
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md exists
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md contains: not a probability vector
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md contains: predictive expectation
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md contains: belongs to the pre-record or ensemble layer
+PASS docs/RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md exists
+PASS docs/RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md contains: Probability belongs to the first two arrows
+PASS docs/RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md contains: Post-record dynamics acts on realized tokens/counts
+PASS docs/RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md contains: A probability is a separate
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md exists
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: Record history/count support is therefore an exact **consumer**
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: not a producer of atoms
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: probability laws, Born typicality, and transition rates
+PASS docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md exists
+PASS docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md contains: pre-record tracial
+PASS docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md contains: p(E) = Tr(rho E)
+PASS docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md contains: This row does not claim durable/native persistent-record formation
+PASS docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md exists
+PASS docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md contains: m(E) = Tr
+PASS docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md contains: identify the pre-record
+PASS docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md contains: Not a closure of the Born derivation row
+
+------------------------------------------------------------------------------
+Count/probability non-uniqueness
+------------------------------------------------------------------------------
+PASS finite realized history has integer counts :: (3, 1)
+PASS empirical frequency is normalized :: (Fraction(3, 4), Fraction(1, 4))
+PASS empirical frequency is a statistic, not an integer count
+PASS multiple distinct iid laws assign positive likelihood to same word :: {'mle': 0.10546875, 'alternative_a': 0.08639999999999999, 'alternative_b': 0.07290000000000002}
+PASS compatible laws give different next-zero predictions
+PASS count-alone unique predictive law flag is false
+PASS iid MLE is higher than one alternative after iid model is admitted
+PASS iid model is not supplied by post-record counts alone
+PASS different histories can have same counts
+PASS same counts can have different next prediction under admitted Markov law
+PASS counts have forgotten order needed by that Markov law
+
+------------------------------------------------------------------------------
+Born/pre-record interface separation
+------------------------------------------------------------------------------
+PASS Born weights from rho_a are normalized :: (0.2, 0.8)
+PASS Born weights from rho_b are normalized :: (0.8, 0.2)
+PASS same realized counts can be paired with different pre-record states
+PASS realized count update is integral :: (4, 1)
+PASS ensemble expectation is generally fractional :: (3.2, 1.8)
+PASS ensemble expectation differs from realized branch update
+PASS count-alone Born derivation flag is false
+PASS count-alone rho selection flag is false
+PASS count-alone effect/instrument selection flag is false
+PASS count-alone rate selection flag is false
+PASS count-alone generation/Koide dial selection flag is false
+
+------------------------------------------------------------------------------
+What counts can still do
+------------------------------------------------------------------------------
+PASS counts can score a supplied iid model
+PASS different supplied models receive different scores
+PASS model scoring explicitly uses repeated-trial/statistical assumptions
+PASS model scoring is not model derivation
+
+SUMMARY: PASS=56 FAIL=0
+POST_RECORD_COUNTS_DERIVE_PROBABILITY_LAW=FALSE
+POST_RECORD_COUNTS_CAN_AUDIT_SUPPLIED_MODEL=TRUE
+BORN_REQUIRES_PRE_RECORD_OR_INSTRUMENT_BRIDGE=TRUE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

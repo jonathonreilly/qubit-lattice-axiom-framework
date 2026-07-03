@@ -169,8 +169,9 @@ The April 21 APS stack proves the exact ambient topological number
 > primitive with a based/unit-preserving endpoint readout, rather than an
 > unbased rank-one selected-line coordinate.
 
-This is the same residual postulate sharpened in
-`docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md` and
+The repaired `docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`
+is formal-only Q-Delta arithmetic. The physical Brannen-phase bridge remains
+open and is sharpened in
 `docs/KOIDE_P_ONE_CLOCK_3PLUS1_TRANSPORT_REDUCTION_NOTE_2026-04-20.md`.
 
 ---

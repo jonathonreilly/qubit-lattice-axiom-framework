@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_dynamics_audit_gate_ladder_2026_06_05.py
+runner_sha256: 97a1a94534cea37b583875508c3688d5d95349e60caa50ffc22a6491a21f910f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.06
+status: ok
+----- stdout -----
+==============================================================================
+RECORD DYNAMICS AUDIT GATE LADDER
+bounded-support / classifier runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Gate vocabulary and coverage
+------------------------------------------------------------------------------
+  [PASS] gate vocabulary has eight entries
+  [PASS] all artifact gates are recognized
+  [PASS] current stack supplies reset_resource
+  [PASS] current stack supplies open_reset_channel
+  [PASS] current stack supplies epsilon_reset
+  [PASS] current stack does not supply clock_rate
+  [PASS] produced_record remains lane-specific
+  [PASS] six artifacts are classified
+
+------------------------------------------------------------------------------
+2. Claim requirement classification
+------------------------------------------------------------------------------
+  [PASS] probability_over_possible_records: has required-gate declaration
+  [PASS] probability_over_possible_records: expected classification (support_available)
+  [PASS] post_record_history: has required-gate declaration
+  [PASS] post_record_history: expected classification (conditional_on_produced_record)
+  [PASS] local_objective_record: has required-gate declaration
+  [PASS] local_objective_record: expected classification (support_available_when_broadcast)
+  [PASS] reusable_clean_production: has required-gate declaration
+  [PASS] reusable_clean_production: expected classification (bounded_support_cost_rate_open)
+  [PASS] epsilon_reset: has required-gate declaration
+  [PASS] epsilon_reset: expected classification (bounded_support_exact_endpoint_open)
+  [PASS] physical_rate: has required-gate declaration
+  [PASS] physical_rate: expected classification (open)
+
+------------------------------------------------------------------------------
+3. Overclaim pruning rules
+------------------------------------------------------------------------------
+  [PASS] kernel implies produced record
+  [PASS] local observability implies reset
+  [PASS] open reset implies clock
+  [PASS] epsilon reset implies exact
+  [PASS] step count implies rate
+  [PASS] gate ladder fixes dial
+
+------------------------------------------------------------------------------
+4. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_DYNAMICS_AUDIT_GATE_LADDER_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: bounded-support
+  [PASS] note contains marker: trace_class: upstream_support
+  [PASS] note contains marker: branch-local dynamics gate classifier
+  [PASS] note contains marker: Does not update repo-wide authority surfaces
+  [PASS] note contains marker: `clock_rate` gate is absent
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: audit verdict
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: cost closure
+  [PASS] forbidden wording absent: record production closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: authority edit
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=39 FAIL=0
+
+----- stderr -----
+

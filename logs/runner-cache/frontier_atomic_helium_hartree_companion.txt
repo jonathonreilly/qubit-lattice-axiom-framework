@@ -1,0 +1,171 @@
+===== runner cache v1 =====
+runner: scripts/frontier_atomic_helium_hartree_companion.py
+runner_sha256: 93bb64914080180a3c993889d22524a112191ce5cae95ba6ff6aa4ac995b0771
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.13
+status: ok
+----- stdout -----
+========================================================================
+HELIUM HARTREE COMPANION ON THE Cl(3)/Z³ SURFACE
+Product-state upper bound on the retained lattice two-electron Hamiltonian
+========================================================================
+
+Derivation chain:
+  Cl(3)/Z³  →  H₂ = (-Δ₁) + (-Δ₂) + V_nuc(r₁) + V_nuc(r₂) + V_ee(r₁,r₂)
+  V_nuc = -Z×g_EM/|r|,  V_ee = +g_EM/|r₁-r₂|  [same Z³ Green's function]
+  Coupling ratio: g_ee/g_nuc = 1/Z = 1/2  [exact, charge arithmetic]
+  Variational ansatz: ψ(r₁,r₂) = φ(r₁)×φ(r₂)  [separable, not assumed]
+  Stationarity → Hartree equation  [DERIVED, not imported]
+  E_var = 2ε - E_pair  [DERIVED from product ansatz]
+
+  Computational parameters:
+    N = 30  (27000 sites),  g_EM = 0.5,  g_nuc = 1.0
+    He⁺ Bohr radius = 2/g_nuc = 2.0 lattice units
+    All ratios are g-independent; absolute energies are g-relative.
+
+────────────────────────────────────────────────────────────
+STEP 1: He²⁺ — bare nucleus (trivial reference)
+────────────────────────────────────────────────────────────
+
+  E(He²⁺) = 0 by definition (no electrons, only nucleus).
+
+────────────────────────────────────────────────────────────
+STEP 2: He⁺ — one electron, Z=2
+────────────────────────────────────────────────────────────
+
+  E₁(He⁺) lattice:   -0.236922  [lattice spectral units]
+  E₁(He⁺) continuum: -0.250000  [= -g_nuc²/4]
+  Lattice error: +5.231%
+  Compute timing: omitted from audit cache for deterministic replay.
+
+  Note: E₁(He⁺) = -g_nuc²/4 = -Z² × (g_EM²/4) = -Z² × E₀(H)
+  → He⁺ binds Z² times more than H. This is the scaling prediction.
+
+────────────────────────────────────────────────────────────
+STEP 3: He — two electrons, variational bound
+────────────────────────────────────────────────────────────
+
+  Minimizing E[φ] = ⟨φ⊗φ | H₂ | φ⊗φ⟩ over separable φ.
+  Building Laplacian (30³ = 27000 sites) ...
+    iter   1: ε=-0.16490  E_pair=0.07005  E_var=-0.39986  Δρ=9.13e-03
+    iter   2: ε=-0.13359  E_pair=0.09906  E_var=-0.36624  Δρ=4.09e-03
+    iter   3: ε=-0.11983  E_pair=0.11159  E_var=-0.35125  Δρ=1.64e-03
+    iter   4: ε=-0.11369  E_pair=0.11721  E_var=-0.34459  Δρ=6.15e-04
+    iter   5: ε=-0.11089  E_pair=0.11980  E_var=-0.34159  Δρ=2.22e-04
+    iter  10: ε=-0.10850  E_pair=0.12208  E_var=-0.33908  Δρ=1.11e-06
+    Converged at iteration 11
+
+  Variational result:
+    SCF orbital energy: ε   = -0.108465
+    Coulomb pair integral: E_pair = 0.122112
+    Variational energy: E_var = 2ε - E_pair = -0.339041
+    Iterations: 11,  converged: True
+    Compute timing: omitted from audit cache for deterministic replay.
+
+────────────────────────────────────────────────────────────
+STEP 4: Coupling-independent predictions
+────────────────────────────────────────────────────────────
+
+  Natural energy unit: E₀ = g_EM²/4 = 0.06250  (lattice spectral units)
+
+  In units of E₀:
+    E(He²⁺) / E₀ = 0.0000  (= 0, trivial)
+    E(He⁺)  / E₀ = -3.7908  (continuum: -Z² = -4.0)
+    E(He)   / E₀ = -5.4247  (variational bound)
+
+  Dimensionless ratios (pure Z³-geometry predictions):
+    |E(He)| / |E(He⁺)|  = 1.43102
+    Hartree checkpoint:   ~1.424
+    Historical (full CI):   1.452  (upper checkpoint)
+
+    IE₁ / IE₂ = 0.43102
+    Historical (Hartree):  ~0.424
+
+────────────────────────────────────────────────────────────
+STEP 5: Variational energy decomposition
+────────────────────────────────────────────────────────────
+
+  From the product-state ansatz (DERIVED, not assumed):
+    ρ = |φ|² is a one-electron density with Σρ = 1
+    E_pair = Σρ V_H[ρ] = Σρ(r)ρ(r') g_EM/max(|r-r'|, 0.5)
+    E_var = 2ε - E_pair
+
+    2ε  = -0.21693  [two orbital energies, each includes V_H]
+    E_pair = 0.12211   [one e-e pair integral; double-counting removed]
+    E_var = -0.33904
+
+  Normalization guard (small-grid direct certificate):
+    pair_norm_direct_ratio=1.000000
+    one_density_pair=0.254497562082
+    direct_pair=0.254497562082
+    quarter_total_density_form=0.254497562082
+    half_total_to_pair=2.000000  [total-density 1/2 form counts two pairs here]
+
+  Independent-electron limit (no e-e, same g_nuc):
+    E_indep = 2 × E₁(He⁺) = -0.47384
+    Repulsion cost: E_var - E_indep = +0.13480
+
+────────────────────────────────────────────────────────────
+STEP 6: SCF convergence history
+────────────────────────────────────────────────────────────
+
+   Iter           ε     E_pair       E_var         Δρ
+  ──────────────────────────────────────────────
+      1    -0.16490    0.07005    -0.39986  9.13e-03
+      2    -0.13359    0.09906    -0.36624  4.09e-03
+      3    -0.11983    0.11159    -0.35125  1.64e-03
+      4    -0.11369    0.11721    -0.34459  6.15e-04
+      5    -0.11089    0.11980    -0.34159  2.22e-04
+      6    -0.10960    0.12102    -0.34022  7.80e-05
+      7    -0.10899    0.12160    -0.33959  2.70e-05
+      8    -0.10870    0.12188    -0.33929  9.24e-06
+      9    -0.10857    0.12201    -0.33914  3.16e-06
+     10    -0.10850    0.12208    -0.33908  1.11e-06
+  ... (11 total iterations)
+     11    -0.10846    0.12211    -0.33904  4.23e-07
+
+========================================================================
+SUMMARY: HELIUM HARTREE COMPANION
+========================================================================
+
+  STRUCTURAL PREDICTIONS (coupling-independent):
+
+                Quantity    Lattice     Target     err%  Readout
+  ──────────────────────────────────────────────────────────────
+              E(He²⁺)/E₀     0.0000     0.0000      n/a  [id]   (trivial)
+               E(He⁺)/E₀    -3.7908    -4.0000    +5.23%  [cmp]  (= -Z²  [exact from H-like Z=2])
+                E(He)/E₀    -5.4247        n/a      n/a  [bound]  (variational bound)
+        |E(He)|/|E(He⁺)|     1.4310     1.4240    +0.49%  [cmp]  (Hartree target)
+                 IE₁/IE₂     0.4310     0.4240    +1.66%  [cmp]  (Hartree; lattice error amplified (small diff))
+
+  DERIVATION STATUS:
+  ✓ H₂ = H_1 + H_2 + V_ee follows from Z³ axioms (same Green's function)
+  ✓ Hartree equation derived as stationarity of E[φ] (variational math)
+  ✓ E_var = 2ε - E_pair derived from product-state ansatz
+  ✓ Coupling ratio g_ee/g_nuc = 1/Z follows from charge arithmetic
+  ✓ Helium is bound: E_var < E(He⁺)  (IE₁ > 0)
+
+  BLOCKED:
+  ✗ Absolute energy in eV still needs the electron-mass lane
+  ✗ Exchange-correlation goes beyond the product-state ansatz
+  ✗ Exact two-body solution remains N⁶ and is not attempted here
+
+  CHECKPOINTS:
+  |E(He)|/|E(He⁺)| = 1.4310  vs Hartree ~1.424  (full CI 1.452)
+  IE₁/IE₂           = 0.4310  vs Hartree ~0.424
+========================================================================
+
+AUDIT CHECK SUMMARY
+PASS: hartree_he2plus_identity -- E_he2plus=0.000000
+PASS: hartree_heplus_finite_box_row -- E_heplus_over_E0=-3.7908
+PASS: hartree_helium_bound_product_state -- E_he=-0.339041, E_heplus=-0.236922
+PASS: hartree_ratio_pin -- ratio=1.43102
+PASS: hartree_ie_ratio_pin -- ratio_IE1_IE2=0.43102
+PASS: hartree_scf_converged -- iterations=11
+PASS: hartree_pair_integral_direct_normalization -- pair_norm_direct_ratio=1.000000
+PASS: hartree_total_density_conversion_guard -- quarter_total=0.254497562082, half_total_to_pair=2.000000
+TOTAL: PASS=8, FAIL=0
+
+----- stderr -----
+

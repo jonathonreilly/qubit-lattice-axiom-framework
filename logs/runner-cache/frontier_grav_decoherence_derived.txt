@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_grav_decoherence_derived.py
-runner_sha256: c0bd1c975107b78430da1e13085a52d101df7aa9913c94a5d3c5a8edcda6ddbf
+runner_sha256: 2be5aef0ead1b35151dfec400f2f22f56530989db0cb51525ab376847c5bf153
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 6.26
+elapsed_sec: 7.15
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -13,12 +13,21 @@ GRAVITATIONAL DECOHERENCE RATE -- CONDITIONAL PENROSE-DIOSI/BMV COMPANION
 ==============================================================================
 SOURCE BOUNDARY CHECKS
 ==============================================================================
-  [PASS] source requires: **Claim type:** bounded support note: 
-  [PASS] source requires: **Type:** conditional / support: 
+  [PASS] source requires: **Claim type:** bounded_theorem: 
+  [PASS] source requires: **Type:** bounded companion / external-model arithmetic: 
+  [PASS] source requires: 2026-06-07 Companion-Boundary Retargeting: 
   [PASS] source requires: not a framework-only derivation: 
   [PASS] source requires: Penrose-Diosi/BMV model: 
   [PASS] source requires: external inputs for this companion surface: 
-  [PASS] source requires: Open Inputs That Remain Load-Bearing: 
+  [PASS] source requires: companion arithmetic: 
+  [PASS] source requires: not a load-bearing retained premise: 
+  [PASS] source requires: 2026-06-08 Dependency-Split Addendum: 
+  [PASS] source requires: Bounded source/readout support already available: 
+  [PASS] source requires: G_NEWTON_BORN_AS_SOURCE_POSITIVE_THEOREM_NOTE_2026-05-10_gnewtonG2.md: 
+  [PASS] source requires: CLOSURE_C_BB_CANONICAL_MASS_COUPLING_NOTE_2026-05-10_cBB.md: 
+  [PASS] source requires: G_NEWTON_WEAK_FIELD_RESPONSE_BOUNDED_CLOSURE_NOTE_2026-05-10_gnewtonG3.md: 
+  [PASS] source requires: remaining open bridges for this row: 
+  [PASS] source requires: Open Inputs Outside This Companion Boundary: 
   [PASS] source excludes old title overclaim: 
   [PASS] source excludes old single-axiom overclaim: 
   [PASS] source excludes old beta prediction overclaim: 
@@ -290,10 +299,10 @@ CONDITIONAL SUPPORT SUMMARY
     delta_gamma / gamma = (beta - 1) is kept here only as supplied
     companion phenomenology.
 
-PASS=16  FAIL=0  (of 16 checks)
-Runtime: 6.1s
+PASS=25  FAIL=0  (of 25 checks)
+Runtime: 7.1s
 
-Log written to logs/2026-06-05-grav_decoherence_derived.txt
+Log written to logs/2026-06-08-grav_decoherence_derived.txt
 
 ----- stderr -----
 

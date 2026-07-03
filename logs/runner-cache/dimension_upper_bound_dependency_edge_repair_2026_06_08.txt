@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py
+runner_sha256: 45cbf730cdc33de055bddbb9a3914dad1dd230fe578ce8fd66c7cca191f354c4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.06
+status: ok
+----- stdout -----
+Dimension upper-bound dependency-edge repair
+========================================================================
+PASS docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md exists
+PASS docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md exists
+PASS docs/DIMENSION_SELECTION_NOTE.md exists
+PASS docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md exists
+PASS docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md exists
+PASS docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md exists
+PASS scripts/bertrand_stable_orbit_green_kernel_bridge.py exists
+PASS scripts/frontier_coulomb_stability_scaling_repair.py exists
+PASS scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py exists
+PASS logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt exists
+PASS logs/runner-cache/frontier_coulomb_stability_scaling_repair.txt exists
+PASS logs/runner-cache/frontier_d3_upper_bound_import_scope_gate_2026_06_06.txt exists
+PASS repair note cites docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md
+PASS repair note cites docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md
+PASS repair note cites docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md
+PASS repair note cites docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md
+PASS repair note cites scripts/bertrand_stable_orbit_green_kernel_bridge.py
+PASS repair note cites scripts/frontier_coulomb_stability_scaling_repair.py
+PASS repair note cites scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py
+PASS repair note cites logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt
+PASS repair note cites logs/runner-cache/frontier_coulomb_stability_scaling_repair.txt
+PASS repair note cites logs/runner-cache/frontier_d3_upper_bound_import_scope_gate_2026_06_06.txt
+PASS wrapper cites docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md
+PASS wrapper cites docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md
+PASS wrapper cites docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md
+PASS wrapper cites docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md
+PASS repair note states source-only boundary
+PASS repair note is classified as meta dependency-edge certificate, not theorem queue
+PASS wrapper has 2026-06-08 repair section
+PASS wrapper records native stable-orbit import retirement
+PASS lower note remains finite lower-bound support
+PASS stable support keeps full closed-orbit boundary
+PASS Coulomb support remains bounded
+PASS D3 gate records finite composition
+PASS no status retag language in wrapper repair
+PASS lower support set is {3,4,5}
+PASS native stable upper set is d<=3
+PASS weak atomic upper set is d<=4
+PASS lower intersect native stable edge is {3}
+PASS lower intersect weak atomic is {3,4}
+PASS lower intersect strict atomic spectrum is {3}
+PASS native stable route is decisive under weak atomic scope
+PASS atomic route is compatible with selected d=3
+PASS logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt exists
+PASS logs/runner-cache/frontier_coulomb_stability_scaling_repair.txt exists
+PASS logs/runner-cache/frontier_d3_upper_bound_import_scope_gate_2026_06_06.txt exists
+PASS stable-orbit cache certifies PASS=8
+PASS Coulomb cache certifies PASS=53 FAIL=0
+PASS D3 gate cache certifies PASS=34 FAIL=0
+========================================================================
+AUDIT_VERDICT_APPLIED=FALSE
+SUMMARY: PASS=49 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py
+runner_sha256: 829ff335ed0dd026003c6c6f1f99fcd86150de74b576c1e9e89b81cea1ed1449
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
+
+=== Part 0: EXACT symbolic reconstruction on the qubit M_2 (d=2) ===
+[PASS] d2_exact: sigma_true is a valid state (Hermitian, Tr=1, eig>=0)  [eigs=[3/4, 1/4]]
+[PASS] d2_exact: m(I) = 1 (M2)
+[PASS] d2_exact: m(0) = 0 (M1)
+[PASS] d2_exact: reconstructed Bloch vector equals true (uniqueness)  [r_rec=[3/26, 2/13, 6/13]]
+[PASS] d2_exact: reconstructed sigma equals sigma_true (m(E)=Tr(sigma E))
+[PASS] d2_exact: E_test is an effect (Hermitian, spectrum in [0,1])  [spectrum=[1/4, 3/4]]
+[PASS] d2_exact: m(E_test) = Tr(sigma_rec . E_test)  [m(E_test)=161/325]
+[PASS] d2_exact: E1+E2 is an effect (E1+E2 <= I)
+[PASS] d2_exact: partial additivity m(E1+E2) = m(E1)+m(E2)  (step A)
+[PASS] d2_exact: complement law m(E)+m(I-E)=1 (two-outcome POVM)
+[PASS] d2_exact: homogeneity m(1/2 E) = 1/2 m(E)  (step B)
+[PASS] d2_exact: homogeneity m(1/3 E) = 1/3 m(E)  (step B)
+[PASS] d2_exact: homogeneity m(3/7 E) = 3/7 m(E)  (step B)
+[PASS] d2_exact: {F1,F2,F3} is a valid 3-outcome POVM (sum=I, F_i>=0)
+[PASS] d2_exact: POVM-additivity (M3): m(F1)+m(F2)+m(F3) = 1
+
+=== Part 1: numeric reconstruction on the qubit M_2 (d=2), random states ===
+[PASS] d2: reconstructed sigma == sigma_true over 400 random states  [max|sigma_rec - sigma_true| = 2.00e-16]
+[PASS] d2: reconstructed sigma is a valid state over 400 seeds  [min eig >= 0.00e+00, max|Tr-1| = 2.22e-16]
+[PASS] d2: m(E) = Tr(sigma_rec . E) on random effects over 400 seeds  [max|m(E) - Tr(sigma_rec E)| = 2.22e-16]
+
+=== Part 2: (M1),(M2),(M3) for the reconstructed measure on M_2 ===
+[PASS] d2: (M1) m(0) = 0 for reconstructed measure
+[PASS] d2: (M2) m(I) = 1 for reconstructed measure
+[PASS] d2: (M3) POVM-additivity sum_i m(E_i) = 1 over random POVMs (n=2,3,4)  [max|sum - 1| = 3.55e-15]
+[PASS] d2: m(E_i) in [0,1] for every POVM element (range)  [min=0.00e+00, max-1=0.00e+00]
+
+=== Part 3: step (A) partial additivity + complement law on M_2 ===
+[PASS] d2: partial additivity m(E1+E2)=m(E1)+m(E2) over 2000 admissible pairs  [max err = 1.11e-16]
+[PASS] d2: complement law m(E)+m(I-E)=1 over 2000 effects  [max err = 3.33e-16]
+
+=== Part 4: step (B) homogeneity m(t E) = t m(E) on M_2 ===
+[PASS] d2: homogeneity m(t E) = t m(E) for t in [0,1] over 1000 seeds  [max err = 2.22e-16]
+
+=== Part 5: step (E) m>=0 on projectors => sigma >= 0 on M_2 ===
+[PASS] d2: m(P_psi) = <psi|sigma|psi> >= 0 on every rank-1 projector  [min over seeds = 4.60e-02]
+[PASS] d2: reconstructed sigma >= 0 (forced by m>=0 on projectors)  [min eig over seeds = 4.27e-04]
+
+=== Part 6: same reconstruction on M_2 (x) M_2 (d=4, |Lambda|=2) ===
+[PASS] d4: reconstructed sigma == sigma_true over 200 random states  [max|sigma_rec - sigma_true| = 1.95e-16]
+[PASS] d4: reconstructed sigma is a valid state over 200 seeds
+[PASS] d4: m(E) = Tr(sigma_rec . E) on random effects over 200 seeds  [max err = 2.22e-16]
+[PASS] d4: (M3) POVM-additivity sum_i m(E_i) = 1 over random POVMs  [max|sum - 1| = 2.00e-15]
+
+=== Part 7: Riesz/Hilbert-Schmidt basis orthogonality (step D) ===
+[PASS] d2: Hermitian Pauli basis is Hermitian
+[PASS] d2: <B_a,B_b>_HS = Tr(B_a B_b) = d delta_ab (Riesz basis)  [4 basis elements, d=2]
+[PASS] d4: Hermitian Pauli basis is Hermitian
+[PASS] d4: <B_a,B_b>_HS = Tr(B_a B_b) = d delta_ab (Riesz basis)  [16 basis elements, d=4]
+
+=== Part 8: GUARD -- dim-2 projective constraint underdetermines; POVM-additivity selects ===
+[PASS] d2 guard: non-affine g_bad(n)=1/2+n_z^3/2 satisfies projective constraint g(n)+g(-n)=1
+[PASS] d2 guard: g_bad is NOT affine in n (differs from trace form on a generic direction)  [|g_bad - g_affine| = 1.102e-02]
+[PASS] d2 guard: trine POVM {E_k=(2/3)P_k} sums to I (valid 3-outcome POVM)
+[PASS] d2 guard: trace-form measure obeys POVM-additivity (sum=1 on trine)  [sum = 1.000000]
+[PASS] d2 guard: non-affine g_bad VIOLATES POVM-additivity on the trine (sum != 1) -- so (M3) selects the trace form where projective does not  [g_bad POVM sum = 1.250000 (deviation 2.500e-01)]
+
+========================================================================
+TOTAL: 40 PASS / 0 FAIL  (out of 40 checks)
+========================================================================
+
+All checks passed: the LOAD-BEARING direction of the Busch 2003 / CFMR 2004 effect-valued (POVM) Gleason theorem is reproven from finite operator-algebra primitives on the qubit M_2(C) (and M_2 (x) M_2): an additive [steps A], nonnegative, normalized effect-functional m on E(M_2) with the parent note's POVM-additivity hypotheses (M1)-(M3) is forced to m(E) = Tr(sigma . E) [linearity (B) -> linear extension (C) -> Riesz/trace form (D)], with sigma a unique density matrix [Tr sigma = 1 from m(I)=1, sigma >= 0 from m>=0 on projectors (E)]. The dim-2 guard shows the projective (Gleason) constraint alone underdetermines sigma while POVM-additivity selects it -- the reason Busch's theorem reaches dim 2. Busch (2003), Caves-Fuchs-Manne-Renes (2004), Gleason (1957) are named comparators only, not derivation inputs.
+
+----- stderr -----

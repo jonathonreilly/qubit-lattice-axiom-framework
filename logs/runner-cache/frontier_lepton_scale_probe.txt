@@ -1,0 +1,105 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lepton_scale_probe.py
+runner_sha256: 6a959740838b3994e5dfbed6b6658fd20b06a63b0c179a05a98d908230006152
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+================================================================================
+LEPTON-SCALE FRONTIER PROBE (META)
+================================================================================
+Note: docs/LEPTON_SCALE_FRONTIER_PROBE_2026-06-05.md
+Status: source-only META probe. No audit-lane verdict wiring.
+Question: is the charged-lepton mass SCALE derivable, or 1 irreducible input?
+
+--------------------------------------------------------------------------------
+Setup (block dimensions and couplings)
+--------------------------------------------------------------------------------
+  [PASS] top block Q_L=(2,3): N_c*N_iso = 3*2 = 6
+  [PASS] lepton block L_L=(2,1): N_c*N_iso = 1*2 = 2
+  [PASS] dim_C(M_2(C)) = 4
+  [PASS] g_2 (from m_W = g_2 v/2) = 0.652658
+
+--------------------------------------------------------------------------------
+A. Top anchor (retained_bounded YT) is a BLOCK-DIM normalization
+--------------------------------------------------------------------------------
+  [PASS] A.1  y_t_bare = g_bare/sqrt(N_c*N_iso) = g_bare/sqrt(6) (g_bare=1)  (1/sqrt(6) = 0.408248)
+  [PASS] A.2  sqrt(6) is the Q_L=(2,3) block dimension N_c*N_iso, NOT a color-Fierz necessity  (Representation B (operator normalization) of YT needs no color Fierz)
+  [PASS] A.3  observed y_t ~ O(1), so the block-dim anchor lands at the right scale  (y_t ~ 0.991 ~ g_s/sqrt(6) quasi-fixed-point)
+
+--------------------------------------------------------------------------------
+B. Lepton block-dim analog (D17-prime, unaudited) is 1/sqrt(2)
+--------------------------------------------------------------------------------
+  [PASS] B.1  Z_lep = sqrt(N_c*N_iso) = sqrt(1*2) = sqrt(2)  (D17-prime)
+  [PASS] B.2  bare lepton block-dim anchor y_tau_bare = g/sqrt(2)  (1/sqrt(2) = 0.707107)
+  [PASS] B.3  lepton is color-singlet (N_c=1): no color Fierz, but block-dim normalization still well-defined  (the 1/sqrt(2) is operator-normalization (Rep B), independent of Fierz)
+
+--------------------------------------------------------------------------------
+C. NO-GO: top-style block-dim Ward boundary does NOT pin the lepton scale
+--------------------------------------------------------------------------------
+  observed y_tau (m_tau=(1776.86 MeV)) = 0.010203
+  bare block-dim anchor 1/sqrt(2) (g=1)        = 0.707107
+  bare block-dim anchor g_2/sqrt(2)            = 0.461499
+  overshoot factor (g=1)  = 69.3x
+  overshoot factor (g=g_2)= 45.2x
+  [PASS] C.1  block-dim Ward boundary y_tau=g/sqrt(2) overshoots observed by >40x  (45x (g_2) / 69x (g=1))
+  [PASS] C.2  RG running cannot bridge a >40x gap for a small lepton Yukawa  (lepton Yukawa runs ~percent-level, and toward SMALLER values in IR)
+  [PASS] C.3  hypothesis #2 (lepton Ward boundary like the top) FAILS quantitatively  (the top works only because y_t is O(1); y_tau is not)
+
+--------------------------------------------------------------------------------
+D. EXACT factorization: lepton scale = g_2 * (1/sqrt(2)) * (1/256)
+--------------------------------------------------------------------------------
+  [PASS] D.1  empirical: a_lepton^2 = m_W/256 (audited_clean open gate)  (offset 0.0322%)
+  [PASS] D.2  y_scale := a_lep^2 * sqrt2/v factorizes as g_2 * (1/sqrt2) * (1/256)  (y_scale=1.802149e-03, factored=1.802729e-03)
+  [PASS] D.3  exact algebra: sqrt(2)/512 == (1/sqrt2)/256  (2.7621358640e-03 == 2.7621358640e-03)
+  [PASS] D.4  factor g_2 = lepton's actual SU(2) gauge coupling (lepton is (2,1))
+  [PASS] D.5  factor 1/sqrt(2) = EXACTLY the D17-prime lepton block-dim Z_lep  (connects m_W/256 to the block-dim anchor)
+  [PASS] D.6  factor 1/256 = 1/(dim_C M_2(C))^4 = the residual open gate  (no counterpart in the top sector; this is the irreducible piece)
+
+--------------------------------------------------------------------------------
+E. The top/lepton asymmetry IS the open gate
+--------------------------------------------------------------------------------
+  top    : y_t   = g_s * (1/sqrt(6))            [block-dim ONLY -> O(1)]
+  lepton : y_sc  = g_2 * (1/sqrt(2)) * (1/256)  [block-dim AND 1/256]
+  [PASS] E.1  top has block-dim factor only (no extra suppression) -> O(1)  (retained_bounded YT)
+  [PASS] E.2  lepton has block-dim factor AND a 1/256 = 1/(dim_C M_2)^4 suppression  (the 1/256 is the entire content of the open gate)
+  [PASS] E.3  the lepton scale is NOT derived: 1/256 is unexplained on the retained surface  (block-dim part is mirrored; 1/256 part is the irreducible input)
+
+--------------------------------------------------------------------------------
+Verdict
+--------------------------------------------------------------------------------
+  [PASS] V.1  VERDICT = FREE-FLAVOR-INPUT (1 irreducible real number) modulo the m_W/256 open gate  (y_tau is NOT pinnable on the current retained surface)
+  [PASS] V.2  ADVANCE = the open gate is now located precisely: block-dim anchor (present) x 1/256 (absent)  (connects the isolated m_W/256 relation to the D17-prime block-dim factor)
+  [PASS] V.3  hypothesis #1 (y_tau/y_t derivable) -> only the block-dim ratio sqrt(6)/sqrt(2)=sqrt(3) is structural; the rest is the 1/256 gap
+  [PASS] V.4  hypothesis #2 (lepton Ward boundary y_tau=g/sqrt2) -> FAILS by >40x (Block C)
+  [PASS] V.5  hypothesis #3 (irreducible per-sector input) -> TRUE on the retained surface, modulo the sharp 1/256 target
+
+--------------------------------------------------------------------------------
+Explicit non-claims (audit-discipline)
+--------------------------------------------------------------------------------
+  [PASS] Does NOT derive y_tau, m_tau, or any lepton mass
+  [PASS] Does NOT derive the 1/256 factor (it is the open gate)
+  [PASS] Does NOT introduce any axiom, import, or new framework language
+  [PASS] Does NOT promote/retire/re-classify any audit row (D17-prime stays unaudited; YT stays retained_bounded)
+  [PASS] Uses PDG m_W and lepton masses only as empirical comparators
+  [PASS] Does NOT predict any audit verdict
+
+================================================================================
+Summary: PASS=33 FAIL=0
+================================================================================
+Charged-lepton mass scale: FREE-FLAVOR-INPUT modulo the m_W/256 open gate.
+
+  y_scale = g_2 * (1/sqrt(2)) * (1/256)
+            ^^^^   ^^^^^^^^^^   ^^^^^^^
+            SU(2)  block-dim    1/(dim_C M_2)^4
+            gauge  (D17-prime)  = OPEN GATE
+
+  - block-dim part g_2/sqrt(2) MIRRORS the retained top boundary g_s/sqrt(6);
+  - residual 1/256 has no top-sector counterpart -> the irreducible piece.
+
+  y_tau is NOT pinnable on the retained surface. The honest floor is
+  ONE real flavor input; the open derivation target is exactly 1/256.
+
+----- stderr -----
+

@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dirac_lorentz_diagnostic_boundaries_2026_06_07.py
+runner_sha256: 31c38ebafeb6429ce98f06fb455fa71d5757893dc09317ff107b4fc609a02cdd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+Dirac/Lorentz diagnostic salvage boundaries
+========================================================================
+n  ||K^n psi||/n!   ||H^n psi||/n!
+0  1.583233e+00       1.583233e+00
+1  7.916167e-01       3.242549e+00
+2  3.427801e-01       1.536408e+01
+3  1.277466e-01       3.780320e+02
+4  4.224822e-02       5.181338e+04
+5  1.267447e-02       4.198468e+07
+6  3.503037e-03       2.094830e+11
+7  9.021700e-04       6.619864e+15
+8  2.183806e-04       1.352528e+21
+[PASS] rapidity Gaussian is analytic for K at sampled orders
+       sampled K ratio falls to 2.184e-04
+[PASS] rapidity Gaussian is not analytic for H
+       corrected quadrature H ratio n=5 4.198e+07, analytic lower bound n=8 4.704e+20
+[PASS] quadratic invariant counts separate native time from Euclidean time
+       dims: spatial=1, Euclidean=2, B4=1
+[PASS] free continuous-time dispersion has one quadratic speed and p^4 first correction
+       c2=0.999997, c4=-0.329185
+[PASS] runner is diagnostic only
+       no Nelson theorem, unitary representation, or interacting naturalness claim is asserted
+[PASS] primitive registry re-check uses current non-isolated file
+       registry ids=['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']
+[PASS] approved primitives are not load-bearing for this diagnostic scope
+       load-bearing premise is only minimal_axioms; primitive ids are checked as non-load-bearing
+[PASS] registered primitive caps do not supply the rejected Lorentz repairs
+       caps={'scale_reference_primitive': True, 'kinetic_isotropy_primitive': True, 'realized_state_primitive': True}
+========================================================================
+TOTAL: 8 PASS / 0 FAIL
+
+----- stderr -----
+

@@ -98,7 +98,7 @@ with `p_{k,m} in Q` that annihilates the truncated Taylor series of
 `L_2 = 0` (i.e. `p_{k,m} = 0` for all `(k, m)`).
 
 **(T2) Stability under depth.** Repeating the same construction at
-`ORDER = 52` (cap `num_eqs = min(47, 47) = 47 > 39`), with the
+`ORDER = 52` (cap `num_eqs = min(47, 48) = 47 > 39`), with the
 re-computed Taylor coefficients `a_0, ..., a_52`, the matching matrix
 of size `47 x 39` again has
 
@@ -169,15 +169,16 @@ identifying two distinct issues:
 This narrow theorem addresses only the **first** issue: the (r=2,
 d=12) cell-level exclusion. The all-order minimal-annihilator
 interpretation is out of scope of this narrow note and remains the
-content of the separate row
-`PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md`,
-audited independently.
+open all-degree bridge. The separate row
+`PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md`
+is now narrowed to a finite-window boundary packet and audited
+independently on that repaired scope.
 
 ## What this narrow theorem does NOT claim
 
 - Does **not** claim all-order minimality of the candidate order-3
-  operator `L` (that statement is the content of the all-order proof
-  companion row above, separately audited).
+  operator `L` (that stronger bridge remains open; the companion row
+  above is now only a finite-window boundary packet).
 - Does **not** claim no annihilator exists at coefficient degree
   `d > 12` (only the cells `d in {0, 1, ..., 12}` at `r = 2` are
   covered by this narrow rescope; degrees `d in {13, 14, ..., 30}`
@@ -234,9 +235,9 @@ Plain-text (non-load-bearing) reader pointers:
   theorem; the theorem is a rank statement about the matching system,
   not about `L` directly).
 - `PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md`
-  — separate all-order proof companion that addresses the second of
-  the two issues raised in the parent's chain-closure explanation;
-  not consumed here.
+  — separate finite-window boundary companion for the candidate
+  Picard-Fuchs packet; the all-degree minimal-annihilator bridge remains
+  outside this narrow theorem and is not consumed here.
 - `PLAQUETTE_V1_PICARD_FUCHS_ODE_KOUTSCHAN_MINIMALITY_NOTE_2026-05-06.md`
   — extended minimality companion (depth 100, d up to 30); not
   consumed here.
@@ -293,6 +294,6 @@ Output summary: `TOTAL: PASS=15, FAIL=0`.
 This narrow theorem has exactly one load-bearing markdown-link upstream
 dependency: the parent minimality-proof companion row, currently
 `audited_conditional`. The narrow theorem's intrinsic content does not
-depend on the all-order proof companion or the extended-runner row;
-those notes are listed as plain-text pointers only and are not picked
-up by the citation graph as load-bearing deps.
+depend on the finite-window boundary companion or the extended-runner
+row; those notes are listed as plain-text pointers only and are not
+picked up by the citation graph as load-bearing deps.

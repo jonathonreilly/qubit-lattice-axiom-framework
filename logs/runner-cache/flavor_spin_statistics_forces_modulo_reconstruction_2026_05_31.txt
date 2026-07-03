@@ -1,37 +1,32 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_spin_statistics_forces_modulo_reconstruction_2026_05_31.py
-runner_sha256: 8ad845643c56154a0a618b11e46af6ae885530c221843d11c033a90d80aa6a5e
+runner_sha256: c61324570c53f08d01c4e3d210ed20c6ef032e29494628ea93e0ddddf4cfaf13
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.10
 status: ok
 ----- stdout -----
-[PASS] T1a CAR (fermion) Hamiltonian is bounded below (min=0), occupation<=1 -- healthy
+[PASS] T1a CAR occupation is bounded below for the supplied spinor field
        CAR spectrum [0.0, 1.7, 1.7, 3.4]
-[PASS] T1b CACR (boson) on the SAME spinor field is UNBOUNDED BELOW: H=E(n_p - n_a) decreases without bound
-       Bose min over n_a<=7 = -11.9 (-> -inf) => no stable vacuum: spin-statistics excludes Bose
-[PASS] DKa Dirac-Kahler taste is a 4-fold SPECTATOR multiplicity of a clean j=1/2 block (Becher-Joos puzzle evaded)
-       block eigs [(1-1.631j), (1+1.631j)] each appear x4 in the tasted operator -> spin not mixed
-[PASS] UVa free propagator kernel S(p)=(m - i g.p)/(p^2+m^2) is statistics-blind (a bosonic Gaussian on it is well-defined)
-       the kernel carries NO antiparticle/relative-sign info -> statistics fixed only by the Fock structure R must supply
-[PASS] AGa statistics-agnostic anchor: qubit ladders COMMUTE across sites; JW fermions ANTICOMMUTE; same ungraded algebra
-       A1(qubit)+A2 does not fix the UV cross-site statistics -> the IR T1 exclusion needs R to back-propagate
-[PASS] L1a SPATIAL spin-1/2 is DERIVED: S_i=sigma_i/2 give Casimir j(j+1)=3/4 (qubit = unique j=1/2 su(2) module)
-       matter is NOT a Lorentz-scalar at the rotation level; BUT the full-Lorentz BOOST-spinor embedding is posited (rides on the multi-site Grassmann construction = L1->L3 circular)
+[PASS] T1b wrong Bose quantization has an unbounded-below direction
+       Bose min over n_a<=7 is -11.9; the direction continues downward as the truncation grows
+[PASS] Dirac-Kahler taste can be spectator multiplicity of a clean spinor block
+       block eigs [(1-1.631j), (1+1.631j)] each appear four times
+[PASS] free propagator kernel identity is statistics-blind
+       the kernel matrix does not encode a Fock statistics choice
+[PASS] two-site qubit carrier is statistics-agnostic before a generator choice
+       ordinary ladders commute; Jordan-Wigner dressed generators anticommute
+[PASS] spatial qubit spin is j=1/2
+       Casimir j(j+1)=3/4; full boost-spinor embedding remains open
+[PASS] source boundary guard: no current-surface P1 forcing promoted
+       the packet keeps T1 as downstream support and leaves R open
 
-SCORECARD PASS=6 FAIL=0
-VERDICT: P1 forced_modulo_one_ingredient. The spin-statistics ENGINE (T1) genuinely excludes the bosonic
-frame for a GIVEN relativistic spin-1/2 field (Bose unbounded-below + acausal; CAR healthy), and the
-Dirac-Kahler/Becher-Joos obstacle is EVADED (taste = spectator multiplicity, clean j=1/2). BUT P1 is NOT
-forced from axioms+emergent-spacetime: (L1) the boost-spinor embedding on the bare qubit is posited (the
-only on-main spinor construction uses the multi-site Grassmann staggered field = circular); (IR->UV) the
-statistics-blind kernel S(p) admits a bosonic Gaussian and the bosonic staggered scalar is SO(4)-covariant
-in the continuum, so the IR T1 exclusion does NOT back-propagate to the UV lattice CAR -- it rides on the
-unaudited/partial reconstruction R, which currently PRESUPPOSES the antiparticle sign structure it must
-produce. NET: the charged-lepton flavor sector closes from framework baseline+emergent-spacetime MODULO (R + r=1/2).
-Two precise next levers: (a) build emergent so(3,1) BOOST generators on the on-site Pauli C^2 (lift L1 off
-the Grassmann crutch); (b) build/audit R so the Dirac antiparticle/relative-sign Fock structure is FORCED
-from S(p) rather than presupposed. Not terminal -- a current-state reduction; the engine works.
+SCORECARD PASS=7 FAIL=0
+VERDICT: bounded-support route pruning.
+The T1 engine is real for a supplied relativistic spin-1/2 field,
+and the taste spectator check removes one obstacle, but current
+baseline plus emergent spacetime does not force P1/CAR without a
+non-circular reconstruction R and a bare-qubit boost-spinor embedding.
 
 ----- stderr -----
 

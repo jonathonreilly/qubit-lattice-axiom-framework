@@ -1,0 +1,108 @@
+===== runner cache v1 =====
+runner: scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py
+runner_sha256: 433efca767402f6282d01607a10c856d1612271f1cf0b086f43a30280524a9e2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.55
+status: ok
+----- stdout -----
+========================================================================================
+SHARED-CORE REGISTRABILITY THEOREM: supplied homomorphic phase + K/CPT-even => phase-free
+========================================================================================
+
+----------------------------------------------------------------------------------------
+T1 - orthogonal central idempotents define pairwise-disjoint record labels
+----------------------------------------------------------------------------------------
+  [PASS] e_j e_k = 0 (j != k): orthogonality = disjointness
+  [PASS] e_j^2 = e_j: idempotents (genuine sectors)
+  [PASS] sum_j e_j = I: the finite central-sector decomposition
+
+----------------------------------------------------------------------------------------
+T2 - finite additivity over disjoint sectors => SUM of per-record contributions
+----------------------------------------------------------------------------------------
+  [PASS] interference term c is forced to 0 by finite additivity over a disjoint pair -- solve I(e1 u e2)=I(e1)+I(e2) for c -> [0]
+  [PASS] registrable readout on the full decomposition = sum_j I(sector_j), no interference -- iterating additivity over the disjoint central family
+  [PASS] Record additivity is record additivity, not phase-group additivity -- a separate determinant-character homomorphism boundary is checked in T3/T6
+
+----------------------------------------------------------------------------------------
+T3 - determinant phase homomorphism = SUM of per-sector phases (additive class)
+----------------------------------------------------------------------------------------
+  [PASS] arg det(diag z) = sum_j arg(z_j)  (mod 2pi) -- residual mod 2pi = 0.00e+00
+  [PASS] homomorphism boundary is explicit: phase additivity is not inferred from Record -- determinant-character / log-character readout-context premise
+
+----------------------------------------------------------------------------------------
+T4 - an additive R-valued functional is ODD (no regularity needed)
+----------------------------------------------------------------------------------------
+  [PASS] additivity at 0 => g(0) = 0 -- solve g(0)=2 g(0) -> [0]
+  [PASS] additivity => g(-x) = -g(x) (ODD), no continuity assumed -- g(x)+g(-x)=g(0)=0
+
+----------------------------------------------------------------------------------------
+T5 - K/CPT-even INTERSECT additive => phase functional is ZERO
+----------------------------------------------------------------------------------------
+  [PASS] even (g(-t)=g(t)) AND odd (g(-t)=-g(t)) => g(t) = 0 -- solve gt = -gt -> [0]
+  [PASS] => the homomorphic determinant-character PHASE contribution vanishes -- determinant phase character k = 0 DERIVED, not assumed
+
+----------------------------------------------------------------------------------------
+T6 - HOSTILE GUARD: K-even phase functions survive unless homomorphism is imposed
+----------------------------------------------------------------------------------------
+  [PASS] cos(arg z) is K/CPT-even: cos(-theta) - cos(theta) = 0
+  [PASS] cos(arg z) is NOT sector-additive: cos(a1+a2) - (cos a1 + cos a2) != 0 -- gap = -cos(a1) - cos(a2) + cos(a1 + a2)
+  [PASS] cos total-product additivity fails on 6/6 random phase pairs (excluded by homomorphism, not evenness) -- 6/6 fail
+  [PASS] sum_j cos(theta_j) is K/CPT-even over sectors
+  [PASS] sum_j cos(theta_j) remains phase-dependent -- not identically equal to its zero-phase value 2
+  [PASS] sum_j cos(theta_j) is finitely additive over disjoint records
+  [PASS] sum_j cos(theta_j) is NOT a phase-group homomorphism -- gap = -cos(a1) - cos(a2) - cos(h1) - cos(h2) + cos(a1 + h1) + cos(a2 + h2)
+  [PASS] Record alone does not exclude sum_j cos(theta_j); the homomorphism boundary does -- this is the explicit hostile guard for re-audit
+
+----------------------------------------------------------------------------------------
+T7 - surviving registrable det-class datum is modulus-type (k = 0)
+----------------------------------------------------------------------------------------
+  [PASS] log|z| additive: log(r1 r2) - (log r1 + log r2) = 0
+  [PASS] log|z| K-even: log|conj z| - log|z| = 0
+  [PASS] => determinant-class phase index is k=0; modulus/log-modulus data survives -- k=0 is the surviving phase character on the supplied homomorphism surface
+
+----------------------------------------------------------------------------------------
+T8 - strong-CP supplied-surface algebra: arg det(M_u M_d) homomorphic content is zero
+----------------------------------------------------------------------------------------
+  [PASS] arg det(M_u M_d) = arg det M_u + arg det M_d (additive, mod 2pi) -- residual mod 2pi = -4.44e-16
+  [PASS] => by T5 the supplied homomorphic arg det(M_u M_d) content = 0 -- conditional algebra only; physical mass-readout identification remains open
+
+----------------------------------------------------------------------------------------
+T9 - AC_phi_lambda supplied-surface algebra: conj(H)=H(-delta); symmetric=even, sin-line=odd
+----------------------------------------------------------------------------------------
+  [PASS] H(delta) Hermitian
+  [PASS] conj(H(delta)) = H(-delta): delta->-delta IS the K/CPT conjugation
+  [PASS] e1 even in delta -- e1 = 3*a
+  [PASS] e2 even in delta -- e2 = -3*B**2 + 3*a**2
+  [PASS] e3 even in delta (e3 ~ cos 3delta) -- e3 = 2*B**3*cos(3*delta) - 3*B**2*a + a**3
+  [PASS] e3 = a^3 - 3 a B^2 + 2 B^3 cos(3 delta) exactly
+  [PASS] orientation-odd line sin(3 delta) is K-ODD (flips under delta->-delta)
+  [PASS] orientation sign is not scalar K/CPT orbit content on the supplied orbit surface -- conditional unordered-multiset algebra; physical species readout identification remains open
+
+----------------------------------------------------------------------------------------
+T10 - boundary witnesses (what the theorem does NOT close)
+----------------------------------------------------------------------------------------
+  [PASS] R2 / PL-ABSS global bridge is OFF this layer (manifold topology, not Record) -- Cl(3)/Z^3 -> PL S^3 x R needs Perelman/Moise/van Kampen; external-math LIVE
+  [PASS] |delta| MAGNITUDE (2/9) still needs R-eta readout id + R2 (NOT supplied here) -- this theorem removes the SIGN as extra content, not the magnitude
+  [PASS] strong-CP premise 1 ('no bare theta slot') is a SEPARATE surviving premise -- RP-no-go'd distinctly; this bridge addresses ONLY mass-orientation phase
+  [PASS] standing modeling premise unchanged: physical readout satisfies Record constraints -- theorem removes phase freedom WITHIN that constrained class
+  [PASS] standing homomorphism premise unchanged: determinant phase readout is in log-character class -- not derived from Record; no new axiom or audit status is asserted
+
+----------------------------------------------------------------------------------------
+T11 - post-audit source-boundary guard
+----------------------------------------------------------------------------------------
+  [PASS] source note carries boundary phrase: post-audit source firewall removes bridge-discharge language
+  [PASS] source note carries boundary phrase: does **not** discharge, close, or exhaust the physical
+  [PASS] source note carries boundary phrase: This is a conditional algebraic implication, not a bridge discharge.
+  [PASS] source note carries boundary phrase: physical-readout bridge would need; it does not by itself reduce
+  [PASS] source/runner closure phrase absent: This **discharges the determinant-phase content
+  [PASS] source/runner closure phrase absent: This **closes the unordered-multiset
+  [PASS] source/runner closure phrase absent: EXHAUSTS the registrable arg det(M_u M_d)
+  [PASS] source/runner closure phrase absent: admission -> |delta| atom
+
+========================================================================================
+SCORECARD: PASS=46 FAIL=0
+========================================================================================
+
+----- stderr -----
+

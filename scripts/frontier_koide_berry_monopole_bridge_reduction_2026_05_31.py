@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
 """
-Koide Berry-monopole bridge-reduction. The native circulant generation mass has
-a choice-free C3 index map, b-independent Fourier eigenvectors, and zero Berry
-curvature, so it lands on the second-order/per-dimension Q=1 branch. The Q=2/3
-branch remains pinned to a separate chiral/nonzero-Berry coupling criterion.
+Koide Berry-monopole finite-matrix support packet. The native circulant
+generation mass has a choice-free C3 index map, b-independent Fourier
+eigenvectors, and zero Berry curvature. A separate two-band comparator shows
+that a Gamma_chi-anticommuting coupling can carry nonzero Berry curvature. The
+runner also checks the standalone Q(r=1/2)=2/3 and Q(r=1)=1 identities.
+
+It does not derive a Berry/chirality-to-r weighting rule, select a physical Q
+branch, derive a framework chiral coupling, approve an import, or set an audit
+verdict.
 
   F1  INDEX MAP NATIVE. The 3 generations = Lambda^1(C^3) with C_3 = cyclic shift C; the
       C_3 DFT F diagonalizes C, and b is the C_3-DOUBLET Fourier amplitude of the mass
       operator H = aI + bC + b-bar C^2 (a = singlet amplitude). Canonical, choice-free.
 
-  F2  NATIVE EFFECTIVE-ACTION ORDER IS SECOND (Q=1), DERIVED. On the real
+  F2  NATIVE CIRCULANT BERRY CURVATURE IS ZERO, DERIVED. On the real
       circulant coordinate plane H = aI + u(C+C^2) + v i(C-C^2), matching the
       Fourier-amplitude coordinates in F1, the Berry curvature of the filled
       band is ZERO. The eigenvectors are the (u,v)-INDEPENDENT Fourier modes:
@@ -18,21 +23,23 @@ branch remains pinned to a separate chiral/nonzero-Berry coupling criterion.
   F3  THE COMPUTABLE CRITERION. A 2-band coupling that ANTICOMMUTES with the
       chiral grading Gamma_chi (= sigma_z), e.g. u sigma_x + v sigma_y, has a
       NONZERO Berry monopole; a coupling that COMMUTES with Gamma_chi has zero
-      Berry. This is the criterion the Q=2/3/per-block branch would need; F3
-      does not derive that branch inside the native circulant mass.
+      Berry. This is a finite comparator, not a rule selecting a Koide branch.
 
-  F4  THE NATIVE MASS IS NON-CHIRAL -> Q=1. Every native circulant Lambda^1
+  F4  THE NATIVE MASS IS NON-CHIRAL. Every native circulant Lambda^1
       mass COMMUTES with Gamma_chi (= 2 P_singlet - I, itself circulant):
       [H, Gamma_chi] = 0, so {H, Gamma_chi} != 0 -- it never anticommutes.
-      Hence the native branch is zero-Berry and gives Q=1; Q=2/3 (r=1/2)
-      remains the chiral criterion/import boundary.
+      Hence the native circulant algebra supplies the zero-Berry/commuting
+      side of the finite comparison. The Q(r) identities are checked
+      separately and do not select a physical branch.
 
-CONCLUSION (bounded reduction, NOT a derivation of Q=2/3): the index map is
-native and choice-free; the native circulant branch gives Q=1; and the missing
-positive route is pinned to the computable criterion "is the generation mass
-chiral (nonzero Berry monopole)?" The generation R^3 circulant algebra cannot
-supply that anticommuting operator, but an off-generation tensor factor remains
-an open route. READ-ONLY certificate; tiers audit-decided.
+CONCLUSION (bounded finite-matrix support, NOT a derivation of Q=2/3 or Q=1):
+the index map is native and choice-free; the native circulant Berry curvature
+is zero; an anticommuting two-band comparator has nonzero Berry curvature; and
+the finite Q(r) identities hold. The missing positive route is the retained
+bridge from Berry/chirality data to the physical r weighting and readout. The
+generation R^3 circulant algebra cannot supply that anticommuting operator, but
+an off-generation tensor factor remains an open route. READ-ONLY certificate;
+tiers audit-decided.
 """
 
 import sys
@@ -82,7 +89,7 @@ def plaquette_berry(Hfun, b0r, b0i, h=0.01):
 
 
 def main():
-    section("Koide Berry-monopole bridge-reduction: native branch Q=1; chiral criterion for Q=2/3")
+    section("Koide Berry-monopole finite-matrix support: Q-branch selection remains open")
 
     # ---- F1: native index-map --------------------------------------------------
     section("F1 — index-map native: b = the C3-doublet Fourier amplitude of H")
@@ -98,8 +105,8 @@ def main():
            abs(grade1 - b_v) < 1e-12 and abs(np.trace(H) / 3 - a_v) < 1e-12,
            f"grade1 = {grade1:.3f} = b; grade0 = {np.trace(H)/3:.3f} = a")
 
-    # ---- F2: native effective action second-order (Berry = 0) ------------------
-    section("F2 — native circulant mass: Berry curvature = 0 (eigenvector rigidity) -> Q=1")
+    # ---- F2: native Berry curvature is zero ------------------------------------
+    section("F2 — native circulant mass: Berry curvature = 0 (eigenvector rigidity)")
     def H_circ(br, bi):
         return a_v * I3 + br * B + bi * S_im
     # eigenvectors are the b-INDEPENDENT Fourier modes
@@ -112,13 +119,13 @@ def main():
            all(abs(o - 1) < 1e-9 for o in overlaps),
            f"|<Fourier_k | eigvec_j>| = {[f'{o:.4f}' for o in overlaps]} (all 1)")
     berry_circ = [plaquette_berry(H_circ, 0.3, 0.2), plaquette_berry(H_circ, 0.4, -0.3)]
-    record("F2.2 Berry curvature of the filled band on the native doublet plane = 0 -> "
-           "SECOND-order/per-dim branch -> Q=1",
+    record("F2.2 Berry curvature of the filled band on the native doublet plane = 0 "
+           "(finite native algebra; no Q-branch selection)",
            all(abs(x) < 1e-6 for x in berry_circ),
            f"plaquette Berry = {[f'{x:.1e}' for x in berry_circ]} (= 0)")
 
     # ---- F3: the computable criterion (chiral -> nonzero monopole) -------------
-    section("F3 — criterion: Gamma_chi-ANTICOMMUTING coupling -> nonzero Berry monopole")
+    section("F3 — finite comparator: Gamma_chi-ANTICOMMUTING coupling -> nonzero Berry monopole")
     m = 0.5
     def H_chiral(br, bi):                       # Re(b) sx + Im(b) sy anticommute with sz
         return br * sx + bi * sy + m * sz
@@ -137,11 +144,11 @@ def main():
            f"Berry(chiral) = {berry_chiral:.4f} (!=0, monopole); "
            f"Berry(non-chiral) = {berry_nonchiral:.1e} (=0)")
 
-    # ---- F4: the native mass is non-chiral -> Q=1 ------------------------------
-    section("F4 — native circulant mass COMMUTES with Gamma_chi -> non-chiral -> Q=1")
+    # ---- F4: the native mass is non-chiral; Q(r) identities are separate --------
+    section("F4 — native circulant mass COMMUTES with Gamma_chi; Q(r) identities are separate")
     Hc = a_v * I3 + 0.31 * B + 0.21 * S_im
     record("F4.1 [H_circ, Gamma_chi] = 0 (both circulant) -> {H_circ, Gamma_chi} != 0 "
-           "-> the native mass NEVER anticommutes -> non-chiral -> Berry=0 -> Q=1",
+           "-> the native mass NEVER anticommutes -> non-chiral -> Berry=0",
            np.allclose(Hc @ Gamma_chi - Gamma_chi @ Hc, 0, atol=1e-12)
            and np.max(np.abs(Hc @ Gamma_chi + Gamma_chi @ Hc)) > 0.1,
            f"|[H,Gamma_chi]| = {np.max(np.abs(Hc@Gamma_chi - Gamma_chi@Hc)):.1e}; "
@@ -151,8 +158,8 @@ def main():
         bb = np.sqrt(r) * a_v
         lam = np.sort(np.linalg.eigvals(a_v * I3 + bb * C + bb * C2).real)
         return sum(lam**2) / (sum(lam))**2
-    record("F4.2 r=1/2 (chiral/per-block criterion) -> Q=2/3; r=1 "
-           "(native non-chiral/per-dim branch) -> Q=1",
+    record("F4.2 finite Koide algebra identities: Q(r=1/2)=2/3 and Q(r=1)=1 "
+           "(no branch-selection rule asserted)",
            abs(Q_at(0.5) - 2 / 3) < 1e-9 and abs(Q_at(1.0) - 1) < 1e-9,
            f"Q(r=1/2) = {Q_at(0.5):.6f}; Q(r=1) = {Q_at(1.0):.6f}")
 
@@ -161,14 +168,14 @@ def main():
     n_pass = sum(1 for _, ok, _ in PASSES if ok)
     print(f"  {n_pass}/{len(PASSES)} checks passed")
     print()
-    print("  BOUNDED BRIDGE REDUCTION:")
-    print("    chiral generation mass (Gamma_chi-anticommuting, nonzero Berry monopole)")
-    print("       would supply first-order/per-block r=1/2 => Q=2/3")
-    print("    non-chiral circulant mass (Gamma_chi-commuting, zero Berry)")
-    print("       supplies second-order/per-dim r=1 => Q=1")
-    print("  The native circulant mass is NON-CHIRAL (commutes with Gamma_chi) -> Q=1.")
-    print("  Q=2/3 remains the CHIRAL/nonzero-Berry criterion; forbidden on the")
-    print("  generation R^3 circulant algebra. Next path: an OFF-generation factor.")
+    print("  BOUNDED FINITE-MATRIX SUPPORT:")
+    print("    native circulant generation mass: C3-native, Fourier-rigid, Berry=0")
+    print("    toy anticommuting two-band comparator: nonzero Berry monopole")
+    print("    finite Koide algebra: Q(r=1/2)=2/3 and Q(r=1)=1")
+    print("  No Berry/chirality-to-r weighting rule or physical Q branch is derived.")
+    print("  The generation R^3 circulant algebra cannot supply the anticommuting")
+    print("  operator. Next route remains an off-generation factor plus a retained")
+    print("  readout/weighting bridge.")
 
     if n_pass == len(PASSES):
         print("\nALL CHECKS PASSED")

@@ -1,31 +1,35 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_a1prime_debt_and_data_2026_05_30.py
-runner_sha256: afbfab7c658098725460aeeb4ff9fec1feddd4750932ee4d76f89d8f2a805531
+runner_sha256: 3bddf3ef36c214183077b18872b85a4da218fdf03e4a20cf80a7b7f05e2268ef
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.23
+elapsed_sec: 0.65
 status: ok
 ----- stdout -----
-[PASS] A: inherited tracial ONB = group-element {e,g,g^2} (Gram=I) = dimension basis
-       equal weight per mode -> dimension partition -> r=1 (Q=1) INHERITED DEFAULT
-[PASS] A: J-I=g+g^2 spans TWO ONB modes -> r=1/2 needs det_C complex regrouping
-       det_C <=> continuous U(1) rephasing of C, INCOMPATIBLE with C^3=I (-> det_R -> r=1)
-[PASS] B: ONLY charged leptons at c^2=2 (r=1/2); within-sector quarks miss (2.39, 3.09)
-       lep c^2=2.000, up=3.094, down=2.389
-[PASS] B: cross-sector (c,b,t) c^2~2.02 (~2/3) CONTRADICTS within-sector premise
-       (c,b,t) c^2=2.017 -> the ~2/3 quark coincidence straddles up/down
-[PASS] B: neutrino Q (NO) max < 2/3 -> Q_nu=2/3 EXCLUDED by splittings (any nature)
-       max Q_nu(NO)=0.585 < 0.667; Kahler Dirac->2/3 refuted by splittings alone
+[PASS] A1 real R[Z3] tracial group-element basis has Gram=I
+       This is a finite basis calculation, not a physical measure ranking.
+[PASS] A2 J-I=g+g^2 occupies two real group-element directions
+       coeffs=[0, 1, 1]; support_count=2
+[PASS] A3 fixed C^3=I carrier has only cube-root phases in this finite model
+       A continuous U(1) doublet phase is extra to this finite carrier model.
+[PASS] A4 signed Hermitian Q is delta-independent in the supplied model
+       Q_signed=1/3 + 2*b_sym**2/(3*a_sym**2)
+[PASS] B1 supplied mass comparators put leptons near c^2=2 and quarks above
+       lep=2.000, up=3.094, down=2.389
+[PASS] B2 supplied (c,b,t) comparator is cross-sector, not a within-sector C3 closure
+       (c,b,t) c^2=2.017
+[PASS] B3 supplied normal-ordering neutrino sweep stays below Q=2/3
+       max Q_nu(NO)=0.585
+[PASS] B4 supplied CKM angle inventory is 1.31-2.85x Cabibbo
+       required=17-37 deg; ratios=1.31-2.85x
+[PASS] source guards keep axiom status, normalization, and comparator bridges open
 
-SCORECARD PASS=5 FAIL=0
-VERDICT (both builds converge): candidate revised Axiom 1 does NOT discharge its debt -- the measure inherited from
-the qubit substrate is the DIMENSION partition (r=1, Q=1 default); r=1/2 requires the det_C
-complex-counting regrouping, which is INCOMPATIBLE with C^3=I. So r=1/2 is a genuine minimal
-IMPORT (complex/continuous structure on the doublet), converging with the chirality gate. And
-the universality that would make it more than 'positing the lepton number' FAILS data: only
-charged leptons hit 2/3, the (c,b,t) cross-sector coincidence contradicts the within-sector
-premise, neutrinos exclude 2/3, and the CKM escape is 5x too small (unfalsifiable fudge).
-SURVIVES: charged leptons at c^2=2 to 5 digits, zero params -- a real, unexplained 1-of-4 fact.
+SCORECARD PASS=9 FAIL=0
+VERDICT: bounded support for finite R[Z3] support-count algebra and
+external comparator stress tests only. The packet does not prove a
+native r/Q normalization law, does not globally forbid every complex
+order-three representation, and does not certify the embedded mass or
+angle data as framework-derived inputs.
 
 ----- stderr -----
 

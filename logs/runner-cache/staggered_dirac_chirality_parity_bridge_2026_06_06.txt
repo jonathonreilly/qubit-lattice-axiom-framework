@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py
+runner_sha256: 4ba590c2619a6fa278e3e89783dbccc5dd629b912f8bfa4c478a4013c11e730a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
+staggered_dirac_chirality_parity_bridge_2026_06_06.py
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+target_blocker: H_staggered_chirality was a conditional premise
+proposal_allowed: false
+audit_required_before_effective_retained: true
+A. Z^3 nearest-neighbor scalar edge-flip grading
+[PASS] epsilon solves every edge-flip equation on (2, 2, 2) open box -- epsilon(x+e_mu)=-epsilon(x)
+[PASS] edge-flip solution space on (2, 2, 2) box is one global sign -- rank=7, vertices=8, affine_solutions=2
+[PASS] epsilon solves every edge-flip equation on (2, 3, 4) open box -- epsilon(x+e_mu)=-epsilon(x)
+[PASS] edge-flip solution space on (2, 3, 4) box is one global sign -- rank=23, vertices=24, affine_solutions=2
+[PASS] epsilon solves every edge-flip equation on (4, 4, 3) open box -- epsilon(x+e_mu)=-epsilon(x)
+[PASS] edge-flip solution space on (4, 4, 3) box is one global sign -- rank=47, vertices=48, affine_solutions=2
+[PASS] coordinate-square consistency gives path-independent parity propagation -- four edge flips around every checked square multiply to +1
+B. A1 central pseudoscalar -> local staggered chirality
+[PASS] Pauli pseudoscalar sigma1 sigma2 sigma3 equals i I
+[PASS] A1 pseudoscalar is central in the Pauli Cl(3) realization
+[PASS] Omega(x)=epsilon(x) Omega0 flips by -1 on every coordinate edge -- Omega(x)/Omega(x+e_mu)=-1
+[PASS] local chirality keeps the Cl(3) pseudoscalar square -- Omega(x)^2=-1 for Omega0=iI
+C. Anticommutation with every nearest-neighbor odd kinetic stencil
+[PASS] Gamma_epsilon D + D Gamma_epsilon vanishes edgewise for arbitrary weights -- checked 54 undirected nearest-neighbor edges with three weights
+[PASS] two-step same-axis hops are correctly excluded from the odd NN class -- epsilon(x+2e_mu)=epsilon(x)
+
+SCORECARD: PASS=13 FAIL=0
+VERDICT: exact support for the narrow H_staggered_chirality bridge; the full staggered-Dirac realization gate remains outside this scope.
+
+----- stderr -----
+

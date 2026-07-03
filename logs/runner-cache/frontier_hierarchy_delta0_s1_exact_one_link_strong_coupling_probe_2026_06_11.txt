@@ -1,0 +1,101 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_delta0_s1_exact_one_link_strong_coupling_probe_2026_06_11.py
+runner_sha256: 4237443825898c711f4bcb4589432a85a3509eddff103ec73ae3efbb946a33a5
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+==============================================================================
+ frontier_hierarchy_delta0_s1_exact_one_link_strong_coupling_probe_2026_06_11.py
+ Block09 of the DELTA0 blocking campaign: executing the inventory's S1 kill
+ criterion.  ARM 1: exact one-link expectation at the fixed E3 saddle bath,
+ beta = 6 (E3 machinery reused verbatim).  ARM 2: exact beta = 0 Haar
+ moments as Fractions; per-dimer/baryon weights; 2-site and 2^3 exact Z(m).
+ ARM 3: the rationality obstruction — beta = 0 link integration yields only
+ rationals; alpha_s = 1/(4 pi u_0^2) carries pi; S1 standalone eliminated,
+ refines to composite S1' (links x readout kernel chain).
+ Parent note: docs/HIERARCHY_DELTA0_S1_EXACT_ONE_LINK_STRONG_COUPLING_PROBE_
+              NOTE_2026-06-11.md
+==============================================================================
+
+--- Section A [C]: E3 one-link machinery reused verbatim (module import) and re-certified ---
+  [PASS][C] A1 E3's U(1) and SU(2) one-link expectations F(h) (Gautschi continued-fraction Bessel ratios) re-certified against independent 512-point deterministic quadrature at 3 fresh test h each, < 1e-12 — F(h) IS the exact one-link Haar integral
+  [PASS][C] A2 E3's SU(3) Weyl-measure torus grid re-certified (norm = 1, <(Re Tr U)^2> = 1/2 to < 1e-12) and this runner's declared boundary inputs (alpha_s, u_0, beta, n_c, link counting) IDENTICAL to E3's  (alpha_s = 0.1033038)
+
+--- Section B [A]: ARM 1 — exact one-link expectation at the fixed E3 saddle bath, beta = 6 ---
+    U(1): u*(16) = 0.9857076265, u*(15) = 0.9856873008
+    SU(2): u*(16) = 0.9534944113, u*(15) = 0.9534118085
+    SU(3): u*(16) = 0.7892969743, u*(15) = 0.7867845593
+  [PASS][A] B1 E3 saddles u*(16), u*(15) recomputed per variant with E3's own solver (dressed branch, uniform share kappa = 3n/64); every root residual < 1e-12
+  [PASS][A] B2 exact one-link expectation evaluated ONCE (no iteration) at the fixed E3 saddle bath: u_exact(n) = F(h_total(n)) reproduces u*(n) to < 1e-9 in every variant for n = 16 and 15 — the link integral in E3 was already EXACT; the saddle approximation lives in the bath, not in the link integration
+    U(1): R_arm1 = 1.0000412422 (R/alpha_s = 9.6806);  frozen bath R = 1.0000394811 (R/alpha_s = 9.6806)
+    SU(2): R_arm1 = 1.0001732859 (R/alpha_s = 9.6819);  frozen bath R = 1.0001488738 (R/alpha_s = 9.6816)
+    SU(3): R_arm1 = 1.0063967357 (R/alpha_s = 9.7421);  frozen bath R = 1.0016675728 (R/alpha_s = 9.6963)
+  [PASS][A] B3 per-decimation factor R_arm1 = (u_exact(15)/u_exact(16))^(-2) is O(1) (|R - 1| < 0.5) and outside a factor 2 of the required alpha_s = 0.1033038 in EVERY variant, in BOTH the relaxed-bath and frozen-bath conventions — the inventory's S1 kill criterion fires at one-link-exact beta = 6 under the declared bath  (U(1): 9.681x, SU(2): 9.682x, SU(3): 9.742x)
+  [PASS][A] B4 stress brackets kappa -> 2 kappa and kappa/2 (deliberate mis-sharing by a factor 4 overall) AND the SU(3) small-u branch (E3's D4 axis): the one-shot exact one-link factor stays O(1) and outside a factor 2 of alpha_s in every leg — no sharing convention or branch selection rescues the standalone route at beta = 6  (U(1) x2: 9.681x; U(1) x1/2: 9.680x; SU(2) x2: 9.683x; SU(2) x1/2: 9.681x; SU(3) x2: 9.738x; SU(3) x1/2: 9.809x; SU(3) small branch: 10.526x)
+
+--- Section C [C]: ARM 2 — closed-form Haar moments as exact rationals, verified by deterministic polynomial quadrature ---
+  [PASS][C] C1 U(1) moments int U^a U*^b dU = delta_ab verified for a, b in {0, 1, 2} on a uniform 16-point circle grid (exact for trig polynomials; < 1e-12) — the U(1) meson dimer weight 1/N_c = 1 and the absence of an eps sector (int U^k = 0, k != 0) read off directly
+  [PASS][C] C2 SU(2) quadratic moment int U_ij U*_kl dU = (1/2) delta_ik delta_jl verified ENTRYWISE (all 16 index combinations) on the deterministic Euler/S^3 midpoint grid (192 x 8 x 8), declared tolerance 1e-3  (max entry deviation = 1.85e-14)
+  [PASS][C] C3 SU(2) eps-sector moment int U_ij U_kl dU = (1/2) eps_ik eps_jl verified ENTRYWISE on the same grid, declared tolerance 1e-3 — the SU(2) baryon-link Haar factor 1/N_c! = 1/2 is this verified moment  (max entry deviation = 1.85e-14)
+  [PASS][C] C4 SU(3): cited exact moments int U U* = (1/3) delta delta and int UUU = (1/6) eps eps (Creutz / Weingarten, parallel references) cross-checked: exact-Fraction unitarity sum rule sum_j (1/3) delta_ik delta_jj = delta_ik; trace contraction <|Tr U|^2> = 1 and eps contraction <(Tr U)^3> = 1 both REPRODUCED by the deterministic Weyl torus grid (also <Tr U^.. t^2> = 0, <|t|^4> = 2, <(Re t)^3> = 1/4; all < 1e-10) — class-function verification only, entrywise formulas consumed as cited constants (declared honestly)  (<t^3> = 1.000000000000, <|t|^2> = 1.000000000000, <|t|^4> = 2.000000000000)
+
+--- Section D [C]: ARM 2 — exact per-object weights and the 2-site single-link Z(m) (exact Fractions) ---
+  [PASS][C] D1 meson-dimer weight (M_x M_y coefficient) = 1/N_c exactly: 1 (U(1)), 1/2 (SU(2)), 1/3 (SU(3)) — the quadratic Haar constant times the by-hand Grassmann reorder sign (+1); equals Rossi-Wolff c_1 = (N-1)!/(N! 1!) in exact Fractions; hop sign eta and the APBC wrap sign enter SQUARED and drop  (c_1: N=1: 1, N=2: 1/2, N=3: 1/3)
+  [PASS][C] D2 baryon-link Haar moment factor = 1/N_c! exactly: 1/6 (SU(3), the cited cubic eps moment) and 1/2 (SU(2), the VERIFIED C3 eps moment); with the canonical baryon normalization B = chi^1...chi^N the full monomial coefficient chain (1/N!) x (1/N!) x (N!)^2 = 1 in exact Fractions (normalization-dependent bookkeeping, declared); U(1) has NO eps sector (C1: int U^k = 0); distinct from c_3 = (1/N_c!)^2 = 1/36 (the top mesonic coefficient)  (1/N_c! = 1/6 (SU(3)), 1/2 (SU(2)); c_3 = 1/36)
+  [PASS][C] D3 2-site single-link Z(m), mesonic sector, exact Fractions: term-k coefficient c_k [k! C(N,k)]^2 collapses to C(N,k) exactly, so Z(m) = (m^2 + 1)^N_c — factor structure: N_c identical factors (m^2 + 1), roots m = +-i; verified term-by-term and by direct expansion at m = 2/3, 3/5 for N_c = 1, 2, 3 (c_2, c_3 cited Rossi-Wolff closed form; SU(3) baryonic eps-sector addition DECLARED out of scope — needs the unverified sixth moment)  (N=1: Z = (m^2+1)^1; N=2: Z = (m^2+1)^2; N=3: Z = (m^2+1)^3)
+
+--- Section E [A]: ARM 2 — exact Z(m) of the 2^3 block (declared matching sector) and the per-object weight table ---
+  [PASS][A] E1 cube-graph (2^3 block) k-dimer matching counts by memoized bitmask recursion = (1, 12, 42, 44, 9), CONFIRMED independently by brute force over all 2^12 edge subsets; k=1 count equals the edge count 12 and the 9 perfect matchings of Q3 are reproduced  (counts = (1, 12, 42, 44, 9))
+  [PASS][A] E2 exact Z(m) of the declared monomer-dimer (matching) sector of the 2^3 APBC block: doubled links per cube edge collapse to multiplicity-2 edges of weight 2/N_c = 2/3 (derived: per-link weight 1/N_c verified, hop and APBC signs squared, single-occupancy DECLARED); Z(m) = m^8 + 8 m^6 + (56/3) m^4 + (352/27) m^2 + 16/9 in exact Fractions  (Z = (1) m^8 + (8) m^6 + (56/3) m^4 + (352/27) m^2 + (16/9) m^0)
+  [PASS][A] E3 factor structure of Z in t = m^2: NO rational roots (exact rational-root-theorem scan over all +-p/q, p | 48, q | 27) — no linear factor over Q; numeric roots (FLAGGED numeric, Durand-Kerner, residual < 1e-10) are all in the left half-plane (Z(m) > 0 for real m, as positivity of all coefficients requires); unlike the 2-site case Z does NOT collapse to (m^2 + 1)-power form  (t-roots: -4.430501+0.000000i, -0.902832+0.000000i, -0.178633+0.000000i, -2.488034+0.000000i)
+    weight   1/3 = 0.3333  displacement = 3.2267x alpha_s   [1/N_c    (meson dimer, per link; VERIFIED)]
+    weight   1/6 = 0.1667  displacement = 1.6134x alpha_s   [1/(2N_c) (NJL G_eff, inventory S1 row)]
+    weight   1/6 = 0.1667  displacement = 1.6134x alpha_s   [1/N_c!   (baryon-link Haar factor; cited+x-checked)]
+    weight   1/9 = 0.1111  displacement = 1.0756x alpha_s   [1/N_c^2  (two-dimer product across two links; Weingarten fourth-moment layer ~ Wg constants 1/8, -1/24 cited parallel-reference only)]
+    weight   2/3 = 0.6667  displacement = 6.4535x alpha_s   [2/N_c    (doubled-edge dimer weight, 2^3 block)]
+    weight  1/12 = 0.0833  displacement = 0.8067x alpha_s   [c_2 = 1/12 (double dimer on one link; cited closed form)]
+  [PASS][A] E4 per-object weight table vs alpha_s = 0.1033038: NO computed or cited beta = 0 weight lands in the 'supplied' window [0.99, 1.01] x alpha_s; FOUR tabulated rationals (1/(2N_c) and 1/N_c! at 1.6134x, 1/N_c^2 at 1.0756x — the closest — and c_2 = 1/12 at 0.8067x) fall inside the inventory's factor-2 observation window and are flagged below as an OBSERVATION, never a closure; every weight attaches PER OBJECT (per link, dimer, or loop), NONE attaches per decimated taste mode  (factor-2 window: 1.6134x, 1.6134x, 1.0756x, 0.8067x)
+
+--- Section F [A]: ARM 3 — rationality obstruction; S1 standalone eliminated; refinement to composite S1' ---
+  [PASS][A] F1 rationality (computed instances): every beta = 0 constant this probe produced or consumed — moments, dimer/baryon weights, c_k chain, both Z(m) coefficient lists — is an exact Fraction (general statement: Weingarten calculus yields rational polynomial Haar moments; cited parallel reference, consumed at the strength of these computed instances)  (23 exact rationals checked)
+  [PASS][A] F2 alpha_s = 1/(4 pi u_0^2) is pi-carrying: if it were rational, pi = 1/(4 u_0^2 alpha_s) would be algebraic (u_0^2 = sqrt(5934/10000) is algebraic), contradicting Lindemann (parallel reference) — so NO finite product/sum of beta = 0 rational link-integration constants equals alpha_s EXACTLY; numerically the nearest tabulated rational (1/N_c^2) sits 7.56% away (4 pi u_0^2/9 = 1.0756), i.e. the would-be identity 'pi u_0^2 = 9/4' fails at 7.56%  (4 pi u_0^2/9 = 1.075576; pi u_0^2 = 2.420046 vs 9/4 = 2.25 (7.56% off); min rational gap = 7.56%)
+  [PASS][A] F3 elimination logic: at beta = 0 EXACT supply of alpha_s per decoupling by link integration alone is impossible (F2 rationality obstruction) and no computed per-object weight is alpha_s (E4); at one-link-exact beta = 6 the per-decimation factor is 9.68x-10.6x displaced in every declared variant, bath convention, and stress bracket (B3/B4) — the inventory's S1 kill criterion fires; S1 STANDALONE is eliminated, and the 4 pi's only landed supplier remains the Green-kernel/Plancherel readout chain, so S1 REFINES to the composite S1' (finite-beta link integration COMPOSITED with the readout kernel chain: group-theory rationals from links, the 4 pi from the kernel)  (min beta=6 displacement = 9.681x)
+
+--- Section G [B]: upstream notes, licenses, and parent-note fences on disk ---
+  [PASS][B] G1 route-inventory synthesis on disk: names S1 ('strong-coupling one-link Haar / Kawamoto-Smit lineage'), states the kill criterion this probe executes ('an exact one-link computation whose per-decoupling factor is O(1)-displaced...'), the NJL leading-order constraint (G_eff = 1/(2 N_c) = 1/6), and the non-modification rule this note obeys
+  [PASS][B] G2 supplier chain on disk: block02 records the target 'alpha_s = 0.1033038' 'per taste decoupling'; the B1 plaquette license ('admitted comparison/reuse number', 0.5934) covers this probe's u_0; the landed 4 pi supplier is the Z3 Plancherel/Green-kernel bridge ('alpha_bare = 1 / (4 pi)', 'G(r) -> 1/(4 pi |r|)') — the kernel chain S1' composites with
+  [PASS][B] G3 parent-note honesty fences on disk: labels the bath and matching sector 'declared model' content, records the S1 -> S1' refinement ('composite route S1''), marks the 1/N_c^2 proximity 'numerology-risk', states the S1 row is refined and 'NOT removed', and 'does not close the DELTA0 gate'; forbidden closure tokens absent  (missing = [], hit = [])
+
+  RESIDUAL (declared-open): the alpha_s PER-DECOUPLING ATTACHMENT rule (block02 R1) remains UNSUPPLIED.  This probe ELIMINATES route S1 STANDALONE: at beta = 0 exact Haar link integration yields only rationals and cannot exactly supply the pi-carrying alpha_s = 1/(4 pi u_0^2) (Arm 3); at one-link-exact beta = 6 the per-decimation factor is 9.68x-10.6x displaced under every declared variant, bath convention, and stress bracket (Arm 1, declared bath).
+  RESIDUAL (declared-open): the surviving content of S1 REFINES to the composite route S1' (declared-open, NOT probed here): finite-beta link integration COMPOSITED with the Green-kernel/Plancherel readout chain — group-theory rationals from the links, the 4 pi from the kernel.  Neither a closing nor an eliminating computation for S1' has been performed; the inventory is NOT modified.
+  RESIDUAL (declared-open): the DELTA0 magnitude gate (HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) remains OPEN: the obstruction is sharpened (S1 standalone eliminated, composite S1' identified), not closed.
+
+  OBSERVATION (bounded, numerology-risk flagged — NOT a residual, NOT a closure): 1/N_c^2 = 0.1111 sits 1.0756x from the required alpha_s = 0.1033038 — INSIDE the inventory's factor-2 observation window.  Where it arises in the computed structures: two-dimer products across two links ((1/N_c)^2), c_3 = 1/36 = (1/N_c!)^2, and the fourth-moment Weingarten layer (U(3) constants Wg ~ 1/(N^2-1) = 1/8 and -1/(N(N^2-1)) = -1/24, cited parallel-reference only, NOT verified here).  NO per-threshold attachment of one 1/N_c^2 per decimated mode is derivable from anything computed here: every weight attaches per OBJECT, and the would-be identity 'pi u_0^2 = 9/4' fails at 7.56%.  Three MORE tabulated rationals also fall in the factor-2 window (1/(2N_c) and 1/N_c! at 1.6134x, c_2 = 1/12 at 0.8067x) — small rationals populate a factor-2 window generically, which is itself the strongest reason to distrust the proximity.  NUMEROLOGY RISK: no supplier, no mechanism, no claim.
+
+--- Terminal class-D fence: external comparators ---
+  (No PDG quantity is needed or consumed by this probe; all factors and weights
+   are internal structure only.)
+  [PASS][D] H1 self-scan: the PDG VEV literal appears ZERO times in this runner's source — no comparator consumed anywhere
+
+==============================================================================
+ Breakdown: A=11 B=3 C=9 D=1 RESIDUAL=3 OBSERVATION=1
+ TOTAL: PASS=24 FAIL=0
+ VERDICT: established (bounded): the exact one-link expectation at the fixed
+   E3 saddle bath gives a per-decimation factor 9.68x-10.6x displaced from
+   alpha_s in every declared variant at beta = 6 (the link integral was
+   always exact; the bath is the declared model); at beta = 0 every link-
+   integration constant is an exact rational, so the pi-carrying alpha_s
+   cannot be supplied exactly by beta = 0 link integration at all.  S1
+   STANDALONE is eliminated at its kill criterion; the surviving content
+   REFINES to the composite route S1' = finite-beta link integration x the
+   Green-kernel/Plancherel readout chain (the 4 pi's only landed supplier).
+   NOT claimed: closure, any licensed-surface reproduction, any model-
+   independent statement, or any content for the 1/N_c^2 proximity beyond
+   a numerology-risk-flagged observation.  DELTA0 stays open; the inventory
+   is not modified.
+==============================================================================
+
+----- stderr -----
+

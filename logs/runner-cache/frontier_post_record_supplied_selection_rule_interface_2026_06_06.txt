@@ -1,0 +1,81 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_supplied_selection_rule_interface_2026_06_06.py
+runner_sha256: 893bd25252ed3fbff992f78182083fe23bce4592b5c76bc16bffd4dbea2d3465
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_SUPPLIED_SELECTION_RULE_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_SUPPLIED_SELECTION_RULE_INTERFACE_2026-06-06.md contains: actual_current_surface_status: exact-support
+PASS docs/POST_RECORD_SUPPLIED_SELECTION_RULE_INTERFACE_2026-06-06.md contains: margin stability
+PASS docs/POST_RECORD_SUPPLIED_SELECTION_RULE_INTERFACE_2026-06-06.md contains: stable selected dial location under that supplied rule
+PASS docs/POST_RECORD_SUPPLIED_SELECTION_RULE_INTERFACE_2026-06-06.md contains: This does not force the dial
+PASS docs/POST_RECORD_SUPPLIED_SELECTION_RULE_INTERFACE_2026-06-06.md contains: generation/Koide dial
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md exists
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: Does not derive probabilities
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: Does not select a Koide/generation dial location
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: post-record append action on O*
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md exists
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: probability laws, Born typicality, and transition rates
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: dial selection
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: exact post-record dynamics has no edge to production
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md exists
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: bounded and conditional lanes
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: does **not** unlock verdict changes by itself
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: rows needing probability laws
+
+------------------------------------------------------------------------------
+Finite selector checks
+------------------------------------------------------------------------------
+PASS supplied max-with-priority selector chooses s=0 :: s=0
+PASS winner gap is exact :: 1/5
+PASS selection is idempotent on same scores
+PASS epsilon below half-gap preserves selection
+PASS epsilon equal to half-gap loses strict margin
+PASS tie argmax has two candidates without priority
+PASS supplied priority resolves tie
+
+------------------------------------------------------------------------------
+Supplied score-source examples
+------------------------------------------------------------------------------
+PASS low-A supplied law normalizes
+PASS high-A supplied law normalizes
+PASS likelihood score map is exact :: {'low_A': Fraction(4, 625), 'high_A': Fraction(27, 256)}
+PASS max-likelihood supplied rule chooses high-A
+PASS supplied prior normalizes
+PASS posterior score map normalizes :: {'low_A': Fraction(1137664, 1139539), 'high_A': Fraction(1875, 1139539)}
+PASS posterior supplied rule chooses low-A under low-heavy prior
+
+------------------------------------------------------------------------------
+Supplied dial-score stability checks
+------------------------------------------------------------------------------
+PASS supplied dial-score selector chooses s=0 :: dial_s=0
+PASS dial-score gap is positive :: 1/6
+PASS dial location is stable below half-gap
+PASS dial location is not Record-forced flag
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS Record-derived candidate-set flag is false
+PASS Record-derived score-map flag is false
+PASS Record-derived selection-rule flag is false
+PASS Record-derived tie-priority flag is false
+PASS Record-derived physical-probability flag is false
+PASS Record-derived Hamiltonian/clock flag is false
+PASS generation/Koide dial forced flag is false
+PASS audit verdict applied flag is false
+
+SUMMARY: PASS=44 FAIL=0
+SUPPLIED_SELECTION_RULE_INTERFACE=TRUE
+POSITIVE_MARGIN_IMPLIES_LOCAL_STABILITY=TRUE
+RECORD_DERIVES_SELECTION_RULE=FALSE
+GENERATION_OR_KOIDE_DIAL_FORCED=FALSE
+
+----- stderr -----
+

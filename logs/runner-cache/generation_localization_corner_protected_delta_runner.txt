@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/generation_localization_corner_protected_delta_runner.py
+runner_sha256: f89a1295977bb383beea3becb0cda54569b49b885c7d20afbf391460ffca0c87
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+==============================================================================
+GENERATION LOCALIZATION = momentum corners: J-I corner-protected; delta<0; |delta| IR  [class A]
+==============================================================================
+
+-- (0) 2026-06-07 source bridge for periodic Vq / Hartree-Fock normalization --
+  [PASS] target note cites the 2026-06-07 one-hop bridge note, runner, and cache
+  [PASS] bridge note proves the finite periodic boundary and normalization, not an external textbook import
+  [PASS] bridge runner exists and has a green cached output  (generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.txt)
+  [PASS] retained bounded mediator status is read from the ledger without widening it  (retained_bounded)
+  [PASS] generation-corner inputs remain retained or retained_bounded on the current ledger  (['retained', 'retained_bounded', 'retained'])
+
+-- (1) the three generation corners carry distinct joint translation characters --
+  [PASS] the three hw=1 corners have three DISTINCT joint (T_x,T_y,T_z) sign characters (retained: translations separate the generations)  ((-1, 1, 1),(1, -1, 1),(1, 1, -1))
+
+-- (2) every generation pair has eps(Delta k)=8 => J-I form corner-symmetry-protected --
+  [PASS] all three generation pairs share the SAME inter-corner transfer eps(Delta k)=8 (each pair differs by two pi-flips) => identical exchange => exact C3 (J-I) form  (eps(Delta k) = [8.0, 8.0, 8.0])
+
+-- (3) exact two-fermion mutual energy matches Hartree-Fock, and delta<0 (sign cross-check) --
+  [PASS] L=4: exact lattice two-fermion delta == HF formula [Vq(0)-Vq(Δk)]/N  (exact=-7.8115e+02 hf=-7.8115e+02)
+  [PASS] L=6: exact lattice two-fermion delta == HF formula [Vq(0)-Vq(Δk)]/N  (exact=-2.3145e+02 hf=-2.3145e+02)
+  [PASS] delta<0 for all three generation pairs (sign re-confirmed from the momentum picture, independent of the spatial-packet route) and all equal (=> J-I form)  (delta(pairs) = ['-4.999e+01', '-4.999e+01', '-4.999e+01'])
+
+-- (4) |delta| reduces to the mediator IR monopole (~1/(N mu^2)), not a localization distance --
+  [PASS] |delta| scales as 1/N (the q=0 Hartree monopole -G/(N mu^2) dominates; the corner Fock part ~G/(8N) is subleading) => the magnitude is set by the mediator IR scale (G, mu^2), NOT by a localization distance => stays open, wide-window robust  (|delta|*N (const over L) = 49993.751; Fock/Hartree ~ mu^2/8 = 1.25e-04)
+  [PASS] the q=0 monopole carries essentially all of |delta| (corner structure fixes the FORM and SIGN, the IR scale fixes the magnitude)  (Hartree fraction of |delta| = 1.00013)
+
+==============================================================================
+TOTAL: PASS=12 FAIL=0
+FINDING: the generation 'localization' is the retained momentum-corner structure (no spatial separation). The three corners' equal inter-transfer eps(Δk)=8 protects the exact C3 (J-I) form by cubic corner symmetry; the two-fermion mutual energy is delta<0 (sign re-confirmed from the momentum picture); and |delta| is dominated by the q=0 mediator monopole (~1/(N mu^2)) -- so the magnitude reduces to the mediator IR scale, NOT to the localization, and stays open (wide-window robust).
+
+----- stderr -----
+

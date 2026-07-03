@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py
+runner_sha256: cdda683982cd9b26c4a16abb67c55cbb4f6e5a92b47c4296d479671fbc6c6b17
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+
+==============================================================================
+POSITIVE half: partition-given-K-reality (derived, weight-clean)
+==============================================================================
+[PASS] C^3 = I
+[PASS] S = C+C^2 is Hermitian
+[PASS] S is K-even: conj(S) = S
+[PASS] eig(S) = {-1,-1,+2} (singlet + degenerate doublet)  --  [-1. -1.  2.]
+[PASS] rank(P_singlet)=1, rank(P_doublet)=2
+[PASS] P_singlet + P_doublet = I (2-block partition)
+[PASS] D-map no-op on C_3-invariant H for all sampled r (||P0 H P1||=0)  --  max off-block=8.21e-16, r-samples=[0.0, 0.13, 1.0, 5.0, 12.2]
+[PASS] => partition delivered, weight r left FREE (weight-clean: no weight leak)
+
+==============================================================================
+NEGATIVE half: A=i(C-C^2) cannot beat Gap A (the no-go)
+==============================================================================
+[PASS] A = i(C-C^2) is Hermitian
+[PASS] A is K-odd: conj(A) = -A
+[PASS] eig(A) = {-sqrt3, 0, +sqrt3} (resolves the doublet -> 3-mode/r=0)  --  [-1.732051  0.        1.732051]
+[PASS] A is the C_3 generator: exp(i t* A) = C^2 for t*=2pi/(3 sqrt3)
+[PASS] exp(i*(2pi/sqrt3)*A) = I (A-flow is PERIODIC, not a monotone arrow)
+[PASS] A spectrum is INDEFINITE (has both signs) -- unlike a clock H_gen>=0
+[PASS] [S, A] = 0
+[PASS] A-flow FREEZES S and A (no standing-vs-winding): ||S(t)-S||,||A(t)-A||=0  --  ||dS||=1.55e-15, ||dA||=1.65e-15
+[PASS] A commutes with S => A is block-diagonal in {P0,P1} (parity-blind to delta)  --  ||P0 A P1||=3.24e-16
+[PASS] delta direction (H - Hbar) is non-zero and K-odd
+[PASS] delta direction is proportional to A: (H-Hbar) = 2*Im(b)*A  --  ||(H-Hbar) - 2 Im(b) A||=0.00e+00
+[PASS] delta direction commutes with S (block-diagonal) => partition is BLIND to delta  --  off-block delta norm=6.47e-16 (delta lives in the S-commutant, = the A direction)
+[PASS] C_3-invariant K-odd Hermitian space = span{A} (1-dim); all commute with S
+[PASS] => a delta=0 selector must be T-odd AND non-commuting-with-S => must BREAK C_3 (= the chirality import); emergent time (C_3-invariant, conj-even) cannot supply it
+
+TOTAL: PASS=22 FAIL=0
+VERDICT: C_3-current bridge no-go checks pass.
+  Partition-given-K-reality is derived and weight-clean;
+  A=i(C-C^2) is the C_3 generator but commutes with S and is
+  spectrum-indefinite/periodic, so it cannot source the delta=0
+  selector. The selector must be T-odd AND non-commuting-with-S
+  (the open frontier). No r is forced.
+
+----- stderr -----

@@ -1,14 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_aps_block_by_block_forcing.py
-runner_sha256: 763878775d8c0b8c764f6248a2c53431085f4ba0568e8449b674df4581a424e1
+runner_sha256: 073fc0ac6bd58fa40b8f9fb2d220dc7e56211fbfdd47b95b2b6af5e432677659
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.35
+elapsed_sec: 0.97
 status: ok
 ----- stdout -----
 ========================================================================
-APS ETA = 2/9 BLOCK-BY-BLOCK CONDITIONAL SUPPORT CHAIN
+C3 LOCAL-DENSITY 2/9 BOUNDED SUPPORT MANIFEST
 ========================================================================
+=== (0) source-boundary checks ===
+  [PASS] 0a. note carries the 2026-06-07 local-density retargeting section: retargeting section present
+  [PASS] 0b. direct status is bounded local-density manifest: source status names the bounded direct target
+  [PASS] 0c. global PL/ABSS route is explicitly not load-bearing: global route excluded from direct proof load
+  [PASS] 0d. fixed-locus bridge is ledger retained_bounded: effective_status=retained_bounded
+  [PASS] 0e. fixed-locus bridge scope names C3 weights and local density only: fixed-locus row is the bounded A/B supplier, not the global bridge
+  [PASS] 0f. note names global topology and physical readout as out of scope: remaining blockers remain outside this row
 === (a) C_3[111] rotation structure ===
   [PASS] a1. C_3[111] via Rodrigues = cyclic permutation (e_1 -> e_2 -> e_3 -> e_1): Rodrigues at 2pi/3 about (1,1,1)/sqrt(3) matches permutation
   [PASS] a2. R has eigenvalue 1 (fixed axis): rotation fixes some direction
@@ -29,8 +36,8 @@ APS ETA = 2/9 BLOCK-BY-BLOCK CONDITIONAL SUPPORT CHAIN
   [PASS] d2. Weights read off: omega -> 1, omega^2 -> 2: (a, b) = (1, 2)
   [PASS] d3. (a, b) consistent with transverse eigenvalues = {(1,2), (2,1)} only: consistent = [(1, 2), (2, 1)]
 
-=== (e) ABSS equivariant fixed-point formula ===
-  [PASS] e1. ABSS eta(a=1, b=2, p=3) = 2/9: eta = 2/9
+=== (e) Local Lefschetz / fixed-point density formula ===
+  [PASS] e1. local density(a=1, b=2, p=3) = 2/9: eta = 2/9
 
 === (f) Core algebraic identity ===
   [PASS] f1. (omega - 1)(omega^2 - 1) = 3 exactly: (omega-1)(omega^2-1) = 3
@@ -48,42 +55,39 @@ APS ETA = 2/9 BLOCK-BY-BLOCK CONDITIONAL SUPPORT CHAIN
   eta(p=2, a=1, b=1) = 1/8
   eta(p=5, a=1, b=4) = 2/5
   eta(p=7, a=1, b=6) = 4/7
-  [PASS] g2. Alternative p in {2, 5, 7} give DIFFERENT eta; p=3 is the stipulated choice: eta(2,1,1)=1/8, eta(5,1,4)=2/5, eta(7,1,6)=4/7
+  [PASS] g2. Alternative p in {2, 5, 7} give DIFFERENT eta; p=3 is the fixed-locus choice: eta(2,1,1)=1/8, eta(5,1,4)=2/5, eta(7,1,6)=4/7
 
-=== (h) ABSS prerequisite checks under stipulated route ===
+=== (h) ABSS prerequisite diagnostics outside direct claim ===
   [PASS] h1. pi_i(PL/O) = 0 for i <= dim(PL S^3 x R) = 4 (Cerf-Munkres smoothing): pi_i(PL/O) for i=0..4: [0, 0, 0, 0, 0]
   [PASS] h2. S^3 = SU(2) is parallelizable (TS^3 trivial) ⟹ w_2(S^3) = 0 ⟹ spin: three linearly independent left-invariant fields give a global frame
   [PASS] h2b. H^1(S^3 x R; Z_2) = 0 ⟹ spin structure on S^3 x R is UNIQUE: H_1(S^3) = 0 ⟹ H^1(S^3; Z_2) = 0
   [PASS] h3. Normal action has det(R_normal - I) = 3 != 0 (Morse-Bott non-degenerate): det(R_normal - I) = (omega - 1)(omega^2 - 1) = 3
   [PASS] h4. SO(3) C_3 generator lifts to unit quaternion q in SU(2) with q^3 = -1: |q|^2 = 1, q^3 = (-1, [0, 0, 0])
-  [PASS] h5. ABSS prerequisites (h1)∧(h2)∧(h3)∧(h4) all verified executively: h1=True, h2=True, h3=True, h4=True
+  [PASS] h5. diagnostic ABSS prerequisites (h1)∧(h2)∧(h3)∧(h4) all verified executively: h1=True, h2=True, h3=True, h4=True
 
 === (i) Composite uniqueness consistency ===
-  [PASS] i1. Every (p, a, b) combination consistent with the stipulated C_3 route gives eta = 2/9: values = [2/9, 2/9]
+  [PASS] i1. Every (p, a, b) combination consistent with the fixed-locus C_3 route gives eta = 2/9: values = [2/9, 2/9]
   [PASS] i2. Among p in {2..7}, only p=3 with weights (1, 2) gives eta = 2/9: matches = [(3, 2/9)]
-  [PASS] i3. COMPOSITE: ambient APS eta = 2/9 follows inside the stipulated support chain: chain (a)->(b)->(c)->(d)->(e)->(f)->(g)->(h)->(i) is internally consistent and executable under the stipulations
+  [PASS] i3. COMPOSITE: bounded C3 local-density manifest closes at 2/9: source boundary plus chain (a)->(c)->(d)->(e)->(f)->(g)->(i) closes local density without global PL/ABSS
 
-Total: 29 PASS, 0 FAIL
+Total: 35 PASS, 0 FAIL
 
 Verdict:
-  Given the stipulated p=3, weights (1,2), and ABSS applicability
-  on the PL S^3 x R route, each algebraic block of the ambient
-  APS eta = 2/9 derivation is executable and structurally fixed:
+  Given the ledger-retained-bounded fixed-locus bridge, the direct
+  source claim now closes only the bounded C3 local-density manifest:
 
-    C_3[111] rotation    = 2pi/3 body-diagonal [stipulated route]
+    C_3[111] rotation    = 2pi/3 body-diagonal [fixed-locus bridge]
     eigenvalues          = (1, omega, omega^2) [fixed by rotation order]
     fixed locus          = body-diagonal (codim-2 on S^3)
     tangent weights      = (1, 2) mod 3 [from eigenvalues]
-    ABSS prerequisites   = spin + Morse-Bott + compact checks
+    ABSS prerequisites   = diagnostic-only, not direct claim load
     core identity        = (omega-1)(omega^2-1) = 3 [exact algebra]
-    result eta           = 2/9 [unique computation]
+    local density        = 2/9 [unique computation]
 
-  No alternative construction gives a different ambient eta under
-  the stipulated topological data. What remains open is the global
-  topological/ABSS bridge and the physical-observable bridge
-  identifying the selected-line Brannen phase with this ambient invariant.
+  The global topological/ABSS bridge and physical selected-line readout
+  remain named open bridges outside this row's direct target.
 
-  APS_ETA_2_9_CONDITIONAL_SUPPORT_CHAIN=TRUE
+  C3_LOCAL_DENSITY_2_9_BOUNDED_SUPPORT_MANIFEST=TRUE
 
 ----- stderr -----
 

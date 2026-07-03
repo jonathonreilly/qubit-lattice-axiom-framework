@@ -1,31 +1,56 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_latitude_quantizer_and_rp_selfdual_2026_05_30.py
-runner_sha256: b83a34df5ed238d5ccf823fca88f99db4b5ae19c3d3852112b6495f058e56c5e
+runner_sha256: 446a23286c3e5c2edcac2f69c97973a07676e7b8ec0992deb942c1332266f99c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
-[PASS] N1 cube angle 2/3 real but value-coincidence (single crossing at r=1/2)
-       cos^2 face=0.6667 edge=0.3333; latitude=Q roots=[-2.   0.5]
-[PASS] N4 M_2(C) idempotent trace/dim ratios are {0,1/2,1}; no 2/3 hostable
-       the only native 2/3 = R[Z3] doublet/total dimension -> Q=1, wrong direction
-[PASS] P1-CORRECTED RP edges at OPPOSITE signs: singlet-null b=-a/2, doublet-null b=+a
-       the |b|=a/2,|b|=a magnitude framing discarded the sign of b (=parity order parameter)
-[PASS] P2-REFUTED multiplicative |b|-inversion gives r=1/2 ONLY by discarding sign(b)
-       |b|-inversion fixes gm=0.7071->r=0.5 BUT on signed b sends -a/2->-a, +a->+a/2 (no swap)
-[PASS] P3-CORRECTED Mobius family => continuum of fixed points; r=1/2 NOT singled out
-       arith-mean-of-|b| -> r=0.5625=9/16 (NOT 1/16); signed-affine -> r=0.0625=1/16; mult -> r=1/2
+========================================================================================
+FLAVOR LATITUDE QUANTIZER / RP SELF-DUAL REPAIRED BOUNDARY
+========================================================================================
 
-SCORECARD PASS=5 FAIL=0
-VERDICT: no native latitude-quantizer among the 4 mechanisms (cube/self-consistency/
-entanglement/Cl3). The RP 'self-dual' lead is REFUTED (panel wf_9e9b766e, 20/20 circular):
-edge-swap involutions form a 1-param Mobius family (fixed points r=1/4,1/2,9/16,1,...);
-r=1/2 is picked ONLY by the multiplicative law = log|b| coordinate = block-count measure;
-and the edges are at opposite signs of b (the |b| framing discarded the parity sign).
-SURVIVING REFRAME (panel #2): r=1 = faithful TRACE on full algebra R[Z3]; r=1/2 = symmetric
-STATE on the abelian CENTER (non-tracial). Decidable question: does mass-gen read center
-labels (r=1/2) or the matrix trace (r=1)? Test via traciality + Jeffreys/Fisher.
+N1. cube-angle coincidence check
+[PASS] cube-angle 2/3 is real but a single crossing/value coincidence
+       cos2(face)=0.666667; cos2(edge)=0.333333; roots=[-2.   0.5]
+
+N4. finite idempotent host check
+[PASS] M2(C) idempotent trace/dim ratios are {0,1/2,1}; no 2/3 host
+       the native 2/3 remains the R[Z3] doublet/total dimension reading, not r=1/2
+
+RP signed-edge repair
+[PASS] RP edges are at opposite signed b values
+       singlet-null b=-0.5; doublet-null b=1.0
+[PASS] multiplicative |b|-inversion fixes r=1/2 only after discarding sign(b)
+       |b| gm=0.707107->r=0.500000; signed images -1.000, 0.500
+[PASS] arithmetic and signed-affine fixed points are different from the |b| geometric point
+       |b| arithmetic r=0.562500; signed-affine r=0.062500; |b| geometric r=0.500000
+
+Trace-vs-center correction for A = R[Z3] = R + C
+[PASS] R + C multiplication is commutative
+       xy=(-0.84, (0.41000000000000003+0.38000000000000006j)); yx=(-0.84, (0.41000000000000003+0.38000000000000006j))
+[PASS] equal central-idempotent state is tracial
+       phi_equal(xy)=-0.215000000000; phi_equal(yx)=-0.215000000000
+[PASS] regular/Plancherel state is tracial
+       phi_regular(xy)=-0.006666666667; phi_regular(yx)=-0.006666666667
+[PASS] trace property alone does not force a unique faithful weighting
+       equal-center=2.500000; regular=2.666667
+
+HS metric and readout boundary
+[PASS] I and J-I are HS-orthogonal with Gram diag(3,6)
+       Gram=[[3.0, 0.0], [0.0, 6.0]]
+[PASS] block-equal and per-real-mode readings are distinct
+       block-equal r=1/2 -> Q=2/3; per-real-mode r=1 -> Q=1
+
+Scope guard
+[PASS] source note guard present: N2/N3 historical broad claims are not certified by this repaired packet
+[PASS] source note guard present: equal central-idempotent state is tracial
+[PASS] source note guard present: trace property alone does not select between these functionals
+
+SCORECARD PASS=14 FAIL=0
+VERDICT: repaired demotion/boundary packet. No native latitude quantizer is
+certified here; RP self-dual r=1/2 is a |b|-coordinate artifact; and
+trace-vs-center is a functional-choice boundary, not a unique-trace theorem.
 
 ----- stderr -----
 

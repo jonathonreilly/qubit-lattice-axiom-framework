@@ -45,7 +45,9 @@ def check_note_scope() -> None:
     text = read_note()
     flat = " ".join(text.split())
     required = [
-        "**Claim type:** open_gate",
+        "**Claim type:** bounded_theorem / open_gate",
+        "2026-06-07 Boundary Retargeting",
+        "remains open and is not load-bearing for the direct local-support claim",
         "B-coupling -> B-field bridge open",
         "does not derive the charged-lepton Koide value",
         "does not approve",
@@ -202,7 +204,7 @@ def main() -> int:
         print("VERDICT: Koide orientation-blind count / B-field gate checks failed.")
         return 1
     print(
-        "VERDICT: orientation-blind count and B-field gate checks pass; "
+        "VERDICT: bounded orientation-blind count and B-field local gate checks pass; "
         "the B-coupling to B-field bridge remains open."
     )
     return 0

@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/flavor_hw_clifford_does_not_constrain_r_2026_06_02.py
+runner_sha256: dfcbe836e19b834ba1df7bfc21333afe3d49c4ce4ef1c52a881757bb649356fc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+[PASS] Weyl relation Z X = omega X Z, and Fourier F X F^dag = Z (Clifford normalizer)
+[PASS] at r=1/2, H is NOT a Fourier-eigenoperator: ||F H F^dag - H|| > 0 (=> 1/sqrt2 is not an F fixed point)
+       ||FHF^dag - H|| = 2.449 (nonzero)
+[PASS] pure-shift H is F-fixed only at r=0; nonzero for all r>0 (Fourier self-duality vacuous for the physical operator)
+       r=0.0:0.000; r=0.25:1.732; r=0.5:2.449; r=1.0:3.464
+[PASS] the genuine F-self-dual family K=aI+g(X+Z+X^2+Z^2) is F-fixed for ALL g => r=g^2 is a free dial, 1/2 unmarked
+[PASS] F-covariance forces b=c (off-diagonal balance) but leaves the diagonal a FREE => r not fixed
+       b=c F-fixed; b!=c not; a free for all values
+[PASS] trace and traceless-HS ratio are Fourier-conjugation invariant, but this is not value selection
+       trace=1.300+0.000j; hs2=1.058400
+[PASS] downstream occupancy atom: downstream occupancy theorem is ledger-registered as a bounded_theorem source
+       koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09: claim_type=bounded_theorem, note_path=docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md
+[PASS] downstream occupancy atom: Record axiom declines weighting and occupancy supply
+       checked live Minimal Axioms text
+[PASS] downstream occupancy atom: occupancy note records independence without adopting the premise
+[PASS] downstream occupancy atom: sector and orbit occupancy weights differ by exactly two
+       sector=2*pi/g, orbit=pi/g
+[PASS] downstream occupancy atom: orientation maps sector occupancy to r=1 and orbit occupancy to r=1/2
+       sector=1, orbit=1/2
+
+SCORECARD PASS=11 FAIL=0
+FINDING: the tested qutrit Heisenberg-Weyl/Fourier structure does NOT force r=1/2.
+'|b|/a=1/sqrt2 self-dual'
+is a magnitude word-coincidence (H not F-fixed there); the true F-self-dual family has r free;
+F-covariance forces only b=c (off-diagonal), not r. Symmetry axis re-confirms
+r=1/2 is unforced by the scoped HW/Fourier route.
+DOWNSTREAM: the residual is the explicit occupancy/slot-degree atom, not a HW/Fourier equation.
+
+----- stderr -----

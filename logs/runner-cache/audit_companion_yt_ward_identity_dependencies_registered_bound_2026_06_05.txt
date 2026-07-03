@@ -1,0 +1,88 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05.py
+runner_sha256: bfd0574e9ca84447286434a0151bd1393de011c9dc8800bcbf01d01fbc5794b7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+
+========================================================================
+BLOCK 1: Framework structure constants and Q_L = (2,3) dimension
+========================================================================
+[PASS] N_c = 3 (SU(3) color fundamental; native-gauge-closure chain)  --  framework structure constant, not a fit
+[PASS] N_iso = 2 (SU(2) weak isospin)  --  framework structure constant, not a fit
+[PASS] dim(Q_L) = N_c * N_iso = 6  --  3 * 2 = 6 (exact integer arithmetic)
+
+========================================================================
+BLOCK 2: Unit-residue normalization Z^2 = N_c * N_iso = 6 (parent D11)
+========================================================================
+[PASS] Explicit Q_L index contraction sum = N_c * N_iso = 6  --  sum = 6
+[PASS] Unit-residue requirement gives Z^2 = 6, Z = sqrt(6)  --  Z^2 = 6, Z = sqrt(6)
+[PASS] Alternative composite irreps give Z^2 != 6 (singlet direction is unique)  --  Z^2(1,8) = 8, Z^2(3,1) = 9/2, vs Z^2(1,1) = 6
+
+========================================================================
+BLOCK 3: SU(N_c) color-singlet Fierz coefficient = -1/(2 N_c) (parent D12)
+========================================================================
+[PASS] Gell-Mann generators satisfy Tr(T^A T^B) = delta_{AB}/2  --  explicit numpy trace over the 8 generators
+[PASS] SU(3) Fierz identity reproven at machine precision over all 81 index tuples  --  max |LHS - RHS| = 5.55e-17
+[PASS] Color-singlet (delta_ab delta_cd) channel coefficient = -1/(2 N_c) = -1/6  --  coefficient = -0.1666666667
+
+========================================================================
+BLOCK 4: Lorentz-Clifford scalar Fierz coefficient |c_S| = 1 (parent S2)
+========================================================================
+[PASS] Clifford algebra {gamma^mu, gamma^nu} = 2 g^{mu nu} I_4 reproven  --  explicit 4x4 gamma matrices
+[PASS] Lorentz scalar Fierz coefficient |c_S| = 1 (scalar channel nonzero)  --  |c_S| = 1.0000000000
+[PASS] Tensor channel c_T = 0 (consistency of the vector-vector Fierz)  --  c_T = 0.000e+00
+
+========================================================================
+BLOCK 5: Same-1PI consistency y_t_bare^2 = g_bare^2/(2 N_c) (symbolic)
+========================================================================
+[PASS] Representation A coefficient = |c_S| * g_bare^2 / (2 N_c) (symbolic)  --  rep_A = g_bare**2/6
+[PASS] Same-1PI identity: y_t_bare^2 - g_bare^2/(2 N_c) == 0 (symbolic)  --  rep_A == rep_B as functions of g_bare
+
+========================================================================
+BLOCK 6: H_unit matrix element y_t_bare = g_bare/sqrt(6) reproven two ways
+========================================================================
+[PASS] Route 1: sqrt(g_bare^2/(2 N_c)) simplifies to g_bare/sqrt(2 N_c) for g_bare>0  --  y_t_bare = sqrt(6)*g_bare/6
+[PASS] Unit-norm singlet state <S|S> = 1 (explicit 6-dim construction)  --  <S|S> = 1.0000000000
+[PASS] All 6 Clebsch-Gordan overlaps equal 1/sqrt(6) (singlet uniformity)  --  overlap = 0.4082482905
+[PASS] Route 1 (same-1PI) == Route 2 (Clebsch-Gordan), symbolic in g_bare  --  both = g_bare/sqrt(6)
+[PASS] At canonical g_bare=1, y_t_bare = 1/sqrt(6) (matches literature comparator)  --  y_t_bare = 0.4082482905; comparator 1/sqrt(6) = 0.4082482905
+
+========================================================================
+BLOCK 7: g_bare = 1 is a rescaling convention (retained basis identity)
+========================================================================
+[PASS] Rescaling identity beta(g/c, N) - c^2 beta(g, N) == 0 (sympy exact)  --  pure polynomial algebra over the rationals
+[PASS] Joint-rescaling invariant: (c^2 beta)(g/c)^2 - 2 N == 0 (product = 2 N)  --  beta * g^2 invariant under (g, beta) -> (g/c, c^2 beta)
+[PASS] Wilson convention instance beta(g_bare=1, N_c) = 2 N_c (symbolic substitution)  --  beta = 6 at g_bare=1, N_c=3 (convention, not a derived value)
+
+========================================================================
+BLOCK 8: Normalized form factor F = y_t_bare/g_bare is g_bare-FLAT
+========================================================================
+[PASS] Form factor F = y_t_bare/g_bare = 1/sqrt(2 N_c), independent of g_bare  --  F = sqrt(6)/6
+[PASS] dF/dg_bare == 0 (form factor is g_bare-flat -> g_bare=1 is a convention)  --  the canonical-surface g_bare=1 choice carries no physical content
+[PASS] F invariant under joint rescaling (g_bare, beta) -> (g_bare/c, c^2 beta)  --  the load-bearing ratio is rescaling-invariant
+
+========================================================================
+BLOCK 9: Dependency-registration check (reads registry/ledger; writes nothing)
+========================================================================
+[PASS] Dep 1 'staggered_dirac_realization_gate_note_2026-05-03' is a REGISTERED Tier-A derivation target (AC_phi_lambda)  --  derivation_targets = ['staggered_dirac_realization_gate_note_2026-05-03', 'strong_cp_theta_zero_note']
+[PASS] Dep 2 basis 'beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10' is retained-grade in the ledger  --  ledger_effective_status:retained
+[PASS] g_bare=1 convention 'g_bare_rigidity_theorem_note' is registered (Tier-A conventions) and retained-grade  --  in conventions=True, ledger_effective_status:retained_bounded
+[PASS] Source note exposes G_BARE_RIGIDITY_THEOREM_NOTE.md as a one-hop convention dependency  --  the re-audit blocker requested the retained convention/rigidity edge
+[PASS] Source note preserves the finite-link scope boundary for the rigidity dependency  --  prevents using rigidity as a Wilson/beta or measured-coupling theorem
+[PASS] Target row 'yt_ward_identity_derivation_theorem' is NOT retained-grade (so it must be backticked, not linked)  --  ledger_effective_status:unaudited
+
+========================================================================
+BLOCK 10: Re-audit CASE arithmetic (no status is written)
+========================================================================
+[PASS] Clean bounded_theorem row with deps {Tier-A target, retained rescaling note, retained convention note} -> Tier-A-bounded candidate  --  resolved = retained_bounded (published compute_effective_status rule)
+[PASS] Counterfactual: linking the conditional target row would cap the row (not Tier-A-bounded)  --  resolved = retained_pending_chain (this is why the note backticks the target row)
+
+========================================================================
+TOTAL: 33 PASS / 0 FAIL
+========================================================================
+
+----- stderr -----
+

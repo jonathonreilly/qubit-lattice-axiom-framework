@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/frontier_edge_two_site_framing_no_native_color_route_record_text_2026_06_08.py
+runner_sha256: 4c99ea67766c1589124e6c000e5c1f1be036c9aec994d905bec7da9ad2471a1e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.24
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  (G-A) the native two-site SWAP is color-blind (commutes with all g x g)
+==============================================================================
+  [PASS] SWAP exactly exchanges tensor factors on the 2x2 matrix-unit basis
+  [PASS] SWAP commutes with g (x) g for every g (100 Haar samples) — carries NO internal direction  (max [SWAP, g(x)g] = 5.6e-17)
+  [PASS] SWAP is a REAL permutation (no phase/holonomy data: SWAP = SWAP* = SWAP^T, SWAP^2 = I)
+  [PASS] single qubit link: dim u(2) = 4 < dim su(3) = 8 — no faithful native su(3) on a qubit link (the QUBIT_LINK_U2 boundary, restated)
+==============================================================================
+Part 2  (G-B) extracting Ad-class/trace content needs a supplied continuous average
+==============================================================================
+  [PASS] Schur: a nontrivial projector does not commute with the irreducible SU(3) action -> the only central partition is {I}, D(U) = U (registers the FRAMED link, not the class)
+  [PASS] the Ad-class/trace content U -> (TrU/Nc) I is the HAAR AVERAGE (continuous group integral; MC 50k) — a supplied generator, not a record partition  (max dev 0.0043)
+   => the edge/two-site framing COLLAPSES into the supplied-carrier/color-trace
+      gate: pre-gauging the edge is color-blind (Part 1); post-hoc class extraction
+      needs the continuous average Record does not supply (retained boundaries).
+==============================================================================
+Part 3  (G-C) MINIMAL_AXIOMS_2026-06-05: durable readout + additivity; NO cross-site clause
+==============================================================================
+  [PASS] the axiom file states: a record is durable registration of the realized outcome
+  [PASS] the axiom file states the realized outcome is the K/CPT orbit of the realized central sector
+  [PASS] the axiom file states finite scalar additivity with I(empty)=0
+  [PASS] the axiom file explicitly disclaims readout context, weighting, probability, dynamics, within-sector data, and occupancy rule
+  [PASS] the axiom file contains NO 'cross-site' clause (the paraphrase some routes leaned on does not exist in the canonical text)
+  [PASS] the axiom file supersedes the 2026-06-04 wording (it is the live authority)
+==============================================================================
+TOTAL: PASS=12 FAIL=0
+==============================================================================
+SCOPE (narrow route-demote): the EDGE/TWO-SITE FRAMING route to native color /
+  ADM-1 is demoted — the native two-site SWAP is color-blind (commutes with all
+  g x g; real permutation; no holonomy), the single-qubit link carries only u(2),
+  and extracting Ad-class content requires a SUPPLIED continuous Haar average (the
+  same supplied-carrier/color-trace gate; Record's retained boundaries).  PLUS the
+  text correction: the canonical Record axiom (MINIMAL_AXIOMS_2026-06-05) supplies
+  durable realized-outcome registration plus finite scalar additivity, disclaims
+  readout context / weighting / probability / dynamics / occupancy, and contains
+  NO 'cross-site identification' clause — routes that
+  leaned on that paraphrase imported structure.  Does NOT foreclose supplied-
+  carrier models (TWO_ENDPOINT_GAUSS untouched), does NOT close ADM-1 or the
+  gauging-selection gate.  No new axiom/import; no PDG value.
+
+----- stderr -----
+

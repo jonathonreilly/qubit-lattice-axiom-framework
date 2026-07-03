@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/frontier_neutrino_readout_det_uniqueness_inapplicable.py
+runner_sha256: 316172660b0588e702adf8bab2b8825748e4650b242abcd112a8e9e3040b642f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.22
+status: ok
+----- stdout -----
+PASS T1 D_kin real & anti-symmetric (D^T=-D) = det-uniqueness operator class
+PASS T2 D_kin VANISHES on the hw=1 generation corners (||.||=0)
+PASS T2b => D_kin non-invertible (zero) on the generation sector (det-uniqueness X1 domain empty)
+PASS T3 generation-sector mass is real-symmetric (source J, NOT anti-Hermitian)
+PASS T4 CONTROL: off-corner D_kin is NONZERO (vanishing is corner-specific, not trivial)
+PASS T4b full D_kin is a nonzero operator (norm>0)
+PASS T5 det(mI+jY)=m^16 (nilpotent) and det(mI+jG1)=(m^2-j^2)^8 (scalar-baseline diagnostics)
+PASS T5b scalar baseline m*I is real-symmetric, not anti-Hermitian (outside det-uniqueness X1)
+
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

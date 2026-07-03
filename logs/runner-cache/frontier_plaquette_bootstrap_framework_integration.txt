@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_plaquette_bootstrap_framework_integration.py
-runner_sha256: 6b2579541c29b8f4de83b0f458d88f024b21c6e29ceaea52bf2d1455be1d48cf
+runner_sha256: 01cee036b9ae8eb7077d6170050e8426bc5699c90267be42f42d1484a747e9c4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -11,7 +11,13 @@ Plaquette Bootstrap — Framework-Integration Verification Runner
 Source note: docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md
 ==============================================================================
 
---- Section 1: Lemma BB1 — Wilson-loop Gram matrix PSD (2x2 examples) ---
+--- Section 0: repaired scope manifest ---
+  ✓ note names A11 A_+^(2), Gauge OS Step 1, and mixed-cumulant source packet
+     all required scope markers present
+  ✓ note removes stale broad/β=6-theorem wording
+     no forbidden stale scope markers present
+
+--- Section 1: Lemma BB1 — scoped Wilson-loop Gram PSD (2x2 examples) ---
   ✓ ⟨P⟩=0.5, C=+0.05 (positive)
      eigs=[0.03967221921331484, 1.2603277807866853]
   ✓ ⟨P⟩=0.5, C=0   (zero correlator)
@@ -28,31 +34,30 @@ Source note: docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md
   numerical example: ⟨P⟩=0.5, ⟨P_- · P⟩=0.3, C_conn=0.05, ⟨Θ(F)·F⟩ = 0.04999999999999999 (RP requires ≥ 0)
     ✓ Algebraic identity ⟨Θ(F)·F⟩ = ⟨P_-·P⟩ - ⟨P⟩² = C_conn ≥ 0 verified
 
---- Section 3: Mixed-cumulant audit estimate at β=6 ---
+--- Section 3: Mixed-cumulant onset coefficient and formal β=6 diagnostic ---
   P_1plaq^LO(β=6) = β/18 = 0.333333  (SU(3) strong-coupling LO)
-  Mixed-cumulant correction = β^5/472392 = 0.016461
-  P_full estimate (LO + first nonlocal) = 0.349794
-  Note: strong-coupling expansion is NOT convergent at β=6 (crossover region);
-  this LO + first-nonlocal estimate (~0.350) is far below MC 0.5934.
-  Higher orders of P_1plaq(β) (SU(3) character expansion) shift this up to ~0.43-0.48,
-  still below MC. The bootstrap framework-integration honestly identifies this gap
-  as the named obstruction for tightening (block 02 + industrial SDP).
+  Retained mixed-cumulant onset coefficient = β^5/472392 = 0.016461
+  Formal β=6 diagnostic (LO + first nonlocal) = 0.349794
+  Note: finite-order small-β onset data do NOT control the β=6 crossover region;
+  this diagnostic (~0.350) is far below MC 0.5934 and is not
+  a theorem-scope beta=6 bound. The framework-integration honestly identifies
+  this as the named obstruction for tightening (higher equations / SDP).
 
 --- Section 4: Comparison with canonical MC + bridge-support + literature ---
-  Bootstrap LO + first-nonlocal estimate (this note):  ~0.350-0.48
+  Bootstrap LO + first-onset diagnostic (this note):   ~0.350 (not a bound)
   Canonical lattice MC (PLAQUETTE_SELF_CONSISTENCY):    0.5934  ← target
   Bridge-support analytic upper-bound candidate:        0.59353  (+0.022%)
   Kazakov-Zheng 2022 SU(∞) bracket (λ≈1.35, L_max=16):  0.59 - 0.61
   Kazakov-Zheng 2024 SU(2) finite-N (physical range):   ~0.1% precision
 
   Bracket comparison:
-  - Bootstrap LO bound (this note):  ~0.4 (weak; small truncation)
+  - Bootstrap LO diagnostic (this note): ~0.350 (weak; small truncation)
   - Bridge-support upper bound:       0.59353
   - MC value:                         0.5934
   - Industrial bootstrap (literature): bracket ~0.59-0.61 (much tighter)
 
-  Conclusion: small-truncation analytical bound from framework-integration is
-  weaker than industrial SDP bootstrap by ~10x in precision. Tightening
+  Conclusion: small-truncation diagnostic from framework-integration is
+  much weaker than industrial SDP bootstrap. Turning it into a bound
   requires either explicit Migdal-Makeenko derivation on framework surface
   (Section 6 obstruction) or industrial SDP infrastructure (out of scope).
 
@@ -60,7 +65,7 @@ Source note: docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md
 --- Section 5: Named obstruction for tightening ---
   [BOOTSTRAP-TIGHTENING OBSTRUCTION]:
   The framework's existing primitives + 2x2 small-truncation bootstrap
-  give only weak analytical bounds on ⟨P⟩(β=6). Tightening requires:
+  give only weak formal diagnostics for ⟨P⟩(β=6). Tightening requires:
     (a) explicit Migdal-Makeenko / Schwinger-Dyson loop equations on
         framework's V-invariant minimal block, OR
     (b) higher-truncation (L_max ≥ 6) Gram matrices + industrial SDP, OR
@@ -71,13 +76,13 @@ Source note: docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md
 All checks PASSED.
 
 Summary:
-  - Lemma BB1: Wilson-loop Gram matrix PSD on framework surface, derivable
-    from A11 (RP theorem) directly. Verified numerically.
+  - Lemma BB1: Wilson-loop Gram matrix PSD on the verified A_+^(2)
+    Wilson-loop surface, derivable from retained-bounded A11. Verified numerically.
   - Lemma BB1': Connected reflected-plaquette correlator non-negativity
     from RP applied to mean-subtracted observables. Algebraic identity.
   - Smallest non-trivial 2x2 Gram PSD = BB1' (equivalent).
-  - Mixed-cumulant audit gives P_full(6) ≈ 0.35-0.48 (strong-coupling region;
-    not convergent at β=6).
+  - Mixed-cumulant onset gives the retained β^5/472392 coefficient;
+    the β=6 substitution is only a formal diagnostic, not a bound.
   - Sharper named obstruction: tightening requires Migdal-Makeenko on
     framework surface OR industrial SDP OR framework-specific positivity.
 

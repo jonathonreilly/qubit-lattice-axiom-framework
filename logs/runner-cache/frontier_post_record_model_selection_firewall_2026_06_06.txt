@@ -1,0 +1,85 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_model_selection_firewall_2026_06_06.py
+runner_sha256: c66f6072a027a965d7a55c0ca0453b98a7dde75b87fac38c2039a011840bac99
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_MODEL_SELECTION_FIREWALL_2026-06-06.md exists
+PASS docs/POST_RECORD_MODEL_SELECTION_FIREWALL_2026-06-06.md contains: actual_current_surface_status: no-go
+PASS docs/POST_RECORD_MODEL_SELECTION_FIREWALL_2026-06-06.md contains: trace_class: negative_route_pruning
+PASS docs/POST_RECORD_MODEL_SELECTION_FIREWALL_2026-06-06.md contains: same likelihood vector can yield different posterior argmaxes
+PASS docs/POST_RECORD_MODEL_SELECTION_FIREWALL_2026-06-06.md contains: does not force a unique model
+PASS docs/POST_RECORD_MODEL_SELECTION_FIREWALL_2026-06-06.md contains: generation/Koide dial
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md exists
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: Does not derive probabilities
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: Does not select a Koide/generation dial location
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: post-record append action on O*
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md exists
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: probability laws, Born typicality, and transition rates
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: dial selection
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: exact post-record dynamics has no edge to production
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md exists
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: does **not** unlock verdict changes by itself
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: rows needing probability laws
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: dial selection
+
+------------------------------------------------------------------------------
+Prior-dependence counterexample
+------------------------------------------------------------------------------
+PASS low-A law normalizes
+PASS high-A law normalizes
+PASS low-A likelihood is exact :: 4/625
+PASS high-A likelihood is exact :: 27/256
+PASS maximum likelihood favors high-A
+PASS equal prior normalizes
+PASS low-heavy prior normalizes
+PASS equal-prior posterior favors high-A :: {'low_A': Fraction(1024, 17899), 'high_A': Fraction(16875, 17899)}
+PASS low-heavy-prior posterior favors low-A :: {'low_A': Fraction(1137664, 1139539), 'high_A': Fraction(1875, 1139539)}
+PASS same likelihood vector yields different posterior argmaxes
+
+------------------------------------------------------------------------------
+Tie and family-extension counterexamples
+------------------------------------------------------------------------------
+PASS fair law normalizes
+PASS skew law with same observed score normalizes
+PASS two distinct laws have same observed likelihood :: {'fair': Fraction(1, 4), 'skew': Fraction(1, 4)}
+PASS maximum-likelihood selector ties without tie-breaker
+PASS spike law normalizes
+PASS family extension changes maximum-likelihood winner :: {'fair': Fraction(1, 4), 'skew': Fraction(1, 4), 'spike': Fraction(1, 1)}
+PASS extension demonstrates admissibility rule is required
+
+------------------------------------------------------------------------------
+Threshold-dependence counterexample
+------------------------------------------------------------------------------
+PASS likelihood ratio is exact :: 16875/1024
+PASS ratio passes threshold 2
+PASS ratio fails threshold 20
+PASS same ratio has different decisions under different thresholds
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS Record-derived model-family flag is false
+PASS Record-derived prior flag is false
+PASS Record-derived tie-breaker flag is false
+PASS Record-derived threshold flag is false
+PASS Record-derived admissibility-rule flag is false
+PASS Record-derived Born/instrument flag is false
+PASS Record-derived Hamiltonian/clock flag is false
+PASS generation/Koide dial selected flag is false
+PASS audit verdict applied flag is false
+
+SUMMARY: PASS=48 FAIL=0
+POST_RECORD_SCORE_TO_CANONICAL_SELECTION=FALSE
+SUPPLIED_SELECTION_RULE_REQUIRED=TRUE
+RECORD_DERIVES_MODEL_FAMILY=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

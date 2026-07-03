@@ -1,0 +1,212 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_three_strip_environment_rho_ladder_bounded_2026_06_12.py
+runner_sha256: aaede75f0ba9e59a0fdf8a118b934cea8092cb46e432abd3f98e805b5aaeb656
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.16
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette three-strip environment rho ladder
+Status authority: independent audit lane only. This source runner does not set, predict, promote, or demote any audit outcome.
+No new imports: repo-internal finite packet quantities only.
+beta=6.0, tensor NMAX=4, tensor MODE_MAX=80
+source NMAX=7, source MODE_MAX=200
+transverse geometry: open 3-chain with internal links unit1-unit2 and unit2-unit3
+
+================================================================================================================
+Part 1: state space and matrix-free operator
+================================================================================================================
+one-word state count = 25
+three-strip layer state count = 15625
+dense transfer storage would be 1.819 GiB
+word bond shape = (25, 25)
+fusion table shape = (25, 25, 25)
+PASS: three-strip state space has 25^3 = 15625 states
+PASS: dense 15625 x 15625 transfer is not materialized
+PASS: generated fusion table remains finite and nonnegative
+
+================================================================================================================
+Part 2: one-word and two-strip anchors
+================================================================================================================
+one-word eigenvalue = 1.012369912747822
+one-word Perron residual = 1.665e-16
+one-word psi_min = 1.985e-23
+rho_word(1,0) = 0.378514922317117
+rho_word(1,1) = 0.171042019091802
+P(rho_word) = 0.434215413259920
+u0(rho_word) = 0.811757498147861
+alpha_s(rho_word; alpha_bare=1) = 1.517565281370676
+PASS: one-word composed readout reproduces the declared finite value
+      delta=5.551e-17
+two-strip full-character P = 0.447034890458824
+two-strip full-character residual = 2.220e-15
+two-strip dimension-stripped P = 0.439904783618900
+two-strip dimension-stripped residual = 4.441e-16
+PASS: two-strip full-character anchor reproduces the W38 value
+      delta=0.000e+00
+PASS: two-strip dimension-stripped anchor reproduces the W38 value
+      delta=1.665e-16
+PASS: two-strip full-character Perron residual is small
+PASS: two-strip dimension-stripped Perron residual is small
+
+================================================================================================================
+Part 3: cut gates
+================================================================================================================
+both-link cut eigenvalue candidate = 1.037570675246633
+both-link cut residual on psi_word tensor psi_word tensor psi_word = 4.441e-16
+both-link cut max |rho-rho_word| = 2.776e-17
+P(both-link cut marginal) = 0.434215413259920
+PASS: G1 both-link cut reproduces three independent word chains
+PASS: G1 both-link cut marginal reproduces rho_word
+PASS: G1 both-link cut source readout reproduces P(rho_word)
+
+full-character one-link cut gates:
+  right-link cut residual on psi_2strip tensor psi_word = 2.665e-15
+  right-link cut left marginal max |rho-rho_2strip| = 2.220e-16
+  right-link cut P(left marginal) = 0.447034890458824
+  left-link cut residual on psi_word tensor psi_2strip = 3.109e-15
+  left-link cut center marginal max |rho-rho_2strip| = 3.331e-16
+  left-link cut P(center marginal) = 0.447034890458824
+PASS: G2 full-character right-link cut reproduces 2-strip x 1-word transfer
+PASS: G2 full-character right-link cut reproduces the W38 rho marginal
+PASS: G2 full-character left-link cut reproduces 1-word x 2-strip transfer
+PASS: G2 full-character left-link cut exposes the W38 rho marginal on the 2-strip block
+
+dimension-stripped one-link cut gates:
+  right-link cut residual on psi_2strip tensor psi_word = 5.551e-16
+  right-link cut left marginal max |rho-rho_2strip| = 2.220e-16
+  right-link cut P(left marginal) = 0.439904783618900
+  left-link cut residual on psi_word tensor psi_2strip = 5.551e-16
+  left-link cut center marginal max |rho-rho_2strip| = 3.331e-16
+  left-link cut P(center marginal) = 0.439904783618900
+PASS: G2 dimension-stripped right-link cut reproduces 2-strip x 1-word transfer
+PASS: G2 dimension-stripped right-link cut reproduces the W38 rho marginal
+PASS: G2 dimension-stripped left-link cut reproduces 1-word x 2-strip transfer
+PASS: G2 dimension-stripped left-link cut exposes the W38 rho marginal on the 2-strip block
+
+================================================================================================================
+Part 4: three-strip Perron solves
+================================================================================================================
+
+three_strip_full_character_product_open_chain:
+  solver = eigsh
+  combined internal factor min/max = 1.000000000000000 / 34.913614095442682
+  eigenvalue = 125.843628815856690
+  Perron residual = 1.776e-14
+  psi_min = -3.762e-37
+  rho_left(1,0) = 0.622521176293775
+  rho_left(1,1) = 0.331340164127031
+  rho_left min/max = 1.473e-24 / 1.000e+00
+  center/left marginal residual = 1.135e+00
+  left/right marginal residual = 8.882e-16
+  conjugation residual = 1.110e-16
+  P = 0.441391418390688
+  u0 = 0.815090762601711
+  alpha_s(alpha_bare=1) = 1.505178677240577
+PASS: three_strip_full_character_product_open_chain Perron residual is small
+PASS: three_strip_full_character_product_open_chain Perron vector is nonnegative up to tolerance
+PASS: three_strip_full_character_product_open_chain rho_3strip is admissible on B4
+PASS: three_strip_full_character_product_open_chain open-chain reversal gives equal outer marginals
+PASS: three_strip_full_character_product_open_chain center marginal remains finite
+
+three_strip_dimension_stripped_product_open_chain:
+  solver = eigsh
+  combined internal factor min/max = 1.000000000000000 / 2.881356246816831
+  eigenvalue = 5.015948012281473
+  Perron residual = 8.882e-16
+  psi_min = -4.815e-35
+  rho_left(1,0) = 0.469564971869026
+  rho_left(1,1) = 0.200666996037837
+  rho_left min/max = 3.645e-24 / 1.000e+00
+  center/left marginal residual = 4.876e-01
+  left/right marginal residual = 3.331e-16
+  conjugation residual = 2.776e-17
+  P = 0.436904879677743
+  u0 = 0.813011565722019
+  alpha_s(alpha_bare=1) = 1.512887213540179
+PASS: three_strip_dimension_stripped_product_open_chain Perron residual is small
+PASS: three_strip_dimension_stripped_product_open_chain Perron vector is nonnegative up to tolerance
+PASS: three_strip_dimension_stripped_product_open_chain rho_3strip is admissible on B4
+PASS: three_strip_dimension_stripped_product_open_chain open-chain reversal gives equal outer marginals
+PASS: three_strip_dimension_stripped_product_open_chain center marginal remains finite
+
+p q | rho_3strip_full_character | rho_3strip_dimension_stripped | full/stripped
+----------------------------------------------------------------------------------------------------------------
+0 0 | 1.000000000000e+00 | 1.000000000000e+00 | 1.000000000000e+00
+0 1 | 6.225211762938e-01 | 4.695649718690e-01 | 1.325740235299e+00
+0 2 | 1.191762753698e-01 | 8.043223166948e-02 | 1.481697982216e+00
+0 3 | 1.862677614794e-03 | 1.001579123012e-03 | 1.859740855214e+00
+0 4 | 2.466514416136e-06 | 1.741721139428e-06 | 1.416136234613e+00
+1 0 | 6.225211762938e-01 | 4.695649718690e-01 | 1.325740235299e+00
+1 1 | 3.313401641270e-01 | 2.006669960378e-01 | 1.651194120953e+00
+1 2 | 1.270683783900e-02 | 5.018075077909e-03 | 2.532213576265e+00
+1 3 | 6.219646072290e-05 | 2.090385032747e-05 | 2.975359072542e+00
+1 4 | 9.663524087244e-09 | 4.037948910999e-09 | 2.393176412144e+00
+2 0 | 1.191762753698e-01 | 8.043223166948e-02 | 1.481697982216e+00
+2 1 | 1.270683783900e-02 | 5.018075077909e-03 | 2.532213576265e+00
+2 2 | 1.499625242151e-04 | 4.256904461317e-05 | 3.522806902946e+00
+2 3 | 4.936977598075e-08 | 1.513686945582e-08 | 3.261557888495e+00
+2 4 | 1.484006491363e-12 | 8.129488005135e-13 | 1.825461198080e+00
+3 0 | 1.862677614794e-03 | 1.001579123012e-03 | 1.859740855214e+00
+3 1 | 6.219646072290e-05 | 2.090385032747e-05 | 2.975359072542e+00
+3 2 | 4.936977598075e-08 | 1.513686945582e-08 | 3.261557888495e+00
+3 3 | 3.022718297778e-12 | 1.493052353009e-12 | 2.024522644290e+00
+3 4 | 4.877025551138e-18 | 5.217761866989e-18 | 9.346968442530e-01
+4 0 | 2.466514416136e-06 | 1.741721139428e-06 | 1.416136234613e+00
+4 1 | 9.663524087244e-09 | 4.037948910999e-09 | 2.393176412144e+00
+4 2 | 1.484006491363e-12 | 8.129488005135e-13 | 1.825461198080e+00
+4 3 | 4.877025548582e-18 | 5.217761857929e-18 | 9.346968453860e-01
+4 4 | 1.472982165846e-24 | 3.645022058708e-24 | 4.041078879968e-01
+
+================================================================================================================
+Part 5: ladder measurement and fenced comparator distances
+================================================================================================================
+Plaquette reuse license: comparator is used only as comparison/reuse context.
+```text
+full-character reading:
+  P(1-strip word) = 0.434215413259920
+  P(2-strip) = 0.447034890458824
+  P(3-strip) = 0.441391418390688
+  increment P2-P1 = 0.012819477198904
+  increment P3-P2 = -0.005643472068136
+  non_load_bearing_geometric_diagnostic: first two increments do not support a contracting-ratio diagnostic; ratio=-0.440226382134992
+  |P1 - 0.5934| = 0.159184586740080
+  |P2 - 0.5934| = 0.146365109541176
+  |P3 - 0.5934| = 0.152008581609312
+  distance change P1->P2 = 0.012819477198904
+  distance change P2->P3 = -0.005643472068136
+dimension-stripped reading:
+  P(1-strip word) = 0.434215413259920
+  P(2-strip) = 0.439904783618900
+  P(3-strip) = 0.436904879677743
+  increment P2-P1 = 0.005689370358980
+  increment P3-P2 = -0.002999903941156
+  non_load_bearing_geometric_diagnostic: first two increments do not support a contracting-ratio diagnostic; ratio=-0.527282238960147
+  |P1 - 0.5934| = 0.159184586740080
+  |P2 - 0.5934| = 0.153495216381100
+  |P3 - 0.5934| = 0.156495120322257
+  distance change P1->P2 = 0.005689370358980
+  distance change P2->P3 = -0.002999903941156
+```
+PASS: full-character ladder diagnostics are finite
+PASS: dimension-stripped ladder diagnostics are finite
+PASS: full-character P(3-strip) is finite and inside the source anchor interval
+      P_triv=0.422531739600, P3=0.441391418391, P_loc=0.452407159000
+PASS: dimension-stripped P(3-strip) is finite and inside the source anchor interval
+      P_triv=0.422531739600, P3=0.436904879678, P_loc=0.452407159000
+
+================================================================================================================
+Part 6: note hygiene
+================================================================================================================
+PASS: note delegates status to the independent audit lane
+PASS: note declares bounded-theorem claim type
+PASS: note uses markdown links for one-hop authorities
+PASS: note keeps durable context pointers as plain-text paths
+PASS: note avoids overreach closure language
+Named residuals: finite three-strip width rung; finite B4 weight box; finite Bessel support; product-orientation internal-link contraction; future all-link 6j/intertwiner normalization; strip-depth direction; wider slab limit; 3D stack; L_perp limit; analytic P(6); no repinning.
+PASS: runner names residuals without retiring them
+
+TOTAL: PASS=39, FAIL=0
+
+----- stderr -----
+

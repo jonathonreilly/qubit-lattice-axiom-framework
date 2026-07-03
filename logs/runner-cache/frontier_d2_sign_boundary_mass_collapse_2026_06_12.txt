@@ -1,0 +1,117 @@
+===== runner cache v1 =====
+runner: scripts/frontier_d2_sign_boundary_mass_collapse_2026_06_12.py
+runner_sha256: 716cea9f1eaf3aead386ee6e2a0287ab420df80f9436f1388543471160cf72c9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.67
+status: ok
+----- stdout -----
+PASS: GL quadrature has at least 96 nodes per dimension
+PASS: q=24: Harper matrix has q by q dense shape
+PASS: q=24: Harper matrix is Hermitian
+PASS: q=24: wraparound hopping is conjugate paired
+PASS: q=24: wraparound hopping has unit magnitude
+PASS: q=32: Harper matrix has q by q dense shape
+PASS: q=32: Harper matrix is Hermitian
+PASS: q=32: wraparound hopping is conjugate paired
+PASS: q=32: wraparound hopping has unit magnitude
+PASS: q=24: cached spectrum has 25600 samples and 24 bands
+PASS: q=24: cached weights have 25600 samples
+PASS: q=32: cached spectrum has 25600 samples and 32 bands
+PASS: q=32: cached weights have 25600 samples
+PASS: U1a m=0.20 T=0.20: scanned endpoint signs bracket a zero
+PASS: U1a m=0.20 T=0.20: bisection iter 01 keeps bracket
+PASS: U1a m=0.20 T=0.20: bisection iter 02 keeps bracket
+PASS: U1a m=0.20 T=0.20: bisection iter 03 keeps bracket
+PASS: U1a m=0.20 T=0.20: bisection iter 04 keeps bracket
+PASS: U1a m=0.20 T=0.20: bisection iter 05 keeps bracket
+PASS: U1a m=0.20 T=0.20: final bisection width <= 2.0e-03
+PASS: U1a m=0.20 T=0.20: boundary susceptibility is finite
+U1a m=0.200000000000 T=0.200000000000 mu*=-1.708593750000 eps*=1.696847843072 chi(mu*)=6.660269556436e-06 width=1.562500000000e-03
+PASS: U1a m=0.35 T=0.20: scanned endpoint signs bracket a zero
+PASS: U1a m=0.35 T=0.20: bisection iter 01 keeps bracket
+PASS: U1a m=0.35 T=0.20: bisection iter 02 keeps bracket
+PASS: U1a m=0.35 T=0.20: bisection iter 03 keeps bracket
+PASS: U1a m=0.35 T=0.20: bisection iter 04 keeps bracket
+PASS: U1a m=0.35 T=0.20: bisection iter 05 keeps bracket
+PASS: U1a m=0.35 T=0.20: final bisection width <= 2.0e-03
+PASS: U1a m=0.35 T=0.20: boundary susceptibility is finite
+U1a m=0.350000000000 T=0.200000000000 mu*=-1.725781250000 eps*=1.689917430779 chi(mu*)=-9.880972215173e-06 width=1.562500000000e-03
+PASS: U1a m=0.50 T=0.20: scanned endpoint signs bracket a zero
+PASS: U1a m=0.50 T=0.20: bisection iter 01 keeps bracket
+PASS: U1a m=0.50 T=0.20: bisection iter 02 keeps bracket
+PASS: U1a m=0.50 T=0.20: bisection iter 03 keeps bracket
+PASS: U1a m=0.50 T=0.20: bisection iter 04 keeps bracket
+PASS: U1a m=0.50 T=0.20: bisection iter 05 keeps bracket
+PASS: U1a m=0.50 T=0.20: final bisection width <= 2.0e-03
+PASS: U1a m=0.50 T=0.20: boundary susceptibility is finite
+U1a m=0.500000000000 T=0.200000000000 mu*=-1.753906250000 eps*=1.681126745308 chi(mu*)=-1.047451890076e-05 width=1.562500000000e-03
+PASS: U1a m=0.80 T=0.20: scanned endpoint signs bracket a zero
+PASS: U1a m=0.80 T=0.20: bisection iter 01 keeps bracket
+PASS: U1a m=0.80 T=0.20: bisection iter 02 keeps bracket
+PASS: U1a m=0.80 T=0.20: bisection iter 03 keeps bracket
+PASS: U1a m=0.80 T=0.20: bisection iter 04 keeps bracket
+PASS: U1a m=0.80 T=0.20: bisection iter 05 keeps bracket
+PASS: U1a m=0.80 T=0.20: final bisection width <= 2.0e-03
+PASS: U1a m=0.80 T=0.20: boundary susceptibility is finite
+U1a m=0.800000000000 T=0.200000000000 mu*=-1.839843750000 eps*=1.656811704574 chi(mu*)=-6.513149551193e-07 width=1.562500000000e-03
+U1a collapse: mean_eps=1.681175930933 relative_spread=1.449237162564e-02
+PASS: U1a: BOUNDED collapse, relative spread 1.4492e-02 < 2.0e-02 (a small systematic m-trend exists and is gated separately)
+PASS: U1b m=0.20 T=0.20: scanned endpoint signs bracket a zero
+PASS: U1b m=0.20 T=0.20: bisection iter 01 keeps bracket
+PASS: U1b m=0.20 T=0.20: bisection iter 02 keeps bracket
+PASS: U1b m=0.20 T=0.20: bisection iter 03 keeps bracket
+PASS: U1b m=0.20 T=0.20: bisection iter 04 keeps bracket
+PASS: U1b m=0.20 T=0.20: bisection iter 05 keeps bracket
+PASS: U1b m=0.20 T=0.20: final bisection width <= 2.0e-03
+PASS: U1b m=0.20 T=0.20: boundary susceptibility is finite
+U1b m=0.200000000000 T=0.200000000000 mu*=-1.708593750000 eps*=1.696847843072 chi(mu*)=6.660269556436e-06 width=1.562500000000e-03
+PASS: U1b m=0.20 T=0.30: scanned endpoint signs bracket a zero
+PASS: U1b m=0.20 T=0.30: bisection iter 01 keeps bracket
+PASS: U1b m=0.20 T=0.30: bisection iter 02 keeps bracket
+PASS: U1b m=0.20 T=0.30: bisection iter 03 keeps bracket
+PASS: U1b m=0.20 T=0.30: bisection iter 04 keeps bracket
+PASS: U1b m=0.20 T=0.30: bisection iter 05 keeps bracket
+PASS: U1b m=0.20 T=0.30: final bisection width <= 2.0e-03
+PASS: U1b m=0.20 T=0.30: boundary susceptibility is finite
+U1b m=0.200000000000 T=0.300000000000 mu*=-1.749218750000 eps*=1.737747460177 chi(mu*)=1.220493583822e-06 width=1.562500000000e-03
+PASS: U1b m=0.20 T=0.40: scanned endpoint signs bracket a zero
+PASS: U1b m=0.20 T=0.40: bisection iter 01 keeps bracket
+PASS: U1b m=0.20 T=0.40: bisection iter 02 keeps bracket
+PASS: U1b m=0.20 T=0.40: bisection iter 03 keeps bracket
+PASS: U1b m=0.20 T=0.40: bisection iter 04 keeps bracket
+PASS: U1b m=0.20 T=0.40: bisection iter 05 keeps bracket
+PASS: U1b m=0.20 T=0.40: final bisection width <= 2.0e-03
+PASS: U1b m=0.20 T=0.40: boundary susceptibility is finite
+U1b m=0.200000000000 T=0.400000000000 mu*=-1.807031250000 eps*=1.795929268784 chi(mu*)=8.575650920073e-07 width=1.562500000000e-03
+PASS: U1b eps*(T) is increasing for T=0.2,0.3,0.4
+PASS: U1c m=0 anchor: scanned endpoint signs bracket a zero
+PASS: U1c m=0 anchor: bisection iter 01 keeps bracket
+PASS: U1c m=0 anchor: bisection iter 02 keeps bracket
+PASS: U1c m=0 anchor: bisection iter 03 keeps bracket
+PASS: U1c m=0 anchor: bisection iter 04 keeps bracket
+PASS: U1c m=0 anchor: bisection iter 05 keeps bracket
+PASS: U1c m=0 anchor: final bisection width <= 2.0e-03
+PASS: U1c m=0 anchor: boundary susceptibility is finite
+U1c m=0.000000000000 T=0.200000000000 mu*=-1.699218750000 eps*=1.699218750000 chi(mu*)=1.442811013423e-06 width=1.562500000000e-03 rel_to_mean=1.073226111238e-02
+PASS: U1c: BOUNDED collapse, relative spread 1.0732e-02 < 2.0e-02 (a small systematic m-trend exists and is gated separately)
+CONTROL quadrature: chi_160=4.091134903716e-03 chi_224=4.091694477544e-03 delta=5.595738275859e-07
+PASS: quadrature doubling |chi_160 - chi_224| < 1.0e-06
+CONTROL endpoint: mu=-1.750000000000 primary=6.087089212079e-04 independent=6.087089210581e-04
+PASS: independent endpoint recompute agrees within 1.0e-10
+PASS: independent endpoint recompute preserves endpoint sign
+PASS: U1d q=32 spot: scanned endpoint signs bracket a zero
+PASS: U1d q=32 spot: bisection iter 01 keeps bracket
+PASS: U1d q=32 spot: bisection iter 02 keeps bracket
+PASS: U1d q=32 spot: bisection iter 03 keeps bracket
+PASS: U1d q=32 spot: bisection iter 04 keeps bracket
+PASS: U1d q=32 spot: bisection iter 05 keeps bracket
+PASS: U1d q=32 spot: final bisection width <= 2.0e-03
+PASS: U1d q=32 spot: boundary susceptibility is finite
+CONTROL q32: mu*=-1.705468750000 eps*=1.693701171171 rel_to_q24=1.854421958910e-03
+PASS: q=32 spot relative agreement < 5.0e-02
+SCOPE: sampled instances; collapse relation or measured failure is the datum; no continuum claim; X3-import unused.
+TOTAL: PASS=92 FAIL=0
+
+----- stderr -----
+

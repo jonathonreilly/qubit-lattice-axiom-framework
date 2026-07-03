@@ -9,8 +9,9 @@ independent production run.
 
 Default behavior fails if no production certificate is present.  That is the
 correct audit outcome until the framework has measured the static potential
-with enough statistics, volumes, and scale-setting information to support the
-claimed alpha_s(M_Z) number.
+with enough statistics, volumes, and scale-setting information to support this
+bounded-support alpha_s(M_Z) certificate.  The source note firewall keeps this
+runner from being reused as a broad physical alpha_s(M_Z) promotion certificate.
 """
 
 from __future__ import annotations
@@ -27,6 +28,7 @@ import numpy as np
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CERTIFICATE = REPO_ROOT / "outputs" / "alpha_s_direct_wilson_loop_certificate_2026-04-30.json"
+SOURCE_NOTE = REPO_ROOT / "docs" / "ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md"
 
 ALPHA_S_TARGET = 0.1181
 PDG_ALPHA_S_MZ = 0.1180
@@ -42,13 +44,42 @@ FORBIDDEN_AUTHORITY_KEYS = {
     "alpha_s_v_definition",
 }
 
+SOURCE_BOUNDARY_REQUIRED_PHRASES = {
+    "bounded support input",
+    "not as a retained-grade zero-input derivation",
+    "Downstream source-boundary firewall",
+    "Allowed downstream uses",
+    "Forbidden downstream uses",
+    "framework-derived Sommer scale",
+    "framework-native 4-loop QCD running",
+    "threshold-matching bridge",
+    "pure-gauge-to-full-QCD sea-quark transfer",
+    "retained alpha_s(M_Z) theorem",
+    "PDG agreement as proof",
+    "current axiom-surface normalization",
+    "MINIMAL_AXIOMS_2026-06-05.md",
+    "stable `minimal_axioms` premise node",
+    "MINIMAL_AXIOMS_2026-04-11.md` is historical only",
+    "does not supply `g_bare = 1`",
+    "not a live normalization authority",
+    "not a promotion certificate",
+}
+
+
+def display_path(path: Path) -> str:
+    resolved = path.resolve()
+    try:
+        return str(resolved.relative_to(REPO_ROOT))
+    except ValueError:
+        return str(path)
+
 
 class Gate:
     def __init__(self) -> None:
         self.pass_count = 0
         self.fail_count = 0
 
-    def check(self, name: str, condition: bool, detail: str = "", kind: str = "RETAINED-GATE") -> bool:
+    def check(self, name: str, condition: bool, detail: str = "", kind: str = "CERTIFICATE-GATE") -> bool:
         status = "PASS" if condition else "FAIL"
         if condition:
             self.pass_count += 1
@@ -298,6 +329,51 @@ def validate_cross_check(gate: Gate, data: dict[str, Any]) -> None:
         positive_finite(direct) and positive_finite(old) and abs(float(direct) - float(old)) <= 0.001,
         f"direct={direct!r}, existing={old!r}",
         kind="CONSISTENCY-ONLY",
+    )
+
+
+def validate_source_boundary_note(gate: Gate) -> None:
+    if not SOURCE_NOTE.exists():
+        gate.check("source-boundary note is present", False, str(SOURCE_NOTE), kind="SOURCE-BOUNDARY")
+        return
+
+    note = SOURCE_NOTE.read_text(encoding="utf-8")
+    folded = note.lower()
+    normalized = " ".join(folded.split())
+    missing = [
+        phrase
+        for phrase in sorted(SOURCE_BOUNDARY_REQUIRED_PHRASES)
+        if " ".join(phrase.lower().split()) not in normalized
+    ]
+    gate.check(
+        "source-boundary firewall names allowed and forbidden downstream uses",
+        not missing,
+        "missing=" + ", ".join(missing) if missing else "all required phrases present",
+        kind="SOURCE-BOUNDARY",
+    )
+    gate.check(
+        "source-boundary firewall forbids broad alpha_s(M_Z) promotion reuse",
+        "not a promotion certificate" in normalized
+        and "retained alpha_s(m_z) theorem" in normalized
+        and "current axiom-surface normalization" in normalized,
+        "runner PASS remains bounded-support/status-boundary only",
+        kind="SOURCE-BOUNDARY",
+    )
+    gate.check(
+        "source-boundary firewall retires the stale April minimal-axioms normalization citation",
+        "minimal_axioms_2026-06-05.md" in normalized
+        and "stable `minimal_axioms` premise node" in normalized
+        and "minimal_axioms_2026-04-11.md` is historical only" in normalized
+        and "does not supply `g_bare = 1`" in normalized
+        and "not a live normalization authority" in normalized,
+        "current baseline is not a g_bare=1 authority; April memo is historical only",
+        kind="SOURCE-BOUNDARY",
+    )
+    gate.check(
+        "source-boundary firewall keeps April minimal-axioms memo off the citation graph",
+        "](minimal_axioms_2026-04-11.md)" not in normalized,
+        "historical memo is a context handle only",
+        kind="SOURCE-BOUNDARY",
     )
 
 
@@ -579,7 +655,7 @@ def main() -> int:
     print("=" * 78)
     print("Direct Wilson-loop alpha_s(M_Z) strict audit gate")
     print("=" * 78)
-    print(f"certificate: {args.certificate}")
+    print(f"certificate: {display_path(args.certificate)}")
 
     try:
         data = load_certificate(args.certificate)
@@ -597,11 +673,12 @@ def main() -> int:
     validate_ensembles(gate, data)
     validate_result(gate, data)
     validate_cross_check(gate, data)
+    validate_source_boundary_note(gate)
 
     print(f"\nSUMMARY: PASS={gate.pass_count}  FAIL={gate.fail_count}")
     if gate.fail_count:
         return 1
-    print("Strict gate passed: direct Wilson-loop alpha_s route is ready for audit.")
+    print("Strict gate passed: direct Wilson-loop alpha_s route remains bounded-support/source-boundary only.")
     return 0
 
 

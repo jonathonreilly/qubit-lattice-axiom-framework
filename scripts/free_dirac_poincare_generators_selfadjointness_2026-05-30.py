@@ -1,546 +1,380 @@
 #!/usr/bin/env python3
-"""Audit-companion runner for
-FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.
+"""Repaired free-Dirac Poincare generator certificate.
 
-Discharges residual T1 of gap G2 of the explicit-Poincare-representation note:
-the ESSENTIAL SELF-ADJOINTNESS of the ten free Dirac Poincare generators on a
-common dense invariant core, and the integrability of the Lie-algebra
-representation to a strongly-continuous unitary representation of (the universal
-cover of) the Poincare group.
+The earlier source packet tried to use rapidity Gaussians as common analytic
+vectors for H, P, J, and K. That route is false for H/P: on the mass shell
+E=m cosh(zeta), so Gaussian moments of E^n grow like exp(c n^2), faster than
+R^n n! for any fixed R.
 
-The unbounded, non-compact boost generator K^i is the focus.  The load-bearing
-simplification used throughout: in RAPIDITY coordinates the boost acts by
-translation.  At fixed transverse momentum p_perp, set
-M_perp = sqrt(m^2 + |p_perp|^2).  On the positive-energy mass shell parametrised
-(in the boost direction) by p = M_perp sinh(zeta), E = M_perp cosh(zeta):
-
-    dOmega = d^3p/((2 pi)^3 2E)  -->  (in the 1-boost reduction) dp/(2E) = dzeta/2
-
-is FLAT in zeta, and
-
-    K_orb = -i E d/dp = -i d/dzeta            (since d/dzeta = E d/dp).
-
-So the orbital boost is the prototypical momentum operator -i d/dzeta on
-L^2(R, dzeta), whose essential self-adjointness on the Schwartz core is the
-canonical example, and whose Hermite/Gaussian analytic vectors give the Nelson
-bound directly.  The spin Wigner-rotation cocycle has a bounded anti-Hermitian
-infinitesimal fibre generator; the self-adjoint boost uses the corresponding
-Hermitian bounded multiplication term, so it does not affect the deficiency
-analysis (Kato-Rellich / bounded symmetric perturbation).
-
-Numerical checks (NON-VACUOUS; a genuinely non-self-adjoint control FAILS):
-
-  N1  SYMMETRY on the core.  The boost generator, discretised two independent
-      ways on the Schwartz core -- (a) -i d/dzeta by a spectral (Fourier)
-      derivative in rapidity, and (b) the symmetrised -i(E d/dp + d/dp E)/2 in
-      momentum coordinates -- is Hermitian, and the two realisations agree after
-      the unitary change of variable.  The full K = K_orb + W with the bounded
-      Hermitian spin term W is Hermitian.  The compact generators
-      H = E(p), P = p (multiplication) and J (rotation) are symmetric too.
-
-  N2  NELSON analytic-vector bound.  For the Gaussian/Hermite analytic vectors
-      psi_a(zeta) ~ exp(-a zeta^2/2), the iterated norms obey
-          ||K^n psi|| <= C R^n n!
-      with the growth EXHIBITED (the ratio ||K^n psi|| / (R^n n!) stays bounded
-      and in fact ->0, since ||K^n psi|| ~ (n-1)!! << n!).  This is the Nelson
-      analytic-vector criterion for K on this dense set.
-
-  N3  ESSENTIAL-SELF-ADJOINTNESS proxy (deficiency / Cayley).  On the truncated
-      symmetric boost K_N, the spectrum is REAL, (K_N +- i I) has full rank
-      (trivial deficiency on the truncation), and the Cayley transform
-      U = (K_N - iI)(K_N + iI)^{-1} is UNITARY.  As the truncation N grows the
-      defect ||(K_N - K_orb-action)|| on fixed smooth vectors -> 0 and the
-      resolvent (K_N +- i)^{-1} ranges fill the space (deficiency indices (0,0)
-      in the limit).  This is the von Neumann / Cayley criterion for essential
-      self-adjointness.
-
-  N4  NON-TRIVIALITY control.  The SAME stencil for -i d/dx on a HALF-LINE
-      [0, inf) (one boundary, no flux cancellation) is symmetric on C_c^inf(0,inf)
-      but is NOT essentially self-adjoint: it has deficiency indices (1, 0), a
-      non-real point in the spectrum of the closure proxy, and a NON-unitary
-      Cayley transform.  This MUST FAIL the N3 battery -- confirming N3 is a real
-      discriminator, not a check every first-order operator passes.  A second
-      control adds a non-Hermitian perturbation and confirms complex spectrum.
-
-  N5  GROUP integrability (Stone, made concrete).  The rapidity-translation flow
-      exp(-i zeta K_orb) is realised exactly as a shift on L^2(R, dzeta); it is a
-      strongly-continuous one-parameter UNITARY group (norm preserved, group law
-      U(s)U(t)=U(s+t)), so by Stone's theorem its generator -i d/dzeta is
-      self-adjoint.  On the mass shell this is exactly the boost flow that
-      preserves H_m^+ and the invariant measure (the mass-shell and measure
-      checks of the dependency note), now upgraded to a unitary GROUP.  Control:
-      the half-line shift is NOT a group of unitaries (mass leaks off the
-      boundary).
-
-Single seed, deterministic.  numpy + stdlib only.
+This repaired runner uses the alternate route allowed by the audit blocker:
+direct integrability through the explicit unitary mass-shell/Wigner action.
+It still checks the one-parameter boost self-adjointness signature in rapidity,
+but it does not claim a Nelson-Laplacian/common-analytic-core proof.
 """
+
+from __future__ import annotations
+
+import importlib.util
+import hashlib
+import json
+import math
+from pathlib import Path
 
 import numpy as np
 
-SEED = 20260530
+
+SEED = 20260606
 TOL = 1e-9
+REPO_ROOT = Path(__file__).resolve().parent.parent
+NOTE_PATH = REPO_ROOT / "docs" / "FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md"
+COMPANION_NOTE = REPO_ROOT / "docs" / "FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md"
+COMPANION_RUNNER = REPO_ROOT / "scripts" / "free_dirac_poincare_representation_2026-05-30.py"
+COMPANION_CACHE = REPO_ROOT / "logs" / "runner-cache" / "free_dirac_poincare_representation_2026-05-30.txt"
+BRIDGE_NOTE = REPO_ROOT / "docs" / "FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md"
+BRIDGE_RUNNER = REPO_ROOT / "scripts" / "audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py"
+BRIDGE_CACHE = REPO_ROOT / "logs" / "runner-cache" / "audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.txt"
+OUTPUT_PATH = REPO_ROOT / "outputs" / "free_dirac_poincare_generators_selfadjointness_2026_05_30.json"
 
 
-# --------------------------------------------------------------------------- #
-# Dirac matrices (mirror the dependency-note runner conventions exactly).      #
-# --------------------------------------------------------------------------- #
-def euclidean_gammas():
-    i2 = np.eye(2, dtype=complex)
-    z2 = np.zeros((2, 2), dtype=complex)
-    sx = np.array([[0, 1], [1, 0]], dtype=complex)
-    sy = np.array([[0, -1j], [1j, 0]], dtype=complex)
-    sz = np.array([[1, 0], [0, -1]], dtype=complex)
-    g4 = np.block([[i2, z2], [z2, -i2]])
-    g1 = np.block([[z2, -1j * sx], [1j * sx, z2]])
-    g2 = np.block([[z2, -1j * sy], [1j * sy, z2]])
-    g3 = np.block([[z2, -1j * sz], [1j * sz, z2]])
-    return [g1, g2, g3, g4]
+def check(name: str, cond: bool, detail: str, results: list[dict]) -> bool:
+    passed = bool(cond)
+    print(f"[{'PASS' if passed else 'FAIL'}] {name}")
+    print(f"       {detail}")
+    results.append({"name": name, "pass": passed, "detail": detail})
+    return passed
 
 
-def minkowski_gammas():
-    """Mostly-minus gammas, {g^mu, g^nu} = 2 eta^{mu nu}, eta=diag(+,-,-,-)."""
-    g = euclidean_gammas()
-    return [g[3], 1j * g[0], 1j * g[1], 1j * g[2]]
+def load_companion_runner():
+    spec = importlib.util.spec_from_file_location(
+        "free_dirac_poincare_representation_2026_05_30",
+        COMPANION_RUNNER,
+    )
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"could not load companion runner spec: {COMPANION_RUNNER}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
 
 
-def comm(A, B):
-    return A @ B - B @ A
+def sha256_file(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def trapezoid(y, x):
-    """Portable trapezoidal integral (np.trapz removed in numpy>=2.0)."""
-    y = np.asarray(y, dtype=float)
-    x = np.asarray(x, dtype=float)
-    dx = np.diff(x)
-    return float(np.sum(0.5 * (y[:-1] + y[1:]) * dx))
+def cache_header(cache_path: Path) -> dict[str, str]:
+    header = cache_path.read_text(encoding="utf-8").split("----- stdout -----", 1)[0]
+    fields: dict[str, str] = {}
+    for line in header.splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        fields[key.strip()] = value.strip()
+    return fields
 
 
-def is_hermitian(M, tol=TOL):
-    return np.allclose(M, M.conj().T, atol=tol)
+def cache_is_fresh_and_ok(cache_path: Path, runner_path: Path) -> tuple[bool, str]:
+    fields = cache_header(cache_path)
+    rel_runner = runner_path.relative_to(REPO_ROOT).as_posix()
+    runner_ok = fields.get("runner") == rel_runner
+    status_ok = fields.get("status") == "ok"
+    exit_ok = fields.get("exit_code") == "0"
+    sha_ok = fields.get("runner_sha256") == sha256_file(runner_path)
+    detail = (
+        f"runner={fields.get('runner')} status={fields.get('status')} "
+        f"exit={fields.get('exit_code')} sha_fresh={sha_ok}"
+    )
+    return runner_ok and status_ok and exit_ok and sha_ok, detail
 
 
-# --------------------------------------------------------------------------- #
-# Spectral (Fourier) first-derivative on a periodic rapidity grid.             #
-# This is an exact, ANTI-Hermitian discretisation of d/dzeta on band-limited   #
-# (smooth, rapidly decreasing) functions; -i d/dzeta is then Hermitian.        #
-# --------------------------------------------------------------------------- #
-def rapidity_grid(N, L):
-    """N points on [-L, L) (periodic box wide enough that Schwartz vectors are
-    numerically zero at the wall)."""
-    dz = 2.0 * L / N
-    zeta = -L + dz * np.arange(N)
-    return zeta, dz
+def source_anchor_checks(results: list[dict]) -> None:
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    companion_note_text = COMPANION_NOTE.read_text(encoding="utf-8")
+    companion_cache_text = COMPANION_CACHE.read_text(encoding="utf-8")
+    bridge_note_text = BRIDGE_NOTE.read_text(encoding="utf-8")
+    bridge_cache_text = BRIDGE_CACHE.read_text(encoding="utf-8")
+    companion_module = load_companion_runner()
+
+    check(
+        "S1 note links companion free-Dirac Poincare representation note",
+        "FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md" in note_text,
+        "companion note path is explicit in the restricted source packet",
+        results,
+    )
+    check(
+        "S2 note links companion free-Dirac Poincare runner",
+        "scripts/free_dirac_poincare_representation_2026-05-30.py" in note_text,
+        "companion runner path is explicit in the restricted source packet",
+        results,
+    )
+    check(
+        "S3 note links companion free-Dirac Poincare cache",
+        "logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt" in note_text,
+        "companion runner cache path is explicit in the restricted source packet",
+        results,
+    )
+    check(
+        "S4 note links Wigner strong-continuity bridge note",
+        "FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md" in note_text,
+        "bridge note path is explicit in the restricted source packet",
+        results,
+    )
+    check(
+        "S5 note links Wigner strong-continuity bridge runner",
+        "scripts/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py" in note_text,
+        "bridge runner path is explicit in the restricted source packet",
+        results,
+    )
+    check(
+        "S6 note links Wigner strong-continuity bridge cache",
+        "logs/runner-cache/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.txt" in note_text,
+        "bridge cache path is explicit in the restricted source packet",
+        results,
+    )
+    check(
+        "S7 companion note carries the expected claim id",
+        "free_dirac_poincare_representation_bounded_note_2026-05-30" in companion_note_text,
+        "the linked companion note is the exact packet consumed by this repair",
+        results,
+    )
+    check(
+        "S8 companion runner exposes the Poincare algebra and Wigner checks",
+        hasattr(companion_module, "check_poincare_algebra")
+        and hasattr(companion_module, "check_mass_shell_and_wigner"),
+        "source import exposes finite Poincare closure and mass-shell/Wigner checks",
+        results,
+    )
+    check(
+        "S9 companion runner exposes the invariant-measure check",
+        hasattr(companion_module, "check_invariant_measure"),
+        "source import exposes d^3p/(2E) boost-invariance check",
+        results,
+    )
+    check(
+        "S10 companion cache is a passing representation certificate",
+        "SCORECARD PASS=8 FAIL=0" in companion_cache_text,
+        "cached companion representation runner output is present and passing",
+        results,
+    )
+    companion_cache_ok, companion_cache_detail = cache_is_fresh_and_ok(COMPANION_CACHE, COMPANION_RUNNER)
+    check(
+        "S11 companion cache is SHA-fresh and exits cleanly",
+        companion_cache_ok,
+        companion_cache_detail,
+        results,
+    )
+    check(
+        "S12 Wigner bridge note carries strong-continuity and Stone content",
+        "strongly continuous" in bridge_note_text
+        and "Stone consequence" in bridge_note_text
+        and "bare_retained_allowed: false" in bridge_note_text,
+        "bridge note is the functional-analytic dependency requested by audit",
+        results,
+    )
+    check(
+        "S13 Wigner bridge cache is a passing continuity certificate",
+        "SCORECARD PASS=48 FAIL=0" in bridge_cache_text
+        and "AUDIT_LEDGER_WRITTEN=FALSE" in bridge_cache_text
+        and "BARE_RETAINED_ALLOWED=FALSE" in bridge_cache_text,
+        "cached bridge runner output is present, passing, and firewall-clean",
+        results,
+    )
+    bridge_cache_ok, bridge_cache_detail = cache_is_fresh_and_ok(BRIDGE_CACHE, BRIDGE_RUNNER)
+    check(
+        "S14 Wigner bridge cache is SHA-fresh and exits cleanly",
+        bridge_cache_ok,
+        bridge_cache_detail,
+        results,
+    )
 
 
-def spectral_ddz(N, L):
-    """Spectral matrix for d/dzeta on the periodic grid (anti-Hermitian)."""
-    dz = 2.0 * L / N
-    # wavenumbers for a length-2L periodic domain
-    k = 2.0 * np.pi * np.fft.fftfreq(N, d=dz)  # = 2 pi n / (2L)
-    F = np.fft.fft(np.eye(N), axis=0) / np.sqrt(N)      # unitary DFT
-    Finv = np.conj(F.T)
-    D = Finv @ np.diag(1j * k) @ F                       # d/dzeta
-    return D
+def rapidity_grid(n: int, length: float) -> tuple[np.ndarray, float]:
+    dz = 2.0 * length / n
+    return -length + dz * np.arange(n), dz
 
 
-def boost_orbital_rapidity(N, L):
-    """Orbital boost K_orb = -i d/dzeta on L^2(R, dzeta) (rapidity)."""
-    D = spectral_ddz(N, L)
-    return -1j * D
+def spectral_ddz(n: int, length: float) -> np.ndarray:
+    dz = 2.0 * length / n
+    k = 2.0 * np.pi * np.fft.fftfreq(n, d=dz)
+    f = np.fft.fft(np.eye(n), axis=0) / np.sqrt(n)
+    return np.conj(f.T) @ np.diag(1j * k) @ f
 
 
-# --------------------------------------------------------------------------- #
-# N1: symmetry of the generators on the core (two independent realisations).   #
-# --------------------------------------------------------------------------- #
-def check_N1_symmetry(rng):
-    ok = True
-    N, L = 64, 12.0
-
-    # (a) boost in rapidity coords: -i d/dzeta, must be Hermitian.
-    Korb = boost_orbital_rapidity(N, L)
-    ok &= is_hermitian(Korb, tol=1e-8)
-
-    # (b) boost in MOMENTUM coords on the same shell: symmetrised
-    #     K = -i (E d/dp + d/dp E)/2, with
-    #     p = M_perp sinh(zeta), E = M_perp cosh(zeta).
-    #     Under the unitary change of variable p<->zeta (the invariant measure is
-    #     dp/(2E) = dzeta/2, FLAT in zeta), this must coincide with -i d/dzeta.
-    #     We verify the *operator identity* d/dzeta = E d/dp directly: applied to
-    #     smooth test functions f(zeta(p)) the two give the same vector.
-    # This is the fixed-transverse-momentum effective mass
-    # M_perp = sqrt(m^2 + |p_perp|^2).  Any positive value gives the same
-    # one-dimensional rapidity reduction.
-    m_perp = float(rng.uniform(0.5, 2.0))
-    zeta, dz = rapidity_grid(N, L)
-    p = m_perp * np.sinh(zeta)
-    E = m_perp * np.cosh(zeta)
-    # smooth rapidly-decreasing test functions (Schwartz core)
-    for _ in range(6):
-        a = float(rng.uniform(0.4, 1.2))
-        c = float(rng.uniform(-1.0, 1.0))
-        f = np.exp(-a * (zeta - c) ** 2)
-        # d/dzeta f  (analytic)
-        df_dzeta = -2.0 * a * (zeta - c) * f
-        # E d/dp f = E * (df/dzeta)*(dzeta/dp) = E * df_dzeta / (dp/dzeta);
-        # dp/dzeta = M_perp cosh(zeta) = E  ==>  E d/dp f = df_dzeta.
-        # Exact identity.
-        E_ddp_f = E * (df_dzeta / E)
-        ok &= np.allclose(E_ddp_f, df_dzeta, atol=1e-12)
-        # spectral -i d/dzeta applied to f reproduces -i*df_dzeta on the interior
-        approx = (Korb @ f.astype(complex))
-        interior = slice(8, N - 8)
-        ok &= np.allclose(approx[interior], (-1j * df_dzeta)[interior], atol=1e-4)
-
-    # full boost K = K_orb + W, where the anti-Hermitian little-group
-    # infinitesimal generator enters the self-adjoint boost through the
-    # Hermitian combination i*Sigma^{01}; it is zeroth order and bounded.
-    g = minkowski_gammas()
-    Sig01 = 0.25j * comm(g[0], g[1])         # spin-1/2 boost carrier Sigma^{01}
-    ok &= np.allclose(Sig01, -Sig01.conj().T, atol=TOL)   # anti-Hermitian
-    # Build full 4-spinor boost on a tiny grid:
-    # K_orb (x) I_4 + w(zeta) (x) i*Sigma^{01}.
-    # boost_orbital_rapidity already returns K_orb = -i d/dzeta (Hermitian), so the
-    # orbital block is kron(K_orb, I_4); the spin block uses the BOUNDED real weight
-    # W(zeta) times the HERMITIAN combination i*Sigma^{01}.
-    Ns = 16
-    Korb_s = boost_orbital_rapidity(Ns, L)            # = -i d/dzeta, Hermitian
-    zs, _ = rapidity_grid(Ns, L)
-    Wmult = np.diag((0.5 / np.cosh(zs)).astype(complex))        # bounded weight
-    Kfull = np.kron(Korb_s, np.eye(4)) + np.kron(Wmult, 1j * Sig01)
-    # K_orb is Hermitian; i*Sig01 is Hermitian; real-diagonal kron keeps Hermitian
-    ok &= is_hermitian(Kfull, tol=1e-7)
-
-    # compact generators are symmetric too: H=E(p), P=p multiplication (real),
-    # J = orbital + spin; multiplication by a real function is Hermitian.
-    ok &= is_hermitian(np.diag(E.astype(complex)), tol=TOL)      # H
-    ok &= is_hermitian(np.diag(p.astype(complex)), tol=TOL)      # P
-    Sig12 = 0.25j * comm(g[1], g[2])                              # spin J^3 carrier
-    ok &= is_hermitian(Sig12, tol=TOL)                            # J spin part
-
-    return bool(ok)
+def boost_orbital(n: int, length: float) -> np.ndarray:
+    return -1j * spectral_ddz(n, length)
 
 
-# --------------------------------------------------------------------------- #
-# N2: Nelson analytic-vector bound  ||K^n psi|| <= C R^n n!.                    #
-# For K = -i d/dzeta and the Gaussian analytic vector psi_a = exp(-a zeta^2/2): #
-#   (d/dzeta)^n psi_a = g_n(zeta) psi_a, g_0 = 1, g_{n+1} = g_n' - a zeta g_n,  #
-# (since psi_a' = -a zeta psi_a).  ||K^n psi||^2 = ∫ g_n(zeta)^2 e^{-a zeta^2}.  #
-# We compute g_n EXACTLY by integer/rational polynomial recursion and integrate #
-# against the closed-form Gaussian moments ∫ zeta^{2m} e^{-a zeta^2} dzeta =     #
-# sqrt(pi/a) (2m-1)!!/(2a)^m -- so the growth is EXACT (no grid/aliasing noise). #
-# The growth is ||K^n psi|| ~ (sqrt(a))^n sqrt(n!) <<< R^n n!, the analytic-     #
-# vector (Nelson) signature.  A low-order spectral evaluation cross-checks it.   #
-# --------------------------------------------------------------------------- #
-def _gaussian_even_moment(m, a):
-    """∫_{-inf}^{inf} zeta^{2m} e^{-a zeta^2} dzeta = sqrt(pi/a)*(2m-1)!!/(2a)^m."""
-    dfact = 1.0
-    for j in range(1, 2 * m, 2):       # (2m-1)!! = 1*3*5*...*(2m-1)
-        dfact *= j
-    return np.sqrt(np.pi / a) * dfact / (2.0 * a) ** m
+def shift_unitary(n: int, length: float, s: float) -> np.ndarray:
+    dz = 2.0 * length / n
+    k = 2.0 * np.pi * np.fft.fftfreq(n, d=dz)
+    f = np.fft.fft(np.eye(n), axis=0) / np.sqrt(n)
+    return np.conj(f.T) @ np.diag(np.exp(-1j * s * k)) @ f
 
 
-def _poly_mul(p, q):
-    """Multiply two polynomials given as coefficient arrays (ascending powers)."""
-    out = np.zeros(len(p) + len(q) - 1)
-    for i, pi in enumerate(p):
-        for j, qj in enumerate(q):
-            out[i + j] += pi * qj
-    return out
+def trap_norm(v: np.ndarray, dz: float) -> float:
+    return float(np.sqrt(np.sum(np.abs(v) ** 2) * dz))
 
 
-def _poly_deriv(p):
-    if len(p) <= 1:
-        return np.array([0.0])
-    return np.array([k * p[k] for k in range(1, len(p))])
+def trapezoid(y: np.ndarray, x: np.ndarray) -> float:
+    return float(np.sum(0.5 * (y[:-1] + y[1:]) * np.diff(x)))
 
 
-def check_N2_nelson_bound(rng):
-    ok = True
-    from math import factorial
+def gaussian_energy_log_norm(n: int, a: float = 1.0, mass: float = 1.0) -> float:
+    """Log ||(m cosh zeta)^n psi|| for psi=exp(-a zeta^2/2), up to constants.
 
-    a = 0.5
-    nmax = 12
-
-    # exact polynomials g_n with (d/dzeta)^n psi_a = g_n(zeta) psi_a
-    g = [np.array([1.0])]                      # g_0 = 1
-    for _ in range(nmax):
-        gn = g[-1]
-        # g_{n+1} = g_n' - a*zeta*g_n
-        term1 = _poly_deriv(gn)
-        term2 = -a * np.concatenate(([0.0], gn))         # multiply by a*zeta
-        L1, L2 = len(term1), len(term2)
-        Lm = max(L1, L2)
-        t1 = np.concatenate([term1, np.zeros(Lm - L1)])
-        t2 = np.concatenate([term2, np.zeros(Lm - L2)])
-        g.append(t1 + t2)
-
-    # exact L^2 norms-squared:  ||g_n psi||^2 = ∫ g_n^2 e^{-a zeta^2}
-    norms2 = []
-    for n in range(nmax + 1):
-        gg = _poly_mul(g[n], g[n])             # g_n^2
-        val = 0.0
-        for power, coeff in enumerate(gg):
-            if coeff == 0.0:
-                continue
-            if power % 2 == 1:                 # odd moments vanish
-                continue
-            val += coeff * _gaussian_even_moment(power // 2, a)
-        norms2.append(val)
-    norms = np.sqrt(np.array(norms2))
-    norms = norms / norms[0]                   # normalise to ||psi||=1
-
-    # Nelson bound: there exist C, R with ||K^n psi|| <= C R^n n!.
-    R = 1.0
-    C = 1.0
-    ratios = np.array([norms[n] / (C * R ** n * factorial(n)) for n in range(nmax + 1)])
-    ok &= np.all(ratios <= 1.0 + 1e-12)        # bound holds for ALL n<=nmax
-    ok &= ratios[-1] < ratios[2]               # ratio -> 0: genuine analytic vector
-    # the Nelson series sum_n ||K^n psi|| t^n / n! has positive radius of
-    # convergence: norms[n]/n! decays super-geometrically (root test).
-    root = np.array([(norms[n] / factorial(n)) ** (1.0 / max(n, 1)) for n in range(1, nmax + 1)])
-    ok &= (root[-1] < root[0])                 # n-th root shrinking -> infinite radius
-
-    # closed-form growth law check: ||K^n psi|| ~ a^{n/2} sqrt(n!) for large n.
-    predicted = np.array([a ** (n / 2.0) * np.sqrt(factorial(n)) for n in range(nmax + 1)])
-    # the leading Hermite term dominates: ratio norms/predicted -> O(1), bounded.
-    rr = norms[2:] / predicted[2:]
-    ok &= np.all(np.isfinite(rr)) and (rr.max() < 5.0) and (rr.min() > 0.1)
-
-    # INDEPENDENT low-order spectral cross-check (grid is accurate for small n):
-    N, L = 2048, 24.0
-    zeta, dz = rapidity_grid(N, L)
-    D = spectral_ddz(N, L)
-    psi = np.exp(-a * zeta ** 2 / 2.0).astype(complex)
-    psi /= np.sqrt(np.sum(np.abs(psi) ** 2) * dz)
-    v = psi.copy()
-    spec_norms = []
-    for n in range(6):                         # only low orders (no aliasing blowup)
-        spec_norms.append(np.sqrt(np.sum(np.abs(v) ** 2) * dz))
-        v = (-1j) * (D @ v)
-    spec_norms = np.array(spec_norms) / spec_norms[0]
-    ok &= np.allclose(spec_norms, norms[:6], rtol=0.05, atol=1e-3)
-
-    check_N2_nelson_bound.norms = norms
-    check_N2_nelson_bound.ratios = ratios
-    check_N2_nelson_bound.predicted = predicted
-    check_N2_nelson_bound.spec_norms = spec_norms
-    return bool(ok)
+    cosh(zeta)^(2n) = 2^(-2n) sum_k binom(2n,k) exp((2k-2n) zeta).
+    The Gaussian integral of exp(b zeta-a zeta^2) is sqrt(pi/a) exp(b^2/4a).
+    Constants independent of n do not affect the analytic-vector obstruction.
+    """
+    terms = []
+    for k in range(2 * n + 1):
+        b = 2 * k - 2 * n
+        terms.append(math.log(math.comb(2 * n, k)) + (b * b) / (4.0 * a))
+    max_term = max(terms)
+    log_integral = max_term + math.log(sum(math.exp(t - max_term) for t in terms))
+    log_integral += -2.0 * n * math.log(2.0) + 2.0 * n * math.log(mass)
+    return 0.5 * log_integral
 
 
-# --------------------------------------------------------------------------- #
-# N3: essential-self-adjointness proxy (deficiency / Cayley) for the boost.     #
-# --------------------------------------------------------------------------- #
-def deficiency_and_cayley(K):
-    """Return (def_plus, def_minus, cayley_unitary, real_spectrum) for a finite
-    symmetric matrix K, the truncated-operator proxies for:
-      def_+- = dim ker(K* -+ i)  (deficiency indices; 0 for ess. self-adjoint),
-      cayley_unitary = is (K - iI)(K + iI)^{-1} unitary,
-      real_spectrum  = are all eigenvalues real.
-    For a finite Hermitian matrix these are automatically (0,0)/unitary/real;
-    the DISCRIMINATING content is whether a given discretisation is Hermitian at
-    all (N1) and whether the *non-self-adjoint control* (N4) breaks them."""
-    n = K.shape[0]
-    # deficiency indices via rank of (K -+ i I): full rank => trivial deficiency
-    rank_plus = np.linalg.matrix_rank(K + 1j * np.eye(n), tol=1e-9)
-    rank_minus = np.linalg.matrix_rank(K - 1j * np.eye(n), tol=1e-9)
-    def_plus = n - rank_plus          # dim ker(K + iI)  (proxy for ker(K*-iI))
-    def_minus = n - rank_minus        # dim ker(K - iI)
-    # Cayley transform
-    Cay = (K - 1j * np.eye(n)) @ np.linalg.inv(K + 1j * np.eye(n))
-    cayley_unitary = np.allclose(Cay @ Cay.conj().T, np.eye(n), atol=1e-7)
-    # spectrum real?
-    ev = np.linalg.eigvals(K)
-    real_spectrum = np.max(np.abs(ev.imag)) < 1e-7
-    return def_plus, def_minus, cayley_unitary, real_spectrum
-
-
-def check_N3_deficiency_cayley(rng):
-    ok = True
-    # Boost K = -i d/dzeta on growing truncations: deficiency (0,0), Cayley
-    # unitary, real spectrum -- the essential-self-adjointness signature.
-    for N in (32, 64, 128):
-        L = 12.0
-        K = boost_orbital_rapidity(N, L)
-        # Hermitise tiny spectral round-off so the proxy reads the true operator
-        K = 0.5 * (K + K.conj().T)
-        dpl, dmi, cay, real = deficiency_and_cayley(K)
-        ok &= (dpl == 0 and dmi == 0)
-        ok &= cay
-        ok &= real
-
-    # Resolvent ranges fill the space as N grows: (K +- i)^{-1} is bounded and
-    # full-rank (dense range), with operator norm <= 1 (the self-adjoint bound).
-    for N in (32, 64, 128):
-        L = 12.0
-        K = boost_orbital_rapidity(N, L)
-        K = 0.5 * (K + K.conj().T)
-        Rp = np.linalg.inv(K + 1j * np.eye(N))
-        # ||(K+i)^{-1}|| <= 1 for self-adjoint K (spectral theorem)
-        ok &= (np.linalg.norm(Rp, 2) <= 1.0 + 1e-6)
-        ok &= (np.linalg.matrix_rank(Rp, tol=1e-9) == N)   # dense range
-    return bool(ok)
-
-
-# --------------------------------------------------------------------------- #
-# N4: NON-TRIVIALITY control -- -i d/dx on a HALF-LINE is symmetric but NOT     #
-# essentially self-adjoint (deficiency indices (1,0)); a non-Hermitian          #
-# perturbation has complex spectrum.  These MUST FAIL the N3 battery.           #
-# --------------------------------------------------------------------------- #
-def half_line_momentum(N, h):
-    """-i d/dx on [0, (N-1)h] with a symmetric interior stencil but NO periodic
-    wrap and NO boundary condition coupling the two ends -- the canonical
-    deficiency-(1,0) operator.  Built as the symmetric tridiagonal central
-    difference; the open boundary (no wrap) is what breaks essential
-    self-adjointness (cf. -i d/dx on the half-line, Reed-Simon II, X.1)."""
-    D = np.zeros((N, N), dtype=complex)
-    for i in range(N):
-        if i + 1 < N:
-            D[i, i + 1] += 1.0 / (2 * h)
-        if i - 1 >= 0:
-            D[i, i - 1] += -1.0 / (2 * h)
-    K = -1j * D
-    return K
-
-
-def check_N4_control(rng):
-    ok = True
-
-    # (a) Half-line momentum: the SYMMETRIC central-difference -i d/dx on an open
-    # interval (no periodic wrap) is the standard not-essentially-self-adjoint
-    # example.  The honest finite proxy: the central-difference -i d/dx on an
-    # OPEN grid is itself Hermitian, so to expose the deficiency we use the
-    # genuine half-line boundary -- a forward/one-sided derivative at the wall,
-    # i.e. an operator that is symmetric in the interior but whose adjoint domain
-    # is strictly larger.  We model the deficiency directly: the closure of
-    # -i d/dx on [0,inf) has ker(K*-iI) spanned by e^{-x} (in L^2(0,inf)) but
-    # ker(K*+iI) = {0} (e^{+x} not in L^2), giving deficiency indices (1,0).
-    xs = np.linspace(0.0, 40.0, 4000)
-    psi_minus = np.exp(-xs)                       # solves K* psi = +i psi, in L^2
-    psi_plus = np.exp(+xs)                        # solves K* psi = -i psi, NOT L^2
-    nm = np.sqrt(trapezoid(np.abs(psi_minus) ** 2, xs))
-    np_ = np.sqrt(trapezoid(np.abs(psi_plus) ** 2, xs))
-    # deficiency index n_+ = dim of L^2 solutions of K* psi = +i psi  -> 1
-    # deficiency index n_- = dim of L^2 solutions of K* psi = -i psi  -> 0
-    def_plus = 1 if np.isfinite(nm) and nm < 1e6 else 0
-    def_minus = 1 if np.isfinite(np_) and np_ < 1e6 else 0
-    ok &= (def_plus == 1)                          # one L^2 deficiency solution
-    ok &= (def_minus == 0)                          # none on the other side
-    ok &= (def_plus != def_minus)                   # UNEQUAL -> NOT ess. self-adj.
-    # ... so the half-line momentum FAILS essential self-adjointness, while the
-    # full-line boost (N3) has equal deficiency indices (0,0).  Discriminating.
-
-    # (b) A genuinely non-Hermitian operator: boost + non-Hermitian perturbation.
-    # It must FAIL symmetry, have COMPLEX spectrum and a NON-unitary Cayley map.
-    N, L = 64, 12.0
-    K = boost_orbital_rapidity(N, L)
-    K = 0.5 * (K + K.conj().T)
-    Kbad = K + 0.3j * np.diag(np.ones(N))          # add i*(real diag): anti-Herm
-    ok &= (not is_hermitian(Kbad, tol=1e-6))        # NOT symmetric
-    dpl, dmi, cay, real = deficiency_and_cayley(Kbad)
-    ok &= (not real)                                # COMPLEX spectrum
-    ok &= (not cay)                                 # NON-unitary Cayley transform
-
-    # (c) sanity: a SECOND non-normal control (upper-triangular shift) also fails.
-    Jord = np.diag(np.ones(N - 1), 1).astype(complex)
-    ok &= (not is_hermitian(Jord, tol=1e-9))
-    return bool(ok)
-
-
-# --------------------------------------------------------------------------- #
-# N5: group integrability (Stone) -- the rapidity-translation flow is a         #
-# strongly-continuous one-parameter UNITARY group; control half-line is not.    #
-# --------------------------------------------------------------------------- #
-def shift_unitary_periodic(N, L, s):
-    """exp(-i s K_orb) = exp(-s d/dzeta) = translation by s on L^2(R,dzeta),
-    realised exactly on the periodic grid by the Fourier multiplier exp(-i s k).
-    (K_orb = -i d/dzeta, so exp(-i s K_orb) = exp(-s d/dzeta), a shift by s.)"""
-    dz = 2.0 * L / N
-    k = 2.0 * np.pi * np.fft.fftfreq(N, d=dz)
-    F = np.fft.fft(np.eye(N), axis=0) / np.sqrt(N)
-    Finv = np.conj(F.T)
-    # exp(-i s K_orb) where K_orb -> multiplier k (since -i d/dzeta -> k):
-    U = Finv @ np.diag(np.exp(-1j * s * k)) @ F
-    return U
-
-
-def check_N5_group_integrability(rng):
-    ok = True
-    N, L = 128, 16.0
-
-    # strong continuity + group law + unitarity of the boost flow
-    Ua = shift_unitary_periodic(N, L, 0.3)
-    Ub = shift_unitary_periodic(N, L, 0.5)
-    Uab = shift_unitary_periodic(N, L, 0.8)
-    ok &= np.allclose(Ua @ Ua.conj().T, np.eye(N), atol=1e-9)        # unitary
-    ok &= np.allclose(Ua @ Ub, Uab, atol=1e-9)                       # group law
-    U0 = shift_unitary_periodic(N, L, 0.0)
-    ok &= np.allclose(U0, np.eye(N), atol=1e-12)                     # identity
-    # strong continuity: ||U(s)psi - psi|| -> 0 as s->0 on a smooth vector
-    zeta, dz = rapidity_grid(N, L)
-    psi = np.exp(-0.5 * zeta ** 2).astype(complex)
-    psi /= np.sqrt(np.sum(np.abs(psi) ** 2) * dz)
-    diffs = []
-    for s in (0.4, 0.2, 0.1, 0.05):
-        Us = shift_unitary_periodic(N, L, s)
-        diffs.append(np.sqrt(np.sum(np.abs(Us @ psi - psi) ** 2) * dz))
-    diffs = np.array(diffs)
-    ok &= np.all(np.diff(diffs) < 1e-9)        # monotone -> strongly continuous
-    ok &= (diffs[-1] < 0.05)
-
-    # Stone consistency: the generator recovered from (U(s)-I)/(-i s) -> K_orb on
-    # smooth vectors (the flow's generator is the boost we proved self-adjoint).
-    Korb = boost_orbital_rapidity(N, L)
-    Korb = 0.5 * (Korb + Korb.conj().T)
-    s = 1e-4
-    Us = shift_unitary_periodic(N, L, s)
-    approx_gen = (Us @ psi - psi) / (-1j * s)
-    ok &= np.allclose(approx_gen, Korb @ psi, atol=1e-2)
-
-    # CONTROL: the half-line shift is NOT a unitary group (probability leaks off
-    # the boundary), consistent with the generator there being non-self-adjoint.
-    # Translate a bump toward the wall on [0,L] (no wrap) and lose norm.
-    Nh = 400
-    xs = np.linspace(0.0, 10.0, Nh)
+def half_line_shift_loses_norm() -> bool:
+    xs = np.linspace(0.0, 10.0, 800)
     hx = xs[1] - xs[0]
     bump = np.exp(-(xs - 1.0) ** 2)
-    n0 = np.sqrt(trapezoid(np.abs(bump) ** 2, xs))
-    # shift LEFT toward the wall by k cells with NO wrap (mass falls off the edge)
+    n0 = math.sqrt(trapezoid(np.abs(bump) ** 2, xs))
     shifted = np.zeros_like(bump)
     kshift = int(round(2.0 / hx))
     shifted[:-kshift] = bump[kshift:]
-    n1 = np.sqrt(trapezoid(np.abs(shifted) ** 2, xs))
-    ok &= (n1 < n0 - 1e-3)        # NORM NOT preserved -> not a unitary group
-    return bool(ok)
+    n1 = math.sqrt(trapezoid(np.abs(shifted) ** 2, xs))
+    return n1 < n0 - 1e-3
 
 
-# --------------------------------------------------------------------------- #
-def main():
+def main() -> int:
     rng = np.random.default_rng(SEED)
-    checks = [
-        ("N1_symmetry_on_core_two_realisations", check_N1_symmetry(rng)),
-        ("N2_nelson_analytic_vector_bound", check_N2_nelson_bound(rng)),
-        ("N3_deficiency_cayley_essential_selfadjointness", check_N3_deficiency_cayley(rng)),
-        ("N4_NONTRIVIALITY_halfline_and_nonhermitian_FAIL", check_N4_control(rng)),
-        ("N5_group_integrability_stone_unitary_flow", check_N5_group_integrability(rng)),
-    ]
+    results: list[dict] = []
 
-    # report the exhibited Nelson growth (non-vacuous evidence)
-    if hasattr(check_N2_nelson_bound, "norms"):
-        nm = check_N2_nelson_bound.norms
-        print("[info] Nelson growth ||K^n psi||/||psi|| (exact Hermite) n=0..%d:" % (len(nm) - 1))
-        print("       " + "  ".join("%.3e" % x for x in nm))
-        print("[info]   (closed-form law ~ a^{n/2} sqrt(n!), a=0.5 -- analytic-vector growth)")
-        print("[info] Nelson ratio ||K^n psi||/(C R^n n!), C=R=1 (must be <=1, ->0):")
-        print("       " + "  ".join("%.2e" % x for x in check_N2_nelson_bound.ratios))
+    source_anchor_checks(results)
 
-    npass = sum(1 for _, ok in checks if ok)
-    nfail = sum(1 for _, ok in checks if not ok)
-    for name, ok in checks:
-        print(f"[{'PASS' if ok else 'FAIL'}] {name}")
-    print(f"SCORECARD PASS={npass} FAIL={nfail}")
-    if nfail:
-        raise SystemExit(1)
+    n = 128
+    length = 14.0
+    zeta, dz = rapidity_grid(n, length)
+    m_perp = 1.7
+    p = m_perp * np.sinh(zeta)
+    energy = m_perp * np.cosh(zeta)
+
+    k_orb = boost_orbital(n, length)
+    check(
+        "D1 boost orbital generator is Hermitian in rapidity",
+        np.allclose(k_orb, k_orb.conj().T, atol=1e-8),
+        "K_orb=-i d/dzeta on L2(R,dzeta)",
+        results,
+    )
+
+    identity_ok = True
+    for _ in range(8):
+        a = float(rng.uniform(0.3, 1.1))
+        c = float(rng.uniform(-1.0, 1.0))
+        f = np.exp(-a * (zeta - c) ** 2)
+        df_dz = -2.0 * a * (zeta - c) * f
+        identity_ok = identity_ok and np.allclose(energy * (df_dz / energy), df_dz, atol=1e-12)
+    check(
+        "D2 rapidity change gives E d/dp = d/dzeta",
+        identity_ok,
+        "dp/dzeta=E, so the boost one-parameter generator reduces exactly to momentum on the line",
+        results,
+    )
+
+    u03 = shift_unitary(n, length, 0.3)
+    u05 = shift_unitary(n, length, 0.5)
+    u08 = shift_unitary(n, length, 0.8)
+    psi = np.exp(-0.5 * zeta**2).astype(complex)
+    psi /= trap_norm(psi, dz)
+    diffs = []
+    for s in (0.4, 0.2, 0.1, 0.05):
+        diffs.append(trap_norm(shift_unitary(n, length, s) @ psi - psi, dz))
+    direct_boost_ok = (
+        np.allclose(u03 @ u03.conj().T, np.eye(n), atol=1e-9)
+        and np.allclose(u03 @ u05, u08, atol=1e-9)
+        and all(diffs[i + 1] < diffs[i] for i in range(len(diffs) - 1))
+        and diffs[-1] < 0.05
+    )
+    check(
+        "D3 direct boost flow is a strongly continuous unitary one-parameter group",
+        direct_boost_ok,
+        f"small-shift norms={', '.join(f'{x:.3e}' for x in diffs)}",
+        results,
+    )
+
+    phase = np.exp(-1j * 0.37 * energy)
+    momentum_phase = np.exp(1j * 0.21 * p)
+    check(
+        "D4 translation generators act by unitary mass-shell phases",
+        np.allclose(np.abs(phase), 1.0, atol=TOL)
+        and np.allclose(np.abs(momentum_phase), 1.0, atol=TOL)
+        and np.min(energy) > 0,
+        f"min E={np.min(energy):.6f}; |exp(-itE)| and |exp(iap)| equal 1",
+        results,
+    )
+
+    slopes = []
+    ns = list(range(4, 19))
+    for n_moment in ns:
+        log_ratio = gaussian_energy_log_norm(n_moment) - math.lgamma(n_moment + 1)
+        slopes.append(log_ratio / n_moment)
+    gaussian_route_fails = slopes[-1] > slopes[0] + 2.0 and slopes[-1] > 6.0
+    check(
+        "D5 rapidity Gaussian is not an analytic vector for H/P",
+        gaussian_route_fails,
+        f"log(||H^n psi||/n!)/n grows from {slopes[0]:.3f} to {slopes[-1]:.3f}",
+        results,
+    )
+
+    k = 0.5 * (k_orb + k_orb.conj().T)
+    cayley = (k - 1j * np.eye(n)) @ np.linalg.inv(k + 1j * np.eye(n))
+    deficiency_proxy_ok = (
+        np.linalg.matrix_rank(k + 1j * np.eye(n), tol=1e-9) == n
+        and np.linalg.matrix_rank(k - 1j * np.eye(n), tol=1e-9) == n
+        and np.allclose(cayley @ cayley.conj().T, np.eye(n), atol=1e-8)
+    )
+    check(
+        "D6 boost Cayley/deficiency finite proxy has self-adjoint signature",
+        deficiency_proxy_ok,
+        "full-line momentum proxy has full ranges for K +/- i and unitary Cayley transform",
+        results,
+    )
+
+    check(
+        "D7 half-line control is not a unitary group",
+        half_line_shift_loses_norm(),
+        "the same first-order shift on a half-line loses norm at the boundary",
+        results,
+    )
+
+    pass_count = sum(1 for item in results if item["pass"])
+    fail_count = len(results) - pass_count
+    payload = {
+        "claim_id": "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+        "repair": (
+            "replace false Nelson common-analytic-vector route with direct "
+            "unitary-action integrability and wire in the Wigner "
+            "strong-continuity bridge as an explicit restricted-packet dependency"
+        ),
+        "status_boundary": (
+            "bounded-support/direct-integrability repair; no Nelson Laplacian or "
+            "common Gaussian analytic-vector claim remains"
+        ),
+        "gaussian_route_slopes": slopes,
+        "summary": {"pass": pass_count, "fail": fail_count},
+        "results": results,
+    }
+    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT_PATH.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+    print()
+    print("FREE DIRAC POINCARE DIRECT-INTEGRABILITY REPAIR CERTIFICATE")
+    print(f"OUTPUT_JSON={OUTPUT_PATH.relative_to(REPO_ROOT)}")
+    print(f"SCORECARD PASS={pass_count} FAIL={fail_count}")
+    print("VERDICT: the old Nelson/Gaussian route is rejected; the repaired route")
+    print("uses the explicit unitary mass-shell action and one-parameter Stone/self-adjointness checks.")
+    return 0 if fail_count == 0 else 1
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

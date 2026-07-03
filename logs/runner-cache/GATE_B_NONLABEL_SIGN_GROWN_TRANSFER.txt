@@ -1,15 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py
-runner_sha256: f644eb505510f3d9e021d7a7644a84b7a0d4516903eb97bd6f535a23e19f3f8a
+runner_sha256: 3b9111df0ce6dc81dfd1002cfb5097e84f7c3bb68e593d21530b68a08c9d44ab
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 91.55
+elapsed_sec: 44.72
 status: ok
 ----- stdout -----
 ==============================================================================================
 GROWN-ROW NON-LABEL SIGN-LAW TEST
   question: can the old geometry-sector architecture carry the fixed-field
-  signed-source response on the retained grown row?
+  signed-source response on the retained-bounded grown row?
+  retained-bounded grown-row authority: docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md
 ==============================================================================================
 h=0.5, NL=25, drift=0.2, restore=0.7, seeds=[0]
 source_z=3.0, offset=1.0, strength=5e-05
@@ -30,12 +31,32 @@ geometry-sector candidate
   double +2 delta_z          -7.070770e-05
   charge exponent            1.000223
 
+Transfer checks (label-grown control):
+  [PASS] label-grown control: zero-source delta_z vanishes  (|delta_z_zero|=0.000e+00, tol=1e-12)
+  [PASS] label-grown control: neutral +1/-1 delta_z vanishes  (|delta_z_neutral|=0.000e+00, tol=1e-12)
+  [PASS] label-grown control: single +1 / single -1 are antisymmetric to relative tolerance  (|plus+minus|/max=2.308e-04, tol=5e-03)
+  [PASS] label-grown control: single +1 produces negative delta_z (toward sign convention)  (delta_z_plus=-1.594e-04)
+  [PASS] label-grown control: single -1 produces positive delta_z (toward sign convention)  (delta_z_minus=+1.595e-04)
+  [PASS] label-grown control: single-source signal magnitude above numerical floor  (max(|plus|,|minus|)=1.595e-04, floor=1e-06)
+  [PASS] label-grown control: charge exponent within tolerance of 1.0  (|alpha-1|=1.672e-04, tol=5e-03)
+Transfer checks (geometry-sector candidate):
+  [PASS] geometry-sector candidate: zero-source delta_z vanishes  (|delta_z_zero|=0.000e+00, tol=1e-12)
+  [PASS] geometry-sector candidate: neutral +1/-1 delta_z vanishes  (|delta_z_neutral|=0.000e+00, tol=1e-12)
+  [PASS] geometry-sector candidate: single +1 / single -1 are antisymmetric to relative tolerance  (|plus+minus|/max=3.098e-04, tol=5e-03)
+  [PASS] geometry-sector candidate: single +1 produces negative delta_z (toward sign convention)  (delta_z_plus=-3.535e-05)
+  [PASS] geometry-sector candidate: single -1 produces positive delta_z (toward sign convention)  (delta_z_minus=+3.534e-05)
+  [PASS] geometry-sector candidate: single-source signal magnitude above numerical floor  (max(|plus|,|minus|)=3.535e-05, floor=1e-06)
+  [PASS] geometry-sector candidate: charge exponent within tolerance of 1.0  (|alpha-1|=2.232e-04, tol=5e-03)
+
 SAFE READ
   - If the geometry-sector candidate keeps the zero/neutral controls at zero
     and preserves the charge-linear sign response, then the old architecture
-    genuinely applies to the current grown-row fixed-field lane.
+    has finite-runner support on the current grown-row fixed-field lane.
   - If it collapses to zero or loses charge linearity, the old architecture
     was specific to the earlier Gate B families and does not transplant cleanly.
+
+PASS=14 FAIL=0
+SUMMARY: PASS=14 FAIL=0
 
 ----- stderr -----
 

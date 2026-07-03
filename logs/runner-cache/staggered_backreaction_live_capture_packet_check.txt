@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/staggered_backreaction_live_capture_packet_check.py
-runner_sha256: 54ad62600a353a4826934404b862630c4e5aba8a21b94ea8c0825d84ccad3205
+runner_sha256: 062e2dedffc603e15365a7f1685b55fbe56cb09d5141759be6ea26e81d6f5536
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.04
+elapsed_sec: 0.44
 status: ok
 ----- stdout -----
 ================================================================================================
@@ -31,10 +31,10 @@ CAPTURE BATTERY: random_geometric (36 nodes)
 CAPTURE BATTERY: growing (48 nodes)
   [B1] Zero-source: F=0.0000e+00, |Phi|=0.0000e+00 PASS
   [B2] Linearity: R^2=0.992977 PASS
-  [B3] Additivity: residual=1.7022e-16 PASS
+  [B3] Additivity: residual=2.4784e-16 PASS
   [B4] Force: +3.3040e-01 TOWARD PASS
   [B5] Iter stability: 15/15 TOWARD PASS
-  [B6] Norm: drift=0.0000e+00 PASS
+  [B6] Norm: drift=2.2204e-16 PASS
     gauss     : F=+3.3040e-01 TW
     color-0   : F=+1.6852e-01 TW
     color-1   : F=+4.8992e-01 TW
@@ -53,6 +53,10 @@ SAFE READ
   cycle gap improvement factor: 2.08x
   cycle mean R2: 0.996306; two-body max <1e-12
   holdout gap: 9.191e-01 -> 4.559e-01 (2.02x)
+PROTOTYPE_SOURCE_PACKET
+  source: scripts/frontier_staggered_backreaction_prototype.py
+  cache: logs/runner-cache/frontier_staggered_backreaction_prototype.txt
+  untruncated source/cache assertion: PASS
   bounded live packet only: no old stale table or continuum closure
   [PASS (C)] live capture packet
 ASSERTIONS: PASS

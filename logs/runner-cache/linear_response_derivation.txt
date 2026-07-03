@@ -1,11 +1,35 @@
 ===== runner cache v1 =====
 runner: scripts/linear_response_derivation.py
-runner_sha256: ca169ee3ff6ba0478608671512fdafa85003521bd896e55230d2d41ef0bb1986
+runner_sha256: b1bb8992e9e2f7dde60344b97475a5a6196975614b6684c1549cd2c8b8d8de2a
 timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.02
-status: timeout
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
 ----- stdout -----
+====================================================================================================
+LINEAR-RESPONSE DERIVATION-ADJACENT ANALYSIS -- FROZEN-LOG VERIFIER
+  Scope: open-gate heuristic metrics from the completed 44-family log.
+  Full 44-family recomputation remains available with --recompute.
+====================================================================================================
+[PASS] frozen 44-family log exists :: /private/tmp/linear-response-open-gate-20260613/logs/2026-04-07-linear-response-derivation.txt
+[PASS] finite-difference epsilon is 0.001
+[PASS] source note contains downstream firewall
+[PASS] source firewall forbids literal-Kubo/closed-derivation reuse
+[PASS] 44 family rows parsed :: rows=44
+[PASS] group counts are 26/9/9 :: {'swept': 26, 'scaffolded': 9, 'off_scaffold': 9}
+[PASS] overall Pearson r recomputes to 0.5605 :: r=0.5605
+[PASS] swept Pearson r recomputes :: r=0.7077
+[PASS] scaffolded Pearson r recomputes :: r=0.4045
+[PASS] off_scaffold Pearson r recomputes :: r=0.7248
+[PASS] sign agreement is 36/44 :: sign_ok=36
+[PASS] no-fit kubo>1e-4 classification is 33/44 :: correct=33
+[PASS] best in-sample threshold matches log :: threshold=0.084103 acc=0.7955
+[PASS] measured-response ceiling is 39/44 :: correct=39
+[PASS] verdict remains moderate/open, not retained
+
+SCORECARD PASS=15 FAIL=0
+FINDING: frozen 44-family heuristic metrics are audit-reproducible.
+BOUNDARY: detector-only heuristic; not the literal first-order Kubo theorem.
 
 ----- stderr -----
 

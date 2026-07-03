@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_transition_kernel_interface_2026_06_06.py
+runner_sha256: 1684b1020d77e2519828ae70d8f651193332abed26862300a0c1160b1e141aa6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_TRANSITION_KERNEL_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_TRANSITION_KERNEL_INTERFACE_2026-06-06.md contains: actual_current_surface_status: exact-support
+PASS docs/POST_RECORD_TRANSITION_KERNEL_INTERFACE_2026-06-06.md contains: trace_class: upstream_support
+PASS docs/POST_RECORD_TRANSITION_KERNEL_INTERFACE_2026-06-06.md contains: transition-kernel derivation remains open
+PASS docs/POST_RECORD_TRANSITION_KERNEL_INTERFACE_2026-06-06.md contains: Rows that need the kernel
+PASS docs/POST_RECORD_TRANSITION_KERNEL_INTERFACE_2026-06-06.md contains: generation or Koide dial
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md exists
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: post-record append action on O*
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: transition rates or a time metric
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: realized counts stay integral while ensemble expectations can be fractional
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md exists
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md contains: post-record update is integral
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md contains: predictive expectation
+PASS docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md contains: belongs to the pre-record or ensemble layer
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md exists
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: post-record information dynamics
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: probability laws, Born typicality, and transition rates
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: Record history/count support is therefore an exact **consumer**
+
+------------------------------------------------------------------------------
+Supplied kernel gives finite-history probabilities
+------------------------------------------------------------------------------
+PASS initial law is normalized
+PASS transition kernel is row-stochastic
+PASS history probabilities normalize at length 1 :: 1
+PASS history probabilities normalize at length 2 :: 1
+PASS history probabilities normalize at length 3 :: 1
+PASS history probabilities normalize at length 4 :: 1
+PASS specific history probability is product of supplied factors :: 1/24
+PASS conditional expected next count is c + current kernel row :: (Fraction(6, 5), Fraction(6, 5), Fraction(8, 5))
+PASS realized append remains integral :: (2, 1, 1)
+PASS expected next count can be fractional
+PASS expected counts over length 3 sum to length :: (Fraction(239, 200), Fraction(953, 900), Fraction(1343, 1800))
+PASS expected counts over length 3 can be fractional
+PASS alternative supplied kernel is also row-stochastic
+PASS same realized word gets different next prediction under different kernels
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS Record-derived kernel flag is false
+PASS Record-derived Markov property flag is false
+PASS Record-derived stationarity flag is false
+PASS Record-derived clock/rate flag is false
+PASS Record-derived Born/instrument flag is false
+PASS Record-derived Hamiltonian flag is false
+PASS generation/Koide dial selected flag is false
+
+SUMMARY: PASS=39 FAIL=0
+SUPPLIED_KERNEL_EXTENDS_TO_RECORD_HISTORY_LAW=TRUE
+RECORD_DERIVES_TRANSITION_KERNEL=FALSE
+REALIZED_COUNTS_REMAIN_INTEGRAL=TRUE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

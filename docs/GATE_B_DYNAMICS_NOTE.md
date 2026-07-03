@@ -1,7 +1,171 @@
 # Gate B: Evolving Network Dynamics — Current Status
 
 **Date:** 2026-04-04
-**Status:** bounded - bounded or caveated result note
+**Status:** bounded generated-geometry source index; not a physical-gravity or
+primitive-to-readout bridge
+**Claim type:** open_gate
+**Audit-scope narrow:** 2026-06-08
+
+## 2026-06-16 weak-field source/action interface split
+
+The post-audit source/action repair
+[`GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md`](GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md)
+splits `GB-S1` into two pieces:
+
+| ID | Piece | Current status |
+|---|---|---|
+| `GB-S1a` | linear weak-field test-action form `S = L (1 - phi)` | bounded-support interface from the retained-bounded weak-field source-response bridge |
+| `GB-S1b` | runner scalar `phi_GB(x)=strength/(r(x,mass)+0.1)`, finite-core regulator, and normalization | still supplied Gate-B runner data |
+
+This narrows the earlier black-box boundary without closing Gate B. The parent
+Gate B row remains an open gate: it still does not derive a Gate B dynamics
+theorem, the `GB-S1b-b` physical scalar source/boundary/regulator/normalization,
+`GB-S2b` physical-readout semantics, or the `GB-S3b` physical-growth selector
+from retained framework primitives. These splits add no new axiom, Tier-A
+admission, or audit-status change.
+
+## 2026-06-18 finite path-sum propagation split
+
+The source-side bridge
+[`GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+splits `GB-S2` into two pieces:
+
+| ID | Piece | Current status |
+|---|---|---|
+| `GB-S2a` | finite complex-amplitude propagation on the supplied layered DAG | bounded-support source bridge: the runner recursion is exactly the finite path-sum transfer over unblocked directed paths, with a finite linear transfer operator and normalized terminal detector distribution once a detector set is supplied |
+| `GB-S2b` | physical detector-window mass-gain, `TOWARD`, and `F~M` readout semantics | still supplied Gate-B runner data |
+
+This removes a bookkeeping ambiguity in the propagation packet: the update rule
+is not an opaque numerical procedure. It is the exact finite path expansion of
+the declared edge kernel on the declared finite DAG. The physical interpretation
+of the detector window, `TOWARD` sign, and `F~M` slope remains open. This
+update does not derive `GB-S1b`, `GB-S3`, a physical gravity readout, or a full
+Gate B dynamics theorem.
+
+## 2026-06-18 local stencil connectivity split
+
+The source-side bridge
+[`GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+splits `GB-S3` into two pieces:
+
+| ID | Piece | Current status |
+|---|---|---|
+| `GB-S3a` | label/offset-preserving forward stencil on the finite `Z^3` slab | bounded-support source bridge: the stencil is a finite-range local lattice relation, translation-covariant in the interior, boundary-clipped on the finite slab, and exactly matches the adjacency used by `scripts/gate_b_connectivity_tolerance.py` |
+| `GB-S3b` | physical selection or dynamical generation of that stencil as the Gate B growth rule | still open Gate-B dynamics data |
+
+This removes one avoidable ambiguity in the generated-connectivity packet: the
+runner's positive label/offset family is not an arbitrary KNN or nonlocal graph
+choice. It is the finite-slab restriction of a fixed local stencil on the
+framework lattice. The stronger physical-growth claim remains open. This update
+does not derive `GB-S1b`, `GB-S2`, a physical gravity readout, or a full Gate B
+dynamics theorem.
+
+## 2026-06-18 finite radial scalar split
+
+The source-side bridge
+[`GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+splits `GB-S1b` into two pieces:
+
+| ID | Piece | Current status |
+|---|---|---|
+| `GB-S1b-a` | finite runner scalar `phi_GB(x)=strength/(r(x,mass)+0.1)` on the supplied coordinate slab | bounded-support source bridge: the scalar is positive, finite, radially monotone in the supplied Euclidean coordinate distance, exactly matches the runner helper, and is linear in the source-strength normalization |
+| `GB-S1b-b` | physical Poisson/source equation, boundary condition, regulator selection, and absolute normalization | still open Gate-B runner/physics data |
+
+This removes one avoidable black-box part of the source packet: the runner
+scalar is now an explicit finite radial field with a checked regulator and
+linear normalization dependence. The stronger physical claim remains open:
+this update does not derive the Poisson PDE, the `0.1` finite-core regulator,
+the source strength, `GB-S2` propagation/readout semantics, `GB-S3`
+generated-connectivity rule, a physical gravity readout, or a full Gate B
+dynamics theorem.
+
+## 2026-06-17/18 context-independence no-go
+
+The source-side no-go
+[`GATE_B_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md`](GATE_B_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md)
+proves that the remaining physical packet pieces are not hidden content of the
+current Lattice + Quantum + Record axiom surface. Two completions can share the
+same fixed `Z^3` nearest-neighbor patch while assigning different physical
+scalar source/regulator/normalization choices, different detector/readout
+windows, and different generated-growth rules.
+
+This does not refute the finite Gate B numerics or the bounded-support split
+notes above. It says the current axioms cannot derive `GB-S1b-b`, `GB-S2b`, or
+`GB-S3b`. The row therefore stays an open-gate bounded generated-geometry
+source index until a separate local-growth/dynamics/readout theorem lands.
+This no-go adds no axiom, Tier-A admission, Gate B closure, or audit-status
+change.
+
+## 2026-06-12 audit firewall: source index, not dynamics closure
+
+The audited missing bridges remain `GB-S1b-b`, `GB-S2b`, and `GB-S3b`: the Gate
+B runner's physical scalar source/boundary/regulator/normalization remains
+supplied, physical detector-window/TOWARD/`F~M` semantics remain supplied, and
+physical selection/dynamical generation of that stencil remains supplied. The
+primary connectivity replay and companion manifest verify finite
+generated-geometry behavior inside that supplied packet only.
+
+This row is therefore an **open-gate source index**. It does not derive a
+Gate B dynamics theorem, physical gravity/readout bridge, or primitive local
+growth rule from retained framework primitives, and it introduces no new
+axiom, Tier-A admission, or audit-status change.
+
+## 2026-06-08 Audit-Scope Narrow
+
+This row is a source-side index over bounded generated-geometry numerical
+companions. It is not itself a theorem deriving the primitive growth rule, the
+physical gravity/readout bridge, or a full-family Gate B closure.
+
+When older sections below say that a slice is "closed", read that only as:
+
+```text
+the named frozen runner-local far-field slice passed its tested sign/F~M gates
+inside the supplied generated-geometry harness.
+```
+
+That wording does not promote a framework-native generated-geometry theorem.
+The stronger science target remains open: derive the local growth/connectivity
+rule and the physical gravity/readout semantics from retained framework
+primitives.
+
+## 2026-06-09 Row-Local Source-Packet Manifest
+
+This manifest is the current re-audit target for the Gate B row. It does not
+derive a clean Gate B dynamics theorem. It discloses the supplied ingredients
+of the bounded generated-geometry packet so the row can be audited as a source
+index rather than as an independent primitive-to-physical-gravity bridge.
+
+**Manifest runner:**
+[`scripts/gate_b_source_packet_manifest_2026_06_09.py`](../scripts/gate_b_source_packet_manifest_2026_06_09.py)
+**Cached output:**
+[`logs/runner-cache/gate_b_source_packet_manifest_2026_06_09.txt`](../logs/runner-cache/gate_b_source_packet_manifest_2026_06_09.txt)
+
+| ID | Supplied ingredient | Row-local definition | Status boundary |
+|---|---|---|---|
+| `GB-S1` | valley-linear source/action rule | The runners use the scalar field `f(x) = strength/(r(x, mass)+0.1)` and the forward phase action `S = L(1 - f)` with the declared constants in the paired scripts. | Split by the 2026-06-16 interface note and 2026-06-18 scalar bridge: the linear `S=L(1-phi)` response form has bounded weak-field support (`GB-S1a`), and the finite radial runner scalar has bounded-support as checked algebra on the supplied coordinate slab (`GB-S1b-a`), but the physical Poisson/source equation, regulator choice, and absolute normalization remain supplied (`GB-S1b-b`). Not fully derived from retained primitives and not a new axiom. |
+| `GB-S2` | propagation/readout semantics | The runners use forward-layer path propagation, a central blocked barrier, detector-window mass gain, `TOWARD` sign, and local `F~M` log-slope readouts. | Split by the 2026-06-18 finite path-sum bridge: the finite propagation recursion itself is exact path-sum algebra (`GB-S2a`), but the central barrier, detector-window mass gain, `TOWARD`, and `F~M` physical readout semantics remain supplied (`GB-S2b`). |
+| `GB-S3` | generated-connectivity rule | The positive generated-geometry rows use label/offset-preserving forward connectivity with drift/restore companions; KNN and non-label candidates are recorded as controls or bounded negatives where their sign/`F~M` package weakens. | Split by the 2026-06-18 local-stencil bridge: the label/offset stencil itself has bounded-support as a finite-range `Z^3` local relation matching the runner adjacency (`GB-S3a`), but the physical selection/dynamical generation of that stencil remains supplied (`GB-S3b`). |
+
+The direct source packet is therefore:
+
+```text
+I_GateB = (GB-S1 weak-field action plus finite radial scalar
+              with supplied physical source/boundary/regulator/normalization,
+           GB-S2 finite propagation plus supplied physical readout semantics,
+           GB-S3 local stencil plus supplied physical-growth selector,
+           frozen seed/geometry rows recorded in the companion notes).
+```
+
+The load-bearing claim is only conditional on `I_GateB`: the named frozen
+runners compute sign, local `F~M`, distance-law, and non-gravity companion
+readouts for the declared rows. The row does not promote `I_GateB` to a
+repo-wide accepted premise, retained theorem, physical gravity theorem, or
+closed Gate B dynamics theorem.
+
+**Re-audit target.** Audit this note as a bounded generated-geometry source
+index/open gate with a fully visible supplied packet. Re-audit as a clean Gate B
+dynamics theorem only after a separate theorem derives `GB-S1`, `GB-S2`, and
+`GB-S3` from retained primitives.
 
 ## The question
 
@@ -11,25 +175,25 @@ Can we grow (rather than impose) geometry that gives Newtonian gravity?
 
 Primary frozen replay for the current connectivity-vs-noise read:
 
-- [scripts/gate_b_connectivity_tolerance.py](/Users/jonreilly/Projects/Physics/scripts/gate_b_connectivity_tolerance.py)
-- [logs/2026-04-04-gate-b-connectivity-tolerance.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-04-gate-b-connectivity-tolerance.txt)
-- [docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md](/Users/jonreilly/Projects/Physics/docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md)
+- [scripts/gate_b_connectivity_tolerance.py](../scripts/gate_b_connectivity_tolerance.py)
+- [logs/2026-04-04-gate-b-connectivity-tolerance.txt](../logs/2026-04-04-gate-b-connectivity-tolerance.txt)
+- [docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md](GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md)
 
 Structured-connectivity follow-up:
 
-- [scripts/evolving_network_prototype_v4.py](/Users/jonreilly/Projects/Physics/scripts/evolving_network_prototype_v4.py)
-- [logs/2026-04-04-evolving-network-prototype-v4.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-04-evolving-network-prototype-v4.txt)
-- [docs/EVOLVING_NETWORK_PROTOTYPE_V4_NOTE.md](/Users/jonreilly/Projects/Physics/docs/EVOLVING_NETWORK_PROTOTYPE_V4_NOTE.md)
+- [scripts/evolving_network_prototype_v4.py](../scripts/evolving_network_prototype_v4.py)
+- [logs/2026-04-04-evolving-network-prototype-v4.txt](../logs/2026-04-04-evolving-network-prototype-v4.txt)
+- [docs/EVOLVING_NETWORK_PROTOTYPE_V4_NOTE.md](EVOLVING_NETWORK_PROTOTYPE_V4_NOTE.md)
 
 Latest bounded follow-up:
 
-- [scripts/evolving_network_prototype_v5.py](/Users/jonreilly/Projects/Physics/scripts/evolving_network_prototype_v5.py)
-- [logs/2026-04-04-evolving-network-prototype-v5.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-04-evolving-network-prototype-v5.txt)
-- [docs/EVOLVING_NETWORK_PROTOTYPE_V5_NOTE.md](/Users/jonreilly/Projects/Physics/docs/EVOLVING_NETWORK_PROTOTYPE_V5_NOTE.md)
+- [scripts/evolving_network_prototype_v5.py](../scripts/evolving_network_prototype_v5.py)
+- [logs/2026-04-04-evolving-network-prototype-v5.txt](../logs/2026-04-04-evolving-network-prototype-v5.txt)
+- [docs/EVOLVING_NETWORK_PROTOTYPE_V5_NOTE.md](EVOLVING_NETWORK_PROTOTYPE_V5_NOTE.md)
 
 The primary runner reports per-architecture TOWARD fractions and a local
 `F~M` response-slope probe (mean over the six frozen seeds). These match the
-retained companion [docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md](/Users/jonreilly/Projects/Physics/docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md):
+retained companion [docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md](GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md):
 
 1. **Jittered NN lattice** (positions jittered, fixed connectivity):
    `75.0%` TOWARD at jitter `0.5`; across the jitter sweep `0.0-0.5` the
@@ -75,7 +239,7 @@ stable under connectivity changes than the gravity sign, but the local
 `F~M` values on this near-field harness are **not** universal constants and
 should not be read as a promoted `F∝M = 1.00` law. The clean retained
 `F∝M = 1.00` mass-scaling result lives on the far-field harness
-([docs/GATE_B_FARFIELD_NOTE.md](/Users/jonreilly/Projects/Physics/docs/GATE_B_FARFIELD_NOTE.md)),
+([docs/GATE_B_FARFIELD_NOTE.md](GATE_B_FARFIELD_NOTE.md)),
 not on this connectivity-tolerance replay.
 
 ## Path forward
@@ -131,9 +295,9 @@ So the current safe Gate B read is:
 
 The newer h=0.5 structured-growth lane is now frozen on disk:
 
-- [scripts/evolving_network_prototype_v6.py](/Users/jonreilly/Projects/Physics/scripts/evolving_network_prototype_v6.py)
-- [logs/2026-04-04-evolving-network-prototype-v6.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-04-evolving-network-prototype-v6.txt)
-- [docs/EVOLVING_NETWORK_PROTOTYPE_V6_NOTE.md](/Users/jonreilly/Projects/Physics/docs/EVOLVING_NETWORK_PROTOTYPE_V6_NOTE.md)
+- [scripts/evolving_network_prototype_v6.py](../scripts/evolving_network_prototype_v6.py)
+- [logs/2026-04-04-evolving-network-prototype-v6.txt](../logs/2026-04-04-evolving-network-prototype-v6.txt)
+- [docs/EVOLVING_NETWORK_PROTOTYPE_V6_NOTE.md](EVOLVING_NETWORK_PROTOTYPE_V6_NOTE.md)
 
 It does **not** reproduce the branch headline of `100%` TOWARD across the full
 tested matrix. The frozen rows are:
@@ -173,9 +337,9 @@ characterization of the near-field regime.
 
 Dedicated far-field artifact chain:
 
-- [`scripts/gate_b_farfield_harness.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_farfield_harness.py)
-- [`logs/2026-04-05-gate-b-farfield-harness.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-farfield-harness.txt)
-- [`docs/GATE_B_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_FARFIELD_NOTE.md)
+- [`scripts/gate_b_farfield_harness.py`](../scripts/gate_b_farfield_harness.py)
+- [`logs/2026-04-05-gate-b-farfield-harness.txt`](../logs/2026-04-05-gate-b-farfield-harness.txt)
+- [`docs/GATE_B_FARFIELD_NOTE.md`](GATE_B_FARFIELD_NOTE.md)
 
 Results at h=0.5, 12 seeds × z=[3,4,5] = 36 tests per row:
 
@@ -186,8 +350,9 @@ Results at h=0.5, 12 seeds × z=[3,4,5] = 36 tests per row:
 | 0.1 | 0.9 | 36/36 (100%) | 1.00 |
 | 0.0 | 1.0 | 36/36 (100%) | 1.00 |
 
-**Gate B far-field: CLOSED.** Grown geometry gives 100% TOWARD with
-F∝M=1.00 at all drift/restore levels in the far field (z≥3).
+**Gate B far-field bounded slice:** the frozen runner-local generated-geometry
+harness gives 100% TOWARD with F∝M=1.00 at all drift/restore levels in the far
+field (z≥3).
 
 The near-field (z≤2) remains mixed on both grown and fixed lattices.
 This is a beam-optics effect, not a growth-rule or physics failure.
@@ -196,9 +361,9 @@ This is a beam-optics effect, not a growth-rule or physics failure.
 
 Dedicated exact-vs-grown control:
 
-- [`scripts/gate_b_v6_nearfield_comparator.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_v6_nearfield_comparator.py)
-- [`logs/2026-04-05-gate-b-v6-nearfield-comparator.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-v6-nearfield-comparator.txt)
-- [`docs/GATE_B_V6_NEARFIELD_COMPARATOR_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_V6_NEARFIELD_COMPARATOR_NOTE.md)
+- [`scripts/gate_b_v6_nearfield_comparator.py`](../scripts/gate_b_v6_nearfield_comparator.py)
+- [`logs/2026-04-05-gate-b-v6-nearfield-comparator.txt`](../logs/2026-04-05-gate-b-v6-nearfield-comparator.txt)
+- [`docs/GATE_B_V6_NEARFIELD_COMPARATOR_NOTE.md`](GATE_B_V6_NEARFIELD_COMPARATOR_NOTE.md)
 
 Frozen bucket summary for the retained `drift = 0.3`, `restore = 0.5` row:
 
@@ -226,12 +391,12 @@ So the safe read is stronger than “near-field mixed” alone:
 The far-field Gate B lane now has dedicated companion replays for the retained
 moderate-drift row:
 
-- [`scripts/gate_b_grown_distance_law.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_grown_distance_law.py)
-- [`logs/2026-04-05-gate-b-grown-distance-law.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-grown-distance-law.txt)
-- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
-- [`scripts/gate_b_grown_joint_package.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_grown_joint_package.py)
-- [`logs/2026-04-05-gate-b-grown-joint-package.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-grown-joint-package.txt)
-- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
+- [`scripts/gate_b_grown_distance_law.py`](../scripts/gate_b_grown_distance_law.py)
+- [`logs/2026-04-05-gate-b-grown-distance-law.txt`](../logs/2026-04-05-gate-b-grown-distance-law.txt)
+- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
+- [`scripts/gate_b_grown_joint_package.py`](../scripts/gate_b_grown_joint_package.py)
+- [`logs/2026-04-05-gate-b-grown-joint-package.txt`](../logs/2026-04-05-gate-b-grown-joint-package.txt)
+- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
 
 These companions sharpen the safe Gate B read:
 
@@ -253,9 +418,9 @@ So the honest status is now:
 
 The degree-balanced non-label forward candidate is now frozen too:
 
-- [`scripts/gate_b_nonlabel_connectivity_v3.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_nonlabel_connectivity_v3.py)
-- [`logs/2026-04-05-gate-b-nonlabel-connectivity-v3.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-nonlabel-connectivity-v3.txt)
-- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V3_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_NONLABEL_CONNECTIVITY_V3_NOTE.md)
+- [`scripts/gate_b_nonlabel_connectivity_v3.py`](../scripts/gate_b_nonlabel_connectivity_v3.py)
+- [`logs/2026-04-05-gate-b-nonlabel-connectivity-v3.txt`](../logs/2026-04-05-gate-b-nonlabel-connectivity-v3.txt)
+- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V3_NOTE.md`](GATE_B_NONLABEL_CONNECTIVITY_V3_NOTE.md)
 
 Its bounded read is:
 
@@ -274,15 +439,15 @@ idea, not a replacement for the label-based far-field rule.
 The same moderate-drift generated-geometry family now also has bounded
 `h = 0.25` refinement companions:
 
-- [`scripts/gate_b_h025_farfield.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_h025_farfield.py)
-- [`logs/2026-04-05-gate-b-h025-farfield.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-h025-farfield.txt)
-- [`docs/GATE_B_H025_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_H025_FARFIELD_NOTE.md)
-- [`scripts/gate_b_h025_distance_law.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_h025_distance_law.py)
-- [`logs/2026-04-05-gate-b-h025-distance-law.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-h025-distance-law.txt)
-- [`docs/GATE_B_H025_DISTANCE_LAW_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_H025_DISTANCE_LAW_NOTE.md)
-- [`scripts/gate_b_h025_joint_package.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_h025_joint_package.py)
-- [`logs/2026-04-05-gate-b-h025-joint-package.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-h025-joint-package.txt)
-- [`docs/GATE_B_H025_JOINT_PACKAGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_H025_JOINT_PACKAGE_NOTE.md)
+- [`scripts/gate_b_h025_farfield.py`](../scripts/gate_b_h025_farfield.py)
+- [`logs/2026-04-05-gate-b-h025-farfield.txt`](../logs/2026-04-05-gate-b-h025-farfield.txt)
+- [`docs/GATE_B_H025_FARFIELD_NOTE.md`](GATE_B_H025_FARFIELD_NOTE.md)
+- [`scripts/gate_b_h025_distance_law.py`](../scripts/gate_b_h025_distance_law.py)
+- [`logs/2026-04-05-gate-b-h025-distance-law.txt`](../logs/2026-04-05-gate-b-h025-distance-law.txt)
+- [`docs/GATE_B_H025_DISTANCE_LAW_NOTE.md`](GATE_B_H025_DISTANCE_LAW_NOTE.md)
+- [`scripts/gate_b_h025_joint_package.py`](../scripts/gate_b_h025_joint_package.py)
+- [`logs/2026-04-05-gate-b-h025-joint-package.txt`](../logs/2026-04-05-gate-b-h025-joint-package.txt)
+- [`docs/GATE_B_H025_JOINT_PACKAGE_NOTE.md`](GATE_B_H025_JOINT_PACKAGE_NOTE.md)
 
 Their bounded read is:
 
@@ -305,9 +470,9 @@ So the safe Gate B read is now:
 
 The no-restore weak-connectivity lane is now frozen separately:
 
-- [`scripts/gate_b_weak_connectivity_harness.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_weak_connectivity_harness.py)
-- [`logs/2026-04-05-gate-b-weak-connectivity-harness.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-weak-connectivity-harness.txt)
-- [`docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md)
+- [`scripts/gate_b_weak_connectivity_harness.py`](../scripts/gate_b_weak_connectivity_harness.py)
+- [`logs/2026-04-05-gate-b-weak-connectivity-harness.txt`](../logs/2026-04-05-gate-b-weak-connectivity-harness.txt)
+- [`docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md`](GATE_B_WEAK_CONNECTIVITY_NOTE.md)
 
 Its bounded read is:
 
@@ -324,9 +489,9 @@ far-field package on this retained family.
 The no-restore grown-geometry lane now has a second bounded non-label
 candidate:
 
-- [`scripts/gate_b_nonlabel_connectivity_v2.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_nonlabel_connectivity_v2.py)
-- [`logs/2026-04-05-gate-b-nonlabel-connectivity-v2.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-nonlabel-connectivity-v2.txt)
-- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V2_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_NONLABEL_CONNECTIVITY_V2_NOTE.md)
+- [`scripts/gate_b_nonlabel_connectivity_v2.py`](../scripts/gate_b_nonlabel_connectivity_v2.py)
+- [`logs/2026-04-05-gate-b-nonlabel-connectivity-v2.txt`](../logs/2026-04-05-gate-b-nonlabel-connectivity-v2.txt)
+- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V2_NOTE.md`](GATE_B_NONLABEL_CONNECTIVITY_V2_NOTE.md)
 
 Its bounded read is:
 
@@ -340,12 +505,12 @@ sign rows, but it does **not** keep the Newtonian mass-scaling class cleanly.
 
 The no-restore lane is now bounded more sharply too:
 
-- [`scripts/gate_b_no_restore_farfield.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_no_restore_farfield.py)
-- [`logs/2026-04-05-gate-b-no-restore-farfield.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-no-restore-farfield.txt)
-- [`docs/GATE_B_NO_RESTORE_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_NO_RESTORE_FARFIELD_NOTE.md)
-- [`scripts/gate_b_no_restore_joint_package.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_no_restore_joint_package.py)
-- [`logs/2026-04-05-gate-b-no-restore-joint-package.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-no-restore-joint-package.txt)
-- [`docs/GATE_B_NO_RESTORE_JOINT_PACKAGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_NO_RESTORE_JOINT_PACKAGE_NOTE.md)
+- [`scripts/gate_b_no_restore_farfield.py`](../scripts/gate_b_no_restore_farfield.py)
+- [`logs/2026-04-05-gate-b-no-restore-farfield.txt`](../logs/2026-04-05-gate-b-no-restore-farfield.txt)
+- [`docs/GATE_B_NO_RESTORE_FARFIELD_NOTE.md`](GATE_B_NO_RESTORE_FARFIELD_NOTE.md)
+- [`scripts/gate_b_no_restore_joint_package.py`](../scripts/gate_b_no_restore_joint_package.py)
+- [`logs/2026-04-05-gate-b-no-restore-joint-package.txt`](../logs/2026-04-05-gate-b-no-restore-joint-package.txt)
+- [`docs/GATE_B_NO_RESTORE_JOINT_PACKAGE_NOTE.md`](GATE_B_NO_RESTORE_JOINT_PACKAGE_NOTE.md)
 
 Their bounded read is:
 
@@ -364,3 +529,15 @@ So the clean hierarchy is now:
   the label-connectivity family
 - restore still matters if the goal is to preserve the broader lattice-like
   interference / decoherence package
+
+## 2026-06-15 audit-unlock residual certificate
+
+This source update re-opens the row as a dynamics-harness packet, not a Gate-B
+foundation theorem. The runner's graph-family propagation and
+connectivity-tolerance checks remain useful diagnostics.
+
+The live blocker is the three-part `I_GateB` input set: the valley-linear
+source/action rule, propagation and readout semantics, and genericity or
+exhaustiveness of the tested family. Until those are derived or approved,
+the harness cannot establish Gate-B dynamics as framework-native. This repair
+adds no Gate-B axiom, family-genericity assumption, or audit status.

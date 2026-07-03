@@ -51,15 +51,23 @@ class RowResult:
     toward_05: int
 
     @property
-    def anchor_ok(self) -> bool:
+    def born_gate(self) -> bool:
+        return self.born is not None and self.born < 1e-12
+
+    @property
+    def fm_gate(self) -> bool:
         return (
-            self.born is not None
-            and self.born < 1e-12
-            and self.fm_0 is not None
+            self.fm_0 is not None
             and self.fm_05 is not None
+            and math.isfinite(self.fm_0)
+            and math.isfinite(self.fm_05)
             and abs(self.fm_0 - 1.0) < 0.05
             and abs(self.fm_05 - 1.0) < 0.05
         )
+
+    @property
+    def anchor_ok(self) -> bool:
+        return self.born_gate and self.fm_gate
 
     @property
     def crossover_ok(self) -> bool:
@@ -250,7 +258,7 @@ def _measure_row(drift: float, seed: int) -> RowResult:
 
     field = _field_from_sources(radial.positions, radial.layers, [(SOURCE_Z, +1)])
     zero = _centroid_z(_propagate(radial.positions, radial.adj, field, 0.0), radial.positions, det) - z_free
-    born = _born_proxy(radial.positions, radial.adj, radial.layers, field, 0.0) if abs(drift - 0.20) < 1e-12 and seed == 0 else None
+    born = _born_proxy(radial.positions, radial.adj, radial.layers, field, 0.0)
 
     grav01 = _propagate(radial.positions, radial.adj, field, 0.1)
     grav05 = _propagate(radial.positions, radial.adj, field, 0.5)
@@ -293,7 +301,7 @@ def main() -> None:
     print("  complex-action probe on the radial-shell fifth-family slice")
     print("=" * 98)
     print(f"drifts={DRIFTS}, seeds={SEEDS}")
-    print("guards: exact gamma=0 baseline, Born proxy where feasible, TOWARD -> AWAY crossover")
+    print("guards: exact gamma=0 baseline, sampled Born/F~M gates, TOWARD -> AWAY crossover")
     print()
     print(
         f"{'drift':>5s} {'seed':>4s} {'born':>10s} {'g0':>12s} {'d01':>12s} {'d05':>12s} "
@@ -317,14 +325,38 @@ def main() -> None:
 
     print()
     print("SAFE READ")
-    anchors = [r for r in rows if r.anchor_ok]
+    control_rows = [r for r in rows if r.anchor_ok]
     companion = [r for r in rows if r.anchor_ok and r.crossover_ok]
-    print(f"  anchor rows passing exact gamma=0 + Born/F~M gates: {len(anchors)}")
-    print(f"  anchor rows with TOWARD -> AWAY crossover: {len(companion)}")
+    crossover_rows = [r for r in rows if r.crossover_ok]
+    excluded_crossover = [r for r in crossover_rows if not r.anchor_ok]
+    control_keys = {(r.drift, r.seed) for r in control_rows}
+    companion_keys = {(r.drift, r.seed) for r in companion}
+    print(f"  sampled rows with computed Born proxies: {sum(r.born is not None for r in rows)}/{len(rows)}")
+    print(f"  sampled rows passing Born/F~M gates: {len(control_rows)}")
+    print(f"  rows with TOWARD -> AWAY crossover: {len(crossover_rows)}")
+    print(f"  crossover rows surviving Born/F~M gates: {len(companion)}")
+    if excluded_crossover:
+        print("  crossover rows excluded by sampled gates:")
+        for row in excluded_crossover:
+            print(
+                f"    drift={row.drift:.2f} seed={row.seed}: "
+                f"born_gate={int(row.born_gate)} fm_gate={int(row.fm_gate)}"
+            )
+    expected_controls = {(drift, seed) for drift in DRIFTS for seed in SEEDS}
+    expected_companions = {(0.20, 0), (0.20, 1)}
+    assertions_ok = (
+        all(r.born is not None for r in rows)
+        and control_keys == expected_controls
+        and companion_keys == expected_companions
+        and {(r.drift, r.seed) for r in crossover_rows} == expected_companions
+    )
     if companion:
-        print("  the radial-shell fifth-family slice carries a narrow complex-action companion")
+        print("  the radial-shell fifth-family slice carries a drift-0.20 sampled complex-action companion pair")
     else:
         print("  the radial-shell slice does not retain the complex-action companion cleanly")
+    print(f"ASSERTIONS: {'PASS' if assertions_ok else 'FAIL'}")
+    if not assertions_ok:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

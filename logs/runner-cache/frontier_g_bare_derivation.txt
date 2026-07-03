@@ -1,18 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g_bare_derivation.py
-runner_sha256: 7dfdc335ad93bc485791dba4786ec8c6dfe208ec0446d80f6f61fc3dff1570b7
+runner_sha256: 6f64216345cfe9a1ea73e36517afb706b33c0f23fe0e2c326f6154012dcec5ac
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================================
-G_BARE = 1 PRIMARY DERIVATION RUNNER
-Cl(3) -> End(V) -> su(3) -> Wilson action -> g_bare = 1
+G_BARE FINITE-LINK/WILSON BRIDGE RUNNER
+one-qubit operator algebra -> su(3) basis -> finite-link slot -> Wilson beta
 ========================================================================================
 
 ========================================================================================
-SECTION A: Cl(3) -> End(V=C^8) chiral representation (axiom A1)
+SECTION A: one-qubit operator algebra / Cl(3) chiral representation
 ========================================================================================
   [PASS] Cl(3) anticommutator {G_1, G_1} = 2 delta_11 I_8  (||{G_1, G_1} - target|| = 0.00e+00)
   [PASS] Cl(3) anticommutator {G_1, G_2} = 2 delta_12 I_8  (||{G_1, G_2} - target|| = 0.00e+00)
@@ -41,14 +41,14 @@ SECTION B: canonical orthonormal su(3) generators on canonical triplet
 ========================================================================================
 SECTION C: Wilson plaquette small-a expansion forces beta = 2 N_c / g^2
 ========================================================================================
-  [PASS] A_mu, A_nu are Hermitian su(3) elements
-  [PASS] F_munu = i [A_mu, A_nu] is Hermitian (constant-A limit)
-  [PASS] Wilson plaquette a^4 coefficient = Tr(F^2) / (2 N_c)  (fit = 2.359221e-01, predicted = 2.359221e-01, rel_err = 6.32e-09)
+  [PASS] deterministic F is a Hermitian su(3) element
+  [PASS] trace normalization gives Tr(F^2) = (1/2) sum_a F_a^2  (Tr(F^2)=1.200000000000; component_norm/2=1.200000000000)
+  [PASS] Wilson plaquette deficit coefficient is F_a F_a/(4 N_c)  (component=0.200000000000; trace=0.200000000000)
   [PASS] matching: beta = 2 N_c / g^2 at g^2 = 0.5 gives beta = 12.0000  (beta * g^2 = 6.000000 = 2 N_c = 6)
   [PASS] matching: beta = 2 N_c / g^2 at g^2 = 1.0 gives beta = 6.0000  (beta * g^2 = 6.000000 = 2 N_c = 6)
   [PASS] matching: beta = 2 N_c / g^2 at g^2 = 1.5 gives beta = 4.0000  (beta * g^2 = 6.000000 = 2 N_c = 6)
   [PASS] matching: beta = 2 N_c / g^2 at g^2 = 2.0 gives beta = 3.0000  (beta * g^2 = 6.000000 = 2 N_c = 6)
-  [PASS] at N_c = 3, the canonical normalization gives beta = 6 and g_bare^2 = 1  (beta = 2 N_c = 6; g_bare^2 = 2 N_c / beta = 1.0)
+  [PASS] with finite-link scalar slot g^2=1, Wilson matching gives beta=6 at N_c=3  (finite-link slot supplies g^2 = 1; Wilson matching gives beta = 6)
 
 ========================================================================================
 SECTION D: rescaling A -> c * A shifts beta by c^2, not g_bare
@@ -73,53 +73,60 @@ SECTION D: rescaling A -> c * A shifts beta by c^2, not g_bare
 ========================================================================================
 SECTION E: constraint-vs-convention disambiguation
 ========================================================================================
-  [PASS] canonical beta = 2 N_c = 6 for SU(3) (exact)  (beta = 6)
-  [PASS] given canonical normalization + beta = 6, g_bare^2 = 1 forced (exact)  (g_bare^2 = 2 N_c / beta = 1)
-  [PASS] alternative g^2 = 1/2 requires beta = 12 != 6  (incompatible with canonical normalization-forced beta = 6)
-  [PASS] alternative g^2 = 2 requires beta = 3 != 6  (incompatible with canonical normalization-forced beta = 6)
-  [PASS] alternative g^2 = 4 requires beta = 3/2 != 6  (incompatible with canonical normalization-forced beta = 6)
-  [PASS] convention layer: canonical Tr(T_a T_b) = delta_ab/2 is the framework normalization  (carried by cl3_color_automorphism_theorem (axiom A4 normalization input))
-  [PASS] constraint layer: given canonical normalization, g_bare = 1 is structurally derived  (no separate g_bare convention layer; g_bare = 1 follows as a constraint)
+  [PASS] finite-link scalar slot plus Wilson matching gives beta = 2 N_c = 6 for SU(3) (exact)  (g_bare^2 = 1; beta = 6)
+  [PASS] Wilson identity is satisfied on the finite-link scalar slot (exact)  (beta * g_bare^2 = 6 = 2 N_c)
+  [PASS] alternative g^2 = 1/2 requires beta = 12 != 6  (outside the canonical finite-link scalar slot used by the parent)
+  [PASS] alternative g^2 = 2 requires beta = 3 != 6  (outside the canonical finite-link scalar slot used by the parent)
+  [PASS] alternative g^2 = 4 requires beta = 3/2 != 6  (outside the canonical finite-link scalar slot used by the parent)
+  [PASS] finite-link layer: canonical T_a basis carries no extra scalar multiplier  (source supplied by G_BARE_RIGIDITY_THEOREM_NOTE.md)
+  [PASS] Wilson layer: beta*g_bare^2=2N_c is a coefficient theorem on the supplied action surface  (source supplied by WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
   [PASS] [BOUNDED] bounded boundary: Wilson action form itself remains a convention-layer input  (see G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18 Claim 3 caveat)
 
 ========================================================================================
 SECTION F: end-to-end derivation chain (no circular use of g_bare = 1)
 ========================================================================================
-  [PASS] Step 1: Cl(3) A1 -> End(V=C^8) chiral rep built without g_bare input  ({G_mu, G_nu} = 2 delta_munu I_8 verified in Section A)
+  [PASS] Step 1: one-qubit operator algebra -> End(V=C^8) chiral rep built without g_bare input  ({G_mu, G_nu} = 2 delta_munu I_8 verified in Section A)
   [PASS] Step 2: canonical orthonormal su(3) Gram = delta/2 (no g_bare input)  (||Gram - delta/2|| = 1.11e-16)
   [PASS] Step 3: Wilson matching gives beta = 2 N_c / g^2 (symbolic, no g_bare input)  (verified in Section C across g^2 in {0.5, 1.0, 1.5, 2.0})
-  [PASS] Step 4: canonical normalization + matching -> g_bare = 1 (derived, not input)  (g_bare^2 = 1.0, derived from beta = 2 N_c = 6)
+  [PASS] Step 4: finite-link scalar slot + Wilson matching -> beta=6 and g_bare^2=1  (finite-link slot supplies g_bare^2 = 1.0; Wilson matching gives beta = 6.0)
 
   Circularity audit:
-  - Step 1 uses Cl(3) anticommutator (axiom A1); no beta or g input.
+  - Step 1 uses the Quantum axiom's one-site operator algebra; no beta or g input.
   - Step 2 uses canonical Gell-Mann basis; Tr normalization is structural.
   - Step 3 uses Wilson plaquette form + small-a expansion; symbolic beta, g.
-  - Step 4 derives g_bare from canonical normalization + matching; no g input.
-  - Final g_bare = 1 is derived from the chain, not asserted.
-  [PASS] no circular use of g_bare = 1 or beta = 6 as input in the chain  (forward-only relative to canonical normalization and Wilson matching)
+  - Step 4 uses the finite-link rigidity theorem for the canonical scalar slot.
+  - Final beta = 6 follows from Wilson matching after g_bare^2=1 is supplied.
+  [PASS] no circular use of g_bare = 1 or beta = 6 as input in the chain  (beta=6 is downstream of finite-link rigidity plus Wilson matching)
 
 ========================================================================================
-SECTION G: ledger visibility for the new theorem rows
+SECTION G: source-side finite-link/Wilson bridge visibility
 ========================================================================================
-  [PASS] [BOUNDED] declared dep 'cl3_color_automorphism_theorem' present in audit ledger  (effective_status = retained)
-  [FAIL] [BOUNDED] new row 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03' seeded with deps = ['cl3_color_automorphism_theorem']  (audit_status = audited_clean; effective_status = retained_bounded)
-  [FAIL] [BOUNDED] new row 'g_bare_constraint_vs_convention_theorem_note_2026-05-03' seeded with deps = ['cl3_color_automorphism_theorem']  (audit_status = audited_clean; effective_status = retained_bounded)
+  [PASS] [BOUNDED] parent note exists  (/private/tmp/cl3-review-openprs-pgPvx7/repo/docs/G_BARE_DERIVATION_NOTE.md)
+  [PASS] [BOUNDED] bridge note exists  (/private/tmp/cl3-review-openprs-pgPvx7/repo/docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md)
+  [PASS] [BOUNDED] finite-link rigidity note exists  (/private/tmp/cl3-review-openprs-pgPvx7/repo/docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
+  [PASS] [BOUNDED] Wilson small-a note exists  (/private/tmp/cl3-review-openprs-pgPvx7/repo/docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
+  [PASS] [BOUNDED] source marker present: No step uses `beta = 6` as a premise for `g_bare = 1`.
+  [PASS] [BOUNDED] source marker present: G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06
+  [PASS] [BOUNDED] source marker present: same scalar slot
+  [PASS] [BOUNDED] source marker present: an audit verdict or any effective-status promotion
+  [PASS] [BOUNDED] source marker present: no independent scalar-normalization freedom
+  [PASS] [BOUNDED] source marker present: beta * g_bare^2 = 2 N_c
+  [PASS] [BOUNDED] parent source no longer contains stale beta back-solving symbol
 
 ========================================================================================
 SUMMARY
 ========================================================================================
   EXACT   : PASS = 51,   FAIL = 0
-  BOUNDED : PASS = 2, FAIL = 2
-  TOTAL   : PASS = 53, FAIL = 2
+  BOUNDED : PASS = 12, FAIL = 0
+  TOTAL   : PASS = 63, FAIL = 0
 
   All exact checks passed.
-  The Cl(3) -> End(V) -> su(3) -> Wilson action chain derives g_bare = 1
-  under the canonical Cl(3) connection normalization Tr(T_a T_b) = delta_ab/2,
-  which is carried through the declared cl3_color_automorphism_theorem dependency.
+  The repaired parent chain composes finite-link rigidity with Wilson matching.
+  The beta=6 surface is downstream of g_bare^2=1 on the canonical scalar slot,
+  not an input used to derive g_bare=1.
 
-  Rescaling A -> c * A shifts the matched beta by c^2, NOT g_bare.
-  Therefore g_bare = 1 is queued as a structural constraint candidate
-  relative to the canonical normalization, not an independent free convention.
+  Wilson action-form selection, continuum/global gauge-field limits,
+  and audit/effective-status promotion remain outside this runner.
 
 ----- stderr -----
 

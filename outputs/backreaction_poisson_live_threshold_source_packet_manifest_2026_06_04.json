@@ -55,12 +55,12 @@
     {
       "name": "source_untruncated:packet_checker",
       "pass": true,
-      "detail": "scripts/backreaction_poisson_live_threshold_check.py has 4397 bytes"
+      "detail": "scripts/backreaction_poisson_live_threshold_check.py has 4392 bytes"
     },
     {
-      "name": "source_marker:packet_checker:from scripts import backreaction_poisson as bp",
+      "name": "source_marker:packet_checker:import scripts.backreaction_poisson as bp",
       "pass": true,
-      "detail": "from scripts import backreaction_poisson as bp present"
+      "detail": "import scripts.backreaction_poisson as bp present"
     },
     {
       "name": "source_marker:packet_checker:def _run_grid",
@@ -115,7 +115,7 @@
     {
       "name": "cache_sha_fresh:packet_cache",
       "pass": true,
-      "detail": "6d731702d81ef146464cbb31df8287d75134b801e1e61a8ed673c11d4c90c925 == 6d731702d81ef146464cbb31df8287d75134b801e1e61a8ed673c11d4c90c925"
+      "detail": "b56df20cdc1cd7ebc0ad58d2a7799b2cc5ce10efc39153ec29e7af944988517c == b56df20cdc1cd7ebc0ad58d2a7799b2cc5ce10efc39153ec29e7af944988517c"
     },
     {
       "name": "cache_exit_ok:packet_cache",

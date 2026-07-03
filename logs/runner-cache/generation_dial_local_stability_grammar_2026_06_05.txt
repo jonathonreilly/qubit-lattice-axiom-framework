@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/generation_dial_local_stability_grammar_2026_06_05.py
+runner_sha256: 1237788e3e1d22979b602fe7050e93d4bc60ee5c062d454c6d146d22a2be2e8c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+[PASS] S1.1 dial map r(s)=2^(s-1) is positive and has positive derivative
+[PASS] S1.2 inverse coordinate is s(r)=1+log(r)/log(2)
+       L(r)=log(r)/log(2) + 1
+[PASS] S1.3 L(r(s)) = s
+[PASS] S1.4 r(L(r)) = r for positive r
+[PASS] S2.1 smooth r<->s conjugacy preserves local map multiplier
+       multiplier=alpha
+[PASS] S2.2 smooth r<->s conjugacy preserves local flow linearization
+       flow coefficient=beta
+[PASS] S3.1 sharpening r->2r^2 is s' = 2s
+[PASS] S3.2 reverse branch r->sqrt(r/2) is s' = s/2
+[PASS] S3.3 sharpening is repelling at s=0
+[PASS] S3.4 reverse branch is stable at s=0
+[PASS] S4.1 map grammar classifies by |F'(s*)|
+       {'contracting map': 'stable', 'identity map': 'neutral', 'expanding map': 'repelling', 'orientation-flip contraction': 'stable', 'orientation-flip expansion': 'repelling'}
+[PASS] S4.2 flow grammar classifies by sign of f'(s*)
+       {'negative linearization': 'stable', 'zero linearization': 'neutral_or_higher_order', 'positive linearization': 'repelling'}
+[PASS] S4.3 local stability grammar does not select which fixed point is physical
+       a separate theorem must identify the physical map/flow and fixed point
+
+SCORECARD PASS=13 FAIL=0
+FINDING: the positive-ratio dial is a clean stability coordinate;
+         local stability is map/flow classification, not value selection.
+
+----- stderr -----
+

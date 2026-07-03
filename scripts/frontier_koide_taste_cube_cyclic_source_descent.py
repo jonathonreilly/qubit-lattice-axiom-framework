@@ -3,11 +3,10 @@
 Koide taste-cube cyclic-source descent runner
 =============================================
 
-STATUS: constructive positive-path reduction theorem on the full 8-corner
-carrier
+STATUS: constructive bounded reduction theorem on the full 8-corner carrier
 
 Question:
-  If we work on the physical taste cube C^8 first, rather than assuming the
+  If we work on the finite taste cube C^8 first, rather than assuming the
   bare T_1 / hw=1 triplet is already the whole charged-lepton story, what
   exact response target survives after:
 
@@ -15,20 +14,22 @@ Question:
     2. a Schur-compatible charged-sector reduction onto T_1?
 
 Answer:
-  The target is still exactly the same 3-response cyclic Koide bundle. Full-
-  cube averaging descends to the same T_1 cyclic projector, and every
-  Schur-compatible charged-sector response factors through the same three
-  cyclic channels B0, B1, B2.
+  The Hermitian response target is still exactly the same 3-response cyclic
+  Koide bundle. Full-cube averaging descends to the same T_1 cyclic projector,
+  and every tested Schur-compatible Hermitian charged-sector response factors
+  through the same three cyclic channels B0, B1, B2.
 """
 
 from __future__ import annotations
 
 import sys
+from pathlib import Path
 from typing import Iterable
 
 import numpy as np
 import sympy as sp
 
+ROOT = Path(__file__).resolve().parents[1]
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
@@ -213,6 +214,41 @@ def cyclic_coordinates(y: np.ndarray) -> tuple[float, float, float]:
     return u0, u1, u2
 
 
+def part0_source_boundary_guard() -> None:
+    print("=" * 88)
+    print("PART 0: source-boundary guard for the finite descent theorem")
+    print("=" * 88)
+
+    note_text = (
+        ROOT / "docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md"
+    ).read_text(encoding="utf-8")
+    old_gate_slug = "_".join(
+        [
+            "STAGGERED",
+            "DIRAC",
+            "REALIZATION",
+            "GATE",
+            "NOTE",
+        ]
+    ) + "_2026-05-03"
+
+    check(
+        "No broad realization-gate source slug remains in the finite descent note",
+        old_gate_slug not in note_text,
+        detail="the broad gate is context only, not a proof input",
+    )
+    check(
+        "The note states the finite C^8 source boundary at top level",
+        "Source boundary:** exact finite `C^8` taste-cube descent theorem" in note_text,
+    )
+    check(
+        "The note names the load-bearing finite objects reconstructed by this runner",
+        "finite `C^8` taste-cube vector space" in note_text
+        and "specified `C_3[111]` cycle" in note_text
+        and "ordinary Schur-complement algebra" in note_text,
+    )
+
+
 def part1_full_cube_average_descends_exactly() -> None:
     print("=" * 88)
     print("PART 1: full-cube C_3 averaging descends exactly to the same T_1 projector")
@@ -272,6 +308,13 @@ def part2_canonical_full_cube_source_channels() -> None:
     check(
         "The backward oriented one-hot orbit source descends to C^2",
         compress_t1_sp(qb) == c**2,
+    )
+    check(
+        "Non-Hermitian oriented channels are complex-cyclic, not real Hermitian responses",
+        compress_t1_sp(qf) == c
+        and compress_t1_sp(qf) != compress_t1_sp(qf).H
+        and compress_t1_sp(qb) == c**2
+        and compress_t1_sp(qb) != compress_t1_sp(qb).H,
     )
     check(
         "Hermitian full-cube orbit combinations descend to B1 and B2",
@@ -420,6 +463,7 @@ def part4_schur_compatible_response_factorization() -> None:
 
 
 def main() -> int:
+    part0_source_boundary_guard()
     part1_full_cube_average_descends_exactly()
     part2_canonical_full_cube_source_channels()
     part3_schur_reduction_hits_same_three_response_bundle()
@@ -427,13 +471,13 @@ def main() -> int:
 
     print()
     print("Interpretation:")
-    print("  The physical taste cube does not force us back to a vague large-source")
-    print("  target. Exact C_3[111] averaging and a Schur-compatible charged-sector")
-    print("  reduction collapse the full 8-corner source bank to the same three")
-    print("  cyclic response channels already identified on T_1. So the honest")
-    print("  remaining job is not to rediscover the carrier size. It is to derive")
-    print("  the microscopic full-cube source law for those channels, and then the")
-    print("  selector law that would put them on the Koide cone.")
+    print("  The finite taste cube does not force us back to a vague Hermitian")
+    print("  source-response target. Exact C_3[111] averaging and a Schur-compatible")
+    print("  charged-sector reduction collapse the full 8-corner Hermitian source")
+    print("  responses to the same three cyclic channels already identified on T_1.")
+    print("  So the honest remaining job is not to rediscover the carrier size; it is")
+    print("  to derive the microscopic full-cube source law for those channels, and")
+    print("  then the selector law that would put them on the Koide cone.")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1

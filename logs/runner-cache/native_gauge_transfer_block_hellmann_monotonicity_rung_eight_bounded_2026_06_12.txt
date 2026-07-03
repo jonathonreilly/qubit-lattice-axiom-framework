@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_2026_06_12.py
+runner_sha256: 42878d628a5500d9a444cb8221ca14a93f8a3789acae4a4799247a45fe025ed5
+timeout_sec: 540
+exit_code: 0
+elapsed_sec: 39.47
+status: ok
+----- stdout -----
+Native gauge-transfer block-Hellmann monotonicity rung-eight runner
+MODE_MAX=160
+Finite-block diagnostics witness the named inequality target; they are not a proof.
+
+PASS: note declares canonical bounded theorem claim type
+PASS: note preserves independent audit-lane status authority
+PASS: note scope refuses half-line theorem assembly and physical-beta claims
+PASS: note states no new imports
+PASS: note states the exact finite-block derivative identity
+PASS: note states the precise block-Hellmann inequality target
+PASS: note names the rejected Loewner shortcut without using it as proof
+PASS: note records the unshifted product-rule derivative and recurrence D prime
+PASS: note isolates the exact J-part contribution
+PASS: note states the simplicity and isolation hypothesis
+PASS: note restates finite-grid peak and certified-frontier scope
+PASS: one-hop authorities are markdown links
+PASS: runner and cache are portable markdown links
+PASS: note and runner avoid branch-local temp references
+PASS: note does not write audit-status tokens
+PASS: note avoids overreach phrases
+PASS: negative-claim discipline gate is visible and narrowed
+PASS: dimension function remains exact six-neighbor harmonic on samples
+PASS: character recurrence differentiates Wilson coefficients
+      max relative error=1.374e-10
+PASS: top two finite-block eigenvalues are simple on certified integer grid
+      shell=16 beta=1..26 min_gap01=9.481e-02, min_gap12=2.150e-02
+PASS: product-rule Hellmann split matches direct derivative matrix
+      max split error=1.707e-15
+PASS: Hellmann log-ratio derivative matches central finite difference
+      errors=beta=8: 4.007e-10, beta=20: 3.243e-11
+PASS: beta=2 row is not in the decreasing derivative regime
+      logdiff=1.596939e-01
+PASS: J-expectation ordering is witnessed on post-peak grid
+      values=beta=3:-2.680e-01, beta=4:-1.915e-01, beta=8:-9.763e-02, beta=12:-6.679e-02, beta=16:-5.088e-02, beta=20:-4.112e-02, beta=24:-3.451e-02, beta=26:-3.194e-02, beta=30:-2.781e-02, beta=40:-2.102e-02, beta=50:-1.692e-02
+PASS: diagonal derivative part has the opposing positive sign on post-peak grid
+      values=beta=3:4.309e-02, beta=4:7.816e-02, beta=8:7.239e-02, beta=12:5.549e-02, beta=16:4.449e-02, beta=20:3.701e-02, beta=24:3.165e-02, beta=26:2.951e-02, beta=30:2.598e-02, beta=40:1.998e-02, beta=50:1.621e-02
+PASS: finite-block derivative inequality is witnessed on post-peak grid
+      values=beta=3:-2.249e-01, beta=4:-1.133e-01, beta=8:-2.525e-02, beta=12:-1.130e-02, beta=16:-6.391e-03, beta=20:-4.105e-03, beta=24:-2.858e-03, beta=26:-2.437e-03, beta=30:-1.833e-03, beta=40:-1.035e-03, beta=50:-7.078e-04
+PASS: diagonal domination is the load-bearing unresolved margin
+      max Delta_D/(-Delta_J)=0.958166
+PASS: wrong character-derivative normalization breaks the domination witness
+      wrong-scale logdiffs=beta=8:1.095e-02, beta=20:1.341e-02
+PASS: wrong reduced-operator constants visibly change the ratio row
+      correct=0.203758341733, saddle2=0.273042774766, j1/5=0.172664616936
+PASS: note verification section names the expected runner total
+
+TOTAL: PASS=30, FAIL=0
+
+----- stderr -----
+

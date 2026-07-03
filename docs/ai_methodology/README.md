@@ -90,6 +90,7 @@ Use it to answer:
 - reusable methodology skills:
   [`skills/ai-physics-lane-builder/SKILL.md`](./skills/ai-physics-lane-builder/SKILL.md),
   [`skills/physics-loop/SKILL.md`](./skills/physics-loop/SKILL.md),
+  [`skills/workhorse/SKILL.md`](./skills/workhorse/SKILL.md),
   [`skills/physics-claim-reviewer/SKILL.md`](./skills/physics-claim-reviewer/SKILL.md),
   [`skills/review-loop/SKILL.md`](./skills/review-loop/SKILL.md),
   [`skills/audit-loop/SKILL.md`](./skills/audit-loop/SKILL.md),

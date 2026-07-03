@@ -1,105 +1,154 @@
 # /pstack — Physics Science Stack Index
 
-You are running PStack — a physics science stack for the discrete event-network toy model.
+You are running PStack — the physics science stack for the qubit-lattice
+axiom framework (four axioms: Lattice, Qubit, Admissibility, Record; see
+`/framework-refresher`).
 
 ## Available Skills
+
+### Orientation
+| Skill | Role | What It Does |
+|-------|------|-------------|
+| `/framework-refresher` | Orientation | Load the current axioms, approved primitives, admissions, vocabulary, and standing discipline before any physics work |
+| `/ledger` | Status Lookup | Verify a claim's audit-ratified `effective_status` on `origin/main` before citing or building on it |
 
 ### Research Direction
 | Skill | Role | What It Does |
 |-------|------|-------------|
-| `/hypothesis` | Research Director | Frame a falsifiable research question before any experiment |
-| `/theory-review` | Theoretical Physicist | Check a hypothesis for internal consistency and minimality |
+| `/hypothesis` | Research Director | Frame a falsifiable research question with a premise ledger and claim-type forecast |
+| `/theory-review` | Theoretical Physicist | Check a hypothesis for axiom compliance, consistency, falsifiability, minimality, and claim-type fit |
 
 ### Experiment Design
 | Skill | Role | What It Does |
 |-------|------|-------------|
-| `/design-experiment` | Experimental Physicist | Plan a simulation run with observables, controls, and parameters |
-| `/sweep` | Computational Physicist | Generate parameter sweep scripts from a base script |
+| `/design-experiment` | Experimental Physicist | Plan a runner around its decisive check, controls, and falsification observable |
+| `/sweep` | Computational Physicist | Generate reproducible parameter sweep + collector scripts |
 
 ### Analysis & Validation
 | Skill | Role | What It Does |
 |-------|------|-------------|
-| `/analyze` | Data Analyst | Systematically analyze simulation output against predictions |
-| `/validate` | Reproducibility Officer | 6-check battery: seeds, sensitivity, finite-size, initialization, logic, cherry-picking |
-| `/sanity` | Senior Skeptic | 7-check audit for physical plausibility and artifact detection |
-| `/review-loop` | Review Board | Parallel physics review loop: code/runner, claim boundary, imports/support, Nature-grade retention, repo governance |
+| `/analyze` | Data Analyst | Analyze runner/sweep output against the hypothesis prediction |
+| `/validate` | Reproducibility Officer | Robustness battery — independent-route math checks for exact runners; seeds/sensitivity/finite-size/cherry-pick for stochastic ones |
+| `/sanity` | Senior Skeptic | Adversarial review: model consistency, scale, symmetry, limits, artifacts, bugs, hostile-reviewer semantic-bridge test |
+| `/investigate-physics` | Detective Physicist | 4-phase anomaly investigation: characterize, hypothesize (bug/artifact/genuine), discriminate, resolve |
 
-### Investigation
+### Derivation & Negative Claims
 | Skill | Role | What It Does |
 |-------|------|-------------|
-| `/investigate-physics` | Detective Physicist | 4-phase anomaly investigation: characterize, hypothesize, discriminate, resolve |
-| `/first-principles` | First-Principles Theorist | Derive emergent behavior from model axioms alone (no known physics) |
+| `/first-principles` | First-Principles Theorist | Derive a target from axioms + approved primitives + retained theorems only |
+| `/exercise` | Wall Breaker | Structured exercise suite against a stuck wall/blocker (repo-native skill) |
+| `/no-go-gate` | Negative-Claim Gate | N1–N8 discipline before any no-go / walls-naming claim ships |
 
-### Documentation
+### Documentation & Strategy
 | Skill | Role | What It Does |
 |-------|------|-------------|
-| `/write-up` | Scientific Writer | Produce archival-quality summary of a completed investigation |
-| `/progress` | Research Manager | Weekly retrospective with frontier status and next-step recommendations |
+| `/write-up` | Scientific Writer | Archival summary of a completed investigation, in the repo voice |
+| `/progress` | Research Manager | Periodic retrospective: claim-state movement, dead ends, pipeline health |
+| `/frontier` | Research Strategist | Frontier map: lane census, blocker fanout, ranked highest-value gaps |
+| `/autopilot` | Lab Operations | Status dashboard: locks, active loops, open PRs, audit backlog |
 
-### Automation & Strategy
+### Loops & Gates (repo-native skills)
 | Skill | Role | What It Does |
 |-------|------|-------------|
-| `/autopilot` | Lab Automation | Launch, monitor, or check the autonomous science loop (with repo lock) |
-| `/frontier` | Research Strategist | Map explored vs. unexplored territory, rank highest-value gaps |
-| `/physics-loop` | Physics Loop Lead | Run or resume a deep long-form physics loop on clean science block branches with import audits, no-go memory, stretch attempts, checkpoints, review-loop backpressure, and review PRs |
+| `/physics-loop` | Physics Loop Lead | Long-running stateful loop on a hard lane: route portfolios, trace gates, V1–V5/N1–N8 gates, checkpoints, one review PR per science block |
+| `/review-loop` | Review Board | Pre-landing gate: parallel physics reviewers, narrow honest fixes, audit-system compatibility without applying verdicts |
 
 ## Science Pipeline
 
 ```
-/hypothesis --> /theory-review --> /design-experiment --> [write script] --> [run]
-                                         |
-                                      /sweep (if parameter scan)
-                                         |
-                                         v
-                              /analyze --> /validate --> /sanity --> /review-loop
-                                         |
-                                      /first-principles (derive from axioms)
-                                         |
-                                         v
+/framework-refresher
+        |
+/hypothesis --> /theory-review --> /design-experiment --> [build runner] --> [run]
+                                          |
+                                       /sweep (if parameter scan)
+                                          v
+                               /analyze --> /validate --> /sanity
+                                          |
+                       /first-principles (derive)   /investigate-physics (anomalies)
+                       /no-go-gate (negative claims)
+                                          v
                                       /write-up
+                                          v
+                  distill to landing shape: 1 note (docs/) + 1 runner (scripts/)
+                            + 1 cached output (logs/runner-cache/)
+                                          v
+              science branch off origin/main --> PR --> /review-loop (gate)
+                                          v
+                 independent audit lane ratifies on main (not run from here)
 ```
 
-Side channels (run anytime):
-- `/investigate-physics` — when results are unexpected
-- `/frontier` — to decide what to work on next
-- `/physics-loop` — to pursue a major open lane/problem as a stateful long-running loop
-- `/progress` — periodic research retrospective
-- `/autopilot` — for unattended science runs
-- `/review-loop` — before promoting retained/support claims or asking for external review
+Side channels (run anytime): `/frontier`, `/progress`, `/ledger`,
+`/autopilot`, `/exercise`, `/physics-loop` for campaigns.
 
 ## Core Principles
 
-1. **Exhaust the Parameter Space** — AI makes sweeps cheap. Run the full scan, not spot checks.
-2. **Import Discipline** — Derive from model primitives when making framework claims; use known physics and literature only as disclosed comparators, bridges, or admitted context.
-3. **Nature Decides** — Simulation results are ground truth. When theory and data disagree, investigate the data.
+1. **Exhaust the Parameter Space** — AI makes sweeps cheap. Run the full
+   scan, not spot checks.
+2. **Import Discipline** — Derive from approved axioms and approved primitive
+   registry entries when making framework claims; use known physics and
+   literature only as disclosed comparators, targets, or explicitly admitted
+   context.
+   Registered primitives, including the scale-reference and kinetic-isotropy
+   primitives, are not bounded imports; unregistered primitives are not
+   granted. The kinetic-isotropy primitive supplies only structural OS0
+   kinetic-form isotropy `c_t = c_s`, not dynamics, Lorentz closure, scale,
+   selector, or empirical content.
+3. **Nature Decides** — Artifacts are ground truth. When theory and a
+   verified runner disagree, investigate the runner first, then the theory.
+4. **The Ledger Is Authoritative** — `docs/audit/data/audit_ledger.json` on
+   `origin/main` is the only source of retained-grade status. Note headers,
+   memory, and prose go stale.
+5. **Propose, Never Ratify** — Author-side surfaces use `proposed_*` /
+   `support` / `bounded` / `open` vocabulary. Audit verdicts come only from
+   the independent audit lane; nothing in this stack runs it.
+6. **Negative Claims Are Claims** — A no-go forecloses routes permanently;
+   it passes `/no-go-gate` (N1–N8) or it does not ship.
 
-## Lock Protocol
+## Lock & Worktree Protocol
 
-Skills that modify files or run scripts acquire the cooperative repo lock:
+Prefer a dedicated git worktree on a science branch off `origin/main` for any
+work that mutates files — concurrent sessions race a shared checkout. When
+running compute or mutations in a shared checkout, use the cooperative lock:
+
 ```bash
 python3 scripts/automation_lock.py acquire --owner pstack-{skill} --purpose "{description}" --ttl-hours N
+python3 scripts/automation_lock.py release --owner pstack-{skill}
 ```
 
-Skills that only read and think (hypothesis, theory-review, sanity, first-principles, write-up, progress, frontier, pstack) do NOT need the lock.
+Read-and-think skills (hypothesis, theory-review, sanity, first-principles,
+write-up, progress, frontier, ledger, pstack) need no lock.
 
 ## Output Directory
 
-All PStack documents live in `.claude/science/`:
+PStack working documents live in `.claude/science/` (branch-local; the audit
+citation graph scans `docs/` only, so working notes here never pollute it):
+
 ```
 .claude/science/
-  hypotheses/
-  experiments/
-  analyses/
-  validations/
-  sanity/
-  investigations/
-  derivations/
-  write-ups/
-  progress/
-  frontier/
-  physics-loops/
-  theory-reviews/
-  reviews/
+  hypotheses/        experiments/       analyses/
+  validations/       sanity/            investigations/
+  derivations/       write-ups/         progress/
+  frontier/          theory-reviews/    exercises/
+  physics-loops/     research-lanes/
 ```
 
-Print this index when invoked. Ask the user which skill they want to run.
+Working documents do not land on `main`. Landable science is distilled to
+the note + runner + cache shape and goes through a science-branch PR and
+`/review-loop`.
+
+Print this index when invoked. Ask the user which skill to run.
+
+## Execution Mechanism (standing — 2026-06-12)
+
+All execution under this command runs through the workhorse split (see the
+`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
+line-by-line, and lands; the strongest configured text worker via `codex exec`
+executes bounded note/runner drafting, scratch computation, structured
+extraction, and panel lens execution (lenses run `-s read-only`; verdict
+synthesis is never delegated).
+No-go planning discipline applies: read the actual no-go note's primary text
+and plan against its exact audited scope, never its title or a secondary
+summary; if work reveals no-go language broader than its audited
+`claim_scope`, queue a narrowing repair PR. Where this command references
+review-loop or audit steps, those lanes are owner-operated (standing rule
+2026-06-11): prepare the PR/review surface and hand off; never run them.

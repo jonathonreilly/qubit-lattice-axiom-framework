@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/gravity_sign_bottom_leading_order_decouples_from_lv_2026_06_08.py
+runner_sha256: 74bddb61663b96f5b8a1bfb5c91d485fa25bd278ad0a39b8a7e6eaa4a1d3fc0a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+Conditional order separation for gravity-sign LV corrections
+========================================================================
+[PASS] B1 supplied leading coefficient controls the strict k->0 sign
+       tested alpha=[-50.0, -5.0, -1.0, 0.0, 1.0, 5.0, 50.0]; max tiny-k coefficient error=6.667e-12
+[PASS] B2 LV contribution is O(k^2) relative to the leading coefficient
+       relative LV terms=2.800e-02, 2.800e-04, 2.800e-06, 2.800e-08; decade ratios=100.0, 100.0, 100.0
+[PASS] B3 result depends on the supplied c2 sign
+       signs for supplied c2=+0.5,-0.5 are [1.0, -1.0]
+[PASS] B4 source note demotes the broad wall-relocation claim
+       missing=[]
+
+TOTAL: PASS=4 FAIL=0
+Boundary: conditional order-counting only. This runner does not prove G>0,
+does not supply c2, and does not retire Lorentz/naturalness or dynamical-metric walls.
+
+----- stderr -----
+

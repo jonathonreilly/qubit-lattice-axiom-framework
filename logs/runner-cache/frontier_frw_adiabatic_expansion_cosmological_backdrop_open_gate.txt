@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_frw_adiabatic_expansion_cosmological_backdrop_open_gate.py
-runner_sha256: 34b19c4a1e1b2c7b955f26826b17d4c3c955a472da11f35b44369fe03629b232
+runner_sha256: d305b453447ea6270bf56b728762bb5dfa5544a90dc57f0433204181799f06de
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -13,7 +13,19 @@ PASS: source contains boundary phrase: Supplied premise packet (not axioms, not 
 PASS: source contains boundary phrase: C1 Cosmological principle
 PASS: source contains boundary phrase: C2 Adiabatic expansion
 PASS: source contains boundary phrase: C3 Standard FRW equation-of-state sequence
-PASS: source contains boundary phrase: does **not** claim to derive C1, C2, or C3 from
+PASS: source contains boundary phrase: 2026-06-18 C2 entropy-bookkeeping partial bridge
+PASS: source contains boundary phrase: FRW_C2_SOURCE_FREE_ENTROPY_BOOKKEEPING_BOUNDED_SUPPORT_NOTE_2026-06-18.md
+PASS: source contains boundary phrase: 2026-06-18 C3 kinetic-label partial bridge
+PASS: source contains boundary phrase: FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md
+PASS: source contains boundary phrase: 2026-06-18 C3 perfect-fluid lift partial bridge
+PASS: source contains boundary phrase: FRW_C3_KINETIC_COMPONENT_PERFECT_FLUID_LIFT_BOUNDED_SUPPORT_NOTE_2026-06-18.md
+PASS: source contains boundary phrase: does not derive C1 or C2
+PASS: source contains boundary phrase: does not derive that the real leptogenesis-to-CMB window is source-free
+PASS: source contains boundary phrase: does not derive the Standard Model `g_*S` table
+PASS: source contains boundary phrase: does not derive the full FRW backdrop
+PASS: source contains boundary phrase: does not derive real cosmological species allocation
+PASS: source contains boundary phrase: two partial finite C3 bridges named above
+PASS: source contains boundary phrase: partial finite C2 bookkeeping bridge
 PASS: source contains boundary phrase: no new repo-wide axiom is introduced
 PASS: source contains boundary phrase: introduces **no new admissions and no new repo-wide
 PASS: source contains boundary phrase: Status authority:** independent audit lane only
@@ -61,12 +73,26 @@ PASS: source explicitly disclaims load-bearing use of: link unitaries
 PASS: source explicitly disclaims load-bearing use of: lattice scale `u_0`
 
 == Part 5: admission boundary recorded honestly ==
-PASS: source records honest scope phrase: *Nothing.*
-PASS: source records honest scope phrase: does not retire any cosmological-backdrop admission
+PASS: source records honest scope phrase: The finite source-free entropy and `g_*S T^3 a^3` bookkeeping behind C2 is now supported
+PASS: source records honest scope phrase: The ideal kinetic component labels `w_r = 1/3` and `w_m = 0` are now supported
+PASS: source records honest scope phrase: The finite component tensors for those ideal labels now assemble into the parent perfect-fluid form
+PASS: source records honest scope phrase: retires only narrow finite C2/C3 bookkeeping and label/lift imports
+PASS: source records honest scope phrase: does not retire the cosmological-backdrop admission
 PASS: source records honest scope phrase: records the admission boundary
 PASS: source records honest scope phrase: It does **not**
 PASS: source records honest scope phrase: open gate
 PASS: source records honest scope phrase: what would close this
+
+== Part 6: downstream source-boundary firewall ==
+PASS: source contains downstream firewall phrase: Downstream Source-Boundary Firewall
+PASS: source contains downstream firewall phrase: may not be cited downstream as a retained derivation
+PASS: source contains downstream firewall phrase: C1-C3 also may not be moved into a registry, admission file, or premise file
+PASS: source contains downstream firewall phrase: Future use must separately prove or explicitly admit
+PASS: firewall blocks downstream retained use for: C1, the physical no-injection part of C2, or the real species-allocation part of C3
+PASS: firewall blocks downstream retained use for: FRW dynamics
+PASS: firewall blocks downstream retained use for: entropy conservation or adiabatic expansion
+PASS: firewall blocks downstream retained use for: observational cosmology parameters
+PASS: firewall blocks downstream retained use for: parent theorem status
 
 == Result ==
 Framework-derivable / conditional-on-retained-chain ingredients:
@@ -77,13 +103,13 @@ Framework-derivable / conditional-on-retained-chain ingredients:
   - w_Lambda = -1 retained corollary
 Local supplied premises retained as open:
   - C1: cosmological principle (homogeneity + isotropy beyond S^3)
-  - C2: adiabatic expansion (no entropy injection in leptogenesis -> CMB window)
-  - C3: standard FRW EOS labels (w_r=1/3, w_m=0)
-Net retirements to bounded-derived: 0 (the bridge re-bases the existing open gate onto an explicit C1-C3 premise packet without eliminating admission).
-No new repo-wide axiom and no claim to derive C1, C2, or C3.
+  - C2 residual: real no-injection era and g_*S table
+  - C3 residual: real species allocation into ideal EOS components
+Net retirement: finite C2 source-free entropy bookkeeping, the ideal non-Lambda kinetic EOS labels, and their finite perfect-fluid lift are narrowed to bounded support; C1, physical C2 no-injection, and real species allocation remain open.
+No new repo-wide axiom and no claim to derive C1, the physical no-injection part of C2, or the full real species-allocation part of C3.
 
-TOTAL: PASS=48 FAIL=0
-VERDICT: open gate passes; FRW + adiabatic backdrop decomposition is recorded as an unresolved C1-C3 premise boundary. No new admissions are introduced; no row's effective status is changed.
+TOTAL: PASS=72 FAIL=0
+VERDICT: open gate passes; FRW + adiabatic backdrop decomposition is recorded as an unresolved C1-C3 premise boundary with partial bounded support for finite C2 entropy bookkeeping, the ideal non-Lambda C3 kinetic labels, and their finite perfect-fluid lift. No new admissions are introduced; no row's effective status is changed.
 
 ----- stderr -----
 

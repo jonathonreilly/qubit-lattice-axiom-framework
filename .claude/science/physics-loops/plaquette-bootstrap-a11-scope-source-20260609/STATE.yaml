@@ -1,0 +1,14 @@
+loop_id: plaquette-bootstrap-a11-scope-source-20260609
+status: packaged_for_review
+created: 2026-06-09
+target_claim_id: plaquette_bootstrap_framework_integration_note_2026-05-03
+target_prior_audit_status: audited_conditional
+source_note: docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md
+runner: scripts/frontier_plaquette_bootstrap_framework_integration.py
+runner_cache: logs/runner-cache/frontier_plaquette_bootstrap_framework_integration.txt
+audit_blocker: "scope_too_broad: narrow BB1 to Wilson-loop observables proven to lie in A11's A_+^(2) surface and include the mixed-cumulant authority, or remove the beta=6 estimate from the audited theorem scope."
+actual_current_surface_status: bounded/exact support theorem + named-obstruction stretch
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

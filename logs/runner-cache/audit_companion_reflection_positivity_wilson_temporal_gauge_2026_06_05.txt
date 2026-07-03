@@ -1,0 +1,88 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py
+runner_sha256: e577d695e122c88f8fc6ef8cccae52110cae196c2a76a181af3a40366642e1d0
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 95.90
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion for the Wilson-plaquette temporal-gauge RP bridge
+AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05
+Reprove: B_-=Theta B_+, plane norm-square factorization, integrated
+three-factor RP Gram PSD for A_+^(2) observables
+(Z_N exact, U(1) Bessel-certified + quadrature cross-check, SU(2) numeric).
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part A: reflection symmetry  B_- = Theta B_+  and B_0 plane invariance
+----------------------------------------------------------------------------------------
+  [PASS] reflect-split.1 B_- = Theta B_+  (same functional form on reflected slice, sympy)  (Theta maps the positive-half spatial loop to the negative half identically)
+  [PASS] reflect-plane.1 B_0 invariant under reflection-plane swap c0<->c1 (sympy)  (Re Tr[U(0) U(1)^dag] is symmetric in the two slices)
+  [PASS] reflect-plane.2 Z_N: B_0(c0,c1) = B_0(c1,c0) for all configs (reflection-plane invariance)  (N=4, L_s=2)
+
+----------------------------------------------------------------------------------------
+Part B: reflection-plane norm-square (Schwarz) factorization
+----------------------------------------------------------------------------------------
+  [PASS] (B1) Z_N plane-kernel character coeffs are real (Im ~ 0)  (max|Im c_q| = 2.78e-17)
+  [PASS] (B2) Z_N plane-kernel character coeffs are nonnegative (norm-square form)  (min c_q = 0.092733)
+  [PASS] (B3) Z_N plane kernel reconstructed from character sum exp(B_0)=sum_q c_q chi_q(U0) conj chi_q(U1)  (reconstruction err = 3.38e-16)
+  [PASS] (B4) U(1) plane-kernel coeffs c_n=I_n(beta) have positive lower bounds  (min lower bound for n in [-8,8] = 8.281833e-07)
+  [PASS] (B5) U(1) Bessel certificate has tiny positive tail intervals  (max positive tail bound for n in [-8,8] = 2.45e-97)
+  [PASS] (B6) U(1) plane-kernel coeffs symmetric c_n = c_{-n}  (max|c_n - c_{-n}| = 0.00e+00)
+
+----------------------------------------------------------------------------------------
+Part C: integrated three-factor RP Gram PSD for A_+^(2) observables
+----------------------------------------------------------------------------------------
+     Z_2, beta=0.3: basis=9, min_eig=-2.061064e-16, herm_err=6.2e-33, PSD=True
+     Z_2, beta=1.0: basis=9, min_eig=-2.938354e-16, herm_err=1.3e-32, PSD=True
+     Z_2, beta=2.5: basis=9, min_eig=-4.842310e-16, herm_err=2.8e-33, PSD=True
+     Z_3, beta=0.3: basis=9, min_eig=+1.790633e-02, herm_err=2.1e-16, PSD=True
+     Z_3, beta=1.0: basis=9, min_eig=+5.298851e-02, herm_err=2.3e-16, PSD=True
+     Z_3, beta=2.5: basis=9, min_eig=+1.571530e-03, herm_err=2.2e-16, PSD=True
+     Z_4, beta=0.3: basis=9, min_eig=+2.021915e-02, herm_err=4.2e-17, PSD=True
+     Z_4, beta=1.0: basis=9, min_eig=+7.449966e-02, herm_err=1.3e-16, PSD=True
+     Z_4, beta=2.5: basis=9, min_eig=+8.578173e-03, herm_err=1.1e-16, PSD=True
+     Z_5, beta=0.3: basis=9, min_eig=+1.965077e-02, herm_err=4.2e-16, PSD=True
+     Z_5, beta=1.0: basis=9, min_eig=+5.971461e-02, herm_err=4.1e-16, PSD=True
+     Z_5, beta=2.5: basis=9, min_eig=+1.310389e-02, herm_err=3.7e-16, PSD=True
+  [PASS] (C1) Z_N reflected Gram is Hermitian PSD across N in {2,3,4,5}, beta in {0.3,1,2.5}  (worst min_eig = -4.842310e-16)
+  [PASS] (C2) control: dropping Theta's conjugation gives a NON-PSD form (correct OS reflection is load-bearing)  (min_eig (wrong reflection) = -0.4823)
+     U(1), beta=0.5: min_eig=+4.253364e-02, herm_err=3.2e-15, PSD=True
+     U(1), beta=1.5: min_eig=+3.047166e-02, herm_err=1.7e-14, PSD=True
+  [PASS] (C3) U(1) reflected Gram quadrature cross-check is Hermitian PSD
+
+----------------------------------------------------------------------------------------
+Part D: manifest factorization G = W diag(kappa) W^dag, kappa >= 0
+----------------------------------------------------------------------------------------
+  [PASS] (D1) plane-kernel matrix spectrum kappa >= 0 (positive Gram kernel)  (min kappa = 0.137589)
+  [PASS] (D2) G = W diag(kappa) W^dag exactly (manifest Osterwalder-Seiler Gram = A^dag A)  (||G - W diag(kappa) W^dag|| = 1.71e-13)
+  [PASS] (D3) integrated three-factor Gram is PSD (eigenvalues >= 0)  (min_eig = +2.145619e+01)
+
+----------------------------------------------------------------------------------------
+Part E: SU(2) numeric sample (Haar Monte Carlo)
+----------------------------------------------------------------------------------------
+  [PASS] (E1) SU(2) link-reflection Gram is PSD within MC error (min_eig > -MC noise)  (min_eig = +0.03228, herm/MC-noise = 0.0108)
+     SU(2) eigenvalues: [0.03228 0.08143 0.17551 0.24293 0.92343 1.95127]
+     (numeric sample only; finite exact statements above are Z_N,
+      with U(1) plane positivity certified by Bessel positive series)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Reproved from primitives:
+   A  reflection symmetry  B_- = Theta B_+  and B_0 plane invariance
+   B  plane Boltzmann weight = positive (norm-square) character kernel
+      (Z_N: nonneg DFT coeffs; U(1): I_n(beta) >= 0 by positive series)
+   C  integrated three-factor reflected Gram PSD for A_+^(2) observables
+      (Z_N exact finite-Haar; U(1) quadrature cross-check; wrong reflection control)
+   D  manifest G = W diag(kappa) W^dag with kappa >= 0 (OS Gram = A^dag A)
+   E  SU(2) numeric sample PSD (link-reflection structure carries over)
+  Literature (Osterwalder-Seiler 1978; Montvay-Munster 1994): comparator only.
+
+========================================================================================
+TOTAL: 16 PASS / 0 FAIL
+========================================================================================
+
+----- stderr -----
+

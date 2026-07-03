@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_gauge_full_slice_su3_product_fubini_factorization_2026_06_06.py
+runner_sha256: e46d7dc1409413ad4532ad1f5d01d05a7619f2fae1bbbc428382a22df1d1842b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+========================================================================================
+SU(3) FULL-SLICE PRODUCT-FUBINI FACTORIZATION CERTIFICATE
+========================================================================================
+Support partition:
+  marked_scalar  -> fixed ['U_left', 'W_marked']
+  rim_left       -> rim   ['U_left', 'W_marked', 'r0', 'r1']
+  rim_right      -> rim   ['U_right', 'W_marked', 'r2', 'r3']
+  far_bulk_a     -> far   ['U_left', 'f0', 'f1']
+  far_bulk_b     -> far   ['U_right', 'f2', 'f3', 'f4']
+
+[PASS] companion note exists
+[PASS] parent rim-lift note exists
+[PASS] rim and far variables are disjoint
+[PASS] all moving variables are uniquely named
+[PASS] every plaquette is classified as fixed/rim/far
+[PASS] no plaquette mixes rim and far variables
+[PASS] at least one rim plaquette is present
+[PASS] at least one far plaquette is present
+[PASS] explicit variables are SU(3) matrices: Re Tr(gh)=-0.417807
+[PASS] Wilson Re Tr term is bounded on SU(3)
+[PASS] finite product-measure identity holds exactly
+[PASS] class projection pulls out W-independent far scalar
+[PASS] companion note contains boundary phrase: G = SU(3)
+[PASS] companion note contains boundary phrase: Xi = Xi^rim sqcup Xi^far
+[PASS] companion note contains boundary phrase: no plaquette contains both a rim variable and a far variable
+[PASS] companion note contains boundary phrase: Fubini/Tonelli applies directly
+[PASS] companion note contains boundary phrase: not a separate proof of the temporal-gauge mixed-kernel compression
+[PASS] companion note contains boundary phrase: does not apply an audit verdict
+[PASS] parent note now points to SU(3) product-Fubini companion
+[PASS] companion note states no audit-data edit
+
+SUMMARY: PASS=20 FAIL=0
+
+----- stderr -----
+

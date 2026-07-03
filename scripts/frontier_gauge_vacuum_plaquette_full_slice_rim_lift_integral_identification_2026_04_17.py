@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Verify the structural rim-integral identification at the heart of
+Verify the supplied-partition structural rim-integral identification at the heart of
 GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.
 
-The note's load-bearing identification is
+The note's narrowed load-bearing identification is
 
   B_beta(W)(U) = integral_(Omega^rim(U)) dmu_H(Xi^rim)
                    exp[(beta/3) A^rim(U, Xi^rim; W)],
@@ -13,10 +13,11 @@ definition-style; runner does not verify it.
 
 This runner performs the missing finite-lattice verification of the
 structural Fubini-marginalization step on a tractable Wilson toy lattice. The
-identification is group-independent (it is a Fubini factorization of the
-Haar measure with the marked plaquette source held fixed), so the toy uses
-SU(2) Haar for tractable explicit integration; the structural step verified
-here transfers verbatim to SU(3).
+identification is a supplied-partition Fubini factorization of the Haar
+measure with the marked plaquette source held fixed, so the toy uses SU(2)
+Haar for tractable explicit integration. The runner does not prove that the
+actual framework SU(3) Wilson slab has this rim/far support partition or the
+marked/non-marked mixed-kernel compression bridge.
 
 Toy geometry (3-column open strip, two rim plaquettes that both touch the
 slice link U; one disjoint beyond-rim plaquette). The toy uses a single-link slice
@@ -72,13 +73,14 @@ of exp[(beta/3) (Re Tr V_r1 + Re Tr V_r2 + Re Tr V_f)] equals B(U) * F(U)
 to within Monte Carlo precision.
 
 This converts the auditor-flagged definition-style identification into a
-verified finite-lattice Fubini identity: the boundary state induced on the
-edge slice by the local rim coupling literally equals the rim integral as
-defined in the note, multiplied by a beyond-rim slice transfer factor.
+verified supplied-packet finite-lattice Fubini identity: the boundary state
+induced on the edge slice by the supplied local rim coupling equals the rim
+integral as defined in the note, multiplied by a beyond-rim slice transfer
+factor.
 
-The SU(3) framework-point evaluation problem at beta = 6 remains open
-(explicitly out of scope of this identification, per Theorem 1 / Corollary 2
-of the note).
+The native SU(3) slab support/compression theorem and the framework-point
+evaluation problem at beta = 6 remain open (explicitly out of scope of this
+identification, per Theorem 1 / Corollary 2 of the note).
 """
 
 from __future__ import annotations
@@ -161,6 +163,7 @@ def main() -> int:
     transfer_note = read(
         "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md"
     )
+    transfer_flat = " ".join(transfer_note.split())
     compressed_note = read(
         "docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_FUNCTIONAL_UNIQUENESS_NOTE_2026-04-17.md"
     )
@@ -185,6 +188,15 @@ def main() -> int:
     print("are U-independent at MC precision in this toy (separate from the")
     print("physical multi-link slice setting).")
     print()
+
+    check(
+        "Rim-lift note declares supplied-partition safe narrow and open SU(3) slab partition",
+        "supplied-partition product-Fubini lemma" in rim_note
+        and "actual SU(3) Wilson slab" in rim_note
+        and "mixed-kernel compression bridge" in rim_note
+        and "**Type:** bounded_theorem" in rim_note,
+        bucket="SUPPORT",
+    )
 
     B_vals = np.zeros(N_SAMPLES_U)
     F_vals = np.zeros(N_SAMPLES_U)
@@ -235,13 +247,14 @@ def main() -> int:
               f"{B*F:>14.6e} {psi:>14.6e} {rel:>16.3e}")
     print()
 
-    # SUPPORT: upstream definition of eta_beta(W) is the boundary state on
-    # the edge slice induced by the local rim coupling.
+    # SUPPORT: the current upstream transfer packet records eta_beta(W) in the
+    # target boundary-amplitude identity, while leaving the full untruncated
+    # Wilson-environment boundary theorem open.
     check(
-        "Upstream transfer theorem defines eta_beta(W) as the rim-induced boundary state on the edge slice",
-        "eta_beta(W)" in transfer_note
-        and "boundary state induced on one edge slice" in transfer_note
-        and "local rim coupling" in transfer_note,
+        "Upstream transfer packet records eta_beta(W) in the target boundary-state identity",
+        "eta_beta" in transfer_note
+        and "boundary state" in transfer_note
+        and "full untruncated spatial-environment boundary-amplitude identity" in transfer_flat,
         bucket="SUPPORT",
     )
 

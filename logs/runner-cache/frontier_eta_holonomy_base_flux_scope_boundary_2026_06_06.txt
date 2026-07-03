@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/frontier_eta_holonomy_base_flux_scope_boundary_2026_06_06.py
+runner_sha256: e09e33d6e0bbc3df902ec695510243d43f083b01841752be1282f5eae7c0daeb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+eta holonomy base-flux scope-boundary checker
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+
+A. eta phases as scalar spin-diagonal connection
+[PASS] spin-diagonal identity on 3^3 block -- T(x)^dag sigma_mu T(x+mu) = eta_mu(x) I2
+[PASS] identity has no hidden numerical tolerance on 3^3 block -- mismatches=0
+[PASS] spin-diagonal identity on 4^3 block -- T(x)^dag sigma_mu T(x+mu) = eta_mu(x) I2
+[PASS] identity has no hidden numerical tolerance on 4^3 block -- mismatches=0
+B. Z_2 plaquette curvature
+[PASS] uniform eta curvature in plane 12 -- values=[-1]
+[PASS] curvature is invariant under deterministic Z_2 gauge in plane 12 -- values=[-1]
+[PASS] uniform eta curvature in plane 13 -- values=[-1]
+[PASS] curvature is invariant under deterministic Z_2 gauge in plane 13 -- values=[-1]
+[PASS] uniform eta curvature in plane 23 -- values=[-1]
+[PASS] curvature is invariant under deterministic Z_2 gauge in plane 23 -- values=[-1]
+C. rectangular base-loop area law
+[PASS] holonomy equals (-1)^area in plane 12 -- 1x1:-1, 1x2:1, 2x3:1, 3x3:-1, 4x4:1
+[PASS] holonomy equals (-1)^area in plane 13 -- 1x1:-1, 1x2:1, 2x3:1, 3x3:-1, 4x4:1
+[PASS] holonomy equals (-1)^area in plane 23 -- 1x1:-1, 1x2:1, 2x3:1, 3x3:-1, 4x4:1
+[PASS] 1x1 and 1x2 base loops have different eta holonomy -- 1x1=-1, 1x2=1
+D. scope boundary for the old braid-invariant no-go
+[PASS] unit plaquette boundary is a closed 1-cycle in the base graph -- boundary over GF(2) is zero
+[PASS] nearest-neighbor Z^3 graph supplies no plaquette 2-cell by itself -- C2(graph)=0 unless a cubical/fillable complex is added
+[PASS] runner does not assert the compared detour swaps are the same B_2(Z^3) class -- that remains an explicit UD_2 homotopy bridge obligation
+[PASS] conditional implication is isolated -- if a future UD_2 bridge identifies different-area swaps, eta holonomy cannot be a braid-class character
+
+SCORECARD: PASS=18 FAIL=0
+VERDICT: exact support for the base eta Z_2 area-flux theorem; the closed PR2207 braid-invariant no-go remains unsupported without an explicit UD_2 homotopy bridge.
+
+----- stderr -----
+

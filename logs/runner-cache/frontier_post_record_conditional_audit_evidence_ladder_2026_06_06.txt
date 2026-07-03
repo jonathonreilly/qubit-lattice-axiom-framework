@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_conditional_audit_evidence_ladder_2026_06_06.py
+runner_sha256: 8ec566c9977e2ae7ad3ddff3088579bef85d2ccf6a1033e35a24aa02ce237165
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md exists
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: conditional audit evidence ladder
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: expectation-only evidence cannot certify p-values
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: simulation evidence is support-only
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: stable settings are not selected dials
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: independent audit owns verdicts
+PASS docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md contains: verified law-scoped concentration certificate
+PASS docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md contains: does not have a concentration certificate
+PASS docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md contains: Does not select or force a generation/Koide dial location
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md exists
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: bounded and conditional lanes
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: probability/source/instrument/dynamics rows
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: post-record information dynamics
+PASS docs/RECORD_TYPING_AUDIT_UNLOCK_MAP_2026-06-05.md exists
+PASS docs/RECORD_TYPING_AUDIT_UNLOCK_MAP_2026-06-05.md contains: selector/measure gates
+PASS docs/RECORD_TYPING_AUDIT_UNLOCK_MAP_2026-06-05.md contains: dynamics rows
+PASS docs/RECORD_TYPING_AUDIT_UNLOCK_MAP_2026-06-05.md contains: dial is stable, selected, or
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md exists
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: post-record information dynamics
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: probability laws, Born typicality, and transition rates
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: dial selection
+
+------------------------------------------------------------------------------
+Classifier checks
+------------------------------------------------------------------------------
+PASS append/count row :: exact_support_candidate
+PASS exact finite p-value row :: conditional_audit_ready
+PASS concentration certificate row :: conditional_audit_ready
+PASS expectation-only p-value row :: blocked_expectation_only
+PASS simulation-only p-value row :: support_only_not_calibrated
+PASS stable dial row :: stable_setting_support
+PASS selected dial from stability only :: blocked_missing_selector
+PASS bounded production dynamics row :: bounded_support_with_open_imports
+PASS branch-local audit verdict row :: independent_audit_only
+PASS classification histogram matches expected :: Counter({'conditional_audit_ready': 2, 'exact_support_candidate': 1, 'blocked_expectation_only': 1, 'support_only_not_calibrated': 1, 'stable_setting_support': 1, 'blocked_missing_selector': 1, 'bounded_support_with_open_imports': 1, 'independent_audit_only': 1})
+PASS exact finite law upgrades expectation-only p-value row
+PASS simulation plus expectation is not calibrated
+PASS selector rule is needed for selected dial
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS audit verdict applied flag is false
+PASS Record-derived probability flag is false
+PASS Record-derived concentration flag is false
+PASS simulation calibrated without certificate flag is false
+PASS stable setting selects dial flag is false
+PASS generation/Koide dial selected flag is false
+PASS retained/promoted claim flag is false
+
+SUMMARY: PASS=42 FAIL=0
+CONDITIONAL_AUDIT_EVIDENCE_LADDER=TRUE
+EXPECTATION_ONLY_CERTIFIES_P_VALUES=FALSE
+SIMULATION_ONLY_CALIBRATED=FALSE
+STABLE_SETTING_SELECTS_DIAL=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+
+----- stderr -----
+

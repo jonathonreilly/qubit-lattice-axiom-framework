@@ -1,0 +1,88 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_lambda_normalization_attack_fanout.py
+runner_sha256: e958231f3e9e465c76ccd70f415c439cebeebcee34ab19e03b5ee82ce404b607
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.52
+status: ok
+----- stdout -----
+==============================================================================
+Y_T LAMBDA-NORMALIZATION ATTACK FANOUT
+==============================================================================
+
+Part 1: packet anchors and audit-grounded status
+[PASS] docs/YT_LAMBDA_NORMALIZATION_ATTACK_FANOUT_NOTE_2026-05-25.md exists
+[PASS] docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md exists
+[PASS] docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md exists
+[PASS] docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md exists
+[PASS] docs/YUKAWA_COLOR_PROJECTION_THEOREM.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
+[PASS] note contains section/phrase: **Claim type:** meta
+[PASS] note contains section/phrase: open / support-only route synthesis
+[PASS] note contains section/phrase: Assumptions Exercise
+[PASS] note contains section/phrase: First-Principles Exercise
+[PASS] note contains section/phrase: Literature Search
+[PASS] note contains section/phrase: Mathematics Search
+[PASS] note contains section/phrase: Probe Portfolio
+[PASS] note contains section/phrase: Consolidated Attack Ranking
+[PASS] note contains section/phrase: No-Go Audit
+[PASS] note contains section/phrase: Recommended Next Science Block
+[PASS] note contains section/phrase: Non-Claims
+[PASS] source-action support status is retained_bounded
+[PASS] pole-row normalization no-go is retained_no_go
+[PASS] color projection correction no-go is retained_no_go
+[PASS] color projection theorem is decoration
+
+Part 2: pole rows and Gram purity are scale-blind
+[PASS] base rank-one Gram determinant vanishes: 0
+[PASS] Gram purity survives mu=2, lambda=3
+[PASS] normalized residue ratio stays one at mu=2, lambda=3: 1
+[PASS] effective mass ratio stays q^-1 at mu=2, lambda=3: 7/5
+[PASS] Gram purity survives mu=3/5, lambda=11/7
+[PASS] normalized residue ratio stays one at mu=3/5, lambda=11/7: 1
+[PASS] effective mass ratio stays q^-1 at mu=3/5, lambda=11/7: 7/5
+
+Part 3: color-projection ambiguity can be absorbed by scalar scale
+[PASS] K_Y(0) is 8/9: 8/9
+[PASS] K_Y(1) is 1: 1
+[PASS] full/connected normalization ratio is 9/8: 9/8
+[PASS] sqrt(9/8) is nontrivial: 1.0606601717798212
+
+Part 4: W/Z absolute response breaks scale; W/Z ratio does not
+[PASS] W/Z ratio is lambda-blind: 0.7652599166817605
+[PASS] absolute W response recovers lambda with fixed gauge coupling: 1.17
+[PASS] absolute W response recovers scaled canonical v: 1.4390999999999998
+
+Part 5: same-source FH top/W ratio cancels source scale
+[PASS] top/W FH slope ratio cancels source scale: 2.1818181818181817
+[PASS] top-only FH slope changes under source rescaling: 0.6486486486486486
+
+Part 6: spectral and symplectic routes need an extra anchor
+[PASS] spectral residue scales as lambda^2: 1.5162
+[PASS] symplectic pairing preserved by inverse scaling
+[PASS] finite-dimensional exact CCR trace obstruction holds
+
+Part 7: BRST/FMS supports operator class but not scalar coupling value
+[PASS] (HdagH)^2 is an allowed invariant
+[PASS] two scalar couplings can share same invariant set
+
+Part 8: overclaim firewalls
+[PASS] forbidden overclaim absent: Status: retained
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: proposed_retained
+[PASS] forbidden overclaim absent: This packet derives `y_t`
+[PASS] forbidden overclaim absent: This packet derives `m_t`
+[PASS] forbidden overclaim absent: `kappa_Y = 0` is derived
+[PASS] forbidden overclaim absent: the scalar LSZ bridge is closed
+[PASS] firewall term present: `H_unit`
+[PASS] firewall term present: `yt_ward_identity`
+[PASS] firewall term present: `y_t_bare`
+[PASS] firewall term present: `alpha_LM`
+[PASS] firewall term present: plaquette/u0
+[PASS] firewall term present: PDG
+
+wrote outputs/yt_lambda_normalization_attack_fanout_2026-05-25.json
+SUMMARY: PASS=55 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,102 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_reset_sink_entropy_ledger_2026_06_05.py
+runner_sha256: f086650aabbcc72f0f766ee3199d336491985b2343c4ecef5e74337d6346b496
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+==============================================================================
+RECORD RESET SINK ENTROPY LEDGER
+bounded-support / finite information-accounting runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Reversible ledger by fragment count
+------------------------------------------------------------------------------
+  [PASS] k=1: blank input support has 2^(k+1) labels
+  [PASS] k=1: full output support preserves cardinality
+  [PASS] k=1: all visible outputs are clean broadcasts
+  [PASS] k=1: visible clean record has two labels
+  [PASS] k=1: sink stores 2^k labels for pointer 0
+  [PASS] k=1: sink stores 2^k labels for pointer 1
+  [PASS] k=1: full entropy is k+1 bits (2.0)
+  [PASS] k=1: visible entropy is one bit (1.0)
+  [PASS] k=1: hidden old-fragment ledger is k bits (1.0)
+  [PASS] k=1: reblanking sink is many-to-one
+  [PASS] k=2: blank input support has 2^(k+1) labels
+  [PASS] k=2: full output support preserves cardinality
+  [PASS] k=2: all visible outputs are clean broadcasts
+  [PASS] k=2: visible clean record has two labels
+  [PASS] k=2: sink stores 2^k labels for pointer 0
+  [PASS] k=2: sink stores 2^k labels for pointer 1
+  [PASS] k=2: full entropy is k+1 bits (3.0)
+  [PASS] k=2: visible entropy is one bit (1.0)
+  [PASS] k=2: hidden old-fragment ledger is k bits (2.0)
+  [PASS] k=2: reblanking sink is many-to-one
+  [PASS] k=3: blank input support has 2^(k+1) labels
+  [PASS] k=3: full output support preserves cardinality
+  [PASS] k=3: all visible outputs are clean broadcasts
+  [PASS] k=3: visible clean record has two labels
+  [PASS] k=3: sink stores 2^k labels for pointer 0
+  [PASS] k=3: sink stores 2^k labels for pointer 1
+  [PASS] k=3: full entropy is k+1 bits (4.0)
+  [PASS] k=3: visible entropy is one bit (1.0)
+  [PASS] k=3: hidden old-fragment ledger is k bits (3.0)
+  [PASS] k=3: reblanking sink is many-to-one
+  [PASS] k=4: blank input support has 2^(k+1) labels
+  [PASS] k=4: full output support preserves cardinality
+  [PASS] k=4: all visible outputs are clean broadcasts
+  [PASS] k=4: visible clean record has two labels
+  [PASS] k=4: sink stores 2^k labels for pointer 0
+  [PASS] k=4: sink stores 2^k labels for pointer 1
+  [PASS] k=4: full entropy is k+1 bits (5.0)
+  [PASS] k=4: visible entropy is one bit (1.0)
+  [PASS] k=4: hidden old-fragment ledger is k bits (4.0)
+  [PASS] k=4: reblanking sink is many-to-one
+  [PASS] k=5: blank input support has 2^(k+1) labels
+  [PASS] k=5: full output support preserves cardinality
+  [PASS] k=5: all visible outputs are clean broadcasts
+  [PASS] k=5: visible clean record has two labels
+  [PASS] k=5: sink stores 2^k labels for pointer 0
+  [PASS] k=5: sink stores 2^k labels for pointer 1
+  [PASS] k=5: full entropy is k+1 bits (6.0)
+  [PASS] k=5: visible entropy is one bit (1.0)
+  [PASS] k=5: hidden old-fragment ledger is k bits (5.0)
+  [PASS] k=5: reblanking sink is many-to-one
+
+------------------------------------------------------------------------------
+2. k=3 witness details
+------------------------------------------------------------------------------
+  [PASS] k=3 witness has sixteen blank-sink inputs
+  [PASS] old fragment 101 is recoverable from sink for pointer 0
+  [PASS] old fragment 101 is recoverable from sink for pointer 1
+  [PASS] pointer 0 visible fragments reset to 000
+  [PASS] pointer 1 visible fragments reset to 111
+  [PASS] k=3 reblank map has sixteen domain labels
+  [PASS] k=3 reblank map has two range labels
+  [PASS] k=3 reblank map loses three finite bits
+
+------------------------------------------------------------------------------
+3. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_RESET_SINK_ENTROPY_LEDGER_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: bounded-support
+  [PASS] note contains marker: trace_class: upstream_support
+  [PASS] note contains marker: finite sink-memory ledger
+  [PASS] note contains marker: Does not derive sink blankness
+  [PASS] note contains marker: Does not identify finite support entropy with heat or action.
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: cost closure
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: heat identity
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=70 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,92 @@
+===== runner cache v1 =====
+runner: scripts/flavor_tracial_reference_does_not_select_q23_no_go_2026_06_02.py
+runner_sha256: 61aea1e631c6bde41b9d231f91a53b1dcb2e68de3ee0d2642acb1e067f93d300
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.46
+status: ok
+----- stdout -----
+==============================================================================
+BLOCK 0 — carrier sanity:  C^3 = I, R[Z3] = R (+) C
+==============================================================================
+  [PASS] C^3 = I
+  [PASS] C != I (nontrivial generator)
+  [PASS] e0 idempotent
+  [PASS] e1 idempotent
+  [PASS] e0+e1 = I
+  [PASS] e0 e1 = 0
+  [PASS] rank e0 = 1 :: singlet block dim 1
+  [PASS] rank e1 = 2 :: doublet block dim 2
+
+==============================================================================
+BLOCK 1 — exact Koide line Q = 1/3 + (2/3) r, and the two measure points
+==============================================================================
+  [PASS] Q(a,b) = 1/3 + (2/3) r exactly (sympy) :: Q = (a**2 + 2*b**2)/(3*a**2)
+  [PASS] Tr(I^2)=3
+  [PASS] Tr((J-I)^2)=6
+  [PASS] dimension weight: r=1 gives Q=1 :: Q(b=a)=1.000000
+  [PASS] block weight: r=1/2 gives Q=2/3 :: Q(b=a/sqrt2)=0.666667
+
+==============================================================================
+BLOCK 2 — on-site qubit unit-trace (tracial) reference, restricted to (e0,e1)
+==============================================================================
+  [PASS] tracial state: Tr(rho e0) = 1/3 :: p_singlet=0.333333
+  [PASS] tracial state: Tr(rho e1) = 2/3 :: p_doublet=0.666667
+  [PASS] unit-trace induces (1,2) dimension weight on (e0,e1) -> Q=1 :: ratio p0:p1 = 1:2, NOT 1:1; the trace lands on Q=1, not Q=2/3
+  [PASS] equal-block state has Tr=1
+  [PASS] equal-block state gives (1,1): Tr(sigma e0)=Tr(sigma e1)=1/2 :: (0.500,0.500)
+  [PASS] equal-block state is NOT the tracial I/3 :: the (1,1) measure is a DIFFERENT, non-tracial state -> requires additional input
+
+==============================================================================
+BLOCK 3 — KMS/modular: tracial carrier has Delta=1 (beta=0); (1,1) needs finite beta
+==============================================================================
+  [PASS] Tomita S is an involution (S^2 = I) for the trace :: S^2=I
+  [PASS] S is HS-anti-unitary (||x*||=||x||) => Delta = 1 :: max ||x*||-||x|| dev = 0.00e+00
+  [PASS] witness non-tracial density: id/non-id gap = ln2 :: gap=0.693147=ln2
+  [PASS] witness density is NOT tracial (Delta != 1) :: requires a finite-beta = a temperature = a dynamics; not the tracial reference
+
+==============================================================================
+BLOCK 4 — RP / T-positivity is AGNOSTIC to the count (holds for every r)
+==============================================================================
+      r=0.3:  S=(H+m^2)^-1 min-eig = +0.426358  (RP OK)
+      r=0.5:  S=(H+m^2)^-1 min-eig = +0.375345  (RP OK)
+      r=1.0:  S=(H+m^2)^-1 min-eig = +0.307692  (RP OK)
+      r=2.0:  S=(H+m^2)^-1 min-eig = -6.089631  (RP FAIL (past endpoint / neg doublet mass))
+  [PASS] RP/T-positivity is satisfied at BOTH candidate points r=1/2 and r=1 :: RP admits both measure points equally; it does not rank r=1/2 vs r=1
+  [PASS] RP does NOT single out r=1/2 (it holds across the whole physical r<1 range) :: no RP stationarity/preference at r=1/2; RP selects the Hermitian readout CLASS, never the value r
+  [PASS] doublet covariance is PSD in the det_R (2 real) realization
+  [PASS] doublet covariance is PSD in the det_C (1 complex) realization too :: RP holds for BOTH realizations => RP cannot distinguish det_C from det_R
+
+==============================================================================
+BLOCK 5 — locality/cluster: product trace fixes inter-site, not the block ratio
+==============================================================================
+      |Lambda|=1:  induced (p0:p1) = (0.333:0.667) = (1:2)
+      |Lambda|=2:  induced (p0:p1) = (0.333:0.667) = (1:2)
+      |Lambda|=4:  induced (p0:p1) = (0.333:0.667) = (1:2)
+  [PASS] locality/cluster leaves the generation block weight at (1,2) for all |Lambda| :: the product/trace structure is generation-block-agnostic; it does not force (1,1)
+
+==============================================================================
+BLOCK 6 — neither measure is excluded: BOTH states satisfy every tested constraint
+==============================================================================
+  [PASS] (1,2) state rho=I/3 is PD
+  [PASS] (1,2) state rho=I/3 is C3-invariant
+  [PASS] (1,2) state rho=I/3 has unit trace
+  [PASS] (1,1) state sigma is PD
+  [PASS] (1,1) state sigma is C3-invariant
+  [PASS] (1,1) state sigma has unit trace
+  [PASS] BOTH measures survive every tested constraint (PD+C3+unit-trace) => TIE NOT BROKEN by these :: the tracial route reads (1,2); (1,1) is admissible but non-tracial
+
+==============================================================================
+BLOCK 7 — VERDICT: tracial route gives (1,2)->Q=1, not (1,1)->Q=2/3
+==============================================================================
+  [PASS] tracial route selection is r=1 (Q=1)
+  [PASS] equal-block route is r=1/2 (Q=2/3), different from the trace
+  [PASS] => tracial/product/modular route does NOT select the equal-block value :: RP/T-pos agnostic; trace+KMS+product route gives (1,2)->Q=1; (1,1)->Q=2/3 needs finite-beta/non-tracial weight
+  [PASS] source boundary guard: carrier/readout are assumed, not derived by this packet :: the packet closes only the assumed-carrier tracial-reference no-go
+
+==============================================================================
+SCORECARD: PASS=39 FAIL=0
+==============================================================================
+
+----- stderr -----
+

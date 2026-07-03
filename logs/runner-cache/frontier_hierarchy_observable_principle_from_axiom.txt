@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_observable_principle_from_axiom.py
-runner_sha256: 715c664fbb282a9d9817eb2dcc7b8f2cb2825212b5da8bbb2d4a3eb04740d405
+runner_sha256: ed60d623198785d933063a0b4db2907738061425e84efe5bb40eb0b9607e455a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.21
 status: ok
 ----- stdout -----
-Hierarchy observable principle from the lattice axiom
+Hierarchy observable principle with declared finite readout boundary
 ==============================================================================
 
 ==============================================================================
@@ -34,9 +34,22 @@ PART 2: LOCAL SOURCE RESPONSES ARE CONNECTED AND BLOCK-LOCAL
   [PASS] local self-curvature is inherited exactly by the full block-diagonal system
          absolute difference = 0.00e+00
 
+  Theorem-2 residual checks: trace formulas vs central finite differences
+  first:        FD=1.625274332895e-02, trace=1.625274331150e-02, residual=1.75e-11
+  mixed-second: FD=8.881784197001e-10, trace=6.013773610080e-11, residual=8.28e-10
+  same-second:  FD=-2.641513674462e-04, trace=-2.641516651494e-04, residual=2.98e-10
+  [PASS] Theorem-2 first-derivative trace formula matches central finite difference
+         residual = 1.75e-11 (non-uniform positive-cone source, eps = 1e-05)
+  [PASS] Theorem-2 mixed-second-derivative trace formula matches central finite difference
+         residual = 8.28e-10 (non-uniform positive-cone source, eps = 0.001)
+  [PASS] Theorem-2 same-site-second-derivative trace formula matches central finite difference
+         residual = 2.98e-10 (non-uniform positive-cone source, eps = 0.001)
+
 ==============================================================================
 PART 3: UNIFORM SCALAR SOURCE GIVES THE EXACT HIERARCHY GENERATOR
 ==============================================================================
+
+  -- coupling u0 = 0.9 --
   Lt=2, j=0.0001: gen=2.469136006766e-08, exact=2.469135798659e-08, pos_err=1.81e-15, quad_err=2.04e-07
   Lt=2, j=0.001: gen=2.469135422345e-06, exact=2.469135421430e-06, pos_err=8.99e-16, quad_err=3.80e-07
   Lt=2, j=0.01: gen=2.469097699311e-04, exact=2.469097699306e-04, pos_err=7.37e-16, quad_err=nan
@@ -53,17 +66,39 @@ PART 3: UNIFORM SCALAR SOURCE GIVES THE EXACT HIERARCHY GENERATOR
   Lt=8, j=0.001: gen=1.140384165410e-05, exact=1.140384165352e-05, pos_err=1.58e-16, quad_err=2.05e-06
   Lt=8, j=0.01: gen=1.140363843838e-03, exact=1.140363843831e-03, pos_err=7.92e-15, quad_err=nan
   Lt=8, j=0.1: gen=1.138336603180e-01, exact=1.138336603180e-01, pos_err=1.42e-14, quad_err=nan
-  [PASS] uniform-source log|det| generator matches the exact Matsubara formula
-         max absolute generator error = 1.15e-14
+
+  -- coupling u0 = 1.17 --
+  Lt=2, j=0.0001: gen=1.461026855054e-08, exact=1.461027100719e-08, pos_err=1.76e-15, quad_err=2.47e-07
+  Lt=2, j=0.001: gen=1.461026966965e-06, exact=1.461026968640e-06, pos_err=1.59e-15, quad_err=1.35e-07
+  Lt=2, j=0.01: gen=1.461013760924e-04, exact=1.461013760964e-04, pos_err=4.39e-15, quad_err=nan
+  Lt=2, j=0.1: gen=1.459694599038e-02, exact=1.459694599038e-02, pos_err=3.94e-15, quad_err=nan
+  Lt=4, j=0.0001: gen=3.339489396126e-08, exact=3.339490515493e-08, pos_err=1.06e-14, quad_err=1.12e-06
+  Lt=4, j=0.001: gen=3.339490159959e-06, exact=3.339490170472e-06, pos_err=1.03e-14, quad_err=3.59e-07
+  Lt=4, j=0.01: gen=3.339455668758e-04, exact=3.339455668847e-04, pos_err=7.23e-15, quad_err=nan
+  Lt=4, j=0.1: gen=3.336010299164e-02, exact=3.336010299164e-02, pos_err=3.13e-15, quad_err=nan
+  Lt=6, j=0.0001: gen=5.057403029696e-08, exact=5.057401501730e-08, pos_err=1.60e-14, quad_err=1.52e-06
+  Lt=6, j=0.001: gen=5.057400969122e-06, exact=5.057400969509e-06, pos_err=1.73e-15, quad_err=5.38e-07
+  Lt=6, j=0.01: gen=5.057347748263e-04, exact=5.057347748157e-04, pos_err=8.77e-15, quad_err=nan
+  Lt=6, j=0.1: gen=5.052033204044e-02, exact=5.052033204044e-02, pos_err=5.44e-15, quad_err=nan
+  Lt=8, j=0.0001: gen=6.747838909860e-08, exact=6.747836505386e-08, pos_err=2.14e-14, quad_err=2.40e-06
+  Lt=8, j=0.001: gen=6.747835797682e-06, exact=6.747835793856e-06, pos_err=9.15e-16, quad_err=7.15e-07
+  Lt=8, j=0.01: gen=6.747764642014e-04, exact=6.747764641849e-04, pos_err=1.78e-14, quad_err=nan
+  Lt=8, j=0.1: gen=6.740659628177e-02, exact=6.740659628174e-02, pos_err=2.38e-14, quad_err=nan
+  [PASS] uniform-source log|det| generator matches the exact Matsubara formula (u0 = 0.9 and 1.17)
+         max absolute generator error = 2.64e-14
+  [PASS] spec(D) equals the exact multiset {+-i u0 sqrt(3 + sin^2 omega)} x4 per mode
+         max eigenvalue multiset error = 1.51e-14
+  [PASS] pair-product determinant identity: log|det(D+jI)| = 4 sum_w log(j^2 + u0^2(3+sin^2 w))
+         max pair-product identity error = 2.13e-14
   [PASS] the scalar generator is exactly bosonic/sign-blind: W(j) = W(-j)
          max evenness error = 0.00e+00
   [PASS] the scalar generator is exactly the positive CPT-even log-det functional
-         max positive-functional error = 1.42e-14
+         max positive-functional error = 2.38e-14
   [PASS] the small-j curvature reproduces the exact total A(L_t) coefficient
-         max quadratic-coefficient error = 2.05e-06
+         max quadratic-coefficient error = 2.40e-06
 
 ==============================================================================
-PART 4: THE SOURCE-CURVATURE KERNEL FORCES THE LT=4 SELECTOR
+PART 4: THE SOURCE-CURVATURE KERNEL CERTIFIES THE LT=4 SELECTOR
 ==============================================================================
   Lt= 2: num_orbits=1, sizes=[2], weights=[[0.25]]
   Lt= 4: num_orbits=1, sizes=[4], weights=[[0.285714285714286]]
@@ -75,6 +110,10 @@ PART 4: THE SOURCE-CURVATURE KERNEL FORCES THE LT=4 SELECTOR
          Lt=4 orbit weights = [[0.285714285714286]]
   [PASS] the unique minimal resolved Klein-four orbit is Lt = 4
          resolved single-orbit Lt values = [4]
+  [PASS] Klein-four orbits never exceed the group-order bound |orbit| <= 4
+         max orbit size over the scan = 4 (group order = 4)
+  [PASS] exact counting: num_orbits >= ceil(Lt/4), so every Lt > 4 splits and Lt = 4 is unique for all Lt
+         counting inequality holds on scan; Lt=2 orbit size 2 (unresolved sign pair), Lt=4 orbit size 4
 
 ==============================================================================
 PART 5: OUT-OF-SCOPE HIERARCHY COMPARATOR (INFORMATIONAL ONLY)
@@ -87,11 +126,11 @@ PART 5: OUT-OF-SCOPE HIERARCHY COMPARATOR (INFORMATIONAL ONLY)
   INFO: comparator only; not counted as a theorem PASS check.
 
 ==============================================================================
-PART 6: CONDITIONAL-SHAPE VERIFICATION (2026-06-04 RECORD/P1+P2 REPAIR)
+PART 6: REPAIRED SOURCE-SCOPE VERIFICATION (RECORD/P1 + PHASE-FREE SOURCE)
 ==============================================================================
   [PASS] Record/P1 additivity holds for the candidate generator W = log|det(D+J)|
          max additivity error = 7.11e-15
-  [PASS] P2 consistency: selected phase-blind candidate is source-even, W(j) = W(-j)
+  [PASS] source-branch consistency: real-positive candidate is source-even, W(j) = W(-j)
          max evenness error = 0.00e+00
   [PASS] candidate regularity: small-j behavior is stable for W
          max relative quadratic-coefficient consistency = 7.28e-06
@@ -99,7 +138,7 @@ PART 6: CONDITIONAL-SHAPE VERIFICATION (2026-06-04 RECORD/P1+P2 REPAIR)
          max zero-source baseline error = 0.00e+00
   [PASS] Record/P1 is non-vacuous: raw |Z| violates additivity
          raw |Z| additivity violation = 0.9999
-  Note: this part verifies the CONDITIONAL SHAPE only (Record/P1+P2 plus the canonical c=1 convention select the candidate W). It does NOT derive P2 from retained bridge theorems; that path is explicitly out of scope per the audit-named conditional scope (see docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md §'Audit-named conditional scope').
+  Note: this part verifies the repaired finite source shape only (Record/P1 plus the phase-free real-positive source branch select the candidate W with the canonical c=1 convention). It does NOT derive global/off-sector P2; arbitrary complex source phases remain out of scope for this parent row.
 
 ==============================================================================
 PART 7: RUNNER-LOCAL CONSISTENCY CHECKS FOR THE SELECTED CANDIDATE
@@ -129,14 +168,42 @@ PART 7: RUNNER-LOCAL CONSISTENCY CHECKS FOR THE SELECTED CANDIDATE
   [PASS] baseline convention checked: source-derivative observables invariant under additive constant in W
          max |dW_native - dW_alt| = 8.88e-11
 
-  Summary: the selected Record/P1+P2 candidate passes source-evenness,
+  Summary: the selected Record/P1 real-positive source candidate passes source-evenness,
   finite-block regularity, and additive-baseline invariance checks.
   The c=1 scale is a representative normalization, not a derived
-  physical scale. These checks do not derive the residual P2
-  scalar-selection surface or promote any cited upstream row.
+  physical scale. These checks do not derive global/off-sector P2
+  or promote any cited upstream row.
 
 ==============================================================================
-SCORECARD: 25 pass, 0 fail out of 25
+PART 8: DET-POSITIVITY LEMMA FACTS L1/L2 RECOMPUTED ON THE RUNNER BLOCKS
+==============================================================================
+  [PASS] L1 cone positivity recomputed: slogdet sign = +1 on non-uniform positive diagonal sources
+         all signs +1; min log det(S+D) = 9.557087
+  [PASS] L1 mechanism recomputed: B = S^(-1/2) D S^(-1/2) is real antisymmetric
+         max ||B^T + B||_F = 1.10e-14
+  [PASS] L1 mechanism recomputed: det(I+B) = prod(1 + lambda_k^2) >= 1
+         max |log det(I+B) - sum log(1+lambda^2)| = 1.42e-14, min log det(I+B) = 33.870001 (>= 0)
+  [PASS] L2 hypothesis recomputed: ||D^-1 J|| < 1 for every source magnitude used in this runner
+         max ||D^-1 J||_2 bound = 0.062639 (< 1, Neumann patch covers the consumed sources)
+  [PASS] L2 patch positivity recomputed: slogdet sign = +1 for signed sources in the Neumann patch
+         all signs +1; min log det(D+J) = 9.403721
+
+  Summary: the lemma facts this note consumes (L1 cone positivity and
+  mechanism, L2 Neumann hypothesis and patch positivity) are recomputed
+  on the runner's own blocks, so T1-b is runner-verified rather than
+  citation-only. The Cauchy-uniqueness fact L3 remains cited from the
+  lemma; its continuity-on-R_{>0} hypothesis is part of the declared
+  readout-identification bridge premise (the Boundary, T1-d).
+
+==============================================================================
+PART 9: T1-D READOUT-INDEPENDENCE GUARDRAIL
+==============================================================================
+  [PASS] parent cites the T1-d determinant-readout independence no-go
+  [PASS] parent still declares T1-d as a Boundary, not an axiom-derived theorem
+  [PASS] companion no-go states the determinant-only quotient is not Record-derived
+
+==============================================================================
+SCORECARD: 40 pass, 0 fail out of 40
 ==============================================================================
 
 ----- stderr -----

@@ -1,0 +1,23 @@
+loop_slug: lensing-h025-source-packet-manifest-20260609
+mode: campaign_block
+branch: physics-loop/lensing-h025-source-packet-manifest-20260609
+base: origin/main
+base_commit: 1738752f7
+date: 2026-06-09
+target_claim_id: lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07
+target_status: bounded-support
+artifact_role: runner_artifact_repair
+active_route: add source-packet manifest for H=0.25 edge-kernel companion and transitive helpers
+hard_residual: exact signed-tail asymptotic order remains open
+files_touched:
+  - docs/LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md
+  - scripts/frontier_lensing_h025_source_packet_manifest_2026_06_09.py
+  - logs/runner-cache/frontier_lensing_h025_source_packet_manifest_2026_06_09.txt
+open_imports: []
+no_go_routes:
+  - exact continuum dipole/asymptotic theorem remains out of scope
+checks:
+  - python3 scripts/frontier_lensing_h025_source_packet_manifest_2026_06_09.py: TOTAL PASS=5 FAIL=0
+  - python3 scripts/cached_runner_output.py scripts/frontier_lensing_h025_source_packet_manifest_2026_06_09.py: status ok
+pr_status: pending
+next_exact_action: create PR for reviewer extraction and independent audit recheck; do not edit docs/audit

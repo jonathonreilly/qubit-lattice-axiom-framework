@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/gate_b_source_packet_manifest_2026_06_09.py
+runner_sha256: d0daef60d99f93f3ee6658e850dccec6472c1caf6a1fd20682856bce6fa855b9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+GATE B SOURCE-PACKET MANIFEST GATE
+========================================================================
+[PASS] note declares open_gate source-index claim type
+[PASS] row-local source-packet manifest section is present
+[PASS] GB-S1 discloses valley-linear source/action as supplied only
+[PASS] GB-S2 discloses propagation/readout semantics as supplied only
+[PASS] GB-S3 discloses generated-connectivity rule as supplied only
+[PASS] manifest preserves no-new-axiom and no-clean-theorem boundary
+[PASS] note blocks solved/physical-gravity overclaims
+
+SUMMARY: PASS=7 FAIL=0
+runner_check_breakdown = {A: 7, B: 0, C: 0, D: 0, total_pass: 7}
+VERDICT: the Gate B row exposes the supplied source packet as row-local manifest data and does not promote it to an axiom, primitive, retained premise, physical-gravity bridge, or clean Gate B dynamics theorem.
+
+----- stderr -----
+

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/flavor_record_readout_form_not_weight_2026_06_02.py
+runner_sha256: ee34a075b3fd68c1eebe6dace76fdc5c5311c7fa535ade7873fe3e850f048dac
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
 [PASS] additive record readout selects log form once multiplicative Z is supplied
 [PASS] genuine log|det H| counts the doublet with multiplicity two
        log|det|=0.386622
@@ -6,7 +14,19 @@
 [PASS] form and weight are independent gates
        log form does not choose dimension count versus block count
 [PASS] pre-record normalized and post-record additive ledgers can coexist
+[PASS] downstream occupancy atom: downstream occupancy theorem is ledger-registered as a bounded_theorem source
+       koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09: claim_type=bounded_theorem, note_path=docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md
+[PASS] downstream occupancy atom: Record axiom declines weighting and occupancy supply
+       checked live Minimal Axioms text
+[PASS] downstream occupancy atom: occupancy note records independence without adopting the premise
+[PASS] downstream occupancy atom: sector and orbit occupancy weights differ by exactly two
+       sector=2*pi/g, orbit=pi/g
+[PASS] downstream occupancy atom: orientation maps sector occupancy to r=1 and orbit occupancy to r=1/2
+       sector=1, orbit=1/2
 
-SCORECARD PASS=5 FAIL=0
+SCORECARD PASS=10 FAIL=0
 FINDING: Record readout supports additive/log form after Z is supplied, but it does not select the Koide sector weight.
 Genuine log|det| counts multiplicity 1:2; r=1/2 needs the separate block-count functional.
+DOWNSTREAM: the shared residual is the explicit occupancy/slot-degree atom; Record still supplies form, not weight.
+
+----- stderr -----

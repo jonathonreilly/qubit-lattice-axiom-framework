@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_purity_non_reduction_past_hypothesis_2026_06_09.py
+runner_sha256: 5e422402011a7c8ba919ae2cfe17f02e463703e30d3ff99c10c4c75f8883dc87
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+=== order parameter zero and invariant-density uniqueness ===
+[PASS] P(I3/3) = 0 exactly (fully color-blind)
+[PASS] P(polarized) > 0 (purity above the floor)
+[PASS] HW twirl of a polarized density = I3/3 exactly (invariant density unique)
+[PASS] HW twirl of a generic (oriented) density = I3/3 exactly
+[PASS] only the twirl-fixed density is I3/3 (P=0 iff rho=I3/3)
+
+=== purity is orientation-invariant ===
+[PASS] P(U rho U^dag) = P(rho) for every orientation (spectral function)
+[PASS] retiring orientation leaves the purity residual intact (P stays > 0)
+
+=== global entropy does not fix color purity ===
+[PASS] S(I3/3) = log 3 (maximal qutrit marginal entropy)
+[PASS] globally PURE singlet: S_global = 0
+[PASS] singlet marginal rho_A = I3/3 (P = 0)
+[PASS] separable realization: marginal rho_A = I3/3 (P = 0)
+[PASS] maximally mixed two-carrier realization: S_global = log 9
+[PASS] P=0 realized at both entropy poles => global entropy does not fix P
+
+=== purity zero does not entail neutrality ===
+[PASS] singlet rho_A = I3/3 (P = 0)
+[PASS] singlet INVARIANT under g (x) g* (color-neutral)
+[PASS] two-fundamental |F> is globally PURE
+[PASS] two-fundamental marginal rho_A = I3/3 (P = 0)
+[PASS] two-fundamental NOT invariant under diagonal g (x) g (NOT a singlet)
+[PASS] purity is STRICTLY WEAKER than global neutrality (converse fails)
+
+=== reduction assembly ===
+[PASS] past hypothesis (fixes global entropy) does NOT pin the purity P
+[PASS] retiring orientation does not pin P (pin needs the symmetry demand)
+[PASS] no admission discharged / no count reduced (proposed reduction refuted)
+[PASS] singlet is the neutral P=0 realization; two-fundamental is the non-neutral one
+
+=== discipline and hygiene ===
+[PASS] all constructed objects are valid densities
+[PASS] booleans wired to fresh computations (no tautological self-pass)
+
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

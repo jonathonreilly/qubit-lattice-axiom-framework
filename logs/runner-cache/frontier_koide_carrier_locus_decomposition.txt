@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_carrier_locus_decomposition.py
-runner_sha256: 8d5fcb612c0c0b24047a243736fcda1019001d46f3f4ae8edbe424739feff327
+runner_sha256: 84b856d3db36cd84c143315d1b8c8c5f294a779f87c4202b6cbda15e24b4a9b9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 
@@ -14,11 +14,19 @@ C1. NO spectral hw=1 selection: staggered keeps ALL 8 corners massless; Wilson k
 [PASS] Wilson: ONLY hw=0 massless (Wilson lifts hw=1,2,3) -- Wilson zero modes = [(0, 0, 0)]
 
 ========================================================================
-C2. hw=1 singled out by S_3-INVARIANT labels (eps-parity, orbit-size) -- NO axis-anisotropy
+C2. hw=1 shell labels are S_3-invariant, but eps parity is complement-odd
 ========================================================================
 [PASS] hw shells = {0:1, 1:3, 2:3, 3:1}
 [PASS] hw=1 is UNIQUELY (eps-parity=-1, orbit-size=3) -- both S_3-invariant, NO axis chosen -- labels (eps,orbit) by hw: {0: (1, 1), 1: (-1, 3), 2: (1, 3), 3: (-1, 1)}
+[PASS] eps/Hamming parity flips under complement c: b -> 1-b (orientation datum, not complement-neutral) -- complement exchanges hw=1 and hw=2 while reversing (-1)^hw
 [PASS] => gauge_wilson_isotropy (unequal plaquette COEFFICIENTS) is the WRONG wall -- a different object
+
+========================================================================
+C2b. complement-neutral C_3 data cannot choose hw=1 over its Hodge-dual hw=2
+========================================================================
+[PASS] C_3-invariant, complement-even projectors are exactly empty, L0+L3, L1+L2, and all corners -- found sizes = [0, 2, 6, 8]
+[PASS] no complement-even C_3-invariant 3-corner projector can select only hw=1 or only hw=2 -- the neutral triplet object is the paired six-corner shell L1+L2
+[PASS] the hw=1-vs-hw=2 selector is C_3-invariant but complement-odd -- selecting one triplet rather than the other is exactly the Hodge-orientation bit
 
 ========================================================================
 L1 (statistics): native cross-site qubit ladders COMMUTE (hard-core boson, not fermion)
@@ -48,13 +56,14 @@ Lone residual: ONE Z_2 Hodge-orientation bit -- hw=1 (1-forms) vs hw=2 (2-forms)
 RESULT
 ========================================================================
 
-13/13 checks passed.
-Carrier-locus does NOT reach no-import, but the import folds into the matter Dirac operator M:
+17/17 checks passed.
+Carrier-locus does NOT reach no-import, but the main import folds into the matter Dirac operator M:
 L1 STATISTICS (hard-core boson vs fermion) + L3 RANGE (first-order vs Wilson), coupled on the SIGN
 of the cross-site hopping c_x^dag c_y = the user's R. Frontier mislabels CORRECTED: staggered keeps
-ALL 8 corners massless (no spectral hw=1 selection); hw=1 named by S_3-INVARIANT labels (no axis
-anisotropy); gauge_wilson_isotropy is the wrong wall. L2 count + L4 hw=1-naming + L3a {eps,D}=0 are
-mislabel-native. Lone residual = one Z_2 Hodge-orientation bit = sign(Pfaffian)=sign(beta),
+ALL 8 corners massless (no spectral hw=1 selection); Hamming shell labels need no axis
+anisotropy, but physical hw=1 over hw=2 consumes a complement-odd orientation bit.
+gauge_wilson_isotropy is the wrong wall. L2 count + L3a {eps,D}=0 are mislabel-native.
+Lone residual = one Z_2 Hodge-orientation bit = sign(Pfaffian)=sign(beta),
 proved directly on the doublet block; CPT C1/C2 invariance does not select that sign.
 
 ----- stderr -----

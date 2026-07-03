@@ -12,8 +12,9 @@ audit pipeline after independent review.
 This note opens the quark-mass-spectrum lane with a boundary condition,
 not a quark-mass theorem.
 
-For any three real generation coordinates `x_k`, including formal
-sqrt-mass coordinates, the `C_3` circulant/Brannen parametrization
+For any three real generation coordinates `x_k` with nonzero sum
+equivalently nonzero mean `a`, including formal sqrt-mass coordinates,
+the `C_3` circulant/Brannen parametrization
 
 ```text
 x_k = a + 2 |b| cos(delta + 2 pi k / 3)
@@ -25,6 +26,10 @@ is an algebraic coordinate system. Existing Koide algebra then gives
 Q = (sum x_k^2) / (sum x_k)^2
 |b|^2 / a^2 = (3Q - 1) / 2.
 ```
+
+The nonzero-sum caveat is load-bearing only for the displayed ratios:
+if `sum x_k = 0` then `Q` and `|b|^2/a^2` are undefined, so this open
+gate does not use such triples as comparator points.
 
 Using the packet-local central-value comparator convention below, the
 apparent Koide/Brannen amplitude ratios for the up- and down-type quark
@@ -68,6 +73,33 @@ load-bearing outside this open-gate comparator. A future quark-mass
 theorem must either derive a scheme-native framework mass definition or
 explicitly admit a scheme/scale convention.
 
+## 2026-06-12 Sector-Dial Source Firewall
+
+The algebraic `C_3`/Koide coordinate identity closes, but the
+quark-sector physics does not. This note's current value is a warning
+theorem for the lane: copying the charged-lepton BAE dial into quarks
+is not licensed.
+
+The exact residuals are:
+
+- no framework-native quark mass definition, renormalization scheme, or
+  scale is derived here;
+- no quark-sector Brannen phase, amplitude ratio, or sector dial is
+  derived here;
+- no CKM-to-mass theorem is consumed or implied here;
+- the displayed central values remain external comparators only.
+
+A retained positive quark-mass spectrum lane must first supply a
+sector-specific mass scheme/scale and quark dial theorem. Until then,
+this row is an open gate whose only durable result is the no-transfer
+discipline from charged leptons to quarks.
+
+Source-surface summary: this is an open gate and comparator-only route-pruning
+artifact. The live blocker is a sector-specific quark mass scheme/scale and
+quark dial theorem. No retained-grade proposal or status promotion is made
+here; the independent audit lane remains the only authority for effective
+status.
+
 ## Boundaries
 
 This open gate does not claim:
@@ -82,6 +114,31 @@ The durable result is the review boundary: quark-sector mass work must
 not assume the lepton BAE coefficient, and any numerical comparison must
 make the quark mass scheme explicit.
 
+## 2026-06-07 Record-Selector Sidecar Boundary
+
+The Record-selector sidecar classifies this row as a sector-specific dial
+open gate, not as an equal-letter selector result. Its repair target is:
+
+```text
+Derive sector-specific mass scheme/scale and quark-sector dial parameters; do not transfer charged-lepton BAE.
+```
+
+This sidecar boundary is now included in the restricted packet:
+
+- [`RECORD_SELECTOR_AUDIT_SIDECAR_2026-06-05.md`](RECORD_SELECTOR_AUDIT_SIDECAR_2026-06-05.md)
+- [`scripts/frontier_record_selector_audit_sidecar_2026_06_05.py`](../scripts/frontier_record_selector_audit_sidecar_2026_06_05.py)
+- [`logs/runner-cache/frontier_record_selector_audit_sidecar_2026_06_05.txt`](../logs/runner-cache/frontier_record_selector_audit_sidecar_2026_06_05.txt)
+
+Raw restricted-packet paths:
+
+- `docs/RECORD_SELECTOR_AUDIT_SIDECAR_2026-06-05.md`
+- `scripts/frontier_record_selector_audit_sidecar_2026_06_05.py`
+- `logs/runner-cache/frontier_record_selector_audit_sidecar_2026_06_05.txt`
+
+This repair keeps the row comparator-only. It does not derive a quark mass
+scheme, scale, phase, amplitude ratio, CKM-to-mass theorem, or a physical
+quark-sector dial position.
+
 ## Verification
 
 Run:
@@ -93,6 +150,6 @@ PYTHONPATH=scripts python3 scripts/frontier_quark_mass_spectrum_koide_scheme_ope
 Expected:
 
 ```text
-TOTAL: PASS=14 FAIL=0
+TOTAL: PASS=19 FAIL=0
 VERDICT: quark Koide-scheme open gate verified; quark BAE parameters and scales remain open.
 ```

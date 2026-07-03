@@ -1,0 +1,110 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_link_sym2_endpoint_projection_2026_06_05.py
+runner_sha256: acec8f89fa365b2afff2b105de79502bffc8da4ee1873fe308fa04c279ee93bb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.33
+status: ok
+----- stdout -----
+==============================================================================
+COLOR LINK SYM2 ENDPOINT PROJECTION
+exact-support projection algebra runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Swap projectors on C^2 x C^2
+------------------------------------------------------------------------------
+  [PASS] swap is involutive: S^2 = I
+  [PASS] P_sym is idempotent
+  [PASS] P_anti is idempotent
+  [PASS] P_sym + P_anti = I
+  [PASS] P_sym P_anti = 0
+  [PASS] rank P_sym = 3 (rank=3)
+  [PASS] rank P_anti = 1 (rank=1)
+  [PASS] trace P_sym = 3
+  [PASS] trace P_anti = 1
+
+------------------------------------------------------------------------------
+2. Symmetric and antisymmetric bases
+------------------------------------------------------------------------------
+  [PASS] symmetric basis has 3 columns
+  [PASS] antisymmetric basis has 1 column
+  [PASS] V^H V = I3
+  [PASS] A^H A = I1
+  [PASS] V^H A = 0
+  [PASS] P_sym V = V
+  [PASS] P_anti A = A
+  [PASS] P_sym A = 0
+
+------------------------------------------------------------------------------
+3. Embedded su(3) on Sym^2
+------------------------------------------------------------------------------
+  [PASS] eight embedded generators
+  [PASS] T1 Hermitian
+  [PASS] T1 preserves P_sym
+  [PASS] T1 kills P_anti
+  [PASS] T2 Hermitian
+  [PASS] T2 preserves P_sym
+  [PASS] T2 kills P_anti
+  [PASS] T3 Hermitian
+  [PASS] T3 preserves P_sym
+  [PASS] T3 kills P_anti
+  [PASS] T4 Hermitian
+  [PASS] T4 preserves P_sym
+  [PASS] T4 kills P_anti
+  [PASS] T5 Hermitian
+  [PASS] T5 preserves P_sym
+  [PASS] T5 kills P_anti
+  [PASS] T6 Hermitian
+  [PASS] T6 preserves P_sym
+  [PASS] T6 kills P_anti
+  [PASS] T7 Hermitian
+  [PASS] T7 preserves P_sym
+  [PASS] T7 kills P_anti
+  [PASS] T8 Hermitian
+  [PASS] T8 preserves P_sym
+  [PASS] T8 kills P_anti
+  [PASS] embedded T1,T2 commutator gives i T3
+  [PASS] embedded T4,T5 commutator gives i/2(T3 + sqrt(3)T8)
+  [PASS] trace normalization on embedded symmetric block is 1/2 delta_ab
+
+------------------------------------------------------------------------------
+4. Constraint boundary
+------------------------------------------------------------------------------
+  [PASS] generic one-qubit operation fails to preserve P_sym
+  [PASS] P_sym-preserving condition is nontrivial (comm_rank=2)
+  [PASS] block su(3) action preserves P_sym
+
+------------------------------------------------------------------------------
+5. Residual ledger
+------------------------------------------------------------------------------
+  [PASS] four exact projection outputs recorded
+  [PASS] eight residuals remain recorded
+  [PASS] projection outputs do not include residuals
+  [PASS] post-record outputs do not include residuals
+  [PASS] dynamic preservation remains residual
+  [PASS] SU(3) transport law remains residual
+  [PASS] color-record readout remains residual
+
+------------------------------------------------------------------------------
+6. Note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/COLOR_LINK_SYM2_ENDPOINT_PROJECTION_2026-06-05.md)
+  [PASS] note contains marker: Claim type:** bounded_theorem
+  [PASS] note contains marker: admitted two-qubit endpoint
+  [PASS] note contains marker: This theorem does not supply the endpoint.
+  [PASS] note contains marker: Does not derive physical color.
+  [PASS] note contains marker: Does not establish a repo-wide quantum-link ontology.
+  [PASS] note contains marker: Does not select a Koide/generation dial location.
+  [PASS] forbidden wording absent: physical color closure
+  [PASS] forbidden wording absent: endpoint ontology closure
+  [PASS] forbidden wording absent: transport closure
+  [PASS] forbidden wording absent: dial selector closure
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=66 FAIL=0
+
+----- stderr -----
+

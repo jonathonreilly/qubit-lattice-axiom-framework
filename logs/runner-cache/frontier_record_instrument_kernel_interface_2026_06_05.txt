@@ -1,0 +1,88 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_instrument_kernel_interface_2026_06_05.py
+runner_sha256: 97ed0f8c1cc4710e0ca84c71fb7f46c8bb4eab92e0196d338917a9f9620ea6cb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+==============================================================================
+RECORD INSTRUMENT KERNEL INTERFACE
+bounded-support / exact conditional finite-matrix runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Supplied instrument gives a probability kernel
+------------------------------------------------------------------------------
+  [PASS] rho is Hermitian
+  [PASS] rho is positive (min_eig=0.200000)
+  [PASS] rho has trace one
+  [PASS] instrument resolves identity
+  [PASS] each effect is positive
+  [PASS] kernel entries are nonnegative ([0.8799999999999999, 0.12])
+  [PASS] kernel is normalized ([0.8799999999999999, 0.12])
+  [PASS] kernel is not a one-hot realized atom
+  [PASS] branch 0 is a density state
+  [PASS] branch 1 is a density state
+  [PASS] branch probabilities equal traces before normalization
+  [PASS] nonselective state is trace one
+  [PASS] nonselective density state is not a record atom object
+
+------------------------------------------------------------------------------
+2. Realized record atom versus predictive expectation
+------------------------------------------------------------------------------
+  [PASS] realized atom e0 is one-hot
+  [PASS] realized atom e1 is one-hot
+  [PASS] realized update for outcome 0 is integral ([3.0, 5.0])
+  [PASS] realized update for outcome 1 is integral ([2.0, 6.0])
+  [PASS] predictive expected update is fractional ([2.88, 5.12])
+  [PASS] expected update is not either realized update
+  [PASS] delta kernel collapses to realized update
+
+------------------------------------------------------------------------------
+3. Sequential instruments compose into a history kernel
+------------------------------------------------------------------------------
+  [PASS] second instrument resolves identity
+  [PASS] joint history kernel entries are nonnegative ([[0.7, 0.18], [0.12, 0.0]])
+  [PASS] joint history kernel is normalized
+  [PASS] joint marginal recovers first kernel
+  [PASS] conditional kernels normalize branchwise
+  [PASS] joint equals first kernel times conditional
+  [PASS] history atom is one-hot in product alphabet
+  [PASS] word append gives length two history labels
+
+------------------------------------------------------------------------------
+4. Coarse-graining commutes with kernels and atoms
+------------------------------------------------------------------------------
+  [PASS] three-outcome split instrument resolves identity
+  [PASS] split kernel is normalized ([0.175, 0.5249999999999999, 0.3])
+  [PASS] coarse probability push-forward matches grouped outcomes ([0.7, 0.3])
+  [PASS] coarse one-hot map sends split labels a,b to same atom
+  [PASS] coarse one-hot map sends label c to second atom
+  [PASS] coarse count update commutes for grouped label
+  [PASS] coarse count update commutes for c label
+  [PASS] split sublabels can share the same selective state
+
+------------------------------------------------------------------------------
+5. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: bounded-support
+  [PASS] note contains marker: trace_class: upstream_support
+  [PASS] note contains marker: conditional_surface_status:
+  [PASS] note contains marker: Does not derive a physical instrument
+  [PASS] note contains marker: Does not force a record-letter prior
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: instrument closure
+  [PASS] forbidden wording absent: atom/probability collapse
+  [PASS] forbidden wording absent: expectation closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=48 FAIL=0
+
+----- stderr -----
+

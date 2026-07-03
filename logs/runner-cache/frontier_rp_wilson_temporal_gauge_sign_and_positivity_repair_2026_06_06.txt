@@ -1,0 +1,81 @@
+===== runner cache v1 =====
+runner: scripts/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.py
+runner_sha256: 7cf9638e41ef5bfadb5920787fc63802e0ed25888684e10e8ebd48bc9a94767d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.54
+status: ok
+----- stdout -----
+==========================================================================================
+RP Wilson temporal-gauge bridge: SIGN REPAIR + manifestly-positive character theorem
+repairs audited_failed AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_..._2026-06-05
+==========================================================================================
+
+------------------------------------------------------------------------------------------
+Part A: the SIGN root -- reproduce the audit's negative coeff, then fix it
+------------------------------------------------------------------------------------------
+  [PASS] (A1) note-as-written exp(-S_0): Z_2 coeff c_1 = (e^-b - e^b)/2 = -sinh b < 0  [audit blocker reproduced]  --  c_1 = -0.888106
+  [PASS] (A2) FERROMAGNETIC exp(+beta Re U): Z_2 coeffs (c_0,c_1) = (cosh b, sinh b), BOTH > 0  [FIXED]  --  (c_0,c_1) = (1.337435, +0.888106)
+  [PASS] (A3) note<->runner drift resolved: the WEIGHT is exp(+beta Re Tr) i.e. S_0 := -beta Re Tr (Wilson)  --  Z = int exp(-S_W), S_W = -(beta/N) Re Tr U_p  =>  weight carries +beta Re Tr
+
+------------------------------------------------------------------------------------------
+Part B: plane-kernel positivity -- EXACT, manifestly positive, group-general
+------------------------------------------------------------------------------------------
+  [PASS] (B1) U(1): c_n = I_n(beta) by EXACT power series I_n=sum_k (b/2)^{2k+n}/(k!(n+k)!), every term > 0  --  manifestly positive; replaces the finite-grid 'exact' overclaim
+  [PASS] (B1') grid is a CROSS-CHECK only: power-series I_n == quadrature I_n to machine eps  --  max|series-grid| = 6.7e-16
+     Z_2: min c_q = +0.888106, max|Im| = 0.0e+00, Poisson match = 2.2e-16
+     Z_3: min c_q = +0.518407, max|Im| = 6.4e-17, Poisson match = 1.1e-16
+     Z_4: min c_q = +0.168717, max|Im| = 2.8e-17, Poisson match = 1.1e-16
+     Z_5: min c_q = +0.095453, max|Im| = 5.5e-17, Poisson match = 1.1e-16
+  [PASS] (B2) Z_N: exact finite-Haar Fourier coeffs all > 0, = sum_{m==q (N)} I_m(beta) (Poisson)
+  [PASS] (B3) SU(2): exact character coeffs a_n of exp(beta chi_{1/2}) all > 0 (Weyl integration)  --  a_0..a_6 = [1.35601, 0.98492, 0.3746, 0.09686, 0.01897, 0.00299, 0.00039]
+  [PASS] (B3') SU(2): chi_F^k tensor-power multiplicities are NONNEGATIVE INTEGERS (ballot numbers)
+  [PASS] (B3'') SU(2): a_n EXACTLY reconstructed from nonneg tensor multiplicities -> positivity is a THEOREM  --  UPGRADE: was a numeric SU(2) MC sample; now exact
+  [PASS] (B4) SU(3): Haar-projected coeffs <exp(+beta ReTrU), chi_R> >= 0 for R in {1,3,3bar,8,6,6bar,10}  --  1:+1.1974, 3:+0.5667, 3bar:+0.5667, 8:+0.2351, 6:+0.1343, 6bar:+0.1343, 10:+0.0213
+  [PASS] (B5) abstract lemma exhibit: chi_3*chi_3 = chi_6 + chi_3bar (nonnegative fusion N^t_{rs} >= 0)  --  product of nonneg-coeff class fns has nonneg coeffs => exp(beta Re chi_F) nonneg (general)
+
+------------------------------------------------------------------------------------------
+Part C: integrated three-factor RP Gram is PSD with the CORRECT (ferro) sign
+------------------------------------------------------------------------------------------
+     Z_2 (beta=1.0, ferro): min_eig = -2.938e-16  PSD=True
+     Z_3 (beta=1.0, ferro): min_eig = +5.299e-02  PSD=True
+     Z_4 (beta=1.0, ferro): min_eig = +7.450e-02  PSD=True
+     Z_5 (beta=1.0, ferro): min_eig = +5.971e-02  PSD=True
+  [PASS] (C1) ferromagnetic integrated Gram is Hermitian PSD across Z_N (N in 2..5), beta in {0.3,1,2.5}
+
+------------------------------------------------------------------------------------------
+Part D: manifest factorization  G = W diag(kappa) W^dag,  kappa >= 0
+------------------------------------------------------------------------------------------
+  [PASS] (D1) ferromagnetic plane-kernel spectrum kappa >= 0 (positive Gram kernel)  --  min kappa = +0.260445
+  [PASS] (D2) G = W diag(kappa) W^dag exactly (OS Gram = A^dag A), kappa >= 0  --  ||G - W diag(kappa) W^dag|| = 1.8e-13
+  [PASS] (D3) hence integrated three-factor Gram is PSD (manifest)
+
+------------------------------------------------------------------------------------------
+Part E: TEETH -- the note-as-written ANTIferro sign genuinely BREAKS positivity
+------------------------------------------------------------------------------------------
+     Z_2: antiferro plane-kernel min_eig = -1.7762, integrated Gram min_eig = -3.0788
+     Z_3: antiferro plane-kernel min_eig = -1.0425, integrated Gram min_eig = -0.6393
+     Z_4: antiferro plane-kernel min_eig = -1.7762, integrated Gram min_eig = -0.7088
+     Z_5: antiferro plane-kernel min_eig = -2.1588, integrated Gram min_eig = -0.6759
+  [PASS] (E1) note-as-written exp(-beta Re) plane kernel AND integrated Gram are NON-PSD (sign is load-bearing)
+  [PASS] (E2) control: dropping Theta's conjugation (linear Theta) is also NON-PSD (correct antilinear OS reflection needed)  --  min_eig (wrong reflection) = -0.4823
+
+------------------------------------------------------------------------------------------
+Summary
+------------------------------------------------------------------------------------------
+  REPAIRED:
+   A  sign root: weight is exp(+beta Re Tr) (S_0 := -beta Re Tr); note<->runner consistent
+   B  plane-kernel positivity EXACT & general (tensor-power/fusion multiplicities >= 0):
+      Z_2 (cosh,sinh)>0; Z_N exact Fourier = sum I_m>0; U(1) I_n by power series>0;
+      SU(2) exact char coeffs = nonneg tensor mult (UPGRADE from MC); SU(3) coeffs >= 0
+   C  ferromagnetic integrated Gram PSD across Z_N x beta
+   D  manifest G = W diag(kappa) W^dag, kappa >= 0
+   E  TEETH: antiferro (note-as-written) sign breaks PSD; dropped-conjugation breaks PSD
+  Literature (Osterwalder-Seiler 1978; Montvay-Munster 1994; Bessel/Peter-Weyl): comparator only.
+
+==========================================================================================
+TOTAL: 17 PASS / 0 FAIL
+==========================================================================================
+
+----- stderr -----
+

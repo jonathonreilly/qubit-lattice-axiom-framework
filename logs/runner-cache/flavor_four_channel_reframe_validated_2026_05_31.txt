@@ -1,27 +1,27 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_four_channel_reframe_validated_2026_05_31.py
-runner_sha256: a2193bb28ab31a39d2cc4b9186c46d53943a96454c9b3a5a282ed5d28c75a9e9
+runner_sha256: 3cdb1148fc7a0c1b34d200c962f4e0d81d64d237066be5646ebc3eef9294bdd4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
-[PASS] V1 three channels INDEPENDENT: Jacobian det != 0 (not three points on one curve)
-       det=0.667; scale & delta are separate axes from the ratio
-[PASS] V2 gauge-universal G=gI is PURELY singlet (b=0) -> gauge reads ONLY the scale channel
-       U(1)_em/U(1)_Y commute with circulants (Probe14): generation-blind = singlet-only
-[PASS] V3 CP channel delta is Q-orthogonal (dQ/ddelta=0): Q a separate channel from CP
-       Q(0.3)=0.6667=Q(1.3) -> ratio and CP are different channels
-[PASS] CAVEAT2 floor is convention-locked: dispersion(r=0)=1/3 vs Brannen(r=0)=1
-       channel STRUCTURE convention-independent; specific Q-numbers are not
+[PASS] V1 supplied C3 coordinates are locally independent at the tested point
+       det=0.667
+[PASS] V2 supplied scalar G=gI has zero C/C^2 doublet coefficient
+       This is a singlet algebra check, not a physical gauge theorem.
+[PASS] V3 dispersion Q is delta-independent in the supplied model
+       Q(0.3)=0.6667=Q(1.3)
+[PASS] V4 displayed Q floors are readout-convention dependent
+       dispersion(r=0)=1/3, Brannen(r=0)=1
+[PASS] source guards keep physical channel, eta, and complete-account bridges open
 
-SCORECARD PASS=4 FAIL=0
-CAPSTONE VERDICT: the four-channel reframe is REAL STRUCTURE (3 independent continuous channels of H:
-scale/ratio/CP, + 1 topological datum: asymmetry-eta at d=3). It DISSOLVES the selection problem the
-campaign was stuck on: the three special Q's are three channels, not rival answers; 'no native
-principle selects Q=2/3 over Q=1' is correct-and-expected (different channels). r=1/2 is the empirical
-mass-RATIO input read by the ratio channel, not a gauge/scale-sector forceable. Caveats: asymmetry is
-topological (3+1, not 4 continuous); specific Q-values are readout-convention-locked, structure is not.
+SCORECARD PASS=5 FAIL=0
+VERDICT: bounded support for finite supplied C3 coordinate algebra only.
+The runner checks local coordinate independence, a scalar singlet fact,
+delta-blindness of dispersion Q, and readout-convention dependence.
+It does not derive the physical carrier, channel identifications,
+eta=2/9, or a complete charged-lepton flavor account.
 
 ----- stderr -----
 

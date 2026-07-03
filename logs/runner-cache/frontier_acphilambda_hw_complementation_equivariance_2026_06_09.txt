@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/frontier_acphilambda_hw_complementation_equivariance_2026_06_09.py
+runner_sha256: 06322d5605e03f0945ff1caa5176e73251e9704370f0d3aeb502904baf1b43f9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.71
+status: ok
+----- stdout -----
+========================================================================================
+AC_PHI_LAMBDA HW-COMPLEMENTATION EQUIVARIANCE SUPPORT
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Hamming complementation
+----------------------------------------------------------------------------------------
+  [PASS] b -> 1-b maps hw=1 bijectively to hw=2 -- hw1=[(0, 0, 1), (0, 1, 0), (1, 0, 0)], hw2=[(0, 1, 1), (1, 0, 1), (1, 1, 0)]
+  [PASS] complementation is involutive
+  [PASS] complementation commutes with the C3[111] rotation on every corner
+
+----------------------------------------------------------------------------------------
+C3 orbit structure
+----------------------------------------------------------------------------------------
+  [PASS] C3 acts as a free three-cycle on hw=1
+  [PASS] C3 acts as a free three-cycle on hw=2
+
+----------------------------------------------------------------------------------------
+Fixed-locus density and circulant symmetric readout
+----------------------------------------------------------------------------------------
+  [PASS] L_3(1,2) fixed-locus density reduces exactly to 2/9
+  [PASS] circulant determinant identity e3 = a^3 - 3 a B^2 + 2 B^3 cos(3 delta) is exact
+  [PASS] elementary symmetric polynomials are invariant under cyclic slot relabeling
+
+----------------------------------------------------------------------------------------
+Rigidity R-A: classification of all 48 coordinate-permutation/bit-flip relabelings
+----------------------------------------------------------------------------------------
+  [PASS] 48 coordinate-permutation/bit-flip cube relabelings classify as 3+3+3+3 grading-preserving + 36 grading-breaking -- {'frame': 3, 'orientation': 3, 'swap': 3, 'swap_orientation': 3, 'nonexistent': 36}
+  [PASS] source note scopes R-A to the order-48 coordinate-permutation/bit-flip universe
+  [PASS] every grading-preserving relabeling is frame, orientation, or complementation-composed -- the compensated classes exhaust the grading-preserving subgroup (order 12)
+  [PASS] elementary symmetric readouts are invariant under the full S3 (orientation included)
+
+----------------------------------------------------------------------------------------
+Rigidity R-B: readout decomposition is exhaustive (Noether degree bound)
+----------------------------------------------------------------------------------------
+  [PASS] u and v are C3-invariant and exchanged by a transposition (orientation-odd pair)
+  [PASS] degree 1-3 C3-invariant dimensions are 1, 2, 4 vs symmetric 1, 2, 3 (one odd line, degree 3) -- dims (deg, C3, S3) = [(1, 1, 1), (2, 2, 2), (3, 4, 3)]; Noether bound |C3| = 3 => the invariant ring is generated in degree <= 3
+  [PASS] (u - v)(slots) = -6 sqrt(3) B^3 sin(3 delta) exactly (orientation-odd = sin class) -- (u - v)(slots) = -6*sqrt(3)*B2**3*sin(3*delta2)
+  [PASS] the square of the orientation-odd generator is S3-symmetric
+
+----------------------------------------------------------------------------------------
+Rigidity R-C: per-triplet invariant profiles are equal elementwise
+----------------------------------------------------------------------------------------
+  [PASS] cardinality, free-cycle structure, and pairwise Hamming distances coincide -- profile = (3, True, [2, 2, 2]) for both triplets
+  [PASS] the hw label is the only distinguishing datum in this check and is exchanged by complementation -- a relative triplet weight is not derivable from equal profiles; it would be a new dimensionless import
+
+========================================================================================
+SUMMARY: PASS=18 FAIL=0
+========================================================================================
+
+----- stderr -----
+

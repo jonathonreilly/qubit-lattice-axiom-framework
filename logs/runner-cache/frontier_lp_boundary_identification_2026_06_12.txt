@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lp_boundary_identification_2026_06_12.py
+runner_sha256: 3c552971020e8471821b59642e8116f0ccb57b54c64a98d3af2a075c13f6ce66
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.99
+status: ok
+----- stdout -----
+PASS: ANCHOR reproduction: m=0 square band is eps(k)=-2t(cos kx+cos ky)
+PASS: finite-lattice wraparound/size probe: q=24 cyclic Hamiltonian carries B=2*pi/24
+PASS: gauge invariance: boundary and uniform twist spectra agree within 1.0e-11
+Building quadrature data: full GL 160/224 and LP GL 128/256.
+PASS: anti-fabrication nonzero: chi_full(mu=0.0, T=0.3) is nonzero
+PASS: T=50 kill: finite-field chi at mu=0.0 is below 1.0e-04
+PASS: T=50 kill: LP chi at mu=0.0 is below 1.0e-04
+PASS: f' sign convention: f'(0,T) is the negative Fermi slope
+PASS: f' known limit: LP chi(mu=-20.0, T=0.3) tends to zero below the band
+PASS: full boundary bracket invariant at T=0.2
+PASS: LP boundary bracket invariant at T=0.2
+PASS: full GL 160/224 doubling at T=0.2: max |delta chi| <= 1.0e-06
+PASS: LP GL 128/256 doubling at T=0.2: max |delta chi| <= 1.0e-06
+T=0.2 eps_star=-1.699267578 mu_LP=-1.693408203 |eps_star-mu_LP|=0.005859375
+PASS: full boundary bracket invariant at T=0.3
+PASS: LP boundary bracket invariant at T=0.3
+PASS: full GL 160/224 doubling at T=0.3: max |delta chi| <= 1.0e-06
+PASS: LP GL 128/256 doubling at T=0.3: max |delta chi| <= 1.0e-06
+T=0.3 eps_star=-1.737353516 mu_LP=-1.731494141 |eps_star-mu_LP|=0.005859375
+PASS: full boundary bracket invariant at T=0.4
+PASS: LP boundary bracket invariant at T=0.4
+PASS: full GL 160/224 doubling at T=0.4: max |delta chi| <= 1.0e-06
+PASS: LP GL 128/256 doubling at T=0.4: max |delta chi| <= 1.0e-06
+T=0.4 eps_star=-1.787158203 mu_LP=-1.782763672 |eps_star-mu_LP|=0.004394531
+Deviation table:
+  T=0.2: eps_star=-1.699267578, mu_LP=-1.693408203, abs_diff=0.005859375
+  T=0.3: eps_star=-1.737353516, mu_LP=-1.731494141, abs_diff=0.005859375
+  T=0.4: eps_star=-1.787158203, mu_LP=-1.782763672, abs_diff=0.004394531
+PASS: comparison datum: full-field boundary tracks LP sign change within 2.00e-02
+Datum: finite-field boundary tracking accepted at the requested tolerance.
+Scope caveat: m=0 square lattice; full boundary uses finite B=2*pi/24, whereas LP is the B->0 band-curvature candidate.
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

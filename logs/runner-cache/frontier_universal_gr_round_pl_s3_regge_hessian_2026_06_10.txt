@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_round_pl_s3_regge_hessian_2026_06_10.py
+runner_sha256: b17716612a99b8477550e07913bacd6e56c2a1235a7fcdc93146f1e9c213e252
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.31
+status: ok
+----- stdout -----
+THE REGGE HESSIAN ON THE ROUND PL S^3 (= boundary of the 4-simplex)
+================================================================================================
+[PASS] R1 (the round background): every edge of the regular boundary-of-the-4-simplex has deficit 2pi - 3 arccos(1/3) > 0 (the PL round S^3, positive curvature, exact closed form), and the single symmetric Lambda* = delta/(2 dV/dl) makes the Lambda-Regge EOM residual vanish on every edge -- the closed positive-curvature PL analogue of a constant-curvature Einstein spatial slice
+       delta = 2.590307055157 (= 2pi - 3 arccos(1/3) = 2.590307055157); Lambda* = 7.326494736228; max|EOM| = 0.0e+00
+[PASS] R2 (exactness gates at the CURVED background): the assembled d(deficit)/d(ell) matrix is SYMMETRIC to machine precision (the complex-level Schlaefli/Regge identity holds at the curved background, so H = d(delta)/d(ell) - 2 Lambda* d2V is the true Hessian of S_Lambda), and the numerical second difference of the ACTUAL action matches eps^T H eps end-to-end
+       max|J - J^T| = 0.0e+00; finite-diff = 252.47530289 vs eps^T H eps = 252.47524742
+[PASS] R3 (multiplicity-free CANONICAL channels): H commutes with the full S_5 vertex-permutation action (machine); the edge representation decomposes 10 = 1 (+) 4 (+) 5 with EACH IRREP APPEARING ONCE, so by Schur's lemma H is scalar on each channel and the split is UNIQUE -- the scalar-route frame ambiguity ('which valid frame on the degenerate complement') is absent for this supplied round geometric route: there is no degenerate complement to choose a frame on
+       max|[H, P_g]| = 0.0e+00; H = h1 P1 + h4 P4 + h5 P5 exactly (residual 8.9e-16)
+[PASS] R4 (the channel spectrum, REPORTED AS MEASURED): the three canonical channel eigenvalues of the Lambda-Regge Hessian at the round point. Continuum-S^3 channel reading (qualitative context only): the uniform channel is the conformal/breathing direction, the standard(4) channel is the discrete l=1/conformal-Killing-type direction, the 5-channel is the discrete l=2-type (physical) direction. Signs are the finding; the coarse 5-vertex complex is not expected to reproduce continuum eigenvalues numerically.
+       h_uniform(1) = -5.1806141103; h_standard(4) = +7.9693545568; h_five(5) = +9.9643614380
+[PASS] R5 (isometry control): the embedded round complex has all ten edges equal (regular 4-simplex), and SO(4) rotations change no edge length (machine) -- the configuration's exact invariances are isometries only (the complete graph is rigid), so R3's canonical channel structure is a property of the Hessian's symmetry decomposition, not residual gauge freedom
+       edge-length spread = 0.0e+00; rotation length change = 3.3e-16
+[PASS] R6 (the gate connection, honest scope): the uniform channel corresponds to the gate's canonical scalar projector; the {4, 5} channels are the analogue of its frame-ambiguous complement -- here multiplicity-free, hence canonically split with scalar weights (R3). This supplies the geometric route's canonical channel structure ON THE GATE'S OWN SPATIAL ATLAS at the round point. NOT claimed: the 3+1 prism/tick extension on S^3 x Z_tau (the gate's full kinematic scaffold), off-round backgrounds, any continuum-limit statement (the atlas refinement obstruction of the PL S^3 rows), or any retained status.
+       scalar projector max error = 0.0e+00; complement rank = 9; 3+1 tick extension + off-round + refinement named open
+
+TOTAL: PASS=6 FAIL=0
+VERDICT: on the gate's own spatial atlas -- the PL round S^3 = the regular boundary of the
+4-simplex -- the supplied geometric (Lambda-Regge) route has: an exact critical background (deficit
+2pi - 3 arccos(1/3) per edge, one symmetric Lambda*), a true Hessian via the curved-background Regge
+identity (symmetric, end-to-end verified), and a MULTIPLICITY-FREE canonical channel
+decomposition 10 = 1 (+) 4 (+) 5 under S_5 -- by Schur's lemma the channel split is UNIQUE,
+so the scalar-route frame-choice obstruction does not arise for this supplied round geometric
+route at the gate's spatial atlas. The three channel eigenvalues are computed and
+reported with their qualitative continuum reading. Open and named: the 3+1 prism/tick
+extension, off-round backgrounds, the atlas-refinement/continuum limit. No PDG/fitted value.
+
+----- stderr -----
+

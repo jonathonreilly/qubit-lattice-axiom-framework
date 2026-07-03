@@ -3,6 +3,8 @@
 **Date:** 2026-04-15
 **Status:** bounded support note
 **Primary runner:** `scripts/frontier_yt_bridge_uv_class_uniqueness.py`
+(`AUDIT_TIMEOUT_SEC = 600`; the existing SHA-pinned cache completes in
+about 37 s with `FINAL TALLY: 9 PASS / 0 FAIL`)
 
 ## Role
 
@@ -111,6 +113,16 @@ family, conditioned on the upstream support hypotheses.
 This addendum is graph-bookkeeping only. It does not change the
 conditional status, does not promote the row, and does not modify the
 scan survivor counts or the intrinsic-class identification.
+
+## Audit runner budget repair
+
+The runner is a broad constructive-family scan. The current SHA-pinned
+cache completed successfully under the audit cache budget, but the source
+runner did not declare that budget, so default 120-second audit execution
+can record a timeout even though the computation is complete and
+reproducible. The runner now declares `AUDIT_TIMEOUT_SEC = 600`; this is an
+execution-budget declaration only and does not change the scan, thresholds,
+claim scope, or survivor counts.
 
 ## Audit dependency repair links
 

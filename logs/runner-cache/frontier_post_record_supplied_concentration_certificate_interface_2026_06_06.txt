@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_supplied_concentration_certificate_interface_2026_06_06.py
+runner_sha256: aa336be6aab6de2221428e05899976fb929b7014bcb1a5ddb982b05235cf4218
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md contains: actual_current_surface_status: exact-support
+PASS docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md contains: supplied finite law on post-record words
+PASS docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md contains: verified law-scoped concentration certificate
+PASS docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md contains: does not have a concentration certificate
+PASS docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md contains: Does not select or force a generation/Koide dial location
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md exists
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: canonical finite-alphabet algebra
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: realized counts stay integral while ensemble expectations can be fractional
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: Does not derive probabilities
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md exists
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: finite histories O*
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: probability/source/instrument/dynamics rows
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: Does not select a Koide/generation dial location.
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md exists
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: probability laws, Born typicality, and transition rates
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: post-record information dynamics
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: dial selection
+
+------------------------------------------------------------------------------
+Finite law and count-pushforward checks
+------------------------------------------------------------------------------
+PASS iid law normalizes
+PASS correlated law normalizes
+PASS iid count pushforward normalizes
+PASS correlated count pushforward normalizes
+PASS expected counts match :: (Fraction(2, 1), Fraction(2, 1))
+PASS one-time marginal 0 matches
+PASS one-time marginal 1 matches
+PASS one-time marginal 2 matches
+PASS one-time marginal 3 matches
+PASS iid word/count event probabilities agree :: 1/8
+PASS correlated word/count event probabilities agree :: 1
+PASS iid count distribution is exact binomial pushforward
+
+------------------------------------------------------------------------------
+Certificate checks
+------------------------------------------------------------------------------
+PASS iid certificate valid under its own law :: exact=1/8, epsilon=1/4
+PASS iid exact certificate valid at equality :: exact=1/8, epsilon=1/8
+PASS iid certificate rejected under correlated law scope :: exact=1, epsilon=1/4
+PASS iid observed extreme p-value bounded by certificate :: 1/8
+PASS correlated observed extreme p-value not bounded by iid certificate :: 1
+PASS same observed word has law-dependent p-values :: 1/8 vs 1
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS expectation-only certificate accepted flag is false
+PASS Record-derived probability-law flag is false
+PASS Record-derived concentration flag is false
+PASS Record-derived p-value flag is false
+PASS Record-derived kernel flag is false
+PASS Record-derived clock/rate flag is false
+PASS Record-derived Hamiltonian flag is false
+PASS audit verdict applied flag is false
+PASS generation/Koide dial selected flag is false
+
+SUMMARY: PASS=45 FAIL=0
+SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE=TRUE
+LAW_SCOPE_REQUIRED=TRUE
+EXPECTATION_ONLY_CERTIFICATE_ACCEPTED=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

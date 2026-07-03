@@ -5,12 +5,12 @@
 
 ## Artifact Chain
 
-- [`scripts/causal_source_placement_robustness.py`](/Users/jonreilly/Projects/Physics/scripts/causal_source_placement_robustness.py)
-- [`logs/2026-04-06-causal-source-placement-robustness.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-causal-source-placement-robustness.txt)
-- retained causal-field context:
-  - [`archive_unlanded/causal-field-stale-runners-2026-04-30/CAUSAL_PROPAGATING_FIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/causal-field-stale-runners-2026-04-30/CAUSAL_PROPAGATING_FIELD_NOTE.md)
-  - [`docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md)
-  - [`docs/CAUSAL_FIELD_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/CAUSAL_FIELD_PORTABILITY_NOTE.md)
+- [`scripts/causal_source_placement_robustness.py`](../scripts/causal_source_placement_robustness.py)
+- [`logs/2026-04-06-causal-source-placement-robustness.txt`](../logs/2026-04-06-causal-source-placement-robustness.txt)
+- live causal-field finite-replay context:
+  - [`CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)
+  - [`docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md`](CAUSAL_FIELD_RECONCILIATION_NOTE.md)
+  - [`docs/CAUSAL_FIELD_PORTABILITY_NOTE.md`](CAUSAL_FIELD_PORTABILITY_NOTE.md)
 
 ## Question
 

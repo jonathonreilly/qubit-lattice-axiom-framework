@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gbare_same_1pi_admitted_residue_repair.py
-runner_sha256: 9e3713bf98c895372701c79484f68fd6f6f78393e1e9434f4a48db9165f43d56
+runner_sha256: 692cd81b90ccd987ab83400c7314e0d4ee1f05fe58b33b48f2b5bddde105b8bf
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -13,9 +13,20 @@ Runner: scripts/frontier_gbare_same_1pi_admitted_residue_repair.py
 ========================================================================================
 PART 0: SOURCE FIREWALL
 ========================================================================================
+  [PASS] source note contains boundary phrase: **Claim type:** bounded_theorem
   [PASS] source note contains boundary phrase: conditional-use firewall
   [PASS] source note contains boundary phrase: conditional Path-2 support theorem
+  [PASS] source note contains boundary phrase: actual-surface scope lock
+  [PASS] source note contains boundary phrase: not an unconditional pinning theorem
   [PASS] source note contains boundary phrase: H_unit-residue admission
+  [PASS] source note contains boundary phrase: residue-normalization obstruction
+  [PASS] source note contains boundary phrase: residue-normalization degree of freedom
+  [PASS] source note contains boundary phrase: free multiplier family `R(g_bare)=g_bare^2`
+  [PASS] source note contains boundary phrase: R(g_bare)
+  [PASS] source note contains boundary phrase: Downstream firewall
+  [PASS] source note contains boundary phrase: They may not cite it as an actual-surface theorem deriving `g_bare = 1`
+  [PASS] source note contains boundary phrase: present packet cannot derive `g_bare = 1`
+  [PASS] source note contains boundary phrase: not an actual-surface pinning theorem
   [PASS] source note contains boundary phrase: This note does not derive the complete same-projected 1PI exhaustion theorem
   [PASS] source note contains boundary phrase: The `g_bare = 1` closure is **conditional on the H_unit-residue
   [PASS] source note contains boundary phrase: does not prove the missing same-projected 1PI exhaustion bridge
@@ -25,6 +36,8 @@ PART 0: SOURCE FIREWALL
   [PASS] source note excludes overclaim phrase: cannot represent different quantities
   [PASS] source note excludes overclaim phrase: H_unit-residue is the complete same-projected 1PI
   [PASS] source note excludes overclaim phrase: promoted to retained
+  [PASS] source note excludes overclaim phrase: R(g_bare) is fixed by D17
+  [PASS] source note excludes overclaim phrase: This packet proves an actual-surface theorem deriving `g_bare = 1`
   [PASS] runner source excludes non-load-bearing phrase: observed
   [PASS] runner source excludes non-load-bearing phrase: Standard Model top mass
   [PASS] runner source excludes non-load-bearing phrase: Planck-surface transport
@@ -44,9 +57,26 @@ PART 1: EXACT COEFFICIENT ALGEBRA
   [PASS] sample g_bare=7/11 would require F^2 != 1/6  (required F^2=49/726)
 
 ========================================================================================
+PART 2: RESIDUE-NORMALIZATION OBSTRUCTION
+========================================================================================
+  [PASS] source note states D17 fixes direction, not scalar residue multiplier
+  [PASS] source note identifies R(g_bare)=1 as the extra bridge
+  [PASS] free multiplier family R(g)=g^2 obeys canonical R(1)=1
+  [PASS] R(g)=g^2 makes same-direction Rep-B_R equal Rep A at g=1/2  (R=1/4, B_R=1/24, A=1/24)
+  [PASS] R(g)=g^2 makes same-direction Rep-B_R equal Rep A at g=1  (R=1, B_R=1/6, A=1/6)
+  [PASS] R(g)=g^2 makes same-direction Rep-B_R equal Rep A at g=2  (R=4, B_R=2/3, A=2/3)
+  [PASS] R(g)=g^2 makes same-direction Rep-B_R equal Rep A at g=3  (R=9, B_R=3/2, A=3/2)
+  [PASS] R(g)=g^2 makes same-direction Rep-B_R equal Rep A at g=7/11  (R=49/121, B_R=49/726, A=49/726)
+  [PASS] constant R(g)=1 equality holds iff g=1 for sample g=1/2  (A=1/24, B_admitted=1/6)
+  [PASS] constant R(g)=1 equality holds iff g=1 for sample g=1  (A=1/6, B_admitted=1/6)
+  [PASS] constant R(g)=1 equality holds iff g=1 for sample g=2  (A=2/3, B_admitted=1/6)
+  [PASS] constant R(g)=1 equality holds iff g=1 for sample g=3  (A=3/2, B_admitted=1/6)
+  [PASS] constant R(g)=1 equality holds iff g=1 for sample g=7/11  (A=49/726, B_admitted=1/6)
+
+========================================================================================
 SUMMARY
 ========================================================================================
-PASS=25 FAIL=0
+PASS=51 FAIL=0
 RESULT: PASS
 
 ----- stderr -----

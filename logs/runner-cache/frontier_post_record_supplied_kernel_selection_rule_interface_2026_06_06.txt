@@ -1,0 +1,84 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.py
+runner_sha256: 992b979094ffcfef97fa4453f3a433ef539841d900c9e364d7b648cfa87eeb05
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md contains: supplied finite candidate family plus supplied selection rule
+PASS docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md contains: The rule is supplied
+PASS docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md contains: stable setting is not
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md exists
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md contains: Directed certificates do not select a production kernel
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md contains: kernel remains a supplied bridge input
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md contains: same directed certificate data can admit distinct candidate kernels
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md exists
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md contains: supplied finite law plus supplied orientation bridge
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md contains: The certificate is scoped to those inputs.
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md contains: examples do not derive an arrow, clock, kernel, or selected dial
+
+------------------------------------------------------------------------------
+Supplied selection-rule checks
+------------------------------------------------------------------------------
+PASS source normalizes
+PASS candidate family kernels are row-stochastic
+PASS candidate laws differ :: k3={('A', 'A'): Fraction(1, 4), ('A', 'B'): Fraction(1, 4), ('B', 'A'): Fraction(0, 1), ('B', 'B'): Fraction(1, 2)} k4={('A', 'A'): Fraction(1, 4), ('A', 'B'): Fraction(1, 4), ('B', 'A'): Fraction(1, 2), ('B', 'B'): Fraction(0, 1)}
+PASS k4 exactly matches supplied informative target
+PASS k3 has positive supplied-rule score :: 1/2
+PASS supplied selection rule gives unique minimum :: {'k3': Fraction(1, 2), 'k4': Fraction(0, 1)}
+PASS selected candidate is inside supplied candidate family
+PASS selection rule score uses exact rational arithmetic :: {'k3': Fraction(1, 2), 'k4': Fraction(0, 1)}
+
+------------------------------------------------------------------------------
+Underselection and missing-rule checks
+------------------------------------------------------------------------------
+PASS endpoint-only rule ties the two candidates :: {'k3': Fraction(0, 1), 'k4': Fraction(0, 1)}
+PASS missing selection rule is blocked
+PASS wrong selection-rule scope is blocked
+PASS missing orientation is blocked
+PASS zero-weight rule is blocked
+
+------------------------------------------------------------------------------
+Statistic-vector checks
+------------------------------------------------------------------------------
+PASS endpoint_ab value is exact :: {'endpoint_ab': Fraction(1, 4), 'endpoint_ba': Fraction(1, 2), 'second_is_b': Fraction(1, 4), 'signed_ab_ba': Fraction(-1, 4)}
+PASS endpoint_ba value is exact :: {'endpoint_ab': Fraction(1, 4), 'endpoint_ba': Fraction(1, 2), 'second_is_b': Fraction(1, 4), 'signed_ab_ba': Fraction(-1, 4)}
+PASS second_is_b value is exact :: {'endpoint_ab': Fraction(1, 4), 'endpoint_ba': Fraction(1, 2), 'second_is_b': Fraction(1, 4), 'signed_ab_ba': Fraction(-1, 4)}
+PASS signed_ab_ba value is exact :: {'endpoint_ab': Fraction(1, 4), 'endpoint_ba': Fraction(1, 2), 'second_is_b': Fraction(1, 4), 'signed_ab_ba': Fraction(-1, 4)}
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS audit data written flag is false
+PASS audit verdict applied flag is false
+PASS promoted/retained claim flag is false
+PASS selection rule derived from Record flag is false
+PASS candidate family derived from Record flag is false
+PASS kernel selected without supplied rule flag is false
+PASS Record-derived physical arrow flag is false
+PASS Born law derived from Record flag is false
+PASS generation/Koide dial selected flag is false
+PASS stable setting selects dial flag is false
+
+SUMMARY: PASS=39 FAIL=0
+SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE=TRUE
+SUPPLIED_RULE_UNIQUE_MINIMUM=TRUE
+WEAK_RULE_UNDERSELECTS_KERNEL=TRUE
+SELECTION_RULE_DERIVED_FROM_RECORD=FALSE
+CANDIDATE_FAMILY_DERIVED_FROM_RECORD=FALSE
+PRODUCTION_KERNEL_SELECTED_WITHOUT_RULE=FALSE
+PHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE
+BORN_LAW_DERIVED_FROM_RECORD=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+STABLE_SETTING_SELECTS_DIAL=FALSE
+AUDIT_LEDGER_WRITTEN=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+
+----- stderr -----
+

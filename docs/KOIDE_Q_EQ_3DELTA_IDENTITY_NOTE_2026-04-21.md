@@ -20,9 +20,11 @@ those values come from the following one-hop authorities:
   — block-by-block forcing of the AM-GM `Q = 2/d = 2/3` derivation on
   the admitted `Cl(3)/Herm_circ(3)` carrier (Frobenius inner product,
   `C_3`-singlet/triplet split, `κ = 2`).
-- [`KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md`](KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md)
+- `KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md`
+  (package survey; backticked non-load-bearing context reference)
   — the package-level handoff that fixes both support routes and the
-  `p = d = 3` base on the `C_3 ⊂ S_3` action on the `Z^3` lattice.
+  `p = d = 3` base on the `C_3 ⊂ S_3` action on the `Z^3` lattice; the
+  two value authorities above carry the load-bearing content.
 
 The identity here is arithmetic over those two cited values, not a new
 derivation of either. The physical bridges (zero-source selection for

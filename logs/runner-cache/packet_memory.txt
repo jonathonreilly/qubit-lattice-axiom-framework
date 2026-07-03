@@ -1,11 +1,69 @@
 ===== runner cache v1 =====
 runner: scripts/packet_memory.py
-runner_sha256: 206a2ddbdb4288be863a61016962f3914f1f7f49595262ed1f3b7e2389391a61
-timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.02
-status: timeout
+runner_sha256: 9307bb26439d02134edc747ae5ea96764932d1c9d575fbde1cd4542a1ea6322a
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 56.91
+status: ok
 ----- stdout -----
+======================================================================
+PACKET MEMORY HARNESS
+======================================================================
+
+A.1 OVERLAP vs OFFSET (NL=30)
+  offset    overlap
+       0     1.0000
+       1     0.8333
+       2     0.4210
+       3     0.1778
+       8     0.1204
+
+A.2 OVERLAP (origin vs z=2) vs NL
+    NL    overlap
+    15     0.1902
+    25     0.3632
+    30     0.4210
+    40     0.5635
+
+A.3 IMPOSED-FIELD RESPONSE BY PACKET
+      packet      delta_z
+      origin    +0.029612
+        z=+1    +0.024504
+        z=+2    +0.016560
+        z=+3    +0.008522
+        z=-2    +0.016633
+
+B. WIDTH (sigma_z) at NL=30
+  narrow (origin) sigma_z = 3.010  cz = -0.084
+  medium (3x3)    sigma_z = 2.492  cz = -0.059
+  offset (z=+2)   sigma_z = 2.983  cz = +1.093
+
+FINITE DETERMINISTIC SCORECARD
+PASS: source note is narrowed to deterministic-runner characterization
+PASS: source note does not claim retained decoherence theorem
+PASS: source note keeps physical gravity interpretation open
+PASS: source note lists growth/propagation/field/readout bridges open
+PASS: offset 0 overlap matches deterministic table (value=1.000000)
+PASS: offset 1 overlap matches deterministic table (value=0.833310)
+PASS: offset 2 overlap matches deterministic table (value=0.421016)
+PASS: offset 3 overlap matches deterministic table (value=0.177785)
+PASS: offset 8 overlap matches deterministic table (value=0.120383)
+PASS: NL 15 overlap matches deterministic table (value=0.190234)
+PASS: NL 25 overlap matches deterministic table (value=0.363196)
+PASS: NL 30 overlap matches deterministic table (value=0.421016)
+PASS: NL 40 overlap matches deterministic table (value=0.563503)
+PASS: origin imposed-field response matches deterministic table (value=+0.029612)
+PASS: z=+1 imposed-field response matches deterministic table (value=+0.024504)
+PASS: z=+2 imposed-field response matches deterministic table (value=+0.016560)
+PASS: z=+3 imposed-field response matches deterministic table (value=+0.008522)
+PASS: z=-2 imposed-field response matches deterministic table (value=+0.016633)
+PASS: low-overlap separation at offset 2 is about 58 percent (value=0.578984)
+PASS: imposed-field response ratio origin/z=+3 is about 3.48 (value=3.474650)
+PASS: narrow width matches deterministic table
+PASS: medium width matches deterministic table
+PASS: offset width and centroid match deterministic table
+
+SCORECARD PASS=23 FAIL=0
 
 ----- stderr -----
 

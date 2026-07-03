@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/staggered_backreaction_live_packet.py
+runner_sha256: e37071162ea883a93fbc1c493ac039cb53083af527f58b52c6c0fa48810f24de
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+========================================================================================================
+STAGGERED BACKREACTION LIVE PACKET
+========================================================================================================
+Checks current cached facts for the six stale-runner replacement notes.
+
+[PASS] scripts/frontier_staggered_backreaction_prototype.py has a fresh ok cache
+       cache=logs/runner-cache/frontier_staggered_backreaction_prototype.txt, status=fresh, header={'runner_path': 'scripts/frontier_staggered_backreaction_prototype.py', 'runner_sha256': '24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975', 'status': 'ok', 'exit_code': '0'}
+[PASS] scripts/frontier_staggered_backreaction_iterative.py has a fresh ok cache
+       cache=logs/runner-cache/frontier_staggered_backreaction_iterative.txt, status=fresh, header={'runner_path': 'scripts/frontier_staggered_backreaction_iterative.py', 'runner_sha256': '2ac39d606949af29d6171fbd17018a9321dea4b1abf2e70ba434bcca928b3497', 'status': 'ok', 'exit_code': '0'}
+[PASS] scripts/frontier_staggered_backreaction_scale_closure.py has a fresh ok cache
+       cache=logs/runner-cache/frontier_staggered_backreaction_scale_closure.txt, status=fresh, header={'runner_path': 'scripts/frontier_staggered_backreaction_scale_closure.py', 'runner_sha256': '2399818c16a44211aecbe1d16a2e6f7dba696c81342022d8b192df27f08b9800', 'status': 'ok', 'exit_code': '0'}
+[PASS] scripts/frontier_staggered_backreaction_nonlocal_closure.py has a fresh ok cache
+       cache=logs/runner-cache/frontier_staggered_backreaction_nonlocal_closure.txt, status=fresh, header={'runner_path': 'scripts/frontier_staggered_backreaction_nonlocal_closure.py', 'runner_sha256': '0681111036c0a2820c361f961f0d4bedfc255c18fea80a2d5f174207bdfe01f8', 'status': 'ok', 'exit_code': '0'}
+[PASS] scripts/frontier_staggered_backreaction_green_closure.py has a fresh ok cache
+       cache=logs/runner-cache/frontier_staggered_backreaction_green_closure.txt, status=fresh, header={'runner_path': 'scripts/frontier_staggered_backreaction_green_closure.py', 'runner_sha256': 'eee3b3adb0ee477f2df71e27988dfb0a051a7b68fbb725060ac53491d5e943f8', 'status': 'ok', 'exit_code': '0'}
+[PASS] scripts/frontier_staggered_backreaction_capture_closure_harness.py has a fresh ok cache
+       cache=logs/runner-cache/frontier_staggered_backreaction_capture_closure_harness.txt, status=fresh, header={'runner_path': 'scripts/frontier_staggered_backreaction_capture_closure_harness.py', 'runner_sha256': '8eee0a1c509997614b5bd488fcf048a0b157ee28f4c264e3876ef2528495b969', 'status': 'ok', 'exit_code': '0'}
+[PASS] prototype live boundary: exact controls survive but cycle-row linearity is weak
+[PASS] iterative source-mapping live boundary: invheat_b3p00 is best but self-gap explodes
+[PASS] scale-closure live boundary: weaker calibrated cycle reduction with holdout blow-up
+[PASS] nonlocal closure live boundary: alpha=0.40 improves cycle rows but not the holdout
+[PASS] green closure live boundary: resistance_yukawa is the best current map with calibrated holdout caveat
+[PASS] capture closure live boundary: 9/9 cycle batteries and about 2x force-gap improvement
+
+PASS=12 FAIL=0
+STAGGERED_BACKREACTION_LIVE_PACKET_ASSERTIONS=TRUE
+STAGGERED_BACKREACTION_FULL_SELF_GRAVITY_CLOSURE=FALSE
+RESIDUAL_SCOPE=universal_source_to_field_scale_and_endogenous_self_refresh
+
+----- stderr -----
+

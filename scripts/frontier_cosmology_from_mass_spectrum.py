@@ -47,9 +47,12 @@ from __future__ import annotations
 
 import math
 import sys
+from pathlib import Path
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+ROOT = Path(__file__).resolve().parent.parent
+NOTE_PATH = ROOT / "docs" / "COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md"
 
 # --------------------------------------------------------------------------
 # Physical constants
@@ -353,6 +356,39 @@ def main() -> int:
         "full cascade Phase 1 -> Phase 5 lands within 5% at every retained link",
         abs(Omega_Lambda - OMEGA_L_OBS) / OMEGA_L_OBS < 0.05,
         "cascade consistency check",
+    )
+
+    # ----------------------------------------------------------------------
+    # Part 8b -- dependency-edge repair guards
+    # ----------------------------------------------------------------------
+
+    section("Part 8b: explicit dependency-edge repair guards")
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    dependency_files = [
+        "NEUTRINO_MASS_DERIVED_NOTE.md",
+        "OMEGA_LAMBDA_DERIVATION_NOTE.md",
+        "DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md",
+        "DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md",
+    ]
+    for filename in dependency_files:
+        path = ROOT / "docs" / filename
+        markdown_link = f"[`{filename}`]({filename})"
+        check(
+            f"dependency source exists: {filename}",
+            path.exists(),
+            f"path=docs/{filename}",
+        )
+        check(
+            f"note exposes markdown dependency edge: {filename}",
+            markdown_link in note_text,
+            markdown_link,
+        )
+    check(
+        "dependency-edge repair section names remaining eta/Sommerfeld blockers",
+        "remaining blockers are unchanged" in note_text
+        and "alpha_GUT" in note_text
+        and "Sommerfeld" in note_text,
+        "edge repair is not a status promotion",
     )
 
     # ----------------------------------------------------------------------

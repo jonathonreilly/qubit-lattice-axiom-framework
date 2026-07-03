@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_reset_with_sink_conditional_2026_06_05.py
+runner_sha256: 39276d65b6c20b7e15d00056ff9e2c562c48d9e8a19d01fbf6c2ea893faa116f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+==============================================================================
+RECORD RESET WITH EXPLICIT SINK CONDITIONAL
+bounded-support / reversible finite construction runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Map is reversible
+------------------------------------------------------------------------------
+  [PASS] all 128 inputs have outputs
+  [PASS] output labels are unique
+  [PASS] pointer bit is preserved
+  [PASS] map is not many-to-one
+
+------------------------------------------------------------------------------
+2. Blank sink gives clean broadcast for arbitrary old fragments
+------------------------------------------------------------------------------
+  [PASS] there are sixteen pointer/fragment inputs with blank sink
+  [PASS] all blank-sink outputs have clean broadcast fragments
+  [PASS] old fragment memory is stored in sink
+  [PASS] zero pointer blank-sink outputs have 000 fragments
+  [PASS] one pointer blank-sink outputs have 111 fragments
+
+------------------------------------------------------------------------------
+3. Nonblank sink is not a free clean reset
+------------------------------------------------------------------------------
+  [PASS] dirty sink inputs exist
+  [PASS] not all dirty-sink outputs are clean (0/112)
+  [PASS] example dirty sink can fail clean broadcast (0101000)
+  [PASS] sink blankness remains an input
+
+------------------------------------------------------------------------------
+4. Relation to no-go
+------------------------------------------------------------------------------
+  [PASS] closed clean reset target set has size two
+  [PASS] sink route keeps sixteen target+sink labels
+  [PASS] sink labels refine the two clean targets
+
+------------------------------------------------------------------------------
+5. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_RESET_WITH_SINK_CONDITIONAL_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: bounded-support
+  [PASS] note contains marker: trace_class: upstream_support
+  [PASS] note contains marker: conditional_surface_status:
+  [PASS] note contains marker: Does not derive sink blankness
+  [PASS] note contains marker: Does not apply audit verdicts.
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: sink closure
+  [PASS] forbidden wording absent: production closure
+  [PASS] forbidden wording absent: cost closure
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=29 FAIL=0
+
+----- stderr -----
+

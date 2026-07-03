@@ -1,421 +1,615 @@
 #!/usr/bin/env python3
-"""
-Higgs mass — tree-level mean-field runner (2026-05-03; updated 2026-05-07; updated 2026-05-10).
+"""Dedicated bounded-chain runner for docs/HIGGS_MASS_FROM_AXIOM_NOTE.md
+(2026-05-03; structural checks 2026-05-07/05-10; theorem/boundary-input
+restructure 2026-06-11).
 
-Review-loop repair runner for `docs/HIGGS_MASS_FROM_AXIOM_NOTE.md`.
+Claim under check (theorem T1 of the note, plus definition D1 and bounded
+corollary C1):
 
-The 2026-05-03 review follow-up identified
-that the note's named runner (`frontier_higgs_mass_corrected_yt.py`)
-computes a different observable (corrected-y_t RGE route ending at
-119.93 GeV) than the note's tree-level formula `m_curv_tree = v/(2 u_0)
-= 140.3 GeV`. This runner reproduces exactly what the note's Step 4
-derives, with no RGE running, no CW corrections, and no Wilson-term
-taste-breaking — that is, the bare tree-level mean-field formula as
-stated.
+    T1 (load-bearing, computed here from primitives — NOT hard-coded):
+      On the declared minimal-block mean-field surface (boundary inputs
+      B3/B4 of the note: L = 2 block of Z^3 + t, antiperiodic wrap in all
+      four directions, staggered eta phases, mean-field links
+      U_{ab} -> u_0 delta_{ab}), the per-color staggered operator D
+      satisfies, with exact integer/rational arithmetic:
 
-The 2026-05-07 update added two structural-cleanup checks that exercise
-the parent note's editing state rather than the algebraic content:
+        (i)   D is real antisymmetric and D^2 = -4 u_0^2 I  (16x16);
+        (ii)  char poly of D/u_0 is (lambda^2 + 4)^8, i.e. all 16 taste
+              eigenvalues are +/- 2 i u_0 (multiplicity 8 each);
+        (iii) det(D + m) = (m^2 + 4 u_0^2)^8 per color, and
+              det over N_c colors = [per-color det]^{N_c};
+        (iv)  V_taste(m) := -(1/N_c) log det_color(D + m)
+                          = -(N_taste/2) log(m^2 + 4 u_0^2);
+        (v)   V_taste'(0) = 0 and V_taste''(0) = -N_taste/(4 u_0^2)
+                          = -4/u_0^2; per-channel magnitude 1/(4 u_0^2);
+        (vi)  every per-color quantity is exactly N_c-independent
+              (verified at N_c in {1, 2, 3, 4} from the determinant,
+              not from the final formula).
 
-  T6  No-duplicate Step 5(c). The 2026-05-03 repair sharpened
-      Step 5(c) to a "consistency cross-check" framing but left the
-      original pre-repair Step 5(c) (which read "the correct
-      identification is m_H² = (1/chi_H)·(v/M_Pl)²") in place.
-      This created a same-section internal contradiction. The
-      structural check verifies the duplicate has been removed.
-  T7  Step 7 gap-chain authority table. The +12% gap between
-      `v/(2 u_0) = 140.3 GeV` and physical 125.10 GeV is delegated to
-      three sister authorities (HIGGS_MASS_DERIVED_NOTE.md,
-      HIGGS_FROM_LATTICE_NOTE.md, plus an open Wilson-taste-breaking
-      derivation target) and the 2026-05-02 status correction audit.
-      The structural check verifies these cross-references are
-      present in the note without hard-coding audit verdicts.
+    D1 (declared definition, NOT an observable identification):
+      m_curv_tree^2 := (|V_taste''(0)| / N_taste) * v^2  =  v^2/(4 u_0^2).
 
-The 2026-05-10 update (Gap #3 lite) adds a structural check that the
-parent note has demoted the misleading `m_H_tree` symbol to the
-first-principles-honest `m_curv_tree` (a per-channel symmetric-point
-curvature scale, NOT a Higgs-mass pole). The Morse/convexity Gap #3
-probe established that V_taste alone has no interior minimum
-(monotonically decreasing logarithmic), so the `v/(2 u_0)` quantity is
-a symmetric-point per-channel curvature magnitude rescaled by the
-external VEV v, not a broken-phase Higgs pole. This mirrors PR #951 v3's
-κ_curv pattern for the analogous dimensionless ratio.
+    C1 (bounded numeric corollary over declared inputs B1/B2):
+      with <P> = 0.5934 (licensed reuse number; plaquette authority) so
+      u_0 = <P>^(1/4) = 0.877681381, and v = 246.22 GeV (declared external
+      EW VEV scale; NOT derived by the note),
+      m_curv_tree = v/(2 u_0) = 140.27 GeV ~ 140.3 GeV.
+      This is a symmetric-point per-channel curvature scale, NOT a
+      Higgs-mass prediction.
 
-  T8  Structural: parent note demotes `m_H_tree` to `m_curv_tree`.
+Falsification legs (would FAIL if the declared surface or the algebra
+were wrong):
 
-Tests:
-  T1  V_taste curvature at m=0 from the closed-form mean-field
-      generating functional (Step 3 of the note).
-  T2  Per-channel curvature with N_taste = 16 (Step 4).
-  T3  v / (2 u_0) at the canonical surface (140.3 GeV; the demoted
-      `m_curv_tree` symmetric-point curvature scale).
-  T4  N_c-independence: re-evaluate with N_c in {2, 3, 4} and verify
-      v/(2 u_0) is unchanged (the load-bearing N_c-cancellation claim).
-  T5  Explicit comparison with the corrected-y_t and Buttazzo runners:
-      report that they compute different observables and are NOT
-      verifiers for this note's tree-level formula.
-  T6  Structural: no duplicate Step 5(c) in the parent note.
-  T7  Structural: Step 7 authority chain table is present and cites
-      the four sister authorities + the 2026-05-02 status correction.
-  T8  Structural: parent note demotes `m_H_tree` to `m_curv_tree` per
-      Gap #3 lite (2026-05-10).
+    F1  time-only antiperiodic wrap (the old "APBC in time" gloss) gives
+        D^2 = -u_0^2 I and det(D + m) = (m^2 + u_0^2)^8 — a DIFFERENT
+        determinant. The all-four-directions antiperiodic declaration in
+        B4 is load-bearing and is exposed, not hidden.
+    F2  anti-tuning: reproducing the PDG Higgs pole 125.10 GeV from
+        v/(2 u_0) would require <P> = 0.9379, i.e. +58% off the licensed
+        0.5934. There is no admissible knob; the chain output 140.3 GeV
+        disagrees with the PDG pole by +12.1% and the note says so.
+
+Check classes (each PASS line is tagged):
+
+  [C] first-principles compute from framework primitives (Clifford
+      generators, eta-phase staggered operator on the 2^4 block, exact
+      char poly / determinants) producing numbers not present in any
+      input.
+  [A] exact arithmetic / algebraic identities over the declared boundary
+      inputs (readout identity, two-route agreement, analytic
+      sensitivity, anti-tuning certificate).
+  [B] cross-note input verification (canonical plaquette helper
+      residuals, dependency license text on disk, parent-note hygiene
+      guards).
+  [D] external comparator (PDG values), quarantined terminal section;
+      NO PASS in this runner rests on agreement with a PDG number.
+
+Deterministic, pure Python stdlib (math, fractions, itertools), runtime
+well under one minute.  Exit code 0 iff TOTAL: PASS=n FAIL=0.
 """
 from __future__ import annotations
 
+import itertools
 import math
+import re
 import sys
+from fractions import Fraction
 from pathlib import Path
 
+REPO_ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = REPO_ROOT / "docs" / "HIGGS_MASS_FROM_AXIOM_NOTE.md"
 
-# Canonical surface (per the note)
-V_GEV = 246.22                    # Higgs VEV
-U_0 = 0.8776                      # mean-field plaquette link
-N_TASTE = 16                      # taste sector dimension on minimal block
-M_H_OBS = 125.10                  # observed physical Higgs mass
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import canonical_plaquette_surface as cps  # noqa: E402
 
-PASS = 0
-FAIL = 0
+PASS_COUNT = 0
+FAIL_COUNT = 0
+CLASS_COUNTS = {"A": 0, "B": 0, "C": 0, "D": 0}
 
 
-def check(name: str, ok: bool, detail: str = "") -> bool:
-    global PASS, FAIL
-    tag = "PASS" if ok else "FAIL"
-    if ok:
-        PASS += 1
+def check(klass: str, name: str, condition: bool, detail: str = "") -> bool:
+    global PASS_COUNT, FAIL_COUNT
+    status = "PASS" if condition else "FAIL"
+    if condition:
+        PASS_COUNT += 1
+        CLASS_COUNTS[klass] += 1
     else:
-        FAIL += 1
-    print(f"  [{tag}] {name}" + (f"  ({detail})" if detail else ""))
-    return ok
+        FAIL_COUNT += 1
+    msg = f"  [{status}][{klass}] {name}"
+    if detail:
+        msg += f"  ({detail})"
+    print(msg)
+    return condition
 
 
 # ---------------------------------------------------------------------------
-# T1 — V_taste curvature at the symmetric point m = 0
+# Declared boundary inputs (mirrors the note's B1-B2 verbatim).
 # ---------------------------------------------------------------------------
-def t1_v_taste_curvature():
-    print("\n--- T1: V_taste curvature at m=0 (Step 3) ---")
-    # V_taste(m) = -(N_taste/2) log(m^2 + 4 u_0^2)
-    # d V_taste/dm = -N_taste m / (m^2 + 4 u_0^2)
-    # d^2 V_taste/dm^2 |_{m=0} = -N_taste / (4 u_0^2)
-    curvature_at_0 = -N_TASTE / (4 * U_0 ** 2)
-    expected = -4.0 / U_0 ** 2  # the note's expression with N_taste=16: -16/(4 u_0^2) = -4/u_0^2
-    err = abs(curvature_at_0 - expected)
-    print(f"  d^2 V_taste/dm^2 |_{{m=0}} = -N_taste/(4 u_0^2) = {curvature_at_0:.4f}")
-    print(f"  Expected -4/u_0^2 (note's [3]) = {expected:.4f}")
-    check(
-        "Step 3 V_taste tachyonic curvature reproduced",
-        err < 1e-12,
-        f"err = {err:.2e}",
-    )
+P_BOUNDARY = 0.5934            # B1: licensed reuse number (plaquette license)
+U_0 = P_BOUNDARY ** 0.25       # = 0.877681381 (exact arithmetic on B1)
+V_GEV = 246.22                 # B2: declared external EW VEV scale (GeV)
+V_HIERARCHY_LANE = 246.282818290129  # hierarchy-lane bounded formula value
+                               # (context for the B2 insensitivity check;
+                               # NOT a derivation claim of this runner)
+N_TASTE_DECLARED = 16          # B3: channel count (recomputed in C-section)
+
+# PDG comparators — quarantined class-D terminal section ONLY.
+M_H_PDG_POLE = 125.10          # observed Higgs pole mass (GeV)
+V_PDG_OBS = 246.22             # observed EW VEV (GeV); B2 consumes this
+                               # number as a declared external scale
 
 
 # ---------------------------------------------------------------------------
-# T2 — per-channel curvature with N_taste = 16 (Step 4)
+# Exact linear algebra helpers (Fractions; no third-party imports).
 # ---------------------------------------------------------------------------
-def t2_per_channel_curvature():
-    print("\n--- T2: Per-channel curvature (Step 4) ---")
-    # |d^2 V/dm^2|_{Higgs} = (4/u_0^2) / N_taste
-    per_channel = (4.0 / U_0 ** 2) / N_TASTE
-    expected = 1.0 / (4 * U_0 ** 2)  # the note's [4]
-    err = abs(per_channel - expected)
-    print(f"  |d^2 V/dm^2|_Higgs = (4/u_0^2)/N_taste = {per_channel:.4f}")
-    print(f"  Expected 1/(4 u_0^2) (note's [4]) = {expected:.4f}")
-    check(
-        "Step 4 per-channel curvature reproduced",
-        err < 1e-12,
-        f"err = {err:.2e}",
-    )
-
-
-# ---------------------------------------------------------------------------
-# T3 — m_curv_tree = v/(2 u_0) at the canonical surface
-# ---------------------------------------------------------------------------
-def t3_m_h_tree_canonical():
-    print("\n--- T3: m_curv_tree = v/(2 u_0) at canonical surface ---")
-    # m_curv_tree^2 = (m_curv_tree/v)^2 * v^2 = curvature_per_channel * v^2
-    # = (1/(4 u_0^2)) * v^2
-    # m_curv_tree = v/(2 u_0)
-    m_curv_tree = V_GEV / (2 * U_0)
-    expected = 140.3
-    err = abs(m_curv_tree - expected)
-    print(f"  m_curv_tree = v/(2 u_0) = {V_GEV} / {2*U_0:.4f} = {m_curv_tree:.2f} GeV")
-    print(f"  Note's headline value: {expected:.2f} GeV")
-    print(f"  Observed physical m_H = {M_H_OBS:.2f} GeV  (comparator only; deviation = {(m_curv_tree - M_H_OBS)/M_H_OBS*100:+.1f}%)")
-    check(
-        "m_curv_tree = 140.3 GeV reproduced from v/(2 u_0)",
-        err < 0.5,
-        f"computed = {m_curv_tree:.2f}, headline = {expected}, err = {err:.3f}",
-    )
-
-
-# ---------------------------------------------------------------------------
-# T4 — N_c-independence: vary N_c and verify m_curv_tree unchanged
-# ---------------------------------------------------------------------------
-def t4_nc_independence():
-    print("\n--- T4: N_c-independence of m_curv_tree (load-bearing claim of Step 2) ---")
-    # The full generating functional is W = N_tot/2 log(...). Dividing by
-    # N_c gives W_taste = N_sites/2 log(...) which is N_c-independent.
-    # Verify m_curv_tree doesn't change as N_c varies (with everything else
-    # fixed).
-    base = V_GEV / (2 * U_0)
-    max_err = 0.0
-    for n_c in (2, 3, 4):
-        # The formula m_curv_tree = v/(2 u_0) does not contain N_c; just
-        # confirm structurally.
-        m_curv_at_nc = V_GEV / (2 * U_0)
-        err = abs(m_curv_at_nc - base)
-        max_err = max(max_err, err)
-        print(f"  N_c = {n_c}: m_curv_tree = {m_curv_at_nc:.4f} GeV  (delta from N_c=3: {err:.2e})")
-    check(
-        "m_curv_tree is N_c-independent (Step 2 N_c cancellation)",
-        max_err < 1e-12,
-        "formula m_curv_tree = v/(2 u_0) has no N_c dependence",
-    )
-
-
-# ---------------------------------------------------------------------------
-# T5 — Distinguish from corrected-y_t and Buttazzo runners
-# ---------------------------------------------------------------------------
-def t5_runner_distinction():
-    print("\n--- T5: Distinguish from corrected-y_t / Buttazzo runners ---")
-    print(f"  This runner computes: m_curv_tree = v/(2 u_0) = {V_GEV/(2*U_0):.2f} GeV (tree-level mean-field)")
-    print(f"  frontier_higgs_mass_corrected_yt.py computes: 119.93 GeV")
-    print(f"    -> different observable: corrected-y_t RGE route at 3L+NNLO")
-    print(f"  frontier_higgs_buttazzo_calibration.py computes: ~125.1 GeV (current)")
-    print(f"    -> different observable: full-3-loop Buttazzo parametric calibration")
-    print(f"  All three are valid auxiliary computations. They are NOT verifiers")
-    print(f"  for this note's tree-level formula. Each addresses a different")
-    print(f"  Higgs-mass observable along a different chain.")
-    check(
-        "Tree-level formula clearly distinguished from RGE/Buttazzo observables",
-        True,
-        "primary runner reports the tree-level value; other runners report different observables",
-    )
-
-
-# ---------------------------------------------------------------------------
-# T6 — No-duplicate Step 5(c) (2026-05-07 cleanup)
-# ---------------------------------------------------------------------------
-def t6_no_duplicate_step_5c():
-    print("\n--- T6: no duplicate Step 5(c) in parent note (2026-05-07) ---")
-    repo_root = Path(__file__).resolve().parents[1]
-    note_path = repo_root / "docs" / "HIGGS_MASS_FROM_AXIOM_NOTE.md"
-    text = note_path.read_text()
-    # The pre-repair (c) opens with "The scalar susceptibility chi = d^2 W / dJ^2"
-    # in a context that calls itself "the correct identification" rather than
-    # "consistency cross-check". Detect the load-bearing token.
-    stale_marker = "The correct identification\nis m_H^2 = (1/chi_H) * (v/M_Pl)^2"
-    has_stale = stale_marker in text
-    # The cleanup-tracking marker should be present.
-    cleanup_marker = "Note (2026-05-07 cleanup)"
-    has_cleanup = cleanup_marker in text
-    check(
-        "stale pre-repair Step 5(c) paragraph is removed",
-        not has_stale,
-        "checks for the contradicting 'the correct identification is m_H^2 = (1/chi_H)*(v/M_Pl)^2' phrasing",
-    )
-    check(
-        "2026-05-07 cleanup-tracking note is present",
-        has_cleanup,
-        "explicit '2026-05-07 cleanup' marker recording the duplicate removal",
-    )
-    # Headcount: literal '**(c)' should appear at most twice in the note's
-    # Step 5 region — once in the sharpened paragraph itself, and at most
-    # once again in the cross-reference within the cleanup note. The earlier
-    # state had it three times (the duplicate). We assert at most two.
-    paren_c_count = text.count("**(c)")
-    check(
-        "'**(c)' anchor appears at most 2x in the note (was 3x before cleanup)",
-        paren_c_count <= 2,
-        f"actual count: {paren_c_count}",
-    )
-
-
-# ---------------------------------------------------------------------------
-# T7 — Step 7 authority chain table is present (2026-05-07)
-# ---------------------------------------------------------------------------
-def t7_step_7_authority_chain():
-    print("\n--- T7: Step 7 authority-chain table for the +12% gap (2026-05-07) ---")
-    repo_root = Path(__file__).resolve().parents[1]
-    note_path = repo_root / "docs" / "HIGGS_MASS_FROM_AXIOM_NOTE.md"
-    text = note_path.read_text()
-    # Whitespace-normalised version for phrase searches that may straddle
-    # line wraps inside paragraphs.
-    import re as _re
-    text_flat = _re.sub(r"\s+", " ", text)
-
-    required_sections = [
-        ("Step 7 header",
-         "Step 7: Authority chain for the +12% gap"),
-        ("HIGGS_MASS_DERIVED_NOTE cross-ref",
-         "HIGGS_MASS_DERIVED_NOTE.md"),
-        ("HIGGS_FROM_LATTICE_NOTE cross-ref",
-         "HIGGS_FROM_LATTICE_NOTE.md"),
-        ("Wilson-term taste-breaking row",
-         "Wilson-term taste-breaking"),
-        ("2026-05-02 status correction audit cross-ref",
-         "HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02"),
-        ("audit backlog campaign synthesis cross-ref",
-         "AUDIT_BACKLOG_NOTE_2026-05-02"),
-        # scope guard is checked below using whitespace-normalised text
-        # (the phrase can straddle a line wrap)
-        ("Wilson-staircase open-target call-out",
-         "(1,4,6,4,1) staircase"),
+def mat_mul(a, b):
+    n = len(a)
+    return [
+        [sum(a[i][k] * b[k][j] for k in range(n)) for j in range(n)]
+        for i in range(n)
     ]
-    for label, marker in required_sections:
-        check(
-            f"contains: {label}",
-            marker in text,
-            f"marker = {marker!r}",
-        )
 
-    # Sister authority files must exist (cross-references are not dead).
-    sister_paths = [
-        "docs/HIGGS_MASS_DERIVED_NOTE.md",
-        "docs/HIGGS_FROM_LATTICE_NOTE.md",
-        "docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md",
-        "docs/AUDIT_BACKLOG_NOTE_2026-05-02.md",
-    ]
-    for rel in sister_paths:
-        path = repo_root / rel
-        check(
-            f"sister authority file exists: {rel}",
-            path.exists(),
-        )
 
-    # Step 7 must NOT make a new derivation claim or carry audit status.
-    # Verify the explicit status-boundary guard is paired with explicit
-    # "this note continues to claim only the tree-level formula".
-    # Use whitespace-normalised text so the phrase can straddle a line wrap.
-    scope_guard_present = (
-        "does not change any sibling claim boundary or effective status" in text_flat.lower()
-        and "audit ledger remains the only authority" in text_flat.lower()
-    )
-    no_new_claim = "tree-level formula" in text_flat and "delegated" in text_flat.lower()
-    check(
-        "Step 7 scope guard: this note does not change sibling status",
-        scope_guard_present,
-    )
-    check(
-        "Step 7 reaffirms tree-level scope and delegates the gap closure",
-        no_new_claim,
-    )
+def mat_add_diag(a, c):
+    out = [row[:] for row in a]
+    for i in range(len(a)):
+        out[i][i] += c
+    return out
+
+
+def det_exact(a_in):
+    """Exact determinant via fraction-free-ish Gaussian elimination."""
+    a = [[Fraction(x) for x in row] for row in a_in]
+    n = len(a)
+    det = Fraction(1)
+    for col in range(n):
+        piv = next((r for r in range(col, n) if a[r][col] != 0), None)
+        if piv is None:
+            return Fraction(0)
+        if piv != col:
+            a[col], a[piv] = a[piv], a[col]
+            det = -det
+        det *= a[col][col]
+        inv = 1 / a[col][col]
+        for r in range(col + 1, n):
+            if a[r][col]:
+                f = a[r][col] * inv
+                for c2 in range(col, n):
+                    a[r][c2] -= f * a[col][c2]
+    return det
+
+
+def char_poly_exact(a):
+    """Faddeev-LeVerrier: coefficients [1, c1, ..., cn] of
+    lambda^n + c1 lambda^(n-1) + ... + cn, exact Fractions."""
+    n = len(a)
+    coeffs = [Fraction(1)]
+    m = [[Fraction(1) if i == j else Fraction(0) for j in range(n)]
+         for i in range(n)]
+    for k in range(1, n + 1):
+        am = mat_mul(a, m)
+        tr = sum(am[i][i] for i in range(n))
+        ck = -tr / k
+        coeffs.append(ck)
+        m = mat_add_diag(am, ck)
+    return coeffs
+
+
+def logdet_float(a):
+    """log|det| of a float matrix via partial-pivot LU."""
+    m = [row[:] for row in a]
+    n = len(m)
+    acc = 0.0
+    for col in range(n):
+        piv = max(range(col, n), key=lambda r: abs(m[r][col]))
+        if piv != col:
+            m[col], m[piv] = m[piv], m[col]
+        acc += math.log(abs(m[col][col]))
+        for r in range(col + 1, n):
+            f = m[r][col] / m[col][col]
+            for c2 in range(col, n):
+                m[r][c2] -= f * m[col][c2]
+    return acc
 
 
 # ---------------------------------------------------------------------------
-# T8 — Gap #3 lite demotion of m_H_tree -> m_curv_tree (2026-05-10)
+# Framework primitives: minimal-block staggered operator (B4 surface).
 # ---------------------------------------------------------------------------
-def t8_gap3_lite_demotion():
-    print("\n--- T8: Gap #3 lite demotion m_H_tree -> m_curv_tree (2026-05-10) ---")
-    repo_root = Path(__file__).resolve().parents[1]
-    note_path = repo_root / "docs" / "HIGGS_MASS_FROM_AXIOM_NOTE.md"
-    text = note_path.read_text()
+SITES = list(itertools.product((0, 1), repeat=4))
+SITE_INDEX = {s: i for i, s in enumerate(SITES)}
 
-    # The parent note must use m_curv_tree as a primary first-principles label.
-    primary_symbol_present = "m_curv_tree" in text
-    check(
-        "parent note introduces m_curv_tree symbol",
-        primary_symbol_present,
-        "first-principles-honest label for v/(2 u_0) = 140.3 GeV",
-    )
 
-    # The note must not silently keep m_H_tree as the headline; it must
-    # contain an explicit demotion narrative.
-    demotion_marker_present = (
-        "demote" in text.lower()
-        or "demotion" in text.lower()
-    )
-    check(
-        "parent note contains an explicit demotion narrative",
-        demotion_marker_present,
-    )
+def staggered_operator(apbc_mask=(1, 1, 1, 1)):
+    """Per-color staggered central-difference operator on the 2^4 block
+    with eta phases eta_mu(x) = (-1)^(x_0 + ... + x_(mu-1)) and
+    antiperiodic wrap in the directions flagged by apbc_mask.
+    Returned with unit links (u_0 = 1); exact Fractions."""
+    n = len(SITES)
+    d = [[Fraction(0)] * n for _ in range(n)]
+    for s in SITES:
+        x = SITE_INDEX[s]
+        for mu in range(4):
+            eta = (-1) ** sum(s[:mu])
+            for direction in (+1, -1):
+                t = list(s)
+                t[mu] += direction
+                wrapped = t[mu] < 0 or t[mu] > 1
+                t[mu] %= 2
+                sign = -1 if (wrapped and apbc_mask[mu]) else 1
+                y = SITE_INDEX[tuple(t)]
+                d[x][y] += direction * eta * sign * Fraction(1, 2)
+    return d
 
-    # The Morse/convexity / no interior minimum framing from Gap #3 must be
-    # explicit in the note (the structural reason for the demotion).
-    morse_marker_present = (
-        "no interior minimum" in text.lower()
-        or "monotonically decreasing" in text.lower()
-    )
-    check(
-        "parent note records the Morse/convexity context (no interior minimum)",
-        morse_marker_present,
-        "explicit reason V_taste alone has no Higgs pole",
-    )
 
-    # The "Honest scope" framing must appear as a section/heading.
-    honest_scope_present = "Honest scope" in text
-    check(
-        "parent note has 'Honest scope' section/framing",
-        honest_scope_present,
-    )
+def pauli_kron():
+    """4x4 Euclidean hermitian gamma matrices from Pauli tensor products:
+    gamma_i = sigma_x (x) sigma_i (i = 1..3), gamma_4 = sigma_z (x) I.
+    Gaussian-integer entries (python complex with integer parts)."""
+    i2 = [[1, 0], [0, 1]]
+    sx = [[0, 1], [1, 0]]
+    sy = [[0, -1j], [1j, 0]]
+    sz = [[1, 0], [0, -1]]
 
-    # The note must explicitly cross-reference HIGGS_MASS_DERIVED_NOTE as a
-    # downstream bounded Higgs route, without making this parent note a
-    # Higgs-mass-pole derivation.
-    derived_route_delegated = (
-        "HIGGS_MASS_DERIVED_NOTE.md" in text
-        and ("3-loop" in text.lower() or "3 loop" in text.lower())
-        and "bounded Higgs route" in text
-    )
-    check(
-        "downstream bounded Higgs route is tracked via HIGGS_MASS_DERIVED",
-        derived_route_delegated,
-    )
+    # straightforward Kronecker product for 2x2 complex matrices
+    def kron2(a, b):
+        out = []
+        for i in range(2):
+            for k in range(2):
+                row = []
+                for j in range(2):
+                    for l in range(2):
+                        row.append(a[i][j] * b[k][l])
+                out.append(row)
+        return out
 
-    # The note must reference the κ_curv mirror pattern (PR #951 v3) so the
-    # repo-wide demotion pattern is discoverable.
-    kappa_mirror_present = (
-        "kappa_curv" in text.lower()
-        or "κ_curv" in text
-        or "HIGGS_KAPPA_CURV" in text
-    )
-    check(
-        "parent note references the κ_curv mirror pattern (PR #951 v3)",
-        kappa_mirror_present,
-    )
+    return [kron2(sx, sx), kron2(sx, sy), kron2(sx, sz), kron2(sz, i2)]
 
-    # The numerical headline 140.3 GeV must remain present and unchanged
-    # (the math doesn't change; only the label and implications).
-    headline_value_present = "140.3" in text
-    check(
-        "numerical headline 140.3 GeV is preserved (math unchanged)",
-        headline_value_present,
-    )
 
-    # The +12% gap must now be framed as a genuine higher-order separation
-    # (Morse/convexity-forced) rather than as a finite missing correction.
-    gap_separation_present = (
-        "higher-order separation" in text.lower()
-        or "genuine higher-order" in text.lower()
-        or "broken-phase pole" in text.lower()
-    )
-    check(
-        "+12% gap framed as genuine higher-order separation (broken-phase pole vs symmetric-point curvature)",
-        gap_separation_present,
-    )
+# ---------------------------------------------------------------------------
+# Section C — first-principles compute (load-bearing chain of T1).
+# ---------------------------------------------------------------------------
+def section_c():
+    print("\n--- [C] T1 first-principles compute (operator -> spectrum -> "
+          "determinant -> curvature) ---")
+
+    # C1: Clifford generators and the taste-block Clifford identity.
+    gammas = pauli_kron()
+    clifford_ok = True
+    for mu in range(4):
+        for nu in range(4):
+            for i in range(4):
+                for j in range(4):
+                    anti = sum(
+                        gammas[mu][i][k] * gammas[nu][k][j]
+                        + gammas[nu][i][k] * gammas[mu][k][j]
+                        for k in range(4)
+                    )
+                    want = 2 if (mu == nu and i == j) else 0
+                    if anti != want:
+                        clifford_ok = False
+    check("C", "Clifford algebra {gamma_mu, gamma_nu} = 2 delta_mu_nu "
+               "(exact, built from Pauli kron)", clifford_ok)
+
+    s = [[sum(gammas[mu][i][j] for mu in range(4)) for j in range(4)]
+         for i in range(4)]
+    s2 = [[sum(s[i][k] * s[k][j] for k in range(4)) for j in range(4)]
+          for i in range(4)]
+    check("C", "taste-block Clifford identity (sum_mu gamma_mu)^2 = 4 I "
+               "(eigenvalue magnitude 2, i.e. |lambda| = 2 u_0 after "
+               "mean-field scaling)",
+          all(s2[i][j] == (4 if i == j else 0)
+              for i in range(4) for j in range(4)))
+
+    # C2: site-space staggered operator on the declared B4 surface.
+    d_unit = staggered_operator()
+    antisym = all(d_unit[i][j] == -d_unit[j][i]
+                  for i in range(16) for j in range(16))
+    d2 = mat_mul(d_unit, d_unit)
+    d2_ok = all(d2[i][j] == (Fraction(-4) if i == j else 0)
+                for i in range(16) for j in range(16))
+    check("C", "eta-phase staggered operator on 2^4 block (all-direction "
+               "antiperiodic wrap): D real antisymmetric", antisym)
+    check("C", "D^2 = -4 I exactly (unit links; so D^2 = -4 u_0^2 I at "
+               "mean field)", d2_ok,
+          "exact Fraction matrix arithmetic")
+
+    # C3: characteristic polynomial = (lambda^2 + 4)^8.
+    coeffs = char_poly_exact(d_unit)
+    target = [Fraction(0)] * 17
+    for k in range(9):
+        target[2 * k] = Fraction(math.comb(8, k) * 4 ** k)
+    check("C", "char poly of D/u_0 is (lambda^2 + 4)^8 — 16 taste "
+               "eigenvalues +/- 2i, multiplicity 8 each",
+          coeffs == target,
+          "Faddeev-LeVerrier, exact")
+
+    # C4: taste channel count recomputed from the BZ-corner set (not
+    # imported): |{0,1}^4| with Hamming multiplicities binom(4, hw).
+    corners = list(itertools.product((0, 1), repeat=4))
+    hw_classes = {}
+    for n in corners:
+        hw_classes.setdefault(sum(n), 0)
+        hw_classes[sum(n)] += 1
+    staircase = tuple(hw_classes[k] for k in sorted(hw_classes))
+    n_taste_computed = len(corners)
+    check("C", "N_taste = 16 recomputed from the BZ-corner set {0,1}^4 "
+               "with Hamming staircase (1,4,6,4,1); W(hw) = 2 r hw -> "
+               "all degenerate at r = 0",
+          n_taste_computed == N_TASTE_DECLARED
+          and staircase == (1, 4, 6, 4, 1)
+          and sum(staircase) == 16)
+
+    # C5: exact per-color determinant identity at rational test points.
+    det_ok = True
+    for a, m in ((Fraction(2, 3), Fraction(1, 3)),
+                 (Fraction(7, 5), Fraction(0)),
+                 (Fraction(1, 2), Fraction(2))):
+        mat = [[a * d_unit[i][j] + (m if i == j else 0) for j in range(16)]
+               for i in range(16)]
+        if det_exact(mat) != (m * m + 4 * a * a) ** 8:
+            det_ok = False
+    check("C", "det(u_0 D + m) = (m^2 + 4 u_0^2)^8 per color — exact at "
+               "3 rational (u_0, m) test points", det_ok)
+
+    # C6: color factorization det over N_c colors = [per-color]^{N_c}
+    # (exact, N_c = 3, 48x48 block matrix).
+    a, m = Fraction(2, 3), Fraction(1, 3)
+    n_c = 3
+    big = [[Fraction(0)] * (16 * n_c) for _ in range(16 * n_c)]
+    for c in range(n_c):
+        for i in range(16):
+            for j in range(16):
+                big[c * 16 + i][c * 16 + j] = a * d_unit[i][j]
+            big[c * 16 + i][c * 16 + i] += m
+    check("C", "color factorization: det_48x48 = [det_taste]^3 at N_c = 3 "
+               "(exact)", det_exact(big) == ((m * m + 4 * a * a) ** 8) ** 3)
+
+    # C7: curvature from the determinant (NOT from the closed form):
+    # per-color V(m) = -log det(u_0 D + m); finite-difference V''(0).
+    d_float = [[float(x) * U_0 for x in row] for row in d_unit]
+
+    def v_taste(m_val):
+        mat = [[d_float[i][j] + (m_val if i == j else 0.0)
+                for j in range(16)] for i in range(16)]
+        return -logdet_float(mat)
+
+    h = 1e-4
+    curv_fd = (v_taste(h) - 2 * v_taste(0.0) + v_taste(-h)) / h ** 2
+    curv_analytic = -4.0 / U_0 ** 2
+    check("C", "V_taste''(0) = -N_taste/(4 u_0^2) = -4/u_0^2 from the "
+               "computed determinant (finite difference vs analytic)",
+          abs(curv_fd - curv_analytic) < 1e-5,
+          f"fd = {curv_fd:.9f}, analytic = {curv_analytic:.9f}")
+    grad_fd = (v_taste(h) - v_taste(-h)) / (2 * h)
+    check("C", "V_taste'(0) = 0 (symmetric point is an extremum; "
+               "tachyonic maximum since V'' < 0)",
+          abs(grad_fd) < 1e-9 and curv_fd < 0.0,
+          f"V'(0) fd = {grad_fd:.2e}")
+
+    # C8: N_c independence computed from the determinant chain, not from
+    # symbol inspection of the final formula.
+    per_color_curvs = []
+    for n_c_test in (1, 2, 3, 4):
+        def v_color(m_val, k=n_c_test):
+            mat = [[d_float[i][j] + (m_val if i == j else 0.0)
+                    for j in range(16)] for i in range(16)]
+            return -(k * logdet_float(mat)) / k  # det over colors, / N_c
+        c_fd = (v_color(h) - 2 * v_color(0.0) + v_color(-h)) / h ** 2
+        per_color_curvs.append(c_fd)
+    spread = max(per_color_curvs) - min(per_color_curvs)
+    check("C", "exact N_c cancellation: per-color curvature identical at "
+               "N_c in {1,2,3,4} (computed)", spread == 0.0,
+          f"spread = {spread:.2e}")
+
+    # C9 (falsification leg F1): the old 'APBC in time only' gloss gives a
+    # DIFFERENT operator: D^2 = -I and det = (m^2 + u_0^2)^8.
+    d_time_only = staggered_operator(apbc_mask=(1, 0, 0, 0))
+    d2t = mat_mul(d_time_only, d_time_only)
+    time_only_d2 = all(d2t[i][j] == (Fraction(-1) if i == j else 0)
+                       for i in range(16) for j in range(16))
+    a, m = Fraction(2, 3), Fraction(1, 3)
+    mat_t = [[a * d_time_only[i][j] + (m if i == j else 0)
+              for j in range(16)] for i in range(16)]
+    det_t = det_exact(mat_t)
+    check("C", "falsification leg F1: time-only antiperiodic wrap gives "
+               "D^2 = -I and det = (m^2 + u_0^2)^8 != (m^2 + 4 u_0^2)^8 "
+               "— the all-direction B4 declaration is load-bearing",
+          time_only_d2
+          and det_t == (m * m + a * a) ** 8
+          and det_t != (m * m + 4 * a * a) ** 8)
+
+    # C10 (Step 5(c) susceptibility cross-check, audit-requested
+    # 2026-06-11): the FULL susceptibility from the color-stacked
+    # generating function W(m) = N_c log det(u_0 D + m) = -N_c V_taste(m)
+    # is W''(0) = N_c N_taste / (4 u_0^2); the per-color per-channel
+    # value W''(0) / (N_c N_taste) = 1/(4 u_0^2) equals the Step-4
+    # per-channel curvature magnitude |V_taste''(0)| / N_taste — the
+    # cross-check reduces to the same algebra, not an independent
+    # derivation. (The pre-fix note text omitted the N_taste factor in
+    # the full susceptibility and so double-divided by N_taste.)
+    n_c_phys = 3
+
+    def w_full(m_val):
+        mat = [[d_float[i][j] + (m_val if i == j else 0.0)
+                for j in range(16)] for i in range(16)]
+        return n_c_phys * logdet_float(mat)
+
+    wpp_fd = (w_full(h) - 2 * w_full(0.0) + w_full(-h)) / h ** 2
+    wpp_analytic = n_c_phys * N_TASTE_DECLARED / (4.0 * U_0 ** 2)
+    check("C", "Step 5(c) susceptibility: W''(0) = N_c N_taste/(4 u_0^2) "
+               "from the computed determinant (finite difference vs "
+               "analytic)",
+          abs(wpp_fd - wpp_analytic) < 1e-4,
+          f"fd = {wpp_fd:.9f}, analytic = {wpp_analytic:.9f}")
+    per_color_channel = wpp_fd / (n_c_phys * N_TASTE_DECLARED)
+    check("C", "Step 5(c) per-color per-channel W''(0)/(N_c N_taste) = "
+               "1/(4 u_0^2) — equals the Step-4 per-channel curvature "
+               "magnitude (same algebra; no double N_taste division)",
+          abs(per_color_channel - 1.0 / (4.0 * U_0 ** 2)) < 1e-5
+          and abs(per_color_channel - abs(curv_fd) / N_TASTE_DECLARED) < 1e-12,
+          f"per-color per-channel = {per_color_channel:.9f}, "
+          f"1/(4 u_0^2) = {1.0 / (4.0 * U_0 ** 2):.9f}")
+
+
+# ---------------------------------------------------------------------------
+# Section A — exact readout algebra over declared inputs (D1 + C1).
+# ---------------------------------------------------------------------------
+def section_a():
+    print("\n--- [A] D1/C1 readout algebra over declared boundary inputs ---")
+
+    # A1: two independent evaluation routes for the defined scale.
+    per_channel = (4.0 / U_0 ** 2) / N_TASTE_DECLARED
+    route_one = V_GEV * math.sqrt(per_channel)          # definition D1
+    route_two = V_GEV / (2.0 * U_0)                      # collapsed form
+    check("A", "two routes agree: v*sqrt((4/u_0^2)/N_taste) == v/(2 u_0)",
+          abs(route_one - route_two) < 1e-12,
+          f"{route_one:.10f} vs {route_two:.10f}")
+    m_curv = route_two
+
+    # A2: exact readout identity residual.
+    resid = abs(2.0 * U_0 * m_curv - V_GEV)
+    check("A", "readout identity residual |2 u_0 m_curv_tree - v| ~ 0",
+          resid < 1e-9, f"residual = {resid:.2e}")
+
+    # A3: headline value at the declared inputs.
+    check("A", "C1 headline: m_curv_tree = 140.3 GeV at (B1, B2) "
+               "(rounded to 0.1 GeV)",
+          abs(round(m_curv, 1) - 140.3) < 1e-9,
+          f"m_curv_tree = {m_curv:.4f} GeV")
+
+    # A4: B2 insensitivity certificate: PDG-anchored v vs the
+    # hierarchy-lane bounded-formula value differ by 0.026%; both give
+    # 140.3 at headline precision.  (This does NOT derive either v.)
+    m_alt = V_HIERARCHY_LANE / (2.0 * U_0)
+    rel = abs(V_HIERARCHY_LANE / V_GEV - 1.0)
+    check("A", "B2 insensitivity: v = 246.22 and v = 246.2828 both give "
+               "m_curv_tree = 140.3 at 0.1 GeV precision",
+          round(m_curv, 1) == round(m_alt, 1) == 140.3 and rel < 3e-4,
+          f"{m_curv:.4f} vs {m_alt:.4f}, dv/v = {rel:.2e}")
+
+    # A5: analytic sensitivity (anti-tuning certificate, part 1):
+    # d m_curv / d<P> = -m_curv / (4 <P>), verified by central difference.
+    sens_analytic = -m_curv / (4.0 * P_BOUNDARY)
+    dp = 1e-6
+    m_plus = V_GEV / (2.0 * (P_BOUNDARY + dp) ** 0.25)
+    m_minus = V_GEV / (2.0 * (P_BOUNDARY - dp) ** 0.25)
+    sens_fd = (m_plus - m_minus) / (2 * dp)
+    check("A", "analytic sensitivity d m_curv/d<P> = -m_curv/(4<P>) = "
+               "-59.09 GeV (1% in <P> -> 0.25% in m_curv), fd-verified",
+          abs(sens_fd - sens_analytic) < 1e-3,
+          f"fd = {sens_fd:.6f}, analytic = {sens_analytic:.6f}")
+
+    # A6: anti-tuning certificate, part 2 (falsification leg F2): the
+    # single knob <P> cannot be tuned to the PDG Higgs pole within any
+    # admissible neighborhood of the licensed value.
+    p_needed = (V_GEV / (2.0 * M_H_PDG_POLE)) ** 4
+    rel_off = p_needed / P_BOUNDARY - 1.0
+    check("A", "falsification leg F2 (anti-tuning): hitting 125.10 GeV "
+               "would need <P> = 0.9379, +58% off the licensed 0.5934 — "
+               "no admissible tuning exists and none is claimed",
+          abs(p_needed - 0.93787) < 5e-4 and rel_off > 0.5,
+          f"<P>_needed = {p_needed:.5f}, rel offset = {rel_off:+.3f}")
+
+
+# ---------------------------------------------------------------------------
+# Section B — cross-note input verification and parent-note hygiene.
+# ---------------------------------------------------------------------------
+def section_b():
+    print("\n--- [B] cross-note inputs and parent-note hygiene ---")
+
+    # B1: canonical plaquette helper residuals.
+    check("B", "B1 matches canonical helper: CANONICAL_PLAQUETTE = 0.5934",
+          abs(cps.CANONICAL_PLAQUETTE - P_BOUNDARY) == 0.0)
+    check("B", "u_0 = <P>^(1/4) = 0.877681381 matches CANONICAL_U0",
+          abs(cps.CANONICAL_U0 - U_0) < 1e-15,
+          f"u_0 = {U_0:.9f}")
+
+    # B2: the plaquette dependency's reuse license is on disk and still
+    # carries the admitted-comparison/reuse-number language B1 relies on.
+    plaq = (REPO_ROOT / "docs" / "PLAQUETTE_SELF_CONSISTENCY_NOTE.md")
+    plaq_text = plaq.read_text() if plaq.exists() else ""
+    check("B", "plaquette license present: 0.5934 'admitted "
+               "comparison/reuse number' language on disk",
+          "admitted comparison/reuse number" in plaq_text
+          and "0.5934" in plaq_text)
+
+    # B3: the staircase dependency states the (1,4,6,4,1) multiplicities
+    # and the W = 2 r hw staircase this note's B3 licenses.
+    stair = (REPO_ROOT / "docs" /
+             "WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md")
+    stair_text = stair.read_text() if stair.exists() else ""
+    check("B", "staircase dependency on disk with (1,4,6,4,1) "
+               "multiplicities",
+          "( 1, 4, 6, 4, 1 )" in stair_text or "(1,4,6,4,1)" in stair_text
+          or "(1, 4, 6, 4, 1)" in stair_text)
+
+    note_text = NOTE_PATH.read_text()
+    flat = re.sub(r"\s+", " ", note_text)
+
+    # B4: parent-note hygiene — primary label and demotion narrative.
+    check("B", "parent note primary label is m_curv_tree with explicit "
+               "demotion narrative (no Higgs-pole claim)",
+          "m_curv_tree" in note_text
+          and ("demot" in note_text.lower())
+          and "NOT a Higgs-mass prediction" in note_text)
+
+    # B5: no stale pre-repair Step 5(c) identification.
+    check("B", "stale 'correct identification is m_H^2 = (1/chi_H)...' "
+               "phrasing absent",
+          "the correct identification is m_H" not in flat.lower())
+
+    # B6: the v = 246.22 miscitation is repaired: the note declares v as
+    # an external scale input and does not attribute 246.22 to the
+    # bounded hierarchy formula.
+    miscite = re.search(
+        r"246\.22[^.]{0,160}from the bounded hierarchy formula", flat)
+    check("B", "B2 declared honestly: 246.22 GeV is not attributed to "
+               "the bounded hierarchy formula",
+          miscite is None and "declared external EW VEV scale" in flat)
+
+    # B7: every load-bearing markdown link in the note resolves to a file
+    # on disk (dead-citation guard; the 2026-06-11 repair removed dead
+    # TASTE_POLYNOMIAL / DM_AMGM / HIERARCHY_THEOREM citations).
+    links = re.findall(r"\]\(([A-Za-z0-9_\-./]+\.md)\)", note_text)
+    missing = [l for l in links
+               if not (REPO_ROOT / "docs" / l).exists()
+               and not (REPO_ROOT / l).exists()]
+    check("B", "all markdown-linked note citations resolve on disk",
+          not missing, f"missing: {missing}" if missing else "all resolve")
+
+    # B8: comparator fence present in the parent note.
+    check("B", "fenced class-D comparator section present in parent note",
+          "Fenced comparator" in note_text)
+
+
+# ---------------------------------------------------------------------------
+# Section D — fenced external comparators (terminal; never load-bearing).
+# ---------------------------------------------------------------------------
+def section_d():
+    print("\n--- [D] fenced comparators (PDG; quarantined, never "
+          "load-bearing) ---")
+    m_curv = V_GEV / (2.0 * U_0)
+
+    # D1: the +12% separation report.  PASS verifies the SEPARATION is
+    # correctly reported as +12.1% — it does NOT reward agreement.
+    sep = m_curv / M_H_PDG_POLE - 1.0
+    check("D", "comparator: m_curv_tree = 140.3 GeV sits +12.1% ABOVE the "
+               "PDG Higgs pole 125.10 GeV (separation report, not a "
+               "match claim)",
+          0.115 < sep < 0.128,
+          f"separation = {sep * 100:+.2f}%")
+
+    # D2: the B2 scale label vs PDG observed VEV (identical by
+    # declaration) and vs the hierarchy-lane bounded value (+0.0255%);
+    # comparator context only.
+    rel = V_HIERARCHY_LANE / V_PDG_OBS - 1.0
+    check("D", "comparator: hierarchy-lane bounded v = 246.2828 GeV vs "
+               "PDG v_obs = 246.22 GeV differ by +0.0255% (context only; "
+               "neither derived here)",
+          abs(rel - 0.000255) < 5e-5,
+          f"rel = {rel * 100:+.4f}%")
 
 
 def main() -> int:
-    print("=" * 80)
+    print("=" * 78)
     print(" higgs_tree_level_mean_field_runner_2026_05_03.py")
-    print(" Review-loop repair runner for HIGGS_MASS_FROM_AXIOM_NOTE.md")
-    print(" Reproduces the note's tree-level mean-field formula m_curv_tree = v/(2 u_0).")
-    print(" 2026-05-07 update added T6/T7 structural checks.")
-    print(" 2026-05-10 update adds T8 (Gap #3 lite m_H_tree -> m_curv_tree demotion).")
-    print("=" * 80)
+    print(" (2026-06-11 restructure: T1 computed from primitives;")
+    print("  D1 declared definition; C1 bounded readout; comparators fenced)")
+    print(" Parent note: docs/HIGGS_MASS_FROM_AXIOM_NOTE.md")
+    print("=" * 78)
 
-    t1_v_taste_curvature()
-    t2_per_channel_curvature()
-    t3_m_h_tree_canonical()
-    t4_nc_independence()
-    t5_runner_distinction()
-    t6_no_duplicate_step_5c()
-    t7_step_7_authority_chain()
-    t8_gap3_lite_demotion()
+    section_c()
+    section_a()
+    section_b()
+    section_d()
 
     print()
-    print("=" * 80)
-    print(f" SUMMARY: PASS={PASS}, FAIL={FAIL}")
-    print("=" * 80)
-    return 0 if FAIL == 0 else 1
+    print("=" * 78)
+    print(f" Breakdown: A={CLASS_COUNTS['A']} B={CLASS_COUNTS['B']} "
+          f"C={CLASS_COUNTS['C']} D={CLASS_COUNTS['D']}")
+    print(f" TOTAL: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
+    print("=" * 78)
+    return 0 if FAIL_COUNT == 0 else 1
 
 
 if __name__ == "__main__":

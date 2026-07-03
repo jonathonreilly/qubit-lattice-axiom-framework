@@ -1,0 +1,89 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gravity_clean_weak_field_composition_certificate_2026_06_11.py
+runner_sha256: 6109fd74b5879df57365a3192c4ee136c618289083289f69a296ba21d35ba618
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+gravity clean weak-field parent composition certificate 2026-06-11
+PASS: exists: docs/GRAVITY_CLEAN_DERIVATION_NOTE.md
+PASS: exists: docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md
+PASS: exists: scripts/frontier_gravity_weak_field_source_response_bridge_2026_06_11.py
+PASS: exists: logs/runner-cache/frontier_gravity_weak_field_source_response_bridge_2026_06_11.txt
+PASS: exists: docs/SELF_CONSISTENCY_FORCES_POISSON_NOTE.md
+PASS: exists: docs/POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md
+PASS: exists: docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md
+PASS: exists: docs/STAGGERED_FERMION_CARD_2026-04-11.md
+PASS: exists: docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md
+PASS: exists: docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md
+PASS: parent declares bounded theorem type
+PASS: parent delegates status to independent audit
+PASS: parent does not set or predict audit outcome
+PASS: parent registers this composition certificate runner
+PASS: parent links this certificate cache
+PASS: parent no longer says it has no primary runner
+PASS: repair section exists
+PASS: repair section names L inverse blocker
+PASS: repair section names Born density blocker
+PASS: repair section names test-response blocker
+PASS: repair section routes blockers through weak-field bridge
+PASS: composition certificate section exists
+PASS: composition section contains: source-side certificate
+PASS: composition section contains: does not apply an audit verdict
+PASS: composition section contains: bridge cache is SHA-pinned and passing
+PASS: composition section contains: bilinear inverse-square force
+PASS: composition section contains: bounded weak-field
+PASS: parent one-hop link present: GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md
+PASS: parent one-hop link present: SELF_CONSISTENCY_FORCES_POISSON_NOTE.md
+PASS: parent one-hop link present: POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md
+PASS: parent one-hop link present: GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md
+PASS: parent one-hop link present: STAGGERED_FERMION_CARD_2026-04-11.md
+PASS: parent one-hop link present: LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md
+PASS: parent one-hop link present: LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md
+PASS: binding claim contains: the weak-field source-response bridge supplies `L^{-1} = G_0`
+PASS: binding claim contains: the same bridge supplies the local source readout `rho = |psi|^2`
+PASS: binding claim contains: the same bridge supplies the first-order test-mass response
+PASS: binding claim contains: `G(r) ~ 1/(4 pi r)`
+PASS: parent boundary contains: No unconditional derivation of Newton gravity
+PASS: parent boundary contains: No clean-chain or zero-free-parameter physical-gravity closure
+PASS: parent boundary contains: No derivation of physical `G_Newton` in SI units
+PASS: parent boundary contains: No derivation of the full Einstein equations
+PASS: parent boundary contains: No audit verdict
+PASS: parent excludes positive overclaim: **Status:** retained
+PASS: parent excludes positive overclaim: author-applied retained status
+PASS: parent excludes positive overclaim: retained branch-local
+PASS: parent excludes positive overclaim: would become retained
+PASS: parent excludes positive overclaim: promoted to retained
+PASS: parent excludes positive overclaim: full Einstein equations are derived
+PASS: parent excludes positive overclaim: G_Newton in SI units is derived
+PASS: parent excludes positive overclaim: zero-free-parameter physical-gravity closure is derived
+PASS: bridge declares bounded theorem type
+PASS: bridge delegates status to independent audit
+PASS: bridge links its primary runner
+PASS: bridge links its SHA-pinned cache
+PASS: bridge contains theorem phrase: A[phi; rho] = (1/2) <phi, H phi> - <P0 rho, phi>
+PASS: bridge contains theorem phrase: phi = G0 P0 rho
+PASS: bridge contains theorem phrase: rho_psi(x) = |psi(x)|^2
+PASS: bridge contains theorem phrase: S_test(phi; x) = L_test (1 - phi(x))
+PASS: bridge contains theorem phrase: G(r) -> 1 / (4 pi |r|)
+PASS: bridge dependency link present: SELF_CONSISTENCY_FORCES_POISSON_NOTE.md
+PASS: bridge dependency link present: POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md
+PASS: bridge dependency link present: LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md
+PASS: bridge dependency link present: POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md
+PASS: bridge dependency link present: GATE_B_POISSON_SELF_GRAVITY_NOTE.md
+PASS: bridge cache header is v1
+PASS: bridge cache names bridge runner
+PASS: bridge cache pins current bridge runner SHA
+PASS: bridge cache exit code is zero
+PASS: bridge cache status ok
+PASS: bridge cache has expected pass total
+PASS: bilinear inverse-square force closes for M=3.0, m=5.0, r=7.0 -- force=0.0243604504732, expected=0.0243604504732
+PASS: bilinear inverse-square force closes for M=2.25, m=11.0, r=13.0 -- force=0.0116540971643, expected=0.0116540971643
+PASS: bilinear inverse-square force closes for M=17.0, m=0.5, r=19.0 -- force=0.00187370777878, expected=0.00187370777878
+PASS: 1/r potential ratio is exact in the asymptotic law
+PASS: force ratio is inverse-square in the asymptotic law
+TOTAL: PASS=76 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,104 @@
+===== runner cache v1 =====
+runner: scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py
+runner_sha256: 5a3e47d70aeb235ecc1c016095e05cde70b9c092d96024bec489293b19fcbed3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+========================================================================================
+WAVE DIRECT-DM H025 FAM2 SEED1: TRANSITIVE SOURCE PACKET MANIFEST
+========================================================================================
+[PASS] manifest_path_exists:note: docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+[PASS] manifest_path_exists:target_runner: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+[PASS] note_names_manifest_path:target_runner: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+[PASS] manifest_path_exists:target_cache: logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt
+[PASS] note_names_manifest_path:target_cache: logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+[PASS] manifest_path_exists:target_json: outputs/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json
+[PASS] note_names_manifest_path:target_json: outputs/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+[PASS] manifest_path_exists:generic_point_runner: scripts/wave_direct_dm_h025_point_runner.py
+[PASS] note_names_manifest_path:generic_point_runner: scripts/wave_direct_dm_h025_point_runner.py is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+[PASS] manifest_path_exists:generic_point_runner_cache: logs/runner-cache/wave_direct_dm_h025_point_runner.txt
+[PASS] note_names_manifest_path:generic_point_runner_cache: logs/runner-cache/wave_direct_dm_h025_point_runner.txt is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+[PASS] manifest_path_exists:measure_dm_source: scripts/wave_direct_dm_matched_history_probe.py
+[PASS] note_names_manifest_path:measure_dm_source: scripts/wave_direct_dm_matched_history_probe.py is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+[PASS] manifest_path_exists:measure_dm_cache: logs/runner-cache/wave_direct_dm_matched_history_probe.txt
+[PASS] note_names_manifest_path:measure_dm_cache: logs/runner-cache/wave_direct_dm_matched_history_probe.txt is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+[PASS] manifest_path_exists:continuum_helper_source: scripts/wave_retardation_continuum_limit.py
+[PASS] note_names_manifest_path:continuum_helper_source: scripts/wave_retardation_continuum_limit.py is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+[PASS] manifest_path_exists:continuum_helper_cache: logs/runner-cache/wave_retardation_continuum_limit.txt
+[PASS] note_names_manifest_path:continuum_helper_cache: logs/runner-cache/wave_retardation_continuum_limit.txt is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+[PASS] note_names_manifest_artifact:manifest_runner: scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+[PASS] note_names_manifest_artifact:manifest_cache: logs/runner-cache/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.txt is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+[PASS] note_names_manifest_artifact:manifest_json: outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+[PASS] source_untruncated:target_runner: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py has 7306 bytes
+[PASS] source_marker:target_runner:FAMILY = "Fam2": FAMILY = "Fam2" present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+[PASS] source_marker:target_runner:SEED = 1: SEED = 1 present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+[PASS] source_marker:target_runner:H_VALUE = 0.25: H_VALUE = 0.25 present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+[PASS] source_marker:target_runner:from wave_direct_dm_matched_history_probe import FAMILIES, measure_dm: from wave_direct_dm_matched_history_probe import FAMILIES, measure_dm present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+[PASS] source_marker:target_runner:from wave_retardation_continuum_limit import S_PHYS: from wave_retardation_continuum_limit import S_PHYS present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+[PASS] source_marker:target_runner:EXPECTED = {: EXPECTED = { present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+[PASS] source_marker:target_runner:SUMMARY: WAVE H025 FAM2 SEED1 PASS: SUMMARY: WAVE H025 FAM2 SEED1 PASS present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+[PASS] source_untruncated:generic_point_runner: scripts/wave_direct_dm_h025_point_runner.py has 3062 bytes
+[PASS] source_marker:generic_point_runner:from wave_direct_dm_matched_history_probe import FAMILIES, measure_dm: from wave_direct_dm_matched_history_probe import FAMILIES, measure_dm present in scripts/wave_direct_dm_h025_point_runner.py
+[PASS] source_marker:generic_point_runner:from wave_retardation_continuum_limit import S_PHYS: from wave_retardation_continuum_limit import S_PHYS present in scripts/wave_direct_dm_h025_point_runner.py
+[PASS] source_untruncated:measure_dm_source: scripts/wave_direct_dm_matched_history_probe.py has 6751 bytes
+[PASS] source_marker:measure_dm_source:from wave_retardation_continuum_limit import: from wave_retardation_continuum_limit import present in scripts/wave_direct_dm_matched_history_probe.py
+[PASS] source_marker:measure_dm_source:def measure_dm: def measure_dm present in scripts/wave_direct_dm_matched_history_probe.py
+[PASS] source_marker:measure_dm_source:free = prop_beam: free = prop_beam present in scripts/wave_direct_dm_matched_history_probe.py
+[PASS] source_marker:measure_dm_source:z_free = cz: z_free = cz present in scripts/wave_direct_dm_matched_history_probe.py
+[PASS] source_marker:measure_dm_source:h_early = solve_wave: h_early = solve_wave present in scripts/wave_direct_dm_matched_history_probe.py
+[PASS] source_marker:measure_dm_source:h_late = solve_wave: h_late = solve_wave present in scripts/wave_direct_dm_matched_history_probe.py
+[PASS] source_untruncated:continuum_helper_source: scripts/wave_retardation_continuum_limit.py has 21276 bytes
+[PASS] source_marker:continuum_helper_source:S_PHYS = 0.004: S_PHYS = 0.004 present in scripts/wave_retardation_continuum_limit.py
+[PASS] source_marker:continuum_helper_source:def grow: def grow present in scripts/wave_retardation_continuum_limit.py
+[PASS] source_marker:continuum_helper_source:def solve_wave: def solve_wave present in scripts/wave_retardation_continuum_limit.py
+[PASS] source_marker:continuum_helper_source:def field_at: def field_at present in scripts/wave_retardation_continuum_limit.py
+[PASS] source_marker:continuum_helper_source:def prop_beam: def prop_beam present in scripts/wave_retardation_continuum_limit.py
+[PASS] source_marker:continuum_helper_source:field[idx] = field_at: field[idx] = field_at present in scripts/wave_retardation_continuum_limit.py
+[PASS] source_marker:continuum_helper_source:def cz: def cz present in scripts/wave_retardation_continuum_limit.py
+[PASS] cache_runner_matches:target_cache: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py == scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+[PASS] cache_sha_fresh:target_cache: cache sha c1d401ee87e275b853d56ac27903b44c0a9b697c3b6625e92d34ff689691b4b9 current sha c1d401ee87e275b853d56ac27903b44c0a9b697c3b6625e92d34ff689691b4b9
+[PASS] cache_exit_ok:target_cache: exit_code=0 status=ok
+[PASS] cache_contains:target_cache:status: ok: status: ok
+[PASS] cache_contains:target_cache:PASS family is fixed to Fam2: PASS family is fixed to Fam2
+[PASS] cache_contains:target_cache:PASS seed is fixed to 1: PASS seed is fixed to 1
+[PASS] cache_contains:target_cache:PASS H is fixed to 0.25: PASS H is fixed to 0.25
+[PASS] cache_contains:target_cache:dM(early)  = +0.003777: dM(early)  = +0.003777
+[PASS] cache_contains:target_cache:dM(late)   = +0.005814: dM(late)   = +0.005814
+[PASS] cache_contains:target_cache:delta_hist = -0.002037: delta_hist = -0.002037
+[PASS] cache_contains:target_cache:MEASURE_DM_SOURCE_PACKET=PASS: MEASURE_DM_SOURCE_PACKET=PASS
+[PASS] cache_contains:target_cache:SUMMARY: WAVE H025 FAM2 SEED1 PASS=33 FAIL=0: SUMMARY: WAVE H025 FAM2 SEED1 PASS=33 FAIL=0
+[PASS] cache_runner_matches:generic_point_runner_cache: scripts/wave_direct_dm_h025_point_runner.py == scripts/wave_direct_dm_h025_point_runner.py
+[PASS] cache_sha_fresh:generic_point_runner_cache: cache sha e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a current sha e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a
+[PASS] cache_exit_ok:generic_point_runner_cache: exit_code=0 status=ok
+[PASS] cache_contains:generic_point_runner_cache:status: ok: status: ok
+[PASS] cache_contains:generic_point_runner_cache:WAVE DIRECT-DM SINGLE-POINT RUNNER: WAVE DIRECT-DM SINGLE-POINT RUNNER
+[PASS] cache_contains:generic_point_runner_cache:dM(early)  =: dM(early)  =
+[PASS] cache_contains:generic_point_runner_cache:dM(late)   =: dM(late)   =
+[PASS] cache_contains:generic_point_runner_cache:delta_hist =: delta_hist =
+[PASS] cache_runner_matches:measure_dm_cache: scripts/wave_direct_dm_matched_history_probe.py == scripts/wave_direct_dm_matched_history_probe.py
+[PASS] cache_sha_fresh:measure_dm_cache: cache sha 6ed89e5a01072d2b12a8a80a5aeb1626b0546058594614eae620683bb5290211 current sha 6ed89e5a01072d2b12a8a80a5aeb1626b0546058594614eae620683bb5290211
+[PASS] cache_exit_ok:measure_dm_cache: exit_code=0 status=ok
+[PASS] cache_contains:measure_dm_cache:status: ok: status: ok
+[PASS] cache_contains:measure_dm_cache:WAVE DIRECT-DM MATCHED-HISTORY PROBE: WAVE DIRECT-DM MATCHED-HISTORY PROBE
+[PASS] cache_contains:measure_dm_cache:Two source schedules with the same start/end/final geometry: Two source schedules with the same start/end/final geometry
+[PASS] cache_contains:measure_dm_cache:[strength=0.004000]: [strength=0.004000]
+[PASS] cache_runner_matches:continuum_helper_cache: scripts/wave_retardation_continuum_limit.py == scripts/wave_retardation_continuum_limit.py
+[PASS] cache_sha_fresh:continuum_helper_cache: cache sha 0c1ffd073cb1f811e2c74507d6bbefe658c4798efcd5cca3522c16fe2ea8c2e1 current sha 0c1ffd073cb1f811e2c74507d6bbefe658c4798efcd5cca3522c16fe2ea8c2e1
+[PASS] cache_exit_ok:continuum_helper_cache: exit_code=0 status=ok
+[PASS] cache_contains:continuum_helper_cache:status: ok: status: ok
+[PASS] cache_contains:continuum_helper_cache:WAVE-RETARDATION CONTINUUM-LIMIT REFINEMENT: WAVE-RETARDATION CONTINUUM-LIMIT REFINEMENT
+[PASS] cache_contains:continuum_helper_cache:S_phys (field source strength) = 0.004: S_phys (field source strength) = 0.004
+[PASS] cache_contains:continuum_helper_cache:[fine] H = 0.25: [fine] H = 0.25
+[PASS] cache_contains:continuum_helper_cache:dM = +0.007212: dM = +0.007212
+[PASS] cache_contains:continuum_helper_cache:PARTIAL: PARTIAL
+[PASS] note_has_transitive_helper_repair_section: wave note has the 2026-06-06 helper repair section
+[PASS] note_preserves_bounded_boundary: repair section states that status movement remains audit-owned
+========================================================================================
+SUMMARY: WAVE SOURCE PACKET PASS=86 FAIL=0
+========================================================================================
+Output written: outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json
+
+----- stderr -----
+

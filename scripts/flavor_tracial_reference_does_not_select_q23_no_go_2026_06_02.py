@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Koide measure tie-break — native-principle test.
+Koide measure tie-break -- formal finite-carrier route-pruning theorem.
 
 ANGLE: Does the tracial/product/modular reference route select the equal-block
-measure on the generation algebra R[Z3] = R (+) C, or does it read the blocks by
-dimension?
+measure on the assumed generation algebra R[Z3] = R (+) C, or does it read the
+blocks by dimension?
 
   (i)  dimension/trace/Plancherel weight (1,2) -> r = |b|^2/a^2 = 1 -> Q = 1
   (ii) block/idempotent-count weight       (1,1) -> r = 1/2          -> Q = 2/3
@@ -16,10 +16,15 @@ Honesty discipline: a principle "forces (ii)" only if it is INCOMPATIBLE with
 (i); a coincidence/consistency-equality that merely PERMITS (ii) is logged as
 PERMIT, not FORCE.  Symmetric standard applied to (i).
 
-Every operator used is finite-dimensional matrix algebra: the generator C
-(C^3 = I), central projectors, tracial states, and explicit non-tracial witness
-states. Standard linear algebra is calculation machinery.
+Every operator used is finite-dimensional matrix algebra under the formal
+finite-carrier hypotheses F1-F3. The runner does not derive the physical
+generation carrier, physical sector identification, or physical mass readout
+from baseline axioms. The paired source note cites the retained Record-function
+algebra for the r/Q coordinate and keeps the physical carrier/readout bridge
+outside this route-pruning theorem.
 """
+
+from pathlib import Path
 
 import numpy as np
 
@@ -325,6 +330,34 @@ check("=> tracial/product/modular route does NOT select the equal-block value",
       True,
       "RP/T-pos agnostic; trace+KMS+product route gives (1,2)->Q=1; (1,1)->Q=2/3 needs finite-beta/non-tracial weight")
 
+note = (Path(__file__).resolve().parents[1] / "docs" / "FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md").read_text()
+banned = [
+    "The framework baseline is",
+    "Lattice and\nQuantum supply",
+    "Record\ndoes not supply",
+    "MINIMAL_AXIOMS_2026-06-04",
+]
+required = [
+    "bounded no_go / route-pruning theorem",
+    "formal finite carrier/readout surface F1-F3",
+    "2026-06-08 formal-carrier repair",
+    "F1:",
+    "F2:",
+    "F3:",
+    "does not derive the carrier",
+    "RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05",
+    "KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29",
+    "physical_generation_bridge_claimed: false",
+    "physical_flavor_sector_claimed: false",
+    "measured_mass_readout_claimed: false",
+    "bare_retained_allowed: false",
+    "No new axiom is introduced.",
+]
+check("source boundary guard: carrier/readout are assumed, not derived by this packet",
+      all(term not in note for term in banned) and all(term in note for term in required),
+      "the packet closes only the assumed-carrier tracial-reference no-go")
+
 print("\n" + "="*78)
 print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
 print("="*78)
+raise SystemExit(0 if FAIL == 0 else 1)

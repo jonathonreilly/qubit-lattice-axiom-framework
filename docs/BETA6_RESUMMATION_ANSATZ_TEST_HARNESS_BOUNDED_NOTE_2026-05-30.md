@@ -1,6 +1,8 @@
 # Beta=6 SU(3) Wilson Single-Plaquette Resummation-Ansatz Test Harness
 
-**Date:** 2026-05-30
+**Date:** 2026-05-30; 2026-06-07 current-coefficient refresh; 2026-06-07
+conditional-coefficient scope repair; 2026-06-08 coefficient-source packet
+repair.
 **Claim type:** bounded_theorem (methodology / test harness)
 **Status authority:** independent audit lane only. This source note does not
 set or predict an audit outcome for any cited claim_id; all statuses quoted
@@ -10,32 +12,67 @@ below are read-offs from `docs/audit/data/audit_ledger.json`
 
 ## 0. Scope and what this note is for
 
-This note documents a **test harness**, not a closure. It builds the
-machinery that will **test** the two remaining unproven analytic
-continuation ansaetze for the beta=6 SU(3) Wilson single-plaquette lane the
-moment the parallel exact-coefficient cycle supplies the connected
-coefficients beyond the retained order-`beta^5` term.
+This note documents a **test harness**, not a closure. It builds and now runs
+the machinery that tests the two remaining unproven analytic continuation
+ansaetze for the beta=6 SU(3) Wilson single-plaquette lane against the current
+supplied connected-coefficient packet.
+
+### 2026-06-07 audit-scope repair
+
+The current auditable claim is intentionally narrower than a retained
+coefficient-packet theorem:
+
+- **Claim supported here:** conditional-on-supplied-coefficients harness
+  arithmetic. Given the exact `d_6..d_11` values supplied by the paired
+  coefficient source packet, the runner checks the d-log-Pade and
+  tadpole/geometric test mechanics, their FALSIFY/SUPPORT classifications, the
+  proxy-method sanity checks, and the forward comparator diagnostics.
+- **Not claimed here:** a retained derivation of the `d_6..d_11` coefficient
+  packet, a retained beta=6 value, or a retained closure of the analytic
+  continuation route.
+- **Non-load-bearing context:** the beta=6 research map and the Monte-Carlo
+  plaquette value are comparator/context surfaces only. They do not supply a
+  load-bearing derivation input for this claim.
+- **Audit boundary:** if a later review wants more than conditional harness
+  arithmetic, it must supply a retained-grade one-hop coefficient-packet
+  authority for exact `d_6..d_11` or inline a derivation of those coefficients.
+
+### 2026-06-08 coefficient-source packet repair
+
+The audit blocker for this row was not a mathematical sign error in the harness;
+it was that the exact `d_6..d_11` packet was visible to the harness as local
+values rather than as a source-verifiable one-hop packet. This repair wires the
+harness to the exact coefficient runner
+[`scripts/frontier_beta6_d11_coefficient_2026_06_04.py`](../scripts/frontier_beta6_d11_coefficient_2026_06_04.py)
+and checks the paired cache
+[`logs/runner-cache/frontier_beta6_d11_coefficient_2026_06_04.txt`](../logs/runner-cache/frontier_beta6_d11_coefficient_2026_06_04.txt)
+for a fresh source SHA, `SCORECARD: PASS=9 FAIL=0`, and the exact values through
+`d_11`.
+
+This closes the source-packet/provenance defect for the harness. It does not
+turn the harness into a retained coefficient theorem and does not close
+`beta=6`; coefficient retention and beta=6 closure remain separate audit
+questions.
 
 The lane's open object and blocked-route catalog are recorded in the research
 map [`BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md).
 That note identifies exactly one not-yet-blocked (long-shot) analytic route -
 **d-log-Pade resummation of the connected-shell series** — and a tadpole /
-boosted-PT comparator, and names the binding constraint: there is no exact
-connected-coefficient data beyond the order-`beta^5` term, and producing more
-collides with the treewidth-29 infeasibility wall
-(`su3_wigner_l3_treewidth_infeasible_2026-05-04`, `audited_conditional`
-on 2026-05-29).
+boosted-PT comparator. The original 2026-05-30 version was pending because no
+connected-coefficient data beyond the retained order-`beta^5` term was wired into
+the harness. The current repo has since supplied rational `d_6..d_11` values in
+the beta6 coefficient source packet, so this refresh consumes that packet and
+records the live SUPPORT/FALSIFY outcomes conditional on it.
 
-This harness is **independent of** that exact-coefficient computation. It is
-the part that can be built now: a framework that, given the connected
-coefficient series of
+This harness is **downstream of but not a replacement for** the exact-coefficient
+computation. It evaluates the connected coefficient series of
 
 ```text
 Delta(beta) = P_full(beta) - P_1plaq(beta),    Delta(beta) = sum_{n>=5} d_n beta^n,
 ```
 
-with `d_5 = 1/472392` retained and `d_6, d_7, ...` to-be-supplied, runs the
-two tests below and reports a clear PASS/FAIL scorecard.
+with `d_5 = 1/472392` retained and `d_6..d_11` loaded from the paired source
+packet, runs the two tests below, and reports a clear PASS/FAIL scorecard.
 
 ### What this note explicitly does NOT claim (honesty, non-negotiable)
 
@@ -44,11 +81,15 @@ two tests below and reports a clear PASS/FAIL scorecard.
   `P_inf = 0.59400 +/- 0.00037`; also quoted as 0.5934) is a **Monte-Carlo
   comparator**, **not** a derivation input. Nothing in the harness is fitted
   to it. The harness **tests** whether an ansatz fixed by the **low-order
-  exact coefficients** independently reaches it — it does not tune to it.
-- The only exact connected coefficient currently in the repo is the retained
-  order-`beta^5` coefficient `d_5 = 1/472392`
-  (`gauge_vacuum_plaquette_mixed_cumulant_audit_note`). `d_6, d_7` enter the
-  harness only as parameters. Supplying them activates the test.
+  supplied coefficients** independently reaches it — it does not tune to it.
+- The supplied connected coefficients consumed by the harness are
+  `d_5 = 1/472392`, `d_6 = 7/5668704`, `d_7 = 5/17006112`,
+  `d_8 = 5/272097792`, `d_9 = -2035/264479053824`,
+  `d_10 = -10483/5289581076480`, and
+  `d_11 = -13/3967185807360`. The harness now loads these values from the
+  paired coefficient source runner and verifies the d11 cache freshness. This
+  packet activates the test; this note does not derive the packet or close
+  beta=6.
 
 ## 1. The two ansaetze under test
 
@@ -107,42 +148,56 @@ comparator and sensitivity to the next unknown coefficient.
 
 ## 3. Predictive falsification test (the decisive one)
 
-Given only the lower-order connected series, the harness computes what each
-ansatz **predicts** for the next connected coefficient, written as a one-line
-call so that comparing exact-vs-predicted is an immediate falsify-or-support
-the moment the parallel cycle drops in the exact coefficient.
+Given a lower-order connected series, the harness computes what each ansatz
+**predicts** for the next connected coefficient and compares that prediction
+against the next supplied coefficient. This refresh uses the supplied
+`d_5..d_11` packet.
 
-### 3a. Each ansatz's prediction from the currently-known series
+### 3a. Activation thresholds and current supplied-coefficient outcomes
 
-With only `d_5 = 1/472392` known, **neither** ansatz makes a falsifiable
-prediction for `d_6`. One connected coefficient cannot fix a non-trivial
-continuation (the tadpole geometric ratio needs two contiguous coefficients;
-a `[>=1/>=1]` d-log Pade re-expansion needs four). The harness reports this
-honest null rather than fabricating a value. This is itself a finding: **the
-exact `d_6` alone is not sufficient for the d-log-Pade predictive test**;
-the activation thresholds are
+With only `d_5 = 1/472392`, **neither** ansatz made a falsifiable prediction
+for `d_6`. One connected coefficient cannot fix a non-trivial continuation
+(the tadpole geometric ratio needs two contiguous coefficients; a
+`[>=1/>=1]` d-log Pade re-expansion needs four). That historical null remains
+as a regression check. The activation thresholds are
 
-| ansatz | contiguous exact coeffs needed | predicts |
+| ansatz | contiguous supplied coeffs needed | predicts |
 |---|---|---|
 | tadpole / geometric | 2 (`d_5, d_6`) | `d_7` |
 | d-log-Pade | 4 (`d_5 .. d_8`) | `d_9` |
 
-So the **first** new exact coefficient `d_6` immediately activates the
-**tadpole/geometric** predictive test (the cheapest decisive falsifier),
-while the **d-log-Pade** predictive test activates only after three further
-orders.
+The current supplied packet activates both tests. The runner reports:
 
-### 3b. The one-line drop-in
+- **tadpole / geometric:** `d_5,d_6 -> d_7` predicts
+  `7.2032926e-7`, while supplied `d_7 = 2.9401194e-7`, relative error `1.45`.
+  This is a FALSIFY result under the 5% window.
+- **d-log-Pade earliest activation:** `d_5..d_8 -> d_9` predicts
+  `-1.0534861e-8`, while supplied `d_9 = -7.6943711e-9`, relative error
+  `0.3692`. This is also a FALSIFY result.
+- **d-log-Pade stability:** the intermediate `d_10` check is narrowly inside
+  the 5% window, but the full-current `d_5..d_10 -> d_11` check predicts
+  `-1.8277392e-11`, while supplied `d_11 = -3.2768821e-12`, relative error
+  `4.578`. The correct interpretation is instability, not closure.
 
-The runner exposes a single drop-in point (`EXACT_HIGHER = {6: ..., 7: ...}`).
-The moment the parallel cycle delivers an exact coefficient, add it, rerun,
-and read the `SUPPORT` / `FALSIFY` line. The runner self-tests this path on
-synthetic coefficients (Section 4c of the runner): it confirms the machinery
+### 3b. Current supplied coefficient packet
+
+The runner's `SUPPLIED_HIGHER_COEFFS` packet is:
+
+```python
+{
+    6: "7/5668704",
+    7: "5/17006112",
+    8: "5/272097792",
+    9: "-2035/264479053824",
+    10: "-10483/5289581076480",
+    11: "-13/3967185807360",
+}
+```
+
+The runner still self-tests the comparison path on synthetic coefficients: it
 returns `SUPPORT` for a coefficient consistent with a pure single-pole
-continuation (relative error ~`1e-61`) and `FALSIFY` for a coefficient that
-deviates 50% from the predicted value (relative error `0.33`, outside the 5%
-support window). The test path is therefore wired and demonstrably live before
-any physical coefficient lands.
+continuation and `FALSIFY` for a coefficient that deviates 50% from the
+predicted value. The live physical packet uses the same comparison path.
 
 ## 4. Convergence behavior (controlled complex-pair proxy)
 
@@ -170,24 +225,26 @@ handle). On this proxy:
 This certifies only that the **method works on a function of the conjectured
 analytic class**. It says nothing about whether the **physical** `Delta(beta)`
 is of that class — that analyticity premise is unproven (research map
-Section 4b) and is precisely what the predictive test against the exact
-coefficients will probe.
+Section 4b) and is precisely what the predictive test against the supplied
+coefficients probes inside this conditional harness.
 
 ## 5. Honest test status
 
 - The d-log-Pade method is sound on a controlled complex-pair proxy.
-- On the physical series, only **one** exact connected coefficient (`d_5`) is
-  known — too few for either ansatz to make a falsifiable prediction, and a
-  single term reaches only ~10% of the comparator gap. **Neither ansatz can be
-  said to reach 0.594 yet;** asserting so would be fitting to the comparator,
-  the exact circularity the no-go ledger warns against.
+- On the physical series, supplied `d_5..d_11` are now consumed. The old
+  `PENDING d_6` state is retired.
+- The tadpole/geometric ansatz is falsified conditional on the supplied
+  coefficients.
+- The d-log-Pade ansatz is unstable rather than converged: `d_9` and `d_11`
+  falsify while `d_10` narrowly supports. This is not clean convergence to
+  `0.5934` or `0.594`.
 - Tadpole / boosted-PT of the bare single-plaquette series does not reach
   0.594 (it collapses to 0, or convention-dependent lands on the blocked
   0.611 / 0.8740).
-- **Test status: PENDING** the exact `d_6` (and `d_7`, `d_8`). The
-  predictive falsification is wired as a one-line drop-in. **This harness
-  evaluates the route; it does not close beta=6.** `0.594` is a Monte-Carlo
-  comparator, never a derivation input.
+- **Current test status:** simple tadpole/geometric FALSIFY; d-log-Pade
+  instability/no-closure. **This harness evaluates the route; it does not
+  close beta=6.** `0.594` is a Monte-Carlo comparator, never a derivation
+  input.
 
 ## 6. Reproduce
 
@@ -195,10 +252,12 @@ coefficients will probe.
 python3 scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py
 ```
 
-The runner prints a per-test PASS/FAIL scorecard (20 PASS / 0 FAIL at
-submission) covering: the recomputed retained constants; the proxy singularity
+The runner prints a per-test PASS/FAIL scorecard (`PASS=30 FAIL=0` after the
+2026-06-08 source-packet repair) covering: coefficient-source/cache provenance;
+the recomputed retained constants; the proxy singularity
 localization and forward convergence; the proxy predictive next-coefficient
-sharpening; the honest single-coefficient null on the physical series; the
+sharpening; the historical single-coefficient null on the physical series; the
+supplied `d_5..d_11` predictive FALSIFY/SUPPORT comparisons; the
 tadpole fixed-point findings (trivial collapse and the blocked
 Drouffe-Itzykson branch); the synthetic-coefficient self-test of the
 SUPPORT/FALSIFY machinery; and the forward `<P>(6)` sensitivity band.
@@ -206,7 +265,11 @@ SUPPORT/FALSIFY machinery; and the forward `<P>(6)` sensitivity band.
 ## 7. Key files
 
 - [`scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py`](../scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py)
+- [`logs/runner-cache/frontier_beta6_resummation_ansatz_test_2026_05_30.txt`](../logs/runner-cache/frontier_beta6_resummation_ansatz_test_2026_05_30.txt)
+- [`scripts/frontier_beta6_d11_coefficient_2026_06_04.py`](../scripts/frontier_beta6_d11_coefficient_2026_06_04.py)
+- [`logs/runner-cache/frontier_beta6_d11_coefficient_2026_06_04.txt`](../logs/runner-cache/frontier_beta6_d11_coefficient_2026_06_04.txt)
 - [`BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md)
+- [`BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md`](BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md)
 - [`GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md)
 - [`GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md)
 - [`PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md)

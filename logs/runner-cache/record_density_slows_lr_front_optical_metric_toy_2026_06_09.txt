@@ -1,0 +1,99 @@
+===== runner cache v1 =====
+runner: scripts/record_density_slows_lr_front_optical_metric_toy_2026_06_09.py
+runner_sha256: d291bacff36c4650ba840526d0bf782d8f425782d163f71adab16eadf0b12cad
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 13.31
+status: ok
+----- stdout -----
+========================================================================================
+RECORD DENSITY SLOWS THE LOCAL FRONT -> OPTICAL METRIC: EXACT 1D TOY
+========================================================================================
+lattice units t=1; carrier K0=2*pi/5, E0=-0.618034, v_bare=1.902113; headline g=0.4
+
+----------------------------------------------------------------------------------------
+S1: the model and the exact bridge (symbolic derivations, not assertions)
+----------------------------------------------------------------------------------------
+  [PASS] S1.1 record = site state registered into a FROZEN environment qubit (no self-Hamiltonian): the one-excitation sector of the full 2^7 qubit model IS the quadratic dangling-mode model (spectra equal)  --  max|dE|=6.66e-16
+  [PASS] S1.2 frozen record mode eliminated exactly: energy-dependent on-site weight eps_eff(E) = g^2/E (sympy)  --  eps_eff=g**2/E
+  [PASS] S1.3a single-record transmission DERIVED from the lattice Schroedinger matching: tau(E) = 1/(1 + i g^2/(2 t E sin k)) with E = -2t cos k (sympy)  --  residual=1.4887730680223575e-126
+  [PASS] S1.3b unitarity |tau|^2 + |r|^2 = 1 at the carrier (exact evaluation)  --  residual=1.86e-141
+  [PASS] S1.4 per-record Wigner delay, exact sign structure (sympy): tau_W = [2tg^2/(4t^2 f^2 + g^4)] f'(E) with f = E sin k, so tau_W > 0 exactly on the INNER band |E| < sqrt(2) t (this includes the carrier and every fast mode) and < 0 only in the slow band-edge skin |E| > sqrt(2) t -- verified at the carrier, on inner-band grids both sides of the antiresonance, and at E=-1.9, +1.9 (the honest band-edge advance; the FRONT statement S2.3 is carrier-independent)  --  tau_W(E0)=0.193389; sign flips at E=+/-sqrt(2)t
+  [PASS] S1.5 antiresonance: tau(E -> 0) = 0 (sympy limit) -- at the frozen pointer energy a single record is perfectly opaque (the full-record/gap limit)  --  limit=0
+  [PASS] S1.6 n=1 medium exact inverse dispersion eps(E) = E - g^2/E (sympy Bloch elimination); spectral GAP around the pointer energy = 2(sqrt(t^2+g^2)-t), which closes as g -> 0  --  gap=-2*t + 2*sqrt(g**2 + t**2)
+  [PASS] S1.7 closed-form medium group velocity v_med(E) = v_k(eps(E)) / (1 + g^2/E^2) (deps/dE = 1 + g^2/E^2, sympy)  --  v_med(E0,g=0.4) = 1.386644 vs v_bare 1.902113
+
+----------------------------------------------------------------------------------------
+S2: deliverable (a) -- v_eff(n) DECREASES monotonically with record density (frequency domain)
+----------------------------------------------------------------------------------------
+    n=0.125: Bloch band E=-0.618018  v_g(E0)=1.794800
+    n=0.250: Bloch band E=-0.618001  v_g(E0)=1.712802
+    n=0.500: Bloch band E=-0.618001  v_g(E0)=1.481664
+    n=1.000: Bloch band E=-0.618156  v_g(E0)=1.386783
+  [PASS] S2.1 carrier group velocity v_g(E0; n) strictly decreasing in record density n in {0, 1/8, 1/4, 1/2, 1} (exact Bloch + Hellmann-Feynman)  --  1.9021 > 1.7948 > 1.7128 > 1.4817 > 1.3868
+  [PASS] S2.2 n=1 Bloch velocity matches the S1.7 closed form  --  |diff|=1.39e-04
+    n=0.125: front speed v_F = 1.798620
+    n=0.250: front speed v_F = 1.737871
+    n=0.500: front speed v_F = 1.639608
+    n=1.000: front speed v_F = 1.564942
+  [PASS] S2.3 FRONT speed v_F(n) = max_k |dE/dk| (the in-model information front, v_LR analogue) strictly decreasing in n and < 2t for every n > 0  --  2.0000 > 1.7986 > 1.7379 > 1.6396 > 1.5649
+  [PASS] S2.4 limit n*g^2 -> 0 restores the bare front: v_F(g=1e-4, n=1) = 2t within 1e-3 (no records, no slowing)  --  v_F=1.999858
+  [PASS] S2.5 'density' is well-defined: dilution (every 2nd site, g0) and uniform weighting (every site, g0/sqrt(2), i.e. g^2 halved) give the SAME velocity shift at weak coupling within 5%  --  shift_dilute=0.05116 shift_uniform=0.04877
+  [PASS] S2.6 transfer-matrix scattering phase (independent frequency-domain route, no Bloch input): bulk per-record-site group delay = least-squares slope of the exact slab Wigner delay over W=200..400 equals 1/v_med - 1/v_bare within 0.5%  --  TM slope=0.195741 closed-form=0.195435 |T|_120=0.9990
+  [PASS] S2.7 controlled coupling scaling: per-record delay tau_W proportional to g^2 (tau_W(0.2)/tau_W(0.1) = 4 within 3%) and the n=1 front-speed law v_F = 2t - sqrt(2) g + O(g^2) (Richardson of (2t-v_F)/g -> sqrt(2) within 1e-3)  --  ratio=3.9957; Richardson=1.414110 vs sqrt2=1.414214
+
+----------------------------------------------------------------------------------------
+S3: deliverable (c) + the independent TIME-DOMAIN method and controls
+----------------------------------------------------------------------------------------
+    bare arrival 304.76 (plateau 1.0000); W=120 delay 24.00 (pred 23.45, plateau 0.9904); W=240 delay 47.79 (pred 46.90, plateau 0.9896)
+  [PASS] S3.1 exact wave-packet arrival through a W=120 record slab: measured delay matches the frequency-domain prediction W (1/v_med - 1/v_bare) within 5% (two INDEPENDENT methods agree)  --  delay=24.00 pred=23.45 ratio=1.0235
+  [PASS] S3.2 two-width subtraction (W=240 minus W=120) cancels the O(1) boundary terms: per-site time-domain delay matches the closed form within 3%  --  wp=0.198255 closed-form=0.195435
+  [PASS] S3.3 in-model information front (exact one-particle propagator light cone, |G(x,t)|^2 > 1e-6 threshold): cone slope ratio records/bare matches the Bloch front-speed ratio v_F(1)/2t within 2% (absolute slopes within 5%) -- the Lieb-Robinson-style statement reproven in-model, not imported  --  slopes: bare 2.0500 (2t), records 1.6000 (vF=1.5649)
+  [PASS] S3.4 the delay is physical, not convention: under arbitrary local phase redefinitions (random U(1) frame on every site AND every record mode) all densities/arrival observables are unchanged to machine precision  --  max density diff=2.78e-16
+    pointer copy (g n sigma^x, exact 2^8-channel enumeration): delay +0.205, plateau 0.7238
+    amplitude registration (frozen-mode copy): delay +1.712, plateau 0.9850
+  [PASS] S3.5 class-dependence control (honest): the projective pointer-copy record (g n_x sigma^x_a; exact +/-g channel enumeration, no sampling) ATTENUATES (plateau < 0.8) with small delay, while the amplitude-registration record DELAYS (> 5x the pointer delay) with little attenuation (plateau > 0.95): the slowing is a property of the registration class this toy builds  --  delays 1.712 vs 0.205; plateaus 0.985 vs 0.724
+  [PASS] S3.6 full-record limit: a packet AT the pointer energy (k0=pi/2, E=0, the S1.5 antiresonance / S1.6 gap) is blocked: transmitted weight < 1e-3 while the bare chain transmits > 0.9 -- records at full back-action close the cone (v_eff -> 0 / gap), the other end of the dial from S2.4  --  records 1.02e-09 vs bare 1.0000
+  [PASS] S3.7 the MECHANISM, quantified: measured time-integrated record-mode occupation (W=240 slab) equals the closed-form registration dwell W f/v_k' (f = g^2/E^2) within 10%, and delay = dwell + refraction (W(1/v_k'-1/v_bare) < 0) holds within 10%: the front is slow because amplitude DWELLS in the record modes while being registered  --  dwell meas=51.77 pred=51.10; dwell+refr=46.90 vs delay=47.79
+  [PASS] S3.8 windowed imprint (honest): after the packet exits, a nonzero record-mode occupation REMAINS in the slab (> 5e-4) and persists to the end of the window (>= half its t=330 value; the slow residual leak of a unitary toy is reported, not hidden)  --  A(330)=1.50e-03 A(391.5)=1.44e-03
+
+----------------------------------------------------------------------------------------
+S4: deliverable (b) -- the optical-metric map for a smooth record-density profile (and the clock-rate no-go boundary)
+----------------------------------------------------------------------------------------
+    record-density bump n(x) = exp(-(x-700)^2 / (2*60^2)), g(x)^2 = g0^2 n(x), g0=0.45
+    x:            400      550      640      700      760      850     1000
+    n(x):      0.0000   0.0439   0.6065   1.0000   0.6065   0.0439   0.0000
+    v_eff:     1.9021   1.8633   1.4797   1.2932   1.4797   1.8633   1.9021
+    Phi(x):    0.0000  -0.0202  -0.1974  -0.2689  -0.1974  -0.0202   0.0000
+  [PASS] S4.1 the optical-metric map EXHIBITED: Phi(x) = (v_eff(x)^2 - v_bare^2) / (2 v_bare^2) <= 0 everywhere, = 0 outside the record support, minimum at the density peak, and pointwise ordered: MORE record density <=> LOWER Phi (ds^2 = -(1 + 2 Phi(x)) (v_bare dt)^2 + dx^2, null cone dx/dt = v_eff(x))  --  Phi_min=-0.2689 at x=700
+  [PASS] S4.2 null-geodesic (eikonal) time of the optical metric matches the exact packet: measured delay through the smooth profile = sum_x (1/v_eff(x) - 1/v_bare) within 6% -- propagation follows ds^2 = 0 of the exhibited metric  --  measured=37.70 eikonal=37.24 plateau=1.0000
+  [PASS] S4.3 the clock-rate no-go boundary RESPECTED and demonstrated: rescaling the supplied clock unit (H -> 1.7 H) rescales every absolute speed by 1.7 but leaves Phi(x) (the dimensionless cone-slope field = the conformal-class datum) invariant to machine precision: the toy fixes the conformal class ONLY; the absolute scale remains the supplied clock unit (the clock-rate no-go boundary, cited in the note)  --  max|dPhi|=1.55e-16
+
+========================================================================================
+TOTAL: PASS=26 FAIL=0
+========================================================================================
+
+VERDICT: the named-not-built step is BUILT, as a toy, and the posit SURVIVES in the
+registration class: in an exactly-solved 1D chain where a record site is a site whose
+occupation amplitude is registered into a frozen environment qubit, the local front
+speed v_eff strictly DECREASES with record density n -- monotonically across
+n in {0, 1/8, 1/4, 1/2, 1} -- verified by two independent methods (exact Bloch/
+transfer-matrix frequency domain; exact wave-packet and propagator-cone time domain)
+that agree to within a few percent, with the per-record Wigner delay positive across
+the inner band |E| < sqrt(2) t (sign structure at the band edges verified exactly;
+the front-speed statement is carrier-independent). The mechanism: registration
+dwell, quantified exactly. A smooth record-density
+bump n(x) yields the explicit optical-metric potential Phi(x) = (v_eff^2 - v_bare^2)/
+(2 v_bare^2) <= 0 whose eikonal (null-geodesic) time matches the exact packet arrival.
+Controls: gauge-invariant; n -> 0 and g -> 0 restore the bare cone; at the pointer
+energy full records close the cone (gap/antiresonance); the supplied-clock rescaling
+leaves Phi(x) invariant (conformal class only -- the clock-rate no-go boundary is
+respected, the scale is NOT derived). Honest class finding: a projective pointer-copy
+record attenuates instead of delaying -- the slowing built here is a property of the
+amplitude-registration coupling class, reported as such. This is a TOY: the hopping
+and registration couplings are supplied model dynamics; nothing here derives the
+metric from the axioms, fixes the conformal/clock normalization, or touches Einstein
+dynamics. Sets no audit status.
+
+----- stderr -----
+

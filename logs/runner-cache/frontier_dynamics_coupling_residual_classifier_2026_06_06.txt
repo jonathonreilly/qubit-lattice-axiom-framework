@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dynamics_coupling_residual_classifier_2026_06_06.py
+runner_sha256: 19b6b6b8dd10c39a6a40338c5d5f804f13d47fdb8726e4e5c9ed3aa765442529
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
+
+========================================================================
+Record-preserving Hamiltonians form a coupling family
+========================================================================
+[PASS] R1 record atom projectors resolve identity
+[PASS] R2 H(g)=g P1 preserves record atom P0 for arbitrary g
+[PASS] R3 H(g)=g P1 preserves record atom P1 for arbitrary g
+[PASS] R4 preservation equations impose no condition g=constant
+       g remains a free symbol
+
+========================================================================
+Different couplings pass the same preservation gate
+========================================================================
+[PASS] C1 zero dynamics preserves records
+[PASS] C2 nonzero unit coupling preserves records
+[PASS] C3 different nonzero coupling also preserves records
+[PASS] C4 the three Hamiltonians are distinct
+
+========================================================================
+Transfer/rate normalization is also not fixed by preservation
+========================================================================
+[PASS] T1 transfer is diagonal and preserves record atoms for arbitrary g,a
+[PASS] T2 same transfer can arise from g=1,a=2 and g=2,a=1
+       T=Matrix([[1, 0], [0, exp(-2)]])
+[PASS] T3 preservation fixes neither coupling nor clock interval separately
+
+========================================================================
+Multiple invariant terms leave coefficient ratios open
+========================================================================
+[PASS] M1 two independent invariant terms commute with all four record atoms
+[PASS] M2 coefficient ratio x/y remains free under preservation
+[PASS] M3 changing x/y changes spectrum while preserving records
+
+========================================================================
+Boundary certificate
+========================================================================
+[PASS] B1 record preservation can force a commutant/class condition, not coupling values
+[PASS] B2 nontriviality is not forced because H=0 passes the gate
+[PASS] B3 rate/coupling split needs an extra clock/action premise
+[PASS] B4 coefficient ratios need an extra variational/minimality/normalization premise
+
+========================================================================
+Scorecard
+========================================================================
+PASS=18 FAIL=0
+FINDING: record preservation constrains an allowed dynamics class, but leaves coupling magnitude, coefficient ratios, nontriviality, and clock-rate normalization open.
+
+----- stderr -----
+

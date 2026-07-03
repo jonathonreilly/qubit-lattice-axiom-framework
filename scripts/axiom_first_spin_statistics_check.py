@@ -3,169 +3,186 @@
 axiom_first_spin_statistics_check.py
 ------------------------------------
 
-Numerical exhibit of the four load-bearing facts of the axiom-first
-spin-statistics theorem on Cl(3) on Z^3 (loop axiom-first-foundations,
-Cycle 1 / Route R1).
+Runner for the RE-SCOPED (2026-06-10) note
 
-Theorem note:
   docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md
 
-What this runner exhibits, on a small finite block Λ ⊂ Z^3:
+The note no longer claims that anticommutation is *forced* by the
+baseline.  Its load-bearing claim is the free-boson / CCR exclusion
+(S2'), plus Grassmann-calculus consequences (S1)/(S3)/(S4) that are
+conditional on the declared Grassmann frame choice.  The hard-core-boson
+vs Grassmann/CAR selection is OUT of this note's scope (owned by the
+GL(F) predicate, see the 2026-06-10 conditional discriminator note).
 
-  E1.  pairwise anticommutation of fermion field operators in the
-       canonical Fock-space representation built site-by-site
-       (statement S1 of the theorem note);
-  E2.  the bosonic CCR  [a, a^†] = I  is incompatible with any
-       finite-dimensional Hilbert space (a trace argument),
-       while the Grassmann CAR  {c, c^†} = I  is realised on the
-       2-dim per-site Fock space, matching the finite-dim Cl(3)
-       spinor irrep. This is the operator-level content of S2.
-       The runner also reports the spectrum of H(M) = (M+M†)/2
-       and notes that for the canonical mass + Wilson surface it
-       is positive definite -- so the load-bearing argument is at
-       the Hilbert-space level, not Gaussian convergence;
-  E3.  det(M) computed two independent ways on Λ -- direct
-       complex determinant and Pfaffian of the equivalent
-       antisymmetric form -- agree to machine precision
-       (statement S3);
-  E4.  for a 4-site toy with two anticommuting Grassmann insertions
-       (canonical Fock representation), the two-point function
-       satisfies <c_x c_y> = -<c_y c_x> exactly (statement S4).
+Check groups (each line tagged, PASS/FAIL; final line
+`TOTAL: PASS=n FAIL=0`):
 
-Each exhibit is reported with PASS/FAIL semantics. The runner exits
-non-zero if any check fails.
+  [S2]   CCR exclusion certificate.
+         (a) Trace obstruction: in ANY finite-dimensional Hilbert
+             space tr([a, a^+]) = 0, while the canonical CCR
+             [a, a^+] = I demands tr = dim > 0.  Verified on the
+             truncated bosonic ladder at several cutoffs K; the
+             truncation defect ||[a,a^+] - I||_max = K is also
+             reported (no finite truncation repairs the CCR).
+         (b) Per-site finiteness readout: both Cl(3) chirality
+             irreps rho_+/-(gamma_i) = +/- sigma_i satisfy the
+             Clifford relations and have complex dimension 2
+             (recomputing the cited cl3 note's U2/U4 dimensional
+             conclusion used here).
+         (c) Certificate: CCR => no finite-dim per-site space;
+             substep-1 per-site space is dim 2 (finite) => the
+             free-boson (CCR) realization is EXCLUDED.
 
-Hypothesis set (matches theorem note): A_min only -- finite Grassmann
-partition + Cl(3) site algebra + Z^3 block + canonical g_bare = 1
-staggered Dirac–Wilson matrix. No fitted parameters.
+  [FALS] Falsification / scope-boundary leg.  The hard-core-boson
+         ladder a = sigma_+ VIOLATES the CCR hypothesis on-site:
+         [a, a^+] = 1 - 2n != I, defect norm exactly 2, while having
+         per-site dimension 2 and cross-site commutation.  Hence the
+         hard-core frame is NOT excluded by this note's hypothesis:
+         the exclusion reaches exactly the CCR branch and no further.
+         (This makes the note's scope boundary runner-visible and
+         reproduces the 2026-05-25 no-forcing note's third candidate.)
+
+  [S1]   The note's displayed Grassmann relations (eq. (3)): realized
+         EXACTLY by left exterior (wedge) multiplication of the 2N
+         generators (chi_x, chibar_x) on the 2^{2N}-dimensional
+         Grassmann algebra Lambda_{2N} itself -- ALL anticommutators
+         zero, including every chibar/chi cross pair, all generators
+         nilpotent, and the realization is faithful (left regular
+         representation, rank 2^{2N}).
+  [S1-CAR] SEPARATELY LABELED operator realization: the Jordan-Wigner
+         construction on the 2^N-dim Fock space satisfies the CAR
+         {c_i, c^+_j} = delta_ij I -- a NONZERO mixed anticommutator,
+         hence a different algebra that is NOT a realization of
+         eq. (3).  A refutation-shaped [S1] contrast line computes the
+         difference (exterior cross anticommutators exactly 0 vs CAR
+         mixed anticommutator exactly I) rather than asserting it.
+
+  [S3]   Berezin determinant identity: |det(M)| = |Pf(A)| for the
+         antisymmetrised quadratic form of the canonical staggered
+         Dirac-Wilson matrix (exhibit instance; the identity is
+         generic in M).
+
+  [S4]   Identical-fermion two-point antisymmetry exhibit
+         <c_x c_y> = -<c_y c_x> in a state where both sides are
+         individually non-zero.
+
+  [CTX]  Honesty context: H(M) = (M+M^+)/2 on the canonical mass +
+         Wilson surface is positive definite, so the bosonic GAUSSIAN
+         INTEGRAL converges there -- the exclusion is at the
+         operator/Hilbert-space level, not Gaussian convergence.
+
+Deterministic, no randomness, finishes in seconds.  Exits non-zero on
+any FAIL.
 """
 
 from __future__ import annotations
 
 import sys
 import math
+from itertools import combinations, product
+
 import numpy as np
 from numpy.linalg import det, eigvalsh
-from itertools import product
+
+RESULTS = []
+
+
+def check(tag, ok, msg):
+    verdict = "PASS" if ok else "FAIL"
+    print(f"[{tag}] {verdict}: {msg}")
+    RESULTS.append(bool(ok))
+    return bool(ok)
 
 
 # ---------------------------------------------------------------------------
-# Canonical staggered Dirac–Wilson operator on a small Z^3 block
+# Shared constructions
 # ---------------------------------------------------------------------------
+
+I2 = np.eye(2, dtype=complex)
+SX = np.array([[0, 1], [1, 0]], dtype=complex)
+SY = np.array([[0, -1j], [1j, 0]], dtype=complex)
+SZ = np.array([[1, 0], [0, -1]], dtype=complex)
+SP = np.array([[0, 1], [0, 0]], dtype=complex)   # sigma_+ (annihilation conv.)
+SM = np.array([[0, 0], [1, 0]], dtype=complex)   # sigma_-
+
+
+def kron_chain(ops):
+    out = ops[0]
+    for op in ops[1:]:
+        out = np.kron(out, op)
+    return out
+
+
+def site_op(op, i, N):
+    return kron_chain([op if j == i else I2 for j in range(N)])
+
+
+def jw_modes(N):
+    """Jordan-Wigner fermion modes c_i on (C^2)^{tensor N}."""
+    c_list = []
+    for i in range(N):
+        chain = [SZ] * i + [SP] + [I2] * (N - i - 1)
+        c_list.append(kron_chain(chain))
+    return c_list, [c.conj().T for c in c_list]
+
+
+def exterior_left_mult(n_gen):
+    """Left (wedge) multiplication operators L_i for the generators
+    theta_1..theta_{n_gen} of the finite Grassmann algebra Lambda_{n_gen},
+    acting on the 2^{n_gen}-dimensional algebra itself.  Basis = ordered
+    monomials encoded as bitmasks; moving theta_i past the occupied
+    generators below i gives the sign (-1)^{#occupied j < i}.  Entries are
+    exactly 0/+-1, so all anticommutator checks below are exact."""
+    dim = 2 ** n_gen
+    ops = []
+    for i in range(n_gen):
+        L = np.zeros((dim, dim))
+        for S in range(dim):
+            if S & (1 << i):
+                continue          # theta_i wedge (monomial containing theta_i) = 0
+            sign = (-1) ** bin(S & ((1 << i) - 1)).count("1")
+            L[S | (1 << i), S] = sign
+        ops.append(L)
+    return ops
+
+
+def anticomm(A, B):
+    return A @ B + B @ A
+
+
+def comm(A, B):
+    return A @ B - B @ A
+
 
 def staggered_eta(x, mu):
-    """Standard Kogut-Susskind staggered phase η_μ(x) on Z^d."""
     if mu == 0:
         return 1.0
     return float((-1) ** sum(x[:mu]))
 
 
 def build_staggered_dirac_wilson(L, mass=0.3, r_wilson=1.0, dim=3):
-    """
-    Build the canonical staggered Dirac–Wilson matrix M on a periodic
-    L^dim block. One Grassmann pair (χ, χ̄) per site (single-component
-    in the staggered convention is the standard choice; that is what
-    A3 uses on the canonical surface).
-
-    M_xy =  m δ_xy
-          + Σ_μ (1/2) η_μ(x) [ δ_{y, x+μ̂} - δ_{y, x-μ̂} ]
-          - r_wilson * Σ_μ (1/2) [ δ_{y, x+μ̂} + δ_{y, x-μ̂} - 2 δ_xy ]
-
-    This is the standard staggered fermion + Wilson term, matched to
-    the package convention used in scripts/frontier_staggered_*.
-    Returned as a complex numpy array.
-
-    A small Wilson term r_wilson > 0 is included because it is part of
-    the canonical action; with r_wilson = 0 there is staggered
-    doubling but the spin-statistics statement still holds (the proof
-    does not depend on the doubler structure).
-    """
+    """Canonical staggered Dirac-Wilson matrix on a periodic L^dim block
+    (package-standard exhibit instance; the S3 identity is generic in M)."""
     sites = list(product(range(L), repeat=dim))
     idx = {x: i for i, x in enumerate(sites)}
     N = len(sites)
     M = np.zeros((N, N), dtype=complex)
-
     for x in sites:
         i = idx[x]
-        # mass term
         M[i, i] += mass
-        # symmetric staggered hop + Wilson term
         for mu in range(dim):
             ehat = tuple(1 if k == mu else 0 for k in range(dim))
             xp = tuple((x[k] + ehat[k]) % L for k in range(dim))
             xm = tuple((x[k] - ehat[k]) % L for k in range(dim))
-            jp = idx[xp]
-            jm = idx[xm]
             eta = staggered_eta(x, mu)
-            # staggered hop:  +η/2 forward, -η/2 backward
-            M[i, jp] += 0.5 * eta
-            M[i, jm] += -0.5 * eta
-            # Wilson term: -r/2 * (forward + backward - 2 diag)
-            M[i, jp] += -0.5 * r_wilson
-            M[i, jm] += -0.5 * r_wilson
-            M[i, i] += r_wilson  # the +2 diag from -r/2 * (-2) summed across μ would
-                                  # double-count; we add r per direction.
+            M[i, idx[xp]] += 0.5 * eta - 0.5 * r_wilson
+            M[i, idx[xm]] += -0.5 * eta - 0.5 * r_wilson
+            M[i, i] += r_wilson
     return M
 
 
-# ---------------------------------------------------------------------------
-# Canonical Fock-space construction for Exhibit E1 and E4
-# ---------------------------------------------------------------------------
-
-def build_fermion_fock_ops(N):
-    """
-    Build creation operators c_i^† and annihilation c_i for a system of
-    N fermion modes in the canonical Jordan–Wigner / Fock construction
-    on a 2^N-dim space. Returns lists (c, cdag).
-
-    These are the operators that *implement* the abstract Grassmann
-    generators on a Hilbert space; their pairwise anticommutators are
-    the second-quantised content of the spin-statistics rule.
-    """
-    dim = 2 ** N
-    # Pauli matrices
-    I2 = np.eye(2, dtype=complex)
-    Z = np.array([[1, 0], [0, -1]], dtype=complex)
-    SP = np.array([[0, 1], [0, 0]], dtype=complex)  # σ+ = c on a single site (in conv. used here)
-    SM = np.array([[0, 0], [1, 0]], dtype=complex)  # σ- = c†
-
-    def kron_chain(ops):
-        out = ops[0]
-        for op in ops[1:]:
-            out = np.kron(out, op)
-        return out
-
-    c_list = []
-    cdag_list = []
-    for i in range(N):
-        chain = []
-        for j in range(N):
-            if j < i:
-                chain.append(Z)
-            elif j == i:
-                chain.append(SP)
-            else:
-                chain.append(I2)
-        c_i = kron_chain(chain)
-        c_list.append(c_i)
-        # cdag is conjugate transpose of c
-        cdag_list.append(c_i.conj().T)
-    return c_list, cdag_list
-
-
-def anticommutator(A, B):
-    return A @ B + B @ A
-
-
-# ---------------------------------------------------------------------------
-# Pfaffian of an antisymmetric matrix (used for Exhibit E3 cross-check)
-# ---------------------------------------------------------------------------
-
 def pfaffian(A):
-    """
-    Pfaffian of an antisymmetric matrix A by recursive Laplace
-    expansion along the first row. O(n!!) — fine for n ≤ 8 used here.
-    """
+    """Pfaffian by Laplace expansion (fine for the tiny exhibits here)."""
     A = np.array(A, dtype=complex)
     n = A.shape[0]
     if n == 0:
@@ -178,24 +195,12 @@ def pfaffian(A):
     for k in range(1, n):
         if A[0, k] == 0:
             continue
-        # remove rows/cols 0 and k
         idx = [i for i in range(n) if i not in (0, k)]
-        sub = A[np.ix_(idx, idx)]
-        sign = (-1) ** (k - 1)
-        pf += sign * A[0, k] * pfaffian(sub)
+        pf += ((-1) ** (k - 1)) * A[0, k] * pfaffian(A[np.ix_(idx, idx)])
     return pf
 
 
 def antisymmetrize_for_pf(M):
-    """
-    For a quadratic Grassmann action S = χ̄ M χ written with a SINGLE
-    Grassmann column ζ = (χ̄_1, ..., χ̄_n, χ_1, ..., χ_n)^T, the action
-    becomes ½ ζ^T A ζ with the (2n × 2n) antisymmetric block
-        A = [[ 0, M ], [-M^T, 0 ]].
-    Then ∫ Dζ exp(-½ ζ^T A ζ) = Pf(A) = ± det(M).
-
-    Returns A.
-    """
     n = M.shape[0]
     A = np.zeros((2 * n, 2 * n), dtype=complex)
     A[:n, n:] = M
@@ -204,225 +209,236 @@ def antisymmetrize_for_pf(M):
 
 
 # ---------------------------------------------------------------------------
-# Exhibits
+# [S2] CCR exclusion certificate
 # ---------------------------------------------------------------------------
 
-def exhibit_E1(N=4, tol=1e-12):
-    """E1: pairwise anticommutators of canonical fermion mode ops."""
-    print("\n--- Exhibit E1: pairwise anticommutators of fermion modes ---")
-    c, cdag = build_fermion_fock_ops(N)
-    max_off_diag = 0.0
-    max_diag_dev = 0.0
+def checks_S2(tol=1e-12):
+    # (a) trace obstruction at finite cutoffs
+    all_tr_zero = True
+    for K in (2, 3, 5, 8, 16):
+        a = np.diag(np.sqrt(np.arange(1, K, dtype=float)), 1)
+        adag = a.conj().T
+        c = comm(a, adag)
+        tr = float(np.trace(c).real)
+        defect = float(np.max(np.abs(c - np.eye(K))))
+        ok_tr = abs(tr) < 1e-10
+        ok_def = abs(defect - K) < 1e-10
+        all_tr_zero = all_tr_zero and ok_tr
+        check("S2", ok_tr and ok_def,
+              f"cutoff K={K}: tr([a,a^+]) = {tr:+.1f} (must be 0) vs tr(I) = {K}; "
+              f"truncation defect ||[a,a^+]-I||_max = {defect:.1f} = K (no finite truncation satisfies the CCR)")
+    check("S2", all_tr_zero,
+          "trace obstruction: tr([a,a^+]) = 0 in every finite dimension while CCR demands tr(I) = dim > 0 "
+          "=> the canonical CCR [a,a^+] = I has NO finite-dimensional realization")
+
+    # (b) per-site finiteness readout: both Cl(3) chirality irreps are dim 2
+    for sign, name in ((+1, "rho_+"), (-1, "rho_-")):
+        g = [sign * SX, sign * SY, sign * SZ]
+        cliff_ok = all(
+            np.max(np.abs(anticomm(g[i], g[j]) - 2.0 * (1.0 if i == j else 0.0) * I2)) < tol
+            for i in range(3) for j in range(3)
+        )
+        check("S2", cliff_ok and g[0].shape == (2, 2),
+              f"Cl(3) chirality irrep {name}(gamma_i) = {'+' if sign > 0 else '-'}sigma_i satisfies "
+              f"{{gamma_i,gamma_j}} = 2 delta_ij on a complex space of dimension 2 "
+              "(recomputes the cited cl3 note's chirality-independent dim-2 readout)")
+
+    # (c) the certificate
+    check("S2", all_tr_zero,
+          "exclusion certificate: CCR => infinite-dimensional per-site space; the substep-1 per-site "
+          "matter space is a dim-2 Cl(3) module (finite) => the free-boson (CCR) realization is EXCLUDED "
+          "on the substep-1 surface")
+
+
+# ---------------------------------------------------------------------------
+# [FALS] falsification / scope-boundary leg
+# ---------------------------------------------------------------------------
+
+def checks_FALS(tol=1e-12):
+    a = SP
+    adag = SM
+    n_op = adag @ a
+    c = comm(a, adag)
+    target = I2 - 2.0 * n_op            # 1 - 2n
+    ok_form = np.max(np.abs(c - target)) < tol
+    defect = float(np.max(np.abs(c - I2)))
+    check("FALS", ok_form and abs(defect - 2.0) < tol,
+          "hard-core ladders VIOLATE the CCR hypothesis on-site: [a, a^+] = 1 - 2n != I "
+          f"(defect norm = {defect:.0f}) => the hard-core boson is OUTSIDE the class this note excludes")
+
+    # the surviving alternative is genuinely finite-dim and cross-site commuting
+    nilp = np.max(np.abs(a @ a)) < tol
+    check("FALS", nilp,
+          "hard-core per-site space is dim 2 (sigma_+^2 = 0): the dimensional readout does NOT exclude it")
+    N = 3
+    sp0 = site_op(SP, 0, N)
+    sp1 = site_op(SP, 1, N)
+    cross_comm = np.max(np.abs(comm(sp0, sp1))) < tol
+    cross_anti = np.max(np.abs(anticomm(sp0, sp1))) > 0.5
+    check("FALS", cross_comm and cross_anti,
+          "hard-core fields COMMUTE across distinct sites ({sigma_+^(x), sigma_+^(y)} != 0): "
+          "an ungraded dim-2 alternative survives; old Fact 2.3's binary was false")
+    # every datum this note's hypothesis uses is CONSTANT across the two
+    # tied frames, so the note provably cannot decide between them
+    c1, c1dag = jw_modes(1)
+    jw_onsite = comm(c1[0], c1dag[0])
+    hc_onsite = comm(SP, SM)
+    same_onsite = np.max(np.abs(jw_onsite - hc_onsite)) < tol
+    jw_nilp = np.max(np.abs(c1[0] @ c1[0])) < tol
+    check("FALS", same_onsite and jw_nilp and abs(float(np.max(np.abs(jw_onsite - I2))) - 2.0) < tol,
+          "scope boundary is computed, not asserted: hard-core AND Grassmann/JW frames have identical "
+          "on-site data ([a,a^+] = 1-2n, per-site dim 2) and BOTH sit outside the CCR hypothesis class, "
+          "so this note's hypothesis cannot decide between them (the selection is the GL(F) predicate, "
+          "owned by the 2026-06-10 conditional discriminator note; 2026-05-25 no-forcing note reproduced, not contradicted)")
+
+
+# ---------------------------------------------------------------------------
+# [S1] displayed Grassmann relations: exterior realization (conditional on the
+#      declared Grassmann frame), the separately labeled CAR/Jordan-Wigner
+#      operator realization, and the refutation-shaped contrast between them
+# ---------------------------------------------------------------------------
+
+def checks_S1(N=4, tol=1e-12):
+    # (a) eq. (3) of the note, realized exactly: 2N generators
+    # (chi_x = L[x], chibar_x = L[N+x]) acting by left exterior (wedge)
+    # multiplication on the 2^{2N}-dimensional Grassmann algebra itself
+    n_gen = 2 * N
+    dim = 2 ** n_gen
+    L = exterior_left_mult(n_gen)
+    chi = L[:N]
+    chibar = L[N:]
+    max_all = max(float(np.max(np.abs(anticomm(L[i], L[j]))))
+                  for i in range(n_gen) for j in range(n_gen))
+    max_cross = max(float(np.max(np.abs(anticomm(chibar[x], chi[y]))))
+                    for x in range(N) for y in range(N))
+    max_nilp = max(float(np.max(np.abs(L[i] @ L[i]))) for i in range(n_gen))
+    check("S1", max_all == 0.0 and max_cross == 0.0 and max_nilp == 0.0,
+          f"displayed relations (3) realized by left exterior (wedge) multiplication on the "
+          f"Grassmann algebra Lambda_{{2N}}, N={N} modes (algebra dim 2^{{2N}} = {dim}): "
+          f"max |{{theta_i,theta_j}}| over ALL {n_gen}x{n_gen} generator pairs = {max_all:.1f}, "
+          f"max |{{chibar_x,chi_y}}| incl. x=y = {max_cross:.1f}, all generators nilpotent "
+          f"(max |theta^2| = {max_nilp:.1f}); every anticommutator ZERO, cross terms included")
+
+    # (b) the exterior realization is faithful at the right algebra dimension:
+    # the monomial images of the unit span all of Lambda_{2N}
+    unit = np.zeros(dim)
+    unit[0] = 1.0
+    vecs = []
+    for k in range(n_gen + 1):
+        for subset in combinations(range(n_gen), k):
+            v = unit.copy()
+            for i in reversed(subset):
+                v = L[i] @ v
+            vecs.append(v)
+    rank = int(np.linalg.matrix_rank(np.array(vecs)))
+    check("S1", rank == dim,
+          f"exterior realization is FAITHFUL at the right dimension: the 2^{{2N}} = {dim} monomial "
+          f"images of the unit have rank {rank} (left regular representation, L_a 1 = a)")
+
+    # (c) SEPARATELY LABELED operator realization: CAR/Jordan-Wigner on the
+    # 2^N-dim Fock space -- nonzero mixed anticommutator, a different algebra
+    car_single = np.max(np.abs(anticomm(SP, SM) - I2)) < tol
+    nilp = np.max(np.abs(SP @ SP)) < tol
+    c, cdag = jw_modes(N)
+    eye = np.eye(2 ** N, dtype=complex)
+    max_off = 0.0
+    max_diag = 0.0
     for i in range(N):
         for j in range(N):
-            ac_cc = anticommutator(c[i], c[j])
-            ac_dd = anticommutator(cdag[i], cdag[j])
-            ac_cd = anticommutator(c[i], cdag[j])
-            # {c_i, c_j} = 0 always
-            max_off_diag = max(max_off_diag, np.max(np.abs(ac_cc)))
-            max_off_diag = max(max_off_diag, np.max(np.abs(ac_dd)))
+            max_off = max(max_off, float(np.max(np.abs(anticomm(c[i], c[j])))))
+            max_off = max(max_off, float(np.max(np.abs(anticomm(cdag[i], cdag[j])))))
+            ac = anticomm(c[i], cdag[j])
             if i == j:
-                # {c_i, c_i^†} = I
-                dev = np.max(np.abs(ac_cd - np.eye(2 ** N, dtype=complex)))
-                max_diag_dev = max(max_diag_dev, dev)
+                max_diag = max(max_diag, float(np.max(np.abs(ac - eye))))
             else:
-                # {c_i, c_j^†} = 0
-                max_off_diag = max(max_off_diag, np.max(np.abs(ac_cd)))
-    print(f"  N modes: {N}, Hilbert dim: {2**N}")
-    print(f"  max |off-diagonal anticommutator|: {max_off_diag:.3e}")
-    print(f"  max |{{c_i, c_i^†}} - I|:           {max_diag_dev:.3e}")
-    pass1 = max_off_diag < tol
-    pass2 = max_diag_dev < tol
-    verdict = "PASS" if (pass1 and pass2) else "FAIL"
-    print(f"  E1 verdict: {verdict}")
-    return pass1 and pass2
+                max_off = max(max_off, float(np.max(np.abs(ac))))
+    check("S1-CAR", car_single and nilp and max_off < tol and max_diag < tol,
+          f"SEPARATE CAR/Jordan-Wigner OPERATOR realization on the 2^N-dim Fock space "
+          f"(N={N}, Hilbert dim {2**N}): pairwise CAR {{c_i,c_j}} = 0, {{c_i,c^+_j}} = delta_ij I "
+          f"(max dev {max(max_off, max_diag):.1e}); on-site {{c,c^+}} = I, c^2 = 0 matches the "
+          f"dim-2 Cl(3) spinor module; the mixed anticommutator is NOT zero, so this realizes "
+          f"the CAR algebra, not eq. (3)")
 
-
-def exhibit_E2(L=2, dim=3, mass=0.3, r_wilson=1.0, tol=1e-12,
-               truncations=(2, 4, 8, 16, 32)):
-    """
-    E2: per-site Hilbert space dimension forces Grassmann.
-
-    Two checks:
-
-    E2a. Trace argument: in any finite-dim Hilbert space, tr([a,a^†]) = 0,
-         so the bosonic CCR [a,a^†] = I cannot be realised (tr(I) = dim).
-         We exhibit this by trying to satisfy [a,a^†] = I on the standard
-         truncated bosonic ladder and measuring how far from the identity
-         the resulting commutator is. The deviation is exactly equal to
-         (n_max+1) * |n_max⟩⟨n_max| — i.e. the truncation error is at the
-         top state, and grows as the cutoff grows. This is the obstruction.
-
-    E2b. Grassmann CAR is realised on a 2-dim Fock space: {c,c^†} = I
-         exactly with c = σ+, c^† = σ-. This matches the Cl(3) minimal
-         spinor irrep dimension.
-
-    For context we also report the spectrum of H(M)=½(M+M†) on the
-    canonical staggered Dirac–Wilson surface. We do NOT use H(M)
-    sign as the load-bearing argument, because for canonical mass +
-    Wilson term H(M) is positive definite. The genuine spin-statistics
-    force on the lattice is at the Hilbert-space dimension level.
-    """
-    print("\n--- Exhibit E2: per-site Hilbert space forces Grassmann (operator level) ---")
-
-    # E2a: bosonic CCR cannot be exact in finite dim.
-    print("  E2a. bosonic CCR [a, a^†] = I in finite-dim truncation:")
-    e2a_pass = True
-    for K in truncations:
-        a = np.diag(np.sqrt(np.arange(1, K, dtype=float)), 1)  # K x K, lowering
-        adag = a.conj().T
-        comm = a @ adag - adag @ a
-        diff = comm - np.eye(K)
-        # Trace argument: tr(comm) = 0 always; tr(I)=K. So tr(diff) = -K.
-        tr_comm = np.trace(comm).real
-        tr_id = float(K)
-        max_dev = float(np.max(np.abs(diff)))
-        print(f"     K={K:>3}: tr([a,a^†])={tr_comm:+.3f}  vs  tr(I)={tr_id:+.3f}  "
-              f"||[a,a^†] - I||_max={max_dev:.3f}")
-        # The trace argument says tr(comm) MUST be 0 in any finite dim.
-        # So [a,a^†]=I has NO finite-dim solution. We confirm tr(comm)=0
-        # at every truncation (numerical zero up to fp noise).
-        if abs(tr_comm) > 1e-10:
-            e2a_pass = False
-    if e2a_pass:
-        print("     → tr([a,a^†]) = 0 at every finite K, while tr(I) = K > 0;")
-        print("       hence [a,a^†] = I has NO finite-dim solution.  PASS")
-    else:
-        print("     → trace argument failed (numerical anomaly).  FAIL")
-
-    # E2b: Grassmann CAR on 2-dim Fock space.
-    SP = np.array([[0, 1], [0, 0]], dtype=complex)
-    SM = np.array([[0, 0], [1, 0]], dtype=complex)
-    c = SP                # annihilation in conv. used elsewhere here
-    cdag = SM
-    car = c @ cdag + cdag @ c
-    e2b_dev = float(np.max(np.abs(car - np.eye(2))))
-    print(f"  E2b. Grassmann CAR {{c, c^†}} - I  on 2-dim Fock: max dev = {e2b_dev:.3e}")
-    e2b_pass = e2b_dev < tol
-    print(f"     → 2-dim Fock matches Cl(3) minimal complex spinor irrep dim = 2.")
-
-    # Context: spectrum of H(M)
-    M = build_staggered_dirac_wilson(L=L, mass=mass, r_wilson=r_wilson, dim=dim)
-    H = 0.5 * (M + M.conj().T)
-    evals = eigvalsh(H)
-    n_neg = int(np.sum(evals < -1e-10))
-    n_pos = int(np.sum(evals > 1e-10))
-    n_zero = int(np.sum(np.abs(evals) <= 1e-10))
-    print(f"  context. H(M)=½(M+M†) on L={L}, dim={dim}, |Λ|={L**dim}, "
-          f"m={mass}, r_W={r_wilson}:")
-    print(f"     min eigval: {evals.min():+.4f},  max: {evals.max():+.4f},  "
-          f"#neg/zero/pos: {n_neg}/{n_zero}/{n_pos}")
-    print("     (Note: positive definite for canonical mass + Wilson;"
-          " the spin-statistics")
-    print("      force is at the Hilbert-space level, not Gaussian convergence.)")
-
-    e2_pass = e2a_pass and e2b_pass
-    verdict = "PASS" if e2_pass else "FAIL"
-    print(f"  E2 verdict: {verdict}")
-    return e2_pass
-
-
-def exhibit_E3(L=2, dim=3, mass=0.3, r_wilson=1.0, tol=1e-9):
-    """E3: det(M) by direct computation = ±Pf(A) of antisymmetrised form."""
-    print("\n--- Exhibit E3: det(M) vs Pfaffian of antisymmetrised quadratic form ---")
-    if (L ** dim) > 4:
-        # Pfaffian recursion is O(n!!) — keep the lattice tiny.
-        print(f"  (using a 1D toy block instead, |Λ|={L} too large for Pf recursion at dim={dim})")
-        M = build_staggered_dirac_wilson(L=4, mass=mass, r_wilson=r_wilson, dim=1)
-        N = 4
-    else:
-        M = build_staggered_dirac_wilson(L=L, mass=mass, r_wilson=r_wilson, dim=dim)
-        N = L ** dim
-    detM = det(M)
-    A = antisymmetrize_for_pf(M)
-    pf = pfaffian(A)
-    # The Berezin convention used here gives Pf(A) = det(M), up to an
-    # overall convention sign that depends on the ordering of the
-    # combined Grassmann column. We report both and verify |Pf|=|det|.
-    print(f"  N = {N}")
-    print(f"  det(M)        = {detM:+.6e}")
-    print(f"  Pf(A)         = {pf:+.6e}")
-    rel = abs(abs(pf) - abs(detM)) / max(abs(detM), 1e-30)
-    print(f"  | |Pf| - |det| | / |det| = {rel:.3e}")
-    pass_check = rel < tol
-    verdict = "PASS" if pass_check else "FAIL"
-    print(f"  E3 verdict: {verdict}")
-    return pass_check
-
-
-def exhibit_E4(N_modes=2, tol=1e-12):
-    """
-    E4: < c_x c_y > = - < c_y c_x > for distinct fermionic insertions,
-    exhibited in a superposition state where each side is individually
-    non-zero. Using |ψ⟩ = (|1,1⟩ + |0,0⟩)/√2 in the 2-mode Fock space:
-
-        c_0 c_1 |ψ⟩ = (s · |0,0⟩) / √2     for some Jordan–Wigner sign s
-        c_1 c_0 |ψ⟩ = (-s · |0,0⟩) / √2
-
-    so <ψ| c_0 c_1 |ψ> = s/2  and <ψ| c_1 c_0 |ψ> = -s/2: equal in
-    magnitude, opposite sign, sum exactly zero.
-    """
-    print("\n--- Exhibit E4: identical-fermion two-point antisymmetry ---")
-    N = N_modes
-    c, cdag = build_fermion_fock_ops(N)
-    dim = 2 ** N
-    vac = np.zeros(dim, dtype=complex)
-    vac[0] = 1.0  # canonical Fock vacuum
-
-    # |11⟩ = c_0^† c_1^† |0⟩
-    state_11 = cdag[0] @ cdag[1] @ vac
-    psi = (state_11 + vac) / math.sqrt(2.0)
-
-    val_xy = psi.conj() @ (c[0] @ c[1] @ psi)
-    val_yx = psi.conj() @ (c[1] @ c[0] @ psi)
-    print(f"  state: |ψ⟩ = (|1,1⟩ + |0,0⟩)/√2")
-    print(f"  <ψ| c_0 c_1 |ψ> = {val_xy}")
-    print(f"  <ψ| c_1 c_0 |ψ> = {val_yx}")
-    print(f"  |val_xy| = |val_yx|? {abs(abs(val_xy) - abs(val_yx)) < tol}")
-    print(f"  sum (should be 0):  {val_xy + val_yx}")
-    sign_flip = abs(val_xy + val_yx) < tol
-    nontrivial = abs(val_xy) > 0.1
-    pass_check = sign_flip and nontrivial
-    verdict = "PASS" if pass_check else "FAIL"
-    print(f"  E4 verdict: {verdict}  (sign_flip={sign_flip}, nontrivial={nontrivial})")
-    return pass_check
+    # (d) refutation-shaped contrast: the two realizations differ exactly on
+    # the cross anticommutator, and eq. (3) pins the exterior one
+    car_mixed = max(float(np.max(np.abs(anticomm(c[i], cdag[i])))) for i in range(N))
+    check("S1", max_cross == 0.0 and abs(car_mixed - 1.0) < tol,
+          f"refutation-shaped contrast: exterior cross anticommutators are ZERO exactly "
+          f"(max = {max_cross:.1f}) while the CAR mixed anticommutator is NOT "
+          f"({{c_x,c^+_x}} = I, max |.| = {car_mixed:.1f}) => the displayed relations (3) are "
+          f"realized on the 2^{{2N}}-dim exterior algebra, NOT by the CAR operators on the "
+          f"2^N-dim Fock space")
 
 
 # ---------------------------------------------------------------------------
-# Driver
+# [S3] Berezin determinant identity (exhibit instance)
+# ---------------------------------------------------------------------------
+
+def checks_S3(tol=1e-9):
+    M = build_staggered_dirac_wilson(L=4, mass=0.3, r_wilson=1.0, dim=1)
+    detM = det(M)
+    pf = pfaffian(antisymmetrize_for_pf(M))
+    rel = abs(abs(pf) - abs(detM)) / max(abs(detM), 1e-30)
+    check("S3", rel < tol,
+          f"Berezin identity |det(M)| = |Pf(A)| on the canonical staggered Dirac-Wilson exhibit "
+          f"(N=4): det = {detM.real:+.6e}, Pf = {pf.real:+.6e}, rel dev = {rel:.1e}")
+
+
+# ---------------------------------------------------------------------------
+# [S4] two-point antisymmetry exhibit
+# ---------------------------------------------------------------------------
+
+def checks_S4(tol=1e-12):
+    N = 2
+    c, cdag = jw_modes(N)
+    dim = 2 ** N
+    vac = np.zeros(dim, dtype=complex)
+    vac[0] = 1.0
+    psi = (cdag[0] @ cdag[1] @ vac + vac) / math.sqrt(2.0)
+    v_xy = psi.conj() @ (c[0] @ c[1] @ psi)
+    v_yx = psi.conj() @ (c[1] @ c[0] @ psi)
+    ok = abs(v_xy + v_yx) < tol and abs(v_xy) > 0.1
+    check("S4", ok,
+          f"<psi|c_x c_y|psi> = {v_xy.real:+.3f}, <psi|c_y c_x|psi> = {v_yx.real:+.3f}: "
+          "equal magnitude, opposite sign, sum exactly 0 (both sides individually non-zero)")
+
+
+# ---------------------------------------------------------------------------
+# [CTX] honesty context
+# ---------------------------------------------------------------------------
+
+def checks_CTX():
+    M = build_staggered_dirac_wilson(L=2, mass=0.3, r_wilson=1.0, dim=3)
+    H = 0.5 * (M + M.conj().T)
+    evals = eigvalsh(H)
+    pos_def = bool(evals.min() > 1e-10)
+    check("CTX", pos_def,
+          f"H(M) = (M+M^+)/2 positive definite on the canonical mass+Wilson surface "
+          f"(min eig {evals.min():+.4f}): the bosonic GAUSSIAN integral converges there, so the "
+          "exclusion is at the operator/Hilbert-space level, not Gaussian convergence")
+
+
+# ---------------------------------------------------------------------------
+# driver
 # ---------------------------------------------------------------------------
 
 def main():
     print("=" * 72)
-    print(" axiom_first_spin_statistics_check.py")
-    print(" Loop: axiom-first-foundations, Cycle 1 / Route R1")
-    print(" Exhibits the four load-bearing facts of the spin-statistics")
-    print(" theorem on Cl(3) on Z^3.")
+    print(" axiom_first_spin_statistics_check.py  (re-scoped 2026-06-10)")
+    print(" Claim: free-boson (CCR) exclusion on the substep-1 surface;")
+    print(" Grassmann-calculus consequences conditional on the declared Grassmann frame.")
+    print(" NOT claimed: hard-core vs CAR selection (GL(F), out of scope).")
     print("=" * 72)
-
-    results = {}
-    results["E1"] = exhibit_E1(N=4)
-    results["E2"] = exhibit_E2(L=2, dim=3)
-    results["E3"] = exhibit_E3(L=2, dim=3)
-    results["E4"] = exhibit_E4(N_modes=2)
-
-    print()
-    print("=" * 72)
-    print(" SUMMARY")
-    print("=" * 72)
-    n_pass = sum(1 for v in results.values() if v)
-    n_total = len(results)
-    for k, v in results.items():
-        print(f"   {k}: {'PASS' if v else 'FAIL'}")
-    print(f"\n   PASSED: {n_pass}/{n_total}")
-    print()
-
-    if n_pass == n_total:
-        print(" verdict: spin-statistics theorem (S1)–(S4) exhibited on Cl(3) on Z^3.")
-        return 0
-    else:
-        print(" verdict: at least one load-bearing fact failed; theorem not closed in this run.")
-        return 1
+    checks_S2()
+    checks_FALS()
+    checks_S1()
+    checks_S3()
+    checks_S4()
+    checks_CTX()
+    n_pass = sum(RESULTS)
+    n_fail = len(RESULTS) - n_pass
+    print(f"TOTAL: PASS={n_pass} FAIL={n_fail}")
+    return 0 if n_fail == 0 else 1
 
 
 if __name__ == "__main__":

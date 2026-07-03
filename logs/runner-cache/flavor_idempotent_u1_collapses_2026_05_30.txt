@@ -1,25 +1,27 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_idempotent_u1_collapses_2026_05_30.py
-runner_sha256: ca248b74a78e42713c7e0a73eebadf98560070a24d87a35caf130f8cc68dbfca
+runner_sha256: 40794f719146f9f781a57fceb936739057d81644f109ce1098b0f6b0fbc8b5a5
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.07
 status: ok
 ----- stdout -----
-[PASS] K1 idempotent U(1) commutes with C ([U,C]=0): distinct from C-rephasing, DODGES C^3=I
-       Step-4b no-go is narrower than its blanket phrasing
-[PASS] K2 but INERT by conjugation: U H U^dag = H exactly (b, r unchanged) -> pins nothing
-[PASS] K3 only nontrivial action (one-sided H U^dag) breaks Hermiticity -> = the blocked chiral grading
-       value set by FREE psi; = koide_z3_equivariant_anticommuting_no_go (retained_bounded)
-[PASS] K5 ordering monotone in r but NOT indexed by any native parameter (|Q_em|, color non-monotone)
-       r mono=True; |Q_em|(1,1/3,2/3) non-mono; color(1,3,3) non-mono -> only mass-dominance tracks r (tautological)
+[PASS] K1 idempotent U(1) commutes with C and is distinct from generator rephasing
+[PASS] K2 idempotent U(1) is inert by conjugation on circulant H
+[PASS] K3 one-sided action is not a Hermitian signed-readout route
+[PASS] K4 equal doublet charge is idempotent-native; opposite charge is outside span{Ps,Pd}
+       opposite-charge span residual=1.414
+[PASS] K5 supplied charge/color labels do not monotonely index the supplied r order
+       comparator only; not a sector-selector theorem
+[PASS] K6 one-hop authority links are present for chiral, rephasing, and generation-algebra boundaries
+[PASS] K7 source boundary demotes ordering to comparator and keeps selector open
 
-SCORECARD PASS=4 FAIL=0
-VERDICT: flavor-U(1)-on-idempotents COLLAPSES (inert-by-conjugation / blocked-chiral / forbidden-by-charge).
-REFINEMENT: the C^3=I no-go is NARROWER than stated -- the idempotent U(1) genuinely dodges it (commutes
-with C) but is inert. ORDERING: real & native (scale-invariant, no CKM/QCD contamination) but has NO native
-indexing parameter -- the generation C3 algebra is PURE FLAVOR, decoupled from the generation-blind
-charge/color/Yukawa factors. The two gates remain: r=1/2 fixing + a cross-factor sector-selector.
+SCORECARD PASS=7 FAIL=0
+VERDICT: the idempotent-U(1) route is a finite negative boundary.
+It exists and dodges blanket C^3=I wording, but conjugation is inert;
+the one-sided action is non-Hermitian/chiral; and opposite doublet
+charge leaves the idempotent span. The observed ordering table is only
+a comparator, not a framework-native sector-selector theorem.
 
 ----- stderr -----
 

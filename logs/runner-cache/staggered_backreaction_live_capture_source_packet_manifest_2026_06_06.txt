@@ -1,0 +1,109 @@
+===== runner cache v1 =====
+runner: scripts/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.py
+runner_sha256: 058323fc798901c942e6df5e2dc3c2ed4cc1c379c8f950008756256336e9c0ed
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+========================================================================================
+STAGGERED BACKREACTION LIVE CAPTURE: SOURCE PACKET MANIFEST
+========================================================================================
+[PASS] manifest_path_exists:packet_checker: scripts/staggered_backreaction_live_capture_packet_check.py
+[PASS] note_links_manifest_path:packet_checker: scripts/staggered_backreaction_live_capture_packet_check.py
+[PASS] manifest_path_exists:capture_harness_source: scripts/frontier_staggered_backreaction_capture_closure_harness.py
+[PASS] note_links_manifest_path:capture_harness_source: scripts/frontier_staggered_backreaction_capture_closure_harness.py
+[PASS] manifest_path_exists:iterative_source: scripts/frontier_staggered_backreaction_iterative.py
+[PASS] note_links_manifest_path:iterative_source: scripts/frontier_staggered_backreaction_iterative.py
+[PASS] manifest_path_exists:cycle_battery_source: scripts/frontier_staggered_cycle_battery.py
+[PASS] note_links_manifest_path:cycle_battery_source: scripts/frontier_staggered_cycle_battery.py
+[PASS] manifest_path_exists:layered_source: scripts/frontier_staggered_layered_backreaction.py
+[PASS] note_links_manifest_path:layered_source: scripts/frontier_staggered_layered_backreaction.py
+[PASS] manifest_path_exists:prototype_helper_source: scripts/frontier_staggered_backreaction_prototype.py
+[PASS] note_links_manifest_path:prototype_helper_source: scripts/frontier_staggered_backreaction_prototype.py
+[PASS] manifest_path_exists:packet_cache: logs/runner-cache/staggered_backreaction_live_capture_packet_check.txt
+[PASS] note_links_manifest_path:packet_cache: logs/runner-cache/staggered_backreaction_live_capture_packet_check.txt
+[PASS] manifest_path_exists:capture_harness_cache: logs/runner-cache/frontier_staggered_backreaction_capture_closure_harness.txt
+[PASS] note_links_manifest_path:capture_harness_cache: logs/runner-cache/frontier_staggered_backreaction_capture_closure_harness.txt
+[PASS] manifest_path_exists:iterative_cache: logs/runner-cache/frontier_staggered_backreaction_iterative.txt
+[PASS] note_links_manifest_path:iterative_cache: logs/runner-cache/frontier_staggered_backreaction_iterative.txt
+[PASS] manifest_path_exists:cycle_battery_cache: logs/runner-cache/frontier_staggered_cycle_battery.txt
+[PASS] note_links_manifest_path:cycle_battery_cache: logs/runner-cache/frontier_staggered_cycle_battery.txt
+[PASS] manifest_path_exists:layered_cache: logs/runner-cache/frontier_staggered_layered_backreaction.txt
+[PASS] note_links_manifest_path:layered_cache: logs/runner-cache/frontier_staggered_layered_backreaction.txt
+[PASS] manifest_path_exists:prototype_helper_cache: logs/runner-cache/frontier_staggered_backreaction_prototype.txt
+[PASS] note_links_manifest_path:prototype_helper_cache: logs/runner-cache/frontier_staggered_backreaction_prototype.txt
+[PASS] source_untruncated:packet_checker: scripts/staggered_backreaction_live_capture_packet_check.py has 5375 bytes
+[PASS] source_marker:packet_checker:import frontier_staggered_backreaction_capture_closure_harness as cap: import frontier_staggered_backreaction_capture_closure_harness as cap present
+[PASS] source_marker:packet_checker:cap.cycle.make_random_geometric: cap.cycle.make_random_geometric present
+[PASS] source_marker:packet_checker:cap.layered._build_layered_family: cap.layered._build_layered_family present
+[PASS] source_marker:packet_checker:ASSERTIONS:: ASSERTIONS: present
+[PASS] source_untruncated:capture_harness_source: scripts/frontier_staggered_backreaction_capture_closure_harness.py has 18888 bytes
+[PASS] source_marker:capture_harness_source:import frontier_staggered_backreaction_iterative as iterative: import frontier_staggered_backreaction_iterative as iterative present
+[PASS] source_marker:capture_harness_source:import frontier_staggered_cycle_battery as cycle: import frontier_staggered_cycle_battery as cycle present
+[PASS] source_marker:capture_harness_source:import frontier_staggered_layered_backreaction as layered: import frontier_staggered_layered_backreaction as layered present
+[PASS] source_marker:capture_harness_source:CLOSURE = ClosureSpec: CLOSURE = ClosureSpec present
+[PASS] source_marker:capture_harness_source:def _measure_cycle_graph: def _measure_cycle_graph present
+[PASS] source_marker:capture_harness_source:def _measure_holdout: def _measure_holdout present
+[PASS] source_untruncated:iterative_source: scripts/frontier_staggered_backreaction_iterative.py has 11883 bytes
+[PASS] source_marker:iterative_source:import frontier_staggered_backreaction_prototype as base: import frontier_staggered_backreaction_prototype as base present
+[PASS] source_marker:iterative_source:class MappingSpec: class MappingSpec present
+[PASS] source_marker:iterative_source:def _apply_mapping: def _apply_mapping present
+[PASS] source_marker:iterative_source:def _normalized_laplacian: def _normalized_laplacian present
+[PASS] source_marker:iterative_source:def _source_density: def _source_density present
+[PASS] source_marker:iterative_source:def _measure: def _measure present
+[PASS] source_marker:iterative_source:def _measure_family: def _measure_family present
+[PASS] source_untruncated:cycle_battery_source: scripts/frontier_staggered_cycle_battery.py has 17189 bytes
+[PASS] source_marker:cycle_battery_source:def make_random_geometric: def make_random_geometric present
+[PASS] source_marker:cycle_battery_source:def make_growing: def make_growing present
+[PASS] source_marker:cycle_battery_source:def _source_density: def _source_density present
+[PASS] source_marker:cycle_battery_source:def _solve_phi: def _solve_phi present
+[PASS] source_marker:cycle_battery_source:def _build_H: def _build_H present
+[PASS] source_marker:cycle_battery_source:def _cn_evolve: def _cn_evolve present
+[PASS] source_untruncated:layered_source: scripts/frontier_staggered_layered_backreaction.py has 15091 bytes
+[PASS] source_marker:layered_source:class GraphFamily: class GraphFamily present
+[PASS] source_marker:layered_source:def _build_layered_family: def _build_layered_family present
+[PASS] source_marker:layered_source:def _source_density: def _source_density present
+[PASS] source_marker:layered_source:def _solve_phi: def _solve_phi present
+[PASS] source_marker:layered_source:def _force_from_phi: def _force_from_phi present
+[PASS] source_marker:layered_source:def _measure_family: def _measure_family present
+[PASS] source_untruncated:prototype_helper_source: scripts/frontier_staggered_backreaction_prototype.py has 20482 bytes
+[PASS] source_marker:prototype_helper_source:class GraphFamily: class GraphFamily present
+[PASS] source_marker:prototype_helper_source:def _make_graphs: def _make_graphs present
+[PASS] source_marker:prototype_helper_source:def _source_density: def _source_density present
+[PASS] source_marker:prototype_helper_source:def _solve_phi: def _solve_phi present
+[PASS] source_marker:prototype_helper_source:def _build_hamiltonian: def _build_hamiltonian present
+[PASS] source_marker:prototype_helper_source:def _evolve_cn: def _evolve_cn present
+[PASS] source_marker:prototype_helper_source:def _force_from_phi: def _force_from_phi present
+[PASS] source_marker:prototype_helper_source:def _measure_family: def _measure_family present
+[PASS] cache_runner_matches:packet_cache: scripts/staggered_backreaction_live_capture_packet_check.py == scripts/staggered_backreaction_live_capture_packet_check.py
+[PASS] cache_sha_fresh:packet_cache: 062e2dedffc603e15365a7f1685b55fbe56cb09d5141759be6ea26e81d6f5536 == 062e2dedffc603e15365a7f1685b55fbe56cb09d5141759be6ea26e81d6f5536
+[PASS] cache_exit_ok:packet_cache: exit_code=0 status=ok
+[PASS] cache_snippet_present:packet_cache: ASSERTIONS: PASS
+[PASS] cache_runner_matches:capture_harness_cache: scripts/frontier_staggered_backreaction_capture_closure_harness.py == scripts/frontier_staggered_backreaction_capture_closure_harness.py
+[PASS] cache_sha_fresh:capture_harness_cache: 8eee0a1c509997614b5bd488fcf048a0b157ee28f4c264e3876ef2528495b969 == 8eee0a1c509997614b5bd488fcf048a0b157ee28f4c264e3876ef2528495b969
+[PASS] cache_exit_ok:capture_harness_cache: exit_code=0 status=ok
+[PASS] cache_snippet_present:capture_harness_cache: STAGGERED BACKREACTION CAPTURE-CLOSURE HARNESS
+[PASS] cache_runner_matches:iterative_cache: scripts/frontier_staggered_backreaction_iterative.py == scripts/frontier_staggered_backreaction_iterative.py
+[PASS] cache_sha_fresh:iterative_cache: 2ac39d606949af29d6171fbd17018a9321dea4b1abf2e70ba434bcca928b3497 == 2ac39d606949af29d6171fbd17018a9321dea4b1abf2e70ba434bcca928b3497
+[PASS] cache_exit_ok:iterative_cache: exit_code=0 status=ok
+[PASS] cache_snippet_present:iterative_cache: STAGGERED BACKREACTION ITERATIVE SOURCE-MAPPING PROBE
+[PASS] cache_runner_matches:cycle_battery_cache: scripts/frontier_staggered_cycle_battery.py == scripts/frontier_staggered_cycle_battery.py
+[PASS] cache_sha_fresh:cycle_battery_cache: d139bef6390002c66cbebdb6c16e7443b05006b65b58870ab65124a241c5ec48 == d139bef6390002c66cbebdb6c16e7443b05006b65b58870ab65124a241c5ec48
+[PASS] cache_exit_ok:cycle_battery_cache: exit_code=0 status=ok
+[PASS] cache_snippet_present:cycle_battery_cache: STAGGERED FERMION
+[PASS] cache_runner_matches:layered_cache: scripts/frontier_staggered_layered_backreaction.py == scripts/frontier_staggered_layered_backreaction.py
+[PASS] cache_sha_fresh:layered_cache: 833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd == 833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd
+[PASS] cache_exit_ok:layered_cache: exit_code=0 status=ok
+[PASS] cache_snippet_present:layered_cache: STAGGERED LAYERED BACKREACTION BRIDGE
+[PASS] cache_runner_matches:prototype_helper_cache: scripts/frontier_staggered_backreaction_prototype.py == scripts/frontier_staggered_backreaction_prototype.py
+[PASS] cache_sha_fresh:prototype_helper_cache: 24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975 == 24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975
+[PASS] cache_exit_ok:prototype_helper_cache: exit_code=0 status=ok
+[PASS] cache_snippet_present:prototype_helper_cache: STAGGERED SOURCE-GENERATED BACKREACTION PROTOTYPE
+========================================================================================
+SUMMARY: STAGGERED CAPTURE SOURCE PACKET PASS=91 FAIL=0
+========================================================================================
+Output written: outputs/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.json
+
+----- stderr -----
+

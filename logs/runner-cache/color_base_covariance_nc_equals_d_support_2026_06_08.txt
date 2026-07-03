@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/color_base_covariance_nc_equals_d_support_2026_06_08.py
+runner_sha256: 100f00e4830b8c643df493cd78a5f6765dd29f7d05066126a768e86ba3a9bb8b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+COLOR-BASE COVARIANCE SUPPORT: N_c = d in a supplied Z^d family
+==============================================================================
+Construction: taste cube {0,1}^d; select 1 axis (weak su(2) fiber); base = d-1 residual axes;
+residual S_{d-1} symmetric block carries color su(N_c).
+
+  d=2: base = 1 residual qubit(s), base_dim=2^1=2;  symmetric block dim = 2  (Sym^1(C^2) = 1+1 = 2);  -> color gl(2) dim 4, su(2) dim 3
+  d=3: base = 2 residual qubit(s), base_dim=2^2=4;  symmetric block dim = 3  (Sym^2(C^2) = 2+1 = 3);  -> color gl(3) dim 9, su(3) dim 8
+  d=4: base = 3 residual qubit(s), base_dim=2^3=8;  symmetric block dim = 4  (Sym^3(C^2) = 3+1 = 4);  -> color gl(4) dim 16, su(4) dim 15
+  d=5: base = 4 residual qubit(s), base_dim=2^4=16;  symmetric block dim = 5  (Sym^4(C^2) = 4+1 = 5);  -> color gl(5) dim 25, su(5) dim 24
+  d=6: base = 5 residual qubit(s), base_dim=2^5=32;  symmetric block dim = 6  (Sym^5(C^2) = 5+1 = 6);  -> color gl(6) dim 36, su(6) dim 35
+[PASS] support 1: symmetric block dim = d for d=2..6 (Sym^{d-1}(C^2), exponent d-1 VARIES) -> N_c = d, co-varies with the lattice dimension (NOT fixed at Sym^2=3)
+       symmetric block dims = [2, np.int64(3), np.int64(4), np.int64(5), np.int64(6)] for d=[2, 3, 4, 5, 6] (== d)
+[PASS] support 2: commutant of residual S_{d-1} on the symmetric isotype = gl(d) (dim d^2) -> color su(d) (dim d^2-1); d=3->su(3), d=4->su(4), d=5->su(5) (Schur-Weyl: End(Sym^{d-1} C^2)=gl(d))
+       d=2: gl(2) dim 4 (=d^2=4), su(2) dim 3; d=3: gl(3) dim 9 (=d^2=9), su(3) dim 8; d=4: gl(4) dim 16 (=d^2=16), su(4) dim 15; d=5: gl(5) dim 25 (=d^2=25), su(5) dim 24
+[PASS] support 3: the fixed 'Sym^2(C^2)=3 for all d' reading equals the construction ONLY at d=3 (fixed exponent 2 vs the construction's exponent d-1); they DIVERGE for every d != 3
+       construction Sym^(d-1) dims [2, np.int64(3), np.int64(4), np.int64(5), np.int64(6)] vs campaign's fixed-Sym^2 [3, 3, 3, 3, 3] -> agree only at d=3
+[PASS] support 4: d=3 cross-check vs GRAPH_FIRST_SU3_INTEGRATION_NOTE -- base dim 4, commutant of the residual swap = gl(3)+gl(1) dim 10, symmetric/antisymmetric block dims 3/1
+       base_dim=4, comm(tau) dim=10 (=gl(3)+gl(1)=10), sym block dim=3, antisym dim=1
+
+SCORECARD PASS=4 FAIL=0
+runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
+VERDICT (counterfactual support, under an assumed Z^d taste-cube family with one selected weak
+axis): the residual base is Sym^{d-1}(C^2) with dim = d; the S_{d-1} commutant on the symmetric
+isotype is gl(d), so the color block is su(d) and N_c = d in this counterfactual family. At the
+Z^3 baseline this gives N_c = 3, CONSISTENT with the retained graph-first SU(3) / CL3_COLOR_AUTO-
+MORPHISM result on the live d=3 surface. This is SUPPORT (it shows N_c tracks dim along the
+assumed family, addressing a matched-pair-coincidence worry); it is NOT a from-axioms derivation
+(the Z^d family, the taste-cube, and the weak-axis selection are assumed, not supplied by
+{Lattice, Quantum, Record}). Audit lane sets the status.
+
+----- stderr -----
+

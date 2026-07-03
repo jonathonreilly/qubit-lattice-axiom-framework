@@ -1,0 +1,95 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_lsp_projective_canonical_kp_equals_p_2026_06_05.py
+runner_sha256: 645cfe028fcc8a6370f03a3f8cb3c3b76c66aeaad020e0f0f39a934a9d4ef660
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.11
+status: ok
+----- stdout -----
+========================================================================
+LSP-projective canonical K_P = P (restricted Step-3 scope) runner
+========================================================================
+
+Reproves K_r = P_r from the canonical Naimark/Lueders isometry, shows
+the V_A = I / phase / permutation restriction is sufficient, and shows
+a general label-mixing V_A breaks K_P = P (K_r^dag K_r = sum_s
+|<r|V_A|s>|^2 P_s != P_r) on nonzero sectors. Literature is comparator only.
+
+
+[Part A] Projective-measurement primitives
+  [PASS] A[rank-1 single qubit {|0><0|,|1><1|}]: P_r P_r' = delta_rr' P_r
+  [PASS] A[rank-1 single qubit {|0><0|,|1><1|}]: P_r^dag = P_r
+  [PASS] A[rank-1 single qubit {|0><0|,|1><1|}]: sum_r P_r = I
+  [PASS] A[rotated-basis qubit (symbolic angle t)]: P_r P_r' = delta_rr' P_r
+  [PASS] A[rotated-basis qubit (symbolic angle t)]: P_r^dag = P_r
+  [PASS] A[rotated-basis qubit (symbolic angle t)]: sum_r P_r = I
+  [PASS] A[rank-2 two-qubit {span(|00>,|11>), complement}]: P_r P_r' = delta_rr' P_r
+  [PASS] A[rank-2 two-qubit {span(|00>,|11>), complement}]: P_r^dag = P_r
+  [PASS] A[rank-2 two-qubit {span(|00>,|11>), complement}]: sum_r P_r = I
+
+[Part B] Canonical dilation is an isometry (V^dag V = I_sys)
+  [PASS] B[rank-1 single qubit {|0><0|,|1><1|}]: V^dag V = I_sys
+  [PASS] B[rotated-basis qubit (symbolic angle t)]: V^dag V = I_sys
+  [PASS] B[rank-2 two-qubit {span(|00>,|11>), complement}]: V^dag V = I_sys
+
+[Part C] Canonical Kraus K_r = P_r (KP) and P E P (PEP)
+  [PASS] C[rank-1 single qubit {|0><0|,|1><1|}]: K_r = <r|_A V = P_r (exact)
+  [PASS] C[rank-1 single qubit {|0><0|,|1><1|}]: K_r^dag E K_r = P_r E P_r for all tested E
+  [PASS] C[rotated-basis qubit (symbolic angle t)]: K_r = <r|_A V = P_r (exact)
+  [PASS] C[rotated-basis qubit (symbolic angle t)]: K_r^dag E K_r = P_r E P_r for all tested E
+  [PASS] C[rank-2 two-qubit {span(|00>,|11>), complement}]: K_r = <r|_A V = P_r (exact)
+  [PASS] C[rank-2 two-qubit {span(|00>,|11>), complement}]: K_r^dag E K_r = P_r E P_r for all tested E
+
+[Part C'] Completion-independence of K_r (numpy)
+  [PASS] C'[K_r from isometry] = P_r (numerical)
+  [PASS] C'[two completions are unitary]
+  [PASS] C'[K_r identical (=P_r) across two unitary completions]
+
+[Part D] Sufficiency: V_A = I, outcome-label phase, permutation
+  [PASS] D(a)[V_A=I]: K_r = P_r
+  [PASS] D(b)[phase V_A]: K_r^dag K_r = P_r (exact)
+  [PASS] D(b)[phase V_A]: K_r = e^{i phi_r} P_r (exact)
+  [PASS] D(c)[permutation V_A]: K_r^dag K_r = P_{pi^{-1}(r)} (relabel)
+
+[Part E] Necessity (symbolic): mixing V_A breaks K_P = P
+  [PASS] E[symbolic]: K_r^dag K_r = sum_s |<r|V_A|s>|^2 P_s
+  [PASS] E[symbolic]: at maximal mixing (a=pi/4) K_r^dag K_r != P_r
+
+[Part E'] Necessity (numpy Haar): mixing V_A breaks K_P = P
+  [PASS] E'[qubit dS=2,dA=2]: 25/25 Haar V_A break K_r^dag K_r = P_r
+  [PASS] E'[two-qubit rank-2 dS=4,dA=2]: 25/25 Haar V_A break K_r^dag K_r = P_r
+  [PASS] E'[all]: K_r^dag K_r = sum_s |<r|V_A|s>|^2 P_s for every sample
+  [PASS] E'[all]: weight matrix |V_A|^2 is doubly stochastic
+  [PASS] E'[all]: generic mixing V_A breaks K_P = P
+
+[Part E''] Zero-projector edge-case for the necessity clause
+  [PASS] E''[zero-zero mixing]: formal zero-label rotation leaves every K_r^dag K_r unchanged
+  [PASS] E''[nonzero-nonzero mixing]: nonzero sector mixing breaks K_r^dag K_r = P_r
+  [PASS] E''[nonzero-zero mixing]: leaking a nonzero sector into a zero label still breaks
+  [PASS] E''[nonzero convention]: displayed physical labels have P_r != 0
+
+[Part F] Source-note boundary string checks
+  [PASS] F.required present: 'Status authority:** independent audit lane only'
+  [PASS] F.required present: 'restricted Step-3 scope'
+  [PASS] F.required present: 'K_P = P'
+  [PASS] F.required present: 'P_r ≠ 0'
+  [PASS] F.required present: 'zero-projector edge-case'
+  [PASS] F.required present: 'outcome-label'
+  [PASS] F.required present: 'necessary'
+  [PASS] F.required present: 'What this does NOT claim'
+  [PASS] F.required present: 'audit lane is the only status authority'
+  [PASS] F.forbidden absent: 'Status: retained'
+  [PASS] F.forbidden absent: 'Status: promoted'
+  [PASS] F.forbidden absent: '**Status:** retained'
+  [PASS] F.forbidden absent: 'target_audit_status'
+  [PASS] F.forbidden absent: 'audited_clean'
+  [PASS] F.forbidden absent: 'effective_status='
+  [PASS] F.forbidden absent: 'audit_status='
+  [PASS] F.forbidden absent: 'uniqueness theorem for all instruments'
+
+========================================================================
+TOTAL: 53 PASS / 0 FAIL
+========================================================================
+
+----- stderr -----
+

@@ -102,6 +102,17 @@ SC_COEFFS_PUBLISHED = {
     7: Rational(-24),
     8: Rational(100),
 }
+SUPPLIED_EVALUATION_POINT = Rational(1, 3)
+MC_REFERENCE_SUPPLIED = Rational(5934, 10000)
+
+# Source-boundary manifest: these are finite supplied inputs.  The runner proves
+# only rational consequences of this tuple; it does not certify the coefficient
+# table, beta-to-u convention, or MC comparison as framework-derived facts.
+SUPPLIED_INPUT_PACKET = {
+    "coefficients": SC_COEFFS_PUBLISHED,
+    "evaluation_u": SUPPLIED_EVALUATION_POINT,
+    "mc_reference": MC_REFERENCE_SUPPLIED,
+}
 
 
 def build_series_in_u(coeffs):
@@ -148,6 +159,25 @@ def pade_NM(a, N, M):
 
 
 # ----------------------------------------------------------------------------
+section("Part 0: source-boundary manifest")
+# ----------------------------------------------------------------------------
+check("coefficient packet is an explicit finite supplied tuple",
+      SUPPLIED_INPUT_PACKET["coefficients"] == {
+          1: Rational(1),
+          4: Rational(4),
+          6: Rational(24),
+          7: Rational(-24),
+          8: Rational(100),
+      },
+      detail=f"orders={sorted(SUPPLIED_INPUT_PACKET['coefficients'])}")
+check("beta=6 evaluation point enters only as supplied rational u=1/3",
+      SUPPLIED_INPUT_PACKET["evaluation_u"] == Rational(1, 3),
+      detail=f"u_eval={SUPPLIED_INPUT_PACKET['evaluation_u']}")
+check("MC comparator is an explicit non-theorem comparison value",
+      SUPPLIED_INPUT_PACKET["mc_reference"] == Rational(5934, 10000),
+      detail=f"mc={float(SUPPLIED_INPUT_PACKET['mc_reference']):.4f}")
+
+# ----------------------------------------------------------------------------
 section("Part 1 (C1): supplied leading-order strong-coupling context")
 # ----------------------------------------------------------------------------
 # At small beta, <P>(beta) = beta/18 + O(beta^4) for SU(3) Wilson plaquette.
@@ -171,14 +201,14 @@ P_u_full, max_order = build_series_in_u(SC_COEFFS_PUBLISHED)
 print(f"  <P>(u) (truncated at u^{max_order}) = {sp.expand(P_u_full)}")
 
 # Cross-check: substituting u = 1/3 gives a definite rational truncated value.
-u_third = Rational(1, 3)
+u_third = SUPPLIED_EVALUATION_POINT
 P_trunc_third = P_u_full.subs(u, u_third)
 check("truncated series <P>(u=1/3) is a definite rational number",
       P_trunc_third.is_rational,
       detail=f"<P>(u=1/3) = {P_trunc_third} = {float(P_trunc_third):.6f}")
 
 # Bound on the MC comparison gap (NOT a closure claim, just a residual measurement):
-mc_val = Rational(5934, 10000)  # 0.5934 as an exact rational comparison number
+mc_val = MC_REFERENCE_SUPPLIED  # 0.5934 as an exact rational comparison number
 residual_trunc = float(mc_val - P_trunc_third)
 check("truncated SC O(u^8) series leaves a sizeable residual to MC 0.5934 "
       "(NOT a closure)",
@@ -211,12 +241,22 @@ print(f"                   value at u=1/3 = {val33} = {float(val33):.6f}")
 check("Pade[3/3] at u=1/3 equals exactly 3/5",
       val33 == Rational(3, 5),
       detail=f"Pade[3/3](1/3) = {val33}")
+match_residual = sp.expand(P_u_full * Q33 - P33)
+check("Pade[3/3] matching equations vanish through order u^6",
+      all(sp.expand(match_residual).coeff(u, n) == 0 for n in range(7)),
+      detail="series*Q-P = O(u^7)")
+check("Pade[3/3] denominator is nonzero at supplied u=1/3",
+      Q33.subs(u, u_third) != 0,
+      detail=f"Q(1/3)={Q33.subs(u, u_third)}")
 
 # Residual gap to MC value 0.5934:
 gap_33 = float(mc_val - val33)
 check("Pade[3/3] residual to MC value 0.5934 is small (NOT zero -- no closure)",
       abs(gap_33) < 0.02 and gap_33 < 0,
       detail=f"gap = {gap_33:+.4f} ({100*gap_33/0.5934:+.2f}%)")
+check("MC comparator is not consumed as a theorem equality",
+      mc_val != val33,
+      detail=f"mc={mc_val}, Pade[3/3]={val33}")
 
 # Pade[4/4]:
 val44, P44, Q44 = eval_pade(a_list, 4, 4, u_third)

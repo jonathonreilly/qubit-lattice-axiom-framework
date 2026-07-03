@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-Frontier runner: P1 I_S lattice-PT citation-and-bound check.
+Frontier runner: P1 I_S conditional citation-and-arithmetic check.
 
 Status
 ------
-CITATION-AND-BOUND layer on top of the retained P1 symbolic decomposition
+CONDITIONAL CITATION-AND-ARITHMETIC layer on top of the retained P1 symbolic decomposition
 (`I_1 = I_S` on the retained conserved-current surface). This runner does
-NOT derive `I_S` on the retained Cl(3)/Z^3 action. It verifies:
+NOT derive `I_S` or audit-close the supplied bracket on the retained
+Cl(3)/Z^3 action. It verifies:
 
   1. retained color tensor C_F = 4/3 from the prior P1 color-factor
      retention note (SU(3) Casimir D7 + S1);
@@ -14,13 +15,13 @@ NOT derive `I_S` on the retained Cl(3)/Z^3 action. It verifies:
      alpha_LM / (4 pi) = 0.00721 from `canonical_plaquette_surface.py`;
   3. exact reproduction of the packaged delta_PT = alpha_LM * C_F / (2 pi)
      = 1.92% under the implicit standard-fundamental assumption I_S = 2;
-  4. cited-literature bracket I_S in [4, 10] with central I_S ~ 6 for
+  4. supplied comparison bracket I_S in [4, 10] with central I_S ~ 6 for
      the tadpole-improved Wilson-plaquette + 1-link staggered scalar
      density at beta ~ 6 (Sharpe 1994; Bhattacharya-Sharpe 1998;
      Bhattacharya-Gupta-Kilcup-Sharpe 1999; Kilcup-Sharpe 1987;
      Ishizuka-Shizawa 1994);
   5. framework-specific P1 contribution at alpha_LM = 0.0907 under the
-     cited bracket:
+     supplied bracket:
         P1 = (alpha_LM / (4 pi)) * C_F * I_S
         I_S = 4   -> P1 = 3.85%
         I_S = 6   -> P1 = 5.77%  (central)
@@ -29,7 +30,7 @@ NOT derive `I_S` on the retained Cl(3)/Z^3 action. It verifies:
      i.e. P1 in [3.85%, 9.62%] with central ~ 5.77%;
   6. revision factor P1_central / P1_packaged ~ 3.0x matches
      I_S_central / I_S_standard = 6/2 = 3.0 exactly;
-  7. explicit citation confidence -- logged as a RANGE, not a single
+  7. explicit bracket confidence -- logged as a supplied RANGE, not a single
      number;
   8. no modification of the master obstruction theorem is implied.
 
@@ -56,10 +57,11 @@ Literature (cited with uncertainty, not re-derived):
 
 Scope
 -----
-The cited I_S range is an HONEST bracket [4, 10] on the tadpole-improved
+The supplied I_S range is an HONEST conditional bracket [4, 10] on the tadpole-improved
 Wilson-plaquette + 1-link staggered scalar density closest to the
-framework canonical surface. No single per-reference number is claimed.
-The central estimate I_S ~ 6 is a mid-range value for reporting.
+framework canonical surface. No single per-reference number is claimed,
+and this runner does not verify the bracket as framework-native.
+The central estimate I_S ~ 6 is a mid-range value for conditional reporting.
 
 Self-contained: numpy + stdlib only.
 """
@@ -115,9 +117,17 @@ def part_0_status_boundary() -> None:
 
     note = read_note()
     check("source note exists", NOTE_PATH.exists(), str(NOTE_PATH.relative_to(ROOT)))
-    check("claim type is bounded support note", "**Claim type:** bounded support note" in note)
-    check("type is conditional / support", "**Type:** conditional / support" in note)
+    check("claim type is bounded_theorem", "**Claim type:** bounded_theorem" in note)
+    check(
+        "type is conditional / arithmetic support",
+        "**Type:** conditional / arithmetic support" in note,
+    )
     check("conditional citation/support boundary is present", "conditional citation/support layer" in note)
+    check("conditional arithmetic lemma boundary is present", "conditional arithmetic lemma" in note)
+    check(
+        "bracket is not asserted audit-closed",
+        "not assert that the bracket is framework-native or audit-closed" in note,
+    )
     check("old proposed_retained status is absent", "proposed_retained" not in note)
     check("PR-local source proposal marker is absent", "source-note proposal only" not in note)
     check("PR-local control field is absent", "actual_" + "current_surface_status" not in note)
@@ -151,7 +161,7 @@ I_S_STANDARD = 2.0
 
 
 # ---------------------------------------------------------------------------
-# Cited-literature I_S bracket (tadpole-improved staggered scalar on
+# Supplied comparison I_S bracket (tadpole-improved staggered scalar on
 # Wilson plaquette at beta ~ 6; alpha/(4 pi) convention). Honest range,
 # not a single per-reference number. See
 # docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md for sources.
@@ -308,11 +318,11 @@ def part_c_packaged_delta_pt() -> None:
 
 def part_d_cited_range() -> None:
     print("\n" + "=" * 72)
-    print("PART D: Cited I_S range for composite-H_unit on the canonical surface")
+    print("PART D: Supplied I_S range for composite-H_unit on the canonical surface")
     print("=" * 72)
 
     print("\n  (alpha/(4 pi) convention; tadpole-improved Wilson-plaquette +")
-    print("   1-link staggered scalar density at beta ~ 6; citation range,")
+    print("   1-link staggered scalar density at beta ~ 6; supplied conditional range,")
     print("   NOT a framework-native derivation.)")
     print()
     print(f"  I_S_CITED_LOW       = {I_S_CITED_LOW:.2f}")
@@ -324,7 +334,7 @@ def part_d_cited_range() -> None:
           f"{I_S_UNIMPROVED_HIGH:.1f}] -- documented but not used.)")
 
     check(
-        "Cited range is ordered LOW <= CENTRAL <= HIGH",
+        "Supplied range is ordered LOW <= CENTRAL <= HIGH",
         I_S_CITED_LOW <= I_S_CITED_CENTRAL <= I_S_CITED_HIGH,
         f"{I_S_CITED_LOW} <= {I_S_CITED_CENTRAL} <= {I_S_CITED_HIGH}",
     )
@@ -347,7 +357,7 @@ def part_d_cited_range() -> None:
         f"central = {I_S_CITED_CENTRAL} > standard = {I_S_STANDARD}",
     )
     check(
-        "Cited bracket sits materially ABOVE the standard-fundamental I_S = 2",
+        "Supplied bracket sits materially ABOVE the standard-fundamental I_S = 2",
         I_S_CITED_LOW >= 2.0 * 2.0,
         f"I_S_CITED_LOW = {I_S_CITED_LOW} vs 2 * I_S_standard = 4.0",
     )
@@ -358,7 +368,7 @@ def part_d_cited_range() -> None:
     )
     # Citation-confidence contract: this is a RANGE, not a single number.
     check(
-        "Citation confidence is recorded as a range, not a single number",
+        "Supplied-bracket confidence is recorded as a range, not a single number",
         I_S_CITED_HIGH > I_S_CITED_LOW,
         f"range width = {I_S_CITED_HIGH - I_S_CITED_LOW}",
     )
@@ -407,22 +417,22 @@ def part_e_framework_p1() -> Dict[str, float]:
         f"P1(I_S=2) = {p1_standard:.6f}; packaged = {DELTA_PT_PACKAGED:.6f}",
     )
     check(
-        "P1(I_S = 4) ~ 3.85% (low end of cited range)",
+        "P1(I_S = 4) ~ 3.85% (low end of supplied range)",
         abs(p1_low * 100 - 3.85) < 0.1,
         f"P1(I_S=4) = {p1_low * 100:.3f} %",
     )
     check(
-        "P1(I_S = 6) ~ 5.77% (central cited estimate)",
+        "P1(I_S = 6) ~ 5.77% (central supplied estimate)",
         abs(p1_central * 100 - 5.77) < 0.1,
         f"P1(I_S=6) = {p1_central * 100:.3f} %",
     )
     check(
-        "P1(I_S = 10) ~ 9.62% (high end of cited range)",
+        "P1(I_S = 10) ~ 9.62% (high end of supplied range)",
         abs(p1_high * 100 - 9.62) < 0.1,
         f"P1(I_S=10) = {p1_high * 100:.3f} %",
     )
     check(
-        "Full cited P1 range: [3.8%, 9.7%] (absolute bracket)",
+        "Full supplied P1 range: [3.8%, 9.7%] (absolute bracket)",
         p1_low * 100 < 3.9 and p1_high * 100 > 9.5,
         f"P1 in [{p1_low * 100:.3f}%, {p1_high * 100:.3f}%]",
     )
@@ -508,7 +518,7 @@ def part_g_scope_boundary() -> None:
     p1_is_closed_by_this_note = False
     c_a_channel_I_2_closed = False
     t_f_n_f_channel_I_3_closed = False
-    cited_value_is_framework_native = False
+    supplied_value_is_framework_native = False
 
     print("\n  Scope flags:")
     print(f"    master obstruction theorem modified       = "
@@ -521,8 +531,8 @@ def part_g_scope_boundary() -> None:
           f"{c_a_channel_I_2_closed}")
     print(f"    T_F n_f channel I_3 closed                = "
           f"{t_f_n_f_channel_I_3_closed}")
-    print(f"    cited I_S is framework-native             = "
-          f"{cited_value_is_framework_native}")
+    print(f"    supplied I_S is framework-native          = "
+          f"{supplied_value_is_framework_native}")
 
     check(
         "Master obstruction theorem NOT modified by this note",
@@ -533,7 +543,7 @@ def part_g_scope_boundary() -> None:
         publication_surface_modified is False,
     )
     check(
-        "P1 NOT closed by this note (citation-and-bound only)",
+        "P1 NOT closed by this note (conditional arithmetic only)",
         p1_is_closed_by_this_note is False,
     )
     check(
@@ -545,8 +555,8 @@ def part_g_scope_boundary() -> None:
         t_f_n_f_channel_I_3_closed is False,
     )
     check(
-        "Cited I_S value explicitly NOT framework-native",
-        cited_value_is_framework_native is False,
+        "Supplied I_S value explicitly NOT framework-native",
+        supplied_value_is_framework_native is False,
         "framework-native BZ integration remains the next retention level",
     )
 
@@ -576,7 +586,7 @@ def main() -> int:
     print(f"SUMMARY: PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     print("=" * 72)
 
-    print("\nAdopted I_S value (central cited estimate):")
+    print("\nSupplied I_S value (central conditional estimate):")
     print(f"  I_S  =  {I_S_CITED_CENTRAL:.2f}   (range [{I_S_CITED_LOW}, "
           f"{I_S_CITED_HIGH}], alpha/(4 pi) convention)")
     print("\nFramework-specific P1 contribution at alpha_LM = 0.0907:")
@@ -590,10 +600,10 @@ def main() -> int:
           f"(I_S_standard = 2 implicit)")
     print(f"  revision    =  "
           f"{p1_values['central'] / DELTA_PT_PACKAGED:.2f}x upward "
-          f"under central cited I_S")
-    print("\nBudget revision direction: UPWARD (cited range sits above the")
-    print("packaged standard-fundamental assumption). Master obstruction")
-    print("theorem not modified -- citation note only.")
+          f"under central supplied I_S")
+    print("\nConditional direction: UPWARD if the supplied range is accepted")
+    print("for the exact operator/scheme. Master obstruction theorem not")
+    print("modified -- conditional arithmetic note only.")
 
     return 0 if FAIL_COUNT == 0 else 1
 

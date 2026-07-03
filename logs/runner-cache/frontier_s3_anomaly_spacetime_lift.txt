@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/frontier_s3_anomaly_spacetime_lift.py
+runner_sha256: 01884cfc9a6b55f127131898af13657dc77d1892effd58667c3735c5f5408c2d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Route 2: S^3 + anomaly-forced time spacetime lift
+========================================================================
+  Candidate background: PL S^3 x R
+  Scope: kinematic open-gate route survey, not GR closure
+
+  [PASS] source note is explicitly scoped as an open route survey (the parent note preserves the open-gate boundary)
+  [PASS] S3 boundary-link and cap-uniqueness sources are present (the topology side is cited as a two-source PL compactification family)
+  [PASS] S3 compactification tier and non-overclaim guard are preserved (boundary-link is retained-bounded, cap uniqueness is conditional, and the general-R note still refuses PL S3 closure)
+  [PASS] Anomaly-forced time theorem is present with admission-inherited bounded scope (the route consumes d_t = 1 as a bounded kinematic input and preserves upstream admission inheritance)
+  [PASS] atlas exposes the route as a kinematic spacetime lift, not a solved dynamics bridge (publication atlas points to the same kinematic/dynamics split)
+  [PASS] combined PL S3 x R kinematic background is the route candidate (composition of S3 topology and anomaly-forced time is the candidate background)
+  [PASS] no exact dynamics bridge is present in the source note (no exact S3 -> curvature / anomaly -> Einstein-field theorem is claimed)
+  [PASS] runner preserves the honest open-gate endpoint (the missing dynamics theorem is still the named blocker)
+
+Summary:
+  Kinematic background candidate: yes, at inherited bounded/conditional scope
+  Dynamical lift / GR closure: open
+  Missing theorem: exact dynamics bridge from PL S^3 x R to the metric law
+
+PASS=8 FAIL=0
+
+----- stderr -----
+

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit-companion runner for the Dirac/Weyl fermion dof admission bridge.
+"""Audit-companion runner for the Dirac/Weyl fermion dof branch-rank bridge.
 
 Supports
 docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md.
@@ -9,38 +9,45 @@ and via explicit sympy matrix realisations:
 
   (1) Note structure (claim_type, status authority, R-packet, Q-packet,
       proof-walk, exact arithmetic check, dependencies, boundaries).
-  (2) The exact rational identities
-        dof_Dirac = 2 (spin, R1) * 2 (particle-antiparticle, R3) = 4
-        dof_Weyl  = dof_Dirac / 2 = 2          (chirality projection R2)
-        dof_Weyl  = 2 (helicity-antiparticle)
+  (2) Live retained-grade ledger statuses for the load-bearing authority
+      packet, plus context-row visibility for conventional labels.
+  (3) The exact rational branch-rank identities
+        dof_Dirac = dim ker D(E,+p) + dim ker D(-E,+p) = 2 + 2 = 4,
+        dof_Weyl  = dim P_chi ker D(E,+p) + dim P_chi ker D(-E,+p)
+                  = 1 + 1 = 2,
       with no floating-point arithmetic.
-  (3) The four-component complex Dirac spinor space has 8 real
-      off-shell components; the Q2 on-shell convention halves to 4.
-  (4) An explicit 4x4 real-matrix realisation of `Cl(3, 1)` is
+  (4) The four-component complex Dirac spinor space has 8 real
+      off-shell components; the Q2 finite-rank mass-shell certificate
+      halves this to 4 real components per energy branch.
+  (5) An explicit 4x4 real-matrix realisation of `Cl(3, 1)` is
       constructed and the chirality projector `gamma_5 = gamma_1
       gamma_2 gamma_3 gamma_4` (up to phase) is verified to satisfy
       gamma_5^2 = +I and {gamma_5, gamma_mu} = 0 for every generator.
       P_L = (I - gamma_5)/2 and P_R = (I + gamma_5)/2 are then
       verified to be orthogonal projectors splitting V_(3,1) ~= R^4
       into two two-dimensional chirality eigenspaces.
-  (5) The CPT-pairing factor 2 is implemented as a binary
+  (6) The Dirac operator `gamma.p - m` is checked at rest, at a
+      nonzero-momentum mass-shell point, and at the negative-energy
+      branch: rank 2, nullity 2 on `C^4`. A massless branch is checked
+      to split one-and-one under chirality projectors.
+  (7) The CPT-pairing factor 2 is implemented as a binary
       `(particle, antiparticle)` index on a Berezin-style single
       fermionic mode and matched against the spin-statistics
       single-mode 2-dim CAR irreducible carrier.
-  (6) Forbidden-vocabulary scan (no "fermion landing class",
+  (8) Forbidden-vocabulary scan (no "fermion landing class",
       "spinor landing tier", "Dirac admission tier", "Weyl admission
       tier", "dof landing class", etc.).
-  (7) Forbidden-imports scan (no lattice-action quantity in the
+  (9) Forbidden-imports scan (no lattice-action quantity in the
       proof-walk: no plaquette, staggered, Brillouin, link unitary,
       u_0, Monte Carlo, fitted).
-  (8) The audit-conditional P4 replacement mapping: the parent note's P4 premise
-      content is exactly reconstructed by R1 (spin = 2) * R3
-      (particle-antiparticle = 2) for Dirac, and Dirac / 2 (R2
-      chirality halving) for Weyl.
+  (10) The P4 boundary mapping: this row reconstructs the numeric integer
+      counts while leaving conventional physical-label wording as
+      non-load-bearing interpretation unless a separate bridge is supplied.
 """
 
 from __future__ import annotations
 
+import json
 from fractions import Fraction
 from pathlib import Path
 import re
@@ -55,6 +62,7 @@ except ImportError:
 
 
 ROOT = Path(__file__).resolve().parent.parent
+LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 NOTE_PATH = (
     ROOT
     / "docs"
@@ -69,6 +77,29 @@ PARENT_NOTE = (
 
 PASS = 0
 FAIL = 0
+
+LOAD_BEARING_AUTHORITY_STATUSES = {
+    "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": {
+        "retained",
+        "retained_bounded",
+    },
+    "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": {"retained"},
+}
+
+CONTEXT_AUTHORITY_STATUSES = {
+    "cpt_exact_note": {"retained"},
+    "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": {"retained"},
+    "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": {"retained_bounded"},
+}
+
+# The note designates the per-site SU(2) doublet row (R1) as an
+# "interpretive cross-check, not load-bearing for the branch-rank count"
+# and lists it under "Non-load-bearing context". Its ledger status is
+# therefore not asserted by this runner; only presence of the citation
+# and of the cited file is checked.
+NON_LOAD_BEARING_CONTEXT_POINTERS = [
+    "PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
+]
 
 
 def check(label: str, ok: bool, detail: str = "") -> bool:
@@ -91,8 +122,77 @@ def section(title: str) -> None:
     print("-" * 88)
 
 
+def load_ledger_rows() -> dict[str, dict[str, object]]:
+    data = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
+    rows = data.get("rows")
+    if not isinstance(rows, dict):
+        raise TypeError("audit ledger rows must be a dict keyed by claim id")
+    return rows
+
+
 NOTE_TEXT = NOTE_PATH.read_text(encoding="utf-8")
 NOTE_FLAT = re.sub(r"\s+", " ", NOTE_TEXT)
+
+
+def check_authority_packet(
+    rows: dict[str, dict[str, object]],
+    packet_name: str,
+    expected_statuses: dict[str, set[str]],
+) -> None:
+    section(packet_name)
+    clean_or_review_statuses = {
+        "audited_clean",
+        "audit_ready",
+        "needs_reaudit",
+        "unaudited",
+        "audited_renaming",
+    }
+    for claim_id, allowed_statuses in expected_statuses.items():
+        row = rows.get(claim_id)
+        check(f"ledger row exists: {claim_id}", row is not None)
+        if row is None:
+            continue
+        observed = row.get("effective_status")
+        check(
+            f"{claim_id}: effective_status in {sorted(allowed_statuses)}",
+            observed in allowed_statuses,
+            detail=f"observed={observed!r}",
+        )
+        audit_status = row.get("audit_status")
+        check(
+            f"{claim_id}: audit_status is not a failed verdict",
+            audit_status in clean_or_review_statuses,
+            detail=f"observed={audit_status!r}",
+        )
+
+
+def check_live_authority_statuses() -> None:
+    rows = load_ledger_rows()
+    check_authority_packet(
+        rows,
+        "live ledger load-bearing authority statuses",
+        LOAD_BEARING_AUTHORITY_STATUSES,
+    )
+    check_authority_packet(
+        rows,
+        "live ledger context-row statuses",
+        CONTEXT_AUTHORITY_STATUSES,
+    )
+    check_non_load_bearing_context_pointers()
+
+
+def check_non_load_bearing_context_pointers() -> None:
+    section("non-load-bearing context pointers (presence only; ledger status not asserted)")
+    for filename in NON_LOAD_BEARING_CONTEXT_POINTERS:
+        check(
+            f"note cites non-load-bearing context pointer "
+            f"(ledger status not asserted): {filename}",
+            filename in NOTE_TEXT,
+        )
+        check(
+            f"non-load-bearing context pointer file exists: {filename}",
+            (ROOT / "docs" / filename).exists(),
+        )
 
 
 def check_note_structure() -> None:
@@ -100,9 +200,18 @@ def check_note_structure() -> None:
     required = [
         "Claim type:** bounded_theorem",
         "Status authority:** source-note proposal only",
-        "does **not** add a new axiom",
-        "Framework authority packet (R1-R4)",
-        "Supplied admission packet (Q1-Q2",
+        "2026-06-07 source-packet repair",
+        "2026-06-08 label-semantics safe-narrow",
+        "2026-06-08 direct branch-rank repair",
+        "non-load-bearing interpretation",
+        "branch-rank count",
+        "Q1 is retired as an unsupported algebraic admission",
+        "Q2 is repaired as a textbook-counting import",
+        "source-local finite-rank statement",
+        "does not derive the Dirac equation",
+        "does **not** add a new",
+        "Framework authority and context packet (R1-R4)",
+        "Retained source plus source-local counting packet (Q1-Q2)",
         "Proof-walk",
         "Exact arithmetic check",
         "Mapping to the parent note's P4 premise",
@@ -121,20 +230,26 @@ def check_note_structure() -> None:
 
 
 def check_premise_packet_marking() -> None:
-    section("admission packet (Q1-Q2) marked as not framework-retained")
-    # The note must mark Q1 and Q2 as admissions, not as retained primitives.
+    section("Q1 retained source and Q2 source-local rank marking")
+    # The note must mark Q1 as retained-sourced for the algebra cell, while
+    # replacing Q2's textbook import with explicit rank counting.
     must_have = [
-        "Q1 Cl(3,1) Lorentzian signature extension",
-        "Q2 On-shell relativistic thermal-counting convention",
-        "admitted, not derived",
-        "not framework-retained",
+        "Q1 Cl(3,1) finite Clifford-algebra source",
+        "retained Q1 source",
+        "Q1 is therefore retired as an unsupported admission",
+        "Q2 On-shell finite-rank counting certificate",
+        "rank D(p) = 2",
+        "dim_C ker D(p) = 2",
+        "not an imported textbook counting convention",
+        "physical Wick rotation",
+        "Lorentzian sign",
     ]
     for phrase in must_have:
-        check(f"admission marker present: {phrase}", phrase in NOTE_FLAT)
+        check(f"source/admission marker present: {phrase}", phrase in NOTE_FLAT)
 
 
 def check_p4_mapping() -> None:
-    section("P4 audit-conditional replacement mapping is explicit")
+    section("P4 numeric support and non-load-bearing label boundary are explicit")
     # Confirm parent note carries the P4 premise text (when the parent
     # note is present on the working tree). The bridge is intended to
     # support replacing P4 after independent audit.
@@ -155,14 +270,21 @@ def check_p4_mapping() -> None:
         "2 (spin) * 2 (particle-antiparticle)" in NOTE_TEXT,
     )
     check(
-        "bridge maps P4 to R1 + R3 (Dirac)",
-        "R1 supplies spin = 2, R3 supplies" in NOTE_FLAT,
+        "bridge makes physical label semantics non-load-bearing",
+        "physical spin/helicity label" in NOTE_FLAT
+        and "distinct particle-antiparticle thermal label" in NOTE_FLAT
+        and "non-load-bearing interpretation" in NOTE_FLAT,
     )
     check(
-        "bridge maps Weyl halving to R2 (chirality)",
+        "bridge maps Weyl arithmetic halving to R2 (chirality)",
         "gamma_5" in NOTE_TEXT
         and "chirality" in NOTE_TEXT
         and "halving" in NOTE_TEXT,
+    )
+    check(
+        "P4 numeric counts are source-supported while label wording stays separate",
+        "P4's numeric dof counts can therefore be source-supported by this bounded row" in NOTE_FLAT
+        and "P4's conventional label wording remains a separate physical-label bridge" in NOTE_FLAT,
     )
 
 
@@ -224,48 +346,48 @@ def check_forbidden_vocabulary() -> None:
 
 
 def check_exact_arithmetic() -> None:
-    section("exact rational arithmetic: dof_Dirac = 4, dof_Weyl = 2")
-    # Direct factorisation per R1 + R3.
-    spin_factor = Fraction(2)  # R1
-    particle_antiparticle_factor = Fraction(2)  # R3
-    dof_dirac_direct = spin_factor * particle_antiparticle_factor
+    section("exact rational arithmetic: branch-rank dof_Dirac = 4, dof_Weyl = 2")
+    positive_energy_kernel = Fraction(2)
+    negative_energy_kernel = Fraction(2)
+    dof_dirac_direct = positive_energy_kernel + negative_energy_kernel
     check(
-        "Dirac dof = 2 (spin) * 2 (particle-antiparticle) = 4",
+        "Dirac dof = 2 positive-energy kernel states + 2 negative-energy kernel states = 4",
         dof_dirac_direct == Fraction(4),
         detail=f"got {dof_dirac_direct}",
     )
 
-    # Equivalent: spinor-space dim 4 * (real-vs-complex factor 2) /
-    # (Q2 on-shell halving factor 2).
+    # Equivalent: retained Q1 spinor-space dim 4 * (real-vs-complex factor 2) /
+    # (source-local Q2 on-shell finite-rank halving factor 2).
     spinor_real_dim = Fraction(4)  # Q1: dim_R V_(3,1) = 4
     real_per_complex = Fraction(2)
     onshell_halving = Fraction(2)  # Q2
     dof_dirac_via_spinor = (spinor_real_dim * real_per_complex) / onshell_halving
     check(
-        "Dirac dof = (dim_R V_(3,1) * 2) / 2 = 4",
+        "Dirac dof = (retained Q1 dim_R V_(3,1) * 2) / source-local Q2 2 = 4",
         dof_dirac_via_spinor == Fraction(4),
         detail=f"got {dof_dirac_via_spinor}",
     )
 
-    # Both decompositions must agree.
+    # Branch-rank and spinor-dimension decompositions must agree.
     check(
-        "factorisations agree (R1*R3 = Q1-spinor decomposition)",
+        "branch-rank and Q1-spinor decompositions agree",
         dof_dirac_direct == dof_dirac_via_spinor,
     )
 
-    # Weyl halving via chirality projector R2.
-    chirality_halving = Fraction(2)
-    dof_weyl_direct = dof_dirac_direct / chirality_halving
+    # Weyl fixed-chirality branch count.
+    positive_chiral_kernel = Fraction(1)
+    negative_chiral_kernel = Fraction(1)
+    dof_weyl_direct = positive_chiral_kernel + negative_chiral_kernel
     check(
-        "Weyl dof = Dirac dof / 2 (chirality projection, R2) = 2",
+        "Weyl dof = 1 fixed-chirality positive-energy state + 1 fixed-chirality negative-energy state = 2",
         dof_weyl_direct == Fraction(2),
         detail=f"got {dof_weyl_direct}",
     )
 
-    # Equivalent: 2 (helicity-antiparticle), the surviving doublet.
+    # Conventional label reading is context only.
     helicity_antiparticle = Fraction(2)
     check(
-        "Weyl dof = 2 (helicity-antiparticle)",
+        "conventional Weyl label wording has the same cardinality but is non-load-bearing",
         dof_weyl_direct == helicity_antiparticle,
     )
 
@@ -277,14 +399,14 @@ def check_exact_arithmetic() -> None:
         naive_offshell == Fraction(8),
     )
     check(
-        "on-shell halving 8 / 2 = 4 (Q2 admission)",
+        "on-shell halving 8 / 2 = 4 (source-local Q2 rank count)",
         (naive_offshell / onshell_halving) == Fraction(4),
     )
 
 
 def check_cl31_realisation() -> None:
     section("explicit 4x4 real-matrix realisation of Cl(3, 1)")
-    # Build an explicit real 4x4 realisation of Cl(3, 1) per Q1.
+    # Build an explicit real 4x4 realisation of Cl(3, 1) per retained Q1.
     # We use the Majorana-style real basis with eta = diag(+1,+1,+1,-1).
     # A standard real 4x4 realisation (see Lawson-Michelsohn Ch. I §5):
     #   gamma_1 = sigma_3 (X) sigma_1
@@ -427,6 +549,126 @@ def check_cl31_realisation() -> None:
     )
 
 
+def check_dirac_onshell_rank_certificate() -> None:
+    section("Q2 finite-rank on-shell Dirac counting certificate")
+    # Work in the standard chiral gamma presentation with metric (+,-,-,-).
+    # This is the complex presentation of the retained Q1 real Clifford cell.
+    sigma_1 = Matrix([[0, 1], [1, 0]])
+    sigma_2 = Matrix([[0, -sympy.I], [sympy.I, 0]])
+    sigma_3 = Matrix([[1, 0], [0, -1]])
+    I2 = eye(2)
+    I4 = eye(4)
+
+    def block_2x2(a, b, c, d):
+        return Matrix.vstack(
+            Matrix.hstack(a, b),
+            Matrix.hstack(c, d),
+        )
+
+    z2 = zeros(2, 2)
+    gamma0 = block_2x2(z2, I2, I2, z2)
+    gamma1 = block_2x2(z2, sigma_1, -sigma_1, z2)
+    gamma2 = block_2x2(z2, sigma_2, -sigma_2, z2)
+    gamma3 = block_2x2(z2, sigma_3, -sigma_3, z2)
+    gammas = [gamma0, gamma1, gamma2, gamma3]
+    eta = [Rational(1), Rational(-1), Rational(-1), Rational(-1)]
+
+    for i, G in enumerate(gammas):
+        check(
+            f"standard gamma_{i} squares to eta={eta[i]}",
+            sympy.simplify(G * G - eta[i] * I4) == zeros(4, 4),
+        )
+    for i in range(4):
+        for j in range(i + 1, 4):
+            check(
+                f"standard gamma_{i}, gamma_{j} anticommute",
+                sympy.simplify(gammas[i] * gammas[j] + gammas[j] * gammas[i])
+                == zeros(4, 4),
+            )
+
+    def slash(p0, px, py, pz):
+        return p0 * gamma0 - px * gamma1 - py * gamma2 - pz * gamma3
+
+    m = Rational(3)
+    E = Rational(5)
+    pz = Rational(4)
+
+    # Rest mass shell: p=(m,0,0,0).  D = gamma.p - m has nullity 2.
+    D_rest = slash(m, 0, 0, 0) - m * I4
+    check("rest branch D has rank 2", D_rest.rank() == 2, detail=f"rank={D_rest.rank()}")
+    check("rest branch dim_C ker D = 2", 4 - D_rest.rank() == 2)
+
+    # Moving mass shell: E^2 - pz^2 = m^2 at (E,pz,m)=(5,4,3).
+    check("moving branch satisfies E^2 - p^2 = m^2", E * E - pz * pz == m * m)
+    slash_move = slash(E, 0, 0, pz)
+    D_move = slash_move - m * I4
+    check("moving branch det(gamma.p - m) = 0", sympy.factor(D_move.det()) == 0)
+    check("moving branch D has rank 2", D_move.rank() == 2, detail=f"rank={D_move.rank()}")
+    check("moving branch dim_C ker D = 2", 4 - D_move.rank() == 2)
+    check(
+        "on-shell factorization D(p)(gamma.p + m)=0",
+        sympy.simplify(D_move * (slash_move + m * I4)) == zeros(4, 4),
+    )
+
+    # Negative-energy / antiparticle branch has the same finite rank count.
+    slash_negative = slash(-E, 0, 0, pz)
+    D_negative = slash_negative - m * I4
+    check("negative-energy branch det(gamma.p - m) = 0", sympy.factor(D_negative.det()) == 0)
+    check(
+        "negative-energy branch D has rank 2",
+        D_negative.rank() == 2,
+        detail=f"rank={D_negative.rank()}",
+    )
+    check("negative-energy branch dim_C ker D = 2", 4 - D_negative.rank() == 2)
+
+    # Off-shell contrast: if p^2 != m^2, the same matrix is full rank.
+    D_offshell = slash(E, 0, 0, 0) - m * I4
+    check("off-shell contrast has nonzero determinant", sympy.factor(D_offshell.det()) != 0)
+    check("off-shell contrast has rank 4", D_offshell.rank() == 4)
+
+    # Massless Weyl check: on both lightlike energy-sign branches, the
+    # Dirac kernel is 2-dimensional and chirality splits it into one
+    # complex dimension per chirality.
+    gamma5 = sympy.I * gamma0 * gamma1 * gamma2 * gamma3
+    P_L = sympy.simplify((I4 - gamma5) / 2)
+    P_R = sympy.simplify((I4 + gamma5) / 2)
+    D_massless = slash(1, 0, 0, 1)
+    null_basis = D_massless.nullspace()
+    N = Matrix.hstack(*null_basis)
+    check("massless positive-energy branch dim_C ker D = 2", len(null_basis) == 2)
+    check(
+        "left chirality selects one positive-energy massless on-shell dimension",
+        (P_L * N).rank() == 1,
+    )
+    check(
+        "right chirality selects one positive-energy massless on-shell dimension",
+        (P_R * N).rank() == 1,
+    )
+
+    D_massless_negative = slash(-1, 0, 0, 1)
+    null_basis_negative = D_massless_negative.nullspace()
+    N_negative = Matrix.hstack(*null_basis_negative)
+    check(
+        "massless negative-energy branch dim_C ker D = 2",
+        len(null_basis_negative) == 2,
+    )
+    check(
+        "left chirality selects one negative-energy massless on-shell dimension",
+        (P_L * N_negative).rank() == 1,
+    )
+    check(
+        "right chirality selects one negative-energy massless on-shell dimension",
+        (P_R * N_negative).rank() == 1,
+    )
+
+    offshell_real_components = Fraction(8)
+    onshell_branch_real_components = Fraction(4)
+    check(
+        "Q2 real-count reading: 8 off-shell real components -> 4 real on-shell branch",
+        offshell_real_components / 2 == onshell_branch_real_components,
+    )
+
+
 def check_car_carrier_dim_two() -> None:
     section("R4 CAR irreducible single-mode carrier dim 2")
     # Single fermionic mode CAR: c = [[0,1],[0,0]], c^dagger = [[0,0],[1,0]]
@@ -470,13 +712,13 @@ def check_car_carrier_dim_two() -> None:
 
 
 def check_cpt_pair_factor() -> None:
-    section("R3 CPT particle-antiparticle pairing factor 2")
+    section("non-load-bearing conventional label cross-checks")
     # CPT-pair label is a binary index {particle, antiparticle}.
     # The "factor 2" in the parent note's P4 is the cardinality of this
     # binary label. We verify it as a Fraction equality.
     cpt_pair_cardinality = Fraction(2)
     check(
-        "CPT pair label cardinality = 2",
+        "context-only CPT pair label cardinality = 2",
         cpt_pair_cardinality == Fraction(2),
     )
     # In a Berezin / Grassmann-Fock framing, the antiparticle is a
@@ -495,55 +737,52 @@ def check_cpt_pair_factor() -> None:
     spin_card = 2  # R1
     dirac_states = spin_card * pair_modes
     check(
-        "Dirac state-label cardinality = spin * particle-antiparticle = 4",
+        "context-only Dirac state-label cardinality = spin * particle-antiparticle = 4",
         dirac_states == 4,
     )
 
 
 def check_p4_replacement_arithmetic() -> None:
-    section("P4 replacement support: bridge supplies the factor 2 * 2 = 4 from R-packet")
+    section("P4 numeric support: branch ranks carry 4 and 2; labels are context")
     # The parent note's P4 says: Dirac = 2 (spin) * 2 (particle-antiparticle) = 4.
-    # The bridge claims R1 supplies the first 2, R3 supplies the second 2.
-    spin_from_R1 = Fraction(2)
-    pa_from_R3 = Fraction(2)
-    bridge_dirac_dof = spin_from_R1 * pa_from_R3
+    # This bridge supplies the same integer through branch ranks.
+    bridge_dirac_dof = Fraction(2) + Fraction(2)
     check(
-        "bridge reproduces P4 Dirac dof = 4 from R1 + R3",
+        "bridge reproduces P4 Dirac numeric dof = 4 from Q2 branch ranks",
         bridge_dirac_dof == Fraction(4),
     )
     # The parent note's P4 also says: active neutrino = 2 (helicity-antiparticle).
-    # The bridge claims R2 (chirality) halves Dirac dof to Weyl dof.
-    weyl_chirality_factor = Fraction(2)  # R2
-    bridge_weyl_dof = bridge_dirac_dof / weyl_chirality_factor
+    # This bridge supplies the same integer through fixed-chirality branch ranks.
+    bridge_weyl_dof = Fraction(1) + Fraction(1)
     check(
-        "bridge reproduces P4 Weyl dof = 2 from R1 + R3 + R2",
+        "bridge reproduces P4 Weyl numeric dof = 2 from fixed-chirality branch ranks",
         bridge_weyl_dof == Fraction(2),
     )
-    # The bridge's two admissions Q1 + Q2 carry only the spinor-space
-    # dimension and the on-shell convention. They do not themselves
-    # produce the integer 4 - they are the algebraic infrastructure on
-    # which the integer arithmetic R1 * R3 runs.
+    # Retained Q1 and source-local Q2 carry only the spinor-space dimension
+    # and the on-shell rank count.
     q1_spinor_dim = Fraction(4)  # dim_R V_(3,1)
     q2_onshell = Fraction(2)
     q_path = (q1_spinor_dim * Fraction(2)) / q2_onshell
     check(
-        "Q1 + Q2 path also yields 4 (cross-check on the spinor-dim side)",
+        "retained Q1 + source-local Q2 path also yields 4 (spinor-dim cross-check)",
         q_path == Fraction(4),
     )
 
 
 def main() -> int:
-    section("audit-companion: Dirac/Weyl fermion dof admission bridge")
+    section("audit-companion: Dirac/Weyl fermion dof branch-rank bridge")
     print(f"note: {NOTE_PATH}")
     print(f"parent: {PARENT_NOTE}")
 
     check_note_structure()
+    check_live_authority_statuses()
     check_premise_packet_marking()
     check_p4_mapping()
     check_proof_walk_forbidden_imports()
     check_forbidden_vocabulary()
     check_exact_arithmetic()
     check_cl31_realisation()
+    check_dirac_onshell_rank_certificate()
     check_car_carrier_dim_two()
     check_cpt_pair_factor()
     check_p4_replacement_arithmetic()
@@ -552,9 +791,10 @@ def main() -> int:
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
         print(
-            "VERDICT: bounded admission bridge passes; Dirac dof = 4 and "
-            "Weyl dof = 2 follow from the framework authority packet R1-R4 "
-            "plus supplied admission packet Q1-Q2 by exact rational arithmetic."
+            "VERDICT: Q1/Q2-counting-repaired bounded bridge passes; Dirac dof = 4 and "
+            "Weyl dof = 2 follow by exact rational arithmetic from retained Q1 and "
+            "source-local Q2 branch-rank counting; conventional physical labels are "
+            "non-load-bearing interpretation unless a separate physical-label bridge is supplied."
         )
     return 0 if FAIL == 0 else 1
 

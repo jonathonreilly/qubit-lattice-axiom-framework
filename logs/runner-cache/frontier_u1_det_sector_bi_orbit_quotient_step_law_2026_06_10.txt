@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/frontier_u1_det_sector_bi_orbit_quotient_step_law_2026_06_10.py
+runner_sha256: a23bd627e1123d9ea86e48e0b66f46e907856aaea1beaae4fb8af964db606f23
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 3.11
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  (D1) bi-orbit quotient of a unitary increment = its determinant (exact)
+==============================================================================
+  [PASS] invariance: det(V dU W†) = det dU exactly for V, W in SU(3)
+  [PASS] reachability (constructive): ANY unitary with the SAME det is reachable by (V, W) in SU(3) x SU(3) -- the non-det content of a unitary increment is entirely bi-gauge  (reach dev 6.7e-16)
+  [PASS] COUNTER-EXHIBIT: a target with a DIFFERENT det phase is NOT reachable with det V = 1 (det V carries exactly the det mismatch -- the quotient is faithful)
+  [PASS] gauge invariance: det(g_x dU g_y†) = det dU exactly for local SU(3) rotations (the det increment is the exactly gauge-invariant U(1) scalar -- the #3491 named det/center thread, now the quotient law's invariant marginal)
+==============================================================================
+Part 2  (D2) the raw det law is NON-stationary (drift wanders O(1); 3 seeds)
+==============================================================================
+  [PASS] seed 20260610: the RAW mean phase increment wanders O(1) across the horizon (max |E[arg]| > 0.5): the bi-orbit-quotient LAW is not quasi-stationary -- the Block-26 scope (spectra of the mean, NOT the law) was load-bearing  (raw |E[arg]| range [0.247, 1.771])
+  [PASS] seed 1: the RAW mean phase increment wanders O(1) across the horizon (max |E[arg]| > 0.5): the bi-orbit-quotient LAW is not quasi-stationary -- the Block-26 scope (spectra of the mean, NOT the law) was load-bearing  (raw |E[arg]| range [0.008, 2.135])
+  [PASS] seed 2: the RAW mean phase increment wanders O(1) across the horizon (max |E[arg]| > 0.5): the bi-orbit-quotient LAW is not quasi-stationary -- the Block-26 scope (spectra of the mean, NOT the law) was load-bearing  (raw |E[arg]| range [0.049, 0.964])
+  [PASS] seed 4242: the RAW mean phase increment wanders O(1) across the horizon (max |E[arg]| > 0.5): the bi-orbit-quotient LAW is not quasi-stationary -- the Block-26 scope (spectra of the mean, NOT the law) was load-bearing  (raw |E[arg]| range [0.453, 3.088])
+  [PASS] seed 99: the RAW mean phase increment wanders O(1) across the horizon (max |E[arg]| > 0.5): the bi-orbit-quotient LAW is not quasi-stationary -- the Block-26 scope (spectra of the mean, NOT the law) was load-bearing  (raw |E[arg]| range [0.498, 1.714])
+  [PASS] seed 7: the RAW mean phase increment wanders O(1) across the horizon (max |E[arg]| > 0.5): the bi-orbit-quotient LAW is not quasi-stationary -- the Block-26 scope (spectra of the mean, NOT the law) was load-bearing  (raw |E[arg]| range [0.069, 1.439])
+  [PASS] rank guard held on every branch and depth across all seeds  (worst cross-block min-sv 0.0005)
+==============================================================================
+Part 3  (D3) the baseline decomposition: SEED-ROBUST ratio gate + disclosed spread
+==============================================================================
+  [PASS] seed 20260610: the RAW/CENTERED median-drift RATIO exceeds 2x (the seed-robust form of the decomposition: the wandering is baseline-carried)  (median centered 0.048 vs raw 0.632 (13.2x); centered MAX 0.177)
+  [PASS] seed 1: the RAW/CENTERED median-drift RATIO exceeds 2x (the seed-robust form of the decomposition: the wandering is baseline-carried)  (median centered 0.093 vs raw 1.689 (18.1x); centered MAX 0.582)
+  [PASS] seed 2: the RAW/CENTERED median-drift RATIO exceeds 2x (the seed-robust form of the decomposition: the wandering is baseline-carried)  (median centered 0.104 vs raw 0.682 (6.5x); centered MAX 0.240)
+  [PASS] seed 4242: the RAW/CENTERED median-drift RATIO exceeds 2x (the seed-robust form of the decomposition: the wandering is baseline-carried)  (median centered 0.353 vs raw 1.127 (3.2x); centered MAX 0.666)
+  [PASS] seed 99: the RAW/CENTERED median-drift RATIO exceeds 2x (the seed-robust form of the decomposition: the wandering is baseline-carried)  (median centered 0.083 vs raw 1.010 (12.2x); centered MAX 2.919)
+  [PASS] seed 7: the RAW/CENTERED median-drift RATIO exceeds 2x (the seed-robust form of the decomposition: the wandering is baseline-carried)  (median centered 0.114 vs raw 0.499 (4.4x); centered MAX 2.037)
+  [PASS] CROSS-SEED SPREAD, disclosed and gated only with margin: median centered drift lies in the observed [~0.05, ~0.4] band across the six seeds (all < 0.6); medians are SEED-DEPENDENT numbers, not bounds -- the draft's '< 0.25' was seed-tuned (owner-caught) and is not asserted  (median spread [0.048, 0.353]; stray maxima up to 2.92 (near-pi rows at adversarial seeds, disclosed))
+  [PASS] centered circular-variance medians: cross-seed spread disclosed, gated with margin only (all < 0.7)  (median spread [0.034, 0.296])
+==============================================================================
+Part 4  (D4) methodological control: |ch_k| = |ch_1|^(k^2) is variance-automatic
+==============================================================================
+  [PASS] a two-atom (manifestly non-Gaussian) concentrated circular law satisfies the wrapped-Gaussian relation to ~1%: the k^2 relation is AUTOMATIC at variance order and does NOT establish CLT structure at high concentration  (|ch2| 0.8776 vs Gauss 0.8813; |ch3| 0.7317 vs 0.7526)
+  [PASS] teeth exist only at SPREAD: the same two-atom law at larger spread VIOLATES the relation grossly -- the spread regime is where U(1)-CLT structure is testable, and the tree's spread-regime rows show genuine deviations (scratch-documented): the U(1)-CLT question is OPEN, now correctly posed on the centered fluctuation  (|ch3| 0.987 vs Gauss 0.00081)
+==============================================================================
+TOTAL: PASS=21 FAIL=0
+==============================================================================
+SCOPE: the bi-orbit-quotient step law's exactly-invariant marginal is the
+  det/U(1) increment (D1: algebraic identification + gauge invariance).  Its raw
+  law is NON-stationary at all six seeds (D2) -- the natural extrapolation of
+  the Block-26 split is REFUTED: bi-frame localization does not extend to all
+  bi-invariant content; Block 26's panel-forced scope was load-bearing.  The
+  constructive result (D3): the non-stationarity DECOMPOSES -- the wandering is
+  the deterministic record-free dynamical phase; the seed-robust content is the
+  RAW/CENTERED median-drift ratio > 2x at all six seeds (observed 3.2x-18.1x;
+  cross-seed median spread ~[0.05,0.35] disclosed with margin; near-pi stray
+  maxima sit at SMALL-SINGULAR-VALUE polar-readout rows near the rank-guard edge
+  -- eps is constant, so they are NOT strong-eps rows).  (D4): wrapped-Gaussian
+  matches are variance-automatic (two-atom control) -- no U(1)-CLT is claimed;
+  high-concentration matches are variance-automatic; the question is posed on
+  the CENTERED fluctuation (named next object).  Finite horizon; six seeds
+  (adversarial included); one (eps,tau) instance; numbers seed/instance-labeled.
+  The U(1) factor of U_eff is NOT identified with a physical gauge field
+  (identification gate).  Conditionality inherited from #3507/#3522 (Born
+  derived-chain cap -- assembly note UNAUDITED on the live ledger, self-
+  verified at landing; named instruments; supplied C^3 carrier; named hopping;
+  guarded domain).  Discrete-time (R1 boundaries untouched).  No new axiom/
+  primitive/measure/weight; r untouched.  Audit lane grades.
+
+----- stderr -----
+

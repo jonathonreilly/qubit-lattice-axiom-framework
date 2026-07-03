@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cte_rconn_bridge_cross_domain_no_go.py
+runner_sha256: 3df870f384848917af49131ba44cb4f37c36b632a97598f31961e12dff8771c2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.12
+status: ok
+----- stdout -----
+PASS: octahedral_group_order_24 |O|=24 proper rotations
+PASS: l2_irrep_is_5_dim symmetric traceless rank-2 tensors: 5-dim (SO(3) l=2)
+PASS: l2_has_no_trivial_A1_component <chi_l2,1>=0.000 -> l=2 carries no O-singlet
+PASS: l2_splits_into_two_O_irreps_E_T2 <chi_l2,chi_l2>/|O|=2.000=2 -> exactly two irreps (dims 2+3 = E (+) T2); cubic SPLITTING of l=2
+PASS: SPLIT_cTE_is_a_cubic_splitting_ratio c_TE = gamma_T2(center)/gamma_E(center) ratios the T2 and E pieces of the SPLIT l=2 -> a cubic-lattice quantity
+PASS: COLOR_Rconn_is_group_fraction -R_conn=-(N_c^2-1)/N_c^2=-0.8889=-8/9 : a COLOR SU(3) adjoint/total fraction (fiber commutant)
+PASS: CAT_cross_domain_identification c_TE (position-space cubic E/T2 response ratio) vs -R_conn (fiber-space color fraction): a cross-domain ID
+PASS: NUM_cTE_genuine_0p2pct_off_8_9 c_TE=-0.890684 vs -8/9=-0.888889 : 0.202% off (nearest rational, not equality)
+PASS: NUM_only_T_channel_qT_is_clean_5_6 q_T=0.833328=5/6 (exact-support T-law, clean); E-channel/cross are genuine non-clean gravity-metric
+
+TOTAL: PASS=9 FAIL=0
+VERDICT: the c_TE=-R_conn spatial-tensor<->color bridge is a CROSS-DOMAIN identification, not a typed equality. c_TE is a ratio across the cubic E(2)/T2(3) pieces of the SPLIT SO(3) l=2 irrep (a cubic-lattice quantity); -R_conn is a fiber-space color group fraction. The genuine gravity-metric c_TE=-0.890684 is 0.2% off -8/9 (nearest rational), and only the T-channel q_T=5/6 is a clean spatial law -- so the match is a coincidence. The #1 gate's color-bridge route is a coincidence-chase; the framework's honest readout is the gravity-metric value (rho_E~5.2575), not the color-clean 21/4. RESIDUAL: only a typed N_c=3-from-d=3 spatial<->color link could rescue it; the current stack lacks one.
+
+----- stderr -----
+

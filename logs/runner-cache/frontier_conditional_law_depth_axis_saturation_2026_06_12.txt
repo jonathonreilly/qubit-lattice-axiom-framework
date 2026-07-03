@@ -1,0 +1,132 @@
+===== runner cache v1 =====
+runner: scripts/frontier_conditional_law_depth_axis_saturation_2026_06_12.py
+runner_sha256: fd5d88fcedc643e5f15212cd4a5d2d007a0178abb286d39e584d9ccb034930f6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.64
+status: ok
+----- stdout -----
+SCOPE: fixed period L=3, depth axis 9..14, 3 adversarial seeds; trends are DATA (no asymptotic claim); Born derived-chain cap inherited; named instruments eps=0.6, tau=0.35 supplied; trajectories realized-state data; the depth-ledger is the deliverable. Statuses pipeline-derived; audit lane grades.
+MACHINERY: landed L=3 Slater/K_occ=5/U_step/Kraus/OPS/baseline/rows/null conventions
+ANCHOR: seed=4242 depth_cap=11 row=9 most_row=9 global=0.457378 prefix-3=0.557031 null95=0.469418 gap=0.087613
+[PASS] W3b landed anchor prefix-3: prefix-3=0.557031 target=0.557 tol=2.0e-03
+[PASS] W3b landed anchor null p95: null95=0.469418 target~=0.469 tol=5.0e-03
+[PASS] W3a anchor rank/no-prune/weights: worst_sv=1.160747895148e-03, min_norm=3.042151170644e-01, max_abs(sum_w-1)=1.110223024625e-15
+W3 DEPTH AXIS: most-spread row per depth cap, selector=min global |ch1| for n>=5
+seed=4242 depth_cap=9 selected_row=9 branches=512 global=0.457378
+  p2=0.556934 null95=0.463470 gap=0.093464
+  p3=0.557031 null95=0.469418 gap=0.087613
+  p4=0.597914 null95=0.480062 gap=0.117852
+seed=4242 depth_cap=10 selected_row=9 branches=512 global=0.457378
+  p2=0.556934 null95=0.463470 gap=0.093464
+  p3=0.557031 null95=0.469418 gap=0.087613
+  p4=0.597914 null95=0.480062 gap=0.117852
+seed=4242 depth_cap=11 selected_row=9 branches=512 global=0.457378
+  p2=0.556934 null95=0.463470 gap=0.093464
+  p3=0.557031 null95=0.469418 gap=0.087613
+  p4=0.597914 null95=0.480062 gap=0.117852
+seed=4242 depth_cap=12 selected_row=9 branches=512 global=0.457378
+  p2=0.556934 null95=0.463470 gap=0.093464
+  p3=0.557031 null95=0.469418 gap=0.087613
+  p4=0.597914 null95=0.480062 gap=0.117852
+seed=4242 depth_cap=13 selected_row=9 branches=512 global=0.457378
+  p2=0.556934 null95=0.463470 gap=0.093464
+  p3=0.557031 null95=0.469418 gap=0.087613
+  p4=0.597914 null95=0.480062 gap=0.117852
+seed=4242 depth_cap=14 selected_row=9 branches=512 global=0.457378
+  p2=0.556934 null95=0.463470 gap=0.093464
+  p3=0.557031 null95=0.469418 gap=0.087613
+  p4=0.597914 null95=0.480062 gap=0.117852
+seed=99 depth_cap=9 selected_row=7 branches=128 global=0.056973
+  p2=0.347430 null95=0.238710 gap=0.108720
+  p3=0.502081 null95=0.312477 gap=0.189604
+  p4=0.694880 null95=0.420378 gap=0.274502
+seed=99 depth_cap=10 selected_row=7 branches=128 global=0.056973
+  p2=0.347430 null95=0.238710 gap=0.108720
+  p3=0.502081 null95=0.312477 gap=0.189604
+  p4=0.694880 null95=0.420378 gap=0.274502
+seed=99 depth_cap=11 selected_row=7 branches=128 global=0.056973
+  p2=0.347430 null95=0.238710 gap=0.108720
+  p3=0.502081 null95=0.312477 gap=0.189604
+  p4=0.694880 null95=0.420378 gap=0.274502
+seed=99 depth_cap=12 selected_row=7 branches=128 global=0.056973
+  p2=0.347430 null95=0.238710 gap=0.108720
+  p3=0.502081 null95=0.312477 gap=0.189604
+  p4=0.694880 null95=0.420378 gap=0.274502
+seed=99 depth_cap=13 selected_row=7 branches=128 global=0.056973
+  p2=0.347430 null95=0.238710 gap=0.108720
+  p3=0.502081 null95=0.312477 gap=0.189604
+  p4=0.694880 null95=0.420378 gap=0.274502
+seed=99 depth_cap=14 selected_row=7 branches=128 global=0.056973
+  p2=0.347430 null95=0.238710 gap=0.108720
+  p3=0.502081 null95=0.312477 gap=0.189604
+  p4=0.694880 null95=0.420378 gap=0.274502
+seed=7 depth_cap=9 selected_row=6 branches=64 global=0.758426
+  p2=0.874684 null95=0.783072 gap=0.091612
+  p3=0.927532 null95=0.798638 gap=0.128894
+  p4=0.958937 null95=0.832821 gap=0.126116
+seed=7 depth_cap=10 selected_row=10 branches=1024 global=0.120490
+  p2=0.452836 null95=0.137727 gap=0.315108
+  p3=0.483112 null95=0.152229 gap=0.330883
+  p4=0.484707 null95=0.179105 gap=0.305601
+seed=7 depth_cap=11 selected_row=10 branches=1024 global=0.120490
+  p2=0.452836 null95=0.137727 gap=0.315108
+  p3=0.483112 null95=0.152229 gap=0.330883
+  p4=0.484707 null95=0.179105 gap=0.305601
+seed=7 depth_cap=12 selected_row=10 branches=1024 global=0.120490
+  p2=0.452836 null95=0.137727 gap=0.315108
+  p3=0.483112 null95=0.152229 gap=0.330883
+  p4=0.484707 null95=0.179105 gap=0.305601
+seed=7 depth_cap=13 selected_row=10 branches=1024 global=0.120490
+  p2=0.452836 null95=0.137727 gap=0.315108
+  p3=0.483112 null95=0.152229 gap=0.330883
+  p4=0.484707 null95=0.179105 gap=0.305601
+seed=7 depth_cap=14 selected_row=10 branches=1024 global=0.120490
+  p2=0.452836 null95=0.137727 gap=0.315108
+  p3=0.483112 null95=0.152229 gap=0.330883
+  p4=0.484707 null95=0.179105 gap=0.305601
+W3 MIN-GAIN LEDGER
+seed=4242 d9:row9=0.000096:stall d10:row9=0.000096:stall d11:row9=0.000096:stall d12:row9=0.000096:stall d13:row9=0.000096:stall d14:row9=0.000096:stall
+seed=99 d9:row7=0.154652:monotone d10:row7=0.154652:monotone d11:row7=0.154652:monotone d12:row7=0.154652:monotone d13:row7=0.154652:monotone d14:row7=0.154652:monotone
+seed=7 d9:row6=0.031406:monotone d10:row10=0.001595:monotone d11:row10=0.001595:monotone d12:row10=0.001595:monotone d13:row10=0.001595:monotone d14:row10=0.001595:monotone
+[PASS] W3a rank guard seed 4242: worst_sv=4.805414636974e-04 tol>1.0e-08
+[PASS] W3a no-prune seed 4242: min_norm=2.586581625347e-01 tol>1.0e-14
+[PASS] W3a weights seed 4242: max_abs(sum_w-1)=1.332267629550e-15 tol<=1.0e-10
+[PASS] W3a rank guard seed 99: worst_sv=1.000294867460e-03 tol>1.0e-08
+[PASS] W3a no-prune seed 99: min_norm=2.862151515536e-01 tol>1.0e-14
+[PASS] W3a weights seed 99: max_abs(sum_w-1)=4.440892098501e-16 tol<=1.0e-10
+[PASS] W3a rank guard seed 7: worst_sv=4.613069409599e-04 tol>1.0e-08
+[PASS] W3a no-prune seed 7: min_norm=2.862614708610e-01 tol>1.0e-14
+[PASS] W3a weights seed 7: max_abs(sum_w-1)=8.881784197001e-16 tol<=1.0e-10
+[PASS] W3c profiles/nulls seed 4242 depth_cap 9: k=2:p=0.556934,null95=0.463470,finite=True,bounded=True; k=3:p=0.557031,null95=0.469418,finite=True,bounded=True; k=4:p=0.597914,null95=0.480062,finite=True,bounded=True
+[PASS] W3c profiles/nulls seed 4242 depth_cap 10: k=2:p=0.556934,null95=0.463470,finite=True,bounded=True; k=3:p=0.557031,null95=0.469418,finite=True,bounded=True; k=4:p=0.597914,null95=0.480062,finite=True,bounded=True
+[PASS] W3c profiles/nulls seed 4242 depth_cap 11: k=2:p=0.556934,null95=0.463470,finite=True,bounded=True; k=3:p=0.557031,null95=0.469418,finite=True,bounded=True; k=4:p=0.597914,null95=0.480062,finite=True,bounded=True
+[PASS] W3c profiles/nulls seed 4242 depth_cap 12: k=2:p=0.556934,null95=0.463470,finite=True,bounded=True; k=3:p=0.557031,null95=0.469418,finite=True,bounded=True; k=4:p=0.597914,null95=0.480062,finite=True,bounded=True
+[PASS] W3c profiles/nulls seed 4242 depth_cap 13: k=2:p=0.556934,null95=0.463470,finite=True,bounded=True; k=3:p=0.557031,null95=0.469418,finite=True,bounded=True; k=4:p=0.597914,null95=0.480062,finite=True,bounded=True
+[PASS] W3c profiles/nulls seed 4242 depth_cap 14: k=2:p=0.556934,null95=0.463470,finite=True,bounded=True; k=3:p=0.557031,null95=0.469418,finite=True,bounded=True; k=4:p=0.597914,null95=0.480062,finite=True,bounded=True
+[PASS] W3c profiles/nulls seed 99 depth_cap 9: k=2:p=0.347430,null95=0.238710,finite=True,bounded=True; k=3:p=0.502081,null95=0.312477,finite=True,bounded=True; k=4:p=0.694880,null95=0.420378,finite=True,bounded=True
+[PASS] W3c profiles/nulls seed 99 depth_cap 10: k=2:p=0.347430,null95=0.238710,finite=True,bounded=True; k=3:p=0.502081,null95=0.312477,finite=True,bounded=True; k=4:p=0.694880,null95=0.420378,finite=True,bounded=True
+[PASS] W3c profiles/nulls seed 99 depth_cap 11: k=2:p=0.347430,null95=0.238710,finite=True,bounded=True; k=3:p=0.502081,null95=0.312477,finite=True,bounded=True; k=4:p=0.694880,null95=0.420378,finite=True,bounded=True
+[PASS] W3c profiles/nulls seed 99 depth_cap 12: k=2:p=0.347430,null95=0.238710,finite=True,bounded=True; k=3:p=0.502081,null95=0.312477,finite=True,bounded=True; k=4:p=0.694880,null95=0.420378,finite=True,bounded=True
+[PASS] W3c profiles/nulls seed 99 depth_cap 13: k=2:p=0.347430,null95=0.238710,finite=True,bounded=True; k=3:p=0.502081,null95=0.312477,finite=True,bounded=True; k=4:p=0.694880,null95=0.420378,finite=True,bounded=True
+[PASS] W3c profiles/nulls seed 99 depth_cap 14: k=2:p=0.347430,null95=0.238710,finite=True,bounded=True; k=3:p=0.502081,null95=0.312477,finite=True,bounded=True; k=4:p=0.694880,null95=0.420378,finite=True,bounded=True
+[PASS] W3c profiles/nulls seed 7 depth_cap 9: k=2:p=0.874684,null95=0.783072,finite=True,bounded=True; k=3:p=0.927532,null95=0.798638,finite=True,bounded=True; k=4:p=0.958937,null95=0.832821,finite=True,bounded=True
+[PASS] W3c profiles/nulls seed 7 depth_cap 10: k=2:p=0.452836,null95=0.137727,finite=True,bounded=True; k=3:p=0.483112,null95=0.152229,finite=True,bounded=True; k=4:p=0.484707,null95=0.179105,finite=True,bounded=True
+[PASS] W3c profiles/nulls seed 7 depth_cap 11: k=2:p=0.452836,null95=0.137727,finite=True,bounded=True; k=3:p=0.483112,null95=0.152229,finite=True,bounded=True; k=4:p=0.484707,null95=0.179105,finite=True,bounded=True
+[PASS] W3c profiles/nulls seed 7 depth_cap 12: k=2:p=0.452836,null95=0.137727,finite=True,bounded=True; k=3:p=0.483112,null95=0.152229,finite=True,bounded=True; k=4:p=0.484707,null95=0.179105,finite=True,bounded=True
+[PASS] W3c profiles/nulls seed 7 depth_cap 13: k=2:p=0.452836,null95=0.137727,finite=True,bounded=True; k=3:p=0.483112,null95=0.152229,finite=True,bounded=True; k=4:p=0.484707,null95=0.179105,finite=True,bounded=True
+[PASS] W3c profiles/nulls seed 7 depth_cap 14: k=2:p=0.452836,null95=0.137727,finite=True,bounded=True; k=3:p=0.483112,null95=0.152229,finite=True,bounded=True; k=4:p=0.484707,null95=0.179105,finite=True,bounded=True
+
+Per-row g1 ledger (row: g1), per seed at the deepest cap:
+  seed 4242: 2:0.9586, 3:0.6195, 4:0.9705, 5:0.7485, 6:0.8358, 7:0.9603, 8:0.7974, 9:0.4574, 10:0.7732, 11:0.6365, 12:0.6589, 13:0.9199, 14:0.6635
+[PASS] W3f seed 4242: every row deeper than the frozen most-spread row 9 has strictly larger g1 (the freeze is the argmin's content, disclosed, not an eligibility artifact): frozen g1=0.4574; 5 deeper rows
+  seed 99: 2:0.9990, 3:0.9898, 4:0.9380, 5:0.9323, 6:0.8497, 7:0.0570, 8:0.8675, 9:0.8622, 10:0.8704, 11:0.8679, 12:0.7016, 13:0.0748, 14:0.7224
+[PASS] W3f seed 99: every row deeper than the frozen most-spread row 7 has strictly larger g1 (the freeze is the argmin's content, disclosed, not an eligibility artifact): frozen g1=0.0570; 7 deeper rows
+  seed 7: 2:0.9969, 3:0.9464, 4:0.0808, 5:0.6202, 6:0.7584, 7:0.8666, 8:0.9561, 9:0.7954, 10:0.1205, 11:0.5234, 12:0.6366, 13:0.7484, 14:0.8630
+[PASS] W3f seed 7: every row deeper than the frozen most-spread row 10 has strictly larger g1 (the freeze is the argmin's content, disclosed, not an eligibility artifact): frozen g1=0.1205; 4 deeper rows
+[PASS] W3e ALL 18/18 gated (seed x depth-cap) events clear their label-permutation nulls (explicit gate; finite seeded null sampling: 300 draws, rng 7777): clears=18/18
+[PASS] W3d null-clearing existence: clears=18/18 seed=4242 depth_cap=9 row=9 k2:gap=0.093464,k3:gap=0.087613,k4:gap=0.117852 | seed=4242 depth_cap=10 row=9 k2:gap=0.093464,k3:gap=0.087613,k4:gap=0.117852 | seed=4242 depth_cap=11 row=9 k2:gap=0.093464,k3:gap=0.087613,k4:gap=0.117852 | seed=4242 depth_cap=12 row=9 k2:gap=0.093464,k3:gap=0.087613,k4:gap=0.117852 | seed=4242 depth_cap=13 row=9 k2:gap=0.093464,k3:gap=0.087613,k4:gap=0.117852 | seed=4242 depth_cap=14 row=9 k2:gap=0.093464,k3:gap=0.087613,k4:gap=0.117852 | seed=99 depth_cap=9 row=7 k2:gap=0.108720,k3:gap=0.189604,k4:gap=0.274502 | seed=99 depth_cap=10 row=7 k2:gap=0.108720,k3:gap=0.189604,k4:gap=0.274502 | seed=99 depth_cap=11 row=7 k2:gap=0.108720,k3:gap=0.189604,k4:gap=0.274502 | seed=99 depth_cap=12 row=7 k2:gap=0.108720,k3:gap=0.189604,k4:gap=0.274502 | seed=99 depth_cap=13 row=7 k2:gap=0.108720,k3:gap=0.189604,k4:gap=0.274502 | seed=99 depth_cap=14 row=7 k2:gap=0.108720,k3:gap=0.189604,k4:gap=0.274502 | seed=7 depth_cap=9 row=6 k2:gap=0.091612,k3:gap=0.128894,k4:gap=0.126116 | seed=7 depth_cap=10 row=10 k2:gap=0.315108,k3:gap=0.330883,k4:gap=0.305601 | seed=7 depth_cap=11 row=10 k2:gap=0.315108,k3:gap=0.330883,k4:gap=0.305601 | seed=7 depth_cap=12 row=10 k2:gap=0.315108,k3:gap=0.330883,k4:gap=0.305601 | seed=7 depth_cap=13 row=10 k2:gap=0.315108,k3:gap=0.330883,k4:gap=0.305601 | seed=7 depth_cap=14 row=10 k2:gap=0.315108,k3:gap=0.330883,k4:gap=0.305601
+TOTAL: PASS=35 FAIL=0
+
+----- stderr -----
+

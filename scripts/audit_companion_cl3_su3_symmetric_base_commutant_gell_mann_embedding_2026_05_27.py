@@ -257,7 +257,8 @@ def main() -> int:
         )
 
     # (T2 8D) Tr_8[T^a_8D T^b_8D] = delta_{ab} (factor 2 from fiber I_2 trace).
-    # Use symbolic for diagonal, numeric matrix product for off-diagonal sweep.
+    # First show each diagonal value, then sweep all 64 entries so the
+    # source-note full-carrier normalization is mechanically checked.
     for a in range(8):
         tr_diag = simplify((T8[a] * T8[a]).trace())
         check(
@@ -265,6 +266,18 @@ def main() -> int:
             tr_diag == 1,
             f"got {tr_diag}",
         )
+    fail_count_norm8 = 0
+    for a in range(8):
+        for b in range(8):
+            tr = simplify((T8[a] * T8[b]).trace())
+            expected = 1 if a == b else 0
+            if tr != expected:
+                fail_count_norm8 += 1
+    check(
+        "(T2 8D) Tr_8[T^a_8D T^b_8D] = delta_{ab} on all 64 pairs",
+        fail_count_norm8 == 0,
+        f"fails = {fail_count_norm8}",
+    )
 
     # =========================================================================
     section("Part 5: Lie algebra closure: [T^a_8D, T^b_8D] = i f^{abc} T^c_8D")
@@ -499,7 +512,7 @@ def main() -> int:
     print("    M^a_4 = U_base^dag * diag(lambda^a/2, 0) * U_base Hermitian, traceless (sympy)")
     print("    Block structure: sym 3x3 block of M^a_4 = lambda^a/2; antisym (3,3) = 0; no mixing (sympy)")
     print("    T^a_8D = M^a_4 (x) I_2 Hermitian, traceless (sympy)")
-    print("    Tr_8[T^a_8D T^a_8D] = 1 (sympy diagonal)")
+    print("    Tr_8[T^a_8D T^b_8D] = delta_ab (64 pairs, sympy)")
     print("    Lie algebra closure [T^a_8D, T^b_8D] = i sum_c f^{abc} T^c_8D (64 pairs, numpy)")
     print("    9 known Gell-Mann structure constants f^{abc} reproduced (numpy)")
     print("    Jacobi identity on all 512 triples (numpy)")

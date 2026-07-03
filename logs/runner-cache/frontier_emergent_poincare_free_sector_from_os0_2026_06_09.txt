@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/frontier_emergent_poincare_free_sector_from_os0_2026_06_09.py
+runner_sha256: eccb4464215abf646ac35d378e7e8d8d986d9bb494c01230d8c0fea19508de9f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+========================================================================================
+FREE-CONTINUUM POINCARE ASSEMBLY SUPPORT FROM KINETIC ISOTROPY
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: free Euclidean Dirac 2-point is SO(4)-covariant (incl. tau-x mixed plane)
+----------------------------------------------------------------------------------------
+  [PASS] Euclidean Clifford algebra {g_mu,g_nu}=2 delta holds
+  [PASS] spinor rotations induce genuine SO(4) vector rotations (R^T R=I, det=1)  --  max ortho residual=2.22e-16
+  [PASS] SO(4) bispinor covariance in a spatial (x-y) plane  --  residual=1.14e-16
+  [PASS] SO(4) bispinor covariance in the tau-x plane (free-continuum target)  --  residual=1.72e-16
+
+----------------------------------------------------------------------------------------
+Part 2: Wick step -- tau-x Euclidean rotation continues to a Minkowski boost (SO(3,1))
+----------------------------------------------------------------------------------------
+  [PASS] Wick-continued tau-x rotation is a metric-preserving SO(3,1) boost (L^T g L = g)  --  residual=2.22e-16
+  [PASS] on-shell invariant p^2=m^2 preserved under the continued boost  --  p^2 before=0.490000, after=0.490000, m^2=0.490000
+
+----------------------------------------------------------------------------------------
+Part 3: the standard Poincare algebra closes
+----------------------------------------------------------------------------------------
+  [PASS] Lorentz subalgebra [M,M] closes (rotations J_i=M^{jk} + boosts K_i=M^{0i})  --  max residual=0.00e+00
+  [PASS] Poincare algebra closes: every [gen,gen] lies in span{M^{mu nu}, P^mu} (standard continuum target)  --  max span residual over all 100 commutators=2.51e-16
+  [PASS] [P^mu, P^nu] = 0 (translations commute)  --  max=0.00e+00
+
+----------------------------------------------------------------------------------------
+Part 4: spectrum condition is boost-invariant in the standard target
+----------------------------------------------------------------------------------------
+  [PASS] forward mass shell p^0=+sqrt(p^2+m^2) stays in the forward cone under all boosts (H>=0 survives)  --  W2 spectrum condition is boost-invariant
+
+----------------------------------------------------------------------------------------
+Part 5: boundary checklist + honest residual
+----------------------------------------------------------------------------------------
+  [PASS] kinetic_isotropy_primitive supplies only the structural c_t=c_s premise
+  [PASS] free-continuum SO(4) two-point covariance is checked here, not granted by the primitive alone
+  [PASS] reflection positivity is cited from its own row; not ratified here
+  [PASS] standard OS reconstruction theorem is an external theorem/context, not machine-proved here
+  [PASS] single-clock/Wightman-structure context remains governed by its own row
+  [PASS] boost/rotation conclusion remains conditional on the supplied OS/Wightman hypotheses
+  -- honest residual (NOT delivered by this assembly):
+  [PASS] residual flagged: G1: lattice-measure -> continuum-measure bridge beyond the 2-point (and 1+1d->4D arena) -- NOT supplied
+  [PASS] residual flagged: interacting continuum-existence (constructive-QFT class) -- NOT supplied; free Gaussian sector only
+  [PASS] residual flagged: RP not newly ratified here; statistics-selection still gated
+
+========================================================================================
+SUMMARY: PASS=19 FAIL=0
+========================================================================================
+
+----- stderr -----
+

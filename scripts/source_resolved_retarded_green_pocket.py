@@ -191,6 +191,7 @@ def _run_case(
         "ret": ret_delta,
         "same_ratio": abs(same_delta / inst_delta) if abs(inst_delta) > 1e-30 else 0.0,
         "ret_ratio": abs(ret_delta / inst_delta) if abs(inst_delta) > 1e-30 else 0.0,
+        "ret_same_ratio": abs(ret_delta / same_delta) if abs(same_delta) > 1e-30 else 0.0,
         "ret_minus_same": ret_delta - same_delta,
         "same_eff": same_eff,
         "ret_eff": ret_eff,
@@ -234,13 +235,15 @@ def main() -> None:
 
     print(
         f"{'s':>8s} {'inst':>12s} {'same':>12s} {'ret':>12s} "
-        f"{'ret/same':>10s} {'ret-same':>12s}"
+        f"{'ret/inst':>10s} {'ret/same':>10s} {'ret-same':>12s}"
     )
-    print("-" * 80)
+    print("-" * 92)
 
     inst_vals: list[float] = []
     same_vals: list[float] = []
     ret_vals: list[float] = []
+    ret_same_ratios: list[float] = []
+    ret_minus_same_vals: list[float] = []
     support_deltas: list[float] = []
     eff_deltas: list[float] = []
 
@@ -249,11 +252,13 @@ def main() -> None:
         inst_vals.append(row["inst"])
         same_vals.append(row["same"])
         ret_vals.append(row["ret"])
+        ret_same_ratios.append(row["ret_same_ratio"])
+        ret_minus_same_vals.append(row["ret_minus_same"])
         support_deltas.append(row["ret_support"] - row["same_support"])
         eff_deltas.append(row["ret_eff"] - row["same_eff"])
         print(
             f"{s:8.4f} {row['inst']:+12.6e} {row['same']:+12.6e} {row['ret']:+12.6e}"
-            f" {row['ret_ratio']:10.3f} {row['ret_minus_same']:+12.6e}"
+            f" {row['ret_ratio']:10.3f} {row['ret_same_ratio']:10.3f} {row['ret_minus_same']:+12.6e}"
         )
 
     inst_alpha = _fit_power(SOURCE_STRENGTHS, inst_vals)
@@ -265,14 +270,28 @@ def main() -> None:
     print("SUPPORT / SPREAD COMPARISON")
     print(f"  mean (ret support - same support): {sum(support_deltas) / len(support_deltas):+.3e}")
     print(f"  mean (ret N_eff - same N_eff): {sum(eff_deltas) / len(eff_deltas):+.3e}")
-    print("  positive means the retarded-like update broadens detector support relative to same-site memory")
+    print("  support fraction is unchanged here; N_eff records the slight spread change")
     print()
     print("SAFE READ")
     print(f"  instantaneous F~M exponent: {inst_alpha:.2f}" if inst_alpha is not None else "  instantaneous F~M exponent: n/a")
     print(f"  same-site memory F~M exponent: {same_alpha:.2f}" if same_alpha is not None else "  same-site memory F~M exponent: n/a")
     print(f"  retarded-like F~M exponent: {ret_alpha:.2f}" if ret_alpha is not None else "  retarded-like F~M exponent: n/a")
     print(f"  TOWARD rows: {toward}/{len(ret_vals)}")
+    assertions_ok = (
+        abs(same_zero) < 1e-12
+        and abs(ret_zero) < 1e-12
+        and toward == len(ret_vals)
+        and all(v > 0.0 for v in ret_minus_same_vals)
+        and all(1.0 < r < 1.05 for r in ret_same_ratios)
+        and abs(sum(support_deltas) / len(support_deltas)) < 1e-12
+        and sum(eff_deltas) / len(eff_deltas) > 0.0
+        and all(a is not None and abs(a - 1.0) < 0.02 for a in (inst_alpha, same_alpha, ret_alpha))
+    )
+    print(f"  true ret/same range: {min(ret_same_ratios):.3f} .. {max(ret_same_ratios):.3f}")
+    print(f"  ASSERTIONS: {'PASS' if assertions_ok else 'FAIL'}")
     print("  this is a finite-lag pocket, not a full retarded field equation")
+    if not assertions_ok:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

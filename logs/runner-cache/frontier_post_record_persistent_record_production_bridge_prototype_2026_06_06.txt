@@ -1,0 +1,84 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_persistent_record_production_bridge_prototype_2026_06_06.py
+runner_sha256: 229b0645950559d7252b41b6150d067fd10e309104cd9b36d19c0a134ac33a0c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.91
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md exists
+PASS docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md contains: supplied pre-record word law
+PASS docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md contains: Post-record states carry realized count/marker information.
+PASS docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md contains: does not derive the production law
+PASS docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md contains: Does not select or force a generation/Koide dial location
+PASS docs/POST_RECORD_PRODUCTION_DYNAMICS_NEEDED_ROW_MAP_2026-06-06.md exists
+PASS docs/POST_RECORD_PRODUCTION_DYNAMICS_NEEDED_ROW_MAP_2026-06-06.md contains: persistent_record_production_overlap` | 3
+PASS docs/POST_RECORD_PRODUCTION_DYNAMICS_NEEDED_ROW_MAP_2026-06-06.md contains: record-writing law bridge
+PASS docs/POST_RECORD_PRODUCTION_DYNAMICS_NEEDED_ROW_MAP_2026-06-06.md contains: overlap-kernel physical bridge
+PASS docs/POST_RECORD_PRODUCTION_DYNAMICS_NEEDED_ROW_MAP_2026-06-06.md contains: post-record sites carry realized information
+PASS docs/PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md exists
+PASS docs/PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md contains: mesoscopic persistent record state
+PASS docs/PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md contains: sparse count vector
+PASS docs/PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md contains: soft overlap kernel
+PASS docs/PERSISTENT_RECORD_REFINEMENT_NOTE.md exists
+PASS docs/PERSISTENT_RECORD_REFINEMENT_NOTE.md contains: first-hit family
+PASS docs/PERSISTENT_RECORD_REFINEMENT_NOTE.md contains: different record-writing law
+PASS docs/PERSISTENT_RECORD_REFINEMENT_NOTE.md contains: first-hit markers influence later
+PASS docs/PERSISTENT_RECORD_MATCHED_COMPARE_NOTE.md exists
+PASS docs/PERSISTENT_RECORD_MATCHED_COMPARE_NOTE.md contains: residual branch-overlap structure
+PASS docs/PERSISTENT_RECORD_MATCHED_COMPARE_NOTE.md contains: competitive middle
+PASS docs/PERSISTENT_RECORD_MATCHED_COMPARE_NOTE.md contains: matched bounded slice
+
+------------------------------------------------------------------------------
+Production-row checks
+------------------------------------------------------------------------------
+PASS persistent-record production row count is current snapshot :: {'persistent_record_overlap_kernel_note', 'persistent_record_matched_compare_note', 'persistent_record_refinement_note'}
+PASS persistent-record production row ids match :: {'persistent_record_overlap_kernel_note', 'persistent_record_matched_compare_note', 'persistent_record_refinement_note'}
+
+------------------------------------------------------------------------------
+Supplied bridge checks
+------------------------------------------------------------------------------
+PASS supplied pre-record law is normalized :: {('L', 'L'): Fraction(1, 2), ('L', 'R'): Fraction(1, 4), ('R', 'L'): Fraction(1, 8), ('R', 'R'): Fraction(1, 8)}
+PASS post-record pushforward distribution is normalized :: {(2, 0, 'L'): Fraction(1, 2), (1, 1, 'L'): Fraction(1, 4), (1, 1, 'R'): Fraction(1, 8), (0, 2, 'R'): Fraction(1, 8)}
+PASS pushforward has expected support size :: {(2, 0, 'L'): Fraction(1, 2), (1, 1, 'L'): Fraction(1, 4), (1, 1, 'R'): Fraction(1, 8), (0, 2, 'R'): Fraction(1, 8)}
+PASS post-record states carry no probability internally :: [(2, 0, 'L'), (1, 1, 'L'), (1, 1, 'R'), (0, 2, 'R')]
+PASS record counts are monotone under supplied update :: [(0, 0, 'none'), (0, 1, 'R'), (1, 1, 'R'), (2, 1, 'R')]
+PASS first-hit marker persists under supplied update :: [(0, 0, 'none'), (0, 1, 'R'), (1, 1, 'R'), (2, 1, 'R')]
+PASS supplied overlap kernel is symmetric
+PASS supplied overlap kernel is self-normalized
+PASS supplied overlap kernel is bounded in (0,1]
+PASS law-scoped expected overlap is exact rational :: 169/320
+PASS invalid supplied law is rejected
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS audit data written flag is false
+PASS audit verdict applied flag is false
+PASS promoted/retained claim flag is false
+PASS record-writing law derived from Record flag is false
+PASS production kernel selected flag is false
+PASS Record-derived physical arrow flag is false
+PASS Record-derived Born law flag is false
+PASS generation/Koide dial selected flag is false
+PASS stable setting selects dial flag is false
+
+SUMMARY: PASS=44 FAIL=0
+PERSISTENT_RECORD_PRODUCTION_OVERLAP_ROWS=3
+SUPPLIED_RECORD_WRITING_BRIDGE_PROTOTYPE=TRUE
+POST_RECORD_STATE_HAS_INTERNAL_PROBABILITY=FALSE
+RECORD_WRITING_LAW_DERIVED_FROM_RECORD=FALSE
+PRODUCTION_KERNEL_SELECTED=FALSE
+PHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE
+BORN_LAW_DERIVED_FROM_RECORD=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+STABLE_SETTING_SELECTS_DIAL=FALSE
+AUDIT_LEDGER_WRITTEN=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+
+----- stderr -----
+

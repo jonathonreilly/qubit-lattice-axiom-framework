@@ -1,20 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_weak_triplet_coefficient_axiom_boundary.py
-runner_sha256: 79c0743ad10d1531332efa5ac5270fe7253376ec79168b40ed3835be1b6a029f
+runner_sha256: 7e163b89f7d1f342a63d53f16df0a9968ec4ea1a053e12759367b86d6355f11a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 ========================================================================================
-DM NEUTRINO WEAK-TRIPLET COEFFICIENT AXIOM BOUNDARY
+DM NEUTRINO WEAK-TRIPLET COEFFICIENT FRAMEWORK BOUNDARY
 ========================================================================================
 
 ========================================================================================
-PART 1: FRAMEWORK AXIOM MEANS ONLY Cl(3) ON Z^3
+PART 1: FRAMEWORK BASELINE IS LATTICE + QUANTUM + RECORD
 ========================================================================================
-  [PASS (B)] The framework sentence states the single physical theory is Cl(3) on Z^3
-  [PASS (B)] The transfer-class theorem is a derived structural theorem on top of that single axiom
+  [PASS (B)] The live framework baseline names Lattice, Quantum, and Record
+  [PASS (B)] The Lattice + Quantum surface supplies Z^3 and the one-qubit/Cl(3,0) carrier
+  [PASS (B)] The transfer-class theorem is a derived structural theorem on top of the baseline surface
 
 ========================================================================================
 PART 2: C_ODD IS NOW FIXED BY BOSONIC MATCHING
@@ -35,13 +36,13 @@ PART 3: THE EXACT SOURCE CARRIER CLOSES THE EVEN LEG
   [PASS (B)] The source-side carrier still factors through the symmetric row mode only
 
 ========================================================================================
-PART 4: THE CURRENT SINGLE-AXIOM BOUNDARY IS EXACT
+PART 4: THE CURRENT FRAMEWORK BOUNDARY IS EXACT
 ========================================================================================
   [PASS (B)] The boundary note records that the live gap is now source amplitudes rather than transfer coefficients
   [PASS (B)] The boundary note records that the benchmark remains bounded because the source amplitudes are still open
 
 ========================================================================================
-SUMMARY: PASS=14 FAIL=0
+SUMMARY: PASS=15 FAIL=0
 ========================================================================================
 
 ----- stderr -----

@@ -4,6 +4,18 @@
 **Status:** superseded route memo; no longer the canonical main-branch authority for proposed_retained matter claims
 **Scope:** full-framework matter closure and physical generation closure
 
+Primary runner: `scripts/frontier_gauge_matter_closure_gates_source_packet.py`
+
+Primary cache: `logs/runner-cache/frontier_gauge_matter_closure_gates_source_packet.txt`
+
+**Source-packet guardrail:** this file is historical route-memo language, not
+current authority for retained, proposed-retained, or positive-theorem matter
+claims. The canonical source authorities are the three notes listed below, and
+the independent audit lane remains authoritative for effective status.
+All later uses of "closed", "paper-ready", "retained core", or similar route
+language in this memo are historical April-2026 route assessments, not current
+audit-status claims.
+
 **Canonical main-branch matter authorities now live in:**
 
 - [LEFT_HANDED_CHARGE_MATCHING_NOTE.md](./LEFT_HANDED_CHARGE_MATCHING_NOTE.md)

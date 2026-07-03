@@ -15,9 +15,10 @@ Purpose:
       (xi1, xi2, eta1, eta2, delta)
 
   This runner does not claim a physical selector law.  It only checks that the
-  imported transport functional has a seed endpoint below eta/eta_obs = 1, a
-  sampled off-seed endpoint above 1, and therefore an interpolated closure
-  witness on that parameterized family.
+  imported transport functional has a seed endpoint below eta/eta_obs = 1 and
+  a sampled off-seed endpoint above 1. The interpolated eta/eta_obs = 1 point
+  is only a diagnostic crossing on that parameterized family unless a separate
+  selector theorem supplies the endpoint or interpolation parameter.
 
 2026-05-27 runner repair:
   The raw PMNS projector-interface repair removed legacy helpers from the
@@ -33,6 +34,7 @@ from __future__ import annotations
 
 import math
 import sys
+from pathlib import Path
 
 import numpy as np
 from scipy.optimize import brentq, differential_evolution
@@ -54,6 +56,9 @@ FAIL_COUNT = 0
 XBAR_NE = 0.5633333333333334
 YBAR_NE = 0.30666666666666664
 CYCLE = np.array([[0, 1, 0], [0, 0, 1], [1, 0, 0]], dtype=complex)
+ROOT = Path(__file__).resolve().parents[1]
+PARENT_NOTE = ROOT / "docs" / "DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md"
+FIREWALL_NOTE = ROOT / "docs" / "DM_LEPTOGENESIS_PMNS_TRANSPORT_SELECTOR_FIREWALL_NOTE_2026-06-17.md"
 
 
 def check(name: str, condition: bool, detail: str = "") -> bool:
@@ -171,6 +176,10 @@ def format_vec(v: np.ndarray) -> str:
     return np.array2string(np.round(np.asarray(v, dtype=float), 6), separator=", ")
 
 
+def squash(text: str) -> str:
+    return " ".join(text.split())
+
+
 def part1_the_transport_objective_is_evaluable_on_the_imported_seed_surface() -> None:
     print("\n" + "=" * 88)
     print("PART 1: THE IMPORTED TRANSPORT OBJECTIVE IS EVALUABLE ON THE SEED SURFACE")
@@ -258,7 +267,7 @@ def part3_continuity_gives_an_interpolated_closure_witness(
     x_opt: np.ndarray, y_opt: np.ndarray, delta_opt: float
 ) -> tuple[np.ndarray, np.ndarray, float, np.ndarray, np.ndarray]:
     print("\n" + "=" * 88)
-    print("PART 3: CONTINUITY GIVES AN INTERPOLATED CLOSURE WITNESS")
+    print("PART 3: CONTINUITY GIVES AN INTERPOLATED DIAGNOSTIC CROSSING")
     print("=" * 88)
 
     x_seed = np.full(3, XBAR_NE, dtype=float)
@@ -284,7 +293,7 @@ def part3_continuity_gives_an_interpolated_closure_witness(
         f"(seed,opt)=({best_eta_along(0.0):.12f},{best_eta_along(1.0):.12f})",
     )
     check(
-        "The interpolated witness has eta/eta_obs = 1 on the same parameterized family",
+        "The interpolated diagnostic point has eta/eta_obs = 1 on the same parameterized family",
         abs(np.max(etas_root) - 1.0) < 1e-10,
         f"etas={np.round(etas_root, 12)}, best column={best_idx}",
     )
@@ -307,8 +316,12 @@ def part3_continuity_gives_an_interpolated_closure_witness(
 
 def part4_bottom_line() -> None:
     print("\n" + "=" * 88)
-    print("PART 4: BOTTOM LINE")
+    print("PART 4: SELECTOR FIREWALL")
     print("=" * 88)
+
+    parent_text = PARENT_NOTE.read_text(encoding="utf-8")
+    firewall_text = FIREWALL_NOTE.read_text(encoding="utf-8")
+    parent_flat = squash(parent_text)
 
     check(
         "The imported transport functional has a constructive interval witness",
@@ -324,6 +337,30 @@ def part4_bottom_line() -> None:
         "The remaining issue is the unproven selector/authority bridge",
         True,
         "bounded interval witness only",
+    )
+    check(
+        "The parent note cites the selector-firewall companion",
+        FIREWALL_NOTE.name in parent_text,
+        FIREWALL_NOTE.name,
+    )
+    check(
+        "The parent note demotes the exact equality point to a diagnostic crossing",
+        "intermediate-value diagnostic" in parent_flat
+        and "not a physical selector" in parent_flat
+        and "should not be cited as a framework prediction" in parent_flat,
+        "root is reproducibility data, not a selected source law",
+    )
+    check(
+        "The selector firewall forbids using ETA_OBS as the hidden selector",
+        "treating `ETA_OBS` as a selected framework output" in firewall_text
+        and "choosing the interpolation root because it equals the observed comparator" in firewall_text,
+        "observed comparator is not a source-selection theorem",
+    )
+    check(
+        "The selector firewall preserves future positive selector routes",
+        "This firewall does not rule those routes out" in firewall_text
+        and "independent theorem deriving" in firewall_text,
+        "future endpoint or lambda theorem remains open",
     )
 
 
@@ -350,9 +387,9 @@ def main() -> int:
     print("  Bounded construction:")
     print("    - the imported fixed seed endpoint is below eta/eta_obs = 1")
     print("    - the sampled off-seed endpoint is above eta/eta_obs = 1")
-    print("    - interpolation gives an eta/eta_obs = 1 witness on that family")
+    print("    - interpolation gives an eta/eta_obs = 1 diagnostic crossing on that family")
     print()
-    print("  No physical selector law or full-stack closure is claimed.")
+    print("  No physical selector law, exact eta_obs prediction, or full-stack closure is claimed.")
     print()
     print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

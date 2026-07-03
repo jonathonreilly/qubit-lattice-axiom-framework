@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.py
+runner_sha256: 46db7e0816c88ad0dd4589ff85394b56e513597055f89f493fffd80d0e053365
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+Record pre-record supplied-context instrument kernel gate
+source boundary: bounded finite algebra under cited projective readout authorities and a supplied readout context
+status authority: independent audit lane only
+
+A. cited authority anchors and supplied readout context
+[PASS] Minimal Axioms supply Quantum one-site M2(C)
+[PASS] Minimal Axioms explicitly do not supply measurement/Born rules
+[PASS] Record axiom is realized-outcome registration, not probability
+[PASS] retained-bounded LSP authority states canonical K_r = P_r
+[PASS] retained-bounded Lueders bridge states trace-normalized branch
+[PASS] readout context remains supplied, not selected by Record
+[PASS] source note has no-retained-production-kernel audit firewall
+[PASS] source note has supplied-context-only audit boundary
+[PASS] source note says no further repair is needed only for supplied-context finite algebra
+[PASS] source note leaves readout/probability/rate bridges outside Record
+[PASS] source note blocks downstream over-citation as generator/readout authority
+
+B. one-qubit state and projective instruments
+[PASS] rho has trace one -- rho=Matrix([[2/3, sqrt(2)/3], [sqrt(2)/3, 1/3]])
+[PASS] rho is pure positive semidefinite
+[PASS] Z projectors are orthogonal and complete
+[PASS] X projectors are orthogonal and complete
+[PASS] canonical projective Kraus completeness holds for Z instrument
+[PASS] canonical projective Kraus completeness holds for X instrument
+
+C. projective trace pairing gives a future-record production kernel
+[PASS] Z-instrument probabilities are normalized -- p_z=[2/3, 1/3]
+[PASS] Z-instrument probabilities equal (2/3, 1/3) -- p_z=[2/3, 1/3]
+[PASS] X-instrument probabilities are normalized -- p_x=[sqrt(2)/3 + 1/2, 1/2 - sqrt(2)/3]
+[PASS] same rho with different supplied instrument gives different kernel -- p_x=[sqrt(2)/3 + 1/2, 1/2 - sqrt(2)/3]
+[PASS] instrument is load-bearing for the production kernel
+
+D. realized post-record atoms are not the probability vector
+[PASS] outcome 0 writes one-hot record atom e0 -- e0=[1, 0]
+[PASS] outcome 1 writes one-hot record atom e1 -- e1=[0, 1]
+[PASS] realized count update for outcome 0 is integral -- count0=[5, 2]
+[PASS] realized count update for outcome 1 is integral -- count1=[4, 3]
+[PASS] ensemble expected count is fractional and typed separately -- E[count']=[14/3, 7/3]
+[PASS] expected count is not either realized update
+
+E. selective and nonselective quantum states remain pre-record/ensemble objects
+[PASS] selective state for outcome 0 is normalized projector P0
+[PASS] selective state for outcome 1 is normalized projector P1
+[PASS] nonselective ensemble has trace one -- rho_ns=Matrix([[2/3, 0], [0, 1/3]])
+[PASS] nonselective ensemble is not a realized record atom
+
+F. boundary firewalls
+[PASS] Record alone does not derive the supplied readout context
+[PASS] Record/Quantum alone do not derive arbitrary physical measurement dynamics
+[PASS] one-shot probabilities do not supply IID frequencies
+[PASS] instrument probabilities do not supply a physical Markov generator
+[PASS] no clock/rate unit is selected
+[PASS] no generation or Koide dial value is selected
+
+SCORECARD: PASS=38 FAIL=0
+VERDICT: bounded support for the pre-record instrument kernel gate. With cited retained-bounded projective instrument/trace authority and a supplied readout context, a qubit state gives probabilities over possible future record atoms; the written post-record atom is realized information, not the probability vector.
+
+----- stderr -----
+

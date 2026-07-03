@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/nonlabel_grown_drift_basin_recompute_audit_2026_06_08.py
+runner_sha256: 7bcf0aa3789c51e1920e23a7c5b4c9fb7d00719a989aad89b687a753647a1bd3
+timeout_sec: 420
+exit_code: 0
+elapsed_sec: 299.20
+status: ok
+----- stdout -----
+==========================================================================================
+NON-LABEL GROWN DRIFT BASIN LIVE RECOMPUTE AUDIT
+drifts=[0.15, 0.2, 0.25] restore=0.70 seeds=[0, 1, 2] NL=25 source_strength=5.0e-05
+==========================================================================================
+drift=0.15 seed=0 zero=+0.000000000000e+00 plus=-3.581520247076e-05 minus=+3.580391460085e-05 neutral=+0.000000000000e+00 double=-7.164167797833e-05 exp=1.000227030333 PASS
+drift=0.15 seed=1 zero=+0.000000000000e+00 plus=-4.494182760190e-05 minus=+4.493278558378e-05 neutral=+0.000000000000e+00 double=-8.989268092728e-05 exp=1.000144861852 PASS
+drift=0.15 seed=2 zero=+0.000000000000e+00 plus=-3.335466021460e-05 minus=+3.334332694150e-05 neutral=+0.000000000000e+00 double=-6.672063979212e-05 exp=1.000244778441 PASS
+drift=0.20 seed=0 zero=+0.000000000000e+00 plus=-3.534838056581e-05 minus=+3.533742984684e-05 neutral=+0.000000000000e+00 double=-7.070769755103e-05 exp=1.000223160122 PASS
+drift=0.20 seed=1 zero=+0.000000000000e+00 plus=-4.754446944324e-05 minus=+4.753643847426e-05 neutral=+0.000000000000e+00 double=-9.509695367944e-05 exp=1.000121595791 PASS
+drift=0.20 seed=2 zero=+0.000000000000e+00 plus=-3.162959538369e-05 minus=+3.161845900196e-05 neutral=+0.000000000000e+00 double=-6.327031399777e-05 exp=1.000253655136 PASS
+drift=0.25 seed=0 zero=+0.000000000000e+00 plus=-3.486319988640e-05 minus=+3.485264793394e-05 neutral=+0.000000000000e+00 double=-6.973693807340e-05 exp=1.000218029402 PASS
+drift=0.25 seed=1 zero=+0.000000000000e+00 plus=-5.006930848891e-05 minus=+5.006228368638e-05 neutral=+0.000000000000e+00 double=-1.001456258909e-04 exp=1.000100973736 PASS
+drift=0.25 seed=2 zero=+0.000000000000e+00 plus=-2.966615744143e-05 minus=+2.965522486762e-05 neutral=+0.000000000000e+00 double=-5.934323513057e-05 exp=1.000265506876 PASS
+
+SAFE READ: live recompute confirms the nine-row bounded drift-basin gates.
+SCORECARD PASS=9 FAIL=0
+
+----- stderr -----
+

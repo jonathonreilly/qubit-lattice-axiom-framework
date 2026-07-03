@@ -1,0 +1,15 @@
+loop: emergent-lorentz-conditional-title-20260608
+status: packaged_for_review
+target_claim_id: emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06
+actual_current_surface_status: conditional-support
+branch: physics-loop/emergent-lorentz-conditional-title-20260608
+base: origin/main
+files_touched:
+  - docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md
+  - scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py
+  - logs/runner-cache/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.txt
+  - .claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/
+open_blockers:
+  - One-loop velocity RG coefficients remain supplied model input.
+  - Physical fixed-point anomalous dimension and power-divergent coefficient remain open.
+next_action: reviewer extracts title/scope repair; independent audit decides status.

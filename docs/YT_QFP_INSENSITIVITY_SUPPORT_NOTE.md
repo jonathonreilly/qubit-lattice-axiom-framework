@@ -1,5 +1,18 @@
 # y_t Quasi-Fixed-Point Insensitivity Support Note
 
+> ⚠ **SCOPE CLARIFICATION (2026-06-16) — the focusing is real but does NOT control
+> the corrected P1/Δ_R matching error.** This note's QFP focusing is correct
+> (`frontier_yt_qfp_insensitivity.py`: baseline `m_t = 169.4 GeV` MS̄, local
+> sensitivity `dy_t(v)/dy_t(M_Pl) = 0.685`, upper-half focusing `R ≈ 2`). But it
+> is **only ~2×**, and its "insensitivity PASS" uses an assumed `y_t(M_Pl)` band `[0.3, 0.6]`
+> (≈±15–30%) **predicated on the small ~2% P1 matching that has since been found
+> defective**. The corrected matching is `Δ_R ≈ +50%` (scalar `/N_TASTE`
+> double-count + IR-regulator-dependent fermion channel; see
+> `YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md`),
+> which takes `y_t(M_Pl) ∈ [0.22, 0.65]` and `m_t(pole) ∈ ~[114, 197] GeV`. So the
+> focusing protects the m_t **ceiling** (~197 GeV) but NOT its **precision**; this
+> note does not establish a controlled m_t.
+
 **Date:** 2026-04-14
 **Status:** bounded support
 **Script:** `scripts/frontier_yt_qfp_insensitivity.py`
@@ -52,7 +65,7 @@ The focusing ratio R = Delta(y_t(M_Pl)) / Delta(y_t(v)) measures the
 compression. For the SM RGE with alpha_s(v) = 0.1033:
 - Full range [0.2, 0.8]: R = 1.09 (a 300% UV variation maps to 90% IR)
 - Upper half [Ward, 0.8]: R = 1.98 (strong focusing above QFP)
-- Local sensitivity near Ward BC: dy_t(v)/dy_t(M_Pl) = 0.90
+- Local sensitivity near Ward BC: dy_t(v)/dy_t(M_Pl) = 0.685
 
 ---
 
@@ -80,12 +93,13 @@ by the full scan range.
 
 Over the upper half [Ward, 0.8] (an 83% variation at M_Pl), y_t(v)
 varies by 42% -- a focusing ratio R = 1.98. A 10% shift in y_t(M_Pl)
-near the Ward value produces only a 4.0% shift in y_t(v).
+near the Ward value produces only a 3.1% shift in y_t(v).
 
 **Implication:** Even if the exact lattice RG flow modifies y_t(M_Pl)
 by O(10%) from the perturbative Ward value, the effect on y_t(v) is
-suppressed. The Ward BC y_t(M_Pl) = 0.436 is a derived quantity with
-O(few %) uncertainty, mapping to O(few %) uncertainty in y_t(v).
+suppressed to about 3.1%. The Ward BC y_t(M_Pl) = 0.436 is a derived
+quantity with O(few %) uncertainty, mapping to O(few %) uncertainty in
+y_t(v).
 
 ---
 
@@ -256,7 +270,14 @@ not relevant to the backward Ward prediction, because:
 
 ## Numerical Verification
 
-All results from `frontier_yt_qfp_insensitivity.py`:
+`frontier_yt_qfp_insensitivity.py` now has two runner modes:
+
+- default audit-window certificate: endpoint and coefficient-hierarchy
+  witnesses, 14 PASS / 0 FAIL, intended for the audit runner cache;
+- `--full-sweep`: the historical dense ODE scans used for the detailed
+  tables in Parts 2-4 above.
+
+Default audit-window results from `frontier_yt_qfp_insensitivity.py`:
 
 | Test | Criterion | Result |
 |------|-----------|--------|
@@ -264,15 +285,15 @@ All results from `frontier_yt_qfp_insensitivity.py`:
 | m_t within 5% of observed | \|m_t - 172.7\|/172.7 < 5% | PASS |
 | QFP focusing ratio > 1 (full range) | R > 1 | PASS (R = 1.09) |
 | QFP focusing ratio > 1.5 (upper half) | R > 1.5 | PASS (R = 1.98) |
-| Local sensitivity bounded | dy_t(v)/dy_t(M_Pl) < 1.5 | PASS (0.90) |
+| Local sensitivity bounded | dy_t(v)/dy_t(M_Pl) < 1.5 | PASS (0.69) |
 | Ward-band [0.3, 0.6] variation | < 30% | PASS (28.8%) |
-| g_1 insensitivity [0.3, 0.6] | < 5% | PASS (3.7%) |
-| g_2 insensitivity [0.4, 0.9] | < 10% | PASS (7.4%) |
-| lambda insensitivity [0.05, 0.3] | < 0.5% | PASS (0.03%) |
+| g_1 coefficient hierarchy | < 5% of QCD weight | PASS (1.76%) |
+| g_2 coefficient hierarchy | < 10% of QCD weight | PASS (9.05%) |
+| lambda loop-order hierarchy | no 1-loop beta_yt coefficient | PASS |
 | 1-loop vs 2-loop shift | < 5% | PASS (2.4%) |
 | Small perturbation (+/-3%) | < 5% | PASS (2.8%) |
 | b_3 +/-20% perturbation | < 15% | PASS (7.1%) |
-| Random +/-10% all coefficients | < 10% | PASS (7.6%) |
+| Seeded +/-10% all coefficients audit sample | < 10% | PASS (4.4%) |
 | EW contribution quantified | < 20% | PASS (13.8%) |
 
 14 PASS, 0 FAIL.

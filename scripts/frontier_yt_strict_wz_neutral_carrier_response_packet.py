@@ -4,6 +4,23 @@
 The runner verifies exact W/Z response rows on the retained one-Higgs EW
 surface.  It keeps the result denominator-side support only: no top numerator
 response row or numerical Y_T closure is certified here.
+
+2026-06-19/2026-06-20 audit-scope repair: the checks are segregated into two
+layers, matching the note split.
+
+  Layer 1 (clean EW derivative corollary, standalone exact-support scope):
+    Part 3 (W/Z derivative rows + ratio + radial-Jacobian recovery) and
+    Part 4 (reparameterization invariance). These differentiate the retained
+    M_W, M_Z formulas with respect to a STIPULATED local neutral EW radial
+    coordinate. They do not depend on what physical object that coordinate is.
+
+  Layer 2 (carrier-source identification, CONDITIONAL on an unsupplied
+  same-surface bridge):
+    Part 2 (neutral P_- ray tangent algebra). This is the only check that
+    touches the qubit P_- / EW neutral-ray coordinate. It is retained as
+    conditional layer-2 support and explicitly NOT a closed carrier-source
+    identification: it establishes shared-coordinate ray algebra, not the
+    physical same-surface identification, which remains an open bridge.
 """
 
 from __future__ import annotations
@@ -104,7 +121,14 @@ def part1_anchors() -> dict[str, Any]:
 
 
 def part2_neutral_ray_tangent() -> None:
-    print("\nPart 2: neutral ray tangent")
+    # Layer 2 (CONDITIONAL): shared-coordinate ray algebra only. This is the
+    # only part that touches the qubit P_- / EW neutral-ray coordinate. It is
+    # NOT a closed carrier-source identification; the physical same-surface
+    # bridge identifying the qubit P_- source ray with the EW neutral radial
+    # source is an unsupplied, unaudited open bridge.
+    print("\nPart 2 (CONDITIONAL layer-2 support): neutral ray tangent algebra")
+    print("  NOTE: shared-coordinate ray algebra only; the physical same-surface")
+    print("        carrier-source identification is an UNSUPPLIED open bridge.")
     s = sp.symbols("s", real=True)
     v = sp.Function("v")(s)
     z = sp.Matrix([[1, 0], [0, -1]])
@@ -114,13 +138,21 @@ def part2_neutral_ray_tangent() -> None:
     h_s = sp.Matrix([0, v / sp.sqrt(2)])
     tangent = sp.diff(h_s, s)
 
-    check("H(s) lies on neutral P_- ray", matrix_is_zero(p_minus * h_s - h_s), p_minus * h_s)
-    check("dH/ds lies on neutral P_- ray", matrix_is_zero(p_minus * tangent - tangent), tangent)
-    check("dH/ds is Q-neutral", matrix_is_zero(q * tangent), q * tangent)
+    check("[L2-conditional] H(s) lies on neutral P_- ray", matrix_is_zero(p_minus * h_s - h_s), p_minus * h_s)
+    check("[L2-conditional] dH/ds lies on neutral P_- ray", matrix_is_zero(p_minus * tangent - tangent), tangent)
+    check("[L2-conditional] dH/ds is Q-neutral", matrix_is_zero(q * tangent), q * tangent)
+
+    note = read(NOTE)
+    bridge_marked_open = ("same-surface bridge" in note) and ("open bridge" in note.lower())
+    check(
+        "[L2-conditional] note marks the same-surface carrier-source bridge as an unsupplied open bridge",
+        bridge_marked_open,
+        "carrier-source identification remains conditional on the unsupplied same-surface bridge",
+    )
 
 
 def part3_wz_response_rows() -> None:
-    print("\nPart 3: strict W/Z response rows")
+    print("\nPart 3 (layer-1 clean EW derivative corollary): strict W/Z response rows")
     s = sp.symbols("s", real=True)
     g2, gy = sp.symbols("g_2 g_Y", positive=True)
     v = sp.Function("v")(s)
@@ -140,7 +172,7 @@ def part3_wz_response_rows() -> None:
 
 
 def part4_reparameterization() -> None:
-    print("\nPart 4: source-coordinate reparameterization")
+    print("\nPart 4 (layer-1 clean EW derivative corollary): source-coordinate reparameterization")
     r = sp.symbols("r", real=True)
     g2, gy = sp.symbols("g_2 g_Y", positive=True)
     f = sp.Function("f")(r)
@@ -212,12 +244,21 @@ def main() -> int:
     part6_firewalls()
 
     result = {
-        "status": "exact support: strict W/Z denominator response rows on neutral carrier ray",
+        "status": (
+            "layer-1 exact support: strict W/Z denominator response rows on a "
+            "stipulated local neutral EW radial coordinate; layer-2 carrier-source "
+            "identification CONDITIONAL on an unsupplied same-surface bridge"
+        ),
+        "layer_split": {
+            "layer1_clean_ew_derivative_corollary": "standalone exact-support scope",
+            "layer2_carrier_source_identification": "conditional on unsupplied same-surface bridge (open bridge)",
+        },
         "proposal_allowed": False,
         "proposal_allowed_reason": (
-            "The W/Z denominator response closes and the symbolic top row is present, "
-            "but the top coefficient, retained one-Higgs/hypercharge authority, and "
-            "physical-scale g_2 authority remain open."
+            "The layer-1 W/Z denominator response closes and the symbolic top row is "
+            "present, but the layer-2 carrier-source identification depends on an "
+            "unsupplied same-surface bridge, and the top coefficient, retained "
+            "one-Higgs/hypercharge authority, and physical-scale g_2 authority remain open."
         ),
         "strict_wz_denominator_response_closed": True,
         "current_blockers": blockers,

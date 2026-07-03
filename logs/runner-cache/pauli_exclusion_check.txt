@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/pauli_exclusion_check.py
-runner_sha256: b44e726cd4cb1ffac657de214b43270a27f7e23dcf9ffecf73a09d8e49da93af
+runner_sha256: 8f380ac621b6f457f1b2613deadf799c28753ca092fed5224b6cf4f08d458e18
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ========================================================================
@@ -74,11 +74,10 @@ SUMMARY
 
 Note: this runner verifies the Pauli exclusion principle on a
 2-mode fermionic Fock space constructed via Jordan-Wigner from
-the retained anticommutation relations. The proof in the companion
+the declared CAR anticommutation relations. The proof in the companion
 theorem note is dimension-independent (Steps 1-3 use only the
-structural anticommutator from the retained spin-statistics theorem
-and apply equally to any number of modes on the framework matter
-content).
+structural anticommutator in the CAR/Grassmann frame and apply
+equally to any number of modes once that frame is supplied).
 
 ----- stderr -----
 

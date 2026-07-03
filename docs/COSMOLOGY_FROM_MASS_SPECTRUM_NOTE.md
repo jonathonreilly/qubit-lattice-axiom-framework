@@ -1,12 +1,16 @@
 # Cosmology Cascade from Mass Spectrum (Phase 5 of mass spectrum)
 
 **Date:** 2026-04-17
-**Status:** bounded/conditional cascade; proposed_retained pieces consolidated; open
-lane is promotion of `eta` from DM-gate support to retained theorem.
+**Status:** bounded/conditional cascade; support pieces consolidated; open
+lane is promotion of `eta` from DM-gate support to an audit-ratified theorem.
 **Primary runner:** `scripts/frontier_cosmology_from_mass_spectrum.py`
-**Depends on:** `NEUTRINO_MASS_DERIVED_NOTE.md` (Phase 4),
-`OMEGA_LAMBDA_DERIVATION_NOTE.md` (cascade chain), and the retained
-`DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md` (eta support package).
+**Depends on:** [`NEUTRINO_MASS_DERIVED_NOTE.md`](NEUTRINO_MASS_DERIVED_NOTE.md)
+(Phase 4), [`OMEGA_LAMBDA_DERIVATION_NOTE.md`](OMEGA_LAMBDA_DERIVATION_NOTE.md)
+(cascade chain),
+[`DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md`](DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md)
+(eta support package), and
+[`DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md`](DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md)
+(neutrino-sector scale support).
 
 ## Safe statement
 
@@ -37,6 +41,27 @@ On this bounded surface, the six LCDM parameters are compressed to **one
 imported (`eta`) + one bounded (`alpha_GUT`)** plus flatness.
 
 ## Inputs and provenance
+
+### 2026-06-06 dependency-edge repair
+
+The current audit blocker asked for explicit dependency edges for the named
+mass/cosmology cascade authorities if they remain load-bearing. They do remain
+load-bearing for this conditional cascade, so they are listed here as
+markdown-linked one-hop source edges:
+
+- [`NEUTRINO_MASS_DERIVED_NOTE.md`](NEUTRINO_MASS_DERIVED_NOTE.md) — Phase 4
+  neutrino mass / `k_B=8` input surface.
+- [`OMEGA_LAMBDA_DERIVATION_NOTE.md`](OMEGA_LAMBDA_DERIVATION_NOTE.md) —
+  downstream `Omega_m -> Omega_Lambda` cascade chain.
+- [`DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md`](DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md)
+  — eta support package.
+- [`DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md`](DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md)
+  — neutrino atmospheric-scale support used by the mass-spectrum cascade.
+
+This edge repair does not promote the row. The remaining blockers are unchanged:
+`eta` is still imported on this cosmology surface, and the
+`alpha_GUT`/Sommerfeld selection plus matter/cosmology bridge still require
+retained or accepted support before any clean-status re-audit.
 
 ### Retained / promoted inputs
 

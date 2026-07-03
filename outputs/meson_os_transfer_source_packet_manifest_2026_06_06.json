@@ -1,0 +1,161 @@
+{
+  "checks": [
+    {
+      "detail": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py",
+      "name": "path_exists:primary_runner",
+      "ok": true
+    },
+    {
+      "detail": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py",
+      "name": "note_links:primary_runner",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt",
+      "name": "path_exists:primary_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt",
+      "name": "note_links:primary_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "bytes=47163",
+      "name": "source_full_length",
+      "ok": true
+    },
+    {
+      "detail": "def block_fwd_propagator_berezin(",
+      "name": "source_contains:def block_fwd_propagator_berezin(",
+      "ok": true
+    },
+    {
+      "detail": "def block_fwd_propagator_operator(",
+      "name": "source_contains:def block_fwd_propagator_operator(",
+      "ok": true
+    },
+    {
+      "detail": "def block_metric_spacetime_eigs(",
+      "name": "source_contains:def block_metric_spacetime_eigs(",
+      "ok": true
+    },
+    {
+      "detail": "def meson_op_on_vacuum_norm(",
+      "name": "source_contains:def meson_op_on_vacuum_norm(",
+      "ok": true
+    },
+    {
+      "detail": "def meson_correlator_full_berezin(",
+      "name": "source_contains:def meson_correlator_full_berezin(",
+      "ok": true
+    },
+    {
+      "detail": "def meson_correlator_from_propagator(",
+      "name": "source_contains:def meson_correlator_from_propagator(",
+      "ok": true
+    },
+    {
+      "detail": "def u_averaged_meson(",
+      "name": "source_contains:def u_averaged_meson(",
+      "ok": true
+    },
+    {
+      "detail": "def gauge_transform_links(",
+      "name": "source_contains:def gauge_transform_links(",
+      "ok": true
+    },
+    {
+      "detail": "K1  VACUUM-ANNIHILATION HANDLED",
+      "name": "source_contains:K1  VACUUM-ANNIHILATION HANDLED",
+      "ok": true
+    },
+    {
+      "detail": "K2  PER-MODE-FACTORIZED BEREZIN BREAKS",
+      "name": "source_contains:K2  PER-MODE-FACTORIZED BEREZIN BREAKS",
+      "ok": true
+    },
+    {
+      "detail": "K3  det-WEIGHT control",
+      "name": "source_contains:K3  det-WEIGHT control",
+      "ok": true
+    },
+    {
+      "detail": "K4  SINGLE-STEP control",
+      "name": "source_contains:K4  SINGLE-STEP control",
+      "ok": true
+    },
+    {
+      "detail": "K5  GAUGE INVARIANCE",
+      "name": "source_contains:K5  GAUGE INVARIANCE",
+      "ok": true
+    },
+    {
+      "detail": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py",
+      "name": "cache_runner_present",
+      "ok": true
+    },
+    {
+      "detail": "ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5 == ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5",
+      "name": "cache_sha_fresh",
+      "ok": true
+    },
+    {
+      "detail": "exit_code=0",
+      "name": "cache_exit_ok",
+      "ok": true
+    },
+    {
+      "detail": "status=ok",
+      "name": "cache_status_ok",
+      "ok": true
+    },
+    {
+      "detail": "SCORECARD PASS=64 FAIL=0",
+      "name": "cache_contains:SCORECARD PASS=64 FAIL=0",
+      "ok": true
+    },
+    {
+      "detail": "P0      : det-weighted avg Berezin == operator meson",
+      "name": "cache_contains:P0      : det-weighted avg Berezin == operator meson",
+      "ok": true
+    },
+    {
+      "detail": "P1      : per-config Berezin(4-ferm) == operator meson",
+      "name": "cache_contains:P1      : per-config Berezin(4-ferm) == operator meson",
+      "ok": true
+    },
+    {
+      "detail": "K1 VAC  : ||F|Omega>||",
+      "name": "cache_contains:K1 VAC  : ||F|Omega>||",
+      "ok": true
+    },
+    {
+      "detail": "K2 BREAK: per-mode-factorized Berezin gap",
+      "name": "cache_contains:K2 BREAK: per-mode-factorized Berezin gap",
+      "ok": true
+    },
+    {
+      "detail": "K3 DIFF : flat(no-det) vs det-weighted gap",
+      "name": "cache_contains:K3 DIFF : flat(no-det) vs det-weighted gap",
+      "ok": true
+    },
+    {
+      "detail": "K4 CTRL : single-step block-metric min eig",
+      "name": "cache_contains:K4 CTRL : single-step block-metric min eig",
+      "ok": true
+    },
+    {
+      "detail": "K5 GAUGE: ||<Theta(F)F> invariance|| under g",
+      "name": "cache_contains:K5 GAUGE: ||<Theta(F)F> invariance|| under g",
+      "ok": true
+    }
+  ],
+  "claim_id": "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30",
+  "fail_count": 0,
+  "pass_count": 30,
+  "paths": {
+    "primary_runner": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py",
+    "primary_runner_cache": "logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt"
+  }
+}

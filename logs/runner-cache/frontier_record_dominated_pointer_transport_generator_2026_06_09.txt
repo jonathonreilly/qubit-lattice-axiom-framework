@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_dominated_pointer_transport_generator_2026_06_09.py
+runner_sha256: 5bf096858561877ce4161ae2e01bfa12683ba2f9429a038c0f6449cf9b929c06
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+==============================================================================
+PART A -- exact lam=1 closed autonomous pointer map (single edge)
+==============================================================================
+  [PASS] A1 H_edge^2 = I (kappa=1)  (9.80e-16)
+  [PASS] A1b exact polynomial exp(-iH tau) vs eigh  (1.64e-15)
+  [PASS] A2 lam=1 step M(x,x)' = cos^2 M(x,x) + sin^2 V M(y,y) V^dag  (2.58e-16)
+  [PASS] A3 lam=1 step M(y,y)' = cos^2 M(y,y) + sin^2 V^dag M(x,x) V  (2.27e-16)
+  [PASS] A4a W unitary  (9.80e-16)
+  [PASS] A4b conj-by-W = (V M(y,y) V^dag, V^dag M(x,x) V)  (0.00e+00)
+  [PASS] A4c pointer map trace-preserving (total occupation conserved)
+  [PASS] A4d pointer map PSD-preserving (CP: random-unitary channel)
+  [PASS] A5 pointer generator joint-locally gauge covariant  (5.71e-16)
+==============================================================================
+PART B -- Lyapunov arrow, fixed-point manifold, rate
+==============================================================================
+  [PASS] B1 imbalance D' = cos(2 tau) D (exact)  (7.71e-16)
+  [PASS] B2 Lyapunov L=||D||^2 strictly decreasing off-balance (tau in (0,pi/2))
+  [PASS] B2b tau=pi/2 preserves ||D|| (full-swap oscillation, not contraction)  (1.11e-16)
+  [PASS] B3 balance manifold M(x,x)=V M(y,y) V^dag is a fixed point  (2.20e-16)
+  [PASS] B4 iterate monotonically relaxes to balance (record arrow)  (L0=1.442e+00 L40=1.130e-16)
+  [INFO] B4 rate  (||D|| per-step factor = cos(2*0.45) = 0.6216)
+==============================================================================
+PART C -- the link's induced generator is vacuous (frozen / Z_2 flip)
+==============================================================================
+  [PASS] C1 link source s' = cos(2 tau) s (exact)  (3.80e-16)
+  [PASS] C2a link frozen polar(s')=polar(s) for cos(2 tau)>0
+  [PASS] C2b link Z_2 flip polar(s')=-polar(s) for cos(2 tau)<0
+  [PASS] C3a source magnitude |s| contracts to 0 (link degenerates at balance)  (|s|_0=1.055e+00 |s|_30=1.085e-06)
+  [PASS] C3b link direction frozen while magnitude contracts (vacuous generator)  (max dir dev = 5.20e-10)
+==============================================================================
+PART D -- link non-autonomy at the compressed level; boundaries
+==============================================================================
+  [PASS] D1a two states share U_eff = polar(s) exactly  (0.00e+00)
+  [PASS] D1b but their autonomous pointer flows differ at order 1 (link is a lossy coordinate)  (||flow1-flow2||=4.966e-02, ||flow1||=9.933e-02)
+  [PASS] D1c flow IS autonomous in (M(x,x),M(y,y)) (the generator's true carrier)  (0.00e+00)
+  [PASS] D2 slaving is record-dominated: dev(lam=1) ~ 0 << dev(lam=0) order 1  (dev(1)=1.88e-16 dev(0.3)=1.799e-01 dev(0)=3.672e-01)
+  [PASS] D2b departure grows monotonically as records weaken
+  [PASS] D3 trace-blocking: (tr M(x,x),tr M(y,y)) closed 2x2 doubly-stochastic flow  (6.66e-16)
+  [PASS] D3b trace-block fixed point = equal occupation (gauge-invariant, no link content)
+==============================================================================
+PART E -- the generator's covariance is instrument-inherited (no discharge)
+==============================================================================
+  [PASS] E1a color-blind total-occupation instrument preserves local color-density spectrum (Ad-covariant content)  (0.00e+00)
+  [PASS] E1b frame-naming occupation-basis instrument changes the local-density spectrum (frame-naming, order 1)  (2.620e-01)
+  [PASS] E2a color-blind total-occupation instrument realized pointer step joint-locally covariant (exact)  (1.32e-16)
+  [PASS] E2b frame-naming occupation-basis instrument realized pointer step covariance broken at order 1 (frame-naming)  (4.267e-01)
+  [INFO] E2 footprint  (the covariant pointer transport generator is the color-blind total-occupation instrument's footprint; frame-naming occupation-basis instrument gives a frame-dependent generator -- no einselection-selection is discharged)
+==============================================================================
+TOTAL: PASS=30 FAIL=0
+==============================================================================
+
+----- stderr -----
+

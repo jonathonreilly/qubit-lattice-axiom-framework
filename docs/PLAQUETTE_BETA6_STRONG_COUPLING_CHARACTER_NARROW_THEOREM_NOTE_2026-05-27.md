@@ -36,7 +36,7 @@ does not set or predict an audit outcome; effective status is
 pipeline-derived after independent review.
 **Type:** bounded_theorem
 **Primary runner:** [`scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py`](./../scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py)
-**Cached log:** [`logs/runner-cache/frontier_plaquette_beta6_strong_coupling_character_narrow.txt`](./../logs/runner-cache/frontier_plaquette_beta6_strong_coupling_character_narrow.txt) (PASS=20 FAIL=0)
+**Cached log:** [`logs/runner-cache/frontier_plaquette_beta6_strong_coupling_character_narrow.txt`](./../logs/runner-cache/frontier_plaquette_beta6_strong_coupling_character_narrow.txt) (PASS=26 FAIL=0)
 
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 
@@ -55,6 +55,40 @@ scope for this repair. This revision takes the **pure algebra split path**:
 No new axiom, import, or retained bridge is introduced. The runner-verified
 core is the load-bearing content; the named bridge stays an admitted,
 non-load-bearing input until a retained authority for it lands.
+
+## 2026-06-07 Source-Boundary Manifest
+
+This repair leaves the row in the honest bounded-support lane and makes the
+source boundary executable rather than implicit. The direct theorem is a finite
+rational-algebra statement over the explicit input packet
+
+```text
+I_SC = (
+  c_1 = 1,
+  c_4 = 4,
+  c_6 = 24,
+  c_7 = -24,
+  c_8 = 100,
+  u_eval = 1/3,
+  P_MC = 0.5934
+).
+```
+
+The runner now checks this packet as a supplied tuple before doing any Padé
+work. It then verifies the actual Padé[3/3] matching equations
+`series * Q - P = O(u^7)`, the nonzero denominator at `u = 1/3`, the exact
+value `3/5`, the two conformal cross-checks, the `c_6` rigidity audit, and the
+positive-contour Borel-Padé obstruction. The MC number is checked only as a
+comparison value and is explicitly not consumed as a theorem equality.
+
+Accordingly, this note can support a re-audit of the fully internal statement:
+
+> Given `I_SC`, the displayed Padé and Borel-Padé finite algebra follows.
+
+It cannot support a re-audit that treats the coefficient table, the beta-to-`u`
+map, or the MC comparator as framework-native facts. Those remain outside the
+row until separately derived or accepted by their own retained/effective-bounded
+authority rows.
 
 ## Statement
 

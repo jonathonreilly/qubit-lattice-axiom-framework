@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_delta_phase_count_one_z2_orientation.py
+runner_sha256: cca7cec799b3f559767b0502dee810d139d4af9348b6cff2628b9d61a04a80c9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.32
+status: ok
+----- stdout -----
+PASS: M_reflection_is_transposition_(1 2) max=6.66e-16
+PASS: M_symmetric_functional_mirror_degenerate max|F(+d)-F(-d)|=6.66e-16
+PASS: U_vandermonde_is_S3_sign_rep max|Delta(s.p)-sgn(s)Delta(p)|=0.00e+00
+PASS: U_sgn_equals_det_perm_count_orientation sgn(sigma)=det(rho_perm(sigma)); +1 set = A_3 = C_3
+PASS: U_vandermonde_odd_under_reflection Delta(+2/9)=+4.674812e-02 Delta(-2/9)=-4.674812e-02
+PASS: U_sign_vandermonde_is_the_orientation_Z2 sign Delta(+2/9)=+1  sign Delta(-2/9)=-1
+PASS: U_mirror_shares_chamber_opposite_orientation same sorted Born multiset, opposite sign(Delta) -> residual after chamber is the Z_2
+PASS: E_gamma_chi_is_involution Gamma_chi^2 = I
+PASS: E_scalar_op_sp_not_anticommuting {+1I,Gamma}=2sGamma != 0 -> scalar sI outside the anticommuting-operator no-go
+PASS: E_scalar_op_sm_not_anticommuting {-1I,Gamma}=2sGamma != 0 -> scalar sI outside the anticommuting-operator no-go
+PASS: E_orientation_is_a_records_functional sign(Delta) is a scalar functional of the Born data, not an operator
+PASS: G_single_global_Z2 S_3 sign rep: 3 even (C_3) / 3 odd; one global handedness, not per-site
+PASS: S_magnitude_is_separate_L3_1_2 |Delta(2/9)|=0.0467 != 2/9 ; magnitude 2/9=L_3(1,2)=0.222222 (separate)
+PASS: S_realized_sign_is_open_residual both orientations are valid records; which one is realized = open global-handedness/arrow residual
+PASS: firewall_cone_Q_two_thirds_all_delta max|Q-2/3|=6.66e-16
+PASS: R_comparator_delta_pdg_near_2_9 delta_PDG=0.222230
+
+TOTAL: PASS=16 FAIL=0
+VERDICT: the Brannen-delta phase chirality (selecting +delta_* over its mirror) and the generation count (S_3 -> C_3) reduce to ONE global Z_2 = sign(Vandermonde) = the Cl(3) pseudoscalar/volume-form orientation. Records-functional level (evades the operator anticommuting no-go). Magnitude 2/9=L_3(1,2), the realized handedness, and the r=1/2 cone remain separate untouched residuals.
+
+----- stderr -----
+

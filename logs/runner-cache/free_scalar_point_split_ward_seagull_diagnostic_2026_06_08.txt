@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/free_scalar_point_split_ward_seagull_diagnostic_2026_06_08.py
+runner_sha256: b30e4b228d25d1735a1c8a0567fc720fb356e13de76e98fd68029ffbc5e17ad1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
+FREE SCALAR POINT-SPLIT WARD SEAGULL DIAGNOSTIC
+====================================================================
+[PASS] T1: point-split vertex satisfies the free-scalar lattice Ward identity
+       max error over 20000 random momenta = 7.11e-15
+[PASS] T2: naive-current residual equals minus the point-split-minus-naive seagull
+       naive fails=True; max residual+seagull error over 5000 samples = 7.11e-15
+[PASS] T3: source note guardrails prevent reading this as full framework closure
+       all required guardrails present
+
+TOTAL: PASS=3 FAIL=0
+SCOPE: free-scalar lattice Ward identity and point-split seagull diagnostic only; no framework stress-tensor, cubic-seagull, Belinfante, diffeomorphism, or gravity-sign closure is claimed.
+
+----- stderr -----
+

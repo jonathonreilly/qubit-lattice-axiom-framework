@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lp_two_band_exact_2026_06_12.py
+runner_sha256: 758e6a8051bc76fd876c3f4ae4f54c05820101be3989cafe5bfa51da953d8794
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.99
+status: ok
+----- stdout -----
+Two-band exact Peierls response verifier
+cell: Q=24, Ly=2, N=48, t=1.0, T=0.2, GL=12, small_B=0.001
+
+S0 ANCHORS: provenance + computed discretization control
+landed intraband-LP curvature-form deviations (provenance, not gated against
+the velocity-gauge PT split below — different decompositions):
+  m=0.2 T=0.2: 0.0424013805
+  m=0.2 T=0.4: 0.0461600062
+  m=0.5 T=0.2: 0.2010378416
+  m=0.5 T=0.4: 0.1994054030
+PASS: computed anchor: landed estimator finite-B drift at m=0.2 is below the disclosed 1e-2 floor (B vs B/2; drift direction printed) :: chi(B)=4.1584331179e-02, chi(B/2)=4.1351650739e-02, rel_drift=5.627e-03, floor=1.0e-02
+
+S1 STRUCTURE: Harper cell controls
+cell convention: Q=24 (even, contains the staggered period), Ly=2
+PASS: Harper matrix Hermiticity :: max |H-H^dag|=0.000e+00, tol=1.0e-12
+PASS: B=0 folded two-band spectrum :: max folded-spectrum error=5.773e-15, tol=1.0e-10
+
+S2/S3: native second-order PT vs small-B Hofstadter second difference
+fixed chi probe: mu=1.7086, T=0.2
+mass=0  chi_exact=4.3273740459e-02  chi_PT=4.2933687517e-02  rel_dev=7.858e-03  PT(intra,inter)=(8.368e-01,-7.939e-01)
+mass=0.2  chi_exact=4.1584331179e-02  chi_PT=4.1273318495e-02  rel_dev=7.479e-03  PT(intra,inter)=(1.227e+00,-1.186e+00)
+mass=0.3  chi_exact=3.9441294511e-02  chi_PT=3.9175811591e-02  rel_dev=6.731e-03  PT(intra,inter)=(1.687e+00,-1.648e+00)
+mass=0.5  chi_exact=3.0817431644e-02  chi_PT=3.0744459999e-02  rel_dev=2.368e-03  PT(intra,inter)=(3.179e+00,-3.148e+00)
+PASS: full two-band PT matches exact chi m=0.0 :: rel_dev=7.858e-03, tol=2.000e-02
+PASS: full two-band PT matches exact chi m=0.2 :: rel_dev=7.479e-03, tol=2.000e-02
+PASS: full two-band PT matches exact chi m=0.3 :: rel_dev=6.731e-03, tol=2.000e-02
+PASS: full two-band PT matches exact chi m=0.5 :: rel_dev=2.368e-03, tol=2.000e-02
+PASS: anti-fabrication: m=0.5 interband contribution is nontrivial :: max |interband|=3.148e+00, min=1.0e-06
+
+S4: computed near-cancellation structure of the PT split
+PASS: near-cancellation: both PT terms exceed 5x the net response at every mass :: min term/net ratio=18.491, factor_min=5.0
+PASS: interband magnitude is strictly increasing with mass on the fixed grid :: interband magnitudes=7.938808e-01, 1.185645e+00, 1.648141e+00, 3.147761e+00
+
+S5: note hygiene
+PASS: canonical claim type is present and noncanonical Type front matter is absent :: bounded_theorem with single claim-type field
+PASS: status authority and no-promotion statements are present :: audit status remains independent
+PASS: landed LP off-m0 predecessor is linked as the comparison-context dependency :: dependency graph receives the predecessor edge
+
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

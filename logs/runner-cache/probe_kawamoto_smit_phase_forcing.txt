@@ -1,58 +1,83 @@
 ===== runner cache v1 =====
 runner: scripts/probe_kawamoto_smit_phase_forcing.py
-runner_sha256: 8974e07313a32cdd340531be0a0b205a5130c2247bf3df449828ca58e3e83cea
+runner_sha256: aa59fba311825d19b01bafb7c9a72b497762a75f504473d48511f724b41b87fe
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.50
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 ========================================================================
-Block 03 — Kawamoto-Smit Phase Forcing Verification
+Kawamoto-Smit Phase Forcing Certificate (2026-06-10)
 Loop: staggered-dirac-realization-gate-20260507
 Companion: docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md
 ========================================================================
 
-Verifies: T†(x) γ_μ T(x + μ̂) = η_μ(x) · I_2
-with T(x) = σ_1^{x_1} σ_2^{x_2} σ_3^{x_3}
+Theorem 2(i):  a sign system admits a site-local unitary
+               scalarization IFF it satisfies the Clifford -1
+               plaquette cocycle (Lemmas 2 + 3).
+Theorem 2(ii): on simply connected boxes the solutions form
+               exactly ONE Z2 gauge class, containing the
+               Kawamoto-Smit representative eta^0.
+Premises P-KIN (naive-Dirac kinetic form) and P-SD (site-local
+unitary diagonalization) are declared, not derived (B2, B3).
 
-Expected K-S phases:
-  η_1 = 1
-  η_2(x) = (−1)^{x_1}
-  η_3(x) = (−1)^{x_1 + x_2}
+[PASS] ( 1) A: T(x)^dag sigma_1 T(x+mu) = +1 I_2 at x=(0, 0, 0) (exact sympy)
+[PASS] ( 2) A: T(x)^dag sigma_2 T(x+mu) = +1 I_2 at x=(0, 0, 0) (exact sympy)
+[PASS] ( 3) A: T(x)^dag sigma_3 T(x+mu) = +1 I_2 at x=(0, 0, 0) (exact sympy)
+[PASS] ( 4) A: T(x)^dag sigma_1 T(x+mu) = +1 I_2 at x=(0, 0, 1) (exact sympy)
+[PASS] ( 5) A: T(x)^dag sigma_2 T(x+mu) = +1 I_2 at x=(0, 0, 1) (exact sympy)
+[PASS] ( 6) A: T(x)^dag sigma_3 T(x+mu) = +1 I_2 at x=(0, 0, 1) (exact sympy)
+[PASS] ( 7) A: T(x)^dag sigma_1 T(x+mu) = +1 I_2 at x=(0, 1, 0) (exact sympy)
+[PASS] ( 8) A: T(x)^dag sigma_2 T(x+mu) = +1 I_2 at x=(0, 1, 0) (exact sympy)
+[PASS] ( 9) A: T(x)^dag sigma_3 T(x+mu) = -1 I_2 at x=(0, 1, 0) (exact sympy)
+[PASS] (10) A: T(x)^dag sigma_1 T(x+mu) = +1 I_2 at x=(0, 1, 1) (exact sympy)
+[PASS] (11) A: T(x)^dag sigma_2 T(x+mu) = +1 I_2 at x=(0, 1, 1) (exact sympy)
+[PASS] (12) A: T(x)^dag sigma_3 T(x+mu) = -1 I_2 at x=(0, 1, 1) (exact sympy)
+[PASS] (13) A: T(x)^dag sigma_1 T(x+mu) = +1 I_2 at x=(1, 0, 0) (exact sympy)
+[PASS] (14) A: T(x)^dag sigma_2 T(x+mu) = -1 I_2 at x=(1, 0, 0) (exact sympy)
+[PASS] (15) A: T(x)^dag sigma_3 T(x+mu) = -1 I_2 at x=(1, 0, 0) (exact sympy)
+[PASS] (16) A: T(x)^dag sigma_1 T(x+mu) = +1 I_2 at x=(1, 0, 1) (exact sympy)
+[PASS] (17) A: T(x)^dag sigma_2 T(x+mu) = -1 I_2 at x=(1, 0, 1) (exact sympy)
+[PASS] (18) A: T(x)^dag sigma_3 T(x+mu) = -1 I_2 at x=(1, 0, 1) (exact sympy)
+[PASS] (19) A: T(x)^dag sigma_1 T(x+mu) = +1 I_2 at x=(1, 1, 0) (exact sympy)
+[PASS] (20) A: T(x)^dag sigma_2 T(x+mu) = -1 I_2 at x=(1, 1, 0) (exact sympy)
+[PASS] (21) A: T(x)^dag sigma_3 T(x+mu) = +1 I_2 at x=(1, 1, 0) (exact sympy)
+[PASS] (22) A: T(x)^dag sigma_1 T(x+mu) = +1 I_2 at x=(1, 1, 1) (exact sympy)
+[PASS] (23) A: T(x)^dag sigma_2 T(x+mu) = -1 I_2 at x=(1, 1, 1) (exact sympy)
+[PASS] (24) A: T(x)^dag sigma_3 T(x+mu) = +1 I_2 at x=(1, 1, 1) (exact sympy)
+[PASS] (25) A: omega = sigma_1 sigma_2 sigma_3 = i I_2 (central pseudoscalar, U2)
 
-[PASS] x=(0, 0, 0), μ=1: derived η = 1, expected = 1
-[PASS] x=(0, 0, 0), μ=2: derived η = 1, expected = 1
-[PASS] x=(0, 0, 0), μ=3: derived η = 1, expected = 1
-[PASS] x=(0, 0, 1), μ=1: derived η = 1, expected = 1
-[PASS] x=(0, 0, 1), μ=2: derived η = 1, expected = 1
-[PASS] x=(0, 0, 1), μ=3: derived η = 1, expected = 1
-[PASS] x=(0, 1, 0), μ=1: derived η = 1, expected = 1
-[PASS] x=(0, 1, 0), μ=2: derived η = 1, expected = 1
-[PASS] x=(0, 1, 0), μ=3: derived η = -1, expected = -1
-[PASS] x=(0, 1, 1), μ=1: derived η = 1, expected = 1
-[PASS] x=(0, 1, 1), μ=2: derived η = 1, expected = 1
-[PASS] x=(0, 1, 1), μ=3: derived η = -1, expected = -1
-[PASS] x=(1, 0, 0), μ=1: derived η = 1, expected = 1
-[PASS] x=(1, 0, 0), μ=2: derived η = -1, expected = -1
-[PASS] x=(1, 0, 0), μ=3: derived η = -1, expected = -1
-[PASS] x=(1, 0, 1), μ=1: derived η = 1, expected = 1
-[PASS] x=(1, 0, 1), μ=2: derived η = -1, expected = -1
-[PASS] x=(1, 0, 1), μ=3: derived η = -1, expected = -1
-[PASS] x=(1, 1, 0), μ=1: derived η = 1, expected = 1
-[PASS] x=(1, 1, 0), μ=2: derived η = -1, expected = -1
-[PASS] x=(1, 1, 0), μ=3: derived η = 1, expected = 1
-[PASS] x=(1, 1, 1), μ=1: derived η = 1, expected = 1
-[PASS] x=(1, 1, 1), μ=2: derived η = -1, expected = -1
-[PASS] x=(1, 1, 1), μ=3: derived η = 1, expected = 1
+[PASS] (26) B: exhaustive enumeration of all 4096 sign systems: exactly 128 = 2^7 admit a site-local unitary scalarization (expected 128)
+[PASS] (27) B: scalarizable set == Clifford -1 plaquette cocycle solution set (128 systems; iff of Theorem 2(i)); eta^0 is a member
+[PASS] (28) B: scalarizable set == Z2 gauge orbit of eta^0 (128 systems => exactly ONE gauge class, Theorem 2(ii)); -eta^0 = epsilon-gauge transform of eta^0, same class (Remark R3)
 
-SUMMARY: PASS=24 FAIL=0 (out of 24 = 8 sites × 3 directions)
+[PASS] (29) C: GF(2) certificate on 3^3 box (|V|=27, |E|=54, |P|=36): nullity(d1) = 26 == |V|-1 = 26 = rank(d0) => cocycle solutions = e^0 + ker(d1) form exactly one Z2 gauge class; eta^0 satisfies all plaquette conditions
+[PASS] (30) C: GF(2) certificate on 4^3 box (|V|=64, |E|=144, |P|=108): nullity(d1) = 63 == |V|-1 = 63 = rank(d0) => cocycle solutions = e^0 + ker(d1) form exactly one Z2 gauge class; eta^0 satisfies all plaquette conditions
+[PASS] (31) C: GF(2) certificate on 5^3 box (|V|=125, |E|=300, |P|=240): nullity(d1) = 124 == |V|-1 = 124 = rank(d0) => cocycle solutions = e^0 + ker(d1) form exactly one Z2 gauge class; eta^0 satisfies all plaquette conditions
 
-Cross-check: σ_1 σ_2 σ_3 = i I_2 (chirality central pseudoscalar)
-  σ_1 σ_2 σ_3 = I · I_2  (= i · I_2 verified)
+[PASS] (32) D: all-plus sign system REJECTED by the transport decision procedure (no site-local unitary scalarization exists)
+[PASS] (33) D: single-edge perturbation 1/12 of eta^0 (flip edge x=(0, 0, 0), mu=1) REJECTED by transport
+[PASS] (34) D: single-edge perturbation 2/12 of eta^0 (flip edge x=(0, 0, 0), mu=2) REJECTED by transport
+[PASS] (35) D: single-edge perturbation 3/12 of eta^0 (flip edge x=(0, 0, 0), mu=3) REJECTED by transport
+[PASS] (36) D: single-edge perturbation 4/12 of eta^0 (flip edge x=(0, 0, 1), mu=1) REJECTED by transport
+[PASS] (37) D: single-edge perturbation 5/12 of eta^0 (flip edge x=(0, 0, 1), mu=2) REJECTED by transport
+[PASS] (38) D: single-edge perturbation 6/12 of eta^0 (flip edge x=(0, 1, 0), mu=1) REJECTED by transport
+[PASS] (39) D: single-edge perturbation 7/12 of eta^0 (flip edge x=(0, 1, 0), mu=3) REJECTED by transport
+[PASS] (40) D: single-edge perturbation 8/12 of eta^0 (flip edge x=(0, 1, 1), mu=1) REJECTED by transport
+[PASS] (41) D: single-edge perturbation 9/12 of eta^0 (flip edge x=(1, 0, 0), mu=2) REJECTED by transport
+[PASS] (42) D: single-edge perturbation 10/12 of eta^0 (flip edge x=(1, 0, 0), mu=3) REJECTED by transport
+[PASS] (43) D: single-edge perturbation 11/12 of eta^0 (flip edge x=(1, 0, 1), mu=2) REJECTED by transport
+[PASS] (44) D: single-edge perturbation 12/12 of eta^0 (flip edge x=(1, 1, 0), mu=3) REJECTED by transport
+[PASS] (45) D: flipped interior edge x=(1, 1, 1), mu=2 on the 4^3 box VIOLATES the -1 plaquette cocycle at scale
 
-Bounded theorem (T2) — Kawamoto-Smit Phase Forcing — verified.
-Spin-rotation T(x) = σ_1^{x_1} σ_2^{x_2} σ_3^{x_3} diagonalizes
-the kinetic operator into Kawamoto-Smit phases on all 8 unit-cell sites.
+[PASS] (46) E: nontrivial Z2 gauge transform of eta^0 on the 3^3 box scalarizes (transport) and the gauge function is recovered exactly by path products (Lemma 4)
+[PASS] (47) E: U(1) generalization (Remark R2): complex local phase gauge transform of eta^0 scalarizes with T'(x)=g(x)T(x); phases are unimodular and not all real; path-product recovery returns the SAME real representative eta^0
+
+RESIDUAL (declared-open): P-KIN/P-SD kinetic-class premises (B2, B3) are declared, not derived from Lattice + Quantum alone.
+CONTEXT (not theorem premise): substep-1 statistics-selection / hard-core-boson boundary (B1) remains downstream gate context; Lemmas 2-4 use the supplied local P-KIN/P-SD surface.
+RESIDUAL (declared-open): torus holonomy / APBC signs (B4) are boundary convention data, not local phase law.
+
+TOTAL: PASS=47 FAIL=0
 
 ----- stderr -----
 

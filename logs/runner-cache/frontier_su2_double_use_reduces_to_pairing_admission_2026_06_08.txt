@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/frontier_su2_double_use_reduces_to_pairing_admission_2026_06_08.py
+runner_sha256: bc3b448f904f6f1983e5748f9572e6fff99b761b3bec46ab9c8add48787fc883
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+============================================================================================
+su(2) double-use -> one index-pairing admission; forced given the pairing, free on axioms
+============================================================================================
+
+--------------------------------------------------------------------------------------------
+A: the matched pair EXISTS (NO-GO refuted) + every proper O_h rotation has an INNER SU(2) lift
+--------------------------------------------------------------------------------------------
+  [PASS] (A1) closing the 90-deg generators gives the binary octahedral group 2O subset SU(2): |2O| = 48  --  |group|=48
+  [PASS] (A2) the SU(2)->SO(3) adjoint image is exactly the 24 proper rotations O (signed perms, det=+1)  --  24 distinct SO(3) elements, all proper signed perms
+  [PASS] (A3) => 2->1 double cover (each R has TWO lifts +-U): 48/24 = 2; the '2pi=-1' is just Spin(3)->SO(3), NO obstruction  --  matched pair is globally consistent; NO-GO refuted
+
+--------------------------------------------------------------------------------------------
+Paired-index lift: given the pairing, the spin lift is forced inner = the qubit su(2) S_i=sigma_i/2
+--------------------------------------------------------------------------------------------
+  [PASS] (B1) every lift acts by INNER automorphism of M2(C): U (sigma.v) U^dag = sigma.(Rv) (Skolem-Noether realized)  --  the generators of these inner unitaries are S_i = sigma_i/2 = the qubit's OWN su(2)
+  [PASS] (B2) infinitesimal lift generators = sigma_i/2 (the per-site qubit su(2)): [sigma_i,sigma_j]=2i eps sigma_k => [S_i,S_j]=i eps S_k
+
+--------------------------------------------------------------------------------------------
+C: NO spectator hatch at dim 2: commutant of the Paulis = scalars; a separate spin factor needs dim 4
+--------------------------------------------------------------------------------------------
+  [PASS] (C1) commutant of {sigma_x,sigma_y,sigma_z} in M2(C) = scalars (only I commutes with all three)  --  => the spin lift CANNOT act on a separate (spectator) factor inside dim 2; it must BE the qubit su(2)
+  [PASS] (C2) a separate spin factor would need M2(C)(x)M2(C) = dim 4, VIOLATING the dim-2 Quantum axiom  --  no room for internal-doublet AND a distinct spin-doublet at one dim-2 site
+
+--------------------------------------------------------------------------------------------
+Pairing not supplied by the axioms -- the qubit can genuinely spectate
+--------------------------------------------------------------------------------------------
+  [PASS] (D1) a scalar (O_h-invariant) site-hop (x) I commutes with the internal su(2) (I_sites (x) sigma_i): qubit spectates without the pairing  --  without the gamma<->edge pairing, nothing couples the qubit to spatial structure
+  [PASS] (D2) the 8-site cube 90-deg rotation is a factor-PERMUTATION P of sites (moves >=4 sites); P != I_8 (not a one-site op)  --  8 sites moved; the external rotation has a site-permutation part no internal-only operator has => covariance presupposes the pairing
+
+--------------------------------------------------------------------------------------------
+E: the conditional theorem + the residual
+--------------------------------------------------------------------------------------------
+  [PASS] (E1) CONDITIONAL THEOREM: given the gamma<->edge pairing and the dim-2 Quantum axiom, the spatial-rotation spin lift is forced to be the qubit's own su(2) (S_i=sigma_i/2), inner (Skolem-Noether), no spectator (C1)
+  [PASS] (E2) RESIDUAL: the pairing is the (Kahler-/staggered-)Dirac realization gate, itself carrying named-open admissions {FS statistics, signature/time, chirality eps}; the analogous boost-faith question is a landed retained_no_go  --  QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02
+  [PASS] (E3) DO NOT FORCE the pairing from the matched 3=3 (M2(C)=Cl(3,0)=GA(3) vs Z^3): #2559-closed consistency, not a derivation (d=3 panel); reusing it is the panel-flagged inversion
+
+============================================================================================
+TOTAL: PASS=12 FAIL=0
+============================================================================================
+
+----- stderr -----
+

@@ -1,28 +1,29 @@
 #!/usr/bin/env python3
-"""Causal-field impact-parameter probe on the retained center grown family.
+"""Causal-field realized-impact-parameter probe on the center growth rule.
 
 Question
 --------
-Does the retained causal-field modification preserve a recognizable
-impact-parameter deflection law on at least one retained grown family?
+Does the causal-field modification preserve a recognizable impact-parameter
+deflection law when the requested impact parameters are physically realized
+by the generated source layer?
 
 Guard rails
 -----------
 - exact zero-source control first
-- one retained family only
+- one center growth-rule parameter family only
+- enlarged transverse support so target b=5..10 is physically realized
+- fit only against measured source-to-detector impact parameters
 - compare instantaneous, forward-only, and dynamic finite-cone variants
 - keep the claim surface narrow:
-  if the broad causal variants keep the law shape, say that explicitly;
-  if the finite-cone version breaks it, treat that as the boundary
+  if the runner sees an inverse-power law, report the measured exponent;
+  do not identify that exponent with a 1/b law unless the fit supports it.
 """
 
 from __future__ import annotations
 
 import math
-import os
 import statistics
 import sys
-import time
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -39,7 +40,7 @@ from evolving_network_prototype_v6 import build_structured_growth, propagate  # 
 
 H = 0.5
 N_LAYERS = 13
-HALF = 5
+HALF = 20
 SEEDS = tuple(range(6))
 SOURCE_LAYER = 2 * N_LAYERS // 3
 SOURCE_Y0 = 0.0
@@ -50,7 +51,6 @@ FIELD_EPS = 0.1
 CAUSAL_CONES = (1.0, 0.5)
 
 DOC_PATH = ROOT / "docs" / "CAUSAL_IMPACT_PARAMETER_NOTE.md"
-LOG_PATH = ROOT / "logs" / "2026-04-06-causal-impact-parameter-probe.txt"
 
 
 @dataclass(frozen=True)
@@ -69,6 +69,24 @@ class FieldSummary:
     total: int
 
 
+@dataclass(frozen=True)
+class AnchorDiagnostic:
+    target_b: int
+    realized_mean: float
+    realized_min: float
+    realized_max: float
+    source_z_error_max: float
+    realized_error_max: float
+    unique_source_nodes: int
+
+
+@dataclass(frozen=True)
+class RunnerCheck:
+    label: str
+    ok: bool
+    detail: str
+
+
 FAMILY = FamilyCase("center grown family", 0.20, 0.70)
 
 
@@ -82,7 +100,7 @@ def _se(values: list[float]) -> float:
     return statistics.pstdev(values) / math.sqrt(len(values))
 
 
-def _fit_power_law(bs: list[int], deltas: list[float]) -> tuple[float, float]:
+def _fit_power_law(bs: list[float], deltas: list[float]) -> tuple[float, float]:
     pairs = [(float(b), abs(d)) for b, d in zip(bs, deltas) if b > 0 and abs(d) > 1e-30]
     if len(pairs) < 3:
         return math.nan, math.nan
@@ -153,6 +171,24 @@ def _centroid_z(
     return weighted / total if total > 1e-30 else 0.0
 
 
+def _centroid_yz(
+    amps: list[complex],
+    positions: list[tuple[float, float, float]],
+    det: list[int],
+) -> tuple[float, float]:
+    total = 0.0
+    weighted_y = 0.0
+    weighted_z = 0.0
+    for i in det:
+        p = abs(amps[i]) ** 2
+        total += p
+        weighted_y += p * positions[i][1]
+        weighted_z += p * positions[i][2]
+    if total <= 1e-30:
+        return 0.0, 0.0
+    return weighted_y / total, weighted_z / total
+
+
 def _instantaneous_field(
     positions: list[tuple[float, float, float]],
     anchor: tuple[float, float, float],
@@ -221,8 +257,20 @@ def _dynamic_field(
     return field
 
 
-def _measure_family(case: FamilyCase) -> tuple[dict[str, FieldSummary], float, float, dict[str, dict[int, list[float]]]]:
+def _measure_family(
+    case: FamilyCase,
+) -> tuple[
+    dict[str, FieldSummary],
+    float,
+    float,
+    dict[str, dict[int, list[float]]],
+    dict[int, AnchorDiagnostic],
+]:
     zero_vals: list[float] = []
+    realized_b_values: dict[int, list[float]] = {b: [] for b in B_VALUES}
+    source_z_errors: dict[int, list[float]] = {b: [] for b in B_VALUES}
+    realized_errors: dict[int, list[float]] = {b: [] for b in B_VALUES}
+    source_nodes: dict[int, set[int]] = {b: set() for b in B_VALUES}
     field_values: dict[str, dict[int, list[float]]] = {
         "instantaneous": {b: [] for b in B_VALUES},
         "forward-only": {b: [] for b in B_VALUES},
@@ -234,12 +282,17 @@ def _measure_family(case: FamilyCase) -> tuple[dict[str, FieldSummary], float, f
         fam = build_structured_growth(N_LAYERS, HALF, H, case.drift, case.restore, seed)
         positions, layers, adj = fam.positions, fam.layers, fam.adj
         det = layers[-1]
+        free = propagate(positions, layers, adj, [0.0] * len(positions))
+        y_free, z_free = _centroid_yz(free, positions, det)
 
         for b in B_VALUES:
-            _, anchor = _source_anchor(positions, layers, float(b))
-
-            free = propagate(positions, layers, adj, [0.0] * len(positions))
-            z_free = _centroid_z(free, positions, det)
+            source_node, anchor = _source_anchor(positions, layers, float(b))
+            _, sy, sz = anchor
+            realized_b = math.sqrt((sy - y_free) ** 2 + (sz - z_free) ** 2)
+            realized_b_values[b].append(realized_b)
+            source_z_errors[b].append(abs(sz - float(b)))
+            realized_errors[b].append(abs(realized_b - float(b)))
+            source_nodes[b].add(source_node)
 
             zero_field = [0.0] * len(positions)
             zero_amps = propagate(positions, layers, adj, zero_field)
@@ -261,9 +314,10 @@ def _measure_family(case: FamilyCase) -> tuple[dict[str, FieldSummary], float, f
                 field_values[dyn_key][b].append(_centroid_z(dyn_amps, positions, det) - z_free)
 
     summaries: dict[str, FieldSummary] = {}
+    realized_means = [_mean(realized_b_values[b]) for b in B_VALUES]
     for key, per_b in field_values.items():
         means = [_mean(per_b[b]) for b in B_VALUES]
-        alpha, r2 = _fit_power_law(list(B_VALUES), means)
+        alpha, r2 = _fit_power_law(realized_means, means)
         summaries[key] = FieldSummary(
             zero_delta=_mean(zero_vals),
             alpha=alpha,
@@ -274,7 +328,19 @@ def _measure_family(case: FamilyCase) -> tuple[dict[str, FieldSummary], float, f
 
     zero_max_delta = max(abs(v) for v in zero_vals) if zero_vals else 0.0
     zero_max_field = 0.0
-    return summaries, zero_max_delta, zero_max_field, field_values
+    anchor_diagnostics = {
+        b: AnchorDiagnostic(
+            target_b=b,
+            realized_mean=_mean(realized_b_values[b]),
+            realized_min=min(realized_b_values[b]),
+            realized_max=max(realized_b_values[b]),
+            source_z_error_max=max(source_z_errors[b]),
+            realized_error_max=max(realized_errors[b]),
+            unique_source_nodes=len(source_nodes[b]),
+        )
+        for b in B_VALUES
+    }
+    return summaries, zero_max_delta, zero_max_field, field_values, anchor_diagnostics
 
 
 def _render_note(
@@ -282,34 +348,39 @@ def _render_note(
     zero_max_delta: float,
     zero_max_field: float,
     field_values: dict[str, dict[int, list[float]]],
+    anchor_diagnostics: dict[int, AnchorDiagnostic],
+    checks: list[RunnerCheck],
 ) -> str:
     lines: list[str] = [
         "# Causal Impact-Parameter Note",
         "",
-        "**Date:** 2026-04-06  ",
-        "**Status:** bounded causal-field impact-parameter probe on the retained center grown family",
+        "**Date:** 2026-04-06; realized-impact repair 2026-06-18",
+        "**Status:** bounded realized-impact-parameter replay on the center growth-rule family",
         "",
         "## Artifact Chain",
         "",
         "- [`scripts/causal_impact_parameter_probe.py`](../scripts/causal_impact_parameter_probe.py)",
-        "- [`logs/2026-04-06-causal-impact-parameter-probe.txt`](../logs/2026-04-06-causal-impact-parameter-probe.txt)",
+        "- [`logs/runner-cache/causal_impact_parameter_probe.txt`](../logs/runner-cache/causal_impact_parameter_probe.txt)",
         "- causal-field context:",
-        "  - [`docs/CAUSAL_PROPAGATING_FIELD_NOTE.md`](../docs/CAUSAL_PROPAGATING_FIELD_NOTE.md)",
+        "  - [`docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](../docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)",
         "  - [`docs/CAUSAL_FIELD_PORTABILITY_NOTE.md`](../docs/CAUSAL_FIELD_PORTABILITY_NOTE.md)",
         "  - [`docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md`](../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md)",
         "",
         "## Question",
         "",
-        "Does the retained causal-field modification preserve a recognizable",
-        "impact-parameter deflection law on the retained center grown family when",
-        "the field is instantaneous, forward-only, or finite-cone dynamic?",
+        "Does the causal-field modification preserve a recognizable",
+        "impact-parameter deflection law on the center growth-rule family when",
+        "the source layer physically realizes the requested impact parameters",
+        "and the fit uses the measured source-to-detector separation?",
         "",
         "## Result",
         "",
         f"- exact zero control: `delta = {zero_max_delta:+.3e}`",
         f"- exact zero field max: `{zero_max_field:+.3e}`",
+        f"- source-layer half-width: `{HALF}`",
+        "- fit coordinate: mean realized source-to-zero-field-detector-centroid transverse separation",
         "",
-        "| field | alpha | R^2 | TOWARD count |",
+        "| field | alpha(realized b) | R^2 | TOWARD count |",
         "| --- | ---: | ---: | ---: |",
     ]
 
@@ -319,42 +390,77 @@ def _render_note(
             f"| {key} | `{fs.alpha:.3f}` | `{fs.r2:.3f}` | `{fs.toward}/{fs.total}` |"
         )
 
-    broad_keys = ("instantaneous", "forward-only", "dynamic(c=1)")
-    broad_law_like = all(
+    lines.extend(
+        [
+            "",
+            "## Realized Source Anchors",
+            "",
+            "| target b | mean realized b | realized range | max source-z error | max realized-b error | distinct source nodes |",
+            "| ---: | ---: | ---: | ---: | ---: | ---: |",
+        ]
+    )
+    for b in B_VALUES:
+        diag = anchor_diagnostics[b]
+        lines.append(
+            f"| `{diag.target_b}` | `{diag.realized_mean:.6f}` | "
+            f"`[{diag.realized_min:.6f}, {diag.realized_max:.6f}]` | "
+            f"`{diag.source_z_error_max:.3e}` | `{diag.realized_error_max:.3e}` | "
+            f"`{diag.unique_source_nodes}` |"
+        )
+
+    all_keys = ("instantaneous", "forward-only", "dynamic(c=1)", "dynamic(c=0.5)")
+    inverse_power_like = all(
         math.isfinite(summaries[key].alpha)
         and math.isfinite(summaries[key].r2)
-        and summaries[key].r2 > 0.8
+        and summaries[key].r2 > 0.9
+        and summaries[key].toward == summaries[key].total
+        and summaries[key].alpha < -0.5
+        for key in all_keys
+    )
+    one_over_b_like = all(
+        math.isfinite(summaries[key].alpha)
+        and math.isfinite(summaries[key].r2)
+        and summaries[key].r2 > 0.9
         and summaries[key].toward == summaries[key].total
         and abs(summaries[key].alpha + 1.0) < 0.5
-        for key in broad_keys
+        for key in all_keys
     )
-    finite = summaries["dynamic(c=0.5)"]
-    finite_boundary = (
-        not math.isfinite(finite.alpha)
-        or not math.isfinite(finite.r2)
-        or finite.r2 <= 0.8
-        or finite.toward < finite.total
-        or abs(finite.alpha + 1.0) >= 0.5
+
+    lines.extend(
+        [
+            "",
+            "## Runner Checks",
+            "",
+            "| check | result | observed |",
+            "| --- | ---: | --- |",
+        ]
     )
+    for check in checks:
+        lines.append(
+            f"| {check.label} | `{'PASS' if check.ok else 'FAIL'}` | {check.detail} |"
+        )
 
     lines.extend(
         [
             "",
             "## Safe Read",
             "",
-            "The impact-parameter sweep is real on the retained center grown family,",
-            "but the causal variants do not all behave the same way.",
+            "The old nominal-label fit is not used here. The runner enlarges the",
+            "transverse source support, records the selected source anchor for each",
+            "requested target, and fits against the realized source-to-detector",
+            "transverse separation.",
             "",
             (
-                "The broad variants remain law-like on this family."
-                if broad_law_like
-                else "The broad variants do not preserve a recognizable `~1/b` law on this family."
+                "All tested variants show a stable inverse-power tail on this realized-b replay."
+                if inverse_power_like
+                else "The tested variants do not all show a stable inverse-power tail on this realized-b replay."
             ),
             (
-                "The finite-cone variant is the boundary."
-                if finite_boundary
-                else "The finite-cone variant does not separate cleanly from the broad cases."
+                "The fitted exponents are compatible with a `1/b` law."
+                if one_over_b_like
+                else "The fitted exponents are not compatible with a `1/b` law; they are steeper."
             ),
+            "The `c=0.5` finite-cone case is not a clean boundary in this repaired harness.",
             "",
             "## Diagnostic Snapshot",
             "",
@@ -365,28 +471,77 @@ def _render_note(
             "",
             "## Narrow Conclusion",
             "",
-            (
-                "The causal-field modification preserves an impact-parameter law shape "
-                "on the retained center grown family in the broad variants."
-                if broad_law_like
-                else "The causal-field modification does not preserve a recognizable impact-parameter law shape on the retained center grown family."
-            ),
-            (
-                "The finite-cone dynamic case is the diagnosed boundary."
-                if finite_boundary
-                else "The finite-cone dynamic case stays in family with the broad variants."
-            ),
+            "On the enlarged-support center growth-rule replay, the causal-field "
+            "variants preserve a realized-impact inverse-power centroid-shift "
+            "tail, but the exponent is closer to `1/b^2` than `1/b`.",
+            "This repairs the source-anchor/fit-coordinate defect in the old note,",
+            "while changing the old finite-cone-boundary reading. It does not claim",
+            "a physical field theory, a framework-selected carrier/metric theorem,",
+            "or audit-retained status.",
         ]
     )
     return "\n".join(lines)
 
 
+def _runner_checks(
+    summaries: dict[str, FieldSummary],
+    zero_max_delta: float,
+    zero_max_field: float,
+    anchor_diagnostics: dict[int, AnchorDiagnostic],
+) -> list[RunnerCheck]:
+    all_keys = ("instantaneous", "forward-only", "dynamic(c=1)", "dynamic(c=0.5)")
+    realized_means = [anchor_diagnostics[b].realized_mean for b in B_VALUES]
+    max_source_z_error = max(d.source_z_error_max for d in anchor_diagnostics.values())
+    max_realized_error = max(d.realized_error_max for d in anchor_diagnostics.values())
+    min_r2 = min(summaries[key].r2 for key in all_keys)
+    max_alpha = max(summaries[key].alpha for key in all_keys)
+    all_toward = all(summaries[key].toward == summaries[key].total for key in all_keys)
+    monotone_realized_b = all(
+        realized_means[i] < realized_means[i + 1]
+        for i in range(len(realized_means) - 1)
+    )
+    return [
+        RunnerCheck(
+            "exact zero controls",
+            abs(zero_max_delta) <= 1e-30 and abs(zero_max_field) <= 1e-30,
+            f"delta={zero_max_delta:+.3e}; field={zero_max_field:+.3e}",
+        ),
+        RunnerCheck(
+            "requested source anchors realized",
+            max_source_z_error <= 0.1 and max_realized_error <= 0.1,
+            f"max source-z error={max_source_z_error:.3e}; max realized-b error={max_realized_error:.3e}",
+        ),
+        RunnerCheck(
+            "realized b is strictly ordered",
+            monotone_realized_b,
+            ", ".join(f"{v:.6f}" for v in realized_means),
+        ),
+        RunnerCheck(
+            "all fields point toward source side",
+            all_toward,
+            "; ".join(f"{key}={summaries[key].toward}/{summaries[key].total}" for key in all_keys),
+        ),
+        RunnerCheck(
+            "realized-b inverse-power fit is stable",
+            min_r2 > 0.9 and max_alpha < -0.5,
+            f"min R^2={min_r2:.3f}; least-negative alpha={max_alpha:.3f}",
+        ),
+    ]
+
+
 def main() -> int:
-    summaries, zero_max_delta, zero_max_field, field_values = _measure_family(FAMILY)
-    rendered = _render_note(summaries, zero_max_delta, zero_max_field, field_values)
+    summaries, zero_max_delta, zero_max_field, field_values, anchor_diagnostics = _measure_family(FAMILY)
+    checks = _runner_checks(summaries, zero_max_delta, zero_max_field, anchor_diagnostics)
+    rendered = _render_note(
+        summaries,
+        zero_max_delta,
+        zero_max_field,
+        field_values,
+        anchor_diagnostics,
+        checks,
+    )
 
     DOC_PATH.write_text(rendered + "\n", encoding="utf-8")
-    LOG_PATH.write_text(rendered + "\n", encoding="utf-8")
 
     print(rendered)
     print()
@@ -397,7 +552,11 @@ def main() -> int:
             f"{key}: zero={fs.zero_delta:+.3e}, alpha={fs.alpha:.3f}, "
             f"R2={fs.r2:.3f}, toward={fs.toward}/{fs.total}"
         )
-    return 0
+    print()
+    print("RUNNER CHECKS")
+    for check in checks:
+        print(f"[{'PASS' if check.ok else 'FAIL'}] {check.label}: {check.detail}")
+    return 0 if all(check.ok for check in checks) else 1
 
 
 if __name__ == "__main__":

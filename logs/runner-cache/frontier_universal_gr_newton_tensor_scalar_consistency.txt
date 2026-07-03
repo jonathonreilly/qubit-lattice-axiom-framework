@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_newton_tensor_scalar_consistency.py
+runner_sha256: 5f64278b40e69c783e9d65fd4b343de9b3d9e186cd0815eab02d2b2921deccf0
+timeout_sec: 360
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+PASS T1 scalar Z^3 graph Green function has 1/(4 pi r) tail
+     G(0)=0.252731; 4*pi*r*G(r)=1.0041, 1.0010, 1.0002
+PASS T2 sampled tensor-channel stiffness is positive
+     C_TT=+0.02208 on N=10, m=0.7
+PASS T3 sampled tensor response follows the lattice-Laplacian shape
+     ratios=+0.02208, +0.01887; finite-grid spread=14.5%
+
+Boundary: shared graph-Laplacian shape diagnostic only. This runner does not
+derive absolute G, a GR tensor/source factor, observed equality, or nonlinear closure.
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

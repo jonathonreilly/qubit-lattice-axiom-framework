@@ -50,7 +50,7 @@ def main() -> int:
     print("-" * 72)
     check("note declares open_gate type", "**Type:** open_gate" in note)
     check("note declares open_gate claim type", "**Claim type:** open_gate" in note)
-    check("note has no branch-local status authority", "Status authority" not in note)
+    check("note has no source-side status authority", "Status authority" not in note)
     check(
         "note states unadmitted proposed-extension boundary",
         has_phrase(note, "`open_gate` proposed-extension boundary")

@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gravity_scalar_shift_sign_normalization_2026_06_18.py
+runner_sha256: 735bb87ceb663b94885b9360130f61c3e16376d6dbdf1728bbdaea065151da5c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+PASS: note contains required phrase: H_s = H_0 + s I
+PASS: note contains required phrase: lambda_axis(k_s) + s = E
+PASS: note contains required phrase: positive `s` lowers the normalized phase action
+PASS: note contains required phrase: phi_action := c_E s
+PASS: note contains required phrase: s = phi_action / c_E = k0 lambda_axis'(k0) phi_action
+PASS: note contains required phrase: s = 2E phi_action + O(E^2 phi_action)
+PASS: note contains required phrase: No observed constants, fitted selectors, textbook WKB theorem, new axiom
+PASS: note contains required phrase: Independent audit is the only effective-status authority.
+PASS: note excludes forbidden phrase: **Status:** retained
+PASS: note excludes forbidden phrase: full Einstein equations
+PASS: note excludes forbidden phrase: G_Newton in SI units
+PASS: note excludes forbidden phrase: derives arbitrary-graph WKB
+PASS: note excludes forbidden phrase: adds a new axiom
+PASS: note excludes forbidden phrase: textbook WKB theorem supplies the proof
+PASS: weak-field source-response bridge is retained_bounded (effective_status=retained_bounded)
+PASS: source-response note supplies action-lowering sign
+PASS: eikonal note already consumes H_s sign surface
+PASS: finite matrix shift sends every eigenvalue to lambda+s
+PASS: axis Laplacian spectrum matches 2-2cos(k)
+PASS: free branch solves lambda(k0)=E
+PASS: normalization coefficient c_E is positive (c_E=12.5419747709)
+PASS: positive +sI shift lowers fixed-energy wavenumber
+PASS: d(k_s/k0)/ds equals -c_E (numeric=-12.5419747722, -c_E=-12.5419747709)
+PASS: s=phi_action/c_E gives action density 1-phi_action to first order (n=0.9848873122, target=0.9850000000)
+PASS: small-k generator shift scale tends to 2E (1/c_E=0.0199833166, 2E=0.0200000000)
+PASS: negative scalar shift raises fixed-energy action density
+PASS: boundary denies new axiom route
+PASS: boundary denies physical Newton-constant normalization
+
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/stack_spectral_transcription_weak_registration_2026_06_11.py
+runner_sha256: cdc4d80c0cc79336824eb8c4a6a1d29d13fa165e0d2c34c7a5bddaac74312242
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.83
+status: ok
+----- stdout -----
+POINTER DISPLACEMENT AND BACKACTION CHANNEL (symbolic, exact)
+==============================================================================
+  [PASS] Pointer displacement: V^dag X^a V = cos(2e) X^a + sin(2e) sigma_x (x) Z^a exactly  --  the record lands in the displaced pointer with strength sin(2e)
+  [PASS] Backaction is sigma_x-dephasing: Phi(sx)=sx, Phi(sy)=cos2e sy, Phi(sz)=cos2e sz exactly
+  [PASS] Model tick satisfies K u K^{-1} = u^{-1} (plain conjugation): the spectrum-reflection class  --  the model sits inside the landed unitarity cycle's hypothesis class
+
+REGISTERED-SECTOR TRANSCRIPTION LAW (symbolic series)
+==============================================================================
+  [PASS] Damping r = sqrt(cos 2e) = 1 - e^2 + O(e^4) (symbolic series)  --  series: -epsilon**4/6 - epsilon**2 + 1
+  [PASS] Frequency-shift generator g(e) = (1+cos2e)/(2 sqrt(cos2e)) = 1 + (e^4/2) + O(e^6): NO e^2 term  --  g = 2*epsilon**6/3 + epsilon**4/2 + 1: the registered frequency is protected to O(e^4)
+  [PASS] Closed form verified against M(eps) = R(omega) diag(1, cos2e): cos(omega_e) = cos(omega) g(e), r = sqrt(cos2e)
+
+STACK CONSTRUCTION: durability and monotone record accumulation
+==============================================================================
+  [PASS] Durability: a written register's marginal is FIXED once registered (depth m+1 vs depth N, exact)  --  the Record axiom's durability clause, realized by construction
+  [PASS] Monotone record accumulation: written-register count equals stack depth (0,3,6,9,12)  --  the retained arrow surface's monotonicity, reproduced in the same model class
+
+SIMULATED STACK COVARIANCE REPRODUCES THE CLOSED FORM TO 1e-6
+==============================================================================
+  [PASS] Prony recovery at eps=0.4: simulated stack (r, omega_e) = (0.834690, 0.886942) matches closed form (0.834690, 0.886942)
+  [PASS] Prony recovery at eps=0.3: simulated stack (r, omega_e) = (0.908480, 0.896337) matches closed form (0.908480, 0.896337)
+  [PASS] Prony recovery at eps=0.2: simulated stack (r, omega_e) = (0.959719, 0.899329) matches closed form (0.959719, 0.899329)
+  [PASS] Prony recovery at eps=0.1: simulated stack (r, omega_e) = (0.989983, 0.899960) matches closed form (0.989983, 0.899960)
+
+FAITHFUL LIMIT, RATES, AND INFRARED WINDOW
+==============================================================================
+  [PASS] Frequency-error rate: log-log slope ~ 4 (the O(e^4) protection, measured from the stack itself)  --  slope = 4.16; errors [1.3058e-02 3.6630e-03 6.7100e-04 4.0000e-05]
+  [PASS] Damping rate: log-log slope ~ 2 (record strength O(e^2))  --  slope = 2.02
+  [PASS] Soft tradeoff: at eps = 0.18 the band error < 1e-3 while the record amplitude stays finite  --  amplitude kappa(1) = 0.0771, band error at eps=0.2 = 6.71e-04
+  [PASS] Infrared window: below omega_c(eps) the transfer eigenvalues are REAL (overdamped); above, complex (oscillatory)  --  omega_c(0.3) = 0.09584 ~ eps^2 = 0.090: records too weak to resolve slower precession
+  [PASS] Window closes quadratically: omega_c(eps)/eps^2 stays O(1) across eps  --  window and band error vanish together in the weak-registration limit
+
+HOSTILE WITNESSES
+==============================================================================
+  [PASS] Strong registration eps = pi/4: Prony roots REAL (band destroyed) and decay = (cos omega)^n exactly  --  roots [-1.76447  0.62161], decay ratio 0.62161 = cos(omega) = 0.62161: maximal registration overdamps every frequency -- the weak limit is load-bearing
+  [PASS] Second interleaved frequency SHIFTS the recovered band: contamination detected, not hidden  --  recovered 1.1715 vs clean 0.8993: the stack-level one-spectrum content
+
+SCOPE HONESTY: what is NOT proved here
+==============================================================================
+  [PASS] Single-fiber exactly solvable model of the arrow-note class: the realized-stack production bridge is NOT derived  --  that the realized stack is of this class remains outside this theorem
+  [PASS] Faithful limit is an idealization: at strictly eps = 0 no records form (amplitude -> 0 with the window)  --  records and perfect transcription coexist only asymptotically; the tradeoff is soft, not erased
+
+==============================================================================
+SCORECARD: PASS=21 FAIL=0
+==============================================================================
+
+----- stderr -----
+

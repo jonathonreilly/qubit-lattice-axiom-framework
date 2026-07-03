@@ -373,6 +373,32 @@ to the explicit precursor chain.
   Route E (low-degree polynomial operator enumeration) was used as
   runner cross-check.
 
+## Source-scope caveat retirement (2026-06-13)
+
+The prior audit caveat asked a second auditor to re-check whether two
+carrier-runner `FAIL` lines were only phrase-match artifacts against the
+`Xi_R^(0)` source note, rather than a substantive source-scope drift. The
+current runner/cache now has no `FAIL` lines (`SUMMARY: PASS=61 FAIL=0` on
+the pre-repair cache; `SUMMARY: PASS=65 FAIL=0` after the 2026-06-13
+source-scope guard), and the runner has been strengthened with a normalized
+source-scope guard.
+
+That guard reads
+[`S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md)
+and checks the substantive boundary instead of brittle wording:
+
+- `Xi_R^(0)` is the endpoint-fixed affine response/Jacobian on the bounded
+  `Theta_R^(0)` staging surface.
+- its domain remains `A1 x {E_x, T1x}` and its image remains
+  `(gamma_E, gamma_T)`;
+- it does not reintroduce a mixed `A1`-bright support block;
+- it is not an exact tensor-valued support observable, endpoint coefficient
+  theorem, support-to-slice time-coupling law, or GR closure theorem.
+
+Therefore the old phrase-match caveat is retired as stale. This does not close
+the registry-closure residual above and does not promote the row beyond its
+open-gate/stretch-attempt status.
+
 ## Reproduction
 
 ```bash
@@ -388,3 +414,12 @@ verifies:
 - Carrier-level swap-symmetry check on the active Hermitian basis.
 - Low-degree polynomial operator enumeration (Route E cross-check).
 - Named obstructions on registry closure.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [s3_time_bilinear_tensor_primitive_note](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md)
+- [s3_time_tensor_primitive_prototype_note](S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md)
+- [s3_time_constructed_support_tensor_primitive_note](S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md)
+- [dm_neutrino_weak_even_swap_reduction_theorem_note_2026-04-15](DM_NEUTRINO_WEAK_EVEN_SWAP_REDUCTION_THEOREM_NOTE_2026-04-15.md)

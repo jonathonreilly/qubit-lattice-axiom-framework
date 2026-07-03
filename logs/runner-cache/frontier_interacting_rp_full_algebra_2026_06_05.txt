@@ -1,0 +1,156 @@
+===== runner cache v1 =====
+runner: scripts/frontier_interacting_rp_full_algebra_2026_06_05.py
+runner_sha256: 7b3185987a8b7bf745dec44a6fcdcaa82dfe94fbe8bc3632b870bf150cd587b0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.67
+status: ok
+----- stdout -----
+==================================================================================
+FULL POLYNOMIAL HALF-SPACE ALGEBRA OS REFLECTION-POSITIVITY (FIXED a)
+  gauge-invariant four-fermion observables (mesons chibar U chi, baryons
+  eps chi chi chi) acting NON-VACUOUSLY via the Berezin OS correlator
+==================================================================================
+  mass m=0.5. Settled Berezin convention <chi_b bar_a>=+(M^-1)[b,a], <bar_a chi_b>=-(M^-1)[b,a].
+  OS reflection theta(t)=(-1-t), Theta(chi)=-chibar(-1-t) (gamma_0 sign).
+
+----------------------------------------------------------------------------------
+SU(2) [bilinears + transported mesons]: group=su2  Ns=2 (spatial ring)  nc=2  nt=2 (Lt=4)  n_cfg=200
+----------------------------------------------------------------------------------
+  basis size = 11  (mesons=6, baryons=0, antibaryons=0)
+  DETPOS: min det(M[U]) = 1.6679e-02  (nonpos configs = 0)
+  FULL-ALGEBRA Gram (U-averaged): ||G-G^dag|| = 1.11e-16   min eig = +3.766177e-02   max eig = 4.1920e+00
+  EXACTNESS: worst PER-CONFIG full-algebra Gram min eig = +1.676571e-02  (>=0 => U-average PSD exactly, MC-free verdict)
+  BASIS-COMPLETENESS: random deg<=3 half-space polys, per-config min eig = -5.596e-16  (||G-G^dag||=1.7e-15)
+  NONVAC: meson diag min = +2.8307e-01  baryon diag min = +nan  antibaryon diag min = +nan
+  VAC0:   ||meson_onsite[0] |Omega>|| = 0.000e+00  (naive operator m.e. vacuous)
+  T-WRONG control (single-step, no gamma0): min eig = -4.7781e-01
+  reflection-square input: per-config 2-step min decay = 1.4612e-01  max|Im decay| = 1.25e-15
+  GAUGEINV: gauge-invariant-sector(meson/baryon) Gram max|diff| = 6.97e-16  (singlet-sector min-eig |diff| = 4.86e-16)
+    [PASS] full_algebra_PSD(U-averaged)
+    [PASS] full_algebra_PSD(per-config,exact)
+    [PASS] full_algebra_PSD(random_basis,deg<=3)
+    [PASS] nonvacuous_meson_baryon
+    [PASS] naive_op_vacuous(VAC0)
+    [PASS] wrong_reflection_nonPSD(teeth)
+    [PASS] reflection_square_input_PSD
+    [PASS] gauge_invariant
+    [PASS] det_positive(CaseA)
+  -> SU(2) [bilinears + transported mesons]: PASS
+
+----------------------------------------------------------------------------------
+U(1) [bilinears + transported mesons]: group=u1  Ns=3 (spatial ring)  nc=1  nt=2 (Lt=4)  n_cfg=400
+----------------------------------------------------------------------------------
+  basis size = 11  (mesons=7, baryons=0, antibaryons=0)
+  DETPOS: min det(M[U]) = 1.0266e+00  (nonpos configs = 0)
+  FULL-ALGEBRA Gram (U-averaged): ||G-G^dag|| = 1.72e-16   min eig = +4.263920e-02   max eig = 2.3191e+00
+  EXACTNESS: worst PER-CONFIG full-algebra Gram min eig = +2.047719e-02  (>=0 => U-average PSD exactly, MC-free verdict)
+  BASIS-COMPLETENESS: random deg<=3 half-space polys, per-config min eig = -1.900e-16  (||G-G^dag||=1.9e-15)
+  NONVAC: meson diag min = +1.4172e-01  baryon diag min = +nan  antibaryon diag min = +nan
+  VAC0:   ||meson_onsite[0] |Omega>|| = 0.000e+00  (naive operator m.e. vacuous)
+  T-WRONG control (single-step, no gamma0): min eig = -4.4875e-01
+  reflection-square input: per-config 2-step min decay = 1.4590e-01  max|Im decay| = 6.21e-16
+  GAUGEINV: gauge-invariant-sector(meson/baryon) Gram max|diff| = 3.35e-16  (singlet-sector min-eig |diff| = 7.36e-16)
+    [PASS] full_algebra_PSD(U-averaged)
+    [PASS] full_algebra_PSD(per-config,exact)
+    [PASS] full_algebra_PSD(random_basis,deg<=3)
+    [PASS] nonvacuous_meson_baryon
+    [PASS] naive_op_vacuous(VAC0)
+    [PASS] wrong_reflection_nonPSD(teeth)
+    [PASS] reflection_square_input_PSD
+    [PASS] gauge_invariant
+    [PASS] det_positive(CaseA)
+  -> U(1) [bilinears + transported mesons]: PASS
+
+----------------------------------------------------------------------------------
+SU(3) FULL ALGEBRA [bilinears+mesons+baryons]: group=su3  Ns=2 (spatial ring)  nc=3  nt=2 (Lt=4)  n_cfg=120
+----------------------------------------------------------------------------------
+  basis size = 17  (mesons=6, baryons=2, antibaryons=2)
+  DETPOS: min det(M[U]) = 2.3913e-02  (nonpos configs = 0)
+  FULL-ALGEBRA Gram (U-averaged): ||G-G^dag|| = 6.69e-16   min eig = +5.093430e-02   max eig = 7.8989e+00
+  EXACTNESS: worst PER-CONFIG full-algebra Gram min eig = +2.010147e-02  (>=0 => U-average PSD exactly, MC-free verdict)
+  BASIS-COMPLETENESS: random deg<=3 half-space polys, per-config min eig = -5.377e-16  (||G-G^dag||=1.4e-15)
+  NONVAC: meson diag min = +7.7801e-01  baryon diag min = +1.0572e+00  antibaryon diag min = +1.0572e+00
+  VAC0:   ||meson_onsite[0] |Omega>|| = 0.000e+00  (naive operator m.e. vacuous)
+  VAC0:   ||baryon[0] |Omega>|| = 0.000e+00  (naive operator m.e. vacuous)
+  T-WRONG control (single-step, no gamma0): min eig = -1.0765e+00
+  reflection-square input: per-config 2-step min decay = 1.4599e-01  max|Im decay| = 5.55e-16
+  GAUGEINV: gauge-invariant-sector(meson/baryon) Gram max|diff| = 2.89e-15  (singlet-sector min-eig |diff| = 2.50e-16)
+    [PASS] full_algebra_PSD(U-averaged)
+    [PASS] full_algebra_PSD(per-config,exact)
+    [PASS] full_algebra_PSD(random_basis,deg<=3)
+    [PASS] nonvacuous_meson_baryon
+    [PASS] naive_op_vacuous(VAC0)
+    [PASS] wrong_reflection_nonPSD(teeth)
+    [PASS] reflection_square_input_PSD
+    [PASS] gauge_invariant
+    [PASS] det_positive(CaseA)
+  -> SU(3) FULL ALGEBRA [bilinears+mesons+baryons]: PASS
+
+----------------------------------------------------------------------------------
+SU(3) single-site [on-site meson + baryon + antibaryon]: group=su3  Ns=1 (spatial ring)  nc=3  nt=2 (Lt=4)  n_cfg=1
+----------------------------------------------------------------------------------
+  basis size = 7  (mesons=1, baryons=1, antibaryons=1)
+  DETPOS: min det(M[U]) = 3.0518e-02  (nonpos configs = 0)
+  FULL-ALGEBRA Gram (U-averaged): ||G-G^dag|| = 4.44e-16   min eig = +6.691683e-02   max eig = 7.1731e+00
+  EXACTNESS: worst PER-CONFIG full-algebra Gram min eig = +6.691683e-02  (>=0 => U-average PSD exactly, MC-free verdict)
+  BASIS-COMPLETENESS: random deg<=3 half-space polys, per-config min eig = -5.654e-16  (||G-G^dag||=8.9e-16)
+  NONVAC: meson diag min = +6.2400e+00  baryon diag min = +2.3040e+00  antibaryon diag min = +2.3040e+00
+  VAC0:   ||meson_onsite[0] |Omega>|| = 0.000e+00  (naive operator m.e. vacuous)
+  VAC0:   ||baryon[0] |Omega>|| = 0.000e+00  (naive operator m.e. vacuous)
+  T-WRONG control (single-step, no gamma0): min eig = -2.3040e+00
+  reflection-square input: per-config 2-step min decay = 3.8197e-01  max|Im decay| = 1.90e-32
+  GAUGEINV: gauge-invariant-sector(meson/baryon) Gram max|diff| = 0.00e+00  (singlet-sector min-eig |diff| = 0.00e+00)
+    [PASS] full_algebra_PSD(U-averaged)
+    [PASS] full_algebra_PSD(per-config,exact)
+    [PASS] full_algebra_PSD(random_basis,deg<=3)
+    [PASS] nonvacuous_meson_baryon
+    [PASS] naive_op_vacuous(VAC0)
+    [PASS] wrong_reflection_nonPSD(teeth)
+    [PASS] reflection_square_input_PSD
+    [PASS] gauge_invariant
+    [PASS] det_positive(CaseA)
+  -> SU(3) single-site [on-site meson + baryon + antibaryon]: PASS
+
+
+==================================================================================
+COMPANION CONTROLS: MASS SCAN AND LINK-REFLECTION CONVENTION
+==================================================================================
+[PASS] primary full-algebra runner source hash is pinned
+       expected=7b3185987a8b7bf745dec44a6fcdcaa82dfe94fbe8bc3632b870bf150cd587b0; actual=7b3185987a8b7bf745dec44a6fcdcaa82dfe94fbe8bc3632b870bf150cd587b0
+[PASS] source note names companion controls and cache
+       missing=[]
+
+MASS SCAN: SU(3) full algebra, positive det and per-config PSD
+--------------------------------------------------------------------------------------
+       m    avg_min_eig    per_cfg_min        det_min    baryon_diag       herm
+     0.5  +4.474367e-02  +2.066479e-02  +4.979756e-02  +1.058102e+00   4.45e-16
+     0.1  +5.081488e-02  +1.193335e-02  +1.122072e-03  +4.128454e-01   1.13e-15
+    0.05  +1.390673e-01  +8.161180e-03  +2.325715e-04  +6.786240e-01   1.94e-16
+    0.01  +1.493433e-01  +3.740771e-03  +1.341242e-05  +6.957707e-01   4.44e-16
+[PASS] mass scan remains positive through m=0.01
+       det(M)>0, U-averaged and per-config Grams PSD, baryon diagonal nonzero
+
+NON-CONJUGATING LINK-REFLECTION CONTROL
+--------------------------------------------------------------------------------------
+ cfg    correct_min     wrong_herm  wrong_sym_min
+   0  +2.444223e-02   1.803781e+00  -4.463580e-01
+   1  +2.749807e-02   2.420059e+00  -9.459007e-01
+   2  +2.050881e-02   1.825917e+00  -5.986215e-01
+   3  +2.218813e-02   2.011435e+00  -8.276097e-01
+   4  +2.401240e-02   1.479453e+00  -2.816341e-01
+[PASS] non-conjugating link reflection breaks Hermiticity and PSD
+       correct_min=+2.050881e-02; wrong_herm=2.420059e+00; wrong_min=-9.459007e-01
+
+COMPANION SCORECARD: PASS=4 FAIL=0
+==================================================================================
+GROUP SCORECARD: PASS=4/4 group-sectors
+  Each sector: full-algebra OS Gram PSD (CORRECT reflection), non-vacuous
+  meson/baryon diagonals>0, naive op m.e. vacuous, WRONG reflection non-PSD,
+  per-config 2-step transfer PSD (OS-theorem input), gauge-invariant, det>0.
+  Companion controls: PASS
+  OVERALL: PASS
+==================================================================================
+
+----- stderr -----
+

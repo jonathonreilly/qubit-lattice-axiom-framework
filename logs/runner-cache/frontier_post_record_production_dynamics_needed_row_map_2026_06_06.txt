@@ -1,0 +1,125 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_production_dynamics_needed_row_map_2026_06_06.py
+runner_sha256: 42bbd8d07a7c93a063ddaee1fd6760675ef815763ef79b2aecf6d9f663c29419
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.83
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_PRODUCTION_DYNAMICS_NEEDED_ROW_MAP_2026-06-06.md exists
+PASS docs/POST_RECORD_PRODUCTION_DYNAMICS_NEEDED_ROW_MAP_2026-06-06.md contains: production_dynamics_needed
+PASS docs/POST_RECORD_PRODUCTION_DYNAMICS_NEEDED_ROW_MAP_2026-06-06.md contains: pre-record laws can carry probabilities
+PASS docs/POST_RECORD_PRODUCTION_DYNAMICS_NEEDED_ROW_MAP_2026-06-06.md contains: post-record sites carry realized information
+PASS docs/POST_RECORD_PRODUCTION_DYNAMICS_NEEDED_ROW_MAP_2026-06-06.md contains: Record does not derive the bridge
+PASS docs/POST_RECORD_PRODUCTION_DYNAMICS_NEEDED_ROW_MAP_2026-06-06.md contains: Does not select or force a generation/Koide dial location
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md exists
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: production_dynamics_needed
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: audit ledger hash is unchanged
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: Does not select or force a generation/Koide dial location
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md exists
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: production dynamics | supplied formation/kernel/time bridge
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: bounded support with open imports
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: stable settings are not selected dials
+PASS docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md contains: production-kernel, Hamiltonian, transfer, or instrument id
+PASS docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md contains: This branch does not derive an orientation, clock, or kernel.
+PASS docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md contains: Does not derive or select a production kernel.
+
+------------------------------------------------------------------------------
+Production-dynamics row-map checks
+------------------------------------------------------------------------------
+PASS production-dynamics row count is current snapshot :: 6
+PASS expected production-dynamics claim ids match :: ['chiral_3plus1d_boundary_phase_note', 'persistent_object_adaptive_readout_note', 'persistent_object_readout_localization_note', 'persistent_record_matched_compare_note', 'persistent_record_overlap_kernel_note', 'persistent_record_refinement_note']
+PASS each expected production row appears once
+PASS lane counts match expected :: Counter({'persistent_record_production_overlap': 3, 'persistent_object_readout_kernel': 2, 'boundary_phase_finite_scan': 1})
+PASS lane counts sum to production-dynamics count :: Counter({'persistent_record_production_overlap': 3, 'persistent_object_readout_kernel': 2, 'boundary_phase_finite_scan': 1})
+PASS chiral_3plus1d_boundary_phase_note is mapped :: boundary_phase_finite_scan
+PASS chiral_3plus1d_boundary_phase_note has supplied-bridge imports :: boundary_condition_bridge, finite_size_or_continuum_bridge, propagation_mode_or_transfer_bridge, orientation_or_clock_bridge_if_time_directed
+PASS persistent_object_adaptive_readout_note is mapped :: persistent_object_readout_kernel
+PASS persistent_object_adaptive_readout_note has supplied-bridge imports :: source_object_formation_bridge, detector_readout_or_instrument_bridge, kernel_normalization_bridge, scale_or_generalization_bridge
+PASS persistent_object_readout_localization_note is mapped :: persistent_object_readout_kernel
+PASS persistent_object_readout_localization_note has supplied-bridge imports :: source_object_formation_bridge, detector_readout_or_instrument_bridge, kernel_normalization_bridge, scale_or_generalization_bridge
+PASS persistent_record_matched_compare_note is mapped :: persistent_record_production_overlap
+PASS persistent_record_matched_compare_note has supplied-bridge imports :: record_writing_law_bridge, persistence_or_preservation_bridge, overlap_kernel_physical_bridge, production_time_or_barrier_bridge, comparison_baseline_bridge
+PASS persistent_record_overlap_kernel_note is mapped :: persistent_record_production_overlap
+PASS persistent_record_overlap_kernel_note has supplied-bridge imports :: record_writing_law_bridge, persistence_or_preservation_bridge, overlap_kernel_physical_bridge, production_time_or_barrier_bridge, comparison_baseline_bridge
+PASS persistent_record_refinement_note is mapped :: persistent_record_production_overlap
+PASS persistent_record_refinement_note has supplied-bridge imports :: record_writing_law_bridge, persistence_or_preservation_bridge, overlap_kernel_physical_bridge, production_time_or_barrier_bridge, comparison_baseline_bridge
+PASS boundary bridge is represented
+PASS readout instrument bridge is represented
+PASS record-writing law bridge is represented
+PASS production time/barrier bridge is represented
+PASS audit ledger hash is unchanged :: 49f667c79e1bbfda8c4bc8e5b3568b63e6ae3d6bccaeef7ac2e21ecadf2e6f04
+
+Production-dynamics lane counts:
+  boundary_phase_finite_scan: 1
+  persistent_object_readout_kernel: 2
+  persistent_record_production_overlap: 3
+
+Bridge import counts:
+  boundary_condition_bridge: 1
+  comparison_baseline_bridge: 3
+  detector_readout_or_instrument_bridge: 2
+  finite_size_or_continuum_bridge: 1
+  kernel_normalization_bridge: 2
+  orientation_or_clock_bridge_if_time_directed: 1
+  overlap_kernel_physical_bridge: 3
+  persistence_or_preservation_bridge: 3
+  production_time_or_barrier_bridge: 3
+  propagation_mode_or_transfer_bridge: 1
+  record_writing_law_bridge: 3
+  scale_or_generalization_bridge: 2
+  source_object_formation_bridge: 2
+
+[boundary_phase_finite_scan]
+  chiral_3plus1d_boundary_phase_note | boundary_phase_finite_scan | audited_clean | retained_bounded | bounded_theorem | docs/CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md
+    bridges: boundary_condition_bridge, finite_size_or_continuum_bridge, propagation_mode_or_transfer_bridge, orientation_or_clock_bridge_if_time_directed
+
+[persistent_object_readout_kernel]
+  persistent_object_adaptive_readout_note | persistent_object_readout_kernel | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_OBJECT_ADAPTIVE_READOUT_NOTE.md
+    bridges: source_object_formation_bridge, detector_readout_or_instrument_bridge, kernel_normalization_bridge, scale_or_generalization_bridge
+  persistent_object_readout_localization_note | persistent_object_readout_kernel | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_OBJECT_READOUT_LOCALIZATION_NOTE.md
+    bridges: source_object_formation_bridge, detector_readout_or_instrument_bridge, kernel_normalization_bridge, scale_or_generalization_bridge
+
+[persistent_record_production_overlap]
+  persistent_record_matched_compare_note | persistent_record_production_overlap | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_RECORD_MATCHED_COMPARE_NOTE.md
+    bridges: record_writing_law_bridge, persistence_or_preservation_bridge, overlap_kernel_physical_bridge, production_time_or_barrier_bridge, comparison_baseline_bridge
+  persistent_record_overlap_kernel_note | persistent_record_production_overlap | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md
+    bridges: record_writing_law_bridge, persistence_or_preservation_bridge, overlap_kernel_physical_bridge, production_time_or_barrier_bridge, comparison_baseline_bridge
+  persistent_record_refinement_note | persistent_record_production_overlap | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_RECORD_REFINEMENT_NOTE.md
+    bridges: record_writing_law_bridge, persistence_or_preservation_bridge, overlap_kernel_physical_bridge, production_time_or_barrier_bridge, comparison_baseline_bridge
+
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS audit data written flag is false
+PASS audit verdict applied flag is false
+PASS promoted/retained claim flag is false
+PASS production dynamics derived flag is false
+PASS production kernel selected flag is false
+PASS Record-derived physical arrow flag is false
+PASS clock/rate derived flag is false
+PASS stable setting selects dial flag is false
+PASS generation/Koide dial selected flag is false
+
+SUMMARY: PASS=49 FAIL=0
+PRODUCTION_DYNAMICS_NEEDED_ROWS=6
+BOUNDARY_PHASE_FINITE_SCAN_ROWS=1
+PERSISTENT_OBJECT_READOUT_KERNEL_ROWS=2
+PERSISTENT_RECORD_PRODUCTION_OVERLAP_ROWS=3
+AUDIT_LEDGER_WRITTEN=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+PRODUCTION_DYNAMICS_DERIVED=FALSE
+PRODUCTION_KERNEL_SELECTED=FALSE
+PHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE
+CLOCK_OR_RATE_DERIVED=FALSE
+STABLE_SETTING_SELECTS_DIAL=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

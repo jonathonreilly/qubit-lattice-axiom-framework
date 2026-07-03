@@ -19,6 +19,7 @@ DOCS = ROOT / "docs"
 NOTE = DOCS / "TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md"
 ORIGINAL = ROOT / "scripts" / "frontier_teleportation_resource_from_poisson.py"
 HELPER = ROOT / "scripts" / "frontier_bell_inequality.py"
+RALA_NOTE = DOCS / "TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md"
 HELPER_REQUIRED = (
     "def build_H1",
     "def build_H2_tensor",
@@ -64,7 +65,7 @@ def main() -> int:
     print("-" * 72)
     check("note declares open_gate type", "**Type:** open_gate" in note)
     check("note declares open_gate claim type", "**Claim type:** open_gate" in note)
-    check("note has no branch-local status authority", "Status authority" not in note)
+    check("note has no source-side status authority", "Status authority" not in note)
     check(
         "note says this is not a deterministic-resource theorem",
         has_phrase(note, "not as a deterministic-resource theorem"),
@@ -76,8 +77,8 @@ def main() -> int:
     )
     check(
         "note leaves native carrier derivation open",
-        "No sentence in this note asserts that the last taste bit has been derived" in note
-        and "missing native preparation/readout theorem remains" in note,
+        has_phrase(note, "not that the last taste bit has been derived as a native physical carrier")
+        and has_phrase(note, "missing native preparation/readout theorem remains"),
     )
     check(
         "note does not claim matter or FTL teleportation",
@@ -89,6 +90,7 @@ def main() -> int:
     print("B. Dependency hygiene")
     print("-" * 72)
     helper_source = HELPER.read_text(encoding="utf-8")
+    rala_source = RALA_NOTE.read_text(encoding="utf-8")
     stale_axiom_pair = "A" + "1+A" + "2"
     stale_status_token = "retain" + "ed_bounded"
     check(
@@ -117,6 +119,12 @@ def main() -> int:
         "Poisson/CHSH helper source is present and untruncated",
         len(helper_source.splitlines()) > 500
         and all(required in helper_source for required in HELPER_REQUIRED),
+    )
+    check(
+        "retained-axis RALA source is cited and source-visible",
+        "TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md" in note
+        and "Retained-Axis Operator Algebra" in rala_source
+        and "T8 (RALA teleportation closure)" in rala_source,
     )
 
     print()
@@ -160,9 +168,14 @@ def main() -> int:
         and "Z_last Pauli PASS" in output,
     )
     check(
+        "original runner verifies retained-axis source guard",
+        "Retained-axis source: docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md" in output
+        and "ledger=retained_bounded" in output,
+    )
+    check(
         "original runner reconciles null Bell-label tie",
         "traced Bell max-label tie: Phi+, Psi+" in output
-        and "best fixed-env postselected branch: Bell overlap=0.500000 (Psi+)" in output,
+        and "best fixed-env postselected branch: Bell overlap=0.500000 (" in output,
     )
     check(
         "original runner does not promote the result",

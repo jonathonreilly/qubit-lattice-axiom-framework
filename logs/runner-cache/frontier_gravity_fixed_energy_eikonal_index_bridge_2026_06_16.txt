@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.py
+runner_sha256: 276e83713cd2c30fb7282cbe5f9139662b2ec0811ec582e3836c5d428a72c6c4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+PASS: note contains required phrase: Claim type:** bounded_theorem
+PASS: note contains required phrase: Status authority:** independent audit lane only
+PASS: note contains required phrase: H_s = H_0 + s I
+PASS: note contains required phrase: lambda_axis(k_s) + s = E
+PASS: note contains required phrase: n_j := k_{s_j} / k0
+PASS: note contains required phrase: S_eik[s] = sum_j n_j Delta l_j
+PASS: note contains required phrase: GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md
+PASS: note contains required phrase: phi_action = c_E s
+PASS: note contains required phrase: c_E = 1 / (k0 lambda_axis'(k0))
+PASS: note contains required phrase: No observed constants, PDG values, fitted selectors, new repo-wide axioms
+PASS: note contains required phrase: it does not rederive universal matter coupling
+PASS: note contains required phrase: The scalar generator shift/sign and fixed-energy action normalization are
+PASS: note contains required phrase: Independent audit must decide
+PASS: note excludes forbidden phrase: **Status:** retained
+PASS: note excludes forbidden phrase: full Einstein equations are derived
+PASS: note excludes forbidden phrase: G_Newton in SI units is derived
+PASS: note excludes forbidden phrase: adds a new axiom
+PASS: note excludes forbidden phrase: textbook theorem supplies the proof
+PASS: weak-field source-response bridge is retained_bounded in current ledger (effective_status=retained_bounded)
+PASS: self-consistency scalar-field packet is retained_bounded in current ledger (effective_status=retained_bounded)
+PASS: source-response bridge supplies S_test sign convention
+PASS: new scalar-shift bridge derives +sI sign and action normalization
+PASS: eikonal note consumes the new scalar-shift bridge
+PASS: self-consistency packet supplies scalar propagator/action surface
+PASS: free wavenumber solves lambda(k0)=E
+PASS: axis derivative is positive on selected branch (dlam=0.39799497)
+PASS: scalar-shifted symbol solves lambda(k_s)+s=E exactly
+PASS: positive scalar shift lowers fixed-energy wavenumber
+PASS: first derivative of n=k/k0 is -1/(k0 lambda'(k0)) (numeric=-12.5419747722, exact=-12.5419747709)
+PASS: small-k coefficient agrees with 1/(2E) at weak-field accuracy (c_exact=12.54197477, 1/(2E)=12.50000000)
+PASS: normalized phase count equals sum (k_s/k0) Delta l
+PASS: linearized eikonal action has sign S=L-c_E int s dl (error=3.204e-04)
+PASS: zero scalar shift gives n=1 on every segment
+PASS: linearized eikonal ray-angle magnitude is 2 c_E a / b
+PASS: ray-angle product alpha*b is constant
+PASS: continuum limit improves c_E -> 1/(2E) (rel_E=3.358e-03, rel_E2=8.349e-04)
+
+TOTAL: PASS=36 FAIL=0
+
+----- stderr -----
+

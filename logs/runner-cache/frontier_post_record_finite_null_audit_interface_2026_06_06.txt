@@ -1,0 +1,77 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_finite_null_audit_interface_2026_06_06.py
+runner_sha256: bd3b89080453c1311484b69fac7ac666852007cd17fc88e1738c2704d7e38f79
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_FINITE_NULL_AUDIT_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_FINITE_NULL_AUDIT_INTERFACE_2026-06-06.md contains: actual_current_surface_status: exact-support
+PASS docs/POST_RECORD_FINITE_NULL_AUDIT_INTERFACE_2026-06-06.md contains: supplied finite-null audit
+PASS docs/POST_RECORD_FINITE_NULL_AUDIT_INTERFACE_2026-06-06.md contains: P(p_T(W) <= alpha) <= alpha
+PASS docs/POST_RECORD_FINITE_NULL_AUDIT_INTERFACE_2026-06-06.md contains: null-law, statistic, threshold, and model-selection derivation remain open
+PASS docs/POST_RECORD_FINITE_NULL_AUDIT_INTERFACE_2026-06-06.md contains: generation or Koide dial
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md exists
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: bounded and conditional lanes
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: does **not** unlock verdict changes by itself
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: rows needing probability laws
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md exists
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: Once a readout context supplies a finite record alphabet `O`
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: post-record append action on O*
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: Does not derive probabilities
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md exists
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: post-record information dynamics
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: probability laws, Born typicality, and transition rates
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: Record history/count support is therefore an exact **consumer**
+
+------------------------------------------------------------------------------
+Finite null p-value checks
+------------------------------------------------------------------------------
+PASS low-A supplied null is normalized
+PASS high-A supplied null is normalized
+PASS low-A exact tail p-value matches finite sum :: 17/625
+PASS high-A exact tail p-value matches finite sum :: 189/256
+PASS same realized word can have different supplied-null p-values
+PASS low-A null flags observed word at alpha=1/20
+PASS high-A null does not flag observed word at alpha=1/20
+PASS low-A p-values are conservative under supplied null
+PASS high-A p-values are conservative under supplied null
+PASS low-A flagged mass is bounded by alpha :: 17/625
+PASS high-A flagged mass is bounded by alpha :: 0
+
+------------------------------------------------------------------------------
+Supplied transition-kernel null checks
+------------------------------------------------------------------------------
+PASS initial law is normalized
+PASS transition kernel is row-stochastic
+PASS supplied Markov finite-history law is normalized :: 1
+PASS Markov p-value equals exact enumerated tail :: 7/16
+PASS Markov p-values are conservative by enumeration
+PASS non-normalized candidate kernel is rejected by row check
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS Record-derived null-law flag is false
+PASS Record-derived statistic flag is false
+PASS Record-derived threshold flag is false
+PASS Record-derived model-selection flag is false
+PASS Record-derived Born/instrument flag is false
+PASS Record-derived clock/rate flag is false
+PASS Record-derived Hamiltonian flag is false
+PASS generation/Koide dial selected flag is false
+PASS audit verdict applied flag is false
+
+SUMMARY: PASS=44 FAIL=0
+SUPPLIED_FINITE_NULL_AUDIT_INTERFACE=TRUE
+FINITE_NULL_P_VALUES_CONSERVATIVE=TRUE
+RECORD_DERIVES_NULL_LAW=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

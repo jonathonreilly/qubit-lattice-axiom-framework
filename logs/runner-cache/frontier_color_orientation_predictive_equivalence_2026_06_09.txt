@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_orientation_predictive_equivalence_2026_06_09.py
+runner_sha256: 65952a40917fcd819cdc4c577bd2622fcde0d71808f73416fd6551dcf6fd1cbe
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.12
+status: ok
+----- stdout -----
+PASS  color commutant 1: g in SU(3) (unitary, det=1)
+PASS  color commutant 2: adjoint preserves traceless 8-block (tr stays 0)
+PASS  color commutant 3: singlet (identity / number operator) is fixed
+PASS  color commutant 4: off-diagonal bilinear E_12 (adjoint) is NOT SU(3)-invariant
+PASS  color commutant 5: single-carrier color commutant = scalars (Schur, dim 1)
+PASS  predictive equivalence 1: O = aI + b*SWAP is exactly SU(3)-invariant on C^3(x)C^3
+PASS  predictive equivalence 2: <O>_rho = <O>_{g rho g} for invariant O (exact)
+PASS  purity residual 1: orientation MOVES: rho_rot != rho as operators
+PASS  purity residual 2: spectrum (all SU(3)-invariants) preserved exactly
+PASS  purity residual 3: purity (two-copy invariant) agrees for SU(3)-related states
+PASS  purity residual 4: purity DISTINGUISHES a different-spectrum state (residual is real)
+PASS  r-dial guard 1: r-readout UNCHANGED by color-orientation rotation (exact)
+PASS  r-dial guard 2: r-readout DOES distinguish rA != rB (observables depend on r)
+PASS  r-dial guard 3: color SU(3) fixes r: no orientation rotation alters the r-readout
+PASS  r-dial guard 4: non-invariant color op DOES move (rotation is non-trivial)
+PASS  negative control: equivalence FAILS for a non-invariant operator
+PASS  discipline guard 1: purity untouched: polarized stays polarized (no depolarization delivered)
+PASS  discipline guard 2: no frame delivered: only SU(3)-invariant projectors are 0, I (Schur)
+PASS  discipline guard 3: global rotation commutes with site-shift (no local link delivered)
+
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

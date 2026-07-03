@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_two_state_markov_stability_interface_2026_06_06.py
+runner_sha256: 1976616be4df2da60cfedbea803826117be5c45d2016551cb64a5672f5c65082
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_TWO_STATE_MARKOV_STABILITY_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_TWO_STATE_MARKOV_STABILITY_INTERFACE_2026-06-06.md contains: actual_current_surface_status: exact-support
+PASS docs/POST_RECORD_TWO_STATE_MARKOV_STABILITY_INTERFACE_2026-06-06.md contains: stable post-record location
+PASS docs/POST_RECORD_TWO_STATE_MARKOV_STABILITY_INTERFACE_2026-06-06.md contains: This is a stability interface, not a dial-selection theorem
+PASS docs/POST_RECORD_TWO_STATE_MARKOV_STABILITY_INTERFACE_2026-06-06.md contains: different supplied kernels
+PASS docs/POST_RECORD_TWO_STATE_MARKOV_STABILITY_INTERFACE_2026-06-06.md contains: generation or Koide dial
+PASS docs/RECORD_EQUAL_LETTER_STABLE_LOCATION_2026-06-05.md exists
+PASS docs/RECORD_EQUAL_LETTER_STABLE_LOCATION_2026-06-05.md contains: The equal-letter point is a stable location
+PASS docs/RECORD_EQUAL_LETTER_STABLE_LOCATION_2026-06-05.md contains: This is not a physical dial-selection theorem
+PASS docs/RECORD_EQUAL_LETTER_STABLE_LOCATION_2026-06-05.md contains: Does not force Koide
+PASS docs/RECORD_PRIOR_STABILITY_SELECTOR_2026-06-05.md exists
+PASS docs/RECORD_PRIOR_STABILITY_SELECTOR_2026-06-05.md contains: Stability alone does not choose the endpoint
+PASS docs/RECORD_PRIOR_STABILITY_SELECTOR_2026-06-05.md contains: Koide is not forced
+PASS docs/RECORD_PRIOR_STABILITY_SELECTOR_2026-06-05.md contains: post-record label/count dynamics
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md exists
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: post-record information dynamics
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: probability laws, Born typicality, and transition rates
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: dial selection
+
+------------------------------------------------------------------------------
+General two-state kernel checks
+------------------------------------------------------------------------------
+PASS kernel is row-stochastic :: ((Fraction(4, 5), Fraction(1, 5)), (Fraction(2, 5), Fraction(3, 5)))
+PASS stationary vector is normalized :: (Fraction(2, 3), Fraction(1, 3))
+PASS stationary vector is exact :: (Fraction(2, 3), Fraction(1, 3))
+PASS pi is stationary :: (Fraction(2, 3), Fraction(1, 3))
+PASS contraction eigenvalue is exact :: 2/5
+PASS kernel is attracting
+PASS one-step deviation contracts by lambda :: (Fraction(2, 5), Fraction(3, 5))
+PASS four-step deviation contracts by lambda^4 :: (Fraction(406, 625), Fraction(219, 625))
+
+------------------------------------------------------------------------------
+Equal-letter and biased-location checks
+------------------------------------------------------------------------------
+PASS equal-letter reset kernel is row-stochastic
+PASS equal-letter stationary point is uniform :: (Fraction(1, 2), Fraction(1, 2))
+PASS equal-letter contraction factor is 1-alpha :: 2/5
+PASS biased supplied kernel is row-stochastic
+PASS biased supplied kernel has different stable point :: (Fraction(5, 6), Fraction(1, 6))
+PASS same alphabet admits different supplied stable locations
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS Record-derived kernel flag is false
+PASS Record-derived physical-bridge flag is false
+PASS Record-derived clock/rate flag is false
+PASS Record-derived Born/instrument flag is false
+PASS Record-derived Hamiltonian flag is false
+PASS Record-selected kernel-family flag is false
+PASS generation/Koide dial selected flag is false
+PASS audit verdict applied flag is false
+
+SUMMARY: PASS=40 FAIL=0
+SUPPLIED_TWO_STATE_MARKOV_STABILITY_INTERFACE=TRUE
+STATIONARY_LOCATION_EXACT=TRUE
+RECORD_DERIVES_KERNEL=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

@@ -1,17 +1,73 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_3d_l2_tail_stats.py
-runner_sha256: 74dccbdc37adf72dd1c739019b868cf40046d291202241febd4ac1de3336a292
+runner_sha256: b1174d18ee3646bcfec6e431c9e41e6dcf3a06165b9508beb7be3fa313493778
 timeout_sec: 120
-exit_code: -9
-elapsed_sec: 120.06
-status: timeout
+exit_code: 0
+elapsed_sec: 26.81
+status: ok
 ----- stdout -----
 ================================================================================================
-3D INVERSE-SQUARE TAIL STATISTICS
-  Review-safe tail probe for the exploratory 1/L^2 branch.
-  Same family, same barrier geometry, same action, h=0.25.
+3D INVERSE-SQUARE TAIL STATISTICS -- FROZEN-LOG VERIFIER
+  Scope: width-8 frozen-log table plus live width-6/width-8 tail-fit comparison.
+  Full slow recomputation remains available with --recompute.
 ================================================================================================
 
+[PASS] frozen width-8 log exists :: logs/2026-04-04-lattice-3d-l2-tail-stats.txt
+[PASS] frozen log is width=8 at h=0.25
+[PASS] barrier Born matches narrowed note
+[PASS] barrier k0 matches narrowed note
+[PASS] barrier dTV matches narrowed note
+[PASS] barrier read is ATTRACTIVE
+[PASS] five no-barrier rows parsed :: rows=5
+[PASS] z=4 row matches frozen table :: got centroid=+0.049373 P_near=+0.004422 bias=+0.795766 read=ATTRACTIVE
+[PASS] z=5 row matches frozen table :: got centroid=+0.046445 P_near=+0.003459 bias=+0.765371 read=ATTRACTIVE
+[PASS] z=6 row matches frozen table :: got centroid=+0.040248 P_near=+0.001309 bias=+0.719169 read=ATTRACTIVE
+[PASS] z=7 row matches frozen table :: got centroid=+0.035067 P_near=+0.000651 bias=+0.668926 read=ATTRACTIVE
+[PASS] z=8 row matches frozen table :: got centroid=+0.030697 P_near=+0.000357 bias=+0.627323 read=ATTRACTIVE
+[PASS] tail peak is z=4
+[PASS] tail has five post-peak points
+[PASS] tail exponent recomputes to -0.70 after display rounding :: slope=-0.7000
+[PASS] tail R^2 recomputes to 0.955 after display rounding :: R^2=0.9548
+[PASS] frozen log records original single-width boundary
+
+================================================================================================
+3D INVERSE-SQUARE TAIL STATISTICS -- WIDTH-6/WIDTH-8 HEAD-TO-HEAD
+  Scope: live no-barrier tail-fit computation at h=0.25.
+  The fast layer-by-layer kernel is calibrated against the frozen width-8 rows.
+================================================================================================
+
+width=6  nodes=117,649  elapsed=7.8s
+  z= 4  centroid=+0.046594  P_near=+0.004380  bias=+0.744398  read=ATTRACTIVE
+  z= 5  centroid=+0.043891  P_near=+0.003388  bias=+0.690772  read=ATTRACTIVE
+  z= 6  centroid=+0.037523  P_near=+0.000949  bias=+0.640142  read=ATTRACTIVE
+  tail fit: peak@z=4  n_tail=3  exponent=b^(-0.52)  R^2=0.906
+
+width=8  nodes=207,025  elapsed=18.8s
+  z= 4  centroid=+0.049373  P_near=+0.004422  bias=+0.790115  read=ATTRACTIVE
+  z= 5  centroid=+0.046445  P_near=+0.003459  bias=+0.763642  read=ATTRACTIVE
+  z= 6  centroid=+0.040248  P_near=+0.001309  bias=+0.717189  read=ATTRACTIVE
+  z= 7  centroid=+0.035067  P_near=+0.000651  bias=+0.666566  read=ATTRACTIVE
+  z= 8  centroid=+0.030697  P_near=+0.000357  bias=+0.623552  read=ATTRACTIVE
+  tail fit: peak@z=4  n_tail=5  exponent=b^(-0.70)  R^2=0.955
+[PASS] head-to-head computed both widths
+[PASS] width-6 has three post-peak rows
+[PASS] width-8 has five post-peak rows
+[PASS] all width-6 no-barrier rows are attractive
+[PASS] all width-8 no-barrier rows are attractive
+[PASS] width-6 tail exponent recomputes near -0.52 :: slope=-0.5242
+[PASS] width-8 tail exponent recomputes near -0.70 :: slope=-0.7000
+[PASS] width-8 adds two tail rows over width-6
+[PASS] width-8 fit has higher R^2 than width-6 :: R2_6=0.9063 R2_8=0.9548
+[PASS] width-8 tail is steeper than width-6 :: slope6=-0.5242 slope8=-0.7000
+[PASS] fast width-8 z=4 centroid/P_near calibrates to frozen row :: got centroid=+0.049373 P_near=+0.004422 read=ATTRACTIVE
+[PASS] fast width-8 z=5 centroid/P_near calibrates to frozen row :: got centroid=+0.046445 P_near=+0.003459 read=ATTRACTIVE
+[PASS] fast width-8 z=6 centroid/P_near calibrates to frozen row :: got centroid=+0.040248 P_near=+0.001309 read=ATTRACTIVE
+[PASS] fast width-8 z=7 centroid/P_near calibrates to frozen row :: got centroid=+0.035067 P_near=+0.000651 read=ATTRACTIVE
+[PASS] fast width-8 z=8 centroid/P_near calibrates to frozen row :: got centroid=+0.030697 P_near=+0.000357 read=ATTRACTIVE
+
+SCORECARD PASS=32 FAIL=0
+FINDING: frozen width-8 table and live width-6/width-8 tail fits are audit-reproducible.
+BOUNDARY: finite no-barrier tail-fit comparison only; no asymptotic 1/r^2 closure.
 
 ----- stderr -----
 

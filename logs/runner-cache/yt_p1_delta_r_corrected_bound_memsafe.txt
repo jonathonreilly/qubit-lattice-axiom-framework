@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/corrections/yt_p1_delta_r_corrected_bound_memsafe.py
+runner_sha256: 548d19a1961c99d4f42f9b84845559b58d727a3505b294b3bebeee592183c35e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.01
+status: ok
+----- stdout -----
+======================================================================
+CORRECTED Delta_R (honest bound) -- memory-safe, single process
+======================================================================
+  u0=0.87768  alpha_LM/4pi=0.00722
+
+[Delta_1 / C_F scalar channel]  (NON-PERTURBATIVE single-link bound)
+  corrected I_S (no /N_TASTE) = 32.432   (buggy /16 value was 3.90)
+  Delta_1 = 2*I_S - 6 = +58.863   C_F*Delta_1 channel = +56.63%
+
+[Delta_2 / C_A gluonic channel]  (CLEAN, unchanged)
+  I_SE_gluonic = 2.321   Delta_2 = -(5/3)I_SE = -3.869   C_A*Delta_2 channel = -8.37%
+
+[Delta_3 / T_F n_f fermion channel]  (was BROKEN; full-doubler fixed)
+    m^2=0.12  : full-doubler const = +5.369
+    m^2=0.06  : full-doubler const = +10.748
+    m^2=0.03  : full-doubler const = +14.228
+  m^2->0 extrapolation (linear in sqrt(m^2)): C_f ~ 23.18 (slope a=-51.27)
+    taste power /16  : I_SE_fermion=+1.881  Delta_3=+2.508  T_F n_f channel=+5.43%
+    taste power /256 : I_SE_fermion=+0.118  Delta_3=+0.157  T_F n_f channel=+0.34%
+
+======================================================================
+CORRECTED Delta_R (bound):
+  taste /16  :  C_F +56.63%  +  C_A -8.37%  +  T_Fn_f +5.43%   =  Delta_R = +53.68%
+  taste /256 :  C_F +56.63%  +  C_A -8.37%  +  T_Fn_f +0.34%   =  Delta_R = +48.59%
+
+  Runner's REPORTED Delta_R = -3.27%
+  => dominated by the scalar C_F channel (~+56%), which is the
+     UNCONTROLLED non-perturbative single-link value. Delta_R is an
+     O(50%) uncontrolled quantity, NOT the small -3.27% reported;
+     the fermion channel is subdominant (taste power barely matters).
+======================================================================
+
+----- stderr -----
+

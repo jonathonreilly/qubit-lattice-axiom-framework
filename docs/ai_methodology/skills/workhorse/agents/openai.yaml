@@ -1,0 +1,7 @@
+interface:
+  display_name: "Workhorse"
+  short_description: "Coordinate supervised high-reasoning execution"
+  default_prompt: "Use $workhorse to split planning/review/landing from bounded high-reasoning text execution without delegating verdicts."
+
+policy:
+  allow_implicit_invocation: true

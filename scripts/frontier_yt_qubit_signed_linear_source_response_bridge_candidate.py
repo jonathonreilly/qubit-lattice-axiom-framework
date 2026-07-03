@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Qubit signed-linear source response bridge candidate for Y_T."""
+"""Finite C^6 signed-linear source-response support for Y_T."""
 
 from __future__ import annotations
 
@@ -18,6 +18,7 @@ NOTE = DOCS / "YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026
 AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-05-20.md"
 LSP = DOCS / "LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md"
 DEMOCRATIC = DOCS / "YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md"
+TOP_UNDERDETERMINATION = DOCS / "YT_TOP_RESPONSE_COEFFICIENT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-25.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 PASS_COUNT = 0
@@ -56,18 +57,18 @@ def is_zero(expr: sp.Expr) -> bool:
 
 def part1_anchors() -> dict[str, Any]:
     print("\nPart 1: anchors")
-    for path in (NOTE, AXIOMS, LSP, DEMOCRATIC, LEDGER):
+    for path in (NOTE, AXIOMS, LSP, DEMOCRATIC, TOP_UNDERDETERMINATION, LEDGER):
         check(f"{path.relative_to(ROOT)} exists", path.exists())
 
     note = read(NOTE)
-    check("note claim type is bounded support note", "**Claim type:** bounded support note" in note)
-    check("note type is conditional / support", "**Type:** conditional / support" in note)
-    check("old bounded_theorem header is absent", "**Claim type:** bounded_theorem" not in note and "**Type:** bounded_theorem" not in note)
+    check("note claim type is bounded_theorem", "**Claim type:** bounded_theorem" in note)
+    check("note type excludes physical bridge", "**Type:** exact finite support / physical bridge excluded" in note)
     for phrase in (
+        "2026-06-07 Finite-Support Boundary",
         "Axiom-First Fork",
         "Exact Democratic Source",
         "Projective Probability Versus Signed Linear Response",
-        "Candidate Bridge",
+        "Boundary To Physical Y_T",
         "Why This Is Not The Old Ward Trap",
         "Current Status",
         "Firewalls",
@@ -76,12 +77,22 @@ def part1_anchors() -> dict[str, Any]:
 
     statuses = {
         "source_action": ledger_row("yt_source_action_support_packet_note_2026-05-22").get("effective_status"),
-        "ew_mass": ledger_row("ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26").get("effective_status"),
+        "lsp_projective": ledger_row("lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22").get("effective_status"),
+        "democratic_c6": ledger_row("yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25").get("effective_status"),
+        "top_underdetermination": ledger_row("yt_top_response_coefficient_underdetermination_no_go_note_2026-05-25").get("effective_status"),
     }
     check("source-action support is retained_bounded", statuses["source_action"] == "retained_bounded")
-    check("EW mass theorem is retained", statuses["ew_mass"] == "retained")
+    check("LSP projective readout is retained_bounded", statuses["lsp_projective"] == "retained_bounded")
+    check("S6-democratic C6 support is retained_bounded", statuses["democratic_c6"] == "retained_bounded")
+    check(
+        "top-response underdetermination note is not used as retained dependency",
+        statuses["top_underdetermination"] == "unaudited"
+        and "boundary pointer only; it is not used here as a retained dependency" in note,
+        statuses["top_underdetermination"],
+    )
     check("minimal axioms are qubit-on-Z3 framed", "Reality is a qubit at every lattice site" in read(AXIOMS))
     check("LSP note records K_P = P", "K_P = P" in read(LSP))
+    check("democratic note records 1/sqrt(6)", "1/sqrt(6)" in read(DEMOCRATIC))
     return statuses
 
 
@@ -153,6 +164,14 @@ def part5_firewalls() -> None:
         check(f"firewall phrase present: {phrase}", phrase in note)
 
     for phrase in (
+        "top Yukawa coefficient y_33 equals that signed-linear tangent",
+        "top response/correlator",
+        "retained top-coefficient theorem",
+        "physical top-response bridge open",
+    ):
+        check(f"physical-bridge boundary phrase present: {phrase}", phrase in note)
+
+    for phrase in (
         "Status:** retained",
         "Status: retained",
         "proposed_retained",
@@ -160,13 +179,14 @@ def part5_firewalls() -> None:
         "`y_t` is derived",
         "positive Y_T closure has been obtained",
         "full retained closure",
+        "physical top-response bridge is closed",
     ):
         check(f"forbidden overclaim absent: {phrase}", phrase not in note)
 
 
 def main() -> int:
     print("=" * 78)
-    print("Y_T QUBIT SIGNED-LINEAR SOURCE RESPONSE BRIDGE CANDIDATE")
+    print("Y_T QUBIT SIGNED-LINEAR SOURCE RESPONSE FINITE SUPPORT")
     print("=" * 78)
 
     statuses = part1_anchors()
@@ -176,7 +196,7 @@ def main() -> int:
     part5_firewalls()
 
     result = {
-        "status": "conditional exact support: signed-linear democratic source tangent gives 1/sqrt(6); physical top-response bridge remains open",
+        "status": "bounded exact finite support: signed-linear democratic source tangent gives 1/sqrt(6); physical top-response bridge remains open",
         "proposal_allowed": False,
         "proposal_allowed_reason": (
             "The finite-dimensional signed-linear source tangent is exact, but the packet "

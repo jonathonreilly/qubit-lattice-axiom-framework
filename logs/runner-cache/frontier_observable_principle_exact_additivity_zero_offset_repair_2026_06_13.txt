@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_exact_additivity_zero_offset_repair_2026_06_13.py
+runner_sha256: 2b5b2161264a0e5f9f1fb9bc169ea81798081dfc8b5a4211bae6ffa21fab8616
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.45
+status: ok
+----- stdout -----
+# Observable-principle exact-additivity zero-offset repair runner
+# Source note: docs/OBSERVABLE_PRINCIPLE_P1_EXACT_ADDITIVITY_ZERO_OFFSET_REPAIR_NOTE_2026-06-13.md
+
+==============================================================================
+Symbolic exact-additivity defect
+==============================================================================
+PASS: W_b(r)=c log r+b has exact-additivity defect -b
+      defect=-b
+PASS: exact additivity forces b=0
+      solutions=[0]
+
+==============================================================================
+Unit argument
+==============================================================================
+PASS: setting r1=r2=1 gives residual -b
+      W(1)-2W(1)=-b
+
+==============================================================================
+Shifted composition law is distinct
+==============================================================================
+PASS: shifted family satisfies the shifted law
+      shifted_defect=0
+PASS: shifted law differs from exact additivity when b is nonzero
+      exact_defect=-b
+
+==============================================================================
+Rational witnesses
+==============================================================================
+PASS: nonzero rational offset fails exact additivity
+      c=3/2, b=5/7, r1=2, r2=3, defect=-5/7
+PASS: the same rational offset is compatible only with shifted additivity
+      shifted_defect=0
+
+==============================================================================
+Source-note guardrails
+==============================================================================
+PASS: note contains required boundary strings
+      missing=[]
+PASS: note avoids audit/status overclaim strings
+      present_forbidden=[]
+
+TOTAL: PASS=9, FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/d3_native_stable_orbit_upper_bound_composition_2026_06_09.py
+runner_sha256: 8bfc81551e21630bcadb282bdafb3cba667a069ea9276dc6ada0db5a72ec6184
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+D3 native stable-orbit upper-bound additive composition
+============================================================================
+PASS docs/D3_NATIVE_STABLE_ORBIT_UPPER_BOUND_COMPOSITION_NOTE_2026-06-09.md exists
+PASS docs/DIMENSION_SELECTION_NOTE.md exists
+PASS docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md exists
+PASS docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md exists
+PASS docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md exists
+PASS docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md exists
+PASS scripts/bertrand_stable_orbit_green_kernel_bridge.py exists
+PASS scripts/frontier_coulomb_stability_scaling_repair.py exists
+PASS scripts/d3_native_stable_orbit_upper_bound_composition_2026_06_09.py exists
+PASS logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt exists
+PASS logs/runner-cache/frontier_coulomb_stability_scaling_repair.txt exists
+PASS composition note cites docs/DIMENSION_SELECTION_NOTE.md
+PASS composition note cites docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md
+PASS composition note cites docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md
+PASS composition note cites docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md
+PASS composition note cites docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md
+PASS composition note cites scripts/bertrand_stable_orbit_green_kernel_bridge.py
+PASS composition note cites scripts/frontier_coulomb_stability_scaling_repair.py
+PASS composition note cites scripts/d3_native_stable_orbit_upper_bound_composition_2026_06_09.py
+PASS composition note cites logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt
+PASS composition note cites logs/runner-cache/frontier_coulomb_stability_scaling_repair.txt
+PASS composition note cites logs/runner-cache/d3_native_stable_orbit_upper_bound_composition_2026_06_09.txt
+PASS note is additive and source-side only
+PASS note forbids audit/status side effects
+PASS note names native stable-orbit edge as load-bearing
+PASS note keeps Coulomb edge companion-only
+PASS lower note exposes only checked finite packet
+PASS stable support note derives Green-kernel potential shape
+PASS stable support note gives d=3 stable and d>=5 unstable classification
+PASS stable support note does not consume full Bertrand closure theorem
+PASS Coulomb support note remains bounded companion support
+PASS legacy-named wrapper consumes native stable-orbit edge
+PASS legacy-named gate consumes native stable-orbit edge
+PASS note non-claims block overread
+PASS note declares source-only audit boundary without retained-grade promotion
+PASS note records current lower and upper composition text
+PASS note permits wrapper/gate wiring without changing support-note claim
+PASS lower support set is exactly {3,4,5}
+PASS native stable upper set over checked dims is d<=3
+PASS Coulomb weak upper set over checked dims is d<=4
+PASS strict d=3 spectrum set is singleton {3}
+PASS lower intersect native stable upper is {3} :: [3]
+PASS lower intersect Coulomb weak upper is {3,4} :: [3, 4]
+PASS lower intersect strict spectrum is {3} :: [3]
+PASS native stable edge is decisive while weak Coulomb is not
+PASS Coulomb companion remains compatible with selected d=3
+PASS logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt exists
+PASS logs/runner-cache/frontier_coulomb_stability_scaling_repair.txt exists
+PASS stable-orbit cache certifies PASS=8
+PASS Coulomb cache certifies PASS=53 FAIL=0
+============================================================================
+AUDIT_VERDICT_APPLIED=FALSE
+SUMMARY: PASS=50 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/frontier_source_measure_record_intervention_theorem.py
+runner_sha256: 336ff6de53021da704cbcac148aeaa3c2e7770b9ea4f9bb58ca3839a8aac3c88
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.51
+status: ok
+----- stdout -----
+========================================================================================
+SOURCE/MEASURE RECORD-INTERVENTION THEOREM
+========================================================================================
+
+Part 1: document/status boundary
+[PASS] docs/SOURCE_MEASURE_RECORD_INTERVENTION_THEOREM_NOTE_2026-05-30.md exists
+[PASS] docs/SOURCE_MEASURE_PCAL_RETIREMENT_SYNTHESIS_NOTE_2026-05-30.md exists
+[PASS] docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md exists
+[PASS] docs/MINIMAL_AXIOMS_2026-05-20.md exists
+[PASS] docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md exists
+[PASS] note contains required phrase: Theorem
+[PASS] note contains required phrase: Operational equivalence
+[PASS] note contains required phrase: RN representation
+[PASS] note contains required phrase: Connection to P-cal
+[PASS] note contains required phrase: Status boundary
+[PASS] note contains required phrase: Non-claims
+[PASS] note marks proposed_retained source-side status
+[PASS] note requires audit before effective retained
+
+Part 2: operational equivalence on finite history algebra
+[PASS] history space has four sharp-record atoms: [(-1, -1), (-1, 1), (1, -1), (1, 1)]
+[PASS] indicator expectations recover probability components: [p0 - q0, p1 - q1, p2 - q2, p3 - q3]
+[PASS] all observable expectations equal iff all components equal
+
+Part 3: RN representation of smooth source interventions
+[PASS] uniform trace reference has full support
+[PASS] linearized RN path normalizes to first order exactly: 1
+[PASS] RN score has zero reference mean: 0
+[PASS] RN derivative recovers the source density path: [h*s0 + 1, h*s1 + 1, h*s2 + 1]
+
+Part 4: independent composition
+[PASS] independent joint log RN is sum of log RNs: h*(e1 + e2) - 2*W(h)
+
+Part 5: closure status and firewall
+[PASS] note says residual from synthesis is closed on record sector
+[PASS] note keeps generic dynamics out of scope
+[PASS] forbidden import named: H_unit
+[PASS] forbidden import named: yt_ward_identity
+[PASS] forbidden import named: y_t_bare
+[PASS] forbidden import named: PDG
+[PASS] forbidden import named: alpha_LM
+[PASS] forbidden import named: plaquette
+[PASS] forbidden import named: fitted selector
+[PASS] forbidden overclaim absent: Status: retained
+[PASS] forbidden overclaim absent: audit-clean retained
+[PASS] forbidden overclaim absent: effective retained before audit
+
+========================================================================================
+SUMMARY: PASS=33 FAIL=0
+Wrote outputs/source_measure_record_intervention_2026-05-30.json
+
+----- stderr -----
+

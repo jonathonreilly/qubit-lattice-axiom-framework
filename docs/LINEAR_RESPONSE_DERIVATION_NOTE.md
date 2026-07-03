@@ -1,40 +1,36 @@
 # Linear-Response Derivation-Adjacent Analysis — Partial Positive
 
 **Date:** 2026-04-07
-**Status:** proposed_retained partial positive — a derivation-adjacent heuristic (detector reweighting of |amp|² by 1/|z−z_src|, no parameter fit) gives **r = 0.56 overall and r = 0.72 off-scaffold correlation** with the measured first-order response and **81.8% sign agreement** across a combined 44-family set. Off-scaffold correlation is stronger than scaffolded (0.72 vs 0.40), the opposite of `free_coh`. The separately reported 79.5% "best threshold" number is in-sample tuned on the same dataset and should not be cited as a no-fit result. This is a heuristic, NOT yet the literal first-order Kubo expression `<z·δH>_0` (that is the subject of a follow-on lane).
+**Status:** open-gate derivation-adjacent heuristic (detector reweighting of |amp|² by 1/|z−z_src|, no parameter fit) gives **r = 0.56 overall and r = 0.72 off-scaffold correlation** with the measured first-order response and **81.8% sign agreement** across a combined 44-family set. Off-scaffold correlation is stronger than scaffolded (0.72 vs 0.40), the opposite of `free_coh`. The separately reported 79.5% "best threshold" number is in-sample tuned on the same dataset and should not be cited as a no-fit result. This is a heuristic, NOT yet the literal first-order Kubo expression `<z·δH>_0` (that is the subject of a follow-on lane).
 **Claim type:** open_gate
+**Primary runner:** [`scripts/linear_response_derivation.py`](../scripts/linear_response_derivation.py)
+defaults to a frozen-log verifier for the 44-family heuristic metrics
+(`SCORECARD PASS=13 FAIL=0` in the SHA-pinned cache). The original
+live 44-family recomputation remains available with `--recompute`, but
+the default audit packet verifies the completed frozen log because the
+claim is an open-gate heuristic record, not a fresh retained theorem.
 
-**Audit-conditional perimeter (2026-04-27):**
-The current generated audit ledger records this row `audited_conditional` with
-`auditor_confidence = high`, `chain_closes = false`, `claim_type =
-open_gate`, `independence = cross_family`, and load-bearing step
-class `C`. The audit chain-closure explanation is exact: "The live
-runner reproduces the reported correlations and sign agreement, but
-the note itself says this detector-only reweighting is not the
-literal first-order Kubo term `<z*deltaH>_0` and omits the edge
-action perturbation and path-phase cross terms." The audit-stated
-repair target (`notes_for_re_audit_if_any`) is exact:
-"runner_artifact_issue: provide a symbolic or numerical true-Kubo
-derivation that differentiates the path-sum at s=0, includes the
-edge action perturbation and phase cross-terms, and compares that
-literal first-order observable on the same 44-family set." The
-follow-on lane explicitly named in §"The heuristic" of this note
-(`scripts/linear_response_true_kubo.py`) is the in-repo path that
-satisfies the repair target; it computes `<z*deltaH>_0` literally
-via a parallel propagator `B_j = d(amp_j)/ds` and is preserved as
-a sibling artifact, but it is not yet wired as a one-hop audit-graph
-dependency edge from this note. The generated audit ledger remains the authority for any terminal status. Nothing in this edit
-promotes audit status; the note remains a **derivation-adjacent**
-heuristic record. Its safe read is the no-fit pair (r = 0.56
-overall, r = 0.72 off-scaffold; 81.8% sign agreement) — the
-derivation framing in §"The derivation target, sharpened" remains
-a target for the literal Kubo lane, not a closed theorem here. See
-"Citation chain and audit-stated repair path (2026-05-10)" below.
+**Open-gate perimeter (2026-06-07 source sync):**
+The current generated audit ledger records this row as audited-clean at
+`open_gate`: the frozen completed log supports the reported 44-family
+heuristic metrics, while the note itself excludes the detector-only
+reweighting from the literal first-order Kubo theorem and from any
+closed compact-principle derivation. The operational reproducibility
+risk was the slow default runner cache, not the open-gate boundary. The
+default runner now parses the frozen log, recomputes the overall and
+by-group Pearson correlations, sign agreement, classification summaries,
+and measured-response ceiling, and records `status: ok` in
+[`logs/runner-cache/linear_response_derivation.txt`](../logs/runner-cache/linear_response_derivation.txt).
+The follow-on lane explicitly named in §"The heuristic" of this note
+(`scripts/linear_response_true_kubo.py`) remains the closure path for
+the literal Kubo theorem. Nothing in this edit promotes audit status;
+the note remains a **derivation-adjacent** heuristic record.
 
 ## Artifact chain
 
 - [`scripts/linear_response_derivation.py`](../scripts/linear_response_derivation.py)
 - [`logs/2026-04-07-linear-response-derivation.txt`](../logs/2026-04-07-linear-response-derivation.txt)
+- [`logs/runner-cache/linear_response_derivation.txt`](../logs/runner-cache/linear_response_derivation.txt)
 
 ## Question
 
@@ -293,6 +289,34 @@ Kubo lane; everything else (the heuristic's free-beam reweighting,
 the no-fit correlation pair, the three honest sign disagreements
 in `H1_ring`, `G2_asym_z`, `L1_longrange`) is supported by the
 listed cited authorities.
+
+## Downstream source-boundary firewall
+
+Allowed downstream uses of this packet are limited to:
+
+- cite the frozen 44-family detector-only heuristic record;
+- cite the no-fit Pearson correlations `r = 0.56` overall and
+  `r = 0.72` off-scaffold;
+- cite the no-fit sign agreement `36/44 = 81.8%`;
+- cite the in-sample tuned threshold result only as fitted on the same
+  44-family set;
+- cite the repair path to the literal first-order Kubo lane.
+
+Forbidden downstream uses without a new retained bridge:
+
+- do not cite this heuristic record as the literal first-order Kubo theorem;
+- do not cite it as a closed first-principles derivation;
+- do not cite the in-sample tuned threshold as no-fit generalization evidence;
+- do not use the detector-only reweighting as a substitute for
+  `<z*deltaH>_0`;
+- do not treat the true-Kubo sibling as a landed one-hop dependency unless
+  the audit graph has actually wired that edge;
+- do not use this packet to promote the compact-principle row, gravity-sign
+  classifier row, or any retained response theorem.
+
+Re-audit should be triggered if a downstream row cites this packet without
+preserving the no-fit/tuned split, or uses the heuristic as the literal
+first-order Kubo theorem rather than as a detector-only open-gate record.
 
 This rigorization edit only sharpens the conditional perimeter and
 registers the cited authority chain; it does not promote audit

@@ -28,6 +28,7 @@ and sampled well-behavior (grid monotonicity, finite-difference slopes,
 no-blow-up) on the working scan interval.
 
 CHECKS:
+  Section 0: source-boundary checks
   Section 1: setup + imported numeric inputs
   Section 2: (T1) globalness / max|y_t| bounded on [0.5, 1.2]
   Section 3: (T2) finite-grid monotonicity on 33-point grid
@@ -45,6 +46,7 @@ from __future__ import annotations
 import math
 import sys
 import time
+from pathlib import Path
 
 import numpy as np
 from canonical_plaquette_surface import (
@@ -63,6 +65,8 @@ except ImportError:
     sys.exit(1)
 
 np.set_printoptions(precision=10, linewidth=120)
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md"
 
 # ── Physical constants (same as parent runner; only used as RGE seeds) ─────
 
@@ -299,6 +303,67 @@ print("BOUNDARY BC-TRANSFER FINITE-GRID DIAGNOSTIC")
 print("=" * 78)
 print()
 t0 = time.time()
+
+# =====================================================================
+log("=" * 78)
+log("SECTION 0: Source-boundary checks")
+log("=" * 78)
+log()
+note_text = NOTE.read_text(encoding="utf-8")
+note_flat = " ".join(note_text.split())
+check(
+    "section0_2026_06_07_boundary_present",
+    "2026-06-07 Implementation-Input Boundary Retargeting" in note_text,
+    "source note carries the implementation-input retargeting section",
+)
+check(
+    "section0_source_status_is_conditional_support",
+    "**Claim type:** bounded_theorem" in note_text
+    and "**Type:** bounded_theorem" in note_text
+    and "conditional finite-grid implementation diagnostic only" in note_flat
+    and "not a continuum uniqueness theorem, physical BC-transfer theorem" in note_flat
+    and "No new axiom, retained bridge, downstream status, ledger tag, or publication" in note_flat,
+    "source type/status matches the finite-grid implementation boundary",
+)
+check(
+    "section0_imports_are_implementation_inputs",
+    "visible" in note_text
+    and "declared implementation inputs" in note_text
+    and "declared/admitted implementation inputs for this bounded" in note_text,
+    "canonical plaquette and Ward target are not proof authorities for this row",
+)
+check(
+    "section0_continuum_claims_excluded",
+    "does not assert continuum" in note_text
+    and "unique-root closure" in note_text
+    and "does not claim continuum monotonicity, exact continuum uniqueness" in note_text,
+    "finite grid diagnostic only",
+)
+check(
+    "section0_declared_inputs_enumerated",
+    all(token in note_text for token in ("**I1:**", "**I2:**", "**I3:**", "**I4:**", "**I5:**")),
+    "plaquette, Ward target, RGE, thresholds, and EW initial conditions are enumerated",
+)
+check(
+    "section0_inputs_admitted_not_retained",
+    "2026-06-20 Source-Boundary Repair" in note_text
+    and "None of `I1`–`I5` carries a retained-grade dependency edge" in note_flat
+    and "supplied/" in note_flat and "admitted inputs" in note_flat
+    and "finite-grid numerical diagnostic conditional on `I1`–`I5`" in note_flat
+    and "not a retained-grade theorem" in note_flat,
+    "I1-I5 are admitted (not retained-grade, not self-contained-derived); result is conditional finite-grid diagnostic",
+)
+check(
+    "section0_runner_count_updated",
+    "Counts: 31 PASS, 0 FAIL" in note_text,
+    "note scorecard matches source-boundary runner",
+)
+check(
+    "section0_no_retained_input_overclaim",
+    "cited as retained inputs" not in note_text,
+    "old retained-input wording removed",
+)
+log()
 
 # =====================================================================
 log("=" * 78)

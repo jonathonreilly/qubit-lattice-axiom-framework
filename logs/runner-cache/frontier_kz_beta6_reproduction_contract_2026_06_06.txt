@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/frontier_kz_beta6_reproduction_contract_2026_06_06.py
+runner_sha256: 095d0331e05dec9454c503e6dad8d2eed52ddc38a235e7a23a24d224690d0b7c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+K-Z SU(3) beta=6 reproduction firewall and acceptance contract
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+
+A. beta/lambda target contract
+[PASS] paper/Wilson coefficient matching gives lambda=N^2/beta -- lambda=1.5
+[PASS] plotted lambda=3 is not Wilson beta=6 for SU(3) -- lambda_beta6=1.5
+[PASS] old W_lift matches plotted lambda=3 image width, not beta=6 coordinate -- width_lambda3=0.048725
+[PASS] image-derived beta=6 coordinate width is not the old narrow width -- width_beta6_image=0.245195
+
+B. support-only SDP firewall
+[PASS] delta-at-identity P,R,Q values lie in SU(3) support [-1/3,1]
+[PASS] plaquette Hankel matrix H_ij=m_{i+j} is PSD for all moments=1
+[PASS] lower Hausdorff shifted Hankel is PSD at endpoint P=1 -- constant=1.333333
+[PASS] upper Hausdorff shifted Hankel is PSD at endpoint P=1 -- constant=0
+[PASS] Wilson-loop Gram matrix on {1,P,R,Q} is PSD for all entries=1
+[PASS] area-style r1<=p2 constraint is saturated by endpoint witness -- r1=1.0, p2=1.0
+[PASS] area-style q1<=p4 constraint is saturated by endpoint witness -- q1=1.0, p4=1.0
+[PASS] bridge lower bound p1>=0.4225 does not exclude endpoint witness -- p1=1.0
+[PASS] support-only constraints therefore permit upper endpoint p1=1
+
+C. reproduction contract candidate tests
+candidate: old W_lift shortcut
+  coordinate_ok=False
+  source_data_route_ok=False
+  repo_owned_sdp_route_ok=False
+  acceptable_reproduction=False
+candidate: support-only SDP at correct coordinate
+  coordinate_ok=True
+  source_data_route_ok=False
+  repo_owned_sdp_route_ok=False
+  acceptable_reproduction=False
+candidate: primary source-data template at lambda=1.5
+  coordinate_ok=True
+  source_data_route_ok=True
+  repo_owned_sdp_route_ok=False
+  acceptable_reproduction=True
+candidate: repo-owned beta-coupled SDP template
+  coordinate_ok=True
+  source_data_route_ok=False
+  repo_owned_sdp_route_ok=True
+  acceptable_reproduction=True
+[PASS] old W_lift shortcut fails the reproduction contract
+[PASS] support-only SDP fails without beta-coupled loop equations
+[PASS] primary source-data route is the only non-SDP acceptable route
+[PASS] repo-owned SDP route requires beta-coupled equations plus solver metadata
+[PASS] accepted templates are route contracts, not actual beta=6 numeric brackets
+
+D. boundary
+[PASS] this block prunes support-only beta=6 reproduction attempts
+[PASS] this block does not certify a new finite SU(3) beta=6 bracket
+[PASS] next positive K-Z route must supply source data or loop equations
+
+SCORECARD: PASS=21 FAIL=0
+VERDICT: The K-Z beta=6 gate cannot be closed by the old W_lift shortcut or by support-only SDP constraints. A future reproduction must target lambda=1.5 and provide primary source data or beta-coupled loop equations with solver/cutoff evidence.
+
+----- stderr -----
+

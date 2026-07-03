@@ -1,0 +1,88 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_history_time_rate_firewall_2026_06_05.py
+runner_sha256: 6ac2cece90dc65f993d425527f943df60d2ab7617f8176399cc43500e7572881
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+==============================================================================
+RECORD HISTORY ORDER / TIME-RATE FIREWALL
+bounded-support / negative-route-pruning runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Record words supply order/counts, not a metric
+------------------------------------------------------------------------------
+  [PASS] history is a finite word ([0, 1, 0, 0, 1])
+  [PASS] counts sum to word length ([3, 2])
+  [PASS] append increases length by one
+  [PASS] append updates the realized symbol count
+  [PASS] prefix lengths are monotone
+  [PASS] arbitrary finite extension exists
+  [PASS] no fixed finite cap appears in the word grammar
+
+------------------------------------------------------------------------------
+2. Same word, different time grids, different rates
+------------------------------------------------------------------------------
+  [PASS] unit and double grids preserve event order
+  [PASS] irregular grid preserves event order
+  [PASS] record counts are invariant under time-grid choice
+  [PASS] unit and double grids give different rates (1.0 vs 0.5)
+  [PASS] irregular grid gives another rate (0.5555555555555556 vs 1.0)
+  [PASS] rate rescales inversely with uniform time scale
+
+------------------------------------------------------------------------------
+3. Step kernels do not fix step duration
+------------------------------------------------------------------------------
+  [PASS] step kernel is stochastic
+  [PASS] initial distribution is normalized
+  [PASS] one-step distribution is normalized ([0.6, 0.39999999999999997])
+  [PASS] two-step distribution is normalized ([0.6, 0.39999999999999997])
+  [PASS] same step distributions are compatible with either dt
+  [PASS] Euler-style generator estimate scales with dt
+  [PASS] off-diagonal rates change when dt changes (0.2 vs 0.4)
+  [PASS] kernel alone does not encode the chosen dt
+
+------------------------------------------------------------------------------
+4. One-step event probability does not fix lambda
+------------------------------------------------------------------------------
+  [PASS] first lambda/dt pair gives q
+  [PASS] second lambda/dt pair gives same q
+  [PASS] the two lambdas differ (0.223144 vs 0.111572)
+  [PASS] same one-step probability is not a unique rate
+
+------------------------------------------------------------------------------
+5. Typed residual ledger
+------------------------------------------------------------------------------
+  [PASS] record outputs do not include time outputs
+  [PASS] kernel outputs do not include time outputs
+  [PASS] time/rate bridge is a separate output class
+
+------------------------------------------------------------------------------
+6. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md)
+  [PASS] note contains marker: claim_type_author_hint: no_go
+  [PASS] note contains marker: **Claim type:** no_go
+  [PASS] note contains marker: bounded negative route-pruning certificate
+  [PASS] note contains marker: Trace class: negative route pruning
+  [PASS] note contains marker: Does not derive physical time
+  [PASS] note contains marker: Does not select a generation/Koide dial setting.
+  [PASS] note contains marker: This row is not a positive time/rate theorem.
+  [PASS] note contains marker: It is not a production theorem
+  [PASS] note contains marker: makes no retained-status proposal
+  [PASS] note contains marker: does not use bare retained language
+  [PASS] forbidden wording absent: time closure
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: generator closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=44 FAIL=0
+
+----- stderr -----
+

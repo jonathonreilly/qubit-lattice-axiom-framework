@@ -1,0 +1,26 @@
+loop_slug: flavor-tracial-formal-route-pruning-20260608
+target_claim_id: flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02
+target_status: bounded-support
+mode: science-fix
+branch: physics-loop/flavor-tracial-formal-route-pruning-20260608
+base: origin/main
+cycle_count: 1
+active_route: formal_carrier_route_pruning
+hard_residual: "Physical generation carrier, flavor-sector identification, and measured-mass readout remain open."
+files_touched:
+  - docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md
+  - scripts/flavor_tracial_reference_does_not_select_q23_no_go_2026_06_02.py
+  - logs/runner-cache/flavor_tracial_reference_does_not_select_q23_no_go_2026_06_02.txt
+open_imports:
+  - "Physical generation carrier bridge."
+  - "Physical flavor-sector identification."
+  - "Measured-mass readout bridge."
+trace_gate_classification: negative_route_pruning
+reachability_to_target: prunes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+review_disposition: pass
+pr_status: review-loop-landing
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3267
+next_exact_action: "Independent audit should re-audit the formal F1-F3 route-pruning theorem after landing."
+stop_condition: "Narrowed formal route-pruning repair landed; audit remains pending."

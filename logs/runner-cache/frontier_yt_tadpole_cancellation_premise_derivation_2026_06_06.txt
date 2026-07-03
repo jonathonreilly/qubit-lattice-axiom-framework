@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_tadpole_cancellation_premise_derivation_2026_06_06.py
+runner_sha256: d9585bcfb2259a294b416b635cec7fbf898b6429e248ef5bc144ea7bc6db6533
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+==============================================================================
+y_t/g_s TADPOLE-CANCELLATION: premise derivation + equal-dressing robustness
+(companion to yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17)
+==============================================================================
+
+[BLOCK A] D14: CMT change-of-variables is link-monomial homogeneity (EXACT)
+  [PASS] link-degree n=1 monomial: O(u0 V) = u0^1 O(V)
+  [PASS] link-degree n=2 monomial: O(u0 V) = u0^2 O(V)
+  [PASS] link-degree n=3 monomial: O(u0 V) = u0^3 O(V)
+  [PASS] link-degree n=4 monomial: O(u0 V) = u0^4 O(V)
+  [PASS] plaquette (n=4) fixes u_0 = P^{1/4} (consistency with retained u_0 def)  --  u_0 = <P>^{1/4}
+
+[BLOCK B] sqrt-readout: coupling is sqrt of strength (EXACT)
+  [PASS] n_link=0: alpha/u0^0 -> coupling g/u0^(n/2)  --  g_eff = g_bare / u0^{n/2}
+  [PASS] n_link=1: alpha/u0^1 -> coupling g/u0^(n/2)  --  g_eff = g_bare / u0^{n/2}
+  [PASS] n_link=2: alpha/u0^2 -> coupling g/u0^(n/2)  --  g_eff = g_bare / u0^{n/2}
+  [PASS] n_link=3: alpha/u0^3 -> coupling g/u0^(n/2)  --  g_eff = g_bare / u0^{n/2}
+  [PASS] n_link=1 single vertex -> coupling = g_bare / sqrt(u_0)  (D1/D2 form)
+
+[BLOCK C] cancellation ROBUSTNESS: holds for ANY equal dressing (EXACT)
+  [PASS] (C1) ANY common dressing f(u_0): y_t/g_s = y_t_bare/g_bare (u_0-free)  --  f(u_0) cancels regardless of its form
+  [PASS] (C2) equal n_link=1: ratio = y_t_bare/g_bare, u_0-free
+  [PASS] (C2) equal n_link=2: ratio = y_t_bare/g_bare, u_0-free
+  [PASS] (C2) equal n_link=3: ratio = y_t_bare/g_bare, u_0-free
+  [PASS] (C3 TEETH) unequal n_link (g_s:1, y_t:2): u_0 SURVIVES (no cancellation)  --  ratio = y_t_bare/(g_bare*sqrt(u_0))  (carries 1/sqrt(u_0))
+  [PASS] (C4 TEETH) on-site Yukawa n=0 vs gauge n=1: u_0 SURVIVES (no cancellation)  --  ratio = sqrt(u_0)*y_t_bare/g_bare
+
+[BLOCK D] gauge-side grounding: staggered hopping vertex is single-link
+  [PASS] dU/deps|_0 = i a U0 (one power of the link)
+  [PASS] mass term is U-independent -> drops from D' (single-link survives)
+  [PASS] => staggered hopping vertex D' is single-link: n_link(g_s) = 1  --  matches operator-counting lemma S1
+
+[BLOCK E] residual (named) + broken-citation correction
+  [PASS] cited lines 213-256 / 311-312 exceed the 102-line no_go note (citation broken)  --  YT_EW_COLOR_PROJECTION_THEOREM = EW kappa-family NO-GO, not the CMT authority
+  [PASS] cancellation REDUCES to the single equality n_link(y_t) = n_link(g_s)  --  gauge side n_link=1 grounded (Block D); Yukawa side = named residual
+  [PASS] named admissions: LM mean-field scheme (U=u0 V); staggered-Dirac gate; H_unit single-link structure / same-1PI matching  --  framework-canonical; not discharged here
+
+==============================================================================
+SCORECARD:  PASS = 22   FAIL = 0
+==============================================================================
+
+----- stderr -----
+

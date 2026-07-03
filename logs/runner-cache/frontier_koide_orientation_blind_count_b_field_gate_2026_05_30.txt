@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_orientation_blind_count_b_field_gate_2026_05_30.py
+runner_sha256: 6340622af5826705f63ac9916d5d7a1245a7d600ba7100573bd077167d133547
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+
+================================================================================
+Note scope
+================================================================================
+[PASS] note contains marker: **Claim type:** bounded_theorem / open_gate
+[PASS] note contains marker: 2026-06-07 Boundary Retargeting
+[PASS] note contains marker: remains open and is not load-bearing for the direct local-support claim
+[PASS] note contains marker: B-coupling -> B-field bridge open
+[PASS] note contains marker: does not derive the charged-lepton Koide value
+[PASS] note contains marker: does not approve
+[PASS] note contains marker: does not claim that all possible routes are closed
+[PASS] note contains marker: source note; downstream status is decided by independent review
+[PASS] note omits non-native marker: Generated with
+[PASS] note omits non-native marker: source-note proposal only
+[PASS] note omits non-native marker: runner-cache
+[PASS] note omits non-native marker: actual_current_surface_status
+[PASS] note omits non-native marker: retained_bounded
+[PASS] note omits non-native marker: retained_no_go
+[PASS] note omits non-native marker: unaudited
+[PASS] note omits non-native marker: audited_FAILED
+[PASS] note omits non-native marker: A1+A2
+
+================================================================================
+Native Kähler triple on the b-plane
+================================================================================
+[PASS] J2^2 = -I  --  [[-1.0, 0.0], [0.0, -1.0]]
+[PASS] omega is antisymmetric  --  [[0.0, -6.0], [6.0, 0.0]]
+[PASS] omega is nondegenerate with determinant 36  --  det=36
+[PASS] omega = g J2
+
+================================================================================
+Conjugation flips orientation but preserves count
+================================================================================
+[PASS] c J2 c^-1 = -J2  --  [[0.0, 1.0], [-1.0, 0.0]]
+[PASS] c^T omega c = -omega  --  [[0.0, 6.0], [-6.0, 0.0]]
+[PASS] c^T g c = g  --  [[6.0, 0.0], [0.0, 6.0]]
+[PASS] rank count is dim(R^2)/2 = 1
+
+================================================================================
+Circulant Q formula
+================================================================================
+[PASS] trace(H) = 3a  --  3*a
+[PASS] trace(H^2) = 3a^2 + 6|b|^2  --  3*a**2 + 6*x**2 + 6*y**2
+[PASS] Q = (a^2 + 2|b|^2)/(3a^2)  --  (a**2 + 2*x**2 + 2*y**2)/(3*a**2)
+[PASS] Q = 2/3 at |b|^2/a^2 = 1/2  --  2/3
+
+================================================================================
+Action-order gate
+================================================================================
+[PASS] first-order b-plane phase space has one mode
+[PASS] static-coupling cotangent phase space has two modes
+[PASS] the two readings are distinct
+
+================================================================================
+Cooling jump is outside the native circulant algebra
+================================================================================
+[PASS] projection onto span{I,C,C^2} has zero norm  --  norm=1.001e-16
+[PASS] Hilbert-Schmidt residual fraction is one  --  fraction=1.000000000000
+
+================================================================================
+Kähler-Dirac form-degree block gate
+================================================================================
+[PASS] Lambda^1 subspace has dimension three  --  [3, 5, 6]
+[PASS] D_KD Lambda^1 -> Lambda^1 block is zero  --  max=0.000e+00
+
+TOTAL: PASS=36 FAIL=0
+VERDICT: bounded orientation-blind count and B-field local gate checks pass; the B-coupling to B-field bridge remains open.
+
+----- stderr -----
+

@@ -3,7 +3,7 @@ runner: scripts/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.p
 runner_sha256: faaee5449f356f3198a5507d013d8f534017bea27153ab6dd0df5b3b2f1dfb24
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.51
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 CHSH Tsirelson lattice-qubit audit companion

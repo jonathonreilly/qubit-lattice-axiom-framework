@@ -1,11 +1,38 @@
 ===== runner cache v1 =====
 runner: scripts/vector_sector_circular_orbit.py
-runner_sha256: 350bc715da992d8707acf19c176a896f87caac3787483c922127eb668a723d62
+runner_sha256: bf2aac9f653ac409f2c37ac239c5890bd25348e018ab0976acef89f0a59615f4
 timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.02
-status: timeout
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
 ----- stdout -----
+======================================================================
+VECTOR SECTOR: FROZEN FULL-HARNESS LOG VERIFIER
+source_log=logs/2026-04-06-vector-sector-circular-orbit.txt
+Use --recompute to run the original slow propagation harness.
+======================================================================
+PASS header present: frozen log identifies the vector-sector circular-orbit harness
+PASS s=0 null: zero source gives zero dy/dz
+PASS f=0 direction null: zero frequency gives CCW/CW equality
+PASS frequency sweep rows: rows=6 expected=6
+PASS frequency sign flip f=0.01: row=('0.01', '+0.013622', '+0.003631', '+0.014747', '-0.004868', 'YES')
+PASS frequency sign flip f=0.02: row=('0.02', '+0.008993', '+0.006964', '+0.010404', '-0.008384', 'YES')
+PASS frequency sign flip f=0.03: row=('0.03', '+0.004577', '+0.009554', '+0.005662', '-0.010501', 'YES')
+PASS frequency sign flip f=0.05: row=('0.05', '-0.003011', '+0.010485', '-0.002370', '-0.009674', 'YES')
+PASS frequency sign flip f=0.07: row=('0.07', '-0.006622', '+0.005564', '-0.005807', '-0.004059', 'YES')
+PASS high-frequency control f=0.10: row=('0.10', '-0.006344', '+0.000712', '-0.006003', '+0.001112', 'no')
+PASS phase averaged tiny DC: diff=+0.000012 DC=+0.000012
+PASS first harmonic dominates: amp=0.018419 ratio=1529
+PASS f-oddness rows: rows=3 expected=3
+PASS f-oddness sign flip f=0.01: dz(+f)=+0.003631 dz(-f)=-0.004868 flip=YES
+PASS f-oddness sign flip f=0.02: dz(+f)=+0.006964 dz(-f)=-0.008384 flip=YES
+PASS f-oddness sign flip f=0.05: dz(+f)=+0.010485 dz(-f)=-0.009674 flip=YES
+PASS time-order control: normal=+0.006964 cw=-0.008384 time_rev=+0.011769
+PASS family portability rows: rows=3 expected=3
+PASS family portability Fam1: dz_CCW=+0.006045 dz_CW=-0.008444 flip=YES
+PASS family portability Fam2: dz_CCW=+0.006014 dz_CW=-0.008814 flip=YES
+PASS family portability Fam3: dz_CCW=+0.006811 dz_CW=-0.008176 flip=YES
+SCORECARD PASS=21 FAIL=0
 
 ----- stderr -----
 

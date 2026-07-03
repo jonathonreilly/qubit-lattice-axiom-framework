@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_large_beta_gap_rung_six_bounded_2026_06_12.py
+runner_sha256: 35e8d94955262b978a120647e85497fc10d4ab5fe4c2261d6e5c47a35d9aa25d
+timeout_sec: 540
+exit_code: 0
+elapsed_sec: 180.16
+status: ok
+----- stdout -----
+Native gauge-transfer large-beta gap rung-six bounded runner
+MODE_MAX=360, TRUE_TOL=2e-08, ASYM_TOL=2e-09
+Half-slice scalar exp(beta/2) factors are scaled out in eigen-ratio computations.
+
+PASS: character authority states the six-neighbor source recurrence
+      checked source-character note markers
+PASS: dimension function is the exact spectral-edge harmonic function
+      checked 6 d_(p,q) = sum_neighbors d_neighbor on boundary and interior samples
+PASS: Wilson coefficient saddle constant is numerically the SU(3) value 3
+      samples=3.013186, 3.013157, 3.013162, 3.013014, 3.012702, 3.012583, 3.011483
+TRUE LARGE-BETA HALF-SLICE RATIOS
+coeff_table beta= 50 shell=36 states=1369 mode_max=360 elapsed=9.26s
+true beta= 50 s30=0.200348567623 s36=0.200348567762 spread=1.386e-10
+coeff_table beta= 60 shell=42 states=1849 mode_max=360 elapsed=13.28s
+true beta= 60 s36=0.199245299606 s42=0.199245299606 spread=6.896e-13
+coeff_table beta= 80 shell=50 states=2601 mode_max=360 elapsed=18.77s
+true beta= 80 s42=0.197873420918 s50=0.197873420919 spread=4.511e-13
+coeff_table beta=100 shell=60 states=3721 mode_max=360 elapsed=25.20s
+true beta=100 s50=0.197054136330 s60=0.197054136330 spread=5.523e-15
+coeff_table beta=140 shell=70 states=5041 mode_max=360 elapsed=33.21s
+true beta=140 s60=0.196121339772 s70=0.196121339772 spread=2.331e-15
+coeff_table beta=200 shell=80 states=6561 mode_max=360 elapsed=43.56s
+true beta=200 s70=0.195424212513 s80=0.195424212513 spread=2.073e-14
+
+true_extrapolation fit_1_over_beta2=0.193805817496 fit_1_over_beta3=0.193805813752 estimate=0.193805815624 error_proxy=3.744e-09
+
+PASS: requested true-ratio beta grid is shell-stable
+      max shell spread=1.386e-10
+PASS: true large-beta grid decreases from beta=50 through beta=200
+      values=0.200348567762, 0.199245299606, 0.197873420919, 0.197054136330, 0.196121339772, 0.195424212513
+PASS: true Richardson estimate lies below the beta=200 true ratio and below one
+      estimate=0.193805815624, beta200=0.195424212513
+SADDLE-REDUCED LARGE-BETA OPERATOR RATIOS
+analytic_reduced beta=100 shell= 60 value=0.195765410548
+analytic_reduced beta=200 shell= 80 value=0.194781049595
+analytic_reduced beta=400 shell=120 value=0.194292302716
+analytic_reduced beta=800 shell=180 value=0.194048778624
+
+analytic_reduced_extrapolation fit_1_over_beta2=0.193805832833 fit_1_over_beta3=0.193805817316 estimate=0.193805825074 error_proxy=1.552e-08
+
+PASS: saddle-reduced operator ratios decrease on the analytic grid
+      values=0.195765410548, 0.194781049595, 0.194292302716, 0.194048778624
+PASS: numerical and saddle-reduced limit estimates agree
+      true=0.193805815624, analytic=0.193805825074, discrepancy=9.450e-09
+FALSIFIER ROWS ON THE REDUCED OPERATOR
+falsifier beta=200 shell=80 correct=0.194781049595
+falsifier beta=200 shell=80 saddle_constant_2=0.267528715388
+falsifier beta=200 shell=80 J_adjacency_scale_1_over_5=0.165413156203
+
+PASS: wrong saddle constant changes the reduced limit row visibly
+      correct=0.194781049595, saddle_constant_2=0.267528715388
+PASS: wrong six-neighbor J normalization changes the reduced limit row visibly
+      correct=0.194781049595, J_scale_1/5=0.165413156203
+PASS: note contains status, object, limit, runner, cache, and caveat markers
+      checked required note markers
+PASS: one-hop authorities are canonical markdown links with no scratch dependency
+      checked authority-link forms and scratch-free scope
+PASS: note avoids overreach and forbidden physical-scope phrases
+      scanned banned phrase set
+
+TOTAL: PASS=13, FAIL=0
+
+----- stderr -----
+

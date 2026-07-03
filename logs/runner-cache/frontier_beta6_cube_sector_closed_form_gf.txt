@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/frontier_beta6_cube_sector_closed_form_gf.py
+runner_sha256: 21ccefca3120f882fef89b29a353d88c9253c7e8f890d9d1bc32c4b5117436e6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.83
+status: ok
+----- stdout -----
+[PASS] recurrence a_0,a_1,a_2 = 1,0,1/36
+[PASS] K' = J'/J has leading coefficient 1/18 (single-plaquette mean slope)
+[PASS] closed form reproduces d_5 = 1/472392 (m_5=4)  |  got 1/472392
+[PASS] closed form reproduces d_6 = 7/5668704 (m_6=42)  |  got 7/5668704
+[PASS] closed form reproduces d_7 = 5/17006112 (m_7=180)  |  got 5/17006112
+[PASS] closed form reproduces d_8 = 5/272097792 (m_8=405/2)  |  got 5/272097792
+[PASS] closed form reproduces the cube-sector PART of d_9 = -235/29386561536  |  got -235/29386561536 (m_9=-6345/4); NOT full d_9 (reopens at beta^9)
+[PASS] leading 72*(1/18)*(1/18)^5 = 4/18^5 = d_5
+[PASS] J(beta) > 0 sampled on [0,8] (real-axis positivity sanity check)
+[PASS] Newton J-zero witness |beta| = 8.2052  |  |beta|=8.205214
+[PASS] Newton J-zero witness arg = +-66.152 deg  |  arg=66.1519 deg
+[PASS] zero witness radius is > 6 (diagnostic only; not a zero-free-disk certificate)
+[PASS] SCOPE: closed form is the CUBE SECTOR only; full Delta reopens at beta^9 (GF(3) weight-10 nonempty, PR #2408) => NOT a closure of beta=6
+
+SCORECARD: PASS=13 FAIL=0
+
+----- stderr -----
+

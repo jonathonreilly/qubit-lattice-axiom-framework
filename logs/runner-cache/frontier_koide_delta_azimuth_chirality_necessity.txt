@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_delta_azimuth_chirality_necessity.py
+runner_sha256: bd0fe51946cd16ccbc4864250c780f05aa232457d613c81cfb0a08ae89d49078
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 16.51
+status: ok
+----- stdout -----
+PASS: L_permutation_action_delta_to_minus_delta_is_(1 2) max|p(-d)-(12)p(d)|=6.66e-16
+PASS: L_amplitude_permutation_action max=1.78e-15
+PASS: T_mirror_degeneracy_var max|F(+d)-F(-d)|=5.00e-16
+PASS: T_mirror_degeneracy_purity max|F(+d)-F(-d)|=6.66e-16
+PASS: T_mirror_degeneracy_shannon max|F(+d)-F(-d)|=6.66e-16
+PASS: T_mirror_degeneracy_p3 max|F(+d)-F(-d)|=8.88e-16
+PASS: T_mirror_degeneracy_kl_unif max|F(+d)-F(-d)|=7.77e-16
+PASS: T_mirror_at_physical_var F(+2/9)=0.560235 F(-2/9)=0.560235
+PASS: T_mirror_at_physical_purity F(+2/9)=0.893569 F(-2/9)=0.893569
+PASS: T_mirror_at_physical_shannon F(+2/9)=0.218604 F(-2/9)=0.218604
+PASS: T_mirror_at_physical_p3 F(+2/9)=0.840396 F(-2/9)=0.840396
+PASS: T_mirror_at_physical_kl_unif F(+2/9)=0.880008 F(-2/9)=0.880008
+PASS: crit_pi_rational_not_two9_var crit/[0,pi/2]=[np.float64(0.333)] pi
+PASS: crit_pi_rational_not_two9_purity crit/[0,pi/2]=[np.float64(0.333)] pi
+PASS: crit_pi_rational_not_two9_shannon crit/[0,pi/2]=[np.float64(0.333)] pi
+PASS: crit_pi_rational_not_two9_p3 crit/[0,pi/2]=[np.float64(0.333)] pi
+PASS: crit_pi_rational_not_two9_kl_unif crit/[0,pi/2]=[np.float64(0.333)] pi
+PASS: N_witness_is_chirality_odd max|A(-d)+A(d)|=8.33e-16
+PASS: N_witness_distinguishes_plus_minus_2_9 A(+2/9)=-0.048356 A(-2/9)=+0.048356
+PASS: N_plus_minus_2_9_are_distinct_configs max|p(+2/9)-p(-2/9)|=0.0558
+PASS: control_var_is_even max|F(-d)-F(d)|=5.00e-16
+PASS: control_purity_is_even max|F(-d)-F(d)|=6.66e-16
+PASS: control_shannon_is_even max|F(-d)-F(d)|=6.66e-16
+PASS: control_p3_is_even max|F(-d)-F(d)|=8.88e-16
+PASS: control_kl_unif_is_even max|F(-d)-F(d)|=7.77e-16
+PASS: V_L3_1_2_equals_two_ninths L_3(1,2)=0.2222222222
+PASS: V_eta_defect_family_d2m1_over_12d L_d(1,d-1)=(d^2-1)/(12d)
+PASS: V_period1_meets_rankfraction_only_at_d3 (d^2-1)/12d = (d-1)/d^2 only at d=3
+PASS: C_cone_Q_two_thirds_all_delta max|Q-2/3|=6.66e-16
+PASS: C_fisher_polar_pi_over_4_positive_branch max|theta_p-pi/4|=3.33e-16 over 19 positive-branch nodes
+PASS: R_comparator_delta_pdg_near_bare_two9 delta_PDG=0.222230 rad, 2/9=0.222222
+PASS: R_physical_is_bare_radian_not_index_phase index phase 2pi/9=0.698132 (factor-pi radian admission, untouched)
+
+TOTAL: PASS=32 FAIL=0
+VERDICT: Brannen-delta azimuth selection on the C_3 records simplex requires a chirality-odd functional; every achiral records/Born functional is mirror-degenerate and cannot select the chiral physical azimuth. Magnitude 2/9=L_3(1,2) and the radian unit remain separate residuals; the cone r=1/2 firewall is untouched.
+
+----- stderr -----
+

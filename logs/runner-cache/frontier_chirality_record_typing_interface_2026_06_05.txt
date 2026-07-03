@@ -1,0 +1,88 @@
+===== runner cache v1 =====
+runner: scripts/frontier_chirality_record_typing_interface_2026_06_05.py
+runner_sha256: 53402fdc76738f4f2fc057152f444e0ed54bcbf94e8311b3e0dbe90e0ef6b03f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+==============================================================================
+CHIRALITY / RECORD TYPING INTERFACE
+bounded-support / negative-route-pruning runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Signed spectrum does not imply chirality
+------------------------------------------------------------------------------
+  [PASS] grading squares to identity
+  [PASS] signed commuting operator is Hermitian
+  [PASS] signed commuting operator has a negative eigenvalue ([-1, 2, 3])
+  [PASS] signed commuting operator commutes with grading
+  [PASS] signed commuting operator does not anticommute with grading
+  [PASS] therefore signed spectrum alone is not chirality
+
+------------------------------------------------------------------------------
+2. Anticommuting chiral operator is a different condition
+------------------------------------------------------------------------------
+  [PASS] chiral test operator is Hermitian
+  [PASS] chiral test operator anticommutes with grading
+  [PASS] chiral test operator need not commute with grading
+  [PASS] chiral spectrum is sign-symmetric with zero ([-1, 0, 1])
+  [PASS] chiral eigenvalue sum is zero
+  [PASS] commuting signed class differs from anticommuting class
+
+------------------------------------------------------------------------------
+3. Signed vs absolute readout choices
+------------------------------------------------------------------------------
+  [PASS] signed readout is real-valued
+  [PASS] absolute readout is real-valued
+  [PASS] signed and absolute readouts differ ([-2, 1, 3] vs [2, 1, 3])
+  [PASS] Hermiticity supplies real eigenvalues, not the readout choice
+  [PASS] signed and absolute Q readouts can differ (7/2 vs 7/18)
+  [PASS] readout difference is not a post-record count update
+
+------------------------------------------------------------------------------
+4. Typed interface disjointness
+------------------------------------------------------------------------------
+  [PASS] post-record output set has five entries
+  [PASS] chirality output set has five entries
+  [PASS] bridge output set has three entries
+  [PASS] post-record outputs do not include chirality outputs
+  [PASS] post-record outputs do not include production bridge outputs
+  [PASS] signed labels are post-record-consumable
+  [PASS] anticommutation remains carrier output
+  [PASS] CAR/JW frame remains carrier output
+
+------------------------------------------------------------------------------
+5. Route-pruning ledger
+------------------------------------------------------------------------------
+  [PASS] six routes classified
+  [PASS] signed_eigenvalues_imply_chirality: pruned
+  [PASS] hermiticity_forces_signed_readout: pruned
+  [PASS] post_record_counts_select_chiral_weighting: pruned
+  [PASS] ungraded_qubits_select_car: pruned
+  [PASS] emergent_spacetime_chirality_transports_generation: pruned
+  [PASS] positive composition remains open, not closed
+
+------------------------------------------------------------------------------
+6. Note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/CHIRALITY_RECORD_TYPING_INTERFACE_2026-06-05.md)
+  [PASS] note contains marker: Claim type:** meta support map
+  [PASS] note contains marker: Trace class:** negative route-pruning support map
+  [PASS] note contains marker: No-Go Discipline Gate (N1-N8)
+  [PASS] note contains marker: Does not derive chirality.
+  [PASS] note contains marker: Does not select signed over absolute square-root readout.
+  [PASS] note contains marker: Does not select a Koide/generation dial location.
+  [PASS] forbidden wording absent: chirality closure
+  [PASS] forbidden wording absent: signed readout closure
+  [PASS] forbidden wording absent: CAR closure
+  [PASS] forbidden wording absent: dial-location closure
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=44 FAIL=0
+
+----- stderr -----
+

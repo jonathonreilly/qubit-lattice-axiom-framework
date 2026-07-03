@@ -1,40 +1,40 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_massless_vector_polarization_count_from_lorentz_and_gauge_2026_05_28.py
-runner_sha256: f2241f25d80abc5e55b50377136d46b5e09be070f619a580d1939d3e6b333d8c
+runner_sha256: 9597e6ec9e936e181e71f7f5d9146a485723ccc9f88efcd3ea9221299aee7e25
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28
-Goal: sympy verification of 4 - 1 - 1 = 2 rank arithmetic
-       on a four-component polarization vector at null momentum
+Goal: sympy verification of dim_C ker(ell)/span(k) = 4 - 1 - 1 = 2
+       for a nonzero row ell and nonzero k in ker(ell)
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
-Part 1 (R1-R4): rank arithmetic on the polarization quotient
+Part 1 (R1-R4): abstract rank arithmetic on ker(ell)/span(k)
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (R1) Lorentz-vector eps^mu has 4 complex components on C^4  (shape = (4, 1))
-  [PASS (A)] (R2a) Lorenz-gauge constraint matrix has shape (1, 4)
-  [PASS (A)] (R2b) Constraint rank = 1 at canonical null k^mu = (k_z, 0, 0, k_z)  (rank = 1)
-  [PASS (A)] (R3a) Residual gauge orbit shift direction k^mu has rank 1  (rank = 1)
-  [PASS (A)] (R3b) constraint row times shift direction = k_mu k^mu = 0  (row*k = 0)
-  [PASS (A)] (R4) Quotient dimension = 4 - 1 - 1 = 2  (4 - 1 - 1 = 2)
+  [PASS (A)] (R1) vector eps has 4 complex components on C^4  (shape = (4, 1))
+  [PASS (A)] (R2a) abstract row ell has shape (1, 4)
+  [PASS (A)] (R2b) row rank = 1 in the canonical model ell=(k_z,0,0,-k_z)  (rank = 1)
+  [PASS (A)] (R3a) quotient direction k has rank 1  (rank = 1)
+  [PASS (A)] (R3b) row ell times quotient direction k equals 0  (row*k = 0)
+  [PASS (A)] (R4) abstract quotient dimension = 4 - 1 - 1 = 2  (4 - 1 - 1 = 2)
 
 ----------------------------------------------------------------------------------------
-Part 2 (R5): explicit transverse basis at canonical null k^mu
+Part 2 (R5): explicit quotient representatives in the canonical model
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (R5a) Constraint at canonical k^mu: omega*(e0 - e3) = 0 (i.e. e0 = e3)  (constraint = omega*(e0 - e3))
-  [PASS (A)] (R5b) eps_1^mu = (0, 1, 0, 0) satisfies k_mu eps^mu = 0  (constraint(eps_1) = 0)
-  [PASS (A)] (R5c) eps_2^mu = (0, 0, 1, 0) satisfies k_mu eps^mu = 0  (constraint(eps_2) = 0)
+  [PASS (A)] (R5a) canonical row: omega*(e0 - e3) = 0 (i.e. e0 = e3)  (constraint = omega*(e0 - e3))
+  [PASS (A)] (R5b) representative eps_1 = (0, 1, 0, 0) lies in ker(ell)  (constraint(eps_1) = 0)
+  [PASS (A)] (R5c) representative eps_2 = (0, 0, 1, 0) lies in ker(ell)  (constraint(eps_2) = 0)
   [PASS (A)] (R5d) eps_1, eps_2 linearly independent (rank 2)  (rank = 2)
-  [PASS (A)] (R5e) eps_1 not parallel to k^mu (rank-2 with k^mu)
-  [PASS (A)] (R5f) eps_2 not parallel to k^mu (rank-2 with k^mu)
+  [PASS (A)] (R5e) eps_1 not parallel to k (rank-2 with k)
+  [PASS (A)] (R5f) eps_2 not parallel to k (rank-2 with k)
 
 ----------------------------------------------------------------------------------------
-Part 3 (R6): helicity basis epsilon_pm = (eps_1 +- i eps_2)/sqrt(2)
+Part 3 (R6): optional complex-basis diagnostic
 ----------------------------------------------------------------------------------------
   [PASS (A)] (R6a) Helicity-(+1) polarization satisfies k_mu eps_+^mu = 0
   [PASS (A)] (R6b) Helicity-(-1) polarization satisfies k_mu eps_-^mu = 0
@@ -45,7 +45,7 @@ Part 3 (R6): helicity basis epsilon_pm = (eps_1 +- i eps_2)/sqrt(2)
   [PASS (A)] (R6e') R_z(theta) eps_- acts as opposite U(1) phase: e2
 
 ----------------------------------------------------------------------------------------
-Part 4 (R7): gauge-group independence
+Part 4 (R7): non-load-bearing multiplicity diagnostic
 ----------------------------------------------------------------------------------------
   [PASS (A)] (R7a-N1) Gauge-group SU(1)/U(1) adjoint count = 1
   [PASS (A)] (R7b-N1) Total polarizations = 1 * 2 = 2
@@ -55,30 +55,26 @@ Part 4 (R7): gauge-group independence
   [PASS (A)] (R7b-N3) Total polarizations = 8 * 2 = 16
 
 ----------------------------------------------------------------------------------------
-Part 5 (R8): negative check — massive case gives 3, not 2
+Part 5 (R8): non-load-bearing contrast when quotient direction is absent
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (R8a) Massive case k^2 = m^2 > 0 (non-null)
-  [PASS (A)] (R8b) Massive polarization count = 4 - 1 - 0 = 3  (count = 3)
-  [PASS (A)] (R8c) Massless case (k^2 = 0): 2 polarizations
-  [PASS (A)] (R8d) Massive case (k^2 != 0): 3 polarizations
-  [PASS (A)] (R8e) Difference = 1 (the longitudinal mode)
+  [PASS (A)] (R8a) diagnostic nonzero scalar m^2 is not zero
+  [PASS (A)] (R8b) no-quotient contrast count = 4 - 1 - 0 = 3  (count = 3)
+  [PASS (A)] (R8c) quotient case has dimension 2
+  [PASS (A)] (R8d) no-quotient contrast has dimension 3
+  [PASS (A)] (R8e) contrast difference is 1
 
 ----------------------------------------------------------------------------------------
 Part 6 (R9): note structure and forbidden-import scan
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (R9-structure) note contains phrase: 'Claim type:** bounded_theorem...'
-  [PASS (A)] (R9-structure) note contains phrase: 'Source-note proposal disclaimer...'
-  [PASS (A)] (R9-structure) note contains phrase: 'Wave equation...'
-  [PASS (A)] (R9-structure) note contains phrase: 'Gauge redundancy...'
-  [PASS (A)] (R9-structure) note contains phrase: 'Lorenz-gauge condition...'
-  [PASS (A)] (R9-structure) note contains phrase: '4                                  − 1            − 1...'
-  [PASS (A)] (R9-structure) note contains phrase: 'Admitted-context inputs...'
-  [PASS (A)] (R9-structure) note contains phrase: 'Forbidden imports check...'
-  [PASS (A)] (R9-structure) note contains phrase: 'What this theorem closes...'
-  [PASS (A)] (R9-structure) note contains phrase: 'What this theorem does NOT close...'
-  [PASS (A)] (R9-structure) note contains phrase: 'Counterfactual Pass record...'
-  [PASS (A)] (R9-structure) note contains phrase: 'Independent audit handoff...'
-  [PASS (A)] (R9-structure) note contains phrase: 'G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVE...'
+  [PASS (A)] (R9-structure) note contains phrase: 'Claim type:** bounded_support...'
+  [PASS (A)] (R9-structure) note contains phrase: 'Scope Repair...'
+  [PASS (A)] (R9-structure) note contains phrase: 'dim_C ker(ell) / span_C{k} = 2...'
+  [PASS (A)] (R9-structure) note contains phrase: '4 - 1 - 1 = 2...'
+  [PASS (A)] (R9-structure) note contains phrase: 'What This Supports...'
+  [PASS (A)] (R9-structure) note contains phrase: 'What This Does Not Close...'
+  [PASS (A)] (R9-structure) note contains phrase: 'Load-Bearing Step...'
+  [PASS (A)] (R9-structure) note contains phrase: 'Independent Audit Handoff...'
+  [PASS (A)] (R9-structure) note contains phrase: 'Physical massless-vector interpretation is outside...'
   [PASS (A)] (R9-scan) proof section is present
   [PASS (A)] (R9-scan) proof does not consume 'PDG'
   [PASS (A)] (R9-scan) proof does not consume 'fitted'
@@ -93,25 +89,20 @@ Part 6 (R9): note structure and forbidden-import scan
 Summary
 ----------------------------------------------------------------------------------------
   Verified at exact sympy precision:
-    (R1) Lorentz-vector eps^mu on C^4 has 4 components.
-    (R2) Lorenz-gauge constraint k_mu eps^mu = 0 has rank 1.
-    (R3) Residual gauge orbit eps^mu ~ eps^mu + c k^mu has rank 1;
-         k^mu lies in the constraint kernel on the null shell.
-    (R4) Quotient dim = 4 - 1 - 1 = 2 polarizations per momentum.
-    (R5) Explicit transverse basis (0,1,0,0), (0,0,1,0) at k^mu =
-         (omega, 0, 0, omega).
-    (R6) Helicity basis (eps_1 +- i eps_2)/sqrt(2) carries +-1 under
-         rotations about the propagation axis.
-    (R7) Gauge-group independence: per-boson count = 2 for U(1),
-         SU(2), SU(3), etc.
-    (R8) Negative check: massive case (k^2 != 0) gives 3, not 2.
+    (R1) A four-component vector eps in C^4 has 4 components.
+    (R2) The nonzero row ell has rank 1.
+    (R3) The nonzero direction k in ker(ell) has rank 1.
+    (R4) Quotient dim_C ker(ell)/span(k) = 4 - 1 - 1 = 2.
+    (R5) Explicit representatives (0,1,0,0), (0,0,1,0) in the canonical model.
+    (R6-R8) Former physics-language checks are diagnostics only.
     (R9) Note structure + forbidden-import scan.
 
 ========================================================================================
-TOTAL: PASS=52, FAIL=0
-VERDICT: bounded narrow theorem rank arithmetic verified at exact precision;
-         massless vector polarization count = 4 - 1 - 1 = 2 follows from
-         (L1)-(L3) on admitted-context (AC1)-(AC5).
+TOTAL: PASS=48, FAIL=0
+VERDICT: bounded abstract quotient identity verified at exact precision;
+         dim_C ker(ell)/span(k) = 2 for a nonzero row ell and nonzero
+         k in ker(ell). Physical massless-vector interpretation is outside
+         this row's load-bearing scope.
 ========================================================================================
 
 ----- stderr -----

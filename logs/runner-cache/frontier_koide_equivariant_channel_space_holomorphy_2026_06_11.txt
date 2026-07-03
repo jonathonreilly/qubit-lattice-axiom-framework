@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_equivariant_channel_space_holomorphy_2026_06_11.py
+runner_sha256: e824a3b5107045f8ea9b204cec92b6803ee41185398f18ffb803c492c4a1b0c1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.54
+status: ok
+----- stdout -----
+========================================================================
+Koide equivariant channel space -- channel-independent holomorphy
+box: Z^3 torus, L = 4 (periodic sector; corner momenta exact)
+========================================================================
+
+--- A. surface reconstruction
+[PASS] (01) staggered surface reconstructed: D real antisymmetric, dim ker D = 8, exact corner basis, Hamming grading 1+3+3+1
+[PASS] (02) the lattice C_3[111] rotation restricts to an exact integer permutation P8 on the corner basis, P8^3 = I
+
+--- B. the complete C_3-equivariant channel space
+[PASS] (03) isotype multiplicities of the realized C_3 on the corner space: (trivial, omega, omega-bar) = (4, 2, 2) (exact projector traces) -- channel space = M_4 + M_2 + M_2  [traces = [4, 2, 2]]
+[PASS] (04) commutant dimension over C = 24 = 4^2 + 2^2 + 2^2 (nullity of the commutator map, computed)  [computed nullity = 24]
+[PASS] (05) explicit INTEGER basis of the channel space: the 24 orbit-sum matrices commute with P8 and are linearly independent
+
+--- C. every equivariant channel is lattice-realizable
+[PASS] (06) the staggered phase eps(x) restricts to the corner-label COMPLEMENT (hw_k <-> hw_(3-k): native hw=1 <-> hw=2 mixing channel), and eps_mu(x) to the bit-mu toggles (exact integer matrices)
+[PASS] (07) lattice realizability: translation/eps_mu monomials span ALL of M_8 on the corner sector (rank 64), and their C_3 averages (with U_R powers) span the FULL 24-dim channel space -- every equivariant channel is realizable by lattice-built operators  [rank(monomials) = 64, rank(averaged) = 24]
+
+--- D. isotype blocks, exact factorization, holomorphy
+[PASS] (08) exact isotype basis V: unitary, block-diagonalizes P8 to diag(1,1,1,1, w,w, wbar,wbar) with w a primitive cube root (omega-bar columns DEFINED as conjugates of omega columns)
+[PASS] (09) EVERY channel basis element is block-diagonal (A4, beta, gamma) in the isotype basis: all off-isotype entries are exactly zero (24 x 48 symbolic entries)
+[PASS] (10) K-orbit pairing, channel-independent: complex conjugation maps every channel's blocks (A4, beta, gamma) -> (conj A4, conj gamma, conj beta) -- the omega/omega-bar doublet blocks are one K-orbit for EVERY channel
+[PASS] (11) exact factorization det(A|ker) = det(A4) det(beta) det(gamma) at 3 exact rational/complex parameter points (full 8x8 determinant vs block product)
+[PASS] (12) channel-independent holomorphy: the channel space is the C-span of INTEGER matrices, so for EVERY channel the corner factor is a POLYNOMIAL in the channel parameters (det beta, det gamma computed symbolically over all 24 parameters: no conjugate appears) -- the first-order measure never supplies count-twice
+RESIDUAL (declared-open): bilinear (free/quadratic) matter actions only: interacting or beyond-bilinear couplings are outside this classification.
+RESIDUAL (declared-open): the C_3 carrier premise scopes the channel space: couplings not commuting with the realized C_3 break the generation carrier and are excluded by the gate-note species surface, not by this runner.
+
+--- E. antiunitary tying classes: K-real and Hermitian sections
+[PASS] (13) K-real section (real channel parameters): gamma = conj(beta) EXACTLY for every channel, and the doublet factor becomes det(beta) conj(det beta) = |det beta|^2 -- the modulus appears on the K-real section, channel-independently
+[PASS] (14) Hermitian section: transpose permutes the integer channel basis (A+ = A ties theta_i = conj theta_tau(i), blockwise Hermitian); a Hermitian-restricted doublet block [[p,z],[zbar,q]] carries the in-block count-twice term (Wirtinger d^2 det/dz dzbar = -1), while the unrestricted block det is conjugate-free
+[PASS] (15) block01's rotation channel is the scalar (circulant) instance: beta = lam_omega * I, gamma = lam_omegabar * I, and the block factorization reproduces the landed (a+b+c)^2 det3^2 identity exactly; its K-real line c = conj(b), a real is the channel-space K-real section
+[PASS] (16) the native eps-mixing (hw=1 <-> hw=2) channel family is equivariant with off-diagonal doublet blocks; UNRESTRICTED it is holomorphic (det beta = -mu mu', conjugate-free); its HERMITIAN point ties mu' = conj(mu) and det beta = -|mu|^2 -- the 2026-06-08 Hermitian-corner |det M|^2 structure is the K-tied point of a holomorphic channel family, not a measure output
+[PASS] (17) full-surface confirmation: det(D + tA) leading behaviour matches the corner determinant for a coupling INCLUDING the native eps hw-mixing channel (ratio of two parameter points)  [|ratio mismatch| = 5.70e-06]
+RESIDUAL (declared-open): which reading section is physical (unrestricted holomorphic with K-orbit outcomes vs an antiunitary-tied section) is NOT decided here: it is the standing occupancy/K-reality selection -- the named owner-decision premise surface of the 2026-06-09 occupancy note and the 2026-06-02 custody note. Nothing is adopted by this runner.
+RESIDUAL (declared-open): inherited gate-note residuals remain at their declared grades (kinetic-class premise, spin-statistics support tier, boundary-holonomy convention, AC_phi_lambda labeling convention).
+
+TOTAL: PASS=17 FAIL=0
+VERDICT: the COMPLETE C_3-equivariant bilinear channel space on the corner sector is M_4 + M_2 + M_2 (24-dim, fully lattice-realizable, including native hw=1<->hw=2 eps-mixing channels); for EVERY channel the first-order corner output is a polynomial in the channel parameters (holomorphy is channel-independent); count-twice/modulus structure arises exactly on antiunitary-tied parameter sections (K-real: gamma = conj beta -> |det beta|^2; Hermitian: in-block z zbar), recovering block01's c = conj(b) line and the 2026-06-08 |det M|^2 object as instances. No premise adopted; no audit status set.
+
+----- stderr -----
+

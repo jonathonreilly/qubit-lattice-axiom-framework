@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_qg_canonical_refinement_net.py
+runner_sha256: 985f76c963489edbfc8f910fb91fc13740f1dcc3d1bf62d0a706ccf8fde63c79
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+[EXACT] PASS: the branch already contains exact discrete GR, exact finite-atlas patching, exact UV-finite partition density, and exact projective Schur closure
+    the geometric theorem is built on already-closed discrete GR, atlas patching, partition density, and Schur coarse-graining ingredients
+[EXACT] PASS: the first spatial refinement step on `PL S^3` is canonical: barycentric refinement of `∂Δ^4` covers each coarse vertex-star and refines all coarse chart overlaps
+    fine spatial chart count=30, min fine charts covering a coarse vertex-star=15, overlap hits=25/25
+[EXACT] PASS: dyadic time subdivision gives an exact directed refinement net with composable parent maps
+    max dyadic parent-composition error=0.000e+00
+[EXACT] PASS: local stationary sections and raw partition scalars satisfy exact refinement cocycles on the barycentric-dyadic atlas net
+    max section cocycle error=4.441e-16, max raw partition cocycle error=3.553e-14, max density invariance error=3.553e-15
+[EXACT] PASS: once the canonical geometric refinement maps are chosen, the exact Schur/projective theorem applies canonically to the induced coarse/fine split
+    canonical Schur coarse operator error=3.331e-15, canonical Schur coarse source error=1.665e-16
+[EXACT] PASS: the exact discrete partition-density and stationary-section family therefore forms a canonical geometric refinement net on the project route
+    barycentric spatial refinement, dyadic time refinement, exact cocycle pullback, and exact Schur pushforward together close the geometric net theorem
+UNIVERSAL QG CANONICAL GEOMETRIC REFINEMENT NET
+==============================================================================
+fine spatial chart count           = 30
+min coarse-star cover count        = 15
+overlap refinement hits            = 25/25
+max dyadic composition error       = 0.000e+00
+max section cocycle error          = 4.441e-16
+max raw partition cocycle error    = 3.553e-14
+max density invariance error       = 3.553e-15
+canonical Schur coarse op error    = 3.331e-15
+canonical Schur coarse source err  = 1.665e-16
+
+Verdict:
+The exact discrete partition-density and stationary-section family on the project route now sits on a canonical geometric refinement net: barycentric spatial refinement of the minimal `PL S^3` boundary complex together with dyadic time subdivision. Local density and section data pull back exactly along this net, and the already-proved Schur theorem supplies the exact projective pushforward once a coarse/fine split is taken.
+The remaining stronger continuum/QG issue is therefore no longer the existence of a geometric refinement net on the discrete route. It is the interpretation of the resulting canonical inverse/projective family as a continuum measure/solution theorem.
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASS=6 FAIL=0 TOTAL=6
+
+----- stderr -----
+

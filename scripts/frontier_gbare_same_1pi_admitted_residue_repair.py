@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
-"""Admitted-residue coefficient algebra for the two-Ward g_bare route.
+"""Conditional residue coefficient algebra for the two-Ward g_bare route.
 
 This runner checks only the narrow repaired claim:
 
   * retained Rep-B input F_Htt^(0)^2 = 1/6;
   * admitted same-1PI residue identity F_Htt^(0)^2 = g_bare^2/(2 N_c);
   * exact rational consequence g_bare = 1 on the positive branch;
-  * source text keeps the residue premise conditional.
+  * source text keeps the residue premise conditional;
+  * exact residue-normalization obstruction: current cited inputs allow an
+    undetermined same-direction multiplier R(g_bare), so g_bare = 1 is pinned
+    only after adding the extra normalization R(g_bare) = 1.
+  * actual-surface scope lock: this packet is a conditional map plus
+    no-admission obstruction, not an unconditional pinning theorem.
 """
 
 from __future__ import annotations
@@ -48,19 +53,31 @@ def section(title: str) -> None:
 def part0_source_firewall() -> None:
     section("PART 0: SOURCE FIREWALL")
     note = NOTE_PATH.read_text(encoding="utf-8")
+    flat_note = " ".join(note.split())
     source = Path(__file__).read_text(encoding="utf-8")
 
     required_note_phrases = [
+        "**Claim type:** bounded_theorem",
         "conditional-use firewall",
         "conditional Path-2 support theorem",
+        "actual-surface scope lock",
+        "not an unconditional pinning theorem",
         "H_unit-residue admission",
+        "residue-normalization obstruction",
+        "residue-normalization degree of freedom",
+        "free multiplier family `R(g_bare)=g_bare^2`",
+        "R(g_bare)",
+        "Downstream firewall",
+        "They may not cite it as an actual-surface theorem deriving `g_bare = 1`",
+        "present packet cannot derive `g_bare = 1`",
+        "not an actual-surface pinning theorem",
         "This note does not derive the complete same-projected 1PI exhaustion theorem",
         "The `g_bare = 1` closure is **conditional on the H_unit-residue",
         "does not prove the missing same-projected 1PI exhaustion bridge",
         RUNNER_PATH,
     ]
     for phrase in required_note_phrases:
-        check(f"source note contains boundary phrase: {phrase}", phrase in note)
+        check(f"source note contains boundary phrase: {phrase}", phrase in flat_note)
 
     forbidden_note_phrases = [
         "This proves the theorem.",
@@ -68,9 +85,11 @@ def part0_source_firewall() -> None:
         "cannot represent different quantities",
         "H_unit-residue is the complete same-projected 1PI",
         "promoted to retained",
+        "R(g_bare) is fixed by D17",
+        "This packet proves an actual-surface theorem deriving `g_bare = 1`",
     ]
     for phrase in forbidden_note_phrases:
-        check(f"source note excludes overclaim phrase: {phrase}", phrase not in note)
+        check(f"source note excludes overclaim phrase: {phrase}", phrase not in flat_note)
 
     forbidden_runner_phrases = [
         "observ" + "ed",
@@ -116,6 +135,53 @@ def part1_exact_coefficient_algebra() -> None:
         )
 
 
+def part2_residue_normalization_obstruction() -> None:
+    section("PART 2: RESIDUE-NORMALIZATION OBSTRUCTION")
+
+    n_c = Fraction(3)
+    f_htt_squared = Fraction(1, 6)
+    note = NOTE_PATH.read_text(encoding="utf-8")
+    flat_note = " ".join(note.split())
+
+    check(
+        "source note states D17 fixes direction, not scalar residue multiplier",
+        "D17 rules out" in flat_note
+        and "operator direction" in flat_note
+        and "does not prove that the coefficient" in flat_note,
+    )
+    check(
+        "source note identifies R(g_bare)=1 as the extra bridge",
+        "If the H_unit-residue admission supplies the extra normalization" in flat_note
+        and "`R(g_bare) = 1`" in flat_note,
+    )
+
+    # Canonical-surface agreement only enforces R(1)=1.
+    r_at_one = Fraction(1) ** 2
+    check("free multiplier family R(g)=g^2 obeys canonical R(1)=1", r_at_one == 1)
+
+    for sample in [Fraction(1, 2), Fraction(1), Fraction(2), Fraction(3), Fraction(7, 11)]:
+        rep_a = sample**2 / (Fraction(2) * n_c)
+        residue_multiplier = sample**2
+        rep_b_general = residue_multiplier * f_htt_squared
+        check(
+            f"R(g)=g^2 makes same-direction Rep-B_R equal Rep A at g={sample}",
+            rep_b_general == rep_a,
+            f"R={residue_multiplier}, B_R={rep_b_general}, A={rep_a}",
+        )
+
+    # In contrast, the constant multiplier R(g)=1 is exactly the H_unit-residue
+    # admission and pins only the canonical positive branch.
+    for sample in [Fraction(1, 2), Fraction(1), Fraction(2), Fraction(3), Fraction(7, 11)]:
+        rep_a = sample**2 / (Fraction(2) * n_c)
+        rep_b_admitted = f_htt_squared
+        expected = sample == 1
+        check(
+            f"constant R(g)=1 equality holds iff g=1 for sample g={sample}",
+            (rep_a == rep_b_admitted) == expected,
+            f"A={rep_a}, B_admitted={rep_b_admitted}",
+        )
+
+
 def main() -> int:
     print("Admitted-residue same-1PI g_bare repair")
     print(f"Claim: {CLAIM_ID}")
@@ -123,6 +189,7 @@ def main() -> int:
 
     part0_source_firewall()
     part1_exact_coefficient_algebra()
+    part2_residue_normalization_obstruction()
 
     print("\n" + "=" * 88)
     print("SUMMARY")

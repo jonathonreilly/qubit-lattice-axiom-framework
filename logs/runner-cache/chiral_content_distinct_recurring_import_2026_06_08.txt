@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/chiral_content_distinct_recurring_import_2026_06_08.py
+runner_sha256: fba33692436e28828394197f0f55b2207684f398232f518d574b137ebbe2c066
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+STAGGERED CHIRALITY, QUBIT PSEUDOSCALAR, AND GENERATION HANDEDNESS ARE DISTINCT
+========================================================================================
+[PASS] X1: staggered epsilon(x)=(-1)^{x+y+z} is REAL (K-even), a SPATIAL site-grading, and {epsilon,D}=0 for the NN Dirac D on a Z^3 torus (every NN hop links opposite-parity sites)
+       epsilon real & K-even; ||{epsilon,D}|| = 0.0e+00
+[PASS] X2: omega = sigma1 sigma2 sigma3 = i*I (Cl(3) pseudoscalar) is K-ODD (conj(omega)=-omega) and lives on the QUBIT -- NOT a real grading, NOT equal to the staggered epsilon
+       omega = [[1j, 0j], [0j, 1j]] (=i*I); K(omega)=-omega
+[PASS] X3: sign(Vandermonde) of a supplied C3 generation spectrum is REAL (K-even) and lives on the GENERATIONS -- a third object, different sector from epsilon (spatial) and omega (qubit)
+       Vandermonde = 7.5570 (real), sign = 1
+[PASS] X4 (the correction): {epsilon (K-even, spatial), omega (K-ODD, qubit), Vandermonde (K-even, generation)} are THREE DISTINCT objects (different K-parity AND sector) -> NOT one Z2; omega is K-odd and the generation Vandermonde is K-even, so they cannot be the same object
+       epsilon (staggered): spatial Z^3 grading, K-even; omega = sigma1sigma2sigma3: qubit pseudoscalar, K-odd; sign(Vandermonde): generation handedness, K-even
+[PASS] X5: the tested grading is BLIND to the chiral-vs-vector coupling choice -- [Gamma5, weak]=0 and the dressed connection (D.T, D.T.P_L, D.T.P_R) anticommutes with Gamma5 identically. The grading check supplies no selection rule for chiral gauging.
+       [Gamma5,weak]=0: True; vector/left/right dressings anticommute identically: True
+
+TOTAL: PASS=5 FAIL=0
+runner_check_breakdown = {A: 5, B: 0, C: 0, D: 0, total_pass: 5}
+VERDICT: the staggered epsilon (K-even, spatial), the Cl(3) pseudoscalar omega=iI (K-ODD,
+qubit), and the supplied generation Vandermonde sign (K-even, generation) are three distinct
+objects. They do not collapse into one orientation Z2. The finite grading/coupling check is
+blind to vector/left/right dressing, so it supplies no chiral-gauging selection rule. This is
+only a distinctness correction; it derives no chirality source, generation handedness, chiral
+gauging, action-form theorem, or fitted value.
+
+----- stderr -----
+

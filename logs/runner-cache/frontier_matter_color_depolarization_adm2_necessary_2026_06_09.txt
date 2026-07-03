@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/frontier_matter_color_depolarization_adm2_necessary_2026_06_09.py
+runner_sha256: 1cd37fe221e6317de1b8c1c8137ad09e7443e27f1d4c79c730d64c60a7511c6f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+Matter color depolarization is necessary for nonzero matter-current first-moment centrality
+Exact finite-dimensional algebra | no MC in the derivation path
+
+[generators] Gell-Mann normalization
+  PASS  gellmann_trace_orthonormal  Tr(lam_a lam_b)=2 delta_ab
+  PASS  generators_traceless  
+[E1] only Ad-invariant element of su(3) is 0
+  PASS  su3_commutant_is_scalars  commutant dim=1 (scalars); traceless commutant = {0}
+  PASS  adjoint_invariant_subspace_trivial  dim of Ad-invariant su(3) vectors = 0 (exact, no MC)
+[E0] nonzero gauge-covariant linear drift is traceless projection
+  PASS  equivariant_drift_is_one_dim  dim Hom_SU(3)(Herm(3),su(3)) = 1 (the traceless projection)
+  PASS  equivariant_drift_is_traceless_projection  su3 part of rho = su3 part of traceless(rho)
+[E2] E[H] = traceless(rho) for H = traceless(phi phi^dag), E[phi phi^dag]=rho
+  PASS  mean_force_equals_traceless_rho[t=0.0]  ||E[H]-traceless(rho)|| = 0.00e+00
+  PASS  mean_force_equals_traceless_rho[t=0.3]  ||E[H]-traceless(rho)|| = 2.78e-17
+  PASS  mean_force_equals_traceless_rho[t=0.7]  ||E[H]-traceless(rho)|| = 0.00e+00
+  PASS  mean_force_equals_traceless_rho[t=1.0]  ||E[H]-traceless(rho)|| = 0.00e+00
+[E3] Ad-invariant increment => mean=0 => traceless(rho)=0 => rho=I/3
+  PASS  unpolarized_has_zero_mean_force  rho=I/3: ||E[H]|| = 0.00e+00
+  PASS  polarized_has_nonzero_mean_force  every polarized rho gives a nonzero su(3) mean force => non-central increment
+[E4] ||traceless(rho)||_F^2 = Tr(rho^2) - 1/3, monotone in color purity
+  PASS  order_param_identity  ||traceless(rho)||^2 = purity - 1/3 (exact)
+  PASS  order_param_monotone_in_purity  strictly increasing; 0 iff rho=I/3
+[E5] CONVERSE (named isotropic-Gaussian model): covariance isotropic at I/3
+  PASS  covariance_isotropic_at_unpolarized  cov ~ 0.2222 I_8, eig spread 5.6e-17
+  PASS  covariance_anisotropy_monotone  aniso(t): 0.000, 0.579, 0.842, 0.951, 0.991, 1.000
+[E6] guard: necessary direction is first-moment and noise-model-independent
+  PASS  mean_force_model_independent  mean force = equivariant projection of rho, independent of noise model
+  PASS  equivariant_force_not_vacuously_zero  polarized equivariant mean force = 1.039 != 0
+
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

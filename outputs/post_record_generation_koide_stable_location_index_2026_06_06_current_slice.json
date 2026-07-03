@@ -1,0 +1,1102 @@
+{
+  "claim_id": "post_record_generation_koide_stable_location_index_2026-06-06",
+  "ledger_sha256": "6b9b3104d6313a9a35ab492b6f8f8c7d8c140e07d5f09ab92b5dd85999b29c19",
+  "rows": [
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
+      "selector_location_class": "measure_weight_or_source_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "bae_u1b_six_ray_dirac_measure_note_2026-05-17",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/BAE_U1B_SIX_RAY_DIRAC_MEASURE_NOTE_2026-05-17.md",
+      "selector_location_class": "measure_weight_or_source_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "charged_lepton_mass_hierarchy_review_note_2026-04-17",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "ckm_bernoulli_two_ninths_koide_bridge_support_note_2026-04-25",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/CKM_BERNOULLI_TWO_NINTHS_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "ckm_small_vs_pmns_large_from_record_readout_context_narrow_theorem_note_2026-06-06",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/CKM_SMALL_VS_PMNS_LARGE_FROM_RECORD_READOUT_CONTEXT_NARROW_THEOREM_NOTE_2026-06-06.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/CLOSURE_T2_M1_M2_DISTINGUISHER_NOTE_2026-05-10_t2m1m2.md",
+      "selector_location_class": "readout_carrier_or_record_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_PROMOTED_VIA_V8_THEOREM_NOTE_2026-04-29.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "dm_leptogenesis_pmns_microscopic_selector_reduction_theorem_note_2026-04-17",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/DM_LEPTOGENESIS_PMNS_MICROSCOPIC_SELECTOR_REDUCTION_THEOREM_NOTE_2026-04-17.md",
+      "selector_location_class": "selector_surface_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "dm_leptogenesis_pmns_reduced_surface_selector_support_note_2026-04-16",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/DM_LEPTOGENESIS_PMNS_REDUCED_SURFACE_SELECTOR_SUPPORT_NOTE_2026-04-16.md",
+      "selector_location_class": "selector_surface_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "flavor_asymmetry_2over9_forced_weight_2026-05-31",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_conditional",
+      "claim_id": "flavor_asymmetry_identification_principled_not_forced_2026-05-31",
+      "claim_type": "bounded_theorem",
+      "effective_status": "audited_conditional",
+      "note_path": "docs/FLAVOR_ASYMMETRY_IDENTIFICATION_PRINCIPLED_NOT_FORCED_2026-05-31.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "flavor_carrier_delegation_terminus_local_blind_2026-05-31",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/FLAVOR_CARRIER_DELEGATION_TERMINUS_LOCAL_BLIND_2026-05-31.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "flavor_find_j_round3_dirac_generation_blind_2026-06-02",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/FLAVOR_FIND_J_ROUND3_DIRAC_GENERATION_BLIND_2026-06-02.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_conditional",
+      "claim_id": "flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31",
+      "claim_type": "bounded_theorem",
+      "effective_status": "audited_conditional",
+      "note_path": "docs/FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "flavor_measure_positivity_agnostic_note_2026-05-31",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/FLAVOR_MEASURE_POSITIVITY_AGNOSTIC_NOTE_2026-05-31.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_renaming",
+      "claim_id": "flavor_readout_gate_equals_carrier_identification_2026-05-31",
+      "claim_type": "bounded_theorem",
+      "effective_status": "audited_renaming",
+      "note_path": "docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "flavor_so2_readout_false_binary_note_2026-05-30",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/FLAVOR_SO2_READOUT_FALSE_BINARY_NOTE_2026-05-30.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/FREE_FIELD_LATTICE_TO_CONTINUUM_GAUSSIAN_MEASURE_BOUNDED_NOTE_2026-05-30.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "g_newton_born_as_source_positive_theorem_note_2026-05-10_gnewtong2",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/G_NEWTON_BORN_AS_SOURCE_POSITIVE_THEOREM_NOTE_2026-05-10_gnewtonG2.md",
+      "selector_location_class": "measure_weight_or_source_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "generation_axiom_boundary_note",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/GENERATION_AXIOM_BOUNDARY_NOTE.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_conditional",
+      "claim_id": "generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06",
+      "claim_type": "positive_theorem",
+      "effective_status": "audited_conditional",
+      "note_path": "docs/GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_a1_loop_final_status_2026-04-22",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_A1_LOOP_FINAL_STATUS_2026-04-22.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_a1_probe_flavor_anomaly_bounded_obstruction_note_2026-05-08_probe2",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_A1_PROBE_FLAVOR_ANOMALY_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe2.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_a1_probe_gravity_phase_bounded_obstruction_note_2026-05-08_probe3",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_A1_PROBE_GRAVITY_PHASE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe3.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_a1_probe_plancherel_peter_weyl_bounded_obstruction_note_2026-05-09_probe12",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_A1_PROBE_PLANCHEREL_PETER_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe12.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_a1_probe_real_structure_bounded_obstruction_note_2026-05-09_probe13",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_a1_probe_rp_frobenius_bounded_obstruction_note_2026-05-08_probe1",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_A1_PROBE_RP_FROBENIUS_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe1.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_a1_probe_spectral_action_bounded_obstruction_note_2026-05-08_probe4",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_A1_PROBE_SPECTRAL_ACTION_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe4.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_a1_probe_z2_c3_pairing_bounded_obstruction_note_2026-05-08_probe7",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_A1_PROBE_Z2_C3_PAIRING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe7.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_a1_route_a_koide_nishiura_bounded_obstruction_note_2026-05-08_routea",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_A1_ROUTE_A_KOIDE_NISHIURA_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routea.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_a1_route_d_newton_girard_bounded_obstruction_note_2026-05-08_routed",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_A1_ROUTE_D_NEWTON_GIRARD_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routed.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_a1_route_f_casimir_difference_bounded_obstruction_note_2026-05-08_routef",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_A1_ROUTE_F_CASIMIR_DIFFERENCE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routef.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_ADJOINT_MAP_QUOTIENTS_SPINOR_Z2_NARROW_NO_GO_NOTE_2026-06-02.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_ANTICOMMUTING_EIGENVECTOR_VS_EIGENVALUE_READOUT_RECONCILIATION_NOTE_2026-06-01.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_axiom_native_support_batch_note_2026-04-22",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_AXIOM_NATIVE_SUPPORT_BATCH_NOTE_2026-04-22.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_BAE_PROBE_CL3_BIVECTOR_BOUNDED_OBSTRUCTION_NOTE_2026-05-17_probeCl3bivector.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_bae_probe_f1_canonical_functional_bounded_obstruction_note_2026-05-09_probe18",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_BAE_PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_bae_probe_phi_from_z3_character_note_2026-05-09_probe24",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_bae_probe_radian_from_dimensions_bounded_note_2026-05-09_probe30",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_bae_probe_spectrum_cone_bounded_obstruction_note_2026-05-09_probe22",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_BAE_PROBE_SPECTRUM_CONE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe22.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_bae_probe_vm_cubic_extrema_bounded_obstruction_note_2026-05-09_probe20",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_BAE_PROBE_VM_CUBIC_EXTREMA_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe20.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_bae_probe_wilson_chain_mass_note_2026-05-09_probe19",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_bae_probe_wilson_dimensional_consistency_bounded_note_2026-05-09_probe26",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_BAE_PROBE_WILSON_DIMENSIONAL_CONSISTENCY_BOUNDED_NOTE_2026-05-09_probe26.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_brannen_phase_reduction_theorem_note_2026-04-20",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_carrier_locus_decomposition_note_2026-06-01",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_circulant_wilson_target_note_2026-04-18",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_CIRCULANT_WILSON_TARGET_NOTE_2026-04-18.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_cyclic_projector_block_democracy_note_2026-04-18",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_CYCLIC_PROJECTOR_BLOCK_DEMOCRACY_NOTE_2026-04-18.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_delta_radian_period_physical_not_vacuous_narrow_theorem_note_2026-06-04",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_DELTA_RADIAN_PERIOD_PHYSICAL_NOT_VACUOUS_NARROW_THEOREM_NOTE_2026-06-04.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_conditional",
+      "claim_id": "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16",
+      "claim_type": "bounded_theorem",
+      "effective_status": "audited_conditional",
+      "note_path": "docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_EMERGENT_TIME_ETA_CONJUGATION_PARITY_BOUNDED_NOTE_2026-05-30.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_faithfulness_rotation_scalar_excluded_note_2026-06-01",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_FAITHFULNESS_ROTATION_SCALAR_EXCLUDED_NOTE_2026-06-01.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_FISHER_RAO_SPHERICAL_REORGANIZATION_NOTE_2026-06-01.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_full_lattice_schur_inheritance_note_2026-04-18",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_FULL_LATTICE_SCHUR_INHERITANCE_NOTE_2026-04-18.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_conditional",
+      "claim_id": "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
+      "claim_type": "no_go",
+      "effective_status": "audited_conditional",
+      "note_path": "docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_import_two_bit_decomposition_note_2026-05-30",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_IMPORT_TWO_BIT_DECOMPOSITION_NOTE_2026-05-30.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_kahler_dirac_silent_on_measure_note_2026-05-30",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_KAHLER_DIRAC_SILENT_ON_MEASURE_NOTE_2026-05-30.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_MATTER_ATTACHMENT_GRADED_STATISTICS_GATE_NARROW_THEOREM_NOTE_2026-06-02.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_native_zero_section_closure_route_note_2026-04-24",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_order_one_circulant_diagnostic_note_2026-05-29",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_ORDER_ONE_CIRCULANT_DIAGNOSTIC_NOTE_2026-05-29.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_conditional",
+      "claim_id": "koide_orientation_blind_count_b_field_gate_note_2026-05-30",
+      "claim_type": "open_gate",
+      "effective_status": "audited_conditional",
+      "note_path": "docs/KOIDE_ORIENTATION_BLIND_COUNT_B_FIELD_GATE_NOTE_2026-05-30.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_pointer_record_degeneracy_d3_note_2026-05-31",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_POINTER_RECORD_DEGENERACY_D3_NOTE_2026-05-31.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_q23_k0_real_block_equivalence_note_2026-05-30",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_q_bridge_single_primitive_note_2026-04-22",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_Q_BRIDGE_SINGLE_PRIMITIVE_NOTE_2026-04-22.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_renaming",
+      "claim_id": "koide_q_delta_linking_relation_theorem_note_2026-04-20",
+      "claim_type": "bounded_theorem",
+      "effective_status": "audited_renaming",
+      "note_path": "docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_q_minimal_scale_free_selector_note_2026-04-22",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_q_readout_factorization_theorem_2026-04-22",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_q_reduced_observable_restriction_theorem_2026-04-22",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_Q_REDUCED_OBSERVABLE_RESTRICTION_THEOREM_2026-04-22.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_q_so2_phase_erasure_support_note_2026-04-25",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_Q_SO2_PHASE_ERASURE_SUPPORT_NOTE_2026-04-25.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_Q_SOURCE_DOMAIN_CANONICAL_DESCENT_THEOREM_NOTE_2026-04-25.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_Q_TWO_THIRDS_FROBENIUS_EXTREMUM_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_qubit_berry_holonomy_import_note_2026-05-30",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_QUBIT_BERRY_HOLONOMY_IMPORT_NOTE_2026-05-30.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_qubit_lattice_dim_algebraic_closure_note_2026-04-20",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_QUBIT_LATTICE_DIM_ALGEBRAIC_CLOSURE_NOTE_2026-04-20.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_readout_channel_map_note_2026-05-31",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_READOUT_CHANNEL_MAP_NOTE_2026-05-31.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_reality_favors_signed_readout_shared_mechanism_narrow_theorem_note_2026-06-02",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_REALITY_FAVORS_SIGNED_READOUT_SHARED_MECHANISM_NARROW_THEOREM_NOTE_2026-06-02.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_reality_type_permitted_not_forced_note_2026-05-30",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_REALITY_TYPE_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_three_measures_three_observables_note_2026-05-31",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_THREE_MEASURES_THREE_OBSERVABLES_NOTE_2026-05-31.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_conditional",
+      "claim_id": "koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+      "claim_type": "bounded_theorem",
+      "effective_status": "audited_conditional",
+      "note_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_two_29_routes_distinct_narrow_theorem_note_2026-05-23",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_TWO_29_ROUTES_DISTINCT_NARROW_THEOREM_NOTE_2026-05-23.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "koide_z3_joint_projector_identity_note_2026-04-19",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/KOIDE_Z3_JOINT_PROJECTOR_IDENTITY_NOTE_2026-04-19.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "koide_z_substrate_color_geometric_note_2026-05-08_probez_substrate_color_geometric",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/KOIDE_Z_SUBSTRATE_COLOR_GEOMETRIC_NOTE_2026-05-08_probeZ_substrate_color_geometric.md",
+      "selector_location_class": "koide_value_or_phase_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "selector_location_class": "generation_structure_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "one_generation_matter_closure_note",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md",
+      "selector_location_class": "generation_structure_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/PARITY_VIOLATION_DOES_NOT_REACH_GENERATION_TRIPLET_NARROW_THEOREM_NOTE_2026-05-23.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "persistent_record_sidebit_note",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/PERSISTENT_RECORD_SIDEBIT_NOTE.md",
+      "selector_location_class": "readout_carrier_or_record_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md",
+      "selector_location_class": "readout_carrier_or_record_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "pmns_commutant_eigenoperator_selector_note",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/PMNS_COMMUTANT_EIGENOPERATOR_SELECTOR_NOTE.md",
+      "selector_location_class": "selector_surface_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "pmns_selector_bank_nonrealization_note",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/PMNS_SELECTOR_BANK_NONREALIZATION_NOTE.md",
+      "selector_location_class": "selector_surface_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_conditional",
+      "claim_id": "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26",
+      "claim_type": "open_gate",
+      "effective_status": "audited_conditional",
+      "note_path": "docs/QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md",
+      "selector_location_class": "obstruction_or_open_gate",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "scalar_selector_proof_chains_2026-04-19",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/SCALAR_SELECTOR_PROOF_CHAINS_2026-04-19.md",
+      "selector_location_class": "selector_surface_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md",
+      "selector_location_class": "generation_structure_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/STAGGERED_HAMILTONIAN_DIRECTION_DECOMPOSITION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "selector_location_class": "other_generation_koide_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "three_generation_local_algebra_narrow_theorem_note_2026-05-10",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/THREE_GENERATION_LOCAL_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "selector_location_class": "generation_structure_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "three_generation_structure_note",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
+      "selector_location_class": "generation_structure_location",
+      "slice": "selector"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md",
+      "selector_location_class": null,
+      "slice": "stable_feature"
+    },
+    {
+      "audit_status": "unaudited",
+      "claim_id": "generation_dial_dynamics_stability_classifier_2026-06-05",
+      "claim_type": "bounded_theorem",
+      "effective_status": "unaudited",
+      "note_path": "docs/GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md",
+      "selector_location_class": null,
+      "slice": "stable_feature"
+    },
+    {
+      "audit_status": "audited_conditional",
+      "claim_id": "koide_records_objectivity_conditional_note_2026-05-31",
+      "claim_type": "bounded_theorem",
+      "effective_status": "audited_conditional",
+      "note_path": "docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md",
+      "selector_location_class": null,
+      "slice": "stable_feature"
+    },
+    {
+      "audit_status": "audited_clean",
+      "claim_id": "stable_post_record_dial_location_certificate_2026-06-06",
+      "claim_type": "bounded_theorem",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/STABLE_POST_RECORD_DIAL_LOCATION_CERTIFICATE_2026-06-06.md",
+      "selector_location_class": null,
+      "slice": "stable_feature"
+    }
+  ],
+  "selector_location_counts": {
+    "generation_structure_location": 5,
+    "koide_value_or_phase_location": 48,
+    "measure_weight_or_source_location": 3,
+    "obstruction_or_open_gate": 39,
+    "other_generation_koide_location": 1,
+    "readout_carrier_or_record_location": 3,
+    "selector_surface_location": 5
+  },
+  "selector_row_ids": [
+    "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+    "bae_u1b_six_ray_dirac_measure_note_2026-05-17",
+    "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+    "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+    "charged_lepton_mass_hierarchy_review_note_2026-04-17",
+    "ckm_bernoulli_two_ninths_koide_bridge_support_note_2026-04-25",
+    "ckm_small_vs_pmns_large_from_record_readout_context_narrow_theorem_note_2026-06-06",
+    "closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2",
+    "cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29",
+    "dm_leptogenesis_pmns_microscopic_selector_reduction_theorem_note_2026-04-17",
+    "dm_leptogenesis_pmns_reduced_surface_selector_support_note_2026-04-16",
+    "flavor_asymmetry_2over9_forced_weight_2026-05-31",
+    "flavor_asymmetry_identification_principled_not_forced_2026-05-31",
+    "flavor_carrier_delegation_terminus_local_blind_2026-05-31",
+    "flavor_find_j_round3_dirac_generation_blind_2026-06-02",
+    "flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31",
+    "flavor_measure_positivity_agnostic_note_2026-05-31",
+    "flavor_readout_gate_equals_carrier_identification_2026-05-31",
+    "flavor_so2_readout_false_binary_note_2026-05-30",
+    "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30",
+    "g_newton_born_as_source_positive_theorem_note_2026-05-10_gnewtong2",
+    "generation_axiom_boundary_note",
+    "generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06",
+    "koide_a1_loop_final_status_2026-04-22",
+    "koide_a1_probe_flavor_anomaly_bounded_obstruction_note_2026-05-08_probe2",
+    "koide_a1_probe_gravity_phase_bounded_obstruction_note_2026-05-08_probe3",
+    "koide_a1_probe_plancherel_peter_weyl_bounded_obstruction_note_2026-05-09_probe12",
+    "koide_a1_probe_real_structure_bounded_obstruction_note_2026-05-09_probe13",
+    "koide_a1_probe_rp_frobenius_bounded_obstruction_note_2026-05-08_probe1",
+    "koide_a1_probe_spectral_action_bounded_obstruction_note_2026-05-08_probe4",
+    "koide_a1_probe_z2_c3_pairing_bounded_obstruction_note_2026-05-08_probe7",
+    "koide_a1_route_a_koide_nishiura_bounded_obstruction_note_2026-05-08_routea",
+    "koide_a1_route_d_newton_girard_bounded_obstruction_note_2026-05-08_routed",
+    "koide_a1_route_f_casimir_difference_bounded_obstruction_note_2026-05-08_routef",
+    "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+    "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
+    "koide_axiom_native_support_batch_note_2026-04-22",
+    "koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector",
+    "koide_bae_probe_f1_canonical_functional_bounded_obstruction_note_2026-05-09_probe18",
+    "koide_bae_probe_phi_from_z3_character_note_2026-05-09_probe24",
+    "koide_bae_probe_radian_from_dimensions_bounded_note_2026-05-09_probe30",
+    "koide_bae_probe_spectrum_cone_bounded_obstruction_note_2026-05-09_probe22",
+    "koide_bae_probe_vm_cubic_extrema_bounded_obstruction_note_2026-05-09_probe20",
+    "koide_bae_probe_wilson_chain_mass_note_2026-05-09_probe19",
+    "koide_bae_probe_wilson_dimensional_consistency_bounded_note_2026-05-09_probe26",
+    "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+    "koide_brannen_phase_reduction_theorem_note_2026-04-20",
+    "koide_carrier_locus_decomposition_note_2026-06-01",
+    "koide_circulant_wilson_target_note_2026-04-18",
+    "koide_cyclic_projector_block_democracy_note_2026-04-18",
+    "koide_delta_radian_period_physical_not_vacuous_narrow_theorem_note_2026-06-04",
+    "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16",
+    "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
+    "koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30",
+    "koide_faithfulness_rotation_scalar_excluded_note_2026-06-01",
+    "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
+    "koide_full_lattice_schur_inheritance_note_2026-04-18",
+    "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
+    "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+    "koide_import_two_bit_decomposition_note_2026-05-30",
+    "koide_kahler_dirac_silent_on_measure_note_2026-05-30",
+    "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
+    "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
+    "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
+    "koide_native_zero_section_closure_route_note_2026-04-24",
+    "koide_order_one_circulant_diagnostic_note_2026-05-29",
+    "koide_orientation_blind_count_b_field_gate_note_2026-05-30",
+    "koide_pointer_record_degeneracy_d3_note_2026-05-31",
+    "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+    "koide_q23_k0_real_block_equivalence_note_2026-05-30",
+    "koide_q_bridge_single_primitive_note_2026-04-22",
+    "koide_q_delta_linking_relation_theorem_note_2026-04-20",
+    "koide_q_minimal_scale_free_selector_note_2026-04-22",
+    "koide_q_readout_factorization_theorem_2026-04-22",
+    "koide_q_reduced_observable_restriction_theorem_2026-04-22",
+    "koide_q_so2_phase_erasure_support_note_2026-04-25",
+    "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25",
+    "koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25",
+    "koide_qubit_berry_holonomy_import_note_2026-05-30",
+    "koide_qubit_lattice_dim_algebraic_closure_note_2026-04-20",
+    "koide_readout_channel_map_note_2026-05-31",
+    "koide_reality_favors_signed_readout_shared_mechanism_narrow_theorem_note_2026-06-02",
+    "koide_reality_type_permitted_not_forced_note_2026-05-30",
+    "koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25",
+    "koide_three_measures_three_observables_note_2026-05-31",
+    "koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+    "koide_two_29_routes_distinct_narrow_theorem_note_2026-05-23",
+    "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+    "koide_z3_joint_projector_identity_note_2026-04-19",
+    "koide_z_substrate_color_geometric_note_2026-05-08_probez_substrate_color_geometric",
+    "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10",
+    "one_generation_matter_closure_note",
+    "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+    "persistent_record_sidebit_note",
+    "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
+    "pmns_commutant_eigenoperator_selector_note",
+    "pmns_selector_bank_nonrealization_note",
+    "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28",
+    "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26",
+    "scalar_selector_proof_chains_2026-04-19",
+    "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
+    "staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17",
+    "three_generation_local_algebra_narrow_theorem_note_2026-05-10",
+    "three_generation_structure_note"
+  ],
+  "selector_rows": 104,
+  "stable_feature_ids": [
+    "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+    "generation_dial_dynamics_stability_classifier_2026-06-05",
+    "koide_records_objectivity_conditional_note_2026-05-31",
+    "stable_post_record_dial_location_certificate_2026-06-06"
+  ],
+  "stable_feature_rows": 4,
+  "total_rows": 108
+}

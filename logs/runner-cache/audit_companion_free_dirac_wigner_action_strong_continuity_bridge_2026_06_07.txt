@@ -1,0 +1,85 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py
+runner_sha256: a14b9ce9a04b98f6d7bbc8abde3c82eeaf6e64d9506e6316aa56125c26af5d03
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source anchors
+------------------------------------------------------------------------------
+PASS docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md exists
+PASS docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md contains: Wigner Action Strong-Continuity Bridge
+PASS docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md contains: 2026-06-07 dependency authority repair
+PASS docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md contains: full companion free-Dirac Poincare representation packet/cache
+PASS docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md contains: strongly continuous
+PASS docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md contains: Wigner cocycle
+PASS docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md contains: Stone consequence
+PASS docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md contains: bare_retained_allowed: false
+PASS docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md exists
+PASS docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md contains: Direct Integrability Repair
+PASS docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md contains: explicit unitary mass-shell/Wigner action
+PASS docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md contains: SCORECARD PASS=
+PASS docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md exists
+PASS docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md contains: Poincare Algebra and Positive-Energy Support
+PASS docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md contains: boosts preserve the positive mass shell
+PASS docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md contains: Lorentz-invariant mass-shell
+PASS docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md contains: Wigner rotation
+PASS logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt exists
+PASS logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt contains: runner cache v1
+PASS logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt contains: P5 boost preserves H_m^+; SU(2) Wigner rotation correct
+PASS logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt contains: P6 invariant measure d^3p/2E boost-preserved
+PASS logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt contains: SCORECARD PASS=8 FAIL=0
+
+------------------------------------------------------------------------------
+Companion dependency authority
+------------------------------------------------------------------------------
+PASS bridge cites companion authority: docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
+PASS bridge cites companion authority: scripts/free_dirac_poincare_representation_2026-05-30.py
+PASS bridge cites companion authority: logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt
+PASS companion cache runner path is recorded :: {'runner': 'scripts/free_dirac_poincare_representation_2026-05-30.py', 'runner_sha256': '39ef1b94d75d24dff2d2bb3f11d4ed5661b0c335c11c7c4bab0960ba4211f214', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.20', 'status': 'ok'}
+PASS companion cache status is ok :: {'runner': 'scripts/free_dirac_poincare_representation_2026-05-30.py', 'runner_sha256': '39ef1b94d75d24dff2d2bb3f11d4ed5661b0c335c11c7c4bab0960ba4211f214', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.20', 'status': 'ok'}
+PASS companion cache exit code is zero :: {'runner': 'scripts/free_dirac_poincare_representation_2026-05-30.py', 'runner_sha256': '39ef1b94d75d24dff2d2bb3f11d4ed5661b0c335c11c7c4bab0960ba4211f214', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.20', 'status': 'ok'}
+PASS companion cache runner SHA is fresh :: 39ef1b94d75d24dff2d2bb3f11d4ed5661b0c335c11c7c4bab0960ba4211f214
+PASS companion cache certifies PASS=8 FAIL=0
+PASS companion cache includes invariant measure check
+PASS companion cache includes Wigner rotation check
+
+------------------------------------------------------------------------------
+Mass-shell semidirect product action
+------------------------------------------------------------------------------
+PASS 1+1 mass-shell action obeys semidirect product law :: miss=1.100e-16
+PASS boost pullback preserves rapidity L2 norm on localized carrier :: 0.943746820->0.943746820
+PASS boost action is strongly continuous near identity on dense carrier :: 1.338e-01, 6.702e-02, 3.353e-02, 1.677e-02
+PASS translation phase action is strongly continuous near identity :: 3.316e-01, 1.673e-01, 8.388e-02, 4.196e-02
+PASS translation phase has unit modulus
+
+------------------------------------------------------------------------------
+SU(2) Wigner carrier checks
+------------------------------------------------------------------------------
+PASS Wigner SU(2) carrier is unitary
+PASS same-axis SU(2) carrier obeys group law
+PASS SU(2) carrier is continuous at identity :: 1.414e-01, 7.070e-02, 3.535e-02, 1.768e-02
+PASS unitary dense-carrier continuity extends by epsilon/3 density argument
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS audit data written flag is false
+PASS audit verdict applied flag is false
+PASS lattice Lorentz derivation flag is false
+PASS spin-statistics derivation flag is false
+PASS interacting theory claim flag is false
+PASS retained-status claim flag is false
+PASS Nelson/common-Gaussian route reintroduced flag is false
+
+FREE DIRAC WIGNER ACTION STRONG-CONTINUITY BRIDGE
+SCORECARD PASS=48 FAIL=0
+AUDIT_LEDGER_WRITTEN=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+BARE_RETAINED_ALLOWED=FALSE
+
+----- stderr -----
+

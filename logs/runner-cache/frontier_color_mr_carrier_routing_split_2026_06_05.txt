@@ -1,0 +1,97 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_mr_carrier_routing_split_2026_06_05.py
+runner_sha256: 6211262ccf2951db8ba52601defc5161339179e4a260808cc966d6cfd026f00f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+==============================================================================
+COLOR MR_COLOR CARRIER/ROUTING SPLIT
+meta support-map interface runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Structural dimensions
+------------------------------------------------------------------------------
+  [PASS] dim Sym^2(C^2) = 3 (got 3)
+  [PASS] dim Anti^2(C^2) = 1 (got 1)
+  [PASS] weak doublet dimension = 2
+  [PASS] dim (2,3) = 6 (got 6)
+  [PASS] dim (2,1) = 2 (got 2)
+  [PASS] LH doublet total dimension = 8 (got 8)
+  [PASS] structural su(3) dimension on Sym^2 block = 8 (got 8)
+  [PASS] 3+1 base split tensors to 6+2 LH split
+
+------------------------------------------------------------------------------
+2. MR_color subpieces
+------------------------------------------------------------------------------
+  [PASS] six interface pieces tracked
+  [PASS] carrier content is support
+  [PASS] species naming remains convention residual
+  [PASS] record readout remains antecedent residual
+  [PASS] link routing remains construction residual
+  [PASS] post-record layer is consumer support
+  [PASS] carrier output includes Sym^2 SU(3) fundamental block
+  [PASS] carrier output includes (2,3)+(2,1) LH split
+  [PASS] link routing output includes base-SU3 link index
+  [PASS] post-record output includes word histories
+  [PASS] all named outputs are unique enough for interface use
+
+------------------------------------------------------------------------------
+3. Disjointness checks
+------------------------------------------------------------------------------
+  [PASS] carrier content does not include species naming
+  [PASS] carrier content does not include record-readout antecedent
+  [PASS] carrier content does not include link routing
+  [PASS] carrier content does not include formation/action dynamics
+  [PASS] post-record consumer does not include link routing
+  [PASS] post-record consumer does not include record-readout antecedent
+  [PASS] record-readout antecedent does not include action dynamics
+
+------------------------------------------------------------------------------
+4. Completion logic
+------------------------------------------------------------------------------
+  [PASS] MR_color requires five named outputs
+  [PASS] carrier content supplies the structural block requirement
+  [PASS] carrier content alone leaves four MR outputs missing (['gauss_generators_for_base_su3', 'link_variable_carries_base_su3_index', 'physical_records_are_color_singlets', 'quark_name_for_su3_charged_block'])
+  [PASS] species naming missing without convention piece
+  [PASS] color-record readout missing without antecedent piece
+  [PASS] link variable routing missing without construction piece
+  [PASS] Gauss generator choice missing without construction piece
+  [PASS] all MR outputs present only after residual pieces are added
+  [PASS] post-record consumer is downstream of MR outputs
+
+------------------------------------------------------------------------------
+5. Route implications
+------------------------------------------------------------------------------
+  [PASS] route table has six consumer classes
+  [PASS] structural rows classified as support consumers
+  [PASS] quark label rows keep naming convention
+  [PASS] record rows keep readout antecedent
+  [PASS] Wilson/Gauss rows keep link routing
+  [PASS] QCD dynamics rows keep formation/action
+  [PASS] history/count rows are after realized atoms
+
+------------------------------------------------------------------------------
+6. Note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/COLOR_MR_CARRIER_ROUTING_SPLIT_2026-06-05.md)
+  [PASS] note contains marker: **Claim type:** meta
+  [PASS] note contains marker: Trace class:** upstream support map
+  [PASS] note contains marker: No-go discipline result:
+  [PASS] note contains marker: Does not derive physical color.
+  [PASS] note contains marker: Does not route the base-`SU(3)` index onto link variables.
+  [PASS] note contains marker: Does not select a Koide/generation dial location.
+  [PASS] forbidden wording absent: physical color closure
+  [PASS] forbidden wording absent: species derivation closure
+  [PASS] forbidden wording absent: link routing closure
+  [PASS] forbidden wording absent: dial selector closure
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=53 FAIL=0
+
+----- stderr -----
+

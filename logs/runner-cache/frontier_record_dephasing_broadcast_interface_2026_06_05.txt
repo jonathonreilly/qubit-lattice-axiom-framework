@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_dephasing_broadcast_interface_2026_06_05.py
+runner_sha256: 166251e68cf82c41ffe0580ce68095a823c0c3ccdb8feb30e87c721f23d353fa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+==============================================================================
+RECORD DEPHASING BROADCAST INTERFACE
+bounded-support / pre-record-post-record split runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Nonselective dephasing interface
+------------------------------------------------------------------------------
+  [PASS] global output state is normalized
+  [PASS] reduced pointer diagonal stores probabilities
+  [PASS] reduced pointer off-diagonal is zero
+  [PASS] global state remains pure before selection
+  [PASS] global branch coherence remains before selection
+  [PASS] nonselective support has two branch weights ([0, 15])
+
+------------------------------------------------------------------------------
+2. Local fragments and selective branches
+------------------------------------------------------------------------------
+  [PASS] fragment 0: local marginal carries p0/p1 weights
+  [PASS] fragment 1: local marginal carries p0/p1 weights
+  [PASS] fragment 2: local marginal carries p0/p1 weights
+  [PASS] selective probability for outcome 0 is p0
+  [PASS] selective probability for outcome 1 is p1
+  [PASS] selective probabilities sum to one
+  [PASS] outcome 0 branch has clean broadcast word
+  [PASS] outcome 1 branch has clean broadcast word
+
+------------------------------------------------------------------------------
+3. Gate split
+------------------------------------------------------------------------------
+  [PASS] nonselective state is not one realized atom
+  [PASS] selective branch gives one clean atom
+  [PASS] pre-record probabilities are preserved as weights
+  [PASS] post-record atom is conditional on selection
+  [PASS] local broadcast appears on selective branches
+  [PASS] no clock or dial gate is supplied
+
+------------------------------------------------------------------------------
+4. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_DEPHASING_BROADCAST_INTERFACE_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: bounded-support
+  [PASS] note contains marker: trace_class: upstream_support
+  [PASS] note contains marker: selective post-record atom remains a separate gate
+  [PASS] note contains marker: Does not derive outcome selection
+  [PASS] note contains marker: nonselective dephased state is still an ensemble object
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: selection closure
+  [PASS] forbidden wording absent: born closure
+  [PASS] forbidden wording absent: collapse closure
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=33 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,22 @@
+NEWTONIAN DISTANCE-LAW HISTORICAL POINTER GUARD 2026-06-08
+PASS docs/NEWTONIAN_DISTANCE_LAW_CONFIRMED.md exists
+PASS docs/VALLEY_LINEAR_WIDE_TAIL_NOTE.md exists
+PASS scripts/valley_linear_wide_tail_replay.py exists
+PASS logs/2026-04-04-valley-linear-wide-tail-replay.txt exists
+PASS logs/runner-cache/valley_linear_wide_tail_replay.txt exists
+PASS pointer declares historical pointer status
+PASS pointer has local replay note link
+PASS pointer has local runner link
+PASS pointer has local frozen log link
+PASS pointer has local cache link
+PASS pointer removes stale absolute project paths
+PASS pointer exposes frozen log sha
+PASS pointer states bounded finite replay only
+PASS replay note contains verifier repair
+PASS replay note exposes same frozen sha
+PASS cache is fresh successful verifier
+PASS pointer contains raw-row inventory repair
+PASS frozen log has nine raw distance rows :: rows=9
+PASS pointer includes all raw distance rows :: all parsed z/delta/direction rows are present in pointer table
+PASS pointer records recomputed far-tail fit
+SCORECARD PASS=20 FAIL=0

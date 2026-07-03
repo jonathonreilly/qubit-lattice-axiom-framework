@@ -1,25 +1,39 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py
-runner_sha256: 9a4889f569cd05b8c3a18d8d0a8e9cc2ebcb601d5747cc0daf680ac562a48a75
+runner_sha256: 5b83328efd6c68a6a7145a215f7146425c9075c6b51aa81ab1cadffbe93941ef
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 [PASS] path_exists:primary_runner: scripts/frontier_beta6_connected_coefficient_2026_05_30.py
-[PASS] note_links:primary_runner: scripts/frontier_beta6_connected_coefficient_2026_05_30.py
+[PASS] d7_note_links:primary_runner: scripts/frontier_beta6_connected_coefficient_2026_05_30.py
 [PASS] path_exists:maxorder7_runner: scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py
-[PASS] note_links:maxorder7_runner: scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py
+[PASS] d7_note_links:maxorder7_runner: scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py
 [PASS] path_exists:maxorder7_cache: logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt
-[PASS] note_links:maxorder7_cache: logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt
+[PASS] d7_note_links:maxorder7_cache: logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt
 [PASS] path_exists:d9_runner: scripts/frontier_beta6_d9_coefficient_2026_06_04.py
-[PASS] note_links:d9_runner: scripts/frontier_beta6_d9_coefficient_2026_06_04.py
+[PASS] d7_note_links:d9_runner: scripts/frontier_beta6_d9_coefficient_2026_06_04.py
 [PASS] path_exists:d9_cache: logs/runner-cache/frontier_beta6_d9_coefficient_2026_06_04.txt
-[PASS] note_links:d9_cache: logs/runner-cache/frontier_beta6_d9_coefficient_2026_06_04.txt
+[PASS] d7_note_links:d9_cache: logs/runner-cache/frontier_beta6_d9_coefficient_2026_06_04.txt
 [PASS] path_exists:manifest_runner: scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py
-[PASS] note_links:manifest_runner: scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py
-[PASS] note_links:manifest_cache: logs/runner-cache/frontier_beta6_d7_source_packet_manifest_2026_06_05.txt
-[PASS] note_links:manifest_json: outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json
+[PASS] d7_note_links:manifest_runner: scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py
+[PASS] d7_note_links:manifest_cache: logs/runner-cache/frontier_beta6_d7_source_packet_manifest_2026_06_05.txt
+[PASS] d7_note_links:manifest_json: outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json
+[PASS] connected_note_links:primary_runner: scripts/frontier_beta6_connected_coefficient_2026_05_30.py
+[PASS] connected_note_links:maxorder7_runner: scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py
+[PASS] connected_note_links:maxorder7_cache: logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt
+[PASS] connected_note_links:manifest_runner: scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py
+[PASS] connected_note_links:manifest_cache: logs/runner-cache/frontier_beta6_d7_source_packet_manifest_2026_06_05.txt
+[PASS] connected_note_links:manifest_json: outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json
+[PASS] connected_note_links:d7_companion_note: docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md
+[PASS] connected_note_marker:d_7 = 5 / 17006112: d_7 = 5 / 17006112
+[PASS] connected_note_marker:d_7 / d_6 = 5/21: d_7 / d_6 = 5/21
+[PASS] connected_note_marker:completed maxorder-7 packet: completed maxorder-7 packet
+[PASS] connected_note_marker:full untruncated source runner: full untruncated source runner
+[PASS] connected_note_marker:SCORECARD: PASS=22 FAIL=0: SCORECARD: PASS=22 FAIL=0
+[PASS] connected_note_marker:SUMMARY: BETA6 D7 SOURCE PACKET PASS=53 FAIL=0: SUMMARY: BETA6 D7 SOURCE PACKET PASS=53 FAIL=0
+[PASS] connected_note_marker:beta=6 closure problem remains open: beta=6 closure problem remains open
 [PASS] primary_source_marker:def compute_dn_frac: def compute_dn_frac
 [PASS] primary_source_marker:def cycle_space_certificate: def cycle_space_certificate
 [PASS] primary_source_marker:def cube_shells_size5: def cube_shells_size5
@@ -30,12 +44,13 @@ status: ok
 [PASS] maxorder7_wrapper_marker:delegated_argv: 7: delegated_argv: 7
 [PASS] maxorder7_wrapper_marker:frontier_beta6_connected_coefficient_2026_05_30: frontier_beta6_connected_coefficient_2026_05_30
 [PASS] cache_runner_matches:maxorder7_cache: scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py == scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py
-[PASS] cache_sha_fresh:maxorder7_cache: aebfcc8711b77c4f7e170eff9b7002354b519c87b29b0f5daa28f62ac9f5bcf0 == aebfcc8711b77c4f7e170eff9b7002354b519c87b29b0f5daa28f62ac9f5bcf0
+[PASS] cache_sha_fresh:maxorder7_cache: 0dd340b81de3f925eba1dd917522913cec4c99ff3250f84c88af3ffb19237dfb == 0dd340b81de3f925eba1dd917522913cec4c99ff3250f84c88af3ffb19237dfb
 [PASS] cache_status_ok:maxorder7_cache: status=ok exit=0
 [PASS] cache_runner_matches:d9_cache: scripts/frontier_beta6_d9_coefficient_2026_06_04.py == scripts/frontier_beta6_d9_coefficient_2026_06_04.py
 [PASS] cache_sha_fresh:d9_cache: 52418e78afb23e1a5afe5bfef0534df4404deda3097677bf6c10eaa784e517f4 == 52418e78afb23e1a5afe5bfef0534df4404deda3097677bf6c10eaa784e517f4
 [PASS] cache_status_ok:d9_cache: status=ok exit=0
 [PASS] maxorder7_cache_snippet:delegated_argv: 7: delegated_argv: 7
+[PASS] maxorder7_cache_snippet:primary_runner_sha256: dc6319dffac36c4fea8b4b1a33c364325859106606a924f1b85893e57b10635e: primary_runner_sha256: dc6319dffac36c4fea8b4b1a33c364325859106606a924f1b85893e57b10635e
 [PASS] maxorder7_cache_snippet:V5. order-beta^7 coefficient: V5. order-beta^7 coefficient
 [PASS] maxorder7_cache_snippet:d_7 exact value = 5/17006112: d_7 exact value = 5/17006112
 [PASS] maxorder7_cache_snippet:d_7/d_6 = 5/21: d_7/d_6 = 5/21
@@ -45,7 +60,7 @@ status: ok
 [PASS] d9_cache_snippet:cube-sector closed form 72 K''(K')^5 reproduces the direct-engine d_5, d_6, d_7, d_8 EXACTLY: cube-sector closed form 72 K''(K')^5 reproduces the direct-engine d_5, d_6, d_7, d_8 EXACTLY
 [PASS] d9_cache_snippet:SCORECARD: PASS=33 FAIL=0: SCORECARD: PASS=33 FAIL=0
 ==============================================================================
-SUMMARY: BETA6 D7 SOURCE PACKET PASS=38 FAIL=0
+SUMMARY: BETA6 D7 SOURCE PACKET PASS=53 FAIL=0
 ==============================================================================
 Output written: outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json
 

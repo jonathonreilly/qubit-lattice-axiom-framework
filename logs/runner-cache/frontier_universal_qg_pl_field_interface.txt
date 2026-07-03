@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_qg_pl_field_interface.py
+runner_sha256: 4c69316543126ed61ffc90ffd4a48431999abc9a5fb2c27395ef477b5288154a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+[EXACT] PASS: the route already has the exact canonical refinement net and exact abstract Gaussian completion
+    this interface theorem starts from the exact refinement geometry and exact abstract Gaussian completion already closed on the project route
+[EXACT] PASS: canonical PL prolongation is associative along the dyadic refinement chain
+    max prolongation associativity error=0.000e+00
+[EXACT] PASS: coarse vertex data define the same PL field whether prolonged directly or stepwise
+    max PL interpolation/prolongation mismatch=4.441e-16
+[EXACT] PASS: cylindrical linear and quadratic observables are refinement-equivalence classes of the same PL field data
+    max linear observable mismatch=0.000e+00, max quadratic observable mismatch=0.000e+00
+[EXACT] PASS: the remaining stronger issue is therefore comparison to more canonical external continuum field/measure targets, not missing project-native continuum carrier
+    the exact discrete route already has a canonical PL realization of its Gaussian limit object and a chosen external smooth FE/Galerkin realization; what remains is comparison to more canonical external continuum field / measure targets
+UNIVERSAL QG PL FIELD INTERFACE
+==============================================================================
+max prolongation associativity error = 0.000e+00
+max PL interpolation mismatch        = 4.441e-16
+max linear observable mismatch       = 0.000e+00
+max quadratic observable mismatch    = 0.000e+00
+
+Verdict:
+The exact abstract Gaussian completion on the canonical barycentric-dyadic net already has a canonical project-native piecewise-linear field realization. So the remaining stronger continuum issue is not missing abstract existence or missing project-native carrier, but comparison to more canonical external continuum field / measure targets.
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASS=5 FAIL=0 TOTAL=5
+
+----- stderr -----
+

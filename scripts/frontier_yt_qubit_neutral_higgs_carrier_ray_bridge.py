@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Y_T qubit neutral-Higgs carrier-ray bridge gate.
 
-This runner verifies the finite Pauli/projector algebra that identifies the
-signed-record source carrier with the neutral component ray of the retained
-one-Higgs EW doublet.  It deliberately keeps the result support-only: carrier
-alignment is not strict top/W response evidence and is not a numerical Y_T
-derivation.
+This runner verifies the finite Pauli/projector algebra after the 2026-06-18
+scope repair.  The signed-record lower-projector algebra, EW lower-ray
+neutrality, and same-surface charge-spectral projector repair close as bounded
+support; top coefficient, transfer-response, scalar-normalization, and
+physical-scale gates remain open.
 """
 
 from __future__ import annotations
@@ -22,14 +22,17 @@ DOCS = ROOT / "docs"
 OUTPUT = ROOT / "outputs" / "yt_qubit_neutral_higgs_carrier_ray_bridge_2026-05-25.json"
 
 NOTE = DOCS / "YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md"
+CORE_NOTE = DOCS / "YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md"
 MINIMAL_AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-05-20.md"
 SOURCE_ACTION = DOCS / "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
 EW_MASS = DOCS / "EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md"
+SAME_SURFACE_CARRIER = DOCS / "YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md"
 SOURCE_COORD = DOCS / "YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md"
 ONE_HIGGS = DOCS / "SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md"
 HYPERCHARGE = DOCS / "STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 SYMBOLIC_TOP_PACKET = ROOT / "outputs" / "yt_strict_symbolic_top_response_row_packet_2026-05-25.json"
+RETAINED_GRADES = {"retained", "retained_bounded", "retained_no_go"}
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -61,6 +64,14 @@ def ledger_row(claim_id: str) -> dict[str, Any]:
     raise KeyError(claim_id)
 
 
+def is_retained_grade(row_or_status: dict[str, Any] | str | None) -> bool:
+    if isinstance(row_or_status, dict):
+        status = row_or_status.get("effective_status")
+    else:
+        status = row_or_status
+    return status in RETAINED_GRADES
+
+
 def is_zero(expr: sp.Expr) -> bool:
     return sp.simplify(expr) == 0
 
@@ -71,7 +82,7 @@ def matrix_is_zero(matrix: sp.Matrix) -> bool:
 
 def part1_anchors() -> dict[str, Any]:
     print("\nPart 1: anchors and authority scope")
-    for path in (NOTE, MINIMAL_AXIOMS, SOURCE_ACTION, EW_MASS, SOURCE_COORD, LEDGER):
+    for path in (NOTE, CORE_NOTE, MINIMAL_AXIOMS, SOURCE_ACTION, EW_MASS, SAME_SURFACE_CARRIER, SOURCE_COORD, LEDGER):
         check(f"{path.relative_to(ROOT)} exists", path.exists())
 
     note = read(NOTE)
@@ -81,8 +92,30 @@ def part1_anchors() -> dict[str, Any]:
         "What This Still Does Not Close",
         "Why This Is Not A Renaming",
         "Review Boundary Certificate",
+        "2026-06-18 audit-scope repair",
+        "same-surface carrier repair",
     ):
         check(f"note contains required section: {phrase}", phrase in note)
+
+    core = read(CORE_NOTE)
+    for phrase in (
+        "Actual current-surface status:** bounded-support",
+        "Trace class:** upstream_support",
+        "not a same-surface physical carrier theorem",
+        "bare_retained_allowed: false",
+    ):
+        check(f"core note contains boundary phrase: {phrase}", phrase in core)
+
+    carrier_note = read(SAME_SURFACE_CARRIER)
+    for phrase in (
+        "same-surface spectral-projector theorem",
+        "P_neut = 1_0(Q_H)",
+        "P_+ = P_ch",
+        "P_- = P_neut",
+        "exp(h epsilon_H) = exp(h) exp(-2 h P_neut)",
+        "does not derive positive Y_T closure",
+    ):
+        check(f"same-surface carrier theorem contains marker: {phrase}", phrase in carrier_note)
 
     source_action = ledger_row("yt_source_action_support_packet_note_2026-05-22")
     ew_mass = ledger_row("ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26")
@@ -90,11 +123,11 @@ def part1_anchors() -> dict[str, Any]:
     hypercharge = ledger_row("standard_model_hypercharge_uniqueness_theorem_note_2026-04-24")
     ew_coupling = ledger_row("ew_coupling_derivation_note")
 
-    check("source-action support packet is retained_bounded", source_action.get("effective_status") == "retained_bounded")
-    check("EW Higgs gauge-mass theorem is retained", ew_mass.get("effective_status") == "retained")
-    check("one-Higgs Yukawa gauge-selection row is not retained", one_higgs.get("effective_status") != "retained")
-    check("hypercharge uniqueness row is not retained", hypercharge.get("effective_status") != "retained")
-    check("EW coupling note is not retained g_2(v) authority", ew_coupling.get("effective_status") != "retained")
+    check("source-action support packet is retained-grade", is_retained_grade(source_action))
+    check("EW Higgs gauge-mass theorem is retained-grade", is_retained_grade(ew_mass))
+    check("one-Higgs Yukawa gauge-selection row is not retained-grade", not is_retained_grade(one_higgs))
+    check("hypercharge uniqueness row is not retained-grade", not is_retained_grade(hypercharge))
+    check("EW coupling note is not retained-grade g_2(v) authority", not is_retained_grade(ew_coupling))
 
     return {
         "source_action_status": source_action.get("effective_status"),
@@ -135,7 +168,7 @@ def part2_signed_record_projector_equivalence() -> None:
 
 
 def part3_neutral_ew_ray_alignment() -> None:
-    print("\nPart 3: P_- is the retained neutral EW Higgs ray")
+    print("\nPart 3: P_- is the neutral lower ray in EW bookkeeping")
     v = sp.symbols("v", positive=True, real=True)
     ident = sp.eye(2)
     z = sp.Matrix([[1, 0], [0, -1]])
@@ -153,6 +186,8 @@ def part3_neutral_ew_ray_alignment() -> None:
     check("Q annihilates H_0", matrix_is_zero(q * h0), q * h0)
     check("upper component is charged", matrix_is_zero(q * upper - upper), q * upper)
     check("neutral ray is unique in the one-Higgs doublet", q.rank() == 1 and q.nullspace() == [sp.Matrix([0, 1])], q.nullspace())
+    check("P_- equals the zero spectral projector I-Q", matrix_is_zero(p_minus - (ident - q)), ident - q)
+    check("P_+ equals the charged spectral projector Q", matrix_is_zero(p_plus - q), q)
 
 
 def part4_radial_tangent_and_ratio_compatibility() -> None:
@@ -182,18 +217,23 @@ def part5_current_closure_boundary(statuses: dict[str, Any]) -> dict[str, Any]:
     strict_top_w_rows = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
     strict_wz_packet = ROOT / "outputs" / "yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json"
     blockers = {
-        "neutral_carrier_ray_bridge_closed": True,
+        "lower_projector_algebra_core_closed": True,
+        "same_surface_qubit_higgs_carrier_bridge_closed": SAME_SURFACE_CARRIER.exists(),
         "wz_denominator_response_closed": strict_wz_packet.exists(),
         "symbolic_top_response_row_present": SYMBOLIC_TOP_PACKET.exists(),
         "full_same_surface_top_w_transfer_response_closed": False,
         "coefficient_certified_top_w_rows_present": strict_top_w_rows.exists(),
         "strict_same_source_wz_packet_present": strict_wz_packet.exists(),
-        "one_higgs_yukawa_selection_retained": statuses["one_higgs_yukawa_selection_status"] == "retained",
-        "hypercharge_uniqueness_retained": statuses["hypercharge_uniqueness_status"] == "retained",
-        "physical_scale_g2_retained": statuses["ew_coupling_status"] == "retained",
+        "one_higgs_yukawa_selection_retained": is_retained_grade(statuses["one_higgs_yukawa_selection_status"]),
+        "hypercharge_uniqueness_retained": is_retained_grade(statuses["hypercharge_uniqueness_status"]),
+        "physical_scale_g2_retained": is_retained_grade(statuses["ew_coupling_status"]),
         "retained_closure_allowed": False,
     }
-    check("neutral carrier-ray bridge is closed", blockers["neutral_carrier_ray_bridge_closed"])
+    check("lower-projector algebra core is closed", blockers["lower_projector_algebra_core_closed"])
+    check(
+        "same-surface qubit/Higgs carrier bridge is closed",
+        blockers["same_surface_qubit_higgs_carrier_bridge_closed"],
+    )
     check("strict W/Z denominator response packet is present", blockers["wz_denominator_response_closed"])
     check("symbolic top response row packet is present", blockers["symbolic_top_response_row_present"])
     check("full same-surface top/W transfer response remains open", not blockers["full_same_surface_top_w_transfer_response_closed"])
@@ -216,6 +256,7 @@ def part6_firewalls() -> None:
         "plaquette/u0",
         "observed top/W/Z/Higgs masses",
         "fitted selector",
+        "same-surface carrier repair is a top-response",
     ):
         check(f"firewall phrase present: {phrase}", phrase in note)
 
@@ -224,7 +265,9 @@ def part6_firewalls() -> None:
         "proposed_retained",
         "This note derives `y_t`",
         "retained Y_T closure has been obtained",
-        "full physical neutral EW/Higgs transfer surface",
+        "carrier-ray bridge is closed",
+        "same physical carrier surface has been derived",
+        "signed-record source is physically the neutral EW radial source",
         "coefficient-certified top/W response rows are present",
     ):
         check(f"forbidden overclaim absent: {phrase}", phrase not in note)
@@ -243,20 +286,28 @@ def main() -> int:
     part6_firewalls()
 
     result = {
-        "status": "exact support: signed-record source is the neutral Higgs carrier ray up to affine source reparameterization",
+        "status": (
+            "bounded support: signed-record lower-projector algebra plus EW "
+            "lower-ray neutrality plus same-surface charge-spectral projector repair; "
+            "top response and physical-scale gates open"
+        ),
         "proposal_allowed": False,
         "proposal_allowed_reason": (
-            "Carrier-ray alignment is closed and a symbolic top row is present, but "
-            "the top coefficient, retained one-Higgs/hypercharge authority, and "
-            "physical-scale g_2 authority remain open."
+            "The lower-projector algebra and same-surface carrier repair close "
+            "only as source-side support; the top coefficient, one-Higgs/hypercharge "
+            "authority, transfer-response, scalar-normalization, and physical-scale "
+            "g_2 authority remain open."
         ),
-        "carrier_ray_bridge_closed": True,
+        "lower_projector_algebra_core_closed": True,
+        "same_surface_qubit_higgs_carrier_bridge_closed": SAME_SURFACE_CARRIER.exists(),
         "current_blockers": blockers,
         "upstream_statuses": statuses,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
         "review_surface": [
             "docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md",
+            "docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md",
+            "docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md",
             "scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py",
             "outputs/yt_qubit_neutral_higgs_carrier_ray_bridge_2026-05-25.json",
         ],

@@ -1,66 +1,70 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_total_momentum_conservation_check.py
-runner_sha256: 066cf20c684ba9b78b880818fe8203947594bcd52c2b021b6d1bdbf856800f08
+runner_sha256: 24f7c2f2e273227d3104e22844888f2038bc94c16d2057474aba969c47b8b9b9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================
-LATTICE TOTAL MOMENTUM CONSERVATION CHECK
+TWO-STEP LATTICE TRANSLATION SECTOR CHECK
 ========================================================================
 
-------------------------------------------------------------------------
-TEST 1: P_total^μ(t) independent of t on shell
-------------------------------------------------------------------------
-    mu        P(t=0)        P(t=1)        P(t=2)        P(t=3)
-     0    0.0000e+00    0.0000e+00    0.0000e+00    0.0000e+00
-     1    0.0000e+00    0.0000e+00    0.0000e+00    0.0000e+00
-     2    0.0000e+00    0.0000e+00    0.0000e+00    0.0000e+00
-     3    0.0000e+00    0.0000e+00    0.0000e+00    0.0000e+00
+finite ring length L_s = 8
+two-step cyclic order N_2 = 4
 
-  max variation across time = 0.000e+00
+------------------------------------------------------------------------
+TEST 1: finite two-step translation group and projectors
+------------------------------------------------------------------------
+  ||T_2^N2 - I||                 = 0.000e+00
+  max ||Pi_k^2 - Pi_k||          = 4.860e-16
+  max ||Pi_k Pi_l||, k != l      = 2.133e-16
+  ||sum_k Pi_k - I||             = 4.256e-16
+  max ||T_2 Pi_k - phase Pi_k||  = 5.196e-16
   STATUS: PASS
 
 ------------------------------------------------------------------------
-TEST 2: discrete divergence theorem on periodic lattice
-        sum_{x⃗} ∂^L_i V^i_x = 0 by periodic-boundary cancellation
+TEST 2: H respects T_2 but not generic one-step T_1
 ------------------------------------------------------------------------
-  max |sum_{x⃗} ∂^L_i V^i_x| over time slices = 1.332e-15
+  ||[H, T_2]||_F = 4.041e-16
+  ||[H, T_1]||_F = 7.026e+00
+  boundary: two-step symmetry is exact; one-step symmetry is not assumed
   STATUS: PASS
 
 ------------------------------------------------------------------------
-TEST 3: temporal divergence vanishing on shell
-        P_total^t(t) - P_total^t(t-1) = 0
+TEST 3: sector projectors commute with H
 ------------------------------------------------------------------------
-  On-shell config (constant field) → Test 1 already verified
-  P_total^t = 0 at all t, hence trivially constant.
-  STATUS: PASS (composed from T1)
-
-------------------------------------------------------------------------
-TEST 4: periodic-lattice momentum spectrum {2π n / L_s : n = 0..L_s-1}
-------------------------------------------------------------------------
-  L_s = 4
-  spectrum: [0.0, 1.5708, 3.1416, 4.7124]
-  count: 4 = L_s ✓
+  max ||[H, Pi_k]||_F = 3.097e-16
   STATUS: PASS
 
 ------------------------------------------------------------------------
-TEST 5: [P̂_total, H] = 0 on translation-invariant H
+TEST 4: sector weights are conserved under exp(-i t H)
 ------------------------------------------------------------------------
-  ||[P̂, H]||_F = 7.941e-15
+  max sector-weight drift = 4.441e-16
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 5: two-step character count and one-step ambiguity
+------------------------------------------------------------------------
+  distinct T_2 phases = 4 = L_s/2
+  max |phase(n) - phase(n+L_s/2)| = 2.719e-16
+  boundary: T_2 sectors identify one-step momenta modulo pi
   STATUS: PASS
 
 ========================================================================
 SUMMARY
 ========================================================================
-  Test 1 (P_total constant on shell):           PASS
-  Test 2 (discrete divergence theorem):         PASS
-  Test 3 (temporal divergence on shell):        PASS
-  Test 4 (momentum spectrum count):             PASS
-  Test 5 ([P̂, H] = 0):                          PASS
+  T1 (cyclic projectors)                     PASS
+  T2 (two-step not one-step symmetry)        PASS
+  T3 ([H, Pi_k]=0)                           PASS
+  T4 (sector weights conserved)              PASS
+  T5 (two-step character boundary)           PASS
 
   OVERALL: PASS
+
+  verdict: bounded two-step translation-sector conservation exhibited;
+           no canonical P_x divergence, full one-site momentum, or
+           H_phys reconstruction bridge is claimed.
 
 ----- stderr -----
 

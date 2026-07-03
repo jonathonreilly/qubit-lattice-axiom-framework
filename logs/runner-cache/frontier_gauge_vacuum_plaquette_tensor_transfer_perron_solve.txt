@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py
-runner_sha256: 30e20905339fd994250e0d8a6e6df1205a4a312b0b4377ad508cb7122698de20
+runner_sha256: e18c2f117e973d3ce62d123f5b46f72e8f25084610f1a46aadf04d167894b8ee
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 11.54
+elapsed_sec: 4.57
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -46,8 +46,20 @@ Reference solve B (structural choice rho_(p,q) = delta_{(p,q),(0,0)})
   alpha_s,triv(v) (alpha_bare=1)        = 1.538403754467
 
 One-plaquette block reference
-  P_1plaq(6) = d/d beta log Z_1plaq(6)  (Bessel-determinant FD)
-  P_1plaq(6)                            = 0.999457104600
+  P_1plaq(6) = d/d beta log c_(0,0)(6)  (Bessel-determinant FD)
+  P_1plaq(6)                            = 0.422531738327
+
+Finite all-forward L_s=2 PBC cube Schur shortcut
+  rho_Schur = ((d c/c00)^12) d^(N_components - N_links), normalized at (0,0)
+  unique plaquettes, directed links       = 12, 24
+  cyclic-index nodes, edges, components   = 48, 48, 8
+  normalized dimension exponent           = -4
+  rho_Schur_(1,0), rho_Schur_(1,1)        = 2.124624038030e-01, 5.587932035228e-03
+  Perron eigenvalue                       = 3.516942399098
+  P_Schur,L2(6)                           = 0.429104996947
+  u_0,Schur,L2                            = 0.809358427105
+  alpha_s,Schur,L2(v) (alpha_bare=1)      = 1.526575239594
+  -> finite-volume diagnostic only; not the physical 3D Wilson environment
 
 Input rho_(p,q)(6) values defining each structural reference solve:
   reference solve A (Dirac-delta-environment, rho = 1):
@@ -131,30 +143,41 @@ Hostile-review diagnostics:
   [PASS] [THEOREM] at reference solve A (input rho_(p,q) = 1) the source-sector Perron problem yields an explicit positive conjugation-symmetric solution with a definite numerical P_loc(6)
          Perron eig=3.812630, psi swap=2.776e-16, P_loc=0.452407159045, u_0,loc=0.820129374352
   [PASS] [THEOREM] at reference solve B (input rho_(p,q) = delta_{(p,q),(0,0)}) the source-sector Perron problem yields an explicit positive conjugation-symmetric solution with a definite numerical P_triv(6)
-         Perron eig=3.441440, psi swap=1.722e-16, P_triv=0.422531739647, u_0,triv=0.806240916014
-  [PASS] [THEOREM] the NMAX truncation tail is super-polynomially summable: successive drifts decay geometrically and the dominant-weight band sum at the truncation edge is below theorem-grade tolerance
+         Perron eig=3.441440, psi swap=2.776e-16, P_triv=0.422531739647, u_0,triv=0.806240916014
+  [PASS] [THEOREM] the NMAX truncation tail is super-polynomially summable: successive drifts decay geometrically and the dominant-weight band sum at the truncation edge is below the source-side tolerance
          |P(NMAX=7)-P(NMAX=6)|=1.142e-09, |P(NMAX=6)-P(NMAX=5)|=1.139e-07, |P(NMAX=5)-P(NMAX=4)|/|P(NMAX=6)-P(NMAX=5)|=69.05, max_(p+q=NMAX) a^4 = 2.540e-16
-  [PASS] [THEOREM] the source-sector Perron value depends nontrivially on rho_(p,q)(6); explicit Wilson character coefficients and SU(3) intertwiners do not, by themselves, fix it (no-go: distinct admissible rho choices give distinct P(6))
-         family-1 spread = 0.029664, family-2 spread = 0.065300, family-3 spread = 0.163849; full admissible spread >= 0.193725; no choice of (tau, beta_env, k) is canonically picked out by local Wilson data
+  [PASS] [THEOREM] the source-sector Perron value depends nontrivially on rho_(p,q)(6); the three tested 1-parameter local-input closures do not fix a unique rho (bounded no-go: distinct normalized rho choices give distinct P(6))
+         family-1 spread = 0.029664, family-2 spread = 0.065300, family-3 spread = 0.163849; full admissible spread >= 0.193725; no choice of (tau, beta_env, k) is canonically picked out by the enumerated local-input closures
+  [PASS] [THEOREM] the all-forward L_s=2 PBC cube index graph is reconstructed internally with 12 plaquettes, 24 directed links, 48 cyclic-index nodes, 48 identifications, and 8 connected components
+         plaquettes=12, links=24, nodes=48, edges=48, components=8
+  [PASS] [THEOREM] the raw-coefficient Schur rho is normalized, conjugation-symmetric, and distinct from the three enumerated one-parameter local families
+         rho00=1.000000000000, rho10=2.124624038030e-01, rho01=2.124624038030e-01, rho11=5.587932035228e-03
+  [PASS] [THEOREM] the finite L_s=2 Schur rho gives a self-contained source-sector Perron value P_Schur,L2(6) = 0.429104996947 without importing that number from a sibling note
+         P_Schur,L2=0.429104996947, eig=3.516942399098, psi swap=2.220e-16
   [PASS] [SUPPORT] the Wilson character coefficients are not a constant-lift family: a_(1,1) is not equal to a_(1,0)^2
          a_(1,1) / a_(1,0)^2 = 0.908850 (rep-dependent structure, no scalar lift)
   [PASS] [SUPPORT] neither structural reference Perron value coincides with the canonical comparator; the runner does not tune any input to that comparator
          |P_loc - CANONICAL_COMPARATOR| = 1.409928e-01, |P_triv - CANONICAL_COMPARATOR| = 1.708683e-01; the comparator is consumed only by this hostile-review diagnostic
   [PASS] [SUPPORT] D_6^loc and the trivial-projection C_(Z_0^env) are operator-distinct; the residual environment factor is not a renaming of the local Wilson factor
          max|D_loc - P_0| = 3.187406e-02, |P_loc - P_triv| = 2.987542e-02
+  [PASS] [SUPPORT] the one-plaquette reference differentiates log c_(0,0)(beta), not a truncated sum over d_lambda c_lambda evaluated at the group identity
+         P_1plaq=0.422531738327, a_(1,0)=0.422531739650; this is the Haar partition coefficient diagnostic only
 
 Summary table (structural reference solves only — not the physical answer):
   reference solve         P(6)            u_0           alpha_s(v)
   A: rho = 1            0.4524071590    0.8201293744  1.4867408201
   B: rho = delta_(0,0)  0.4225317396    0.8062409160  1.5384037545
-  one-plaquette ref     0.9994571046    0.9998642485  1.0002715583
+  L2 Schur shortcut     0.4291049969    0.8093584271  1.5265752396
+  one-plaquette ref     0.4225317383    0.8062409154  1.5384037569
 
-No-go: c_lambda(6) and SU(3) intertwiners do not, by themselves, fix
-rho_(p,q)(6) on the source sector. Three distinct admissible parametric
-families (decreasing exp(-tau(p+q)), one-plaquette-environment ansatz
+Bounded no-go: the three tested 1-parameter local-input closures do
+not fix a unique rho_(p,q)(6) on the source sector. Three distinct
+normalized nonnegative parametric families (decreasing exp(-tau(p+q)),
+one-plaquette-environment ansatz
 rho^(beta_env), and tube-power ansatz rho^k) each use only c_lambda(6)
 and SU(3) intertwiners plus a single exogenous parameter (tau, beta_env,
-k), are each strictly admissible, and yet produce DIFFERENT P(6) values.
+k), with strict positivity away from degenerate endpoints, and yet
+produce DIFFERENT P(6) values.
 The canonical comparator value sits inside the admissible-rho span (it
 can be reached, for example, near k = 12 in the tube-power family), but
 no parameter choice is canonically picked out without further input.
@@ -163,12 +186,11 @@ The missing mathematical object is the boundary character measure of
 the unmarked 3D spatial Wilson environment with marked-plaquette
 boundary, equivalently the Perron eigenvector of the explicit positive
 tensor-transfer operator built from c_lambda(6) and SU(3) intertwiners
-on the full 3D environment lattice. That object is non-perturbative on
-a 3D SU(3) lattice gauge network with one boundary plaquette and is
-not derivable in closed form from the local character data above alone.
+on the full 3D environment lattice. That physical object is outside
+this finite reference-solve packet.
 
 ==============================================================================
-SUMMARY: THEOREM PASS=6 SUPPORT=3 FAIL=0
+SUMMARY: THEOREM PASS=9 SUPPORT=4 FAIL=0
 ==============================================================================
 
 ----- stderr -----

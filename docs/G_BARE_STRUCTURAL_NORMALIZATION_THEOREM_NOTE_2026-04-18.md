@@ -1,24 +1,42 @@
-# G_bare Structural Normalization: Cl(3) -> End(V) -> su(3) -> Wilson Action Chain
+# G_bare Structural Normalization Boundary: Cl(3) -> End(V) -> su(3) -> Wilson Action Chain
 
-**Date:** 2026-04-18 (bounded source hardening 2026-05-24)
-**Type:** bounded_theorem
+**Date:** 2026-04-18 (bounded source hardening 2026-05-24;
+source-boundary correction 2026-06-12)
+**Type:** bounded_theorem (bounded support plus normalization-obstruction
+boundary; not a positive derivation of a physical bare coupling)
+**Claim type:** bounded_theorem
 **Script:** `scripts/frontier_g_bare_structural_normalization.py`
-**Status:** bounded - self-contained structural-normalization support
-            conditional on the admitted Wilson plaquette action form and
-            continuum kinetic matching convention. This note does not assign
-            an audit verdict; independent audit owns `claim_type`,
-            `audit_status`, and any effective `retained_bounded`
-            propagation.
+**Status:** source proposal; independent audit required. The source scope is
+            self-contained structural-normalization support plus an explicit
+            residual action-coefficient boundary, conditional on the admitted
+            Wilson plaquette action form and kinetic matching convention.
+**Status authority:** independent audit lane. This source note does not assign
+            an audit verdict and does not edit audit-owned registry, ledger,
+            queue, or publication-status surfaces.
 
 ---
 
 ## Executive summary
 
-This note records Path 1 of the `g_bare = 1` internal-fixation program:
-establishing bounded structural support that the
-`Cl(3) -> End(V) -> su(3) -> Wilson action` chain fixes the Wilson plaquette
-coefficient once the Wilson action form and continuum kinetic matching
+This note records the corrected Path 1 boundary for the `g_bare = 1`
+internal-fixation program. The `Cl(3) -> End(V) -> su(3)` chain fixes the
+canonical generator basis and excludes scalar dilation of the generators.
+The standard Wilson-surface calculation then gives the textbook coefficient
+relation `beta = 2 N_c / g^2` once the Wilson action form and kinetic matching
 convention are supplied.
+
+The corrected boundary is that these facts **do not** derive the physical
+bare coupling `g = 1`. They derive only:
+
+```text
+fixed canonical generators + supplied Wilson action surface
+    -> beta = 2 N_c / g^2,
+```
+
+plus the statement that the generator rescaling route `T_a -> lambda T_a` is
+not an allowed automorphism of the fixed trace-Gram basis. A separate
+action/connection-normalization theorem is still required to set `g^2 = 1`
+as a physical input rather than the unrescaled-coordinate convention.
 
 **Verdict:**
 
@@ -36,35 +54,38 @@ convention are supplied.
   positive ratio determined by block dimensions). Both forms are diagonal
   in the canonical Gell-Mann basis with the *same* relative spectrum.
 
-- **Claim 3 (Wilson coefficient rigidity -> beta = 6)**: bounded conditional
-  support. The following sub-claims close relative to the admitted Wilson
-  action-form and kinetic-matching inputs:
+- **Claim 3 (Wilson coefficient relation and residual coupling multiplier)**:
+  bounded conditional support. The following sub-claims close relative to
+  the admitted Wilson action-form and kinetic-matching inputs:
 
   - (3a) Given canonical orthonormal generators `T_a` satisfying
     `Tr(T_a T_b) = delta_ab / 2`, and an operator-valued connection
     `A_op = sum_a A^a T_a` with *unrescaled* coefficients, the small-`a`
     expansion of `-beta Re Tr(U_plaq)` matches the continuum
     `(1/g^2) F^2` kinetic term only if `beta = 2 N_c / g^2`.
-  - (3b) In the *canonical Cl(3) basis*, `g = 1` corresponds to the absence
-    of a scalar rescaling of the canonically-fixed generators (Claim 1 + 2
-    support plus the direct trace-Gram scalar-dilation check below).
-  - (3c) Therefore `beta = 2 N_c = 6`.
+  - (3b) The scalar-dilation route `T_a -> lambda T_a` is excluded by the
+    fixed trace-Gram basis, but this does not exclude an independent action
+    coefficient `g^2 = rho`.
+  - (3c) Therefore the unrescaled-coordinate convention `g^2 = 1` gives
+    `beta = 2 N_c = 6`; the present packet does **not** derive that
+    convention as a physical bare-coupling theorem.
 
   What does NOT close: the Wilson action `S = -beta Re Tr(U_plaq)` is not
   itself *uniquely derived* from Cl(3) structure — it is the standard
   Euclidean lattice gauge action, and its *functional form* (quadratic in
   `F_munu`, summed over plaquettes) is imported as the standard kinetic
   ansatz. The theorem certifies only that, *given this standard action*,
-  the coefficient is forced by the fixed generator normalization. A reviewer
-  who contests the choice of Wilson plaquette action per se (vs. improved
-  actions, or non-kinetic corrections) is not answered by this theorem.
+  the coefficient relation follows from the fixed generator normalization.
+  A reviewer who contests the choice of Wilson plaquette action per se (vs.
+  improved actions, or non-kinetic corrections), or who asks why the physical
+  action multiplier has `g^2 = 1`, is not answered by this theorem.
 
-**Honest verdict**: Path 1 gives bounded support against the
-structural-normalization objection ("`g_bare = 1` is just absorbed
-convention") but does NOT close the action-choice objection ("why Wilson vs.
-Symanzik vs. an action from first principles?"). On the current admitted
-Wilson-evaluation surface, `g_bare = 1 <=> beta = 6` is conditional on the
-supplied Wilson action form and kinetic matching convention.
+**Honest verdict**: Path 1 gives bounded support against hidden scalar
+generator-normalization freedom, but it does NOT close the physical
+action-coefficient objection. On the current admitted Wilson-evaluation
+surface, `g_bare = 1 <=> beta = 6` is the unrescaled-coordinate convention
+unless a separate theorem fixes the Wilson kinetic coefficient or physical
+connection normalization.
 
 ---
 
@@ -80,18 +101,16 @@ This theorem builds on:
   -- su(3) closure on selected-axis fiber + complementary swap.
 - [THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md](./THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
   -- upstream `hw=1` triplet + exact induced `C_3[111]` cycle.
-- `.claude/science/derivations/native-gauge-scope-theorem-2026-04-17.md` --
-  upstream native-gauge construction is literally "bivectors of Cl(n)".
-- `.claude/science/derivations/native-gauge-family-uniqueness-2026-04-17.md`
-  -- `Lambda^2(R^n)` is the unique `O(n)`-covariant admissible bivector
-  subspace.
+- `scripts/frontier_native_gauge_family_uniqueness.py` -- runner-side check
+  that `Lambda^2(R^n)` is the unique `O(n)`-covariant admissible bivector
+  subspace on its stated finite test range.
 
 The no-scalar-dilation step is checked directly in this note and runner:
 `T_a -> lambda T_a` changes the fixed trace Gram matrix by `lambda^2` and is
 therefore not an automorphism of the canonical normalized generator basis.
 The downstream plaquette-observable evaluation row is not load-bearing here;
-it consumes the `beta = 6` boundary after this structural-normalization
-argument, rather than supplying it.
+it consumes `beta = 6` only after the separate unrescaled-coordinate
+convention `g^2 = 1` is supplied, rather than supplying that convention.
 
 ---
 
@@ -239,7 +258,8 @@ generators, so `k > 0`.
 
 ### Precise statement
 
-**Claim 3 (Wilson coefficient rigidity, narrow version).** Assume:
+**Claim 3 (Wilson coefficient relation and residual multiplier, narrow
+version).** Assume:
 
 - (P1) The continuum limit of the gauge action is `(1/(2 g^2)) Tr(F_munu F^munu)`,
   with `F_munu = partial_mu A_nu - partial_nu A_mu + i [A_mu, A_nu]`,
@@ -248,12 +268,21 @@ generators, so `k > 0`.
 - (P2) The lattice action is the standard Wilson plaquette form
   `S_W = -beta sum_{p} (1/N_c) Re Tr(U_p)` (up to an additive constant).
 
-Then `beta = 2 N_c / g^2` is the unique choice making the classical
-continuum limit match (P1). In the *canonical Cl(3)-normalized basis*
-where Claim 1 + 2 forbid scalar dilation of the generators (`g -> g/λ`
-is not absorbable because it requires a non-admissible `T_a -> λ T_a`
-rescaling), the canonical value is `g = 1`, hence `beta = 2 N_c = 6`
-for `SU(3)`.
+Then `beta = 2 N_c / g^2` is the coefficient relation making the classical
+Wilson surface match (P1). Claims 1 and 2 forbid absorbing `g` by scalar
+dilation of the canonical generators (`T_a -> lambda T_a`), because that
+changes the fixed trace-Gram basis. They do **not** fix the physical value
+of the separate action coefficient `g^2`. Equivalently, for every positive
+`rho`, the pair
+
+```text
+g^2 = rho,        beta = 2 N_c / rho
+```
+
+uses the same canonical generators and satisfies the same Wilson-surface
+coefficient relation. The special value `rho = 1` gives `beta = 6` for
+`SU(3)`, but this note does not derive `rho = 1` from retained framework
+inputs.
 
 ### Proof sketch
 
@@ -269,51 +298,56 @@ S_W = -beta · N_p + (beta / (2 N_c)) · a^4 sum_x sum_{mu<nu} F^a_{munu} F^a_{m
 (This is textbook: Creutz, Kogut, Montvay-Muenster. Verified numerically
 in the runner.)
 
-**(3.b) Matching to continuum.** The continuum action
-`(1/(2 g^2)) Tr(F F) = (1/(4 g^2)) F^a F^a` per spacetime point (using
-`Tr(T_a T_b) = delta_{ab}/2`) integrated over `a^4` gives:
+**(3.b) Matching to the supplied kinetic convention.** With
+`Tr(T_a T_b) = delta_ab/2`, the trace/component conversion is
+`Tr(F_munu F_munu) = (1/2) F^a_munu F^a_munu`. The coefficient matching is
+therefore best stated at the trace level to avoid double-counting
+convention drift in the `mu,nu` sums. On the standard Wilson convention
+used here, the kinetic surface gives:
 
 ```
-S_continuum^lattice-equiv = (1 / (4 g^2)) · a^4 · sum_x sum_{mu,nu} F^a_{munu} F^a_{munu}.
+S_continuum^lattice-equiv = (1 / g^2) · a^4 · sum_x sum_{mu<nu} Tr(F_munu F_munu).
 ```
 
-The factor-of-2 from the sum `mu < nu` vs `sum mu,nu` cancels with the
-Wilson plaquette double-counting, yielding the matching condition:
+Matching this trace-level normalization to the Wilson plaquette expansion
+in the textbook `beta = 2 N_c / g^2` convention yields the relation:
 
 ```
 beta / (2 N_c) = 1 / (2 g^2)
 <=>  beta = 2 N_c / g^2.
 ```
 
-For SU(3) with `g^2 = 1`, `beta = 6`.
+For SU(3) with the additional unrescaled-coordinate convention `g^2 = 1`,
+`beta = 6`.
 
-**(3.c) The canonical Cl(3) basis has g = 1.** Claims 1 and 2 together
-establish that the canonical generators `T_a` have fixed normalization
-`Tr(T_a T_b) = delta_{ab}/2` with no residual scalar freedom. Writing
-the connection as `A = sum_a A^a T_a` with *no additional `g` factor*
-is the direct Cl(3)-native description. Any alternative convention
-`A = g sum_a A^a T_a` with `g != 1` either:
+**(3.c) What the canonical Cl(3) basis actually fixes.** Claims 1 and 2
+together establish that the canonical generators `T_a` have fixed
+normalization `Tr(T_a T_b) = delta_ab/2` with no residual scalar freedom.
+Writing the operator connection as `A = sum_a A^a T_a` with no additional
+factor is the unrescaled-coordinate description. Any attempt to absorb a
+physical coefficient by `T_a -> lambda T_a` is forbidden:
 
-- rescales the generators `T_a -> g T_a` (forbidden by the fixed trace form in
-  Claim 2; the runner explicitly checks that scalar dilation changes the
-  canonical Gram matrix), or
-- rescales the coefficients `A^a -> g A^a` (a change of coordinates on
-  the *same* operator `A`, not a new physical parameter).
+- it rescales the generators (forbidden by the fixed trace form in Claim 2;
+  the runner explicitly checks that scalar dilation changes the canonical
+  Gram matrix), or
+- it rescales the coordinates of the same operator `A`, which is a coordinate
+  convention unless a separate action/connection-normalization theorem says
+  which coordinate normalization is physical.
 
-In the canonical Cl(3) basis where `A` is the Cl(3)-native connection
-(i.e., the physical connection is the operator `A`, with coefficients
-determined by the Cl(3) bivector/derivation structure), `g = 1` is the
-unique assignment consistent with both generator normalization and
-coefficient interpretation.
+Thus the canonical basis fixes the generator normalization but leaves a
+residual positive action multiplier `rho = g^2` unless an independent
+physical normalization input is supplied.
 
 ### What Claim 3 supplies
 
 - Given the Wilson action form `-beta Re Tr(U_p)` and canonical generators,
-  `beta = 2 N_c / g^2` follows.
-- In the canonical Cl(3) basis, `g = 1` is supported by structural rigidity
-  (Claims 1 + 2 plus the direct scalar-dilation exclusion).
-- Hence `beta = 6` is not an independent free parameter on the bounded
-  Cl(3) Wilson-evaluation surface.
+  the relation `beta = 2 N_c / g^2` follows on the supplied Wilson surface.
+- The direct scalar-dilation exclusion proves that `g` cannot be hidden by
+  changing the canonical generator basis.
+- The present packet does not derive a physical value for `g^2`; it exposes
+  that value as the remaining action/connection-normalization input.
+- If the unrescaled-coordinate convention `g^2 = 1` is supplied, then
+  `beta = 6`.
 
 ### What Claim 3 DOES NOT close
 
@@ -325,6 +359,9 @@ coefficient interpretation.
 - **The premise (P2).** The claim that the gauge kinetic action should
   be a function of plaquette holonomies at all (vs. arbitrary higher
   loops, or non-kinetic terms) is an external premise.
+- **The physical value of `g^2`.** The source does not derive a theorem
+  selecting `rho = g^2 = 1` rather than another positive action multiplier
+  paired with `beta = 2 N_c / rho`.
 - **Dynamical selection.** No dynamical fixed-point argument fixes `g = 1`;
   this is a normalization/rigidity claim, not a running-coupling claim.
 - **Continuum-limit interpretation.** If one rejects the assumption
@@ -332,10 +369,9 @@ coefficient interpretation.
   (as the framework does, since there is no continuum limit in the
   Planck-lattice hypothesis), then (3.a)-(3.b) become an algebraic
   matching at the lattice scale rather than a continuum-limit matching.
-  The algebraic conclusion `beta = 2 N_c / g^2 = 6` still holds by
-  direct plaquette expansion at first nontrivial order, but its physical
-  interpretation shifts from "continuum matching" to "first-order
-  operator identity on the lattice."
+  The algebraic relation `beta = 2 N_c / g^2` still holds by direct
+  plaquette expansion at first nontrivial order, but the special value
+  `beta = 6` additionally requires the unrescaled `g^2 = 1` convention.
 
 **Circularity audit for Claim 3.**
 
@@ -344,22 +380,19 @@ coefficient interpretation.
 - Step (3.b) is the canonical QFT matching; uses no β or g input beyond
   the definitional identity being derived.
 - Step (3.c) uses Claims 1 + 2 plus the direct trace-Gram scalar-dilation
-  check. It does NOT assume g = 1 as input; it derives g = 1 from the absence
-  of any admissible rescaling.
+  check. It does NOT derive `g = 1`; it proves only that a generator scalar
+  dilation is not an allowed way to hide `g`.
 
-**However**: the claim that `A` *is* the Cl(3)-native connection with
-unit coefficient — vs. `A = g A_raw` for some `A_raw` identified by an
-independent Cl(3) criterion — is a *definitional* choice. A skeptic can
-object: "I will call the Cl(3)-native connection `A_Cl`, and define
-`A_raw = A_Cl / g` for any `g`, then `g` is free." The answer: any such
-reparametrization is a coordinate change on the same operator `A`, not
-a new physical parameter. The direct trace-Gram check below isolates the
-non-coordinate part: changing the generators themselves changes the fixed
-canonical trace form.
+**Residual boundary**: the claim that `A` is the Cl(3)-native connection
+with unit coefficient — vs. `A = g A_raw` for some `A_raw` identified by an
+independent Cl(3) criterion — is a definitional choice until an independent
+physical normalization theorem is supplied. The direct trace-Gram check
+isolates the non-coordinate part: changing the generators themselves changes
+the fixed canonical trace form.
 
-### Verdict for Claim 3: **BOUNDED-CONDITIONAL SUPPORT**.
-Supplies rigidity support for the coefficient *given* the admitted Wilson action form.
-Does not close the action-choice question itself.
+### Verdict for Claim 3: **BOUNDED SUPPORT + RESIDUAL MULTIPLIER BOUNDARY**.
+Supplies the coefficient relation and excludes generator scalar dilation.
+Does not close the physical action-coefficient normalization.
 
 ---
 
@@ -390,9 +423,9 @@ Canonical orthonormal basis {T_a}, Tr(T_a T_b) = delta_ab / 2
    v
 beta = 2 N_c / g^2
    |
-   | canonical connection has g = 1 by Cl(3) rigidity
+   | if the unrescaled-coordinate convention g^2 = 1 is supplied
    v
-beta = 6 for SU(3) (Claim 3, conditional on Wilson action form)
+beta = 6 for SU(3) (conditional on Wilson action form and rho = 1)
 ```
 
 ---
@@ -409,16 +442,16 @@ The full chain was re-inspected for places where `g_bare = 1` or
 | Scalar-dilation exclusion | No | No | Derives "no scalar dilation" |
 | Claim 3a (plaquette expansion) | No (symbolic g) | No (symbolic β) | Relation β = 2N_c/g² |
 | Claim 3b (matching) | No | No | β = 2N_c/g² |
-| Claim 3c (canonical g=1) | Derives g=1 from rigidity | No | g = 1 |
+| Claim 3c (residual multiplier) | Keeps g symbolic | No | no-generator-dilation boundary |
 
-**No circular usage detected.** The final line "β = 6" follows from
-combining derived relations, not from asserting β = 6 anywhere.
+**No circular usage detected.** The final line "β = 6" follows only after
+supplying the unrescaled-coordinate convention `g^2 = 1`; it is not derived
+by this note as a physical bare-coupling theorem.
 
 **Important caveat**: the downstream plaquette-observable evaluation row uses
-`β = 6` as an *evaluation input*. That use of `β = 6` is downstream of this
-theorem, not upstream. This theorem is what upgrades that input from a
-"convention" to a "structural consequence" within the admitted Wilson-action
-scope.
+`β = 6` as an evaluation input. This source supports the Wilson coefficient
+relation and the no-generator-dilation boundary, but it does not upgrade
+`g^2 = 1` from convention to retained physical theorem.
 
 ---
 
@@ -448,13 +481,15 @@ The runner performs explicit symbolic/numeric verification:
   - Build small SU(3) links `U_mu(x) = exp(i a A^a_mu T_a)` with random A.
   - Compute `-beta Re Tr(U_p) / N_c` and extract `O(a^4)` coefficient.
   - Verify matching with `(1/(2 g^2)) F^2` continuum form.
-  - Verify `beta = 2 N_c` uniquely satisfies the matching at `g^2 = 1`.
-  - Verify that rescaling generators `T_a -> lambda T_a` *would* shift
-    beta by `lambda^2`, but is forbidden by Claim 2.
+  - Verify the family `beta = 2 N_c / rho` for several positive
+    `rho = g^2` values using the same canonical generators.
+  - Verify that rescaling generators `T_a -> lambda T_a` changes the
+    trace Gram matrix and is therefore not an admissible automorphism of
+    the canonical basis.
 
 - **Section D (end-to-end):** Confirm that `Cl(3) axioms` + `graph-first
-  selector input` + `Wilson action form` => `beta = 6` with no
-  circular step.
+  selector input` + `Wilson action form` => `beta = 2 N_c / g^2` with no
+  circular step; `beta = 6` appears only after supplying `g^2 = 1`.
 
 **Runner results**: see final section.
 
@@ -473,20 +508,21 @@ The runner performs explicit symbolic/numeric verification:
 | Killing-form rigidity on simple Lie algebras | pure math | standard math input |
 | Standard Wilson plaquette action | lattice-QFT convention | admitted action-form input, not derived from Cl(3) |
 | Standard small-a plaquette expansion | pure math | standard expansion input |
-| Canonical kinetic-term continuum limit `(1/g^2) F^2` | QFT convention | admitted matching convention |
+| Canonical kinetic-term convention `(1/g^2) F^2` | QFT convention | admitted matching convention |
+| Physical value of `g^2` / Wilson action coefficient | open bridge | not derived here |
 
-**Weak link**: the Wilson plaquette action form is admitted as the standard
-lattice gauge action on the current package surface, not derived from Cl(3)
-first principles. The framework uses it for downstream plaquette evaluation,
-but this note does not close the question of whether an alternative action
-(Symanzik, Cl(3)-native volume-form, etc.) would give the same structural
-answer.
+**Weak link**: the Wilson plaquette action form and the physical value of the
+action coefficient remain admitted/open. The framework uses `beta = 6` for
+downstream plaquette evaluation only after taking the unrescaled-coordinate
+convention `g^2 = 1`; this note does not close the question of whether an
+alternative action or a native action-normalization theorem would select the
+same value.
 
 **Bounded reading**: given that the community-standard Wilson plaquette action
 is the admitted lattice kinetic term on the current Wilson-evaluation surface,
-the Cl(3) rigidity chain supports `g_bare = 1 <=> beta = 6` with no remaining
-continuous scalar-normalization freedom. The action-form premise remains
-admitted.
+the Cl(3) rigidity chain supports the canonical generator normalization and
+the Wilson coefficient relation, with no remaining continuous scalar freedom
+in the generators. The physical action multiplier remains open.
 
 ---
 
@@ -497,17 +533,17 @@ admitted.
 > (Cl(3) chirality, S_3 axis permutation, (Z_2)^3 axis sign flips).
 > The Hilbert-Schmidt trace form induced on su(3) equals the Cl(3)
 > pseudoscalar-adjoint form up to a single positive scalar, fixed by
-> Killing-form rigidity on simple Lie algebras. In the resulting
-> canonical generator basis `Tr(T_a T_b) = delta_{ab}/2`, the Wilson
-> plaquette action's continuum-kinetic matching forces `beta = 2 N_c / g^2`,
-> and the canonical Cl(3) connection corresponds to `g = 1`, hence
-> `beta = 6` on the admitted SU(3) Wilson-evaluation surface. This is a
-> bounded structural-normalization statement, not a dynamical fixation of g.
+> Killing-form rigidity on simple Lie algebras. In the resulting canonical
+> generator basis `Tr(T_a T_b) = delta_ab/2`, the Wilson plaquette action's
+> supplied kinetic matching gives `beta = 2 N_c / g^2`. The unrescaled
+> coordinate convention `g^2 = 1` then gives `beta = 6` on the admitted
+> SU(3) Wilson-evaluation surface, but this note does not derive that
+> convention as a physical bare-coupling theorem.
 >
-> The theorem does not derive the Wilson action form itself; that remains an
-> admitted lattice-QFT action-form input. Given that convention, however,
-> `g_bare = 1` is fixed by the Cl(3) generator structure up to the bounded
-> scope above, with no residual scalar freedom.
+> The theorem does not derive the Wilson action form or the physical
+> action-coefficient normalization itself; those remain open inputs. Given
+> the Wilson surface, however, `g_bare` cannot be hidden in a scalar
+> generator dilation of the Cl(3)-fixed canonical basis.
 
 ---
 
@@ -515,11 +551,11 @@ admitted.
 
 ### What it closes
 
-- The residual objection that `g_bare = 1` might be "just convention"
-  once the Cl(3) generator structure is fixed.
+- The residual objection that `g_bare` might be hidden in a scalar
+  rescaling of the fixed Cl(3) generator basis.
 - The residual objection that the Cl(3) -> End(V) embedding might
   carry hidden continuous parameters.
-- The structural relationship `g = 1 <=> beta = 6` on the admitted SU(3)
+- The structural relationship `beta = 2 N_c / g^2` on the admitted SU(3)
   Wilson-evaluation surface, conditional on the admitted Wilson action form,
   with no circular input.
 
@@ -527,6 +563,8 @@ admitted.
 
 - The question of whether the Wilson plaquette action itself is forced
   by Cl(3) structure (vs. any other standard lattice action).
+- The physical normalization theorem selecting `g^2 = 1` rather than a
+  residual positive action multiplier `rho`.
 - Dynamical running of `g`: this is a bare-coupling / UV normalization
   statement, not a flow claim.
 - The downstream phenomenology using `beta = 6` as an evaluation input
@@ -540,19 +578,20 @@ admitted.
 python3 scripts/frontier_g_bare_structural_normalization.py
 ```
 
-Expected: all structural checks PASS; the one BOUNDED section on
-"alternative-action sensitivity" documents the action-choice gap
-honestly (it is a status marker, not a failure).
+Expected: all structural checks PASS; the bounded sections document the
+action-choice and action-coefficient gaps honestly (they are status markers,
+not failures).
 
 ---
 
 ## Next steps (outside scope of this note)
 
-- Attempt to derive the Wilson plaquette action form from Cl(3) first
-  principles (e.g., as the minimal gauge-invariant curvature square in
-  the Cl(3) volume-form induced measure). If that closes, Claim 3 could move
-  beyond this bounded admitted-action-form scope after independent audit.
-- Alternatively, demonstrate robustness of `beta = 6` (equivalently
-  `g = 1`) across the natural family of lattice gauge actions (Wilson,
-  Symanzik, fermion-induced), showing the normalization is
-  action-choice-independent at leading order.
+- Attempt to derive the Wilson plaquette action form and its physical
+  coefficient normalization from Cl(3) first principles (e.g., as the minimal
+  gauge-invariant curvature square in the Cl(3) volume-form induced measure).
+  If that closes, Claim 3 could move beyond this bounded admitted-action-form
+  scope after independent audit.
+- Alternatively, demonstrate robustness of the `rho = 1` normalization
+  across the natural family of lattice gauge actions (Wilson, Symanzik,
+  fermion-induced), showing the normalization is action-choice-independent
+  at leading order.

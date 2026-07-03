@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Audit the bare alpha_3 / alpha_em dimension-ratio support corollary.
+"""Verify the bare alpha_3 / alpha_em formal assumed-input identity theorem.
 
-This runner intentionally verifies both pieces of the landing:
+This runner verifies only the repaired current source packet:
 
-1. the exact bare-coupling algebra, and
-2. the status boundary that keeps this as support-side bookkeeping rather than
-   a new minimal-stack theorem.
+1. the exact bare-coupling algebra under explicit formal hypotheses H1-H4, and
+2. the source boundary that forbids retained EW-lane, minimal-stack, or
+   low-energy phenomenology claims from this current row.
 """
 
 from __future__ import annotations
@@ -57,15 +57,12 @@ def float_close(label: str, audit: Audit, actual: float, expected: float, tol: f
     audit.check(label, abs(actual - expected) <= tol, f"actual={actual:.17g}, expected={expected:.17g}")
 
 
-def audit_authority_surfaces(audit: Audit) -> None:
-    note_path = "docs/FRAMEWORK_BARE_ALPHA_3_ALPHA_EM_DIMENSION_FIXED_RATIO_SUPPORT_NOTE_2026-04-25.md"
-    cl3_path = "docs/CL3_SM_EMBEDDING_THEOREM.md"
-    ew_path = "docs/YT_EW_COLOR_PROJECTION_THEOREM.md"
-    matrix_path = "docs/publication/ci3_z3/PUBLICATION_MATRIX.md"
-    validation_path = "docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP.md"
-    atlas_path = "docs/publication/ci3_z3/DERIVATION_ATLAS.md"
-
-    paths = [note_path, cl3_path, ew_path, matrix_path, validation_path, atlas_path]
+def audit_scope_boundary(audit: Audit) -> None:
+    note_path = "docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md"
+    archived_note_path = (
+        "archive_unlanded/framework-bare-alpha-assumed-input-salvage-2026-04-30/"
+        "FRAMEWORK_BARE_ALPHA_3_ALPHA_EM_DIMENSION_FIXED_RATIO_SUPPORT_NOTE_2026-04-25.md"
+    )
     archive_root = ROOT / "archive_unlanded"
 
     def _authority_exists(rel: str) -> bool:
@@ -77,72 +74,84 @@ def audit_authority_surfaces(audit: Audit) -> None:
                 return True
         return False
 
-    for rel in paths:
-        audit.check(f"authority file exists: {rel}", _authority_exists(rel))
+    audit.check(f"source file exists: {note_path}", _authority_exists(note_path))
+    audit.check(f"archived audited-failed wrapper exists: {archived_note_path}", _authority_exists(archived_note_path))
 
     note = read(note_path)
-    cl3 = read(cl3_path)
-    ew = read(ew_path)
-    matrix = read(matrix_path)
-    validation = read(validation_path)
-    atlas = read(atlas_path)
+    archived_note = read(archived_note_path)
+    flat_note = " ".join(note.split())
+    flat_archived = " ".join(archived_note.split())
 
     audit.check(
-        "note status is support corollary",
-        "support corollary" in note and "not a new retained front-door theorem" in note,
+        "note status is bounded formal identity theorem only",
+        "bounded-support / formal assumed-input identity theorem" in flat_note
+        and "not a live retained EW-normalization theorem" in flat_note,
+    )
+    audit.check(
+        "note declares formal hypotheses H1-H4",
+        all(marker in note for marker in ["H1:", "H2:", "H3:", "H4:"])
+        and "formal hypotheses in this row, not physical authorities" in flat_note,
+    )
+    audit.check(
+        "note states exact load-bearing theorem",
+        "alpha_3(bare) / alpha_em(bare) = 2d + 3" in note
+        and "sin^2(theta_W)(bare) = (d + 1)/(2d + 3)" in note,
+    )
+    audit.check(
+        "note blocks retained EW-lane authority",
+        "does not assert that a retained EW-normalization lane exists" in note
+        and "does not derive the coupling inputs" in note,
     )
     audit.check(
         "note blocks minimal-stack promotion",
-        "does not promote the `Cl(3) -> SM` support packet" in note,
+        "does not promote a `Cl(3) -> SM` support packet" in flat_note
+        and "minimal-input stack" in note,
     )
     audit.check(
-        "note blocks direct low-energy readout",
-        "does not promote the bare integer `9`" in note
-        and "directly observable low-energy" in note,
+        "note blocks low-energy phenomenology",
+        "does not claim direct low-energy phenomenology" in flat_note,
     )
     audit.check(
-        "note distinguishes SU(5)",
-        "not the SU(5) bare normalization" in note and "5/72" in note,
+        "note records current 2026-04-30 source authority",
+        "Date:** 2026-04-30" in note
+        and "archive_unlanded/framework-bare-alpha-assumed-input-salvage-2026-04-30/" in note,
+    )
+    audit.check(
+        "status boundary forbids bare retained",
+        "actual_current_surface_status: bounded-support" in note
+        and "bare_retained_allowed: false" in note
+        and "proposal_allowed: false" in note,
+    )
+    audit.check(
+        "archived failed wrapper points at canonical repair packet",
+        "docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md" in archived_note
+        and "direct same-path handoff to the narrowed source boundary" in archived_note,
+    )
+    audit.check(
+        "archived failed wrapper is non-authority conditional algebra only",
+        "This file remains archived" in archived_note
+        and "not a live retained theorem" in archived_note
+        and "not retained-grade support authority" in flat_archived
+        and "supplied inputs are hypotheses of the lemma" in flat_archived,
+    )
+    audit.check(
+        "archived failed wrapper reproduction matches current runner verdict",
+        "VERDICT: FORMAL ASSUMED-INPUT IDENTITY THEOREM VERIFIED" in archived_note,
     )
 
     forbidden = [
+        "support corollary on a retained EW-normalization surface",
+        "retained EW normalization lane remains the authoritative route",
+        "candidate retained-grade support corollary on the retained EW surface",
         "Retained derivation theorem on main",
         "three independent retained inputs",
         "independent retained structural routes",
+        "**Status:** retained",
+        "physical use is closed by this row",
     ]
     for phrase in forbidden:
-        audit.check(f"forbidden overclaim absent: {phrase}", phrase not in note)
-
-    audit.check(
-        "CL3 packet remains support-only",
-        "not part of the accepted minimal-input stack" in cl3 and "support theorem" in cl3,
-    )
-    audit.check(
-        "CL3 packet carries d+1/d+2 bookkeeping",
-        "1/(d+1)" in cl3 and "1/(d+2)" in cl3 and "bare gauge couplings" in cl3,
-    )
-    audit.check(
-        "EW normalization lane exists",
-        "standalone retained EW normalization lane" in ew
-        or "Retained status" in ew
-        or "EW normalization lane" in ew,
-    )
-    audit.check(
-        "publication matrix keeps CL3 support boundary",
-        "support packet / atlas only; not part of the accepted minimal-input stack" in matrix,
-    )
-    audit.check(
-        "publication matrix carries bare-ratio support row",
-        "Bare alpha_3/alpha_em dimension-ratio support" in matrix and "bounded support corollary" in matrix,
-    )
-    audit.check(
-        "validation map carries support row",
-        "Bare alpha_3/alpha_em dimension-ratio support" in validation and "support corollary" in validation,
-    )
-    audit.check(
-        "atlas carries support tool row",
-        "Bare alpha_3/alpha_em dimension-ratio support" in atlas and "not part of the accepted minimal-input stack" in atlas,
-    )
+        audit.check(f"forbidden overclaim absent from canonical note: {phrase}", phrase not in note)
+        audit.check(f"forbidden overclaim absent from archived wrapper: {phrase}", phrase not in archived_note)
 
 
 def audit_exact_algebra(audit: Audit) -> None:
@@ -158,9 +167,9 @@ def audit_exact_algebra(audit: Audit) -> None:
     gem_sq = Fraction(1, 1) / inv_gem
 
     frac_eq("input d fixed to 3", audit, Fraction(d, 1), Fraction(3, 1))
-    frac_eq("g3^2 canonical", audit, g3_sq, Fraction(1, 1))
-    frac_eq("g2^2 = 1/(d+1)", audit, g2_sq, Fraction(1, 4))
-    frac_eq("gY^2 = 1/(d+2)", audit, gy_sq, Fraction(1, 5))
+    frac_eq("H2 formal hypothesis: g3^2 = 1", audit, g3_sq, Fraction(1, 1))
+    frac_eq("H3 formal hypothesis: g2^2 = 1/(d+1)", audit, g2_sq, Fraction(1, 4))
+    frac_eq("H4 formal hypothesis: gY^2 = 1/(d+2)", audit, gy_sq, Fraction(1, 5))
     frac_eq("1/g2^2 = d+1", audit, inv_g2, Fraction(4, 1))
     frac_eq("1/gY^2 = d+2", audit, inv_gy, Fraction(5, 1))
 
@@ -211,15 +220,15 @@ def audit_dimension_fingerprint(audit: Audit) -> None:
 
 def main() -> int:
     audit = Audit()
-    print("=== Bare alpha_3 / alpha_em dimension-ratio support audit ===")
-    audit_authority_surfaces(audit)
+    print("=== Bare alpha_3 / alpha_em formal assumed-input identity theorem ===")
+    audit_scope_boundary(audit)
     audit_exact_algebra(audit)
     audit_dimension_fingerprint(audit)
     print(f"TOTAL: PASS={audit.passed}, FAIL={audit.failed}")
     if audit.failed:
         print("VERDICT: FAIL")
         return 1
-    print("VERDICT: SUPPORT COROLLARY CLOSED")
+    print("VERDICT: FORMAL ASSUMED-INPUT IDENTITY THEOREM VERIFIED")
     return 0
 
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_bridge_uv_class_uniqueness.py
-runner_sha256: 6a68629fdbd29b6997b2f2c65344d55a008f555267c4227ae5a4e1ac4a9f23e5
+runner_sha256: cd50e9b45ccf87b2a0f5ee5efc442a57b7a26f66ad7f49c7038bf471f17f26a2
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 160.90
+elapsed_sec: 47.42
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -64,7 +64,8 @@ This remains a scanned proxy-family certificate, not a proof over the
 full microscopic bridge space.
 ==============================================================================
 FINAL TALLY: 9 PASS / 0 FAIL
-Elapsed: 160.18 s
+Elapsed: 46.83 s
 ==============================================================================
+
 ----- stderr -----
 

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_r_matter_reduction_2026_05_29.py
-runner_sha256: c13160a3d4b3512a17d400ed98ab8408358239041026261ee276b03d7184dd6a
+runner_sha256: 4aeeebc43a0b9ca112317b00f0a31f43780d080a5219a46895de52210cbe7cc3
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.13
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
@@ -24,16 +24,16 @@ status: nonzero_exit
   [PASS] colored + uncolored = 15 gauge-charged Weyl
 
 ----------------------------------------------------------------------------------------
-2. Multiplicities sourced from retained / decoration-under-retained
+2. Source classes for R-MATTER arithmetic
 ----------------------------------------------------------------------------------------
   [PASS] color triplet multiplicity = N_c = 3 (retained graph_first_su3 / cl3_color_automorphism)
   [PASS] isospin doublet multiplicity = 2 (retained native_gauge_closure)
   [PASS] Q_L = (color 3) * (isospin 2) = 6 from the two retained gauge fundamentals
   [PASS] LH per-rep assignment (2,3)+(2,1) = 6+2 = 8 Weyl (decoration_under_graph_first_su3) (8)
-  [PASS] RH gauge-charged completion u_R+d_R+e_R = 3+3+1 = 7 (retained_bounded anomaly singlet) (7)
+  [PASS] RH gauge-charged completion u_R+d_R+e_R = 3+3+1 = 7 (registered P1 inventory) (7)
   [PASS] LH(8) + RH(7) = 15 gauge-charged Weyl
   [PASS] generation count n_gen = 3 (retained three_generation_observable)
-  [PASS] Weyl-to-dof cardinality = 2 (retained spin_statistics_cardinality)
+  [PASS] Weyl-to-dof factor = 2 (registered P4 state-count convention)
 
 ----------------------------------------------------------------------------------------
 3. nu_R / I12 fork (106.75 vs 112)
@@ -58,6 +58,7 @@ status: nonzero_exit
 ----------------------------------------------------------------------------------------
 5. Note / authority cross-checks
 ----------------------------------------------------------------------------------------
+  [PASS] authority file exists: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
   [PASS] authority file exists: GRAPH_FIRST_SU3_INTEGRATION_NOTE.md
   [PASS] authority file exists: CL3_COLOR_AUTOMORPHISM_THEOREM.md
   [PASS] authority file exists: NATIVE_GAUGE_CLOSURE_NOTE.md
@@ -66,26 +67,37 @@ status: nonzero_exit
   [PASS] authority file exists: ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md
   [PASS] authority file exists: THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
   [PASS] authority file exists: THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] authority file exists: DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
   [PASS] authority file exists: SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md
   [PASS] authority file exists: PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md
   [PASS] authority file exists: ONE_GENERATION_MATTER_CLOSURE_NOTE.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): GRAPH_FIRST_SU3_INTEGRATION_NOTE.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): CL3_COLOR_AUTOMORPHISM_THEOREM.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): NATIVE_GAUGE_CLOSURE_NOTE.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): LEFT_HANDED_CHARGE_MATCHING_NOTE.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md
+  [PASS] support authority cited as markdown link: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
+  [PASS] support authority cited as markdown link: GRAPH_FIRST_SU3_INTEGRATION_NOTE.md
+  [PASS] support authority cited as markdown link: CL3_COLOR_AUTOMORPHISM_THEOREM.md
+  [PASS] support authority cited as markdown link: NATIVE_GAUGE_CLOSURE_NOTE.md
+  [PASS] support authority cited as markdown link: LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md
+  [PASS] support authority cited as markdown link: LEFT_HANDED_CHARGE_MATCHING_NOTE.md
+  [PASS] support authority cited as markdown link: ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] support authority cited as markdown link: THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
+  [PASS] support authority cited as markdown link: THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] support authority cited as markdown link: DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
+  [PASS] support authority cited as markdown link: SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] support authority cited as markdown link: PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md
   [PASS] separated stronger statement is plain-text (non-load-bearing): ONE_GENERATION_MATTER_CLOSURE_NOTE.md
   [PASS] note marks R-MATTER reduced for the thermalized dof count
-  [PASS] note names I12 nu_R thermal exclusion as the load-bearing residual
-  [PASS] note names R-SPIN as remaining residual
-  [PASS] note names the neutral-singlet branch convention as residual
+  [PASS] note names I12 nu_R thermal exclusion as the load-bearing fork
+  [PASS] note registers P1/P4/P5 finite-inventory packet
+  [PASS] note routes RH inventory through registered P1
+  [PASS] note routes nu_R exclusion through P1/P5
+  [PASS] note routes Weyl dof factor through P4 with Dirac/Weyl cross-check
+  [PASS] Dirac/Weyl source note contains source-local Q2 rank counting
+  [PASS] Dirac/Weyl source note contains massless chirality split
+  [PASS] note keeps native SM inventory derivation out of scope
+  [PASS] note does not claim Weyl factor is native-derived downstream
+  [PASS] note carries RH inventory as registered bounded premise, not native-derived
+  [PASS] note marks neutral-singlet branch convention not load-bearing on count
   [PASS] note carries the 106.75 vs 112 fork explicitly
-  [PASS] note states R-MATTER is NOT fully retired
+  [PASS] note states R-MATTER retired for bounded g_* count only
 
 ----------------------------------------------------------------------------------------
 6. Ledger status cross-check (optional)
@@ -99,7 +111,10 @@ status: nonzero_exit
   [PASS] decoration source lhcm_matter_assignment_from_su3_representation_note_2026-05-02 is decoration_under_graph_first_su3_integration_note (ledger = decoration_under_graph_first_su3_integration_note)
   [PASS] decoration source left_handed_charge_matching_note is decoration_under_graph_first_su3_integration_note (ledger = decoration_under_graph_first_su3_integration_note)
   [PASS] anomaly singlet completion is retained_bounded (ledger = retained_bounded)
-  [FAIL] per-site spin-1/2 carrier (R-SPIN) is audited_conditional (stays residual) (ledger = retained)
+  [PASS] SM finite-inventory wrapper is retained_bounded (ledger = retained_bounded)
+  [PASS] Dirac/Weyl dof source is retained_bounded support (ledger = retained_bounded)
+  [PASS] P1/P4/P5 registered inventory supplies the physical boundary
+  [PASS] R-MATTER retired only for bounded g_* count
   [PASS] full one-generation closure stays unaudited (separated, not reduced by this note) (ledger = unaudited)
 
 ----------------------------------------------------------------------------------------
@@ -109,8 +124,10 @@ status: nonzero_exit
   [PASS] claim type is bounded_theorem
   [PASS] status authority is independent audit lane only
   [PASS] note states full one-generation closure NOT claimed derived
-  [PASS] note states nu_R thermal exclusion NOT claimed derived (import I12)
+  [PASS] note states nu_R thermal exclusion is registered, not primitive-derived
   [PASS] note states neutral-singlet branch convention NOT claimed derived
+  [PASS] note states RH inventory is registered, not native-derived
+  [PASS] note states thermal Weyl factor is registered, not downstream native-derived
   [PASS] no load-bearing forbidden import 'wilson plaquette' (1 occurrence(s))
   [PASS] no load-bearing forbidden import 'staggered phase' (1 occurrence(s))
   [PASS] no load-bearing forbidden import 'brillouin' (1 occurrence(s))
@@ -127,10 +144,10 @@ status: nonzero_exit
 ----------------------------------------------------------------------------------------
 SCORECARD
 ----------------------------------------------------------------------------------------
-  PASS = 88
-  FAIL = 1
+  PASS = 106
+  FAIL = 0
 
-RESULT: PASS=88 FAIL=1
+RESULT: PASS=106 FAIL=0
 
 ----- stderr -----
 

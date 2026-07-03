@@ -1,0 +1,456 @@
+{
+  "claim_id": "wave_direct_dm_h025_fam2_seed1_followup_note",
+  "note": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md",
+  "manifest": {
+    "note": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md",
+    "target_runner": "scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py",
+    "target_cache": "logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt",
+    "target_json": "outputs/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json",
+    "generic_point_runner": "scripts/wave_direct_dm_h025_point_runner.py",
+    "generic_point_runner_cache": "logs/runner-cache/wave_direct_dm_h025_point_runner.txt",
+    "measure_dm_source": "scripts/wave_direct_dm_matched_history_probe.py",
+    "measure_dm_cache": "logs/runner-cache/wave_direct_dm_matched_history_probe.txt",
+    "continuum_helper_source": "scripts/wave_retardation_continuum_limit.py",
+    "continuum_helper_cache": "logs/runner-cache/wave_retardation_continuum_limit.txt",
+    "manifest_runner": "scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py",
+    "manifest_cache": "logs/runner-cache/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.txt",
+    "manifest_json": "outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json"
+  },
+  "summary": {
+    "pass": 86,
+    "fail": 0
+  },
+  "results": [
+    {
+      "name": "manifest_path_exists:note",
+      "pass": true,
+      "detail": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md"
+    },
+    {
+      "name": "manifest_path_exists:target_runner",
+      "pass": true,
+      "detail": "scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py"
+    },
+    {
+      "name": "note_names_manifest_path:target_runner",
+      "pass": true,
+      "detail": "scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md"
+    },
+    {
+      "name": "manifest_path_exists:target_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt"
+    },
+    {
+      "name": "note_names_manifest_path:target_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md"
+    },
+    {
+      "name": "manifest_path_exists:target_json",
+      "pass": true,
+      "detail": "outputs/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json"
+    },
+    {
+      "name": "note_names_manifest_path:target_json",
+      "pass": true,
+      "detail": "outputs/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md"
+    },
+    {
+      "name": "manifest_path_exists:generic_point_runner",
+      "pass": true,
+      "detail": "scripts/wave_direct_dm_h025_point_runner.py"
+    },
+    {
+      "name": "note_names_manifest_path:generic_point_runner",
+      "pass": true,
+      "detail": "scripts/wave_direct_dm_h025_point_runner.py is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md"
+    },
+    {
+      "name": "manifest_path_exists:generic_point_runner_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/wave_direct_dm_h025_point_runner.txt"
+    },
+    {
+      "name": "note_names_manifest_path:generic_point_runner_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/wave_direct_dm_h025_point_runner.txt is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md"
+    },
+    {
+      "name": "manifest_path_exists:measure_dm_source",
+      "pass": true,
+      "detail": "scripts/wave_direct_dm_matched_history_probe.py"
+    },
+    {
+      "name": "note_names_manifest_path:measure_dm_source",
+      "pass": true,
+      "detail": "scripts/wave_direct_dm_matched_history_probe.py is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md"
+    },
+    {
+      "name": "manifest_path_exists:measure_dm_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/wave_direct_dm_matched_history_probe.txt"
+    },
+    {
+      "name": "note_names_manifest_path:measure_dm_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/wave_direct_dm_matched_history_probe.txt is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md"
+    },
+    {
+      "name": "manifest_path_exists:continuum_helper_source",
+      "pass": true,
+      "detail": "scripts/wave_retardation_continuum_limit.py"
+    },
+    {
+      "name": "note_names_manifest_path:continuum_helper_source",
+      "pass": true,
+      "detail": "scripts/wave_retardation_continuum_limit.py is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md"
+    },
+    {
+      "name": "manifest_path_exists:continuum_helper_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/wave_retardation_continuum_limit.txt"
+    },
+    {
+      "name": "note_names_manifest_path:continuum_helper_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/wave_retardation_continuum_limit.txt is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md"
+    },
+    {
+      "name": "note_names_manifest_artifact:manifest_runner",
+      "pass": true,
+      "detail": "scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md"
+    },
+    {
+      "name": "note_names_manifest_artifact:manifest_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.txt is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md"
+    },
+    {
+      "name": "note_names_manifest_artifact:manifest_json",
+      "pass": true,
+      "detail": "outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md"
+    },
+    {
+      "name": "source_untruncated:target_runner",
+      "pass": true,
+      "detail": "scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py has 7306 bytes"
+    },
+    {
+      "name": "source_marker:target_runner:FAMILY = \"Fam2\"",
+      "pass": true,
+      "detail": "FAMILY = \"Fam2\" present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py"
+    },
+    {
+      "name": "source_marker:target_runner:SEED = 1",
+      "pass": true,
+      "detail": "SEED = 1 present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py"
+    },
+    {
+      "name": "source_marker:target_runner:H_VALUE = 0.25",
+      "pass": true,
+      "detail": "H_VALUE = 0.25 present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py"
+    },
+    {
+      "name": "source_marker:target_runner:from wave_direct_dm_matched_history_probe import FAMILIES, measure_dm",
+      "pass": true,
+      "detail": "from wave_direct_dm_matched_history_probe import FAMILIES, measure_dm present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py"
+    },
+    {
+      "name": "source_marker:target_runner:from wave_retardation_continuum_limit import S_PHYS",
+      "pass": true,
+      "detail": "from wave_retardation_continuum_limit import S_PHYS present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py"
+    },
+    {
+      "name": "source_marker:target_runner:EXPECTED = {",
+      "pass": true,
+      "detail": "EXPECTED = { present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py"
+    },
+    {
+      "name": "source_marker:target_runner:SUMMARY: WAVE H025 FAM2 SEED1 PASS",
+      "pass": true,
+      "detail": "SUMMARY: WAVE H025 FAM2 SEED1 PASS present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py"
+    },
+    {
+      "name": "source_untruncated:generic_point_runner",
+      "pass": true,
+      "detail": "scripts/wave_direct_dm_h025_point_runner.py has 3062 bytes"
+    },
+    {
+      "name": "source_marker:generic_point_runner:from wave_direct_dm_matched_history_probe import FAMILIES, measure_dm",
+      "pass": true,
+      "detail": "from wave_direct_dm_matched_history_probe import FAMILIES, measure_dm present in scripts/wave_direct_dm_h025_point_runner.py"
+    },
+    {
+      "name": "source_marker:generic_point_runner:from wave_retardation_continuum_limit import S_PHYS",
+      "pass": true,
+      "detail": "from wave_retardation_continuum_limit import S_PHYS present in scripts/wave_direct_dm_h025_point_runner.py"
+    },
+    {
+      "name": "source_untruncated:measure_dm_source",
+      "pass": true,
+      "detail": "scripts/wave_direct_dm_matched_history_probe.py has 6751 bytes"
+    },
+    {
+      "name": "source_marker:measure_dm_source:from wave_retardation_continuum_limit import",
+      "pass": true,
+      "detail": "from wave_retardation_continuum_limit import present in scripts/wave_direct_dm_matched_history_probe.py"
+    },
+    {
+      "name": "source_marker:measure_dm_source:def measure_dm",
+      "pass": true,
+      "detail": "def measure_dm present in scripts/wave_direct_dm_matched_history_probe.py"
+    },
+    {
+      "name": "source_marker:measure_dm_source:free = prop_beam",
+      "pass": true,
+      "detail": "free = prop_beam present in scripts/wave_direct_dm_matched_history_probe.py"
+    },
+    {
+      "name": "source_marker:measure_dm_source:z_free = cz",
+      "pass": true,
+      "detail": "z_free = cz present in scripts/wave_direct_dm_matched_history_probe.py"
+    },
+    {
+      "name": "source_marker:measure_dm_source:h_early = solve_wave",
+      "pass": true,
+      "detail": "h_early = solve_wave present in scripts/wave_direct_dm_matched_history_probe.py"
+    },
+    {
+      "name": "source_marker:measure_dm_source:h_late = solve_wave",
+      "pass": true,
+      "detail": "h_late = solve_wave present in scripts/wave_direct_dm_matched_history_probe.py"
+    },
+    {
+      "name": "source_untruncated:continuum_helper_source",
+      "pass": true,
+      "detail": "scripts/wave_retardation_continuum_limit.py has 21276 bytes"
+    },
+    {
+      "name": "source_marker:continuum_helper_source:S_PHYS = 0.004",
+      "pass": true,
+      "detail": "S_PHYS = 0.004 present in scripts/wave_retardation_continuum_limit.py"
+    },
+    {
+      "name": "source_marker:continuum_helper_source:def grow",
+      "pass": true,
+      "detail": "def grow present in scripts/wave_retardation_continuum_limit.py"
+    },
+    {
+      "name": "source_marker:continuum_helper_source:def solve_wave",
+      "pass": true,
+      "detail": "def solve_wave present in scripts/wave_retardation_continuum_limit.py"
+    },
+    {
+      "name": "source_marker:continuum_helper_source:def field_at",
+      "pass": true,
+      "detail": "def field_at present in scripts/wave_retardation_continuum_limit.py"
+    },
+    {
+      "name": "source_marker:continuum_helper_source:def prop_beam",
+      "pass": true,
+      "detail": "def prop_beam present in scripts/wave_retardation_continuum_limit.py"
+    },
+    {
+      "name": "source_marker:continuum_helper_source:field[idx] = field_at",
+      "pass": true,
+      "detail": "field[idx] = field_at present in scripts/wave_retardation_continuum_limit.py"
+    },
+    {
+      "name": "source_marker:continuum_helper_source:def cz",
+      "pass": true,
+      "detail": "def cz present in scripts/wave_retardation_continuum_limit.py"
+    },
+    {
+      "name": "cache_runner_matches:target_cache",
+      "pass": true,
+      "detail": "scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py == scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py"
+    },
+    {
+      "name": "cache_sha_fresh:target_cache",
+      "pass": true,
+      "detail": "cache sha c1d401ee87e275b853d56ac27903b44c0a9b697c3b6625e92d34ff689691b4b9 current sha c1d401ee87e275b853d56ac27903b44c0a9b697c3b6625e92d34ff689691b4b9"
+    },
+    {
+      "name": "cache_exit_ok:target_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_contains:target_cache:status: ok",
+      "pass": true,
+      "detail": "status: ok"
+    },
+    {
+      "name": "cache_contains:target_cache:PASS family is fixed to Fam2",
+      "pass": true,
+      "detail": "PASS family is fixed to Fam2"
+    },
+    {
+      "name": "cache_contains:target_cache:PASS seed is fixed to 1",
+      "pass": true,
+      "detail": "PASS seed is fixed to 1"
+    },
+    {
+      "name": "cache_contains:target_cache:PASS H is fixed to 0.25",
+      "pass": true,
+      "detail": "PASS H is fixed to 0.25"
+    },
+    {
+      "name": "cache_contains:target_cache:dM(early)  = +0.003777",
+      "pass": true,
+      "detail": "dM(early)  = +0.003777"
+    },
+    {
+      "name": "cache_contains:target_cache:dM(late)   = +0.005814",
+      "pass": true,
+      "detail": "dM(late)   = +0.005814"
+    },
+    {
+      "name": "cache_contains:target_cache:delta_hist = -0.002037",
+      "pass": true,
+      "detail": "delta_hist = -0.002037"
+    },
+    {
+      "name": "cache_contains:target_cache:MEASURE_DM_SOURCE_PACKET=PASS",
+      "pass": true,
+      "detail": "MEASURE_DM_SOURCE_PACKET=PASS"
+    },
+    {
+      "name": "cache_contains:target_cache:SUMMARY: WAVE H025 FAM2 SEED1 PASS=33 FAIL=0",
+      "pass": true,
+      "detail": "SUMMARY: WAVE H025 FAM2 SEED1 PASS=33 FAIL=0"
+    },
+    {
+      "name": "cache_runner_matches:generic_point_runner_cache",
+      "pass": true,
+      "detail": "scripts/wave_direct_dm_h025_point_runner.py == scripts/wave_direct_dm_h025_point_runner.py"
+    },
+    {
+      "name": "cache_sha_fresh:generic_point_runner_cache",
+      "pass": true,
+      "detail": "cache sha e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a current sha e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a"
+    },
+    {
+      "name": "cache_exit_ok:generic_point_runner_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_contains:generic_point_runner_cache:status: ok",
+      "pass": true,
+      "detail": "status: ok"
+    },
+    {
+      "name": "cache_contains:generic_point_runner_cache:WAVE DIRECT-DM SINGLE-POINT RUNNER",
+      "pass": true,
+      "detail": "WAVE DIRECT-DM SINGLE-POINT RUNNER"
+    },
+    {
+      "name": "cache_contains:generic_point_runner_cache:dM(early)  =",
+      "pass": true,
+      "detail": "dM(early)  ="
+    },
+    {
+      "name": "cache_contains:generic_point_runner_cache:dM(late)   =",
+      "pass": true,
+      "detail": "dM(late)   ="
+    },
+    {
+      "name": "cache_contains:generic_point_runner_cache:delta_hist =",
+      "pass": true,
+      "detail": "delta_hist ="
+    },
+    {
+      "name": "cache_runner_matches:measure_dm_cache",
+      "pass": true,
+      "detail": "scripts/wave_direct_dm_matched_history_probe.py == scripts/wave_direct_dm_matched_history_probe.py"
+    },
+    {
+      "name": "cache_sha_fresh:measure_dm_cache",
+      "pass": true,
+      "detail": "cache sha 6ed89e5a01072d2b12a8a80a5aeb1626b0546058594614eae620683bb5290211 current sha 6ed89e5a01072d2b12a8a80a5aeb1626b0546058594614eae620683bb5290211"
+    },
+    {
+      "name": "cache_exit_ok:measure_dm_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_contains:measure_dm_cache:status: ok",
+      "pass": true,
+      "detail": "status: ok"
+    },
+    {
+      "name": "cache_contains:measure_dm_cache:WAVE DIRECT-DM MATCHED-HISTORY PROBE",
+      "pass": true,
+      "detail": "WAVE DIRECT-DM MATCHED-HISTORY PROBE"
+    },
+    {
+      "name": "cache_contains:measure_dm_cache:Two source schedules with the same start/end/final geometry",
+      "pass": true,
+      "detail": "Two source schedules with the same start/end/final geometry"
+    },
+    {
+      "name": "cache_contains:measure_dm_cache:[strength=0.004000]",
+      "pass": true,
+      "detail": "[strength=0.004000]"
+    },
+    {
+      "name": "cache_runner_matches:continuum_helper_cache",
+      "pass": true,
+      "detail": "scripts/wave_retardation_continuum_limit.py == scripts/wave_retardation_continuum_limit.py"
+    },
+    {
+      "name": "cache_sha_fresh:continuum_helper_cache",
+      "pass": true,
+      "detail": "cache sha 0c1ffd073cb1f811e2c74507d6bbefe658c4798efcd5cca3522c16fe2ea8c2e1 current sha 0c1ffd073cb1f811e2c74507d6bbefe658c4798efcd5cca3522c16fe2ea8c2e1"
+    },
+    {
+      "name": "cache_exit_ok:continuum_helper_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_contains:continuum_helper_cache:status: ok",
+      "pass": true,
+      "detail": "status: ok"
+    },
+    {
+      "name": "cache_contains:continuum_helper_cache:WAVE-RETARDATION CONTINUUM-LIMIT REFINEMENT",
+      "pass": true,
+      "detail": "WAVE-RETARDATION CONTINUUM-LIMIT REFINEMENT"
+    },
+    {
+      "name": "cache_contains:continuum_helper_cache:S_phys (field source strength) = 0.004",
+      "pass": true,
+      "detail": "S_phys (field source strength) = 0.004"
+    },
+    {
+      "name": "cache_contains:continuum_helper_cache:[fine] H = 0.25",
+      "pass": true,
+      "detail": "[fine] H = 0.25"
+    },
+    {
+      "name": "cache_contains:continuum_helper_cache:dM = +0.007212",
+      "pass": true,
+      "detail": "dM = +0.007212"
+    },
+    {
+      "name": "cache_contains:continuum_helper_cache:PARTIAL",
+      "pass": true,
+      "detail": "PARTIAL"
+    },
+    {
+      "name": "note_has_transitive_helper_repair_section",
+      "pass": true,
+      "detail": "wave note has the 2026-06-06 helper repair section"
+    },
+    {
+      "name": "note_preserves_bounded_boundary",
+      "pass": true,
+      "detail": "repair section states that status movement remains audit-owned"
+    }
+  ],
+  "status_boundary": "bounded-support source-packet repair only; independent audit owns any ledger/status movement"
+}

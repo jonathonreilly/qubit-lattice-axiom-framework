@@ -1,0 +1,86 @@
+===== runner cache v1 =====
+runner: scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py
+runner_sha256: 80ce5205438d8d484eb4a1a75ce0555db62d5c990980188f66b5e04a0638be7a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+B0 - source-boundary guards: W2/action-level premises quarantined
+------------------------------------------------------------------------------
+PASS: source note is supplied-boundary, not physical bridge closure
+PASS: W2 physical-registrability identification is quarantined
+PASS: full action-level determinant datum is not globally derived here
+PASS: physical/non-registrable/multi-plaquette exclusions remain non-claims
+PASS: source note is scoped as supplied-context algebra only
+PASS: 2026-06-20 conditional-scoping repair names BOTH supplied premises (i) W2 and (ii) theta_eff entry
+PASS: 2026-06-20 repair keeps downstream strong-CP use explicitly conditional on (i) and (ii)
+PASS: 2026-06-20 repair does NOT derive the two supplied premises
+PASS: source note expected scorecard matches runner count
+PASS: 2026-06-18 wiring cites the mass-side epsilon-Hermiticity bridge as a source-edge
+PASS: mass-side source-edge supplies first-power Berezin + epsilon-Hermiticity mechanisms
+PASS: mass-side source-edge is not imported as audit status and keeps K-reality/orientation/gauge residuals live
+
+------------------------------------------------------------------------------
+B1 - K/CPT orbit structure of the determinant datum (3x3 numeric)
+------------------------------------------------------------------------------
+PASS: det(conj M_u conj M_d) = conj det(M_u M_d) (8 samples)
+PASS: dagger variant gives the same conjugated datum (8 samples)
+PASS: conjugation is an involution => K/CPT orbit of z is {z, conj z}
+PASS: |det(M_u M_d)| is K/CPT-invariant
+PASS: arg det(M_u M_d) -> -arg det(M_u M_d) under K/CPT
+PASS: arg det(M_u M_d) = arg det M_u + arg det M_d (mod 2 pi)
+
+------------------------------------------------------------------------------
+B2 - multiplicative entry of the mass datum (disjoint records, Leg-A miniature)
+------------------------------------------------------------------------------
+PASS: det over disjoint (block) records is multiplicative (5 samples)
+PASS: union-record phase = sum of per-record phases (mod 2 pi)
+PASS: miniature staggered-like D is anti-Hermitian (5 samples)
+PASS: epsilon = diag(I,-I) anticommutes with D (epsilon pairing)
+PASS: det(D + m I) real positive for real m > 0 (selected surface, Leg-A form)
+PASS: exp(Tr log(D+M)) = det(D+M) (Gaussian weight = determinant, branch-free)
+PASS: orientation flip alpha -> -alpha conjugates the weight: det(D+M(-alpha)) = conj det(D+M(alpha))  [same |det|, opposite arg: exactly the K/CPT orbit pair of B1]
+
+------------------------------------------------------------------------------
+B3 - forcing + exhaustion: FULL additive solution space by nullspace count
+------------------------------------------------------------------------------
+PASS: Model A (phase = Z_12 torsion): additive solution space has dimension 1  [nullspace dim = 1; torsion alone kills the phase generator]
+PASS: Model A survivor = modulus coordinate (k = 0 class), phase coefficient 0  [|overlap with F(i,j)=i| = 1.000000000000]
+PASS: Model B (real-lift phase): additive solution space has dimension 2  [nullspace dim = 2: span{a*i + b*j} (odd phase lift admitted)]
+PASS: additive => ODD in the phase coordinate (checked on the full basis)
+PASS: Model B + K/CPT orbit constancy: solution space cuts 2 -> 1 (even AND odd => 0 phase)  [nullspace dim = 1]
+PASS: EXHAUSTION: the complete registrable solution space = modulus (k=0) class  [|overlap with F(i,j)=i| = 1.000000000000; phase content exactly zero]
+PASS: additivity + multiplicative union datum => F(z w) = F(z) + F(w) and F(1) = 0  [block determinant multiplicativity plus the full additive/even solution-space cut leaves only the modulus line]
+
+------------------------------------------------------------------------------
+B4 - hostile guards: old cos(arg z) re-run + new hostile readings
+------------------------------------------------------------------------------
+PASS: F1 = log|z|: additive AND orbit-constant AND phase-free (the survivor)
+PASS: F2 = cos(arg z) [OLD guard]: orbit-constant but NOT additive -> killed by ADDITIVITY  [witness phi1=phi2=2pi/3: cos(4pi/3)=-0.5000 != 2cos(2pi/3)=-1.0000]
+PASS: F2 is phase-sensitive (same |z|, different F2) -> evenness alone is NOT erasure
+PASS: F3 = |sin(arg z)| [NEW hostile]: orbit-constant, phase-sensitive, NOT additive -> killed by ADDITIVITY
+PASS: F4 = principal Arg [NEW hostile]: fails additivity at the wrap AND fails orbit constancy  [wrap witness: Arg(z^2)=-1.5708 != 2*Arg(z)=+4.7124]
+PASS: F5 = interference cos(arg z1 - arg z2) [NEW hostile]: orbit-constant under simultaneous conj
+PASS: F5 is phase-sensitive yet violates additivity (cross term) -> killed by NO-CROSS-TERM/additivity  [I(e1 u e2) - I(e1) - I(e2) = +1.0000 != 0]
+PASS: F6 = k*phi (real-lift additive phase) [NEW hostile]: additive but NOT orbit-constant -> killed by ORBIT constancy  [even AND odd => k = 0; this is Model B's 2 -> 1 cut at a single candidate]
+PASS: kill table: additivity alone admits F6; orbit constancy alone admits F2/F3/F5; the INTERSECTION admits only the modulus class  [matches the exact nullspace counts of B3 (2 -> 1, survivor = modulus)]
+
+------------------------------------------------------------------------------
+B5 - action-level composition (per-plaquette class) + named boundary
+------------------------------------------------------------------------------
+PASS: per-plaquette (single-plane-summand) class: all dual-pair cross-plane mixed derivatives vanish  [composes with retained_bounded cross-plane absence; no local F.Ftilde slot to host an orientation datum]
+PASS: BOUNDARY: registrability of the physical readout (W2) is a standing premise, not derived here  [theorem is conditional on the Record-registrable class (additivity + orbit constancy)]
+PASS: BOUNDARY: strong-CP premise 1 ('no bare theta slot') is a SEPARATE action-surface premise  [RP no-go note keeps it open; this bridge addresses ONLY the mass-orientation datum]
+PASS: BOUNDARY: per-plaquette class is a licensed input (retained_bounded); multi-plaquette/clover reopens a cross-plane slot  [the action-level half is conditional on the supplied class]
+PASS: BOUNDARY: fermion-source/insertion observables carry (D+M)^{-1} dependence outside the theta_eff vacuum-weight premise  [the bridge covers the arg det(M_u M_d) contribution to theta_eff, not all M-dependence]
+PASS: BOUNDARY: prior additive+even core note is cited as prior statement (currently unaudited); its legs are re-derived self-contained here  [no unaudited dependency is load-bearing for this runner's checks]
+
+==============================================================================
+TOTAL: PASS=47 FAIL=0
+==============================================================================
+
+----- stderr -----
+

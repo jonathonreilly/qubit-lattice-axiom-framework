@@ -1,0 +1,88 @@
+===== runner cache v1 =====
+runner: scripts/kinetic_isotropy_primitive_irreducibility_support_2026_06_09.py
+runner_sha256: 5d372024ef9c23567c60dfb49705a62c969038e641fc346934075459713cacba
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+================================================================================================
+kinetic-isotropy primitive support: listed current structures do not fix xi=c_t/c_s
+================================================================================================
+
+------------------------------------------------------------------------------------------------
+Part A: RP / the positive self-adjoint transfer does NOT force xi=1 (holds for every c_t/c_s)
+------------------------------------------------------------------------------------------------
+  [PASS] (A.0.5) c_t/c_s=0.5: transfer positive (e^-E in (0,1)), H=E/a_tau self-adjoint >=0 for all modes -- RP/spectrum hold  --  E in [0.291,2.300]>0, e^-E in [0.100,0.748] subset (0,1)
+  [PASS] (A.1.0) c_t/c_s=1.0: transfer positive (e^-E in (0,1)), H=E/a_tau self-adjoint >=0 for all modes -- RP/spectrum hold  --  E in [0.206,1.769]>0, e^-E in [0.170,0.814] subset (0,1)
+  [PASS] (A.2.0) c_t/c_s=2.0: transfer positive (e^-E in (0,1)), H=E/a_tau self-adjoint >=0 for all modes -- RP/spectrum hold  --  E in [0.146,1.322]>0, e^-E in [0.267,0.864] subset (0,1)
+  [PASS] (A.5.0) c_t/c_s=5.0: transfer positive (e^-E in (0,1)), H=E/a_tau self-adjoint >=0 for all modes -- RP/spectrum hold  --  E in [0.092,0.871]>0, e^-E in [0.419,0.912] subset (0,1)
+   ... OS1 (reflection positivity) + the spectrum condition H>=0 are INVARIANT under c_t/c_s: they pin the
+   ... FORM (positive self-adjoint transfer, bounded-below H), NOT the dimensionless ratio xi. c_t=c_s is OS0
+   ... (full Euclidean SO(4)/B_4 invariance) = the Lorentz OUTPUT being sought -- invoking it would be circular.
+
+------------------------------------------------------------------------------------------------
+Part B: xi is a DIFFERENT object from the single-clock a_tau (clock=constant ratio; xi=p-dependent)
+------------------------------------------------------------------------------------------------
+  [PASS] (B1) clock rescale a_tau->2 a_tau gives a CONSTANT E(p)-ratio across all modes (spread ~ 0) -- a pure overall conformal factor  --  E-ratio spread under clock rescale = 0.0e+00 (=0); single-clock fixes only the product a_tau*H
+  [PASS] (B2) c_t->2 c_t gives a p-DEPENDENT E(p)-ratio (spread >> 0) -- a genuine reshape of the dispersion, NOT a constant rescale  --  E-ratio spread under xi change = 0.040 >> 0; provably a different object from the clock-rate freedom
+   ... => the a_tau-removable no-go (single_clock_uniqueness_scope_boundary, only a_tau*H fixed) is structurally
+   ... blind to xi: it removes a CONSTANT scale, while xi is a p-DEPENDENT shape. They are different freedoms.
+
+------------------------------------------------------------------------------------------------
+Part C: the 6-NN NO-diagonal causal order is L1 taxicab -- no round L2 cone matches (admits a xi-family)
+------------------------------------------------------------------------------------------------
+  [PASS] (C1) the taxicab front speed differs by direction: axis 1.0, face-diag 0.707, body-diag 0.577 -- NOT a single round (L2) cone  --  axis=1.000, face-diag=0.707, body-diag=0.577; spread=0.423
+  [PASS] (C2) a round L2 cone through the diamond-boundary points demands c_t = 1.0, 1.414, 1.732 simultaneously -- impossible  --  axis=1.000, face-diag=1.414, body-diag=1.732 -> no faithful round-cone embedding
+   ... => the combinatorial 1-tick-1-edge order fixes the reachability-cone SHAPE (the conformal class up to the
+   ... L1 diamond), but admits a 1-parameter xi stretch of the time-vs-space coordinate embedding: it does NOT
+   ... fix the dynamical aperture xi=c_t/c_s. The MIN_TIME_STEP 'conformal class derived' is audited_renaming.
+
+------------------------------------------------------------------------------------------------
+Part D: the NON-FIXATION WITNESS -- two models pass the shared checks and differ on xi=1
+------------------------------------------------------------------------------------------------
+  [PASS] (D1) BOTH M1(xi=1) and M2(xi=2.5) satisfy the shared witness checks: positive transfer/RP, spectrum H>=0, single-clock product, 1-tick-1-edge reachability  --  M1 rp/sc/rc=True/True/True; M2 rp/sc/rc=True/True/True
+  [PASS] (D2) they differ on xi=1: M1 has c_t=c_s (v^2=1) and M2 has c_t!=c_s (v^2=0.4!=1), while the shared witness checks still pass  --  M1 xi=1.00 v^2=1.00; M2 xi=2.50 v^2=0.40
+  [PASS] (D3) model-family non-fixation: the same shared checks pass at xi=1 and xi!=1, so those checks do not determine c_t=c_s  --  the extra premise that excludes M2 is c_t=c_s itself; this supports keeping the primitive explicit
+
+------------------------------------------------------------------------------------------------
+Part E: spatial isotropy is not fixed by bare positivity checks (the M3 witness)
+------------------------------------------------------------------------------------------------
+  [PASS] (E1) M3 (spatially anisotropic K_x=1, K_y=2.5, same Z^3/Quantum/Record) is axiom-faithful: positive transfer/RP/H>=0 hold  --  omega^2>=0 for every K_i>0 -> M3 passes the SAME 4-leg certification as M2
+  [PASS] (E2) M3 breaks the x<->y O_h automorphism (omega^2(p) != omega^2(R_xy p)) -- bare positivity alone does not impose spatial kinetic isotropy  --  |omega^2(p)-omega^2(R_xy p)|=0.646 != 0
+
+------------------------------------------------------------------------------------------------
+Part F: but spatial and temporal differ in KIND -- O_h is axiom-resident, the time<->space generator is NOT (the Cl(3) root)
+------------------------------------------------------------------------------------------------
+  [PASS] (F1) O_h = Aut of the Z^3 6-NN edge set: all 48 signed permutations preserve {+-e_i}, and a shear does NOT -- O_h is a GENUINE automorphism the axiom asserts  --  48/48 signed perms preserve the NN set; shear preserves=False
+  [PASS] (F2) under axiom-resident O_h x time-parity the 4 axes split into TWO orbits {t},{x,y,z}; only B_4 merges them into one -- and B_4-merge IS the xi=1 premise  --  O_h axis orbits=[{0}, {1, 2, 3}]; B_4 orbit=[0, 1, 2, 3]
+  [PASS] (F3) THE Cl(3) ROOT: solving {T,sigma_i}=0 for a 4th anticommuting (time-like) generator in M_2(C)=Cl(3,0) gives ONLY T=0 (full-rank system) -- no 4th generator exists  --  coefficient-matrix rank=4/4 (full) -> a=b=c=d=0 -> T=0; the pseudoscalar s1 s2 s3 = i*I is CENTRAL, not a generator
+  [PASS] (F4) the pseudoscalar sigma_x sigma_y sigma_z = i*I is central (=i*I), confirming the 3 Paulis are a MAXIMAL anticommuting set -- the '3' of Cl(3) is why time is the odd-one-out (xi=1 rooted in d=3)  --  3 anticommuting Paulis = 3 commensurable spatial axes (one O_h orbit); no 4th => time cannot be put on the same Clifford/edge footing without a NEW premise
+
+------------------------------------------------------------------------------------------------
+Verdict and honest scope (narration -- not tests)
+------------------------------------------------------------------------------------------------
+   ... GROUND-UP SHARPENING: spatial isotropy z_x=z_y=z_z is also not fixed by bare positivity checks (M3, Part E), BUT
+   ... it differs in KIND from xi=1: O_h is a GENUINE automorphism of the axiom-asserted Z^3 graph (Part F1),
+   ... so spatial isotropy follows from 'respect the symmetry you already asserted (a cubic lattice)'. xi=1's
+   ... time<->space generator is NOT axiom-resident (Part F2-F4: no 4th anticommuting Cl(3) generator), so xi=1
+   ... is STRICTLY STRONGER than spatial isotropy -- it ADDS a generator the axioms disclaim, not a relabel.
+   ... VERDICT: the listed current structures do not fix xi=1 (c_t=c_s). This supports the registered
+   ... kinetic-isotropy primitive; it is not a new primitive, Tier-A admission, or bounded-status source.
+   ... The primitive is precisely OS0 kinetic-form isotropy (the temporal kinetic coefficient on the same footing as space);
+   ... no axiom supplies it (Lattice gives no metric/cone/4th-axis; Quantum/Record give no dynamics/time-metric;
+   ... the scale primitive has zero dimensionless content; RP and the single-clock product a_tau*H are xi-blind).
+   ... SCOPE: a model-family non-fixation witness. A future retained dynamics could still derive the same
+   ... kinetic isotropy and retire the primitive. This runner does not demote rows or make delta_v=0 unconditional.
+
+================================================================================================
+kinetic-isotropy primitive support: the listed current structures do not fix xi=c_t/c_s.
+Positive transfer/RP/single-clock/reachability checks hold across a xi-family, while xi=1
+and xi!=1 remain distinguished. This supports keeping the registered primitive explicit.
+Sets no audit status and supplies no downstream Lorentz theorem.
+================================================================================================
+TOTAL: PASS=17 FAIL=0
+================================================================================================
+
+----- stderr -----
+

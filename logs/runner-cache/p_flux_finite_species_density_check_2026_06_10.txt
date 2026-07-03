@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/p_flux_finite_species_density_check_2026_06_10.py
+runner_sha256: 6f17ca5f68fa997eb93b6d40e9d73bddc851f52c73f7713351e7f09106088e72
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.91
+status: ok
+----- stdout -----
+========================================================================
+[A] branch construction, zero-set geometry, closed-form
+    spectrum licenses, comparator
+========================================================================
+[PASS]  1. [A] both branches Hermitian; frame-invariant uniform flux K0 phi=+1, K1 phi=-1 (licensed two-class surface, re-derived)
+[PASS]  2. [A] zero-mode counts: K0 (L=4,8,12) = (20,68,140) = lattice trace of the codim-1 surface sum_mu cos p_mu = 0; K1 = (8,8,8)
+[PASS]  3. [A] K0 growth exponent 1.78 (extensive, surface-like); K1 count L-independent = 8 (point-like)
+[PASS]  4. [A] closed-form spectra certified against the eigensolver at L=4,8 (K0: 2 sum cos p; K1: +-2 sqrt(sum sin^2 q), mult 4) — licenses the large-L symbol-grid evaluations below
+[PASS]  5. [A] comparator (scalar NN + on-site -6, declared OFF the two-class surface): point-like zero set (1,1,1), quadratic band — used below to separate 'point-like zero set' from 'finite g_eff'
+
+========================================================================
+[B] route A: the determinant/Matsubara family — supplier
+    sweep and degeneracy certificates
+========================================================================
+[PASS]  6. [B] ledger sweep of the determinant/Matsubara/heat-kernel candidate set: expected statuses match the note (retained-grade rows plus one retained-pending real-diagonal candidate; decomposition parent retained_bounded with the determinant + free-energy decorations under it); the ratio/quartic and heat-kernel-CLT/d4 rows are unaudited, while the Greens and GL(F)-Berezin discriminator rows are retained_bounded but remain scope/condition limited and do not supply B-Z2
+[PASS]  7. [B] textual + algebraic: the Matsubara family is scoped to the 'minimal spatial APBC block' of the 'staggered Dirac' operator (staggered-grounded => circular as a selector, same class as RP), and on its own surface min_omega (3 + sin^2 omega) = 3 > 0 — its normalization clause ln|det(D + m)| - ln|det(D)| NEVER meets a zero mode and is silent off its block
+[PASS]  8. [B] the Delta-f clause det(D) != 0 on the licensed PBC surface: FAILS on BOTH branches at 4|L (kernels 20/8 at L=4, 140/8 at L=12); at L=6 it holds on K1 only (kernels 24/0) — L-graded wrap-convention data, quantified over volumes by NO retained row
+[PASS]  9. [B] under APBC (the retained family's own convention): K0 kernel (0,0,96) at L=4,8,12 — resonance re-entry at L=12 — K1 kernel (0,0,0); near-zero density persists only on K0 (|E|<0.5 counts: K0 48,144 vs K1 0,0 at L=8,12): real det-currency separators, consumed by NO retained row
+[PASS] 10. [B] det-positivity mechanism is branch-neutral: BOTH Euclidean central-difference operators are real antisymmetric with {eps, D} = 0 and +-lambda paired spectra (the Case-A hypotheses and mechanism), so det(D + m I) = m^N_0 prod(m^2 + lambda^2) > 0 for every m > 0 on both — the retained m > 0 conclusion cannot separate
+[PASS] 11. [B] THE determinant-currency degeneracy (computed): ord_m det(D_E + m I) as m -> 0 equals N_0(L): K1-class (8, 8, 8) (bounded), K0-class (20, 56, 68) (extensive) at L=4,6,8 — the retained det-positivity text ('m > 0', 'arbitrary SU(3) gauge background') is SILENT at m = 0, exactly where the branches separate
+[PASS] 12. [B] the naive zeta route is CLOSED (honesty leg): the per-volume IR limit of (1/V) log det(h^2+m^2) minus the zero-mode term exists on BOTH branches (m-independent at 1e-6 vs 1e-8; e.g. L=48: K0 0.7006, K1 1.6737), and the divergence coefficient 2 N_0/V -> 0 on BOTH (K0: 0.162,0.055,0.016; K1: 0.0093,0.0012,0.0001 at L=12,24,48) — per-volume log-det divergence does NOT separate; only the ORDER of vanishing does
+[PASS] 13. [B] remaining family quantifiers (textual): Berezin holds 'for any complex matrix' (an identity, verified here by Leibniz expansion on both L=2 branch blocks AND on a singular K0-class ring where det = 0 — no finiteness clause); Jacobi assumes 'invertible on an open neighborhood'; real-diagonal L2 'For invertible real antisymmetric D'; the flavor heat-kernel path is 'supplied'; the Higgs bridge lives on the fixed 16-dim taste carrier — none binds the realized matter kernel's zero set
+RESIDUAL (declared-open): the determinant-currency separators computed here (vanishing order bounded-vs-extensive; APBC invertibility/near-zero density) are real but consumed by no retained row; stating a retained requirement on any of them is exactly B-Z2, still open (boundary B-F1)
+
+========================================================================
+[C] routes B/C: thermal (Stefan-Boltzmann currency) and
+    isotropy certificates; entropy kill
+========================================================================
+[PASS] 14. [C] the retained SB row binds 'a relativistic, effectively massless thermal degree of freedom' and 'does not derive the Standard Model particle inventory'; the supplied-inventory row is currently unaudited; the axiom-first fermionic SB row is retained_bounded but does not derive the realized matter-kernel inventory; the g* arithmetic 28 + (7/8)*90 = 427/4 is branch-independent — no retained row applies the T^4 form to the REALIZED matter kernel
+[PASS] 15. [C] WHICH retained-currency object bites (computed, L=128 symbol grid, T=0.05..0.4): g_eff(T) := u(T)/[(7/8)(pi^2/30) T^4] — K1 has a FINITE plateau 0.979 ~ 1 = 8 species / v^3 (T-halving ratio 0.95); K0 DIVERGES like T^-2 (g_eff 323, 81, 20.4, 5.0; ratios 3.97, 3.99); the point-zero comparator diverges like T^-1.5 (ratios 2.78, 2.72) — finite g_eff is 'finite massless species density' in the retained SB row's own per-dof currency
+[PASS] 16. [C] K0's massless sector is a Fermi surface in the thermal currency: u(T)/T^2 plateaus at 0.232,0.234,0.235,0.232 (Sommerfeld T^2 law; the T^4 Stefan-Boltzmann form fails structurally, not numerically)
+[PASS] 17. [C] route C honestly killed BOTH ways: the zero-point entropy density N_0 ln2 / V -> 0 on BOTH branches (K0: 0.217,0.092,0.056; K1: 0.0866,0.0108,0.0032 at L=4,8,12) — no 'nonvanishing T->0 entropy density' exists even on K0 — and no third-law/vacuum-entropy row exists at any grade (record-reset entropy ledger unaudited)
+[PASS] 18. [C] route B circularity check (textual): the retained isotropy core is derived ON 'the free cubic ... staggered lattice' (NOT independently of the Dirac form => circular as a selector, same class as RP); the retained LV package ALSO carries the K0-class bosonic graph-Laplacian dispersion sin^2(p_i a / 2) as a legitimate carrier with the same angular fingerprint — descriptive of both carriers, normative of neither; the kinetic-isotropy-primitive Poincare row is unaudited
+[PASS] 19. [C] the retained Lorentz content ties (computed): BOTH carriers are isotropic at leading order near p=0 with quartic coefficients 1/3 (staggered, 0.33333) and 1/12 (graph-Laplacian, 0.08333) — the retained rows' actual statements hold on both branches' home dispersions and require nothing of the realized zero set
+[PASS] 20. [C] near-zero-set isotropy separator (computed): K1's cone speed is direction-independent (= 2.000000 along axis/face/body/skew directions); K0's zero surface at (pi/2,pi/2,pi/2) has normal speed 3.4641 = 2 sqrt(3) and EXACTLY flat tangent directions (speed 0.0e+00) — real separator, consumed by NO retained row
+RESIDUAL (declared-open): the thermal objects above are hypothesis-satisfiability probes in the retained SB row's own integrand, not realized-dynamics or equilibrium claims (boundary B-F3)
+
+========================================================================
+[D] falsification legs and inversion-guard compliance
+========================================================================
+[PASS] 21. [D] falsification leg 1 (non-vacuity): the candidate clause CL = 'g_eff(T) bounded as T -> 0' (B-Z2 in retained SB currency) selects EXACTLY K1 among {K0, K1, comparator} as a SINGLE clause (the comparator passes point-like zero set but fails CL: CL = point-like zero set AND conical dispersion) — it would force phi = -1 immediately IF any retained row stated it of the realized matter kernel
+[PASS] 22. [D] falsification leg 2 (remove the non-retained clause): the retained-surface battery alone ties PASS/PASS — det positivity at m > 0 (check 10), the Berezin identity (check 13), the supplied-inventory g* arithmetic (check 14), and the carrier package (both embedded carriers: M_3(C) dim 9, count 3, re-computed here) — the ENTIRE selection lives in the unsupplied clause CL
+[PASS] 23. [D] turn-1 inversion-guard compliance (computed): nothing is forced from the matched 3 = 3 — the kernel-global count readouts are 8/4 (K1) and 20/8 (K0), never 3; the only reading yielding 3 (carrier + hw=1) TIES; and the discriminating certificates (vanishing order, g_eff, tangent flatness) consume only spectra — no count, carrier, or species-label input anywhere in their chain
+RESIDUAL (declared-open): CL is NOT retained and is not granted here; it is B-Z2 restated in the retained SB row's per-dof currency, and on this surface (given the parent carrier certificates) it is strictly stronger than the bare point-like-zero-set clause (boundary B-F2)
+RESIDUAL (declared-open): finite volumes/grids: eigensolver L in {2,4,6,8,12}, symbol grids L in {12,24,48,64,128} licensed by check 4; wrap-convention (PBC/APBC, L mod 4) data recorded as convention-graded, not analyzed exhaustively (boundary B-F4)
+RESIDUAL (declared-open): the supplier sweep covers the enumerated determinant/Matsubara/heat-kernel, thermal/g*/entropy, and isotropy/Lorentz families enumerated in the note's section 4; exhaustiveness over all retained rows is not claimed (boundary B-F5)
+
+TOTAL: PASS=23 FAIL=0
+VERDICT: B-Z2 ('the massless species density is finite') has NO retained supplier on the determinant/Matsubara,
+         thermal, or isotropy surfaces within the stated scope. Every enumerated retained-grade det-family
+         candidate is staggered-scoped, hypothesis-
+         conditional (m > 0 / invertibility), matrix-agnostic, supplied, or off-sector; the naive
+         per-volume zeta divergence is closed (finite on BOTH branches). The objects that DO degenerate on K0
+         are computed and named in retained currency: det vanishing order extensive (20,56,68) vs bounded (8,8,8);
+         g_eff(T) divergent ~T^-2 vs finite plateau ~1; exact flat tangent directions vs isotropic cones.
+         phi = -1 remains underived; B-Z2 is sharpened to one maximally concrete missing row: a future retained-grade
+         statement binding the REALIZED matter kernel with bounded g_eff (equivalently bounded det-vanishing
+         order per volume; equivalently ker = carrier with conical dispersion). Any of these, at retained grade,
+         selects phi = -1 immediately given the certificates above.
+
+----- stderr -----
+

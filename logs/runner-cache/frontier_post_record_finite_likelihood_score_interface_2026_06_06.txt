@@ -1,0 +1,83 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_finite_likelihood_score_interface_2026_06_06.py
+runner_sha256: 4a75a7ef34629c1c1a70fc2699bbbaf25f3084b2899e1c16f7b21beaf3ad2dd0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_FINITE_LIKELIHOOD_SCORE_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_FINITE_LIKELIHOOD_SCORE_INTERFACE_2026-06-06.md contains: actual_current_surface_status: exact-support
+PASS docs/POST_RECORD_FINITE_LIKELIHOOD_SCORE_INTERFACE_2026-06-06.md contains: supplied finite model scoring
+PASS docs/POST_RECORD_FINITE_LIKELIHOOD_SCORE_INTERFACE_2026-06-06.md contains: model-family, prior, decision-rule, and dial-selection derivation remain open
+PASS docs/POST_RECORD_FINITE_LIKELIHOOD_SCORE_INTERFACE_2026-06-06.md contains: posterior_m(w*)
+PASS docs/POST_RECORD_FINITE_LIKELIHOOD_SCORE_INTERFACE_2026-06-06.md contains: generation or Koide dial
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md exists
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: bounded and conditional lanes
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: rows needing probability laws
+PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: does **not** unlock verdict changes by itself
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md exists
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: post-record append action on O*
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: Does not derive probabilities
+PASS docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md contains: Does not select a Koide/generation dial location
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md exists
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: Record history/count support is therefore an exact **consumer**
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: probability laws, Born typicality, and transition rates
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: dial selection
+
+------------------------------------------------------------------------------
+IID supplied-model score checks
+------------------------------------------------------------------------------
+PASS low-A supplied model is normalized
+PASS high-A supplied model is normalized
+PASS low-A likelihood is exact :: 4/625
+PASS high-A likelihood is exact :: 27/256
+PASS high/low likelihood ratio is exact :: 16875/1024
+PASS low/high likelihood ratio is reciprocal :: 1024/16875
+PASS equal prior is normalized
+PASS posterior weights normalize exactly :: {'low_A': Fraction(1024, 17899), 'high_A': Fraction(16875, 17899)}
+PASS equal-prior high-A posterior is exact :: 16875/17899
+PASS equal-prior posterior favors high-A model
+PASS strong low-A prior is normalized
+PASS different supplied prior can change posterior ordering
+PASS different realized word can reverse likelihood preference :: 625/65536
+PASS reversed preference is below one
+
+------------------------------------------------------------------------------
+Supplied Markov and support-guard checks
+------------------------------------------------------------------------------
+PASS sticky-A kernel is row-stochastic
+PASS sticky-B kernel is row-stochastic
+PASS sticky-A finite law normalizes
+PASS sticky-B finite law normalizes
+PASS Markov score vector has both models
+PASS Markov likelihood ratio is defined when denominator is nonzero
+PASS modified zero-support law stays normalized
+PASS zero-support denominator returns guarded undefined ratio
+PASS posterior can assign zero weight to zero-likelihood model
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS Record-derived model-family flag is false
+PASS Record-derived prior flag is false
+PASS Record-derived decision-rule flag is false
+PASS Record-derived observation-protocol flag is false
+PASS Record-derived Born/instrument flag is false
+PASS Record-derived clock/rate flag is false
+PASS Record-derived Hamiltonian flag is false
+PASS generation/Koide dial selected flag is false
+PASS audit verdict applied flag is false
+
+SUMMARY: PASS=50 FAIL=0
+SUPPLIED_FINITE_MODEL_SCORE_INTERFACE=TRUE
+LIKELIHOOD_RATIOS_EXACT_WHEN_DEFINED=TRUE
+RECORD_DERIVES_MODEL_FAMILY=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

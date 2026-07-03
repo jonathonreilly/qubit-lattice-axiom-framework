@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/p3_coupling_is_retention_eligible_composition_2026_06_06.py
+runner_sha256: d6b22e2006c68bd0da87195756b73b9791caae28d39224fdc2173a3f705b1fd1
+timeout_sec: 120
+exit_code: 1
+elapsed_sec: 0.30
+status: nonzero_exit
+----- stdout -----
+--- Section A: geometric-mean identity (retained) ---
+PASS: alpha_LM = sqrt(alpha_bare * alpha_s) (geometric mean; retained identity)
+PASS: alpha_bare : alpha_LM : alpha_s is a geometric progression, ratio 1/u_0
+--- Section B: P3 = authority-inventoried composition over canonical surface ---
+PASS: alpha_bare formula agrees with canonical alpha_bare
+PASS: canonical u_0 is the fourth root of the canonical plaquette
+PASS: canonical alpha_LM is alpha_bare/u_0
+PASS: canonical alpha_s(v) is alpha_bare/u_0^2
+PASS: canonical surface gives alpha_LM near 0.0907 and 1/alpha_LM near 11
+PASS: alpha_LM is the geometric mean of native Coulomb alpha_bare and strong alpha_s
+--- Section C: the substitution is tadpole improvement plus authority inventory ---
+PASS: tadpole improvement (vertex power 1 abstract identity): alpha_bare/u_0^1 = alpha_LM
+PASS: ledger has one-hop row: alpha_lm_geometric_mean_identity_theorem_note_2026-04-24
+PASS: alpha_lm_geometric_mean_identity_theorem_note_2026-04-24 note path matches authority packet
+PASS: alpha_lm_geometric_mean_identity_theorem_note_2026-04-24 effective status is retained
+PASS: source note lists authority row alpha_lm_geometric_mean_identity_theorem_note_2026-04-24
+PASS: ledger has one-hop row: alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10
+PASS: alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10 note path matches authority packet
+PASS: alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10 effective status is retained
+PASS: source note lists authority row alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10
+PASS: ledger has one-hop row: g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10
+PASS: g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10 note path matches authority packet
+PASS: g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10 effective status is retained
+PASS: source note lists authority row g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10
+PASS: ledger has one-hop row: plaquette_self_consistency_note
+PASS: plaquette_self_consistency_note note path matches authority packet
+PASS: plaquette_self_consistency_note effective status is retained_bounded
+PASS: source note lists authority row plaquette_self_consistency_note
+PASS: ledger has one-hop row: magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06
+PASS: magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06 note path matches authority packet
+FAIL: magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06 effective status is audited_conditional
+PASS: source note lists authority row magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06
+PASS: ledger has one-hop row: i1_static_readout_is_native_field_integration_2026-06-06
+PASS: i1_static_readout_is_native_field_integration_2026-06-06 note path matches authority packet
+FAIL: i1_static_readout_is_native_field_integration_2026-06-06 effective status is audited_conditional
+PASS: source note lists authority row i1_static_readout_is_native_field_integration_2026-06-06
+FAIL: conditional 4pi/I1 authorities remain visibly conditional, not retained
+PASS: source note states P3 is not retained on the current surface
+--- Section D: the single open step = physical-not-bare coupling (register-not-read, 5th) ---
+PASS: the open step is a SELECTION: physical alpha_LM vs bare u_0 (they differ)
+PASS: the selection is register-not-read (registered=physical, not bare); the 5th application -> FLAGGED for the audit lane (genuine extension vs over-application)
+PASS: NET: P3 = authority-inventoried composition + ONE open register-not-read selection step (not a free substitution; not retained closure)
+
+TOTAL: PASS=35 FAIL=3
+
+----- stderr -----
+

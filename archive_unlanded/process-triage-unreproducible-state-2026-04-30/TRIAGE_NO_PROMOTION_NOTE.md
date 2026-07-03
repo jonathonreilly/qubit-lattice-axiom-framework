@@ -1,7 +1,14 @@
-# Triage No-Promotion Note
+# Historical Triage No-Promotion Process Memo (Retracted)
 
-**Date:** 2026-04-06  
+**Date:** 2026-04-06
 **Status:** RETRACTED 2026-04-30 — retracted aggregate triage summary; audit failed; this note is archived under `archive_unlanded/process-triage-unreproducible-state-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. Future readers should consult the live audit ledger and live notes, not this aggregate. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
 
 ## Retraction
 
@@ -15,79 +22,96 @@ This file is a retracted aggregate triage/process summary. Future readers should
 
 ---
 
-## Scope
+## 2026-06-16 archive firewall
 
-This is a promotion-triage note for the current dirty / untracked stack after
-the newest retained wins already on `main`:
+This archived packet is historical process history only. It is not retained
+evidence about the current working stack, not an audited no-promotion result,
+and not authority about science promotion status.
 
-- [`archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md)
-- [`docs/FIXED_FIELD_FAMILY_UNIFICATION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/FIXED_FIELD_FAMILY_UNIFICATION_NOTE.md)
-- [`docs/NONLABEL_GROWN_BASIN_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/NONLABEL_GROWN_BASIN_NOTE.md)
-- [`docs/EARLY_FAMILY_TRANSFER_CONNECTIVITY_DIAGNOSIS.md`](/Users/jonreilly/Projects/Physics/docs/EARLY_FAMILY_TRANSFER_CONNECTIVITY_DIAGNOSIS.md)
+The audited blocker is structural: the old memo judged a dirty/untracked work
+state without preserving a reproducible manifest of draft artifacts, runners,
+logs, and promotion criteria. Future use must start from a fresh reproducible
+triage manifest. The only safe residue here is that, on 2026-04-06, an
+editorial triage memo recorded a no-promotion snapshot outside retained
+science.
 
-The question here is narrower:
+## Historical scope (not a reproducible input set)
+
+The original memo described a now-unreproducible dirty/untracked stack after
+then-current retained wins on `main`:
+
+- [`archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md`](../grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md)
+- [`docs/FIXED_FIELD_FAMILY_UNIFICATION_NOTE.md`](../../docs/FIXED_FIELD_FAMILY_UNIFICATION_NOTE.md)
+- [`docs/NONLABEL_GROWN_BASIN_NOTE.md`](../../docs/NONLABEL_GROWN_BASIN_NOTE.md)
+- [`docs/EARLY_FAMILY_TRANSFER_CONNECTIVITY_DIAGNOSIS.md`](../../docs/EARLY_FAMILY_TRANSFER_CONNECTIVITY_DIAGNOSIS.md)
+
+The historical question recorded by the memo was:
 
 - does any currently dirty or untracked draft result clearly beat the retained
   bar, such that it should be promoted now?
 
-The answer is **no**.
+That question is not re-decided here. The archived memo did not preserve the
+manifest needed to verify the answer.
 
-## What Was Checked
+## Historical areas listed by the memo
 
-I checked the current draft stack in the following areas:
+The original memo listed the following then-current draft areas:
 
 - self-gravity hardening
 - graph-growth static-control audits
 - distance-law prediction card / narrower `h = 0.125` scouting
 - branch retainability triage
 
-## Why Nothing Promoted
+## Historical rationale listed by the memo
 
 ### Self-gravity hardening
 
-The current self-gravity hardening drafts remain bounded no-gos on the exact-
-lattice Poisson-like loop:
+The original memo characterized the then-current self-gravity hardening drafts
+as bounded no-gos on the exact-lattice Poisson-like loop:
 
 - exact `epsilon = 0` reduction survives
 - snapshot Born checks can be machine clean
 - end-to-end Born is not clean
 - the nonlinear loop does not converge under the strict tolerance
 
-That is useful control information, but it is not a retained mechanism result.
+That was recorded as control information, not as a retained mechanism result.
 
 ### Graph-growth static control
 
-The graph-growth drafts remain a retained proxy plus a no-go boundary:
+The original memo characterized the graph-growth drafts as a retained proxy
+plus a no-go boundary:
 
 - frontier-delay growth is the retained expansion observable
 - dynamic-propagation visibility is weak, noisy, and not monotone
 - the safe claim surface stays `graph-distance / frontier expansion`
 
-That is already a boundary check, not a new promoted science result.
+That was recorded as a boundary check, not as a promoted science result.
 
 ### Distance-law scouting
 
-The current `h = 0.125` scouting stack does not reopen the weak-field bridge:
+The original memo characterized the then-current `h = 0.125` scouting stack
+as not reopening the weak-field bridge:
 
 - the observed full-window rows stay near `alpha ~ 0.50`
 - Born remains clean
 - gravity remains `TOWARD`
 - but the weak-field law does not move toward the retained Newtonian-like bar
 
-So the newer `h = 0.125` drafts are informative no-gos, not promotions.
+The memo therefore treated those drafts as informative no-gos, not promotions.
 
-## Review-Safe Conclusion
+## Historical conclusion (not audit authority)
 
-No draft in the current dirty stack clearly clears the retained bar beyond the
-basin and unification wins already on `main`.
+The historical conclusion is preserved only as route-history process context.
+It is not an audited retained statement that no draft cleared the bar, not
+evidence about the current stack, and not a retained no-promotion theorem.
 
-The right move is therefore:
+The historical memo recommended:
 
 - keep the basin/unification results as the promoted gains
 - keep the self-gravity, graph-growth, and width-scout lanes as diagnostics
 - do not broaden any of those diagnostics into a new retained claim
 
-## Final Verdict
+## Archived verdict boundary
 
-**no-promotion**
-
+The old memo recorded a no-promotion snapshot. That recorded snapshot is not
+live framework authority.

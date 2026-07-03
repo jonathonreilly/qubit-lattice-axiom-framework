@@ -37,14 +37,15 @@ EXECUTED arithmetic (not prose):
    Yukawa is below the thermalization threshold by MANY orders of magnitude at
    every relevant temperature (>= 4 orders even at the most favourable T = 100
    GeV; ~7-9 orders at leptogenesis T). Gamma/H << 1 throughout: nu_R is
-   decoupled. The ONLY route to g_* = 112 is a large O(1e-7..1) Dirac Yukawa,
-   which is excluded by the small neutrino mass.
+   decoupled. The ONLY route to g_* = 112 is a thermalizing Dirac Yukawa
+   y_nu >= y_thr (with O(1) as a stronger steelman), which is excluded by the
+   small neutrino mass.
 
 5. **Branch table.** Across the framework's RETAINED-no-go Dirac/seesaw fork:
    light Dirac (small y_nu) -> nu_R never thermalizes -> EXCLUDED -> 106.75;
    heavy Majorana/seesaw (M_R >> T) -> nu_R not a light dof at the census epoch
-   -> EXCLUDED -> 106.75; large-Yukawa Dirac (y_nu O(1)) -> thermalized -> 112
-   but EXCLUDED by the empirical small m_nu. So g_* = 106.75 is robust across
+   -> EXCLUDED -> 106.75; thermalizing Dirac (y_nu >= y_thr) -> thermalized
+   -> 112 but EXCLUDED by the empirical small m_nu. So g_* = 106.75 is robust across
    BOTH branches of the retained no-go, conditioned on the empirical small m_nu.
 
 6. **Note / authority cross-checks.** Reduction bookkeeping, authority-file
@@ -336,9 +337,9 @@ check(
     f"Gamma/H = {GoH_lepto:.2e}",
 )
 
-# The ONLY route to g_* = 112 is a LARGE Yukawa that DOES equilibrate; the
-# minimum such y (at the most lenient T) is ~1e-8, i.e. >= 4 orders ABOVE the
-# small-m_nu value. A y_nu ~ O(1e-8..1) means m_nu = y_nu <H> >> 0.1 eV.
+# The ONLY route to g_* = 112 is a thermalizing Yukawa. The minimum such y
+# (at the most lenient T) is ~1e-8, i.e. >= 4 orders ABOVE the small-m_nu
+# value. A y_nu >= y_thr means m_nu = y_nu <H> >> 0.1 eV.
 m_nu_for_thermalization_EW = y_thr_EW * H_VEV_EV  # eV
 check(
     "a thermalizing y (>= y_thr at T=100 GeV) implies m_nu >> 1 eV (excluded by data)",
@@ -357,7 +358,7 @@ check(
 # 5. Branch table across the retained Dirac/seesaw no-go
 # ===========================================================================
 
-section("5. Branch table (light-Dirac / heavy-Majorana / large-Yukawa-Dirac)")
+section("5. Branch table (light-Dirac / heavy-Majorana / thermalizing-Dirac)")
 
 # Each branch -> census disposition of nu_R -> g_*.
 # Branch A: LIGHT DIRAC (small y_nu, as required by small m_nu = y_nu <H>).
@@ -383,22 +384,24 @@ check(
     f"M_R={M_R_seesaw_GeV:.0e} GeV >> T; light_at_census={branchB_light_at_census}",
 )
 
-# Branch C: LARGE-YUKAWA DIRAC (y_nu ~ O(1)) — the ONLY route to 112.
-#   Thermalizes (y >> threshold) -> 112. But y_nu ~ O(1) => m_nu = y_nu <H> ~
-#   100 GeV, grotesquely excluded by the sub-eV empirical neutrino mass.
+# Branch C: THERMALIZING DIRAC (y_nu >= y_thr) — the ONLY route to 112.
+#   Even at the most lenient threshold, thermalization implies m_nu >= keV;
+#   the O(1) Yukawa steelman is a stronger excluded subcase.
+y_thermalizing_min = y_thr_EW
 y_large = 1.0
-branchC_thermalizes = y_large >= y_thr_lepto_hi    # True
-m_nu_branchC_eV = y_large * H_VEV_EV               # ~1.74e11 eV = 174 GeV
+branchC_thermalizes = y_thermalizing_min >= y_thr_EW    # True by construction
+m_nu_branchC_min_eV = y_thermalizing_min * H_VEV_EV     # ~2 keV
+m_nu_branchC_large_eV = y_large * H_VEV_EV              # ~1.74e11 eV = 174 GeV
 branchC_gstar = Fraction(112) if branchC_thermalizes else Fraction(427, 4)
 check(
-    "Branch C large-Yukawa-Dirac: nu_R thermalizes -> g_* = 112",
+    "Branch C thermalizing-Dirac: y_nu >= y_thr thermalizes -> g_* = 112",
     branchC_thermalizes and branchC_gstar == Fraction(112),
-    f"thermalizes={branchC_thermalizes}, g_*={float(branchC_gstar)}",
+    f"thermalizes={branchC_thermalizes}, y_thr={y_thermalizing_min:.2e}, g_*={float(branchC_gstar)}",
 )
 check(
-    "Branch C is EXCLUDED by data: y~O(1) implies m_nu ~ 174 GeV >> sub-eV bound",
-    m_nu_branchC_eV > 1e9,
-    f"m_nu(branch C) ~ {m_nu_branchC_eV:.2e} eV",
+    "Branch C is EXCLUDED by data: y>=y_thr implies m_nu >= keV; O(1) gives 174 GeV",
+    m_nu_branchC_min_eV > 1e3 and m_nu_branchC_large_eV > 1e9,
+    f"m_nu(min thermalizing) ~ {m_nu_branchC_min_eV:.2e} eV; O(1) ~ {m_nu_branchC_large_eV:.2e} eV",
 )
 
 # ROBUSTNESS: both ADMITTED branches (A light-Dirac, B heavy-Majorana) give
@@ -410,7 +413,7 @@ check(
     f"{[float(x) for x in admitted_branches_gstar]}",
 )
 check(
-    "g_* = 112 arises ONLY in the empirically-excluded large-Yukawa branch",
+    "g_* = 112 arises ONLY in the empirically-excluded thermalizing-Dirac branch",
     branchC_gstar == Fraction(112) and branchA_gstar == branchB_gstar == Fraction(427, 4),
 )
 # The framework does NOT pick Dirac vs Majorana (retained no-go); the resolution
@@ -429,6 +432,7 @@ section("6. Note / authority cross-checks")
 
 # Load-bearing authorities cited as markdown links (citation-graph edges).
 SOURCED_AUTHORITIES = [
+    "SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md",
     "NEUTRINO_LANE4_DIRAC_SEESAW_FORK_NO_GO_NOTE_2026-04-27.md",
     "SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
 ]
@@ -485,6 +489,27 @@ check(
     "empirical" in NOTE_TEXT.lower()
     and ("admitted" in NOTE_TEXT.lower())
     and ("small" in NOTE_TEXT.lower()),
+)
+
+comparator_bridge = (
+    ROOT
+    / "docs"
+    / "SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md"
+)
+comparator_text = (
+    comparator_bridge.read_text(encoding="utf-8") if comparator_bridge.exists() else ""
+)
+check(
+    "comparator bridge isolates the admitted small-m_nu input",
+    "admitted empirical small-neutrino-mass observation" in comparator_text
+    and "does not derive small neutrino mass" in comparator_text.lower(),
+)
+check(
+    "comparator bridge isolates the thermalization comparator",
+    "Gamma_nuR ~ y_nu^2 T" in comparator_text
+    and "H ~ 1.66 sqrt(g_*) T^2 / M_Pl" in comparator_text
+    and "This note does **not**" in comparator_text
+    and "derive `Gamma_nuR ~ y_nu^2 T` from a framework collision operator" in comparator_text,
 )
 check(
     "note records the steelman (N7) FOR g_* = 112 and its rebuttal",

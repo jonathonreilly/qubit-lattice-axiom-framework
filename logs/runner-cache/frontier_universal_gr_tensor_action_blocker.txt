@@ -3,7 +3,7 @@ runner: scripts/frontier_universal_gr_tensor_action_blocker.py
 runner_sha256: 860a4f5efb8184346adeb962360e5025a5ac5d39fc59f4f980be43cfcc2f3f49
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 UNIVERSAL GR TENSOR ACTION BLOCKER AUDIT

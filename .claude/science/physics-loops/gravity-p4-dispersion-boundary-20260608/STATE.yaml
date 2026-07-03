@@ -1,0 +1,15 @@
+loop: gravity-p4-dispersion-boundary-20260608
+status: packaged_for_review
+target_claim_id: gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07
+actual_current_surface_status: bounded-support
+branch: physics-loop/gravity-p4-dispersion-boundary-20260608
+base: origin/main
+files_touched:
+  - docs/GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md
+  - scripts/frontier_gravity_premise4_refractive_index_from_dispersion.py
+  - logs/runner-cache/frontier_gravity_premise4_refractive_index_from_dispersion.txt
+  - .claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/
+open_blockers:
+  - Full physical Fermat/eikonal bridge remains open.
+  - Kubo comparison packet is included as unaudited comparison-only authority.
+next_action: reviewer extracts boundary repair; independent audit decides status.

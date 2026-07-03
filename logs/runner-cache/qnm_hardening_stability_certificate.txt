@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/qnm_hardening_stability_certificate.py
-runner_sha256: 5efaaf002f088e662b456885ae2fe9808b52a3223a6263619f4389cd2d6cc11e
+runner_sha256: ad9bf2b0e4b073936895b1fd6213fd61b7829c662d5c85facdd9ac292d0cba0a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 9.72
+elapsed_sec: 7.47
 status: ok
 ----- stdout -----
 coarse-damping005: h=1.00 damping=0.05 nyquist=3.142 relax_residual=1.543e-03 born_i3=4.863e-16
@@ -24,6 +24,7 @@ refined-damping005: h=0.75 damping=0.05 nyquist=4.189 relax_residual=4.188e-03 b
   window=k2-10 threshold=0.5 G0_peaks=[] G0.10_peaks=[5.0, 7.5] sub_nyquist_G0.10=[]
   window=k2-10 threshold=0.8 G0_peaks=[] G0.10_peaks=[5.0, 7.5] sub_nyquist_G0.10=[]
   min_escape_G0=9.102e-01 min_escape_G0.10=4.661e-03
+SOURCE FIREWALL PASS: QNM packet remains a bounded negative/open gate, not a positive spectral law
 CERTIFICATE PASS: no sub-Nyquist QNM hardening peak survives the G=0/null, fixed-field Born, threshold, window, damping, and refinement hard bars
 
 ----- stderr -----

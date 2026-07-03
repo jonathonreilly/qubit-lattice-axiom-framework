@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_canonical_projector_connection.py
+runner_sha256: a611cb3cae544c225eeeaf5656dd4787de578c434ad51ee1b7d5794fa5e11e3c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+UNIVERSAL GR CANONICAL PROJECTOR / CONNECTION AUDIT
+==============================================================================
+[PASS] scalar generator is exact
+    scalar generator is the exact observable-principle output
+[PASS] 3+1 lift is exact
+    Route 2 gives the exact `PL S^3 x R` lift
+[PASS] tensor candidate is exact as a construction
+    the tensor-valued Hessian candidate is already exact as a construction
+[PASS] quotient uniqueness is exact
+    the symmetric quotient kernel is unique on the finite prototype
+[PASS] A1 projector is exact and rank-2
+    Pi_A1 fixes lapse and spatial trace
+[PASS] A1 projector commutes with valid spatial rotations
+    commutator norms = {'x': '5.722e-17', 'y': '6.655e-17', 'z': '0.000e+00'}
+[PASS] A1 generator block is trivial
+    A1-generator norms = {'x': '0.000e+00', 'y': '0.000e+00', 'z': '0.000e+00'}
+[PASS] complementary block carries the nontrivial spatial gauge
+    comp norms = {'x': '3.464e+00', 'y': '3.464e+00', 'z': '3.464e+00'}, rank = 3
+[PASS] Xi_TB compatibility leaves the semigroup factor unchanged
+    time factor is frame-independent; only the coefficient orbit moves
+[PASS] current universal notes still describe an orbit, not a canonical section
+    the atlas still stops at the orbit bundle, not a distinguished connection
+
+==============================================================================
+CANDIDATE
+==============================================================================
+Pi_A1 = diag(1,0,0,0,1,0,0,0,0,0)
+Candidate complement bundle = SO(3)-orbit bundle on E ⊕ T1
+Candidate connection = orbit / Maurer-Cartan connection on that bundle
+Residual gauge = SO(3) on the valid 3+1 frame orbit
+generator_rank = 3
+commutator_norms = {'x': '5.722e-17', 'y': '6.655e-17', 'z': '0.000e+00'}
+a1_block_norms = {'x': '0.000e+00', 'y': '0.000e+00', 'z': '0.000e+00'}
+comp_block_norms = {'x': '3.464e+00', 'y': '3.464e+00', 'z': '3.464e+00'}
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASS=10 FAIL=0 TOTAL=10
+The strongest axiom-native completion is an exact invariant `A1` section plus an associated `SO(3)` orbit bundle on the `E \oplus T1` complement. The current atlas does not force a distinguished connection; the exact residual gauge is the spatial-rotation orbit.
+
+----- stderr -----
+

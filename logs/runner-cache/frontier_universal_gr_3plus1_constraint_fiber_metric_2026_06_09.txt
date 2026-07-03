@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_3plus1_constraint_fiber_metric_2026_06_09.py
+runner_sha256: 655cf9424cf9e6465be29576ea9a9ea7bf5a61c9fea665f4363c081bb82be9de
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+3+1 CONSTRAINT STRUCTURE OF THE LINEARIZED EH TARGET OPERATOR (derived fiber metric)
+================================================================================================
+[PASS] A1 (anchor to the landed R3 target-operator certificate): gauge modes h = p (x) xi + xi (x) p are EXACT zero modes symbolically (all xi, all omega,k), and the yz TT sample gives G(h_TT) = (1/2)(k^2 - omega^2) h_TT -- at omega=0 the landed +k^2/2, dispersion omega^2=k^2
+       gauge zero modes exact; G_23(h_TT) = (k^2-omega^2)/2; all other components zero
+[PASS] A2 (MULTIPLIER STRUCTURE, scheme-independent): with every second derivative a FORMAL symbol S(mu,nu), the constraint rows G^{00}, G^{0i} have ZERO coefficient on S(0,0) (no qddot in any constraint row -- the trace-reversal cancels them), and G^{00} contains NO time-derivative symbol S(0,mu) at all. A zero polynomial stays zero under ANY stencil substitution: the lapse/shift multiplier structure is DISCRETIZATION-ROBUST (structural).
+       coeff(G^{00},S00)=coeff(G^{0i},S00)=0 identically; G^{00} free of S(0,mu) entirely
+[PASS] A3 (THE DERIVED NON-DEGENERATE FIBER METRIC -- the no-go's named bypass): the kinetic coefficient c2 = +coeff(G^{ij},S00) in the tensor pairing has the lambda-one DeWitt pattern on spatial channels: K_trace NEGATIVE, K_TT POSITIVE, ratio K_trace:K_TT = -2:+1 (indefinite, NON-degenerate; both TT channels equal), and the lapse/shift kinetic weights are ZERO -- a DIFFERENT object from the retained records-route supermetric (all-negative, trace=shear degenerate)
+       K_trace=-1, K_TT(yz)=1/2, K_TT(E)=1/2 (ratio -2); K_lapse=0, K_shift=0
+[PASS] A4 (THE DERIVED COMPARATOR POTENTIAL SIGNS): at omega=0 the SAME operator gives V_TT = +k^2/2 > 0 and V_trace(transverse) < 0 -- the no-go's SUPPLIED pair (V_TT=+k^2/2, V_trace=-k^2/2) is now derived from the target operator
+       V_TT(yz)=kk**2/2; V_trace(transverse)=-kk**2/2
+[PASS] A5 (GLUING WITH BOTH HALVES DERIVED): omega^2_TT = V_TT/K_TT = +k^2 (healthy) and omega^2_trace = V_trace/K_trace = (neg)/(neg) > 0 -- the no-go's lambda-one control (its T3) reproduced with DERIVED inputs: the degenerate-supermetric obstruction is BYPASSED exactly through the 'derived non-degenerate fiber metric' route its N1/N6 left open
+       omega^2_TT=kk**2; K_trace(transverse)=-1/2, V_trace=-kk**2/2 -> omega^2_trace=kk**2 > 0
+[PASS] A6 (CONSTRAINT CONTENT): G^{00} = +(k^2/2)(h_yy+h_zz) exactly (k || x) -- the linearized Hamiltonian constraint is k^2 x (transverse trace), with every other component absent. In vacuum at k != 0 it forces that channel to ZERO: the trace is NOT a free 'diagonal bounded channel with L = (1/2)G qdot^2 - (1/2)V q^2', so the derived gluing law's hypothesis does not apply to it in the constrained 3+1 system (the channel is eliminated by the constraint, not glued)
+       dG00/dh_yy=kk**2/2, dG00/dh_zz=kk**2/2, all other h-coefficients zero
+[PASS] A7 (DOF COUNT, exact rank algebra): at generic omega^2 != k^2 the kernel of the full 10x10 operator is EXACTLY the 4-parameter gauge family; at omega^2 = k^2 it is 4+2 -- precisely TWO propagating physical modes, both TT, healthy dispersion omega^2 = k^2
+       kernel dim: generic (omega=3/7,k=2/5) = 4 (gauge only); on-shell (omega=k=2/5) = 6 (gauge + 2 TT)
+[PASS] A8 (DISCRETE, kinetic-isotropy primitive c_t=c_s; declared symmetrized stencils): the multiplier structure holds VERBATIM on the lattice (G^{00} row free of omega entirely; no 4sin^2(omega/2) in any constraint row -- the S-formal theorem); the discrete TT dispersion is 4sin^2(omega/2) = 4sin^2(k/2), i.e. omega = +-k EXACTLY across the BZ (healthy, no extra branch); the continuum-form gauge mode has a NONZERO lattice residual at finite k (the measured lattice diffeomorphism-breaking), vanishing as k -> 0 with the reported order
+       G00 row omega-free; TT: G_23 = (4sin^2(k/2)-4sin^2(omega/2))/2; gauge residual |G(h_gauge)| = 7.947e-05 at w=k=0.20 vs 2.496e-06 at 0.10 (order ~ 2^4.99 per halving)
+[PASS] A9 (tie-in, both landed rows respected): gluing the DERIVED potentials with the RETAINED records-route supermetric weights (trace=shear=-1, degenerate) reproduces the no-go's negative product (one channel unhealthy -- the no-go BINDS that gluing); gluing with the DERIVED geometric fiber metric gives a positive product (both healthy). The no-go is therefore a correct boundary on the records-Hessian gluing specifically; the geometric target operator carries its own healthy non-degenerate gluing.
+       records-supermetric gluing: omega^2 product = -1/4 < 0 (no-go reproduced); derived geometric fiber metric: product = 1 > 0 (bypass)
+
+TOTAL: PASS=9 FAIL=0
+VERDICT: the no-go's own named bypass ('a derived non-degenerate fiber metric') EXISTS and is
+now exhibited: the 3+1 kinetic fiber metric of the linearized EH target operator is the
+indefinite lambda-one DeWitt form (K_trace:K_TT = -2:+1, derived), the comparator potential
+signs (V_TT>0, V_trace<0) are derived from the same operator, and the gluing law with both
+halves derived gives BOTH channels healthy -- while the trace channel is in fact CONSTRAINED
+(G^{00} = +(k^2/2)(transverse trace): not a free diagonal channel, eliminated not glued), the
+lapse/shift multiplier structure is scheme-independent (S-formal zero polynomial => holds for
+ANY stencil, including the symmetric Z^3 x Z_tau with c_t=c_s), the exact DOF count is 2 TT,
+and the discrete TT dispersion is omega=+-k across the BZ. The degenerate-supermetric no-go
+remains correct at its stated scope: it binds the RECORDS-route Hessian gluing (reproduced
+here); the geometric target operator bypasses it. OPEN (unchanged): deriving the geometric
+action itself from the framework (Einstein/Regge glue, edge-length DOF, action selection),
+the cubic-Coxeter Regge second variation, nonlinear constraint closure on discrete time.
+No PDG/fitted value.
+
+----- stderr -----
+

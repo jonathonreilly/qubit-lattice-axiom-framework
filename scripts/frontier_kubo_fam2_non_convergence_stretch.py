@@ -178,6 +178,31 @@ refinement_note_requirements = [
 for req in refinement_note_requirements:
     check(f"refinement note contains: {req}", req in refinement_note_text)
 
+section("Part 8: re-audit trigger guard")
+note_flat = " ".join(note_text.split())
+trigger_guard_requirements = [
+    "Re-Audit Trigger Guard",
+    "source-bound to the two current Kubo parent/context packets",
+    "SHA-pinned Fam2 refinement cache",
+    "KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md",
+    "KUBO_FAM2_REFINEMENT_NOTE.md",
+    "scripts/kubo_fam2_refinement.py",
+    "logs/runner-cache/kubo_fam2_refinement.txt",
+    "effective retained_bounded status",
+    "requires re-audit before downstream use",
+]
+for req in trigger_guard_requirements:
+    check(f"re-audit trigger guard contains: {req}", req in note_flat)
+
+freshness_boundary_requirements = [
+    "stale, refreshed, or",
+    "no longer supports the finite Fam2 values recorded here",
+    "does not promote the row",
+    "parent/context movement or cached-data movement",
+]
+for req in freshness_boundary_requirements:
+    check(f"freshness boundary contains: {req}", req in note_flat)
+
 print(f"\n{'='*88}\n  TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}\n{'='*88}")
 if FAIL_COUNT == 0:
     print("KUBO_FAM2_POSSIBLE_OBSTRUCTION_INVENTORY=TRUE")

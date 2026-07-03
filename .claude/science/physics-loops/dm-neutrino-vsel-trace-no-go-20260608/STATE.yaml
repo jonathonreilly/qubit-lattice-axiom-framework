@@ -1,0 +1,30 @@
+loop_slug: dm-neutrino-vsel-trace-no-go-20260608
+date: 2026-06-08
+mode: repair_block
+target_status: no-go
+base_ref: origin/main
+branch: physics-loop/dm-neutrino-vsel-trace-no-go-20260608
+target_claim_id: dm_neutrino_vsel_curvature_taste_to_dirac_transport_obstruction_no_go_note_2026-06-07
+note_path: docs/DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md
+runner_path: scripts/frontier_neutrino_vsel_curvature_transport_obstruction.py
+actual_current_surface_status: no-go route-pruning source repair; independent audit required
+bare_retained_allowed: false
+audit_required_before_effective_status_change: true
+blocker_attacked: "supply a retained trace-normalization or representation bridge for the Dirac V_sel computation, or revise T2/T3 to the representation-independent d=Tr(I) form and rerun the audit"
+movement:
+  - removes load-bearing d=2 trace specialization from T2/T3
+  - proves the transported Dirac quartic is d(1-d/8)|phi|^4 for d=Tr(I)
+  - proves the Hessian has equal transverse entries diag(12c,4c,4c), so no taste-cube m_perp=32 selector transports natively
+  - keeps the taste-cube selector result intact
+verification:
+  - python3 scripts/frontier_neutrino_vsel_curvature_transport_obstruction.py
+  - python3 -m py_compile scripts/frontier_neutrino_vsel_curvature_transport_obstruction.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_neutrino_vsel_curvature_transport_obstruction.py
+  - python3 scripts/cached_runner_output.py --check-only scripts/frontier_neutrino_vsel_curvature_transport_obstruction.py
+  - git diff --check
+  - git diff -- docs/audit
+remaining_blockers:
+  - independent audit must decide whether the repaired no-go can ratify clean route-pruning status
+  - the positive Schur suppression assembly still needs its separate scalar readout and taste-to-Dirac admission handling
+next_exact_action: open review PR for this repaired no-go route-pruning artifact
+stop_condition: concrete auditor repair target implemented and cached

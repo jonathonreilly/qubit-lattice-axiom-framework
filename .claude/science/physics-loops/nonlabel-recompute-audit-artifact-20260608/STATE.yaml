@@ -1,0 +1,11 @@
+loop: nonlabel-recompute-audit-artifact-20260608
+target_claim_id: nonlabel_grown_basin_note
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+blocker: "runner_artifact_issue: include a completed scripts/NONLABEL_GROWN_BASIN_TARGETED.py --recompute audit run or an independent derivation of the three restore-row values, then re-check the row gates and exponent arithmetic."
+files_touched:
+  - docs/NONLABEL_GROWN_BASIN_NOTE.md
+  - scripts/nonlabel_grown_basin_recompute_audit_2026_06_08.py
+  - logs/runner-cache/nonlabel_grown_basin_recompute_audit_2026_06_08.txt
+stop_condition: packaged_for_review_pr

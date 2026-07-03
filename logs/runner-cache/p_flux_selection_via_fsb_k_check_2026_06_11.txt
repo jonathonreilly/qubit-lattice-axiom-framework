@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/p_flux_selection_via_fsb_k_check_2026_06_11.py
+runner_sha256: ffeca3bacd7c0f93de39be8b53b30915e926ee43432cd57dc01967baf82cee3f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.85
+status: ok
+----- stdout -----
+========================================================================
+[A] the named chain: today's grades (honesty), FSB-K condition
+    content, and the (Z) interface match
+========================================================================
+[PASS]  1. [A] today's grades (as of 2026-06-14), recorded honestly: C1 (FSB-K) = retained_bounded; retained Z certificate = retained; the kinetic-class surface row = unaudited; the finite-species-density no-go = unaudited; the retained anchors: SB bridge = retained_bounded, Fock bridge = retained; the old U4 row is not load-bearing -- C1 is now retained-grade and this note's within-surface selection is active at current grades
+[PASS]  2. [A] C1 content (textual): the FSB-K row's quantifier binds 'for **every** kinetic kernel in the realized class', its finiteness clause is supplied 'conditionally on (Z)' (Corollary FSB-CL), it 'neither assumes nor derives `phi = -1`', and its boundary B-3 says any selection must be 'composed by a downstream consumer' from external kernel-geometry certificates -- THIS note is that consumer
+[PASS]  3. [A] retained Z content (textual): the (Z)-certificate row states Theorem Z-K1 (K1 satisfies (Z) exactly, explicit cone data (V, C_j, r_j) = (2I, 2/3, 1)) and Theorem Z-K0 (K0 violates both clauses), and itself 'performs no selection' -- the geometry leg and the thermal leg meet only here
+[PASS]  4. [A] the (Z) interface matches VERBATIM across FSB-K and the retained Z row (shared defining strings: the zero set 'Z(h) = {(p_j, b) : E_b(p_j) = 0}', 'is finite, and for each', 'invertible real `3x3` matrix'), and FSB-K's g_eff = sum |det V_jb|^-1 instantiates on the certified cone data to 8 x 1/8 = 1 per site (unit hopping, V = 2I) = 8 per cell (central-difference, V = I) -- no quantifier gap in the composition
+RESIDUAL (declared-open): C1 is retained_bounded as of 2026-06-14 while the Z certificate is retained; the within-surface selection is active at current grades, but future C1 invalidation would collapse or reconditionalize the composition (boundary B-C1)
+
+========================================================================
+[B] the composed conclusion recomputed self-contained with
+    FSB-K's own mode-sum method on this runner's kernels
+========================================================================
+[PASS]  5. [B] both kernels re-constructed: uniform flux K0 = +1, K1 = -1; zero-mode counts K1 = (8,8,8) (point-like), K0 = (20,68,140) (extensive); closed-form |spectrum| multisets tied to the eigensolver at L = 4, 8 -- licensing the L = 128 symbol grids below
+[PASS]  6. [B] K1 SATISFIES (CL) -- the FSB-K plateau, recomputed: central-difference g_eff(T) = 8.21, 9.15, 12.06 at T = 0.05, 0.1, 0.2 -- FINITE plateau ~ 8 = sum |det V|^-1 per cell (T-halving ratio 0.897); unit-hopping g_eff(0.05) = 0.979 ~ 1 = 8 species / 2^3; exact scale tie g_cd(T) = 8 g_unit(2T) (max dev 0.0e+00); finite-size control L = 64 vs 128 at T = 0.1: 1.42e-03 < 1%
+[PASS]  7. [B] K0 VIOLATES (CL): g_eff (unit) = 323, 81, 20.4, 5.0 at T = 0.05..0.4, T-halving ratios 3.97, 3.99 ~ 4 (T^-2); central-difference likewise (651, 163, 40.3; ratio 3.99); the true low-T law is Sommerfeld: u/T^2 = 0.232, 0.234, 0.235, 0.232 -- no finite T^4 bookkeeping exists for the K0 kernel
+[PASS]  8. [B] the point-zero quadratic comparator (off-surface) also violates (CL): T-halving ratios 2.78, 2.72 ~ 2^1.5 (T^-3/2) -- (CL) is strictly stronger than bare point-likeness (it also forces conical dispersion), exactly as the parents' B-F2 declared
+[PASS]  9. [B] end-to-end LABEL-FREE pipeline: two anonymized kernels in, computed zero counts + cone speeds ((Z) leg) and computed g_eff ratios ((CL) leg) out -- verdicts {A: (Z) pass + (CL) pass, B: fail + fail}; exactly one kernel satisfies the finite-species-density requirement, and ITS computed plaquette flux is -1: the selection consumes thermal/spectral data only, then reads the flux off the selected kernel
+RESIDUAL (declared-open): u(T) is the half-filled free-Fermi probe in the retained SB bridge row's own integrand (hypothesis-satisfiability currency); thermal equilibrium of the realized dynamics is NOT derived anywhere in this chain (inherited FSB-K B-1 / parents' B-F3; boundary B-P)
+
+========================================================================
+[C] the retained-grade assembly: B-Z2 supplied, B-BIT retired
+    within surface, using retained FSB-K and retained Z geometry
+========================================================================
+[PASS] 10. [C] the conclusion is EXACTLY the named missing row: the finite-species-density no-go's section-7 formulation 2 ('g_eff bounded as T -> 0', the retained SB row's own currency) is what C1 plus the retained Z geometry states of the realized kernel, and its N6/section-7 language names this retained-SB-row promotion target; its B-F2 strictly-stronger caveat is reproduced by the comparator leg above -- B-Z2 is supplied at the chain's grade, not granted
+[PASS] 11. [C] what retires: the kinetic-class note's B-BIT ('the selector phi = -1 (K1 vs K0) is NOT forced by the specified constraint set') -- and by that note's own candidate route ('a dynamical/spectral principle requiring point-like zero sets (relativistic cones)', its section 7), which is exactly the (Z)+(CL) principle composed here; B-BIT retires within the licensed two-class surface using retained C1 and retained Z geometry
+[PASS] 12. [C] the currency anchor is already retained: the SB bridge (retained_bounded) owns the per-dof coefficient 7/240 = (7/8)(1/30) exactly and binds 'a relativistic, effectively massless thermal degree of freedom' with a supplied inventory ('It does not derive the Standard Model particle inventory'); the 427/4 arithmetic is branch-independent -- the requirement (REQ) composed here is consistency of the realized kernel with that retained finite-g_eff bookkeeping, the exact content of B-Z2
+[PASS] 13. [C] the grade structure is declared in the note text: C1 is retained-grade with quantifier + FSB-CL intact, and the retained Z geometry carries Z-K1 + Z-K0; future audited_conditional dependency invalidation reverts the row to conditional cascade, while audited_failed / audited_renaming of C1 makes the composition collapse and B-Z2 reopen; the two-class surface itself is scope (boundary B-C0), so the active conclusion is within-surface
+RESIDUAL (declared-open): the licensed two-class surface is the kinetic-class forcing row's scope (unaudited); this composition selects WITHIN the surface; retiring P-KIN wholesale additionally requires that row's grade (boundary B-C0)
+
+========================================================================
+[D] falsification legs and inversion-guard compliance
+========================================================================
+[PASS] 14. [D] falsification leg 1 (drop the (CL) clause): the retained-surface battery alone TIES -- both kernels carry the embedded generation package (Klein cube TRUE/TRUE, M_3(C) dim 9/9, observable count 3 = 3, recomputed here exactly as the matter-content no-go found) -- without the finite-species-density clause the selection vanishes and the parents' no-go state returns
+[PASS] 15. [D] falsification leg 2 (drop the retained Z geometry): FSB-K minus (Z) is FALSE as a universal statement (the realized-class quadratic comparator violates the T^4 law, ratios ~ 2^1.5), and FSB-K is branch-blind on its face ('neither assumes nor derives `phi = -1`') -- without the retained Z leg the hypothesis is unverified on BOTH licensed kernels and the quantifier instantiates on neither: the selection collapses; the (Z) leg is load-bearing, not decorative
+[PASS] 16. [D] turn-1 inversion-guard compliance (computed + textual): the selection consumes thermal/spectral data only -- zero counts 8/8/8 vs 20/68/140, cone speeds, |det V|, g_eff ratios; the kernel-global count readouts are 8/4 (K1) and 20/8 (K0), NEVER 3; the only 3 = 3 in this runner is the falsification TIE (leg 1), which selects nothing; the guards of the index-pairing no-go ('not forced from the matched-3=3 count'; merger-273 / Cl(3) cubic-lift not cited) are respected and the note declares it
+RESIDUAL (declared-open): finite grids: eigensolver L in {4, 8, 12} (PBC, 4 | L wrap convention), symbol grids L in {64, 128} licensed by the closed-form ties of check 5 (boundary B-G)
+RESIDUAL (declared-open): if C1 is later invalidated to audited_conditional, the selection reverts to a conditional cascade; if C1 is later invalidated to audited_failed or audited_renaming, the composition collapses. This runner re-checks the grades on every run (boundary B-C1)
+
+TOTAL: PASS=16 FAIL=0
+VERDICT: RETAINED-GRADE within-surface selection, composed honestly: since the FSB-K row (C1) stands at
+         retained_bounded grade,
+         using the retained (Z)-certificate geometry leg, within the licensed two-class kinetic surface the
+         finite-species-density
+         requirement (CL) -- B-Z2 in the retained SB bridge's own per-dof currency -- is satisfied by K1
+         (g_eff plateau ~ 8 = sum |det V|^-1 per cell; ~ 1 = 8/2^3 per site at unit hopping) and violated by
+         K0 (g_eff ~ T^-2, Sommerfeld), hence phi = -1 is selected: B-Z2 supplied, B-BIT retired within the
+         licensed surface at C1's grade. TODAY C1 is retained_bounded and the Z certificate is retained:
+         this note performs the within-surface selection at current grades. Dropping (CL) restores the retained-surface tie;
+         dropping the retained Z geometry leaves the hypothesis unverified and the selection collapses. Nothing is forced from
+         the matched-3=3 count: the selection consumes thermal/spectral data only.
+
+----- stderr -----
+

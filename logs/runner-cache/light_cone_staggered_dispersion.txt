@@ -1,35 +1,61 @@
 ===== runner cache v1 =====
 runner: scripts/light_cone_staggered_dispersion.py
-runner_sha256: 5f1ec28eb11b1e7a70f6cae3e60a41814fc09c732afcde2f524394625a32da8b
+runner_sha256: 1171136e22539e344865baba1d8e63387263040e46b970a485fb45ff128783f2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
-==============================================================================
-LIGHT CONE FRAMING — staggered Dirac dispersion v_max validation
-==============================================================================
-
+LIGHT CONE FRAMING: repaired dispersion and cone checks
 Dispersion: E^2 = m^2 + sin^2(k)
-Group velocity: v_g(k, m) = sin(k) cos(k) / E
-Closed-form max: v_max(m) = sqrt(m^2 + 1) - m
-
-         m      v_max(num)     v_max(pred)      |diff|    k_argmax  status
-------------------------------------------------------------------------------
-   0.00000    1.0000000000    1.0000000000    0.00e+00    0.000000  PASS
-   0.00010    0.9999000049    0.9999000050    7.95e-11    0.010006  PASS
-   0.00100    0.9990004999    0.9990005000    1.22e-10    3.109988  PASS
-   0.01000    0.9900499987    0.9900499988    1.43e-12    3.041926  PASS
-   0.10000    0.9049875621    0.9049875621    2.96e-11    0.305567  PASS
-   0.50000    0.6180339887    0.6180339887    2.50e-11    2.552151  PASS
-   1.00000    0.4142135623    0.4142135624    4.91e-11    0.699193  PASS
-   2.00000    0.2360679775    0.2360679775    4.68e-12    2.384076  PASS
-
-Limit checks:
-  v_max(m=1e-6) = 0.9999990000 -> 1  PASS
-  v_max(m=100) = 4.999875e-03 ~ 1/(2m) = 5.000000e-03  PASS
-
-PASS=26 FAIL=0
+Closed-form maximum: v_max(m) = sqrt(m^2 + 1) - m
+PASS: [A] v_max formula matches grid maximum at m=0 (diff=0.000e+00, k=0.000000)
+PASS: [A] subluminal dispersion at m=0 (vmax=1.0000000000)
+PASS: [A] massless maximum is not at k=pi/2 (k_argmax=0.000000, v(pi/2)=6.123e-17)
+PASS: [A] v_max formula matches grid maximum at m=0.0001 (diff=7.947e-11, k=0.010006)
+PASS: [A] subluminal dispersion at m=0.0001 (vmax=0.9999000049)
+PASS: [A] maximizer identity sin^2(k*) at m=0.0001 (grid=0.0001001161, pred=0.0000999900)
+PASS: [A] v_max formula matches grid maximum at m=0.001 (diff=1.220e-10, k=3.109988)
+PASS: [A] subluminal dispersion at m=0.001 (vmax=0.9990004999)
+PASS: [A] maximizer identity sin^2(k*) at m=0.001 (grid=0.0009985070, pred=0.0009990005)
+PASS: [A] v_max formula matches grid maximum at m=0.01 (diff=1.429e-12, k=3.041926)
+PASS: [A] subluminal dispersion at m=0.01 (vmax=0.9900499987)
+PASS: [A] maximizer identity sin^2(k*) at m=0.01 (grid=0.0099006682, pred=0.0099005000)
+PASS: [A] v_max formula matches grid maximum at m=0.1 (diff=2.958e-11, k=0.305567)
+PASS: [A] subluminal dispersion at m=0.1 (vmax=0.9049875621)
+PASS: [A] maximizer identity sin^2(k*) at m=0.1 (grid=0.0905010758, pred=0.0904987562)
+PASS: [A] v_max formula matches grid maximum at m=0.5 (diff=2.499e-11, k=2.552151)
+PASS: [A] subluminal dispersion at m=0.5 (vmax=0.6180339887)
+PASS: [A] maximizer identity sin^2(k*) at m=0.5 (grid=0.3090211494, pred=0.3090169944)
+PASS: [A] v_max formula matches grid maximum at m=1 (diff=4.907e-11, k=0.699193)
+PASS: [A] subluminal dispersion at m=1 (vmax=0.4142135623)
+PASS: [A] maximizer identity sin^2(k*) at m=1 (grid=0.4142211447, pred=0.4142135624)
+PASS: [A] v_max formula matches grid maximum at m=2 (diff=4.676e-12, k=2.384076)
+PASS: [A] subluminal dispersion at m=2 (vmax=0.2360679775)
+PASS: [A] maximizer identity sin^2(k*) at m=2 (grid=0.4721328128, pred=0.4721359550)
+PASS: [A] massless limit v_max -> 1 (v_max(1e-6)=0.9999990000)
+PASS: [A] heavy-mass limit v_max ~ 1/(2m) (v_max(100)=4.999875e-03)
+PASS: [B] source contains required repair text: Status authority:** independent audit lane only.
+PASS: [B] source contains required repair text: TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md
+PASS: [B] source contains required repair text: FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md
+PASS: [B] source contains required repair text: LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md
+PASS: [B] source contains required repair text: sin²(k*) = m·(√(m²+1) − m)
+PASS: [B] source contains required repair text: zeta(A) := a_tau ||[H,A]|| y^2/(1 - y^2)
+PASS: [B] source contains required repair text: W_mu := sup_x sum_y ||Phi_xy|| exp(mu d_1(x,y))
+PASS: [B] source omits former action-budget inequality
+PASS: [B] source omits former CN velocity equation
+PASS: [B] source omits former CN denominator
+PASS: [B] source omits former velocity rationale
+PASS: [C] weighted-overlap condition 0 < d*mu < eta < arcsinh(m) (d*mu=0.118269, eta=0.236538, eta*=0.295673)
+PASS: [C] C_d(eta,m) prefactor is finite and positive (C_d=1.77397907)
+PASS: [C] shell-sum W_mu upper bound is finite (bound=51502.40659168, beta=0.118269)
+PASS: [D] Cayley convention matches exp(-2i arctan(aH/2)) (diff=1.430e-15)
+PASS: [D] backward solve convention is not used (forward/backward diff=2.092e-01)
+PASS: [D] subcriticality y=a||H||/2 < 1 (y=0.052433)
+PASS: [D] CN per-step defect <= zeta (defect=8.974e-05, zeta=3.418e-04)
+PASS: [D] CN n-step defect <= n*zeta (defect=4.487e-04, n*zeta=1.709e-03)
+PASS: [D] CN cone-transfer inequality holds on the small block (lhs=1.981e-01, rhs=2.017e-01)
+TOTAL: PASS=46, FAIL=0
 
 ----- stderr -----
 

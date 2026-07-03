@@ -10,6 +10,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 NOTE = "docs/DIMENSION_SELECTION_NOTE.md"
+OUTPUT_JSON = "outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json"
 
 MANIFEST = {
     "parent_runner": "scripts/frontier_dimension_selection_lower_bound_parent_repair.py",
@@ -22,7 +23,7 @@ MANIFEST = {
     "finite_k_bridge_cache": "logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt",
 }
 
-REQUIRED_SOURCE_MARKERS = {
+REQUIRED_SOURCE_FRAGMENTS = {
     "parent_runner": [
         "import importlib.util",
         "BRIDGE_RUNNER",
@@ -46,7 +47,8 @@ REQUIRED_SOURCE_MARKERS = {
 
 EXPECTED_CACHE_SNIPPETS = {
     "parent_cache": [
-        "SUMMARY: PASS=26 FAIL=0",
+        "SUMMARY: PASS=27 FAIL=0",
+        "COMPANION_PACKET: PASS",
         "finite-k lower-bound pass set is d=3,4,5",
         "finite-k lower-bound fail set is d=1,2",
     ],
@@ -102,12 +104,14 @@ def main() -> int:
         check(repo_path(rel_path).exists(), f"manifest_path_exists:{label}", rel_path, results)
         check(rel_path in note_text, f"note_links_manifest_path:{label}", rel_path, results)
 
-    for label, markers in REQUIRED_SOURCE_MARKERS.items():
+    check(OUTPUT_JSON in note_text, "note_links_manifest_output", OUTPUT_JSON, results)
+
+    for label, fragments in REQUIRED_SOURCE_FRAGMENTS.items():
         rel_path = MANIFEST[label]
         source = repo_path(rel_path).read_text(encoding="utf-8")
-        check(len(source) > 3000, f"source_untruncated:{label}", f"{rel_path} has {len(source)} bytes", results)
-        for marker in markers:
-            check(marker in source, f"source_marker:{label}:{marker}", f"{marker} present", results)
+        check(len(source) > 3000, f"source_full_length:{label}", f"{rel_path} has {len(source)} bytes", results)
+        for fragment in fragments:
+            check(fragment in source, f"source_contains:{label}:{fragment}", f"{fragment} present", results)
 
     cache_to_runner = {
         "parent_cache": "parent_runner",
@@ -144,7 +148,7 @@ def main() -> int:
 
     out_dir = repo_path("outputs")
     out_dir.mkdir(exist_ok=True)
-    out_path = out_dir / "dimension_selection_parent_source_packet_manifest_2026_06_05.json"
+    out_path = repo_path(OUTPUT_JSON)
     out_path.write_text(
         json.dumps(
             {

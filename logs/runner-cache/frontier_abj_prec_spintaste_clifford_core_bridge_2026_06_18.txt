@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py
+runner_sha256: 7d96d9ecd7b1fec9fa862648e9569841d5d2952d96ace36c42837c77afc142db
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
+ABJ P-REC spin/taste Clifford-core bridge
+========================================================================
+PASS: canonical blocked staggered alpha_mu form Cl4 -- herm=0.0e+00, square=0.0e+00, anti=0.0e+00
+PASS: generated spin Clifford algebra has rank 16 and taste commutant has dimension 16 -- rank=16, commutant_dim=16
+PASS: spin volume gamma5 squares to I, is Hermitian, and anticommutes with every alpha_mu -- square=0.0e+00, herm=0.0e+00, anti=0.0e+00
+PASS: spin gamma5 gives complementary rank-8 chirality projectors -- projector_resid=0.0e+00, ranks=(8, 8)
+PASS: spin gamma5 is taste-singlet: it commutes with the full taste commutant -- max_commutator_with_commutant=1.1e-15
+PASS: site-parity epsilon is also an involution anticommuting with alpha_mu -- square=0.0e+00, anti=0.0e+00
+PASS: epsilon is not plus or minus the taste-singlet spin gamma5 -- max|eps-g5|=1.0, max|eps+g5|=1.0
+PASS: epsilon is not in the generated spin Clifford algebra -- least_squares_residual=4.000
+PASS: epsilon is taste-dressed: it fails to commute with the full taste commutant -- max_commutator_with_commutant=0.355
+PASS: spin gamma5 and epsilon commute but are independent trace-orthogonal involutions -- tr(g5 eps)=0.0e+00+0.0e+00j
+PASS: source note states the closed algebraic core and the remaining physical P-REC residual
+PASS: ABJ bridge points to this P-REC split without claiming full P-REC closure
+========================================================================
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

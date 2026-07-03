@@ -1,6 +1,7 @@
 # Valley-Linear Wide Tail Note
 
 **Date:** 2026-04-04  
+**Verifier repair:** 2026-06-07
 **Status:** bounded wide-lattice replay on the 3D ordered-lattice `1/L^2` family
 
 ## One-line read
@@ -13,8 +14,27 @@ That is a strong finite-lattice replay, not a universal theorem by itself.
 
 ## Primary artifact
 
-- Script: [scripts/valley_linear_wide_tail_replay.py](/Users/jonreilly/Projects/Physics/scripts/valley_linear_wide_tail_replay.py)
-- Log: [logs/2026-04-04-valley-linear-wide-tail-replay.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-04-valley-linear-wide-tail-replay.txt)
+- Script: [scripts/valley_linear_wide_tail_replay.py](../scripts/valley_linear_wide_tail_replay.py)
+- Frozen replay log: [logs/2026-04-04-valley-linear-wide-tail-replay.txt](../logs/2026-04-04-valley-linear-wide-tail-replay.txt)
+- Registered runner cache: [logs/runner-cache/valley_linear_wide_tail_replay.txt](../logs/runner-cache/valley_linear_wide_tail_replay.txt)
+
+The registered runner defaults to a verifier for the frozen replay log above;
+use `--recompute` to run the original slow wide-tail replay.
+
+## 2026-06-07 verifier repair
+
+The audit blocker asked for either a SHA-pinned completed recompute output or
+frozen raw distance rows plus a verifier that recomputes the peak-tail and
+far-tail fits from those rows rather than accepting prose strings. This note
+takes the frozen-row verifier route:
+
+- frozen raw replay log SHA-256:
+  `2047f12a5143ac9501bacac31cc895fc278e47cf61372c8504d1ef1059a3d409`;
+- the registered verifier parses the nine raw `z, delta, direction` rows;
+- it recomputes the peak row (`z = 4`) from the parsed deltas;
+- it recomputes the peak-tail fit from the parsed rows with `z >= 4`;
+- it recomputes the far-tail fit from the parsed rows with `z >= 5`;
+- current verifier scorecard: `SCORECARD PASS=9 FAIL=0`.
 
 This replay keeps fixed:
 

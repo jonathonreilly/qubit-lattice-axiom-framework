@@ -1,7 +1,14 @@
 # Shapiro Diamond Bridge Note
 
-**Date:** 2026-04-06  
+**Date:** 2026-04-06
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
 
 ## Retraction
 
@@ -13,22 +20,34 @@
 
 - **Do not cite warning:** Do NOT cite the numerical results, tables, or threshold values in the original content below as live framework claims. The runners referenced in this note have been superseded or are no longer reproducible at the time of audit. If a future investigation revisits this physics, treat it as starting from scratch rather than as continuation of a "closed no-go".
 
+## 2026-06-16 archive firewall
+
+This archived packet is historical / diagnostic and retired as evidence. The
+body below can be used only as vocabulary for a possible future Shapiro-to-
+diamond handoff. It does not establish a retained Shapiro phase lag, a retained
+diamond/NV proxy bridge, or any lab-facing causal discriminator.
+
+Any future repair must first rebuild the causal phase-lag derivation, audit the
+diamond phase-ramp/unit inputs, and construct `X`, `Y`, `phi`, and phase-ramp
+quantities from a shared data pipeline.
+
 ## Artifact Chain
 
-- [`docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md)
-- [`docs/DIAMOND_ABSOLUTE_UNIT_BRIDGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_ABSOLUTE_UNIT_BRIDGE_NOTE.md)
-- [`archive_unlanded/causal-field-stale-runners-2026-04-30/CAUSAL_PROPAGATING_FIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/causal-field-stale-runners-2026-04-30/CAUSAL_PROPAGATING_FIELD_NOTE.md)
-- [`docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md)
+- [`docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md`](../../docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md)
+- [`docs/DIAMOND_ABSOLUTE_UNIT_BRIDGE_NOTE.md`](../../docs/DIAMOND_ABSOLUTE_UNIT_BRIDGE_NOTE.md)
+- [`docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](../../docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)
+- [`docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md`](../../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md)
 
-## Question
+## Historical question (retracted)
 
-How do we express the retained c-dependent phase lag in the same `X / Y / phi`
-and phase-ramp language as the diamond/NV bridge card, while keeping the claim
-surface lab-facing and review-safe?
+The old question asked how to express a c-dependent phase lag in `X / Y / phi`
+and phase-ramp language. This archive does not prove the premise that the phase
+lag or bridge is retained.
 
-## Retained Phase-Lag Result
+## Historical supplied phase-lag rows (retracted)
 
-The discrete Shapiro-style phase lag is the new causal-propagation observable:
+The old note supplied these rows and treated them as a causal-propagation
+observable. They are not live evidence here:
 
 - `c = inst`: phase lag `0.000 rad`
 - `c = 2.0`: phase lag `+0.040 rad`
@@ -36,30 +55,34 @@ The discrete Shapiro-style phase lag is the new causal-propagation observable:
 - `c = 0.5`: phase lag `+0.062 rad`
 - `c = 0.25`: phase lag `+0.068 rad`
 
-The key properties already retained are:
+The old body asserted these properties as already retained; that assertion is
+retracted until the causal and diamond dependencies are independently repaired
+and audited:
 
 - the phase lag is monotone in slower field propagation
 - the phase lag is stable across seeds to three significant figures
 - the same table is portable across the three grown families
 - static fields do not produce this c-dependent delay
 
-## Bridge Language
+## Historical bridge vocabulary (open)
 
-The bridge card language is already the right one:
+The bridge-card vocabulary may remain useful as a possible language to test in
+a future repair:
 
 - `X` is the in-phase proxy channel
 - `Y` is the quadrature proxy channel
 - `phi = atan2(Y, X)` is the phase lag
 - the phase-ramp slope is the cleanest calibration handle
 
-The Shapiro-style phase lag should be read as the same class of observable:
+The old note proposed reading the supplied Shapiro-style lag as the same class
+of observable:
 
 - a detector-line phase shift, not just a centroid displacement
 - a causal-delay signature, not just a static field-shape effect
 - a proxy phasor that can be expressed in `X / Y / phi` form
 
-In that language, the phase lag is the causal analog of the bridge-card
-quadrature channel:
+In that proposed language, a future repaired phase lag would be compared with
+the bridge-card quadrature channel through:
 
 - `X` tracks the in-phase response
 - `Y` tracks the delay-sensitive residue
@@ -67,9 +90,9 @@ quadrature channel:
 - the phase-ramp slope tracks how quickly that delay accumulates across the
   detector line
 
-## Why This Is Different From Static Deflection
+## Historical static-deflection contrast (retracted as closure)
 
-The retained causal-field work now separates two effects:
+The old body claimed that the causal-field work separated two effects:
 
 - a broad static or forward-only deflection shape
 - a c-dependent detector-phase delay
@@ -77,49 +100,44 @@ The retained causal-field work now separates two effects:
 Static fields can mimic the first class of observable, but they do not give a
 clean c-dependent phase lag of the Shapiro type.
 
-So the diamond-facing translation should emphasize:
+Any future diamond-facing translation would need to test:
 
 - not just "the beam moves"
 - but "the beam acquires a quadrature / phase-ramp signature that changes with
   propagation speed"
 
-That is the cleanest lab-facing discriminator in the retained causal package.
+This archive does not establish a lab-facing discriminator or a retained causal
+package.
 
-## What Can Be Claimed In-Repo
+## What remains safe as archive-only context
 
-The repo can defensibly say:
+This archived packet may only say:
 
-- the causal delay is expressible as a proxy phasor in `X / Y / phi` language
-- the phase lag is coherent and seed-stable
-- the phase lag is portable across the three retained grown families
-- the causal phase observable remains a proxy, not an absolute NV readout
+- the note proposed `X / Y / phi` language for supplied phase rows
+- the bridge was not proved from audit-clean causal and diamond-unit inputs
+- the packet is open vocabulary, not a retained bridge or lab-facing prediction
 
-The repo cannot yet say:
+The repo cannot cite this packet for:
 
 - absolute NV counts
 - a calibrated detectability threshold in a specific microscope
 - a transfer coefficient from proxy units to lab units
 
-## Recommended Handoff Sentence
+## Historical handoff sentence (retracted)
 
-The strongest review-safe handoff is:
+The old handoff sentence claimed a proxy-level causal phase-lag bridge, family
+portability, and a distinction from static deflection. That handoff is
+retracted and should not be quoted as current repo guidance.
 
-**the retained causal phase lag is a proxy-level `phi`/phase-ramp observable
-that is portable across the three grown families and is qualitatively different
-from static deflection, but it still needs external calibration before it can
-be translated into absolute NV units**
+## Historical narrow conclusion (retracted)
 
-## Narrow Conclusion
-
-The Shapiro-style result belongs in the diamond/NV story as a **phase-sensitive
-causal discriminator**:
+The old conclusion placed the Shapiro-style result in the diamond/NV story as a
+phase-sensitive causal discriminator. That placement is retracted here:
 
 - it lives in the same `X / Y / phi` language as the bridge card
 - it strengthens the phase-ramp handoff
 - it does not yet replace the missing external calibration coefficient
 
-So the correct bridge claim is:
-
-**proxy-level causal phase lag, portable across the retained grown families,
-expressible as `X / Y / phi` and phase-ramp slope, but still not an absolute
-NV-unit prediction**
+The old bridge claim asserted a proxy-level phase-lag bridge in `X / Y / phi`
+language. That claim is retracted until the causal and diamond bridge inputs
+are rebuilt from audit-clean sources.

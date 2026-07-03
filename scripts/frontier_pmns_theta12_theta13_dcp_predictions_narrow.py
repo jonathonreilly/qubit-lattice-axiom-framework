@@ -70,6 +70,10 @@ import sympy as sp
 from mpmath import iv, mp
 
 mp.prec = 200
+# mpmath's mp and iv contexts have INDEPENDENT precision. Setting mp.prec does NOT change iv.prec
+# (which defaults to 53 bits), so the interval-arithmetic parts (interval Newton, projectors,
+# box-Krawczyk in Parts 2-5) must set iv.prec explicitly to actually run at 200-bit, as this note claims.
+iv.prec = 200
 
 
 PASS_COUNT = 0

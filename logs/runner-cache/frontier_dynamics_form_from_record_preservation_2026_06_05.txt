@@ -1,0 +1,126 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dynamics_form_from_record_preservation_2026_06_05.py
+runner_sha256: 50e40a5ce7b138843f773ee85753625e157ff3a8d77ee33362bb0cd3ce89a1c6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 11.27
+status: ok
+----- stdout -----
+==========================================================================
+FRONTIER: dynamics FORM from record-preservation (gauge-invariant-local / Wilson class)
+composition: #2667 gauge structure  x  #2701 record-formation dynamics class
+==========================================================================
+
+==========================================================================
+S1  Gauge-covariance from record-preservation: [H,G_v]=0 <=> records map to records
+==========================================================================
+PASS S1.0 A_inv = commutant({G_v}) is a proper nontrivial subalgebra :: dim(A_inv)=36 of 256
+PASS S1.0b A_inv dimension matches upstream gauge-structure note (36) :: dim=36
+PASS S1.1 chosen O is Hermitian
+PASS S1.1b chosen O is a gauge-invariant record (in A_inv)
+PASS S1.2 gauge-covariant H is Hermitian
+PASS S1.2b gauge-covariant H commutes with every G_v ([H,G_v]=0)
+PASS S1.3 covariant H: Heisenberg-evolved record STAYS a record (O(t) in A_inv for all t)
+PASS S1.3b covariant H: dO/dt = i[H,O] is in A_inv (record stays a record infinitesimally)
+PASS S1.4 control H_bad is Hermitian and local
+PASS S1.4b control H_bad does NOT commute with the Gauss generators ([H_bad,G_v]!=0)
+PASS S1.5 control: dO/dt = i[H_bad,O] LEAVES A_inv (record maps to a gauge-VARIANT operator)
+PASS S1.5b control: finite-t evolved O(t) is gauge-VARIANT (not a record)
+PASS S1.6 sufficiency over random gauge-covariant H: all preserve A_inv :: 40/40
+PASS S1.6b equivalence over random general Hermitian H: (preserves A_inv) <=> ([H,G_v]=0) :: 40/40
+PASS S1.7 EXACT: dim{Hermitian H : ad_H preserves A_inv} == dim(A_inv) (no normalizer slack => necessity is a theorem) :: preserving_dim=16, dim(A_inv)=16
+PASS S1.7b EXACT: hence ad_H preserves A_inv  <=>  H in A_inv  <=>  [H,G_v]=0 (records->records <=> gauge-covariant)
+PASS S1.7c EXHAUSTIVE: (preserves A_inv) == ([P,G_v]=0) on ALL 256 Pauli strings (full Hermitian basis) :: disagreements=0
+
+==========================================================================
+S2  Gauge-invariant LOCAL Hermitian basis: plaquette smallest loop; covariant hopping smallest matter term
+==========================================================================
+PASS S2.0 (Z2) Gauss generators mutually commute
+PASS S2.1 plaquette is Hermitian
+PASS S2.1b plaquette (smallest closed loop) is gauge-invariant ([plaq,G_s]=0)
+PASS S2.2 single link gauge field is NOT gauge-invariant (no smaller pure-gauge loop)
+PASS S2.2b open two-link path is NOT gauge-invariant (an OPEN line is not a record)
+PASS S2.2c on-link electric term sigma_x(link) is gauge-invariant (allowed local term, the conjugate/electric energy)
+PASS S2.3 covariant nearest-neighbour hopping is Hermitian
+PASS S2.3b covariant hopping (smallest matter term) is gauge-invariant
+PASS S2.4 on-site mass (charge-parity) sigma_x(site) is gauge-invariant
+PASS S2.5 bare on-site matter field sigma_z(site) is NOT gauge-invariant
+PASS S2.5b UNdressed hop sigma_z(s0)sigma_z(s1) (no link) is NOT gauge-invariant -> dressing by the link is FORCED
+PASS S2.6 plaquette support = 4 links (minimal closed loop on a cubic lattice) :: support=4
+PASS S2.6b covariant nn-hop support = 3 (two sites + one connecting link = minimal matter term) :: support=3
+PASS S2.6c on-site mass support = 1 (minimal matter on-site term)
+PASS S2.7 (SU2) double-singlet Wilson-type observable is invariant at both endpoints
+PASS S2.7b (SU2) bare link transport is NOT invariant (no smaller invariant than the dressed loop)
+
+==========================================================================
+S3  Record-broadcast -> covariant hopping: the gauge-covariant charge-broadcasting interaction IS the covariant hopping
+==========================================================================
+PASS S3.1 covariant hopping conserves total U(1) charge ([H,Q]=0)
+PASS S3.1b covariant hopping is gauge-invariant ([H,G_v]=0) -> it broadcasts a *gauge-invariant* record
+PASS S3.2 bare hop conserves charge but is NOT gauge-covariant (broadcasts a gauge-VARIANT quantity = not a record)
+PASS S3.3 on-site flip does NOT even conserve charge (cannot broadcast a conserved record)
+PASS S3.4 broadcast: TOTAL charge (the record) is conserved under covariant hop :: Q:0.000000->0.000000
+PASS S3.4b broadcast: charge actually SPREADS along the link (local <sz(A)> moves) -> the record is copied via the connection :: <sz(A)>:1.0000->0.1700
+
+==========================================================================
+S4  Framework H (Wilson plaquette + covariant staggered hopping + mass) is the LEADING element of the forced class
+==========================================================================
+PASS S4.1 framework H is Hermitian
+PASS S4.2 framework H is gauge-invariant ([H,G_s]=0 for all s)
+PASS S4.3 framework term 'plaquette' is in the gauge-invariant-local Hermitian class
+PASS S4.3 framework term 'hop01' is in the gauge-invariant-local Hermitian class
+PASS S4.3 framework term 'hop12' is in the gauge-invariant-local Hermitian class
+PASS S4.3 framework term 'hop23' is in the gauge-invariant-local Hermitian class
+PASS S4.3 framework term 'hop30' is in the gauge-invariant-local Hermitian class
+PASS S4.3 framework term 'mass' is in the gauge-invariant-local Hermitian class
+PASS S4.3 framework term 'electric' is in the gauge-invariant-local Hermitian class
+PASS S4.4 pure-gauge leading term is the plaquette (support 4)
+PASS S4.4b matter leading term is the nn covariant hop (support 3)
+PASS S4.5 the framework H is built ONLY from leading-range invariants (plaquette + nn-hop + on-site) -> it is the leading element of the forced class
+
+==========================================================================
+S5  Residual ledger (NOT forced): couplings (beta) + minimality/truncation + trivial H=0
+==========================================================================
+PASS S5.1 RESIDUAL: the COUPLINGS (beta, kappa, m) are NOT forced -- every choice yields a valid class member
+PASS S5.2 RESIDUAL: minimality/truncation NOT forced -- the on-link electric term is an admissible extra local invariant
+PASS S5.2b RESIDUAL: a LONGER matter path (s0->s1->s2) is ALSO a valid gauge-invariant-local term -> 'only the plaquette/nn-hop' is a truncation choice, not forced
+PASS S5.3 RESIDUAL: trivial H=0 is in the class (gauge+locality+Hermiticity do not force nontrivial dynamics)
+
+  --- RESIDUAL LEDGER (explicit) ---
+  FORCED by {record-preservation (#2667) + locality (#2701) + Hermiticity}:
+    * H is gauge-covariant: [H,G_v]=0 (records evolve to records).
+    * H is a sum of FINITE-RANGE gauge-invariant Hermitian terms.
+    * the BASIS of allowed local terms: closed Wilson loops (leading=plaquette),
+      covariant matter paths (leading=nn hopping), on-site mass, on-link electric.
+    => the dynamics FORM lies in the gauge-invariant-local class, with the
+       Wilson plaquette + covariant hopping + mass as the LEADING terms.
+  NOT forced (the residual / admissions):
+    * the COUPLINGS (beta / g_bare, kappa, m, relative weights) -- any values.
+    * MINIMALITY / lowest-order TRUNCATION (why ONLY plaquette+nn, not + larger
+      loops / longer paths) -- larger invariants are equally admissible.
+    * NONtriviality: H=0 is in the class; dynamics need not be nonzero.
+  RECONCILES WITH 'action hand-added': the FORM-CLASS is forced; the specific
+    action (Wilson vs heat-kernel vs Manton; the coupling; the truncation) is
+    NOT -- exactly the BRIDGE_GAP_ACTION_FORM_UNIQUENESS no-go, which lives
+    ENTIRELY INSIDE this forced class (all 3 candidates are gauge-invariant-local).
+
+==========================================================================
+S6  Companion-note firewall: the honest non-claims are present
+==========================================================================
+PASS S6.0 companion note exists
+PASS S6 firewall present: does **not** derive the action...
+PASS S6 firewall present: says **nothing** about
+  `beta = 6`...
+PASS S6 firewall present: does **not** force minimality...
+PASS S6 firewall present: does **not** force non-trivial dynamics...
+PASS S6 firewall present: the dynamics **form-class**...
+PASS S6 firewall present: inside** the gauge-invariant-local class...
+
+==========================================================================
+SELF-CHECK SUMMARY
+==========================================================================
+SUMMARY: PASS=62 FAIL=0
+PEAK_RSS_MB: 144.4
+
+----- stderr -----
+

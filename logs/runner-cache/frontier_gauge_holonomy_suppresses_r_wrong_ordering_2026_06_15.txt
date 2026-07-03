@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_holonomy_suppresses_r_wrong_ordering_2026_06_15.py
+runner_sha256: 55ceac80327d6f4bd60f7aa4fc947e7cfbae5ce8bdb0656ed3748a95313b1cb7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+  PASS  bare trivial-rep value r0 = 1/2 (free input, leptonic reference)
+
+[1] on-site a is link-blind; doublet b picks up the normalized character chi_R(U)/d_R
+  PASS  [trivial d=1] a_eff = a (on-site carries no link)
+  PASS  [trivial d=1] r_R = r0*|chi/d|^2 (identity holds)
+  PASS  [U(2) d=2] a_eff = a (on-site carries no link)
+  PASS  [U(2) d=2] r_R = r0*|chi/d|^2 (identity holds)
+  PASS  [U(3) >= SU3-fund] a_eff = a (on-site carries no link)
+  PASS  [U(3) >= SU3-fund] r_R = r0*|chi/d|^2 (identity holds)
+  PASS  [U(8) >= adjoint] a_eff = a (on-site carries no link)
+  PASS  [U(8) >= adjoint] r_R = r0*|chi/d|^2 (identity holds)
+
+[2] character bound: |chi_R(U)| <= d_R  =>  r_R <= r0 always
+  PASS  r_R <= r0 over 800 random unitaries (4 reps x 200)
+  PASS  normalized character magnitude |chi/d| <= 1 (the bound's source)
+
+[3] equality r_R=r0 iff U is a center (scalar-phase) element
+  PASS  center (d=3, phase) gives r_R = r0 (no suppression, |chi/d|=1)
+  PASS  center (d=2, phase) gives r_R = r0 (no suppression, |chi/d|=1)
+  PASS  center (d=8, phase) gives r_R = r0 (no suppression, |chi/d|=1)
+  PASS  a generic U(3) background strictly suppresses: r_R < r0
+
+[4] CONDITIONAL (open bridge): IF lepton<->trivial-rep & r_R=registered dial, the observed
+    spread would violate the cap r_colored <= r_lepton (arithmetic of the anchors only)
+  PASS  [conditional] algebraic cap value r0 = 1/2 equals leptonic anchor IF bridge held (open premise)
+  PASS  [conditional] observed r_down = 0.597 exceeds the cap value (arithmetic of anchors)
+  PASS  [conditional] observed r_up = 0.773 exceeds the cap value (arithmetic of anchors)
+  PASS  [conditional] => IF the unsupplied bridge held, the holonomy channel would give the WRONG ordering (r_quark>cap observed; <=cap predicted) -- bridge NOT asserted here
+
+[5] either horn fails: linkless/flat b-term (U=I) is rep-independent => no spread
+  PASS  U=I (no link / flat background): r_R = r0 for every rep (no spread)
+
+[6] firewall: no r value forced; r0 free; result is the bound r_R <= r0
+  PASS  bound r_R <= r0 holds for a DIFFERENT free r0=0.31 (value not selected)
+  PASS  the bound is the same inequality for two distinct free r0 (0.5 and 0.31) => no value forced
+
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

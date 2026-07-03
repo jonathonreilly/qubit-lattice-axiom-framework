@@ -4,7 +4,7 @@
 Verifies the narrow bridge:
   Given (P1) the static-source linear-response readout convention
        V(r) = -C g_bare^2 G(r)
-  and the Maradudin asymptotic from the sibling accepted-premise bridge
+  and the framework-local Z^3 Green-kernel theorem
        G(r) -> 1/(4 pi |r|) as |r| -> infinity,
   the large-|r| asymptotic V(r) -> -C alpha / |r| follows by exact
   rational substitution, with alpha = g_bare^2 / (4 pi) the canonical
@@ -90,9 +90,11 @@ required_source_phrases = {
     "accepted-premise packet entry": "accepted-premise packet entry",
     "not derived boundary": "not derived in this bridge",
     "no new repo-wide axiom": "no new repo-wide axiom",
-    "maradudin sibling bridge dependency": "LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+    "framework-local green dependency": "LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
+    "green certificate runner dependency": "scripts/lattice_greens_z3_asymptotic_normalization_certificate.py",
     "i2 sibling bridge dependency": "ALPHA_CONVENTION_I2_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
     "g bare sibling bridge dependency": "G_BARE_TWO_WARD_H_UNIT_RESIDUE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+    "current minimal axioms memo": "MINIMAL_AXIOMS_2026-06-05.md",
 }
 for label, needle in required_source_phrases.items():
     exact_assert(needle in SOURCE_TEXT, f"(S-required) source contains {label}")
@@ -103,12 +105,17 @@ forbidden_source_phrases = [
     "retained_bounded",
     "No new admissions",
     "MINIMAL_AXIOMS_2026-05-03",
+    "MINIMAL_AXIOMS_2026-05-20",
     "canonical Cl(3) connection normalization",
     "`Cl(3)` on `Z^3` axioms",
+    "spatial substrate",
+    "substrate-internal",
     "](ALPHA_BARE_FOUR_PI_FROM_Z3_PLANCHEREL_BRIDGE_BOUNDED_NOTE_2026-05-26.md)",
     "](HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md)",
     "](PLANCK_TARGET3_COFRAME_RESPONSE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md)",
     "](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)",
+    "sibling Maradudin bridge",
+    "named Maradudin asymptotic through the sibling accepted-premise bridge",
 ]
 for phrase in forbidden_source_phrases:
     exact_assert(
@@ -131,7 +138,7 @@ g_bare, C_sym, r_sym, alpha_sym = sp.symbols(
 )
 
 # (P1) supplied identification: V(r) = -C g_bare^2 G(r)
-G_sym = 1 / (4 * sp.pi * r_sym)  # (M1) Maradudin asymptotic
+G_sym = 1 / (4 * sp.pi * r_sym)  # (M1) framework-local Green asymptotic
 V_from_P1 = -C_sym * g_bare**2 * G_sym
 
 # (B1) Substitute (M1) into (P1)
@@ -388,7 +395,7 @@ print("=" * 78)
 # Load-bearing inputs for this bridge.
 load_bearing_inputs = {
     "P1: static-source linear-response readout convention": "accepted-premise packet entry",
-    "M1: Maradudin G(r) -> 1/(4 pi |r|)": "consumed from sibling accepted-premise bridge",
+    "M1: framework-local G(r) -> 1/(4 pi |r|)": "consumed from framework-local Green theorem",
     "I2 (alpha = g_bare^2/(4 pi))": "consumed from sibling I2 bridge, not re-derived",
     "g_bare = 1 conditional": "consumed from g_bare two-Ward bridge composition",
     "Rational arithmetic over Q[g_bare, alpha, C, 1/r]": "closed-algebra identity",
@@ -471,7 +478,7 @@ if total_fail == 0:
         "VERDICT: bounded accepted-premise bridge passes; (B1)-(B4) follow from"
     )
     print(
-        "  accepted-premise packet (P1) + Maradudin bridge + sibling I2/g_bare"
+        "  accepted-premise packet (P1) + framework-local Green theorem + sibling I2/g_bare"
     )
     print(
         "  bridges by exact symbolic substitution arithmetic."

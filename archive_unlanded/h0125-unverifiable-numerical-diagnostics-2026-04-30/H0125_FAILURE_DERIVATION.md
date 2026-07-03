@@ -1,7 +1,14 @@
-# Why h=0.125 Fails: Retained Derivation
+# Historical h=0.125 Failure-Diagnosis Packet (Retracted)
 
 **Date:** 2026-04-06
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/h0125-unverifiable-numerical-diagnostics-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
 
 ## Retraction
 
@@ -13,11 +20,34 @@
 
 - **Do-not-cite warning:** Do NOT cite the numerical results, tables, or threshold values in the original content below as live framework claims. The runners referenced in this note have been superseded or are no longer reproducible at the time of audit. If a future investigation revisits this physics, treat it as starting from scratch rather than as continuation of a "closed no-go".
 
-## Root cause
+## 2026-06-16 archive firewall
 
-Three independent mechanisms compound to destroy the signal:
+This archived packet is historical / diagnostic and retired as evidence. It is
+not a retained h=0.125 failure derivation, not a quantified root-cause
+diagnosis, and not authority for the printed detector-probability or SNR rows.
 
-### 1. Boundary leakage accelerates with h
+**Firewall runner:**
+[`scripts/h0125_archive_firewall_2026_06_16.py`](../../scripts/h0125_archive_firewall_2026_06_16.py)
+(`PASS: h0125 archive firewall holds`; cached at
+[`logs/runner-cache/h0125_archive_firewall_2026_06_16.txt`](../../logs/runner-cache/h0125_archive_firewall_2026_06_16.txt)).
+
+The old negative story is also not the current live h=0.125 status. The live
+computable reduced-family lane is documented separately in
+`docs/LATTICE_3D_L2_NUMPY_H0125_AUDIT_NOTE.md` with
+`scripts/lattice_3d_l2_numpy_h0125_audit.py`; this archive does not supersede
+or contradict that executable lane.
+
+The only safe residue is the audit boundary: boundary leakage and beam
+spreading remain plausible hypotheses, but the quantified root-cause diagnosis
+and SNR=0.5 noise conclusion are not retained.
+
+## Historical root-cause diagnosis (retracted)
+
+The old body claimed that three independent mechanisms compound to destroy the
+signal. The following sections are retained only as historical failed
+diagnostic prose:
+
+### 1. Historical boundary-leakage table (retracted)
 
 The interior transfer norm T is used to normalize ALL nodes, but boundary
 nodes have fewer valid edges. The corner transfer norm is only 44% of
@@ -31,7 +61,7 @@ interior T:
 
 Boundary nodes retain only 44% of their amplitude per layer instead of 100%.
 
-### 2. Beam width exceeds half the lattice at h=0.125
+### 2. Historical beam-width table (retracted)
 
 | h | beam sigma (mid) | W_phys | sigma/W |
 | ---: | ---: | ---: | ---: |
@@ -47,7 +77,7 @@ means more steps for the beam to spread. The beam width grows as
 sqrt(N) ~ sqrt(L/h), so sigma ~ sqrt(1/h). At h=0.125: sigma ~
 sqrt(8) * sigma(h=1) ~ 2.8 * sigma(h=1).
 
-### 3. Per-layer probability loss compounds exponentially
+### 3. Historical per-layer probability-loss table (retracted)
 
 | h | nl | retention/layer | P_det |
 | ---: | ---: | ---: | ---: |
@@ -55,16 +85,17 @@ sqrt(8) * sigma(h=1) ~ 2.8 * sigma(h=1).
 | 0.250 | 121 | 0.812 | 1.1e-88 |
 | 0.125 | 241 | 0.727 | 1.6e-136 |
 
-P_det = (retention)^nl. At h=0.125: 0.727^241 ~ 10^-33.
-Combined with geometric spreading: P_det = 1.6e-136.
+The printed `P_det` rows are not derived by this archive. The explicit
+`P_det = (retention)^nl` formula is inconsistent with the printed table, which
+is the load-bearing audit failure.
 
-### 4. The AWAY result is noise
+### 4. Historical AWAY/SNR explanation (retracted)
 
 At P_det = 1.6e-136, the centroid measurement has SNR = 0.5 (below
 the significance threshold of 3.0). The "AWAY" direction is statistical
 noise from the 10^-136 amplitude, not a real physical effect.
 
-## The fix required
+## Historical proposed fixes (not live guidance)
 
 Two things would resolve h=0.125:
 
@@ -78,5 +109,6 @@ Two things would resolve h=0.125:
    At h=0.125: need W ~ 10 * sqrt(4) = 20. This gives ~25M nodes,
    which is feasible with numpy but slow (~2 hours).
 
-Alternatively: accept h=0.25 as the finest confirmed lattice spacing.
-The physics (F~M, Born, gravity, distance law) is well-established at h=0.25.
+The old alternative to accept `h=0.25` as the finest confirmed spacing is not
+current guidance from this archive. Consult the live h=0.125 audit note and
+runner cache for the current executable reduced-family status.

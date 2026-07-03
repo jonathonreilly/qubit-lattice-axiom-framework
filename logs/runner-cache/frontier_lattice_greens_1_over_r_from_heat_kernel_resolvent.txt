@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.py
+runner_sha256: dc022c84cdb8003b9f56f8587255d5bb14a5efbdb59faa9e64470f0d0826a66f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.71
+status: ok
+----- stdout -----
+PASS T1 1D NN heat kernel (e^{-tL1})_{0n} = e^{-2t} I_n(2t)
+PASS T2 e^{-tL} factorizes over axes (commuting L_mu)
+PASS T3 axis 4pi r G(r) -> 1 (within 1% by r=16, 0.1% by r=64)
+PASS T3b diagonal 4pi r G(r) -> 1 (isotropic)
+PASS T4 G(0,0,0) = Watson integral 0.252731
+PASS T5 e^{-2t} I_n(2t) -> (4 pi t)^{-1/2} e^{-n^2/4t} (large-t continuum heat kernel)
+PASS T6 int (4 pi t)^{-3/2} e^{-r^2/4t} dt = 1/(4 pi r) (continuum Green from heat kernel)
+PASS CTRL leading term isotropic: |axis - diagonal| 4pi r G -> 0 at r=32
+PASS CTRL wrong normalization 1/(2 pi r) is rejected (2pi r G !-> 1)
+PASS SOURCE boundary names the 2026-06-08 asymptotic narrow
+PASS SOURCE boundary preserves uniform local-CLT/tail-domination bridge
+PASS SOURCE boundary no longer claims to retire the former Green-asymptotic premise by itself
+PASS SOURCE summary routes Maradudin references as parallel, not load-bearing
+PASS SOURCE removes accepted-premise textbook-import wording
+PASS REROUTE note names the 2026-06-08 stronger-theorem reroute
+PASS REROUTE note cites the stronger lattice-correction theorem
+PASS REROUTE stronger theorem uses the same heat-kernel/Bessel Green function
+PASS REROUTE stronger theorem proves the leading 1/(4pi r) asymptotic plus K4/r^3 correction
+PASS REROUTE stronger-theorem cache is fresh and reports PASS=6 FAIL=0
+PASS REROUTE audit registration records exact-support leading-term route
+
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

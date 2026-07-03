@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_conformal_mode_sign_diagnostic.py
+runner_sha256: a056ed0aa6292e9430d47eb161b066be904fb0df114dec74d22d06b7e503f055
+timeout_sec: 360
+exit_code: 0
+elapsed_sec: 3.60
+status: ok
+----- stdout -----
+PASS T1 finite pure-trace probe: <trace|M|trace> = +0.0295 POSITIVE (single-vector trace probe is not decisive for the coupled 10x10 matrix)
+PASS T2 finite 10x10 diagonalization: exactly 1 negative eigenvalue below -1e-4 (ev=-0.0099), |overlap with trace/conformal|=0.49, |overlap with TT-yz|=0.000
+PASS T3 lowest eigenvalue magnitude shrinks from N=4 to N=6 (N=4:-0.0496 -> N=6:-0.0099) and the runner-defined transverse 6x6 sector has no eigenvalue below -5e-3 ([0.042 0.045 0.045 0.045 0.046 0.046])
+
+Finite diagnostic: the normalized pure-trace probe is positive, but the full metric-weighted
+10x10 matrix has exactly one opposite-signed eigen-direction with nontrivial trace/conformal
+character and negligible tested yz TT overlap. Its magnitude shrinks from N=4 to N=6, while
+the runner-defined transverse projected block has no eigenvalue below the stated threshold.
+This is finite sign/character support only. It is not a continuum Hamiltonian-constraint
+theorem, exact two-DOF theorem, scalar-tensor exclusion, fifth-force statement, or
+cosmological-constant coupling theorem.
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

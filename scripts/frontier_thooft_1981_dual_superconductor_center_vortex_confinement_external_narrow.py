@@ -48,6 +48,43 @@ def section(title: str) -> None:
     print("=" * 78)
 
 
+def test_T0_pure_notation_source_boundary() -> None:
+    section("T0: pure-notation source boundary")
+    text = NOTE.read_text(encoding="utf-8")
+    flat = " ".join(text.split())
+    lower = flat.lower()
+    check(
+        "note declares 2026-06-07 pure-notation source boundary",
+        "2026-06-07 Pure-Notation Source Boundary" in text,
+        "source-boundary section present",
+    )
+    check(
+        "note names only the syntactic registration packet P_THOOFT_REG",
+        "P_THOOFT_REG = (" in text
+        and "abelian-projection vocabulary" in text
+        and "Wilson-loop area-law target notation" in text,
+        "registration packet, not theorem packet, is named",
+    )
+    check(
+        "note says external references are bibliographic labels, not retained authorities",
+        "bibliographic labels for the notation being catalogued" in lower
+        and "not a retained authority packet" in lower,
+        "reference boundary present",
+    )
+    check(
+        "note has no published-context support claim",
+        "no published-context support claim" in lower
+        and "pure syntactic vocabulary registration" in lower,
+        "support-only reading excluded",
+    )
+    check(
+        "note leaves theorem use behind a separate retained bridge",
+        "later use as a theorem input" in lower
+        and "separate retained bridge theorem" in lower,
+        "future bridge route explicit",
+    )
+
+
 def test_T1_abelian_projection_structure() -> None:
     section("T1: abelian projection — residual gauge group U(1)^(N-1) ⊂ SU(N)")
     text = NOTE.read_text(encoding="utf-8")
@@ -340,6 +377,7 @@ def test_T10_no_alpha_LM_16_or_hierarchy_closure() -> None:
 def main() -> int:
     print("# 't Hooft 1981 dual-superconductor / center-vortex confinement external gate runner")
     print(f"# Source note: {NOTE.relative_to(ROOT)}")
+    test_T0_pure_notation_source_boundary()
     test_T1_abelian_projection_structure()
     test_T2_vortex_action_symbolic_form()
     test_T3_su3_g2_one_sigma_a2_one()

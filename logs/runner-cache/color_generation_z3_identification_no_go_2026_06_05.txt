@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/color_generation_z3_identification_no_go_2026_06_05.py
+runner_sha256: da277b9d7c977df8e07e5c6627b91a519ebcd9a6c57cec232a6f0325ba0e26f2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.30
+status: ok
+----- stdout -----
+==============================================================================
+COLOR_GENERATION_Z3_IDENTIFICATION_NO_GO  (derivation runner)
+==============================================================================
+Premises: cited color and generation carrier provenance.
+Result: the supplied color-carrier and generation-carrier Z_3 actions
+        cannot be identified because their characters are inequivalent.
+
+==============================================================================
+STEP 1: NATIVE Z_3 CHARACTERS (color center scalar vs generation cycle)
+==============================================================================
+  [PASS] Generation generator P is order 3 (P^3 = I), det P = 1
+  [PASS] Color center generator Z is order 3 (Z^3 = I)
+  [PASS] Color character chi_color = (3, 3w, 3w^2)  (numerically (3, -1.500+2.598j, -1.500-2.598j))
+  [PASS] Generation character chi_gen = (3, 0, 0)  ((3, 0, 0))
+
+==============================================================================
+STEP 2: INEQUIVALENCE (trace comparison at each group element)
+==============================================================================
+  [PASS] At e: chi_color(e) = chi_gen(e) = 3 (same dimension)  (both 3-dimensional)
+  [PASS] At g: chi_color(g) = 3w  != chi_gen(g) = 0  (THEY DIFFER)  (3w = -1.500+2.598j vs 0)
+  [PASS] At g^2: chi_color(g^2) = 3w^2 != chi_gen(g^2) = 0 (THEY DIFFER)  (3w^2 = -1.500-2.598j vs 0)
+  [PASS] |chi_color(g)| = 3 (scalar) but |chi_gen(g)| = 0 (fixed-point-free)
+  [PASS] Characters differ at g => generation and color reps are INEQUIVALENT
+  [PASS] Z_3 generator relabel g->g^2 gives (3,3w^2,3w) != (3,0,0)
+
+==============================================================================
+STEP 3: chi_w MULTIPLICITIES (3 in color vs 1 in generation)
+==============================================================================
+  [PASS] Color rep = 3 * chi_w  (chi_0 and chi_w2 absent)  ({'chi_0': '0', 'chi_w': '3', 'chi_w2': '0'})
+  [PASS] Generation rep = chi_0 + chi_w + chi_w2 (each multiplicity 1)  ({'chi_0': '1', 'chi_w': '1', 'chi_w2': '1'})
+  [PASS] Multiplicity of chi_w: 3 (color) != 1 (generation)
+  [PASS] Differing chi_w multiplicity (3 vs 1) alone forbids isomorphism
+
+==============================================================================
+STEP 4: SCHUR OBSTRUCTION (Hom rank <= 1, no equivariant iso)
+==============================================================================
+  [PASS] dim Hom_{Z3}(generation, color) = 3 (= m_gen(chi_w)*m_col(chi_w) = 1*3)  (dim=3)
+  [PASS] Every equivariant map generation->color has rank <= 1 (Schur)  (max rank over Hom = 1)
+  [PASS] Rank <= 1 < 3 => NO Z_3-equivariant ISOMORPHISM (Schur's lemma)
+  [PASS] dim Hom(color, generation) = 3 but every such map also has rank <= 1  (dim=3, max rank=1)
+
+==============================================================================
+STEP 5: THE NAMED IMPORT 'scalar-generation-action' (an import, not a derivation)
+==============================================================================
+  [PASS] Stipulated scalar generation action has character (3, 3w, 3w^2)  (matches the color center scalar trivially)
+  [PASS] ...but it discards the derived axis cycle P (different operator)  (w*I_3 != axis-cycle permutation => a non-native stipulation = IMPORT)
+  [PASS] det(P) = 1 = w^3 = det(Z): equal determinant is necessary, NOT sufficient
+
+==============================================================================
+CLASS-A ASSERTIONS
+==============================================================================
+  [PASS] color = 3*chi_w, generation = chi_0+chi_w+chi_w2;
+         chi_w multiplicity 3 != 1; characters inequivalent (class-A)
+
+==============================================================================
+COLOR_GENERATION_Z3_IDENTIFICATION_NO_GO: PASS=21 FAIL=0
+VERDICT: BOUNDED NO-GO -- the color center scalar rep 3*chi_w (3, 3w, 3w^2)
+  and the generation regular rep chi_0+chi_w+chi_w2 (3, 0, 0) are
+  INEQUIVALENT Z_3 representations: their characters differ at the
+  non-identity elements (3w vs 0), chi_w multiplicity is 3 vs 1, and
+  every Z_3 intertwiner has rank <= 1 (Schur), so no equivariant
+  isomorphism exists. This is an abstract carrier no-identification
+  boundary only: physical SM color and generation labels still require
+  separate bridge theorems. Forcing an identification requires the named
+  non-native import 'scalar-generation-action' (replace the derived axis
+  cycle by w*I).
+==============================================================================
+
+----- stderr -----
+

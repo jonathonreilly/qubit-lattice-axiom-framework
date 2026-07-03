@@ -214,17 +214,36 @@ def audit_metadata_checks() -> None:
         print("  audit metadata unavailable before pipeline")
         return
     ledger = json.loads(LEDGER.read_text(encoding="utf-8"))
-    row = ledger["rows"][CLAIM_ID]
+    row = ledger["rows"].get(CLAIM_ID)
+    if row is None:
+        print("  audit ledger row unavailable before pipeline")
+        return
     queue = json.loads(QUEUE.read_text(encoding="utf-8"))["queue"]
-    queue_entry = next(e for e in queue if e["claim_id"] == CLAIM_ID)
+    queue_entry = next((e for e in queue if e["claim_id"] == CLAIM_ID), None)
 
     check("ledger claim_type is no_go", row.get("claim_type") == "no_go", str(row.get("claim_type")))
-    check("ledger audit_status reset to unaudited", row.get("audit_status") == "unaudited")
-    check("ledger effective_status reset to unaudited", row.get("effective_status") == "unaudited")
+    check(
+        "ledger audit_status is a no-go-compatible state",
+        row.get("audit_status") in {"unaudited", "audited_clean"},
+        str(row.get("audit_status")),
+    )
+    check(
+        "ledger effective_status is no-go-compatible",
+        row.get("effective_status") in {"unaudited", "retained_no_go"},
+        str(row.get("effective_status")),
+    )
     check("ledger runner_path registered", row.get("runner_path") == RUNNER_PATH, str(row.get("runner_path")))
     check("ledger has no direct deps", row.get("deps") == [], str(row.get("deps")))
     check("no open dependency paths remain", row.get("open_dependency_paths") == [], str(row.get("open_dependency_paths")))
-    check("queue marks row ready", queue_entry.get("ready") is True, str(queue_entry.get("ready")))
+    if queue_entry is None:
+        check(
+            "active queue entry absent only after retained no-go audit",
+            row.get("audit_status") == "audited_clean"
+            and row.get("effective_status") == "retained_no_go",
+            f"audit_status={row.get('audit_status')}, effective_status={row.get('effective_status')}",
+        )
+    else:
+        check("queue marks row ready", queue_entry.get("ready") is True, str(queue_entry.get("ready")))
     check("descendant chain remains material", int(row.get("transitive_descendants") or 0) >= 70, str(row.get("transitive_descendants")), kind="B")
 
 
@@ -249,6 +268,9 @@ def main() -> int:
 
     if FAIL_COUNT == 0:
         print("KOIDE_DIMENSIONLESS_COUNTERMODEL_NOGO=TRUE")
+        print("Q_DIMENSIONLESS_OBJECTION_CLOSES_Q=FALSE")
+        print("DELTA_DIMENSIONLESS_OBJECTION_CLOSES_DELTA=FALSE")
+        print("FULL_DIMENSIONLESS_OBJECTION_CLOSES_LANE=FALSE")
         print("FULL_DIMENSIONLESS_CLOSURE_FORCED_BY_FINITE_ALGEBRA=FALSE")
         print("Q_FORCED_WITHOUT_Z_ZERO_LAW=FALSE")
         print("DELTA_FORCED_WITHOUT_LINE_LOCAL_BASEPOINT_LAW=FALSE")

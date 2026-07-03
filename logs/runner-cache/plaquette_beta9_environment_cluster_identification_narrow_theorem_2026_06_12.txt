@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/plaquette_beta9_environment_cluster_identification_narrow_theorem_2026_06_12.py
+runner_sha256: 7084e15081a3132e7897ab2b0ee370facf1c60e38ac923c40aa9a9fff7e21d31
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.20
+status: ok
+----- stdout -----
+Plaquette beta^9 environment-cluster identification narrow theorem runner
+Status authority: independent audit lane only. This source runner does not set or predict an audit outcome.
+No new imports: exact repo-internal d9 census constants plus exact source-sector local-packet series arithmetic.
+
+================================================================================================
+Part 1: source-sector local-packet recomputation
+================================================================================================
+PASS: H_Dloc matches declared Delta through beta^8
+      n=5: 1/472392; n=6: 7/5668704; n=7: 5/17006112; n=8: 5/272097792
+PASS: H_Dloc beta^9 coefficient is exact and recomputed
+      H_Dloc[9] = -6313/793437161472
+PASS: signed residual is reproduced
+      H_Dloc[9] - Delta[9] = -13/49589822592
+
+================================================================================================
+Part 2: d9 census arithmetic
+================================================================================================
+PASS: d9 census assembly is exact: cube shell plus radius-2 two-cube class
+      -235/29386561536 + 5/16529940864 = -2035/264479053824
+PASS: two-cube class weight is the 60-support census sum
+      60 * 1/198359290368 = 5/16529940864
+PASS: the raw two-cube weight is not equal to the stripped repair coefficient
+      two_cube_9 - (Delta[9]-H_Dloc[9]) = 1/24794911296
+
+================================================================================================
+Part 3: exact residual decomposition
+================================================================================================
+PASS: H_Dloc has a beta^9 local shell surplus over the cube-shell census part
+      H_Dloc[9] - cube_shell_9 = 1/24794911296
+PASS: signed residual equals local shell surplus minus the two-cube class
+      1/24794911296 - 5/16529940864 = -13/49589822592
+PASS: stripped environment coefficient equals two-cube class minus local surplus
+      H_env[9] in isolated P1 + H_Dloc bookkeeping = 13/49589822592
+PASS: all load-bearing arithmetic is exact rational arithmetic
+      no Float atoms appear in the checked expressions
+
+================================================================================================
+Part 4: note hygiene checks
+================================================================================================
+PASS: note preserves the required status-authority block
+PASS: note avoids listed overreach phrases
+PASS: note states the exact decomposition rather than the naive equality
+
+FINDING: through beta^8, the local marked-link derivative absorbs the declared connected coefficient packet.
+FINDING: at beta^9, the nonlocal radius-2 two-cube class is the new irreducible census content.
+FINDING: the source-sector residual is the exact signed decomposition local_shell_surplus - two_cube_9.
+
+TOTAL: PASS=13, FAIL=0
+
+----- stderr -----
+

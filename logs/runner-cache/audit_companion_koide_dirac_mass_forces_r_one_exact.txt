@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_koide_dirac_mass_forces_r_one_exact.py
+runner_sha256: cfe4a3fe4ada556e85913f79b9fe2448c5cca1f27afc865c101ade2e08213d7b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.02
+status: ok
+----- stdout -----
+PASS - (1) det of the 3-generation Dirac block [[0,M],[M^dag,0]] = -|det M|^2 (odd-block sign; second-order/modulus, not first-order det M)
+PASS - (2) D^2 = diag(M M^dag, M^dag M) -> singular-value readout uses |lambda_k| (sign-blind)
+PASS - (3) M(b)(x)sigma_+ generation eigenvectors = b-INDEPENDENT Fourier f_k -> generation bundle Berry-FLAT (L-R coupling does NOT reach r=1/2 by this algebraic route)
+PASS - (4a) SIGNED readout -> Koide Q=2/3 for all delta at the r=1/2 operator point
+PASS - (4b) SINGULAR-VALUE readout -> NOT 2/3 (sign of sqrt(m) erased)
+PASS - (5) source note keeps the bounded / open-bridge / dial-firewall boundary
+
+6 PASS, 0 FAIL
+
+BLOCK-2 (bounded): on the current A_min matrix surface, a 3-generation Dirac block determinant is
+-|det M|^2 (odd-block sign; second-order) and the singular-value readout is sign-blind; the L-R coupling
+M(b)(x)sigma_+ is Berry-flat (factorizes) so it does NOT reach r=1/2 by this algebraic route. The residual
+reduces to the UN-FORCED sign of sqrt(m). READOUT_TO_BRANCH_SELECTION_BRIDGE remains open; no physical
+r=1 selection or r=1/2 exclusion is claimed.
+
+----- stderr -----
+

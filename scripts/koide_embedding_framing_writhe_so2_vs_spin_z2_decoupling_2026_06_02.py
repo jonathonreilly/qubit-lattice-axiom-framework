@@ -36,7 +36,7 @@ No imports adopted. CAR / sign(beta) / Q=2/3 are NOT assumed; they are the
 objects under test. Standard mathematics only (Abrams cube complex, integral
 Smith normal form, rational/integer cohomology, SU(2)/SO(3) rep theory).
 """
-import numpy as np, sympy, networkx as nx
+import numpy as np, sympy
 from itertools import combinations
 
 PASS=0; FAIL=0
@@ -44,6 +44,42 @@ def check(name, cond, detail=""):
     global PASS,FAIL
     ok=bool(cond); PASS+=ok; FAIL+=(not ok)
     print(f"[{'PASS' if ok else 'FAIL'}] {name}" + (f"  -- {detail}" if detail else ""))
+
+class SimpleGraph:
+    def __init__(self):
+        self.adj={}
+    def add_node(self,node):
+        self.adj.setdefault(node,set())
+    def add_edge(self,u,v):
+        self.add_node(u); self.add_node(v)
+        self.adj[u].add(v); self.adj[v].add(u)
+    def nodes(self):
+        return list(self.adj)
+    def edges(self):
+        out=[]; seen=set()
+        for u,nbrs in self.adj.items():
+            for v in nbrs:
+                key=frozenset((u,v))
+                if key not in seen:
+                    seen.add(key); out.append((u,v))
+        return out
+
+def complete_graph(n):
+    G=SimpleGraph()
+    for i,j in combinations(range(n),2): G.add_edge(i,j)
+    return G
+
+def complete_bipartite_graph(a,b):
+    G=SimpleGraph()
+    for u in range(a):
+        for v in range(a,a+b): G.add_edge(u,v)
+    return G
+
+def convert_node_labels_to_integers(G):
+    labels={node:i for i,node in enumerate(G.nodes())}
+    H=SimpleGraph()
+    for u,v in G.edges(): H.add_edge(labels[u],labels[v])
+    return H
 
 # ---------------- Abrams UD_2 complex (identical to the no-go runner) ----------
 def cells_UD2(G):
@@ -118,23 +154,24 @@ def in_image(D,U,target):
     return True
 
 def grid3d(a,b,c):
-    G=nx.Graph()
+    G=SimpleGraph()
     for x in range(a):
         for y in range(b):
             for z in range(c):
+                G.add_node((x,y,z))
                 for dx,dy,dz in [(1,0,0),(0,1,0),(0,0,1)]:
                     if x+dx<a and y+dy<b and z+dz<c: G.add_edge((x,y,z),(x+dx,y+dy,z+dz))
     return G
 
-GRAPHS=[("K_{3,3}",nx.complete_bipartite_graph(3,3)),
-        ("K_5",nx.complete_graph(5)),
+GRAPHS=[("K_{3,3}",complete_bipartite_graph(3,3)),
+        ("K_5",complete_graph(5)),
         ("Z^3 slab 3x3x2",grid3d(3,3,2))]
 
 print("="*72)
 print("Obstruction I+II: writhe (Z-valued) framing vanishes on the 2-torsion swap")
 print("="*72)
 for label,G in GRAPHS:
-    Gr=nx.convert_node_labels_to_integers(G)
+    Gr=convert_node_labels_to_integers(G)
     V,E,c0,c1,c2=cells_UD2(Gr)
     d1=boundary1(c0,c1); d2=boundary2(c1,c2)
     gens,D,U=torsion_gen(d2,2)
@@ -199,8 +236,8 @@ print("Consistency with the parent no-go's P(t)=0 (the framing is a CONFIG-SPACE
 print("not base-edge, object): a non-fibered GF(2) cocycle nonzero on t EXISTS but")
 print("is NOT integral -- so it is NOT a writhe; it is genuine Z_2/Bockstein data.")
 print("="*72)
-for label,G in [("K_{3,3}",nx.complete_bipartite_graph(3,3))]:
-    Gr=nx.convert_node_labels_to_integers(G)
+for label,G in [("K_{3,3}",complete_bipartite_graph(3,3))]:
+    Gr=convert_node_labels_to_integers(G)
     V,E,c0,c1,c2=cells_UD2(Gr); d2=boundary2(c1,c2)
     gens,D,U=torsion_gen(d2,2); t=gens[0]
     tv=np.array([int(t[i]) for i in range(len(c1))],dtype=np.int64)
@@ -242,7 +279,7 @@ print("Obstruction IV: the SO(2)/U(1) framing CONNECTION route is closed too")
 print("(t = 0 in H_1(;R): every FLAT real framing connection gives holonomy +1)")
 print("="*72)
 for label,G in GRAPHS:
-    Gr=nx.convert_node_labels_to_integers(G)
+    Gr=convert_node_labels_to_integers(G)
     V,E,c0,c1,c2=cells_UD2(Gr); d2=boundary2(c1,c2)
     gens,D,U=torsion_gen(d2,2)
     if not gens: continue

@@ -281,8 +281,11 @@ texture coefficients (Section 5). No precision is borrowed from PDG.
    corrections are absorbed into the cubic-exact NNI coefficients.
 7. A unique prediction of the *threshold-local self-scale* comparator as
    the framework's natural scale. Section 3 of
-   [`CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md`](./CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md)
-   tracks the scale-convention question separately.
+   `CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md`
+   tracks the scale-convention question separately. This is a see-also
+   boundary pointer, not a load-bearing input to this note, so it is
+   backticked to avoid a non-load-bearing citation edge through the current
+   CKM/quark cycle inventory.
 
 ## 9. Validation
 

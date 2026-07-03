@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/FIFTH_FAMILY_RADIAL_BASIN.py
-runner_sha256: 1ed7c8e7df0bf34fc25c64db1c7b0a1aa249beab05245a513b17504872529cb1
-timeout_sec: 120
-exit_code: -9
-elapsed_sec: 120.02
-status: timeout
+runner_sha256: 3448b5eb09d03c3342bc6b9e5a985e52423fa8d0744406c8b90aadae2eed5bcc
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 89.37
+status: ok
 ----- stdout -----
 ================================================================================================
 FIFTH FAMILY RADIAL BASIN
@@ -24,6 +24,24 @@ drift seed         zero         plus        minus      neutral       double     
  0.30    0   +0.000e+00   +1.388e-05   -1.388e-05   +0.000e+00   +2.776e-05   1.000  YES
  0.30    1   +0.000e+00   +1.131e-05   -1.132e-05   +0.000e+00   +2.262e-05   1.000  YES
  0.40    0   +0.000e+00   -1.660e-06   +1.660e-06   +0.000e+00   -3.321e-06   1.000   no
+ 0.40    1   +0.000e+00   -1.256e-06   +1.256e-06   +0.000e+00   -2.511e-06   1.000   no
+
+SAFE READ
+  passed rows: 4/10
+  drift coverage: [0.05, 0.1, 0.3]
+  mean exponent among passes: 0.999495
+  this radial-shell family is a real bounded basin, but not family-wide
+  [PASS (C)] finite basin assertion surface
+
+COMPANION PACKET MANIFEST
+  sweep: source=scripts/FIFTH_FAMILY_RADIAL_SWEEP.py sha256=6a0612d0b4142b1a7a46eaf79ed112751538cdce10b2286b294c1c6b283bafec
+  sweep: cache=logs/runner-cache/FIFTH_FAMILY_RADIAL_SWEEP.txt sha256=454469b5a40254b5bd9d5283c39a9d821d1e09b4bced976cb49f3ddb119359c2 status_ok=True
+  failure_audit: source=scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py sha256=24049e4a08a30737e04ee692f9f8bb232ea1081bdcd143f34aa5cceb97ec2335
+  failure_audit: cache=logs/runner-cache/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.txt sha256=a4bac38c958ba554d04e66d171cb3ce3c8e5b29805c8febd1735ca00a4127fe4 status_ok=True
+  fm_transfer: source=scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py sha256=0d985aaae5709fc8163991fd7a542f329fcbbe309211d51dfe27337f0d76af71
+  fm_transfer: cache=logs/runner-cache/FIFTH_FAMILY_RADIAL_FM_TRANSFER.txt sha256=29b0905e4029ab103e69c869391c0ae9c55b92103bd6c60c8076d3ab4ba6263d status_ok=True
+COMPANION_PACKET: PASS
+ASSERTIONS: PASS
 
 ----- stderr -----
 

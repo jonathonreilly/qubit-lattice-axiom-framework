@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/frontier_generation_prior_stability_2026_06_05.py
+runner_sha256: 45e2bd130b83f40c77ebbb383b4dc055d4b66c0c9d8ef0d365ce7d200a8e4da6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.73
+status: ok
+----- stdout -----
+=== Operator dial (pre-record): r and Q ===
+[PASS] O1 circulant eigenvalue sum collapses to the singlet a-channel (2b cos cancels)
+       sum_j lambda_j = 3*a
+[PASS] O2 the dial r=|b|^2/a^2 is a function of operator params only, independent of realized index j
+       r is fixed by the Yukawa operator before any record is written
+[PASS] O3 Q(r) = 1/3 + (2/3) r reproduces the three reference points
+       r=1/2 -> Q=2/3; r=1 -> Q=1; r=0 -> Q=1/3
+[PASS] O4 the sector-power-balance r=1/2 is exactly a^2 = 2|b|^2
+       a^2 = 2|b|^2  <=>  r = 1/2  <=>  Q = 2/3 (an operator-level relation)
+
+=== Q1 token-counting vs type-counting ===
+[PASS] T1 the Born/dimension prior (1/3,2/3) maps to r=1 (Q=1) under the 2-sector power model
+       (1/3,2/3) -> r=1 -> Q=1
+[PASS] T2 the equal-letter (type) prior (1/2,1/2) maps to r=1/2 (Q=2/3)
+       (1/2,1/2) -> r=1/2 -> Q=2/3
+[PASS] T3 token frequency and type count are DIFFERENT functionals of one count vector
+       token frequency normalizes counts; type count normalizes the realized SUPPORT
+[PASS] T4 token frequency converges to Born (1/3,2/3) by LLN as N grows
+       doublet token freq: N=1e2 0.6000, N=1e4 0.6648, N=1e6 0.66558 (Born=0.66667)
+[PASS] T5 type count stays uniform (1/2,1/2) at every N once both letters have appeared
+       the support cardinality is a dynamics-free property; it discards frequency
+[PASS] T6 token frequency does NOT converge to the equal-letter prior (1/2,1/2)
+       |token doublet freq - 1/2| = 0.1656 at N=1e6 (stays near Born 2/3)
+
+=== Q2 which surface governs the mass-operator sector weighting ===
+[PASS] X1 a realized record atom e_r is one-hot, not the operator ratio r and not a prior vector
+       e_r names which eigenvalue/event was registered, not the |b|^2/a^2 ratio
+[PASS] X2 'records -> equal-letter -> r=1/2' would require imposing a^2=2|b|^2 on the OPERATOR
+       this is a pre-record operator stipulation, so the post-record reading is circular for the dial
+[PASS] X3 the post-record token frequency and the pre-record dimension prior COINCIDE at (1/3,2/3) -> r=1
+       Born/dimension (pre-record) and the count-dynamics limit (post-record) agree; equal-letter is neither
+
+=== Q3 adversarial: does any non-circular post-record dynamics select equal-letter? ===
+[PASS] additive-count candidate dynamics (firewall c->c+e_r) flows to Born / r=1, not equal-letter
+       doublet token freq 0.66558 -> 2/3
+[PASS] B1 Lueders sharpening r->2r^2 makes r=1/2 an UNSTABLE separatrix (repels both sides)
+       r0=0.49 -> 0 (to 0); r0=0.51 -> inf (runaway); r=1/2 is the knife-edge
+[PASS] B2 r=1/2 is therefore NOT an attractor of the supplied state-sharpening dynamics
+       fixed point but unstable: |f'(1/2)| = 2 > 1
+[PASS] C1 unconstrained max-entropy on 2 letters returns uniform, but only by importing the type/support (circular)
+       max-ent on the 2-letter set = equal-letter BY CONSTRUCTION; it does not derive that set's selection
+[PASS] C2 max-entropy constrained to the observed token mean returns Born, not equal-letter
+       argmax-ent with E=2/3 is (0.3333,0.6667) = Born
+[PASS] E1 Polya reinforcement gives a prior-dependent RANDOM limit, not a fixed equal-letter point
+       asymmetric-seed limits span 0.039..0.495 (no convergence to 1/2)
+[PASS] E2 Polya hits 1/2 only under a symmetric seed prior, i.e. equal-letter imposed by hand (circular)
+       symmetric seed = the equal-letter assumption itself; it cannot non-circularly SELECT it
+
+=== Verdict synthesis ===
+[PASS] V1 equal-letter is stable only as the support count (degenerate: discards frequency)
+       the SET of realized letters stops changing once both appear; this is not value-selection
+[PASS] V2 the firewall's post-record count DYNAMICS favors Born / r=1, not equal-letter / r=1/2
+       token frequency -> (1/3,2/3); the dynamics does not stabilize the equal-letter side
+[PASS] V3 no non-circular post-record dynamics SELECTS equal-letter (separatrix/urn/maxent all fail or import it)
+       VERDICT = CLARIFIES-GRAMMAR-SELECTION-OPEN: dial is legitimate, side not forced
+
+=== Scorecard ===
+PASS=23 FAIL=0
+VERDICT: CLARIFIES-GRAMMAR-SELECTION-OPEN. Token counting (firewall count dynamics) -> Born (1/3,2/3) -> r=1; equal-letter (1/2,1/2) -> r=1/2 is the TYPE/support count, a dynamics-free prior that no non-circular post-record dynamics selects. The dial r=|b|^2/a^2 is a PRE-record operator property. This does NOT derive the equal-letter prior, does NOT force the dial, and does NOT derive a Koide value.
+
+----- stderr -----
+

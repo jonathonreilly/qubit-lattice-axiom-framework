@@ -1,0 +1,148 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_history_count_audit_unlock_scan_2026_06_05.py
+runner_sha256: 191ba598d28ee5d87307983a3918f5769d00164f7675b6e08fad480ed25ea5cf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+[PASS] S1 support note exists: history_monoid
+       docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md
+[PASS] S1 support note exists: finite_alphabet_dynamics
+       docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md
+[PASS] C2 local candidate exists: RECORD_GENERATION_READOUT_TWO_SECTORS
+       docs/RECORD_GENERATION_READOUT_TWO_SECTORS_2026-06-05.md
+[PASS] C2 local candidate exists: FLAVOR_RECORD_READOUT_FORM_NOT_WEIGHT
+       docs/FLAVOR_RECORD_READOUT_FORM_NOT_WEIGHT_2026-06-02.md
+[PASS] C2 local candidate exists: FLAVOR_LOGDET_FORM_UNDER_RECORD_AXIOM
+       docs/FLAVOR_LOGDET_FORM_UNDER_RECORD_AXIOM_2026-06-04.md
+[PASS] C2 local candidate exists: FLAVOR_LOGDET_FACTOR_2_RECORD_READOUT_REALIZATION
+       docs/FLAVOR_LOGDET_FACTOR_2_RECORD_READOUT_REALIZATION_NARROW_THEOREM_NOTE_2026-06-04.md
+[PASS] C2 local candidate exists: OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO
+       docs/OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md
+[PASS] C2 local candidate exists: RECORD_P1_DEPENDENCY_AUDIT
+       docs/RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md
+[PASS] C2 local candidate exists: SOURCE_MEASURE_RECORD_INTERVENTION
+       docs/SOURCE_MEASURE_RECORD_INTERVENTION_THEOREM_NOTE_2026-05-30.md
+[PASS] C2 local candidate exists: SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE
+       docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md
+[PASS] C2 local candidate exists: PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION
+       docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md
+[PASS] C2 local candidate exists: PERSISTENT_RECORD_AS_KRAUS_OPERATOR
+       docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md
+[PASS] C2 local candidate exists: DM_NEUTRINO_K00_RECORD_INVARIANCE_COMPANION
+       docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_RECORD_INVARIANCE_COMPANION_NOTE_2026-06-04.md
+[PASS] C2 local candidate exists: G_BARE_RECORD_INVARIANCE_COMPANION
+       docs/G_BARE_FORCED_BY_WARD_REP_B_INDEPENDENCE_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
+[PASS] C2 local candidate exists: RECORD_FORMATION_DYNAMICS_CONSTRAINT
+       docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md
+[PASS] C2 local candidate exists: DYNAMICS_FORM_FROM_RECORD_PRESERVATION
+       docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md
+[PASS] D3 support ids known: RECORD_GENERATION_READOUT_TWO_SECTORS
+       finite_alphabet_dynamics,history_monoid
+[PASS] D3 remaining gates named: RECORD_GENERATION_READOUT_TWO_SECTORS
+       supplied_carrier,fixed_K_CPT,sector_weight_or_dial_choice
+[PASS] D3 verdict edits forbidden: RECORD_GENERATION_READOUT_TWO_SECTORS
+       support map only
+[PASS] D3 support ids known: FLAVOR_RECORD_READOUT_FORM_NOT_WEIGHT
+       finite_alphabet_dynamics
+[PASS] D3 remaining gates named: FLAVOR_RECORD_READOUT_FORM_NOT_WEIGHT
+       weight_reference_choice,determinant_or_source_surface
+[PASS] D3 verdict edits forbidden: FLAVOR_RECORD_READOUT_FORM_NOT_WEIGHT
+       support map only
+[PASS] D3 support ids known: FLAVOR_LOGDET_FORM_UNDER_RECORD_AXIOM
+       finite_alphabet_dynamics
+[PASS] D3 remaining gates named: FLAVOR_LOGDET_FORM_UNDER_RECORD_AXIOM
+       determinant_character_authority,source_action_coupling,normalization
+[PASS] D3 verdict edits forbidden: FLAVOR_LOGDET_FORM_UNDER_RECORD_AXIOM
+       support map only
+[PASS] D3 support ids known: FLAVOR_LOGDET_FACTOR_2_RECORD_READOUT_REALIZATION
+       history_monoid,finite_alphabet_dynamics
+[PASS] D3 remaining gates named: FLAVOR_LOGDET_FACTOR_2_RECORD_READOUT_REALIZATION
+       coupled_KS_block_decoupling,component_factorization
+[PASS] D3 verdict edits forbidden: FLAVOR_LOGDET_FACTOR_2_RECORD_READOUT_REALIZATION
+       support map only
+[PASS] D3 support ids known: OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO
+       history_monoid,finite_alphabet_dynamics
+[PASS] D3 remaining gates named: OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO
+       branch_to_scalar_map
+[PASS] D3 verdict edits forbidden: OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO
+       support map only
+[PASS] D3 support ids known: RECORD_P1_DEPENDENCY_AUDIT
+       finite_alphabet_dynamics
+[PASS] D3 remaining gates named: RECORD_P1_DEPENDENCY_AUDIT
+       old_91_rows_need_broader_parent_content
+[PASS] D3 verdict edits forbidden: RECORD_P1_DEPENDENCY_AUDIT
+       support map only
+[PASS] D3 support ids known: SOURCE_MEASURE_RECORD_INTERVENTION
+       history_monoid
+[PASS] D3 remaining gates named: SOURCE_MEASURE_RECORD_INTERVENTION
+       physical_source_as_smooth_record_probability_intervention,independent_audit
+[PASS] D3 verdict edits forbidden: SOURCE_MEASURE_RECORD_INTERVENTION
+       support map only
+[PASS] D3 support ids known: SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE
+       history_monoid
+[PASS] D3 remaining gates named: SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE
+       probability_geometry,Fisher_tangent_structure
+[PASS] D3 verdict edits forbidden: SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE
+       support map only
+[PASS] D3 support ids known: PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION
+       finite_alphabet_dynamics
+[PASS] D3 remaining gates named: PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION
+       Kraus_family,Stinespring_isometry
+[PASS] D3 verdict edits forbidden: PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION
+       support map only
+[PASS] D3 support ids known: PERSISTENT_RECORD_AS_KRAUS_OPERATOR
+       finite_alphabet_dynamics
+[PASS] D3 remaining gates named: PERSISTENT_RECORD_AS_KRAUS_OPERATOR
+       normalized_isometry_W
+[PASS] D3 verdict edits forbidden: PERSISTENT_RECORD_AS_KRAUS_OPERATOR
+       support map only
+[PASS] D3 support ids known: DM_NEUTRINO_K00_RECORD_INVARIANCE_COMPANION
+       none_needed
+[PASS] D3 remaining gates named: DM_NEUTRINO_K00_RECORD_INVARIANCE_COMPANION
+       observable_principle_premise,source_amplitude_premise
+[PASS] D3 verdict edits forbidden: DM_NEUTRINO_K00_RECORD_INVARIANCE_COMPANION
+       support map only
+[PASS] D3 support ids known: G_BARE_RECORD_INVARIANCE_COMPANION
+       none_needed
+[PASS] D3 remaining gates named: G_BARE_RECORD_INVARIANCE_COMPANION
+       Ward_identity_chain,same_1PI_cascade
+[PASS] D3 verdict edits forbidden: G_BARE_RECORD_INVARIANCE_COMPANION
+       support map only
+[PASS] D3 support ids known: RECORD_FORMATION_DYNAMICS_CONSTRAINT
+       finite_alphabet_dynamics
+[PASS] D3 remaining gates named: RECORD_FORMATION_DYNAMICS_CONSTRAINT
+       quantum_Darwinism_record_reading,finite_model_bridge
+[PASS] D3 verdict edits forbidden: RECORD_FORMATION_DYNAMICS_CONSTRAINT
+       support map only
+[PASS] D3 support ids known: DYNAMICS_FORM_FROM_RECORD_PRESERVATION
+       finite_alphabet_dynamics
+[PASS] D3 remaining gates named: DYNAMICS_FORM_FROM_RECORD_PRESERVATION
+       two_endpoint_Gauss_bridge,record_formation_bridge,couplings_and_truncation
+[PASS] D3 verdict edits forbidden: DYNAMICS_FORM_FROM_RECORD_PRESERVATION
+       support map only
+[PASS] B4 bucket count cite_ready_support
+       observed=4 expected=4
+[PASS] B4 bucket count firewall_strengthened
+       observed=2 expected=2
+[PASS] B4 bucket count probability_or_instrument_blocked
+       observed=4 expected=4
+[PASS] B4 bucket count record_invariant_unchanged
+       observed=2 expected=2
+[PASS] B4 bucket count formation_or_carrier_dynamics
+       observed=2 expected=2
+[PASS] B4 total candidates
+       total=14
+[PASS] F5 old P1 dependents are not auto-migrated
+[PASS] F5 no row claims audit verdict authority
+[PASS] F5 companion-only rows do not need new history/count support
+
+=== Record history/count audit-unlock interpretation ===
+The new history/count dynamics stack creates citation-ready support for finite append/count/coarse-graining rows.
+Rows needing probability, production, source/action, Kraus instruments, or carrier dynamics remain blocked at named gates.
+No audit verdicts or status fields are changed by this support map.
+SCORECARD PASS=67 FAIL=0
+
+----- stderr -----
+

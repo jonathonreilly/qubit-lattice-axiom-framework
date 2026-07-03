@@ -23,6 +23,7 @@ import cmath
 import math
 import random
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Dict, Iterable, List, Sequence, Tuple
 
 
@@ -35,6 +36,53 @@ Y_MASSES = (2, 3, 4)
 SEEDS = (5, 18, 31, 44, 57, 70)
 JITTER_SWEEP = (0.0, 0.1, 0.2, 0.3, 0.4, 0.5)
 MASS_STRENGTHS = (0.75, 1.0, 1.25)
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "GATE_B_DYNAMICS_NOTE.md"
+
+
+CHECK_PASS = 0
+CHECK_FAIL = 0
+
+
+def _check(label: str, condition: bool, detail: str = "") -> None:
+    global CHECK_PASS, CHECK_FAIL
+    if condition:
+        CHECK_PASS += 1
+        tag = "PASS"
+    else:
+        CHECK_FAIL += 1
+        tag = "FAIL"
+    print(f"[{tag}] {label}")
+    if detail:
+        print(f"       {detail}")
+
+
+def _source_boundary_checks() -> None:
+    text = NOTE.read_text(encoding="utf-8")
+    flat = " ".join(text.split())
+    print()
+    print("Source-boundary checks")
+    print("-" * 40)
+    _check(
+        "note claim type is open_gate and has 2026-06-12 source-index firewall",
+        "**Claim type:** open_gate" in text
+        and "2026-06-12 audit firewall: source index, not dynamics closure" in text,
+    )
+    _check(
+        "GB-S1b-b/GB-S2b/GB-S3b residues remain supplied row-local data",
+        "`GB-S1b-b`" in flat
+        and "`GB-S2b`" in flat
+        and "`GB-S3b`" in flat
+        and "physical scalar source/boundary/regulator/normalization remains supplied" in flat
+        and "physical detector-window/TOWARD/`F~M` semantics remain supplied" in flat
+        and "physical selection/dynamical generation of that stencil remains supplied" in flat,
+    )
+    _check(
+        "note forbids Gate B dynamics closure and axiom/admission/status changes",
+        "does not derive a Gate B dynamics theorem" in flat
+        and "physical gravity/readout bridge" in flat
+        and "introduces no new axiom, Tier-A admission, or audit-status change" in flat,
+    )
 
 
 @dataclass
@@ -434,6 +482,10 @@ def main() -> None:
     print("  - Once connectivity is recomputed from geometry, the gain becomes mixed.")
     print("  - The local F~M fit stays in a non-catastrophic linear-response band.")
     print("  - This is a connectivity-vs-noise audit, not a Gate B theorem.")
+    _source_boundary_checks()
+    print(f"BOUNDARY_CHECKS: PASS={CHECK_PASS} FAIL={CHECK_FAIL}")
+    if CHECK_FAIL:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

@@ -6,13 +6,13 @@
   "family": "Fam2",
   "h": 0.25,
   "observables": {
-    "R_hist": -0.35029817956470166,
-    "dM_early": 0.00377736548849094,
-    "dM_late": 0.005813998621644797,
-    "delta_hist": -0.0020366331331538572,
-    "late_gain": 0.0020366331331538572
+    "R_hist": -0.35029817956467096,
+    "dM_early": 0.003777365488491209,
+    "dM_late": 0.005813998621644936,
+    "delta_hist": -0.002036633133153727,
+    "late_gain": 0.002036633133153727
   },
-  "pass_count": 27,
+  "pass_count": 33,
   "restore": 0.3,
   "runner_role": "target-specific exact invocation cache",
   "seed": 1,

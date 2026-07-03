@@ -1,397 +1,279 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_anomaly_forces_time.py
-runner_sha256: 1713d88f2b3a2da9af2baf916c0b1bdbf4d1e0d94b4420cc4790c5bfdd8a8369
+runner_sha256: 7463158a3b1e3b66d113cb15ec9bda608a7925747d107329d32b77898c5eee00
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.53
 status: ok
 ----- stdout -----
 ========================================================================
-ANOMALY-CANCELLATION CONSISTENCY BRIDGE FOR 3+1D SPACETIME
-Temporal direction selected by anomaly + chirality + single-clock evolution
+ANOMALY-CANCELLATION CONSISTENCY BRIDGE FOR 3+1 SPACETIME
+bounded theorem runner: computed content vs declared imports
 ========================================================================
 
-========================================================================
-STEP 1: VERIFY THE ANOMALY (LEFT-HANDED CONTENT ALONE)
-========================================================================
-
-  Left-handed fermion content from Cl(3) on Z^3:
-    Q_L = (2, 3)_{Y=+1/3}   quark doublet     6 Weyl states
-    L_L = (2, 1)_{Y=-1}      lepton doublet    2 Weyl states
-    Total: 8 left-handed Weyl fermions per generation
-
-  Anomaly (I)  Tr[Y]      = 0
-    = 2*3*(1/3) + 2*1*(-1) = 2 - 2 = 0
-  [PASS] Tr[Y] = 0 (gravitational anomaly cancels for LH alone)
-
-  Anomaly (II) Tr[Y^3]    = -16/9
-    = 6*(1/3)^3 + 2*(-1)^3 = 6/27 - 2 = -48/27 = -16/9
-  [PASS] Tr[Y^3] != 0 (U(1)^3 anomaly NONZERO for LH alone)  (Tr[Y^3] = -16/9 = -1.777778)
-
-  Anomaly (III) Tr[SU(3)^2 Y] = 1/3
-    = 2*(1/2)*(1/3) + 0 = 1/3
-  [PASS] Tr[SU(3)^2 Y] != 0 (colour-Y anomaly NONZERO for LH alone)  (= 1/3)
-
-  Anomaly (IV) Tr[SU(2)^2 Y] = 0
-    = (1/2)*3*(1/3) + (1/2)*1*(-1) = 1/2 - 1/2 = 0
-  [PASS] Tr[SU(2)^2 Y] = 0 (weak-Y anomaly cancels for LH alone)
-
-  Anomaly (V)  SU(3)^3 cubic = 2
-    = Q_L weak doublet gives 2 fundamentals, with A(3)=+1
-  [PASS] SU(3)^3 anomaly != 0 (pure colour cubic anomaly NONZERO for LH alone)  (= 2)
-
-  Anomaly (VI) Number of SU(2) doublets = 4
-    = 3 (colours of Q_L) + 1 (L_L) = 4
-  [PASS] Witten anomaly: n_doublets = 4 (even, OK)
-
-  SUMMARY OF LEFT-HANDED ANOMALIES:
-    Tr[Y]          = 0    [OK]
-    Tr[Y^3]        = -16/9  [ANOMALOUS]
-    Tr[SU(3)^2 Y]  = 1/3    [ANOMALOUS]
-    Tr[SU(2)^2 Y]  = 0      [OK]
-    SU(3)^3        = 2       [ANOMALOUS]
-    Witten          = 4 doublets [OK]
-
-  RESULT: The left-handed content from Cl(3) is ANOMALOUS.
-  Three of six anomaly conditions are violated.
-  The gauge theory is INCONSISTENT without additional fermions.
+Declared imports (never computed here): P-ABJ, P-HY, P-COMP, P-REC,
+and B-AXIS. See the paired note.
 
 ========================================================================
-STEP 2: ANOMALY CANCELLATION REQUIRES RIGHT-HANDED SINGLET COMPLETION
+STEP 0: ABELIAN EIGENVALUE SURFACE (recompute cited construction)
 ========================================================================
 
-  Right-handed fermions are SU(2) singlets (by definition of chirality).
-  Parametrise as: u_R=(1,3)_{y1}, d_R=(1,3)_{y2},
-                  e_R=(1,1)_{y3}, nu_R=(1,1)_{y4}
+  Cited authority: GRAPH_FIRST_SU3_INTEGRATION_NOTE
+  For each selected taste axis, the residual complementary-axis swap
+  tau on C^8 gives Pi_+ rank 6, Pi_- rank 2, and
+  Y_like = (1/3) Pi_+ - Pi_- with spectrum {+1/3 x6, -1 x2}.
 
-  ANOMALY EQUATIONS:
-    (I)   3*y1 + 3*y2 + y3 + y4 = 0
+  [PASS][A] axis 1: rank(Pi_+)=6, rank(Pi_-)=2  (ranks (6,2))
+  [PASS][A] axis 1: spec(Y_like) = {+1/3 x6, -1 x2}, Tr=0
+  [PASS][A] axis 2: rank(Pi_+)=6, rank(Pi_-)=2  (ranks (6,2))
+  [PASS][A] axis 2: spec(Y_like) = {+1/3 x6, -1 x2}, Tr=0
+  [PASS][A] axis 3: rank(Pi_+)=6, rank(Pi_-)=2  (ranks (6,2))
+  [PASS][A] axis 3: spec(Y_like) = {+1/3 x6, -1 x2}, Tr=0
+
+  Multiplicity bookkeeping: 6 = 2(weak) x 3(colour) for the +1/3 block,
+  2 = 2(weak) x 1 for the -1 block, matching (2,3)_{+1/3} + (2,1)_{-1}.
+  [PASS][A] eigenvalue multiplicities match LH multiplet dimensions
+
+  P-HY (declared, not computed): identifying Y_like with the anomaly-
+  relevant U(1) hypercharge of the emergent gauge theory.
+
+  [PASS][B] HY source edge: parent theorem cites GRAPH_FIRST_SU3_INTEGRATION_NOTE for HY-surface  (graph-first parent contains the gl(3)+gl(1) split and traceless u(1) spectrum)
+  [PASS][B] HY source edge: split-out abelian packaging is absent from parent theorem source text  (prevents this parent theorem from carrying the packaging as a source dependency)
+  [PASS][B] P-HY remains declared: physical hypercharge identification is not derived by STEP 0  (graph-first parent supplies the spectrum only; U(1)_Y remains a boundary)
+
+========================================================================
+STEP 1: LEFT-HANDED CONTENT ALONE IS ANOMALOUS (exact rationals)
+========================================================================
+
+  LH content: Q_L = (2,3)_{+1/3}, L_L = (2,1)_{-1}  (8 Weyl states)
+
+  Tr[Y]         = 0
+  Tr[Y^3]       = -16/9
+  Tr[SU(3)^2 Y] = 1/3
+  Tr[SU(2)^2 Y] = 0
+  SU(3)^3       = 2   (computed: sum of d2 * A(rep))
+  SU(2) doublets= 4  (Witten count, computed)
+
+  [PASS][A] Tr[Y] = 0 for LH alone
+  [PASS][A] Tr[Y^3] = -16/9 != 0 (U(1)^3 anomalous)
+  [PASS][A] Tr[SU(3)^2 Y] = 1/3 != 0 (colour-Y anomalous)
+  [PASS][A] Tr[SU(2)^2 Y] = 0 for LH alone
+  [PASS][A] SU(3)^3 = 2 != 0 (cubic colour anomalous), computed from reps
+  [PASS][A] Witten count = 4 (even) for LH alone
+
+  Three of six conditions are violated by the LH content alone.
+  P-ABJ (declared import): nonzero anomaly traces => the chiral gauge
+  theory fails to close as a unitary QFT. This implication is NOT
+  computed here; the framework-internal staggered epsilon-index route
+  is provably zero on even tori (retained square-block no-go), which
+  is exactly why P-ABJ stays a declared external premise.
+
+========================================================================
+STEP 2: SU(2)-SINGLET COMPLETION (exact-arithmetic branch solve)
+========================================================================
+
+  P-COMP (declared): the cancelling completion is opposite-chirality
+  SU(2)-singlet:  u_R=(1,3)_{y1}, d_R=(1,3)_{y2}, e_R=(1,1)_{y3},
+  nu_R=(1,1)_{y4}.  Conditions (as LH conjugates, exact):
+    (I)   3 y1 + 3 y2 + y3 + y4 = 0
     (III) y1 + y2 = 2/3
-    (II)  3*y1^3 + 3*y2^3 + y3^3 + y4^3 = -48/27
-    (IV)  automatic (RH are SU(2) singlets)
-    (V)   SU(3)^3: 2 - 1 - 1 = 0 once u_R^c,d_R^c are included
-    (VI)  4 doublets (even, automatic)
+    (II)  3 y1^3 + 3 y2^3 + y3^3 + y4^3 = -16/9
 
-  SOLVING:
-    From (III): y2 = 2/3 - y1
-    From (I) + (III): y3 + y4 = -2, so y4 = -2 - y3
+  [PASS][A] completing-the-square identity holds exactly on an 8x8 rational grid  (degree-3 in each variable => grid verification is a proof)
 
-    Substituting into (II) and simplifying:
-    6*y1^2 - 4*y1 - 6*y3^2 - 12*y3 = 16/3
-    Completing squares:
-    9*(y1 - 1/3)^2 - 9*(y3 + 1)^2 = 0
-    => (y1 - 1/3)^2 = (y3 + 1)^2
-    => y1 - 1/3 = +/-(y3 + 1)
+  Hence (y1 - 1/3)^2 = (y3 + 1)^2: two branches related by e_R <-> nu_R.
+  Neutral-singlet identification (y4 = 0 => y3 = -2):
+  [PASS][A] nu_R-neutral branch gives y1 = 4/3
+  [PASS][A] nu_R-neutral branch gives y2 = -2/3
+  [PASS][A] y4 = 0 (neutral singlet)
+  [PASS][A] relabelled branch (y3=0): y1 = 4/3 (same spectrum, e_R <-> nu_R)
 
-  TWO SOLUTION BRANCHES:
+  Completed spectrum traces: Tr[Y]=0, Tr[Y^3]=0,
+  Tr[SU(3)^2 Y]=0, Tr[SU(2)^2 Y]=0, SU(3)^3=0,
+  Witten doublets=4
+  [PASS][A] full Tr[Y] = 0
+  [PASS][A] full Tr[Y^3] = 0
+  [PASS][A] full Tr[SU(3)^2 Y] = 0
+  [PASS][A] full Tr[SU(2)^2 Y] = 0
+  [PASS][A] full SU(3)^3 = 0 (2 - 1 - 1, computed from reps)
+  [PASS][A] full Witten count even
 
-    Branch A: y1 = -y3 - 2/3 (SM assignment)
-      Setting y3 = -2:
-      y1 = 4/3, y2 = -2/3, y3 = -2, y4 = 0
-      => u_R=(1,3)_{4/3}, d_R=(1,3)_{-2/3},
-         e_R=(1,1)_{-2}, nu_R=(1,1)_{0}
-
-    Branch B: y1 = y3 + 4/3 (relabelled)
-      Setting y3 = 0:
-      y1 = 4/3, y2 = -2/3, y3 = 0, y4 = -2
-      Same as Branch A with e_R <-> nu_R.
-
-  VERIFICATION (full SM content, one generation):
-    Tr[Y]          = 0
-  [PASS] Full Tr[Y] = 0 (gravitational)
-    Tr[Y^3]        = 0
-  [PASS] Full Tr[Y^3] = 0 (U(1)^3)
-    Tr[SU(3)^2 Y]  = 0
-  [PASS] Full Tr[SU(3)^2 Y] = 0 (colour-Y)
-    Tr[SU(2)^2 Y]  = 0
-  [PASS] Full Tr[SU(2)^2 Y] = 0 (weak-Y)
-    SU(2) doublets  = 4
-  [PASS] Witten anomaly: doublets even
-
-  SU(3)^3 anomaly:
-    Q_L: 2 doublets in 3, A(3)=+1 => contribution = 2
-    u_R^c: 1 singlet in bar3, A(bar3)=-1 => contribution = -1
-    d_R^c: 1 singlet in bar3, A(bar3)=-1 => contribution = -1
-    Total: 2 - 1 - 1 = 0
-  [PASS] SU(3)^3 anomaly = 0  (2 - 1 - 1 = 0)
-
-  RESULT: Anomaly cancellation requires an SU(2)-singlet right-handed
-  completion. With the neutral-singlet identification nu_R = 0, one
-  recovers the Standard Model branch {4/3, -2/3, -2, 0}.
-  The time theorem only needs the existence of such a singlet completion,
-  not uniqueness from anomaly arithmetic alone.
+  The theorem needs the EXISTENCE of an opposite-chirality SU(2)-singlet
+  completion (P-COMP); the SM branch above is the computed witness.
 
 ========================================================================
-STEP 3: CHIRALITY REQUIRES EVEN TOTAL DIMENSION
+STEP 3: CHIRALITY <=> EVEN TOTAL DIMENSION (computed parity law)
 ========================================================================
 
-  KEY FACT FROM CLIFFORD ALGEBRA REPRESENTATION THEORY:
+  Cited authority: CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION narrow
+  theorem (retained). This step COMPUTES the same law independently:
+  nullity(n) := dim{ M : {M, gamma_mu} = 0 for all mu } in the
+  irreducible Clifford representation, for n = 2..7.
 
-  In Cl(n) with n generators, the irreducible spinor representation
-  has dimension 2^{floor(n/2)}.
+  [PASS][A] Cl(2) irrep (dim 2): generators Hermitian-involutive, anticommuting
+  [PASS][C] Cl(2) irrep: anticommutant nullity = 1  (computed nullity 1; chirality EXISTS)
+  [PASS][A] Cl(3) irrep (dim 2): generators Hermitian-involutive, anticommuting
+  [PASS][C] Cl(3) irrep: anticommutant nullity = 0  (computed nullity 0; chirality IMPOSSIBLE)
+  [PASS][A] Cl(4) irrep (dim 4): generators Hermitian-involutive, anticommuting
+  [PASS][C] Cl(4) irrep: anticommutant nullity = 1  (computed nullity 1; chirality EXISTS)
+  [PASS][A] Cl(5) irrep (dim 4): generators Hermitian-involutive, anticommuting
+  [PASS][C] Cl(5) irrep: anticommutant nullity = 0  (computed nullity 0; chirality IMPOSSIBLE)
+  [PASS][A] Cl(6) irrep (dim 8): generators Hermitian-involutive, anticommuting
+  [PASS][C] Cl(6) irrep: anticommutant nullity = 1  (computed nullity 1; chirality EXISTS)
+  [PASS][A] Cl(7) irrep (dim 8): generators Hermitian-involutive, anticommuting
+  [PASS][C] Cl(7) irrep: anticommutant nullity = 0  (computed nullity 0; chirality IMPOSSIBLE)
 
-  - n EVEN: The volume element omega = g1*g2*...*gn ANTICOMMUTES
-    with all generators. With appropriate phase normalisation,
-    gamma_5 = (phase)*omega satisfies gamma_5^2 = +I. The spinor
-    space splits: S = S_+ + S_- (Weyl spinors / chirality exist).
+  Computed law: a gamma_5 ray exists iff n is even; for odd n NO matrix
+  anticommutes with every generator of the irreducible representation.
 
-  - n ODD: The volume element omega COMMUTES with all generators
-    (it is central in the Clifford algebra). No phase factor can
-    change this: a central element cannot define a chirality grading.
-    No Weyl spinors. No chirality.
+  [PASS][C] n=4: the computed anticommutant ray coincides with the volume-element ray  (gamma_5 is unique up to scalar)
+  [PASS][A] n=4: gamma_5 = phase * volume element is a Hermitian involution
+  [PASS][A] n=4: gamma_5 spectrum {+1 x2, -1 x2} (Weyl split)
+  [PASS][A] n=4: P_L, P_R are complementary orthogonal projectors
 
-  Therefore: chirality exists iff d_total = d_s + d_t is EVEN.
-  For d_s = 3: d_t must be ODD (1, 3, 5, ...).
+  [PASS][A] per-site Cl(3) on M_2(C): volume element is the central scalar +-i*I  (sign = irrep choice (two inequivalent irreps); matches retained NO_PER_SITE_CHIRALITY no-go)
+  [PASS][A] per-site Cl(3): anticommutant = {0} (no per-site gamma_5)
 
-  EXPLICIT VERIFICATION:
+  DOUBLING LOOPHOLE (computed): in the REDUCIBLE Cl(3) rep on C^4
+  formed by the direct sum of the two INEQUIVALENT Pauli irreps
+  (volume element +i*I on one summand, -i*I on the other),
+  anticommuting gradings DO exist — but they lie OUTSIDE the
+  represented Clifford algebra and exchange the two chirality
+  sectors. This is precisely the structural opening the staggered
+  sublattice grading epsilon(x) uses (A/B sublattices carry the two
+  irreps; P-REC), and why the per-site no-go and the staggered
+  grading do not collide.
+  [PASS][A] reducible Cl(3) on C^4: generators satisfy Clifford relations
+  [PASS][C] reducible Cl(3) on C^4: anticommutant nullity = 2 > 0 (gradings exist)  (computed nullity 2)
+  [PASS][C] every such grading lies outside the represented Cl(3) algebra  (residual after projection onto the 8-dim Clifford image is nonzero)
 
-  --- Cl(3): n=3 (odd) -- 3D spatial lattice ---
-  [PASS] Cl(3) G1^2 = +I
-  [PASS] Cl(3) G2^2 = +I
-  [PASS] Cl(3) G3^2 = +I
-  [PASS] Cl(3) {G1,G2} = 0
-  [PASS] Cl(3) {G1,G3} = 0
-  [PASS] Cl(3) {G2,G3} = 0
-  [PASS] Cl(3): omega^2 = -I (not an involution)
-  [PASS] Cl(3): [omega, G1] = 0 (omega is central)
-  [PASS] Cl(3): [omega, G2] = 0 (omega is central)
-  [PASS] Cl(3): [omega, G3] = 0 (omega is central)
-
-  omega commutes with everything => it is proportional to the identity
-  in the irreducible representation. A central element cannot split the
-  representation into chiral halves.
-
-  Even i*omega (which squares to +I) still commutes with all generators:
-  [PASS] Cl(3): (i*omega)^2 = +I
-  [PASS] Cl(3): [i*omega, G1] = 0 (still central)
-  [PASS] Cl(3): [i*omega, G2] = 0 (still central)
-  [PASS] Cl(3): [i*omega, G3] = 0 (still central)
-  A central involution acts as +/-I on each irrep component.
-  It cannot separate left from right. No chirality in odd dimensions.
-
-  --- 4D KS lattice: n=4 (even) -- CHIRALITY EXISTS ---
-  [PASS] KS 4D: G0^2 = +I
-  [PASS] KS 4D: G1^2 = +I
-  [PASS] KS 4D: G2^2 = +I
-  [PASS] KS 4D: G3^2 = +I
-  [PASS] KS 4D: {G0, G1} = 0
-  [PASS] KS 4D: {G0, G2} = 0
-  [PASS] KS 4D: {G0, G3} = 0
-  [PASS] KS 4D: {G1, G2} = 0
-  [PASS] KS 4D: {G1, G3} = 0
-  [PASS] KS 4D: {G2, G3} = 0
-  [PASS] KS 4D: gamma_5^2 = +I (chirality involution)
-  [PASS] KS 4D: gamma_5 is Hermitian
-  [PASS] KS 4D: {gamma_5, G_0} = 0 (anticommutes)
-  [PASS] KS 4D: {gamma_5, G_1} = 0 (anticommutes)
-  [PASS] KS 4D: {gamma_5, G_2} = 0 (anticommutes)
-  [PASS] KS 4D: {gamma_5, G_3} = 0 (anticommutes)
-  [PASS] KS 4D: eigenvalues +1 x 8, -1 x 8
-  [PASS] P_L^2 = P_L (projector)
-  [PASS] P_R^2 = P_R (projector)
-  [PASS] P_L + P_R = I (complete)
-  [PASS] P_L * P_R = 0 (orthogonal)
-  [PASS] dim(L) = dim(R) = 8
-
-  --- Cl(1,3) Dirac representation (cross-check) ---
-  [PASS] Dirac g0^2 = +I
-  [PASS] Dirac g1^2 = -I
-  [PASS] Dirac g2^2 = -I
-  [PASS] Dirac g3^2 = -I
-  [PASS] Dirac gamma_5^2 = +I
-  [PASS] Dirac gamma_5 is Hermitian
-  [PASS] Dirac {gamma_5, g0} = 0
-  [PASS] Dirac {gamma_5, g1} = 0
-  [PASS] Dirac {gamma_5, g2} = 0
-  [PASS] Dirac {gamma_5, g3} = 0
-  [PASS] Dirac gamma_5 eigenvalues: +1 x 2, -1 x 2
-
-  KEY POINT: In even dimensions, the volume element ANTICOMMUTES with
-  all generators. With the right phase factor, it becomes a Hermitian
-  involution -- the chirality operator gamma_5. In odd dimensions, the
-  volume element COMMUTES with all generators (is central) and cannot
-  define chirality regardless of phase normalisation.
-
-  CHIRALITY VS TOTAL DIMENSION (d_spatial = 3 fixed):
-
-  d_t    d_total    n even?    Chirality?
-  ----------------------------------------
-  0      3          NO         NO
-  1      4          YES        YES
-  2      5          NO         NO
-  3      6          YES        YES
-  4      7          NO         NO
-  5      8          YES        YES
-
-  RESULT: For d_spatial = 3, chirality exists only when d_time is ODD.
-  Odd d_time values: 1, 3, 5, ...
+  CHIRALITY VS d_t (d_s = 3 fixed, law computed above):
+  d_t   n=3+d_t   chirality?
+  0     3         NO
+  1     4         YES
+  2     5         NO
+  3     6         YES
+  4     7         NO
+  5     8         YES
+  [PASS][C] chirality-compatible d_t values are the odd positives (computed)  (in particular d_t = 0 is excluded: 3+0 odd => no chirality)
 
 ========================================================================
-STEP 4: SINGLE-CLOCK CODIMENSION-1 EVOLUTION SELECTS d_time = 1 WITHIN THE BRIDGE
+STEP 4: STAGGERED GRADING {epsilon, D_KS} = 0 ON Z^3 (exact integers)
 ========================================================================
 
-  From Step 3: chirality requires d_time odd (1, 3, 5, ...).
-  To close the lane, we must exclude the odd cases d_t = 3, 5, ...
-  The load-bearing theorem input is that the framework has:
-    (i)  one Hamiltonian clock U(t) = exp(-itH), and
-    (ii) arbitrary admissible initial states on one codimension-1 slice.
+  Cited: STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07
+  (as on disk, 2026-06-06 cocycle/gauge-class repair): epsilon(x) =
+  (-1)^{x1+x2+x3} is forced by Z^3 bipartiteness (its Step 1); the KS
+  phase class eta_1=1, eta_2=(-1)^{x1}, eta_3=(-1)^{x1+x2} is the
+  unique local Z2 gauge class (its Steps 4-6); {epsilon, D} = 0 is its
+  Answer item 4. Here both facts are recomputed on a finite open box.
 
-  ARGUMENT 1: SINGLE-CLOCK CAUCHY DATA VS ULTRAHYPERBOLIC CONSTRAINT
-  --------------------------------------------------
+  [PASS][C] {epsilon, D_KS} = 0 exactly on the open 4^3 box (64 sites)  (integer arithmetic, no floating point)
+  [PASS][A] D_KS is antisymmetric (anti-Hermitian kinetic operator)
+  [PASS][A] KS phases obey the Clifford -1 plaquette cocycle on every plaquette  (81 plaquette relations checked, 0 violations)
+  [PASS][C] spectrum of i*D_KS is symmetric about 0 (grading consequence)  (64 eigenvalues, max |E + E_mirror| = 1.44e-15)
 
-  For d_t = 1, relativistic fields have the standard hyperbolic Cauchy
-  problem on a codimension-1 time slice.
+  [PASS][A] FALSIFICATION: the all-plus phase law violates the Clifford cocycle  (81/81 plaquette relations violated)
+  [PASS][A] bipartite anticommutation alone is phase-blind (holds even for all-plus)  (so {eps, D} = 0 comes from bipartiteness; the PHASE CLASS is what the KS note forces)
 
-  For d_t > 1, the continuum problem is ultrahyperbolic / multi-time.
-  Codimension-1 well-posedness is not available for arbitrary local data:
-  one must impose a nonlocal Fourier-space support constraint.
-
-  But on the graph, delta-local basis states on one time slice are
-  admissible initial data. Their Fourier transform is constant across
-  momentum space, so they cannot satisfy a forbidden-region support
-  constraint unless they vanish identically.
-
-  [PASS] ultrahyperbolic forbidden region is nonempty for d_t > 1  (128 forbidden Fourier modes on sample grid)
-  [PASS] delta-local codim-1 graph data have full Fourier support  (discrete Fourier transform of a delta-local slice state is constant)
-  [PASS] graph-local codim-1 data violate the nonlocal multi-time constraint  (local slice states cannot vanish on the forbidden ultrahyperbolic region)
-
-  ARGUMENT 2: CLOSED TIMELIKE CURVES (SUPPORTING)
-  --------------------------------------------------
-
-  With d_t >= 2, the isometry group includes SO(d_t) rotations
-  among temporal directions. A circle in the time plane
-  gamma(s) = (0,...,0, R*cos(s), R*sin(s)) is a closed timelike
-  curve: ds^2 = -R^2 < 0.
-
-  CTCs violate causality and make the initial-value problem
-  ill-defined. No well-posed physics is possible.
-
-  [PASS] d_t >= 2 sample time-plane loop is timelike  (circle in the (t1,t2) plane has ds^2 < 0)
-
-  ARGUMENT 3: SINGLE HAMILTONIAN FLOW (SUPPORTING)
-  --------------------------------------------------
-
-  The framework uses one strongly continuous unitary one-parameter
-  group U(t)=exp(-itH). A multi-time continuum would require extra
-  compatibility conditions beyond the graph semantics.
-
-  [ASSERTION] single-clock evolution uses one real parameter  (framework assumption: one Hamiltonian clock U(t))
-
-  ARGUMENT 4: d_t = 0 GIVES NO DYNAMICS
-  --------------------------------------------------
-
-  With d_t = 0 there is no time evolution, no propagating particles,
-  no scattering amplitudes. This is not physics.
-
-  [ASSERTION] d_t = 0: no time evolution, no physics  (textbook interpretive statement, not a numerical check)
-
-  SUMMARY:
-  d_t    Chirality    Codim-1 evolution                       
-  -------------------------------------------------------
-  0      NO           No dynamics                             
-  1      YES          Standard single-clock Cauchy flow       
-  2      NO           No chirality                            
-  3      YES          Needs nonlocal constrained data         
-  4      NO           No chirality                            
-  5      YES          Needs nonlocal constrained data         
-
-  [PASS] chirality-compatible d_t values are odd  (odd d_t values: [1, 3, 5, 7])
-  [PASS] single-clock codim-1 evolution excludes odd d_t > 1  (multi-time codim-1 evolution requires nonlocal constraints absent from graph semantics)
-
-  RESULT: chirality requires d_t odd, while single-clock
-  codimension-1 evolution excludes d_t > 1. Therefore d_time = 1.
+  P-REC (declared, not computed): realizing this lattice grading as the
+  Clifford chirality on the irreducible emergent Dirac factor (taste
+  reconstruction). Step 3 computed that this is possible iff d_s + d_t
+  is even, and impossible per-site (retained no-go, recomputed above).
 
 ========================================================================
-STEP 5: COMPLETE DERIVATION CHAIN
+STEP 5: LATTICE INDEX MECHANISM (2D Wilson/overlap, U(1) flux)
 ========================================================================
 
-  The full logical chain from lattice to 3+1D spacetime:
+  Declared methodology demonstration (note boundary): the chirality-
+  graded index of a lattice Dirac operator in a topological background
+  is computed from first principles and matches the background charge.
+  This computes the MECHANISM behind P-ABJ on a lattice; it does NOT
+  derive the 4D ABJ inconsistency implication itself (P-ABJ stays a
+  declared premise) and does not contradict the retained square-block
+  no-go, which concerns the staggered epsilon-index, not Wilson/overlap.
 
-  1. START: Staggered fermions on Z^3 with Cl(3) Clifford algebra
-     => 2^3 = 8 taste degrees of freedom
+  [PASS][C] q=-2: background flux quantized at 2*pi*q  (sum of plaquette angles = -12.566371)
+  [PASS][A] q=-2: H_W = gamma_5 (D_W - M) is Hermitian
+  [PASS][C] q=-2: overlap kernel splits into integral chirality sectors; index = -2  (n_+/n_- from chirality projectors on the kernel)
+  [PASS][C] q=-2: spectral asymmetry Tr[sign(H_W)]/2 agrees with zero-mode index  (asymmetry formula gives -2.000000)
+  [PASS][C] q=-1: background flux quantized at 2*pi*q  (sum of plaquette angles = -6.283185)
+  [PASS][A] q=-1: H_W = gamma_5 (D_W - M) is Hermitian
+  [PASS][C] q=-1: overlap kernel splits into integral chirality sectors; index = -1  (n_+/n_- from chirality projectors on the kernel)
+  [PASS][C] q=-1: spectral asymmetry Tr[sign(H_W)]/2 agrees with zero-mode index  (asymmetry formula gives -1.000000)
+  [PASS][C] q=+0: background flux quantized at 2*pi*q  (sum of plaquette angles = 0.000000)
+  [PASS][A] q=+0: H_W = gamma_5 (D_W - M) is Hermitian
+  [PASS][C] q=+0: overlap kernel splits into integral chirality sectors; index = +0  (n_+/n_- from chirality projectors on the kernel)
+  [PASS][C] q=+0: spectral asymmetry Tr[sign(H_W)]/2 agrees with zero-mode index  (asymmetry formula gives +0.000000)
+  [PASS][C] q=+1: background flux quantized at 2*pi*q  (sum of plaquette angles = 6.283185)
+  [PASS][A] q=+1: H_W = gamma_5 (D_W - M) is Hermitian
+  [PASS][C] q=+1: overlap kernel splits into integral chirality sectors; index = +1  (n_+/n_- from chirality projectors on the kernel)
+  [PASS][C] q=+1: spectral asymmetry Tr[sign(H_W)]/2 agrees with zero-mode index  (asymmetry formula gives +1.000000)
+  [PASS][C] q=+2: background flux quantized at 2*pi*q  (sum of plaquette angles = 12.566371)
+  [PASS][A] q=+2: H_W = gamma_5 (D_W - M) is Hermitian
+  [PASS][C] q=+2: overlap kernel splits into integral chirality sectors; index = +2  (n_+/n_- from chirality projectors on the kernel)
+  [PASS][C] q=+2: spectral asymmetry Tr[sign(H_W)]/2 agrees with zero-mode index  (asymmetry formula gives +2.000000)
+  [PASS][C] q=0: index vanishes in the trivial background
+  [PASS][C] index = s*q with one global sign s for all q != 0 (linearity in topology)  (s = +1)
+  [PASS][C] FALSIFICATION: conjugate-charge pair has zero net index (vector-like cancellation)  (chirality-weighted anomaly content cancels exactly when paired)
 
-  2. GAUGE ALGEBRA: SU(3) commutant theorem
-     => su(2) + su(3) + u(1) gauge algebra
-     => Left-handed content: (2,3)_{+1/3} + (2,1)_{-1}
-
-  3. ANOMALY: Tr[Y^3] = -16/9 != 0, Tr[SU(3)^2 Y] = 1/3 != 0,
-              SU(3)^3 = +2 != 0
-     => Gauge theory is INCONSISTENT
-     => Right-handed SU(2)-singlet completion REQUIRED
-
-  4. SINGLETS REQUIRE CHIRALITY:
-     SU(2) singlets need a chirality projection P_R = (1-gamma_5)/2
-     with gamma_5^2 = +I and {gamma_5, gamma_mu} = 0.
-
-  5. CHIRALITY REQUIRES EVEN d_total:
-     Volume element anticommutes with generators iff n is even.
-     For d_spatial = 3: chirality iff d_time is odd.
-
-  6. SINGLE-CLOCK CODIM-1 EVOLUTION:
-     d_time = 0: no dynamics
-     d_time = 1: standard single-clock Cauchy evolution
-     d_time > 1: ultrahyperbolic multi-time evolution requires
-                 nonlocal constraints on codimension-1 data
-
-  7. RESULT: d_total = 3 + 1 = 4
-     The one-time outcome follows only inside the stated conditional
-     bridge: anomaly + chirality + single-clock codimension-1 evolution.
-
-  NUMERICAL CHAIN VERIFICATION:
-
-  [PASS] Cl(3) anticommutation 1
-  [PASS] Cl(3) anticommutation 2
-  [PASS] Cl(3) anticommutation 3
-  [PASS] 3D omega^2 = -I (no chirality in 3D)
-  [PASS] 4D gamma_5^2 = +I (chirality exists)
-  [PASS] P_L^2 = P_L (projector)
-  [PASS] P_R^2 = P_R (projector)
-  [PASS] P_L + P_R = I (complete)
-  [PASS] P_L * P_R = 0 (orthogonal)
-  [PASS] dim(left) = 8, dim(right) = 8
-  [PASS] Full anomaly-free: Tr[Y] = 0
-  [PASS] Full anomaly-free: Tr[Y^3] = 0
-
-  ============================================================
-  THEOREM (anomaly-cancellation / single-clock bridge, conditional) VERIFIED:
-  Cl(3) on Z^3 => su(2)+su(3)+u(1) => anomaly => singlets
-  => chirality => even d_total => d_t odd
-  => single-clock codim-1 evolution excludes d_t > 1 => 3+1D
-
-  The temporal direction is selected within the stated bridge, not by ABJ alone.
-  ============================================================
+  The graded index is a topological integer: nonzero for chiral charge
+  assignments, identically cancelled for vector-like pairings. This is
+  the computable lattice core of the anomaly; the inconsistency
+  implication for the 4D chiral gauge theory remains P-ABJ (declared).
 
 ========================================================================
-BONUS: COMPLETE SM GENERATION CHARGE TABLE
+STEP 6: COMPOSITION WITH LOCAL B-AXIS CLOCK PREMISE
 ========================================================================
 
-  Particle   T3       SU(3)    Y        Q=T3+Y/2   Origin
-  -----------------------------------------------------------------
-  u_L        +1/2     3        +1/3     +2/3       Cl(3) taste
-  d_L        -1/2     3        +1/3     -1/3       Cl(3) taste
-  nu_L       +1/2     1        -1       0          Cl(3) taste
-  e_L        -1/2     1        -1       -1         Cl(3) taste
-  u_R        0        3        +4/3     +2/3       anomaly-cancellation completion
-  d_R        0        3        -2/3     -1/3       anomaly-cancellation completion
-  nu_R       0        1        0        0          anomaly-cancellation completion
-  e_R        0        1        -2       -1         anomaly-cancellation completion
-  [PASS] Q(u_L) = T3 + Y/2 = 2/3
-  [PASS] Q(d_L) = T3 + Y/2 = -1/3
-  [PASS] Q(nu_L) = T3 + Y/2 = 0
-  [PASS] Q(e_L) = T3 + Y/2 = -1
-  [PASS] Q(u_R) = T3 + Y/2 = 2/3
-  [PASS] Q(d_R) = T3 + Y/2 = -1/3
-  [PASS] Q(nu_R) = T3 + Y/2 = 0
-  [PASS] Q(e_R) = T3 + Y/2 = -1
+  Declared bounded premise (class B input):
+    B-AXIS = one supplied blocked time step, one declared evolution
+    axis/transfer construction, and no admitted independent commuting
+    transfer factor as a second clock.
+  NON-CIRCULARITY: B-AXIS contains no anomaly input; this note never
+  defines time via the anomaly. The prior single-clock source remains
+  provenance context only and is not named by source path or claim id.
 
-  Total states per generation: 8 LH + 8 RH = 16 Weyl fermions
-  [PASS] 16 Weyl fermions per generation
+  [PASS][B] source sync: anomaly note declares B-AXIS locally, not the withdrawn unique-RP-axis claim  (cap is conditional on B-AXIS in this bounded source note)
+  [PASS][B] source sync: no single-clock source slug remains in the parent theorem  (B-AXIS is local to this theorem; prior single-clock source is context only)
+  [PASS][B] declared B-AXIS d_t <= 1 cap intersected with computed odd set gives {1}  (lower bound computed in Steps 1-4; upper bound is local declared B-AXIS)
+  [PASS][B] conclusion: d_t = 1, total dimension 3 + 1 = 4, signature (3,1)
+
+  Corroborating dispersion check (cross-reference Craig-Weinstein 2009 /
+  Tegmark 1997; NOT load-bearing — the exclusion above is by B-AXIS):
+  [PASS][A] d_t = 2: codim-1 slice evolution has exponentially growing modes  (242/2401 integer modes have omega_2^2 < 0 (corroborating))
+  [PASS][A] d_t = 1: all slice modes oscillatory (omega^2 = k^2 >= 0)  (standard hyperbolic Cauchy behaviour (corroborating))
 
 ========================================================================
-FINAL SCORE: 86 computed PASS, 2 assertion, 0 FAIL
+STEP 7: COUNTERFACTUAL — CANCEL THE ANOMALY, LOSE THE FORCING
 ========================================================================
 
-All checks passed. Conditional anomaly/single-clock bridge verified.
+  Replace the LH content by its vector-like doubling (add conjugate
+  partners (2,3bar)_{-1/3} + (2,1)_{+1}). Then:
+  [PASS][C] vector-like content: Tr[Y] = 0
+  [PASS][C] vector-like content: Tr[Y^3] = 0
+  [PASS][C] vector-like content: Tr[SU(3)^2 Y] = 0
+  [PASS][C] vector-like content: Tr[SU(2)^2 Y] = 0
+  [PASS][C] vector-like content: SU(3)^3 = 0
+  [PASS][C] vector-like content: Witten count even
+
+  With every anomaly condition already zero, P-ABJ forces nothing: no
+  completion is required, no chirality operator is needed, the even-
+  dimension step never engages, and this chain places NO lower bound
+  on d_t. The forcing is therefore carried by the computed nonzero
+  anomaly content of the framework's chiral spectrum — exactly the
+  falsification behaviour a genuine forcing theorem must show.
+
+========================================================================
+CLASS BREAKDOWN: A=47 B=7 C=36 D=0
+TOTAL: PASS=90 FAIL=0
+========================================================================
+
+VERDICT: bounded anomaly/B-AXIS bridge verified. Computed: exact
+anomaly arithmetic, Clifford parity law, staggered grading, lattice
+index mechanism, and both falsification legs. Imported (declared):
+P-ABJ, P-HY, P-COMP, P-REC, and B-AXIS.
+Conclusion within the declared boundary: d_t = 1, spacetime signature (3,1).
 
 ----- stderr -----
 

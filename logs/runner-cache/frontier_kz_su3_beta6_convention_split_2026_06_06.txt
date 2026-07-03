@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/frontier_kz_su3_beta6_convention_split_2026_06_06.py
+runner_sha256: 906055772006dbad0e96d49aade15e2a9a0769339964ce5885d15f17af5d815b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+K-Z SU(3) beta=6 convention-split checker
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+
+A. source-vector geometry checks
+[PASS] two source paths have the same endpoint x-range
+[PASS] source paths are monotone in lambda coordinate
+[PASS] source paths increase in plotted u_p coordinate
+[PASS] y-to-u map sends top to 0 and bottom to 1
+
+B. beta/lambda convention split
+[PASS] SU(3) Wilson beta=6 maps to lambda=1.5 under paper action coefficient -- lambda=1.5
+[PASS] lambda=3 is a distinct plotted coordinate -- lambda_plot=3.0, lambda_beta6=1.5
+lambda=1.5 bracket: [0.412899, 0.658094], width=0.245195
+lambda=3.0 bracket: [0.851571, 0.900296], width=0.048725
+
+C. W_lift diagnosis
+[PASS] lambda=3 source width matches W_lift within image precision -- width=0.048725
+[PASS] Wilson beta=6 mapped source width is much larger than W_lift -- width=0.245195
+[PASS] Wilson beta=6 mapped source width does not match W_lift -- width=0.245195
+[PASS] old W_lift cannot be used as SU(3) Wilson beta=6 bracket without a convention bridge
+
+D. boundary
+[PASS] result is a convention/source-pruning boundary, not a theorem promotion
+[PASS] explicit numeric bracket remains image-derived, not table-derived
+[PASS] future acceptable path is table/source-data extraction or repo-owned SDP reproduction
+
+SCORECARD: PASS=13 FAIL=0
+VERDICT: W_lift ~= 0.05 is supported by the source figure at plotted lambda=3, but not by the same figure at Wilson beta=6 under the paper's action coefficient. The K-Z external-lift route needs an explicit convention bridge or a repo-owned beta=6 reproduction.
+
+----- stderr -----
+

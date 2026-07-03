@@ -1,82 +1,61 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_formula_honest_status.py
-runner_sha256: 66d58f6bd618df0da9e2c7818b7bf00b46d4d5728c4c5ee9eb8aa8ee48fd6a97
+runner_sha256: d7fa5053b02e093a18ac3b0948805ba7f8c59f21e509a84cab47017e32341ddd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.02
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
-======================================================================
-Check 1: v = M_Pl * (7/8)^(1/4) * alpha_LM^16 reproducibility
-======================================================================
-  M_Pl       = 1.2209e+19 GeV
-  APBC       = (7/8)^(1/4) = 0.9671682101
-  alpha_LM   = 0.0906678360
-  alpha_LM^16 = 2.085701e-17
-  v_pred     = 246.2828182901 GeV
-  v_chain    = 246.2828182901 GeV (canonical chain note)
-  v_obs      = 246.2200 GeV
-  rel error  = 0.0255 %
-[PASS] v_pred matches canonical chain published value
+==============================================================================
+ frontier_hierarchy_formula_honest_status.py
+ (2026-06-16 B3 split: T1 structural support from local
+  algebra; B3a kinetic substrate sourced to the primitive;
+  D1/C1 appendices over open B3b/B4/B5 gates;
+  comparators fenced)
+ Parent note: docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md
+==============================================================================
 
-======================================================================
-Check 2: power-N sensitivity scan (N = 13..20)
-======================================================================
-  N=13: v = 3.304261e+05 GeV (ratio to v_obs: 1.3420e+03)
-  N=14: v = 2.995902e+04 GeV (ratio to v_obs: 1.2168e+02)
-  N=15: v = 2.716320e+03 GeV (ratio to v_obs: 1.1032e+01)
-  N=16: v = 2.462828e+02 GeV (ratio to v_obs: 1.0003e+00)
-  N=17: v = 2.232993e+01 GeV (ratio to v_obs: 9.0691e-02)
-  N=18: v = 2.024606e+00 GeV (ratio to v_obs: 8.2228e-03)
-  N=19: v = 1.835667e-01 GeV (ratio to v_obs: 7.4554e-04)
-  N=20: v = 1.664359e-02 GeV (ratio to v_obs: 6.7596e-05)
-[PASS] N = 16 within 1 % of v_obs
-[PASS] N = 15 and N = 17 each off by > factor 5
+--- [C] T1 first-principles compute (species count -> determinant degree -> selector) ---
+  [PASS][C] naive symbol zero set per direction is {0, pi} (momenta n = 0, L/2) on even-L grids L = 6, 8 — exact integer count  (zero sets: {6: [0, 3], 8: [0, 4]})
+  [PASS][C] species count = 2^d: (d=2,3,4,5) -> (4, 8, 16, 32); d = 4 corner enumeration gives the declared N = 16  (counts: {2: 4, 3: 8, 4: 16, 5: 32})
+  [PASS][C] Hamming staircase over the d = 4 corners is (1,4,6,4,1), sum 16
+  [PASS][C] eta-phase staggered operator on the all-APBC 2^4 block: D real antisymmetric and D^2 = -4 I exactly  (exact Fraction matrix arithmetic)
+  [PASS][C] char poly of D/u_0 is (lambda^2 + 4)^8 — 16 taste modes +/- 2i u_0, multiplicity 8 each  (Faddeev-LeVerrier, exact)
+  [PASS][C] det(u_0 D + m) = (m^2 + 4 u_0^2)^8 per color; at m = 0 |det| = 4^8 u_0^16; exact u_0-degree from a two-point ratio equals the species count 16  (exact at rational (u_0, m) test points)
+  [PASS][C] selector: eta(4)/zeta(4) = 1 - 2^(1-4) = 7/8 exact (Fraction algebra); bracketed series interval contains 7/8  (ratio in [0.87499987, 0.87500013], width 2.6e-07)
 
-======================================================================
-Check 3: alpha_LM^16 = alpha_bare^16 * u_0^(-16) (substitution P3)
-======================================================================
-  alpha_LM^16             = 2.0857008000e-17
-  alpha_bare^16 * u_0^-16 = 2.0857008000e-17
-[PASS] algebraic identity (S) verified
+--- [A] T1.iv/T1.v + D1/C1 readout algebra over declared inputs and open formula-closure gates ---
+  [PASS][A] K = (7/8)^(1/4) alpha_LM^16 = 2.017224e-17 (zero continuous knobs beyond B1); log decomposition 16 log10(1/alpha_LM) - (1/4) log10(7/8) matches  (K = 2.017223509625e-17, orders = 16.695246)
+  [PASS][A] identity (S): alpha_LM^16 = alpha_bare^16 u_0^(-16); magnitude carried by alpha_bare^16 = (4 pi)^(-16) ~ 2.6e-18 while |log10 u_0^16| < 1 — the determinant power supplies no hierarchy  (alpha_bare^16 = 2.5861e-18, u_0^16 = 0.12399)
+  [PASS][A] C1 readout: v_cand = M_Pl x K = 246.282818290129 GeV (matches the note's published constant)  (v_cand = 246.282818290129 GeV)
+  [PASS][A] elasticities: dln v_cand/dln <P> = -4 (fd-verified) and dln v_cand/dln M_Pl = +1 (exact linearity)  (fd elasticity = -3.999999996)
+  [PASS][A] B1 resolution window: 4-d.p. plaquette license induces +/- 0.0337 % on v_cand  (window = 0.03370 %)
+  [PASS][A] F1 exponent displacement: N = 15 -> x 11.029, N = 17 -> x 0.09067, N = 8 (Z^3 spatial-only) -> x 2.19e8; every unit of N displaces >> the B1 window  (x 11.0293 / x 0.090668 / x 2.1896e+08)
+  [PASS][A] F2 coupling displacement: determinant power u_0^16 -> x 5.94e15 (NO hierarchy; B4 remains the open transport gate), alpha_bare^16 -> x 0.1240, alpha_s(v)^16 -> x 8.0651 = u_0^(-16) exactly  (x 5.9448e+15 / x 0.12399 / x 8.06510)
+  [PASS][A] F3 selector displacement: removing (7/8)^(1/4) -> x 1.033946 (+3.39 %), two orders above the B1 window  (x 1.0339463)
+  [PASS][A] F4 anti-tuning: <P>_needed - 0.5934 = +3.78e-5 < the 4-d.p. half-step 5e-5 (the licensed grid cannot encode a tuned target; 0.5934 IS the rounding of <P>_needed); M_Pl_needed shift = 6.2x the B2 half-step (residual attributable to the Planck anchor)  (<P>_needed = 0.5934378, M_Pl_needed = 1.220589e+19, B2 steps = 6.23)
 
-======================================================================
-Check 4: u_0^16 (determinant power) != alpha_LM^16 (formula power)
-======================================================================
-  u_0^16    = 1.239910e-01  (Matsubara determinant power on L_s=2/L_t=4)
-  alpha_LM^16 = 2.085701e-17  (formula power in canonical chain)
-  ratio u_0^16 / alpha_LM^16 = 5.9448e+15
-[PASS] u_0^16 vastly larger than alpha_LM^16 (substitution gap > 10^15)
+--- [B] cross-note inputs, parent-note hygiene, self-scans ---
+  [PASS][B] B1 matches canonical helper: <P> = 0.5934, u_0, alpha_bare = 1/(4 pi), alpha_LM = alpha_bare/u_0  (alpha_LM = 0.0906678360)
+  [PASS][B] plaquette license present: 0.5934 'admitted comparison/reuse number' language on disk
+  [PASS][B] naive 2^d species-count parent theorem on disk with the exact-count claim
+  [PASS][B] joint fourth-root theorem on disk: (7/8)^(1/4) closed form and integer-d uniqueness at s = 4
+  [PASS][B] regulator-dependence no-go on disk: identification is regulator-dependent (Wilson: 1, twisted-mass: 2, staggered: 4, domain-wall: 1, overlap: 1)
+  [PASS][B] B3a kinetic substrate is sourced to registered kinetic_isotropy_primitive with c_t = c_s / OS0 hypercubic-form scope only
+  [PASS][B] parent note splits B3a kinetic substrate from B3b regulator/species realization and keeps B4 open
+  [PASS][B] staggered-Dirac realization gate on disk and referenced as backticked context (no markdown-link edge)
+  [PASS][B] all markdown-linked note citations resolve on disk  (links = ['HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md', 'HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md', 'HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md', 'KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md', 'NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md', 'PLAQUETTE_SELF_CONSISTENCY_NOTE.md'])
+  [PASS][B] parent-note hygiene: required declarations present and forbidden overclaim tokens absent  (missing = [], hit = [])
+  [PASS][B] runner self-scan: PDG VEV literal appears exactly once in the runner source (the class-D constant definition)  (occurrences = 1)
 
-======================================================================
-Check 5: 3D-spatial-only counterfactual (P2 load-bearing role)
-======================================================================
-  v_alt (N=8 spatial doublers on Z^3) = 5.3927e+10 GeV
-  ratio to v_obs                       = 2.1902e+08
-  off by ~8 orders of magnitude
-[PASS] N=8 spatial-only off by > 10^7 (P2 load-bearing)
+--- [D] fenced comparators (PDG; quarantined, never load-bearing) ---
+  [PASS][D] comparator: v_cand deviates from the PDG EW VEV by +0.025513 % (deviation report, not a match claim)  (deviation = +0.025513 %)
+  [PASS][D] comparator framing: deviation < B1 window (0.0337 %) AND deviation > B2 window (0.0041 %) — sub-resolution in the plaquette license, attributable in the Planck anchor  (|dev| = 2.551e-04, B1 = 3.370e-04, B2 = 4.095e-05)
 
-======================================================================
-Check 6: coupling-choice counterfactual (P3 wrong-coupling sensitivity)
-======================================================================
-  using alpha_bare^16  -> v = 3.0537e+01 GeV (off by 87.60%)
-  using alpha_s(v)^16  -> v = 1.9863e+03 GeV (off by 706.72%)
-  using alpha_LM^16    -> v = 2.4628e+02 GeV (off by 0.0255%)
-[PASS] only alpha_LM^16 matches; alpha_bare/alpha_s(v) miss by > 50 %
-
-======================================================================
-TOTAL: PASS=7 FAIL=0
-======================================================================
-
-VERDICT: hierarchy formula honest-status structural checks verified.
-The formula is a bounded numerical match on the same-surface
-plaquette/coupling chain at +0.0255 % from PDG v_obs. Four named
-load-bearing primitives P1-P4 (M_Pl import; Wick rotation for 4D
-taste counting; u_0^16 -> alpha_LM^16 algebraic substitution; EWSB
-observable identification) carry the match; closure to a retained
-hierarchy theorem requires deriving at least one of P1-P4 from
-primitives. See docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md
-for the full status correction.
+==============================================================================
+ Breakdown: A=9 B=11 C=7 D=2
+ TOTAL: PASS=29 FAIL=0
+==============================================================================
 
 ----- stderr -----
 

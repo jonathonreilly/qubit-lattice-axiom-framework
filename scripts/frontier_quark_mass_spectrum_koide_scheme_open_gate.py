@@ -3,11 +3,19 @@
 
 from __future__ import annotations
 
+import hashlib
 import math
+from pathlib import Path
 
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = "docs/QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md"
+SIDECAR_RUNNER = "scripts/frontier_record_selector_audit_sidecar_2026_06_05.py"
+SIDECAR_CACHE = "logs/runner-cache/frontier_record_selector_audit_sidecar_2026_06_05.txt"
+SIDECAR_NOTE = "docs/RECORD_SELECTOR_AUDIT_SIDECAR_2026-06-05.md"
+CLAIM_ID = "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26"
 
 
 def check(name: str, cond: bool, detail: str = "") -> None:
@@ -33,6 +41,26 @@ def apparent_b_over_a_squared(q_value: float) -> float:
 
 def hierarchy(masses: list[float]) -> float:
     return max(masses) / min(masses)
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def cache_header(path: Path) -> dict[str, str]:
+    text = path.read_text(encoding="utf-8", errors="replace")
+    header, _, _stdout = text.partition("----- stdout -----")
+    out = {"_text": text}
+    for line in header.splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        out[key.strip()] = value.strip()
+    return out
 
 
 def main() -> int:
@@ -105,6 +133,36 @@ def main() -> int:
     check("quark values are treated as scheme-dependent comparators",
           all(q > 0 for q in q_values.values()),
           "no derivation claimed")
+
+    note_text = (ROOT / NOTE).read_text(encoding="utf-8")
+    sidecar_text = (ROOT / SIDECAR_RUNNER).read_text(encoding="utf-8")
+    header = cache_header(ROOT / SIDECAR_CACHE)
+    check("Record-selector sidecar classifies quark row as sector-specific dial open gate",
+          CLAIM_ID in sidecar_text
+          and '"class": "sector_specific_dial_open_gate"' in sidecar_text
+          and "do not transfer charged-lepton BAE" in sidecar_text,
+          "sidecar says sector-specific mass scheme/scale and quark dial remain open")
+    check("quark note names selector sidecar note, runner, and cache",
+          SIDECAR_NOTE in note_text and SIDECAR_RUNNER in note_text and SIDECAR_CACHE in note_text,
+          "restricted packet includes sidecar boundary artifact")
+    check("selector sidecar cache is SHA-fresh and clean",
+          header.get("runner") == SIDECAR_RUNNER
+          and header.get("runner_sha256") == sha256_file(ROOT / SIDECAR_RUNNER)
+          and header.get("exit_code") == "0"
+          and "SCORECARD PASS=87 FAIL=0" in header["_text"],
+          f"cache runner={header.get('runner')} status={header.get('status')}")
+    check("source boundary: charged-lepton BAE is not copied to quark sector",
+          "must not be copied into the quark mass lane" in note_text
+          and "scheme-native framework mass definition" in note_text
+          and "sector-specific mass scheme/scale and quark-sector dial parameters" in note_text,
+          "quark lane stays comparator-only until sector-specific bridge exists")
+    note_flat = " ".join(note_text.split())
+    check("2026-06-12 firewall keeps quark row open until sector dial is derived",
+          "2026-06-12 Sector-Dial Source Firewall" in note_text
+          and "live blocker is a sector-specific quark mass scheme/scale and quark dial theorem" in note_flat
+          and "No retained-grade proposal or status promotion is made here" in note_flat
+          and "displayed central values remain external comparators only" in note_text,
+          "no lepton BAE transfer or quark-mass promotion")
 
     print("\n" + "=" * 72)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

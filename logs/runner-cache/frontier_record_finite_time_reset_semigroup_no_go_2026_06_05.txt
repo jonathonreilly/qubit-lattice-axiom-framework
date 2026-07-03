@@ -1,0 +1,79 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_finite_time_reset_semigroup_no_go_2026_06_05.py
+runner_sha256: ab83bfcb463eda821a4f84f7f2a5ae78f23bbe74b7083e98a4ef0541009c860f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+==============================================================================
+RECORD FINITE-TIME RESET SEMIGROUP NO-GO
+no-go / singular reset endpoint runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Exact reset superoperator is singular
+------------------------------------------------------------------------------
+  [PASS] d=2: reset superoperator has expected shape
+  [PASS] d=2: reset superoperator has rank one (1)
+  [PASS] d=2: reset superoperator is not invertible
+  [PASS] d=2: reset channel is trace-preserving
+  [PASS] d=2: sample density maps to blank
+  [PASS] d=4: reset superoperator has expected shape
+  [PASS] d=4: reset superoperator has rank one (1)
+  [PASS] d=4: reset superoperator is not invertible
+  [PASS] d=4: reset channel is trace-preserving
+  [PASS] d=4: sample density maps to blank
+  [PASS] d=8: reset superoperator has expected shape
+  [PASS] d=8: reset superoperator has rank one (1)
+  [PASS] d=8: reset superoperator is not invertible
+  [PASS] d=8: reset channel is trace-preserving
+  [PASS] d=8: sample density maps to blank
+
+------------------------------------------------------------------------------
+2. Finite damping parameters stay invertible
+------------------------------------------------------------------------------
+  [PASS] p=0.000000: finite damping rank is full (4)
+  [PASS] p=0.000000: finite damping determinant is nonzero (1.000000e+00)
+  [PASS] p=0.000000: finite damping does not exactly reset |1>
+  [PASS] p=0.500000: finite damping rank is full (4)
+  [PASS] p=0.500000: finite damping determinant is nonzero (2.500000e-01)
+  [PASS] p=0.500000: finite damping does not exactly reset |1>
+  [PASS] p=0.864665: finite damping rank is full (4)
+  [PASS] p=0.864665: finite damping determinant is nonzero (1.831564e-02)
+  [PASS] p=0.864665: finite damping does not exactly reset |1>
+  [PASS] p=1 endpoint reset has rank one
+  [PASS] p=1 endpoint reset determinant is zero
+  [PASS] p=1 endpoint exactly resets |1>
+
+------------------------------------------------------------------------------
+3. Finite exponential invertibility marker
+------------------------------------------------------------------------------
+  [PASS] sample finite exponential has nonzero determinant
+  [PASS] sample finite exponential has explicit inverse
+  [PASS] rank-one reset cannot equal invertible exponential
+
+------------------------------------------------------------------------------
+4. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_FINITE_TIME_RESET_SEMIGROUP_NO_GO_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: no-go
+  [PASS] note contains marker: trace_class: negative_route_pruning
+  [PASS] note contains marker: finite-time bounded-generator semigroup
+  [PASS] note contains marker: Does not derive a Hamiltonian
+  [PASS] note contains marker: Does not block asymptotic damping
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: hamiltonian closure
+  [PASS] forbidden wording absent: cost closure
+  [PASS] forbidden wording absent: boundary closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=43 FAIL=0
+
+----- stderr -----
+

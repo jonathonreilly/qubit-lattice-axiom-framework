@@ -2,10 +2,11 @@
 """Sharp-record probability tangent theorem for source/measure P-cal.
 
 This route removes one layer of semantics: on a finite sharp-record sample
-space, every smooth physical record-probability intervention has a
-Radon-Nikodym score tangent.  The normalized trace reference supplies the
-canonical Fisher pairing.  A primitive signed record is therefore a unit
-tangent vector; scaling it by lambda changes the tangent norm to lambda^2.
+space, every smooth supplied record-probability intervention has a
+Radon-Nikodym score tangent.  The retained finite Fisher theorem now supplies
+the canonical pairing.  A primitive signed record is therefore a unit tangent
+vector; scaling it by lambda changes the tangent norm to lambda^2.  Physical
+source semantics and strict same-source top/W response remain out of scope.
 """
 
 from __future__ import annotations
@@ -22,9 +23,12 @@ DOCS = ROOT / "docs"
 OUT = ROOT / "outputs" / "source_measure_sharp_record_tangent_space_2026-05-30.json"
 
 NOTE = DOCS / "SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md"
+LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 RN_NOTE = DOCS / "SOURCE_MEASURE_PCAL_RN_COCYCLE_THEOREM_NOTE_2026-05-30.md"
 CUMULANT_NOTE = DOCS / "SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md"
-AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-05-20.md"
+FISHER_NOTE = DOCS / "SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md"
+ONB_NOTE = DOCS / "SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md"
+AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-06-05.md"
 LSP = DOCS / "LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md"
 
 PASS_COUNT = 0
@@ -51,23 +55,80 @@ def is_zero(expr: sp.Expr) -> bool:
     return sp.simplify(expr) == 0
 
 
+def ledger_row(claim_id: str) -> dict[str, Any]:
+    ledger = json.loads(read(LEDGER))
+    rows = ledger.get("rows", ledger)
+    if isinstance(rows, dict):
+        return rows.get(claim_id, {})
+    for row in rows:
+        if row.get("claim_id") == claim_id:
+            return row
+    return {}
+
+
 def part1_boundary() -> dict[str, Any]:
     print("\nPart 1: document/status boundary")
-    for path in (NOTE, RN_NOTE, CUMULANT_NOTE, AXIOMS, LSP):
+    for path in (NOTE, LEDGER, RN_NOTE, CUMULANT_NOTE, FISHER_NOTE, ONB_NOTE, AXIOMS, LSP):
         check(f"{path.relative_to(ROOT)} exists", path.exists())
     note = read(NOTE)
     for phrase in (
         "Theorem",
         "Tangent-space proof",
         "Exponential chart",
-        "Y_T source unit",
+        "Conditional corollary: supplied Y_T source unit",
         "Status boundary",
         "Non-claims",
+        "2026-06-08 finite-boundary repair",
+        "2026-06-07 authority split",
+        "SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06",
+        "SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05",
     ):
         check(f"note contains required phrase: {phrase}", phrase in note)
-    check("note marks exact-support status", "actual_current_surface_status: exact-support" in note)
+    check("note marks bounded-support status", "actual_current_surface_status: bounded-support" in note)
+    check(
+        "note names finite load-bearing claim",
+        'load_bearing_claim: "finite Fisher tangent plus six diagonal E_ii basis algebra only"' in note,
+    )
+    check(
+        "note marks Y_T interpretation as conditional corollary only",
+        'conditional_corollary_only: "Y_T/source interpretation after a separate physical-source bridge"' in note,
+    )
     check("note forbids bare retained", "bare_retained_allowed: false" in note)
-    return {"actual_status": "exact-support"}
+    flat_note = " ".join(note.split())
+    for phrase in (
+        "does not supply those bridges",
+        "does not prove that this basis is the physical top source basis",
+        "strict same-source top/W response",
+        "unbounded retained Y_T closure",
+    ):
+        check(f"boundary phrase present: {phrase}", phrase in flat_note)
+
+    fisher = ledger_row("sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06")
+    onb = ledger_row("source_measure_sharp_record_orthonormal_response_basis_narrow_theorem_note_2026-06-05")
+    check("retained Fisher tangent dependency present in ledger", bool(fisher))
+    check("six-diagonal basis dependency present in ledger", bool(onb))
+    check("Fisher tangent dependency is audited clean", fisher.get("audit_status") == "audited_clean", fisher.get("audit_status"))
+    check("Fisher tangent dependency is retained", fisher.get("effective_status") == "retained", fisher.get("effective_status"))
+    check(
+        "six-diagonal basis dependency is audited clean",
+        onb.get("audit_status") == "audited_clean",
+        onb.get("audit_status"),
+    )
+    check(
+        "six-diagonal basis dependency is retained_bounded",
+        onb.get("effective_status") == "retained_bounded",
+        onb.get("effective_status"),
+    )
+    check("dependency rows have no open dependency paths", not fisher.get("open_dependency_paths") and not onb.get("open_dependency_paths"))
+    return {
+        "actual_status": "bounded-support",
+        "load_bearing_claim": "finite Fisher tangent plus six diagonal E_ii basis algebra only",
+        "conditional_corollary_only": "Y_T/source interpretation after a separate physical-source bridge",
+        "dependencies": {
+            "fisher_tangent": fisher.get("effective_status"),
+            "six_diagonal_basis": onb.get("effective_status"),
+        },
+    }
 
 
 def part2_probability_tangent_space() -> dict[str, Any]:
@@ -114,17 +175,17 @@ def part3_scaled_tangent_and_exponential_chart() -> dict[str, Any]:
     return {"exponential_chart": "R_h=exp(h epsilon - log E exp(h epsilon))"}
 
 
-def part4_yt_source_unit() -> dict[str, Any]:
-    print("\nPart 4: Y_T source unit")
+def part4_supplied_basis_unit() -> dict[str, Any]:
+    print("\nPart 4: supplied six-diagonal basis unit")
     lam = sp.symbols("lambda", positive=True)
     u = sp.Matrix([1 / sp.sqrt(6)] * 6)
     fisher = sp.simplify(u.dot(u))
     fisher_lam = sp.simplify((lam * u).dot(lam * u))
-    check("six-component top tangent has unit Fisher norm", is_zero(fisher - 1), fisher)
-    check("lambda-scaled top tangent has norm lambda^2", is_zero(fisher_lam - lam**2), fisher_lam)
+    check("supplied six-component democratic tangent has unit norm", is_zero(fisher - 1), fisher)
+    check("lambda-scaled supplied tangent has norm lambda^2", is_zero(fisher_lam - lam**2), fisher_lam)
     check("unit tangent selects lambda=1", sp.solve(sp.Eq(fisher_lam, 1), lam) == [1])
-    check("component coefficient is 1/sqrt(6)", is_zero(u[0] - 1 / sp.sqrt(6)), u[0])
-    return {"yt_component": "1/sqrt(6)"}
+    check("supplied-basis component coefficient is 1/sqrt(6)", is_zero(u[0] - 1 / sp.sqrt(6)), u[0])
+    return {"supplied_basis_component": "1/sqrt(6)", "yt_interpretation": "conditional_bridge_only"}
 
 
 def part5_firewall() -> None:
@@ -145,14 +206,15 @@ def main() -> int:
         "boundary": part1_boundary(),
         "tangent_space": part2_probability_tangent_space(),
         "exponential_chart": part3_scaled_tangent_and_exponential_chart(),
-        "yt_source": part4_yt_source_unit(),
+        "supplied_basis_unit": part4_supplied_basis_unit(),
     }
     part5_firewall()
     result["summary"] = {
         "pass": PASS_COUNT,
         "fail": FAIL_COUNT,
-        "actual_current_surface_status": "exact-support",
-        "trace_class": "direct_blocker_closure_candidate",
+        "actual_current_surface_status": "bounded-support",
+        "trace_class": "direct_blocker_closure",
+        "reachability_to_target": "partially_closes",
         "proposal_allowed": False,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)

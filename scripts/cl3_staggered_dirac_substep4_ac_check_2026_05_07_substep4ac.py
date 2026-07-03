@@ -1,73 +1,132 @@
-"""Staggered-Dirac substep 4 — AC narrowing structural verification.
+"""Staggered-Dirac substep 4 — AC narrowing verification (repaired 2026-06-10).
 
-Verifies the AC-narrowing claim that the Block 04 single-clause AC
+Verifies the AC-narrowing claim that the prior single-clause AC
 
     AC_narrow := "physical-species reading of joint-translation-character-
                   distinct hw=1 corners as SM matter generations"
 
 decomposes as
 
-    AC_narrow = AC_phi  ∧  AC_lambda  ∧  AC_phi_lambda
+    AC_narrow = AC_phi  AND  AC_lambda  AND  AC_phi_lambda
 
 with explicit fates for each atom:
 
-    AC_phi      ≡ "a physical observable distinguishes the three hw=1
+    AC_phi        "a physical observable distinguishes the three hw=1
                    corner states"
-                  (blocked for C3-symmetric observables because C3 symmetry
-                   forces equal corner-basis expectations)
+                  (blocked for C3-symmetric self-adjoint observables:
+                   commuting with the corner 3-cycle forces equal
+                   corner-basis expectation values, indeed equal moments
+                   of every order)
 
-    AC_lambda   ≡ "free fermion propagator block-diagonal on hw=1 corner basis"
-                ≡ free-propagator decomposition on species index
-                  (candidate consequence of upstream substep 2 /
-                   Kawamoto-Smit form)
+    AC_lambda     "free staggered kinetic operator and regulated free
+                   propagator have NO inter-corner matrix elements on the
+                   hw=1 corner basis" (corner-block no-mixing statement;
+                   computed first-principles from the upstream
+                   Kawamoto-Smit phases, NOT assumed)
 
-    AC_phi_lambda ≡ "framework 3-fold structure IS SM flavor-generation
-                     structure"
-                  (genuine residual; any axiom addition requires explicit
-                   user approval)
+    AC_phi_lambda "framework 3-fold structure IS SM flavor-generation
+                   structure" (genuine residual; semantic identification,
+                   not machine-checkable; any axiom addition requires
+                   explicit user approval)
 
-Verifies:
-  1. Decomposition validity (independence countermodels for each atom pair)
-  2. AC_lambda block-diagonality from upstream substep 2 (Kawamoto-Smit
-     form gives kinetic operator diagonal in corner basis on hw=1)
-  3. AC_phi equal-expectation obstruction under C_3[111] symmetry
-     (a self-adjoint operator commuting with a 3-cycle has equal
-     expectation on the cycle's orbit)
-  4. AC_phi_lambda has no standard-QFT axiom equivalent (audit-defensibility
-     check via comparison to standard QFT axiom catalog)
+2026-06-10 REPAIR (science fix). The 2026-05-07 runner (a) hard-coded the
+AC_lambda conclusion as `np.diag([0,0,0])`, (b) hard-coded the Section-1
+independence countermodels as boolean literals, and (c) scored a string
+self-test ("NO STANDARD QFT AXIOM EQUIVALENT" in its own constant) as a
+check. All three are replaced by genuine computations. In addition, the
+2026-05-07 note and the 2026-05-09 rigorization addendum justified
+AC_lambda block-diagonality via "the Kawamoto-Smit kinetic operator K
+commutes with the lattice translations (T_x, T_y, T_z) + simultaneous
+diagonalization". That premise is FALSE for the position-dependent
+Kawamoto-Smit phases: this runner computes ||[D, T_1]|| and ||[D, T_2]||
+and shows they are NONZERO (the true invariances are [D, T_mu^2] = 0 and
+[D, T_3] = 0). The AC_lambda conclusion nevertheless survives by the
+direct corner-annihilation argument:
+
+    D e^{i p.x} = -sum_mu i sin(p_mu) e^{i (p + pi m_mu).x},
+        m_1 = 0, m_2 = e_1, m_3 = e_1 + e_2  (phase momentum shifts),
+
+so at every BZ-corner momentum p in {0, pi}^3 every sin(p_mu) vanishes
+and D annihilates the corner plane wave EXACTLY (local identity,
+verified here in exact integer arithmetic). Hence the hw=1 corner block
+of D is the zero matrix and the regulated propagator satisfies
+<c_a|(D + m)^{-1}|c_b> = delta_ab / m exactly.
+
+Check classes are annotated per the audit rubric:
+  [A] algebraic identity check on existing inputs
+  [B] cross-note input verification (value read from an upstream note)
+  [C] first-principles compute from the framework baseline (Cl(3) on Z^3
+      plus accepted normalizations) producing numbers not present in any
+      input
+
+Section 5 (standard-QFT axiom catalog comparison for AC_phi_lambda) is a
+DOCUMENTATION ECHO ONLY: it is printed for audit context and is NOT
+scored as a PASS — the SM-generation identification is a semantic claim
+that no runner can verify.
+
+Upstream inputs (one hop):
+  - Kawamoto-Smit phases eta_1=1, eta_2(x)=(-1)^{x_1},
+    eta_3(x)=(-1)^{x_1+x_2} and the staggered kinetic form
+    D = (1/2) sum_{x,mu} eta_mu(x) (chibar_{x+mu} chi_x - chibar_x chi_{x+mu})
+    per docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md
+    (bounded on its declared substep-1 Grassmann + spin-diagonalization
+    premises; finite-boundary wrap is holonomy convention data there, so
+    the even-L periodic-wrap representative used here is admissible and
+    makes the BZ-corner momenta exactly representable at finite L).
+  - hw=1 corner triplet, translation characters diag(-1,1,1) etc., and
+    C_3[111] 3-cycle per
+    docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md and
+    docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md.
+
+No PDG values, no lattice MC values, no fitted coefficients.
 
 Companion: docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md
-Loop: staggered-dirac-substep4-ac-narrow-20260507
+Loop: staggered-dirac-substep4-ac-narrow-20260507 (repair 2026-06-10)
 """
 from __future__ import annotations
 
-import math
+import itertools
 from typing import Dict, List, Tuple
 
 import numpy as np
 
+PASS = 0
+FAIL = 0
+
+
+def check(name: str, cond: bool, detail: str = "") -> bool:
+    global PASS, FAIL
+    cond = bool(cond)
+    print(f"[{'PASS' if cond else 'FAIL'}] {name}")
+    if detail:
+        print(f"       {detail}")
+    PASS += int(cond)
+    FAIL += int(not cond)
+    return cond
+
 
 # ---------------------------------------------------------------------------
-# Geometry: hw=1 BZ corners on Z^3 APBC
+# Geometry: hw=1 BZ corners on Z^3
 # ---------------------------------------------------------------------------
 
-def hw1_corners() -> List[Tuple[int, int, int]]:
-    """The three Hamming-weight-1 BZ corners on Z^3 APBC."""
-    return [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
+HW1_CORNERS: List[Tuple[int, int, int]] = [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
+ALL_CORNERS: List[Tuple[int, int, int]] = list(
+    itertools.product((0, 1), repeat=3)
+)
 
 
 def translation_eigenvalues(corner: Tuple[int, int, int]
-                              ) -> Tuple[int, int, int]:
-    """Joint eigenvalues of T_x, T_y, T_z on a BZ corner.
+                            ) -> Tuple[int, int, int]:
+    """Joint eigenvalues of (T_x, T_y, T_z) on a BZ corner plane wave.
 
-    T_mu acts as exp(i k_mu) = (-1)^{n_mu} on corner with k_mu = n_mu * pi.
+    T_mu acts as exp(i k_mu) = (-1)^{n_mu} on the plane wave with
+    k_mu = n_mu * pi.
     """
-    n1, n2, n3 = corner
-    return ((-1) ** n1, (-1) ** n2, (-1) ** n3)
+    return tuple((-1) ** n for n in corner)
 
 
 def c3_111_action(corner: Tuple[int, int, int]) -> Tuple[int, int, int]:
-    """C_3[111] cyclic shift on coordinate axes: (x,y,z) -> (y,z,x).
+    """C_3[111] cyclic shift of coordinate axes: (x,y,z) -> (y,z,x).
 
     On hw=1 BZ corners: (1,0,0) -> (0,1,0) -> (0,0,1) -> (1,0,0).
     """
@@ -75,440 +134,507 @@ def c3_111_action(corner: Tuple[int, int, int]) -> Tuple[int, int, int]:
 
 
 # ---------------------------------------------------------------------------
-# Section 1: Decomposition validity (independence countermodels)
+# Kawamoto-Smit staggered kinetic operator on a finite even-L Z^3 torus
 # ---------------------------------------------------------------------------
 
-def section1_decomposition_validity() -> Dict[str, bool]:
-    """Verify that AC_narrow = AC_phi ∧ AC_lambda ∧ AC_phi_lambda is a valid
-    independent decomposition by exhibiting countermodels for each atom.
+def ks_phase(mu: int, x: Tuple[int, int, int]) -> int:
+    """Kawamoto-Smit phases, read from the upstream substep-2 note ([B]):
 
-    Each countermodel is a hypothetical scenario where exactly one atom
-    fails and the other two could still hold. Independence of the atoms is
-    confirmed if all three countermodels are logically self-consistent.
+        eta_1(x) = 1, eta_2(x) = (-1)^{x_1}, eta_3(x) = (-1)^{x_1+x_2}
+
+    per STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md,
+    eq. (6).
     """
-    countermodels: Dict[str, bool] = {}
+    if mu == 0:
+        return 1
+    if mu == 1:
+        return (-1) ** x[0]
+    return (-1) ** (x[0] + x[1])
 
-    # Countermodel for AC_phi failing alone:
-    # Scenario: H_phys is C_3[111]-symmetric ⇒ Hamiltonian degenerate on
-    # hw=1; but AC_lambda (free propagator block-diagonal) and AC_phi_lambda
-    # (3-fold structure ↔ SM gen) could still be coherent in principle.
-    # Self-consistent: free propagator can be diagonal in momentum basis
-    # while energy levels are degenerate (e.g., free massless fermions on
-    # symmetric lattice).
-    countermodels["AC_phi_fails_alone_self_consistent"] = True
 
-    # Countermodel for AC_lambda failing alone:
-    # Scenario: A free fermion lagrangian with off-diagonal hopping between
-    # corners (not the Kawamoto-Smit form) but with non-degenerate energy
-    # eigenvalues and SM-like 3-fold structure. Possible in principle (e.g.,
-    # if the kinetic term is NOT Kawamoto-Smit but something else).
-    countermodels["AC_lambda_fails_alone_self_consistent"] = True
+class Lattice:
+    """Even-L periodic Z^3 torus carrying the staggered operator.
 
-    # Countermodel for AC_phi_lambda failing alone:
-    # Scenario: A "hidden sector" 3-fold structure on hw=1 (M_3(C) algebra
-    # + C_3[111] cyclic + no-proper-quotient) that is NOT identified with
-    # SM e/μ/τ — could be a 3-fold internal symmetry unrelated to flavor.
-    # Self-consistent: the framework's algebraic content (M_3(C) +
-    # no-proper-quotient) is purely structural and does not by itself
-    # name the sector.
-    countermodels["AC_phi_lambda_fails_alone_self_consistent"] = True
+    Even L keeps eta_mu well defined on the wrap; periodic wrap is the
+    boundary-holonomy representative on which the corner momenta
+    k_mu in {0, pi} are exactly representable (the upstream substep-2 note
+    classifies finite-boundary wrap phases as convention data, not part of
+    the forced local gauge class).
+    """
 
-    return countermodels
+    def __init__(self, L: int):
+        assert L % 2 == 0, "even L required for eta periodicity"
+        self.L = L
+        self.sites = list(itertools.product(range(L), repeat=3))
+        self.index = {s: i for i, s in enumerate(self.sites)}
+        self.N = len(self.sites)
+
+    def shift(self, x: Tuple[int, int, int], mu: int, s: int
+              ) -> Tuple[int, int, int]:
+        y = list(x)
+        y[mu] = (y[mu] + s) % self.L
+        return tuple(y)
+
+    def staggered_D2(self) -> np.ndarray:
+        """2*D as an exact integer matrix, with
+
+        D = (1/2) sum_{x,mu} eta_mu(x) (chibar_{x+mu} chi_x - chibar_x chi_{x+mu})
+
+        read as the matrix D[a,b] = coefficient of chibar_a chi_b
+        (upstream Kawamoto-Smit note, Theorem 2 kinetic form).
+        """
+        D2 = np.zeros((self.N, self.N), dtype=np.int64)
+        for x in self.sites:
+            for mu in range(3):
+                e = ks_phase(mu, x)
+                D2[self.index[self.shift(x, mu, 1)], self.index[x]] += e
+                D2[self.index[x], self.index[self.shift(x, mu, 1)]] -= e
+        return D2
+
+    def translation(self, mu: int) -> np.ndarray:
+        T = np.zeros((self.N, self.N), dtype=np.int64)
+        for x in self.sites:
+            T[self.index[self.shift(x, mu, 1)], self.index[x]] = 1
+        return T
+
+    def corner_wave_int(self, n: Tuple[int, int, int]) -> np.ndarray:
+        """Unnormalized BZ-corner plane wave with k = pi*n: entries +-1."""
+        return np.array(
+            [(-1) ** (n[0] * x[0] + n[1] * x[1] + n[2] * x[2])
+             for x in self.sites],
+            dtype=np.int64,
+        )
+
+    def corner_wave(self, n: Tuple[int, int, int]) -> np.ndarray:
+        v = self.corner_wave_int(n).astype(float)
+        return v / np.linalg.norm(v)
+
+    def corner_mixing_perturbation(self) -> np.ndarray:
+        """Countermodel operator W (NOT of the forced Kawamoto-Smit class):
+
+            (W chi)(x) = (-1)^{x_1 + x_2} (chi(x + e_3) + chi(x - e_3)) / 2
+
+        A local, self-adjoint, one-link operator whose phase shifts
+        momentum by pi (e_1 + e_2): on a plane wave,
+        W e^{i p.x} = cos(p_3) e^{i (p + pi(e_1+e_2)).x}, which maps the
+        hw=1 corner (pi,0,0) to (0,pi,0) with amplitude cos(0) = 1.
+        Returns 2*W as an exact integer matrix.
+        """
+        W2 = np.zeros((self.N, self.N), dtype=np.int64)
+        for x in self.sites:
+            ph = (-1) ** (x[0] + x[1])
+            W2[self.index[x], self.index[self.shift(x, 2, 1)]] += ph
+            W2[self.index[x], self.index[self.shift(x, 2, -1)]] += ph
+        return W2
 
 
 # ---------------------------------------------------------------------------
-# Section 2: AC_lambda block-diagonality from upstream substep 2
+# Section 1: AC_lambda first-principles compute
 # ---------------------------------------------------------------------------
 
-def kawamoto_smit_kinetic_on_hw1() -> np.ndarray:
-    """Construct the Kawamoto-Smit kinetic operator restricted to hw=1.
+def section1_ac_lambda(L: int) -> None:
+    print()
+    print("=" * 78)
+    print(f"Section 1 (L={L}): AC_lambda — corner-block no-mixing computed")
+    print("from the upstream Kawamoto-Smit phases (NOT hard-coded)")
+    print("=" * 78)
 
-    The Kawamoto-Smit form on Z^3 APBC has phase factors
-        eta_1(x) = 1
-        eta_2(x) = (-1)^{x_1}
-        eta_3(x) = (-1)^{x_1+x_2}
-    (Block 03 substep 2 recorded in
-     STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md).
+    lat = Lattice(L)
+    D2 = lat.staggered_D2()                  # exact 2*D, integer
+    D = D2.astype(float) / 2.0
 
-    On the hw=1 BZ corner subspace H_{hw=1} = span{|c_1⟩, |c_2⟩, |c_3⟩}:
-    the kinetic operator's momentum-space form is
-
-        K(k) = sum_mu i * eta_mu * sin(k_mu) * gamma_mu
-
-    On corners c_alpha = (..., k_mu = pi for one mu, k_mu = 0 else),
-    sin(pi) = 0 = sin(0), so the diagonal momentum-space kinetic term
-    vanishes on the hw=1 corners (this is precisely the BZ-corner doubler
-    condition that gives massless fermions at the corners).
-
-    What we verify here is the BLOCK-DIAGONALITY: the kinetic operator,
-    restricted to H_{hw=1}, has NO off-diagonal matrix elements between
-    distinct corner states.
-
-    Returns the 3x3 kinetic block on the corner basis.
-    """
-    # The kinetic operator on H_{hw=1} is exactly diagonal in the corner
-    # basis because (a) corners are exact momentum eigenstates of the
-    # lattice translation generator, (b) the Kawamoto-Smit kinetic
-    # operator commutes with lattice translations, (c) by simultaneous
-    # diagonalization, K is diagonal in corner basis.
-    return np.diag([0.0, 0.0, 0.0])
-
-
-def free_propagator_block_diagonality() -> Dict[str, bool]:
-    """Verify AC_lambda: the free fermion propagator on hw=1 is block-
-    diagonal in the corner basis.
-
-    Result: candidate consequence of upstream substep 2; this runner
-    does not promote audit status.
-    """
-    K_hw1 = kawamoto_smit_kinetic_on_hw1()
-    n = K_hw1.shape[0]
-
-    # Off-diagonal elements should all be zero.
-    off_diag_max = float(
-        max(abs(K_hw1[i, j]) for i in range(n) for j in range(n) if i != j)
+    # [B] cross-note input: the phase table itself (spot-verified against
+    # the closed-form expressions quoted from the upstream note).
+    spot = all(
+        ks_phase(0, x) == 1
+        and ks_phase(1, x) == (-1) ** x[0]
+        and ks_phase(2, x) == (-1) ** (x[0] + x[1])
+        for x in lat.sites
     )
-    block_diagonal = off_diag_max == 0.0
+    check(f"[B] lambda.{L}.a Kawamoto-Smit phase table matches upstream "
+          "substep-2 note eq.(6) on all sites", spot,
+          f"eta_1=1, eta_2=(-1)^x1, eta_3=(-1)^(x1+x2) on {lat.N} sites")
 
-    # The free propagator G(k) = (i K(k))^{-1} inherits the
-    # block-diagonal structure on hw=1 (matrix inversion preserves block
-    # structure). At the corner momenta where K(k) = 0, the propagator
-    # has a pole (the doubler) but the block structure is preserved by
-    # standard regulator (small mass m → 0 limit gives diagonal G with
-    # diagonal entries each having a pole; cross terms remain zero).
-    propagator_block_diagonal = block_diagonal
+    # [A] antisymmetry of the kinetic matrix (Grassmann bilinear form).
+    check(f"[A] lambda.{L}.b D is real antisymmetric (D^T = -D), exact integer "
+          "arithmetic on 2D", bool(np.array_equal(D2.T, -D2)))
 
-    return {
-        "kinetic_block_diagonal": block_diagonal,
-        "propagator_block_diagonal": propagator_block_diagonal,
-        "AC_lambda_block_diagonal_from_upstream_substep_2": (
-            block_diagonal and propagator_block_diagonal
-        ),
-        "off_diagonal_max_abs": off_diag_max,
-    }
+    # [C] corner plane waves are joint translation eigenvectors with the
+    # declared characters diag(-1,1,1) / diag(1,-1,1) / diag(1,1,-1).
+    Ts = [lat.translation(mu) for mu in range(3)]
+    ok_chars = True
+    for n in HW1_CORNERS:
+        v = lat.corner_wave_int(n)
+        want = translation_eigenvalues(n)
+        for mu in range(3):
+            ok_chars &= bool(np.array_equal(Ts[mu] @ v, want[mu] * v))
+    check(f"[C] lambda.{L}.c hw=1 corner waves are exact joint (T_x,T_y,T_z) "
+          "eigenvectors with characters (-1,1,1),(1,-1,1),(1,1,-1)",
+          ok_chars)
+    triples = {n: translation_eigenvalues(n) for n in HW1_CORNERS}
+    check(f"[A] lambda.{L}.d the three hw=1 character triples are pairwise "
+          "distinct", len(set(triples.values())) == 3, f"{triples}")
+
+    # [C] LOAD-BEARING: D annihilates every BZ-corner plane wave EXACTLY
+    # (integer arithmetic; the sin(p_mu)=0 corner identity).
+    max_resid = 0
+    for n in ALL_CORNERS:
+        v = lat.corner_wave_int(n)
+        r = int(np.abs(D2 @ v).max())
+        max_resid = max(max_resid, r)
+    check(f"[C] lambda.{L}.e LOAD-BEARING: D|c_n> = 0 EXACTLY for all 8 BZ "
+          "corner waves (integer residual)", max_resid == 0,
+          f"max |2D @ c| over 8 corners = {max_resid} (exact integers)")
+
+    # [C] hw=1 corner block of D is the zero 3x3 matrix.
+    waves = {n: lat.corner_wave(n) for n in HW1_CORNERS}
+    block = np.array([[waves[a] @ (D @ waves[b]) for b in HW1_CORNERS]
+                      for a in HW1_CORNERS])
+    off = np.abs(block - np.diag(np.diag(block))).max()
+    check(f"[C] lambda.{L}.f hw=1 corner block of D is the zero matrix "
+          "(in particular: NO inter-corner matrix elements)",
+          np.abs(block).max() == 0.0,
+          f"max |<c_a|D|c_b>| = {np.abs(block).max():.3e}, "
+          f"off-diagonal residual = {off:.3e}")
+
+    # [C] regulated free propagator block: <c_a|(D+m)^{-1}|c_b> = d_ab/m.
+    for m in (1.0, 0.1):
+        G = np.linalg.inv(D + m * np.eye(lat.N))
+        Gb = np.array([[waves[a] @ (G @ waves[b]) for b in HW1_CORNERS]
+                       for a in HW1_CORNERS])
+        offG = np.abs(Gb - np.diag(np.diag(Gb))).max()
+        diag_err = np.abs(np.diag(Gb) - 1.0 / m).max()
+        check(f"[C] lambda.{L}.g(m={m}) regulated propagator corner block "
+              "= delta_ab/m (free 2-pt fn has NO inter-corner mixing "
+              "at the corners)",
+              offG < 1e-12 and diag_err < 1e-9,
+              f"off-diag residual = {offG:.3e}, diag residual = "
+              f"{diag_err:.3e} (load-bearing residuals)")
+
+    # [C] HONESTY / repair record: the retired 2026-05-07/09 justification
+    # "[D, T_mu] = 0 for all mu" is FALSE; the true invariances are
+    # [D, T_mu^2] = 0 (and [D, T_3] = 0 since no eta depends on x_3).
+    c1 = np.abs(D2 @ Ts[0] - Ts[0] @ D2).max()
+    c2 = np.abs(D2 @ Ts[1] - Ts[1] @ D2).max()
+    c3 = np.abs(D2 @ Ts[2] - Ts[2] @ D2).max()
+    check(f"[C] lambda.{L}.h repair record: [D, T_1] != 0 and [D, T_2] != 0 "
+          "(the 2026-05-07/09 commutation premise FAILS; conclusion "
+          "survives via direct corner annihilation)",
+          c1 > 0 and c2 > 0,
+          f"max|[2D,T_1]| = {c1}, max|[2D,T_2]| = {c2}, "
+          f"max|[2D,T_3]| = {c3} (exact integers)")
+    sq_ok = all(
+        int(np.abs(D2 @ (T @ T) - (T @ T) @ D2).max()) == 0 for T in Ts
+    )
+    check(f"[A] lambda.{L}.i true lattice invariance: [D, T_mu^2] = 0 exactly "
+          "for all mu (two-site translations)", sq_ok)
 
 
 # ---------------------------------------------------------------------------
-# Section 3: AC_phi equal-expectation obstruction under C_3[111] symmetry
+# Section 2: AC_phi — C3-symmetric observables cannot distinguish corners
 # ---------------------------------------------------------------------------
 
 def c3_unitary_on_hw1() -> np.ndarray:
-    """The C_3[111] unitary on H_{hw=1}.
-
-    Acts as the cyclic permutation matrix taking
-        |c_1⟩ -> |c_2⟩ -> |c_3⟩ -> |c_1⟩
-    in the ordered basis (c_1, c_2, c_3).
-    """
-    return np.array([
-        [0, 0, 1],
-        [1, 0, 0],
-        [0, 1, 0],
-    ], dtype=float)
+    """The C_3[111] unitary on H_{hw=1}: |c_1> -> |c_2> -> |c_3> -> |c_1>."""
+    return np.array([[0, 0, 1],
+                     [1, 0, 0],
+                     [0, 1, 0]], dtype=float)
 
 
-def c3_equal_expectation_check() -> Dict[str, object]:
-    """Verify AC_phi obstruction: any self-adjoint operator H on H_{hw=1}
-    that COMMUTES with C_3[111] has equal corner-basis expectations.
+def hermitian_basis_3() -> List[np.ndarray]:
+    """Real basis of the 9-dim real vector space of 3x3 Hermitian matrices."""
+    basis: List[np.ndarray] = []
+    for i in range(3):
+        E = np.zeros((3, 3), dtype=complex)
+        E[i, i] = 1.0
+        basis.append(E)
+    for i in range(3):
+        for j in range(i + 1, 3):
+            E = np.zeros((3, 3), dtype=complex)
+            E[i, j] = 1.0
+            E[j, i] = 1.0
+            basis.append(E)
+            F = np.zeros((3, 3), dtype=complex)
+            F[i, j] = 1.0j
+            F[j, i] = -1.0j
+            basis.append(F)
+    return basis
 
-    Argument: if [H, U_{C_3}] = 0 and U_{C_3} is a 3-cycle on the
-    orthonormal corner basis {|c_alpha⟩}, then H has the same expectation
-    value on all three corner-basis states.
 
-    Verification: construct a candidate H = a*I + b*U_{C_3} + c*U_{C_3}^2
-    (the most general C_3-symmetric self-adjoint operator on H_{hw=1}),
-    diagonalize, and check that all three corner-basis diagonal elements
-    are equal.
+def section2_ac_phi() -> None:
+    print()
+    print("=" * 78)
+    print("Section 2: AC_phi — equal-corner-expectation lemma for")
+    print("C_3[111]-symmetric self-adjoint observables on H_{hw=1}")
+    print("=" * 78)
 
-    Note: H is diagonal in the C_3 eigenbasis (1, omega, omega^2 phases)
-    where omega = exp(2 pi i / 3), so each |c_alpha⟩ (which is an equal-
-    weight superposition of those phases) has the SAME diagonal element
-    a + b*[(1+omega+omega^2)/3] + c*... = a (when b, c real and Re-symmetric).
-
-    This is the C3-observable obstruction. It is not a claim that H has
-    three equal eigenvalues; the generic example has phase-basis
-    eigenvalues while all three corner expectations remain equal.
-    """
     U = c3_unitary_on_hw1()
+    check("[A] phi.a U_C3 is the 3-cycle permutation unitary "
+          "(U^3 = I, U U^T = I)",
+          bool(np.array_equal(np.linalg.matrix_power(U, 3), np.eye(3)))
+          and bool(np.array_equal(U @ U.T, np.eye(3))))
 
-    # General C_3-symmetric self-adjoint operator: H = a*I + Re(b)*U + Re(b)*U^T
-    # where U^T is the inverse cycle. Take any specific instance.
-    a = 1.5
-    b = 0.7  # real
-    H = a * np.eye(3) + b * U + b * U.T
+    cyc = [HW1_CORNERS[0]]
+    for _ in range(3):
+        cyc.append(c3_111_action(cyc[-1]))
+    check("[A] phi.b C_3[111] axis shift is a 3-cycle on the hw=1 corners",
+          cyc[0] == cyc[3] and len(set(cyc[:3])) == 3,
+          f"{cyc[0]} -> {cyc[1]} -> {cyc[2]} -> {cyc[3]}")
 
-    # Verify [H, U] = 0
-    commutator = H @ U - U @ H
-    commutator_norm = float(np.linalg.norm(commutator))
+    # [A] LEMMA, full generality: the commutant of U inside the Hermitian
+    # 3x3 matrices is EXACTLY 3-dimensional over R, and every element of
+    # it has equal diagonal entries. By linearity this proves equal corner
+    # expectations for EVERY C3-symmetric self-adjoint observable, not
+    # just sampled instances.
+    basis = hermitian_basis_3()
+    rows = []
+    for B in basis:
+        C = B @ U - U @ B
+        rows.append(np.concatenate([C.real.flatten(), C.imag.flatten()]))
+    Mmap = np.array(rows).T            # (18, 9) real linear map
+    s = np.linalg.svd(Mmap, compute_uv=False)
+    null_dim = int(np.sum(s < 1e-12)) + max(0, 9 - len(s))
+    check("[A] phi.c commutant {H = H^dagger : [H, U_C3] = 0} has real "
+          "dimension EXACTLY 3 (= span{I, U+U^2, i(U-U^2)})",
+          null_dim == 3,
+          f"singular values of H -> [H,U] map: {np.round(s, 6)}")
 
-    # Diagonal of H in the corner basis
-    diag_H = np.diag(H).tolist()
+    _, _, vt = np.linalg.svd(Mmap)
+    null_vecs = vt[-3:]
+    equal_diag = True
+    for vec in null_vecs:
+        H = sum(c * B for c, B in zip(vec, basis))
+        d = np.real(np.diag(H))
+        equal_diag &= bool(np.abs(d - d.mean()).max() < 1e-12)
+    check("[A] phi.d every Hermitian commutant basis element has equal "
+          "diagonal entries => equal corner expectations for the WHOLE "
+          "family (by linearity)", equal_diag)
 
-    # Check all diagonal elements are equal on the C3 orbit.
-    diag_max = float(max(diag_H))
-    diag_min = float(min(diag_H))
-    equal_diagonal_on_corners = abs(diag_max - diag_min) < 1e-10
+    # [A] orbit-transport identity (the lemma's one-line proof):
+    # <c_{sigma(a)}|A|c_{sigma(a)}> = <c_a|U^dag A U|c_a> = <c_a|A|c_a>.
+    rng = np.random.default_rng(20260610)
+    ok_sample = True
+    distinct_spec_seen = False
+    for _ in range(50):
+        a = rng.normal()
+        b = rng.normal() + 1j * rng.normal()
+        H = a * np.eye(3, dtype=complex) + b * U + np.conj(b) * U.T
+        comm = np.abs(H @ U - U @ H).max()
+        diag = np.real(np.diag(H))
+        exp_eq = np.abs(diag - diag.mean()).max() < 1e-12
+        # higher moments: H^2, H^3 are also in the commutant
+        m2 = np.real(np.diag(H @ H))
+        m3 = np.real(np.diag(H @ H @ H))
+        mom_eq = (np.abs(m2 - m2.mean()).max() < 1e-10
+                  and np.abs(m3 - m3.mean()).max() < 1e-10)
+        herm = np.abs(H - H.conj().T).max() < 1e-12
+        ok_sample &= (comm < 1e-12) and exp_eq and mom_eq and herm
+        ev = np.linalg.eigvalsh(H)
+        if np.min(np.diff(np.sort(ev))) > 1e-3:
+            distinct_spec_seen = True
+    check("[A] phi.e 50 random C3-symmetric self-adjoint H = aI + bU + "
+          "conj(b)U^2: [H,U]=0 and ALL corner expectations AND 2nd/3rd "
+          "moments equal", ok_sample,
+          "equal moments of every order: H^n stays in the commutant")
+    check("[A] phi.f the family is NOT spectrally trivial: instances with "
+          "3 distinct eigenvalues occur (obstruction is about corner "
+          "expectations, not about H being scalar)", distinct_spec_seen)
 
-    # Eigenvalues of H (on the corner basis, but H may have non-trivial
-    # off-diagonals). The three eigenvalues are
-    # a + 2*b*cos(2 pi k / 3) for k = 0, 1, 2 — three distinct values.
-    # But the EIGENVECTORS are NOT the corner basis; they are the C_3
-    # phase basis. The corner states |c_alpha> are equal superpositions
-    # of all three eigenvectors, so each |c_alpha> has the SAME
-    # expectation value of H, namely Tr(H)/3 = a.
-    eigenvalues = sorted(np.linalg.eigvalsh(H).tolist())
-    expectation_on_each_corner = []
-    for alpha in range(3):
-        e_alpha = np.zeros(3)
-        e_alpha[alpha] = 1.0
-        expectation_on_each_corner.append(float(e_alpha @ H @ e_alpha))
+    # [A] canonical instance quoted in the note: a=1.5, b=0.7.
+    a0, b0 = 1.5, 0.7
+    H0 = a0 * np.eye(3) + b0 * U + b0 * U.T
+    ev0 = np.sort(np.linalg.eigvalsh(H0))
+    exp0 = np.diag(H0)
+    check("[A] phi.g canonical instance (a=1.5, b=0.7): eigenvalues "
+          "{0.8, 0.8, 2.9}, all three corner expectations = 1.5",
+          np.allclose(ev0, [0.8, 0.8, 2.9], atol=1e-12)
+          and np.allclose(exp0, [1.5, 1.5, 1.5], atol=1e-12),
+          f"eigenvalues = {np.round(ev0, 12)}, "
+          f"corner expectations = {np.round(exp0, 12)}")
 
-    expectation_max = max(expectation_on_each_corner)
-    expectation_min = min(expectation_on_each_corner)
-    expectation_equal_on_corners = abs(expectation_max - expectation_min) < 1e-10
-
-    # The obstruction: AC_phi asks for a physical observable that
-    # distinguishes the corner states. But H, being C_3-symmetric, gives
-    # equal expectation values on each |c_alpha>. C3-breaking dynamics or
-    # a non-C3-symmetric observable is needed for this atom.
-    AC_phi_blocked_for_C3_symmetric_observables = expectation_equal_on_corners
-
-    return {
-        "H_C3_symmetric_constructed": True,
-        "[H, U_C3]_commutator_norm": commutator_norm,
-        "commutator_zero": commutator_norm < 1e-10,
-        "H_eigenvalues_full_3D": eigenvalues,
-        "H_expectation_on_each_corner": expectation_on_each_corner,
-        "equal_diagonal_on_corners": equal_diagonal_on_corners,
-        "expectation_equal_on_corners": expectation_equal_on_corners,
-        "AC_phi_blocked_for_C3_symmetric_observables": (
-            AC_phi_blocked_for_C3_symmetric_observables
-        ),
-    }
+    # [A] sharpness: dropping C3 symmetry restores distinguishability,
+    # so the obstruction is exactly the symmetry restriction, not a
+    # triviality of the hw=1 sector.
+    Hbreak = np.diag([1.0, 2.0, 3.0])
+    comm_b = np.abs(Hbreak @ U - U @ Hbreak).max()
+    diag_b = np.diag(Hbreak)
+    check("[A] phi.h sharpness: the C3-BREAKING observable diag(1,2,3) "
+          "([H,U] != 0) distinguishes all three corners by expectation "
+          "value", comm_b > 0.5 and len(set(diag_b.tolist())) == 3,
+          f"|[H,U]|_max = {comm_b}, expectations = {diag_b.tolist()}")
 
 
 # ---------------------------------------------------------------------------
-# Section 4: AC_phi_lambda has no standard-QFT axiom equivalent
+# Section 3: decomposition independence — COMPUTED countermodels
 # ---------------------------------------------------------------------------
 
-def standard_qft_axiom_catalog() -> List[str]:
-    """Standard QFT references used for comparison."""
-    return [
-        # Wightman (1957) axioms
-        "W1: Domain of definition (Hilbert space + dense common domain)",
-        "W2: Spectrum condition (P^mu in forward cone)",
-        "W3: Vacuum (existence + uniqueness)",
-        "W4: Field operators (covariant under Poincare rep)",
-        "W5: Locality (microcausality)",
-        "W6: Asymptotic completeness (vacuum cyclic)",
-        # Haag-Kastler (1964) axioms
-        "HK1: Net of local algebras O -> A(O)",
-        "HK2: Isotony A(O1) ⊂ A(O2) for O1 ⊂ O2",
-        "HK3: Locality [A(O1), A(O2)] = 0 for spacelike-separated O1, O2",
-        "HK4: Covariance under Poincare action by automorphisms",
-        # Standard model conventional inputs (NOT axioms — empirical/structural)
-        "SM-input: Three matter generations",
-        "SM-input: SU(3) x SU(2) x U(1) gauge group",
-        "SM-input: Higgs mechanism for EW symmetry breaking",
-        "SM-input: Yukawa couplings",
-        "SM-input: CKM and PMNS mixing matrices",
+def section3_independence(L: int) -> None:
+    print()
+    print("=" * 78)
+    print(f"Section 3 (L={L}): decomposition independence — computed")
+    print("countermodels (replacing the retired hard-coded booleans)")
+    print("=" * 78)
+
+    lat = Lattice(L)
+    D2 = lat.staggered_D2()
+    D = D2.astype(float) / 2.0
+    waves = {n: lat.corner_wave(n) for n in HW1_CORNERS}
+
+    # CM1: AC_phi is blocked in the C3-symmetric family while AC_lambda holds.
+    # This is the framework's
+    # actual free sector: Section 1 shows the corner block of D is zero
+    # (AC_lambda holds) and Section 2 shows C3-symmetric observables give
+    # equal corner expectations (AC_phi blocked on that family).
+    blockD = np.array([[waves[a] @ (D @ waves[b]) for b in HW1_CORNERS]
+                       for a in HW1_CORNERS])
+    U = c3_unitary_on_hw1()
+    H_sym = 1.5 * np.eye(3) + 0.7 * U + 0.7 * U.T
+    diag_sym = np.diag(H_sym)
+    cm1 = (np.abs(blockD).max() == 0.0
+           and np.abs(diag_sym - diag_sym.mean()).max() < 1e-12)
+    check("[C] independence.a CM1 (AC_phi blocked in the symmetric family): in the actual KS free "
+          "sector AC_lambda HOLDS (zero corner block) while C3-symmetric "
+          "expectation readout CANNOT distinguish corners", cm1)
+
+    # CM2: AC_lambda fails for a non-KS local operator while corner
+    # distinguishability content is untouched: W = (-1)^{x1+x2} symmetric
+    # one-link hop in direction 3 has NONZERO inter-corner elements.
+    W2 = lat.corner_mixing_perturbation()
+    W = W2.astype(float) / 2.0
+    check("[A] independence.b countermodel operator W is local, one-link and "
+          "self-adjoint (W^T = W, real)", bool(np.array_equal(W2.T, W2)))
+    blockW = np.array([[waves[a] @ (W @ waves[b]) for b in HW1_CORNERS]
+                       for a in HW1_CORNERS])
+    offW = np.abs(blockW - np.diag(np.diag(blockW))).max()
+    check("[C] independence.c CM2 (AC_lambda can fail separately): the non-Kawamoto-Smit "
+          "perturbation W mixes hw=1 corners: <c_2|W|c_1> != 0 — so "
+          "corner-block no-mixing is NOT automatic for local lattice "
+          "operators; it load-bears on the upstream KS phase class",
+          offW > 0.5,
+          f"hw=1 block of W = {np.round(blockW, 12).tolist()}, "
+          f"max off-diagonal = {offW}")
+
+    # CM3: AC_phi can hold once the C3-symmetric restriction is dropped,
+    # with AC_lambda untouched (D unchanged): diag(1,2,3) on H_{hw=1}
+    # distinguishes the corners (Section 2.h) while the corner block of D
+    # is still zero. So AC_phi and AC_lambda vary independently.
+    cm3 = np.abs(blockD).max() == 0.0
+    check("[C] independence.d CM3 (AC_phi holds without touching AC_lambda): a "
+          "C3-breaking observable distinguishes corners while the "
+          "KS corner block stays zero — the two atoms vary independently",
+          cm3)
+
+    # AC_phi_lambda independence support: the labeling-convention count.
+    # Between two free C3 orbits of size 3 there are exactly 3
+    # C3-equivariant bijections out of 6 — one cyclic-relabeling class.
+    sigma = {0: 1, 1: 2, 2: 0}
+    equivariant = 0
+    total = 0
+    for perm in itertools.permutations(range(3)):
+        total += 1
+        f = dict(enumerate(perm))
+        if all(f[sigma[x]] == sigma[f[x]] for x in range(3)):
+            equivariant += 1
+    check("[A] independence.e AC_phi_lambda parameter count: exactly 3 of 6 "
+          "bijections {hw=1 corners} -> {3 SM generations} are "
+          "C3-equivariant (one cyclic-relabeling class)",
+          equivariant == 3 and total == 6,
+          f"equivariant = {equivariant} / {total}; the semantic "
+          "identification itself is NOT machine-checkable and stays "
+          "an admitted residual")
+
+
+# ---------------------------------------------------------------------------
+# Section 4 (documentation echo — NOT SCORED)
+# ---------------------------------------------------------------------------
+
+def section4_documentation() -> None:
+    print()
+    print("=" * 78)
+    print("Section 4: AC_phi_lambda standard-QFT catalog comparison")
+    print("(DOCUMENTATION ECHO ONLY — printed for audit context, NOT")
+    print(" scored as a check; a string comparison cannot verify a")
+    print(" semantic identification claim)")
+    print("=" * 78)
+    catalog = [
+        "W1-W6 (Wightman 1957): domain, spectrum, vacuum, covariant "
+        "fields, locality, cyclicity — no generation-count axiom",
+        "HK1-HK4 (Haag-Kastler 1964): net, isotony, locality, covariance "
+        "— no generation-count axiom",
+        "SM inputs: three matter generations / gauge group / Higgs / "
+        "Yukawa / CKM-PMNS are empirical or structural INPUTS, not "
+        "axioms or theorems of standard QFT",
     ]
-
-
-def AC_atom_to_standard_qft_correspondence() -> Dict[str, str]:
-    """Map each AC atom to its standard-QFT correspondent."""
-    return {
-        "AC_phi": (
-            "Observable distinguishability on hw=1. This runner only checks "
-            "the bounded C3-symmetric equal-expectation obstruction; it does "
-            "not derive the full Wightman spectrum condition."
-        ),
-        "AC_lambda": (
-            "Free fermion propagator block-diagonality on species index — "
-            "standard property of fermion field decomposition (Wightman "
-            "Streater-Wightman §2.4 + §4.5); audit-defensible: standard "
-            "QFT property"
-        ),
-        "AC_phi_lambda": (
-            "NO STANDARD QFT AXIOM EQUIVALENT — this is the SM-flavor-"
-            "generation identification, an empirical SM input not derivable "
-            "from any standard QFT axiom (SU(5), SO(10), strings all take "
-            "the count '3' as input, not output); the framework's "
-            "non-trivial scientific claim"
-        ),
-    }
+    for line in catalog:
+        print(f"  - {line}")
+    print()
+    print("  AC_phi_lambda therefore has no standard-QFT axiom equivalent")
+    print("  to inherit: the identification 'framework hw=1 triplet IS the")
+    print("  SM generation triplet' is the open admitted residual of this")
+    print("  note. No PASS is recorded for this section.")
 
 
 # ---------------------------------------------------------------------------
-# Section 5: Premise dependency check
-# ---------------------------------------------------------------------------
-
-def premise_dependency() -> Dict[str, str]:
-    """Document which upstream authorities are load-bearing."""
-    return {
-        "A1": "Cl(3) local algebra (framework axiom surface)",
-        "A2": "Z^3 spatial substrate (framework axiom surface)",
-        "RP_A11": "Reflection positivity -> H_phys via OS reconstruction",
-        "RS": "Reeh-Schlieder cyclicity (A(O)|Omega> dense)",
-        "CD": "Cluster decomposition (unique vacuum / single sector)",
-        "LR": "Lieb-Robinson microcausality",
-        "LN": "Lattice Noether (fermion-number Qhat on H_phys)",
-        "SC": "Single-clock codimension-1 evolution",
-        "BlockT3": "M_3(C) on hw=1 / BZ-corner triplet authorities",
-        "NQ": "M_3(C) no-proper-quotient narrow theorem",
-        "Substep_1": "Grassmann partition forcing upstream note",
-        "Substep_2": "Kawamoto-Smit form forcing upstream note, load-bearing for AC_lambda",
-        "Substep_3": "BZ-corner doubler structure 1+1+3+3 upstream note",
-        "C3_111": "C_3[111] cyclic coordinate-axis permutation imported from Z^3 point group setup",
-    }
-
-
-# ---------------------------------------------------------------------------
-# Main verification driver
+# Main driver
 # ---------------------------------------------------------------------------
 
 def main() -> int:
     print("=" * 78)
-    print("Staggered-Dirac Substep 4 — AC Narrowing Structural Verification")
+    print("Staggered-Dirac Substep 4 — AC Narrowing Verification")
+    print("(repaired 2026-06-10: de-stubbed runner + corrected AC_lambda")
+    print(" justification; see module docstring)")
     print("=" * 78)
     print()
     print("Loop: staggered-dirac-substep4-ac-narrow-20260507")
     print("Companion theorem note:")
-    print("  docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md")
-    print()
+    print("  docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_"
+          "2026-05-07_substep4ac.md")
 
-    # Section 0: setup verification
+    # Section 0: corner setup
+    print()
     print("=" * 78)
     print("Section 0: hw=1 BZ corner setup")
     print("=" * 78)
-    corners = hw1_corners()
-    print(f"hw=1 corners: {corners}")
-    eigenvalues = {c: translation_eigenvalues(c) for c in corners}
-    print(f"Translation eigenvalues:")
-    for c, e in eigenvalues.items():
-        print(f"  |{c}⟩: (T_x, T_y, T_z) = {e}")
-    distinct_evs = len(set(eigenvalues.values())) == 3
-    print(f"All three corners have distinct (T_x, T_y, T_z) eigenvalues: "
-          f"{distinct_evs}")
-    assert distinct_evs, "Setup failure: corners not eigenvalue-distinct"
+    triples = {n: translation_eigenvalues(n) for n in HW1_CORNERS}
+    for n, t in triples.items():
+        print(f"  |{n}>: (T_x, T_y, T_z) = {t}")
+    check("[A] setup.a the three hw=1 corners carry pairwise-distinct joint "
+          "(T_x,T_y,T_z) characters", len(set(triples.values())) == 3)
+    hw_counts = {h: sum(1 for n in ALL_CORNERS if sum(n) == h)
+                 for h in range(4)}
+    check("[A] setup.b BZ-corner Hamming-weight census is 1+3+3+1 "
+          "(hw=1 triplet exists and is the unique odd-parity triplet)",
+          hw_counts == {0: 1, 1: 3, 2: 3, 3: 1}, f"{hw_counts}")
 
-    # Verify C_3[111] is a 3-cycle on the corners
-    cycle = [corners[0]]
-    for _ in range(3):
-        cycle.append(c3_111_action(cycle[-1]))
-    is_3cycle = (cycle[0] == cycle[3] and len(set(cycle[:3])) == 3)
-    print(f"C_3[111] is a 3-cycle on corners: {is_3cycle}")
-    assert is_3cycle, "Setup failure: C_3[111] not a 3-cycle"
-
-    # Section 1
-    print()
-    print("=" * 78)
-    print("Section 1: Decomposition validity")
-    print("AC_narrow = AC_phi ∧ AC_lambda ∧ AC_phi_lambda")
-    print("=" * 78)
-    sec1 = section1_decomposition_validity()
-    for k, v in sec1.items():
-        print(f"  {k}: {v}")
-    decomposition_valid = all(sec1.values())
-    print(f"DECOMPOSITION VALIDITY: {decomposition_valid}")
-    assert decomposition_valid, "Decomposition validity failed"
-
-    # Section 2
-    print()
-    print("=" * 78)
-    print("Section 2: AC_lambda block-diagonality from upstream substep 2")
-    print("(Kawamoto-Smit form gives free propagator block-diagonality)")
-    print("=" * 78)
-    sec2 = free_propagator_block_diagonality()
-    for k, v in sec2.items():
-        print(f"  {k}: {v}")
-    AC_lambda_block_diagonal = sec2[
-        "AC_lambda_block_diagonal_from_upstream_substep_2"
-    ]
-    print("AC_LAMBDA BLOCK-DIAGONAL FROM UPSTREAM SUBSTEP 2: "
-          f"{AC_lambda_block_diagonal}")
-    assert AC_lambda_block_diagonal, "AC_lambda block-diagonality check failed"
-
-    # Section 3
-    print()
-    print("=" * 78)
-    print("Section 3: AC_phi C3 equal-expectation obstruction")
-    print("(Self-adjoint operator commuting with 3-cycle has equal expectation")
-    print(" on cycle's orbit)")
-    print("=" * 78)
-    sec3 = c3_equal_expectation_check()
-    for k, v in sec3.items():
-        print(f"  {k}: {v}")
-    AC_phi_blocked = sec3["AC_phi_blocked_for_C3_symmetric_observables"]
-    print("AC_PHI BLOCKED FOR C3-SYMMETRIC OBSERVABLES: "
-          f"{AC_phi_blocked}")
-    assert AC_phi_blocked, "AC_phi equal-expectation check failed"
-
-    # Section 4
-    print()
-    print("=" * 78)
-    print("Section 4: Standard-QFT axiom correspondence")
-    print("=" * 78)
-    correspondence = AC_atom_to_standard_qft_correspondence()
-    for atom, qft_name in correspondence.items():
-        print(f"  {atom}:")
-        print(f"    {qft_name}")
-        print()
-    AC_phi_lambda_no_qft_eqv = "NO STANDARD QFT AXIOM EQUIVALENT" in (
-        correspondence["AC_phi_lambda"]
-    )
-    print(f"AC_PHI_LAMBDA HAS NO STANDARD QFT AXIOM EQUIVALENT: "
-          f"{AC_phi_lambda_no_qft_eqv}")
-    assert AC_phi_lambda_no_qft_eqv, (
-        "AC_phi_lambda standard-QFT correspondence check failed"
-    )
-
-    # Section 5: dependency
-    print()
-    print("=" * 78)
-    print("Section 5: Premise dependency (upstream authorities)")
-    print("=" * 78)
-    deps = premise_dependency()
-    for k, v in deps.items():
-        print(f"  {k}: {v}")
+    # Sections 1 and 3 at two lattice sizes; Section 2 size-independent.
+    for L in (4, 6):
+        section1_ac_lambda(L)
+    section2_ac_phi()
+    for L in (4, 6):
+        section3_independence(L)
+    section4_documentation()
 
     # Final summary
     print()
     print("=" * 78)
     print("FINAL VERIFICATION SUMMARY")
     print("=" * 78)
-    summary = {
-        "decomposition_valid": decomposition_valid,
-        "AC_lambda_block_diagonal_from_upstream_substep_2": (
-            AC_lambda_block_diagonal
-        ),
-        "AC_phi_blocked_for_C3_symmetric_observables": AC_phi_blocked,
-        "AC_phi_lambda_no_standard_qft_equivalent": AC_phi_lambda_no_qft_eqv,
-    }
     print()
-    for k, v in summary.items():
-        marker = "[OK]" if v else "[FAIL]"
-        print(f"  {marker}  {k}: {v}")
+    print("AC_narrow = AC_phi AND AC_lambda AND AC_phi_lambda, with:")
+    print("  AC_lambda: corner-block no-mixing COMPUTED first-principles")
+    print("             from the upstream Kawamoto-Smit phases")
+    print("             (D|c_n> = 0 exactly; propagator block = I/m;")
+    print("             retired commutation premise exposed in direct commutator check)")
+    print("  AC_phi:    blocked for C3-symmetric self-adjoint observables")
+    print("             on H_{hw=1} (full commutant lemma, phi.c-phi.e),")
+    print("             sharp under C3 breaking (phi.h)")
+    print("  AC_phi_lambda: admitted residual (documentation echo only,")
+    print("             unscored; labeling count 3-of-6 in independence.e)")
     print()
-    all_pass = all(summary.values())
-    if all_pass:
-        print("ALL CHECKS PASS — substep 4 AC-narrowing is structurally")
-        print("sound. Status: bounded_theorem (AC narrowing).")
-        print()
-        print("Net narrowing:")
-        print("  Pre-narrow (Block 04):  1 opaque AC clause (single-clause")
-        print("                          'physical-species reading')")
-        print("  Post-narrow (this note): 3 atoms with explicit fates →")
-        print("                           1 residual atom (AC_phi_lambda =")
-        print("                           SM-flavor-generation identification)")
-        print()
-        print("Substep 4 status: bounded_theorem (UNCHANGED; AC sharpened)")
-        print("AC_lambda candidate extraction remains conditional on audit")
-        print("AC_phi C3 equal-expectation obstruction identified")
-        print("AC_residual = AC_phi_lambda is the genuine residual")
-        return 0
-    else:
-        print("ONE OR MORE CHECKS FAILED.")
-        return 1
+    print("Substep 4 status: bounded_theorem (UNCHANGED; AC sharpened)")
+    print()
+    print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+    return 0 if FAIL == 0 else 1
 
 
 if __name__ == "__main__":

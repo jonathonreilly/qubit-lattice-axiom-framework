@@ -1,0 +1,19 @@
+loop_slug: post-record-selector-supplied-boundary-20260608
+branch: physics-loop/post-record-selector-supplied-boundary-20260608
+base: origin/main
+target_claim_id: post_record_selector_tangent_readout_weight_prototype_2026-06-06
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: supplied_support_boundary_hardening
+files_touched:
+  - docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md
+  - scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.txt
+open_imports:
+  - Record-derived selector/tangent/readout carrier
+  - Record-derived readout weights/readout map
+  - Record-derived tangent metric/Hessian
+  - physical measure and Born law
+next_exact_action: open review PR
+stop_condition: PR opened and audit backlog rescanned

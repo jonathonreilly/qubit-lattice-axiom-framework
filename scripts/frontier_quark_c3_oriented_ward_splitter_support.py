@@ -190,7 +190,11 @@ def main() -> int:
     observable_text = read(observable_note)
     z2_text = read(z2_note)
 
-    check("block05 names source/readout primitive as load-bearing", "source/readout/symmetry-breaking primitive" in block05_text)
+    check(
+        "block05 names source/readout primitive as load-bearing",
+        "source/readout/symmetry-breaking primitive" in block05_text
+        or "a source-domain input that breaks or orients the `E` doublet" in block05_text,
+    )
     check("observable theorem supplies induced C3[111]", "C3[111]" in observable_text and "X1 -> X2 -> X3 -> X1" in observable_text)
     check("Z2 support note confirms symmetry-reduced families are support tools", "does not claim a derived flavor hierarchy" in z2_text)
     check("new note forbids retained mass closure", "does not claim retained" in new_text and "`m_b`" in new_text)
@@ -300,6 +304,46 @@ def main() -> int:
     check("new note does not claim numerical Yukawa ratios", "does not derive" in new_text and "`y_u/y_t`" in new_text)
     check("runner carries no PDG mass constants", True)
     check("Lane 3 remains open in note", "Lane 3 remains open" in new_text)
+
+    print()
+    print("G. Dependency graph repair (2026-06-20)")
+    print("-" * 72)
+    staggered_gate = "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+    staggered_md_link = f"]({staggered_gate})"
+    check(
+        "load-bearing carrier is re-cited as retained THREE_GEN observable surface",
+        "Load-bearing carrier input" in new_text
+        and "](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)" in new_text,
+    )
+    check(
+        "staggered-Dirac gate is NOT a markdown one-hop authority of this note",
+        staggered_md_link not in new_text,
+        "no `](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)` markdown link",
+    )
+    check(
+        "staggered-Dirac gate survives only as plain-text provenance pointer",
+        staggered_gate in new_text and staggered_md_link not in new_text,
+    )
+    check(
+        "note records the 2026-06-20 dependency repair",
+        "Dependency repair (2026-06-20)" in new_text
+        and "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md" in new_text,
+    )
+    check(
+        "primary runner does not read the staggered-Dirac gate as a surface",
+        not any(
+            "STAGGERED_DIRAC_REALIZATION_GATE" in str(p)
+            for p in (new_note, block05_note, observable_note, s3_note, z2_note)
+        ),
+    )
+    check(
+        "every authority/context surface read by the runner exists",
+        all(p.exists() for p in (new_note, block05_note, observable_note, s3_note, z2_note)),
+    )
+    check(
+        "note preserves the source-status authority boundary",
+        "Status authority" in new_text and "independent audit lane only" in new_text,
+    )
 
     print()
     print("Summary")

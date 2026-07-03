@@ -1,11 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py
-runner_sha256: 9b81ce8127845f0ff864bc4e5221cbb6c801671cab68135750151f7c8a7a4eb6
+runner_sha256: 1413e2f4e92df6cb59983a24345da92a7d330574a9c8495b8034825a069b77a1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.90
+elapsed_sec: 2.85
 status: ok
 ----- stdout -----
+=== [0] Source-boundary manifest ===
+[PASS] note records 2026-06-07 source-boundary manifest
+[PASS] note records the exact tree threshold R_tree > 6 iff g_tree < 81
+[PASS] note records the compact 2x2x1 K-built block obstruction
+[PASS] note records the three open growth inputs
 === [A] J Taylor coefficients from the Picard-Fuchs recurrence ===
 [PASS] recurrence seed a_2 = 1/36
 [PASS] P_1plaq(6)=J'/J = 0.4225317396 (recurrence)  ::  P1=0.42253173965
@@ -65,7 +70,7 @@ status: ok
     Fisher/Lee-Yang thermodynamic comparator       ~ 5.54 (CITED, lattice-QCD)
 [PASS] VERDICT: tree K-built radius > 6 for g_tree < 81, but all K-built needs a deficit-growth bound  ::  The fixed-increment bridge is false for compact K-built clusters; do not promote the all-K-built sector from g_tree alone.
 
-SCORECARD: PASS=28 FAIL=0
+SCORECARD: PASS=32 FAIL=0
 
 ----- stderr -----
 

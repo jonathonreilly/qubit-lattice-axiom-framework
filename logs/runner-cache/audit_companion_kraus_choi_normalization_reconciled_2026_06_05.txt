@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_kraus_choi_normalization_reconciled_2026_06_05.py
+runner_sha256: d27e0e8dbc183b546ce45112994ee8edb82d25549fad36d2e681d2f2c9083ff1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.60
+status: ok
+----- stdout -----
+========================================================================
+Kraus<->Choi correspondence with reconciled Choi normalization
+========================================================================
+Convention: UNNORMALIZED |Omega> = sum_i |i>|i>; C = (id (x) Phi)|Omega><Omega|;
+            Phi(rho)=Tr_1[(rho^T (x) I) C]; K_a=sqrt(lambda_a) reshape(v_a)^T.
+Reproven from primitives (numpy Stinespring + exact sympy). Choi 1975 /
+Nielsen-Chuang Ch.8 are comparators only, not derivation inputs.
+------------------------------------------------------------------------
+Part A -- exact (sympy) qubit check: unnormalized inverse formula
+------------------------------------------------------------------------
+[PASS] A1 exact inverse round-trip on M_2 (no d-factor)  ::  Tr_1[(rho^T (x) I) C] - Phi(rho) == 0 symbolically
+[PASS] A2 mixed convention (normalized Choi + no-d inverse) is OFF by 1/d  ::  documents the repaired inconsistency: result = Phi(rho)/d, not Phi(rho)
+------------------------------------------------------------------------
+Part B -- numeric end-to-end on M_2 (qubit) (d = 2)
+------------------------------------------------------------------------
+[PASS] M_2 (qubit) generator CPTP at primitive level (40 trials)  ::  sum_a K_a^dagger K_a = I from Stinespring isometry
+[PASS] M_2 (qubit) C_Phi PSD <=> CP (40 trials)  ::  min eig(C) >= 0
+[PASS] M_2 (qubit) TP <=> Tr_2 C_Phi = I (40 trials)  ::  output partial trace = I_d
+[PASS] M_2 (qubit) Tr_1 C_Phi = Phi(I) (40 trials)  ::  input partial trace identity
+[PASS] M_2 (qubit) inverse formula round-trips (40 trials)  ::  Phi(rho) = Tr_1[(rho^T (x) I) C], no d-factor
+[PASS] M_2 (qubit) extracted Kraus reproduce map (40 trials)  ::  K_a = sqrt(lambda_a) reshape(v_a)^T, no extra sqrt(d)
+[PASS] M_2 (qubit) extracted Kraus are trace-preserving (40 trials)  ::  sum_a K_a^dagger K_a = I_d
+[PASS] M_2 (qubit) extracted Kraus rebuild same C_Phi (40 trials)  ::  full Kraus<->Choi round trip
+------------------------------------------------------------------------
+Part B -- numeric end-to-end on M_2 (x) M_2 (two-qubit) (d = 4)
+------------------------------------------------------------------------
+[PASS] M_2 (x) M_2 (two-qubit) generator CPTP at primitive level (40 trials)  ::  sum_a K_a^dagger K_a = I from Stinespring isometry
+[PASS] M_2 (x) M_2 (two-qubit) C_Phi PSD <=> CP (40 trials)  ::  min eig(C) >= 0
+[PASS] M_2 (x) M_2 (two-qubit) TP <=> Tr_2 C_Phi = I (40 trials)  ::  output partial trace = I_d
+[PASS] M_2 (x) M_2 (two-qubit) Tr_1 C_Phi = Phi(I) (40 trials)  ::  input partial trace identity
+[PASS] M_2 (x) M_2 (two-qubit) inverse formula round-trips (40 trials)  ::  Phi(rho) = Tr_1[(rho^T (x) I) C], no d-factor
+[PASS] M_2 (x) M_2 (two-qubit) extracted Kraus reproduce map (40 trials)  ::  K_a = sqrt(lambda_a) reshape(v_a)^T, no extra sqrt(d)
+[PASS] M_2 (x) M_2 (two-qubit) extracted Kraus are trace-preserving (40 trials)  ::  sum_a K_a^dagger K_a = I_d
+[PASS] M_2 (x) M_2 (two-qubit) extracted Kraus rebuild same C_Phi (40 trials)  ::  full Kraus<->Choi round trip
+------------------------------------------------------------------------
+Part C -- named qubit channels and the CP boundary (d = 2)
+------------------------------------------------------------------------
+[PASS] dephasing channel: full reconciled chain holds
+[PASS] depolarizing channel: full reconciled chain holds
+[PASS] unitary channel: full reconciled chain holds
+[PASS] transpose map is non-CP (Choi has a negative eigenvalue)  ::  min eig = -1.0000
+------------------------------------------------------------------------
+Part D -- normalization-consistency guards (the repaired d-factors)
+------------------------------------------------------------------------
+[PASS] unnormalized |Omega> + no-d inverse: consistent
+[PASS] normalized Choi + no-d inverse is OFF by exactly 1/d (the bug)  ::  result = Phi(rho)/d
+[PASS] unnormalized Choi + spurious sqrt(d) Kraus overcounts by d (the bug)  ::  result = d * Phi(rho)
+[PASS] matched normalized convention (1/d Choi + sqrt(d) Kraus + d-inverse) is also consistent  ::  confirms fix = pick ONE convention end-to-end
+========================================================================
+TOTAL: 26 PASS / 0 FAIL
+========================================================================
+
+----- stderr -----
+

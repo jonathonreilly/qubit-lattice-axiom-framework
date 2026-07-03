@@ -20,7 +20,7 @@ MANIFEST = {
     "prototype_helper_cache": "logs/runner-cache/frontier_staggered_backreaction_prototype.txt",
 }
 
-REQUIRED_SOURCE_MARKERS = {
+REQUIRED_SOURCE_FRAGMENTS = {
     "packet_checker": [
         "import frontier_staggered_backreaction_green_closure as green",
         "def _compute",
@@ -85,12 +85,12 @@ def main() -> int:
         check(repo_path(rel_path).exists(), f"manifest_path_exists:{label}", rel_path, results)
         check(rel_path in note_text, f"note_links_manifest_path:{label}", rel_path, results)
 
-    for label, markers in REQUIRED_SOURCE_MARKERS.items():
+    for label, fragments in REQUIRED_SOURCE_FRAGMENTS.items():
         rel_path = MANIFEST[label]
         source = repo_path(rel_path).read_text(encoding="utf-8")
-        check(len(source) > 3000, f"source_untruncated:{label}", f"{rel_path} has {len(source)} bytes", results)
-        for marker in markers:
-            check(marker in source, f"source_marker:{label}:{marker}", f"{marker} present", results)
+        check(len(source) > 3000, f"source_full_length:{label}", f"{rel_path} has {len(source)} bytes", results)
+        for fragment in fragments:
+            check(fragment in source, f"source_contains:{label}:{fragment}", f"{fragment} present", results)
 
     cache_to_runner = {
         "packet_cache": "packet_checker",

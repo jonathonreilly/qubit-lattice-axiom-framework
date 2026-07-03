@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_cubic_ward_finite_scaling_diagnostic.py
+runner_sha256: 0c7d6f5e88cecda9952f90e316903542f3b9c6fd3fde4b38407e31ca7037313e
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 273.04
+status: ok
+----- stdout -----
+PASS T1 finite resid/amplitude/k^2 increases monotonically (= 0.0288, 0.0379, 0.0424, 0.0447; increments shrink 0.0091, 0.0045, 0.0024), supporting k^2-scaling compatibility on L=6..12
+PASS T2 finite residual increments shrink (res=8.02, 11.30, 13.00, 13.93, increments 3.28, 1.70, 0.93) and amplitude*k^2 is approximately constant (279, 298, 307, 311), supporting the res~const / amp~1/k^2 pattern
+PASS T3 candidate finite-range coefficient C ~ 0.050 (Richardson) and ~ 0.047 (geometric), giving C~0.049 under the runner's extrapolation choices
+
+Finite diagnostic: in the runner-defined cubic Ward setup, the normalized residual is
+compatible with resid/amplitude ~ C*k^2 over L=6,8,10,12. The directly computed
+resid/amplitude/k^2 values are 0.029->0.038->0.042->0.045, with shrinking increments,
+and simple finite-range extrapolants give a candidate coefficient near C~0.05.
+This is not an analytic continuum coefficient, physical normalization, irrelevant-operator
+identification, or all-order Ward closure.
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

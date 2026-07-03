@@ -1,23 +1,37 @@
 # Gauge-Vacuum Plaquette Full-Slice Rim-Lift Integral Boundary
 
 **Date:** 2026-04-17
-**Status:** exact local rim-integral boundary theorem on the plaquette PF
-lane; `B_beta(W)` and its compressed descendant `eta_beta(W)` are fixed at the
-level of one exact local Wilson/Haar rim integral, but explicit closed-form
-`beta = 6` evaluation is not derived
-**Type:** positive_theorem
+**Status:** supplied-partition product-Fubini lemma on the plaquette PF lane;
+`B_beta(W)` and its compressed descendant `eta_beta(W)` are fixed only after
+the local rim/far partition and mixed-kernel compression boundary are supplied.
+The framework-native SU(3) Wilson slab rim/far support partition, marked/non-
+marked mixed-kernel compression bridge, and explicit closed-form `beta = 6`
+evaluation are not derived here.
+**Type:** bounded_theorem
 **Runner:** `scripts/frontier_gauge_vacuum_plaquette_full_slice_rim_lift_integral_identification_2026_04_17.py` (primary; verifies the Fubini factorisation that grounds the rim-integral identification); `scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py` (companion positive-cone obstruction)
+
+## 2026-06-08 safe-narrow repair
+
+The audit blocker asked for either a retained derivation of the actual SU(3)
+Wilson slab rim/far support partition plus mixed-kernel compression bridge, or
+a narrow row scoped to the supplied-partition product-Fubini lemma.
+
+This source note now takes the second route. The theorem below is the exact
+Fubini factorisation for an explicitly supplied disjoint rim/far finite packet.
+It does **not** prove that the framework SU(3) Wilson slab has exactly this
+rim/far support partition, and it does **not** prove the marked/non-marked
+mixed-kernel compression bridge from retained primitives. Those are preserved
+as the open PF-lane science.
 
 ## Question
 
-After the compressed rim-functional uniqueness theorem isolated the remaining
-local issue as the full slice lift `B_beta(W)`, is that lift still only an
-unnamed existential object, or is it already fixed at the level of an exact
-local Wilson/Haar construction?
+After a finite local rim/far packet has been supplied, does the slice marginal
+factor as the product of the rim integral and a beyond-rim transfer factor?
 
 ## Answer
 
-It is already fixed at the level of an exact local Wilson/Haar construction.
+It is fixed at the level of an exact local Wilson/Haar construction **within
+the supplied finite partition packet**.
 
 Let `H_slice` be the orthogonal-slice Hilbert space of one unmarked edge slice
 adjacent to the marked plaquette. For fixed marked holonomy `W` and slice
@@ -37,14 +51,15 @@ Its canonical marked class-sector descendant is exactly
 
 `eta_beta(W) = P_cls B_beta(W)`.
 
-So the current exact stack fixes both objects at the integral-expression
+So the supplied finite packet fixes both objects at the integral-expression
 level:
 
 - `B_beta(W)` as the full-slice local Wilson/Haar rim lift,
 - `eta_beta(W)` as its canonical compressed boundary state.
 
-What is still open is not the construction class of those objects. It is their
-explicit evaluation, especially at `beta = 6`.
+What is still open is the framework-native derivation that the actual SU(3)
+Wilson slab reduces to this supplied rim/far packet, together with explicit
+evaluation, especially at `beta = 6`.
 
 ## Setup
 
@@ -93,9 +108,10 @@ exactly the Wilson/Haar rim integral
  = integral_(Omega^rim(U)) dmu_H(Xi^rim)
      exp[(beta / 3) A^rim(U, Xi^rim; W)]`.
 
-Therefore the full local rim lift `B_beta(W)` is not merely an existential
-boundary functional. It is one concrete local Wilson/Haar integral on the full
-slice Hilbert space.
+Therefore, on the supplied finite partition, the full local rim lift
+`B_beta(W)` is not merely an existential boundary functional. It is one
+concrete local Wilson/Haar integral on the full slice Hilbert space. This
+does not by itself derive the actual SU(3) Wilson slab partition.
 
 ### Derivation of the rim-integral identification
 
@@ -145,8 +161,9 @@ upstream transfer theorem has already named.
 The companion runner
 `scripts/frontier_gauge_vacuum_plaquette_full_slice_rim_lift_integral_identification_2026_04_17.py`
 verifies the Fubini factorisation on a finite SU(2) Wilson toy lattice with
-explicit rim and beyond-rim plaquettes, confirming the structural
-identification at the load-bearing point flagged by the auditor.
+explicit rim and beyond-rim plaquettes. It confirms the supplied-partition
+product-Fubini identity, not the stronger framework-native SU(3) slab support
+partition theorem.
 
 ## Corollary 1: exact integral-expression law for `eta_beta(W)`
 
@@ -155,8 +172,9 @@ sector. Then the boundary state used on the compressed transfer lane is exactly
 
 `eta_beta(W) = P_cls B_beta(W)`.
 
-So `eta_beta(W)` is not an additional free local input. It is the compressed
-descendant of the exact full-slice rim integral already fixed above.
+So, within the supplied finite packet, `eta_beta(W)` is not an additional free
+local input. It is the compressed descendant of the exact full-slice rim
+integral already fixed above.
 
 ### Derivation of the compressed-descendant relation
 
@@ -191,22 +209,25 @@ explicit rim integral `B_beta(W)`.
 
 ## Corollary 2: strongest honest framework-point statement
 
-At the framework point `beta = 6`, the strongest honest theorem-grade boundary
-statement is therefore:
+At the framework point `beta = 6`, the strongest honest source statement from
+this packet is therefore:
 
-- `B_6(W)` is fixed as one exact local Wilson/Haar rim integral on the full
-  slice Hilbert space,
-- `eta_6(W)` is fixed as its canonical compressed descendant,
+- if the finite rim/far packet is supplied, `B_6(W)` is fixed as one exact
+  local Wilson/Haar rim integral on the full slice Hilbert space,
+- if the same packet and compression boundary are supplied, `eta_6(W)` is
+  fixed as its canonical compressed descendant,
 - but no explicit closed-form evaluation of either object is derived here.
 
-So the remaining gap is explicit evaluation of those exact local integrals,
-not identification of a different local boundary object.
+So the remaining gaps are the native SU(3) slab support/compression theorem
+and explicit evaluation of those exact local integrals, not identification of
+a different local boundary object inside the supplied finite packet.
 
 ## What this closes
 
-- exact full-slice construction class for the local rim lift `B_beta(W)`
+- exact full-slice construction class for the local rim lift `B_beta(W)` on a
+  supplied finite rim/far packet
 - exact identification of `eta_beta(W)` as the compressed descendant of that
-  rim lift
+  rim lift once the compression boundary is supplied
 - exact clarification that the live PF gap is evaluation of explicit local rim
   integrals, not existence of some other local boundary functional
 
@@ -218,6 +239,9 @@ not identification of a different local boundary object.
 - explicit coefficients `rho_(p,q)(6)`
 - explicit framework-point plaquette PF data
 - analytic closure of canonical `P(6)`
+- framework-native derivation of the actual SU(3) Wilson slab rim/far support
+  partition
+- retained marked/non-marked mixed-kernel compression bridge
 
 ## Why this matters
 
@@ -266,6 +290,11 @@ positive-cone obstruction runner is retained as the companion
 support-check for the upstream three-sample positive-cone obstruction
 theorem that the original note string-checked.
 
+The SU(3) full-slice product-Fubini companion is now checked separately by
+`scripts/audit_companion_gauge_full_slice_su3_product_fubini_factorization_2026_06_06.py`;
+that companion is the framework-native exact replacement for relying on the
+SU(2) toy as the load-bearing mathematical support for product factorization.
+
 ## Audit dependency repair links
 
 This graph-bookkeeping section records explicit dependency links the
@@ -275,7 +304,29 @@ identification as definition-style; the derivation chain in this revised
 note grounds the identification in the upstream Fubini factorisation
 already named by the spatial-environment transfer theorem.
 
-- [gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md) — upstream definition of `eta_beta(W)` as the rim-induced boundary state on one edge slice; supplies the slice-marginal object whose Fubini rim factor is `B_beta(W)`.
+- [gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md) — upstream bounded transfer-witness packet that records `eta_beta(W)` in the target boundary-amplitude identity. It does not by itself prove the full untruncated Wilson-environment boundary state.
 - [gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17](GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_FUNCTIONAL_UNIQUENESS_NOTE_2026-04-17.md) — upstream uniqueness of the class-sector compression `P_cls`, used in the derivation of `eta_beta(W) = P_cls B_beta(W)`.
-- [gauge_vacuum_plaquette_local_environment_factorization_theorem_note](GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md) — upstream proof that non-marked mixed-link factors contribute rep-independent scalars on the marked source sector; this is the input that confines the nontrivial marked boundary data to the rim neighborhood `Omega^rim`.
+- [gauge_vacuum_plaquette_local_environment_factorization_theorem_note](GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md) — upstream bounded finite local Wilson coefficient packet. Its own open-target section leaves the actual temporal-gauge mixed-kernel compression bridge open, so this note does not cite it as full-scope proof that every non-marked mixed-link factor is a trivial-channel scalar.
 - [gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17](GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_EVALUATION_THEOREM_NOTE_2026-04-17.md) — upstream compressed boundary functional formula `Z_beta^env(W) = <K(W), v_beta>` that the rim integral feeds into after class-sector compression.
+
+## 2026-06-06 SU(3) Product-Fubini Source Repair
+
+The SU(2) Monte Carlo toy runner remains only a toy support check. The
+framework-native product-measure step is now isolated in the SU(3)
+full-slice product-Fubini companion:
+
+- [GAUGE_VACUUM_PLAQUETTE_SU3_FULL_SLICE_PRODUCT_FUBINI_FACTORIZATION_NOTE_2026-06-06.md](GAUGE_VACUUM_PLAQUETTE_SU3_FULL_SLICE_PRODUCT_FUBINI_FACTORIZATION_NOTE_2026-06-06.md)
+- `scripts/audit_companion_gauge_full_slice_su3_product_fubini_factorization_2026_06_06.py`
+
+That companion proves the exact compact-Haar Fubini/Tonelli factorization on
+finite `SU(3)` link variables once a rim/far plaquette-support partition is
+supplied: no plaquette may contain both a rim variable and a far variable
+after the marked holonomy `W` and slice data `U` are held fixed. It also
+checks that the marked class projection pulls out the `W`-independent far
+factor.
+
+This repair removes the need to import an SU(2) toy as the load-bearing
+mathematical reason for the product factorization. It does not close the
+separate temporal-gauge mixed-kernel compression bridge, does not derive the
+physical untruncated Wilson-environment partition for every slab, and does
+not evaluate `B_6(W)` or `eta_6(W)`.

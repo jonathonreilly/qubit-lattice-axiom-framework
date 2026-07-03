@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/record_function_finite_sector_algebra_2026_06_05.py
+runner_sha256: 7571026e628811b51dabd4986c54006aa3617a0323944ebea8a948960fba1355
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.46
+status: ok
+----- stdout -----
+[PASS] R1.1 finite additivity holds for every ordered disjoint pair of 4 supplied records
+       checked ordered disjoint pairs=81
+[PASS] R1.2 total record readout is the sum of singleton sector readouts
+       total=x0 + x1 + x2 + x3
+[PASS] R1.3 empty supplied union has zero readout
+[PASS] R2.1 coarse-graining maps sector vector v to incidence product C v
+       Cv=[x0 + x1, x2 + x3]
+[PASS] R2.2 partition coarse-graining preserves total readout
+[PASS] R2.3 repeated coarse-graining composes associatively
+[PASS] R2.4 a refinement followed by a coarsening is again an incidence coarse-graining
+[PASS] R3.1 two-sector normalized coordinates sum to one when total is nonzero
+       normalized=[u/(d + u), d/(d + u)]
+[PASS] R3.2 normalized coordinates are invariant under global readout scaling
+[PASS] R3.3 readout ratios are invariant under global readout scaling
+[PASS] R3.4 finite additivity leaves normalized two-sector coordinate arbitrary
+       for any supplied p in (0,1), choose d=p*u/(1-p)
+[PASS] R4.1 generation sector ratio is doublet/singlet = 2r
+       sector_ratio=2*b2/a2
+[PASS] R4.2 dial coordinate is log2(doublet/singlet)
+[PASS] R4.3 C3/KCPT square-root readout power sums define Q
+       S1=3*alpha; S2=3*alpha**2 + 6*beta**2
+[PASS] R4.4 Q = S2/S1^2 derives Q(r)=1/3+2r/3 before endpoint substitution
+       Q=(alpha**2 + 2*beta**2)/(3*alpha**2)
+[PASS] R4.5 two-block powers give the same generation Q coordinate
+       Q_blocks=(a2 + 2*b2)/(3*a2)
+[PASS] R4.6 sector balance rho=1 gives s=0, r=1/2, Q=2/3
+[PASS] R4.7 real-mode balance rho=2 gives s=1, r=1, Q=1
+[PASS] R4.8 Record additivity permits arbitrary positive sector ratio rho
+       rho remains a free readout ratio until a weighting/dynamics gate is supplied
+[PASS] R5.1 normalized coordinate is not the same object as raw sector ratio
+       normalization is an extra coordinate choice, not a new Record axiom
+[PASS] R5.2 finite additivity imposes no autonomous update law on the readout vector
+       the vector is unchanged until an external dynamics map is supplied
+
+SCORECARD PASS=21 FAIL=0
+FINDING: Record supplies finite additive readout-vector algebra;
+         probability, weighting, and dynamics remain separate gates.
+
+----- stderr -----
+

@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_cp_small_correction_boundary.py
+runner_sha256: be36ab501a20288b86ecfaeb9408ab75f2cac421d1f4419a8b9bff08cba99bfe
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.05
+status: ok
+----- stdout -----
+========================================================================
+  FRONTIER: Quark CP Small-Correction Boundary
+========================================================================
+
+========================================================================
+PART 1: Exact Boundary for the Shipped Completion
+========================================================================
+
+  xi_u = +0.340735147 -0.063202935 i
+  xi_d = +0.078186196 +0.108371050 i
+  c13_u(base) = 3.400565729750e-03
+  c13_d(base) = 2.011510840850e-02
+  |xi_u| / |c13_u(base)| = 101.908728437
+  |xi_d| / |c13_d(base)| = 6.643337509
+  common cap R needed to include the shipped pair = 101.908728437
+  |xi_u| / |c13_u(total)| = 0.990442514
+  |xi_d| / |c13_d(total)| = 0.913327261
+  [PASS] The shipped up-sector carrier is more than 100 Schur-base units  (ratio_u = 101.908728)
+  [PASS] The shipped down-sector carrier is more than 6 Schur-base units  (ratio_d = 6.643338)
+  [PASS] A common small cap R <= 5 excludes the shipped completion  (R_required = 101.908728)
+  [PASS] The added carriers dominate the completed 1-3 coefficients  (shares = (0.990443, 0.913327))
+
+========================================================================
+PART 2: Bounded Capped-Carrier Parent-Slice Scan
+========================================================================
+
+  Scan surface:
+    xi_s = rho_s * c13_s(base) * exp(i phi_s),  0 <= rho_s <= R
+    r_uc and r_ct are allowed to move within +/-1% of the parent comparators.
+    The optimizer is deterministic finite search, not a proof of a global supremum.
+
+  Best-found capped fits:
+    R       rho_u       rho_d       |Vus|/T     |Vcb|/T     |Vub|/T      J/T        max err
+      1.0    0.999920    0.999999    0.999471    1.000255    0.972594    0.128867    0.871133
+      2.0    1.999985    2.000000    0.999757    1.000061    0.994113    0.327177    0.672823
+      5.0    4.999982    3.377115    0.996861    0.999730    1.033197    0.571908    0.428092
+     10.0    9.999950    3.551434    0.997327    0.999781    1.029043    0.603034    0.396966
+     50.0   49.999748    5.018942    0.999370    0.999984    1.009502    0.821279    0.178721
+    100.0   99.875294    6.647672    0.999993    1.000042    1.000562    0.984134    0.015866
+  [PASS] All reported capped coordinates obey their declared rho bounds
+  [PASS] R = 1 perturbative caps recover less than 20% of target J  (J/J_target = 0.128867)
+  [PASS] R = 2 caps recover less than 40% of target J  (J/J_target = 0.327177)
+  [PASS] R = 5 generous caps still miss target J by more than 35%  (J/J_target = 0.571908)
+  [PASS] A near-parent-scale up-sector cap is needed before the scan approaches the target  (R=100 gives J/J_target=0.984134, max err=0.015866)
+
+========================================================================
+PART 3: Boundary Summary
+========================================================================
+
+  Exact shipped-fit result:
+    the existing xi pair requires sector caps rho_u >= 101.909, rho_d >= 6.643, or a common cap R >= 101.909.
+
+  Honest interpretation:
+    the quark CP-carrier completion is a bounded non-perturbative
+    carrier ansatz on the parent surface, not a retained small correction.
+
+  Open work unchanged:
+    this runner does not derive xi_u, xi_d, the comparator targets,
+    or a framework-native non-perturbative carrier normalization.
+
+========================================================================
+  TOTAL: PASS=9, FAIL=0
+========================================================================
+
+----- stderr -----
+

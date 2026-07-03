@@ -7,7 +7,12 @@ ledger grade. This note introduces no new axiom, primitive, Tier-A admission, or
 matter-spinor postulate.
 **Primary runner:**
 [`scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py`](../scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py)
+**Cached runner output:**
+[`logs/runner-cache/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.txt`](../logs/runner-cache/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.txt)
 (SCORECARD: PASS=24 FAIL=0)
+**Completed runner cache:**
+[`logs/runner-cache/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.txt`](../logs/runner-cache/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.txt)
+(`SCORECARD: PASS=24 FAIL=0`; dependency-free graph helper)
 
 ## Claim
 
@@ -60,6 +65,12 @@ It verifies four finite statements.
 The runner also exhibits a `GF(2)` cocycle with value `1` on `t`; that class is
 non-fibered and is not the reduction of an integral framing class. This is why
 the swap sign is real configuration-space data but not `SO(2)` writhe data.
+
+Current cache certificate:
+
+```text
+SCORECARD: PASS=24 FAIL=0
+```
 
 ## Scope
 

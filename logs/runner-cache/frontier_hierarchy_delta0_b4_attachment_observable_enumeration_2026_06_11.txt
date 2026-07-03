@@ -1,0 +1,206 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_delta0_b4_attachment_observable_enumeration_2026_06_11.py
+runner_sha256: 32c44a5f485edf1d02369652f4f75f24bbf4f021f6562035fb94fb584009ec8e
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+==============================================================================
+ frontier_hierarchy_delta0_b4_attachment_observable_enumeration_2026_06_11.py
+ Block11 of the DELTA0 attachment campaign: executing block10b's R2 kill
+ criterion — enumerate the declared candidate readouts (K1-K8), compute each
+ per-decoupling multiplicative factor, tabulate displacements vs alpha_s =
+ 0.1033038 (and alpha_LM/alpha_bare cross-references), and render the verdict.
+ Parent note: docs/HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_
+              NOTE_2026-06-11.md
+==============================================================================
+
+--- Section A [C]/[A]/[B]: declared inputs, exact identity skeleton, window logic ---
+  [PASS][C] A1 exact identity skeleton (Fraction stand-ins q for 4 pi, u for u_0; 4 rational test points): the K2 grid cells (m=1, N=1, dressed) and (m=2u, N=2u, dressed) equal alpha_s = 1/(q u^2) EXACTLY (the normalization cancels m), and (m=u, N=2u, dressed) equals alpha_s/2 exactly (block01's N) — these cells are the supplier chain BY CONSTRUCTION, not discoveries  (exact Fraction arithmetic)
+  [PASS][A] A2 supplier-chain values (B1 + I2 + I3, cited through block02): alpha_s = alpha_bare/u_0^2 = 0.1033038, alpha_LM = alpha_bare/u_0 = 0.0906678 (repo canonical), alpha_bare = 1/(4 pi) = 0.0795775; geometric-progression identity alpha_LM^2 = alpha_bare x alpha_s < 1e-14; exp(-Delta_S) = alpha_s < 1e-12 (block10a consistency)  (alpha_s = 0.1033038, alpha_LM = 0.0906678)
+  [PASS][A] A3 cross-reference honesty: the three comparison columns are one exact geometric progression — alpha_bare/alpha_s = u_0^2 = 0.770325 and alpha_LM/alpha_s = u_0 = 0.877681 EXACTLY (< 1e-14), so 'vs alpha_LM' and 'vs alpha_bare' displacements are u_0-power rescalings of 'vs alpha_s', never independent evidence  (u_0 = 0.877681, u_0^2 = 0.770325)
+  [PASS][B] A4 suppliers + kill criterion on disk: block10b states the kill criterion this runner executes ('enumerates the declared candidate readouts', 'O(1)-displaced'); block02 states the target 0.1033038; block01 states the per-mode factor ('2 u_0'); the B1 plaquette license ('admitted comparison/reuse number', 0.5934) is on disk
+
+  DECLARED WINDOW LOGIC: CANDIDATE MATCH iff factor/alpha_s in [0.99, 1.01] AND a derivable mechanism (the number alone is insufficient);
+  factor-2 observation window [0.5, 2.0] x alpha_s (numerology-risk flagged, never a residual).
+  Table columns: value, displacement vs alpha_s = 0.1033038, vs alpha_LM = 0.0906678, vs alpha_bare = 0.0795775.
+
+--- Section B [A]: K1 — block01 per-mode determinant-factor family f(m) = sqrt(m^2 + 4 u_0^2), all declared ratios ---
+  [PASS][A] B1 exact closed forms: f(0) = 2 u_0 = 1.755363 (block01's per-mode factor at m = 0), f(u_0) = sqrt(5) u_0, f(2 u_0) = 2 sqrt(2) u_0 (threshold = mode gap), f(u_0^2) = u_0 sqrt(u_0^2 + 4) — all < 1e-14  (f(0) = 1.755363, f(2u_0) = 2.482458)
+    (refs declared: f(0) and 2 u_0 coincide exactly — both kept as declared)
+    K1 f(0)/f(0)                          1.0000000  /a_s=   9.6802  /a_LM=  11.0293  /a_bare=  12.5664  -
+    K1 f(0)/1                             1.7553628  /a_s=  16.9922  /a_LM=  19.3604  /a_bare=  22.0585  -
+    K1 f(0)/2                             0.8776814  /a_s=   8.4961  /a_LM=   9.6802  /a_bare=  11.0293  -
+    K1 f(0)/2u_0                          1.0000000  /a_s=   9.6802  /a_LM=  11.0293  /a_bare=  12.5664  -
+    K1 f(u_0)/f(0)                        1.1180340  /a_s=  10.8228  /a_LM=  12.3311  /a_bare=  14.0496  -
+    K1 f(u_0)/1                           1.9625552  /a_s=  18.9979  /a_LM=  21.6456  /a_bare=  24.6622  -
+    K1 f(u_0)/2                           0.9812776  /a_s=   9.4989  /a_LM=  10.8228  /a_bare=  12.3311  -
+    K1 f(u_0)/2u_0                        1.1180340  /a_s=  10.8228  /a_LM=  12.3311  /a_bare=  14.0496  -
+    K1 f(2u_0)/f(0)                       1.4142136  /a_s=  13.6898  /a_LM=  15.5977  /a_bare=  17.7715  -
+    K1 f(2u_0)/1                          2.4824578  /a_s=  24.0306  /a_LM=  27.3797  /a_bare=  31.1955  -
+    K1 f(2u_0)/2                          1.2412289  /a_s=  12.0153  /a_LM=  13.6898  /a_bare=  15.5977  -
+    K1 f(2u_0)/2u_0                       1.4142136  /a_s=  13.6898  /a_LM=  15.5977  /a_bare=  17.7715  -
+    K1 f(u_0^2)/f(0)                      1.0920536  /a_s=  10.5713  /a_LM=  12.0446  /a_bare=  13.7232  -
+    K1 f(u_0^2)/1                         1.9169503  /a_s=  18.5564  /a_LM=  21.1426  /a_bare=  24.0891  -
+    K1 f(u_0^2)/2                         0.9584751  /a_s=   9.2782  /a_LM=  10.5713  /a_bare=  12.0446  -
+    K1 f(u_0^2)/2u_0                      1.0920536  /a_s=  10.5713  /a_LM=  12.0446  /a_bare=  13.7232  -
+  [PASS][A] B2 K1 ratio table (16 declared ratios printed): every member is O(1) — minimum displacement is f(0)/2 = u_0 at 8.4961x alpha_s; NO member inside the factor-2 window, none anywhere near the match window  (min displacement = 8.4961x)
+    K1 f(0;u_0)/f(0;1)                    0.8776814  /a_s=   8.4961  /a_LM=   9.6802  /a_bare=  11.0293  -  [= u_0 exactly at m = 0]
+    K1 f(u_0;u_0)/f(u_0;1)                0.8985617  /a_s=   8.6982  /a_LM=   9.9105  /a_bare=  11.2917  -
+    K1 f(2u_0;u_0)/f(2u_0;1)              0.9328792  /a_s=   9.0304  /a_LM=  10.2890  /a_bare=  11.7229  -
+    K1 f(u_0^2;u_0)/f(u_0^2;1)            0.8944246  /a_s=   8.6582  /a_LM=   9.8648  /a_bare=  11.2397  -
+  [PASS][A] B3 dressed/undressed rows (block02's ratio normalization): f(0; u_0)/f(0; 1) = u_0 = 0.877681 EXACTLY (block02 T1 reproduced); all four rows in [0.8777, 0.9329] — displacements 8.50x-9.03x  (values = [0.877681, 0.898562, 0.932879, 0.894425])
+  [PASS][A] B4 K1 VERDICT: eliminated — all 20 family members are O(1)-displaced (8.50x-24.03x above alpha_s); the determinant-share family cannot carry a per-decoupling 0.1033 under any declared normalization  (range = [8.50, 24.03]x)
+
+--- Section C [A]: K2 — IR-slope dressing grid m/(4 pi N) x {1, u_0^-2}, all 40 cells ---
+    (declared: factor = [m/(4 pi)] / N x dressing; normalizations DIVIDE; m and N from the landed candidates)
+    K2 m=1/N=1/undressed                  0.0795775  /a_s=   0.7703  /a_LM=   0.8777  /a_bare=   1.0000  EXACT-IDENTITY (by construction)
+    K2 m=1/N=1/u_0^-2                     0.1033038  /a_s=   1.0000  /a_LM=   1.1394  /a_bare=   1.2982  EXACT-IDENTITY (by construction)
+    K2 m=1/N=1/8/undressed                0.6366198  /a_s=   6.1626  /a_LM=   7.0215  /a_bare=   8.0000  -
+    K2 m=1/N=1/8/u_0^-2                   0.8264305  /a_s=   8.0000  /a_LM=   9.1149  /a_bare=  10.3852  -
+    K2 m=1/N=1/16/undressed               1.2732395  /a_s=  12.3252  /a_LM=  14.0429  /a_bare=  16.0000  -
+    K2 m=1/N=1/16/u_0^-2                  1.6528611  /a_s=  16.0000  /a_LM=  18.2299  /a_bare=  20.7705  -
+    K2 m=1/N=2u_0/undressed               0.0453339  /a_s=   0.4388  /a_LM=   0.5000  /a_bare=   0.5697  -
+    K2 m=1/N=2u_0/u_0^-2                  0.0588504  /a_s=   0.5697  /a_LM=   0.6491  /a_bare=   0.7395  factor-2 obs
+    K2 m=1/N=f(m)/undressed               0.0393905  /a_s=   0.3813  /a_LM=   0.4344  /a_bare=   0.4950  -
+    K2 m=1/N=f(m)/u_0^-2                  0.0511349  /a_s=   0.4950  /a_LM=   0.5640  /a_bare=   0.6426  -
+    K2 m=2u_0/N=1/undressed               0.1396873  /a_s=   1.3522  /a_LM=   1.5406  /a_bare=   1.7554  factor-2 obs
+    K2 m=2u_0/N=1/u_0^-2                  0.1813357  /a_s=   1.7554  /a_LM=   2.0000  /a_bare=   2.2787  factor-2 obs
+    K2 m=2u_0/N=1/8/undressed             1.1174986  /a_s=  10.8176  /a_LM=  12.3252  /a_bare=  14.0429  -
+    K2 m=2u_0/N=1/8/u_0^-2                1.4506854  /a_s=  14.0429  /a_LM=  16.0000  /a_bare=  18.2299  -
+    K2 m=2u_0/N=1/16/undressed            2.2349973  /a_s=  21.6352  /a_LM=  24.6504  /a_bare=  28.0858  -
+    K2 m=2u_0/N=1/16/u_0^-2               2.9013708  /a_s=  28.0858  /a_LM=  32.0000  /a_bare=  36.4597  -
+    K2 m=2u_0/N=2u_0/undressed            0.0795775  /a_s=   0.7703  /a_LM=   0.8777  /a_bare=   1.0000  EXACT-IDENTITY (by construction)
+    K2 m=2u_0/N=2u_0/u_0^-2               0.1033038  /a_s=   1.0000  /a_LM=   1.1394  /a_bare=   1.2982  EXACT-IDENTITY (by construction)
+    K2 m=2u_0/N=f(m)/undressed            0.0562698  /a_s=   0.5447  /a_LM=   0.6206  /a_bare=   0.7071  factor-2 obs
+    K2 m=2u_0/N=f(m)/u_0^-2               0.0730468  /a_s=   0.7071  /a_LM=   0.8057  /a_bare=   0.9179  factor-2 obs
+    K2 m=u_0/N=1/undressed                0.0698437  /a_s=   0.6761  /a_LM=   0.7703  /a_bare=   0.8777  factor-2 obs
+    K2 m=u_0/N=1/u_0^-2                   0.0906678  /a_s=   0.8777  /a_LM=   1.0000  /a_bare=   1.1394  EXACT-IDENTITY (by construction)
+    K2 m=u_0/N=1/8/undressed              0.5587493  /a_s=   5.4088  /a_LM=   6.1626  /a_bare=   7.0215  -
+    K2 m=u_0/N=1/8/u_0^-2                 0.7253427  /a_s=   7.0215  /a_LM=   8.0000  /a_bare=   9.1149  -
+    K2 m=u_0/N=1/16/undressed             1.1174986  /a_s=  10.8176  /a_LM=  12.3252  /a_bare=  14.0429  -
+    K2 m=u_0/N=1/16/u_0^-2                1.4506854  /a_s=  14.0429  /a_LM=  16.0000  /a_bare=  18.2299  -
+    K2 m=u_0/N=2u_0/undressed             0.0397887  /a_s=   0.3852  /a_LM=   0.4388  /a_bare=   0.5000  -
+    K2 m=u_0/N=2u_0/u_0^-2                0.0516519  /a_s=   0.5000  /a_LM=   0.5697  /a_bare=   0.6491  EXACT-IDENTITY (by construction)
+    K2 m=u_0/N=f(m)/undressed             0.0355881  /a_s=   0.3445  /a_LM=   0.3925  /a_bare=   0.4472  -
+    K2 m=u_0/N=f(m)/u_0^-2                0.0461989  /a_s=   0.4472  /a_LM=   0.5095  /a_bare=   0.5806  -
+    K2 m=u_0^2/N=1/undressed              0.0613005  /a_s=   0.5934  /a_LM=   0.6761  /a_bare=   0.7703  factor-2 obs
+    K2 m=u_0^2/N=1/u_0^-2                 0.0795775  /a_s=   0.7703  /a_LM=   0.8777  /a_bare=   1.0000  EXACT-IDENTITY (by construction)
+    K2 m=u_0^2/N=1/8/undressed            0.4904039  /a_s=   4.7472  /a_LM=   5.4088  /a_bare=   6.1626  -
+    K2 m=u_0^2/N=1/8/u_0^-2               0.6366198  /a_s=   6.1626  /a_LM=   7.0215  /a_bare=   8.0000  -
+    K2 m=u_0^2/N=1/16/undressed           0.9808078  /a_s=   9.4944  /a_LM=  10.8176  /a_bare=  12.3252  -
+    K2 m=u_0^2/N=1/16/u_0^-2              1.2732395  /a_s=  12.3252  /a_LM=  14.0429  /a_bare=  16.0000  -
+    K2 m=u_0^2/N=2u_0/undressed           0.0349218  /a_s=   0.3380  /a_LM=   0.3852  /a_bare=   0.4388  -
+    K2 m=u_0^2/N=2u_0/u_0^-2              0.0453339  /a_s=   0.4388  /a_LM=   0.5000  /a_bare=   0.5697  -
+    K2 m=u_0^2/N=f(m)/undressed           0.0319781  /a_s=   0.3096  /a_LM=   0.3527  /a_bare=   0.4018  -
+    K2 m=u_0^2/N=f(m)/u_0^-2              0.0415125  /a_s=   0.4018  /a_LM=   0.4579  /a_bare=   0.5217  -
+  [PASS][A] C1 grid exhaustiveness: all 4 masses x 5 normalizations x 2 dressings = 40 cells computed and printed (every cell an exact closed form alpha_s x algebraic factor in u_0 and rationals)  (40 cells)
+  [PASS][A] C2 GUARD (the block10b §3 pattern — exact match is BY CONSTRUCTION): the ONLY cells inside [0.99, 1.01] x alpha_s are (m=1, N=1, dressed) and (m=2u_0, N=2u_0, dressed), both equal to alpha_s EXACTLY (< 1e-15) because each IS the supplier-chain identity alpha_s = (1/(4 pi)) u_0^-2 written in grid coordinates (the second after the per-mode-factor normalization cancels m).  DEFINITIONAL cells, zero mechanism content — the mechanism would be exactly the open identification; NOT candidate matches  (in-window cells = ['K2 m=1/N=1/u_0^-2', 'K2 m=2u_0/N=2u_0/u_0^-2'])
+  [PASS][A] C3 exact-identity audit: the remaining canonical cells are exact chain members — (m=1, N=1, undressed) = (m=2u_0, N=2u_0, undressed) = (m=u_0^2, N=1, dressed) = alpha_bare (displacement u_0^2 = 0.7703); (m=u_0, N=1, dressed) = alpha_LM (displacement u_0 = 0.8777); (m=u_0, N=2u_0, dressed) = 1/(8 pi u_0^2) = alpha_s/2 = block01's N = 0.0516519 (displacement 1/2 exactly) — all flagged EXACT-IDENTITY in the table, never observations  (block01 N cell = 0.0516519)
+  [PASS][A] C4 K2 VERDICT: NO non-definitional cell lands in the match window — within this dressing grid, hitting alpha_s requires EXACTLY the definitional combination (slope at unit mass, unit normalization, two-link dressing), i.e. the grid contributes no independent route to the attachment; non-identity factor-2 cells (printed flags) are exact algebraic u_0-power/rational multiples of alpha_s — observation-grade only  (non-definitional match cells = []; factor-2 cells = 7)
+
+--- Section D [C]/[A]: K3 — free-energy-density per mode on the landed Matsubara surface ---
+  [PASS][C] D1 surface identification (exact Fraction, sin^2(pi/2) = sin^2(3 pi/2) = 1 exact): at L_t = 2 the landed Matsubara closed form prod_omega [m^2 + u_0^2 (3 + sin^2 omega)]^4 equals block01's per-color determinant (m^2 + 4 u_0^2)^8 EXACTLY — the surface's per-taste-mode decimation reading exists ONLY through this identification, and there the per-mode factor IS block01's f(m) = sqrt(m^2 + 4 u_0^2), already enumerated as K1  (4 rational test points)
+  [PASS][A] D2 NOT-CONSTRUCTIBLE record (honest, per the task's own criterion): the surface's mode count is n_matrix = 8 L_t in {8, 16, 24, ...} — n_matrix = 15 is unreachable (no integer L_t), so a DIRECT per-entry 16 -> 15 free-energy difference does NOT exist on the landed surface; the candidate is recorded as not-constructible in that reading (itself a useful enumeration datum)
+    K3 exp(-Delta_f) m=u_0                0.8944272  /a_s=   8.6582  /a_LM=   9.8649  /a_bare=  11.2397  -  [= 2 u_0/f(m) exactly]
+    K3 exp(-Delta_f) m=2u_0               0.7071068  /a_s=   6.8449  /a_LM=   7.7989  /a_bare=   8.8858  -  [= 2 u_0/f(m) exactly]
+    K3 exp(-Delta_f) m=1                  0.8688958  /a_s=   8.4111  /a_LM=   9.5833  /a_bare=  10.9189  -  [= 2 u_0/f(m) exactly]
+  [PASS][A] D3 per-entry density readout (constructible): exp(-Delta_f(L_t = 2, m)) = 2 u_0/f(m) EXACTLY (< 1e-14 at all three masses) — values 0.894 (m = u_0), 0.707 = 2^(-1/2) (threshold m = 2 u_0), 0.869 (m = 1); displacements 6.84x-8.66x — the inverse of a K1 ratio, nothing new  (threshold value = 0.7071068)
+  [PASS][A] D4 K3 VERDICT: the direct 16 -> 15 per-entry reading is not-constructible (D2); every constructible reading (per-mode via the block01 identification = K1; per-entry density = 2 u_0/f(m)) is O(1)-displaced (6.84x-8.66x) — eliminated
+
+--- Section E [B]/[A]: K4 — static-potential screening share at threshold (block08's landed R_S2, imported) ---
+  [PASS][B] E1 import verification + threshold-scale honesty: block08's landed R_S2 literals verified on disk (1.012323, 1.021340; displacement bounds 9.7995/9.8868; c0 = 0.0266477); the threshold separation r = 1/(2 u_0) = 0.5697 lattice units is SUB-LATTICE — the candidate is SCALE-MISMATCHED at its declared threshold scale, and the landed radii r = 4, 6, 8 are the declared answer (the threshold reading is carried by K7's r = 1 exponentials instead)  (r_threshold = 0.569683 < 1)
+    K4 R_S2 V-a1 r=4                      1.0123230  /a_s=   9.7995  /a_LM=  11.1652  /a_bare=  12.7212  -
+    K4 R_S2 V-a1 r=6                      1.0145200  /a_s=   9.8207  /a_LM=  11.1894  /a_bare=  12.7488  -
+    K4 R_S2 V-a1 r=8                      1.0159130  /a_s=   9.8342  /a_LM=  11.2048  /a_bare=  12.7663  -
+    K4 R_S2 V-a2 r=4                      1.0185150  /a_s=   9.8594  /a_LM=  11.2335  /a_bare=  12.7990  -
+    K4 R_S2 V-a2 r=8                      1.0213400  /a_s=   9.8868  /a_LM=  11.2646  /a_bare=  12.8345  -
+    K4 R_S2 V-b all r                     1.0190380  /a_s=   9.8645  /a_LM=  11.2392  /a_bare=  12.8056  -
+  [PASS][A] E2 K4 VERDICT: eliminated (already landed displaced) — R_S2 in [1.0123, 1.0213], displacements 9.7995x-9.8868x above alpha_s, matching block08's stated bounds < 5e-4; included for enumeration completeness  (displacements = [9.7995, 9.8868]x)
+
+--- Section F [B]/[A]: K5 — plaquette-action cost readouts exp(-Delta_S_candidate) (block10a scan rows, imported + verified) ---
+  [PASS][B] F1 import verification: block10a literals on disk (Delta_S = 2.270081; nearest-gap 0.072856; flagged exp-gap 1.075576); recomputed Delta_S = ln(4 pi) + 2 ln(u_0) matches < 5e-7  (Delta_S = 2.270081)
+  [PASS][A] F2 G(0) recomputed (half-shifted BZ sums L = 24, 32, 40 + Richardson in 1/L, block10a's construction): pair estimates agree < 2e-5; production G(0) = 0.252736 matches the Watson reference within 5e-5  (G(0) = 0.2527362)
+    K5 exp(-ln(2u_0)) = 1/(2u_0)          0.5696828  /a_s=   5.5146  /a_LM=   6.2832  /a_bare=   7.1588  -
+    K5 exp(+ln u_0) = 1/u_0               1.1393656  /a_s=  11.0293  /a_LM=  12.5664  /a_bare=  14.3177  -
+    K5 pi^-4                              0.0102660  /a_s=   0.0994  /a_LM=   0.1132  /a_bare=   0.1290  -
+    K5 pi^-3                              0.0322515  /a_s=   0.3122  /a_LM=   0.3557  /a_bare=   0.4053  -
+    K5 1/(4 pi) = alpha_bare              0.0795775  /a_s=   0.7703  /a_LM=   0.8777  /a_bare=   1.0000  factor-2 obs  [= alpha_s x u_0^2 exactly (block10a row (d): definitional)]
+    K5 G(0)                               0.2527362  /a_s=   2.4465  /a_LM=   2.7875  /a_bare=   3.1760  -
+    K5 c0 (block08)                       0.0266477  /a_s=   0.2580  /a_LM=   0.2939  /a_bare=   0.3349  -
+    K5 1/N_c                              0.3333333  /a_s=   3.2267  /a_LM=   3.6764  /a_bare=   4.1888  -
+    K5 1/(2 N_c)                          0.1666667  /a_s=   1.6134  /a_LM=   1.8382  /a_bare=   2.0944  factor-2 obs
+    K5 1/N_c^2                            0.1111111  /a_s=   1.0756  /a_LM=   1.2255  /a_bare=   1.3963  factor-2 obs  [block09-flagged 1/N_c^2 proximity]
+  [PASS][A] F3 K5 VERDICT: NO scan row in the match window — the nearest non-definitional row is 1/N_c^2 at 1.0756x (exactly block10a's exp-gap 1.075576, i.e. block09's numerology-risk-flagged 1/N_c^2 proximity RESTATED — no content added); 1/(4 pi) sits at u_0^2 = 0.7703x (definitional, block10a row (d)); eliminated
+
+--- Section G [A]: K6/K7/K8 — this block's additional declared candidates ---
+    K6 15/16                              0.9375000  /a_s=   9.0752  /a_LM=  10.3399  /a_bare=  11.7810  -  [exact rational]
+    K6 1/8                                0.1250000  /a_s=   1.2100  /a_LM=   1.3787  /a_bare=   1.5708  factor-2 obs  [block10b-flagged observation restated]
+    K6 1/16                               0.0625000  /a_s=   0.6050  /a_LM=   0.6893  /a_bare=   0.7854  factor-2 obs  [block10b-flagged observation restated]
+    K6 exp(-1/8)                          0.8824969  /a_s=   8.5427  /a_LM=   9.7333  /a_bare=  11.0898  -
+    K6 exp(-1/16)                         0.9394131  /a_s=   9.0937  /a_LM=  10.3610  /a_bare=  11.8050  -
+  [PASS][A] G1 K6 equal-share readouts: 15/16 = 0.9375 (9.08x), exp(-1/8) (8.54x), exp(-1/16) (9.09x) — O(1); the bare shares 1/8 (1.2100x) and 1/16 (0.6050x) fall in the factor-2 window EXACTLY as block10b already flagged (additive shares, not multiplicative factors; small rationals populate a factor-2 window generically) — restated, no content added
+    K7 exp(-2u_0 r), r=1                  0.1728445  /a_s=   1.6732  /a_LM=   1.9063  /a_bare=   2.1720  factor-2 obs  [factor-2: numerology-risk]
+    K7 exp(-u_0 r), r=1                   0.4157458  /a_s=   4.0245  /a_LM=   4.5854  /a_bare=   5.2244  -
+    K7 exp(-r/(2u_0)), r=1                0.5657048  /a_s=   5.4761  /a_LM=   6.2393  /a_bare=   7.1089  -
+  [PASS][A] G2 K7 threshold screening exponentials (r = 1, declared): exp(-2 u_0) = 0.172845 (1.6732x — factor-2 window, numerology-risk flagged below: no mechanism, no supplier, no claim), exp(-u_0) (4.02x), exp(-1/(2 u_0)) (5.48x) — none anywhere near the match window
+    (K8 declared grids: half-shifted d = 3, L = 32 and 48; declared tolerance |L48 - L32| < 5e-4 on every readout)
+    K8 exp(-V(m=u_0;u_0)/8)               0.9281463  /a_s=   8.9846  /a_LM=  10.2368  /a_bare=  11.6634  -  [L = 48, grid-stable < 5e-4]
+    K8 ratio-norm m=u_0                   0.9870671  /a_s=   9.5550  /a_LM=  10.8866  /a_bare=  12.4039  -  [L = 48, grid-stable < 5e-4]
+    K8 exp(-V(m=2u_0;u_0)/8)              0.8382702  /a_s=   8.1146  /a_LM=   9.2455  /a_bare=  10.5340  -  [L = 48, grid-stable < 5e-4]
+    K8 ratio-norm m=2u_0                  0.9770658  /a_s=   9.4582  /a_LM=  10.7763  /a_bare=  12.2782  -  [L = 48, grid-stable < 5e-4]
+  [PASS][A] G3 K8 per-taste BZ log-det share readouts (computed, declared grids): exp(-V/8) = 0.8383 (m = 2 u_0) and 0.9281 (m = u_0); ratio-normalized 0.9771 and 0.9871 — displacements 8.11x-9.56x; grid-stable |L48 - L32| < 5e-4 on all four  (values = [0.928146, 0.987067, 0.83827, 0.977066])
+  [PASS][A] G4 K6-K8 VERDICT: eliminated — no additional candidate in the match window; the in-factor-2 entries (1/8, 1/16, exp(-2 u_0)) are flagged observations only
+
+--- Section H [A]/[B]: global enumeration verdict ---
+    enumerated candidate rows: 91
+    match-window entries: 2 (all definitional: ['K2 m=1/N=1/u_0^-2', 'K2 m=2u_0/N=2u_0/u_0^-2'])
+    non-definitional factor-2 entries: 13
+      K2 m=1/N=2u_0/u_0^-2                0.0588504  (0.5697x)
+      K2 m=2u_0/N=1/undressed             0.1396873  (1.3522x)
+      K2 m=2u_0/N=1/u_0^-2                0.1813357  (1.7554x)
+      K2 m=2u_0/N=f(m)/undressed          0.0562698  (0.5447x)
+      K2 m=2u_0/N=f(m)/u_0^-2             0.0730468  (0.7071x)
+      K2 m=u_0/N=1/undressed              0.0698437  (0.6761x)
+      K2 m=u_0^2/N=1/undressed            0.0613005  (0.5934x)
+      K5 1/(4 pi) = alpha_bare            0.0795775  (0.7703x)
+      K5 1/(2 N_c)                        0.1666667  (1.6134x)
+      K5 1/N_c^2                          0.1111111  (1.0756x)
+      K6 1/8                              0.1250000  (1.2100x)
+      K6 1/16                             0.0625000  (0.6050x)
+      K7 exp(-2u_0 r), r=1                0.1728445  (1.6732x)
+  [PASS][A] H1 GLOBAL ENUMERATION VERDICT (the block10b R2 kill criterion, executed): over all 91 enumerated candidate rows, the ONLY entries inside [0.99, 1.01] x alpha_s are the two DEFINITIONAL K2 identity cells (the supplier chain alpha_s = (1/(4 pi)) u_0^-2 itself in grid coordinates — by construction, zero mechanism content); NO candidate READOUT lands in the window with a mechanism.  THE KILL CRITERION FIRES for the enumerated class: the attachment observable, if it exists, is NOT among the K1-K8 declared readouts under the declared normalizations  (non-definitional matches = [])
+  [PASS][B] H2 parent-note honesty: the note on disk states the fired kill criterion, the constraint set ('not among the K1-K8 declared readouts'), the numerology guards, and that it does not close the DELTA0 gate; forbidden closure/match tokens absent  (missing = [], hit = [])
+
+  OBSERVATION (bounded, numerology-risk flagged — NOT a residual, NOT a claim): K2 non-identity factor-2 cells (7 of 40): every one is an EXACT closed form alpha_s x (u_0-power x rational) — e.g. (m=2u_0, N=1, dressed) = 2 alpha_LM = 1.7554 x alpha_s (displacement = 2 u_0 exactly), (m=u_0^2, N=1, undressed) = alpha_s x u_0^4 (displacement = <P> = 0.5934 exactly); small algebraic u_0-power/rational multiples populate a factor-2 window generically (the block09 lesson).  No mechanism, no supplier, no claim.
+  OBSERVATION (bounded, numerology-risk flagged — NOT a residual, NOT a claim): K5 factor-2 entries: 1/N_c^2 = 1.0756 x alpha_s — EXACTLY block09's flagged 1/N_c^2 proximity (4 pi u_0^2/9 = 1.075576), restated a third time with NO content added; 1/(2 N_c) = 1.6134 x alpha_s.  Numerology-risk flags inherited and maintained.
+  OBSERVATION (bounded, numerology-risk flagged — NOT a residual, NOT a claim): K6 rational shares 1/8 = 1.2100 x alpha_s and 1/16 = 0.6050 x alpha_s — block10b's already-flagged in-window proximities restated: shares of an ADDITIVE mode sum, not multiplicative per-decoupling factors.  No mechanism, no supplier, no claim.
+  OBSERVATION (bounded, numerology-risk flagged — NOT a residual, NOT a claim): K7 threshold screening exp(-2 u_0 x 1) = 0.172845 = 1.6732 x alpha_s (new this block): a Yukawa factor at the mode-gap mass and unit separation lands in the factor-2 window.  The threshold scale 1/(2 u_0) is sub-lattice (E1), the separation choice r = 1 is a declared convenience, and no readout ties this exponential to a decoupling count.  Numerology-risk flagged; no mechanism, no supplier, no claim.
+
+  RESIDUAL (declared-open): the B4 ATTACHMENT-OBSERVABLE IDENTIFICATION (block10b R2) remains UNSUPPLIED, and now carries the computed constraint set 'NOT K1-K8': the readout in which one decoupling taste contributes exactly alpha_s = (1/(4 pi)) x u_0^-2 = 0.1033038 is NOT the determinant-share family (K1: 8.50x-24.03x), NOT the IR-slope dressing grid away from its definitional cells (K2), NOT the Matsubara free-energy-density surface (K3: direct 16->15 not-constructible; constructible readings 6.84x-8.66x), NOT the static-potential screening share (K4: 9.80x-9.89x, landed), NOT the plaquette-action cost family (K5: nearest non-definitional 1/N_c^2 at 1.0756x, flagged), NOT the equal-share mode-sum ratios (K6), NOT threshold screening exponentials (K7), NOT per-taste BZ log-det shares (K8: 8.11x-9.56x).  Any closing identification must exhibit block10b's four testable consequences (log-additivity, threshold-scale evaluation, two-link vertex dressing, d = 3 substrate) AND lie outside the enumerated class.
+  RESIDUAL (declared-open): the DELTA0 gate (HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) remains OPEN: this block fires block10b's kill criterion for the enumerated readout class — an elimination within the taste-region arm of S1', NOT a closure and NOT a full elimination of S1' (readouts outside K1-K8, and the non-perturbative arms of S2/S3, are untouched).  The route inventory is not modified.
+
+--- Terminal class-D fence: external comparators ---
+  (No PDG quantity is needed or consumed by this enumeration; every comparison
+   target is framework-internal: alpha_s/alpha_LM/alpha_bare from the B1+I2+I3 chain.)
+  [PASS][D] Z1 self-scan: the PDG VEV literal appears ZERO times in this runner's source — no comparator consumed anywhere
+
+==============================================================================
+ Breakdown: A=21 B=4 C=2 D=1 RESIDUAL=2 OBSERVATION=4
+ TOTAL: PASS=28 FAIL=0
+ VERDICT: established (bounded; exact where exact, declared grids elsewhere):
+   the B4-attachment observable-identification enumeration is COMPLETE for the
+   declared class K1-K8 (91 candidate rows, every normalization declared).
+   The ONLY match-window entries are the two definitional K2 identity cells —
+   the supplier chain alpha_s = (1/(4 pi)) u_0^-2 itself in grid coordinates,
+   zero mechanism content.  NO candidate readout lands in [0.99, 1.01] x
+   alpha_s with a mechanism: block10b's KILL CRITERION FIRES for the
+   enumerated class.  The identification theorem gains the constraint set
+   'not K1-K8'; factor-2 entries are numerology-risk-flagged observations
+   only; the taste-region arm of S1' survives only outside the enumerated
+   readout class.  DELTA0 stays open — an elimination, not a closure.
+==============================================================================
+
+----- stderr -----
+

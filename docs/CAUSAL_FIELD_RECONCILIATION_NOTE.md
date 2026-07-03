@@ -8,16 +8,17 @@
 - [`scripts/causal_field_portability_probe.py`](../scripts/causal_field_portability_probe.py)
 - [`logs/2026-04-06-causal-field-portability-probe.txt`](../logs/2026-04-06-causal-field-portability-probe.txt)
 - [`logs/2026-04-06-causal-field-reconciliation-diagnostic.txt`](../logs/2026-04-06-causal-field-reconciliation-diagnostic.txt)
-- archived causal-field note:
-  - [`archive_unlanded/causal-field-stale-runners-2026-04-30/CAUSAL_PROPAGATING_FIELD_NOTE.md`](../archive_unlanded/causal-field-stale-runners-2026-04-30/CAUSAL_PROPAGATING_FIELD_NOTE.md)
+- live finite-replay causal-field packet:
+  - [`CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)
 - portability boundary note:
   - [`CAUSAL_FIELD_PORTABILITY_NOTE.md`](CAUSAL_FIELD_PORTABILITY_NOTE.md)
 
 ## Question
 
-The retained causal-field note says the dynamic `c=0.5` cone gives a stable
-`~0.45` observable on the center grown family and preserves the crossover.
-The low-SNR cross-family replay, however, reported a family boundary.
+The archived causal-field note reported a dynamic `c=0.5` cone near `~0.45`
+on the center grown family. The live finite-replay packet does not restore
+that table; it keeps only the current configured runner facts. The low-SNR
+cross-family replay reported a family boundary.
 
 Are these results contradictory, or are they probing different regimes?
 
@@ -25,8 +26,9 @@ Are these results contradictory, or are they probing different regimes?
 
 They are not the same measurement in practice.
 
-The retained `c=0.5` result is a center-family causal-field observable in a
-regime where the dynamic cone signal is already resolved and stable.
+The archived `c=0.5` table was a center-family causal-field observable in a
+regime that the old note described as resolved and stable. That table is not
+the current live packet's evidence surface.
 
 The portability probe fixes a single nominal source target
 `(y, z) = (0, 3)` at `source_layer = 8` and reuses that same target across
@@ -58,7 +60,7 @@ Not the main cause:
 - a field-strength-only effect
 
 The field-strength scan in the reconciliation diagnostic shows that the
-family-specific ratios do not collapse to the retained `~0.45` value simply
+family-specific ratios do not collapse to the archived `~0.45` value simply
 by increasing strength within the same fixed-anchor replay. So this is not
 just a single bad strength window.
 
@@ -68,10 +70,10 @@ The low-SNR cross-family replay is trustworthy as a **diagnosis of the fixed
 anchor replay harness boundary**, but not as a refutation of the retained
 center-family causal-field result.
 
-So the correct retained split is:
+So the correct source split is:
 
-- **retained positive:** the center-family dynamic causal cone observable
-  with `c=0.5` and preserved crossover
+- **live finite replay:** the current center-family causal cone packet with
+  stable configured proxy ratios and the archived `0.45` row explicitly stale
 - **diagnosed boundary:** the same fixed-anchor replay does not stay portable
   across all three families
 

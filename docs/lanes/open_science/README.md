@@ -44,6 +44,14 @@ Per-lane open-lane documents:
 - [`04_NEUTRINO_QUANTITATIVE_OPEN_LANE_2026-04-26.md`](./04_NEUTRINO_QUANTITATIVE_OPEN_LANE_2026-04-26.md)
 - [`05_HUBBLE_CONSTANT_DERIVATION_OPEN_LANE_2026-04-26.md`](./05_HUBBLE_CONSTANT_DERIVATION_OPEN_LANE_2026-04-26.md)
 - [`06_CHARGED_LEPTON_MASS_RETENTION_OPEN_LANE_2026-04-26.md`](./06_CHARGED_LEPTON_MASS_RETENTION_OPEN_LANE_2026-04-26.md)
+- [`07_THERMALIZATION_KINETIC_THEORY_OPEN_LANE_2026-06-12.md`](./07_THERMALIZATION_KINETIC_THEORY_OPEN_LANE_2026-06-12.md)
+  (proposed 2026-06-12 addition — see the dated subsection below)
+- [`08_CLASSICAL_ELECTROMAGNETISM_LIGHT_OPEN_LANE_2026-06-12.md`](./08_CLASSICAL_ELECTROMAGNETISM_LIGHT_OPEN_LANE_2026-06-12.md)
+  (proposed 2026-06-12 addition — see the dated subsection below)
+- [`09_PHASES_OF_MATTER_TRANSITIONS_OPEN_LANE_2026-06-12.md`](./09_PHASES_OF_MATTER_TRANSITIONS_OPEN_LANE_2026-06-12.md)
+  (proposed 2026-06-12 addition — see the dated subsection below)
+- [`10_CONTINUUM_HYDRODYNAMICS_OPEN_LANE_2026-06-12.md`](./10_CONTINUUM_HYDRODYNAMICS_OPEN_LANE_2026-06-12.md)
+  (proposed 2026-06-12 addition — see the dated subsection below)
 
 Each lane stub is intended to be a parallel-worker handoff surface. The top
 metadata block names the primary closure targets, the first worker target, and
@@ -72,14 +80,63 @@ sub-target; Lane 6 holds the full charged-lepton mass retention scope
 including the V_0 absolute scale. Lane 6 is a parent surface for the Koide
 flagship work, not a duplicate of it.
 
-## Common scoping principles for all six lanes
+## 2026-06-12 Lane 7 Addition (proposed)
+
+Lane 7 (thermalization / kinetic theory) was scoped 2026-06-12 as proposed
+open-lane tracking, post-dating the original six-lane selection. It follows the
+same precedent as the 2026-04-26 Lane 6 addition: a new open-lane tracking
+document, no theorem or claim promotion. The original six active-lane framing
+remains intact unless reviewers and the owner promote this proposed lane to
+active status.
+
+Motivation: the original six lanes cover the *matter* tower (masses, atoms,
+hadrons, neutrinos, cosmology scale). None covers the *statistical-mechanical*
+layer — temperature, the equilibrium distribution, an H-theorem, and pressure —
+which is the layer that turns "matter exists" into "a gas of atoms at
+temperature `T` exerting pressure on a container." That layer is currently
+imported (textbook Sommerfeld average, Stefan–Boltzmann `g*` bridge) inside the
+DM/cosmology lane rather than derived. The equilibrium/temperature core (7A–7C)
+is independent of the matter-mass lanes; the literal atomic-gas target (7D) is
+gated by Lane 2.
+
+| # | Lane | Science priority | Approachability | Status today |
+|---|---|---|---|---|
+| 7 | Thermalization / kinetic theory (equilibrium, `T`, H-theorem, pressure) | HIGH-FOUNDATIONAL | Tier B-C (core) / Tier C gated by Lane 2 (gas) | thermal structure imported, not derived; arrow + generalized-2nd-law + classicalization-firewall scaffolding retained_bounded; past-hypothesis residual remains open and is not an accepted premise |
+
+Per-lane document:
+[`07_THERMALIZATION_KINETIC_THEORY_OPEN_LANE_2026-06-12.md`](./07_THERMALIZATION_KINETIC_THEORY_OPEN_LANE_2026-06-12.md).
+
+## 2026-06-12 Lanes 8–10 Addition (proposed)
+
+Following Lane 7, three further *everyday-physics layers* — each absent from the
+original six-lane inventory, not merely a deferred observable — were scoped the
+same day as proposed open-lane tracking on `main`. Same precedent: no theorem
+or claim promotion. They complete the Feynman-Lecture-1-adjacent foundational
+layers: thermal motion (7), light (8), phases of matter (9), and the continuum
+fluid (10).
+
+| # | Lane | Science priority | Approachability | Status today |
+|---|---|---|---|---|
+| 8 | Classical electromagnetism & light (Maxwell, radiation, optics) | HIGH-FOUNDATIONAL / VISCERAL | Tier B-C | `U(1)` derived; only scattered electrostatics notes; no Maxwell/radiation/optics layer |
+| 9 | Phases of matter & transitions (solid/liquid/gas, latent heat, criticality) | HIGH-FOUNDATIONAL | Tier C (gated by Lanes 7, 2) | no phase-structure lane; universality classifier scaffolding exists |
+| 10 | Continuum / hydrodynamics (Euler/Navier–Stokes, sound) | MEDIUM-FOUNDATIONAL | Tier C (gated by Lane 7) | overlaps Lane 7's 7G transport + emergent-continuum work; fold-vs-standalone is an open reviewer decision |
+
+Per-lane documents:
+[`08_CLASSICAL_ELECTROMAGNETISM_LIGHT_OPEN_LANE_2026-06-12.md`](./08_CLASSICAL_ELECTROMAGNETISM_LIGHT_OPEN_LANE_2026-06-12.md),
+[`09_PHASES_OF_MATTER_TRANSITIONS_OPEN_LANE_2026-06-12.md`](./09_PHASES_OF_MATTER_TRANSITIONS_OPEN_LANE_2026-06-12.md),
+[`10_CONTINUUM_HYDRODYNAMICS_OPEN_LANE_2026-06-12.md`](./10_CONTINUUM_HYDRODYNAMICS_OPEN_LANE_2026-06-12.md).
+
+Note: Lane 10 is explicitly flagged as a fold candidate into Lane 7 (7G); the
+standalone-vs-fold decision is left to reviewers.
+
+## Common scoping principles for open-lane documents
 
 Each open-lane document follows the same structural template:
 
 1. **Missing-science framing.** What the repo still cannot derive in this
    sector.
 2. **Current state of repo content.** What's retained, bounded, scaffold-only,
-   or absent — pulled from the live `origin/main` package.
+   or absent — pulled from the live `main` package.
 3. **Derivation targets.** Specific named theorems / identities the lane would
    need to retain to close the lane.
 4. **Existing scaffolding to build on.** Concrete file references to retained

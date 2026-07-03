@@ -1,0 +1,108 @@
+===== runner cache v1 =====
+runner: scripts/record_generation_readout_two_sectors_2026_06_05.py
+runner_sha256: a1a845c44c4bcaef066c6e1103a558db621e112642c4e12db2957248981ca0ea
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
+RECORD_GENERATION_READOUT_TWO_SECTORS — generation readout resolves two K/CPT-orbit sectors (singlet + doublet)
+Conditional derivation: central-sector decomposition + K/CPT supplied by the readout context; Record only names the realized orbit and adds disjoint records.
+
+========================================================================================
+Setup - supplied readout carrier: C3 regular rep on hw=1 orbit {e1,e2,e3}
+========================================================================================
+[PASS] S1 regular-rep generator P is a permutation realizing e1->e2->e3->e1
+       P e1=e2, P e2=e3, P e3=e1
+[PASS] S2 P has order 3 (C3): P^3 = I, P != I
+       P^3 = I_3
+[PASS] S3 regular rep is faithful and 3-dimensional
+       dim = 3 = |C3|; g, g^2 act nontrivially (injective on C3)
+
+========================================================================================
+(1) Three 1-dim complex characters chi_0, chi_1, chi_2 of C3
+========================================================================================
+[PASS] 1.1 chi_0 = (1,1,1) (trivial)
+       chi_0 = [1, 1, 1]
+[PASS] 1.2 chi_1 = (1, omega, omega^2)
+       chi_1 = [1, exp(2*I*pi/3), exp(-2*I*pi/3)]
+[PASS] 1.3 chi_2 = (1, omega^2, omega)
+       chi_2 = [1, exp(-2*I*pi/3), exp(2*I*pi/3)]
+[PASS] 1.4 characters are orthonormal (Gram = I_3)
+       1/3 sum_k chi_a conj(chi_b) = delta_{ab}
+[PASS] 1.5 regular character = (3,0,0); each chi_a appears exactly once
+       chi_reg = [3, 0, 0]; multiplicities = [1, 1, 1]
+
+========================================================================================
+(3)-(4) K = CPT complex conjugation on characters; K/CPT orbits
+========================================================================================
+[PASS] 3.1 K fixes chi_0 (it is real): conj(chi_0) = chi_0
+       conj(chi_0) = [1, 1, 1]
+[PASS] 3.2 K swaps chi_1 <-> chi_2: conj(chi_1) = chi_2
+       conj(chi_1) = [1, -1/2 - sqrt(3)*I/2, -1/2 + sqrt(3)*I/2] = chi_2
+[PASS] 3.3 K swaps chi_2 <-> chi_1: conj(chi_2) = chi_1
+       conj(chi_2) = [1, -1/2 + sqrt(3)*I/2, -1/2 - sqrt(3)*I/2] = chi_1
+[PASS] 3.4 K is an involution on the character set (K^2 = id)
+       conj(conj(chi_a)) = chi_a for all a
+[PASS] 3.5 K-permutation of sector indices = (0)(1 2)
+       sigma = {0: 0, 1: 2, 2: 1}
+[PASS] 4.1 K/CPT orbits of the central sectors are {0} and {1,2}
+       orbits = [[0], [1, 2]]
+[PASS] 4.2 number of K/CPT-orbit sectors = 2 (NOT 3)
+       #sectors = 2
+[PASS] 4.3 orbit (sector) dimensions are 1 (singlet) and 2 (doublet)
+       sector dims = [1, 2] -> singlet + doublet
+[PASS] 4.4 sector dims sum to |C3| = 3 (the full regular-rep carrier)
+       1 + 2 = 3
+
+========================================================================================
+(4) Frobenius-Schur indicators nu = (1/|G|) sum_g chi(g^2)
+========================================================================================
+[PASS] FS.1 nu(chi_0) = +1 (REAL type)
+       nu_0 = 1
+[PASS] FS.2 nu(chi_1) = 0 (COMPLEX type)
+       nu_1 = 0
+[PASS] FS.3 nu(chi_2) = 0 (COMPLEX type)
+       nu_2 = 0
+[PASS] FS.4 FS pattern (+1,0,0) matches: chi_0 real, {chi_1,chi_2} a conjugate complex pair fused by K into ONE real doublet block
+       real-type singlet + one complex-type conjugate pair = 2 real blocks
+[PASS] FS.5 real-block count via FS = n_real(=1) + n_complexpairs(=1) = 2
+       n_real=1, n_complex_pairs=1 -> 2 sectors
+
+========================================================================================
+(5) Contrast — WITHOUT K/CPT: 3 complex sectors; WITH K/CPT: 2 real blocks
+========================================================================================
+[PASS] 5.1 over C the regular rep diagonalizes to the multiset {1, omega, omega^2}: C[Z3] = C ⊕ C ⊕ C (THREE complex central sectors)
+       diag = [1, -1/2 - sqrt(3)*I/2, -1/2 + sqrt(3)*I/2]; #complex sectors = 3
+[PASS] 5.2 K/CPT FUSES the two faithful characters: 3 complex sectors collapse to 2 K/CPT-orbit sectors
+       3 (complex) -> 2 (K/CPT orbits)
+[PASS] 5.3 over R the regular rep = (1) ⊕ rotation(2pi/3): R[Z3] = R ⊕ C (ONE real + ONE complex-type block = TWO blocks)
+       real block = diag(1) ⊕ R(2pi/3); the 2x2 rotation is the irreducible real DOUBLET block
+[PASS] 5.4 the real doublet block has NO real eigenvalue (irreducible over R) and splits over C into {omega, omega^2}
+       eig(rotation) = [-1/2 - sqrt(3)*I/2, -1/2 + sqrt(3)*I/2] = {omega, omega^2}
+[PASS] 5.5 K/CPT-orbit count (=2) EQUALS real Wedderburn block count (=2)
+       the fixed K/CPT conjugation in the readout context IS the real-structure fusion C[Z3]=C^3 -> R[Z3]=R⊕C
+
+========================================================================================
+X — independent numpy (float) cross-check of the K-orbit / sector count
+========================================================================================
+[PASS] X1 numpy: exactly chi_0 is K-fixed
+       K-fixed = [0]
+[PASS] X2 numpy: exactly {chi_1, chi_2} are K-swapped
+       K-swapped pairs = [(1, 2)]
+[PASS] X3 numpy: K/CPT-orbit sector count = 2 (1 fixed + 1 swapped pair)
+       #sectors = 2
+[PASS] X4 numpy: FS = (+1, 0, 0)
+       nu = (1.000, -0.000, 0.000)
+[PASS] X5 numpy: regular-rep eigenvalues = {1, omega, omega^2} (1 real singlet + 1 conjugate doublet pair)
+       eig(P) = [-0.5+0.866j -0.5-0.866j  1. +0.j   ]
+
+========================================================================================
+RESULT
+========================================================================================
+PASS=32 FAIL=0
+ALL CHECKS PASSED
+Generation readout resolves exactly TWO K/CPT-orbit sectors: SINGLET (chi_0, dim 1) + DOUBLET ({chi_1,chi_2}, dim 2).
+
+----- stderr -----
+

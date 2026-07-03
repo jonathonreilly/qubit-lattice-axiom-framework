@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_measure_positivity_agnostic_2026_05_31.py
-runner_sha256: f7c310e860f9fbc12b3e04f4fc0ee9bcf623209ac76f06e52c96d83d0ae7ad08
+runner_sha256: 0c4dddea68b3fef7fcd48ca04a545ff0c108e63ef6b32eab13b38cdbd7a955b5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 [PASS] P1 OS Gram PSD identically for 1-complex (det_C) and 2-real (det_R) -> RP AGNOSTIC to counting
@@ -14,12 +14,9 @@ status: ok
        RP necessary for the signed/Brannen readout (-> Q=2/3 possible) but holds for all r
 
 SCORECARD PASS=3 FAIL=0
-VERDICT: positivity AGNOSTIC -- does NOT select the Kahler measure / does NOT close r=1/2. Secures
-the signed-Hermitian readout CLASS (partial win, necessary for Q=2/3) but not the value. After this
-BOTH the symmetry-side and the measure/positivity-side levers are exhausted: r=1/2 is a FREE NATIVE
-reality-structure bit (complex-vs-real / det_C-vs-det_R counting of the doublet = field content =
-statistics = Dirac-vs-Majorana), generation-blind and C^3=I-forbidden as a symmetry, OS-invisible as
-a measure. Same as the framework's own statistics-selection open gap (G3). Natural campaign capstone.
+VERDICT: positivity AGNOSTIC -- these finite checks do NOT select det_C over det_R and do NOT
+close r=1/2. They secure the signed-Hermitian readout CLASS (partial support, necessary for
+Q=2/3) but not the value. Broader flavor-lane exhaustion, statistics selection, and any
+physical det_C readout bridge remain outside this runner's scope.
 
 ----- stderr -----
-

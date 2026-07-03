@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/source_resolved_transverse_propagating_green.py
-runner_sha256: 3b70fefaf3aa3a3698f2fac741296607fb9c642907c8e39925c3542f1acb870c
+runner_sha256: 63075d06038cffa5dbd0747d1776aefb662eff0704e5c0b2ce14c866ae99cdca
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 59.04
+elapsed_sec: 27.86
 status: ok
 ----- stdout -----
 ================================================================================================
@@ -21,22 +21,24 @@ REDUCTION CHECK
   zero-source same-site shift: +0.000000e+00
   zero-source transverse shift: +0.000000e+00
 
-       s         inst         same        trans  trans/same   trans-same
---------------------------------------------------------------------------------
-  0.0010 +2.050891e-03 +2.412419e-03 +2.389431e-03       1.165 -2.298764e-05
-  0.0020 +4.105409e-03 +4.824993e-03 +4.778958e-03       1.164 -4.603542e-05
-  0.0040 +8.225500e-03 +9.650581e-03 +9.558260e-03       1.162 -9.232051e-05
-  0.0080 +1.651142e-02 +1.930336e-02 +1.911765e-02       1.158 -1.857153e-04
+       s         inst         same        trans  trans/inst  trans/same   trans-same
+------------------------------------------------------------------------------------------------
+  0.0010 +2.050891e-03 +2.412419e-03 +2.389431e-03       1.165       0.990 -2.298764e-05
+  0.0020 +4.105409e-03 +4.824993e-03 +4.778958e-03       1.164       0.990 -4.603542e-05
+  0.0040 +8.225500e-03 +9.650581e-03 +9.558260e-03       1.162       0.990 -9.232051e-05
+  0.0080 +1.651142e-02 +1.930336e-02 +1.911765e-02       1.158       0.990 -1.857153e-04
 
 SUPPORT COMPARISON
   mean (trans support - same support): +0.000e+00
-  positive means transverse transport broadens detector support relative to same-site memory
+  support fraction is unchanged here
 
 SAFE READ
   instantaneous F~M exponent: 1.00
   same-site memory F~M exponent: 1.00
   transverse F~M exponent: 1.00
   TOWARD rows: 4/4
+  true trans/same range: 0.990 .. 0.990
+  ASSERTIONS: PASS
   this is a transverse-transport pocket, not a full propagating field theory
 
 ----- stderr -----

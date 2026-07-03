@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_higgs_mean_field_determinant_apbc_taste_bridge_2026_06_06.py
+runner_sha256: bbbf48f54728aab941dd020d1d0169d2548e8fa0364760bb9db70561f04dd899
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+==============================================================================
+Higgs mean-field determinant APBC taste bridge
+No physical Higgs mass identification; finite determinant algebra only.
+==============================================================================
+
+[Part 1] APBC / hypercube taste count
+  [PASS] binary APBC hypercube count is 2^4 = 16  (count=16)
+  [PASS] spin x taste carrier dimension is 4 x 4 = 16
+  [PASS] two taste-count descriptions agree
+
+[Part 2] explicit Euclidean Cl(4) Dirac element
+  [PASS] {gamma_mu,gamma_nu}=2 delta_mu_nu I
+  [PASS] D_spin^2 = 4 I_4
+  [PASS] D_spin is Hermitian
+
+[Part 3] spin-taste/color lift and mean-field determinant form
+  [PASS] D_16 has spin-taste dimension 16
+  [PASS] D_16^dag D_16 = 4 I_16
+  [PASS] color lift has dimension 48
+  [PASS] D_48^dag D_48 = 4 I_48
+  [PASS] D_mf^dag D_mf = 4 u_0^2 I_48
+  [PASS] W(J) = (48/2) log(J^2 + 4 u_0^2) gives W''(0)=48/(4u_0^2)  (W''=12/u_0**2)
+  [PASS] W''(0)/48 = 1/(4 u_0^2)  (per_mode=1/(4*u_0**2))
+  [PASS] 4/(u_0^2 N_taste) at N_taste=16 equals 1/(4u_0^2)  (R=1/(4*u_0**2))
+  [PASS] per-mode curvature matches R_lattice
+
+==============================================================================
+SUMMARY
+==============================================================================
+  PASS binary APBC hypercube count is 2^4 = 16 (count=16)
+  PASS spin x taste carrier dimension is 4 x 4 = 16
+  PASS two taste-count descriptions agree
+  PASS {gamma_mu,gamma_nu}=2 delta_mu_nu I
+  PASS D_spin^2 = 4 I_4
+  PASS D_spin is Hermitian
+  PASS D_16 has spin-taste dimension 16
+  PASS D_16^dag D_16 = 4 I_16
+  PASS color lift has dimension 48
+  PASS D_48^dag D_48 = 4 I_48
+  PASS D_mf^dag D_mf = 4 u_0^2 I_48
+  PASS W(J) = (48/2) log(J^2 + 4 u_0^2) gives W''(0)=48/(4u_0^2) (W''=12/u_0**2)
+  PASS W''(0)/48 = 1/(4 u_0^2) (per_mode=1/(4*u_0**2))
+  PASS 4/(u_0^2 N_taste) at N_taste=16 equals 1/(4u_0^2) (R=1/(4*u_0**2))
+  PASS per-mode curvature matches R_lattice
+
+TOTAL: 15 PASS / 0 FAIL
+
+----- stderr -----
+

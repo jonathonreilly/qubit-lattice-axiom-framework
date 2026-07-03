@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/p2_native_lorentzian_magnitude_test_2026_06_05.py
+runner_sha256: 96f4de0702db537a5c9fb41a88e1843f6fa4ddfad43ed488df13a276e9317545
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.68
+status: ok
+----- stdout -----
+== Block 0: native d=3+1 Dirac Hamiltonian H = alpha.k + beta m on Z^3 ==
+[PASS] alpha_1^2 = I_4: got=True want=True
+[PASS] {alpha_1, beta} = 0: got=True want=True
+[PASS] alpha_2^2 = I_4: got=True want=True
+[PASS] {alpha_2, beta} = 0: got=True want=True
+[PASS] alpha_3^2 = I_4: got=True want=True
+[PASS] {alpha_3, beta} = 0: got=True want=True
+[PASS] {alpha_1, alpha_2} = 0: got=True want=True
+[PASS] {alpha_1, alpha_3} = 0: got=True want=True
+[PASS] {alpha_2, alpha_3} = 0: got=True want=True
+[PASS] beta^2 = I_4: got=True want=True
+[PASS] H is Hermitian: got=True want=True
+
+== Block 1: native dispersion has 3 spatial terms (Z^3), single time ==
+[PASS] native eigenvalue +E multiplicity (spin): got=2 want=2
+[PASS] native eigenvalue -E multiplicity (antiparticle x spin): got=2 want=2
+[PASS] native dispersion E^2 = m^2 + u_0^2 (sin^2 k1 + sin^2 k2 + sin^2 k3) [exactly 3 spatial terms]: got=True want=True
+[PASS] number of spatial momentum directions in native dispersion: got=3 want=3
+
+== Block 2: native species count 2^3=8 vs Euclidean 2^4=16 ==
+[PASS] native d=3 BZ-corner species count (massless zeros): got=8 want=8
+[PASS] native d=3 total BZ corners: got=8 want=8
+[PASS] euclidean d=4 BZ-corner species count (massless zeros): got=16 want=16
+[PASS] euclidean d=4 total BZ corners: got=16 want=16
+[PASS] native species count = 2^3: got=8 want=8
+[PASS] euclidean species count = 2^4: got=16 want=16
+
+== Block 3: the 8->16 doubling IS the temporal momentum corner k_4 ==
+[PASS] Euclidean massless corners with temporal momentum k_4 = 0: got=8 want=8
+[PASS] Euclidean massless corners with temporal momentum k_4 = pi: got=8 want=8
+[PASS] k_4=0 slice + k_4=pi slice = 16: got=16 want=16
+[PASS] the 16th (extra) species are precisely the SECOND value of the temporal lattice momentum k_4 = pi; native single emergent time has no such temporal momentum corner -> stays at 8: got=True want=True
+
+== Block 4: native det(H) power u_0^4 vs Euclidean det(D) u_0^{8 L_t} ==
+[PASS] det(H) per spatial mode = (m^2 + u_0^2 sum sin^2)^2: got=True want=True
+[PASS] native det(H) minimal-block u_0 power (single emergent time): got=4 want=4
+[PASS] euclidean det(D) minimal-block u_0 power at L_t=1 (= 8 L_t): got=8 want=8
+[PASS] euclidean det(D) minimal-block u_0 power at L_t=2 (= 8 L_t): got=16 want=16
+[PASS] euclidean det(D) minimal-block u_0 power at L_t=3 (= 8 L_t): got=24 want=24
+[PASS] euclidean det(D) minimal-block u_0 power at L_t=4 (= 8 L_t): got=32 want=32
+[PASS] euclidean per-omega u_0 power = 2 x (taste count 4) = 8: got=8 want=8
+[PASS] the formula's u_0^16 = raw determinant power at L_t=2 (8*2=16); the L_t=4 minimal block gives u_0^32, halved to 16 by the geometric-mean VEV readout |det|^{1/(N_taste . L_t)} -> either way the L_t Matsubara multiplier is the temporal-lattice factor that is ABSENT natively: got=True want=True
+[PASS] native det(H) carries NO L_t multiplier (single continuous emergent time); its minimal-block power is fixed at 4 and cannot be raised by any temporal-mode count: got=True want=True
+
+== Block 5: chiral/CPT two-fold grades the spinor, adds NO corner ==
+[PASS] gamma_5^2 = I_4: got=True want=True
+[PASS] {gamma_5, gamma^0} = 0 (gamma_5 anticommutes with the time gamma): got=True want=True
+[PASS] gamma_5 eigenvalue +1 multiplicity: got=2 want=2
+[PASS] gamma_5 eigenvalue -1 multiplicity: got=2 want=2
+[PASS] gamma_5 acts WITHIN one corner's 4-spinor (grades it 2+2); the spatial BZ-corner count is unchanged at 8 -> chiral two-fold is NOT 'the 16th corner in disguise': got=True want=True
+[PASS] spatial corner-group rank (Z_2)^3: got=3 want=3
+[PASS] adding a 4th MOMENTUM corner raises rank to 4: got=4 want=4
+[PASS] chiral grading leaves corner-group rank at 3 (representation grading), whereas the temporal momentum corner raises it to 4 -- structurally different operations: got=True want=True
+
+== Block 6: magnitude comparison (context-only) ==
+    v_native (N=8,  d=3+1)   = 5.4080e+10 GeV
+    v_euclid (N=16, Z^4)     = 2.4768e+02 GeV
+    v_obs (PDG, context only)= 246.22 GeV
+    log10(v_native/v_obs)    = 8.34 decades
+[PASS] native (N=8) and euclidean (N=16) magnitudes differ by alpha_LM^8 (the exponent gap 16-8 = 8 = the native spatial-corner count itself): got=True want=True
+[PASS] exponent gap between euclidean and native branch: got=8 want=8
+[PASS] native branch overshoots the EW scale by > 5 decades (context: ~8.3); only the Euclidean N=16 branch is O(100 GeV): got=True want=True
+
+== Block 7: verdict ==
+[PASS] VERDICT = NATIVE-GIVES-DIFFERENT: native d=3+1 count is 2^3=8 (single emergent time has no temporal-momentum corner); the Euclidean 16 = 8(spatial) x 2(temporal corner) needs the Wick rotation Z^3->Z^4 (P2); native magnitude v ~ M_Pl(7/8)^{1/4}alpha_LM^8 ~ 5.4e10 GeV != 246 GeV. The exponent 16 and the +0.0255% v-match are Euclidean-regulator-specific, NOT native to d=3+1.: got=True want=True
+
+SUMMARY: PASS=46 FAIL=0
+
+----- stderr -----
+

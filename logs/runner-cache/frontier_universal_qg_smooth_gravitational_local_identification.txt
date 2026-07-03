@@ -3,7 +3,7 @@ runner: scripts/frontier_universal_qg_smooth_gravitational_local_identification.
 runner_sha256: 740537a9707d256c76bd5fa50556af9619d6a372528cd16696270188d24765ad
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 [EXACT] PASS: the route already has exact positive-background local GR closure and exact canonical textbook weak/measure equivalence

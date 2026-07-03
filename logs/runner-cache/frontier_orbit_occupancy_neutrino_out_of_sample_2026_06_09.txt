@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/frontier_orbit_occupancy_neutrino_out_of_sample_2026_06_09.py
+runner_sha256: a556a987c9682ebd5ade8d559550bca6de323f97dcf3dfa0cdafeda7d48f4d55
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.42
+status: ok
+----- stdout -----
+========================================================================================
+ORBIT-OCCUPANCY OUT-OF-SAMPLE PROGRAM: THE NEUTRINO SECTOR
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Anchor: ground truth + charged-lepton comparator
+----------------------------------------------------------------------------------------
+  [PASS] landed fork cells encoded verbatim: Majorana/real -> (r,Q)=(1,1); Dirac/holomorphic -> (1/2, 2/3) (the #3138 guard)
+  [PASS] charged-lepton anchor re-fit from PDG masses: Q_l = 0.666661 (6e-6 from 2/3), r_l = |b|^2/a^2 ~ 1/2, delta_l ~ 0.222 ~ 2/9 (exact circulant inversion, residual ~ 0)  --  Q_l=0.666661, r_l=0.499991, delta_l=0.22223, resid=7.1e-15
+
+----------------------------------------------------------------------------------------
+Rung 0: structural diagnostic -- Majorana forces the sector cell
+----------------------------------------------------------------------------------------
+  [PASS] K (conjugation) maps J -> -J: no K-invariant complex structure exists on the doublet => a K-FIXED (Majorana) multiplet cannot carry the complex slot  --  K-fixed locus is J-free; matches the LANDED Majorana-Berezin cell (r=1)
+  [PASS] => RUNG-0 DICHOTOMY (no free parameters): Majorana multiplet -> sector cell (Q=1); plain-Dirac multiplet with the standard circulant readout -> orbit cell (Q=2/3)  --  grounded in the landed cells, not re-derived loosely
+
+----------------------------------------------------------------------------------------
+Empirical standing: exclusion band from external oscillation comparators
+----------------------------------------------------------------------------------------
+  NO: Q_nu(m1=0) = 0.5857; max over all m1 = 0.5857; -> 1/3 as m1 grows
+  IO: Q_nu(m3=0) = 0.5000; max over all m3 = 0.5000
+  [PASS] for ANY absolute scale: Q_nu <= 0.59 (NO) and <= 0.50 (IO) => BOTH direct-readout cells (Q=1 and Q=2/3) are EXCLUDED by oscillation data  --  max Q_nu: NO=0.5857, IO=0.5000; both << 2/3 << 1
+
+----------------------------------------------------------------------------------------
+Rung-0 program statement + plain-Dirac direct-readout kill condition
+----------------------------------------------------------------------------------------
+  [PASS] PROGRAM STATEMENT (rung 0): orbit-occupancy plus the external oscillation comparators imply that the neutrino mass readout is not the direct charged-lepton-type context; the open program points to a structurally different mass operator/readout context  --  follows from rung-0 cells plus empirical comparator exclusion
+  [PASS] PLAIN-DIRAC DIRECT-READOUT KILL CONDITION: a conclusive plain-Dirac ELEMENTARY neutrino mass with a standard generation readout falsifies the rule outright  --  0nubb-class experiments bear on the Majorana horn
+
+----------------------------------------------------------------------------------------
+Rung 1: minimal seesaw (two flagged imports) -> closed form + Sum m_nu band
+----------------------------------------------------------------------------------------
+  [PASS] closed form DERIVED: Q_nu(delta) = (25.5 + 6*sqrt(2) cos 3delta)/36, range [0.4726, 0.9440] (symbolic expression + 12-point numeric certification)  --  sym diff = (sqrt(2)*sin(d + pi/6) - 1)**4/36 + (sqrt(2)*cos(d) + 1)**4/36 + (sqrt(2)*cos(d + pi/3) - 1)**4/36 - sqrt(2)*cos(3*d)/6 - 17/24; numeric agreement at 12 test points = True
+  [PASS] (a) delta_nu = delta_l = 2/9 gives Q_nu = 0.893 -- excluded by the empirical exclusion band: under the rung-1 imports, the neutrino Koide phase must differ from the charged-lepton phase  --  Q_nu(2/9) = 0.8936 > 0.5857 = max allowed (NO)
+  [PASS] (b) intersecting with the data band: NORMAL ordering preferred inside this imported model; m1 <= ~1.6 meV; Sum m_nu in ~[0.058, 0.060] eV -- at the minimal-NO value, decidable by future cosmology  --  m1_max = 1.63 meV; Sum m_nu = [0.0588, 0.0606] eV
+  [PASS] IO survives only in a sliver (viable IO band nearly empty vs NO band)  --  IO max Q = 0.5000 vs required >= 0.4726
+  [PASS] ORDERING/SUM KILL CONDITION and KOIDE-RATIO KILL CONDITION: IO confirmed OR Sum m_nu > ~0.065 eV kills rung 1; any Q_nu determination outside [0.4726, 0.586] kills rung 1; IMPORTS FLAGGED: minimal seesaw + degenerate M_R are model imports, NOT framework theorems
+
+----------------------------------------------------------------------------------------
+Quark survey (honesty appendix -- post-hoc flag, not corroboration)
+----------------------------------------------------------------------------------------
+  Q(c,b,t) = 0.6694  (|Q - 2/3| = 0.0028)
+  Q(d,s,b) = 0.7314  (|Q - 2/3| = 0.0648)
+  Q(u,s,b) = 0.7444  (|Q - 2/3| = 0.0777)
+  Q(u,d,s) = 0.5670  (|Q - 2/3| = 0.0996)
+  Q(u,c,t) = 0.8490  (|Q - 2/3| = 0.1823)
+  Q(s,c,b) = 0.4585  (|Q - 2/3| = 0.2082)
+  [PASS] (c,b,t) sits ~0.45% from 2/3; all other triples far -- recorded WITH the post-hoc flag: triple selection on scheme-dependent masses is a known failure mode; supportive-at-best, NOT corroboration
+
+----------------------------------------------------------------------------------------
+Program status
+----------------------------------------------------------------------------------------
+  [PASS] the evidence standard is NOT met today: no confirmed use-novel number yet; this runner ESTABLISHES the out-of-sample program, not the corroboration
+  [PASS] what would justify owner review of admission status: (i) cosmology resolving Sum m_nu ~ 0.059 eV with NO under the rung-1 imports, and/or (ii) 0nubb establishing Majorana [rung 0 horn]
+  [PASS] what BUSTS the rule: plain-Dirac elementary masses + standard readout; for rung 1: IO or Sum m_nu > ~0.065 eV, or Q_nu outside [0.473, 0.586]
+  [PASS] orbit occupancy remains a candidate premise/program surface; this note does not register it as Tier-A, add a primitive, or change any audit status
+
+========================================================================================
+SUMMARY: PASS=17 FAIL=0
+========================================================================================
+
+----- stderr -----
+

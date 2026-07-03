@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_history_monoid_unbounded_retention_2026_06_05.py
+runner_sha256: 5ee8c55b9781de6dac3f4523f10cbe1092c5b87bf29808834c4c34a8bdcc402b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+[PASS] M1.1 empty word is the two-sided identity
+[PASS] M1.2 concatenation is associative
+[PASS] M1.3 length is additive under concatenation
+[PASS] M1.4 finite alphabet has |O|^N finite words at fixed length
+[PASS] M1.5 every generated history is finite
+[PASS] C2.1 empty history maps to zero count
+[PASS] C2.2 count projection is a monoid homomorphism
+[PASS] C2.3 count addition is associative
+[PASS] C2.4 count addition is commutative
+[PASS] C2.5 appending an atom increments exactly its basis count
+[PASS] readout.1 scalar readout of empty count is zero
+[PASS] readout.2 scalar readout is additive over finite disjoint count sums
+[PASS] readout.3 append readout increment is the atom readout
+[PASS] D4.1 append preserves the previous history as a prefix
+[PASS] D4.2 append never decreases any count
+[PASS] D4.3 tagged histories preserve old site-record pairs under append
+[PASS] Z5.1 explicit line embedding gives N distinct Z^3 sites for N=0..20
+[PASS] Z5.2 no tested finite cap: 101 distinct sites exist on a lattice line
+[PASS] Z5.3 symbolic bound escape is B -> B+1 finite sites
+[PASS] T6.1 nonempty count total is history length, not probability normalization
+[PASS] T6.2 count entries are integers and can exceed one
+[PASS] T6.3 count normalization differs from probability normalization
+[PASS] B7.1 constructed histories are finite at each finite N
+[PASS] B7.2 lengths are unbounded over finite N samples
+[PASS] B7.3 no single constructed history has infinite length
+[PASS] G8.1 source note declares bounded theorem, not positive closure
+[PASS] G8.2 source note records exact post-record support boundary
+[PASS] G8.3 source note says production is not derived
+[PASS] G8.4 source note says readout context/alphabet are supplied
+[PASS] G8.5 source note keeps probability and IID outside the result
+[PASS] G8.6 source note blocks retained-status proposal language
+[PASS] G8.7 source note names downstream additivity row without promoting it
+
+=== Record history interpretation ===
+Finite record histories form an append-only free monoid; counts form N^O.
+Z^3 gives arbitrarily many distinct sites for any finite N, so no fixed finite cap is imposed by the framework carrier.
+This is bounded post-record support for unbounded finite retention, not production closure, completed infinity, or coherent qubit-state storage.
+SCORECARD PASS=32 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,79 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_pointer_broadcast_circuit_interface_2026_06_05.py
+runner_sha256: 581ec0a3ceab0f358e03e85355a825483613f684e163ee8fc98565d815e0b709
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+==============================================================================
+RECORD POINTER BROADCAST CIRCUIT INTERFACE
+bounded-support / conditional finite witness runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Fanout is unitary and pointer non-demolition
+------------------------------------------------------------------------------
+  [PASS] fanout matrix is unitary
+  [PASS] fanout matrix is a permutation
+  [PASS] system pointer bit is preserved on every basis input
+
+------------------------------------------------------------------------------
+2. Blank fragments broadcast pointer eigenvalues
+------------------------------------------------------------------------------
+  [PASS] zero pointer with blank fragments stays 0000
+  [PASS] one pointer with blank fragments becomes 1111
+  [PASS] output 0000 is locally decodable as 0
+  [PASS] output 1111 is locally decodable as 1
+  [PASS] all three fragments agree with pointer for 0000
+  [PASS] all three fragments agree with pointer for 1111
+
+------------------------------------------------------------------------------
+3. Blankness is a real input
+------------------------------------------------------------------------------
+  [PASS] dirty zero input is not a clean broadcast (0101)
+  [PASS] dirty one input is not a clean broadcast (1010)
+  [PASS] blank condition distinguishes clean from dirty zero
+  [PASS] blank condition distinguishes clean from dirty one
+
+------------------------------------------------------------------------------
+4. Superposition is not cloned
+------------------------------------------------------------------------------
+  [PASS] superposition output equals GHZ-style record state
+  [PASS] superposition output is not product clones
+  [PASS] reduced system loses original coherence
+  [PASS] reduced system retains Born diagonal weights
+  [PASS] GHZ norm is one
+  [PASS] cloned product norm is one
+
+------------------------------------------------------------------------------
+5. Typed residual ledger
+------------------------------------------------------------------------------
+  [PASS] witness supplies local decoder surface
+  [PASS] witness assumptions are explicit
+  [PASS] missing gates are disjoint from produced outputs
+  [PASS] clock/rate remain missing
+
+------------------------------------------------------------------------------
+6. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_POINTER_BROADCAST_CIRCUIT_INTERFACE_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: bounded-support
+  [PASS] note contains marker: trace_class: upstream_support
+  [PASS] note contains marker: conditional_surface_status:
+  [PASS] note contains marker: Does not derive broadcast dynamics
+  [PASS] note contains marker: Does not apply audit verdicts.
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: broadcast closure
+  [PASS] forbidden wording absent: hamiltonian closure
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=35 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,82 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yukawa_color_projection_boundary.py
+runner_sha256: f02fe4b335ce3bb8db4ff0b13786a1683bf5ec97c32a78836cb4c39cc6d7baef
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+========================================================================================
+Yukawa color-projection channel-fraction boundary verification
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: source boundary
+----------------------------------------------------------------------------------------
+  [PASS] new source-boundary title is present
+  [PASS] dedicated runner is named
+  [PASS] claim scope is representation-dimension fraction only
+  [PASS] explicit non-claims section is present
+  [PASS] physical matching bridge is explicitly out of scope
+
+----------------------------------------------------------------------------------------
+Part 2: dependency boundary
+----------------------------------------------------------------------------------------
+  [PASS] required dependency is linked: EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md
+  [PASS] required dependency is linked: NATIVE_GAUGE_CLOSURE_NOTE.md
+  [PASS] required dependency is linked: GRAPH_FIRST_SU3_INTEGRATION_NOTE.md
+  [PASS] excluded historical node is not markdown-linked: RCONN_DERIVED_NOTE.md
+  [PASS] excluded historical node is not markdown-linked: YT_EW_COLOR_PROJECTION_THEOREM.md
+  [PASS] excluded historical node is not markdown-linked: EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md
+
+----------------------------------------------------------------------------------------
+Part 3: no physical matching assertions
+----------------------------------------------------------------------------------------
+  [PASS] forbidden positive-claim phrase absent: y_t^{phys} =
+  [PASS] forbidden positive-claim phrase absent: Z_phi =
+  [PASS] forbidden positive-claim phrase absent: Z_phi^{phys} / Z_phi^{lattice}
+  [PASS] forbidden positive-claim phrase absent: m_t(pole
+  [PASS] forbidden positive-claim phrase absent: 172.57
+  [PASS] forbidden positive-claim phrase absent: Ward BC
+  [PASS] forbidden positive-claim phrase absent: sqrt(Z_phi)
+
+----------------------------------------------------------------------------------------
+Part 4: SU(N_c) generator normalization
+----------------------------------------------------------------------------------------
+  [PASS] N_c=2: generator count is N_c^2 - 1
+  [PASS] N_c=2: traceless Hermitian generators  (trace=0.00e+00, herm=0.00e+00)
+  [PASS] N_c=2: Tr[tA tB] = delta_AB/2  (diag=0.00e+00, offdiag=0.00e+00)
+  [PASS] N_c=3: generator count is N_c^2 - 1
+  [PASS] N_c=3: traceless Hermitian generators  (trace=0.00e+00, herm=0.00e+00)
+  [PASS] N_c=3: Tr[tA tB] = delta_AB/2  (diag=1.11e-16, offdiag=0.00e+00)
+  [PASS] N_c=4: generator count is N_c^2 - 1
+  [PASS] N_c=4: traceless Hermitian generators  (trace=5.55e-17, herm=0.00e+00)
+  [PASS] N_c=4: Tr[tA tB] = delta_AB/2  (diag=1.11e-16, offdiag=0.00e+00)
+  [PASS] N_c=5: generator count is N_c^2 - 1
+  [PASS] N_c=5: traceless Hermitian generators  (trace=5.55e-17, herm=0.00e+00)
+  [PASS] N_c=5: Tr[tA tB] = delta_AB/2  (diag=1.11e-16, offdiag=1.39e-17)
+
+----------------------------------------------------------------------------------------
+Part 5: Fierz completeness
+----------------------------------------------------------------------------------------
+  [PASS] N_c=2: Tr[M†M] decomposes into singlet plus adjoint  (max_err=3.55e-15)
+  [PASS] N_c=3: Tr[M†M] decomposes into singlet plus adjoint  (max_err=7.11e-15)
+  [PASS] N_c=4: Tr[M†M] decomposes into singlet plus adjoint  (max_err=7.11e-15)
+  [PASS] N_c=5: Tr[M†M] decomposes into singlet plus adjoint  (max_err=2.13e-14)
+
+----------------------------------------------------------------------------------------
+Part 6: exact channel fractions
+----------------------------------------------------------------------------------------
+  [PASS] N_c=2: singlet + adjoint fractions sum to 1  (1/4 + 3/4)
+  [PASS] N_c=3: singlet + adjoint fractions sum to 1  (1/9 + 8/9)
+  [PASS] N_c=4: singlet + adjoint fractions sum to 1  (1/16 + 15/16)
+  [PASS] N_c=5: singlet + adjoint fractions sum to 1  (1/25 + 24/25)
+  [PASS] N_c=3: adjoint fraction is exactly 8/9
+  [PASS] N_c=3: singlet fraction is exactly 1/9
+
+========================================================================================
+PASS=40 FAIL=0
+========================================================================================
+
+----- stderr -----
+

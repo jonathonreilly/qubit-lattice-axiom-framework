@@ -1,0 +1,89 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_open_system_reset_channel_interface_2026_06_05.py
+runner_sha256: 2fd22ea01455d7eef416cf200ac6a0f2f83ed7589d854ee6ee6504dbee4bf60b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+==============================================================================
+RECORD OPEN-SYSTEM RESET CHANNEL INTERFACE
+bounded-support / Stinespring-Kraus reset runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Stinespring and Kraus interface
+------------------------------------------------------------------------------
+  [PASS] n=1: isometry has expected shape
+  [PASS] n=1: V*V is identity
+  [PASS] n=1: Kraus operators are complete
+  [PASS] n=1: system reduces to blank state
+  [PASS] n=1: environment carries input state
+  [PASS] n=1: Kraus channel equals traced dilation
+  [PASS] n=2: isometry has expected shape
+  [PASS] n=2: V*V is identity
+  [PASS] n=2: Kraus operators are complete
+  [PASS] n=2: system reduces to blank state
+  [PASS] n=2: environment carries input state
+  [PASS] n=2: Kraus channel equals traced dilation
+  [PASS] n=3: isometry has expected shape
+  [PASS] n=3: V*V is identity
+  [PASS] n=3: Kraus operators are complete
+  [PASS] n=3: system reduces to blank state
+  [PASS] n=3: environment carries input state
+  [PASS] n=3: Kraus channel equals traced dilation
+
+------------------------------------------------------------------------------
+2. k=3 reset-stack witness
+------------------------------------------------------------------------------
+  [PASS] k=3 all basis states reset system to blank
+  [PASS] k=3 environment basis label is recoverable
+  [PASS] k=3 environment preserves coherence
+  [PASS] k=3 maximally mixed input resets system
+
+------------------------------------------------------------------------------
+3. Amplitude-damping rate boundary
+------------------------------------------------------------------------------
+  [PASS] p=0.5 does not exactly reset excited state
+  [PASS] p=1 exactly resets excited state
+  [PASS] finite gamma*t gives p<1 (0.864665)
+  [PASS] two finite damping steps still have p<1 (0.750000)
+  [PASS] p=0 leaves excited state unchanged
+  [PASS] damping endpoint is a supplied channel parameter
+
+------------------------------------------------------------------------------
+4. Repeated-cycle environment growth
+------------------------------------------------------------------------------
+  [PASS] cycles=1: environment dimension is d^m (8)
+  [PASS] cycles=1: exported capacity is k*m bits (3.0)
+  [PASS] cycles=2: environment dimension is d^m (64)
+  [PASS] cycles=2: exported capacity is k*m bits (6.0)
+  [PASS] cycles=3: environment dimension is d^m (512)
+  [PASS] cycles=3: exported capacity is k*m bits (9.0)
+  [PASS] cycles=4: environment dimension is d^m (4096)
+  [PASS] cycles=4: exported capacity is k*m bits (12.0)
+
+------------------------------------------------------------------------------
+5. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_OPEN_SYSTEM_RESET_CHANNEL_INTERFACE_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: bounded-support
+  [PASS] note contains marker: trace_class: upstream_support
+  [PASS] note contains marker: exact open-system reset channel interface
+  [PASS] note contains marker: Does not derive a Hamiltonian
+  [PASS] note contains marker: Does not say the environment may be discarded for free.
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: hamiltonian closure
+  [PASS] forbidden wording absent: cost closure
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: boundary closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=49 FAIL=0
+
+----- stderr -----
+

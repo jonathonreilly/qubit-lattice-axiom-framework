@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/frontier_neutrino_schur_suppression_named_admissions.py
+runner_sha256: d9f29ef66b691fdda1e2083b961d89543916322444a804c79b71d931d50f9a9d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.33
+status: ok
+----- stdout -----
+PASS T2 V_sel = TrH^4-(1/8)(TrH^2)^2 = 32 sum_{i<j} phi^2 phi^2 (retained graph-shift)
+PASS T2b Tr H^2 = 8|phi|^2
+PASS T2c V_sel Hessian at e_1 = diag(0,64,64)
+PASS T2d transverse curvature m_perp = 32
+PASS T1 single-channel Schur return: m - j^2/m  (Delta y = j^2/m)
+PASS T3 {gamma5,Gamma_1}=0, both involutive
+PASS T3b Y nilpotent (Y^2=0), Y+Y^dag = Gamma_1
+PASS T3c raw Frobenius ratio sqrt(Tr(Y^d Y)/Tr(G1^d G1)) = 1/sqrt2
+PASS T3d det(mI+jY)=m^16 (nilpotent, j-flat)
+PASS T3e det(mI+jG1)=(m^2-j^2)^8
+PASS T3f ADM-1: D=m I is NOT real anti-Hermitian (readout unlicensed by det-uniqueness)
+PASS T4 y_nu^eff = (g/sqrt2)^2/32 = g^2/64
+PASS CTRL wrong m_perp=16 gives g^2/32 (not g^2/64)
+PASS CTRL wrong j=g gives g^2/32 (not g^2/64)
+PASS CTRL rescaled 2*S_i: cross-coeff = 512 != 32 (graph-shift normalization has teeth)
+PASS SRC top-level status is bounded support over ADM-1/2/3
+PASS SRC 2026-06-12 firewall keeps ADM-1/2/3 live, no retained promotion
+PASS SRC ADM-3 positive closure must evade the native even-trace no-go
+
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

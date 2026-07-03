@@ -65,11 +65,12 @@ def sanitize_obj(value):
 def _add_alias(aliases: dict[str, str | None], alias: str, claim_id: str) -> None:
     if not alias:
         return
-    previous = aliases.get(alias)
-    if previous is None and alias not in aliases:
-        aliases[alias] = claim_id
-    elif previous != claim_id:
-        aliases[alias] = None
+    for candidate in {alias, alias.casefold()}:
+        previous = aliases.get(candidate)
+        if previous is None and candidate not in aliases:
+            aliases[candidate] = claim_id
+        elif previous != claim_id:
+            aliases[candidate] = None
 
 
 def note_path_aliases(note_path: str) -> set[str]:
@@ -78,6 +79,10 @@ def note_path_aliases(note_path: str) -> set[str]:
     basename = Path(normalized).name
     if basename:
         aliases.add(basename)
+        aliases.add(basename.lower())
+        stem = Path(basename).stem
+        aliases.add(stem)
+        aliases.add(stem.lower())
     return aliases
 
 
@@ -104,9 +109,19 @@ def canonicalize_decoration_parent_ids(ledger: dict) -> None:
         if not isinstance(parent, str) or not parent or parent in rows:
             continue
         normalized = parent.lstrip("./")
-        candidates = [parent, normalized, f"./{normalized}", Path(normalized).name]
+        basename = Path(normalized).name
+        stem = Path(basename).stem
+        candidates = [
+            parent,
+            normalized,
+            f"./{normalized}",
+            basename,
+            basename.lower(),
+            stem,
+            stem.lower(),
+        ]
         for candidate in candidates:
-            replacement = note_to_claim.get(candidate)
+            replacement = note_to_claim.get(candidate) or note_to_claim.get(candidate.casefold())
             if replacement:
                 row["decoration_parent_claim_id"] = replacement
                 break

@@ -3,6 +3,13 @@
 **Archived:** 2026-04-30 (README added 2026-05-01)
 **Audit verdict:** audited_failed for both notes (terminal; ACCEPT)
 
+## 2026-06-16 archive firewall
+
+The notes in this directory are historical / diagnostic and retired as
+evidence. They may be used as brainstorming records only. They are not current
+retained rankings, not stable testable-prediction maps, and not authority that
+their cited one-hop dependencies are audit-clean.
+
 ## What is here
 
 Two ranking/catalog notes were archived together because they share the
@@ -15,12 +22,12 @@ same failure mode:
 
 ### `MOONSHOT_OTHER_TESTABLES_NOTE.md`
 
-The note proposed the interferometric / waveguide phase-ramp analog as
-"the best non-diamond testable" because it "maps directly onto the
-strongest retained phase-sensitive observable." The audit found:
+The note proposed the interferometric / waveguide phase-ramp analog as its
+top non-diamond candidate by importing a phase-sensitive observable that was
+not established by the note. The audit found:
 
 - The shortlist imports unnamed retained artifacts and an `R² ~ 0.96`
-  phase-ramp result, then declares the analog the best testable.
+  phase-ramp result, then declares the analog the top testable.
 - There is **no cited authority set, no ranking metric, and no runner**
   from which the top-testable conclusion follows.
 

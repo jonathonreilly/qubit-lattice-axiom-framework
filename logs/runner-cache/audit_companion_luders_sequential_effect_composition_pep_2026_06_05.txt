@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py
+runner_sha256: d8abb4838954bf31606ef21e519ba6f45a5f58f6a6df0f8b03872cde52cc34c4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+FINITE PEP PROJECTION-COMPRESSION TRACE IDENTITY
+
+=== Part 0: source-note boundary ===
+[PASS] companion note exists  [docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md]
+[PASS] note declares bounded-support source theorem
+[PASS] note does not claim Lueders/Born derivation
+[PASS] note states PEP trace identity
+[PASS] note marks measurement rows downstream only
+
+=== Part 1: exact d=2 compression identities ===
+[PASS] P is an orthogonal projection
+[PASS] E is an effect with spectrum in [0,1]
+[PASS] rho is a density matrix
+[PASS] PEP is Hermitian
+[PASS] PEP is positive
+[PASS] P - PEP is positive
+[PASS] I - P is positive
+[PASS] trace identity Tr(rho PEP) = Tr(P rho P E)
+[PASS] boundary PIP = P
+[PASS] boundary IEI = E
+
+=== Part 2: numeric d=2,3,4 compression checks ===
+[PASS] d=2: trace identity over 300 seeds  [max err=2.78e-16]
+[PASS] d=2: PEP positive over 300 seeds  [min eig=-2.64e-16]
+[PASS] d=2: 0 <= PEP <= P <= I over 300 seeds  [min boundary eig=-9.90e-16]
+[PASS] d=2: nested compression identity over 300 seeds  [max err=4.51e-16]
+[PASS] d=3: trace identity over 300 seeds  [max err=2.22e-16]
+[PASS] d=3: PEP positive over 300 seeds  [min eig=-4.69e-16]
+[PASS] d=3: 0 <= PEP <= P <= I over 300 seeds  [min boundary eig=-1.09e-15]
+[PASS] d=3: nested compression identity over 300 seeds  [max err=4.51e-16]
+[PASS] d=4: trace identity over 300 seeds  [max err=2.22e-16]
+[PASS] d=4: PEP positive over 300 seeds  [min eig=-3.23e-16]
+[PASS] d=4: 0 <= PEP <= P <= I over 300 seeds  [min boundary eig=-1.71e-15]
+[PASS] d=4: nested compression identity over 300 seeds  [max err=4.75e-16]
+
+=== Part 3: exact nested compression and Jordan guard ===
+[PASS] exact nested identity P(QFQ)P = (QP)^*F(QP)
+[PASS] exact F=I boundary gives P Q P
+[PASS] nested compression is positive
+[PASS] Jordan symmetrization differs from compression
+[PASS] Jordan guard: trace scalar differs on rho
+
+SUMMARY: PASS=32 FAIL=0
+
+----- stderr -----
+

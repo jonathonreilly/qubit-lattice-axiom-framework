@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_observable_principle_positive_source_cone_p2_elimination_2026_06_06.py
+runner_sha256: 594c8b1f7254a1dc26d2dfd25b638f427be58c22cb2047b743bf3a62d2dbafe6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+
+==============================================================================
+A. Positive diagonal source cone: det(S + D) > 0
+==============================================================================
+[PASS] 300 real-skew + positive diagonal source blocks have det in R_{>0}  [min Re det=2.405e+00, max |Im det|=0.0e+00, max skew-conjugate err=3.6e-15]
+
+==============================================================================
+B. Homogeneous consumed sector: P2 imposes no phase restriction
+==============================================================================
+[PASS] det(D+jI) is real-positive for positive homogeneous sources  [Z=14.11, 38.54, 460.1, 2908]
+[PASS] phase-sensitive and phase-blind generators coincide when arg det=0  [max candidate spread=0.0e+00]
+
+==============================================================================
+C. Local derivative patch: small real diagonal sources stay phase-free
+==============================================================================
+[PASS] zero-source block is invertible with positive determinant  [sigma_min=9.193e-02, det=2.598e+01+0.0e+00i]
+[PASS] small local real diagonal source patch keeps det in R_{>0}  [max ||S||/sigma_min=0.250, min Re det=2.531e+01, max |Im|=0.0e+00]
+
+==============================================================================
+D. Additivity selects log on the phase-free source surface
+==============================================================================
+[PASS] determinant multiplicativity on independent source blocks  [rel err=0.0e+00]
+[PASS] Record additivity is represented by log det on R_{>0}  [log err=0.0e+00]
+
+==============================================================================
+E. Off-sector guard: global P2 is not being smuggled in
+==============================================================================
+[PASS] off the phase-free sector, phase-sensitive candidates differ  [difference=2.1000]
+[PASS] repair scope is source-cone/local-patch only; no global phase-blind axiom added  [global P2 remains out-of-scope unless separately derived]
+
+==============================================================================
+TOTAL: 9 PASS / 0 FAIL
+==============================================================================
+RESULT: On the finite real-skew staggered source sector consumed by the observable-principle parent, det(D+J) is real-positive on the positive source cone and on the checked local invertible source patch. Therefore log(det), Re log(det), and log|det| have the same source derivatives there, so P2 is eliminated on the in-scope source surface rather than admitted as a separate premise.
+
+----- stderr -----
+

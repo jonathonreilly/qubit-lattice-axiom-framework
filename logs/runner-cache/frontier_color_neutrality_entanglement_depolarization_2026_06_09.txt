@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_neutrality_entanglement_depolarization_2026_06_09.py
+runner_sha256: 65d64c6679437ab289e1571009de57b9a64d24f1417dac478ef7913e748e3097
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+=== E1: q-qbar singlet marginal is exactly I3/3 (fully color-blind) ===
+[PASS] E1 reduced color density of the singlet = I3/3
+[PASS] E1 order parameter Tr(rho^2)-1/3 = 0 at the singlet
+
+=== E2: Schur -- any GLOBAL-invariant joint state has marginal I3/3 ===
+[PASS] E2 P1 invariant under g (x) g*
+[PASS] E2 P8 invariant under g (x) g*
+[PASS] E2 marginal of singlet P1 = I3/3
+[PASS] E2 marginal of octet P8/8 = I3/3
+[PASS] E2 marginal of invariant mix 0.3 P1 + 0.7 P8/8 = I3/3
+
+=== E3: GLOBAL action (g (x) g*), no local link / connection used ===
+[PASS] E3 an independent LOCAL action g_x (x) h_y* does NOT fix the singlet
+[PASS] E3 singlet marginal = I3/3 independent of any frame (no V-eigenframe escape)
+
+=== E4: Schur no-go -- a lone fundamental carrier cannot be neutralized ===
+[PASS] E4 only invariant single-carrier operator is the scalar (twirl -> (Tr/Nc) I)
+[PASS] E4 no rank-1 (pure) single-carrier state equals I3/3 (rank 3)
+
+=== E5: baryon qqq singlet -- every single-carrier marginal = I3/3 ===
+[PASS] E5 baryon single-carrier reduced density = I3/3
+[PASS] E5 baryon order parameter Tr(rho^2)-1/3 = 0
+[PASS] E5 baryon singlet invariant under global g on all three carriers
+
+=== E6: separation from the twirl -- partial trace of a STATE, not an operator average ===
+[PASS] E6 twirl channel E_sing(M) = (Tr M/Nc) I (the block-05/Fierz operator map)
+[PASS] E6 non-invariant joint state has marginal != I3/3 (route is not a blanket average)
+
+=== E7: separation from the local-connection route (block 07) ===
+[PASS] E7 block-07 route is reducible (no depolarization) in the V-eigenframe
+[PASS] E7 entanglement route marginal = I3/3 with NO V and in every frame
+
+=== E8: weight-leak guard -- I3/3 is forced by invariance, not assigned by fiat ===
+[PASS] E8 a chosen non-invariant joint state has polarized marginal (P > 0)
+[PASS] E8 invariance (not fiat) is what forces I3/3
+
+=== E9: relocation/decision table (no hat discharged) ===
+[PASS] E9 only a globally color-neutral joint state depolarizes the marginal
+[PASS] E9 d=2 sanity: SU(2) singlet marginal = I2/2
+
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

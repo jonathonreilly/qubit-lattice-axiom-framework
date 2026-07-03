@@ -12,7 +12,7 @@
     "long_path_legacy_log": "logs/2026-04-07-lensing-long-path-test.txt"
   },
   "summary": {
-    "pass": 57,
+    "pass": 60,
     "fail": 0
   },
   "results": [
@@ -114,7 +114,7 @@
     {
       "name": "source_untruncated:finite_path_runner",
       "pass": true,
-      "detail": "scripts/lensing_analytical_finite_path.py has 6340 bytes"
+      "detail": "scripts/lensing_analytical_finite_path.py has 8950 bytes"
     },
     {
       "name": "source_marker:finite_path_runner:def alpha_centered_surrogate",
@@ -199,7 +199,7 @@
     {
       "name": "cache_sha_fresh:finite_path_cache",
       "pass": true,
-      "detail": "cache sha c15a10cc9ed40ca0dcc458a584de7b50bcb658be7554dc22d4e71ca11c945ef1 current sha c15a10cc9ed40ca0dcc458a584de7b50bcb658be7554dc22d4e71ca11c945ef1"
+      "detail": "cache sha 32652ffa24633f0fd20106750b9a33ceb056e217796e6786b81634a256ca8092 current sha 32652ffa24633f0fd20106750b9a33ceb056e217796e6786b81634a256ca8092"
     },
     {
       "name": "cache_exit_ok:finite_path_cache",
@@ -295,6 +295,21 @@
       "name": "note_preserves_open_gate_boundary",
       "pass": true,
       "detail": "repair section states that status movement remains audit-owned"
+    },
+    {
+      "name": "note_has_negative_boundary_title",
+      "pass": true,
+      "detail": "finite-path note is narrowed to a negative boundary packet"
+    },
+    {
+      "name": "note_disclaims_positive_explanation",
+      "pass": true,
+      "detail": "finite-path note disclaims positive detector-centroid explanation"
+    },
+    {
+      "name": "note_registers_no_go_claim_type",
+      "pass": true,
+      "detail": "audit registration records no_go claim type"
     },
     {
       "name": "note_names_remaining_centroid_bridge",

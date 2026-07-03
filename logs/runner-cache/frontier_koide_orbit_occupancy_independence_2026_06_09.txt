@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py
+runner_sha256: f4ab2195edef5046f508527894919d28a96b380247bfb908975eeaf4688fd7cd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.52
+status: ok
+----- stdout -----
+========================================================================================
+KOIDE OCCUPANCY ATOM: INDEPENDENCE + THE ORBIT-OCCUPANCY PREMISE CANDIDATE
+========================================================================================
+
+----------------------------------------------------------------------------------------
+O1: ground-truth cross-checks (the #3138 guard)
+----------------------------------------------------------------------------------------
+  [PASS] orbit partition under canonical K: {e0}, {e1,e2} (K(e1)=e2)
+  [PASS] Q-lever re-verified (100 draws)
+
+----------------------------------------------------------------------------------------
+O2: the Record axiom's OWN boundary clause (mechanical check on the axiom file)
+----------------------------------------------------------------------------------------
+  [PASS] the landed Record axiom explicitly supplies 'no ... weighting, normalization, probability ... or occupancy rule' (clause located in MINIMAL_AXIOMS_2026-06-05.md)  --  grep on the live axiom file
+  [PASS] the doublet measure-weight class IS a weighting/occupancy rule => by the axiom's own clause, Record does NOT supply it  --  classification of the atom under the axiom's non-supply list
+
+----------------------------------------------------------------------------------------
+O3: independence by exhibition -- two consistent models, different occupancy
+----------------------------------------------------------------------------------------
+  [PASS] exact weights: M_sector doublet Z_d = 2*pi/g; M_orbit doublet Z_d = pi/g; singlet weight common to both  --  Z_sector=2*pi/g, Z_orbit=pi/g
+  [PASS] the two models differ EXACTLY by the occupancy factor 2 = the fiber count of the 2:1 sector->orbit map (counted twice per outcome vs once)
+  [PASS] Z_3-equivariance: both weights depend on (a, |b|) only -- invariant under the Z_3 rotation b -> w b (checked: |w b| = |b|)
+  [PASS] K-invariance / orbit-definedness: both weights invariant under b -> conj(b) => outcomes-as-orbits respected (the O2/#3397 entailment)
+  [PASS] positivity + normalizability: both weights positive with finite Z (computed above)
+  [PASS] finite additivity: each model induces a finitely-additive readout on the 2-orbit outcome algebra (I(orbit union) = sum, exhibited on the partition)
+  [PASS] => independence: both occupancy rules are consistent with the checked constraint set, and the axiom's own clause (O2) declines to choose -- the occupancy rule is not supplied by the current checked premise surface  --  exhibition + boundary clause; no no-go claim beyond this
+  [PASS] refuted-route history mechanized: every refuted derivation route smuggled an occupancy rule (the CW/fluctuation-modulus route is a sector-side occupancy choice -- supplied, never retained; refs #2624/#2688)
+
+----------------------------------------------------------------------------------------
+DERIVED CELLS
+----------------------------------------------------------------------------------------
+  [PASS] DERIVED CELLS: real-Gaussian two-real-slot partition integral int_R int_R exp(-g*(x^2+y^2)/2) dx dy  --  Z_d=2*pi/g
+  [PASS] DERIVED CELLS: holomorphic-Gaussian one-complex-slot partition integral int_0^oo 2*pi*rho*exp(-g*rho^2) d rho  --  Z_d=pi/g
+  [PASS] DERIVED CELLS: Majorana Berezin pair integral int dtheta_2 dtheta_1 exp((2*pi/g)*theta_1*theta_2) = Pf([[0,p],[-p,0]])  --  p=2*pi/g; Z_d=2*pi/g
+  [PASS] DERIVED CELLS: holomorphic Berezin pair integral int dpsi_bar dpsi exp((pi/g)*psi_bar*psi) = det([pi/g])  --  Z_d=pi/g
+  [PASS] DERIVED CELLS: circulant Q theorem lever E_s=3*a^2, E_d=6*|b|^2; two-real-slot equipartition integral gives the Gaussian r per M_sector  --  <x^2>=1/(12*beta); <|b|^2>=2*<x^2>=1/(6*beta); <a^2>=1/(6*beta); r=1
+  [PASS] DERIVED CELLS: circulant Q theorem lever E_s=3*a^2, E_d=6*|b|^2; holomorphic one-complex-slot r per M_orbit from per-slot equipartition quantum, slot count from the measure definition  --  per-slot quantum=1/(2*beta); slots=1; <E_d>=1/(2*beta); <|b|^2>=1/(12*beta); <a^2>=1/(6*beta); r=1/2
+  [PASS] DERIVED CELLS: rho-map identity for M_sector follows from the partition integral and equipartition r  --  rho=(pi/g)/Z_d=1/2; r=1
+  [PASS] DERIVED CELLS: rho-map identity for M_orbit follows from the partition integral and equipartition r  --  rho=(pi/g)/Z_d=1; r=1/2
+  [PASS] derived cells match the landed four-cell table (consistency cross-check)  --  {'real_gaussian': (2*pi/g, 1, 1), 'majorana_berezin': (2*pi/g, 1, 1), 'holo_gaussian': (pi/g, 1/2, 2/3), 'holo_berezin': (pi/g, 1/2, 2/3)}
+
+----------------------------------------------------------------------------------------
+O4: consequence map at the LANDED bookkeeping level (no new bridge invented)
+----------------------------------------------------------------------------------------
+  [PASS] orientation guard part 1: the candidate rho := Z_d/(2*pi/g) gives the inverted r-per-model assignment, REJECTED by the derived cell integrals  --  candidate r_pair=(1/2, 1); derived r_pair=(1, 1/2)
+  [PASS] orientation guard part 2: under r = 1/(2 rho), the derived r-per-model values require rho = (pi/g)/Z_d  --  required rho_pair=(1/2, 1); partition rho_pair=(1/2, 1)
+  [PASS] landed orientation pinned by derived cells: rho = (pi/g)/Z_d reproduces the derived r and Q values per model  --  r_pair=(1, 1/2); Q_pair=(1, 2/3)
+  [PASS] CONVENTION-FREE core fact: r_sector / r_orbit = Z_d_sector / Z_d_orbit = 2 exactly -- the cell ratio is the occupancy factor, independent of any normalization convention
+
+----------------------------------------------------------------------------------------
+O5: the premise candidate -- ORBIT-OCCUPANCY (proposal content; NOT adopted)
+----------------------------------------------------------------------------------------
+  [PASS] granularity matching: among the two exhibited slot choices, the orbit-occupancy model is the unique choice whose statistical slot-groups biject with record-outcomes (2 = 2); the sector model mismatches (3 slots vs 2 outcomes)  --  outcomes=2; orbit-model slots=2; sector-model slots=3
+  [PASS] category parallel to the approved kinetic_isotropy_primitive: 'the tick is grained like the edge' :: 'the statistics is grained like the outcomes' -- dimensionless, structural, binary, no fitted number (proposal category only)
+  [PASS] COMPARATOR (labeled, never an input): PDG Q = 0.666661 sits on the orbit-occupancy cell (2/3) to 6e-6; the sector-occupancy cell (Q=1) is excluded empirically by ~50%  --  Q_PDG=0.666661
+
+----------------------------------------------------------------------------------------
+O6: scope
+----------------------------------------------------------------------------------------
+  [PASS] NOT a derivation of r=1/2; NOT adoption of the premise (owner-decision, the xi=1 playbook: independence => honest resolution is an explicit structural premise, never a smuggled one)
+  [PASS] no new microscopic moment-bridge invented: cell assignments are derived from the explicit per-cell integrals and rho-map identity, with the landed table kept only as a consistency cross-check; only the cell RATIO (=2) is claimed convention-free
+  [PASS] the phase delta remains a separate admission (radian-period note); this atom concerns r only
+  [PASS] consequence IF the owner approves orbit-occupancy: r=1/2 and Q=2/3 follow from the landed lever -- the Koide ratio becomes a consequence of counting outcomes rather than sectors; stated as the proposal's payoff, not as a result
+
+========================================================================================
+SUMMARY: PASS=32 FAIL=0
+========================================================================================
+
+----- stderr -----
+

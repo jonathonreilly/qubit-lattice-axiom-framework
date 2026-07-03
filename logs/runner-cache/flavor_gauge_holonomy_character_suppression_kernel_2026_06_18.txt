@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.py
+runner_sha256: 6afba9f01e1e4ada370e45c5fcd2b9e40b92b9401dcdcaae710f30578fde6425
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.89
+status: ok
+----- stdout -----
+FLAVOR GAUGE HOLONOMY CHARACTER-SUPPRESSION KERNEL
+========================================================================
+[PASS] kernel dependencies are retained-grade in the live ledger
+       matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08=retained_bounded, fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09=retained_bounded, koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18=retained, koide_circulant_character_bridge_narrow_theorem_note_2026-05-09=retained, koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19=retained, three_generation_observable_theorem_note=retained
+[PASS] finite triangle-identity proof certificate is nonnegative on phase grid
+       max_identity_error=7.105e-15, min_gap=0.000e+00, equality_violations=0
+[PASS] fibre-averaged hop coefficient is exactly character-normalized
+       max_formula_error=2.776e-16
+[PASS] normalized character multiplier cannot enhance r
+       max_bound_excess=1.110e-16
+[PASS] bound propagates an arbitrary free r0=0.11
+       r_eff=0.031998
+[PASS] bound propagates an arbitrary free r0=0.31
+       r_eff=0.090177
+[PASS] bound propagates an arbitrary free r0=0.50
+       r_eff=0.145446
+[PASS] bound propagates an arbitrary free r0=0.87
+       r_eff=0.253077
+[PASS] kernel note records framework-native proof and no new axiom
+[PASS] parent note cites the kernel note, runner, and cache
+[PASS] physical sector-to-representation readout remains open
+[PASS] source change does not promote audit status
+
+VERDICT: the character-suppression kernel is a finite framework-native support theorem; the flavor sector readout/representation assignment remains open for the parent no-go.
+SCORECARD PASS=12 FAIL=0
+
+----- stderr -----
+

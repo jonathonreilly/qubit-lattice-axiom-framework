@@ -1,95 +1,165 @@
-# Flavor — which measure principle would make `r=1/2` native? A conditional tracial-standard-form analysis
+# Flavor - Record Exposes The Carrier-Measure Residual
 
 **Date:** 2026-05-30
+**Updated:** 2026-06-07
 **Claim type:** bounded_theorem
-**Claim boundary:** conditional foundational analysis, not a derivation on the current axioms and not a
-new axiom proposal to land. The runner verifies the algebra of the generator-channel Hilbert-Schmidt
-measure and the competing partitions; it does not prove that the present framework selects that measure.
-**Runner:** `scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py` (SCORECARD PASS=6).
-**Source:** 18-agent panel `wf_9d4261e9` — 14 foundational architects (distinct traditions) + convergence/skeptic/overshoot evaluators + synthesis.
+**Claim boundary:** exact finite-algebra and Record-boundary theorem. This
+note does not introduce a new axiom and does not claim that the framework has
+selected the generator-channel Hilbert-Schmidt measure. It repairs the older
+"missing axiom" framing by replacing it with a current-surface statement:
+Lattice + Quantum + Record supply finite record coordinates once a readout
+surface is specified, and they also prove that the Koide weight is not selected
+by Record additivity alone.
+**Runner:** `scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py`
+(SCORECARD PASS=9 FAIL=0).
 
-## Question (user)
-Without assuming framework baseline are fixed or minimal, and without an import: what AXIOM would let the
-framework derive the charged-lepton modulus `r=|b|²/a²=1/2` (Koide Q=2/3), and what SHAPE would it have?
+## Repair Summary
 
-## Answer — the missing ingredient would be a MEASURE selection, not a dynamical law
-Fourteen architects (MaxEnt, least-action, KMS/Tomita, MaxEP, spectral-action/Connes, Kähler,
-bootstrap, holographic, records/Darwinism, structural-revisionist, RG fixed-point, constructor
-theory, sum-over-geometries, PT/exceptional-point) all reach r=1/2 — but the three cross-evaluators
-agree the convergence is on **one arithmetic identity**: equal Hilbert-Schmidt weight on the two
-trace-orthogonal C₃-isotypic generator channels,
-`3a² = 6b²  ⟺  ‖aI‖²_HS = ‖b(J−I)‖²_HS  ⟺  r = ‖I‖²/‖J−I‖² = 1/(N−1) = 1/2 at N=3`.
-Nine of fourteen reduce *literally* to this line; the dynamical/variational/equilibrium dressings
-(entropy, action, modular flow, dissipation, RG) add **no content** over the bare relation. So the
-current packet therefore exposes a **measure-selection gap** (which invariant inner product and which
-partition are physical), not a force-law derivation. A dynamical A3 is *over-machinery* for fixing one
-ratio unless it also derives this measure selection.
+The earlier version asked what axiom would make
+`r = |b|^2/a^2 = 1/2` native. That is no longer the right formulation. The
+accepted framework now has three axioms, including Record. The correct audit
+surface is therefore:
 
-## The real gap is a three-way fork (rep theory ranks none)
-The same operator gives three different r under three partitions of the algebra:
-| partition | condition | r |
+1. Work out the finite generator-channel algebra inside the existing
+   framework language.
+2. Cite the current Record algebra in parallel.
+3. Prove that Record supplies coordinates and coarse-grainings, not the
+   missing weight selector.
+
+So the result is not "add or revise an axiom." The result is a boundary
+theorem for the existing axioms: the carrier-measure residual is now named
+precisely.
+
+## Finite Algebra
+
+Let `J_N` be the all-ones matrix and let
+
+```text
+B_N = J_N - I_N.
+```
+
+In the Hilbert-Schmidt form,
+
+```text
+||I_N||^2 = N,        ||B_N||^2 = N(N-1),        <I_N, B_N> = 0.
+```
+
+If a separate theorem selects equal Hilbert-Schmidt energy across the two
+generator channels, then
+
+```text
+N a^2 = N(N-1)b^2,
+```
+
+and therefore
+
+```text
+r = b^2/a^2 = 1/(N-1).
+```
+
+For `N=3`, this gives `r=1/2` and the standard finite generation coordinate
+
+```text
+Q = 1/3 + (2/3)r = 2/3.
+```
+
+This is an exact algebraic consequence of the supplied generator-channel
+Hilbert-Schmidt scoring rule. It is not a derivation of that scoring rule.
+
+## Three Competing Partitions
+
+The same circulant operator still admits three inequivalent finite readings:
+
+| partition | condition | result |
 |---|---|---|
-| isotypic **generator channels** (I vs J−I) | `3a²=6b²` | **1/2** |
-| **eigenvalue / idempotent** content | `(a+2b)²=2(a−b)²` | `17/2−6√2 ≈ 0.0147` |
-| **per-mode** (3 equal components) | — | `1` |
-The missing axiom's only real job is to **break this fork structurally**, not by fiat.
+| generator channels `I` versus `J-I` | `3a^2 = 6b^2` | `r=1/2` |
+| eigenvalue / idempotent content | `(a+2b)^2 = 2(a-b)^2` | `r=17/2 - 6 sqrt(2)` |
+| per-mode basis equipartition | `a^2=b^2` | `r=1` |
 
-## Best concrete candidate if the axioms were revised
-**candidate revised Axiom 1 (carrier + canonical metric):** the on-site generation carrier is `ℝ[Z₃]` in its **tracial
-standard form** — acting on its GNS / `L²(ℝ[Z₃], τ)` space with the canonical normalized group trace.
-This singles out the group-element ONB `{e, g, g²}`; the mass operator is the C₃-unbiased
-`H = a·e + b·(g+g²)`; and the `(1,2)` weight (one identity direction vs two non-identity directions)
-would be the dimension count of the carrier's canonical basis under the generator-channel scoring rule.
-Equal Hilbert-Schmidt energy per isotypic channel — `a²·1 = b²·2 → r=1/2`, the channel-counting /
-`(1, N−1)` carrier-basis partition — would then be inherited from what H is built on, not selected from a
-fixed H. This note does **not** make that revision. (This is **not** thermodynamic equipartition, which is per-degree-of-freedom: genuine
-equipartition over the `{e, g, g²}` basis is `a²=b² → r=1 → Q=1`, the dimension/Plancherel weighting. So
-the channel-counting posit is not an "obvious" equipartition.) Every layered selection proposal must first
-postulate or derive *both* the HS form *and* a scoring functional; the candidate revision would combine
-both into one structural choice of carrier + canonical metric.
+The finite representation theory verifies all three. It does not rank them.
+The ranking is the physical carrier-measure bridge.
 
-**Why revise A1 rather than add A3:** A1 currently says "a qubit `M₂(ℂ)=Cl(3)_even` per site" but is
-**silent on which inner product and partition govern the generation algebra** — exactly the silence the
-three-way fork exploits. candidate revised Axiom 1 closes that silence at the source. The price — re-deriving the qubit /
-Cl(3) structure as an operator *on* this carrier — is the right kind of debt (it pushes the question to
-foundations rather than papering over it with a selection principle).
+## What Record Now Supplies
 
-## Falsifiable content (this is not "positing the number")
-1. **`r = 1/(N−1)` ties r=1/2 to the derived generation count 3 if the generator-channel HS measure is selected** — r=1/2 is then tied to `n_gen=3`, not
-   tuned. (N=2→r=1; N=4→r=1/3; N=6→r=1/5 → Q=7/15.) The strongest handle.
-2. **Conditional cross-sector universality with a structural escape:** any sector realized as the unbiased C₃
-   group-algebra element → Q=2/3 (neutrinos predicted at 2/3 *unless* off-carrier / Majorana); CKM-mixed
-   quark sectors deviate — consistent with observed quark Koide ≠ 2/3.
-3. **Coheres with the derived signed/Hermitian (Dirac `H=iD`) readout** — the τ/HS form *is* the
-   invariant of that readout class, not the singular-value/Yukawa class.
+`RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05` gives the exact reusable
+Record surface: for a supplied finite sector decomposition, scalar readout is
+finitely additive, coarse-grainings are incidence matrices, and ratios such as
+`rho=d/u` or `d/(u+d)` are valid structural coordinates.
 
-## Two independent corroborators worth keeping alive
-- **Kähler / moment-map (#6):** reaches r=1/2 by a *structurally distinct* computation (rank-weighted
-  phase-averaged moments `1·(a²+4b²)=2·(a²+b²)`; same final relation `a²=2b²`, different machinery), so
-  r=1/2 is a fixed point of **more than one** principle. Predicts `Q=2/3 ⟺ complex b ⟺ Dirac/U(1)-gauged
-  sector`, so **Majorana neutrinos (real b, frozen Brannen phase) must depart from 2/3** — a structural
-  prediction — and it explains the derived δ-independence as the gauge direction of the quotient.
-- **PT / exceptional-point (#14):** the only proposal checkable against PDG *today*. Charged leptons sit
-  at `r=0.5000` exactly (the reality edge / exceptional point); up-quarks `r≈0.773` and down-quarks
-  `r≈0.597` are both PT-broken (`r>1/2`). Recasts lepton "fine-tuning" as saturation of a stability edge.
+For the generation two-sector readout,
 
-## What it costs / does not break
-r=1/2 is an **interior point of the commuting circulant family**: `[H,S]=0` holds, so the candidate
-axiom introduces **no** chiral/anticommuting operator and therefore does **not** trip the
-generation-chirality no-go (`comm(S) ∩ anticomm(Γ_χ) = {0}`). **The VALUE lane is clean and decoupled
-from the chirality gate** — a structurally separate (and more tractable) question. candidate revised Axiom 1 preserves every
-retained derivation (3 generations, C₃ regular rep, signature (3,1)/emergent time, the Koide identity).
-The residual cost is the one all proposals share — privileging the tracial/HS form + isotypic-generator
-split over the Plancherel-per-dimension (→r=1) or eigenvalue/idempotent (→0.0147) partitions — carried
-by candidate revised Axiom 1 in its minimal, named form (a single structural commitment about the carrier's metric).
+```text
+singlet readout = a^2,        doublet readout = 2|b|^2,
+rho = doublet/singlet = 2r.
+```
 
-## Honest bottom line
-> **The algebraic route to r=1/2 is not a new dynamical law; it is the generator-channel HS measure on
-> `ℝ[Z₃]` in tracial standard form. The current framework has not selected that measure over the
-> idempotent/eigenvalue or per-mode alternatives. If a future axiom revision adopted that carrier metric
-> and scoring rule, the `(1,2)` isotypic weight would become a carrier property and
-> `r=1/(N−1)=1/2` would be inherited rather than selected.**
+This is enough to express the dial. It is not enough to choose the dial.
+Indeed, finite additivity leaves the normalized two-sector coordinate
+arbitrary: for any supplied `p in (0,1)`, choosing
 
-## Stale-citation flags
-- Anchors retained on main: `KOIDE_Q23_BLOCK_WEIGHT_FRONTIER` (retained_bounded),
-  `koide_z3_equivariant_anticommuting_no_go` (retained_bounded). `koide_signed_eigenvalue_vs_singular_value_readout` is audited_FAILED (used only qualitatively).
+```text
+d = p u / (1-p)
+```
+
+gives `d/(u+d)=p`. Thus Record permits both the generator-channel endpoint
+`r=1/2` (`rho=1`) and the dimension/per-mode endpoint `r=1` (`rho=2`), along
+with a continuum of other supplied readout ratios.
+
+This agrees with `FLAVOR_RECORD_READOUT_FORM_NOT_WEIGHT_2026-06-02`: Record
+can support additive/log form once a multiplicative amplitude surface is
+supplied, but it does not select the within-`C_3` singlet/doublet weight.
+
+## Independent Algebraic Corroborator
+
+The Kähler / moment-map calculation remains worth keeping as a non-identical
+finite check:
+
+```text
+1*(a^2 + 4b^2) = 2*(a^2 + b^2)
+```
+
+also gives `r=1/2`. This is useful because it shows the same numerical value
+arises from more than one algebraic scoring functional. It is not a physical
+selection theorem by itself.
+
+## Chirality Boundary
+
+At `r=1/2`, the circulant mass operator
+
+```text
+H = aI + b(J-I)
+```
+
+still commutes with the cyclic shift. The value lane therefore does not use a
+new chiral or anticommuting operator. This remains separate from the
+generation-chirality no-go surfaces: selecting the carrier measure for `r`
+does not derive chirality, and chirality no-go statements do not by themselves
+select the Koide weight.
+
+## Honest Result
+
+The framework-native repair is:
+
+```text
+Record supplies finite additive readout coordinates.
+Generator-channel Hilbert-Schmidt scoring would give r=1/(N-1).
+Record additivity alone cannot select that scoring rule.
+```
+
+So the audit target is now cleanly bounded: the note preserves the finite
+algebra and the Record-boundary statement for independent review, while the
+positive Koide value still waits on a separate carrier-measure /
+readout-selection theorem. No new axiom is introduced.
+
+## Remaining Open Bridge
+
+The open bridge is not an axiom-count issue. It is a theorem target:
+
+```text
+derive, from the current framework surface, why the physical generation
+readout uses generator-channel Hilbert-Schmidt scoring rather than
+dimension/per-mode or idempotent/eigenvalue scoring.
+```
+
+Until that bridge is proved, `r=1/2` is exact support under a named supplied
+measure, not an unbounded framework consequence.

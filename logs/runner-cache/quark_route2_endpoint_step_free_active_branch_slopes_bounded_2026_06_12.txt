@@ -1,0 +1,86 @@
+===== runner cache v1 =====
+runner: scripts/quark_route2_endpoint_step_free_active_branch_slopes_bounded_2026_06_12.py
+runner_sha256: 87c70736f62c2e845d8b750e1341fddb16f0be5a64427bb408178c5d7a39f64e
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 11.46
+status: ok
+----- stdout -----
+Route-2 endpoint active-branch eta-floor derivative
+==============================================================================
+
+Top-5 max-abs entries for q=center/e0, direction=E_x
+  1. probe0:xx value=-7.007177027199e-05 abs=7.007177027199e-05 dE/dt=+3.072011837258e-05 margin_next=3.503588513600e-05 rel_margin_next=5.000000000000e-01
+  2. probe0:yy value=+3.503588513600e-05 abs=3.503588513600e-05 dE/dt=-1.536005918629e-05 margin_next=0.000000000000e+00 rel_margin_next=0.000000000000e+00
+  3. probe0:zz value=+3.503588513600e-05 abs=3.503588513600e-05 dE/dt=-1.536005918629e-05 margin_next=1.046321897465e-05 rel_margin_next=2.986429180836e-01
+  4. probe1:xy value=-2.457266616134e-05 abs=2.457266616134e-05 dE/dt=-8.673792781692e-06 margin_next=0.000000000000e+00 rel_margin_next=0.000000000000e+00
+  5. probe1:yx value=-2.457266616134e-05 abs=2.457266616134e-05 dE/dt=-8.822295523490e-06 margin_next=6.815628270627e-06 rel_margin_next=2.773662502016e-01
+
+Top-5 max-abs entries for q=center/e0, direction=T1x
+  1. probe0:xx value=-7.007177027199e-05 abs=7.007177027199e-05 dE/dt=-2.736190582996e-05 margin_next=3.503588513600e-05 rel_margin_next=5.000000000000e-01
+  2. probe0:yy value=+3.503588513600e-05 abs=3.503588513600e-05 dE/dt=+1.368095291498e-05 margin_next=0.000000000000e+00 rel_margin_next=0.000000000000e+00
+  3. probe0:zz value=+3.503588513600e-05 abs=3.503588513600e-05 dE/dt=+1.368095291498e-05 margin_next=1.046321897465e-05 rel_margin_next=2.986429180836e-01
+  4. probe1:xy value=-2.457266616134e-05 abs=2.457266616134e-05 dE/dt=-3.462895251465e-05 margin_next=0.000000000000e+00 rel_margin_next=0.000000000000e+00
+  5. probe1:yx value=-2.457266616134e-05 abs=2.457266616134e-05 dE/dt=-3.482260334098e-05 margin_next=6.815628270627e-06 rel_margin_next=2.773662502016e-01
+
+Top-5 max-abs entries for q=shell/s_sqrt6, direction=E_x
+  1. probe0:xx value=-4.608047364021e-05 abs=4.608047364021e-05 dE/dt=+1.637317210303e-05 margin_next=1.208546819918e-05 rel_margin_next=2.622687495258e-01
+  2. probe1:xy value=-3.399500544104e-05 abs=3.399500544104e-05 dE/dt=-9.182235996104e-06 margin_next=0.000000000000e+00 rel_margin_next=0.000000000000e+00
+  3. probe1:yx value=-3.399500544104e-05 abs=3.399500544104e-05 dE/dt=-9.277713349834e-06 margin_next=1.095476862093e-05 rel_margin_next=3.222464146955e-01
+  4. probe0:yy value=+2.304023682011e-05 abs=2.304023682011e-05 dE/dt=-8.186586051510e-06 margin_next=0.000000000000e+00 rel_margin_next=0.000000000000e+00
+  5. probe0:zz value=+2.304023682011e-05 abs=2.304023682011e-05 dE/dt=-8.186586051517e-06 margin_next=5.355900460560e-06 rel_margin_next=2.324585681292e-01
+
+Top-5 max-abs entries for q=shell/s_sqrt6, direction=T1x
+  1. probe0:xx value=-4.608047364021e-05 abs=4.608047364021e-05 dE/dt=-3.283448931862e-05 margin_next=1.208546819918e-05 rel_margin_next=2.622687495258e-01
+  2. probe1:xy value=-3.399500544104e-05 abs=3.399500544104e-05 dE/dt=-3.865271323633e-05 margin_next=0.000000000000e+00 rel_margin_next=0.000000000000e+00
+  3. probe1:yx value=-3.399500544104e-05 abs=3.399500544104e-05 dE/dt=-3.876646384396e-05 margin_next=1.095476862093e-05 rel_margin_next=3.222464146955e-01
+  4. probe0:yy value=+2.304023682011e-05 abs=2.304023682011e-05 dE/dt=+1.641724465931e-05 margin_next=0.000000000000e+00 rel_margin_next=0.000000000000e+00
+  5. probe0:zz value=+2.304023682011e-05 abs=2.304023682011e-05 dE/dt=+1.641724465931e-05 margin_next=5.355900460560e-06 rel_margin_next=2.324585681292e-01
+
+Argmax stability at module EPS=0.005
+  q=center/e0     dir=E_x base=probe0:xx minus=probe0:xx plus=probe0:xx base_rel_margin=5.000000000000e-01 base_abs_gap=3.503588513600e-05
+  q=center/e0     dir=T1x base=probe0:xx minus=probe0:xx plus=probe0:xx base_rel_margin=5.000000000000e-01 base_abs_gap=3.503588513600e-05
+  q=shell/s_sqrt6 dir=E_x base=probe0:xx minus=probe0:xx plus=probe0:xx base_rel_margin=2.622687495258e-01 base_abs_gap=1.208546819918e-05
+  q=shell/s_sqrt6 dir=T1x base=probe0:xx minus=probe0:xx plus=probe0:xx base_rel_margin=2.622687495258e-01 base_abs_gap=1.208546819918e-05
+
+Active-branch source-direction slopes
+  q=center/e0     dir=E_x beta=-3.072011837258e-05 anchor=8.143540299590e-02 gamma=-3.772329630901e-04
+  q=center/e0     dir=T1x beta=+2.736190582996e-05 anchor=8.143540299590e-02 gamma=+3.359952161265e-04
+  q=shell/s_sqrt6 dir=E_x beta=-1.637317210303e-05 anchor=8.143540299590e-02 gamma=-2.010571753891e-04
+  q=shell/s_sqrt6 dir=T1x beta=+3.283448931862e-05 anchor=8.143540299590e-02 gamma=+4.031967438077e-04
+
+Finite-difference cross-checks
+  q=center/e0     dir=E_x eps=1.0e-03 back=-3.073331107777e-05 fwd=-3.070697787132e-05 central=-3.072014447454e-05 beta=-3.072011837258e-05 bracket=True
+  q=center/e0     dir=E_x eps=5.0e-04 back=-3.072673036841e-05 fwd=-3.071346218095e-05 central=-3.072009627468e-05 beta=-3.072011837258e-05 bracket=True
+  q=center/e0     dir=T1x eps=1.0e-03 back=+2.734150928695e-05 fwd=+2.738233044706e-05 central=+2.736191986701e-05 beta=+2.736190582996e-05 bracket=True
+  q=center/e0     dir=T1x eps=5.0e-04 back=+2.735176136046e-05 fwd=+2.737210664147e-05 central=+2.736193400096e-05 beta=+2.736190582996e-05 bracket=True
+  q=shell/s_sqrt6 dir=E_x eps=1.0e-03 back=-1.638635401500e-05 fwd=-1.635998260706e-05 central=-1.637316831103e-05 beta=-1.637317210303e-05 bracket=True
+  q=shell/s_sqrt6 dir=E_x eps=5.0e-04 back=-1.637977455637e-05 fwd=-1.636659260780e-05 central=-1.637318358209e-05 beta=-1.637317210303e-05 bracket=True
+  q=shell/s_sqrt6 dir=T1x eps=1.0e-03 back=+3.281406728053e-05 fwd=+3.285490012457e-05 central=+3.283448370255e-05 beta=+3.283448931862e-05 bracket=True
+  q=shell/s_sqrt6 dir=T1x eps=5.0e-04 back=+3.282423784400e-05 fwd=+3.284480762597e-05 central=+3.283452273498e-05 beta=+3.283448931862e-05 bracket=True
+
+Endpoint affine assembly from active-branch derivatives
+  delta_center=1.666666666667e-01
+  delta_shell =0.000000000000e+00
+  endpoint_gap=1.666666666667e-01
+  gamma_E(delta) = -2.010571753891e-04 + (-1.057054726206e-03) delta_A1
+  gamma_T(delta) = +4.031967438077e-04 + (-4.032091660873e-04) delta_A1
+  |b_E/b_T| = 2.621603909613
+  |a_T/a_E| = 2.005383508584
+  |b_T/a_T| = 1.000030809474
+  mpmath30 final-assembly drift <= 4.441e-16
+PASS: center endpoint active max is unique -- active=probe0:xx, abs_gap=3.504e-05, rel_gap=5.000e-01
+PASS: shell endpoint active max is unique -- active=probe0:xx, abs_gap=1.209e-05, rel_gap=2.623e-01
+PASS: module-step argmax stability for q=center/e0, dir=E_x -- minus=probe0:xx, base=probe0:xx, plus=probe0:xx
+PASS: module-step argmax stability for q=center/e0, dir=T1x -- minus=probe0:xx, base=probe0:xx, plus=probe0:xx
+PASS: module-step argmax stability for q=shell/s_sqrt6, dir=E_x -- minus=probe0:xx, base=probe0:xx, plus=probe0:xx
+PASS: module-step argmax stability for q=shell/s_sqrt6, dir=T1x -- minus=probe0:xx, base=probe0:xx, plus=probe0:xx
+PASS: one-sided FD slopes at eps=1e-3 and 5e-4 bracket each active-branch derivative -- all four endpoint-direction probes bracketed at both requested steps
+PASS: central FD cross-checks stay within the observed tensor-stencil roundoff envelope -- max |central_fd-beta| = 3.342e-11
+PASS: endpoint support gap is the admitted 1/6 support scalar -- endpoint_gap = 1.666666666667e-01
+PASS: active-branch t_balance lies in the finite-difference stable band -- t_balance=1.000030809474, band=[1.0000260, 1.0000319]
+PASS: 30-digit mpmath final assembly agrees with double final assembly -- max ratio drift = 4.441e-16
+TOTAL: PASS=11, FAIL=0
+
+----- stderr -----
+

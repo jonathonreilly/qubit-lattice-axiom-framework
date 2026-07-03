@@ -1,0 +1,81 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dynamics_nontriviality_selection_firewall_2026_06_06.py
+runner_sha256: 9c9fb63201e085dd2a451bc3504a5e720a2dc8d6c1ce49970d0f9ef892720d36
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/DYNAMICS_NONTRIVIALITY_SELECTION_FIREWALL_2026-06-06.md exists
+PASS docs/DYNAMICS_NONTRIVIALITY_SELECTION_FIREWALL_2026-06-06.md contains: actual_current_surface_status: no-go
+PASS docs/DYNAMICS_NONTRIVIALITY_SELECTION_FIREWALL_2026-06-06.md contains: trace_class: negative_route_pruning
+PASS docs/DYNAMICS_NONTRIVIALITY_SELECTION_FIREWALL_2026-06-06.md contains: allowed dynamics class
+PASS docs/DYNAMICS_NONTRIVIALITY_SELECTION_FIREWALL_2026-06-06.md contains: Does not select a generation or Koide dial location.
+PASS docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md exists
+PASS docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md contains: non-triviality
+PASS docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md contains: trivial `H = 0` is in the class
+PASS docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md contains: does **not** derive the action
+PASS docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md contains: couplings + the minimality/truncation
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md exists
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: does not select couplings
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: nonzero dynamics
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: couplings, action shape, and lowest-order truncation
+PASS docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md contains: nontriviality of the physical Hamiltonian/transfer step
+PASS docs/TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md exists
+PASS docs/TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md contains: does not derive gauge dynamics
+PASS docs/TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md contains: coupling values
+PASS docs/TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md contains: The safe downstream use is only the bounded finite-algebra statement
+
+------------------------------------------------------------------------------
+Allowed-class membership does not select coefficients
+------------------------------------------------------------------------------
+PASS mass is Hermitian
+PASS mass commutes with conserved charge
+PASS electric is Hermitian
+PASS electric commutes with conserved charge
+PASS charge_exchange is Hermitian
+PASS charge_exchange commutes with conserved charge
+PASS gauge-variant control fails the class predicate
+PASS zero Hamiltonian is Hermitian
+PASS zero Hamiltonian is in the allowed class
+PASS couplings (0.0, 0.0, 0.0) remain in allowed class
+PASS couplings (1.0, 0.0, 0.0) remain in allowed class
+PASS couplings (0.0, -2.0, 0.0) remain in allowed class
+PASS couplings (0.25, -1.5, 3.0) remain in allowed class
+PASS couplings (-7.0, 0.125, 0.5) remain in allowed class
+PASS multiple distinct nonzero allowed Hamiltonians exist
+PASS class predicate does not choose among allowed coupling tuples
+PASS H=0 gives trivial Heisenberg derivative
+PASS nonzero allowed H can give nontrivial derivative
+
+------------------------------------------------------------------------------
+Allowed class does not force lowest-order truncation
+------------------------------------------------------------------------------
+PASS leading local invariants exist
+PASS higher-range allowed invariants are not excluded by class membership
+PASS bare open hop is excluded by class membership
+PASS minimality/truncation principle supplied flag is false
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS nonzero dynamics selected flag is false
+PASS coupling values selected flag is false
+PASS action shape selected flag is false
+PASS lowest-order truncation selected flag is false
+PASS clock/rate selected flag is false
+PASS Born/probability selected flag is false
+PASS generation/Koide dial selected flag is false
+
+SUMMARY: PASS=48 FAIL=0
+FORM_CLASS_SELECTS_NONZERO_DYNAMICS=FALSE
+FORM_CLASS_SELECTS_COUPLINGS_ACTION_OR_TRUNCATION=FALSE
+ALLOWED_CLASS_MEMBERSHIP_INTERFACE=TRUE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

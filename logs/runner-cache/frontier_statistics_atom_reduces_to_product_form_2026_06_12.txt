@@ -1,0 +1,79 @@
+===== runner cache v1 =====
+runner: scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py
+runner_sha256: 1915b07dcd7ba2584f61a1aaa45985284520ffff2231f2a374937620a86f40be
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.54
+status: ok
+----- stdout -----
+W8a statistics atom reduction runner
+Status authority: independent audit lane only; this runner sets no audit outcome.
+
+========================================================================================
+Symbolic checks
+========================================================================================
+PASS: K1 restatement: 2x2 Born partition arithmetic
+      p_s=a, p_d=1 - a, sum=1
+PASS: K1 restatement: 3x3 supplied two-outcome partition arithmetic
+      p_s=a, p_d=1 - a, sum=1
+PASS: K2 premise: supplied outcome factorization gives m(j,k)=p_j p_k without a joint-state product
+      normalized four weights sum to 1 after p_d=1-p_s
+PASS: K2 witness: Tr((A tensor B)(C tensor D)) factors for the overstrong product-state example
+PASS: K2 witness: sigma tensor sigma product partition gives p_j p_k
+      ('s', 's')=a**2, ('s', 'd')=a*(1 - a), ('d', 's')=a*(1 - a), ('d', 'd')=(a - 1)**2
+PASS: K2 completeness: four joint product weights sum to 1
+PASS: K3a agreement conditioning gives ratio map x -> x^2
+      p_s'=p_s**2/(p_d**2 + p_s**2), p_d'=p_d**2/(p_d**2 + p_s**2)
+PASS: K3b x=2r gives r -> 2r^2 and inverse sqrt(r/2)
+      inverse=sqrt(2)*sqrt(r)/2
+PASS: K3c finite-odds chart is explicit: p_s>0 for x=p_d/p_s; endpoints are fixed directly
+      p_d=0 gives x=0 in chart; p_s=0 is the all-d fixed boundary outside the finite chart
+PASS: K4 structural witness: correlated joint weights do not factor
+      w_sd=0, product p_s p_d=p_d*p_s
+PASS: K4 structural witness: agreement conditioning is identity
+      conditioned=(p_s/(p_d + p_s), p_d/(p_d + p_s))
+PASS: K4 reduction assembly: retained Born form plus supplied outcome factorization gives bounded flow
+      non-retained ingredient isolated as the outcome-factorization premise
+
+========================================================================================
+Textual firewall checks
+========================================================================================
+PASS: B1 Gleason dependency contains H_Lambda application phrase
+PASS: B2 note quotes the Gleason H_Lambda application phrase
+PASS: B3 Gleason dependency contains Born-form claim sentence
+PASS: B4 Busch dependency contains m(E)=Tr form
+PASS: B5 note quotes the Busch m(E)=Tr form
+PASS: B6 MINIMAL_AXIOMS contains the non-supply clause
+PASS: B7 note quotes the MINIMAL_AXIOMS non-supply clause
+PASS: B7b product-form weakening dependency proves outcome factorization is enough
+PASS: B7c companion no-go prunes Born-marginals-alone repair route
+PASS: B7d product-instance criterion bridge is linked without claiming physical independence
+PASS: B8 firewall sentences present
+PASS: B9 closing/adoption overclaim language absent
+PASS: B10 markdown link inventory is exactly the five requested dependencies
+      found=['[`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)', '[`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)', '[`PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md`](PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md)', '[`STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md`](STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md)', '[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)']
+PASS: B11 context and companion names are backticked only
+      missing=[]; linked=[]
+PASS: B12 No-promotion statement present
+PASS: B13 Date and supplied-outcome bounded_theorem claim type present
+PASS: B14 K1-K4 check tags present
+PASS: B15 outcome-factorization premise is named but not discharged
+PASS: B16 source does not call the outcome-factorization premise retained
+
+========================================================================================
+git diff --stat
+========================================================================================
+(computed without invoking git, per the no-git rule)
+ docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md | 255 +
+ docs/STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md | 175 +
+ scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py | 459 +
+ 3 files changed, 889 insertions(+)
+
+SUMMARY:
+K1-K4 verified symbolically; note firewall, dependency links, supplied-outcome-factorization boundary, product-instance bridge, companion no-go, backticked context, and No-promotion statement verified.
+The only non-retained ingredient isolated by the computation is the named outcome-factorization premise.
+TOTAL: PASS=31 FAIL=0
+CHAIN: {'k1': True, 'k2': True, 'k3': True, 'k4': True}
+
+----- stderr -----
+

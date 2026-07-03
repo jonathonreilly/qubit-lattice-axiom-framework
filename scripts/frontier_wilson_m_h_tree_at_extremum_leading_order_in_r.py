@@ -17,7 +17,9 @@ with sanity checks:
     negative);
   - leading-order closure value r ≈ 0.235 closes the +12% gap (m_H_PDG =
     125.10 GeV used as comparison input, NOT load-bearing);
-  - perturbative validity: expansion fails at r = O(u_0).
+  - perturbative validity: the closed square-root is compared against
+    first and second Taylor truncations, and the leading square-form is
+    compared against the all-orders Wilson closed form by residual scaling.
 
 Inputs (canonical bounded surface; no Monte Carlo, no PDG as proof input):
 - the upstream curvature at m^* = -4r from the sister extremum note
@@ -37,6 +39,7 @@ from __future__ import annotations
 
 from fractions import Fraction
 from pathlib import Path
+import math
 import re
 import sys
 
@@ -101,6 +104,8 @@ def part1_note_structure():
         ("Proof-Walk section header", "## Proof-Walk"),
         ("Exact Arithmetic Check section header",
          "## Exact Arithmetic Check"),
+        ("post-audit repair section header",
+         "## Post-audit readout-boundary repair"),
         ("Dependencies section header", "## Dependencies"),
         ("Boundaries section header", "## Boundaries"),
         ("Verification section header", "## Verification"),
@@ -115,8 +120,14 @@ def part1_note_structure():
         ("leading-order closure value r ≈ 0.235 stated", "r ≈ 0.235"),
         ("perturbative validity boundary stated",
          "perturbative expansion fails at"),
+        ("Taylor residual repair stated",
+         "Taylor-validity certificate"),
         ("uniform-N_taste=16 admission cited",
          "uniform-`N_taste = 16`"),
+        ("readout boundary certificate cited",
+         "WILSON_EXTREMUM_CURVATURE_READOUT_BOUNDARY_CERTIFICATE_2026-06-15"),
+        ("all-orders consistency certificate cited",
+         "WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08"),
         ("non-derived admission flagged in boundaries",
          "non-derived"),
         ("V_taste^W extremum upstream cited (sister)",
@@ -173,6 +184,8 @@ def part3_premise_class_consistency():
     section("Part 3: cited upstreams (with graceful same-batch handling)")
     must_exist = [
         "docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md",
+        "docs/WILSON_EXTREMUM_CURVATURE_READOUT_BOUNDARY_CERTIFICATE_2026-06-15.md",
+        "docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md",
         "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
         "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
         "docs/MINIMAL_AXIOMS_2026-05-03.md",
@@ -377,7 +390,7 @@ def part7_leading_closure_value():
 # Part 8: Perturbative-expansion validity boundary
 # ---------------------------------------------------------------------------
 def part8_perturbative_validity():
-    section("Part 8: perturbative-expansion validity (fails at r = O(u_0))")
+    section("Part 8: perturbative-expansion validity and Taylor residuals")
     # The formula (2): m_H^W = m_H_zero · sqrt(1 - 3 r^2 / u_0^2)
     # requires 1 - 3 r^2 / u_0^2 > 0, i.e. r < u_0 / sqrt(3) ≈ 0.51 at u_0 ≈ 0.8776.
     # At r = u_0 / sqrt(3), m_H^W = 0; beyond, the curvature is no longer
@@ -418,6 +431,122 @@ def part8_perturbative_validity():
         f"computed r_crit^2 = {float(r_critical_sq):.6f}, expected ≈ 0.507^2",
     )
 
+    # Small-x Taylor control: for x = 3 r^2/u_0^2,
+    # sqrt(1-x) = 1 - x/2 - x^2/8 - ... . In genuinely perturbative rows, the
+    # first-truncation error should be controlled by the next x^2/8 scale.
+    for r_test in (Fraction(1, 100), Fraction(5, 100), Fraction(1, 10)):
+        x = 3 * (r_test * r_test) / (U_0 * U_0)
+        closed_factor = float(Fraction(1) - x) ** 0.5
+        first_taylor = 1.0 - 0.5 * float(x)
+        next_term = 0.125 * float(x * x)
+        error = abs(closed_factor - first_taylor)
+        check(
+            f"r = {float(r_test):.3f}: closed sqrt agrees with first Taylor through O(x^2)",
+            error <= 1.02 * next_term,
+            f"x={float(x):.6e}, error={error:.6e}, next_term={next_term:.6e}",
+        )
+
+    # Audit repair: do not stop at square-root positivity. Compare the
+    # closed-form factor sqrt(1 - 3 r^2/u_0^2) with the truncated Taylor
+    # factor 1 - (3/2) r^2/u_0^2 used in the leading-order matching.
+    print()
+    print("  closed-form vs leading Taylor factor:")
+    comparison_rows = []
+    for r_test in [Fraction(1, 10), Fraction(235, 1000), Fraction(5, 10)]:
+        rsq_over_u0sq = (r_test * r_test) / (U_0 * U_0)
+        ratio_sq = Fraction(1) - 3 * rsq_over_u0sq
+        closed_factor = float(ratio_sq) ** 0.5
+        taylor_factor = float(Fraction(1) - Fraction(3, 2) * rsq_over_u0sq)
+        abs_err = abs(closed_factor - taylor_factor)
+        rel_err = abs_err / max(abs(closed_factor), 1.0e-15)
+        comparison_rows.append((r_test, closed_factor, taylor_factor, abs_err, rel_err))
+        print(
+            f"    r={float(r_test):.3f}: closed={closed_factor:.9f}, "
+            f"taylor={taylor_factor:.9f}, abs_err={abs_err:.3e}, rel_err={rel_err:.3e}"
+        )
+
+    r_small, _, _, _, rel_small = comparison_rows[0]
+    r_match, _, _, _, rel_match = comparison_rows[1]
+    r_edge, _, _, abs_edge, rel_edge = comparison_rows[2]
+    check(
+        "Taylor truncation agrees with closed form in the small-r control row",
+        rel_small < 5.0e-4,
+        f"r={float(r_small):.3f}, relative error={rel_small:.3e}",
+    )
+    check(
+        "Taylor truncation remains sub-percent at the displayed matching row",
+        rel_match < 1.0e-2,
+        f"r={float(r_match):.3f}, relative error={rel_match:.3e}",
+    )
+    check(
+        "Taylor truncation visibly breaks down near the validity edge",
+        abs_edge > 0.25 and rel_edge > 1.0,
+        f"r={float(r_edge):.3f}, absolute error={abs_edge:.3e}, relative error={rel_edge:.3e}",
+    )
+
+    # Post-audit hardening: positivity is necessary but not sufficient for
+    # a Taylor-validity certificate. Compare the closed square-root ratio
+    # against the first and second Taylor truncations and verify the known
+    # residual coefficients:
+    #   sqrt(1-x) = 1 - x/2 - x^2/8 - x^3/16 + O(x^4).
+    rows = []
+    for r_float in [0.01, 0.02, 0.04]:
+        x = 3.0 * r_float * r_float / float(U_0 * U_0)
+        closed = math.sqrt(1.0 - x)
+        first = 1.0 - x / 2.0
+        second = 1.0 - x / 2.0 - x * x / 8.0
+        e1 = abs(closed - first)
+        e2 = abs(closed - second)
+        rows.append((x, e1, e2))
+        print(
+            f"  Taylor sample r={r_float:.3f}: x={x:.6e}, "
+            f"closed={closed:.12f}, first_err={e1:.3e}, second_err={e2:.3e}"
+        )
+    check(
+        "second Taylor truncation improves over first for all small-r samples",
+        all(e2 < e1 for _, e1, e2 in rows),
+    )
+    coeffs1 = [e1 / (x * x) for x, e1, _ in rows]
+    coeffs2 = [e2 / (x * x * x) for x, _, e2 in rows]
+    check(
+        "first Taylor residual coefficient is near 1/8",
+        all(0.11 < c < 0.14 for c in coeffs1),
+        f"coeffs={coeffs1}",
+    )
+    check(
+        "second Taylor residual coefficient is near 1/16",
+        all(0.055 < c < 0.075 for c in coeffs2),
+        f"coeffs={coeffs2}",
+    )
+
+    # Compare the all-orders Wilson square-form readout to this note's
+    # leading square-form approximation. The difference should scale as
+    # O(r^4) under r -> r/2.
+    def all_orders_sq(r: Fraction) -> Fraction:
+        binom = [1, 4, 6, 4, 1]
+        u0sq = U_0 * U_0
+        rsq = r * r
+        total = Fraction(0)
+        for k, mult in enumerate(binom):
+            xk = (k - 2) ** 2 * rsq
+            total += mult * (u0sq - xk) / ((xk + u0sq) ** 2)
+        return total / 64
+
+    def leading_sq(r: Fraction) -> Fraction:
+        return Fraction(1, 4) / (U_0 * U_0) - Fraction(3, 4) * r * r / (U_0 ** 4)
+
+    residuals = []
+    for r_test in [Fraction(1, 20), Fraction(1, 40), Fraction(1, 80)]:
+        residual = abs(all_orders_sq(r_test) - leading_sq(r_test))
+        residuals.append(residual)
+        print(f"  all-orders square residual r={float(r_test):.5f}: {float(residual):.3e}")
+    ratios = [float(residuals[i] / residuals[i + 1]) for i in range(len(residuals) - 1)]
+    check(
+        "all-orders-minus-leading square residual scales as O(r^4)",
+        all(10.0 < q < 25.0 for q in ratios),
+        f"ratios={ratios}",
+    )
+
 
 # ---------------------------------------------------------------------------
 # Part 9: Forbidden-import audit
@@ -425,7 +554,7 @@ def part8_perturbative_validity():
 def part9_forbidden_imports():
     section("Part 9: stdlib-only / no PDG pins (other than declared comparison)")
     runner_text = Path(__file__).read_text()
-    allowed_imports = {"fractions", "pathlib", "re", "sys", "__future__"}
+    allowed_imports = {"fractions", "pathlib", "math", "re", "sys", "__future__"}
     import_lines = [
         ln.strip() for ln in runner_text.splitlines()
         if ln.strip().startswith("import ") or ln.strip().startswith("from ")
@@ -479,6 +608,8 @@ def part10_boundary_check():
     not_claimed = [
         "the +12% Higgs gap chain",
         "the physical Higgs mass `m_H` numerical value",
+        "the physical Higgs-pole readout from the diagnostic curvature scale",
+        "the channel-selection principle",
         "the all-orders Wilson correction",
         "the value of the Wilson coefficient `r` itself",
         "the plaquette mean-field link `u_0` numerical value",

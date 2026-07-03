@@ -1,13 +1,18 @@
 # Lane 5 `eta` Retirement Gate Audit: The Single Microscopic Selector That Retires `eta` From The Bounded Cosmology Cascade
 
 **Date:** 2026-04-26
-**Status:** support gate-audit note on `main`. Identifies the precise residual
-microscopic selector law whose retention would promote the reduced-surface
-PMNS leptogenesis support branch to retained closure, retiring `eta` from the
-bounded `Omega_b -> R -> Omega_DM -> Omega_m -> Omega_Lambda` cascade.
+**Status:** support gate-identification note on `main`.
+**Claim type:** open_gate
+**Status authority:** independent audit lane only; effective status is
+pipeline-derived.
+**Claim scope:** identifies the precise residual microscopic selector law for
+future DM-lane work. This note does not derive that selector, retire `eta`,
+promote the reduced-surface support branch, or apply an audit verdict.
 **Lane:** 5 — Hubble constant `H_0` derivation (sub-route 5A, advancing
 `(C2)` per the cosmic-history-ratio necessity no-go).
 **Workstream:** `hubble-h0-20260426`
+**Primary runner:** [`scripts/frontier_hubble_lane5_eta_retirement_gate_source_packet.py`](../scripts/frontier_hubble_lane5_eta_retirement_gate_source_packet.py)
+**Primary runner cache:** [`logs/runner-cache/frontier_hubble_lane5_eta_retirement_gate_source_packet.txt`](../logs/runner-cache/frontier_hubble_lane5_eta_retirement_gate_source_packet.txt)
 
 ---
 
@@ -16,7 +21,7 @@ bounded `Omega_b -> R -> Omega_DM -> Omega_m -> Omega_Lambda` cascade.
 Cycle 3 (`HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md`)
 established that Lane 5 closure requires a `(C2)` cosmic-history-ratio
 retirement OR a `(C3)` direct cosmic-`L` derivation in addition to a
-`(C1)` absolute-scale axiom. The bounded cascade
+`(C1)` scale route. The bounded cascade
 
 ```text
 eta -> Omega_b (BBN) -> R = Omega_DM/Omega_b -> Omega_m -> Omega_Lambda
@@ -136,14 +141,15 @@ chain of consequences is:
    numerical satisfies the `(C2)` pathway requirement for Lane 5.
 
 This is exactly the `(C2)` half of the Lane 5 closure-pathway corollary.
-The `(C1)` half (absolute scale) remains separately required for `H_0`
+The `(C1)` half (scale route) remains separately required for `H_0`
 itself.
 
 ## 4. Promotion-gate constraints
 
 The doublet-block point-selection law must:
 
-- be derived from `A_min` plus the retained PMNS/CP machinery
+- be derived from the current framework baseline plus the retained PMNS/CP
+  machinery
   (the PMNS note series, the DM leptogenesis note series, and the retained
   PMNS atlas);
 - act on the moving `Z_3` doublet block rather than on a frozen slot
@@ -200,7 +206,7 @@ must therefore either:
   research target.
 - Close any DM-lane no-go.
 - Retire `eta` (only the gate-resolving selector law would).
-- Retire `alpha_GUT`, `T_CMB`, or the absolute-scale `(C1)` premise.
+- Retire `alpha_GUT`, `T_CMB`, or the `(C1)` scale route.
 
 ## 6. Cross-references
 
@@ -221,13 +227,14 @@ must therefore either:
 
 ## 7. Boundary
 
-This is an audit / gate-identification artifact, not a theorem and not a
-runner-bearing cycle. It does not retire any input. It moves the lane
-state by isolating the precise gate so subsequent DM-lane work can
-target the right object.
+This is an audit / gate-identification artifact, not a theorem. It does
+not retire any input. It moves the lane state by isolating the precise
+gate so subsequent DM-lane work can target the right object.
 
-A runner is not authored: the audit is a structural review of existing
-retained material; no new symbolic or numerical claim is introduced.
+The attached source-packet runner makes the dependency anchors,
+single-gate inventory, and non-promotion boundary replayable for
+independent re-audit. It does not derive the missing right-sensitive
+selector law, retire `eta`, close `(C2)`, or apply an audit verdict.
 
 ## Audit dependency repair links
 

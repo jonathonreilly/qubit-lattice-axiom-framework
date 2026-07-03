@@ -1,0 +1,99 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_link_index_routing_carrier_budget_2026_06_05.py
+runner_sha256: cf8490a2e3b1f96d96c9cb1c8662e7eb494763a0e7838ad06b719f98b81c126f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+COLOR LINK-INDEX ROUTING CARRIER BUDGET
+bounded-support / exact finite-dimensional obstruction runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. One-qubit obstruction
+------------------------------------------------------------------------------
+  [PASS] one qubit Hilbert dimension = 2
+  [PASS] one qubit matrix algebra dimension = 4
+  [PASS] one qubit traceless Hermitian Lie dimension = 3
+  [PASS] color fundamental Hilbert dimension = 3
+  [PASS] su(3) Lie dimension = 8
+  [PASS] one qubit cannot host a 3D color fundamental
+  [PASS] one qubit native traceless algebra too small for su(3)
+  [PASS] u(2) real dimension too small for su(3)
+
+------------------------------------------------------------------------------
+2. SU(3) representation lower bound
+------------------------------------------------------------------------------
+  [PASS] checked SU(3) highest-weight grid is nonempty
+  [PASS] smallest non-trivial SU(3) irrep dimension in grid = 3 (3)
+  [PASS] no 2D SU(3) irrep appears in checked grid ([])
+  [PASS] 3D irreps are fundamental/conjugate weights ([(0, 1), (1, 0)])
+  [PASS] one-qubit carrier dimension misses minimal non-trivial irrep
+
+------------------------------------------------------------------------------
+3. Two-qubit minimal candidate
+------------------------------------------------------------------------------
+  [PASS] two qubits Hilbert dimension = 4
+  [PASS] Sym^2(C^2) dimension = 3
+  [PASS] Anti^2(C^2) dimension = 1
+  [PASS] two-qubit swap decomposition dimensions sum to 4
+  [PASS] one qubit is not color-capable
+  [PASS] two-qubit symmetric endpoint is color-capable as a carrier
+  [PASS] two-qubit route needs a projection/constraint
+  [PASS] two qubits are minimal qubit count with Hilbert dimension >= 3
+
+------------------------------------------------------------------------------
+4. Generic U(4) is not SU(3) routing
+------------------------------------------------------------------------------
+  [PASS] u(4) real dimension = 16
+  [PASS] block-preserving color su(3) dimension = 8
+  [PASS] u(4) has extra directions beyond block su(3) (extra=8)
+  [PASS] antisymmetric complement dimension is 1
+  [PASS] block route is reducible 3+1, not a pure generic 4D transport
+
+------------------------------------------------------------------------------
+5. Routing requirements
+------------------------------------------------------------------------------
+  [PASS] carrier budget has three outputs
+  [PASS] routing ledger has seven remaining requirements
+  [PASS] carrier budget does not supply routing requirements
+  [PASS] post-record outputs do not supply routing requirements
+  [PASS] projection remains an explicit requirement
+  [PASS] SU(3)-restricted transport remains explicit
+  [PASS] Gauss generators remain explicit
+  [PASS] record-readout antecedent remains explicit
+
+------------------------------------------------------------------------------
+6. Route classification
+------------------------------------------------------------------------------
+  [PASS] five route classes recorded
+  [PASS] one-qubit route classified as obstruction
+  [PASS] two-qubit route classified as carrier support
+  [PASS] generic U4 route needs block constraint
+  [PASS] post-record count route is wrong layer
+  [PASS] full link routing remains open construction
+
+------------------------------------------------------------------------------
+7. Note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/COLOR_LINK_INDEX_ROUTING_CARRIER_BUDGET_2026-06-05.md)
+  [PASS] note contains marker: Claim type:** meta support map
+  [PASS] note contains marker: Trace class:** negative route-pruning support map
+  [PASS] note contains marker: No-Go Discipline Gate (N1-N8)
+  [PASS] note contains marker: Does not derive physical color.
+  [PASS] note contains marker: Does not establish a repo-wide quantum-link ontology.
+  [PASS] note contains marker: Does not select a Koide/generation dial location.
+  [PASS] forbidden wording absent: physical color closure
+  [PASS] forbidden wording absent: link ontology closure
+  [PASS] forbidden wording absent: projection closure
+  [PASS] forbidden wording absent: dial selector closure
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=51 FAIL=0
+
+----- stderr -----
+

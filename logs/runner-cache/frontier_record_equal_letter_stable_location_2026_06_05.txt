@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_equal_letter_stable_location_2026_06_05.py
+runner_sha256: a930db195b0c2d78cf85a26cbfbc6bbccdf505398c46cb2dfb4d96b1a157bd79
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
+[PASS] S1.1 sidecar exposes exactly three equal-letter stable-location rows
+[PASS] S1.2 all stable-location rows are marked s=0_stable_location
+[PASS] S1.3 no stable-location row is labelled as forced
+[PASS] S1.4 stable-location row ids match the sidecar target set
+[PASS] D2.1 equal-letter reset chain is row-stochastic for symbolic alpha
+       Matrix([[1 - alpha/2, alpha/2], [alpha/2, 1 - alpha/2]])
+[PASS] D2.2 equal-letter prior is stationary
+[PASS] D2.3 equal-letter reset chain satisfies detailed balance
+[PASS] D2.4 chain is atom-swap symmetric
+[PASS] D2.5 eigenvalues are {1, 1-alpha}
+       {1: 1, 1 - alpha: 1}
+[PASS] D2.6 deviations from equal letters contract by 1-alpha
+[PASS] D2.7 record-letter imbalance contracts by 1-alpha
+[PASS] D2.8 iterated imbalance has closed form (1-alpha)^n times initial imbalance
+[PASS] D2.9 quadratic imbalance Lyapunov function decreases by (1-alpha)^2
+[PASS] G3.1 equal-letter prior is exactly the s=0 dial location
+       [0]
+[PASS] G3.2 s=0 gives r=1/2
+[PASS] G3.3 s=0 gives Q=2/3 on the supplied Koide algebra map
+[PASS] G3.4 s=1 gives a different stable dial location r=1
+[PASS] G3.5 Q(s) is not constant across the dial
+[PASS] N4.1 symbolic pi_s chain is row-stochastic
+[PASS] N4.2 symbolic pi_s is stationary
+[PASS] N4.3 symbolic pi_s chain satisfies detailed balance
+[PASS] N4.4 arbitrary pi_s deviations contract by 1-alpha
+[PASS] N4.5 dimension/Born endpoint s=1 is also stable under its own reset chain
+[PASS] N4.6 equal-letter stability is not dial selection
+[PASS] B5.1 stable-location sidecar entries avoid audit-clean and forced endpoint labels
+[PASS] B5.2 imported sidecar writes no audit data when imported
+
+=== Stable-location interpretation ===
+Equal-letter is a stable s=0 location on the post-record atom-symmetric dial.
+The construction also works for arbitrary pi_s, so it is not a physical dial selector.
+The three sidecar rows should be read as stable-location support only.
+SCORECARD PASS=26 FAIL=0
+
+----- stderr -----
+

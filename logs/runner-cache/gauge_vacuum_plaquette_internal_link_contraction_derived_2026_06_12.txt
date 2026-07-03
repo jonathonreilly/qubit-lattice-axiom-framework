@@ -1,0 +1,89 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_internal_link_contraction_derived_2026_06_12.py
+runner_sha256: 6e57371784bdaa8d010a3eb6e972810bf71cbe806ba4966b5e4f3eebaf5df556
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.36
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette internal-link contraction derived convention
+Status authority: independent audit lane only. This source runner does not set, predict, promote, or demote any audit outcome.
+No new imports: repo-internal finite packet quantities only.
+beta=6.0, tensor NMAX=4, tensor MODE_MAX=80, source NMAX=7, source MODE_MAX=200
+
+========================================================================================================
+Part 1: exact deciding Haar identities
+========================================================================================================
+PASS: d_(0,0) = 1 exactly
+PASS: d_(1,0) = 3 exactly
+PASS: d_(0,1) = 3 exactly
+PASS: d_(1,1) = 8 exactly
+PASS: disconnected character identity gives a bare unit delta on matching labels
+PASS: disconnected character identity vanishes off diagonal on the small set
+PASS: connected shared-link identity gives 1/3 on the fundamental
+PASS: connected shared-link identity gives 1/3 on the antifundamental
+PASS: connected shared-link identity gives 1/8 on the adjoint
+PASS: connected shared-link identity vanishes off diagonal on the small set
+PASS: nontrivial connected shared-link contraction is not the bare character delta
+      character=1, connected=1/3
+PASS: trivial channel is unchanged by the inverse-dimension factor
+
+========================================================================================================
+Part 2: finite-packet normalization
+========================================================================================================
+PASS: finite packet D_(0,0) is normalized to one
+PASS: boundary-character class coefficient is d_lambda times D_lambda
+      fund ratio=3.0, adj ratio=8.0
+PASS: connected Haar 1/d strips the finite class coefficient back to D_lambda
+PASS: explicit small channels strip as expected
+      D10=0.422531739649983, D11=0.162259799479938
+
+========================================================================================================
+Part 3: W38 branch reproduction
+========================================================================================================
+PASS: derived internal factor equals the W38 dimension-stripped internal factor
+      max diff=0.000e+00
+PASS: derived internal factor is distinct from the W38 full-character factor
+      max diff=4.461378466728658
+PASS: derived strip transfer equals the W38 dimension-stripped transfer
+      max diff=0.000e+00
+PASS: derived strip transfer is distinct from the W38 full-character transfer
+      max diff=2.673164658907320e+00
+PASS: derived strip Perron residual is small
+      residual=4.441e-16
+PASS: derived strip rho is positive and conjugation-symmetric
+      rho_min=4.405e-24, conj=1.388e-17
+PASS: derived strip left and right marginals agree
+PASS: derived strip readout reproduces the W38 dimension-stripped P value
+      P=0.439904783618900
+PASS: W38 full-character readout remains the distinct unselected finite branch
+      P_full=0.447034890458824, P_derived=0.439904783618900
+
+========================================================================================================
+Part 4: readout table
+========================================================================================================
+```text
+P(rho_word) = 0.434215413259920
+P(rho_strip derived internal-link convention) = 0.439904783618900
+P(W38 full-character branch, unselected here) = 0.447034890458824
+P_strip_derived - P_word = 0.005689370358980
+rho_derived(1,0) = 0.573562917034962
+rho_derived(1,1) = 0.204646875517536
+```
+PASS: one-word anchor reproduces the W38 finite value
+      P_word=0.434215413259920, residual=1.665e-16
+PASS: derived two-strip value is finite and inside the source anchor interval
+
+========================================================================================================
+Part 5: note hygiene
+========================================================================================================
+PASS: note delegates status to the independent audit lane
+PASS: note states the derived branch as dimension-stripped
+PASS: note keeps context refs as plain-text paths
+PASS: note avoids banned status/overreach phrases
+PASS: runner names the remaining full-tensor normalization object without using it
+
+TOTAL: PASS=32, FAIL=0
+
+----- stderr -----
+

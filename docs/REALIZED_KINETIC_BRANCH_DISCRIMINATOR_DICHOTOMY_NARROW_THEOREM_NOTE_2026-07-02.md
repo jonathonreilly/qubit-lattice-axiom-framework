@@ -120,8 +120,11 @@ Two guard legs prevent target-shaped checks from passing accidentally.
 T1 recomputes the K0/K1 plaquette fluxes on `L = 4` and `L = 6`. T8
 flips one eta0 link sign, producing mixed plaquette flux and a broken
 blocked anticommutation norm. T10 checks proper-cubic rotation
-covariance by exact K0 equality and K1 spectrum-level invariance under
-the `R_z12` rotation permutation.
+covariance by exact K0 equality and an operator-level K1 leg: the
+rotated K1 hopping operator equals `W H W` for a site-local `Z2` frame
+`W` reconstructed from the edge sign ratios under an explicit
+cocycle-consistency gate, and the same reconstruction rejects a
+one-link flux flip of the `eta0` background.
 
 ## Consequence And Residual
 

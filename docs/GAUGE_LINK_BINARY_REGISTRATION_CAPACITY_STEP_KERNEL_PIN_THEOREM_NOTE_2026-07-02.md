@@ -225,6 +225,11 @@ fraction.
   `G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md` is named
   here as prose context only, not a citation-graph dependency.
 - This note does not claim: a continuum limit.
+- The unit-point calibration in this note is stated for the total
+  step-kernel variance, the transfer-level quantity. The Record axiom now
+  states that a readout value is determined by record content alone; the
+  record-determined per-step share under that clause is left outside this
+  note. This bullet does not create a citation-graph dependency.
 - This note does not claim: an audit verdict or any effective-status promotion.
 
 Forward surface:

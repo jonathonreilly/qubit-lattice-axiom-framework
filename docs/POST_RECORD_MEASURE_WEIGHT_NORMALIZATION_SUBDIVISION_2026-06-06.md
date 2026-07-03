@@ -67,13 +67,13 @@ On the current paired diagnostic export snapshot:
 
 | Measure/weight lane | Rows |
 |---|---:|
-| `source_measure_or_rn_bridge` | 16 |
-| `trace_normalization_reference` | 10 |
-| `character_path_channel_weight` | 14 |
-| `selector_tangent_readout_weight` | 13 |
-| `generic_measure_weight_import` | 14 |
+| `source_measure_or_rn_bridge` | 18 |
+| `trace_normalization_reference` | 7 |
+| `character_path_channel_weight` | 21 |
+| `selector_tangent_readout_weight` | 16 |
+| `generic_measure_weight_import` | 19 |
 
-Total: `67` rows.
+Total: `81` rows.
 
 The runner recomputes the live ledger split at runtime. If later audit work
 adds or changes rows, the live count printed by the runner supersedes this

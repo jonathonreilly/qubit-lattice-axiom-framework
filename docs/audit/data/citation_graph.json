@@ -35977,6 +35977,18 @@
       "to": "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02"
     },
     {
+      "from": "reading_note_claims_are_axiom_text_theorems_bounded_note_2026-07-02",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "reading_note_final_derivations_motion_closure_bounded_note_2026-07-02",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "reading_note_final_derivations_motion_closure_bounded_note_2026-07-02",
+      "to": "ai_methodology.skills.audit-loop.skill"
+    },
+    {
       "from": "realization_row_sigma_reconciliation_bounded_theorem_note_2026-06-11",
       "to": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
     },
@@ -41643,6 +41655,10 @@
     {
       "from": "theta_torus_dual_abelianization_shifted_weight_lattice_gaussian_gluing_stable_weyl_shift_obstruction_bounded_theorem_note_2026-07-02",
       "to": "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16"
+    },
+    {
+      "from": "theta_transpose_sheet_uniqueness_fiber_evidence_bounded_note_2026-07-02",
+      "to": "minimal_axioms"
     },
     {
       "from": "the_small_mixing_angles_theta_c_and_theta_13_are_c3_breaking_order_parameters_unification_narrow_theorem_note_2026-06-08",
@@ -56698,11 +56714,23 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+      "to": "no_per_site_chirality_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
     },
     {
       "from": "repo.front_door_status",
       "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "ew_current_matching_rule_open_gate_note_2026-05-03"
     },
     {
       "from": "repo.front_door_status",
@@ -56715,18 +56743,6 @@
     {
       "from": "repo.front_door_status",
       "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "hopping_bilinear_hermiticity_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -59267,7 +59283,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bb08be69a2b5b64653057b2e9e045551435d4aedc4a94734ac4e86b81a4e4446",
+      "note_hash": "97d4b68275f649c82b5ddd08e0000fd4d0b8ad2e6c623a4a2008b7bb95fa92c7",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Audit Loop"
@@ -59410,7 +59426,7 @@
         "ai_methodology.skills.physics-loop.references.long-running-execution"
       ],
       "helper_runner_paths": [],
-      "note_hash": "91dee267473a93a643a143c3c0867fec59525a25bee68b75c34e4012b5829b3a",
+      "note_hash": "6d0952390241e8e2c077ede3c809d7df3315fbc568bdc8c4ce22b90044cbf869",
       "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
       "runner_path": null,
       "title": "Physics Loop"
@@ -59437,7 +59453,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9446729a42d5b7e808575e860aaf428bb34063a2a485c521a0537e733be69395",
+      "note_hash": "b98cb858e9c15f1a0499feee0fbe1ee82abe70910de587d2c8c0d8e56144b09c",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"
@@ -93817,7 +93833,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "70324c45f8473c77118d68879e12618ff8366ecf9d4843ce91094a61dca6bc8a",
+      "note_hash": "7b581f9f475c7bf16a02e664ef48a271d20d0404d8b2b1f7e58bc41ab3d50a24",
       "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
       "runner_path": "scripts/audit_companion_minimal_axioms_clean_base_exact.py",
       "title": "Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)"
@@ -107933,6 +107949,35 @@
       "runner_path": "scripts/frontier_rd_fixedness_arrow_invariant_2026_06_12.py",
       "title": "R-D Fixedness Is Arrow-Invariant on the Retained Flow Family"
     },
+    "reading_note_claims_are_axiom_text_theorems_bounded_note_2026-07-02": {
+      "claim_id": "reading_note_claims_are_axiom_text_theorems_bounded_note_2026-07-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "52b318d976d0f1e11eabce7f3e877c8509991627eaca579fafced71344c733e3",
+      "path": "docs/READING_NOTE_CLAIMS_ARE_AXIOM_TEXT_THEOREMS_BOUNDED_NOTE_2026-07-02.md",
+      "runner_path": "scripts/frontier_reading_note_derivations_2026_07_02.py",
+      "title": "Four Policy Reading-Note Claims Are Axiom-Text Theorems"
+    },
+    "reading_note_final_derivations_motion_closure_bounded_note_2026-07-02": {
+      "claim_id": "reading_note_final_derivations_motion_closure_bounded_note_2026-07-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms",
+        "ai_methodology.skills.audit-loop.skill"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "4eb37d1611184201b45c98d7576f34bfcdbf169274bb87cd000cdd69c3d1d266",
+      "path": "docs/READING_NOTE_FINAL_DERIVATIONS_MOTION_CLOSURE_BOUNDED_NOTE_2026-07-02.md",
+      "runner_path": "scripts/frontier_answer_condition_motion_closure_2026_07_02.py",
+      "title": "Final Reading-Note Derivations: Answer, Condition, Motion Closure, And Extensional Judgment"
+    },
     "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08": {
       "claim_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
       "claim_type_author_hint": "bounded_theorem",
@@ -109232,7 +109277,7 @@
         "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5bea212c62053a6c3e1edd5ae106d4a9764b7f1b7d3c4d8a03b4ea7257f81d07",
+      "note_hash": "70cce2d832dc0760771fa8406c340de004f3da08a371f8c75bc4c2ad8da4ef1b",
       "path": "docs/repo/CONTROLLED_VOCABULARY.md",
       "runner_path": null,
       "title": "Controlled Vocabulary"
@@ -109243,17 +109288,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+        "no_per_site_chirality_theorem_note_2026-05-02",
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "ew_current_matching_rule_open_gate_note_2026-05-03",
         "cl3_taste_generation_theorem",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
-        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
-        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
-        "hopping_bilinear_hermiticity_theorem_note_2026-05-02"
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "761cc51e0463bfc9c5559ef45c040bb47287f1b18f5bec4ffe443461eb0913cc",
+      "note_hash": "d2e942ed7d4a720a65925cc1a0b8ccc0c737b0ba2bd480c2df21914c5e7578de",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -117245,6 +117290,20 @@
       "path": "docs/THETA_TORUS_DUAL_ABELIANIZATION_SHIFTED_WEIGHT_LATTICE_GAUSSIAN_GLUING_STABLE_WEYL_SHIFT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-02.md",
       "runner_path": "scripts/theta_torus_dual_abelianization_weight_lattice_gaussian_2026_07_02.py",
       "title": "Torus-Dual Abelianization of SU(N) Class Weights: the Heat-Kernel Member Is an Exact Signed Gaussian on the Regular Rho-Shifted Weight Lattice, the Structure Is Gluing-Stable, the Block-1 Center Grading Is Its Coset Shadow \u2014 and a Continuous Weyl-Consistent Theta Shift-Slot on the Nonabelian Torus Dual Is Obstructed (Bounded Theorem)"
+    },
+    "theta_transpose_sheet_uniqueness_fiber_evidence_bounded_note_2026-07-02": {
+      "claim_id": "theta_transpose_sheet_uniqueness_fiber_evidence_bounded_note_2026-07-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (deterministic rigidity certificates,",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "c4a56e0390b04c47ca0fe2411e4265ae80e9a082fc461532bc96f9ec2328b4a7",
+      "path": "docs/THETA_TRANSPOSE_SHEET_UNIQUENESS_FIBER_EVIDENCE_BOUNDED_NOTE_2026-07-02.md",
+      "runner_path": "scripts/theta_transpose_sheet_uniqueness_fiber_evidence_2026_07_02.py",
+      "title": "The Transpose-Sheet Sliver Strengthened on Three Angles: Expanded Fiber Search Finds No Second Branch in Two Independent Families, Both Sheets Pass Matching Rigidity Certificates, and Low-Multidegree Even Invariant Counts Are Pair-Generated (Bounded Evidence Note)"
     },
     "third_grown_family_boundary_note": {
       "claim_id": "third_grown_family_boundary_note",
@@ -125242,7 +125301,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1486,
+      "bounded_theorem": 1489,
       "decoration": 3,
       "meta": 293,
       "no_go": 283,
@@ -125251,7 +125310,7 @@
       "positive_theorem": 195
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1891,
+      "bounded_theorem": 1894,
       "decoration": 3,
       "meta": 293,
       "no_go": 387,
@@ -125259,10 +125318,10 @@
       "open_gate": 193,
       "positive_theorem": 580
     },
-    "edge_count": 14281,
-    "leaf_count": 1281,
-    "node_count": 3805,
+    "edge_count": 14285,
+    "leaf_count": 1284,
+    "node_count": 3808,
     "root_count": 1098,
-    "runners_with_path": 3433
+    "runners_with_path": 3436
   }
 }

@@ -3,20 +3,20 @@
 
 For SU(3) staple triples (A, B, C) modulo diagonal conjugation, the 18 pair
 data are tr A, tr B, tr C and the both-orientation composites tr(B^dag A),
-tr(B A), tr(C^dag A), tr(C A), tr(C^dag B), tr(C B). A landed-in-flight
-result: the 10 C-involving real constraints have a full-rank 10x8 Jacobian at
-a generic point (local rigidity), and the simultaneous-transpose triple
-preserves all 18 while flipping d = tr(ABC) - tr(ACB). Open sliver: is the
-transpose sheet the ONLY global sheet? This runner gathers three
-exact/evidence angles; the reviewer drafts the note from the numbers.
+tr(B A), tr(C^dag A), tr(C A), tr(C^dag B), tr(C B). Context target: the
+10 C-involving real constraints have a full-rank 10x8 Jacobian at a generic
+point (local rigidity), and the simultaneous-transpose triple preserves all
+18 while flipping d = tr(ABC) - tr(ACB). Open sliver: is the transpose sheet
+the ONLY global sheet? This runner gathers three deterministic/evidence
+angles; the reviewer drafts the note from the numbers.
 
 Sections:
   A. Expanded fiber search (evidence): fix (A, B), solve the 10 C-constraints
      over the full group C' = expi(t), classify every converged solution by
      the invariant vector (tr(A B C'), tr(A C' B)); look for a second branch.
-  B. Both sheets locally rigid (exact): smallest singular value of the 10x8
-     C-constraint Jacobian, at C0 and on the transpose sheet.
-  C. No new even invariants at low multidegree (exact singlet multiplicities
+  B. Both sheets locally rigid (deterministic certificate): smallest singular
+     value of the 10x8 C-constraint Jacobian, at C0 and on the transpose sheet.
+  C. No new even invariants at low multidegree (computed singlet multiplicities
      via the joint-null-space of the Gell-Mann generator action).
 
 Expected close: TOTAL: PASS=8 FAIL=0

@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 190 |
 | **retained_no_go** | 193 |
-| **retained_bounded** | 854 |
+| **retained_bounded** | 855 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
 | unaudited | 1958 |
-| audit_in_progress | 1 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 12 |
-| `audited_clean` | 1230 |
+| `audit_in_progress` | 11 |
+| `audited_clean` | 1231 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
@@ -143,7 +142,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `yt_vertex_power_derivation` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1370,6 +1368,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_source_covariance_normalization_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `yt_vertex_power_derivation` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -19228,6 +19227,19 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** Given H_unit = I_(N_iso*N_c)/sqrt(N_iso*N_c), the diagonal basis component overlap equals 1/sqrt(N_iso*N_c), hence 1/sqrt(6) at (2,3).  _(class `A`)_
 - **chain closes:** True — The scoped identity follows directly from the stated orthonormal basis, matrix-unit definition, and H_unit normalization. The note explicitly excludes the physical SSB/Yukawa matching bridge, so that unproved bridge is outside the audited claim boundary.
 - **rationale:** The supplied proof and runner close the finite-dimensional arithmetic claim without importing gauge coupling, VEV, LSZ, chirality, HS/source normalization, or physical Yukawa readout assumptions. The alias equality is only clean within the explicitly bounded component-overlap definition and is not used to assert physical operator matching. The runner completed with 13 passes and 0 failures against the current scoped claim.
+- **auditor confidence:** high
+
+### `yt_vertex_power_derivation`
+
+- **Note:** [`YT_VERTEX_POWER_DERIVATION.md`](../../docs/YT_VERTEX_POWER_DERIVATION.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the gauged SU(3) staggered-Dirac adjacency-licensed nearest-neighbor covariant hopping surface, with the named link-exponential convention, quadratic-response/background-field coupling readout, edge adjacency license, and tree-level coupling/kinematic split, the vertex-power exponent is n_link=2 and the retained abstract coupling-map algebra yields alpha_s(v)=alpha_bare/u_0^2; no plaquette, running, strong-coupling value, or external numeric target is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-fresh-yt-vertex-power-auditor-20260703b`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the edge-only gauged SU(3) staggered-Dirac hopping surface, Schur bi-equivariance forces the hopping dressing to be f(U)=cU, and the quadratic current-current response contains two single-link D' insertions, so n_link=2 and the retained algebra gives alpha_s(v)=alpha_bare/u_0^2.  _(class `C`)_
+- **chain closes:** True — The derivation closes only on the explicitly named bounded surface: SU(3) gauge attachment, edge-only support, link-exponential convention, quadratic channel, and tree-level split are declared scope boundaries rather than silently imported conclusions. The current 2026-06-29 minimal axiom wording preserves the consumed Lattice adjacency content, and the direct dependencies are retained-grade or accepted axiom content for this bounded use.
+- **rationale:** The runner completed with PASS=16 FAIL=0 and computes the contested exponent from operator/link-degree scaling, finite-difference checks of D' and D'', and Schur bi-equivariance tests; it does not read or fit a strong-coupling numeric target and has zero class-D checks. The B-GATE/B-ADJ/B-CONV/B-CHAN/B-SPLIT items are real load-bearing boundaries, but they are stated in the claim scope and runner residuals, so they bound the theorem rather than functioning as hidden premises. The safe retained content is the integer exponent and algebraic coupling-map consequence under those conventions, not an SU(3) realization theorem or any physical alpha_s number.
 - **auditor confidence:** high
 
 ### `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05`

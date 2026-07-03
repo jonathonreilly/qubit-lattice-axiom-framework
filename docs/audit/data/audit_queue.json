@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 412,
+    "critical": 411,
     "high": 292,
     "leaf": 742,
     "medium": 524
@@ -343,29 +343,30 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "yt_vertex_power_derivation",
-      "claim_scope": "On the gauged SU(3) staggered-Dirac adjacency-licensed nearest-neighbor covariant hopping surface, with link-exponential background coupling, quadratic-response coupling readout, and tree-level coupling/kinematic split, the vertex-power exponent is n_link=2 and the retained abstract coupling-map algebra yields alpha_s(v)=alpha_bare/u_0^2; no plaquette, running, strong-coupling value, or external numeric target is audited.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "yt_vertex_power_operator_counting_lemma_note_2026-05-17",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
         "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-        "minimal_axioms"
+        "yt_vertex_power_derivation",
+        "minimal_axioms_2026-05-03",
+        "physical_lattice_necessity_note"
       ],
-      "direct_in_degree": 5,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.657,
-      "note_path": "docs/YT_VERTEX_POWER_DERIVATION.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 14.655,
+      "note_path": "docs/YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_vertex_power.py",
-      "transitive_descendants": 1141
+      "runner_path": "scripts/frontier_yt_vertex_power_operator_counting_lemma.py",
+      "transitive_descendants": 1139
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1537,33 +1538,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_s3_time_bilinear_tensor_primitive.py",
       "transitive_descendants": 1154
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_vertex_power_operator_counting_lemma_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
-        "yt_vertex_power_derivation",
-        "minimal_axioms_2026-05-03",
-        "physical_lattice_necessity_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.655,
-      "note_path": "docs/YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_yt_vertex_power_operator_counting_lemma.py",
-      "transitive_descendants": 1139
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -58147,5 +58121,5 @@
     }
   ],
   "ready_count": 157,
-  "total_pending": 1970
+  "total_pending": 1969
 }

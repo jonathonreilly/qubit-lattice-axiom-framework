@@ -13,14 +13,17 @@ only; it issues no audit verdict and predicts none.
 
 ## Firewall (read first)
 
-- **Conditional on PR #4874.** Permanence-dependent content is grounded
-  CONDITIONALLY on the in-flight, owner-approved (2026-07-03) PR #4874, which
-  replaces the Record clause "the locked possibility is invariant under repeated
-  readout" with "records are permanent." Permanence yields DOMAIN MONOTONICITY
-  (reading-free), which is the primary lever for T2's halting and T4's
-  finite-lattice bound; T1's no-removal/no-alteration bars and T3's monotone
-  containment also rest on it. Without #4874 these revert to readout-invariance
-  only. Supervisor-supplied.
+- **Permanence is LANDED (commit 50f0db6187).** The Record restoration that
+  replaces the locking clause's final segment "the locked possibility is
+  invariant under repeated readout" with "records are permanent." is LANDED on
+  main (commit 50f0db6187; drafted as PR #4874, review-loop-closed). Permanence
+  yields DOMAIN MONOTONICITY (reading-free), the primary lever for T2's halting
+  and T4's finite-lattice bound; T1's no-removal/no-alteration bars and T3's
+  monotone containment also rest on it. These now ground on LANDED axiom text,
+  with readout-invariance surviving as a derived lemma. This block grounds on
+  the landed restoration: the runner's Record locking guard (check 1) is a
+  transitional either-or accepting the pre-restoration and landed forms; the
+  landed form is authoritative (commit 50f0db6187). Supervisor-supplied.
 - **Interpretive labels are readings, not claims.** "Frozen star",
   "black-hole-like", and "local time ended" are an owner interpretive READING of
   the record-level phenomenon; they are not asserted as results.
@@ -33,12 +36,13 @@ only; it issues no audit verdict and predicts none.
   contingent realized data, not law (vacuum-solution analogy); every theorem
   conditions on the realized sector explicitly, and the empty and saturated
   worlds are equally legal solutions.
-- **Model postulate M1's content is now in-flight axiom text.** After this
-  note was drafted, the owner extended PR #4874 with a second restored
-  clause: the Record axiom's first sentence becomes "A site never carries
-  more than one record." (owner-approved 2026-07-03). On #4874 landing, M1
-  upgrades from a named note-level reading to axiom text and the M1-based
-  results lose their reading residue. Until then, M1 stands as stated
+- **Model postulate M1's content is pending axiom text as PR #4879.** After this
+  note was drafted, the owner approved a one-per-site clause -- the Record
+  axiom's first sentence becomes "A site never carries more than one record." --
+  now OPEN as PR #4879 (owner-approved 2026-07-03), separate from and not part of
+  the landed permanence restoration. On PR #4879 landing, M1 upgrades from a
+  named note-level reading to axiom text and the M1-based results lose their
+  reading residue. Until then, M1 stands as stated
   below. The site-functional
   one-record-per-site set reading (below) is a note-level MODEL POSTULATE that
   closes what the axiom leaves open; it is load-bearing only for the set-level
@@ -66,12 +70,18 @@ tail) additionally uses model postulate M1.
 ## Supplied surface (quotes)
 
 Axiom sentences quoted verbatim from `docs/MINIMAL_AXIOMS_2026-06-29.md` (this
-worktree copy carries the PRE-restoration Record wording; runner quote guards
-match this file at checks 1-5):
+worktree copy carries the PRE-restoration Record wording; the runner's Record
+locking guard at check 1 is a TRANSITIONAL either-or accepting BOTH the
+pre-restoration form and the LANDED form "records are permanent." -- the landed
+form is authoritative, commit 50f0db6187; checks 2-5 match this worktree file
+verbatim):
 
-- Record: "When present, a record locks exactly one local possibility from the
-  subset available at that site under Admissibility; the locked possibility is
-  invariant under repeated readout."
+- Record (locking): "When present, a record locks exactly one local possibility
+  from the subset available at that site under Admissibility; the locked
+  possibility is invariant under repeated readout." (worktree copy; the LANDED
+  form -- commit 50f0db6187 -- replaces the final clause with "records are
+  permanent.", from which readout-invariance is a derived lemma. The check-1
+  guard accepts either form; the landed form is authoritative.)
 - Record (readout): "For any finite collection of pairwise-disjoint records,
   scalar readout `I` is additive, with `I(empty)=0`." (Honesty: quantifying over
   "pairwise-disjoint records" CONTEMPLATES non-disjoint, same-site records as a
@@ -86,9 +96,12 @@ match this file at checks 1-5):
   about each site."
 - Qualification: "A state is a configuration of records."
 
-Supervisor-supplied surface (not read from repo files; used as stated): PR #4874 (TWO restored clauses: "records are permanent." and "A site never carries more than one record.")
-(in-flight) makes the Record clause "records are permanent", readout-invariance
-becoming a derived lemma. Owner ruling: non-triviality is contingent realized
+Supervisor-supplied surface (not read from repo files; used as stated): the
+permanence restoration that makes the Record locking clause end "records are
+permanent." (readout-invariance becoming a derived lemma) is LANDED on main
+(commit 50f0db6187; drafted as PR #4874, review-loop-closed). The one-per-site
+clause "A site never carries more than one record." is owner-approved and OPEN as
+PR #4879 (not yet landed). Owner ruling: non-triviality is contingent realized
 data, not law (vacuum-solution analogy); theorems condition on the realized
 sector. Sibling PR #4873 (review-pending, branch-only, NOT read) derives the
 event-ordering from permanence + "A state is a configuration of records",
@@ -104,7 +117,8 @@ site -> locked value. The availability model is `available_at(s) = { locked
 values of records on nearest neighbors of s }` if nonempty, else `{+1,-1}`.
 
 Domain monotonicity (permanence-derived, reading-free). Under permanence
-("records are permanent.") plus "A state is a configuration of records", a
+("records are permanent.", LANDED -- commit 50f0db6187) plus "A state is a
+configuration of records", a
 realized history has record sets nested with agreeing values, so the
 recorded-site domain grows monotonically: `dom(C_{t-1})` is a subset of
 `dom(C_t)`. A FIRST-REGISTRATION (dom-event) at stage `t` is a site in
@@ -129,7 +143,7 @@ under BOTH the dom-based definition (no domain growth) and the M1 set definition
 differ only on the overlapping/multi-valued case the axiom withholds and M1
 elects away.
 
-## T1 -- Saturation implies local finality (bounded, conditional) [checks 6-12]
+## T1 -- Saturation implies local finality (bounded; M1 set-constancy conditional on PR #4879) [checks 6-12]
 
 A region `R` is record-saturated in `C` iff every site of `R` carries a record.
 Both exact windows -- the `2x2x2` (8-site) and `3x3x3` (27-site), one record per
@@ -165,7 +179,7 @@ rule could reverse them (rule-dependence residue, extended to T1). Per the owner
 ruling, the static globally saturated world is a legal solution (final and
 physical, like a vacuum solution), not a defect.
 
-## T2 -- Local record-time stops (bounded, conditional) [checks 13-19]
+## T2 -- Local record-time stops (bounded) [checks 13-19]
 
 Primary statement (dom-based, reading-free). Permanence plus "A state is a
 configuration of records" makes the recorded-site domain monotone along any
@@ -264,12 +278,15 @@ record-level picture and carries no GR content.
 Complete residues (this campaign's #1 refutation failure mode is a dropped
 residue, so the set is stated in full):
 
-1. **PR #4874 in-flight** -- permanence ("records are permanent.") is the premise
-   for the DOMAIN MONOTONICITY that grounds T2's halting and T4's finite-lattice
-   bound, for T1's no-removal/no-alteration bars, and for the monotone-containment
-   half of T3; all are conditional on #4874 landing. Domain monotonicity itself
-   is permanence-derived (reading-free) and is the load-bearing permanence
-   consequence after the dom-based rederivation.
+1. **Permanence LANDED (commit 50f0db6187)** -- permanence ("records are
+   permanent.") is the premise for the DOMAIN MONOTONICITY that grounds T2's
+   halting and T4's finite-lattice bound, for T1's no-removal/no-alteration bars,
+   and for the monotone-containment half of T3; all now ground on LANDED axiom
+   text (drafted as PR #4874, review-loop-closed). Domain monotonicity itself is
+   permanence-derived (reading-free) and is the load-bearing permanence
+   consequence after the dom-based rederivation. The check-1 quote guard is
+   transitional -- it accepts the pre-restoration and landed forms; the landed
+   form is authoritative (commit 50f0db6187).
 2. **Realized-sector / finitary scoping of T4** -- finite initial support plus
    finitely many registrations per step is a named scope, not a universal claim.
 3. **Availability-rule dependence of T3** -- the axiom fixes the clause
@@ -285,7 +302,7 @@ residue, so the set is stated in full):
 7. **Nothing adopted**; the static world's admissibility is the sibling's result
    rebuilt as an exact witness, not new content.
 8. **Audit lane owns all statuses**; this note sets and predicts none.
-9. **Model postulate M1 (site-functional set reading; upgrades to axiom text on #4874 landing via the restored first sentence "A site never carries more than one record.")** -- the note-level reading
+9. **Model postulate M1 (site-functional set reading; upgrades to axiom text on PR #4879 landing -- open, owner-approved -- via the one-per-site sentence "A site never carries more than one record.")** -- the note-level reading
    individuating records as `(site,value)` with at most one per site, closing the
    axiom's withheld overlapping/multi-valued case. Load-bearing for T1's
    set-constancy `4^8` enumeration and T4's distinct-record pigeonhole tail; NOT
@@ -296,12 +313,15 @@ residue, so the set is stated in full):
 
 ## Consequence
 
-Conditional on #4874 and within the note-level model, record saturation is the
-end of local registration: a region becomes final (T1), its local event count
-halts (T2), and it constrains its boundary's available possibilities -- monotone
-containment in general, singleton only for cavity sites -- never a force or
-evolution law (T3). Globally the finitary realized sector cannot saturate in
-finite record-time, so the infinite lattice supports unbounded record-time (T4).
+Grounded on the LANDED permanence restoration (commit 50f0db6187) and within the
+note-level model, record saturation is the end of local registration: a region
+becomes final (T1), its local event count halts (T2), and it constrains its
+boundary's available possibilities -- monotone containment in general, singleton
+only for cavity sites -- never a force or evolution law (T3). Globally the
+finitary realized sector cannot saturate in finite record-time, so the infinite
+lattice supports unbounded record-time (T4). The set-level refinements (T1's
+set-constancy, T4's distinct-record tail) additionally use model postulate M1,
+which upgrades to axiom text on PR #4879 landing.
 
 ## Does NOT
 
@@ -316,14 +336,17 @@ review-pending sibling or predict any audit outcome.
 ## Dependencies
 
 Lattice, Qubit, Admissibility, Record axioms (`docs/MINIMAL_AXIOMS_2026-06-29.md`);
-quote guards at checks 1-5 cover the Record locking sentence, the Admissibility
-clause, "A state is a configuration of records." (M1's named basis), the Lattice
-sentence, and the Record readout-additivity sentence -- Qubit is cited but is not
-separately quote-guarded. Further premises: the permanence clause of PR #4874
-(in-flight); domain monotonicity (permanence-derived); model postulate M1 (a
-note-level reading, residue 9); the supervisor-supplied covariant availability
-model and owner realized-sector ruling. The event-ordering and static-world
-admissibility overlap the review-pending sibling PR #4873 (cited, not read).
+quote guards at checks 1-5 cover the Record locking sentence (check 1 is a
+TRANSITIONAL either-or accepting the pre-restoration and LANDED forms), the
+Admissibility clause, "A state is a configuration of records." (M1's named basis),
+the Lattice sentence, and the Record readout-additivity sentence -- Qubit is cited
+but is not separately quote-guarded. Further premises: the LANDED permanence
+clause "records are permanent." (commit 50f0db6187; drafted as PR #4874,
+review-loop-closed); domain monotonicity (permanence-derived); model postulate M1
+(a note-level reading, residue 9; upgrades to axiom text on PR #4879 landing); the
+supervisor-supplied covariant availability model and owner realized-sector ruling.
+The event-ordering and static-world admissibility overlap the review-pending
+sibling PR #4873 (cited, not read).
 
 ## No-Promotion
 
@@ -340,4 +363,4 @@ and lands nothing.
 - T3 (corrected): the boundary constraint is MONOTONE CONTAINMENT in general (the region value stays available forever), exact SINGLETON pinning only for CAVITY sites (all six neighbors inside `R`); a boundary singleton RELAXES under an admissible `-1` on a different neighbor -- all within the note-level model.
 - T4: in the finitary realized sector, global saturation is unreachable at any finite stage; the infinite `Z^3` is load-bearing for unbounded record-time.
 - T5: frozen-star label is an owner reading (no GR content); residues now number 10 (adds M1 reading and T1-corollary rule-dependence).
-- Conditional on PR #4874; nothing adopted; audit lane owns all statuses; runner 33/33 exact checks PASS.
+- Permanence LANDED (commit 50f0db6187, drafted as PR #4874, review-loop-closed); one-per-site PENDING as PR #4879 (M1's set-level content conditional on it); the check-1 quote guard is transitional (pre-restoration + landed forms); nothing adopted; audit lane owns all statuses; runner 33/33 exact checks PASS.

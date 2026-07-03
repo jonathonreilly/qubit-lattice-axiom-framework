@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_outside_weight_tail_rung_fourteen_bounded_2026_06_12.py
+runner_sha256: c30b55b09cac42b75976be54052a12453cb75704d3ab444764403c1e2191dde5
+timeout_sec: 1800
+exit_code: 0
+status: ok
+----- stdout -----
+beta   v0:[Q>2.5^2,3^2,3.5^2]            v1:[...]
+  48   8.96e-03 2.73e-04 3.44e-06      1.05e-01 7.09e-03 1.66e-04
+ 108   1.36e-02 4.95e-04 6.33e-06      1.41e-01 1.17e-02 2.89e-04
+ 192   1.71e-02 6.67e-04 9.07e-06      1.64e-01 1.49e-02 3.98e-04
+ 300   1.93e-02 7.78e-04 1.10e-05      1.77e-01 1.69e-02 4.72e-04
+PASS: outside-weight eigenvector L2 tail small at A=3.5 on the tested grid (v0<=1e-4, v1<=1e-3)
+      v0(3.5)=['3.4e-06', '6.3e-06', '9.1e-06', '1.1e-05'], v1(3.5)=['1.7e-04', '2.9e-04', '4.0e-04', '4.7e-04']
+PASS: super-Gaussian decay: tail(A)/tail(A+0.5) >= 10 (Gaussian cutoff in Q)
+      v0 successive ratios min=24.8 (each +0.5 in A divides by >=10)
+PASS: beta-creep increments shrink on the tested grid
+      v1(A=3) increments ['4.6e-03', '3.2e-03', '2.0e-03'] (finite-grid support, not proof)
+PASS: v1 tail > v0 tail (first-excited state has a node, spreads more)
+      v1/v0 at A=3: [26.0, 23.6, 22.3, 21.7]x
+PASS: dimension-weighted trace mass is FAT at A=2.5 (the WRONG tail object)
+      dim-mass(2.5)=['7.05e-02', '8.32e-02', '9.27e-02', '9.85e-02'] (poly-spread; eigenvector L2 is the right object)
+PASS: anti-fab: tails computed from exact eigenvectors (no fit, no closure constant)
+      v_i from np.linalg.eigh of the exact operator; Q the A2 Casimir form; no curve_fit
+
+TOTAL: PASS=6, FAIL=0

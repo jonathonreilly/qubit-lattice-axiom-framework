@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/frontier_single_clock_apbc_axis_label_bridge_2026_06_16.py
+runner_sha256: 28365ab10bc54aa43b64a15a3d9d4df466140752bf43e80bdd60a10faa1b2d05
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+Single-clock APBC axis-label bridge
+claim_type_author_hint: bounded_theorem
+actual_current_surface_status: exact-support conditional on supplied APBC/PBC datum
+proposal_allowed: false
+audit_required_before_effective_retained: true
+
+A. symmetric surface sanity checks
+  [PASS] [A] W is orthogonal
+  [PASS] [A] all-PBC staggered surface is W-invariant
+  [PASS] [A] plain tau<->x_1 swap without the sign field fails
+  [PASS] [A] periodic tau and periodic x_1 hop sectors have matching kernel dimensions -- ker tau=32, ker x1=32
+
+B. supplied APBC/PBC datum breaks the exchange
+  [PASS] [B] APBC on tau and PBC on x_1 breaks W exactly -- resid=2.828427
+  [PASS] [B] temporal APBC hop sector has trivial kernel -- ker tau=0
+  [PASS] [B] periodic x_1 hop sector has nonzero kernel -- ker x1=32
+  [PASS] [B] kernel dimension separates tau from x_1 invariantly
+
+C. symmetric APBC falsifier
+  [PASS] [C] APBC on both tau and x_1 restores W-invariance
+  [PASS] [C] symmetric APBC makes tau and x_1 kernel dimensions match again -- ker tau=0, ker x1=0
+  [PASS] [C] therefore the selecting input is BC asymmetry, not APBC alone
+
+D. boundary-datum automorphism group
+  [PASS] [D] APBC/PBC boundary vector has exactly S_3 residual symmetry -- |Aut(bc)|=6
+  [PASS] [D] every boundary-datum automorphism fixes the APBC axis
+  [PASS] [D] spatial axes remain permutable under the residual S_3
+  [PASS] [D] tau<->x_1 exchange changes the datum rather than preserving it
+
+E. composition and source-scope guards
+  [PASS] [E] source note states supplied-datum conditionality
+  [PASS] [E] source note refuses to derive the BC datum
+  [PASS] [E] source note leaves B-AXIS.1 and B-AXIS.3 untouched
+  [PASS] [E] source note excludes audit-data/status edits
+  [PASS] [E] target single-clock note cites the bridge without promoting status
+  [PASS] [E] target note still says B-AXIS remains live unless the datum is supplied
+
+TOTAL: PASS=21 FAIL=0
+VERDICT: Given a supplied APBC-on-axis/PBC-on-others boundary datum, the axis-label component of B-AXIS.2 is selected exactly. The datum, the time step, the transfer construction, and the no-second-clock premise are not derived here.
+
+----- stderr -----
+

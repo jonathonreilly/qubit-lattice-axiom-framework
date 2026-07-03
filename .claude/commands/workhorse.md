@@ -7,6 +7,15 @@ NEVER delegates judgment; only execution. This document is the canonical shared
 copy of the workhorse split referenced by the science commands' "Execution
 Mechanism" blocks.
 
+**Executor fallback (owner 2026-07-02):** if the codex executor is unavailable
+(CLI missing, auth failure, persistent hangs after the dead-man window), fall
+back to the strongest locally configured Opus-class text worker at max effort
+(Agent tool `model: "opus"`, or Workflow agents `model: 'opus',
+effort: 'max'`), one agent per spec, with the same spec contracts and
+anti-fabrication clauses verbatim. Verify availability by the failure itself
+-- do not preflight-probe every dispatch. The review bar is identical
+regardless of executor.
+
 ## Division of labor (non-negotiable)
 
 - **Planner (the model in this chat):** problem selection, recon synthesis,
@@ -66,10 +75,11 @@ Mechanism" blocks.
    below. The spec is the contract — exact files, exact phrases, exact
    acceptance checks, and EVERY proper name the artifact may use.
 4. **Dispatch (parallel, background).**
-   `codex exec -s workspace-write -C /tmp/<name>-wt "Read the spec file at
+   `codex exec -s workspace-write -C /tmp/<name>-wt
+   -o /tmp/codex-<name>-lastmsg.txt "Read the spec file at
    /tmp/spec-<name>.md and execute it exactly. Do NOT load or follow any local
-   codex skills. Analysis and file edits only; no git commit/push, no
-   network." > /tmp/codex-<name>.log 2>&1`
+   codex skills. Analysis and file edits only; no git commit/push, no network."
+   < /dev/null > /tmp/codex-<name>.log 2>&1 &`
    Run independent units concurrently (one background call each).
 5. **Verify (planner — the load-bearing step).** Review checklist below, every
    item, every time. Fix issues by editing the worktree files YOURSELF (don't
@@ -96,6 +106,10 @@ RULES (binding):
 - Do NOT load or follow any local codex skills. No review/audit tooling. Edits only.
 - No git commit/push, no gh, no network. Edit files in place.
 - Edit ONLY these files (no new files): <explicit list>
+- Read ONLY the exact files named in this spec; do not read the whole audit
+  ledger or broad directories unless this spec gives an exact row/path query.
+- Write the deliverable incrementally as you work; do not hold the only copy
+  for the final response.
 - Never write audit grades or status predictions into notes.
 - PROPER NAMES: the artifact may use ONLY identifiers listed in this spec. Do
   not invent registry ids, note basenames, or wall names.
@@ -176,6 +190,16 @@ Line-by-line review is the only thing that catches them. The six patterns
    the repo. Related tell, same wave: spec meta-language leaking into the
    artifact ("The sentence required for the record is: ...") — grep artifacts
    for PRESERVE/spec phrasing.
+7. **Authority confusion** (2026-07-02) — the executor quotes a REAL text from
+   the wrong authority: a note file's self-declared `claim_scope:` block
+   instead of the ledger row's `claim_scope` field (both exist, both look
+   official, they differ). Not fabrication — every word is real — but the
+   citation is wrong, and the executor may pin its runner to the same wrong
+   source, making the pair self-consistently green. Defense: specs put the
+   authoritative text inline AND require a runner gate that reads
+   `docs/audit/data/audit_ledger.json` directly and pins the note's quote to
+   the ledger field; review re-derives the quote from the ledger, never from
+   the note file.
 
 **Discriminating-gate test:** recompute every completeness/identity gate with
 a term dropped/perturbed; if it still passes, it's tautological — demand a
@@ -194,6 +218,16 @@ per-target synthesis verdict; the planner lands on it.)
 
 ## Dispatch hygiene (hard-won)
 
+- **Worker launch reliability:** close worker stdin with `< /dev/null`, capture
+  the final message with `-o`, and keep a full log. Without a closed stdin,
+  backgrounded `codex exec` can block forever while reading an implicit
+  `<stdin>` block. A 0% CPU process with a static log and empty `-o` file is a
+  hang signature; kill it, salvage useful reasoning from the full log, and
+  finish the result yourself.
+- **Bounded reads:** name the exact files the worker may read, preferably five
+  or fewer. Do not hand a worker the whole audit ledger; grep exact claim rows
+  or pass the row excerpt yourself. Open-ended "read and figure it out" specs
+  overfill context and often produce no durable deliverable.
 - **Skill contamination:** executor-side skill directories may contain
   repo-native review-loop and audit-loop skills that AUTO-TRIGGER on
   review-shaped prompts. EVERY dispatch carries "do NOT load or follow any

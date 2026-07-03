@@ -3,25 +3,26 @@
 **Date:** 2026-07-02  
 **Type:** bounded support (self-adversarial sharpening + exact witness)  
 **Claim type:** bounded_theorem  
-**Status:** source proposal / bounded-support artifact. This note does not set an
-audit outcome, derive a Record bridge, or select an action.
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome.
 **Paired runner:**
 [`scripts/frontier_semigroup_closure_quadratic_condition_2026_07_02.py`](../scripts/frontier_semigroup_closure_quadratic_condition_2026_07_02.py)  
 **Cached output:**
-[`outputs/frontier_semigroup_closure_quadratic_condition_2026_07_02.txt`](../outputs/frontier_semigroup_closure_quadratic_condition_2026_07_02.txt)
+[`logs/runner-cache/frontier_semigroup_closure_quadratic_condition_2026_07_02.txt`](../logs/runner-cache/frontier_semigroup_closure_quadratic_condition_2026_07_02.txt)
 
 ## Purpose
 
-This note weakens the reach of Block04's T5 premise: composition additivity
-alone does not force heat-kernel among all families.
+This note weakens the reach of Block04's T5 premise with an existence witness:
+positive finite-subgroup convolution semigroup closure alone does not force the
+heat-kernel `n^2` law.
 
 The self-adversarial point is exact and bounded. A positive one-parameter
-convolution semigroup can obey character semigroup closure while violating the
-heat-kernel `n^2` law. Therefore Block04's discriminator remains correct for
-the three named candidates and for testing a quadratic generator condition, but
-general heat-kernel selection needs one additional named condition.
+convolution semigroup on the finite atomic `Z_5` subgroup can obey character
+semigroup closure while violating the heat-kernel `n^2` law. Therefore
+Block04's discriminator remains correct for the three named candidates and for
+testing a quadratic generator condition, but the finite-subgroup witness shows
+that semigroup positivity by itself is not enough to identify the heat-kernel
+law without an additional quadratic-generator condition.
 
 Block04's T5 premise, quoted verbatim, was:
 
@@ -157,10 +158,11 @@ the first nontrivial heat-kernel `n^2` discriminator.
 
 ## T3 -- corrected consequence for Block04 T5
 
-The corrected premise chain is:
+The corrected premise chain is conditional:
 
 ```text
-record-composition additivity ⇒ semigroup class;
+record-composition additivity + a future kernel/regularity bridge
+    ⇒ a convolution-semigroup class;
 Q-gen ⇒ heat-kernel within the class;
 block04's discriminator remains the correct first-level test for Q-gen.
 ```
@@ -179,7 +181,8 @@ psi(2) = 4 psi(1),
 
 equivalently Block04's character test `c_2=c_1^4` inside a semigroup class.
 
-Thus record-composition additivity, if later bridged, selects the broad class
+Thus if a future Record-side bridge supplies the needed kernel assumptions and
+regularity, it may select a broad class of the form
 
 ```text
 c_n(t) = exp(-t psi(n)).
@@ -188,8 +191,10 @@ c_n(t) = exp(-t psi(n)).
 It does not, by itself, select the heat-kernel subfamily. Within Block04's three
 candidate families, the Block04 conclusion stands: Wilson and principal-angle
 Manton are not semigroups at finite beta by Block04 T4, so among those three
-candidates the heat-kernel remains the qualifying semigroup family. This note
-only sharpens the general statement beyond those three candidates.
+candidates the heat-kernel remains the qualifying semigroup family. This note's
+additional content is only the finite `Z_5` existence witness showing that a
+positive finite-subgroup convolution semigroup can still fail the quadratic
+generator condition.
 
 ## T4 -- what Q-gen means and does not mean
 
@@ -219,6 +224,8 @@ No such bridge is claimed here.
   the heat-kernel is the qualifying semigroup among those three.
 - `Q-gen` is not derived.
 - No Record bridge is proved.
+- No general classification of continuous finite-beta `U(1)` action densities
+  is claimed; the new counterexample is the finite `Z_5` witness.
 - No literature imports are used; the witness is constructed directly on `Z_5`.
 - No new axiom or primitive is introduced.
 
@@ -228,7 +235,8 @@ No such bridge is claimed here.
   [`ACTION_FAMILY_CHARACTER_SEMIGROUP_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md`](ACTION_FAMILY_CHARACTER_SEMIGROUP_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md).
   Role: supplies the `n^2` law, the T4 semigroup reading, the Wilson/Manton
   non-closure result among the three candidates, and the T5 premise sharpened
-  here. This sibling is stacked and unaudited.
+  here. This dependency has landed on `main` via PR #4819; independent audit
+  still owns its verdict and any retained-grade dependency closure.
 - Conditional context only:
   [`ACTION_FORM_NO_GO_EQUIVALENCE_PREMISE_CONTINUUM_REMOVAL_SCOPED_RELOCATION_NOTE_2026-06-08.md`](ACTION_FORM_NO_GO_EQUIVALENCE_PREMISE_CONTINUUM_REMOVAL_SCOPED_RELOCATION_NOTE_2026-06-08.md).
   Role: records that action selection is a well-posed open physical question

@@ -95,6 +95,11 @@ operator equality, or a beta=6 physical value.
 Promotion beyond renaming support requires a theorem deriving
 `Z_beta^env` from the unmarked-DOF integration rather than defining it.
 
+**Downstream hygiene marker (2026-07-02):** direct dependent citations were
+reviewed and narrowed to the formal-packaging scope above. This line records
+the dependent-side repair target for re-audit visibility only; it is not an
+audit verdict or status prediction.
+
 ## Audit-readiness metadata repair (2026-06-17)
 
 This repair makes the existing runner and cached transcript explicit in the

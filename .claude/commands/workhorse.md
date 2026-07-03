@@ -7,6 +7,15 @@ NEVER delegates judgment; only execution. This document is the canonical shared
 copy of the workhorse split referenced by the science commands' "Execution
 Mechanism" blocks.
 
+**Executor fallback (owner 2026-07-02):** if the codex executor is unavailable
+(CLI missing, auth failure, persistent hangs after the dead-man window), fall
+back to the strongest locally configured Opus-class text worker at max effort
+(Agent tool `model: "opus"`, or Workflow agents `model: 'opus',
+effort: 'max'`), one agent per spec, with the same spec contracts and
+anti-fabrication clauses verbatim. Verify availability by the failure itself
+-- do not preflight-probe every dispatch. The review bar is identical
+regardless of executor.
+
 ## Division of labor (non-negotiable)
 
 - **Planner (the model in this chat):** problem selection, recon synthesis,
@@ -181,6 +190,16 @@ Line-by-line review is the only thing that catches them. The six patterns
    the repo. Related tell, same wave: spec meta-language leaking into the
    artifact ("The sentence required for the record is: ...") — grep artifacts
    for PRESERVE/spec phrasing.
+7. **Authority confusion** (2026-07-02) — the executor quotes a REAL text from
+   the wrong authority: a note file's self-declared `claim_scope:` block
+   instead of the ledger row's `claim_scope` field (both exist, both look
+   official, they differ). Not fabrication — every word is real — but the
+   citation is wrong, and the executor may pin its runner to the same wrong
+   source, making the pair self-consistently green. Defense: specs put the
+   authoritative text inline AND require a runner gate that reads
+   `docs/audit/data/audit_ledger.json` directly and pins the note's quote to
+   the ledger field; review re-derives the quote from the ledger, never from
+   the note file.
 
 **Discriminating-gate test:** recompute every completeness/identity gate with
 a term dropped/perturbed; if it still passes, it's tautological — demand a

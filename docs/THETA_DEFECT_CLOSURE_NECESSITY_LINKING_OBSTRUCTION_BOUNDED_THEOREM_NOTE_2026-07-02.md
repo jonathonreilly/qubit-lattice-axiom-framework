@@ -1,6 +1,7 @@
-# Defect Closure Is Necessary, Not Just Sufficient: the Sector-Stability Obstruction Is Exactly the Defect-Shift Linking Pairing, Every Nonzero Defect Is Obstructed, and the Obstruction Is Defect-Supported (Bounded Theorem)
+# Defect Closure Is Necessary on the Tested Single-Plaquette Family: the Sector-Stability Obstruction Is Exactly the Defect-Shift Linking Pairing and Is Defect-Supported (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Type:** bounded_theorem
 **Claim type:** bounded_theorem (exact finite identity plus a necessity
 statement on the tested family; not a terminal no-go).
 **Status authority:** independent audit lane only. This note does not set an
@@ -58,13 +59,13 @@ own sketch, documented in the runner):
    arithmetic (`Q = Q_raw/2` = the intersection form) is re-earned in the
    same conventions (D1).
 
-**Consequence for (i-a).** The defect-closure residual is now two-sided:
-closure is not a convenience assumption but the exact boundary of sector
-existence — any derivation of the sector-record surface must supply `dn = 0`
-(as constraint or suppression), because the linking obstruction otherwise
-destroys the charge's definedness. The obstruction's exact form (a local
-pairing with `J`) is the quantitative target any suppression mechanism must
-beat.
+**Consequence for (i-a).** The defect-closure residual is now two-sided on
+the tested single-plaquette family: closure is not a convenience assumption
+for this sector construction but the observed boundary of sector existence.
+Any derivation of the sector-record surface must either supply `dn = 0`
+(as constraint or suppression) or explain why the local linking obstruction
+does not apply. The obstruction's exact form (a local pairing with `J`) is
+the quantitative target any suppression mechanism must beat.
 
 ## Source surface (named authorities)
 
@@ -80,7 +81,7 @@ measured value, fitted number, or Monte Carlo enters anywhere.
 
 | Prior state | After this note |
 |---|---|
-| defect closure sufficient for sectors (landed); necessity open | equivalence on the tested family: sectors exist iff `dn = 0` |
+| defect closure sufficient for sectors (landed); necessity open | equivalence on the tested single-plaquette family: sectors exist iff `dn = 0` |
 | defect breakdown witnessed by value-instability (landed) | the instability identified exactly: `Delta = -sum(J u lambda) + sum(lambda u J)`, sign derived by discrimination |
 | (i-a) as an assumption to justify | (i-a) as a quantitative target: any closure/suppression mechanism must control a local linking pairing with `J` |
 
@@ -89,8 +90,9 @@ measured value, fitted number, or Monte Carlo enters anywhere.
 ```text
 (i-a residual): derive the closure constraint or the suppression of
     defect-carrying branches from the framework surface (the necessity
-    theorem shows no sector construction can avoid this); whether the
-    Admissibility axiom bears on it remains an open question, not asserted.
+    theorem shows the tested sector construction cannot avoid it); whether
+    the Admissibility axiom bears on it remains an open question, not
+    asserted.
 ```
 
 ## Non-claims
@@ -103,7 +105,8 @@ register any object here; any new axiom, import, primitive, or admission.
 
 ## No-Go Discipline Gate (for the negative boundary)
 
-**Status:** PASS as bounded scoping. Negative content: with `dn != 0` the
+**Gate result:** bounded scoping only. Negative content: with `dn != 0` in
+the tested single-plaquette family, the
 cup-square is not branch-move invariant, quantitatively by the linking
 identity; every tested nonzero defect is obstructed.
 

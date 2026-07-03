@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
-"""Defect-closure NECESSITY on T^4: the change of the cup-square Q_raw under
-exact 1-cochain shifts is EXACTLY a linking pairing with the defect current,
-so a well-defined sector structure REQUIRES the branch cochain to be closed.
+"""Defect-closure NECESSITY on T^4 for the tested single-plaquette family.
+
+The change of the cup-square Q_raw under exact 1-cochain shifts is EXACTLY a
+linking pairing with the defect current. On the tested single-plaquette
+family, a well-defined sector structure therefore REQUIRES the branch cochain
+to be closed.
 
 Self-contained class-A runner (numpy only, fixed seed). Reimplements the
 cubical-complex machinery of the reference runner
@@ -24,9 +27,9 @@ Sections:
   A. Machinery ground: dd = 0; Leibniz spot-check pinning the sign convention.
   B. The linking identity: Delta(lambda) matches exactly one signed pairing
      of J and lambda across all trials (open n); vanishes for closed n.
-  C. Necessity: every nonzero single-plaquette defect current admits a lambda
-     with Delta != 0 (sector structure requires d n = 0); the obstruction is
-     defect-supported (locality witness).
+  C. Necessity: every tested nonzero single-plaquette defect current admits a
+     lambda with Delta != 0 (sector structure requires d n = 0 on this
+     family); the obstruction is defect-supported (locality witness).
   D. Consequence arithmetic: on the closed subfamily Q = Q_raw/2 equals the
      intersection form m01 m23 - m02 m13 + m03 m12.
 
@@ -279,8 +282,9 @@ for pl in PLANES:
     necessity_all = necessity_all and (best >= 1)
     min_mag = best if min_mag is None else min(min_mag, best)
     found_details.append((pl, best, best_link))
-check("C1 necessity: every nonzero single-plaquette defect current admits a"
-      " lambda with |Delta| >= 1 (sector structure REQUIRES dn = 0)",
+check("C1 necessity: every tested nonzero single-plaquette defect current"
+      " admits a lambda with |Delta| >= 1 (sector structure REQUIRES dn = 0"
+      " on this family)",
       necessity_all and (min_mag is not None and min_mag >= 1),
       f"min |Delta| over the six planes: {min_mag}")
 

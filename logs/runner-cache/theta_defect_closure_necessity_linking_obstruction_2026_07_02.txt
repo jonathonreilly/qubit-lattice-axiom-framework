@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/theta_defect_closure_necessity_linking_obstruction_2026_07_02.py
-runner_sha256: a0d4efb83bff898f768d6aec8b3d0d763b61f3c7136adb2b6fa3e5b6a1301bf0
+runner_sha256: aee8bafb44e6fc733a9eb2c279beb3bff536be5ad7d4ee83c1824aee97d0f2ef
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.34
+elapsed_sec: 0
 status: ok
 ----- stdout -----
 Section A: machinery ground
@@ -15,7 +15,7 @@ Section B: the linking identity
          winner: (-,+) over 36 trials; sum(dl u dl)=0 held: True
   [PASS] B2 closed contrast: Delta(lambda) = 0 for closed n (invariance re-earned) while the same shift moves an open n (discriminating)
 Section C: necessity
-  [PASS] C1 necessity: every nonzero single-plaquette defect current admits a lambda with |Delta| >= 1 (sector structure REQUIRES dn = 0)
+  [PASS] C1 necessity: every tested nonzero single-plaquette defect current admits a lambda with |Delta| >= 1 (sector structure REQUIRES dn = 0 on this family)
          min |Delta| over the six planes: 1
   [PASS] C2 obstruction is defect-supported: a near lambda gives Delta != 0 while a far lambda gives Delta = 0 (locality witness)
          near link ((0, 0, 1, 0), (2,)) -> Delta=-1; far link ((1, 1, 1, 1), (0,)) -> Delta=0
@@ -23,6 +23,4 @@ Section D: consequence arithmetic
   [PASS] D1 on the closed subfamily Q = Q_raw/2 equals the intersection form m01 m23 - m02 m13 + m03 m12
          (Q, form) pairs: [(-2, -2), (5, 5), (0, 0)]
 TOTAL: PASS=7 FAIL=0
-
 ----- stderr -----
-

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py
-runner_sha256: fca9d3df5bba94ef31ad8f1c489183eaac24c0e9367ea9ce49e75047f06414e1
+runner_sha256: c1b2639e9be507be019d2e028e59db2548f8daf730f7167c09e619d9aaaaf03c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.26
+elapsed_sec: 2.51
 status: ok
 ----- stdout -----
 
@@ -18,7 +18,7 @@ PASS docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md cont
 PASS docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md contains: Does not select or force a generation/Koide dial location.
 PASS docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md contains: outputs/post_record_character_path_channel_weight_slice_2026_06_07.json
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md exists
-PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: `character_path_channel_weight` | 10
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: `character_path_channel_weight` | 21
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: character/path/channel weight rows need a supplied weight rule and carrier
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Does not derive a prior, measure, source unit, trace state, or weight rule
 PASS docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md exists
@@ -51,31 +51,42 @@ PASS negative supplied weights are rejected
 ------------------------------------------------------------------------------
 Character/path/channel row checks
 ------------------------------------------------------------------------------
-PASS character/path/channel row count is current snapshot :: 10
+PASS character/path/channel row count is current snapshot :: 21
 PASS representative row present: architecture_note_directional_measure
 PASS representative row present: dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02
 PASS representative row present: wilson_action_surface_selector_real_positive_theorem_note_2026-05-25
-PASS audit ledger hash is unchanged :: 4b31e8573fb839a0606465ae08ae61bdbdfef55cbd88ccf7ecf5d2f7336a8679
+PASS audit ledger hash is unchanged :: 15efee196a7b3738ec370120bc338105f64b4c82d0b236c80b0c47b5d5b7b95f
 
 Character/path/channel rows:
+  action_form_no_go_equivalence_premise_continuum_removal_scoped_relocation_note_2026-06-08 | unaudited | unaudited | bounded_theorem | docs/ACTION_FORM_NO_GO_EQUIVALENCE_PREMISE_CONTINUUM_REMOVAL_SCOPED_RELOCATION_NOTE_2026-06-08.md
   architecture_note_directional_measure | audited_numerical_match | audited_numerical_match | bounded_theorem | docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md
   closure_c_l1_per_graph_casimir_note_2026-05-10_cl1c | unaudited | unaudited | bounded_theorem | docs/CLOSURE_C_L1_PER_GRAPH_CASIMIR_NOTE_2026-05-10_cL1c.md
   continuum_limit_note | audited_clean | retained_bounded | bounded_theorem | docs/CONTINUUM_LIMIT_NOTE.md
   dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md
-  gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17 | audited_conditional | audited_conditional | positive_theorem | docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md
+  gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17 | unaudited | unaudited | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md
+  gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12 | unaudited | unaudited | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_RIM_BOUNDARY_ETA_ENV_CONSTRUCTED_READOUT_BOUNDED_NOTE_2026-06-12.md
+  gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17 | unaudited | unaudited | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md
+  gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note | unaudited | unaudited | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md
+  gauge_vacuum_plaquette_two_strip_environment_rho_composed_readout_bounded_note_2026-06-12 | unaudited | unaudited | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_TWO_STRIP_ENVIRONMENT_RHO_COMPOSED_READOUT_BOUNDED_NOTE_2026-06-12.md
   hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26 | unaudited | unaudited | bounded_theorem | docs/HIERARCHY_ALPHA_BARE_FOUR_PI_CONTINUUM_MEASURE_CONTENT_ATTRIBUTION_BOUNDED_NOTE_2026-05-26.md
-  koide_aps_block_by_block_forcing_note_2026-04-21 | audited_conditional | audited_conditional | bounded_theorem | docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md
+  koide_aps_block_by_block_forcing_note_2026-04-21 | audited_clean | retained_bounded | bounded_theorem | docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md
   koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological | unaudited | unaudited | bounded_theorem | docs/KOIDE_S_L1_TOPOLOGICAL_CHERN_SIMONS_NOTE_2026-05-08_probeS_L1_topological.md
   koide_v_l1_quartic_casimir_beta2_note_2026-05-08_probev_l1_quartic | unaudited | unaudited | bounded_theorem | docs/KOIDE_V_L1_QUARTIC_CASIMIR_BETA2_NOTE_2026-05-08_probeV_L1_quartic.md
+  native_gauge_transfer_outside_weight_tail_rung_fourteen_bounded_note_2026-06-12 | unaudited | unaudited | bounded_theorem | docs/NATIVE_GAUGE_TRANSFER_OUTSIDE_WEIGHT_TAIL_RUNG_FOURTEEN_BOUNDED_NOTE_2026-06-12.md
+  quark_route2_e_center_lift_measured_calibration_narrow_theorem_note_2026-06-10 | unaudited | unaudited | bounded_theorem | docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md
+  r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08 | audited_clean | retained_bounded | bounded_theorem | docs/R3_GEOMETRIC_REGGE_LINEARIZATION_GIVES_HEALTHY_LAMBDA1_GRAVITON_NARROW_THEOREM_NOTE_2026-06-08.md
+  reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06 | unaudited | unaudited | bounded_theorem | docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md
+  theta_gauge_substrate_no_winding_carrier_emergent_q_bridge_bounded_theorem_note_2026-06-11 | unaudited | unaudited | bounded_theorem | docs/THETA_GAUGE_SUBSTRATE_NO_WINDING_CARRIER_EMERGENT_Q_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md
   wilson_action_surface_selector_real_positive_theorem_note_2026-05-25 | unaudited | unaudited | bounded_theorem | docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md
+  wilson_extremum_curvature_readout_boundary_certificate_2026-06-15 | audited_clean | retained_bounded | bounded_theorem | docs/WILSON_EXTREMUM_CURVATURE_READOUT_BOUNDARY_CERTIFICATE_2026-06-15.md
 
 ------------------------------------------------------------------------------
 Bounded ledger-row export checks
 ------------------------------------------------------------------------------
 PASS bounded character/path/channel row export exists :: outputs/post_record_character_path_channel_weight_slice_2026_06_07.json
 PASS slice export is for the character/path/channel bucket
-PASS slice export records current ledger sha :: 4b31e8573fb839a0606465ae08ae61bdbdfef55cbd88ccf7ecf5d2f7336a8679
-PASS slice export row count matches current split :: 10
+PASS slice export records current ledger sha :: 15efee196a7b3738ec370120bc338105f64b4c82d0b236c80b0c47b5d5b7b95f
+PASS slice export row count matches current split :: 21
 PASS slice export rows match independently enumerated measure split
 
 ------------------------------------------------------------------------------
@@ -94,7 +105,7 @@ PASS production dynamics derived flag is false
 PASS Record-derived physical arrow flag is false
 
 SUMMARY: PASS=54 FAIL=0
-CHARACTER_PATH_CHANNEL_WEIGHT_ROWS=10
+CHARACTER_PATH_CHANNEL_WEIGHT_ROWS=21
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE
 PHYSICAL_MEASURE_SELECTED=FALSE

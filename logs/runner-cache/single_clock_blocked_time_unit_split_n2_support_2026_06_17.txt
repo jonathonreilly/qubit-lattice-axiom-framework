@@ -1,0 +1,52 @@
+==============================================================================
+SINGLE-CLOCK B-AXIS.1 BLOCKED-TIME UNIT SPLIT CHECK
+==============================================================================
+
+[A] source anchors
+  [PASS] new note exists and names B-AXIS.1/N2 split
+  [PASS] new note states the claim boundary without retained status
+  [PASS] new note states audit-boundary no ledger/queue edits
+  [PASS] parent has B-AXIS.1 blocked time-step clause
+  [PASS] parent wires this N2 support note as source support
+  [PASS] parent still leaves B-AXIS.2 and B-AXIS.3 declared
+  [PASS] SC2 bridge identifies two-step block spacing
+  [PASS] SC2 bridge forbids physical mass/unit overread
+  [PASS] minimal Lattice excludes metric scale/lattice spacing/unit conversion
+  [PASS] minimal Record excludes time metric/dynamics/probability
+  [PASS] post-record interface says counts do not supply clock metric
+  [PASS] post-record interface supports rates only with supplied clock map
+  [PASS] record rate gate separates stable dial from physical rate unit
+  [PASS] note keeps the support local to source prose
+
+[B] two-step transfer algebra
+  [PASS] T_hat^2 spectra are positive and vacuum-normalized
+  [PASS] 1/(2 a_tau) reconstruction recovers the reference generator :: max residual 2.2e-16
+  [PASS] 1/a_tau reconstruction is the factor-two falsifier :: max residual 4.4e-16
+  [PASS] rescaling the supplied block time rescales H without changing T2 :: max residual 4.4e-16
+  [PASS] period-two single-step factors are distinct
+  [PASS] the physical block object is an ordered two-step product
+
+[C] Record/count clock no-go
+  [PASS] same record word/counts survive multiple clocks
+  [PASS] all supplied clocks are strictly increasing
+  [PASS] total rates differ under clock choice :: {'uniform': 1.0, 'slow': 0.5, 'accelerated': 0.5}
+  [PASS] interval-rate profiles differ under nonuniform clock
+  [PASS] Record order/count data do not determine physical elapsed time
+
+[D] branch hygiene
+  [PASS] source note exists on the canonical docs surface
+  [PASS] runner is paired with the science note
+  [PASS] note forbids audit/publication/status surface edits
+  [PASS] runner does not depend on branch-local loop packets
+
+[E] status firewall
+  [PASS] note forbids retained/promoted/audit-ratified status
+  [PASS] B-AXIS.2 and B-AXIS.3 remain outside this support
+  [PASS] absolute physical clock unit remains open
+  [PASS] internal denominator support is tied to the supplied T_hat^2 object
+  [PASS] note explicitly says no new axiom
+  [PASS] note explicitly says no audit-surface update
+
+==============================================================================
+TOTAL: PASS=35 FAIL=0
+==============================================================================

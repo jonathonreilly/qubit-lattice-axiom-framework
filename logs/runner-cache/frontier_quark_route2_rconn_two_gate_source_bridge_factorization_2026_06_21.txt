@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_rconn_two_gate_source_bridge_factorization_2026_06_21.py
+runner_sha256: 7fb30f302d214a8620c4865d251246eb38dcfc7f03a366478c3f14af7863671a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.78
+status: ok
+----- stdout -----
+A. Authority surface
+PASS: QUARK_ROUTE2_RCONN_TWO_GATE_SOURCE_BRIDGE_FACTORIZATION_NOTE_2026-06-21.md exists -- docs/QUARK_ROUTE2_RCONN_TWO_GATE_SOURCE_BRIDGE_FACTORIZATION_NOTE_2026-06-21.md
+PASS: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md
+PASS: QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md exists -- docs/QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md
+PASS: RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md exists -- docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md
+PASS: RCONN_DERIVED_NOTE.md exists -- docs/RCONN_DERIVED_NOTE.md
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists -- docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: new note names W1 and W2
+PASS: new note declares no repo-wide status change
+PASS: source-domain note names missing typed bridge
+PASS: typed bridge note already separates W1 and W2
+PASS: kappa note keeps physical selector open
+PASS: kappa note requires separate physical bridge for positive downstream use
+PASS: Rconn note keeps exact support as F_adj
+PASS: readout note defines endpoint ratios without Rconn
+
+B. Four-case reachability
+PASS: current inventory lacks color-to-center path
+PASS: current inventory lacks color-to-rho path
+PASS: W2-only reaches the color scalar from physical selector
+PASS: W2-only does not reach Route-2 center ratio
+PASS: W2-only does not reach endpoint target chain
+PASS: W1-only reaches Route-2 center ratio from color scalar
+PASS: W1-only reaches endpoint target chain from color scalar
+PASS: W1-only has no physical-selector source path
+PASS: W1 and W2 together reach endpoint target chain from physical selector
+PASS: the physical selector edge is not already in W9 inventory
+PASS: the W1 bridge edge is not already in W9 inventory
+
+C. Exact arithmetic
+PASS: F_adj at N_c=3 is 8/9 -- 8/9
+PASS: W1 center ratio is -F_adj -- -8/9
+PASS: W1 center ratio gives q_E=15/8 -- 15/8
+PASS: W1 center ratio gives rho_E=21/4 -- 21/4
+PASS: missing bridge has W1 endpoints
+PASS: kappa_EW=0 gives expected R_phys -- 8/9
+PASS: kappa_EW=0 gives expected q_E if typed as c_TE -- 15/8
+PASS: kappa_EW=0 gives expected rho_E if typed as c_TE -- 21/4
+PASS: kappa_EW=1/2 gives expected R_phys -- 17/18
+PASS: kappa_EW=1/2 gives expected q_E if typed as c_TE -- 30/17
+PASS: kappa_EW=1/2 gives expected rho_E if typed as c_TE -- 78/17
+PASS: kappa_EW=1 gives expected R_phys -- 1
+PASS: kappa_EW=1 gives expected q_E if typed as c_TE -- 5/3
+PASS: kappa_EW=1 gives expected rho_E if typed as c_TE -- 4
+PASS: only kappa_EW=0 sample lands the target after the extra typing rule -- hits=1
+
+D. Gate-independence discipline
+PASS: note states W2-only limitation
+PASS: note states W1-only limitation
+PASS: note includes four case table
+PASS: note keeps forbidden inputs visible
+PASS: note identifies remaining positive work
+PASS: note does not claim selected P_R
+PASS: runner avoids applying verdicts
+PASS: unsafe endpoint shortcut is explicitly pruned
+PASS: expected PASS total is recorded
+
+TOTAL: PASS=49, FAIL=0
+Status: exact negative boundary for W1/W2 gate conflation.
+
+----- stderr -----
+

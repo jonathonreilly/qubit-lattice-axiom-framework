@@ -1,0 +1,115 @@
+===== runner cache v1 =====
+runner: scripts/wilson_temporal_kernel_casimir_generator_beta_gbare_transport_2026_07_01.py
+runner_sha256: 341f2a783666f4d0dcb44e139f8306add54909fa85c535e40fb95d35a2baa2f8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.56
+status: ok
+----- stdout -----
+Wilson temporal-kernel Casimir generator / beta-g_bare dial transport check
+==============================================================================
+
+SECTION A: canonical half-trace normalization anchors
+------------------------------------------------------------------------------
+[PASS] trace form Tr(T_a T_b) = delta_ab / 2
+[PASS] all T_a Hermitian
+[PASS] all T_a traceless
+[PASS] sum_a T_a T_a = (4/3) I_3 on the fundamental
+[PASS] Casimir formula matches the operator anchor at the fundamental
+[PASS] Casimir values (fund, adj, sym) = (4/3, 3, 10/3)
+[PASS] Weyl dimensions (fund, adj, sym) = (3, 8, 6)
+
+SECTION B: class-integration machinery guards
+------------------------------------------------------------------------------
+[PASS] beta=0: trivial-character coefficient = 1 (Haar orthonormality)
+[PASS] beta=0: c_fund(1,0,0) = 0 (Haar orthogonality) (c=-5.76e-17)
+[PASS] beta=0: c_adj(2,1,0) = 0 (Haar orthogonality) (c=1.48e-16)
+[PASS] beta=0: c_sym(2,0,0) = 0 (Haar orthogonality) (c=-1.54e-16)
+[PASS] grid-doubling agreement for c_fund(1,0,0) at beta=48 (rel dev=6.73e-16)
+[PASS] grid-doubling agreement for c_adj(2,1,0) at beta=48 (rel dev=5.63e-16)
+[PASS] grid-doubling agreement for c_sym(2,0,0) at beta=48 (rel dev=8.94e-16)
+[PASS] all SU(3) kernel character coefficients positive on tested betas
+
+SECTION C: U(1) companion — 2 beta eps_n -> n^2
+------------------------------------------------------------------------------
+[PASS] U(1) n=1: |f-1| strictly decreasing along beta doubling (f(96)=1.00526)
+[PASS] U(1) n=1: Richardson(48,96) hits 1 (R1=0.999896)
+[PASS] U(1) n=2: |f-1| strictly decreasing along beta doubling (f(96)=1.00523)
+[PASS] U(1) n=2: Richardson(48,96) hits 1 (R1=0.999956)
+[PASS] U(1) n=3: |f-1| strictly decreasing along beta doubling (f(96)=1.00518)
+[PASS] U(1) n=3: Richardson(48,96) hits 1 (R1=1.000055)
+
+SECTION D: SU(2) companion — beta eps_j / 2 -> j(j+1)
+------------------------------------------------------------------------------
+[PASS] SU(2) j=0.5: |f-1| strictly decreasing along beta doubling (f(96)=1.00522)
+[PASS] SU(2) j=0.5: Richardson(48,96) hits 1 (R1=0.999976)
+[PASS] SU(2) j=1.0: |f-1| strictly decreasing along beta doubling (f(96)=1.00517)
+[PASS] SU(2) j=1.0: Richardson(48,96) hits 1 (R1=1.000075)
+[PASS] SU(2) j=1.5: |f-1| strictly decreasing along beta doubling (f(96)=1.00511)
+[PASS] SU(2) j=1.5: Richardson(48,96) hits 1 (R1=1.000213)
+
+SECTION E: SU(3) — beta eps_R / N_c -> C_2(R), half-trace normalization
+------------------------------------------------------------------------------
+[PASS] SU(3) fund(1,0,0): |f-1| strictly decreasing along beta doubling (f(48)=1.03789)
+[PASS] SU(3) fund(1,0,0): Richardson(24,48) hits 1 (R1=0.997094)
+[PASS] SU(3) fund(1,0,0): Richardson2(12,24,48) hits 1 (R2=0.999423)
+[PASS] SU(3) adj(2,1,0): |f-1| strictly decreasing along beta doubling (f(48)=1.03724)
+[PASS] SU(3) adj(2,1,0): Richardson(24,48) hits 1 (R1=0.998969)
+[PASS] SU(3) adj(2,1,0): Richardson2(12,24,48) hits 1 (R2=0.997913)
+[PASS] SU(3) sym(2,0,0): |f-1| strictly decreasing along beta doubling (f(48)=1.03711)
+[PASS] SU(3) sym(2,0,0): Richardson(24,48) hits 1 (R1=0.999340)
+[PASS] SU(3) sym(2,0,0): Richardson2(12,24,48) hits 1 (R2=0.997650)
+
+SECTION F: dial transport — beta * g_E^2 -> 2 N_c, R-independent
+------------------------------------------------------------------------------
+[PASS] beta * g_E^2 strictly decreasing toward 2 N_c = 6 (values=7.0037, 6.4721, 6.2274)
+[PASS] transport Richardson(24,48): beta * g_E^2 hits 2 N_c = 6 (R1=5.98257)
+[PASS] transport Richardson2(12,24,48): beta * g_E^2 hits 2 N_c = 6 (R2=5.99654)
+[PASS] extracted dial is R-independent at beta=48 (adj(2,1,0) vs fund) (ratio=0.999369)
+[PASS] extracted dial is R-independent at beta=48 (sym(2,0,0) vs fund) (ratio=0.999243)
+
+SECTION G: exact leading-dial layer — coincidence at beta = 2 N_c
+------------------------------------------------------------------------------
+[PASS] leading dial map: g_lead^2(6) = 1
+[PASS] identity beta * g_lead^2 = 2 N_c for all tested beta
+[PASS] unit-coefficient point: leading generator at beta=6 is (1/2) C_2
+[PASS] mismatched reading at beta=24: leading generator is (1/8) C_2, coefficient 1/4 != 1
+[PASS] beta=24 != 2 N_c gives g_lead^2 = 1/4 != 1 (coincidence fails off the point)
+[PASS] beta=3/2 != 2 N_c gives g_lead^2 = 4 != 1 (coincidence fails off the point)
+[PASS] beta=12 != 2 N_c gives g_lead^2 = 1/2 != 1 (coincidence fails off the point)
+[PASS] coincidence forward: beta = 2 N_c gives g_lead^2 = 1
+[PASS] coincidence backward: g_lead^2 = 1 gives beta = 2 N_c = 6
+[PASS] three-normalization coincidence at beta=6: s^2 = g_mag^2 = g_E,lead^2 = 1
+
+SECTION H: source-boundary guards
+------------------------------------------------------------------------------
+[PASS] transport note exists (docs/WILSON_TEMPORAL_KERNEL_CASIMIR_GENERATOR_BETA_GBARE_TRANSPORT_THEOREM_NOTE_2026-07-01.md)
+[PASS] finite-link rigidity note exists (docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
+[PASS] Wilson small-a note exists (docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
+[PASS] RP temporal-gauge bridge note exists (docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+[PASS] note contains marker: Status authority:** independent audit lane only
+[PASS] note contains marker: does not derive `beta = 2 N_c`
+[PASS] note contains marker: unit-coefficient
+[PASS] note contains marker: half-trace
+[PASS] note contains marker: one dial
+[PASS] note contains marker: does not claim:
+[PASS] note contains marker: Wilson plaquette action-surface selection
+[PASS] note contains marker: an audit verdict or any effective-status promotion
+[PASS] note contains marker: not a citation-graph dependency
+[PASS] note omits forbidden marker: effective_status:
+[PASS] note omits forbidden marker: audit_status:
+[PASS] note omits forbidden marker: **Audit status:**
+[PASS] rigidity contains marker: no independent scalar-normalization freedom
+[PASS] rigidity contains marker: Tr(T_a T_b) = delta_ab / 2
+[PASS] Wilson contains marker: beta * g_bare^2 = 2 N_c
+[PASS] Wilson contains marker: does not derive that the framework must select the Wilson action surface
+[PASS] RP bridge contains marker: temporal gauge
+[PASS] RP bridge contains marker: plane positive kernel
+
+Summary
+------------------------------------------------------------------------------
+TOTAL: PASS=73 FAIL=0
+Transport check passed.
+
+----- stderr -----
+

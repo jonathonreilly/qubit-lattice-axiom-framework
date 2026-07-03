@@ -131,7 +131,11 @@ def main() -> int:
     check("block07 keeps P1 load-bearing", "P1" in block07_text and "load-bearing" in block07_text)
     check("block08 keeps A1 source-domain separate", "source-domain bridge no-go" in block08_text)
     check("one-Higgs note leaves generation matrices free", "gauge symmetry leaves the generation matrices free" in one_higgs_text)
-    check("Koide character note keeps P1 non-retained", "P1" in koide_character_text and "not retained" in koide_character_text)
+    check(
+        "Koide character note and P1 no-go note keep the P1 readout non-retained",
+        "square-root readout identification is not retained yet" in koide_character_text
+        and "P1 cannot be promoted to retained quark Ward closure" in new_text,
+    )
     check("Lane 3 firewall blocks bounded promotion", "not a retained" in firewall_text)
 
     print()

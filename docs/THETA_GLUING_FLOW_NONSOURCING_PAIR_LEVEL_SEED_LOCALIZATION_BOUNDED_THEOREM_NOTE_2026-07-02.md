@@ -1,6 +1,7 @@
 # The Gluing Flow Does Not Source the Theta-Parity Pair Term: Real Class-Weight Seeds Produce Plane-Blind Couplings That Vanish Identically Under the Epsilon Assembly, and Phased Seeds Are Transported, Never Created — the Theta Admission's Gauge-Side Kernel Localizes at the Seed Class (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Type:** bounded_theorem
 **Claim type:** bounded_theorem (exact finite non-sourcing theorems with a
 graded generality statement; not a terminal no-go, not a discharge of the
 theta admission).
@@ -14,9 +15,8 @@ re-grade any Tier-A admission, or claim Strong-CP closure.
 
 ## Question
 
-Block 9 (PR #4877, in-flight) assembled the theta insertion's density — the
-epsilon-paired cross-plane plaquette-pair object — and left the campaign's
-terminal residual:
+The campaign's theta-density target is the epsilon-paired cross-plane
+plaquette-pair object, leaving the residual:
 
 ```text
 (ii'-derive): derive the assembled insertion, with theta as its
@@ -123,11 +123,12 @@ the flow generates.
    "non-forcing/non-sourcing route surface" — this note supplies the exact
    pair-level non-sourcing half in the gluing calculus.
 
-Campaign chain (landed PRs #4784/#4796/#4811; in-flight PRs
-#4832/#4858/#4869/#4875/#4876/#4877): the gluing identities, flip tables,
-insertion density, and epsilon combinatorics are those blocks' objects;
-every identity used here is re-earned inline by this runner. No unaudited
-note is consumed as a premise.
+Campaign chain context (landed PRs #4784/#4796/#4811; in-flight PRs
+#4832/#4858/#4869/#4875/#4876/#4877): gluing identities, flip tables,
+insertion-density targets, and epsilon combinatorics are those blocks'
+objects. They are context here, not load-bearing premises; every identity
+used for this note's claims is re-earned inline by this runner. No
+unaudited note is consumed as a premise.
 
 ## Theorem statements (graded)
 
@@ -226,7 +227,7 @@ This note does not claim:
 
 ## No-Go Discipline Gate (for the negative boundary)
 
-**Status:** PASS as bounded scoping inside positive constructions. The
+**Gate result:** bounded scoping inside positive constructions. The
 negative content is exactly: the gluing flow from real class-weight seeds
 generates zero theta-parity pair term (exact), and no plane-blind mechanism
 can do otherwise (exact combinatorial cancellation).
@@ -262,12 +263,12 @@ as the surviving kernel, not smuggled as an assumption.
 
 ### N4 — Residual matching
 
-Block 9's (ii'-derive) is consumed and split: (ii'-nonsourcing) supplied,
-(ii'-seed) named as the kernel. The registry's "non-forcing/non-sourcing"
-tracking is matched term by term: no-forcing = the landed sharpening
-source; non-sourcing = this note's pair-level theorem. The landed
-conditional-reality lane (staggered + matter) is convergent and referenced
-without being consumed.
+The (ii'-derive) residual is split without consuming in-flight siblings:
+(ii'-nonsourcing) is supplied here, and (ii'-seed) is named as the kernel.
+The registry's "non-forcing/non-sourcing" tracking is matched term by term:
+no-forcing = the landed sharpening source; non-sourcing = this note's
+pair-level theorem. The landed conditional-reality lane (staggered +
+matter) is convergent and referenced without being consumed.
 
 ### N5 — Rhetoric audit
 

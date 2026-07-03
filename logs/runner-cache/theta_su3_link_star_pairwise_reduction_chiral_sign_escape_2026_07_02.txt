@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/theta_su3_link_star_pairwise_reduction_chiral_sign_escape_2026_07_02.py
+runner_sha256: a9f944413053c6ba948618d9146e2041cc4469bcd4a02b6445c9c4b816d12f3a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
+Section A: projector machinery ground
+  [PASS] A1 generator conventions match the exponentiated reps for F, Fb and the conjugate slots (guards the conjugate-rep sign)
+  [PASS] A2 projectors are Hermitian idempotents with sigma(V) Pi = Pi on deterministic test elements (the defining Haar-average property)
+  [PASS] A3 singlet-rank table over {1,F,Fb}^3 matches representation theory (nine rank-1 channels, all others rank 0)
+         all 27 channels as expected
+Section B: star and evenness
+  [PASS] B1 the star of a real class weight is real
+         G = 1.271101375144, imag = 0.00e+00
+  [PASS] B2 diagonal-conjugation invariance (exact projector evaluation)
+  [PASS] B3 dagger-evenness: G(S^dag triple) = G
+  [PASS] B4 bar-evenness (SU(3) outer flip): G(conj triple) = G
+  [PASS] B5 transpose-evenness: G(S^T triple) = G
+  [PASS] B6 the epsilon channel is nonzero and conjugate-paired: I(F,F,Fb) = conj I(Fb,Fb,F)
+         I(F,F,Fb) = 0.155053-0.022887j
+  [PASS] B7 removing the epsilon channels changes the star: the pairwise reduction is via evenness, not channel absence
+         |G - G_noeps| = 0.013296
+Section C: polarized Cayley-Hamilton and the chiral datum
+  [PASS] C1 polarized Cayley-Hamilton (3x3): tr(ABC) + tr(ACB) = pairwise traces + det-polarization term (exact)
+  [PASS] C2 det-polarization is transpose-invariant; the chiral datum d = tr(ABC) - tr(ACB) is transpose-odd
+         d = 1.253629+1.580489j
+  [PASS] C3 parity table: dagger(d) = -conj(d) and bar(d) = conj(d) — every real-linear component of d is odd under a flip the star is even under
+Section D: pair-data rigidity and the transpose sheet
+  [PASS] D1 local rigidity: the 10x8 Jacobian of the pair-data map on C has full rank 8 — no continuous pair-data-preserving deformation of C exists at fixed (A, B)
+         smallest singular value = 0.2041
+  [PASS] D2 the simultaneous-transpose triple preserves ALL 18 pair data exactly
+         max deviation = 3.33e-16
+  [PASS] D3 the sheets are genuinely distinct diagonal orbits: |d| > 0.1 and d flips sign on the transpose sheet (d is a diagonal-conjugation invariant)
+         d = -1.348524+0.664649j
+  [PASS] D4 the star takes the SAME value on both sheets (transpose-evenness on the rigidity witness): the chiral sign is the unique multilinear escape and real weights cannot read it
+         G = 0.8745504222 on both sheets
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

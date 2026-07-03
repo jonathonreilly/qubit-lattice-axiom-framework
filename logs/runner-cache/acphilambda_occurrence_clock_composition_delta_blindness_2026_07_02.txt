@@ -1,0 +1,130 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_occurrence_clock_composition_delta_blindness_2026_07_02.py
+runner_sha256: 1804f6802f0800a5f54d3e4f4cbba5f23089eec51bf2e4b5146a5484e87cf79d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.77
+status: ok
+----- stdout -----
+
+========================================================================================
+PART A - files, ledger authority, and source pins
+========================================================================================
+[PASS] paired note exists -- docs/ACPHILAMBDA_OCCURRENCE_CLOCK_COMPOSITION_DELTA_BLINDNESS_2026-07-02.md
+[PASS] paired runner exists -- scripts/acphilambda_occurrence_clock_composition_delta_blindness_2026_07_02.py
+[PASS] occurrence bridge exists -- docs/RECORD_OCCURRENCE_THINNED_IID_FREQUENCY_BRIDGE_2026-07-01.md
+[PASS] finer-record clock note exists -- docs/ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md
+[PASS] circulant retained anchor exists -- docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
+[PASS] audit ledger exists -- docs/audit/data/audit_ledger.json
+[PASS] occurrence row effective_status is unaudited
+[PASS] occurrence row audit_status is unaudited
+[PASS] clock row effective_status is unaudited
+[PASS] clock row audit_status is unaudited
+[PASS] circulant row is retained_bounded authority
+[PASS] circulant row has ledger scope
+[PASS] note states occurrence status pending honestly
+[PASS] note states clock status pending honestly
+[PASS] note authority-gates circulant ledger scope
+[PASS] occurrence boundary pin is true
+[PASS] clock pins D_chi
+[PASS] clock pins one-shot coherence erasure
+[PASS] clock pins occupancy preservation
+[PASS] clock pins doublet rate
+[PASS] circulant source pins form
+[PASS] circulant source pins sector dial
+
+========================================================================================
+PART B - T14-1 exact occupancy invariance
+========================================================================================
+[PASS] general rho is Hermitian
+[PASS] H diagonal eigenvalue k=0
+[PASS] projector k=0 commutes with H
+[PASS] occupancy k=0 invariant under U
+[PASS] H diagonal eigenvalue k=1
+[PASS] projector k=1 commutes with H
+[PASS] occupancy k=1 invariant under U
+[PASS] H diagonal eigenvalue k=2
+[PASS] projector k=2 commutes with H
+[PASS] occupancy k=2 invariant under U
+[PASS] lambda_1 - lambda_2 equals clock splitting
+[PASS] D_chi is idempotent
+[PASS] D_chi preserves diagonal
+
+========================================================================================
+PART C - T14-2 two-event occupancy stream and discriminator
+========================================================================================
+[PASS] event 1 occupancy k=0 is initial
+[PASS] event 2 occupancy k=0 is initial
+[PASS] event 1 occupancy k=1 is initial
+[PASS] event 2 occupancy k=1 is initial
+[PASS] event 1 occupancy k=2 is initial
+[PASS] event 2 occupancy k=2 is initial
+[PASS] two-event joint (0,0) equals product
+[PASS] two-event joint (0,0) is phase-free
+[PASS] two-event joint (0,1) equals product
+[PASS] two-event joint (0,1) is phase-free
+[PASS] two-event joint (0,2) equals product
+[PASS] two-event joint (0,2) is phase-free
+[PASS] two-event joint (1,0) equals product
+[PASS] two-event joint (1,0) is phase-free
+[PASS] two-event joint (1,1) equals product
+[PASS] two-event joint (1,1) is phase-free
+[PASS] two-event joint (1,2) equals product
+[PASS] two-event joint (1,2) is phase-free
+[PASS] two-event joint (2,0) equals product
+[PASS] two-event joint (2,0) is phase-free
+[PASS] two-event joint (2,1) equals product
+[PASS] two-event joint (2,1) is phase-free
+[PASS] two-event joint (2,2) equals product
+[PASS] two-event joint (2,2) is phase-free
+[PASS] coherence-reading p_plus contains splitting phase
+[PASS] coherence-reading p_plus contains delta after substitution
+[PASS] coherence-reading discriminator derivative is nonzero
+
+========================================================================================
+PART D - T14-3 coherence phase and two-dial ratio
+========================================================================================
+[PASS] rho_d1d2 carries the doublet phase factor
+[PASS] doublet phase factor uses exact splitting
+[PASS] ratio contains coupling magnitude dial
+[PASS] ratio contains activation probability dial
+[PASS] ratio contains both free dials
+
+========================================================================================
+PART E - note discipline
+========================================================================================
+[PASS] required sentence present: occupancy-reading event streams are comple
+[PASS] required sentence present: `delta`-registration through events requir
+[PASS] required sentence present: the panel's route (c) adjudicates to the r
+[PASS] required sentence present: not a terminal no-go
+[PASS] note contains ### N1
+[PASS] note contains ### N2
+[PASS] note contains ### N3
+[PASS] note contains ### N4
+[PASS] note contains ### N5
+[PASS] note contains ### N6
+[PASS] note contains ### N7
+[PASS] note contains ### N8
+[PASS] forbidden concatenated tokens absent
+[PASS] local-instruction leakage absent
+[PASS] W_ identifiers are whitelisted -- ['W_cycle_holonomy_value', 'W_defect_identity_unit', 'W_defect_readout_selection']
+[PASS] markdown-link inventory has exactly three dependency docs -- ['RECORD_OCCURRENCE_THINNED_IID_FREQUENCY_BRIDGE_2026-07-01.md', 'ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md', 'BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md']
+[PASS] runner link inventory has exactly one runner -- ['../scripts/acphilambda_occurrence_clock_composition_delta_blindness_2026_07_02.py']
+[PASS] total markdown links are three docs plus one runner -- ['../scripts/acphilambda_occurrence_clock_composition_delta_blindness_2026_07_02.py', 'RECORD_OCCURRENCE_THINNED_IID_FREQUENCY_BRIDGE_2026-07-01.md', 'ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md', 'BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md']
+[PASS] PR #4840 is backticked in note
+[PASS] PR #4840 is not a markdown target
+[PASS] PR #4845 is backticked in note
+[PASS] PR #4845 is not a markdown target
+[PASS] status-authority header is standard
+[PASS] claim type states bounded composition theorem
+[PASS] note does not use PASS as status
+[PASS] no self-authored audit verdict
+[PASS] verification command is recorded
+[PASS] note line count is in requested band -- 205
+[PASS] runner line count is in requested band -- 251
+[PASS] verification close records measured final PASS -- expected=97
+
+TOTAL: PASS=97 FAIL=0
+
+----- stderr -----
+

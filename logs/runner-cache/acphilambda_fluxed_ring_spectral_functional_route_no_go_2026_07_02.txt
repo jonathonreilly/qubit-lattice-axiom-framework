@@ -1,0 +1,139 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_fluxed_ring_spectral_functional_route_no_go_2026_07_02.py
+runner_sha256: 5ef73bab85f2c814774bba207bcfa083d5d7a955bad63ed87b500c5668c7a9d4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.95
+status: ok
+----- stdout -----
+[PASS] PART A note exists
+[PASS] PART A runner exists
+[PASS] PART A Brannen source exists
+[PASS] PART A modulus source exists
+[PASS] PART A minimal axioms source exists
+[PASS] PART A Brannen quote pin: circulant form
+[PASS] PART A Brannen quote pin: (a, |b|, delta)
+[PASS] PART A modulus quote pin: stationary only at delta=k60
+[PASS] PART A modulus quote pin: candidates degenerate
+[PASS] PART B L N=3 lambda^3 coefficient is flux-blind
+[PASS] PART B L N=3 lambda^2 coefficient is flux-blind
+[PASS] PART B L N=3 lambda^1 coefficient is flux-blind
+[PASS] PART B L N=3 constant term is localized flux term
+[PASS] PART B L N=4 lambda^4 coefficient is flux-blind
+[PASS] PART B L N=4 lambda^3 coefficient is flux-blind
+[PASS] PART B L N=4 lambda^2 coefficient is flux-blind
+[PASS] PART B L N=4 lambda^1 coefficient is flux-blind
+[PASS] PART B L N=4 constant term is localized flux term
+[PASS] PART B L N=5 lambda^5 coefficient is flux-blind
+[PASS] PART B L N=5 lambda^4 coefficient is flux-blind
+[PASS] PART B L N=5 lambda^3 coefficient is flux-blind
+[PASS] PART B L N=5 lambda^2 coefficient is flux-blind
+[PASS] PART B L N=5 lambda^1 coefficient is flux-blind
+[PASS] PART B L N=5 constant term is localized flux term
+[PASS] PART B L N=6 lambda^6 coefficient is flux-blind
+[PASS] PART B L N=6 lambda^5 coefficient is flux-blind
+[PASS] PART B L N=6 lambda^4 coefficient is flux-blind
+[PASS] PART B L N=6 lambda^3 coefficient is flux-blind
+[PASS] PART B L N=6 lambda^2 coefficient is flux-blind
+[PASS] PART B L N=6 lambda^1 coefficient is flux-blind
+[PASS] PART B L N=6 constant term is localized flux term
+[PASS] PART B H N=3 lambda^3 coefficient is flux-blind
+[PASS] PART B H N=3 lambda^2 coefficient is flux-blind
+[PASS] PART B H N=3 lambda^1 coefficient is flux-blind
+[PASS] PART B H N=3 det H equals 2 cos Phi
+[PASS] PART B H N=3 e1 equals 0
+[PASS] PART B H N=3 e2 equals -3
+[PASS] PART B L N=3 power-sum e1 equals 6
+[PASS] PART B L N=3 power-sum e2 equals 9
+[PASS] PART B L N=3 det L equals 2 - 2 cos Phi
+[PASS] PART B robustness: defected ring keeps non-constant coefficients flux-blind
+[PASS] PART B robustness: defected constant term is 2w^2 + 2w cos Phi - 4 at w=2
+[PASS] PART B robustness: defected constant term differs from the unit-modulus value
+[PASS] PART B discriminator: N=3 lambda^1 coefficient is not flux-dependent
+[PASS] PART B rejector: chorded 4-ring puts flux into the lambda^1 coefficient
+[PASS] PART B rejector: chorded 4-ring keeps lambda^2 and higher flux-blind
+[PASS] PART C Tr L^{-1} at N=3 equals e2/e3 closed form
+[PASS] PART C det L derivative positive at Phi=1/2
+[PASS] PART C det L derivative positive at Phi=2/3
+[PASS] PART C det L derivative positive at Phi=3/2
+[PASS] PART C log-det derivative equals sin Phi over 1-cos Phi
+[PASS] PART C log-det derivative positive at Phi=1/2
+[PASS] PART C log-det derivative positive at Phi=2/3
+[PASS] PART C log-det derivative positive at Phi=3/2
+[PASS] PART C Tr L inverse derivative negative at Phi=1/2
+[PASS] PART C Tr L inverse derivative negative at Phi=2/3
+[PASS] PART C Tr L inverse derivative negative at Phi=3/2
+[PASS] PART C general spectral functional derivative factors through sin Phi
+[PASS] PART C stationarity endpoint Phi=0
+[PASS] PART C stationarity endpoint Phi=pi
+[PASS] PART C tuned selector demonstrates the circularity: the target appears in the functional
+[PASS] PART C wrong-value rejector: tuned selector is not stationary at Phi=1/2
+[PASS] PART D L N=3 e_1 is flux-blind
+[PASS] PART D L N=3 e_2 is flux-blind
+[PASS] PART D L N=3 e_{N-1} equals N^2
+[PASS] PART D L N=4 e_1 is flux-blind
+[PASS] PART D L N=4 e_2 is flux-blind
+[PASS] PART D L N=4 e_3 is flux-blind
+[PASS] PART D L N=4 e_{N-1} equals N^2
+[PASS] PART D L N=5 e_1 is flux-blind
+[PASS] PART D L N=5 e_2 is flux-blind
+[PASS] PART D L N=5 e_3 is flux-blind
+[PASS] PART D L N=5 e_4 is flux-blind
+[PASS] PART D L N=5 e_{N-1} equals N^2
+[PASS] PART D L N=6 e_1 is flux-blind
+[PASS] PART D L N=6 e_2 is flux-blind
+[PASS] PART D L N=6 e_3 is flux-blind
+[PASS] PART D L N=6 e_4 is flux-blind
+[PASS] PART D L N=6 e_5 is flux-blind
+[PASS] PART D L N=6 e_{N-1} equals N^2
+[PASS] PART D matrix-tree N=3 cofactor (0,0) equals 3
+[PASS] PART D matrix-tree N=3 cofactor (0,1) equals 3
+[PASS] PART D matrix-tree N=3 cofactor (0,2) equals 3
+[PASS] PART D matrix-tree N=3 cofactor (1,0) equals 3
+[PASS] PART D matrix-tree N=3 cofactor (1,1) equals 3
+[PASS] PART D matrix-tree N=3 cofactor (1,2) equals 3
+[PASS] PART D matrix-tree N=3 cofactor (2,0) equals 3
+[PASS] PART D matrix-tree N=3 cofactor (2,1) equals 3
+[PASS] PART D matrix-tree N=3 cofactor (2,2) equals 3
+[PASS] PART E target arithmetic 3*(2/9)=2/3
+[PASS] PART E target lies above 0
+[PASS] PART E target lies below pi
+[PASS] PART E cos target is not +1
+[PASS] PART E cos target is not -1
+[PASS] PART E on-locus endpoints do not contain target
+[PASS] PART F note required pin: the flux enters the fluxed-ring characteristic polynomial only through the constant term, as `2 cos Phi`
+[PASS] PART F note required pin: selecting the off-locus member through a spectral functional requires tuning the outer function to the target
+[PASS] PART F note required pin: W_cycle_holonomy_value
+[PASS] PART F note required pin: not a terminal no-go
+[PASS] PART F note required pin: next path
+[PASS] PART F note has N1 header
+[PASS] PART F note has N2 header
+[PASS] PART F note has N3 header
+[PASS] PART F note has N4 header
+[PASS] PART F note has N5 header
+[PASS] PART F note has N6 header
+[PASS] PART F note has N7 header
+[PASS] PART F note has N8 header
+[PASS] PART F forbidden fragment absent: only route
+[PASS] PART F forbidden fragment absent: last route
+[PASS] PART F forbidden fragment absent: exhausted
+[PASS] PART F forbidden fragment absent: closes the route
+[PASS] PART F forbidden fragment absent: PDG
+[PASS] PART F forbidden fragment absent: new wall
+[PASS] PART F note declares canonical no_go claim type
+[PASS] PART F note does not use runner PASS as source status
+[PASS] PART F note does not lean on PR #4783 as authority
+[PASS] PART F campaign context is explicitly non-authority
+[PASS] PART F W identifier whitelist
+[PASS] PART F markdown .md link inventory has exactly the two origin docs
+[PASS] PART F in-flight basenames are not markdown link targets
+[PASS] PART F paired runner is linked
+[PASS] PART F status-authority header is standard
+[PASS] PART F spec-leakage detector absent: required for the record
+[PASS] PART F spec-leakage detector absent: this spec
+[PASS] PART F spec-leakage detector absent: PRESERVE
+[PASS] PART F note does not claim AC_phi_lambda retirement
+TOTAL: PASS=127 FAIL=0
+
+----- stderr -----
+

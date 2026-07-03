@@ -165,6 +165,9 @@ def main() -> int:
         or file_self_scope.group(1) not in note,
     )
     check("primary runner link points to this script", f"../scripts/{SCRIPT}" in note)
+    check("source note declares canonical Type no_go", "**Type:** no_go" in note)
+    legacy_status_label = "Status " + "authority"
+    check("source note uses audit-boundary wording, not legacy status label", "**Audit boundary:**" in note and legacy_status_label not in note)
     section("B - constructive real frame and rejectors")
     for n in (4, 6):
         h, rt, stats = compensated_lift(n, "K1", 1)

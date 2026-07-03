@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py
-runner_sha256: 106a501c06c233ef37a331c4da070809d3b5063ff6b769dd84bc2fd4e9192367
+runner_sha256: 10390c6461db7044a0320d5e6f710fe1344eeaf73501f2de1e406475b21c098f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 
@@ -18,6 +18,8 @@ A - sources and pins
 [PASS] quote marker appears exactly once
 [PASS] note does not present the file's self-declared scope as the ledger scope
 [PASS] primary runner link points to this script
+[PASS] source note declares canonical Type no_go
+[PASS] source note uses audit-boundary wording, not legacy status label
 
 ========================================================================================
 B - constructive real frame and rejectors
@@ -55,8 +57,8 @@ D - blindness transfer and discriminator
 [PASS] Rt^2 R^{-2} is diagonal +-1
 [PASS] K1 heat trace blind at N=4, t=0.3 -- diff=0.000e+00
 [PASS] K1 heat trace blind at N=4, t=1.0 -- diff=7.105e-15
-[PASS] K0 heat trace blind at N=4, t=0.3 -- diff=0.000e+00
-[PASS] K0 heat trace blind at N=4, t=1.0 -- diff=0.000e+00
+[PASS] K0 heat trace blind at N=4, t=0.3 -- diff=1.776e-15
+[PASS] K0 heat trace blind at N=4, t=1.0 -- diff=5.684e-14
 [PASS] single-edge complex phase breaks the original trace blindness test -- diff=6.246e+00
 
 ========================================================================================
@@ -105,7 +107,7 @@ E - note discipline
 [PASS] source-instruction phrase absent: anti-fabrication
 
 Runtime: 0.14 s
-TOTAL: PASS=77 FAIL=0
+TOTAL: PASS=79 FAIL=0
 
 ----- stderr -----
 

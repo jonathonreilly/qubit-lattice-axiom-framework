@@ -33,14 +33,12 @@ The supplied finite structure used here is only:
 The Record axiom surface is:
 
 ```text
-A site need not carry a record.
+When present, a record locks exactly one admissible local possibility. A
+site never carries more than one record; records are permanent.
 
-When present, a record locks exactly one local possibility from the subset
-available at that site under Admissibility; the locked possibility is invariant
-under repeated readout.
-
-Only records are readable. For any finite collection of pairwise-disjoint
-records, scalar readout `I` is additive, with `I(empty)=0`.
+Only records are readable. A readout value is determined by record content
+alone. For any finite collection of pairwise-disjoint records, scalar readout
+`I` is additive, with `I(empty)=0`.
 ```
 
 The realized-state primitive interface is:
@@ -124,7 +122,7 @@ of the supplied structure that is:
 
 An imported basis or imported frame is an unsupplied auxiliary choice; its orbit
 is the choice set. The definition-level reading from Record is: because "Only
-records are readable" and "a record locks exactly one local possibility", a
+records are readable" and "a record locks exactly one admissible local possibility", a
 value that varies with an unsupplied choice is not locked by any record of the
 supplied structure.
 

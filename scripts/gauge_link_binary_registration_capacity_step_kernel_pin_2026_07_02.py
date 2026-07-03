@@ -470,7 +470,7 @@ def section_f():
         dep_text["axioms"],
         "The full one-site possibility domain has algebraic presentation `M_2(C)`.",
     )
-    require_contains("F1-axioms-record-clause", dep_text["axioms"], "a record locks exactly one local possibility")
+    require_contains("F1-axioms-record-clause", dep_text["axioms"], "a record locks exactly one admissible local possibility")
     require_contains("F1-axioms-no-weights-clause", dep_text["axioms"], "transition probabilities or weights")
     require_contains("F1-graph-first-marker", dep_text["graph-first"], "the joint commutant has dimension `10`")
     require_contains("F1-rigidity-marker", dep_text["rigidity"], "no independent scalar-normalization freedom")

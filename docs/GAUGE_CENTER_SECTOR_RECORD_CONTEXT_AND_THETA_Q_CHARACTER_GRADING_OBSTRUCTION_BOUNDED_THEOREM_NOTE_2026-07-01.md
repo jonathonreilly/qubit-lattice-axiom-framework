@@ -100,12 +100,11 @@ identification checkpoint below).
 2. **Record axiom** (approved axiom node `minimal_axioms`,
    [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)), quoted:
 
-   > "When present, a record locks exactly one local possibility from the
-   > subset available at that site under Admissibility; the locked possibility
-   > is invariant under repeated readout. Only records are readable. A readout
-   > value is determined by record content alone. For any finite collection of
-   > pairwise-disjoint records, scalar readout `I` is additive, with
-   > `I(empty)=0`."
+   > "When present, a record locks exactly one admissible local possibility. A
+   > site never carries more than one record; records are permanent. Only
+   > records are readable. A readout value is determined by record content
+   > alone. For any finite collection of pairwise-disjoint records, scalar
+   > readout `I` is additive, with `I(empty)=0`."
 
    Per the axiom's non-supply clause and the Tier-A registry description,
    central-sector decompositions are downstream readout-context content: they

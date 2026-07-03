@@ -1,11 +1,14 @@
 # Fourth Axiom (Dynamics): the Minimal Non-Triviality + Realized-Branch Posit (PROPOSAL)
 
 **Date:** 2026-06-29
-**Type:** axiom proposal / scoping
-**Claim type:** proposal
+**Type:** meta
+**Claim type:** meta (historical axiom-proposal provenance note; non-claim source)
+**Scope boundary:** Historical/provenance banking only. This file records a pre-reset proposal draft and panel/bridge-attack notes; it does not add, approve, or revise any framework axiom, primitive, theorem, dependency edge, or publication surface.
+**Audit boundary:** Independent audit lane only. This note proposes no audit verdict and sets no `effective_status`.
 **Status:** **PROPOSAL.** Sets **NO** audit status, claims no theorem, grants no
 promotion. **Owner + audit lane hold sole authority** over disposition, tier, and
-any landing. Pre-validation draft: not yet panel/Codex-checked.
+any landing. Original pre-validation draft with panel and bridge-attack outcomes
+recorded below for provenance.
 **Touches NO canonical / audit / publication file.** Does not edit
 `docs/MINIMAL_AXIOMS_*.md`, `docs/audit/**`, `MISSING_DERIVATION_PROMPTS.md`, any
 `*_EFFECTIVE_STATUS.md`, and runs no tracked-output rewriter.

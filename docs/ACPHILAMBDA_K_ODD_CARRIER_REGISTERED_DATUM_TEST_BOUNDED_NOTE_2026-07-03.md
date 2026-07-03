@@ -1,10 +1,22 @@
 # AC_phi_lambda K-Odd Carrier Registered-Datum Test Against 2/9
 
 **Date:** 2026-07-03
-**Claim type:** bounded exploratory-construction note
+**Type:** no_go
+**Claim type:** no_go (scoped obstruction for the three tested
+projective-carrier constructions; the broader escape path remains open)
 **Primary runner:** [`scripts/frontier_acphilambda_k_odd_carrier_datum_2026_07_03.py`](../scripts/frontier_acphilambda_k_odd_carrier_datum_2026_07_03.py) (`TOTAL: PASS=28 FAIL=0`)
 **Outcome:** OBSTRUCTION
 **Audit boundary:** The audit lane owns statuses. This note does not edit a registry, set a grade, register a primitive, change an axiom, or claim an `AC_phi_lambda` derivation.
+
+## Dependencies
+
+- [`RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12.md`](RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12.md)
+  supplies the escape-condition target, the fixed-locus density, and the I4b
+  / N7 guardrails used here.
+- [`ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md`](ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md)
+  supplies the projective lift and K-odd trace identity tested here.
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies the
+  record-readout sentence used in the registrability screen.
 
 ## Question
 

@@ -9,6 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 RETA_NOTE = ROOT / "docs" / "RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12.md"
 AMBIENT_NOTE = ROOT / "docs" / "ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md"
+MINIMAL_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 
 TARGET = Fraction(2, 9)
 PASS = 0
@@ -65,6 +66,7 @@ def verdict(exact_match: bool, registrability_pass: bool) -> str:
 def main() -> int:
     reta_text = normalized_text(RETA_NOTE)
     ambient_text = normalized_text(AMBIENT_NOTE)
+    axiom_text = normalized_text(MINIMAL_AXIOMS)
 
     escape_quote = (
         "Construct a registrable `C_3`-covariant holonomy or eta-invariant on the "
@@ -84,7 +86,7 @@ def main() -> int:
     check("K-odd trace identity quote guard", trace_identity_quote in ambient_text)
     check("I4b quote guard", i4b_quote in reta_text)
     check("N7 bridge-warning quote guard", n7_quote in reta_text)
-    check("record-readout axiom quote is carried literally", record_quote.startswith("Only records are readable."))
+    check("record-readout axiom quote is carried literally", record_quote in axiom_text)
 
     # For O = a I + b.sigma, Tr(O U) = a - i B and Tr(O U^2) = -a - i B,
     # where B = b_x + b_y + b_z. This is the small-carrier exact identity.

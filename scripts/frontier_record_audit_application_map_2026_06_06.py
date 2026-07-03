@@ -81,7 +81,7 @@ CASES = (
             "arbitrary_finite_prefix_schema",
         ),
         expected_missing=(),
-        anchor_phrases=("arbitrary finite-prefix schema", "production of those records"),
+        anchor_phrases=("arbitrary finite-prefix schema", "This row does not derive record production"),
     ),
     AuditCase(
         case_id="flavor_det_character_selection",

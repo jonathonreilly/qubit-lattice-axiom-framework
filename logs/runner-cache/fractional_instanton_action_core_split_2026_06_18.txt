@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/fractional_instanton_action_core_split_2026_06_18.py
-runner_sha256: ecb770fc5fe2d7c5491a2311dae036b45f83704a8596d7ec19d65bd7c6fe848a
-timeout_sec: 120
+runner_sha256: 5027e2f591eb2112dca2345afb47f4f5cc0548ec59a0dd88e0a6e8062f7bbf01
+timeout_sec: 300
 exit_code: 0
 elapsed_sec: 0.24
 status: ok

@@ -90,11 +90,10 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   fixed finite-neighborhood rule, the same at every lattice translate; for
   each site, the available possibilities are determined by, and vary with,
   the nearest-neighbor conditions, consistent with local records.
-  A site need not carry a record; when present, a record locks exactly one
-  local possibility from the subset available at that site under
-  Admissibility, and records are permanent. Only records are readable; a
-  readout value is determined by record content alone; scalar-valued finite
-  readout is additive over finite
+  A record, when present, locks exactly one admissible local possibility. A
+  site never carries more than one record; records are permanent. Only records
+  are readable; a readout value is determined by record content alone;
+  scalar-valued finite readout is additive over finite
   pairwise-disjoint record collections. A state is a configuration of records.
   A law privileges no states: its domain is a supplied condition, and where
   that condition holds it gives exactly one answer.

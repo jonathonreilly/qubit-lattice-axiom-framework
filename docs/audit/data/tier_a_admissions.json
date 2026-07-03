@@ -73,7 +73,7 @@
   "reclassified_primitives": {
     "minimal_axioms_record": {
       "label": "Record axiom",
-      "statement": "fixed locking of exactly one available possibility at a site, record permanence, and scalar-valued record readout finitely additive over finite pairwise-disjoint record collections; registered inside the explicitly approved minimal_axioms node, not as a Tier-A admitted derivation target",
+      "statement": "fixed locking of exactly one admissible local possibility when a record is present, one-record-per-site uniqueness, record permanence, and scalar-valued record readout finitely additive over finite pairwise-disjoint record collections; registered inside the explicitly approved minimal_axioms node, not as a Tier-A admitted derivation target",
       "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
       "prior_no_go_portfolio_context": [
         "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",

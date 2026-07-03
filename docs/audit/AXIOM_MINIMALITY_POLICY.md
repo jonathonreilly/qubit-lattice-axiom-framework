@@ -21,6 +21,12 @@ composition, or no-go boundary, not by amending that surface inside the lane.
   question.
 - Framing a result as "if we just accept X as primitive, lane Y closes"
   without recording X as an unmade science-level decision.
+- Citing policy text as a premise or interpretive authority — including
+  section 6 approval entries, their effect statements, and any reading note.
+  Approval entries are historical record only. The citable premise surfaces
+  are axiom text, approved framework primitives, Tier-A admissions, and
+  audited derivations; ambiguity resolves by derivation or owner-approved
+  axiom clarity, never by ruling.
 
 ## 2. Allowed moves
 - Identifying structures already present in `A_min` with Standard Model
@@ -74,6 +80,12 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
   chain-satisfy only at `retained_bounded` until retired by a retained
   derivation.
 
+Entries below are the historical record of approvals and their validation
+provenance. They carry no premise or interpretive weight: effect statements
+are informative summaries, and any load-bearing content must be carried by
+axiom text, approved primitives, Tier-A admissions, or audited derivation
+(section 1).
+
 Recorded explicitly approved axiom updates:
 
 - **2026-07-03 -- Record section polish: one-record-per-site restored and
@@ -102,6 +114,39 @@ Recorded explicitly approved axiom updates:
   derivable content from permanence plus the axiom's content-determination
   sentence, per the Qualification's primitive-content rule. Historical record
   of the approval only.
+
+- **2026-07-02 -- Reading-note retirement, complete (no rulings, only
+  clarity).** Owner rule of 2026-07-02: the only owner-approved premise
+  surfaces are axiom updates, framework primitives, and Tier-A admissions;
+  policy text carries no premise or interpretive weight (section 1 bullet and
+  the preamble above, added with this entry). Dispositions for the 2026-07-02
+  foundation entry's formerly citable reading-note paragraph -- its text
+  remains below as historical record with zero premise weight:
+  (1) DERIVED as axiom-text theorems (runner-backed; audit lane owns status):
+  statehood/admissibility inheritance, per-site record uniqueness, the
+  empty-state clause, and the "supplied" disambiguation, in
+  `docs/READING_NOTE_CLAIMS_ARE_AXIOM_TEXT_THEOREMS_BOUNDED_NOTE_2026-07-02.md`;
+  "answer" typing, condition-as-predicate (record absence included), motion
+  closure of lawful domains (two prongs, from the Qubit and Lattice
+  distinction clauses, with Admissibility covariance and the shared one-site
+  domain as quoted premises), and the extensional-judgment interface theorem
+  (surface-indexed ceiling stated), in
+  `docs/READING_NOTE_FINAL_DERIVATIONS_MOTION_CLOSURE_BOUNDED_NOTE_2026-07-02.md`.
+  (2) RELOCATED as audit process with no premise weight: certificate demand,
+  covariance transport, decidability without running the law, finite/local
+  evaluability, and extensional-judgment procedure, to the audit-loop skill
+  section "Law-Domain Audit Procedure."
+  (3) The standing promotion rule's named referents are discharged; the rule
+  remains as dormant mechanism for future foundering cases.
+  Validation provenance: the final derivation note passed an adversarial
+  three-seat refutation pass: T1/T2/T4 survived three-for-three; T3's
+  derivation as first written had two convergently identified repairable
+  holes (an unquoted load-bearing premise sentence; an overclaimed
+  independence for its second prong), repaired to the seats' convergent
+  wording -- shared-domain transport argued from the quoted Qubit
+  presentation sentences, prong 2 restated as the extensional contrapositive
+  with anchor-recoverability as diagnostic -- and re-run clean. No axiom
+  text is added or amended by this entry.
 
 - **2026-07-02 -- Lattice site-distinction clause: site distinctions are
   structural; rotations named about each site.** The Lattice axiom in
@@ -209,7 +254,8 @@ Recorded explicitly approved axiom updates:
   given the state definition, the conditions can only be each neighbor's
   record content or openness, and rule totality is already stated by "are
   determined."
-  Reading notes (citable): "answer" means one determinate verdict —
+  Historical reading notes (retired; no premise or interpretive weight):
+  "answer" means one determinate verdict —
   set-valued or distribution-valued verdicts are one answer, and a
   registered answer-domain may type it; "condition" means a predicate on
   states, record absence included; privileging is judged extensionally — by

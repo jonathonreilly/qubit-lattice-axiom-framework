@@ -1,0 +1,30 @@
+CHECK 01: PASS — lattice motion sentence is present
+CHECK 02: PASS — lattice distinction clause is present
+CHECK 03: PASS — qubit domain sentence is present
+CHECK 04: PASS — qubit distinction clause is present
+CHECK 05: PASS — Admissibility covariance sentence is present
+CHECK 06: PASS — record lock, one-record-per-site, and permanence sentence is present
+CHECK 07: PASS — readability sentence is present
+CHECK 08: PASS — Qualification minimality sentence is present
+CHECK 09: PASS — state definition sentence is present
+CHECK 10: PASS — law sentence with supplied condition and exactly one answer is present
+CHECK 11: PASS — qubit shared-domain and presentation-equivalence sentences are present
+CHECK 12: PASS — set-valued verdicts count as one answer object through a supplied answer-domain
+CHECK 13: PASS — two verdict objects at one in-domain state are rejected
+CHECK 14: PASS — absence-referencing predicate is statewise and well-defined
+CHECK 15: PASS — non-state-dependent condition has no state set
+CHECK 16: PASS — readability is exercised on values only, not condition domains
+CHECK 17: PASS — motion action preserves statehood under the covariant admissibility rule
+CHECK 18: PASS — N=3 lattice has six distinct nearest neighbors per site
+CHECK 19: PASS — sampled N=3 states: statehood and pattern closure under proper, sign-bearing, and translated motions
+CHECK 20: PASS — pattern condition 'some site carries a record' is motion-closed
+CHECK 21: PASS — pattern condition 'a record has a record-free neighbor' is motion-closed
+CHECK 22: PASS — pattern condition 'the unique record has possibility p' is motion-closed
+CHECK 23: PASS — per-site universally quantified structural rule is motion-closed
+CHECK 24: PASS — bare site anchor fails motion closure and is recoverable from its own extension
+CHECK 25: PASS — rigid state-list fails motion closure while the empty singleton is the honest exception
+CHECK 26: PASS — co-extensional toy conditions receive identical axiom-expressible verdicts
+CHECK 27: PASS — vocabulary-sensitive judge requires a condition attribute no axiom text supplies
+CHECK 28: PASS — note contains boundary phrases for adjudication, procedure, escape, and genericity
+CHECK 29: PASS — note avoids disallowed audit-result vocabulary
+TOTAL: PASS=29 FAIL=0

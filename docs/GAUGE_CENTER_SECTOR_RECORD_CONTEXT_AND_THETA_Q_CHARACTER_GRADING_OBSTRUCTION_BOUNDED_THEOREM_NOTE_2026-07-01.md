@@ -101,8 +101,8 @@ identification checkpoint below).
    [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)), quoted:
 
    > "When present, a record locks exactly one local possibility from the
-   > subset available at that site under Admissibility; the locked possibility
-   > is invariant under repeated readout. Only records are readable. A readout
+   > subset available at that site under Admissibility; records are permanent.
+   > Only records are readable. A readout
    > value is determined by record content alone. For any finite collection of
    > pairwise-disjoint records, scalar readout `I` is additive, with
    > `I(empty)=0`."

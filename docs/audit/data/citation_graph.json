@@ -56710,7 +56710,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
+      "to": "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
     },
     {
       "from": "repo.front_door_status",
@@ -109284,7 +109284,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
         "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "ew_current_matching_rule_open_gate_note_2026-05-03",
@@ -109294,7 +109294,7 @@
         "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "87d9fc432469760157dd2dbd9bcc866735c6820e0f2a2d2a854e9cfc8ef66851",
+      "note_hash": "91d820278d336d9c4e58c560ff7fa43bacf85c3f84d0205c3da392b51b0056d3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16` | no_go | unaudited | critical | 1205 | 15.74 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.py` |
+| 1 | `observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16` | no_go | audit_in_progress | critical | 1206 | 16.24 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.py` |
 | 2 | `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | unaudited | critical | 1193 | 20.22 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py` |
 | 3 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | unaudited | critical | 1107 | 30.61 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py` |
 | 4 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | unaudited | critical | 1107 | 22.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_ew_current_matching_rule_no_go.py` |

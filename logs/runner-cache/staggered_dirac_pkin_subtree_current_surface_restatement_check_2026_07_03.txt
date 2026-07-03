@@ -3,13 +3,13 @@ runner: scripts/staggered_dirac_pkin_subtree_current_surface_restatement_check_2
 runner_sha256: 6011c59f12ba1062e7fa62e2091b5367e546a4796b673c48a34339ecf3dbcc7f
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 G1.1 PASS: ledger contains Kawamoto-Smit row with non-null claim_scope :: present=True
 G1.2 PASS: Kawamoto-Smit ledger claim_scope equals expected pin :: status=retained_bounded
 G1.3 PASS: note quotes the Kawamoto-Smit ledger claim_scope
-G1.4 PASS: reverse-dependency transitive closure count from roots is at least 1000 :: union=1460; statuses: staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07=retained_bounded, staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10=unaudited, realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_selected_by_admissibility_variation_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_selection_frame_class_transport_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_selection_gauged_background_invariance_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02=unaudited
+G1.4 PASS: reverse-dependency transitive closure count from roots is at least 1000 :: union=1461; statuses: staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07=retained_bounded, staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10=unaudited, realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_selected_by_admissibility_variation_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_selection_frame_class_transport_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_selection_gauged_background_invariance_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02=unaudited
 G2.1 PASS: variation clause present in axiom text
 G2.2 PASS: variation clause present in note
 G2.3 PASS: non-selection sentence present in axiom text
@@ -36,7 +36,7 @@ G4.6 PASS: unital *-algebra dimensions give [2,2,2] for Pauli generators and 1 f
 G4.7 PASS: generic nonnormal 2x2 matrix generates full M2(C) :: dim=4
 G4.8 PASS: anticommuting Hermitian-unitary pair gaps equal sqrt(2) exactly within tolerance :: gaps=1.4142135623731,1.4142135623731,1.4142135623731
 G4.9 PASS: commuting Hermitian-unitary rejectors give gaps 0 and 2, not sqrt(2) :: same=0.0; opposite=2.0
-G4.10 PASS: dense L=4 spectra match K0 and K1 squared momentum formulas :: K0_dev=3.71e-15; K1sq_dev=8.88e-15
+G4.10 PASS: dense L=4 spectra match K0 and K1 squared momentum formulas :: K0_dev=4.44e-15; K1sq_dev=1.07e-14
 G4.11 PASS: zero-count anchors and L=6 K1 gap match exact values :: K1 L4=8, L8=8, L6=0, gap6=1.73205080756887; K0 L4=20, L8=68
 G4.12 PASS: wrong sin-squared L=6 anchor is rejected by true H[eta]^2 eigenvalues :: wrong_dev=3.00000000000001
 G5.1 PASS: firewall sentence present verbatim in note
@@ -48,4 +48,3 @@ G6.3 PASS: Block A basename appears only outside markdown links and only inside 
 TOTAL: PASS=39 FAIL=0
 
 ----- stderr -----
-

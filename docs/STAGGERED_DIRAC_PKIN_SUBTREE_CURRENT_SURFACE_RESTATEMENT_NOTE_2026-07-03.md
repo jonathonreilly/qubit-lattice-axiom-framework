@@ -17,6 +17,8 @@ runner: scripts/staggered_dirac_pkin_subtree_current_surface_restatement_check_2
 
 # P-KIN subtree: current-surface restatement of the premise map (2026-07-03)
 
+**Type:** bounded_theorem
+
 ## 1. Setting and purpose
 
 The P-KIN subtree here is the union of ledger rows transitively downstream of

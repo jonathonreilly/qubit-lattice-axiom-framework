@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_positive_source_functional_cone_no_go_2026_06_21.py
+runner_sha256: 53123283d40890d66f91eaa21839b8471636c343a4ea79e21a31a767722a863c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+Route-2 positive source-functional cone no-go
+Scope: finite positive channel-local functionals with net exponent p >= -1
+
+PART 1: endpoint target arithmetic
+PASS: projector weights are w_E=1/3 and w_T=1/2
+PASS: channel-weight ratio w_E/w_T is 2/3 -- 2/3
+PASS: target lambda is 9/4 -- 9/4
+PASS: target lambda gives q_E=15/8 -- 15/8
+PASS: target q_E gives rho_E=21/4 -- 21/4
+PASS: target center ratio is c_TE=-8/9 -- -8/9
+
+PART 2: exact positive-cone exponent bounds
+PASS: positive polynomial cone p>=0 has lambda <= 1 -- 1
+PASS: positive cone with at most one inverse-volume power has lambda <= 3/2 -- 3/2
+PASS: Route-2 endpoint target 9/4 is above the p>=-1 positive-cone bound
+PASS: allowing p=-2 first reaches lambda=9/4 -- 9/4
+PASS: the p=-2 endpoint tuple is exactly the target
+
+PART 3: exhaustive finite positive sums
+PASS: exhaustive p>=-1 nonnegative coefficient scan has max lambda=3/2 -- coeffs=(1, 0, 0, 0, 0, 0)
+PASS: exhaustive p>=0 nonnegative coefficient scan has max lambda=1 -- coeffs=(1, 0, 0, 0, 0)
+PASS: no p>=-1 nonnegative finite sum reaches 9/4
+PASS: mixed positive terms sit strictly below the one-inverse extremum -- 26/21
+
+PART 4: endpoint consequences of the p>=-1 bound
+PASS: p>=-1 gives q_E<=5/4 -- 5/4
+PASS: p>=-1 gives rho_E<=3/2 -- 3/2
+PASS: p>=-1 gives center-ratio no closer than c_TE=-4/3 at the upper endpoint -- -4/3
+PASS: target rho_E=21/4 is outside the p>=-1 endpoint range
+
+PART 5: explicit escape hatches left open
+PASS: two inverse-volume powers p=-2 give lambda=9/4
+PASS: two inverse-volume powers give the full endpoint target
+PASS: signed cancellation can fit 9/4 without p=-2, so this no-go is positive-cone scoped -- E=9/5, T=4/5
+PASS: the signed escape uses a negative coefficient
+
+PART 6: quote-anchored scope checks
+PASS: quadratic Schur note leaves nonlinear observables open but names inverse-square gap -- QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md; missing=0
+PASS: E-center blindness note requires an E-center or equivalent primitive -- QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md; missing=0
+PASS: naturality no-go keeps rho_E free without added primitive -- QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md; missing=0
+PASS: sign-separation note says magnitude remains open -- QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md; missing=0
+PASS: Record/color route says count is not weight -- RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md; missing=0
+
+PART 7: typed reachability
+PASS: current p>=-1 cone has no path to rho_E=21/4 -- path=[]
+PASS: adding explicit p=-2 density-square primitive creates the target path -- oh_projector_weights -> two_inverse_density_square -> lambda_9_4 -> q_E_15_8 -> rho_E_21_4
+
+PASS=30 FAIL=0 TOTAL=30
+VERDICT: scoped no-go. Positive finite channel-local source/readout cones with at most one inverse channel-volume power cannot reach the Route-2 endpoint lambda=9/4; the remaining live escapes require an explicit p=-2 density-square primitive, signed cancellation, or a future nonlinear observable outside this class.
+
+----- stderr -----
+

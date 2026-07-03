@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/realized_kinetic_branch_conditional_record_registration_2026_07_02.py
+runner_sha256: 1f60d3704c7679b23708b123401a02d872c475e1f5a8ce81dadd2972ce102313
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+==============================================================================
+realized kinetic branch conditional-record registration (2026-07-02)
+==============================================================================
+[PASS] [T1]  1. flux anchor on L=4: K0 all +1 and K1 all -1  |  plaquettes=192
+[PASS] [T1]  2. flux anchor on L=6: K0 all +1 and K1 all -1  |  plaquettes=648
+[PASS] [T1]  3. sibling K0/K1 constructions reproduced: K1 symbol reconstructs, K0 coefficients are scalar  |  K1 recon=0.00e+00, edge spread=0.00e+00, K0 scalar residual=0.00e+00
+[PASS] [T-A]  4. K0 per-direction availability algebra is C I with only the full projector  |  algebra dims=[1, 1, 1], projector counts=[1, 1, 1]
+[PASS] [T-A]  5. K0 blocked-cell orbit/nullspace has no nonzero trace-zero covariant projector direction  |  fixed Hermitian dim=1, trace-zero fixed dim=0
+[PASS] [T-A]  6. enumerating K0 spectral availability maps gives only neighbor-constant maps  |  maps=1, conditioned=0
+[PASS] [T-B]  7. K1 direction-tagged algebras produce two rank-one orthogonal eigen-projectors per direction  |  algebra dims=[2, 2, 2], projector counts=[2, 2, 2]
+[PASS] [T-B]  8. explicit neighbor-conditioned record witness has unequal K1 availability subsets  |  mu=1, ||A(+)-A(-)||=1.414
+[PASS] [T-B]  9. K1 availability projectors and algebra dimensions are stable under local U(1) edge phases  |  framed dims=[2, 2, 2]
+[PASS] [T-C] 10. pointwise realized record stack with a neighbor-conditioned qubit record registers K1  |  branch=K1, anticommutator=0.00e+00, Dirac-square error=6.29e-16
+[PASS] [T-D] 11. attempted covariant neighbor-conditioned K0 map has zero-dimensional difference space  |  difference-space dim=0, conditioned maps=0
+[PASS] [T-E] 12. external conditioned basis map on K0 exists but is a frame artifact, not C I data  |  conditioned gap=1.414, frame violation=1.000
+[PASS] [T-F] 13. one-link-flipped mixed-flux object degrades the K1 direction-tagged structure  |  + fluxes=4, - fluxes=20, anticommutator=4.000, single-generator dims=[2, 2, 2]
+[PASS] [SRC] 14. source note exists  |  docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md
+[PASS] [SRC] 15. source declares bounded_theorem claim type
+[PASS] [SRC] 16. legacy positive_theorem source metadata absent
+[PASS] [SRC] 17. status authority remains audit-lane only
+[PASS] [SRC] 18. source preserves conditional-only boundary
+[PASS] [SRC] 19. source preserves no record-formation claim
+[PASS] [SRC] 20. source preserves selector/admissibility open boundaries
+[PASS] [SRC] 21. source does not claim a missing cache
+[PASS] [SRC] 22. source links runner cache
+[PASS] [SRC] 23. source keeps sibling dependency linked
+
+SUMMARY: representative-level conditional record registration on the two-flux-class surface; selector bit NOT forced here; Admissibility reading not decided.
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

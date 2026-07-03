@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1973
+**Total pending:** 1972
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 148
 
 By criticality:
-- `critical`: 415
+- `critical`: 414
 - `high`: 292
 - `medium`: 524
 - `leaf`: 742
@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | audit_in_progress | critical | 1203 | 15.73 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py` |
+| 1 | `observable_principle_from_axiom_note` | bounded_theorem | unaudited | critical | 1201 | 64.23 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_observable_principle_from_axiom.py` |
 | 2 | `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | unaudited | critical | 1193 | 20.22 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py` |
 | 3 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | unaudited | critical | 1107 | 30.61 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py` |
 | 4 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | unaudited | critical | 1107 | 22.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_ew_current_matching_rule_no_go.py` |
@@ -57,14 +57,14 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 40 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 1384 | 15.44 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py` |
 | 41 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1380 | 43.43 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
 | 42 | `s3_time_spacetime_tensor_primitive_note` | bounded_theorem | unaudited | critical | 1212 | 15.74 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_spacetime_tensor_primitive.py` |
-| 43 | `observable_principle_from_axiom_note` | bounded_theorem | unaudited | critical | 1201 | 64.23 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_observable_principle_from_axiom.py` |
-| 44 | `one_generation_matter_closure_note` | bounded_theorem | unaudited | critical | 1162 | 29.68 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_right_handed_sector.py` |
-| 45 | `s3_time_transfer_matrix_bridge_note` | bounded_theorem | unaudited | critical | 1157 | 15.68 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_transfer_matrix_bridge.py` |
-| 46 | `s3_time_bilinear_tensor_primitive_note` | open_gate | unaudited | critical | 1154 | 34.17 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_bilinear_tensor_primitive.py` |
-| 47 | `yt_vertex_power_derivation` | bounded_theorem | unaudited | critical | 1140 | 15.16 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_vertex_power.py` |
-| 48 | `yt_vertex_power_operator_counting_lemma_note_2026-05-17` | bounded_theorem | unaudited | critical | 1139 | 14.65 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_vertex_power_operator_counting_lemma.py` |
-| 49 | `alpha_s_derived_note` | bounded_theorem | unaudited | critical | 1137 | 42.15 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_alpha_s_derived_bounded_chain.py` |
-| 50 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | unaudited | critical | 1118 | 32.13 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_sm_hypercharge_uniqueness.py` |
+| 43 | `one_generation_matter_closure_note` | bounded_theorem | unaudited | critical | 1162 | 29.68 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_right_handed_sector.py` |
+| 44 | `s3_time_transfer_matrix_bridge_note` | bounded_theorem | unaudited | critical | 1157 | 15.68 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_transfer_matrix_bridge.py` |
+| 45 | `s3_time_bilinear_tensor_primitive_note` | open_gate | unaudited | critical | 1154 | 34.17 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_bilinear_tensor_primitive.py` |
+| 46 | `yt_vertex_power_derivation` | bounded_theorem | unaudited | critical | 1140 | 15.16 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_vertex_power.py` |
+| 47 | `yt_vertex_power_operator_counting_lemma_note_2026-05-17` | bounded_theorem | unaudited | critical | 1139 | 14.65 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_vertex_power_operator_counting_lemma.py` |
+| 48 | `alpha_s_derived_note` | bounded_theorem | unaudited | critical | 1137 | 42.15 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_alpha_s_derived_bounded_chain.py` |
+| 49 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | unaudited | critical | 1118 | 32.13 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_sm_hypercharge_uniqueness.py` |
+| 50 | `s3_anomaly_spacetime_lift_note` | open_gate | unaudited | critical | 1115 | 19.62 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_anomaly_spacetime_lift.py` |
 
 ## Citation cycle break targets
 

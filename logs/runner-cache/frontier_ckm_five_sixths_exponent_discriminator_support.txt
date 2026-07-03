@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/frontier_ckm_five_sixths_exponent_discriminator_support.py
+runner_sha256: f1a4bdeddca8740da26780114bbaa61163145a5182671cdda235b20451e207a0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+INPUT alpha_v=0.103303816122
+INPUT Vcb_atlas=0.04217360633
+COMPARATOR_ONLY threshold=(0.0934/4.180)=0.02234449761
+COMPARATOR_ONLY transport_alpha=(0.2965/0.2265)
+DISCRIMINATOR_TABLE
+candidate | exponent | ratio_pred | dev_pct
+C_F-T_F=5/6 | 5/6 | 0.02238973162 | +0.202%
+6/7 | 6/7 | 0.02488174661 | +11.355%
+adjoint fraction 8/9 | 8/9 | 0.02839035560 | +27.057%
+3/4 | 3/4 | 0.01467982865 | -34.302%
+(C_F-T_F)/C_F=5/8 | 5/8 | 0.006310520526 | -71.758%
+T_F=1/2 | 1/2 | 0.001778613071 | -92.040%
+1 | 1 | 0.04217360633 | +88.743%
+C_F=4/3 | 4/3 | 0.09306375138 | +316.495%
+C_A-C_F=5/3 | 5/3 | 0.1496319873 | +569.659%
+MARGIN nearest_competitor_over_five_sixths=56.09162455x
+EMPIRICAL_EXPONENT e_fit=0.8328899737 rel_gap=0.0005320315324
+TRANSPORT factor=1.137991756 same_scale_dev_pct=+14.02954966% same_scale_dev_pct_table=+14.030%
+WRONG_DIRECTION ratio=0.07148264543 dev_pct=+219.912%
+PASS G1 C_F-T_F: value=5/6
+PASS G1 gamma0: value=8
+PASS G1 beta0: value=25/3
+PASS G1 transport exponent: value=12/25
+PASS G2 Vcb_atlas chain: value=0.04217360633
+PASS G3 five-sixths discriminator window: dev=+0.202%
+PASS G3 competitor rejector 6/7: dev=+11.355%
+PASS G3 competitor rejector adjoint fraction 8/9: dev=+27.057%
+PASS G3 competitor rejector 3/4: dev=-34.302%
+PASS G3 competitor rejector (C_F-T_F)/C_F=5/8: dev=-71.758%
+PASS G3 competitor rejector T_F=1/2: dev=-92.040%
+PASS G3 competitor rejector 1: dev=+88.743%
+PASS G3 competitor rejector C_F=4/3: dev=+316.495%
+PASS G3 competitor rejector C_A-C_F=5/3: dev=+569.659%
+PASS G4 margin: margin=56.09162455x
+PASS G5 empirical exponent: e_fit=0.8328899737 rel_gap=0.0005320315324
+PASS G6 transport factor: factor=1.137991756
+PASS G6 same-scale deviation: same_scale_dev=+14.030%
+PASS G7 wrong-direction rejector: dev=+219.912%
+SUMMARY: PASS=19 FAIL=0 TOTAL=19
+
+----- stderr -----
+

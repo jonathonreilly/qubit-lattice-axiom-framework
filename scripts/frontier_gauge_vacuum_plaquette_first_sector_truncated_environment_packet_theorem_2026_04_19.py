@@ -91,7 +91,7 @@ def main() -> int:
     check(
         "The factorization and character-measure notes already fix the canonical environment description as an overall scale z_(0,0)^env together with normalized coefficients rho_(p,q)(6)",
         "positive diagonal coefficient sequence" in factor_note
-        and "normalized boundary class function" in measure_note
+        and "normalized central boundary-character packet" in measure_note
         and "rho_(p,q)(6)" in measure_note,
     )
     check(

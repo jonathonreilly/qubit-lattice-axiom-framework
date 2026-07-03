@@ -72,7 +72,7 @@ canonical coupling from quark plus Koide-target inputs.
 | `lambda^2 = alpha_s(v)/2` | CKM/quark | retained CKM atlas | [`WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md`](WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md) |
 | `|V_cb|^2 = A^2 lambda^4` | CKM/quark | retained CKM atlas | [`CKM_THIRD_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md`](CKM_THIRD_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md) |
 | canonical `alpha_s(v)` | gauge-vacuum | retained quantitative input | [`ALPHA_S_DERIVED_NOTE.md`](ALPHA_S_DERIVED_NOTE.md), `scripts/canonical_plaquette_surface.py` |
-| `Q_l = 2/3` | charged lepton | open/support target, not retained closure | [`KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md`](KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md), [`KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25.md`](KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25.md), [`KOIDE_Q_ONSITE_SOURCE_DOMAIN_NO_GO_SYNTHESIS_NOTE_2026-04-25.md`](KOIDE_Q_ONSITE_SOURCE_DOMAIN_NO_GO_SYNTHESIS_NOTE_2026-04-25.md) |
+| `Q_l = 2/3` | charged lepton | open/support target, not retained closure | `KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md` (package survey; backticked non-load-bearing context), [`KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25.md`](KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25.md), [`KOIDE_Q_ONSITE_SOURCE_DOMAIN_NO_GO_SYNTHESIS_NOTE_2026-04-25.md`](KOIDE_Q_ONSITE_SOURCE_DOMAIN_NO_GO_SYNTHESIS_NOTE_2026-04-25.md) |
 
 No PDG observable is used as a derivation input. The PDG values below
 are comparators only.
@@ -198,9 +198,11 @@ surfaces still mark Koide as open/support rather than retained.
   -- retained `|V_cb|^2 = A^2 lambda^4 = alpha_s(v)^2/6`.
 - [`ALPHA_S_DERIVED_NOTE.md`](ALPHA_S_DERIVED_NOTE.md)
   -- canonical `alpha_s(v)` input.
-- [`KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md`](KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md),
+- `KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md`
+  (package survey; backticked non-load-bearing context reference),
   [`KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25.md`](KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25.md),
   [`KOIDE_Q_ONSITE_SOURCE_DOMAIN_NO_GO_SYNTHESIS_NOTE_2026-04-25.md`](KOIDE_Q_ONSITE_SOURCE_DOMAIN_NO_GO_SYNTHESIS_NOTE_2026-04-25.md)
-  -- current Koide support/open-lane authority.
+  -- current Koide support/open-lane authority (the linked member notes
+  carry the load-bearing content).
 - [`CKM_CP_PRODUCT_ALPHA_S_CROSS_SECTOR_EXTRACTION_THEOREM_NOTE_2026-04-25.md`](CKM_CP_PRODUCT_ALPHA_S_CROSS_SECTOR_EXTRACTION_THEOREM_NOTE_2026-04-25.md)
   -- companion retained CKM cross-system `alpha_s(v)` estimator.

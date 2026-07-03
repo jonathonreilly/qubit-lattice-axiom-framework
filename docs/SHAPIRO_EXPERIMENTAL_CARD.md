@@ -165,7 +165,7 @@ See `RETARDATION_DISCRIMINATOR_NOTE.md` for the full retained result.
 
 | Note | What it covers |
 | --- | --- |
-| SHAPIRO_DELAY_NOTE.md | Core retained result + portability |
+| SHAPIRO_DELAY_NOTE.md | Bounded phase-lag replay + portability (status audit-lane-owned) |
 | SHAPIRO_SCALING_NOTE.md | s, b, k scaling laws |
 | SHAPIRO_DIAMOND_BRIDGE_NOTE.md | NV/diamond proxy language |
 | DIAMOND_ABSOLUTE_UNIT_BRIDGE_NOTE.md | Absolute vs relative calibration |

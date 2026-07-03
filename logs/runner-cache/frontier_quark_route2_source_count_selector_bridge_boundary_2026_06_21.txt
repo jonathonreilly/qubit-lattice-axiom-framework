@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_source_count_selector_bridge_boundary_2026_06_21.py
+runner_sha256: f8ddae1c85880123bbb9d909f7134c470333b88d170ada42925d693c19745302
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+Route-2 source-count selector bridge boundary check
+Authority/file presence
+PASS: docs/QUARK_ROUTE2_SOURCE_COUNT_SELECTOR_BRIDGE_BOUNDARY_NOTE_2026-06-21.md exists
+PASS: docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists
+PASS: docs/QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md exists
+PASS: docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md exists
+PASS: docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md exists
+PASS: docs/CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md exists
+PASS: docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md exists
+PASS: docs/RCONN_DERIVED_NOTE.md exists
+Source-note boundary checks
+PASS: note states exact-support selector-boundary status
+PASS: note does not claim endpoint closure
+PASS: note does not assign audit/effective verdict tokens
+PASS: note links all one-hop authorities with markdown dependencies
+Authority text checks
+PASS: readout authority defines c_TE algebra
+PASS: E-center attempt names typed bridge residual
+PASS: naturality no-go says rho_E remains free without added input
+PASS: source-domain bridge note keeps R_conn to c_TE as missing typed edge
+PASS: RCONN authority separates F_adj from physical selector
+Source-count extraction checks
+PASS: extract N_pair=2 from Q_L source-count note -- 2
+PASS: extract N_color=3 from Q_L source-count note -- 3
+PASS: extract n_quark=6 from structural-counts note -- 6
+Exact bridge arithmetic
+PASS: kappa=N_color/N_pair is 3/2 -- 3/2
+PASS: kappa^2 is 9/4 -- 9/4
+PASS: source-count compressed bridge gives c_TE=-8/9 -- -8/9
+PASS: adjoint fraction at N_color=3 is 8/9 -- 8/9
+PASS: compressed bridge equals signed adjoint fraction -- c=-8/9, F=8/9
+PASS: integer identity N_pair^3=N_color^2-1 holds -- 8 vs 8
+PASS: endpoint q_T is 5/6 -- 5/6
+PASS: typed bridge would give q_E=15/8 -- 15/8
+PASS: typed bridge would give rho_E=21/4 -- 21/4
+PASS: covariance ratio q_E/q_T is kappa^2 -- 9/4
+Uniqueness and falsifier checks
+PASS: under N_pair=N_color-1, equality occurs only at (2,3) for 2<=N_color<=12 -- [(2, 3)]
+PASS: with N_pair=2, equality selects N_color=3 in scan -- [3]
+PASS: wrong color count (2,4) gives c_TE=-1/2 -- -1/2
+PASS: wrong color count endpoint rho_E is 14 -- 14
+PASS: wrong pair/color (3,4) gives c_TE=-27/16 -- -27/16
+PASS: wrong shell orientation gives c_TE=-4/9 -- -4/9
+PASS: no covariance normalization kappa=1 would give c_TE=-2
+Disconnected-selector family checks
+PASS: connected selector xi=0 gives rho_E=21/4 -- (Fraction(8, 9), Fraction(-8, 9), Fraction(21, 4))
+PASS: mid selector xi=1/2 gives rho_E=78/17 -- (Fraction(17, 18), Fraction(-17, 18), Fraction(78, 17))
+PASS: full-trace selector xi=1 gives rho_E=4 -- (Fraction(1, 1), Fraction(-1, 1), Fraction(4, 1))
+PASS: only xi=0 in tested selector set gives target rho_E
+Note content checks
+PASS: note records selector family formula
+PASS: note records wrong-structure falsifiers
+PASS: note names sharpened target
+TOTAL: PASS=44, FAIL=0
+
+----- stderr -----
+

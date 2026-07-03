@@ -2,6 +2,7 @@
 """Exact checks for the supplied-readout-context C1/C2 decomposition note."""
 
 from fractions import Fraction
+from pathlib import Path
 import sys
 
 try:
@@ -53,6 +54,15 @@ def add_records(left, right):
     return (left[0] + right[0], left[1] + right[1])
 
 
+def note_text():
+    repo_root = Path(__file__).resolve().parents[1]
+    note = repo_root / "docs" / (
+        "SUPPLIED_READOUT_CONTEXT_TWO_COMPONENT_DECOMPOSITION_BOUNDED_NOTE_"
+        "2026-07-02.md"
+    )
+    return note.read_text(encoding="utf-8")
+
+
 def main():
     if not require_sympy():
         print(f"TOTAL: PASS={p} FAIL={f}")
@@ -95,10 +105,17 @@ def main():
     check("T1 Hadamard witness excludes S3 mixed-frame relation",
           sp.simplify(relation_after) != 0)
 
+    s1_survives_c1 = (
+        hs_inner(I3, B3) == 0
+        and r_s1 == Fraction(1, 2)
+        and q_s1 == Fraction(2, 3)
+    )
+    s2_survives_c1 = s2_squares == [sp.Integer(1), sp.Integer(1)]
+    s3_survives_c1 = sp.simplify(relation_after) == 0
     survivors_under_c1 = {
-        "S1_generator_channel_HS": True,
-        "S2_dimension_per_mode": False,
-        "S3_idempotent_eigenvalue": False,
+        "S1_generator_channel_HS": s1_survives_c1,
+        "S2_dimension_per_mode": s2_survives_c1,
+        "S3_idempotent_eigenvalue": s3_survives_c1,
     }
     check("T1 C1 leaves only S1 among parent-named scorings",
           survivors_under_c1 == {
@@ -154,23 +171,33 @@ def main():
     check("T3 S2 mixed-frame behavior is frame-dependent",
           generic_s2_squares == [sp.Rational(9, 2), sp.Rational(1, 2)])
 
-    # T4: merge/decomposition summary at witness level.
-    c1_block01 = "NO IMPORTED FRAME"
-    c1_kappa_shape = "supplied readout context"
-    c2_kappa_shape = "weighting/readout-bridge rule"
-    check("T4 Block01 residual item 1 is C1-shaped",
-          c1_block01 == "NO IMPORTED FRAME")
-    check("T4 kappa hostile clause is C1-shaped",
-          c1_kappa_shape == "supplied readout context")
-    check("T4 kappa missing rule is C2-shaped",
-          c2_kappa_shape == "weighting/readout-bridge rule")
+    # T4: candidate wall-map boundary, not a theorem-grade kappa closure.
+    note = note_text()
+    note_plain = " ".join(note.split())
+    check("T4 note quotes Block01 no-imported-frame residual",
+          "NO IMPORTED FRAME" in note
+          and "channel partition is definable" in note)
+    check("T4 note quotes kappa supplied-readout-context objection",
+          "supplied readout context" in note
+          and "sufficiently constrained EW readout context" in note)
+    check("T4 note quotes kappa weighting/readout-bridge rule",
+          "weighting/readout-bridge rule" in note)
+    check("T4 wall-map is explicitly candidate-only",
+          "candidate overlap only" in note_plain
+          and "not proved here" in note_plain
+          and "is not claimed as a `kappa_EW` closure" in note_plain)
     check("T4 C1 and C2 are independent in both directions",
           additive_readout(Fraction(1, 1), A)
           != additive_readout(Fraction(2, 1), A)
           and imported_s2_squares == [sp.Rational(1, 2), sp.Rational(1, 2)]
           and hs_inner(I3, E2) != 0)
-    check("T4 no kappa value is selected by the witnesses",
-          "kappa_value" not in {"C1", "C2", "frame", "weight"})
+    check("T4 note forbids theorem-grade kappa wall decomposition",
+          "No theorem-grade decomposition of the actual `kappa_EW` wall" in note)
+    check("T4 note contains no kappa assignment",
+          "kappa_EW =" not in note and "kappa_EW=" not in note)
+    check("T4 old frame-half discharge overclaim absent",
+          "frame half of the `kappa_EW` missing rule" not in note
+          and "would simultaneously discharge" not in note)
 
     print(f"TOTAL: PASS={p} FAIL={f}")
     sys.exit(1 if f else 0)

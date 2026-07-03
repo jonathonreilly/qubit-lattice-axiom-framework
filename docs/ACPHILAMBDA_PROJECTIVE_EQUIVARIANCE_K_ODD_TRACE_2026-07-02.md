@@ -3,21 +3,21 @@
 **Date:** 2026-07-02
 **Type:** bounded_theorem
 **Audit boundary:** the independent audit lane owns all verdicts. This note does not set an audit verdict, edit registries, register primitives, change axioms, or claim `AC_phi_lambda` retirement.
-**Primary runner:** [`scripts/acphilambda_projective_equivariance_k_odd_trace_2026_07_02.py`](../scripts/acphilambda_projective_equivariance_k_odd_trace_2026_07_02.py) (`TOTAL: PASS=60 FAIL=0`, deterministic, measured below).
+**Primary runner:** [`scripts/acphilambda_projective_equivariance_k_odd_trace_2026_07_02.py`](../scripts/acphilambda_projective_equivariance_k_odd_trace_2026_07_02.py) (`TOTAL: PASS=64 FAIL=0`, deterministic, measured below).
 
 ## Claim
 
-T10-1 realizes the projective seed on a concrete retained-class operator: the projective equivariance is realized exactly on the retained-class two-component surface (`R2^3 = -I`). On the even torus used for the dense check, `[R2, H_D] = 0` and `R2^3 = -I` hold to exact dense arithmetic, while the heat traces obey `Tr(f(H_D) R2^2) = -Tr(f(H_D) R2)`.
+T10-1 realizes the projective seed on a concrete claim-scope-class operator: the projective equivariance is realized exactly on the quoted two-component surface (`R2^3 = -I`). On the even torus used for the dense check, `[R2, H_D] = 0` and `R2^3 = -I` hold to exact dense arithmetic, while the heat traces obey `Tr(f(H_D) R2^2) = -Tr(f(H_D) R2)`.
 
 T10-2 identifies the branch structure on the `[111]` diagonal fixed momenta. The spin lift supplies `Z_6` weights `exp(-i pi/3)` and `exp(+i pi/3)` on the two `n.sigma` branches, and the sector-distinguishing weights are torsion phases (`+- pi/3`), so at zero flux no R-valued off-locus datum appears.
 
 T10-3 composes the projective carrier with a diagonal flux dial. For the naive Wilson-free operator, on even diagonal grids the naive K-odd trace vanishes identically: the doubler pairing annihilates it. Odd rings and Wilson-type pairing-breaking terms evade that cancellation; the K-odd observable exists at the generation ring size `N = 3` and requires doubling-pairing breaking elsewhere, but what value it registers remains the wall. This is not a terminal no-go.
 
-## Frame And Retained Inputs
+## Frame And Quoted Premise Surface
 
 The load-bearing markdown dependency is [docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md](STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md).
 
-Ledger scope quote (retained_bounded): "On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over per-site C^2, imposing translation and proper-cubic covariance up to local U(1) frame gives exactly two gauge/scale classes K0 and K1; the K1 branch has the stated site-local absorbing frame uniqueness, and K0 shows the flux(-1) selector is not forced."
+Premise scope quotes (verbatim from the dependency note's claim-scope block; the ledger row is checked for existence only and its live audit fields are owned by the audit lane): "covariance under the lattice automorphisms (translations and the 24 proper cubic rotations, each up to site-local `U(1)` frame) collapses the kinetic family to EXACTLY TWO frame classes on simply connected regions"; "On the `K1` branch the site-local unitary absorbing frame of premise P-SD EXISTS, lands exactly in `K1`, and is unique up to site-local `U(1)` gauge times one global frame"; "The final selection `K1` vs `K0` (one bit; the kinetic-order bit) is NOT forced by the specified constraint set: `K0` is the computed countermodel (boundary B-BIT)".
 
 Campaign context is PR #4783 `ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01`; PR #4788 `ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01`; PR #4789 `ACPHILAMBDA_REAL_HOLONOMY_LOCUS_IDENTITY_2026-07-01`; PR #4794 `ACPHILAMBDA_FLUXED_RING_SPECTRAL_FUNCTIONAL_ROUTE_NO_GO_2026-07-02`; PR #4798 `ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02`; PR #4803 `ACPHILAMBDA_AMBIENT_EQUIVARIANT_HEAT_TRACE_FACE_2026-07-02`; PR #4831 `ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02`; and PR #4835 `ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02`.
 
@@ -29,7 +29,7 @@ H_D = sum_mu sigma_mu (x) (T_mu - T_mu^T) / (2 i).
 
 Here `T_mu` are periodic shifts, `sigma_mu` are the Pauli matrices, `U = (I - i(sigma_x + sigma_y + sigma_z))/2`, `R` is the `C3[111]` site rotation cycling the axes, and `R2 = U (x) R`.
 
-This `H_D` is a retained-CLASS representative used as a reconstruction device and calculational carrier. Its physical selection is not claimed. The kinetic-class row's one-bit selector and absorbing-frame content are not consumed beyond the licensed per-site `C^2` nearest-neighbor bilinear surface.
+This `H_D` is a claim-scope-class representative used as a reconstruction device and calculational carrier. Its physical selection is not claimed. The kinetic-class row's one-bit selector and absorbing-frame content are not consumed beyond the licensed per-site `C^2` nearest-neighbor bilinear surface.
 
 The only wall names used here are `W_cycle_holonomy_value`, `W_defect_identity_unit`, and `W_defect_readout_selection`. The observable introduced below is an observable type, not another wall.
 
@@ -138,7 +138,7 @@ The consequence is narrow. The composed K-odd observable exists on the two-compo
 
 | Input shape | This assembly moves it to |
 |---|---|
-| projective seed, algebraic | realized exact equivariance on a retained-class operator |
+| projective seed, algebraic | realized exact equivariance on a claim-scope-class operator |
 | K-breaking existence | constructive observable: K-odd and flux-odd |
 | mechanism shape | assembled: projective carrier x flux dial |
 
@@ -156,7 +156,7 @@ The consequence is narrow. The composed K-odd observable exists on the two-compo
 
 ## Audit Consequence If Retained
 
-If retained, this note changes the source-side map by realizing the PR #4831 projective seed and the PR #4835 two-component requirement on a concrete retained-class operator. It also names and gates the K-odd observable that the flux dial can feed.
+If retained, this note changes the source-side map by realizing the PR #4831 projective seed and the PR #4835 two-component requirement on a concrete claim-scope-class operator. It also names and gates the K-odd observable that the flux dial can feed.
 
 It does not retire `AC_phi_lambda`, derive a numerical `phi`, select the physical dynamics, or alter the audit lane. The value problem is explicitly still carried by the named wall structure.
 
@@ -175,11 +175,11 @@ It does not retire `AC_phi_lambda`, derive a numerical `phi`, select the physica
 
 - **N1 alternative routes.** Zero-flux two-component route gives torsion-only K-breaking, no R-valued datum, as shown here. Composed flux route remains open as the assembled shape with value = the wall. Occurrence lane remains open separate. Owner primitive remains GOVERNANCE.
 - **N2 wall independence.** The K-odd observable is an observable type, not a wall. The existing wall names remain `W_cycle_holonomy_value`, `W_defect_identity_unit`, and `W_defect_readout_selection`.
-- **N3 hidden-wall scan.** `H_D` is a retained-class representative and reconstruction device. `diagonal twist` is the holonomy dial in ambient form. `K-odd trace` is a defined object. `torsion weights` are group theory.
+- **N3 hidden-wall scan.** `H_D` is a claim-scope-class representative and reconstruction device. `diagonal twist` is the holonomy dial in ambient form. `K-odd trace` is a defined object. `torsion weights` are group theory.
 - **N4 residual matching.** PR #4831 and PR #4835 supply the seed and requirement now realized. PR #4789 and PR #4798 move from K-breaking vocabulary to a constructive observable. PR #4794 and PR #4783 remain value untouched, with rescale freedom persisting.
 - **N5 proven.** Exact equivariance, exact projective cube, diagonal reduction, and the four `A(phi)` gates at the stated `N` are proven or instance-gated by the runner.
 - **N6 live paths.** Compute what the K-odd observable registers on the record-facing surface. Occurrence remains live. Owner primitive remains live.
-- **N7 steelman.** A hostile reviewer can say "`H_D` is a choice, not a derivation." Reply: it is the canonical retained-CLASS representative and only the class license is consumed; the assembly statement is class-level, because any covariant member realizes the projective equivariance. Concession: physical selection and value are not derived.
+- **N7 steelman.** A hostile reviewer can say "`H_D` is a choice, not a derivation." Reply: it is a canonical quoted-class representative and only the class license is consumed; the assembly statement is class-level, because any covariant member realizes the projective equivariance. Concession: physical selection and value are not derived.
 - **N8 echo.** This follows the assembly-after-localization pattern. The lesson is to name the observable type first, then test what content it can register.
 
 ## Verification
@@ -190,4 +190,4 @@ Run:
 python3 scripts/acphilambda_projective_equivariance_k_odd_trace_2026_07_02.py
 ```
 
-Measured close on 2026-07-02: `TOTAL: PASS=60 FAIL=0`, runtime under 90 seconds.
+Measured close on 2026-07-03: `TOTAL: PASS=64 FAIL=0`, runtime under 90 seconds.

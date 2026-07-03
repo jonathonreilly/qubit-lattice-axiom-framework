@@ -400,12 +400,12 @@
       "assert_count": 1,
       "counts": {
         "A": 3,
-        "B": 4,
-        "C": 2,
+        "B": 3,
+        "C": 3,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "B",
+      "dominant_class": "A",
       "runner": "scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py"
     },
     "acphilambda_k_even_registration_correction_registered_pattern_2026-07-02": {
@@ -41777,12 +41777,12 @@
       ],
       "counts": {
         "A": 3,
-        "B": 4,
-        "C": 2,
+        "B": 3,
+        "C": 3,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "B",
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py": {
@@ -90682,8 +90682,8 @@
   "stats": {
     "decoration_candidates": 691,
     "dominant_class_distribution": {
-      "A": 488,
-      "B": 635,
+      "A": 489,
+      "B": 634,
       "C": 1272,
       "D": 450,
       "none": 457

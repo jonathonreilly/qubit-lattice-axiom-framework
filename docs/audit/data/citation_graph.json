@@ -57796,7 +57796,7 @@
         "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "574f408e00c97886c1a6565b076bf95180b3584c56f19f9c0c120787cb0ba2f7",
+      "note_hash": "1f4e3370ab7e17b352237ea143675348279e85c3b9d3c8b04cf996daf100ccc0",
       "path": "docs/ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md",
       "runner_path": "scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py",
       "title": "AC_phi_lambda K1 Staggered K-Blindness: Real Non-Projective Lift"
@@ -57881,7 +57881,7 @@
         "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6bea9cf6614d8d28d433c27924042ce76f769366215488e4b14084991dc7ad93",
+      "note_hash": "fd5e34c28998067c8ee1ac0573a97a1d4669ff3e5bbe2e5769fc24e57b7046fb",
       "path": "docs/ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md",
       "runner_path": "scripts/acphilambda_projective_equivariance_k_odd_trace_2026_07_02.py",
       "title": "AC_phi_lambda Projective Equivariance And The K-Odd Equivariant Trace"

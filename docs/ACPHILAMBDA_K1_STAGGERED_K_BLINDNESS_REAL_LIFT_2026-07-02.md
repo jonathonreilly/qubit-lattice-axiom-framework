@@ -3,23 +3,23 @@
 **Date:** 2026-07-02
 **Type:** no_go
 **Audit boundary:** the independent audit lane owns all verdicts. This note does not set an audit verdict, edit registries, register primitives, change axioms, or claim `AC_phi_lambda` retirement.
-**Primary runner:** [`scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py`](../scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py) (`TOTAL: PASS=79 FAIL=0`; measured local close, N = 4 and N = 6 constructive checks)
+**Primary runner:** [`scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py`](../scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py) (`TOTAL: PASS=83 FAIL=0`; measured local close, N = 4 and N = 6 constructive checks)
 
 ## Claim
 
 T9-1 proves a constructive real compensation for the `K1` staggered representative on the even torus. A diagonal sign frame `W` is obtained by edge-ratio propagation over a nearest-neighbor spanning tree, every off-tree edge closes, and the compensated rotation `Rt = W R` satisfies `Rt H_K1 Rt^T = H_K1` and `Rt^3 = I`. Thus the compensated `C3[111]` lift on the one-component staggered surface is real and non-projective: its projective class is trivial, with the same trivial conclusion for `K0`.
 
-T9-2 transfers the real order-3 blindness theorem from PR #4831 to this retained staggered surface and establishes that the one-component staggered surface, in both retained kinetic classes, is conjugate-sector blind: for real functions `f`, `Tr(f(H) Rt) = Tr(f(H) Rt^2)` on `K1`, and `Tr(f(H_K0) R) = Tr(f(H_K0) R^2)` on `K0`.
+T9-2 transfers the real order-3 blindness theorem from PR #4831 to this dependency-scoped staggered surface and establishes that the one-component staggered surface, in both quoted kinetic classes, is conjugate-sector blind: for real functions `f`, `Tr(f(H) Rt) = Tr(f(H) Rt^2)` on `K1`, and `Tr(f(H_K0) R) = Tr(f(H_K0) R^2)` on `K0`.
 
 T9-3 is the carrier-localization consequence. The one-component staggered sign-frame surface cannot supply the K-breaking registered content required off-locus. The surviving carriers are the flux/holonomy dial and genuinely two-component per-site `C^2` structure; the projective seed irreducibly needs the two-component structure. This is not a terminal no-go: it removes the one-component staggered candidate while leaving the named flux and two-component paths open.
 
-## Frame And Retained Inputs
+## Frame And Quoted Premise Surface
 
-The sole markdown dependency is [`docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`](STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md). Its ledger scope is quoted exactly:
+The sole markdown dependency is [`docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`](STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md). The premise surface quoted below is its claim-scope block; the ledger row is checked for existence only, with live audit fields owned by the audit lane:
 
-claim_scope (retained_bounded): "On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over per-site C^2, imposing translation and proper-cubic covariance up to local U(1) frame gives exactly two gauge/scale classes K0 and K1; the K1 branch has the stated site-local absorbing frame uniqueness, and K0 shows the flux(-1) selector is not forced."
+Premise scope quotes (verbatim from the dependency note's claim-scope block): "covariance under the lattice automorphisms (translations and the 24 proper cubic rotations, each up to site-local `U(1)` frame) collapses the kinetic family to EXACTLY TWO frame classes on simply connected regions"; "On the `K1` branch the site-local unitary absorbing frame of premise P-SD EXISTS, lands exactly in `K1`, and is unique up to site-local `U(1)` gauge times one global frame"; "The final selection `K1` vs `K0` (one bit; the kinetic-order bit) is NOT forced by the specified constraint set: `K0` is the computed countermodel (boundary B-BIT)".
 
-The true text pins in that file are `Kawamoto-Smit` and `η⁰`. The present note uses only the retained two-class surface and the displayed representative below.
+The true text pins in that file are `Kawamoto-Smit` and `η⁰`. The present note uses only the quoted two-class surface and the displayed representative below.
 
 Campaign context, not dependency: PR #4783 `ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01`; PR #4789 `ACPHILAMBDA_REAL_HOLONOMY_LOCUS_IDENTITY_2026-07-01`; PR #4798 `ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02`; PR #4803 `ACPHILAMBDA_AMBIENT_EQUIVARIANT_HEAT_TRACE_FACE_2026-07-02`; PR #4831 `ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02`.
 
@@ -114,7 +114,7 @@ Thus the positive blindness instances are not protected by a vacuous equality te
 
 ## Carrier Localization (T9-3)
 
-The one-component staggered surface, in both retained kinetic classes and with the full `U(1)` frame freedom allowed by the retained scope, cannot source the K-breaking registered content that off-locus selection requires. Its rotation lift is real and non-projective up to global convention, and its equivariant traces are conjugate-blind.
+The one-component staggered surface, in both quoted kinetic classes and with the full `U(1)` frame freedom allowed by the quoted premise surface, cannot source the K-breaking registered content that off-locus selection requires. Its rotation lift is real and non-projective up to global convention, and its equivariant traces are conjugate-blind.
 
 The surviving named carriers are the flux/holonomy dial, in holonomy coordinates, and genuinely two-component per-site `C^2` structure where the projective spin lift from PR #4831 can act. The projective seed irreducibly needs the two-component structure: it cannot be manufactured from one-component staggered sign frames.
 
@@ -130,7 +130,7 @@ It is not a claim that holonomy coordinates are unavailable.
 
 It is not a claim that a two-component carrier will succeed.
 
-It says the retained one-component staggered surface cannot carry the required projective seed.
+It says the quoted one-component staggered surface cannot carry the required projective seed.
 
 ## What This Moves
 
@@ -158,7 +158,7 @@ The defect-identity-unit obstruction from PR #4783 is not altered.
 
 ## Audit Consequence If Retained
 
-If independent review retains the computation, the source-side consequence is narrow: one-component staggered kinetic candidates, including both retained classes, are unavailable as K-breaking carriers. A downstream use may cite the constructive real lift, the trivial projective class, and the conjugate-sector blindness transfer. It may not cite this note for a value, for a two-component construction, or for an occurrence statement.
+If independent review retains the computation, the source-side consequence is narrow: one-component staggered kinetic candidates, including both quoted classes, are unavailable as K-breaking carriers. A downstream use may cite the constructive real lift, the trivial projective class, and the conjugate-sector blindness transfer. It may not cite this note for a value, for a two-component construction, or for an occurrence statement.
 
 The permitted citation payload is finite:
 
@@ -184,25 +184,25 @@ It does not compute the two-component per-site `C^2` carrier.
 
 It does not assert any terminal obstruction to `AC_phi_lambda`; it localizes the carrier requirement.
 
-It does not change the retained Dirac-row theorem or the earlier scalar blindness theorem.
+It does not change the linked Dirac-row theorem or the earlier scalar blindness theorem.
 
 ## No-Go Discipline Gate
 
 **Gate result:** PASS bounded; not a terminal no-go.
 
-N1: Routes are separated. The one-component staggered route is ruled out here in both retained kinetic classes. The flux-holonomy route remains the mapped wall. The two-component projective route remains open as the named seed for the next computation. The occurrence lane remains open separately. Owner primitive governance is not touched.
+N1: Routes are separated. The one-component staggered route is ruled out here in both quoted kinetic classes. The flux-holonomy route remains the mapped wall. The two-component projective route remains open as the named seed for the next computation. The occurrence lane remains open separately. Owner primitive governance is not touched.
 
 N2: Wall inventory is unchanged; no additional W-name is introduced.
 
-N3: Hidden-wall scan. `compensating frame` is constructed, not assumed. `spanning tree` is an algorithmic device, not a physical premise. `projective class` is computed trivial, not asserted. `two-component carrier` is the retained row's `C^2` surface, not a derived realization claim.
+N3: Hidden-wall scan. `compensating frame` is constructed, not assumed. `spanning tree` is an algorithmic device, not a physical premise. `projective class` is computed trivial, not asserted. `two-component carrier` is the quoted claim-scope's `C^2` surface, not a derived realization claim.
 
-N4: Residual matching is against PR #4831, PR #4789, PR #4803, and the linked Dirac row. The result extends the scalar real-order blindness logic onto the retained one-component staggered surface and leaves off-locus K-breaking to flux or two-component structure.
+N4: Residual matching is against PR #4831, PR #4789, PR #4803, and the linked Dirac row. The result extends the scalar real-order blindness logic onto the quoted one-component staggered surface and leaves off-locus K-breaking to flux or two-component structure.
 
 N5: Proven content is the constructive sign frame, exact covariance, exact cube, `R^2` compensation agreement, and heat-trace blindness at the stated dense instances. The symbolic content is the one-edge relative-phase forcing and global cube scaling.
 
 N6: Live paths remain shaped. The immediate next computation is the two-component equivariant carrier calculation with the projective spin seed. A separate flux-holonomy calculation remains available in holonomy coordinates. Occurrence remains a separate lane.
 
-N7: Steelman: the trivial cocycle was expected because `H_K1` is real. Reply: expected or not, the calculation upgrades the wave-8 scalar result to the retained staggered surface and forces the projective seed onto `C^2`. Concession: no value is selected.
+N7: Steelman: the trivial cocycle was expected because `H_K1` is real. Reply: expected or not, the calculation upgrades the wave-8 scalar result to the quoted staggered surface and forces the projective seed onto `C^2`. Concession: no value is selected.
 
 N8: Echo check. Blindness extensions recur across scalar, heat-trace, and staggered surfaces. The lesson is to name what a surface cannot see before assigning carrier load to it.
 
@@ -214,4 +214,4 @@ Local command:
 python3 scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py
 ```
 
-Measured close: `TOTAL: PASS=79 FAIL=0`, with constructive checks at `N = 4` and `N = 6`, dense heat traces at `N = 4`, numeric gates `1e-9`, fixed seed `20260702`, and both rejector branches exercised.
+Measured close: `TOTAL: PASS=83 FAIL=0`, with constructive checks at `N = 4` and `N = 6`, dense heat traces at `N = 4`, numeric gates `1e-9`, fixed seed `20260702`, and both rejector branches exercised.

@@ -27,9 +27,10 @@ _TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md):
   - the runner does NOT attempt to derive `Z_min` from the framework — it
     consumes the explicit `Z_min` already produced by the rank-one transfer
     realisation theorem (2026-04-19) and the upstream completion theorem;
-  - the runner verifies the explicit numerical fit reported in the note's
-    "Bottom line" section (Zhat_best, c_best, gap norm, active boundary
-    edges) and the named consequence "Z_min is still not realised exactly".
+  - the runner verifies its retained boundary-face reference fit (Zhat_best,
+    c_best, gap norm, active boundary edges) and checks that the parent
+    note's repaired sampled-grid bottom-line and finite sampled-grid no-go
+    conclusion are recorded and consistent with that strictly positive gap.
 
 Audit-class self-classification: this is a Class C / structural-support
 runner. It witnesses one bounded, deterministic, single-precision-stable
@@ -69,7 +70,11 @@ TAU_TRANSFER_LOWER = 1.0e-4
 TAU_BOUNDARY_UPPER = 4.0
 ASYM_DECAY_LOWER = 1.0e-8
 
-# Note's published numerical witness values (must be reproduced).
+# Reference witness values (must be reproduced). Z_min is still published in
+# the parent note; the boundary-face fit values (Zhat_best, c_best, gap norm)
+# are retained here as this runner's reference constants — the parent note's
+# repaired sampled-grid claim records that older boundary-face fit only as a
+# non-load-bearing remark.
 NOTE_ZMIN = (0.135165279562, 0.374012880009, 0.543843858544)
 NOTE_ZHAT = (0.280527830070, 0.789850309412, 1.120725632470)
 NOTE_C_BEST = 0.481383963846
@@ -267,19 +272,20 @@ def main() -> int:
     # ===== Theorem-level checks (verify the note's published claims) =====
 
     check(
-        "the parent note records the published numerical bottom-line "
-        "(Z_min triple, Zhat_best vector, c_best, gap norm)",
+        "the parent note records the current sampled-grid bottom-line "
+        "(Z^min triple, 1440-point minimum sampled gap, argmin grid point)",
         all(
             tok in note
             for tok in (
                 "0.135165279562",
                 "0.374012880009",
                 "0.543843858544",
-                "0.280527830070",
-                "0.789850309412",
-                "1.120725632470",
-                "0.481383963846",
-                "0.007578536496",
+                "1440",
+                "7.791551e-03",
+                "tau_transfer = 1e-4",
+                "tau_boundary = 4.0",
+                "asym_decay = 1e-8",
+                "linear_decay = 0.3214",
             )
         ),
         "all explicit numbers found verbatim in the note text",
@@ -290,11 +296,12 @@ def main() -> int:
         ("completed sample triple" in completion_note) and ("a^min" in completion_note),
     )
     check(
-        "the spatial-environment transfer theorem note pins the abstract "
-        "object the `spatial_pair` family realises (positive conjugation-"
-        "symmetric boundary state hit by powers of S_beta^env)",
-        "S_beta^env" in transfer_note
-        and "positive conjugation-symmetric boundary state" in transfer_note,
+        "the spatial-environment transfer note pins the abstract "
+        "transfer-amplitude shape the `spatial_pair` family realises "
+        "(positive conjugation-symmetric boundary vector, with the full "
+        "(S_beta^env)^(L_perp-1) identity recorded as the unclaimed target)",
+        "(S_beta^env)^(L_perp-1)" in transfer_note
+        and "positive conjugation-symmetric boundary vector" in transfer_note,
     )
     check(
         "reproduced Z_min from the rank-one transfer realisation matches the "
@@ -303,22 +310,22 @@ def main() -> int:
         f"||Z_min reproduced - Z_min note||={z_min_gap:.3e}",
     )
     check(
-        "the best scaled-fit `Zhat_best` reproduces the note's published "
-        "vector to 1e-6",
+        "the best scaled-fit `Zhat_best` reproduces this runner's retained "
+        "boundary-face reference vector to 1e-6",
         all(
             abs(zhat_best[i] - NOTE_ZHAT[i]) < 1.0e-6 for i in range(3)
         ),
         f"Zhat_best={np.array2string(zhat_best, precision=10)}",
     )
     check(
-        "the optimal overall scale `c_best` reproduces the note's published "
-        "value to 1e-6",
+        "the optimal overall scale `c_best` reproduces this runner's retained "
+        "boundary-face reference value to 1e-6",
         abs(c_best - NOTE_C_BEST) < 1.0e-6,
         f"c_best={c_best:.12f}",
     )
     check(
-        "the Euclidean gap `||c_best Zhat_best - Z_min||_2` reproduces the "
-        "note's published value to 1e-9",
+        "the Euclidean gap `||c_best Zhat_best - Z_min||_2` reproduces this "
+        "runner's retained boundary-face reference value to 1e-9",
         abs(gap_best - NOTE_GAP_NORM) < 1.0e-9,
         f"||c*Zhat - Z_min||={gap_best:.12f}",
     )
@@ -339,11 +346,12 @@ def main() -> int:
         f"||c*Zhat - Z_min|| = {gap_best:.12f} > 1e-3",
     )
     check(
-        "the note's prose conclusion `still not realized exactly inside the "
-        "audited current explicit witness family` is therefore numerically "
-        "supported",
-        "still not realized exactly" in note
-        and "best audited scaled fit" in note,
+        "the note's prose conclusion (`no sampled grid point` `realizes the "
+        "completed first-sector triple`, a `finite sampled-grid no-go`) is "
+        "consistent with this runner's strictly positive boundary-corner gap",
+        "no sampled grid point" in note
+        and "realizes the completed first-sector triple" in note
+        and "finite sampled-grid no-go" in note,
     )
 
     print()

@@ -48,7 +48,7 @@ CHECK 18: PASS -- T2 record-time = event-time coarser than step-time (3 states, 
 CHECK 19: PASS -- T2 no cycles: a return step must delete a record (permanence-forbidden)
 CHECK 20: PASS -- T2 order is relabel-invariant (site perm = order iso) and merge-monotone
 CHECK 21: PASS -- T2 firewall-scoped: order+count only (rate 1 vs 1/2 not fixed); forward is definitional inclusion, not thermodynamic
-# ---- T3  ACCUMULATION IRREDUCIBLE (narrow no-go, axiom-first) ----
+# ---- T3  NON-TRIVIALITY IS REALIZED DATA, NOT LAW (reclassified no-go) ----
 CHECK 22: PASS -- T3(i) static witness admissible under the covariant rule across the constant history
 #   [L1 ] static witness satisfies sentence: True
 #   [L2 ] static witness satisfies sentence: True
@@ -72,22 +72,28 @@ CHECK 22: PASS -- T3(i) static witness admissible under the covariant rule acros
 #   [QU5] static witness satisfies sentence: True
 CHECK 23: PASS -- T3(i) static witness satisfies EVERY one of the 20 axiom-block sentences (sentence-complete; no sentence forces change)
 CHECK 24: PASS -- T3(i) constant history registers 0 new records: non-triviality NOT forced
-CHECK 25: PASS -- T3(ii) H=0 witness: zero generator in gauge-covariant class (nonzero too; sx control fails) -> non-triviality is new content
+CHECK 25: PASS -- T3(ii) H=0 witness: zero generator in gauge-covariant class (nonzero too; sx control fails) -> non-triviality is realized data, not law
+CHECK 26: PASS -- T3(iii) saturated frozen-region: one record per site; no registrable site -> no event can occur (local finality exact); interior constrains boundary ({+1}); 'no configuration is final' is FALSE
+CHECK 27: PASS -- T3(iv) per-step-production no-go: outlaws the admissible static vacuum and idle steps (Zeno-freeze) and forbids the loose re-gauge (grid-gauged rate floor >= 1/step) -> a clock in disguise
+CHECK 28: PASS -- T3(v) realized-sector conditioning honest: non-triviality is a contingent realized-sector condition (vacuum antecedent false, not violated; realized history antecedent true, order strict) -- not a law
 # ---- T4  THE COMPRESSION MAP (bounded support) ----
-CHECK 26: PASS -- T4(a) production definitional: event:=registration, count == +records on chain
-CHECK 27: PASS -- T4(a') registration_events sums set-differences: multi-registration {}->{r1,r2}=2; realized history (with idle steps) = 3
-CHECK 28: PASS -- T4(b) single discharge map P3<->permanence, P2<->accumulation (form-conditional); touches only P2/P3; identical to the note's own text (live grep)
-CHECK 29: PASS -- T4(c) #4855 C-add: chain-concat associative + additive; kernel-convolution NAMED OPEN
-CHECK 30: PASS -- T4(d) conditional ladder re-hangs: each rung premised, B-AXIS external, terminal Dirac branch review-pending
-CHECK 31: PASS -- T4(e) ordering->transfer-axis (B-AXIS) NOT supplied by ordering {order,count}: NAMED OPEN target
-CHECK 32: PASS -- T4(f) permanent non-goals (rate/metric/clock, arrow, ABJ-externality) never discharged
+CHECK 29: PASS -- T4(a) production definitional: event:=registration, count == +records on chain
+CHECK 30: PASS -- T4(a') registration_events sums set-differences: multi-registration {}->{r1,r2}=2; realized history (with idle steps) = 3
+CHECK 31: PASS -- T4(b) single discharge map P3<->restored permanence axiom (PR #4874), P2<->definitional event + realized-sector conditioning; touches only P2/P3; identical to the note's own text (live grep)
+CHECK 32: PASS -- T4(c) #4855 C-add: chain-concat associative + additive; kernel-convolution NAMED OPEN
+CHECK 33: PASS -- T4(d) conditional ladder re-hangs: each rung premised, B-AXIS external, terminal Dirac branch review-pending
+CHECK 34: PASS -- T4(e) ordering->transfer-axis (B-AXIS) NOT supplied by ordering {order,count}: NAMED OPEN target
+CHECK 35: PASS -- T4(f) permanent non-goals (rate/metric/clock, arrow, ABJ-externality) never discharged
 # ---- residue table parsed from the note (single source of truth) ----
-#   [owner-surface flag only] Record permanence premise (T1 owner surface; OPEN (a) clarity / (b) new-content)
-#   [owner-surface flag only] Accumulation sentence FORM-E (per-event)
-#   [owner-surface flag only] Accumulation sentence FORM-H (per-history)
+#   [owner surface; PR #4874 pending; not yet landed] Record permanence restoration (single owner surface; PR #4874 in flight; option (a) clarity, owner-confirmed)
+#   [definitional discipline; no axiom] Realized-sector conditioning discipline (non-triviality = contingent realized data)
+#   [WITHDRAWN; saturation counterexample: a fully-recorded region is final and physical] Withdrawn accumulation candidate, both forms (FORM-E per-event / FORM-H per-history)
+#   [permanent no-go; grid-gauged rate floor; Zeno-freeze] Per-step-production no-go ("every step registers a record")
+#   [derivation target (open)] Frozen-region corollary (saturated interior constrains its boundary)
+#   [in flight (supervisor-supplied); this worktree still shows the pre-edit R2] PR #4874 axiom-file edit (replaces the R2 tail clause; §6 entry)
 #   [review-pending; carried open] P1 (#4854 premise family)
-#   [maps to accumulation sentence] P2 production premise
-#   [maps to permanence sentence] P3 persistence premise
+#   [definitional (event := registration) plus realized-sector conditioning] P2 production premise
+#   [maps to the restored permanence axiom (PR #4874)] P3 persistence premise
 #   [review-pending; carried open] P4 (#4854 premise family)
 #   [review-pending; carried external] CHART-MIX (#4854 premise family)
 #   [review-pending; carried open] C-add (#4855 composition premise)
@@ -98,7 +104,7 @@ CHECK 32: PASS -- T4(f) permanent non-goals (rate/metric/clock, arrow, ABJ-exter
 #   [carried open] Record-compatibility (kernel-target ingredient)
 #   [external premise; not supplied by ordering] B-AXIS supplied-axis premise (EXTERNAL)
 #   [derivation target (open)] Ordering-to-transfer-axis (B-AXIS) bridge
-#   [compressed by accumulation surface if owner accepts] D1 H!=0 (PR #4843)
+#   [reclassified as realized data; carried by realized-sector conditioning] D1 H!=0 (PR #4843)
 #   [review-pending external] D2 Dirac branch (PR #4843) / #4797 review-pending
 #   [landed-given-bridges] Form-forced (gauge-invariant-local class)
 #   [landed-conditional] Stone-unique generator (given axis)
@@ -112,8 +118,9 @@ CHECK 32: PASS -- T4(f) permanent non-goals (rate/metric/clock, arrow, ABJ-exter
 #   [import; carried open] Realized-history import (supplied sequence of states)
 #   [carried open; audit lane owns] All cited notes: unaudited post 2026-06-29 reset
 #   [untouched] Audit statuses (audit-lane authority)
-CHECK 33: PASS -- T4 residue table parsed from the note: 30 rows, all 29 required keys present, no adoption/promotion status
+CHECK 36: PASS -- T4 residue table parsed from the note: 33 rows, all 32 required keys present, no adoption/promotion status
 # ---- T5  GOVERNANCE MAP ----
-CHECK 34: PASS -- T5 two owner surfaces: permanence (OPEN (a)/(b), not foreclosed) + accumulation (both FORM-E/FORM-H); nothing adopted
-CHECK 35: PASS -- T5 leverage: two surfaces replace {H!=0/D1, event-ordering}; B-AXIS stays EXTERNAL (bridge OPEN); other named rungs keep their statuses
-TOTAL: PASS=35 FAIL=0
+CHECK 37: PASS -- T5 exactly ONE owner surface (permanence restoration, PR #4874, option (a) owner-confirmed); accumulation candidate WITHDRAWN (both forms, saturation counterexample); panel record historical; nothing landed
+CHECK 38: PASS -- T5 leverage: one restored word + realized-sector conditioning replace the proposed fifth-axiom program (no fifth axiom); B-AXIS stays EXTERNAL (bridge OPEN); other named rungs unchanged
+CHECK 39: PASS -- LEMMA readout-invariance derived: permanence + content-determined readout => repeated readouts agree at all history positions; disagreement requires a permanence-barred mutation (control differs)
+TOTAL: PASS=39 FAIL=0

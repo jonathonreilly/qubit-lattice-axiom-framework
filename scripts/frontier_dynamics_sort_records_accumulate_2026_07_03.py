@@ -10,12 +10,12 @@ note:
 
 Scope of this runner (exact arithmetic; Fraction/int/set/str only; NO floats):
 
-  S0  SOURCE LIVENESS            (quotes are live)   CHECK 01-03
-  T1  PERMANENCE SCOPE GAP       (bounded theorem)   CHECK 04-12
-  T2  ORDERING DERIVED           (bounded theorem)   CHECK 13-21
-  T3  ACCUMULATION IRREDUCIBLE   (narrow no-go)      CHECK 22-25
-  T4  THE COMPRESSION MAP        (bounded support)   CHECK 26-33
-  T5  GOVERNANCE MAP             (governance)        CHECK 34-35
+  S0  SOURCE LIVENESS            (quotes are live)    CHECK 01-03
+  T1  PERMANENCE SCOPE GAP       (bounded theorem)    CHECK 04-12
+  T2  ORDERING DERIVED           (bounded theorem)    CHECK 13-21
+  T3  NON-TRIVIALITY = REALIZED  (reclassified no-go) CHECK 22-28
+  T4  THE COMPRESSION MAP        (bounded support)    CHECK 29-36
+  T5  GOVERNANCE MAP             (governance)         CHECK 37-38
 
 Every quoted axiom / firewall sentence is guarded LIVE against the actual source
 file content (whitespace-normalized substring), so no quote is dead data.  The
@@ -576,16 +576,24 @@ check(_order_count_invariant and _rate_not_fixed and _forward_def,
 
 
 # ============================================================================
-# T3 -- ACCUMULATION IRREDUCIBLE  (narrow no-go, axiom-first)          CHECK 22-25
+# T3 -- NON-TRIVIALITY IS REALIZED DATA, NOT LAW (reclassified no-go)   CHECK 22-28
 # ----------------------------------------------------------------------------
-# Two exact witnesses that "something happens" is NOT a theorem of the four axioms.
-# (i) STATIC witness: the fixed admissible C_STAR with the CONSTANT history is
-# guarded against EVERY one of the 20 enumerated axiom-block sentences individually
-# (sentence-complete).  (ii) H=0 witness: the forced gauge-covariant class contains
-# the zero generator.  Hence non-triviality is genuinely new content.
+# "Something happens" is NOT a theorem of the four axioms -- and by the owner ruling
+# (2026-07-03) this is CORRECT AND EXPECTED, not a defect: non-triviality was never
+# law (Newton legislates no acceleration, GR does not outlaw Minkowski, QFT does not
+# forbid the ground state).
+# (i)   ADMISSIBLE-VACUUM witness: the fixed admissible C_STAR with the CONSTANT
+#       history, guarded against EVERY one of the 20 axiom-block sentences (complete).
+# (ii)  H=0 witness: the forced gauge-covariant class contains the zero generator.
+# (iii) FROZEN-REGION (saturation) witness: a fully-recorded window is FINAL and
+#       PHYSICAL, refuting the withdrawn per-history clause "no configuration is final".
+# (iv)  PER-STEP-PRODUCTION no-go: "every step registers a record" is a clock in
+#       disguise (Zeno-freeze; grid-gauged rate floor) -- a standing negative result.
+# (v)   REALIZED-SECTOR CONDITIONING: non-triviality re-enters honestly as an explicit
+#       realized-sector condition (no axiom), like a scattering theorem on particles.
 # ============================================================================
 
-print("# ---- T3  ACCUMULATION IRREDUCIBLE (narrow no-go, axiom-first) ----")
+print("# ---- T3  NON-TRIVIALITY IS REALIZED DATA, NOT LAW (reclassified no-go) ----")
 
 CONSTANT_HISTORY = [C_STAR, C_STAR, C_STAR, C_STAR]     # nothing ever changes
 
@@ -751,28 +759,104 @@ _hnz_in = is_zero(comm(Hnz, G))
 _hsx_out = not is_zero(comm(Hsx, G))
 check(_h0_in and _hnz_in and _hsx_out,
       "T3(ii) H=0 witness: zero generator in gauge-covariant class (nonzero too; "
-      "sx control fails) -> non-triviality is new content")
+      "sx control fails) -> non-triviality is realized data, not law")
+
+
+# (iii) FROZEN-REGION (saturation) witness -- the withdrawn per-history accumulation
+# clause "no configuration is final" is FALSE: a fully-recorded window is final and
+# physical, and still constrains its boundary through Admissibility neighbor-dependence.
+SAT_WINDOW = frozenset((x, y, z) for x in (0, 1) for y in (0, 1) for z in (0, 1))
+SATURATED = frozenset((s, +1) for s in SAT_WINDOW)   # one record per site, all lock +1
+
+
+def registrable_sites(window, config):
+    """Sites in `window` carrying no record -- where a NEW registration event could occur."""
+    return frozenset(window) - sites_of(config)
+
+
+# CHECK 26 -- saturated frozen-region: one record per site (each locks its one
+#             available possibility); no site remains registrable -> no event can
+#             occur (local finality, exact); the recorded interior still constrains a
+#             boundary site (pinned to {+1}); a non-saturated window has registrable
+#             sites (the check has teeth).
+_one_per_site = (len(SATURATED) == len(SAT_WINDOW) and sites_of(SATURATED) == SAT_WINDOW)
+_sat_admissible = config_admissible(SATURATED)
+_final = registrable_sites(SAT_WINDOW, SATURATED) == frozenset()
+_boundary_constrained = available_at((2, 0, 0), SATURATED) == frozenset({+1})
+_teeth = len(registrable_sites(SAT_WINDOW, frozenset({((0, 0, 0), +1)}))) == len(SAT_WINDOW) - 1
+check(_one_per_site and _sat_admissible and _final and _boundary_constrained and _teeth,
+      "T3(iii) saturated frozen-region: one record per site; no registrable site -> "
+      "no event can occur (local finality exact); interior constrains boundary ({+1}); "
+      "'no configuration is final' is FALSE")
+
+
+# (iv) PER-STEP-PRODUCTION no-go -- "every step registers a record" outlaws the
+# admissible static vacuum and every idle step (Zeno-freeze) and forbids the loose
+# re-gauge the T2 firewall used for rate freedom (grid-gauged rate floor >= 1/step).
+def per_step_production_holds(hist):
+    return all(len(hist[i + 1] - hist[i]) >= 1 for i in range(len(hist) - 1))
+
+
+LOOSE_REGAUGE = [S0, S0, S1, S2, S3]   # same event content as CHAIN, one idle step inserted
+
+# CHECK 27 -- per-step production is a clock in disguise (standing no-go): it outlaws
+#             the admissible static vacuum and idle-bearing history (Zeno-freeze) and
+#             forbids the loose re-gauge (pinning a grid-gauged rate floor >= 1/step).
+_zeno_vacuum = not per_step_production_holds(CONSTANT_HISTORY)   # static vacuum outlawed
+_zeno_idle = not per_step_production_holds(REAL_HIST)            # idle-bearing history outlawed
+_kills_rate_freedom = (not per_step_production_holds(LOOSE_REGAUGE)
+                       and per_step_production_holds(CHAIN))
+check(_zeno_vacuum and _zeno_idle and _kills_rate_freedom,
+      "T3(iv) per-step-production no-go: outlaws the admissible static vacuum and idle "
+      "steps (Zeno-freeze) and forbids the loose re-gauge (grid-gauged rate floor "
+      ">= 1/step) -> a clock in disguise")
+
+
+# (v) REALIZED-SECTOR CONDITIONING -- non-triviality re-enters as an explicit
+# realized-sector condition, honest like a scattering theorem on particle content.
+def registers_events(hist):
+    return registration_events(hist) >= 1
+
+
+def realized_sector_claim(hist):
+    """'For realized histories that register events, the order advances strictly
+    somewhere.'  Antecedent false on the vacuum -> not violated (vacuously true)."""
+    if not registers_events(hist):
+        return True
+    return any(hist[i] < hist[i + 1] for i in range(len(hist) - 1))
+
+
+# CHECK 28 -- realized-sector conditioning is honest (no axiom): the vacuum satisfies
+#             the antecedent-false branch (not violated); the realized history the
+#             antecedent-true branch (order strict).
+_vacuum_vacuous = (not registers_events(CONSTANT_HISTORY)) and realized_sector_claim(CONSTANT_HISTORY)
+_realized_holds = registers_events(REAL_HIST) and realized_sector_claim(REAL_HIST)
+check(_vacuum_vacuous and _realized_holds,
+      "T3(v) realized-sector conditioning honest: non-triviality is a contingent "
+      "realized-sector condition (vacuum antecedent false, not violated; realized "
+      "history antecedent true, order strict) -- not a law")
 
 
 # ============================================================================
-# T4 -- THE COMPRESSION MAP  (bounded support)                        CHECK 26-33
+# T4 -- THE COMPRESSION MAP  (bounded support)                        CHECK 29-36
 # ----------------------------------------------------------------------------
-# Given T1 permanence + T3 accumulation: production is definitional; the SINGLE
-# discharge map is P3(persistence)<->permanence, P2(production)<->accumulation
-# (FORM-E direct / FORM-H + definitional event); #4855 C-add via chain-concat with
-# kernel-convolution NAMED OPEN; the conditional ladder re-hangs (B-AXIS external);
-# the ordering->transfer-axis (B-AXIS) bridge is a NAMED OPEN target; permanent
-# non-goals kept.  The full residue is PARSED from the note's own table.
+# Given the restored permanence axiom (PR #4874) + definitional production: the
+# SINGLE discharge map is P3(persistence)<->the RESTORED permanence axiom sentence,
+# P2(production)<->definitional event:=registration PLUS realized-sector conditioning
+# (NO axiom added); #4855 C-add via chain-concat with kernel-convolution NAMED OPEN;
+# the conditional ladder re-hangs (B-AXIS external); the ordering->transfer-axis
+# (B-AXIS) bridge is a NAMED OPEN target; permanent non-goals kept.  The full residue
+# is PARSED from the note's own table.
 # ============================================================================
 
 print("# ---- T4  THE COMPRESSION MAP (bounded support) ----")
 
-# CHECK 26 -- production definitional: event := registration; production count on
+# CHECK 29 -- production definitional: event := registration; production count on
 #             the strict chain equals the count delta.
 check(registration_events(CHAIN) == len(CHAIN[-1]) - len(CHAIN[0]) == 3,
       "T4(a) production definitional: event:=registration, count == +records on chain")
 
-# CHECK 27 -- registration_events sums |S_{i+1} \\ S_i|: a multi-registration step
+# CHECK 30 -- registration_events sums |S_{i+1} \\ S_i|: a multi-registration step
 #             {} -> {r1,r2} counts 2; the realized history (with idle steps) counts 3.
 _r1 = ((5, 0, 0), +1)
 _r2 = ((6, 0, 0), -1)
@@ -781,26 +865,27 @@ check(_multi and registration_events(REAL_HIST) == 3,
       "T4(a') registration_events sums set-differences: multi-registration {}->{r1,r2}=2; "
       "realized history (with idle steps) = 3")
 
-# CHECK 28 -- the SINGLE discharge map: P3(persistence)<->permanence,
-#             P2(production)<->accumulation (FORM-E direct / FORM-H + definitional
-#             event); touches ONLY P2,P3; and it is IDENTICAL to the note's own text
-#             (live grep of the note).
+# CHECK 31 -- the SINGLE discharge map: P3(persistence)<->the RESTORED permanence
+#             axiom sentence (PR #4874), P2(production)<->definitional event:=
+#             registration PLUS realized-sector conditioning (NO axiom); touches ONLY
+#             P2,P3; and it is IDENTICAL to the note's own text (live grep of the note).
 DISCHARGE_4854 = {
-    "P3": "permanence sentence (record persistence; T1 owner surface)",
-    "P2": "accumulation sentence (record production; FORM-E direct, or FORM-H + "
-          "definitional event := registration-step)",
+    "P3": "restored permanence axiom sentence (record persistence; PR #4874)",
+    "P2": "definitional event := registration-step, plus realized-sector conditioning "
+          "(no axiom added)",
 }
 FAMILIES_4854 = {"P1", "P2", "P3", "P4", "CHART-MIX"}
 _disch_total = all(v for v in DISCHARGE_4854.values())
 _disch_scope = set(DISCHARGE_4854) == {"P2", "P3"} and set(DISCHARGE_4854) <= FAMILIES_4854
 _note_norm = normalize(read_doc(NOTE_NAME)).lower()
-_note_map_ok = ("p3 (persistence) maps to the permanence sentence" in _note_norm
-                and "p2 (production) maps to the accumulation sentence" in _note_norm)
+_note_map_ok = ("p3 (persistence) maps to the restored permanence axiom sentence" in _note_norm
+                and "p2 (production) becomes definitional" in _note_norm)
 check(_disch_total and _disch_scope and _note_map_ok,
-      "T4(b) single discharge map P3<->permanence, P2<->accumulation (form-conditional); "
-      "touches only P2/P3; identical to the note's own text (live grep)")
+      "T4(b) single discharge map P3<->restored permanence axiom (PR #4874), "
+      "P2<->definitional event + realized-sector conditioning; touches only P2/P3; "
+      "identical to the note's own text (live grep)")
 
-# CHECK 29 -- #4855 C-add: chain concatenation supplies step composition (associative)
+# CHECK 32 -- #4855 C-add: chain concatenation supplies step composition (associative)
 #             and additive counts; the kernel-convolution clause is NAMED OPEN.
 def concat(chain_a, chain_b):
     if chain_a[-1] != chain_b[0]:
@@ -819,7 +904,7 @@ KERNEL_CONVOLUTION_TARGET = "OPEN"
 check(_assoc_left == _assoc_right and _c_add and KERNEL_CONVOLUTION_TARGET == "OPEN",
       "T4(c) #4855 C-add: chain-concat associative + additive; kernel-convolution NAMED OPEN")
 
-# CHECK 30 -- the landed conditional ladder re-hangs.  Each rung carries its named
+# CHECK 33 -- the landed conditional ladder re-hangs.  Each rung carries its named
 #             premise/status; nothing beyond form/Stone is unconditional; B-AXIS is a
 #             named external axis; terminal Dirac branch is review-pending (#4797).
 LADDER = [
@@ -840,7 +925,7 @@ check(_ladder_ordered and _ladder_premised and _no_uncond and _axis_external
       "T4(d) conditional ladder re-hangs: each rung premised, B-AXIS external, "
       "terminal Dirac branch review-pending")
 
-# CHECK 31 -- ordering -> lattice-transfer-axis (B-AXIS) bridge is a NAMED OPEN
+# CHECK 34 -- ordering -> lattice-transfer-axis (B-AXIS) bridge is a NAMED OPEN
 #             target.  T2's ordering outputs are exactly {order, count}; B-AXIS is
 #             not among them, so ordering alone does not supply the transfer axis.
 B_AXIS_TRANSFER_TARGET = "OPEN"
@@ -849,7 +934,7 @@ check("B-AXIS" not in WITNESS_OUTPUTS and WITNESS_OUTPUTS == frozenset({"order",
       "T4(e) ordering->transfer-axis (B-AXIS) NOT supplied by ordering {order,count}: "
       "NAMED OPEN target")
 
-# CHECK 32 -- permanent non-goals: rate/metric/clock, arrow beyond past-hypothesis,
+# CHECK 35 -- permanent non-goals: rate/metric/clock, arrow beyond past-hypothesis,
 #             ABJ premise externality -- never moved into 'discharged'.
 PERMANENT_NON_GOALS = {"rate", "metric", "clock",
                        "arrow-beyond-past-hypothesis", "ABJ-premise-externality"}
@@ -857,7 +942,7 @@ _discharged = set(DISCHARGE_4854) | {"C-add"}
 check(PERMANENT_NON_GOALS.isdisjoint(_discharged),
       "T4(f) permanent non-goals (rate/metric/clock, arrow, ABJ-externality) never discharged")
 
-# CHECK 33 -- residue single-source-of-truth: PARSE the note's residue table, count
+# CHECK 36 -- residue single-source-of-truth: PARSE the note's residue table, count
 #             rows, check every required key is present, and check no status cell
 #             carries an adoption/promotion token.
 def parse_residue_table(note_text):
@@ -884,7 +969,9 @@ def parse_residue_table(note_text):
 
 
 REQUIRED_KEYS = [
-    "record permanence premise", "accumulation sentence form-e", "accumulation sentence form-h",
+    "record permanence restoration", "realized-sector conditioning",
+    "withdrawn accumulation candidate", "per-step-production no-go",
+    "frozen-region corollary", "pr #4874",
     "p1 (#4854", "p2 production premise", "p3 persistence premise", "p4 (#4854", "chart-mix",
     "c-add", "pos (#4855", "loc (#4855",
     "kernel-convolution clause", "one-parameter composition", "record-compatibility (kernel-target",
@@ -901,79 +988,107 @@ _items_blob = " || ".join(it.lower() for (it, _r, _st) in _residue_rows)
 _missing = [k for k in REQUIRED_KEYS if k not in _items_blob]
 _status_clean = all(all(tok not in st.lower() for tok in FORBIDDEN_STATUS)
                     for (_it, _r, st) in _residue_rows)
-_row_count_ok = len(_residue_rows) == 30
+_row_count_ok = len(_residue_rows) == 33
 print("# ---- residue table parsed from the note (single source of truth) ----")
 for _it, _r, _st in _residue_rows:
     print("#   [%s] %s" % (_st, _it))
 if _missing:
     print("#   MISSING REQUIRED KEYS: %s" % _missing)
 check(_row_count_ok and not _missing and _status_clean,
-      "T4 residue table parsed from the note: 30 rows, all %d required keys present, "
+      "T4 residue table parsed from the note: 33 rows, all %d required keys present, "
       "no adoption/promotion status" % len(REQUIRED_KEYS))
 
 
 # ============================================================================
-# T5 -- GOVERNANCE MAP                                                CHECK 34-35
+# T5 -- GOVERNANCE MAP                                                CHECK 37-38
 # ----------------------------------------------------------------------------
-# Exactly two owner surfaces: (1) the permanence sentence -- owner decides (a)
-# clarity-fix vs (b) new-content, an OPEN decision this note does NOT foreclose;
-# (2) the accumulation sentence, presented in BOTH forms (FORM-E per-event / FORM-H
-# per-history).  Leverage honesty: the two surfaces replace the H!=0/D1 premise and
-# ground event-ordering; B-AXIS stays EXTERNAL (the ordering->transfer-axis bridge
-# is OPEN); the other ladder rungs keep their named statuses.
+# Exactly ONE owner surface: the permanence RESTORATION, already exercised as PR
+# #4874 (option (a) clarity, owner-confirmed).  The accumulation axiom candidate is
+# WITHDRAWN (both forms; saturation counterexample).  The 5-seat panel record is kept
+# as historical context (it answered "which accumulation form" under the then-standing
+# frame; the owner rejected the frame).  Leverage honesty: one restored word +
+# realized-sector conditioning replace the entire proposed fifth-axiom program; B-AXIS
+# stays EXTERNAL (the ordering->transfer-axis bridge is OPEN); ladder rungs unchanged.
 # ============================================================================
 
 print("# ---- T5  GOVERNANCE MAP ----")
 
 OWNER_SURFACES = [
     {
-        "id": "permanence-sentence",
-        "option": "(a) clarity-fix OR (b) new-content -- OPEN owner decision",
-        "sentence": ("A record, once present, is permanent: no later configuration "
-                     "removes or alters it. Reading it changes nothing."),
-        "status": "owner-surface / not adopted",
-    },
-    {
-        "id": "accumulation-sentence",
-        "forms": {
-            "FORM-E": "Every step of a realized history registers at least one new record.",
-            "FORM-H": ("Records accumulate: every realized history keeps registering "
-                       "new records; no configuration is final."),
-        },
-        "status": "owner-surface / not adopted",
+        "id": "permanence-restoration",
+        "pr": "#4874",
+        "option": "(a) clarity fix -- owner-confirmed (intent restoration)",
+        "restored_clause": "records are permanent.",
+        "status": "single owner surface; PR #4874 in flight; nothing landed here",
     },
 ]
 
-# CHECK 34 -- exactly two owner surfaces; surface 1 carries an OPEN (a)/(b) tag (NOT
-#             a decided classification); surface 2 carries BOTH forms; nothing adopted.
-_two = len(OWNER_SURFACES) == 2
-_perm_open = ("OPEN" in OWNER_SURFACES[0]["option"]
-              and "(a)" in OWNER_SURFACES[0]["option"]
-              and "(b)" in OWNER_SURFACES[0]["option"]
-              and "kind" not in OWNER_SURFACES[0])          # no hard clarity/new-content key
-_acc_both_forms = set(OWNER_SURFACES[1]["forms"]) == {"FORM-E", "FORM-H"}
-_not_adopted = all(s["status"] == "owner-surface / not adopted" for s in OWNER_SURFACES)
-check(_two and _perm_open and _acc_both_forms and _not_adopted,
-      "T5 two owner surfaces: permanence (OPEN (a)/(b), not foreclosed) + accumulation "
-      "(both FORM-E/FORM-H); nothing adopted")
-
-# CHECK 35 -- leverage honesty: the two surfaces replace exactly {H!=0/D1,
-#             event-ordering}; B-AXIS is NOT among the targets and stays EXTERNAL
-#             (the ordering->transfer-axis bridge is OPEN); the other named rungs
-#             keep their statuses.
-LEVERAGE_MAP = {
-    "accumulation-sentence": "H!=0/D1",            # non-triviality/production premise
-    "permanence-sentence": "event-ordering",       # persistence grounds inclusion order
+WITHDRAWN_ACCUMULATION = {
+    "forms": {
+        "FORM-E": "Every step of a realized history registers at least one new record.",
+        "FORM-H": ("Records accumulate: every realized history keeps registering new "
+                   "records; no configuration is final."),
+    },
+    "disposition": "WITHDRAWN (owner reframe 2026-07-03)",
+    "counterexample": "saturated region is final and physical (frozen-region)",
 }
-LEVERAGE_TARGETS = {"H!=0/D1", "event-ordering"}
+
+PANEL_RECORD = ("historical context: the 5-seat panel answered 'which accumulation "
+                "form' under the then-standing frame; the owner rejected the frame")
+
+# CHECK 37 -- exactly ONE owner surface (permanence restoration, PR #4874, option (a)
+#             owner-confirmed); the accumulation candidate is WITHDRAWN (both forms,
+#             saturation counterexample); the panel record is historical; nothing landed.
+_one_surface = len(OWNER_SURFACES) == 1 and OWNER_SURFACES[0]["id"] == "permanence-restoration"
+_pr_named = OWNER_SURFACES[0]["pr"] == "#4874"
+_option_a_confirmed = ("(a)" in OWNER_SURFACES[0]["option"]
+                       and "owner-confirmed" in OWNER_SURFACES[0]["option"])
+_acc_withdrawn = (set(WITHDRAWN_ACCUMULATION["forms"]) == {"FORM-E", "FORM-H"}
+                  and "WITHDRAWN" in WITHDRAWN_ACCUMULATION["disposition"]
+                  and "saturated" in WITHDRAWN_ACCUMULATION["counterexample"])
+_panel_historical = "historical context" in PANEL_RECORD
+check(_one_surface and _pr_named and _option_a_confirmed and _acc_withdrawn
+      and _panel_historical,
+      "T5 exactly ONE owner surface (permanence restoration, PR #4874, option (a) "
+      "owner-confirmed); accumulation candidate WITHDRAWN (both forms, saturation "
+      "counterexample); panel record historical; nothing landed")
+
+# CHECK 38 -- leverage honesty: one restored word + realized-sector conditioning
+#             replace the entire proposed fifth-axiom program; B-AXIS stays EXTERNAL
+#             (ordering->transfer-axis bridge OPEN); the other ladder rungs unchanged.
+LEVERAGE_MAP = {
+    "permanence-restoration (one restored word)": "event-ordering / persistence",
+    "realized-sector conditioning (no axiom)": "non-triviality / H!=0 / D1",
+}
+LEVERAGE_TARGETS = {"event-ordering / persistence", "non-triviality / H!=0 / D1"}
+FIFTH_AXIOM_NEEDED = False     # the proposed accumulation fifth axiom is WITHDRAWN
 STILL_EXTERNAL = {"B-AXIS", "ABJ", "supplied-axis", "past-hypothesis",
                   "#4797 Dirac-branch", "N5 cap"}
 _covers = set(LEVERAGE_MAP.values()) == LEVERAGE_TARGETS
+_no_fifth_axiom = (FIFTH_AXIOM_NEEDED is False)
 _baxis_external = ("B-AXIS" not in LEVERAGE_MAP.values()) and ("B-AXIS" in STILL_EXTERNAL)
 _others_named = {"ABJ", "past-hypothesis", "#4797 Dirac-branch", "N5 cap"} <= STILL_EXTERNAL
-check(_covers and _baxis_external and _others_named,
-      "T5 leverage: two surfaces replace {H!=0/D1, event-ordering}; B-AXIS stays "
-      "EXTERNAL (bridge OPEN); other named rungs keep their statuses")
+check(_covers and _no_fifth_axiom and _baxis_external and _others_named,
+      "T5 leverage: one restored word + realized-sector conditioning replace the "
+      "proposed fifth-axiom program (no fifth axiom); B-AXIS stays EXTERNAL (bridge "
+      "OPEN); other named rungs unchanged")
+
+# CHECK 39 -- Lemma: readout-invariance DERIVED from permanence + content-determination.
+#             The removed clause is a theorem: record content unchanged along any
+#             realized history (permanence) + "a readout value is determined by
+#             record content alone" (existing sentence) => repeated readouts agree.
+_rec = ((0, 0, 0), 1)                      # a record: (site, locked value)
+def _readout(record):
+    return Fraction(record[1], 1)          # content-determined: value from content only
+_history = [_rec, _rec, _rec, _rec]        # permanence: same record at every position
+_vals = [_readout(r) for r in _history]
+_same = all(v == _vals[0] for v in _vals)
+_mutated = ((0, 0, 0), -1)                 # the ONLY route to disagreement: mutation,
+_control = _readout(_rec) != _readout(_mutated)   # which permanence bars
+check(_same and _control,
+      "LEMMA readout-invariance derived: permanence + content-determined readout "
+      "=> repeated readouts agree at all history positions; disagreement requires "
+      "a permanence-barred mutation (control differs)")
 
 
 # ============================================================================

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py
-runner_sha256: b793d07417476faad76ebf753c719fdf0ba6730462e5e858e817724498d8affc
-timeout_sec: 120
+runner_sha256: 0d65034ec4c3850f1589b5ba5857a9e4db9c80266b1763f50bd69e54171edb6e
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 1.45
+elapsed_sec: 1.34
 status: ok
 ----- stdout -----
 
@@ -17,7 +17,7 @@ PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: k
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: measure_weight_normalization
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stability_or_dynamics_selector
 PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md exists
-PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: selector_or_dial_needed` | 346
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: selector_or_dial_needed` | 383
 PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: read-only scanner
 PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: audit ledger hash is unchanged
 PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md exists
@@ -28,28 +28,29 @@ PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: 
 ------------------------------------------------------------------------------
 Selector/dial subdivision checks
 ------------------------------------------------------------------------------
-PASS selector/dial row count is current snapshot :: 346
-PASS sub-bucket counts sum to selector count :: Counter({'stability_or_dynamics_selector': 147, 'koide_or_generation_selector': 125, 'measure_weight_normalization': 71, 'generic_selector_rule': 3})
-PASS expected sub-bucket counts match :: Counter({'stability_or_dynamics_selector': 147, 'koide_or_generation_selector': 125, 'measure_weight_normalization': 71, 'generic_selector_rule': 3})
+PASS selector/dial row count is current snapshot :: 383
+PASS sub-bucket counts sum to selector count :: Counter({'stability_or_dynamics_selector': 169, 'koide_or_generation_selector': 129, 'measure_weight_normalization': 81, 'generic_selector_rule': 4})
+PASS expected sub-bucket counts match :: Counter({'stability_or_dynamics_selector': 169, 'koide_or_generation_selector': 129, 'measure_weight_normalization': 81, 'generic_selector_rule': 4})
 PASS representative row present in koide_or_generation_selector :: charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02
 PASS representative row present in stability_or_dynamics_selector :: a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1
 PASS representative row present in measure_weight_normalization :: architecture_note_directional_measure
 PASS representative row present in generic_selector_rule :: gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_note_2026-04-20
-PASS audit ledger hash is unchanged :: 2ac5344278b0e37ee6419068aa1e0588600fbc98d8ed55d56650fb4b0e555b83
+PASS audit ledger hash is unchanged :: 15efee196a7b3738ec370120bc338105f64b4c82d0b236c80b0c47b5d5b7b95f
 
 Selector/dial sub-bucket counts:
-  generic_selector_rule: 3
-  koide_or_generation_selector: 125
-  measure_weight_normalization: 71
-  stability_or_dynamics_selector: 147
+  generic_selector_rule: 4
+  koide_or_generation_selector: 129
+  measure_weight_normalization: 81
+  stability_or_dynamics_selector: 169
 
 [generic_selector_rule]
   gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_note_2026-04-20 | unaudited | unaudited | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_RHO1_LEAST_DISTORTION_SELECTOR_THEOREM_NOTE_2026-04-20.md
   hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18 | audited_clean | retained_bounded | bounded_theorem | docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md
+  s3_time_direct_consumer_readout_ambiguity_packet_note_2026-06-21 | unaudited | unaudited | bounded_theorem | docs/S3_TIME_DIRECT_CONSUMER_READOUT_AMBIGUITY_PACKET_NOTE_2026-06-21.md
   staggered_chirality_selector_enumerator_narrow_theorem_note_2026-06-06 | unaudited | unaudited | bounded_theorem | docs/STAGGERED_CHIRALITY_SELECTOR_ENUMERATOR_NARROW_THEOREM_NOTE_2026-06-06.md
 
 [koide_or_generation_selector]
-  axiom_first_cluster_decomposition_theorem_note_2026-04-29 | audited_clean | retained_bounded | bounded_theorem | docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md
+  axiom_first_cluster_decomposition_theorem_note_2026-04-29 | unaudited | unaudited | bounded_theorem | docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md
   bae_u1b_six_ray_dirac_measure_note_2026-05-17 | unaudited | unaudited | bounded_theorem | docs/BAE_U1B_SIX_RAY_DIRAC_MEASURE_NOTE_2026-05-17.md
   brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15 | audited_clean | retained_bounded | bounded_theorem | docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
   charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md
@@ -63,20 +64,20 @@ Selector/dial sub-bucket counts:
   alpha_bare_four_pi_from_z3_plancherel_bridge_bounded_note_2026-05-26 | unaudited | unaudited | bounded_theorem | docs/ALPHA_BARE_FOUR_PI_FROM_Z3_PLANCHEREL_BRIDGE_BOUNDED_NOTE_2026-05-26.md
   architecture_note_directional_measure | audited_numerical_match | audited_numerical_match | bounded_theorem | docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md
   born_scattering_comparison_note | unaudited | unaudited | bounded_theorem | docs/BORN_SCATTERING_COMPARISON_NOTE.md
-  busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
   centered_u1_fluctuation_law_record_mixture_structure_bounded_theorem_note_2026-06-11 | unaudited | unaudited | bounded_theorem | docs/CENTERED_U1_FLUCTUATION_LAW_RECORD_MIXTURE_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-06-11.md
   central_band_born_dense_sweep_note | audited_clean | retained_bounded | bounded_theorem | docs/CENTRAL_BAND_BORN_DENSE_SWEEP_NOTE.md
   closure_c_l1_per_graph_casimir_note_2026-05-10_cl1c | unaudited | unaudited | bounded_theorem | docs/CLOSURE_C_L1_PER_GRAPH_CASIMIR_NOTE_2026-05-10_cL1c.md
 
 [stability_or_dynamics_selector]
   a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1 | unaudited | unaudited | bounded_theorem | docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md
+  acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01 | unaudited | unaudited | bounded_theorem | docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md
   acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11 | unaudited | unaudited | bounded_theorem | docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md
-  acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11 | audited_conditional | audited_conditional | bounded_theorem | docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  acphilambda_pointer_labeled_refinement_finer_record_clock_2026-07-02 | unaudited | unaudited | bounded_theorem | docs/ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md
+  acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11 | unaudited | unaudited | bounded_theorem | docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18 | unaudited | unaudited | bounded_theorem | docs/ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md
+  action_family_character_semigroup_discriminator_bounded_note_2026-07-02 | unaudited | unaudited | bounded_theorem | docs/ACTION_FAMILY_CHARACTER_SEMIGROUP_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md
   arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md
-  axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26 | audited_clean | retained_bounded | bounded_theorem | docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md
-  bell_inequality_derived_note | audited_clean | retained_bounded | bounded_theorem | docs/BELL_INEQUALITY_DERIVED_NOTE.md
-  beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04 | unaudited | unaudited | bounded_theorem | docs/BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md
-  born_lane_comparison_note | audited_clean | retained_bounded | bounded_theorem | docs/BORN_LANE_COMPARISON_NOTE.md
 
 
 ------------------------------------------------------------------------------
@@ -90,11 +91,11 @@ PASS generation/Koide dial selected flag is false
 PASS Record-derived measure/prior flag is false
 
 SUMMARY: PASS=28 FAIL=0
-SELECTOR_DIAL_ROWS=346
-KOIDE_OR_GENERATION_SELECTOR_ROWS=125
-STABILITY_OR_DYNAMICS_SELECTOR_ROWS=147
-MEASURE_WEIGHT_NORMALIZATION_ROWS=71
-GENERIC_SELECTOR_RULE_ROWS=3
+SELECTOR_DIAL_ROWS=383
+KOIDE_OR_GENERATION_SELECTOR_ROWS=129
+STABILITY_OR_DYNAMICS_SELECTOR_ROWS=169
+MEASURE_WEIGHT_NORMALIZATION_ROWS=81
+GENERIC_SELECTOR_RULE_ROWS=4
 AUDIT_LEDGER_WRITTEN=FALSE
 STABLE_SETTING_SELECTS_DIAL=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE

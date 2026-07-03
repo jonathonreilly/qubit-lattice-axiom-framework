@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py
-runner_sha256: 98f86cc53413808010a5882f84483fdb1418c66574fd1a9d3a71e8b863ae0839
-timeout_sec: 120
+runner_sha256: 31cdaed1b271dc15e2485f4a6fe3fce9bc41c5d4b6c8bc1f293560f8f1635b01
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 1.16
+elapsed_sec: 1.54
 status: ok
 ----- stdout -----
 
@@ -25,7 +25,7 @@ PASS docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md contains: post-re
 PASS docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md contains: An oriented law, boundary condition, clock, or production kernel
 PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md exists
 PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: arrow_or_dynamics_bridge
-PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: Total: `90` stability/dynamics selector rows.
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: Total: `169` stability/dynamics selector rows.
 PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: stable setting is not selected dial
 PASS scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py exists
 PASS scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py contains: def stability_subbucket
@@ -35,9 +35,9 @@ PASS scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_0
 ------------------------------------------------------------------------------
 Arrow/dynamics row-bucket checks
 ------------------------------------------------------------------------------
-PASS stability/dynamics selector row count remains 90 :: 90
-PASS arrow/dynamics bridge row count remains 34 :: Counter({'flow_or_thermal_stability': 56, 'arrow_or_dynamics_bridge': 34})
-PASS flow/thermal stability row count remains 56 :: Counter({'flow_or_thermal_stability': 56, 'arrow_or_dynamics_bridge': 34})
+PASS stability/dynamics selector row count remains 169 :: 169
+PASS arrow/dynamics bridge row count remains 63 :: Counter({'flow_or_thermal_stability': 106, 'arrow_or_dynamics_bridge': 63})
+PASS flow/thermal stability row count remains 106 :: Counter({'flow_or_thermal_stability': 106, 'arrow_or_dynamics_bridge': 63})
 
 ------------------------------------------------------------------------------
 Example 1: signed transition drift
@@ -97,7 +97,7 @@ PASS selected dial derived from stability flag is false
 
 SUMMARY: PASS=64 FAIL=0
 SUPPLIED_DIRECTED_CERTIFICATE_EXAMPLES=TRUE
-ARROW_OR_DYNAMICS_BRIDGE_ROWS=34
+ARROW_OR_DYNAMICS_BRIDGE_ROWS=63
 PRE_RECORD_LAW_CARRIES_PROBABILITY=TRUE
 POST_RECORD_SITE_CARRIES_REALIZED_INFORMATION=TRUE
 DIRECTED_STATISTICS_REQUIRE_SUPPLIED_ORIENTATION=TRUE

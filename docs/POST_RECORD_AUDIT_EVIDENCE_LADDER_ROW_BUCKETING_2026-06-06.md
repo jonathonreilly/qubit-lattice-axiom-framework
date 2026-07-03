@@ -30,8 +30,8 @@ bounded/conditional-scope rows into evidence buckets:
 The purpose is triage. A row bucket says which missing evidence type should be
 reviewed next; it is not a status change.
 
-On the current ledger snapshot, the runner scans `1780` bounded/conditional
-scope rows and touches `410` rows in the post-record evidence ladder buckets.
+On the current ledger snapshot, the runner scans `1888` bounded/conditional
+scope rows and touches `450` rows in the post-record evidence ladder buckets.
 The prior Record typing map recorded `1304`; this branch treats the newer
 larger count as ledger drift and preserves read-only behavior.
 
@@ -40,12 +40,12 @@ larger count as ledger drift and preserves read-only behavior.
 | Bucket | Rows |
 |---|---:|
 | `append_count_ready` | 0 |
-| `finite_law_or_certificate_needed` | 11 |
-| `not_record_ladder_relevant` | 1370 |
+| `finite_law_or_certificate_needed` | 12 |
+| `not_record_ladder_relevant` | 1438 |
 | `production_dynamics_needed` | 6 |
 | `record_type_support_only` | 0 |
-| `selector_or_dial_needed` | 346 |
-| `simulation_support_only` | 47 |
+| `selector_or_dial_needed` | 383 |
+| `simulation_support_only` | 49 |
 
 ## Read-only contract
 

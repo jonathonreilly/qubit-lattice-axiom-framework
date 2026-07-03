@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py
-runner_sha256: d1ec5b16a71c549ca6a534bc3692fd3555a25b8a64f1bb3e83dfe82830b8b72c
-timeout_sec: 120
+runner_sha256: 377ce540fc52ed4628b4e8940d683799913667ac236013f4e25f0d958e2347ae
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 
@@ -81,8 +81,8 @@ PASS PR #2850 source note names primary runner :: scripts/frontier_post_record_d
 PASS PR #2850 runner source exists :: scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py
 PASS PR #2850 runner cache exists :: logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt
 PASS PR #2850 cache runner matches source :: scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py
-PASS PR #2850 cache SHA is fresh :: 98f86cc53413808010a5882f84483fdb1418c66574fd1a9d3a71e8b863ae0839
-PASS PR #2850 cache status ok :: {'runner': 'scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py', 'runner_sha256': '98f86cc53413808010a5882f84483fdb1418c66574fd1a9d3a71e8b863ae0839', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '1.16', 'status': 'ok'}
+PASS PR #2850 cache SHA is fresh :: 31cdaed1b271dc15e2485f4a6fe3fce9bc41c5d4b6c8bc1f293560f8f1635b01
+PASS PR #2850 cache status ok :: {'runner': 'scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py', 'runner_sha256': '31cdaed1b271dc15e2485f4a6fe3fce9bc41c5d4b6c8bc1f293560f8f1635b01', 'timeout_sec': '300', 'exit_code': '0', 'elapsed_sec': '1.54', 'status': 'ok'}
 PASS PR #2853 source note exists :: docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md
 PASS PR #2853 source note names status :: no-go
 PASS PR #2853 source note names primary runner :: scripts/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.py
@@ -121,16 +121,16 @@ PASS PR #2864 source note names primary runner :: scripts/frontier_post_record_d
 PASS PR #2864 runner source exists :: scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py
 PASS PR #2864 runner cache exists :: logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt
 PASS PR #2864 cache runner matches source :: scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py
-PASS PR #2864 cache SHA is fresh :: f5609cd17be31f1513ffc6ef4328e0fddb3869e4223796ae2db052abc9a00779
-PASS PR #2864 cache status ok :: {'runner': 'scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py', 'runner_sha256': 'f5609cd17be31f1513ffc6ef4328e0fddb3869e4223796ae2db052abc9a00779', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.04', 'status': 'ok'}
+PASS PR #2864 cache SHA is fresh :: 0e676f6cfbe05acadb8c4e7fc420cdac2734e878f4a9473de50e51ffc9b023d9
+PASS PR #2864 cache status ok :: {'runner': 'scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py', 'runner_sha256': '0e676f6cfbe05acadb8c4e7fc420cdac2734e878f4a9473de50e51ffc9b023d9', 'timeout_sec': '300', 'exit_code': '0', 'elapsed_sec': '0.05', 'status': 'ok'}
 PASS PR #2868 source note exists :: docs/POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md
 PASS PR #2868 source note names status :: exact-support
 PASS PR #2868 source note names primary runner :: scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py
 PASS PR #2868 runner source exists :: scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py
 PASS PR #2868 runner cache exists :: logs/runner-cache/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.txt
 PASS PR #2868 cache runner matches source :: scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py
-PASS PR #2868 cache SHA is fresh :: e18f1b244427549e1a783944efeb3753ddee88cd8d281840977df42c9c7d2c89
-PASS PR #2868 cache status ok :: {'runner': 'scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py', 'runner_sha256': 'e18f1b244427549e1a783944efeb3753ddee88cd8d281840977df42c9c7d2c89', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.08', 'status': 'ok'}
+PASS PR #2868 cache SHA is fresh :: b1484cc0f4edd1e9f7b7c84dc40fa197ff8ea2c46f78a538322d2e3ee3daef1b
+PASS PR #2868 cache status ok :: {'runner': 'scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py', 'runner_sha256': 'b1484cc0f4edd1e9f7b7c84dc40fa197ff8ea2c46f78a538322d2e3ee3daef1b', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.05', 'status': 'ok'}
 PASS PR #2871 source note exists :: docs/POST_RECORD_RETAINED_UNBOUNDED_DYNAMICS_GATE_2026-06-06.md
 PASS PR #2871 source note names status :: exact-support
 PASS PR #2871 source note names primary runner :: scripts/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.py
@@ -179,7 +179,7 @@ PASS sample-is-probability-law flag is absent
 PASS dial forced or selected flag is absent
 PASS finite-alone unbounded retained flag is absent
 PASS family lift derived from Record flag is absent
-PASS audit ledger hash is unchanged :: 6b9b3104d6313a9a35ab492b6f8f8c7d8c140e07d5f09ab92b5dd85999b29c19
+PASS audit ledger hash is unchanged :: 15efee196a7b3738ec370120bc338105f64b4c82d0b236c80b0c47b5d5b7b95f
 
 ------------------------------------------------------------------------------
 Source-packet export

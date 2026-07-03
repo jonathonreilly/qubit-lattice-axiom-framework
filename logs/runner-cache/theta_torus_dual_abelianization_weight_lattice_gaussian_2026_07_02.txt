@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/theta_torus_dual_abelianization_weight_lattice_gaussian_2026_07_02.py
+runner_sha256: 75afc8a06cdf3404ef7812a9d01c4d34ce0a3496354b39318c351b33e8b87689
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+Section A: SU(2) torus dual
+  [PASS] A1 SU(2) HK dual: c_0 = 0 (regular lattice only); c_n = A n e^{-t n^2/4} on every n in [1,28] after fixing A at n=1
+  [PASS] A2 SU(2) HK dual: Weyl anti-invariance c_(-n) = -c_n
+  [PASS] A3 SU(2) Wilson member: same support structure (c_0 = 0, all n != 0 populated) and anti-invariance
+  [PASS] A4 center-even (integer-spin) restriction populates only the odd-mu coset: the block-1 Z_2 grading is the coset shadow of the dual lattice
+Section B: position-side branch sum
+  [PASS] B1 full-lattice Poisson image identity: the dual Gaussian equals the 2 pi k branch/winding image sum exactly
+Section C: SU(3) torus dual on the shifted weight lattice
+  [PASS] C1 offset grid is degeneracy-free (eigenvalues never collide)
+         min separation = 0.0262
+  [PASS] C2 dressed weight is finite on the whole grid (no degeneracy leak)
+  [PASS] C3 window modes match the signed d_R e^{-t C2} table on the shifted weight orbit lattice (parameter-free)
+         modes checked = 841, nonzero = 372
+  [PASS] C4 full Weyl anti-invariance of the dual table: PRED(w m) = sgn(w) PRED(m) for all six w in W
+  [PASS] C5 non-regular lines (n1 = n2, n1 = 0, n2 = 0) carry zero: support is the REGULAR shifted lattice
+  [PASS] C6 all three triality cosets of the dual lattice are populated (block-1 Z_3 grading = the coset shadow)
+Section D: gluing stability
+  [PASS] D1 heat-kernel member is the exact gluing fixed class: c_R(t1) c_R(t2)/d_R = c_R(t1+t2)
+  [PASS] D2 dual support cannot grow under gluing (pointwise coefficient products: zero stays zero)
+  [PASS] D3 Wilson member (beta=6, fresh Weyl quadrature) is NOT form-stable: tau_R/C2 ratios are not constant
+         ratios = (1, 0):0.3231, (1, 1):0.3031, (2, 0):0.2993
+Section E: Weyl-shift obstruction
+  [PASS] E1 su(2): the W-average of the Cartan action is 0 (fixed subspace zero)
+  [PASS] E2 su(3): the W-average restricted to the Cartan (sum-zero subspace) is exactly 0 — no W-fixed direction exists
+         norm = 9.80e-33
+  [PASS] E3 every tested nonzero lattice shift of the SU(3) dual table (including diagonal shifts) breaks full-W anti-invariance: the U(1)-template label-shift theta slot does not lift to the nonabelian torus dual
+  [PASS] F1 note declares canonical claim type
+  [PASS] F2 legacy source status labels absent
+  [PASS] F3 source-side audit status fields absent
+  [PASS] F4 primary runner is markdown-linked
+  [PASS] F5 cache is markdown-linked under logs
+  [PASS] F6 load-bearing markdown dependencies are exact
+  [PASS] F7 stale in-flight wording absent
+  [PASS] F8 historical PR #4768 is not a dependency
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

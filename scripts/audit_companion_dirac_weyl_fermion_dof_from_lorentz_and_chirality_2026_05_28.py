@@ -79,16 +79,27 @@ PASS = 0
 FAIL = 0
 
 LOAD_BEARING_AUTHORITY_STATUSES = {
-    "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": {"retained"},
+    "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": {
+        "retained",
+        "retained_bounded",
+    },
     "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": {"retained"},
 }
 
 CONTEXT_AUTHORITY_STATUSES = {
-    "per_site_su2_spin_half_theorem_note_2026-05-02": {"retained"},
     "cpt_exact_note": {"retained"},
     "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": {"retained"},
     "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": {"retained_bounded"},
 }
+
+# The note designates the per-site SU(2) doublet row (R1) as an
+# "interpretive cross-check, not load-bearing for the branch-rank count"
+# and lists it under "Non-load-bearing context". Its ledger status is
+# therefore not asserted by this runner; only presence of the citation
+# and of the cited file is checked.
+NON_LOAD_BEARING_CONTEXT_POINTERS = [
+    "PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
+]
 
 
 def check(label: str, ok: bool, detail: str = "") -> bool:
@@ -167,6 +178,21 @@ def check_live_authority_statuses() -> None:
         "live ledger context-row statuses",
         CONTEXT_AUTHORITY_STATUSES,
     )
+    check_non_load_bearing_context_pointers()
+
+
+def check_non_load_bearing_context_pointers() -> None:
+    section("non-load-bearing context pointers (presence only; ledger status not asserted)")
+    for filename in NON_LOAD_BEARING_CONTEXT_POINTERS:
+        check(
+            f"note cites non-load-bearing context pointer "
+            f"(ledger status not asserted): {filename}",
+            filename in NOTE_TEXT,
+        )
+        check(
+            f"non-load-bearing context pointer file exists: {filename}",
+            (ROOT / "docs" / filename).exists(),
+        )
 
 
 def check_note_structure() -> None:

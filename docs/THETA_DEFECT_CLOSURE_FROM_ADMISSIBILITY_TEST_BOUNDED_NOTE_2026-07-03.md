@@ -1,10 +1,19 @@
 # Theta Defect Closure From Admissibility Test: Nearest-Neighbor Availability Does Not Force `dn = 0` on the Parent `T^4_2` Branch Complex
 
 **Date:** 2026-07-03
-**Claim type:** no_go-style sharpened wall, bounded to the finite encoding
-tested below.
+**Type:** no_go
+**Claim type:** no_go (scoped to finite `T^4_2` Encoding E1; broader
+Admissibility encodings and the physical `SU(3)` surface remain open)
 **Primary runner:**
 [`scripts/frontier_theta_defect_closure_admissibility_2026_07_03.py`](../scripts/frontier_theta_defect_closure_admissibility_2026_07_03.py)
+
+## Dependencies
+
+- [`THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md`](THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md)
+  supplies the parent branch complex, defect boundary, Theorem 4.1, and N6
+  open-question boundary tested here.
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies the
+  Admissibility sentence used for Encoding E1.
 
 ## Question
 

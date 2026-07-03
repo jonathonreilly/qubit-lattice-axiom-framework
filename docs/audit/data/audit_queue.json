@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 416,
+    "critical": 415,
     "high": 292,
     "leaf": 742,
     "medium": 524
@@ -341,31 +341,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
-      "claim_scope": "Bounded finite positive-diagonal classifier: supplied continuous source-block additive readout families decompose as one-site sums; determinant-only readout across dimensions is exactly the logarithmic quotient; an added dimension constant requires dimension as separate data; the source-to-record disjointness bridge remains separate.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms",
-        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.235,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py",
-      "transitive_descendants": 1204
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -58252,6 +58227,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 149,
-  "total_pending": 1974
+  "ready_count": 148,
+  "total_pending": 1973
 }

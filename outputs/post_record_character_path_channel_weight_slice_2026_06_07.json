@@ -1,11 +1,11 @@
 {
   "bucket": "character_path_channel_weight",
-  "generated_on": "2026-06-07",
+  "generated_on": "2026-07-02",
   "ledger_path": "docs/audit/data/audit_ledger.json",
-  "ledger_sha256": "4b31e8573fb839a0606465ae08ae61bdbdfef55cbd88ccf7ecf5d2f7336a8679",
+  "ledger_sha256": "15efee196a7b3738ec370120bc338105f64b4c82d0b236c80b0c47b5d5b7b95f",
   "ledger_sha256_unchanged": true,
   "measure_runner": "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
-  "row_count": 10,
+  "row_count": 21,
   "row_fields": [
     "claim_id",
     "audit_status",
@@ -17,94 +17,193 @@
   ],
   "rows": [
     {
-      "audit_status": "audited_numerical_match",
+      "claim_id": "action_form_no_go_equivalence_premise_continuum_removal_scoped_relocation_note_2026-06-08",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/ACTION_FORM_NO_GO_EQUIVALENCE_PREMISE_CONTINUUM_REMOVAL_SCOPED_RELOCATION_NOTE_2026-06-08.md",
+      "runner_path": "scripts/frontier_action_form_continuum_removal_scoping_2026_06_08.py",
+      "measure_lane": "character_path_channel_weight"
+    },
+    {
       "claim_id": "architecture_note_directional_measure",
-      "claim_type": "bounded_theorem",
+      "audit_status": "audited_numerical_match",
       "effective_status": "audited_numerical_match",
-      "measure_lane": "character_path_channel_weight",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md",
-      "runner_path": "scripts/architecture_directional_measure_table_runner_2026_05_03.py"
+      "runner_path": "scripts/architecture_directional_measure_table_runner_2026_05_03.py",
+      "measure_lane": "character_path_channel_weight"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "closure_c_l1_per_graph_casimir_note_2026-05-10_cl1c",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
-      "measure_lane": "character_path_channel_weight",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/CLOSURE_C_L1_PER_GRAPH_CASIMIR_NOTE_2026-05-10_cL1c.md",
-      "runner_path": "scripts/cl3_closure_c_l1c_2026_05_10_cL1c.py"
+      "runner_path": "scripts/cl3_closure_c_l1c_2026_05_10_cL1c.py",
+      "measure_lane": "character_path_channel_weight"
     },
     {
-      "audit_status": "audited_clean",
       "claim_id": "continuum_limit_note",
-      "claim_type": "bounded_theorem",
-      "effective_status": "retained_bounded",
-      "measure_lane": "character_path_channel_weight",
-      "note_path": "docs/CONTINUUM_LIMIT_NOTE.md",
-      "runner_path": "scripts/lattice_h2_T_numpy_continuum.py"
-    },
-    {
       "audit_status": "audited_clean",
-      "claim_id": "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
-      "claim_type": "bounded_theorem",
       "effective_status": "retained_bounded",
-      "measure_lane": "character_path_channel_weight",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/CONTINUUM_LIMIT_NOTE.md",
+      "runner_path": "scripts/lattice_h2_T_numpy_continuum.py",
+      "measure_lane": "character_path_channel_weight"
+    },
+    {
+      "claim_id": "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md",
-      "runner_path": "scripts/frontier_dm_full_closure_64_to_1_channel_weight_bridge_narrow_verifier.py"
+      "runner_path": "scripts/frontier_dm_full_closure_64_to_1_channel_weight_bridge_narrow_verifier.py",
+      "measure_lane": "character_path_channel_weight"
     },
     {
-      "audit_status": "audited_conditional",
       "claim_id": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
-      "claim_type": "positive_theorem",
-      "effective_status": "audited_conditional",
-      "measure_lane": "character_path_channel_weight",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "runner_path": "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py"
+      "runner_path": "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py",
+      "measure_lane": "character_path_channel_weight"
     },
     {
+      "claim_id": "gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12",
       "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_RIM_BOUNDARY_ETA_ENV_CONSTRUCTED_READOUT_BOUNDED_NOTE_2026-06-12.md",
+      "runner_path": "scripts/gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_2026_06_12.py",
+      "measure_lane": "character_path_channel_weight"
+    },
+    {
+      "claim_id": "gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md",
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow.py",
+      "measure_lane": "character_path_channel_weight"
+    },
+    {
+      "claim_id": "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md",
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py",
+      "measure_lane": "character_path_channel_weight"
+    },
+    {
+      "claim_id": "gauge_vacuum_plaquette_two_strip_environment_rho_composed_readout_bounded_note_2026-06-12",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_TWO_STRIP_ENVIRONMENT_RHO_COMPOSED_READOUT_BOUNDED_NOTE_2026-06-12.md",
+      "runner_path": "scripts/gauge_vacuum_plaquette_two_strip_environment_rho_composed_readout_bounded_2026_06_12.py",
+      "measure_lane": "character_path_channel_weight"
+    },
+    {
       "claim_id": "hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
-      "measure_lane": "character_path_channel_weight",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/HIERARCHY_ALPHA_BARE_FOUR_PI_CONTINUUM_MEASURE_CONTENT_ATTRIBUTION_BOUNDED_NOTE_2026-05-26.md",
-      "runner_path": "scripts/frontier_hierarchy_alpha_bare_four_pi_content_attribution.py"
+      "runner_path": "scripts/frontier_hierarchy_alpha_bare_four_pi_content_attribution.py",
+      "measure_lane": "character_path_channel_weight"
     },
     {
-      "audit_status": "audited_conditional",
       "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
       "claim_type": "bounded_theorem",
-      "effective_status": "audited_conditional",
-      "measure_lane": "character_path_channel_weight",
       "note_path": "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md",
-      "runner_path": "scripts/frontier_koide_aps_block_by_block_forcing.py"
+      "runner_path": "scripts/frontier_koide_aps_block_by_block_forcing.py",
+      "measure_lane": "character_path_channel_weight"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
-      "measure_lane": "character_path_channel_weight",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_S_L1_TOPOLOGICAL_CHERN_SIMONS_NOTE_2026-05-08_probeS_L1_topological.md",
-      "runner_path": "scripts/cl3_koide_s_L1_topological_2026_05_08_probeS_L1_topological.py"
+      "runner_path": "scripts/cl3_koide_s_L1_topological_2026_05_08_probeS_L1_topological.py",
+      "measure_lane": "character_path_channel_weight"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_v_l1_quartic_casimir_beta2_note_2026-05-08_probev_l1_quartic",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
-      "measure_lane": "character_path_channel_weight",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_V_L1_QUARTIC_CASIMIR_BETA2_NOTE_2026-05-08_probeV_L1_quartic.md",
-      "runner_path": "scripts/cl3_koide_v_L1_quartic_2026_05_08_probeV_L1_quartic.py"
+      "runner_path": "scripts/cl3_koide_v_L1_quartic_2026_05_08_probeV_L1_quartic.py",
+      "measure_lane": "character_path_channel_weight"
     },
     {
+      "claim_id": "native_gauge_transfer_outside_weight_tail_rung_fourteen_bounded_note_2026-06-12",
       "audit_status": "unaudited",
-      "claim_id": "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
-      "measure_lane": "character_path_channel_weight",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/NATIVE_GAUGE_TRANSFER_OUTSIDE_WEIGHT_TAIL_RUNG_FOURTEEN_BOUNDED_NOTE_2026-06-12.md",
+      "runner_path": "scripts/native_gauge_transfer_outside_weight_tail_rung_fourteen_bounded_2026_06_12.py",
+      "measure_lane": "character_path_channel_weight"
+    },
+    {
+      "claim_id": "quark_route2_e_center_lift_measured_calibration_narrow_theorem_note_2026-06-10",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md",
+      "runner_path": "scripts/frontier_quark_route2_e_center_lift_measured_calibration_2026_06_10.py",
+      "measure_lane": "character_path_channel_weight"
+    },
+    {
+      "claim_id": "r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/R3_GEOMETRIC_REGGE_LINEARIZATION_GIVES_HEALTHY_LAMBDA1_GRAVITON_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "runner_path": "scripts/r3_regge_linearization_lambda1_healthy_graviton_2026_06_08.py",
+      "measure_lane": "character_path_channel_weight"
+    },
+    {
+      "claim_id": "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
+      "runner_path": "scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py",
+      "measure_lane": "character_path_channel_weight"
+    },
+    {
+      "claim_id": "theta_gauge_substrate_no_winding_carrier_emergent_q_bridge_bounded_theorem_note_2026-06-11",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/THETA_GAUGE_SUBSTRATE_NO_WINDING_CARRIER_EMERGENT_Q_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+      "runner_path": "scripts/frontier_theta_gauge_substrate_winding_vacuity_2026_06_11.py",
+      "measure_lane": "character_path_channel_weight"
+    },
+    {
+      "claim_id": "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md",
-      "runner_path": "scripts/frontier_wilson_action_surface_selector_real_positive_2026_05_25.py"
+      "runner_path": "scripts/frontier_wilson_action_surface_selector_real_positive_2026_05_25.py",
+      "measure_lane": "character_path_channel_weight"
+    },
+    {
+      "claim_id": "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/WILSON_EXTREMUM_CURVATURE_READOUT_BOUNDARY_CERTIFICATE_2026-06-15.md",
+      "runner_path": "scripts/wilson_extremum_curvature_readout_boundary_2026_06_15.py",
+      "measure_lane": "character_path_channel_weight"
     }
   ],
   "source_runner": "scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py"

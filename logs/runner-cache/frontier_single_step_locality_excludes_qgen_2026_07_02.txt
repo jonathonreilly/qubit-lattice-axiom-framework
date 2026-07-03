@@ -1,0 +1,14 @@
+===== runner cache v1 =====
+runner: scripts/frontier_single_step_locality_excludes_qgen_2026_07_02.py
+runner_sha256: 2ac8521762728d6a2674f5a96a1a1188e43bb66485c59683c4d24fa5a51f1f58
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+SUMMARY PASS=62 FAIL=0 TOTAL=62
+SUMMARY T2_full_ZN_signs=N5:+-;N7:+-+;N8:+-+-;N9:+-+-;N12:+-+-+-; positive_full_step_cases=none
+SUMMARY status=PASS T1_U1_bound_witnesses=n=3,4,8,16 T3_deficit=4*sin(pi/N)^2 for N=3..12
+
+----- stderr -----
+

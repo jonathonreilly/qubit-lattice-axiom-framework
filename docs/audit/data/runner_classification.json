@@ -20412,6 +20412,18 @@
       "dominant_class": "A",
       "runner": "scripts/koide_signed_readout_is_not_chirality.py"
     },
+    "koide_slot_freedom_classification_under_conjugation_reading_bounded_note_2026-07-03": {
+      "assert_count": 2,
+      "counts": {
+        "A": 10,
+        "B": 10,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_koide_slot_freedom_classification_2026_07_03.py"
+    },
     "koide_sqrtm_amplitude_principle_note_2026-04-18": {
       "assert_count": 1,
       "counts": {
@@ -65456,6 +65468,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_koide_slot_freedom_classification_2026_07_03.py": {
+      "assert_count": 2,
+      "claims": [
+        "koide_slot_freedom_classification_under_conjugation_reading_bounded_note_2026-07-03"
+      ],
+      "counts": {
+        "A": 10,
+        "B": 10,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_koide_sqrtm_amplitude_principle.py": {
       "assert_count": 1,
       "claims": [
@@ -90707,15 +90734,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 692,
+    "decoration_candidates": 693,
     "dominant_class_distribution": {
-      "A": 489,
+      "A": 490,
       "B": 635,
       "C": 1272,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3303,
+    "runners_classified": 3304,
     "runners_with_C": 1729,
     "runners_with_D": 1061
   }

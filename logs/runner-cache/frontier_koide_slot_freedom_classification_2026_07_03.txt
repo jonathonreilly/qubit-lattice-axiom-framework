@@ -1,0 +1,110 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_slot_freedom_classification_2026_07_03.py
+runner_sha256: 73de2820acdedda36c2029d7dc641bfb70725d26fc0869f5e85ba1dbf780f99c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+CHECK 01: PASS -- live w classification-method quote is present
+CHECK 02: PASS -- note quotes the w classification-method sentence
+CHECK 03: PASS -- live custody r-consumption lever quote is present
+CHECK 04: PASS -- note quotes the custody r-consumption lever
+CHECK 05: PASS -- live staggered first-power sentence is present
+CHECK 06: PASS -- note quotes the staggered first-power sentence
+CHECK 07: PASS -- live staggered K-real-line localization sentence is present
+CHECK 08: PASS -- note quotes the K-real-line localization sentence
+CHECK 09: PASS -- live staggered parameter-restriction sentence is present
+CHECK 10: PASS -- note quotes the parameter-restriction sentence
+CHECK 11: PASS -- live staggered horn-neutrality quote present: the fork relocated, not resolved
+CHECK 12: PASS -- note quotes horn-neutrality sentence: the fork relocated, not resolved
+CHECK 13: PASS -- live staggered horn-neutrality quote present: What remains is not a measure-order question at all.
+CHECK 14: PASS -- note quotes horn-neutrality sentence: What remains is not a measure-order question at all.
+CHECK 15: PASS -- live staggered horn-neutrality quote present: Neither horn is derived here
+CHECK 16: PASS -- note quotes horn-neutrality sentence: Neither horn is derived here
+CHECK 17: PASS -- live factorization premise quote present: P-transport
+CHECK 18: PASS -- note quotes factorization premise: P-transport
+CHECK 19: PASS -- live factorization premise quote present: P-phase
+CHECK 20: PASS -- note quotes factorization premise: P-phase
+CHECK 21: PASS -- live factorization premise quote present: P-occupancy
+CHECK 22: PASS -- note quotes factorization premise: P-occupancy
+CHECK 23: PASS -- w inventory contains EW shape `g1^2/(g1^2+g2^2)`
+CHECK 24: PASS -- w inventory contains Koide-shape witness
+CHECK 25: PASS -- w inventory contains mass ratios
+CHECK 26: PASS -- w inventory contains absolute mass scale
+CHECK 27: PASS -- w inventory contains `8/9` central-sector count
+CHECK 28: PASS -- note classifies sin^2 theta_W
+CHECK 29: PASS -- note classifies Koide-shape witness
+CHECK 30: PASS -- note classifies Mass ratios
+CHECK 31: PASS -- note classifies Calibrated absolute mass vector
+CHECK 32: PASS -- note classifies `8/9` central-sector count
+CHECK 33: PASS -- note classifies theta mass-side composition
+CHECK 34: PASS -- exact lever gives Q(1) = 1
+CHECK 35: PASS -- exact lever gives Q(1/2) = 2/3
+CHECK 36: PASS -- exact slot difference is 1/3
+CHECK 37: PASS -- exact slot ratio is 3/2
+CHECK 38: PASS -- lever equals (1+2r)/3 at r=1
+CHECK 39: PASS -- lever equals (1+2r)/3 at r=1/2
+CHECK 40: PASS -- small det3 model on K-real section has two real-coordinate |b|^2 Hessian
+CHECK 41: PASS -- horn-neutrality exhibit computes Z weights 2*pi/g and pi/g
+CHECK 42: PASS -- horn-neutrality exhibit gives exact Z_K-real/Z_orbit = 2
+CHECK 43: PASS -- K-real-section reading gives r = 1
+CHECK 44: PASS -- conjugate-orbit-quotient reading gives r = 1/2
+CHECK 45: PASS -- same lever gives Q = 1 and Q = 2/3 for the two readings
+CHECK 46: PASS -- note identifies the same det^1 object for both readings
+CHECK 47: PASS -- note gives exact mass-ratio expression at r=1
+CHECK 48: PASS -- note gives exact mass-ratio expression at r=1/2
+CHECK 49: PASS -- note gives exact calibrated-vector expression at r=1
+CHECK 50: PASS -- note gives exact calibrated-vector expression at r=1/2
+CHECK 51: PASS -- note uses required SLOT-ALIVE classification
+CHECK 52: PASS -- note uses required SLOT-DEAD classification
+CHECK 53: PASS -- SLOT-ALIVE readout listed: Koide-shape witness
+CHECK 54: PASS -- SLOT-ALIVE readout listed: mass ratios
+CHECK 55: PASS -- SLOT-ALIVE readout listed: calibrated absolute mass vector
+CHECK 56: PASS -- SLOT-DEAD readout fixed: sin^2 theta_W
+CHECK 57: PASS -- SLOT-DEAD readout fixed: `8/9` central-sector count
+CHECK 58: PASS -- Koide Q is exactly invariant under common mass rescaling
+CHECK 59: PASS -- rescaling cannot identify Q(1) and Q(1/2)
+CHECK 60: PASS -- note states non-absorbability as a scale verdict
+CHECK 61: PASS -- note states the ratio readout still sees the slot bit
+CHECK 62: PASS -- staggered source says the measure side is first-order
+CHECK 63: PASS -- staggered source contains one-slot-per-K-orbit cell
+CHECK 64: PASS -- staggered source states residual no occupancy rule adopted
+CHECK 65: PASS -- staggered source states probe-coupling residual
+CHECK 66: PASS -- static no-go source states Record supplies no weighting rule
+CHECK 67: PASS -- static no-go source prunes the Record-orbit route
+CHECK 68: PASS -- note declares canonical open_gate Type header
+CHECK 69: PASS -- note retitles the discharge test as refuted
+CHECK 70: PASS -- note states refutation provenance
+CHECK 71: PASS -- note states horn-neutrality
+CHECK 72: PASS -- note states K-reality is re-consumed rather than discharged
+CHECK 73: PASS -- note inherits the probe-coupling residual
+CHECK 74: PASS -- decision surface says hypothetical conjugation buys individuation only in the modeled stack
+CHECK 75: PASS -- decision surface preserves one weighting bit
+CHECK 76: PASS -- decision surface names the remaining weighting bit
+CHECK 77: PASS -- decision surface scopes slot-alive language to listed current-source readouts
+CHECK 78: PASS -- decision surface gives owner option (a)
+CHECK 79: PASS -- decision surface names the hostile no-privilege precedent
+CHECK 80: PASS -- decision surface states the weak intent-defense precedent
+CHECK 81: PASS -- decision surface gives owner option (b)
+CHECK 82: PASS -- decision surface narrows the admission content under hypothetical H-conj
+CHECK 83: PASS -- decision surface does not assert a third route
+CHECK 84: PASS -- decision surface scopes the route result to cited sources
+CHECK 85: PASS -- decision surface names the three tested derivation attempts
+CHECK 86: PASS -- note mentions H-conj
+CHECK 87: PASS -- every H-conj line marks it as hypothetical
+CHECK 88: PASS -- note says the hypothetical is not landed
+CHECK 89: PASS -- note has no bare retained/verified tokens
+CHECK 90: PASS -- note has no bare status token
+CHECK 91: PASS -- orbit source contains sector-slot arithmetic
+CHECK 92: PASS -- orbit source contains orbit-slot arithmetic
+CHECK 93: PASS -- orbit source contains exact occupancy factor
+TOTAL: PASS=93 FAIL=0
+SUMMARY files/checks: docs/KOIDE_SLOT_FREEDOM_CLASSIFICATION_UNDER_CONJUGATION_READING_BOUNDED_NOTE_2026-07-03.md; scripts/frontier_koide_slot_freedom_classification_2026_07_03.py; checks=93 PASS=93 FAIL=0
+SUMMARY horn-neutrality: same det^1; K-real Z=2*pi/g, r=1, Q=1; orbit Z=pi/g, r=1/2, Q=2/3; ratio=2
+SUMMARY owner option A: add a one-slot weighting axiom sentence; intent defense is weak under the No-possibility hostile precedent
+SUMMARY owner option B: keep the bit as flavor admission content: one weighting bit plus transport under hypothetical H-conj
+SUMMARY uncertainties: physical horn and declared probe coupling remain; no derivation route remains from measure-neutrality, individuation, or measure-order
+
+----- stderr -----
+

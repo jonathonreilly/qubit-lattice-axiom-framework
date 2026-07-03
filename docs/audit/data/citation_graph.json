@@ -24749,6 +24749,34 @@
       "to": "koide_readout_lane_demarcation_note_2026-05-30"
     },
     {
+      "from": "koide_slot_freedom_classification_under_conjugation_reading_bounded_note_2026-07-03",
+      "to": "w_scale_absorption_two_cell_readout_classification_bounded_note_2026-07-02"
+    },
+    {
+      "from": "koide_slot_freedom_classification_under_conjugation_reading_bounded_note_2026-07-03",
+      "to": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
+    },
+    {
+      "from": "koide_slot_freedom_classification_under_conjugation_reading_bounded_note_2026-07-03",
+      "to": "koide_staggered_first_order_generation_determinant_bounded_theorem_note_2026-06-11"
+    },
+    {
+      "from": "koide_slot_freedom_classification_under_conjugation_reading_bounded_note_2026-07-03",
+      "to": "koide_occupancy_derived_from_possibility_individuation_bounded_note_2026-07-03"
+    },
+    {
+      "from": "koide_slot_freedom_classification_under_conjugation_reading_bounded_note_2026-07-03",
+      "to": "koide_r_half_polarization_selector_tested_static_readout_no_go_note_2026-06-08"
+    },
+    {
+      "from": "koide_slot_freedom_classification_under_conjugation_reading_bounded_note_2026-07-03",
+      "to": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09"
+    },
+    {
+      "from": "koide_slot_freedom_classification_under_conjugation_reading_bounded_note_2026-07-03",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "koide_sqrtm_amplitude_principle_note_2026-04-18",
       "to": "koide_positive_parent_axis_obstruction_note_2026-04-18"
     },
@@ -90175,6 +90203,26 @@
       "runner_path": "scripts/koide_signed_readout_is_not_chirality.py",
       "title": "Koide: the Brannen/det_R Signed-Eigenvalue Q=2/3 Readout Is Not the Chiral Grading - Narrow No-Go"
     },
+    "koide_slot_freedom_classification_under_conjugation_reading_bounded_note_2026-07-03": {
+      "claim_id": "koide_slot_freedom_classification_under_conjugation_reading_bounded_note_2026-07-03",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate (bounded classification conditional on hypothetical H-conj; the remaining slot-weighting decision is not discharged here).",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [
+        "w_scale_absorption_two_cell_readout_classification_bounded_note_2026-07-02",
+        "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+        "koide_staggered_first_order_generation_determinant_bounded_theorem_note_2026-06-11",
+        "koide_occupancy_derived_from_possibility_individuation_bounded_note_2026-07-03",
+        "koide_r_half_polarization_selector_tested_static_readout_no_go_note_2026-06-08",
+        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "e30911325ce78534997961bec52347c021a57caac6557858d3c5280762c986f6",
+      "path": "docs/KOIDE_SLOT_FREEDOM_CLASSIFICATION_UNDER_CONJUGATION_READING_BOUNDED_NOTE_2026-07-03.md",
+      "runner_path": "scripts/frontier_koide_slot_freedom_classification_2026_07_03.py",
+      "title": "Slot-Freedom Classification Under The Hypothetical Conjugation Reading"
+    },
     "koide_sqrtm_amplitude_principle_note_2026-04-18": {
       "claim_id": "koide_sqrtm_amplitude_principle_note_2026-04-18",
       "claim_type_author_hint": null,
@@ -109370,7 +109418,7 @@
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d2e942ed7d4a720a65925cc1a0b8ccc0c737b0ba2bd480c2df21914c5e7578de",
+      "note_hash": "aa23ba45c2100fbf414ab6a13611ff13fd197261f814f902bcf95f1945fcb1c1",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -125364,7 +125412,7 @@
       "meta": 293,
       "no_go": 283,
       "none": 1426,
-      "open_gate": 120,
+      "open_gate": 121,
       "positive_theorem": 195
     },
     "claim_type_seed_hint_counts": {
@@ -125373,13 +125421,13 @@
       "meta": 293,
       "no_go": 387,
       "none": 458,
-      "open_gate": 194,
+      "open_gate": 195,
       "positive_theorem": 580
     },
-    "edge_count": 14294,
-    "leaf_count": 1282,
-    "node_count": 3809,
+    "edge_count": 14301,
+    "leaf_count": 1281,
+    "node_count": 3810,
     "root_count": 1098,
-    "runners_with_path": 3437
+    "runners_with_path": 3438
   }
 }

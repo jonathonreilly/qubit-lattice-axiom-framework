@@ -1,7 +1,8 @@
 # Slot-Freedom Classification Under The Hypothetical Conjugation Reading
 
 **Date:** 2026-07-03
-**Claim type:** bounded classification, conditional on hypothetical H-conj.
+**Type:** open_gate
+**Claim type:** open_gate (bounded classification conditional on hypothetical H-conj; the remaining slot-weighting decision is not discharged here).
 **Audit boundary:** audit lane owns any formal verdict; this note records only
 the repaired classification wording.
 **Primary runner:** [`scripts/frontier_koide_slot_freedom_classification_2026_07_03.py`](../scripts/frontier_koide_slot_freedom_classification_2026_07_03.py)
@@ -20,19 +21,25 @@ per possibility gives `r = 1/2`, while one slot per real coordinate gives
 
 ## Source Anchors
 
-The w template supplies the inventory method:
+The w template
+([`W_SCALE_ABSORPTION_TWO_CELL_READOUT_CLASSIFICATION_BOUNDED_NOTE_2026-07-02.md`](W_SCALE_ABSORPTION_TWO_CELL_READOUT_CLASSIFICATION_BOUNDED_NOTE_2026-07-02.md))
+supplies the inventory method:
 
 ```text
 Each row is classified only under its stated premise:
 ```
 
-The custody chain supplies the exact lever:
+The custody chain
+([`CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`](CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md))
+supplies the exact lever:
 
 ```text
 exact `Q = 1/3 + (2/3)r`, `r=\|b\|²/a²`
 ```
 
-The staggered realization note supplies the measure-order fact:
+The staggered realization note
+([`KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md`](KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md))
+supplies the measure-order fact:
 
 ```text
 the partition function is `det(D + A)` to the
@@ -56,7 +63,9 @@ What remains is not a measure-order question at all.
 Neither horn is derived here
 ```
 
-The factorization source names the three premises:
+The factorization source
+([`KOIDE_OCCUPANCY_DERIVED_FROM_POSSIBILITY_INDIVIDUATION_BOUNDED_NOTE_2026-07-03.md`](KOIDE_OCCUPANCY_DERIVED_FROM_POSSIBILITY_INDIVIDUATION_BOUNDED_NOTE_2026-07-03.md))
+names the three premises:
 
 ```text
 P-transport: the one-site individuation discipline transports to the derived generation doublet.
@@ -153,35 +162,46 @@ source residual about the declared probe coupling is also inherited whenever
 the question is expanded from slot counting to a full generation-Yukawa
 derivation.
 
+The static no-go source
+([`KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md`](KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md))
+and the orbit-occupancy source
+([`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md))
+are used only for the quoted negative-boundary and arithmetic checks exercised
+by the runner. The current axiom context is
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md); this note does
+not modify it.
+
 ## Decision Surface
 
-The conjugation clause buys individuation only. One bit of genuine physical
-input remains: per-possibility versus per-real-coordinate weighting of the
-realized measure.
+In this modeled hypothetical H-conj stack, the conjugation clause buys
+individuation only. One bit of genuine physical input remains:
+per-possibility versus per-real-coordinate weighting of the realized measure.
 
-That bit is alive exactly on the flavor readouts classified above. The Koide
-shape changes from `Q = 1` under the per-real-coordinate reading to `Q = 2/3`
-under the per-possibility reading. Mass ratios and calibrated absolute mass
-vectors inherit the same `r` dependence. The EW shape formula and the `8/9`
-central-sector count do not consume this bit.
+Among the listed current-source readouts, that bit is alive on the flavor
+readouts classified above. The Koide shape changes from `Q = 1` under the
+per-real-coordinate reading to `Q = 2/3` under the per-possibility reading.
+Mass ratios and calibrated absolute mass vectors inherit the same `r`
+dependence. The EW shape formula and the `8/9` central-sector count do not
+consume this bit.
 
 Nothing in Part 2 absorbs the bit. A common mass rescaling leaves `Q`
 unchanged, so the exact ratio readout still separates the two readings.
 
-The owner-facing options are exactly two.
+Within this lane model, two owner-facing options remain.
 
 Option (a): add a new axiom sentence supplying the one-slot weighting. Its
-intent defense is weak: the prior five-seat panel on "No possibility is
-privileged" ruled that sentence does not name a weighting, and that is a
-hostile precedent for this route.
+intent defense is weak: the static no-go source treats "No possibility is
+privileged" as not naming a weighting, and that is a hostile precedent for
+this route.
 
 Option (b): keep the bit as the flavor admission's remaining sharply
 factorized content. Under hypothetical H-conj, the admission's piece narrows to
 this one bit plus the transport statement.
 
-There is no third route in this lane. Three refutation passes have closed the
-derivation attempts from measure-neutrality, individuation, and measure-order:
-June 8 static, July 3 individuation, and July 3 discharge.
+This note does not supply a third route in this lane. The three tested
+derivation attempts from measure-neutrality, individuation, and measure-order
+remain non-discharging in the cited sources: June 8 static, July 3
+individuation, and July 3 discharge.
 
 ## Runner
 

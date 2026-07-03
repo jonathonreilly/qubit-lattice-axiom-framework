@@ -65,8 +65,8 @@ the nearest-neighbor conditions.
 A site need not carry a record.
 
 When present, a record locks exactly one local possibility from the subset
-available at that site under Admissibility; the locked possibility is invariant
-under repeated readout.
+available at that site under Admissibility; records are permanent and
+invariant under repeated readout.
 
 Only records are readable. A readout value is determined by record content
 alone. For any finite collection of pairwise-disjoint records, scalar readout

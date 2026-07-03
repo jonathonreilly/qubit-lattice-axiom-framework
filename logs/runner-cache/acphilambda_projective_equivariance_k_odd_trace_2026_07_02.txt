@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_projective_equivariance_k_odd_trace_2026_07_02.py
-runner_sha256: b5c163c5e6b5fe6f26327460d13ca27fb97e2bee290691cc1006a15d7f3a6e1f
+runner_sha256: 347cb6c80f4f47ee3f3d39d319f5a7ef4acdb012761a602f73a40d3eeb11a316
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.73
+elapsed_sec: 0.56
 status: ok
 ----- stdout -----
 [PASS] paired note exists
@@ -64,7 +64,7 @@ status: ok
 [PASS] in-flight campaign ids are backticked, not linked
 [PASS] instruction-leakage strings absent from note
 [PASS] note does not present file-self scope as ledger scope
-[PASS] status authority and bounded PASS gate are stated
+[PASS] canonical type, audit boundary, and bounded gate are stated
 [PASS] runtime under 90 seconds
 TOTAL: PASS=60 FAIL=0
 

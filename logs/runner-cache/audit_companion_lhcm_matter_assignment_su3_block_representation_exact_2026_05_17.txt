@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_lhcm_matter_assignment_su3_block_representation_exact_2026_05_17.py
-runner_sha256: 5c9117959715a14b271a66e7fbc901e24e42b6f317f39930ec0169a538fa0c45
-timeout_sec: 120
+runner_sha256: 548370ce19d723635eb4681d0d156290cbef2e78bbc8e4eec732bec64d4364bf
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.87
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -50,7 +50,7 @@ Part 1: note structural markers and retained-substrate citations
   [PASS (A)] note does not self-promote (no 'Status: retained' line for own row)
   [PASS (A)] note has markdown-link form of retained authority: GRAPH_FIRST_SU3_INTEGRATION_NOTE.md
   [PASS (A)] note has markdown-link form of retained authority: GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md
-  [PASS (A)] note has markdown-link form of retained authority: LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md
+  [PASS (A)] note references (non-load-bearing (C2) consistency cross-check): LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md
   [PASS (A)] non-load-bearing target NOT in markdown-link form: LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md  (target is plain-text reader pointer only)
   [PASS (A)] non-load-bearing target NOT in markdown-link form: LHCM_MATTER_ASSIGNMENT_BLOCK_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md  (target is plain-text reader pointer only)
 

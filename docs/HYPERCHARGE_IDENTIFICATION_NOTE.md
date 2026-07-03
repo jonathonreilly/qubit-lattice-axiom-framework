@@ -30,6 +30,28 @@ graph-first 6+2 split plus admitted GMN / electron-charge readout. This
 parent remains conditional until that bridge and the remaining chain inputs
 are independently audited and dependency-closed.
 
+**GMN chain rewire — L4 (2026-07-01; acyclic carrier added 2026-07-02).** The Gell-Mann–Nishijima relation
+`Q = T_3 + Y/2` is no longer carried as an admitted SM-convention bridge.
+It is chained, as link L4, to the acyclic support carrier
+[`GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md`](GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md),
+which derives `Q = T_3 + Y/2` as the unique generator in
+`span{T_3, Y}` annihilating a supplied neutral Higgs vev record at supplied
+`Y_H = +1`. The older notes
+`EWSB_PATTERN_FROM_HIGGS_Y_NOTE_2026-05-02.md` and
+`HIGGS_Y_FROM_LHCM_AND_YUKAWA_STRUCTURE_NOTE_2026-05-02.md` remain historical
+context for that calculation, but are intentionally not graph authorities for
+this parent because their existing LHCM/hypercharge references create cycles.
+The runner's PART 9 recomputes the derivation (1-dimensional stabilizer,
+coefficient `+1/2` from the annihilation nullspace, the full charge table
+from the derived generator) plus two refutation legs: `Y_H = 0` yields a
+`T_3`-free generator and a degenerate `u_L/d_L` table (the chained `Y_H`
+supply is load-bearing), and the opposite vev direction derives the
+component-swapped conjugate table — so the `T_3(e_L)` component assignment
+is the vev-direction convention, not an independent import. The L4 chain
+notes carry their own audit rows; this parent remains a bounded/conditional
+chain assembly until the chain is independently audited, and nothing here
+asserts an audit outcome.
+
 **Source-side boundary firewall (2026-06-17).** The runner now checks this
 header before doing the numerical work. Stale language that promotes this
 note beyond the bounded source boundary, hides the runner/cache, or drops the
@@ -177,9 +199,10 @@ the chained matter assignment and the admitted SM-convention scale.
 
 ### 2. Electric Charge (downstream, under chain)
 
-With T_3 = σ_3/2 on the weak factor and the SM Gell-Mann–Nishijima
-convention Q = T_3 + Y/2, applied to the chained matter assignment at
-α = 1/3:
+With T_3 = σ_3/2 on the weak factor and Q = T_3 + Y/2 chained as the
+derived unbroken generator (chain L4: unique annihilator of the neutral
+Higgs vev record at the chained `Y_H = +1`; see the L4 rewire header and
+runner PART 9), applied to the chained matter assignment at α = 1/3:
 
 | Particle | T_3 | Y | Q = T_3 + Y/2 |
 |----------|------|---|----------------|
@@ -188,8 +211,13 @@ convention Q = T_3 + Y/2, applied to the chained matter assignment at
 | ν_L | +1/2 | −1 | 0 |
 | e_L | −1/2 | −1 | −1 |
 
-These charges match the SM pattern. The Gell-Mann–Nishijima formula
-itself is an SM-convention bridge; it is not derived in this note.
+These charges match the SM pattern. The Gell-Mann–Nishijima formula is
+not derived in this note's own algebra: it is chained (L4) to the in-repo
+unbroken-generator derivation named in the L4 rewire header, and the
+runner recomputes it rather than importing it. Which doublet component is
+the electron (`T_3(e_L) = −1/2`) is the vev-direction convention (runner
+check 9e): the opposite direction derives the component-swapped conjugate
+table, so the physical content is the charge PATTERN, not the labeling.
 
 ### 3. Uniqueness (structural part of the chain)
 
@@ -247,7 +275,8 @@ authority:
 |---|---|---|
 | Eigenvalue ratio +1:(−3) on (Sym², Anti²) | [`LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md`](LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) | direct structural input |
 | (Sym², Anti²) ↔ (SU(3)-fundamental, SU(3)-singlet) | [`LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`](LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md) | direct representation-theory input |
-| (color triplet ≡ quark, color singlet ≡ lepton) | SM-definition convention | admitted naming, not load-bearing physics |
+| (color triplet ≡ quark, color singlet ≡ lepton) | SM-definition convention | vacuous naming for the derived charge-pattern blocks, not load-bearing physics |
+| GMN relation `Q = T_3 + Y/2` and the `T_3(e_L)` component assignment | [`GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md`](GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md); historical context only: `EWSB_PATTERN_FROM_HIGGS_Y_NOTE_2026-05-02.md`, `HIGGS_Y_FROM_LHCM_AND_YUKAWA_STRUCTURE_NOTE_2026-05-02.md`; component assignment = vev-direction convention (check 9e) | chain L4 (2026-07-01 rewire, acyclic carrier 2026-07-02); derivation dependency, own audit row |
 | Absolute scale α = 1/3 (`Y(L_L) = −1`) | [`HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md) after audit; otherwise SM-convention normalization | bounded bridge candidate; parent remains conditional until retained |
 
 The load-bearing step **of this note** is the chain assembly itself —
@@ -299,11 +328,12 @@ boundary):**
   U(1) generator in the gl(3) ⊕ gl(1) commutant of {SU(2)_weak,
   SWAP_{23}} on C^8 carries eigenvalues in the ratio +1 : (−3) across
   the (2, 3) and (2, 1) sub-blocks. This is α-independent.
-- **Charge table.** Under the admitted matter-assignment and admitted
-  α = 1/3 convention, the chain-consequent eigenvalue table on the
+- **Charge table.** Under the chained matter-assignment and the α = 1/3
+  scale, the chain-consequent eigenvalue table on the
   LH-doublet surface reproduces SM hypercharges (Q_L ↦ +1/3, L_L ↦ −1)
-  and SM electric charges via Gell-Mann–Nishijima (admitted SM-convention
-  bridge). The runner reports these as `[CHAIN-L2]` / `[CHAIN-L3]`
+  and SM electric charges via the L4-derived Gell-Mann–Nishijima
+  generator (runner PART 9 recomputes it from the vev-record annihilation).
+  The runner reports these as `[CHAIN-L2]` / `[CHAIN-L3]` / `[CHAIN-L4]`
   consequents, not as internal claims.
 
 Anything outside this triple — projector algebra, traceless ratio, charge
@@ -354,8 +384,14 @@ What this note is **not** claiming, post-rewrite:
 - to derive α = 1/3 internally (that is L3, now routed to the
   2026-05-25 bounded normalization bridge candidate and otherwise
   admitted as convention until retained);
-- to derive the Gell-Mann–Nishijima relation Q = T₃ + Y/2 (admitted as
-  SM-convention bridge in the Part 3 / Part 9 runner blocks);
+- to derive the Gell-Mann–Nishijima relation Q = T₃ + Y/2 in this note's
+  own algebra: it is chained out (L4, 2026-07-01/2026-07-02) to the acyclic
+  vev-annihilator support carrier, which takes the neutral vev record and
+  `Y_H = +1` as supplied inputs; the PART 9 runner block recomputes the
+  derivation and no longer carries it as an admitted SM-convention bridge;
+- to derive the Higgs vev direction or EWSB dynamics internally (the
+  neutral-direction record is the L4 chain's supplied input; the direction
+  choice itself is shown to be a component-naming convention by check 9e);
 - to perform full SM anomaly cancellation (requires RH sector, chained
   out to the RH-sector anomaly-cancellation companion note);
 - to retain LHCM as a whole; this note inherits the L2/L3 dependency

@@ -3,14 +3,12 @@
 **Date:** 2026-07-02  
 **Type:** bounded support (exact tension theorem)  
 **Claim type:** bounded_theorem  
-**Status:** source proposal / bounded-support artifact. This note does not set
-an audit outcome, derive a Record bridge, or select an action.  
 **Status authority:** independent audit lane only. This source note does not set
-or predict an audit outcome.  
+or predict an audit outcome, derive a Record bridge, or select an action.
 **Paired runner:**
 [`scripts/frontier_single_step_locality_excludes_qgen_2026_07_02.py`](../scripts/frontier_single_step_locality_excludes_qgen_2026_07_02.py)  
 **Cached output:**
-[`outputs/frontier_single_step_locality_excludes_qgen_2026_07_02.txt`](../outputs/frontier_single_step_locality_excludes_qgen_2026_07_02.txt)
+[`logs/runner-cache/frontier_single_step_locality_excludes_qgen_2026_07_02.txt`](../logs/runner-cache/frontier_single_step_locality_excludes_qgen_2026_07_02.txt)
 
 ## Purpose
 
@@ -214,20 +212,21 @@ No horn is selected.
   [`SEMIGROUP_CLOSURE_DOES_NOT_FORCE_HEAT_KERNEL_QUADRATIC_CONDITION_BOUNDED_NOTE_2026-07-02.md`](SEMIGROUP_CLOSURE_DOES_NOT_FORCE_HEAT_KERNEL_QUADRATIC_CONDITION_BOUNDED_NOTE_2026-07-02.md).
   Role: supplies `Q-gen`, the jump-semigroup class
   `c_n(t)=exp(-t psi(n))`, and the correction that semigroup closure alone does
-  not force the heat-kernel subfamily. This sibling is stacked and unaudited.
+  not force the heat-kernel subfamily. Independent audit owns its verdict and
+  any retained-grade dependency closure.
 - Block04 sibling:
   [`ACTION_FAMILY_CHARACTER_SEMIGROUP_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md`](ACTION_FAMILY_CHARACTER_SEMIGROUP_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md).
   Role: supplies the three-candidate discriminator, the `T5`
   record-composition premise, and the quoted conditional relocation-note
-  context used only to state the physical-lattice tension. This sibling is
-  stacked and unaudited.
+  context used only to state the physical-lattice tension. Independent audit
+  owns its verdict and any retained-grade dependency closure.
 
 ## Paired runner
 
 The paired runner reports:
 
 ```text
-SUMMARY PASS=52 FAIL=0 TOTAL=52
+SUMMARY PASS=62 FAIL=0 TOTAL=62
 SUMMARY T2_full_ZN_signs=N5:+-;N7:+-+;N8:+-+-;N9:+-+-;N12:+-+-+-; positive_full_step_cases=none
 SUMMARY status=PASS T1_U1_bound_witnesses=n=3,4,8,16 T3_deficit=4*sin(pi/N)^2 for N=3..12
 ```

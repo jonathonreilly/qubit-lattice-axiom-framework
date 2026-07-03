@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_single_clock_codimension1_evolution_check.py
-runner_sha256: 13a30eeec6542db83fe1a42e3df46dacc345d7ce7c9597490daf7ade798aa89f
+runner_sha256: e93b82e3bca595b20d98e280245fa8dfde1e28f86f5b7e1dc575e73650dd1db7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.89
+elapsed_sec: 0.61
 status: ok
 ----- stdout -----
 ========================================================================
@@ -23,14 +23,14 @@ exact time-space exchange symmetry shows the axis itself is a premise
 ------------------------------------------------------------------------
 [A] (S1') SUPPLY HYPOTHESES AND STONE CLOSURE (transfer/tau-relative)
 ------------------------------------------------------------------------
-  [PASS] [A] (R-STONE hyp) T Hermitian (||T-T^dag|| = 1.07e-16)
+  [PASS] [A] (R-STONE hyp) T Hermitian (||T-T^dag|| = 1.10e-16)
   [PASS] [A] (R-STONE hyp) T positive, trivial kernel (min eig = 3.623e-02)
   [PASS] [A] (R-STONE hyp) ||T||_op <= 1 (max eig = 1.000000)
-  [PASS] [A] unique generator: -(1/tau) log T reproduces the supplied H (||H_rec - H|| = 1.97e-14)
-  [PASS] [A] H >= 0 (R-SC2 normalization) (min E = 4.72e-15)
-  [PASS] [A] U(0) = I (resid = 3.59e-15)
-  [PASS] [A] U(s)U(t) = U(s+t) (resid = 3.71e-15)
-  [PASS] [A] U(t)^dag U(t) = I (resid = 6.60e-15)
+  [PASS] [A] unique generator: -(1/tau) log T reproduces the supplied H (||H_rec - H|| = 1.76e-14)
+  [PASS] [A] H >= 0 (R-SC2 normalization) (min E = 5.61e-15)
+  [PASS] [A] U(0) = I (resid = 3.24e-15)
+  [PASS] [A] U(s)U(t) = U(s+t) (resid = 3.40e-15)
+  [PASS] [A] U(t)^dag U(t) = I (resid = 6.14e-15)
   [PASS] [A] generator: i dU/dt|_0 = H within the 2nd-order FD bound (resid = 4.87e-09, bound = 2.64e-04)
   [PASS] [A] N2 load-bearing: same T with tau' = 2 tau gives H' = H/2 exactly (||H' - H/2|| = 0.00e+00  (T alone does NOT fix the clock unit; B-AXIS.1 is a premise))
   [PASS] [A] falsifier: non-Hermitian T -> non-self-adjoint H, non-unitary U (||U^dag U - I|| = 9.82e+05, ||H-H^dag|| = 2.84e+01)
@@ -71,7 +71,7 @@ exact time-space exchange symmetry shows the axis itself is a premise
   [PASS] [C] EXACT action invariance: || W M_KS W^T - M_KS || = 0 (resid = 0.00e+00 (staggered + mass term))
   [PASS] [C] temporal hop sector maps EXACTLY onto the x_1 hop sector (||W M_t W^T - M_1|| = 0.00e+00, ||W M_1 W^T - M_t|| = 0.00e+00)
   [PASS] [C] transverse hop sectors are fixed by W (resid = 0.00e+00)
-  [PASS] [C] temporal and spatial hop operators are unitarily identical (spectra) (max |spec diff| = 4.22e-15)
+  [PASS] [C] temporal and spatial hop operators are unitarily identical (spectra) (max |spec diff| = 8.44e-15)
   [PASS] [C] W maps the x_1 half-block onto the temporal half-block (|half| = 32)
   [PASS] [C] falsifier: plain axis swap WITHOUT the sign field fails (resid = 5.6569 >> 0 (the intertwiner is non-trivial))
   [PASS] [C] old-T10 criterion is phase-blind: plain (eta-free) temporal hops already flip sign under temporal reflection (resid = 0.00e+00 -> the old T10 tested orientation reversal, not staggered RP structure)
@@ -97,9 +97,11 @@ exact time-space exchange symmetry shows the axis itself is a premise
   [PASS] [D] note retires B-RANGE from current scope (S2'(c) now uses the retained free-sector quasilocal supplier)
   [PASS] [D] note cites the free-bilinear quasilocal LR bridge as propagation supplier (free U=1 exact-log sector and finite quasilocal lightcone named)
   [PASS] [D] 2026-06-12 firewall: B-RANGE retired, B-AXIS remains the live blocker (axis-selection route-pruning context wired without retained promotion)
+  [PASS] [D] 2026-06-17 B-AXIS.1 split note is wired (blocked-time denominator support boundary is linked as source support)
+  [PASS] [D] B-AXIS.1 split keeps absolute clock unit open (does not derive a physical clock/rate unit)
 
 ========================================================================
-TOTAL: PASS=45 FAIL=0
+TOTAL: PASS=47 FAIL=0
 ========================================================================
 
 ----- stderr -----

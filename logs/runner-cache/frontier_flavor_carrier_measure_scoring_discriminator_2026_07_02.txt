@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/frontier_flavor_carrier_measure_scoring_discriminator_2026_07_02.py
+runner_sha256: 7d4dba45847dd37fc4b2e5acffd831cf4be54724cc3a15dbcdf2e6ccc7c3e6c1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
+PASS D1 S1 generator-channel HS gives r=1/(N-1)
+PASS D1 S2 dimension/per-mode gives r=1
+PASS sympy available for exact radical/C3 witnesses
+PASS D1 S3 idempotent/eigenvalue root solves parent equation
+PASS D1 S3 gives r=17/2-6*sqrt(2)
+PASS D1 Koide Q at S1 is 2/3
+PASS D1 Koide Q at S2 is 1
+PASS D1 Koide Q at S3 is symbolic expected value
+PASS D2 C3 conjugation fixes supplied circulant matrix
+PASS D2 C3 leaves S1 r-value unchanged
+PASS D2 C3 leaves S2 r-value unchanged
+PASS D2 C3 leaves S3 r-value unchanged
+PASS D2 complement maps hw=1 bijectively to hw=2
+PASS D2 complement commutes with C3 rotation on hw=1
+PASS D2 complement swap leaves all three scalar r-values unchanged
+PASS D2 global U(1) phase dressing is inert on modulus r
+PASS D2 S1 total generator energy is phase inert
+PASS D2 S2 per-mode modulus is phase inert
+PASS D2 S3 parent r-value is phase inert as a modulus
+PASS D2 U(2) mixing preserves S1 total-HS r_eff
+PASS D2 U(2) mixing changes S2 per-mode channel squares
+PASS D2 hostile S2 witness can mimic r=1/2 at special point
+PASS D2 hostile S2 mimic fails generically
+PASS D2 S3 parent idempotent relation holds before U(2) mixing
+PASS D2 U(2) mixing changes S3 idempotent/eigenvalue relation
+PASS D2 honesty: equal-split condition itself moves under U(2) mixing
+PASS D2 mixed channel-1 is not the algebra unit direction
+PASS D2 mixed channel-2 is not HS-orthogonal to the unit
+PASS D3 S1 empty readout is zero
+PASS D3 S1 finitely additive on disjoint records
+PASS D3 S2 empty readout is zero
+PASS D3 S2 finitely additive on disjoint records
+PASS D3 S3 empty readout is zero
+PASS D3 S3 finitely additive on disjoint records
+PASS D4 named invariance requirement leaves S1
+PASS D4 named invariance requirement rejects S2
+PASS D4 named invariance requirement rejects S3
+PASS D4 conditional survivor gives r=1/2
+PASS D4 parent theorem target string is preserved
+TOTAL: PASS=39 FAIL=0
+
+----- stderr -----

@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/velocity_rg_gauge_seagull_transverse_vacuum_polarization_2026_06_22.py
+runner_sha256: 364de2af5a4a5218e0c2ea34bd91095315d0d093b80893f4a6507414c24e0bad
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.23
+status: ok
+----- stdout -----
+
+============================================================================
+Clifford algebra of the Euclidean gammas
+============================================================================
+[PASS] {gamma_mu, gamma_nu} = 2 delta_munu (Hermitian Euclidean set)
+
+============================================================================
+Ward identity: the seagull makes Pi transverse
+============================================================================
+[PASS] lattice Ward khat_mu Pi_munu transverse to < 2% (bubble+seagull) -- violations = ['8.4e-04', '7.1e-03', '5.6e-03']
+
+============================================================================
+B4 isotropy at v=1: c_t = c_s protected
+============================================================================
+[PASS] Pi_T(temporal) == Pi_T(spatial) at v=1 (B4-isotropic) -- max diff = 8.5e-13
+
+============================================================================
+eta = v_F/v_b = 1 is a fixed point; lambda_G > 0 (finite-grid proxy)
+============================================================================
+[PASS] induced anisotropy vanishes at eps=0 (eta=1 is a true fixed point) -- induced(eps=0) = 1.1e-13
+[PASS] gauge log attractor present (A_G>0) and finite-grid lambda_G proxy > 0 -- A_G(log)=+0.255  B_G=lambda_G=+0.231
+
+============================================================================
+Non-cancellation: fermion-half sign is opposite to lambda_G in both gauges
+============================================================================
+[PASS] fermion-half velocity-anisotropy sign is NEGATIVE in both Feynman and Landau -- Feynman=-0.0014  Landau=-0.0023
+[PASS] opposite sign to lambda_G>0  =>  net relative-velocity drag does NOT cancel -- fermion<0, gauge>0 -> contributions add in the net
+
+============================================================================
+SUMMARY
+============================================================================
+The two-gluon seagull tadpole restores transversality of the one-loop
+vacuum polarization (Ward identity satisfied), which a bubble-only assembly
+violates. On the transverse Pi: at v=1 the gauge sector is B4-isotropic
+(c_t=c_s); eta=v_F/v_b=1 is a fixed point; the gauge-sector finite-grid
+lambda_G proxy > 0 sits on top of the IR velocity-RG log attractor.
+The fermion-half velocity anisotropy has the OPPOSITE sign in both Feynman
+and Landau gauge (sign gauge-robust), so the cross-sector net does NOT
+cancel: residual D is a nonzero finite-grid proxy obstruction (quantified,
+not closed). The PRECISE net needs a gauge-invariant fermion-velocity
+prescription (the bare self-energy Z is gauge-dependent); proxy-level
+magnitudes and the taste/doubler normalization stay open.
+
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

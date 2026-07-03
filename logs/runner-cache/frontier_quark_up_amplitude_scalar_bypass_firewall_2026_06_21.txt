@@ -1,0 +1,120 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21.py
+runner_sha256: 28ac12627c0bccbc3846dcd24babc03fa715e9689f45ba4b8d1a8254437f0111
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 16.17
+status: ok
+----- stdout -----
+========================================================================
+  FRONTIER: Quark Up-Amplitude Scalar-Bypass Firewall
+========================================================================
+
+========================================================================
+PART 1: Current-Main Source Surfaces
+========================================================================
+  [PASS] QUARK_UP_AMPLITUDE_NATIVE_AFFINE_NO_GO_NOTE_2026-04-19.md exists  (docs/QUARK_UP_AMPLITUDE_NATIVE_AFFINE_NO_GO_NOTE_2026-04-19.md)
+  [PASS] QUARK_UP_AMPLITUDE_NATIVE_AFFINE_NO_GO_NOTE_2026-04-19.md contains expected boundary snippets
+  [PASS] QUARK_UP_AMPLITUDE_TWO_STEP_NATIVE_SCAN_NOTE_2026-04-19.md exists  (docs/QUARK_UP_AMPLITUDE_TWO_STEP_NATIVE_SCAN_NOTE_2026-04-19.md)
+  [PASS] QUARK_UP_AMPLITUDE_TWO_STEP_NATIVE_SCAN_NOTE_2026-04-19.md contains expected boundary snippets
+  [PASS] QUARK_UP_AMPLITUDE_SCALAR_COMPARISON_BRIDGE_NOTE_2026-04-19.md exists  (docs/QUARK_UP_AMPLITUDE_SCALAR_COMPARISON_BRIDGE_NOTE_2026-04-19.md)
+  [PASS] QUARK_UP_AMPLITUDE_SCALAR_COMPARISON_BRIDGE_NOTE_2026-04-19.md contains expected boundary snippets
+  [PASS] QUARK_UP_AMPLITUDE_RPSR_MASS_RETENTION_BOUNDARY_NOTE_2026-04-28.md exists  (docs/QUARK_UP_AMPLITUDE_RPSR_MASS_RETENTION_BOUNDARY_NOTE_2026-04-28.md)
+  [PASS] QUARK_UP_AMPLITUDE_RPSR_MASS_RETENTION_BOUNDARY_NOTE_2026-04-28.md contains expected boundary snippets
+  [PASS] QUARK_UP_AMPLITUDE_TENSOR_ENDPOINT_RESOLUTION_NOTE_2026-04-19.md exists  (docs/QUARK_UP_AMPLITUDE_TENSOR_ENDPOINT_RESOLUTION_NOTE_2026-04-19.md)
+  [PASS] QUARK_UP_AMPLITUDE_TENSOR_ENDPOINT_RESOLUTION_NOTE_2026-04-19.md contains expected boundary snippets
+  [PASS] QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists  (docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
+  [PASS] QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains expected boundary snippets
+  [PASS] QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md exists  (docs/QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)
+  [PASS] QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md contains expected boundary snippets
+  [PASS] S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md exists  (docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
+  [PASS] S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains expected boundary snippets
+
+========================================================================
+PART 2: Scalar-Bypass Route Classification
+========================================================================
+  - native projector/support grammars
+      evidence: native affine + two-step native scans
+      rho_E-free: True
+      touches endpoint readout: False
+      selects P_R: False
+      obstruction: split refit and anchored optima; no single law dominates both baseline axes
+  - CKM scalar-comparison bridge
+      evidence: scalar bridge interval kappa in [sqrt(6/7), 1]
+      rho_E-free: True
+      touches endpoint readout: False
+      selects P_R: False
+      obstruction: comparison-side bridge only; refit and anchored windows are disjoint
+  - RPSR reduced up-amplitude support
+      evidence: STRC/RPSR reduced amplitude algebra
+      rho_E-free: True
+      touches endpoint readout: False
+      selects P_R: False
+      obstruction: needs a typed amplitude-to-Yukawa/readout edge before mass or readout closure
+  - support-tensor endpoint slope route
+      evidence: tensor endpoint bridge/resolution
+      rho_E-free: False
+      touches endpoint readout: True
+      selects P_R: False
+      obstruction: slope ratio is bounded endpoint data; no exact coefficient theorem or sqrt(7) identity lands
+  - endpoint ratio-chain / Route-2 map route
+      evidence: endpoint readout constraints and exact readout-map reduction
+      rho_E-free: False
+      touches endpoint readout: True
+      selects P_R: False
+      obstruction: after T-side candidates, rho_E remains the missing E-center map entry
+  - Route-2 time-coupling / S3 slice consumer
+      evidence: exact time-coupling and theta-to-slice notes
+      rho_E-free: False
+      touches endpoint readout: True
+      selects P_R: False
+      obstruction: exact Xi_P(t;c) family is conditional on selected P_R
+  [PASS] at least three independent rho_E-free scalar/support routes are classified
+  [PASS] no rho_E-free scalar/support route selects the Route-2 readout map
+  [PASS] every endpoint-readout-sensitive route keeps P_R unselected on current main
+  [PASS] the scalar-bypass route has no class that is both rho_E-free and readout-selecting
+
+========================================================================
+PART 3: Exact Algebra Boundaries
+========================================================================
+  live beta_T/alpha_T = -1.000030814261
+  live alpha_T/alpha_E = -2.005382749600
+  live beta_E/alpha_E = +5.257476782082
+  target triple        = (-1.0, -2.0, 5.250000000000)
+  tensor |b_E/b_T|     = 2.621601678209
+  [PASS] current endpoint ratios do not land the selected Route-2 triple  (the readout-map theorem target remains false on live endpoint data)
+  [PASS] the live E-channel entry is not exactly beta_E/alpha_E = 21/4  (gap=+7.476782082175e-03)
+  [PASS] the tensor slope ratio is not exactly sqrt(7)  (gap=-2.414963285538e-02)
+  [PASS] the tensor slope ratio is not exactly 21/8  (gap=-3.398321790788e-03)
+  [PASS] rho_E=0 and rho_E=21/4 agree on the E-shell carrier  (shell residual=2.220e-16)
+  [PASS] rho_E=0 and rho_E=21/4 differ on the E-center carrier  (center delta=0.875000000000)
+
+========================================================================
+PART 4: Independent Scalar Support Does Not Select P_R
+========================================================================
+  RPSR a_u                 = 0.774886561056
+  RPSR identity residual   = 0.000e+00
+  anchored scalar a_u      = 0.778161628656
+  anchored scalar kappa    = 0.956341163278
+  scalar bridge interval   = [0.772011886721, 0.782460796436]
+  [PASS] RPSR reduced-amplitude algebra closes without rho_E  (a_u/sin_d + rho = 1 + rho/49)
+  [PASS] RPSR scalar value is not a readout-map triple entry  (dimensionless reduced amplitude is not beta/alpha readout data)
+  [PASS] the scalar-comparison bridge brackets the anchored up-amplitude without choosing P_R  (kappa_anchor=0.956341163278)
+  [PASS] the scalar bridge variable kappa is distinct from the Route-2 E-center variable rho_E  (kappa lives in the scalar-comparison interval, not in the readout-map family)
+
+========================================================================
+PART 5: Firewall Verdict
+========================================================================
+  [PASS] no classified current-main route selects P_R
+  [PASS] no rho_E-free scalar route bypasses the readout ambiguity
+  [PASS] a positive bypass would require a new typed edge not present in the classified routes  (needed edge: reduced amplitude or scalar support -> selected Route-2 P_R / E-center ratio)
+  Verdict: current scalar routes sharpen the search, but do not bypass
+  the selected-readout-map problem for the S3/Route-2 endpoint.
+
+========================================================================
+TOTAL: PASS=33, FAIL=0
+========================================================================
+Status: exact negative boundary for the scalar-bypass route.
+
+----- stderr -----
+

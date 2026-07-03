@@ -1,0 +1,93 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_dual_compliance_current_primitive_gate_no_go_2026_06_21.py
+runner_sha256: ccb4ba798bf2c0d7741944220339492de3e97d8b41012f08ea6ef9473076ba15
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+Route-2 dual-compliance current primitive-bank gate
+Status: no-go for current primitive-bank p=2 gate; not an audit verdict.
+TRACE: negative_route_pruning
+
+PART 1: current primitive-bank authority markers
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md exists
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md contains marker: class-A definition only
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md contains marker: **not** a positive theorem
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md contains marker: physical tensor primitive
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md contains marker: endpoint-fitted, not first-principles
+PASS: S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md exists
+PASS: S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md contains marker: membership-but-not-uniqueness
+PASS: S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md contains marker: rho_E = beta_E / alpha_E
+PASS: S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md contains marker: P(rho_E)
+PASS: S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md contains marker: not derived by the cited one-hop authorities
+PASS: ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md exists
+PASS: ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md contains marker: fix the readout **norm**
+PASS: ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md contains marker: readout's **direction**
+PASS: ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md contains marker: Selecting `rho_E` requires a shell-vs-center
+PASS: QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md exists
+PASS: QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md contains marker: inverse-square characterization
+PASS: QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md contains marker: realized by no named functional
+PASS: QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md contains marker: quadratic-invariant route is closed
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: P(rho_E)
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: irreducible missing map entry
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: beta_E / alpha_E = 21/4
+
+PART 2: current primitive candidate inventory
+PASS: candidate classified: bilinear_K_R_definition
+      class=definition_only, p=None, rho=None, authority=True, closes_p2=False
+PASS: candidate classified: eta_floor_endpoint_affine
+      class=endpoint_fitted_membership, p=None, rho=None, authority=True, closes_p2=False
+PASS: candidate classified: record_positivity_registration
+      class=norm_or_bound, p=None, rho=None, authority=True, closes_p2=False
+PASS: candidate classified: generic_quadratic_Oh_invariant
+      class=free_reduced_matrix_element, p=None, rho=None, authority=True, closes_p2=False
+PASS: candidate classified: uniform_scaling
+      class=wrong_exponent_control, p=0, rho=-1, authority=False, closes_p2=False
+PASS: candidate classified: one_power_dual_scaling
+      class=wrong_exponent_control, p=1, rho=3/2, authority=False, closes_p2=False
+PASS: candidate classified: ordinary_projector_square
+      class=wrong_exponent_control, p=-2, rho=-34/9, authority=False, closes_p2=False
+PASS: candidate classified: dual_compliance_p2
+      class=new_premise, p=2, rho=21/4, authority=False, closes_p2=True
+PASS: no current-authority candidate closes p=2
+      []
+PASS: only the explicitly new dual-compliance premise closes p=2
+      ['dual_compliance_p2']
+
+PART 3: wrong-exponent arithmetic
+PASS: p=2 gives rho_E=21/4
+      21/4
+PASS: p=0 does not give rho_E=21/4
+      -1
+PASS: p=1 does not give rho_E=21/4
+      3/2
+PASS: p=-2 does not give rho_E=21/4
+      -34/9
+PASS: tested wrong controls are exact rational alternatives
+
+PART 4: gate no-go statement
+PASS: four current primitive classes are considered
+PASS: each primitive class has a named blocker
+PASS: none of the blockers is a numerical-comparator objection only
+PASS: positive reopen condition is precise
+
+PART 5: companion note hygiene
+PASS: QUARK_ROUTE2_DUAL_COMPLIANCE_CURRENT_PRIMITIVE_GATE_NO_GO_NOTE_2026-06-21.md exists
+PASS: note contains marker: **Actual current-surface status:** no-go
+PASS: note contains marker: This is not an audit verdict
+PASS: note contains marker: negative_route_pruning
+PASS: note contains marker: does not close the parent S3/Route-2 gate
+PASS: note contains marker: does not prove arbitrary future nonlinear observables impossible
+PASS: note contains marker: derive a same-domain dual-compliance p=2 primitive
+PASS: note avoids overclaim: parent closure
+PASS: note avoids overclaim: endpoint derivation
+PASS: note avoids overclaim: future impossibility
+PASS: note avoids overclaim: bare retained
+
+TOTAL: PASS=52, FAIL=0
+VERDICT: the current named primitive bank does not already supply the dual-compliance p=2 readout law. The positive target remains a same-domain p=2 source/readout theorem.
+
+----- stderr -----
+

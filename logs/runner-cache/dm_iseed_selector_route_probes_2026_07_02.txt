@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/dm_iseed_selector_route_probes_2026_07_02.py
-runner_sha256: e45a4cca9106a650f6c995dba3326c14ddd9b4afa1a4a55cda370b67f6f2b13c
+runner_sha256: e44e1848943e2a8ae11d575d8398981d14d4a225af1617ff919c0fcbdcadd28b
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 1.33
+elapsed_sec: 1.08
 status: ok
 ----- stdout -----
 ========================================================================================

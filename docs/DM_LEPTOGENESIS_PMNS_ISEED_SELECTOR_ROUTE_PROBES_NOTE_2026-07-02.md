@@ -1,5 +1,14 @@
 # DM/Leptogenesis PMNS: I_seed Selector Route Probes — Computed Witnesses Locating the Adopted Selector's Non-Baseline Content (2026-07-02)
 
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem (bounded support diagnostic of an existing adopted-selector gate)
+**Scope boundary:** the bounded theorem content is the three computed route probes
+P1-P3 locating where the adopted selector's non-baseline content lives. It does
+not derive `I_seed`, the favored-column rule, or the equality constraint from
+the four-axiom baseline.
+**Audit boundary:** the independent audit lane owns all `audit_status` and
+`effective_status` verdicts.
+
 ## Claim (support-grade route diagnosis; no promotion)
 
 Three refutation-shaped, machine-checked probes locate **where** the non-baseline
@@ -20,7 +29,6 @@ functional, and its exact transport map — imported, not re-implemented):
    `eta_{i_*} / eta_obs = 1` is not implied by the note's other premises — explicit
    admissible models satisfy every other premise with ratio ≠ 1.
 
-**Claim type:** support-grade diagnostic of an existing adopted-selector gate.
 This note derives nothing, promotes nothing, and authors no audit status. It
 gives the already-scoped gate a *computed decomposition into three named
 non-baseline pieces*, each a separately attackable derivation target.

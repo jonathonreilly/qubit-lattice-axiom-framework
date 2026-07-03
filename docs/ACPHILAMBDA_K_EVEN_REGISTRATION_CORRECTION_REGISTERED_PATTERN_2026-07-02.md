@@ -1,9 +1,15 @@
 # AC_phi_lambda K-Even Registration Correction And The Registered-Pattern Normal Form
 
 **Date:** 2026-07-02
-**Claim type:** bounded framing correction + panel-synthesis normal form
-**Status authority:** independent audit lane only. This note does not set an audit verdict, edit registries, register primitives, change axioms, or claim `AC_phi_lambda` retirement.
-**Primary runner:** [`scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py`](../scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py) (`TOTAL: PASS=92 FAIL=0`, measured close below).
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem (bounded framing correction + panel-synthesis normal form)
+**Scope boundary:** the bounded theorem content is the K-even registration
+correction plus the finite checked route-map classification at the stated
+surface. It does not derive `delta = 2/9`, derive `Phi = 2/3`, edit registries,
+register primitives, change axioms, or claim `AC_phi_lambda` retirement.
+**Audit boundary:** the independent audit lane owns all `audit_status` and
+`effective_status` verdicts.
+**Primary runner:** [`scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py`](../scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py) (`TOTAL: PASS=97 FAIL=0`, measured close below).
 
 ## Claim
 
@@ -179,7 +185,7 @@ It does not become a derived value.
 
 ## No-Go Discipline Gate
 
-**Status:** PASS bounded correction + normal form; not a terminal no-go.
+**Gate result:** PASS bounded correction + normal form; not a terminal no-go.
 
 **N1 alternative route table:** The K-odd zero/extremum route is killed because
 `sin(2/3) != 0` and `cos(2/3) != 0`. The doublet clock route is killed as an
@@ -231,4 +237,4 @@ Run:
 python3 scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py
 ```
 
-Measured close: `TOTAL: PASS=92 FAIL=0`.
+Measured close: `TOTAL: PASS=97 FAIL=0`.

@@ -1,23 +1,23 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py
-runner_sha256: e6fc01dea3f9c2637a9968a1cf2ac3f20d08576ccbc4b4806d15e3a8792e2801
+runner_sha256: d687a4601348d9764c691a74ebf5522938b6640c7bf7a9f1d17ec873ebd581ca
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.60
+elapsed_sec: 0.55
 status: ok
 ----- stdout -----
 
 PART A - sources and authority gates
 [PASS] note file exists
-       /private/tmp/keven-wt/docs/ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md
+       docs/ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md
 [PASS] record dependency exists
-       /private/tmp/keven-wt/docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md
+       docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md
 [PASS] Brannen dependency exists
-       /private/tmp/keven-wt/docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
+       docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
 [PASS] ledger exists
-       /private/tmp/keven-wt/docs/audit/data/audit_ledger.json
+       docs/audit/data/audit_ledger.json
 [PASS] Tier-A data exists
-       /private/tmp/keven-wt/docs/audit/data/tier_a_admissions.json
+       docs/audit/data/tier_a_admissions.json
 [PASS] record file pin present: only a finer character-basis record would touch it
 [PASS] note quotes record pin: only a finer character-basis record would touch it
 [PASS] record file pin present: neither produced nor relaxed by the record-preserving dynamics
@@ -72,6 +72,11 @@ PART C - C2 finite route kills
 [PASS] conservation quote pinned in note
 
 PART D - note discipline
+[PASS] canonical Type header is bounded_theorem
+[PASS] canonical Claim type header is bounded_theorem
+[PASS] scope boundary present
+[PASS] audit boundary present
+[PASS] legacy Status/Status authority headers absent
 [PASS] required sentence present: every registrable layer derived in this campaign
 [PASS] required sentence embedded: every registrable layer derived in this campaign
 [PASS] required sentence present: the K-odd trace is a reconstruction-layer detect
@@ -116,11 +121,11 @@ PART D - note discipline
 [PASS] Tier-A path is not markdown linked
 [PASS] no campaign note path markdown links
 [PASS] note line count in requested band
-       234
+       240
 [PASS] Verification section present
 [PASS] Primary runner header present
 
-TOTAL: PASS=92 FAIL=0
+TOTAL: PASS=97 FAIL=0
 
 ----- stderr -----
 

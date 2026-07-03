@@ -79,11 +79,11 @@ def normalized_contains(text: str, needle: str) -> bool:
 
 def part_a_sources(note: str) -> None:
     print("\nPART A - sources and authority gates")
-    check("note file exists", NOTE.exists(), str(NOTE))
-    check("record dependency exists", RECORD.exists(), str(RECORD))
-    check("Brannen dependency exists", BRANNEN.exists(), str(BRANNEN))
-    check("ledger exists", LEDGER.exists(), str(LEDGER))
-    check("Tier-A data exists", TIER_A.exists(), str(TIER_A))
+    check("note file exists", NOTE.exists(), str(NOTE.relative_to(ROOT)))
+    check("record dependency exists", RECORD.exists(), str(RECORD.relative_to(ROOT)))
+    check("Brannen dependency exists", BRANNEN.exists(), str(BRANNEN.relative_to(ROOT)))
+    check("ledger exists", LEDGER.exists(), str(LEDGER.relative_to(ROOT)))
+    check("Tier-A data exists", TIER_A.exists(), str(TIER_A.relative_to(ROOT)))
 
     record_text = read_text(RECORD)
     brannen_text = read_text(BRANNEN)
@@ -208,6 +208,12 @@ def markdown_links(note: str) -> list[tuple[str, str]]:
 
 def part_d_note_discipline(note: str) -> None:
     print("\nPART D - note discipline")
+    check("canonical Type header is bounded_theorem", "**Type:** bounded_theorem" in note)
+    check("canonical Claim type header is bounded_theorem", "**Claim type:** bounded_theorem" in note)
+    check("scope boundary present", "**Scope boundary:**" in note)
+    check("audit boundary present", "**Audit boundary:**" in note)
+    check("legacy Status/Status authority headers absent", not re.search(r"^\*\*(Status|Status authority):\*\*", note, re.M))
+
     for sentence in PRESERVED:
         lines = [line.strip() for line in note.splitlines() if sentence in line]
         check(f"required sentence present: {sentence[:48]}", len(lines) >= 1)

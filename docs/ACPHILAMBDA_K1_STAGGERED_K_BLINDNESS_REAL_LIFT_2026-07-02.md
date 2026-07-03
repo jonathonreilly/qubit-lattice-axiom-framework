@@ -1,9 +1,9 @@
 # AC_phi_lambda K1 Staggered K-Blindness: Real Non-Projective Lift
 
 **Date:** 2026-07-02
-**Claim type:** bounded route no-go / carrier localization
-**Status authority:** independent audit lane only. This note does not set an audit verdict, edit registries, register primitives, change axioms, or claim `AC_phi_lambda` retirement.
-**Primary runner:** [`scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py`](../scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py) (`TOTAL: PASS=77 FAIL=0`; measured local close, N = 4 and N = 6 constructive checks)
+**Type:** no_go
+**Audit boundary:** the independent audit lane owns all verdicts. This note does not set an audit verdict, edit registries, register primitives, change axioms, or claim `AC_phi_lambda` retirement.
+**Primary runner:** [`scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py`](../scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py) (`TOTAL: PASS=79 FAIL=0`; measured local close, N = 4 and N = 6 constructive checks)
 
 ## Claim
 
@@ -188,7 +188,7 @@ It does not change the retained Dirac-row theorem or the earlier scalar blindnes
 
 ## No-Go Discipline Gate
 
-**Status:** PASS bounded; not a terminal no-go.
+**Gate result:** PASS bounded; not a terminal no-go.
 
 N1: Routes are separated. The one-component staggered route is ruled out here in both retained kinetic classes. The flux-holonomy route remains the mapped wall. The two-component projective route remains open as the named seed for the next computation. The occurrence lane remains open separately. Owner primitive governance is not touched.
 
@@ -214,4 +214,4 @@ Local command:
 python3 scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py
 ```
 
-Measured close: `TOTAL: PASS=77 FAIL=0`, with constructive checks at `N = 4` and `N = 6`, dense heat traces at `N = 4`, numeric gates `1e-9`, fixed seed `20260702`, and both rejector branches exercised.
+Measured close: `TOTAL: PASS=79 FAIL=0`, with constructive checks at `N = 4` and `N = 6`, dense heat traces at `N = 4`, numeric gates `1e-9`, fixed seed `20260702`, and both rejector branches exercised.

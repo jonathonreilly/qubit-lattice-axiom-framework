@@ -65,8 +65,7 @@ the nearest-neighbor conditions.
 A site need not carry a record.
 
 When present, a record locks exactly one local possibility from the subset
-available at that site under Admissibility; the locked possibility is invariant
-under repeated readout.
+available at that site under Admissibility; records are permanent.
 
 Only records are readable. A readout value is determined by record content
 alone. For any finite collection of pairwise-disjoint records, scalar readout
@@ -107,7 +106,8 @@ nearest-neighbor rule: for each site, the available possibilities are
 determined by, and vary with, the nearest-neighbor conditions. It does not
 choose a Hamiltonian or transfer operator, supply transition probabilities or
 weights, select a scalar or nonzero kinetic branch, assert a Dirac-square
-carrier, define a time metric, or provide a record-production process.
+carrier, define a time metric, or provide a record-production process or
+physical persistence dynamics.
 
 Static spatial kinetic questions, probability/process questions, and temporal
 evolution questions should be tracked separately. A realized kinetic branch, if

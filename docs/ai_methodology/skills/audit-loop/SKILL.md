@@ -92,16 +92,18 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   the nearest-neighbor conditions, consistent with local records.
   A site need not carry a record; when present, a record locks exactly one
   local possibility from the subset available at that site under
-  Admissibility. Only records are readable; a readout value is determined by
-  record content alone; scalar-valued finite readout is additive over finite
+  Admissibility, and records are permanent. Only records are readable; a
+  readout value is determined by record content alone; scalar-valued finite
+  readout is additive over finite
   pairwise-disjoint record collections. A state is a configuration of records.
   A law privileges no states: its domain is a supplied condition, and where
   that condition holds it gives exactly one answer.
   Downstream
   structures such as context selection, decomposition, `K`/CPT structure,
   sector-generation rules, weighting, normalization, probability, occurrence
-  rules, update laws, measurement/decoherence dynamics, time metric,
-  within-sector data, occupancy rules, P2/modulus, log-det readouts,
+  rules, update laws, measurement/decoherence dynamics, record-production
+  dynamics, physical persistence dynamics, time metric, within-sector data,
+  occupancy rules, P2/modulus, log-det readouts,
   source/action bridges, scale, local observability, law-admissibility or
   transition relations, kinetic-branch selection, or arbitrary observable
   identification remain compatible targets but require derivation, bridge,

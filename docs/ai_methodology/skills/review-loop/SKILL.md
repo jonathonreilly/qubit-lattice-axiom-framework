@@ -89,7 +89,7 @@ without making downstream rows `retained_bounded`. Tier-A admitted derivation
 targets are registered in `docs/audit/data/tier_a_admissions.json` and
 chain-satisfy only at `retained_bounded` until retired by a retained
 derivation. Record is part of the approved `minimal_axioms` node in its narrow
-durable-realized-outcome form, not a Tier-A admission; the older
+permanent-record form, not a Tier-A admission; the older
 `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` parent is not an axiom-premise node.
 The scale-reference primitive is the approved units primitive, not a Tier-A
 admission or a bounded Planck import. The kinetic-isotropy primitive is the
@@ -128,15 +128,17 @@ Admissibility is one fixed finite-neighborhood rule, the same at every lattice
 translate; for each site, the available possibilities are determined by, and
 vary with, the nearest-neighbor conditions, consistent with local records. A
 site need not carry a record; when present, a record locks exactly one local
-possibility from the subset available at that site under Admissibility. Only
-records are readable; a readout value is determined by record content alone;
+possibility from the subset available at that site under Admissibility, and
+records are permanent. Only records are readable; a readout value is
+determined by record content alone;
 finite scalar readout is additive over finite pairwise-disjoint record
 collections. A state is a configuration of records. A law privileges no states:
 its domain is a supplied condition, and where that condition holds it gives
 exactly one answer. Additional
 structures such as readout-context selection, decomposition, `K`/CPT
 structure, sector-generation rules, weighting, normalization, probability,
-measurement/decoherence dynamics, occurrence rules, update laws, time metric,
+measurement/decoherence dynamics, record-production dynamics, physical
+persistence dynamics, occurrence rules, update laws, time metric,
 within-sector data, occupancy rules, P2/modulus, log-det readouts,
 source/action bridges, scale, local observability, law-admissibility or
 transition relations, kinetic-branch selection, or arbitrary observable

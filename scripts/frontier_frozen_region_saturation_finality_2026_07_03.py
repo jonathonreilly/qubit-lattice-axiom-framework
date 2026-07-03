@@ -53,7 +53,7 @@ Layering of the derivations (this repair makes the halting content reading-free)
 
 The covariant neighbor-dependent availability rule and the record-inclusion
 event-ordering are REBUILT here from scratch (small exact windows). The
-review-pending sibling PR #4873 (branch-only) is cited by number only and is
+review-pending sibling PR #4882 (recut of closed #4873; branch-only) is cited by number only and is
 NOT read. The frozen-star / black-hole label is an owner interpretive READING,
 not a claim; this runner asserts no GR content (no metric, horizon, curvature)
 and no rate / clock content.

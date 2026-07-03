@@ -47,7 +47,7 @@ only; it issues no audit verdict and predicts none.
   landed sentence; M1's mathematical content is unchanged.
 - **Nothing adopted.** The event-ordering and static-world admissibility are
   REBUILT from scratch as small exact constructions; the review-pending sibling
-  (PR #4873, branch-only) is cited by number only and was not read. The audit
+  (PR #4882, recut of closed #4873, branch-only) is cited by number only and was not read. The audit
   lane owns all statuses.
 
 ## Purpose
@@ -100,7 +100,7 @@ permanent." (readout-invariance becoming a derived lemma) is LANDED on main
 clause "A site never carries more than one record." is LANDED via PR #4879
 (commit 7950d9202c, "axioms: restore one record per site"). Owner ruling: non-triviality is contingent realized
 data, not law (vacuum-solution analogy); theorems condition on the realized
-sector. Sibling PR #4873 (review-pending, branch-only, NOT read) derives the
+sector. Sibling PR #4882 (recut of closed #4873; review-pending, branch-only, NOT read) derives the
 event-ordering from permanence + "A state is a configuration of records",
 exhibits the admissible static world, and carries an exact `2x2x2` saturation
 witness with covariant boundary pinning -- rebuilt here from scratch. Owner
@@ -296,7 +296,7 @@ residue, so the set is stated in full):
    THIS rule.
 4. **No rate / metric / clock content** anywhere; the landed count-not-rate
    firewalls are cited as review-pending / unaudited post-reset.
-5. **Event-ordering matches the review-pending sibling** PR #4873 (branch-only,
+5. **Event-ordering matches the review-pending sibling** PR #4882 (recut of closed #4873; branch-only,
    not read); its status is review-pending.
 6. **No GR claims**; the frozen-star label is an interpretive reading only.
 7. **Nothing adopted**; the static world's admissibility is the sibling's result
@@ -347,7 +347,7 @@ review-loop-closed); domain monotonicity (permanence-derived); model postulate M
 (residue 9; one-per-site content now grounded on landed axiom text, commit 7950d9202c); the
 supervisor-supplied covariant availability model and owner realized-sector ruling.
 The event-ordering and static-world admissibility overlap the review-pending
-sibling PR #4873 (cited, not read).
+sibling PR #4882, recut of closed #4873 (cited, not read).
 
 ## No-Promotion
 

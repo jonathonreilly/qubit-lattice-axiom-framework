@@ -85,7 +85,7 @@ Under iid uniform recorded neighbors, each binary pattern has mass `1/64`. If `k
 p(rule) = k/64
 ```
 
-The runner enumerates all subset sums of the 10 orbit sizes. Every `k` in `{0,...,64}` is attainable, so:
+The runner enumerates all subset sums of the 10 orbit sizes. Every `k` in `{0,...,64}` is attainable as a subset sum, so:
 
 ```text
 p in {k/64 : 0 <= k <= 64}
@@ -93,7 +93,13 @@ p in {k/64 : 0 <= k <= 64}
 
 The informative fraction is quantized by covariance in this named baseline.
 
-The optional value-flip-covariant refinement identifies a pattern with its global `0<->1` complement. It is not axiom-required. The combined orbit sizes are:
+Endpoint caveat (2026-07-02 axiom wording): the current available-subset clause reads "determined by, and vary with, the nearest-neighbor conditions." The `k = 64` endpoint is attainable only by the constant all-informative rule, whose availability does not vary with neighbor conditions; that endpoint is therefore plausibly excluded by the vary-with wording. The interior of the attainable set, and every bracketing value used below, is unaffected.
+
+The value-flip-covariant refinement identifies a pattern with its global `0<->1` complement. The Qubit axiom now states:
+
+> "No possibility is privileged."
+
+Whether this sentence requires the fixed admissibility rule itself to be covariant under the `0<->1` relabeling is a reading for the audit lane to settle; this note computes both variants and asserts neither reading. Under the value-flip-covariant reading the combined orbit sizes are:
 
 ```text
 [2, 6, 8, 12, 12, 24]
@@ -180,6 +186,7 @@ The residual between the axiom-quantized baseline and the unit point is therefor
 - This note does not claim: it derives `p` or `p*`; the runner locates `p*` and classifies attainable baseline `p` values.
 - This note does not claim: the Theorem 3 negative statement holds outside the named baseline, named model, and named reading.
 - This note does not claim: a record step occurs. The semigroup boundary is respected.
+- This note does not adjudicate whether "No possibility is privileged." requires value-flip covariance of the admissibility rule. Both variants are computed; if the flip-covariant reading holds, the attainable set is even `k` only and the brackets are `26/64` and `28/64`, with the same off-lattice conclusion for `p*`.
 - This note does not claim: an audit verdict or any effective-status promotion.
 
 Forward surface: derive correlated non-iid occupancy statistics from record-formation dynamics; refine partially-recorded neighborhoods with fewer than six recorded neighbors; treat composite carriers.
@@ -251,5 +258,5 @@ python3 scripts/informative_fraction_covariant_rule_quantization_occupancy_resid
 Expected final line:
 
 ```text
-TOTAL: PASS=67 FAIL=0
+TOTAL: PASS=70 FAIL=0
 ```

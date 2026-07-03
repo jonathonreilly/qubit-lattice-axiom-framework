@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/informative_fraction_covariant_rule_quantization_occupancy_residual_2026_07_02.py
-runner_sha256: e815638dddd6a3cacebdd858a5c57741108e7850be1b0f9a5880933c429dbd40
+runner_sha256: 4d0b1fb53f8edecf4f85414de5b771ac9898603a66fd47606957fb6c1eba012b
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 
@@ -65,6 +65,7 @@ PASS: F files exist: semigroup - docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-0
 PASS: F dep marker axioms covariance
 PASS: F dep marker axioms available-subset clause
 PASS: F dep marker axioms no weights
+PASS: F dep marker axioms no privileged possibility
 PASS: F dep marker rigidity normalization
 PASS: F dep marker semigroup boundary
 PASS: F note preserve marker: set only by the independent audit lane
@@ -79,6 +80,8 @@ PASS: F note preserve marker: does not claim:
 PASS: F note preserve marker: an audit verdict or any effective-status promotion
 PASS: F note preserve marker: does not derive the admissibility rule
 PASS: F note preserve marker: does not derive occupancy statistics
+PASS: F note preserve marker: No possibility is privileged.
+PASS: F note preserve marker: does not adjudicate whether
 PASS: F forbidden absent from note: audit_status:
 PASS: F forbidden absent from runner: audit_status:
 PASS: F forbidden absent from note: effective_status:
@@ -90,7 +93,7 @@ PASS: F forbidden absent from runner: exhausted
 PASS: F forbidden absent from note: closes the route
 PASS: F forbidden absent from runner: closes the route
 
-TOTAL: PASS=67 FAIL=0
+TOTAL: PASS=70 FAIL=0
 
 ----- stderr -----
 

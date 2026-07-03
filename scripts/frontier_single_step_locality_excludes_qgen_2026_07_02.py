@@ -84,15 +84,15 @@ def main() -> None:
 
     # T3: nearest-step ratio and finite-N deficit.
     x = sp.symbols("x")
-    ratio_identity = sp.trigsimp(
-        (1 - sp.cos(2 * x)) / (1 - sp.cos(x)) - 4 * sp.cos(x / 2) ** 2
-    )
-    deficit_identity = sp.trigsimp(4 - 4 * sp.cos(x) ** 2 - 4 * sp.sin(x) ** 2)
+    nearest_ratio_expr = (1 - sp.cos(2 * x)) / (1 - sp.cos(x))
+    ratio_identity = sp.trigsimp(nearest_ratio_expr - 4 * sp.cos(x / 2) ** 2)
+    deficit_identity = sp.trigsimp(4 - nearest_ratio_expr - 4 * sp.sin(x / 2) ** 2)
     check("T3_ratio_identity", ratio_identity == 0)
     check("T3_deficit_identity", deficit_identity == 0)
     for N in range(3, 13):
         deficit = 4 * sp.sin(sp.pi / N) ** 2
         ratio = 4 * sp.cos(sp.pi / N) ** 2
+        check(f"T3_Z{N}_deficit_formula", sp.simplify(4 - ratio - deficit) == 0)
         check(f"T3_Z{N}_deficit_positive", sp.N(deficit, 80) > 0)
         check(f"T3_Z{N}_ratio_below_4", sp.N(4 - ratio, 80) > 0)
 

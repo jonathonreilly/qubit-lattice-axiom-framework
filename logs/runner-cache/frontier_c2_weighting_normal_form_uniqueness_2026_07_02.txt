@@ -1,0 +1,36 @@
+[PASS] reachability (Fraction(2, 3), Fraction(5, 7))
+[PASS] reachability (Fraction(0, 1), Fraction(4, 9))
+[PASS] reachability (Fraction(11, 6), Fraction(0, 1))
+[PASS] u coefficient witness
+[PASS] v coefficient witness
+[PASS] integer union on A
+[PASS] integer union on B
+[PASS] refinement on A
+[PASS] refinement on B
+[PASS] equal-subrecord refinement
+[PASS] normal form example 1 (Fraction(0, 1), Fraction(0, 1))
+[PASS] normal form example 1 (Fraction(1, 2), Fraction(2, 3))
+[PASS] normal form example 1 (Fraction(5, 4), Fraction(7, 6))
+[PASS] normal form example 1 (Fraction(9, 10), Fraction(11, 12))
+[PASS] normal form example 2 (Fraction(0, 1), Fraction(0, 1))
+[PASS] normal form example 2 (Fraction(1, 2), Fraction(2, 3))
+[PASS] normal form example 2 (Fraction(5, 4), Fraction(7, 6))
+[PASS] normal form example 2 (Fraction(9, 10), Fraction(11, 12))
+[PASS] same content pair
+[PASS] identity-dependent values differ
+[PASS] counterexample outside class
+[PASS] degenerate ignores A
+[PASS] degenerate ignores B
+[PASS] zero readout
+[PASS] note declares canonical claim type
+[PASS] source-side audit outcome absent
+[PASS] legacy status labels absent
+[PASS] outputs path absent
+[PASS] primary runner is markdown-linked
+[PASS] cache is markdown-linked under logs
+[PASS] all dependency notes are markdown-linked
+[PASS] branch-local sibling wording absent
+[PASS] record axiom quote includes content readout sentence
+Block11 C2 weighting normal form uniqueness
+checks: reachability, finite Cauchy, reconstruction, counterexample, degenerates
+TOTAL: PASS=33 FAIL=0

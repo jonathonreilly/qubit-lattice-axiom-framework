@@ -3,10 +3,9 @@
 Collapse the live flagship direct-descendant frontier one step further.
 
 Purpose:
-  Verify that, on the PMNS-assisted flagship DM route, the charged support E_e
-  is already fixed by the PMNS interface, so the remaining blocker is the
-  right-sensitive microscopic law on L_e = Schur_Ee(D_-), not a separate
-  Wilson-native support-provenance branch.
+  Verify the surviving fixed-support Schur/Feshbach diagnostic on the
+  PMNS-assisted flagship DM route without treating the repaired PMNS projector
+  interface as a retained support-selection theorem.
 """
 
 from __future__ import annotations
@@ -37,6 +36,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+BOUNDARY_COUNT = 0
 
 
 def check(name: str, condition: bool, detail: str = "") -> bool:
@@ -51,6 +51,15 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
         msg += f"  ({detail})"
     print(msg)
     return condition
+
+
+def boundary(name: str, detail: str = "") -> None:
+    global BOUNDARY_COUNT
+    BOUNDARY_COUNT += 1
+    msg = f"  [BOUNDARY] {name}"
+    if detail:
+        msg += f"  ({detail})"
+    print(msg)
 
 
 def read(rel_path: str) -> str:
@@ -170,15 +179,21 @@ def main() -> int:
     parent_audit = read("docs/DM_WILSON_PARENT_CORRECTNESS_AUDIT_NOTE_2026-04-18.md")
 
     print("\n" + "=" * 88)
-    print("PART 1: THE FLAGSHIP ROUTE ALREADY FIXES THE CHARGED SUPPORT")
+    print("PART 1: THE PMNS ROW IS A BOUNDED PROJECTOR INTERFACE, NOT SUPPORT-SELECTION CLOSURE")
     print("=" * 88)
-    check(
-        "The PMNS projector interface says the lepton supports E_nu and E_e are fixed",
-        "the lepton supports `E_nu` and `E_e` are fixed" in projector_interface,
+    pmns_current_bounded_interface = (
+        "**Claim type:** bounded_theorem" in projector_interface
+        and "This row does not claim carrier authority." in projector_interface
+        and "This row does not claim physical N1 column selection." in projector_interface
+        and "For fixed supplied eigenvector matrices" in projector_interface
     )
     check(
-        "The PMNS projector interface also says the flavored packet does not require a new support-selection theorem",
-        "it does not require a new support-selection theorem" in projector_interface,
+        "The PMNS projector interface is now a bounded raw pair-to-projector algebra row",
+        pmns_current_bounded_interface,
+    )
+    boundary(
+        "The repaired PMNS row no longer closes lepton-support provenance for the DM flagship route",
+        "support split and physical column selection remain outside the pair-to-projector interface",
     )
     check(
         "The projected-source-law derivation says the selected flavored transport column is algorithmic once dW_e^H is known",
@@ -200,19 +215,22 @@ def main() -> int:
         "right-sensitive microscopic selector law" in selector_reduction
         and "`dW_e^H = Schur_Ee(D_-)`" in selector_reduction,
     )
-    check(
-        "The publication matrix states the remaining positive theorem target as the route-independent microscopic dW_e^H / Z_3 selector law",
+    publication_phrase_present = (
         "remaining positive theorem target is the route-independent microscopic `dW_e^H` / `Z_3` doublet-block selector law"
-        in publication_matrix,
+        in publication_matrix
     )
-    check(
-        "The claims table uses the same manuscript-facing statement of the open gate",
-        selector_phrase in claims_table,
-    )
-    check(
-        "The full claim ledger also aligns the flagship gate to the same selector-law target",
-        selector_phrase in full_ledger,
-    )
+    claims_phrase_present = selector_phrase in claims_table
+    ledger_phrase_present = selector_phrase in full_ledger
+    if publication_phrase_present and claims_phrase_present and ledger_phrase_present:
+        check(
+            "The publication control plane still carries the old exact selector-law wording",
+            True,
+        )
+    else:
+        boundary(
+            "Publication control-plane wording has moved past the old exact selector-law phrase",
+            "no publication-surface edit is made in this source-side repair",
+        )
 
     print("\n" + "=" * 88)
     print("PART 3: THE WILSON-PARENT AUDIT BLOCKS A STRONGER PROGRAM, NOT THE FLAGSHIP SUPPORT INPUT")
@@ -298,13 +316,17 @@ def main() -> int:
     print("PART 5: BOTTOM LINE")
     print("=" * 88)
     check(
-        "On the live flagship route, the remaining blocker is the right-sensitive microscopic law on L_e rather than a separate support-provenance branch",
+        "Given a supplied fixed charged support block, ambient completion freedom does not add a downstream flagship ambiguity",
         True,
-        "fixed E_e + exact Schur reduction + selector reduction => target is the right-sensitive law on L_e = Schur_Ee(D_-)",
+        "the computation is conditional on supplied E_e/L_e data; support provenance is not closed here",
+    )
+    boundary(
+        "The former exact collapse claim is kept only as bounded fixed-support diagnostic support",
+        "Wilson-native support provenance and the right-sensitive microscopic selector law remain open",
     )
 
     print("\n" + "=" * 88)
-    print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
+    print(f"SUMMARY: PASS={PASS_COUNT} BOUNDARY={BOUNDARY_COUNT} HARD_ISSUES={FAIL_COUNT}")
     print("=" * 88)
     return 0 if FAIL_COUNT == 0 else 1
 

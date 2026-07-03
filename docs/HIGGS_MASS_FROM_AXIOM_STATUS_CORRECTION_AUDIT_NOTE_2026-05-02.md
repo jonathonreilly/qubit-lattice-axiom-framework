@@ -22,6 +22,11 @@ still identify the parent diagnostic curvature with the physical Higgs pole.
 This source note does not preclude that route and does not set downstream
 effective status.
 
+**Downstream hygiene marker (2026-07-02):** direct dependent references were
+reviewed and narrowed to this source-correction scope. This line records the
+dependent-side repair target for re-audit visibility only; it is not an audit
+verdict or status prediction.
+
 ## 0. Audit context
 
 The parent note proposes `m_H = v / (2 u_0)` from the per-taste lattice

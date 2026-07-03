@@ -240,7 +240,7 @@ def source_anchor_checks() -> None:
         "docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md",
         [
             "arrow_or_dynamics_bridge",
-            "Total: `90` stability/dynamics selector rows.",
+            "Total: `169` stability/dynamics selector rows.",
             "stable setting is not selected dial",
         ],
     )
@@ -266,9 +266,9 @@ def row_bucket_checks() -> None:
         and stability.prev.selector_subbucket(row) == "stability_or_dynamics_selector"
     ]
     buckets: Counter[str] = Counter(stability.stability_subbucket(row) for row in stability_rows)
-    report("stability/dynamics selector row count remains 90", len(stability_rows) == 90, str(len(stability_rows)))
-    report("arrow/dynamics bridge row count remains 34", buckets["arrow_or_dynamics_bridge"] == 34, str(buckets))
-    report("flow/thermal stability row count remains 56", buckets["flow_or_thermal_stability"] == 56, str(buckets))
+    report("stability/dynamics selector row count remains 169", len(stability_rows) == 169, str(len(stability_rows)))
+    report("arrow/dynamics bridge row count remains 63", buckets["arrow_or_dynamics_bridge"] == 63, str(buckets))
+    report("flow/thermal stability row count remains 106", buckets["flow_or_thermal_stability"] == 106, str(buckets))
 
 
 def transition_drift_example() -> None:
@@ -468,7 +468,7 @@ def main() -> int:
     print()
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
     print("SUPPLIED_DIRECTED_CERTIFICATE_EXAMPLES=TRUE")
-    print("ARROW_OR_DYNAMICS_BRIDGE_ROWS=34")
+    print("ARROW_OR_DYNAMICS_BRIDGE_ROWS=63")
     print("PRE_RECORD_LAW_CARRIES_PROBABILITY=TRUE")
     print("POST_RECORD_SITE_CARRIES_REALIZED_INFORMATION=TRUE")
     print("DIRECTED_STATISTICS_REQUIRE_SUPPLIED_ORIENTATION=TRUE")

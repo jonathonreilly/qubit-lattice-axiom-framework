@@ -1,22 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_instrument_composite_link_erasure_slaving_2026_06_09.py
-runner_sha256: 5ee97d32e85c7e11cba83fb9b0229f8fb3574e799c0a1a62bd20fcba49a7fa7b
-timeout_sec: 120
+runner_sha256: 2f26b9b9c77c6e62610fd26816262f1c8f212eafe88e6c1300e9f5e0399f0ac5
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 == Part A: Fock-level anchor (instrument rules are exact one-body maps) ==
 [PASS] A1: CAR algebra exact (Jordan-Wigner, 6 modes)  (max dev = 0.00e+00)
-[PASS] A2: one-body data evolves autonomously under quadratic H (non-Gaussian state)  (max dev = 8.89e-16)
+[PASS] A2: one-body data evolves autonomously under quadratic H (non-Gaussian state)  (max dev = 7.77e-16)
 [PASS] A3: I-A projector family: orthogonal resolution of identity (both sites)  (max dev = 0.00e+00)
 [PASS] A4: I-B projector family: orthogonal resolution of identity (both sites)  (max dev = 0.00e+00)
 [PASS] A5: I-A one-body rule exact: M(x,x)->(1-lam)M+lam diag, M(x,y)->(1-lam)^2 M  (max dev (lam=1, 0.4) = 5.55e-17)
 [PASS] A6: I-B one-body rule exact: M(x,x) preserved FULLY, M(x,y)->(1-lam)^2 M  (max dev (lam=1, 0.4) = 5.55e-17)
 [PASS] A7: site-composition order-independence of the instrument (Fock level)  (max dev = 2.19e-19)
-[PASS] A8: Fock rep intertwines the one-body rotation (setup)  (max dev = 2.73e-15)
-[PASS] A9: I-B channel commutes with local color rotations (color-blind, exact)  (max dev = 7.97e-18)
-[PASS] A10: I-A channel does NOT commute with local color rotations (frame-naming teeth)  (violation = 3.955e-03 (vs I-B 7.97e-18))
+[PASS] A8: Fock rep intertwines the one-body rotation (setup)  (max dev = 1.67e-15)
+[PASS] A9: I-B channel commutes with local color rotations (color-blind, exact)  (max dev = 6.52e-18)
+[PASS] A10: I-A channel does NOT commute with local color rotations (frame-naming teeth)  (violation = 3.955e-03 (vs I-B 6.52e-18))
 [PASS] A11: tr M(x,x) exactly conserved by both instruments  (max dev = 0.00e+00)
 
 == Part B: pointer vs erased content of the composite-link carrier ==
@@ -27,18 +27,18 @@ status: ok
 [PASS] B5: I-B pointer content Ad-covariant (spec invariant under local rotation); I-A pointer content frame-dependent (occupation vector not stable)  (spec dev = 4.44e-16, diag change = 0.121)
 
 == Part C: single edge is exactly solvable; exact slaving structure ==
-[PASS] C1: H_edge^2 = 1 and e^{-iH tau} = cos(tau) - i sin(tau) H exactly  (H^2 dev = 6.66e-16, expm dev = 6.66e-16)
+[PASS] C1: H_edge^2 = 1 and e^{-iH tau} = cos(tau) - i sin(tau) H exactly  (H^2 dev = 2.22e-16, expm dev = 3.89e-16)
 [PASS] C2: exact one-step block identities (pointer flow + cross-mode map)  (P1 dev = 2.22e-16, m dev = 6.21e-17)
-[PASS] C3: V s^dag V = -s for every Hermitian density pair (s-mode is exactly self-conjugate under the step)  (max dev = 4.53e-15)
-[PASS] C4: slaved coefficient EXACT: alpha = eta sc/(1 - eta cos 2tau) is the s-mode fixed point (frozen pointer data)  (fixed-point dev = 3.03e-20, alpha = 5.0418e-04)
-[PASS] C5: record-dominated slaving: U_eff = polar(s) on the slow manifold (s = -i(V M(y,y) - M(x,x) V), pointer data only)  (|U_eff - polar(s)|_F = 2.38e-14, sig3/sig1 = 0.441)
+[PASS] C3: V s^dag V = -s for every Hermitian density pair (s-mode is exactly self-conjugate under the step)  (max dev = 3.20e-15)
+[PASS] C4: slaved coefficient EXACT: alpha = eta sc/(1 - eta cos 2tau) is the s-mode fixed point (frozen pointer data)  (fixed-point dev = 2.71e-20, alpha = 5.0418e-04)
+[PASS] C5: record-dominated slaving: U_eff = polar(s) on the slow manifold (s = -i(V M(y,y) - M(x,x) V), pointer data only)  (|U_eff - polar(s)|_F = 1.66e-14, sig3/sig1 = 0.441)
 [PASS] C6: every s-orthogonal cross mode contracts at the exact instrument rate ~ eta per step (hidden-data channel damping)  (contraction = 0.009973, eta = 0.010000)
-[PASS] C7: the slaved link is CONSTANT along the pointer relaxation (registered link direction frozen)  (max drift over 2000 steps = 5.46e-09)
+[PASS] C7: the slaved link is CONSTANT along the pointer relaxation (registered link direction frozen)  (max drift over 2000 steps = 5.70e-09)
 [PASS] C8: source contracts along itself: s' = cos(2 tau) s + O(eta) feedback per step; |s| tracks cos(2 tau)^n over 2000 steps within the accumulated O(eta) window  (per-step rel dev = 1.01e-04 (bound 5.05e-02); 2000-step ratio = 3.643e-05 vs cos(2tau)^2000 = 4.465e-05)
 [PASS] C9: pointer-sector flow is closed (autonomous in registered data) at leading order: Delta M(x,x) = -sin^2(tau)(M(x,x) - V M(y,y) V^dag) + O(eta) feedback  (max rel err = 0.0199 (eta/(1-eta) = 0.0101))
 [PASS] C10: I-A analogue is closed on ITS pointer content (named-frame occupations)  (max rel err = 0.0198)
-[PASS] C11: lam=0 contrast: WITHOUT records the link is NOT slaved to pointer data (order-1 deviation)  (|U_eff - polar(s)|_F = 2.147)
-[PASS] C12: free hopping (V = 1): same exact slaving U_eff = polar(s)  (|U_eff - polar(s)|_F = 1.64e-14)
+[PASS] C11: lam=0 contrast: WITHOUT records the link is NOT slaved to pointer data (order-1 deviation)  (|U_eff - polar(s)|_F = 2.332)
+[PASS] C12: free hopping (V = 1): same exact slaving U_eff = polar(s)  (|U_eff - polar(s)|_F = 1.45e-14)
 
 == Part D: 4-cycle slaving, chord localization, covariance split ==
 [PASS] D1: 4-cycle slaving at leading order: U_eff = polar(s_local) on every edge (lam=0.9, tau=0.02)  (max dev = 7.69e-04)
@@ -46,7 +46,7 @@ status: ok
 [PASS] D3: chord channel damped OUT of the slaved direction: polar(s_chordful) = polar(s_local) far below the leading deviation  (chord-vs-local: 1.50e-05 (tau=0.02), 4.24e-06 (tau=0.01))
 [PASS] D4: slaved link well-defined at this configuration: min sig3/sig1 after burn-in bounded away from degeneracy (> 0.05)  (min sig3/sig1 = 0.086 (seed-specific margin))
 [PASS] D5: lam=0 baseline on the 4-cycle: order-1 (records absent, no slaving)  (max dev = 3.153)
-[PASS] D6: joint local covariance of the INSTRUMENTED link trajectory is exact under I-B (color-blind instrument)  (max dev = 1.30e-14)
+[PASS] D6: joint local covariance of the INSTRUMENTED link trajectory is exact under I-B (color-blind instrument)  (max dev = 1.97e-15)
 [PASS] D7: joint local covariance FAILS under I-A (the named frame breaks it -- admission footprint)  (max violation = 1.320)
 
 == Part E: the hidden-Q non-autonomy channel under records ==

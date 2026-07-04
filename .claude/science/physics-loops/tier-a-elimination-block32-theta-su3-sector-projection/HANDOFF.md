@@ -7,6 +7,8 @@ Block31 pruned pairwise reduction.
 
 Branch: `physics-loop/tier-a-elimination-block32-theta-su3-sector-projection-20260704`
 Base: `physics-loop/tier-a-elimination-block31-theta-su3-star-pairwise-obstruction-20260704`
+Source commit: `13624fe69`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4973
 
 ## Expected Claim Movement
 
@@ -37,5 +39,6 @@ exactly by Heisenberg vector closure plus an ordered central cocycle.
 
 ## Next Exact Action
 
-Commit, push, open a stacked review PR against Block31, then verify PR status
-and hosted `audit_pipeline` if GitHub checkout is available.
+Verify hosted `audit_pipeline` on PR #4973 if GitHub checkout is available,
+then continue with physical SU(3) sector/readout theorem, closed-surface
+projection theorem, G3 phase-source theorem, or G1 defect suppression.

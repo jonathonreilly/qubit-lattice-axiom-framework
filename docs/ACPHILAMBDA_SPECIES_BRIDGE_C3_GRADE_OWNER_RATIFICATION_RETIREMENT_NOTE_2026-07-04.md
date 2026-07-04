@@ -23,9 +23,13 @@ registry therefore removes `species_bridge` from AC_phi_lambda's minimum
 decomposition and records a partial reclassification for the retired C3-grade
 leg.
 
-AC_phi_lambda itself does **not** retire. The row remains Tier-A because its
-measure-side occupancy realization binary and R-eta readout identification
-remain admitted derivation targets.
+At this partial-reclassification step, AC_phi_lambda itself did **not** retire:
+the row remained Tier-A because its measure-side occupancy realization binary
+and R-eta readout identification still stood as admitted derivation targets.
+That live-status statement is historical. The later
+[`TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md`](TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md)
+owner-governance action consumes those surviving residual atoms and retires
+AC_phi_lambda and theta from live Tier-A.
 
 ## Basis
 
@@ -77,16 +81,22 @@ The species bridge is kept only as a partial reclassification:
   content, hw1-vs-hw2 carrier content beyond the C3 grade, and CKM/PMNS
   across-fermion-type alignment are not covered.
 
-The genuine Tier-A admitted-target count remains two: AC_phi_lambda and theta.
-This is a sub-admission retirement, not a full row retirement.
+At this partial step, the genuine Tier-A admitted-target count remained two:
+AC_phi_lambda and theta. This was a sub-admission retirement, not a full row
+retirement. After the later 2026-07-04 owner-governed residual adoption, the
+current live Tier-A admitted-target count is zero; the historical AC_phi_lambda
+and theta rows are preserved under `retired_derivation_targets`, and their live
+chain-satisfying governance authority is in
+[`docs/audit/data/owner_governed_premise_nodes.json`](audit/data/owner_governed_premise_nodes.json).
 
 ## Firewalls
 
 - Does not add or amend an axiom.
 - Does not create an approved primitive.
 - Does not set any audit status for the source notes.
-- Does not retire AC_phi_lambda(i), AC_phi_lambda(ii), AC_phi_lambda as a row,
-  or theta.
+- Did not, by itself, retire AC_phi_lambda(i), AC_phi_lambda(ii),
+  AC_phi_lambda as a row, or theta. Those surviving residuals are retired only
+  by the later owner-governed residual adoption.
 - Does not derive a value of `r`, `delta`, a mass, a mixing angle, or any PDG
   comparator.
 - Does not cover taste/Dirac/chirality content, hw1-vs-hw2 carrier content

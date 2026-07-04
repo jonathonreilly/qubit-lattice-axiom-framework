@@ -20,7 +20,9 @@ files_touched:
   - docs/audit/scripts/render_front_door_status.py
   - scripts/admitted_input_registry_tier_a_boundary_check.py
   - scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py
+  - scripts/acphilambda_species_bridge_c3_grade_owner_ratification_2026_07_04.py
   - scripts/audit_companion_doc_authority_registry.py
+  - docs/ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md
   - docs/audit/AXIOM_MINIMALITY_POLICY.md
   - docs/audit/DOCUMENT_AUTHORITY_AND_CITATION_POLICY.md
   - docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
@@ -36,11 +38,13 @@ does_not_move:
 checks:
   runner: "PASS=69 FAIL=0 CHECKS=69"
   tier_a_boundary_runner: "PASS=62 FAIL=0"
+  ac_species_bridge_partial_runner: "PASS=51 FAIL=0"
   py_compile: "PASS"
   unit_tests: "PASS; Ran 90 tests"
   doc_authority_runner: "PASS=25 FAIL=0"
   audit_pipeline: "PASS; seeded/adjudicated adoption note as meta/effective meta leaf; live Tier-A count zero"
   audit_lint_strict: "PASS; existing 23 warnings / 178 notices, no errors"
+  modified_runner_caches: "PASS; Tier-A boundary, Block50 adoption, and AC species-bridge partial-ratification caches are SHA-pinned fresh"
   diff_check: "PASS"
   ascii_hygiene: "PASS"
 review_loop_disposition: local_compact_pass

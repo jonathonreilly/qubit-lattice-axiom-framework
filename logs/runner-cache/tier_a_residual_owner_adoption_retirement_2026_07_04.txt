@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py
+runner_sha256: fc9355901a6d6e66e4afb0409cc76141a4e6a43ee14fa95e773bb99880a18af0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
 Tier-A residual owner adoption and retirement verifier
 ========================================================================================
 
@@ -66,10 +74,10 @@ PASS: staggered_dirac_realization_gate_note_2026-05-03 not live Tier-A admission
 PASS: strong_cp_theta_zero_note accepted premise
 PASS: strong_cp_theta_zero_note owner-governed premise
 PASS: strong_cp_theta_zero_note not live Tier-A admission
-PASS: candidate id itself is not accepted premise: ac_reta_hclass_hunit_readout_premise
-PASS: candidate id itself is not accepted premise: theta_mass_determinant_channel_w2_premise
 PASS: candidate id itself is not accepted premise: theta_gauge_sector_phase_source_premise
 PASS: candidate id itself is not accepted premise: ac_orbit_occupancy_statistical_grain_premise
+PASS: candidate id itself is not accepted premise: theta_mass_determinant_channel_w2_premise
+PASS: candidate id itself is not accepted premise: ac_reta_hclass_hunit_readout_premise
 
 ----------------------------------------------------------------------------------------
 E - policy and human registry surfaces are updated
@@ -97,3 +105,6 @@ PASS: firewall present: The source-side theorem/no-go packets retain their own a
 ========================================================================================
 RESULT: PASS=69 FAIL=0 CHECKS=69
 ========================================================================================
+
+----- stderr -----
+

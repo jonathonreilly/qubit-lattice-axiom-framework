@@ -1382,6 +1382,10 @@
     },
     {
       "from": "acphilambda_species_bridge_c3_grade_owner_ratification_retirement_note_2026-07-04",
+      "to": "tier_a_residual_owner_adoption_retirement_2026-07-04"
+    },
+    {
+      "from": "acphilambda_species_bridge_c3_grade_owner_ratification_retirement_note_2026-07-04",
       "to": "species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13"
     },
     {
@@ -59709,11 +59713,12 @@
       "claim_type_seed_hint": "meta",
       "deps": [
         "species_bridge_residual_is_ratification_class_grade_scoped_bounded_note_2026-07-02",
+        "tier_a_residual_owner_adoption_retirement_2026-07-04",
         "species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13",
         "c3_generation_readout_context_canonical_definition_note_2026-07-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "864933ca6e562b356ad6a36e3c66ac21917dd36bebf48d7e2316562f82e446e8",
+      "note_hash": "1be9d1a350a0b2208720bb3c3581037d789b24986d38b4ba2850e109a8276b74",
       "path": "docs/ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md",
       "runner_path": "scripts/acphilambda_species_bridge_c3_grade_owner_ratification_2026_07_04.py",
       "title": "AC_phi_lambda(iii) Species Bridge: C3-Grade Owner Ratification and Tier-A Retirement"
@@ -127639,7 +127644,7 @@
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14615,
+    "edge_count": 14616,
     "leaf_count": 1269,
     "node_count": 3859,
     "root_count": 1104,

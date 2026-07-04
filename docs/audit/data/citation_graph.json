@@ -41629,6 +41629,30 @@
       "to": "kinetic_isotropy_primitive"
     },
     {
+      "from": "theta_gauge_winding_axiom_update_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "theta_gauge_winding_axiom_update_no_go_note_2026-07-04",
+      "to": "strong_cp_theta_zero_note"
+    },
+    {
+      "from": "theta_gauge_winding_axiom_update_no_go_note_2026-07-04",
+      "to": "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09"
+    },
+    {
+      "from": "theta_gauge_winding_axiom_update_no_go_note_2026-07-04",
+      "to": "realized_state_primitive"
+    },
+    {
+      "from": "theta_gauge_winding_axiom_update_no_go_note_2026-07-04",
+      "to": "kinetic_isotropy_primitive"
+    },
+    {
+      "from": "theta_gauge_winding_axiom_update_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
       "from": "theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02",
       "to": "minimal_axioms"
     },
@@ -109565,7 +109589,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "40651ce7e5f07b1f689d9d43b07883ac00fa22d3c7b45077953c2ab40be24251",
+      "note_hash": "ae5d94e790d7ae3ba047bc67fd1749f426a214eea72a7cc36b85a66aaa3ea609",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -117425,6 +117449,25 @@
       "path": "docs/THETA_GAUGE_SUBSTRATE_NO_WINDING_CARRIER_EMERGENT_Q_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md",
       "runner_path": "scripts/frontier_theta_gauge_substrate_winding_vacuity_2026_06_11.py",
       "title": "\u03b8_gauge Has No Carrier on the Substrate: the Lattice Gauge Group Is Connected and the Supplied Action Class Has No Topological Density \u2014 the Gauge-Side Admission Relocates to the Named Emergent-Q Bridge (Bounded Theorem)"
+    },
+    "theta_gauge_winding_axiom_update_no_go_note_2026-07-04": {
+      "claim_id": "theta_gauge_winding_axiom_update_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "strong_cp_theta_zero_note",
+        "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09",
+        "realized_state_primitive",
+        "kinetic_isotropy_primitive",
+        "admitted_input_registry_tier_a_note_2026-05-23"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "bdf5a36c489ba54226a2c73ed0e267ebfac2bfdb1ad667aa7be44924cdadcffb",
+      "path": "docs/THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/theta_gauge_winding_axiom_update_no_go_2026_07_04.py",
+      "title": "Theta Gauge Winding Axiom-Update No-Go"
     },
     "theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02": {
       "claim_id": "theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02",
@@ -125579,7 +125622,7 @@
       "bounded_theorem": 1553,
       "decoration": 3,
       "meta": 319,
-      "no_go": 320,
+      "no_go": 321,
       "none": 1216,
       "open_gate": 133,
       "positive_theorem": 274
@@ -125588,15 +125631,15 @@
       "bounded_theorem": 1958,
       "decoration": 3,
       "meta": 319,
-      "no_go": 424,
+      "no_go": 425,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14314,
-    "leaf_count": 1292,
-    "node_count": 3818,
+    "edge_count": 14320,
+    "leaf_count": 1293,
+    "node_count": 3819,
     "root_count": 1102,
-    "runners_with_path": 3441
+    "runners_with_path": 3442
   }
 }

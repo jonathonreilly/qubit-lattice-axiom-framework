@@ -19,11 +19,13 @@ The 2026-06-29 foundation reset (PR #4747) replaced the three-axiom base
 (Lattice, Quantum, Record; memo `docs/MINIMAL_AXIOMS_2026-06-05.md`) with the
 four-axiom base (Lattice, Qubit, Admissibility, Record; memo
 `docs/MINIMAL_AXIOMS_2026-06-29.md`). The memo has since been edited in place
-under recorded owner approvals through 2026-07-03 (distinction clauses,
+under recorded owner approvals through 2026-07-04 (distinction clauses,
 admissibility nonvacuity, readout discipline, record permanence and
-one-record-per-site restoration, reading-note retirement). The approval
-history and current premise-surface rules live in
-`docs/audit/AXIOM_MINIMALITY_POLICY.md` section 6.
+one-record-per-site restoration, reading-note retirement, and the 2026-07-04
+formation sentence "Records form." — occurrence at axiom strength, every
+formation rule downstream; landed as PR #4915 with a certification note and
+consistency sweep). The approval history and current premise-surface rules
+live in `docs/audit/AXIOM_MINIMALITY_POLICY.md` section 6.
 
 The complete current foundation surface is:
 
@@ -125,10 +127,17 @@ proposed disposition each — *invalidated / narrowed / intact* — for owner
 adjudication and audit-lane re-audit. Initial survey assessments to seed the
 queue (proposals, not verdicts):
 
-- `RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`
-  — likely intact-or-narrowed: Admissibility constrains availability but
-  supplies no dynamics or state, so unconditional record formation is still
-  not forced. Needs restatement against the four-axiom base.
+- **Formation slice — pre-triaged; consume, don't re-derive.** The 2026-07-04
+  formation sentence shipped with
+  `docs/RECORD_FORMATION_APPEND_CONSISTENCY_SWEEP_2026-07-04.md`, which
+  classifies 182 formation-adjacent files + 27 ledger rows into
+  FLIPS-VERDICT (17), RE-KEY (10), DISCLAIMER-TRUE (136), HISTORICAL (9),
+  UNAFFECTED (10). Wave 3 imports those buckets as the formation slice of
+  the triage queue and adds only what the sweep did not cover. In
+  particular
+  `RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`
+  is FLIPS-VERDICT: occurrence is now axiom-forced, and the no-go's residue
+  must narrow to formation rule/process/site/weight/rate.
 - `REDUNDANCY_NOT_FORCED_BY_PND_LOCALITY_NO_GO_NOTE_2026-06-08.md` — likely
   intact (no observability/redundancy mechanism added).
 - `RECORD_BLANK_BOUNDARY_RESET_NO_GO_2026-06-05.md` — likely intact.
@@ -137,6 +146,14 @@ queue (proposals, not verdicts):
   assumptions.
 - "Arbitrary record mosaic" claims — the one family Admissibility *directly*
   targets; strongest candidates for narrowing or retirement.
+
+Coordination with the formation-semantics channels: PR #4915 (landed axiom
+append + certification + sweep) is the owning channel for formation
+dispositions; PR #4916 (Born-form bridge note) and PR #4914 (program memo,
+explicitly zero premise weight) are adjacent but share no files with this
+plan, the front-door rewrite, or the PR #4918 mechanisms (verified
+2026-07-04). Scrub waves cite those channels instead of restating their
+content.
 
 **R6 — Scripts.** Docstring/comment updates only. Wrapper shims (e.g.
 `audit_companion_three_axiom_clean_base_exact.py`) stay in place; no renames

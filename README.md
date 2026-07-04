@@ -12,10 +12,10 @@ discrete-physics program:
 3. **Admissibility** — one fixed nearest-neighbor rule, covariant under the
    lattice motions, determines the available possibilities at each site;
    availability varies with the nearest-neighbor conditions.
-4. **Record** — when present, a record locks exactly one admissible local
-   possibility; a site never carries more than one record; records are
-   permanent. Only records are readable, and scalar readout is additive over
-   finite disjoint record collections.
+4. **Record** — records form. When present, a record locks exactly one
+   admissible local possibility; a site never carries more than one record;
+   records are permanent. Only records are readable, and scalar readout is
+   additive over finite disjoint record collections.
 
 The canonical axiom memo is
 [`docs/MINIMAL_AXIOMS_2026-06-29.md`](docs/MINIMAL_AXIOMS_2026-06-29.md).
@@ -42,10 +42,12 @@ Beyond the axioms, the complete foundation surface is deliberately small:
   magnitude; results that need it are explicit conditionals.
 
 Everything else — probability and Born weights, measurement and readout
-contexts, dynamics and time metric, kinetic branch selection, source/action
-structure, physical-observable identification — is downstream content that
-must be derived, bridged, explicitly admitted, or registered before it can
-bear load. That discipline is what the audit ledger enforces.
+contexts, record-formation rules (which admissible possibility a new record
+locks, at which site, with what weight, at what rate), dynamics and time
+metric, kinetic branch selection, source/action structure,
+physical-observable identification — is downstream content that must be
+derived, bridged, explicitly admitted, or registered before it can bear
+load. That discipline is what the audit ledger enforces.
 
 ## Read First
 
@@ -132,8 +134,9 @@ High-level state:
 - **Framework baseline:** Lattice, Qubit, Admissibility, and Record are the
   named axiom surface. Admissibility constrains which possibilities are
   available at each site; it supplies no dynamics, probabilities, kinetic
-  branch, or observable identification. Record is deliberately narrow and
-  does not supply Born weights, measurement dynamics, physical persistence
+  branch, or observable identification. Record names formation at occurrence
+  strength ("records form") but remains deliberately narrow: it supplies no
+  formation rule, Born weights, measurement dynamics, physical persistence
   dynamics, source/action identification, or downstream selectors by itself.
 - **Ratified backbone:** the audit ledger contains retained-grade positive,
   no-go, bounded, and boxed-decoration rows. Use

@@ -1,0 +1,175 @@
+theta G1 4D carrier supply current-surface no-go verifier
+
+================================================================================================
+A. source presence, metadata, and claim firewall
+================================================================================================
+[PASS] exists: docs/THETA_G1_4D_CARRIER_SUPPLY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+[PASS] exists: docs/ANOMALY_FORCES_TIME_THEOREM.md
+[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md
+[PASS] exists: docs/THETA_G1_CLOSED_NONEXACT_INTERFACE_EXACT_SUPPORT_NOTE_2026-07-04.md
+[PASS] exists: docs/THETA_G1_DEFECT_CLOSURE_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/THETA_CLOSED_NONEXACT_SECTOR_RECORD_READOUT_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] note has Type no_go
+[PASS] note has Claim type no_go
+[PASS] runner path is wired
+[PASS] note declares independent audit boundary
+[PASS] scope boundary phrase present: This note does not retire theta
+[PASS] scope boundary phrase present: does not set `theta_bar = 0`
+[PASS] scope boundary phrase present: does not edit any Tier-A registry
+[PASS] scope boundary phrase present: does not claim that future 4D gauge-carrier
+[PASS] banned overclaim absent: theta is retired
+[PASS] banned overclaim absent: theta_bar = 0 is derived
+[PASS] banned overclaim absent: the Tier-A registry is edited
+[PASS] banned overclaim absent: the physical 4D carrier is now derived
+[PASS] banned overclaim absent: kinetic isotropy supplies theta topology
+[PASS] banned overclaim absent: anomaly-forces-time supplies theta topology
+
+================================================================================================
+B. source rows and Tier-A state
+================================================================================================
+[PASS] minimal ledger row resolves
+[PASS] minimal row has expected status shape
+[PASS] carrier4d ledger row resolves
+[PASS] carrier4d row has expected status shape
+[PASS] block36 ledger row resolves
+[PASS] block36 row has expected status shape
+[PASS] g1_current ledger row resolves
+[PASS] g1_current row has expected status shape
+[PASS] closed_nonexact ledger row resolves
+[PASS] closed_nonexact row has expected status shape
+[PASS] Tier-A genuine admitted input count remains two
+[PASS] theta minimum decomposition remains gauge plus mass atoms
+[PASS] AC minimum decomposition remains two atoms
+[PASS] registry still names multi-plaquette winding
+
+================================================================================================
+C. current-surface non-supply guards
+================================================================================================
+[PASS] minimal axiom guard present: Physical sites are the points of the cubic lattice `Z^3`
+[PASS] minimal axiom guard present: formation rule
+[PASS] minimal axiom guard present: source/action and physical-observable identification
+[PASS] minimal axiom guard present: time metric
+[PASS] minimal axiom guard present: central-sector decomposition
+[PASS] kinetic primitive boundary present: not a re-axiomatization of time
+[PASS] kinetic primitive boundary present: fixes only the one dimensionless graining ratio
+[PASS] kinetic primitive boundary present: not a fourth spatial dimension
+[PASS] kinetic primitive boundary present: does not supply any dimensionless dynamical quantity
+[PASS] kinetic primitive boundary present: does not supply the absolute scale
+[PASS] anomaly-time boundary present: conditional 3+1 derivation
+[PASS] anomaly-time boundary present: B-AXIS
+[PASS] anomaly-time boundary present: declared boundary
+[PASS] anomaly-time boundary present: No step defines time via the anomaly
+[PASS] anomaly-time boundary present: does not derive B-AXIS
+[PASS] Block36 remains conditional: This result is conditional support
+[PASS] Block36 remains conditional: 4D multi-plaquette carrier
+[PASS] Block36 remains conditional: No actual current-surface G1 theorem is supplied
+[PASS] G1 current no-go memory present: On the current surface, G1 is not derived.
+[PASS] G1 current no-go memory present: Record axiom's new formation sentence is also not a defect
+[PASS] closed-nonexact no-go memory present: physical sector-record/readout licensing
+[PASS] closed-nonexact no-go memory present: closed non-exact sector labels are already licensed
+
+================================================================================================
+D. finite T3 versus T4 carrier arithmetic
+================================================================================================
+[PASS] T3 C0 count
+[PASS] T3 C1 count
+[PASS] T3 C2 count
+[PASS] T3 C3 count
+[PASS] T3 C4 count is zero
+[PASS] T3 d2*d1 = 0
+[PASS] T3 d3 has zero rows
+[PASS] T3 rank d1 = 14
+[PASS] T3 rank d2 = 7
+[PASS] T3 H2 dim = 3
+[PASS] T3 H4 dim = 0
+[PASS] T3 unit spatial flux (0, 1) is closed
+[PASS] T3 unit spatial flux (0, 1) is non-exact
+[PASS] T3 unit spatial flux (0, 2) is closed
+[PASS] T3 unit spatial flux (0, 2) is non-exact
+[PASS] T3 unit spatial flux (1, 2) is closed
+[PASS] T3 unit spatial flux (1, 2) is non-exact
+[PASS] T3 planes (0, 1),(0, 2) cannot span four directions
+[PASS] T3 planes (0, 1),(1, 2) cannot span four directions
+[PASS] T3 planes (0, 2),(1, 2) cannot span four directions
+[PASS] T4 C4 count is nonzero
+[PASS] T4 H2 dim is six in imported carrier module
+[PASS] T4 H2 dim = 6
+[PASS] T4 complementary e01+e23 is closed
+[PASS] T4 complementary e01+e23 has Qraw=2
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] spatial-only flux embeds with zero 4D Q
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] 4D Q formula uses complementary planes
+[PASS] T4 odd support requires fourth direction example
+[PASS] note records T3 H2 but C4/H4 obstruction
+[PASS] note records spatial-only zero embedding
+
+================================================================================================
+E. no-go statement and route preservation
+================================================================================================
+[PASS] no-go statement phrase present: therefore the physical 4D closed-nonexact theta carrier is
+[PASS] no-go statement phrase present: is invalid
+[PASS] no-go statement phrase present: does not supply the 4D cubical/gauge carrier
+[PASS] no-go statement phrase present: Theta's gauge-side winding account therefore remains live
+[PASS] remaining route present: Physical 4D carrier theorem
+[PASS] remaining route present: Closed-nonexact interface theorem
+[PASS] remaining route present: Dynamical defect suppression
+[PASS] remaining route present: G2 sector/readout registration
+[PASS] remaining route present: G3 phase source
+[PASS] remaining route present: Owner governance
+[PASS] preservation phrase present: The kinetic-isotropy primitive is not rejected
+[PASS] preservation phrase present: The anomaly-forces-time theorem is not rejected or narrowe
+[PASS] preservation phrase present: Block36's supplied-interface support is not rejected
+[PASS] no-go discipline gate present: N1 alternative route enumeration
+[PASS] no-go discipline gate present: N2 wall independence
+[PASS] no-go discipline gate present: N3 hidden-wall scan
+[PASS] no-go discipline gate present: N4 residual matching
+[PASS] no-go discipline gate present: N5 proven surface
+[PASS] no-go discipline gate present: N6 partial closure
+[PASS] no-go discipline gate present: N7 steelman
+[PASS] no-go discipline gate present: N8 cross-cycle echo
+
+================================================================================================
+TOTAL: PASS=150 FAIL=0 CHECKS=150
+================================================================================================

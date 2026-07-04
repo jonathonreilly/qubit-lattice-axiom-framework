@@ -6,9 +6,9 @@ target: "theta gauge-side winding account, SU(3) star sector-level handling"
 claim_type: bounded_theorem
 registry_edits: false
 retirement_claimed: false
-status: verified_pre_commit
-source_commit: null
-pr: null
+status: pr_open
+source_commit: 13624fe69
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4973
 active_route: "exact finite support for supplied central-sector projection controlling SU(3) triple joint-star data"
 hard_residual: "derive physical SU(3) sector/readout registration of central star projection/cocycle"
 files_touched:
@@ -33,5 +33,5 @@ verification:
   audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
   diff_check: pass
 audit_row: "theta_su3_star_central_sector_projection_exact_support_note_2026-07-04: claim_type=bounded_theorem, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
-next_exact_action: "Commit, push, open stacked PR against Block31, then verify PR status and hosted audit_pipeline if GitHub checkout is available."
+next_exact_action: "Verify hosted audit_pipeline on PR #4973 if GitHub checkout is available, then continue with physical SU(3) sector/readout theorem, closed-surface projection theorem, G3 phase-source theorem, or G1 defect suppression."
 stop_condition: "Block complete after PR is opened and local verification is complete; hosted checkout stalls are infrastructure, not science blockers."

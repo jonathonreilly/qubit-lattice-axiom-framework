@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 189 |
 | **retained_no_go** | 191 |
-| **retained_bounded** | 850 |
+| **retained_bounded** | 851 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1948 |
+| unaudited | 1947 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1223 |
+| `audited_clean` | 1224 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2286 |
+| `unaudited` | 2285 |
 
 | claim_type | count |
 |---|---:|
@@ -1283,6 +1283,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_supermetric_normal_form_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `universality_classifier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `valley_linear_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `valley_linear_asymptotic_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -18028,6 +18029,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Inside the grown-DAG generator, the dynamic-augmented weak-field package is empirically predicted by `(avg_deg >= 10.42) AND (reach_frac >= 0.86)` with 92.3% in-sample, 84.6% leave-one-out, and 87.5% / 100% on the in-family held-out set, while cross-generator results are explicitly negative.  _(class `C`)_
 - **chain closes:** True — The primary runner actually constructs the declared grown-DAG families, computes the five battery conditions, fits the two-property rule, runs LOO, and evaluates the hard-coded held-out predictions; its stdout matches the note's load-bearing in-family numbers. The broader universal/simple-classifier-exhaustion theorem is not audited as part of this narrowed scope and is explicitly disclaimed or bounded by the cited authorities.
 - **rationale:** The narrowed binding claim is a finite empirical computation, not a derived universality theorem, and the provided runner source supports the reported 21/26 pass count, 92.3% in-sample classifier accuracy, 84.6% LOO, and 7/8 rule plus 8/8 pre-committed held-out results. The negative cross-generator and off-scaffold caveats are supplied by retained or retained_bounded cited authorities and are incorporated as limitations rather than used to prove a no-go theorem. The remaining broad language about the classifier line being exhausted should be treated as interpretation only, but the source note's explicit scope narrowing prevents it from becoming the audited claim.
+- **auditor confidence:** high
+
+### `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11`
+
+- **Note:** [`UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md`](../../docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the supplied 3x3 circulant readout context, with current Record additivity/content-determination, retained supplied-context T1 K/CPT orbit constancy, and explicit row-local P-dep, registrable scalar readouts factor through the orbit-resolved unordered mass multiset, that multiset is exactly reconstructible from registrable readouts, and delta orientation is not registrable; no P-dep derivation, physical context selection, registry reduction, magnitude claim, or theta retirement is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-unordered-mass-round3`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Under explicit P-dep, Additivity gives the no-cross-term sector sum and T1 plus the flip covariance lambda_{sigma(k)}(-delta) = lambda_k(delta) forces each per-record contribution to depend only on the orbit class [k] and lambda_k, so every registrable readout factors through M(delta).  _(class `A`)_
+- **chain closes:** True — The restricted packet supplies Record additivity/content-determination as an accepted axiom premise, T1 orbit constancy from a retained_bounded direct dependency, and P-dep as an explicit bounded-scope premise rather than a derived claim. Within that scoped premise set, the L1-L5 algebra proves B1-B3 without importing a hidden physical bridge or external comparator.
+- **rationale:** The note accurately narrows itself to a supplied finite context and does not claim to derive P-dep, choose the physical readout context, or enact downstream registry changes. The proof's load-bearing factorization is ordinary finite algebra over the supplied context plus retained T1 orbit constancy and the explicit P-dep premise, and the runner constructs the surface, checks covariance/exactness/hostile candidates/source-scope hygiene, and reports TOTAL: PASS=15 FAIL=0. Residual risks remain outside this audited scope: deriving P-dep, selecting the physical context, and deriving any magnitude would require separate claims.
 - **auditor confidence:** high
 
 ### `uv_gauge_to_yukawa_bridge_sc_vs_pert_note`

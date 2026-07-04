@@ -24,5 +24,10 @@ realized-state data under the approved `realized_state_primitive`.
 
 ## Next Exact Action
 
-Commit the block, push, and open one review PR. After review, attack either
-AC(ii)'s R-eta atom or AC(iii)'s contentless species bridge governance call.
+Review PR #4928. After review, attack either AC(ii)'s R-eta atom or AC(iii)'s
+contentless species bridge governance call.
+
+## PR
+
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4928
+- Commit: `df72230cf docs: reclassify ac occupancy value face`

@@ -2,6 +2,7 @@ slug: tier-a-elimination-block47-theta-g2-physical-sector-registration-stretch
 date: 2026-07-04
 branch: physics-loop/tier-a-elimination-block47-theta-g2-physical-sector-registration-stretch-20260704
 base_branch: physics-loop/tier-a-elimination-block46-theta-g4-assembly-current-surface-nogo-20260704
+source_commit: 0d376a8fe
 goal: "Prune the theta G2 shortcut that treats central-sector support plus Record additivity as physical sector/readout registration."
 target_status: no-go
 actual_current_surface_status: no-go
@@ -31,7 +32,8 @@ checks:
   diff_check: "PASS"
   ascii_hygiene: "PASS"
 review_loop_disposition: pass
-pr_status: pending
-pr_url: pending
-next_exact_action: "Push stacked PR, update PR metadata, then continue Tier-A campaign through physical side-gate attempts or governance decisions."
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4988
+hosted_audit_pipeline: queued
+next_exact_action: "Wait for hosted audit_pipeline on PR #4988, then continue Tier-A campaign through physical side-gate attempts or governance decisions."
 stop_condition: "Continue Tier-A campaign unless runtime/tooling blocks or all viable residuals are documented blocked."

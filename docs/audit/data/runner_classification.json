@@ -36744,6 +36744,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_theta_emergent_q_cp_rg_stability_2026_06_13.py"
     },
+    "theta_g1_4d_carrier_supply_current_surface_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/theta_g1_4d_carrier_supply_current_surface_no_go_2026_07_04.py"
+    },
     "theta_g1_closed_nonexact_interface_exact_support_note_2026-07-04": {
       "assert_count": 1,
       "counts": {
@@ -90122,6 +90134,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/theta_g1_4d_carrier_supply_current_surface_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "theta_g1_4d_carrier_supply_current_surface_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/theta_g1_closed_nonexact_interface_exact_support_2026_07_04.py": {
       "assert_count": 1,
       "claims": [
@@ -91548,12 +91575,12 @@
     "dominant_class_distribution": {
       "A": 503,
       "B": 645,
-      "C": 1279,
+      "C": 1280,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3334,
-    "runners_with_C": 1755,
+    "runners_classified": 3335,
+    "runners_with_C": 1756,
     "runners_with_D": 1069
   }
 }

@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/record_comparability_boundary_and_conditional_arrow_2026_07_04.py
+runner_sha256: 1adb95211ee81ed26a7614c51a20f4ecd69379c59a1f00c6f72924cb6f52c248
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Record comparability boundary and conditional arrow checks
+====================================================================
+[PASS] axiom has occurrence sentence
+[PASS] axiom has state-as-configuration sentence
+[PASS] axiom has permanence sentence
+[PASS] axiom has one-record-per-site sentence
+[PASS] axiom requires further physical structure to be supplied separately
+[PASS] axiom excludes record-production process in prose
+[PASS] one-configuration sentence is not landed in axiom memo
+[PASS] premise node mirrors occurrence
+[PASS] premise node excludes state-selection
+[PASS] premise node excludes record-production process
+[PASS] premise node excludes formation rule
+[PASS] owner pager names one-configuration sentence
+[PASS] owner pager declares no weight until acted on
+[PASS] doc authority registers owner pager as Class D
+[PASS] doc authority registers owner pager no-weight boundary
+[PASS] no-go note states branching exhibit
+[PASS] no-go note states not co-realized physical multiplicity
+[PASS] certification note states conditional-only boundary
+[PASS] certification note excludes clock/rate
+[PASS] certification note excludes formation selector
+[PASS] Tier-A registry still has two genuine admissions
+[PASS] Tier-A registry labels remain AC_phi_lambda and theta
+[PASS] branch X consists of valid states
+[PASS] branch Y consists of valid states
+[PASS] branch X has occurrence
+[PASS] branch Y has occurrence
+[PASS] branch X is monotone by permanence
+[PASS] branch Y is monotone by permanence
+[PASS] branch terminals are distinct
+[PASS] equal cardinality does not force identical record content
+[PASS] branch terminals are not comparable -- ['x'] vs ['y']
+[PASS] combined alternative family is not a chain
+[PASS] conditional history is pairwise comparable
+[PASS] conditional history is monotone
+[PASS] conditional history strictly grows where changed
+[PASS] conditional history has occurrence
+[PASS] simultaneous multi-record jump remains a chain
+[PASS] one-step x and y chains both satisfy comparability
+[PASS] different first-site choices remain valid
+[PASS] comparability does not select the first site
+[PASS] comparability adds no numeric rate field
+====================================================================
+TOTAL: PASS=41 FAIL=0
+
+----- stderr -----
+

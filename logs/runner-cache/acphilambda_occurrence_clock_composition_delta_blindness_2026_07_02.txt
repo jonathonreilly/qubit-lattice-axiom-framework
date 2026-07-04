@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_occurrence_clock_composition_delta_blindness_2026_07_02.py
-runner_sha256: 36d4559831ad2442d27b8a63d97b4aea20a6047a10d7df2a1a91763a10671da9
+runner_sha256: 41337c902a3eddfe7799d5b9dbfe3099f2e543a904d1e64aa2ffa93ed7e8b394
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.68
+elapsed_sec: 0.51
 status: ok
 ----- stdout -----
 
@@ -18,11 +18,19 @@ PART A - files, ledger authority, and source pins
 [PASS] audit ledger exists -- docs/audit/data/audit_ledger.json
 [PASS] occurrence row exists
 [PASS] clock row exists
-[PASS] circulant row is retained-grade authority
-[PASS] circulant row has ledger scope
+[PASS] circulant row exists
+       circulant ledger row live audit fields (informational; the audit lane owns them): effective_status=retained_bounded, claim_scope=present
 [PASS] note leaves occurrence audit status to audit lane
 [PASS] note leaves clock audit status to audit lane
-[PASS] note authority-gates circulant ledger scope
+[PASS] BRANNEN premise-quote line present exactly once
+[PASS] BRANNEN premise quote count is 2 -- quotes=2
+[PASS] BRANNEN dependency claim section extracted and substantial -- len=493
+[PASS] BRANNEN premise quote 1 meets length floor -- len=189
+[PASS] BRANNEN premise quote 1 is verbatim in the dependency claim section
+[PASS] BRANNEN premise quote 2 meets length floor -- len=136
+[PASS] BRANNEN premise quote 2 is verbatim in the dependency claim section
+[PASS] retired ledger-scope-authority wording absent
+[PASS] retired retained-grade wording absent
 [PASS] occurrence boundary pin is true
 [PASS] clock pins D_chi
 [PASS] clock pins one-shot coherence erasure
@@ -118,9 +126,9 @@ PART E - note discipline
 [PASS] note does not use PASS as status
 [PASS] no self-authored audit verdict
 [PASS] verification command is recorded
-[PASS] verification close records measured final PASS -- expected=93
+[PASS] verification close records measured final PASS -- expected=100
 
-TOTAL: PASS=93 FAIL=0
+TOTAL: PASS=100 FAIL=0
 
 ----- stderr -----
 

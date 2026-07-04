@@ -17628,6 +17628,18 @@
       "dominant_class": null,
       "runner": "scripts/kcpt_orbit_clause_kinvariant_surface_equivalence_2026_06_10.py"
     },
+    "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 9,
+        "B": 1,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.py"
+    },
     "kcpt_orbit_count_is_the_partition_not_the_weight_holomorphic_readout_measure_neutral_narrow_theorem_note_2026-06-06": {
       "assert_count": 1,
       "counts": {
@@ -31203,7 +31215,7 @@
     "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18": {
       "assert_count": 1,
       "counts": {
-        "A": 10,
+        "A": 11,
         "B": 4,
         "C": 0,
         "D": 0
@@ -63218,6 +63230,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 9,
+        "B": 1,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_kms_fermionic_brydges_majorant_external_narrow.py": {
       "assert_count": 1,
       "claims": [
@@ -73442,7 +73469,7 @@
         "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18"
       ],
       "counts": {
-        "A": 10,
+        "A": 11,
         "B": 4,
         "C": 0,
         "D": 0
@@ -90682,14 +90709,14 @@
   "stats": {
     "decoration_candidates": 691,
     "dominant_class_distribution": {
-      "A": 489,
+      "A": 490,
       "B": 634,
       "C": 1272,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3302,
-    "runners_with_C": 1729,
+    "runners_classified": 3303,
+    "runners_with_C": 1730,
     "runners_with_D": 1061
   }
 }

@@ -36888,6 +36888,18 @@
       "dominant_class": "C",
       "runner": "scripts/theta_g1_kinetic_isotropy_4d_scaffold_exact_support_split_2026_07_04.py"
     },
+    "theta_g2_physical_sector_registration_stretch_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/theta_g2_physical_sector_registration_stretch_no_go_2026_07_04.py"
+    },
     "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04": {
       "assert_count": 1,
       "counts": {
@@ -90422,6 +90434,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/theta_g2_physical_sector_registration_stretch_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "theta_g2_physical_sector_registration_stretch_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/theta_g3_central_sector_phase_character_exact_support_2026_07_04.py": {
       "assert_count": 1,
       "claims": [
@@ -91818,12 +91845,12 @@
     "dominant_class_distribution": {
       "A": 509,
       "B": 645,
-      "C": 1283,
+      "C": 1284,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3344,
-    "runners_with_C": 1761,
+    "runners_classified": 3345,
+    "runners_with_C": 1762,
     "runners_with_D": 1071
   }
 }

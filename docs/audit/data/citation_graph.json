@@ -42485,6 +42485,34 @@
       "to": "admitted_input_registry_tier_a_note_2026-05-23"
     },
     {
+      "from": "theta_g2_physical_sector_registration_stretch_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "theta_g2_physical_sector_registration_stretch_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "theta_g2_physical_sector_registration_stretch_no_go_note_2026-07-04",
+      "to": "theta_gauge_positive_route_stretch_status_2026-07-04"
+    },
+    {
+      "from": "theta_g2_physical_sector_registration_stretch_no_go_note_2026-07-04",
+      "to": "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04"
+    },
+    {
+      "from": "theta_g2_physical_sector_registration_stretch_no_go_note_2026-07-04",
+      "to": "theta_su3_star_central_sector_projection_exact_support_note_2026-07-04"
+    },
+    {
+      "from": "theta_g2_physical_sector_registration_stretch_no_go_note_2026-07-04",
+      "to": "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04"
+    },
+    {
+      "from": "theta_g2_physical_sector_registration_stretch_no_go_note_2026-07-04",
+      "to": "theta_closed_nonexact_sector_record_readout_current_surface_no_go_note_2026-07-04"
+    },
+    {
       "from": "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04",
       "to": "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04"
     },
@@ -111153,7 +111181,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6f5f2f9fee625ad66c669db8190c91792d88515da803f0d312cf0a880f57d831",
+      "note_hash": "86154c3079e68d00e0038a160b70d476f056e2d1a426118f39e82fb6d723d34a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -119149,6 +119177,26 @@
       "path": "docs/THETA_G1_KINETIC_ISOTROPY_4D_SCAFFOLD_EXACT_SUPPORT_SPLIT_NOTE_2026-07-04.md",
       "runner_path": "scripts/theta_g1_kinetic_isotropy_4d_scaffold_exact_support_split_2026_07_04.py",
       "title": "Theta G1 Kinetic-Isotropy 4D Scaffold Exact-Support Split"
+    },
+    "theta_g2_physical_sector_registration_stretch_no_go_note_2026-07-04": {
+      "claim_id": "theta_g2_physical_sector_registration_stretch_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "theta_gauge_positive_route_stretch_status_2026-07-04",
+        "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04",
+        "theta_su3_star_central_sector_projection_exact_support_note_2026-07-04",
+        "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04",
+        "theta_closed_nonexact_sector_record_readout_current_surface_no_go_note_2026-07-04"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "433f4f57c94ea193d4e1edaae3e2a36b53a7b626a92105fc393600314b6e9177",
+      "path": "docs/THETA_G2_PHYSICAL_SECTOR_REGISTRATION_STRETCH_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/theta_g2_physical_sector_registration_stretch_no_go_2026_07_04.py",
+      "title": "Theta G2 Physical Sector Registration Stretch No-Go Note"
     },
     "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04": {
       "claim_id": "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04",
@@ -127523,7 +127571,7 @@
       "bounded_theorem": 1560,
       "decoration": 3,
       "meta": 319,
-      "no_go": 349,
+      "no_go": 350,
       "none": 1216,
       "open_gate": 134,
       "positive_theorem": 274
@@ -127532,15 +127580,15 @@
       "bounded_theorem": 1965,
       "decoration": 3,
       "meta": 319,
-      "no_go": 453,
+      "no_go": 454,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14605,
-    "leaf_count": 1267,
-    "node_count": 3855,
+    "edge_count": 14612,
+    "leaf_count": 1268,
+    "node_count": 3856,
     "root_count": 1102,
-    "runners_with_path": 3478
+    "runners_with_path": 3479
   }
 }

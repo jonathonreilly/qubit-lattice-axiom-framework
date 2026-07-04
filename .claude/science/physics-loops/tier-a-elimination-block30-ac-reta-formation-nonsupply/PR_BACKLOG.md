@@ -1,8 +1,8 @@
 # PR Backlog
 
-Pending PR:
+Opened PR:
 
-- Block30 AC R-eta Record-formation non-supply no-go.
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4971
 
 Base:
 

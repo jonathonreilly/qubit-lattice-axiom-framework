@@ -1,0 +1,35 @@
+block: tier-a-elimination-block20-theta-g1-exact
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block20-theta-readiness-20260704
+base_branch: physics-loop/tier-a-elimination-block19-acii-kbreaking-20260704
+target: theta gauge-side G1 exact-branch constraint shortcut
+claim_type: no_go
+registry_edits: false
+retirement_claimed: false
+status: ready_for_pr
+active_route: global exactness shortcut n=dA for defect closure
+hard_residual: "derive closed non-exact sector records or defect suppression without erasing H2 flux carrier"
+files_touched:
+  - docs/THETA_G1_EXACT_BRANCH_CONSTRAINT_NO_GO_NOTE_2026-07-04.md
+  - scripts/theta_g1_exact_branch_constraint_no_go_2026_07_04.py
+  - logs/runner-cache/theta_g1_exact_branch_constraint_no_go_2026_07_04.txt
+  - .claude/science/physics-loops/tier-a-elimination-block20-theta-g1-exact/
+open_imports:
+  - closed-nonexact sector/bundle/readout theorem
+  - dynamical defect suppression or branch action
+  - nonabelian sector/readout registration
+  - phase-type insertion source
+  - mass-side determinant channel for final theta-bar assembly
+no_go_routes:
+  - global exactness n=dA closes G1 while preserving theta carrier
+trace_gate_classification: negative_route_pruning
+review_findings: "Local review-loop emulation PASS WITH BOUNDED CLAIMS; no retained/proposed-retained language, no hidden observed imports, no registry edit."
+verification:
+  runner: "PASS=138 FAIL=0"
+  py_compile: pass
+  audit_pipeline: "pass; newly seeded rows=1"
+  audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
+  diff_check: pass
+audit_row: "theta_g1_exact_branch_constraint_no_go_note_2026-07-04: claim_type=no_go, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
+next_exact_action: "Commit, push, open stacked PR, verify PR status, then either pivot to the next Tier-A elimination opportunity or stop with the lock removed."
+stop_condition: "Block complete only after checks pass, review disposition is recorded, PR opens/backlogs, and local lock is removed or campaign pivots."

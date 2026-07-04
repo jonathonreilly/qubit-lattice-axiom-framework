@@ -9,7 +9,7 @@ surface can normalize themselves into the physical readout
 
 Branch: `physics-loop/tier-a-elimination-block42-ac-reta-clock-normalization-nogo-20260704`
 Base: `physics-loop/tier-a-elimination-block41-ac-occupancy-formation-nonsupply-20260704`
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4983
 
 ## Claim Movement
 
@@ -41,11 +41,11 @@ and sparse event-rate readout retains the free ratio `|b| / a_act`.
 - `git diff --check` -> PASS
 
 Local review disposition: PASS. No overclaim or missing generated-audit-file
-issue found after pipeline regeneration; final generated-file freshness should
-be checked again after commit.
+issue found after pipeline regeneration. Generated-file freshness was clean
+after commit.
 
 ## Next Exact Action
 
-Commit/push and open a stacked PR on Block41. Next science route should try
-direct R-eta readout-license theorem or pivot to theta residuals if AC routes
-remain pruned.
+Monitor hosted audit/review for #4983. Next science route should try direct
+R-eta readout-license theorem or pivot to theta residuals if AC routes remain
+pruned.

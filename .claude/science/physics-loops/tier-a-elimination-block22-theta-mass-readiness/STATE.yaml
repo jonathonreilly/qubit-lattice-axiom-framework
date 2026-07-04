@@ -6,7 +6,9 @@ target: theta mass-side determinant-readout retirement readiness
 claim_type: no_go
 registry_edits: false
 retirement_claimed: false
-status: ready_for_pr
+status: pr_open
+source_commit: 4ec4bda67141
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4951
 active_route: "existing determinant bridge/orientation stack plus AC hygiene already retires theta(b)"
 hard_residual: "derive or audit-close determinant-channel/readout exhaustion and K-real physical content"
 files_touched:
@@ -31,5 +33,5 @@ verification:
   audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
   diff_check: pass
 audit_row: "theta_mass_determinant_bridge_retirement_readiness_no_go_note_2026-07-04: claim_type=no_go, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
-next_exact_action: "Commit, push, open stacked PR, verify PR status, then either pivot to determinant bridge audit/dependency repair or stop with the lock removed."
-stop_condition: "Block complete only after checks pass, review disposition is recorded, PR opens/backlogs, and local lock is removed or campaign pivots."
+next_exact_action: "Verify PR status, then either pivot to determinant bridge audit/dependency repair or stop with the lock removed."
+stop_condition: "Block complete after PR status is verified and the local lock is removed or campaign pivots."

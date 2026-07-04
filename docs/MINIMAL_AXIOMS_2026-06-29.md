@@ -62,6 +62,8 @@ the nearest-neighbor conditions.
 
 ### Record / Fixed Reality
 
+Records form.
+
 When present, a record locks exactly one admissible local possibility. A
 site never carries more than one record; records are permanent.
 
@@ -159,7 +161,8 @@ gates. In particular, the following remain outside axiom content:
 - the strong-CP theta admission;
 - P2/modulus/phase-blindness and any log-det readout theorem;
 - context selection, measurement basis selection, Born weights, probability
-  rules, update laws, decoherence mechanisms, and occurrence rules;
+  rules, update laws, decoherence mechanisms, and formation rules (which
+  admissible possibility a new record locks, at which site, with what weight);
 - arrow, record-production dynamics, physical persistence dynamics, time metric,
   and local observability of records;
 - source/action and physical-observable identification;
@@ -174,6 +177,11 @@ the `Z^3` lattice from downstream realization gates that had previously been
 written too axiomatically. The 2026-06-04 memo added scalar finite Record
 additivity as the third explicitly approved premise. The 2026-06-05 memo refined
 Record to durable realized-outcome registration in a supplied readout context.
+The 2026-07-04 owner-approved revision appended the formation sentence "Records
+form." to the Record axiom: occurrence became named axiom content, while every
+formation rule (which admissible possibility, at which site, with what weight,
+at what rate) remained downstream supplier content. The file path was kept
+unchanged so existing runner needles and links continue to resolve.
 
 This memo exposes the remaining minimal ontology needed by the blocked audit
 lanes: records are not arbitrary mosaics. The admissibility rule determines the

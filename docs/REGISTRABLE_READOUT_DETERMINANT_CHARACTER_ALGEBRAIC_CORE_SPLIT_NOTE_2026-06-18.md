@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-18
 **Claim type:** bounded_theorem
-**Status:** exact-support source-side algebraic split; `audit_required_before_effective_retained=true`; `bare_retained_allowed=false`.
+**Boundary:** source-side algebraic split only; effective status is pipeline-derived after independent audit ratification and dependency closure.
 **Status authority:** independent audit lane only. This note does not set or predict an audit outcome and does not edit audit ledgers, queues, Tier-A registries, publication-status surfaces, active review queues, lane registries, or front-door status files.
 **Primary runner:** [`scripts/frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18.py`](../scripts/frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18.py)
 **Cached log:** [`logs/runner-cache/frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18.txt`](../logs/runner-cache/frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18.txt)
@@ -36,12 +36,20 @@ Fix a supplied finite readout context with:
 - a scalar determinant phase contribution whose phase-bearing part is an
   `R`-valued group homomorphism of the per-sector phase data.
 
-Use the Record axiom in
-[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) only for its
-finite scalar additivity and `K`/CPT orbit constancy clauses. Record itself
-supplies no readout context, determinant datum, homomorphism boundary,
-physical source/action interpretation, mass readout, species readout, or
-occupancy rule.
+Use the current Record axiom in
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) only for its
+finite scalar additivity and content-determination sentences. `K`/CPT orbit
+constancy is not axiom content under the 2026-06-29 foundation reset; it
+enters through the supplied-context bridge
+[`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md)
+— T1 (orbit constancy from the supplied ORBIT-INDEXING property plus the
+axiom's content-determination sentence) and T2 (the
+determinant-character/log-character homomorphism boundary registered as named
+supplied-context structure). Record itself supplies no readout context,
+determinant datum, homomorphism boundary, physical source/action
+interpretation, mass readout, species readout, or occupancy rule.
+(2026-07-04: premise relocation per the conditional-audit
+`missing_bridge_theorem` repair note; the algebraic core below is unchanged.)
 
 **Theorem.** In the supplied determinant-character/log-character context above,
 the homomorphic determinant phase contribution is identically zero. Equivalently,
@@ -96,23 +104,6 @@ its useful algebra while refusing to launder the still-open physical
 readout identifications into the theorem. Downstream routes that want to use
 the algebra for strong-CP or AC_phi_lambda still need their own independently
 reviewed physical-readout bridge theorems.
-
-## Status Certificate
-
-```yaml
-actual_current_surface_status: exact-support
-trace_class: direct_blocker_closure
-reachability_to_target: partially_closes
-target_claim_id: registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10
-target_blocker_text: "the load-bearing zero-phase step is valid algebra, but it depends on an explicit supplied determinant-character/log-character homomorphism readout surface and separate physical-readout identifications"
-conditional_surface_status: null
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "The split isolates exact algebra only; physical readout bridges remain outside this claim."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
 
 ## Runner Certificate
 

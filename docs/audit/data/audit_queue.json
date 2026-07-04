@@ -2,8 +2,8 @@
   "by_criticality": {
     "critical": 421,
     "high": 289,
-    "leaf": 757,
-    "medium": 518
+    "leaf": 756,
+    "medium": 520
   },
   "cycle_break_target_count": 14,
   "cycle_break_targets": [
@@ -21219,6 +21219,30 @@
     },
     {
       "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.807,
+      "note_path": "docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.py",
+      "transitive_descendants": 27
+    },
+    {
+      "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "gate_b_connectivity_tolerance_note",
@@ -21238,54 +21262,6 @@
       "ready": true,
       "runner_path": "scripts/gate_b_connectivity_tolerance.py",
       "transitive_descendants": 25
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "audited_conditional",
-      "blocker": null,
-      "claim_id": "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
-      "claim_scope": "Algebraic zero-phase result for a supplied determinant-character/log-character homomorphism readout surface with K/CPT orbit constancy.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "audited_conditional",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.644,
-      "note_path": "docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md",
-      "queue_reason": "non_terminal_conditional",
-      "ready": true,
-      "runner_path": "scripts/frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18.py",
-      "transitive_descendants": 24
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "audited_conditional",
-      "blocker": null,
-      "claim_id": "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
-      "claim_scope": "For the stipulated three-parameter Hermitian circulant AC_phi_lambda class, the unordered spectrum is invariant under delta -> -delta.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "audited_conditional",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.585,
-      "note_path": "docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md",
-      "queue_reason": "non_terminal_conditional",
-      "ready": true,
-      "runner_path": "scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py",
-      "transitive_descendants": 23
     },
     {
       "audit_independence_required": "any_non_self",
@@ -28730,6 +28706,56 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.644,
+      "note_path": "docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18.py",
+      "transitive_descendants": 24
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.144,
+      "note_path": "docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py",
+      "transitive_descendants": 24
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -28822,6 +28848,31 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/inverse_problem_graph_requirements.py",
+      "transitive_descendants": 23
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.585,
+      "note_path": "docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py",
       "transitive_descendants": 23
     },
     {
@@ -38612,30 +38663,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": null,
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "audited_conditional",
-      "blocker": null,
-      "claim_id": "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11",
-      "claim_scope": "Conditional finite algebra theorem on the supplied 3x3 circulant readout context, assuming additivity, K/CPT orbit constancy, and explicit P-dep.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "non_terminal_conditional",
-      "ready": true,
-      "runner_path": "scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py",
       "transitive_descendants": 0
     },
     {
@@ -58359,6 +58386,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 172,
-  "total_pending": 1985
+  "ready_count": 170,
+  "total_pending": 1986
 }

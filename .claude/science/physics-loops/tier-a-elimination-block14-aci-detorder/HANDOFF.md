@@ -7,8 +7,8 @@ physical chiral L-R coupling route.
 
 Branch: `physics-loop/tier-a-elimination-block14-aci-detorder-20260704`
 Base: `physics-loop/tier-a-elimination-block13-aci-index-20260704`
-PR: pending
-Source commit: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4941
+Source commit: `3f8bc9b17`
 
 ## Expected Claim Movement
 
@@ -40,4 +40,4 @@ algebra remain support/open-gate material rather than retirement.
 
 ## Next Exact Action
 
-Commit, push, open a stacked PR, then monitor audit.
+Monitor PR audit.

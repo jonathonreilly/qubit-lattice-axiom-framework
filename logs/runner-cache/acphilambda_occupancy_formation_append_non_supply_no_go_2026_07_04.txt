@@ -1,0 +1,160 @@
+AC_phi_lambda occupancy formation-append non-supply verifier
+
+================================================================================================
+A. source presence, metadata, and no-overclaim firewall
+================================================================================================
+[PASS] exists: docs/ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/audit/data/axiom_premise_nodes.json
+[PASS] exists: docs/audit/AXIOM_MINIMALITY_POLICY.md
+[PASS] exists: docs/RECORD_FORMATION_APPEND_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md
+[PASS] exists: docs/RECORD_FORMATION_APPEND_CONSISTENCY_SWEEP_2026-07-04.md
+[PASS] exists: docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md
+[PASS] exists: docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md
+[PASS] exists: docs/FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md
+[PASS] exists: docs/ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md
+[PASS] exists: docs/C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md
+[PASS] note has Type no_go
+[PASS] note has Claim type no_go
+[PASS] note has audit boundary
+[PASS] runner link is wired
+[PASS] scope boundary present: does not derive, refute, re-grade, retire, or remove AC_phi_lamb
+[PASS] scope boundary present: does not edit any Tier-A registry
+[PASS] scope boundary present: No axiom, primitive, registry, audit verdict, or publication-sta
+[PASS] scope boundary present: future occupancy-dictionary or matter-action theorems
+[PASS] banned overclaim absent: AC_phi_lambda(i) is retired
+[PASS] banned overclaim absent: AC_phi_lambda is retired
+[PASS] banned overclaim absent: R-eta is retired
+[PASS] banned overclaim absent: theta is retired
+[PASS] banned overclaim absent: we remove AC_phi_lambda
+[PASS] banned overclaim absent: new occupancy primitive is approved
+[PASS] banned overclaim absent: Record formation selects the occupancy dictionary
+
+================================================================================================
+B. Tier-A registry state after July hygiene
+================================================================================================
+[PASS] Tier-A genuine admitted input count remains two
+[PASS] AC minimum decomposition remains AC(i)+R-eta
+[PASS] AC statement names measure-side doublet occupancy
+[PASS] AC statement names sector-tied/count-twice
+[PASS] AC statement names orbit/holomorphic/count-once
+[PASS] AC statement keeps R-eta separate
+[PASS] value-face partial reclassification exists
+[PASS] value face moved only to realized-state registration
+[PASS] value-face boundary leaves measure-side binary
+[PASS] species bridge reclassification exists
+[PASS] human registry names occupancy survivor
+[PASS] human registry says species bridge retired side record
+
+================================================================================================
+C. formation append and axiom boundary
+================================================================================================
+[PASS] minimal axiom boundary: Records form.
+[PASS] minimal axiom boundary: When present, a record locks exactly one admissible local possib
+[PASS] minimal axiom boundary: A site never carries more than one record; records are permanent
+[PASS] minimal axiom boundary: For any finite collection of pairwise-disjoint records, scalar r
+[PASS] minimal axiom boundary: which admissible possibility a new record locks, at which site, 
+[PASS] minimal axiom boundary: the staggered-Dirac/finite-Grassmann realization and `AC_phi_lam
+[PASS] policy formation boundary: Occurrence becomes named axiom content
+[PASS] policy formation boundary: every formation rule
+[PASS] policy formation boundary: which admissible possibility a new record locks, at which site, 
+[PASS] policy formation boundary: The sentence names no formation rule, rate, weighting, or select
+[PASS] formation cert boundary: occurrence strength only
+[PASS] formation cert boundary: does not say that every state has a formation-successor
+[PASS] formation cert boundary: successor strictly extends the predecessor
+[PASS] formation cert boundary: does not supply
+[PASS] formation cert boundary: which admissible possibility, which site, what weight, or what r
+[PASS] formation cert boundary: selector supply
+[PASS] formation sweep boundary: occurrence is supplied
+[PASS] formation sweep boundary: the residual must narrow to formation rule/process/state/site/we
+[PASS] formation sweep boundary: specific K1 record stack remains supplied but generic occurrence
+[PASS] axiom node mirrors records form
+[PASS] axiom node mirrors no formation-rule content
+
+================================================================================================
+D. AC(i) source-surface boundary checks
+================================================================================================
+[PASS] occupancy reduction boundary: value-bearing face of AC_phi_lambda
+[PASS] occupancy reduction boundary: realized-state **registration**
+[PASS] occupancy reduction boundary: the precisely-named **survivor** is the measure-side
+[PASS] occupancy reduction boundary: the measure-side binary itself
+[PASS] occupancy reduction boundary: Both grain models satisfy every checked constraint
+[PASS] occupancy reduction boundary: measure-side frontier is open, not settled
+[PASS] outcome dictionary boundary: FIREWALL: no fork branch or occupancy cell is discriminated or s
+[PASS] outcome dictionary boundary: the occupancy binary stays open
+[PASS] outcome dictionary boundary: Component dictionary `(1,2)`: `x = 2r`
+[PASS] outcome dictionary boundary: Slot dictionary `(1,1)`: `x = r`
+[PASS] outcome dictionary boundary: outcome-to-component dictionary
+[PASS] outcome dictionary boundary: Does not close the occupancy binary
+[PASS] scoring discriminator boundary: conditional on the named invariance requirement
+[PASS] scoring discriminator boundary: not a selection theorem on the actual current surface
+[PASS] scoring discriminator boundary: The no-imported-frame requirement
+[PASS] scoring discriminator boundary: The equal-channel-energy theorem
+[PASS] scoring discriminator boundary: It does not derive the physical readout identification
+[PASS] species ratification leaves AC(i)
+[PASS] C3 context excludes occupancy rule
+
+================================================================================================
+E. ledger classifications for source rows
+================================================================================================
+[PASS] record_formation_append_certification_bounded_note_2026-07-04 claim_type
+[PASS] record_formation_append_certification_bounded_note_2026-07-04 has note path
+[PASS] acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11 claim_type
+[PASS] acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11 has note path
+[PASS] occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12 claim_type
+[PASS] occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12 has note path
+[PASS] flavor_carrier_measure_scoring_discriminator_bounded_note_2026-07-02 claim_type
+[PASS] flavor_carrier_measure_scoring_discriminator_bounded_note_2026-07-02 has note path
+[PASS] acphilambda_species_bridge_c3_grade_owner_ratification_retirement_note_2026-07-04 claim_type
+[PASS] acphilambda_species_bridge_c3_grade_owner_ratification_retirement_note_2026-07-04 has note path
+[PASS] c3_generation_readout_context_canonical_definition_note_2026-07-02 claim_type
+[PASS] c3_generation_readout_context_canonical_definition_note_2026-07-02 has note path
+
+================================================================================================
+F. finite model separation for the occupancy dictionary
+================================================================================================
+[PASS] empty state is allowed before occurrence
+[PASS] formation event adds first record
+[PASS] successor strictly extends predecessor
+[PASS] one-record-per-site rejects replacement
+[PASS] component_dictionary_x_equals_2r: I(empty)=0
+[PASS] component_dictionary_x_equals_2r: finite additivity on disjoint s+d
+[PASS] component_dictionary_x_equals_2r: outcome equipartition x=1 reads r=1/factor
+[PASS] slot_dictionary_x_equals_r: I(empty)=0
+[PASS] slot_dictionary_x_equals_r: finite additivity on disjoint s+d
+[PASS] slot_dictionary_x_equals_r: outcome equipartition x=1 reads r=1/factor
+[PASS] component dictionary gives r=1/2
+[PASS] slot dictionary gives r=1
+[PASS] formation axioms do not collapse the dictionary pair
+[PASS] both dictionaries use same formed-record state
+
+================================================================================================
+G. note theorem and no-go discipline
+================================================================================================
+[PASS] note contains synthesis phrase: The implication is invalid.
+[PASS] note contains synthesis phrase: The July 4 formation append does not retire AC_phi_lambda(i).
+[PASS] note contains synthesis phrase: It supplies:
+[PASS] note contains synthesis phrase: It does not supply:
+[PASS] note contains synthesis phrase: the outcome-to-component dictionary
+[PASS] note contains synthesis phrase: Formation-rule theorem
+[PASS] note contains synthesis phrase: Matter-action theorem
+[PASS] note contains synthesis phrase: Owner governance route
+[PASS] N1 gate present
+[PASS] N2 gate present
+[PASS] N3 gate present
+[PASS] N4 gate present
+[PASS] N5 gate present
+[PASS] N6 gate present
+[PASS] N7 gate present
+[PASS] N8 gate present
+[PASS] N2 separates occurrence from dictionary
+[PASS] N4 matches registry after hygiene
+[PASS] steelman preserves occurrence support
+
+================================================================================================
+TOTAL
+================================================================================================
+TOTAL: PASS=126 FAIL=0 CHECKS=126

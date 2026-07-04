@@ -42129,6 +42129,34 @@
       "to": "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04"
     },
     {
+      "from": "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04",
+      "to": "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04"
+    },
+    {
+      "from": "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04",
+      "to": "theta_su3_star_central_sector_projection_exact_support_note_2026-07-04"
+    },
+    {
+      "from": "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04",
+      "to": "theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02"
+    },
+    {
+      "from": "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04",
+      "to": "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04"
+    },
+    {
+      "from": "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04",
+      "to": "theta_gauge_positive_route_stretch_status_2026-07-04"
+    },
+    {
+      "from": "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
       "from": "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04",
       "to": "theta_gauge_positive_route_stretch_status_2026-07-04"
     },
@@ -110576,7 +110604,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c09e03d68b260940693d68973eeeaf185e7df614d39396235dde32cbcdae9c64",
+      "note_hash": "6338cd7a703c66b9c5689d6cabf13d53268ab083cb53ee8c170749c356eec348",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118483,6 +118511,26 @@
       "path": "docs/THETA_G1_EXACT_BRANCH_CONSTRAINT_NO_GO_NOTE_2026-07-04.md",
       "runner_path": "scripts/theta_g1_exact_branch_constraint_no_go_2026_07_04.py",
       "title": "Theta G1 Exact-Branch Constraint No-Go Note"
+    },
+    "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04": {
+      "claim_id": "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04",
+        "theta_su3_star_central_sector_projection_exact_support_note_2026-07-04",
+        "theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02",
+        "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04",
+        "theta_gauge_positive_route_stretch_status_2026-07-04",
+        "minimal_axioms",
+        "admitted_input_registry_tier_a_note_2026-05-23"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "fb77976cb524768441941b4f797014a9f09d044ad537e10238ecc63d0608708a",
+      "path": "docs/THETA_G3_CENTRAL_SECTOR_PHASE_CHARACTER_EXACT_SUPPORT_NOTE_2026-07-04.md",
+      "runner_path": "scripts/theta_g3_central_sector_phase_character_exact_support_2026_07_04.py",
+      "title": "Theta G3 Central-Sector Phase Character Exact-Support Note"
     },
     "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04": {
       "claim_id": "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04",
@@ -126810,7 +126858,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1556,
+      "bounded_theorem": 1557,
       "decoration": 3,
       "meta": 319,
       "no_go": 340,
@@ -126819,7 +126867,7 @@
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1961,
+      "bounded_theorem": 1962,
       "decoration": 3,
       "meta": 319,
       "no_go": 444,
@@ -126827,10 +126875,10 @@
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14498,
+    "edge_count": 14505,
     "leaf_count": 1267,
-    "node_count": 3842,
+    "node_count": 3843,
     "root_count": 1102,
-    "runners_with_path": 3465
+    "runners_with_path": 3466
   }
 }

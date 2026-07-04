@@ -1,0 +1,140 @@
+Theta G3 central-sector phase-character exact support
+======================================================================================
+
+--------------------------------------------------------------------------------------
+A - source, registry, and status boundaries
+--------------------------------------------------------------------------------------
+PASS: exists: docs/THETA_G3_CENTRAL_SECTOR_PHASE_CHARACTER_EXACT_SUPPORT_NOTE_2026-07-04.md
+PASS: exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: exists: docs/audit/data/tier_a_admissions.json
+PASS: exists: docs/audit/data/audit_ledger.json
+PASS: exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+PASS: exists: docs/THETA_SU3_STAR_PAIRWISE_REDUCTION_OBSTRUCTION_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/THETA_SU3_STAR_CENTRAL_SECTOR_PROJECTION_EXACT_SUPPORT_NOTE_2026-07-04.md
+PASS: exists: docs/THETA_LINK_STAR_GLUING_FRAME_CORRELATION_PAIR_COMPOSITE_DAGGER_EVENNESS_AND_ODD_BRANCH_PHASE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md
+PASS: exists: docs/THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md
+PASS: exists: docs/THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md
+PASS: ledger row resolves for block31
+PASS: block31 is not effective retained authority
+PASS: ledger row resolves for block32
+PASS: block32 is not effective retained authority
+PASS: ledger row resolves for link_star
+PASS: link_star is not effective retained authority
+PASS: ledger row resolves for g3_no_go
+PASS: g3_no_go is not effective retained authority
+PASS: ledger row resolves for positive_route
+PASS: positive_route is not effective retained authority
+PASS: ledger row resolves for carrier4d
+PASS: carrier4d is not effective retained authority
+PASS: ledger row resolves for minimal
+PASS: minimal is not effective retained authority
+PASS: note declares bounded theorem type
+PASS: note declares bounded_theorem claim type
+PASS: note declares exact-support status
+PASS: runner path is wired in note
+PASS: Tier-A genuine admitted input count remains two
+PASS: canonical Tier-A IDs remain AC and theta
+PASS: theta minimum decomposition remains gauge plus mass
+PASS: AC minimum decomposition remains two atoms
+PASS: note preserves boundary: Theta is not retired.
+PASS: note preserves boundary: The Tier-A registry is not edited.
+PASS: note preserves boundary: No physical SU(3) theta sector is registered.
+PASS: note preserves boundary: No G3 phase source, coefficient, action entry, or physical
+PASS: note preserves boundary: No G2 physical sector/readout theorem is supplied.
+PASS: note preserves boundary: No mass-side determinant-channel bridge is supplied.
+PASS: note preserves boundary: No audit status or effective status is changed.
+PASS: human registry keeps theta gauge winding residual
+PASS: human registry keeps theta mass determinant residual
+
+--------------------------------------------------------------------------------------
+B - current-surface non-supply remains explicit
+--------------------------------------------------------------------------------------
+PASS: minimal axioms withhold or classify: source/action and physical-observable identification
+PASS: minimal axioms withhold or classify: central-sector decomposition
+PASS: minimal axioms withhold or classify: readout-context selection
+PASS: minimal axioms withhold or classify: the strong-CP theta admission
+PASS: minimal axioms withhold or classify: Axioms and approved primitives are not Tier-A admitted
+PASS: source surface contains: pairwise composite class data do not determine
+PASS: source surface contains: central-sector projection kills nonclosed triples
+PASS: source surface contains: records a central phase
+PASS: source surface contains: real class-weight gluing is orientation-reversal-even
+PASS: source surface contains: current surface does not derive the G3 phase insertion
+PASS: source surface contains: oriented functional, phase coefficient, and physical regis
+PASS: source surface contains: The actual phase-type insertion is not derived from the fr
+PASS: source surface contains: surface: **given** an `F u F`-shaped multi-plaquette inser
+PASS: source surface contains: cross-plane intersection pairing
+PASS: scope discipline states: does not create a central-sector cocycle
+PASS: scope discipline states: select a complex character
+PASS: scope discipline states: provide an action coefficient
+PASS: scope discipline states: identify the result as the physical theta gauge sector
+PASS: scope discipline states: does not prove the full 4D continuum or lattice `F cup F` 
+
+--------------------------------------------------------------------------------------
+C - exact finite cocycle algebra
+--------------------------------------------------------------------------------------
+PASS: closed witness vector sum closes
+PASS: reflected witness vector sum closes
+PASS: open witness vector sum does not close
+PASS: closed witness ABC phase is 1
+PASS: closed witness ACB phase is 0
+PASS: reflected witness ABC phase is 0
+PASS: reflected witness ACB phase is 1
+PASS: open witness ABC killed by central projection
+PASS: open witness ACB killed by central projection
+PASS: closed q_c equals 1
+PASS: reflected q_c equals -1 mod 3
+PASS: reflection maps q_c to -q_c
+PASS: open q_c is unavailable, not zero
+PASS: closed pairwise signatures match under reflection
+PASS: closed separate entries are all noncentral
+PASS: all closed noncentral triples have q_c
+PASS: q_c equals first-pair symplectic area for all closed triples
+PASS: swapping first two staples reverses q_c for all closed triples
+PASS: closed population has nonzero odd sectors
+PASS: all three q_c sectors occur
+PASS: q=1 and q=2 populations match
+
+--------------------------------------------------------------------------------------
+D - phase character and real-weight evenness
+--------------------------------------------------------------------------------------
+PASS: phase character conjugates under reflection
+PASS: real parts are orientation-even
+PASS: imaginary parts are orientation-odd
+PASS: nontrivial character has real part -1/2 on q=1
+PASS: nontrivial character has |imag| sqrt(3)/2
+PASS: trivial q=0 character is one
+PASS: m=1 q=0 reflection conjugacy
+PASS: m=1 q=1 reflection conjugacy
+PASS: m=1 q=2 reflection conjugacy
+PASS: m=2 q=0 reflection conjugacy
+PASS: m=2 q=1 reflection conjugacy
+PASS: m=2 q=2 reflection conjugacy
+PASS: real projection of character cannot distinguish nonzero orientations
+PASS: complex character distinguishes nonzero oriented branches
+
+--------------------------------------------------------------------------------------
+E - note movement and overclaim guards
+--------------------------------------------------------------------------------------
+PASS: note states honest movement: The result is support for the shape of G3, not a derivatio
+PASS: note states honest movement: is the exact finite odd-branch-sensitive slot
+PASS: note states honest movement: Real class weights can see only the even part.
+PASS: note states honest movement: derive a physical action/source law
+PASS: note states honest movement: with coefficient and registration
+PASS: note states honest movement: This exact support is conditional on the supplied central-
+PASS: banned overclaim absent: Theta is retired
+PASS: banned overclaim absent: theta is retired
+PASS: banned overclaim absent: theta_bar = 0 is derived
+PASS: banned overclaim absent: Tier-A registry is edited
+PASS: banned overclaim absent: G3 is derived
+PASS: banned overclaim absent: physical G3 phase source is supplied
+PASS: banned overclaim absent: The physical SU(3) theta sector is registered
+PASS: banned overclaim absent: A physical SU(3) theta sector is registered
+PASS: banned overclaim absent: The mass-side determinant-channel bridge is supplied
+PASS: banned overclaim absent: A mass-side determinant-channel bridge is supplied
+PASS: banned overclaim absent: retained on the actual surface
+PASS: banned overclaim absent: would become retained
+PASS: banned overclaim absent: promoted to retained
+
+======================================================================================
+SUMMARY: PASS=115 FAIL=0

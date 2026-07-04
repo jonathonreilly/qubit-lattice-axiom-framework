@@ -1,0 +1,37 @@
+block: tier-a-elimination-block33-theta-g3-phase-character-support
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block33-theta-g3-phase-character-support-20260704
+base_branch: physics-loop/tier-a-elimination-block32-theta-su3-sector-projection-20260704
+target: "theta G3 phase-type insertion, finite central-sector phase-character support"
+claim_type: bounded_theorem
+registry_edits: false
+retirement_claimed: false
+status: verified_pending_pr
+active_route: "exact finite support for orientation-odd central cocycle phase character"
+hard_residual: "derive physical G3 phase source, coefficient, action entry, and physical registration"
+lock_mode: "degraded: scripts/automation_lock.py status failed with permission denied on /Users/jonreilly; branch-local /tmp supervisor lock used"
+files_touched:
+  - docs/THETA_G3_CENTRAL_SECTOR_PHASE_CHARACTER_EXACT_SUPPORT_NOTE_2026-07-04.md
+  - scripts/theta_g3_central_sector_phase_character_exact_support_2026_07_04.py
+  - logs/runner-cache/theta_g3_central_sector_phase_character_exact_support_2026_07_04.txt
+  - .claude/science/physics-loops/tier-a-elimination-block33-theta-g3-phase-character-support/
+open_imports:
+  - physical G3 phase source
+  - phase coefficient or action-side weighting law
+  - physical SU(3) sector/readout registration
+  - G1 defect closure or suppression on the abelianized carrier
+  - theta mass-side determinant-channel bridge
+no_go_routes:
+  - "current axioms/primitives already derive the G3 phase insertion"
+  - "real class-weight gluing registers orientation-odd theta branch"
+trace_gate_classification: upstream_support
+review_findings: "Local review-loop pass: exact-support status is honest; no retained/proposed-retained language; imports are disclosed; runner checks finite algebra, registry boundaries, and overclaim guards; audit row deps are populated."
+verification:
+  runner: "PASS=115 FAIL=0"
+  py_compile: pass
+  audit_pipeline: "pass; newly seeded rows=1"
+  audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
+  diff_check: pass
+audit_row: "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04: claim_type=bounded_theorem, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
+next_exact_action: "Commit, push, and open a stacked PR on Block32; then verify the hosted audit_pipeline status."
+stop_condition: "Block complete after PR is opened and local verification is complete; hosted checkout stalls are infrastructure, not science blockers."

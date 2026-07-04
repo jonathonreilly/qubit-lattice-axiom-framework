@@ -153,6 +153,41 @@ The exact blocker is unchanged:
 Without that exact carrier, `Xi_R^(0)` remains a bounded spacetime primitive
 candidate rather than a theorem-grade Einstein/Regge dynamics law.
 
+## 2026-07-04 live-runner repair and bounded-negative gate audit
+
+The primary runner now matches this narrowed source boundary. It uses the
+current self-contained reduced-shell replay helper for the `anchor_per_Q`
+normalization and verifies the following current-state result:
+
+- `PL S^3 x R` is a bounded composite background with upstream-tier
+  inheritance disclosed, not an exact background claim.
+- `Lambda_R` remains an exact slice generator on the checked surface.
+- `Theta_R^(0)` remains a bounded source-side tensor pair.
+- `Xi_R^(0)(t; q) = Theta_R^(0)(q) \otimes V_R(t)` remains a bounded rank-1
+  carrier candidate.
+- The exact tensor-valued support observable on `A1 x {E_x, T1x}` remains
+  missing.
+
+Bounded-negative gate audit:
+
+- **N1 alternative routes:** the runner keeps the rank-1 carrier route and
+  leaves exact support-tensor derivation as the next target.
+- **N2 wall independence:** the bounded background tier and the missing exact
+  tensor observable are separate walls; fixing one does not derive the other.
+- **N3 hidden-wall scan:** the removed shell helper API was an interface drift;
+  repairing it does not add a tensor primitive.
+- **N4 residual matching:** the residual is precisely the absent exact
+  tensor-valued observable on `A1 x {E_x, T1x}`.
+- **N5 rhetoric audit:** the runner and note use bounded-candidate language
+  and do not promote `Xi_R^(0)` to exact dynamics.
+- **N6 partial-result path scan:** the bounded composite background, exact
+  `Lambda_R`, bounded `Theta_R^(0)`, and rank-1 carrier remain useful
+  working surfaces for follow-on tests.
+- **N7 steelman:** if a future retained support tensor observable is derived,
+  this carrier can be rechecked as a concrete spacetime lift.
+- **N8 cross-cycle echo:** the primary runner and the downstream-fix verifier
+  now agree on the bounded-composite background and bounded-not-exact carrier.
+
 ## Bottom line
 
 Route 2 now has the smallest plausible spacetime tensor carrier we can build

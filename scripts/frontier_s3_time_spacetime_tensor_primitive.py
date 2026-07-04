@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-r"""Route 2 spacetime tensor primitive candidate on `PL S^3 x R`.
+r"""Route 2 spacetime tensor primitive candidate on bounded `PL S^3 x R`.
 
 This runner builds the smallest plausible spacetime-level tensor carrier from
 the current Route 2 ingredients:
 
-  - exact background `PL S^3 x R`
+  - bounded composite background `PL S^3 x R`
   - exact slice generator `Lambda_R`
   - bounded source-side tensor pair `Theta_R^(0)(q) = (gamma_E(q), gamma_T(q))`
 
@@ -20,7 +20,8 @@ where `u_*` is the canonical normalized slice seed.
 
 This is intentionally bounded, not exact. It is the smallest spacetime-level
 carrier that mediates between the support-side bright data and the exact slice
-dynamics without inventing a new tensor primitive.
+dynamics without inventing a new tensor observable. The runner also verifies
+that the older "exact background" reading has been retired.
 """
 
 from __future__ import annotations
@@ -95,11 +96,15 @@ def main() -> int:
     same = load_frontier("same_source_metric", "frontier_same_source_metric_ansatz_scan.py")
     schur = load_frontier("oh_schur_boundary_action", "frontier_oh_schur_boundary_action.py")
     center = load_frontier("tensor_center_excess", "frontier_tensor_support_center_excess_law.py")
+    shell_replay = load_frontier(
+        "one_parameter_shell_replay",
+        "frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py",
+    )
     prototype = load_frontier("tensor_primitive_proto", "frontier_s3_time_tensor_primitive_prototype.py")
 
     print("Route 2 spacetime tensor primitive candidate")
     print("=" * 78)
-    print("  Candidate background: PL S^3 x R")
+    print("  Candidate background: bounded composite PL S^3 x R")
     print()
 
     basis = same.build_adapted_basis()
@@ -111,8 +116,21 @@ def main() -> int:
     t1x = basis[:, 4]
     e_x = (np.sqrt(3.0) * e1 + e2) / 2.0
 
-    theta_e0 = np.array(center.gamma_pair(e0, e_x, t1x), dtype=float)
-    theta_s = np.array(center.gamma_pair(s_unit, e_x, t1x), dtype=float)
+    def gamma_pair(q: np.ndarray) -> tuple[float, float]:
+        beta_e = float(
+            (center.eta_floor(q + center.EPS * e_x) - center.eta_floor(q - center.EPS * e_x))
+            / (2.0 * center.EPS)
+        )
+        beta_t = float(
+            (center.eta_floor(q + center.EPS * t1x) - center.eta_floor(q - center.EPS * t1x))
+            / (2.0 * center.EPS)
+        )
+        red = shell_replay.reduced_data(center.phi_from_q(q))
+        a_aniso = float(red["anchor_per_Q"]) * float(np.sum(q))
+        return beta_e / a_aniso, beta_t / a_aniso
+
+    theta_e0 = np.array(gamma_pair(e0), dtype=float)
+    theta_s = np.array(gamma_pair(s_unit), dtype=float)
 
     Lambda, trace_idx, bulk_idx, interior = schur.schur_dtn_matrix(15, 4.0)
     Lambda_sym = 0.5 * (Lambda + Lambda.T)
@@ -175,11 +193,15 @@ def main() -> int:
     print(f"  ||Xi_R^(0)(2; shell)|| = {norm_xi2_s:.6e}")
 
     record(
-        "the route-2 background is exact on PL S^3 x R",
-        "PL homeomorphic to S^3" in s3_text
+        "the route-2 background is bounded composite rather than exact",
+        "bounded composite background `PL S^3 x R`" in spacetime_text
+        and "Upstream-tier accounting" in spacetime_text
+        and "S3_GENERAL_R_DERIVATION_NOTE.md" in spacetime_text
+        and "ANOMALY_FORCES_TIME_THEOREM.md" in spacetime_text
         and "d_t = 1" in anomaly_text
         and "T_R = exp(-Lambda_R)" in transfer_text,
-        "S^3 compactification + anomaly-forced single-clock time are present",
+        "S^3 compactification + single-clock time are present, with upstream-tier inheritance disclosed",
+        status="BOUNDED",
     )
     record(
         "the exact slice generator Lambda_R is symmetric positive definite",
@@ -220,7 +242,7 @@ def main() -> int:
     print("\nInterpretation:")
     print(
         "Route 2 now has a concrete bounded spacetime tensor carrier candidate. "
-        "It lives on the exact PL S^3 x R background, uses the exact slice "
+        "It lives on the bounded composite PL S^3 x R background, uses the exact slice "
         "generator Lambda_R, and lifts the bounded bright-channel support pair "
         "Theta_R^(0) into a time-dependent rank-1 spacetime tensor. This is the "
         "smallest plausible mediator between the support-side tensor data and "

@@ -42102,10 +42102,6 @@
     },
     {
       "from": "theta_g1_defect_closure_current_surface_no_go_note_2026-07-04",
-      "to": "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02"
-    },
-    {
-      "from": "theta_g1_defect_closure_current_surface_no_go_note_2026-07-04",
       "to": "minimal_axioms"
     },
     {
@@ -42114,11 +42110,19 @@
     },
     {
       "from": "theta_g1_defect_closure_current_surface_no_go_note_2026-07-04",
+      "to": "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02"
+    },
+    {
+      "from": "theta_g1_defect_closure_current_surface_no_go_note_2026-07-04",
       "to": "theta_gauge_winding_axiom_update_no_go_note_2026-07-04"
     },
     {
       "from": "theta_g1_defect_closure_current_surface_no_go_note_2026-07-04",
       "to": "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04"
+    },
+    {
+      "from": "theta_g1_defect_closure_current_surface_no_go_note_2026-07-04",
+      "to": "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04"
     },
     {
       "from": "theta_g1_exact_branch_constraint_no_go_note_2026-07-04",
@@ -110642,7 +110646,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "00fa30f17ec265499caf57bc68250a72ec1731ecc00a452283545f83a0cd8381",
+      "note_hash": "086b8e5923bf226eb6bff6748099ff8b72da218b54d1e7e3e8ebda993977cf1c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118518,14 +118522,15 @@
       "claim_type_seed_hint": "no_go",
       "deps": [
         "theta_gauge_positive_route_stretch_status_2026-07-04",
-        "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02",
         "minimal_axioms",
         "admitted_input_registry_tier_a_note_2026-05-23",
+        "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02",
         "theta_gauge_winding_axiom_update_no_go_note_2026-07-04",
-        "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04"
+        "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04",
+        "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5e231ebc04e3c08dffa78c0e8080218fa04260675832c72aa2cc43b2c0ac94c5",
+      "note_hash": "a52b499f467ef6d005e12b326d9fd43bccbfa33c02e945d0851f244bcc6b4eba",
       "path": "docs/THETA_G1_DEFECT_CLOSURE_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md",
       "runner_path": "scripts/theta_g1_defect_closure_current_surface_no_go_2026_07_04.py",
       "title": "Theta G1 Defect Closure Current Surface No-Go Note"
@@ -126913,8 +126918,8 @@
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14510,
-    "leaf_count": 1268,
+    "edge_count": 14511,
+    "leaf_count": 1267,
     "node_count": 3844,
     "root_count": 1102,
     "runners_with_path": 3467

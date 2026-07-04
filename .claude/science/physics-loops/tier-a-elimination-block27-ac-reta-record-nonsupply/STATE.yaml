@@ -1,0 +1,36 @@
+block: tier-a-elimination-block27-ac-reta-record-nonsupply
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block27-ac-reta-record-nonsupply-20260704
+base_branch: physics-loop/tier-a-elimination-block26-theta-action-entry-20260704
+target: AC_phi_lambda(ii) R-eta versus updated Record additivity
+claim_type: no_go
+registry_edits: false
+retirement_claimed: false
+status: pr_open
+source_commit: e0ac62d71
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4964
+active_route: "test whether updated Record scalar additivity supplies density-read-as-angle R-eta"
+hard_residual: "derive a separate inhomogeneous readout-context, occurrence, or physical-action bridge selecting the direct density member"
+files_touched:
+  - docs/ACPHILAMBDA_R_ETA_RECORD_ADDITIVITY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
+  - scripts/acphilambda_r_eta_record_additivity_non_supply_no_go_2026_07_04.py
+  - logs/runner-cache/acphilambda_r_eta_record_additivity_non_supply_no_go_2026_07_04.txt
+  - .claude/science/physics-loops/tier-a-elimination-block27-ac-reta-record-nonsupply/
+open_imports:
+  - R-eta readout-context selection
+  - occurrence-lane event-rate theorem
+  - physical action/source bridge for charged-lepton holonomy
+  - owner governance route for a narrow readout-selection primitive or premise
+no_go_routes:
+  - Record additivity alone does not select the R-eta readout map
+trace_gate_classification: negative_route_pruning
+review_findings: "Local review-loop emulation pending; source boundaries deny AC retirement, R-eta derivation, registry edits, primitive edits, and global future-route foreclosure."
+verification:
+  runner: "PASS=57 FAIL=0"
+  py_compile: pass
+  audit_pipeline: "pass; newly seeded rows=1"
+  audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
+  diff_check: pass
+audit_row: "acphilambda_r_eta_record_additivity_non_supply_no_go_note_2026-07-04: claim_type=no_go, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
+next_exact_action: "Watch hosted audit_pipeline, then continue with R-eta readout-context theorem, occurrence-lane route, AC occupancy realization binary, or theta physical-context blockers."
+stop_condition: "Block complete after PR status is verified and local lock is removed or campaign pivots."

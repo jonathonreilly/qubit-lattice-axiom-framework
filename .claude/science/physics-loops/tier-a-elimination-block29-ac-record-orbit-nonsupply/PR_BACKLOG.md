@@ -1,8 +1,8 @@
 # PR Backlog
 
-Pending PR:
+Opened PR:
 
-- Block29 AC Record outcome-orbit occupancy non-supply no-go.
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4970
 
 Base:
 

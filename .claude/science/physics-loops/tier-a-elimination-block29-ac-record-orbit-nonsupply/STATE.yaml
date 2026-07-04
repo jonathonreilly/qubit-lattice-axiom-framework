@@ -6,9 +6,9 @@ target: AC_phi_lambda(i) Record outcome-orbit non-supply
 claim_type: no_go
 registry_edits: false
 retirement_claimed: false
-status: local_verified
-source_commit: pending
-pr: pending
+status: pr_open
+source_commit: b9aad177d
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4970
 active_route: "test whether current or historical Record outcome-orbit content supplies the AC(i) occupancy dictionary"
 hard_residual: "derive physical dictionary/determinant-power selection for the matter action"
 files_touched:
@@ -33,5 +33,5 @@ verification:
   audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
   diff_check: pass
 audit_row: "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04: claim_type=no_go, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
-next_exact_action: "Publish stacked PR, watch hosted audit_pipeline, then continue with physical horn-selection or R-eta routes."
+next_exact_action: "Watch hosted audit_pipeline, then continue with physical horn-selection or R-eta routes."
 stop_condition: "Block complete after PR status is verified and local lock is removed."

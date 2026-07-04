@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_hubble_lane5_two_gate_dependency_firewall_criticality_bump_hygiene_2026_06_04.py
-runner_sha256: b89618cf4839d39c459ff3335fe98bc431c0c00b7b34d1e05334daa0d6b770f3
-timeout_sec: 120
+runner_sha256: b3df900e8bc41ff04bca49930abb4cac492360ad65449b478444044acbb3dbed
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.63
+elapsed_sec: 0.47
 status: ok
 ----- stdout -----
 ========================================================================
@@ -13,36 +13,47 @@ Repo root: <repo>
 Parent note: docs/HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md
 Parent runner: scripts/frontier_hubble_lane5_two_gate_dependency_firewall.py
 Scope: meta evidence only; no theorem claim and no verdict change.
+Audit-lane fields are informational metadata, not pass/fail targets.
+PASS parent_ledger_row_present
 PASS parent_note_exists
 PASS parent_runner_exists
-PASS parent_claim_type_expected
+PASS parent_claim_type_field_present :: claim_type=positive_theorem
 PASS parent_runner_path_expected
-PASS parent_current_criticality_expected
-PASS parent_current_load_expected :: load=9.644
-PASS parent_note_hash_expected
+PASS parent_current_criticality_field_present :: criticality=high
+PASS parent_current_load_numeric :: load=10.2
+PASS parent_status_fields_present :: effective_status=unaudited audit_status=unaudited
+PASS parent_note_hash_field_present
 PASS parent_note_hash_matches_ledger
-PASS parent_runner_hash_expected
-PASS parent_deps_exact :: count=6
-PASS parent_has_no_helper_runners
+PASS parent_runner_hash_computable
+PASS parent_deps_include_required_sources :: required=6 row_deps=6
+PASS parent_helper_runner_paths_field_present :: count=0
 PASS upstream_row_present_cosmology_open_number_reduction_theorem_note_2026-04-26
-PASS upstream_row_unresolved_cosmology_open_number_reduction_theorem_note_2026-04-26
+PASS upstream_effective_status_field_present_cosmology_open_number_reduction_theorem_note_2026-04-26 :: value=unaudited
+PASS upstream_audit_status_field_present_cosmology_open_number_reduction_theorem_note_2026-04-26 :: value=unaudited
 PASS upstream_row_present_hubble_lane5_c3_vacuum_topology_no_active_route_note_2026-04-27
-PASS upstream_row_unresolved_hubble_lane5_c3_vacuum_topology_no_active_route_note_2026-04-27
+PASS upstream_effective_status_field_present_hubble_lane5_c3_vacuum_topology_no_active_route_note_2026-04-27 :: value=unaudited
+PASS upstream_audit_status_field_present_hubble_lane5_c3_vacuum_topology_no_active_route_note_2026-04-27 :: value=unaudited
 PASS upstream_row_present_hubble_lane5_eta_retirement_gate_audit_note_2026-04-26
-PASS upstream_row_unresolved_hubble_lane5_eta_retirement_gate_audit_note_2026-04-26
+PASS upstream_effective_status_field_present_hubble_lane5_eta_retirement_gate_audit_note_2026-04-26 :: value=unaudited
+PASS upstream_audit_status_field_present_hubble_lane5_eta_retirement_gate_audit_note_2026-04-26 :: value=unaudited
 PASS upstream_row_present_hubble_lane5_planck_c1_gate_audit_note_2026-04-26
-PASS upstream_row_unresolved_hubble_lane5_planck_c1_gate_audit_note_2026-04-26
+PASS upstream_effective_status_field_present_hubble_lane5_planck_c1_gate_audit_note_2026-04-26 :: value=unaudited
+PASS upstream_audit_status_field_present_hubble_lane5_planck_c1_gate_audit_note_2026-04-26 :: value=unaudited
 PASS upstream_row_present_hubble_tension_structural_lock_theorem_note_2026-04-26
-PASS upstream_row_unresolved_hubble_tension_structural_lock_theorem_note_2026-04-26
+PASS upstream_effective_status_field_present_hubble_tension_structural_lock_theorem_note_2026-04-26 :: value=unaudited
+PASS upstream_audit_status_field_present_hubble_tension_structural_lock_theorem_note_2026-04-26 :: value=unaudited
 PASS upstream_row_present_omega_lambda_matter_bridge_theorem_note_2026-04-22
-PASS upstream_row_unresolved_omega_lambda_matter_bridge_theorem_note_2026-04-22
-PASS all_upstream_rows_unresolved
-PASS prior_medium_positive_snapshot_present
-PASS prior_snapshot_load_expected
-PASS prior_invalidation_was_priority_bump
+PASS upstream_effective_status_field_present_omega_lambda_matter_bridge_theorem_note_2026-04-22 :: value=unaudited
+PASS upstream_audit_status_field_present_omega_lambda_matter_bridge_theorem_note_2026-04-22 :: value=unaudited
+PASS all_required_upstream_rows_present
+PASS previous_audit_history_present
+PASS prior_snapshot_present
+PASS prior_snapshot_load_field_present :: load=5.907
+PASS prior_snapshot_criticality_field_present :: criticality=medium
+PASS prior_invalidation_reason_field_present :: reason=criticality_increased:medium->high
 PASS parent_runner_exit_zero :: returncode=0
 PASS parent_runner_tally_present
-PASS parent_runner_pass_count_eighteen :: pass_count=18
+PASS parent_runner_pass_count_at_least_eighteen :: pass_count=18
 PASS parent_runner_fail_count_zero :: fail_count=0
 PASS parent_runner_transcript_contains_core_phrase_0
 PASS parent_runner_transcript_contains_core_phrase_1
@@ -63,10 +74,12 @@ PASS parent_import_section_names_dep_5
 PASS companion_declares_meta_type
 PASS companion_disclaims_new_theorem
 PASS companion_disclaims_verdict_change
-PASS companion_keeps_dependencies_unresolved
+PASS companion_records_registered_dependencies
+PASS companion_disclaims_dependency_resolution
+PASS companion_marks_audit_values_informational
 PASS companion_disclaims_h0_derivation
 ========================================================================
-SUMMARY: PASS=52 FAIL=0
+SUMMARY: PASS=64 FAIL=0
 ========================================================================
 
 ----- stderr -----

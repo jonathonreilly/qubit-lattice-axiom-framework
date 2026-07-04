@@ -1,0 +1,30 @@
+loop_slug: tier-a-elimination-block05-reta-frontier
+goal: "Eliminate Tier-A admissions by retiring or reclassifying retireable pieces while preserving unavoidable primitives."
+target_status: no-go
+branch: physics-loop/tier-a-elimination-block05-reta-frontier-20260704
+base: physics-loop/tier-a-elimination-block04-species-bridge-20260704
+stacked_on_pr: 4929
+started_at: "2026-07-04"
+mode: interactive
+cycle_count: 1
+active_block: block05-ac-reta-angle-native-frontier
+active_route: "AC_phi_lambda(ii) R-eta angle-native/homogeneous route pruning"
+hard_residual: "R-eta remains Tier-A unless a licensed fixed-locus-to-angle bridge, record-facing inhomogeneous readout theorem, occurrence theorem, or owner governance primitive is supplied."
+lock:
+  branch_local_lock: "/tmp/cl3-tier-a-block05-reta-origin-block04/.physics_worker_lock.json"
+files_touched:
+  - "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md"
+  - "scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py"
+  - "logs/runner-cache/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.txt"
+  - ".claude/science/physics-loops/tier-a-elimination-block05-reta-frontier/"
+checks: []
+checks:
+  - "PYTHONPATH=scripts python3 scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py: PASS=128 FAIL=0"
+  - "python3 -m py_compile scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py: pass"
+  - "bash docs/audit/scripts/run_pipeline.sh: pass; no errors, existing warnings/notices only"
+  - "python3 docs/audit/scripts/audit_lint.py --strict: pass; no errors, existing warnings/notices only"
+  - "git diff --check: pass"
+review_status: "local review-loop pass; no retained-status overclaim, no registry edit, new audit row remains unaudited"
+pr_status: "pending"
+next_exact_action: "Commit, push, and open the stacked PR."
+stop_condition: "Not stopped until PR handling completes."

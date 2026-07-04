@@ -1,0 +1,96 @@
+theta G1 kinetic-isotropy 4D scaffold exact-support verifier
+
+================================================================================================
+A. source presence, metadata, and firewall
+================================================================================================
+[PASS] exists: docs/THETA_G1_KINETIC_ISOTROPY_4D_SCAFFOLD_EXACT_SUPPORT_SPLIT_NOTE_2026-07-04.md
+[PASS] exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/audit/data/axiom_premise_nodes.json
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] exists: docs/THETA_G1_4D_CARRIER_SUPPLY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/THETA_G1_DEFECT_SUPPRESSION_SUPPLIED_PENALTY_EXACT_SUPPORT_NOTE_2026-07-04.md
+[PASS] note has Type bounded_theorem
+[PASS] note has Claim type bounded_theorem
+[PASS] note declares exact-support scaffold status
+[PASS] runner path is wired
+[PASS] scope boundary present: This note does not retire theta
+[PASS] scope boundary present: does not set `theta_bar = 0`
+[PASS] scope boundary present: does not edit any Tier-A registry
+[PASS] scope boundary present: does not claim that the current framework derives the physic
+[PASS] banned overclaim absent: theta is retired
+[PASS] banned overclaim absent: theta_bar = 0 is derived
+[PASS] banned overclaim absent: the physical 4D gauge carrier is derived
+[PASS] banned overclaim absent: compact topology is supplied
+[PASS] banned overclaim absent: branch cochains are supplied
+[PASS] banned overclaim absent: sector/readout registration is supplied
+
+================================================================================================
+B. premise and Tier-A registry state
+================================================================================================
+[PASS] kinetic primitive is approved premise node
+[PASS] kinetic current path is expected note
+[PASS] minimal ledger row resolves
+[PASS] kinetic ledger row resolves
+[PASS] block37 ledger row resolves
+[PASS] block38 ledger row resolves
+[PASS] registry ledger row resolves
+[PASS] Tier-A count remains two
+[PASS] theta minimum decomposition unchanged
+
+================================================================================================
+C. source-boundary checks
+================================================================================================
+[PASS] kinetic primitive phrase present: Euclidean regulator block `Z^3 x Z_tau`
+[PASS] kinetic primitive phrase present: hypercubic-symmetric
+[PASS] kinetic primitive phrase present: c_t = c_s
+[PASS] kinetic primitive phrase present: not a fourth spatial dimension
+[PASS] kinetic primitive phrase present: does not supply any dimensionless dynamical quantity
+[PASS] minimal axiom withholding present: source/action and physical-observable identification
+[PASS] minimal axiom withholding present: readout-context selection
+[PASS] minimal axiom withholding present: do not close, import, or rename the framework's downstream
+[PASS] Block37 no-go preserved: does not supply the 4D cubical/gauge carrier
+[PASS] Block37 no-go preserved: Theta's gauge-side winding account therefore remains live
+[PASS] Block38 boundary preserved: No physical 4D carrier is supplied
+[PASS] Block38 boundary preserved: No current-surface defect penalty
+
+================================================================================================
+D. finite local cell arithmetic
+================================================================================================
+[PASS] 3D has three edge directions
+[PASS] 3D has three plaquette orientations
+[PASS] 3D has no 4-cell orientation
+[PASS] 4D scaffold has four edge directions
+[PASS] 4D scaffold has six plaquette orientations
+[PASS] 4D scaffold has four 3-cell orientations
+[PASS] 4D scaffold has one 4-cell orientation
+[PASS] 3D has no complementary plane pairs spanning four directions
+[PASS] 4D has three complementary plane pairs
+[PASS] 4D complementary pairs match intersection-form pairs
+[PASS] all complementary 2-cup-2 signs are nonzero
+[PASS] non-complementary spatial pair has zero 4D cup target
+[PASS] note records local scaffold support
+[PASS] note records 3D C4 absence
+
+================================================================================================
+E. open-content boundary
+================================================================================================
+[PASS] open content explicitly withheld: compact `T^4` topology or boundary conditions
+[PASS] open content explicitly withheld: gauge links, branch 2-cochains, or integer shift variables
+[PASS] open content explicitly withheld: non-exact `H^2` sectors
+[PASS] open content explicitly withheld: the closedness law `dn=0`
+[PASS] open content explicitly withheld: physical record/readout registration
+[PASS] open content explicitly withheld: the `F cup F` phase coefficient
+[PASS] non-claim present: Theta is not retired
+[PASS] non-claim present: No physical 4D carrier theorem is supplied
+[PASS] non-claim present: No G1 closedness or defect-suppression theorem is supplied
+[PASS] non-claim present: No G3 phase source
+[PASS] remaining route present: Gauge branch carrier theorem on the scaffold
+[PASS] remaining route present: Compact/topological sector theorem
+[PASS] remaining route present: G1 closedness or defect suppression
+
+================================================================================================
+TOTAL: PASS=71 FAIL=0 CHECKS=71
+================================================================================================

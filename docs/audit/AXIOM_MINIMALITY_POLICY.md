@@ -2,6 +2,11 @@
 
 > **Key terms used in this doc** are indexed A-Z at [docs/KEY_TERMINOLOGY.md](../KEY_TERMINOLOGY.md); each row points to the canonical source-of-truth doc.
 
+> **Related policy:** document classes, premise weight, and citation
+> discipline for ALL repo documents (including zero-weight orientation
+> memos) are fixed by
+> [DOCUMENT_AUTHORITY_AND_CITATION_POLICY.md](DOCUMENT_AUTHORITY_AND_CITATION_POLICY.md).
+
 **Status:** binding rule for the audit lane through completion of the full
 repo audit.
 

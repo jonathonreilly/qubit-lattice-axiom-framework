@@ -1,0 +1,124 @@
+Theta G2 physical sector registration stretch no-go
+========================================================================================
+
+----------------------------------------------------------------------------------------
+A - source, registry, and axiom boundaries
+----------------------------------------------------------------------------------------
+PASS: exists: docs/THETA_G2_PHYSICAL_SECTOR_REGISTRATION_STRETCH_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: exists: docs/audit/data/tier_a_admissions.json
+PASS: exists: docs/audit/data/audit_ledger.json
+PASS: exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+PASS: exists: docs/THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md
+PASS: exists: docs/THETA_SU3_STAR_PAIRWISE_REDUCTION_OBSTRUCTION_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/THETA_SU3_STAR_CENTRAL_SECTOR_PROJECTION_EXACT_SUPPORT_NOTE_2026-07-04.md
+PASS: exists: docs/THETA_G3_CENTRAL_SECTOR_PHASE_CHARACTER_EXACT_SUPPORT_NOTE_2026-07-04.md
+PASS: exists: docs/THETA_CLOSED_NONEXACT_SECTOR_RECORD_READOUT_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+PASS: ledger row resolves for route
+PASS: route is not a new retained authority
+PASS: ledger row resolves for pairwise
+PASS: pairwise is not a new retained authority
+PASS: ledger row resolves for central
+PASS: central is not a new retained authority
+PASS: ledger row resolves for phase
+PASS: phase is not a new retained authority
+PASS: ledger row resolves for closed_record
+PASS: closed_record is not a new retained authority
+PASS: ledger row resolves for minimal
+PASS: minimal is not a new retained authority
+PASS: ledger row resolves for registry
+PASS: registry is not a new retained authority
+PASS: note declares no_go type
+PASS: note declares no_go claim type
+PASS: note declares source-side stretch no-go status
+PASS: runner path is wired in note
+PASS: Tier-A genuine admitted input count remains two
+PASS: canonical Tier-A IDs remain AC and theta
+PASS: theta minimum decomposition remains gauge plus mass
+PASS: AC minimum decomposition remains two atoms
+PASS: minimal axioms boundary contains: Records form
+PASS: minimal axioms boundary contains: source/action and physical-observable identification
+PASS: minimal axioms boundary contains: central-sector decomposition
+PASS: minimal axioms boundary contains: readout-context selection
+PASS: minimal axioms boundary contains: formation rules
+PASS: minimal axioms boundary contains: downstream open gates
+PASS: registry keeps theta residual: multi-plaquette / large-gauge-winding account
+PASS: registry keeps theta residual: determinant-readout bridge
+PASS: registry keeps theta residual: theta
+PASS: route map names gate: G2 nonabelian sector/readout registration
+PASS: route map names gate: G3 phase-type insertion
+PASS: route map names gate: G4 physical theta assembly
+PASS: source support/non-supply contains: pairwise composite class data do not determine
+PASS: source support/non-supply contains: central-sector projection kills nonclosed triples
+PASS: source support/non-supply contains: records a central phase
+PASS: source support/non-supply contains: exact orientation-odd cocycle
+PASS: source support/non-supply contains: physical sector records/readout
+PASS: note preserves boundary: Theta is not retired.
+PASS: note preserves boundary: The Tier-A registry is not edited.
+PASS: note preserves boundary: No physical SU(3) theta sector is registered.
+PASS: note preserves boundary: No central-sector readout context is selected.
+PASS: note preserves boundary: No G3 phase source, coefficient, action entry, or physical wei
+PASS: note preserves boundary: No audit status or effective status is changed.
+PASS: forbidden overclaim absent: Strong CP is solved
+PASS: forbidden overclaim absent: therefore theta closes
+PASS: forbidden overclaim absent: audit_status: audited_clean
+PASS: forbidden overclaim absent: effective_status: retained
+PASS: forbidden overclaim absent: promoted to retained
+PASS: forbidden overclaim absent: sector-readout primitive is adopted
+
+----------------------------------------------------------------------------------------
+B - finite central-sector payload still checks
+----------------------------------------------------------------------------------------
+PASS: closed witness has zero Heisenberg vector sum
+PASS: open witness has nonzero Heisenberg vector sum
+PASS: closed witness has central ABC phase
+PASS: open witness has no central ABC projection
+PASS: closed witness q_c is +1
+PASS: orientation-reversed witness q_c is -1 mod 3
+PASS: signed q maps mod-2 representative to -1
+PASS: q_c equals symplectic area on closed witness
+PASS: orientation reversal flips symplectic area
+PASS: orientation pair has matching pairwise class signatures
+PASS: orientation pair has different oriented cocycles
+PASS: matrix X has determinant one
+PASS: matrix Z has determinant one
+PASS: matrix X has three cubic-root eigenvalues
+PASS: matrix Z X = omega^{-1} X Z
+PASS: explicit closed trace matches central projection
+PASS: explicit open trace is killed by central projection
+PASS: central projection is nonzero iff vector sum closes
+PASS: closed sector is nonempty
+PASS: nonclosed sector is nonempty
+PASS: closed sector contains all q_c classes
+
+----------------------------------------------------------------------------------------
+C - Record-additive readout underdetermination
+----------------------------------------------------------------------------------------
+PASS: zero readout has I(empty)=0
+PASS: zero readout is additive over supplied disjoint atoms
+PASS: plus readout has I(empty)=0
+PASS: plus readout is additive over supplied disjoint atoms
+PASS: minus readout has I(empty)=0
+PASS: minus readout is additive over supplied disjoint atoms
+PASS: even readout has I(empty)=0
+PASS: even readout is additive over supplied disjoint atoms
+PASS: additive readouts disagree on q=+1 atom
+PASS: additive readouts disagree on q=-1 atom
+PASS: zero and plus readouts both additive but select different theta payloads
+PASS: plus and minus readouts both additive but flip orientation sign
+PASS: even readout erases orientation sign while staying additive
+PASS: same pairwise signatures permit oriented, even, or zero scalar policies
+PASS: underdetermination remains even after supplied triple atoms are granted
+
+----------------------------------------------------------------------------------------
+D - no-go target is current-surface non-supply, not impossibility
+----------------------------------------------------------------------------------------
+PASS: note states scoped no-go: the current axiom surface still does not derive that this payl
+PASS: note states scoped no-go: Record then disciplines a readout only after the record conten
+PASS: note states scoped no-go: Record additivity by itself does not select the zero map
+PASS: note states scoped no-go: physical sector/readout registration of the central cocycle
+PASS: note states scoped no-go: It is not a universal impossibility theorem against future phy
+
+========================================================================================
+RESULT: PASS=102 FAIL=0 CHECKS=102
+========================================================================================

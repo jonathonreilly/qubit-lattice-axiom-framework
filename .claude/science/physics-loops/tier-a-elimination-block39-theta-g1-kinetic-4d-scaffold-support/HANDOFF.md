@@ -9,7 +9,7 @@ the local `2-cochain cup 2-cochain -> 4-cochain` slot.
 
 Branch: `physics-loop/tier-a-elimination-block39-theta-g1-kinetic-4d-scaffold-support-20260704`
 Base: `physics-loop/tier-a-elimination-block38-theta-g1-defect-suppression-support-20260704`
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4980
 
 ## Claim Movement
 
@@ -47,6 +47,6 @@ open.
 
 ## Next Exact Action
 
-Commit/push/open PR. The next science move should derive gauge branch
-data/topological sectors on the scaffold, derive G1 closedness or a physical
-defect-penalty action, or pivot to theta mass-side determinant bridge.
+Monitor hosted audit for PR #4980. The next science move should derive gauge
+branch data/topological sectors on the scaffold, derive G1 closedness or a
+physical defect-penalty action, or pivot to theta mass-side determinant bridge.

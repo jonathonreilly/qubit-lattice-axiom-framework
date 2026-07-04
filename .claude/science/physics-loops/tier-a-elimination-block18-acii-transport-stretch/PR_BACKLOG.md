@@ -1,9 +1,12 @@
 # PR Backlog
 
-Open a stacked PR against
+Opened stacked PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4946
+
+Base branch:
 `physics-loop/tier-a-elimination-block17-acii-reta-current-20260704`.
 
-Proposed title:
+Title:
 
 ```text
 [physics-loop] tier-a-elimination-block18-acii-transport-stretch no-go

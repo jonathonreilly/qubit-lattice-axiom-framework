@@ -7,8 +7,8 @@ same-surface transport equality route.
 
 Branch: `physics-loop/tier-a-elimination-block18-acii-transport-stretch-20260704`
 Base: `physics-loop/tier-a-elimination-block17-acii-reta-current-20260704`
-PR: pending
-Source commit: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4946
+Source commit: `56092cb94`
 
 ## Expected Claim Movement
 
@@ -46,4 +46,4 @@ Audit row:
 
 ## Next Exact Action
 
-Commit, push, open a stacked PR, then monitor audit.
+Monitor GitHub audit for PR #4946 and continue the Tier-A elimination campaign.

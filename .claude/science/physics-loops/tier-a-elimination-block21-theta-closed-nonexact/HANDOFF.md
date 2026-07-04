@@ -7,7 +7,8 @@ to physical theta sector records/readout.
 
 Branch: `physics-loop/tier-a-elimination-block21-theta-closed-nonexact-20260704`
 Base: `physics-loop/tier-a-elimination-block20-theta-readiness-20260704`
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4949
+Source commit: `85996846d`
 
 ## Expected Claim Movement
 
@@ -41,7 +42,6 @@ or keep theta admitted.
 
 ## Next Exact Action
 
-Commit, push, and open a stacked block21 PR, then continue the Tier-A
-elimination campaign toward dynamical defect suppression, SU(3) sector
-registration, phase-source derivation, or a mass-side determinant positive
-route.
+Verify PR status, then continue the Tier-A elimination campaign toward
+dynamical defect suppression, SU(3) sector registration, phase-source
+derivation, or a mass-side determinant positive route.

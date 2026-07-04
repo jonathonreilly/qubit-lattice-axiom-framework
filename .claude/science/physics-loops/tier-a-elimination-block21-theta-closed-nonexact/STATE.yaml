@@ -6,7 +6,7 @@ target: theta closed-nonexact sector record/readout shortcut
 claim_type: no_go
 registry_edits: false
 retirement_claimed: false
-status: ready_for_pr
+status: pr_open
 active_route: "carrier witness + Record/Admissibility + reconstruction support already licenses physical sector records"
 hard_residual: "derive physical closed-nonexact sector records/readout without importing a sector primitive"
 files_touched:
@@ -31,5 +31,8 @@ verification:
   audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
   diff_check: pass
 audit_row: "theta_closed_nonexact_sector_record_readout_current_surface_no_go_note_2026-07-04: claim_type=no_go, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
-next_exact_action: "Commit, push, open stacked PR, verify PR status, then either pivot to the next Tier-A elimination opportunity or stop with the lock removed."
-stop_condition: "Block complete only after checks pass, review disposition is recorded, PR opens/backlogs, and local lock is removed or campaign pivots."
+source_commit: 85996846d
+pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4949"
+pr_status: open_pending_checks
+next_exact_action: "Verify PR status, then either pivot to the next Tier-A elimination opportunity or stop with the lock removed."
+stop_condition: "Block complete only after PR status is verified and local lock is removed or campaign pivots."

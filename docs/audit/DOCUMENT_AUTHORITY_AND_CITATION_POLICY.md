@@ -39,7 +39,14 @@ runner mechanically checks the invariants.
   primary runner and a claim type. Premise weight: none until audit
   ratification; after ratification, exactly the audited `claim_scope`,
   nothing broader; prose outside the scope is not citable.
-  Cite note + scope; never cite a title or a summary.
+  Cite note + scope; never cite a title or a summary. Disambiguation
+  (2026-07-04): the genre name `bounded_theorem` means SCOPE-PINNED — the
+  claim is bounded to its quoted sentences. It is unrelated to the audit
+  status `retained_bounded`, which marks dependence on a Tier-A admission.
+  A Class C note whose premises are axiom sentences or approved primitives
+  alone audits toward plain retained — unbounded theory; conditional notes
+  audit as clean conditionals and convert to unbounded theory when their
+  named premise is supplied or derived.
 
 - **Class D — proposals.** Drafted axiom text, primitive drafts, owner
   one-pagers. Premise weight: none until an owner channel consumes them.

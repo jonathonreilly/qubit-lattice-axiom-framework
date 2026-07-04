@@ -1,10 +1,10 @@
 """Composite link under two named record instruments: pointer/erased split,
 exact slaving, instrument footprint.
 
-Route R-B of the gauge-link dynamics frontier (bounded-by-design). Record
-formation is NOT unconditionally forced by the axioms
+Route R-B of the gauge-link dynamics frontier (bounded-by-design). The
+formation rule/process is not supplied by the axioms
 (record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06,
-ledger retained_no_go at drafting time), so every record instrument here is a
+post-append narrowed scope), so every record instrument here is a
 NAMED ADMISSION, not a derivation. Two flanking admissions are named:
 
   I-A: per-site occupation-basis dephasing instrument -- Lueders projectors

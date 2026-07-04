@@ -138,7 +138,7 @@ exactly one answer. Additional
 structures such as readout-context selection, decomposition, `K`/CPT
 structure, sector-generation rules, weighting, normalization, probability,
 measurement/decoherence dynamics, record-production dynamics, physical
-persistence dynamics, occurrence rules, update laws, time metric,
+persistence dynamics, formation rules, update laws, time metric,
 within-sector data, occupancy rules, P2/modulus, log-det readouts,
 source/action bridges, scale, local observability, law-admissibility or
 transition relations, kinetic-branch selection, or arbitrary observable

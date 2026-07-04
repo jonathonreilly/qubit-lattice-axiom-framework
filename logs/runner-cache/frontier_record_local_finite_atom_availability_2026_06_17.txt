@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_local_finite_atom_availability_2026_06_17.py
-runner_sha256: 970fea5b752a83b4c4a20599d616361c37f030791bcd84167566949768a5906a
+runner_sha256: b0fd766b23d721ce1254b92aa74dbabcaf4f7e3f4683d866456b4ca3a3b7e546
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 Record local finite readout-atom availability theorem
@@ -16,7 +16,7 @@ A. source authority and boundary text
 [PASS] A2 minimal axioms expose one-site M_2(C)
 [PASS] A3 minimal Record requires a supplied readout context
 [PASS] A4 minimal Record excludes production/probability/context selection
-[PASS] A5 retained no-go boundary keeps record formation unforced
+[PASS] A5 post-append boundary keeps formation rule/process unsupplied
 [PASS] A6 theorem boundary explicitly does not derive production
 [PASS] A7 theorem names record-eligible readout atoms, not produced records
 

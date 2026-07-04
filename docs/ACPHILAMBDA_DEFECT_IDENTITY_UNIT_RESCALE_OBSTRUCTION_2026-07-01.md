@@ -83,10 +83,12 @@ The Record axiom's registry node
 `minimal_axioms`) states the exclusion directly:
 
 ```text
-It still supplies no context-selection rule, occurrence rule, weighting,
-normalization, probability, update law, measurement/decoherence dynamics,
-K/CPT structure, central-sector decomposition, source/action bridge, physical
-observable bridge, or downstream theory consequence.
+It still supplies no context-selection rule, formation rule (which admissible
+possibility a new record locks, at which site, with what weight, or at what
+rate), weighting, normalization, probability, update law,
+measurement/decoherence dynamics, K/CPT structure, central-sector
+decomposition, source/action bridge, physical observable bridge, or downstream
+theory consequence.
 ```
 
 The runner verifies each encoded clause is satisfied by `lambda * I` whenever

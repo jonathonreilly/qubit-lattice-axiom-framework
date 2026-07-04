@@ -1,22 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_instrument_composite_link_erasure_slaving_2026_06_09.py
-runner_sha256: 5ee97d32e85c7e11cba83fb9b0229f8fb3574e799c0a1a62bd20fcba49a7fa7b
+runner_sha256: 2f3d6b31ae6ecc4f90b148b6ccf88ad61305be187b0a9a35d88f9d206808e84f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 == Part A: Fock-level anchor (instrument rules are exact one-body maps) ==
 [PASS] A1: CAR algebra exact (Jordan-Wigner, 6 modes)  (max dev = 0.00e+00)
-[PASS] A2: one-body data evolves autonomously under quadratic H (non-Gaussian state)  (max dev = 8.89e-16)
+[PASS] A2: one-body data evolves autonomously under quadratic H (non-Gaussian state)  (max dev = 7.78e-16)
 [PASS] A3: I-A projector family: orthogonal resolution of identity (both sites)  (max dev = 0.00e+00)
 [PASS] A4: I-B projector family: orthogonal resolution of identity (both sites)  (max dev = 0.00e+00)
 [PASS] A5: I-A one-body rule exact: M(x,x)->(1-lam)M+lam diag, M(x,y)->(1-lam)^2 M  (max dev (lam=1, 0.4) = 5.55e-17)
 [PASS] A6: I-B one-body rule exact: M(x,x) preserved FULLY, M(x,y)->(1-lam)^2 M  (max dev (lam=1, 0.4) = 5.55e-17)
 [PASS] A7: site-composition order-independence of the instrument (Fock level)  (max dev = 2.19e-19)
-[PASS] A8: Fock rep intertwines the one-body rotation (setup)  (max dev = 2.73e-15)
-[PASS] A9: I-B channel commutes with local color rotations (color-blind, exact)  (max dev = 7.97e-18)
-[PASS] A10: I-A channel does NOT commute with local color rotations (frame-naming teeth)  (violation = 3.955e-03 (vs I-B 7.97e-18))
+[PASS] A8: Fock rep intertwines the one-body rotation (setup)  (max dev = 1.63e-15)
+[PASS] A9: I-B channel commutes with local color rotations (color-blind, exact)  (max dev = 5.33e-18)
+[PASS] A10: I-A channel does NOT commute with local color rotations (frame-naming teeth)  (violation = 3.955e-03 (vs I-B 5.33e-18))
 [PASS] A11: tr M(x,x) exactly conserved by both instruments  (max dev = 0.00e+00)
 
 == Part B: pointer vs erased content of the composite-link carrier ==

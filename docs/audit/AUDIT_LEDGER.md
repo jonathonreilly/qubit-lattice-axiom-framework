@@ -90,9 +90,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 ### Runner classification (static heuristic)
 
 - runners classified: 3302
-- runners with (C) first-principles compute hits: 1729
+- runners with (C) first-principles compute hits: 1728
 - runners with (D) external comparator hits: 1061
-- decoration candidates (no C, no D): 691
+- decoration candidates (no C, no D): 692
 
 ## Top 25 by load-bearing score (topology only)
 

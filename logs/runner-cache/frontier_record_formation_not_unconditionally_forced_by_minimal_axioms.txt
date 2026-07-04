@@ -1,29 +1,41 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py
-runner_sha256: 7fb3a89f950e3975d54c636ee0d87049b52a2f6eb2f3c94e1c0213e5e3e94ad9
+runner_sha256: e3a7ec4587ac0e16743d0226a3711d532070d751e7228a87f93ff3ca88fae60d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
 ==============================================================================
-NO-GO: record formation is not unconditionally forced by the minimal axioms  [class A]
+NO-GO: formation rule/process is not supplied by the minimal axioms
 ==============================================================================
 
--- baseline-consistent witnesses that record formation is NOT forced --
-  [PASS] (1) H=0 (trivial dynamics): pointer coherence preserved for all t => NO record forms  (coh(t=1,5,20) = [np.float64(0.5), np.float64(0.5), np.float64(0.5)])
-  [PASS] (2) decoupled H = H_S(x)I + I(x)H_E with H != 0 (no coupling): coherence preserved => NO record despite non-trivial dynamics  (coh(t=1,5,20) = [np.float64(0.5), np.float64(0.5), np.float64(0.5)])
-  [PASS] (3) an eigenstate of any (even coupled) H is stationary => coherence frozen => NO record forms (the baseline fixes no state, so an eigenstate is admissible)
+-- occurrence is now axiom content --
+  [PASS] Record axiom contains the occurrence sentence  (generic occurrence supplied)
+  [PASS] premise registry mirrors occurrence  (minimal_axioms node includes occurrence content)
 
--- contrast: coupled non-eigenstate dynamics can decohere --
-  [PASS] (4) a generic coupled H on a non-eigenstate decoheres => a record forms (companion contrast); (1)-(3) are the baseline-consistent witnesses it is not UNCONDITIONAL  (coupled-H coherence = 0.201)
+-- formation rule/process remains outside axioms --
+  [PASS] open-gates boundary contains: formation rules
+  [PASS] open-gates boundary contains: admissible possibility a new record locks
+  [PASS] open-gates boundary contains: at which site
+  [PASS] open-gates boundary contains: with what weight
+  [PASS] open-gates boundary contains: at what rate
+  [PASS] open-gates boundary contains: record-production dynamics
+  [PASS] open-gates boundary contains: time metric
+  [PASS] premise registry boundary contains: formation rule (which admissible possibility a new record locks, at which site, with what weight, or at what rate)
+  [PASS] premise registry boundary contains: record-production process
+  [PASS] premise registry boundary contains: state-selection rule
 
--- the no-go reduction --
-  [PASS] (5) Record explicitly disclaims measurement/decoherence dynamics, and the baseline fixes neither the dynamics nor the state => the (1)-(3) no-record cases are baseline-consistent => unconditional record formation requires an imported decoherence-dynamics premise
+-- no hidden default selector appears in the premise text --
+  [PASS] axiom text contains no default formation selector/rate/weight/comparability phrase
+  [PASS] premise registry contains no default formation selector/rate/weight/comparability phrase
+
+-- underdetermination witness family --
+  [PASS] two supplied extensions can both contain a forming record while selecting different site/possibility data  (occurrence shared; rule content differs)
 
 ==============================================================================
-TOTAL: PASS=5 FAIL=0
-VERDICT: record formation is NOT unconditionally forced by the Lattice/Quantum/Record baseline. Record explicitly excludes measurement/decoherence dynamics, and baseline-consistent witnesses (H=0, decoupled H, any energy eigenstate) produce no records. A coupled non-eigenstate toy model shows record formation can be generic, but generic is not unconditional. A theory layer that wants record production must supply the production/decoherence model explicitly.
+TOTAL: PASS=15 FAIL=0
+VERDICT: generic record occurrence is axiom content, but the minimal axioms do NOT supply a formation rule/process/site/choice/weight/rate/clock/comparability selector. Downstream uses of such content must cite a separate derivation, bridge, explicit admission, or approved primitive.
 
 ----- stderr -----
 

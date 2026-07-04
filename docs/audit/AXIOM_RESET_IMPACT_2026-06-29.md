@@ -83,7 +83,9 @@ assignments independent of the local constraint. It does not by itself promote
 downstream rows that require:
 
 - readout-context selection or measurement-basis selection;
-- probability, Born weights, occurrence rules, or update laws;
+- probability, Born weights, formation rules (which admissible possibility a
+  new record locks, at which site, with what weight, or at what rate), or
+  update laws;
 - local observability or Darwinism-style redundant witness structure;
 - central-sector decomposition or `K`/CPT structure;
 - source/action bridges, log-det readouts, P2/modulus structure, or arbitrary

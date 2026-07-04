@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""The record-arrow low-record-boundary EXISTENCE sub-clause reduces, inside the
-record ontology, to NON-EMPTINESS of the realized record history -- with the theorem
-weight on DURABILITY (append-only => acyclic, well-founded; deletion controls FAIL)
-and NON-MANUFACTURABILITY (rank collapse under CLOSED reversible dynamics; the OPEN
-swap-out escape named and checked), in the SINGLE-CHAIN (totally ordered) sector,
-with the general well-founded case disclosed (multiple minimal ends possible;
-termination survives, uniqueness does not).  The THERMODYNAMIC past hypothesis (low
-entropy, Penrose room) is NOT delivered and remains the named open residual; the
-in-sector boundary facts T1b/T1c are definitional (disclosed), and whether records
-FORM at a blank boundary is realized-state data (counterfactual-disclosed, per the
-realized-state primitive's test).
+"""The record-arrow low-record-boundary sub-clause reduces, inside the
+record ontology, to a supplied nonempty append history -- with the theorem
+weight on DURABILITY (append-only => acyclic, well-founded; deletion controls
+FAIL) and NON-MANUFACTURABILITY (rank collapse under CLOSED reversible
+dynamics; the OPEN swap-out escape named and checked), in the SINGLE-CHAIN
+(totally ordered) sector, with the general well-founded case disclosed
+(multiple minimal ends possible; termination survives, uniqueness does not).
+The THERMODYNAMIC past hypothesis (low entropy, Penrose room) is NOT delivered
+and remains the named open residual; the in-sector boundary facts T1b/T1c are
+definitional (disclosed), and the realized append trajectory/record pattern is
+supplied state/process data.
 
 Class-A exact verification for the source note
 
@@ -55,20 +55,20 @@ disclosed input, not a graded license):
        DISTINCT from the history-level blankness epsilon of T1 (disclosed).
   (T4) THE ARROW ANCHORS (counterfactual-disclosed): with the CONNECTED correlator
        (pointer-basis-robust record measure), the record count at ANY blank
-       boundary is 0; whether records FORM is realized-state data -- the superposed
-       pointer forms 3 (counts 0->3), the pointer eigenstate forms 0 (flat), the
-       I/d equilibrium forms 0 (flat).  The derived direction (arrow note) anchors
-       away from minimal-record ends FOR the realized histories in which records
-       form; formation itself is the non-emptiness input, never claimed structural.
+       boundary is 0. After the 2026-07-04 Record append, generic occurrence is
+       axiom content; the supplied content here is the realized append trajectory
+       and record pattern. The superposed pointer supplies one such trajectory
+       (counts 0->3), while the pointer eigenstate and I/d equilibrium are
+       controls showing that this particular dynamics/readout pattern is not
+       forced by the boundary theorem.
   (T5) RESIDUAL INVENTORY (anti-overclaim controls): the reduction does NOT pin
        the quantitative/thermodynamic content (different-room realizations
        identical); the finite-sector dichotomy is named (unbounded past requires
        unbounded registered content); the realized-state slot (including the
        pointer-basis-vs-superposition choice T4 discloses) is untouched.
 
-RESIDUAL AFTER THIS NOTE: (i) non-emptiness w != epsilon -- an explicit
-APPLICABILITY PRECONDITION, not a derived theorem (vacuous empty-history models are
-formally allowed and carry no arrow); (ii) the SINGLE-CHAIN (total-order) sector
+RESIDUAL AFTER THIS NOTE: (i) the supplied append history/formation rule that
+realizes a specific nonempty chain; (ii) the SINGLE-CHAIN (total-order) sector
 scope -- an assumption beyond the Record axiom (general case: well-founded with
 possibly many minimal ends); (iii) the finite-history sector scope (disclosed, with
 the unbounded-content dichotomy named); (iv) the THERMODYNAMIC past hypothesis (low
@@ -308,17 +308,16 @@ check("T4a at ANY blank boundary the connected-correlator record count is 0 "
       "(pointer-basis ROBUST: superposed, |0>, |1> all start at 0) -- the "
       "boundary-vanishing is structural under the connected measure",
       c_plus[0] == 0 and c_zero[0] == 0 and c_one[0] == 0)
-check("T4b whether records FORM is REALIZED-STATE DATA (counterfactual disclosure, "
-      "per the realized-state primitive's test): the superposed pointer forms "
-      "records (0 -> 3, strictly increasing); the pointer eigenstates form NONE "
-      "(deterministic copies register nothing new); formation is the "
-      "non-emptiness input, never claimed structural",
+check("T4b the realized append trajectory/record pattern is supplied data: "
+      "generic occurrence is axiom content, but the superposed pointer's "
+      "specific 0 -> 3 trajectory is not forced by the boundary theorem; "
+      "pointer eigenstates register no new copies under this instrument",
       all(b >= a for a, b in zip(c_plus, c_plus[1:])) and c_plus[-1] == NFRAG
       and c_zero == [0] * (NFRAG + 1) and c_one == [0] * (NFRAG + 1),
       f"superposed {c_plus}; |0> {c_zero}; |1> {c_one}")
-check("T4c from the I/d equilibrium NO records form (flat) -- the anchor needs "
-      "the boundary and a record-forming realized state, not just the dynamics "
-      "(the arrow note's universal floor, reproduced)",
+check("T4c from the I/d equilibrium this supplied instrument records no new "
+      "copies (flat) -- the arrow anchor needs a supplied append trajectory, "
+      "not just the boundary theorem (the arrow note's universal floor, reproduced)",
       c_eq == [0] * (NFRAG + 1), f"counts {c_eq}")
 
 # ===========================================================================
@@ -348,30 +347,29 @@ check("T5b the pastward walk length equals the registered content EXACTLY on a "
       "not hidden)",
       all((lambda n: n == len("x" * n))(n) for n in lens),
       f"walk lengths {lens}")
-# (iii) non-emptiness is genuinely the remaining input: the empty history satisfies
-# the monoid structure trivially and carries NO arrow (nothing to anchor).
-check("T5c the EMPTY history (w = epsilon) is structurally valid and carries no "
-      "arrow -- non-emptiness ('at least one record is registered') is the "
-      "explicit residual PRECONDITION, strictly weaker than any specialness claim "
-      "and not derived here: formally vacuous-model-allowed, no-arrow when empty",
+# (iii) the specific append history is genuinely the remaining input: occurrence
+# is axiom content after 2026-07-04, but this runner still needs a supplied
+# nonempty append chain to discuss an arrow.
+check("T5c a supplied nonempty append history remains the explicit residual "
+      "PRECONDITION: occurrence is axiom content, but the specific formation "
+      "rule/history/comparable chain is not derived here",
       c_plus[0] == 0 and len("") == 0)
 
 # ===========================================================================
 print("=" * 78)
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 print("=" * 78)
-print("SCOPE: reduces the record-arrow low-record-boundary EXISTENCE sub-clause to")
-print("  history non-emptiness, IN the single-chain append-only sector (the total")
+print("SCOPE: reduces the record-arrow low-record-boundary sub-clause to")
+print("  a supplied nonempty append history, IN the single-chain append-only sector (the total")
 print("  order is an assumption beyond the Record axiom -- general well-founded")
 print("  case: termination survives, uniqueness does not, T1d).  Theorem weight on")
 print("  T2 (durability -> acyclicity; deletion controls FAIL) and T3 (rank 2 != 16")
 print("  under CLOSED reversible dynamics; the OPEN swap-out escape named, priced")
 print("  by the sink regress).  T1b/T1c are definitional in-sector (disclosed).")
-print("  T4: connected-correlator boundary count 0 is state-robust; whether records")
-print("  FORM is realized-state data (counterfactual-disclosed).  History-level")
+print("  T4: connected-correlator boundary count 0 is state-robust; the realized")
+print("  append trajectory/record pattern is supplied.  History-level")
 print("  blankness (epsilon) is distinct from state-level blankness (T3/T4).")
-print("  RESIDUAL: non-emptiness (an explicit applicability precondition, not")
-print("  derived here); the single-chain")
+print("  RESIDUAL: supplied append history/formation rule; the single-chain")
 print("  sector scope; the finite-history")
 print("  dichotomy; and the THERMODYNAMIC past hypothesis (low entropy, Penrose")
 print("  room) -- open, named, untouched.  WHICH state realizes the boundary stays")

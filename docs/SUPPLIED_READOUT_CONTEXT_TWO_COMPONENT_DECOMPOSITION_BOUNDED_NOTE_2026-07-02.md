@@ -90,7 +90,9 @@ The minimal axiom surface leaves these gates outside the axioms:
 - the strong-CP theta admission;
 - P2/modulus/phase-blindness and any log-det readout theorem;
 - context selection, measurement basis selection, Born weights, probability
-  rules, update laws, decoherence mechanisms, and occurrence rules;
+  rules, update laws, decoherence mechanisms, and formation rules (which
+  admissible possibility a new record locks, at which site, with what weight,
+  or at what rate);
 - arrow, record-production dynamics, physical persistence dynamics, time metric,
   and local observability of records;
 - source/action and physical-observable identification;

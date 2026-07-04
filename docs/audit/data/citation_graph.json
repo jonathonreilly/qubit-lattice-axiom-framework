@@ -57740,7 +57740,7 @@
         "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "dc62ef51548b2dd7a65e23e37568a6a58595eba16b17d5a0c92f914ebaea78a2",
+      "note_hash": "6f165b6dc7ce2db5c5dc65a7bab0c2e43214047f5c841c0b2227a4e9444b85c3",
       "path": "docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md",
       "runner_path": "scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py",
       "title": "AC_phi_lambda Defect Identity-Unit Rescale Obstruction And Junction Localization"
@@ -59442,7 +59442,7 @@
         "ai_methodology.skills.physics-loop.references.long-running-execution"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6d0952390241e8e2c077ede3c809d7df3315fbc568bdc8c4ce22b90044cbf869",
+      "note_hash": "715fcec1f65bf6fcc988eadbf89859ec3523a04c18d056b0c5f2e87df49d08e2",
       "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
       "runner_path": null,
       "title": "Physics Loop"
@@ -59469,7 +59469,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b98cb858e9c15f1a0499feee0fbe1ee82abe70910de587d2c8c0d8e56144b09c",
+      "note_hash": "baaffef126de3ff5e4d2a1293eaecea6c9a3461c821ec510cefd41b05a330265",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"
@@ -66094,7 +66094,7 @@
         "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3871de1b06e4f17e90ec9d9320bd69b460b4ada4001bb30e74b0c893756b58a0",
+      "note_hash": "df287f1aebd18546aef97c2533028c9724b768d54d803981a5205d9c6a11bf88",
       "path": "docs/COLOR_DEPOLARIZATION_SINGLE_FRAME_DEPHASING_INSUFFICIENCY_AND_MULTIFRAME_EXHIBIT_NARROW_THEOREM_NOTE_2026-06-09.md",
       "runner_path": "scripts/frontier_color_depolarization_single_frame_dephasing_and_multiframe_exhibit_2026_06_09.py",
       "title": "Color Depolarization: Single-Frame Dephasing Insufficiency and Multi-Frame Exhibit"
@@ -66132,7 +66132,7 @@
         "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f389d9fa544c4737173d1954a94c99a91f23fcadb4848209ee20ae854c13837b",
+      "note_hash": "6e3902d3e55d94fd4cb55e2683e7130e6a5d428a689fcafcff8844dc0649a69a",
       "path": "docs/COLOR_EINSELECTION_POINTER_FRAME_FORK_IS_A_UNISTOCHASTIC_IRREDUCIBILITY_CRITERION_NARROW_THEOREM_NOTE_2026-06-09.md",
       "runner_path": "scripts/frontier_color_einselection_pointer_frame_unistochastic_criterion_2026_06_09.py",
       "title": "Color-Einselection Pointer-Frame Fork as a Unistochastic Criterion"
@@ -81617,7 +81617,7 @@
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b29fe989e7d75e7e513912dd63e4074910eb62ee81bde939af421dca4404c9df",
+      "note_hash": "ee7eb2c3c95e44c34075186234b83c477f99c07410fa605ac20265dd43d120dd",
       "path": "docs/GENERATION_MODULI_SELECTOR_EXACT_CONSTRAINTS_BOUNDED_NOTE_2026-07-02.md",
       "runner_path": "scripts/frontier_generation_moduli_selector_exact_constraints_2026_07_02.py",
       "title": "Generation-Moduli Selector Exact Constraints"
@@ -97302,7 +97302,7 @@
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "41854444e88dd7438ed094919bd0269c6f622ccfc0f14b0205888a64029b14bf",
+      "note_hash": "61232aeb3cfac3d8f40ec143fbe966ae777653d9321d86e064f3b61d4dc0f339",
       "path": "docs/OBSERVABLE_PRINCIPLE_P1_REGISTRATION_REALIZATION_PIN_CONSOLIDATION_NARROW_THEOREM_NOTE_2026-06-11.md",
       "runner_path": "scripts/observable_principle_p1_rr_consolidation_check_2026_06_11.py",
       "title": "Observable-Principle P1 \u2014 Registration Realization Pin Consolidation: One Declared Clause (RR) Is Provably Equivalent to (CAP-real) + (REG-dyn) + (REG-thr), the Clock Window (REG-tau) Is Irreducibly Separate, and (REG-site) Demotes to an Optional Sharpening (Narrow Theorem: an Implication Lattice over Declared Clauses)"
@@ -98177,7 +98177,7 @@
         "record_history_order_time_rate_firewall_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "dc88086cd05c211841405540ca74e525dcf9f74d361ec57c9b420d2718eb9a2a",
+      "note_hash": "4a5cf75a7f566b9b0d6d088b24dc886a309eb30b30b617b81e643fab18150a5e",
       "path": "docs/PAST_HYPOTHESIS_EXISTENCE_REDUCTION_APPEND_ONLY_WELL_FOUNDEDNESS_BOUNDED_THEOREM_NOTE_2026-06-11.md",
       "runner_path": "scripts/frontier_past_hypothesis_existence_reduction_append_only_2026_06_11.py",
       "title": "The Record-Arrow Low-Record-Boundary Existence Sub-Clause Reduces to History Non-Emptiness in the Append-Only Single-Chain Sector (Thermodynamic Past Hypothesis Untouched) \u2014 Bounded"
@@ -108064,7 +108064,7 @@
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5c7ed5912e1ace8ffd2d06de8ce8d990dc4a66fd3e8afee431522c6c08b3e963",
+      "note_hash": "64999bd3634894c693b698a5515dd4f2af939090053d5ac3e638a1a9ac9da54d",
       "path": "docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md",
       "runner_path": "scripts/realized_kinetic_branch_conditional_record_registration_2026_07_02.py",
       "title": "Realized Kinetic Branch: Conditional-Record Registration of the Kinetic Branch"
@@ -108436,7 +108436,7 @@
         "graph_first_su3_integration_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a21650a0234147d55b1bf05ab0f71fd360df15d53c895d794f540b99326c8d1d",
+      "note_hash": "8a784870a0cab404d090e631765bcc636764d7e9e3d8cc900e4005b3c4d2e02c",
       "path": "docs/RECORD_DOMINATED_POINTER_SECTOR_TRANSPORT_GENERATOR_VACUOUS_LINK_BOUNDED_THEOREM_NOTE_2026-06-09.md",
       "runner_path": "scripts/frontier_record_dominated_pointer_transport_generator_2026_06_09.py",
       "title": "The Record-Dominated Compression: an Exact Pointer-Sector Transport Generator and the Vacuous Link Generator"
@@ -108617,16 +108617,16 @@
     "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": {
       "claim_id": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
       "claim_type_author_hint": "no_go",
-      "claim_type_author_hint_raw": "no_go (unconditional record-formation forcing) + minimality-boundary localization",
+      "claim_type_author_hint_raw": "no_go (formation-rule/process forcing) + minimality-boundary localization",
       "claim_type_seed_hint": "no_go",
       "deps": [
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "631889219bc48142cae244cbec7131663ca5f51635c8b82721a03ed2fd3ff404",
+      "note_hash": "32664c11d966b44b5c7b18f994d322431f52ec78dd748932f4f741678459edc4",
       "path": "docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md",
       "runner_path": "scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py",
-      "title": "Record Formation Is Not Unconditionally Forced by Lattice, Quantum, and Record: the Minimality Boundary Sits at Record's Decoherence-Dynamics Disclaimer -- Narrow No-Go"
+      "title": "Record Formation Rule Is Not Supplied by the Minimal Axioms: Post-Append Scope Repair"
     },
     "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": {
       "claim_id": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
@@ -108764,7 +108764,7 @@
         "graph_first_su3_integration_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5bb5f15f1a5911ce6c9c0530518b7a1cbdea62e8ee7d36d3ac9ea62556b32a0e",
+      "note_hash": "a4ef9cb26643f6d7832114b1cf3c8f54f3457e3f8ee76a0737d1133f97235b39",
       "path": "docs/RECORD_INSTRUMENT_COMPOSITE_LINK_POINTER_ERASURE_EXACT_SLAVING_BOUNDED_THEOREM_NOTE_2026-06-09.md",
       "runner_path": "scripts/frontier_record_instrument_composite_link_erasure_slaving_2026_06_09.py",
       "title": "The Composite Link Under Two Named Record Instruments: Pointer/Erased Split, Exact Slaving, and the Instrument Footprint"
@@ -108853,7 +108853,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "28d658df5804e64f508125bd5366b9363097caf05e4ed0d32fdfeb739a1344bb",
+      "note_hash": "26aef21decd26c268cdc9d99867440d90d5450cdeecc9e6a2195a1e4b408face",
       "path": "docs/RECORD_OCCURRENCE_THINNED_IID_FREQUENCY_BRIDGE_2026-07-01.md",
       "runner_path": "scripts/record_occurrence_thinned_iid_frequency_bridge_2026_07_01.py",
       "title": "Record Occurrence Thinned-IID Frequency Bridge"
@@ -112264,7 +112264,7 @@
         "g_bare_dynamical_fixation_obstruction_note_2026-04-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "30a6a7938a2730bca38a624abf31656ef109df0addd4695b41e13ccd3ca258e5",
+      "note_hash": "9291e2379e1c289b58559efc43e22d1934afb8ae040e5b5bc02c4de4a76e5a31",
       "path": "docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md",
       "runner_path": "scripts/single_clock_axis_selection_check_2026_06_11.py",
       "title": "Single-Clock Axis Selection From Record Durability: Every Retained Candidate Structure Is W-Transportable \u2014 Narrow No-Go With a Sharpened Pin"
@@ -115957,7 +115957,7 @@
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6a0fa6035905b639b3e8797d2a73dd6329a60f37e2ad629a84c6dfd08f42d6fb",
+      "note_hash": "ec7b458a59bff18fcc82dd293314c571ad484c4a679ea53715b2de6ab0044bdc",
       "path": "docs/SUPPLIED_READOUT_CONTEXT_TWO_COMPONENT_DECOMPOSITION_BOUNDED_NOTE_2026-07-02.md",
       "runner_path": "scripts/frontier_supplied_readout_context_two_component_decomposition_2026_07_02.py",
       "title": "Supplied Readout Context Two-Component Decomposition"

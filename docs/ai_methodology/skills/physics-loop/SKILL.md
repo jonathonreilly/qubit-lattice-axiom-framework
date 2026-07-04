@@ -298,7 +298,7 @@ domain, and gives exactly one answer where the condition holds. It does not
 supply the readout context, decomposition, `K`/CPT structure,
 sector-generation rule, weighting, normalization, probability,
 measurement/decoherence dynamics, record-production dynamics, physical
-persistence dynamics, occurrence rule, update law, time metric, within-sector
+persistence dynamics, formation rule, update law, time metric, within-sector
 data, occupancy rule, P2/modulus, log-det, source/action, scale,
 state-selection rule, law-domain derivation, or arbitrary observable
 identification. The

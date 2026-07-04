@@ -27,9 +27,9 @@ steps on the matter sector do to the induced composite link?
 
 ## The admission, named honestly (this is NOT a derivation)
 
-Record formation is **not unconditionally forced** by the axioms
+The formation rule/process is not supplied by the axioms
 (`record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`,
-ledger `retained_no_go` at drafting time). Any record instrument is therefore
+post-append narrowed scope). Any concrete record instrument is therefore
 a **named admission**. This note names two, chosen to flank the admission
 space at the per-site occupancy level; Lueders instruments of this class have
 a framework-side Stinespring construction
@@ -248,10 +248,11 @@ link.
   registers frame-dependent content with equal admissibility. Which instrument
   is realized is exactly the open selection question, here exhibited, not
   answered.
-- **Record formation is not derived.** Both instruments, their strength `lam`,
-  and their schedule `tau` are named admissions, consistent with the
-  `retained_no_go` boundary; nothing here forces records to form or fixes a
-  rate. No arrow or rate is derived (the `R-C` layer is untouched).
+- **Formation rule/process is not derived.** Both instruments, their strength
+  `lam`, and their schedule `tau` are named admissions, consistent with the
+  post-append narrowed boundary; nothing here fixes which instrument realizes,
+  which record locks, or at what rate. No arrow or rate is derived (the `R-C`
+  layer is untouched).
 - **Not a link dynamics.** The slaving result removes the link's independent
   dynamics in the record-dominated regime rather than supplying one: `U_eff`
   becomes a dependent functional of pointer content and the **frozen**

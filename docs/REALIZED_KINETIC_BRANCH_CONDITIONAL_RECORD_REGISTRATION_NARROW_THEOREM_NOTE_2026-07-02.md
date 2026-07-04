@@ -35,11 +35,11 @@ name the needed structure:
 "nonzero first-order Dirac-square kinetic carrier, translation covariance/locality as required by the target theorem, and the mutually anticommuting self-adjoint-unitary coefficient family if the d<=3 Clifford-capacity theorem is being invoked".
 
 The record no-go `RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`
-has the title claim "Record Formation Is Not Unconditionally Forced by
-Lattice, Quantum, and Record". This theorem is compatible with that boundary:
-it "does not unconditionally force record formation". It conditions on a
-supplied realized state and on a record stack already containing the specified
-kind of record.
+now carries the post-append narrowed boundary: generic occurrence is axiom
+content, but the formation rule/process, site selector, clock, rate, and
+specified stack are not supplied by Record. This theorem is compatible with
+that boundary: it conditions on a supplied realized state and on a record stack
+already containing the specified kind of record.
 
 The current Record axiom says a record "locks exactly one local possibility from the subset available at that site under Admissibility". The realized-state
 primitive

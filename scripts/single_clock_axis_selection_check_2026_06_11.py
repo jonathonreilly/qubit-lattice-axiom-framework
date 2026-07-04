@@ -215,10 +215,11 @@ def block_RT_REC(sec, W, Ls, sites, idx):
            "MINIMAL_AXIOMS_2026-06-05.md")
 
     rf = read_doc("RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md")
-    record("B", "record formation is not forced (retained_no_go): 'at least one record "
-           "exists' is NOT an axiom consequence, so no axis can be derived from it "
-           "unconditionally",
-           "does **not** hold unconditionally" in rf, "record-formation no-go quoted")
+    record("B", "formation rule/process is not supplied by Record: occurrence is "
+           "axiom content, but no axis, clock, rate, site selector, or comparable "
+           "history follows from it",
+           "formation rule or process" in rf and "does **not** hold" in rf,
+           "post-append formation-rule no-go quoted")
 
     cr = read_doc("POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md")
     record("B", "the clock map is supplied, never derived from records (retained_no_go): "

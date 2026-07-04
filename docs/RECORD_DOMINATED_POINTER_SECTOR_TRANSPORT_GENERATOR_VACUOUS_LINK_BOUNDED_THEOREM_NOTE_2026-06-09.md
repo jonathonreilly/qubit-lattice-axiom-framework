@@ -47,9 +47,9 @@ the induced link generator is **vacuous**.
 
 ## The admission, named honestly (this is NOT a derivation)
 
-Record formation is **not unconditionally forced** by the axioms
+The formation rule/process is not supplied by the axioms
 (`record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`,
-ledger `retained_no_go` at drafting time). Any record instrument is therefore a
+post-append narrowed scope). Any concrete record instrument is therefore a
 **named admission**; this note reuses the two block-02 instruments at the
 per-site occupancy level (Lueders instruments of this class have a framework-side
 Stinespring construction,

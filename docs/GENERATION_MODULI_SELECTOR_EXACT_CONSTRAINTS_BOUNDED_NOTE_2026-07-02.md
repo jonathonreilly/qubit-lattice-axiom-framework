@@ -57,8 +57,10 @@ frontier; no existing ledger row is claimed to be moved.
    `Z^3`, while the one-site possibility domain has presentation `M_2(C)`.
    Its open gates include, outside the axiom content, readout-context
    selection, measurement basis selection, Born weights, probability rules,
-   update laws, occurrence rules, source/action identification, P2/modulus
-   content, log-det readout, dynamics, and scale-reference handling.
+   update laws, formation rules (which admissible possibility a new record
+   locks, at which site, with what weight, or at what rate), source/action
+   identification, P2/modulus content, log-det readout, dynamics, and
+   scale-reference handling.
 
 Throughout, write the finite `C_3` circulant surface as
 

@@ -61,7 +61,7 @@ def read_text(path: Path) -> str:
 def ledger_rows() -> tuple[dict, dict]:
     data = json.loads(read_text(LEDGER))
     rows = data["rows"]
-    return rows[RECORD_KEY], rows[BRANNEN_KEY]
+    return rows.get(RECORD_KEY, {}), rows.get(BRANNEN_KEY, {})
 
 
 def tier_a_statement() -> str:
@@ -75,6 +75,29 @@ def not_zero(expr: sp.Expr) -> bool:
 
 def normalized_contains(text: str, needle: str) -> bool:
     return needle in " ".join(text.split())
+
+
+def _premise_flat(text: str) -> str:
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def dep_claim_section(text: str, header: str) -> str:
+    unquoted = re.sub(r"(?m)^\s*> ?", "", text)
+    match = re.search(rf"(?ms)^## {re.escape(header)}\s*$(.*?)(?=^## |\Z)", unquoted)
+    return match.group(1) if match else ""
+
+
+def premise_quote_gate(label: str, note_text: str, dep_text: str, header: str, expected_count: int) -> None:
+    lines = [ln for ln in note_text.splitlines() if ln.lstrip().startswith(f"Premise scope quotes ({label}")]
+    check(f"{label} premise-quote line present exactly once", len(lines) == 1)
+    quotes = re.findall(r'"([^"]+)"', lines[0]) if len(lines) == 1 else []
+    check(f"{label} premise quote count is {expected_count}", len(quotes) == expected_count, f"quotes={len(quotes)}")
+    section_flat = _premise_flat(dep_claim_section(dep_text, header))
+    check(f"{label} dependency claim section extracted and substantial", len(section_flat) > 200, f"len={len(section_flat)}")
+    for idx, quote in enumerate(quotes, start=1):
+        quote_flat = _premise_flat(quote)
+        check(f"{label} premise quote {idx} meets length floor", len(quote_flat) >= 80, f"len={len(quote_flat)}")
+        check(f"{label} premise quote {idx} is verbatim in the dependency claim section", quote_flat in section_flat)
 
 
 def part_a_sources(note: str) -> None:
@@ -98,11 +121,14 @@ def part_a_sources(note: str) -> None:
         check(f"note quotes Brannen pin: {pin}", pin in note)
 
     record_row, brannen_row = ledger_rows()
-    for label, row in [("record", record_row), ("Brannen", brannen_row)]:
-        scope = row["claim_scope"]
-        check(f"{label} ledger status retained", row["effective_status"] == "retained_bounded")
-        check(f"{label} note path pinned", Path(row["note_path"]).name in note)
-        check(f"{label} quoted scope equals ledger field", scope in note, scope)
+    for label, row, dep_path in [("record", record_row, RECORD), ("Brannen", brannen_row, BRANNEN)]:
+        check(f"{label} ledger row exists in audit ledger", row.get("note_path") == f"docs/{dep_path.name}")
+        print(f"       {label} ledger row live audit fields (informational; the audit lane owns them): effective_status={row.get('effective_status')}, claim_scope={'present' if isinstance(row.get('claim_scope'), str) else 'null'}")
+        check(f"{label} note path pinned", dep_path.name in note)
+    premise_quote_gate("RECORD", note, record_text, "Claim", 2)
+    premise_quote_gate("BRANNEN", note, brannen_text, "Claim", 2)
+    check("retired ledger-scope embedding absent", "ledger `claim_scope`:" not in note)
+    check("retired citation-authority wording absent", "citation authority" not in note)
 
     statement = tier_a_statement()
     check("Tier-A statement contains sub-admission (ii)", TIER_A_QUOTE in statement)
@@ -259,12 +285,12 @@ def part_d_note_discipline(note: str) -> None:
     for fragment in leakage:
         check(f"instruction marker absent: {fragment}", fragment not in note)
 
-    check("retained_bounded token appears exactly twice", note.count("retained_bounded") == 2)
+    check("retained_bounded token absent from note", note.count("retained_bounded") == 0)
     check("Tier-A path is not markdown linked", not any("tier_a_admissions.json" in target for _, target in links))
     check("no campaign note path markdown links", not any("ACPHILAMBDA_" in target for _, target in links))
 
     line_count = len(note.splitlines())
-    check("note line count in requested band", 190 <= line_count <= 240, str(line_count))
+    check("note line count in requested band", 190 <= line_count <= 260, str(line_count))
     check("Verification section present", "## Verification" in note)
     check("Primary runner header present", "**Primary runner:**" in note)
 

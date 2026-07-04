@@ -17,9 +17,14 @@ In operational terms, this note wires the two arcs together; it derives nothing 
 
 ## Frame And Retained Inputs
 
-- [docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md) is the retained_no_go radian bridge consumed by both arcs. Ledger scope: "Bounded no-go that the listed retained periodic finite/lattice phase sources and finite-Wilson constructions do not derive the literal 2/9-radian selected-line bridge; the Type-B-to-radian identification remains primitive." File pins used here include "a Type-B rational-to-radian observable law is still missing" and "same Type-B-to-radian map as the remaining primitive."
-- [docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md](BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md) is the retained_bounded circulant surface consumed by both arcs. Ledger scope: "Finite-dimensional algebraic classification on the supplied C3 generation 3-space: Hermitian generators commuting with the cyclic shift C have Brannen circulant form and commute with the supplied pointer S=C+C^2; no derivation of C, S, r, delta, or the coupling values is audited." File pins used here include "circulant form" and "(a, |b|, delta)".
-- [docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md](RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md) is the retained_bounded conservation surface consumed by the relaxation/selection-dynamics row. Ledger scope: "For the supplied C3 pointer S=C+C^2 and the Stage-1 circulant record-preserving generator, singlet/doublet block weights are conserved under H-evolution and the two-sector record preserves doublet-internal coherence." File pin used here includes "the within-sector measure `(r, delta)` is neither produced nor relaxed by the record-preserving dynamics."
+- [docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md) is the radian bridge consumed by both arcs. File pins used here include "a Type-B rational-to-radian observable law is still missing" and "same Type-B-to-radian map as the remaining primitive."
+- [docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md](BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md) is the circulant surface consumed by both arcs. File pins used here include "circulant form" and "(a, |b|, delta)".
+- [docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md](RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md) is the conservation surface consumed by the relaxation/selection-dynamics row. File pin used here includes "the within-sector measure `(r, delta)` is neither produced nor relaxed by the record-preserving dynamics."
+
+Premise scope quotes (KOIDE Decision): "The reviewed branch contains useful science, but its stronger closure language is not retained." and "retained periodic phase sources -> rational multiples of pi Brannen selected-line target -> pure rational 2/9 used as a radian therefore: a Type-B rational-to-radian observable law is still missing."
+Premise scope quotes (BRANNEN Claim): "On the supplied C3[111] generation 3-space, a local Hermitian generator commuting with the [111] 3-fold rotation `C`, namely `[H,C]=0`, has the circulant form `H = a I + b C + conj(b) C^T`." and "In this theorem, the C3[111] generation action and pointer are inputs, and the couplings `(a, |b|, delta)` are the supplied sector dial."
+Premise scope quotes (RECORD Claim): "A record-preserving generation dynamics — forced block-diagonal in the singlet (+) doublet decomposition by `[H, S] = 0` — **conserves** the realized state's singlet/doublet block weight under `H`-evolution" and "The within-sector measure `(r, delta)` is therefore conserved/preserved by the record-preserving dynamics, **not** a relaxation outcome of it."
+Live ledger audit fields are informational for the audit lane and are not cited as premise in this note.
 - Arc A is the in-flight unit-classification arc: `PR #4783`, `PR #4788`, `PR #4789`, `PR #4790`, `PR #4794`, `PR #4798`, `PR #4803`, `PR #4831`, `PR #4835`, `PR #4837`, and `PR #4840`. No unaudited/in-flight item is linked; audit statuses pending on all of them.
 - Arc B is the R-eta admission/index arc: `RETA_MAGNITUDE_CONTINUUM_INDEX_THEOREM_2026_06_12` and `RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12`. They are cited as backticked context only, not dependency links.
 - `PR #4840` is context for the Arc A row that quoted the linked conservation surface; it is not a dependency link here.
@@ -96,7 +101,7 @@ The target requirements are therefore:
 - No derivation of `delta = 2/9` or `Phi = 2/3` is supplied.
 - No independent-lane status label, prediction, registry edit, note edit, primitive registration, cache regeneration, or publication-status edit is made.
 - The occurrence lane remains untouched.
-- The three retained dependency scopes remain exactly the ledger scopes quoted above.
+- The three dependency premise quotes remain verbatim sentences from the dependency notes' own claim sections.
 
 ## Audit Consequence If Retained
 
@@ -133,7 +138,7 @@ Dependency graphs may treat Arc B path 2 as classification-answered pending audi
 
 **N2.** The wall vocabulary is unchanged: `W_cycle_holonomy_value`, `W_defect_identity_unit`, and `W_defect_readout_selection`.
 
-**N3.** Hidden-wall scan: the table does not import comparator data, occurrence statistics, a new phase convention, or a new registry decision. It cites PR-scoped pins and retained ledger scopes only.
+**N3.** Hidden-wall scan: the table does not import comparator data, occurrence statistics, a new phase convention, or a new registry decision. It cites PR-scoped pins and dependency-note premise quotes only.
 
 **N4.** Residual matching: every disposed path-2 item maps to a quoted source pin; the surviving residual is path 1.
 
@@ -153,4 +158,4 @@ Run:
 python3 scripts/acphilambda_cross_arc_unit_classification_wiring_2026_07_02.py
 ```
 
-Measured local close: `TOTAL: PASS=113 FAIL=0`.
+Measured local close: `TOTAL: PASS=134 FAIL=0`.

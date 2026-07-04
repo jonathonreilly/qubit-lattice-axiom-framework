@@ -45,11 +45,10 @@ Its note-file pins are map pins: `D_chi` erases the `chi_1`-`chi_2`
 coherence in one application, preserves occupancies, and advances the doublet
 phase by `2 sqrt(3) |b| sin delta` per native step before an event.
 
-The retained circulant anchor is
+The circulant-form anchor is
 [`BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md`](BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md).
-Ledger row `brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15` is retained-grade.
-Ledger scope authority: Hermitian generators commuting with the cyclic shift
-`C` have Brannen circulant form and commute with `S=C+C^2`; the row does not derive `C`, `S`, `r`, `delta`, or the coupling values.
+Ledger row `brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15` exists in the audit ledger; its live audit fields belong to the independent audit lane and are not cited as premise here.
+Premise scope quotes (BRANNEN Claim): "On the supplied C3[111] generation 3-space, a local Hermitian generator commuting with the [111] 3-fold rotation `C`, namely `[H,C]=0`, has the circulant form `H = a I + b C + conj(b) C^T`." and "In this theorem, the C3[111] generation action and pointer are inputs, and the couplings `(a, |b|, delta)` are the supplied sector dial."
 The source pins used here are `circulant form` and `(a, |b|, delta)`.
 
 Context only, not dependency links:
@@ -205,5 +204,5 @@ python3 scripts/acphilambda_occurrence_clock_composition_delta_blindness_2026_07
 ```
 Measured close:
 ```text
-TOTAL: PASS=93 FAIL=0
+TOTAL: PASS=100 FAIL=0
 ```

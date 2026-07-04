@@ -63,6 +63,29 @@ def unitary_dag(lambdas: list[sp.Expr], n: sp.Expr) -> sp.Matrix:
     return sp.diag(*[sp.exp(sp.I * lam * n) for lam in lambdas])
 
 
+def _premise_flat(text: str) -> str:
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def dep_claim_section(text: str, header: str) -> str:
+    unquoted = re.sub(r"(?m)^\s*> ?", "", text)
+    match = re.search(rf"(?ms)^## {re.escape(header)}\s*$(.*?)(?=^## |\Z)", unquoted)
+    return match.group(1) if match else ""
+
+
+def premise_quote_gate(label: str, note_text: str, dep_text: str, header: str, expected_count: int) -> None:
+    lines = [ln for ln in note_text.splitlines() if ln.lstrip().startswith(f"Premise scope quotes ({label}")]
+    check(f"{label} premise-quote line present exactly once", len(lines) == 1)
+    quotes = re.findall(r'"([^"]+)"', lines[0]) if len(lines) == 1 else []
+    check(f"{label} premise quote count is {expected_count}", len(quotes) == expected_count, f"quotes={len(quotes)}")
+    section_flat = _premise_flat(dep_claim_section(dep_text, header))
+    check(f"{label} dependency claim section extracted and substantial", len(section_flat) > 200, f"len={len(section_flat)}")
+    for idx, quote in enumerate(quotes, start=1):
+        quote_flat = _premise_flat(quote)
+        check(f"{label} premise quote {idx} meets length floor", len(quote_flat) >= 80, f"len={len(quote_flat)}")
+        check(f"{label} premise quote {idx} is verbatim in the dependency claim section", quote_flat in section_flat)
+
+
 def main() -> int:
     root = Path(__file__).resolve().parents[1]
     docs = root / "docs"
@@ -93,18 +116,19 @@ def main() -> int:
     occurrence_id = "record_occurrence_thinned_iid_frequency_bridge_2026-07-01"
     clock_id = "acphilambda_pointer_labeled_refinement_finer_record_clock_2026-07-02"
     circulant_id = "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15"
-    occurrence_row = rows[occurrence_id]
-    clock_row = rows[clock_id]
-    circulant_row = rows[circulant_id]
-    retained_grades = {"retained", "retained_bounded", "retained_no_go"}
+    occurrence_row = rows.get(occurrence_id, {})
+    clock_row = rows.get(clock_id, {})
+    circulant_row = rows.get(circulant_id, {})
 
     check("occurrence row exists", occurrence_row.get("note_path") == str(occurrence_path.relative_to(root)))
     check("clock row exists", clock_row.get("note_path") == str(clock_path.relative_to(root)))
-    check("circulant row is retained-grade authority", circulant_row["effective_status"] in retained_grades)
-    check("circulant row has ledger scope", isinstance(circulant_row.get("claim_scope"), str))
+    check("circulant row exists", circulant_row.get("note_path") == str(circulant_path.relative_to(root)))
+    print(f"       circulant ledger row live audit fields (informational; the audit lane owns them): effective_status={circulant_row.get('effective_status')}, claim_scope={'present' if isinstance(circulant_row.get('claim_scope'), str) else 'null'}")
     check("note leaves occurrence audit status to audit lane", occurrence_path.name in note and "does not set or promote its audit status" in note_flat)
     check("note leaves clock audit status to audit lane", clock_path.name in note and note_flat.count("does not set or promote its audit status") >= 2)
-    check("note authority-gates circulant ledger scope", "Ledger scope authority:" in note and "does not derive `C`, `S`, `r`, `delta`, or the coupling values" in note)
+    premise_quote_gate("BRANNEN", note, circulant, "Claim", 2)
+    check("retired ledger-scope-authority wording absent", "Ledger scope authority:" not in note)
+    check("retired retained-grade wording absent", "retained-grade" not in note)
     check("occurrence boundary pin is true", "does not derive `a`, `p`, the physical instrument/trigger, IID" in occurrence)
     check("clock pins D_chi", "D_chi(rho) = sum_k P_k rho P_k" in clock)
     check("clock pins one-shot coherence erasure", "erases the `chi_1`-`chi_2` coherence in one application" in clock)

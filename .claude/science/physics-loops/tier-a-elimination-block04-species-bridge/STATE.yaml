@@ -30,6 +30,8 @@ checks:
   - "python3 docs/audit/scripts/audit_lint.py --strict: pass; no errors, existing warnings/notices only"
   - "git diff --check: pass"
 review_status: "self-review pass; no audit verdicts applied"
-pr_status: "pending"
+pr_status: "opened https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4929"
+commits:
+  - "cc2bc71dc docs: ratify ac species bridge c3 grade"
 next_exact_action: "Open stacked PR against physics-loop/tier-a-elimination-block03-ac-20260704, then attack AC(ii) R-eta or AC(i) measure-side binary."
 stop_condition: "Block 4 committed, pushed, and review PR opened."

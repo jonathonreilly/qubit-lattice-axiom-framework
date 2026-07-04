@@ -38,4 +38,6 @@ R-eta atom or AC(i)'s measure-side occupancy binary.
 
 ## PR
 
-Pending.
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4929
+- Base: `physics-loop/tier-a-elimination-block03-ac-20260704`
+- Commit: `cc2bc71dc docs: ratify ac species bridge c3 grade`

@@ -7,8 +7,8 @@ statistics route.
 
 Branch: `physics-loop/tier-a-elimination-block16-aci-matterstats-20260704`
 Base: `physics-loop/tier-a-elimination-block15-aci-modeset-20260704`
-PR: pending
-Source commit: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4944
+Source commit: `74fca25c9`
 
 ## Expected Claim Movement
 
@@ -40,4 +40,5 @@ support/open-gate material rather than retirement.
 
 ## Next Exact Action
 
-Commit, push, open a stacked PR, then monitor audit.
+Monitor GitHub audit for PR #4944 and continue to the next Tier-A elimination
+block.

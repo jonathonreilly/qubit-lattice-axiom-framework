@@ -1,9 +1,12 @@
 # PR Backlog
 
-Open a stacked PR against
+Opened stacked PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4944
+
+Base branch:
 `physics-loop/tier-a-elimination-block15-aci-modeset-20260704`.
 
-Proposed title:
+Title:
 
 ```text
 [physics-loop] tier-a-elimination-block16-aci-matterstats no-go

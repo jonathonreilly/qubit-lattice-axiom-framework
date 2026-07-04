@@ -529,6 +529,38 @@
       "to": "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25"
     },
     {
+      "from": "acphilambda_determinant_order_chiral_lr_coupling_current_surface_no_go_note_2026-07-04",
+      "to": "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04"
+    },
+    {
+      "from": "acphilambda_determinant_order_chiral_lr_coupling_current_surface_no_go_note_2026-07-04",
+      "to": "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05"
+    },
+    {
+      "from": "acphilambda_determinant_order_chiral_lr_coupling_current_surface_no_go_note_2026-07-04",
+      "to": "supertrace_index_holomorphic_route_to_koide_r_half_open_lead_note_2026-06-04"
+    },
+    {
+      "from": "acphilambda_determinant_order_chiral_lr_coupling_current_surface_no_go_note_2026-07-04",
+      "to": "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05"
+    },
+    {
+      "from": "acphilambda_determinant_order_chiral_lr_coupling_current_surface_no_go_note_2026-07-04",
+      "to": "staggered_dirac_exercise_honest_reassessment_note_2026-06-06"
+    },
+    {
+      "from": "acphilambda_determinant_order_chiral_lr_coupling_current_surface_no_go_note_2026-07-04",
+      "to": "koide_kahler_dirac_realization_gives_r_one_index_route_closed_bounded_no_go_note_2026-06-08"
+    },
+    {
+      "from": "acphilambda_determinant_order_chiral_lr_coupling_current_surface_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "acphilambda_determinant_order_chiral_lr_coupling_current_surface_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04",
       "to": "acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04"
     },
@@ -57996,6 +58028,27 @@
       "path": "docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md",
       "runner_path": "scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py",
       "title": "AC_phi_lambda Defect Identity-Unit Rescale Obstruction And Junction Localization"
+    },
+    "acphilambda_determinant_order_chiral_lr_coupling_current_surface_no_go_note_2026-07-04": {
+      "claim_id": "acphilambda_determinant_order_chiral_lr_coupling_current_surface_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04",
+        "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05",
+        "supertrace_index_holomorphic_route_to_koide_r_half_open_lead_note_2026-06-04",
+        "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05",
+        "staggered_dirac_exercise_honest_reassessment_note_2026-06-06",
+        "koide_kahler_dirac_realization_gives_r_one_index_route_closed_bounded_no_go_note_2026-06-08",
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "59338b3b6c997ed7754f18c2665a36c11640b8d66be2734732deeaaf642d604e",
+      "path": "docs/ACPHILAMBDA_DETERMINANT_ORDER_CHIRAL_LR_COUPLING_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_determinant_order_chiral_lr_current_surface_no_go_2026_07_04.py",
+      "title": "AC_phi_lambda Determinant-Order Chiral L-R Coupling Current-Surface No-Go"
     },
     "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04": {
       "claim_id": "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04",
@@ -125834,7 +125887,7 @@
       "bounded_theorem": 1553,
       "decoration": 3,
       "meta": 319,
-      "no_go": 324,
+      "no_go": 325,
       "none": 1216,
       "open_gate": 134,
       "positive_theorem": 274
@@ -125843,15 +125896,15 @@
       "bounded_theorem": 1958,
       "decoration": 3,
       "meta": 319,
-      "no_go": 428,
+      "no_go": 429,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14352,
-    "leaf_count": 1285,
-    "node_count": 3823,
+    "edge_count": 14360,
+    "leaf_count": 1284,
+    "node_count": 3824,
     "root_count": 1102,
-    "runners_with_path": 3446
+    "runners_with_path": 3447
   }
 }

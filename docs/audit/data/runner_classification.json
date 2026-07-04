@@ -360,6 +360,18 @@
       "dominant_class": "A",
       "runner": "scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py"
     },
+    "acphilambda_determinant_order_chiral_lr_coupling_current_surface_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 12,
+        "B": 1,
+        "C": 6,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/acphilambda_determinant_order_chiral_lr_current_surface_no_go_2026_07_04.py"
+    },
     "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04": {
       "assert_count": 1,
       "counts": {
@@ -41870,6 +41882,21 @@
         "B": 1,
         "C": 0,
         "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/acphilambda_determinant_order_chiral_lr_current_surface_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "acphilambda_determinant_order_chiral_lr_coupling_current_surface_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 12,
+        "B": 1,
+        "C": 6,
+        "D": 3
       },
       "decoration_candidate": false,
       "dominant_class": "A",
@@ -90952,14 +90979,14 @@
   "stats": {
     "decoration_candidates": 692,
     "dominant_class_distribution": {
-      "A": 494,
+      "A": 495,
       "B": 636,
       "C": 1275,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3312,
-    "runners_with_C": 1738,
-    "runners_with_D": 1065
+    "runners_classified": 3313,
+    "runners_with_C": 1739,
+    "runners_with_D": 1066
   }
 }

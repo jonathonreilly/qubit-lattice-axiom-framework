@@ -1,0 +1,195 @@
+AC_phi_lambda determinant-order chiral L-R current-surface no-go verifier
+
+========================================================================================
+A. source presence and ledger grounding
+========================================================================================
+[PASS] exists: docs/ACPHILAMBDA_DETERMINANT_ORDER_CHIRAL_LR_COUPLING_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/ACPHILAMBDA_DYNAMICAL_INDEX_OCCUPANCY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/KOIDE_R_HALF_INDEX_READOUT_NON_SUSY_STAGGERED_DIRAC_GATE_META_NOTE_2026-06-05.md
+[PASS] exists: docs/SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md
+[PASS] exists: docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md
+[PASS] exists: docs/STAGGERED_DIRAC_EXERCISE_HONEST_REASSESSMENT_NOTE_2026-06-06.md
+[PASS] exists: docs/KOIDE_KAHLER_DIRAC_REALIZATION_GIVES_R_ONE_INDEX_ROUTE_CLOSED_BOUNDED_NO_GO_NOTE_2026-06-08.md
+[PASS] block13 ledger row resolves
+[PASS] block13 row has note path
+[PASS] index_meta ledger row resolves
+[PASS] index_meta row has note path
+[PASS] supertrace ledger row resolves
+[PASS] supertrace row has note path
+[PASS] first_order ledger row resolves
+[PASS] first_order row has note path
+[PASS] reassessment ledger row resolves
+[PASS] reassessment row has note path
+[PASS] kahler_dirac ledger row resolves
+[PASS] kahler_dirac row has note path
+[PASS] minimal ledger row resolves
+[PASS] minimal row has note path
+[PASS] registry ledger row resolves
+[PASS] registry row has note path
+[PASS] block13 claim type is no_go
+[PASS] index_meta claim type is meta
+[PASS] supertrace claim type is open_gate
+[PASS] first_order claim type is bounded_theorem
+[PASS] reassessment claim type is bounded_theorem
+[PASS] kahler_dirac claim type is no_go
+[PASS] new note has Type no_go
+[PASS] new note has Claim type no_go
+
+========================================================================================
+B. Tier-A registry remains untouched
+========================================================================================
+[PASS] Tier-A genuine count remains two
+[PASS] canonical Tier-A IDs remain AC and theta
+[PASS] AC surviving decomposition remains two residuals
+[PASS] theta decomposition remains gauge plus mass
+[PASS] AC registry carries measure-side doublet occupancy realization binary
+[PASS] AC registry carries which grain/statistics the matter action implements
+[PASS] AC registry carries sector-tied/count-twice
+[PASS] AC registry carries orbit/holomorphic/count-once
+[PASS] AC registry carries delta readout identification R-eta
+[PASS] AC registry carries registered realized-state data
+[PASS] note preserves boundary: AC_phi_lambda is not retired.
+[PASS] note preserves boundary: The Tier-A registry is not edited.
+[PASS] note preserves boundary: No value of `r` is derived, selected, preferred, or 
+[PASS] note preserves boundary: R-eta and theta are untouched.
+
+========================================================================================
+C. new note dependency and wording discipline
+========================================================================================
+[PASS] markdown link inventory is controlled
+[PASS] new note carries determinant-order framing: focused determinant-order route test
+[PASS] new note carries determinant-order framing: physical chiral/Pfaffian/holomorphic determinant bridg
+[PASS] new note carries determinant-order framing: determinant-order closure still needs a new theorem
+[PASS] new note carries determinant-order framing: Physical L-R coupling bridge
+[PASS] new note carries determinant-order framing: Pfaffian/Weyl quotient
+[PASS] new note carries determinant-order framing: support for a candidate route is not a matter-action s
+[PASS] N1 gate present
+[PASS] N2 gate present
+[PASS] N3 gate present
+[PASS] N4 gate present
+[PASS] N5 gate present
+[PASS] N6 gate present
+[PASS] N7 gate present
+[PASS] N8 gate present
+[PASS] forbidden phrase absent: AC_phi_lambda is retired
+[PASS] forbidden phrase absent: r = 1/2 is derived
+[PASS] forbidden phrase absent: r = 1 is derived
+[PASS] forbidden phrase absent: audited_clean status is set
+[PASS] forbidden phrase absent: effective_status = retained
+[PASS] forbidden phrase absent: PDG values enter
+[PASS] forbidden phrase absent: observed lepton masses enter
+[PASS] note line count is bounded
+[PASS] verification threshold present
+
+========================================================================================
+D. source-packet boundary checks
+========================================================================================
+[PASS] index meta keeps dynamics gate: not a derivation of `r = 1/2`
+[PASS] index meta keeps dynamics gate: necessary-not-sufficient
+[PASS] index meta keeps dynamics gate: measure-neutral
+[PASS] index meta keeps dynamics gate: first-order
+[PASS] index meta keeps dynamics gate: second-order
+[PASS] index meta keeps dynamics gate: open staggered-Dirac corner realization
+[PASS] supertrace note is conditional: **Type:** open_gate
+[PASS] supertrace note is conditional: does not claim that the conditional antecedent has bee
+[PASS] supertrace note is conditional: does not derive the Koide value
+[PASS] supertrace note is conditional: requires the **gated** staggered-Dirac mass/Yukawa str
+[PASS] supertrace note is conditional: compute the CHIRAL
+[PASS] first-order selector note keeps bridge open: not a derivation of `r = 1/2`
+[PASS] first-order selector note keeps bridge open: The remaining selector gate is the L-R coupling plus a
+[PASS] first-order selector note keeps bridge open: not a retained bridge from
+[PASS] first-order selector note keeps bridge open: physical first-order/readout `r`-weighting rule
+[PASS] first-order selector note keeps bridge open: No physical `M(b)
+[PASS] first-order selector note keeps bridge open: bounded algebraic localization and route-pruning theor
+[PASS] staggered reassessment keeps gate open: essentially closed
+[PASS] staggered reassessment keeps gate open: caught an over-claim
+[PASS] staggered reassessment keeps gate open: Fermionic statistics
+[PASS] staggered reassessment keeps gate open: Euclidean-signature / time-direction import
+[PASS] staggered reassessment keeps gate open: Chirality
+[PASS] staggered reassessment keeps gate open: not** a closure of the gate
+[PASS] Kahler-Dirac realization is count-twice: det D = |det M|
+[PASS] Kahler-Dirac realization is count-twice: singular values
+[PASS] Kahler-Dirac realization is count-twice: The index route is closed on the realization.
+[PASS] Kahler-Dirac realization is count-twice: wrong *kind* of functional
+[PASS] Kahler-Dirac realization is count-twice: does **not** retire, split, or re-grade the `AC_
+[PASS] block13 names determinant-order route: Determinant-order route
+[PASS] block13 names determinant-order route: derive an actual chiral/Pfaffian/holomorphic
+[PASS] block13 names determinant-order route: not merely a Dirac modulus square
+[PASS] block13 names determinant-order route: AC_phi_lambda is not retired.
+[PASS] minimal axioms withhold source/dynamics: does not choose a Hamiltonian or transfer operator
+[PASS] minimal axioms withhold source/dynamics: transition probabilities or weights
+[PASS] minimal axioms withhold source/dynamics: context selection
+[PASS] minimal axioms withhold source/dynamics: source/action and physical-observable identification
+[PASS] minimal axioms withhold source/dynamics: Only records are readable
+
+========================================================================================
+E. weight and representation algebra
+========================================================================================
+[PASS] trace/vector weights give expected r
+[PASS] index/holomorphic weights give expected r
+[PASS] uniform complex rescaling weights give expected r
+[PASS] weight map agrees with fraction ws=1 wd=1
+[PASS] weight map agrees with fraction ws=1 wd=2
+[PASS] weight map agrees with fraction ws=1 wd=3
+[PASS] weight map agrees with fraction ws=1 wd=4
+[PASS] weight map agrees with fraction ws=1 wd=5
+[PASS] weight map agrees with fraction ws=2 wd=1
+[PASS] weight map agrees with fraction ws=2 wd=2
+[PASS] weight map agrees with fraction ws=2 wd=3
+[PASS] weight map agrees with fraction ws=2 wd=4
+[PASS] weight map agrees with fraction ws=2 wd=5
+[PASS] weight map agrees with fraction ws=3 wd=1
+[PASS] weight map agrees with fraction ws=3 wd=2
+[PASS] weight map agrees with fraction ws=3 wd=3
+[PASS] weight map agrees with fraction ws=3 wd=4
+[PASS] weight map agrees with fraction ws=3 wd=5
+[PASS] weight map agrees with fraction ws=4 wd=1
+[PASS] weight map agrees with fraction ws=4 wd=2
+[PASS] weight map agrees with fraction ws=4 wd=3
+[PASS] weight map agrees with fraction ws=4 wd=4
+[PASS] weight map agrees with fraction ws=4 wd=5
+[PASS] weight map agrees with fraction ws=5 wd=1
+[PASS] weight map agrees with fraction ws=5 wd=2
+[PASS] weight map agrees with fraction ws=5 wd=3
+[PASS] weight map agrees with fraction ws=5 wd=4
+[PASS] weight map agrees with fraction ws=5 wd=5
+[PASS] C3 regular representation has one copy of each character
+[PASS] multiplicity doublet count differs from dimension doublet count
+
+========================================================================================
+F. native circulant and separate-factor selector algebra
+========================================================================================
+[PASS] Gamma_chi commutes with C
+[PASS] native circulant anticommuting selector is zero
+[PASS] separate-factor escape commutes with C tensor I
+[PASS] separate-factor escape anticommutes with chirality
+[PASS] separate-factor escape is nonzero
+
+========================================================================================
+G. Dirac determinant order and measure neutrality
+========================================================================================
+[PASS] off-diagonal Dirac block determinant is sign times detM detMdag
+[PASS] D^2 upper block is M Mdag
+[PASS] D^2 lower block is Mdag M
+[PASS] native J_cs commutes with circulants
+[PASS] J_cs flow determinant is one
+
+========================================================================================
+H. final no-go discipline
+========================================================================================
+[PASS] no-go discipline phrase present: This is not a universal no-go
+[PASS] no-go discipline phrase present: No observed lepton masses
+[PASS] no-go discipline phrase present: The residual is still AC(i)'s measure-side binary
+[PASS] no-go discipline phrase present: This note names exactly that needed theorem
+[PASS] no-go discipline phrase present: does not select `r = 1/2` or `r = 1`
+[PASS] new note does not introduce wall labels
+[PASS] new note says audit lane only
+[PASS] new note says no registry edit
+
+========================================================================================
+TOTAL: PASS=158 FAIL=0
+========================================================================================

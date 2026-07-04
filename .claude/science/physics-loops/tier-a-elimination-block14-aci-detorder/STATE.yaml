@@ -1,0 +1,37 @@
+block: tier-a-elimination-block14-aci-detorder
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block14-aci-detorder-20260704
+base_branch: physics-loop/tier-a-elimination-block13-aci-index-20260704
+pr_url: pending
+source_commit: pending
+target: AC_phi_lambda sub-admission (i) determinant-order / chiral L-R coupling route
+claim_type: no_go
+registry_edits: false
+retirement_claimed: false
+status: verified_ready_for_pr
+active_route: determinant-order bridge stretch attempt
+hard_residual: "derive physical chiral/Pfaffian/holomorphic determinant bridge or L-R coupling readout for count-once AC(i)"
+files_touched:
+  - docs/ACPHILAMBDA_DETERMINANT_ORDER_CHIRAL_LR_COUPLING_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+  - scripts/acphilambda_determinant_order_chiral_lr_current_surface_no_go_2026_07_04.py
+  - .claude/science/physics-loops/tier-a-elimination-block14-aci-detorder/
+open_imports:
+  - physical AC_phi_lambda to M(b) tensor sigma_+ action bridge
+  - physical first-order/readout weighting rule
+  - Pfaffian/Weyl/holomorphic determinant quotient before Dirac modulus-square pairing
+no_go_routes:
+  - non-SUSY index availability alone selects AC(i)
+  - supertrace open-gate algebra alone selects AC(i)
+  - native C3 circulant mass supplies anticommuting selector
+  - separate-factor algebraic escape alone supplies physical L-R coupling/readout bridge
+trace_gate_classification: negative_route_pruning
+review_findings: pass_with_bounded_claims
+verification:
+  runner: "PASS=158 FAIL=0"
+  py_compile: pass
+  audit_pipeline: pass
+  audit_lint_strict: "pass_with_pre_existing_warnings_notices"
+  diff_check: pass
+audit_row: acphilambda_determinant_order_chiral_lr_coupling_current_surface_no_go_note_2026-07-04
+next_exact_action: "Commit, push stacked PR, then monitor audit."
+stop_condition: "Block complete after green checks, review disposition pass/demote, PR opened, and lock released."

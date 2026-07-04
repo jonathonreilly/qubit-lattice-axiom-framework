@@ -36902,6 +36902,10 @@
     },
     {
       "from": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+      "to": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
+    },
+    {
+      "from": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
       "to": "strong_cp_theta_zero_note"
     },
     {
@@ -109280,12 +109284,13 @@
         "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
         "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
         "minimal_axioms",
+        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
         "strong_cp_theta_zero_note",
         "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
         "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e70fdb483c7caf7b5d3c5c90e8b0f9f56873bf3cfb34c51d538d096da25deb86",
+      "note_hash": "73f8f505744adef35f2f5ac067e0dc586c3bf170875a758015153e6d96e15951",
       "path": "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md",
       "runner_path": "scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py",
       "title": "Registrable Determinant-Character Readout Is Additive-Plus-Even Hence Phase-Free \u2014 Narrow Bounded Theorem"
@@ -125436,7 +125441,7 @@
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14293,
+    "edge_count": 14294,
     "leaf_count": 1288,
     "node_count": 3814,
     "root_count": 1103,

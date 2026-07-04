@@ -1,11 +1,6 @@
 # PR Backlog
 
-No PR backlog yet. Create a stacked PR against:
+No PR backlog.
 
-```bash
-gh pr create \
-  --base physics-loop/tier-a-elimination-block18-acii-transport-stretch-20260704 \
-  --head physics-loop/tier-a-elimination-block19-acii-kbreaking-20260704 \
-  --title "[physics-loop] tier-a-elimination-block19-acii-kbreaking no-go" \
-  --body-file /tmp/block19-pr-body.md
-```
+PR opened:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4947

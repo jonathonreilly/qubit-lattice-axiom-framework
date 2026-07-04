@@ -7,7 +7,8 @@ transport route for AC_phi_lambda sub-admission (ii), R-eta.
 
 Branch: `physics-loop/tier-a-elimination-block19-acii-kbreaking-20260704`
 Base: `physics-loop/tier-a-elimination-block18-acii-transport-stretch-20260704`
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4947
+Source commit: `b9ea8edee`
 
 ## Expected Claim Movement
 
@@ -47,6 +48,6 @@ Audit row:
 
 ## Next Exact Action
 
-Open a stacked block19 PR, then continue the Tier-A elimination campaign. If
-AC R-eta remains a no-go/support-only lane after direct-readout and
-non-minimal transport attempts, pivot to theta residuals.
+Monitor GitHub audit for PR #4947 and continue the Tier-A elimination
+campaign. If AC R-eta remains a no-go/support-only lane after direct-readout
+and non-minimal transport attempts, pivot to theta residuals.

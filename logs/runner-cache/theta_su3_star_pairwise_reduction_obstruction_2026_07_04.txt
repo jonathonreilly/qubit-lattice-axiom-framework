@@ -1,0 +1,84 @@
+Theta SU(3) star pairwise-reduction obstruction
+==============================================================================
+
+------------------------------------------------------------------------------
+A - source and registry boundaries
+------------------------------------------------------------------------------
+PASS: exists: docs/THETA_SU3_STAR_PAIRWISE_REDUCTION_OBSTRUCTION_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: exists: docs/audit/data/tier_a_admissions.json
+PASS: exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+PASS: exists: docs/THETA_LINK_STAR_GLUING_FRAME_CORRELATION_PAIR_COMPOSITE_DAGGER_EVENNESS_AND_ODD_BRANCH_PHASE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md
+PASS: exists: docs/THETA_CARTAN_VALUED_CROSS_PLANE_PAIRING_DIAGONAL_WEYL_FRAME_THEOREMS_AND_TRIALITY_FRACTIONAL_VALUES_BOUNDED_THEOREM_NOTE_2026-07-02.md
+PASS: exists: docs/THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md
+PASS: exists: docs/THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+PASS: note declares no-go claim type
+PASS: runner path is wired in note
+PASS: Tier-A genuine admitted input count remains two
+PASS: theta minimum decomposition remains the two residual atoms -- ['gauge_side_winding_account', 'mass_side_orientation_determinant_readout_bridge']
+PASS: registry names gauge-side winding account
+PASS: minimal axioms withhold source/action
+PASS: link-star note names SU(3) star reduction as open
+PASS: positive route names G2/G3 gates
+PASS: Cartan note names relative-frame correlation residual
+PASS: G3 no-go keeps phase insertion open
+
+------------------------------------------------------------------------------
+B - exact finite Heisenberg witness
+------------------------------------------------------------------------------
+PASS: closed-sum has three noncentral staples -- ((1, 0), (0, 1), (2, 2))
+PASS: closed-sum pair sums are all noncentral -- [(1, 1), (0, 2), (2, 0)]
+PASS: closed-sum pair differences are all noncentral -- [(1, 2), (2, 1), (2, 1), (1, 2), (1, 2), (2, 1)]
+PASS: open-sum has three noncentral staples -- ((1, 0), (0, 1), (1, 1))
+PASS: open-sum pair sums are all noncentral -- [(1, 1), (2, 1), (1, 2)]
+PASS: open-sum pair differences are all noncentral -- [(1, 2), (0, 2), (2, 1), (2, 0), (0, 1), (1, 0)]
+PASS: separate plus pairwise vector-class signatures match -- (('diff:noncentral', 'diff:noncentral', 'diff:noncentral', 'diff:noncentral', 'diff:noncentral', 'diff:noncentral', 'noncentral', 'noncentral', 'noncentral', 'sum:noncentral', 'sum:noncentral', 'sum:noncentral'), ('diff:noncentral', 'diff:noncentral', 'diff:noncentral', 'diff:noncentral', 'diff:noncentral', 'diff:noncentral', 'noncentral', 'noncentral', 'noncentral', 'sum:noncentral', 'sum:noncentral', 'sum:noncentral'))
+PASS: closed-sum ABC is central with phase omega^2 -- (2, (0, 0))
+PASS: closed-sum ACB is central with phase one -- (0, (0, 0))
+PASS: open-sum ABC is noncentral -- (1, (2, 2))
+PASS: open-sum ACB is noncentral -- (0, (2, 2))
+PASS: closed-sum dagger-even triple invariant is 3/2 -- 1.5
+PASS: open-sum dagger-even triple invariant is zero
+PASS: same pairwise data but different even triple invariant
+
+------------------------------------------------------------------------------
+C - matrix-level SU(3) checks
+------------------------------------------------------------------------------
+PASS: closed-sum staple 0 is unitary
+PASS: closed-sum staple 0 has determinant one -- (1+0j)
+PASS: closed-sum staple 0 is traceless noncentral class -- (np.complex128(0j), np.complex128(0j), np.complex128(1+0j))
+PASS: closed-sum staple 1 is unitary
+PASS: closed-sum staple 1 has determinant one -- (0.9999999999999999-5.32800260097572e-16j)
+PASS: closed-sum staple 1 is traceless noncentral class -- (np.complex128(3.3306690738754696e-16j), np.complex128(4.440892098500626e-16+3.3306690738754696e-16j), np.complex128(0.9999999999999999-5.32800260097572e-16j))
+PASS: closed-sum staple 2 is unitary
+PASS: closed-sum staple 2 has determinant one -- (0.9999999999999998-1.0100893689638862e-15j)
+PASS: closed-sum staple 2 is traceless noncentral class -- (np.complex128(0j), np.complex128(0j), np.complex128(0.9999999999999998-1.0100893689638862e-15j))
+PASS: open-sum staple 0 is unitary
+PASS: open-sum staple 0 has determinant one -- (1+0j)
+PASS: open-sum staple 0 is traceless noncentral class -- (np.complex128(0j), np.complex128(0j), np.complex128(1+0j))
+PASS: open-sum staple 1 is unitary
+PASS: open-sum staple 1 has determinant one -- (0.9999999999999999-5.32800260097572e-16j)
+PASS: open-sum staple 1 is traceless noncentral class -- (np.complex128(3.3306690738754696e-16j), np.complex128(4.440892098500626e-16+3.3306690738754696e-16j), np.complex128(0.9999999999999999-5.32800260097572e-16j))
+PASS: open-sum staple 2 is unitary
+PASS: open-sum staple 2 has determinant one -- (0.9999999999999999-5.32800260097572e-16j)
+PASS: open-sum staple 2 is traceless noncentral class -- (np.complex128(0j), np.complex128(0j), np.complex128(0.9999999999999999-5.32800260097572e-16j))
+PASS: matrix pairwise signature lengths match -- (12, 12)
+PASS: all matrix pairwise probes match
+PASS: matrix closed-sum even invariant matches exact value -- 1.5000000000000007
+PASS: matrix open-sum even invariant matches exact value
+PASS: closed-sum even invariant is stable under simultaneous dagger
+PASS: open-sum even invariant is stable under simultaneous dagger
+
+------------------------------------------------------------------------------
+D - obstruction and scope guards
+------------------------------------------------------------------------------
+PASS: note states pairwise-reduction shortcut is pruned
+PASS: note states theta is not retired
+PASS: note states Tier-A registry is not edited
+PASS: note preserves phase-source route
+PASS: note preserves sector-level route
+PASS: note classifies support as source-side no-go
+PASS: banned overclaim phrases are absent
+
+==============================================================================
+TOTAL: PASS=63 FAIL=0

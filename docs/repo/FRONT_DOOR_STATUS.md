@@ -91,5 +91,5 @@ Top load-bearing rows by graph score:
 - `graph_first_su3_integration_note` - critical; 1578 descendants; score 65.125
 - `observable_principle_from_axiom_note` - critical; 1202 descendants; score 64.232
 - `plaquette_self_consistency_note` - critical; 1248 descendants; score 53.287
-- `minimal_axioms_2026-05-03` - critical; 1153 descendants; score 48.172
-- `key_terminology` - critical; 1253 descendants; score 46.792
+- `minimal_axioms_2026-05-03` - critical; 1154 descendants; score 48.174
+- `key_terminology` - critical; 1254 descendants; score 46.793

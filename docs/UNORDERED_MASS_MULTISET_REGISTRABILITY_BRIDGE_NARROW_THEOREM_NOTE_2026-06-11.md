@@ -63,7 +63,8 @@ orbit-constancy premise this row previously took from the pre-reset Record
 wording is now carried by the cited supplied-context bridge note (T1), whose
 audit status is set only by the independent audit lane; P-dep remains this
 row's explicit supplied premise exactly as the 2026-06-18 independence no-go
-requires. The theorem content below is unchanged.
+requires. The mathematical content below is unchanged; its premise accounting
+now names the current source of each boundary.
 
 **2026-06-20 conditional-scoping repair.** Prior boundary review named the source-side
 alternative: "keep this row explicitly conditional on P-dep" (the other arm —
@@ -108,30 +109,33 @@ Elementary facts on this surface, each verified in the runner:
 - **(F3)** `lambda_{sigma(k)}(-delta) = lambda_k(delta)` — the flip permutes
   the per-sector values within `K`/CPT label orbits.
 
-## The Record boundary and P-dep premise
+## The current Record boundary, supplied orbit bridge, and P-dep premise
 
-From [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md):
+From [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md), the
+current Record axiom supplies only the readout facts used here:
 
 1. **(Additivity)** the scalar readout `I` is finitely additive over finite
    pairwise-disjoint record collections, with `I(empty) = 0`;
-2. **(Orbit)** the realized outcome is the `K`/CPT orbit of the realized
-   central sector — so two records related by the fixed `K`/CPT conjugation
-   register the **same** outcome;
-3. **(No-within-sector-data)** a record supplies no readout context,
-   decomposition, `K`/CPT structure, weighting, normalization, probability,
-   within-sector data, or occupancy rule.
+2. **(Content-determination)** a readout value is determined by record content
+   alone.
 
-These Record clauses are used exactly as stated. They do **not** by
-themselves prove P-dep in this note.
+The current Record axiom does **not** itself supply a readout context,
+decomposition, `K`/CPT structure, orbit indexing, weighting, normalization,
+probability, within-sector data, or occupancy rule. The `K`/CPT orbit
+constancy used here is carried by the supplied-context bridge
+[`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md):
+T1 transfers supplied ORBIT-INDEXING through the current axiom's
+content-determination sentence. These premises do **not** by themselves prove
+P-dep in this note.
 
 **Definition (Record-registrable readout).** A scalar `R` assigned to records
 in the supplied context that is (i) finitely additive over pairwise-disjoint
 records with `R(empty) = 0` [(Additivity)], and (ii) constant on `K`/CPT
-orbits of the realized outcome — equal values on a record and its `K`/CPT
-image, since they register one outcome [(Orbit)]. (This is the same
-registrable class used by the unaudited precedent note named under
-Dependencies; the present note re-derives every leg it uses, so that note is
-context, not load-bearing.)
+orbits via T1 of the cited supplied-context bridge: ORBIT-INDEXING gives equal
+record content on a record and its `K`/CPT image, and content-determination
+then gives equal readout values. (This is the same registrable class used by
+the unaudited precedent note named under Dependencies; the present note
+re-derives every leg it uses, so that note is context, not load-bearing.)
 
 **Conditional premise (P-dep, explicit and load-bearing).** A registrable
 readout's per-record contribution is a function of the per-record
@@ -146,8 +150,10 @@ conditional theorem without treating P-dep as hidden retained structure.
 
 ## Theorem (conditional unordered-mass-multiset registrability bridge)
 
-Assume the supplied context above, the three Record clauses quoted above, and
-the explicit P-dep conditional premise. With `M(delta)` denoting the
+Assume the supplied context above, current Record additivity and
+content-determination, the cited supplied-context bridge T1 for `K`/CPT orbit
+constancy on ORBIT-INDEXING, and the explicit P-dep conditional premise. With
+`M(delta)` denoting the
 **orbit-resolved unordered multiset** of per-orbit sector invariants
 `M(delta) = {{ ([k], lambda_k(delta)) : k in Lambda }}` (`[k]` the `K`/CPT
 label orbit, so within-orbit order is erased by construction):
@@ -191,8 +197,9 @@ by the additivity identity itself. `R(empty) = 0` is the empty sum.
 
 **L2 — per-record contributions are orbit class functions.** By P-dep,
 `r_k = f(k, lambda_k(delta))` for some function `f` of the label and the
-monitored central value. (Orbit) applied to a single record and its `K`/CPT
-image — which register one outcome — gives the per-record identity
+monitored central value. T1 of the cited supplied-context bridge applies to a
+single record and its `K`/CPT image in the supplied ORBIT-INDEXING context and
+gives the per-record identity
 
 ```text
 f(k, lambda_k(delta)) = f(sigma(k), lambda_{sigma(k)}(-delta))   for all delta.
@@ -227,21 +234,22 @@ labelled value list as the within-orbit permutation `sigma`, so
 The odd line — `sin(3 delta)`, the signed doublet gap
 `lambda_1 - lambda_2 = 2 sqrt(3) B sin(delta)` (sign set by the Fourier
 labeling convention; the runner's convention is used), any orientation datum —
-takes opposite values on the two `K`/CPT-related configurations that register
-one outcome, hence violates (Orbit). The even datum `cos(3 delta)` is a
-function of `e_3`, i.e. of the multiset, hence registrable-eligible. This
-note does **not** derive the magnitude `|delta|` or its value.
+takes opposite values on the two `K`/CPT-related configurations whose record
+contents are identified by ORBIT-INDEXING, hence violates T1 orbit constancy.
+The even datum `cos(3 delta)` is a function of `e_3`, i.e. of the multiset,
+hence registrable-eligible. This note does **not** derive the magnitude
+`|delta|` or its value.
 
-## Hostile guard — explicit attacking candidates, each pinned to a hypothesis
+## Hostile guard — explicit attacking candidates, each pinned to a boundary
 
-| candidate readout | construction | violated Record hypothesis | runner leg |
+| candidate readout | construction | violated boundary | runner leg |
 |---|---|---|---|
-| label-weighted sum | `sum_k k * lambda_k` | (Orbit): differs at `+/-delta` (order within the doublet orbit leaks) | G1 |
-| signed doublet gap | `lambda_1 - lambda_2` | (Orbit): exactly `K`/CPT-odd (`= 2 sqrt(3) B sin delta` in the runner's labeling convention), nonzero at generic `delta` | G2 |
-| fixed-label Vandermonde | `prod_{i<j} (lambda_i - lambda_j)` | `I(empty) = 0` + (Additivity): empty product is 1, and the natural sub-multiset extension is not additive; also (Orbit): alternating under the doublet transposition | G3 |
-| orientation readout | `sin(3 delta)` | (Orbit): assigns two distinct values to the two `K`/CPT-related configurations registering one outcome | G4 |
+| label-weighted sum | `sum_k k * lambda_k` | T1 orbit constancy: differs at `+/-delta` (order within the doublet orbit leaks) | G1 |
+| signed doublet gap | `lambda_1 - lambda_2` | T1 orbit constancy: exactly `K`/CPT-odd (`= 2 sqrt(3) B sin delta` in the runner's labeling convention), nonzero at generic `delta` | G2 |
+| fixed-label Vandermonde | `prod_{i<j} (lambda_i - lambda_j)` | `I(empty) = 0` + Additivity: empty product is 1, and the natural sub-multiset extension is not additive; also T1 orbit constancy: alternating under the doublet transposition | G3 |
+| orientation readout | `sin(3 delta)` | T1 orbit constancy: assigns two distinct values to the two `K`/CPT-related configurations with identified record content | G4 |
 | interference cross-term | `R(rec_1 u rec_2) = lambda_1 + lambda_2 + lambda_1 lambda_2` | (Additivity): the product term is the cross term killed in L1 | G5 |
-| within-orbit order probe | `f(k, x) = [k = 1] * x` (additive!) | (Orbit) at per-record resolution: `r_1(delta) != r_{sigma(1)}(-delta)`; additivity alone does not save it | G6 |
+| within-orbit order probe | `f(k, x) = [k = 1] * x` (additive!) | T1 orbit constancy at per-record resolution: `r_1(delta) != r_{sigma(1)}(-delta)`; additivity alone does not save it | G6 |
 
 Every hostile candidate is **constructed and evaluated** in the runner, with
 the violation witnessed quantitatively at generic `delta` for every sampled
@@ -315,16 +323,16 @@ settings, and nothing in B1–B3 selects among them.
 
 What is actually proved: on a supplied 3x3 circulant readout context with
 Fourier sectors and conjugation-`K`, **conditional on the supplied P-dep
-premise**, the Record axiom's additivity and orbit-constancy clauses force
-every registrable scalar to be a sum of orbit-class functions of the
-per-sector central values (B1); registrable scalars suffice to reconstruct
-the orbit-resolved unordered multiset (B2); and consequently all registrable
-content is invariant under `delta -> -delta` (B3). The hostile
-order/sign-sensitive candidates each violate a named clause, checked
-numerically. What is NOT proved: that the physical readout context is of this
-class (W-ctx), that P-dep follows from the Record axiom or any approved
-primitive (W-dep), any registry change, any `theta` statement, and any
-magnitude. A hostile reviewer should attack P-dep first, then the L2 range
+premise**, current Record additivity plus the supplied-context bridge T1's
+orbit constancy force every registrable scalar to be a sum of orbit-class
+functions of the per-sector central values (B1); registrable scalars suffice
+to reconstruct the orbit-resolved unordered multiset (B2); and consequently
+all registrable content is invariant under `delta -> -delta` (B3). The
+hostile order/sign-sensitive candidates each violate a named boundary,
+checked numerically. What is NOT proved: that the physical readout context is
+of this class (W-ctx), that P-dep follows from the Record axiom or any
+approved primitive (W-dep), any registry change, any `theta` statement, and
+any magnitude. A hostile reviewer should attack P-dep first, then the L2 range
 argument (W-range), then the claim that the orbit-resolved multiset (rather
 than the bare one) is the right bridge resolution (W-orbit-type).
 
@@ -348,10 +356,13 @@ than the bare one) is the right bridge resolution (W-orbit-type).
 
 Load-bearing:
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
   (`minimal_axioms`, effective_status: `meta`, approved axiom-premise node) —
-  the Record axiom clauses (Additivity), (Orbit), (No-within-sector-data),
-  used as the retained framework premises quoted above.
+  current Record additivity over finite pairwise-disjoint records and the
+  content-determination sentence. It does not supply orbit constancy by itself.
+- [`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md)
+  — T1 supplies `K`/CPT orbit constancy on the row's supplied ORBIT-INDEXING
+  context; its audit/effective status is set only by the independent audit lane.
 - P-dep — explicit conditional premise stated in this note. It is not a
   retained theorem, not a new axiom, and not an approved primitive premise
   node, and not supplied by Record alone; it is exposed so the audited

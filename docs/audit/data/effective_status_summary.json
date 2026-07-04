@@ -1,6 +1,6 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1986,
+    "bounded_theorem": 1987,
     "decoration": 50,
     "meta": 343,
     "no_go": 466,
@@ -166,7 +166,7 @@
   ],
   "cycles_detected": 14,
   "effective_status_counts": {
-    "audited_conditional": 28,
+    "audited_conditional": 25,
     "audited_failed": 1,
     "audited_numerical_match": 10,
     "audited_renaming": 19,
@@ -203,7 +203,7 @@
     "retained_bounded": 849,
     "retained_no_go": 191,
     "retained_pending_chain": 4,
-    "unaudited": 1945
+    "unaudited": 1949
   },
   "retained_pending_chain_count": 4,
   "retained_pending_chain_examples": [

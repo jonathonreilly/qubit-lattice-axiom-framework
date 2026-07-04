@@ -19981,6 +19981,10 @@
       "to": "kcpt_orbit_count_is_the_partition_not_the_weight_holomorphic_readout_measure_neutral_narrow_theorem_note_2026-06-06"
     },
     {
+      "from": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "kcpt_orbit_count_is_the_partition_not_the_weight_holomorphic_readout_measure_neutral_narrow_theorem_note_2026-06-06",
       "to": "supertrace_index_holomorphic_route_to_koide_r_half_open_lead_note_2026-06-04"
     },
@@ -36913,6 +36917,10 @@
       "to": "minimal_axioms"
     },
     {
+      "from": "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
+      "to": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
+    },
+    {
       "from": "registration_reinstates_chirality_no_go_note_2026-06-07",
       "to": "koide_anticommuting_operator_derivation_theorem_note_2026-05-10"
     },
@@ -41822,6 +41830,10 @@
     },
     {
       "from": "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
+      "to": "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11"
+    },
+    {
+      "from": "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
       "to": "minimal_axioms"
     },
     {
@@ -43127,6 +43139,10 @@
     {
       "from": "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11",
       "to": "minimal_axioms"
+    },
+    {
+      "from": "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11",
+      "to": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
     },
     {
       "from": "unordered_mass_pdep_record_independence_no_go_note_2026-06-18",
@@ -85787,6 +85803,20 @@
       "runner_path": "scripts/kcpt_orbit_clause_kinvariant_surface_equivalence_2026_06_10.py",
       "title": "The Record Axiom's K/CPT-Orbit Clause Is Equivalent To A K-Invariant Registered Surface"
     },
+    "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": {
+      "claim_id": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "55a0fc3db9a18fb802ebc04129f3542919ab57a7d8ab2301860b23f9b3c61a0c",
+      "path": "docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md",
+      "runner_path": "scripts/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.py",
+      "title": "K/CPT Orbit Constancy And Determinant-Character Boundary Supplied-Context Bridge"
+    },
     "kcpt_orbit_count_is_the_partition_not_the_weight_holomorphic_readout_measure_neutral_narrow_theorem_note_2026-06-06": {
       "claim_id": "kcpt_orbit_count_is_the_partition_not_the_weight_holomorphic_readout_measure_neutral_narrow_theorem_note_2026-06-06",
       "claim_type_author_hint": "positive_theorem",
@@ -109266,10 +109296,11 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "minimal_axioms"
+        "minimal_axioms",
+        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1e50bb49d829c575d7b348d69495e591bf765692a3a02998f2b2f100fdf25cb1",
+      "note_hash": "60530cd3dc3a5c1f16fac07ec02e1386d5c45bca36b59e5a08251502afe4dd27",
       "path": "docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md",
       "runner_path": "scripts/frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18.py",
       "title": "Registrable Readout Determinant-Character Algebraic Core Split"
@@ -117690,10 +117721,11 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11",
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "af6a71240c37a865b5737ebee678c320da353d9cef4820eae30ab9fdefa6ddde",
+      "note_hash": "479e1e49e5b9507136f7c3ae3afe3736261136698d078ab55328984a345f07a5",
       "path": "docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md",
       "runner_path": "scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py",
       "title": "Tier-A K/CPT Orientation Invariance For The AC_phi_lambda Gate: Bounded Candidate Route"
@@ -119372,10 +119404,11 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "minimal_axioms"
+        "minimal_axioms",
+        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c9d5fecc8a0733775aad03e6ea90b7f8425f2c092cbfdf71518cdcc7ccc17a1c",
+      "note_hash": "444662f312eb92918018f6e944fdcc42aab3fa8e18629d4bca5cb631c4725e88",
       "path": "docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md",
       "runner_path": "scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py",
       "title": "Unordered-Mass-Multiset Registrability Bridge \u2014 Conditional Narrow Bounded Theorem"
@@ -125386,7 +125419,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1553,
+      "bounded_theorem": 1554,
       "decoration": 3,
       "meta": 318,
       "no_go": 316,
@@ -125395,7 +125428,7 @@
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1958,
+      "bounded_theorem": 1959,
       "decoration": 3,
       "meta": 318,
       "no_go": 420,
@@ -125403,10 +125436,10 @@
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14289,
-    "leaf_count": 1289,
-    "node_count": 3813,
+    "edge_count": 14293,
+    "leaf_count": 1288,
+    "node_count": 3814,
     "root_count": 1103,
-    "runners_with_path": 3436
+    "runners_with_path": 3437
   }
 }

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18.py
+runner_sha256: 23855c4a254dd729b325663241e55a24675d073f69b68cf796342ea8fbb0823e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.33
+status: ok
+----- stdout -----
 ========================================================================================
 REGISTRABLE READOUT DETERMINANT-CHARACTER ALGEBRAIC CORE SPLIT
 ========================================================================================
@@ -57,7 +65,7 @@ T8 - source-boundary guard
   [PASS] split note carries boundary phrase: does not identify the physical strong-CP mass-orientation readout
   [PASS] split note carries boundary phrase: does not identify AC_phi_lambda species data
   [PASS] split note carries boundary phrase: does not derive the determinant-character/log-character boundary
-  [PASS] split note carries boundary phrase: bare_retained_allowed: false
+  [PASS] split note carries boundary phrase: effective status is pipeline-derived after independent audit ratification and dependency closure
   [PASS] split note has no markdown dependency edge to parent target
   [PASS] parent still names conditional boundary: post-audit source firewall removes bridge-discharge language
   [PASS] parent still names conditional boundary: physical-readout
@@ -68,7 +76,13 @@ T8 - source-boundary guard
   [PASS] bridge-discharge wording absent: retire any Tier-A admission
   [PASS] bridge-discharge wording absent: promoted to retained
   [PASS] bridge-discharge wording absent: retained on the actual surface
+  [PASS] bridge-discharge wording absent: Status Certificate
+  [PASS] bridge-discharge wording absent: audit_required_before_effective_retained
+  [PASS] bridge-discharge wording absent: bare_retained_allowed
 
 ========================================================================================
-TOTAL: PASS=35 FAIL=0
+TOTAL: PASS=38 FAIL=0
 ========================================================================================
+
+----- stderr -----
+

@@ -2,7 +2,7 @@
 
 **Date:** 2026-07-04
 **Claim type:** bounded_theorem
-**Status:** exact supplied-context bridge; audit_required_before_effective_retained=true; bare_retained_allowed=false
+**Boundary:** supplied-context bridge only; effective status is pipeline-derived after independent audit ratification and dependency closure.
 **Status authority:** independent audit lane only. This note does not set or predict an audit outcome and does not edit audit ledgers, queues, Tier-A registries, publication-status surfaces, active review queues, lane registries, or front-door status files.
 **Primary runner:** [`scripts/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.py`](../scripts/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.py)
 **Cached log:** [`logs/runner-cache/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.txt`](../logs/runner-cache/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.txt)
@@ -32,12 +32,13 @@ alone. For any finite collection of pairwise-disjoint records, scalar readout
 `I` is additive, with `I(empty)=0`.
 ```
 
-Notes that previously cited the axiom for orbit constancy now need a retained
-bridge. This note is that bridge: it registers, on a supplied readout context,
-(T1) K/CPT orbit constancy as a theorem from the current Record axiom plus one
-named supplied-context property, and (T2) the determinant-character/log-character
-homomorphism boundary as named supplied-context structure, with the even+odd
-zero-phase algebra restated on premises that are now correctly located.
+Notes that previously cited the axiom for orbit constancy now need an
+independently audited supplied-context bridge. This note is a source artifact
+for that bridge: on a supplied readout context, it proves (T1) K/CPT orbit
+constancy from the current Record axiom plus one named supplied-context
+property, and (T2) the determinant-character/log-character homomorphism
+boundary as named supplied-context structure, with the even+odd zero-phase
+algebra restated on premises that are now correctly located.
 
 The relevant context handles are
 `REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md`
@@ -137,23 +138,6 @@ that work, not Record.
 - no derivation or special role for `|delta| = 2/9`;
 - no new axiom, primitive, admission, normalization, comparator, fitted value,
   or measured input.
-
-## Status Certificate
-
-```yaml
-actual_current_surface_status: exact-supplied-context-bridge
-trace_class: direct_blocker_closure
-reachability_to_target: partially_closes
-target_claim_id: registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18
-target_blocker_text: "the 2026-06-18 core split cited older Record orbit-constancy content; under the 2026-06-29 foundation reset, orbit constancy and determinant-character/log-character homomorphism structure must be registered as supplied-context premises"
-conditional_surface_status: null
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "This bridge relocates context-specific orbit indexing and determinant-character/log-character structure without changing admissions or audit status."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
 
 ## Runner Certificate
 

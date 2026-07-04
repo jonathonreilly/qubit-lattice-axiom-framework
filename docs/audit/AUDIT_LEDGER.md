@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 849 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1945 |
+| unaudited | 1949 |
 | meta | 337 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 28 |
+| ~~audited_conditional~~ | 25 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -61,16 +61,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1222 |
-| `audited_conditional` | 28 |
+| `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2282 |
+| `unaudited` | 2286 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1986 |
+| `bounded_theorem` | 1987 |
 | `decoration` | 50 |
 | `meta` | 343 |
 | `no_go` | 466 |
@@ -81,16 +81,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 660 |
 | `high` | 465 |
-| `medium` | 924 |
-| `leaf` | 1593 |
+| `medium` | 926 |
+| `leaf` | 1592 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 14
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3302
-- runners with (C) first-principles compute hits: 1729
+- runners classified: 3303
+- runners with (C) first-principles compute hits: 1730
 - runners with (D) external comparator hits: 1061
 - decoration candidates (no C, no D): 691
 
@@ -100,7 +100,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1863 | 186.86 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1864 | 187.37 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1148 | 67.17 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 198 | 65.14 | `audited_clean` | **retained** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1578 | 65.12 | `audited_clean` | **retained** |
@@ -1386,11 +1386,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_e_center_blindness_no_go_note_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | decoration | ~~audited_decoration~~ | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` |
@@ -14485,19 +14482,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted source proves a direct pointwise algebraic identity followed by integration: exp(-S_+(x)) exp(-S_+(Theta x)) F(Theta x) F(x) = exp(-2S_+(x)) |F(x)|^2 = |psi^2 F|^2, so the reflected integral is a real nonnegative weighted-L2 norm square and the associated form is Hermitian PSD. The runner exits cleanly with PASS=27 FAIL=0, all class-A checks, but the proof does not depend on the runner. The ratified claim is the exact conditional mathematical theorem under stated hypotheses; it does not assert that the framework Wilson/gauge/fermion action satisfies those hypotheses.
 - **auditor confidence:** high
 
-### `registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18`
-
-- **Note:** [`REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md`](../../docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Algebraic zero-phase result for a supplied determinant-character/log-character homomorphism readout surface with K/CPT orbit constancy.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-xhigh-waveA-core-20260704`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** K/CPT orbit constancy makes the homomorphic scalar even while additivity makes it odd, so even and odd together force g(x)=0 for every phase datum.  _(class `A`)_
-- **chain closes:** False — The odd-plus-even algebra is valid. The restricted packet does not close the supplied determinant-character/log-character homomorphism boundary or the K/CPT orbit-constancy readout premise from the current Minimal Axioms authority.
-- **rationale:** The runner genuinely checks the elementary algebra and source-boundary guards rather than merely printing constants. Within the stated homomorphism-plus-K/CPT-even surface, the zero phase conclusion follows by standard group algebra. However, the packet's accepted axiom authority supplies finite Record additivity only and explicitly treats K/CPT structure and readout-context content as downstream. The claim is therefore correct as a bounded algebraic core but conditional on an unclosed supplied readout boundary.
-- **auditor confidence:** high
-
 ### `registration_reinstates_chirality_no_go_note_2026-06-07`
 
 - **Note:** [`REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md`](../../docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md)
@@ -17584,19 +17568,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The spectral calculation is a finite algebraic identity on the explicitly admitted bounded surface, not a tuned numerical comparator or a physical-generation identification. The runner's math checks agree with an independent exact enumeration, while its source-firewall checks confirm the note excludes no-rooting, physical lattice necessity, CKM, chirality, and new-axiom claims. The no-go/wall discipline gate does not expose an inflated wall set: there is a single registered Tier-A admitted surface, the no-proper-quotient residual exactly matches the direct dependency's audited scope, and all broader negative/physical claims are explicitly out of scope.
 - **auditor confidence:** high
 
-### `tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09`
-
-- **Note:** [`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`](../../docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** For the stipulated three-parameter Hermitian circulant AC_phi_lambda class, the unordered spectrum is invariant under delta -> -delta.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-xhigh-waveA-korbit-20260704`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Complex conjugation sends H(delta) exactly to H(-delta), and the elementary symmetric polynomials of the three eigenvalues agree at delta and -delta, with the flip permuting labels by k -> -k.  _(class `A`)_
-- **chain closes:** False — The algebraic orientation-invariance identity closes on the supplied circulant class. The registrability consequence does not close because the note explicitly leaves open the bridge that the registrable species surface is exactly the unordered mass multiset and that k -> -k is only convention.
-- **rationale:** The runner genuinely checks the stated algebraic identities for the stipulated circulant family, and those checks support class A for the load-bearing step. However, the note's physical or registry-facing consequence is explicitly conditional on an unordered-multiset registrability bridge that is not closed in the restricted packet. The cited minimal axioms are accepted framework premises and do not themselves cause a downgrade, but they also do not supply the missing AC_phi_lambda registrability bridge.
-- **auditor confidence:** high
-
 ### `topological_instanton_textbook_infrastructure_import_note_2026-05-17`
 
 - **Note:** [`TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md`](../../docs/TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md)
@@ -18043,21 +18014,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Inside the grown-DAG generator, the dynamic-augmented weak-field package is empirically predicted by `(avg_deg >= 10.42) AND (reach_frac >= 0.86)` with 92.3% in-sample, 84.6% leave-one-out, and 87.5% / 100% on the in-family held-out set, while cross-generator results are explicitly negative.  _(class `C`)_
 - **chain closes:** True — The primary runner actually constructs the declared grown-DAG families, computes the five battery conditions, fits the two-property rule, runs LOO, and evaluates the hard-coded held-out predictions; its stdout matches the note's load-bearing in-family numbers. The broader universal/simple-classifier-exhaustion theorem is not audited as part of this narrowed scope and is explicitly disclaimed or bounded by the cited authorities.
 - **rationale:** The narrowed binding claim is a finite empirical computation, not a derived universality theorem, and the provided runner source supports the reported 21/26 pass count, 92.3% in-sample classifier accuracy, 84.6% LOO, and 7/8 rule plus 8/8 pre-committed held-out results. The negative cross-generator and off-scaffold caveats are supplied by retained or retained_bounded cited authorities and are incorporated as limitations rather than used to prove a no-go theorem. The remaining broad language about the classifier line being exhausted should be treated as interpretation only, but the source note's explicit scope narrowing prevents it from becoming the audited claim.
-- **auditor confidence:** high
-
-### `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11`
-
-- **Note:** [`UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md`](../../docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Conditional finite algebra theorem on the supplied 3x3 circulant readout context, assuming additivity, K/CPT orbit constancy, and explicit P-dep.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-xhigh-unordered-mass-20260704`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Under the explicit P-dep premise, every Record-registrable scalar readout equals a sum of per-record contributions with no cross terms, each contribution a function of ([k], lambda_k), hence factors through M(delta).  _(class `A`)_
-- **chain closes:** False — The finite algebraic consequences close from the supplied context plus P-dep, but the restricted cited authority does not retain K/CPT orbit constancy as generic Record axiom content and P-dep is explicitly unproved. The missing step is a retained bridge or accepted premise supplying orbit/P-dep for this readout context.
-- **rationale:** The runner genuinely checks the finite 3x3 algebra, flip covariance, multiset reconstruction, and hostile readout failures; it is not merely printing constants. However, the theorem is explicitly conditional on P-dep, and the current minimal-axiom authority separates K/CPT orbit structure from generic Record content. Therefore the algebraic bridge is bounded and useful only under those supplied contextual premises, not a closed derivation from the retained axiom packet alone.
-- **open / conditional deps cited:**
-  - `MINIMAL_AXIOMS_2026-06-29.md`
 - **auditor confidence:** high
 
 ### `uv_gauge_to_yukawa_bridge_sc_vs_pert_note`

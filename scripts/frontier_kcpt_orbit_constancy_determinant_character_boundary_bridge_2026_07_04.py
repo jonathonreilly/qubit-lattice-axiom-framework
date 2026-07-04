@@ -207,6 +207,8 @@ def check_text_guards() -> None:
     required_phrases = [
         "supplied",
         "not derived",
+        "source artifact",
+        "effective status is pipeline-derived after independent audit ratification and dependency closure",
         "context handle, not a citation-graph dependency",
     ]
     for phrase in required_phrases:
@@ -216,6 +218,11 @@ def check_text_guards() -> None:
         "discharges",
         "retires",
         "closes the admission",
+        "retained bridge",
+        "this note is that bridge",
+        "status certificate",
+        "audit_required_before_effective_retained",
+        "bare_retained_allowed",
     ]
     for phrase in forbidden_phrases:
         report(f"F2 note excludes forbidden completion phrase: {phrase}", phrase not in lowered)

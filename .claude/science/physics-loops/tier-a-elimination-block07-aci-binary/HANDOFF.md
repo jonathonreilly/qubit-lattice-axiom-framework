@@ -26,8 +26,22 @@ AC(i) still needs a matter-action statistics or readout-partition theorem.
 
 ## Verification
 
-- `PYTHONPATH=scripts python3 scripts/acphilambda_measure_binary_axiom_update_no_go_2026_07_04.py`
-- `python3 -m py_compile scripts/acphilambda_measure_binary_axiom_update_no_go_2026_07_04.py`
-- `bash docs/audit/scripts/run_pipeline.sh`
-- `python3 docs/audit/scripts/audit_lint.py --strict`
-- `git diff --check`
+- `PYTHONPATH=scripts python3 scripts/acphilambda_measure_binary_axiom_update_no_go_2026_07_04.py`: PASS=130 FAIL=0.
+- `python3 -m py_compile scripts/acphilambda_measure_binary_axiom_update_no_go_2026_07_04.py`: pass.
+- `bash docs/audit/scripts/run_pipeline.sh`: pass; no errors, existing warnings/notices only.
+- `python3 docs/audit/scripts/audit_lint.py --strict`: pass; no errors, existing warnings/notices only.
+- `git diff --check`: pass.
+
+## Audit Row
+
+- `acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04`
+- `claim_type`: `no_go`
+- `audit_status`: `unaudited`
+- `effective_status`: `unaudited`
+
+## PR
+
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4932
+- Base: `physics-loop/tier-a-elimination-block06-reta-occurrence-20260704`
+- Head: `physics-loop/tier-a-elimination-block07-aci-binary-20260704`
+- Commit: `0cc5c4a73 docs: block ac measure binary axiom shortcut`

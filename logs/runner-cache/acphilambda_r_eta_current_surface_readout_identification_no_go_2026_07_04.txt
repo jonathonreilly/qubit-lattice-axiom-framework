@@ -1,0 +1,266 @@
+AC_phi_lambda R-eta current-surface readout-identification no-go verifier
+
+========================================================================================
+A. source presence and branch-local boundaries
+========================================================================================
+[PASS] exists: docs/ACPHILAMBDA_R_ETA_CURRENT_SURFACE_READOUT_IDENTIFICATION_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] exists: docs/RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12.md
+[PASS] exists: docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md
+[PASS] exists: docs/ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md
+[PASS] exists: docs/ACPHILAMBDA_REAL_HOLONOMY_LOCUS_IDENTITY_2026-07-01.md
+[PASS] exists: docs/ACPHILAMBDA_CYCLE_FLUX_TRANSPORT_FACE_INVENTORY_2026-07-01.md
+[PASS] exists: docs/ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md
+[PASS] exists: docs/ACPHILAMBDA_OCCURRENCE_CLOCK_COMPOSITION_DELTA_BLINDNESS_2026-07-02.md
+[PASS] exists: docs/ACPHILAMBDA_CROSS_ARC_UNIT_CLASSIFICATION_WIRING_2026-07-02.md
+[PASS] exists: docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/ACPHILAMBDA_R_ETA_OCCURRENCE_AXIOM_HYGIENE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/KOIDE_APS_ETA_TOPOLOGICAL_ROBUSTNESS_BOUNDED_THEOREM_NOTE_2026-07-02.md
+[PASS] exists: docs/SUPPLIED_READOUT_CONTEXT_TWO_COMPONENT_DECOMPOSITION_BOUNDED_NOTE_2026-07-02.md
+[PASS] exists: docs/ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md
+[PASS] exists: docs/RETA_CONVERSION_FACTOR_CARRIER_CLASS_ELIMINATION_BOUNDED_NOTE_2026-06-12.md
+[PASS] exists: docs/RETA_MAGNITUDE_IS_CONTINUUM_INDEX_THEOREM_LATTICE_INDEX_IS_INTEGER_BOUNDED_NOTE_2026-06-12.md
+[PASS] note declares Type no_go
+[PASS] note declares Claim type no_go
+[PASS] note declares independent audit boundary
+[PASS] note has primary runner link
+[PASS] note says no registry/axiom/primitive edit
+[PASS] note says AC not retired
+[PASS] note says R-eta not removed
+[PASS] banned overclaim absent: AC_phi_lambda is retired
+[PASS] banned overclaim absent: R-eta is retired
+[PASS] banned overclaim absent: R-eta is derived
+[PASS] banned overclaim absent: Phi = S_sum is derived
+[PASS] banned overclaim absent: we remove R-eta
+[PASS] banned overclaim absent: registry is edited
+[PASS] banned overclaim absent: new primitive
+[PASS] banned overclaim absent: new axiom
+
+========================================================================================
+B. Tier-A registry state
+========================================================================================
+[PASS] Tier-A genuine admitted input count is still two
+[PASS] AC minimum decomposition remains two atoms
+[PASS] AC statement names R-eta
+[PASS] AC statement says magnitude conditional on R-eta
+[PASS] human registry names density-read-as-angle
+[PASS] new note quotes both residual atoms
+[PASS] new note targets sub-admission ii only
+
+========================================================================================
+C. audit-row classification of current support stack
+========================================================================================
+[PASS] ledger row exists: acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04
+[PASS] acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04 claim_type
+[PASS] acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04 audit status is source-side/unaudited
+[PASS] acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04 effective status is not retained
+[PASS] acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04 has note path
+[PASS] ledger row exists: acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04
+[PASS] acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04 claim_type
+[PASS] acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04 audit status is source-side/unaudited
+[PASS] acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04 effective status is not retained
+[PASS] acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04 has note path
+[PASS] ledger row exists: acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01
+[PASS] acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01 claim_type
+[PASS] acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01 audit status is source-side/unaudited
+[PASS] acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01 effective status is not retained
+[PASS] acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01 has note path
+[PASS] ledger row exists: acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01
+[PASS] acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01 claim_type
+[PASS] acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01 audit status is source-side/unaudited
+[PASS] acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01 effective status is not retained
+[PASS] acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01 has note path
+[PASS] ledger row exists: acphilambda_real_holonomy_locus_identity_2026-07-01
+[PASS] acphilambda_real_holonomy_locus_identity_2026-07-01 claim_type
+[PASS] acphilambda_real_holonomy_locus_identity_2026-07-01 audit status is source-side/unaudited
+[PASS] acphilambda_real_holonomy_locus_identity_2026-07-01 effective status is not retained
+[PASS] acphilambda_real_holonomy_locus_identity_2026-07-01 has note path
+[PASS] ledger row exists: acphilambda_cycle_flux_transport_face_inventory_2026-07-01
+[PASS] acphilambda_cycle_flux_transport_face_inventory_2026-07-01 claim_type
+[PASS] acphilambda_cycle_flux_transport_face_inventory_2026-07-01 audit status is source-side/unaudited
+[PASS] acphilambda_cycle_flux_transport_face_inventory_2026-07-01 effective status is not retained
+[PASS] acphilambda_cycle_flux_transport_face_inventory_2026-07-01 has note path
+[PASS] ledger row exists: acphilambda_k_even_registration_correction_registered_pattern_2026-07-02
+[PASS] acphilambda_k_even_registration_correction_registered_pattern_2026-07-02 claim_type
+[PASS] acphilambda_k_even_registration_correction_registered_pattern_2026-07-02 audit status is source-side/unaudited
+[PASS] acphilambda_k_even_registration_correction_registered_pattern_2026-07-02 effective status is not retained
+[PASS] acphilambda_k_even_registration_correction_registered_pattern_2026-07-02 has note path
+[PASS] ledger row exists: acphilambda_occurrence_clock_composition_delta_blindness_2026-07-02
+[PASS] acphilambda_occurrence_clock_composition_delta_blindness_2026-07-02 claim_type
+[PASS] acphilambda_occurrence_clock_composition_delta_blindness_2026-07-02 audit status is source-side/unaudited
+[PASS] acphilambda_occurrence_clock_composition_delta_blindness_2026-07-02 effective status is not retained
+[PASS] acphilambda_occurrence_clock_composition_delta_blindness_2026-07-02 has note path
+[PASS] ledger row exists: acphilambda_cross_arc_unit_classification_wiring_2026-07-02
+[PASS] acphilambda_cross_arc_unit_classification_wiring_2026-07-02 claim_type
+[PASS] acphilambda_cross_arc_unit_classification_wiring_2026-07-02 audit status is source-side/unaudited
+[PASS] acphilambda_cross_arc_unit_classification_wiring_2026-07-02 effective status is not retained
+[PASS] acphilambda_cross_arc_unit_classification_wiring_2026-07-02 has note path
+[PASS] ledger row exists: reta_algebraic_irreducibility_genuine_readout_admission_bounded_note_2026-06-12
+[PASS] reta_algebraic_irreducibility_genuine_readout_admission_bounded_note_2026-06-12 claim_type
+[PASS] reta_algebraic_irreducibility_genuine_readout_admission_bounded_note_2026-06-12 audit status is source-side/unaudited
+[PASS] reta_algebraic_irreducibility_genuine_readout_admission_bounded_note_2026-06-12 effective status is not retained
+[PASS] reta_algebraic_irreducibility_genuine_readout_admission_bounded_note_2026-06-12 has note path
+[PASS] ledger row exists: reta_conversion_factor_carrier_class_elimination_bounded_note_2026-06-12
+[PASS] reta_conversion_factor_carrier_class_elimination_bounded_note_2026-06-12 claim_type
+[PASS] reta_conversion_factor_carrier_class_elimination_bounded_note_2026-06-12 audit status is source-side/unaudited
+[PASS] reta_conversion_factor_carrier_class_elimination_bounded_note_2026-06-12 effective status is not retained
+[PASS] reta_conversion_factor_carrier_class_elimination_bounded_note_2026-06-12 has note path
+[PASS] ledger row exists: reta_magnitude_is_continuum_index_theorem_lattice_index_is_integer_bounded_note_2026-06-12
+[PASS] reta_magnitude_is_continuum_index_theorem_lattice_index_is_integer_bounded_note_2026-06-12 claim_type
+[PASS] reta_magnitude_is_continuum_index_theorem_lattice_index_is_integer_bounded_note_2026-06-12 audit status is source-side/unaudited
+[PASS] reta_magnitude_is_continuum_index_theorem_lattice_index_is_integer_bounded_note_2026-06-12 effective status is not retained
+[PASS] reta_magnitude_is_continuum_index_theorem_lattice_index_is_integer_bounded_note_2026-06-12 has note path
+[PASS] ledger row exists: koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02
+[PASS] koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02 claim_type
+[PASS] koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02 audit status is source-side/unaudited
+[PASS] koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02 effective status is not retained
+[PASS] koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02 has note path
+[PASS] ledger row exists: supplied_readout_context_two_component_decomposition_bounded_note_2026-07-02
+[PASS] supplied_readout_context_two_component_decomposition_bounded_note_2026-07-02 claim_type
+[PASS] supplied_readout_context_two_component_decomposition_bounded_note_2026-07-02 audit status is source-side/unaudited
+[PASS] supplied_readout_context_two_component_decomposition_bounded_note_2026-07-02 effective status is not retained
+[PASS] supplied_readout_context_two_component_decomposition_bounded_note_2026-07-02 has note path
+[PASS] ledger row exists: acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18
+[PASS] acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18 claim_type
+[PASS] acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18 audit status is source-side/unaudited
+[PASS] acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18 effective status is not retained
+[PASS] acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18 has note path
+
+========================================================================================
+D. exact fixed-locus, holonomy, and unit arithmetic
+========================================================================================
+[PASS] L = 2/9
+[PASS] S_sum = 3L = 2/3
+[PASS] Phi(c) = c*S_sum
+[PASS] c=1 iff Phi target on scanned line
+[PASS] rescale sends Phi(c) to lambda*Phi(c)
+[PASS] rescale line has nonzero alternatives
+[PASS] count normalization gives c=9/2
+[PASS] count normalization is not c=1
+[PASS] Phi target positive
+[PASS] Phi target below pi
+[PASS] delta target below pi/3
+[PASS] sin(Phi target) nonzero
+[PASS] cos(Phi target) not +1
+[PASS] cos(Phi target) not -1
+[PASS] 2*pi*L misses delta target
+[PASS] 2*pi*L misses Phi target
+[PASS] 2*pi*S_sum misses Phi target
+[PASS] root angle 2*pi/3 is not bare 2/3
+
+========================================================================================
+E. text-surface classifications in source stack
+========================================================================================
+[PASS] reta irreducibility says genuine readout admission
+[PASS] reta irreducibility says does not derive/refute
+[PASS] defect rescale says c=1 wall
+[PASS] defect rescale says homogeneous clauses cannot single out c=1
+[PASS] holonomy normal says W_cycle_holonomy_value
+[PASS] holonomy normal says no derivation of Phi=2/3
+[PASS] real locus says off-locus
+[PASS] real locus says no derivation of delta
+[PASS] transport face says equation remains wall
+[PASS] transport face says does not derive flux equality
+[PASS] K-even note says no value derived
+[PASS] K-even note says residual is R-eta
+[PASS] occurrence clock says occupancy delta-blind
+[PASS] occurrence clock leaves p supplied
+[PASS] cross-arc says no R-eta derivation
+[PASS] angle no-go says not retired
+[PASS] occurrence no-go says event law residual
+[PASS] topological robustness excludes physical bridge
+[PASS] readout context not closure
+[PASS] W2 context leaves value atom admitted
+[PASS] conversion factor says does not derive R-eta
+[PASS] continuum index keeps R-eta boundary
+
+========================================================================================
+F. occurrence and rate no-go algebra
+========================================================================================
+[PASS] occupancy 0 invariant under diagonal native step
+[PASS] occupancy 1 invariant under diagonal native step
+[PASS] coherence gets phase ratio
+[PASS] occupancy stream law is delta-free
+[PASS] rate ratio depends on B
+[PASS] rate ratio depends on activation rate
+[PASS] rate ratio depends on delta
+[PASS] setting target solves for B in terms of a_act
+[PASS] target insertion does not derive B
+
+========================================================================================
+G. route-family synthesis checks
+========================================================================================
+[PASS] fixed-locus arithmetic source has expected marker
+[PASS] holonomy normal form source has expected marker
+[PASS] unit rescale obstruction source has expected marker
+[PASS] real-holonomy locus source has expected marker
+[PASS] transport typing source has expected marker
+[PASS] registered-pattern map source has expected marker
+[PASS] occurrence occupancy route source has expected marker
+[PASS] cross-arc dedup source has expected marker
+[PASS] angle shortcut no-go source has expected marker
+[PASS] occurrence axiom shortcut no-go source has expected marker
+[PASS] supplied context split source has expected marker
+[PASS] W2 supplied context source has expected marker
+[PASS] note classifies all roles as not readout-license derivation
+[PASS] note has remaining direct theorem route
+[PASS] note has same-surface transport route
+[PASS] note has coherence-event route
+[PASS] note has supplied-context route
+[PASS] note has governance route
+
+========================================================================================
+H. dependency and citation hygiene
+========================================================================================
+[PASS] note links reta_irreducibility
+[PASS] note links defect_rescale
+[PASS] note links holonomy_normal
+[PASS] note links real_locus
+[PASS] note links transport_face
+[PASS] note links k_even
+[PASS] note links occurrence_clock
+[PASS] note links cross_arc
+[PASS] note links angle_no_go
+[PASS] note links occurrence_no_go
+[PASS] note links topological_robustness
+[PASS] note links readout_context
+[PASS] note links w2_context
+[PASS] note links conversion_factor
+[PASS] note links continuum_index
+[PASS] note links human registry
+[PASS] note links tier_a_admissions.json
+[PASS] note names blocks 5 and 6
+[PASS] note names blocks 13-16
+[PASS] note says no publication matrix edit
+
+========================================================================================
+I. theorem statement and no-go gate
+========================================================================================
+[PASS] note contains theorem/firewall phrase: the following implication is invalid
+[PASS] note contains theorem/firewall phrase: None of those facts is the missing physical readout identification
+[PASS] note contains theorem/firewall phrase: AC_phi_lambda sub-admission (ii) remains live
+[PASS] note contains theorem/firewall phrase: Future readout-license theorems remain open
+[PASS] note contains theorem/firewall phrase: This is not a terminal mathematical no-go
+[PASS] note contains theorem/firewall phrase: The open theorem target is now sharper
+[PASS] no-go gate has N1
+[PASS] no-go gate has N2
+[PASS] no-go gate has N3
+[PASS] no-go gate has N4
+[PASS] no-go gate has N5
+[PASS] no-go gate has N6
+[PASS] no-go gate has N7
+[PASS] no-go gate has N8
+[PASS] N2 records collapsed wall
+[PASS] N3 forbids hidden event law
+[PASS] N3 forbids owner decision import
+[PASS] N4 matches registry residual
+[PASS] N7 preserves support value
+
+========================================================================================
+J. final summary
+========================================================================================
+[PASS] runner expected total kept in note
+
+TOTAL: PASS=223 FAIL=0

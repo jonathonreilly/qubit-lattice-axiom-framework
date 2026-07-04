@@ -8,6 +8,10 @@ lands in later waves, each through its own PR and the owner-operated
 review-loop.
 **Owner landing:** review-loop special landing, per owner instruction
 2026-07-04.
+**Retirement:** this plan is transient coordination, not registry content
+(`docs/repo/**` is outside the audit ledger). Each wave that lands strikes
+its section here; when Wave 5 lands, delete this file — anything still worth
+keeping by then must already live in machinery, policy, or lint.
 
 ## 1. Trigger And Ground Truth
 
@@ -193,31 +197,33 @@ review-loop.
 
 ## 7. Audit-Of-The-Audit Findings And Process Recommendations
 
-Machinery is sound (section 2). Items for owner attention, ranked:
+Machinery is sound (section 2). Items 1, 2, and 6 of the original list are
+EXECUTED as standing machinery in PR #4918 (2026-07-04); they remain here as
+pointers only, not open attention items:
 
-1. **Terminal-verdict reconciliation.** The ledger carries 25
-   `audited_conditional` and 1 `audited_failed` row treated as terminal
-   (counts verified against `effective_status_summary.json`, 2026-07-04);
-   the owner's standing rule (2026-06-15) is that terminal verdicts are
-   bound/unbound/nogo only and conditional is non-terminal. Either drive
-   these 26 rows to terminal verdicts through the audit lane or record an
-   explicit owner decision that the current statuses are acceptable
-   interim states.
-2. **212 notes missing `Type:` headers** silently default to
-   `positive_theorem`, which distorts queue prioritization and status
-   routing. One mechanical batch PR (headers or pattern-registry entries).
+1. **Terminal-verdict rule — executed (PR #4918).**
+   `compute_audit_queue.py` re-queues `audited_conditional` and
+   `audited_failed` rows as non-terminal (`non_terminal_conditional` /
+   `non_terminal_failed`), encoding the owner rule of 2026-06-15 (terminal
+   verdicts are bound/unbound/nogo only). The 26 affected rows drain through
+   the normal audit lane.
+2. **Type-header debt — executed (PR #4918).** 210 of the 212 defaulted
+   notes (all verified unaudited) now carry vocabulary `Claim type:`
+   headers; the 2 undeterminable notes remain lint-visible; the existing
+   pre-commit guard keeps the class at zero for new notes.
 3. **137 legacy rows carry seeder-default `claim_scope`** rather than
    auditor-recorded scope; schedule re-audit or record acceptance.
 4. **19 `audited_conditional` rows have non-standard repair-note prefixes**,
-   breaking structured dispatch; normalize during their re-audits.
+   breaking structured dispatch; normalize during their re-audits (all are
+   queue-visible via item 1's mechanism).
 5. **2 decoration rows sit under non-retained parents**; re-audit or demote
    the parents.
-6. **Make front-door currency machine-derived.** The README drifted for five
-   days after the reset because it hand-states the foundation. Extend
-   `render_front_door_status.py` to emit a foundation block (axiom names,
-   memo path, last owner-approved edit date) sourced from
-   `axiom_premise_nodes.json`, and keep hand-written front-door prose free of
-   restated foundation facts wherever a generated surface can carry them.
+6. **Front-door currency — executed (PR #4918).**
+   `render_front_door_status.py` emits a registry-derived Foundation Surface
+   block, and `audit_lint.py` warns (`front_door_axiom_pointer`) when any
+   surface listed in `docs/audit/data/front_door_surfaces.txt` cites a
+   superseded axiom memo or omits the current one. Escalate the warning to
+   error-level once the front-door chain is clean after Wave 1.
 7. **Publication catalog refresh.** `FALSIFIABLE_PREDICTIONS_2026-06-08.md`
    predates the reset; after Wave 1 and the relevant re-audits, re-issue the
    catalog under a current date with conditionality statements checked

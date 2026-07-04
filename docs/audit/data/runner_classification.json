@@ -540,6 +540,18 @@
       "dominant_class": "A",
       "runner": "scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py"
     },
+    "acphilambda_r_eta_current_surface_readout_identification_no_go_note_2026-07-04": {
+      "assert_count": 2,
+      "counts": {
+        "A": 15,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/acphilambda_r_eta_current_surface_readout_identification_no_go_2026_07_04.py"
+    },
     "acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04": {
       "assert_count": 2,
       "counts": {
@@ -42086,6 +42098,21 @@
         "B": 1,
         "C": 1,
         "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/acphilambda_r_eta_current_surface_readout_identification_no_go_2026_07_04.py": {
+      "assert_count": 2,
+      "claims": [
+        "acphilambda_r_eta_current_surface_readout_identification_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 15,
+        "B": 1,
+        "C": 1,
+        "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "A",
@@ -91033,14 +91060,14 @@
   "stats": {
     "decoration_candidates": 692,
     "dominant_class_distribution": {
-      "A": 496,
+      "A": 497,
       "B": 636,
       "C": 1276,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3315,
-    "runners_with_C": 1741,
+    "runners_classified": 3316,
+    "runners_with_C": 1742,
     "runners_with_D": 1068
   }
 }

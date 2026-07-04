@@ -1,0 +1,37 @@
+block: tier-a-elimination-block17-acii-reta-current
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block17-acii-reta-current-20260704
+base_branch: physics-loop/tier-a-elimination-block16-aci-matterstats-20260704
+pr_url: pending
+source_commit: pending
+target: AC_phi_lambda sub-admission (ii) R-eta current support stack
+claim_type: no_go
+registry_edits: false
+retirement_claimed: false
+status: verified_ready_for_pr
+active_route: current-surface readout-identification synthesis
+hard_residual: "derive physical R-eta readout license Phi = S_sum = 2/3"
+files_touched:
+  - docs/ACPHILAMBDA_R_ETA_CURRENT_SURFACE_READOUT_IDENTIFICATION_NO_GO_NOTE_2026-07-04.md
+  - scripts/acphilambda_r_eta_current_surface_readout_identification_no_go_2026_07_04.py
+  - .claude/science/physics-loops/tier-a-elimination-block17-acii-reta-current/
+open_imports:
+  - physical charged-lepton readout license
+  - same-surface flux equals return-amplitude theorem
+  - coherence-event conditional law and rate normalization
+  - physical carrier/context realization and scalar weighting
+no_go_routes:
+  - collective support-stack already derives R-eta
+  - generic occurrence axiom derives R-eta
+  - angle-native packaging derives R-eta
+trace_gate_classification: negative_route_pruning
+review_findings: pass_with_bounded_claims
+verification:
+  runner: "PASS=223 FAIL=0"
+  py_compile: pass
+  audit_pipeline: pass
+  audit_lint_strict: "pass_with_pre_existing_warnings_notices"
+  diff_check: pass
+audit_row: acphilambda_r_eta_current_surface_readout_identification_no_go_note_2026-07-04
+next_exact_action: "Commit, push stacked PR, then monitor audit."
+stop_condition: "Block complete after runner/audit checks pass, review disposition is recorded, PR opens, and lock is released."

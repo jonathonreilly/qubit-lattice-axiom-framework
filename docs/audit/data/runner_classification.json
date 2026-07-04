@@ -20988,6 +20988,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_kreality_one_shared_atom_one_consumer_2026_06_12.py"
     },
+    "kreality_shared_physicalization_current_surface_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 15,
+        "B": 7,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/kreality_shared_physicalization_current_surface_no_go_2026_07_04.py"
+    },
     "ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02": {
       "assert_count": 3,
       "counts": {
@@ -83919,6 +83931,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/kreality_shared_physicalization_current_surface_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "kreality_shared_physicalization_current_surface_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 15,
+        "B": 7,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/ks_eta_vs_jw_string_car_locality.py": {
       "assert_count": 3,
       "claims": [
@@ -91193,15 +91220,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 694,
+    "decoration_candidates": 695,
     "dominant_class_distribution": {
-      "A": 499,
+      "A": 500,
       "B": 639,
       "C": 1276,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3321,
+    "runners_classified": 3322,
     "runners_with_C": 1745,
     "runners_with_D": 1068
   }

@@ -25,6 +25,8 @@ checks:
   - "python3 docs/audit/scripts/audit_lint.py --strict: pass; no errors, existing warnings/notices only"
   - "git diff --check: pass"
 review_status: "local review-loop pass; no retained-status overclaim, no registry edit, new audit row remains unaudited"
-pr_status: "pending"
-next_exact_action: "Commit, push, and open the stacked PR."
-stop_condition: "Not stopped until PR handling completes."
+pr_status: "opened https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4930; audit_pipeline in_progress as of 2026-07-04T13:36:20Z"
+commits:
+  - "0cc6881f9 docs: prune ac r-eta angle-native routes"
+next_exact_action: "Monitor PR #4930 audit_pipeline and then attack the licensed R-eta theorem, occurrence route, or AC(i) measure-side binary."
+stop_condition: "Block 5 committed, pushed, and review PR opened."

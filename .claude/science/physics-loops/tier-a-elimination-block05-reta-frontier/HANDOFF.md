@@ -25,7 +25,7 @@ or keep R-eta admitted.
 
 ## Next Exact Action
 
-Commit, push, and open the stacked PR.
+Monitor PR #4930 audit status, then continue with the next Tier-A residual.
 
 ## Verification
 
@@ -41,3 +41,11 @@ Commit, push, and open the stacked PR.
 - `claim_type`: `no_go`
 - `audit_status`: `unaudited`
 - `effective_status`: `unaudited`
+
+## PR
+
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4930
+- Base: `physics-loop/tier-a-elimination-block04-species-bridge-20260704`
+- Head: `physics-loop/tier-a-elimination-block05-reta-frontier-20260704`
+- Commit: `0cc6881f9 docs: prune ac r-eta angle-native routes`
+- CI at creation: `audit_pipeline` in progress.

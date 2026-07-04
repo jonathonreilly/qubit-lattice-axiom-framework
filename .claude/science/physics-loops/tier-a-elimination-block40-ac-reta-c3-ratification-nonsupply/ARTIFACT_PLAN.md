@@ -29,7 +29,6 @@ The audit pipeline regenerates:
 
 - Base branch: `physics-loop/tier-a-elimination-block39-theta-g1-kinetic-4d-scaffold-support-20260704`
 - Head branch: `physics-loop/tier-a-elimination-block40-ac-reta-c3-ratification-nonsupply-20260704`
-- PR: pending
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4981
 - First commit: source note, runner, log, generated audit views, loop pack.
 - Second commit: PR metadata update.
-

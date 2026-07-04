@@ -1,0 +1,17 @@
+block: tier-a-elimination-block09-theta-gauge
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block09-theta-gauge-20260704
+base_branch: physics-loop/tier-a-elimination-block08-theta-mass-20260704
+target: theta gauge-side winding account
+claim_type: no_go
+registry_edits: false
+retirement_claimed: false
+status: source_verified_pending_pr
+verification:
+  runner: "PASS=150 FAIL=0"
+  py_compile: pass
+  audit_pipeline: pass
+  audit_lint_strict: "pass; existing warnings/notices only"
+  diff_check: pass
+audit_row: theta_gauge_winding_axiom_update_no_go_note_2026-07-04
+next_exact_action: "Commit, push, and open stacked PR against block 8."

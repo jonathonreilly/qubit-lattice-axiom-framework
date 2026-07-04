@@ -6,9 +6,9 @@ target: "theta gauge-side winding account, SU(3) star pairwise-reduction shortcu
 claim_type: no_go
 registry_edits: false
 retirement_claimed: false
-status: verified_pre_commit
-source_commit: null
-pr: null
+status: pr_open
+source_commit: 574e694b3
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4972
 active_route: "finite SU(3) Heisenberg-subgroup witness against reducing even star data to separate plus pairwise class data"
 hard_residual: "derive sector-level handling and physical readout registration of SU(3) triple joint-star data"
 files_touched:
@@ -33,5 +33,5 @@ verification:
   audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
   diff_check: pass
 audit_row: "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04: claim_type=no_go, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
-next_exact_action: "Commit, push, open stacked PR against Block30, then verify hosted audit_pipeline."
+next_exact_action: "Verify hosted audit_pipeline on PR #4972, then continue with sector-level SU(3) star/readout theorem, G3 phase-source theorem, G1 defect suppression, or AC occupancy horn selection."
 stop_condition: "Block complete after PR is opened and hosted audit_pipeline is verified."

@@ -31,5 +31,9 @@ No Tier-A admission is retired in this block.
 
 ## Next Exact Action
 
-Commit the block, push, and open one review PR. After review, move to the AC
-partial-decomposition packet.
+Review PR #4927. After review, move to the AC partial-decomposition packet.
+
+## PR
+
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4927
+- Commit: `d8f1c0283 docs: add record comparability boundary packet`

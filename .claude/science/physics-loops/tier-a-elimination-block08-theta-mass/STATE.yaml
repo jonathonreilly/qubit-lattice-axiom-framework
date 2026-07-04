@@ -1,0 +1,9 @@
+block: tier-a-elimination-block08-theta-mass
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block08-theta-mass-20260704
+base_branch: physics-loop/tier-a-elimination-block07-aci-binary-20260704
+target: theta mass-side determinant-readout bridge
+claim_type: no_go
+registry_edits: false
+retirement_claimed: false
+status: source_packaged_pending_verification

@@ -1,0 +1,151 @@
+theta mass determinant axiom-update no-go verifier
+
+========================================================================================
+A. source presence and retained target
+========================================================================================
+[PASS] exists: docs/THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/audit/data/axiom_premise_nodes.json
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] exists: docs/STRONG_CP_THETA_ZERO_NOTE.md
+[PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+[PASS] exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+[PASS] theta parent row is retained_bounded
+[PASS] theta parent row is audited_clean
+
+========================================================================================
+B. Tier-A registry theta boundary
+========================================================================================
+[PASS] Tier-A genuine count remains two
+[PASS] theta minimum decomposition remains two residual atoms
+[PASS] machine registry theta statement includes gauge side
+[PASS] machine registry theta statement includes mass side
+[PASS] machine registry theta statement includes arg det M
+[PASS] machine registry theta statement includes determinant-readout bridge
+[PASS] machine registry theta statement includes K-real
+[PASS] human registry names theta mass side
+[PASS] note says theta is not retired
+[PASS] note says registry is not edited
+
+========================================================================================
+C. approved premise-node and axiom non-supply
+========================================================================================
+[PASS] premise registry canonical ids are the approved four
+[PASS] premise registry withholds K/CPT structure
+[PASS] premise registry withholds central-sector decomposition
+[PASS] premise registry withholds source/action bridge
+[PASS] premise registry withholds physical observable bridge
+[PASS] premise registry withholds context-selection rule
+[PASS] premise registry withholds formation rule
+[PASS] premise registry withholds weighting
+[PASS] premise registry withholds probability
+[PASS] minimal axiom excludes/scopes The full one-site possibility domain has algebraic
+[PASS] minimal axiom excludes/scopes A `Cl(3,0)`-compatible real-algebra presentation m
+[PASS] minimal axiom excludes/scopes Admissibility is not a dynamics axiom
+[PASS] minimal axiom excludes/scopes does not choose a Hamiltonian or transfer operator
+[PASS] minimal axiom excludes/scopes transition probabilities or weights
+[PASS] minimal axiom excludes/scopes context selection
+[PASS] minimal axiom excludes/scopes K`/CPT orbit structure
+[PASS] minimal axiom excludes/scopes central-sector decomposition
+[PASS] minimal axiom excludes/scopes source/action and physical-observable identificati
+[PASS] minimal axiom excludes/scopes the strong-CP theta admission
+
+========================================================================================
+D. approved primitive non-supply
+========================================================================================
+[PASS] realized primitive withholds no state
+[PASS] realized primitive withholds measure
+[PASS] realized primitive withholds weighting
+[PASS] realized primitive withholds probability rule
+[PASS] realized primitive withholds normalization rule
+[PASS] realized primitive withholds value
+[PASS] kinetic primitive withholds no mass ratio
+[PASS] kinetic primitive withholds coupling
+[PASS] kinetic primitive withholds mixing angle
+[PASS] kinetic primitive withholds phase
+[PASS] kinetic primitive withholds selector
+[PASS] kinetic primitive withholds readout bridge
+[PASS] kinetic primitive withholds empirical fit
+[PASS] note says primitives do not supply bridge
+
+========================================================================================
+E. selected-surface parent boundary
+========================================================================================
+[PASS] theta parent carries selected-surface boundary: bounded selected-surface
+[PASS] theta parent carries selected-surface boundary: Wilson-plus-staggered scalar-mass surface
+[PASS] theta parent carries selected-surface boundary: positive real quark-mass orientation is part of 
+[PASS] theta parent carries selected-surface boundary: It does not derive from the minimal axiom surfac
+[PASS] theta parent carries selected-surface boundary: scalar positive mass orientation
+[PASS] theta parent carries selected-surface boundary: not an unconditional strong-CP solution
+[PASS] note preserves selected-surface warning
+
+========================================================================================
+F. determinant-character phase erasure algebra
+========================================================================================
+[PASS] k=-5 character fails K/CPT invariance at witness
+[PASS] k=-4 character fails K/CPT invariance at witness
+[PASS] k=-3 character fails K/CPT invariance at witness
+[PASS] k=-2 character fails K/CPT invariance at witness
+[PASS] k=-1 character fails K/CPT invariance at witness
+[PASS] k=0 character is K/CPT invariant
+[PASS] k=1 character fails K/CPT invariance at witness
+[PASS] k=2 character fails K/CPT invariance at witness
+[PASS] k=3 character fails K/CPT invariance at witness
+[PASS] k=4 character fails K/CPT invariance at witness
+[PASS] k=5 character fails K/CPT invariance at witness
+[PASS] all scanned nonzero characters fail
+[PASS] sin(k phi)=0 all phi forces k=0 in scanned integers
+
+========================================================================================
+G. K-evenness alone is too weak
+========================================================================================
+[PASS] cos(phi) is K-even
+[PASS] cos phase probe is not multiplicative
+[PASS] sum cos is finite-additive over two disjoint records
+[PASS] sum cos is K-even recordwise
+[PASS] sum cos remains phase-sensitive
+[PASS] note carries hostile guard
+
+========================================================================================
+H. note discipline
+========================================================================================
+[PASS] note Type header is no_go
+[PASS] note Claim type header is no_go
+[PASS] scope boundary blocks retirement
+[PASS] audit boundary present
+[PASS] primary runner link present
+[PASS] N1 gate present
+[PASS] N2 gate present
+[PASS] N3 gate present
+[PASS] N4 gate present
+[PASS] N5 gate present
+[PASS] N6 gate present
+[PASS] N7 gate present
+[PASS] N8 gate present
+[PASS] note carries boundary phrase: The gauge-side winding account is untouched.
+[PASS] note carries boundary phrase: No physical quark-sector determinant readout is 
+[PASS] note carries boundary phrase: No positive real mass orientation is derived fro
+[PASS] note carries boundary phrase: derive the determinant-channel exhaustion bridge
+[PASS] forbidden phrase absent: Theta is retired
+[PASS] forbidden phrase absent: theta_bar = 0 is derived
+[PASS] forbidden phrase absent: audited_clean
+[PASS] forbidden phrase absent: effective_status = retained
+[PASS] forbidden phrase absent: neutron electric dipole
+[PASS] forbidden phrase absent: uses a fitted value
+[PASS] no wall names introduced
+
+========================================================================================
+I. markdown dependency and context control
+========================================================================================
+[PASS] markdown link inventory is controlled
+[PASS] context note not markdown-linked: THETA_P2_K_CPT_DETERMINANT_CHARACTER_P
+[PASS] context note not markdown-linked: STRONG_CP_DETERMINANT_READOUT_BRIDGE_N
+[PASS] context note not markdown-linked: REGISTRABLE_READOUT_ADDITIVE_EVEN_PHAS
+[PASS] note line count is bounded
+[PASS] verification block states fail-zero threshold
+
+========================================================================================
+TOTAL: PASS=110 FAIL=0
+========================================================================================

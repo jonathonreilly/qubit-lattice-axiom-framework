@@ -8,8 +8,8 @@ count-twice is `det_R R(K) = |det_C(K)|^2`.
 
 Branch: `physics-loop/tier-a-elimination-block28-ac-det-power-split-20260704`
 Base: `physics-loop/tier-a-elimination-block27-ac-reta-record-nonsupply-20260704`
-Source commit: pending
-PR: pending
+Source commit: `87f50b6a8`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4969
 
 ## Expected Claim Movement
 
@@ -42,5 +42,5 @@ complex determinant counted once versus realified determinant counted twice.
 
 ## Next Exact Action
 
-Publish a stacked PR, watch hosted `audit_pipeline`, and then continue toward a
-real physical horn-selection theorem or the remaining R-eta route.
+Watch the hosted `audit_pipeline`, then continue toward a real physical
+horn-selection theorem or the remaining R-eta route.

@@ -1,8 +1,8 @@
 # PR Backlog
 
-Pending PR:
+Opened PR:
 
-- Block28 AC determinant-power split exact support.
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4969
 
 Base:
 

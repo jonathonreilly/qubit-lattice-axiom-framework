@@ -8,4 +8,4 @@
 | Loop pack files | Resume, trace, certificate, and review surfaces | written |
 | Audit metadata | New row/citation graph from audit pipeline | generated |
 | Review-loop record | Local review disposition | pass |
-| Stacked PR | Review backlog delivery on Block37 | pending |
+| Stacked PR | Review backlog delivery on Block37 | opened: PR #4979 |

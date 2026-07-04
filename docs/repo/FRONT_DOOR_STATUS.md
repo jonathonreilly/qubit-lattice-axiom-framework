@@ -28,16 +28,16 @@ Owner-approval history for every axiom/primitive change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3645 |
-| Applied audit verdicts | 1352 |
+| Applied audit verdicts | 1351 |
 | Retained-grade rows, including boxed decorations | 1280 |
 | Retained positive theorems | 189 |
 | Retained no-go rows | 191 |
 | Retained bounded rows | 855 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
-| Unaudited rows | 1944 |
+| Unaudited rows | 1945 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 25 |
+| Audited conditional rows | 24 |
 | Audited renaming rows | 19 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 14 |
@@ -103,7 +103,7 @@ Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1866 descendants; score 188.367
 - `three_generation_observable_theorem_note` - critical; 1148 descendants; score 67.166
-- `quark_route2_exact_readout_map_note_2026-04-19` - critical; 198 descendants; score 65.137
+- `quark_route2_exact_readout_map_note_2026-04-19` - critical; 199 descendants; score 65.644
 - `graph_first_su3_integration_note` - critical; 1578 descendants; score 65.125
 - `observable_principle_from_axiom_note` - critical; 1201 descendants; score 64.231
 - `plaquette_self_consistency_note` - critical; 1248 descendants; score 53.287

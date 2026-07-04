@@ -33665,6 +33665,10 @@
       "to": "quark_route2_exact_readout_map_note_2026-04-19"
     },
     {
+      "from": "quark_route2_e_center_blindness_no_go_note_2026-06-17",
+      "to": "quark_route2_exact_readout_map_note_2026-04-19"
+    },
+    {
       "from": "quark_route2_e_center_current_source_bank_no_go_note_2026-06-21",
       "to": "tensor_support_center_excess_law_note"
     },
@@ -105543,12 +105547,14 @@
     },
     "quark_route2_e_center_blindness_no_go_note_2026-06-17": {
       "claim_id": "quark_route2_e_center_blindness_no_go_note_2026-06-17",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
       "claim_type_seed_hint": "no_go",
-      "deps": [],
+      "deps": [
+        "quark_route2_exact_readout_map_note_2026-04-19"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "286e9fdb341a1c7b7e9659b5d0ca0cf2686f3d578fe114fea55391bd41f57c6a",
+      "note_hash": "9be43e034d56d5fe4a18f6041f85457c1ab454b334bff0b2a5b6337a65e8a053",
       "path": "docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md",
       "runner_path": "scripts/frontier_quark_route2_e_center_blindness_no_go.py",
       "title": "Quark Route-2 E-Center Blindness No-Go"
@@ -109450,7 +109456,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "726c38a63eb4ccac78593f755900fae5585c873d0828e1b6deec36399352fd52",
+      "note_hash": "6b2f31698981e76dcdeaf966a643de3010395a2c888841e360479ea44a235a90",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -125148,7 +125154,6 @@
     "quark_e_channel_endpoint_quotient_law_audited_scope_narrow_bounded_note_2026-05-10_note_2026-05-17",
     "quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28",
     "quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21",
-    "quark_route2_e_center_blindness_no_go_note_2026-06-17",
     "quark_route2_e_center_lift_size_scan_boundary_note_2026-06-21",
     "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28",
     "quark_route2_endpoint_blind_renormalization_no_go_note_2026-06-21",
@@ -125463,8 +125468,8 @@
       "bounded_theorem": 1555,
       "decoration": 3,
       "meta": 319,
-      "no_go": 316,
-      "none": 1216,
+      "no_go": 317,
+      "none": 1215,
       "open_gate": 133,
       "positive_theorem": 274
     },
@@ -125477,10 +125482,10 @@
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14296,
+    "edge_count": 14297,
     "leaf_count": 1290,
     "node_count": 3816,
-    "root_count": 1103,
+    "root_count": 1102,
     "runners_with_path": 3439
   }
 }

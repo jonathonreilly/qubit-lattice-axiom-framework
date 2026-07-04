@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 855 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1944 |
+| unaudited | 1945 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 25 |
+| ~~audited_conditional~~ | 24 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1228 |
-| `audited_conditional` | 25 |
+| `audited_conditional` | 24 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2282 |
+| `unaudited` | 2283 |
 
 | claim_type | count |
 |---|---:|
@@ -102,7 +102,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1866 | 188.37 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1148 | 67.17 | `audited_clean` | **retained** |
-| 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 198 | 65.14 | `audited_clean` | **retained** |
+| 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 65.64 | `audited_clean` | **retained** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1578 | 65.12 | `audited_clean` | **retained** |
 | 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1201 | 64.23 | `unaudited` | unaudited |
 | 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1248 | 53.29 | `audited_clean` | **retained_bounded** |
@@ -1391,7 +1391,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `quark_route2_e_center_blindness_no_go_note_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -14195,23 +14194,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For nonzero-sum triples in the C3 circulant parametrization, Q = (sum x_k^2)/(sum x_k)^2 gives |b|^2/a^2 = (3Q - 1)/2, so the packet-local quark comparators need not share the charged-lepton BAE value.  _(class `A`)_
 - **chain closes:** True — Independently summing the C3 cosine parametrization gives sum x_k = 3a and sum x_k^2 = 3a^2 + 6|b|^2, hence Q = 1/3 + (2/3)|b|^2/a^2 and the displayed ratio formula. The quark numbers are correctly scoped as external, scheme-dependent comparators, so the closed result is only the no-transfer open-gate boundary, not a quark-mass theorem.
 - **rationale:** The algebraic identity used by the note is a direct C3/Koide closure from retained algebraic inputs and checks independently. The displayed comparator values reproduce the runner's Q and apparent |b|^2/a^2 numbers, but they are explicitly treated as external scheme-dependent comparators rather than framework-native quark data. The source does not claim a quark mass, quark phase, quark amplitude-ratio theorem, CKM-to-mass bridge, or charged-lepton BAE transfer.
-- **auditor confidence:** high
-
-### `quark_route2_e_center_blindness_no_go_note_2026-06-17`
-
-- **Note:** [`QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md`](../../docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Conditional linear-algebra no-go: within the supplied reduced Route-2 endpoint carrier and granted T-side endpoint data, E-center-blind endpoint constraints cannot select rho_E = 21/4 or its equivalent center ratios.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-quark_route2_e_center_blindness_no_go_note_2026-06-17-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** All E-center-blind constraints see the same shell and T-side endpoint data for every rho_E, while P(rho_E) E-center = (1 + rho_E/6, 0) varies with rho_E.  _(class `A`)_
-- **chain closes:** False — The algebraic invariance claim closes exactly once the reduced carrier, readout form, and T-side endpoint data are supplied. The restricted packet provides no retained cited authority or axiom-level derivation for those setup inputs.
-- **rationale:** Issue: the runner genuinely computes exact rank, invariance, target-equivalence, and low-rational firewall checks, but it hard-codes the reduced endpoint carrier and the granted T-side endpoint values. Why this blocks: the packet says there are no cited authorities, so the Route-2 carrier/readout setup must derive from axioms or retained inputs, and that derivation is absent here. Repair target: wire retained one-hop dependencies or add an axiom-level derivation for the reduced carrier, readout, and T-side endpoint data. Claim boundary until fixed: the note is a valid conditional algebraic no-go for E-center-blind constraints given those setup premises.
-- **open / conditional deps cited:**
-  - `QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md`
-  - `QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md`
-  - `QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`
 - **auditor confidence:** high
 
 ### `quark_route2_eta_floor_hf_boundary_note`

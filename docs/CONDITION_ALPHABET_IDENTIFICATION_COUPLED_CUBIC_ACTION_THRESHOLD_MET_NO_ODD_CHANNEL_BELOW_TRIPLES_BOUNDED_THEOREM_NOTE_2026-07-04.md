@@ -1,4 +1,4 @@
-# The Condition Alphabet Identified: Openness Plus Possibility Content Transforming as (Even Scalar, Pseudoscalar, Polar Vector, Axial Vector) Under the Coupled Cubic Action — the Alphabet Meets the Chirality Threshold (the Small-Alphabet Shortcut Is a Route No-Go) Yet Supplies No Odd Channel Below Vector Triples, and Every Chiral Channel Is the Same Single Orientation Bit (Bounded Theorem + Route No-Go)
+# The Condition Domain Identified: Openness Plus Possibility Content Transforming as (Even Scalar, Pseudoscalar, Polar Vector, Axial Vector) Under the Coupled Cubic Action — the DOMAIN-Level Alphabet Meets the Chirality Threshold (the Domain-Level Small-Alphabet Shortcut Is a Route No-Go; the REALIZED Record-Content Alphabet Is Rule-Generated and Remains Open) Yet No Odd Channel Exists Below Vector Triples, and Every Chiral Channel Is the Same Single Orientation Bit (Bounded Theorem + Route No-Go)
 
 **Date:** 2026-07-04
 **Type:** bounded_theorem
@@ -63,16 +63,25 @@ covariant structure is now exact:
    proper rotations an `SU(2)` element is built by axis-angle and its
    adjoint reproduces the spatial matrix exactly.
 
-2. **The alphabet meets the threshold — the small-alphabet shortcut is a
-   route no-go (Theorem 2).** The alignment invariant `v . d` (content
-   polar part against neighbor direction) is invariant under the joint
-   action of all 48 elements and separates arbitrarily many contents
-   (five witnesses reported). The covariant condition alphabet is
-   infinite, so the in-review classification's hoped-for shortcut — "the
-   physical alphabet stays below three values, hence the rule is
-   automatically achiral" — is **not available**. This is recorded as an
-   honest route no-go. At the same time, every such separating invariant
-   is even: alphabet size by itself supplies no chirality.
+2. **The domain-level alphabet meets the threshold — the domain-level
+   small-alphabet shortcut is a route no-go (Theorem 2).** The alignment
+   invariant `v . d` (content polar part against neighbor direction) is
+   invariant under the joint action of all 48 elements and separates
+   arbitrarily many contents (five witnesses reported). The covariant
+   condition DOMAIN — the space of conditions the fixed rule must be
+   defined over — supports a continuum of covariant distinctions, so the
+   shortcut "the rule's domain stays below three values, hence the rule
+   is automatically achiral" is **not available**. Recorded as an honest
+   route no-go, scoped to the domain level. **The realized alphabet is a
+   different object**: records are the only readable reality, a record
+   locks one *admissible* possibility (an element of the rule's
+   availability sets), and states are configurations of records generated
+   from the empty state — so the record contents that ever exist form a
+   rule-generated set that the axioms do not force to be infinite. Whether
+   the realized alphabet is small is an open, sharp question (see the
+   bootstrap residual below). At the same time, every separating
+   invariant above is even: alphabet size, at either level, supplies no
+   chirality.
 
 3. **No odd channel below vector triples (Theorem 3).** The exact sign-
    character multiplicities under the full cubic group are
@@ -106,13 +115,17 @@ covariant structure is now exact:
    data freely and absolute-orientation data never, and a chiral rule
    still costs exactly the one bit.
 
-**Identification summary.** The physical condition alphabet is
+**Identification summary.** The rule's condition DOMAIN is
 `{open} + state-geometry content` (even scalar + polar vector per
-content), infinite in covariant distinctions, orientation-free at every
-size. The chirality question for the fixed rule therefore cannot be
-settled by alphabet counting in either direction; it is settled, in both
-directions, by the same single orientation bit already localized on the
-gauge side — whose only content-level carriers are triple-product
+content), a continuum in covariant distinctions, orientation-free at
+every size. The REALIZED alphabet — the record contents that actually
+exist, which under the Record axiom are the only readable reality — is
+rule-generated from the empty state and is not identified here; its size
+is open. What is settled at every size, domain or realized: no odd
+channel exists below vector triples, relative orientation is free,
+absolute orientation is never supplied — so the chirality question for
+the fixed rule cannot be settled by alphabet counting in either
+direction, and its only content-level carriers are triple-product
 channels, now identified exactly.
 
 ## Authorities and premises
@@ -157,16 +170,21 @@ elements (A2). Hermiticity is preserved; pure states transform as polar
 vectors (A3); the pseudoscalar is the imaginary unit's coefficient and
 the readable scalar is even (A4).
 
-### Theorem 2 (threshold met; the small-alphabet shortcut is a route no-go)
+### Theorem 2 (domain-level threshold met; the domain-level shortcut is a route no-go)
 
 *Proof.* `(S v) . (S d) = v . d` for every signed permutation `S`
 (orthogonality), including improper ones — so alignment values are
 covariant, even, and separate a continuum of contents (five explicit
-witnesses, B1-B2). Any covariant rule may distinguish contents by these
+witnesses, B1-B2). Any covariant rule MAY distinguish contents by these
 values, so no finite bound — in particular the three-value chirality
-threshold — constrains the physical alphabet from below. The shortcut
-"alphabet below three, hence achiral" is a route no-go; the classification
-must run, and does run, through the channel structure instead.
+threshold — constrains the rule's condition domain from below. The
+domain-level shortcut "the domain has fewer than three values, hence
+achiral" is a route no-go; the classification must run, and does run,
+through the channel structure instead. **Scope**: this theorem bounds the
+domain, not the realized record-content set — the realized alphabet is
+generated by the fixed rule's availability sets from the empty state, and
+a small realized alphabet remains possible; nothing here forecloses a
+realized-level achirality argument.
 
 ### Theorem 3 (no odd channel below vector triples; uniqueness at triples)
 
@@ -194,9 +212,15 @@ and the mass-side determinant phase.
 
 ## What this note does and does not claim
 
-- **It does not determine the framework's fixed rule.** The alphabet is
-  identified; whether the rule uses a chiral channel remains the rule's
-  own property. What is now exact: the alphabet cannot settle the
+- **It does not determine the framework's fixed rule.** The condition
+  domain is identified; whether the rule uses a chiral channel remains
+  the rule's own property.
+- **It does not identify the realized alphabet.** Under the Record axiom
+  records are the only readable reality; realized contents are locked
+  admissible possibilities, generated by the fixed rule from the empty
+  state. Theorem 2's continuum is the rule's domain, not the realized
+  content set, and this note makes no claim that the realized alphabet is
+  infinite. What is now exact: the alphabet cannot settle the
   question by size (in either direction), the only content-level chiral
   carriers are triple-product channels, and their cost is the one
   already-localized orientation bit.
@@ -215,16 +239,26 @@ and the mass-side determinant phase.
 
 ## Residuals and next paths
 
-1. **Rule-dependence structure**: with the alphabet identified, the
-   remaining question about the fixed rule is which covariant channels
-   its dependence actually uses — openness pattern, alignment values,
+1. **Realized-alphabet bootstrap**: the empty state's all-open condition
+   pattern is invariant under the full cubic group, so the rule's first
+   availability set is proper-cubic-invariant as a set; proper-cubic
+   orbits on the content sphere are inversion-invariant exactly when the
+   orbit point is stabilized by an improper element (axes, corners, edge
+   midpoints, mirror-plane points), while generic 24-point orbits are
+   chiral and come in inversion-paired twins. So realized-alphabet
+   chirality at the first step reduces to whether the all-open
+   availability set contains an unpaired generic orbit — the same single
+   bit, now at the bootstrap level. Deriving the availability set's locus
+   class is the sharp next question the records-only reading opens.
+2. **Rule-dependence structure**: which covariant channels the fixed
+   rule's dependence actually uses — openness pattern, alignment values,
    relative orientations (all achiral-compatible), or a triple-product
    channel (chiral, costing the bit). Any derivation pinning the rule's
-   dependence class now grades the chirality question directly.
-2. **Coupled-action adjudication**: formal audit-lane treatment of the
+   dependence class grades the chirality question directly.
+3. **Coupled-action adjudication**: formal audit-lane treatment of the
    induced rotation action on contents as the presentation-supplied
    action (the named-model caveat above).
-3. **Theta-chain wiring**: with the in-review companions, this note's
+4. **Theta-chain wiring**: with the in-review companions, this note's
    Theorems 3-4 give the content-side face of the one-bit localization —
    the same bit from the rule side, the carrier side, and now the
    alphabet side.

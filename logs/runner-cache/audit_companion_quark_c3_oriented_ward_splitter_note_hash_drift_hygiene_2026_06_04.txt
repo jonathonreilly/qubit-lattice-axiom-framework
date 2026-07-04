@@ -1,131 +1,122 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_quark_c3_oriented_ward_splitter_note_hash_drift_hygiene_2026_06_04.py
-runner_sha256: 710bdb0f5a2ddcbd514f6a1f6635f157bac7d70f61cb7f4195d7218fd69b4c03
-timeout_sec: 120
+runner_sha256: f8ee1f6a02bd5e8e4b562b4b41252dba296de6316d674872f0233233ebf8591f
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 
 ========================================================================
-Audit companion runner: Quark C3-oriented Ward splitter support note-hash-drift hygiene
+Quark C3 Ward splitter current-source hygiene companion
 ========================================================================
 Parent note: docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md
 Parent runner: scripts/frontier_quark_c3_oriented_ward_splitter_support.py
-Prior snapshot note_hash:   b44ed0582ba9708b6542c32a6f83412f5f6dd325ce68685e951ca34a382063f0
-Current head note_hash:     d92f91a2a5ba674c4a5171c74f27cab775212d961837a95ba8f4cbc4a943b768
-Note hashes differ: True (drift detected; companion documents the cause)
-Prior snapshot runner_hash: b3e8581f8e63aa58c4fdf55393ebf876ee68c7b19e22f8fdd6f1e5800813ceda
-Current head runner_hash:   b3e8581f8e63aa58c4fdf55393ebf876ee68c7b19e22f8fdd6f1e5800813ceda
-Runner hashes equal: True (runner is byte-stable across the edit)
-Companion note: docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_HASH_DRIFT_HYGIENE_COMPANION_NOTE_2026-06-04.md
-
+Scope: meta evidence only; no theorem claim and no audit-status change.
+Audit-lane values are informational metadata, not pass/fail targets.
 
 ========================================================================
-Block 1 : Re-execute the parent runner; confirm PASS=51 FAIL=0
+Block 1: live parent runner
 ========================================================================
-  PASS parent runner exits with code 0 :: exit=0
-  PASS parent runner emits TOTAL line :: PASS=51 FAIL=0
-  PASS parent runner PASS count matches archived snapshots (51) :: got PASS=51, expected 51
-  PASS parent runner FAIL count is zero :: got FAIL=0, expected 0
-  PASS parent runner emits the documented VERDICT line :: VERDICT line present
+PASS parent_runner_exit_zero :: exit=0
+PASS parent_runner_total_line_present
+PASS parent_runner_pass_count_at_least_58 :: pass=58
+PASS parent_runner_fail_count_zero :: fail=0
+PASS parent_runner_reports_support_boundary_result
+PASS parent_runner_reports_dependency_graph_repair_block
 
 ========================================================================
-Block 2 : Parent runner SHA-256 equality vs prior snapshot's runner_hash field
+Block 2: ledger row presence and live metadata
 ========================================================================
-  PASS parent runner exists on disk :: scripts/frontier_quark_c3_oriented_ward_splitter_support.py
-  PASS parent runner SHA-256 equals prior snapshot runner_hash :: cur=b3e8581f8e63aa58... vs snap=b3e8581f8e63aa58...
+PASS parent_ledger_row_present
+PASS parent_note_exists
+PASS parent_runner_exists
+PASS companion_note_exists
+PASS parent_runner_path_expected
+PASS parent_claim_type_field_present :: claim_type=decoration
+PASS parent_status_fields_present :: effective_status=decoration_under_three_generation_observable_theorem_note audit_status=audited_decoration
+PASS parent_criticality_field_present :: criticality=medium
+PASS parent_load_field_present :: load=2.585
+PASS parent_note_hash_field_present
+PASS parent_note_hash_matches_ledger
+PASS parent_deps_include_current_required_sources :: required=4 row_deps=4
+PASS staggered_gate_not_a_current_row_dependency :: staggered_dep_present=False
+PASS helper_runner_paths_field_present :: count=0
+PASS required_dep_row_present_quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18
+PASS required_dep_status_fields_present_quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18 :: effective_status=decoration_under_three_generation_observable_theorem_note audit_status=audited_decoration
+PASS required_dep_row_present_quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28
+PASS required_dep_status_fields_present_quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28 :: effective_status=retained_bounded audit_status=audited_clean
+PASS required_dep_row_present_s3_taste_cube_decomposition_note
+PASS required_dep_status_fields_present_s3_taste_cube_decomposition_note :: effective_status=retained audit_status=audited_clean
+PASS required_dep_row_present_three_generation_observable_theorem_note
+PASS required_dep_status_fields_present_three_generation_observable_theorem_note :: effective_status=retained audit_status=audited_clean
+PASS previous_audit_history_field_present
 
 ========================================================================
-Block 3 : Parent note Sections 1-9 and 'Hypothesis set used' paragraph are byte-stable across the edit
+Block 3: current parent note content
 ========================================================================
-  PASS current head exposes the appended '## Audit dependency repair links' heading :: index = 7263
-  PASS reconstructed prior text hashes to the archived audited snapshot hash :: recon=b44ed0582ba9708b... vs snap=b44ed0582ba9708b...
-  PASS reconstructed prior does NOT contain '## Audit dependency repair links' :: appended section absent from prior reconstruction
-  PASS current head exposes the expected 9 numbered Sections (1-9) :: got 9 (expected 9)
-  PASS Section '1. Question' is byte-identical across edit :: byte-equal
-  PASS Section '2. Minimal Premise Set' is byte-identical across edit :: byte-equal
-  PASS Section '3. Exact `C3`-Equivariant Hermitian Normal Form' is byte-identical across edit :: byte-equal
-  PASS Section '4. Spectrum' is byte-identical across edit :: byte-equal
-  PASS Section '5. Diagonal Generation Readout Boundary' is byte-identical across edit :: byte-equal
-  PASS Section '6. Theorem' is byte-identical across edit :: byte-equal
-  PASS Section '7. What This Adds' is byte-identical across edit :: byte-equal
-  PASS Section '8. What Remains Open' is byte-identical across edit :: byte-equal
-  PASS Section '9. Verification' is byte-identical across edit :: byte-equal
-  PASS 'Hypothesis set used' section present on current head :: ## Hypothesis set used (axiom-reset 2026-05-03)
-  PASS 'Hypothesis set used' section is byte-identical across edit (modulo inter-section blank line) :: byte-equal (rstripped)
-  PASS 'Audit dependency repair links' section is the new appended section :: present in current head, absent in prior: True
+PASS parent_declares_independent_status_authority
+PASS parent_has_dependency_rewire_section
+PASS parent_has_dependency_repair_section
+PASS parent_has_machine_visible_dependency_links
+PASS parent_note_markdown_links_required_dep_quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18 :: QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md
+PASS parent_note_markdown_links_required_dep_quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28 :: QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md
+PASS parent_note_markdown_links_required_dep_s3_taste_cube_decomposition_note :: S3_TASTE_CUBE_DECOMPOSITION_NOTE.md
+PASS parent_note_markdown_links_required_dep_three_generation_observable_theorem_note :: THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
+PASS staggered_gate_kept_as_plain_text_pointer
+PASS parent_notes_staggered_gate_not_load_bearing
+PASS parent_note_keeps_finite_c3_scope
+PASS parent_note_keeps_lane3_open_boundary
+PASS parent_note_disclaims_numerical_quark_ratios
+PASS parent_note_disclaims_absolute_non_top_scale
+PASS parent_note_disclaims_status_change
 
 ========================================================================
-Block 4 : Appended 'Audit dependency repair links' section lists the four named one-hop dependency surfaces
+Block 4: companion note content
 ========================================================================
-  PASS appended section heading present on current head :: index = 7263
-  PASS appended section contains the documented bookkeeping disclaimer :: disclaimer present
-  PASS appended section lists 'STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md' as a one-hop dependency surface :: STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md
-  PASS appended section lists 'THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md' as a one-hop dependency surface :: THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
-  PASS appended section lists 'QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md' as a one-hop dependency surface :: QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md
-  PASS appended section lists 'S3_TASTE_CUBE_DECOMPOSITION_NOTE.md' as a one-hop dependency surface :: S3_TASTE_CUBE_DECOMPOSITION_NOTE.md
-  PASS appended section lists exactly the four named one-hop dependency surfaces (no more, no less) :: listed = 4 of expected 4
-  PASS target file 'STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md' exists on current head :: docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md
-  PASS target file 'THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md' exists on current head :: docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
-  PASS target file 'QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md' exists on current head :: docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md
-  PASS target file 'S3_TASTE_CUBE_DECOMPOSITION_NOTE.md' exists on current head :: docs/S3_TASTE_CUBE_DECOMPOSITION_NOTE.md
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_theorem
+PASS companion_disclaims_status_change
+PASS companion_marks_audit_values_informational
+PASS companion_documents_current_parent_tally
+PASS companion_documents_dependency_repair
+PASS companion_disclaims_source_readout_resolution
 
 ========================================================================
-Block 5 : C3-equivariant Hermitian normal-form spectrum (lambda_0 = a + 2b, lambda_+/- = a - b +/- c)
+Block 5: C3 Hermitian normal-form spectrum
 ========================================================================
-  PASS W(a=0.7, b=-0.2, c=0.4) is Hermitian :: ||W - W*|| = 0.00e+00
-  PASS W(a=0.7, b=-0.2, c=0.4) commutes with C3 cycle :: ||[W, C]|| = 0.00e+00
-  PASS W(a=0.7, b=-0.2, c=0.4) eigenvalues match (a+2b, a-b+c, a-b-c) :: predicted=[0.3, 0.5, 1.3] actual=[0.3, 0.5, 1.3]
-  PASS W(a=1.1, b=0.3, c=-0.6) is Hermitian :: ||W - W*|| = 0.00e+00
-  PASS W(a=1.1, b=0.3, c=-0.6) commutes with C3 cycle :: ||[W, C]|| = 0.00e+00
-  PASS W(a=1.1, b=0.3, c=-0.6) eigenvalues match (a+2b, a-b+c, a-b-c) :: predicted=[0.2, 1.4, 1.7] actual=[0.2, 1.4, 1.7]
-  PASS W(a=-0.5, b=0.55, c=0.0) is Hermitian :: ||W - W*|| = 0.00e+00
-  PASS W(a=-0.5, b=0.55, c=0.0) commutes with C3 cycle :: ||[W, C]|| = 0.00e+00
-  PASS W(a=-0.5, b=0.55, c=0.0) eigenvalues match (a+2b, a-b+c, a-b-c) :: predicted=[-1.05, -1.05, 0.6] actual=[-1.05, -1.05, 0.6]
-  PASS W(a=0.0, b=1.0, c=1.5) is Hermitian :: ||W - W*|| = 0.00e+00
-  PASS W(a=0.0, b=1.0, c=1.5) commutes with C3 cycle :: ||[W, C]|| = 0.00e+00
-  PASS W(a=0.0, b=1.0, c=1.5) eigenvalues match (a+2b, a-b+c, a-b-c) :: predicted=[-2.5, 0.5, 2.0] actual=[-2.5, 0.5, 2.0]
+PASS W(0.7,-0.2,0.4)_is_hermitian :: norm=0.00e+00
+PASS W(0.7,-0.2,0.4)_commutes_with_C3 :: norm=0.00e+00
+PASS W(0.7,-0.2,0.4)_spectrum_matches_formula :: predicted=[0.3, 0.5, 1.3] actual=[0.3, 0.5, 1.3]
+PASS W(1.1,0.3,-0.6)_is_hermitian :: norm=0.00e+00
+PASS W(1.1,0.3,-0.6)_commutes_with_C3 :: norm=0.00e+00
+PASS W(1.1,0.3,-0.6)_spectrum_matches_formula :: predicted=[0.2, 1.4, 1.7] actual=[0.2, 1.4, 1.7]
+PASS W(-0.5,0.55,0.0)_is_hermitian :: norm=0.00e+00
+PASS W(-0.5,0.55,0.0)_commutes_with_C3 :: norm=0.00e+00
+PASS W(-0.5,0.55,0.0)_spectrum_matches_formula :: predicted=[-1.05, -1.05, 0.6] actual=[-1.05, -1.05, 0.6]
+PASS W(0.0,1.0,1.5)_is_hermitian :: norm=0.00e+00
+PASS W(0.0,1.0,1.5)_commutes_with_C3 :: norm=0.00e+00
+PASS W(0.0,1.0,1.5)_spectrum_matches_formula :: predicted=[-2.5, 0.5, 2.0] actual=[-2.5, 0.5, 2.0]
 
 ========================================================================
-Block 6 : Doublet-splitting boundary (c != 0 vs c = 0)
+Block 6: splitter boundary and readout checks
 ========================================================================
-  PASS c = 0: E doublet degeneracy (two eigenvalues coincide) :: eigs = [0.25, 0.25, 1.0]
-  PASS c != 0 and c != +/- 3b: three distinct eigenvalues :: eigs = [-0.05, 0.55, 1.0]
-  PASS c = +3b boundary: two eigenvalues collide :: eigs = [-2.0, 1.0, 1.0]
-
-========================================================================
-Block 7 : Splitter K_C3 = (C - C^2) / (i sqrt(3)) is reflection-odd
-========================================================================
-  PASS K_C3 is Hermitian :: ||K - K*|| = 0.00e+00
-  PASS R is an involution (R^2 = I) :: ||R^2 - I|| = 0.00e+00
-  PASS R conjugates C to C^2 :: ||R C R - C^2|| = 0.00e+00
-  PASS R conjugates K_C3 to -K_C3 (reflection-odd) :: ||R K R + K|| = 0.00e+00
-
-========================================================================
-Block 8 : C3-equivariant + diagonal in generation basis -> scalar readout
-========================================================================
-  PASS D = diag(0.7, 0.7, 0.7) commutes with C3 cycle <=> x = y = z :: got commutes=True, expected=True
-  PASS D = diag(0.7, 1.2, 0.7) commutes with C3 cycle <=> x = y = z :: got commutes=False, expected=False
-  PASS D = diag(0.0, 0.0, 0.0) commutes with C3 cycle <=> x = y = z :: got commutes=True, expected=True
-  PASS D = diag(1.0, 2.0, 3.0) commutes with C3 cycle <=> x = y = z :: got commutes=False, expected=False
-
-========================================================================
-Block 9 : No-claim gate preservation across runs
-========================================================================
-  PASS parent runner emits the support/boundary verdict :: boundary verdict present
-  PASS parent note explicitly states Lane 3 remains open :: open-lane language present in Section 8
-  PASS parent note explicitly disclaims numerical Yukawa ratios :: Section 8 explicit disclaimers present
-  PASS parent note explicitly disclaims absolute non-top quark mass scale :: Section 8 disclaimer present
-  PASS parent note explicitly disclaims down-type 5/6 non-perturbative exponent :: Section 8 disclaimer present
-  PASS parent note explicitly disclaims up-type amplitude scalar law :: Section 8 disclaimer present
+PASS c_zero_retains_E_doublet_degeneracy :: eigs=[0.25, 0.25, 1.0]
+PASS generic_nonzero_c_gives_three_distinct_eigenvalues :: eigs=[-0.05, 0.55, 1.0]
+PASS c_equals_plus_3b_is_boundary_collision :: eigs=[-2.0, 1.0, 1.0]
+PASS splitter_is_hermitian
+PASS reflection_is_involution
+PASS reflection_conjugates_C_to_C_squared
+PASS reflection_flips_splitter
+PASS diag(0.7,0.7,0.7)_C3_equivariance_matches_scalar_test :: commutes=True expected=True
+PASS diag(0.7,1.2,0.7)_C3_equivariance_matches_scalar_test :: commutes=False expected=False
+PASS diag(0.0,0.0,0.0)_C3_equivariance_matches_scalar_test :: commutes=True expected=True
+PASS diag(1.0,2.0,3.0)_C3_equivariance_matches_scalar_test :: commutes=False expected=False
 
 ========================================================================
 Summary
 ========================================================================
-TOTAL: PASS=63, FAIL=0
-
-VERDICT: parent's load-bearing Sections 1-9, 'Hypothesis set used' paragraph, and 51-check runner output are unchanged across the single 2026-05-12 audit-bot nightly-repair commit (7a214c3d9) that appended the 'Audit dependency repair links' bookkeeping section recording the four named one-hop dependency surfaces, driving the b44ed058 -> d92f91a2 note_hash drift; later independent audit handling decides downstream treatment.
+TOTAL: PASS=74, FAIL=0
 
 ----- stderr -----
 

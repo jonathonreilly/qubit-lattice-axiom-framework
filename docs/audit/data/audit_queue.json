@@ -358,15 +358,15 @@
         "minimal_axioms_2026-05-03",
         "physical_lattice_necessity_note"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.655,
+      "load_bearing_score": 15.156,
       "note_path": "docs/YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_yt_vertex_power_operator_counting_lemma.py",
-      "transitive_descendants": 1139
+      "transitive_descendants": 1140
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

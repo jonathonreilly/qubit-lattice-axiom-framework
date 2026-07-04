@@ -106,8 +106,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1578 | 65.12 | `audited_clean` | **retained** |
 | 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1202 | 64.23 | `audited_clean` | **retained_bounded** |
 | 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1248 | 53.29 | `audited_clean` | **retained_bounded** |
-| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1153 | 48.17 | `unaudited` | meta |
-| 8 | `key_terminology` | meta | critical | 1253 | 46.79 | `unaudited` | meta |
+| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1154 | 48.17 | `unaudited` | meta |
+| 8 | `key_terminology` | meta | critical | 1254 | 46.79 | `unaudited` | meta |
 | 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 1000 | 44.47 | `unaudited` | unaudited |
 | 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1000 | 43.47 | `unaudited` | unaudited |
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1380 | 43.43 | `unaudited` | unaudited |

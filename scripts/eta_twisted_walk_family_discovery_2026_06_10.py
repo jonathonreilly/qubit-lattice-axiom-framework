@@ -322,12 +322,12 @@ check("D3b EXACT slopes: dX/dt = -+ i X/3 at the two roots (=> lambda-slopes -+1
       "symmetric-point velocity set = the DISCRETE set {+-1/6, +-1/(2 sqrt 3)}: quantized over the whole torus, never flat")
 
 # D3c: the first-draft 'flat phi=0 stratum' was a central-difference artifact
-# (the sorted spectrum is exactly even in t there); one-sided tracking shows
-# the true +-1/(2 sqrt 3) splitting (computed):
+# (the sorted spectrum is exactly even in t there).  Use X = lambda^2, the
+# branch-invariant variable of D3a-D3b, then divide by two for lambda-phases:
 dq = 1e-4
-a0 = np.sort(np.angle(np.linalg.eigvals(U0n_((0, 0, 0)))))
-ap = np.sort(np.angle(np.linalg.eigvals(U0n_((dq, 0, 0)))))
-one_sided = np.sort(np.abs(ap - a0) / dq)
+a0 = np.sort(np.angle(np.linalg.eigvals(U0n_((0, 0, 0))) ** 2))
+ap = np.sort(np.angle(np.linalg.eigvals(U0n_((dq, 0, 0))) ** 2))
+one_sided = np.sort(np.abs(np.angle(np.exp(1j * (ap - a0)))) / (2 * dq))
 artifact_doc = np.allclose(np.sort(np.abs(one_sided))[-4:], 1 / (2 * np.sqrt(3)), atol=1e-3)
 check("D3c the phi=0 stratum moves at +-1/(2 sqrt 3) (one-sided; the central-difference 'flat' reading was an artifact, documented)",
       artifact_doc, f"one-sided rates {np.round(one_sided[-4:], 4)} vs 1/(2 sqrt 3) = {1/(2*np.sqrt(3)):.4f}")
@@ -415,22 +415,41 @@ print("=" * 78)
 # in the six-orbit walk family (diagnostic: diagonal amplitudes ~ 0 and the
 # six active-orbit moduli at 1/sqrt 3):
 kgridE = [(0.3, 0.9, 1.7), (1.1, 0.2, 2.5), (2.0, 2.6, 0.5)]
-def buildPE(th, kv):
-    U = np.zeros((8, 8), complex)
-    al = th[:2 * len(corbs):2] + 1j * th[1:2 * len(corbs):2]
-    for i2, p in enumerate(comps):
-        U[i2, i2] = al[corbs.index(find(i2))]
-    o = 2 * len(corbs)
+nfreeP = 2 * len(corbs) + 2 * len(orbs)
+I8 = np.eye(8)
+
+def basisPE(kv):
+    mats = []
+    for croot in corbs:
+        B = np.zeros((8, 8), complex)
+        for i2 in range(8):
+            if find(i2) == croot:
+                B[i2, i2] = 1.0
+        mats.append(B)
     for orb in orbs:
-        val = th[o] + 1j * th[o + 1]; o += 2
+        B = np.zeros((8, 8), complex)
         for (kind, j2), sign in orb.items():
             p, q, ax, sgn = pairs[j2]
-            U[idx[p], idx[q]] += sign * val * (np.exp(1j * sgn * kv[ax]) if kind == 'd' else 1.0)
-    return U
-nfreeP = 2 * len(corbs) + 2 * len(orbs)
+            B[idx[p], idx[q]] += sign * (np.exp(1j * sgn * kv[ax]) if kind == 'd' else 1.0)
+        mats.append(B)
+    return np.array(mats)
+
+def buildPE_from_basis(th, basis):
+    coeffs = th[0::2] + 1j * th[1::2]
+    return np.einsum('a,aij->ij', coeffs, basis, optimize=True)
+
+basis_gridE = [basisPE(kv) for kv in kgridE]
+fine_basisE = [basisPE(kv) for kv in [(0.11, 2.9, 1.3), (2.7, 0.4, 0.8)]]
+
+def buildPE(th, kv):
+    return buildPE_from_basis(th, basisPE(kv))
+
 def residE(th):
-    return np.concatenate([np.abs(buildPE(th, kv) @ buildPE(th, kv).conj().T - np.eye(8)).ravel()
-                           for kv in kgridE])
+    chunks = []
+    for basis in basis_gridE:
+        U = buildPE_from_basis(th, basis)
+        chunks.append(np.abs(U @ U.conj().T - I8).ravel())
+    return np.concatenate(chunks)
 rngE = np.random.default_rng(53)
 startsE = [rngE.normal(size=nfreeP) * 0.7 for _ in range(50)]
 b0E = np.zeros(nfreeP); b0E[:2 * len(corbs):2] = 1.0
@@ -441,8 +460,10 @@ solsE = []
 for x0 in startsE:
     sol = least_squares(residE, x0, method='lm', max_nfev=4000)
     sol = least_squares(residE, sol.x, method='lm', max_nfev=4000)
-    fine = max(np.abs(buildPE(sol.x, kv) @ buildPE(sol.x, kv).conj().T - np.eye(8)).max()
-               for kv in [(0.11, 2.9, 1.3), (2.7, 0.4, 0.8)])
+    fine = 0.0
+    for basis in fine_basisE:
+        U = buildPE_from_basis(sol.x, basis)
+        fine = max(fine, np.abs(U @ U.conj().T - I8).max())
     if fine < 3e-8 and not any(np.allclose(sol.x, s2, atol=1e-6) for s2 in solsE):
         solsE.append(sol.x)
 n_dispE = 0; in_family = 0
@@ -534,7 +555,7 @@ while stack:
             capped = True; break
 check("G1 the unrestricted family's kill-propagation exceeds the 50,000-leaf cap (deterministic): exhaustive enumeration infeasible",
       capped,
-      f"{len(eqsF)} exact equations; cap exceeded -- open 1 (full-family exhaustive closure) remains NAMED, sharpened by documentation")
+      f"{len(eqsF)} exact equations; cap exceeded -- open 1 (full-family exact classification) remains NAMED, sharpened by documentation")
 
 
 print("\n" + "=" * 78)

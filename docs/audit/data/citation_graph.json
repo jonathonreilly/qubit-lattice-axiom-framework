@@ -649,6 +649,46 @@
       "to": "admitted_input_registry_tier_a_note_2026-05-23"
     },
     {
+      "from": "acphilambda_mode_set_corner_transfer_current_surface_no_go_note_2026-07-04",
+      "to": "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04"
+    },
+    {
+      "from": "acphilambda_mode_set_corner_transfer_current_surface_no_go_note_2026-07-04",
+      "to": "acphilambda_determinant_order_chiral_lr_coupling_current_surface_no_go_note_2026-07-04"
+    },
+    {
+      "from": "acphilambda_mode_set_corner_transfer_current_surface_no_go_note_2026-07-04",
+      "to": "corner_axis_free_transfer_extension_per_channel_trace_correspondence_and_mode_set_fork_bounded_note_2026-06-12"
+    },
+    {
+      "from": "acphilambda_mode_set_corner_transfer_current_surface_no_go_note_2026-07-04",
+      "to": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09"
+    },
+    {
+      "from": "acphilambda_mode_set_corner_transfer_current_surface_no_go_note_2026-07-04",
+      "to": "u_integration_reading_blind_and_dictionary_blind_on_corner_transfer_bounded_note_2026-06-12"
+    },
+    {
+      "from": "acphilambda_mode_set_corner_transfer_current_surface_no_go_note_2026-07-04",
+      "to": "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04"
+    },
+    {
+      "from": "acphilambda_mode_set_corner_transfer_current_surface_no_go_note_2026-07-04",
+      "to": "koide_r_half_polarization_selector_tested_static_readout_no_go_note_2026-06-08"
+    },
+    {
+      "from": "acphilambda_mode_set_corner_transfer_current_surface_no_go_note_2026-07-04",
+      "to": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
+    },
+    {
+      "from": "acphilambda_mode_set_corner_transfer_current_surface_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "acphilambda_mode_set_corner_transfer_current_surface_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
       "to": "minimal_axioms"
     },
@@ -58162,6 +58202,29 @@
       "runner_path": "scripts/acphilambda_measure_binary_axiom_update_no_go_2026_07_04.py",
       "title": "AC_phi_lambda Measure Binary Axiom-Update No-Go"
     },
+    "acphilambda_mode_set_corner_transfer_current_surface_no_go_note_2026-07-04": {
+      "claim_id": "acphilambda_mode_set_corner_transfer_current_surface_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04",
+        "acphilambda_determinant_order_chiral_lr_coupling_current_surface_no_go_note_2026-07-04",
+        "corner_axis_free_transfer_extension_per_channel_trace_correspondence_and_mode_set_fork_bounded_note_2026-06-12",
+        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+        "u_integration_reading_blind_and_dictionary_blind_on_corner_transfer_bounded_note_2026-06-12",
+        "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04",
+        "koide_r_half_polarization_selector_tested_static_readout_no_go_note_2026-06-08",
+        "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "549e34d691e6b6d9f269c91fa0aaf0c8a2af386246c47acc02759a2d81873880",
+      "path": "docs/ACPHILAMBDA_MODE_SET_CORNER_TRANSFER_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_mode_set_corner_transfer_current_surface_no_go_2026_07_04.py",
+      "title": "AC_phi_lambda Mode-Set Corner-Transfer Current-Surface No-Go"
+    },
     "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11": {
       "claim_id": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
       "claim_type_author_hint": "bounded_theorem",
@@ -109793,7 +109856,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "92eee00e01e4ca29c06dd6ecffe34c6ccc83dcaefc6b54081f6c347cb20d4883",
+      "note_hash": "67ab71a5e9b392d70502b6f212c8e7c5c6cebc711c9c3f2dad53636c7aa2d688",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -125887,7 +125950,7 @@
       "bounded_theorem": 1553,
       "decoration": 3,
       "meta": 319,
-      "no_go": 325,
+      "no_go": 326,
       "none": 1216,
       "open_gate": 134,
       "positive_theorem": 274
@@ -125896,15 +125959,15 @@
       "bounded_theorem": 1958,
       "decoration": 3,
       "meta": 319,
-      "no_go": 429,
+      "no_go": 430,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14360,
-    "leaf_count": 1284,
-    "node_count": 3824,
+    "edge_count": 14370,
+    "leaf_count": 1283,
+    "node_count": 3825,
     "root_count": 1102,
-    "runners_with_path": 3447
+    "runners_with_path": 3448
   }
 }

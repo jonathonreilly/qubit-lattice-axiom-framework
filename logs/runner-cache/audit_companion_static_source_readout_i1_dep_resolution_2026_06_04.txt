@@ -1,117 +1,124 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_static_source_readout_i1_dep_resolution_2026_06_04.py
-runner_sha256: 65d3dfedd978e5af1e29769c1d59f8cdafa37d9f1c05d4d05ead83300270f65f
-timeout_sec: 120
+runner_sha256: 5fbe3827ae9a03f6ad9e01241a70832e9f25db805ab2a99f5836fb24cfe49c72
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 2.48
+elapsed_sec: 0.93
 status: ok
 ----- stdout -----
-========================================================================
-Static-Source Readout I1 Accepted-Premise Bridge
-Dep-Resolution Hygiene Companion Runner (2026-06-04)
-========================================================================
 
-Repo root: <repo-root>
+========================================================================
+Static-source readout I1 current-source hygiene companion
+========================================================================
 Parent note: docs/STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md
 Parent runner: scripts/static_source_readout_i1_accepted_premise_runner.py
-Weakened dep note: docs/ALPHA_CONVENTION_I2_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md
-Companion source note: docs/STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md
-
-Goal: verify the parent's load-bearing substantive content does
-      not load-bear on the *audit grade* of its dep
-      `alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27`
-      (which was downgraded from retained_bounded to unaudited).
-
-Scope: pure audit-companion evidence; no theorem claim,
-       no status promotion, no audit-status content asserted.
+Companion note: docs/STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md
+Scope: meta evidence only; no theorem claim and no audit-status change.
+Audit-lane values are informational metadata, not pass/fail targets.
 
 ========================================================================
-BLOCK 1: Re-execute parent runner on current head; expect 52 PASS / 0 FAIL
+Block 1: live parent runner
 ========================================================================
-  PASS parent_runner_exit_zero :: returncode=0
-  PASS parent_runner_emits_expected_verdict_prefix :: VERDICT prefix present in stdout: True
-  PASS parent_runner_exact_pass_count_41 :: looking for 'EXACT   : PASS = 41, FAIL = 0' in stdout
-  PASS parent_runner_bounded_pass_count_11 :: looking for 'BOUNDED : PASS = 11, FAIL = 0' in stdout
-  PASS parent_runner_total_pass_count_52 :: looking for 'TOTAL   : PASS = 52, FAIL = 0' in stdout
-  PASS parent_runner_no_stderr_errors :: stderr length=0
+PASS parent_runner_exit_zero :: returncode=0
+PASS parent_runner_verdict_present
+PASS parent_runner_exact_summary_present
+PASS parent_runner_bounded_summary_present
+PASS parent_runner_total_summary_present
+PASS parent_runner_exact_pass_count_at_least_48 :: pass=48
+PASS parent_runner_exact_fail_count_zero :: fail=0
+PASS parent_runner_bounded_pass_count_at_least_11 :: pass=11
+PASS parent_runner_bounded_fail_count_zero :: fail=0
+PASS parent_runner_total_pass_count_at_least_59 :: pass=59
+PASS parent_runner_total_fail_count_zero :: fail=0
+PASS parent_runner_no_stderr_traceback
 
 ========================================================================
-BLOCK 2: Re-verify canonical I2 identity alpha = g_bare^2 / (4*pi) symbolically
+Block 2: ledger row presence and live metadata
 ========================================================================
-  PASS sympy_importable :: sympy primitives available
-  PASS i2_identity_rhs_matches_expected :: canonical alpha := g_bare^2 / (4*pi) reproduced symbolically
-  PASS i2_identity_specializes_at_gbare_one_to_one_over_four_pi :: at g_bare = 1 the identity yields alpha = 1/(4*pi)
-  PASS i2_identity_only_free_symbol_is_g_bare :: free symbols = {'g_bare'}
+PASS parent_row_present
+PASS parent_status_fields_present :: effective_status=unaudited audit_status=unaudited
+PASS parent_claim_type_field_present :: claim_type=bounded_theorem
+PASS companion_row_present
+PASS companion_status_fields_present :: effective_status=meta audit_status=unaudited
+PASS companion_claim_type_field_present :: claim_type=meta
+PASS alpha_dep_row_present
+PASS alpha_dep_status_fields_present :: effective_status=unaudited audit_status=unaudited
+PASS alpha_dep_claim_type_field_present :: claim_type=bounded_theorem
+PASS gbare_dep_row_present
+PASS gbare_dep_status_fields_present :: effective_status=unaudited audit_status=unaudited
+PASS gbare_dep_claim_type_field_present :: claim_type=bounded_theorem
+PASS green_dep_row_present
+PASS green_dep_status_fields_present :: effective_status=retained_bounded audit_status=audited_clean
+PASS green_dep_claim_type_field_present :: claim_type=bounded_theorem
+PASS parent_runner_path_expected
+PASS parent_deps_include_current_required_sources :: deps=3
+PASS parent_note_hash_matches_ledger
+PASS alpha_dep_note_hash_matches_ledger
 
 ========================================================================
-BLOCK 3: Parent runner contains zero audit-status references (outside the source-firewall exclusion list)
+Block 3: parent runner source boundary
 ========================================================================
-  PASS forbidden_source_phrases_block_stripped :: stripped block of 560 chars from forbidden_source_phrases (self-firewall exclusion list)
-  PASS parent_runner_no_token_audit_status :: 'audit_status' absent from parent runner source (outside firewall list)
-  PASS parent_runner_no_token_effective_status :: 'effective_status' absent from parent runner source (outside firewall list)
-  PASS parent_runner_no_token_intrinsic_status :: 'intrinsic_status' absent from parent runner source (outside firewall list)
-  PASS parent_runner_no_token_audited_clean :: 'audited_clean' absent from parent runner source (outside firewall list)
-  PASS parent_runner_no_token_audited_conditional :: 'audited_conditional' absent from parent runner source (outside firewall list)
-  PASS parent_runner_no_token_retained_no_go :: 'retained_no_go' absent from parent runner source (outside firewall list)
-  PASS parent_runner_no_token_retained_bounded :: 'retained_bounded' absent from parent runner source (outside firewall list)
-  PASS parent_runner_no_token_audit_ledger :: 'audit_ledger' absent from parent runner source (outside firewall list)
-  PASS parent_runner_no_token_audit_grade :: 'audit_grade' absent from parent runner source (outside firewall list)
+PASS parent_source_firewall_list_stripped
+PASS parent_runner_no_audit_status_field_outside_source_firewall_list
+PASS parent_runner_no_effective_status_field_outside_source_firewall_list
+PASS parent_runner_no_intrinsic_status_field_outside_source_firewall_list
+PASS parent_runner_no_audit_ledger_name_outside_source_firewall_list
+PASS parent_runner_no_audit_grade_phrase_outside_source_firewall_list
+PASS parent_runner_no_retained-bounded-value_outside_source_firewall_list
+PASS parent_runner_no_audited-clean-value_outside_source_firewall_list
+PASS parent_runner_no_audited-conditional-value_outside_source_firewall_list
 
 ========================================================================
-BLOCK 4: Parent note contains no claim of dep-grade dependency
+Block 4: parent and dependency source content
 ========================================================================
-  PASS parent_note_no_phrase_load_bears_on_the_dep_s_audit :: 'load-bears on the dep's audit' absent from parent note
-  PASS parent_note_no_phrase_depends_on_the_dep_s_audit_grade :: 'depends on the dep's audit grade' absent from parent note
-  PASS parent_note_no_phrase_requires_the_dep_to_be_retained :: 'requires the dep to be retained' absent from parent note
-  PASS parent_note_no_phrase_requires_retained_bounded :: 'requires retained_bounded' absent from parent note
-  PASS parent_note_no_phrase_requires_audited_clean :: 'requires audited_clean' absent from parent note
-  PASS parent_note_load_bearing_step_present :: parent note mentions 'exact (rational|symbolic) substitution arithmetic'
+PASS parent_declares_independent_status_authority
+PASS parent_registers_static_source_premise
+PASS parent_proof_walk_has_B1_to_B4
+PASS parent_names_exact_substitution_arithmetic
+PASS parent_note_no_dep_grade_dependency_phrase_0
+PASS parent_note_no_dep_grade_dependency_phrase_1
+PASS parent_note_no_dep_grade_dependency_phrase_2
+PASS parent_note_no_dep_grade_dependency_phrase_3
+PASS parent_note_no_dep_grade_dependency_phrase_4
+PASS alpha_dep_contains_dimensionless_coupling_identity
+PASS alpha_dep_keeps_i1_isolation_boundary
 
 ========================================================================
-BLOCK 5: Counterfactual re-execution without dep-grade consultation
+Block 5: symbolic substitution chain
 ========================================================================
-  PASS counterfactual_runner_exit_zero :: returncode=0
-  PASS counterfactual_runner_verdict_unchanged :: VERDICT prefix identical to Block 1 (substance-unchanged)
-  PASS counterfactual_runner_total_pass_unchanged :: PASS count unchanged from Block 1
+PASS sympy_importable
+PASS B1_substitution_residual_zero
+PASS B2_alpha_definition_holds
+PASS B3_alpha_form_consistent_with_B1
+PASS B4_alpha_at_gbare_one_equals_one_over_four_pi
+PASS B4_V_at_gbare_one_equals_minus_C_over_four_pi_r
+PASS B1_to_B3_composite_chain_identity
 
 ========================================================================
-BLOCK 6: Direct symbolic re-derivation of (B1)-(B4) chain (sympy)
+Block 6: numerical alpha and Casimir checks
 ========================================================================
-  PASS B1_substitution_residual_zero :: V_from_P1 == -C * g_bare^2 / (4*pi*r) by sympy.simplify
-  PASS B2_alpha_definition_holds :: alpha := g_bare^2 / (4*pi) is the canonical I2 identity
-  PASS B3_alpha_form_consistent_with_B1 :: -C alpha/r at alpha=alpha_def equals -C g_bare^2/(4*pi*r)
-  PASS B4_alpha_at_gbare_one_equals_one_over_four_pi :: alpha at g_bare=1 is exactly 1/(4*pi)
-  PASS B4_V_at_gbare_one_equals_minus_C_over_four_pi_r :: V(r) -> -C/(4*pi*r) at g_bare=1 (I1 readout identification)
-  PASS B1_to_B3_composite_chain_identity :: full chain residual zero: -C g_bare^2/(4*pi*r) = -C (g_bare^2/(4*pi))/r
+PASS alpha_num_matches_expected
+PASS alpha_num_recomputed_matches
+PASS C_F_at_N_c_3_equals_four_thirds
+PASS V_chain_equals_V_alpha_form_at_r_5 :: err=3.469e-18
+PASS V_chain_equals_V_alpha_form_at_r_10 :: err=1.735e-18
+PASS V_chain_equals_V_alpha_form_at_r_20 :: err=8.674e-19
+PASS V_chain_equals_V_alpha_form_at_r_50 :: err=4.337e-19
 
 ========================================================================
-BLOCK 7: Numerical alpha = 1/(4*pi) at g_bare=1 and C_F = 4/3 at N_c = 3
+Block 7: companion note content
 ========================================================================
-  PASS alpha_num_matches_expected :: alpha = 1/(4*pi) = 0.07957747154594767 vs expected 0.07957747154594769
-  PASS alpha_num_recomputed_matches :: g_bare^2/(4*pi) at g_bare = 1 numerically equals 1/(4*pi)
-  PASS C_F_at_N_c_3_equals_four_thirds :: C_F = 1.3333333333333333 (expected 4/3 = 1.3333333333333333)
-  PASS V_chain_equals_V_alpha_form_at_r_5 :: V_chain(r=5.0) - V_alpha_form(r=5.0) = 3.469e-18
-  PASS V_chain_equals_V_alpha_form_at_r_10 :: V_chain(r=10.0) - V_alpha_form(r=10.0) = 1.735e-18
-  PASS V_chain_equals_V_alpha_form_at_r_20 :: V_chain(r=20.0) - V_alpha_form(r=20.0) = 8.674e-19
-  PASS V_chain_equals_V_alpha_form_at_r_50 :: V_chain(r=50.0) - V_alpha_form(r=50.0) = 4.337e-19
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_theorem
+PASS companion_disclaims_status_change
+PASS companion_marks_audit_values_informational
+PASS companion_documents_current_parent_tally
+PASS companion_disclaims_static_source_premise_resolution
 
 ========================================================================
-BLOCK 8: No-claim gate preservation across re-runs
+Summary
 ========================================================================
-  PASS no_claim_phrase_g1_no_new_repo_vocabulary_introduced :: '(G1) no new repo vocabulary introduced' present in parent runner stdout
-  PASS no_claim_phrase_g2_no_multiplicative_cross_row_combination_used :: '(G2) no multiplicative cross-row combination used' present in parent runner stdout
-  PASS no_claim_phrase_g3_regulator_dependence_no_go_honored :: '(G3) regulator-dependence no-go honored' present in parent runner stdout
-  PASS no_claim_phrase_g4_bridge_addresses_exactly_parent_note_packet_entry_i1_not_ :: '(G4) bridge addresses exactly parent note packet entry I1, not I2 or I3' present in parent runner stdout
-  PASS no_claim_phrase_f1_no_continuum_4d_fourier_measure_d_4_k_2_pi_4_import_used :: '(F1) no continuum 4D-Fourier-measure d^4 k / (2 pi)^4 import used' present in parent runner stdout
-  PASS no_claim_phrase_f3_no_wick_rotation_z_3_z_4_in_load_bearing_chain :: '(F3) no Wick rotation Z^3 -> Z^4 in load-bearing chain' present in parent runner stdout
-  PASS companion_disclaims_status_promotion :: companion explicitly disclaims status promotion
-  PASS companion_metadata_declares_meta :: companion metadata declares Type: meta
-  PASS companion_names_parent_explicitly :: companion names parent ledger row exactly
-  PASS companion_names_dep_explicitly :: companion names weakened dep ledger row exactly
-
-========================================================================
-SUMMARY: PASS=52 FAIL=0
-========================================================================
+SUMMARY: PASS=71 FAIL=0
 FINAL_TAG: STATIC_SOURCE_READOUT_I1_DEP_RESOLUTION_HYGIENE_OK
 
 ----- stderr -----

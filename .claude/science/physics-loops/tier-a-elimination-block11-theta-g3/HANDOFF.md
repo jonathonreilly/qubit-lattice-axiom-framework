@@ -7,6 +7,8 @@ phase-type `F cup F` insertion.
 
 Branch: `physics-loop/tier-a-elimination-block11-theta-g3-20260704`
 Base: `physics-loop/tier-a-elimination-block10-theta-positive-20260704`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4936
+Source commit: `2d1727e43`
 
 ## Expected Claim Movement
 
@@ -37,5 +39,5 @@ theta-sector registration.
 
 ## Next Exact Action
 
-Commit, push, and open a stacked PR over block 10. The next science action is
-an action-side phase-source search or a split G1 defect-closure block.
+Monitor PR #4936. The next science action is an action-side phase-source
+search or a split G1 defect-closure block.

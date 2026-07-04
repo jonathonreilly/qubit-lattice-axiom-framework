@@ -1,0 +1,213 @@
+AC_phi_lambda mode-set corner-transfer current-surface no-go verifier
+
+========================================================================================
+A. source presence and ledger grounding
+========================================================================================
+[PASS] exists: docs/ACPHILAMBDA_MODE_SET_CORNER_TRANSFER_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/ACPHILAMBDA_DYNAMICAL_INDEX_OCCUPANCY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/ACPHILAMBDA_DETERMINANT_ORDER_CHIRAL_LR_COUPLING_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/CORNER_AXIS_FREE_TRANSFER_EXTENSION_PER_CHANNEL_TRACE_CORRESPONDENCE_AND_MODE_SET_FORK_BOUNDED_NOTE_2026-06-12.md
+[PASS] exists: docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md
+[PASS] exists: docs/U_INTEGRATION_READING_BLIND_AND_DICTIONARY_BLIND_ON_CORNER_TRANSFER_BOUNDED_NOTE_2026-06-12.md
+[PASS] exists: docs/KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md
+[PASS] exists: docs/KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md
+[PASS] exists: docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md
+[PASS] block13 ledger row resolves
+[PASS] block13 row has note path or metadata status
+[PASS] block14 ledger row resolves
+[PASS] block14 row has note path or metadata status
+[PASS] corner ledger row resolves
+[PASS] corner row has note path or metadata status
+[PASS] orbit ledger row resolves
+[PASS] orbit row has note path or metadata status
+[PASS] u_integration ledger row resolves
+[PASS] u_integration row has note path or metadata status
+[PASS] berezin ledger row resolves
+[PASS] berezin row has note path or metadata status
+[PASS] static_no_go ledger row resolves
+[PASS] static_no_go row has note path or metadata status
+[PASS] registrable ledger row resolves
+[PASS] registrable row has note path or metadata status
+[PASS] minimal ledger row resolves
+[PASS] minimal row has note path or metadata status
+[PASS] registry ledger row resolves
+[PASS] registry row has note path or metadata status
+[PASS] block13 claim type is no_go
+[PASS] block14 claim type is no_go
+[PASS] corner claim type is bounded_theorem
+[PASS] orbit claim type is bounded_theorem
+[PASS] u_integration claim type is bounded_theorem
+[PASS] berezin claim type is open_gate
+[PASS] static_no_go claim type is no_go
+[PASS] registrable claim type is bounded_theorem
+[PASS] minimal claim type is meta
+[PASS] registry claim type is meta
+[PASS] new note has Type no_go
+[PASS] new note has Claim type no_go
+
+========================================================================================
+B. Tier-A registry remains untouched
+========================================================================================
+[PASS] Tier-A genuine count remains two
+[PASS] canonical Tier-A IDs remain AC and theta
+[PASS] AC surviving decomposition remains two residuals
+[PASS] theta decomposition remains gauge plus mass
+[PASS] AC registry carries measure-side doublet occupancy realization binary
+[PASS] AC registry carries sector-tied/count-twice vs orbit/holomorphic/count-once
+[PASS] AC registry carries per-lane r value in {1, 1/2} is registered realized-stat
+[PASS] AC registry carries reading_occupancy_selection
+[PASS] AC registry carries delta_readout_identification_R_eta
+[PASS] AC registry carries does not supply readout-context selection
+[PASS] AC registry carries occupancy rule
+[PASS] note preserves boundary: AC_phi_lambda is not retired.
+[PASS] note preserves boundary: The Tier-A registry is not edited.
+[PASS] note preserves boundary: No value of `r` is derived, selected, preferred, or excl
+[PASS] note preserves boundary: R-eta and theta are untouched.
+
+========================================================================================
+C. new note dependency and wording discipline
+========================================================================================
+[PASS] markdown link inventory is controlled
+[PASS] new note carries mode-set framing: focused mode-set route test
+[PASS] new note carries mode-set framing: force per-K-orbit occupancy rather than per-channel occu
+[PASS] new note carries mode-set framing: K-orbit registrability is not the same as a Fock or meas
+[PASS] new note carries mode-set framing: Trace correspondence fixes a positive kernel normalizati
+[PASS] new note carries mode-set framing: matter-blind gauge integral into an occupancy selector
+[PASS] new note carries mode-set framing: physical statistics rule selecting one slot per K/CPT or
+[PASS] N1 gate present
+[PASS] N2 gate present
+[PASS] N3 gate present
+[PASS] N4 gate present
+[PASS] N5 gate present
+[PASS] N6 gate present
+[PASS] N7 gate present
+[PASS] N8 gate present
+[PASS] forbidden phrase absent: AC_phi_lambda is retired
+[PASS] forbidden phrase absent: r = 1/2 is derived
+[PASS] forbidden phrase absent: r = 1 is derived
+[PASS] forbidden phrase absent: orbit-occupancy is adopted
+[PASS] forbidden phrase absent: new primitive is approved
+[PASS] forbidden phrase absent: effective_status = retained
+[PASS] forbidden phrase absent: PDG values enter
+[PASS] note line count is bounded
+[PASS] verification threshold present
+
+========================================================================================
+D. source-packet boundary checks
+========================================================================================
+[PASS] corner packet keeps fork open: Mode-set fork -- exhibited, not resolved.
+[PASS] corner packet keeps fork open: does not select an occupancy cell
+[PASS] corner packet keeps fork open: The fork is exhibited, not resolved
+[PASS] corner packet keeps fork open: per-channel counting gives the two-slot cell `r = 1`
+[PASS] corner packet keeps fork open: per-K-orbit counting gives the one-slot cell `r = 1/2`
+[PASS] corner packet keeps fork open: trace correspondence fixes the kernel normalization insi
+[PASS] orbit packet is proposal only: proposal NOT adopted
+[PASS] orbit packet is proposal only: orbit-occupancy (proposal; NOT adopted)
+[PASS] orbit packet is proposal only: Not** a derivation of `r = 1/2`
+[PASS] orbit packet is proposal only: not** adoption of orbit-occupancy
+[PASS] orbit packet is proposal only: both horns are consistent
+[PASS] orbit packet is proposal only: larger retained premise surface could still derive the o
+[PASS] U-integration packet keeps dictionary blind: matter-blind measure
+[PASS] U-integration packet keeps dictionary blind: does not select a cell
+[PASS] U-integration packet keeps dictionary blind: does not decide the occupancy atom
+[PASS] U-integration packet keeps dictionary blind: The occupancy binary stays open
+[PASS] U-integration packet keeps dictionary blind: non-matter-blind matter-gauge couplings
+[PASS] Berezin packet is fork support: **Type:** open_gate
+[PASS] Berezin packet is fork support: It does not adopt the holomorphic polarization.
+[PASS] Berezin packet is fork support: real Majorana Berezin cell lands on the real-slot count
+[PASS] Berezin packet is fork support: derive a native polarization selector
+[PASS] static no-go leaves dynamic route open: no tested *static* framework structure selects the holom
+[PASS] static no-go leaves dynamic route open: remaining live opening is dynamical/first-order/index re
+[PASS] static no-go leaves dynamic route open: does **not** claim r=1/2 is impossible
+[PASS] static no-go leaves dynamic route open: Record supplies no weighting/normalization/occupancy rul
+[PASS] registrable packet is conditional only: does **not** retire either Tier-A admission
+[PASS] registrable packet is conditional only: does **not** discharge, close, or exhaust the physical
+[PASS] registrable packet is conditional only: Record finite additivity alone still admits
+[PASS] registrable packet is conditional only: not a bridge discharge
+[PASS] block13 names mode-set route: Mode-set theorem
+[PASS] block13 names mode-set route: per-K-orbit rather than per-channel
+[PASS] block13 names mode-set route: AC_phi_lambda is not retired.
+[PASS] block14 hands off mode-set route: Mode-set route
+[PASS] block14 hands off mode-set route: corner-transfer per-K-orbit mode-set theorem
+[PASS] block14 hands off mode-set route: AC_phi_lambda is not retired.
+[PASS] minimal axioms withhold selector: Only records are readable
+[PASS] minimal axioms withhold selector: does not choose a Hamiltonian or transfer operator
+[PASS] minimal axioms withhold selector: supply transition probabilities or weights
+[PASS] minimal axioms withhold selector: Probability, dynamics, readout contexts
+[PASS] minimal axioms withhold selector: physical observable bridges remain downstream
+
+========================================================================================
+E. mode-set bookkeeping algebra
+========================================================================================
+[PASS] K map is involutive
+[PASS] channel mode set has three slots
+[PASS] orbit mode set has two slots
+[PASS] doublet K orbit has two channels
+[PASS] both branches have one doublet orbit
+[PASS] per_channel rho map gives expected r
+[PASS] per_channel rho positive
+[PASS] per_k_orbit rho map gives expected r
+[PASS] per_k_orbit rho positive
+[PASS] branch ratio is exact occupancy factor two
+[PASS] r ratio follows occupancy factor two
+[PASS] rho/r identity holds for Z_d=1
+[PASS] rho/r identity holds for Z_d=2
+[PASS] rho/r identity holds for Z_d=3
+[PASS] rho/r identity holds for Z_d=4
+[PASS] rho/r identity holds for Z_d=5
+[PASS] channel decomposition covers channels
+[PASS] channel decomposition is disjoint
+[PASS] orbit decomposition covers channels
+[PASS] orbit decomposition is disjoint
+
+========================================================================================
+F. trace normalization is branch-local
+========================================================================================
+[PASS] channel trace product has three factors
+[PASS] orbit trace product has two factors
+[PASS] positive normalization alpha^n=1 forces one for n=1
+[PASS] positive normalization alpha^n=1 forces one for n=2
+[PASS] positive normalization alpha^n=1 forces one for n=3
+[PASS] positive normalization alpha^n=1 forces one for n=4
+[PASS] trace equality does not choose n
+[PASS] finite Gamma trace factorizes for 1 modes
+[PASS] finite Gamma trace factorizes for 2 modes
+[PASS] finite Gamma trace factorizes for 3 modes
+
+========================================================================================
+G. K-covariance and U-integration do not select branch
+========================================================================================
+[PASS] lambda_1(delta) equals lambda_2(-delta)
+[PASS] matter-blind integral commutes with dictionary rho=1/2 k=1
+[PASS] matter-blind integral commutes with dictionary rho=1/2 k=2
+[PASS] matter-blind integral commutes with dictionary rho=1/2 k=3
+[PASS] matter-blind integral commutes with dictionary rho=1 k=1
+[PASS] matter-blind integral commutes with dictionary rho=1 k=2
+[PASS] matter-blind integral commutes with dictionary rho=1 k=3
+[PASS] matter-blind integral commutes with dictionary rho=3/2 k=1
+[PASS] matter-blind integral commutes with dictionary rho=3/2 k=2
+[PASS] matter-blind integral commutes with dictionary rho=3/2 k=3
+[PASS] U-integration preserves two branch results
+[PASS] matter-blind weights are independent of branch labels
+
+========================================================================================
+H. final no-go discipline
+========================================================================================
+[PASS] no-go discipline phrase present: This is not a universal no-go
+[PASS] no-go discipline phrase present: No observed lepton masses
+[PASS] no-go discipline phrase present: not an adopted premise
+[PASS] no-go discipline phrase present: the same surviving AC(i) measure-side binary
+[PASS] no-go discipline phrase present: support for a candidate count-once branch is not the sam
+[PASS] no-go discipline phrase present: does not select `r = 1/2` or `r = 1`
+[PASS] new note does not introduce wall labels
+[PASS] new note says audit lane only
+[PASS] new note says no registry edit
+[PASS] new note names governance as governance only
+
+========================================================================================
+TOTAL: PASS=176 FAIL=0
+========================================================================================

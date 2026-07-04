@@ -16,7 +16,7 @@ LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
 MEASURE_RUNNER = ROOT / "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py"
 PASS = 0
 FAIL = 0
-EXPECTED_ROWS = 16
+EXPECTED_ROWS = 17
 
 
 def report(label: str, ok: bool, detail: str = "") -> None:
@@ -118,7 +118,14 @@ def source_anchor_checks() -> None:
         [
             "\"minimal_axioms\"",
             "\"current_path\": \"docs/MINIMAL_AXIOMS_2026-06-29.md\"",
-            "It still supplies no context-selection rule, occurrence rule, weighting, normalization, probability, update law, measurement/decoherence dynamics, K/CPT structure, central-sector decomposition, source/action bridge, physical observable bridge, state-selection rule, law-domain derivation, or downstream theory consequence",
+            (
+                "It still supplies no context-selection rule, formation rule (which admissible "
+                "possibility a new record locks, at which site, with what weight, or at what rate), "
+                "weighting, normalization, probability, update law, measurement/decoherence dynamics, "
+                "record-production process, physical persistence dynamics, K/CPT structure, "
+                "central-sector decomposition, source/action bridge, physical observable bridge, "
+                "state-selection rule, law-domain derivation, or downstream theory consequence."
+            ),
         ],
     )
     require_text(
@@ -292,6 +299,7 @@ def main() -> int:
     print("MEASUREMENT_DYNAMICS_DERIVED_FROM_RECORD=FALSE")
     print("PRODUCTION_DYNAMICS_DERIVED=FALSE")
     print("PHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE")
+    print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
 
 

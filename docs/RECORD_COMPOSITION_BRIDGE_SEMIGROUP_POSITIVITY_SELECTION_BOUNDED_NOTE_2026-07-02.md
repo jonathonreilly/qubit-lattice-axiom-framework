@@ -74,7 +74,7 @@ From `docs/MINIMAL_AXIOMS_2026-06-29.md`:
   *"does not choose a Hamiltonian or transfer operator, supply transition
   probabilities or weights, select a scalar or nonzero kinetic branch, assert a
   Dirac-square carrier, define a time metric, or provide a record-production
-  process."*
+  process or physical persistence dynamics."*
 - Law shape: *"A law privileges no states. Its domain is a supplied condition, and
   at every state where the condition holds it gives exactly one answer."*
 

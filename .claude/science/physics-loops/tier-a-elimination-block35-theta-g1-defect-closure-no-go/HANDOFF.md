@@ -9,7 +9,7 @@ on the abelianized multi-plaquette dual.
 Branch: `physics-loop/tier-a-elimination-block35-theta-g1-defect-closure-no-go-20260704`
 Base: `physics-loop/tier-a-elimination-block34-primitive-axiom-absorption-no-go-20260704`
 Source commit: `c69741cf8`
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4976
 
 ## Expected Claim Movement
 
@@ -53,5 +53,7 @@ Local review-loop disposition: PASS.
 
 ## Next Exact Action
 
-Commit the source/refinement package, push the stacked branch, open a PR on
-Block34, then verify hosted audit status.
+Verify hosted `audit_pipeline` on PR #4976 if GitHub checkout is available,
+then continue Tier-A retirement directly: theta G1 positive theorem, G2
+sector/readout, G3 phase source, theta mass-side bridge, or AC residual
+theorem.

@@ -6,9 +6,9 @@ target: "theta G1 defect closure on the abelianized multi-plaquette carrier"
 claim_type: no_go
 registry_edits: false
 retirement_claimed: false
-status: local_review_passed
+status: pr_open
 source_commit: c69741cf8
-pr: pending
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4976
 active_route: "current-surface no-go against deriving dn = 0 or defect suppression from updated axioms/primitives plus carrier support"
 hard_residual: "derive a physical closed-branch law or dynamical suppression theorem for dn != 0 without assuming the theta carrier surface"
 files_touched:
@@ -33,4 +33,4 @@ verification:
   audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
   diff_check: pass
 audit_row: "theta_g1_defect_closure_current_surface_no_go_note_2026-07-04: claim_type=no_go, audit_status=unaudited, effective_status=unaudited, criticality=medium"
-next_exact_action: "Commit the source/refinement package, push the stacked branch, open a PR on Block34, then verify hosted audit status."
+next_exact_action: "Verify hosted audit_pipeline on PR #4976 if GitHub checkout is available, then continue Tier-A retirement directly: theta G1 positive theorem, G2 sector/readout, G3 phase source, theta mass-side bridge, or AC residual theorem."

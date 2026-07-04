@@ -75,7 +75,9 @@ alone. For any finite collection of pairwise-disjoint records, scalar readout
 
 These axioms state only their named primitive content. Further physical
 structure requires derivation, bridge, explicit admission, or approved
-primitive registration before use as a premise.
+primitive registration before use as a premise. In particular, a law may not
+depend on a choice not fixed by the supplied structure, unless that choice is
+admitted.
 
 A state is a configuration of records.
 

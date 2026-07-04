@@ -28104,6 +28104,18 @@
       "dominant_class": "C",
       "runner": "scripts/qnm_hardening_stability_certificate.py"
     },
+    "qualification_unfixed_choice_clarification_certification_note_2026-07-04": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/qualification_unfixed_choice_clarification_certification_2026_07_04.py"
+    },
     "quantum_horizon_note": {
       "assert_count": 0,
       "counts": {
@@ -87047,6 +87059,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/qualification_unfixed_choice_clarification_certification_2026_07_04.py": {
+      "assert_count": 2,
+      "claims": [
+        "qualification_unfixed_choice_clarification_certification_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/quantum_horizon_k_sweep.py": {
       "assert_count": 0,
       "claims": [
@@ -90711,12 +90738,12 @@
     "dominant_class_distribution": {
       "A": 490,
       "B": 634,
-      "C": 1272,
+      "C": 1273,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3303,
-    "runners_with_C": 1730,
+    "runners_classified": 3304,
+    "runners_with_C": 1731,
     "runners_with_D": 1061
   }
 }

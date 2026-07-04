@@ -32741,6 +32741,10 @@
       "to": "gate_b_poisson_self_gravity_note"
     },
     {
+      "from": "qualification_unfixed_choice_clarification_certification_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "quantum_horizon_note",
       "to": "minimal_absorbing_horizon_probe_note"
     },
@@ -93907,7 +93911,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "0f59e220b10d98e4819de0a0e2f05defea3e7c10f34a8240c7fd4af0ca77bf97",
+      "note_hash": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7",
       "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
       "runner_path": "scripts/audit_companion_minimal_axioms_clean_base_exact.py",
       "title": "Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)"
@@ -104487,6 +104491,20 @@
       "path": "docs/QNM_HARDENING_FEASIBILITY_NOTE.md",
       "runner_path": "scripts/qnm_hardening_stability_certificate.py",
       "title": "QNM Hardening Feasibility Note"
+    },
+    "qualification_unfixed_choice_clarification_certification_note_2026-07-04": {
+      "claim_id": "qualification_unfixed_choice_clarification_certification_note_2026-07-04",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "08e23bf20dd9b77d5e66a25bc70bea047a6064b3027538c833723dd794d9a6b3",
+      "path": "docs/QUALIFICATION_UNFIXED_CHOICE_CLARIFICATION_CERTIFICATION_NOTE_2026-07-04.md",
+      "runner_path": "scripts/qualification_unfixed_choice_clarification_certification_2026_07_04.py",
+      "title": "Certification: the 2026-07-04 Qualification Clarification Is a Surgical Law-Dependence Restriction \u2014 a Law May Not Depend on a Choice the Supplied Structure Does Not Fix, Absent Admission (Certification Note)"
     },
     "quantum_horizon_note": {
       "claim_id": "quantum_horizon_note",
@@ -125426,7 +125444,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 1554,
       "decoration": 3,
-      "meta": 318,
+      "meta": 319,
       "no_go": 316,
       "none": 1216,
       "open_gate": 133,
@@ -125435,16 +125453,16 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1959,
       "decoration": 3,
-      "meta": 318,
+      "meta": 319,
       "no_go": 420,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14294,
-    "leaf_count": 1288,
-    "node_count": 3814,
+    "edge_count": 14295,
+    "leaf_count": 1289,
+    "node_count": 3815,
     "root_count": 1103,
-    "runners_with_path": 3437
+    "runners_with_path": 3438
   }
 }

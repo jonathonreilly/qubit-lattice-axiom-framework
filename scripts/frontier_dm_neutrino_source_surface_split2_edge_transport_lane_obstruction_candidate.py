@@ -31,9 +31,9 @@ Answer:
 
   the best transport column never approaches that preferred small-leakage lane:
 
-      max eta_best / eta_obs <= 0.847299300834,
-      min ||sort(P_best) - Q_pref||_2 >= 0.293939334980,
-      min |p_2 - p_1|           >= 0.057100889715,
+      max eta_best / eta_obs <= 0.847299300833,
+      min ||sort(P_best) - Q_pref||_2 >= 0.293939327908,
+      min |p_2 - p_1|           >= 0.057100889714,
       max p_3                   <= 0.691413921653.
 
   So the broad split-2 low-slack undercut does not by itself realize the
@@ -43,7 +43,7 @@ Answer:
 
 Boundary:
   This is still a tested-edge obstruction candidate, not interval-certified
-  exact-carrier closure.
+  exact-carrier certificate.
 """
 
 from __future__ import annotations
@@ -95,36 +95,36 @@ EXPECTED_PREF_COLUMN = np.array(
 
 EXPECTED_EDGE_SAMPLES = {
     0.0: {
-        "delta": 0.9970498933945160,
-        "q_plus": 0.6359432684609361,
-        "repair": 1.5004424916582053,
-        "eta": 0.8472993008336142,
+        "delta": 0.9970498933912111,
+        "q_plus": 0.6359432684642410,
+        "repair": 1.5004424916582055,
+        "eta": 0.8472993008326888,
         "winner": 2,
-        "column": np.array([0.02638337302875077, 0.4296679157412071, 0.5439487112300421], dtype=float),
+        "column": np.array([0.026383373028505124, 0.42966791574675617, 0.543948711224739], dtype=float),
     },
     0.1: {
-        "delta": 1.0328954845907592,
-        "q_plus": 0.7000976772646929,
-        "repair": 1.5411842223412606,
-        "eta": 0.7949431967197641,
+        "delta": 1.0328954999423268,
+        "q_plus": 0.7000976619131253,
+        "repair": 1.5411842223412608,
+        "eta": 0.7949432044669021,
         "winner": 2,
-        "column": np.array([0.017335713125881176, 0.43987296830296285, 0.5427913185711563], dtype=float),
+        "column": np.array([0.017335713910079553, 0.43987294440341873, 0.5427913416865014], dtype=float),
     },
     EXPECTED_ROOT: {
-        "delta": 1.0642229611259355,
-        "q_plus": 0.7638119385121666,
-        "repair": 1.5868747147296784,
-        "eta": 0.7714607550678538,
+        "delta": 1.0642229611259468,
+        "q_plus": 0.7638119385121552,
+        "repair": 1.5868747147296782,
+        "eta": 0.7714607550678584,
         "winner": 1,
-        "column": np.array([0.12281349396718477, 0.18577258437947614, 0.691413921653339], dtype=float),
+        "column": np.array([0.12281349396717932, 0.18577258437947677, 0.6914139216533446], dtype=float),
     },
 }
 
-EXPECTED_MAX_EDGE_ETA = 0.8472993008336142
-EXPECTED_ETA_GAP = 0.20492101221809877
-EXPECTED_MIN_COLUMN_DIST = 0.29393933497993874
-EXPECTED_MIN_LEAKAGE_ASYM = 0.05710088971483221
-EXPECTED_MAX_LARGEST_ENTRY = 0.691413921653339
+EXPECTED_MAX_EDGE_ETA = 0.8472993008326888
+EXPECTED_ETA_GAP = 0.20492101221902348
+EXPECTED_MIN_COLUMN_DIST = 0.2939393279077051
+EXPECTED_MIN_LEAKAGE_ASYM = 0.057100889713850994
+EXPECTED_MAX_LARGEST_ENTRY = 0.6914139216533446
 
 
 def check(name: str, condition: bool, detail: str = "") -> bool:
@@ -294,11 +294,11 @@ def part4_the_note_records_the_transport_lane_obstruction_honestly() -> None:
     )
     check(
         "The note records the tested dangerous-edge transport separation numbers",
-        "0.847299300834" in note and "0.293939334980" in note and "0.057100889715" in note,
+        "0.847299300833" in note and "0.293939327908" in note and "0.057100889714" in note,
     )
     check(
-        "The note keeps the boundary honest: this is still not exact-carrier closure",
-        "not interval-certified" in note and "not flagship closure" in note,
+        "The note keeps the boundary honest: this is still not an exact-carrier certificate",
+        "not an interval-certified" in note and "not a flagship result" in note,
     )
 
 
@@ -322,7 +322,7 @@ def main() -> int:
     print("  Sharp carrier-side transport read on the broad split-2 edge:")
     print("    - the dangerous edge is real on the broad bundle, but it does not")
     print("      realize the preferred recovered transport lane")
-    print("    - its best eta/eta_obs stays below 0.847299300834, more than 0.20")
+    print("    - its best eta/eta_obs stays below 0.847299300833, more than 0.20")
     print("      below the preferred recovered 1.052220313052")
     print("    - its winning packet columns stay packet-level separated from the")
     print("      preferred small-leakage quotient")

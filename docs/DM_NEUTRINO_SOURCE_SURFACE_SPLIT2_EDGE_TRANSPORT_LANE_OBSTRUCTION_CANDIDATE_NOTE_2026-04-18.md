@@ -72,7 +72,7 @@ By contrast, on the tested dangerous split-2 edge:
   \[
   \delta_{\mathrm{edge}} = 0.997049893395,\quad
   q_+ = 0.635943268461,\quad
-  \eta_{\mathrm{best}}/\eta_{\mathrm{obs}} = 0.847299300834,
+  \eta_{\mathrm{best}}/\eta_{\mathrm{obs}} = 0.847299300833,
   \]
   with winning column
   \[
@@ -82,14 +82,14 @@ By contrast, on the tested dangerous split-2 edge:
 
 - at \(s=0.1\),
   \[
-  \delta_{\mathrm{edge}} = 1.032895484591,\quad
-  q_+ = 0.700097677265,\quad
-  \eta_{\mathrm{best}}/\eta_{\mathrm{obs}} = 0.794943196720,
+  \delta_{\mathrm{edge}} = 1.032895499942,\quad
+  q_+ = 0.700097661913,\quad
+  \eta_{\mathrm{best}}/\eta_{\mathrm{obs}} = 0.794943204467,
   \]
   with winning column
   \[
   \operatorname{sort}(P_{\mathrm{best}})
-  = (0.017335713126,\;0.439872968303,\;0.542791318571);
+  = (0.017335713910,\;0.439872944403,\;0.542791341687);
   \]
 
 - at the edge threshold \(s=s_*^{\mathrm{edge}}\),
@@ -110,23 +110,23 @@ best winning transport column stays decisively off the preferred lane:
 - maximum winning transport value:
   \[
   \max \eta_{\mathrm{best}}/\eta_{\mathrm{obs}}
-  = 0.847299300834,
+  = 0.847299300833,
   \]
   so the whole tested edge stays at least
   \[
-  1.052220313052 - 0.847299300834 = 0.204921012218
+  1.052220313052 - 0.847299300833 = 0.204921012219
   \]
   below the preferred recovered lane;
 
 - minimum packet distance to the preferred winning quotient:
   \[
   \min \left\| \operatorname{sort}(P_{\mathrm{best}}) - Q_{\mathrm{pref}} \right\|_2
-  = 0.293939334980;
+  = 0.293939327908;
   \]
 
 - minimum leakage asymmetry:
   \[
-  \min |p_2 - p_1| = 0.057100889715,
+  \min |p_2 - p_1| = 0.057100889714,
   \]
   which is far from the preferred near-symmetric small-leakage pair
   \((0.035644251472,0.035644362528)\);
@@ -139,7 +139,7 @@ best winning transport column stays decisively off the preferred lane:
 
 ## Interpretation
 
-This does **not** close the carrier problem. It does sharpen it.
+This does **not** settle the carrier problem. It does sharpen it.
 
 The broad split-2 low-slack undercut is a real broad-bundle phenomenon, but on
 the tested edge interval it is **transport-incompatible** with the preferred
@@ -157,4 +157,4 @@ That is a much smaller target than generic broad-window global dominance.
 ## Boundary
 
 This is still a numerical candidate on the tested broad split-2 edge. It is
-not interval-certified exact-carrier closure, and it is not flagship closure.
+not an interval-certified exact-carrier certificate, and it is not a flagship result.

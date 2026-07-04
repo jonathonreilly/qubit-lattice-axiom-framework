@@ -7,6 +7,8 @@ closure on the abelianized carrier.
 
 Branch: `physics-loop/tier-a-elimination-block12-theta-g1-20260704`
 Base: `physics-loop/tier-a-elimination-block11-theta-g3-20260704`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4937
+Source commit: `d57a21650`
 
 ## Expected Claim Movement
 
@@ -37,5 +39,5 @@ load-bearing.
 
 ## Next Exact Action
 
-Commit, push, and open a stacked PR over block 11. The next science action is
-a constraint-level `dn = 0` search or a dynamical defect-suppression search.
+Monitor PR #4937. The next science action is a constraint-level `dn = 0`
+search or a dynamical defect-suppression search.

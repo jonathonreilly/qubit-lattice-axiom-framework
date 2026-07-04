@@ -8,6 +8,13 @@ that every worker builds against one picture. Where it states results, it cites
 the note that owns them; where it states targets, it says so.
 **Status authority:** none. Independent audit lane and owner channels are
 untouched.
+**Premise weight:** none — the policy log's retired-reading-notes formula
+applies to this entire memo: no premise or interpretive weight. Per the
+Qualification, nothing here is usable as a premise. Every load-bearing item
+below either points at its owning channel (policy entry, bounded note, PR,
+registry) or is marked OPEN or CANDIDATE. Worker specs may cite this memo for
+orientation and scope discipline only; any premise in worker output must cite
+the owning channel directly, never this memo.
 
 ## 1. The criterion
 
@@ -33,9 +40,15 @@ This criterion is not new; it is how the framework has already ruled:
 - Relative phase across reconverging paths influences frequencies: real,
   exactly to that extent.
 
-Worker guidance: proposals that introduce pre-record structure with no record
-influence are out of scope by this criterion. Proposals should say, in one
-sentence, which record statistics their structure influences.
+CANDIDATE STATUS: as stated here, the criterion carries no premise weight.
+Its candidate channels are (a) a bounded derivation note from the landed
+readout sentences — "Only records are readable." and "A readout value is
+determined by record content alone." appear sufficient to force it at readout
+grade — or (b) promotion to an axiom-clarity sentence via the blind-panel
+pipeline. Until one of those lands, worker use is scope discipline only:
+proposals that introduce pre-record structure should say, in one sentence,
+which record statistics their structure influences. That burden is spec
+hygiene, not a citable premise.
 
 ## 2. The supply-indexing correction
 
@@ -43,10 +56,16 @@ The no-privilege sentences ("No site is privileged... supplied lattice
 structure alone", "No possibility is privileged... supplied algebraic structure
 alone") are indexed to the current supply. They are not standing prohibitions
 on supplying more. Registration enlarges the supplied structure, and the
-sentences remain true relative to the enlarged supply. Reading them as absolute
-bars was an error, corrected 2026-07-04. The channels are unchanged:
-derivation, bridge, explicit admission, or approved primitive registration
-(Qualification), with axiom changes owner-approved with physical cause.
+sentences remain true relative to the enlarged supply. The absolute-bar
+framing briefly used on 2026-07-04 is withdrawn in this memo's prose.
+CANDIDATE STATUS: the supply-indexed reading is textual — "supplied ... alone"
+appears in both sentences — but it is not a ruling. Per the no-reading-rulings
+rule it becomes load-bearing only through a derivation note or promotion to an
+axiom-clarity sentence via the blind-panel pipeline. Until then, derivations
+must quote the axiom sentences themselves and must not cite this reading. The
+channels are unchanged: derivation, bridge, explicit admission, or approved
+primitive registration (Qualification), with axiom changes owner-approved with
+physical cause.
 
 ## 3. Formation: what the 2026-07-04 append settles
 

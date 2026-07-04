@@ -1,19 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_op_uniqueness_source_domain_support.py
-runner_sha256: bb2327a3686bfe9bcd0a7e66aba0a33d127b2bdcfeed26bb41387cf1bc03f226
+runner_sha256: 82760f1f7b694607b8465b87f1ed516ac4bee54d8798ce462e07ddf1797da83f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.46
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 
 ========================================================================================
-§1. AUDIT: OP retains 'unique additive CPT-even scalar generator' clause
+§1. AUDIT: OP fixes the additive CPT-even scalar generator family
 ========================================================================================
-[PASS] 1.1 AUDIT (disk): OP file exists and contains 'unique additive CPT-even' clause
+[PASS] 1.1 AUDIT (disk): OP file exists and fixes the additive CPT-even generator family
        file: docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md
-       size: 8747 bytes (raw)
-       'unique additive CPT-even' present (whitespace-normalized): True
+       size: 50782 bytes (raw)
+       'fixes the additive generator family' + 'CPT-even' present (whitespace-normalized): True
 [PASS] 1.2 AUDIT (disk): OP file contains 'local projectors P_x' (Theorem 2 source domain)
        'local projectors P_x' present: True
 
@@ -32,7 +32,7 @@ status: ok
 ========================================================================================
 [PASS] 3.1 AUDIT (disk): CRIT file exists and contains 'Q = 2/3', 'z = 0', 'K = 0'
        file: docs/KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25.md
-       size: 4906 bytes
+       size: 5911 bytes
        'Q = 2/3': True, 'z = 0': True, 'K = 0': True
 
 ========================================================================================
@@ -40,7 +40,7 @@ status: ok
 ========================================================================================
 [PASS] 4.1 AUDIT (disk): CD file exists and identifies unique trace-preserving onsite descent
        file: docs/KOIDE_Q_SOURCE_DOMAIN_CANONICAL_DESCENT_THEOREM_NOTE_2026-04-25.md
-       size: 10611 bytes
+       size: 13999 bytes
        'unique', 'trace-preserving', 'onsite' all present: True
 [PASS] 4.2 AUDIT (disk): CD retains the E_loc formula
        E_loc formula present: True
@@ -100,7 +100,7 @@ exist on disk with their cited content.
 Summary
 ========================================================================================
 PASSED: 14/14
-  [PASS] 1.1 AUDIT (disk): OP file exists and contains 'unique additive CPT-even' clause
+  [PASS] 1.1 AUDIT (disk): OP file exists and fixes the additive CPT-even generator family
   [PASS] 1.2 AUDIT (disk): OP file contains 'local projectors P_x' (Theorem 2 source domain)
   [PASS] 2.1 AUDIT (disk): ONSITE file exists and identifies Z as not onsite
   [PASS] 2.2 AUDIT (disk): ONSITE retains 'onsite local functions ∩ End_C3 = span{I}'

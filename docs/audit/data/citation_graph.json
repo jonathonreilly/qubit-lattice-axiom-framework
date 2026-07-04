@@ -56762,6 +56762,10 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "tensor_support_center_excess_law_note"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
     },
     {
@@ -56771,10 +56775,6 @@
     {
       "from": "repo.front_door_status",
       "to": "cl3_taste_generation_theorem"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -105833,7 +105833,6 @@
       ],
       "helper_runner_paths": [
         "scripts/_frontier_loader.py",
-        "scripts/frontier_one_parameter_reduced_shell_law.py",
         "scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py",
         "scripts/frontier_same_source_metric_ansatz_scan.py",
         "scripts/frontier_tensor_support_center_excess_law.py"
@@ -109417,13 +109416,13 @@
         "hypercharge_identification_note",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+        "tensor_support_center_excess_law_note",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "ew_current_matching_rule_open_gate_note_2026-05-03",
-        "cl3_taste_generation_theorem",
-        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
+        "cl3_taste_generation_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8552a5a9c98d7a70bc8ccf00f453b0ded8ee09f9235d55804e7a06ceb3a6d7cf",
+      "note_hash": "8e10fd6ed7a2e887f7be895331b41daa5b6146e0a399bbbc43c63f515dc83c24",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

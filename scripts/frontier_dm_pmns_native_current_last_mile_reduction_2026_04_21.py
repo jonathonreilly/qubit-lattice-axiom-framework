@@ -103,7 +103,8 @@ def part2_the_remaining_pmns_target_is_exactly_two_real() -> None:
 
     check(
         "The exact source-manifold theorem records a local 2-real PMNS source manifold",
-        "local `2`-real source manifold" in manifold_note or "local 2-real source manifold" in manifold_note,
+        "local `2`-real regular source manifold" in manifold_note
+        or "locally a `2`-real source manifold" in manifold_note,
     )
     check(
         "The native current boundary note records one complex current J_chi as the exact missing PMNS source object",

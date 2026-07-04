@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/observable_principle_p1_nu_license_check_2026_06_10.py
-runner_sha256: 949d4cae451095a6ca7e492b71259bf0d612821de94a08b04a0668ba56525691
+runner_sha256: 26815b0423e570004c18a9902d9ff404df0542feb753e6f62b52e4c67cfe7247
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.90
+elapsed_sec: 0.69
 status: ok
 ----- stdout -----
 == T1: the family, the selected member, and the clause split ==
@@ -47,15 +47,16 @@ status: ok
 == T8: falsification leg — granting (BR) completes the selection exactly ==
   [PASS][A] with (BR) granted, the pass set on the family is exactly {p = 0}: the missing license is the single load-bearing gap (the selection theorem itself is intact)
 == T9: ledger scan — zero retained-grade suppliers (extends barrier-note T10) ==
-  [PASS][B] extended ledger scan: ZERO retained-grade rows match curvature/barrier/response-bound/resolution vocabulary — neither (NU) nor the reduced (BR) is licensed  -- matches=[]
-  [PASS][B] cited rows present at the cited effective statuses (one-hop, presence check)
+  [info][B] live retained-grade ledger scan matches (audit-lane-owned; not gated): []
+  [PASS][B] cited rows present in the audit ledger (presence only, one-hop)  -- missing=[]
+  [info][B] live effective statuses (audit-lane-owned; not gated): {'observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31': 'retained_no_go', 'observable_principle_record_scalar_map_no_go_note_2026-06-05': 'unaudited', 'post_record_count_probability_firewall_2026-06-06': 'retained_no_go', 'sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06': 'retained', 'reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10': 'retained', 'real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08': 'retained_bounded'}
   [PASS][B] Fisher row and det-positivity lemma are visible candidate rows (the two strongest candidate suppliers were assessed at full strength, not strawmanned)
   [PASS][B] target barrier-selector note present on disk and declares its (NU) premise unlicensed
 == T10: note honest-scope, firewall-compliance, and boundary strings ==
   [PASS][B] note honest-scope and firewall-compliance strings present  -- missing=[]
   [PASS][B] forbidden promotion strings absent  -- found=[]
 
-TOTAL: PASS=38 FAIL=0
+TOTAL: PASS=37 FAIL=0
 
 ----- stderr -----
 

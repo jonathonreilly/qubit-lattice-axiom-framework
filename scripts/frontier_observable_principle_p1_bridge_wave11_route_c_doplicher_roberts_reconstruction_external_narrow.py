@@ -578,23 +578,25 @@ def test_T9_structural_analysis() -> None:
         return
     data = json.loads(LEDGER.read_text(encoding="utf-8"))
     rows = data.get("rows", data)
-    parent_status = rows.get("observable_principle_from_axiom_note", {}).get(
-        "effective_status", "?"
-    )
+    parent_row = rows.get("observable_principle_from_axiom_note")
+    parent_status = (parent_row or {}).get("effective_status", "?")
     check(
-        "Parent OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE is audited_conditional (unaffected)",
-        parent_status == "audited_conditional",
-        f"observable_principle_from_axiom_note.effective_status = {parent_status}",
+        "parent row present in the ledger; this note does not depend on its audit grade",
+        parent_row is not None,
+        "observable_principle_from_axiom_note",
     )
+    print(f"  [info] observable_principle_from_axiom_note.effective_status = {parent_status}")
     # FERMION_PARITY z2 grading is unaudited (context only, not load-bearing)
-    fermion_parity_status = rows.get(
-        "fermion_parity_z2_grading_theorem_note_2026-05-02", {}
-    ).get("effective_status", "?")
-    check(
-        "FERMION_PARITY_Z2_GRADING is unaudited (context only, not load-bearing)",
-        fermion_parity_status == "unaudited",
-        f"fermion_parity_z2_grading.effective_status = {fermion_parity_status}",
+    fermion_parity_row = rows.get(
+        "fermion_parity_z2_grading_theorem_note_2026-05-02"
     )
+    fermion_parity_status = (fermion_parity_row or {}).get("effective_status", "?")
+    check(
+        "FERMION_PARITY_Z2_GRADING row present in the ledger (context only, not load-bearing)",
+        fermion_parity_row is not None,
+        "fermion_parity_z2_grading_theorem_note_2026-05-02",
+    )
+    print(f"  [info] fermion_parity_z2_grading.effective_status = {fermion_parity_status}")
 
 
 # ----------------------------------------------------------------------

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_lt4_physical_selection_proof_walk.py
-runner_sha256: 49dc4b853998686bed1483cc7635513748217cfb0f1d27ef0e311b3e3e23b9b6
+runner_sha256: 2e610192a9ad50f005668a02c664fecc1a5f39c28e56425577dcf6d17941a3f2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 Hierarchy L_t = 4 physical-selection proof-walk
@@ -56,17 +56,17 @@ PART 5: sin^2 is non-uniform at L_t = 6
 ==============================================================================
 PART 6: Admission-wall catalogue (live ledger check)
 ==============================================================================
-  [OK] staggered-Dirac realization gate
+  [info] staggered-Dirac realization gate
       row_id=staggered_dirac_realization_gate_note_2026-05-03
-      expected=open_gate actual=open_gate
-  [OK] scalar-additivity P1 admission
+      former expected=open_gate live=unaudited
+  [info] scalar-additivity P1 admission
       row_id=observable_principle_from_axiom_note
-      expected=audited_conditional actual=audited_conditional
-  [OK] CPT-even phase blindness
+      former expected=audited_conditional live=retained_bounded
+  [info] CPT-even phase blindness
       row_id=cpt_exact_note
-      expected=unaudited actual=unaudited
-  [PASS] T6: all three admission walls match the live-ledger effective_status
-         If any mismatch is reported, update the proof-walk note or the runner so the conditional shape matches the live ledger.
+      former expected=unaudited live=retained
+  [PASS] T6: all three admission wall rows are present in the audit ledger (presence only)
+         missing=[]; live_effective_status={'staggered_dirac_realization_gate_note_2026-05-03': 'unaudited', 'observable_principle_from_axiom_note': 'retained_bounded', 'cpt_exact_note': 'retained'}
 
 ==============================================================================
 PART 7: Forbidden-imports self-check

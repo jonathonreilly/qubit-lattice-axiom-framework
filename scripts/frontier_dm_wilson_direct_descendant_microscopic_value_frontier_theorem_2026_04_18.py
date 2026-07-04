@@ -177,7 +177,7 @@ def main() -> int:
     check(
         "The charged source-response note already reduces the remaining object further to D_- and its Schur pushforward",
         "`dW_e^H` is the exact charged-sector Schur pushforward" in charged_reduction
-        and "evaluate the microscopic charge-`-1` operator `D_-` and its Schur pushforward" in charged_reduction,
+        and "equivalently evaluate `D_-` and its Schur pushforward" in charged_reduction,
     )
     check(
         "The projected-source note already says once dW_e^H is known the downstream selected transport column is algorithmic",

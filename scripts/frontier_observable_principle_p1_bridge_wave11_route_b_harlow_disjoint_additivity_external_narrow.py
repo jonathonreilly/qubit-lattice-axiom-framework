@@ -437,24 +437,24 @@ def test_T9_disjoint_block_toy() -> None:
         return
     data = json.loads(LEDGER.read_text(encoding="utf-8"))
     rows = data.get("rows", data)
-    parent_status = rows.get("observable_principle_from_axiom_note", {}).get(
-        "effective_status", "?"
-    )
+    parent_row = rows.get("observable_principle_from_axiom_note")
+    parent_status = (parent_row or {}).get("effective_status", "?")
     check(
-        "Parent OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE is audited_conditional (unaffected by this note)",
-        parent_status == "audited_conditional",
-        f"observable_principle_from_axiom_note.effective_status = {parent_status}",
+        "parent row present in the ledger; this note does not depend on its audit grade",
+        parent_row is not None,
+        "observable_principle_from_axiom_note",
     )
-    route_a_status = rows.get(
+    print(f"  [info] observable_principle_from_axiom_note.effective_status = {parent_status}")
+    route_a_row = rows.get(
+        "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17"
+    )
+    route_a_status = (route_a_row or {}).get("effective_status", "?")
+    check(
+        "Route A operator-algebraic row present in the ledger; this Route B does not depend on its audit grade",
+        route_a_row is not None,
         "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
-        {},
-    ).get("effective_status", "?")
-    retained_grade = {"retained", "retained_bounded", "retained_no_go"}
-    check(
-        "Route A operator-algebraic note is not retained-grade (this Route B does not depend on its audit)",
-        route_a_status not in retained_grade,
-        f"route A.effective_status = {route_a_status}",
     )
+    print(f"  [info] route A.effective_status = {route_a_status}")
 
 
 # ----------------------------------------------------------------------

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_yt_microscopic_schur_class_admissibility_criticality_bump_hygiene_2026_06_04.py
-runner_sha256: aaaa61539717207341d4831db713c7a3268eff165acfdcf681588acf3d598374
+runner_sha256: 1ba493b3cf51946c2b98837dfc583bed496a98a7f995ea51faf818feb7e69d6f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.02
+elapsed_sec: 4.09
 status: ok
 ----- stdout -----
 ========================================================================
@@ -16,26 +16,27 @@ Scope: meta evidence only; no theorem claim and no verdict change.
 PASS parent_note_exists
 PASS parent_runner_exists
 PASS ledger_exists
+PASS parent_ledger_row_exists
 PASS parent_row_claim_type_expected
 PASS parent_runner_path_expected
 PASS parent_current_criticality_expected
-PASS parent_current_load_expected :: load=6.615
-PASS parent_hash_matches_expected
-PASS parent_hash_matches_ledger
+PASS parent_current_load_printed_informationally :: live_load=7.144 landing_expected=6.615; audit-lane-owned field; not gated
+PASS parent_hash_expected_printed_informationally :: on_disk=b35c7d4f431d3ecabc3098a4266bf7c9aa901cf2be1e3c989b62a1519fc21956 landing_expected=b35c7d4f431d3ecabc3098a4266bf7c9aa901cf2be1e3c989b62a1519fc21956; landing-time snapshot recorded in companion note; not gated
+PASS parent_hash_matches_ledger_printed_informationally :: on_disk=b35c7d4f431d3ecabc3098a4266bf7c9aa901cf2be1e3c989b62a1519fc21956 live_ledger='b35c7d4f431d3ecabc3098a4266bf7c9aa901cf2be1e3c989b62a1519fc21956'; audit-lane-owned field; not gated
 PASS parent_deps_exact :: count=2
 PASS parent_helper_runners_exact :: count=2
 PASS parent_helper_modules_match_deps
 PASS parent_runner_imports_expected_helpers :: imports=['frontier_yt_exact_coarse_grained_bridge_operator', 'frontier_yt_exact_schur_normal_form_uniqueness']
 PASS parent_runner_imports_match_helper_modules
 PASS upstream_row_present_yt_exact_coarse_grained_bridge_operator_note
-PASS upstream_row_unresolved_yt_exact_coarse_grained_bridge_operator_note
+PASS upstream_row_status_printed_informationally_yt_exact_coarse_grained_bridge_operator_note :: live_effective_status='unaudited' landing_expected='unaudited'; audit-lane-owned field; not gated
 PASS upstream_row_present_yt_exact_schur_normal_form_uniqueness_note
-PASS upstream_row_unresolved_yt_exact_schur_normal_form_uniqueness_note
-PASS all_upstream_rows_unresolved
-PASS prior_positive_verdict_snapshot_present
-PASS prior_snapshot_criticality_matches_current
-PASS prior_snapshot_load_matches_expected :: snapshot_load=5.587
-PASS prior_invalidation_was_priority_bump
+PASS upstream_row_status_printed_informationally_yt_exact_schur_normal_form_uniqueness_note :: live_effective_status='unaudited' landing_expected='unaudited'; audit-lane-owned field; not gated
+PASS all_upstream_rows_present
+PASS prior_audit_history_printed_informationally :: len=2 landing_verdict='audited_clean' landing_invalidation='criticality_increased:medium->critical'; prior-audit history is not gated
+PASS prior_snapshot_criticality_printed_informationally :: latest_snapshot_criticality='critical' live_criticality='medium'; prior-audit history is not gated
+PASS prior_snapshot_load_printed_informationally :: latest_snapshot_load=8.555 landing_expected=5.587; prior-audit history is not gated
+PASS prior_invalidation_printed_informationally :: latest_invalidation=None landing_expected='criticality_increased:medium->critical'; prior-audit history is not gated
 PASS parent_runner_exit_zero :: returncode=0
 PASS parent_runner_tally_present
 PASS parent_runner_pass_count_five :: pass_count=5
@@ -51,7 +52,7 @@ PASS companion_disclaims_verdict_change
 PASS companion_keeps_dependencies_unresolved
 PASS companion_disclaims_endpoint_closure
 ========================================================================
-SUMMARY: PASS=37 FAIL=0
+SUMMARY: PASS=38 FAIL=0
 ========================================================================
 
 ----- stderr -----

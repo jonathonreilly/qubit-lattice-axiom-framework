@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/observable_principle_p1_rr_consolidation_check_2026_06_11.py
-runner_sha256: cef3321cb19a1cd8fd4e7a9f3f705cea17e751cd55d02c49647d3c83687526c1
+runner_sha256: 1594d918d257f69ac3595357b2c0303f5f19a160d815d8bd6b3cddc23105f1fa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.57
+elapsed_sec: 0.66
 status: ok
 ----- stdout -----
 == T1: the consolidation equivalence — exhaustive finite-model verification ==
@@ -45,10 +45,12 @@ status: ok
   [PASS][B] count-probability firewall: 'They cannot derive the model.' present verbatim; the note constructs no probability law (string present) and every sensitivity in this runner is an operator norm — counts appear only as exact witness arithmetic
   [PASS][B] record-formation wall: the retained_no_go's claim ('does **not** hold unconditionally') present verbatim; the note states RR conditions on the realization and does not force records to form (the class may be empty)
   [PASS][B] canonical-proposal no-dynamics guardrail: 'it disclaims the decoherence *process* that produces it' present verbatim in the proposal note; RR is a declared realization clause, not a derivation forcing record formation on any partition
-  [PASS][B] cited rows present in the audit ledger at the cited effective statuses (8 rows; unbounded Record audited_conditional); the CAP-K source note is on disk with its four (REG) clause labels, '(CAP-real) remains declared', and the association sentence quoted in this note; the BR-license and canonical-proposal notes are consumed as unaudited sources (presence + wording only, no grade asserted)  -- mismatches=[]
+  [PASS][B] cited rows present in the audit ledger (presence only, 8 rows)  -- missing=[]
+  [info][B] live effective statuses (audit-lane-owned; not gated): {'microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09': 'unaudited', 'record_function_finite_sector_algebra_2026-06-05': 'retained', 'record_unbounded_finite_additivity_schema_2026-06-06': 'unaudited', 'post_record_clock_rate_interface_2026-06-06': 'retained_no_go', 'record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06': 'unaudited', 'observable_principle_record_scalar_map_no_go_note_2026-06-05': 'unaudited', 'post_record_count_probability_firewall_2026-06-06': 'retained_no_go', 'single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10': 'retained'}
+  [PASS][B] CAP-K source note contains the REG clauses, CAP-real declaration, and association sentence quoted here
   [PASS][B] note honest-scope and firewall-compliance strings present; the consolidation is presented as content-preserving bookkeeping over declared clauses (an implication-lattice theorem), not as a reduction of assumed content  -- missing=[]
 
-TOTAL: PASS=30 FAIL=0
+TOTAL: PASS=31 FAIL=0
 
 ----- stderr -----
 

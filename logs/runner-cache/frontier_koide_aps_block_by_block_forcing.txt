@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_aps_block_by_block_forcing.py
-runner_sha256: 073fc0ac6bd58fa40b8f9fb2d220dc7e56211fbfdd47b95b2b6af5e432677659
+runner_sha256: 0b931160c6097a41d4015927d3ff5370256b9517a063629721ff12aef349d757
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.97
+elapsed_sec: 1.26
 status: ok
 ----- stdout -----
 ========================================================================
@@ -13,8 +13,12 @@ C3 LOCAL-DENSITY 2/9 BOUNDED SUPPORT MANIFEST
   [PASS] 0a. note carries the 2026-06-07 local-density retargeting section: retargeting section present
   [PASS] 0b. direct status is bounded local-density manifest: source status names the bounded direct target
   [PASS] 0c. global PL/ABSS route is explicitly not load-bearing: global route excluded from direct proof load
-  [PASS] 0d. fixed-locus bridge is ledger retained_bounded: effective_status=retained_bounded
-  [PASS] 0e. fixed-locus bridge scope names C3 weights and local density only: fixed-locus row is the bounded A/B supplier, not the global bridge
+  [PASS] 0d. fixed-locus bridge row exists in the audit ledger: effective_status=retained_bounded
+  [info] fixed-locus live claim_scope='Parts A/B only: the cyclic axis permutation forces a one-dimensional fixed locus, transverse C3 weights (1,2)/(2,1), and exact local Lefschetz density 2/9; ABSS/global PL identification and physical readout are excluded.' effective_status='retained_bounded' (audit-lane-owned; not gated)
+  [PASS] 0e0. fixed-locus dependency note exists: docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  [PASS] 0e1. fixed-locus note states premise verbatim: len=145
+  [PASS] 0e2. fixed-locus note states premise verbatim: len=109
+  [PASS] 0e3. fixed-locus note states premise verbatim: len=164
   [PASS] 0f. note names global topology and physical readout as out of scope: remaining blockers remain outside this row
 === (a) C_3[111] rotation structure ===
   [PASS] a1. C_3[111] via Rodrigues = cyclic permutation (e_1 -> e_2 -> e_3 -> e_1): Rodrigues at 2pi/3 about (1,1,1)/sqrt(3) matches permutation
@@ -70,7 +74,7 @@ C3 LOCAL-DENSITY 2/9 BOUNDED SUPPORT MANIFEST
   [PASS] i2. Among p in {2..7}, only p=3 with weights (1, 2) gives eta = 2/9: matches = [(3, 2/9)]
   [PASS] i3. COMPOSITE: bounded C3 local-density manifest closes at 2/9: source boundary plus chain (a)->(c)->(d)->(e)->(f)->(g)->(i) closes local density without global PL/ABSS
 
-Total: 35 PASS, 0 FAIL
+Total: 38 PASS, 0 FAIL
 
 Verdict:
   Given the ledger-retained-bounded fixed-locus bridge, the direct

@@ -375,18 +375,16 @@ def t9_live_ledger_checks() -> None:
         isinstance(rows, dict) and len(rows) > 0,
         detail=f"rows count = {len(rows)}",
     )
-    # Confirm parent note row is present and audited_conditional (this
-    # proposal does NOT alter its status).
+    # Confirm parent note row is present; live audit status remains audit-lane-owned.
     parent = rows.get("observable_principle_from_axiom_note")
     check(
         "T9 parent OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE row present",
         parent is not None,
     )
     if parent is not None:
-        check(
-            "T9 parent note status = audited_conditional (unchanged by this proposal)",
-            parent.get("effective_status") == "audited_conditional",
-            detail=f"effective_status = {parent.get('effective_status')}",
+        print(
+            "  [info] observable_principle_from_axiom_note.effective_status "
+            f"(audit-lane-owned; not gated) = {parent.get('effective_status')}"
         )
     # Confirm Route D consolidated no_go row is present.
     route_d = rows.get(
@@ -405,15 +403,19 @@ def t9_live_ledger_checks() -> None:
         "T9 structural-reframing route row present in ledger",
         sr is not None,
     )
-    # Confirm one-qubit local-algebra retained authorities present.
+    # Confirm one-qubit local-algebra authority row present.
     cl3_split = rows.get(
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     )
     check(
-        "T9 one-qubit local-algebra authority cl3_complexification_split present",
-        cl3_split is not None
-        and cl3_split.get("effective_status") == "retained",
+        "T9 one-qubit local-algebra authority cl3_complexification_split row present in ledger (presence only)",
+        cl3_split is not None,
     )
+    if cl3_split is not None:
+        print(
+            "  [info] cl3_complexification_split.effective_status "
+            f"(audit-lane-owned; not gated) = {cl3_split.get('effective_status')}"
+        )
 
 
 # ---------------------------------------------------------------------

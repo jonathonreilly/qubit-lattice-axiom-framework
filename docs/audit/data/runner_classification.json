@@ -18136,7 +18136,7 @@
       "assert_count": 0,
       "counts": {
         "A": 60,
-        "B": 2,
+        "B": 3,
         "C": 0,
         "D": 0
       },
@@ -24570,7 +24570,7 @@
         "A": 10,
         "B": 5,
         "C": 1,
-        "D": 1
+        "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "A",
@@ -35644,7 +35644,7 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 1,
+        "B": 2,
         "C": 0,
         "D": 0
       },
@@ -39784,8 +39784,8 @@
       "assert_count": 1,
       "counts": {
         "A": 3,
-        "B": 3,
-        "C": 0,
+        "B": 1,
+        "C": 2,
         "D": 2
       },
       "decoration_candidate": false,
@@ -39904,8 +39904,8 @@
       "assert_count": 1,
       "counts": {
         "A": 12,
-        "B": 2,
-        "C": 0,
+        "B": 1,
+        "C": 1,
         "D": 2
       },
       "decoration_candidate": false,
@@ -39916,8 +39916,8 @@
       "assert_count": 1,
       "counts": {
         "A": 6,
-        "B": 2,
-        "C": 0,
+        "B": 1,
+        "C": 1,
         "D": 2
       },
       "decoration_candidate": false,
@@ -40036,8 +40036,8 @@
       "assert_count": 1,
       "counts": {
         "A": 7,
-        "B": 3,
-        "C": 0,
+        "B": 2,
+        "C": 1,
         "D": 4
       },
       "decoration_candidate": false,
@@ -63433,7 +63433,7 @@
       ],
       "counts": {
         "A": 60,
-        "B": 2,
+        "B": 3,
         "C": 0,
         "D": 0
       },
@@ -67659,7 +67659,7 @@
         "A": 10,
         "B": 5,
         "C": 1,
-        "D": 1
+        "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "A",
@@ -79665,8 +79665,8 @@
       ],
       "counts": {
         "A": 3,
-        "B": 3,
-        "C": 0,
+        "B": 1,
+        "C": 2,
         "D": 2
       },
       "decoration_candidate": false,
@@ -79785,8 +79785,8 @@
       ],
       "counts": {
         "A": 12,
-        "B": 2,
-        "C": 0,
+        "B": 1,
+        "C": 1,
         "D": 2
       },
       "decoration_candidate": false,
@@ -79800,8 +79800,8 @@
       ],
       "counts": {
         "A": 6,
-        "B": 2,
-        "C": 0,
+        "B": 1,
+        "C": 1,
         "D": 2
       },
       "decoration_candidate": false,
@@ -79935,8 +79935,8 @@
       ],
       "counts": {
         "A": 7,
-        "B": 3,
-        "C": 0,
+        "B": 2,
+        "C": 1,
         "D": 4
       },
       "decoration_candidate": false,
@@ -89352,7 +89352,7 @@
       ],
       "counts": {
         "A": 0,
-        "B": 1,
+        "B": 2,
         "C": 0,
         "D": 0
       },
@@ -90716,7 +90716,7 @@
       "none": 457
     },
     "runners_classified": 3303,
-    "runners_with_C": 1730,
-    "runners_with_D": 1061
+    "runners_with_C": 1734,
+    "runners_with_D": 1060
   }
 }

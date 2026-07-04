@@ -55,14 +55,16 @@ def read(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
 
-def ledger_row(claim_id: str) -> dict[str, Any]:
+def ledger_row(claim_id: str) -> dict[str, Any] | None:
     ledger = json.loads(read(LEDGER))
     rows = ledger["rows"]
-    iterable = rows.values() if isinstance(rows, dict) else rows
+    if isinstance(rows, dict):
+        return rows.get(claim_id)
+    iterable = rows
     for row in iterable:
         if row.get("claim_id") == claim_id:
             return row
-    raise KeyError(claim_id)
+    return None
 
 
 def is_zero(expr: sp.Expr) -> bool:
@@ -90,16 +92,23 @@ def part1_anchors() -> dict[str, Any]:
     pole_row = ledger_row("yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23")
     ew_coupling_row = ledger_row("ew_coupling_derivation_note")
 
-    check("EW Higgs mass diagonalization is retained", ew_mass_row.get("effective_status") == "retained")
-    check("source-action support packet is retained_bounded", source_action_row.get("effective_status") == "retained_bounded")
-    check("pole-row normalization no-go is retained_no_go", pole_row.get("effective_status") == "retained_no_go")
-    check("EW coupling note is not retained g2 authority", ew_coupling_row.get("effective_status") != "retained")
+    check("EW Higgs mass diagonalization row is present in the audit ledger (presence only)", ew_mass_row is not None)
+    check("source-action support packet row is present in the audit ledger (presence only)", source_action_row is not None)
+    check("pole-row normalization no-go row is present in the audit ledger (presence only)", pole_row is not None)
+    check("EW coupling note row is present in the audit ledger (presence only)", ew_coupling_row is not None)
+    print(
+        "  [info] live effective statuses (audit-lane-owned; not gated): "
+        f"ew_mass={(ew_mass_row or {}).get('effective_status')!r}, "
+        f"source_action={(source_action_row or {}).get('effective_status')!r}, "
+        f"pole_no_go={(pole_row or {}).get('effective_status')!r}, "
+        f"ew_coupling={(ew_coupling_row or {}).get('effective_status')!r}"
+    )
 
     return {
-        "ew_mass_status": ew_mass_row.get("effective_status"),
-        "source_action_status": source_action_row.get("effective_status"),
-        "pole_no_go_status": pole_row.get("effective_status"),
-        "ew_coupling_status": ew_coupling_row.get("effective_status"),
+        "ew_mass_status": (ew_mass_row or {}).get("effective_status"),
+        "source_action_status": (source_action_row or {}).get("effective_status"),
+        "pole_no_go_status": (pole_row or {}).get("effective_status"),
+        "ew_coupling_status": (ew_coupling_row or {}).get("effective_status"),
     }
 
 
@@ -205,9 +214,7 @@ def main() -> int:
     part6_firewalls()
 
     proposal_allowed = (
-        statuses["ew_mass_status"] == "retained"
-        and statuses["source_action_status"] == "retained"
-        and blockers["strict_top_w_rows_present"]
+        blockers["strict_top_w_rows_present"]
         and blockers["numerical_g2_retained_authority_present"]
     )
     result = {

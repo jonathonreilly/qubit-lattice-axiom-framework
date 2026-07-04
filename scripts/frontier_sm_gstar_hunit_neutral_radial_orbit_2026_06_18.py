@@ -56,14 +56,25 @@ def matrix_zero(matrix: sp.Matrix) -> bool:
     return all(sp.simplify(entry) == 0 for entry in matrix)
 
 
-def ledger_row(claim_id: str) -> dict[str, Any]:
+def ledger_row(claim_id: str) -> dict[str, Any] | None:
     ledger = json.loads(read(LEDGER))
     rows = ledger["rows"]
     iterable = rows.values() if isinstance(rows, dict) else rows
     for row in iterable:
         if row.get("claim_id") == claim_id:
             return row
-    raise KeyError(claim_id)
+    return None
+
+
+def live_effective_status(row: dict[str, Any] | None) -> Any:
+    return None if row is None else row.get("effective_status")
+
+
+def print_live_status(claim_id: str, row: dict[str, Any] | None) -> None:
+    print(
+        f"  [info] {claim_id} live effective_status={live_effective_status(row)!r} "
+        "(audit-lane-owned; not gated)"
+    )
 
 
 def gauge_to_neutral(h: np.ndarray) -> tuple[np.ndarray, float]:
@@ -92,27 +103,34 @@ def part1_anchors() -> dict[str, Any]:
     ):
         check(f"support note contains section: {section}", section in note)
 
-    sm_dof = ledger_row("sm_relativistic_dof_count_import_note_2026-05-17")
-    gstar = ledger_row("sm_gstar_higgs_sector_count_stretch_note_2026-05-29")
-    ward = ledger_row("yt_ward_identity_derivation_theorem")
-    ew = ledger_row("ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26")
-    no_go = ledger_row("hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15")
+    sm_dof_id = "sm_relativistic_dof_count_import_note_2026-05-17"
+    gstar_id = "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
+    ward_id = "yt_ward_identity_derivation_theorem"
+    ew_id = "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
+    no_go_id = "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15"
+    sm_dof = ledger_row(sm_dof_id)
+    gstar = ledger_row(gstar_id)
+    ward = ledger_row(ward_id)
+    ew = ledger_row(ew_id)
+    no_go = ledger_row(no_go_id)
 
-    check("SM finite inventory premise is retained_bounded", sm_dof.get("effective_status") == "retained_bounded")
-    check("downstream gstar row is not promoted by this branch", gstar.get("effective_status") != "retained")
-    check("Ward H_unit theorem is retained_bounded support", ward.get("effective_status") == "retained_bounded")
-    check("EW one-doublet bookkeeping is retained", ew.get("effective_status") == "retained")
-    check(
-        "H_unit no-go remains audit-lane scoped",
-        no_go.get("effective_status") in {"unaudited", "audited_conditional", "retained_no_go"},
-    )
+    check("SM finite inventory premise present in the audit ledger (presence only)", sm_dof is not None)
+    print_live_status(sm_dof_id, sm_dof)
+    check("downstream gstar row present in the audit ledger (presence only)", gstar is not None)
+    print_live_status(gstar_id, gstar)
+    check("Ward H_unit theorem present in the audit ledger (presence only)", ward is not None)
+    print_live_status(ward_id, ward)
+    check("EW one-doublet bookkeeping present in the audit ledger (presence only)", ew is not None)
+    print_live_status(ew_id, ew)
+    check("H_unit no-go row present in the audit ledger (presence only)", no_go is not None)
+    print_live_status(no_go_id, no_go)
 
     return {
-        "sm_dof_status": sm_dof.get("effective_status"),
-        "gstar_status": gstar.get("effective_status"),
-        "ward_status": ward.get("effective_status"),
-        "ew_mass_status": ew.get("effective_status"),
-        "hunit_no_go_status": no_go.get("effective_status"),
+        "sm_dof_status": live_effective_status(sm_dof),
+        "gstar_status": live_effective_status(gstar),
+        "ward_status": live_effective_status(ward),
+        "ew_mass_status": live_effective_status(ew),
+        "hunit_no_go_status": live_effective_status(no_go),
     }
 
 

@@ -44,7 +44,7 @@ from frontier_pmns_commutant_eigenoperator_selector import (
     orbit_fourier,
     project_corner_eigenspace,
 )
-from frontier_pmns_graph_first_axis_alignment import aligned_core, selector_from_phi, simplex_grid
+from frontier_pmns_graph_first_axis_alignment import real_aligned_core, selector_from_phi, simplex_grid
 from frontier_pmns_oriented_cycle_channel_value_law import oriented_cycle_coeffs_from_block
 from frontier_pmns_oriented_cycle_reduced_channel_nonselection import (
     active_block_with_reduced_cycle,
@@ -261,19 +261,20 @@ def part4_current_bank_status() -> None:
     check("The reduced-channel no-go note says the current bank does not select a unique point",
           "unique value on the reduced channel" in reduced or "does not select a unique point" in reduced)
     # Authority check: the selector note's current text states the "only
-    # partial" position via two equivalent phrasings used across drafts.
-    # Either pair of substrings counts as the same boundary statement.
+    # partial" position as: "This is a finite-dimensional
+    # representation-theoretic identity. It does not constitute a PMNS
+    # microscopic closure theorem ...". The note is hard-wrapped, so each
+    # pinned substring stays within a single source line.
     selector_partial_phrases = (
-        ("positive native selector law", "not a full PMNS microscopic closure theorem"),
-        ("positive value law for the selector side", "not a full PMNS microscopic closure theorem"),
-        ("Yes, but only partially", "not a full PMNS microscopic closure theorem"),
+        ("finite-dimensional representation-theoretic identity",
+         "constitute a PMNS microscopic closure theorem"),
     )
     check(
         "The commutant note says the route is only partial",
         any(all(p in selector for p in pair) for pair in selector_partial_phrases),
     )
     check("The graph-first note still only derives alignment, not values",
-          "What It Does Not Yet Give" in graph and "(a,b,c,d)" in graph and "which lepton sector carries the active block" in graph)
+          "What It Does Not Yet Give" in graph and "(a,z,c,d)" in graph and "which lepton sector carries the active block" in graph)
 
     print()
     print("  So the graph-native projected commutant attack is a real selector")

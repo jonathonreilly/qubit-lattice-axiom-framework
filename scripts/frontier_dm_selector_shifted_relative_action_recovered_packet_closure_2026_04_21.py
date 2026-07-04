@@ -126,7 +126,8 @@ def main() -> int:
         "The original selector note still records the exact scalar observable-relative-action grammar",
         "exact relative bosonic action" in flat(rel_note)
         and "S_rel(H_e || H_seed)" in rel_note
-        and "exact scalar `log|det|` observable" in rel_note,
+        and "scalar observable generator" in rel_note
+        and "`W(K) = log det(I + K)`" in rel_note,
     )
     check(
         "One common positivity threshold mu_floor exists on the recovered bank",

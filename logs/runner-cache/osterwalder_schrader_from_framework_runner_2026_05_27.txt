@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/osterwalder_schrader_from_framework_runner_2026_05_27.py
-runner_sha256: d3cbdc9697d46cccba0c7a6d6e80fdbcdfc0e67e068b3044a8174502cf39f768
+runner_sha256: a91ec261b011ba5eb210c02b2f03ba7839cbd09329f41ada14d4675eca66517d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.48
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -122,7 +122,7 @@ Part 10: (Composition) Companion notes exist on the framework tree
   [PASS (A)] (Composition) (C-RP) companion exists: AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md  (docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
   [PASS (A)] (Composition) (C-SC) companion exists: AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md  (docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
   [PASS (A)] (Composition) (C-Sc) companion exists: AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md  (docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
-  [PASS (A)] (Composition) (C-Sc) Step 1 contains the spectral-expansion Wick-rotation  (presence of phrase 'spectral expansion' and 'Wick-rotation' in (C-Sc))
+  [PASS (A)] (Composition) (C-Sc) Step 1 supplies the positive-Hermitian transfer with a unique clock  (presence of '(R-RP2) supplies' + 'positive Hermitian' + 'the clock is unique (Step 1)' in (C-Sc))
 
 ----------------------------------------------------------------------------------------
 Part 11: Note + claim metadata sanity

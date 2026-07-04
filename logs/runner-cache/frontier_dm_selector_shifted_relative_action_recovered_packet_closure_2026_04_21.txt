@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_selector_shifted_relative_action_recovered_packet_closure_2026_04_21.py
-runner_sha256: d8f18a06012342399da86d5e30a47b01bddc5d242a080fdaae81bc21fc90ad48
+runner_sha256: 60aa2029aa8df64e3e2e4ab0edd88f1f30a82759c4e5b43bfadc498bac58eaf2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.76
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -34,7 +34,7 @@ PART 3: THE SAME MINIMIZER PERSISTS ON A DENSE ADMISSIBLE STRESS RANGE
 PART 4: THE SAME EXACT SCALAR LAW ACTIVATES THE POSITIVE ODD DOUBLET SIDE
 ========================================================================================
   [PASS] The earlier packet note still records that only recovered lift 0 lies on the positive side of Im(K_Z3[1,2]) = 0
-  [PASS] Exactly one recovered lift has positive shifted-imaginary doublet mixing  (Im(K12)_bank = [ 0.50598283 -1.04190431 -0.97982431 -1.25160188 -1.7936515 ])
+  [PASS] Exactly one recovered lift has positive shifted-imaginary doublet mixing  (Im(K12)_bank = [ 0.505983 -1.041904 -0.979824 -1.251602 -1.793652])
   [PASS] So the same shifted relative-action law and the odd doublet-sign packet select the same preferred lift  (same recovered lift 0)
 
 ========================================================================================

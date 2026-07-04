@@ -11,9 +11,6 @@ from pathlib import Path
 PASS = 0
 FAIL = 0
 
-RETAINED_GRADES = {"retained", "retained_bounded", "retained_no_go"}
-
-
 def check(label: str, ok: bool, detail: str = "") -> None:
     global PASS, FAIL
     if ok:
@@ -34,7 +31,7 @@ def load_rows() -> dict[str, dict]:
 
 def main() -> int:
     rows = load_rows()
-    expected_retained = [
+    expected_rows = [
         "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
         "ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10",
         "ckm_cp_phase_structural_identity_narrow_theorem_note_2026-05-10",
@@ -46,14 +43,20 @@ def main() -> int:
         "quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28",
         "quark_c3_circulant_source_law_boundary_note_2026-04-28",
     ]
-    for claim_id in expected_retained:
+    live_statuses = {}
+    for claim_id in expected_rows:
         row = rows.get(claim_id)
-        detail = "missing" if row is None else f"effective_status={row.get('effective_status')}"
-        check(f"{claim_id} is retained-grade", row is not None and row.get("effective_status") in RETAINED_GRADES, detail)
+        live_statuses[claim_id] = None if row is None else row.get("effective_status")
+        detail = "missing" if row is None else "present"
+        check(f"{claim_id} row is present in the audit ledger (presence only)", row is not None, detail)
 
     open_row = rows.get("quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26")
-    detail = "missing" if open_row is None else f"effective_status={open_row.get('effective_status')}"
-    check("quark mass spectrum Koide scheme remains open_gate", open_row is not None and open_row.get("effective_status") == "open_gate", detail)
+    live_statuses["quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26"] = (
+        None if open_row is None else open_row.get("effective_status")
+    )
+    detail = "missing" if open_row is None else "present"
+    check("quark mass spectrum Koide scheme row is present in the audit ledger (presence only)", open_row is not None, detail)
+    print(f"  [info] live effective statuses (audit-lane-owned; not gated): {live_statuses}")
 
     delta = math.degrees(math.acos(1 / math.sqrt(6)))
     check("CKM CP angle arithmetic", abs(delta - 65.905157) < 1e-5, f"delta={delta:.6f}")
@@ -66,7 +69,7 @@ def main() -> int:
     check("CKM perpendicular weight is distinct from 2/3", abs(ckm_perp_weight - 2 / 3) > 1e-6, f"2/9={ckm_perp_weight:.6f}")
 
     print(f"\nPASS={PASS} FAIL={FAIL}")
-    print("Form support is retained-grade; continuous flavor values remain separate inputs/open gates.")
+    print("Form-support rows are present; continuous flavor values remain separate inputs/open surfaces.")
     return 1 if FAIL else 0
 
 

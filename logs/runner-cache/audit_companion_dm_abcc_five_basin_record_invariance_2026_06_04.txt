@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_dm_abcc_five_basin_record_invariance_2026_06_04.py
-runner_sha256: bcdeda9b24090c6e05a4d323821b31d96712fc6c69cb70ecfa5159953ad4a1f6
+runner_sha256: 35d66abe1b345782598a02538a1789fb9bdd0dfa733cc8c5798717b041158faf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.01
+elapsed_sec: 0.44
 status: ok
 ----- stdout -----
 ========================================================================
@@ -15,14 +15,15 @@ Parent runner: scripts/frontier_dm_abcc_five_basin_chamber_dple_support_2026_04_
 Scope: meta evidence only; no theorem claim and no verdict change.
 PASS parent_note_exists
 PASS parent_runner_exists
+PASS parent_ledger_row_exists
 PASS parent_claim_type_expected
 PASS parent_runner_path_expected
 PASS parent_current_criticality_expected
-PASS parent_current_load_expected :: load=6.7
-PASS parent_note_hash_expected
-PASS parent_note_hash_matches_ledger
+PASS parent_current_load_printed_informationally :: live_load=7.228 landing_expected=6.7; audit-lane-owned field; not gated
+PASS parent_note_hash_expected_printed_informationally :: on_disk=7bd16c2916f904a94040e8aa44b0bca46dd9362a88e483328db679e40b1c46cd landing_expected=7bd16c2916f904a94040e8aa44b0bca46dd9362a88e483328db679e40b1c46cd; landing-time snapshot recorded in companion note; not gated
+PASS parent_note_hash_matches_ledger_printed_informationally :: on_disk=7bd16c2916f904a94040e8aa44b0bca46dd9362a88e483328db679e40b1c46cd live_ledger='7bd16c2916f904a94040e8aa44b0bca46dd9362a88e483328db679e40b1c46cd'; audit-lane-owned field; not gated
 PASS parent_deps_exact :: count=4
-PASS parent_current_row_unresolved
+PASS parent_current_row_status_printed_informationally :: live_effective_status='unaudited' landing_expected='unaudited'; audit-lane-owned field; not gated
 PASS parent_load_bearing_block_present
 PASS parent_load_bearing_contains_five_basin_phrase_0
 PASS parent_load_bearing_contains_five_basin_phrase_1
@@ -45,7 +46,7 @@ PASS companion_disclaims_verdict_change
 PASS companion_keeps_dependency_boundary
 PASS companion_marks_axioms_not_support
 ========================================================================
-SUMMARY: PASS=31 FAIL=0
+SUMMARY: PASS=32 FAIL=0
 ========================================================================
 
 ----- stderr -----

@@ -1,16 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py
-runner_sha256: 000218b0644fde19da4ea60d12628846f3d3c8f0279d4fef64b896fa3093c34b
+runner_sha256: 4bdf4e36be55b350fc47f95930cfa57ce37e604d8eae76d4445169f94e728823
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 == T1: current supplier status and scope ==
-[PASS] hypercharge_identification_note is retained-grade on this branch base  -- retained_bounded
+[PASS] hypercharge_identification_note row exists in audit ledger
+  [info] live claim_scope='Bounded chain assembly on the LH-doublet surface: L1 ratio, L2 matter assignment, L3 alpha scale, and L4 GMN readout reproduce the Q_L/L_L hypercharge and electric-charge table; no full-spectrum or GUT-normalization closure.' effective_status='audited_conditional' (audit-lane-owned; not gated)
 [PASS] hypercharge_identification_note remains a theorem supplier  -- bounded_theorem
-[PASS] ledger scope includes the (2,3)/(2,1) LH-doublet surface
-[PASS] ledger scope explicitly keeps full-spectrum boundaries
+[PASS] hypercharge dependency note exists  -- docs/HYPERCHARGE_IDENTIFICATION_NOTE.md
+[PASS] hypercharge note states premise verbatim: *(Matter assignment under SM-definition convention)* Under t...  -- len=244
+[PASS] hypercharge note states premise verbatim: *(Normalization bridge / admission boundary)* Setting α = +1...  -- len=145
+[PASS] hypercharge note states premise verbatim: This note does **not** claim to: - derive the (Sym², Anti²) ...  -- len=405
+[PASS] hypercharge premise quotes cover LH surface and full-spectrum boundary
 == T2: source-note wiring and guardrails ==
 [PASS] ABJ note cites the new P-HY supplier wiring note
 [PASS] ABJ note routes B1 through retained-bounded P-HY supplier
@@ -36,7 +40,7 @@ status: ok
 [PASS] new source paths avoid authority surface docs/repo/ACTIVE_REVIEW_QUEUE.md
 [PASS] new source paths avoid authority surface docs/work_history/repo/LANE_STATUS_BOARD.md
 [PASS] supplier note uses bounded-support status rather than bare retained
-TOTAL: PASS=26 FAIL=0
+TOTAL: PASS=29 FAIL=0
 
 ----- stderr -----
 

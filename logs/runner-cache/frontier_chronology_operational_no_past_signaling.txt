@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_chronology_operational_no_past_signaling.py
-runner_sha256: 76341dcc5bb52568aa8708489b97bd3c960ce88466a32443d3f43daad789d88a
+runner_sha256: d2f83959e90c132df14f29dfc63a2fc194f230f51a025c09855fd5be188c2b6c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -27,7 +27,7 @@ Authority and scope surface
   [PASS] note states boundary: final-boundary
   [PASS] note states boundary: causal cycle
   [PASS] note states boundary: no manuscript promotion or lane closure
-  [PASS] note states boundary: no derivation of the retained single-clock surface itself
+  [PASS] note states boundary: no derivation of the cited single-clock surface itself
   [PASS] note avoids overclaim: closes the chronology-protection lane
   [PASS] note avoids overclaim: closed chronology-protection lane
   [PASS] note avoids overclaim: therefore time travel is impossible

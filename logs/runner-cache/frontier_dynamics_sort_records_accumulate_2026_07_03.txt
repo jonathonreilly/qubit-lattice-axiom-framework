@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dynamics_sort_records_accumulate_2026_07_03.py
-runner_sha256: 84e9416454a0ecfb16bab1ddca8c5ac1b9e3e7a8527d881f079172c128726bc3
+runner_sha256: ace0e0b80e70816554dc095d2109159137a720960bb014e81fa75dfe9ef80d59
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 # ---- SOURCE LIVENESS (quotes are live, not dead data) ----

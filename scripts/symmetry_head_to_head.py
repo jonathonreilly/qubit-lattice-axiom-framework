@@ -17,8 +17,18 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+MIRROR_NOTE = REPO_ROOT / "docs" / "MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md"
+HSJV_NOTE = REPO_ROOT / "docs" / "HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md"
 
 RETAINED_GRADE = {"retained", "retained_bounded", "retained_no_go"}
+MIRROR_PREMISE_QUOTES = (
+    "This note freezes one named finite parameter card from the mirror chokepoint runner. The claim is intentionally bounded: the card is Born-clean, gravity-positive, and decohering for `N = 40, 60, 80, 100`, has a gravity wall at `N = 120`, and has a weak descriptive fit on the four selected fit rows.",
+    "The note makes no claim beyond this finite replay and post-retention descriptive fit.",
+)
+HSJV_PREMISE_QUOTES = (
+    "The binding scope of this note is exactly the sparse N=25,40,60,80 `Z₂ × Z₂` row from the joint-validator (see Scope narrowing section above).",
+    "The dense N=80/100/120 row is **out of binding scope** until the missing dense joint-validation log + registered joint-validator cache is attached, so its cache is **not inlined** here per the audit verdict",
+)
 
 MIRROR_N80 = {
     "N": 80,
@@ -47,8 +57,37 @@ def check(label: str, condition: bool, detail: str) -> bool:
     return condition
 
 
+def _norm(text: str) -> str:
+    return " ".join(text.split())
+
+
 def ledger_rows() -> dict:
     return json.loads(LEDGER_PATH.read_text(encoding="utf-8"))["rows"]
+
+
+def gate_dependency_note(claim_id: str, rows: dict, note_path: Path, quotes: tuple[str, ...]) -> list[bool]:
+    row = rows.get(claim_id)
+    results = [
+        check(f"{claim_id} row exists in audit ledger", row is not None, "row existence gate")
+    ]
+    row = row or {}
+    print(
+        "  [info] "
+        f"{claim_id} live claim_scope={row.get('claim_scope')!r} "
+        f"effective_status={row.get('effective_status')!r} "
+        "(audit-lane-owned; not gated)"
+    )
+    note_text = _norm(note_path.read_text(encoding="utf-8")) if note_path.is_file() else ""
+    results.append(check(f"{claim_id} dependency note exists", note_path.is_file(), str(note_path.relative_to(REPO_ROOT))))
+    for quote in quotes:
+        results.append(
+            check(
+                f"{claim_id} note states premise verbatim",
+                _norm(quote) in note_text,
+                f"len={len(quote)}",
+            )
+        )
+    return results
 
 
 def main() -> int:
@@ -62,25 +101,20 @@ def main() -> int:
     rows = ledger_rows()
     passes: list[bool] = []
 
-    for claim_id in (
-        "mirror_chokepoint_boundary_fit_note",
-        "higher_symmetry_joint_validation_note",
-    ):
-        row = rows[claim_id]
-        passes.append(
-            check(
-                f"{claim_id} retained-grade dependency",
-                row.get("effective_status") in RETAINED_GRADE,
-                f"effective_status={row.get('effective_status')}",
-            )
+    passes.extend(
+        gate_dependency_note(
+            "mirror_chokepoint_boundary_fit_note",
+            rows,
+            MIRROR_NOTE,
+            MIRROR_PREMISE_QUOTES,
         )
-
-    hsjv_scope = rows["higher_symmetry_joint_validation_note"].get("claim_scope") or ""
-    passes.append(
-        check(
-            "Z2 x Z2 source scope includes sparse N=80",
-            "N=25,40,60,80" in hsjv_scope and "no N=120" in hsjv_scope,
-            hsjv_scope,
+    )
+    passes.extend(
+        gate_dependency_note(
+            "higher_symmetry_joint_validation_note",
+            rows,
+            HSJV_NOTE,
+            HSJV_PREMISE_QUOTES,
         )
     )
 

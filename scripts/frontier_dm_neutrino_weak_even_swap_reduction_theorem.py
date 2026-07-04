@@ -76,7 +76,7 @@ def part1_the_exact_weak_carrier_is_closed_under_column_swap() -> None:
 
     check(
         "The exact weak carrier is K_R(q) = [[u_E,u_T],[delta_A1 u_E, delta_A1 u_T]]",
-        "K_R(q) = [[u_E(q), u_T(q)], [delta_A1(q)u_E(q), delta_A1(q)u_T(q)]]".replace(" ", "")
+        "K_R(q) := [[u_E(q), u_T(q)], [delta_A1(q)u_E(q), delta_A1(q)u_T(q)]]".replace(" ", "")
         in carrier_note.replace(" ", ""),
     )
     check(
@@ -168,11 +168,12 @@ def part4_the_bounded_two_channel_prototype_does_not_overrule_the_exact_reductio
 
     check(
         "The current Theta_R^(0) prototype is explicitly bounded, not exact",
-        "bounded" in prototype.lower() and "not exact" in prototype.lower(),
+        "bounded" in prototype.lower()
+        and "the exact tensor-valued route-2 support observable is still missing" in prototype.lower(),
     )
     check(
         "The constructed support tensor primitive is also explicitly bounded, not exact",
-        "bounded" in constructed.lower() and "not exact" in constructed.lower(),
+        "bounded" in constructed.lower() and "not an exact" in constructed.lower(),
     )
     check(
         "So the bounded E/T channel distinction is not yet an exact single-axiom readout law",

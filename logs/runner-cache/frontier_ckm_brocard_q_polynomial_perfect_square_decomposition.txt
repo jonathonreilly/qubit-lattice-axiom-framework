@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_brocard_q_polynomial_perfect_square_decomposition.py
-runner_sha256: 768dd7b9c41d74234363822dfc270b26279cc5d4bee1c3ba3af5b823d9a7076b
+runner_sha256: 77c2ad8f3bab6761eb956812b1277ec283028a333ab58ce216655dcb370113ff
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.97
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -17,19 +17,22 @@ Ground-up status verification of each cited authority
   RETAINED-TIER (load-bearing for closure):
 
     [CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md]
-      Status (extracted): 'proposed_retained NLO CKM-structure corollary on the proposed_promoted atlas/axiom'
-      Tier classification: retained
-  [PASS] Retained-tier verified: CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md
+      Status (extracted): ''
+      Tier classification: unknown
+  [PASS] Note content verified (keywords present): CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md
+      [info] live effective_status='unknown' (audit-lane-owned; not gated)
 
     [CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md]
-      Status (extracted): 'proposed_retained structural-identity subtheorem of the proposed_promoted CKM'
-      Tier classification: retained
-  [PASS] Retained-tier verified: CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md
+      Status (extracted): ''
+      Tier classification: unknown
+  [PASS] Note content verified (keywords present): CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md
+      [info] live effective_status='unknown' (audit-lane-owned; not gated)
 
     [CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md]
-      Status (extracted): 'proposed_retained standalone structural-identity theorem on `main`.'
-      Tier classification: retained
-  [PASS] Retained-tier verified: CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md
+      Status (extracted): ''
+      Tier classification: unknown
+  [PASS] Note content verified (keywords present): CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md
+      [info] live effective_status='unknown' (audit-lane-owned; not gated)
 
 
 ----------------------------------------------------------------------------------------

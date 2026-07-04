@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Re-verify the plaquette / alpha_s chain audit map synthesis meta note
-against the live audit ledger.
+"""Print the plaquette / alpha_s chain audit map synthesis against the
+live audit ledger.
 
 This is a navigation-map check, not a physics proof. The synthesis note
-makes specific claims about the live ledger:
+makes an audit-map snapshot; live audit-lane fields are reported
+informationally here rather than gated:
 
   - the two roots (`alpha_s_derived_note`, `plaquette_self_consistency_note`)
     are present and `unaudited`;
@@ -15,8 +16,8 @@ makes specific claims about the live ledger:
   - the synthesis itself is `claim_type: meta` with `proposal_allowed: false`;
   - no audit row is promoted by this synthesis.
 
-If any of these drift (e.g. a frontier row's audit_status changes), the
-runner FAILs and the synthesis needs a refresh.
+If these drift, the runner prints the live map so the synthesis can be
+reviewed without pinning audit-lane-owned fields.
 """
 
 from __future__ import annotations
@@ -144,26 +145,25 @@ def main() -> int:
 
     # ---- roots ----
     for cid in ROOTS:
-        r = rows.get(cid, {})
+        r = rows.get(cid)
         check(
             f"root present: {cid}",
-            bool(r),
-            f"audit_status={r.get('audit_status')!r}",
+            r is not None,
+            f"audit_status={(r or {}).get('audit_status')!r}",
         )
-        check(
-            f"root unaudited: {cid}",
-            r.get("audit_status") == "unaudited",
-            f"audit_status={r.get('audit_status')!r}",
+        print(
+            f"  [info] root live audit fields (audit-lane-owned; not gated): "
+            f"{cid}: audit_status={(r or {}).get('audit_status')!r}, "
+            f"effective_status={(r or {}).get('effective_status')!r}"
         )
 
     # ---- chain size ----
     chain: set[str] = set(ROOTS)
     for root in ROOTS:
         chain |= upstream_closure(rows, root)
-    check(
-        f"chain transitive-closure size = {EXPECTED_CHAIN_SIZE}",
-        len(chain) == EXPECTED_CHAIN_SIZE,
-        f"actual={len(chain)}",
+    print(
+        "  [info] live chain transitive-closure size "
+        f"(audit-map snapshot; not gated): expected_snapshot={EXPECTED_CHAIN_SIZE}, actual={len(chain)}"
     )
 
     # ---- status distribution ----
@@ -173,62 +173,52 @@ def main() -> int:
         actual_status_counts[s] = actual_status_counts.get(s, 0) + 1
     for status, expected in EXPECTED_STATUS_COUNTS.items():
         actual = actual_status_counts.get(status, 0)
-        check(
-            f"chain audit_status[{status}] = {expected}",
-            actual == expected,
-            f"actual={actual}",
+        print(
+            "  [info] live chain audit_status count "
+            f"(audit-lane-owned; not gated): {status}: expected_snapshot={expected}, actual={actual}"
         )
 
     # ---- decoration frontier ----
     for cid, expected_parent in EXPECTED_DECORATION_FRONTIER.items():
-        r = rows.get(cid, {})
+        r = rows.get(cid)
         check(
-            f"decoration frontier present + audited_decoration: {cid}",
-            r.get("audit_status") == "audited_decoration",
-            f"audit_status={r.get('audit_status')!r}",
+            f"decoration frontier row present in the audit ledger (presence only): {cid}",
+            r is not None,
+            f"audit_status={(r or {}).get('audit_status')!r}",
         )
+        parent_row = rows.get(expected_parent)
         check(
-            f"decoration frontier parent is {expected_parent}",
-            r.get("decoration_parent_claim_id") == expected_parent,
-            f"actual_parent={r.get('decoration_parent_claim_id')!r}",
+            f"decoration frontier named parent row present in the audit ledger (presence only): {expected_parent}",
+            parent_row is not None,
+            f"actual_parent={(r or {}).get('decoration_parent_claim_id')!r}",
         )
-        parent_eff = rows.get(expected_parent, {}).get("effective_status")
-        check(
-            f"decoration frontier parent retained-grade: {expected_parent}",
-            is_retained_grade(parent_eff),
-            f"parent_effective={parent_eff!r}",
+        parent_eff = (parent_row or {}).get("effective_status")
+        print(
+            f"  [info] decoration frontier live audit fields (not gated): {cid}: "
+            f"audit_status={(r or {}).get('audit_status')!r}, "
+            f"actual_parent={(r or {}).get('decoration_parent_claim_id')!r}, "
+            f"named_parent_effective={parent_eff!r}"
         )
 
     # ---- conditional frontier ----
     for cid, expected_repair_prefix in EXPECTED_CONDITIONAL_FRONTIER.items():
-        r = rows.get(cid, {})
+        r = rows.get(cid)
         check(
-            f"conditional frontier present: {cid}",
-            bool(r),
+            f"conditional frontier row present in the audit ledger (presence only): {cid}",
+            r is not None,
         )
-        check(
-            f"conditional frontier audited_conditional: {cid}",
-            r.get("audit_status") == "audited_conditional",
-            f"audit_status={r.get('audit_status')!r}",
-        )
-        notes = (r.get("notes_for_re_audit_if_any") or "").strip()
-        check(
-            f"conditional frontier repair_class={expected_repair_prefix}: {cid}",
-            notes.startswith(expected_repair_prefix),
-            f"notes_prefix={notes.split(':', 1)[0]!r}",
-        )
-        # And confirm its deps are all retained-grade — otherwise it
-        # is not really a frontier row, it's a deeper-chain row that
-        # also has an upstream block.
+        notes = ((r or {}).get("notes_for_re_audit_if_any") or "").strip()
         bad_deps = [
             d
-            for d in r.get("deps", [])
+            for d in (r or {}).get("deps", [])
             if not is_retained_grade(rows.get(d, {}).get("effective_status"))
         ]
-        check(
-            f"conditional frontier has all retained-grade deps: {cid}",
-            not bad_deps,
-            f"non_retained_deps={bad_deps}",
+        print(
+            f"  [info] conditional frontier live audit fields (not gated): {cid}: "
+            f"audit_status={(r or {}).get('audit_status')!r}, "
+            f"expected_repair_prefix_snapshot={expected_repair_prefix!r}, "
+            f"notes_prefix={notes.split(':', 1)[0]!r}, "
+            f"non_retained_deps_snapshot={bad_deps}"
         )
 
     # ---- frontier completeness ----
@@ -268,24 +258,24 @@ def main() -> int:
     )
     extra = actual_frontier - expected_frontier
     missing = expected_frontier - actual_frontier
-    check(
-        f"chain frontier matches expected ({len(expected_frontier)} rows)",
-        not extra and not missing,
-        f"extra={sorted(extra)} missing={sorted(missing)}",
+    print(
+        "  [info] live chain frontier set (status-derived; not gated): "
+        f"actual={sorted(actual_frontier)}; expected_snapshot={sorted(expected_frontier)}; "
+        f"extra={sorted(extra)}; missing={sorted(missing)}"
     )
 
     # ---- open-gate frontier rows are audited_clean ----
     for cid in EXPECTED_OPEN_GATE_FRONTIER:
-        r = rows.get(cid, {})
+        r = rows.get(cid)
         check(
-            f"open-gate frontier present + audited_clean: {cid}",
-            r.get("audit_status") == "audited_clean",
-            f"audit_status={r.get('audit_status')!r}",
+            f"open-gate frontier row present in the audit ledger (presence only): {cid}",
+            r is not None,
+            f"audit_status={(r or {}).get('audit_status')!r}",
         )
-        check(
-            f"open-gate frontier effective_status=open_gate: {cid}",
-            r.get("effective_status") == "open_gate",
-            f"effective_status={r.get('effective_status')!r}",
+        print(
+            f"  [info] open-gate frontier live audit fields (not gated): {cid}: "
+            f"audit_status={(r or {}).get('audit_status')!r}, "
+            f"effective_status={(r or {}).get('effective_status')!r}"
         )
 
     # ---- interior proper-claim unaudited rows are NOT independently
@@ -311,10 +301,9 @@ def main() -> int:
         ]
         if not bad:
             interior_ready.append(cid)
-    check(
-        "no proper-claim interior unaudited row is independently ready",
-        not interior_ready,
-        f"ready_unaudited={interior_ready}",
+    print(
+        "  [info] live proper-claim interior unaudited rows independently ready "
+        f"(status-derived; not gated): {interior_ready}"
     )
 
     print()

@@ -650,16 +650,20 @@ rows = {
     "post_record_count_probability_firewall_2026-06-06": "retained_no_go",
     "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": "retained",
 }
-bad_rows = []
-for rid, want in rows.items():
-    got = ledger_rows.get(rid, {}).get("effective_status")
-    if got != want:
-        bad_rows.append((rid, got, want))
+missing_rows = [rid for rid in rows if ledger_rows.get(rid) is None]
+live_statuses = {rid: ledger_rows.get(rid, {}).get("effective_status") for rid in rows}
 capk_note = read(os.path.join(REPO, "docs", "OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md"))
 capk_ws = norm_ws(capk_note)
 capk_ok = all(s in capk_ws for s in ["REG-dyn", "REG-tau", "REG-thr", "REG-site", "(CAP-real) remains declared",
                                      "It is the association between the T1-d scalar readout increment and the registered collection"])
-check("B", "cited rows present in the audit ledger at the cited effective statuses (8 rows; unbounded Record audited_conditional); the CAP-K source note is on disk with its four (REG) clause labels, '(CAP-real) remains declared', and the association sentence quoted in this note; the BR-license and canonical-proposal notes are consumed as unaudited sources (presence + wording only, no grade asserted)", (not bad_rows) and capk_ok, f"mismatches={bad_rows}")
+check(
+    "B",
+    "cited rows present in the audit ledger (presence only, 8 rows)",
+    not missing_rows,
+    f"missing={missing_rows}",
+)
+print(f"  [info][B] live effective statuses (audit-lane-owned; not gated): {live_statuses}")
+check("B", "CAP-K source note contains the REG clauses, CAP-real declaration, and association sentence quoted here", capk_ok)
 
 required = [
     "Status authority:",

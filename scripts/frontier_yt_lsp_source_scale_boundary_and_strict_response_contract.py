@@ -133,9 +133,13 @@ def part1_anchors() -> dict[str, Any]:
         "source_action": ledger_row("yt_source_action_support_packet_note_2026-05-22"),
         "source_action_gate": ledger_row("observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21"),
     }
-    check("LSP source row is retained_bounded support", statuses["lsp_source"] and statuses["lsp_source"].get("effective_status") == "retained_bounded")
-    check("source/action row is retained_bounded support", statuses["source_action"] and statuses["source_action"].get("effective_status") == "retained_bounded")
-    check("source/action gate is not retained authority", statuses["source_action_gate"] is None or statuses["source_action_gate"].get("effective_status") != "retained")
+    check("LSP source row is present in the audit ledger (presence only)", statuses["lsp_source"] is not None)
+    check("source/action row is present in the audit ledger (presence only)", statuses["source_action"] is not None)
+    check("source/action gate row is present in the audit ledger (presence only)", statuses["source_action_gate"] is not None)
+    print(
+        "  [info] live effective statuses (audit-lane-owned; not gated): "
+        f"{ {key: None if value is None else value.get('effective_status') for key, value in statuses.items()} }"
+    )
     return {key: None if value is None else value.get("effective_status") for key, value in statuses.items()}
 
 

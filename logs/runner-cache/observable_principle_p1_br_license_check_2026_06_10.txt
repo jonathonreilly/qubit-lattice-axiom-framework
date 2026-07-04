@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/observable_principle_p1_br_license_check_2026_06_10.py
-runner_sha256: 0e4b11a6ad07674bf69bc4ff0e357c690590b59ccbea7aec56e7850d1fe2cf59
+runner_sha256: 031d168c1dc26c1d08204224a47267adc259c48af81d8ad0ad3b068aecb43330
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.54
+elapsed_sec: 1.09
 status: ok
 ----- stdout -----
 == T1: the clause under hunt — (BR) and its selection chain, recomputed ==
@@ -40,15 +40,16 @@ status: ok
   [PASS][D] compact collapse: on [1, e] and on the licensed L2 Neumann image [1, 85/64] every member has finite response and finite e-fold increment (monotone endpoint evaluation) — (BR)/(BR-int)/(CAP) select NOTHING there; the full-R_>0 clause is exactly the declared T1-d / lemma-L3 domain hypothesis, no hidden domain freedom
   [PASS][D] granting the missing capacity clauses completes the selection exactly: with (CAP-M)+(CAP-K) granted the pass set is {p = 0} and W = c log z follows with T1-d's remaining clauses — the missing license is the single load-bearing gap
 == T9: ledger scan — zero retained-grade capacity/rate suppliers (extends NU-note T9) ==
-  [PASS][B] extended ledger scan: ZERO retained-grade rows match capacity/rate/resolution/response-bound vocabulary — (BR), (BR-int), and the (CAP) clauses are all unlicensed  -- matches=[]
-  [PASS][B] cited rows present at their current admissible effective statuses; unbounded Record is audited_conditional and local tomography is retained_bounded or retained_pending_chain in the live ledger  -- mismatches={}
+  [info][B] live retained-grade ledger scan matches (audit-lane-owned; not gated): []
+  [PASS][B] cited rows present in the audit ledger (presence only)  -- missing=[]
+  [info][B] live effective statuses (audit-lane-owned; not gated): {'record_function_finite_sector_algebra_2026-06-05': 'retained', 'record_unbounded_finite_additivity_schema_2026-06-06': 'unaudited', 'magnitude_reads_minimal_record_block_2026-06-06': 'unaudited', 'post_record_count_probability_firewall_2026-06-06': 'retained_no_go', 'observable_principle_record_scalar_map_no_go_note_2026-06-05': 'unaudited', 'post_record_finite_to_unbounded_family_lift_no_go_2026-06-06': 'retained_no_go', 'busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20': 'unaudited', 'gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20': 'unaudited', 'local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03': 'unaudited', 'sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06': 'retained'}
   [PASS][B] the three candidate record-capacity suppliers are visible rows (assessed at full strength, not strawmanned)
   [PASS][B] campaign chain on disk: the NU-license note names the record-capacity/finite-resolution hunt target and the barrier note declares its premise unlicensed
 == T10: note honest-scope, firewall-compliance, and boundary strings ==
   [PASS][B] note honest-scope and firewall-compliance strings present  -- missing=[]
   [PASS][B] forbidden promotion strings absent  -- found=[]
 
-TOTAL: PASS=31 FAIL=0
+TOTAL: PASS=30 FAIL=0
 
 ----- stderr -----
 

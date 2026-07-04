@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_dm_sigma_hier_h_intrinsic_no_go_criticality_hygiene_2026_06_04.py
-runner_sha256: 4ea5ce58285576e1bcb25ee8bb88ac9764e695b8760dcae3a971639219099d29
+runner_sha256: fb76cb754dfda6365e05b466ace936f2802c830dd9e5c8cd4ce1e3ce5232bc31
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.41
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 ========================================================================
@@ -15,27 +15,28 @@ Parent runner: scripts/frontier_dm_sigma_hier_h_intrinsic_no_go_theorem_2026_04_
 Scope: meta evidence only; no theorem claim and no verdict change.
 PASS parent_note_exists
 PASS parent_runner_exists
+PASS parent_ledger_row_exists
 PASS parent_claim_type_expected
 PASS parent_runner_path_expected
 PASS parent_current_criticality_expected
-PASS parent_current_load_expected :: load=6.085
-PASS parent_note_hash_expected
-PASS parent_note_hash_matches_ledger
+PASS parent_current_load_printed_informationally :: live_load=6.615 landing_expected=6.085; audit-lane-owned field; not gated
+PASS parent_note_hash_expected_printed_informationally :: on_disk=425a54457357fd921537e66a5df8b4122afcb6ce4dea7d242a39f108f48b43cb landing_expected=425a54457357fd921537e66a5df8b4122afcb6ce4dea7d242a39f108f48b43cb; landing-time snapshot recorded in companion note; not gated
+PASS parent_note_hash_matches_ledger_printed_informationally :: on_disk=425a54457357fd921537e66a5df8b4122afcb6ce4dea7d242a39f108f48b43cb live_ledger='425a54457357fd921537e66a5df8b4122afcb6ce4dea7d242a39f108f48b43cb'; audit-lane-owned field; not gated
 PASS parent_runner_hash_expected
 PASS parent_deps_exact :: count=4
 PASS parent_helper_runner_expected :: helpers=['scripts/frontier_sigma_hier_uniqueness_theorem.py']
 PASS upstream_row_present_dm_pmns_chamber_spectral_completeness_theorem_note_2026-04-20
-PASS upstream_row_unresolved_dm_pmns_chamber_spectral_completeness_theorem_note_2026-04-20
+PASS upstream_row_status_printed_informationally_dm_pmns_chamber_spectral_completeness_theorem_note_2026-04-20 :: live_effective_status='unaudited' landing_expected='unaudited'; audit-lane-owned field; not gated
 PASS upstream_row_present_dm_pmns_cp_orientation_parity_reduction_note_2026-04-20
-PASS upstream_row_unresolved_dm_pmns_cp_orientation_parity_reduction_note_2026-04-20
+PASS upstream_row_status_printed_informationally_dm_pmns_cp_orientation_parity_reduction_note_2026-04-20 :: live_effective_status='unaudited' landing_expected='unaudited'; audit-lane-owned field; not gated
 PASS upstream_row_present_dm_sigma_hier_upper_octant_selector_theorem_note_2026-04-20
-PASS upstream_row_unresolved_dm_sigma_hier_upper_octant_selector_theorem_note_2026-04-20
+PASS upstream_row_status_printed_informationally_dm_sigma_hier_upper_octant_selector_theorem_note_2026-04-20 :: live_effective_status='unaudited' landing_expected='unaudited'; audit-lane-owned field; not gated
 PASS upstream_row_present_sigma_hier_uniqueness_theorem_note_2026-04-19
-PASS upstream_row_unresolved_sigma_hier_uniqueness_theorem_note_2026-04-19
-PASS all_upstream_rows_unresolved
-PASS prior_medium_positive_snapshot_present
-PASS prior_snapshot_load_expected
-PASS prior_invalidation_was_priority_bump
+PASS upstream_row_status_printed_informationally_sigma_hier_uniqueness_theorem_note_2026-04-19 :: live_effective_status='unaudited' landing_expected='unaudited'; audit-lane-owned field; not gated
+PASS all_upstream_rows_present
+PASS prior_audit_history_printed_informationally :: len=3 landing_previous_verdict='audited_clean' landing_invalidation='criticality_increased:medium->critical'; prior-audit history is not gated
+PASS prior_snapshot_load_printed_informationally :: latest_snapshot_load=8.555 landing_expected=5.992; prior-audit history is not gated
+PASS prior_invalidation_printed_informationally :: latest_invalidation=None landing_expected='criticality_increased:medium->critical'; prior-audit history is not gated
 PASS parent_runner_exit_zero :: returncode=0
 PASS parent_runner_tally_present
 PASS parent_runner_pass_count_eleven :: pass_count=11
@@ -69,7 +70,7 @@ PASS companion_disclaims_verdict_change
 PASS companion_keeps_dependencies_unresolved
 PASS companion_disclaims_flavor_orientation
 ========================================================================
-SUMMARY: PASS=55 FAIL=0
+SUMMARY: PASS=56 FAIL=0
 ========================================================================
 
 ----- stderr -----

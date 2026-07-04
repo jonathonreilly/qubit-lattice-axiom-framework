@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hubble_lane5_two_gate_dependency_firewall.py
-runner_sha256: b7ad9fb4569c93e62be34ed82bef156a93615446851fbd361fd645a2785a1a68
+runner_sha256: 032502c6c48c05b331f5be5188c86930838669098afd1d3203c46bb76df0979f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.50
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -53,7 +53,7 @@ Part 4: structural lock versus numerical H_0
 ----------------------------------------------------------------------------------------
 Part 5: gate-inventory specifics
 ----------------------------------------------------------------------------------------
-  [PASS] C1 gate is the primitive Clifford/CAR coframe response
+  [PASS] C1 gate is the Clifford/CAR coframe response
   [PASS] C2 gate is the right-sensitive Z_3 doublet-block selector
   [PASS] open-number theorem exposes exactly two structural degrees of freedom
   [PASS] current C3 audit reduces C3 to a hypothetical alternative

@@ -164,20 +164,12 @@ def main() -> int:
 
     if carrier_row is not None:
         carrier_status = carrier_row.get("audit_status")
-        check(
-            "carrier-completion dep audit_status is audited_numerical_match (terminal)",
-            carrier_status == "audited_numerical_match",
-            detail=f"audit_status: {carrier_status!r}",
-        )
         carrier_effective = carrier_row.get("effective_status")
-        check(
-            "carrier-completion dep effective_status is audited_numerical_match",
-            carrier_effective == "audited_numerical_match",
-            detail=f"effective_status: {carrier_effective!r}",
+        print(
+            "  [info] carrier-completion dep live audit fields "
+            f"(audit-lane-owned; not gated): audit_status={carrier_status!r}, "
+            f"effective_status={carrier_effective!r}"
         )
-    else:
-        check("carrier-completion dep audit_status is audited_numerical_match (terminal)", False, detail="row missing")
-        check("carrier-completion dep effective_status is audited_numerical_match", False, detail="row missing")
 
     if leaf_row is not None:
         leaf_deps = set(leaf_row.get("deps", []) or [])

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/observable_principle_p1_cap_k_check_2026_06_10.py
-runner_sha256: 02a5c1a5075546e604b7e4bc78129a8a0af49d5e7dc32a4bde215cd76fa94ba2
+runner_sha256: 45a863f271ecbbac2052f213b8d0617d61eef327087d1f4b1f3cdf63612aca85
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 46.88
+elapsed_sec: 12.72
 status: ok
 ----- stdout -----
 == T1: Lemma C and the selection chain (BR-note facts recomputed, not cited blind) ==
@@ -46,7 +46,8 @@ status: ok
   [PASS][B] the clock is supplied, never derived from counts: the retained_no_go clock/rate interface states 'Without the supplied `tau`, the same record history supports many inequivalent rates' — present verbatim
   [PASS][B] the note declares (REG-tau) as a supplied clock-window clause of the realization class (not derived); the retained single-clock Stone row licenses only that 'evolve for t given (T, tau)' is well-defined — the window value stays declared
 == T12: ledger grades, firewall strings, honest scope ==
-  [PASS][B] cited rows present in the audit ledger at their current effective statuses (one-hop presence check, 10 rows)  -- mismatches=[]
+  [PASS][B] cited rows present in the audit ledger (presence only, 10 rows)  -- missing=[]
+  [info][B] live effective statuses (audit-lane-owned; not gated): {'microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09': 'unaudited', 'transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10': 'unaudited', 'single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10': 'retained', 'post_record_clock_rate_interface_2026-06-06': 'retained_no_go', 'post_record_finite_to_unbounded_family_lift_no_go_2026-06-06': 'retained_no_go', 'record_function_finite_sector_algebra_2026-06-05': 'retained', 'record_unbounded_finite_additivity_schema_2026-06-06': 'unaudited', 'record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06': 'unaudited', 'observable_principle_record_scalar_map_no_go_note_2026-06-05': 'unaudited', 'post_record_count_probability_firewall_2026-06-06': 'retained_no_go'}
   [PASS][B] note honest-scope and firewall-compliance strings present  -- missing=[]
   [PASS][B] forbidden closure/promotion strings absent  -- found=[]
 

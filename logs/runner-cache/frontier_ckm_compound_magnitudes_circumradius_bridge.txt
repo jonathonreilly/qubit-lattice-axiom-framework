@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_compound_magnitudes_circumradius_bridge.py
-runner_sha256: 8b9887b55d787c3d8b842b18cfe132a46d7ba39675564313dd2f18f2fc776cec
+runner_sha256: 5b5bcbacb1ef29e2188169a7deaeaef845f9da824a06f10e84a807e11f511874
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.77
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -17,29 +17,34 @@ Ground-up status verification of each cited authority
   RETAINED-TIER (load-bearing for closure):
 
     [CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md]
-      Status (extracted): 'proposed_retained NLO CKM-structure corollary on the proposed_promoted atlas/axiom'
-      Tier classification: retained
-  [PASS] Retained-tier verified: CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md
+      Status (extracted): ''
+      Tier classification: unknown
+  [PASS] Note content verified (keywords present): CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md
+      [info] live effective_status='unknown' (audit-lane-owned; not gated)
 
     [CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md]
-      Status (extracted): 'proposed_retained structural-identity subtheorem of the proposed_promoted CKM'
-      Tier classification: retained
-  [PASS] Retained-tier verified: CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md
+      Status (extracted): ''
+      Tier classification: unknown
+  [PASS] Note content verified (keywords present): CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md
+      [info] live effective_status='unknown' (audit-lane-owned; not gated)
 
     [CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md]
-      Status (extracted): 'proposed_retained standalone structural-identity theorem on `main`.'
-      Tier classification: retained
-  [PASS] Retained-tier verified: CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md
+      Status (extracted): ''
+      Tier classification: unknown
+  [PASS] Note content verified (keywords present): CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md
+      [info] live effective_status='unknown' (audit-lane-owned; not gated)
 
     [CKM_BARRED_CIRCUMRADIUS_EXACT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md]
       Status (extracted): 'proposed_retained CKM-structure corollary on the proposed_promoted CKM atlas'
       Tier classification: retained
-  [PASS] Retained-tier verified: CKM_BARRED_CIRCUMRADIUS_EXACT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md
+  [PASS] Note content verified (keywords present): CKM_BARRED_CIRCUMRADIUS_EXACT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md
+      [info] live effective_status='retained' (audit-lane-owned; not gated)
 
     [WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md]
-      Status (extracted): 'proposed_retained structural-identity subtheorem of the proposed_promoted CKM'
-      Tier classification: retained
-  [PASS] Retained-tier verified: WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md
+      Status (extracted): ''
+      Tier classification: unknown
+  [PASS] Note content verified (keywords present): WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md
+      [info] live effective_status='unknown' (audit-lane-owned; not gated)
 
 
 ----------------------------------------------------------------------------------------

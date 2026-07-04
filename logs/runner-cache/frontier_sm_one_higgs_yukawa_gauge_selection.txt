@@ -1,16 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_one_higgs_yukawa_gauge_selection.py
-runner_sha256: e27a01007320187226d487cd925cab9ca5b043a2c1e054a804de54ba89ef336d
+runner_sha256: 0f3cac4904ecf28b88d7a8d0ea8fdab61ee0f84c59343a122c4495a7e0359304
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.31
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 PASS: theorem note exists -- docs/SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md
 PASS: hypercharge authority note exists -- docs/STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md
 PASS: EW Higgs authority exists -- docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md
-PASS: hypercharge authority row is present and pending audit -- {'effective_status': 'unaudited', 'audit_status': 'unaudited'}
-PASS: EW Higgs authority is retained/audited_clean in ledger -- {'effective_status': 'retained', 'audit_status': 'audited_clean'}
+PASS: hypercharge authority row present in the audit ledger (presence only)
+  [info] standard_model_hypercharge_uniqueness_theorem_note_2026-04-24 live effective_status='unaudited', audit_status='unaudited' (audit-lane-owned; not gated)
+PASS: EW Higgs authority present in the audit ledger (presence only)
+  [info] ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26 live effective_status='retained_bounded', audit_status='audited_clean' (audit-lane-owned; not gated)
 PASS: doubled-hypercharge convention present
 PASS: EW-normalized convention present
 PASS: EW Higgs normalized Y_H maps to doubled Y(H)

@@ -28,14 +28,14 @@ Owner-approval history for every axiom/primitive change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3643 |
-| Applied audit verdicts | 1351 |
-| Retained-grade rows, including boxed decorations | 1278 |
+| Applied audit verdicts | 1347 |
+| Retained-grade rows, including boxed decorations | 1274 |
 | Retained positive theorems | 189 |
 | Retained no-go rows | 191 |
-| Retained bounded rows | 853 |
+| Retained bounded rows | 849 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
-| Unaudited rows | 1944 |
+| Unaudited rows | 1948 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 25 |
 | Audited renaming rows | 19 |
@@ -49,12 +49,12 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1982 |
-| Ready rows | 170 |
+| Total pending rows | 1986 |
+| Ready rows | 171 |
 | Cycle-break targets | 14 |
-| Critical pending | 421 |
+| Critical pending | 424 |
 | High pending | 289 |
-| Medium pending | 516 |
+| Medium pending | 517 |
 | Leaf pending | 756 |
 
 Next ready rows by queue order:
@@ -63,21 +63,21 @@ Next ready rows by queue order:
 - [`hypercharge_identification_note`](../../docs/HYPERCHARGE_IDENTIFICATION_NOTE.md) - critical; non_terminal_conditional
 - [`tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md) - critical; unaudited
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
+- [`tensor_support_center_excess_law_note`](../../docs/TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md) - critical; unaudited
 - [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
 - [`ew_current_matching_rule_open_gate_note_2026-05-03`](../../docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md) - critical; unaudited
 - [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
-- [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **441**.
+- Non-retained-grade cited rows in publication tables: **444**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 187 |
+| critical | `unaudited` | 190 |
 | high | `unaudited` | 148 |
 | medium | `unaudited` | 97 |
 | medium | `open_gate` | 3 |

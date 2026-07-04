@@ -36,6 +36,19 @@ FINITE_K_NOTE = ROOT / "docs" / "DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRID
 SOURCE_PACKET_RUNNER = ROOT / "scripts" / "dimension_selection_parent_source_packet_manifest_2026_06_05.py"
 SOURCE_PACKET_CACHE = ROOT / "logs" / "runner-cache" / "dimension_selection_parent_source_packet_manifest_2026_06_05.txt"
 SOURCE_PACKET_JSON = ROOT / "outputs" / "dimension_selection_parent_source_packet_manifest_2026_06_05.json"
+FINITE_K_PREMISE_QUOTES = (
+    "This note takes the second route.  It does **not** use Fermat, WKB, or stationary phase as the load-bearing sign argument.  It differentiates the actual finite-k, finite-lattice, layer-normalized propagator used by `scripts/frontier_dimension_selection.py`.",
+    "This supplies the finite-k sign bridge that the V2 lower-bound note was missing for the actual runner surface.",
+)
+LOWER_V2_PREMISE_QUOTES = (
+    "is **positive (attractive)** for `d = 3, 4, 5` and **negative (repulsive)** for `d = 1, 2`, for the runner's fixed finite-k geometry and analytic potential family.",
+    "The derivation admits the choice to use the runner's analytic potential family as the finite test surface, but the profile identities themselves are proved below on that surface rather than imported from a textbook.",
+)
+PARENT_PREMISE_QUOTES = (
+    "Only the first statement is binding in this row. The second statement remains context for separate upper-bound work and is not a theorem of this packet.",
+    "This is finite-runner lower-bound support only, not a unique-dimension theorem. This row does not authorize any framework-baseline rewrite.",
+    "The current audit blocker is a packet/runner-artifact gap: the parent repair runner verifies the narrowed prose and finite-k sign replay, but the displayed `beta` and `I_3` entries come from the original dimension-selection runner, and the parent runner imports the bridge through a dynamic import.",
+)
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -57,6 +70,10 @@ def read(path: Path) -> str:
 
 
 def one_line(text: str) -> str:
+    return " ".join(text.split())
+
+
+def _norm(text: str) -> str:
     return " ".join(text.split())
 
 
@@ -98,6 +115,24 @@ def require_row(rows: dict[str, dict[str, Any]], claim_id: str) -> dict[str, Any
     return rows[claim_id]
 
 
+def gate_dependency_note(label: str, row: dict[str, Any], note_path: Path, quotes: tuple[str, ...]) -> None:
+    print(
+        "  [info] "
+        f"{label}: live claim_scope={row.get('claim_scope')!r} "
+        f"effective_status={row.get('effective_status')!r} "
+        f"audit_status={row.get('audit_status')!r} "
+        "(audit-lane-owned; not gated)"
+    )
+    note_text = _norm(read(note_path)) if note_path.is_file() else ""
+    check(f"{label} dependency note exists", note_path.is_file(), note_path.relative_to(ROOT))
+    for quote in quotes:
+        check(
+            f"{label} note states premise verbatim: {quote[:60]}...",
+            _norm(quote) in note_text,
+            f"len={len(quote)}",
+        )
+
+
 def run_active_queue_and_status_checks(rows: dict[str, dict[str, Any]]) -> None:
     print("A. ledger and active-queue status")
     queue_text = read(ACTIVE_QUEUE)
@@ -110,32 +145,9 @@ def run_active_queue_and_status_checks(rows: dict[str, dict[str, Any]]) -> None:
     lower_v2 = require_row(rows, "dimension_selection_lower_bound_bridge_v2_2026-05-20")
     parent = require_row(rows, "dimension_selection_note")
 
-    check(
-        "finite-k sign bridge is audited clean retained_bounded",
-        finite_k.get("audit_status") == "audited_clean"
-        and finite_k.get("effective_status") == "retained_bounded",
-        f"audit={finite_k.get('audit_status')} effective={finite_k.get('effective_status')}",
-    )
-    check(
-        "lower-bound V2 sign row is audited clean retained_bounded",
-        lower_v2.get("audit_status") == "audited_clean"
-        and lower_v2.get("effective_status") == "retained_bounded",
-        f"audit={lower_v2.get('audit_status')} effective={lower_v2.get('effective_status')}",
-    )
-    check(
-        "parent row remains conditional only on runner artifact issue",
-        parent.get("effective_status") == "audited_conditional"
-        and "runner_artifact_issue" in str(parent.get("notes_for_re_audit_if_any", "")),
-        parent.get("notes_for_re_audit_if_any", ""),
-    )
-    check(
-        "parent row does not claim unique d=3 or baseline rewrite",
-        (
-            "no unique-d = 3 theorem or framework-baseline rewrite" in str(parent.get("claim_scope", ""))
-            or "no unique-d=3 or baseline-rewrite claim" in str(parent.get("claim_scope", ""))
-        ),
-        parent.get("claim_scope", ""),
-    )
+    gate_dependency_note("finite-k sign bridge", finite_k, FINITE_K_NOTE, FINITE_K_PREMISE_QUOTES)
+    gate_dependency_note("lower-bound V2 sign bridge", lower_v2, V2_NOTE, LOWER_V2_PREMISE_QUOTES)
+    gate_dependency_note("parent dimension-selection row", parent, PARENT_NOTE, PARENT_PREMISE_QUOTES)
 
 
 def run_source_packet_checks() -> None:

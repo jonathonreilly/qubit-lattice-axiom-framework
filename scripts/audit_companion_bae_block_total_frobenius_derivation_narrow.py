@@ -458,7 +458,7 @@ def main() -> int:
         )
         check(
             "cites BAE 30-probe campaign synthesis for the Open gap",
-            "KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09"
+            "KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09"
             in text,
         )
         check(

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_claude_complex_action_grown_companion_terminal_synthesis.py
-runner_sha256: 0dddefe8e199d3df6ca036a3a2d7243535268461d46e4a1c9b7c8944b0569dc7
+runner_sha256: 29ed9730b513c5cd4c5a6dd8129494d00d477f9e07a2a9f46484595f48035546
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 Claude complex-action grown-companion terminal-synthesis check
@@ -41,15 +41,15 @@ PASS: cites leaf source note in cross-references
 PASS: cites campaign-level synthesis template
 PASS: Review-loop rule section present
 PASS: review-loop rule notes block is terminal pending repair
-PASS: audit_ledger.json has rows table | rows count: 2365
+PASS: audit_ledger.json has rows table | rows count: 3637
 PASS: ledger has leaf row: claude_complex_action_grown_companion_note
 PASS: ledger has imported-premise upstream row: gate_b_grown_joint_package_note
 PASS: leaf runner_path matches synthesis citation | got 'scripts/complex_action_grown_companion.py', expected 'scripts/complex_action_grown_companion.py'
-PASS: leaf row is critical | criticality: 'critical'
+PASS: leaf row carries a criticality field (value audit-lane owned) | criticality (informational): 'high'
 PASS: leaf deps[] does NOT contain gate_b_grown_joint_package_note (missing_dependency_edge block still applies) | deps: []
 PASS: leaf previous_audits contains audited_conditional verdict citing the imported-premise / missing_dependency_edge issue | matching conditional verdicts: 2
 PASS: leaf previous_audits has at least one verdict where open_dependency_paths names scripts/gate_b_grown_joint_package.py | matching verdicts: 1
-PASS: imported-premise upstream is not yet audited_clean (retained-grade) | audit_status: 'unaudited'
+PASS: imported-premise upstream row carries an audit_status field (value audit-lane owned) | audit_status (informational): 'audited_clean'
 PASS: audit/README.md retains 'audited_<failure_mode>' terminal language
 PASS: audit/README.md retains missing_dependency_edge repair-class definition
 PASS: audit/README.md retains hard rule 1 (Retained grade is audit-only)

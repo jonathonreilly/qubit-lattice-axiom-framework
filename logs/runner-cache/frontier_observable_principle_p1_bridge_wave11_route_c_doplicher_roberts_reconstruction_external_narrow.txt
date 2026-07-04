@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_observable_principle_p1_bridge_wave11_route_c_doplicher_roberts_reconstruction_external_narrow.py
-runner_sha256: 83ca42d4b36263b77f7f3801d834c84934fbdcc2e941b93a1ad096c4f6dd2d5c
+runner_sha256: 8121d4df6905a3aef60f905dfe4a37349080d0596338e9967397ca8095db33d2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.51
 status: ok
 ----- stdout -----
 # Observable-principle P1 bridge Wave 11 Route C Doplicher-Roberts reconstruction
@@ -156,10 +156,12 @@ T9: Structural analysis — DR Route C is (b) + (c-partial)
          present=True
   [PASS] note contains structural-analysis string: '7th convergent obstruction'
          present=True
-  [PASS] Parent OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE is audited_conditional (unaffected)
-         observable_principle_from_axiom_note.effective_status = audited_conditional
-  [PASS] FERMION_PARITY_Z2_GRADING is unaudited (context only, not load-bearing)
-         fermion_parity_z2_grading.effective_status = unaudited
+  [PASS] parent row present in the ledger; this note does not depend on its audit grade
+         observable_principle_from_axiom_note
+  [info] observable_principle_from_axiom_note.effective_status = retained_bounded
+  [PASS] FERMION_PARITY_Z2_GRADING row present in the ledger (context only, not load-bearing)
+         fermion_parity_z2_grading_theorem_note_2026-05-02
+  [info] fermion_parity_z2_grading.effective_status = retained
 
 ==============================================================================
 T10: Source-note boundary

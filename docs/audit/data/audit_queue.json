@@ -1,9 +1,9 @@
 {
   "by_criticality": {
-    "critical": 421,
+    "critical": 424,
     "high": 289,
     "leaf": 756,
-    "medium": 516
+    "medium": 517
   },
   "cycle_break_target_count": 14,
   "cycle_break_targets": [
@@ -446,6 +446,30 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "tensor_support_center_excess_law_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 20,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/_frontier_loader.py"
+      ],
+      "load_bearing_score": 23.182,
+      "note_path": "docs/TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_tensor_support_center_excess_law.py",
+      "transitive_descendants": 1161
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -533,15 +557,15 @@
         "g_bare_rigidity_theorem_note",
         "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.073,
+      "load_bearing_score": 13.571,
       "note_path": "docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py",
-      "transitive_descendants": 1076
+      "transitive_descendants": 1075
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1165,6 +1189,32 @@
       "ready": true,
       "runner_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
       "transitive_descendants": 292
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "s3_cap_uniqueness_note",
+        "pl_topology_infrastructure_textbook_import_note_2026-05-17",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+      ],
+      "direct_in_degree": 9,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 12.566,
+      "note_path": "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_aps_block_by_block_forcing.py",
+      "transitive_descendants": 267
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3712,6 +3762,32 @@
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_postcanonical_extension_class.py",
       "transitive_descendants": 1016
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "s3_time_constructed_support_tensor_primitive_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "tensor_support_center_excess_law_note"
+      ],
+      "direct_in_degree": 7,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/_frontier_loader.py"
+      ],
+      "load_bearing_score": 16.489,
+      "note_path": "docs/S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_s3_time_constructed_support_tensor_primitive.py",
+      "transitive_descendants": 1015
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -12516,31 +12592,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_q_eq_3delta_identity_note_2026-04-21",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_aps_block_by_block_forcing_note_2026-04-21",
-        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.144,
-      "note_path": "docs/KOIDE_Q_EQ_3DELTA_IDENTITY_NOTE_2026-04-21.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_Q_eq_3delta_identity.py",
-      "transitive_descendants": 49
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -18966,6 +19017,31 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "koide_q_eq_3delta_identity_note_2026-04-21",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_aps_block_by_block_forcing_note_2026-04-21",
+        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.144,
+      "note_path": "docs/KOIDE_Q_EQ_3DELTA_IDENTITY_NOTE_2026-04-21.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_koide_Q_eq_3delta_identity.py",
+      "transitive_descendants": 49
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "ckm_barred_pedoe_similarity_deficit_closed_form_theorem_note_2026-04-25",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -21148,31 +21224,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_aps_block_by_block_forcing_note_2026-04-21",
-        "s3_cap_uniqueness_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.144,
-      "note_path": "docs/KOIDE_APS_ETA_TOPOLOGICAL_ROBUSTNESS_BOUNDED_THEOREM_NOTE_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_aps_topological_robustness.py",
-      "transitive_descendants": 49
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "q_integer_spectrum_theorem_note_2026-05-02",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -21450,6 +21501,31 @@
       "ready": true,
       "runner_path": "scripts/COMPLEX_SELECTIVITY_COMPARE.py",
       "transitive_descendants": 10
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "symmetry_head_to_head_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "mirror_chokepoint_boundary_fit_note",
+        "higher_symmetry_joint_validation_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 3.822,
+      "note_path": "docs/SYMMETRY_HEAD_TO_HEAD_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/symmetry_head_to_head.py",
+      "transitive_descendants": 9
     },
     {
       "audit_independence_required": "any_non_self",
@@ -25982,6 +26058,31 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_observable_grammar_exhaustion_obstruction.py",
+      "transitive_descendants": 49
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_aps_block_by_block_forcing_note_2026-04-21",
+        "s3_cap_uniqueness_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.144,
+      "note_path": "docs/KOIDE_APS_ETA_TOPOLOGICAL_ROBUSTNESS_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_koide_aps_topological_robustness.py",
       "transitive_descendants": 49
     },
     {
@@ -31509,7 +31610,6 @@
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/_frontier_loader.py",
-        "scripts/frontier_one_parameter_reduced_shell_law.py",
         "scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py",
         "scripts/frontier_same_source_metric_ansatz_scan.py",
         "scripts/frontier_tensor_support_center_excess_law.py"
@@ -58287,6 +58387,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 170,
-  "total_pending": 1982
+  "ready_count": 171,
+  "total_pending": 1986
 }

@@ -448,9 +448,11 @@ def main() -> int:
     if c_sc_path.is_file():
         text = c_sc_path.read_text()
         check(
-            "(Composition) (C-Sc) Step 1 contains the spectral-expansion Wick-rotation",
-            "spectral expansion" in text and "Wick-rotation" in text,
-            detail="presence of phrase 'spectral expansion' and 'Wick-rotation' in (C-Sc)",
+            "(Composition) (C-Sc) Step 1 supplies the positive-Hermitian transfer with a unique clock",
+            "(R-RP2) supplies" in text
+            and "positive Hermitian" in text
+            and "the clock is unique (Step 1)" in text,
+            detail="presence of '(R-RP2) supplies' + 'positive Hermitian' + 'the clock is unique (Step 1)' in (C-Sc)",
         )
 
     # =========================================================================

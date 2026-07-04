@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_hunit_neutral_radial_orbit_2026_06_18.py
-runner_sha256: 8866f15862d269cd6818751d56f56953a18be695df3569fab0b836f5ef4cac1f
+runner_sha256: d375f76bfb6c6db7648199f6aae605ff9cfed5ad229dc69c7d192f29a721214f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.45
+elapsed_sec: 0.71
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -25,11 +25,16 @@ Part 1: source anchors and status scope
 [PASS] support note contains section: What This Closes
 [PASS] support note contains section: What This Does Not Close
 [PASS] support note contains section: Review Boundary Certificate
-[PASS] SM finite inventory premise is retained_bounded
-[PASS] downstream gstar row is not promoted by this branch
-[PASS] Ward H_unit theorem is retained_bounded support
-[PASS] EW one-doublet bookkeeping is retained
-[PASS] H_unit no-go remains audit-lane scoped
+[PASS] SM finite inventory premise present in the audit ledger (presence only)
+  [info] sm_relativistic_dof_count_import_note_2026-05-17 live effective_status='retained_bounded' (audit-lane-owned; not gated)
+[PASS] downstream gstar row present in the audit ledger (presence only)
+  [info] sm_gstar_higgs_sector_count_stretch_note_2026-05-29 live effective_status='unaudited' (audit-lane-owned; not gated)
+[PASS] Ward H_unit theorem present in the audit ledger (presence only)
+  [info] yt_ward_identity_derivation_theorem live effective_status='unaudited' (audit-lane-owned; not gated)
+[PASS] EW one-doublet bookkeeping present in the audit ledger (presence only)
+  [info] ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26 live effective_status='retained_bounded' (audit-lane-owned; not gated)
+[PASS] H_unit no-go row present in the audit ledger (presence only)
+  [info] hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15 live effective_status='unaudited' (audit-lane-owned; not gated)
 
 Part 2: nonzero supplied doublet gauges to the neutral ray
 [PASS] sample 1: U is unitary: [[ 0.+0.j -1.-0.j]

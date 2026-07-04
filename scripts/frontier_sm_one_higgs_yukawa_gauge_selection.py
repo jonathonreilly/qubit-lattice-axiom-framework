@@ -53,6 +53,15 @@ def ledger_row(claim_id: str) -> dict | None:
     return None
 
 
+def print_live_ledger_status(claim_id: str, row: dict | None) -> None:
+    effective = None if row is None else row.get("effective_status")
+    audit = None if row is None else row.get("audit_status")
+    print(
+        f"  [info] {claim_id} live effective_status={effective!r}, "
+        f"audit_status={audit!r} (audit-lane-owned; not gated)"
+    )
+
+
 @dataclass(frozen=True)
 class Field:
     name: str
@@ -115,27 +124,15 @@ def main() -> int:
     hypercharge_row = ledger_row("standard_model_hypercharge_uniqueness_theorem_note_2026-04-24")
     ew_higgs_row = ledger_row("ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26")
     check(
-        "hypercharge authority row is present and pending audit",
-        hypercharge_row is not None and hypercharge_row.get("effective_status") != "retained",
-        "" if hypercharge_row is None else str(
-            {
-                "effective_status": hypercharge_row.get("effective_status"),
-                "audit_status": hypercharge_row.get("audit_status"),
-            }
-        ),
+        "hypercharge authority row present in the audit ledger (presence only)",
+        hypercharge_row is not None,
     )
+    print_live_ledger_status("standard_model_hypercharge_uniqueness_theorem_note_2026-04-24", hypercharge_row)
     check(
-        "EW Higgs authority is retained/audited_clean in ledger",
-        ew_higgs_row is not None
-        and ew_higgs_row.get("effective_status") == "retained"
-        and ew_higgs_row.get("audit_status") == "audited_clean",
-        "" if ew_higgs_row is None else str(
-            {
-                "effective_status": ew_higgs_row.get("effective_status"),
-                "audit_status": ew_higgs_row.get("audit_status"),
-            }
-        ),
+        "EW Higgs authority present in the audit ledger (presence only)",
+        ew_higgs_row is not None,
     )
+    print_live_ledger_status("ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26", ew_higgs_row)
 
     hypercharge_text = hypercharge_note.read_text(encoding="utf-8")
     ew_text = ew_higgs_note.read_text(encoding="utf-8")

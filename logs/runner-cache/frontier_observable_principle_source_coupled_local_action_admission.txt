@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_observable_principle_source_coupled_local_action_admission.py
-runner_sha256: 95d550598bece0e9075de04d0507eeab702fb2ad270387ae0232a1f8f9303121
+runner_sha256: f55d30a90183e73c2b80e785e4e873e5b2054b125a273a0c1a9549dd8a2fd6ad
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.48
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 Runner: frontier_observable_principle_source_coupled_local_action_admission.py
@@ -20,12 +20,13 @@ Note: OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_
 [PASS] T6 ∂S/∂j_B = ψ̄_B ψ_B (single-site local operator) — diff_B = 0
 [PASS] T7 ∂²W/∂j_A ∂j_B = 0 on block-diagonal D (cross-block locality) — cross-derivative at sample = 0
 [PASS] T8 F_p for p ∈ {-2, -1, 1/2, 2, 3} does NOT equal W = log|Z| in source-coupled local-action
-[PASS] T9 audit ledger loaded — rows count = 2367
+[PASS] T9 audit ledger loaded — rows count = 3637
 [PASS] T9 parent OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE row present
-[PASS] T9 parent note status = audited_conditional (unchanged by this proposal) — effective_status = audited_conditional
+  [info] observable_principle_from_axiom_note.effective_status (audit-lane-owned; not gated) = retained_bounded
 [PASS] T9 Route D consolidated no_go row present in ledger
 [PASS] T9 structural-reframing route row present in ledger
-[PASS] T9 one-qubit local-algebra authority cl3_complexification_split present
+[PASS] T9 one-qubit local-algebra authority cl3_complexification_split row present in ledger (presence only)
+  [info] cl3_complexification_split.effective_status (audit-lane-owned; not gated) = retained
 [PASS] T10 honest-scope string present: 'Status authority:** independent audit lane only...'
 [PASS] T10 honest-scope string present: 'source-coupled local-action admission candidate...'
 [PASS] T10 honest-scope string present: 'open_gate...'
@@ -50,7 +51,7 @@ but does not fully eliminate...'
 [PASS] T12 cross-reference to MINIMAL_AXIOMS_2026-05-20.md present
 [PASS] T12 cross-reference to STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md present
 
-PASS=38 FAIL=0
+PASS=37 FAIL=0
 
 ----- stderr -----
 

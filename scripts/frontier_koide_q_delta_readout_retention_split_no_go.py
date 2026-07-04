@@ -93,12 +93,12 @@ def main() -> int:
     source_response_supported = (
         "local scalar observables are exactly the" in observable_note
         and "coefficients in its local source expansion" in observable_note
-        and "subtracting the zero-source baseline" in observable_note
+        and "zero-source subtraction used below is instead an explicit extensive baseline" in observable_note
         and "The physical order parameter is not the raw fermion determinant" in hierarchy_note
         and "local curvature of the effective action" in hierarchy_note
     )
     record(
-        "A.1 retained notes support local scalar source-response readout",
+        "A.1 cited notes support local scalar source-response readout",
         source_response_supported,
         "observable principle + hierarchy selector notes identify physical scalar readout with source-expansion coefficients.",
     )

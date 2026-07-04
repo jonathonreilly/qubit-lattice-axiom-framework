@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_observable_principle_p1_bridge_wave11_route_b_harlow_disjoint_additivity_external_narrow.py
-runner_sha256: e7982fadfd6fde333ee17fc2a93712f4333fba7df0c113a7dd06fb77942928c0
+runner_sha256: 03b787e1232f00b8277db55ae28a3ddae19b7b4cefd0bc12e87de06a68f67ddd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.68
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
 # Observable-principle P1 bridge Wave 11 Route B HSSS disjoint additivity
@@ -112,10 +112,12 @@ T9: 2x2 + 2x2 disjoint Grassmann block toy — F_p family
          (p, add_diff): [(-2.0, '-14746081/14760964'), (-1.0, '-3841/3842'), (0.5, '-sqrt(17)/4 - sqrt(226)/15 + sqrt(3842)/60'), (1.0, '-3599/3600'), (2.0, '-4315039/4320000'), (3.0, '-46531365833/46656000000')]
   [PASS] log r is additive on disjoint blocks (Cauchy classifier reproduces P1)
          log(r_A r_B) - log r_A - log r_B = 0
-  [PASS] Parent OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE is audited_conditional (unaffected by this note)
-         observable_principle_from_axiom_note.effective_status = audited_conditional
-  [PASS] Route A operator-algebraic note is not retained-grade (this Route B does not depend on its audit)
-         route A.effective_status = audited_failed
+  [PASS] parent row present in the ledger; this note does not depend on its audit grade
+         observable_principle_from_axiom_note
+  [info] observable_principle_from_axiom_note.effective_status = retained_bounded
+  [PASS] Route A operator-algebraic row present in the ledger; this Route B does not depend on its audit grade
+         observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17
+  [info] route A.effective_status = retained_bounded
 
 ==============================================================================
 T10: Source-note boundary

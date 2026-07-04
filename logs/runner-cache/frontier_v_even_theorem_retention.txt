@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_v_even_theorem_retention.py
-runner_sha256: 2a4177dc588ebe4cd77d94da50091e8aaa10c8f06e0b6ae47e3deb73a9a85f51
+runner_sha256: 6895b145591046a65375c8c0e5e3cc9fe36da3ac04a26024758a75d19c93595f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.61
+elapsed_sec: 0.51
 status: ok
 ----- stdout -----
 ========================================================================================

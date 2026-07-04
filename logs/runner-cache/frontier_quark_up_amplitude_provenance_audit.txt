@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_up_amplitude_provenance_audit.py
-runner_sha256: b7aea98a9ef3b0f463fb7a2e05cdb0166b3dffabd2a297027a2ee76ac2942553
+runner_sha256: 66fe3e77f3d5d9b07965b0b3433b25a7dc18ad7c71a90c41d1f0a97c87cf5b16
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.87
+elapsed_sec: 0.55
 status: ok
 ----- stdout -----
 

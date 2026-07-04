@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_pmns_graph_commutant_cycle_value_boundary.py
-runner_sha256: f099ced36fd1c8bac6464d6427d8c5f1055b2817dce2fbc43ea8967b84db7acc
+runner_sha256: 171ced39f061a8b3a80c0c3e6f1d69ea1319d7b2b2ebcd648f0b7e075a818522
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.11
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -34,8 +34,8 @@ PART 1: GRAPH-FIRST + PROJECTED COMMUTANT FIX THE SELECTOR BUNDLE
   [PASS] Those minima are exactly the three coordinate axes  (mins=((0.0, 0.0, 1.0), (0.0, 1.0, 0.0), (1.0, 0.0, 0.0)), min=0.00e+00)
   [PASS] The projected commutant generator has a 4-dimensional projected corner space  (dim=4)
   [PASS] The C3 transport remains unitary on the projected corner orbit
-  [PASS] The even Fourier mode is the corner average  (v0=0.178575+0.000000j)
-  [PASS] The odd Fourier mode is nonzero  (|v1|=0.044644)
+  [PASS] The even Fourier mode is the corner average  (v0=0.406015-0.134820j)
+  [PASS] The odd Fourier mode is nonzero  (|v1|=0.106953)
   [INFO] The projected commutant fixes the selector bundle (tau,q)  (tau=0, q=2)
 
 ========================================================================================
@@ -50,7 +50,7 @@ PART 2: TWO DISTINCT REDUCED-CYCLE POINTS SHARE THE SAME ROUTE SIGNATURE
 ========================================================================================
 PART 3: THE ROUTE IS VALUE-BLIND EVEN THOUGH THE VALUES ARE REALIZED
 ========================================================================================
-  [PASS] The graph-first / projected-commutant route signature is constant  (signature={'axis_count': 3, 'axis_mins': ((0.0, 0.0, 1.0), (0.0, 1.0, 0.0), (1.0, 0.0, 0.0)), 'axis_min_val': 0.0, 'tau': 0, 'q': 2, 'orbit_modes': (np.complex128(0.17857495230225157+0j), np.complex128(0.04464373807556288+1.3877787807814457e-17j), np.complex128(0.04464373807556288+1.3877787807814457e-17j))})
+  [PASS] The graph-first / projected-commutant route signature is constant  (signature={'axis_count': 3, 'axis_mins': ((0.0, 0.0, 1.0), (0.0, 1.0, 0.0), (1.0, 0.0, 0.0)), 'axis_min_val': 0.0, 'tau': 0, 'q': 2, 'orbit_modes': (np.complex128(0.4060149526117261-0.13481976228974463j), np.complex128(0.10150373815293152-0.03370494057243614j), np.complex128(0.10150373815293152-0.03370494057243615j))})
   [PASS] The native oriented-cycle value law still reads the reduced values exactly on the active block
   [PASS] The same selector bundle is recovered on both reduced-cycle points
   [PASS] So the route does not collapse the 3-real reduced family to a unique point  (same route signature, different values)

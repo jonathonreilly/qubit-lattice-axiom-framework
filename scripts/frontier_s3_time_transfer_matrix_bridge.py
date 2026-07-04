@@ -105,13 +105,13 @@ def main() -> int:
     print("  Candidate background: PL S^3 x R")
     print()
 
-    check_s3 = "PL homeomorphic to S^3" in s3_text or "Status:** CLOSED" in s3_text
-    check_anomaly = "d_t = 1 uniquely" in anomaly_text or "single-clock codimension-1 evolution excludes d_t > 1" in anomaly_text
+    check_s3 = "Finite-Radius Cap Certificate" in s3_text and "finite cone-cap construction certificate" in s3_text
+    check_anomaly = "dimension count is exactly d_t = 1 and the spacetime signature is (3,1)." in anomaly_text
     check_atlas = "`S^3` cap uniqueness" in atlas_text and "Anomaly-forced time" in atlas_text
     check_schur = "exact microscopic lattice boundary energy" in schur_text.lower() and "Schur-complement boundary energy" in schur_text
 
-    check("S^3 topology theorem is present and closed", check_s3, "S^3 compactification is a retained route-2 tool")
-    check("Anomaly-forced time theorem is present and exact", check_anomaly, "single-clock closure is a retained route-2 tool")
+    check("S^3 finite-radius cap certificate is present as a bounded route-2 tool", check_s3, "S^3 finite cone-cap construction certificate is the bounded route-2 topology tool")
+    check("Anomaly-forced time theorem is present and exact", check_anomaly, "single-clock d_t=1 closure is the route-2 time tool")
     check("Atlas contains both route-2 ingredients as reusable tools", check_atlas, "the atlas exposes the required topology/time primitives")
     check("Schur boundary action is present as the exact slice generator", check_schur, "the slice Hamiltonian comes from the exact microscopic boundary energy")
 

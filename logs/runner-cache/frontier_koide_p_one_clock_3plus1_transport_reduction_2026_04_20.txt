@@ -1,20 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_p_one_clock_3plus1_transport_reduction_2026_04_20.py
-runner_sha256: f6157568fe109ef0d41108e1b47d6a371f52d96e566de3a82a700e98f670c986
+runner_sha256: 0d7fb8f040031bf45f07fe30baf7eb57dd168d51f60189a7f40b46b65b9b236e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.50
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 ========================================================================
 Koide P one-clock 3+1 transport reduction
 ========================================================================
 
-(A) Retained anomaly-forced-time ambient
+(A) Conditional anomaly-cancellation bridge ambient
 ------------------------------------------------------------------------
-  [PASS] (A1) The retained theorem fixes d_t = 1 uniquely
-  [PASS] (A2) The retained theorem fixes spacetime as 3+1 dimensional
-  [PASS] (A3) The retained theorem uses single-clock codimension-1 evolution
+  [PASS] (A1) the conditional bridge fixes d_t = 1 (given its declared premises)
+  [PASS] (A2) the conditional bridge declares conditional 3+1 scope
+  [PASS] (A3) the conditional bridge supplies the local d_t cap through B-AXIS
 
 (B) The physical first branch and its unique target point
 ------------------------------------------------------------------------

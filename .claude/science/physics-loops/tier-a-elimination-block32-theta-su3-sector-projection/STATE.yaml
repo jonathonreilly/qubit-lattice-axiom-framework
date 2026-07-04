@@ -1,0 +1,37 @@
+block: tier-a-elimination-block32-theta-su3-sector-projection
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block32-theta-su3-sector-projection-20260704
+base_branch: physics-loop/tier-a-elimination-block31-theta-su3-star-pairwise-obstruction-20260704
+target: "theta gauge-side winding account, SU(3) star sector-level handling"
+claim_type: bounded_theorem
+registry_edits: false
+retirement_claimed: false
+status: verified_pre_commit
+source_commit: null
+pr: null
+active_route: "exact finite support for supplied central-sector projection controlling SU(3) triple joint-star data"
+hard_residual: "derive physical SU(3) sector/readout registration of central star projection/cocycle"
+files_touched:
+  - docs/THETA_SU3_STAR_CENTRAL_SECTOR_PROJECTION_EXACT_SUPPORT_NOTE_2026-07-04.md
+  - scripts/theta_su3_star_central_sector_projection_exact_support_2026_07_04.py
+  - logs/runner-cache/theta_su3_star_central_sector_projection_exact_support_2026_07_04.txt
+  - .claude/science/physics-loops/tier-a-elimination-block32-theta-su3-sector-projection/
+open_imports:
+  - physical SU(3) sector/readout registration
+  - closed-surface sector projection theorem beyond the finite Heisenberg witness
+  - G1 defect closure or suppression on the abelianized carrier
+  - G3 phase-source theorem for odd-branch-sensitive F cup F insertion
+  - theta mass-side determinant-channel bridge
+no_go_routes:
+  - "SU(3) even star data reduce universally to pairwise composite classes"
+trace_gate_classification: upstream_support
+review_findings: "Local scope review passed: the note denies theta retirement, theta_bar closure, physical SU(3) sector registration, phase-source derivation, registry edits, primitive edits, and global future-route foreclosure."
+verification:
+  runner: "PASS=51 FAIL=0"
+  py_compile: pass
+  audit_pipeline: "pass; newly seeded rows=1"
+  audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
+  diff_check: pass
+audit_row: "theta_su3_star_central_sector_projection_exact_support_note_2026-07-04: claim_type=bounded_theorem, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
+next_exact_action: "Commit, push, open stacked PR against Block31, then verify PR status and hosted audit_pipeline if GitHub checkout is available."
+stop_condition: "Block complete after PR is opened and local verification is complete; hosted checkout stalls are infrastructure, not science blockers."

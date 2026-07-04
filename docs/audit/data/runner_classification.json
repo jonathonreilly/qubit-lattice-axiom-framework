@@ -36924,6 +36924,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py"
     },
+    "theta_su3_star_central_sector_projection_exact_support_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 8,
+        "C": 9,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/theta_su3_star_central_sector_projection_exact_support_2026_07_04.py"
+    },
     "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04": {
       "assert_count": 1,
       "counts": {
@@ -90224,6 +90236,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/theta_su3_star_central_sector_projection_exact_support_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "theta_su3_star_central_sector_projection_exact_support_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 8,
+        "C": 9,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/theta_su3_star_pairwise_reduction_obstruction_2026_07_04.py": {
       "assert_count": 1,
       "claims": [
@@ -91440,12 +91467,12 @@
     "dominant_class_distribution": {
       "A": 503,
       "B": 644,
-      "C": 1276,
+      "C": 1277,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3330,
-    "runners_with_C": 1751,
+    "runners_classified": 3331,
+    "runners_with_C": 1752,
     "runners_with_D": 1068
   }
 }

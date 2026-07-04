@@ -28,4 +28,9 @@ Also re-keyed the dependent stale source lines named by the July 4 sweep and ref
 
 ## Next Exact Action
 
-Commit the complete block, push, and open one review PR.
+Review PR #4926, then run the comparability/clock-support packet before AC partial-decomposition and theta packets.
+
+## PR
+
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4926
+- Commit: `5af3f45a9 docs: repair record formation hygiene after axiom append`

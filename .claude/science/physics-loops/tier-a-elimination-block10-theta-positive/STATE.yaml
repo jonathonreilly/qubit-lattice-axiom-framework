@@ -2,11 +2,13 @@ block: tier-a-elimination-block10-theta-positive
 date: 2026-07-04
 branch: physics-loop/tier-a-elimination-block10-theta-positive-20260704
 base_branch: physics-loop/tier-a-elimination-block09-theta-gauge-20260704
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4935
+source_commit: cc49e6dfd
 target: theta gauge-side positive route stretch
 claim_type: open_gate
 registry_edits: false
 retirement_claimed: false
-status: source_verified_pending_pr
+status: pr_open
 verification:
   runner: "PASS=119 FAIL=0"
   py_compile: pass
@@ -14,4 +16,4 @@ verification:
   audit_lint_strict: "pass; existing warnings/notices only"
   diff_check: pass
 audit_row: theta_gauge_positive_route_stretch_status_2026-07-04
-next_exact_action: "Commit, push, and open stacked PR against block 9."
+next_exact_action: "Monitor PR #4935 audit_pipeline; next route is G3 phase-type F cup F insertion or G1 defect closure."

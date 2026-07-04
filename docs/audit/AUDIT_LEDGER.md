@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 189 |
 | **retained_no_go** | 191 |
-| **retained_bounded** | 854 |
+| **retained_bounded** | 855 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1945 |
+| unaudited | 1944 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1227 |
+| `audited_clean` | 1228 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2283 |
+| `unaudited` | 2282 |
 
 | claim_type | count |
 |---|---:|
@@ -1175,6 +1175,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_two_field_wave_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `statistics_outcome_factorization_not_forced_by_born_marginals_narrow_no_go_note_2026-06-18` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -16480,6 +16481,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** A two-registration finite-additive joint law with the fixed marginals is parameterized by a=m(s,s) in max(0,2p-1)<=a<=p, while the product law is only the single point a=p^2; for 0<p<1 other admissible choices exist.  _(class `A`)_
 - **chain closes:** True — Solving the marginal equations leaves one free coupling parameter a, and positivity leaves a nontrivial interval for every interior p. The p=1/2 correlated law and the diagonal two-qubit witness both exhibit the same marginals without product factorization.
 - **rationale:** The load-bearing step is exact finite-probability algebra, not a definition, renaming, external comparator, or tuned numerical match. The runner source constructs the table identities, concrete p=1/2 counterexamples, and diagonal Born-realizable witnesses rather than merely printing the verdict. The no-go is scoped narrowly to insufficiency of one-copy marginals plus finite additivity; the N1-N8 gate leaves future independence, stationarity, or preparation theorems open as added premises.
+- **auditor confidence:** high
+
+### `strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12`
+
+- **Note:** [`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Under a supplied finite mass determinant-channel readout interface with determinant block multiplicativity, continuous U(1) phase characters, and K/CPT orbit registration z ~ conj(z), the only admissible determinant phase character is k = 0; no gauge/action theta closure, physical exhaustion bridge, or Tier-A registry landing is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-strong-cp-det-bridge-round3`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** K/CPT orbit registration sends phi -> -phi, so an admissible scalar for one realized orbit must obey f_k(e^{i phi}) = f_k(e^{-i phi}) for all phi, forcing k = 0.  _(class `A`)_
+- **chain closes:** True — Within the bounded supplied interface, the U(1) character algebra plus orbit equality f(phi) = f(-phi) forces k = 0, while K-even nonmultiplicative probes such as cos(arg det) are excluded by the block-multiplicativity law. The direct dependencies are retained_bounded or accepted/meta for this bounded use, and the source note expressly excludes gauge theta, action-level observables, and physical readout exhaustion.
+- **rationale:** The load-bearing result is an exact algebraic closure over the supplied determinant-channel interface and retained/accepted one-hop authorities. The runner completes with PASS=19 FAIL=0 and checks the character multiplicativity, K/CPT conjugation, k=0 invariance result, and the cosine hostile guard, while also verifying the note's scope exclusions. The clean verdict applies only to the bounded mass-determinant-channel character-erasure bridge and must not be read as deriving the determinant readout interface, setting theta_gauge = 0, exhausting action-level observables, or moving any Tier-A registry row.
 - **auditor confidence:** high
 
 ### `strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26`

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 421,
     "high": 288,
-    "leaf": 757,
+    "leaf": 756,
     "medium": 516
   },
   "cycle_break_target_count": 14,
@@ -36602,32 +36602,6 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
-        "strong_cp_theta_zero_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.5,
-      "note_path": "docs/STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_strong_cp_determinant_readout_bridge_2026_06_12.py",
-      "transitive_descendants": 3
-    },
-    {
-      "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18",
@@ -36695,6 +36669,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "strong_cp_theta_zero_note",
+        "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+        "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.085,
+      "note_path": "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py",
       "transitive_descendants": 2
     },
     {
@@ -39840,33 +39841,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "strong_cp_theta_zero_note",
-        "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
-        "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py",
       "transitive_descendants": 2
     },
     {
@@ -58283,5 +58257,5 @@
     }
   ],
   "ready_count": 175,
-  "total_pending": 1982
+  "total_pending": 1981
 }

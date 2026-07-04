@@ -1,7 +1,7 @@
 # Standard Model Hypercharge Uniqueness from Anomaly Cancellation
 
 **Date:** 2026-04-24
-**Type:** structural-uniqueness theorem (rational arithmetic on a finite anomaly system).
+**Type:** positive_theorem — structural-uniqueness theorem (rational arithmetic on a finite anomaly system).
 **Claim scope:** Conditional on the cited retained left-handed content, the
 existence of an SU(2)-singlet right-handed completion, the standard SM anomaly
 traces `Tr[Y]=0`, `Tr[Y^3]=0`, `Tr[SU(3)^2 Y]=0`, the neutral-singlet

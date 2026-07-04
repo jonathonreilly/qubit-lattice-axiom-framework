@@ -1,5 +1,7 @@
 # DM Wilson Direct-Descendant Constructive Transport Plateau Schur Spectral-Isotropy Selector
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-19  
 **Status:** exact current-branch positive plateau-breaker candidate on the
 current certified constructive witness set.

@@ -6,7 +6,7 @@ claim_type_author_hint: bounded_support_map
 # Record Pointer Broadcast Circuit Interface
 
 **Date:** 2026-06-05
-**Claim type:** bounded support map and conditional finite witness.
+**Claim type:** bounded_theorem — bounded support map and conditional finite witness.
 **Status authority:** independent audit lane only. This source note does not
 set an audit verdict, edit audit data, or assert package-status promotion.
 **Primary runner:**

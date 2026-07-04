@@ -1,5 +1,7 @@
 # A1 derivation status — full landscape audit
 
+**Claim type:** meta
+
 **Context:** this note documents the exhaustive audit of routes to
 derive A1 (Frobenius equipartition, |b|/a = 1/√2 ⟺ Brannen c = √2 ⟺
 Koide Q = 2/3) from the retained Cl(3)/Z³ framework + textbook math.

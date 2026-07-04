@@ -1,5 +1,7 @@
 # YT Class #7 — Spontaneous C_{3[111]} Breaking Retention Analysis Note
 
+**Claim type:** no_go
+
 **Date:** 2026-04-18
 **Status:** framework-native retention analysis of Class #7 (spontaneous
 breaking of the retained cyclic C_{3[111]} symmetry on the hw=1 generation

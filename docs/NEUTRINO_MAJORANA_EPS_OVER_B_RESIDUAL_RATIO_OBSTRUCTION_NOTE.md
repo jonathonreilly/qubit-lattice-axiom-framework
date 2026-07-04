@@ -1,5 +1,7 @@
 # Majorana `eps/B` Residual-Ratio Obstruction
 
+**Claim type:** no_go
+
 **Date:** 2026-04-15
 **Status:** exact blocker-sharpening theorem on the fixed staircase placement
 **Atlas placement:** canonical toolkit on `main` at

@@ -1,5 +1,7 @@
 # Majorana Continuum-Bridge Transplant Obstruction
 
+**Claim type:** no_go
+
 **Date:** 2026-04-15
 **Status:** exact frontier boundary on the inverse-limit / continuum-bridge
 transplant route

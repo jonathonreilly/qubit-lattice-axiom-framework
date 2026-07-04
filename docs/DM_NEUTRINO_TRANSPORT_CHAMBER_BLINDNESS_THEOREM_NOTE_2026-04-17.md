@@ -1,5 +1,7 @@
 # Transport Chamber-Blindness Theorem — eta/eta_obs at Z_3 Doublet-Block Selector Candidates
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-17
 **Status:** NARROWER-GAP + STRUCTURAL FACTORISATION + NO-PHYSICS-SELECTOR
 **Script:** `scripts/frontier_dm_neutrino_transport_chamber_blindness_theorem.py`

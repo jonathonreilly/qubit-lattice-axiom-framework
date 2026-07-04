@@ -1,5 +1,7 @@
 # SU(3) Gauge-Loop Derivation of the 8/3 Enhancement -- Obstruction Note
 
+**Claim type:** no_go
+
 **Date:** 2026-04-25 (third iteration)
 **Status:** **HONEST OBSTRUCTION** on the simplest closure path for the
 unified A0+G1 candidate identity. The standard one-loop Coleman-Weinberg

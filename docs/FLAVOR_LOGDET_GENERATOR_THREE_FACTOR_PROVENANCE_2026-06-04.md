@@ -1,7 +1,7 @@
 # Flavor - log-det generator provenance after the Record axiom
 
 **Date:** 2026-06-04
-**Claim type:** provenance decomposition / roadmap. This is not a value
+**Claim type:** meta — provenance decomposition / roadmap. This is not a value
 derivation and not a row promotion.
 **Status authority:** independent audit lane only. This note sets no audit
 status and assigns no grade.

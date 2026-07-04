@@ -1,5 +1,7 @@
 # Teleportation Logical Z Convention Clarification
 
+**Claim type:** meta
+
 **Date:** 2026-04-25
 **Status:** claim-boundary clarification; not a new protocol result
 

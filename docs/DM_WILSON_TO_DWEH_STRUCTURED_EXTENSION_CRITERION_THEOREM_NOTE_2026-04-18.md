@@ -1,5 +1,7 @@
 # DM Wilson-to-`dW_e^H` Structured Extension Criterion Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-18
 **Status:** exact current-stack theorem identifying the weakest honest test for
 when a generic Wilson Hermitian source family extends to the structured

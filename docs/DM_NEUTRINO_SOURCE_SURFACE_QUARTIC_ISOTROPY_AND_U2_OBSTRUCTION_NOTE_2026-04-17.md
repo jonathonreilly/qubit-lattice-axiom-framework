@@ -1,5 +1,7 @@
 # Quartic-Isotropy Identity + U(2)-Invariance Obstruction — Frobenius Uniqueness + Full-W at Physically-Forced m + Quartic Extension
 
+**Claim type:** no_go
+
 **Date:** 2026-04-17
 **Status:** **three new obstruction theorems** + strictly narrowed gap; one conditional closure candidate gated on an unretained axiom
 **Script:** `scripts/frontier_dm_neutrino_source_surface_quartic_isotropy_and_u2_obstruction.py`

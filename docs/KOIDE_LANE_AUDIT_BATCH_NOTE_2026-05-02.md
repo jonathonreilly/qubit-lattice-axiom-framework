@@ -1,5 +1,7 @@
 # Koide Lane Audit Batch — Three Notes
 
+**Claim type:** meta
+
 **Date:** 2026-05-02
 **Status:** audit batch packet covering three Koide-lane notes whose
 runners pass cleanly but whose audit-ledger status is `proposed_retained,

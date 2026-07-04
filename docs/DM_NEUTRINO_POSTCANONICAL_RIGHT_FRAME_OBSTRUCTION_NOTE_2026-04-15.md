@@ -1,5 +1,7 @@
 # DM Neutrino Post-Canonical Right-Frame Obstruction
 
+**Claim type:** no_go
+
 **Date:** 2026-04-15
 **Status:** exact current-stack obstruction theorem on intrinsic derivation of
 the post-canonical slot-supported bridge

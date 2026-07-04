@@ -12,6 +12,8 @@
 
 # P1 BZ Quadrature 2-Loop — Schematic 8D MC Magnitude-Envelope Check (Retention via Loop-Geometric Bound, Not MC)
 
+**Claim type:** no_go
+
 **Date:** 2026-04-18 (amended 2026-04-18 with §0 honesty correction)
 **Status:** **schematic 2-loop 8D Monte Carlo magnitude-envelope check,
 NOT a framework-native MC retention of `Δ_R^{(2)}`.** The 8D MC

@@ -1,5 +1,7 @@
 # Gauge-Vacuum Plaquette First-Sector Minimal-Bulk Completion `3d+1` Line Closure Endpoint
 
+**Claim type:** positive_theorem
+
 ## Statement
 
 On the selected minimally-positive factorized Wilson branch, the strongest

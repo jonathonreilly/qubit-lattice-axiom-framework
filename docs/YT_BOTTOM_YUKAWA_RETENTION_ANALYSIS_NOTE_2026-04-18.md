@@ -12,6 +12,8 @@
 
 # Bottom Yukawa P1 Retention Analysis Note (b-Quark Ward Extension)
 
+**Claim type:** no_go
+
 **Date:** 2026-04-18 (amended 2026-04-18 with §0 scope correction)
 **Status:** framework-native **scope analysis** of the b-Yukawa under the
 **species-uniform interpretation** of the retained Ward identity. The

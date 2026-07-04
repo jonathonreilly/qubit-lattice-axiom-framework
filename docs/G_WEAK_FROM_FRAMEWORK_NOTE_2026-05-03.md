@@ -1,7 +1,7 @@
 # G_weak / y_0² from Framework Primitives — Stretch Attempt with Lattice-Scale Closing Derivation
 
 **Date:** 2026-05-03
-**Type:** stretch_attempt (output type c) WITH closing partial at lattice scale
+**Type:** bounded_theorem — stretch_attempt (output type c) WITH closing partial at lattice scale
 **Cycle:** 15 of retained-promotion campaign 2026-05-02 → 2026-05-03
 **Claim scope:** documents a structural sharpening of cycle 12's
 Obstruction O2 (`y_0² imports G_weak = 0.653`). On the current

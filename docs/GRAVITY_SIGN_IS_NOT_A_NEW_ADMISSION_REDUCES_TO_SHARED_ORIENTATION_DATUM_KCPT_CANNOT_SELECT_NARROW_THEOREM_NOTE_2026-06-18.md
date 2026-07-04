@@ -1,8 +1,8 @@
 # The Emergent-Gravity Sign Is Not a New Admission: It Reduces (By Kind) to the Shared T-Odd Orientation Datum, and Record's K/CPT Cannot Select It (2-of-3 Unification)
 
 **Date:** 2026-06-18
-**Type:** narrow_theorem (orientation-datum reduction + K/CPT-selection no-go) + frontier resolution map
-**Claim type:** narrow_theorem
+**Type:** positive_theorem — narrow_theorem (orientation-datum reduction + K/CPT-selection no-go) + frontier resolution map
+**Claim type:** positive_theorem — narrow_theorem
 
 **Claim scope (narrow).** Three structural results on the one residual admission of
 emergent gravity — the overall Einstein–Hilbert / conformal-trace **mode sign** that fixes

@@ -1,5 +1,7 @@
 # Class #3: SUSY / 2HDM Retention Analysis Note
 
+**Claim type:** no_go
+
 **Date:** 2026-04-18
 **Status:** framework-native retention analysis of candidate class #3
 (SUSY-like / Two-Higgs-Doublet Model) for species differentiation of the

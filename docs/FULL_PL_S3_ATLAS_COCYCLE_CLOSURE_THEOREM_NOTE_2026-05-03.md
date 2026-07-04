@@ -1,7 +1,7 @@
 # Full PL S^3 Atlas Cocycle Closure on the 4-Simplex Boundary — Theorem Note
 
 **Date:** 2026-05-03
-**Type:** closing_derivation (output type a)
+**Type:** positive_theorem — closing_derivation (output type a)
 **Claim scope:** closes Obstruction 1 from cycle 10's GR atlas closure
 stretch attempt by constructing the full 5-chart PL S^3 = ∂(4-simplex)
 atlas data and numerically verifying the 10 triangle-overlap cocycle

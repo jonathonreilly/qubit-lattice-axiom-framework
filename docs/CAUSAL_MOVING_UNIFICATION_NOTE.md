@@ -1,5 +1,7 @@
 # Causal vs Moving-Source Unification Note
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-06  
 **Status:** narrow classification note: shared causal-delay core, but genuinely separate observables
 

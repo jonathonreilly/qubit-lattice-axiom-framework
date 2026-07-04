@@ -1,5 +1,7 @@
 # Koide `Gamma`-Orbit Positive One-Clock Semigroup
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-18  
 **Status:** exact reduction of the microscopic value-law target to one positive
 generator plus a cone branch on the full-cube route  

@@ -1,5 +1,7 @@
 # DM Neutrino Odd Mixed-Bridge Extension
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15  
 **Status:** exact extension-class theorem for any positive DM odd-slot activator  
 **Script:** `scripts/frontier_dm_neutrino_odd_mixed_bridge_extension.py`

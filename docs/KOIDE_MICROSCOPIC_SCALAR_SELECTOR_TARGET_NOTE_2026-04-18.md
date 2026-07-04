@@ -1,5 +1,7 @@
 # Koide Microscopic Scalar Selector Target
 
+**Claim type:** open_gate
+
 **Date:** 2026-04-18  
 **Status:** exact sharpening of the remaining charged-lepton Koide target to one
 microscopic scalar selector law  

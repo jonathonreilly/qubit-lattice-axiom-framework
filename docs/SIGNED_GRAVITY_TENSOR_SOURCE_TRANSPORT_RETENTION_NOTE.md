@@ -1,5 +1,7 @@
 # Signed Gravity Tensor-Source Transport And Retention Note
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-26
 **Status:** finite carrier retention and projective transport positive;
 nonlinear closure gated; not a physical signed-gravity claim

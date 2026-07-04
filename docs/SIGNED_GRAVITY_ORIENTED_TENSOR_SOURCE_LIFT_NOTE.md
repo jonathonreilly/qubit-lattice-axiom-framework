@@ -1,5 +1,7 @@
 # Signed Gravity Oriented Tensor-Source Lift Note
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-26
 **Status:** finite conditional tensor-source lift; scalar-only no-overclaim
 preserved; not a physical signed-gravity claim

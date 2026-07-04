@@ -1,5 +1,7 @@
 # Majorana Local Pfaffian Uniqueness
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15
 **Status:** exact one-generation local bilinear uniqueness theorem on the
 main-derived neutrino lane

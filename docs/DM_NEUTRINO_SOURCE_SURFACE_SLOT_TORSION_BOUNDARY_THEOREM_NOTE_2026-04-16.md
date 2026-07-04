@@ -1,5 +1,7 @@
 # DM Neutrino Source-Surface Slot-Torsion Boundary Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-16
 **Status:** exact atlas-supported boundary theorem on the live source-oriented sheet
 **Atlas placement:** canonical toolkit on `main` at

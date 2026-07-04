@@ -57,19 +57,22 @@ The alternative route — reading the "Record / Fixed Reality" section title as
 already carrying this — is a reading ruling, and your no-rulings rule closes
 that route. The live options are:
 
-- **(A) Certify first, approve last** — fire the bounded notes now: an
+- **(A) Derive, audit, reference** — fire the bounded notes now: an
   underivability note (comparability is not derivable from the landed set —
   countermodel exhibit) and a conditional certification note (with the
-  sentence, the chain and the arrow follow), plus blind-panel honing per the
-  2026-07-02 precedent; the one-sentence approval is the final step. The
-  formation append is the argument for this order: its adversarial pass
-  changed the wording (law-form fell to occurrence strength). Approving
-  before certification risks approving the wrong sentence.
-- **(B) Leave it open** — every arrow-dependent result in every lane stays
-  conditional on comparability indefinitely.
+  sentence, the chain and the arrow follow), submitted for review and audit
+  like any science. Downstream arrow work then references the audited notes,
+  carrying the candidate sentence as a named conditional premise — nothing
+  blocks on an approval act. The append remains available as an owner supply
+  act whenever you choose to make it; the formation append is the precedent
+  for why derivation runs first — its adversarial pass changed the wording
+  (law-form fell to occurrence strength).
+- **(B) Leave it open** — every arrow-dependent result stays conditional and
+  the underivability half is never pinned.
 
-Recommendation: A — with the approval strictly last. Nothing is at approval
-grade today; this pager is a decision preview, not an approval surface.
+Recommendation: A. The derivation notes fired 2026-07-04; this pager is a
+routing preview, not an approval surface, and no approval is requested or
+scheduled.
 
 ## Mechanics if approved
 

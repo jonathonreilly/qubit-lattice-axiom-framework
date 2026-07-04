@@ -108,6 +108,13 @@ def main() -> int:
         == ["reading_occupancy_selection", "delta_readout_identification_R_eta", "species_bridge"],
         "",
     )
+    ac_row = derivation_targets["staggered_dirac_realization_gate_note_2026-05-03"]
+    ac_statement = ac_row.get("statement", "")
+    ac_reclass = (ac_row.get("partial_reclassifications") or {}).get("reading_occupancy_selection_value_face", {})
+    check("AC_phi_lambda(i) value face is reclassified to realized-state registration in machine row", "value face retired to realized-state registration" in ac_statement)
+    check("AC_phi_lambda(i) surviving residual is measure-side/dynamical realization", "measure-side doublet occupancy realization binary" in ac_statement)
+    check("AC_phi_lambda(i) machine reclassification source is registered", ac_reclass.get("source") == "docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md", str(ac_reclass))
+    check("AC_phi_lambda(i) machine reclassification keeps measure-side boundary", "measure-side/dynamical realization binary remains" in ac_reclass.get("boundary", ""))
     check(
         "theta has two named minimum atoms",
         derivation_targets["strong_cp_theta_zero_note"].get("minimum_decomposition")
@@ -139,6 +146,9 @@ def main() -> int:
     check("note says Y0 and g0 are not counted", "not** counted as admitted inputs" in note)
     check("note states two dimensionless Tier-A admissions", "two dimensionless Tier-A admissions" in note)
     check("note says sharpening adds/removes/regrades nothing", "No admission is\nadded, removed, adopted, or re-graded" in note)
+    check("note records 2026-07-04 value-face reclassification", "2026-07-04 value-face reclassification" in note)
+    check("note says per-lane r value is registered state data", "per-lane\nvalue of `r` is registered state data" in note)
+    check("note says surviving residual is measure-side realization", "surviving Tier-A\nresidual in (i) is the measure-side/dynamical realization binary" in note)
     check("note says dependent rows stay bounded", "every\ndependent stays bounded" in note)
     check("note says audit status remains audit-lane-only", "audit status remains audit-lane-only" in note)
     check("note propagation says Tier-A accepted premise is bounded", "chain-satisfying **only at `retained_bounded`**" in note)

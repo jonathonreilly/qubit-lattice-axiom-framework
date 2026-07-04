@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/admitted_input_registry_tier_a_boundary_check.py
-runner_sha256: 24230ee67eb119c558f7ab9a52a255d1a43ef3f4360209f72cefc9794de29878
+runner_sha256: f9319a220c573dc9d250635e550d3097b3fbfaaa3387619c6ae2fd2fc6ed55cf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -34,6 +34,10 @@ Scope: source/registry alignment only; no audit verdict changes.
 [PASS] theta has minimum decomposition -- ['gauge_side_winding_account', 'mass_side_orientation_determinant_readout_bridge']
 [PASS] theta has sharpening source list
 [PASS] AC_phi_lambda has three named minimum atoms
+[PASS] AC_phi_lambda(i) value face is reclassified to realized-state registration in machine row
+[PASS] AC_phi_lambda(i) surviving residual is measure-side/dynamical realization
+[PASS] AC_phi_lambda(i) machine reclassification source is registered -- {'status': 'reclassified_to_realized_state_registration', 'source': 'docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md', 'boundary': 'Only the per-lane value face moves out of Tier-A. The measure-side/dynamical realization binary remains part of AC_phi_lambda.'}
+[PASS] AC_phi_lambda(i) machine reclassification keeps measure-side boundary
 [PASS] theta has two named minimum atoms
 [PASS] convention rows are present -- ['g_bare_rigidity_theorem_note', 'hypercharge_identification_note']
 [PASS] Y0 convention label matches -- Y0
@@ -57,6 +61,9 @@ Scope: source/registry alignment only; no audit verdict changes.
 [PASS] note says Y0 and g0 are not counted
 [PASS] note states two dimensionless Tier-A admissions
 [PASS] note says sharpening adds/removes/regrades nothing
+[PASS] note records 2026-07-04 value-face reclassification
+[PASS] note says per-lane r value is registered state data
+[PASS] note says surviving residual is measure-side realization
 [PASS] note says dependent rows stay bounded
 [PASS] note says audit status remains audit-lane-only
 [PASS] note propagation says Tier-A accepted premise is bounded
@@ -68,7 +75,7 @@ Scope: source/registry alignment only; no audit verdict changes.
 [PASS] forbidden positive status claim absent: Record is a Tier-A admission
 [PASS] forbidden positive status claim absent: scale-reference primitive is a Tier-A admission
 
-SUMMARY: TIER-A REGISTRY BOUNDARY PASS=56 FAIL=0
+SUMMARY: TIER-A REGISTRY BOUNDARY PASS=63 FAIL=0
 
 ----- stderr -----
 

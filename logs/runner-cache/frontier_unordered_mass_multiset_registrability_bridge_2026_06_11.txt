@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py
-runner_sha256: 12eccf4c9b3e715b0dadefb74028f66ffcd90f7eda184aa90733bfe9c00f0572
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.13
-status: ok
------ stdout -----
 Claim boundary: finite algebra under supplied context + explicit P-dep; P-dep is not derived from Record alone.
 PASS L1 flip identity conj(H(delta)) == H(-delta)
 PASS L2 {P_k} orthogonal idempotents, sum=I, central for H(delta)
@@ -23,6 +15,3 @@ PASS G6 hostile within-orbit order probe f(k,x)=[k==1]x violates per-record ORBI
 PASS D1 boundary points sin(3 delta)=0: cos(3 delta)=+/-1 exactly, registrable family flip-equal, G4 hostile vanishes there
 PASS H1 source scope: P-dep explicit conditional premise, not Record-derived
 TOTAL: PASS=15 FAIL=0
-
------ stderr -----
-

@@ -1,5 +1,7 @@
 # DM Wilson Direct-Descendant Constructive Transport Plateau Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-19
 **Status:** exact current-branch nonuniqueness theorem for constructive-sign
 transport extremality. On the fixed native `N_e` seed surface, maximizing the

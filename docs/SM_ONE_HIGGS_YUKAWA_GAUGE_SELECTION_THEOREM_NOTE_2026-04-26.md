@@ -1,5 +1,7 @@
 # Standard Model One-Higgs Yukawa Gauge-Selection Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-26
 
 **Status authority:** independent audit lane only. This source note states the

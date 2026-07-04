@@ -1,5 +1,7 @@
 # Axiom-First Majorana Operator Classification
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15
 **Status:** exact operator-classification result; not a mass-spectrum closure
 **Atlas placement:** canonical toolkit on `main` at

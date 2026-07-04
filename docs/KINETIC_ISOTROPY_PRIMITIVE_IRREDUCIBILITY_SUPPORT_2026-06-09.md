@@ -1,7 +1,7 @@
 # Kinetic-Isotropy Primitive Irreducibility Support
 
 **Date:** 2026-06-09
-**Claim type:** support / primitive-boundary witness
+**Claim type:** bounded_theorem — support / primitive-boundary witness
 **Type:** support
 **Status authority:** independent audit lane only. This source note does not set,
 predict, promote, or demote any audit outcome.

@@ -1,5 +1,7 @@
 # CKM NLO Barred-Triangle and Protected-Gamma Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-25
 
 **Status authority:** independent audit lane only. This source note does not

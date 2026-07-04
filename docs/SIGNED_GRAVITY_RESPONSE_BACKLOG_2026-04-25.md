@@ -1,5 +1,7 @@
 # Signed Gravitational Response Lane Backlog
 
+**Claim type:** meta
+
 **Date:** 2026-04-25
 **Branch:** `codex/signed-gravity-response-backlog`
 **Status:** working backlog for the high-risk signed gravitational response

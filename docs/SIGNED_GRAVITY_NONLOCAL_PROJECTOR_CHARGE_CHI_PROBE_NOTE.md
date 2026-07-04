@@ -1,5 +1,7 @@
 # Signed Gravity Nonlocal Projector-Charge `chi_g` Probe Note
 
+**Claim type:** open_gate
+
 **Date:** 2026-04-25
 **Status:** first concrete Candidate C probe; formal control only
 **Script:** [`../scripts/signed_gravity_nonlocal_projector_charge_probe.py`](../scripts/signed_gravity_nonlocal_projector_charge_probe.py)

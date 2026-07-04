@@ -1,5 +1,7 @@
 # Universal QG Continuum Bridge Reduction Note
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15  
 **Role:** direct-universal quantum-gravity / continuum-interpretation frontier
 **Script:** `scripts/frontier_universal_qg_continuum_bridge_reduction.py`

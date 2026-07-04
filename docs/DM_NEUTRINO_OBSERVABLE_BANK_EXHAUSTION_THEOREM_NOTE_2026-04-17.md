@@ -1,5 +1,7 @@
 # Observable-Bank Exhaustion — Atlas Exhaustion Theorem (Obstruction + New-Gap)
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-17
 **Status:** OBSTRUCTION + NEW-GAP at this note's scope. Names the three promotion lanes (P1 / P2 / P3) that can close the selector gate; integrated closure is the downstream PMNS-as-f(H) closure via P3.
 **Script:** `scripts/frontier_dm_neutrino_observable_bank_exhaustion_theorem.py`

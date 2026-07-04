@@ -1,5 +1,7 @@
 # Light Cone Framing — Lieb-Robinson is Standard Lattice QFT
 
+**Claim type:** meta
+
 **Date:** 2026-04-11 (math corrected 2026-05-01; CN LR bridge added
 2026-05-09; audit-named repair 2026-06-12)
 **Status authority:** independent audit lane only. This source note does

@@ -1,5 +1,7 @@
 # Signed Gravity Source-Line Origin / Partial Tensor-Lift Note
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-26
 **Status:** conditional source-line origin theorem target; partial invariant
 `A1` tensor lift; full tensor/Einstein lift still blocked

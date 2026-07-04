@@ -1,5 +1,7 @@
 # Majorana Charge-Two Primitive Reduction
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15
 **Status:** exact frontier reduction on the current neutrino lane
 **Atlas placement:** canonical toolkit on `main` at

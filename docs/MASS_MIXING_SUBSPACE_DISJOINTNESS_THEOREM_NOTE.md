@@ -1,5 +1,7 @@
 # Mass and Mixing Subspace Disjointness on the hw=1 Triplet
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-17
 **Status:** exact structural theorem
 **Runners:**

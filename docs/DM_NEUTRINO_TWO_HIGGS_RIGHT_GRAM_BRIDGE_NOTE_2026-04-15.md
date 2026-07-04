@@ -1,5 +1,7 @@
 # DM Neutrino Two-Higgs Right-Gram Bridge Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15  
 **Status:** exact positive bridge theorem on the canonical local two-Higgs
 neutrino lane  

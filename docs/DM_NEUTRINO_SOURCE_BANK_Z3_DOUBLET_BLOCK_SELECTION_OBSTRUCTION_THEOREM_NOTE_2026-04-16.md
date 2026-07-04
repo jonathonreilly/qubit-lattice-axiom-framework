@@ -1,5 +1,7 @@
 # DM Neutrino Source-Bank `Z_3` Doublet-Block Selection Obstruction Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-16  
 **Status:** exact atlas-supported obstruction theorem on the live source-oriented sheet  
 **Script:** `scripts/frontier_dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem.py`

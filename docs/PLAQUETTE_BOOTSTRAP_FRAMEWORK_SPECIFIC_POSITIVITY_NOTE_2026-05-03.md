@@ -1,7 +1,7 @@
 # Plaquette Bootstrap — Framework-Specific Positivity (3x3 Extension)
 
 **Date:** 2026-05-03
-**Type:** framework-specific positivity refinement support theorem + named-obstruction stretch
+**Type:** bounded_theorem — framework-specific positivity refinement support theorem + named-obstruction stretch
 **Claim scope:** extend block 01's small-truncation bootstrap framework-integration
 (`PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md`) by:
 (1) the 3x3 Hankel Gram matrix `{1, P, P²}` PSD condition;

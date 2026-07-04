@@ -1,5 +1,7 @@
 # DM Neutrino Odd-Circulant Current-Stack Zero Law
 
+**Claim type:** no_go
+
 **Date:** 2026-04-15  
 **Status:** exact current-stack theorem on the last local DM coefficient slot  
 **Script:** `scripts/frontier_dm_neutrino_odd_circulant_current_stack_zero_law.py`

@@ -1,5 +1,7 @@
 # Signed Gravity Source-Action Escape Hatch Audit
 
+**Claim type:** open_gate
+
 **Date:** 2026-04-25
 **Status:** source-action escape-hatch classification after
 `SOURCE_PRIMITIVE_BLOCKED_LOCAL`

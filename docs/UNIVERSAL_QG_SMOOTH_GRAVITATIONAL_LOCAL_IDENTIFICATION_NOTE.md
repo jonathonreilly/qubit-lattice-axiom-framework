@@ -1,5 +1,7 @@
 # Universal QG Smooth Gravitational Local Identification
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15  
 **Role:** direct-universal quantum-gravity / smooth local gravitational
 continuum identification theorem

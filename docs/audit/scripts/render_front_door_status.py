@@ -23,6 +23,52 @@ def load_json(path: Path) -> dict:
         return json.load(f)
 
 
+def foundation_surface_lines() -> list[str]:
+    """Registry-derived foundation block.
+
+    The front door must never hand-state the foundation surface: this block is
+    generated from the premise registries, so an axiom memo re-date or a
+    primitive/Tier-A registry change lands here on the next pipeline run
+    without anyone editing prose. audit_lint separately warns when a
+    front-door surface cites a superseded axiom-memo path.
+    """
+    premise = load_json(DATA_DIR / "axiom_premise_nodes.json")
+    tier_a = load_json(DATA_DIR / "tier_a_admissions.json")
+    nodes = premise.get("nodes", {})
+    lines = [
+        "## Foundation Surface",
+        "",
+        "| Premise (stable id) | Class | Current source |",
+        "|---|---|---|",
+    ]
+    for cid in premise.get("canonical_ids", []):
+        node = nodes.get(cid, {})
+        path = node.get("current_path") or "-"
+        klass = "axiom set" if cid == "minimal_axioms" else "approved primitive"
+        link = f"[`{path}`](../../{path})" if path != "-" else "-"
+        lines.append(f"| `{cid}` | {klass} | {link} |")
+    targets = sorted(
+        (tier_a.get("derivation_targets") or {}).items(),
+        key=lambda kv: kv[1].get("label") or kv[0],
+    )
+    target_names = ", ".join(
+        f"`{entry.get('label') or cid}` (row `{cid}`)" for cid, entry in targets
+    )
+    lines.extend(
+        [
+            "",
+            f"Tier-A admitted derivation targets ({len(targets)}): {target_names}.",
+            "Dependents chain-satisfy only at `retained_bounded` until an",
+            "admission is retired by a retained derivation.",
+            "",
+            "Owner-approval history for every axiom/primitive change:",
+            "[`docs/audit/AXIOM_MINIMALITY_POLICY.md`](../audit/AXIOM_MINIMALITY_POLICY.md) section 6.",
+            "",
+        ]
+    )
+    return lines
+
+
 def status_counts() -> tuple[dict[str, int], int, int]:
     summary = load_json(DATA_DIR / "effective_status_summary.json")
     counts = summary["effective_status_counts"]
@@ -101,6 +147,7 @@ def main() -> None:
         "This file summarizes the generated audit state that the root README links to.",
         "It is not a physics claim surface and should not be edited by hand.",
         "",
+        *foundation_surface_lines(),
         "## Audit Surface",
         "",
         table(

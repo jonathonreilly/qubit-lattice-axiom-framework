@@ -1,5 +1,7 @@
 # Majorana Background-Normalized Local Response Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15
 **Status:** exact local background-normalization theorem on the admitted
 Majorana Nambu family

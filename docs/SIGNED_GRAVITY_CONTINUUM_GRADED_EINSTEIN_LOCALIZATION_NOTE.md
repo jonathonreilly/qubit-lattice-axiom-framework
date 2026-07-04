@@ -1,5 +1,7 @@
 # Signed Gravity Continuum Graded Einstein Localization Note
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-26
 **Status:** continuum-family transport on the chosen canonical target plus
 graded formal nonlinear localization theorem; not a physical signed-gravity

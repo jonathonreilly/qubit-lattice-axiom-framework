@@ -6,7 +6,7 @@
 substitution) on the *internal algebraic structure* of the bilinear
 carrier symbol `K_R` defined in
 [`S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md).
-**Claim type:** positive_theorem, narrow scope.
+**Claim type:** bounded_theorem — positive_theorem, narrow scope.
 **Status authority:** independent audit lane only.
 **Authority role:** records a class-A structural property of the carrier
 symbol under the same named admitted inputs as the parent definition.

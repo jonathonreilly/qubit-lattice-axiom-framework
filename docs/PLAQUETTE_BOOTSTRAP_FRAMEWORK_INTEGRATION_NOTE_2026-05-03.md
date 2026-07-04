@@ -1,7 +1,7 @@
 # Plaquette Bootstrap — Framework-Integration Theorem Note
 
 **Date:** 2026-05-03
-**Type:** bounded/exact support theorem + named-obstruction stretch
+**Type:** bounded_theorem — bounded/exact support theorem + named-obstruction stretch
 **Claim scope:** map the lattice-bootstrap approach (Anderson-Kruczenski 2017,
 Kazakov-Zheng 2022/2024, JHEP 12(2025) 033) onto the framework's retained
 primitives, establish that the framework's existing reflection-positivity

@@ -1,5 +1,7 @@
 # Majorana Doublet-Block Matching Obstruction
 
+**Claim type:** no_go
+
 **Date:** 2026-04-15
 **Status:** exact blocker-sharpening theorem on the obvious normalized
 local-to-doublet matching class

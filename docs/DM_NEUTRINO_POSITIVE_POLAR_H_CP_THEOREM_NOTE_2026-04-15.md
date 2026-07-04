@@ -1,5 +1,7 @@
 # DM Neutrino Positive-Polar Hermitian CP Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15
 **Status:** exact Hermitian-data theorem for the intrinsic DM CP tensor
 **Atlas placement:** canonical toolkit on `main` at

@@ -1,5 +1,7 @@
 # Class 5 Non-Q_L-Block Yukawa Vertex Retention Analysis Note
 
+**Claim type:** no_go
+
 **Date:** 2026-04-18 (amended 2026-04-18 with matching-gap closure sketch)
 **Status:** framework-native retention analysis of candidate class #5 —
 **non-Q_L-block Yukawa vertex structure**. **Outcome D refined (retained

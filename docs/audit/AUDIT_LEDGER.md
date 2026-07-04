@@ -100,14 +100,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1863 | 186.36 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1863 | 186.86 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1148 | 67.17 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 198 | 65.14 | `audited_clean` | **retained** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1578 | 65.12 | `audited_clean` | **retained** |
-| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1202 | 64.23 | `unaudited` | unaudited |
+| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1201 | 64.23 | `unaudited` | unaudited |
 | 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1248 | 53.29 | `audited_clean` | **retained_bounded** |
-| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1154 | 48.17 | `unaudited` | meta |
-| 8 | `key_terminology` | meta | critical | 1254 | 46.79 | `unaudited` | meta |
+| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1153 | 48.17 | `unaudited` | meta |
+| 8 | `key_terminology` | meta | critical | 1253 | 46.79 | `unaudited` | meta |
 | 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 1000 | 44.47 | `unaudited` | unaudited |
 | 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1000 | 43.47 | `unaudited` | unaudited |
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1380 | 43.43 | `unaudited` | unaudited |
@@ -124,7 +124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 1071 | 35.07 | `unaudited` | unaudited |
 | 23 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1002 | 34.97 | `unaudited` | unaudited |
 | 24 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 293 | 34.70 | `unaudited` | unaudited |
-| 25 | `s3_time_bilinear_tensor_primitive_note` | open_gate | critical | 1154 | 34.17 | `unaudited` | unaudited |
+| 25 | `kinetic_isotropy_primitive` | meta | critical | 1054 | 34.54 | `unaudited` | meta |
 
 
 ## Applied audits

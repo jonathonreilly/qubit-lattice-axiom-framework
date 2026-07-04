@@ -56714,7 +56714,35 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_vertex_power_operator_counting_lemma_note_2026-05-17"
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "scale_reference_primitive"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "kinetic_isotropy_primitive"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "realized_state_primitive"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "no_per_site_chirality_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hypercharge_identification_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
     },
     {
       "from": "repo.front_door_status",
@@ -56731,18 +56759,6 @@
     {
       "from": "repo.front_door_status",
       "to": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "neutrino_majorana_current_atlas_nonrealization_note"
     },
     {
       "from": "repo.repo_organization",
@@ -109308,23 +109324,39 @@
       "runner_path": null,
       "title": "Controlled Vocabulary"
     },
+    "repo.four_axiom_narrative_scrub_plan_2026-07-04": {
+      "claim_id": "repo.four_axiom_narrative_scrub_plan_2026-07-04",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta (process plan; `docs/repo/**` is outside the audit ledger",
+      "claim_type_seed_hint": "meta",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "0328be03149d084fa05d8c378c9ed8d07e7b47ea9319af55d3bc4a727bd40fe7",
+      "path": "docs/repo/FOUR_AXIOM_NARRATIVE_SCRUB_PLAN_2026-07-04.md",
+      "runner_path": null,
+      "title": "Four-Axiom Narrative Scrub \u2014 Plan And Attack (2026-07-04)"
+    },
     "repo.front_door_status": {
       "claim_id": "repo.front_door_status",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "yt_vertex_power_operator_counting_lemma_note_2026-05-17",
+        "minimal_axioms",
+        "scale_reference_primitive",
+        "kinetic_isotropy_primitive",
+        "realized_state_primitive",
+        "no_per_site_chirality_theorem_note_2026-05-02",
+        "hypercharge_identification_note",
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "ew_current_matching_rule_open_gate_note_2026-05-03",
         "cl3_taste_generation_theorem",
-        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
-        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-        "neutrino_majorana_current_atlas_nonrealization_note"
+        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a866f378a4d56d04cad10608e4fab4865a6c5d928b260deb2b8bf717ebdd41dd",
+      "note_hash": "4b93bd32b0c91324da467e61464670c7afe56346899af2f491b5a9847be26a13",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -125032,6 +125064,7 @@
     "register_not_read_scope_correction_panel_verdict_2026-06-06",
     "reopened_lane_checklist",
     "replay_environment_note",
+    "repo.four_axiom_narrative_scrub_plan_2026-07-04",
     "repo.python_venv_setup",
     "repo_active_review_queue_note_2026-05-17",
     "repo_submission_consolidation_plan_2026-04-12",
@@ -125316,7 +125349,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 1553,
       "decoration": 3,
-      "meta": 314,
+      "meta": 315,
       "no_go": 316,
       "none": 1216,
       "open_gate": 133,
@@ -125325,16 +125358,16 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1958,
       "decoration": 3,
-      "meta": 314,
+      "meta": 315,
       "no_go": 420,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14285,
-    "leaf_count": 1285,
-    "node_count": 3809,
-    "root_count": 1099,
+    "edge_count": 14289,
+    "leaf_count": 1286,
+    "node_count": 3810,
+    "root_count": 1100,
     "runners_with_path": 3436
   }
 }

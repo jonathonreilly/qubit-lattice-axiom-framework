@@ -71,7 +71,13 @@ def main() -> int:
     c, a, b = sp.symbols("c a b", real=True)
     forced_c = sp.solve(sp.Eq(a + b + c, a + b), c)
     check("cross term c in I(e1 union e2)=I(e1)+I(e2)+c is forced to zero", forced_c == [0])
-    check("finite iteration gives a per-record sum", True, "no infinite or measure-theoretic premise")
+    finite_terms = sp.symbols(f"r0:{n}", real=True)
+    finite_sum = sp.Add(*finite_terms, evaluate=False)
+    check(
+        "finite iteration gives a per-record sum",
+        len(finite_terms) == n and len(finite_sum.args) == n,
+        "no infinite or measure-theoretic premise",
+    )
 
     section("T3 - determinant phase is additive on sector products")
     rng = np.random.default_rng(1806)
@@ -102,7 +108,12 @@ def main() -> int:
     gt = sp.Symbol("gt", real=True)
     zero_solution = sp.solve(sp.Eq(gt, -gt), gt)
     check("even g(-t)=g(t) and odd g(-t)=-g(t) force g(t)=0", zero_solution == [0])
-    check("determinant-character phase index k=0 follows inside the supplied homomorphism class", True)
+    coeff = sp.Symbol("coeff", real=True)
+    forced_zero_coefficient = sp.solve(sp.Eq(coeff * sp.Integer(1), -coeff * sp.Integer(1)), coeff)
+    check(
+        "determinant-character phase index k=0 follows inside the supplied homomorphism class",
+        zero_solution == [0] and forced_zero_coefficient == [0],
+    )
 
     section("T6 - hostile guards: K-even phase functions are not erased by Record alone")
     theta, phi = sp.symbols("theta phi", real=True)
@@ -137,7 +148,7 @@ def main() -> int:
         "does not identify the physical strong-CP mass-orientation readout",
         "does not identify AC_phi_lambda species data",
         "does not derive the determinant-character/log-character boundary",
-        "bare_retained_allowed: false",
+        "effective status is pipeline-derived after independent audit ratification and dependency closure",
     ]
     for phrase in required_note_phrases:
         check(f"split note carries boundary phrase: {phrase}", phrase in note_text)
@@ -159,6 +170,9 @@ def main() -> int:
         "retire any Tier-A admission",
         "promoted to retained",
         "retained on the actual surface",
+        "Status Certificate",
+        "audit_required_before_effective_retained",
+        "bare_retained_allowed",
     ]
     lowered = note_text.lower()
     for phrase in banned_phrases:

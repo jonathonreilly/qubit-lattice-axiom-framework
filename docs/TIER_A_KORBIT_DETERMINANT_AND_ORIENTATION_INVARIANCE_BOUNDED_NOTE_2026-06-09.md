@@ -106,8 +106,11 @@ or audit verdict is introduced here.
 
 ## Dependencies
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) for the narrow
-  Record axiom boundary framing of registrable species content.
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) for current
+  Record finite additivity and content-determination only; the registrable
+  unordered-multiset species surface used downstream is carried by
+  [`UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md`](UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md),
+  not by the axiom text itself.
 
 Context (not load-bearing: both lemmas are self-contained algebra on their
 supplied classes — the determinant-character computation and the circulant

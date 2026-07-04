@@ -36924,6 +36924,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py"
     },
+    "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 8,
+        "C": 7,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/theta_su3_star_pairwise_reduction_obstruction_2026_07_04.py"
+    },
     "theta_supplier_flavored_grading_spectral_flow_registers_winding_2d_narrow_theorem_note_2026-07-02": {
       "assert_count": 1,
       "counts": {
@@ -90212,6 +90224,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/theta_su3_star_pairwise_reduction_obstruction_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 8,
+        "C": 7,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/theta_supplier_flavored_grading_spectral_flow_2026_07_02.py": {
       "assert_count": 1,
       "claims": [
@@ -91412,13 +91439,13 @@
     "decoration_candidates": 697,
     "dominant_class_distribution": {
       "A": 503,
-      "B": 643,
+      "B": 644,
       "C": 1276,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3329,
-    "runners_with_C": 1750,
+    "runners_classified": 3330,
+    "runners_with_C": 1751,
     "runners_with_D": 1068
   }
 }

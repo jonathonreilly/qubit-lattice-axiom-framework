@@ -42429,6 +42429,30 @@
       "to": "minimal_axioms"
     },
     {
+      "from": "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04",
+      "to": "theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02"
+    },
+    {
+      "from": "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04",
+      "to": "theta_gauge_positive_route_stretch_status_2026-07-04"
+    },
+    {
+      "from": "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04",
+      "to": "theta_cartan_valued_cross_plane_pairing_diagonal_weyl_frame_theorems_and_triality_fractional_values_bounded_theorem_note_2026-07-02"
+    },
+    {
+      "from": "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04",
+      "to": "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04"
+    },
+    {
       "from": "theta_supplier_flavored_grading_spectral_flow_registers_winding_2d_narrow_theorem_note_2026-07-02",
       "to": "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28"
     },
@@ -110532,7 +110556,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ad4fea78bfd17012b12842b08e7356538b91ca39ec4e57f4ff6a2ab416c6f1ae",
+      "note_hash": "0fbfb4d341c3d10613eee6aaddff64504d1c319a5f730070a872962b0f55f8fa",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118697,6 +118721,25 @@
       "runner_path": "scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py",
       "title": "Theta P2 K/CPT Determinant-Character Phase Erasure: Bounded Candidate Route"
     },
+    "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04": {
+      "claim_id": "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02",
+        "minimal_axioms",
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "theta_gauge_positive_route_stretch_status_2026-07-04",
+        "theta_cartan_valued_cross_plane_pairing_diagonal_weyl_frame_theorems_and_triality_fractional_values_bounded_theorem_note_2026-07-02",
+        "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "de633a1b1557b2f2c69e2619af96cf5ea1fa5557a96ad7ee201347342cdb3025",
+      "path": "docs/THETA_SU3_STAR_PAIRWISE_REDUCTION_OBSTRUCTION_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/theta_su3_star_pairwise_reduction_obstruction_2026_07_04.py",
+      "title": "Theta SU(3) Star Pairwise-Reduction Obstruction No-Go Note"
+    },
     "theta_supplier_flavored_grading_spectral_flow_registers_winding_2d_narrow_theorem_note_2026-07-02": {
       "claim_id": "theta_supplier_flavored_grading_spectral_flow_registers_winding_2d_narrow_theorem_note_2026-07-02",
       "claim_type_author_hint": "bounded_theorem",
@@ -126732,7 +126775,7 @@
       "bounded_theorem": 1555,
       "decoration": 3,
       "meta": 319,
-      "no_go": 339,
+      "no_go": 340,
       "none": 1216,
       "open_gate": 134,
       "positive_theorem": 274
@@ -126741,15 +126784,15 @@
       "bounded_theorem": 1960,
       "decoration": 3,
       "meta": 319,
-      "no_go": 443,
+      "no_go": 444,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14487,
-    "leaf_count": 1266,
-    "node_count": 3840,
+    "edge_count": 14493,
+    "leaf_count": 1267,
+    "node_count": 3841,
     "root_count": 1102,
-    "runners_with_path": 3463
+    "runners_with_path": 3464
   }
 }

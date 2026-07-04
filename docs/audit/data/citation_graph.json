@@ -42253,6 +42253,26 @@
       "to": "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04"
     },
     {
+      "from": "theta_g1_kinetic_isotropy_4d_scaffold_exact_support_split_note_2026-07-04",
+      "to": "kinetic_isotropy_primitive"
+    },
+    {
+      "from": "theta_g1_kinetic_isotropy_4d_scaffold_exact_support_split_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "theta_g1_kinetic_isotropy_4d_scaffold_exact_support_split_note_2026-07-04",
+      "to": "theta_g1_4d_carrier_supply_current_surface_no_go_note_2026-07-04"
+    },
+    {
+      "from": "theta_g1_kinetic_isotropy_4d_scaffold_exact_support_split_note_2026-07-04",
+      "to": "theta_g1_defect_suppression_supplied_penalty_exact_support_note_2026-07-04"
+    },
+    {
+      "from": "theta_g1_kinetic_isotropy_4d_scaffold_exact_support_split_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
       "from": "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04",
       "to": "theta_su3_star_pairwise_reduction_obstruction_no_go_note_2026-07-04"
     },
@@ -110746,7 +110766,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1648fe520e888d9217c454ed4fa3244c1241fed6fe17812b8fd8f56e4182ce1e",
+      "note_hash": "01bdf384b3b6c5885e44d410197c095ef6bbd5f6eb1b43841b79a3d770ec0176",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118724,6 +118744,24 @@
       "path": "docs/THETA_G1_EXACT_BRANCH_CONSTRAINT_NO_GO_NOTE_2026-07-04.md",
       "runner_path": "scripts/theta_g1_exact_branch_constraint_no_go_2026_07_04.py",
       "title": "Theta G1 Exact-Branch Constraint No-Go Note"
+    },
+    "theta_g1_kinetic_isotropy_4d_scaffold_exact_support_split_note_2026-07-04": {
+      "claim_id": "theta_g1_kinetic_isotropy_4d_scaffold_exact_support_split_note_2026-07-04",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "kinetic_isotropy_primitive",
+        "minimal_axioms",
+        "theta_g1_4d_carrier_supply_current_surface_no_go_note_2026-07-04",
+        "theta_g1_defect_suppression_supplied_penalty_exact_support_note_2026-07-04",
+        "admitted_input_registry_tier_a_note_2026-05-23"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "bb93b349eb15290c0d4e39c1ea26d158b34df3f7d8db9511cfa9024da80321d8",
+      "path": "docs/THETA_G1_KINETIC_ISOTROPY_4D_SCAFFOLD_EXACT_SUPPORT_SPLIT_NOTE_2026-07-04.md",
+      "runner_path": "scripts/theta_g1_kinetic_isotropy_4d_scaffold_exact_support_split_2026_07_04.py",
+      "title": "Theta G1 Kinetic-Isotropy 4D Scaffold Exact-Support Split"
     },
     "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04": {
       "claim_id": "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04",
@@ -127071,7 +127109,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1559,
+      "bounded_theorem": 1560,
       "decoration": 3,
       "meta": 319,
       "no_go": 342,
@@ -127080,7 +127118,7 @@
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1964,
+      "bounded_theorem": 1965,
       "decoration": 3,
       "meta": 319,
       "no_go": 446,
@@ -127088,10 +127126,10 @@
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14536,
+    "edge_count": 14541,
     "leaf_count": 1267,
-    "node_count": 3847,
+    "node_count": 3848,
     "root_count": 1102,
-    "runners_with_path": 3470
+    "runners_with_path": 3471
   }
 }

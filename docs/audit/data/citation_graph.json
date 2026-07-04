@@ -873,6 +873,26 @@
       "to": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
     },
     {
+      "from": "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+      "to": "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12"
+    },
+    {
+      "from": "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+      "to": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11"
+    },
+    {
+      "from": "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+      "to": "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04"
+    },
+    {
+      "from": "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+      "to": "acphilambda_first_order_determinant_retirement_readiness_no_go_note_2026-07-04"
+    },
+    {
       "from": "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01",
       "to": "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15"
     },
@@ -58971,6 +58991,24 @@
       "runner_path": "scripts/acphilambda_real_holonomy_locus_identity_2026_07_01.py",
       "title": "AC_phi_lambda Real-Holonomy Locus Identity"
     },
+    "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04": {
+      "claim_id": "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12",
+        "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
+        "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
+        "acphilambda_first_order_determinant_retirement_readiness_no_go_note_2026-07-04"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "a3c00705fa6dfb78808625b3867e18d3ed0eba5f10880385e422c76aea672b6b",
+      "path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py",
+      "title": "AC_phi_lambda Record Outcome-Orbit Occupancy Non-Supply No-Go"
+    },
     "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01": {
       "claim_id": "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01",
       "claim_type_author_hint": "bounded_theorem",
@@ -110461,7 +110499,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "14b0d14e8ce03930c76fc3903223d4db09733ae9aebe34651261d1f8230ce36b",
+      "note_hash": "6190ec4e9e6f58c86b8d0023e82e1da5c7dc68fdf7714bceb364bda587835985",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -126661,7 +126699,7 @@
       "bounded_theorem": 1555,
       "decoration": 3,
       "meta": 319,
-      "no_go": 337,
+      "no_go": 338,
       "none": 1216,
       "open_gate": 134,
       "positive_theorem": 274
@@ -126670,15 +126708,15 @@
       "bounded_theorem": 1960,
       "decoration": 3,
       "meta": 319,
-      "no_go": 441,
+      "no_go": 442,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14478,
+    "edge_count": 14483,
     "leaf_count": 1266,
-    "node_count": 3838,
+    "node_count": 3839,
     "root_count": 1102,
-    "runners_with_path": 3461
+    "runners_with_path": 3462
   }
 }

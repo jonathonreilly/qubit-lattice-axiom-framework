@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py
+runner_sha256: 8a2d1cf1bc810173116e855c2b4fc6a23ae569250f3f9b67a1ae05c6a0ecf7c3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+AC_phi_lambda Record outcome-orbit occupancy non-supply no-go
+==============================================================================
+
+------------------------------------------------------------------------------
+A - source and registry boundaries
+------------------------------------------------------------------------------
+PASS: exists: docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: exists: docs/MINIMAL_AXIOMS_2026-06-05.md
+PASS: exists: docs/audit/data/tier_a_admissions.json
+PASS: exists: docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md
+PASS: exists: docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md
+PASS: exists: docs/ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md
+PASS: exists: docs/ACPHILAMBDA_FIRST_ORDER_DETERMINANT_RETIREMENT_READINESS_NO_GO_NOTE_2026-07-04.md
+PASS: note declares no_go claim type
+PASS: runner path is wired in note
+PASS: note denies AC retirement
+PASS: note denies horn selection and r derivation
+PASS: note denies premise/primitive adoption
+PASS: note denies registry/axiom edits
+PASS: Tier-A genuine admitted input count remains two
+PASS: AC minimum decomposition remains occupancy plus R-eta -- ['reading_occupancy_selection', 'delta_readout_identification_R_eta']
+
+------------------------------------------------------------------------------
+B - current versus older axiom surface
+------------------------------------------------------------------------------
+PASS: current axioms supersede June 5 memo
+PASS: current axioms keep K/CPT orbit structure downstream
+PASS: current axioms keep weights and context selection outside
+PASS: current axioms explicitly keep AC_phi_lambda outside
+PASS: older supplied-context Record wording named K/CPT orbit only conditionally
+PASS: older Record wording denied weights and occupancy supply
+
+------------------------------------------------------------------------------
+C - same outcome object, different dictionaries
+------------------------------------------------------------------------------
+PASS: component and slot dictionaries share the same outcome variable x
+PASS: component dictionary x=2r maps x=1 to r=1/2
+PASS: slot dictionary x=r maps x=1 to r=1
+PASS: the two dictionaries are not the same map
+PASS: component dictionary is additive on the same outcome labels
+PASS: slot dictionary is additive on the same outcome labels
+PASS: determinant exponents differ by dictionary, not by outcome label
+PASS: landed cells remain distinct
+
+------------------------------------------------------------------------------
+D - source integration and non-overclaim
+------------------------------------------------------------------------------
+PASS: outcome dictionary note states Record names object not weight
+PASS: outcome dictionary note keeps occupancy binary open
+PASS: AC reduction names measure-side survivor
+PASS: Block28 determinant split identifies what must be selected
+PASS: readiness no-go blocks immediate retirement from determinant algebra plus hygiene
+PASS: note contains required phrase: The implication is invalid
+PASS: note contains required phrase: outcome object only
+PASS: note contains required phrase: does not select the determinant-power dictionary
+PASS: note contains required phrase: physical measure/readout theorem
+PASS: note contains required phrase: Remaining Live Routes
+PASS: banned overclaim phrases are absent except explicit denials
+
+==============================================================================
+TOTAL: PASS=41 FAIL=0
+
+----- stderr -----
+

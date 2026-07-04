@@ -1,25 +1,58 @@
-# Lattice-Quantum-Record Framework
+# Lattice-Qubit-Admissibility-Record Framework
 
-This repository contains the public scientific package for a three-axiom
+This repository contains the public scientific package for a four-axiom
 discrete-physics program:
 
-1. **Lattice** - the site set is `Z^3` with nearest-neighbor cubic adjacency.
-2. **Quantum** - one qubit lives at every site, equivalently one-site
-   `M_2(C)` / real `Cl(3,0)` local algebra.
-3. **Record** - durable realized-outcome registration with finite scalar
-   additivity on a fixed readout context.
+1. **Lattice** — physical sites are the points of the cubic lattice `Z^3`,
+   with nearest-neighbor adjacency, standard translations, and proper cubic
+   rotations about each site. No site is privileged.
+2. **Qubit** — each site has a domain of local possibilities whose full
+   one-site algebraic presentation is `M_2(C)` (equivalently, real
+   `Cl(3,0)`). No possibility is privileged.
+3. **Admissibility** — one fixed nearest-neighbor rule, covariant under the
+   lattice motions, determines the available possibilities at each site;
+   availability varies with the nearest-neighbor conditions.
+4. **Record** — when present, a record locks exactly one admissible local
+   possibility; a site never carries more than one record; records are
+   permanent. Only records are readable, and scalar readout is additive over
+   finite disjoint record collections.
 
 The canonical axiom memo is
-[`docs/MINIMAL_AXIOMS_2026-06-05.md`](docs/MINIMAL_AXIOMS_2026-06-05.md).
-Old `A1` / `A2` / `A3` numbering is historical; new repo surfaces should use
-the names Lattice, Quantum, and Record unless quoting older notes.
+[`docs/MINIMAL_AXIOMS_2026-06-29.md`](docs/MINIMAL_AXIOMS_2026-06-29.md).
+It is edited in place only under explicit owner approvals, each recorded in
+[`docs/audit/AXIOM_MINIMALITY_POLICY.md`](docs/audit/AXIOM_MINIMALITY_POLICY.md)
+section 6. The earlier three-axiom base (Lattice, Quantum, Record), the
+`Quantum` axiom name, and the still older `A1`/`A2`/`A3` numbering are
+historical; new repo surfaces use the four names above unless quoting an
+older document.
+
+Beyond the axioms, the complete foundation surface is deliberately small:
+
+- **Approved primitives (3):** the scale reference `a^{-1}` (units only),
+  kinetic isotropy `c_t = c_s` (regulator graining), and the realized-state
+  interface (a slot for one law-admissible realized state, never a state
+  selection). Registered in
+  [`docs/audit/data/axiom_premise_nodes.json`](docs/audit/data/axiom_premise_nodes.json).
+- **Tier-A admitted derivation targets (2):** `AC_phi_lambda` and the
+  strong-CP `theta`, tracked with their no-go portfolios in
+  [`docs/audit/data/tier_a_admissions.json`](docs/audit/data/tier_a_admissions.json).
+  Dependents of a Tier-A admission remain bounded until it is retired by a
+  retained derivation.
+- **Scope condition (not a premise):** the past-hypothesis low-entropy
+  magnitude; results that need it are explicit conditionals.
+
+Everything else — probability and Born weights, measurement and readout
+contexts, dynamics and time metric, kinetic branch selection, source/action
+structure, physical-observable identification — is downstream content that
+must be derived, bridged, explicitly admitted, or registered before it can
+bear load. That discipline is what the audit ledger enforces.
 
 ## Read First
 
 Use these entrypoints in order:
 
 1. [Generated front-door status snapshot](docs/repo/FRONT_DOOR_STATUS.md)
-2. [Minimal axiom memo](docs/MINIMAL_AXIOMS_2026-06-05.md)
+2. [Minimal axiom memo](docs/MINIMAL_AXIOMS_2026-06-29.md)
 3. [Publication package README](docs/publication/ci3_z3/README.md)
 4. [Current falsifiable predictions catalog](docs/publication/ci3_z3/FALSIFIABLE_PREDICTIONS_2026-06-08.md)
 5. [Manuscript claims with audit badges](docs/publication/ci3_z3/CLAIMS_TABLE_EFFECTIVE_STATUS.md)
@@ -32,28 +65,30 @@ Use these entrypoints in order:
 
 ## Current Status
 
-The repo is in an audit-transition state. Source notes and publication tables
-still contain legacy `retained` / `promoted` wording, but the publication-facing
-authority is the audit-derived `effective_status` in
+The repo is in an audit-transition state, deepened by the 2026-06-29
+foundation reset: replacing the three-axiom base with the four-axiom base
+intentionally invalidated every audit that rested directly on the axiom text
+(the premise-hash guard enforces this), and the affected rows are draining
+back through the independent audit lane. Expect a sizable unaudited cohort
+until that re-audit completes; the generated
+[`docs/repo/FRONT_DOOR_STATUS.md`](docs/repo/FRONT_DOOR_STATUS.md) always has
+the current counts, refreshed by `bash docs/audit/scripts/run_pipeline.sh`.
+
+Source notes and publication tables still contain legacy `retained` /
+`promoted` wording, but the publication-facing authority is the audit-derived
+`effective_status` in
 [`docs/audit/AUDIT_LEDGER.md`](docs/audit/AUDIT_LEDGER.md). Retained-grade
 `effective_status` values are `retained`, `retained_no_go`, and
 `retained_bounded`; boxed `decoration_under_*` rows are decorations under a
 retained parent, not independent retained rows. `promoted` is
-publication-capture language, not an audit `effective_status`. The fastest
-current summary is the generated
-[`docs/repo/FRONT_DOOR_STATUS.md`](docs/repo/FRONT_DOOR_STATUS.md), refreshed by
-`bash docs/audit/scripts/run_pipeline.sh`.
+publication-capture language, not an audit `effective_status`. Treat any
+source-note or manuscript wording as proposed unless the effective-status
+view marks the cited authority retained-grade.
 
-The pipeline currently derives:
-
-- the audit ledger and effective-status counts;
-- the audit queue and cycle-break targets;
-- publication-package effective-status mirrors; and
-- the publication/audit divergence report.
-
-This matters because the public package is ahead of the fully ratified audit
-surface in places. Treat any source-note or manuscript wording as proposed
-unless the effective-status view marks the cited authority retained-grade.
+Older notes that state or cite the three-axiom base are being brought current
+under a staged narrative scrub
+([`docs/repo/FOUR_AXIOM_NARRATIVE_SCRUB_PLAN_2026-07-04.md`](docs/repo/FOUR_AXIOM_NARRATIVE_SCRUB_PLAN_2026-07-04.md));
+until that completes, read pre-2026-06-29 axiom descriptions as historical.
 
 ## Falsifiable Forecasts
 
@@ -69,9 +104,9 @@ It highlights three near-term tests:
   SM metastability.
 
 Those forecasts are explicitly conditional and currently not unconditional
-closures. The catalog records the falsifier thresholds and the named external
-comparison bands; quote it rather than copying a number without its
-conditionality.
+closures. The catalog predates the 2026-06-29 reset; its falsifier thresholds
+and named external comparison bands stand, but quote it with its stated
+conditionality rather than copying a number bare.
 
 ## Reusable Numbers
 
@@ -94,10 +129,12 @@ and by work lane in [`docs/lanes`](docs/lanes/README.md).
 
 High-level state:
 
-- **Framework baseline:** Lattice, Quantum, and Record are the named axiom
-  surface; the Record axiom is deliberately narrow and does not supply Born
-  weights, measurement dynamics, physical persistence dynamics, source/action
-  identification, or downstream selectors by itself.
+- **Framework baseline:** Lattice, Qubit, Admissibility, and Record are the
+  named axiom surface. Admissibility constrains which possibilities are
+  available at each site; it supplies no dynamics, probabilities, kinetic
+  branch, or observable identification. Record is deliberately narrow and
+  does not supply Born weights, measurement dynamics, physical persistence
+  dynamics, source/action identification, or downstream selectors by itself.
 - **Ratified backbone:** the audit ledger contains retained-grade positive,
   no-go, bounded, and boxed-decoration rows. Use
   [`docs/repo/FRONT_DOOR_STATUS.md`](docs/repo/FRONT_DOOR_STATUS.md) for the
@@ -140,9 +177,10 @@ divergence report, and front-door status snapshot.
 ## Boundaries
 
 This repository does not claim that every publication-captured row is already
-audit-retained. It also does not claim that Record alone derives probability,
-measurement, arrow of time, selector weights, or physical observable
-identification. The explicit non-claims and qualifiers live in:
+audit-retained. It also does not claim that the four axioms derive
+probability, measurement, arrow of time, selector weights, kinetic branch
+selection, or physical observable identification. The explicit non-claims and
+qualifiers live in:
 
 - [Inputs and qualifiers](docs/publication/ci3_z3/INPUTS_AND_QUALIFIERS_NOTE.md)
 - [What this paper does not claim](docs/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md)

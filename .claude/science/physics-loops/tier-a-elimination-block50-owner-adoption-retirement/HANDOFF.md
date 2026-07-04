@@ -8,6 +8,7 @@ retirement block.
 Branch: `physics-loop/tier-a-elimination-block50-owner-adoption-retirement-20260704`
 Base: `physics-loop/tier-a-elimination-block49-owner-decision-packet-20260704`
 Source commit: `a4dfeb4f4`
+Follow-up hygiene commit: `624e6e810`
 PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4991
 
 ## Claim Movement
@@ -51,7 +52,7 @@ still encoded the historical interim state as current (`AC_phi_lambda` live
 Tier-A, count two). That runner and its note now distinguish the historical
 partial step from the final Block50 live state: zero live Tier-A admissions,
 with AC_phi_lambda/theta preserved as retired history and owner-governed
-residual premises.
+residual premises. The fix landed in `624e6e810`.
 
 ## Next Exact Action
 

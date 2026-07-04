@@ -2,7 +2,7 @@
   "claim_type_counts": {
     "bounded_theorem": 1993,
     "decoration": 50,
-    "meta": 345,
+    "meta": 346,
     "no_go": 500,
     "open_gate": 186,
     "positive_theorem": 612
@@ -197,7 +197,7 @@
     "decoration_under_three_generation_observable_theorem_note": 3,
     "decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
-    "meta": 339,
+    "meta": 340,
     "open_gate": 24,
     "retained": 189,
     "retained_bounded": 849,

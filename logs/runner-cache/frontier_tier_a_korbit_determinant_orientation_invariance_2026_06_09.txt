@@ -3,7 +3,7 @@ runner: scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_0
 runner_sha256: 0c5ebd8441a1a20635177cd22f0f741011b31acd79fef5d3bf3d1435536017ce
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.88
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
 K/CPT orientation invariance checks for the AC_phi_lambda gate

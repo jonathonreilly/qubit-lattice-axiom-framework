@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.py
+runner_sha256: 3b48cf2a03e62264d284d481ddbd750440215725dfbe80da3b0a90f0bba689cd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.33
+status: ok
+----- stdout -----
+PASS A1 3-idempotent context has orthogonal central idempotents
+PASS A2 ORBIT-INDEXING gives equal record content on K/CPT orbits
+PASS A3 200 random content-determined readouts are orbit-constant
+PASS B1 conjugate-distinguishing contents admit a registrable non-orbit-constant readout -- values=[7.0, 0.0, 1.0]
+PASS C1 additivity at zero forces g(0)=0
+PASS C2 g(x)+g(-x)=g(0)=0 forces g(-x)=-g(x)
+PASS C3 even plus odd forces the homomorphic phase functional to zero
+PASS D1 circulant family satisfies conj(H(delta)) = H(-delta)
+PASS D2 det(H(-delta)) is conjugate to det(H(delta))
+PASS D3 determinant phase flips sign modulo 2pi under K/CPT
+PASS D4 log|det H(delta)| is K/CPT invariant
+PASS D5a Hermitian circulant determinant is real (phase index already in {0, pi})
+PASS D5b generic sector data gives a nonzero total-phase witness
+PASS D5c even+odd at a nonzero phase forces the homomorphic coefficient c=0
+PASS D5d the forced (c=0) functional evaluates to 0 on generic sector data
+PASS D6 log-modulus datum survives as finite nonconstant data
+PASS D7 delta=2/9 is included as an ordinary finite grid point
+PASS E1 cos(theta) is K-even, phase-dependent, nonzero, and non-homomorphic
+PASS E2 sum_j cos(theta_j) is K-even, phase-dependent, nonzero, and non-homomorphic
+PASS F1 note contains required phrase: supplied
+PASS F1 note contains required phrase: not derived
+PASS F1 note contains required phrase: source artifact
+PASS F1 note contains required phrase: effective status is pipeline-derived after independent audit ratification and dependency closure
+PASS F1 note contains required phrase: context handle, not a citation-graph dependency
+PASS F2 note excludes forbidden completion phrase: discharges
+PASS F2 note excludes forbidden completion phrase: retires
+PASS F2 note excludes forbidden completion phrase: closes the admission
+PASS F2 note excludes forbidden completion phrase: retained bridge
+PASS F2 note excludes forbidden completion phrase: this note is that bridge
+PASS F2 note excludes forbidden completion phrase: status certificate
+PASS F2 note excludes forbidden completion phrase: audit_required_before_effective_retained
+PASS F2 note excludes forbidden completion phrase: bare_retained_allowed
+PASS F3 only markdown doc-note citation target is MINIMAL_AXIOMS_2026-06-29.md -- doc_targets=['MINIMAL_AXIOMS_2026-06-29.md']
+SUMMARY PASS=33 FAIL=0
+DONE
+
+----- stderr -----
+

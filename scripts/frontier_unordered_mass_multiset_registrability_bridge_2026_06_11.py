@@ -47,7 +47,8 @@ Checked legs (each PASS/FAIL):
       per-record orbit-constancy identity r_k(delta) = r_{sigma(k)}(-delta)
   H1  source-scope hygiene: the paired note names P-dep as an explicit
       conditional premise, tags the load-bearing B1 factorization claim itself
-      as conditional on P-dep, and does not claim Record derives P-dep
+      as conditional on P-dep, relocates K/CPT orbit constancy to the cited
+      supplied-context bridge, and does not claim Record derives P-dep
 
 Prints one line per check and a final `TOTAL: PASS=N FAIL=0` scorecard.
 No randomness-dependent acceptance: violations must be witnessed for EVERY
@@ -360,11 +361,20 @@ required_markers = [
     "does **not** derive P-dep from the Record axiom",
     "not a new axiom",
     "not an approved primitive premise",
+    "MINIMAL_AXIOMS_2026-06-29.md",
+    "KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md",
+    "T1 transfers supplied ORBIT-INDEXING through the current axiom's",
+    "T1 of the cited supplied-context bridge",
     # the load-bearing factorization claim itself is tagged conditional on P-dep
     "factorization / upper bound, conditional on P-dep",
     "without it B1 is not a factorization theorem",
 ]
 forbidden_markers = [
+    "MINIMAL_AXIOMS_2026-06-05.md",
+    "three Record clauses quoted above",
+    "Record axiom's additivity and orbit-constancy clauses",
+    "(Orbit) applied",
+    "violated Record hypothesis",
     "P-dep is a reading of the Record boundary, not an extra import",
     "grounded in the Record boundary",
     "P-dep is the only admissible reading of the Record boundary",
@@ -372,7 +382,7 @@ forbidden_markers = [
 ]
 ok = all(marker in note for marker in required_markers)
 ok &= not any(marker in note for marker in forbidden_markers)
-check("H1 source scope: P-dep explicit conditional premise, not Record-derived",
+check("H1 source scope: P-dep explicit, K/CPT orbit constancy bridge-relocated",
       ok)
 
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

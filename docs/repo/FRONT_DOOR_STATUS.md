@@ -27,17 +27,17 @@ Owner-approval history for every axiom/primitive change:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3642 |
-| Applied audit verdicts | 1349 |
+| Ledger rows | 3643 |
+| Applied audit verdicts | 1346 |
 | Retained-grade rows, including boxed decorations | 1274 |
 | Retained positive theorems | 189 |
 | Retained no-go rows | 191 |
 | Retained bounded rows | 849 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
-| Unaudited rows | 1945 |
+| Unaudited rows | 1949 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 28 |
+| Audited conditional rows | 25 |
 | Audited renaming rows | 19 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 14 |
@@ -49,13 +49,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1985 |
-| Ready rows | 172 |
+| Total pending rows | 1986 |
+| Ready rows | 170 |
 | Cycle-break targets | 14 |
 | Critical pending | 421 |
 | High pending | 289 |
-| Medium pending | 518 |
-| Leaf pending | 757 |
+| Medium pending | 520 |
+| Leaf pending | 756 |
 
 Next ready rows by queue order:
 
@@ -93,15 +93,15 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3813 |
+| Citation-graph nodes | 3814 |
 | Critical nodes | 668 |
 | High nodes | 468 |
-| Medium nodes | 971 |
-| Leaf nodes | 1706 |
+| Medium nodes | 973 |
+| Leaf nodes | 1705 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1863 descendants; score 186.864
+- `minimal_axioms` - critical; 1864 descendants; score 187.365
 - `three_generation_observable_theorem_note` - critical; 1148 descendants; score 67.166
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 198 descendants; score 65.137
 - `graph_first_su3_integration_note` - critical; 1578 descendants; score 65.125

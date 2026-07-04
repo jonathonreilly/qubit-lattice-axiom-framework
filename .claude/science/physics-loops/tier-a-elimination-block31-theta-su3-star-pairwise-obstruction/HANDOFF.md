@@ -6,6 +6,8 @@ Block31 targets the theta gauge-side SU(3) star pairwise-reduction shortcut.
 
 Branch: `physics-loop/tier-a-elimination-block31-theta-su3-star-pairwise-obstruction-20260704`
 Base: `physics-loop/tier-a-elimination-block30-ac-reta-formation-nonsupply-20260704`
+Source commit: `574e694b3`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4972
 
 ## Expected Claim Movement
 
@@ -37,5 +39,6 @@ different dagger-even triple data.
 
 ## Next Exact Action
 
-Commit, push, open a stacked review PR against Block30, then verify hosted
-`audit_pipeline`.
+Verify hosted `audit_pipeline` on PR #4972, then continue with sector-level
+SU(3) star/readout theorem, G3 phase-source theorem, G1 defect suppression,
+or AC occupancy horn selection.

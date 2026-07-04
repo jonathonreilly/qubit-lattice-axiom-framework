@@ -529,6 +529,46 @@
       "to": "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25"
     },
     {
+      "from": "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04",
+      "to": "acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04"
+    },
+    {
+      "from": "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04",
+      "to": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11"
+    },
+    {
+      "from": "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04",
+      "to": "koide_r_half_polarization_selector_tested_static_readout_no_go_note_2026-06-08"
+    },
+    {
+      "from": "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04",
+      "to": "koide_kahler_dirac_realization_gives_r_one_index_route_closed_bounded_no_go_note_2026-06-08"
+    },
+    {
+      "from": "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04",
+      "to": "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04"
+    },
+    {
+      "from": "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04",
+      "to": "koide_r_reduces_to_chiral_vs_vector_yukawa_binary_narrow_theorem_note_2026-06-04"
+    },
+    {
+      "from": "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04",
+      "to": "corner_axis_free_transfer_extension_per_channel_trace_correspondence_and_mode_set_fork_bounded_note_2026-06-12"
+    },
+    {
+      "from": "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04",
+      "to": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09"
+    },
+    {
+      "from": "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
       "from": "acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02",
       "to": "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15"
     },
@@ -57957,6 +57997,29 @@
       "runner_path": "scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py",
       "title": "AC_phi_lambda Defect Identity-Unit Rescale Obstruction And Junction Localization"
     },
+    "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04": {
+      "claim_id": "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04",
+        "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
+        "koide_r_half_polarization_selector_tested_static_readout_no_go_note_2026-06-08",
+        "koide_kahler_dirac_realization_gives_r_one_index_route_closed_bounded_no_go_note_2026-06-08",
+        "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04",
+        "koide_r_reduces_to_chiral_vs_vector_yukawa_binary_narrow_theorem_note_2026-06-04",
+        "corner_axis_free_transfer_extension_per_channel_trace_correspondence_and_mode_set_fork_bounded_note_2026-06-12",
+        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+        "minimal_axioms",
+        "admitted_input_registry_tier_a_note_2026-05-23"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "ddc1777584e6d536364738fd46f016dd2db89232e94c0515e5c34a5ebfe39685",
+      "path": "docs/ACPHILAMBDA_DYNAMICAL_INDEX_OCCUPANCY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_dynamical_index_occupancy_current_surface_no_go_2026_07_04.py",
+      "title": "AC_phi_lambda Dynamical Index Occupancy Current-Surface No-Go Note"
+    },
     "acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02": {
       "claim_id": "acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02",
       "claim_type_author_hint": "no_go",
@@ -109677,7 +109740,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "26fccebbc6b6b8fd9656f8a0d2eb6035825c126c954f1fa66042f3288d6d9834",
+      "note_hash": "92eee00e01e4ca29c06dd6ecffe34c6ccc83dcaefc6b54081f6c347cb20d4883",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -125771,7 +125834,7 @@
       "bounded_theorem": 1553,
       "decoration": 3,
       "meta": 319,
-      "no_go": 323,
+      "no_go": 324,
       "none": 1216,
       "open_gate": 134,
       "positive_theorem": 274
@@ -125780,15 +125843,15 @@
       "bounded_theorem": 1958,
       "decoration": 3,
       "meta": 319,
-      "no_go": 427,
+      "no_go": 428,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14342,
-    "leaf_count": 1287,
-    "node_count": 3822,
+    "edge_count": 14352,
+    "leaf_count": 1285,
+    "node_count": 3823,
     "root_count": 1102,
-    "runners_with_path": 3445
+    "runners_with_path": 3446
   }
 }

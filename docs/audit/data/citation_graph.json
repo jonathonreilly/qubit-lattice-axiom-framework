@@ -1049,6 +1049,38 @@
       "to": "acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18"
     },
     {
+      "from": "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04",
+      "to": "acphilambda_pointer_labeled_refinement_finer_record_clock_2026-07-02"
+    },
+    {
+      "from": "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04",
+      "to": "acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04"
+    },
+    {
+      "from": "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04",
+      "to": "acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01"
+    },
+    {
+      "from": "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04",
+      "to": "record_clock_rate_normalization_gate_2026-06-06"
+    },
+    {
+      "from": "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04",
+      "to": "dynamics_coupling_residual_classifier_2026-06-06"
+    },
+    {
+      "from": "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04",
+      "to": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
       "from": "acphilambda_r_eta_minimal_k_breaking_transport_no_go_note_2026-07-04",
       "to": "minimal_axioms"
     },
@@ -59186,6 +59218,27 @@
       "runner_path": "scripts/acphilambda_r_eta_current_surface_readout_identification_no_go_2026_07_04.py",
       "title": "AC_phi_lambda R-eta Current-Surface Readout Identification No-Go"
     },
+    "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04": {
+      "claim_id": "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "acphilambda_pointer_labeled_refinement_finer_record_clock_2026-07-02",
+        "acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04",
+        "acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01",
+        "record_clock_rate_normalization_gate_2026-06-06",
+        "dynamics_coupling_residual_classifier_2026-06-06",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+        "admitted_input_registry_tier_a_note_2026-05-23"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "d41da78c32f3919b90c53469515146611a994a2960c270b7173af2094b466785",
+      "path": "docs/ACPHILAMBDA_R_ETA_DOUBLET_CLOCK_RATE_NORMALIZATION_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_r_eta_doublet_clock_rate_normalization_no_go_2026_07_04.py",
+      "title": "AC_phi_lambda R-eta Doublet-Clock Rate-Normalization No-Go"
+    },
     "acphilambda_r_eta_minimal_k_breaking_transport_no_go_note_2026-07-04": {
       "claim_id": "acphilambda_r_eta_minimal_k_breaking_transport_no_go_note_2026-07-04",
       "claim_type_author_hint": "no_go",
@@ -110862,7 +110915,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4ff14514d9c6e94d4e62a51ee61329787e071564700dc21e1d26b928c91ed31c",
+      "note_hash": "818aaaef09f000170e5c27645595b429a8d07f17775fd41944e90c0322260507",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -127208,7 +127261,7 @@
       "bounded_theorem": 1560,
       "decoration": 3,
       "meta": 319,
-      "no_go": 344,
+      "no_go": 345,
       "none": 1216,
       "open_gate": 134,
       "positive_theorem": 274
@@ -127217,15 +127270,15 @@
       "bounded_theorem": 1965,
       "decoration": 3,
       "meta": 319,
-      "no_go": 448,
+      "no_go": 449,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14555,
+    "edge_count": 14563,
     "leaf_count": 1266,
-    "node_count": 3850,
+    "node_count": 3851,
     "root_count": 1102,
-    "runners_with_path": 3473
+    "runners_with_path": 3474
   }
 }

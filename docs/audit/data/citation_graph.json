@@ -81925,6 +81925,18 @@
       "runner_path": null,
       "title": "Owner One-Pager: Graded-Constraint Primitive Registration (Draft)"
     },
+    "graded_constraint_program_and_record_influence_criterion_2026-07-04": {
+      "claim_id": "graded_constraint_program_and_record_influence_criterion_2026-07-04",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta (non-claim orientation memo). This memo proves nothing,",
+      "claim_type_seed_hint": "meta",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "2ffc320d8f58e5aaa57bd828d539e57b412eeb9de4c67479c6315ae47102c92e",
+      "path": "docs/GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md",
+      "runner_path": null,
+      "title": "The Record-Influence Criterion And The Graded-Constraint Program"
+    },
     "grand_canonical_flux_response_nmod4_alternation_no_net_sign_bounded_theorem_note_2026-06-12": {
       "claim_id": "grand_canonical_flux_response_nmod4_alternation_no_net_sign_bounded_theorem_note_2026-06-12",
       "claim_type_author_hint": "bounded_theorem",
@@ -109380,7 +109392,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "84bdea876ea4128907a5b7c1604ea6ebb15eb2ccda54454ca7870ae4a7b7caaa",
+      "note_hash": "1e9d8025c5e32f6fdbf5ab8c55b64d909da2a1eb612802135f903ad73cae6723",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -124734,6 +124746,7 @@
     "global_coherence_off_scaffold_note",
     "gmn_vev_annihilator_l4_support_note_2026-07-02",
     "graded_constraint_primitive_registration_proposal_2026-07-04",
+    "graded_constraint_program_and_record_influence_criterion_2026-07-04",
     "graph_braid_n3_fermion_sign_stays_nonfibered_narrow_theorem_note",
     "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29",
     "graph_dirac_requirements_2026-04-10",
@@ -125375,7 +125388,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 1553,
       "decoration": 3,
-      "meta": 317,
+      "meta": 318,
       "no_go": 316,
       "none": 1216,
       "open_gate": 133,
@@ -125384,16 +125397,16 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1958,
       "decoration": 3,
-      "meta": 317,
+      "meta": 318,
       "no_go": 420,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
     "edge_count": 14289,
-    "leaf_count": 1288,
-    "node_count": 3812,
-    "root_count": 1102,
+    "leaf_count": 1289,
+    "node_count": 3813,
+    "root_count": 1103,
     "runners_with_path": 3436
   }
 }

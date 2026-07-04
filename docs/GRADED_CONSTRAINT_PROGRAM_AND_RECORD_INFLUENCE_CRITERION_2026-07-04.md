@@ -1,20 +1,24 @@
 # The Record-Influence Criterion And The Graded-Constraint Program
 
 **Date:** 2026-07-04
-**Type:** program / criterion memo (owner-reviewed thinking bank)
-**Claim type:** none. This memo proves nothing, sets no audit verdict, changes
-no axiom, and registers no primitive. It fixes shared vocabulary and targets so
-that every worker builds against one picture. Where it states results, it cites
-the note that owns them; where it states targets, it says so.
+**Type:** meta (program / criterion memo; no theorem claim)
+**Authority class:** Class F orientation memo per
+`docs/audit/DOCUMENT_AUTHORITY_AND_CITATION_POLICY.md`.
+**Claim type:** meta (non-claim orientation memo). This memo proves nothing,
+sets no audit verdict, changes no axiom, and registers no primitive. It fixes
+shared vocabulary and targets so that every worker builds against one picture.
+Where it states results, it cites the note that owns them; where it states
+targets, it says so.
 **Status authority:** none. Independent audit lane and owner channels are
 untouched.
 **Premise weight:** none — the policy log's retired-reading-notes formula
 applies to this entire memo: no premise or interpretive weight. Per the
 Qualification, nothing here is usable as a premise. Every load-bearing item
-below either points at its owning channel (policy entry, bounded note, PR,
-registry) or is marked OPEN or CANDIDATE. Worker specs may cite this memo for
-orientation and scope discipline only; any premise in worker output must cite
-the owning channel directly, never this memo.
+below either points at its owning channel (policy entry, bounded note,
+registry, or landed Class D proposal) or is marked OPEN or CANDIDATE. Worker
+specs may cite this memo for orientation and scope discipline only; any
+premise in worker output must cite the owning channel directly, never this
+memo.
 
 ## 1. The criterion
 
@@ -95,13 +99,13 @@ provenance and rulings in `docs/audit/AXIOM_MINIMALITY_POLICY.md`, entry
 After the append, irreversibility and direction are axiom consequences along
 any realized succession. The single missing piece is **comparability**: nothing
 landed makes any two realized configurations nested — one world-line of records
-rather than incomparable realized alternatives. Candidate resolutions, both
-owner-surface: read "Record / Fixed Reality" as carrying it (one fixed reality
-of records), or add one sentence supplying the definite article ("There is one
-configuration of records."). Open owner question as of 2026-07-04; the policy
-entry records it as explicitly not supplied by the formation sentence. Workers
-should mark arrow-dependent results conditional on comparability until it is
-resolved, and should not derive comparability from prose readings.
+rather than incomparable realized alternatives. The landed Class D decision
+surface `docs/RECORD_COMPARABILITY_OWNER_ONE_PAGER_2026-07-04.md` names the
+safe route: derive and audit the underivability/certification notes first,
+then treat the sentence "There is one configuration of records." as a named
+conditional premise unless and until the owner supplies it. Workers should
+mark arrow-dependent results conditional on comparability until it is resolved,
+and should not derive comparability from prose readings.
 
 ## 5. The graded-constraint program
 
@@ -128,9 +132,11 @@ is how the grading is known at all.
   the quadratic (Born) form. The known dimension-2 exception is exactly one
   `M_2` site alone; neighbor composites are `M_4` and above, where the theorem
   holds — the lattice, which the axioms supply for free, is what eliminates the
-  loophole. Owned by the composite-Gleason bridge note (in preparation,
-  2026-07-04); the honest load-bearing hypothesis there is menu eligibility of
-  composite (including entangled) projections.
+  loophole. This is a theorem target, not a landed result: the landed Class D
+  proposal `docs/GRADED_CONSTRAINT_PRIMITIVE_REGISTRATION_PROPOSAL_2026-07-04.md`
+  records that any live use must arrive as a fresh, self-contained conditional
+  note through review/audit. The closed PR #4916 review is historical input
+  only.
 - **The values of the weights come from records.** Preparation is records:
   apparatus settings, filter events, calibration outcomes. The bias at a new
   site is prior record content propagated through the constraint structure.
@@ -151,14 +157,16 @@ is how the grading is known at all.
 
 Axiom text:
 
-1. "Records form." — LANDED (this update's PR).
+1. "Records form." — LANDED in the current axiom memo.
 2. "There is one configuration of records." (or the Fixed-Reality reading) —
-   OPEN owner question; the arrow's only missing piece.
+   OPEN owner question; the arrow's only missing piece; see
+   `docs/RECORD_COMPARABILITY_OWNER_ONE_PAGER_2026-07-04.md`.
 
 Registry (primitive) candidates, each with its one-line physical warrant:
 
 3. Graded constraint (formation bias exists in degrees) — warrant: identical
-   menus, stably unequal frequencies.
+   menus, stably unequal frequencies; see
+   `docs/GRADED_CONSTRAINT_PRIMITIVE_REGISTRATION_PROPOSAL_2026-07-04.md`.
 4. Carrier / composition rule of the grades (propagation with signed
    superposition; Dirac-square readout; locality) — warrant: interference;
    also the d=3 finite-zero-set role.
@@ -185,6 +193,8 @@ does it influence?
   exhibits): `docs/RECORD_FORMATION_APPEND_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md`.
 - Append consistency sweep (verdict flips and re-keys, work list):
   `docs/RECORD_FORMATION_APPEND_CONSISTENCY_SWEEP_2026-07-04.md`.
-- Composite-Gleason bridge note: `docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`
-  (in preparation at memo date).
+- Comparability decision surface:
+  `docs/RECORD_COMPARABILITY_OWNER_ONE_PAGER_2026-07-04.md`.
+- Graded-constraint primitive draft:
+  `docs/GRADED_CONSTRAINT_PRIMITIVE_REGISTRATION_PROPOSAL_2026-07-04.md`.
 - Registrability no-go (phase at doublet grade): note of 2026-07-03, PR #4906.

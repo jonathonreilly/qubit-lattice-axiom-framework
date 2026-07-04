@@ -7,8 +7,8 @@ retirement block.
 
 Branch: `physics-loop/tier-a-elimination-block50-owner-adoption-retirement-20260704`
 Base: `physics-loop/tier-a-elimination-block49-owner-decision-packet-20260704`
-Source commit: pending
-PR: pending
+Source commit: `a4dfeb4f4`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4991
 
 ## Claim Movement
 
@@ -43,6 +43,6 @@ preserved under `retired_derivation_targets`.
 
 ## Next Exact Action
 
-Commit Block50, push the stacked branch, open a PR against Block49, and monitor
-hosted audit. After this lands, live Tier-A admissions are retired unless a
-future owner action reintroduces them.
+Monitor hosted audit for #4991 and its stacked predecessors. After this lands,
+live Tier-A admissions are retired unless a future owner action reintroduces
+them.

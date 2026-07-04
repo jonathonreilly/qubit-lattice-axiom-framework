@@ -8,7 +8,7 @@ paired-shift assembly bookkeeping can itself retire theta by deriving
 
 Branch: `physics-loop/tier-a-elimination-block46-theta-g4-assembly-current-surface-nogo-20260704`
 Base: `physics-loop/tier-a-elimination-block45-ac-reta-hclass-stretch-20260704`
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4987
 
 ## Claim Movement
 

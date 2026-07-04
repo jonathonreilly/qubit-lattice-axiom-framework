@@ -27,7 +27,7 @@ Owner-approval history for every axiom/primitive change:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3639 |
+| Ledger rows | 3641 |
 | Applied audit verdicts | 1346 |
 | Retained-grade rows, including boxed decorations | 1274 |
 | Retained positive theorems | 189 |
@@ -93,11 +93,11 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3810 |
+| Citation-graph nodes | 3812 |
 | Critical nodes | 668 |
 | High nodes | 468 |
 | Medium nodes | 971 |
-| Leaf nodes | 1703 |
+| Leaf nodes | 1705 |
 
 Top load-bearing rows by graph score:
 

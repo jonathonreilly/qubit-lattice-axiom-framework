@@ -319,6 +319,38 @@ Recorded explicitly approved axiom updates:
   configuration of records) is explicitly NOT supplied by this entry and
   remains an open owner question. The premise-hash guard invalidates prior
   direct `minimal_axioms` audits; the independent audit lane re-audits.
+- **2026-07-04 -- Qualification clarified: a law may not depend on an unfixed
+  choice absent admission.** One sentence is appended to the Qualification of
+  `docs/MINIMAL_AXIOMS_2026-06-29.md` (owner-approved, 2026-07-04; source file
+  edited in place per the 2026-07-02 precedent so existing runner needles and
+  links keep resolving). The addition, immediately after the existing
+  further-physical-structure sentence: "In particular, a law may not depend on
+  a choice not fixed by the supplied structure, unless that choice is
+  admitted." The base sentence and the four axioms' (Lattice / Qubit /
+  Admissibility / Record) named content are unchanged. Content: this is a
+  dependence restriction on *laws*, not a symmetry axiom on *states* — it does
+  not impose mirror symmetry and leaves state-level (spontaneous) orientation
+  free. It makes explicit the reach the Qualification already asserts: a choice
+  the supplied structure does not fix is, by definition, underivable and
+  unbridgeable (a derivation or bridge that fixed it would mean the structure
+  fixes it), so explicit admission or approved primitive registration is the
+  only route by which a law may come to depend on it; "admitted" names that
+  route. Scope (recorded, carries no premise weight): this supplies the
+  axiom-level qualification needed by downstream achiral-admissibility-rule
+  readings, but such readings must land and earn audit separately. It does not
+  by itself establish `theta = 0` (the residual loop-level protection is the
+  mass-side determinant-reality argument) and does not resolve chiral-fermion
+  emergence (the Nielsen-Ninomiya / domain-wall route, downstream).
+  Validation provenance: a certification bounded note with
+  mechanical runner (surgical-edit check that the four axiom sections are
+  unchanged and the exact clause is present; a dependence-restriction /
+  law-achiral-state-free diagnostic; an unfixed-choice finite witness).
+  Owner approval given in-session 2026-07-04; the owner's
+  special review finalizes this record. The `minimal_axioms` machine registry
+  mirror in `docs/audit/data/axiom_premise_nodes.json` is updated narrowly to
+  carry the same approved clause and the matching open-gate exclusion. The
+  premise-hash guard invalidates prior direct `minimal_axioms` audits; the
+  independent audit lane re-audits.
 
 - **2026-07-02 -- Admissibility clarification: availability varies with the
   neighbors.** The Admissibility clause now reads: "For each site, the

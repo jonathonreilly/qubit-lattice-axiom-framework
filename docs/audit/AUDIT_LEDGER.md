@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 189 |
 | **retained_no_go** | 191 |
-| **retained_bounded** | 855 |
+| **retained_bounded** | 856 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1944 |
+| unaudited | 1943 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1228 |
+| `audited_clean` | 1229 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2282 |
+| `unaudited` | 2281 |
 
 | claim_type | count |
 |---|---:|
@@ -1241,6 +1241,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `thales_right_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `third_grown_family_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `third_grown_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `third_grown_family_complex_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -17402,6 +17403,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Under the verbatim license every licensed closed-loop support collapses to a single plaquette, and under the pairwise-proximity weakening no licensed plaquette product can contain a complementary plane pair, so no cross-plane F tilde F monomial can appear.  _(class `A`)_
 - **chain closes:** True — The finite-combinatorial and symbolic steps close from the retained_bounded license and per-plaquette cross-plane authorities. The theorem remains explicitly conditional on those local support classes and does not derive the license, dynamics, winding sectors, or theta closure.
 - **rationale:** The runner does real finite enumeration and symbolic coefficient checks rather than merely printing expected verdicts, and the two dependency-pin checks are limited to verifying the consumed upstream text. Independently, the verbatim-license distance-2 argument confines closed supports to the finite plaquette classification, while the complementary-plane W exclusion follows from projecting one plaquette to a unit square and the complementary plaquette to one integer point, with no L1-radius-1 point covering all four corners. The coefficient criterion is also algebraic: a product of one-plane factors has a cross-plane mixed coefficient only when both complementary plane variables occur. The source states the remaining chain-connected and global-winding complements, so the audited scope is narrow rather than overclosed.
+- **auditor confidence:** high
+
+### `theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10`
+
+- **Note:** [`THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md`](../../docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded determinant-character phase erasure only: in a supplied determinant-class/mass determinant-channel readout whose phase readouts are continuous multiplicative characters and whose K/CPT orbit identifies z with conj(z), the invariant phase index is k=0; no gauge/action theta closure, Tier-A registry change, or retirement-basis match is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-theta-p2-kcpt-round3`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Requiring the determinant phase character to be K/CPT-invariant gives exp(i k phi) = exp(-i k phi) for all phi, hence sin(k phi) = 0 for all phi, so k = 0.  _(class `A`)_
+- **chain closes:** True — The direct non-axiom dependencies are retained_bounded and the minimal-axiom node is an accepted premise/meta dependency. Within the explicitly supplied determinant-character channel, the conclusion is exact U(1) character algebra and the note expressly excludes gauge/action theta closure, Tier-A registry edits, and broader physical-readout exhaustion.
+- **rationale:** The audited scope is narrow enough to close: once the determinant-character readout class and K/CPT conjugation z -> conj(z) are supplied, the phase-character invariance equation forces k=0 without a hidden physical bridge. The retained bounded bridge notes supply only the bounded determinant-channel/readout context, while the strong-CP parent is consumed only as the retained bounded selected-surface premise allowed for this row. The live runner returns PASS=15 FAIL=0 and checks both the exact algebra and the source/dependency boundary guards; its legacy 2026-06-05 axiom path is not load-bearing because the current 2026-06-29 axiom note was read directly and preserves the needed no-readout-context boundary.
 - **auditor confidence:** high
 
 ### `third_grown_family_boundary_note`

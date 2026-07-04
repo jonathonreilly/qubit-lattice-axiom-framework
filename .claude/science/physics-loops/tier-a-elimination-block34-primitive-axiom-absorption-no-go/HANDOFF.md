@@ -7,6 +7,8 @@ updated four-axiom memo.
 
 Branch: `physics-loop/tier-a-elimination-block34-primitive-axiom-absorption-no-go-20260704`
 Base: `physics-loop/tier-a-elimination-block33-theta-g3-phase-character-support-20260704`
+Source commit: `4e8b5d121`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4975
 
 ## Expected Claim Movement
 
@@ -36,5 +38,6 @@ actual-history pointwise slot remains outside the axioms.
 
 ## Next Exact Action
 
-Commit, push, and open a stacked PR on Block33. Then verify hosted
-`audit_pipeline` if GitHub checkout is available.
+Verify hosted `audit_pipeline` on PR #4975 if GitHub checkout is available,
+then continue Tier-A retirement directly: theta physical phase source/sector
+readout, G1 defect closure, theta mass-side bridge, or AC residual theorem.

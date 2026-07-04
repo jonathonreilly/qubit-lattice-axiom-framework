@@ -27,7 +27,7 @@ Owner-approval history for every axiom/primitive change:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3660 |
+| Ledger rows | 3661 |
 | Applied audit verdicts | 1345 |
 | Retained-grade rows, including boxed decorations | 1274 |
 | Retained positive theorems | 189 |
@@ -35,7 +35,7 @@ Owner-approval history for every axiom/primitive change:
 | Retained bounded rows | 849 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
-| Unaudited rows | 1965 |
+| Unaudited rows | 1966 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 25 |
 | Audited renaming rows | 19 |
@@ -49,13 +49,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2003 |
+| Total pending rows | 2004 |
 | Ready rows | 178 |
 | Cycle-break targets | 14 |
-| Critical pending | 423 |
-| High pending | 291 |
-| Medium pending | 542 |
-| Leaf pending | 747 |
+| Critical pending | 425 |
+| High pending | 289 |
+| Medium pending | 545 |
+| Leaf pending | 745 |
 
 Next ready rows by queue order:
 
@@ -77,8 +77,8 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 187 |
-| high | `unaudited` | 148 |
+| critical | `unaudited` | 189 |
+| high | `unaudited` | 146 |
 | medium | `unaudited` | 97 |
 | medium | `open_gate` | 3 |
 | high | `audited_numerical_match` | 2 |
@@ -93,19 +93,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3831 |
-| Critical nodes | 678 |
-| High nodes | 463 |
-| Medium nodes | 995 |
-| Leaf nodes | 1695 |
+| Citation-graph nodes | 3832 |
+| Critical nodes | 680 |
+| High nodes | 461 |
+| Medium nodes | 998 |
+| Leaf nodes | 1693 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1883 descendants; score 193.880
-- `three_generation_observable_theorem_note` - critical; 1169 descendants; score 67.192
-- `graph_first_su3_integration_note` - critical; 1600 descendants; score 65.145
+- `minimal_axioms` - critical; 1884 descendants; score 194.380
+- `three_generation_observable_theorem_note` - critical; 1170 descendants; score 67.194
+- `graph_first_su3_integration_note` - critical; 1601 descendants; score 65.146
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 198 descendants; score 65.137
-- `observable_principle_from_axiom_note` - critical; 1224 descendants; score 64.259
-- `plaquette_self_consistency_note` - critical; 1272 descendants; score 53.314
-- `minimal_axioms_2026-05-03` - critical; 1177 descendants; score 48.202
-- `key_terminology` - critical; 1277 descendants; score 46.820
+- `observable_principle_from_axiom_note` - critical; 1225 descendants; score 64.260
+- `plaquette_self_consistency_note` - critical; 1273 descendants; score 53.315
+- `minimal_axioms_2026-05-03` - critical; 1178 descendants; score 48.203
+- `key_terminology` - critical; 1278 descendants; score 46.821

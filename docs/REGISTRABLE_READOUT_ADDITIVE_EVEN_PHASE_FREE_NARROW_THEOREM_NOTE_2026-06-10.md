@@ -41,21 +41,37 @@ conditional downstream implications, with the surviving residuals named
 explicitly. It does **not** discharge, close, or exhaust the physical
 strong-CP mass phase or AC_phi_lambda species readout bridges.
 
-## The Record boundary and the extra homomorphism boundary
+## The current Record boundary, supplied orbit bridge, and the extra homomorphism boundary
 
-From [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md), the
-**Record** axiom states that, in a *supplied* readout context with a finite
-central-sector decomposition and a fixed `K`/CPT conjugation:
+From [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md), the
+current **Record** axiom supplies only the readout facts used here:
 
 1. **(Additivity)** the scalar readout `I` is finitely additive over finite
    pairwise-disjoint record collections, with `I(empty) = 0`;
-2. **(Orbit)** the realized outcome is the `K`/CPT orbit of the realized central
-   sector.
+2. **(Orbit)** — carried by the supplied-context bridge
+   [`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md),
+   **not** by the axiom: in the supplied readout context (finite
+   central-sector decomposition, fixed `K`/CPT conjugation, and the supplied
+   ORBIT-INDEXING property), that bridge's T1 transfers orbit-indexed record
+   content through the axiom's content-determination sentence, so every
+   registrable scalar readout is constant on `K`/CPT orbits. Wherever
+   `[(Orbit)]` is used below, it names this bridge-carried supplied-context
+   premise.
 
-It supplies **no** readout context, decomposition, `K`/CPT structure,
-sector-generation rule, weighting, normalization, probability, modulus rule,
-log-det, source/action, scale, or observable identification. The theorem below
-uses (Additivity) and (Orbit) only for those two Record conclusions.
+The current Record axiom supplies **no** readout context, decomposition,
+`K`/CPT structure, orbit indexing, sector-generation rule, weighting,
+normalization, probability, modulus rule, log-det, source/action, scale, or
+observable identification. The theorem below uses (Additivity) from the axiom
+and (Orbit) from the cited bridge, and nothing else from either.
+
+**2026-07-04 premise relocation (per the audited_failed repair class
+`missing_dependency_edge/source_premise_relocation`).** The pre-reset
+2026-06-05 Record wording carried the orbit clause directly; under the
+2026-06-29 foundation reset (as amended through the 2026-07-04 formation
+sentence) `K`/CPT orbit structure is downstream supplied-context content.
+The (Orbit) premise is therefore retargeted, unchanged in content, onto the
+bridge named above; the theorem, proofs, and residuals below are otherwise
+untouched.
 
 The theorem also assumes, as part of the supplied readout context and **not** as
 a consequence of Record, that the determinant phase-bearing component lies in a
@@ -383,8 +399,13 @@ similar wall was retired by a mechanism overlooked here.
 
 ## Dependencies
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — the Record
-  axiom boundary (finite record additivity and `K`/CPT orbit invariance).
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — the current
+  Record axiom boundary (finite record additivity and content-determination
+  only).
+- [`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md)
+  — the supplied-context bridge carrying the (Orbit) premise (T1
+  orbit constancy on supplied ORBIT-INDEXING; T2 homomorphism-boundary
+  registration).
 - [`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`](TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md)
   — the two named-open registrability bridges that motivate the conditional
   algebra here, and the AC_phi_lambda circulant form (L2) consumed in

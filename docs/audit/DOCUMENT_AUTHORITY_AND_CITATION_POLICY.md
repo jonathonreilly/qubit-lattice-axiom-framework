@@ -36,8 +36,9 @@ runner mechanically checks the invariants.
   channels only. Cite by registry id.
 
 - **Class C — runner-carried claim notes.** Bounded/no-go/bridge notes with a
-  primary runner and a claim type. Premise weight: exactly the audited
-  `claim_scope`, nothing broader; prose outside the scope is not citable.
+  primary runner and a claim type. Premise weight: none until audit
+  ratification; after ratification, exactly the audited `claim_scope`,
+  nothing broader; prose outside the scope is not citable.
   Cite note + scope; never cite a title or a summary.
 
 - **Class D — proposals.** Drafted axiom text, primitive drafts, owner

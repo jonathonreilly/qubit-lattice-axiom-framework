@@ -1,0 +1,46 @@
+Theta mass action determinant-entry exact-support split
+==============================================================================
+
+------------------------------------------------------------------------------
+A - source boundaries
+------------------------------------------------------------------------------
+PASS: note declares bounded theorem claim type
+PASS: note status is exact-support split, not effective retained
+PASS: note denies theta retirement, W2 derivation, registry edits, and gauge claim
+PASS: runner path is wired in note
+
+------------------------------------------------------------------------------
+B - existing sources name this split
+------------------------------------------------------------------------------
+PASS: exhaustion bridge separates W2 and action-level determinant-entry premises
+PASS: epsilon-reality packet names the bilinear matter determinant half
+PASS: block25 keeps W2 open
+PASS: registry keeps theta mass side localized to determinant-readout bridge
+
+------------------------------------------------------------------------------
+C - exact Gaussian bilinear determinant entry
+------------------------------------------------------------------------------
+PASS: explicit 3-pair Berezin expansion equals det K
+PASS: explicit 2-pair Berezin expansion equals det K
+PASS: independent block sum multiplies determinant weights
+PASS: partition phase is additive modulo 2 pi under block product
+PASS: K/CPT conjugation pairs determinant weights by alpha -> -alpha
+
+------------------------------------------------------------------------------
+D - hostile guards
+------------------------------------------------------------------------------
+PASS: quartic non-Gaussian witness leaves supplied Gaussian class -- Z = quartic - u*y + v*x
+PASS: same determinant can have different inverse insertion data -- det=6, inv00=1/2 vs 1
+PASS: note explicitly excludes non-Gaussian and source/insertion overreach
+PASS: note keeps W2 open
+
+------------------------------------------------------------------------------
+E - trace and no-overclaim checks
+------------------------------------------------------------------------------
+PASS: note says the split is useful but not retirement authority
+PASS: note leaves physical action-surface selection open
+PASS: remaining live routes include W2 and action-surface derivation
+PASS: banned overclaim phrases are absent -- []
+
+==============================================================================
+TOTAL: PASS=21 FAIL=0

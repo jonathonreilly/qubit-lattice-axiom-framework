@@ -7,8 +7,8 @@ binary from Record outcome-orbit wording or the current minimal axioms.
 
 Branch: `physics-loop/tier-a-elimination-block29-ac-record-orbit-nonsupply-20260704`
 Base: `physics-loop/tier-a-elimination-block28-ac-det-power-split-20260704`
-Source commit: pending
-PR: pending
+Source commit: `b9aad177d`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4970
 
 ## Expected Claim Movement
 
@@ -41,5 +41,5 @@ selects the occupancy/determinant-power dictionary.
 
 ## Next Exact Action
 
-Publish a stacked PR, watch hosted `audit_pipeline`, and then continue toward a
-real physical horn-selection theorem or the remaining R-eta route.
+Watch hosted `audit_pipeline`, then continue toward a real physical
+horn-selection theorem or the remaining R-eta route.

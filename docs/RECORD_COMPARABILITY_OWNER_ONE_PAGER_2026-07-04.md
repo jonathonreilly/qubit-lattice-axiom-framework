@@ -57,12 +57,19 @@ The alternative route — reading the "Record / Fixed Reality" section title as
 already carrying this — is a reading ruling, and your no-rulings rule closes
 that route. The live options are:
 
-- **(A) Approve the sentence** — with a certification note in the same PR,
-  and optional blind-panel honing first, per the 2026-07-02 precedent.
+- **(A) Certify first, approve last** — fire the bounded notes now: an
+  underivability note (comparability is not derivable from the landed set —
+  countermodel exhibit) and a conditional certification note (with the
+  sentence, the chain and the arrow follow), plus blind-panel honing per the
+  2026-07-02 precedent; the one-sentence approval is the final step. The
+  formation append is the argument for this order: its adversarial pass
+  changed the wording (law-form fell to occurrence strength). Approving
+  before certification risks approving the wrong sentence.
 - **(B) Leave it open** — every arrow-dependent result in every lane stays
   conditional on comparability indefinitely.
 
-Recommendation: A.
+Recommendation: A — with the approval strictly last. Nothing is at approval
+grade today; this pager is a decision preview, not an approval surface.
 
 ## Mechanics if approved
 

@@ -30480,6 +30480,30 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py"
     },
+    "record_comparability_conditional_chain_arrow_certification_bounded_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/record_comparability_boundary_and_conditional_arrow_2026_07_04.py"
+    },
+    "record_comparability_not_derived_by_minimal_axioms_narrow_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/record_comparability_boundary_and_conditional_arrow_2026_07_04.py"
+    },
     "record_composition_bridge_semigroup_positivity_selection_bounded_note_2026-07-02": {
       "assert_count": 2,
       "counts": {
@@ -87335,6 +87359,22 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/record_comparability_boundary_and_conditional_arrow_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "record_comparability_conditional_chain_arrow_certification_bounded_note_2026-07-04",
+        "record_comparability_not_derived_by_minimal_axioms_narrow_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/record_content_readout_license_split_registration_unreachability_2026_07_02.py": {
       "assert_count": 1,
       "claims": [
@@ -90680,15 +90720,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 691,
+    "decoration_candidates": 692,
     "dominant_class_distribution": {
-      "A": 488,
+      "A": 489,
       "B": 635,
       "C": 1272,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3302,
+    "runners_classified": 3303,
     "runners_with_C": 1729,
     "runners_with_D": 1061
   }

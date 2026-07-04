@@ -81,6 +81,18 @@
       "note": "Owner decision surface: whether to append 'There is one configuration of records.' to Record \u2014 the arrow's last missing piece. No weight until decided."
     },
     {
+      "path": "docs/RECORD_COMPARABILITY_NOT_DERIVED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-07-04.md",
+      "class": "C",
+      "status": "landed",
+      "note": "Runner-carried no-go: current minimal axioms, including 'Records form.', do not force pairwise comparability/nesting of realized record configurations."
+    },
+    {
+      "path": "docs/RECORD_COMPARABILITY_CONDITIONAL_CHAIN_ARROW_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md",
+      "class": "C",
+      "status": "landed",
+      "note": "Runner-carried conditional certification: with the named extra premise 'There is one configuration of records.', realized record stages form one nested chain without supplying clock, rate, formation rule, state selector, or weights."
+    },
+    {
       "path": "docs/GRADED_CONSTRAINT_PRIMITIVE_REGISTRATION_PROPOSAL_2026-07-04.md",
       "class": "D",
       "status": "landed",

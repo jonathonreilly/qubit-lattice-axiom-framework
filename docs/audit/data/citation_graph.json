@@ -36185,6 +36185,18 @@
       "to": "record_generation_readout_two_sectors_2026-06-05"
     },
     {
+      "from": "record_comparability_conditional_chain_arrow_certification_bounded_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "record_comparability_conditional_chain_arrow_certification_bounded_note_2026-07-04",
+      "to": "record_comparability_not_derived_by_minimal_axioms_narrow_no_go_note_2026-07-04"
+    },
+    {
+      "from": "record_comparability_not_derived_by_minimal_axioms_narrow_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "record_composition_bridge_semigroup_positivity_selection_bounded_note_2026-07-02",
       "to": "minimal_axioms"
     },
@@ -108284,6 +108296,35 @@
       "runner_path": "scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py",
       "title": "Record Clock/Rate Normalization And Stable-Dial Gate"
     },
+    "record_comparability_conditional_chain_arrow_certification_bounded_note_2026-07-04": {
+      "claim_id": "record_comparability_conditional_chain_arrow_certification_bounded_note_2026-07-04",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms",
+        "record_comparability_not_derived_by_minimal_axioms_narrow_no_go_note_2026-07-04"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "6b4ca9b6236190fbbb6ba2833345544e0a72e51d4f6e87af8a479a5998a8085a",
+      "path": "docs/RECORD_COMPARABILITY_CONDITIONAL_CHAIN_ARROW_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md",
+      "runner_path": "scripts/record_comparability_boundary_and_conditional_arrow_2026_07_04.py",
+      "title": "Conditional Comparability Certification: One Record Configuration Gives A Chain"
+    },
+    "record_comparability_not_derived_by_minimal_axioms_narrow_no_go_note_2026-07-04": {
+      "claim_id": "record_comparability_not_derived_by_minimal_axioms_narrow_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "1114677726441891a99be60fa86ebad570ec814b87508cd6ee2574005446e207",
+      "path": "docs/RECORD_COMPARABILITY_NOT_DERIVED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/record_comparability_boundary_and_conditional_arrow_2026_07_04.py",
+      "title": "Record Comparability Is Not Derived By The Minimal Axioms"
+    },
     "record_comparability_owner_one_pager_2026-07-04": {
       "claim_id": "record_comparability_owner_one_pager_2026-07-04",
       "claim_type_author_hint": "meta",
@@ -109392,7 +109433,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bc1f28b2af28636713abfe61ecc688cffd02aea476384006d94ae1218325c97e",
+      "note_hash": "baf865ed950c9a225396d15d301c53245c48dfa8b5742480f02d3584f542fa9e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -125386,27 +125427,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1553,
+      "bounded_theorem": 1554,
       "decoration": 3,
       "meta": 318,
-      "no_go": 316,
+      "no_go": 317,
       "none": 1216,
       "open_gate": 133,
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1958,
+      "bounded_theorem": 1959,
       "decoration": 3,
       "meta": 318,
-      "no_go": 420,
+      "no_go": 421,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14289,
-    "leaf_count": 1289,
-    "node_count": 3813,
+    "edge_count": 14292,
+    "leaf_count": 1290,
+    "node_count": 3815,
     "root_count": 1103,
-    "runners_with_path": 3436
+    "runners_with_path": 3438
   }
 }

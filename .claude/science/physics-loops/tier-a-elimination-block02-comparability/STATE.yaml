@@ -1,0 +1,35 @@
+loop_slug: tier-a-elimination-block02-comparability
+goal: "Eliminate Tier-A admissions by retiring or reclassifying retireable pieces while preserving unavoidable primitives."
+target_status: route-pruning-and-conditional-certification
+branch: physics-loop/tier-a-elimination-block02-comparability-20260704
+base: origin/main@7e1d7f9032a2d7dd5e1fe57729d0bc7dd00ec68a
+started_at: "2026-07-04"
+mode: interactive
+cycle_count: 1
+active_block: block02-comparability-clock-support
+active_route: "record comparability underivability plus conditional chain-arrow certification"
+hard_residual: "Current axioms do not supply 'There is one configuration of records.' Comparability remains an owner/supplier premise, not a derived result."
+lock:
+  branch_local_lock: "/tmp/cl3-tier-a-block02-comparability-origin-main/.physics_worker_lock.json"
+open_imports:
+  - "AC_phi_lambda and theta remain the only genuine Tier-A admitted derivation targets."
+  - "Comparability is not a Tier-A admission and is not landed axiom content."
+  - "The conditional certification assumes the named one-configuration sentence only as a conditional premise."
+files_touched:
+  - "docs/RECORD_COMPARABILITY_NOT_DERIVED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-07-04.md"
+  - "docs/RECORD_COMPARABILITY_CONDITIONAL_CHAIN_ARROW_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md"
+  - "scripts/record_comparability_boundary_and_conditional_arrow_2026_07_04.py"
+  - "logs/runner-cache/record_comparability_boundary_and_conditional_arrow_2026_07_04.txt"
+  - "docs/audit/data/doc_authority_registry.json"
+  - "generated audit ledger, queue, citation, runner-classification, and front-door status files"
+checks:
+  - "PYTHONPATH=scripts python3 scripts/record_comparability_boundary_and_conditional_arrow_2026_07_04.py: PASS=41 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py scripts/record_comparability_boundary_and_conditional_arrow_2026_07_04.py --refresh: pass"
+  - "python3 -m py_compile scripts/record_comparability_boundary_and_conditional_arrow_2026_07_04.py: pass"
+  - "python3 -m json.tool docs/audit/data/doc_authority_registry.json: pass"
+  - "bash docs/audit/scripts/run_pipeline.sh: pass; no errors, existing warnings/notices only"
+  - "python3 docs/audit/scripts/audit_lint.py --strict: pass; no errors, existing warnings/notices only"
+review_status: "self-check pass; no audit verdicts applied"
+pr_status: pending
+next_exact_action: "Commit, push, and open one review PR for block 2."
+stop_condition: "Block 2 committed and review PR opened or PR_BACKLOG written."

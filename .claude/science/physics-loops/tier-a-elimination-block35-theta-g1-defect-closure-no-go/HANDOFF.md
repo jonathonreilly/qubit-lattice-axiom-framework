@@ -8,7 +8,7 @@ on the abelianized multi-plaquette dual.
 
 Branch: `physics-loop/tier-a-elimination-block35-theta-g1-defect-closure-no-go-20260704`
 Base: `physics-loop/tier-a-elimination-block34-primitive-axiom-absorption-no-go-20260704`
-Source commit: pending
+Source commit: `c69741cf8`
 PR: pending
 
 ## Expected Claim Movement

@@ -7,7 +7,7 @@ claim_type: no_go
 registry_edits: false
 retirement_claimed: false
 status: local_review_passed
-source_commit: pending
+source_commit: c69741cf8
 pr: pending
 active_route: "current-surface no-go against deriving dn = 0 or defect suppression from updated axioms/primitives plus carrier support"
 hard_residual: "derive a physical closed-branch law or dynamical suppression theorem for dn != 0 without assuming the theta carrier surface"

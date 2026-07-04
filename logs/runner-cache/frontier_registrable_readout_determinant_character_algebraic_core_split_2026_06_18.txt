@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18.py
-runner_sha256: d2decc18872c7d67fbd3d8afa095a46b284ee5b3b5950fd347b04bc3e804e12c
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.47
-status: ok
------ stdout -----
 ========================================================================================
 REGISTRABLE READOUT DETERMINANT-CHARACTER ALGEBRAIC CORE SPLIT
 ========================================================================================
@@ -60,7 +52,8 @@ T7 - modulus/log-modulus survives
 T8 - source-boundary guard
 ----------------------------------------------------------------------------------------
   [PASS] split note carries boundary phrase: (context handle, not a citation-graph dependency)
-  [PASS] split note carries boundary phrase: MINIMAL_AXIOMS_2026-06-05.md
+  [PASS] split note carries boundary phrase: MINIMAL_AXIOMS_2026-06-29.md
+  [PASS] split note carries boundary phrase: KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md
   [PASS] split note carries boundary phrase: does not identify the physical strong-CP mass-orientation readout
   [PASS] split note carries boundary phrase: does not identify AC_phi_lambda species data
   [PASS] split note carries boundary phrase: does not derive the determinant-character/log-character boundary
@@ -77,8 +70,5 @@ T8 - source-boundary guard
   [PASS] bridge-discharge wording absent: retained on the actual surface
 
 ========================================================================================
-TOTAL: PASS=34 FAIL=0
+TOTAL: PASS=35 FAIL=0
 ========================================================================================
-
------ stderr -----
-

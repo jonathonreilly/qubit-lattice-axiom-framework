@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/qualification_unfixed_choice_clarification_certification_2026_07_04.py
+runner_sha256: f94cc4ef8659ba8a86d44161c1d9cb149e1d4d6e2f41f5fdc06e1e6db0c4f48e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.00
+status: ok
+----- stdout -----
+PASS: C1a four axiom section headers present -- headers=4/4
+PASS: C1b axioms' named content unchanged (verbatim sentences present) -- named-content sentences present=7/7
+PASS: C1c base further-physical-structure sentence present unchanged
+PASS: C1d exact approved clause present in the Qualification -- clause appears immediately after the base sentence
+PASS: C1e clause did not alter the state / law-domain sentences
+PASS: C2a a law not depending on the unfixed handedness is licensed (invariant under supplied symmetries) -- R_align is O_h-covariant on 40x48 checks
+PASS: C2b a law depending on the unfixed handedness is the forbidden case (breaks a supplied symmetry) -- R_J2 fails an improper (reflection) covariance -- it depends on the unfixed choice
+PASS: C2c a state configuration may still carry the handedness (state left free) -- configs with nonzero handedness=116/200
+PASS: C3a the mirror pair shares every supplied-structure invariant -- invariant-matched chiral pairs=116
+PASS: C3b the mirror pair carries opposite handedness (the unfixed choice)
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

@@ -1,11 +1,13 @@
 # PR Backlog
 
-No PR backlog yet. Create a stacked PR against:
+Opened PR:
 
-```bash
-gh pr create \
-  --base physics-loop/tier-a-elimination-block21-theta-closed-nonexact-20260704 \
-  --head physics-loop/tier-a-elimination-block22-theta-mass-readiness-20260704 \
-  --title "[physics-loop] tier-a-elimination-block22-theta-mass-readiness no-go" \
-  --body-file /tmp/block22-pr-body.md
-```
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4951
+
+Base:
+
+- `physics-loop/tier-a-elimination-block21-theta-closed-nonexact-20260704`
+
+Head:
+
+- `physics-loop/tier-a-elimination-block22-theta-mass-readiness-20260704`

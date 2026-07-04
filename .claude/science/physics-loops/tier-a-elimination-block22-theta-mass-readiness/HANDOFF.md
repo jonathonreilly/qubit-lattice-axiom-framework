@@ -8,7 +8,8 @@ hygiene.
 
 Branch: `physics-loop/tier-a-elimination-block22-theta-mass-readiness-20260704`
 Base: `physics-loop/tier-a-elimination-block21-theta-closed-nonexact-20260704`
-PR: pending
+Source commit: `4ec4bda67141`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4951
 
 ## Expected Claim Movement
 
@@ -40,6 +41,6 @@ theta(b).
 
 ## Next Exact Action
 
-Commit, push, and open a stacked block22 PR, then continue toward determinant
-bridge audit/dependency repair, physical determinant-channel derivation, or
-K-real physical realization.
+Verify PR status, then continue toward determinant bridge audit/dependency
+repair, physical determinant-channel derivation, or K-real physical
+realization.

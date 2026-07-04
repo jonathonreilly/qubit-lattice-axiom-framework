@@ -7,4 +7,4 @@
 | `logs/runner-cache/theta_mass_determinant_bridge_retirement_readiness_no_go_2026_07_04.txt` | Cached verifier output | written |
 | Loop pack | Branch-local state, trace, certificate, handoff | written |
 | Audit pipeline generated files | Ledger/front-door integration for unaudited row | generated; seeded one unaudited no-go row |
-| Stacked PR | One review PR for block22 | pending |
+| Stacked PR | One review PR for block22 | open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4951 |

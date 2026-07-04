@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py
-runner_sha256: d687a4601348d9764c691a74ebf5522938b6640c7bf7a9f1d17ec873ebd581ca
+runner_sha256: 71a1dc23b8dc795eb61d396a83b407d9efae49cba34f37d87fdf8bca0b91650a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.55
+elapsed_sec: 0.63
 status: ok
 ----- stdout -----
 
@@ -26,14 +26,36 @@ PART A - sources and authority gates
 [PASS] note quotes Brannen pin: circulant form
 [PASS] Brannen file pin present: (a, |b|, delta)
 [PASS] note quotes Brannen pin: (a, |b|, delta)
-[PASS] record ledger status retained
+[PASS] record ledger row exists in audit ledger
+       record ledger row live audit fields (informational; the audit lane owns them): effective_status=retained_bounded, claim_scope=present
 [PASS] record note path pinned
-[PASS] record quoted scope equals ledger field
-       For the supplied C3 pointer S=C+C^2 and the Stage-1 circulant record-preserving generator, singlet/doublet block weights are conserved under H-evolution and the two-sector record preserves doublet-internal coherence.
-[PASS] Brannen ledger status retained
+[PASS] Brannen ledger row exists in audit ledger
+       Brannen ledger row live audit fields (informational; the audit lane owns them): effective_status=retained_bounded, claim_scope=present
 [PASS] Brannen note path pinned
-[PASS] Brannen quoted scope equals ledger field
-       Finite-dimensional algebraic classification on the supplied C3 generation 3-space: Hermitian generators commuting with the cyclic shift C have Brannen circulant form and commute with the supplied pointer S=C+C^2; no derivation of C, S, r, delta, or the coupling values is audited.
+[PASS] RECORD premise-quote line present exactly once
+[PASS] RECORD premise quote count is 2
+       quotes=2
+[PASS] RECORD dependency claim section extracted and substantial
+       len=2244
+[PASS] RECORD premise quote 1 meets length floor
+       len=206
+[PASS] RECORD premise quote 1 is verbatim in the dependency claim section
+[PASS] RECORD premise quote 2 meets length floor
+       len=142
+[PASS] RECORD premise quote 2 is verbatim in the dependency claim section
+[PASS] BRANNEN premise-quote line present exactly once
+[PASS] BRANNEN premise quote count is 2
+       quotes=2
+[PASS] BRANNEN dependency claim section extracted and substantial
+       len=493
+[PASS] BRANNEN premise quote 1 meets length floor
+       len=189
+[PASS] BRANNEN premise quote 1 is verbatim in the dependency claim section
+[PASS] BRANNEN premise quote 2 meets length floor
+       len=140
+[PASS] BRANNEN premise quote 2 is verbatim in the dependency claim section
+[PASS] retired ledger-scope embedding absent
+[PASS] retired citation-authority wording absent
 [PASS] Tier-A statement contains sub-admission (ii)
 [PASS] note quotes Tier-A sub-admission (ii)
 [PASS] Tier-A path is inline code, not markdown link
@@ -117,15 +139,15 @@ PART D - note discipline
 [PASS] instruction marker absent: runner greps
 [PASS] instruction marker absent: execute it exactly
 [PASS] instruction marker absent: ANTI-FABRICATION
-[PASS] retained_bounded token appears exactly twice
+[PASS] retained_bounded token absent from note
 [PASS] Tier-A path is not markdown linked
 [PASS] no campaign note path markdown links
 [PASS] note line count in requested band
-       240
+       243
 [PASS] Verification section present
 [PASS] Primary runner header present
 
-TOTAL: PASS=97 FAIL=0
+TOTAL: PASS=111 FAIL=0
 
 ----- stderr -----
 

@@ -9,7 +9,7 @@ surface. It does not derive `delta = 2/9`, derive `Phi = 2/3`, edit registries,
 register primitives, change axioms, or claim `AC_phi_lambda` retirement.
 **Audit boundary:** the independent audit lane owns all `audit_status` and
 `effective_status` verdicts.
-**Primary runner:** [`scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py`](../scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py) (`TOTAL: PASS=97 FAIL=0`, measured close below).
+**Primary runner:** [`scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py`](../scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py) (`TOTAL: PASS=111 FAIL=0`, measured close below).
 
 ## Claim
 
@@ -30,12 +30,15 @@ Accordingly, this is the registered-pattern normal form, not a terminal no-go.
 
 ## Frame And Retained Inputs
 
-The live ledger is the citation authority for the two dependency scopes quoted here.
+The dependency premise quotes below are verbatim sentences from the dependency notes' own claim sections; live ledger audit fields are not cited as premise here.
 
-- [`docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md`](RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md) has live ledger status `retained_bounded`; ledger `claim_scope`: "For the supplied C3 pointer S=C+C^2 and the Stage-1 circulant record-preserving generator, singlet/doublet block weights are conserved under H-evolution and the two-sector record preserves doublet-internal coherence."
+- [`docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md`](RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md) is the conservation dependency.
 - File pins from that note used here: "only a finer character-basis record would touch it" and "neither produced nor relaxed by the record-preserving dynamics".
-- [`docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md`](BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md) has live ledger status `retained_bounded`; ledger `claim_scope`: "Finite-dimensional algebraic classification on the supplied C3 generation 3-space: Hermitian generators commuting with the cyclic shift C have Brannen circulant form and commute with the supplied pointer S=C+C^2; no derivation of C, S, r, delta, or the coupling values is audited."
+- [`docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md`](BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md) is the circulant-form dependency.
 - File pins from that note used here: "circulant form" and "(a, |b|, delta)".
+
+Premise scope quotes (RECORD Claim): "A record-preserving generation dynamics — forced block-diagonal in the singlet (+) doublet decomposition by `[H, S] = 0` — **conserves** the realized state's singlet/doublet block weight under `H`-evolution" and "The within-sector measure `(r, delta)` is therefore conserved/preserved by the record-preserving dynamics, **not** a relaxation outcome of it."
+Premise scope quotes (BRANNEN Claim): "On the supplied C3[111] generation 3-space, a local Hermitian generator commuting with the [111] 3-fold rotation `C`, namely `[H,C]=0`, has the circulant form `H = a I + b C + conj(b) C^T`." and "It has exactly three real couplings, written as `(a, |b|, delta)`, and is non-demolition for the supplied einselected pointer `S = C + C^2`."
 
 The Tier-A registry data path is `docs/audit/data/tier_a_admissions.json`.
 Its sub-admission (ii) is quoted here as the residual owner text:
@@ -237,4 +240,4 @@ Run:
 python3 scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py
 ```
 
-Measured close: `TOTAL: PASS=97 FAIL=0`.
+Measured close: `TOTAL: PASS=111 FAIL=0`.

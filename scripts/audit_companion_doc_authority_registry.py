@@ -76,8 +76,22 @@ def main():
             all(r.get("status") in {"landed", "in_flight_pr"} for r in rows),
         )
         check(
-            "in-flight rows carry a pr field",
-            all("pr" in r for r in rows if r.get("status") == "in_flight_pr"),
+            "in-flight rows carry a positive integer pr field",
+            all(
+                isinstance(r.get("pr"), int) and r.get("pr") > 0
+                for r in rows
+                if r.get("status") == "in_flight_pr"
+            ),
+        )
+        landed_missing = [
+            r.get("path")
+            for r in rows
+            if r.get("status") == "landed" and not (ROOT / r.get("path", "")).exists()
+        ]
+        check(
+            "landed registry rows exist on disk",
+            not landed_missing,
+            ", ".join(landed_missing),
         )
         check(
             "registry registers the motivating Class F memo",

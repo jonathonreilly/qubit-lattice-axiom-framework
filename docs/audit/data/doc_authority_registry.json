@@ -54,30 +54,20 @@
     {
       "path": "docs/RECORD_FORMATION_APPEND_CONSISTENCY_SWEEP_2026-07-04.md",
       "class": "G",
-      "status": "in_flight_pr",
-      "pr": 4915,
+      "status": "landed",
       "note": "Append consistency sweep: flip/re-key work list for the reconciliation waves."
     },
     {
       "path": "docs/RECORD_FORMATION_APPEND_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md",
       "class": "C",
-      "status": "in_flight_pr",
-      "pr": 4915,
+      "status": "landed",
       "note": "Occurrence-strength certification; claim scope in front matter; runner-carried."
-    },
-    {
-      "path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
-      "class": "C",
-      "status": "in_flight_pr",
-      "pr": 4916,
-      "note": "Bridge-conditional Born-form note; H4 carries the registration's specification burden; runner-carried."
     },
     {
       "path": "docs/DYNAMICS_AXIOM_MINIMAL_NONTRIVIALITY_BRANCH_PROPOSAL_2026-06-29.md",
       "class": "D",
-      "status": "in_flight_pr",
-      "pr": 0,
-      "note": "Banked dynamics-axiom proposal lineage; cite only as proposed. PR pending re-bank; row updates when it lands."
+      "status": "landed",
+      "note": "Banked dynamics-axiom proposal lineage; cite only as proposed."
     },
     {
       "path": "docs/audit/DOC_CLASS_SWEEP_REPORT_2026-07-04.md",

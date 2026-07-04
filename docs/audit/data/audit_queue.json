@@ -3,7 +3,7 @@
     "critical": 421,
     "high": 289,
     "leaf": 756,
-    "medium": 517
+    "medium": 516
   },
   "cycle_break_target_count": 14,
   "cycle_break_targets": [
@@ -12591,6 +12591,35 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
+        "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
+        "minimal_axioms",
+        "strong_cp_theta_zero_note",
+        "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+      ],
+      "direct_in_degree": 13,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 11.024,
+      "note_path": "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py",
+      "transitive_descendants": 22
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -19613,35 +19642,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
-        "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
-        "minimal_axioms",
-        "strong_cp_theta_zero_note",
-        "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 13,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.024,
-      "note_path": "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py",
-      "transitive_descendants": 22
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -21238,31 +21238,6 @@
       "ready": true,
       "runner_path": "scripts/gate_b_connectivity_tolerance.py",
       "transitive_descendants": 25
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.585,
-      "note_path": "docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py",
-      "transitive_descendants": 23
     },
     {
       "audit_independence_required": "any_non_self",
@@ -58313,5 +58288,5 @@
     }
   ],
   "ready_count": 170,
-  "total_pending": 1983
+  "total_pending": 1982
 }

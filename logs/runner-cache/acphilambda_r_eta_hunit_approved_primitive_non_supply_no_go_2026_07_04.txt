@@ -1,0 +1,194 @@
+AC_phi_lambda R-eta h-unit approved-primitive non-supply no-go verifier
+
+========================================================================================
+A. source presence and Tier-A boundary
+========================================================================================
+[PASS] exists: docs/ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/audit/data/axiom_premise_nodes.json
+[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] exists: docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+[PASS] exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+[PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+[PASS] exists: docs/RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12.md
+[PASS] exists: docs/RETA_CONVERSION_FACTOR_CARRIER_CLASS_ELIMINATION_BOUNDED_NOTE_2026-06-12.md
+[PASS] exists: docs/ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md
+[PASS] exists: docs/ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md
+[PASS] Tier-A genuine admitted derivation-target count remains two
+[PASS] AC minimum decomposition keeps two residual atoms
+[PASS] AC statement names R-eta
+[PASS] human registry names R-eta
+[PASS] note declares Type no_go
+[PASS] note declares Claim type no_go
+[PASS] note declares independent audit boundary
+[PASS] note says R-eta is not retired
+[PASS] note says AC_phi_lambda is not retired
+[PASS] note says no registry/axiom/primitive edit
+[PASS] forbidden overclaim absent: R-eta is retired
+[PASS] forbidden overclaim absent: AC_phi_lambda is retired
+[PASS] forbidden overclaim absent: h-unit is derived
+[PASS] forbidden overclaim absent: beta = 1 is derived
+[PASS] forbidden overclaim absent: therefore R-eta closes
+[PASS] forbidden overclaim absent: audit_status: audited_clean
+[PASS] forbidden overclaim absent: effective_status: retained
+[PASS] forbidden overclaim absent: promoted to retained
+
+========================================================================================
+B. approved premise registry
+========================================================================================
+[PASS] approved premise registry has exactly four canonical ids
+[PASS] approved premise node exists: minimal_axioms
+[PASS] minimal_axioms has current_path
+[PASS] approved premise node exists: scale_reference_primitive
+[PASS] scale_reference_primitive has current_path
+[PASS] approved premise node exists: kinetic_isotropy_primitive
+[PASS] kinetic_isotropy_primitive has current_path
+[PASS] approved premise node exists: realized_state_primitive
+[PASS] realized_state_primitive has current_path
+[PASS] approved premise registry does not contain R-eta
+[PASS] approved premise registry does not contain R_eta
+[PASS] approved premise registry does not contain h-unit
+[PASS] approved premise registry does not contain A_R-eta
+[PASS] approved premise registry does not contain delta_readout_identification_R_eta
+
+========================================================================================
+C. axiom and primitive text boundaries
+========================================================================================
+[PASS] minimal axiom boundary contains Records form.
+[PASS] minimal axiom boundary contains A readout value is determined by record content alone
+[PASS] minimal axiom boundary contains context selection
+[PASS] minimal axiom boundary contains formation rules
+[PASS] minimal axiom boundary contains source/action and physical-observable identification
+[PASS] scale primitive withholds zero dimensionless content
+[PASS] scale primitive withholds mixing angle
+[PASS] scale primitive withholds phase
+[PASS] scale primitive withholds selector
+[PASS] scale primitive withholds readout bridge
+[PASS] scale primitive withholds empirical fit
+[PASS] kinetic primitive boundary contains c_t = c_s
+[PASS] kinetic primitive boundary contains mass ratio
+[PASS] kinetic primitive boundary contains coupling
+[PASS] kinetic primitive boundary contains mixing angle
+[PASS] kinetic primitive boundary contains phase
+[PASS] kinetic primitive boundary contains selector
+[PASS] kinetic primitive boundary contains readout bridge
+[PASS] realized-state primitive withholds no state
+[PASS] realized-state primitive withholds measure
+[PASS] realized-state primitive withholds weighting
+[PASS] realized-state primitive withholds probability rule
+[PASS] realized-state primitive withholds normalization rule
+[PASS] realized-state primitive withholds value
+[PASS] scale primitive is dimensionful only
+[PASS] kinetic primitive is a kinetic-form ratio only
+[PASS] realized primitive is pointwise only
+
+========================================================================================
+D. h-unit source pins
+========================================================================================
+[PASS] irreducibility source contains unit/coefficient identity
+[PASS] irreducibility source contains coefficient 1
+[PASS] irreducibility source contains bare radian
+[PASS] irreducibility source contains not pi or 2 pi
+[PASS] irreducibility source contains Both atoms are open
+[PASS] irreducibility source contains conversion-factor sources
+[PASS] conversion source contains does not derive R-eta
+[PASS] conversion source contains Future readout contexts remain open
+[PASS] conversion source contains direct `c = 1` reading
+[PASS] conversion source contains no primitive `c != 1` conversion carrier
+[PASS] conversion source contains Does not turn the proposed R-eta identification into a retained axiom
+[PASS] direct-license Block43 source contains h-unit is not supplied
+[PASS] direct-license Block43 source contains Phi_beta = beta S_sum
+[PASS] direct-license Block43 source contains target is `beta = 1`
+[PASS] direct-license Block43 source contains A future direct readout-license theorem remains possible
+[PASS] defect source contains identity-unit member `c = 1`
+[PASS] defect source contains rescale-breaking
+[PASS] defect source contains W_defect_identity_unit
+[PASS] normal-form source contains Phi(c)
+[PASS] normal-form source contains c = 1
+[PASS] normal-form source contains Phi = S_sum = 2/3
+[PASS] normal-form source contains No derivation is supplied
+
+========================================================================================
+E. dependency row status checks
+========================================================================================
+[PASS] ledger row exists or approved premise for SCALE_REFERENCE_PRIMITIVE_NOTE.md
+[PASS] SCALE_REFERENCE_PRIMITIVE_NOTE.md has claim type
+[PASS] SCALE_REFERENCE_PRIMITIVE_NOTE.md is not unbounded retained import for h-unit
+[PASS] ledger row exists or approved premise for KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+[PASS] KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md has claim type
+[PASS] KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md is not unbounded retained import for h-unit
+[PASS] ledger row exists or approved premise for REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+[PASS] REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md has claim type
+[PASS] REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md is not unbounded retained import for h-unit
+[PASS] ledger row exists or approved premise for RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12.md
+[PASS] RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12.md has claim type
+[PASS] RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12.md is not unbounded retained import for h-unit
+[PASS] ledger row exists or approved premise for RETA_CONVERSION_FACTOR_CARRIER_CLASS_ELIMINATION_BOUNDED_NOTE_2026-06-12.md
+[PASS] RETA_CONVERSION_FACTOR_CARRIER_CLASS_ELIMINATION_BOUNDED_NOTE_2026-06-12.md has claim type
+[PASS] RETA_CONVERSION_FACTOR_CARRIER_CLASS_ELIMINATION_BOUNDED_NOTE_2026-06-12.md is not unbounded retained import for h-unit
+[PASS] ledger row exists or approved premise for ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
+[PASS] ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md has claim type
+[PASS] ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md is not unbounded retained import for h-unit
+[PASS] ledger row exists or approved premise for ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md
+[PASS] ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md has claim type
+[PASS] ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md is not unbounded retained import for h-unit
+[PASS] ledger row exists or approved premise for ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md
+[PASS] ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md has claim type
+[PASS] ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md is not unbounded retained import for h-unit
+[PASS] new row claim_type is no_go
+[PASS] new row audit status remains unaudited
+[PASS] new row effective status remains unaudited
+[PASS] new row has dependencies
+
+========================================================================================
+F. exact h-unit algebra and type checks
+========================================================================================
+[PASS] L = 2/9
+[PASS] S_sum = 3L = 2/3
+[PASS] Phi_beta hits target only at beta=1
+[PASS] identity beta gives target
+[PASS] beta zero misses target
+[PASS] beta one_third misses target
+[PASS] beta pi misses target
+[PASS] beta two_pi misses target
+[PASS] beta three misses target
+[PASS] beta=1/3 gives single density
+[PASS] beta=3 gives three times target
+[PASS] numeric two-pi packaging misses target
+[PASS] kinetic value 1 has different type from h-unit value 1
+[PASS] scale reference has different type from h-unit
+[PASS] realized-state slot has no value
+[PASS] type mismatch blocks laundering kinetic 1 into beta 1
+[PASS] eliminating rival carriers is not h-unit derivation
+[PASS] h-unit closure would require extra premise
+
+========================================================================================
+G. note discipline and no-overclaim checks
+========================================================================================
+[PASS] note contains required boundary: bounded route no-go
+[PASS] note contains required boundary: approved-premise registry
+[PASS] note contains required boundary: h-unit
+[PASS] note contains required boundary: beta = 1
+[PASS] note contains required boundary: That implication is invalid
+[PASS] note contains required boundary: A future h-unit theorem remains possible
+[PASS] note contains required boundary: h-unit theorem
+[PASS] note contains required boundary: owner governance
+[PASS] note contains N1 no-go gate
+[PASS] note contains N2 no-go gate
+[PASS] note contains N3 no-go gate
+[PASS] note contains N4 no-go gate
+[PASS] note contains N5 no-go gate
+[PASS] note contains N6 no-go gate
+[PASS] note contains N7 no-go gate
+[PASS] note contains N8 no-go gate
+[PASS] note links approved premise registry
+[PASS] note links scale primitive
+[PASS] note links kinetic primitive
+[PASS] note links realized-state primitive
+[PASS] note links conversion source
+[PASS] note does not use generated audit ledger as authority
+
+TOTAL: PASS=163 FAIL=0 CHECKS=163

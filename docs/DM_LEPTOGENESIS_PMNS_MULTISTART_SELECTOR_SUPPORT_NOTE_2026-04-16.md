@@ -12,6 +12,12 @@ transport/readout normalization, and `eta/eta_obs` readout used here are
 runner-defined inputs of this sampled diagnostic. This row does not derive
 them from Tier-A premises and does not cite them as retained bridge coverage.
 
+**2026-07-04 numerical-stationarity repair:** closure alone is no longer
+accepted as a stationary-branch witness. The runner now applies an explicit
+finite-difference KKT residual filter and includes a closure-compatible
+nonstationary probe that the filter rejects. This keeps optimizer artifacts
+from being counted as sampled stationary branches.
+
 ## Scope narrowing (2026-05-24 audited_conditional repair)
 
 The 2026-05-10 audit verdict on this row was `audited_conditional` with
@@ -54,24 +60,22 @@ certified-global branch enumeration nor a theorem-grade selector
 result.
 
 On the sampled multistart starts, broad enumeration of exact closure
-starts on the runner-defined fixed `N_e` seed surface yields two dominant
-stationary closure branches recovered by the runner:
+starts on the runner-defined fixed `N_e` seed surface yields two
+KKT-stable dominant stationary closure branches recovered by the runner:
 
 1. a low-action branch
 2. a high-action branch
 
 These are separated by a finite action gap on the sampled starts.
 
-Later strengthened reduced-surface support on the same branch reveals one
-additional higher-action stationary branch beyond this broad multistart pair.
-That stronger support does not change the favored low-action branch
-recovered here on the sampled starts; it only sharpens the recovered
-branch count on the reduced surface (with the same narrow-diagnostic
-caveat).
+The 2026-07-04 live rerun also exposed closure-compatible optimizer
+artifacts near the archived middle candidate. Those artifacts are not counted
+unless they satisfy the same KKT residual filter as the low/high pair. Under
+that filter, the live sampled diagnostic retains the low/high pair only.
 
 On the sampled multistart starts, the broad scan isolates the same
-low-action branch already seen in the later reduced-surface support
-pass. That branch gives, on the tested starts:
+low-action branch also seen in the reduced-surface support pass. That branch
+gives, on the tested starts:
 
 - runner-normalized `eta / eta_obs = 1` on the imposed closure surface
 
@@ -98,10 +102,8 @@ So the action gap is finite and large:
 - `ΔS > 0.5`
 
 On the sampled multistart starts, the low-action branch is the
-lower-action branch among the dominant pair recovered by the runner; the
-later reduced-surface support pass recovers the same branch as the
-lowest-action branch in a three-branch set on its sampled surface. No
-global-selector or certified-enumeration content is claimed here.
+lower-action branch among the KKT-stable dominant pair recovered by the
+runner. No global-selector or certified-enumeration content is claimed here.
 
 ## Status
 
@@ -111,7 +113,9 @@ not a certified-global selector:
 - it is a broad multistart constrained scan on the runner-defined fixed `N_e` seed
   surface
 - on the sampled starts, it recovers a low-action and high-action
-  stationary pair with a large action gap
+  KKT-stable stationary pair with a large action gap
+- it rejects closure-compatible nonstationary probes rather than counting
+  closure alone as branch evidence
 - it is a sampled-multistart diagnostic on the tested starts only
 - it is not, by itself, a theorem-grade global selector and does not
   certify global enumeration of stationary branches
@@ -133,10 +137,9 @@ only, not a framework-native readout theorem.
 ## Scope
 
 This note is binding only as a **sampled-multistart runner
-diagnostic**. The later reduced-surface support pass is stronger on the
-same branch set on its tested surface; neither pass is theorem-grade
-and neither closes certified-global enumeration or global selector
-authority.
+diagnostic**. The reduced-surface support pass recovers the same low/high
+KKT-stable pair on its tested surface; neither pass is theorem-grade and
+neither supplies certified-global enumeration or global selector authority.
 
 ## Bounded out-of-scope / open future work
 

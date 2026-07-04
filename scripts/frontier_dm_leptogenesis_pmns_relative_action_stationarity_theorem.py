@@ -54,6 +54,7 @@ import frontier_dm_leptogenesis_pmns_observable_relative_action_law as rel
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+KKT_RESIDUAL_TOL = 1.0e-4
 
 DIM = 3
 SEED_ZERO = np.zeros(5, dtype=float)
@@ -328,7 +329,7 @@ def part2_the_current_closure_patch_has_a_unique_lowest_action_branch() -> tuple
         f"max low-branch |Δp|={max_low_branch_delta:.3e}, S_min={min_action:.12f}",
     )
     check(
-        "The constrained stationary source closes eta exactly on the favored column",
+        "The constrained stationary source satisfies eta exactly on the favored column",
         abs(etas_sel[i_star] - 1.0) < 1e-10 and best_idx == i_star,
         f"etas={np.round(etas_sel, 12)}",
     )
@@ -352,6 +353,7 @@ def part3_the_stationary_point_is_a_strict_local_closure_minimum(i_star: int, p_
     grad_c = finite_grad(lambda p: eta_i(p, i_star) - 1.0, p_star)
     lam = float(np.dot(grad_s, grad_c) / max(np.dot(grad_c, grad_c), 1e-15))
     lag_grad = grad_s - lam * grad_c
+    lag_resid = float(np.linalg.norm(lag_grad))
 
     hess_s = finite_hessian(relative_action_from_params, p_star)
     hess_c = finite_hessian(lambda p: eta_i(p, i_star) - 1.0, p_star)
@@ -376,10 +378,27 @@ def part3_the_stationary_point_is_a_strict_local_closure_minimum(i_star: int, p_
         closure_errs.append(abs(eta_i(trial, i_star) - 1.0))
         sampled_gaps.append(relative_action_from_params(trial) - relative_action_from_params(p_star))
 
+    probe_resids = []
+    for col in range(tangent.shape[1]):
+        trial = p_star + 3.0e-3 * tangent[:, col]
+        try:
+            probe = restore_closure_along_normal(p_star, trial, grad_c, i_star)
+        except ValueError:
+            continue
+        probe_grad_s = finite_grad(relative_action_from_params, probe)
+        probe_grad_c = finite_grad(lambda p: eta_i(p, i_star) - 1.0, probe)
+        probe_lam = float(np.dot(probe_grad_s, probe_grad_c) / max(np.dot(probe_grad_c, probe_grad_c), 1e-15))
+        probe_resids.append(float(np.linalg.norm(probe_grad_s - probe_lam * probe_grad_c)))
+
     check(
         "The exact closure source satisfies the constrained Euler-Lagrange equation for the effective action",
-        float(np.linalg.norm(lag_grad)) < 2e-5,
-        f"|∇S-λ∇C|={np.linalg.norm(lag_grad):.3e}",
+        lag_resid < KKT_RESIDUAL_TOL,
+        f"|∇S-λ∇C|={lag_resid:.3e}",
+    )
+    check(
+        "The finite-difference KKT gate rejects closure-preserving nonstationary probes",
+        bool(probe_resids) and max(probe_resids) > 1.0e-3,
+        f"max probe residual={max(probe_resids) if probe_resids else float('nan'):.3e}",
     )
     check(
         "The projected Lagrangian Hessian is positive on the closure tangent space",

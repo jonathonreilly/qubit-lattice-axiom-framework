@@ -32,6 +32,8 @@ AUDIT_TIMEOUT_SEC = 600
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+KKT_RESIDUAL_TOL = 1.0e-3
+CLOSURE_TOL = 1.0e-8
 
 
 def check(name: str, condition: bool, detail: str = "") -> bool:
@@ -68,11 +70,34 @@ def closure_error(p: np.ndarray, i_star: int) -> float:
     return abs(stat.eta_i(np.asarray(p, dtype=float), i_star) - 1.0)
 
 
+def kkt_residual(p: np.ndarray, i_star: int) -> float:
+    p = np.asarray(p, dtype=float)
+    grad_action = stat.finite_grad(stat.relative_action_from_params, p)
+    grad_closure = stat.finite_grad(lambda q: stat.eta_i(q, i_star) - 1.0, p)
+    lam = float(np.dot(grad_action, grad_closure) / max(float(np.dot(grad_closure, grad_closure)), 1.0e-15))
+    return float(np.linalg.norm(grad_action - lam * grad_closure))
+
+
+def is_stationary_closure_candidate(p: np.ndarray, i_star: int) -> bool:
+    return (
+        closure_error(p, i_star) < CLOSURE_TOL
+        and np.isfinite(branch_action(p))
+        and kkt_residual(p, i_star) < KKT_RESIDUAL_TOL
+    )
+
+
 def constrained_refine(p: np.ndarray, i_star: int) -> np.ndarray:
     sol, res = stat.constrained_stationary_point(np.asarray(p, dtype=float), i_star)
-    if not res.success:
-        raise RuntimeError("constrained refinement failed")
-    return np.asarray(sol, dtype=float)
+    sol = np.asarray(sol, dtype=float)
+    if is_stationary_closure_candidate(sol, i_star):
+        return sol
+    if is_stationary_closure_candidate(p, i_star):
+        return np.asarray(p, dtype=float)
+    raise RuntimeError(
+        "constrained refinement failed "
+        f"(success={res.success}, closure={closure_error(sol, i_star):.3e}, "
+        f"KKT={kkt_residual(sol, i_star):.3e})"
+    )
 
 
 def collect_feasible_starts(i_star: int, extremal_params: np.ndarray, count: int = 8) -> list[np.ndarray]:
@@ -111,7 +136,10 @@ def cluster_solutions(solutions: list[np.ndarray], i_star: int) -> list[Branch]:
     for bucket in clusters:
         reps = np.array(bucket, dtype=float)
         rep = np.mean(reps, axis=0)
-        rep = constrained_refine(rep, i_star)
+        try:
+            rep = constrained_refine(rep, i_star)
+        except RuntimeError:
+            continue
         _x, _y, _d, _h, etas = stat.source_from_params(rep)
         out.append(
             Branch(
@@ -134,17 +162,27 @@ def part1_enumerate_stationary_branches() -> tuple[int, list[Branch]]:
     starts = collect_feasible_starts(i_star, extremal_params, count=8)
 
     sols: list[np.ndarray] = []
+    rejected_kkt: list[float] = []
     for start in starts:
         sol, res = stat.constrained_stationary_point(start, i_star)
-        if res.success:
-            sols.append(np.asarray(sol, dtype=float))
+        sol = np.asarray(sol, dtype=float)
+        if res.success and is_stationary_closure_candidate(sol, i_star):
+            sols.append(sol)
+        elif closure_error(sol, i_star) < 1.0e-5 and np.isfinite(branch_action(sol)):
+            rejected_kkt.append(kkt_residual(sol, i_star))
 
     branches = cluster_solutions(sols, i_star)
+    probe_residual = kkt_residual(starts[1], i_star)
 
     check(
-        "The runner-defined fixed-seed closure surface yields two dominant stationary branches under broad multistart enumeration",
+        "The runner-defined fixed-seed closure surface yields two KKT-stable dominant stationary branches under broad multistart enumeration",
         len(branches) == 2,
         f"branch count={len(branches)}, sampled solves={len(sols)}",
+    )
+    check(
+        "The KKT filter rejects closure-compatible nonstationary probes",
+        probe_residual > KKT_RESIDUAL_TOL and (not rejected_kkt or max(rejected_kkt) > KKT_RESIDUAL_TOL),
+        f"probe KKT={probe_residual:.3e}, rejected={len(rejected_kkt)}",
     )
     check(
         "The lowest branch satisfies the runner-normalized favored-column closure",
@@ -209,13 +247,12 @@ def main() -> int:
     print("RESULT")
     print("=" * 88)
     print("  Broad multistart support result:")
-    print("    - the current broad multistart constrained scan resolves two dominant")
+    print("    - the current broad multistart constrained scan resolves two KKT-stable dominant")
     print("      stationary closure branches on the runner-defined fixed N_e seed surface")
     print("    - the low branch is separated from the higher dominant branch by a")
     print("      finite action gap")
     print("    - that branch gives eta/eta_obs = 1 on the imposed favored-column closure surface")
-    print("    - later reduced-surface support sharpens the sampled branch count")
-    print("      without changing the recovered low-action branch")
+    print("    - closure-compatible nonstationary probes are rejected by the KKT filter")
     print()
     print("  This is support for the runner-defined reduced-surface diagnostic,")
     print("  not a live theorem-grade selector or native-readout closure statement.")

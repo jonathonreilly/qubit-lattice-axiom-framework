@@ -15,9 +15,9 @@ branch?
 
 No.
 
-The current exact PMNS selector families are transport selectors only. On the
-current branch they are CP-sheet-indeterminate with respect to the mainline
-charged-sector bridge.
+The current KKT-filtered PMNS selector families are transport selectors only.
+On the current branch they are CP-sheet-indeterminate with respect to the
+mainline charged-sector bridge.
 
 The reason is exact and simple:
 
@@ -46,9 +46,10 @@ The reason is exact and simple:
 So the current PMNS selector families cannot realize the constructive
 source-oriented mainline CP sheet.
 
-## What this closes
+## What this establishes
 
-This closes the real remaining ambiguity in the PMNS lane.
+This resolves the real remaining ambiguity in the PMNS lane for the current
+selector families.
 
 Before this theorem, the PMNS route still had two live readings:
 
@@ -56,7 +57,7 @@ Before this theorem, the PMNS route still had two live readings:
   witness and only needs better packaging
 - or maybe it is only a transport selector and not a baryogenesis witness
 
-The theorem closes that ambiguity negatively for the **current selector
+The theorem resolves that ambiguity negatively for the **current selector
 families**:
 
 - they are transport-useful
@@ -66,9 +67,10 @@ families**:
 
 ## Scope
 
-This theorem is about the **current exact selector families**:
+This theorem is about the **current KKT-filtered selector families**:
 
-- the exact reduced-surface stationary branches
+- the sampled reduced-surface stationary branches retained by the current
+  KKT filter
 - the current minimum-information selector law
 
 It does **not** prove that every conceivable PMNS-inspired charged-sector law

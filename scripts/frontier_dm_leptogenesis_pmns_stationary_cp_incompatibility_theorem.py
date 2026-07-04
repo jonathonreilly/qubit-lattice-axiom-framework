@@ -3,14 +3,14 @@
 DM leptogenesis PMNS stationary CP incompatibility theorem.
 
 Question:
-  Can the current exact PMNS selector families on the fixed native N_e seed
+  Can the current KKT-filtered PMNS selector families on the fixed native N_e seed
   surface serve as constructive witnesses for the source-oriented mainline CP
   branch?
 
 Answer:
   No.
 
-  The current PMNS selector laws are even under delta -> -delta, while the
+  The current KKT-filtered PMNS selector laws are even under delta -> -delta, while the
   charged-sector bridge is CP-odd through
 
       gamma = x1 y3 sin(delta)
@@ -196,7 +196,7 @@ def part4_the_theorem_note_records_the_incompatibility_cleanly() -> None:
         "delta -> -delta" in note and "gamma = x_1 y_3 sin(delta)" in note and "opposite-CP partner" in note,
     )
     check(
-        "The note records the conclusion that current PMNS selector families determine transport classes rather than a constructive CP sign choice",
+        "The note records the conclusion that current KKT-filtered PMNS selector families determine transport classes rather than a constructive CP sign choice",
         "constructive mainline CP witness" in note and "opposite-CP partner" in note,
     )
 
@@ -207,7 +207,7 @@ def main() -> int:
     print("=" * 88)
     print()
     print("Question:")
-    print("  Can the current exact PMNS selector families on the fixed native N_e")
+    print("  Can the current KKT-filtered PMNS selector families on the fixed native N_e")
     print("  seed surface serve as constructive witnesses for the source-oriented")
     print("  mainline CP branch?")
 
@@ -220,9 +220,9 @@ def main() -> int:
     print("RESULT")
     print("=" * 88)
     print("  Exact incompatibility answer:")
-    print("    - the current PMNS selector laws are even under delta -> -delta")
+    print("    - the current KKT-filtered PMNS selector laws are even under delta -> -delta")
     print("    - the charged-sector bridge is odd in gamma and hence odd in the CP sheet")
-    print("    - so the current PMNS selector families determine transport classes, not a")
+    print("    - so the current KKT-filtered PMNS selector families determine transport classes, not a")
     print("      constructive mainline CP sign choice")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

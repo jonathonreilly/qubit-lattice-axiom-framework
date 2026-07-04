@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.py
 runner_sha256: e92bb51ff111836e4bad9dad7c4ac06bc4eade63e3d8041377dc3ff047778260
-timeout_sec: 600
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 21.67
+elapsed_sec: 41.26
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -42,7 +42,7 @@ PART 1: SINGLE-SOURCE FLAVORED TRANSPORT IS AN EXACT COLUMN FUNCTIONAL
 ========================================================================================
   [C] PASS: The exact flavored asymmetry for one source equals the sum of three one-variable channel functionals  ((Δ_a,Δ_b)=(2.75e-09,3.23e-09))
   [C] PASS: So the transport-relevant PMNS column is selected by a scalar functional of its entries, not by a new transport ansatz  (F_K(P) = Σ_alpha Psi_K(P_alpha))
-  [C] PASS: The exact functional depends only on the exact one-flavor source profile and washout tail  (source_min=7.225e-14, tail_max=55.648577)
+  [C] PASS: The exact functional depends only on the exact one-flavor source profile and washout tail  (source_min=7.224e-14, tail_max=55.648577)
 
   direct functional check on canonical near-closing column: 0.025313835316 vs 0.025313838064
   direct functional check on democratic column:            0.017734139120 vs 0.017734142347
@@ -63,27 +63,28 @@ PART 3: THE FULL-CLOSURE BRANCHES ALREADY LIVE ON THAT EXACT DOMAIN
 ========================================================================================
 PART 1: ENUMERATE THE CLOSURE STATIONARY BRANCHES
 ========================================================================================
-  [PASS] The current fixed-seed closure surface yields two dominant stationary branches under broad multistart enumeration  (branch count=2, sampled solves=7)
-  [PASS] The lowest branch closes the favored column exactly  (etas=[1.       0.759179 0.48459 ])
-  [PASS] The broad-multistart dominant pair is separated by a finite action gap  (ΔS_pair=0.869750837948)
+  [PASS] The runner-defined fixed-seed closure surface yields two KKT-stable dominant stationary branches under broad multistart enumeration  (branch count=2, sampled solves=5)
+  [PASS] The KKT filter rejects closure-compatible nonstationary probes  (probe KKT=3.777e+00, rejected=2)
+  [PASS] The lowest branch satisfies the runner-normalized favored-column closure  (etas=[1.       0.759179 0.48459 ])
+  [PASS] The broad-multistart dominant pair is separated by a finite action gap  (ΔS_pair=0.869750837942)
 
   branch 0:
-    count      = 6
-    S_rel      = 0.240906701390
+    count      = 4
+    S_rel      = 0.240906701395
     x          = [0.471675, 0.55381 , 0.664515]
     y          = [0.208063, 0.464382, 0.247555]
-    delta      = -1.856375564645e-07
+    delta      = -3.160880780447e-09
     eta/eta_obs= [1.       0.759179 0.48459 ]
   branch 1:
     count      = 1
     S_rel      = 1.110657539338
     x          = [0.790189, 0.406763, 0.493048]
     y          = [0.586185, 0.167566, 0.166248]
-    delta      = -3.189531894172e-07
+    delta      = -1.327116129204e-07
     eta/eta_obs= [1.       0.947635 0.95876 ]
   [PASS] The low-action closure branch lies on the exact fixed native seed surface  ((xbar,ybar)=(0.563333,0.306667))
   [PASS] The higher stationary closure branch lies on the same exact fixed native seed surface  ((xbar,ybar)=(0.563333,0.306667))
-  [PASS] So even the full-closure selector competition is already an internal problem on one exact reduced domain  ((delta_lo,delta_hi)=(-1.856e-07,-3.190e-07))
+  [PASS] So even the full-closure selector competition is already an internal problem on one exact reduced domain  ((delta_lo,delta_hi)=(-3.161e-09,-1.327e-07))
 
   low branch x = [0.471675, 0.55381 , 0.664515]
   low branch y = [0.208063, 0.464382, 0.247555]

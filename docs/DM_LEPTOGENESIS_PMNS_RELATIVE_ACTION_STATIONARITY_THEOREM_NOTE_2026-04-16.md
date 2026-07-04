@@ -26,6 +26,12 @@ open work.
 **Script:** `scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py`
 **Framework convention:** “axiom” means only `Cl(3)` on `Z^3`
 
+**2026-07-04 numerical-stationarity repair:** the Euler-Lagrange residual is
+treated as a finite-difference KKT diagnostic with tolerance `1e-4`. The runner
+also constructs closure-preserving nonstationary probes and requires the same
+KKT gate to reject them, so the tolerance is a numerical floor rather than a
+closure-only pass condition.
+
 ## Question
 
 After the PMNS-assisted `N_e` flavored-DM route was reduced to the fixed seed
@@ -112,7 +118,8 @@ this equation.
 
 The script verifies:
 
-- the constrained Euler-Lagrange equation
+- the constrained Euler-Lagrange equation to the finite-difference KKT floor
+- rejection of closure-preserving nonstationary probes by that KKT gate
 - positive tangent Hessian on the selected closure branch
 - more than one sampled stationary branch
 - uniqueness of the lowest-action branch across all sampled feasible starts
@@ -129,7 +136,7 @@ depends on the helper module
 for the seed matrix `H_SEED`, the active-source parameterization, the
 favored-column construction via `eta_columns_from_active` / `best_eta_from_params`,
 and the seed-relative action `relative_action_h`. The audit verdict
-explicitly says the algebraic positive-cone Legendre identity closes on
+explicitly says the algebraic positive-cone Legendre identity holds on
 its own (it is fully self-contained in the section "Exact effective-action
 identity" above and in Part 1 of the runner). The functions below are
 inlined verbatim from the helper module so that the numerical-branch
@@ -278,9 +285,9 @@ So the old exact one-flavor miss
 is gone on this PMNS-assisted route. The selector is now tied to the exact
 observable grammar itself.
 
-## What this closes
+## What this establishes
 
-This closes the “is the minimization rule extra?” loophole on the current
+This resolves the “is the minimization rule extra?” loophole on the current
 branch.
 
 The current branch now has:

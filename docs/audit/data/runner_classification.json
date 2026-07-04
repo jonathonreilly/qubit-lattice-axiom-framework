@@ -468,6 +468,18 @@
       "dominant_class": "C",
       "runner": "scripts/acphilambda_projective_equivariance_k_odd_trace_2026_07_02.py"
     },
+    "acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04": {
+      "assert_count": 2,
+      "counts": {
+        "A": 6,
+        "B": 1,
+        "C": 1,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py"
+    },
     "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11": {
       "assert_count": 2,
       "counts": {
@@ -41855,6 +41867,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py": {
+      "assert_count": 2,
+      "claims": [
+        "acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 6,
+        "B": 1,
+        "C": 1,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/acphilambda_real_holonomy_locus_identity_2026_07_01.py": {
@@ -90709,14 +90736,14 @@
   "stats": {
     "decoration_candidates": 691,
     "dominant_class_distribution": {
-      "A": 488,
+      "A": 489,
       "B": 636,
       "C": 1272,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3303,
-    "runners_with_C": 1730,
-    "runners_with_D": 1061
+    "runners_classified": 3304,
+    "runners_with_C": 1731,
+    "runners_with_D": 1062
   }
 }

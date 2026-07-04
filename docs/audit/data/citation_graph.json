@@ -657,6 +657,26 @@
       "to": "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
     },
     {
+      "from": "acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04",
+      "to": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04",
+      "to": "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15"
+    },
+    {
+      "from": "acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04",
+      "to": "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15"
+    },
+    {
+      "from": "acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04",
+      "to": "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
+    },
+    {
+      "from": "acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
       "from": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
       "to": "acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18"
     },
@@ -57901,6 +57921,24 @@
       "path": "docs/ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md",
       "runner_path": "scripts/acphilambda_projective_equivariance_k_odd_trace_2026_07_02.py",
       "title": "AC_phi_lambda Projective Equivariance And The K-Odd Equivariant Trace"
+    },
+    "acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04": {
+      "claim_id": "acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+        "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
+        "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15",
+        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+        "admitted_input_registry_tier_a_note_2026-05-23"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "a8d63944a9084a585e7f79529bb6ddf6eb1ac3b6ad56560ce17c8fad7964d7d0",
+      "path": "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py",
+      "title": "AC_phi_lambda R-eta Angle-Native Frontier No-Go And License Certificate"
     },
     "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11": {
       "claim_id": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
@@ -125422,7 +125460,7 @@
       "bounded_theorem": 1553,
       "decoration": 3,
       "meta": 319,
-      "no_go": 316,
+      "no_go": 317,
       "none": 1216,
       "open_gate": 133,
       "positive_theorem": 274
@@ -125431,15 +125469,15 @@
       "bounded_theorem": 1958,
       "decoration": 3,
       "meta": 319,
-      "no_go": 420,
+      "no_go": 421,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14293,
-    "leaf_count": 1288,
-    "node_count": 3814,
+    "edge_count": 14298,
+    "leaf_count": 1289,
+    "node_count": 3815,
     "root_count": 1102,
-    "runners_with_path": 3437
+    "runners_with_path": 3438
   }
 }

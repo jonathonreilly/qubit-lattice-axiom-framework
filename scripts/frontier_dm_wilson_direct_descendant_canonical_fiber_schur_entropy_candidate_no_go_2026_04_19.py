@@ -11,13 +11,14 @@ Purpose:
        Schur-spectral isotropy laws do not canonically extend the plateau
        selector;
     2. an explicit Shannon-entropy point and an explicit Renyi-2 /
-       participation point both lie on the same exact positive fiber, but the
+       participation point both hit the same positive fiber to measured
+       residual, but the
        two laws rank them oppositely;
     3. their normalized Schur spectra are majorization-incomparable, so the
        phrase "most isotropic spectrum" is not well-defined on the full fiber;
     4. if one nevertheless adds the extra entropy-additivity axiom that picks
        Shannon, the resulting endpoint is explicit, but the aligned-seed ->
-       endpoint exact eta_1 = 1 crossing leaves the constructive chamber.
+       endpoint eta_1 = 1 crossing leaves the constructive chamber.
 """
 
 from __future__ import annotations
@@ -215,17 +216,18 @@ def main() -> int:
         plateau_targets_ok,
         f"(p2,p3)=({TARGET_P2_P3[0]:.12f},{TARGET_P2_P3[1]:.12f})",
     )
+    shannon_fiber_resid = float(np.max(np.abs(canonical_fiber_invariants(shannon_params) - TARGET_P2_P3)))
+    renyi_fiber_resid = float(np.max(np.abs(canonical_fiber_invariants(renyi_params) - TARGET_P2_P3)))
     check(
-        "The Shannon and Renyi-2 constructions both land exactly on that orbit-level fiber and inside gamma > 0, E1 > 0, E2 > 0, Delta_src > 0",
-        shannon_result.success
-        and renyi_result.success
-        and np.max(np.abs(canonical_fiber_invariants(shannon_params) - TARGET_P2_P3)) < 1.0e-12
-        and np.max(np.abs(canonical_fiber_invariants(renyi_params) - TARGET_P2_P3)) < 1.0e-12
+        "The Shannon and Renyi-2 constructions both land on that orbit-level fiber and inside gamma > 0, E1 > 0, E2 > 0, Delta_src > 0",
+        shannon_fiber_resid < 1.0e-12
+        and renyi_fiber_resid < 1.0e-12
         and np.min(shannon_pack4) > 0.0
         and np.min(renyi_pack4) > 0.0,
         (
             f"Shannon pack={np.round(shannon_pack4, 12)}, "
-            f"Renyi2 pack={np.round(renyi_pack4, 12)}"
+            f"Renyi2 pack={np.round(renyi_pack4, 12)}, "
+            f"fiber residuals=({shannon_fiber_resid:.2e},{renyi_fiber_resid:.2e})"
         ),
     )
 
@@ -243,7 +245,7 @@ def main() -> int:
         f"(S_R,W1)=({renyi2_entropy(renyi_params):.12f},{renyi2_entropy(w1_params):.12f})",
     )
     check(
-        "Shannon and Renyi-2 rank the two exact positive-fiber points oppositely",
+        "Shannon and Renyi-2 rank the two positive-fiber witnesses oppositely",
         shannon_entropy(shannon_params) > shannon_entropy(renyi_params) + 1.0e-6
         and renyi2_entropy(renyi_params) > renyi2_entropy(shannon_params) + 1.0e-6
         and participation_ratio(renyi_params) > participation_ratio(shannon_params) + 1.0e-6,
@@ -276,7 +278,7 @@ def main() -> int:
     )
 
     print("\n" + "=" * 88)
-    print("PART 4: EVEN THE SHANNON ENDPOINT DOES NOT YET CLOSE THE PHYSICAL SELECTOR")
+    print("PART 4: EVEN THE SHANNON ENDPOINT DOES NOT YET SUPPLY THE PHYSICAL SELECTOR")
     print("=" * 88)
     root_count = eta_root_count(SEED_SOURCE5, shannon_source5)
     root_lambda = float(brentq(lambda lam: eta1(segment(SEED_SOURCE5, shannon_source5, lam)) - 1.0, 0.0, 1.0))
@@ -306,10 +308,10 @@ def main() -> int:
     check(
         "The full canonical source fiber therefore does not carry a canonical coefficient-free Schur-spectral isotropy law on the current branch",
         True,
-        "Shannon and Renyi-2 / participation disagree on exact positive-fiber points",
+        "Shannon and Renyi-2 / participation disagree on positive-fiber witnesses",
     )
     check(
-        "What the branch now has is a sharper conditional candidate: if one adds the entropy-additivity axiom, Shannon selects an explicit endpoint, but constructive physical closure still remains open",
+        "What the branch now has is a sharper conditional candidate: if one adds the entropy-additivity axiom, Shannon selects an explicit endpoint, but the constructive physical selector remains open",
         True,
         "the remaining gap is not generic spectral isotropy but the extra physical law beyond it",
     )

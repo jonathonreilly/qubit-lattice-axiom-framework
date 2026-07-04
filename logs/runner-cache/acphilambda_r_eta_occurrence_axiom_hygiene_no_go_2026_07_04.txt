@@ -1,0 +1,188 @@
+AC_phi_lambda R-eta occurrence axiom-hygiene no-go verifier
+
+========================================================================================
+A. source presence and Tier-A boundary
+========================================================================================
+[PASS] exists: docs/ACPHILAMBDA_R_ETA_OCCURRENCE_AXIOM_HYGIENE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/audit/data/axiom_premise_nodes.json
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
+[PASS] exists: docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+[PASS] exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+[PASS] Tier-A genuine count remains two
+[PASS] AC minimum decomposition remains the two residual atoms
+[PASS] AC statement still names R-eta
+[PASS] human registry names R-eta
+[PASS] note says registry is not edited
+[PASS] note says R-eta is not retired
+[PASS] BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md effective status
+[PASS] KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md effective status
+
+========================================================================================
+B. approved premise-node hygiene
+========================================================================================
+[PASS] premise registry canonical ids are the approved four
+[PASS] minimal premise current path is 2026-06-29
+[PASS] premise note contains records form
+[PASS] minimal premise note withholds formation rule
+[PASS] minimal premise note withholds with what weight
+[PASS] minimal premise note withholds at what rate
+[PASS] minimal premise note withholds probability
+[PASS] minimal premise note withholds measurement/decoherence
+[PASS] minimal premise note withholds context-selection
+[PASS] minimal premise note withholds state-selection rule
+
+========================================================================================
+C. Record axiom text boundary
+========================================================================================
+[PASS] minimal axiom has Record section
+[PASS] Record axiom says records form
+[PASS] Record axiom locks one admissible local possibility
+[PASS] Record axiom says only records are readable
+[PASS] Record axiom has finite scalar additivity
+[PASS] minimal axiom excludes transition probabilities or weights
+[PASS] minimal axiom excludes provide a record-production process
+[PASS] minimal axiom excludes context selection
+[PASS] minimal axiom excludes measurement basis selection
+[PASS] minimal axiom excludes Born weights
+[PASS] minimal axiom excludes probability rules
+[PASS] minimal axiom excludes update laws
+[PASS] minimal axiom excludes decoherence mechanisms
+[PASS] minimal axiom excludes formation rules
+[PASS] minimal axiom excludes physical observable bridge
+[PASS] historical note says occurrence became named axiom content
+[PASS] historical note says every formation rule remained downstream
+
+========================================================================================
+D. approved primitive non-supply checks
+========================================================================================
+[PASS] realized-state primitive withholds no state
+[PASS] realized-state primitive withholds measure
+[PASS] realized-state primitive withholds weighting
+[PASS] realized-state primitive withholds probability rule
+[PASS] realized-state primitive withholds normalization rule
+[PASS] realized-state primitive withholds value
+[PASS] kinetic primitive withholds no mass ratio
+[PASS] kinetic primitive withholds coupling
+[PASS] kinetic primitive withholds mixing angle
+[PASS] kinetic primitive withholds phase
+[PASS] kinetic primitive withholds selector
+[PASS] kinetic primitive withholds readout bridge
+[PASS] kinetic primitive withholds empirical fit
+[PASS] scale primitive is not needed for R-eta event law
+[PASS] note classifies occurrence-as-fact only
+
+========================================================================================
+E. exact fixed-locus target arithmetic
+========================================================================================
+[PASS] L = 2/9
+[PASS] S_sum = 3L = 2/3
+[PASS] Phi target is 2/3
+[PASS] target positive and below pi
+[PASS] fixed source contains L3(1,2)
+[PASS] fixed source contains 2/9
+[PASS] fixed source flags physical readout as separate
+[PASS] note states S_sum target
+
+========================================================================================
+F. Brannen clock and occupancy algebra
+========================================================================================
+[PASS] doublet difference is 2*sqrt(3)*B*sin(delta)
+[PASS] Brannen source carries supplied dial
+[PASS] clock rate depends on B
+[PASS] clock rate depends on delta
+[PASS] clock rate nonzero at target for B=1
+[PASS] occupancy 0 invariant under diagonal native step
+[PASS] occupancy 1 invariant under diagonal native step
+[PASS] occupancy 2 invariant under diagonal native step
+[PASS] doublet coherence gets phase ratio
+[PASS] D_chi preserves diagonal 0
+[PASS] D_chi preserves diagonal 1
+[PASS] D_chi preserves diagonal 2
+[PASS] D_chi erases off-diagonal coherences
+
+========================================================================================
+G. occupancy-reading event laws are delta-blind
+========================================================================================
+[PASS] stream product law contains no delta
+[PASS] stream product law contains no B
+[PASS] stream product law is product of occupancies
+[PASS] two different deltas give same occupancy stream law
+[PASS] occupancy probabilities can normalize
+[PASS] normalized occupancy rule 0 contains no delta
+[PASS] normalized occupancy rule 1 contains no delta
+[PASS] normalized occupancy rule 2 contains no delta
+
+========================================================================================
+H. coherence-reading can see delta only through supplied law
+========================================================================================
+[PASS] coherence-reading expression contains delta
+[PASS] coherence-reading expression contains B
+[PASS] coherence law derivative contains B
+[PASS] coherence example changes with delta
+[PASS] note says coherence law is supplied interface
+[PASS] minimal axiom does not choose projector/interface law
+
+========================================================================================
+I. sparse occurrence kernel and rate-normalization obstruction
+========================================================================================
+[PASS] q_bot has no delta
+[PASS] q_0 has no delta unless p is supplied with it
+[PASS] q_1 has no delta unless p is supplied with it
+[PASS] q_2 has no delta unless p is supplied with it
+[PASS] kernel normalizes when p sums to one
+[PASS] clock/event ratio contains B
+[PASS] clock/event ratio contains a_act
+[PASS] clock/event ratio contains delta
+[PASS] changing B changes the ratio
+[PASS] changing a_act changes the ratio
+[PASS] setting ratio to target solves B in terms of a_act
+[PASS] solution still contains a_act
+[PASS] note contains the B-solution formula
+
+========================================================================================
+J. no-go discipline and route accounting
+========================================================================================
+[PASS] note Type header is no_go
+[PASS] note Claim type header is no_go
+[PASS] scope boundary blocks retirement
+[PASS] audit boundary present
+[PASS] primary runner link present
+[PASS] N1 gate present
+[PASS] N2 gate present
+[PASS] N3 gate present
+[PASS] N4 gate present
+[PASS] N5 gate present
+[PASS] N6 gate present
+[PASS] N7 gate present
+[PASS] N8 gate present
+[PASS] route accounting phrase present: future occurrence theorem is not ruled out
+[PASS] route accounting phrase present: The generic Record occurrence route is clo
+[PASS] route accounting phrase present: Coherence-reading events
+[PASS] route accounting phrase present: Rate-normalization theorem
+[PASS] route accounting phrase present: Owner governance route
+[PASS] forbidden phrase absent: R-eta is derived
+[PASS] forbidden phrase absent: R-eta is retired
+[PASS] forbidden phrase absent: AC_phi_lambda is retired
+[PASS] forbidden phrase absent: audited_clean
+[PASS] forbidden phrase absent: effective_status = retained
+[PASS] forbidden phrase absent: PDG
+[PASS] forbidden phrase absent: uses a fitted value
+[PASS] wall names are whitelisted
+
+========================================================================================
+K. markdown dependency and context-link control
+========================================================================================
+[PASS] markdown link inventory is controlled
+[PASS] occurrence bridge is context only, not markdown-linked
+[PASS] occurrence-clock note is context only, not markdown-linked
+[PASS] note line count is bounded
+[PASS] verification block expects 139 passes
+
+========================================================================================
+TOTAL: PASS=139 FAIL=0
+========================================================================================

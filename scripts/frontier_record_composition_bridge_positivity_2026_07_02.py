@@ -329,13 +329,13 @@ chk(
 )
 chk(
     (
-        "It does not choose a Hamiltonian or transfer operator, supply transition "
+        "does not choose a Hamiltonian or transfer operator, supply transition "
         "probabilities or weights, select a scalar or nonzero kinetic branch, assert "
         "a Dirac-square carrier, define a time metric, or provide a record-production "
-        "process."
+        "process or physical persistence dynamics."
     )
     in _ax,
-    "guard: dynamics-section disclaimer present (axioms supply NO record-production process/kernel)",
+    "guard: Admissibility dynamics disclaimer present, landed wording (kernel half of C-add not supplied)",
 )
 chk(
     "A law privileges no states. Its domain is a supplied condition, and at every state where the condition holds it gives exactly one answer."

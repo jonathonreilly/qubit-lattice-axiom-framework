@@ -136,19 +136,19 @@ def source_checks() -> None:
     axioms = read(AXIOMS)
     fixed_flat = flat(fixed)
     axioms_flat = flat(axioms)
-    lattice_sentence = (
+    landed_lattice_sentence = (
         "Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor "
-        "adjacency, standard translations, and proper cubic rotations."
+        "adjacency, standard translations, and proper cubic rotations about each site."
     )
     check("note exists", NOTE.exists())
     check("fixed-locus source exists", FIXED.exists())
     check("axioms memo exists", AXIOMS.exists())
     check("fixed-locus local density pin exists", "forced and gives local density `2/9`" in fixed)
     check("fixed-locus readout exclusion pin exists", "does **not** supply the physical single-summand readout" in fixed)
-    check("axioms lattice sentence exists", lattice_sentence in axioms_flat)
+    check("axioms lattice sentence exists", landed_lattice_sentence in axioms_flat)
     check("note quotes local density pin", "forced and gives local density `2/9`" in note)
     check("note quotes readout exclusion pin", "does **not**" in note and "supply the physical single-summand readout" in note)
-    check("note quotes lattice sentence", lattice_sentence in flat(note))
+    check("note quotes lattice sentence", landed_lattice_sentence in flat(note))
 
 def exact_reduction_checks() -> None:
     print("\n-- T7-1 exact diagonal-momentum reduction --")

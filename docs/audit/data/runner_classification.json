@@ -27721,7 +27721,7 @@
       "runner": "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py"
     },
     "post_record_selector_tangent_readout_weight_prototype_2026-06-06": {
-      "assert_count": 1,
+      "assert_count": 2,
       "counts": {
         "A": 0,
         "B": 1,
@@ -69952,7 +69952,7 @@
       "exists": true
     },
     "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py": {
-      "assert_count": 1,
+      "assert_count": 2,
       "claims": [
         "post_record_selector_tangent_readout_weight_prototype_2026-06-06"
       ],

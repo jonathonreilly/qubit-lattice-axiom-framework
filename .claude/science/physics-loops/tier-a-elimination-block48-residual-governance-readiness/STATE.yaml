@@ -30,7 +30,8 @@ checks:
   diff_check: "PASS"
   ascii_hygiene: "PASS"
 review_loop_disposition: pass
-pr_status: pending
-pr_url: pending
-next_exact_action: "Push stacked PR and update PR metadata."
+source_commit: 61c21506c
+pr_status: "open; hosted audit_pipeline queued at creation"
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4989
+next_exact_action: "Monitor hosted audit for #4989, then prepare exact governance-decision text or continue theorem attempts on one residual."
 stop_condition: "Continue Tier-A campaign unless owner-governance decisions are required before meaningful progress."

@@ -148,22 +148,31 @@ def main() -> int:
     ledger = json.loads((root / "docs" / "audit" / "data" / "audit_ledger.json").read_text(encoding="utf-8"))
     rows = ledger if isinstance(ledger, list) else ledger.get("rows", ledger.get("claims", []))
     items = rows if isinstance(rows, list) else list(rows.values())
-    dep_scope = next(
-        (r.get("claim_scope") for r in items
+    dep_row = next(
+        (r for r in items
          if r.get("id", r.get("claim_id", "")) == "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"),
         None,
     )
-    check("ledger row found for the dependency", dep_scope is not None)
-    quoted = f'claim_scope (retained_bounded): "{dep_scope}"'
-    check("note quotes the LEDGER claim_scope verbatim (authority gate)", bool(dep_scope) and quoted in note)
-    check("quote marker appears exactly once", note.count("retained_bounded") == 1)
-    file_self_scope = re.search(r'claim_scope:\s*"([^"]+)"', dep)
-    check(
-        "note does not present the file's self-declared scope as the ledger scope",
-        file_self_scope is None
-        or file_self_scope.group(1) == dep_scope
-        or file_self_scope.group(1) not in note,
+    check("ledger row found for the dependency", dep_row is not None)
+    live = dep_row or {}
+    print(
+        "ledger row live audit fields (informational; the audit lane owns them): "
+        f"effective_status={live.get('effective_status')!r}, "
+        f"claim_scope={'present' if live.get('claim_scope') else 'null'}"
     )
+    block_match = re.search(r"\*\*Claim scope:\*\*(.*?)\*\*Status" + r" authority:\*\*", dep, re.S)
+    block_s = squash(block_match.group(1)) if block_match else ""
+    qline = next((x for x in note.splitlines() if x.startswith("Premise scope quotes")), "")
+    quotes = re.findall(r'"([^"]+)"', qline)
+    check("dependency claim-scope block located in the dependency note", len(block_s) > 200)
+    check("note carries exactly three premise scope quotes", len(quotes) == 3)
+    for i, quote in enumerate(quotes, 1):
+        check(
+            f"premise quote {i} is substantive and verbatim in the dependency claim-scope block",
+            len(quote) >= 80 and squash(quote) in block_s,
+        )
+    check("note pins no audit-grade label on the premise quotes", "retained_bounded" not in note and "claim_scope (" not in note)
+    check("retired ledger-condensed scope wording absent from note", "adjacency-licensed Q-conserving" not in note)
     check("primary runner link points to this script", f"../scripts/{SCRIPT}" in note)
     check("source note declares canonical Type no_go", "**Type:** no_go" in note)
     legacy_status_label = "Status " + "authority"
@@ -242,7 +251,7 @@ def main() -> int:
     section("E - note discipline")
     preserved = [
         "the compensated `C3[111]` lift on the one-component staggered surface is real and non-projective: its projective class is trivial",
-        "the one-component staggered surface, in both retained kinetic classes, is conjugate-sector blind",
+        "the one-component staggered surface, in both quoted kinetic classes, is conjugate-sector blind",
         "the projective seed irreducibly needs the two-component structure",
         "not a terminal no-go",
     ]

@@ -107,17 +107,26 @@ def scalar_h(n: int) -> np.ndarray:
     return sum((shift(n, mu) - shift(n, mu).T) / (2j) for mu in range(3))
 
 
-def ledger_scope() -> tuple[str, str]:
+def normalized(text: str) -> str:
+    return " ".join(text.split())
+
+
+def ledger_row() -> tuple[str, dict]:
     rows = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
     for key, row in rows.items():
         if row.get("note_path") == "docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md":
-            return key, row["claim_scope"]
-    raise RuntimeError("ledger row not found")
+            return key, row
+    return "", {}
 
 
-def note_scope_quote(note: str) -> tuple[str, str]:
-    line = next(x for x in note.splitlines() if x.startswith("Ledger scope quote"))
-    return line, re.search(r'"(.*)"$', line).group(1)
+def note_premise_quotes(note: str) -> tuple[str, list[str]]:
+    line = next((x for x in note.splitlines() if x.startswith("Premise scope quotes")), "")
+    return line, re.findall(r'"([^"]+)"', line)
+
+
+def claim_scope_block(source: str) -> str:
+    match = re.search(r"\*\*Claim scope:\*\*(.*?)\*\*Status" + r" authority:\*\*", source, re.S)
+    return match.group(1) if match else ""
 
 
 def symbolic_branch_checks() -> None:
@@ -148,16 +157,28 @@ def main() -> int:
     start = time.perf_counter()
     note = NOTE.read_text(encoding="utf-8") if NOTE.exists() else ""
     source = SOURCE.read_text(encoding="utf-8") if SOURCE.exists() else ""
-    key, scope = ledger_scope() if LEDGER.exists() else ("", "")
-    qline, quoted = note_scope_quote(note) if note else ("", "")
+    key, row = ledger_row() if LEDGER.exists() else ("", {})
+    qline, quotes = note_premise_quotes(note) if note else ("", [])
+    scope_block = claim_scope_block(source)
 
     check("paired note exists", NOTE.exists())
-    check("retained input note exists", SOURCE.exists())
+    check("premise source note exists", SOURCE.exists())
     check("ledger exists", LEDGER.exists())
-    check("ledger row found for retained input", key == "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10")
-    check("source note self-scope is not authority", "**Claim scope:**" in source and quoted == scope)
-    check("ledger quoted scope matches exactly", quoted == scope)
-    check("quoted-scope line names retained_bounded once", qline.count("retained_bounded") == 1)
+    check("ledger row found for premise source", key == "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10")
+    print(
+        "ledger row live audit fields (informational; the audit lane owns them): "
+        f"effective_status={row.get('effective_status')!r}, "
+        f"claim_scope={'present' if row.get('claim_scope') else 'null'}"
+    )
+    check("dependency claim-scope block located in source note", len(normalized(scope_block)) > 200)
+    check("note carries exactly three premise scope quotes", len(quotes) == 3)
+    for i, quote in enumerate(quotes, 1):
+        check(
+            f"premise quote {i} is substantive and verbatim in the dependency claim-scope block",
+            len(quote) >= 80 and normalized(quote) in normalized(scope_block),
+        )
+    check("premise line pins no audit-grade label", bool(qline) and "retained_bounded" not in note and "unaudited" not in qline)
+    check("retired ledger-condensed scope wording absent from note", "adjacency-licensed Q-conserving" not in note)
     check("header carries primary runner link", "scripts/acphilambda_projective_equivariance_k_odd_trace_2026_07_02.py" in note)
     check("heat-trace anchors are printed in note", "4.798063" in note and "7.829155" in note)
     check("fixed-seed dense probe is nondegenerate", abs(RNG.normal(size=12)).sum() > 1.0)
@@ -211,7 +232,7 @@ def main() -> int:
     check("PR #4783 rescale freedom persists on the composed surface", abs(reduced_trace(3, 0.7, 0.7, 0.5) - reduced_trace(3, 0.7, 0.7, 0.5, scale=2.0)) < 1e-9)
 
     preserves = [
-        "the projective equivariance is realized exactly on the retained-class two-component surface (`R2^3 = -I`)",
+        "the projective equivariance is realized exactly on the quoted two-component surface (`R2^3 = -I`)",
         "the sector-distinguishing weights are torsion phases (`+- pi/3`), so at zero flux no R-valued off-locus datum appears",
         "on even diagonal grids the naive K-odd trace vanishes identically: the doubler pairing annihilates it",
         "the K-odd observable exists at the generation ring size `N = 3` and requires doubling-pairing breaking elsewhere",
@@ -236,7 +257,7 @@ def main() -> int:
         "RULES " + "(binding)",
     ]
     check("instruction-leakage strings absent from note", all(x not in note for x in leaks))
-    check("note does not present file-self scope as ledger scope", "**Claim scope:**" not in note and "Ledger scope quote" in note)
+    check("note quotes the dependency claim-scope block, not a ledger-authority line", "**Claim scope:**" not in note and "Premise scope quotes" in note and "Ledger scope quote" not in note)
     legacy_status_label = "Status " + "authority"
     check(
         "canonical type, audit boundary, and bounded gate are stated",

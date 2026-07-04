@@ -7,7 +7,8 @@ residual atoms.
 
 Branch: `physics-loop/tier-a-elimination-block49-owner-decision-packet-20260704`
 Base: `physics-loop/tier-a-elimination-block48-residual-governance-readiness-20260704`
-PR: pending
+Source commit: `b1fa61bc5`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4990
 
 ## Claim Movement
 
@@ -38,5 +39,5 @@ later registry-effect sketch while preserving all current registries.
 
 ## Next Exact Action
 
-Commit, push the stacked PR, update this handoff with PR metadata, and wait for
-hosted audit.
+Monitor hosted audit for #4990 and #4989. Registry retirement still requires
+explicit adoption or retained theorem work.

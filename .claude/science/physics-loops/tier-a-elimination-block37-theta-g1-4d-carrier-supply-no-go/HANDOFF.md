@@ -9,7 +9,7 @@ anomaly-forces-time `3+1` theorem.
 
 Branch: `physics-loop/tier-a-elimination-block37-theta-g1-4d-carrier-supply-no-go-20260704`
 Base: `physics-loop/tier-a-elimination-block36-theta-g1-closed-nonexact-interface-support-20260704`
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4978
 
 ## Claim Movement
 
@@ -49,7 +49,7 @@ it does not claim future 4D carrier derivations are impossible.
 
 ## Next Exact Action
 
-Commit/push/open PR. The next science move should attack the physical 4D
-carrier theorem, the closed-nonexact interface theorem on that carrier, or a
-dynamical defect-suppression theorem. Do not return to AC without a genuinely
+Monitor hosted `audit_pipeline` on PR #4978, then continue with the physical
+4D carrier theorem, the closed-nonexact interface theorem on that carrier, or
+a dynamical defect-suppression theorem. Do not return to AC without a genuinely
 new matter-action/statistics route.

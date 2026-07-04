@@ -74455,7 +74455,7 @@
         "arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2d51270151335fefe21174ed771fd0989b6f64b45fb635bf320bb72457bfc5eb",
+      "note_hash": "de9e5604d771335e27b670dcadeaf41b09ceb66df1a0f64c33e1bf5c8e9af702",
       "path": "docs/DYNAMICS_CONTENT_SORT_ORDERING_DERIVED_ACCUMULATION_IRREDUCIBLE_BOUNDED_NOTE_2026-07-03.md",
       "runner_path": "scripts/frontier_dynamics_sort_records_accumulate_2026_07_03.py",
       "title": "Dynamics Content Sort: Ordering Derived, Accumulation Irreducible, Bounded"

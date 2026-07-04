@@ -129,7 +129,11 @@ def main() -> int:
     parent_text = PARENT.read_text(encoding="utf-8")
     required_note_phrases = [
         "(context handle, not a citation-graph dependency)",
-        "MINIMAL_AXIOMS_2026-06-05.md",
+        # 2026-07-04 premise relocation: the note now cites the current axiom
+        # memo for additivity/content-determination and the supplied-context
+        # bridge for K/CPT orbit constancy and the homomorphism boundary.
+        "MINIMAL_AXIOMS_2026-06-29.md",
+        "KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md",
         "does not identify the physical strong-CP mass-orientation readout",
         "does not identify AC_phi_lambda species data",
         "does not derive the determinant-character/log-character boundary",

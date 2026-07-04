@@ -42177,6 +42177,18 @@
       "to": "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16"
     },
     {
+      "from": "theta_mass_action_determinant_entry_exact_support_split_note_2026-07-04",
+      "to": "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11"
+    },
+    {
+      "from": "theta_mass_action_determinant_entry_exact_support_split_note_2026-07-04",
+      "to": "theta_mass_side_epsilon_hermiticity_reality_bridge_discharge_bounded_theorem_note_2026-06-11"
+    },
+    {
+      "from": "theta_mass_action_determinant_entry_exact_support_split_note_2026-07-04",
+      "to": "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04"
+    },
+    {
       "from": "theta_mass_determinant_axiom_update_no_go_note_2026-07-04",
       "to": "minimal_axioms"
     },
@@ -110383,7 +110395,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "99782138e68d8cded191c5f036ceab39947bc4b8ac39a77c59cbbd91fc40fb86",
+      "note_hash": "a5fc4c6c6eaf852352a7c648e4e5b86a1f5d3fb4fd397e3482cb0ccf8ea52182",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118384,6 +118396,22 @@
       "path": "docs/THETA_LINK_STAR_GLUING_FRAME_CORRELATION_PAIR_COMPOSITE_DAGGER_EVENNESS_AND_ODD_BRANCH_PHASE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md",
       "runner_path": "scripts/theta_link_star_frame_correlation_gluing_2026_07_02.py",
       "title": "Link-Star Gluing Frame Theorems: the Relative Frame Rides the Composite Holonomy (Pairs and Chains), Stars Are Exactly Diagonal-Conjugation Objects, and Real-Weight Gluing Is Orientation-Reversal-Even \u2014 so the SU(2) Star Reduces to Pairwise Classes and the Orientation-Odd Branch Requires a Phase Insertion (Bounded Theorem)"
+    },
+    "theta_mass_action_determinant_entry_exact_support_split_note_2026-07-04": {
+      "claim_id": "theta_mass_action_determinant_entry_exact_support_split_note_2026-07-04",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11",
+        "theta_mass_side_epsilon_hermiticity_reality_bridge_discharge_bounded_theorem_note_2026-06-11",
+        "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "81484f82a8d88ed5a8062dbb63d8a141997c36d11a102e5fd2016e28a0534e64",
+      "path": "docs/THETA_MASS_ACTION_DETERMINANT_ENTRY_EXACT_SUPPORT_SPLIT_NOTE_2026-07-04.md",
+      "runner_path": "scripts/theta_mass_action_determinant_entry_exact_support_split_2026_07_04.py",
+      "title": "Theta Mass Action-Level Determinant Entry Exact-Support Split"
     },
     "theta_mass_determinant_axiom_update_no_go_note_2026-07-04": {
       "claim_id": "theta_mass_determinant_axiom_update_no_go_note_2026-07-04",
@@ -126564,7 +126592,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1553,
+      "bounded_theorem": 1554,
       "decoration": 3,
       "meta": 319,
       "no_go": 336,
@@ -126573,7 +126601,7 @@
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1958,
+      "bounded_theorem": 1959,
       "decoration": 3,
       "meta": 319,
       "no_go": 440,
@@ -126581,10 +126609,10 @@
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14467,
+    "edge_count": 14470,
     "leaf_count": 1267,
-    "node_count": 3835,
+    "node_count": 3836,
     "root_count": 1102,
-    "runners_with_path": 3458
+    "runners_with_path": 3459
   }
 }

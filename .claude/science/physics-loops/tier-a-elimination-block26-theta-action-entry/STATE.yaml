@@ -1,0 +1,37 @@
+block: tier-a-elimination-block26-theta-action-entry
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block26-theta-action-entry-20260704
+base_branch: physics-loop/tier-a-elimination-block25-theta-w2-registrability-20260704
+target: theta mass-side action-level determinant-entry algebra
+claim_type: bounded_theorem
+registry_edits: false
+retirement_claimed: false
+status: pr_open
+source_commit: 6b2ceb4d8
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4961
+active_route: "split supplied Gaussian bilinear determinant-entry algebra from W2 and physical-action selection"
+hard_residual: "derive the physical mass action lies on the supplied Gaussian bilinear determinant-entry surface"
+files_touched:
+  - docs/THETA_MASS_ACTION_DETERMINANT_ENTRY_EXACT_SUPPORT_SPLIT_NOTE_2026-07-04.md
+  - scripts/theta_mass_action_determinant_entry_exact_support_split_2026_07_04.py
+  - logs/runner-cache/theta_mass_action_determinant_entry_exact_support_split_2026_07_04.txt
+  - .claude/science/physics-loops/tier-a-elimination-block26-theta-action-entry/
+open_imports:
+  - W2 physical registrability
+  - physical action-surface selection
+  - K-real physicalization
+  - determinant algebra audit/dependency closure
+  - gauge-side winding account
+no_go_routes:
+  - none added; this block is exact support with hostile guards
+trace_gate_classification: upstream_support
+review_findings: "Local review-loop emulation PASS WITH BOUNDED CLAIMS; exact supplied-surface support only, no theta retirement, no W2 derivation, no registry/primitive edit."
+verification:
+  runner: "PASS=21 FAIL=0"
+  py_compile: pass
+  audit_pipeline: "pass; newly seeded rows=1"
+  audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
+  diff_check: pass
+audit_row: "theta_mass_action_determinant_entry_exact_support_split_note_2026-07-04: claim_type=bounded_theorem, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
+next_exact_action: "Watch hosted audit_pipeline, then continue with W2 physical registrability, physical action-surface derivation, or fresh-context determinant-row audits."
+stop_condition: "Block complete after PR status is verified and local lock is removed or campaign pivots."

@@ -36768,6 +36768,18 @@
       "dominant_class": "C",
       "runner": "scripts/theta_link_star_frame_correlation_gluing_2026_07_02.py"
     },
+    "theta_mass_action_determinant_entry_exact_support_split_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 9,
+        "B": 5,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/theta_mass_action_determinant_entry_exact_support_split_2026_07_04.py"
+    },
     "theta_mass_determinant_axiom_update_no_go_note_2026-07-04": {
       "assert_count": 1,
       "counts": {
@@ -90017,6 +90029,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/theta_mass_action_determinant_entry_exact_support_split_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "theta_mass_action_determinant_entry_exact_support_split_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 9,
+        "B": 5,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/theta_mass_determinant_axiom_update_no_go_2026_07_04.py": {
       "assert_count": 1,
       "claims": [
@@ -91274,15 +91301,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 696,
+    "decoration_candidates": 697,
     "dominant_class_distribution": {
-      "A": 500,
+      "A": 501,
       "B": 641,
       "C": 1276,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3324,
+    "runners_classified": 3325,
     "runners_with_C": 1746,
     "runners_with_D": 1068
   }

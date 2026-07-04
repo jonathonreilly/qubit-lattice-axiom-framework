@@ -1,0 +1,72 @@
+Theta SU(3) star central-sector projection exact support
+==============================================================================
+
+------------------------------------------------------------------------------
+A - source and registry boundaries
+------------------------------------------------------------------------------
+PASS: exists: docs/THETA_SU3_STAR_CENTRAL_SECTOR_PROJECTION_EXACT_SUPPORT_NOTE_2026-07-04.md
+PASS: exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: exists: docs/audit/data/tier_a_admissions.json
+PASS: exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+PASS: exists: docs/THETA_SU3_STAR_PAIRWISE_REDUCTION_OBSTRUCTION_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/THETA_LINK_STAR_GLUING_FRAME_CORRELATION_PAIR_COMPOSITE_DAGGER_EVENNESS_AND_ODD_BRANCH_PHASE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md
+PASS: exists: docs/THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md
+PASS: exists: docs/THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+PASS: note declares bounded theorem claim type
+PASS: note states exact-support status
+PASS: runner path is wired in note
+PASS: Tier-A genuine admitted input count remains two
+PASS: theta minimum decomposition remains the two residual atoms -- ['gauge_side_winding_account', 'mass_side_orientation_determinant_readout_bridge']
+PASS: registry names multi-plaquette large-gauge account
+PASS: minimal axioms withhold physical source/action
+PASS: Block31 exposes triple joint data
+PASS: link-star note leaves sector-level statement open
+PASS: positive route preserves G2/G3 gates
+PASS: G3 phase insertion remains open
+
+------------------------------------------------------------------------------
+B - exact central-sector projection
+------------------------------------------------------------------------------
+PASS: closed-sum vector total matches ABC vector -- ((0, 0), (0, 0))
+PASS: closed-sum ACB vector equals total -- ((0, 0), (0, 0))
+PASS: closed-sum dagger-even projection value is matrix-independent exact number
+PASS: open-sum vector total matches ABC vector -- ((2, 2), (2, 2))
+PASS: open-sum ACB vector equals total -- ((2, 2), (2, 2))
+PASS: open-sum dagger-even projection value is matrix-independent exact number
+PASS: closed-sum ABC survives central projection with omega -- (1, (0, 0))
+PASS: closed-sum ACB survives central projection with phase one -- (0, (0, 0))
+PASS: open-sum ABC is killed by central projection -- (None, (2, 2))
+PASS: open-sum ACB is killed by central projection -- (None, (2, 2))
+PASS: closed-sum dagger-even projection is 3/2 -- 1.5000000000000004
+PASS: open-sum dagger-even projection is zero
+PASS: central projection is nonzero iff the Heisenberg vector sum closes -- {'closed': 56, 'killed': 456}
+PASS: closed and killed populations are both nonempty -- {'closed': 56, 'killed': 456}
+
+------------------------------------------------------------------------------
+C - matrix and invariance checks
+------------------------------------------------------------------------------
+PASS: closed-sum ABC trace matches central projector -- (-1.4999999999999984-2.598076211353316j)
+PASS: closed-sum ACB trace matches central projector -- (2.999999999999999+1.3877787807814457e-15j)
+PASS: open-sum ABC trace matches central projector
+PASS: open-sum ACB trace matches central projector
+PASS: random conjugator is unitary
+PASS: random conjugator has determinant one -- (1.0000000000000002-2.89266097641575e-17j)
+PASS: closed-sum ABC trace is simultaneous-conjugation invariant
+PASS: closed-sum ACB trace is simultaneous-conjugation invariant
+PASS: open-sum ABC trace is simultaneous-conjugation invariant
+PASS: open-sum ACB trace is simultaneous-conjugation invariant
+
+------------------------------------------------------------------------------
+D - pairwise obstruction and exact support boundary
+------------------------------------------------------------------------------
+PASS: Block31 pairwise signatures still match
+PASS: central projection distinguishes the Block31 pairwise-degenerate triples
+PASS: note says central-sector projection is supplied surface only
+PASS: note denies physical SU(3) registration
+PASS: note denies theta retirement
+PASS: note denies registry edits
+PASS: note preserves G1/G3/mass routes
+PASS: banned overclaim phrases are absent
+
+==============================================================================
+TOTAL: PASS=51 FAIL=0

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py
-runner_sha256: efd2cace1340bcd4e73aa0d503c5c5c51ea736fae135457c09b571d65fb23bd4
-timeout_sec: 120
+runner_sha256: efefef2c830ed90d58fd4ce9cda8f43815f62ddbb983c8be2d8000ba7818a508
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 17.26
+elapsed_sec: 5.39
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -18,9 +18,9 @@ Question:
 PART 1: CURRENT EXACT CLOSURE LAWS ARE CP-SHEET BLIND
 ========================================================================================
   [PASS] The minimum-information closure law keeps exact closure and information cost under delta -> -delta  (eta_flip=1.000000000000, ΔI=0.000e+00)
-  [PASS] Its displayed representative therefore has an equally selected opposite-CP partner  (rep=(gamma,E1,E2)=(-2.874e-09,-0.192115,-0.419208))
+  [PASS] Its displayed representative therefore has an equally selected opposite-CP partner  (rep=(gamma,E1,E2)=(-2.253e-09,-0.192115,-0.419208))
   [PASS] The observable-relative-action closure law also keeps exact closure and relative action under delta -> -delta  (eta_flip=1.000000000000, ΔS=0.000e+00)
-  [PASS] Its displayed representative likewise has an equally selected opposite-CP partner  (rep=(gamma,E1,E2)=(-1.435e-07,0.008979,-0.439435))
+  [PASS] Its displayed representative likewise has an equally selected opposite-CP partner  (rep=(gamma,E1,E2)=(-3.049e-09,0.008977,-0.439435))
 
 ========================================================================================
 PART 2: TRANSPORT-POSITIVE CANDIDATES ARE STILL CP-SHEET BLIND

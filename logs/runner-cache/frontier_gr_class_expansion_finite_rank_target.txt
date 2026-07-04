@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gr_class_expansion_finite_rank_target.py
-runner_sha256: f6e37590b1c22de23917ee5e7a7d4a19f173cbce45e986afd9567c9a36e95bc4
-timeout_sec: 120
+runner_sha256: dac4ee96af37b1cd4b3aecf87e1b96f2d502c9e238d0edb8e15ef557bddd604e
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 3.35
+elapsed_sec: 1.70
 status: ok
 ----- stdout -----
 GR CLASS EXPANSION AUDIT
@@ -12,25 +12,18 @@ GR CLASS EXPANSION AUDIT
   Candidate: exact finite-rank source-to-metric theorem
 
 [EXACT] PASS: finite-rank column identity
-    max column error=3.886e-16, support size=7
+    max column error=3.331e-16, support size=7
 [EXACT] PASS: finite-rank compressed source
-    max field error=9.992e-16
+    max field error=7.772e-16, q_eff_sum=9.53220124
 [EXACT] PASS: finite-rank exterior harmonicity outside support
-    max exterior residual=1.277e-15
-
-exact finite-rank family:
-  R_match=3.0  a=0.357088  shell_rms=0.126  shell_max_rel=0.841  direct=9.851e-02  coarse=7.393e-05
-  R_match=3.5  a=0.315750  shell_rms=0.125  shell_max_rel=0.628  direct=9.650e-02  coarse=3.848e-05
-  R_match=4.0  a=0.297284  shell_rms=0.125  shell_max_rel=0.533  direct=9.638e-03  coarse=2.125e-05
-  R_match=4.5  a=0.259967  shell_rms=0.111  shell_max_rel=0.340  direct=2.793e-02  coarse=1.188e-05
-  R_match=5.0  a=0.239107  shell_rms=0.094  shell_max_rel=0.233  direct=1.039e-02  coarse=7.028e-06
+    max exterior residual=1.055e-15
 support size=7, q_eff_sum=9.53220124
 best coarse row: R_match=5.0, a=0.239107, shell_rms=0.094, direct=1.039e-02, coarse=7.028e-06
 
 [EXACT] PASS: finite-rank source renormalization is exact
-    boundary reconstruction error=6.939e-17
+    boundary reconstruction error=6.245e-17
 [EXACT] PASS: the microscopic boundary action is stationary on the finite-rank class
-    flux_err=4.163e-16, stationary_grad=4.163e-16
+    flux_err=3.331e-16, stationary_grad=3.331e-16
 [BOUNDED] PASS: the finite-rank class admits a vacuum-close coarse-grained scalar exterior metric
     R_match=5.0, direct=1.039e-02, coarse=7.028e-06
 [BOUNDED] PASS: the direct `3+1` metric residual remains nonzero

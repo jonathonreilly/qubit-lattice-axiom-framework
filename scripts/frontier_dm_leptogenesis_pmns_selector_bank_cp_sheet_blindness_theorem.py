@@ -137,9 +137,9 @@ def part2_transport_positive_candidates_are_still_cp_sheet_blind() -> None:
     print("PART 2: TRANSPORT-POSITIVE CANDIDATES ARE STILL CP-SHEET BLIND")
     print("=" * 88)
 
-    x_opt, y_opt, delta_opt, _packet_opt, etas_opt = quiet_call(cand.part2_transport_extremality_selects_a_positive_off_seed_candidate)
+    x_opt, y_opt, delta_opt, _packet_opt, etas_opt = quiet_call(cand.part2_transport_search_finds_an_off_seed_overshoot_witness)
     x_close, y_close, delta_close, _packet_close, etas_close = quiet_call(
-        cand.part3_continuity_gives_an_exact_full_closure_point, x_opt, y_opt, delta_opt
+        cand.part3_continuity_gives_an_interpolated_closure_witness, x_opt, y_opt, delta_opt
     )
 
     _packet_opt_flip, etas_opt_flip = cand.eta_columns_from_active(x_opt, y_opt, -delta_opt)

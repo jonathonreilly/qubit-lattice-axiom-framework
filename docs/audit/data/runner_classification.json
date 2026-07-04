@@ -36780,6 +36780,18 @@
       "dominant_class": "C",
       "runner": "scripts/theta_g1_defect_closure_current_surface_no_go_2026_07_04.py"
     },
+    "theta_g1_defect_suppression_supplied_penalty_exact_support_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/theta_g1_defect_suppression_supplied_penalty_exact_support_2026_07_04.py"
+    },
     "theta_g1_exact_branch_constraint_no_go_note_2026-07-04": {
       "assert_count": 2,
       "counts": {
@@ -90179,6 +90191,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/theta_g1_defect_suppression_supplied_penalty_exact_support_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "theta_g1_defect_suppression_supplied_penalty_exact_support_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/theta_g1_exact_branch_constraint_no_go_2026_07_04.py": {
       "assert_count": 2,
       "claims": [
@@ -91575,12 +91602,12 @@
     "dominant_class_distribution": {
       "A": 503,
       "B": 645,
-      "C": 1280,
+      "C": 1281,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3335,
-    "runners_with_C": 1756,
+    "runners_classified": 3336,
+    "runners_with_C": 1757,
     "runners_with_D": 1069
   }
 }

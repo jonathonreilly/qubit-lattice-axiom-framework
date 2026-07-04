@@ -42197,6 +42197,34 @@
       "to": "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04"
     },
     {
+      "from": "theta_g1_defect_suppression_supplied_penalty_exact_support_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "theta_g1_defect_suppression_supplied_penalty_exact_support_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "theta_g1_defect_suppression_supplied_penalty_exact_support_note_2026-07-04",
+      "to": "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02"
+    },
+    {
+      "from": "theta_g1_defect_suppression_supplied_penalty_exact_support_note_2026-07-04",
+      "to": "theta_g1_closed_nonexact_interface_exact_support_note_2026-07-04"
+    },
+    {
+      "from": "theta_g1_defect_suppression_supplied_penalty_exact_support_note_2026-07-04",
+      "to": "theta_g1_4d_carrier_supply_current_surface_no_go_note_2026-07-04"
+    },
+    {
+      "from": "theta_g1_defect_suppression_supplied_penalty_exact_support_note_2026-07-04",
+      "to": "theta_g1_defect_closure_current_surface_no_go_note_2026-07-04"
+    },
+    {
+      "from": "theta_g1_defect_suppression_supplied_penalty_exact_support_note_2026-07-04",
+      "to": "theta_g1_exact_branch_constraint_no_go_note_2026-07-04"
+    },
+    {
       "from": "theta_g1_exact_branch_constraint_no_go_note_2026-07-04",
       "to": "theta_g1_defect_closure_current_surface_no_go_note_2026-07-04"
     },
@@ -118655,6 +118683,28 @@
       "runner_path": "scripts/theta_g1_defect_closure_current_surface_no_go_2026_07_04.py",
       "title": "Theta G1 Defect Closure Current Surface No-Go Note"
     },
+    "theta_g1_defect_suppression_supplied_penalty_exact_support_note_2026-07-04": {
+      "claim_id": "theta_g1_defect_suppression_supplied_penalty_exact_support_note_2026-07-04",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms",
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02",
+        "theta_g1_closed_nonexact_interface_exact_support_note_2026-07-04",
+        "theta_g1_4d_carrier_supply_current_surface_no_go_note_2026-07-04",
+        "theta_g1_defect_closure_current_surface_no_go_note_2026-07-04",
+        "theta_g1_exact_branch_constraint_no_go_note_2026-07-04"
+      ],
+      "helper_runner_paths": [
+        "scripts/theta_g1_exact_branch_constraint_no_go_2026_07_04.py"
+      ],
+      "note_hash": "ecd5fd0998ac1e2536f41c0b0f8f5e96014d09b852270cfc12706f12741f14f5",
+      "path": "docs/THETA_G1_DEFECT_SUPPRESSION_SUPPLIED_PENALTY_EXACT_SUPPORT_NOTE_2026-07-04.md",
+      "runner_path": "scripts/theta_g1_defect_suppression_supplied_penalty_exact_support_2026_07_04.py",
+      "title": "Theta G1 Defect Suppression Supplied-Penalty Exact-Support Note"
+    },
     "theta_g1_exact_branch_constraint_no_go_note_2026-07-04": {
       "claim_id": "theta_g1_exact_branch_constraint_no_go_note_2026-07-04",
       "claim_type_author_hint": "no_go",
@@ -127021,7 +127071,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1558,
+      "bounded_theorem": 1559,
       "decoration": 3,
       "meta": 319,
       "no_go": 342,
@@ -127030,7 +127080,7 @@
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1963,
+      "bounded_theorem": 1964,
       "decoration": 3,
       "meta": 319,
       "no_go": 446,
@@ -127038,10 +127088,10 @@
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14529,
+    "edge_count": 14536,
     "leaf_count": 1267,
-    "node_count": 3846,
+    "node_count": 3847,
     "root_count": 1102,
-    "runners_with_path": 3469
+    "runners_with_path": 3470
   }
 }

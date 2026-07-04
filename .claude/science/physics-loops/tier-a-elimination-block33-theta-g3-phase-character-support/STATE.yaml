@@ -6,7 +6,9 @@ target: "theta G3 phase-type insertion, finite central-sector phase-character su
 claim_type: bounded_theorem
 registry_edits: false
 retirement_claimed: false
-status: verified_pending_pr
+status: pr_open
+source_commit: 773b2cb21
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4974
 active_route: "exact finite support for orientation-odd central cocycle phase character"
 hard_residual: "derive physical G3 phase source, coefficient, action entry, and physical registration"
 lock_mode: "degraded: scripts/automation_lock.py status failed with permission denied on /Users/jonreilly; branch-local /tmp supervisor lock used"
@@ -33,5 +35,5 @@ verification:
   audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
   diff_check: pass
 audit_row: "theta_g3_central_sector_phase_character_exact_support_note_2026-07-04: claim_type=bounded_theorem, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
-next_exact_action: "Commit, push, and open a stacked PR on Block32; then verify the hosted audit_pipeline status."
+next_exact_action: "Verify hosted audit_pipeline on PR #4974 if GitHub checkout is available, then continue with physical G3 phase-source, physical SU(3) sector/readout, G1 defect closure, or theta mass-side bridge."
 stop_condition: "Block complete after PR is opened and local verification is complete; hosted checkout stalls are infrastructure, not science blockers."

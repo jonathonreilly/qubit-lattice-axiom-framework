@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 853 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1944 |
+| unaudited | 1945 |
 | meta | 337 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
 | ~~audited_conditional~~ | 25 |
-| ~~audited_failed~~ | 2 |
+| ~~audited_failed~~ | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -63,10 +63,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1226 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
-| `audited_failed` | 24 |
+| `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2281 |
+| `unaudited` | 2282 |
 
 | claim_type | count |
 |---|---:|
@@ -1445,7 +1445,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
-| `gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -8191,19 +8190,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The load-bearing move is a class F symbol-identity step between the gravitational weak-field response kernel and the lattice resolvent G_0. The runner verifies neutral-subspace identities and diagnostics after phi = G_0 rho is imposed, but it does not derive that gravity is mediated by the same H and G_0. The source note's own boundary says this support may not be cited as a retained derivation of L^{-1}=G_0, the gravitational response kernel, the 1/(4 pi r) asymptotic, or nonlinear self-gravity convergence.
 - **open / conditional deps cited:**
   - `GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md`
-- **auditor confidence:** high
-
-### `gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16`
-
-- **Note:** [`GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](../../docs/GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded one-axis fixed-energy scalar-shifted lattice packet: phase counting gives n=k_s/k0 and the first-order coefficient c_E=1/(k0 lambda_axis'(k0)), with a stated small-k weak-field expansion and conditional 1/b ray-angle form.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Differentiate lambda_axis(k_s)+s=E to get d(k_s/k0)/ds|_{s=0}=-1/(k0 lambda_axis'(k0)), so n(s)=1-c_E s and c_E=1/(k0 lambda_axis'(k0)).  _(class `A`)_
-- **chain closes:** False — The exact phase-count identity and derivative coefficient close algebraically from the cited retained-bounded inputs. The claim as written does not fully close because the displayed small-k expansion omits the O(s) correction from c_E=1/(2E)+1/24+O(E), so the stated O(E s) remainder is too small without an extra scaling assumption.
-- **rationale:** Issue: the source states n(s)=1-s/(2E)+O(s^2/E^2, E s), but expanding the exact axis formula gives an additional O(s) term. Why this blocks: the bounded theorem includes that small-k weak-field expansion, and the runner only checks the relative coefficient trend, not the displayed remainder order. Repair target: replace the remainder with O(s^2/E^2, s) or state and verify a scaling regime where the missing term is dominated. Claim boundary until fixed: the exact n=k_s/k0 identity and c_E=1/(k0 lambda_axis'(k0)) coefficient remain algebraically supported.
 - **auditor confidence:** high
 
 ### `gravity_full_self_consistency_note`

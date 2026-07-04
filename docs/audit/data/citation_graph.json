@@ -82345,7 +82345,7 @@
         "self_consistency_forces_poisson_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bfe9929c36ab1fe526351d137db6366b4d69cdf201c1ab0b99d0438ba3585fd0",
+      "note_hash": "5525f933eb528b6f095855491d8cd142774994273a58a708c5bb575661b21010",
       "path": "docs/GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
       "runner_path": "scripts/frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.py",
       "title": "Fixed-Energy Eikonal Index Bridge for the Gravity Premise (4) Packet"

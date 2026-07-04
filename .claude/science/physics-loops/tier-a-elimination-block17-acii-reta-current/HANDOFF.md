@@ -7,8 +7,8 @@ current-support-stack level.
 
 Branch: `physics-loop/tier-a-elimination-block17-acii-reta-current-20260704`
 Base: `physics-loop/tier-a-elimination-block16-aci-matterstats-20260704`
-PR: pending
-Source commit: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4945
+Source commit: `6fc0cc719`
 
 ## Expected Claim Movement
 
@@ -45,4 +45,4 @@ Audit row:
 
 ## Next Exact Action
 
-Commit, push, open a stacked PR, then monitor audit.
+Monitor GitHub audit for PR #4945 and continue the Tier-A elimination campaign.

@@ -6,9 +6,9 @@ target: AC_phi_lambda(ii) R-eta versus updated Record formation
 claim_type: no_go
 registry_edits: false
 retirement_claimed: false
-status: local_verified
-source_commit: pending
-pr: pending
+status: pr_open
+source_commit: 596e49ea5
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4971
 active_route: "test whether updated Record formation supplies density-read-as-angle R-eta through occurrence/rate content"
 hard_residual: "derive a separate inhomogeneous readout-context, occurrence, or physical-action bridge selecting the direct density member"
 files_touched:
@@ -32,5 +32,5 @@ verification:
   audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
   diff_check: pass
 audit_row: "acphilambda_r_eta_record_formation_non_supply_no_go_note_2026-07-04: claim_type=no_go, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
-next_exact_action: "Publish stacked PR, watch hosted audit_pipeline, then continue with R-eta readout-context theorem, occurrence-lane route, AC occupancy physical horn selection, or theta physical-context blockers."
+next_exact_action: "Watch hosted audit_pipeline, then continue with R-eta readout-context theorem, occurrence-lane route, AC occupancy physical horn selection, or theta physical-context blockers."
 stop_condition: "Block complete after PR status is verified and local lock is removed."

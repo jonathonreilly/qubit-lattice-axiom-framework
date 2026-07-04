@@ -7,8 +7,8 @@ Record axiom's "Records form" sentence alone.
 
 Branch: `physics-loop/tier-a-elimination-block30-ac-reta-formation-nonsupply-20260704`
 Base: `physics-loop/tier-a-elimination-block29-ac-record-orbit-nonsupply-20260704`
-Source commit: pending
-PR: pending
+Source commit: `596e49ea5`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4971
 
 ## Expected Claim Movement
 
@@ -39,6 +39,6 @@ time metric, weight, or readout-context theorem needed to select R-eta.
 
 ## Next Exact Action
 
-Publish a stacked PR, watch hosted `audit_pipeline`, and then continue with
-R-eta readout-context theorem, occurrence-lane route, AC occupancy physical
-horn selection, or theta physical-context blockers.
+Watch hosted `audit_pipeline`, then continue with R-eta readout-context
+theorem, occurrence-lane route, AC occupancy physical horn selection, or theta
+physical-context blockers.

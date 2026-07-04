@@ -1125,6 +1125,46 @@
       "to": "admitted_input_registry_tier_a_note_2026-05-23"
     },
     {
+      "from": "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04",
+      "to": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11"
+    },
+    {
+      "from": "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04",
+      "to": "acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18"
+    },
+    {
+      "from": "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04",
+      "to": "supplied_readout_context_two_component_decomposition_bounded_note_2026-07-02"
+    },
+    {
+      "from": "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04",
+      "to": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04",
+      "to": "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01"
+    },
+    {
+      "from": "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04",
+      "to": "acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04"
+    },
+    {
+      "from": "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04",
+      "to": "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04"
+    },
+    {
+      "from": "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04",
+      "to": "acphilambda_r_eta_current_surface_readout_identification_no_go_note_2026-07-04"
+    },
+    {
       "from": "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04",
       "to": "minimal_axioms"
     },
@@ -59347,6 +59387,29 @@
       "runner_path": "scripts/acphilambda_r_eta_doublet_clock_rate_normalization_no_go_2026_07_04.py",
       "title": "AC_phi_lambda R-eta Doublet-Clock Rate-Normalization No-Go"
     },
+    "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04": {
+      "claim_id": "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
+        "acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18",
+        "supplied_readout_context_two_component_decomposition_bounded_note_2026-07-02",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+        "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01",
+        "acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04",
+        "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04",
+        "acphilambda_r_eta_current_surface_readout_identification_no_go_note_2026-07-04"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "6724259287445611dad89f159da7ec80c0a37976d5bf0aae828d3988cee0ced1",
+      "path": "docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_r_eta_hclass_first_principles_stretch_no_go_2026_07_04.py",
+      "title": "AC_phi_lambda R-eta h-Class First-Principles Stretch No-Go"
+    },
     "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04": {
       "claim_id": "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04",
       "claim_type_author_hint": "no_go",
@@ -111046,7 +111109,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9175376a7cb6f7959a60c8c474364b1fc659fcc495dc41268382f70a67a7b5d7",
+      "note_hash": "167aa98bcaa43742c7b9ef0e1a7eab238df9a750a1cfe76b4c6ada1a67bcdc5f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -127392,7 +127455,7 @@
       "bounded_theorem": 1560,
       "decoration": 3,
       "meta": 319,
-      "no_go": 347,
+      "no_go": 348,
       "none": 1216,
       "open_gate": 134,
       "positive_theorem": 274
@@ -127401,15 +127464,15 @@
       "bounded_theorem": 1965,
       "decoration": 3,
       "meta": 319,
-      "no_go": 451,
+      "no_go": 452,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14584,
+    "edge_count": 14594,
     "leaf_count": 1266,
-    "node_count": 3853,
+    "node_count": 3854,
     "root_count": 1102,
-    "runners_with_path": 3476
+    "runners_with_path": 3477
   }
 }

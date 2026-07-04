@@ -8,7 +8,8 @@ the four live residual atoms.
 
 Branch: `physics-loop/tier-a-elimination-block48-residual-governance-readiness-20260704`
 Base: `physics-loop/tier-a-elimination-block47-theta-g2-physical-sector-registration-stretch-20260704`
-PR: pending
+Source commit: `61c21506c`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4989
 
 ## Claim Movement
 
@@ -38,6 +39,5 @@ AC(ii)/R-eta, theta gauge side, and theta mass side.
 
 ## Next Exact Action
 
-Commit, push the stacked PR, update this handoff with PR metadata, and either
-prepare exact governance-decision text or continue theorem attempts on one
-residual.
+Monitor hosted audit for #4989, then prepare exact governance-decision text or
+continue theorem attempts on one residual.

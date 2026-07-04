@@ -1,0 +1,39 @@
+block: tier-a-elimination-block16-aci-matterstats
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block16-aci-matterstats-20260704
+base_branch: physics-loop/tier-a-elimination-block15-aci-modeset-20260704
+pr_url: pending
+source_commit: pending
+target: AC_phi_lambda sub-admission (i) full matter-action statistics route
+claim_type: no_go
+registry_edits: false
+retirement_claimed: false
+status: verified_ready_for_pr
+active_route: full matter-action/statistics selector stretch attempt
+hard_residual: "derive physical AC_phi_lambda matter-action statistics selecting the generation doublet occupancy grain"
+files_touched:
+  - docs/ACPHILAMBDA_FULL_MATTER_ACTION_STATISTICS_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+  - scripts/acphilambda_full_matter_action_statistics_current_surface_no_go_2026_07_04.py
+  - .claude/science/physics-loops/tier-a-elimination-block16-aci-matterstats/
+open_imports:
+  - physical statistical-grain selector
+  - full gauge-fermion-entangled representation equality
+  - non-matter-blind matter-gauge selector
+  - direct AC_phi_lambda action readout theorem
+no_go_routes:
+  - fixed-gauge RP transfer closes AC(i)
+  - mixed OS fermion-sector equality closes AC(i)
+  - determinant/statistics support selects orbit occupancy
+  - link integration or kinetic-class narrowing selects AC(i) grain
+  - local density readout selects generation grain
+trace_gate_classification: negative_route_pruning
+review_findings: pass_with_bounded_claims
+verification:
+  runner: "PASS=186 FAIL=0"
+  py_compile: pass
+  audit_pipeline: pass
+  audit_lint_strict: "pass_with_pre_existing_warnings_notices"
+  diff_check: pass
+audit_row: acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04
+next_exact_action: "Commit, push stacked PR, then monitor audit."
+stop_condition: "Block complete after green checks, review disposition pass/demote, PR opened, and lock released."

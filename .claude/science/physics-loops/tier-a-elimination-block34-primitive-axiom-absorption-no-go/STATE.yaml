@@ -6,7 +6,9 @@ target: "approved primitive axiom-absorption shortcut after the updated axioms"
 claim_type: no_go
 registry_edits: false
 retirement_claimed: false
-status: verified_pending_pr
+status: pr_open
+source_commit: 4e8b5d121
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4975
 active_route: "current-surface no-go against retiring approved primitives by axiom-text absorption"
 hard_residual: "future primitive retirement still needs a retained theorem or owner-approved governance action"
 files_touched:
@@ -29,4 +31,4 @@ verification:
   audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
   diff_check: pass
 audit_row: "approved_primitive_axiom_absorption_current_surface_no_go_note_2026-07-04: claim_type=no_go, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
-next_exact_action: "Commit, push, and open a stacked PR on Block33; then verify the hosted audit_pipeline status."
+next_exact_action: "Verify hosted audit_pipeline on PR #4975 if GitHub checkout is available, then continue Tier-A retirement directly: theta physical phase source/sector readout, G1 defect closure, theta mass-side bridge, or AC residual theorem."

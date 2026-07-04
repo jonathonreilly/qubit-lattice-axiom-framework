@@ -1,5 +1,8 @@
 # Summary
 
+Loop pack:
+`.claude/science/physics-loops/tier-a-elimination-block34-primitive-axiom-absorption-no-go/HANDOFF.md`
+
 Block34 adds a current-surface no-go against retiring approved primitives by
 claiming they were absorbed into the updated four-axiom memo.
 

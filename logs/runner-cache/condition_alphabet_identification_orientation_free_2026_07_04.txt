@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/condition_alphabet_identification_orientation_free_2026_07_04.py
+runner_sha256: 9f65f72163144c40de651da1d3ceebfe4f65e7343e2495541c894650ecb60ead
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+PASS: S0 generated group and real-basis extraction | unique=48, proper=24, improper=24, basis_max=2.220e-16
+PASS: A1 axis-angle SU(2) lift reproduces spatial adjoint | proper_count=24, max_err=3.140e-16
+PASS: A2 content law: even scalar, pseudoscalar, polar vector, axial vector | elements=48, draws_per_element=3, max_err=1.221e-15
+PASS: A3 self-adjoint state content preserves the polar vector law | hermitian_max=4.965e-16, pure_state_max=3.377e-16, state_b_w_max=2.220e-16
+PASS: A4 pseudoscalar coefficient is readout-invisible | readout_max=4.441e-16, b_law_max=4.441e-16, improper_flips=72
+PASS: B1 covariant alphabet exceeds the chirality threshold | joint_invariance_max=1.776e-15, values=[0.1, 0.2, 0.3, 0.4, 0.5]
+PASS: B2 separating values are even under inversion | P_invariance_max=0.000e+00, P_values=[0.1, 0.2, 0.3, 0.4, 0.5]
+PASS: C1 no sign character below vector pairs | mV=0 (sum=0), mVV=0 (sum=0)
+PASS: C2 vector triple has one sign character | mVVV=1 (sum=48)
+PASS: C3 direction alphabet channels first appear at vector pairs | mDir=0 (sum=0), mDirV=0 (sum=0), mDirVV=1 (sum=48)
+PASS: C4 epsilon uniqueness from projector and permutation signs | c=-0.06266910642791916, max_err=1.388e-16
+PASS: C5 pseudoscalar odd channel is excluded from state readout | b_channel_max=2.220e-16, hermitian_b_w_max=2.220e-16, readout_even_max=4.441e-16
+PASS: D1 content triple product is conjugation-odd | proper_max=0.000e+00, improper_flip_max=0.000e+00
+PASS: D2 imaginary triple product is invariant and readout-blind | twisted_invariance_max=0.000e+00, real_part_max=0.000e+00
+PASS: D3 relative orientation is invariant under all signed permutations | relative_orientation_max=0.000e+00
+PASS: D4 absolute orientation is one bit | four_combinations=20, max_err=0.000e+00, min_abs_triple=1.453e-02
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

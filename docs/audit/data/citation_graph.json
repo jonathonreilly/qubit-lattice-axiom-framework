@@ -601,6 +601,34 @@
       "to": "admitted_input_registry_tier_a_note_2026-05-23"
     },
     {
+      "from": "acphilambda_first_order_determinant_retirement_readiness_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "acphilambda_first_order_determinant_retirement_readiness_no_go_note_2026-07-04",
+      "to": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11"
+    },
+    {
+      "from": "acphilambda_first_order_determinant_retirement_readiness_no_go_note_2026-07-04",
+      "to": "koide_staggered_first_order_generation_determinant_bounded_theorem_note_2026-06-11"
+    },
+    {
+      "from": "acphilambda_first_order_determinant_retirement_readiness_no_go_note_2026-07-04",
+      "to": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09"
+    },
+    {
+      "from": "acphilambda_first_order_determinant_retirement_readiness_no_go_note_2026-07-04",
+      "to": "kreality_shared_physicalization_current_surface_no_go_note_2026-07-04"
+    },
+    {
+      "from": "acphilambda_first_order_determinant_retirement_readiness_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "acphilambda_first_order_determinant_retirement_readiness_no_go_note_2026-07-04",
+      "to": "realized_state_primitive"
+    },
+    {
       "from": "acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02",
       "to": "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15"
     },
@@ -58437,6 +58465,26 @@
       "runner_path": "scripts/acphilambda_dynamical_index_occupancy_current_surface_no_go_2026_07_04.py",
       "title": "AC_phi_lambda Dynamical Index Occupancy Current-Surface No-Go Note"
     },
+    "acphilambda_first_order_determinant_retirement_readiness_no_go_note_2026-07-04": {
+      "claim_id": "acphilambda_first_order_determinant_retirement_readiness_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
+        "koide_staggered_first_order_generation_determinant_bounded_theorem_note_2026-06-11",
+        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+        "kreality_shared_physicalization_current_surface_no_go_note_2026-07-04",
+        "minimal_axioms",
+        "realized_state_primitive"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "25c3fd13a23189a5c8cc3e0f9629f7bcf2bc5c195acade16fedfd373227c9656",
+      "path": "docs/ACPHILAMBDA_FIRST_ORDER_DETERMINANT_RETIREMENT_READINESS_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_first_order_determinant_retirement_readiness_no_go_2026_07_04.py",
+      "title": "AC_phi_lambda First-Order Determinant Retirement-Readiness No-Go"
+    },
     "acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02": {
       "claim_id": "acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02",
       "claim_type_author_hint": "no_go",
@@ -110299,7 +110347,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "560144614d78bef1c44c5ff87762f8f8c79a2fa220a80826e6ed0f2c9e7dd682",
+      "note_hash": "34a9d012265d60cdfb5f7d51a20a74a76c6a1351b5372f385e3edf424008d4a6",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -126461,7 +126509,7 @@
       "bounded_theorem": 1553,
       "decoration": 3,
       "meta": 319,
-      "no_go": 334,
+      "no_go": 335,
       "none": 1216,
       "open_gate": 134,
       "positive_theorem": 274
@@ -126470,15 +126518,15 @@
       "bounded_theorem": 1958,
       "decoration": 3,
       "meta": 319,
-      "no_go": 438,
+      "no_go": 439,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14451,
+    "edge_count": 14458,
     "leaf_count": 1266,
-    "node_count": 3833,
+    "node_count": 3834,
     "root_count": 1102,
-    "runners_with_path": 3456
+    "runners_with_path": 3457
   }
 }

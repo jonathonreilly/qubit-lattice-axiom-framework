@@ -1,0 +1,35 @@
+block: tier-a-elimination-block24-ac-firstorder-readiness
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block24-ac-firstorder-readiness-20260704
+base_branch: physics-loop/tier-a-elimination-block23-kreal-physicalization-20260704
+target: AC_phi_lambda(i) first-order determinant retirement readiness
+claim_type: no_go
+registry_edits: false
+retirement_claimed: false
+status: ready_for_pr
+active_route: "first-order determinant theorem plus July 4 hygiene already retires AC_phi_lambda(i)"
+hard_residual: "derive physical horn selection for the matter action grain/statistics"
+files_touched:
+  - docs/ACPHILAMBDA_FIRST_ORDER_DETERMINANT_RETIREMENT_READINESS_NO_GO_NOTE_2026-07-04.md
+  - scripts/acphilambda_first_order_determinant_retirement_readiness_no_go_2026_07_04.py
+  - logs/runner-cache/acphilambda_first_order_determinant_retirement_readiness_no_go_2026_07_04.txt
+  - .claude/science/physics-loops/tier-a-elimination-block24-ac-firstorder-readiness/
+open_imports:
+  - physical measure-side horn selection
+  - physical generation coupling theorem
+  - K/CPT-site-basis bridge
+  - orbit-occupancy governance
+  - R-eta readout identification
+no_go_routes:
+  - immediate AC_phi_lambda(i) retirement from first-order determinant theorem plus current hygiene
+trace_gate_classification: negative_route_pruning
+review_findings: "Local review-loop emulation PASS WITH BOUNDED CLAIMS; no retained/proposed-retained language, no hidden comparator imports, no orbit-occupancy adoption, no registry edit."
+verification:
+  runner: "PASS=25 FAIL=0"
+  py_compile: pass
+  audit_pipeline: "pass; newly seeded rows=1"
+  audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
+  diff_check: pass
+audit_row: "acphilambda_first_order_determinant_retirement_readiness_no_go_note_2026-07-04: claim_type=no_go, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
+next_exact_action: "Run py_compile, diff_check, audit pipeline, lint, local review, then commit/push/open stacked PR."
+stop_condition: "Block complete after checks pass, review disposition is recorded, PR opens/backlogs, and local lock is removed or campaign pivots."

@@ -384,6 +384,18 @@
       "dominant_class": "A",
       "runner": "scripts/acphilambda_dynamical_index_occupancy_current_surface_no_go_2026_07_04.py"
     },
+    "acphilambda_first_order_determinant_retirement_readiness_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 4,
+        "B": 8,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/acphilambda_first_order_determinant_retirement_readiness_no_go_2026_07_04.py"
+    },
     "acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02": {
       "assert_count": 1,
       "counts": {
@@ -42023,6 +42035,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/acphilambda_first_order_determinant_retirement_readiness_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "acphilambda_first_order_determinant_retirement_readiness_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 4,
+        "B": 8,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/acphilambda_fluxed_ring_spectral_functional_route_no_go_2026_07_02.py": {
@@ -91220,15 +91247,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 695,
+    "decoration_candidates": 696,
     "dominant_class_distribution": {
       "A": 500,
-      "B": 639,
+      "B": 640,
       "C": 1276,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3322,
+    "runners_classified": 3323,
     "runners_with_C": 1745,
     "runners_with_D": 1068
   }

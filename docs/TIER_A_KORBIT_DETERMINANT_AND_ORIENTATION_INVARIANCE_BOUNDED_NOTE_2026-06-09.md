@@ -7,7 +7,10 @@ so the strong-CP route stands free of this note's staggered-gate dependency;
 the filename keeps the original title per the no-rename rule) (2026-06-12:
 the orientation lemma is restated on the supplied circulant class stipulated
 in-note; the staggered-Dirac gate note is context, not load-bearing — the lemma
-consumes no content from it.)
+consumes no content from it.) (2026-07-04: the unordered-multiset
+registrability premise is now cited to its named bridge note and a dated
+downstream-hygiene line is added to the Boundary, per the 2026-07-04
+conditional-audit repair note `missing_bridge_theorem`.)
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome and does not edit the audit-lane-owned Tier-A
@@ -35,6 +38,15 @@ It does not strip the `AC_phi_lambda` admission by itself, derive
 `|delta| = 2/9`, or change `docs/audit/data/tier_a_admissions.json`.
 Those moves require later registry/audit handling and any missing bridge named
 below.
+
+**Downstream hygiene (2026-07-04):** the lemma's registrable-species premise
+(the species surface is exactly the unordered mass multiset) is not this
+note's content and is not axiom content; it is carried by the cited bridge
+note `UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md`,
+whose audit status is set only by the independent audit lane. This note's
+conclusion remains bounded on that bridge plus the `k -> -k` relabel
+convention; if the registrable surface is ever enlarged beyond the unordered
+multiset, the conclusion must be re-derived, not assumed.
 
 ## Determinant Readout Lemma (Moved)
 
@@ -66,7 +78,9 @@ symmetric polynomials of the three eigenvalues agree at `delta` and `-delta`;
 the flip permutes the eigenvalue labels by `k -> -k`.
 
 Therefore, conditional on the registrable species surface being exactly the
-unordered mass multiset and on the `k -> -k` relabel being convention, the sign
+unordered mass multiset — the premise carried by the named bridge
+[`UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md`](UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md)
+— and on the `k -> -k` relabel being convention, the sign
 of `delta` is not extra registrable content. The even datum, equivalently
 `cos(3 delta)` or `|delta|` on the chosen fundamental domain, is the remaining
 candidate atom.

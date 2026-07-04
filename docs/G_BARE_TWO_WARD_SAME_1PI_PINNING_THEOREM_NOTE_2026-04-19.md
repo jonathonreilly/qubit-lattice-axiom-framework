@@ -18,6 +18,12 @@ of the off-surface `g_bare = 1` closure without the same named admission, and
 now isolates the exact residue-normalization degree of freedom that prevents
 the current source packet from deriving the admission.
 
+**2026-07-04 companion-runner scope repair.** The stale companion runner
+`scripts/frontier_g_bare_two_ward_closure.py` has been conformed to this
+actual surface. It now verifies the canonical-surface consistency check, the
+conditional `R(g_bare)=1` map, and the allowed obstruction family
+`R(g_bare)=g_bare^2`; it no longer prints an unconditional finality verdict.
+
 ---
 
 ## 2026-05-26 conditional-use firewall

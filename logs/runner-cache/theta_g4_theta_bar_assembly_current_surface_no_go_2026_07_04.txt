@@ -1,0 +1,155 @@
+Theta G4 theta-bar assembly current-surface no-go verifier
+
+========================================================================================
+A. source presence and Tier-A boundary
+========================================================================================
+[PASS] exists: docs/THETA_G4_THETA_BAR_ASSEMBLY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] exists: docs/STRONG_CP_THETA_BAR_STRUCTURED_ADMISSION_2026-06-04.md
+[PASS] exists: docs/STRONG_CP_THETA_ZERO_NOTE.md
+[PASS] exists: docs/THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md
+[PASS] exists: docs/THETA_ASSEMBLY_PAIRED_SHIFT_FIXED_GRADING_MCKEAN_SINGER_REDUCTION_NARROW_THEOREM_NOTE_2026-07-02.md
+[PASS] exists: docs/THETA_G1_4D_CARRIER_SUPPLY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/THETA_G1_DEFECT_CLOSURE_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/THETA_MASS_W2_PHYSICAL_REGISTRABILITY_STRETCH_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/THETA_MASS_DETERMINANT_BRIDGE_RETIREMENT_READINESS_NO_GO_NOTE_2026-07-04.md
+[PASS] Tier-A genuine admitted derivation-target count remains two
+[PASS] theta label is present
+[PASS] theta minimum decomposition has gauge and mass residuals
+[PASS] theta statement names theta_bar
+[PASS] theta statement names arg det
+[PASS] human registry names theta
+[PASS] note declares Type no_go
+[PASS] note declares Claim type no_go
+[PASS] note declares independent audit boundary
+[PASS] note says theta is not retired
+[PASS] note says theta_bar=0 is not derived
+[PASS] forbidden overclaim absent: Strong CP is solved
+[PASS] forbidden overclaim absent: therefore theta closes
+[PASS] forbidden overclaim absent: audit_status: audited_clean
+[PASS] forbidden overclaim absent: effective_status: retained
+[PASS] forbidden overclaim absent: promoted to retained
+
+========================================================================================
+B. source pins for assembly boundary
+========================================================================================
+[PASS] minimal axioms withhold source/action
+[PASS] minimal axioms withhold physical-observable identification
+[PASS] minimal axioms withhold readout-context selection
+[PASS] minimal axioms withhold downstream open gates
+[PASS] structured admission source contains Gauge-side residual
+[PASS] structured admission source contains mass-side residual
+[PASS] structured admission source contains does not retire
+[PASS] structured admission source contains theta_bar
+[PASS] theta-zero parent contains selected-surface
+[PASS] theta-zero parent contains Wilson-plus-staggered scalar-mass surface
+[PASS] theta-zero parent contains It does not derive from the minimal axiom surface
+[PASS] gauge status contains G4 physical theta assembly
+[PASS] gauge status contains theta_bar = theta_gauge + arg det
+[PASS] gauge status contains Nontrivial transfer still needs the supplier class
+[PASS] gauge status contains G4 last
+[PASS] assembly source contains paired-shift law
+[PASS] assembly source contains n = 2 tr(eps)
+[PASS] assembly source contains tr(eps) = 0
+[PASS] assembly source contains does not supply either side's physical value
+[PASS] assembly source contains nontrivial transfer
+[PASS] G1 carrier source contains physical 4D carrier
+[PASS] G1 carrier source contains not supply the 4D cubical/gauge carrier
+[PASS] G1 carrier source contains Theta's gauge-side winding account therefore remains live
+[PASS] G1 defect source contains G1 is not derived
+[PASS] G1 defect source contains dn=0
+[PASS] G1 defect source contains defect-suppression
+[PASS] G1 defect source contains Record axiom's new formation sentence is also not a defect law
+[PASS] G3 phase source contains G3 is not derived
+[PASS] G3 phase source contains phase-type
+[PASS] G3 phase source contains coefficient
+[PASS] G3 phase source contains physical registration
+[PASS] mass W2 source contains W2 physical registrability
+[PASS] mass W2 source contains W2 is isolated
+[PASS] mass W2 source contains theta mass readout
+[PASS] mass W2 source contains not prove that the physical mass-surface readout is that supplied determinant channel
+[PASS] mass readiness source contains not sufficient yet
+[PASS] mass readiness source contains determinant-channel/readout exhaustion bridge
+[PASS] mass readiness source contains mass-side determinant-readout atom remains live
+
+========================================================================================
+C. exact paired-shift algebra
+========================================================================================
+[PASS] theta_bar expression is theta_g + phi
+[PASS] paired shift preserves theta_bar
+[PASS] theta_bar has no alpha dependence after shift
+[PASS] theta_bar still depends on theta_g
+[PASS] theta_bar still depends on phi
+[PASS] invariance does not force zero symbolically
+[PASS] zero value requires a relation between sides
+[PASS] fixed-grading transfer is n=2 tr(eps)
+[PASS] balanced tr(eps)=0 gives n=0
+[PASS] balanced shift leaves gauge side unchanged
+[PASS] balanced shift leaves mass side unchanged
+[PASS] zero_pair keeps theta_bar invariant under nonzero transfer
+[PASS] cancelling_pair keeps theta_bar invariant under nonzero transfer
+[PASS] nonzero_pair keeps theta_bar invariant under nonzero transfer
+[PASS] generic_pair keeps theta_bar invariant under nonzero transfer
+[PASS] same bookkeeping allows zero and nonzero theta_bar values
+[PASS] cancelling pair is zero by initial relation only
+[PASS] generic pair is nonzero
+
+========================================================================================
+D. prerequisite gate status
+========================================================================================
+[PASS] ledger row exists for THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md
+[PASS] THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md claim_type is open_gate
+[PASS] THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md is not a retained theta retirement authority
+[PASS] ledger row exists for THETA_ASSEMBLY_PAIRED_SHIFT_FIXED_GRADING_MCKEAN_SINGER_REDUCTION_NARROW_THEOREM_NOTE_2026-07-02.md
+[PASS] THETA_ASSEMBLY_PAIRED_SHIFT_FIXED_GRADING_MCKEAN_SINGER_REDUCTION_NARROW_THEOREM_NOTE_2026-07-02.md claim_type is bounded_theorem
+[PASS] THETA_ASSEMBLY_PAIRED_SHIFT_FIXED_GRADING_MCKEAN_SINGER_REDUCTION_NARROW_THEOREM_NOTE_2026-07-02.md is not a retained theta retirement authority
+[PASS] ledger row exists for THETA_G1_4D_CARRIER_SUPPLY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] THETA_G1_4D_CARRIER_SUPPLY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md claim_type is no_go
+[PASS] THETA_G1_4D_CARRIER_SUPPLY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md is not a retained theta retirement authority
+[PASS] ledger row exists for THETA_G1_DEFECT_CLOSURE_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] THETA_G1_DEFECT_CLOSURE_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md claim_type is no_go
+[PASS] THETA_G1_DEFECT_CLOSURE_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md is not a retained theta retirement authority
+[PASS] ledger row exists for THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md claim_type is no_go
+[PASS] THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md is not a retained theta retirement authority
+[PASS] ledger row exists for THETA_MASS_W2_PHYSICAL_REGISTRABILITY_STRETCH_NO_GO_NOTE_2026-07-04.md
+[PASS] THETA_MASS_W2_PHYSICAL_REGISTRABILITY_STRETCH_NO_GO_NOTE_2026-07-04.md claim_type is no_go
+[PASS] THETA_MASS_W2_PHYSICAL_REGISTRABILITY_STRETCH_NO_GO_NOTE_2026-07-04.md is not a retained theta retirement authority
+[PASS] ledger row exists for THETA_MASS_DETERMINANT_BRIDGE_RETIREMENT_READINESS_NO_GO_NOTE_2026-07-04.md
+[PASS] THETA_MASS_DETERMINANT_BRIDGE_RETIREMENT_READINESS_NO_GO_NOTE_2026-07-04.md claim_type is no_go
+[PASS] THETA_MASS_DETERMINANT_BRIDGE_RETIREMENT_READINESS_NO_GO_NOTE_2026-07-04.md is not a retained theta retirement authority
+[PASS] note lists remaining route: G1 physical 4D carrier
+[PASS] note lists remaining route: G2 physical sector/readout registration
+[PASS] note lists remaining route: G3 phase source
+[PASS] note lists remaining route: mass-side W2 physical registrability
+[PASS] note lists remaining route: Full theta-bar assembly theorem
+[PASS] hidden import exclusion recorded: neutron-EDM bound
+[PASS] hidden import exclusion recorded: observed theta value
+[PASS] hidden import exclusion recorded: fitted selector
+[PASS] hidden import exclusion recorded: axion premise
+[PASS] hidden import exclusion recorded: anomaly supplier primitive
+[PASS] hidden import exclusion recorded: registry edit
+
+========================================================================================
+E. new audit row
+========================================================================================
+[PASS] new row claim_type is no_go
+[PASS] new row audit status remains unaudited
+[PASS] new row effective status remains unaudited
+[PASS] new row has at least ten dependencies
+[PASS] new row dependency includes minimal_axioms
+[PASS] new row dependency includes admitted_input_registry_tier_a_note_2026-05-23
+[PASS] new row dependency includes strong_cp_theta_bar_structured_admission_2026-06-04
+[PASS] new row dependency includes theta_gauge_positive_route_stretch_status_2026-07-04
+[PASS] new row dependency includes theta_assembly_paired_shift_fixed_grading_mckean_singer_reduction_narrow_theorem_note_2026-07-02
+[PASS] new row dependency includes theta_g1_4d_carrier_supply_current_surface_no_go_note_2026-07-04
+[PASS] new row dependency includes theta_g1_defect_closure_current_surface_no_go_note_2026-07-04
+[PASS] new row dependency includes theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04
+[PASS] new row dependency includes theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04
+[PASS] new row dependency includes theta_mass_determinant_bridge_retirement_readiness_no_go_note_2026-07-04
+
+TOTAL: PASS=132 FAIL=0 CHECKS=132

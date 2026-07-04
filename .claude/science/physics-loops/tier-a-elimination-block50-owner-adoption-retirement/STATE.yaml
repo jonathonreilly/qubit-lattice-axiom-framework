@@ -49,6 +49,7 @@ checks:
   ascii_hygiene: "PASS"
 review_loop_disposition: local_compact_pass
 source_commit: a4dfeb4f4
+follow_up_hygiene_commit: 624e6e810
 pr_status: "open; hosted audit pending/in progress at creation"
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4991
 next_exact_action: "Monitor hosted audit for #4991 and its stacked predecessors."

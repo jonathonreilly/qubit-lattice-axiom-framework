@@ -37380,6 +37380,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py"
     },
+    "tier_a_residual_governance_readiness_packet_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/tier_a_residual_governance_readiness_packet_2026_07_04.py"
+    },
     "topological_instanton_textbook_infrastructure_import_note_2026-05-17": {
       "assert_count": 8,
       "counts": {
@@ -90734,6 +90746,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/tier_a_residual_governance_readiness_packet_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "tier_a_residual_governance_readiness_packet_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/topological_instanton_bounded_certificate.py": {
       "assert_count": 8,
       "claims": [
@@ -91845,12 +91872,12 @@
     "dominant_class_distribution": {
       "A": 509,
       "B": 645,
-      "C": 1284,
+      "C": 1285,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3345,
-    "runners_with_C": 1762,
+    "runners_classified": 3346,
+    "runners_with_C": 1763,
     "runners_with_D": 1071
   }
 }

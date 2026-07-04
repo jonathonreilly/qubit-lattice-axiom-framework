@@ -1,0 +1,158 @@
+Tier-A residual governance readiness packet verifier
+========================================================================================
+
+----------------------------------------------------------------------------------------
+A - source presence and meta boundary
+----------------------------------------------------------------------------------------
+PASS: exists: docs/TIER_A_RESIDUAL_GOVERNANCE_READINESS_PACKET_2026-07-04.md
+PASS: exists: docs/audit/data/tier_a_admissions.json
+PASS: exists: docs/audit/data/axiom_premise_nodes.json
+PASS: exists: docs/audit/data/audit_ledger.json
+PASS: exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+PASS: exists: docs/ACPHILAMBDA_FULL_MATTER_ACTION_STATISTICS_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/ACPHILAMBDA_FIRST_ORDER_DETERMINANT_RETIREMENT_READINESS_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/ACPHILAMBDA_DYNAMICAL_INDEX_OCCUPANCY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md
+PASS: exists: docs/ACPHILAMBDA_R_ETA_CURRENT_SURFACE_READOUT_IDENTIFICATION_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/THETA_G1_4D_CARRIER_SUPPLY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/THETA_G1_DEFECT_CLOSURE_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/THETA_G2_PHYSICAL_SECTOR_REGISTRATION_STRETCH_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/THETA_G4_THETA_BAR_ASSEMBLY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/THETA_MASS_W2_PHYSICAL_REGISTRABILITY_STRETCH_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/THETA_MASS_DETERMINANT_BRIDGE_RETIREMENT_READINESS_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/THETA_MASS_ACTION_DETERMINANT_ENTRY_EXACT_SUPPORT_SPLIT_NOTE_2026-07-04.md
+PASS: note declares Type meta
+PASS: note declares Claim type meta
+PASS: runner path is wired in note
+PASS: note preserves meta boundary: does not retire AC_phi_lambda or theta
+PASS: note preserves meta boundary: does not edit any Tier-A registry
+PASS: note preserves meta boundary: does not adopt any governance premise
+PASS: note preserves meta boundary: retirement requires retained theorem work or explicit governance
+PASS: forbidden overclaim absent: AC_phi_lambda is retired
+PASS: forbidden overclaim absent: theta is retired
+PASS: forbidden overclaim absent: registry is edited
+PASS: forbidden overclaim absent: premise is adopted
+PASS: forbidden overclaim absent: effective_status: retained
+PASS: forbidden overclaim absent: audit_status: audited_clean
+
+----------------------------------------------------------------------------------------
+B - approved axiom and primitive allowlist
+----------------------------------------------------------------------------------------
+PASS: approved premise canonical IDs are exactly the expected four
+PASS: approved premise node count is four
+PASS: approved canonical IDs do not contain orbit_occupancy
+PASS: approved canonical IDs do not contain r_eta
+PASS: approved canonical IDs do not contain h_class
+PASS: approved canonical IDs do not contain h_unit
+PASS: approved canonical IDs do not contain theta_gauge
+PASS: approved canonical IDs do not contain theta_mass
+PASS: approved canonical IDs do not contain sector_readout
+PASS: approved canonical IDs do not contain phase_source
+PASS: approved canonical IDs do not contain determinant_channel
+PASS: minimal axiom note keeps boundary: Records form
+PASS: minimal axiom note keeps boundary: formation rule
+PASS: minimal axiom note keeps boundary: readout-context selection
+PASS: minimal axiom note keeps boundary: physical observable bridge
+PASS: minimal axiom note keeps boundary: source/action
+
+----------------------------------------------------------------------------------------
+C - Tier-A registry state
+----------------------------------------------------------------------------------------
+PASS: Tier-A genuine admitted input count remains two
+PASS: Tier-A canonical IDs remain AC and theta
+PASS: AC label is AC_phi_lambda
+PASS: theta label is theta
+PASS: AC minimum decomposition remains the two live atoms
+PASS: theta minimum decomposition remains the two live atoms
+PASS: human registry contains residual wording: per-lane
+PASS: human registry contains residual wording: registered realized-state data
+PASS: human registry contains residual wording: measure-side/dynamical realization binary
+PASS: human registry contains residual wording: density-read-as-angle
+PASS: human registry contains residual wording: gauge side
+PASS: human registry contains residual wording: mass side
+
+----------------------------------------------------------------------------------------
+D - residual source rows are support/no-go, not retirement
+----------------------------------------------------------------------------------------
+PASS: ledger row resolves for ac_full_matter
+PASS: ac_full_matter remains unaudited effective status
+PASS: ac_full_matter is claim_type no_go
+PASS: ledger row resolves for ac_first_order
+PASS: ac_first_order remains unaudited effective status
+PASS: ac_first_order is claim_type no_go
+PASS: ledger row resolves for ac_dynamical_index
+PASS: ac_dynamical_index remains unaudited effective status
+PASS: ac_dynamical_index is claim_type no_go
+PASS: ledger row resolves for ac_det_power
+PASS: ac_det_power remains unaudited effective status
+PASS: ac_det_power is bounded support/theorem type
+PASS: ledger row resolves for r_eta_current
+PASS: r_eta_current remains unaudited effective status
+PASS: r_eta_current is claim_type no_go
+PASS: ledger row resolves for r_eta_direct
+PASS: r_eta_direct remains unaudited effective status
+PASS: r_eta_direct is claim_type no_go
+PASS: ledger row resolves for r_eta_hclass
+PASS: r_eta_hclass remains unaudited effective status
+PASS: r_eta_hclass is claim_type no_go
+PASS: ledger row resolves for r_eta_hunit
+PASS: r_eta_hunit remains unaudited effective status
+PASS: r_eta_hunit is claim_type no_go
+PASS: ledger row resolves for theta_g1_carrier
+PASS: theta_g1_carrier remains unaudited effective status
+PASS: theta_g1_carrier is claim_type no_go
+PASS: ledger row resolves for theta_g1_defect
+PASS: theta_g1_defect remains unaudited effective status
+PASS: theta_g1_defect is claim_type no_go
+PASS: ledger row resolves for theta_g2
+PASS: theta_g2 remains unaudited effective status
+PASS: theta_g2 is claim_type no_go
+PASS: ledger row resolves for theta_g3
+PASS: theta_g3 remains unaudited effective status
+PASS: theta_g3 is claim_type no_go
+PASS: ledger row resolves for theta_g4
+PASS: theta_g4 remains unaudited effective status
+PASS: theta_g4 is claim_type no_go
+PASS: ledger row resolves for theta_mass_w2
+PASS: theta_mass_w2 remains unaudited effective status
+PASS: theta_mass_w2 is claim_type no_go
+PASS: ledger row resolves for theta_mass_readiness
+PASS: theta_mass_readiness remains unaudited effective status
+PASS: theta_mass_readiness is claim_type no_go
+PASS: ledger row resolves for theta_action_entry
+PASS: theta_action_entry remains unaudited effective status
+PASS: theta_action_entry is bounded support/theorem type
+PASS: source packet exposes non-retirement phrase: does not select
+PASS: source packet exposes non-retirement phrase: not retired
+PASS: source packet exposes non-retirement phrase: not a derivation
+PASS: source packet exposes non-retirement phrase: future theorem
+PASS: source packet exposes non-retirement phrase: owner governance
+PASS: source packet exposes non-retirement phrase: physical readout
+PASS: source packet exposes non-retirement phrase: physical sector/readout
+PASS: source packet exposes non-retirement phrase: W2 physical registrability
+PASS: source packet exposes non-retirement phrase: matter-action/statistics
+
+----------------------------------------------------------------------------------------
+E - note readiness table and attack plan
+----------------------------------------------------------------------------------------
+PASS: readiness table names residual: AC(i) matter-action occupancy grain
+PASS: readiness table names residual: AC(ii) R-eta readout license
+PASS: readiness table names residual: theta gauge-side winding account
+PASS: readiness table names residual: theta mass-side determinant bridge
+PASS: governance candidate named: orbit-occupancy
+PASS: governance candidate named: h-class/h-unit
+PASS: governance candidate named: gauge-sector/readout
+PASS: governance candidate named: determinant-channel/W2
+PASS: attack plan contains: Theorem-first attempts
+PASS: attack plan contains: Audit support before registry edits
+PASS: attack plan contains: Prepare exact governance candidates
+PASS: attack plan contains: Keep unavoidable primitives separate
+
+========================================================================================
+RESULT: PASS=132 FAIL=0 CHECKS=132
+========================================================================================

@@ -119881,6 +119881,18 @@
       "runner_path": "scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py",
       "title": "Tier-A K/CPT Orientation Invariance For The AC_phi_lambda Gate: Bounded Candidate Route"
     },
+    "tier_a_residual_governance_readiness_packet_2026-07-04": {
+      "claim_id": "tier_a_residual_governance_readiness_packet_2026-07-04",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "ea8f7962aa45bd5c58f7decb124c06c3b4ad452e7ad6a3082428cebfb357ad6f",
+      "path": "docs/TIER_A_RESIDUAL_GOVERNANCE_READINESS_PACKET_2026-07-04.md",
+      "runner_path": "scripts/tier_a_residual_governance_readiness_packet_2026_07_04.py",
+      "title": "Tier-A Residual Governance Readiness Packet"
+    },
     "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20": {
       "claim_id": "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20",
       "claim_type_author_hint": "positive_theorem",
@@ -127460,6 +127472,7 @@
     "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
     "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26",
     "three_generation_rooting_undefined_narrow_theorem_note_2026-05-27",
+    "tier_a_residual_governance_readiness_packet_2026-07-04",
     "topological_instanton_textbook_infrastructure_import_note_2026-05-17",
     "triple_stack_collapse_scaling_note",
     "two_field_retarded_family_closure_note_2026-04-10",
@@ -127570,7 +127583,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 1560,
       "decoration": 3,
-      "meta": 319,
+      "meta": 320,
       "no_go": 350,
       "none": 1216,
       "open_gate": 134,
@@ -127579,16 +127592,16 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1965,
       "decoration": 3,
-      "meta": 319,
+      "meta": 320,
       "no_go": 454,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
     "edge_count": 14612,
-    "leaf_count": 1268,
-    "node_count": 3856,
-    "root_count": 1102,
-    "runners_with_path": 3479
+    "leaf_count": 1269,
+    "node_count": 3857,
+    "root_count": 1103,
+    "runners_with_path": 3480
   }
 }

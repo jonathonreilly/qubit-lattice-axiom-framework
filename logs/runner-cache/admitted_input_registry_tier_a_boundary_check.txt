@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/admitted_input_registry_tier_a_boundary_check.py
+runner_sha256: c60ce525db9591b74b876c3ef05c92e6b677543543e0877cc3fde8892073b44d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 ==============================================================================
 TIER-A ADMITTED-INPUT REGISTRY BOUNDARY CHECK
 ==============================================================================
@@ -67,3 +75,6 @@ Scope: source/registry alignment only; no audit verdict changes.
 [PASS] forbidden stale live-status phrase absent: owner-governed residual premises are approved primitives
 
 SUMMARY: TIER-A REGISTRY BOUNDARY PASS=62 FAIL=0
+
+----- stderr -----
+

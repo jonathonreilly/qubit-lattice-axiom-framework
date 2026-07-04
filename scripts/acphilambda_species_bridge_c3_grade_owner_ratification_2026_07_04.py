@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Boundary runner for AC_phi_lambda(iii) C3-grade owner ratification.
 
-This runner checks that the new registry governance note, the human Tier-A
-registry, and the machine Tier-A registry agree about one narrow move:
-AC_phi_lambda(iii)'s C3-grade species bridge is retired from Tier-A by owner
-ratification, while AC_phi_lambda remains a Tier-A row through its other two
-residual atoms.
+This runner checks that the registry-governance note, the human Tier-A
+registry, and the machine registries agree about one narrow historical move:
+AC_phi_lambda(iii)'s C3-grade species bridge was retired from Tier-A by owner
+ratification while AC_phi_lambda remained a Tier-A row through its other two
+residual atoms. It also checks the current Block50 state: those surviving
+residuals were later retired from live Tier-A by owner-governed adoption.
 """
 
 from __future__ import annotations
@@ -18,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md"
 HUMAN_REGISTRY = ROOT / "docs" / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
 TIER_A = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
+OWNER_GOVERNED = ROOT / "docs" / "audit" / "data" / "owner_governed_premise_nodes.json"
 POLICY = ROOT / "docs" / "audit" / "AXIOM_MINIMALITY_POLICY.md"
 PARENT = ROOT / "docs" / "SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md"
 RATIFICATION = ROOT / "docs" / "SPECIES_BRIDGE_RESIDUAL_IS_RATIFICATION_CLASS_GRADE_SCOPED_BOUNDED_NOTE_2026-07-02.md"
@@ -72,19 +74,23 @@ def main() -> int:
     ratification = read(RATIFICATION)
     c3_context = read(C3_CONTEXT)
     tier = load_json(TIER_A)
+    owner = load_json(OWNER_GOVERNED)
     targets = tier.get("derivation_targets") or {}
-    ac = targets.get(AC_ID) or {}
-    theta = targets.get(THETA_ID) or {}
+    retired = tier.get("retired_derivation_targets") or {}
+    ac = retired.get(AC_ID) or {}
+    theta = retired.get(THETA_ID) or {}
+    owner_ids = set(owner.get("canonical_ids") or [])
     partial = ac.get("partial_reclassifications") or {}
     species = partial.get("species_bridge_c3_grade") or {}
 
-    for path in (NOTE, HUMAN_REGISTRY, TIER_A, POLICY, PARENT, RATIFICATION, C3_CONTEXT):
+    for path in (NOTE, HUMAN_REGISTRY, TIER_A, OWNER_GOVERNED, POLICY, PARENT, RATIFICATION, C3_CONTEXT):
         check(f"{path.relative_to(ROOT).as_posix()} exists", path.exists())
 
     check("new note is meta", "**Claim type:** meta" in note)
     check("new note records owner path-extension yes", "is answered yes for the narrow case below" in note)
     check("new note scopes to C3 grade only", "C3-structural grade only" in note)
-    check("new note says AC row does not retire", "AC_phi_lambda itself does **not** retire" in note)
+    check("new note records historical partial non-retirement", "At this partial-reclassification step, AC_phi_lambda itself did **not** retire" in note)
+    check("new note records final Block50 retirement", "current live Tier-A admitted-target count is zero" in note)
     check("new note lists the two surviving AC atoms", "measure-side doublet occupancy realization binary" in note and "delta readout identification R-eta" in note)
     check("new note conserves above-grade residue", "taste/Dirac/chirality" in note and "CKM/PMNS" in note)
     check("new note excludes audit-status change", "sets no audit verdict" in note)
@@ -100,12 +106,16 @@ def main() -> int:
     check("C3 context source is internal labeling precedent", has(c3_context, "naming ratification on already-landed surfaces"))
 
     check("policy records 2026-07-04 owner species-bridge decision", "2026-07-04 -- AC_phi_lambda(iii) species bridge C3-grade ratification" in policy)
-    check("policy records no row retirement", "AC_phi_lambda remains a Tier-A row" in policy)
+    check("policy records historical partial scope", "At this partial-reclassification step, AC_phi_lambda remained a" in policy)
+    check("policy records later final retirement", has(policy, "retires the live Tier-A registry"))
 
-    check("genuine admitted target count remains two", tier.get("genuine_admitted_input_count") == 2, str(tier.get("genuine_admitted_input_count")))
-    check("canonical ids unchanged", tier.get("canonical_ids") == [AC_ID, THETA_ID], str(tier.get("canonical_ids")))
-    check("AC row still exists", bool(ac))
-    check("theta row still exists", bool(theta))
+    check("current genuine admitted target count is zero", tier.get("genuine_admitted_input_count") == 0, str(tier.get("genuine_admitted_input_count")))
+    check("current canonical ids empty", tier.get("canonical_ids") == [], str(tier.get("canonical_ids")))
+    check("current derivation target map empty", targets == {}, str(targets))
+    check("AC retired row exists", bool(ac))
+    check("theta retired row exists", bool(theta))
+    check("AC owner-governed id exists", AC_ID in owner_ids, str(sorted(owner_ids)))
+    check("theta owner-governed id exists", THETA_ID in owner_ids, str(sorted(owner_ids)))
     check(
         "AC minimum decomposition is now exactly two residual atoms",
         ac.get("minimum_decomposition") == ["reading_occupancy_selection", "delta_readout_identification_R_eta"],
@@ -120,14 +130,15 @@ def main() -> int:
     check("species bridge boundary preserves non-covered residues", "taste/dirac/chirality" in boundary_lower and "ckm/pmns" in boundary_lower)
 
     check("human registry table no longer states three AC residual atoms", "three named residual atoms" not in human)
-    check("human registry has two-residual AC heading", "minimum decomposition (two surviving Tier-A residual atoms" in human)
+    check("human registry has historical two-residual AC heading", "historical minimum decomposition (two residual atoms before final 2026-07-04 owner adoption)" in human)
     check("human registry records species bridge owner ratification", "species bridge C3-grade owner ratification" in human)
-    check("human registry says dependent rows stay bounded", has(human, "downstream rows depending on AC_phi_lambda remain bounded"))
-    check("human registry keeps theta untouched", "theta row is untouched" in human)
+    check("human registry records zero live Tier-A now", "Current live Tier-A admitted derivation targets: zero" in human)
+    check("human registry records owner-governed residual premises", "owner-governed residual premises" in human)
+    check("human registry records theta untouched only by partial species action", "theta row was untouched by that partial reclassification" in human)
 
     forbidden = (
-        "AC_phi_lambda retires",
-        "theta retires",
+        "C3-grade ratification retires AC_phi_lambda",
+        "C3-grade ratification retires theta",
         "species bridge is an axiom",
         "species bridge is an approved primitive",
         "C3-grade ratification derives the species bridge",

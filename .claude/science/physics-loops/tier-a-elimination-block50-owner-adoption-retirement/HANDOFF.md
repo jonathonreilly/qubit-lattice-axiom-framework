@@ -31,6 +31,7 @@ preserved under `retired_derivation_targets`.
 - `python3 -m py_compile ...` -> PASS
 - `PYTHONPATH=scripts python3 scripts/admitted_input_registry_tier_a_boundary_check.py` -> PASS (`PASS=62 FAIL=0`)
 - `PYTHONPATH=scripts python3 scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py` -> PASS (`PASS=69 FAIL=0 CHECKS=69`)
+- `PYTHONPATH=scripts python3 scripts/acphilambda_species_bridge_c3_grade_owner_ratification_2026_07_04.py` -> PASS (`PASS=51 FAIL=0`)
 - `python3 scripts/audit_companion_doc_authority_registry.py` -> PASS (`PASS=25 FAIL=0`)
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline` -> PASS (`Ran 90 tests`)
 - `bash docs/audit/scripts/run_pipeline.sh` -> PASS; row
@@ -38,8 +39,19 @@ preserved under `retired_derivation_targets`.
   `effective_status=meta`, `criticality=leaf`
 - `python3 docs/audit/scripts/audit_lint.py --strict` -> PASS with existing
   23 warnings / 178 notices and no errors
+- Modified runner caches for the Tier-A boundary, Block50 adoption, and AC
+  species-bridge partial-ratification runners are SHA-pinned and fresh.
 - `git diff --check` -> PASS
 - ASCII/new-artifact hygiene -> PASS
+
+## Follow-Up Hygiene
+
+After opening #4991, the earlier AC species-bridge partial-ratification runner
+still encoded the historical interim state as current (`AC_phi_lambda` live
+Tier-A, count two). That runner and its note now distinguish the historical
+partial step from the final Block50 live state: zero live Tier-A admissions,
+with AC_phi_lambda/theta preserved as retired history and owner-governed
+residual premises.
 
 ## Next Exact Action
 

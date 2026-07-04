@@ -557,12 +557,14 @@ promoted to axiom or primitive class):
     C3 grade, CKM/PMNS alignment, any value of `r` or `delta`, or any empirical
     comparator. Those contents require separate derivation, explicit admission,
     or approved primitive registration before use.
-  - **Scope.** AC_phi_lambda remains a Tier-A row through its two surviving
-    residual atoms: the measure-side occupancy realization binary and the
-    R-eta readout identification. The genuine admitted-target count remains
-    two (`AC_phi_lambda`, `theta`); the theta row is untouched. Downstream rows
-    depending on AC_phi_lambda remain bounded until the surviving AC atoms are
-    retired.
+  - **Scope.** At this partial-reclassification step, AC_phi_lambda remained a
+    Tier-A row through its two surviving residual atoms: the measure-side
+    occupancy realization binary and the R-eta readout identification. The
+    genuine admitted-target count remained two (`AC_phi_lambda`, `theta`), and
+    the theta row was untouched by this species-bridge action. The later
+    2026-07-04 owner-governed residual adoption, recorded immediately below,
+    consumes the surviving AC and theta residual atoms and retires the live
+    Tier-A registry.
 
 - **2026-07-04 -- Tier-A residual owner adoption and registry retirement.**
   Owner approval recorded 2026-07-04 for the exact four-candidate decision

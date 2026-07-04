@@ -16,7 +16,6 @@ open_imports:
   - "AC_phi_lambda: R-eta and carrier/chirality residuals remain open."
   - "theta: determinant-readout exhaustion and gauge-side winding/action carrier remain open."
   - "comparability: one configuration of records is not currently supplied."
-files_touched: []
 files_touched:
   - "docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md"
   - "scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py"
@@ -34,6 +33,8 @@ checks:
   - "python3 docs/audit/scripts/audit_lint.py --strict: pass; no errors, existing warnings/notices only"
   - "git diff --check: pass"
 review_status: "pass; local review-loop emulation used because subagent spawning is not authorized without explicit delegation request"
-pr_status: pending
-next_exact_action: "Commit regenerated audit files with source changes, push branch, open PR."
-stop_condition: "Block 1 committed and review PR opened or PR_BACKLOG written."
+pr_status: "opened https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4926"
+commits:
+  - "5af3f45a9 docs: repair record formation hygiene after axiom append"
+next_exact_action: "After review, run the comparability/clock-support packet before AC partial-decomposition and theta packets."
+stop_condition: "Block 1 committed, pushed, and review PR opened."

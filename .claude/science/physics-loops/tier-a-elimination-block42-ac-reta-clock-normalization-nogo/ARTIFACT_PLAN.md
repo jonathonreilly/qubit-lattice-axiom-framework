@@ -18,4 +18,4 @@ Pipeline status: passed. Generated row:
 is `claim_type=no_go`, `audit_status=unaudited`,
 `effective_status=unaudited`, `criticality=leaf`, with 8 dependencies.
 
-PR metadata is pending.
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4983

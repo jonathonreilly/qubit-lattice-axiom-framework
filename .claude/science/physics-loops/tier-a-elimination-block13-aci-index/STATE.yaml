@@ -2,13 +2,13 @@ block: tier-a-elimination-block13-aci-index
 date: 2026-07-04
 branch: physics-loop/tier-a-elimination-block13-aci-index-20260704
 base_branch: physics-loop/tier-a-elimination-block12-theta-g1-20260704
-pr_url: pending
-source_commit: pending
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4939
+source_commit: 2f0042dee
 target: AC_phi_lambda sub-admission (i) dynamical/index occupancy route
 claim_type: no_go
 registry_edits: false
 retirement_claimed: false
-status: ready_for_commit
+status: pr_open
 active_route: current-surface first-order/index stretch attempt
 hard_residual: "derive which grain/statistics the matter action implements: sector-tied/count-twice versus orbit/holomorphic/count-once"
 files_touched:
@@ -33,5 +33,5 @@ verification:
   audit_lint_strict: "pass; existing warnings/notices only"
   diff_check: pass
 audit_row: acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04
-next_exact_action: "Commit source block, push stacked PR, update PR metadata, then monitor audit."
+next_exact_action: "Monitor PR #4939 and audit_pipeline; next science action is determinant-order or mode-set theorem search."
 stop_condition: "Block complete after green checks, review disposition pass/demote, PR opened, and lock released."

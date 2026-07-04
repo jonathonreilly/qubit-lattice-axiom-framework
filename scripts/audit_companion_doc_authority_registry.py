@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 POLICY = ROOT / "docs" / "audit" / "DOCUMENT_AUTHORITY_AND_CITATION_POLICY.md"
 REGISTRY = ROOT / "docs" / "audit" / "data" / "doc_authority_registry.json"
 PREMISE_NODES = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
+OWNER_GOVERNED = ROOT / "docs" / "audit" / "data" / "owner_governed_premise_nodes.json"
 TIER_A = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
 MINIMALITY = ROOT / "docs" / "audit" / "AXIOM_MINIMALITY_POLICY.md"
 METHOD_README = ROOT / "docs" / "ai_methodology" / "README.md"
@@ -130,12 +131,17 @@ def main():
         )
 
         premise_text = PREMISE_NODES.read_text(encoding="utf-8") if PREMISE_NODES.exists() else ""
+        owner_text = OWNER_GOVERNED.read_text(encoding="utf-8") if OWNER_GOVERNED.exists() else ""
         tier_text = TIER_A.read_text(encoding="utf-8") if TIER_A.exists() else ""
         offenders = [
             r.get("path")
             for r in rows
             if r.get("class") in {"F", "G"}
-            and (r.get("path", "") in premise_text or r.get("path", "") in tier_text)
+            and (
+                r.get("path", "") in premise_text
+                or r.get("path", "") in owner_text
+                or r.get("path", "") in tier_text
+            )
         ]
         check(
             "no Class F/G path appears in premise-bearing registries",

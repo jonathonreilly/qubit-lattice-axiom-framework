@@ -96,11 +96,14 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
     if hasattr(module, "GRAPH_PATH"):
         module.GRAPH_PATH = module.DATA_DIR / "citation_graph.json"
     # audit_lint reads these at main() time; without redirecting them the lint
-    # validates a synthetic temp ledger against the REAL repo's
-    # tier_a_admissions.json / audit_dispatch_queue.json and emits spurious
-    # errors (rows the test never created).
+    # validates a synthetic temp ledger against the REAL repo's premise and
+    # queue registries and emits spurious errors (rows the test never created).
     if hasattr(module, "TIER_A_ADMISSIONS_PATH"):
         module.TIER_A_ADMISSIONS_PATH = module.DATA_DIR / "tier_a_admissions.json"
+    if hasattr(module, "OWNER_GOVERNED_PREMISE_NODES_PATH"):
+        module.OWNER_GOVERNED_PREMISE_NODES_PATH = (
+            module.DATA_DIR / "owner_governed_premise_nodes.json"
+        )
     if hasattr(module, "AUDIT_DISPATCH_QUEUE_PATH"):
         module.AUDIT_DISPATCH_QUEUE_PATH = module.DATA_DIR / "audit_dispatch_queue.json"
     if hasattr(module, "SUMMARY_PATH"):
@@ -667,11 +670,12 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
         self.assertEqual(new_rows["glossary"]["effective_status"], "meta")
         self.assertEqual(new_rows["child"]["effective_status"], "retained_bounded")
 
-    def test_axiom_and_primitive_premises_do_not_bound_positive_theorem(self):
+    def test_owner_governed_and_axiom_premises_do_not_bound_positive_theorem(self):
         """Axioms and explicitly approved framework primitives satisfy chain
-        closure without forcing retained_bounded. Tier-A derivation targets are
-        the only accepted premises that bound an otherwise clean positive
-        theorem."""
+        closure without forcing retained_bounded. Owner-governed residual
+        premises do the same without being axioms or primitives. Tier-A
+        derivation targets are the only accepted premises that bound an
+        otherwise clean positive theorem."""
         m = _import("compute_effective_status")
         rows = {
             "uses_minimal_axioms": {
@@ -683,6 +687,12 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
             "uses_scale_reference_primitive": {
                 "claim_id": "uses_scale_reference_primitive",
                 "deps": ["scale_reference_primitive"],
+                "audit_status": "audited_clean",
+                "claim_type": "positive_theorem",
+            },
+            "uses_owner_governed_residual": {
+                "claim_id": "uses_owner_governed_residual",
+                "deps": ["strong_cp_theta_zero_note"],
                 "audit_status": "audited_clean",
                 "claim_type": "positive_theorem",
             },
@@ -700,6 +710,10 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
             in {"minimal_axioms", "scale_reference_primitive"},
         ), mock.patch.object(
             m.premise_nodes,
+            "is_owner_governed_premise",
+            side_effect=lambda dep_id: dep_id == "strong_cp_theta_zero_note",
+        ), mock.patch.object(
+            m.premise_nodes,
             "is_admitted_derivation_target",
             side_effect=lambda dep_id: dep_id
             == "observable_principle_from_axiom_note",
@@ -710,6 +724,10 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
         )
         self.assertEqual(
             new_rows["uses_scale_reference_primitive"]["effective_status"],
+            "retained",
+        )
+        self.assertEqual(
+            new_rows["uses_owner_governed_residual"]["effective_status"],
             "retained",
         )
         self.assertEqual(
@@ -1640,10 +1658,10 @@ class ComputeAuditQueueTest(unittest.TestCase):
     def test_is_ready_accepts_premise_deps(self):
         """Queue readiness mirrors compute_effective_status's accepted-premise
         policy: a row whose only non-retained deps are an axiom/primitive
-        premise node or a Tier-A admitted derivation target is auditable now
-        (a clean verdict resolves it to retained / retained_bounded), so the
-        queue must mark it ready instead of holding it behind the admission's
-        own unaudited row."""
+        premise node, an owner-governed residual premise, or a Tier-A admitted
+        derivation target is auditable now (a clean verdict resolves it to
+        retained / retained_bounded), so the queue must mark it ready instead
+        of holding it behind the premise row's own unaudited row."""
         m = _import("compute_audit_queue")
         rows = {
             "tier_a_gate": {
@@ -1666,6 +1684,11 @@ class ComputeAuditQueueTest(unittest.TestCase):
                 "deps": ["minimal_axioms", "tier_a_gate", "retained_dep"],
                 "effective_status": "unaudited",
             },
+            "owner_governed_discharge_note": {
+                "claim_id": "owner_governed_discharge_note",
+                "deps": ["owner_governed_gate", "retained_dep"],
+                "effective_status": "unaudited",
+            },
             "blocked_note": {
                 "claim_id": "blocked_note",
                 "deps": ["tier_a_gate", "unaudited_dep"],
@@ -1675,9 +1698,11 @@ class ComputeAuditQueueTest(unittest.TestCase):
         with mock.patch.object(
             m.premise_nodes,
             "is_accepted_premise_dep",
-            side_effect=lambda dep_id: dep_id in {"minimal_axioms", "tier_a_gate"},
+            side_effect=lambda dep_id: dep_id
+            in {"minimal_axioms", "tier_a_gate", "owner_governed_gate"},
         ):
             self.assertTrue(m.is_ready(rows["discharge_note"], rows))
+            self.assertTrue(m.is_ready(rows["owner_governed_discharge_note"], rows))
             self.assertFalse(m.is_ready(rows["blocked_note"], rows))
 
 

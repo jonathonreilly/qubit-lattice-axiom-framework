@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/admitted_input_registry_tier_a_boundary_check.py
-runner_sha256: 877ccde6ef68b2137ba09a8f7a4f88664eb3ea9c7a26a61b51b0ca949d93aea2
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.05
-status: ok
------ stdout -----
 ==============================================================================
 TIER-A ADMITTED-INPUT REGISTRY BOUNDARY CHECK
 ==============================================================================
@@ -14,81 +6,64 @@ Scope: source/registry alignment only; no audit verdict changes.
 [PASS] source note exists -- docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
 [PASS] machine Tier-A registry exists -- docs/audit/data/tier_a_admissions.json
 [PASS] axiom premise registry exists -- docs/audit/data/axiom_premise_nodes.json
+[PASS] owner-governed premise registry exists -- docs/audit/data/owner_governed_premise_nodes.json
 [PASS] source claim type is meta
 [PASS] source status authority is audit lane only
 [PASS] source says it sets no audit status
 [PASS] source registers this primary runner
 [PASS] source registers this cached output
 [PASS] machine schema version is 1 -- 1
-[PASS] genuine admitted input count is exactly two -- 2
-[PASS] canonical ids are exactly the two Tier-A derivation targets -- ['staggered_dirac_realization_gate_note_2026-05-03', 'strong_cp_theta_zero_note']
-[PASS] derivation target keys match canonical ids -- ['staggered_dirac_realization_gate_note_2026-05-03', 'strong_cp_theta_zero_note']
-[PASS] AC_phi_lambda target row exists -- staggered_dirac_realization_gate_note_2026-05-03
-[PASS] AC_phi_lambda label matches -- AC_phi_lambda
-[PASS] AC_phi_lambda has no-go portfolio -- ['koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24', 'koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24', 'koide_delta_marked_relative_cobordism_no_go_note_2026-04-24']
-[PASS] AC_phi_lambda has minimum decomposition -- ['reading_occupancy_selection', 'delta_readout_identification_R_eta']
-[PASS] AC_phi_lambda has sharpening source list
-[PASS] theta target row exists -- strong_cp_theta_zero_note
-[PASS] theta label matches -- theta
-[PASS] theta has no-go portfolio -- ['strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16']
-[PASS] theta has minimum decomposition -- ['gauge_side_winding_account', 'mass_side_orientation_determinant_readout_bridge']
-[PASS] theta has sharpening source list
-[PASS] AC_phi_lambda has two surviving minimum atoms
-[PASS] AC_phi_lambda(i) value face is reclassified to realized-state registration in machine row -- {'status': 'reclassified_to_realized_state_registration', 'source': 'docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md', 'boundary': 'Only the per-lane value face moves out of Tier-A. The measure-side/dynamical realization binary remains part of AC_phi_lambda.'}
-[PASS] AC_phi_lambda(i) surviving residual is measure-side/dynamical realization
-[PASS] AC_phi_lambda(i) machine reclassification source is registered -- {'status': 'reclassified_to_realized_state_registration', 'source': 'docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md', 'boundary': 'Only the per-lane value face moves out of Tier-A. The measure-side/dynamical realization binary remains part of AC_phi_lambda.'}
-[PASS] AC_phi_lambda(i) machine reclassification keeps measure-side boundary
-[PASS] AC_phi_lambda(iii) species bridge is owner-ratified out of Tier-A in machine row
-[PASS] AC_phi_lambda(iii) species bridge machine reclassification exists -- {'status': 'owner_ratified_c3_grade_interpretive_identification', 'source': 'docs/ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md', 'basis': ['docs/SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md', 'docs/SPECIES_BRIDGE_RESIDUAL_IS_RATIFICATION_CLASS_GRADE_SCOPED_BOUNDED_NOTE_2026-07-02.md', 'docs/C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md'], 'boundary': 'Only the C3-structural-grade abstract-sector to physical-species identification moves out of Tier-A. Taste/Dirac/chirality content, hw1-vs-hw2 carrier content beyond the C3 grade, CKM/PMNS alignment, AC(i), AC(ii), and theta remain outside this reclassification.'}
-[PASS] AC_phi_lambda(iii) species bridge machine reclassification source is registered -- {'status': 'owner_ratified_c3_grade_interpretive_identification', 'source': 'docs/ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md', 'basis': ['docs/SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md', 'docs/SPECIES_BRIDGE_RESIDUAL_IS_RATIFICATION_CLASS_GRADE_SCOPED_BOUNDED_NOTE_2026-07-02.md', 'docs/C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md'], 'boundary': 'Only the C3-structural-grade abstract-sector to physical-species identification moves out of Tier-A. Taste/Dirac/chirality content, hw1-vs-hw2 carrier content beyond the C3 grade, CKM/PMNS alignment, AC(i), AC(ii), and theta remain outside this reclassification.'}
-[PASS] AC_phi_lambda(iii) species bridge machine reclassification keeps above-grade boundary
-[PASS] theta has two named minimum atoms
+[PASS] genuine admitted input count is zero
+[PASS] canonical ids are empty
+[PASS] derivation target map is empty
+[PASS] retired target keys preserve AC and theta -- ['staggered_dirac_realization_gate_note_2026-05-03', 'strong_cp_theta_zero_note']
+[PASS] owner-governed ids are the former target ids -- ['staggered_dirac_realization_gate_note_2026-05-03', 'strong_cp_theta_zero_note']
+[PASS] owner-governed nodes match canonical ids -- ['staggered_dirac_realization_gate_note_2026-05-03', 'strong_cp_theta_zero_note']
+[PASS] AC_phi_lambda retired target row exists -- staggered_dirac_realization_gate_note_2026-05-03
+[PASS] AC_phi_lambda retired label matches -- AC_phi_lambda
+[PASS] AC_phi_lambda retained no-go portfolio preserved -- ['koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24', 'koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24', 'koide_delta_marked_relative_cobordism_no_go_note_2026-04-24']
+[PASS] AC_phi_lambda no longer live derivation target
+[PASS] AC_phi_lambda owner-governed node exists -- staggered_dirac_realization_gate_note_2026-05-03
+[PASS] AC_phi_lambda owner-governed boundary exists -- {'label': 'AC_phi_lambda', 'current_path': 'docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md', 'prior_tier_a_source_path': 'docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md', 'adopted_residual_candidates': ['ac_orbit_occupancy_statistical_grain_premise', 'ac_reta_hclass_hunit_readout_premise'], 'boundary': 'Retires only the current minimum AC_phi_lambda Tier-A atoms: AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout license. It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.'}
+[PASS] AC_phi_lambda owner-governed source is adoption note -- docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md
+[PASS] theta retired target row exists -- strong_cp_theta_zero_note
+[PASS] theta retired label matches -- theta
+[PASS] theta retained no-go portfolio preserved -- ['strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16']
+[PASS] theta no longer live derivation target
+[PASS] theta owner-governed node exists -- strong_cp_theta_zero_note
+[PASS] theta owner-governed boundary exists -- {'label': 'theta', 'current_path': 'docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md', 'prior_tier_a_source_path': 'docs/STRONG_CP_THETA_ZERO_NOTE.md', 'adopted_residual_candidates': ['theta_gauge_sector_phase_source_premise', 'theta_mass_determinant_channel_w2_premise'], 'boundary': 'Retires only the current minimum theta Tier-A atoms: the gauge-side sector/readout plus phase-source premise and the mass-side W2 determinant-channel readout premise. It does not derive theta_bar = 0 by itself, a continuum theta theorem, quark masses, CKM structure, QCD continuum dynamics, a CP-odd coefficient theorem, an axion, or a fitted selector.'}
+[PASS] theta owner-governed source is adoption note -- docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md
+[PASS] approved axiom/primitive ids unchanged -- ['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']
+[PASS] owner-governed ids are not axiom/primitive ids
+[PASS] former Tier-A targets are not axiom-premise ids
 [PASS] convention rows are present -- ['g_bare_rigidity_theorem_note', 'hypercharge_identification_note']
 [PASS] Y0 convention label matches -- Y0
 [PASS] Y0 is vacuous convention -- vacuous normalization convention
-[PASS] Y0 not admitted derivation target
+[PASS] Y0 not live derivation target
+[PASS] Y0 not owner-governed premise
 [PASS] g0 convention label matches -- g0
 [PASS] g0 is vacuous convention -- vacuous rescaling convention (g <-> beta gauge choice)
-[PASS] g0 not admitted derivation target
+[PASS] g0 not live derivation target
+[PASS] g0 not owner-governed premise
 [PASS] reclassified primitives are present -- ['minimal_axioms_record', 'scale_reference_primitive']
 [PASS] Record axiom reclassification label matches -- Record axiom
-[PASS] Record axiom not admitted derivation target
+[PASS] Record axiom not live derivation target
 [PASS] scale-reference primitive reclassification label matches -- scale-reference primitive
-[PASS] scale-reference primitive not admitted derivation target
-[PASS] Record lives in axiom-premise registry -- ['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']
-[PASS] Scale reference lives in axiom-premise registry -- ['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']
-[PASS] Tier-A targets are not axiom-premise ids -- []
-[PASS] Tier-A conventions are not axiom-premise ids -- []
-[PASS] note states Record retired from Tier A
-[PASS] note keeps observable-principle parent outside Record
-[PASS] note says scale primitive is not counted
-[PASS] note says Y0 and g0 are not counted
-[PASS] note states two dimensionless Tier-A admissions
-[PASS] note says sharpening adds/removes/regrades nothing
-[PASS] note records 2026-07-04 value-face reclassification
-[PASS] note says per-lane r value is registered state data
-[PASS] note says surviving residual is measure-side realization
-[PASS] note records species bridge C3-grade owner ratification
-[PASS] note says species bridge is not a Tier-A derivation target
-[PASS] note says species bridge retirement is grade-scoped
-[PASS] note says theta row is untouched by species bridge ratification
-[PASS] note says dependent rows stay bounded
-[PASS] note says AC_phi_lambda dependent rows stay bounded after partial reclassifications
-[PASS] note says audit status remains audit-lane-only
-[PASS] note propagation says Tier-A accepted premise is bounded
-[PASS] note says no hand-maintained backlinks
-[PASS] forbidden positive status claim absent: sets audit status
-[PASS] forbidden positive status claim absent: promotes rows to retained
-[PASS] forbidden positive status claim absent: changes rows' effective_status
-[PASS] forbidden positive status claim absent: Tier-A derivation targets chain-satisfy without bounding
-[PASS] forbidden positive status claim absent: Record is a Tier-A admission
-[PASS] forbidden positive status claim absent: scale-reference primitive is a Tier-A admission
-[PASS] forbidden positive status claim absent: species bridge is an axiom
-[PASS] forbidden positive status claim absent: species bridge is an approved primitive
-[PASS] forbidden positive status claim absent: AC_phi_lambda retires
-[PASS] forbidden positive status claim absent: theta retires
+[PASS] scale-reference primitive not live derivation target
+[PASS] source records zero-retirement phrase: Current live Tier-A admitted derivation targets: zero
+[PASS] source records zero-retirement phrase: owner-governed residual premises
+[PASS] source records zero-retirement phrase: genuine_admitted_input_count = 0
+[PASS] source records zero-retirement phrase: canonical_ids = []
+[PASS] source records zero-retirement phrase: derivation_targets = {}
+[PASS] source records zero-retirement phrase: retired_derivation_targets
+[PASS] source records zero-retirement phrase: zero live Tier-A admissions
+[PASS] source records zero-retirement phrase: does not derive AC_phi_lambda or theta as theorems
+[PASS] forbidden stale live-status phrase absent: Current live Tier-A admitted derivation targets: two
+[PASS] forbidden stale live-status phrase absent: two dimensionless Tier-A admissions
+[PASS] forbidden stale live-status phrase absent: stand as genuine admitted derivation targets
+[PASS] forbidden stale live-status phrase absent: AC_phi_lambda remains a Tier-A row
+[PASS] forbidden stale live-status phrase absent: theta remains a Tier-A row
+[PASS] forbidden stale live-status phrase absent: owner-governed residual premises are axioms
+[PASS] forbidden stale live-status phrase absent: owner-governed residual premises are approved primitives
 
-SUMMARY: TIER-A REGISTRY BOUNDARY PASS=76 FAIL=0
-
------ stderr -----
-
+SUMMARY: TIER-A REGISTRY BOUNDARY PASS=62 FAIL=0

@@ -15,19 +15,21 @@ It is not a physics claim surface and should not be edited by hand.
 | `scale_reference_primitive` | approved primitive | [`docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md`](../../docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md) |
 | `kinetic_isotropy_primitive` | approved primitive | [`docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](../../docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) |
 | `realized_state_primitive` | approved primitive | [`docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](../../docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) |
+| `staggered_dirac_realization_gate_note_2026-05-03` | owner-governed residual premise (`AC_phi_lambda`) | [`docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md`](../../docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md) |
+| `strong_cp_theta_zero_note` | owner-governed residual premise (`theta`) | [`docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md`](../../docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md) |
 
-Tier-A admitted derivation targets (2): `AC_phi_lambda` (row `staggered_dirac_realization_gate_note_2026-05-03`), `theta` (row `strong_cp_theta_zero_note`).
-Dependents chain-satisfy only at `retained_bounded` until an
-admission is retired by a retained derivation.
+Tier-A admitted derivation targets (0): none.
+Live Tier-A dependents chain-satisfy only at `retained_bounded` until an
+admission is retired by retained derivation or explicit owner-governance adoption.
 
-Owner-approval history for every axiom/primitive change:
+Owner-approval history for every axiom/primitive/governance change:
 [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](../audit/AXIOM_MINIMALITY_POLICY.md) section 6.
 
 ## Audit Surface
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3687 |
+| Ledger rows | 3688 |
 | Applied audit verdicts | 1344 |
 | Retained-grade rows, including boxed decorations | 1274 |
 | Retained positive theorems | 189 |
@@ -93,11 +95,11 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3858 |
+| Citation-graph nodes | 3859 |
 | Critical nodes | 695 |
-| High nodes | 463 |
+| High nodes | 465 |
 | Medium nodes | 1008 |
-| Leaf nodes | 1692 |
+| Leaf nodes | 1691 |
 
 Top load-bearing rows by graph score:
 

@@ -33,8 +33,10 @@ def foundation_surface_lines() -> list[str]:
     front-door surface cites a superseded axiom-memo path.
     """
     premise = load_json(DATA_DIR / "axiom_premise_nodes.json")
+    owner_governed = load_json(DATA_DIR / "owner_governed_premise_nodes.json")
     tier_a = load_json(DATA_DIR / "tier_a_admissions.json")
     nodes = premise.get("nodes", {})
+    owner_nodes = owner_governed.get("nodes", {})
     lines = [
         "## Foundation Surface",
         "",
@@ -47,21 +49,27 @@ def foundation_surface_lines() -> list[str]:
         klass = "axiom set" if cid == "minimal_axioms" else "approved primitive"
         link = f"[`{path}`](../../{path})" if path != "-" else "-"
         lines.append(f"| `{cid}` | {klass} | {link} |")
+    for cid in owner_governed.get("canonical_ids", []):
+        node = owner_nodes.get(cid, {})
+        path = node.get("current_path") or "-"
+        label = node.get("label") or cid
+        link = f"[`{path}`](../../{path})" if path != "-" else "-"
+        lines.append(f"| `{cid}` | owner-governed residual premise (`{label}`) | {link} |")
     targets = sorted(
         (tier_a.get("derivation_targets") or {}).items(),
         key=lambda kv: kv[1].get("label") or kv[0],
     )
     target_names = ", ".join(
         f"`{entry.get('label') or cid}` (row `{cid}`)" for cid, entry in targets
-    )
+    ) or "none"
     lines.extend(
         [
             "",
             f"Tier-A admitted derivation targets ({len(targets)}): {target_names}.",
-            "Dependents chain-satisfy only at `retained_bounded` until an",
-            "admission is retired by a retained derivation.",
+            "Live Tier-A dependents chain-satisfy only at `retained_bounded` until an",
+            "admission is retired by retained derivation or explicit owner-governance adoption.",
             "",
-            "Owner-approval history for every axiom/primitive change:",
+            "Owner-approval history for every axiom/primitive/governance change:",
             "[`docs/audit/AXIOM_MINIMALITY_POLICY.md`](../audit/AXIOM_MINIMALITY_POLICY.md) section 6.",
             "",
         ]

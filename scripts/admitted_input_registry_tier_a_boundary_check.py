@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 """Boundary runner for the Tier-A admitted-input registry note.
 
-This runner checks source/registry alignment for the human Tier-A index and
-machine `tier_a_admissions.json`. It does not audit, retire, add, remove, or
-re-grade any admitted input.
+This runner checks source/registry alignment for the human Tier-A index after
+the 2026-07-04 owner-governance retirement. It does not audit, derive, or
+re-grade the retired residuals.
 """
 
 from __future__ import annotations
 
 import json
-import re
 from pathlib import Path
 
 
@@ -17,10 +16,11 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
 TIER_A = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
 AXIOM_PREMISES = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
+OWNER_GOVERNED = ROOT / "docs" / "audit" / "data" / "owner_governed_premise_nodes.json"
 RUNNER = "scripts/admitted_input_registry_tier_a_boundary_check.py"
 CACHE = "logs/runner-cache/admitted_input_registry_tier_a_boundary_check.txt"
 
-TARGET_IDS = {
+FORMER_TARGET_IDS = {
     "staggered_dirac_realization_gate_note_2026-05-03": "AC_phi_lambda",
     "strong_cp_theta_zero_note": "theta",
 }
@@ -32,17 +32,19 @@ RECLASSIFIED_PRIMITIVES = {
     "minimal_axioms_record": "Record axiom",
     "scale_reference_primitive": "scale-reference primitive",
 }
+EXPECTED_AXIOM_IDS = {
+    "minimal_axioms",
+    "scale_reference_primitive",
+    "kinetic_isotropy_primitive",
+    "realized_state_primitive",
+}
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
 
-def normalize(text: str) -> str:
+def norm(text: str) -> str:
     return " ".join(text.split())
-
-
-def contains(text: str, phrase: str) -> bool:
-    return normalize(phrase) in normalize(text)
 
 
 def read(path: Path) -> str:
@@ -53,7 +55,7 @@ def load_json(path: Path) -> dict:
     return json.loads(read(path))
 
 
-def check(name: str, ok: bool, detail: str = "") -> bool:
+def check(name: str, ok: bool, detail: object = "") -> bool:
     global PASS_COUNT, FAIL_COUNT
     tag = "PASS" if ok else "FAIL"
     if ok:
@@ -73,120 +75,90 @@ def main() -> int:
     print()
 
     note = read(NOTE)
+    note_flat = norm(note)
     tier = load_json(TIER_A)
     axiom_premises = load_json(AXIOM_PREMISES)
+    owner = load_json(OWNER_GOVERNED)
     derivation_targets = tier.get("derivation_targets") or {}
+    retired = tier.get("retired_derivation_targets") or {}
     conventions = tier.get("conventions") or {}
     reclassified = tier.get("reclassified_primitives") or {}
     axiom_ids = set(axiom_premises.get("canonical_ids") or [])
+    owner_ids = set(owner.get("canonical_ids") or [])
 
     check("source note exists", NOTE.exists(), NOTE.relative_to(ROOT).as_posix())
     check("machine Tier-A registry exists", TIER_A.exists(), TIER_A.relative_to(ROOT).as_posix())
     check("axiom premise registry exists", AXIOM_PREMISES.exists(), AXIOM_PREMISES.relative_to(ROOT).as_posix())
+    check("owner-governed premise registry exists", OWNER_GOVERNED.exists(), OWNER_GOVERNED.relative_to(ROOT).as_posix())
     check("source claim type is meta", "**Claim type:** meta" in note)
     check("source status authority is audit lane only", "independent audit lane only" in note)
     check("source says it sets no audit status", "sets **no** audit status" in note)
     check("source registers this primary runner", RUNNER in note)
     check("source registers this cached output", CACHE in note)
 
-    check("machine schema version is 1", tier.get("schema_version") == 1, str(tier.get("schema_version")))
-    check("genuine admitted input count is exactly two", tier.get("genuine_admitted_input_count") == 2, str(tier.get("genuine_admitted_input_count")))
-    check("canonical ids are exactly the two Tier-A derivation targets", set(tier.get("canonical_ids") or []) == set(TARGET_IDS), str(tier.get("canonical_ids")))
-    check("derivation target keys match canonical ids", set(derivation_targets) == set(TARGET_IDS), str(sorted(derivation_targets)))
+    check("machine schema version is 1", tier.get("schema_version") == 1, tier.get("schema_version"))
+    check("genuine admitted input count is zero", tier.get("genuine_admitted_input_count") == 0, tier.get("genuine_admitted_input_count"))
+    check("canonical ids are empty", tier.get("canonical_ids") == [], tier.get("canonical_ids"))
+    check("derivation target map is empty", derivation_targets == {}, derivation_targets)
+    check("retired target keys preserve AC and theta", set(retired) == set(FORMER_TARGET_IDS), sorted(retired))
+    check("owner-governed ids are the former target ids", owner_ids == set(FORMER_TARGET_IDS), sorted(owner_ids))
+    check("owner-governed nodes match canonical ids", set(owner.get("nodes") or {}) == owner_ids, sorted((owner.get("nodes") or {}).keys()))
 
-    for target_id, label in TARGET_IDS.items():
-        row = derivation_targets.get(target_id, {})
-        check(f"{label} target row exists", bool(row), target_id)
-        check(f"{label} label matches", row.get("label") == label, str(row.get("label")))
-        check(f"{label} has no-go portfolio", bool(row.get("no_go_portfolio")), str(row.get("no_go_portfolio")))
-        check(f"{label} has minimum decomposition", bool(row.get("minimum_decomposition")), str(row.get("minimum_decomposition")))
-        check(f"{label} has sharpening source list", bool(row.get("sharpening_sources_status_set_by_audit_lane")), "")
+    for target_id, label in FORMER_TARGET_IDS.items():
+        row = retired.get(target_id, {})
+        node = (owner.get("nodes") or {}).get(target_id, {})
+        check(f"{label} retired target row exists", bool(row), target_id)
+        check(f"{label} retired label matches", row.get("label") == label, row.get("label"))
+        check(f"{label} retained no-go portfolio preserved", bool(row.get("no_go_portfolio")), row.get("no_go_portfolio"))
+        check(f"{label} no longer live derivation target", target_id not in derivation_targets)
+        check(f"{label} owner-governed node exists", bool(node), target_id)
+        check(f"{label} owner-governed boundary exists", bool(node.get("boundary")), node)
+        check(
+            f"{label} owner-governed source is adoption note",
+            node.get("current_path") == "docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md",
+            node.get("current_path"),
+        )
 
-    check(
-        "AC_phi_lambda has two surviving minimum atoms",
-        derivation_targets["staggered_dirac_realization_gate_note_2026-05-03"].get("minimum_decomposition")
-        == ["reading_occupancy_selection", "delta_readout_identification_R_eta"],
-        "",
-    )
-    ac_row = derivation_targets["staggered_dirac_realization_gate_note_2026-05-03"]
-    ac_statement = ac_row.get("statement", "")
-    ac_reclass = (ac_row.get("partial_reclassifications") or {}).get("reading_occupancy_selection_value_face", {})
-    species_reclass = (ac_row.get("partial_reclassifications") or {}).get("species_bridge_c3_grade", {})
-    check(
-        "AC_phi_lambda(i) value face is reclassified to realized-state registration in machine row",
-        ac_reclass.get("status") == "reclassified_to_realized_state_registration",
-        str(ac_reclass),
-    )
-    check("AC_phi_lambda(i) surviving residual is measure-side/dynamical realization", "measure-side doublet occupancy realization binary" in ac_statement)
-    check("AC_phi_lambda(i) machine reclassification source is registered", ac_reclass.get("source") == "docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md", str(ac_reclass))
-    check("AC_phi_lambda(i) machine reclassification keeps measure-side boundary", "measure-side/dynamical realization binary remains" in ac_reclass.get("boundary", ""))
-    check("AC_phi_lambda(iii) species bridge is owner-ratified out of Tier-A in machine row", "species bridge C3-grade leg is owner-ratified" in ac_statement)
-    check("AC_phi_lambda(iii) species bridge machine reclassification exists", bool(species_reclass), str(species_reclass))
-    check(
-        "AC_phi_lambda(iii) species bridge machine reclassification source is registered",
-        species_reclass.get("source") == "docs/ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md",
-        str(species_reclass),
-    )
-    species_boundary_lower = species_reclass.get("boundary", "").lower()
-    check("AC_phi_lambda(iii) species bridge machine reclassification keeps above-grade boundary", "taste/dirac/chirality" in species_boundary_lower and "ckm/pmns" in species_boundary_lower)
-    check(
-        "theta has two named minimum atoms",
-        derivation_targets["strong_cp_theta_zero_note"].get("minimum_decomposition")
-        == ["gauge_side_winding_account", "mass_side_orientation_determinant_readout_bridge"],
-        "",
-    )
+    check("approved axiom/primitive ids unchanged", axiom_ids == EXPECTED_AXIOM_IDS, sorted(axiom_ids))
+    check("owner-governed ids are not axiom/primitive ids", not (owner_ids & axiom_ids), sorted(owner_ids & axiom_ids))
+    check("former Tier-A targets are not axiom-premise ids", not (set(FORMER_TARGET_IDS) & axiom_ids), sorted(set(FORMER_TARGET_IDS) & axiom_ids))
 
-    check("convention rows are present", set(CONVENTION_IDS).issubset(conventions), str(sorted(conventions)))
+    check("convention rows are present", set(CONVENTION_IDS).issubset(conventions), sorted(conventions))
     for convention_id, label in CONVENTION_IDS.items():
         row = conventions.get(convention_id, {})
-        check(f"{label} convention label matches", row.get("label") == label, str(row.get("label")))
+        check(f"{label} convention label matches", row.get("label") == label, row.get("label"))
         check(f"{label} is vacuous convention", "vacuous" in row.get("class", "").lower(), row.get("class", ""))
-        check(f"{label} not admitted derivation target", convention_id not in derivation_targets, "")
+        check(f"{label} not live derivation target", convention_id not in derivation_targets)
+        check(f"{label} not owner-governed premise", convention_id not in owner_ids)
 
-    check("reclassified primitives are present", set(RECLASSIFIED_PRIMITIVES).issubset(reclassified), str(sorted(reclassified)))
+    check("reclassified primitives are present", set(RECLASSIFIED_PRIMITIVES).issubset(reclassified), sorted(reclassified))
     for primitive_id, label in RECLASSIFIED_PRIMITIVES.items():
         row = reclassified.get(primitive_id, {})
-        check(f"{label} reclassification label matches", row.get("label") == label, str(row.get("label")))
-        check(f"{label} not admitted derivation target", primitive_id not in derivation_targets, "")
+        check(f"{label} reclassification label matches", row.get("label") == label, row.get("label"))
+        check(f"{label} not live derivation target", primitive_id not in derivation_targets)
 
-    check("Record lives in axiom-premise registry", "minimal_axioms" in axiom_ids, str(sorted(axiom_ids)))
-    check("Scale reference lives in axiom-premise registry", "scale_reference_primitive" in axiom_ids, str(sorted(axiom_ids)))
-    check("Tier-A targets are not axiom-premise ids", not (set(TARGET_IDS) & axiom_ids), str(sorted(set(TARGET_IDS) & axiom_ids)))
-    check("Tier-A conventions are not axiom-premise ids", not (set(CONVENTION_IDS) & axiom_ids), str(sorted(set(CONVENTION_IDS) & axiom_ids)))
+    for phrase in [
+        "Current live Tier-A admitted derivation targets: zero",
+        "owner-governed residual premises",
+        "genuine_admitted_input_count = 0",
+        "canonical_ids = []",
+        "derivation_targets = {}",
+        "retired_derivation_targets",
+        "zero live Tier-A admissions",
+        "does not derive AC_phi_lambda or theta as theorems",
+    ]:
+        check(f"source records zero-retirement phrase: {phrase}", phrase in note_flat)
 
-    check("note states Record retired from Tier A", "Record is no longer a Tier-A admission" in note)
-    check("note keeps observable-principle parent outside Record", "OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` is not promoted" in note)
-    check("note says scale primitive is not counted", "scale-reference primitive is likewise not counted here" in note)
-    check("note says Y0 and g0 are not counted", "not** counted as admitted inputs" in note)
-    check("note states two dimensionless Tier-A admissions", "two dimensionless Tier-A admissions" in note)
-    check("note says sharpening adds/removes/regrades nothing", "No admission is\nadded, removed, adopted, or re-graded" in note)
-    check("note records 2026-07-04 value-face reclassification", "2026-07-04 value-face reclassification" in note)
-    check("note says per-lane r value is registered state data", "per-lane\nvalue of `r` is registered state data" in note)
-    check("note says surviving residual is measure-side realization", "surviving Tier-A\nresidual in (i) is the measure-side/dynamical realization binary" in note)
-    check("note records species bridge C3-grade owner ratification", "species bridge C3-grade owner ratification" in note)
-    check("note says species bridge is not a Tier-A derivation target", "not a Tier-A\nderivation target" in note and "physical-species bridge" in note)
-    check("note says species bridge retirement is grade-scoped", "does **not** cover taste/Dirac/chirality content" in note and "CKM/PMNS alignment" in note)
-    check("note says theta row is untouched by species bridge ratification", "theta row is untouched" in note)
-    check("note says dependent rows stay bounded", "every\ndependent stays bounded" in note)
-    check("note says AC_phi_lambda dependent rows stay bounded after partial reclassifications", "downstream rows depending on\nAC_phi_lambda remain bounded" in note)
-    check("note says audit status remains audit-lane-only", "audit status remains audit-lane-only" in note)
-    check("note propagation says Tier-A accepted premise is bounded", "chain-satisfying **only at `retained_bounded`**" in note)
-    check("note says no hand-maintained backlinks", "No back-links are maintained by hand" in note)
-
-    forbidden_positive_phrases = (
-        "sets audit status",
-        "promotes rows to retained",
-        "changes rows' effective_status",
-        "Tier-A derivation targets chain-satisfy without bounding",
-        "Record is a Tier-A admission",
-        "scale-reference primitive is a Tier-A admission",
-        "species bridge is an axiom",
-        "species bridge is an approved primitive",
-        "AC_phi_lambda retires",
-        "theta retires",
-    )
-    for phrase in forbidden_positive_phrases:
-        check(f"forbidden positive status claim absent: {phrase}", phrase not in note)
+    for forbidden in [
+        "Current live Tier-A admitted derivation targets: two",
+        "two dimensionless Tier-A admissions",
+        "stand as genuine admitted derivation targets",
+        "AC_phi_lambda remains a Tier-A row",
+        "theta remains a Tier-A row",
+        "owner-governed residual premises are axioms",
+        "owner-governed residual premises are approved primitives",
+    ]:
+        check(f"forbidden stale live-status phrase absent: {forbidden}", forbidden not in note_flat)
 
     print()
     print(f"SUMMARY: TIER-A REGISTRY BOUNDARY PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

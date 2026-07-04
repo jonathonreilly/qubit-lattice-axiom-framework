@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "description": "Class B owner-governed residual premise registry. These are explicit owner-adopted governance premises that retire formerly Tier-A derivation targets without reclassifying them as axioms or approved framework primitives. They chain-satisfy dependencies without Tier-A bounding after adoption, but they carry only the exact boundaries recorded here and in the adoption source. This registry is distinct from axiom_premise_nodes.json and tier_a_admissions.json.",
+  "canonical_ids": [
+    "staggered_dirac_realization_gate_note_2026-05-03",
+    "strong_cp_theta_zero_note"
+  ],
+  "nodes": {
+    "staggered_dirac_realization_gate_note_2026-05-03": {
+      "label": "AC_phi_lambda",
+      "current_path": "docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md",
+      "prior_tier_a_source_path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+      "adopted_residual_candidates": [
+        "ac_orbit_occupancy_statistical_grain_premise",
+        "ac_reta_hclass_hunit_readout_premise"
+      ],
+      "boundary": "Retires only the current minimum AC_phi_lambda Tier-A atoms: AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout license. It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law."
+    },
+    "strong_cp_theta_zero_note": {
+      "label": "theta",
+      "current_path": "docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md",
+      "prior_tier_a_source_path": "docs/STRONG_CP_THETA_ZERO_NOTE.md",
+      "adopted_residual_candidates": [
+        "theta_gauge_sector_phase_source_premise",
+        "theta_mass_determinant_channel_w2_premise"
+      ],
+      "boundary": "Retires only the current minimum theta Tier-A atoms: the gauge-side sector/readout plus phase-source premise and the mass-side W2 determinant-channel readout premise. It does not derive theta_bar = 0 by itself, a continuum theta theorem, quark masses, CKM structure, QCD continuum dynamics, a CP-odd coefficient theorem, an axion, or a fitted selector."
+    }
+  }
+}

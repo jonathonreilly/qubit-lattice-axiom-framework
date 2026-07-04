@@ -58,6 +58,7 @@ LEDGER_PATH = DATA_DIR / "audit_ledger.json"
 GRAPH_PATH = DATA_DIR / "citation_graph.json"
 AUDIT_DISPATCH_QUEUE_PATH = DATA_DIR / "audit_dispatch_queue.json"
 TIER_A_ADMISSIONS_PATH = DATA_DIR / "tier_a_admissions.json"
+OWNER_GOVERNED_PREMISE_NODES_PATH = DATA_DIR / "owner_governed_premise_nodes.json"
 
 ALLOWED_AUDIT_STATUSES = {
     "unaudited",
@@ -330,6 +331,54 @@ def main() -> int:
         for dep_id in sorted(conventions):
             if dep_id not in rows:
                 errors.append(f"tier_a_admissions.json convention {dep_id!r} has no ledger row")
+
+    owner_governed_ids: set[str] = set()
+    if OWNER_GOVERNED_PREMISE_NODES_PATH.exists():
+        try:
+            owner_governed = load_json(OWNER_GOVERNED_PREMISE_NODES_PATH)
+        except Exception as exc:
+            errors.append(f"owner_governed_premise_nodes.json could not be parsed: {exc}")
+            owner_governed = {}
+        nodes = owner_governed.get("nodes") or {}
+        listed_ids = set(owner_governed.get("canonical_ids") or [])
+        owner_governed_ids = set(nodes)
+        if listed_ids != owner_governed_ids:
+            errors.append(
+                "owner_governed_premise_nodes.json canonical_ids must equal nodes"
+            )
+        axiom_ids = premise_nodes.axiom_premise_ids()
+        tier_a_ids = premise_nodes.admitted_derivation_target_ids()
+        overlap_axiom = listed_ids & axiom_ids
+        if overlap_axiom:
+            errors.append(
+                "owner_governed_premise_nodes.json overlaps axiom_premise_nodes.json: "
+                + ", ".join(sorted(overlap_axiom))
+            )
+        overlap_tier_a = listed_ids & tier_a_ids
+        if overlap_tier_a:
+            errors.append(
+                "owner_governed_premise_nodes.json overlaps live tier_a_admissions.json "
+                "derivation targets: "
+                + ", ".join(sorted(overlap_tier_a))
+            )
+        for dep_id, entry in sorted(nodes.items()):
+            if dep_id not in rows:
+                errors.append(f"owner-governed premise {dep_id!r} has no ledger row")
+            candidates = entry.get("adopted_residual_candidates") or []
+            if not candidates:
+                errors.append(
+                    f"owner-governed premise {dep_id!r} lacks adopted_residual_candidates"
+                )
+            if not entry.get("boundary"):
+                errors.append(f"owner-governed premise {dep_id!r} lacks boundary")
+            source_path = entry.get("current_path")
+            if not source_path:
+                errors.append(f"owner-governed premise {dep_id!r} lacks current_path")
+            elif not (REPO_ROOT / source_path).exists():
+                errors.append(
+                    f"owner-governed premise {dep_id!r} current_path missing on disk: "
+                    f"{source_path}"
+                )
 
     # Front-door axiom-pointer currency. The ledger side of an axiom change
     # is guarded by the premise hash; the narrative front door is not in the
@@ -817,9 +866,11 @@ def main() -> int:
     # Open gates and retained_pending_chain are explicit blockers, not support
     # for downstream theorem retention. Axioms can satisfy a dep without
     # bounding the row.
-    # Tier-A derivation targets can satisfy a dep only at the bounded tier until
-    # the target is retired by a retained derivation. Convention rows listed in
-    # the Tier-A registry are not accepted premises.
+    # Owner-governed residual premises chain-satisfy without bounding, but are
+    # not axioms or approved primitives. Tier-A derivation targets can satisfy a
+    # dep only at the bounded tier until the target is retired by a retained
+    # derivation or explicit owner-governance adoption. Convention rows listed
+    # in the Tier-A registry are not accepted premises.
     # Metadata deps are chain-satisfying context, not retained-grade theorem
     # support. `decoration_under_<parent>` deps count as retained-grade because
     # decoration_status() only assigns that status when the parent is itself

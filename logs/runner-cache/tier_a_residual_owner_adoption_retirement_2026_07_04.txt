@@ -1,0 +1,99 @@
+Tier-A residual owner adoption and retirement verifier
+========================================================================================
+
+----------------------------------------------------------------------------------------
+A - source presence and explicit adoption boundary
+----------------------------------------------------------------------------------------
+PASS: exists: docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md
+PASS: exists: docs/TIER_A_RESIDUAL_OWNER_DECISION_PACKET_2026-07-04.md
+PASS: exists: docs/audit/data/tier_a_admissions.json
+PASS: exists: docs/audit/data/axiom_premise_nodes.json
+PASS: exists: docs/audit/data/owner_governed_premise_nodes.json
+PASS: exists: docs/audit/AXIOM_MINIMALITY_POLICY.md
+PASS: exists: docs/audit/DOCUMENT_AUTHORITY_AND_CITATION_POLICY.md
+PASS: exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+PASS: exists: docs/audit/scripts/premise_nodes.py
+PASS: note declares Type meta
+PASS: note declares Claim type meta
+PASS: runner path is wired in note
+PASS: adoption firewall phrase present: explicit owner adoption of the four exact Block49 residual candidates
+PASS: adoption firewall phrase present: not as axioms and not as approved framework primitives
+PASS: adoption firewall phrase present: does not derive AC_phi_lambda or theta as theorems
+PASS: adoption firewall phrase present: does not add or amend an axiom
+PASS: adoption firewall phrase present: does not add an approved framework primitive
+
+----------------------------------------------------------------------------------------
+B - Tier-A registry is zeroed and historical data preserved
+----------------------------------------------------------------------------------------
+PASS: Tier-A genuine admitted input count is zero
+PASS: Tier-A canonical_ids is empty
+PASS: Tier-A derivation_targets is empty
+PASS: retired_derivation_targets preserves both former ids
+PASS: staggered_dirac_realization_gate_note_2026-05-03 no longer live Tier-A
+PASS: staggered_dirac_realization_gate_note_2026-05-03 historical retired entry has no_go_portfolio
+PASS: strong_cp_theta_zero_note no longer live Tier-A
+PASS: strong_cp_theta_zero_note historical retired entry has no_go_portfolio
+
+----------------------------------------------------------------------------------------
+C - owner-governed registry is separate from axioms/primitives
+----------------------------------------------------------------------------------------
+PASS: approved axiom/primitive allowlist unchanged
+PASS: owner-governed canonical ids are former Tier-A ids
+PASS: owner-governed node keys match canonical ids
+PASS: no overlap with axiom/primitive ids
+PASS: staggered_dirac_realization_gate_note_2026-05-03 current_path points to adoption note
+PASS: staggered_dirac_realization_gate_note_2026-05-03 adopted candidates exact
+PASS: staggered_dirac_realization_gate_note_2026-05-03 boundary present
+PASS: staggered_dirac_realization_gate_note_2026-05-03 candidate appears in note: ac_orbit_occupancy_statistical_grain_premise
+PASS: staggered_dirac_realization_gate_note_2026-05-03 candidate appears in decision packet: ac_orbit_occupancy_statistical_grain_premise
+PASS: staggered_dirac_realization_gate_note_2026-05-03 candidate appears in note: ac_reta_hclass_hunit_readout_premise
+PASS: staggered_dirac_realization_gate_note_2026-05-03 candidate appears in decision packet: ac_reta_hclass_hunit_readout_premise
+PASS: strong_cp_theta_zero_note current_path points to adoption note
+PASS: strong_cp_theta_zero_note adopted candidates exact
+PASS: strong_cp_theta_zero_note boundary present
+PASS: strong_cp_theta_zero_note candidate appears in note: theta_gauge_sector_phase_source_premise
+PASS: strong_cp_theta_zero_note candidate appears in decision packet: theta_gauge_sector_phase_source_premise
+PASS: strong_cp_theta_zero_note candidate appears in note: theta_mass_determinant_channel_w2_premise
+PASS: strong_cp_theta_zero_note candidate appears in decision packet: theta_mass_determinant_channel_w2_premise
+
+----------------------------------------------------------------------------------------
+D - accepted-premise policy recognizes the new class
+----------------------------------------------------------------------------------------
+PASS: premise_nodes sees owner-governed ids
+PASS: staggered_dirac_realization_gate_note_2026-05-03 accepted premise
+PASS: staggered_dirac_realization_gate_note_2026-05-03 owner-governed premise
+PASS: staggered_dirac_realization_gate_note_2026-05-03 not live Tier-A admission
+PASS: strong_cp_theta_zero_note accepted premise
+PASS: strong_cp_theta_zero_note owner-governed premise
+PASS: strong_cp_theta_zero_note not live Tier-A admission
+PASS: candidate id itself is not accepted premise: ac_reta_hclass_hunit_readout_premise
+PASS: candidate id itself is not accepted premise: theta_mass_determinant_channel_w2_premise
+PASS: candidate id itself is not accepted premise: theta_gauge_sector_phase_source_premise
+PASS: candidate id itself is not accepted premise: ac_orbit_occupancy_statistical_grain_premise
+
+----------------------------------------------------------------------------------------
+E - policy and human registry surfaces are updated
+----------------------------------------------------------------------------------------
+PASS: minimality policy records: owner-governed residual premises
+PASS: minimality policy records: Tier-A residual owner adoption and registry retirement
+PASS: minimality policy records: genuine admitted-target count is zero
+PASS: document policy names owner-governed residual premises
+PASS: human Tier-A registry records: Current live Tier-A admitted derivation targets: zero
+PASS: human Tier-A registry records: owner-governed residual premises
+PASS: human Tier-A registry records: retired_derivation_targets
+
+----------------------------------------------------------------------------------------
+F - overclaim guardrails
+----------------------------------------------------------------------------------------
+PASS: forbidden overclaim absent: AC_phi_lambda is theorem-derived
+PASS: forbidden overclaim absent: theta is theorem-derived
+PASS: forbidden overclaim absent: added to axiom_premise_nodes
+PASS: forbidden overclaim absent: approved framework primitive for theta
+PASS: forbidden overclaim absent: approved framework primitive for AC_phi_lambda
+PASS: firewall present: No axiom is added or amended
+PASS: firewall present: No approved framework primitive is added or amended
+PASS: firewall present: The source-side theorem/no-go packets retain their own audit statuses
+
+========================================================================================
+RESULT: PASS=69 FAIL=0 CHECKS=69
+========================================================================================

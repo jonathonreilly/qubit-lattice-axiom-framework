@@ -7,8 +7,8 @@ dynamical/index route.
 
 Branch: `physics-loop/tier-a-elimination-block13-aci-index-20260704`
 Base: `physics-loop/tier-a-elimination-block12-theta-g1-20260704`
-PR: pending
-Source commit: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4939
+Source commit: `2f0042dee`
 
 ## Expected Claim Movement
 
@@ -41,5 +41,5 @@ either land on r = 1, expose a fork, or remain conditional.
 
 ## Next Exact Action
 
-Commit source block, push, open a stacked PR, update PR metadata, then monitor
-audit.
+Monitor PR #4939 and `audit_pipeline`. The next science action is a
+determinant-order or mode-set theorem search for AC(i).

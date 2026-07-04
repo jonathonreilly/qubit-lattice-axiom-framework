@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py
+runner_sha256: ab1d43fe32a6492d9a3ea9775df395581d3a18b77215f10111b4c8d436fc86f4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
 ========================================================================================
 SHARED-CORE REGISTRABILITY THEOREM: supplied homomorphic phase + K/CPT-even => phase-free
 ========================================================================================
@@ -95,3 +103,6 @@ T11 - post-audit source-boundary guard
 ========================================================================================
 SCORECARD: PASS=46 FAIL=0
 ========================================================================================
+
+----- stderr -----
+

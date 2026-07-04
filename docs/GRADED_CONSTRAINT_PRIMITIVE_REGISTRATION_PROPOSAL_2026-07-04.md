@@ -143,8 +143,10 @@ frequencies.
 2. N1-N3 consistency notes drafted, seat-refuted, landed; N4 empirical
    constraints filed through the audit lane.
 3. Audit passes over that surface.
-4. Only then does the CORE come to the owner as a registration — a thin
-   approval of new supplied structure whose interface behavior is already
-   theorem-grade. Nothing interpretive rides on the approval.
+4. Downstream work references the audited notes, carrying the core as a
+   named conditional premise — the #4916 pattern, repo-wide. Registration
+   stays available as an owner supply act for the moment some lane needs the
+   premise unconditional to close a physical number; no work blocks on it.
 
-Recommendation: run the pipeline; do not approve anything today.
+Recommendation: run the derivations, submit them for review and audit, and
+reference them. No approval is requested or scheduled.

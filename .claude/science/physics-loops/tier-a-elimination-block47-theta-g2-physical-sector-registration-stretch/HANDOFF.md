@@ -8,7 +8,8 @@ updated minimal axioms and Record additivity can retire the G2 residual.
 
 Branch: `physics-loop/tier-a-elimination-block47-theta-g2-physical-sector-registration-stretch-20260704`
 Base: `physics-loop/tier-a-elimination-block46-theta-g4-assembly-current-surface-nogo-20260704`
-PR: pending
+Source commit: `0d376a8fe`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4988
 
 ## Claim Movement
 
@@ -45,6 +46,5 @@ Physical sector/readout registration remains the missing bridge.
 
 ## Next Exact Action
 
-Commit, push the stacked PR, update this handoff with PR metadata, and
-continue the Tier-A campaign through physical G2/G3/G1/mass-side attempts or
-governance decisions.
+Wait for hosted `audit_pipeline` on PR #4988, then continue the Tier-A
+campaign through physical G2/G3/G1/mass-side attempts or governance decisions.

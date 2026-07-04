@@ -7,8 +7,8 @@ corner-transfer route.
 
 Branch: `physics-loop/tier-a-elimination-block15-aci-modeset-20260704`
 Base: `physics-loop/tier-a-elimination-block14-aci-detorder-20260704`
-PR: pending
-Source commit: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4942
+Source commit: `1a5ce5304`
 
 ## Expected Claim Movement
 
@@ -41,4 +41,4 @@ retirement.
 
 ## Next Exact Action
 
-Commit, push, open a stacked PR, then monitor audit.
+Monitor PR audit.

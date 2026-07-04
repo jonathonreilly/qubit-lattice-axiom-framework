@@ -23029,10 +23029,10 @@
       "runner": "scripts/multisite_pauli_group_check.py"
     },
     "n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17": {
-      "assert_count": 3,
+      "assert_count": 4,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 3,
         "D": 0
       },
@@ -85341,13 +85341,13 @@
       "exists": true
     },
     "scripts/n5_single_generator_clock_exchange_no_go_2026_06_17.py": {
-      "assert_count": 3,
+      "assert_count": 4,
       "claims": [
         "n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17"
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 3,
         "D": 0
       },

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 856 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1943 |
+| unaudited | 1944 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 25 |
+| ~~audited_conditional~~ | 24 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1229 |
-| `audited_conditional` | 25 |
+| `audited_conditional` | 24 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2281 |
+| `unaudited` | 2282 |
 
 | claim_type | count |
 |---|---:|
@@ -1386,7 +1386,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11909,19 +11908,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Every element has a unique global phase in {±1, ±i} times one of four Pauli-sector choices at each site, and [P_N,P_N] = {±I_N}, giving |P_N| = 4·4^N and abelianization rank 2N+1.  _(class `A`)_
 - **chain closes:** True — The theorem closes by exact Pauli normal-form algebra on the stipulated tensor product. The cited Cl(3) note is retained-grade algebraic context only, and its excluded physical carrier bridge is not imported.
 - **rationale:** Manual normal-form checking confirms the global Z_4 phase is shared across all sites, while the N tensor Pauli sectors contribute 4^N independent cosets. The center, quotient, central extension, and g^4 = I_N follow from the same normal form and local Pauli commutation signs. The minimal generator count closes because the commutator subgroup is exactly {±I_N}, so the abelianization is elementary abelian of order 2^{2N+1}; this gives a generator-type-independent lower bound matched by {X_x,Z_x} plus one global phase. The runner source performs genuine finite matrix/group enumeration for its checked cases and does not import an external comparator or tuned value.
-- **auditor confidence:** high
-
-### `n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17`
-
-- **Note:** [`N5_SINGLE_GENERATOR_CLOCK_EXCHANGE_INVARIANCE_NARROW_NO_GO_NOTE_2026-06-17.md`](../../docs/N5_SINGLE_GENERATOR_CLOCK_EXCHANGE_INVARIANCE_NARROW_NO_GO_NOTE_2026-06-17.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Audited the finite two-clock H=C^2 tensor C^2 witness claim that S-invariant baseline-respecting structures cannot derive N5/d_t<=1 without an S-breaking clock/readout ingredient.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Any S-invariant linear functional Phi satisfies Phi(G2)=Phi(S G1 S†)=Phi(G1), so an S-invariant selector assigns G1 and G2 equal status and cannot pick one site clock as the physical clock.  _(class `A`)_
-- **chain closes:** False — The algebraic no-preference lemma closes for asymmetric selection of G1 versus G2, but it does not rule out an S-invariant diagonal-clock selection or quotient that keeps H_sum and excludes both site clocks symmetrically. The packet needs a bridge theorem showing that such an S-invariant reduction is not baseline-respecting or does not count as N5.
-- **rationale:** Issue: The lemma proves equal status for S-conjugate site clocks, not impossibility of every S-invariant one-clock reduction. Why this blocks: The runner's min-gap check shows exp(-iG1) is not on the H_sum orbit if G1 remains admitted as physical, but it does not derive that every S-invariant baseline selector must keep G1 physical. Repair target: add a retained theorem ruling out S-invariant diagonal projection/quotient of the clock algebra, or narrow the note to the site-preference no-go. Claim boundary until fixed: the packet supports that S-invariant readouts cannot prefer G1 over G2 without S-breaking.
 - **auditor confidence:** high
 
 ### `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10`

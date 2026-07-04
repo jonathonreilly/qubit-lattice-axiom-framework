@@ -94500,10 +94500,10 @@
       "claim_type_seed_hint": "no_go",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "0c9b857911967448a60b972d587608dddfb9bab8a6be84beb561814b5b9bc6ce",
+      "note_hash": "7f5e713fd42d7fd2558ff844e342c66468006f7726aaf654a427c956bd60b1a5",
       "path": "docs/N5_SINGLE_GENERATOR_CLOCK_EXCHANGE_INVARIANCE_NARROW_NO_GO_NOTE_2026-06-17.md",
       "runner_path": "scripts/n5_single_generator_clock_exchange_no_go_2026_06_17.py",
-      "title": "N5 (Single Time-Generator) Is Not Derivable From Clock-Exchange-Invariant Structures"
+      "title": "Clock-Exchange Invariance Gives No Site-Preferred Clock Selector"
     },
     "n_eff_from_three_generations_theorem_note_2026-04-24": {
       "claim_id": "n_eff_from_three_generations_theorem_note_2026-04-24",

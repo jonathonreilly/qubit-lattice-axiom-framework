@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 189 |
 | **retained_no_go** | 191 |
-| **retained_bounded** | 849 |
+| **retained_bounded** | 850 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1949 |
+| unaudited | 1948 |
 | meta | 337 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1222 |
+| `audited_clean` | 1223 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2286 |
+| `unaudited` | 2285 |
 
 | claim_type | count |
 |---|---:|
@@ -683,6 +683,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `irregular_directional_observable_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `irregular_sign_core_packet_gate_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `k_dependence_review_safe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9289,6 +9290,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The fixed-window rerun shows negative per-seed exponents with strongly overlapping bootstrap confidence intervals across k, and a late-N window materially shifts the fitted seed_alpha values, so the evidence is fit-window-sensitive and does not support a universal alpha(k) law.  _(class `C`)_
 - **chain closes:** True — The primary runner computes pur_min values through the included helper chain, fits per-seed log-log slopes, bootstraps the mean slopes, and performs a second-window comparison. The conclusion is bounded to this runner-defined graph family and fit protocol, and the included code/output support that bounded statement.
 - **rationale:** The runner source is not a mere printout: it constructs the seed x k x N table from pur_min_single_k, computes per-seed slopes and bootstrap intervals, and then validates the frozen note values. The helper chain is included and contains the load-bearing graph generation, field propagation, density normalization, and purity calculation rather than importing the contested result from another note. The result is only a bounded computational theorem about this graph family and fit protocol, not a universal physical alpha(k) law.
+- **auditor confidence:** high
+
+### `kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04`
+
+- **Note:** [`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](../../docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded supplied-context bridge: from supplied ORBIT-INDEXING plus Record content-determination, registrable scalar readouts are K/CPT-orbit constant; inside the supplied determinant-character/log-character homomorphism boundary, even plus odd erases the homomorphic phase functional while log-modulus data survives.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-wave0-kcpt-20260704`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** ORBIT-INDEXING supplies content(y)=content(x), Record content-determination gives I(y)=I(x), and the supplied R-valued additive phase homomorphism is odd while T1 makes it K-even, so g(-x)=-g(x)=g(x) and g(x)=0.  _(class `A`)_
+- **chain closes:** True — The note keeps ORBIT-INDEXING, K/CPT action, determinant datum, and homomorphism boundary as explicit supplied-context hypotheses. Under that scoped boundary, T1 is direct content-functionality and T2 is exact even-plus-odd algebra, with no stronger readout-context derivation claimed.
+- **rationale:** The scoped bounded theorem closes because the note uses the current Record axiom only for content-determination and finite additivity, while placing orbit indexing and determinant-character/log-character structure outside the derived content as supplied hypotheses. The T2 phase-erasure conclusion follows from additive homomorphism oddness plus T1 K-evenness, and the note's negative controls correctly exclude K-even non-homomorphic phase functionals. The runner passes all 33 checks and supports the algebraic and textual boundary guards without hard-coding a stronger closure. Residual risk is only downstream scope drift, not a defect in this source note.
 - **auditor confidence:** high
 
 ### `kernel_vs_gravity_note`

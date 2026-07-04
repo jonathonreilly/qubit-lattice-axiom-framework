@@ -1049,6 +1049,18 @@
       "to": "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
     },
     {
+      "from": "acphilambda_r_eta_record_additivity_non_supply_no_go_note_2026-07-04",
+      "to": "acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04"
+    },
+    {
+      "from": "acphilambda_r_eta_record_additivity_non_supply_no_go_note_2026-07-04",
+      "to": "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09"
+    },
+    {
+      "from": "acphilambda_r_eta_record_additivity_non_supply_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "acphilambda_r_eta_transport_equality_stretch_no_go_note_2026-07-04",
       "to": "minimal_axioms"
     },
@@ -58851,6 +58863,22 @@
       "runner_path": "scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py",
       "title": "AC_phi_lambda Sub-Admission (ii) Narrowing: R-eta Decomposes Into a Forced Form Layer Plus One Identification Atom \u2014 Bounded Theorem"
     },
+    "acphilambda_r_eta_record_additivity_non_supply_no_go_note_2026-07-04": {
+      "claim_id": "acphilambda_r_eta_record_additivity_non_supply_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04",
+        "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09",
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "6aaae84a04eb0dcc4a72f756396d5090a847a0a7c7954121f3562507803db648",
+      "path": "docs/ACPHILAMBDA_R_ETA_RECORD_ADDITIVITY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_r_eta_record_additivity_non_supply_no_go_2026_07_04.py",
+      "title": "AC_phi_lambda R-eta Record-Additivity Non-Supply No-Go"
+    },
     "acphilambda_r_eta_transport_equality_stretch_no_go_note_2026-07-04": {
       "claim_id": "acphilambda_r_eta_transport_equality_stretch_no_go_note_2026-07-04",
       "claim_type_author_hint": "no_go",
@@ -110395,7 +110423,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a5fc4c6c6eaf852352a7c648e4e5b86a1f5d3fb4fd397e3482cb0ccf8ea52182",
+      "note_hash": "3e9ad1653043a02bba79c30f2550d84a097ba79bfcaa204cb7cbbd3e52ed84cc",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -126595,7 +126623,7 @@
       "bounded_theorem": 1554,
       "decoration": 3,
       "meta": 319,
-      "no_go": 336,
+      "no_go": 337,
       "none": 1216,
       "open_gate": 134,
       "positive_theorem": 274
@@ -126604,15 +126632,15 @@
       "bounded_theorem": 1959,
       "decoration": 3,
       "meta": 319,
-      "no_go": 440,
+      "no_go": 441,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14470,
+    "edge_count": 14473,
     "leaf_count": 1267,
-    "node_count": 3836,
+    "node_count": 3837,
     "root_count": 1102,
-    "runners_with_path": 3459
+    "runners_with_path": 3460
   }
 }

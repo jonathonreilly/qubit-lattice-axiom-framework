@@ -9,7 +9,7 @@ while preserving closed non-exact `H^2` sectors.
 
 Branch: `physics-loop/tier-a-elimination-block38-theta-g1-defect-suppression-support-20260704`
 Base: `physics-loop/tier-a-elimination-block37-theta-g1-4d-carrier-supply-no-go-20260704`
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4979
 
 ## Claim Movement
 
@@ -50,6 +50,6 @@ global exactness.
 
 ## Next Exact Action
 
-Commit/push/open PR. The next science move should derive a physical 4D
-carrier, derive a physical defect-penalty action theorem, or close the
-closed-nonexact interface directly.
+Monitor hosted `audit_pipeline` on PR #4979, then derive a physical 4D carrier,
+derive a physical defect-penalty action theorem, or close the closed-nonexact
+interface directly.

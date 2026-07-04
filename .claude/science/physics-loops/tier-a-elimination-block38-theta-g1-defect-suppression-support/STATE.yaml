@@ -34,7 +34,7 @@ checks:
   audit_lint_strict: "PASS; existing 23 warnings / 178 notices, no errors"
   diff_check: "PASS"
 review_loop_disposition: pass
-pr_status: pending
-pr_url: pending
-next_exact_action: "Commit/push/open PR; next science route should derive physical 4D carrier or a physical defect-penalty action theorem."
+pr_status: "PR #4979 open; hosted audit_pipeline pending at creation"
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4979"
+next_exact_action: "Monitor hosted audit_pipeline on PR #4979, then derive physical 4D carrier or a physical defect-penalty action theorem."
 stop_condition: "Continue Tier-A campaign unless runtime/tooling blocks or all viable residuals are documented blocked."

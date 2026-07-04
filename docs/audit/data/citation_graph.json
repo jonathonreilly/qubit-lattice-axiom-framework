@@ -41637,6 +41637,26 @@
       "to": "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16"
     },
     {
+      "from": "theta_mass_determinant_axiom_update_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "theta_mass_determinant_axiom_update_no_go_note_2026-07-04",
+      "to": "strong_cp_theta_zero_note"
+    },
+    {
+      "from": "theta_mass_determinant_axiom_update_no_go_note_2026-07-04",
+      "to": "realized_state_primitive"
+    },
+    {
+      "from": "theta_mass_determinant_axiom_update_no_go_note_2026-07-04",
+      "to": "kinetic_isotropy_primitive"
+    },
+    {
+      "from": "theta_mass_determinant_axiom_update_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
       "from": "theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01",
       "to": "staggered_only_det_positivity_case_a_note_2026-05-17"
     },
@@ -109545,7 +109565,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b37faaadc3869ccd0f13bf208dd688c8d001e8e393b70e9b66d97125011cdd4e",
+      "note_hash": "40651ce7e5f07b1f689d9d43b07883ac00fa22d3c7b45077953c2ab40be24251",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -117420,6 +117440,24 @@
       "path": "docs/THETA_LINK_STAR_GLUING_FRAME_CORRELATION_PAIR_COMPOSITE_DAGGER_EVENNESS_AND_ODD_BRANCH_PHASE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md",
       "runner_path": "scripts/theta_link_star_frame_correlation_gluing_2026_07_02.py",
       "title": "Link-Star Gluing Frame Theorems: the Relative Frame Rides the Composite Holonomy (Pairs and Chains), Stars Are Exactly Diagonal-Conjugation Objects, and Real-Weight Gluing Is Orientation-Reversal-Even \u2014 so the SU(2) Star Reduces to Pairwise Classes and the Orientation-Odd Branch Requires a Phase Insertion (Bounded Theorem)"
+    },
+    "theta_mass_determinant_axiom_update_no_go_note_2026-07-04": {
+      "claim_id": "theta_mass_determinant_axiom_update_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "strong_cp_theta_zero_note",
+        "realized_state_primitive",
+        "kinetic_isotropy_primitive",
+        "admitted_input_registry_tier_a_note_2026-05-23"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "c4ab746d0ceced8d10b78af382bd8a3afe35768286ac3d1c5d5684c6d510488d",
+      "path": "docs/THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/theta_mass_determinant_axiom_update_no_go_2026_07_04.py",
+      "title": "Theta Mass Determinant Axiom-Update No-Go"
     },
     "theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01": {
       "claim_id": "theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01",
@@ -125541,7 +125579,7 @@
       "bounded_theorem": 1553,
       "decoration": 3,
       "meta": 319,
-      "no_go": 319,
+      "no_go": 320,
       "none": 1216,
       "open_gate": 133,
       "positive_theorem": 274
@@ -125550,15 +125588,15 @@
       "bounded_theorem": 1958,
       "decoration": 3,
       "meta": 319,
-      "no_go": 423,
+      "no_go": 424,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14309,
-    "leaf_count": 1291,
-    "node_count": 3817,
+    "edge_count": 14314,
+    "leaf_count": 1292,
+    "node_count": 3818,
     "root_count": 1102,
-    "runners_with_path": 3440
+    "runners_with_path": 3441
   }
 }

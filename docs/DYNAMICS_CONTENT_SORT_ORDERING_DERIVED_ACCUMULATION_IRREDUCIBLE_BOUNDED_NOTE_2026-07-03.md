@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_content_sort_ordering_derived_accumulation_irreducible_bounded_note_2026-07-03
 claim_type: bounded_theorem
-claim_scope: "Bounded-support sorting of dynamics content: readout-invariance does not by itself derive across-event record permanence; supplied/clarified permanence gives record-set inclusion order and count only; accumulation/nonzero-production content remains irreducible relative to the quoted four-axiom surface; two owner-surface candidate sentences are recorded but not adopted."
+claim_scope: "Bounded-support sorting of dynamics content: landed Record permanence forces record-set non-decrease and excludes record removal; record-set inclusion gives order and count only; occurrence/nonzero-production content remains irreducible relative to the quoted four-axiom surface; the remaining accumulation owner-surface candidate forms are recorded but not adopted."
 upstream_dependencies:
   - minimal_axioms
   - record_history_order_time_rate_firewall_2026-06-05
@@ -23,33 +23,35 @@ runner: scripts/frontier_dynamics_sort_records_accumulate_2026_07_03.py
 ## FIREWALL (read first)
 
 - Nothing is adopted by this note. No axiom text is changed here.
-- Both candidate owner surfaces are flags only.
+- The remaining candidate owner surface is accumulation only; landed Record permanence is axiom text, not a candidate surface here.
 - The accumulation irreducibility claim is axiom-first and narrow: it is relative to the 20 enumerated axiom-block sentences (the four axiom sections plus the Qualification block), not to all conceivable future axiom systems.
 - All cited notes are review-pending or unaudited post the 2026-06-29 reset; the audit lane owns statuses.
-- The five source docs' quoted sentences are guarded LIVE against the files (whitespace-normalized substrings), so no quote is dead data. Review-context statements (PR numbers, cluster wiring) are quoted as supplied context, not read from files.
+- The runner quote-guards the Minimal axiom memo sentences against `docs/MINIMAL_AXIOMS_2026-06-29.md` and parses this note's residue table; it does not run quote guards against the other dependency notes.
 - No ledger, policy file, or audit-data surface is touched.
 - The words "adopt", "promote", and "select" describe candidate options only; nothing here performs them.
+
+Provenance: this repair follows the Record polish landed on 2026-07-03; two pinned prior-text Record sentences were re-keyed to the landed Record wording, and removal-exclusion is now axiom-forced by "records are permanent."
 
 ## Purpose
 
 This note separates four Dynamics questions that are easy to conflate, then maps the residue.
 
-- Permanence scope gap asks whether repeated-readout invariance already gives permanence across events.
-- Conditional record ordering asks what ordering follows once permanence is supplied or clarified.
-- Accumulation irreducibility asks whether accumulation, `H != 0`, or B-AXIS production content follows from the four quoted axioms.
-- The compression map records what would follow if the two owner surfaces were accepted, conserving every named residue.
-- The governance map states the owner surfaces and the TOE-leverage, adopting nothing.
+- Landed Record permanence asks what is now forced: record-set non-decrease and removal exclusion.
+- Record ordering asks what ordering follows from "records are permanent" plus "A state is a configuration of records."
+- Occurrence irreducibility asks whether any record-production event, `H != 0`, or B-AXIS production content follows from the four quoted axioms.
+- The compression map records what follows from landed permanence plus a supplied accumulation surface, conserving every named residue.
+- The governance map states the remaining accumulation owner surface and the TOE-leverage, adopting nothing.
 
-The result is bounded support plus a narrow no-go, not an adoption event. The runner exhibits every claim on exact finite witnesses (`Fraction`/`int`/`set`/`str` only, no floats), and it guards every quote against its source file.
+The result is bounded support plus a narrow no-go, not an adoption event. The runner exhibits every claim on exact finite witnesses (`Fraction`/`int`/`set`/`str` only, no floats), and it guards the Minimal axiom quotes against their source file.
 
 ## Supplied Surface: Quotes
 
-The runner reads these five source docs and checks each quoted sentence below as a live, whitespace-normalized substring of the file (backticks/emphasis stripped). The old dead-data failure mode -- quoted constants never compared to files -- is closed.
+The runner checks each Minimal axiom sentence below as a live, whitespace-normalized substring of `docs/MINIMAL_AXIOMS_2026-06-29.md` (backticks/emphasis stripped). The Record polish repair closes the dead pinned-sentence failure mode by re-keying to the landed Record wording.
 
 Minimal axiom memo, [`docs/MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md), Lattice / Qubit / Admissibility / Record sections plus the Qualification block. The runner enumerates every sentence of these blocks as one `SENTENCES` list of 20 entries, including both no-privilege distinction clauses, the `M_2(C)` sentence, both covariance sentences, the state sentence, and the law sentence. A representative subset:
 
-> "A site need not carry a record."
-> "When present, a record locks exactly one local possibility from the subset available at that site under Admissibility; the locked possibility is invariant under repeated readout."
+> "When present, a record locks exactly one admissible local possibility."
+> "A site never carries more than one record; records are permanent."
 > "Only records are readable. A readout value is determined by record content alone. For any finite collection of pairwise-disjoint records, scalar readout `I` is additive, with `I(empty)=0`."
 > "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations."
 > "For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions."
@@ -96,74 +98,71 @@ This rule is determined by the nearest-neighbor conditions, varies with them, re
 ## Source Liveness (quotes are live) [checks 01-03]
 
 - All 20 enumerated axiom-block sentences are live substrings of the axioms file, with a per-sentence pass report [check 01].
-- The six firewall/form/arrow quoted sentences are live substrings of their four source files [check 02].
-- The permanence option (a) in-file intent evidence is live: the axiom heading and the durable-realized-outcome lineage line [check 03].
+- The landed Record premises used by the exhibits are live in the axioms file: locks-admissible, unique-plus-permanent, and content-only readout [check 02].
+- Optionality is grounded in conditional wording, not a standalone quote: "When present, ..." makes records conditional rather than mandated, and the toy carries empty sites [check 03].
 
-## Permanence Scope Gap (bounded theorem) [checks 04-12]
+## Landed Record Permanence And Readout [checks 04-12]
 
-The quoted Record sentence locks a value "invariant under repeated readout". It does not literally say that later configurations cannot remove a record.
+The landed Record text now says: "A site never carries more than one record; records are permanent." That sentence forces non-decrease of the record set along admitted histories. A later configuration must contain every record present in an earlier configuration.
 
-The runner builds a finite toy on the covariant rule above. A record is a `(site, locked-value)` pair; a configuration is a set of such pairs; sites are points of `Z^3`. The shared configuration `C_STAR` has a `+1` domain and a `-1` domain meeting at a boundary plus a leaf, so several lattice sites carry no record and "A site need not carry a record." holds. The evolution-mortal step is an explicit map on configurations that removes exactly one pair.
+The runner builds a finite toy on the covariant rule above. A record is a `(site, locked-value)` pair; a configuration is a set of such pairs; sites are points of `Z^3`. The shared configuration `C_STAR` has a `+1` domain and a `-1` domain meeting at a boundary plus a leaf. Several lattice sites carry no record; that optionality follows from the conditional wording "When present, ..." because records are conditional, not mandated.
 
-Each quoted Record-axiom sentence is checked as an exact operation:
+Each landed Record clause is checked as an exact operation:
 
-- readout idempotence: reading a record twice returns the same value and leaves the record unchanged [check 04];
+- repeated readout stability: "A readout value is determined by record content alone" plus "records are permanent" gives the same value on repeated readout [check 04];
 - readout value is a pure function of record content [check 05];
 - scalar readout `I` is additive over disjoint records with `I(empty)=0` [check 06];
 - each present record locks exactly one Admissibility-available possibility under the covariant rule [check 07].
 
-Every quoted Record sentence holds BEFORE the step [check 08]. The runner then exhibits the Admissibility rule's own clauses on `C_STAR`: covariance under translation (including an odd-parity shift) and proper cubic rotation [check 09]; variation, two sites with different neighbor conditions carrying `{+1}` versus `{+1,-1}` [check 10]; and no-fiat-privilege, different-parity sites sharing an available set because availability reads neighbor content only [check 11].
+The single-configuration Record clauses hold before the exclusion exhibit [check 08]. The runner then exhibits the Admissibility rule's own clauses on `C_STAR`: covariance under translation (including an odd-parity shift) and proper cubic rotation [check 09]; variation, two sites with different neighbor conditions carrying `{+1}` versus `{+1,-1}` [check 10]; and no-fiat-privilege, different-parity sites sharing an available set because availability reads neighbor content only [check 11].
 
-The mortal step then deletes the `(0,0,0)` record. All surviving records are still admissible under the covariant rule, and the geometry is chosen so that each survivor's locked value stays inside its (possibly changed) available set; the availability at `(0,1,0)` changes from `{+1,-1}` to `{-1}`, exhibiting the vary-with clause in action; every quoted Record sentence still holds literally AFTER the step, yet the deleted record is gone [check 12]. The deleting step is not a readout, so it does not contradict the readout-invariance sentence read literally.
+The prior mortal-step witness is kept only as an excluded-step exhibit. It deletes the `(0,0,0)` record. All surviving records are still locally admissible under the covariant rule, and the availability at `(0,1,0)` changes from `{+1,-1}` to `{-1}`, exhibiting the vary-with clause in action. But the two-step history violates later-state containment because the earlier record set is not a subset of the later record set. The quote-guarded permanence sentence excludes that removal [check 12].
 
-Conclusion: permanence-across-events is not derivable from readout-invariance alone. The owner decision is OPEN and this note does not foreclose it:
+Conclusion: non-decrease of the record set along admitted histories is now derived from landed Record permanence. Record removal exits the irreducible remainder list.
 
-- Owner option (a): the Record sentence's intent needs a clarity fix. The in-file intent evidence is the axiom heading "Record / Fixed Reality" and the memo's lineage line, quoted verbatim: "The 2026-06-05 Record axiom named durable realized-outcome registration and gave a `K`/CPT orbit reading once a finite central-sector readout context and fixed `K`/CPT conjugation were supplied." Candidate clarity sentence: "A record, once present, is permanent: no later configuration removes or alters it. Reading it changes nothing."
-- Owner option (b): permanence is new content.
+## Record Non-Decrease And Ordering (bounded theorem) [checks 13-21]
 
-This note flags the owner decision and adopts nothing; whether (a) or (b) holds stays an open owner call.
-
-## Conditional Record Ordering (bounded theorem) [checks 13-21]
-
-Assume the permanence sentence is accepted or otherwise supplied, and combine it with "A state is a configuration of records." Each state is then the set of its present records, and permanence says a later state contains every earlier record. Ordering by record-set inclusion is therefore a **partial** order, not a total or strict one.
+Combine "records are permanent" with "A state is a configuration of records." Each state is then the set of its present records, and permanence says a later state contains every earlier record. Ordering by record-set inclusion is therefore a **partial** order, not a total or strict one.
 
 The runner exhibits the partial-order laws exactly on the states `{}`, `{A}`, `{A,V}`, `{A,V,R}`: reflexivity [check 13], antisymmetry [check 14], transitivity [check 15]. It then supplies a **realized history** -- a sequence of states -- with idle steps and a multi-registration step: `[{}, {}, {A}, {A}, {A,V,R}]`. Forward inclusion holds at every step, and the idle steps give **equal** consecutive states, unordered by records alone [check 16]. Strict increase happens exactly at the two registration events; the step from `{A}` to `{A,V,R}` registers two records at once, and `registration_events` sums the set-differences `|S_{i+1} \ S_i|` to `3` [check 17].
 
 Because idle steps leave the record-set fixed, record-time is EVENT-time: the history has four steps but only three distinct record-states and two registration events, so record-time is strictly coarser than step-time [check 18]. This is exactly what the count-not-rate firewall protects: "A record history supplies ordered words and counts... A physical time metric or transition rate requires an additional clock/production normalization." Idle steps advance step-time without advancing record-time, and record-history order says nothing about the gap.
 
-A strict decrease would require deleting a record, which permanence forbids, so there are no cycles [check 19]. The order is relabel-invariant (a site permutation is an order isomorphism) and merge-monotone (`A <= B` gives `A|X <= B|X`) [check 20]. Finally, the firewall scope: the same strict chain embedded in two exact step-grids has identical order and counts, but the count-per-step contrast is `1` versus `1/2`, so no rate, metric, clock, generator, or normalization is fixed here; forward is the definitional inclusion direction, not a thermodynamic arrow [check 21]. The arrow note stays untouched and non-overlapping: it remains "**not** a from-nothing derivation of the arrow", whose existence "still requires the supplied low-entropy boundary"; inclusion order imports no entropy boundary, and the arrow note imports no inclusion order.
+A strict decrease would require deleting a record, which landed permanence forbids, so there are no cycles [check 19]. The order is relabel-invariant (a site permutation is an order isomorphism) and merge-monotone (`A <= B` gives `A|X <= B|X`) [check 20]. Finally, the firewall scope: the same strict chain embedded in two exact step-grids has identical order and counts, but the count-per-step contrast is `1` versus `1/2`, so no rate, metric, clock, generator, or normalization is fixed here; forward is the definitional inclusion direction, not a thermodynamic arrow [check 21]. The arrow note stays untouched and non-overlapping: it remains "**not** a from-nothing derivation of the arrow", whose existence "still requires the supplied low-entropy boundary"; inclusion order imports no entropy boundary, and the arrow note imports no inclusion order.
 
 The realized history is an explicit IMPORT: the axioms have no history vocabulary, so a supplied sequence of states is a modeling ingredient, carried as a residue row, not derived.
 
-## Accumulation Irreducibility (narrow no-go, axiom-first) [checks 22-25]
+## Occurrence Irreducibility (narrow no-go, axiom-first) [checks 22-25]
 
-The narrow no-go asks whether "something happens" follows from the four quoted axioms. It does not, on two exact witnesses.
+The narrow no-go asks whether occurrence, meaning that any new record is ever produced, follows from the four quoted axioms. It does not. One frozen-history witness suffices.
 
-Static witness. The fixed admissible configuration `C_STAR` with the constant history (nothing ever changes) is admissible under the covariant rule at every element of the history [check 22]. It is then guarded against every one of the 20 enumerated axiom-block sentences individually, with a per-sentence pass report, so the witness is genuinely sentence-complete rather than checked against a hand-picked subset [check 23]. Each sentence maps to an exact predicate on the witness: sites are `Z^3` points and the identity law is site-equivariant (no site privileged); locked values lie in the two-value `M_2(C)` domain and the value-flip is a symmetry (no possibility privileged); the one covariant Admissibility rule is covariant and varies with neighbors; the three Record sentences (need-not-carry, locks-one with readout-invariance, additive readout) hold; every state is a configuration of records; and the identity law is total and single-valued, privileging no state. The constant history registers zero new records, so accumulation is not forced while every one of the 20 sentences holds -- no sentence forces change [check 24].
+Frozen-history witness. The fixed admissible configuration `C_STAR` with the constant history (nothing ever changes) is admissible under the covariant rule at every element of the history, and permanence containment holds because every step is equal [check 22]. It is then guarded against every one of the 20 enumerated axiom-block sentences individually, with a per-sentence pass report, so the witness is genuinely sentence-complete rather than checked against a hand-picked subset [check 23]. Each sentence maps to an exact predicate on the witness: sites are `Z^3` points and the identity law is site-equivariant (no site privileged); locked values lie in the two-value `M_2(C)` domain and the value-flip is a symmetry (no possibility privileged); the one covariant Admissibility rule is covariant and varies with neighbors; Record checks cover locked admissible values, one-record-per-site uniqueness, permanence along admitted histories, content-only readout, and additive readout; every state is a configuration of records; and the identity law is total and single-valued, privileging no state. Several sites remain empty because the Record sentence is conditional, not because a separate optionality sentence is quoted. The constant history registers zero new records, so occurrence is not forced while every one of the 20 sentences holds [check 24].
 
-`H = 0` witness. Even the form-class result contains the zero generator. The runner takes exact integer `2x2` generators: the zero generator commutes with the Gauss generator (member of the gauge-covariant class), a nonzero diagonal generator also commutes (the class is non-unique and closed), while an off-diagonal control does not commute (fails class membership) [check 25]. This restates, on an exact witness, the firewall "The class contains `H = 0`..." and the form note "It does **not** force non-trivial dynamics: `H = 0` is in the class."; "Gauge-covariance + locality + Hermiticity supply the **basis** of allowed local terms, not the combination."
+`H = 0` witness. Separately, the form-class result contains the zero generator. The runner takes exact integer `2x2` generators: the zero generator commutes with the Gauss generator (member of the gauge-covariant class), a nonzero diagonal generator also commutes (the class is non-unique and closed), while an off-diagonal control does not commute (fails class membership) [check 25]. This restates, on an exact witness, the firewall "The class contains `H = 0`..." and the form note "It does **not** force non-trivial dynamics: `H = 0` is in the class."; "Gauge-covariance + locality + Hermiticity supply the **basis** of allowed local terms, not the combination."
 
-Therefore any non-triviality content is genuinely new relative to the quoted axioms: "records accumulate", `H != 0`, and B-AXIS used as production or supplied-axis content. The candidate accumulation sentence is the second owner surface, presented in the governance map as a quantifier-honest pair of forms and adopted nowhere here.
+Therefore the split verdict is: non-decrease is forced by Record permanence, while occurrence and record production are not theorems of the quoted axioms. Any non-triviality content remains new relative to the quoted axioms: "records accumulate", `H != 0`, and B-AXIS used as production or supplied-axis content. The remaining candidate accumulation sentence is presented in the governance map as a quantifier-honest pair of forms and adopted nowhere here.
+
+The irreducible remainder list stays at ordering-to-transfer-axis, rate/time metric, arrow, and record production; record removal exits because permanence closes it.
 
 ## No-Go Discipline Gate
 
 | Gate | Scope check |
 |---|---|
-| N1 | Alternative routes: ATTEMPTED static-history route gives an admissible constant record history satisfying every quoted axiom-block sentence; ATTEMPTED readout-invariance route fixes repeated readout but not across-event persistence; ATTEMPTED Admissibility route supplies a covariant neighbor rule without record production; ATTEMPTED law route uses the identity law, which is total and single-valued on its domain; RULED OUT BY PRIOR the forced dynamics-form class includes `H = 0`; OPEN realized-history vocabulary remains an import rather than an axiom consequence. |
+| N1 | Alternative routes: ATTEMPTED static-history route gives an admissible constant record history satisfying every quoted axiom-block sentence; LANDED permanence route forces non-decrease and excludes removal but still does not force record production; ATTEMPTED Admissibility route supplies a covariant neighbor rule without record production; ATTEMPTED law route uses the identity law, which is total and single-valued on its domain; RULED OUT BY PRIOR the forced dynamics-form class includes `H = 0`; OPEN realized-history vocabulary remains an import rather than an axiom consequence. |
 | N2 | No inflated wall set is claimed. The collapsed residual is nontrivial record production/accumulation; B-AXIS, kernel convolution, and realized-history vocabulary are separately carried open where used. |
 | N3 | Hidden-wall scan: "assume", "supplied", "bridge", "external", and "owner" language is explicit residue language, not hidden derivation. No unlabelled admission is used to prove accumulation. |
 | N4 | Residual matching: the nontriviality firewall and dynamics-form note attack exactly the `H = 0`/nonzero-production residual; the order/rate firewall attacks rate, metric, and clock only; the arrow note attacks the low-entropy boundary only. No cited witness is used outside its residual. |
 | N5 | Rhetoric is scoped to the quoted four-axiom surface and the exact finite static/`H = 0` witnesses. It is not a no-go for future owner-adopted axioms, supplied dynamics, or derived production laws. |
-| N6 | Partial closure path is explicit: permanence and accumulation are owner-surface candidate sentences, not silently adopted axioms, primitives, or Tier-A admissions. Approved primitives are not used as no-go walls. |
-| N7 | Steelman: the "Record / Fixed Reality" heading and durable-record lineage could mean permanence was intended all along. This note leaves that owner call open; the no-go is only against the literal quoted readout-invariance sentence without an added permanence clarification. |
+| N6 | Partial closure path is explicit: permanence is now landed Record axiom text, while accumulation remains an owner-surface candidate sentence, not a silently adopted axiom, primitive, or Tier-A admission. Approved primitives are not used as no-go walls. |
+| N7 | Steelman: the Record polish closes the removal question at axiom grade. The remaining no-go is only against forced occurrence or production, not against non-decrease. |
 | N8 | Echo: this matches the landed dynamics nontriviality and record order/rate firewall shape; neither firewall is retired here. The possible retirement mechanism is precisely the owner decision plus later premise-hash/audit wave, not this note. |
 
 ## Compression Map (bounded support) [checks 26-33]
 
-For this map only, assume permanence is supplied and accumulation is supplied. Then:
+For this map only, use landed permanence and assume accumulation is supplied. Then:
 
 - (a) production is definitional: an event is the registration of one record, and the production count along a permanence-respecting chain equals the count delta [check 26]; `registration_events` sums the set-differences `|S_{i+1} \ S_i|`, so a multi-registration step `{} -> {r1,r2}` counts `2` and the realized history with idle steps counts `3` [check 27];
-- (b) the single discharge map (identical here and in the runner): P3 (persistence) maps to the permanence sentence; P2 (production) maps to the accumulation sentence -- FORM-E discharges `P2` directly, FORM-H discharges `P2` via the definitional move event := registration-step; the map touches only `P2`/`P3` (`P1`/`P4`/`CHART-MIX` untouched) [check 28];
+- (b) the single discharge map: P3 (persistence) maps to the landed permanence sentence; P2 (production) maps to the accumulation sentence -- FORM-E discharges `P2` directly, FORM-H discharges `P2` via the definitional move event := registration-step; the map touches only `P2`/`P3` (`P1`/`P4`/`CHART-MIX` untouched) [check 28];
 - (c) block #4855's `C-add`: chain concatenation supplies step composition (associative, additive counts); the kernel-convolution clause is NOT auto-supplied and becomes a named derivation target from one-parameter composition + locality + record-compatibility [check 29];
 - (d) the landed conditional ladder re-hangs, each rung carrying its named premise: form forced (bounded bridges) -> Stone-unique generator (given the B-AXIS supplied axis, which stays external) -> `d_t` parity (ABJ external premise) -> `d_t = 1` (single-generator N5 cap) -> Dirac branch (review-pending #4797); nothing beyond form/Stone is marked unconditional and the terminal rung is review-pending [check 30];
 - (e) the ordering-to-lattice-transfer-axis bridge is a NAMED OPEN derivation target: the conditional record-ordering outputs are exactly `{order, count}`, and B-AXIS is not among them, so ordering alone does not hand the anomaly work its B-AXIS transfer construction [check 31];
@@ -173,12 +172,12 @@ Complete residue enumeration is the conservation rule: nothing dropped, nothing 
 
 | Item | Role under this map | Status in this note |
 |---|---|---|
-| Record permanence premise (owner surface; OPEN (a) clarity / (b) new-content) | discharges `P3` if accepted | owner-surface flag only |
+| Record permanence axiom sentence (landed Record text) | discharges `P3`; excludes record removal | axiom text; removal excluded |
 | Accumulation sentence FORM-E (per-event) | discharges `P2` directly | owner-surface flag only |
 | Accumulation sentence FORM-H (per-history) | discharges `P2` via definitional event | owner-surface flag only |
 | P1 (#4854 premise family) | named premise family member | review-pending; carried open |
 | P2 production premise | production premise | maps to accumulation sentence |
-| P3 persistence premise | persistence premise | maps to permanence sentence |
+| P3 persistence premise | persistence premise | maps to landed permanence sentence |
 | P4 (#4854 premise family) | named premise family member | review-pending; carried open |
 | CHART-MIX (#4854 premise family) | named premise family | review-pending; carried external |
 | C-add (#4855 composition premise) | chain-concatenation support | review-pending; carried open |
@@ -204,37 +203,38 @@ Complete residue enumeration is the conservation rule: nothing dropped, nothing 
 | All cited notes: unaudited post 2026-06-29 reset | post-reset status of every cited note | carried open; audit lane owns |
 | Audit statuses (audit-lane authority) | audit-lane authority | untouched |
 
-The compression map erases no named premise or residual. It only records which items collapse if the two owner surfaces are accepted, and which named externals -- B-AXIS foremost -- survive regardless.
+The compression map erases no named premise or residual. It records which items collapse from landed permanence plus an accepted accumulation surface, and which named externals -- B-AXIS foremost -- survive regardless.
 
 ## Governance Map [checks 34-35]
 
-Exactly two owner surfaces are produced [check 34]:
+Exactly one remaining owner surface is produced [check 34]. The landed Record permanence sentence is no longer an owner-surface candidate here:
 
-1. the Record-axiom permanence sentence: "A record, once present, is permanent: no later configuration removes or alters it. Reading it changes nothing." The owner decides whether this is (a) a clarity fix or (b) new content; this note does not foreclose that call, and carries the in-file intent evidence for (a) without ruling on it.
-2. the accumulation sentence, presented as a quantifier-honest pair of forms, adopting neither:
+> "A site never carries more than one record; records are permanent."
+
+The remaining surface is the accumulation sentence, presented as a quantifier-honest pair of forms, adopting neither:
    - FORM-E (per-event): "Every step of a realized history registers at least one new record." This is the stronger form; it makes record-time equal to step-time and discharges #4854's `P2` directly.
    - FORM-H (per-history): "Records accumulate: every realized history keeps registering new records; no configuration is final." This is the weaker form; it permits idle steps, and `P2` discharges only via the definitional move event := registration-step.
 
 The trade is stated plainly and left for the panel: FORM-E buys a direct `P2` discharge at the cost of forbidding idle steps; FORM-H keeps idle steps but needs the definitional event move to discharge `P2`. The accumulation sentence uses only defined vocabulary; "realized history" is itself an import, carried as a residue row.
 
-Panel plan: a blind panel hones both surfaces against the permanence, ordering, accumulation, and compression-map tests; then the owner rules, including the open (a)/(b) call on the permanence surface and the FORM-E/FORM-H choice; then a premise-hash wave follows if wording is accepted. Nothing is adopted here, and the audit lane owns all status changes.
+Panel plan: a blind panel hones the accumulation surface against the permanence, ordering, occurrence, and compression-map tests; then the owner rules on the FORM-E/FORM-H choice; then a premise-hash wave follows if wording is accepted. Nothing is adopted here, and the audit lane owns all status changes.
 
-TOE-leverage statement [check 35]: the two owner surfaces replace the `H != 0` nonzero-dynamics premise and ground event-ordering; nothing here replaces B-AXIS, which stays external because the ordering-to-transfer-axis bridge is OPEN. The conditional ladder's other rungs keep their named statuses (#4797 review-pending, N5 cap, ABJ external, past-hypothesis). So the accumulation sentence is the only genuinely new sentence among the content sorted here, and the leverage is honest about what remains external.
+TOE-leverage statement [check 35]: landed permanence grounds event-ordering, and the accumulation surface replaces the `H != 0` nonzero-dynamics premise if accepted; nothing here replaces B-AXIS, which stays external because the ordering-to-transfer-axis bridge is OPEN. The conditional ladder's other rungs keep their named statuses (#4797 review-pending, N5 cap, ABJ external, past-hypothesis). So the accumulation sentence is the only genuinely new sentence among the content sorted here, and the leverage is honest about what remains external.
 
 ## Consequence
 
-- Readout-invariance alone gives no permanence-across-events theorem.
-- Permanence gives a partial inclusion order; inclusion order gives count and event-orientation only, firewall-scoped away from rate/metric/clock, with record-time coarser than step-time.
-- Accumulation is new content relative to the four quoted axioms, now against all 20 enumerated axiom-block sentences.
-- The two owner surfaces, if accepted, replace the `H != 0` nonzero-dynamics import and ground event-ordering while preserving every named external, B-AXIS included.
+- Landed Record permanence forces non-decrease of the record set and excludes record removal.
+- Record-set inclusion gives count and event-orientation only, firewall-scoped away from rate/metric/clock, with record-time coarser than step-time.
+- Occurrence and record production remain not theorems relative to the four quoted axioms, now against all 20 enumerated axiom-block sentences.
+- Landed permanence plus an accepted accumulation surface would replace the `H != 0` nonzero-dynamics import and ground event-ordering while preserving every named external, B-AXIS included.
 
 ## Does NOT
 
-- Does not change any axiom, and does not adopt either candidate surface or foreclose the (a)/(b) permanence call.
+- Does not change any axiom, and does not adopt the accumulation candidate surface.
 - Does not derive physical time, rate, metric, clock, or generator scale.
 - Does not derive the thermodynamic arrow beyond the past-hypothesis residual.
 - Does not derive the ABJ input, the B-AXIS transfer construction from ordering alone, or the kernel-convolution theorem.
-- Does not edit audit data, policy files, or ledger surfaces, and does not read any file outside the five quoted notes and this note's own residue table.
+- Does not edit audit data, policy files, or ledger surfaces.
 
 ## Dependencies
 
@@ -247,12 +247,13 @@ TOE-leverage statement [check 35]: the two owner surfaces replace the `H != 0` n
 
 ## No-Promotion
 
-This note is a bounded-support source artifact for owner review. It gives bounded-theorem checks, a narrow no-go, and a governance map. It makes no package-status claim, predicts no audit outcome, and requests no audit outcome. The owner-surface sentences remain flags, and the permanence (a)/(b) call and the FORM-E/FORM-H choice remain open owner decisions. The named open targets remain open: kernel convolution from one-parameter composition + locality + record-compatibility, and the ordering-to-lattice-transfer-axis (B-AXIS) bridge.
+This note is a bounded-support source artifact for owner review. It gives bounded-theorem checks, a narrow no-go, and a governance map. It makes no package-status claim, predicts no audit outcome, and requests no audit outcome. The accumulation owner-surface forms remain flags, and the FORM-E/FORM-H choice remains an open owner decision. The named open targets remain open: kernel convolution from one-parameter composition + locality + record-compatibility, and the ordering-to-lattice-transfer-axis (B-AXIS) bridge.
 
 ## Summary
 
 - Runner: 35 exact checks, `TOTAL: PASS=35 FAIL=0`, no floats.
-- Owner surface 1 (permanence, OPEN (a) clarity / (b) new-content): "A record, once present, is permanent: no later configuration removes or alters it. Reading it changes nothing."
-- Owner surface 2 (accumulation, both forms): FORM-E "Every step of a realized history registers at least one new record."; FORM-H "Records accumulate: every realized history keeps registering new records; no configuration is final."
-- Leverage: the two surfaces replace the `H != 0` nonzero-dynamics premise and ground event-ordering; B-AXIS stays external because the ordering-to-transfer-axis bridge is OPEN; the accumulation sentence is the only genuinely new sentence among the content sorted here.
+- Landed Record permanence: "A site never carries more than one record; records are permanent."
+- Remaining owner surface (accumulation, both forms): FORM-E "Every step of a realized history registers at least one new record."; FORM-H "Records accumulate: every realized history keeps registering new records; no configuration is final."
+- Split verdict: non-decrease is FORCED by landed permanence; occurrence is NOT a theorem on the frozen-history witness.
+- Leverage: landed permanence grounds event-ordering; the accumulation surface replaces the `H != 0` nonzero-dynamics premise if accepted; B-AXIS stays external because the ordering-to-transfer-axis bridge is OPEN.
 - Compression-map named targets: kernel convolution from one-parameter composition + locality + record-compatibility; ordering-to-lattice-transfer-axis (B-AXIS) bridge.

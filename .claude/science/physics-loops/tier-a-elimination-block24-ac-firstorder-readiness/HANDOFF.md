@@ -7,7 +7,8 @@ first-order staggered determinant theorem plus July 4 hygiene.
 
 Branch: `physics-loop/tier-a-elimination-block24-ac-firstorder-readiness-20260704`
 Base: `physics-loop/tier-a-elimination-block23-kreal-physicalization-20260704`
-PR: pending
+Source commit: `67956a379c64`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4956
 
 ## Expected Claim Movement
 
@@ -38,4 +39,5 @@ physical matter-action horn.
 
 ## Next Exact Action
 
-Commit, push, and open a stacked block24 PR.
+Verify PR status, then continue toward physical horn selection, R-eta
+readout, or theta determinant/gauge routes.

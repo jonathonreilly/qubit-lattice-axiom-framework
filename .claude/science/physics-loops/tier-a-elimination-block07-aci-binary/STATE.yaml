@@ -6,4 +6,6 @@ target: AC_phi_lambda measure-side occupancy realization binary
 claim_type: no_go
 registry_edits: false
 retirement_claimed: false
-status: source_packaged_pending_verification
+status: pr_open
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4932
+source_commit: 0cc5c4a73

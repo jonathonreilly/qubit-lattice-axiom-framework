@@ -41937,6 +41937,34 @@
       "to": "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04"
     },
     {
+      "from": "theta_g1_exact_branch_constraint_no_go_note_2026-07-04",
+      "to": "theta_g1_defect_closure_current_surface_no_go_note_2026-07-04"
+    },
+    {
+      "from": "theta_g1_exact_branch_constraint_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "theta_g1_exact_branch_constraint_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "theta_g1_exact_branch_constraint_no_go_note_2026-07-04",
+      "to": "theta_gauge_positive_route_stretch_status_2026-07-04"
+    },
+    {
+      "from": "theta_g1_exact_branch_constraint_no_go_note_2026-07-04",
+      "to": "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02"
+    },
+    {
+      "from": "theta_g1_exact_branch_constraint_no_go_note_2026-07-04",
+      "to": "theta_gauge_winding_axiom_update_no_go_note_2026-07-04"
+    },
+    {
+      "from": "theta_g1_exact_branch_constraint_no_go_note_2026-07-04",
+      "to": "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04"
+    },
+    {
       "from": "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04",
       "to": "theta_gauge_positive_route_stretch_status_2026-07-04"
     },
@@ -110148,7 +110176,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "aca34ab418a6b5349ea6bf0ad887409be14e953d11eaa41644512954cff2ffb5",
+      "note_hash": "699a267d2a2c1e4178e0423892b16b395f59849cadfbf41f362d3e978674a95b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118009,6 +118037,26 @@
       "path": "docs/THETA_G1_DEFECT_CLOSURE_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md",
       "runner_path": "scripts/theta_g1_defect_closure_current_surface_no_go_2026_07_04.py",
       "title": "Theta G1 Defect Closure Current Surface No-Go Note"
+    },
+    "theta_g1_exact_branch_constraint_no_go_note_2026-07-04": {
+      "claim_id": "theta_g1_exact_branch_constraint_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "theta_g1_defect_closure_current_surface_no_go_note_2026-07-04",
+        "minimal_axioms",
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "theta_gauge_positive_route_stretch_status_2026-07-04",
+        "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02",
+        "theta_gauge_winding_axiom_update_no_go_note_2026-07-04",
+        "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "83b6ddd1f46a10ab6532478ca0a77124768a0df7cef8b58ea389c6dae11ce8db",
+      "path": "docs/THETA_G1_EXACT_BRANCH_CONSTRAINT_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/theta_g1_exact_branch_constraint_no_go_2026_07_04.py",
+      "title": "Theta G1 Exact-Branch Constraint No-Go Note"
     },
     "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04": {
       "claim_id": "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04",
@@ -126242,7 +126290,7 @@
       "bounded_theorem": 1553,
       "decoration": 3,
       "meta": 319,
-      "no_go": 330,
+      "no_go": 331,
       "none": 1216,
       "open_gate": 134,
       "positive_theorem": 274
@@ -126251,15 +126299,15 @@
       "bounded_theorem": 1958,
       "decoration": 3,
       "meta": 319,
-      "no_go": 434,
+      "no_go": 435,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14418,
+    "edge_count": 14425,
     "leaf_count": 1269,
-    "node_count": 3829,
+    "node_count": 3830,
     "root_count": 1102,
-    "runners_with_path": 3452
+    "runners_with_path": 3453
   }
 }

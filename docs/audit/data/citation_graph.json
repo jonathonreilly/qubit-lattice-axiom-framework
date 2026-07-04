@@ -59762,12 +59762,12 @@
     },
     "alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18": {
       "claim_id": "alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "b7a94dfc85ae8a49596cc51228ed68a794d728e8b154ed97ce94b2892285d471",
+      "note_hash": "98186ceca549640b127a112b6bf1be7d5a43f3e2afec6c88383389a29ab6091c",
       "path": "docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md",
       "runner_path": "scripts/frontier_alpha_s_heavy_threshold_matching_kernel_2026_06_18.py",
       "title": "Alpha_s Heavy-Threshold Matching Kernel Theorem Note (2026-06-18)"
@@ -125460,22 +125460,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1555,
+      "bounded_theorem": 1556,
       "decoration": 3,
       "meta": 319,
       "no_go": 316,
-      "none": 1216,
+      "none": 1215,
       "open_gate": 133,
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1960,
+      "bounded_theorem": 1961,
       "decoration": 3,
       "meta": 319,
       "no_go": 420,
       "none": 248,
       "open_gate": 207,
-      "positive_theorem": 659
+      "positive_theorem": 658
     },
     "edge_count": 14296,
     "leaf_count": 1290,

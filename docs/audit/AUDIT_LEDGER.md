@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 856 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1943 |
+| unaudited | 1944 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 25 |
+| ~~audited_conditional~~ | 24 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -61,21 +61,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1229 |
-| `audited_conditional` | 25 |
+| `audited_conditional` | 24 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2281 |
+| `unaudited` | 2282 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1988 |
+| `bounded_theorem` | 1989 |
 | `decoration` | 50 |
 | `meta` | 344 |
 | `no_go` | 466 |
 | `open_gate` | 185 |
-| `positive_theorem` | 612 |
+| `positive_theorem` | 611 |
 
 | criticality | count |
 |---|---:|
@@ -1372,7 +1372,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -1803,19 +1802,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For the supplied certificate outputs/alpha_s_direct_wilson_loop_certificate_2026-04-30.json, the runner verifies Wilson-loop/static-potential authority on the configured beta=6 Wilson surface, blocks alpha_LM/u0/plaquette authority, checks three >=500-configuration volumes, and quarantines physical alpha_s(M_Z) bridge fields as context only.  _(class `A`)_
 - **chain closes:** True — The current repo certificate passes the direct runner and an independent field inspection: three distinct volumes, 500 configurations each, 72 qualified Wilson-loop statistics, 12 plateau diagnostics, 18 finite local alpha_qq values, and finite global Cornell parameters. The bounded/non-claim discipline is satisfied because the verdict ratifies only the finite packet gate and does not assert closure or impossibility for the physical alpha_s(M_Z) bridge.
 - **rationale:** The narrowed finite certificate gate closes on its own terms. The runner does not use the historical alpha_LM/u0 plaquette chain as authority, and direct inspection confirms that the physical scale/running fields remain quarantined rather than load-bearing. This is retained only at the bounded certificate level; it is not evidence for a physical alpha_s(M_Z) theorem or any downstream publication promotion.
-- **auditor confidence:** high
-
-### `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18`
-
-- **Note:** [`ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md`](../../docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Algebraic one-loop SU(3) piecewise running and Lambda-transition consequences conditional on imposing continuity of alpha_s across abstract heavy-flavor thresholds.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Continuity at the threshold, alpha_s^hi(M) = alpha_s^lo(M), imposes b0(n_f_hi) log(M/Lambda_hi) = b0(n_f_lo) log(M/Lambda_lo), yielding Lambda_lo = M * (Lambda_hi / M) ** [b0(n_f_hi) / b0(n_f_lo)].  _(class `A`)_
-- **chain closes:** False — The algebra from an imposed continuity condition to the Lambda transition and summed-log piecewise map is correct. The restricted packet does not derive the threshold continuity condition itself from the declared SU(3) one-loop running surface.
-- **rationale:** Issue: the equality alpha_s^hi(M) = alpha_s^lo(M) is imposed as the leading-order matching rule, not derived from cited retained inputs. Why this blocks: the one-loop beta equation fixes fixed-n_f segment slopes but not the finite jump or no-jump boundary condition at a threshold, and the runner sets x_below = current_x before checking continuity. Repair target: a retained/native LO decoupling theorem or approved premise deriving continuity across the heavy-threshold effective theories. Claim boundary until fixed: the packet supports only algebraic consequences of assumed continuity matching.
 - **auditor confidence:** high
 
 ### `alpha_s_sommer_static_potential_root_kernel_theorem_note_2026-06-18`

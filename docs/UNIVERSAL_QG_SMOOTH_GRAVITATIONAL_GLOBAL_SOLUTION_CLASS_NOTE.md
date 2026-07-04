@@ -1,5 +1,7 @@
 # Universal QG Smooth Gravitational Global Solution Class
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15  
 **Role:** direct-universal quantum-gravity / smooth global weak gravitational
 solution-class theorem

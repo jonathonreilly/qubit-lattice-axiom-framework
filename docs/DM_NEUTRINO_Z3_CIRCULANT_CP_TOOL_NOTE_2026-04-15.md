@@ -1,5 +1,7 @@
 # DM Neutrino Minimal `Z_3` Circulant CP Tool
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15
 **Status:** exact structural tool identifying the minimal `Z_3`-covariant
 Dirac texture family that can support a nonzero leptogenesis CP kernel

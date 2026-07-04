@@ -1,5 +1,7 @@
 # DM Wilson Direct Descendant Local Schur Source-Family Reduction Note
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-18
 **Status:** exact conditional local Schur reduction note: once an invertible
 charged microscopic block `D_-` and charged support `E_e` are supplied, the

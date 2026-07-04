@@ -1,5 +1,7 @@
 # DM Wilson-to-`dW_e^H` Adjacent-Chain Normal-Form Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-18
 **Status:** exact current-stack theorem clarifying that the adjacent-chain
 Wilson route is a normal form inside the structured rank-`3` embedding class,

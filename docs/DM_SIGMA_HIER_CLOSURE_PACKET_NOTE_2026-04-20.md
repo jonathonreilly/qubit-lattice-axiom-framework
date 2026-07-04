@@ -1,5 +1,7 @@
 # DM Sigma-Hier Closure Packet
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-20  
 **Lane:** DM A-BCC sigma-chain / hierarchy-permutation ambiguity  
 **Status:** authoritative closure packet for the hierarchy-permutation

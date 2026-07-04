@@ -1,7 +1,7 @@
 # Record Occurrence Thinned-IID Frequency Bridge
 
 **Date:** 2026-07-01
-**Type:** bounded support theorem / finite sparse-record normal form
+**Type:** bounded_theorem — bounded support theorem / finite sparse-record normal form
 **Claim-strength label:** bounded support theorem for a supplied occurrence
 kernel and supplied IID reset/preparation protocol
 **Primary runner:**

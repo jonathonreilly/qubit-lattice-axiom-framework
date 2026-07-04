@@ -1,5 +1,7 @@
 # Signed Gravity Nonlocal / Boundary `chi_g` Target Note
 
+**Claim type:** open_gate
+
 **Date:** 2026-04-25
 **Status:** theorem-target note only; no signed-gravity sector claim
 

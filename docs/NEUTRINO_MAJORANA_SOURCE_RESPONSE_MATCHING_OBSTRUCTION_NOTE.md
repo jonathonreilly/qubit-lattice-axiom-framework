@@ -1,5 +1,7 @@
 # Majorana Source-Response Matching Obstruction
 
+**Claim type:** no_go
+
 **Date:** 2026-04-15
 **Status:** exact frontier boundary on the current source-response matching class
 **Atlas placement:** canonical toolkit on `main` at

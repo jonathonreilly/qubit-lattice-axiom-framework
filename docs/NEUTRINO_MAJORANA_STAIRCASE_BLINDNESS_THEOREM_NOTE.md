@@ -1,5 +1,7 @@
 # Majorana Staircase-Blindness Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15
 **Status:** exact scale-boundary theorem on the current Majorana source stack
 **Atlas placement:** canonical toolkit on `main` at

@@ -1,5 +1,7 @@
 # Frontier Extension: Lane B Protects Lane A — Joint Composition Narrow Note
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-05-17
 **Status:** narrow positive composition theorem; advances the
 frontier-extension lane-opening note but does not close the lane

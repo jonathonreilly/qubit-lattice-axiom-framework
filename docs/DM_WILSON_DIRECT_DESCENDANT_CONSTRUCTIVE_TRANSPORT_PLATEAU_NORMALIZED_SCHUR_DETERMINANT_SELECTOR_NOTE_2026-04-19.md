@@ -1,5 +1,7 @@
 # DM Wilson Direct-Descendant Constructive Transport Plateau Normalized Schur-Determinant Selector
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-19  
 **Status:** exact current-branch reduction of the Schur spectral-isotropy
 selector family to one explicit local scalar law on the certified constructive

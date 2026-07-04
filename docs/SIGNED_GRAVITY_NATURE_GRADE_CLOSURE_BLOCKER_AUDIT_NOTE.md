@@ -1,5 +1,7 @@
 # Signed Gravity Nature-Grade Closure Blocker Audit Note
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-26
 **Status:** hard tensor blocker reduced by oriented tensor-source lift;
 nature-grade closure not yet achieved

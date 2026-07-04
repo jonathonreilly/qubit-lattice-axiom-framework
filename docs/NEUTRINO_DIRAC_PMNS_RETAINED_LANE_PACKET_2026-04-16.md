@@ -1,5 +1,7 @@
 # Neutrino Dirac / PMNS Retained Lane Packet (2026-04-16)
 
+**Claim type:** meta
+
 **Primary runner:** [`scripts/frontier_lepton_single_higgs_pmns_triviality.py`](../scripts/frontier_lepton_single_higgs_pmns_triviality.py) (PASS=32/0)
 
 ## Scope

@@ -1,5 +1,7 @@
 # PMNS Selector Unique Amplitude Slot
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15
 **Status:** exact reduced-form theorem on the microscopic bridge amplitude
 slot

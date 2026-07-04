@@ -1,5 +1,7 @@
 # Majorana Adjacent Singlet-Placement Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15
 **Status:** exact positive placement theorem on the minimal adjacent
 local-to-generation lift

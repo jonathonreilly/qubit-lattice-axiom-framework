@@ -1,5 +1,7 @@
 # Color depolarization (ADM-2): the three mapped mechanisms collapse to two gauge-structure admissions
 
+**Claim type:** positive_theorem
+
 **Tier (branch-local, audit-pending):** bounded_theorem (consolidation). NO hat discharged.
 **Campaign:** gauge-link / color-einselection dynamics (four hats: ADM-1, R1 link
 generator, R2 link-measure delivery, blocking isometry).

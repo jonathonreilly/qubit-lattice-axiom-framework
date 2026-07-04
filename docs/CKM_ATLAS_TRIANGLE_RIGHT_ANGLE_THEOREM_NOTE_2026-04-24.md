@@ -1,5 +1,7 @@
 # CKM Atlas Triangle Right-Angle Identity
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-24
 
 **Status authority:** independent audit lane only. This source note does not

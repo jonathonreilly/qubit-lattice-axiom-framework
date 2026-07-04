@@ -1,5 +1,7 @@
 # DM Neutrino Source-Surface Parity-Compatible Observable Selector Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-17  
 **Script:** `scripts/frontier_dm_neutrino_source_surface_parity_compatible_observable_selector_theorem.py`
 

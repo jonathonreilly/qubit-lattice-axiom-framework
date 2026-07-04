@@ -310,7 +310,7 @@
         {
           "audit_status": "unaudited",
           "claim_id": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16",
-          "claim_type": "positive_theorem",
+          "claim_type": "no_go",
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md",
           "title": "DM Neutrino Source-Surface Active Affine Point-Selection Boundary",
@@ -382,7 +382,7 @@
         {
           "audit_status": "unaudited",
           "claim_id": "pmns_selector_unique_amplitude_slot_note",
-          "claim_type": "positive_theorem",
+          "claim_type": "bounded_theorem",
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_UNIQUE_AMPLITUDE_SLOT_NOTE.md",
           "title": "PMNS Selector Unique Amplitude Slot",
@@ -776,7 +776,7 @@
         {
           "audit_status": "unaudited",
           "claim_id": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16",
-          "claim_type": "positive_theorem",
+          "claim_type": "no_go",
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md",
           "title": "DM Neutrino Source-Surface Active Affine Point-Selection Boundary",
@@ -848,7 +848,7 @@
         {
           "audit_status": "unaudited",
           "claim_id": "pmns_selector_unique_amplitude_slot_note",
-          "claim_type": "positive_theorem",
+          "claim_type": "bounded_theorem",
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_UNIQUE_AMPLITUDE_SLOT_NOTE.md",
           "title": "PMNS Selector Unique Amplitude Slot",
@@ -1255,7 +1255,7 @@
         {
           "audit_status": "unaudited",
           "claim_id": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16",
-          "claim_type": "positive_theorem",
+          "claim_type": "no_go",
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md",
           "title": "DM Neutrino Source-Surface Active Affine Point-Selection Boundary",
@@ -1327,7 +1327,7 @@
         {
           "audit_status": "unaudited",
           "claim_id": "pmns_selector_unique_amplitude_slot_note",
-          "claim_type": "positive_theorem",
+          "claim_type": "bounded_theorem",
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_UNIQUE_AMPLITUDE_SLOT_NOTE.md",
           "title": "PMNS Selector Unique Amplitude Slot",
@@ -1734,7 +1734,7 @@
         {
           "audit_status": "unaudited",
           "claim_id": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16",
-          "claim_type": "positive_theorem",
+          "claim_type": "no_go",
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md",
           "title": "DM Neutrino Source-Surface Active Affine Point-Selection Boundary",
@@ -1806,7 +1806,7 @@
         {
           "audit_status": "unaudited",
           "claim_id": "pmns_selector_unique_amplitude_slot_note",
-          "claim_type": "positive_theorem",
+          "claim_type": "bounded_theorem",
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_UNIQUE_AMPLITUDE_SLOT_NOTE.md",
           "title": "PMNS Selector Unique Amplitude Slot",

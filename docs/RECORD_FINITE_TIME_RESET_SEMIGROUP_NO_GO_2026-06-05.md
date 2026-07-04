@@ -6,7 +6,7 @@ claim_type_author_hint: exact_negative_boundary
 # Record Finite-Time Reset Semigroup No-Go
 
 **Date:** 2026-06-05
-**Claim type:** exact negative boundary for finite-time reset dynamics.
+**Claim type:** no_go — exact negative boundary for finite-time reset dynamics.
 **Status authority:** independent audit lane only. This source note does not
 set an audit verdict, edit audit data, or assert package-status promotion.
 **Primary runner:**

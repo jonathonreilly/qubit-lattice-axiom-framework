@@ -1,5 +1,7 @@
 # Universal QG Canonical Textbook Einstein-Hilbert-Style Geometric/Action Equivalence
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15  
 **Role:** direct-universal quantum-gravity / canonical textbook
 Einstein-Hilbert-style geometric-action theorem

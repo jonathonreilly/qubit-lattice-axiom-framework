@@ -1,7 +1,7 @@
 # PMNS Chart Constants γ, E₁, E₂ Retention — Stretch Attempt with Named Obstructions
 
 **Date:** 2026-05-03
-**Type:** stretch_attempt (output type c)
+**Type:** open_gate — stretch_attempt (output type c)
 **Claim scope:** documents a worked stretch attempt at retiring
 the three PMNS chart constants γ = 1/2, E₁ = √(8/3),
 E₂ = √(8)/3 = 2√2/3 from support-grade to retained, where these

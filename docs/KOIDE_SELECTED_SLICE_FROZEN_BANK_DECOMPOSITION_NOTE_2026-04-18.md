@@ -1,5 +1,7 @@
 # Koide Selected-Slice Frozen-Bank Decomposition
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-18  
 **Status:** exact reduction of the charged-lepton selected slice to the frozen
 slot/CP bank plus one real microscopic coordinate  

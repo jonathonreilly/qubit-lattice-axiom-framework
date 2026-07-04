@@ -1,5 +1,7 @@
 # DM Neutrino Source-Surface Carrier Normal-Form Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-16  
 **Status:** exact blocker-reduction theorem on the mainline post-canonical gate  
 **Script:** `scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py`

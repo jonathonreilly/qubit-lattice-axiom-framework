@@ -1,25 +1,31 @@
-# Koide native zero-section Nature review
+# Koide native zero-section defined-route Nature review
 
 **Date:** 2026-04-24
 **Runner:** `scripts/frontier_koide_native_zero_section_nature_review.py`
-**Status:** passes as the next native route; fails as completed proposed_retained/native
-closure
+**Status:** passes as bounded defined-route support; fails as a retained physical
+Koide result
 
 ## Review Question
 
-Does the native zero-section route close the full dimensionless Koide lane as a
-retained/native theorem?
+Does the native zero-section route supply exact bounded algebraic support while
+leaving the physical Koide result unclaimed?
 
 ## Verdict
 
-Not yet.  It is the strongest native route found so far, but it still requires
-two identification theorems before it is retained closure.
+Yes as a defined-route algebra; no as a retained physical result. The repaired
+route proves the exact consequences of the defined zero-source, real
+`Z_3`-primitive, based endpoint object. It still requires three physical bridge
+theorems before it can be used as a physical Koide result:
+
+1. the charged-lepton scalar readout is the zero-source coefficient;
+2. the Brannen endpoint is the whole real nontrivial `Z_3` primitive;
+3. the open determinant-line endpoint readout is unit-preserving/based.
 
 ## What Is New
 
 The route stops trying to select a rank-one line inside the nontrivial `Z3`
-sector.  Instead it treats the physical Brannen endpoint as the whole real
-nontrivial `Z3` primitive.
+sector. Instead it defines a bounded route object whose endpoint is the whole
+real nontrivial `Z3` primitive.
 
 That matters because the real primitive has no nontrivial equivariant
 idempotents:
@@ -42,10 +48,10 @@ Then a unit-preserving determinant-line endpoint readout gives:
 c = 0.
 ```
 
-Together with the independent APS computation:
+Together with the finite `Z3` route scalar:
 
 ```text
-eta_APS = 2/9
+eta_Z3 = 2/9
 ```
 
 this gives:
@@ -54,13 +60,13 @@ this gives:
 delta_open = 2/9.
 ```
 
-The Q side is the already sharpened native zero-source source-response route:
+The Q side is the defined native zero-source source-response route:
 
 ```text
 z = 0 -> K_TL = 0 -> Q = 2/3.
 ```
 
-## Why This Is Not Yet Closure
+## Why This Is Not Yet A Physical Koide Result
 
 The retained Brannen corpus contains both:
 
@@ -74,10 +80,14 @@ and:
 selected-line / CP1 / rank-one language.
 ```
 
-The native route would imply the values only if the second is a coordinate
+The defined route implies the values only if the second is a coordinate
 presentation of the first, not an extra physical rank-one selector.
 
 A hostile reviewer can still ask:
+
+```text
+why is the physical charged-lepton scalar the zero-source coefficient?
+```
 
 ```text
 why is the physical Brannen endpoint the whole real primitive,
@@ -91,19 +101,22 @@ why is the open determinant endpoint readout unit-preserving/based,
 not an unbased torsor coordinate?
 ```
 
-Those are now the exact native closure obligations.
+Those are now the exact physical bridge obligations.
 
 ## Residual
 
 ```text
 NEXT_NATIVE_THEOREM =
-  derive_Brannen_endpoint_as_real_Z3_primitive_and_unit_determinant_readout
+  derive_zero_source_readout_Brannen_endpoint_as_real_Z3_primitive_and_unit_determinant_readout
 
 RESIDUAL_IDENTIFICATION_DELTA =
   rank_one_CP1_language_vs_real_primitive_endpoint
 
 RESIDUAL_TRIVIALIZATION =
   unit_preserving_open_determinant_line_readout
+
+RESIDUAL_SOURCE_READOUT =
+  zero_source_coefficient_vs_physical_charged_lepton_scalar
 ```
 
 ## Falsifiers
@@ -132,7 +145,10 @@ Expected closeout:
 KOIDE_NATIVE_ZERO_SECTION_NATURE_REVIEW=PASS_AS_ROUTE
 KOIDE_NATIVE_ZERO_SECTION_RETAINED_CLOSURE=FALSE
 NATIVE_ROUTE_IMPLIES_VALUES_CONDITIONALLY=TRUE
-NEXT_NATIVE_THEOREM=derive_Brannen_endpoint_as_real_Z3_primitive_and_unit_determinant_readout
+NATIVE_ROUTE_DEFINED_ALGEBRA=TRUE
+PHYSICAL_KOIDE_CLOSURE_CLAIMED=FALSE
+PHYSICAL_BRIDGE_IDENTIFICATIONS_CLAIMED=FALSE
+NEXT_NATIVE_THEOREM=derive_zero_source_readout_Brannen_endpoint_as_real_Z3_primitive_and_unit_determinant_readout
 ```
 
 ## Audit dependency repair links

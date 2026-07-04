@@ -1,0 +1,38 @@
+block: tier-a-elimination-block18-acii-transport-stretch
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block18-acii-transport-stretch-20260704
+base_branch: physics-loop/tier-a-elimination-block17-acii-reta-current-20260704
+pr_url: pending
+source_commit: pending
+target: AC_phi_lambda sub-admission (ii) same-surface transport equality route
+claim_type: no_go
+registry_edits: false
+retirement_claimed: false
+status: verified_ready_for_pr
+active_route: same-surface C3 ring flux/Green stretch attempt
+hard_residual: "derive physical cycle flux equals zero-mode-subtracted return amplitude"
+files_touched:
+  - docs/ACPHILAMBDA_R_ETA_TRANSPORT_EQUALITY_STRETCH_NO_GO_NOTE_2026-07-04.md
+  - scripts/acphilambda_r_eta_transport_equality_stretch_no_go_2026_07_04.py
+  - .claude/science/physics-loops/tier-a-elimination-block18-acii-transport-stretch/
+open_imports:
+  - physical readout license
+  - K-breaking or inhomogeneous transport law
+  - event/coherence law and rate normalization
+  - physical carrier/context realization
+no_go_routes:
+  - unfluxed Green trace alone derives Phi
+  - fluxed inverse trace derives target
+  - singular finite part recovers Tr L3+ without extra rule
+  - current Record/realized-state interfaces select transport equality
+trace_gate_classification: negative_route_pruning
+review_findings: pass_with_bounded_claims
+verification:
+  runner: "PASS=95 FAIL=0"
+  py_compile: pass
+  audit_pipeline: pass
+  audit_lint_strict: "pass_with_pre_existing_warnings_notices"
+  diff_check: pass
+audit_row: acphilambda_r_eta_transport_equality_stretch_no_go_note_2026-07-04
+next_exact_action: "Commit, push stacked PR, then monitor audit."
+stop_condition: "Block complete after runner/audit checks pass, review disposition is recorded, PR opens, and lock is released."

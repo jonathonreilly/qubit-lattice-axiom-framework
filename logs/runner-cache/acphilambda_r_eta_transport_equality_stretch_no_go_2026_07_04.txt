@@ -1,0 +1,130 @@
+AC_phi_lambda R-eta transport-equality stretch no-go verifier
+
+========================================================================================
+A. source presence and scope firewalls
+========================================================================================
+[PASS] exists: docs/ACPHILAMBDA_R_ETA_TRANSPORT_EQUALITY_STRETCH_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+[PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+[PASS] exists: docs/ACPHILAMBDA_CYCLE_FLUX_TRANSPORT_FACE_INVENTORY_2026-07-01.md
+[PASS] exists: docs/ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md
+[PASS] exists: docs/ACPHILAMBDA_R_ETA_CURRENT_SURFACE_READOUT_IDENTIFICATION_NO_GO_NOTE_2026-07-04.md
+[PASS] note declares Type no_go
+[PASS] note declares Claim type no_go
+[PASS] note declares stretch attempt
+[PASS] note declares independent audit boundary
+[PASS] note says no registry/axiom/primitive edit
+[PASS] note says AC not retired
+[PASS] note says R-eta not removed
+[PASS] banned overclaim absent: AC_phi_lambda is retired
+[PASS] banned overclaim absent: R-eta is retired
+[PASS] banned overclaim absent: R-eta is derived
+[PASS] banned overclaim absent: transport theorem is retained
+[PASS] banned overclaim absent: Phi = Tr L_3^+ is derived
+[PASS] banned overclaim absent: new primitive
+[PASS] banned overclaim absent: new axiom
+[PASS] banned overclaim absent: registry is edited
+
+========================================================================================
+B. Tier-A and source-row state
+========================================================================================
+[PASS] Tier-A genuine admitted input count remains two
+[PASS] AC minimum decomposition still contains R-eta
+[PASS] AC statement keeps R-eta conditionality
+[PASS] ledger row exists: acphilambda_cycle_flux_transport_face_inventory_2026-07-01
+[PASS] acphilambda_cycle_flux_transport_face_inventory_2026-07-01 claim_type
+[PASS] acphilambda_cycle_flux_transport_face_inventory_2026-07-01 not effective retained
+[PASS] acphilambda_cycle_flux_transport_face_inventory_2026-07-01 has note path
+[PASS] ledger row exists: acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01
+[PASS] acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01 claim_type
+[PASS] acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01 not effective retained
+[PASS] acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01 has note path
+[PASS] ledger row exists: acphilambda_r_eta_current_surface_readout_identification_no_go_note_2026-07-04
+[PASS] acphilambda_r_eta_current_surface_readout_identification_no_go_note_2026-07-04 claim_type
+[PASS] acphilambda_r_eta_current_surface_readout_identification_no_go_note_2026-07-04 not effective retained
+[PASS] acphilambda_r_eta_current_surface_readout_identification_no_go_note_2026-07-04 has note path
+
+========================================================================================
+C. premise-boundary checks
+========================================================================================
+[PASS] minimal axioms keep physical-observable identification downstream
+[PASS] minimal axioms keep context selection downstream
+[PASS] minimal axioms keep Born weights downstream
+[PASS] minimal axioms keep probability rules downstream
+[PASS] minimal axioms keep formation rules downstream
+[PASS] minimal axioms keep source/action downstream
+[PASS] scale primitive supplies no readout bridge
+[PASS] realized-state primitive supplies no value
+[PASS] transport source says equation remains wall
+[PASS] transport source says does not derive flux equality
+[PASS] holonomy source says no Phi derivation
+[PASS] block17 leaves same-surface transport theorem live
+
+========================================================================================
+D. unfluxed C3 Green trace
+========================================================================================
+[PASS] C3 Laplacian exact matrix
+[PASS] C3 Laplacian spectrum {0,3,3}
+[PASS] Tr L3+ = 2/3
+[PASS] diagonal L3+ entries are 2/9
+[PASS] unfluxed trace has no holonomy variable
+[PASS] equating Phi to unfluxed trace is an extra equation
+
+========================================================================================
+E. fluxed inverse trace
+========================================================================================
+[PASS] fluxed spectral sum equals closed form
+[PASS] fluxed trace at target is not target
+[PASS] fluxed trace at target is not unfluxed trace
+[PASS] numeric fluxed trace at target is far above 2/3
+[PASS] target fails fixed-point equation Phi=T_flux(Phi)
+[PASS] target fails stationarity
+[PASS] derivative finite and negative at target
+[PASS] fluxed trace is even in Phi
+[PASS] fluxed trace is singular at zero
+
+========================================================================================
+F. singular finite part and regularization discriminator
+========================================================================================
+[PASS] fluxed inverse finite part is 3/4
+[PASS] finite part is not unfluxed pseudoinverse trace
+[PASS] series contains 9/Phi^2
+[PASS] series contains 3/4
+[PASS] regularization gap is 1/12
+
+========================================================================================
+G. five-frame fan-out and theorem text
+========================================================================================
+[PASS] fan-out heading present: Frame 1: unfluxed Green trace
+[PASS] fan-out heading present: Frame 2: fluxed inverse trace
+[PASS] fan-out heading present: Frame 3: singular-limit finite part
+[PASS] fan-out heading present: Frame 4: variational or self-consistency selection
+[PASS] fan-out heading present: Frame 5: Record and realized-state interfaces
+[PASS] note contains stretch phrase: Forbidden proof inputs
+[PASS] note contains stretch phrase: current transport route remains a typed wall, not a derivation
+[PASS] note contains stretch phrase: K-breaking transport theorem
+[PASS] note contains stretch phrase: Direct readout-license theorem
+[PASS] note contains stretch phrase: Coherence-event theorem
+[PASS] note contains stretch phrase: Owner governance route
+[PASS] no-go gate has N1
+[PASS] no-go gate has N2
+[PASS] no-go gate has N3
+[PASS] no-go gate has N4
+[PASS] no-go gate has N5
+[PASS] no-go gate has N6
+[PASS] no-go gate has N7
+[PASS] no-go gate has N8
+[PASS] N2 keeps collapsed wall
+[PASS] N3 forbids physical readout bridge
+[PASS] N5 states not terminal
+[PASS] N7 preserves transport support
+
+========================================================================================
+H. final summary
+========================================================================================
+[PASS] runner expected total placeholder or final present
+
+TOTAL: PASS=95 FAIL=0

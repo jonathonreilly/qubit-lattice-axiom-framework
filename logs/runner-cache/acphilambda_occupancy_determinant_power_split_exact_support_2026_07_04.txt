@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py
+runner_sha256: abbd2d4415fb6f2725a116581c16c5b5d70f3ed1cad29b7b5ad555c086b446ee
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.52
+status: ok
+----- stdout -----
+AC_phi_lambda occupancy determinant-power split exact support
+==============================================================================
+
+------------------------------------------------------------------------------
+A - source and registry boundaries
+------------------------------------------------------------------------------
+PASS: exists: docs/ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md
+PASS: exists: docs/audit/data/tier_a_admissions.json
+PASS: exists: docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md
+PASS: exists: docs/KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md
+PASS: exists: docs/ACPHILAMBDA_FIRST_ORDER_DETERMINANT_RETIREMENT_READINESS_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md
+PASS: exists: docs/GENERATION_WEIGHT_DIAL_STRUCTURE_2026-06-05.md
+PASS: exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+PASS: note declares bounded_theorem claim type
+PASS: runner path is wired in note
+PASS: note denies AC retirement
+PASS: note denies horn selection
+PASS: note denies premise and primitive adoption
+PASS: note denies registry/axiom/primitive/audit edits
+PASS: Tier-A genuine admitted input count remains two
+PASS: AC minimum decomposition remains occupancy plus R-eta -- ['reading_occupancy_selection', 'delta_readout_identification_R_eta']
+PASS: AC registry names surviving measure-side binary
+
+------------------------------------------------------------------------------
+B - determinant power algebra
+------------------------------------------------------------------------------
+PASS: generic 2x2 realification determinant equals squared complex determinant
+PASS: scalar realification gives z*zbar
+PASS: multiplication by i changes det_C phase but not det_R
+PASS: complex count scales once for one complex mode
+PASS: realified count scales twice for one complex mode
+PASS: explicit Berezin Gaussian gives det_C(K) to first power -- k00*k11 - k01*k10
+
+------------------------------------------------------------------------------
+C - AC occupancy fork localization
+------------------------------------------------------------------------------
+PASS: independent C3 channel determinant is holomorphic in beta,gamma
+PASS: tied section supplies mixed beta*betabar term
+PASS: K-real substitution produces |beta|^2 dependence -- alpha**3 - 3*alpha*u**2 - 3*alpha*v**2 + 2*u**3 - 6*u*v**2
+PASS: landed cells remain distinct
+PASS: note keeps both determinant horns live
+
+------------------------------------------------------------------------------
+D - source integration and non-overclaim
+------------------------------------------------------------------------------
+PASS: realized-state reduction names survivor as measure-side realization
+PASS: first-order theorem already localizes count-twice to K-real restriction
+PASS: readiness no-go blocks immediate retirement
+PASS: counting-bit synthesis names det_C versus det_R fork
+PASS: dial note identifies block-count and dimension endpoints
+PASS: axiom and primitive surfaces do not supply measure/weight selection
+PASS: note contains required phrase: det_R R(K) = det_C(K) * conjugate(det_C(K))
+PASS: note contains required phrase: determinant-power binary
+PASS: note contains required phrase: physical matter action implements
+PASS: note contains required phrase: Remaining Live Routes
+PASS: note contains required phrase: Independent audit required
+PASS: banned overclaim phrases are absent except explicit denials
+
+==============================================================================
+TOTAL: PASS=41 FAIL=0
+
+----- stderr -----
+

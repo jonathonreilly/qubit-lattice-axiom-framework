@@ -396,6 +396,18 @@
       "dominant_class": "A",
       "runner": "scripts/acphilambda_fluxed_ring_spectral_functional_route_no_go_2026_07_02.py"
     },
+    "acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 7,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/acphilambda_full_matter_action_statistics_current_surface_no_go_2026_07_04.py"
+    },
     "acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12": {
       "assert_count": 1,
       "counts": {
@@ -41942,6 +41954,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/acphilambda_full_matter_action_statistics_current_surface_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 7,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py": {
@@ -91008,12 +91035,12 @@
     "dominant_class_distribution": {
       "A": 496,
       "B": 636,
-      "C": 1275,
+      "C": 1276,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3314,
-    "runners_with_C": 1740,
-    "runners_with_D": 1067
+    "runners_classified": 3315,
+    "runners_with_C": 1741,
+    "runners_with_D": 1068
   }
 }

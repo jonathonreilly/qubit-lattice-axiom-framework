@@ -609,6 +609,58 @@
       "to": "koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04"
     },
     {
+      "from": "acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04",
+      "to": "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04"
+    },
+    {
+      "from": "acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04",
+      "to": "acphilambda_determinant_order_chiral_lr_coupling_current_surface_no_go_note_2026-07-04"
+    },
+    {
+      "from": "acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04",
+      "to": "acphilambda_mode_set_corner_transfer_current_surface_no_go_note_2026-07-04"
+    },
+    {
+      "from": "acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04",
+      "to": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28"
+    },
+    {
+      "from": "acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04",
+      "to": "mixed_os_transfer_representation_bounded_note_2026-05-30"
+    },
+    {
+      "from": "acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04",
+      "to": "interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30"
+    },
+    {
+      "from": "acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04",
+      "to": "flavor_zdet_fermionic_statistics_admission_2026-06-04"
+    },
+    {
+      "from": "acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04",
+      "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+    },
+    {
+      "from": "acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04",
+      "to": "staggered_dirac_link_integration_class_coupling_transposition_narrow_theorem_note_2026-07-02"
+    },
+    {
+      "from": "acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04",
+      "to": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+    },
+    {
+      "from": "acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04",
+      "to": "staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17"
+    },
+    {
+      "from": "acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12",
       "to": "minimal_axioms"
     },
@@ -58128,6 +58180,32 @@
       "runner_path": "scripts/acphilambda_fluxed_ring_spectral_functional_route_no_go_2026_07_02.py",
       "title": "AC_phi_lambda Fluxed-Ring Spectral-Functional Route No-Go"
     },
+    "acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04": {
+      "claim_id": "acphilambda_full_matter_action_statistics_current_surface_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04",
+        "acphilambda_determinant_order_chiral_lr_coupling_current_surface_no_go_note_2026-07-04",
+        "acphilambda_mode_set_corner_transfer_current_surface_no_go_note_2026-07-04",
+        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+        "mixed_os_transfer_representation_bounded_note_2026-05-30",
+        "interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30",
+        "flavor_zdet_fermionic_statistics_admission_2026-06-04",
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+        "staggered_dirac_link_integration_class_coupling_transposition_narrow_theorem_note_2026-07-02",
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+        "staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17",
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "68eaa5f4afe9bd2690e1258d4954b0727295cbaa465b0834f80eb7d8149287e3",
+      "path": "docs/ACPHILAMBDA_FULL_MATTER_ACTION_STATISTICS_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_full_matter_action_statistics_current_surface_no_go_2026_07_04.py",
+      "title": "AC_phi_lambda Full Matter-Action Statistics Current-Surface No-Go"
+    },
     "acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12": {
       "claim_id": "acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12",
       "claim_type_author_hint": "bounded_theorem",
@@ -109856,7 +109934,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "67ab71a5e9b392d70502b6f212c8e7c5c6cebc711c9c3f2dad53636c7aa2d688",
+      "note_hash": "a7aff820280a5645d73614fd977b0f45257d56bd85c9de287010db60f9cfce7a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -125950,7 +126028,7 @@
       "bounded_theorem": 1553,
       "decoration": 3,
       "meta": 319,
-      "no_go": 326,
+      "no_go": 327,
       "none": 1216,
       "open_gate": 134,
       "positive_theorem": 274
@@ -125959,15 +126037,15 @@
       "bounded_theorem": 1958,
       "decoration": 3,
       "meta": 319,
-      "no_go": 430,
+      "no_go": 431,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14370,
-    "leaf_count": 1283,
-    "node_count": 3825,
+    "edge_count": 14383,
+    "leaf_count": 1280,
+    "node_count": 3826,
     "root_count": 1102,
-    "runners_with_path": 3448
+    "runners_with_path": 3449
   }
 }

@@ -1,0 +1,51 @@
+Theta mass W2 physical-registrability stretch no-go
+==============================================================================
+
+------------------------------------------------------------------------------
+A - source and registry firewalls
+------------------------------------------------------------------------------
+PASS: note declares no-go claim type
+PASS: note denies theta retirement and registry edits
+PASS: note denies primitive, axiom, and audit changes
+PASS: note leaves future W2/governance routes open
+PASS: runner path is wired in note
+
+------------------------------------------------------------------------------
+B - current foundation withholds W2 ingredients
+------------------------------------------------------------------------------
+PASS: minimal axioms withhold readout/source/observable bridges
+PASS: realized-state primitive is pointwise only
+PASS: registry localizes theta(b) but does not close it
+PASS: exhaustion note quarantines W2 and action-level determinant entry
+
+------------------------------------------------------------------------------
+C - existing determinant route is preserved but supplied
+------------------------------------------------------------------------------
+PASS: core split says determinant homomorphism boundary is supplied
+PASS: registrable theorem does not derive physical readout identification
+PASS: strong bridge is conditional on supplied determinant channel
+PASS: epsilon reality and zero branch still leave physical identification outside
+
+------------------------------------------------------------------------------
+D - finite two-extension witness
+------------------------------------------------------------------------------
+PASS: supplied determinant scalar is additive over multiplicative union -- log|z12|=1.791759469228
+PASS: cos(arg z) is K-even
+PASS: cos(arg z) is not an additive record scalar for determinant union -- cos12=0.473868662473; sum=1.709985862277
+PASS: cos(arg z) is not a multiplicative determinant character either -- cos12=0.473868662473; product=0.728899125536
+PASS: two additive Record scalar extensions share the same determinant datum -- I_A and I_B both additive; neither is forced by z
+PASS: determinant datum alone does not determine record scalar without W2 -- same z1 with scalar values 1.0 and -4.0
+
+------------------------------------------------------------------------------
+E - no-go assembly
+------------------------------------------------------------------------------
+PASS: note states the invalid implication
+PASS: note names W2 as the live bridge
+PASS: note separates W2 from action-level determinant entry
+PASS: note separates gauge winding
+PASS: note names owner governance option
+PASS: no-go discipline is complete
+PASS: banned overclaim phrases are absent -- []
+
+==============================================================================
+TOTAL: PASS=26 FAIL=0

@@ -1,0 +1,37 @@
+block: tier-a-elimination-block25-theta-w2-registrability
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block25-theta-w2-registrability-20260704
+base_branch: physics-loop/tier-a-elimination-block24-ac-firstorder-readiness-20260704
+target: theta mass-side W2 physical registrability
+claim_type: no_go
+registry_edits: false
+retirement_claimed: false
+status: pr_open
+source_commit: 52c629d05
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4958
+active_route: "updated axioms/primitives plus determinant algebra already force W2 physical registrability"
+hard_residual: "derive or explicitly approve the physical mass determinant readout context"
+files_touched:
+  - docs/THETA_MASS_W2_PHYSICAL_REGISTRABILITY_STRETCH_NO_GO_NOTE_2026-07-04.md
+  - scripts/theta_mass_w2_physical_registrability_stretch_no_go_2026_07_04.py
+  - logs/runner-cache/theta_mass_w2_physical_registrability_stretch_no_go_2026_07_04.txt
+  - .claude/science/physics-loops/tier-a-elimination-block25-theta-w2-registrability/
+open_imports:
+  - W2 physical registrability theorem
+  - action-level theta_eff determinant-entry theorem
+  - K-real physicalization theorem
+  - determinant algebra audit/dependency closure
+  - gauge-side winding account
+no_go_routes:
+  - immediate W2 derivation from Record/realized-state primitive plus determinant route material
+trace_gate_classification: negative_route_pruning
+review_findings: "Local review-loop emulation PASS WITH BOUNDED CLAIMS; no retirement language, no W2 derivation claim, no hidden comparator imports, no primitive/registry edit."
+verification:
+  runner: "PASS=26 FAIL=0"
+  py_compile: pass
+  audit_pipeline: "pass; newly seeded rows=1"
+  audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
+  diff_check: pass
+audit_row: "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04: claim_type=no_go, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
+next_exact_action: "Run audit pipeline, local review, push stacked PR, and then attack W2/action-level determinant entry or audit the ready determinant rows."
+stop_condition: "Block complete after PR status is verified and the local lock is removed or campaign pivots."

@@ -1,0 +1,35 @@
+loop_slug: tier-a-elimination-block04-species-bridge
+goal: "Eliminate Tier-A admissions by retiring or reclassifying retireable pieces while preserving unavoidable primitives."
+target_status: partial-retirement
+branch: physics-loop/tier-a-elimination-block04-species-bridge-20260704
+base: physics-loop/tier-a-elimination-block03-ac-20260704
+stacked_on_pr: 4928
+started_at: "2026-07-04"
+mode: interactive
+cycle_count: 1
+active_block: block04-ac-species-bridge-c3-grade-ratification
+active_route: "AC_phi_lambda(iii) C3-grade species-bridge owner ratification out of Tier-A"
+hard_residual: "AC_phi_lambda remains Tier-A through the measure-side occupancy realization binary and R-eta readout identification; theta remains untouched."
+lock:
+  branch_local_lock: "/tmp/cl3-tier-a-block04-species-origin-block03/.physics_worker_lock.json"
+files_touched:
+  - "docs/ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md"
+  - "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
+  - "docs/audit/AXIOM_MINIMALITY_POLICY.md"
+  - "docs/audit/data/tier_a_admissions.json"
+  - "scripts/acphilambda_species_bridge_c3_grade_owner_ratification_2026_07_04.py"
+  - "scripts/admitted_input_registry_tier_a_boundary_check.py"
+  - "logs/runner-cache/acphilambda_species_bridge_c3_grade_owner_ratification_2026_07_04.txt"
+  - "logs/runner-cache/admitted_input_registry_tier_a_boundary_check.txt"
+  - "generated audit ledger/queue/citation/summary/front-door files"
+checks:
+  - "PYTHONPATH=scripts python3 scripts/acphilambda_species_bridge_c3_grade_owner_ratification_2026_07_04.py: PASS=44 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/admitted_input_registry_tier_a_boundary_check.py: PASS=76 FAIL=0"
+  - "python3 -m py_compile scripts/acphilambda_species_bridge_c3_grade_owner_ratification_2026_07_04.py scripts/admitted_input_registry_tier_a_boundary_check.py: pass"
+  - "bash docs/audit/scripts/run_pipeline.sh: pass; no errors, existing warnings/notices only"
+  - "python3 docs/audit/scripts/audit_lint.py --strict: pass; no errors, existing warnings/notices only"
+  - "git diff --check: pass"
+review_status: "self-review pass; no audit verdicts applied"
+pr_status: "pending"
+next_exact_action: "Open stacked PR against physics-loop/tier-a-elimination-block03-ac-20260704, then attack AC(ii) R-eta or AC(i) measure-side binary."
+stop_condition: "Block 4 committed, pushed, and review PR opened."

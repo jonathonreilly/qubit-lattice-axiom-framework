@@ -516,6 +516,18 @@
       "dominant_class": "A",
       "runner": "scripts/acphilambda_registrable_cycle_holonomy_normal_form_2026_07_01.py"
     },
+    "acphilambda_species_bridge_c3_grade_owner_ratification_retirement_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/acphilambda_species_bridge_c3_grade_owner_ratification_2026_07_04.py"
+    },
     "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11": {
       "assert_count": 1,
       "counts": {
@@ -41873,6 +41885,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/acphilambda_species_bridge_c3_grade_owner_ratification_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "acphilambda_species_bridge_c3_grade_owner_ratification_retirement_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/action_geometry_bridge_probe.py": {
@@ -90683,13 +90710,13 @@
     "decoration_candidates": 691,
     "dominant_class_distribution": {
       "A": 488,
-      "B": 635,
+      "B": 636,
       "C": 1272,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3302,
-    "runners_with_C": 1729,
+    "runners_classified": 3303,
+    "runners_with_C": 1730,
     "runners_with_D": 1061
   }
 }

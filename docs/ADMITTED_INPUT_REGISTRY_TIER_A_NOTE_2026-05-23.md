@@ -46,7 +46,7 @@ AC_φλ naming, explicitly **not** counted as admitted inputs (see
 
 | id | statement (minimum form, 2026-06-11 — see the minimum-statement section below for the decompositions) | leverage | no-go portfolio (verified `retained_no_go` rows) |
 |---|---|---|---|
-| **AC_φλ** | three named residual atoms, with AC(i)'s value face retired to realized-state registration: **(i)** the **measure-side doublet occupancy realization binary** — which grain/statistics the matter action implements (sector-tied/count-twice vs orbit/holomorphic/count-once; K-reality and det_C/equal-power are its measure-side faces). The per-lane `r` value in `{1, 1/2}` is registered realized-state data, **not** a Tier-A derivation target; **(ii)** the δ **readout identification** (R-η: density-read-as-angle; the magnitude `2/9` is fixed-locus arithmetic conditional on R-η, not an admitted number); **(iii)** the abstract-sector → physical-species **bridge**. The *naming* (which sector is e/μ/τ) remains a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
+| **AC_φλ** | two surviving residual atoms after the 2026-07-04 partial reclassifications: **(i)** the **measure-side doublet occupancy realization binary** — which grain/statistics the matter action implements (sector-tied/count-twice vs orbit/holomorphic/count-once; K-reality and det_C/equal-power are its measure-side faces). The per-lane `r` value in `{1, 1/2}` is registered realized-state data, **not** a Tier-A derivation target; **(ii)** the δ **readout identification** (R-η: density-read-as-angle; the magnitude `2/9` is fixed-locus arithmetic conditional on R-η, not an admitted number). The C3-grade species bridge is owner-ratified naming-class content, **not** a Tier-A derivation target; above-C3 taste/Dirac/chirality content and CKM/PMNS alignment are not covered. The *naming* (which sector is e/μ/τ) remains a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
 | **θ** | with `θ̄ = θ_gauge + arg det(M_q)`: **(a)** gauge side — `θ_gauge = 0` in the topological-sector weighting, residual localized to the **multi-plaquette / large-gauge-winding** account (within the supplied per-plaquette class the local cross-plane `F·F̃` slot is derived-absent; RP, reality, positivity, CPT, parity-measure, and arrow-orientation are tracked in landed source notes as non-forcing/non-sourcing route surfaces); **(b)** mass side — the discrete orientation `arg det M ∈ {0, π} → 0` on the K-real reading (the *same* C₃ K-real structure as AC_φλ (i)), localized onto the named **determinant-readout bridge**. Also unsolved in the Standard Model. | ~20 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` (1) |
 
 Notes:
@@ -63,21 +63,21 @@ Notes:
   `MINIMAL_AXIOMS_2026-06-05.md`, while rows that need the older parent's
   additional readout/log-det content must cite separate retained authorities or
   remain bounded/pending.
-- **AC_φλ — de-named (the labeling itself is not an input).** The gate states
+- **AC_φλ — de-named and species-bridge ratified at C3 grade.** The gate states
   this as a labeling bijection `π:{c₁,c₂,c₃}→L₃`, but a bijection between two
   *bare* 3-element sets is pure relabeling with **zero physical content** — the
   *names* (which sector is electron/muon/tau) are **not** an admitted input and
-  must not be banked as one. Stripped of naming, the genuine admission is two
-  physical things: (i) the **mass pattern** — the C₃-breaking phase δ, which
-  collapses into the *same* δ tracked as the Koide phase; and (ii) the
-  **abstract-sector → physical-species** identification (an interpretive bridge,
-  akin to the abstract-su(3) → physical-color gap). A third non-naming residual,
-  *across* fermion types, is the relative alignment of the up/down/lepton mass
-  bases (the mixing/CKM-PMNS structure). The gate's three closers
-  (labeling-convention / C₃-breaking dynamics / PDG) and its `a3_route1..5`
-  attempts (`unaudited`, not retained no-gos, listed as *attempts*) target the
-  **pattern**, not the names. Net: AC_φλ is *not* a discrete 6-way labeling
-  choice; the irreducible content is "the δ-pattern + the species bridge."
+  must not be banked as one. Stripped of naming, the earlier minimum form
+  separated the **mass/readout pattern** from the **abstract-sector →
+  physical-species** bridge. The 2026-07-04 owner path-extension now ratifies
+  that bridge at the C3-structural grade, because the landed decomposition and
+  ratification-class exhibit show that it supplies no tested C3-grade number,
+  selector, ordering, or weight. This does not derive or ratify above-C3
+  taste/Dirac/chirality content, hw1-vs-hw2 carrier content beyond the C3 grade,
+  or the relative alignment of the up/down/lepton mass bases (CKM/PMNS
+  structure). Net: AC_φλ is *not* a discrete 6-way labeling choice, and the
+  live Tier-A row is now the two surviving atoms: the occupancy realization
+  binary plus the R-η readout identification.
 - **AC_φλ — charged-lepton sharpening (2026-06-02).** For the charged-lepton
   sector specifically, the "mass pattern" admission decomposes (verified, see
   `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`) into **two named,
@@ -144,7 +144,9 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
   retirement does not promote the old `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
   parent, which contains additional non-axiom material.
 - **θ and AC_φλ:** stand as genuine admitted derivation targets (θ shared with
-  the SM; AC_φλ = δ-pattern + species bridge, naming excluded).
+  the SM; AC_φλ = occupancy realization binary + R-η readout identification,
+  with naming excluded and the C3-grade species bridge owner-ratified out of
+  Tier-A).
 - **Scale reference:** removed from Tier A and registered as the
   explicitly approved `scale_reference_primitive`. It is a units primitive, not a
   derivation-target admission and not a status-bounding dependency.
@@ -170,9 +172,9 @@ added, removed, adopted, or re-graded; the count stays at two; every
 dependent stays bounded.** All inputs cited below are landed source notes;
 audit status remains audit-lane-only.
 
-### AC_φλ — minimum decomposition (three named residual atoms; 2026-07-04 value-face reclassification)
+### AC_φλ — minimum decomposition (two surviving Tier-A residual atoms; 2026-07-04 partial reclassifications)
 
-2026-07-04 registry narrowing: sub-admission (i)'s **value face** is
+2026-07-04 value-face reclassification: sub-admission (i)'s **value face** is
 reclassified to the already-approved `realized_state_primitive`. A per-lane
 value of `r` is registered state data in exactly the sense of that primitive's
 counterfactual test: it varies across law-admissible realized states and is
@@ -181,6 +183,18 @@ matched like the masses. This does **not** derive or force `r = 1/2`, does
 residual in (i) is the measure-side/dynamical realization binary: which
 grain/statistics the matter action implements. Count unchanged; downstream
 rows depending on AC_φλ remain bounded.
+
+2026-07-04 species bridge C3-grade owner ratification:
+[`ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md`](ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md)
+answers the two-part owner decision from
+`SPECIES_BRIDGE_RESIDUAL_IS_RATIFICATION_CLASS_GRADE_SCOPED_BOUNDED_NOTE_2026-07-02.md`
+in the affirmative for this narrow case. The C3-grade abstract-sector →
+physical-species bridge is owner-ratified naming-class content, not a Tier-A
+derivation target. This does **not** add an axiom or primitive, does **not**
+set any audit status, and does **not** cover taste/Dirac/chirality content,
+hw1-vs-hw2 carrier content beyond the C3 grade, or CKM/PMNS alignment. The
+theta row is untouched. Count unchanged; downstream rows depending on
+AC_phi_lambda remain bounded until both surviving AC atoms are retired.
 
 1. **The measure-side doublet occupancy realization binary.** The landed
    static-readout no-go states it: the *whole* magnitude admission is
@@ -211,9 +225,12 @@ rows depending on AC_φλ remain bounded.
    R-η (the C₃[111] fixed-locus spectral density read directly as the
    angle); the magnitude `2/9` is retained-bounded fixed-locus arithmetic
    given R-η and is **not** itself an admitted number.
-3. **The abstract-sector → physical-species bridge.** Unchanged (the
-   interpretive identification; naming remains vacuous per the
-   species-labeling no-go).
+Retired side record. **The C3-grade abstract-sector → physical-species bridge**
+is no longer part of the live Tier-A minimum decomposition. Its retired form is
+a grade-scoped owner ratification of a contentless interpretive identification:
+derived `M_3(C)` support plus within-triplet naming vacuity and carrier-triplet
+choice vacuity, with no tested C3-grade number, selector, ordering, or weight.
+Above-C3 content and cross-type alignment remain outside this reclassification.
 
 ### θ — minimum decomposition (two named residuals)
 

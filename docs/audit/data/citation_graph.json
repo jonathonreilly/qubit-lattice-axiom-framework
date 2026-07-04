@@ -701,6 +701,18 @@
       "to": "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11"
     },
     {
+      "from": "acphilambda_species_bridge_c3_grade_owner_ratification_retirement_note_2026-07-04",
+      "to": "species_bridge_residual_is_ratification_class_grade_scoped_bounded_note_2026-07-02"
+    },
+    {
+      "from": "acphilambda_species_bridge_c3_grade_owner_ratification_retirement_note_2026-07-04",
+      "to": "species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13"
+    },
+    {
+      "from": "acphilambda_species_bridge_c3_grade_owner_ratification_retirement_note_2026-07-04",
+      "to": "c3_generation_readout_context_canonical_definition_note_2026-07-02"
+    },
+    {
       "from": "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11",
       "to": "admitted_input_registry_tier_a_note_2026-05-23"
     },
@@ -995,6 +1007,10 @@
     {
       "from": "adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08",
       "to": "emergent_gauge_heat_kernel_clt_attractor_conditional_on_bi_invariant_dynamics_narrow_theorem_note_2026-06-08"
+    },
+    {
+      "from": "admitted_input_registry_tier_a_note_2026-05-23",
+      "to": "acphilambda_species_bridge_c3_grade_owner_ratification_retirement_note_2026-07-04"
     },
     {
       "from": "ai_methodology_note_2026-04-25",
@@ -56746,11 +56762,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+      "to": "ew_current_matching_rule_open_gate_note_2026-05-03"
     },
     {
       "from": "repo.front_door_status",
-      "to": "ew_current_matching_rule_open_gate_note_2026-05-03"
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
     },
     {
       "from": "repo.front_door_status",
@@ -57956,6 +57972,22 @@
       "runner_path": "scripts/acphilambda_registrable_cycle_holonomy_normal_form_2026_07_01.py",
       "title": "AC_phi_lambda Registrable Cycle-Holonomy Normal Form"
     },
+    "acphilambda_species_bridge_c3_grade_owner_ratification_retirement_note_2026-07-04": {
+      "claim_id": "acphilambda_species_bridge_c3_grade_owner_ratification_retirement_note_2026-07-04",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "species_bridge_residual_is_ratification_class_grade_scoped_bounded_note_2026-07-02",
+        "species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13",
+        "c3_generation_readout_context_canonical_definition_note_2026-07-02"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "864933ca6e562b356ad6a36e3c66ac21917dd36bebf48d7e2316562f82e446e8",
+      "path": "docs/ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_species_bridge_c3_grade_owner_ratification_2026_07_04.py",
+      "title": "AC_phi_lambda(iii) Species Bridge: C3-Grade Owner Ratification and Tier-A Retirement"
+    },
     "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11": {
       "claim_id": "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11",
       "claim_type_author_hint": "bounded_theorem",
@@ -58230,9 +58262,11 @@
       "claim_type_author_hint": "meta",
       "claim_type_author_hint_raw": "meta",
       "claim_type_seed_hint": "meta",
-      "deps": [],
+      "deps": [
+        "acphilambda_species_bridge_c3_grade_owner_ratification_retirement_note_2026-07-04"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "d2a028818175744c223c5c7aee86f423d9ab8f63e7eef7126aaba61b706704f1",
+      "note_hash": "39a90ea9b2fd299d5a056d87ed675b6633462276dfd9e7f09d7231ecf330133e",
       "path": "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
       "runner_path": "scripts/admitted_input_registry_tier_a_boundary_check.py",
       "title": "Admitted-Input Registry \u2014 Tier A (Central Index of Named Non-Axiom Admissions)"
@@ -109386,13 +109420,13 @@
         "hypercharge_identification_note",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "ew_current_matching_rule_open_gate_note_2026-05-03",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "cl3_taste_generation_theorem",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bc1f28b2af28636713abfe61ecc688cffd02aea476384006d94ae1218325c97e",
+      "note_hash": "d45cae1ebe9209e414f009d7a54b926e910f43ee2ae944da29c34e83a402dd19",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -124299,7 +124333,6 @@
     "action_power_scaling_sweep_note",
     "action_uniqueness_audit_2026-04-11",
     "adaptive_coevolving_geometry_no_go",
-    "admitted_input_registry_tier_a_note_2026-05-23",
     "affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02",
     "ai_methodology.methodology_case_studies_2026-04-25",
     "ai_methodology.methodology_evidence_ledger_2026-04-25",
@@ -125388,7 +125421,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 1553,
       "decoration": 3,
-      "meta": 318,
+      "meta": 319,
       "no_go": 316,
       "none": 1216,
       "open_gate": 133,
@@ -125397,16 +125430,16 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1958,
       "decoration": 3,
-      "meta": 318,
+      "meta": 319,
       "no_go": 420,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14289,
-    "leaf_count": 1289,
-    "node_count": 3813,
-    "root_count": 1103,
-    "runners_with_path": 3436
+    "edge_count": 14293,
+    "leaf_count": 1288,
+    "node_count": 3814,
+    "root_count": 1102,
+    "runners_with_path": 3437
   }
 }

@@ -103,18 +103,32 @@ def main() -> int:
         check(f"{label} has sharpening source list", bool(row.get("sharpening_sources_status_set_by_audit_lane")), "")
 
     check(
-        "AC_phi_lambda has three named minimum atoms",
+        "AC_phi_lambda has two surviving minimum atoms",
         derivation_targets["staggered_dirac_realization_gate_note_2026-05-03"].get("minimum_decomposition")
-        == ["reading_occupancy_selection", "delta_readout_identification_R_eta", "species_bridge"],
+        == ["reading_occupancy_selection", "delta_readout_identification_R_eta"],
         "",
     )
     ac_row = derivation_targets["staggered_dirac_realization_gate_note_2026-05-03"]
     ac_statement = ac_row.get("statement", "")
     ac_reclass = (ac_row.get("partial_reclassifications") or {}).get("reading_occupancy_selection_value_face", {})
-    check("AC_phi_lambda(i) value face is reclassified to realized-state registration in machine row", "value face retired to realized-state registration" in ac_statement)
+    species_reclass = (ac_row.get("partial_reclassifications") or {}).get("species_bridge_c3_grade", {})
+    check(
+        "AC_phi_lambda(i) value face is reclassified to realized-state registration in machine row",
+        ac_reclass.get("status") == "reclassified_to_realized_state_registration",
+        str(ac_reclass),
+    )
     check("AC_phi_lambda(i) surviving residual is measure-side/dynamical realization", "measure-side doublet occupancy realization binary" in ac_statement)
     check("AC_phi_lambda(i) machine reclassification source is registered", ac_reclass.get("source") == "docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md", str(ac_reclass))
     check("AC_phi_lambda(i) machine reclassification keeps measure-side boundary", "measure-side/dynamical realization binary remains" in ac_reclass.get("boundary", ""))
+    check("AC_phi_lambda(iii) species bridge is owner-ratified out of Tier-A in machine row", "species bridge C3-grade leg is owner-ratified" in ac_statement)
+    check("AC_phi_lambda(iii) species bridge machine reclassification exists", bool(species_reclass), str(species_reclass))
+    check(
+        "AC_phi_lambda(iii) species bridge machine reclassification source is registered",
+        species_reclass.get("source") == "docs/ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md",
+        str(species_reclass),
+    )
+    species_boundary_lower = species_reclass.get("boundary", "").lower()
+    check("AC_phi_lambda(iii) species bridge machine reclassification keeps above-grade boundary", "taste/dirac/chirality" in species_boundary_lower and "ckm/pmns" in species_boundary_lower)
     check(
         "theta has two named minimum atoms",
         derivation_targets["strong_cp_theta_zero_note"].get("minimum_decomposition")
@@ -149,7 +163,12 @@ def main() -> int:
     check("note records 2026-07-04 value-face reclassification", "2026-07-04 value-face reclassification" in note)
     check("note says per-lane r value is registered state data", "per-lane\nvalue of `r` is registered state data" in note)
     check("note says surviving residual is measure-side realization", "surviving Tier-A\nresidual in (i) is the measure-side/dynamical realization binary" in note)
+    check("note records species bridge C3-grade owner ratification", "species bridge C3-grade owner ratification" in note)
+    check("note says species bridge is not a Tier-A derivation target", "not a Tier-A\nderivation target" in note and "physical-species bridge" in note)
+    check("note says species bridge retirement is grade-scoped", "does **not** cover taste/Dirac/chirality content" in note and "CKM/PMNS alignment" in note)
+    check("note says theta row is untouched by species bridge ratification", "theta row is untouched" in note)
     check("note says dependent rows stay bounded", "every\ndependent stays bounded" in note)
+    check("note says AC_phi_lambda dependent rows stay bounded after partial reclassifications", "downstream rows depending on\nAC_phi_lambda remain bounded" in note)
     check("note says audit status remains audit-lane-only", "audit status remains audit-lane-only" in note)
     check("note propagation says Tier-A accepted premise is bounded", "chain-satisfying **only at `retained_bounded`**" in note)
     check("note says no hand-maintained backlinks", "No back-links are maintained by hand" in note)
@@ -161,6 +180,10 @@ def main() -> int:
         "Tier-A derivation targets chain-satisfy without bounding",
         "Record is a Tier-A admission",
         "scale-reference primitive is a Tier-A admission",
+        "species bridge is an axiom",
+        "species bridge is an approved primitive",
+        "AC_phi_lambda retires",
+        "theta retires",
     )
     for phrase in forbidden_positive_phrases:
         check(f"forbidden positive status claim absent: {phrase}", phrase not in note)

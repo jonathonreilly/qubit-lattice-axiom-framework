@@ -36624,6 +36624,18 @@
       "dominant_class": "D",
       "runner": "scripts/theta_cartan_valued_cross_plane_pairing_weyl_frame_theorems_2026_07_02.py"
     },
+    "theta_closed_nonexact_sector_record_readout_current_surface_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/theta_closed_nonexact_sector_record_readout_current_surface_no_go_2026_07_04.py"
+    },
     "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09": {
       "assert_count": 1,
       "counts": {
@@ -89822,6 +89834,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/theta_closed_nonexact_sector_record_readout_current_surface_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "theta_closed_nonexact_sector_record_readout_current_surface_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/theta_g1_defect_closure_current_surface_no_go_2026_07_04.py": {
       "assert_count": 1,
       "claims": [
@@ -91139,15 +91166,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 692,
+    "decoration_candidates": 693,
     "dominant_class_distribution": {
       "A": 499,
-      "B": 637,
+      "B": 638,
       "C": 1276,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3319,
+    "runners_classified": 3320,
     "runners_with_C": 1745,
     "runners_with_D": 1068
   }

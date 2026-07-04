@@ -5,6 +5,11 @@
 Block 9 attacks theta's gauge-side winding account after the 2026-07-04 axiom
 update.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4934
+Branch: `physics-loop/tier-a-elimination-block09-theta-gauge-20260704`
+Base: `physics-loop/tier-a-elimination-block08-theta-mass-20260704`
+Source commit: `6a805eb8b`
+
 ## Expected Claim Movement
 
 The block should not edit the Tier-A registry. Its movement is:
@@ -32,4 +37,5 @@ branch/section, or weighting bridge needed to retire theta_gauge.
 
 ## Next Exact Action
 
-Commit, push, and open the stacked PR against block 8.
+Monitor PR #4934 audit status, then choose the next positive-retention route
+from the opportunity queue.

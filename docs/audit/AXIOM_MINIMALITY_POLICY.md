@@ -288,6 +288,32 @@ Recorded explicitly approved axiom updates:
   are two namings of the same two cells of one canonical `C_3` generation
   readout context. The premise-hash guard invalidates prior direct
   `minimal_axioms` audits; the independent audit lane re-audits.
+- **2026-07-04 -- Formation sentence.** One sentence is added to
+  `docs/MINIMAL_AXIOMS_2026-06-29.md` (owner-approved, 2026-07-04; source file
+  edited in place per the 2026-07-02 precedent so existing runner needles and
+  links keep resolving). The addition: Record gains the opening sentence
+  "Records form." Occurrence becomes named axiom content; every formation
+  rule — which admissible possibility a new record locks, at which site, with
+  what weight, at what rate — remains downstream supplier content. The
+  open-gates list replaces "occurrence rules" with that formation-rule
+  phrasing; the `minimal_axioms` registry note mirrors both changes.
+  Validation provenance: an occurrence-strength certification bounded note
+  with mechanical runner, preceded by a three-seat adversarial pass that
+  refuted a stronger law-form reading (a universal-domain formation law
+  supplies a maximal formation rate, which is over-supply; a saturated
+  configuration on the infinite lattice falsifies "no state is final"; the
+  landed law-form sentence's domain must be supplied, never defaulted to all
+  states). Two owner rulings during honing are recorded as load-bearing:
+  (i) a law-form formation append with a supplied availability domain was
+  rejected because every state in its domain would instantly form a record —
+  formation frequency is supplier content, so occurrence strength is the
+  unique non-over-supplying form; (ii) the owner's motivation is recorded as
+  the axiom's own subject presupposing occurrence — with no records, no
+  Record axiom would be needed. The sentence names no formation rule, rate,
+  weighting, or selector; comparability of realized configurations (one
+  configuration of records) is explicitly NOT supplied by this entry and
+  remains an open owner question. The premise-hash guard invalidates prior
+  direct `minimal_axioms` audits; the independent audit lane re-audits.
 
 - **2026-07-02 -- Admissibility clarification: availability varies with the
   neighbors.** The Admissibility clause now reads: "For each site, the

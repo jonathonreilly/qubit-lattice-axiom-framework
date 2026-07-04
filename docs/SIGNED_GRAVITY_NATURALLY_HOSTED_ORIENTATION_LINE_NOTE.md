@@ -1,5 +1,7 @@
 # Signed Gravity Naturally Hosted Orientation-Line Note
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-26
 **Status:** determinant-line orientation is naturally hosted as a `Z2` torsor;
 canonical signed selector remains unforced; not a physical signed-gravity claim

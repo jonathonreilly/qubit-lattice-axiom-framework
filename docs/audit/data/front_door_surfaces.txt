@@ -1,0 +1,13 @@
+# Narrative front-door surfaces whose axiom-memo pointers must stay current.
+# audit_lint.py checks each listed file: it must cite the minimal_axioms
+# current_path from axiom_premise_nodes.json, and must not cite a superseded
+# aliased path. Warning-level (category front_door_axiom_pointer). One
+# repo-relative path per line; # comments and blanks ignored.
+#
+# Extend this list as narrative surfaces are brought current (e.g. after the
+# four-axiom narrative scrub waves land, add the publication package README
+# and other governance surfaces).
+
+README.md
+docs/START_HERE.md
+docs/publication/ci3_z3/README.md

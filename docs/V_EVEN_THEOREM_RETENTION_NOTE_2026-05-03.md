@@ -1,7 +1,7 @@
 # v_even Theorem Retention — Stretch Attempt with Partial Closing-Derivation
 
 **Date:** 2026-05-03
-**Type:** stretch_attempt (output type c) with PARTIAL closing-derivation
+**Type:** positive_theorem — stretch_attempt (output type c) with PARTIAL closing-derivation
 **Claim scope:** documents a worked stretch attempt at narrowing the v_even
 theorem (DM_NEUTRINO_VEVEN_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15)
 and the upstream weak-even-swap-reduction theorem

@@ -1,5 +1,7 @@
 # Commutant-Class Structural Lemma (Schur Scalar Baseline) — CONDITIONAL ONLY
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-17 (Option-A demotion after 2026-04-17 review pass)
 **Status:** **CONDITIONAL commutant-class structural lemma only; NOT
 a live-sheet promotion.** The Schur conclusion `D = m I_3` applies

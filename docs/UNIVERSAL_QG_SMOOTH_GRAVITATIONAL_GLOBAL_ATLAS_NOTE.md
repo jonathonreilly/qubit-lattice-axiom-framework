@@ -1,5 +1,7 @@
 # Universal QG Smooth Gravitational Global Atlas Identification
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15  
 **Role:** direct-universal quantum-gravity / smooth global gravitational atlas
 identification theorem

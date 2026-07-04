@@ -1,8 +1,8 @@
 # Emergent Gravity Reduces to One Admission: G_Newton Is Induced (~a²); the Residual Wall Is the Metric-DOF / Conformal-Class Posit
 
 **Date:** 2026-06-17
-**Type:** narrow_theorem (Sakharov induced-G structure) + frontier resolution map
-**Claim type:** narrow_theorem
+**Type:** positive_theorem — narrow_theorem (Sakharov induced-G structure) + frontier resolution map
+**Claim type:** positive_theorem — narrow_theorem
 
 **Claim scope (narrow):** A structural result on the emergent Newton constant and a precise
 location of the residual gravity wall. **(1)** Via the Sakharov route (gravity induced by the

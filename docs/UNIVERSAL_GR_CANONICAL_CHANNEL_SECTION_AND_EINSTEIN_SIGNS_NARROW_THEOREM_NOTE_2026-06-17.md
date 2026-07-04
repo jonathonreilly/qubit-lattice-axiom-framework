@@ -1,8 +1,8 @@
 # The Polarization-Frame Ambiguity Is a Basis Artifact: a Canonical Irreducible-Channel Graviton Section With Linearized-Einstein Signs
 
 **Date:** 2026-06-17
-**Type:** narrow_theorem (two computed results) — advances the polarization-frame open gate
-**Claim type:** narrow_theorem
+**Type:** positive_theorem — narrow_theorem (two computed results) — advances the polarization-frame open gate
+**Claim type:** positive_theorem — narrow_theorem
 
 **Claim scope (narrow):** Two machine-precision results on the universal-GR polarization
 sector. **(1)** The polarization-frame open gate of

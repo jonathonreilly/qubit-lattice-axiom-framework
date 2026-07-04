@@ -1,5 +1,7 @@
 # DM Leptogenesis `N_e` Projected-Source-Law Derivation
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-16  
 **Branch:** `codex/dm-main-refresh`  
 **Script:** `scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py`  

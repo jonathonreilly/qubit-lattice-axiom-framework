@@ -1,5 +1,7 @@
 # Signed Gravity Boundary Coframe `chi_g` Probe Note
 
+**Claim type:** open_gate
+
 **Date:** 2026-04-25
 **Status:** first concrete primitive-boundary/coframe pass; algebraic
 conservation target only, source locking not derived

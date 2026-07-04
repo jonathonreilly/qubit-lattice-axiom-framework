@@ -1,7 +1,7 @@
 # GENERATION_WEIGHT_DIAL_STRUCTURE — the two-sector weight is a one-parameter dial r(s)=2^(s-1) with block-count and Born endpoints
 
 **Date:** 2026-06-05
-**Claim type:** theorem
+**Claim type:** positive_theorem
 **Status authority:** independent audit lane only; effective status is
 pipeline-derived after audit. This note does not set, predict, or propose an
 audit outcome.

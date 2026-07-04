@@ -1,5 +1,7 @@
 # Majorana One-Generation Phase Removal Theorem
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15
 **Status:** exact one-generation local-form refinement on the current neutrino
 lane; not an existence theorem

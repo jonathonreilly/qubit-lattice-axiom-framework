@@ -80,6 +80,17 @@ def needs_audit(row: dict) -> tuple[bool, str]:
         return True, audit_status
     if row.get("claim_type_provenance") == "backfilled_pending_reaudit":
         return True, "claim_type_backfill_reaudit"
+    # Owner rule (2026-06-15): terminal verdicts are bound/unbound/nogo only.
+    # `audited_conditional` and `audited_failed` are non-terminal resting
+    # states — each such row must be driven to a terminal verdict (repair +
+    # re-audit, narrowing, or no-go conversion), so it stays in the pending
+    # queue instead of resting as settled. Repair-side prompts for the same
+    # rows (MISSING_DERIVATION_PROMPTS.md, dispatch queue) remain valid; the
+    # queue_reason lets dispatchers separate re-audit from first audit.
+    if audit_status == "audited_conditional":
+        return True, "non_terminal_conditional"
+    if audit_status == "audited_failed" and not row.get("note_path", "").startswith("archive_unlanded/"):
+        return True, "non_terminal_failed"
     return False, "not_pending"
 
 

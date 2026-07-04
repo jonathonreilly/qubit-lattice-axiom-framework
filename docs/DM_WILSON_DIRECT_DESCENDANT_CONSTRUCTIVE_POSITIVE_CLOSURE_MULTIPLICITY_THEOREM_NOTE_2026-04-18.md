@@ -1,5 +1,7 @@
 # DM Wilson Direct-Descendant Constructive Positive Closure Multiplicity Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-18  
 **Status:** exact multiplicity theorem on the constructive positive branch of
 the PMNS-assisted DM route  

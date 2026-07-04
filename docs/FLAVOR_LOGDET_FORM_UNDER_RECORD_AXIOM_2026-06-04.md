@@ -1,7 +1,7 @@
 # Flavor - conditional log-det form from Record-compatible additivity plus a separate det-character authority
 
 **Date:** 2026-06-04
-**Claim type:** conditional form theorem / roadmap. This is not an audit
+**Claim type:** bounded_theorem — conditional form theorem / roadmap. This is not an audit
 verdict, not a value derivation, and not a downstream row promotion.
 **Status authority:** independent audit lane only. This note sets no audit
 status and assigns no grade.

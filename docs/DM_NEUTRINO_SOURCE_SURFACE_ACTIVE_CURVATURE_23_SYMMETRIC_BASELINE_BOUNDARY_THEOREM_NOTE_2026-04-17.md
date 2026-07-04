@@ -1,5 +1,7 @@
 # DM Neutrino Source-Surface Active Curvature `23`-Symmetric Baseline Boundary Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-17  
 **Status:** exact observable-curvature boundary theorem for the live `2`-real
 active pair  

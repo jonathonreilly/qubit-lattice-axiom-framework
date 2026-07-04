@@ -6,7 +6,7 @@ claim_type_author_hint: exact_negative_boundary
 # Record Blank-Sink Preparation Regress No-Go
 
 **Date:** 2026-06-05
-**Claim type:** exact negative boundary and finite capacity ledger.
+**Claim type:** no_go — exact negative boundary and finite capacity ledger.
 **Status authority:** independent audit lane only. This source note does not
 set an audit verdict, edit audit data, or assert package-status promotion.
 **Primary runner:**

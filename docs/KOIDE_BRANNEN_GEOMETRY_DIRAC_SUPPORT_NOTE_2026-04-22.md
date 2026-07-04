@@ -1,5 +1,7 @@
 # Koide Brannen Geometry / Dirac Support Note (2026-04-22)
 
+**Claim type:** bounded_theorem
+
 ## Scope
 
 This note records an additional April 22 support layer for the charged-lepton

@@ -1,5 +1,7 @@
 # Majorana Tensor-Variational Transplant Obstruction
 
+**Claim type:** no_go
+
 **Date:** 2026-04-15
 **Status:** exact frontier boundary on the direct-universal tensor/local-closure
 transplant route

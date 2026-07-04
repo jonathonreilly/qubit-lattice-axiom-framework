@@ -1,7 +1,7 @@
 # Born Rule From Finite Ideal Records
 
 **Date:** 2026-05-20
-**Claim type:** bounded support note
+**Claim type:** bounded_theorem — bounded support note
 **Primary runner:** `scripts/born_rule_framework_bridge_check.py`
 **Type:** conditional / support
 

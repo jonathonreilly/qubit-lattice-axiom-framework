@@ -1,5 +1,7 @@
 # Signed Gravity Mechanism Separation Note
 
+**Claim type:** meta
+
 **Date:** 2026-04-25
 **Status:** mechanism-separation gate for AWAY / repulsive-looking rows; not a
 claim surface

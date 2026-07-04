@@ -1,5 +1,7 @@
 # DM Wilson-to-`dW_e^H` Local Chain Path-Algebra Target
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-18
 **Status:** exact current-`main` target theorem sharpening the generic
 Wilson-side `9`-channel source-family target to one structured local algebra

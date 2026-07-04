@@ -1,5 +1,7 @@
 # Signed Gravity Source-Character Uniqueness Theorem Note
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-26
 **Status:** strongest current breakthrough target; uniqueness theorem inside
 the determinant-orientation source-character grammar; invariant `A1` tensor

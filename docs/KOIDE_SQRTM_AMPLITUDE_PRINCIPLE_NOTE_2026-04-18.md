@@ -1,5 +1,7 @@
 # Koide `√m` Amplitude Principle Note
 
+**Claim type:** open_gate
+
 **Date:** 2026-04-18
 **Status:** candidate extension note — narrows `P1` to a positive-parent /
 one-leg-amplitude construction; does not yet derive the charged-lepton masses on

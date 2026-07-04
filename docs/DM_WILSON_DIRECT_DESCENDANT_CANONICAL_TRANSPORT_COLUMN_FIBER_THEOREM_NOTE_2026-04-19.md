@@ -1,5 +1,7 @@
 # DM Wilson Direct-Descendant Canonical Transport-Column Fiber Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-19
 **Status:** exact current-branch theorem sharpening the DM transport-side
 selector object. Exact flavored transport on the probability-simplex column

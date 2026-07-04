@@ -1,5 +1,7 @@
 # DM Neutrino Post-Canonical Extension Class
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15
 **Status:** exact extension-class theorem after the full canonical two-Higgs
 source-phase route closes negatively

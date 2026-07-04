@@ -6,7 +6,7 @@ claim_type_author_hint: bounded_support_map
 # Record Instrument Kernel Interface
 
 **Date:** 2026-06-05
-**Claim type:** bounded support map and exact conditional interface.
+**Claim type:** bounded_theorem — bounded support map and exact conditional interface.
 **Status authority:** independent audit lane only. This source note does not
 set an audit verdict, edit audit data, or assert package-status promotion.
 **Primary runner:**

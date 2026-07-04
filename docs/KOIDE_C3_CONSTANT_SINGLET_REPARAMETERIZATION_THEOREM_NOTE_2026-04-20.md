@@ -1,5 +1,7 @@
 # Koide `C_3` Constant-Singlet Reparameterization Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-20  
 **Status:** exact sharpening of the fixed-coupling singlet-Schur route on the
 selected scalar slice

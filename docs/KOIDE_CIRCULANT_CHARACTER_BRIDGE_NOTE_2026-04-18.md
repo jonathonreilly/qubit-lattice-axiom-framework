@@ -1,5 +1,7 @@
 # Koide Circulant / Character Bridge Note
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-18
 **Status:** exact algebraic bridge on the candidate Koide lane; does not alter
 the current retained charged-lepton status

@@ -6,7 +6,7 @@ claim_type_author_hint: bounded_support_map
 # Record Reset Sink Entropy Ledger
 
 **Date:** 2026-06-05
-**Claim type:** bounded support map and finite information ledger.
+**Claim type:** meta — bounded support map and finite information ledger.
 **Status authority:** independent audit lane only. This source note does not
 set an audit verdict, edit audit data, or assert package-status promotion.
 **Primary runner:**

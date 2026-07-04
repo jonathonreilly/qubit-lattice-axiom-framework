@@ -1,5 +1,7 @@
 # DM Neutrino Atmospheric-Scale Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15
 **Status:** exact positive atmospheric-scale theorem on the current diagonal
 benchmark

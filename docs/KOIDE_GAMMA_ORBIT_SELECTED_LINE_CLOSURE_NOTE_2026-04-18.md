@@ -1,5 +1,7 @@
 # Koide `Gamma`-Orbit Selected-Line Closure
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-18  
 **Status:** closes the remaining free coordinates on the current positive
 candidate route  

@@ -1,5 +1,7 @@
 # DM Neutrino Source-Surface `Z_3` Doublet-Block Current-Bank Blindness Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-16  
 **Status:** exact final boundary theorem on the live source-oriented sheet  
 **Script:** `scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_current_bank_blindness_theorem.py`

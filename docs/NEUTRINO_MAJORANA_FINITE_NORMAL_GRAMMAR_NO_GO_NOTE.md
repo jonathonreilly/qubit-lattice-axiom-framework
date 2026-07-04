@@ -1,5 +1,7 @@
 # Finite Normal-Grammar Majorana No-Go
 
+**Claim type:** no_go
+
 **Date:** 2026-04-15
 **Status:** exact boundary result on the current finite normal grammar;
 stronger than the native-Gaussian note, but still not a full no-go for all

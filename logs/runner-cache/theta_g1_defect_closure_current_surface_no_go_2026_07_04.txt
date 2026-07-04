@@ -1,208 +1,158 @@
-theta G1 defect-closure current-surface no-go verifier
+Theta G1 defect-closure current-surface no-go
+========================================================================================
+
+----------------------------------------------------------------------------------------
+A - source presence, metadata, and registry state
+----------------------------------------------------------------------------------------
+PASS: exists: docs/THETA_G1_DEFECT_CLOSURE_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: exists: docs/audit/AXIOM_MINIMALITY_POLICY.md
+PASS: exists: docs/audit/data/tier_a_admissions.json
+PASS: exists: docs/audit/data/audit_ledger.json
+PASS: exists: docs/audit/data/axiom_premise_nodes.json
+PASS: exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+PASS: exists: docs/THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md
+PASS: exists: docs/THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md
+PASS: exists: docs/THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/THETA_G3_CENTRAL_SECTOR_PHASE_CHARACTER_EXACT_SUPPORT_NOTE_2026-07-04.md
+PASS: new note declares no_go type
+PASS: new note declares no_go claim type
+PASS: runner path is wired in note
+PASS: Tier-A genuine admitted input count remains two
+PASS: Tier-A canonical ids remain AC and theta
+PASS: theta decomposition remains gauge-side winding plus mass-side determinant bridge
+PASS: minimal axioms remain the only axiom node plus approved primitives
+PASS: ledger row resolves for positive_route
+PASS: positive_route is not effective retained authority for theta retirement
+PASS: ledger row resolves for carrier4d
+PASS: carrier4d is not effective retained authority for theta retirement
+PASS: ledger row resolves for axiom_no_go
+PASS: axiom_no_go is not effective retained authority for theta retirement
+PASS: ledger row resolves for g3_no_go
+PASS: g3_no_go is not effective retained authority for theta retirement
+PASS: ledger row resolves for g3_support
+PASS: g3_support is not effective retained authority for theta retirement
+PASS: ledger row resolves for minimal_axioms
+PASS: minimal_axioms is not effective retained authority for theta retirement
+
+----------------------------------------------------------------------------------------
+B - current source surface does not supply G1
+----------------------------------------------------------------------------------------
+PASS: minimal axiom boundary contains: Admissibility is not a dynamics axiom
+PASS: minimal axiom boundary contains: does not choose a Hamiltonian or transfer operator
+PASS: minimal axiom boundary contains: transition probabilities or weights
+PASS: minimal axiom boundary contains: record-production process or physical persistence dynamics
+PASS: minimal axiom boundary contains: source/action and physical-observable identification
+PASS: minimal axiom boundary contains: central-sector decomposition
+PASS: minimal axiom boundary contains: Records form.
+PASS: minimal axiom boundary contains: which admissible possibility a new record locks, at which si
+PASS: minimality policy anti-laundering contains: Record does not supply readout-context selection
+PASS: minimality policy anti-laundering contains: source/action
+PASS: minimality policy anti-laundering contains: formation rule
+PASS: minimality policy anti-laundering contains: choose a Hamiltonian or transfer operator
+PASS: minimality policy anti-laundering contains: physical observables
+PASS: theta registry keeps residual: multi-plaquette / large-gauge-winding account
+PASS: theta registry keeps residual: gauge_side_winding_account
+PASS: theta registry keeps residual: determinant-readout bridge
+PASS: positive route keeps G1 live: G1 defect closure
+PASS: positive route keeps G1 live: derive the closed-branch restriction dn = 0
+PASS: positive route keeps G1 live: No derivation yet that the physical surface imposes or suppr
+PASS: positive route keeps G1 live: G1 in parallel later
+PASS: carrier note names defect wall: The exact 4D carrier therefore lives on the **closed-branch
+PASS: carrier note names defect wall: what a physical derivation must supply is the closedness res
+PASS: carrier note names defect wall: `dn != 0` destroys class invariance
+PASS: carrier note names defect wall: derive (i-a) defect closure
+PASS: axiom-update no-go keeps shortcut blocked: does not supply the theta gauge-side winding
+PASS: axiom-update no-go keeps shortcut blocked: physical topological-sector/gauge-action bridge
+PASS: axiom-update no-go keeps shortcut blocked: The Tier-A registry is not edited.
+PASS: axiom-update no-go keeps shortcut blocked: Theta is not retired.
+PASS: G3 no-go leaves phase insertion open
+PASS: G3 support names G1 precondition
+
+----------------------------------------------------------------------------------------
+C - finite T4 cochain contrast
+----------------------------------------------------------------------------------------
+PASS: C2 dimension is 96 on T4_2
+PASS: d2 rank is nonzero, so closure is not automatic
+PASS: closed 2-cochains are a proper subspace
+PASS: cochain complex has d2*d1 = 0
+PASS: cochain complex has d3*d2 = 0
+PASS: complementary-flux witness is closed
+PASS: closed witness has Q_raw = 2
+PASS: all six unit-flux representatives are closed
+PASS: single unit flux (0, 1) has zero Q_raw
+PASS: single unit flux (0, 2) has zero Q_raw
+PASS: single unit flux (0, 3) has zero Q_raw
+PASS: single unit flux (1, 2) has zero Q_raw
+PASS: single unit flux (1, 3) has zero Q_raw
+PASS: single unit flux (2, 3) has zero Q_raw
+PASS: closed sample has expected Q_raw=2
+PASS: closed sample has expected Q_raw=-2
+PASS: closed sample has expected Q_raw=2
+PASS: closed flux Q_raw equals twice intersection form
+PASS: closed flux Q_raw equals twice intersection form
+PASS: closed flux Q_raw equals twice intersection form
+PASS: closed flux Q_raw equals twice intersection form
+PASS: closed flux Q_raw equals twice intersection form
+PASS: closed flux Q_raw equals twice intersection form
+PASS: closed flux Q_raw equals twice intersection form
+PASS: closed flux Q_raw equals twice intersection form
+PASS: random closed branch move keeps closedness
+PASS: random closed branch move preserves Q_raw
+PASS: random closed branch Q_raw remains even
+PASS: random closed branch move keeps closedness
+PASS: random closed branch move preserves Q_raw
+PASS: random closed branch Q_raw remains even
+PASS: random closed branch move keeps closedness
+PASS: random closed branch move preserves Q_raw
+PASS: random closed branch Q_raw remains even
+PASS: random closed branch move keeps closedness
+PASS: random closed branch move preserves Q_raw
+PASS: random closed branch Q_raw remains even
+PASS: random closed branch move keeps closedness
+PASS: random closed branch move preserves Q_raw
+PASS: random closed branch Q_raw remains even
+PASS: random closed branch move keeps closedness
+PASS: random closed branch move preserves Q_raw
+PASS: random closed branch Q_raw remains even
+PASS: random closed branch move keeps closedness
+PASS: random closed branch move preserves Q_raw
+PASS: random closed branch Q_raw remains even
+PASS: random closed branch move keeps closedness
+PASS: random closed branch move preserves Q_raw
+PASS: random closed branch Q_raw remains even
+PASS: closed branch local moves preserve Q_raw
+PASS: single plaquette witness has a nonzero defect dn
+PASS: single plaquette witness starts with Q_raw = 0
+PASS: adding exact branch moves to the single-plaquette witness keeps the same defect current
+PASS: defectful branch local moves change Q_raw
+PASS: defectful branch local moves produce odd Q_raw values
+PASS: defectful branch witness reproduces the no-sector values in the note
+
+----------------------------------------------------------------------------------------
+D - note conclusion and overclaim guards
+----------------------------------------------------------------------------------------
+PASS: note states narrow no-go: On the current surface, G1 is not derived.
+PASS: note states narrow no-go: is invalid on the current surface.
+PASS: note states narrow no-go: This is not a universal no-go against defect closure.
+PASS: note states narrow no-go: A future retained dynamics theorem
+PASS: note states narrow no-go: Record axiom's new formation sentence is also not a defect l
+PASS: note preserves boundary: Theta is not retired.
+PASS: note preserves boundary: The Tier-A registry is not edited.
+PASS: note preserves boundary: No G1 defect-closure theorem is supplied.
+PASS: note preserves boundary: No defect-suppression dynamics is supplied.
+PASS: note preserves boundary: No G3 phase source, coefficient, action entry, or physical w
+PASS: note preserves boundary: No primitive, axiom, audit status, or effective status is ch
+PASS: banned overclaim absent: Theta is retired.
+PASS: banned overclaim absent: theta_bar = 0 is derived
+PASS: banned overclaim absent: G1 is closed
+PASS: banned overclaim absent: defects are suppressed
+PASS: banned overclaim absent: dn = 0 follows from Record
+PASS: banned overclaim absent: dn = 0 follows from Admissibility
+PASS: banned overclaim absent: the carrier is physical
+PASS: banned overclaim absent: Tier-A registry is edited
+PASS: banned overclaim absent: The effective status is changed
 
 ========================================================================================
-A. source presence and ledger grounding
-========================================================================================
-[PASS] exists: docs/THETA_G1_DEFECT_CLOSURE_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
-[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
-[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
-[PASS] exists: docs/audit/data/tier_a_admissions.json
-[PASS] exists: docs/audit/data/audit_ledger.json
-[PASS] exists: docs/THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md
-[PASS] exists: docs/THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md
-[PASS] exists: docs/THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md
-[PASS] exists: docs/THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
-[PASS] positive ledger row resolves
-[PASS] positive row has note path
-[PASS] carrier4d ledger row resolves
-[PASS] carrier4d row has note path
-[PASS] axiom_no_go ledger row resolves
-[PASS] axiom_no_go row has note path
-[PASS] g3_no_go ledger row resolves
-[PASS] g3_no_go row has note path
-[PASS] minimal ledger row resolves
-[PASS] minimal row has note path
-[PASS] registry ledger row resolves
-[PASS] registry row has note path
-[PASS] positive row is not a theta-retirement authority
-[PASS] carrier4d row is not a theta-retirement authority
-[PASS] axiom_no_go row is not a theta-retirement authority
-[PASS] g3_no_go row is not a theta-retirement authority
-[PASS] new note has Type no_go
-[PASS] new note has Claim type no_go
-
-========================================================================================
-B. Tier-A registry remains untouched
-========================================================================================
-[PASS] Tier-A genuine count remains two
-[PASS] canonical Tier-A IDs remain AC and theta
-[PASS] theta minimum decomposition remains gauge plus mass
-[PASS] AC surviving decomposition remains two residuals
-[PASS] note preserves boundary: Theta is not retired.
-[PASS] note preserves boundary: The Tier-A registry is not edited.
-[PASS] note preserves boundary: No axiom or primitive is changed.
-[PASS] note preserves boundary: No audit status or effective status is changed.
-[PASS] note preserves boundary: No mass-side determinant-channel bridge is supplied.
-[PASS] machine registry theta text includes gauge_side_winding_account
-[PASS] machine registry theta text includes mass_side_orientation_determinant_readout_bridge
-[PASS] machine registry theta text includes multi-plaquette / large-gauge-winding account
-[PASS] machine registry theta text includes determinant-readout bridge
-[PASS] human registry theta text includes multi-plaquette / large-gauge-winding account
-[PASS] human registry theta text includes determinant-readout bridge
-
-========================================================================================
-C. source-packet boundary checks
-========================================================================================
-[PASS] positive route names G1 boundary: G1 defect closure
-[PASS] positive route names G1 boundary: derive the closed-branch restriction dn = 0
-[PASS] positive route names G1 boundary: No derivation yet that the physical surface imposes or
-[PASS] positive route names G1 boundary: Without this, the closed-branch carrier remains a witn
-[PASS] carrier keeps defect boundary: with a branch defect present (`dn != 0`
-[PASS] carrier keeps defect boundary: closed-branch (defect-free) subsurface
-[PASS] carrier keeps defect boundary: what a physical derivation must supply is the closedness
-[PASS] carrier keeps defect boundary: no sector decomposition survives on the unrestricted bra
-[PASS] carrier keeps defect boundary: not assert that defect-ful theories lack theta physics i
-[PASS] carrier keeps defect boundary: Closed branch
-[PASS] carrier keeps defect boundary: the carrier residual IS the defect question
-[PASS] minimal axioms withhold: Admissibility is not a dynamics axiom
-[PASS] minimal axioms withhold: does not choose a Hamiltonian or transfer operator
-[PASS] minimal axioms withhold: transition probabilities or weights
-[PASS] minimal axioms withhold: context selection
-[PASS] minimal axioms withhold: source/action and physical-observable identificati
-[PASS] minimal axioms withhold: the strong-CP theta admission
-[PASS] minimal axioms withhold: Only records are readable
-[PASS] axiom-update no-go supports G1 boundary: does not supply the theta gauge-side winding
-[PASS] axiom-update no-go supports G1 boundary: physical topological-sector/gauge-action bridge
-[PASS] axiom-update no-go supports G1 boundary: The Tier-A registry is not edited.
-[PASS] axiom-update no-go supports G1 boundary: Theta is not retired.
-[PASS] G3 block leaves G1 live: G1 defect closure in parallel
-[PASS] G3 block leaves G1 live: prove or refute physical suppression of `dn != 0`
-[PASS] G3 block leaves G1 live: G3 is meaningful only after the carrier surface is d
-
-========================================================================================
-D. note fan-out and no-go claim
-========================================================================================
-[PASS] no-go statement present: On the current surface, G1 is not derived.
-[PASS] no-go statement present: Neither statement is a derivation that physical branch cocha
-[PASS] no-go statement present: neither supplies a measure or action that suppresses `dn != 
-[PASS] no-go statement present: The present framework surface therefore localizes G1; it doe
-[PASS] route fan-out row present: Algebraic identity `d^2 = 0`
-[PASS] route fan-out row present: Closed-branch carrier
-[PASS] route fan-out row present: Defect witness
-[PASS] route fan-out row present: Minimal axioms and approved primitives
-[PASS] route fan-out row present: Record/readout rule
-[PASS] route fan-out row present: Admissibility
-[PASS] route fan-out row present: G3 phase insertion work
-[PASS] route fan-out row present: Tier-A registry
-[PASS] movement sentence present: G1 is now isolated as the missing closedness-or-suppress
-[PASS] movement sentence present: The carrier is explicitly conditional on `dn = 0`
-[PASS] movement sentence present: It is only an unrestricted-branch-sum no-go
-
-========================================================================================
-E. cubical complex and closure is a proper condition
-========================================================================================
-[PASS] dd=0 for C0->C1->C2
-[PASS] dd=0 for C1->C2->C3
-[PASS] dd=0 for C2->C3->C4
-[PASS] C2 dimension is nonzero on T4_2
-[PASS] d2 rank is nonzero, so closure is not automatic
-[PASS] closed 2-cochains are a proper subspace
-[PASS] single plaquette branch cochain is not closed
-[PASS] d of an exact branch move is closed
-[PASS] adding exact move to open cochain remains open
-
-========================================================================================
-F. closed-branch flux arithmetic
-========================================================================================
-[PASS] all six unit-flux representatives are closed
-[PASS] single unit flux (0, 1) has zero Q_raw
-[PASS] single unit flux (0, 2) has zero Q_raw
-[PASS] single unit flux (0, 3) has zero Q_raw
-[PASS] single unit flux (1, 2) has zero Q_raw
-[PASS] single unit flux (1, 3) has zero Q_raw
-[PASS] single unit flux (2, 3) has zero Q_raw
-[PASS] closed sample has expected Q_raw=2
-[PASS] closed sample has expected Q_raw=-2
-[PASS] closed sample has expected Q_raw=2
-[PASS] closed flux Q_raw equals twice intersection form
-[PASS] closed flux Q_raw equals twice intersection form
-[PASS] closed flux Q_raw equals twice intersection form
-[PASS] closed flux Q_raw equals twice intersection form
-[PASS] closed flux Q_raw equals twice intersection form
-[PASS] closed flux Q_raw equals twice intersection form
-[PASS] closed flux Q_raw equals twice intersection form
-[PASS] closed flux Q_raw equals twice intersection form
-[PASS] closed branch move keeps closedness
-[PASS] closed branch move preserves Q_raw
-[PASS] closed branch Q_raw is even
-[PASS] closed branch move keeps closedness
-[PASS] closed branch move preserves Q_raw
-[PASS] closed branch Q_raw is even
-[PASS] closed branch move keeps closedness
-[PASS] closed branch move preserves Q_raw
-[PASS] closed branch Q_raw is even
-[PASS] closed branch move keeps closedness
-[PASS] closed branch move preserves Q_raw
-[PASS] closed branch Q_raw is even
-[PASS] closed branch move keeps closedness
-[PASS] closed branch move preserves Q_raw
-[PASS] closed branch Q_raw is even
-[PASS] closed branch move keeps closedness
-[PASS] closed branch move preserves Q_raw
-[PASS] closed branch Q_raw is even
-[PASS] closed branch move keeps closedness
-[PASS] closed branch move preserves Q_raw
-[PASS] closed branch Q_raw is even
-[PASS] closed branch move keeps closedness
-[PASS] closed branch move preserves Q_raw
-[PASS] closed branch Q_raw is even
-
-========================================================================================
-G. defect witness arithmetic
-========================================================================================
-[PASS] moved open branch remains defectful
-[PASS] moved open branch remains defectful
-[PASS] moved open branch remains defectful
-[PASS] moved open branch remains defectful
-[PASS] moved open branch remains defectful
-[PASS] moved open branch remains defectful
-[PASS] moved open branch remains defectful
-[PASS] moved open branch remains defectful
-[PASS] moved open branch remains defectful
-[PASS] moved open branch remains defectful
-[PASS] moved open branch remains defectful
-[PASS] moved open branch remains defectful
-[PASS] defect branch moves give multiple Q_raw values
-[PASS] defect branch moves include odd Q_raw values
-[PASS] therefore Q_raw/2 is not integer-valued on all defect moves
-[PASS] same defect support can carry different cup-square values
-
-========================================================================================
-H. no hidden dynamics or closure premise
-========================================================================================
-[PASS] note blocks hidden closure premise: No branch-action, no update law, no defect energy
-[PASS] note blocks hidden closure premise: it does not manufacture closedness or select a defect-
-[PASS] note blocks hidden closure premise: Admissibility
-[PASS] note blocks hidden closure premise: not a dynamics axiom
-[PASS] note blocks hidden closure premise: cannot bypass the carrier's need for defect discipline
-[PASS] next attack item present: Constraint-level route
-[PASS] next attack item present: Dynamical route
-[PASS] next attack item present: G2 registration after G1
-[PASS] next attack item present: G4 assembly last
-
-========================================================================================
-I. note discipline and controlled links
-========================================================================================
-[PASS] forbidden overclaim absent: Theta is retired
-[PASS] forbidden overclaim absent: theta_bar = 0 is derived
-[PASS] forbidden overclaim absent: future defect-closure work is ruled out
-[PASS] forbidden overclaim absent: we edit the Tier-A registry
-[PASS] forbidden overclaim absent: audit status is upgraded
-[PASS] forbidden overclaim absent: effective status is upgraded
-[PASS] markdown link inventory is controlled
-[PASS] note line count is bounded
-[PASS] verification block states fail-zero threshold
-
-========================================================================================
-TOTAL: PASS=167 FAIL=0
-========================================================================================
+SUMMARY: PASS=137 FAIL=0

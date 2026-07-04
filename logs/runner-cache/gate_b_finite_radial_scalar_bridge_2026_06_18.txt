@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gate_b_finite_radial_scalar_bridge_2026_06_18.py
-runner_sha256: 740da977ffdb36260d04137ed9d8ed548ac006cfe4bfe41ae5b51bcd2bdeae80
+runner_sha256: 71e4a8f54359b6e58f16be9f7c391a370e8c04617659ff6d35f5580e73367e34
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Gate B finite radial scalar bridge
@@ -27,11 +27,12 @@ Gate B finite radial scalar bridge
 [PASS] checked packet is finite and runner-local
        nodes=100, field_values=100
 [PASS] note states GB-S1b-a boundary without claiming Gate B closure
+[PASS] note explicitly includes gate_b_connectivity_tolerance helper source and cache
 [PASS] parent note wires the GB-S1b split and preserves open physical normalization
 [PASS] parent note still blocks Poisson/readout/connectivity overclaims
 
-TOTAL: PASS=12 FAIL=0
-runner_check_breakdown = {A: 12, B: 0, C: 0, D: 0, total_pass: 12}
+TOTAL: PASS=13 FAIL=0
+runner_check_breakdown = {A: 13, B: 0, C: 0, D: 0, total_pass: 13}
 VERDICT: GB-S1b-a is exact finite radial scalar algebra matching the Gate B runner helper; GB-S1b-b physical Poisson/source normalization remains open.
 
 ----- stderr -----

@@ -8,6 +8,13 @@ closure and not an audit-ratified effective status.
 predict an audit verdict.
 **Primary runner:** [`scripts/gate_b_local_stencil_connectivity_bridge_2026_06_18.py`](../scripts/gate_b_local_stencil_connectivity_bridge_2026_06_18.py)
 **Cached output:** [`logs/runner-cache/gate_b_local_stencil_connectivity_bridge_2026_06_18.txt`](../logs/runner-cache/gate_b_local_stencil_connectivity_bridge_2026_06_18.txt)
+**Helper runner (audit packet must include):** [`scripts/gate_b_connectivity_tolerance.py`](../scripts/gate_b_connectivity_tolerance.py)
+— SHA-pinned cache [`logs/runner-cache/gate_b_connectivity_tolerance.txt`](../logs/runner-cache/gate_b_connectivity_tolerance.txt).
+The primary runner imports this helper as `gate_b` and checks the helper's
+`_build_fixed_connectivity` adjacency against the independent finite-stencil
+definition in this note. This helper source plus cache must be present in the
+restricted audit packet for the load-bearing adjacency match to be
+inspectable.
 
 ## Purpose
 
@@ -100,5 +107,5 @@ python3 scripts/gate_b_local_stencil_connectivity_bridge_2026_06_18.py
 Expected result:
 
 ```text
-TOTAL: PASS=12 FAIL=0
+TOTAL: PASS=13 FAIL=0
 ```

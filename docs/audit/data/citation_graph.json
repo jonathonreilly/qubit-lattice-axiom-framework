@@ -78461,7 +78461,7 @@
       "helper_runner_paths": [
         "scripts/gate_b_connectivity_tolerance.py"
       ],
-      "note_hash": "14bb6f01f825bb22407936653c7124cbc5214828675a2564c0baa2a42d034705",
+      "note_hash": "9afbd6d16736470ee0d5528ba42b926ee5a43841eb56d04411da9734d749861f",
       "path": "docs/GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
       "runner_path": "scripts/gate_b_finite_path_sum_propagation_bridge_2026_06_18.py",
       "title": "Gate B Finite Path-Sum Propagation Bridge Bounded Theorem Note"
@@ -78475,7 +78475,7 @@
       "helper_runner_paths": [
         "scripts/gate_b_connectivity_tolerance.py"
       ],
-      "note_hash": "fe26fa020534dcbd9cfe39b3c7330cd2510d4a78f1ee0d947a4e6e3f93207161",
+      "note_hash": "8dd3fba5d1d9d75981deef8f016dae67001c2153c314f9aa56318d8434d627d1",
       "path": "docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
       "runner_path": "scripts/gate_b_finite_radial_scalar_bridge_2026_06_18.py",
       "title": "Gate B Finite Radial Scalar Bridge Bounded Theorem Note"
@@ -78672,7 +78672,7 @@
       "helper_runner_paths": [
         "scripts/gate_b_connectivity_tolerance.py"
       ],
-      "note_hash": "0588fe668abed26af558a9acad7f63b37bf912ce26fd4e3f471c6a86ffd0fa00",
+      "note_hash": "0c6d56737ed93e2a047dc8718cb517cde2672903fbd40f0cdd5ee093b1872c33",
       "path": "docs/GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
       "runner_path": "scripts/gate_b_local_stencil_connectivity_bridge_2026_06_18.py",
       "title": "Gate B Local Stencil Connectivity Bridge Bounded Theorem Note"
@@ -109423,7 +109423,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8552a5a9c98d7a70bc8ccf00f453b0ded8ee09f9235d55804e7a06ceb3a6d7cf",
+      "note_hash": "a30974e483bb1cf0b8378d7763e3d0a4793c3e8f39d244dd1fd46169b6f9c3c3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

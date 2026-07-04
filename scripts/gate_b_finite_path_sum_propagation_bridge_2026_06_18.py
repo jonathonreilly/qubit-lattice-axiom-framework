@@ -216,6 +216,15 @@ def main() -> int:
     )
 
     check(
+        "note explicitly includes gate_b_connectivity_tolerance helper source and cache",
+        "Helper runner (audit packet must include)" in note
+        and "scripts/gate_b_connectivity_tolerance.py" in note
+        and "logs/runner-cache/gate_b_connectivity_tolerance.txt" in note
+        and "_propagate" in note
+        and "_build_fixed_connectivity" in note,
+    )
+
+    check(
         "parent note wires the GB-S2 split and preserves open physical readout semantics",
         "2026-06-18 finite path-sum propagation split" in parent
         and "GB-S2a" in parent

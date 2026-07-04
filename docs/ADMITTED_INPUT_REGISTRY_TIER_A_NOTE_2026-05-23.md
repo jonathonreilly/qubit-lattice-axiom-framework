@@ -26,6 +26,31 @@ needs a yet-to-be-found mechanism). This is deliberately **separate** from:
   auditing/re-grounding, not a new mechanism). That backlog is the
   conditional-dependency frontier (see Appendix), not an admission.
 
+## Current Status After 2026-07-04 Owner Adoption
+
+Current live Tier-A admitted derivation targets: zero.
+
+The former live rows, `AC_phi_lambda` and `theta`, were retired from live Tier-A
+by the explicit owner-governance adoption recorded in
+[`TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md`](TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md).
+The live chain-satisfying governance surface is now
+[`docs/audit/data/owner_governed_premise_nodes.json`](audit/data/owner_governed_premise_nodes.json),
+which records them as owner-governed residual premises, not as axioms,
+approved primitives, or theorem derivations.
+This does not derive AC_phi_lambda or theta as theorems.
+
+The machine Tier-A registry now has:
+
+```text
+genuine_admitted_input_count = 0
+canonical_ids = []
+derivation_targets = {}
+```
+
+The prior AC_phi_lambda and theta entries are preserved only as historical
+`retired_derivation_targets` in
+[`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json).
+
 Current registry basis (2026-06-05): Record is no longer a Tier-A admission.
 It is included in the explicitly approved three-axiom `minimal_axioms` node,
 with the durable realized-outcome boundary stated in
@@ -34,15 +59,16 @@ with the durable realized-outcome boundary stated in
 conditional parent carrying readout/log-det/modulus material beyond Record.
 
 Curated to inputs that are irreducible (no-go portfolio) **and not vacuous**,
-the genuine Tier-A admitted derivation targets are now the **two** rows below
-(AC_φλ and θ). The scale-reference primitive is likewise not counted here: it
-is the explicitly approved units primitive registered in
+the historical Tier-A admitted derivation targets were the **two** rows below
+(AC_φλ and θ), both now retired from live Tier-A by owner-governance adoption.
+The scale-reference primitive is likewise not counted here: it is the
+explicitly approved units primitive registered in
 `docs/audit/data/axiom_premise_nodes.json`. Two further rows (Y₀, g₀) are
 **vacuous rescaling conventions** — listed for completeness but, like the
 AC_φλ naming, explicitly **not** counted as admitted inputs (see
 "Rigor-pass refinement" below).
 
-## Tier A-1 — Admitted derivation-targets (irreducible; have no-go portfolios)
+## Tier A-1 — Historical admitted derivation-targets (now retired)
 
 | id | statement (minimum form, 2026-06-11 — see the minimum-statement section below for the decompositions) | leverage | no-go portfolio (verified `retained_no_go` rows) |
 |---|---|---|---|
@@ -75,9 +101,10 @@ Notes:
   selector, ordering, or weight. This does not derive or ratify above-C3
   taste/Dirac/chirality content, hw1-vs-hw2 carrier content beyond the C3 grade,
   or the relative alignment of the up/down/lepton mass bases (CKM/PMNS
-  structure). Net: AC_φλ is *not* a discrete 6-way labeling choice, and the
-  live Tier-A row is now the two surviving atoms: the occupancy realization
-  binary plus the R-η readout identification.
+  structure). Net: AC_φλ was *not* a discrete 6-way labeling choice, and the
+  then-live Tier-A row was narrowed to two surviving atoms: the occupancy
+  realization binary plus the R-η readout identification. Those two atoms are
+  now owner-governed residual premise content.
 - **AC_φλ — charged-lepton sharpening (2026-06-02).** For the charged-lepton
   sector specifically, the "mass pattern" admission decomposes (verified, see
   `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`) into **two named,
@@ -115,8 +142,10 @@ Notes:
   that unit reference. The primitive carries no dimensionless content and does
   not assert `a/l_P = 1`; the self-consistency that the natural unit equals the
   Planck length remains the separate open gravity derivation.
-- **θ** is admitted here exactly as the Standard Model admits it (the strong-CP
-  problem); not a framework-specific deficit.
+- **θ** was formerly admitted here exactly as the Standard Model admits it
+  (the strong-CP problem); it is not a framework-specific deficit. As of the
+  2026-07-04 owner adoption, its residual governance content is no longer live
+  Tier-A.
 
 ## Conventions — NOT admitted inputs (vacuous rescaling freedoms)
 
@@ -143,10 +172,11 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
   `minimal_axioms` node as the narrow durable realized-outcome axiom. This
   retirement does not promote the old `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
   parent, which contains additional non-axiom material.
-- **θ and AC_φλ:** stand as genuine admitted derivation targets (θ shared with
-  the SM; AC_φλ = occupancy realization binary + R-η readout identification,
-  with naming excluded and the C3-grade species bridge owner-ratified out of
-  Tier-A).
+- **θ and AC_φλ:** historically stood as genuine admitted derivation targets
+  (θ shared with the SM; AC_φλ = occupancy realization binary + R-η readout
+  identification, with naming excluded and the C3-grade species bridge
+  owner-ratified out of Tier-A). As of the 2026-07-04 owner adoption, both are
+  retired from live Tier-A and registered as owner-governed residual premises.
 - **Scale reference:** removed from Tier A and registered as the
   explicitly approved `scale_reference_primitive`. It is a units primitive, not a
   derivation-target admission and not a status-bounding dependency.
@@ -155,34 +185,38 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
 - **θ rigor check:** verified NOT derivable from the retained
   real/anti-Hermitian `D` structure —
   `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go` (retained_no_go)
-  explicitly shows the real/RP-half structure cannot forbid the CP-odd term, so
-  θ=0 remains a genuine admission (shared with the SM).
+  explicitly shows the real/RP-half structure cannot forbid the CP-odd term.
+  This remains historical no-go context; the current retirement is
+  owner-governance, not theorem derivation.
 
-Net stratified by character: **two dimensionless Tier-A admissions** —
-AC_φλ (framework-specific physics) and θ (an SM-shared problem). Record is
-axiom content only in its narrow durable realized-outcome form. The
-scale-reference primitive is the single scale-setting every physical theory
-takes, orthogonal to all of them, and cannot supply any dimensionless number.
+Current stratification after the 2026-07-04 owner adoption: **zero live Tier-A
+admissions**. Historical AC_φλ and θ content is owner-governed residual
+premise content; Record is axiom content only in its narrow durable
+realized-outcome form. The scale-reference primitive is the single
+scale-setting every physical theory takes, orthogonal to all of them, and
+cannot supply any dimensionless number.
 
 ## Minimum-statement sharpening (2026-06-11; owner-approved on merge)
 
-Restates both admissions at their sharpest currently-landed content so that
-elimination attempts target the true residual atoms. **No admission is
-added, removed, adopted, or re-graded; the count stays at two; every
-dependent stays bounded.** All inputs cited below are landed source notes;
-audit status remains audit-lane-only.
+Historically restated both admissions at their sharpest landed content so that
+elimination attempts targeted the true residual atoms. In that 2026-06-11
+refinement, **no admission was added, removed, adopted, or re-graded; the
+count stayed at two; every dependent stayed bounded.** The later 2026-07-04
+owner adoption consumes the four residual atoms and retires the live Tier-A
+registry. All inputs cited below are landed source notes; audit status remains
+audit-lane-only.
 
-### AC_φλ — minimum decomposition (two surviving Tier-A residual atoms; 2026-07-04 partial reclassifications)
+### AC_φλ — historical minimum decomposition (two residual atoms before final 2026-07-04 owner adoption)
 
 2026-07-04 value-face reclassification: sub-admission (i)'s **value face** is
 reclassified to the already-approved `realized_state_primitive`. A per-lane
 value of `r` is registered state data in exactly the sense of that primitive's
 counterfactual test: it varies across law-admissible realized states and is
 matched like the masses. This does **not** derive or force `r = 1/2`, does
-**not** select a lane, and does **not** retire AC_φλ. The surviving Tier-A
-residual in (i) is the measure-side/dynamical realization binary: which
-grain/statistics the matter action implements. Count unchanged; downstream
-rows depending on AC_φλ remain bounded.
+**not** select a lane, and did **not** retire AC_φλ by itself. The then-
+surviving Tier-A residual in (i) was the measure-side/dynamical realization
+binary: which grain/statistics the matter action implements. That atom is now
+consumed by the 2026-07-04 owner-governed adoption.
 
 2026-07-04 species bridge C3-grade owner ratification:
 [`ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md`](ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md)
@@ -193,8 +227,9 @@ physical-species bridge is owner-ratified naming-class content, not a Tier-A
 derivation target. This does **not** add an axiom or primitive, does **not**
 set any audit status, and does **not** cover taste/Dirac/chirality content,
 hw1-vs-hw2 carrier content beyond the C3 grade, or CKM/PMNS alignment. The
-theta row is untouched. Count unchanged; downstream rows depending on
-AC_phi_lambda remain bounded until both surviving AC atoms are retired.
+theta row was untouched by that partial reclassification. Count was unchanged
+until the later 2026-07-04 owner-governed adoption retired both surviving AC
+atoms and both theta atoms.
 
 1. **The measure-side doublet occupancy realization binary.** The landed
    static-readout no-go states it: the *whole* magnitude admission is
@@ -288,10 +323,11 @@ only.
 The framework already has the machinery: `compute_effective_status.py` makes a
 row retained-grade iff every one-hop dependency is retained-grade (transitive),
 and `premise_nodes.py` reads a machine registry (`axiom_premise_nodes.json`) of
-chain-satisfying premises. The Tier-A sidecar adds:
+chain-satisfying premises. The Tier-A/owner-governance sidecars add:
 
 1. A registry data file `docs/audit/data/tier_a_admissions.json` listing the
-   Tier A derivation-target ids separately from convention metadata.
+   live Tier-A derivation-target ids separately from convention metadata. As
+   of 2026-07-04 this live set is empty.
 2. A new accepted-premise class for Tier-A derivation targets in
    `premise_nodes.py`: chain-satisfying **only at `retained_bounded`** (so
    dependents are cleanly *bounded*, not blocked), but explicitly distinct from
@@ -299,33 +335,41 @@ chain-satisfying premises. The Tier-A sidecar adds:
    Convention rows are not accepted premises, because the existing convention
    parent notes carry more than the vacuous normalization choice and must not
    be laundered as theorem inputs.
-3. The convention that any lane consuming a Tier-A admission lists its id as a
+3. A registry data file
+   `docs/audit/data/owner_governed_premise_nodes.json` listing retired
+   residual-premise ids that owner governance has explicitly adopted out of
+   Tier-A without reclassifying them as axioms or approved primitives. These
+   chain-satisfy without Tier-A bounding, but only inside their recorded
+   boundaries.
+4. The convention that any lane consuming a Tier-A admission or
+   owner-governed residual premise lists its id as a
    **real `deps` edge** (or a structured `admitted_context_inputs` field), not
    prose — otherwise auto-propagation cannot fire.
 
-With (1)–(3), deriving a Tier-A item is two mechanical steps — land a retained
-theorem for it, remove it from `tier_a_admissions.json` — after which
+With (1)–(4), retiring a Tier-A item has two mechanical paths: land a retained
+theorem for it, or record an explicit owner-governance adoption for the exact
+residual. Then remove it from live `tier_a_admissions.json` after which
 `compute_effective_status` automatically cascades every transitive dependent
 from `retained_bounded` toward full `retained`/`positive_theorem` on the next
 pipeline run when otherwise eligible. **No back-links are maintained by hand;
 the reverse cascade is computed.**
 
 This is a **governance decision**: it widens the chain-satisfying premise set
-beyond pure axioms while preserving the bounded label for any dependency on an
-unretired Tier-A derivation target.
+beyond pure axioms while preserving the bounded label only for dependencies on
+unretired live Tier-A derivation targets.
 
 ## What this note does NOT do
 
 - Does **not** set, promote, or change any row's `effective_status`.
 - Does **not** add Tier-A ids to `axiom_premise_nodes.json`.
+- Does **not** add owner-governed residual premises to
+  `axiom_premise_nodes.json`.
 - Does **not** treat approved primitives as Tier-A admissions; primitives and
   axioms chain-satisfy without imposing `retained_bounded`.
 - Does **not** promote `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` or any
   readout/log-det/modulus parent wholesale into the axiom-premise registry.
-- Does **not** promote Tier-A derivation-target dependents to unbounded retained
-  status; the machine policy keeps those rows bounded until the relevant
-  admission is retired.
-- Does **not** treat any admission as derived; Tier A-1 items remain open.
+- Does **not** treat any owner-governed retirement as theorem derivation; the
+  source-side theorem/no-go packets keep their own audit statuses.
 - Does **not** consume any PDG value, fitted selector, or comparator.
 - Uses plain-text backtick cids (no markdown links), so the citation-graph
   builder does not create spurious dependency edges from this index.

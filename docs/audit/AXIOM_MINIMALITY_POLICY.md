@@ -80,10 +80,15 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
   are tracked in `docs/audit/data/axiom_premise_nodes.json`, chain-satisfy
   dependencies without bounding downstream status, and are guarded by
   `check_axiom_premise_clean.py`.
+- **Owner-governed residual premises** are explicit owner-governance
+  retirements of formerly Tier-A residuals. They are tracked in
+  `docs/audit/data/owner_governed_premise_nodes.json`, chain-satisfy
+  dependencies without Tier-A bounding, and are not axioms, approved
+  primitives, or theorem derivations.
 - **Tier-A admitted derivation targets** are non-axiom inputs with no-go
   portfolios. They are tracked in `docs/audit/data/tier_a_admissions.json` and
   chain-satisfy only at `retained_bounded` until retired by a retained
-  derivation.
+  derivation or explicit owner-governance adoption.
 
 Entries below are the historical record of approvals and their validation
 provenance. They carry no premise or interpretive weight: effect statements
@@ -558,6 +563,47 @@ promoted to axiom or primitive class):
     two (`AC_phi_lambda`, `theta`); the theta row is untouched. Downstream rows
     depending on AC_phi_lambda remain bounded until the surviving AC atoms are
     retired.
+
+- **2026-07-04 -- Tier-A residual owner adoption and registry retirement.**
+  Owner approval recorded 2026-07-04 for the exact four-candidate decision
+  surface prepared in
+  `docs/TIER_A_RESIDUAL_OWNER_DECISION_PACKET_2026-07-04.md`, and consumed by
+  `docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md`. The adopted
+  owner-governed residual premises are:
+  `ac_orbit_occupancy_statistical_grain_premise`,
+  `ac_reta_hclass_hunit_readout_premise`,
+  `theta_gauge_sector_phase_source_premise`, and
+  `theta_mass_determinant_channel_w2_premise`. They are registered through the
+  new Class B owner-governed residual premise registry
+  `docs/audit/data/owner_governed_premise_nodes.json` under the two former
+  Tier-A dependency ids `staggered_dirac_realization_gate_note_2026-05-03`
+  (`AC_phi_lambda`) and `strong_cp_theta_zero_note` (`theta`).
+  - **Why it is admissible.** The July 4 hygiene campaign first removed false
+    admissions from Tier-A: Record is axiom content; the scale reference,
+    kinetic isotropy, and realized-state interface are approved primitives;
+    the AC value face is realized-state registration; the C3-grade species
+    bridge is owner-ratified naming-class content. The remaining four atoms
+    were pressure-tested in source-side support/no-go packets and then
+    isolated in the governance-readiness packet as theorem-or-governance
+    residuals. The owner decision is to consume those exact four residuals as
+    governance premises, rather than keep them as live retirable debts.
+  - **No laundering.** This is not an axiom update, not an approved primitive,
+    and not a theorem derivation. It does not set any audit verdict for the
+    support/no-go packet stack. The AC adoption supplies no value of `r`,
+    `delta`, charged-lepton mass, mixing angle, probability rule, above-C3
+    taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.
+    The theta adoption does not derive `theta_bar = 0` by itself, a continuum
+    theta theorem, quark masses, CKM structure, QCD continuum dynamics, a
+    CP-odd coefficient theorem, an axion, or a fitted selector.
+  - **Scope.** The live Tier-A registry is retired: `genuine_admitted_input_count`
+    is zero, the genuine admitted-target count is zero, `canonical_ids` is
+    empty, and `derivation_targets` is empty in
+    `docs/audit/data/tier_a_admissions.json`. Historical AC_phi_lambda and
+    theta entries remain under `retired_derivation_targets`; live
+    chain-satisfying governance authority is in
+    `owner_governed_premise_nodes.json`. The approved axiom/primitive allowlist
+    remains exactly `minimal_axioms`, `scale_reference_primitive`,
+    `kinetic_isotropy_primitive`, and `realized_state_primitive`.
 
 Approved scope classification (no axiom, primitive, or Tier-A change; nothing
 added to or removed from any premise registry):

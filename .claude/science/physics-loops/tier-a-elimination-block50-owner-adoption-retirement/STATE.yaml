@@ -1,0 +1,51 @@
+slug: tier-a-elimination-block50-owner-adoption-retirement
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block50-owner-adoption-retirement-20260704
+base_branch: physics-loop/tier-a-elimination-block49-owner-decision-packet-20260704
+goal: "Retire live Tier-A admissions by owner-governed adoption of the four exact Block49 residual candidates."
+target_status: meta
+actual_current_surface_status: owner_governed_residual_premise_registry_action
+trace_class: owner_governed_residual_premise_retirement
+reachability_to_target: executes
+active_route: "Owner-governed residual premise adoption"
+hard_residual: "AC(i), AC(ii)/R-eta, theta gauge side, theta mass side"
+files_touched:
+  - docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md
+  - docs/audit/data/tier_a_admissions.json
+  - docs/audit/data/owner_governed_premise_nodes.json
+  - docs/audit/scripts/premise_nodes.py
+  - docs/audit/scripts/compute_effective_status.py
+  - docs/audit/scripts/audit_lint.py
+  - docs/audit/scripts/compute_audit_queue.py
+  - docs/audit/scripts/render_front_door_status.py
+  - scripts/admitted_input_registry_tier_a_boundary_check.py
+  - scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py
+  - scripts/audit_companion_doc_authority_registry.py
+  - docs/audit/AXIOM_MINIMALITY_POLICY.md
+  - docs/audit/DOCUMENT_AUTHORITY_AND_CITATION_POLICY.md
+  - docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+  - docs/audit/scripts/tests/test_audit_pipeline.py
+  - .claude/science/physics-loops/tier-a-elimination-block50-owner-adoption-retirement/
+claim_movement: "Live Tier-A derivation targets are zeroed; former AC_phi_lambda/theta target ids become owner-governed residual premises."
+does_not_move:
+  - AC_phi_lambda theorem status
+  - theta theorem status
+  - axioms
+  - approved primitives
+  - source-side support/no-go packet audit verdicts
+checks:
+  runner: "PASS=69 FAIL=0 CHECKS=69"
+  tier_a_boundary_runner: "PASS=62 FAIL=0"
+  py_compile: "PASS"
+  unit_tests: "PASS; Ran 90 tests"
+  doc_authority_runner: "PASS=25 FAIL=0"
+  audit_pipeline: "PASS; seeded/adjudicated adoption note as meta/effective meta leaf; live Tier-A count zero"
+  audit_lint_strict: "PASS; existing 23 warnings / 178 notices, no errors"
+  diff_check: "PASS"
+  ascii_hygiene: "PASS"
+review_loop_disposition: local_compact_pass
+source_commit: pending
+pr_status: pending
+pr_url: pending
+next_exact_action: "Commit, push, open stacked PR against Block49, then monitor hosted audit."
+stop_condition: "Hosted audit passes and the stacked retirement PR lands."

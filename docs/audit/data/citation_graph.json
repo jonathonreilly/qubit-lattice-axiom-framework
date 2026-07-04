@@ -1686,6 +1686,10 @@
     },
     {
       "from": "admitted_input_registry_tier_a_note_2026-05-23",
+      "to": "tier_a_residual_owner_adoption_retirement_2026-07-04"
+    },
+    {
+      "from": "admitted_input_registry_tier_a_note_2026-05-23",
       "to": "acphilambda_species_bridge_c3_grade_owner_ratification_retirement_note_2026-07-04"
     },
     {
@@ -43117,6 +43121,10 @@
       "to": "minimal_axioms"
     },
     {
+      "from": "tier_a_residual_owner_adoption_retirement_2026-07-04",
+      "to": "tier_a_residual_owner_decision_packet_2026-07-04"
+    },
+    {
       "from": "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20",
       "to": "minimal_axioms"
     },
@@ -58022,6 +58030,10 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "tier_a_residual_owner_adoption_retirement_2026-07-04"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "no_per_site_chirality_theorem_note_2026-05-02"
     },
     {
@@ -59981,10 +59993,11 @@
       "claim_type_author_hint_raw": "meta",
       "claim_type_seed_hint": "meta",
       "deps": [
+        "tier_a_residual_owner_adoption_retirement_2026-07-04",
         "acphilambda_species_bridge_c3_grade_owner_ratification_retirement_note_2026-07-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "39a90ea9b2fd299d5a056d87ed675b6633462276dfd9e7f09d7231ecf330133e",
+      "note_hash": "454fec44a4096f7f142fbdd4a481e3d1dd6394c8b781975b458cd0edd00e18ed",
       "path": "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
       "runner_path": "scripts/admitted_input_registry_tier_a_boundary_check.py",
       "title": "Admitted-Input Registry \u2014 Tier A (Central Index of Named Non-Axiom Admissions)"
@@ -111171,6 +111184,7 @@
         "scale_reference_primitive",
         "kinetic_isotropy_primitive",
         "realized_state_primitive",
+        "tier_a_residual_owner_adoption_retirement_2026-07-04",
         "no_per_site_chirality_theorem_note_2026-05-02",
         "hypercharge_identification_note",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
@@ -111181,7 +111195,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "eaadb2e16777f8309ab9d8bc3995f74f1d3a3b7e83caedcae14f0a7e9c175353",
+      "note_hash": "fb2733d2e33978bf63d8fc4cac15473320afcbcc6ed50c38e6413678d6502ed0",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -119893,6 +119907,20 @@
       "runner_path": "scripts/tier_a_residual_governance_readiness_packet_2026_07_04.py",
       "title": "Tier-A Residual Governance Readiness Packet"
     },
+    "tier_a_residual_owner_adoption_retirement_2026-07-04": {
+      "claim_id": "tier_a_residual_owner_adoption_retirement_2026-07-04",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "tier_a_residual_owner_decision_packet_2026-07-04"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "8ca4fceb1c07a0f4a2682806bd0777ffd16868815471f776689e0db046b9cfe5",
+      "path": "docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md",
+      "runner_path": "scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py",
+      "title": "Tier-A Residual Owner Adoption and Retirement"
+    },
     "tier_a_residual_owner_decision_packet_2026-07-04": {
       "claim_id": "tier_a_residual_owner_decision_packet_2026-07-04",
       "claim_type_author_hint": "meta",
@@ -127596,7 +127624,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 1560,
       "decoration": 3,
-      "meta": 321,
+      "meta": 322,
       "no_go": 350,
       "none": 1216,
       "open_gate": 134,
@@ -127605,16 +127633,16 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1965,
       "decoration": 3,
-      "meta": 321,
+      "meta": 322,
       "no_go": 454,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14612,
-    "leaf_count": 1270,
-    "node_count": 3858,
+    "edge_count": 14615,
+    "leaf_count": 1269,
+    "node_count": 3859,
     "root_count": 1104,
-    "runners_with_path": 3481
+    "runners_with_path": 3482
   }
 }

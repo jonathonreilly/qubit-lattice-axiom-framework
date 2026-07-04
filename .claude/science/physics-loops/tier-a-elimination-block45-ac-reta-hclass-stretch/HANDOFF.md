@@ -8,7 +8,7 @@ first-principles support surface after the updated axiom hygiene pass.
 
 Branch: `physics-loop/tier-a-elimination-block45-ac-reta-hclass-stretch-20260704`
 Base: `physics-loop/tier-a-elimination-block44-ac-reta-hunit-primitive-nonsupply-20260704`
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4986
 
 ## Claim Movement
 

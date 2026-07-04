@@ -1,0 +1,37 @@
+block: tier-a-elimination-block13-aci-index
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block13-aci-index-20260704
+base_branch: physics-loop/tier-a-elimination-block12-theta-g1-20260704
+pr_url: pending
+source_commit: pending
+target: AC_phi_lambda sub-admission (i) dynamical/index occupancy route
+claim_type: no_go
+registry_edits: false
+retirement_claimed: false
+status: ready_for_commit
+active_route: current-surface first-order/index stretch attempt
+hard_residual: "derive which grain/statistics the matter action implements: sector-tied/count-twice versus orbit/holomorphic/count-once"
+files_touched:
+  - docs/ACPHILAMBDA_DYNAMICAL_INDEX_OCCUPANCY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+  - scripts/acphilambda_dynamical_index_occupancy_current_surface_no_go_2026_07_04.py
+  - .claude/science/physics-loops/tier-a-elimination-block13-aci-index/
+open_imports:
+  - determinant-order theorem for chiral/Pfaffian/holomorphic generation readout
+  - mode-set theorem selecting per-K-orbit rather than per-channel occupancy
+  - full matter-action statistics theorem on the interacting/gauge transfer surface
+no_go_routes:
+  - updated axioms/primitives supply AC(i) measure binary
+  - explicit Kahler-Dirac/index realization supplies count-once energy weighting
+  - Berezin/statistics alone selects holomorphic polarization
+  - free corner-transfer trace correspondence selects the mode set
+trace_gate_classification: negative_route_pruning
+review_findings: "local review-loop emulation pass; one wording nit fixed"
+verification:
+  runner: "PASS=206 FAIL=0"
+  py_compile: pass
+  audit_pipeline: pass
+  audit_lint_strict: "pass; existing warnings/notices only"
+  diff_check: pass
+audit_row: acphilambda_dynamical_index_occupancy_current_surface_no_go_note_2026-07-04
+next_exact_action: "Commit source block, push stacked PR, update PR metadata, then monitor audit."
+stop_condition: "Block complete after green checks, review disposition pass/demote, PR opened, and lock released."

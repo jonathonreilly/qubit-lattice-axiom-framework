@@ -1,0 +1,247 @@
+AC_phi_lambda dynamical-index occupancy current-surface no-go verifier
+
+========================================================================================
+A. source presence and ledger grounding
+========================================================================================
+[PASS] exists: docs/ACPHILAMBDA_DYNAMICAL_INDEX_OCCUPANCY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md
+[PASS] exists: docs/KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md
+[PASS] exists: docs/KOIDE_KAHLER_DIRAC_REALIZATION_GIVES_R_ONE_INDEX_ROUTE_CLOSED_BOUNDED_NO_GO_NOTE_2026-06-08.md
+[PASS] exists: docs/KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md
+[PASS] exists: docs/KOIDE_R_REDUCES_TO_CHIRAL_VS_VECTOR_YUKAWA_BINARY_NARROW_THEOREM_NOTE_2026-06-04.md
+[PASS] exists: docs/CORNER_AXIS_FREE_TRANSFER_EXTENSION_PER_CHANNEL_TRACE_CORRESPONDENCE_AND_MODE_SET_FORK_BOUNDED_NOTE_2026-06-12.md
+[PASS] exists: docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md
+[PASS] axiom_no_go ledger row resolves
+[PASS] axiom_no_go row has note path
+[PASS] realized_reduction ledger row resolves
+[PASS] realized_reduction row has note path
+[PASS] static_no_go ledger row resolves
+[PASS] static_no_go row has note path
+[PASS] kahler_dirac ledger row resolves
+[PASS] kahler_dirac row has note path
+[PASS] berezin_fork ledger row resolves
+[PASS] berezin_fork row has note path
+[PASS] chiral_vector ledger row resolves
+[PASS] chiral_vector row has note path
+[PASS] corner_transfer ledger row resolves
+[PASS] corner_transfer row has note path
+[PASS] orbit_independence ledger row resolves
+[PASS] orbit_independence row has note path
+[PASS] minimal ledger row resolves
+[PASS] minimal row has note path
+[PASS] registry ledger row resolves
+[PASS] registry row has note path
+[PASS] axiom_no_go row is not an AC retirement authority
+[PASS] static_no_go row is not an AC retirement authority
+[PASS] kahler_dirac row is not an AC retirement authority
+[PASS] berezin_fork row is not an AC retirement authority
+[PASS] chiral_vector row is not an AC retirement authority
+[PASS] corner_transfer row is not an AC retirement authority
+[PASS] orbit_independence row is not an AC retirement authority
+[PASS] new note has Type no_go
+[PASS] new note has Claim type no_go
+[PASS] primary runner link present
+
+========================================================================================
+B. Tier-A registry remains untouched
+========================================================================================
+[PASS] Tier-A genuine count remains two
+[PASS] canonical Tier-A IDs remain AC and theta
+[PASS] AC surviving decomposition remains two residuals
+[PASS] theta decomposition remains gauge plus mass
+[PASS] AC registry carries measure-side doublet occupancy realization binar
+[PASS] AC registry carries sector-tied/count-twice
+[PASS] AC registry carries orbit/holomorphic/count-once
+[PASS] AC registry carries delta readout identification R-eta
+[PASS] AC registry carries registered realized-state data
+[PASS] note preserves registry boundary: AC_phi_lambda is not retired.
+[PASS] note preserves registry boundary: The Tier-A registry is not edited.
+[PASS] note preserves registry boundary: No value of `r` is derived, selected, preferred, or 
+[PASS] note preserves registry boundary: R-eta and theta are untouched.
+
+========================================================================================
+C. new note discipline and dependency links
+========================================================================================
+[PASS] markdown link inventory is controlled
+[PASS] new note carries stretch framing: dynamical, first-order, index, determinant, trace-tr
+[PASS] new note carries stretch framing: This block attacks the live remaining opening
+[PASS] new note carries stretch framing: first-order/index language is not enough
+[PASS] new note carries stretch framing: current explicit dynamics either lands on r = 1 or e
+[PASS] new note carries stretch framing: Determinant order
+[PASS] new note carries stretch framing: Mode-set theorem
+[PASS] new note carries stretch framing: Matter-action statistics route
+[PASS] new note carries stretch framing: Governance route
+[PASS] N1 gate present
+[PASS] N2 gate present
+[PASS] N3 gate present
+[PASS] N4 gate present
+[PASS] N5 gate present
+[PASS] N6 gate present
+[PASS] N7 gate present
+[PASS] N8 gate present
+[PASS] forbidden phrase absent: AC_phi_lambda is retired
+[PASS] forbidden phrase absent: r = 1/2 is derived
+[PASS] forbidden phrase absent: r = 1 is derived
+[PASS] forbidden phrase absent: audited_clean status is set
+[PASS] forbidden phrase absent: effective_status = retained
+[PASS] forbidden phrase absent: PDG values enter
+[PASS] forbidden phrase absent: observed lepton masses enter
+[PASS] note line count is bounded
+[PASS] verification threshold present
+
+========================================================================================
+D. source-packet boundary checks
+========================================================================================
+[PASS] axiom no-go names survivor: The target is now sharper
+[PASS] axiom no-go names survivor: Matter-action statistics theorem
+[PASS] axiom no-go names survivor: first-order/Pfaffian/count-once
+[PASS] axiom no-go names survivor: second-order modulus/count-twice
+[PASS] axiom no-go names survivor: does not derive, refute, re-grade, retire, or remove A
+[PASS] realized reduction leaves measure side: The measure-side frontier is open, not settled.
+[PASS] realized reduction leaves measure side: first-order-vs-second-order `det D`
+[PASS] realized reduction leaves measure side: Nothing here derives, forces, or prefers `r = 1/2`
+[PASS] realized reduction leaves measure side: value face
+[PASS] realized reduction leaves measure side: measure-side binary survives
+[PASS] static no-go leaves dynamical opening: remaining live opening is dynamical/first-order/index 
+[PASS] static no-go leaves dynamical opening: does the actual matter action deliver a *first-order* 
+[PASS] static no-go leaves dynamical opening: or the *second-order* modulus
+[PASS] static no-go leaves dynamical opening: does **not** claim r=1/2 is impossible
+[PASS] static no-go leaves dynamical opening: dynamical first-order/index route open
+[PASS] Kahler-Dirac route boundary: det D = |det M|
+[PASS] Kahler-Dirac route boundary: singular values
+[PASS] Kahler-Dirac route boundary: The index route is closed on the realization.
+[PASS] Kahler-Dirac route boundary: index is a signed **mode-count**
+[PASS] Kahler-Dirac route boundary: wrong *kind* of functional
+[PASS] Kahler-Dirac route boundary: does **not** retire, split, or re-grade the `AC_
+[PASS] Berezin fork boundary: four-cell fork
+[PASS] Berezin fork boundary: real Gaussian
+[PASS] Berezin fork boundary: Majorana Berezin
+[PASS] Berezin fork boundary: holomorphic Gaussian
+[PASS] Berezin fork boundary: holomorphic Berezin
+[PASS] Berezin fork boundary: does not adopt the holomorphic polarization
+[PASS] Berezin fork boundary: positive route open
+[PASS] chiral/vector map is conditional: does not select the chiral/holomorphic readout
+[PASS] chiral/vector map is conditional: does not derive Koide `r = 1/2`
+[PASS] chiral/vector map is conditional: uniform "complex-mode count"
+[PASS] chiral/vector map is conditional: still gives `r = 1`
+[PASS] chiral/vector map is conditional: next_trace_action
+[PASS] corner transfer localizes fork: does not select an occupancy cell
+[PASS] corner transfer localizes fork: mode-set fork
+[PASS] corner transfer localizes fork: per-channel counting gives the two-slot cell `r = 1`
+[PASS] corner transfer localizes fork: per-K-orbit counting gives the one-slot cell `r = 1/2`
+[PASS] corner transfer localizes fork: does not select between branches
+[PASS] orbit independence keeps premise open: the occupancy rule is not supplied by the current chec
+[PASS] orbit independence keeps premise open: M_sector
+[PASS] orbit independence keeps premise open: M_orbit
+[PASS] orbit independence keeps premise open: proposal; NOT adopted
+[PASS] orbit independence keeps premise open: both horns are consistent
+[PASS] orbit independence keeps premise open: not a derivation of `r = 1/2`
+[PASS] minimal axioms withhold dynamics/measure: does not choose a Hamiltonian or transfer operator
+[PASS] minimal axioms withhold dynamics/measure: transition probabilities or weights
+[PASS] minimal axioms withhold dynamics/measure: context selection
+[PASS] minimal axioms withhold dynamics/measure: source/action and physical-observable identification
+[PASS] minimal axioms withhold dynamics/measure: Only records are readable
+
+========================================================================================
+E. finite weight-map algebra
+========================================================================================
+[PASS] vector/real weights give expected r
+[PASS] chiral/holomorphic weights give expected r
+[PASS] uniform complex rescaling weights give expected r
+[PASS] weight map agrees with fraction ws=1 wd=1
+[PASS] weight map agrees with fraction ws=1 wd=2
+[PASS] weight map agrees with fraction ws=1 wd=3
+[PASS] weight map agrees with fraction ws=1 wd=4
+[PASS] weight map agrees with fraction ws=1 wd=5
+[PASS] weight map agrees with fraction ws=2 wd=1
+[PASS] weight map agrees with fraction ws=2 wd=2
+[PASS] weight map agrees with fraction ws=2 wd=3
+[PASS] weight map agrees with fraction ws=2 wd=4
+[PASS] weight map agrees with fraction ws=2 wd=5
+[PASS] weight map agrees with fraction ws=3 wd=1
+[PASS] weight map agrees with fraction ws=3 wd=2
+[PASS] weight map agrees with fraction ws=3 wd=3
+[PASS] weight map agrees with fraction ws=3 wd=4
+[PASS] weight map agrees with fraction ws=3 wd=5
+[PASS] weight map agrees with fraction ws=4 wd=1
+[PASS] weight map agrees with fraction ws=4 wd=2
+[PASS] weight map agrees with fraction ws=4 wd=3
+[PASS] weight map agrees with fraction ws=4 wd=4
+[PASS] weight map agrees with fraction ws=4 wd=5
+[PASS] weight map agrees with fraction ws=5 wd=1
+[PASS] weight map agrees with fraction ws=5 wd=2
+[PASS] weight map agrees with fraction ws=5 wd=3
+[PASS] weight map agrees with fraction ws=5 wd=4
+[PASS] weight map agrees with fraction ws=5 wd=5
+[PASS] Q(r=1/2)=2/3
+[PASS] Q(r=1)=1
+[PASS] Q(r=0)=1/3
+[PASS] vector and uniform-complex branches are same r
+[PASS] chiral branch differs from vector branch
+
+========================================================================================
+F. Dirac block determinant/order checks
+========================================================================================
+[PASS] 3x3 off-diagonal Dirac block determinant is sign times detM detMdag
+[PASS] D^2 upper block is M Mdag
+[PASS] D^2 lower block is Mdag M
+[PASS] D^2 off-diagonal blocks vanish
+[PASS] physical L/R grading supertrace count cancels
+[PASS] equivariant signed mode-count set has no half
+[PASS] equivariant signed mode-count set matches route boundary
+[PASS] index count kind is integer-valued
+[PASS] integer index cannot equal energy half-reweight
+
+========================================================================================
+G. fork and transfer bookkeeping
+========================================================================================
+[PASS] real Gaussian slot count maps to expected r
+[PASS] real Gaussian polarization label is controlled
+[PASS] Majorana Berezin slot count maps to expected r
+[PASS] Majorana Berezin polarization label is controlled
+[PASS] holomorphic Gaussian slot count maps to expected r
+[PASS] holomorphic Gaussian polarization label is controlled
+[PASS] holomorphic Berezin slot count maps to expected r
+[PASS] holomorphic Berezin polarization label is controlled
+[PASS] real polarization fork gives one result
+[PASS] holomorphic polarization fork gives one result
+[PASS] statistics alone does not select r
+[PASS] sector transfer branch rho=1/2
+[PASS] orbit transfer branch rho=1
+[PASS] sector transfer branch r=1
+[PASS] orbit transfer branch r=1/2
+[PASS] fork branch ratio is two
+[PASS] trace normalization equality forces one for mode_count=1
+[PASS] trace normalization equality forces one for mode_count=2
+[PASS] trace normalization equality forces one for mode_count=3
+[PASS] trace normalization equality forces one for mode_count=5
+
+========================================================================================
+H. native complex structure is measure-neutral
+========================================================================================
+[PASS] C^3=I
+[PASS] J_cs is antisymmetric
+[PASS] J_cs commutes with circulants
+[PASS] J_cs squared is minus doublet projector
+[PASS] SO2-style J flow has determinant one
+
+========================================================================================
+I. final no-go discipline
+========================================================================================
+[PASS] no-go discipline phrase present: not a universal no-go against all future first-order
+[PASS] no-go discipline phrase present: No observed lepton masses
+[PASS] no-go discipline phrase present: Every tested surface targets the same surviving
+[PASS] no-go discipline phrase present: does not close AC(i)
+[PASS] no-go discipline phrase present: future theorem could derive a genuinely chiral determi
+[PASS] new note does not introduce wall labels
+[PASS] new note does not edit registry by text
+[PASS] new note says audit lane only
+
+========================================================================================
+TOTAL: PASS=206 FAIL=0
+========================================================================================

@@ -7,7 +7,8 @@ hygiene plus finite C3 algebra.
 
 Branch: `physics-loop/tier-a-elimination-block23-kreal-physicalization-20260704`
 Base: `physics-loop/tier-a-elimination-block22-theta-mass-readiness-20260704`
-PR: pending
+Source commit: `dda25a04df32`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4953
 
 ## Expected Claim Movement
 
@@ -37,4 +38,5 @@ physical K-real monitor or K/CPT-site-basis predicate.
 
 ## Next Exact Action
 
-Commit, push, and open a stacked block23 PR.
+Verify PR status, then continue toward a K/CPT-site-basis bridge, AC
+measure-side dynamics theorem, or theta determinant-channel/action bridge.

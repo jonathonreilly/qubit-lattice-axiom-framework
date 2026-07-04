@@ -769,6 +769,26 @@
       "to": "minimal_axioms"
     },
     {
+      "from": "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
+      "to": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11"
+    },
+    {
+      "from": "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
+      "to": "koide_staggered_first_order_generation_determinant_bounded_theorem_note_2026-06-11"
+    },
+    {
+      "from": "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
+      "to": "acphilambda_first_order_determinant_retirement_readiness_no_go_note_2026-07-04"
+    },
+    {
+      "from": "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
+      "to": "charged_lepton_value_reduces_to_one_counting_bit_synthesis_note_2026-06-05"
+    },
+    {
+      "from": "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
+      "to": "generation_weight_dial_structure_2026-06-05"
+    },
+    {
       "from": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
       "to": "minimal_axioms"
     },
@@ -58683,6 +58703,24 @@
       "runner_path": "scripts/acphilambda_mode_set_corner_transfer_current_surface_no_go_2026_07_04.py",
       "title": "AC_phi_lambda Mode-Set Corner-Transfer Current-Surface No-Go"
     },
+    "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04": {
+      "claim_id": "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
+        "koide_staggered_first_order_generation_determinant_bounded_theorem_note_2026-06-11",
+        "acphilambda_first_order_determinant_retirement_readiness_no_go_note_2026-07-04",
+        "charged_lepton_value_reduces_to_one_counting_bit_synthesis_note_2026-06-05",
+        "generation_weight_dial_structure_2026-06-05"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "8d758f960db161fa4139b52fed5889f7a0cf310fddfdeacc0896799ec012908f",
+      "path": "docs/ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py",
+      "title": "AC_phi_lambda Occupancy Determinant-Power Split Exact Support"
+    },
     "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11": {
       "claim_id": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
       "claim_type_author_hint": "bounded_theorem",
@@ -110423,7 +110461,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3e9ad1653043a02bba79c30f2550d84a097ba79bfcaa204cb7cbbd3e52ed84cc",
+      "note_hash": "14b0d14e8ce03930c76fc3903223d4db09733ae9aebe34651261d1f8230ce36b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -126620,7 +126658,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1554,
+      "bounded_theorem": 1555,
       "decoration": 3,
       "meta": 319,
       "no_go": 337,
@@ -126629,7 +126667,7 @@
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1959,
+      "bounded_theorem": 1960,
       "decoration": 3,
       "meta": 319,
       "no_go": 441,
@@ -126637,10 +126675,10 @@
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14473,
-    "leaf_count": 1267,
-    "node_count": 3837,
+    "edge_count": 14478,
+    "leaf_count": 1266,
+    "node_count": 3838,
     "root_count": 1102,
-    "runners_with_path": 3460
+    "runners_with_path": 3461
   }
 }

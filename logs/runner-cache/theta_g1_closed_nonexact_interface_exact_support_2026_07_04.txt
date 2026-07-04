@@ -1,0 +1,212 @@
+theta G1 closed-nonexact interface exact-support verifier
+
+================================================================================================
+A. source presence, metadata, and claim firewall
+================================================================================================
+[PASS] exists: docs/THETA_G1_CLOSED_NONEXACT_INTERFACE_EXACT_SUPPORT_NOTE_2026-07-04.md
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md
+[PASS] exists: docs/THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md
+[PASS] exists: docs/THETA_G1_DEFECT_CLOSURE_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/THETA_G1_EXACT_BRANCH_CONSTRAINT_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/THETA_CLOSED_NONEXACT_SECTOR_RECORD_READOUT_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/THETA_G3_CENTRAL_SECTOR_PHASE_CHARACTER_EXACT_SUPPORT_NOTE_2026-07-04.md
+[PASS] note has Type bounded_theorem
+[PASS] note has Claim type bounded_theorem
+[PASS] note declares conditional support status
+[PASS] runner path is wired in note
+[PASS] note declares independent audit boundary
+[PASS] scope boundary phrase present: This note does not retire theta
+[PASS] scope boundary phrase present: does not set `theta_bar = 0`
+[PASS] scope boundary phrase present: does not edit any Tier-A registry
+[PASS] scope boundary phrase present: does not claim that the current framework surface derives 
+[PASS] banned overclaim absent: theta is retired
+[PASS] banned overclaim absent: theta_bar = 0 is derived
+[PASS] banned overclaim absent: registry is edited
+[PASS] banned overclaim absent: The current framework surface derives G1.
+[PASS] banned overclaim absent: A physical gauge bundle is adopted.
+[PASS] banned overclaim absent: A topological-sector primitive is adopted.
+
+================================================================================================
+B. source rows and Tier-A registry state
+================================================================================================
+[PASS] minimal ledger row resolves
+[PASS] minimal row has note path or is premise
+[PASS] registry ledger row resolves
+[PASS] registry row has note path or is premise
+[PASS] positive ledger row resolves
+[PASS] positive row has note path or is premise
+[PASS] carrier4d ledger row resolves
+[PASS] carrier4d row has note path or is premise
+[PASS] g1_current ledger row resolves
+[PASS] g1_current row has note path or is premise
+[PASS] exact_branch ledger row resolves
+[PASS] exact_branch row has note path or is premise
+[PASS] closed_nonexact_no_go ledger row resolves
+[PASS] closed_nonexact_no_go row has note path or is premise
+[PASS] axiom_no_go ledger row resolves
+[PASS] axiom_no_go row has note path or is premise
+[PASS] g3_no_go ledger row resolves
+[PASS] g3_no_go row has note path or is premise
+[PASS] g3_support ledger row resolves
+[PASS] g3_support row has note path or is premise
+[PASS] positive is not an effective theta-retirement authority
+[PASS] carrier4d is not an effective theta-retirement authority
+[PASS] g1_current is not an effective theta-retirement authority
+[PASS] exact_branch is not an effective theta-retirement authority
+[PASS] closed_nonexact_no_go is not an effective theta-retirement authority
+[PASS] axiom_no_go is not an effective theta-retirement authority
+[PASS] g3_no_go is not an effective theta-retirement authority
+[PASS] g3_support is not an effective theta-retirement authority
+[PASS] Tier-A genuine admitted input count remains two
+[PASS] theta minimum decomposition remains gauge plus mass atoms
+[PASS] AC minimum decomposition remains two atoms
+[PASS] theta registry still names multi-plaquette winding
+[PASS] theta registry still names determinant bridge
+
+================================================================================================
+C. A_min, forbidden imports, and no-go memory
+================================================================================================
+[PASS] minimal axioms withhold source/action and physical-observable identification
+[PASS] minimal axioms withhold central-sector decomposition
+[PASS] minimal axioms withhold readout-context selection
+[PASS] minimal axioms withhold transition probabilities or weights
+[PASS] minimal axioms withhold Admissibility is not a dynamics axiom
+[PASS] note forbids hidden import: observed `theta`
+[PASS] note forbids hidden import: neutron-EDM bounds
+[PASS] note forbids hidden import: axion assumptions
+[PASS] note forbids hidden import: topological-sector primitive
+[PASS] note forbids hidden import: fitted selector
+[PASS] stuck fan-out frame present: Exact link-curvature/Bianchi shortcut
+[PASS] stuck fan-out frame present: Unrestricted compact branch sum
+[PASS] stuck fan-out frame present: Record/Admissibility absorption
+[PASS] stuck fan-out frame present: Dynamical defect suppression
+[PASS] stuck fan-out frame present: Closed-nonexact interface
+[PASS] exact-branch no-go memory present: The route closes the defect by deleting the carrier.
+[PASS] exact-branch no-go memory present: Closed-nonexact sector theorem
+[PASS] exact-branch no-go memory present: Dynamical defect suppression
+[PASS] G1 current no-go memory present: On the current surface, G1 is not derived.
+[PASS] G1 current no-go memory present: do not derive the physical closed-branch restriction
+[PASS] G1 current no-go memory present: Record axiom's new formation sentence is also not a defect
+[PASS] closed-nonexact no-go memory present: physical theta sector records/readout are already derived
+[PASS] closed-nonexact no-go memory present: physical sector-record/readout licensing
+[PASS] carrier wall present: The exact 4D carrier therefore lives on the **closed-branc
+[PASS] carrier wall present: `dn != 0` destroys class invariance
+[PASS] carrier wall present: derive the closed-branch (dn = 0) restriction
+
+================================================================================================
+D. exact T4_2 cohomology support
+================================================================================================
+[PASS] D1 shape is C2 x C1
+[PASS] D2 shape is C3 x C2
+[PASS] d2*d1 = 0
+[PASS] rank d1 = 45
+[PASS] rank d2 = 45
+[PASS] dim ker d2 = 51
+[PASS] dim H2 = 6
+[PASS] note records H2 dimension
+[PASS] unit flux (0, 1) is closed
+[PASS] unit flux (0, 1) is non-exact
+[PASS] unit flux (0, 1) has zero Qraw
+[PASS] unit flux (0, 2) is closed
+[PASS] unit flux (0, 2) is non-exact
+[PASS] unit flux (0, 2) has zero Qraw
+[PASS] unit flux (0, 3) is closed
+[PASS] unit flux (0, 3) is non-exact
+[PASS] unit flux (0, 3) has zero Qraw
+[PASS] unit flux (1, 2) is closed
+[PASS] unit flux (1, 2) is non-exact
+[PASS] unit flux (1, 2) has zero Qraw
+[PASS] unit flux (1, 3) is closed
+[PASS] unit flux (1, 3) is non-exact
+[PASS] unit flux (1, 3) has zero Qraw
+[PASS] unit flux (2, 3) is closed
+[PASS] unit flux (2, 3) is non-exact
+[PASS] unit flux (2, 3) has zero Qraw
+[PASS] complementary flux e01+e23 is closed
+[PASS] complementary flux e01+e23 is non-exact
+[PASS] complementary flux has Qraw=2
+[PASS] complementary flux has integer Q=1
+[PASS] random exact move preserves closedness in closed-nonexact sector
+[PASS] random exact move preserves Qraw in closed-nonexact sector
+[PASS] random exact move preserves closedness in closed-nonexact sector
+[PASS] random exact move preserves Qraw in closed-nonexact sector
+[PASS] random exact move preserves closedness in closed-nonexact sector
+[PASS] random exact move preserves Qraw in closed-nonexact sector
+[PASS] random exact move preserves closedness in closed-nonexact sector
+[PASS] random exact move preserves Qraw in closed-nonexact sector
+[PASS] random exact move preserves closedness in closed-nonexact sector
+[PASS] random exact move preserves Qraw in closed-nonexact sector
+[PASS] random exact move preserves closedness in closed-nonexact sector
+[PASS] random exact move preserves Qraw in closed-nonexact sector
+[PASS] random exact move preserves closedness in closed-nonexact sector
+[PASS] random exact move preserves Qraw in closed-nonexact sector
+[PASS] random exact move preserves closedness in closed-nonexact sector
+[PASS] random exact move preserves Qraw in closed-nonexact sector
+[PASS] random exact move preserves closedness in closed-nonexact sector
+[PASS] random exact move preserves Qraw in closed-nonexact sector
+[PASS] random exact move preserves closedness in closed-nonexact sector
+[PASS] random exact move preserves Qraw in closed-nonexact sector
+[PASS] random exact move preserves closedness in closed-nonexact sector
+[PASS] random exact move preserves Qraw in closed-nonexact sector
+[PASS] random exact move preserves closedness in closed-nonexact sector
+[PASS] random exact move preserves Qraw in closed-nonexact sector
+[PASS] exact branch sample 0 is closed
+[PASS] exact branch sample 0 has Qraw=0
+[PASS] exact branch sample 1 is closed
+[PASS] exact branch sample 1 has Qraw=0
+[PASS] exact branch sample 2 is closed
+[PASS] exact branch sample 2 has Qraw=0
+[PASS] exact branch sample 3 is closed
+[PASS] exact branch sample 3 has Qraw=0
+[PASS] exact branch sample 4 is closed
+[PASS] exact branch sample 4 has Qraw=0
+[PASS] exact branch sample 5 is closed
+[PASS] exact branch sample 5 has Qraw=0
+[PASS] exact branch sample 6 is closed
+[PASS] exact branch sample 6 has Qraw=0
+[PASS] exact branch sample 7 is closed
+[PASS] exact branch sample 7 has Qraw=0
+[PASS] exact branch sample 8 is closed
+[PASS] exact branch sample 8 has Qraw=0
+[PASS] exact branch sample 9 is closed
+[PASS] exact branch sample 9 has Qraw=0
+[PASS] single plaquette defect has dn != 0
+[PASS] single plaquette defect starts Qraw=0
+[PASS] exact branch moves keep the same defect current
+[PASS] defect branch local moves change Qraw
+[PASS] defect branch local moves produce odd Qraw
+[PASS] defect branch values match prior witness set
+
+================================================================================================
+E. supplied-interface theorem boundary
+================================================================================================
+[PASS] supplied interface clause present: I1. The physical branch variable n is an integer 2-cochain
+[PASS] supplied interface clause present: I2. Local branch changes act by exact 2-cochains
+[PASS] supplied interface clause present: I3. Non-exact H^2 classes are allowed
+[PASS] supplied interface clause present: I4. Branches with d n != 0 are outside the sector
+[PASS] supplied interface clause present: This is a G1 interface only.
+[PASS] interface supplies G1 shape
+[PASS] interface does not supply G2/G3/mass side
+[PASS] non-claim boundary present: Theta is not retired.
+[PASS] non-claim boundary present: The Tier-A registry is not edited.
+[PASS] non-claim boundary present: No actual current-surface G1 theorem is supplied.
+[PASS] non-claim boundary present: No physical gauge bundle, branch-sector, or topological-se
+[PASS] non-claim boundary present: No G2 physical sector/readout theorem is supplied.
+[PASS] non-claim boundary present: No G3 phase source, coefficient, action entry, or physical
+[PASS] remaining route present: Derive the closed-nonexact interface.
+[PASS] remaining route present: Dynamical suppression.
+[PASS] remaining route present: G2 sector/readout registration.
+[PASS] remaining route present: G3 phase source.
+[PASS] remaining route present: Governance route.
+
+================================================================================================
+F. final summary
+================================================================================================
+
+TOTAL: PASS=185 FAIL=0

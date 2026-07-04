@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_past_hypothesis_existence_reduction_append_only_2026_06_11.py
-runner_sha256: 4ab72d1bc9fa11979c0a6ba5598404e3eac459ab01a738f6c8ab759af8bb7db9
+runner_sha256: ce729759d6c620566205fef75b4d2ae2d75effebd005c574c19acabe617ffb71
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -28,29 +28,28 @@ T3  Not manufacturable by CLOSED reversible dynamics (+ the OPEN escape named)
 T4  The arrow anchors at the structural boundary (6-qubit miniature)
 ==============================================================================
   [PASS] T4a at ANY blank boundary the connected-correlator record count is 0 (pointer-basis ROBUST: superposed, |0>, |1> all start at 0) -- the boundary-vanishing is structural under the connected measure
-  [PASS] T4b whether records FORM is REALIZED-STATE DATA (counterfactual disclosure, per the realized-state primitive's test): the superposed pointer forms records (0 -> 3, strictly increasing); the pointer eigenstates form NONE (deterministic copies register nothing new); formation is the non-emptiness input, never claimed structural  (superposed [0, 1, 2, 3]; |0> [0, 0, 0, 0]; |1> [0, 0, 0, 0])
-  [PASS] T4c from the I/d equilibrium NO records form (flat) -- the anchor needs the boundary and a record-forming realized state, not just the dynamics (the arrow note's universal floor, reproduced)  (counts [0, 0, 0, 0])
+  [PASS] T4b the realized append trajectory/record pattern is supplied data: generic occurrence is axiom content, but the superposed pointer's specific 0 -> 3 trajectory is not forced by the boundary theorem; pointer eigenstates register no new copies under this instrument  (superposed [0, 1, 2, 3]; |0> [0, 0, 0, 0]; |1> [0, 0, 0, 0])
+  [PASS] T4c from the I/d equilibrium this supplied instrument records no new copies (flat) -- the arrow anchor needs a supplied append trajectory, not just the boundary theorem (the arrow note's universal floor, reproduced)  (counts [0, 0, 0, 0])
 ==============================================================================
 T5  Residual inventory (anti-overclaim controls)
 ==============================================================================
   [PASS] T5a two boundary realizations with DIFFERENT room (3 vs 5 registers) both satisfy the boundary theorem -- the reduction does NOT deliver the quantitative/thermodynamic content (low entropy, Penrose room): that residual is genuinely open
   [PASS] T5b the pastward walk length equals the registered content EXACTLY on a growing family: an unbounded past requires unbounded already-registered content (the named dichotomy; the finite-history sector scope is disclosed, not hidden)  (walk lengths [10, 100, 1000, 10000])
-  [PASS] T5c the EMPTY history (w = epsilon) is structurally valid and carries no arrow -- non-emptiness ('at least one record is registered') is the explicit residual PRECONDITION, strictly weaker than any specialness claim and not derived here: formally vacuous-model-allowed, no-arrow when empty
+  [PASS] T5c a supplied nonempty append history remains the explicit residual PRECONDITION: occurrence is axiom content, but the specific formation rule/history/comparable chain is not derived here
 ==============================================================================
 TOTAL: PASS=15 FAIL=0
 ==============================================================================
-SCOPE: reduces the record-arrow low-record-boundary EXISTENCE sub-clause to
-  history non-emptiness, IN the single-chain append-only sector (the total
+SCOPE: reduces the record-arrow low-record-boundary sub-clause to
+  a supplied nonempty append history, IN the single-chain append-only sector (the total
   order is an assumption beyond the Record axiom -- general well-founded
   case: termination survives, uniqueness does not, T1d).  Theorem weight on
   T2 (durability -> acyclicity; deletion controls FAIL) and T3 (rank 2 != 16
   under CLOSED reversible dynamics; the OPEN swap-out escape named, priced
   by the sink regress).  T1b/T1c are definitional in-sector (disclosed).
-  T4: connected-correlator boundary count 0 is state-robust; whether records
-  FORM is realized-state data (counterfactual-disclosed).  History-level
+  T4: connected-correlator boundary count 0 is state-robust; the realized
+  append trajectory/record pattern is supplied.  History-level
   blankness (epsilon) is distinct from state-level blankness (T3/T4).
-  RESIDUAL: non-emptiness (an explicit applicability precondition, not
-  derived here); the single-chain
+  RESIDUAL: supplied append history/formation rule; the single-chain
   sector scope; the finite-history
   dichotomy; and the THERMODYNAMIC past hypothesis (low entropy, Penrose
   room) -- open, named, untouched.  WHICH state realizes the boundary stays

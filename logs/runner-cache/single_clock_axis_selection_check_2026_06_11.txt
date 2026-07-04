@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/single_clock_axis_selection_check_2026_06_11.py
-runner_sha256: b7cfda7c333a4fea12ec1bec2a5b35dca8f34a941a662a26b77d992d56297fd5
+runner_sha256: 454265b7945803402f075183899c04187a15af2c6eaf79a35e87fd597a47a771
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ========================================================================
@@ -38,7 +38,7 @@ Z_2 datum (BC asymmetry) or an equivalent registration-direction bridge.
 [RT-REC] ROUTE A2: does record durability anchor the axis? (textual + computed: NO)
 ------------------------------------------------------------------------
   [PASS][B] Record axiom is axis-blind by its own text: a record supplies no 'time metric' (verbatim in the exclusion list)  -- MINIMAL_AXIOMS_2026-06-05.md
-  [PASS][B] record formation is not forced (retained_no_go): 'at least one record exists' is NOT an axiom consequence, so no axis can be derived from it unconditionally  -- record-formation no-go quoted
+  [PASS][B] formation rule/process is not supplied by Record: occurrence is axiom content, but no axis, clock, rate, site selector, or comparable history follows from it  -- post-append formation-rule no-go quoted
   [PASS][B] the clock map is supplied, never derived from records (retained_no_go): 'Without the supplied `tau`, the same record history supports many inequivalent rates' — the event ORDER carries no lattice-axis label  -- clock/rate interface quoted
   [PASS][B] the CAP-K registration cone is axis-CONDITIONAL, not axis-selecting: its dynamics clause (REG-dyn) consumes the framework H and its window (REG-tau) consumes a supplied clock — both downstream of B-AXIS, so citing it for axis selection would be circular  -- CAP-K note clauses present
   [PASS][A] durability ('fixed once registered, never un-registered') is operator-order monotonicity of the record counter, and operator order is unitary-transport invariant: the conjugated counter is monotone with the same increment spectra — durability CANNOT distinguish W-related axes  -- monotone before/after = True/True, max increment-spec diff = 8.9e-16

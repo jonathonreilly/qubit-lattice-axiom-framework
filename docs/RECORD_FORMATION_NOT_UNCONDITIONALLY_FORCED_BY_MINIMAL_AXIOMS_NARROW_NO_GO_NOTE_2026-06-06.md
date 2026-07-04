@@ -1,125 +1,139 @@
-# Record Formation Is Not Unconditionally Forced by Lattice, Quantum, and Record: the Minimality Boundary Sits at Record's Decoherence-Dynamics Disclaimer -- Narrow No-Go
+# Record Formation Rule Is Not Supplied by the Minimal Axioms: Post-Append Scope Repair
 
 **Date:** 2026-06-06
-**Claim type:** no_go (unconditional record-formation forcing) + minimality-boundary localization
-**Status:** unaudited candidate. Graph-visible only so the independent audit lane can decide.
+**Revision:** 2026-07-04 post-Record-append scope repair
+**Claim type:** no_go (formation-rule/process forcing) + minimality-boundary localization
+**Status:** source-side no-go scope repair; audit status and effective status remain set only by the independent audit lane.
 **Primary runner:** [`scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py`](../scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py)
 **Cached output:** [`logs/runner-cache/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.txt`](../logs/runner-cache/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.txt)
 
-## Audit context
+## Audit Context
+
+This file keeps the historical path stable for existing citation-graph edges,
+but the original June 6 no-go no longer holds as stated. The 2026-07-04
+owner-approved Record append added the sentence:
+
+> Records form.
+
+Generic record occurrence is therefore axiom content on the current premise
+surface. The live minimality boundary is narrower: the axioms do not supply the
+formation rule or process.
 
 The current front-door axiom memo
-[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) names the
-approved baseline as Lattice, Quantum, and Record. It also explicitly keeps
-measurement/decoherence dynamics, record-production dynamics, and time metric
-outside Record. This note records the narrow boundary that follows: the baseline
-does not unconditionally force record formation.
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) states the four
+framework axioms Lattice, Qubit, Admissibility, and Record. Its open-gates list
+keeps outside the axioms the formation-rule content:
 
-## Safe statement
+- which admissible possibility a new record locks;
+- at which site;
+- with what weight;
+- at what rate.
 
-The Record axiom states that a record supplies no readout context,
-decomposition, `K`/CPT structure, sector-generation rule, weighting,
-normalization, probability, measurement/decoherence dynamics, time metric,
-within-sector data, or occupancy rule. Record formation is the realization
-dynamics for outcomes, so it is outside the axiom.
+It also keeps arrow, record-production dynamics, physical persistence dynamics,
+time metric, and local observability outside axiom content.
 
-**No-go.** The claim "Lattice, Quantum, and Record force record formation"
-does **not** hold unconditionally. The baseline fixes neither the dynamics nor
-the state, so the following are baseline-consistent witnesses with no record
-formation:
+## Safe Statement
 
-1. **`H = 0`** (trivial dynamics): a superposition's pointer coherence is preserved for all times -
-   no record.
-2. **Decoupled `H = H_S tensor I + I tensor H_E`** with `H != 0` (no system-environment coupling):
-   coherence preserved - no record despite non-trivial dynamics.
-3. **Any energy eigenstate** of any (even coupled) `H`: stationary, coherence frozen - no record
-   (the baseline fixes no state, so an eigenstate is admissible).
+The Record axiom now supplies occurrence strength only: records form. It does
+not supply a law that chooses a site, chooses one admissible local possibility,
+sets weights or probabilities, gives a rate or clock, defines a stochastic or
+deterministic process, supplies a record-production dynamics, or asserts a
+single comparable realized history.
 
-The runner also includes a contrast case: a coupled Hamiltonian on a
-non-eigenstate decoheres in the toy model. That contrast is only generic
-support. It is not a universal theorem and is not a new axiom. Forcing record
-formation unconditionally would require an imported
-measurement/decoherence-dynamics premise, exactly what Record excludes.
+**No-go.** The claim "the minimal axioms determine a record-formation rule or
+process" does **not** hold. A theory layer that needs a specific history,
+frequency, rate, clock, site selector, admissible-possibility selector,
+weighting, probability kernel, or comparable record chain must supply or derive
+that content separately.
 
-## No-go discipline (N1–N8)
+## Witness Form
 
-- **N1 (alternative routes).** Five routes to unconditional forcing fail or
-  import the disclaimed input: (a) adding a dynamics axiom is a new premise,
-  not a derivation; (b) declaring "reality = records" still does not supply a
-  non-trivial accumulating record stack; (c) Quantum supplies the one-site
-  algebra but no state, so eigenstate/product-state witnesses remain
-  admissible; (d) Lattice supplies adjacency but no Hamiltonian or coupling, so
-  `H=0` and decoupled witnesses remain admissible; (e) Record supplies durable
-  realized-outcome readout after a readout context is given, not the mechanism
-  that produces such outcomes.
+The no-go is an underdetermination boundary, not a no-record witness.
+Consistent supplied extensions can agree that records form while disagreeing on
+the downstream rule. For example, from the same open starting state and the same
+local admissibility data:
+
+1. one extension may first form a record at site `x` locking admissible
+   possibility `p`;
+2. another may first form a record at neighboring site `y` locking admissible
+   possibility `q`;
+3. two extensions may use different rates or weights for the same available
+   local possibilities.
+
+The current axiom text distinguishes records from non-records and says records
+form, but it contains no selector or process that picks one of those extensions.
+
+## No-Go Discipline (N1-N8)
+
+- **N1 (alternative routes).** Routes from occurrence to a rule all import
+  downstream content: a transition kernel, a Hamiltonian/transfer operator,
+  a clock, a site selector, a weighting/probability rule, a measurement
+  instrument, or comparability of realized configurations.
 - **N2 (wall-independence).** Single-wall no-go: the wall is the approved
-  axiom boundary excluding dynamics/state/readout-context production. No
-  independent wall pair is claimed.
-- **N3 (hidden-wall scan).** Phrases such as "generic", "record formation",
-  and "decoherence" are contrast/model language only. The load-bearing claim is
-  the existence of baseline-consistent no-record witnesses plus Record's stated
-  exclusion of measurement/decoherence dynamics.
-- **N4 (residual matching).** The residual is exactly unconditional
-  record-formation forcing from Lattice, Quantum, and Record. It does not
-  attack conditional or generic decoherence models.
+  axiom boundary excluding formation-rule/process content after occurrence is
+  supplied.
+- **N3 (hidden-wall scan).** The note does not use an empty-history witness or
+  any claim that records fail to form. Generic occurrence is accepted as axiom
+  content.
+- **N4 (residual matching).** The residual is exactly formation
+  rule/process/site/choice/weight/rate/clock/comparability, not occurrence.
 - **N5 (rhetoric audit).** The no-go is not "records never form" and not
-  "time cannot emerge". It is only that the approved baseline does not force
-  record formation for every allowed state/dynamics choice.
-- **N6 (partial-closure).** A conditional theory layer may add or derive a
-  record-production/decoherence model and then prove records form in that
-  model. That is the legitimate partial-closure path; it is outside the axiom
-  baseline and must stay explicit.
-- **N7 (steelman).** The strongest opposing view is that decoherence is generic
-  enough in realistic coupled systems that treating record formation as
-  effectively forced is physically natural. The note grants that as generic
-  support, but exact witnesses (`H=0`, decoupled `H`, eigenstates) still defeat
-  unconditional forcing from the baseline alone.
-- **N8 (cross-cycle echo).** This aligns with
-  [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) and the
-  repo policy that Record supplies no measurement/decoherence dynamics, time
-  metric, readout context, or occupancy rule.
+  "time cannot emerge." It only says the current axioms do not determine the
+  formation rule or process.
+- **N6 (partial-closure).** A later retained theorem, bridge, explicit
+  admission, or approved primitive may supply a formation rule/process for a
+  named surface. This note only prevents laundering that content into Record.
+- **N7 (steelman).** The strongest opposing view is that once records form,
+  a law-domain clause should force a unique formation answer. The current
+  Qualification says a law's domain is supplied; it does not supply a default
+  law, clock, rate, or domain for record production.
+- **N8 (cross-cycle echo).** This matches the July 4 consistency sweep:
+  occurrence flips to axiom content; formation rule/process remains downstream.
 
-## The genuine open piece (and what it is *not*)
+## The Genuine Open Piece
 
-The open theory task is not to smuggle production into Record. It is to supply
-or derive a separate record-production/decoherence model and then prove the
-desired time/arrow consequences inside that model. The baseline itself remains
-minimal.
+The open theory task is to supply or derive a formation rule/process and then
+prove the desired arrow, rate, history, or weighting consequences inside that
+surface. The baseline itself remains minimal.
 
-## Boundary (honest)
+## Boundary
 
-- A no-go on **unconditional record-formation forcing from Lattice, Quantum,
-  and Record only**.
-- The witnesses (1–3) are exact baseline-consistent points; "generic" record
-  formation in the contrast model is support, not a universal theorem.
-- The localization (residual = the disclaimed decoherence dynamics) is from the axiom's verbatim
-  text; no new axiom is used or proposed here.
+- Generic occurrence is supplied by the Record axiom.
+- The formation rule/process is not supplied by the minimal axioms.
+- The note does not add an axiom, primitive, Tier-A admission, probability
+  rule, clock, Hamiltonian, transfer operator, measurement model, state
+  selector, or comparability sentence.
 
-## Forbidden imports check
+## Forbidden Imports Check
 
-No new axiom. Lattice, Quantum, and Record plus standard finite-dimensional
-unitary evolution for the witness models; the no-record witnesses are exact.
-The result names the decoherence-dynamics import that unconditional forcing
-would require. It does **not** adopt that import.
+No observed target value, fitted selector, empirical comparator, new primitive,
+or new axiom is used. The runner checks the current premise text and the
+approved primitive registry for the presence of occurrence content and the
+absence of formation-rule/process defaults.
 
-## Runner check breakdown
+## Runner Check Breakdown
 
-Class A: (1) `H=0` preserves coherence (no record); (2) decoupled `H!=0` preserves coherence; (3) an
-eigenstate is stationary (no record); (4) a coupled `H` contrast decoheres in
-the toy model; (5) the reduction (Record excludes measurement/decoherence
-dynamics and the baseline fixes no dynamics/state, so unconditional forcing
-needs an import). Expected `runner_check_breakdown = {A: N, B: 0, C: 0, D: 0,
-total_pass: N}`.
+Class A/B premise-surface checks:
 
-## Honest auditor read
+1. current Record text contains the occurrence sentence;
+2. current open-gates text names formation-rule content as outside the axioms;
+3. the approved primitive registry mirrors that boundary;
+4. no default site/choice/weight/rate/process/comparability selector is present
+   in the axiom text;
+5. two distinct supplied formation-rule witnesses can agree on occurrence while
+   disagreeing on downstream rule content.
 
-Record excludes measurement/decoherence dynamics, and the Lattice/Quantum/Record
-baseline fixes neither dynamics nor state. Therefore `H=0`, decoupled dynamics,
-and energy eigenstates are baseline-consistent no-record witnesses. A coupled
-non-eigenstate toy model shows record formation can be generic, but generic is
-not unconditional. The no-go is narrow: the baseline alone does not force record
-formation; a theory layer that wants record production must supply the
-production/decoherence model explicitly. Effective status remains `unaudited`.
+Expected `runner_check_breakdown = {A/B: N, C: 0, D: 0, total_pass: N}`.
+
+## Honest Auditor Read
+
+After the 2026-07-04 Record append, the old no-go against generic record
+occurrence must be retired as stated. The surviving no-go is narrower and still
+load-bearing: the minimal axioms do not determine the formation rule or
+process. Any downstream use of a particular record history, rate, clock,
+weighting, site selector, admissible-possibility selector, or comparable chain
+must cite a separate retained authority, explicit admission, or approved
+primitive.
 
 ## Runner
 

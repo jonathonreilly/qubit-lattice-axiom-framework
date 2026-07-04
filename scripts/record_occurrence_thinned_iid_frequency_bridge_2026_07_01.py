@@ -240,7 +240,7 @@ def part6_boundary_and_note() -> None:
         "effective_status",
         "CLAIM_STATUS_CERTIFICATE",
         "retained",
-        "therefore record occurrence is derived",
+        "therefore activation probability is derived",
         "therefore every trial records",
         "therefore IID reset is derived",
         "therefore finite counts derive probabilities",

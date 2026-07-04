@@ -66,23 +66,23 @@ State-level blankness here is distinct from the history-level blankness ε of T1
 
 **(T4) The arrow anchors — counterfactual-disclosed.** With the **connected
 correlator** (pointer-basis-robust record measure), the record count at *any* blank
-boundary is 0 — superposed pointer, `|0⟩`, `|1⟩` all start at 0 (checked). **Whether
-records form is realized-state data**, disclosed per the realized-state primitive's
-counterfactual test: the superposed pointer forms records (0 → 3, strictly
-increasing); the pointer eigenstates form none (deterministic copies register nothing
-new); the `I/d` equilibrium forms none (the arrow note's universal floor, reproduced).
-The derived direction anchors away from minimal-record ends *for the realized
-histories in which records form* — formation itself is the non-emptiness input, never
-claimed structural.
+boundary is 0 — superposed pointer, `|0⟩`, `|1⟩` all start at 0 (checked). After
+the 2026-07-04 Record append, generic occurrence is axiom content; what remains
+supplied here is the realized append trajectory and record pattern. The
+superposed pointer supplies one such trajectory (0 → 3, strictly increasing);
+the pointer eigenstates and `I/d` equilibrium are controls showing that this
+particular dynamics/readout pattern is not forced by the boundary theorem.
+The derived direction anchors away from minimal-record ends *for the supplied
+append histories*; the formation rule/history is not claimed structural.
 
 ## What remains — the residual inventory (anti-overclaim controls in-runner)
 
-1. **Non-emptiness**: `w ≠ ε` — *at least one record is registered*. Formally this
-   is not a theorem: the empty history satisfies the axioms vacuously and carries no
-   arrow (checked). It remains an explicit applicability precondition, not a derived
-   fact. This note says only that once a nonempty append-only record history is
-   supplied, the low-record boundary is structural; it does not derive record
-   existence or select a record-forming realized state.
+1. **Realized append history**: `w ≠ ε` with a specified append order. After the
+   2026-07-04 Record append, generic occurrence is axiom content, but this note
+   still does not derive the realized formation rule, the specific append
+   history, or a comparable single chain. It says only that once a nonempty
+   append-only record history is supplied, the low-record boundary is
+   structural.
 2. **The single-chain sector scope** — the total order is an assumption beyond the
    Record axiom (general case: well-founded, possibly many minimal ends — T1d).
 3. **The finite-history sector scope** — dichotomy named, not hidden: an unbounded
@@ -99,8 +99,9 @@ claimed structural.
 ## Honest placement
 
 After this note the framework's parking reads: **direction derived** (arrow note) **+
-existence structural in-sector** (this note) **+ residual = non-emptiness, two sector
-scopes, and the thermodynamic question**. The veridicality direction (records as
+boundary structural in-sector** (this note) **+ residual = supplied append
+history/comparability scope, finite-sector scope, and the thermodynamic question**.
+The veridicality direction (records as
 *constituting* rather than *evidencing* the past) is a corollary this ontology makes
 available; it is flagged, not claimed.
 

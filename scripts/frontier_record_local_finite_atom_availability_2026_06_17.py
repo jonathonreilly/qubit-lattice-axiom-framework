@@ -102,7 +102,7 @@ def main() -> int:
     check("A2 minimal axioms expose one-site M_2(C)", "M_2(C)" in minimal)
     check("A3 minimal Record requires a supplied readout context", "Given a readout context" in minimal)
     check("A4 minimal Record excludes production/probability/context selection", "A record supplies no readout context" in minimal_flat and "probability" in minimal)
-    check("A5 retained no-go boundary keeps record formation unforced", "does not unconditionally force record formation" in nogo)
+    check("A5 post-append boundary keeps formation rule/process unsupplied", "formation rule or process" in nogo)
     check("A6 theorem boundary explicitly does not derive production", "record production or realization dynamics" in note)
     check("A7 theorem names record-eligible readout atoms, not produced records", "record-eligible readout atoms" in note)
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_color_depolarization_single_frame_dephasing_and_multiframe_exhibit_2026_06_09.py
-runner_sha256: d8451292c62dac7c2e1d7d5723fb0f34586f573896ece5d3ef94d51197662f40
+runner_sha256: c825723746ba24688e85044da4e14b9804aea5f575447b9bc04827e341f95fa7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.17
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 Color depolarization boundary: single-frame dephasing is insufficient;
@@ -42,4 +42,6 @@ multi-frame averaging is an exact sufficiency exhibit. Exact su(3) algebra.
 [PASS] color polarization is a genuine content condition (echoes block 04 order param)
 
 TOTAL: PASS=20 FAIL=0
+
 ----- stderr -----
+

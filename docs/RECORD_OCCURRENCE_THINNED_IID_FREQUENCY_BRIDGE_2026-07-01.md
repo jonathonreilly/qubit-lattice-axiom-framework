@@ -191,7 +191,8 @@ attempt-level law over `{bot} union A`.
 
 This note does not claim:
 
-- record occurrence is derived from the axioms;
+- activation probability, selection law, IID protocol, clock/rate, or
+  every-trial/site occurrence is derived from the axioms;
 - every trial records;
 - every site records;
 - every available possibility eventually records;

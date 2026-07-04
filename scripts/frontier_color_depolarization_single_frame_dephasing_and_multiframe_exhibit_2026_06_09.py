@@ -41,10 +41,11 @@ channel boundary and a sufficiency exhibit:
   D5  RECORD SUPPLIES NO AVERAGING WEIGHT: a >=2-element averaging structure (a twirl,
       a uniform finite-group average, or a multi-frame cycle) is a WEIGHTING /
       normalization over instruments. The Record axiom supplies no weighting,
-      normalization, or probability (retained boundaries: record_classical_semigroup,
-      record_markov_generator_embeddability_no_go), and record formation is not
-      unconditionally forced (retained_no_go). So each frame is a named admission and
-      the multi-frame average is a named multi-instrument admission -- not delivered
+      normalization, probability, formation rule, or instrument selector
+      (retained boundaries: record_classical_semigroup,
+      record_markov_generator_embeddability_no_go and the post-append narrowed
+      formation-rule no-go). So each frame is a named admission and the
+      multi-frame average is a named multi-instrument admission -- not delivered
       by Record. Guard checks fence two overclaims: (i) SU(3)-covariance ALONE does
       not force contraction (the identity channel is covariant and depolarizes
       nothing); (ii) coherent matter evolution is NOT purity-preserving on the reduced

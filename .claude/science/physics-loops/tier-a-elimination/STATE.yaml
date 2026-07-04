@@ -1,0 +1,39 @@
+loop_slug: tier-a-elimination
+goal: "Eliminate Tier-A admissions by retiring or reclassifying retireable pieces while preserving unavoidable primitives."
+target_status: best-honest-status
+branch: physics-loop/tier-a-elimination-block01-20260704
+base: origin/main@7e1d7f9032a2d7dd5e1fe57729d0bc7dd00ec68a
+started_at: "2026-07-04"
+mode: interactive
+cycle_count: 1
+active_block: block01-record-formation-hygiene
+active_route: "record formation premise-boundary hygiene and narrowed no-go"
+hard_residual: "After the 2026-07-04 Record sentence, generic occurrence is axiom content, but formation rule/process/site/choice/weight/rate remain outside the axioms."
+lock:
+  default_lock_status: "failed: default script path points at /Users/jonreilly"
+  branch_local_lock: "/tmp/cl3-tier-a-review-origin-main/.physics_worker_lock.json"
+open_imports:
+  - "AC_phi_lambda: R-eta and carrier/chirality residuals remain open."
+  - "theta: determinant-readout exhaustion and gauge-side winding/action carrier remain open."
+  - "comparability: one configuration of records is not currently supplied."
+files_touched: []
+files_touched:
+  - "docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md"
+  - "scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py"
+  - "logs/runner-cache/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.txt"
+  - "record-formation RE-KEY and FLIPS-VERDICT dependent docs/scripts/caches"
+checks:
+  - "PYTHONPATH=scripts python3 scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py: PASS=15 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/audit_companion_minimal_axioms_clean_base_exact.py: PASS=68 FAIL=0"
+  - "Affected runner cache refreshes: central no-go, past-hypothesis, single-clock axis, sparse IID occurrence, local atom availability, record-instrument slaving, color depolarization"
+  - "python3 -m json.tool docs/audit/data/tier_a_admissions.json: pass"
+  - "python3 -m json.tool docs/audit/data/axiom_premise_nodes.json: pass"
+  - "python3 -m py_compile changed scripts: pass"
+  - "stale string scan: clean except historical policy sentence documenting the re-key"
+  - "bash docs/audit/scripts/run_pipeline.sh: pass; no errors, existing warnings/notices only"
+  - "python3 docs/audit/scripts/audit_lint.py --strict: pass; no errors, existing warnings/notices only"
+  - "git diff --check: pass"
+review_status: "pass; local review-loop emulation used because subagent spawning is not authorized without explicit delegation request"
+pr_status: pending
+next_exact_action: "Commit regenerated audit files with source changes, push branch, open PR."
+stop_condition: "Block 1 committed and review PR opened or PR_BACKLOG written."

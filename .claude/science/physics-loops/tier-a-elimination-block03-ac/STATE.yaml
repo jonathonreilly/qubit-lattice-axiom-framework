@@ -23,6 +23,8 @@ checks:
   - "bash docs/audit/scripts/run_pipeline.sh: pass; no errors, existing warnings/notices only"
   - "python3 docs/audit/scripts/audit_lint.py --strict: pass; no errors, existing warnings/notices only"
 review_status: "self-check pass; no audit verdicts applied"
-pr_status: pending
-next_exact_action: "Commit, push, and open one review PR for block 3."
-stop_condition: "Block 3 committed and review PR opened or PR_BACKLOG written."
+pr_status: "opened https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4928"
+commits:
+  - "df72230cf docs: reclassify ac occupancy value face"
+next_exact_action: "After review, attack AC(ii)'s R-eta atom or make the AC(iii) species-bridge governance call."
+stop_condition: "Block 3 committed, pushed, and review PR opened."

@@ -109290,7 +109290,7 @@
         "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "73f8f505744adef35f2f5ac067e0dc586c3bf170875a758015153e6d96e15951",
+      "note_hash": "9bc36fafa3dfe33d58a09fb5e17744b2ba41c6dd65b0f3bd50c1c0d52fbefd3e",
       "path": "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md",
       "runner_path": "scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py",
       "title": "Registrable Determinant-Character Readout Is Additive-Plus-Even Hence Phase-Free \u2014 Narrow Bounded Theorem"

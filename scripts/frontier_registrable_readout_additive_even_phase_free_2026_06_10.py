@@ -312,6 +312,11 @@ def main() -> int:
         "does **not** discharge, close, or exhaust the physical",
         "This is a conditional algebraic implication, not a bridge discharge.",
         "physical-readout bridge would need; it does not by itself reduce",
+        "`[(Orbit)]` is used below, it names this bridge-carried supplied-context",
+        "Record-additivity plus bridge-supplied-orbit layer",
+        "Record additivity + bridge-supplied K/CPT orbit constancy",
+        "(Orbit) from the supplied-context K/CPT bridge",
+        "explicit Record additivity plus bridge-supplied orbit data",
     ]
     for phrase in required_phrases:
         check(f"source note carries boundary phrase: {phrase}", phrase in note_text)
@@ -320,6 +325,10 @@ def main() -> int:
         "This **closes the unordered-multiset",
         "EXHAUSTS the registrable arg det(M_u M_d)",
         "admission -> |delta| atom",
+        "Record boundary (Additivity + K/CPT orbit)",
+        "(Additivity) and (Orbit) from Record",
+        "Record (Additivity)+(Orbit) data",
+        "Record orbit/additivity layer",
     ]
     for phrase in banned_phrases:
         check(f"source/runner closure phrase absent: {phrase}", phrase not in note_text)

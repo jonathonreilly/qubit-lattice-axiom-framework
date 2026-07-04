@@ -12,7 +12,7 @@ or predict an audit outcome and does not edit the audit-lane-owned Tier-A
 registry, ledger, queue, or publication-status surfaces.
 **Primary runner:**
 [`scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py`](../scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py)
-(latest local run: SCORECARD: PASS=46, FAIL=0; paired cached log:
+(latest local run: SCORECARD: PASS=55, FAIL=0; paired cached log:
 [`logs/runner-cache/frontier_registrable_readout_additive_even_phase_free_2026_06_10.txt`](../logs/runner-cache/frontier_registrable_readout_additive_even_phase_free_2026_06_10.txt))
 **Scope guard runner:**
 [`scripts/frontier_registrable_readout_phase_homomorphism_scope_guard_2026_06_12.py`](../scripts/frontier_registrable_readout_phase_homomorphism_scope_guard_2026_06_12.py)
@@ -64,14 +64,13 @@ normalization, probability, modulus rule, log-det, source/action, scale, or
 observable identification. The theorem below uses (Additivity) from the axiom
 and (Orbit) from the cited bridge, and nothing else from either.
 
-**2026-07-04 premise relocation (per the audited_failed repair class
-`missing_dependency_edge/source_premise_relocation`).** The pre-reset
-2026-06-05 Record wording carried the orbit clause directly; under the
-2026-06-29 foundation reset (as amended through the 2026-07-04 formation
-sentence) `K`/CPT orbit structure is downstream supplied-context content.
-The (Orbit) premise is therefore retargeted, unchanged in content, onto the
-bridge named above; the theorem, proofs, and residuals below are otherwise
-untouched.
+**2026-07-04 premise relocation (per repair class
+`missing_dependency_edge`; repair action: source premise relocation).** The
+pre-reset 2026-06-05 Record wording carried the orbit clause directly; under
+the 2026-06-29 foundation reset (as amended through the 2026-07-04 formation
+sentence) `K`/CPT orbit structure is downstream supplied-context content. The
+(Orbit) premise is therefore retargeted, unchanged in content, onto the bridge
+named above; the theorem, proofs, and residuals below are otherwise untouched.
 
 The theorem also assumes, as part of the supplied readout context and **not** as
 a consequence of Record, that the determinant phase-bearing component lies in a
@@ -256,20 +255,21 @@ AC_phi_lambda admission to the magnitude-only atom `|delta|`.
 
 ## Why these two bridges share one Record layer
 
-Both bridges are the *same* Record-registrability question — what scalar a
-registrable readout carries on a finite central-sector decomposition modulo
-`K`/CPT. Blocker (a) additionally needs the determinant **phase** readout to be
-on the determinant-character / log-character homomorphism surface, where
-additive ∩ even kills the phase index. Blocker (b-i) needs the eigenvalue
-**sign/orientation** to fail scalar orbit invariance, while the unordered
-symmetric functions survive. The consumers share the Record orbit/additivity
-layer, but the determinant phase-erasure claim no longer asserts that Record
-alone supplies phase-group additivity.
+Both bridges ask the same supplied-readout question: what scalar a registrable
+readout carries on a finite central-sector decomposition modulo the
+bridge-carried `K`/CPT orbit relation. Blocker (a) additionally needs the
+determinant **phase** readout to be on the determinant-character /
+log-character homomorphism surface, where additive ∩ even kills the phase
+index. Blocker (b-i) needs the eigenvalue **sign/orientation** to fail scalar
+orbit invariance, while the unordered symmetric functions survive. The
+consumers share the Record-additivity plus bridge-supplied-orbit layer, but the
+determinant phase-erasure claim no longer asserts that Record alone supplies
+phase-group additivity or orbit structure.
 
 ## Net
 
 ```text
-Record boundary (Additivity + K/CPT orbit)
+Record additivity + bridge-supplied K/CPT orbit constancy
   + determinant-character / log-character homomorphism boundary for phase readout
   => homomorphic determinant phase contribution = 0   (homomorphism forces odd; even forces zero)
   => (a) det-class phase character k=0 on the supplied homomorphism surface;
@@ -317,13 +317,14 @@ the supplied readout class.
 
 ### N3 — Hidden-wall scan
 
-Load-bearing premises are explicit: (Additivity) and (Orbit) from Record; the
-determinant-character / log-character homomorphism boundary for the phase
-component; the sector-factoring of `det`; the AC_phi_lambda circulant form
-(consumed from the Tier-A note's L2). No "we assume", "by construction",
-"naturally", or "registered" smuggles a hidden admission: each use of
-"registrable" is the explicit Record (Additivity)+(Orbit) data, the
-homomorphism restriction is separately named, and each external-math name
+Load-bearing premises are explicit: (Additivity) from the current Record axiom;
+(Orbit) from the supplied-context K/CPT bridge; the determinant-character /
+log-character homomorphism boundary for the phase component; the
+sector-factoring of `det`; the AC_phi_lambda circulant form (consumed from the
+Tier-A note's L2). No "we assume", "by construction", "naturally", or
+"registered" smuggles a hidden admission: each use of "registrable" is the
+explicit Record additivity plus bridge-supplied orbit data, the homomorphism
+restriction is separately named, and each external-math name
 (Perelman/Moise/van Kampen) is flagged as the open R2 route, not assumed.
 
 ### N4 — Residual matching

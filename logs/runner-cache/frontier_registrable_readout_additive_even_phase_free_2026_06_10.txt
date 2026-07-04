@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py
-runner_sha256: ab1d43fe32a6492d9a3ea9775df395581d3a18b77215f10111b4c8d436fc86f4
+runner_sha256: 400a855acc40e40310468abbca6dbf31047f471d992af73e2a519fc4166fea55
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -95,13 +95,22 @@ T11 - post-audit source-boundary guard
   [PASS] source note carries boundary phrase: does **not** discharge, close, or exhaust the physical
   [PASS] source note carries boundary phrase: This is a conditional algebraic implication, not a bridge discharge.
   [PASS] source note carries boundary phrase: physical-readout bridge would need; it does not by itself reduce
+  [PASS] source note carries boundary phrase: `[(Orbit)]` is used below, it names this bridge-carried supplied-context
+  [PASS] source note carries boundary phrase: Record-additivity plus bridge-supplied-orbit layer
+  [PASS] source note carries boundary phrase: Record additivity + bridge-supplied K/CPT orbit constancy
+  [PASS] source note carries boundary phrase: (Orbit) from the supplied-context K/CPT bridge
+  [PASS] source note carries boundary phrase: explicit Record additivity plus bridge-supplied orbit data
   [PASS] source/runner closure phrase absent: This **discharges the determinant-phase content
   [PASS] source/runner closure phrase absent: This **closes the unordered-multiset
   [PASS] source/runner closure phrase absent: EXHAUSTS the registrable arg det(M_u M_d)
   [PASS] source/runner closure phrase absent: admission -> |delta| atom
+  [PASS] source/runner closure phrase absent: Record boundary (Additivity + K/CPT orbit)
+  [PASS] source/runner closure phrase absent: (Additivity) and (Orbit) from Record
+  [PASS] source/runner closure phrase absent: Record (Additivity)+(Orbit) data
+  [PASS] source/runner closure phrase absent: Record orbit/additivity layer
 
 ========================================================================================
-SCORECARD: PASS=46 FAIL=0
+SCORECARD: PASS=55 FAIL=0
 ========================================================================================
 
 ----- stderr -----

@@ -57672,7 +57672,7 @@
         "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1158cab8406c42ed025d3cb9f25ba19a942bfb44ad7bdb1e471dc7885e83dfdd",
+      "note_hash": "8b2ba4529962e02203ca9735c6199263a37cbadc14b0838beaea18efa9069171",
       "path": "docs/ACPHILAMBDA_AMBIENT_EQUIVARIANT_HEAT_TRACE_FACE_2026-07-02.md",
       "runner_path": "scripts/acphilambda_ambient_equivariant_heat_trace_face_2026_07_02.py",
       "title": "AC_phi_lambda Ambient Equivariant Heat-Trace Face"
@@ -108294,7 +108294,7 @@
         "action_form_no_go_equivalence_premise_continuum_removal_scoped_relocation_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d446ace3d07b030ae357de73551f46712076b68d78d6ab2df14d851b18eca403",
+      "note_hash": "1f6b0d708cc39aa92b328b44c7ff578d326147e70a1a49661d6751af0d3ef7d5",
       "path": "docs/RECORD_COMPOSITION_BRIDGE_SEMIGROUP_POSITIVITY_SELECTION_BOUNDED_NOTE_2026-07-02.md",
       "runner_path": "scripts/frontier_record_composition_bridge_positivity_2026_07_02.py",
       "title": "Record-Composition Bridge: C-add/POS/LOC Separate Named Semigroup Candidates; Nearest-Neighbor Heat Is the Finite-N Witness (Bounded Note)"

@@ -119,8 +119,9 @@ def source_anchor_checks() -> None:
             "\"minimal_axioms\"",
             "\"current_path\": \"docs/MINIMAL_AXIOMS_2026-06-29.md\"",
             (
-                "It still supplies no context-selection rule, occurrence rule, weighting, "
-                "normalization, probability, update law, measurement/decoherence dynamics, "
+                "It still supplies no context-selection rule, formation rule (which admissible "
+                "possibility a new record locks, at which site, with what weight, or at what rate), "
+                "weighting, normalization, probability, update law, measurement/decoherence dynamics, "
                 "record-production process, physical persistence dynamics, K/CPT structure, "
                 "central-sector decomposition, source/action bridge, physical observable bridge, "
                 "state-selection rule, law-domain derivation, or downstream theory consequence."

@@ -1,0 +1,35 @@
+slug: tier-a-elimination-block44-ac-reta-hunit-primitive-nonsupply
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block44-ac-reta-hunit-primitive-nonsupply-20260704
+base_branch: physics-loop/tier-a-elimination-block43-ac-reta-direct-readout-license-nogo-20260704
+goal: "Prune or close the R-eta h-unit approved-primitive shortcut without moving Tier-A boundaries unsafely."
+target_status: no-go
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: "R-eta h-unit already supplied by approved axioms/primitives"
+hard_residual: "h-unit beta=1 / A_R-eta unit-coefficient identity"
+files_touched:
+  - docs/ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
+  - scripts/acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_2026_07_04.py
+  - logs/runner-cache/acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_2026_07_04.txt
+  - .claude/science/physics-loops/tier-a-elimination-block44-ac-reta-hunit-primitive-nonsupply/
+claim_movement: "Certifies that h-unit beta=1 is absent from minimal axioms and all current approved primitives; retained c!=1 carrier eliminations are support, not derivation."
+does_not_move:
+  - AC_phi_lambda retirement
+  - R-eta retirement
+  - Tier-A registry
+  - axioms
+  - primitives
+  - theta
+checks:
+  runner: "PASS=163 FAIL=0 CHECKS=163"
+  py_compile: "PASS"
+  audit_pipeline: "PASS; seeded acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04 as no_go/unaudited/unaudited leaf with 10 deps"
+  audit_lint_strict: "PASS; existing 23 warnings / 178 notices, no errors"
+  diff_check: "PASS"
+review_loop_disposition: pass
+pr_status: pending
+pr_url: pending
+next_exact_action: "Commit/push, open stacked PR on Block43, then pivot to h-class positive attempt, owner-governance primitive decision, or theta residuals."
+stop_condition: "Continue Tier-A campaign unless runtime/tooling blocks or all viable residuals are documented blocked."

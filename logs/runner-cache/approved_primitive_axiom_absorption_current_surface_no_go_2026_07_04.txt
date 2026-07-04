@@ -1,0 +1,89 @@
+Approved primitive axiom-absorption current-surface no-go
+========================================================================================
+
+----------------------------------------------------------------------------------------
+A - source presence and registry state
+----------------------------------------------------------------------------------------
+PASS: exists: docs/APPROVED_PRIMITIVE_AXIOM_ABSORPTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: exists: docs/audit/data/axiom_premise_nodes.json
+PASS: exists: docs/audit/data/tier_a_admissions.json
+PASS: exists: docs/repo/FRONT_DOOR_STATUS.md
+PASS: exists: docs/audit/AXIOM_MINIMALITY_POLICY.md
+PASS: exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+PASS: exists: docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+PASS: exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+PASS: exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+PASS: exists: docs/KINETIC_ISOTROPY_PRIMITIVE_IRREDUCIBILITY_SUPPORT_2026-06-09.md
+PASS: axiom premise registry has exactly current axiom plus three primitive ids
+PASS: registry node exists: minimal_axioms
+PASS: registry node exists: scale_reference_primitive
+PASS: registry node exists: kinetic_isotropy_primitive
+PASS: registry node exists: realized_state_primitive
+PASS: front door lists scale reference primitive
+PASS: front door lists kinetic isotropy primitive
+PASS: front door lists realized state primitive
+PASS: Tier-A genuine admitted input count remains two
+PASS: Tier-A canonical ids remain AC and theta
+PASS: tier registry says approved primitives are separate from Tier-A
+PASS: policy separates approved primitives from Tier-A
+
+----------------------------------------------------------------------------------------
+B - note metadata and no-edit boundaries
+----------------------------------------------------------------------------------------
+PASS: new note declares no_go type
+PASS: new note declares no_go claim type
+PASS: runner path is wired in note
+PASS: note preserves boundary: No approved primitive is retired by the current axiom text a
+PASS: note preserves boundary: No primitive is retired.
+PASS: note preserves boundary: No axiom or primitive registry is edited.
+PASS: note preserves boundary: No Tier-A admission is retired or reclassified.
+PASS: note preserves boundary: No audit status or effective status is changed.
+PASS: note preserves boundary: approved, non-bounding primitive nodes, not Tier-A rows
+
+----------------------------------------------------------------------------------------
+C - scale reference is not axiom-absorbed
+----------------------------------------------------------------------------------------
+PASS: scale note marks the ruler dimensionful and non-derivable from dimensionless structure
+PASS: minimal axiom memo keeps scale/natural-unit issue outside axiom content
+PASS: note classifies scale as no axiom overlap
+PASS: scale primitive remains a separate registry node
+
+----------------------------------------------------------------------------------------
+D - kinetic isotropy is not axiom-absorbed
+----------------------------------------------------------------------------------------
+PASS: minimal axioms withhold dynamics/time-metric content
+PASS: kinetic primitive declares c_t=c_s / c_t/c_s ratio
+PASS: kinetic primitive note says baseline does not fix the ratio
+PASS: kinetic support note preserves non-fixation boundary
+PASS: note classifies kinetic as outside axiom memo
+PASS: kinetic primitive remains a separate registry node
+
+----------------------------------------------------------------------------------------
+E - realized-state has state-type overlap but not full absorption
+----------------------------------------------------------------------------------------
+PASS: minimal axioms now define state type and no-state-privilege law boundary
+PASS: minimal axioms still withhold state-selection/probability/boundary content
+PASS: realized primitive declares actual-history pointwise slot and no selection content
+PASS: machine registry says realized primitive is the no-state-selection slot
+PASS: note records realized-state as partially overlapping only
+PASS: realized-state primitive remains a separate registry node
+
+----------------------------------------------------------------------------------------
+F - aggregate conclusion and overclaim guards
+----------------------------------------------------------------------------------------
+PASS: aggregate classification has no absorbed primitive
+PASS: realized-state is the only partial-overlap classification
+PASS: banned overclaim absent: The primitive is retired
+PASS: banned overclaim absent: A primitive is retired
+PASS: banned overclaim absent: The primitive registry is edited
+PASS: banned overclaim absent: A Tier-A admission is retired
+PASS: banned overclaim absent: The audit status is changed
+PASS: banned overclaim absent: The effective status is changed
+PASS: banned overclaim absent: scale_reference_primitive is absorbed
+PASS: banned overclaim absent: kinetic_isotropy_primitive is absorbed
+PASS: banned overclaim absent: realized_state_primitive is absorbed
+PASS: banned overclaim absent: approved primitive cleanup reduces the current Tier-A count
+
+========================================================================================
+SUMMARY: PASS=60 FAIL=0

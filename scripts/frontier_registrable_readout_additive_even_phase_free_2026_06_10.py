@@ -19,14 +19,20 @@ physical-readout theorem supplies the missing identification:
         unordered-multiset surface carries the symmetric functions while the
         orientation sign is not scalar orbit content.
 
-Record axiom boundary used:
+Premise boundary used (2026-07-04 relocation: the current
+MINIMAL_AXIOMS_2026-06-29.md Record axiom supplies additivity and
+content-determination only; K/CPT orbit structure is downstream
+supplied-context content):
   * finite scalar additivity I over finite pairwise-disjoint record collections,
-    I(empty) = 0;
-  * the realized outcome is the K/CPT orbit of the realized central sector
-    (so any registrable scalar is constant on K/CPT orbits = K-even);
-  * Record supplies NO readout context, weighting, normalization, probability,
-    log-det, modulus rule, phase-group homomorphism, or observable
-    identification.
+    I(empty) = 0 (current Record axiom);
+  * (Orbit) registrable scalars are constant on K/CPT orbits = K-even —
+    carried by the supplied-context bridge note
+    KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_
+    BRIDGE_NOTE_2026-07-04 (T1: supplied ORBIT-INDEXING transferred through
+    the axiom's content-determination sentence), NOT by the axiom;
+  * the current Record axiom supplies NO readout context, orbit indexing,
+    weighting, normalization, probability, log-det, modulus rule, phase-group
+    homomorphism, or observable identification.
 
 Additional readout-context boundary used for the determinant phase theorem:
   * the phase-bearing determinant component is restricted to the

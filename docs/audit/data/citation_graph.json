@@ -789,6 +789,34 @@
       "to": "generation_weight_dial_structure_2026-06-05"
     },
     {
+      "from": "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04",
+      "to": "record_formation_append_certification_bounded_note_2026-07-04"
+    },
+    {
+      "from": "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04",
+      "to": "record_formation_append_consistency_sweep_2026-07-04"
+    },
+    {
+      "from": "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04",
+      "to": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11"
+    },
+    {
+      "from": "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04",
+      "to": "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12"
+    },
+    {
+      "from": "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04",
+      "to": "flavor_carrier_measure_scoring_discriminator_bounded_note_2026-07-02"
+    },
+    {
+      "from": "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
       "from": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
       "to": "minimal_axioms"
     },
@@ -59001,6 +59029,26 @@
       "runner_path": "scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py",
       "title": "AC_phi_lambda Occupancy Determinant-Power Split Exact Support"
     },
+    "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04": {
+      "claim_id": "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "record_formation_append_certification_bounded_note_2026-07-04",
+        "record_formation_append_consistency_sweep_2026-07-04",
+        "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
+        "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12",
+        "flavor_carrier_measure_scoring_discriminator_bounded_note_2026-07-02",
+        "admitted_input_registry_tier_a_note_2026-05-23"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "27ecdf34e8aad1d15f491a7560c24c18d3c13e26336ae7d20664605ab337ded6",
+      "path": "docs/ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_occupancy_formation_append_non_supply_no_go_2026_07_04.py",
+      "title": "AC_phi_lambda Occupancy Formation-Append Non-Supply No-Go"
+    },
     "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11": {
       "claim_id": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
       "claim_type_author_hint": "bounded_theorem",
@@ -110814,7 +110862,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "60f223b2dc754c2800b432a532b4ec42543b24944029982fd80d4bb9800a773f",
+      "note_hash": "4ff14514d9c6e94d4e62a51ee61329787e071564700dc21e1d26b928c91ed31c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -127160,7 +127208,7 @@
       "bounded_theorem": 1560,
       "decoration": 3,
       "meta": 319,
-      "no_go": 343,
+      "no_go": 344,
       "none": 1216,
       "open_gate": 134,
       "positive_theorem": 274
@@ -127169,15 +127217,15 @@
       "bounded_theorem": 1965,
       "decoration": 3,
       "meta": 319,
-      "no_go": 447,
+      "no_go": 448,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14548,
-    "leaf_count": 1267,
-    "node_count": 3849,
+    "edge_count": 14555,
+    "leaf_count": 1266,
+    "node_count": 3850,
     "root_count": 1102,
-    "runners_with_path": 3472
+    "runners_with_path": 3473
   }
 }

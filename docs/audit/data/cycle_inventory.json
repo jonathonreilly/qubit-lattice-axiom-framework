@@ -19,7 +19,7 @@
         }
       ],
       "length": 3,
-      "max_transitive_descendants": 1042,
+      "max_transitive_descendants": 1043,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -28,7 +28,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
           "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on the One-Qubit Cl(3) Pauli Factor over Z^3",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -37,7 +37,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
           "title": "Single-Clock APBC Axis-Label Bridge",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -46,7 +46,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md",
           "title": "Single-Clock Axis Selection From Record Durability: Every Retained Candidate Structure Is W-Transportable \u2014 Narrow No-Go With a Sharpened Pin",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         }
       ],
       "requires_lemma_extraction": false
@@ -197,7 +197,7 @@
         }
       ],
       "length": 35,
-      "max_transitive_descendants": 1042,
+      "max_transitive_descendants": 1043,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -206,7 +206,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
           "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on the One-Qubit Cl(3) Pauli Factor over Z^3",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -215,7 +215,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
           "title": "Single-Clock APBC Axis-Label Bridge",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -224,7 +224,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md",
           "title": "Single-Clock Axis Selection From Record Durability: Every Retained Candidate Structure Is W-Transportable \u2014 Narrow No-Go With a Sharpened Pin",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -233,7 +233,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md",
           "title": "Observable-Principle P1 CAP-K From Finite-Speed Registration",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -242,7 +242,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md",
           "title": "Observable-Principle P1 BR Record-Capacity Narrow No-Go",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -251,7 +251,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_NU_LICENSE_FROM_RETAINED_SURFACE_NARROW_NO_GO_NOTE_2026-06-10.md",
           "title": "Observable-Principle P1 NU License Narrowing No-Go",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -260,7 +260,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md",
           "title": "Observable-Principle P1 Exponent \u2014 Barrier-Parameter Selector Narrow Theorem (+ Irreducible-Class Extension)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -269,7 +269,7 @@
           "effective_status": "meta",
           "note_path": "docs/RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md",
           "title": "The Record-Outcome Observable Principle \u2014 Canonical Methodology (Proposal)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -278,7 +278,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_TM2_TRIMAXIMAL_COLUMN_FROM_RECORD_CENTRAL_SECTOR_NARROW_THEOREM_NOTE_2026-06-05.md",
           "title": "PMNS TM2 Trimaximal Column = the Recorded C3-Singlet Central Sector \u2014 Narrow Bridge Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -287,7 +287,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_TM2_MAGIC_RESIDUAL_DYNAMICAL_GENERATOR_NARROW_THEOREM_NOTE_2026-06-05.md",
           "title": "PMNS TM2 Magic Residual is a Native Dynamical Unitary \u2014 Narrow Bridge Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -296,7 +296,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_FROM_DM_NEUTRINO_SOURCE_H_DIAGONALIZATION_CLOSURE_THEOREM_NOTE_2026-04-17.md",
           "title": "PMNS as `f(H(m, delta, q_+))` \u2014 Bounded P3 Package",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -305,7 +305,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_P3_SYLVESTER_LINEAR_PATH_SIGNATURE_THEOREM_NOTE_2026-04-18.md",
           "title": "P3 Sylvester Linear-Path Signature Theorem on the DM Neutrino Source Surface",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -314,7 +314,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md",
           "title": "DM Neutrino Source-Surface Active Affine Point-Selection Boundary",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -323,7 +323,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md",
           "title": "DM Neutrino Source-Surface Active Half-Plane Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -332,7 +332,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_SHIFT_QUOTIENT_BUNDLE_THEOREM_NOTE_2026-04-16.md",
           "title": "DM Neutrino Source-Surface Shift-Quotient Bundle Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -341,7 +341,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_PREIMAGE_BUNDLE_THEOREM_NOTE_2026-04-16.md",
           "title": "DM Neutrino Exact H-Side Source-Surface Preimage-Bundle Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -350,7 +350,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_TRIPLET_SIGN_THEOREM_NOTE_2026-04-16.md",
           "title": "DM Leptogenesis `N_e` Projected-Source Triplet Sign Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -359,7 +359,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md",
           "title": "DM Leptogenesis `N_e` Projected-Source-Law Derivation",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -368,7 +368,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md",
           "title": "DM Leptogenesis Exact-Kernel Closure (claim narrowed 2026-05-01)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -377,7 +377,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
           "title": "DM Neutrino `c_odd` Bosonic Normalization Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -386,7 +386,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_UNIQUE_AMPLITUDE_SLOT_NOTE.md",
           "title": "PMNS Selector Unique Amplitude Slot",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -395,7 +395,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_CLASS_SPACE_UNIQUENESS_NOTE.md",
           "title": "PMNS Selector Class-Space Uniqueness",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -404,7 +404,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_SECTOR_ODD_REDUCTION_NOTE.md",
           "title": "PMNS Selector Sector-Odd Reduction",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -413,7 +413,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SECTOR_EXCHANGE_NONFORCING_NOTE.md",
           "title": "PMNS Sector-Exchange Nonforcing",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -422,7 +422,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SECTOR_ORIENTATION_ORBIT_NOTE.md",
           "title": "PMNS Sector-Orientation Orbit Reduction",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -431,7 +431,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_BANK_NONREALIZATION_NOTE.md",
           "title": "PMNS Selector-Bank Nonrealization",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -440,7 +440,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md",
           "title": "Higgs `Z_3` Charge Gauge-Redundancy Theorem for PMNS",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -449,7 +449,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/NEUTRINO_DIRAC_Z3_SUPPORT_TRICHOTOMY_NOTE.md",
           "title": "Neutrino Dirac `Z_3` Support Trichotomy",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -458,7 +458,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md",
           "title": "Neutrino Mass Reduction To The Dirac Lane",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -467,7 +467,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/HIGGS_VACUUM_EXPLICIT_SYSTEMATIC_NOTE.md",
           "title": "Higgs / Vacuum Authority",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -476,7 +476,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/HIGGS_MASS_DERIVED_NOTE.md",
           "title": "Higgs Mass: Canonical Authority Boundary",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -485,7 +485,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/YT_FLAGSHIP_BOUNDARY_NOTE.md",
           "title": "y_t Flagship Boundary Note",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -494,7 +494,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
           "title": "Staggered Vector Ward Identity on the Q_L Block: Lattice Noether Derivation, with the H_unit Matrix-Element Corollary y_t_bare = g_bare / sqrt(6)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -503,7 +503,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
           "title": "Staggered-Dirac Realization Gate Note \u2014 Bounded Synthesis Closure",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -512,7 +512,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md",
           "title": "Staggered-Dirac Realization Gate \u2014 Closure Synthesis (Block 01, 2026-05-17)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         }
       ],
       "requires_lemma_extraction": false
@@ -663,7 +663,7 @@
         }
       ],
       "length": 35,
-      "max_transitive_descendants": 1042,
+      "max_transitive_descendants": 1043,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -672,7 +672,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
           "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on the One-Qubit Cl(3) Pauli Factor over Z^3",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -681,7 +681,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
           "title": "Single-Clock APBC Axis-Label Bridge",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -690,7 +690,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md",
           "title": "Single-Clock Axis Selection From Record Durability: Every Retained Candidate Structure Is W-Transportable \u2014 Narrow No-Go With a Sharpened Pin",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -699,7 +699,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md",
           "title": "Observable-Principle P1 CAP-K From Finite-Speed Registration",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -708,7 +708,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md",
           "title": "Observable-Principle P1 BR Record-Capacity Narrow No-Go",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -717,7 +717,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_NU_LICENSE_FROM_RETAINED_SURFACE_NARROW_NO_GO_NOTE_2026-06-10.md",
           "title": "Observable-Principle P1 NU License Narrowing No-Go",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -726,7 +726,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md",
           "title": "Observable-Principle P1 Exponent \u2014 Barrier-Parameter Selector Narrow Theorem (+ Irreducible-Class Extension)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -735,7 +735,7 @@
           "effective_status": "meta",
           "note_path": "docs/RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md",
           "title": "The Record-Outcome Observable Principle \u2014 Canonical Methodology (Proposal)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -744,7 +744,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_TM2_TRIMAXIMAL_COLUMN_FROM_RECORD_CENTRAL_SECTOR_NARROW_THEOREM_NOTE_2026-06-05.md",
           "title": "PMNS TM2 Trimaximal Column = the Recorded C3-Singlet Central Sector \u2014 Narrow Bridge Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -753,7 +753,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_TM2_MAGIC_RESIDUAL_DYNAMICAL_GENERATOR_NARROW_THEOREM_NOTE_2026-06-05.md",
           "title": "PMNS TM2 Magic Residual is a Native Dynamical Unitary \u2014 Narrow Bridge Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -762,7 +762,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_FROM_DM_NEUTRINO_SOURCE_H_DIAGONALIZATION_CLOSURE_THEOREM_NOTE_2026-04-17.md",
           "title": "PMNS as `f(H(m, delta, q_+))` \u2014 Bounded P3 Package",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -771,7 +771,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_P3_SYLVESTER_LINEAR_PATH_SIGNATURE_THEOREM_NOTE_2026-04-18.md",
           "title": "P3 Sylvester Linear-Path Signature Theorem on the DM Neutrino Source Surface",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -780,7 +780,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md",
           "title": "DM Neutrino Source-Surface Active Affine Point-Selection Boundary",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -789,7 +789,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md",
           "title": "DM Neutrino Source-Surface Active Half-Plane Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -798,7 +798,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_SHIFT_QUOTIENT_BUNDLE_THEOREM_NOTE_2026-04-16.md",
           "title": "DM Neutrino Source-Surface Shift-Quotient Bundle Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -807,7 +807,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_PREIMAGE_BUNDLE_THEOREM_NOTE_2026-04-16.md",
           "title": "DM Neutrino Exact H-Side Source-Surface Preimage-Bundle Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -816,7 +816,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_TRIPLET_SIGN_THEOREM_NOTE_2026-04-16.md",
           "title": "DM Leptogenesis `N_e` Projected-Source Triplet Sign Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -825,7 +825,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md",
           "title": "DM Leptogenesis `N_e` Projected-Source-Law Derivation",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -834,7 +834,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md",
           "title": "DM Leptogenesis Exact-Kernel Closure (claim narrowed 2026-05-01)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -843,7 +843,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
           "title": "DM Neutrino `c_odd` Bosonic Normalization Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -852,7 +852,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_UNIQUE_AMPLITUDE_SLOT_NOTE.md",
           "title": "PMNS Selector Unique Amplitude Slot",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -861,7 +861,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_CLASS_SPACE_UNIQUENESS_NOTE.md",
           "title": "PMNS Selector Class-Space Uniqueness",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -870,7 +870,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_SECTOR_ODD_REDUCTION_NOTE.md",
           "title": "PMNS Selector Sector-Odd Reduction",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -879,7 +879,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SECTOR_EXCHANGE_NONFORCING_NOTE.md",
           "title": "PMNS Sector-Exchange Nonforcing",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -888,7 +888,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SECTOR_ORIENTATION_ORBIT_NOTE.md",
           "title": "PMNS Sector-Orientation Orbit Reduction",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -897,7 +897,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_BANK_NONREALIZATION_NOTE.md",
           "title": "PMNS Selector-Bank Nonrealization",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -906,7 +906,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md",
           "title": "Higgs `Z_3` Charge Gauge-Redundancy Theorem for PMNS",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -915,7 +915,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/NEUTRINO_DIRAC_Z3_SUPPORT_TRICHOTOMY_NOTE.md",
           "title": "Neutrino Dirac `Z_3` Support Trichotomy",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -924,7 +924,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md",
           "title": "Neutrino Mass Reduction To The Dirac Lane",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -933,7 +933,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/HIGGS_VACUUM_EXPLICIT_SYSTEMATIC_NOTE.md",
           "title": "Higgs / Vacuum Authority",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -942,7 +942,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/HIGGS_MASS_DERIVED_NOTE.md",
           "title": "Higgs Mass: Canonical Authority Boundary",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -951,7 +951,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/YT_FLAGSHIP_BOUNDARY_NOTE.md",
           "title": "y_t Flagship Boundary Note",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -960,7 +960,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
           "title": "Staggered Vector Ward Identity on the Q_L Block: Lattice Noether Derivation, with the H_unit Matrix-Element Corollary y_t_bare = g_bare / sqrt(6)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -969,7 +969,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
           "title": "Staggered-Dirac Realization Gate Note \u2014 Bounded Synthesis Closure",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -978,7 +978,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md",
           "title": "Staggered-Dirac Direct Three-State Algebraic Support",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         }
       ],
       "requires_lemma_extraction": false
@@ -1133,7 +1133,7 @@
         }
       ],
       "length": 36,
-      "max_transitive_descendants": 1042,
+      "max_transitive_descendants": 1043,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -1142,7 +1142,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1151,7 +1151,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
           "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on the One-Qubit Cl(3) Pauli Factor over Z^3",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1160,7 +1160,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
           "title": "Single-Clock APBC Axis-Label Bridge",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1169,7 +1169,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md",
           "title": "Single-Clock Axis Selection From Record Durability: Every Retained Candidate Structure Is W-Transportable \u2014 Narrow No-Go With a Sharpened Pin",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1178,7 +1178,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md",
           "title": "Observable-Principle P1 CAP-K From Finite-Speed Registration",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1187,7 +1187,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md",
           "title": "Observable-Principle P1 BR Record-Capacity Narrow No-Go",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1196,7 +1196,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_NU_LICENSE_FROM_RETAINED_SURFACE_NARROW_NO_GO_NOTE_2026-06-10.md",
           "title": "Observable-Principle P1 NU License Narrowing No-Go",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1205,7 +1205,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md",
           "title": "Observable-Principle P1 Exponent \u2014 Barrier-Parameter Selector Narrow Theorem (+ Irreducible-Class Extension)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1214,7 +1214,7 @@
           "effective_status": "meta",
           "note_path": "docs/RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md",
           "title": "The Record-Outcome Observable Principle \u2014 Canonical Methodology (Proposal)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1223,7 +1223,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_TM2_TRIMAXIMAL_COLUMN_FROM_RECORD_CENTRAL_SECTOR_NARROW_THEOREM_NOTE_2026-06-05.md",
           "title": "PMNS TM2 Trimaximal Column = the Recorded C3-Singlet Central Sector \u2014 Narrow Bridge Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1232,7 +1232,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_TM2_MAGIC_RESIDUAL_DYNAMICAL_GENERATOR_NARROW_THEOREM_NOTE_2026-06-05.md",
           "title": "PMNS TM2 Magic Residual is a Native Dynamical Unitary \u2014 Narrow Bridge Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1241,7 +1241,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_FROM_DM_NEUTRINO_SOURCE_H_DIAGONALIZATION_CLOSURE_THEOREM_NOTE_2026-04-17.md",
           "title": "PMNS as `f(H(m, delta, q_+))` \u2014 Bounded P3 Package",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1250,7 +1250,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_P3_SYLVESTER_LINEAR_PATH_SIGNATURE_THEOREM_NOTE_2026-04-18.md",
           "title": "P3 Sylvester Linear-Path Signature Theorem on the DM Neutrino Source Surface",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1259,7 +1259,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md",
           "title": "DM Neutrino Source-Surface Active Affine Point-Selection Boundary",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1268,7 +1268,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md",
           "title": "DM Neutrino Source-Surface Active Half-Plane Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1277,7 +1277,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_SHIFT_QUOTIENT_BUNDLE_THEOREM_NOTE_2026-04-16.md",
           "title": "DM Neutrino Source-Surface Shift-Quotient Bundle Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1286,7 +1286,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_PREIMAGE_BUNDLE_THEOREM_NOTE_2026-04-16.md",
           "title": "DM Neutrino Exact H-Side Source-Surface Preimage-Bundle Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1295,7 +1295,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_TRIPLET_SIGN_THEOREM_NOTE_2026-04-16.md",
           "title": "DM Leptogenesis `N_e` Projected-Source Triplet Sign Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1304,7 +1304,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md",
           "title": "DM Leptogenesis `N_e` Projected-Source-Law Derivation",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1313,7 +1313,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md",
           "title": "DM Leptogenesis Exact-Kernel Closure (claim narrowed 2026-05-01)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1322,7 +1322,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
           "title": "DM Neutrino `c_odd` Bosonic Normalization Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1331,7 +1331,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_UNIQUE_AMPLITUDE_SLOT_NOTE.md",
           "title": "PMNS Selector Unique Amplitude Slot",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1340,7 +1340,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_CLASS_SPACE_UNIQUENESS_NOTE.md",
           "title": "PMNS Selector Class-Space Uniqueness",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1349,7 +1349,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_SECTOR_ODD_REDUCTION_NOTE.md",
           "title": "PMNS Selector Sector-Odd Reduction",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1358,7 +1358,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SECTOR_EXCHANGE_NONFORCING_NOTE.md",
           "title": "PMNS Sector-Exchange Nonforcing",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1367,7 +1367,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SECTOR_ORIENTATION_ORBIT_NOTE.md",
           "title": "PMNS Sector-Orientation Orbit Reduction",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1376,7 +1376,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_BANK_NONREALIZATION_NOTE.md",
           "title": "PMNS Selector-Bank Nonrealization",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1385,7 +1385,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md",
           "title": "Higgs `Z_3` Charge Gauge-Redundancy Theorem for PMNS",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1394,7 +1394,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/NEUTRINO_DIRAC_Z3_SUPPORT_TRICHOTOMY_NOTE.md",
           "title": "Neutrino Dirac `Z_3` Support Trichotomy",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1403,7 +1403,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md",
           "title": "Neutrino Mass Reduction To The Dirac Lane",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1412,7 +1412,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/HIGGS_VACUUM_EXPLICIT_SYSTEMATIC_NOTE.md",
           "title": "Higgs / Vacuum Authority",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1421,7 +1421,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/HIGGS_MASS_DERIVED_NOTE.md",
           "title": "Higgs Mass: Canonical Authority Boundary",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1430,7 +1430,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/YT_FLAGSHIP_BOUNDARY_NOTE.md",
           "title": "y_t Flagship Boundary Note",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1439,7 +1439,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
           "title": "Staggered Vector Ward Identity on the Q_L Block: Lattice Noether Derivation, with the H_unit Matrix-Element Corollary y_t_bare = g_bare / sqrt(6)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1448,7 +1448,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
           "title": "Staggered-Dirac Realization Gate Note \u2014 Bounded Synthesis Closure",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1457,7 +1457,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md",
           "title": "Staggered-Dirac Realization Gate \u2014 Closure Synthesis (Block 01, 2026-05-17)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         }
       ],
       "requires_lemma_extraction": false
@@ -1612,7 +1612,7 @@
         }
       ],
       "length": 36,
-      "max_transitive_descendants": 1042,
+      "max_transitive_descendants": 1043,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -1621,7 +1621,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1630,7 +1630,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
           "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on the One-Qubit Cl(3) Pauli Factor over Z^3",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1639,7 +1639,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
           "title": "Single-Clock APBC Axis-Label Bridge",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1648,7 +1648,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md",
           "title": "Single-Clock Axis Selection From Record Durability: Every Retained Candidate Structure Is W-Transportable \u2014 Narrow No-Go With a Sharpened Pin",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1657,7 +1657,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md",
           "title": "Observable-Principle P1 CAP-K From Finite-Speed Registration",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1666,7 +1666,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md",
           "title": "Observable-Principle P1 BR Record-Capacity Narrow No-Go",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1675,7 +1675,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_NU_LICENSE_FROM_RETAINED_SURFACE_NARROW_NO_GO_NOTE_2026-06-10.md",
           "title": "Observable-Principle P1 NU License Narrowing No-Go",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1684,7 +1684,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md",
           "title": "Observable-Principle P1 Exponent \u2014 Barrier-Parameter Selector Narrow Theorem (+ Irreducible-Class Extension)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1693,7 +1693,7 @@
           "effective_status": "meta",
           "note_path": "docs/RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md",
           "title": "The Record-Outcome Observable Principle \u2014 Canonical Methodology (Proposal)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1702,7 +1702,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_TM2_TRIMAXIMAL_COLUMN_FROM_RECORD_CENTRAL_SECTOR_NARROW_THEOREM_NOTE_2026-06-05.md",
           "title": "PMNS TM2 Trimaximal Column = the Recorded C3-Singlet Central Sector \u2014 Narrow Bridge Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1711,7 +1711,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_TM2_MAGIC_RESIDUAL_DYNAMICAL_GENERATOR_NARROW_THEOREM_NOTE_2026-06-05.md",
           "title": "PMNS TM2 Magic Residual is a Native Dynamical Unitary \u2014 Narrow Bridge Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1720,7 +1720,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_FROM_DM_NEUTRINO_SOURCE_H_DIAGONALIZATION_CLOSURE_THEOREM_NOTE_2026-04-17.md",
           "title": "PMNS as `f(H(m, delta, q_+))` \u2014 Bounded P3 Package",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1729,7 +1729,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_P3_SYLVESTER_LINEAR_PATH_SIGNATURE_THEOREM_NOTE_2026-04-18.md",
           "title": "P3 Sylvester Linear-Path Signature Theorem on the DM Neutrino Source Surface",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1738,7 +1738,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md",
           "title": "DM Neutrino Source-Surface Active Affine Point-Selection Boundary",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1747,7 +1747,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md",
           "title": "DM Neutrino Source-Surface Active Half-Plane Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1756,7 +1756,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_SHIFT_QUOTIENT_BUNDLE_THEOREM_NOTE_2026-04-16.md",
           "title": "DM Neutrino Source-Surface Shift-Quotient Bundle Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1765,7 +1765,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_PREIMAGE_BUNDLE_THEOREM_NOTE_2026-04-16.md",
           "title": "DM Neutrino Exact H-Side Source-Surface Preimage-Bundle Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1774,7 +1774,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_TRIPLET_SIGN_THEOREM_NOTE_2026-04-16.md",
           "title": "DM Leptogenesis `N_e` Projected-Source Triplet Sign Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1783,7 +1783,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md",
           "title": "DM Leptogenesis `N_e` Projected-Source-Law Derivation",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1792,7 +1792,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md",
           "title": "DM Leptogenesis Exact-Kernel Closure (claim narrowed 2026-05-01)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1801,7 +1801,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
           "title": "DM Neutrino `c_odd` Bosonic Normalization Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1810,7 +1810,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_UNIQUE_AMPLITUDE_SLOT_NOTE.md",
           "title": "PMNS Selector Unique Amplitude Slot",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1819,7 +1819,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_CLASS_SPACE_UNIQUENESS_NOTE.md",
           "title": "PMNS Selector Class-Space Uniqueness",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1828,7 +1828,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_SECTOR_ODD_REDUCTION_NOTE.md",
           "title": "PMNS Selector Sector-Odd Reduction",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1837,7 +1837,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SECTOR_EXCHANGE_NONFORCING_NOTE.md",
           "title": "PMNS Sector-Exchange Nonforcing",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1846,7 +1846,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SECTOR_ORIENTATION_ORBIT_NOTE.md",
           "title": "PMNS Sector-Orientation Orbit Reduction",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1855,7 +1855,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_BANK_NONREALIZATION_NOTE.md",
           "title": "PMNS Selector-Bank Nonrealization",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1864,7 +1864,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md",
           "title": "Higgs `Z_3` Charge Gauge-Redundancy Theorem for PMNS",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1873,7 +1873,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/NEUTRINO_DIRAC_Z3_SUPPORT_TRICHOTOMY_NOTE.md",
           "title": "Neutrino Dirac `Z_3` Support Trichotomy",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1882,7 +1882,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md",
           "title": "Neutrino Mass Reduction To The Dirac Lane",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1891,7 +1891,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/HIGGS_VACUUM_EXPLICIT_SYSTEMATIC_NOTE.md",
           "title": "Higgs / Vacuum Authority",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1900,7 +1900,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/HIGGS_MASS_DERIVED_NOTE.md",
           "title": "Higgs Mass: Canonical Authority Boundary",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1909,7 +1909,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/YT_FLAGSHIP_BOUNDARY_NOTE.md",
           "title": "y_t Flagship Boundary Note",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1918,7 +1918,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
           "title": "Staggered Vector Ward Identity on the Q_L Block: Lattice Noether Derivation, with the H_unit Matrix-Element Corollary y_t_bare = g_bare / sqrt(6)",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1927,7 +1927,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
           "title": "Staggered-Dirac Realization Gate Note \u2014 Bounded Synthesis Closure",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         },
         {
           "audit_status": "unaudited",
@@ -1936,7 +1936,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC_\u03c6\u03bb Species-Labeling No-Go Theorem",
-          "transitive_descendants": 1042
+          "transitive_descendants": 1043
         }
       ],
       "requires_lemma_extraction": false
@@ -1955,7 +1955,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 404,
+      "max_transitive_descendants": 405,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -1964,7 +1964,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md",
           "title": "Quark CP-Carrier Completion on the Live Mass-Ratio Lane",
-          "transitive_descendants": 404
+          "transitive_descendants": 405
         },
         {
           "audit_status": "unaudited",
@@ -1973,7 +1973,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md",
           "title": "Quark CP Carrier Slot Minimality Theorem",
-          "transitive_descendants": 404
+          "transitive_descendants": 405
         }
       ],
       "requires_lemma_extraction": false

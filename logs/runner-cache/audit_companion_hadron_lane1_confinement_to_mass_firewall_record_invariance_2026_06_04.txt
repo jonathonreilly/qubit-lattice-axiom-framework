@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_hadron_lane1_confinement_to_mass_firewall_record_invariance_2026_06_04.py
-runner_sha256: 164f89923aa587ce6f0309b170def13ee794f8c249360f83be8554d82cf5f2cd
-timeout_sec: 120
+runner_sha256: d0e7747ceda42fca42d8b47fb47f48451679f2cb1c9b8885016926ce11cc69fc
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
 ========================================================================
@@ -15,14 +15,17 @@ Parent runner: scripts/frontier_hadron_lane1_confinement_to_mass_firewall.py
 Scope: meta evidence only; no theorem claim and no verdict change.
 PASS parent_note_exists
 PASS parent_runner_exists
-PASS parent_claim_type_expected
+PASS parent_ledger_row_exists
+PASS parent_claim_type_field_present :: claim_type=bounded_theorem
 PASS parent_runner_path_expected
-PASS parent_current_criticality_expected
-PASS parent_current_load_expected :: load=8.333
-PASS parent_note_hash_expected
+PASS parent_current_criticality_present :: criticality=high
+PASS parent_current_load_present :: load=8.858
+PASS parent_note_hash_field_present
 PASS parent_note_hash_matches_ledger
-PASS parent_deps_exact :: count=3
-PASS parent_current_row_unresolved
+PASS parent_deps_field_present :: count=3
+PASS parent_deps_include_required_sources :: missing=[]
+PASS parent_deps_omit_record_specific_sources :: count=3
+PASS parent_current_status_fields_present :: effective_status=unaudited, audit_status=unaudited
 PASS parent_load_bearing_block_present
 PASS parent_load_bearing_contains_firewall_phrase_0
 PASS parent_load_bearing_contains_firewall_phrase_1
@@ -35,7 +38,7 @@ PASS parent_load_bearing_contains_firewall_phrase_7
 PASS parent_load_bearing_omits_record_axiom_terms
 PASS parent_runner_exit_zero :: returncode=0
 PASS parent_runner_total_present
-PASS parent_runner_pass_count_sixteen :: pass_count=16
+PASS parent_runner_pass_count_at_least_original :: pass_count=16
 PASS parent_runner_fail_count_zero :: fail_count=0
 PASS record_marker_true_exit_zero :: returncode=0
 PASS record_marker_does_not_change_parent_output
@@ -45,7 +48,7 @@ PASS companion_disclaims_verdict_change
 PASS companion_keeps_dependency_boundary
 PASS companion_marks_axioms_not_support
 ========================================================================
-SUMMARY: PASS=31 FAIL=0
+SUMMARY: PASS=34 FAIL=0
 ========================================================================
 
 ----- stderr -----

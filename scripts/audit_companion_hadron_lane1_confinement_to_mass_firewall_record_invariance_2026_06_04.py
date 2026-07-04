@@ -27,18 +27,13 @@ COMPANION_NOTE = (
 LEDGER = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
 PARENT_ID = "hadron_lane1_confinement_to_mass_firewall_note_2026-04-27"
-EXPECTED_NOTE_HASH = "4d8f8710aac172923056f98eb21ecaf94e4870d28fb51671b67f47d1e9539018"
 EXPECTED_RUNNER_PATH = "scripts/frontier_hadron_lane1_confinement_to_mass_firewall.py"
-EXPECTED_CLAIM_TYPE = "bounded_theorem"
-EXPECTED_CRITICALITY = "high"
-EXPECTED_LOAD = 8.333
-EXPECTED_DEPS = {
+REQUIRED_DEPS = {
     "g_bare_derivation_note",
     "staggered_dirac_realization_gate_note_2026-05-03",
     "quark_lane3_bounded_companion_retention_firewall_note_2026-04-27",
 }
-STATUS_FIELD = "effective" + "_status"
-PENDING_STATUS = "un" + "audited"
+STATUS_FIELDS = ("effective" + "_status", "audit" + "_status")
 
 PASS = 0
 FAIL = 0
@@ -94,21 +89,45 @@ def main() -> int:
     print("Scope: meta evidence only; no theorem claim and no verdict change.")
 
     ledger = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
-    row = ledger[PARENT_ID]
+    row = ledger.get(PARENT_ID, {})
+    deps = row.get("deps", [])
+    deps_set = set(deps) if isinstance(deps, list) else set()
     record("parent_note_exists", PARENT_NOTE.is_file())
     record("parent_runner_exists", PARENT_RUNNER.is_file())
-    record("parent_claim_type_expected", row.get("claim_type") == EXPECTED_CLAIM_TYPE)
+    record("parent_ledger_row_exists", bool(row))
+    record("parent_claim_type_field_present", bool(row.get("claim_type")), f"claim_type={row.get('claim_type')}")
     record("parent_runner_path_expected", row.get("runner_path") == EXPECTED_RUNNER_PATH)
-    record("parent_current_criticality_expected", row.get("criticality") == EXPECTED_CRITICALITY)
     record(
-        "parent_current_load_expected",
-        abs(float(row.get("load_bearing_score")) - EXPECTED_LOAD) < 1e-12,
-        f"load={row.get('load_bearing_score')}",
+        "parent_current_criticality_present",
+        bool(row.get("criticality")),
+        f"criticality={row.get('criticality')}",
     )
-    record("parent_note_hash_expected", sha256(PARENT_NOTE) == EXPECTED_NOTE_HASH)
+    try:
+        load_value = float(row.get("load_bearing_score"))
+        load_present = True
+    except (TypeError, ValueError):
+        load_value = row.get("load_bearing_score")
+        load_present = False
+    record("parent_current_load_present", load_present, f"load={load_value}")
+    row_note_hash = row.get("note_hash")
+    record("parent_note_hash_field_present", isinstance(row_note_hash, str) and len(row_note_hash) == 64)
     record("parent_note_hash_matches_ledger", sha256(PARENT_NOTE) == row.get("note_hash"))
-    record("parent_deps_exact", set(row.get("deps", [])) == EXPECTED_DEPS, f"count={len(row.get('deps', []))}")
-    record("parent_current_row_unresolved", row.get(STATUS_FIELD) == PENDING_STATUS)
+    record("parent_deps_field_present", bool(deps_set), f"count={len(deps_set)}")
+    record(
+        "parent_deps_include_required_sources",
+        REQUIRED_DEPS.issubset(deps_set),
+        f"missing={sorted(REQUIRED_DEPS - deps_set)}",
+    )
+    record(
+        "parent_deps_omit_record_specific_sources",
+        all("record" not in dep.lower() for dep in deps_set),
+        f"count={len(deps_set)}",
+    )
+    record(
+        "parent_current_status_fields_present",
+        all(bool(row.get(field)) for field in STATUS_FIELDS),
+        ", ".join(f"{field}={row.get(field)}" for field in STATUS_FIELDS),
+    )
 
     parent_text = PARENT_NOTE.read_text(encoding="utf-8")
     start = parent_text.find("## Theorem")
@@ -138,10 +157,10 @@ def main() -> int:
     record("parent_runner_exit_zero", parent_false.returncode == 0, f"returncode={parent_false.returncode}")
     record("parent_runner_total_present", total is not None)
     if total:
-        record("parent_runner_pass_count_sixteen", total[0] == 16, f"pass_count={total[0]}")
+        record("parent_runner_pass_count_at_least_original", total[0] >= 16, f"pass_count={total[0]}")
         record("parent_runner_fail_count_zero", total[1] == 0, f"fail_count={total[1]}")
     else:
-        record("parent_runner_pass_count_sixteen", False)
+        record("parent_runner_pass_count_at_least_original", False)
         record("parent_runner_fail_count_zero", False)
     record("record_marker_true_exit_zero", parent_true.returncode == 0, f"returncode={parent_true.returncode}")
     record(

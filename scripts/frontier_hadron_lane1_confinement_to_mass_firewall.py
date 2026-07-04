@@ -73,9 +73,10 @@ def part1_repo_claim_state() -> None:
         and "Neutron mass" in lane,
     )
     check(
-        "confinement note separates exact theorem from bounded string tension",
-        "proposed_retained structural theorem + bounded quantitative prediction" in confinement_flat
-        and "Bounded (EFT bridge)" in confinement_flat,
+        "confinement note separates exact arithmetic from bounded string tension",
+        "exact arithmetic over declared inputs" in confinement_flat
+        and "Bounded (EFT bridge)" in confinement_flat
+        and "bounded support note / qualitative confinement consistency" in confinement_flat,
     )
     check(
         "confinement note leaves meson spectrum open",
@@ -108,7 +109,7 @@ def part2_one_scale_is_not_spectrum() -> None:
         f"c_p-c_pi={c_p - c_pi_charged:.3f}",
     )
     check(
-        "proton and neutron are close but not fixed by sqrt(sigma) alone",
+        "proton and neutron are nearby but not fixed by sqrt(sigma) alone",
         0.0 < abs(c_n - c_p) < 0.01,
         f"c_n-c_p={c_n - c_p:.5f}",
     )
@@ -144,7 +145,7 @@ def part3_gmor_dependency() -> None:
         f"1/1.10={factor_fpi:.4f}",
     )
     check(
-        "current Lane 1 cannot close m_pi until m_u, m_d, Sigma, and f_pi land",
+        "current Lane 1 cannot supply m_pi until m_u, m_d, Sigma, and f_pi land",
         "Quark masses m_u, m_d" in lane
         and "Chiral condensate" in lane
         and "Pion decay constant" in lane
@@ -180,7 +181,7 @@ def part5_safe_endpoint() -> None:
     lane = read("docs/lanes/open_science/01_HADRON_MASS_PROGRAM_OPEN_LANE_2026-04-26.md")
     note = read("docs/HADRON_LANE1_CONFINEMENT_TO_MASS_FIREWALL_NOTE_2026-04-27.md")
     check(
-        "Lane 1 honest status is open, not retained hadron closure",
+        "Lane 1 honest status is open, not a retained hadron-mass result",
         "ACCEPTED CRITICAL OPEN SCIENCE LANE" in lane
         and "no theorem or claim" in lane
         and "Lane 1 remains open" in note,

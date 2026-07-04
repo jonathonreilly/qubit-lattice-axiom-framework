@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_erosion_rate_closed_form_2026_06_12.py
-runner_sha256: 449d11b02a24e3ac7da5fb4278039b635f449192628f466264e1d4c2a71270e4
+runner_sha256: 03690a12a72ba58116e02ce15a587cead5c79f7b69454d9837da383b2ee869c5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.87
+elapsed_sec: 0.72
 status: ok
 ----- stdout -----
 Uniform-sign closed-form erosion-rate verification
@@ -65,7 +65,8 @@ PASS: S5 canonical claim type and status-authority front matter are present
 PASS: S5 dependency links are exactly the landed erosion predecessors :: links=[('`EROSION_EXACT_RECURRENCE_PATH_PRODUCT_THRESHOLD_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-06-12.md`', 'EROSION_EXACT_RECURRENCE_PATH_PRODUCT_THRESHOLD_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-06-12.md'), ('`EROSION_RATE_TABLE_NO_TESTED_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md`', 'EROSION_RATE_TABLE_NO_TESTED_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md')]
 PASS: S5 scope remains the uniform-sign branch and excludes mixed paths
 PASS: S5 no new axiom, primitive, measure, weighting, normalization, or probability rule is imported
-PASS: S5 note, runner, and cache are the touched files in this spec path set
+  [info] landing-time git status for the spec path set: [' M scripts/frontier_erosion_rate_closed_form_2026_06_12.py']
+PASS: S5 note, runner, and cache all exist in this spec path set
 TOTAL: PASS=28 FAIL=0
 
 ----- stderr -----

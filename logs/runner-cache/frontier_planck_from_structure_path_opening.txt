@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_planck_from_structure_path_opening.py
-runner_sha256: e29a557f855ed645ec24de073ccbc642930fbfdd2688267ab00c3d417d32c243
+runner_sha256: 62b3028bc92d141040ca3b66d8b52fb56e3ffaaad871f7348b51c9d1cfd90dba
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 Planck-from-structure path-opening synthesis check
@@ -52,7 +52,7 @@ PASS: cross-references foundational note: MINIMAL_AXIOMS_2026-05-03
 PASS: cross-references foundational note: PHYSICAL_LATTICE_NECESSITY_NOTE
 PASS: cross-references foundational note: PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08
 PASS: cross-references foundational note: STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac
-PASS: cross-references foundational note: KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09
+PASS: cross-references foundational note: KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09
 PASS: cross-references foundational note: CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08
 PASS: cross-references foundational note: BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09
 PASS: minimal axioms note records physical Cl(3) local algebra

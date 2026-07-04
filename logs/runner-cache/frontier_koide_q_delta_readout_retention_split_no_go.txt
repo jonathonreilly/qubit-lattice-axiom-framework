@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_delta_readout_retention_split_no_go.py
-runner_sha256: e7cb586c726ccc70b6e7c71f75a73ed77f0b1ab0299c322dbcdfd90fad8ed0e6
+runner_sha256: 69e5922231d5ad4b8cdb049555a2e704e8b3998df44e28f40d892c542a808c6e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 0.28
 status: ok
 ----- stdout -----
 
 ========================================================================================
 A. Retained source-response readout support
 ========================================================================================
-[PASS] A.1 retained notes support local scalar source-response readout
+[PASS] A.1 cited notes support local scalar source-response readout
        observable principle + hierarchy selector notes identify physical scalar readout with source-expansion coefficients.
 
 ========================================================================================
@@ -47,7 +47,7 @@ D. Full-lane verdict
 Summary
 ========================================================================================
 PASSED: 10/10
-  [PASS] A.1 retained notes support local scalar source-response readout
+  [PASS] A.1 cited notes support local scalar source-response readout
   [PASS] B.1 exact reduced generator gives Y=(1,1) at zero background source
   [PASS] B.2 zero-background readout gives K_TL=0 and Q=2/3
   [PASS] B.3 zero-background source is the extra Q condition, not a readout consequence

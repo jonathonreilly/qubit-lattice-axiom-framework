@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_tensor_support_center_excess_law.py
-runner_sha256: c5cbe0a90df79c0207e9882d63e6c7081d667d47a6158f84ce85622aab3c5e7d
-timeout_sec: 600
+runner_sha256: 7c16561dff6746a47ea500ef454ea72f86ef92aa9615a67406f77f6403273957
+timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 149.20
+elapsed_sec: 78.17
 status: ok
 ----- stdout -----
 Support-side A1 center-excess law for the tensor frontier
@@ -23,30 +23,30 @@ r=0.25: delta_A1=1.033673504811e-01, formula=1.033673504811e-01, err=4.163e-17
 r=0.50: delta_A1=7.491495713053e-02, formula=7.491495713053e-02, err=1.388e-17
 r=0.75: delta_A1=5.874507418157e-02, formula=5.874507418157e-02, err=4.163e-17
 r=1.00: delta_A1=4.831632475944e-02, formula=4.831632475944e-02, err=6.939e-18
-r=1.50: delta_A1=3.565646152233e-02, formula=3.565646152233e-02, err=4.163e-17
+r=1.50: delta_A1=3.565646152233e-02, formula=3.565646152233e-02, err=0.000e+00
 r=2.00: delta_A1=2.825347453309e-02, formula=2.825347453309e-02, err=1.041e-17
 [EXACT] PASS: on the canonical Q=1 projective A1 family, the exact support-side scalar is delta_A1(r)=1/(6(1+sqrt(6)r))
     max formula error = 4.163e-17
 
 Endpoint tensor coefficients:
-  gamma_E(center) = -3.772329167975e-04
-  gamma_E(shell)  = -2.010572657265e-04
+  gamma_E(center) = -3.772329168017e-04
+  gamma_E(shell)  = -2.010572265638e-04
   gamma_T(center) = +3.359952396063e-04
   gamma_T(shell)  = +4.031967723697e-04
 
 Affine support law from exact A1 endpoints:
-  gamma_E(delta) = -2.010572657265e-04 + (-1.057053906426e-03) delta
+  gamma_E(delta) = -2.010572265638e-04 + (-1.057054141428e-03) delta
   gamma_T(delta) = +4.031967723697e-04 + (-4.032091965809e-04) delta
-canonical r=0.25: gamma_E err=4.537e-09, gamma_T err=1.000e-08
-canonical r=0.50: gamma_E err=4.838e-09, gamma_T err=1.067e-08
-canonical r=0.75: gamma_E err=4.407e-09, gamma_T err=9.798e-09
-canonical r=1.00: gamma_E err=4.028e-09, gamma_T err=8.802e-09
-canonical r=1.50: gamma_E err=3.327e-09, gamma_T err=7.109e-09
-canonical r=2.00: gamma_E err=2.744e-09, gamma_T err=6.029e-09
-exact local O_h: delta_A1=6.242611227355e-02, gamma_E err=4.381e-07, gamma_T err=1.172e-07
+canonical r=0.25: gamma_E err=4.522e-09, gamma_T err=1.000e-08
+canonical r=0.50: gamma_E err=4.784e-09, gamma_T err=1.067e-08
+canonical r=0.75: gamma_E err=4.411e-09, gamma_T err=9.798e-09
+canonical r=1.00: gamma_E err=4.000e-09, gamma_T err=8.787e-09
+canonical r=1.50: gamma_E err=3.296e-09, gamma_T err=7.134e-09
+canonical r=2.00: gamma_E err=2.712e-09, gamma_T err=6.029e-09
+exact local O_h: delta_A1=6.242611227355e-02, gamma_E err=4.381e-07, gamma_T err=1.171e-07
 finite-rank: delta_A1=3.307783365857e-02, gamma_E err=3.380e-06, gamma_T err=4.190e-06
 [BOUNDED] PASS: the current bright tensor coefficients are nearly affine in the exact support-side center-excess scalar on the canonical A1 family
-    max canonical affine-law errors: gamma_E=4.838e-09, gamma_T=1.067e-08
+    max canonical affine-law errors: gamma_E=4.784e-09, gamma_T=1.067e-08
 [BOUNDED] PASS: the same support-side affine law tracks the exact local O_h and finite-rank A1 baselines
     max audited-family affine-law errors: gamma_E=3.380e-06, gamma_T=4.190e-06
 
@@ -58,5 +58,6 @@ SUMMARY
 ==============================================================================
 PASS=5 FAIL=0 TOTAL=5
 All checks passed.
+
 ----- stderr -----
 

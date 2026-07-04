@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_signed_linear_democratic_tangent_physical_bridge_attempt.py
-runner_sha256: 0459d906f37b532dc4f3ee341ceee82ffdc07ab0b893a9b5361121f2bd5b05ce
+runner_sha256: 8e87f41125e31795f6b57f8b8562048279f60f3ef0ecff04a88edab9c3291308
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.90
+elapsed_sec: 0.76
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -26,10 +26,11 @@ Part 1: anchors and current authority
 [PASS] note contains required section: Primitive-Unit Branch
 [PASS] note contains required section: Current Status
 [PASS] note contains required section: Why This Is Not The Old Ward Trap
-[PASS] source-action support is retained_bounded
-[PASS] LSP signed-record source support is not retained coefficient authority
-[PASS] one-Higgs gauge selection is not retained coefficient authority
-[PASS] EW mass theorem is retained
+[PASS] source-action support row is present in the audit ledger (presence only)
+[PASS] LSP signed-record source support row is present in the audit ledger (presence only)
+[PASS] one-Higgs gauge selection row is present in the audit ledger (presence only)
+[PASS] EW mass theorem row is present in the audit ledger (presence only)
+  [info] live effective statuses (audit-lane-owned; not gated): {'source_action': 'retained_bounded', 'lsp_source': 'unaudited', 'one_higgs': 'unaudited', 'ew_mass': 'retained_bounded'}
 
 Part 2: normalized physical trilinear tensor
 [PASS] color singlet coefficient is 1/sqrt(3): sqrt(3)/3

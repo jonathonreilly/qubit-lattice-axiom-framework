@@ -177,7 +177,7 @@ def part1_current_surfaces() -> None:
     signed = read(SIGNED_READOUT)
     check(
         "signed-readout note does not select kappa",
-        "does not select `kappa_Y = 0`" in signed,
+        "do not select `kappa_Y = 0`" in signed,
     )
 
 

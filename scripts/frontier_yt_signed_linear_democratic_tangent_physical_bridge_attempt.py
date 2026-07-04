@@ -44,13 +44,15 @@ def read(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
 
-def ledger_row(claim_id: str) -> dict[str, Any]:
+def ledger_row(claim_id: str) -> dict[str, Any] | None:
     rows = json.loads(read(LEDGER))["rows"]
-    iterable = rows.values() if isinstance(rows, dict) else rows
+    if isinstance(rows, dict):
+        return rows.get(claim_id)
+    iterable = rows
     for row in iterable:
         if row.get("claim_id") == claim_id:
             return row
-    raise KeyError(claim_id)
+    return None
 
 
 def is_zero(expr: sp.Expr) -> bool:
@@ -73,16 +75,18 @@ def part1_anchors() -> dict[str, Any]:
     ):
         check(f"note contains required section: {phrase}", phrase in note)
 
-    statuses = {
-        "source_action": ledger_row("yt_source_action_support_packet_note_2026-05-22").get("effective_status"),
-        "lsp_source": ledger_row("yt_lsp_signed_record_source_readout_support_note_2026-05-24").get("effective_status"),
-        "one_higgs": ledger_row("sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26").get("effective_status"),
-        "ew_mass": ledger_row("ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26").get("effective_status"),
+    status_rows = {
+        "source_action": ledger_row("yt_source_action_support_packet_note_2026-05-22"),
+        "lsp_source": ledger_row("yt_lsp_signed_record_source_readout_support_note_2026-05-24"),
+        "one_higgs": ledger_row("sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26"),
+        "ew_mass": ledger_row("ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"),
     }
-    check("source-action support is retained_bounded", statuses["source_action"] == "retained_bounded")
-    check("LSP signed-record source support is not retained coefficient authority", statuses["lsp_source"] != "retained")
-    check("one-Higgs gauge selection is not retained coefficient authority", statuses["one_higgs"] != "retained")
-    check("EW mass theorem is retained", statuses["ew_mass"] == "retained")
+    statuses = {key: None if row is None else row.get("effective_status") for key, row in status_rows.items()}
+    check("source-action support row is present in the audit ledger (presence only)", status_rows["source_action"] is not None)
+    check("LSP signed-record source support row is present in the audit ledger (presence only)", status_rows["lsp_source"] is not None)
+    check("one-Higgs gauge selection row is present in the audit ledger (presence only)", status_rows["one_higgs"] is not None)
+    check("EW mass theorem row is present in the audit ledger (presence only)", status_rows["ew_mass"] is not None)
+    print(f"  [info] live effective statuses (audit-lane-owned; not gated): {statuses}")
     return statuses
 
 

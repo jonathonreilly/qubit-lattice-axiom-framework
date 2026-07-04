@@ -74,7 +74,7 @@ def part1_repo_claim_state() -> None:
     )
     check(
         "confinement note separates exact theorem from bounded string tension",
-        "proposed_retained structural theorem + bounded quantitative prediction" in confinement_flat
+        "exact arithmetic over declared inputs" in confinement_flat
         and "Bounded (EFT bridge)" in confinement_flat,
     )
     check(

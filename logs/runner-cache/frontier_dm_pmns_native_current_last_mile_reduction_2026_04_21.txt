@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pmns_native_current_last_mile_reduction_2026_04_21.py
-runner_sha256: 393be87682ea8c4650c0ec0e1125bf127c200528b0ab83b2886c9d536c8cf671
+runner_sha256: 28e683c332e6f229bcc5ffc780ffd6d1ff3ec540d38ffb7d96639423fb53c37c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ========================================================================================

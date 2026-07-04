@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_fh_top_w_response_ratio_gate.py
-runner_sha256: a722193d42999e4d794c012084bc67072e831bfd7500136b9973170b80eb27c4
+runner_sha256: 67c4e2afcd56e68f7f7a357611e0ec90af9b0c1ab4ca1828b679cee9b324f7cd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.84
+elapsed_sec: 0.61
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -22,10 +22,11 @@ Part 1: anchors and current authority
 [PASS] note contains required section: Why This Beats The Pole-Row Normalization No-Go
 [PASS] note contains required section: Current Attempt Result
 [PASS] note contains required section: Non-Claims
-[PASS] EW Higgs mass diagonalization is retained
-[PASS] source-action support packet is retained_bounded
-[PASS] pole-row normalization no-go is retained_no_go
-[PASS] EW coupling note is not retained g2 authority
+[PASS] EW Higgs mass diagonalization row is present in the audit ledger (presence only)
+[PASS] source-action support packet row is present in the audit ledger (presence only)
+[PASS] pole-row normalization no-go row is present in the audit ledger (presence only)
+[PASS] EW coupling note row is present in the audit ledger (presence only)
+  [info] live effective statuses (audit-lane-owned; not gated): ew_mass='retained_bounded', source_action='retained_bounded', pole_no_go='retained_no_go', ew_coupling='unaudited'
 
 Part 2: transfer-matrix Feynman-Hellmann derivative identity
 [PASS] d[-log(Lambda_t/Lambda_0)/a]/dh identity

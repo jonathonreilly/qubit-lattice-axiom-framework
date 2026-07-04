@@ -71,7 +71,7 @@ def main() -> int:
     # ------------------------------------------------------------------------
     # Section 1: AUDIT OP retains the "unique" clause from disk
     # ------------------------------------------------------------------------
-    section("§1. AUDIT: OP retains 'unique additive CPT-even scalar generator' clause")
+    section("§1. AUDIT: OP fixes the additive CPT-even scalar generator family")
 
     op_path = "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md"
     op_text = read_file_or_empty(op_path)
@@ -80,14 +80,15 @@ def main() -> int:
     op_text_clean = op_text.replace("\n> ", " ").replace("\n>", " ")
     op_text_normalized = " ".join(op_text_clean.split())
     op_unique_clause_present = (
-        "unique additive CPT-even" in op_text_normalized
+        "fixes the additive generator family" in op_text_normalized
+        and "CPT-even" in op_text_normalized
     )
     check(
-        "1.1 AUDIT (disk): OP file exists and contains 'unique additive CPT-even' clause",
+        "1.1 AUDIT (disk): OP file exists and fixes the additive CPT-even generator family",
         op_unique_clause_present and len(op_text) > 100,
         f"file: {op_path}\n"
         f"size: {len(op_text)} bytes (raw)\n"
-        f"'unique additive CPT-even' present (whitespace-normalized): {op_unique_clause_present}",
+        f"'fixes the additive generator family' + 'CPT-even' present (whitespace-normalized): {op_unique_clause_present}",
     )
 
     op_local_projector_clause = (

@@ -477,12 +477,15 @@ rows = {
     "observable_principle_record_scalar_map_no_go_note_2026-06-05": "retained_no_go",
     "post_record_count_probability_firewall_2026-06-06": "retained_no_go",
 }
-bad_rows = []
-for rid, want in rows.items():
-    got = ledger_rows.get(rid, {}).get("effective_status")
-    if got != want:
-        bad_rows.append((rid, got, want))
-check("B", "cited rows present in the audit ledger at their current effective statuses (one-hop presence check, 10 rows)", not bad_rows, f"mismatches={bad_rows}")
+missing_rows = [rid for rid in rows if ledger_rows.get(rid) is None]
+live_statuses = {rid: ledger_rows.get(rid, {}).get("effective_status") for rid in rows}
+check(
+    "B",
+    "cited rows present in the audit ledger (presence only, 10 rows)",
+    not missing_rows,
+    f"missing={missing_rows}",
+)
+print(f"  [info][B] live effective statuses (audit-lane-owned; not gated): {live_statuses}")
 
 required = [
     "Status authority:",

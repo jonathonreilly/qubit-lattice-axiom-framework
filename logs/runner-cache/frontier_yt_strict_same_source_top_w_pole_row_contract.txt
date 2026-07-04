@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_strict_same_source_top_w_pole_row_contract.py
-runner_sha256: 9cae7e190c385c89893338e5db7e25f94db272c1c2285fd8a3e9b6012ee06b47
+runner_sha256: b38e0079a23528b53e4d60f5aa6b7ff819ffecff0e6eb13c0f116b2af03ec4cd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.03
+elapsed_sec: 0.78
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -30,10 +30,11 @@ Part 1: documents and current authority
 [PASS] contract keeps audit status authority independent
 [PASS] contract avoids proposal/status-certificate language
 [PASS] contract records no production certificate
-[PASS] source-coordinate ratio gate is retained_bounded support
-[PASS] W/Z denominator packet is retained_bounded support
-[PASS] symbolic top row is not coefficient-certified closure
-[PASS] FH ratio gate is not retained closure
+[PASS] source-coordinate ratio gate row is present in the audit ledger (presence only)
+[PASS] W/Z denominator packet row is present in the audit ledger (presence only)
+[PASS] symbolic top row is present in the audit ledger (presence only)
+[PASS] FH ratio gate row is present in the audit ledger (presence only)
+  [info] live effective statuses (audit-lane-owned; not gated): {'source_coordinate': 'retained_bounded', 'wz_packet': 'unaudited', 'symbolic_top': 'unaudited', 'fh_ratio': 'unaudited', 'top_nogo': 'unaudited'}
 [PASS] top coefficient no-go remains non-positive
 
 Part 2: same-source response algebra

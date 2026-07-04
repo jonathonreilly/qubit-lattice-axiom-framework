@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_observable_principle_p1_bridge_framework_internal_narrow.py
-runner_sha256: 2c80bfa85de23dddddfe0d972a77663e46a86fcdce8446f972e12fcc1591b527
+runner_sha256: 06801f28b8b65affb8e3ff9142d15e3a769df70729604cdeb7cd95b1572cd62c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.79
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 
@@ -34,8 +34,8 @@ T4: Block-diagonal det factorization on a finite real anti-H block (SymPy)
 ==============================================================================
 T5: failed real-D candidate contains (A) block-additive criterion
 ==============================================================================
-  [PASS] (A) "block-additive on independent direct sums" is part of (X2)
-         Substring 'block-additive on independent direct sums' present in cited markdown
+  [PASS] (A) "block-additive on every realized no-bond direct sum within `B`" is part of (X2)
+         Substring 'block-additive on every realized no-bond direct sum within `B`' present in cited markdown
 
 ==============================================================================
 T6: failed real-D candidate explicitly admits P1 not retired
@@ -46,8 +46,9 @@ T6: failed real-D candidate explicitly admits P1 not retired
 ==============================================================================
 T7: live ledger effective_status for each catalog candidate
 ==============================================================================
-  [PASS] candidate ledger effective_status matches note descriptions
-         All candidate statuses match note descriptions
+  [PASS] candidate rows are present in the audit ledger (presence only)
+         missing=[]
+  [info] live effective statuses (audit-lane-owned; not gated): {'observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10': 'retained_bounded', 'axiom_first_reflection_positivity_theorem_note_2026-04-29': 'unaudited', 'anomaly_forces_time_theorem': 'unaudited', 'cl3_color_automorphism_theorem': 'unaudited', 'graph_first_su3_integration_note': 'retained', 'native_gauge_closure_note': 'retained', 'staggered_dirac_realization_gate_note_2026-05-03': 'unaudited', 'observable_generator_additivity_from_cluster_decomposition_theorem_note_2026-05-10': 'unaudited', 'observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16': 'decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10'}
 
 ==============================================================================
 T8: note string contains honest-scope admission strings

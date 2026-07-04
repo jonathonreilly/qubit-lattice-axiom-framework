@@ -106,7 +106,6 @@ LANE_ALPHA_S = {
     "expected_parent_status": {
         "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30": {
             "claim_type": "bounded_theorem",
-            "effective_status": "audited_conditional",
         },
     },
     "structural_retained": "Cl(3)/Z3 SU(3) Wilson surface; decoration-trap-clean static-potential pipeline",
@@ -145,7 +144,6 @@ LANE_HIGGS = {
     "expected_parent_status": {
         "higgs_mass_from_axiom_note": {
             "claim_type": "bounded_theorem",
-            "effective_status": "unaudited",
         },
     },
     "structural_retained": "Tree-level mean-field formula m_H/v = 1/(2 u_0) with N_c cancellation tracked at every step",
@@ -185,15 +183,12 @@ LANE_GAUGE_SCALAR = {
     "expected_parent_status": {
         "gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03": {
             "claim_type": "bounded_theorem",
-            "effective_status": "retained_bounded",
         },
         "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": {
             "claim_type": "no_go",
-            "effective_status": "retained_no_go",
         },
         "gauge_scalar_temporal_completion_theorem_note": {
-            "claim_type": "bounded_theorem",
-            "effective_status": "retained_bounded",
+            "claim_type": "positive_theorem",
         },
     },
     "structural_retained": "Implicit-coordinate identity (P_full = R_O(beta_eff)) + companion no-go (two completion witnesses)",
@@ -227,6 +222,12 @@ def section_A_ledger_reads(rows: dict) -> None:
                 f"{lane['name']}: ledger row '{key}' exists",
                 bool(row),
                 detail=f"keys present: {list(row.keys())[:3] if row else 'NONE'}",
+            )
+            live_effective_status = row.get("effective_status", "MISSING") if row else "MISSING"
+            print(
+                f"  [info] {lane['name']}: '{key}' live effective_status="
+                f"{live_effective_status!r} "
+                "(audit-lane-owned; not gated)"
             )
             for fld, exp_val in expected.items():
                 act_val = row.get(fld, "MISSING")

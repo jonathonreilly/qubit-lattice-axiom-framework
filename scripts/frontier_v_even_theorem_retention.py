@@ -348,11 +348,12 @@ def part4_carrier_orbit_invariance_lemma_partial_proof() -> None:
 
     check(
         "Premise 3a: Theta_R^(0) prototype is explicitly bounded (not exact)",
-        "bounded" in prototype.lower() and "not exact" in prototype.lower(),
+        "bounded" in prototype.lower()
+        and "the exact tensor-valued route-2 support observable is still missing" in prototype.lower(),
     )
     check(
         "Premise 3b: Xi_R^(0) constructed support is explicitly bounded (not exact)",
-        "bounded" in constructed.lower() and "not exact" in constructed.lower(),
+        "bounded" in constructed.lower() and "not an exact" in constructed.lower(),
     )
 
     # Premise 4: SVD argument for swap-fixed even-response class.

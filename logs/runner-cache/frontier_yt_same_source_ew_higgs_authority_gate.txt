@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_same_source_ew_higgs_authority_gate.py
-runner_sha256: 91df4ba1c8afd4611251dbe16a32b29273f22557504b0caed61bf66eca6782fb
+runner_sha256: dbb1ea6178ac4b847fd9767fd8f0a43238a9c452b1855fdd7d781662b3a0eac9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.69
+elapsed_sec: 2.23
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -22,8 +22,9 @@ Part 1: anchors and audit status
 [PASS] note contains required section: Exact Obstruction Witness
 [PASS] note contains required section: What This Adds
 [PASS] note contains required section: Non-Claims
-[PASS] source-action support status is retained_bounded
-[PASS] EW Higgs gauge-mass theorem is retained
+[PASS] source-action support row is present in the audit ledger (presence only)
+[PASS] EW Higgs gauge-mass theorem row is present in the audit ledger (presence only)
+  [info] live effective statuses (audit-lane-owned; not gated): source_action='retained_bounded', ew_mass='retained_bounded'
 
 Part 2: source-action support identity
 [PASS] site 0 RN score is centered signed record: 7.568834448079542e-11

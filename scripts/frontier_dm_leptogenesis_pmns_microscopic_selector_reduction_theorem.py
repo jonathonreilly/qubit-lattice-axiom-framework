@@ -280,7 +280,7 @@ def part6_the_notes_record_the_same_last_mile_object() -> None:
     check(
         "The charged-source reduction note records dW_e^H as the exact Schur pushforward and remaining transport-facing target",
         "`dW_e^H` is the exact charged-sector Schur pushforward" in dwh_note
-        and "What is now the right target:" in dwh_note
+        and "the remaining unevaluated object is `dW_e^H` itself" in dwh_note
         and "`dW_e^H`" in dwh_note,
         cls="B",
     )

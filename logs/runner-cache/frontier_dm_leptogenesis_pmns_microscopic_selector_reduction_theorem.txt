@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_microscopic_selector_reduction_theorem.py
-runner_sha256: 1b75baf840718f74a4c2769d346f72ecee2300b1c456037893e6d6955240ccbc
+runner_sha256: 8ae6e98313083e9ff36ad634c5d851d0efa6954b5f1b347329bd7a7d6670fe4e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.53
+elapsed_sec: 0.72
 status: ok
 ----- stdout -----
 ========================================================================================

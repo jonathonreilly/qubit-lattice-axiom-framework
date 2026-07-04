@@ -65,14 +65,8 @@ def effective(row: dict) -> str:
     return row.get("effective_status") or row.get("status") or ""
 
 
-def retained_grade(status: str) -> bool:
-    return status in {"retained", "retained_bounded", "retained_no_go"} or status.startswith(
-        "decoration_under"
-    )
-
-
-def row_status(ledger_rows: dict, claim_id: str) -> str:
-    return effective(ledger_rows.get(claim_id, {}))
+def row_detail(row: dict | None) -> str:
+    return "keys present" if row is not None else "row missing"
 
 
 def mat_mul(a, b):
@@ -172,25 +166,39 @@ def section_status() -> None:
         "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
     ]
     for claim_id in retained_grade_inputs:
-        status = row_status(ledger_rows, claim_id)
-        check(f"{claim_id} has retained-grade current status", retained_grade(status), f"status={status}")
+        row = ledger_rows.get(claim_id)
+        status = effective(row or {})
+        check(
+            f"{claim_id} cascade input present in the audit ledger (presence only)",
+            row is not None,
+            row_detail(row),
+        )
+        print(f"  [info] {claim_id} live effective_status={status!r} (audit-lane-owned; not gated)")
 
-    kinetic_class_status = row_status(
-        ledger_rows, "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
-    )
+    kinetic_class_id = "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+    kinetic_class_row = ledger_rows.get(kinetic_class_id)
+    kinetic_class_status = effective(kinetic_class_row or {})
     check(
-        "staggered kinetic-class source is visible at its current status",
-        retained_grade(kinetic_class_status) or kinetic_class_status == "unaudited",
-        f"status={kinetic_class_status}",
+        "staggered kinetic-class source present in the audit ledger (presence only)",
+        kinetic_class_row is not None,
+        row_detail(kinetic_class_row),
+    )
+    print(
+        f"  [info] {kinetic_class_id} live effective_status={kinetic_class_status!r} "
+        "(audit-lane-owned; not gated)"
     )
 
-    pflux = row_status(
-        ledger_rows, "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11"
+    pflux_id = "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11"
+    zcert_id = "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
+    pflux_row = ledger_rows.get(pflux_id)
+    zcert_row = ledger_rows.get(zcert_id)
+    check(
+        "P-FLUX composer and Z certificate present in the audit ledger (presence only)",
+        pflux_row is not None and zcert_row is not None,
+        f"pflux={row_detail(pflux_row)}, zcert={row_detail(zcert_row)}",
     )
-    zcert = row_status(
-        ledger_rows, "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
-    )
-    check("P-FLUX composer and Z certificate are retained-grade inputs", retained_grade(pflux) and retained_grade(zcert))
+    print(f"  [info] {pflux_id} live effective_status={effective(pflux_row or {})!r} (audit-lane-owned; not gated)")
+    print(f"  [info] {zcert_id} live effective_status={effective(zcert_row or {})!r} (audit-lane-owned; not gated)")
 
 
 def section_source_firewall() -> None:

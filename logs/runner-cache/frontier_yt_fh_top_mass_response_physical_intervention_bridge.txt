@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_fh_top_mass_response_physical_intervention_bridge.py
-runner_sha256: 0c33855e6a9733360a8aa9532fc57cdb27c5da2124897585d3e12980e38fadc0
+runner_sha256: 4c882464fd1c1b0a064f5177a60702897036211c0c969db879966cc401849e10
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.83
+elapsed_sec: 0.56
 status: ok
 ----- stdout -----
 ============================================================================================
@@ -27,9 +27,10 @@ Part 1: anchors and authority boundary
 [PASS] note contains required section: What This Adds
 [PASS] note contains required section: What Remains Open
 [PASS] note contains required section: Non-Claims
-[PASS] YT source-action support is bounded, not full authority: retained_bounded
-[PASS] EW Higgs mass diagonalization is retained support: retained
-[PASS] source-action gate is not retained authority: unaudited
+[PASS] YT source-action support row is present in the audit ledger (presence only)
+[PASS] EW Higgs mass diagonalization row is present in the audit ledger (presence only)
+[PASS] source-action gate row is present in the audit ledger (presence only)
+  [info] live effective statuses (audit-lane-owned; not gated): {'physical_top_intervention': 'open_gate_candidate', 'yt_source_action_support': 'retained_bounded', 'ew_higgs_mass': 'retained_bounded', 'source_action_gate': 'unaudited'}
 [PASS] physical-intervention candidate remains open gate
 [PASS] operational bridge supplies RN action identity
 [PASS] Fisher unit packet supplies lambda=1 branch

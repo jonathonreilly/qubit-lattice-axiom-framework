@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_connected_source_selector_scalar_lift_no_go.py
-runner_sha256: 405430a791ce005c7d629a3d82c4ae3cd281f55845a6c10176b6777a19b264ab
+runner_sha256: 93f15584e18e8c400d46673972c630cb39ca99a076c3d1a4eacdf6d3892e7abb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_qubit_signed_linear_source_response_bridge_candidate.py
-runner_sha256: 5ff949b9e70e16b85eeb9f7727b1b71548efaa6b496d47cc0ac5dc9a3d82b28c
+runner_sha256: 0bad00a99cda6510d4afdb802d27abf1c8271be9b637c7cdadee6227f710e614
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 0.84
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -27,9 +27,10 @@ Part 1: anchors
 [PASS] note contains required section: Why This Is Not The Old Ward Trap
 [PASS] note contains required section: Current Status
 [PASS] note contains required section: Firewalls
-[PASS] source-action support is retained_bounded
-[PASS] LSP projective readout is retained_bounded
-[PASS] S6-democratic C6 support is retained_bounded
+[PASS] source-action support row is present in the audit ledger (presence only)
+[PASS] LSP projective readout row is present in the audit ledger (presence only)
+[PASS] S6-democratic C6 support row is present in the audit ledger (presence only)
+  [info] live effective statuses (audit-lane-owned; not gated): {'source_action': 'retained_bounded', 'lsp_projective': 'unaudited', 'democratic_c6': 'retained_bounded', 'top_underdetermination': 'unaudited'}
 [PASS] top-response underdetermination note is not used as retained dependency: unaudited
 [PASS] minimal axioms are qubit-on-Z3 framed
 [PASS] LSP note records K_P = P

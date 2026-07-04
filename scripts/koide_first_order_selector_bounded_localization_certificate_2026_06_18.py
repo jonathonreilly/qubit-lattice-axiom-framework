@@ -116,7 +116,7 @@ def textual_firewall_checks() -> None:
 
     required_markers = [
         "Status authority",
-        "2026-06-18 bounded-localization re-audit packet",
+        "2026-06-18 bounded-localization source packet",
         "Load-bearing theorem surface:",
         "Non-load-bearing open gates:",
         "bounded algebraic localization and route-pruning theorem",

@@ -167,7 +167,7 @@ def part2_registered_dependencies() -> None:
     )
     check(
         "Lane 5 no-go supplies the C1/C2/C3 closure taxonomy",
-        "(C1) absolute-scale" in cosmic
+        "(C1) scale route" in cosmic
         and "(C2) cosmic-history-ratio" in cosmic
         and "(C3) direct cosmic-`L`" in cosmic,
     )

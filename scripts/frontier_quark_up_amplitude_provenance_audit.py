@@ -205,7 +205,7 @@ def part1_exact_atoms() -> None:
         )
         and require_text(
             TENSOR_NOTE,
-            ("K_R(q) =", "delta_A1(r) = 1 / (6 (1 + sqrt(6) r))"),
+            ("K_R(q) :=", "delta_A1(r) = 1 / (6 (1 + sqrt(6) r))"),
         ),
         "checked atlas/support/tensor note stack",
     )

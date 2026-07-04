@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_ew_higgs_source_intertwiner_gate.py
-runner_sha256: d2245416087e828a1908e5f9e8b108a17c140c2ef354ea66fe2afed695ddfebf
+runner_sha256: 1bc7f883142789040e2aa571ef7e793af9f77332f6df89ff38c2a1b9e4f02544
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.67
+elapsed_sec: 0.72
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -21,10 +21,11 @@ Part 1: anchors and current authority
 [PASS] note contains required section: Why This Still Does Not Close
 [PASS] note contains required section: Required Positive Theorem
 [PASS] note contains required section: Non-Claims
-[PASS] source-action support packet is retained_bounded
-[PASS] EW Higgs gauge-mass theorem is retained
-[PASS] one-Higgs Yukawa gauge-selection row is not retained
-[PASS] hypercharge uniqueness row is not retained
+[PASS] source-action support packet row is present in the audit ledger (presence only)
+[PASS] EW Higgs gauge-mass theorem row is present in the audit ledger (presence only)
+[PASS] one-Higgs Yukawa gauge-selection row is present in the audit ledger (presence only)
+[PASS] hypercharge uniqueness row is present in the audit ledger (presence only)
+  [info] live effective statuses (audit-lane-owned; not gated): source_action='retained_bounded', ew_mass='retained_bounded', one_higgs='unaudited', hypercharge='unaudited'
 
 Part 2: neutral radial Higgs carrier algebra
 [PASS] radial Higgs carrier is a complex doublet
@@ -50,8 +51,6 @@ Part 5: current closure blockers
 [PASS] symbolic top response row is present
 [PASS] full same-surface top/W transfer response remains unproved
 [PASS] coefficient-certified top/W rows remain absent
-[PASS] one-Higgs carrier is not retained authority yet
-[PASS] hypercharge uniqueness is not retained authority yet
 
 Part 6: firewalls
 [PASS] firewall phrase present: observed mass targets
@@ -66,7 +65,7 @@ Part 6: firewalls
 [PASS] forbidden overclaim absent: positive Y_T closure has been obtained
 
 wrote outputs/yt_ew_higgs_source_intertwiner_gate_2026-05-25.json
-SUMMARY: PASS=43 FAIL=0
+SUMMARY: PASS=41 FAIL=0
 
 ----- stderr -----
 

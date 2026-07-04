@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_direct_descendant_microscopic_value_frontier_theorem_2026_04_18.py
-runner_sha256: 1e39ab9c8bf3921411149e0cf326b8f7ff1263983ef631b154261f1610e119da
+runner_sha256: c82eb069294b851940165ccaa0457677e829872948d5e7ea43ab2e3ee10a1cec
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.77
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -27,9 +27,9 @@ PART 2: THE LOCAL SCHUR NOTE IS CONDITIONAL ON SUPPLIED D AND E_e
 ========================================================================================
 PART 3: ONCE L_e IS SUPPLIED, ALL DOWNSTREAM DATA ARE ALREADY ALGORITHMIC
 ========================================================================================
-  [PASS] Once L_e is supplied, the 9 Hermitian responses reconstruct H_e exactly  (err=2.37e-16)
+  [PASS] Once L_e is supplied, the 9 Hermitian responses reconstruct H_e exactly  (err=2.23e-16)
   [PASS] Once H_e is supplied, the N_e packet is fixed algorithmically  (col sums=[1. 1. 1.])
-  [PASS] The downstream transport readout is then fixed algorithmically as well  (eta_vals=[0.82075559 0.9895127  0.92061708])
+  [PASS] The downstream transport readout is then fixed algorithmically as well  (eta_vals=[0.820756 0.989513 0.920617])
 
 ========================================================================================
 PART 4: AMBIENT COMPLETION FREEDOM DOES NOT CHANGE THE LOCAL FRONTIER

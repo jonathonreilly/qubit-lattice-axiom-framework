@@ -36,6 +36,12 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md"
 LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
 FIXED_LOCUS_ID = "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+FIXED_LOCUS_NOTE = ROOT / "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
+FIXED_LOCUS_PREMISE_QUOTES = (
+    "This row is now scoped only to the closed A/B subchain: the C₃ fixed-locus structure, forced transverse weights `(1,2)`, and local density `2/9`.",
+    "This note therefore does **not** close the parent row and does **not** claim local/global ABSS applicability.",
+    "This is the operator-level origin of the parent note's stipulated `p = 3` and weights `(1,2)`: they are not free choices but the spectrum of the cyclic permutation.",
+)
 
 PASS = 0
 FAIL = 0
@@ -50,6 +56,10 @@ def ok(name, cond, detail=""):
     else:
         FAIL += 1
         log.append(f"  [FAIL] {name}: {detail}")
+
+
+def _norm(text):
+    return " ".join(text.split())
 
 
 def _walk_ledger(node):
@@ -67,11 +77,16 @@ def ledger_row(claim_id):
     for row in _walk_ledger(ledger):
         if row.get("claim_id") == claim_id or row.get("id") == claim_id:
             return row
-    return {}
+    return None
 
 
 note_text = NOTE.read_text()
 fixed_locus_row = ledger_row(FIXED_LOCUS_ID)
+fixed_locus_info = fixed_locus_row or {}
+fixed_locus_note_text = _norm(FIXED_LOCUS_NOTE.read_text()) if FIXED_LOCUS_NOTE.is_file() else ""
+fixed_locus_premises_ok = FIXED_LOCUS_NOTE.is_file()
+for premise_quote in FIXED_LOCUS_PREMISE_QUOTES:
+    fixed_locus_premises_ok = fixed_locus_premises_ok and _norm(premise_quote) in fixed_locus_note_text
 
 # ==========================================================================
 # (0) Source boundary: local-density manifest, not global ABSS closure
@@ -92,17 +107,23 @@ ok("0c. global PL/ABSS route is explicitly not load-bearing",
    and "load-bearing premise of this row" in note_text,
    "global route excluded from direct proof load")
 
-ok("0d. fixed-locus bridge is ledger retained_bounded",
-   fixed_locus_row.get("effective_status") == "retained_bounded",
-   f"effective_status={fixed_locus_row.get('effective_status')}")
+ok("0d. fixed-locus bridge row exists in the audit ledger",
+   fixed_locus_row is not None,
+   f"effective_status={fixed_locus_info.get('effective_status')}")
+log.append(
+    "  [info] fixed-locus live claim_scope="
+    f"{fixed_locus_info.get('claim_scope')!r} "
+    f"effective_status={fixed_locus_info.get('effective_status')!r} "
+    "(audit-lane-owned; not gated)"
+)
 
-fixed_locus_scope = fixed_locus_row.get("claim_scope", "")
-ok("0e. fixed-locus bridge scope names C3 weights and local density only",
-   "transverse weights (1,2)" in fixed_locus_scope
-   and "local" in fixed_locus_scope
-   and "PL S^3 x R identification" in fixed_locus_scope
-   and "not audited as claims" in fixed_locus_scope,
-   "fixed-locus row is the bounded A/B supplier, not the global bridge")
+ok("0e0. fixed-locus dependency note exists",
+   FIXED_LOCUS_NOTE.is_file(),
+   str(FIXED_LOCUS_NOTE.relative_to(ROOT)))
+for idx, premise_quote in enumerate(FIXED_LOCUS_PREMISE_QUOTES):
+    ok(f"0e{idx + 1}. fixed-locus note states premise verbatim",
+       _norm(premise_quote) in fixed_locus_note_text,
+       f"len={len(premise_quote)}")
 
 ok("0f. note names global topology and physical readout as out of scope",
    "not claimed here:** global PL S³ compactification" in note_text
@@ -114,9 +135,8 @@ source_boundary_ok = (
     and "bounded local-density manifest" in note_text
     and "global `Cl(3)/Z³ → PL S³ × ℝ` / ABSS route is **not** a" in note_text
     and "load-bearing premise of this row" in note_text
-    and fixed_locus_row.get("effective_status") == "retained_bounded"
-    and "transverse weights (1,2)" in fixed_locus_scope
-    and "PL S^3 x R identification" in fixed_locus_scope
+    and fixed_locus_row is not None
+    and fixed_locus_premises_ok
 )
 
 

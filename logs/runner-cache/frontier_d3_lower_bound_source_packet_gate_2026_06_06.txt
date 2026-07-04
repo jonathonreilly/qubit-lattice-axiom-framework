@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py
-runner_sha256: 09669be4f32029e11be4d439ae33372ba96dbdafa18a6a43404382eea085784b
+runner_sha256: 34c37f38df2b3d75df81c9452ec06661d3d16df8cdfa4fc771ce67e411ca7d90
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.18
@@ -18,10 +18,19 @@ A. ledger and active-queue status
 [PASS] ledger row exists: dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25
 [PASS] ledger row exists: dimension_selection_lower_bound_bridge_v2_2026-05-20
 [PASS] ledger row exists: dimension_selection_note
-[PASS] finite-k sign bridge is audited clean retained_bounded -- audit=audited_clean effective=retained_bounded
-[PASS] lower-bound V2 sign row is audited clean retained_bounded -- audit=audited_clean effective=retained_bounded
-[PASS] parent row remains conditional only on runner artifact issue -- runner_artifact_issue: include scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py, scripts/frontier_dimension_selection.py, logs/runner-cache/frontier_dimension_selection.txt, and the source-packet verifier/cache so the finite-k replay and displayed beta/I_3 table can be checked from code.
-[PASS] parent row does not claim unique d=3 or baseline rewrite -- Finite-runner lower-bound support only: d=1,2 fail and d=3,4,5 pass the stated runner criteria under the displayed finite propagator and potential-family surface, with no unique-d=3 or baseline-rewrite claim.
+  [info] finite-k sign bridge: live claim_scope='For the specified finite-k runner geometry k=6.0, L_x=40, L_y=60, source at y_mid, and mass offset +7, the exact normalized centroid derivative at M=0 has signs negative for d=1,2 and positive for d=3,4,5, with the M=0.005 probe showing the same sign pattern.' effective_status='retained_bounded' audit_status='audited_clean' (audit-lane-owned; not gated)
+[PASS] finite-k sign bridge dependency note exists -- docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md
+[PASS] finite-k sign bridge note states premise verbatim: This note takes the second route.  It does **not** use Ferma... -- len=257
+[PASS] finite-k sign bridge note states premise verbatim: This supplies the finite-k sign bridge that the V2 lower-bou... -- len=110
+  [info] lower-bound V2 sign bridge: live claim_scope='Finite-k sign bridge for scripts/frontier_dimension_selection.py at k=6.0, L_x=40, L_y=60, source y_mid, mass offset +7, analytic f_d family, d in {1,2,3,4,5}, covering dC/dM at M=0 and the parent finite probe M=0.005.' effective_status='retained_bounded' audit_status='audited_clean' (audit-lane-owned; not gated)
+[PASS] lower-bound V2 sign bridge dependency note exists -- docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md
+[PASS] lower-bound V2 sign bridge note states premise verbatim: is **positive (attractive)** for `d = 3, 4, 5` and **negativ... -- len=163
+[PASS] lower-bound V2 sign bridge note states premise verbatim: The derivation admits the choice to use the runner's analyti... -- len=215
+  [info] parent dimension-selection row: live claim_scope='Finite-runner lower-bound support only: for the specified layer-normalized propagator, analytic d-dimensional potential family, k=6.0 baseline geometry, and d=1..5 runner surface, d=1,2 fail and d=3,4,5 pass the stated attraction/beta/I3 lower-bound criteria.' effective_status='retained_bounded' audit_status='audited_clean' (audit-lane-owned; not gated)
+[PASS] parent dimension-selection row dependency note exists -- docs/DIMENSION_SELECTION_NOTE.md
+[PASS] parent dimension-selection row note states premise verbatim: Only the first statement is binding in this row. The second ... -- len=152
+[PASS] parent dimension-selection row note states premise verbatim: This is finite-runner lower-bound support only, not a unique... -- len=139
+[PASS] parent dimension-selection row note states premise verbatim: The current audit blocker is a packet/runner-artifact gap: t... -- len=298
 B. source-packet artifact issue
 [PASS] required packet path exists: scripts/frontier_dimension_selection_lower_bound_parent_repair.py
 [PASS] parent note links packet path: scripts/frontier_dimension_selection_lower_bound_parent_repair.py
@@ -75,7 +84,7 @@ C. supporting note boundaries
 [PASS] forbidden overclaim absent: repo-wide framework-baseline rewrite is authorized
 [PASS] forbidden overclaim absent: self-consistency uniquely selects d = 3
 
-SCORECARD: PASS=58 FAIL=0
+SCORECARD: PASS=64 FAIL=0
 VERDICT: exact support that the current-main source packet exposes the artifacts named by the parent D3 lower-bound runner-artifact issue. This does not retag the audit ledger or prove full D=3 dimension selection.
 
 ----- stderr -----

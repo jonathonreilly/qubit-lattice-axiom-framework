@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_lsp_source_scale_boundary_and_strict_response_contract.py
-runner_sha256: 30204647d114dbaefe2355382b731bbded3963f512463efd898f5b99b0ab3534
+runner_sha256: 58ad8bc77a7604fea7da64ca835e2f18ade9e9c998b277c51814f43c6b01100a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.67
+elapsed_sec: 0.57
 status: ok
 ----- stdout -----
 ============================================================================================
@@ -31,9 +31,10 @@ Part 1: anchors and status boundary
 [PASS] source/action support remains support only
 [PASS] FH gate supplies response ratio
 [PASS] source-unit no-go records lambda family
-[PASS] LSP source row is retained_bounded support
-[PASS] source/action row is retained_bounded support
-[PASS] source/action gate is not retained authority
+[PASS] LSP source row is present in the audit ledger (presence only)
+[PASS] source/action row is present in the audit ledger (presence only)
+[PASS] source/action gate row is present in the audit ledger (presence only)
+  [info] live effective statuses (audit-lane-owned; not gated): {'lsp_source': 'unaudited', 'source_action': 'retained_bounded', 'source_action_gate': 'unaudited'}
 
 Part 2: LSP projective scale blindness
 [PASS] P_plus is a projection

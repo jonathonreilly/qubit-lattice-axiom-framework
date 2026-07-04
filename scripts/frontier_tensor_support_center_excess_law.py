@@ -45,7 +45,7 @@ R_TEST = [0.25, 0.5, 0.75, 1.0, 1.5, 2.0]
 same = load_frontier("same_source_metric", "frontier_same_source_metric_ansatz_scan.py")
 finite_rank = load_frontier("finite_rank_metric", "frontier_finite_rank_gravity_residual.py")
 two = load_frontier("tensor_two_channel", "frontier_tensor_boundary_drive_two_channel.py")
-shell = load_frontier("one_parameter_shell", "frontier_one_parameter_reduced_shell_law.py")
+shell = load_frontier("one_parameter_shell", "frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py")
 
 
 @dataclass

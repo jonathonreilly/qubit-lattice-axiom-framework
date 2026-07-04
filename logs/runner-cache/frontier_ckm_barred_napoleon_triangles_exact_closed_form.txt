@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_barred_napoleon_triangles_exact_closed_form.py
-runner_sha256: e9f9006ed78c138fb9e465cd6330a2625c715201b1fca121ae36e67053c39913
+runner_sha256: e6a5cd7477ff6a730edea500219a260fe4e90797fbcfd3e6678989bb16d42dc4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.94
+elapsed_sec: 0.77
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -17,19 +17,22 @@ Ground-up status verification of each cited authority
   RETAINED-TIER (load-bearing for closure):
 
     [CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md]
-      Status (extracted): 'proposed_retained NLO CKM-structure corollary on the proposed_promoted atlas/axiom'
-      Tier classification: retained
-  [PASS] Retained-tier verified: CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md
+      Status (extracted): ''
+      Tier classification: unknown
+  [PASS] Note content verified (keywords present): CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md
+      [info] live effective_status='unknown' (audit-lane-owned; not gated)
 
     [CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md]
-      Status (extracted): 'proposed_retained structural-identity subtheorem of the proposed_promoted CKM'
-      Tier classification: retained
-  [PASS] Retained-tier verified: CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md
+      Status (extracted): ''
+      Tier classification: unknown
+  [PASS] Note content verified (keywords present): CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md
+      [info] live effective_status='unknown' (audit-lane-owned; not gated)
 
     [CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md]
-      Status (extracted): 'proposed_retained standalone structural-identity theorem on `main`.'
-      Tier classification: retained
-  [PASS] Retained-tier verified: CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md
+      Status (extracted): ''
+      Tier classification: unknown
+  [PASS] Note content verified (keywords present): CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md
+      [info] live effective_status='unknown' (audit-lane-owned; not gated)
 
 
 ----------------------------------------------------------------------------------------
@@ -168,7 +171,7 @@ Package-surface wiring
   [PASS] package surface wired: docs/publication/ci3_z3/EXTERNAL_REVIEWER_GUIDE.md  (required tokens present)
   [PASS] package surface wired: docs/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md  (required tokens present)
   [PASS] package surface wired: docs/publication/ci3_z3/SCIENCE_MAP.md  (required tokens present)
-  [PASS] package surface wired: docs/publication/ci3_z3/README.md  (required tokens present)
+  [PASS] package surface wired: docs/publication/ci3_z3/CLAIMS_TABLE.md  (required tokens present)
   [PASS] package surface wired: docs/publication/ci3_z3/REPRODUCE.md  (required tokens present)
 
 ----------------------------------------------------------------------------------------

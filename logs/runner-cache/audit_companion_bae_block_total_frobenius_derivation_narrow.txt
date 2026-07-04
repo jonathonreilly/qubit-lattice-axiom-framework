@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_bae_block_total_frobenius_derivation_narrow.py
-runner_sha256: 54fd7eea05252a8fb611b777cad5523becea89b52b15ccfa595827cb91ddc164
+runner_sha256: fb2de3842d4b496c4868dc9e5e9b6d8db262c5f62ede486e7dd224901c4b23d1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.70
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 ========================================================================================

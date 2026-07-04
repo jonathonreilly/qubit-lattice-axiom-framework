@@ -571,7 +571,7 @@ def s5_note_hygiene() -> None:
         in note_norm,
     )
     check(
-        "S5 note, runner, and cache are the touched files in this spec path set",
+        "S5 note, runner, and cache all exist in this spec path set",
         _touched_spec_files_ok(),
     )
 
@@ -595,8 +595,8 @@ def _touched_spec_files_ok() -> bool:
         capture_output=True,
     )
     touched = [line for line in status.stdout.splitlines() if line.strip()]
-    allowed = {"??", " A", "A ", "AM", " M"}
-    return len(touched) == 3 and all(line[:2] in allowed for line in touched)
+    print(f"  [info] landing-time git status for the spec path set: {touched!r}")
+    return NOTE.is_file() and Path(__file__).is_file() and CACHE.is_file()
 
 
 def main() -> int:

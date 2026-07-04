@@ -204,7 +204,7 @@ def part5_gate_inventory_specifics() -> None:
     open_number_flat = " ".join(open_number.split())
     c3_flat = " ".join(c3.split())
     c1_open = (
-        "metric-compatible primitive Clifford/CAR coframe response" in c1
+        "metric-compatible Clifford/CAR coframe response" in c1
         and "P_A H_cell" in c1
         and "does NOT close the Planck lane" in c1
     )
@@ -223,7 +223,7 @@ def part5_gate_inventory_specifics() -> None:
     )
 
     check(
-        "C1 gate is the primitive Clifford/CAR coframe response",
+        "C1 gate is the Clifford/CAR coframe response",
         c1_open,
     )
     check(

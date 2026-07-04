@@ -15,7 +15,7 @@ import mpmath as mp
 import numpy as np
 from scipy.ndimage import map_coordinates
 
-import frontier_one_parameter_reduced_shell_law as shell
+import frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17 as shell
 import frontier_same_source_metric_ansatz_scan as same
 import frontier_tensor_support_center_excess_law as center
 

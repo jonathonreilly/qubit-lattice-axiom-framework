@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/koide_first_order_selector_bounded_localization_certificate_2026_06_18.py
-runner_sha256: 484a5c6ddc1cab525361e553ad5babc4d49faa21c230d1ba580331a3c3e46d3b
+runner_sha256: 5a77035018c83ab57b3ac0b179aba6ee5d93472cd8682c220bbb1939199a662e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.10
+elapsed_sec: 0.51
 status: ok
 ----- stdout -----
 KOIDE FIRST-ORDER SELECTOR BOUNDED-LOCALIZATION CERTIFICATE
@@ -32,7 +32,7 @@ PASS: dependency/certificate exists: KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NO
 PASS: dependency/certificate exists: KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md
 PASS: dependency/certificate exists: STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md
 PASS: required firewall marker present: Status authority
-PASS: required firewall marker present: 2026-06-18 bounded-localization re-audit packet
+PASS: required firewall marker present: 2026-06-18 bounded-localization source packet
 PASS: required firewall marker present: Load-bearing theorem surface:
 PASS: required firewall marker present: Non-load-bearing open gates:
 PASS: required firewall marker present: bounded algebraic localization and route-pruning theorem

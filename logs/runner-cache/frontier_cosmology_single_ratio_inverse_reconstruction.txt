@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py
-runner_sha256: ddd96589d48c9b7c2c6d44afe4fc7be3aa66bbe522be4576de2f2383786b3511
+runner_sha256: ecc487a791b9824230e379a4b03811e445ce2074f41bbaa122829f82f7d69ca8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.00
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -14,14 +14,14 @@ See docs/COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.m
 ----------------------------------------------------------------------------------------
 Authority status audit
 ----------------------------------------------------------------------------------------
-  COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md: 'proposed_retained/admitted-surface structural identity theorem on `main`.'
-  [PASS] authority status carries retained/admitted, structural: COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md
-  OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md: 'proposed_retained structural-identity theorem on `main`-compatible surface. Reduces the present-day `Ω_Λ` to an exact function of the proposed_retained de Sitter Hubble scale `H_inf` and the observationally-pinned current Hubble rate `H_0`, which then under flat FRW collapses to the matter-content bridge `Ω_m`.'
-  [PASS] authority status carries retained, structural: OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md
-  DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md: '**proposed_retained structural corollary** on `main`, on the proposed_retained'
-  [PASS] authority status carries retained, structural: DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md
-  COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md: '**proposed_retained structural identity theorem** on `main`. Separates the'
-  [PASS] authority status carries retained, structural: COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md
+  COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md: 'proposed_retained/admitted-surface structural identity theorem on `main`.' (audit-lane owned; required tokens ('retained/admitted', 'structural') print informationally)
+  [PASS] authority note is present: COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md
+  OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md: 'proposed_retained structural-identity theorem on `main`-compatible surface. Reduces the present-day `Ω_Λ` to an exact function of the proposed_retained de Sitter Hubble scale `H_inf` and the observationally-pinned current Hubble rate `H_0`, which then under flat FRW collapses to the matter-content bridge `Ω_m`.' (audit-lane owned; required tokens ('retained', 'structural') print informationally)
+  [PASS] authority note is present: OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md
+  DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md: '**proposed_retained structural corollary** on `main`, on the proposed_retained' (audit-lane owned; required tokens ('retained', 'structural') print informationally)
+  [PASS] authority note is present: DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md
+  COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md: 'structural identity theorem; current ledger `effective_status:' (audit-lane owned; required tokens ('retained', 'structural') print informationally)
+  [PASS] authority note is present: COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md
 
 ----------------------------------------------------------------------------------------
 Scope boundary audit
@@ -77,15 +77,13 @@ Package wiring
   [PASS] package surface wired: docs/publication/ci3_z3/RESULTS_INDEX.md
   docs/publication/ci3_z3/SCIENCE_MAP.md: OK
   [PASS] package surface wired: docs/publication/ci3_z3/SCIENCE_MAP.md
-  docs/publication/ci3_z3/README.md: OK
-  [PASS] package surface wired: docs/publication/ci3_z3/README.md
   docs/publication/ci3_z3/REPRODUCE.md: OK
   [PASS] package surface wired: docs/publication/ci3_z3/REPRODUCE.md
   docs/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md: OK
   [PASS] package surface wired: docs/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md
 
 ========================================================================================
-TOTAL: PASS=30, FAIL=0
+TOTAL: PASS=29, FAIL=0
 ========================================================================================
 
 ----- stderr -----

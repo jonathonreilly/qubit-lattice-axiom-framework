@@ -7,7 +7,7 @@ docs/KOIDE_P_ONE_CLOCK_3PLUS1_TRANSPORT_REDUCTION_NOTE_2026-04-20.md
 
 This runner verifies the load-bearing computational pieces of the reduction:
 
-  (A) the retained anomaly-forced-time theorem explicitly fixes one-clock 3+1,
+  (A) the conditional anomaly-cancellation bridge fixes one-clock 3+1 given its declared premises,
   (B) delta(m) is the live coordinate on the physical first branch,
   (C) delta = 2/d^2 selects a unique interior first-branch point m_*,
   (D) the intrinsic local selected-line packet stays fixed while delta varies.
@@ -163,21 +163,21 @@ print("Koide P one-clock 3+1 transport reduction")
 print("=" * 72)
 
 
-print("\n(A) Retained anomaly-forced-time ambient")
+print("\n(A) Conditional anomaly-cancellation bridge ambient")
 print("-" * 72)
 
 anomaly_doc = read_text(DOCS / "ANOMALY_FORCES_TIME_THEOREM.md")
 check(
-    "(A1) The retained theorem fixes d_t = 1 uniquely",
-    "d_t = 1 uniquely" in anomaly_doc,
+    "(A1) the conditional bridge fixes d_t = 1 (given its declared premises)",
+    "dimension count is exactly d_t = 1 and the spacetime signature is (3,1)." in anomaly_doc,
 )
 check(
-    "(A2) The retained theorem fixes spacetime as 3+1 dimensional",
-    "spacetime is 3+1 dimensional" in anomaly_doc,
+    "(A2) the conditional bridge declares conditional 3+1 scope",
+    "**Claim scope:** conditional 3+1 derivation." in anomaly_doc,
 )
 check(
-    "(A3) The retained theorem uses single-clock codimension-1 evolution",
-    "single-clock codimension-1 evolution excludes d_t > 1" in anomaly_doc,
+    "(A3) the conditional bridge supplies the local d_t cap through B-AXIS",
+    "This gives the local conditional cap `d_t <= 1` used here." in anomaly_doc,
 )
 
 

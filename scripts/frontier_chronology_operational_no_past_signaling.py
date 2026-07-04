@@ -105,7 +105,7 @@ def main() -> int:
         "final-boundary",
         "causal cycle",
         "no manuscript promotion or lane closure",
-        "no derivation of the retained single-clock surface itself",
+        "no derivation of the cited single-clock surface itself",
     ]
     for phrase in required_boundaries:
         check(f"note states boundary: {phrase}", phrase in note_text)

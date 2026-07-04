@@ -99,10 +99,12 @@ for step in ["**S1**", "**S2**", "**S3**", "**S4**", "**S5**", "**S6**", "**S7**
 for t in ["**(T1) ", "**(T2) ", "**(T3) ", "**(T4) ", "**(T5) ", "**(T6) "]:
     check(f"theorem label: {t.strip()}", t in note_text)
 
-# Sister cluster cross-references (cycles 5, 9, 11)
+# Sister cluster cross-references (cycles 5, 9, 11).
+# Cite-inventory trimmed to the note's currently-landed citation set:
+#   - M_STRETCH_ATTEMPT_NOTE_2026-05-02: source note deleted from disk.
+#   - IMPLICIT_FLOW_THEOREM_NOTE_2026-05-03: superseded by the NO_GO variant
+#     (still cited immediately below); the note no longer cites the implicit-flow form.
 for cite in [
-    "YT_EW_MATCHING_RULE_M_STRETCH_ATTEMPT_NOTE_2026-05-02",
-    "GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_IMPLICIT_FLOW_THEOREM_NOTE_2026-05-03",
     "GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03",
     "LATTICE_PHYSICAL_MATCHING_CLUSTER_OBSTRUCTION_NOTE_2026-05-02",
     "BRIDGE_LANES_PROMOTION_PROPOSAL_NOTE_2026-05-10_lanes",

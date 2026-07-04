@@ -1,5 +1,7 @@
 # Z_3 Parity-Split Theorem — Microscopic Holonomy Selector Attempt
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-17
 **Status:** OBSTRUCTION + NARROWER-GAP + CROSS-CHECK-CANDIDATE
 **Script:** `scripts/frontier_dm_neutrino_source_surface_z3_parity_split_theorem.py`

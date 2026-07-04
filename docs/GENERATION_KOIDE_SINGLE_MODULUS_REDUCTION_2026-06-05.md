@@ -1,8 +1,8 @@
 # Generation Koide data reduces to a single derived modulus per sector
 
 **Date:** 2026-06-05
-**Type:** derivation
-**Claim type:** theorem (conditional on the supplied generation carrier and
+**Type:** bounded_theorem — derivation
+**Claim type:** bounded_theorem — theorem (conditional on the supplied generation carrier and
 readout context).
 **Status authority:** independent audit lane only. This note does not set or
 predict the ledger outcome.

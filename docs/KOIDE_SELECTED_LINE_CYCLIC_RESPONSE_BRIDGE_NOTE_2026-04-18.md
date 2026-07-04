@@ -1,5 +1,7 @@
 # Koide Selected-Line Cyclic-Response Bridge
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-18  
 **Status:** exact bridge theorem on the actual-route stack. Once
 the Brannen-Zenczykowski phase offset is closed on the actual Berry route, the previously separate

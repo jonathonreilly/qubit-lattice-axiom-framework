@@ -1,5 +1,7 @@
 # Universal QG Canonical Smooth Gravitational Weak/Measure Equivalence
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15  
 **Role:** direct-universal quantum-gravity / canonical smooth gravitational
 weak-form and Gaussian-measure theorem

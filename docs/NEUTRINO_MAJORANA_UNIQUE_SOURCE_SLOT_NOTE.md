@@ -1,5 +1,7 @@
 # Majorana Unique Source Slot Theorem
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15
 **Status:** exact local-form theorem on the current neutrino lane; not yet an
 axiom-forced existence theorem

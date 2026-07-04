@@ -1,5 +1,7 @@
 # Majorana Partition / Projective Transplant Obstruction
 
+**Claim type:** no_go
+
 **Date:** 2026-04-15
 **Status:** exact frontier boundary on the universal partition/projective
 transplant route

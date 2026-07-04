@@ -1,5 +1,7 @@
 # Majorana Nambu Radial Observable
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15
 **Status:** exact local bosonic-observable theorem on the admitted Nambu family
 **Atlas placement:** canonical toolkit on `main` at

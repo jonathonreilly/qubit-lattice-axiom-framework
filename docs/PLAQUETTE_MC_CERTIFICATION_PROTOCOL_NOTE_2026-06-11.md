@@ -1,7 +1,7 @@
 # Plaquette MC Certification Protocol — the Measurement-Fallback Design: Exact Precision Targets for a 5-Decimal `<P>` Certificate at `beta = 6` (the Single Highest-Stakes Number in the Lane), a Smoke-Calibrated Statistics Budget, PRE-REGISTERED Decision Bands That Can FALSIFY the Bounded Match, and the Stage-2 Staircase Flat-Cost Measurement Design (Design-Only)
 
 **Date:** 2026-06-11 (block13 of the DELTA0/hierarchy measurement wave)
-**Claim type:** meta/protocol
+**Claim type:** meta — meta/protocol
 **Claim boundary (declared up front):** exactly three grades of content,
 none of which certifies a plaquette value or changes any status:
 (M1, `bounded_theorem`-grade) the precision-target arithmetic is EXACT

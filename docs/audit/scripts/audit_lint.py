@@ -331,6 +331,46 @@ def main() -> int:
             if dep_id not in rows:
                 errors.append(f"tier_a_admissions.json convention {dep_id!r} has no ledger row")
 
+    # Front-door axiom-pointer currency. The ledger side of an axiom change
+    # is guarded by the premise hash; the narrative front door is not in the
+    # citation graph, so without this check it silently drifts (the 2026-06-29
+    # reset left the root README on the superseded memo for five days). Every
+    # surface listed in data/front_door_surfaces.txt must cite the registry's
+    # current minimal_axioms path and must not cite a superseded alias.
+    # Warning-level: the pipeline must keep running on branches where the
+    # front door is knowingly mid-repair; escalate per-surface only once the
+    # front-door chain is clean.
+    front_door_surfaces = _load_pattern_file("front_door_surfaces.txt")
+    axiom_registry_path = DATA_DIR / "axiom_premise_nodes.json"
+    if front_door_surfaces and axiom_registry_path.exists():
+        registry = load_json(axiom_registry_path)
+        minimal = (registry.get("nodes") or {}).get("minimal_axioms") or {}
+        current_path = minimal.get("current_path")
+        superseded = [
+            p for p in (minimal.get("aliased_paths") or []) if p != current_path
+        ]
+        for surface in front_door_surfaces:
+            spath = REPO_ROOT / surface
+            if not spath.exists():
+                add_warning(
+                    "front_door_axiom_pointer",
+                    f"{surface}: listed in front_door_surfaces.txt but missing on disk",
+                )
+                continue
+            text = spath.read_text(encoding="utf-8", errors="replace")
+            if current_path and current_path not in text:
+                add_warning(
+                    "front_door_axiom_pointer",
+                    f"{surface}: does not cite the current axiom memo {current_path}",
+                )
+            for old in superseded:
+                if old in text:
+                    add_warning(
+                        "front_door_axiom_pointer",
+                        f"{surface}: cites superseded axiom memo {old} "
+                        f"(current: {current_path})",
+                    )
+
     # Top-level stale timestamp keys cause PR drift-gate noise and were
     # removed by f383ded3d. compute_effective_status now drops them
     # defensively on every run; this lint check guards against regression.

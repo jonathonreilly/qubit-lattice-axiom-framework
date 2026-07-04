@@ -1,5 +1,7 @@
 # Planck-Scale Lane Status Note
 
+**Claim type:** meta
+
 **Date:** 2026-04-23  
 **Purpose:** canonical package note for the absolute lattice-scale posture on
 `main`.

@@ -1,7 +1,7 @@
 # S3 Endpoint Fiber-Uniform Lift Support
 
 **Date:** 2026-06-27
-**Type:** exact support theorem / conditional finite classification
+**Type:** bounded_theorem — exact support theorem / conditional finite classification
 **Claim-strength label:** exact support theorem on a stated quotient-lift
 premise; no current endpoint closure
 **Primary runner:**

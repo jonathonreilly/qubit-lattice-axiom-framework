@@ -1,5 +1,7 @@
 # DM Wilson-to-`dW_e^H` Local Path-Algebra Minimal Certificate
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-18
 **Status:** exact current-stack theorem packaging the whole structured
 Wilson-to-`dW_e^H` route as one minimal local certificate upstream of the DM

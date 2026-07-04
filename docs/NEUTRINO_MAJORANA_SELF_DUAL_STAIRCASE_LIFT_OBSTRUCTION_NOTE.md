@@ -1,5 +1,7 @@
 # Majorana Self-Dual Staircase-Lift Obstruction Theorem
 
+**Claim type:** no_go
+
 **Date:** 2026-04-15
 **Status:** exact frontier boundary after the local self-dual selector theorem
 **Atlas placement:** canonical toolkit on `main` at

@@ -1,5 +1,7 @@
 # DM Neutrino Source-Surface Intrinsic Slot Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-16  
 **Status:** exact mainline blocker-reduction theorem on the live source-oriented sheet  
 **Script:** `scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py`

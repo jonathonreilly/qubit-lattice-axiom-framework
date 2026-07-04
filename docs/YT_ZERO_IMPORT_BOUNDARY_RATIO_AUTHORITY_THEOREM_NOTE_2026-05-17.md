@@ -1,5 +1,7 @@
 # Zero-Import Boundary-Ratio Authority Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-05-17
 **Status:** positive_theorem — strengthens
 [`docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md`](YT_ZERO_IMPORT_AUTHORITY_NOTE.md)

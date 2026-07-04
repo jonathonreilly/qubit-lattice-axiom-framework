@@ -1,5 +1,7 @@
 # Majorana Residual-Sharing Split Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15
 **Status:** exact positive split theorem on the minimal symmetric
 residual-sharing lift

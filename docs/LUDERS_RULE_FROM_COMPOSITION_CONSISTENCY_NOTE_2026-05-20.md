@@ -5,7 +5,7 @@ row with the narrower finite PEP bridge, which supplies compression
 algebra but not measurement probability semantics; audit-target split
 2026-06-08: separate the exact finite projective/instrument support from
 the still-open measurement probability bridge).
-**Type:** conditional-support assembly over exact finite subclaims
+**Type:** bounded_theorem — conditional-support assembly over exact finite subclaims
 **Status:** source-side conditional proposal — independent audit lane owns
 the verdict
 **Actual current-surface status:** conditional-support. This parent row is

@@ -1,5 +1,7 @@
 # DM Wilson-to-`dW_e^H` Structured Model Realization Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-18
 **Status:** exact constructive theorem showing the structured Wilson response
 class is positively realizable for arbitrary Hermitian target `H_e`, even

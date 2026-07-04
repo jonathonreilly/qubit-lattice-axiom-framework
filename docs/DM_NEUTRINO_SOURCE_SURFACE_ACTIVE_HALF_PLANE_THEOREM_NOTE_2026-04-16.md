@@ -1,5 +1,7 @@
 # DM Neutrino Source-Surface Active Half-Plane Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-16
 **Status:** exact blocker-reduction theorem on the live source-oriented sheet
 **Atlas placement:** canonical toolkit on `main` at

@@ -1,5 +1,7 @@
 # Right-Handed Sector Species-Dependence Retention Analysis Note (Candidate Class #4)
 
+**Claim type:** no_go
+
 **Date:** 2026-04-18
 **Status:** framework-native retention analysis of the right-handed
 sector as a candidate primitive for breaking the Ward-identity

@@ -1,5 +1,7 @@
 # DM Neutrino Source-Surface Shift-Quotient Bundle Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-16  
 **Status:** exact mainline blocker-reduction theorem on the live source-oriented sheet  
 **Script:** `scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py`

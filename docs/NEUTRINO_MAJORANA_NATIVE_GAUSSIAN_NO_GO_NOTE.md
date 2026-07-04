@@ -1,5 +1,7 @@
 # Native-Gaussian Majorana No-Go
 
+**Claim type:** no_go
+
 **Date:** 2026-04-15
 **Status:** exact boundary result on the current native quadratic surface;
 not a full interacting no-go

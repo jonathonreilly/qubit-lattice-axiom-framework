@@ -1,5 +1,7 @@
 # Neutrino Retained Lanes Support Packet (2026-04-16)
 
+**Claim type:** meta
+
 ## Scope
 
 This is the primary entry point for the live neutrino boundary/support packet

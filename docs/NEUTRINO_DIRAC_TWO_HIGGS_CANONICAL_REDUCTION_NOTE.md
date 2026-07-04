@@ -1,5 +1,7 @@
 # Neutrino Dirac Two-Higgs Canonical Reduction Theorem
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15
 **Status:** exact reduction/counting theorem on the minimal surviving
 neutrino-side extension class

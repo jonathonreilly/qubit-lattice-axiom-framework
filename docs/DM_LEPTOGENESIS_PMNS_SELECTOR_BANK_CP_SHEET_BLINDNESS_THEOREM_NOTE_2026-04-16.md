@@ -1,5 +1,7 @@
 # DM Leptogenesis PMNS Selector-Bank CP-Sheet Blindness Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-16  
 **Status:** exact negative theorem on the current PMNS-side selector-law bank  
 **Script:** `scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py`

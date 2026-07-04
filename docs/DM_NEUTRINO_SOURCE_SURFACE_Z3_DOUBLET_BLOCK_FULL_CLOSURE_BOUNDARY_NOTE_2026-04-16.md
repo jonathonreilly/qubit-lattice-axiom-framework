@@ -1,5 +1,7 @@
 # DM Neutrino Source-Surface `Z_3` Doublet-Block Full Closure Boundary
 
+**Claim type:** no_go
+
 **Date:** 2026-04-16  
 **Status:** exact negative closeout theorem for the current bank at the final
 microscopic gate  

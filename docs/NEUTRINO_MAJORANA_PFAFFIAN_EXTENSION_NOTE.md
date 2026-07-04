@@ -1,5 +1,7 @@
 # Minimal Pfaffian `Delta L = 2` Extension
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15
 **Status:** exact construction on a constructed microscopic extension; not yet
 axiom-forced

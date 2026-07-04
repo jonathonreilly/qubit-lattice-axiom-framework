@@ -1,5 +1,7 @@
 # DM Wilson Parent Correctness Audit Note
 
+**Claim type:** meta
+
 **Date:** 2026-04-18
 **Status:** exact repo audit of how far the current Wilson-parent story can be
 trusted for the DM Wilson-to-`dW_e^H` route

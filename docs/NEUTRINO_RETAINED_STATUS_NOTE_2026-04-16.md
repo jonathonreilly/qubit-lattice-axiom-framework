@@ -1,5 +1,7 @@
 # Neutrino Retained Status Note (2026-04-16)
 
+**Claim type:** meta
+
 **Status:** live science packet on `main`; outside the flagship paper core
 
 ## Scope

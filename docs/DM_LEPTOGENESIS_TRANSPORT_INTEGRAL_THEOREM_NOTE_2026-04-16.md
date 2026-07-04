@@ -1,5 +1,7 @@
 # DM Leptogenesis Transport-Integral Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-16 (derivation expanded 2026-05-16)
 **Branch:** `codex/dm-main-refresh`
 **Script:** `scripts/frontier_dm_leptogenesis_transport_integral_theorem.py`

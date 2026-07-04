@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 190 |
-| **retained_no_go** | 193 |
-| **retained_bounded** | 855 |
+| **retained** | 189 |
+| **retained_no_go** | 191 |
+| **retained_bounded** | 849 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1958 |
-| meta | 313 |
+| unaudited | 1948 |
+| meta | 334 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
 | ~~audited_conditional~~ | 25 |
@@ -60,39 +60,39 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1231 |
+| `audited_clean` | 1222 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2271 |
+| `unaudited` | 2282 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1921 |
+| `bounded_theorem` | 1986 |
 | `decoration` | 50 |
-| `meta` | 319 |
-| `no_go` | 433 |
-| `open_gate` | 171 |
-| `positive_theorem` | 743 |
+| `meta` | 340 |
+| `no_go` | 466 |
+| `open_gate` | 185 |
+| `positive_theorem` | 612 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 660 |
 | `high` | 465 |
 | `medium` | 924 |
-| `leaf` | 1588 |
+| `leaf` | 1590 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 14
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3301
+- runners classified: 3302
 - runners with (C) first-principles compute hits: 1729
 - runners with (D) external comparator hits: 1061
-- decoration candidates (no C, no D): 690
+- decoration candidates (no C, no D): 691
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -100,11 +100,11 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1862 | 185.86 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1863 | 186.36 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1148 | 67.17 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 198 | 65.14 | `audited_clean` | **retained** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1578 | 65.12 | `audited_clean` | **retained** |
-| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1202 | 64.23 | `audited_clean` | **retained_bounded** |
+| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1202 | 64.23 | `unaudited` | unaudited |
 | 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1248 | 53.29 | `audited_clean` | **retained_bounded** |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1154 | 48.17 | `unaudited` | meta |
 | 8 | `key_terminology` | meta | critical | 1254 | 46.79 | `unaudited` | meta |
@@ -890,12 +890,10 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_universal_parameter_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
-| `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -906,9 +904,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_product_factoring_does_not_force_product_character_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
-| `observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1033,7 +1028,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rd_fixedness_is_arrow_invariant_on_the_retained_flow_family_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1151,7 +1145,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1240,7 +1233,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_taste_readout_operator_model_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_three_register_cross_encoding_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
-| `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `tensor_support_center_excess_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `thales_right_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -1368,7 +1360,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_source_covariance_normalization_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `yt_vertex_power_derivation` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -12281,19 +12272,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** Clean only under the narrowed bounded scope. The source and runner support a harness-parameterized check over BETA, K_PHYS, and PHYS_L while holding the NN three-edge geometry fixed. The runner's secondary h->0 geodesic-limit C_arm fit comparison fails for Points A and C by just over 10%, but the note marks that comparison as tracked-only and not part of the primary acceptance; the load-bearing primary per-h coherent comparison closes at <=2.44%, and c2_inf closes at <=0.279%. The FANOUT language is acceptable only as the fixed FANOUT=3 normalization inside the current geometry, because no fanout-varying topology is tested.
 - **auditor confidence:** medium_high
 
-### `no_per_site_chirality_theorem_note_2026-05-02`
-
-- **Note:** [`NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md`](../../docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Single-site one-qubit M_2(C) Pauli algebra: omega=sigma_1 sigma_2 sigma_3=iI and no nonzero internal gamma_5/chirality element anticommutes with all three Pauli generators.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-audit-loop-judicial-20260703-no-per-site-chirality`  (codex-gpt-5.5; independence=judicial_review)
-- **load-bearing step:** Writing M=aI+sum b_i sigma_i gives {M,sigma_j}=2a sigma_j+2b_j I, so requiring all three anticommutators to vanish forces a=b_1=b_2=b_3=0.  _(class `A`)_
-- **chain closes:** True — The load-bearing step is an exact Pauli-basis algebra identity inside the already supplied one-site M_2(C) operator algebra. The runner confirms omega=iI, centrality, omega^2=-I, zero nullspace for the anticommutator constraints, no gamma_5 candidate, and even/odd span collapse by direct finite matrix algebra. This does not produce a new framework number absent from the inputs in the Class C sense; it checks algebraic consequences of the existing Pauli/M_2(C) inputs. Therefore the second audit's audited_clean/no_go/Class A tuple is the applyable one.
-- **rationale:** The load-bearing step is an exact Pauli-basis algebra identity inside the already supplied one-site M_2(C) operator algebra. The runner confirms omega=iI, centrality, omega^2=-I, zero nullspace for the anticommutator constraints, no gamma_5 candidate, and even/odd span collapse by direct finite matrix algebra. This does not produce a new framework number absent from the inputs in the Class C sense; it checks algebraic consequences of the existing Pauli/M_2(C) inputs. Therefore the second audit's audited_clean/no_go/Class A tuple is the applyable one.
-- **auditor confidence:** high
-
 ### `nonlabel_grown_basin_note`
 
 - **Note:** [`NONLABEL_GROWN_BASIN_NOTE.md`](../../docs/NONLABEL_GROWN_BASIN_NOTE.md)
@@ -12344,19 +12322,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On Fraction-coefficient formal power series, finite partial sums, scalar powers, Cauchy products, geometric truncation errors, and the toy truncated Langevin update close order-by-order in Fraction arithmetic.  _(class `A`)_
 - **chain closes:** True — The narrowed conclusion follows from standard finite Fraction arithmetic and polynomial/Cauchy-product algebra as exercised by the runner. The note explicitly excludes the physics claims that would require external NSPT or lattice-gauge authorities.
 - **rationale:** The operative claim is narrowed to elementary algebra over rational formal series, not a physical NSPT computation. The runner source performs finite Fraction arithmetic, Cauchy products, a geometric truncation calculation, and boundary-text checks; it does not import contested external constants or rely on a calibrated numerical match. Hard-coded expected values are used only as elementary algebraic test expectations for worked examples, not as imported premises for a broader physical conclusion.
-- **auditor confidence:** high
-
-### `observable_principle_from_axiom_note`
-
-- **Note:** [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](../../docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite exact-algebra closure on the real-positive staggered source surface: given accepted Record finite additivity, retained det-positivity support, and the declared T1-d Boundary, the log-det generator family, local source-derivative formulas, Matsubara identity, and Lt=4 orbit selector hold on the runner block; the numerical v comparator is out of scope.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-fresh-observable-boundary-auditor-20260703b`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Given T1-a through T1-e, especially Record finite scalar additivity, real-positive det(D+J), the declared T1-d readout-identification Boundary, and Cauchy uniqueness on R_{>0}, the additive continuous generator family is {W_c = c log det(D+J)}, with c = 1 used only as a conventional representative.  _(class `A`)_
-- **chain closes:** True — The chain closes only under the stated bounded hypotheses: T1-d is not derived from Record, but it is explicitly part of the audited Boundary and is policed by the retained no-go/support dependencies. The current 2026-06-29 minimal-axiom wording still supplies the finite scalar Record additivity used here, so the note's older 2026-06-05 citations are stale hygiene but not a closure break.
-- **rationale:** The runner completed with SCORECARD 40 pass, 0 fail, and the imported canonical plaquette helper is used only in the explicitly out-of-scope Part 5 comparator with zero PASS gates. The load-bearing parts check finite determinant multiplicativity, log-additivity, source-derivative trace identities, Matsubara/pair-product identities, orbit counting, source regularity, and recomputed L1/L2 det-positivity on the actual blocks. The runner does not derive T1-d from the axioms, but the source note no longer claims that; it declares T1-d as the bounded premise, and the retained no-go/context/classifier dependencies prevent laundering it as Record content. No hidden physical bridge or tuned v comparison is load-bearing in the scoped claim.
 - **auditor confidence:** high
 
 ### `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21`
@@ -12503,45 +12468,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The cited retained_bounded authority supplies the only substantive input, U1: F = cW on the admissibility class. Linearity of differentiation then gives ∂^k(cW) = c∂^kW, so ratios with nonzero denominator cancel c and the sign statement follows from sign(c).
 - **rationale:** The displayed ratio, sign, additive-constant, and higher-derivative identities are standard algebraic consequences of F = cW and differentiability. The runner source performs exact symbolic checks rather than merely printing constants, and no external comparator or fitted value is used. Because the claim reduces to one retained upstream theorem plus standard calculus, with zero class-D checks, the rubric classifies it as decoration rather than an independent bounded theorem.
 - **decoration parent:** `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10`
-- **auditor confidence:** high
-
-### `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18`
-
-- **Note:** [`OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md`](../../docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** A supplied finite determinant-sector readout context closes the determinant-only quotient and source-blocks-to-record-atoms clauses, yielding the continuous logarithmic family W_c=c log Z inside that context only.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-audit-loop-fresh-context-20260703-t1d-determinant-context-bridge`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Assuming determinant-fiber central sectors and an injective source-label-to-record-atom map, the readout factors through det(S), Record additivity applies to realized disjoint records, and continuity yields f(z)=c log z.  _(class `A`)_
-- **chain closes:** True — The bounded theorem closes inside the explicitly supplied context: determinant fibers force the quotient, injective source labels supply disjoint record atoms, and direct-sum determinant multiplication plus finite additivity gives the continuous product-to-sum logarithm. It does not derive the context from Record, select c=1, identify physical observables, or resolve the observable-principle parent.
-- **rationale:** Within the stated bounded scope, the proof is exact algebra over an explicit supplied context and standard continuity/product-to-sum additivity, and the runner reports TOTAL: PASS=20 FAIL=0 while preserving the no-go boundary. The no-go dependency supports the boundary: Record alone does not force determinant-only readout or source-to-record injectivity. Residual risk is downstream overcitation; the clean result is only the supplied-context bridge, not a Record-derived T1-d theorem or physical-observable identification.
-- **auditor confidence:** high
-
-### `observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16`
-
-- **Note:** [`OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md`](../../docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Scoped no-go that current minimal axioms plus determinant/direct-sum algebra and the real-positive determinant branch do not derive T1-d determinant-only scalar readout or source-disjoint-to-record-disjoint assignment.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-audit-loop-fresh-context-20260703-t1d-readout-no-go`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** There are continuous, block-additive scalar readouts on finite positive source blocks that satisfy direct-sum additivity but are not functions of det(D+J) alone.  _(class `A`)_
-- **chain closes:** True — The W_epsilon countermodel satisfies the stated continuity, additivity, and determinant-algebra constraints while separating equal-determinant source blocks by trace. The non-injective source-to-record assignment independently blocks deriving record-disjointness from source-disjointness.
-- **rationale:** The no-go closes by explicit finite countermodels rather than by an absence-of-proof argument. The minimal axiom memo supplies only fixed record/readout additivity and explicitly withholds source/action and observable/readout bridges, so the determinant-only quotient and source-to-record injectivity are not forced. The runner completed with TOTAL: PASS=20 FAIL=0 and checks the exact algebra plus source-visible guardrails. The boundary is clean: a future explicit readout-context bridge could still supply T1-d without contradicting this no-go.
-- **auditor confidence:** high
-
-### `observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18`
-
-- **Note:** [`OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md`](../../docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Continuous direct-sum additive scalar readouts on finite positive diagonal source blocks are one-site sums; determinant-only readout across dimensions is exactly c log det, with dimension constants requiring n as extra data and source-to-record disjointness left outside scope.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-audit-loop-fresh-context-20260703-t1d-positive-diagonal-classifier`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Block additivity gives W_n(x_1,...,x_n)=sum_i phi(x_i), and determinant-only across dimensions forces phi(x)+phi(y)=phi(xy), hence by continuity phi(x)=c log x.  _(class `A`)_
-- **chain closes:** True — The bounded mathematical theorem closes by induction from block additivity and the continuous multiplicative-to-additive Cauchy equation. The note explicitly does not derive T1-d from Record, close the Observable Principle parent, or supply a physical readout/source/action bridge.
-- **rationale:** The load-bearing classifier is an exact algebraic/analytic result on the supplied finite positive diagonal surface. The runner completed with TOTAL: PASS=33 FAIL=0 and its checks cover the one-site decomposition, determinant quotient, dimension-constant boundary, source-to-record non-closure, and guardrail text. This is clean only as a bounded mathematical support theorem, not as the missing T1-d bridge or parent Observable Principle closure.
 - **auditor confidence:** high
 
 ### `oh_schur_boundary_action_note`
@@ -14426,19 +14352,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The load-bearing mathematics is a direct algebraic closure over the supplied retained-bounded maps, not a numerical fit, definition substitution, or external comparator. Manual checking confirms g(phi(r))=r and phi(g(r))=r on r>=0, Fix(phi)=Fix(g)={0,1/2}, the common projective fixed point at s=0, and the multiplier reversal 2 versus 1/2. The note’s firewall language keeps the clean result bounded to fixedness on the retained family and does not promote R-D, the physical arrow, or the coarse-graining prong.
 - **auditor confidence:** high
 
-### `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`
-
-- **Note:** [`REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite-dimensional real linear-algebra lemma proving L1 det(S+D)>0, L2 positive determinant sign on the Neumann-bounded diagonal patch, and L3 log-det additivity on R_{>0} under explicit continuity/regularity and c=1 conventions.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-audit-loop-fresh-context-20260703-real-diagonal-source-det`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** For real antisymmetric D and positive diagonal S, det(S+D)>0, and under explicit finite-block continuity on R_{>0} plus Record additivity the disjoint-block determinant readout is W_c=c log det with c=1 as convention.  _(class `A`)_
-- **chain closes:** True — The L1 and L2 determinant claims close by real antisymmetric spectral structure and the Neumann invertibility bound. L3 closes only as a bounded convention-bearing readout lemma: Record supplies finite disjoint scalar additivity, while continuity/regularity and c=1 are explicit conventions, not derived framework axioms or a physical source/readout bridge.
-- **rationale:** The source note proves the determinant positivity and sign-constant patch with standard finite-dimensional linear algebra, and the runner completed with PASS=4 FAIL=0 on the corresponding algebraic checks. The clean verdict is bounded to the convention-bearing mathematical statement: continuity/regularity on R_{>0} and c=1 are explicit bounded conventions, not promoted as axioms. The note does not claim a physical source/readout theorem, species content, numerical comparator, or parent-cycle derivation, so no unsupported physical bridge is needed inside the audited scope.
-- **auditor confidence:** high
-
 ### `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11`
 
 - **Note:** [`RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md`](../../docs/RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md)
@@ -16147,19 +16060,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The load-bearing step is exact algebra, not a definition, renaming, or numerical comparator: independently, gamma_nu gamma_mu gamma_nu gamma_mu = -I and the -1 cocycle makes the plaquette transport +I. The one-gauge-class claim follows because a closed U(1) or Z2 one-cochain is exact on the stated simply connected cubical regions. The runner source genuinely enumerates the unit cube and computes GF(2) ranks at scale rather than merely printing the claimed result.
 - **auditor confidence:** high
 
-### `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10`
-
-- **Note:** [`STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** On the adjacency-licensed Q-conserving NN bilinear surface over the current Lattice/Qubit one-site C^2/M2(C) baseline, with translation and proper cubic covariance up to site-local U(1) frame on simply connected regions, kinetic phases reduce to K0/K1; on K1 the absorbing frame exists, lands in K1, and is unique up to site-local gauge x global frame; K0 shows the K1 selector bit is not forced.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-fresh-staggered-kinetic-auditor-20260703b`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** On D-kin with translation/proper-cubic covariance up to site-local frame, uniform plaquette flux is forced real so the simply connected frame classes are exactly K0/K1; K1 admits the Pauli absorbing frame, while K0 satisfies the imposed constraints as the countermodel to forcing the K1 selector.  _(class `C`)_
-- **chain closes:** True — Within the declared bounded surface, the dependencies supply Z^3 adjacency/rotations, one-site M2(C)/C^2 qubit carrier, Pauli/Cl(3) module facts, translation/Q_total identities, and parity grading. The note treats NN, Q-conserving, site-local, and simply connected restrictions as scope boundaries, not derived exclusions, and leaves the K1-vs-K0 selector open.
-- **rationale:** The claim is a bounded compression/countermodel result, not an imported kinetic selector: it proves the K0/K1 collapse inside the licensed surface and explicitly preserves B-BIT as open. The 2026-06-29 minimal-axiom wording renames the older Quantum axiom to Qubit but preserves the consumed Lattice Z^3 adjacency/rotations and one-site M2(C)/Cl(3,0) content, while also confirming that no Hamiltonian or kinetic branch is axiomatically selected. The runner constructs the rotations, cochain ranks, sign-system enumeration, Pauli/CAR algebra, gauge tests, K0/K1 witnesses, and falsification legs rather than printing a hard-coded verdict; current run was PASS=28 FAIL=0. Residual risk is limited to the standard cochain-exactness generalization from finite certificates to simply connected regions, with finite-torus wrap holonomy excluded by scope.
-- **auditor confidence:** high
-
 ### `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17`
 
 - **Note:** [`STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
@@ -17371,19 +17271,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The load-bearing content is the four finite runner-verified computational gates, with the AdS/CFT, RT, MERA, continuum, and holographic-gravity bridge explicitly excluded as non-load-bearing.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the transfer matrices, tight-binding Hamiltonians, correlation matrices, entropies, SVDs, and fits directly rather than printing constants or importing the contested premise. The cached output matches the source note's rounded quantitative claims, and the note narrows away the unsupported holographic bridge.
 - **rationale:** The surviving claim is bounded to finite sampled computations and the supplied runner genuinely computes the reported quantities from its stated toy lattice definitions. The displayed coefficients and fit qualities in the note match the runner output to the stated rounding: c=1.0855, area-law R^2=0.999613, center chi 8 to 7 at f=20, inverse-coupling R^2=0.6465, and linear R^2=0.9745. There are no cited non-retained authorities, and the note explicitly rejects treating the finite sweep as an RT or holographic derivation.
-- **auditor confidence:** high
-
-### `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
-
-- **Note:** [`TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** On a finite periodic tensor-product block H_Lambda = tensor_x C^2_x with per-site Pauli ladder operators a_x/a_x^dagger and tensor-permutation translations T_a, T_a is unitary, obeys the translation group law, covaries a_x/a_x^dagger by site relabeling, and commutes with Q_total = sum_x a_x^dagger a_x.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained**  (reason: `self`)
-- **auditor:** `codex-audit-loop-fresh-context-20260703-tensor-product-translation`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Conjugating a local ladder operator by the tensor-factor permutation relabels the acted-on factor from x to x+a, so T_a a_x T_a^† = a_{x+a}; the adjoint and Q_total identities then follow by adjointing and relabeling the finite sum.  _(class `A`)_
-- **chain closes:** True — The proof is a finite-dimensional basis-permutation argument: unitarity and group law are bijection facts, covariance is tensor-factor relabeling, and charge conservation is a relabeling of the summed number operators. The audited boundary uses only the defined per-site Pauli tensor-product algebra and periodic lattice translation, not CAR/Jordan-Wigner, Noether momentum, Hamiltonian, gauge, current, or observational bridges.
-- **rationale:** The source note closes as a narrow exact operator-algebra theorem over the stated finite tensor-product definitions and the minimal Z^3/qubit premises. The runner completed 131 exact symbolic matrix identity checks with FAIL=0; under the requested exact-algebra-over-definitions rule these are counted as A-class checks despite the runner's internal PASS(C) labels. The note explicitly excludes the physical bridges that would otherwise overbroaden the result, so the clean verdict applies only to the scoped finite-block Pauli tensor-product identities.
 - **auditor confidence:** high
 
 ### `tensor_support_center_excess_law_note`
@@ -19227,19 +19114,6 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** Given H_unit = I_(N_iso*N_c)/sqrt(N_iso*N_c), the diagonal basis component overlap equals 1/sqrt(N_iso*N_c), hence 1/sqrt(6) at (2,3).  _(class `A`)_
 - **chain closes:** True — The scoped identity follows directly from the stated orthonormal basis, matrix-unit definition, and H_unit normalization. The note explicitly excludes the physical SSB/Yukawa matching bridge, so that unproved bridge is outside the audited claim boundary.
 - **rationale:** The supplied proof and runner close the finite-dimensional arithmetic claim without importing gauge coupling, VEV, LSZ, chirality, HS/source normalization, or physical Yukawa readout assumptions. The alias equality is only clean within the explicitly bounded component-overlap definition and is not used to assert physical operator matching. The runner completed with 13 passes and 0 failures against the current scoped claim.
-- **auditor confidence:** high
-
-### `yt_vertex_power_derivation`
-
-- **Note:** [`YT_VERTEX_POWER_DERIVATION.md`](../../docs/YT_VERTEX_POWER_DERIVATION.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** On the gauged SU(3) staggered-Dirac adjacency-licensed nearest-neighbor covariant hopping surface, with the named link-exponential convention, quadratic-response/background-field coupling readout, edge adjacency license, and tree-level coupling/kinematic split, the vertex-power exponent is n_link=2 and the retained abstract coupling-map algebra yields alpha_s(v)=alpha_bare/u_0^2; no plaquette, running, strong-coupling value, or external numeric target is audited.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-fresh-yt-vertex-power-auditor-20260703b`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** On the edge-only gauged SU(3) staggered-Dirac hopping surface, Schur bi-equivariance forces the hopping dressing to be f(U)=cU, and the quadratic current-current response contains two single-link D' insertions, so n_link=2 and the retained algebra gives alpha_s(v)=alpha_bare/u_0^2.  _(class `C`)_
-- **chain closes:** True — The derivation closes only on the explicitly named bounded surface: SU(3) gauge attachment, edge-only support, link-exponential convention, quadratic channel, and tree-level split are declared scope boundaries rather than silently imported conclusions. The current 2026-06-29 minimal axiom wording preserves the consumed Lattice adjacency content, and the direct dependencies are retained-grade or accepted axiom content for this bounded use.
-- **rationale:** The runner completed with PASS=16 FAIL=0 and computes the contested exponent from operator/link-degree scaling, finite-difference checks of D' and D'', and Schur bi-equivariance tests; it does not read or fit a strong-coupling numeric target and has zero class-D checks. The B-GATE/B-ADJ/B-CONV/B-CHAN/B-SPLIT items are real load-bearing boundaries, but they are stated in the claim scope and runner residuals, so they bound the theorem rather than functioning as hidden premises. The safe retained content is the integer exponent and algebraic coupling-map consequence under those conventions, not an SU(3) realization theorem or any physical alpha_s number.
 - **auditor confidence:** high
 
 ### `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05`

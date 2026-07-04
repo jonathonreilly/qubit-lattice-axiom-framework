@@ -81913,6 +81913,18 @@
       "runner_path": "scripts/frontier_gr_class_expansion_finite_rank_target.py",
       "title": "Gravity Class Expansion Target: Finite-Rank Source-to-Metric on the Current Bridge Surface"
     },
+    "graded_constraint_primitive_registration_proposal_2026-07-04": {
+      "claim_id": "graded_constraint_primitive_registration_proposal_2026-07-04",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta (primitive registration draft; no theorem claim)",
+      "claim_type_seed_hint": "meta",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "61447acfffc011effac5928c42874b76910604ff54817e21a02fec150e7b2f0b",
+      "path": "docs/GRADED_CONSTRAINT_PRIMITIVE_REGISTRATION_PROPOSAL_2026-07-04.md",
+      "runner_path": null,
+      "title": "Owner One-Pager: Graded-Constraint Primitive Registration (Draft)"
+    },
     "grand_canonical_flux_response_nmod4_alternation_no_net_sign_bounded_theorem_note_2026-06-12": {
       "claim_id": "grand_canonical_flux_response_nmod4_alternation_no_net_sign_bounded_theorem_note_2026-06-12",
       "claim_type_author_hint": "bounded_theorem",
@@ -108260,6 +108272,18 @@
       "runner_path": "scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py",
       "title": "Record Clock/Rate Normalization And Stable-Dial Gate"
     },
+    "record_comparability_owner_one_pager_2026-07-04": {
+      "claim_id": "record_comparability_owner_one_pager_2026-07-04",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta (owner decision surface; no theorem claim)",
+      "claim_type_seed_hint": "meta",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "2a56b3854553238e43d8d4e050fc618bf9a307305d280b076334c6c34986df86",
+      "path": "docs/RECORD_COMPARABILITY_OWNER_ONE_PAGER_2026-07-04.md",
+      "runner_path": null,
+      "title": "Owner One-Pager: One Configuration Of Records"
+    },
     "record_composition_bridge_semigroup_positivity_selection_bounded_note_2026-07-02": {
       "claim_id": "record_composition_bridge_semigroup_positivity_selection_bounded_note_2026-07-02",
       "claim_type_author_hint": "bounded_theorem",
@@ -109356,7 +109380,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f4d3052a30b42d33211769df6abafd22d57349cd0478856cbed5d2572b4683f3",
+      "note_hash": "09c4c1c5da186c5e91211b5a994ad5804cbb50875440780cdb003b37922d5a24",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -124709,6 +124733,7 @@
     "geometry_superposition_dag_ensemble_note_2026-04-11",
     "global_coherence_off_scaffold_note",
     "gmn_vev_annihilator_l4_support_note_2026-07-02",
+    "graded_constraint_primitive_registration_proposal_2026-07-04",
     "graph_braid_n3_fermion_sign_stays_nonfibered_narrow_theorem_note",
     "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29",
     "graph_dirac_requirements_2026-04-10",
@@ -125052,6 +125077,7 @@
     "record_axiom_audit_application_map_2026-06-06",
     "record_classical_semigroup_boundary_2026-06-06",
     "record_clock_rate_normalization_gate_2026-06-06",
+    "record_comparability_owner_one_pager_2026-07-04",
     "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11",
     "record_formation_append_consistency_sweep_2026-07-04",
     "record_function_finite_sector_algebra_2026-06-05",
@@ -125349,7 +125375,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 1553,
       "decoration": 3,
-      "meta": 315,
+      "meta": 317,
       "no_go": 316,
       "none": 1216,
       "open_gate": 133,
@@ -125358,16 +125384,16 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1958,
       "decoration": 3,
-      "meta": 315,
+      "meta": 317,
       "no_go": 420,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
     "edge_count": 14289,
-    "leaf_count": 1286,
-    "node_count": 3810,
-    "root_count": 1100,
+    "leaf_count": 1288,
+    "node_count": 3812,
+    "root_count": 1102,
     "runners_with_path": 3436
   }
 }

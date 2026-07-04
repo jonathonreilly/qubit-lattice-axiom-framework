@@ -1,7 +1,8 @@
 # Owner One-Pager: One Configuration Of Records
 
 **Date:** 2026-07-04
-**Type:** owner decision surface — Class D proposal per
+**Type:** meta (owner decision surface; no theorem claim)
+**Authority class:** Class D proposal per
 `docs/audit/DOCUMENT_AUTHORITY_AND_CITATION_POLICY.md`. This document carries
 no weight until you act on it; cite only as proposed.
 

@@ -1,7 +1,8 @@
 # Owner One-Pager: Graded-Constraint Primitive Registration (Draft)
 
 **Date:** 2026-07-04
-**Type:** primitive registration draft — Class D proposal per
+**Type:** meta (primitive registration draft; no theorem claim)
+**Authority class:** Class D proposal per
 `docs/audit/DOCUMENT_AUTHORITY_AND_CITATION_POLICY.md`. This document carries
 no weight until you act on it; cite only as proposed.
 **NOT AT APPROVAL GRADE (2026-07-04 owner correction).** An earlier cut of
@@ -81,9 +82,10 @@ each must be derived and audited as a bounded note conditional on the core:
   empirical-constraint rows through the audit lane (the recorded-branch
   filing pattern), replacing prose warrants.
 
-These four targets are exactly the specification obligations the adversarial
-seats extracted from the Born-form bridge note (PR #4916), now routed through
-the correct channel.
+These four targets are the specification obligations extracted from the
+closed, unmerged Born-form bridge review in PR #4916. That PR is historical
+input only; any live use must arrive as a fresh, self-contained conditional
+note through the review/audit channel.
 
 ## The physical warrant — two observed facts
 
@@ -98,12 +100,12 @@ the correct channel.
    interface offers — that is what the entangled-elements clause registers,
    and no more.
 
-## What it buys immediately
+## What it would target after review/audit
 
-- **Born form becomes forced, not postulated:** the composite-Gleason bridge
-  note (PR #4916, stacked on #4915) shows the quadratic form is the unique
-  consistent grading, with the dimension-2 loophole voided by the bonded-pair
-  domain clause.
+- **Born form as a conditional theorem target, not a postulate:** a fresh
+  composite-Gleason bridge note would need to show that the quadratic form is
+  the unique consistent grading, with the dimension-2 loophole voided by the
+  bonded-pair domain clause.
 - **The r = 1/2 class returns as the zero-information limit** (uniform on
   symmetric menus) — consistency with landed results, no new selection.
 - **Weight values become a derivation target from surrounding records** —
@@ -120,8 +122,9 @@ own ports.
 
 - The **domain clause is load-bearing at full strength**: without entangled
   resolutions being menu-eligible, a single `M_2` site admits explicit
-  non-quadratic gradings (constructed and exactly refuted only via composites
-  in PR #4916). A weakened registration buys almost nothing.
+  non-quadratic gradings; the closed PR #4916 review indicated that composites
+  are the route to refutation, but that route still needs a live, audited note.
+  A weakened registration buys almost nothing.
 - The **entangled-elements clause is the novel ontology**: pair-level
   constraint bookkeeping with site-local locking. It is exactly what the
   correlated-statistics warrant supports — it does not make composite
@@ -138,15 +141,16 @@ frequencies.
 
 ## Pipeline to approval grade (in order)
 
-1. PR #4916 lands (Born form conditional on the core — already drafted and
-   seat-repaired).
+1. A fresh, self-contained Born-form conditional note lands, carrying the core
+   as a named conditional premise and incorporating the useful PR #4916 review
+   lessons without depending on that closed branch.
 2. N1-N3 consistency notes drafted, seat-refuted, landed; N4 empirical
    constraints filed through the audit lane.
 3. Audit passes over that surface.
 4. Downstream work references the audited notes, carrying the core as a
-   named conditional premise — the #4916 pattern, repo-wide. Registration
-   stays available as an owner supply act for the moment some lane needs the
-   premise unconditional to close a physical number; no work blocks on it.
+   named conditional premise. Registration stays available as an owner supply
+   act for the moment some lane needs the premise unconditional to close a
+   physical number; no work blocks on it.
 
 Recommendation: run the derivations, submit them for review and audit, and
 reference them. No approval is requested or scheduled.

@@ -42145,6 +42145,42 @@
       "to": "admitted_input_registry_tier_a_note_2026-05-23"
     },
     {
+      "from": "theta_mass_determinant_bridge_retirement_readiness_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "theta_mass_determinant_bridge_retirement_readiness_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "theta_mass_determinant_bridge_retirement_readiness_no_go_note_2026-07-04",
+      "to": "theta_mass_determinant_axiom_update_no_go_note_2026-07-04"
+    },
+    {
+      "from": "theta_mass_determinant_bridge_retirement_readiness_no_go_note_2026-07-04",
+      "to": "realized_state_primitive"
+    },
+    {
+      "from": "theta_mass_determinant_bridge_retirement_readiness_no_go_note_2026-07-04",
+      "to": "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12"
+    },
+    {
+      "from": "theta_mass_determinant_bridge_retirement_readiness_no_go_note_2026-07-04",
+      "to": "theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10"
+    },
+    {
+      "from": "theta_mass_determinant_bridge_retirement_readiness_no_go_note_2026-07-04",
+      "to": "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11"
+    },
+    {
+      "from": "theta_mass_determinant_bridge_retirement_readiness_no_go_note_2026-07-04",
+      "to": "theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01"
+    },
+    {
+      "from": "theta_mass_determinant_bridge_retirement_readiness_no_go_note_2026-07-04",
+      "to": "theta_mass_side_epsilon_hermiticity_reality_bridge_discharge_bounded_theorem_note_2026-06-11"
+    },
+    {
       "from": "theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01",
       "to": "staggered_only_det_positivity_case_a_note_2026-05-17"
     },
@@ -110220,7 +110256,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "23a387a7a29d53be439885a9f64c54e87029c424a2e8815e8d1e4ff994ce483d",
+      "note_hash": "560144614d78bef1c44c5ff87762f8f8c79a2fa220a80826e6ed0f2c9e7dd682",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118239,6 +118275,28 @@
       "path": "docs/THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md",
       "runner_path": "scripts/theta_mass_determinant_axiom_update_no_go_2026_07_04.py",
       "title": "Theta Mass Determinant Axiom-Update No-Go"
+    },
+    "theta_mass_determinant_bridge_retirement_readiness_no_go_note_2026-07-04": {
+      "claim_id": "theta_mass_determinant_bridge_retirement_readiness_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "theta_mass_determinant_axiom_update_no_go_note_2026-07-04",
+        "realized_state_primitive",
+        "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12",
+        "theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10",
+        "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11",
+        "theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01",
+        "theta_mass_side_epsilon_hermiticity_reality_bridge_discharge_bounded_theorem_note_2026-06-11"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "8817cea3485b650ddd73d1a9b62b2810f36fff4f9a4d9251e3b098b58622bc88",
+      "path": "docs/THETA_MASS_DETERMINANT_BRIDGE_RETIREMENT_READINESS_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/theta_mass_determinant_bridge_retirement_readiness_no_go_2026_07_04.py",
+      "title": "Theta Mass Determinant Bridge Retirement-Readiness No-Go Note"
     },
     "theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01": {
       "claim_id": "theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01",
@@ -126360,7 +126418,7 @@
       "bounded_theorem": 1553,
       "decoration": 3,
       "meta": 319,
-      "no_go": 332,
+      "no_go": 333,
       "none": 1216,
       "open_gate": 134,
       "positive_theorem": 274
@@ -126369,15 +126427,15 @@
       "bounded_theorem": 1958,
       "decoration": 3,
       "meta": 319,
-      "no_go": 436,
+      "no_go": 437,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14436,
-    "leaf_count": 1269,
-    "node_count": 3831,
+    "edge_count": 14445,
+    "leaf_count": 1267,
+    "node_count": 3832,
     "root_count": 1102,
-    "runners_with_path": 3454
+    "runners_with_path": 3455
   }
 }

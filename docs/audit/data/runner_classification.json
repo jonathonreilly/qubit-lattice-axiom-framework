@@ -36756,6 +36756,18 @@
       "dominant_class": "A",
       "runner": "scripts/theta_mass_determinant_axiom_update_no_go_2026_07_04.py"
     },
+    "theta_mass_determinant_bridge_retirement_readiness_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/theta_mass_determinant_bridge_retirement_readiness_no_go_2026_07_04.py"
+    },
     "theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01": {
       "assert_count": 1,
       "counts": {
@@ -89954,6 +89966,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/theta_mass_determinant_bridge_retirement_readiness_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "theta_mass_determinant_bridge_retirement_readiness_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/theta_mass_orientation_zero_branch_pairing_forced_2026_07_01.py": {
       "assert_count": 1,
       "claims": [
@@ -91166,15 +91193,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 693,
+    "decoration_candidates": 694,
     "dominant_class_distribution": {
       "A": 499,
-      "B": 638,
+      "B": 639,
       "C": 1276,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3320,
+    "runners_classified": 3321,
     "runners_with_C": 1745,
     "runners_with_D": 1068
   }

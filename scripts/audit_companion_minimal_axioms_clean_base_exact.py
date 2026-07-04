@@ -3,7 +3,7 @@
 
 This runner checks elementary algebra/notation facts plus source/registry
 firewalls for docs/MINIMAL_AXIOMS_2026-06-29.md. It does not derive the axioms
-and does not import context selection, occurrence rules, sector generation,
+and does not import context selection, formation rules, sector generation,
 log-det structure, P2/modulus, measurement, dynamics, normalization, scale,
 source/action, Born weights, occupancy, local observability, or observable
 identification.
@@ -179,6 +179,23 @@ def source_boundary_checks() -> list[Check]:
             "",
         ),
         Check(
+            "Memo Record axiom carries the 2026-07-04 formation sentence",
+            "Records form." in note,
+            "occurrence is axiom content; formation rules stay downstream",
+        ),
+        Check(
+            "Registry note records the formation sentence",
+            "records form;" in node.get("note", ""),
+            "",
+        ),
+        Check(
+            "Policy records 2026-07-04 formation-sentence entry",
+            "2026-07-04 -- Formation sentence" in policy
+            and contains(policy, "Records form.")
+            and contains(policy, "occurrence strength is the unique non-over-supplying form"),
+            "",
+        ),
+        Check(
             "Policy records 2026-07-03 Record permanence restoration",
             "2026-07-03 -- Record permanence restoration" in policy
             and contains(policy, "records are permanent"),
@@ -194,7 +211,7 @@ def source_boundary_checks() -> list[Check]:
         Check("Policy records 2026-06-29 foundation reset", "2026-06-29 -- Foundation reset: site possibility and local admissibility" in policy, ""),
         Check(
             "Policy no-laundering clause lists Admissibility and Record boundaries",
-            contains(policy, "Admissibility does not choose the readout context, select a measurement basis, provide an occurrence rule, define probabilities")
+            contains(policy, "Admissibility does not choose the readout context, select a measurement basis, provide a formation rule, define probabilities")
             and contains(policy, "Record does not supply readout-context selection, central decomposition, `K`/CPT structure"),
             "",
         ),
@@ -306,7 +323,7 @@ def source_boundary_checks() -> list[Check]:
         Check("Observable-principle parent is explicitly outside the axiom node", "must not be moved wholesale into\n`docs/audit/data/axiom_premise_nodes.json`" in note, ""),
         Check("Open gates outside axioms include staggered realization", "staggered-Dirac/finite-Grassmann realization" in note, ""),
         Check("Open gates outside axioms include theta", "strong-CP theta admission" in note, ""),
-        Check("Open gates outside axioms include context selection and occurrence rules", "context selection" in note and "occurrence rules" in note, ""),
+        Check("Open gates outside axioms include context selection and formation rules", "context selection" in note and "formation rules (which\n  admissible possibility a new record locks, at which site, with what weight,\n  or at what rate)" in note, ""),
         Check("Open gates outside axioms include physical persistence dynamics", "physical persistence dynamics" in note, ""),
         Check("Open gates outside axioms include g_bare", "`g_bare = 1` convention handling" in note, ""),
         Check("Open gates outside axioms include scale self-consistency", "natural unit equals the Planck length" in note, ""),

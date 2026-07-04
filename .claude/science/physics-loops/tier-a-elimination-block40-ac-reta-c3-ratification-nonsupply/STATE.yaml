@@ -1,0 +1,42 @@
+slug: tier-a-elimination-block40-ac-reta-c3-ratification-nonsupply
+goal: eliminate Tier-A admissions by retiring or sharply isolating theta/AC residual atoms
+target_status: best_honest_status
+block: 40
+branch: physics-loop/tier-a-elimination-block40-ac-reta-c3-ratification-nonsupply-20260704
+base_branch: physics-loop/tier-a-elimination-block39-theta-g1-kinetic-4d-scaffold-support-20260704
+active_route: AC R-eta C3 ratification non-supply no-go
+hard_residual: "derive physical R-eta readout license Phi = S_sum = 2/3 or approve a narrow R-eta readout primitive"
+actual_current_surface_status: no-go
+trace_class: current_surface_no_go
+reachability_to_target: sharpens
+proposal_allowed: false
+runtime_mode: goal_campaign
+files_touched:
+  - docs/ACPHILAMBDA_R_ETA_C3_RATIFICATION_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
+  - scripts/acphilambda_r_eta_c3_ratification_non_supply_no_go_2026_07_04.py
+  - logs/runner-cache/acphilambda_r_eta_c3_ratification_non_supply_no_go_2026_07_04.txt
+  - .claude/science/physics-loops/tier-a-elimination-block40-ac-reta-c3-ratification-nonsupply/
+open_imports:
+  - physical density-read-as-angle / holonomy readout license
+  - identity-unit choice c = 1
+  - coherence-event law and rate normalization
+  - physical carrier realization and scalar weighting/normalization
+  - owner-approved R-eta primitive or premise
+  - AC(i) occupancy horn selection
+  - theta gauge and mass residuals
+no_go_routes:
+  - C3 canonical context retires R-eta
+  - C3-grade species-bridge ratification retires R-eta
+  - fixed-locus arithmetic plus context naming derives Phi = S_sum
+checks:
+  runner: "PYTHONPATH=scripts python3 scripts/acphilambda_r_eta_c3_ratification_non_supply_no_go_2026_07_04.py -> PASS=122 FAIL=0"
+  py_compile: "PASS"
+  audit_pipeline: "PASS; row acphilambda_r_eta_c3_ratification_non_supply_no_go_note_2026-07-04 seeded no_go/unaudited/unaudited leaf with 7 queue deps"
+  audit_lint_strict: "PASS; existing 23 warnings / 178 notices, no errors"
+  diff_check: "PASS"
+review_loop_disposition: pass
+pr_status: pending
+pr_url: pending
+next_exact_action: "Open stacked PR on Block39; next science route should attack direct R-eta readout license or AC(i) occupancy horn selection."
+stop_condition: "Continue Tier-A campaign unless runtime/tooling blocks or all viable residuals are documented blocked."
+

@@ -7,6 +7,8 @@ Block32.
 
 Branch: `physics-loop/tier-a-elimination-block33-theta-g3-phase-character-support-20260704`
 Base: `physics-loop/tier-a-elimination-block32-theta-su3-sector-projection-20260704`
+Source commit: `773b2cb21`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4974
 
 ## Expected Claim Movement
 
@@ -40,5 +42,6 @@ odd-sensitive slot a future physical G3 theorem would need to supply.
 
 ## Next Exact Action
 
-Commit, push, and open a stacked PR on Block32. Then verify hosted
-`audit_pipeline` if GitHub checkout is available.
+Verify hosted `audit_pipeline` on PR #4974 if GitHub checkout is available,
+then continue with physical G3 phase-source, physical SU(3) sector/readout,
+G1 defect closure, or theta mass-side bridge.

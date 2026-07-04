@@ -1,5 +1,8 @@
 # Summary
 
+Loop pack:
+`.claude/science/physics-loops/tier-a-elimination-block33-theta-g3-phase-character-support/HANDOFF.md`
+
 Block33 adds exact-support evidence for theta G3. On the supplied SU(3)
 central-sector projection from Block32, closed Heisenberg triples have an
 orientation-odd cocycle `q_c = k(ABC) - k(ACB)`; swapping two staples maps

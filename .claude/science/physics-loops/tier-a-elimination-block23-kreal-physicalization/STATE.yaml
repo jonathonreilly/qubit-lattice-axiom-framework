@@ -6,7 +6,9 @@ target: shared C3 K-real physical-realization gate
 claim_type: no_go
 registry_edits: false
 retirement_claimed: false
-status: ready_for_pr
+status: pr_open
+source_commit: dda25a04df32
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4953
 active_route: "July 4 hygiene plus finite C3 K-real algebra already physicalizes the shared K-real monitor"
 hard_residual: "derive a physical K-real monitor theorem or K/CPT-site-basis bridge"
 files_touched:
@@ -31,5 +33,5 @@ verification:
   audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
   diff_check: pass
 audit_row: "kreality_shared_physicalization_current_surface_no_go_note_2026-07-04: claim_type=no_go, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
-next_exact_action: "Run py_compile, diff_check, audit pipeline, lint, local review, then commit/push/open stacked PR."
-stop_condition: "Block complete after checks pass, review disposition is recorded, PR opens/backlogs, and local lock is removed or campaign pivots."
+next_exact_action: "Verify PR status, then continue toward K/CPT-site-basis, AC measure-side dynamics, or theta determinant-channel/action bridge."
+stop_condition: "Block complete after PR status is verified and the local lock is removed or campaign pivots."

@@ -42549,6 +42549,50 @@
       "to": "theta_gauge_winding_axiom_update_no_go_note_2026-07-04"
     },
     {
+      "from": "theta_g4_theta_bar_assembly_current_surface_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "theta_g4_theta_bar_assembly_current_surface_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "theta_g4_theta_bar_assembly_current_surface_no_go_note_2026-07-04",
+      "to": "strong_cp_theta_bar_structured_admission_2026-06-04"
+    },
+    {
+      "from": "theta_g4_theta_bar_assembly_current_surface_no_go_note_2026-07-04",
+      "to": "strong_cp_theta_zero_note"
+    },
+    {
+      "from": "theta_g4_theta_bar_assembly_current_surface_no_go_note_2026-07-04",
+      "to": "theta_gauge_positive_route_stretch_status_2026-07-04"
+    },
+    {
+      "from": "theta_g4_theta_bar_assembly_current_surface_no_go_note_2026-07-04",
+      "to": "theta_assembly_paired_shift_fixed_grading_mckean_singer_reduction_narrow_theorem_note_2026-07-02"
+    },
+    {
+      "from": "theta_g4_theta_bar_assembly_current_surface_no_go_note_2026-07-04",
+      "to": "theta_g1_4d_carrier_supply_current_surface_no_go_note_2026-07-04"
+    },
+    {
+      "from": "theta_g4_theta_bar_assembly_current_surface_no_go_note_2026-07-04",
+      "to": "theta_g1_defect_closure_current_surface_no_go_note_2026-07-04"
+    },
+    {
+      "from": "theta_g4_theta_bar_assembly_current_surface_no_go_note_2026-07-04",
+      "to": "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04"
+    },
+    {
+      "from": "theta_g4_theta_bar_assembly_current_surface_no_go_note_2026-07-04",
+      "to": "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04"
+    },
+    {
+      "from": "theta_g4_theta_bar_assembly_current_surface_no_go_note_2026-07-04",
+      "to": "theta_mass_determinant_bridge_retirement_readiness_no_go_note_2026-07-04"
+    },
+    {
       "from": "theta_gauge_positive_route_stretch_status_2026-07-04",
       "to": "theta_supplier_flavored_grading_spectral_flow_registers_winding_2d_narrow_theorem_note_2026-07-02"
     },
@@ -111109,7 +111153,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "167aa98bcaa43742c7b9ef0e1a7eab238df9a750a1cfe76b4c6ada1a67bcdc5f",
+      "note_hash": "6f5f2f9fee625ad66c669db8190c91792d88515da803f0d312cf0a880f57d831",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -119147,6 +119191,30 @@
       "path": "docs/THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md",
       "runner_path": "scripts/theta_g3_phase_insertion_current_surface_no_go_2026_07_04.py",
       "title": "Theta G3 Phase Insertion Current Surface No-Go Note"
+    },
+    "theta_g4_theta_bar_assembly_current_surface_no_go_note_2026-07-04": {
+      "claim_id": "theta_g4_theta_bar_assembly_current_surface_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "strong_cp_theta_bar_structured_admission_2026-06-04",
+        "strong_cp_theta_zero_note",
+        "theta_gauge_positive_route_stretch_status_2026-07-04",
+        "theta_assembly_paired_shift_fixed_grading_mckean_singer_reduction_narrow_theorem_note_2026-07-02",
+        "theta_g1_4d_carrier_supply_current_surface_no_go_note_2026-07-04",
+        "theta_g1_defect_closure_current_surface_no_go_note_2026-07-04",
+        "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04",
+        "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04",
+        "theta_mass_determinant_bridge_retirement_readiness_no_go_note_2026-07-04"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "9d0e40be8c4f63da7d10ddcb223c0d76a5862ed9f75be8f79d13d962a52870ac",
+      "path": "docs/THETA_G4_THETA_BAR_ASSEMBLY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/theta_g4_theta_bar_assembly_current_surface_no_go_2026_07_04.py",
+      "title": "Theta G4 Theta-Bar Assembly Current-Surface No-Go Note"
     },
     "theta_gauge_positive_route_stretch_status_2026-07-04": {
       "claim_id": "theta_gauge_positive_route_stretch_status_2026-07-04",
@@ -127455,7 +127523,7 @@
       "bounded_theorem": 1560,
       "decoration": 3,
       "meta": 319,
-      "no_go": 348,
+      "no_go": 349,
       "none": 1216,
       "open_gate": 134,
       "positive_theorem": 274
@@ -127464,15 +127532,15 @@
       "bounded_theorem": 1965,
       "decoration": 3,
       "meta": 319,
-      "no_go": 452,
+      "no_go": 453,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14594,
-    "leaf_count": 1266,
-    "node_count": 3854,
+    "edge_count": 14605,
+    "leaf_count": 1267,
+    "node_count": 3855,
     "root_count": 1102,
-    "runners_with_path": 3477
+    "runners_with_path": 3478
   }
 }

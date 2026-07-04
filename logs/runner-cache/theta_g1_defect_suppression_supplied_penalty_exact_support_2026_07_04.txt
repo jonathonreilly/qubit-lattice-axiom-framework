@@ -1,0 +1,153 @@
+theta G1 supplied defect-penalty exact-support verifier
+
+================================================================================================
+A. source presence, metadata, and claim firewall
+================================================================================================
+[PASS] exists: docs/THETA_G1_DEFECT_SUPPRESSION_SUPPLIED_PENALTY_EXACT_SUPPORT_NOTE_2026-07-04.md
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md
+[PASS] exists: docs/THETA_G1_CLOSED_NONEXACT_INTERFACE_EXACT_SUPPORT_NOTE_2026-07-04.md
+[PASS] exists: docs/THETA_G1_4D_CARRIER_SUPPLY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/THETA_G1_DEFECT_CLOSURE_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/THETA_G1_EXACT_BRANCH_CONSTRAINT_NO_GO_NOTE_2026-07-04.md
+[PASS] note has Type bounded_theorem
+[PASS] note has Claim type bounded_theorem
+[PASS] note declares conditional support
+[PASS] runner path is wired
+[PASS] scope boundary present: This note does not retire theta
+[PASS] scope boundary present: does not set `theta_bar = 0`
+[PASS] scope boundary present: does not edit any Tier-A registry
+[PASS] scope boundary present: does not claim that the current framework derives a defect-p
+[PASS] banned overclaim absent: theta is retired
+[PASS] banned overclaim absent: theta_bar = 0 is derived
+[PASS] banned overclaim absent: therefore the current framework derives a defect-penalty action
+[PASS] banned overclaim absent: finite-kappa physical suppression strength is derived
+[PASS] banned overclaim absent: the Tier-A registry is edited
+
+================================================================================================
+B. source rows and Tier-A state
+================================================================================================
+[PASS] minimal ledger row resolves
+[PASS] minimal row has note path or premise
+[PASS] registry ledger row resolves
+[PASS] registry row has note path or premise
+[PASS] carrier4d ledger row resolves
+[PASS] carrier4d row has note path or premise
+[PASS] block36 ledger row resolves
+[PASS] block36 row has note path or premise
+[PASS] block37 ledger row resolves
+[PASS] block37 row has note path or premise
+[PASS] g1_current ledger row resolves
+[PASS] g1_current row has note path or premise
+[PASS] exact_branch ledger row resolves
+[PASS] exact_branch row has note path or premise
+[PASS] Tier-A genuine admitted input count remains two
+[PASS] theta minimum decomposition unchanged
+[PASS] registry still names multi-plaquette winding
+
+================================================================================================
+C. source-boundary memory
+================================================================================================
+[PASS] minimal axiom withholds source/action and physical-observable iden
+[PASS] minimal axiom withholds transition probabilities or weights
+[PASS] minimal axiom withholds Admissibility is not a dynamics axiom
+[PASS] Block36 suppression/interface memory: Dynamical suppression
+[PASS] Block36 suppression/interface memory: action/measure/energy theorem
+[PASS] Block36 suppression/interface memory: I1. The physical branch variable n
+[PASS] Block37 carrier non-supply memory: physical 4D gauge-carrier theorem
+[PASS] Block37 carrier non-supply memory: Theta's gauge-side winding account therefore remains live
+[PASS] G1 current no-go memory: On the current surface, G1 is not derived.
+[PASS] G1 current no-go memory: do not supply the physical premise
+[PASS] exactness no-go memory: The route closes the defect by deleting the carrier.
+[PASS] exactness no-go memory: Exactness is too strong
+
+================================================================================================
+D. exact penalty algebra on T4_2
+================================================================================================
+[PASS] D2*D1 = 0
+[PASS] T4 H2 dim remains six
+[PASS] closed non-exact complementary branch has zero defect norm
+[PASS] closed non-exact complementary branch is not exact
+[PASS] closed non-exact complementary branch has Qraw=2
+[PASS] unit flux (0, 1) has zero defect norm
+[PASS] unit flux (0, 1) is not exact
+[PASS] unit flux (0, 2) has zero defect norm
+[PASS] unit flux (0, 2) is not exact
+[PASS] unit flux (0, 3) has zero defect norm
+[PASS] unit flux (0, 3) is not exact
+[PASS] unit flux (1, 2) has zero defect norm
+[PASS] unit flux (1, 2) is not exact
+[PASS] unit flux (1, 3) has zero defect norm
+[PASS] unit flux (1, 3) is not exact
+[PASS] unit flux (2, 3) has zero defect norm
+[PASS] unit flux (2, 3) is not exact
+[PASS] exact branch sample 0 has zero defect norm
+[PASS] exact branch sample 0 has Qraw=0
+[PASS] exact branch sample 1 has zero defect norm
+[PASS] exact branch sample 1 has Qraw=0
+[PASS] exact branch sample 2 has zero defect norm
+[PASS] exact branch sample 2 has Qraw=0
+[PASS] exact branch sample 3 has zero defect norm
+[PASS] exact branch sample 3 has Qraw=0
+[PASS] exact branch sample 4 has zero defect norm
+[PASS] exact branch sample 4 has Qraw=0
+[PASS] exact branch sample 5 has zero defect norm
+[PASS] exact branch sample 5 has Qraw=0
+[PASS] exact branch sample 6 has zero defect norm
+[PASS] exact branch sample 6 has Qraw=0
+[PASS] exact branch sample 7 has zero defect norm
+[PASS] exact branch sample 7 has Qraw=0
+[PASS] exact branch sample 8 has zero defect norm
+[PASS] exact branch sample 8 has Qraw=0
+[PASS] exact branch sample 9 has zero defect norm
+[PASS] exact branch sample 9 has Qraw=0
+[PASS] exact branch sample 10 has zero defect norm
+[PASS] exact branch sample 10 has Qraw=0
+[PASS] exact branch sample 11 has zero defect norm
+[PASS] exact branch sample 11 has Qraw=0
+[PASS] single plaquette branch is defectful
+[PASS] single plaquette branch has unstable Qraw seed
+[PASS] exact local move preserves defect current
+[PASS] exact local move preserves defect penalty
+[PASS] exact local move preserves defect current
+[PASS] exact local move preserves defect penalty
+[PASS] exact local move preserves defect current
+[PASS] exact local move preserves defect penalty
+[PASS] exact local move preserves defect current
+[PASS] exact local move preserves defect penalty
+[PASS] all closed-family branches have zero penalty
+[PASS] all defect-family branches have positive penalty
+[PASS] finite defect family has positive c_min
+[PASS] defect fraction starts positive at kappa=0
+[PASS] defect fraction decreases with kappa
+[PASS] defect fraction is strongly suppressed by kappa=4
+[PASS] finite-family exponential defect bound at kappa=0.5
+[PASS] finite-family exponential defect bound at kappa=1.0
+[PASS] finite-family exponential defect bound at kappa=2.0
+[PASS] finite-family exponential defect bound at kappa=4.0
+
+================================================================================================
+E. note theorem and route boundaries
+================================================================================================
+[PASS] theorem phrase present: The penalty is exact-move invariant
+[PASS] theorem phrase present: Closed non-exact sectors survive
+[PASS] theorem phrase present: Global exactness is not imposed
+[PASS] theorem phrase present: Defectful branches are projected away
+[PASS] theorem phrase present: W_def(kappa) <= N_def exp(-kappa c_min)
+[PASS] non-claim present: No physical 4D carrier is supplied
+[PASS] non-claim present: No current-surface defect penalty
+[PASS] non-claim present: No finite-`kappa` physical suppression strength is claimed
+[PASS] non-claim present: No G2 physical sector/readout theorem is supplied
+[PASS] remaining route present: Physical 4D carrier theorem
+[PASS] remaining route present: Defect-penalty action theorem
+[PASS] remaining route present: Closed-nonexact interface theorem
+[PASS] remaining route present: G2 sector/readout registration
+[PASS] remaining route present: G3 phase source
+[PASS] remaining route present: Mass-side determinant channel
+
+================================================================================================
+TOTAL: PASS=128 FAIL=0 CHECKS=128
+================================================================================================

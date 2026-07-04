@@ -1,0 +1,40 @@
+slug: tier-a-elimination-block38-theta-g1-defect-suppression-support
+goal: eliminate Tier-A admissions by retiring or sharply isolating theta/AC residual atoms
+target_status: best_honest_status
+block: 38
+branch: physics-loop/tier-a-elimination-block38-theta-g1-defect-suppression-support-20260704
+base_branch: physics-loop/tier-a-elimination-block37-theta-g1-4d-carrier-supply-no-go-20260704
+active_route: theta G1 supplied defect-penalty exact support
+hard_residual: "derive a physical 4D carrier and a physical action/measure/energy theorem supplying a defect penalty or exact closedness"
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: supports
+proposal_allowed: false
+runtime_mode: goal_campaign
+files_touched:
+  - docs/THETA_G1_DEFECT_SUPPRESSION_SUPPLIED_PENALTY_EXACT_SUPPORT_NOTE_2026-07-04.md
+  - scripts/theta_g1_defect_suppression_supplied_penalty_exact_support_2026_07_04.py
+  - logs/runner-cache/theta_g1_defect_suppression_supplied_penalty_exact_support_2026_07_04.txt
+  - .claude/science/physics-loops/tier-a-elimination-block38-theta-g1-defect-suppression-support/
+open_imports:
+  - physical 4D gauge/multi-plaquette carrier
+  - physical defect-penalty action, measure, or energy theorem
+  - closed-nonexact interface theorem deriving dn = 0 without erasing H2
+  - G2 physical sector/readout registration
+  - G3 phase source, coefficient, and action/measure registration
+  - theta mass-side determinant-channel bridge
+no_go_routes:
+  - global exactness n=dA as G1 closure
+  - current axioms/primitives already supplying G1
+  - spatial Z3/time-support already supplying the 4D carrier
+checks:
+  runner: "PYTHONPATH=scripts python3 scripts/theta_g1_defect_suppression_supplied_penalty_exact_support_2026_07_04.py -> PASS=128 FAIL=0"
+  py_compile: "PASS"
+  audit_pipeline: "PASS; row theta_g1_defect_suppression_supplied_penalty_exact_support_note_2026-07-04 seeded bounded_theorem/unaudited/unaudited with 7 deps"
+  audit_lint_strict: "PASS; existing 23 warnings / 178 notices, no errors"
+  diff_check: "PASS"
+review_loop_disposition: pass
+pr_status: pending
+pr_url: pending
+next_exact_action: "Commit/push/open PR; next science route should derive physical 4D carrier or a physical defect-penalty action theorem."
+stop_condition: "Continue Tier-A campaign unless runtime/tooling blocks or all viable residuals are documented blocked."

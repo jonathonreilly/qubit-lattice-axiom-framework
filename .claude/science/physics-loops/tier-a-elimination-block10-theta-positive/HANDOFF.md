@@ -5,6 +5,11 @@
 Block 10 is a positive-route stretch synthesis for theta's gauge-side winding
 account.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4935
+Branch: `physics-loop/tier-a-elimination-block10-theta-positive-20260704`
+Base: `physics-loop/tier-a-elimination-block09-theta-gauge-20260704`
+Source commit: `cc49e6dfd`
+
 ## Expected Claim Movement
 
 The block should not edit the Tier-A registry. Its movement is:
@@ -33,4 +38,5 @@ G3 phase-type F cup F insertion, and G4 physical theta assembly.
 
 ## Next Exact Action
 
-Commit, push, and open the stacked PR against block 9.
+Monitor PR #4935 audit status. The next route is G3 phase-type `F cup F`
+insertion, unless G1 defect closure is split out first.

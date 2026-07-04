@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 856 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1943 |
+| unaudited | 1944 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 25 |
+| ~~audited_conditional~~ | 24 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1229 |
-| `audited_conditional` | 25 |
+| `audited_conditional` | 24 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2281 |
+| `unaudited` | 2282 |
 
 | claim_type | count |
 |---|---:|
@@ -1373,7 +1373,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1842,19 +1841,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** From the definitions alpha_LM := alpha_bare/u_0 and alpha_s(v) := alpha_bare/u_0^2, the stated identities follow by direct algebra over positive reals.  _(class `A`)_
 - **chain closes:** True — The conclusions are algebraic consequences of the two displayed definitions with positivity supplying division, square-root uniqueness, and logarithm domains. No cited authority or hidden numerical input is needed for the audited abstract scope.
 - **rationale:** Independent symbolic checking confirms T1-T6: the vertex-power identities, geometric-mean/log form, constant-ratio chain, u_0=1 boundary, unique positive inverse, and P^(1/4) substitution all reduce to zero residuals under the stated positivity assumptions. The runner source performs genuine symbolic and numerical algebra checks rather than hard-coding a contested physical value, and its documentary scope guards do not enter the load-bearing proof. The verdict is clean only for the narrow abstract algebraic theorem, not for any parent alpha_s(M_Z), plaquette, Wilson-action, or bare-normalization claim.
-- **auditor confidence:** high
-
-### `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18`
-
-- **Note:** [`ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md`](../../docs/ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Exact SU(3) substitution and coupling-convention normalization of the stated universal one- and two-loop QCD beta-kernel formulas, excluding beta_2, beta_3, threshold matching, and any physical alpha_s(M_Z) running claim.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The note asserts the universal QCD coefficients beta_0(n_f) = (11/3) C_A - (4/3) T_F n_f and beta_1(n_f) = (34/3) C_A^2 - 4 C_F T_F n_f - (20/3) C_A T_F n_f.  _(class `A`)_
-- **chain closes:** False — The runner exactly checks the SU(3) algebra, active-flavor values, convention conversions, and falsifiers after the beta_0 and beta_1 formulas have already been inserted. The restricted packet gives no cited authority or first-principles derivation for those universal QCD coefficient formulas themselves.
-- **rationale:** Issue: the load-bearing universal beta_0 and beta_1 QCD coefficient formulas are asserted directly rather than derived from an axiom or supplied by a retained one-hop authority. Why this blocks: the runner's successful checks are exact algebra and source-boundary verification, not a first-principles computation of the loop coefficients. Repair target: add a retained derivation or explicit retained authority for the universal one- and two-loop QCD beta coefficients on the declared SU(3), T_F = 1/2 surface. Claim boundary until fixed: the packet supports exact normalization and substitution of the stated formulas, not native derivation of the universal beta-kernel.
 - **auditor confidence:** high
 
 ### `alt_connectivity_family_basin_note`

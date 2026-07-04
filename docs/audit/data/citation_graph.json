@@ -59803,7 +59803,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "24919086f4346b863a2aa8f688933c777468bc397cbe48889877ee49cfb1a28a",
+      "note_hash": "0097e605c2d36cbea5cbbe4f64b53e319d84e24b0f37725b905b26b236a09b25",
       "path": "docs/ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md",
       "runner_path": "scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py",
       "title": "Alpha_s Universal Two-Loop Beta-Kernel Theorem Note (2026-06-18)"

@@ -2,9 +2,10 @@
 
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem
-**Status:** exact support theorem / source-side audit unlock candidate
+**Status:** bounded algebra/convention kernel conditional on supplied universal
+`beta_0`/`beta_1` coefficient templates
 **Primary runner:** `scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py`
-**Runner summary:** `SUMMARY: PASS=28 FAIL=0`
+**Runner summary:** `SUMMARY: PASS=30 FAIL=0`
 **Parent audit pressure:** `alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02`
 
 ## 1. Purpose
@@ -12,16 +13,22 @@
 The alpha_s direct Wilson-loop audit names "4-loop QCD running" as one of the
 load-bearing imported corrections. This note carves out the part that can be
 proved on the framework's existing SU(3) active-flavor surface without
-adopting MSbar higher-loop counterterm machinery: the universal two-loop
-beta-kernel, namely `beta_0` and `beta_1`.
+adopting MSbar higher-loop counterterm machinery: exact substitution and
+coupling-convention normalization for supplied universal `beta_0` and
+`beta_1` coefficient templates.
 
 The theorem is intentionally narrower than a physical alpha_s(M_Z) running
-claim. It is a coefficient-kernel theorem for the universal one- and two-loop
-terms.
+claim. It is a bounded algebra/convention kernel conditional on those supplied
+one- and two-loop coefficient templates, not a derivation of the loop
+coefficients from first principles.
 
 ## 2. Boundary Clauses
 
-This note proves the universal two-loop beta-kernel.
+This note does not derive the universal `beta_0` or `beta_1` loop coefficient
+formulas. They are supplied coefficient templates for this bounded row.
+
+This note proves the exact SU(3) substitution, active-flavor specialization,
+and coupling-convention consequences conditional on those supplied templates.
 
 This note does not derive beta_2, beta_3, MSbar counterterms, or four-loop running.
 
@@ -47,10 +54,10 @@ T_F = 1/2
 The active-flavor parameter `n_f` is left symbolic. Physical threshold
 placement is not used.
 
-## 4. Universal Coefficients
+## 4. Supplied Universal Coefficient Templates
 
-The one-loop and two-loop QCD coefficients are the scheme-independent
-universal terms:
+The supplied one-loop and two-loop QCD coefficient templates are the
+scheme-independent universal terms:
 
 ```text
 beta_0(n_f) = (11/3) C_A - (4/3) T_F n_f
@@ -61,14 +68,16 @@ beta_1(n_f) =
   - (20/3) C_A T_F n_f
 ```
 
-Substituting the SU(3) surface gives exact rational functions:
+Conditional on those templates, substituting the SU(3) surface gives exact
+rational functions:
 
 ```text
 beta_0(n_f) = 11 - 2 n_f / 3
 beta_1(n_f) = 102 - 38 n_f / 3
 ```
 
-The runner verifies these exact forms and the active-flavor values:
+The runner verifies these exact substitution forms and the active-flavor
+values:
 
 ```text
 beta_0(6) = 7
@@ -115,17 +124,20 @@ The runner includes deliberate wrong kernels:
 - drifting the trace normalization from `T_F = 1/2` to `T_F = 1`;
 - using generation count as active quark flavor count.
 
-Each produces a different coefficient, so the theorem checks a real dependency
-class rather than only printing known comparator values.
+Each produces a different coefficient, so the theorem checks a real
+normalization/substitution dependency class rather than only printing known
+comparator values.
 
 ## 7. Audit Implication
 
-If accepted, this theorem partially retires the "4-loop QCD running" import by
-making the universal L1/L2 coefficient kernel native to the framework's SU(3)
-surface.
+If accepted, this theorem partially retires the SU(3) substitution and
+coupling-convention part of the "4-loop QCD running" import. It does not retire
+the origin of the universal `beta_0`/`beta_1` coefficient formulas themselves.
 
 It does not close the full alpha_s running bridge. The remaining residuals are:
 
+- retained/native derivation or approved-premise registration of the supplied
+  universal `beta_0` and `beta_1` coefficient templates;
 - `beta_2` and `beta_3` in an MSbar or other specified scheme;
 - dimensional-regularization/counterterm machinery for those scheme-dependent
   coefficients;
@@ -145,7 +157,7 @@ python3 scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py
 Expected summary:
 
 ```text
-SUMMARY: PASS=28 FAIL=0
+SUMMARY: PASS=30 FAIL=0
 ```
 
 The cached output is recorded at

@@ -1,0 +1,172 @@
+AC_phi_lambda R-eta minimal K-breaking transport no-go verifier
+
+========================================================================================
+A. source presence and scope firewalls
+========================================================================================
+[PASS] exists: docs/ACPHILAMBDA_R_ETA_MINIMAL_K_BREAKING_TRANSPORT_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+[PASS] exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+[PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+[PASS] exists: docs/ACPHILAMBDA_CYCLE_FLUX_TRANSPORT_FACE_INVENTORY_2026-07-01.md
+[PASS] exists: docs/ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md
+[PASS] exists: docs/ACPHILAMBDA_REAL_HOLONOMY_LOCUS_IDENTITY_2026-07-01.md
+[PASS] exists: docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md
+[PASS] exists: docs/ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md
+[PASS] exists: docs/ACPHILAMBDA_R_ETA_CURRENT_SURFACE_READOUT_IDENTIFICATION_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/ACPHILAMBDA_R_ETA_TRANSPORT_EQUALITY_STRETCH_NO_GO_NOTE_2026-07-04.md
+[PASS] note declares Type no_go
+[PASS] note declares Claim type no_go
+[PASS] note declares K-breaking route scope
+[PASS] note declares independent audit boundary
+[PASS] note says no registry/axiom/primitive edit
+[PASS] note says AC not retired
+[PASS] note says R-eta not removed
+[PASS] banned overclaim absent: AC_phi_lambda is retired
+[PASS] banned overclaim absent: R-eta is retired
+[PASS] banned overclaim absent: R-eta is derived
+[PASS] banned overclaim absent: Phi = Tr L_3^+ is derived
+[PASS] banned overclaim absent: we remove R-eta
+[PASS] banned overclaim absent: registry is edited
+[PASS] banned overclaim absent: audit verdict is set
+
+========================================================================================
+B. Tier-A and current-source state
+========================================================================================
+[PASS] Tier-A genuine admitted input count remains two
+[PASS] AC minimum decomposition remains two atoms
+[PASS] AC statement keeps R-eta
+[PASS] AC statement keeps conditional magnitude
+[PASS] ledger row exists: acphilambda_cycle_flux_transport_face_inventory_2026-07-01
+[PASS] acphilambda_cycle_flux_transport_face_inventory_2026-07-01 claim_type
+[PASS] acphilambda_cycle_flux_transport_face_inventory_2026-07-01 not effective retained
+[PASS] acphilambda_cycle_flux_transport_face_inventory_2026-07-01 has note path
+[PASS] ledger row exists: acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01
+[PASS] acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01 claim_type
+[PASS] acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01 not effective retained
+[PASS] acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01 has note path
+[PASS] ledger row exists: acphilambda_real_holonomy_locus_identity_2026-07-01
+[PASS] acphilambda_real_holonomy_locus_identity_2026-07-01 claim_type
+[PASS] acphilambda_real_holonomy_locus_identity_2026-07-01 not effective retained
+[PASS] acphilambda_real_holonomy_locus_identity_2026-07-01 has note path
+[PASS] ledger row exists: acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01
+[PASS] acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01 claim_type
+[PASS] acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01 not effective retained
+[PASS] acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01 has note path
+[PASS] ledger row exists: acphilambda_k_even_registration_correction_registered_pattern_2026-07-02
+[PASS] acphilambda_k_even_registration_correction_registered_pattern_2026-07-02 claim_type
+[PASS] acphilambda_k_even_registration_correction_registered_pattern_2026-07-02 not effective retained
+[PASS] acphilambda_k_even_registration_correction_registered_pattern_2026-07-02 has note path
+[PASS] ledger row exists: acphilambda_r_eta_current_surface_readout_identification_no_go_note_2026-07-04
+[PASS] acphilambda_r_eta_current_surface_readout_identification_no_go_note_2026-07-04 claim_type
+[PASS] acphilambda_r_eta_current_surface_readout_identification_no_go_note_2026-07-04 not effective retained
+[PASS] acphilambda_r_eta_current_surface_readout_identification_no_go_note_2026-07-04 has note path
+[PASS] ledger row exists: acphilambda_r_eta_transport_equality_stretch_no_go_note_2026-07-04
+[PASS] acphilambda_r_eta_transport_equality_stretch_no_go_note_2026-07-04 claim_type
+[PASS] acphilambda_r_eta_transport_equality_stretch_no_go_note_2026-07-04 not effective retained
+[PASS] acphilambda_r_eta_transport_equality_stretch_no_go_note_2026-07-04 has note path
+
+========================================================================================
+C. premise-boundary checks
+========================================================================================
+[PASS] minimal axioms keep formation rules downstream
+[PASS] minimal axioms keep with what weight downstream
+[PASS] minimal axioms keep or at what rate downstream
+[PASS] minimal axioms keep source/action downstream
+[PASS] minimal axioms keep physical-observable identification downstream
+[PASS] minimal axioms keep `K`/CPT structure downstream
+[PASS] scale primitive supplies no selector/readout bridge
+[PASS] kinetic primitive supplies no selector/readout bridge
+[PASS] realized-state primitive supplies no value/selection
+[PASS] transport source says equation remains wall
+[PASS] transport source says no flux equality derivation
+[PASS] holonomy source says no Phi derivation
+[PASS] real locus says K-breaking registered content needed
+[PASS] defect source requires rescale-breaking clause
+[PASS] K-even source keeps live licensed self-consistency map
+[PASS] block17 keeps R-eta live
+[PASS] block18 says transport route remains typed wall
+
+========================================================================================
+D. weighted C3 edge transport
+========================================================================================
+[PASS] weighted Laplacian row sums vanish
+[PASS] trace weighted Laplacian is 2(x+y+z)
+[PASS] principal minor sum is 3(xy+xz+yz)
+[PASS] edge trace formula records exact return trace
+[PASS] homogeneous edge trace is 2/3
+[PASS] inhomogeneous numeric sample misses target
+[PASS] sample pinv trace matches formula
+[PASS] normalized edge gap identity
+[PASS] normalized target iff pair sum is 3
+[PASS] normalized equality requires zero square gap
+[PASS] note states homogeneous-only edge hit
+
+========================================================================================
+E. one-edge defect family
+========================================================================================
+[PASS] one-edge formula
+[PASS] one-edge target residual has factor s
+[PASS] one-edge equation target gives zero defect
+[PASS] one-edge derivative is negative for allowed positive side
+[PASS] one-edge positive sample below target
+[PASS] one-edge note says s=0 only
+
+========================================================================================
+F. one-site source/mass defect
+========================================================================================
+[PASS] mass defect determinant is 3m
+[PASS] mass defect inverse trace formula
+[PASS] mass defect inverse trace decomposes
+[PASS] mass defect finite part is 4/3
+[PASS] finite part is not target
+[PASS] positive full trace cannot hit target
+[PASS] positive sample full trace above 4/3
+[PASS] mass note states finite part miss
+
+========================================================================================
+G. mixed selector and current-interface checks
+========================================================================================
+[PASS] mixed homogeneous/source selector target requires alpha=1
+[PASS] mixed selector alpha=1 discards source contribution
+[PASS] mixed selector alpha=0 is source finite part
+[PASS] note says mixed route must derive coefficient
+[PASS] note says Record additivity does not select surface
+[PASS] note says records form does not choose rate/weight
+
+========================================================================================
+H. fan-out, theorem, and no-go discipline
+========================================================================================
+[PASS] fan-out heading present: Frame 1: normalized positive edge inhomogeneity
+[PASS] fan-out heading present: Frame 2: one-edge defect without conductance renormalization
+[PASS] fan-out heading present: Frame 3: one-site source/mass defect
+[PASS] fan-out heading present: Frame 4: affine or mixed transport selectors
+[PASS] fan-out heading present: Frame 5: Record and realized-state interfaces
+[PASS] note contains theorem/queue phrase: the implication
+[PASS] note contains theorem/queue phrase: is invalid
+[PASS] note contains theorem/queue phrase: minimal positive K-breaking transport does not retire R-eta
+[PASS] note contains theorem/queue phrase: successful theorem must either derive a non-minimal physical transport law
+[PASS] note contains theorem/queue phrase: Direct R-eta readout-license theorem
+[PASS] note contains theorem/queue phrase: Non-minimal transport theorem
+[PASS] note contains theorem/queue phrase: Theta residuals
+[PASS] no-go gate has N1
+[PASS] no-go gate has N2
+[PASS] no-go gate has N3
+[PASS] no-go gate has N4
+[PASS] no-go gate has N5
+[PASS] no-go gate has N6
+[PASS] no-go gate has N7
+[PASS] no-go gate has N8
+[PASS] N2 keeps collapsed wall
+[PASS] N3 forbids source/action bridge
+[PASS] N5 says not terminal
+[PASS] N7 steelmans richer operator
+[PASS] expected total present
+
+========================================================================================
+I. final summary
+========================================================================================
+
+TOTAL: PASS=133 FAIL=0

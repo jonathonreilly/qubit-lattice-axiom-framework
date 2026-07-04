@@ -1,0 +1,38 @@
+slug: tier-a-elimination-block36-theta-g1-closed-nonexact-interface-support
+goal: eliminate Tier-A admissions by retiring or sharply isolating theta/AC residual atoms
+target_status: best_honest_status
+block: 36
+branch: physics-loop/tier-a-elimination-block36-theta-g1-closed-nonexact-interface-support-20260704
+base_branch: physics-loop/tier-a-elimination-block35-theta-g1-defect-closure-no-go-20260704
+active_route: theta G1 closed-nonexact interface support
+hard_residual: "derive the closed-branch restriction dn = 0, or a dynamical suppression of branch defects, on the abelianized multi-plaquette dual"
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: supports
+proposal_allowed: false
+runtime_mode: goal_campaign
+files_touched:
+  - docs/THETA_G1_CLOSED_NONEXACT_INTERFACE_EXACT_SUPPORT_NOTE_2026-07-04.md
+  - scripts/theta_g1_closed_nonexact_interface_exact_support_2026_07_04.py
+  - logs/runner-cache/theta_g1_closed_nonexact_interface_exact_support_2026_07_04.txt
+  - .claude/science/physics-loops/tier-a-elimination-block36-theta-g1-closed-nonexact-interface-support/
+open_imports:
+  - physical derivation or approved premise for the closed-nonexact branch interface
+  - action/measure/energy theorem suppressing dn != 0, if the interface route fails
+  - G2 physical sector/readout registration
+  - G3 phase source, coefficient, and action/measure registration
+  - theta mass-side determinant-channel bridge
+no_go_routes:
+  - exact branch n=dA closes defects but erases H2/Q
+  - unrestricted defectful branch sum has no class-stable Q
+  - Record/Admissibility absorption does not supply a Bianchi or defect-suppression law
+checks:
+  runner: "PYTHONPATH=scripts python3 scripts/theta_g1_closed_nonexact_interface_exact_support_2026_07_04.py -> PASS=185 FAIL=0"
+  py_compile: "PASS"
+  audit_pipeline: "PASS; row theta_g1_closed_nonexact_interface_exact_support_note_2026-07-04 is bounded_theorem/unaudited/unaudited with graph deps"
+  audit_lint: "PASS; existing 23 warnings / 178 notices, no errors"
+  diff_check: "PASS"
+review_loop_disposition: pass
+pr_status: pending
+next_exact_action: "Commit, push, and open a stacked PR on Block35."
+stop_condition: "Continue Tier-A campaign unless runtime/tooling blocks or all viable residuals are documented blocked."

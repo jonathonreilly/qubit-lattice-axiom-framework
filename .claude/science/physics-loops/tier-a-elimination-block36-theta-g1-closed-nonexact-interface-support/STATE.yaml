@@ -33,6 +33,7 @@ checks:
   audit_lint: "PASS; existing 23 warnings / 178 notices, no errors"
   diff_check: "PASS"
 review_loop_disposition: pass
-pr_status: pending
-next_exact_action: "Commit, push, and open a stacked PR on Block35."
+pr_status: "PR #4977 open, mergeable, hosted audit_pipeline in progress at creation"
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4977"
+next_exact_action: "Verify hosted audit_pipeline on PR #4977, then continue Tier-A retirement with G1 closed-nonexact interface theorem, G1 dynamical defect suppression, G2 registration, G3 phase source, theta mass-side bridge, or a genuinely new AC route."
 stop_condition: "Continue Tier-A campaign unless runtime/tooling blocks or all viable residuals are documented blocked."

@@ -13,6 +13,7 @@ suppressed by a separate theorem.
 
 Branch: `physics-loop/tier-a-elimination-block36-theta-g1-closed-nonexact-interface-support-20260704`
 Base: `physics-loop/tier-a-elimination-block35-theta-g1-defect-closure-no-go-20260704`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4977
 
 ## Claim Movement
 
@@ -51,4 +52,8 @@ the runner proves.
 
 ## Next Exact Action
 
-Commit, push, and open a stacked PR on Block35.
+Verify hosted `audit_pipeline` on PR #4977, then continue Tier-A retirement
+from the refreshed queue: derive the G1 closed-nonexact interface, attack G1
+dynamical defect suppression, derive G2 sector/readout registration, derive G3
+phase source, close theta mass-side determinant bridge, or return to AC only
+with a genuinely new matter-action/statistics route.

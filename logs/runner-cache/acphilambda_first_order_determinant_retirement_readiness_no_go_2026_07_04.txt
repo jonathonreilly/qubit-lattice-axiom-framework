@@ -1,0 +1,46 @@
+AC_phi_lambda first-order determinant retirement-readiness no-go
+==============================================================================
+
+------------------------------------------------------------------------------
+A - source and registry firewalls
+------------------------------------------------------------------------------
+PASS: note declares no-go claim type
+PASS: note denies AC retirement and registry edits
+PASS: note denies r derivation and orbit premise adoption
+PASS: note keeps future routes open
+PASS: runner path is wired in note
+
+------------------------------------------------------------------------------
+B - existing sources still leave the measure-side horn live
+------------------------------------------------------------------------------
+PASS: registry has current AC(i) residual
+PASS: realized-state reduction names measure-side survivor
+PASS: first-order theorem claims first-order measure but not r retirement
+PASS: first-order theorem uses declared probe coupling
+PASS: orbit-occupancy note proposes but does not adopt premise
+PASS: block23 K-real no-go blocks algebra-as-physical-selector shortcut
+PASS: axiom/primitive hygiene supplies no measure or selection rule
+
+------------------------------------------------------------------------------
+C - finite determinant fork witness
+------------------------------------------------------------------------------
+PASS: det3 is holomorphic in independent b,c variables
+PASS: K-real restriction c=conj(b) introduces |b|^2 count-twice term -- a**3 - 3*a*x**2 - 3*a*y**2 + 2*x**3 - 6*x*y**2
+PASS: K-real restricted determinant depends on x^2+y^2
+PASS: independent and K-real horns are distinct finite evaluations -- ind=64576/9261; kreal=4400/1323
+PASS: Wirtinger mixed derivative localizes count-twice term
+PASS: sector and orbit horns map to distinct landed cells
+PASS: runner keeps both horn cells alive
+
+------------------------------------------------------------------------------
+D - no-go assembly
+------------------------------------------------------------------------------
+PASS: note states invalid implication
+PASS: note names missing physical horn selection
+PASS: note names declared-probe residual
+PASS: note leaves R-eta and theta untouched
+PASS: no-go discipline is complete
+PASS: banned overclaim phrases are absent -- []
+
+==============================================================================
+TOTAL: PASS=25 FAIL=0

@@ -6,8 +6,15 @@
 set or predict downstream status and does not edit the Tier-A registry,
 ledger, queue, or publication-status surfaces.
 **Actual source scope:** conditional bounded theorem on a supplied finite
-readout context, with P-dep as an explicit row-local premise. Record supplies
-additivity and the realized-outcome orbit; it does not by itself derive P-dep.
+readout context, with P-dep as an explicit row-local premise. The current
+Record axiom
+([`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)) supplies
+finite additivity and content-determination only; under the 2026-06-29
+foundation reset `K`/CPT orbit constancy is supplied-context content, carried
+for this row by
+[`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md)
+(T1, on the supplied ORBIT-INDEXING property). Neither the axiom nor that
+bridge derives P-dep.
 **Primary runner:**
 [`scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py`](../scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py)
 (SCORECARD: `TOTAL: PASS=15 FAIL=0`; cached:
@@ -49,6 +56,14 @@ and orbit-constant while assigning different values to the same registered
 sector datum. This does not alter the conditional theorem here; it explains why
 the P-dep premise must either remain explicit or be supplied by a separate
 physical-readout/extensionality theorem.
+
+**2026-07-04 downstream hygiene (premise relocation).** Per the 2026-07-04
+conditional-audit `missing_bridge_theorem` repair note: the `K`/CPT
+orbit-constancy premise this row previously took from the pre-reset Record
+wording is now carried by the cited supplied-context bridge note (T1), whose
+audit status is set only by the independent audit lane; P-dep remains this
+row's explicit supplied premise exactly as the 2026-06-18 independence no-go
+requires. The theorem content below is unchanged.
 
 **2026-06-20 conditional-scoping repair.** Prior boundary review named the source-side
 alternative: "keep this row explicitly conditional on P-dep" (the other arm —

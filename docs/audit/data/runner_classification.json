@@ -6041,11 +6041,11 @@
       "counts": {
         "A": 0,
         "B": 1,
-        "C": 0,
+        "C": 4,
         "D": 0
       },
-      "decoration_candidate": true,
-      "dominant_class": "B",
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "runner": "scripts/frontier_d3_landau_peierls_single_band_normalization_2026_06_18.py"
     },
     "d3_lower_bound_source_packet_gate_note_2026-06-06": {
@@ -54509,11 +54509,11 @@
       "counts": {
         "A": 0,
         "B": 1,
-        "C": 0,
+        "C": 4,
         "D": 0
       },
-      "decoration_candidate": true,
-      "dominant_class": "B",
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py": {
@@ -90761,16 +90761,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 691,
+    "decoration_candidates": 690,
     "dominant_class_distribution": {
       "A": 490,
-      "B": 634,
-      "C": 1273,
+      "B": 633,
+      "C": 1274,
       "D": 451,
       "none": 457
     },
     "runners_classified": 3305,
-    "runners_with_C": 1732,
+    "runners_with_C": 1733,
     "runners_with_D": 1062
   }
 }

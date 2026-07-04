@@ -1,23 +1,27 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_d3_landau_peierls_single_band_normalization_2026_06_18.py
-runner_sha256: cf3cc575e514cef86f85e139f0955ff0589282c1c361e8cbca963882732aca6b
+runner_sha256: 282b3e3b950161a5a35eb2812b7f13efa286dbad095188bd15affa060f92942b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 d=3 single-band Landau-Peierls normalization source-boundary runner
 frozen_parameters mu_ref=-2.000000 T=0.300000 LP_GRID_N=176 cell_norm=-8.333333333333e-02
+PASS: finite Peierls magnetic translations realize the full q-cell algebra: q=3 residual=5.47e-16 span_rank=9/9; q=5 residual=2.29e-16 span_rank=25/25; q=7 residual=7.24e-16 span_rank=49/49
+PASS: finite magnetic-cell count gives degeneracy density B/(2*pi) for B=2*pi/q: q=3 density=1/3=B/(2*pi); q=5 density=1/5=B/(2*pi); q=11 density=1/11=B/(2*pi)
 PASS: midpoint Euler-Maclaurin has no linear endpoint term: B1(1/2)=0
 PASS: midpoint h^2 coefficient is exactly 1/24: -B2(1/2)/2=1/24
 PASS: grand-potential second-difference coefficient is exactly -1/12 after integration by parts: -2*(1/24)=-1/12
 PASS: local magnetic oscillator invariant is det(Hxy): (a,b,c)=(3/2,5/3,1/7) trace=0 det=243/98; (a,b,c)=(7/5,11/6,-2/9) trace=0 det=2039/810; (a,b,c)=(5/4,9/8,1/3) trace=0 det=373/288
+PASS: saddle continuation uses the exact polynomial coefficient -det(Hxy)/12: det=243/98 coeff=-81/392; det=-247/98 coeff=247/1176; det=358/405 coeff=-179/2430
 PASS: cubic band transverse Hessian determinant is 4 cos(kx) cos(ky): max finite-difference determinant error=7.513e-08
+PASS: cubic full-patch determinant includes elliptic and saddle signs without changing coefficient: det_min=-3.990369, det_max=+3.990369
 PASS: native normalization reproduces parent d=3 LP reference value without fitting: lp_ref=-3.949577202602e-03, expected=-3.949577202602e-03
 PASS: cubic particle-hole symmetry is preserved by the normalized LP integral: max |chi(mu)-chi(-mu)|=3.469e-18
 PASS: source note records bounded status and no-axiom boundary: all required source-boundary phrases present
 PASS: runner uses exact rational normalization, not a fitted float: CELL_NORMALIZATION_EXACT=-1/12
-TOTAL: PASS=9 FAIL=0
+TOTAL: PASS=13 FAIL=0
 
 ----- stderr -----
 

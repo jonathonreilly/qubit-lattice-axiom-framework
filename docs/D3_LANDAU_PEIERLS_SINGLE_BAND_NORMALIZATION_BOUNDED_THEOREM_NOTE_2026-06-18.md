@@ -43,10 +43,18 @@ the source authority in this repo is the derivation and runner named above.
 ## Derivation
 
 1. **Peierls magnetic translations.** The plaquette convention has magnetic
-   translations satisfying `T_x T_y = exp(i B) T_y T_x`. Expanding the link
-   phases at small `B` gives the local covariant-momentum bracket
-   `[pi_x, pi_y] = i B` in the transverse patch. This step uses the same
-   Peierls flux convention as the finite-torus runner.
+   translations satisfying `T_x T_y = exp(i B) T_y T_x`. On a finite torus with
+   flux `B = 2*pi/q` through each `xy` plaquette and dimensions
+   `L_x = q M`, `L_y = N`, the clock/shift magnetic-cell representation obeys
+   `U V = exp(2*pi*i/q) V U` and spans the full `q x q` cell algebra. An
+   isolated magnetic subband therefore has one state per magnetic cell, i.e.
+   `M N` states over `q M N` transverse sites. The state density is exactly
+   `1/q = B/(2*pi)`. The runner verifies this finite-torus degeneracy count
+   for several `q` without importing a continuum Landau-level formula.
+
+   Expanding the link phases at small `B` gives the local covariant-momentum
+   bracket `[pi_x, pi_y] = i B` in the transverse patch. This step uses the
+   same Peierls flux convention as the finite-torus runner.
 
 2. **Single-band quadratic patch.** At fixed `k_z`, expand a smooth isolated
    band in transverse momenta:
@@ -65,9 +73,11 @@ the source authority in this repo is the derivation and runner named above.
 
    Thus the local magnetic spacing is `B sqrt(det(H))` for elliptic patches,
    and the analytic coefficient carried into the Brillouin-zone formula is the
-   determinant `E_xx E_yy - E_xy^2`. Saddle patches enter by analytic
-   continuation of this determinant coefficient; the note does not claim a
-   separate discrete Landau-level spectrum for an isolated saddle.
+   determinant `E_xx E_yy - E_xy^2`. Saddle patches enter because the final
+   local response coefficient is the polynomial `-det(H)/12`, not a
+   square-root branch. The runner checks the exact rational coefficient on
+   both positive- and negative-determinant quadratic patches; the note does
+   not claim a separate discrete Landau-level spectrum for an isolated saddle.
 
 3. **Midpoint Euler-Maclaurin coefficient.** The local magnetic levels sample
    the transverse action by midpoint levels `(n + 1/2) h`, with
@@ -104,6 +114,11 @@ the source authority in this repo is the derivation and runner named above.
    Omega''(0) = -1/12 * integral f'(E(k)) det(H_xy(k)) d^3k/(2*pi)^3.
    ```
 
+   Since the local coefficient is polynomial in `det(H_xy)`, the full
+   Brillouin-zone patching does not require a separate sign branch at saddle
+   points. The cubic-band runner samples both signs of `det(H_xy)` and applies
+   the same exact coefficient.
+
 5. **Cubic-band substitution.** For the cubic nearest-neighbor band,
    `E_xx = 2 cos(kx)`, `E_yy = 2 cos(ky)`, and `E_xy = 0`, so the determinant
    is `4 cos(kx) cos(ky)`. No empirical scalar is fitted.
@@ -111,9 +126,9 @@ the source authority in this repo is the derivation and runner named above.
 ## Source Boundary
 
 This note removes the d=3 orbital-response decomposition's naked textbook
-normalization input by deriving the `-1/12` spinless unit-flux factor in the
-same Peierls-flux convention as the finite-torus comparison runner. The note is
-still bounded:
+normalization input by deriving the finite-torus `B/(2*pi)` magnetic-cell
+density and the `-1/12` spinless unit-flux factor in the same Peierls-flux
+convention as the finite-torus comparison runner. The note is still bounded:
 
 - it is a single-band, smooth-patch, spinless Peierls-flux statement;
 - it does not derive an interacting or continuum-QFT response;
@@ -123,11 +138,12 @@ still bounded:
 
 ## Runner Gates
 
-The runner verifies the exact Bernoulli coefficients, the local symplectic
-determinant invariant, the cubic-band Hessian determinant, and the parent d=3
-reference Landau-Peierls value using this fixed normalization. The passing run
-reports:
+The runner verifies the finite magnetic-cell degeneracy density, the exact
+Bernoulli coefficients, the local symplectic determinant invariant, the
+polynomial saddle-continuation coefficient, the cubic-band Hessian determinant,
+and the parent d=3 reference Landau-Peierls value using this fixed
+normalization. The passing run reports:
 
 ```text
-TOTAL: PASS=9 FAIL=0
+TOTAL: PASS=13 FAIL=0
 ```

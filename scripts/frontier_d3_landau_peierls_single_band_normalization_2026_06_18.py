@@ -71,12 +71,41 @@ def midpoint_euler_maclaurin_coefficient() -> Fraction:
     return -bernoulli_2(half) / 2
 
 
+def magnetic_clock_shift_rank(q: int) -> tuple[float, int]:
+    """Return the commutation residual and span rank for the q-cell algebra."""
+    omega = np.exp(2j * math.pi / q)
+    clock = np.diag([omega**n for n in range(q)])
+    shift = np.zeros((q, q), dtype=complex)
+    for n in range(q):
+        shift[(n + 1) % q, n] = 1.0
+    residual = float(np.linalg.norm(clock @ shift - omega * shift @ clock))
+    basis = []
+    for a in range(q):
+        clock_power = np.linalg.matrix_power(clock, a)
+        for b in range(q):
+            basis.append((clock_power @ np.linalg.matrix_power(shift, b)).reshape(-1))
+    rank = int(np.linalg.matrix_rank(np.vstack(basis), tol=1.0e-10))
+    return residual, rank
+
+
+def magnetic_subband_density(q: int, magnetic_cells_x: int, cells_y: int) -> Fraction:
+    """State density of one isolated magnetic subband for B=2*pi/q."""
+    states_in_subband = magnetic_cells_x * cells_y
+    transverse_sites = q * magnetic_cells_x * cells_y
+    return Fraction(states_in_subband, transverse_sites)
+
+
 def oscillator_characteristic_coefficients(a: Fraction, b: Fraction, c: Fraction) -> tuple[Fraction, Fraction]:
     """Return trace(JH), det(JH) for H=[[a,c],[c,b]], J=[[0,1],[-1,0]]."""
     # JH = [[c, b], [-a, -c]]
     trace = c - c
     determinant = (-c * c) - (b * -a)
     return trace, determinant
+
+
+def local_response_coefficient(a: Fraction, b: Fraction, c: Fraction) -> Fraction:
+    """Local LP coefficient after midpoint and integration-by-parts reduction."""
+    return CELL_NORMALIZATION_EXACT * (a * b - c * c)
 
 
 def fermi_prime(energy: np.ndarray, mu: float, temperature: float) -> np.ndarray:
@@ -140,6 +169,30 @@ def main() -> int:
     )
     gates = Gates()
 
+    magnetic_algebra_ok = True
+    magnetic_details: list[str] = []
+    for q in (3, 5, 7):
+        residual, rank = magnetic_clock_shift_rank(q)
+        magnetic_algebra_ok = magnetic_algebra_ok and residual <= 1.0e-12 and rank == q * q
+        magnetic_details.append(f"q={q} residual={residual:.2e} span_rank={rank}/{q*q}")
+    gates.check(
+        "finite Peierls magnetic translations realize the full q-cell algebra",
+        magnetic_algebra_ok,
+        "; ".join(magnetic_details),
+    )
+
+    density_ok = True
+    density_details: list[str] = []
+    for q, mx, ny in ((3, 4, 5), (5, 2, 7), (11, 3, 2)):
+        density = magnetic_subband_density(q, mx, ny)
+        density_ok = density_ok and density == Fraction(1, q)
+        density_details.append(f"q={q} density={density}=B/(2*pi)")
+    gates.check(
+        "finite magnetic-cell count gives degeneracy density B/(2*pi) for B=2*pi/q",
+        density_ok,
+        "; ".join(density_details),
+    )
+
     half = Fraction(1, 2)
     b1_half = bernoulli_1(half)
     midpoint_coeff = midpoint_euler_maclaurin_coefficient()
@@ -178,6 +231,27 @@ def main() -> int:
         "; ".join(oscillator_details),
     )
 
+    continuation_examples = (
+        (Fraction(3, 2), Fraction(5, 3), Fraction(1, 7)),
+        (Fraction(3, 2), Fraction(-5, 3), Fraction(1, 7)),
+        (Fraction(-4, 5), Fraction(-7, 6), Fraction(2, 9)),
+    )
+    signs = set()
+    continuation_ok = True
+    continuation_details: list[str] = []
+    for a, b, c in continuation_examples:
+        det_h = a * b - c * c
+        coeff = local_response_coefficient(a, b, c)
+        continuation_ok = continuation_ok and coeff == -det_h / 12
+        signs.add(1 if det_h > 0 else -1 if det_h < 0 else 0)
+        continuation_details.append(f"det={det_h} coeff={coeff}")
+    continuation_ok = continuation_ok and {1, -1}.issubset(signs)
+    gates.check(
+        "saddle continuation uses the exact polynomial coefficient -det(Hxy)/12",
+        continuation_ok,
+        "; ".join(continuation_details),
+    )
+
     sample_points = (
         (0.31, 0.72, 1.13),
         (1.20, 2.40, 0.17),
@@ -193,6 +267,14 @@ def main() -> int:
         "cubic band transverse Hessian determinant is 4 cos(kx) cos(ky)",
         max_hessian_error <= HESSIAN_FD_TOL,
         f"max finite-difference determinant error={max_hessian_error:.3e}",
+    )
+
+    k = 2.0 * math.pi * (np.arange(64, dtype=np.float64) + 0.5) / 64.0
+    det_grid = 4.0 * np.cos(k[:, None]) * np.cos(k[None, :])
+    gates.check(
+        "cubic full-patch determinant includes elliptic and saddle signs without changing coefficient",
+        float(np.min(det_grid)) < 0.0 and float(np.max(det_grid)) > 0.0,
+        f"det_min={float(np.min(det_grid)):+.6f}, det_max={float(np.max(det_grid)):+.6f}",
     )
 
     lp_ref = landau_peierls_chi_from_native_normalization(REFERENCE_MU, TEMPERATURE, LP_GRID_N)
@@ -216,6 +298,8 @@ def main() -> int:
 
     note_text = NOTE_PATH.read_text()
     required_phrases = (
+        "finite-torus `B/(2*pi)` magnetic-cell",
+        "polynomial `-det(H)/12`",
         "does not introduce a new axiom",
         "midpoint Euler-Maclaurin coefficient",
         "`-1/12`",

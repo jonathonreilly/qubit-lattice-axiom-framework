@@ -67647,7 +67647,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "afe9c864954cd1cfa99b792b92ea560e85ae975c817eb0620cfb5181d1d12f2f",
+      "note_hash": "473990bb804a62a4bd875cfa0a59223da8dae5f9bfd95b75c369608bf39b853d",
       "path": "docs/D3_LANDAU_PEIERLS_SINGLE_BAND_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md",
       "runner_path": "scripts/frontier_d3_landau_peierls_single_band_normalization_2026_06_18.py",
       "title": "D = 3 Single-Band Landau-Peierls Normalization From Peierls Magnetic Translations Bounded Theorem Note"

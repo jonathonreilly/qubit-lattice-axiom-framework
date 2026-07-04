@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_delta0_route_inventory_synthesis_2026_06_11.py
-runner_sha256: de687c2b353a7e8cb83b41d83925c27d9ead1bff35b7c51401cb53a5ba741ec3
-timeout_sec: 180
+runner_sha256: a97dc35ff1399a674c8ff60649146560414501488c855d1d1df8f5d5b30486c6
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 2.53
+elapsed_sec: 1.44
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -37,11 +37,11 @@ status: ok
   [PASS][A] E5.b coupling dependence recomputed: dc_eff/dalpha = 16 (ln(1/alpha) - 1) = 22.41 != 0 and c_eff shifts under alpha -> 1.1 alpha — c_eff is a FUNCTION of the coupling whose hierarchy is being explained, unlike the canonical coupling-independent dim-trans constants (instanton 8 pi^2 = 78.96, gaugino 8 pi^2/3 = 26.32); route E5 ELIMINATED as a closure route (notation rewrite only)  (dc/dalpha = 22.4088, c_eff(1.1 alpha) = 3.6786)
 
 --- Section C [B]: eliminating runners re-verified (subprocess, exit code + note-stated totals) ---
-  [PASS][B] C1 block01 (E1): 21/0 — frontier_hierarchy_delta0_blocking_single_mode_probe_2026_06_11.py still passes with its note-stated total  (exit = 0, total line matched [TOTAL:\s*PASS=21\s+FAIL=0], 0.3s)
-  [PASS][B] C2 block02 (reduced target + E2 legs): 19/0 — frontier_hierarchy_delta0_ratio_normalized_alpha_s_reduction_2026_06_11.py still passes with its note-stated total  (exit = 0, total line matched [TOTAL:\s*PASS=19\s+FAIL=0], 0.3s)
-  [PASS][B] C3 block04 (E3): 20/0 — frontier_hierarchy_delta0_attachment_mean_field_feedback_probe_2026_06_11.py still passes with its note-stated total  (exit = 0, total line matched [TOTAL:\s*PASS=20\s+FAIL=0], 0.9s)
-  [PASS][B] C4 YT-P2 no-go (E4): 12/0 — frontier_yt_p2_taste_staircase_beta.py still passes with its note-stated total  (exit = 0, total line matched [RESULT:\s*12 PASS, 0 FAIL], 0.3s)
-  [PASS][B] C5 dim-trans (E5): 10/0 — frontier_hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence.py still passes with its note-stated total  (exit = 0, total line matched [TOTAL:\s*PASS=10\s+FAIL=0], 0.6s)
+  [PASS][B] C1 block01 (E1): 21/0 — frontier_hierarchy_delta0_blocking_single_mode_probe_2026_06_11.py still passes with its note-stated total  (exit = 0, total line matched [TOTAL:\s*PASS=21\s+FAIL=0], 0.2s)
+  [PASS][B] C2 block02 (reduced target + E2 legs): 19/0 — frontier_hierarchy_delta0_ratio_normalized_alpha_s_reduction_2026_06_11.py still passes with its note-stated total  (exit = 0, total line matched [TOTAL:\s*PASS=19\s+FAIL=0], 0.1s)
+  [PASS][B] C3 block04 (E3): 20/0 — frontier_hierarchy_delta0_attachment_mean_field_feedback_probe_2026_06_11.py still passes with its note-stated total  (exit = 0, total line matched [TOTAL:\s*PASS=20\s+FAIL=0], 0.6s)
+  [PASS][B] C4 YT-P2 no-go (E4): 12/0 — frontier_yt_p2_taste_staircase_beta.py still passes with its note-stated total  (exit = 0, total line matched [RESULT:\s*12 PASS, 0 FAIL], 0.1s)
+  [PASS][B] C5 dim-trans (E5): 5/0 — frontier_hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence.py still passes with its note-stated total  (exit = 0, total line matched [TOTAL:\s*PASS=5\s+FAIL=0], 0.3s)
 
 --- Section D [A]/[B]: SURVIVING ROUTES S1-S3 — known constraints recomputed; routes printed as residuals ---
   [PASS][A] D1 NJL leading-order constraint recomputed: G_eff = 1/(2 N_c) = 1/6 = 0.16667 < G_critical = u_0^2/4 = 0.192581 (0.19255 at the note's 4-d.p. u_0 = 0.8776), ratio 0.8654 -> SYMMETRIC phase at leading order; sigma_min^2 = 16 G_eff - 4 u_0^2 = -0.4146 < 0 (no broken-phase saddle).  FLAGGED deviation: the NJL note's prose quotes sigma_min^2 ~= -0.4561, ~10% from the recomputed -0.4141 at its own u_0 — the SIGN, hence the symmetric-phase verdict, is unchanged; recomputation governs here  (G_eff = 0.166667, G_crit = 0.192581, ratio = 0.8654, sigma_min^2 = -0.4146 (note-input -0.4141))

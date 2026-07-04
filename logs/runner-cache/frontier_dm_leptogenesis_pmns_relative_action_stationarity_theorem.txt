@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py
-runner_sha256: 9bad170fd837c93ca06bd2c58dac4b238d01f20bbdd74b7d6601ac17d1000a2a
-timeout_sec: 120
+runner_sha256: 1747b0b5498db84bfb72ef90cb10a51e6ae21c33556a8f9081b82a87307d8bb4
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 52.91
+elapsed_sec: 17.61
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -22,7 +22,7 @@ Question:
 PART 1: THE RELATIVE BOSONIC ACTION IS THE EXACT LEGENDRE DUAL
 ========================================================================================
   [PASS] The seed-relative bosonic action equals the exact Legendre dual of the sole-axiom logdet generator  (S_rel=0.240906702296, dual=0.240906702296)
-  [PASS] The dual maximizer is the exact observable-principle source K_* = Y^{-1} - I  (max directional gradient=2.220e-09)
+  [PASS] The dual maximizer is the exact observable-principle source K_* = Y^{-1} - I  (max directional gradient=1.527e-09)
   [PASS] The dual is strictly concave at K_* so S_rel is the unique effective action on the positive cone  (worst sampled Hessian quadratic=-1.710596e+00)
 
   Effective-action identity:
@@ -34,25 +34,26 @@ PART 2: THE CURRENT CLOSURE PATCH HAS A UNIQUE LOWEST-ACTION BRANCH
 ========================================================================================
   [PASS] The exact transport-extremal class still fixes the favored closure column on the fixed seed surface  (favored column=0)
   [PASS] Sampled constrained solves exhibit more than one stationary closure branch  (sampled action levels=[0.240906701, 1.110657539])
-  [PASS] The lowest-action closure branch is unique across all sampled constrained solves  (max low-branch |Δp|=5.017e-06, S_min=0.240906701369)
-  [PASS] The constrained stationary source closes eta exactly on the favored column  (etas=[1.         0.75917896 0.4845884 ])
+  [PASS] The lowest-action closure branch is unique across all sampled constrained solves  (max low-branch |Δp|=1.434e-06, S_min=0.240906701394)
+  [PASS] The constrained stationary source satisfies eta exactly on the favored column  (etas=[1.       0.759179 0.48459 ])
 
-  x_stat     = [0.471675, 0.553811, 0.664514]
-  y_stat     = [0.208063, 0.464383, 0.247554]
-  delta_stat = -1.228940466232e-06
-  S_rel      = 0.240906701369
-  eta/eta_obs= [1.         0.75917896 0.4845884 ]
+  x_stat     = [0.471675, 0.55381 , 0.664515]
+  y_stat     = [0.208063, 0.464382, 0.247555]
+  delta_stat = 1.336357379527e-06
+  S_rel      = 0.240906701394
+  eta/eta_obs= [1.       0.759179 0.48459 ]
 
 ========================================================================================
 PART 3: THE SELECTED BRANCH IS A STRICT LOCAL CLOSURE MINIMUM
 ========================================================================================
-  [PASS] The exact closure source satisfies the constrained Euler-Lagrange equation for the effective action  (|∇S-λ∇C|=1.263e-05)
-  [PASS] The projected Lagrangian Hessian is positive on the closure tangent space  (min tangent Hessian eigenvalue=4.471934e-01)
-  [PASS] Sampled near-exact closure-preserving perturbations all increase the relative action  (min gap=1.702294e-06, max closure err=8.948e-09)
+  [PASS] The exact closure source satisfies the constrained Euler-Lagrange equation for the effective action  (|∇S-λ∇C|=3.333e-05)
+  [PASS] The finite-difference KKT gate rejects closure-preserving nonstationary probes  (max probe residual=2.069e-01)
+  [PASS] The projected Lagrangian Hessian is positive on the closure tangent space  (min tangent Hessian eigenvalue=4.469000e-01)
+  [PASS] Sampled near-exact closure-preserving perturbations all increase the relative action  (min gap=1.701223e-06, max closure err=8.958e-09)
 
-  Lagrange multiplier λ = 1.928714890785
-  min tangent Hessian eigenvalue = 4.471933597322e-01
-  min sampled closure gap        = 1.702294367689e-06
+  Lagrange multiplier λ = 1.928699980921
+  min tangent Hessian eigenvalue = 4.469000212512e-01
+  min sampled closure gap        = 1.701223044659e-06
 
 ========================================================================================
 PART 4: BOTTOM LINE
@@ -73,7 +74,7 @@ RESULT
   So on the current branch, minimal relative bosonic action is no longer
   an external selector ansatz; it is the native effective-action law.
 
-PASS=13  FAIL=0
+PASS=14  FAIL=0
 
 ----- stderr -----
 

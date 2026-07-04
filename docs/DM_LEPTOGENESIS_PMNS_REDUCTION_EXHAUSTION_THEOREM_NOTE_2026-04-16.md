@@ -12,7 +12,7 @@ question remained:
 > components beyond the exact reduced surface already used by the selector
 > theorem?
 
-This note closes that question for the scoped `N_e` closure claim on the
+This note addresses that question for the scoped `N_e` closure claim on the
 refreshed branch.
 
 ## Exact theorem
@@ -46,16 +46,16 @@ On the PMNS-assisted charged-lepton-active `N_e` route:
    lives on the exact fixed native seed surface.
 
 So the phrase “components beyond the exact closure surface we reduced to” is
-not a live loophole for the scoped `N_e` closure claim. The only uniqueness
-theorem that matters is the selector theorem **on that exact reduced surface**.
+not a live loophole for the scoped `N_e` closure claim. The remaining selector
+question is internal to **that exact reduced surface**.
 
 ## What this changes for review
 
 Before this theorem, the strongest Nature-style caveat was:
 
-- the branch had a branch-global selector theorem on the fixed native seed
-  surface, but not a separately stated theorem about hypothetical components
-  outside that surface.
+- the branch had sampled selector support on the fixed native seed surface,
+  but not a separately stated theorem about hypothetical components outside
+  that surface.
 
 After this theorem, that caveat is narrowed away:
 

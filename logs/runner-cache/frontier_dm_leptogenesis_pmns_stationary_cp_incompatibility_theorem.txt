@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py
-runner_sha256: bbcfec9106f313ab1a4bb8bc1b0c05a5c06d7f58f07aff72961d28af7c6d3a09
-timeout_sec: 600
+runner_sha256: 791dd747a5572ed706edb1f1ee32a5d0730563138223e90c86804175ea0046f0
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 21.32
+elapsed_sec: 40.20
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -11,7 +11,7 @@ DM LEPTOGENESIS PMNS STATIONARY CP INCOMPATIBILITY THEOREM
 ========================================================================================
 
 Question:
-  Can the current exact PMNS selector families on the fixed native N_e
+  Can the current KKT-filtered PMNS selector families on the fixed native N_e
   seed surface serve as constructive witnesses for the source-oriented
   mainline CP branch?
 
@@ -19,11 +19,11 @@ Question:
 PART 1: CURRENT STATIONARY SELECTOR FAMILIES ARE PARITY-EVEN
 ========================================================================================
   [PASS] Branch 0 has the same closure and selector action under delta -> -delta  (ΔS=0.000e+00, Δη=0.000e+00)
-  [PASS] Branch 0 keeps x, y, E1, and E2 but flips gamma under delta -> -delta  (gamma=(-2.167606153104e-08,2.167606153104e-08))
-  [PASS] Branch 0 therefore has an equal-selector opposite-CP partner  ((cp1,cp2)=(1.297342068580e-10,6.350143047382e-09))
+  [PASS] Branch 0 keeps x, y, E1, and E2 but flips gamma under delta -> -delta  (gamma=(-3.690819397505e-10,3.690819397505e-10))
+  [PASS] Branch 0 therefore has an equal-selector opposite-CP partner  ((cp1,cp2)=(2.208945587109e-12,1.081249606559e-10))
   [PASS] Branch 1 has the same closure and selector action under delta -> -delta  (ΔS=0.000e+00, Δη=0.000e+00)
-  [PASS] Branch 1 keeps x, y, E1, and E2 but flips gamma under delta -> -delta  (gamma=(-4.190008983293e-08,4.190008983293e-08))
-  [PASS] Branch 1 therefore has an equal-selector opposite-CP partner  ((cp1,cp2)=(4.171868986454e-10,-2.341268828267e-08))
+  [PASS] Branch 1 keeps x, y, E1, and E2 but flips gamma under delta -> -delta  (gamma=(-1.743399720523e-08,1.743399720523e-08))
+  [PASS] Branch 1 therefore has an equal-selector opposite-CP partner  ((cp1,cp2)=(1.735851972905e-10,-9.741667824215e-09))
 
   stationary-branch deltas = [-0. -0.]
 
@@ -31,10 +31,10 @@ PART 1: CURRENT STATIONARY SELECTOR FAMILIES ARE PARITY-EVEN
 PART 2: THE CURRENT MINIMUM-INFORMATION SELECTOR IS ALSO PARITY-EVEN
 ========================================================================================
   [PASS] The current minimum-information law keeps exact closure and cost under delta -> -delta  (ΔI=0.000e+00, eta_flip=1.000000000000)
-  [PASS] The charged-sector bridge again keeps E1 and E2 but flips gamma on that selector source  (gamma=(-2.873897278013e-09,2.873897278013e-09))
-  [PASS] So the current minimum-information selector also has an equally selected opposite-CP partner  ((cp1,cp2)=(-3.680792699649e-10,8.031737244101e-10))
+  [PASS] The charged-sector bridge again keeps E1 and E2 but flips gamma on that selector source  (gamma=(-2.253197709851e-09,2.253197709851e-09))
+  [PASS] So the current minimum-information selector also has an equally selected opposite-CP partner  ((cp1,cp2)=(-2.885822448586e-10,6.297055463179e-10))
 
-  min-info selector source = x=[0.47937  0.434637 0.775993], y=[0.231143 0.394868 0.293989], delta=-2.039244415044e-08
+  min-info selector source = x=[0.47937  0.434637 0.775993], y=[0.231143 0.394868 0.293989], delta=-1.598811727984e-08
 
 ========================================================================================
 PART 3: THE CURRENT PMNS SELECTOR FAMILIES ARE TRANSPORT-ONLY
@@ -47,15 +47,15 @@ PART 3: THE CURRENT PMNS SELECTOR FAMILIES ARE TRANSPORT-ONLY
 PART 4: THE THEOREM NOTE RECORDS THE INCOMPATIBILITY CLEANLY
 ========================================================================================
   [PASS] The new note records delta-even selector laws versus delta-odd CP sheets
-  [PASS] The note records the conclusion that current PMNS selector families determine transport classes rather than a constructive CP sign choice
+  [PASS] The note records the conclusion that current KKT-filtered PMNS selector families determine transport classes rather than a constructive CP sign choice
 
 ========================================================================================
 RESULT
 ========================================================================================
   Exact incompatibility answer:
-    - the current PMNS selector laws are even under delta -> -delta
+    - the current KKT-filtered PMNS selector laws are even under delta -> -delta
     - the charged-sector bridge is odd in gamma and hence odd in the CP sheet
-    - so the current PMNS selector families determine transport classes, not a
+    - so the current KKT-filtered PMNS selector families determine transport classes, not a
       constructive mainline CP sign choice
 
 PASS=14 FAIL=0

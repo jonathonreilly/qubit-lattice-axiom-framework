@@ -14,8 +14,8 @@ Live claim scope:
   - the admissible PMNS-assisted closure domain is already reduced to the fixed
     native N_e seed surface by the prior reduction-exhaustion theorem;
   - on that exact reduced domain, this runner performs a deterministic
-    exhaustive compact-chart search, and verifies that the reduced surface
-    carries a finite stationary-branch set with a unique lowest-action branch;
+    compact-chart search, and verifies that the reduced surface carries
+    a finite recovered stationary-branch set with a unique lowest-action branch;
   - the lower-action branch is recovered as the lowest-action branch on the
     reduced surface, with a finite action gap to the next branch;
   - this is strong reduced-surface optimization support, not a live theorem-
@@ -74,6 +74,7 @@ LOW_SOURCE_REF_Y = np.array([0.208063, 0.464382, 0.247555], dtype=float)
 HIGH_SOURCE_REF_Y = np.array([0.586185, 0.167566, 0.166248], dtype=float)
 LOW_CHART_REF = None
 HIGH_CHART_REF = None
+ARCHIVED_MID_CHART_REF = np.array([0.272618, 0.455962, 0.229970, 0.642344, -0.001002], dtype=float)
 
 
 def check(name: str, condition: bool, detail: str = "") -> bool:
@@ -311,27 +312,32 @@ def cluster_solutions(solutions: list[np.ndarray]) -> list[Branch]:
     return branches
 
 
-def certified_branch_search() -> list[Branch]:
+def supported_branch_search() -> list[Branch]:
     candidates = global_search_candidates()
     branches = cluster_solutions(candidates)
-    if len(branches) != 3:
-        raise RuntimeError(f"exhaustive chart cover did not stabilize to exactly three stationary branches (found {len(branches)})")
+    if len(branches) < 2:
+        raise RuntimeError(f"compact-chart cover did not recover the low/high stationary pair (found {len(branches)})")
     return branches
 
 
-def certify_global_minimum(branches: list[Branch]) -> None:
+def certify_recovered_minimum(branches: list[Branch]) -> None:
     low = branches[0]
-    mid = branches[1]
-    high = branches[2]
-    min_gap = mid.action - low.action
+    next_branch = branches[1]
+    high_candidates = [branch for branch in branches if abs(branch.action - HIGH_ACTION_REF) < 1.0e-6]
+    high = high_candidates[0] if high_candidates else branches[-1]
+    min_gap = next_branch.action - low.action
+
+    archived_mid_polished, _mid_res = refine_candidate(ARCHIVED_MID_CHART_REF)
+    archived_mid_action = relative_action_from_chart(archived_mid_polished)
+    archived_mid_distance = float(np.linalg.norm(archived_mid_polished - low.representative))
 
     check(
-        "The exhaustive compact-chart search returns exactly three stationary closure branches on the reduced surface",
-        len(branches) == 3,
+        "The compact-chart search recovers at least the low/high stationary closure pair on the reduced surface",
+        len(branches) >= 2,
         f"branch count={len(branches)}",
     )
     check(
-        "The lower branch closes the favored column exactly",
+        "The lower branch satisfies favored-column closure exactly",
         abs(low.etas[I_STAR] - LOW_ETA_REF) < 1.0e-10,
         f"eta/eta_obs={low.etas[I_STAR]:.12f}",
     )
@@ -342,8 +348,13 @@ def certify_global_minimum(branches: list[Branch]) -> None:
     )
     check(
         "The higher stationary branch matches the previously derived higher-action closure branch",
-        abs(high.action - HIGH_ACTION_REF) < 1.0e-6,
+        bool(high_candidates),
         f"S_rel={high.action:.12f}",
+    )
+    check(
+        "The archived middle candidate does not survive live polishing as a distinct stationary branch",
+        abs(archived_mid_action - low.action) < 1.0e-6 and archived_mid_distance < 1.0e-3,
+        f"polished S_rel={archived_mid_action:.12f}, |Δchart_low|={archived_mid_distance:.3e}",
     )
     check(
         "The lowest-action branch is separated from the next branch by a finite action gap",
@@ -352,7 +363,7 @@ def certify_global_minimum(branches: list[Branch]) -> None:
     )
     check(
         "The lower branch is the unique lowest-action branch in the current reduced-surface search",
-        mid.action > low.action and high.action > low.action,
+        all(branch.action > low.action + 1.0e-6 for branch in branches[1:]),
         f"branch actions={[round(branch.action, 12) for branch in branches]}",
     )
 
@@ -386,8 +397,8 @@ def certify_global_minimum(branches: list[Branch]) -> None:
 
     print()
     print(f"  low-branch compact chart  = {fmt(low.representative)}")
-    print(f"  mid-branch compact chart  = {fmt(mid.representative)}")
     print(f"  high-branch compact chart = {fmt(high.representative)}")
+    print(f"  archived-middle polished  = {fmt(archived_mid_polished)}")
 
 
 def main() -> int:
@@ -408,18 +419,20 @@ def main() -> int:
     print("  the reduced N_e seed surface. This runner tests reduced-surface")
     print("  uniqueness/minimality on that exact reduced surface.")
 
-    branches = certified_branch_search()
-    certify_global_minimum(branches)
+    branches = supported_branch_search()
+    certify_recovered_minimum(branches)
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
     print("  Reduced-surface support result:")
-    print("    - exhaustive compact-chart optimization gives a finite set of")
-    print("      three stationary closure branches on the exact reduced domain")
+    print("    - compact-chart optimization gives a finite recovered set of")
+    print("      stationary closure branches on the exact reduced domain")
     print("    - the lower branch is recovered as the lowest-action branch on that surface")
-    print("    - the finite action gap to the next branch is > 1e-3")
-    print("    - the lower branch closes the favored column exactly")
+    print("    - the finite action gap to the next recovered branch is > 1e-3")
+    print("    - the lower branch satisfies favored-column closure exactly")
+    print("    - the archived middle candidate polishes into the low branch and is")
+    print("      not counted as a separate live stationary branch")
     print()
     print("  This is strong reduced-surface optimization support. The live authority")
     print("  path still keeps it below theorem-grade promotion because the current")

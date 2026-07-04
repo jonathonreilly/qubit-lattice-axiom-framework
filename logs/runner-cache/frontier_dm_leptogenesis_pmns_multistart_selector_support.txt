@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py
-runner_sha256: 3f98a3188109085e177e07aec7969d85563c585e09328b29cdf81a5a789521ad
-timeout_sec: 600
+runner_sha256: 59f1d8e330d17fe1ba0063c989531dca3c208cbc4ab0271556f6de999bda1f57
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 20.43
+elapsed_sec: 39.54
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -17,23 +17,24 @@ Question:
 ========================================================================================
 PART 1: ENUMERATE THE CLOSURE STATIONARY BRANCHES
 ========================================================================================
-  [PASS] The runner-defined fixed-seed closure surface yields two dominant stationary branches under broad multistart enumeration  (branch count=2, sampled solves=7)
+  [PASS] The runner-defined fixed-seed closure surface yields two KKT-stable dominant stationary branches under broad multistart enumeration  (branch count=2, sampled solves=5)
+  [PASS] The KKT filter rejects closure-compatible nonstationary probes  (probe KKT=3.777e+00, rejected=2)
   [PASS] The lowest branch satisfies the runner-normalized favored-column closure  (etas=[1.       0.759179 0.48459 ])
-  [PASS] The broad-multistart dominant pair is separated by a finite action gap  (ΔS_pair=0.869750837948)
+  [PASS] The broad-multistart dominant pair is separated by a finite action gap  (ΔS_pair=0.869750837942)
 
   branch 0:
-    count      = 6
-    S_rel      = 0.240906701390
+    count      = 4
+    S_rel      = 0.240906701395
     x          = [0.471675, 0.55381 , 0.664515]
     y          = [0.208063, 0.464382, 0.247555]
-    delta      = -1.856375564645e-07
+    delta      = -3.160880780447e-09
     eta/eta_obs= [1.       0.759179 0.48459 ]
   branch 1:
     count      = 1
     S_rel      = 1.110657539338
     x          = [0.790189, 0.406763, 0.493048]
     y          = [0.586185, 0.167566, 0.166248]
-    delta      = -3.189531894172e-07
+    delta      = -1.327116129204e-07
     eta/eta_obs= [1.       0.947635 0.95876 ]
 
 ========================================================================================
@@ -47,18 +48,17 @@ PART 2: SUPPORT READOUT
 RESULT
 ========================================================================================
   Broad multistart support result:
-    - the current broad multistart constrained scan resolves two dominant
+    - the current broad multistart constrained scan resolves two KKT-stable dominant
       stationary closure branches on the runner-defined fixed N_e seed surface
     - the low branch is separated from the higher dominant branch by a
       finite action gap
     - that branch gives eta/eta_obs = 1 on the imposed favored-column closure surface
-    - later reduced-surface support sharpens the sampled branch count
-      without changing the recovered low-action branch
+    - closure-compatible nonstationary probes are rejected by the KKT filter
 
   This is support for the runner-defined reduced-surface diagnostic,
   not a live theorem-grade selector or native-readout closure statement.
 
-PASS=5  FAIL=0
+PASS=6  FAIL=0
 
 ----- stderr -----
 

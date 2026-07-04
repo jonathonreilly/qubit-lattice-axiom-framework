@@ -47,8 +47,7 @@
     {
       "path": "docs/GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md",
       "class": "F",
-      "status": "in_flight_pr",
-      "pr": 4914,
+      "status": "landed",
       "note": "The motivating case: program memo / thinking bank; carries the formula; criterion and supply-indexing reading are CANDIDATE items whose escalation channels are named in the memo."
     },
     {

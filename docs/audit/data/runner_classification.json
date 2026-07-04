@@ -36816,6 +36816,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_theta_mass_side_epsilon_hermiticity_reality_2026_06_11.py"
     },
+    "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 10,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/theta_mass_w2_physical_registrability_stretch_no_go_2026_07_04.py"
+    },
     "theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11": {
       "assert_count": 1,
       "counts": {
@@ -90050,6 +90062,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/theta_mass_w2_physical_registrability_stretch_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 10,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/theta_supplier_flavored_grading_spectral_flow_2026_07_02.py": {
       "assert_count": 1,
       "claims": [
@@ -91250,13 +91277,13 @@
     "decoration_candidates": 696,
     "dominant_class_distribution": {
       "A": 500,
-      "B": 640,
+      "B": 641,
       "C": 1276,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3323,
-    "runners_with_C": 1745,
+    "runners_classified": 3324,
+    "runners_with_C": 1746,
     "runners_with_D": 1068
   }
 }

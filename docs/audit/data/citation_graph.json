@@ -42265,6 +42265,42 @@
       "to": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
     },
     {
+      "from": "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04",
+      "to": "realized_state_primitive"
+    },
+    {
+      "from": "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04",
+      "to": "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18"
+    },
+    {
+      "from": "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04",
+      "to": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
+    },
+    {
+      "from": "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04",
+      "to": "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12"
+    },
+    {
+      "from": "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04",
+      "to": "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11"
+    },
+    {
+      "from": "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04",
+      "to": "theta_mass_side_epsilon_hermiticity_reality_bridge_discharge_bounded_theorem_note_2026-06-11"
+    },
+    {
+      "from": "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04",
+      "to": "theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01"
+    },
+    {
       "from": "theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11",
       "to": "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09"
     },
@@ -110347,7 +110383,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "34a9d012265d60cdfb5f7d51a20a74a76c6a1351b5372f385e3edf424008d4a6",
+      "note_hash": "99782138e68d8cded191c5f036ceab39947bc4b8ac39a77c59cbbd91fc40fb86",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118422,6 +118458,28 @@
       "path": "docs/THETA_MASS_SIDE_EPSILON_HERMITICITY_REALITY_BRIDGE_DISCHARGE_BOUNDED_THEOREM_NOTE_2026-06-11.md",
       "runner_path": "scripts/frontier_theta_mass_side_epsilon_hermiticity_reality_2026_06_11.py",
       "title": "The Mass-Side Strong-CP Phase Is Real on the Staggered Realization for Every Gauge Background: \u03b5-Hermiticity Discharges the Determinant-Readout Bridge at the Bilinear Matter Level (Bounded Theorem)"
+    },
+    "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04": {
+      "claim_id": "theta_mass_w2_physical_registrability_stretch_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "realized_state_primitive",
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
+        "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+        "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12",
+        "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11",
+        "theta_mass_side_epsilon_hermiticity_reality_bridge_discharge_bounded_theorem_note_2026-06-11",
+        "theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "f0bac738f878aad219ce54ce3d1163e6c4c00a6b815d4a282ec3eddb1c7ca9ab",
+      "path": "docs/THETA_MASS_W2_PHYSICAL_REGISTRABILITY_STRETCH_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/theta_mass_w2_physical_registrability_stretch_no_go_2026_07_04.py",
+      "title": "Theta Mass W2 Physical Registrability Stretch No-Go"
     },
     "theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11": {
       "claim_id": "theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11",
@@ -126509,7 +126567,7 @@
       "bounded_theorem": 1553,
       "decoration": 3,
       "meta": 319,
-      "no_go": 335,
+      "no_go": 336,
       "none": 1216,
       "open_gate": 134,
       "positive_theorem": 274
@@ -126518,15 +126576,15 @@
       "bounded_theorem": 1958,
       "decoration": 3,
       "meta": 319,
-      "no_go": 439,
+      "no_go": 440,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14458,
-    "leaf_count": 1266,
-    "node_count": 3834,
+    "edge_count": 14467,
+    "leaf_count": 1267,
+    "node_count": 3835,
     "root_count": 1102,
-    "runners_with_path": 3457
+    "runners_with_path": 3458
   }
 }

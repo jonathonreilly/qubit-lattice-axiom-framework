@@ -7,7 +7,8 @@ theta gauge-side G1 defect closure.
 
 Branch: `physics-loop/tier-a-elimination-block20-theta-readiness-20260704`
 Base: `physics-loop/tier-a-elimination-block19-acii-kbreaking-20260704`
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4948
+Source commit: `3ea49b00d`
 
 ## Expected Claim Movement
 
@@ -41,6 +42,6 @@ exactness.
 
 ## Next Exact Action
 
-Commit, push, and open a stacked block20 PR, then continue the Tier-A
-elimination campaign toward closed-nonexact sector derivation, dynamical
-defect suppression, or a mass-side determinant positive route.
+Verify PR status, then continue the Tier-A elimination campaign toward
+closed-nonexact sector derivation, dynamical defect suppression, or a
+mass-side determinant positive route.

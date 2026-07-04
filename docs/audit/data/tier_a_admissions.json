@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "description": "Audit-lane owned registry for Tier-A accepted non-axiom premise handling. Genuine admitted derivation targets are two: AC_phi_lambda and theta. Record is no longer Tier-A; Admissibility and Record are included in the explicitly approved four-axiom minimal_axioms node. The scale reference a^-1 is likewise not a Tier-A admission; it is registered as the explicitly approved framework primitive scale_reference_primitive in axiom_premise_nodes.json. Derivation targets are accepted as chain-satisfying premises at the bounded tier, so a clean row depending on one resolves to retained_bounded rather than retained_pending_chain; when a target is derived, remove its entry and compute_effective_status will auto-cascade dependents toward unbounded retained status when otherwise eligible. Y0 and g0 are vacuous rescaling conventions listed for survey completeness only: not admitted inputs, not derivation targets, not accepted premises, and not status-bounding dependencies. This registry is distinct from axiom_premise_nodes.json and from standard textbook theorems, which must earn retained-grade inline. Human-readable registry: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md. 2026-06-11 minimum-statement sharpening (owner-approved): both statements restated at their sharpest landed decomposition; no admission added, removed, adopted, or re-graded; count unchanged; no_go_portfolio lists unchanged (verified rows only); sharpening_sources fields list landed source notes whose audit status is set only by the audit lane. 2026-07-04 AC_phi_lambda(i) value-face reclassification: the per-lane occupancy value is realized-state registered data under realized_state_primitive, not a Tier-A derivation target; the surviving AC(i) residual is the measure-side/dynamical realization binary. Count unchanged. Human-readable decompositions: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md, minimum-statement section.",
+  "description": "Audit-lane owned registry for Tier-A accepted non-axiom premise handling. Genuine admitted derivation targets are two: AC_phi_lambda and theta. Record is no longer Tier-A; Admissibility and Record are included in the explicitly approved four-axiom minimal_axioms node. The scale reference a^-1 is likewise not a Tier-A admission; it is registered as the explicitly approved framework primitive scale_reference_primitive in axiom_premise_nodes.json. Derivation targets are accepted as chain-satisfying premises at the bounded tier, so a clean row depending on one resolves to retained_bounded rather than retained_pending_chain; when a target is derived, remove its entry and compute_effective_status will auto-cascade dependents toward unbounded retained status when otherwise eligible. Y0 and g0 are vacuous rescaling conventions listed for survey completeness only: not admitted inputs, not derivation targets, not accepted premises, and not status-bounding dependencies. This registry is distinct from axiom_premise_nodes.json and from standard textbook theorems, which must earn retained-grade inline. Human-readable registry: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md. 2026-06-11 minimum-statement sharpening (owner-approved): both statements restated at their sharpest landed decomposition; no admission added, removed, adopted, or re-graded; count unchanged; no_go_portfolio lists unchanged (verified rows only); sharpening_sources fields list landed source notes whose audit status is set only by the audit lane. 2026-07-04 AC_phi_lambda(i) value-face reclassification: the per-lane occupancy value is realized-state registered data under realized_state_primitive, not a Tier-A derivation target; the surviving AC(i) residual is the measure-side/dynamical realization binary. 2026-07-04 AC_phi_lambda(iii) C3-grade species-bridge owner ratification: the contentless C3-grade abstract-sector to physical-species identification is retired from Tier-A by owner path-extension and grade-scoped ratification; above-C3 taste/Dirac/chirality content and CKM/PMNS alignment are not covered. Count unchanged because AC_phi_lambda remains Tier-A through AC(i) and AC(ii), and theta is untouched. Human-readable decompositions: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md, minimum-statement section.",
   "genuine_admitted_input_count": 2,
   "canonical_ids": [
     "staggered_dirac_realization_gate_note_2026-05-03",
@@ -9,7 +9,7 @@
   "derivation_targets": {
     "staggered_dirac_realization_gate_note_2026-05-03": {
       "label": "AC_phi_lambda",
-      "statement": "minimum form (2026-07-04): three named residual atoms, with AC(i)'s value face retired to realized-state registration -- (i) the measure-side doublet occupancy realization binary: which grain/statistics the matter action implements (sector-tied/count-twice vs orbit/holomorphic/count-once; K-reality and det_C/equal-power are its measure-side faces). The per-lane r value in {1, 1/2} is registered realized-state data, not a Tier-A derivation target; (ii) the delta readout identification R-eta (density-read-as-angle; the magnitude 2/9 is retained-bounded fixed-locus arithmetic conditional on R-eta, not an admitted number); (iii) the abstract-sector to physical-species bridge. Bare e/mu/tau naming remains a vacuous convention, not a derivation target.",
+      "statement": "minimum form (2026-07-04 after partial reclassifications): two surviving Tier-A residual atoms -- (i) the measure-side doublet occupancy realization binary: which grain/statistics the matter action implements (sector-tied/count-twice vs orbit/holomorphic/count-once; K-reality and det_C/equal-power are its measure-side faces). The per-lane r value in {1, 1/2} is registered realized-state data, not a Tier-A derivation target; (ii) the delta readout identification R-eta (density-read-as-angle; the magnitude 2/9 is retained-bounded fixed-locus arithmetic conditional on R-eta, not an admitted number). The species bridge C3-grade leg is owner-ratified naming-class content, not a Tier-A derivation target. Above-C3 taste/Dirac/chirality content, hw1-vs-hw2 carrier content beyond the C3 grade, and CKM/PMNS across-fermion-type alignment are not covered and require separate derivation, explicit admission, or approved primitive registration if later used. Bare e/mu/tau naming remains a vacuous convention, not a derivation target.",
       "class": "discrete flavor input with labeling convention stripped",
       "leverage": 41,
       "no_go_portfolio": [
@@ -19,21 +19,35 @@
       ],
       "minimum_decomposition": [
         "reading_occupancy_selection",
-        "delta_readout_identification_R_eta",
-        "species_bridge"
+        "delta_readout_identification_R_eta"
       ],
       "sharpening_sources_status_set_by_audit_lane": [
         "koide_r_half_polarization_selector_tested_static_readout_no_go_note_2026-06-08",
         "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
         "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
         "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09",
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+        "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11",
+        "species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13",
+        "species_bridge_residual_is_ratification_class_grade_scoped_bounded_note_2026-07-02",
+        "c3_generation_readout_context_canonical_definition_note_2026-07-02",
+        "acphilambda_species_bridge_c3_grade_owner_ratification_retirement_note_2026-07-04"
       ],
       "partial_reclassifications": {
         "reading_occupancy_selection_value_face": {
           "status": "reclassified_to_realized_state_registration",
           "source": "docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md",
           "boundary": "Only the per-lane value face moves out of Tier-A. The measure-side/dynamical realization binary remains part of AC_phi_lambda."
+        },
+        "species_bridge_c3_grade": {
+          "status": "owner_ratified_c3_grade_interpretive_identification",
+          "source": "docs/ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md",
+          "basis": [
+            "docs/SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md",
+            "docs/SPECIES_BRIDGE_RESIDUAL_IS_RATIFICATION_CLASS_GRADE_SCOPED_BOUNDED_NOTE_2026-07-02.md",
+            "docs/C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md"
+          ],
+          "boundary": "Only the C3-structural-grade abstract-sector to physical-species identification moves out of Tier-A. Taste/Dirac/chirality content, hw1-vs-hw2 carrier content beyond the C3 grade, CKM/PMNS alignment, AC(i), AC(ii), and theta remain outside this reclassification."
         }
       }
     },

@@ -503,11 +503,13 @@ promoted to axiom or primitive class):
   sharpest landed decomposition in
   `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` (minimum-statement
   section) and `docs/audit/data/tier_a_admissions.json`:
-  `AC_phi_lambda` = the doublet reading/occupancy selection + the R-eta delta
-  readout identification + the species bridge; `theta` = the gauge-side
-  winding account + the mass-side orientation localized onto the
-  determinant-readout bridge, with the mass-side K-real structure identified
-  as the same `C_3` object as the `AC_phi_lambda` reading selection.
+  as of this refinement, `AC_phi_lambda` = the doublet reading/occupancy
+  selection + the R-eta delta readout identification + the species bridge;
+  `theta` = the gauge-side winding account + the mass-side orientation
+  localized onto the determinant-readout bridge, with the mass-side K-real
+  structure identified as the same `C_3` object as the `AC_phi_lambda` reading
+  selection. The 2026-07-04 entry below subsequently ratifies the C3-grade
+  species bridge out of Tier-A while leaving the two surviving AC atoms.
   - **Why it is admissible.** A restatement-to-minimum is governance hygiene:
     it removes derived/conditional content from the admission statements so
     elimination campaigns target the true residual atoms. No admission is
@@ -525,6 +527,37 @@ promoted to axiom or primitive class):
     The `no_go_portfolio` lists are unchanged (verified rows only); the new
     `sharpening_sources` fields list landed source notes whose audit status
     is set only by the audit lane.
+- **2026-07-04 -- AC_phi_lambda(iii) species bridge C3-grade ratification.**
+  Owner approval recorded 2026-07-04 for the two-part path-extension decision
+  identified in
+  `docs/SPECIES_BRIDGE_RESIDUAL_IS_RATIFICATION_CLASS_GRADE_SCOPED_BOUNDED_NOTE_2026-07-02.md`:
+  the import-retirement path for contentless naming-class material is extended
+  to the AC_phi_lambda(iii) C3-grade abstract-sector-to-physical-species
+  identification, and that identification is ratified out of Tier-A at the
+  C3-structural grade. The registry source is
+  `docs/ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md`.
+  - **Why it is admissible.** The landed species-bridge decomposition reduces
+    the C3-grade residual to derived `M_3(C)` support, two vacuous convention
+    choices, and one interpretive identification carrying no tested C3-grade
+    number, selector, ordering, weight, scoring rule, wall closure, axiom, or
+    primitive. The ratification-class exhibit records that this residual
+    matches the negative Does-NOT profile of the internal naming-ratification
+    precedent and fails only the positive internal-surface condition because
+    the second relatum is external nature. The owner decision is to treat that
+    external-referent gap as non-load-bearing for this contentless C3-grade
+    bridge.
+  - **No laundering.** This is not an axiom or primitive, does not derive the
+    bridge, and does not set audit status for the source notes. It does not
+    cover taste/Dirac/chirality content, hw1-vs-hw2 carrier content beyond the
+    C3 grade, CKM/PMNS alignment, any value of `r` or `delta`, or any empirical
+    comparator. Those contents require separate derivation, explicit admission,
+    or approved primitive registration before use.
+  - **Scope.** AC_phi_lambda remains a Tier-A row through its two surviving
+    residual atoms: the measure-side occupancy realization binary and the
+    R-eta readout identification. The genuine admitted-target count remains
+    two (`AC_phi_lambda`, `theta`); the theta row is untouched. Downstream rows
+    depending on AC_phi_lambda remain bounded until the surviving AC atoms are
+    retired.
 
 Approved scope classification (no axiom, primitive, or Tier-A change; nothing
 added to or removed from any premise registry):

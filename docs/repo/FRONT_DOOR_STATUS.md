@@ -27,7 +27,7 @@ Owner-approval history for every axiom/primitive change:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3642 |
+| Ledger rows | 3643 |
 | Applied audit verdicts | 1346 |
 | Retained-grade rows, including boxed decorations | 1274 |
 | Retained positive theorems | 189 |
@@ -54,8 +54,8 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Cycle-break targets | 14 |
 | Critical pending | 421 |
 | High pending | 289 |
-| Medium pending | 518 |
-| Leaf pending | 757 |
+| Medium pending | 520 |
+| Leaf pending | 755 |
 
 Next ready rows by queue order:
 
@@ -63,8 +63,8 @@ Next ready rows by queue order:
 - [`hypercharge_identification_note`](../../docs/HYPERCHARGE_IDENTIFICATION_NOTE.md) - critical; non_terminal_conditional
 - [`tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md) - critical; unaudited
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
-- [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
 - [`ew_current_matching_rule_open_gate_note_2026-05-03`](../../docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md) - critical; unaudited
+- [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
 - [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
 - [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 
@@ -93,19 +93,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3813 |
+| Citation-graph nodes | 3814 |
 | Critical nodes | 668 |
 | High nodes | 468 |
-| Medium nodes | 971 |
-| Leaf nodes | 1706 |
+| Medium nodes | 974 |
+| Leaf nodes | 1704 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1863 descendants; score 186.864
-- `three_generation_observable_theorem_note` - critical; 1148 descendants; score 67.166
+- `minimal_axioms` - critical; 1866 descendants; score 186.867
+- `three_generation_observable_theorem_note` - critical; 1152 descendants; score 67.171
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 198 descendants; score 65.137
-- `graph_first_su3_integration_note` - critical; 1578 descendants; score 65.125
-- `observable_principle_from_axiom_note` - critical; 1201 descendants; score 64.231
-- `plaquette_self_consistency_note` - critical; 1248 descendants; score 53.287
-- `minimal_axioms_2026-05-03` - critical; 1153 descendants; score 48.172
-- `key_terminology` - critical; 1253 descendants; score 46.792
+- `graph_first_su3_integration_note` - critical; 1583 descendants; score 65.129
+- `observable_principle_from_axiom_note` - critical; 1207 descendants; score 64.238
+- `plaquette_self_consistency_note` - critical; 1255 descendants; score 53.295
+- `minimal_axioms_2026-05-03` - critical; 1160 descendants; score 48.181
+- `key_terminology` - critical; 1260 descendants; score 46.800

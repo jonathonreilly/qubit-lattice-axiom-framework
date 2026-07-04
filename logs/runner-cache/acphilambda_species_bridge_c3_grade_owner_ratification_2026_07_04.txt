@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_species_bridge_c3_grade_owner_ratification_2026_07_04.py
+runner_sha256: 50611bdd1e0e45ca9d820deae4c85886e2b8b48c6e924225cb72774dcfd06c08
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
+==============================================================================
+ACPHILAMBDA SPECIES-BRIDGE C3-GRADE OWNER RATIFICATION CHECK
+==============================================================================
+Scope: registry-governance alignment only; no audit verdict changes.
+
+[PASS] docs/ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md exists
+[PASS] docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md exists
+[PASS] docs/audit/data/tier_a_admissions.json exists
+[PASS] docs/audit/AXIOM_MINIMALITY_POLICY.md exists
+[PASS] docs/SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md exists
+[PASS] docs/SPECIES_BRIDGE_RESIDUAL_IS_RATIFICATION_CLASS_GRADE_SCOPED_BOUNDED_NOTE_2026-07-02.md exists
+[PASS] docs/C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md exists
+[PASS] new note is meta
+[PASS] new note records owner path-extension yes
+[PASS] new note scopes to C3 grade only
+[PASS] new note says AC row does not retire
+[PASS] new note lists the two surviving AC atoms
+[PASS] new note conserves above-grade residue
+[PASS] new note excludes audit-status change
+[PASS] new note excludes axiom and primitive changes
+[PASS] parent source has no-number/no-selector witness
+[PASS] parent source has contentlessness proof-strength caveat
+[PASS] ratification source records external-relatum failure
+[PASS] ratification source records two-part owner decision
+[PASS] C3 context source is internal labeling precedent
+[PASS] policy records 2026-07-04 owner species-bridge decision
+[PASS] policy records no row retirement
+[PASS] genuine admitted target count remains two -- 2
+[PASS] canonical ids unchanged -- ['staggered_dirac_realization_gate_note_2026-05-03', 'strong_cp_theta_zero_note']
+[PASS] AC row still exists
+[PASS] theta row still exists
+[PASS] AC minimum decomposition is now exactly two residual atoms -- ['reading_occupancy_selection', 'delta_readout_identification_R_eta']
+[PASS] machine statement says species bridge is not Tier-A target
+[PASS] machine statement conserves above-grade boundary
+[PASS] species bridge partial reclassification row exists -- {'reading_occupancy_selection_value_face': {'status': 'reclassified_to_realized_state_registration', 'source': 'docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md', 'boundary': 'Only the per-lane value face moves out of Tier-A. The measure-side/dynamical realization binary remains part of AC_phi_lambda.'}, 'species_bridge_c3_grade': {'status': 'owner_ratified_c3_grade_interpretive_identification', 'source': 'docs/ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md', 'basis': ['docs/SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md', 'docs/SPECIES_BRIDGE_RESIDUAL_IS_RATIFICATION_CLASS_GRADE_SCOPED_BOUNDED_NOTE_2026-07-02.md', 'docs/C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md'], 'boundary': 'Only the C3-structural-grade abstract-sector to physical-species identification moves out of Tier-A. Taste/Dirac/chirality content, hw1-vs-hw2 carrier content beyond the C3 grade, CKM/PMNS alignment, AC(i), AC(ii), and theta remain outside this reclassification.'}}
+[PASS] species bridge partial reclassification status is owner ratified -- {'status': 'owner_ratified_c3_grade_interpretive_identification', 'source': 'docs/ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md', 'basis': ['docs/SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md', 'docs/SPECIES_BRIDGE_RESIDUAL_IS_RATIFICATION_CLASS_GRADE_SCOPED_BOUNDED_NOTE_2026-07-02.md', 'docs/C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md'], 'boundary': 'Only the C3-structural-grade abstract-sector to physical-species identification moves out of Tier-A. Taste/Dirac/chirality content, hw1-vs-hw2 carrier content beyond the C3 grade, CKM/PMNS alignment, AC(i), AC(ii), and theta remain outside this reclassification.'}
+[PASS] species bridge partial reclassification source is new note -- {'status': 'owner_ratified_c3_grade_interpretive_identification', 'source': 'docs/ACPHILAMBDA_SPECIES_BRIDGE_C3_GRADE_OWNER_RATIFICATION_RETIREMENT_NOTE_2026-07-04.md', 'basis': ['docs/SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md', 'docs/SPECIES_BRIDGE_RESIDUAL_IS_RATIFICATION_CLASS_GRADE_SCOPED_BOUNDED_NOTE_2026-07-02.md', 'docs/C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md'], 'boundary': 'Only the C3-structural-grade abstract-sector to physical-species identification moves out of Tier-A. Taste/Dirac/chirality content, hw1-vs-hw2 carrier content beyond the C3 grade, CKM/PMNS alignment, AC(i), AC(ii), and theta remain outside this reclassification.'}
+[PASS] species bridge boundary preserves non-covered residues
+[PASS] human registry table no longer states three AC residual atoms
+[PASS] human registry has two-residual AC heading
+[PASS] human registry records species bridge owner ratification
+[PASS] human registry says dependent rows stay bounded
+[PASS] human registry keeps theta untouched
+[PASS] forbidden overclaim absent: AC_phi_lambda retires
+[PASS] forbidden overclaim absent: theta retires
+[PASS] forbidden overclaim absent: species bridge is an axiom
+[PASS] forbidden overclaim absent: species bridge is an approved primitive
+[PASS] forbidden overclaim absent: C3-grade ratification derives the species bridge
+[PASS] forbidden overclaim absent: CKM/PMNS alignment is covered
+
+SUMMARY: ACPHILAMBDA SPECIES-BRIDGE C3-GRADE CHECK PASS=44 FAIL=0
+
+----- stderr -----
+

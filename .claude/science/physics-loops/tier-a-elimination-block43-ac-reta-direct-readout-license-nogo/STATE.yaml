@@ -29,7 +29,7 @@ checks:
   audit_lint_strict: "PASS; existing 23 warnings / 178 notices, no errors"
   diff_check: "PASS"
 review_loop_disposition: pass
-pr_status: pending
-pr_url: pending
-next_exact_action: "Commit/push, open stacked PR on Block42, then pivot to remaining AC R-eta h-class/h-unit positive attempt, owner-governance primitive decision, or theta residuals."
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4984
+next_exact_action: "Monitor hosted audit/review for #4984, then pivot to remaining AC R-eta h-class/h-unit positive attempt, owner-governance primitive decision, or theta residuals."
 stop_condition: "Continue Tier-A campaign unless runtime/tooling blocks or all viable residuals are documented blocked."

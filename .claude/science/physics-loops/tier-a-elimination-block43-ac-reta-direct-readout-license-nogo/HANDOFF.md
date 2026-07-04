@@ -8,7 +8,7 @@ Record-registrable context directly supply the `A_R-eta` readout license.
 
 Branch: `physics-loop/tier-a-elimination-block43-ac-reta-direct-readout-license-nogo-20260704`
 Base: `physics-loop/tier-a-elimination-block42-ac-reta-clock-normalization-nogo-20260704`
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4984
 
 ## Claim Movement
 
@@ -40,11 +40,11 @@ select the physical scalar functional or the identity unit.
 - `git diff --check` -> PASS
 
 Local review disposition: PASS. No overclaim, hidden-import, or
-generated-audit-file issue found after pipeline regeneration; final
-generated-file freshness should be checked again after commit.
+generated-audit-file issue found after pipeline regeneration. Generated-file
+freshness was clean after commit.
 
 ## Next Exact Action
 
-Commit/push and open a stacked PR on Block42. Next science route should
-attempt h-class/h-unit positive closure, make an owner governance decision
-about a narrow R-eta primitive, or pivot to theta residuals.
+Monitor hosted audit/review for #4984. Next science route should attempt
+h-class/h-unit positive closure, make an owner governance decision about a
+narrow R-eta primitive, or pivot to theta residuals.

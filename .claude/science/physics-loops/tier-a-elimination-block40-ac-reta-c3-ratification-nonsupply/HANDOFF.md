@@ -9,7 +9,7 @@ density-read-as-angle / holonomy-readout license.
 
 Branch: `physics-loop/tier-a-elimination-block40-ac-reta-c3-ratification-nonsupply-20260704`
 Base: `physics-loop/tier-a-elimination-block39-theta-g1-kinetic-4d-scaffold-support-20260704`
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4981
 
 ## Claim Movement
 
@@ -47,7 +47,6 @@ physical value/license.
 
 ## Next Exact Action
 
-Open the stacked PR on Block39. The next science move should attack one of:
+Monitor hosted audit for PR #4981. The next science move should attack one of:
 direct R-eta readout-license derivation, coherence-event/rate normalization,
 supplied-context physical carrier closure, or AC(i) occupancy horn selection.
-

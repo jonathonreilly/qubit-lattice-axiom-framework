@@ -1937,6 +1937,26 @@
       "to": "cpt_exact_note"
     },
     {
+      "from": "approved_primitive_axiom_absorption_current_surface_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "approved_primitive_axiom_absorption_current_surface_no_go_note_2026-07-04",
+      "to": "scale_reference_primitive"
+    },
+    {
+      "from": "approved_primitive_axiom_absorption_current_surface_no_go_note_2026-07-04",
+      "to": "kinetic_isotropy_primitive"
+    },
+    {
+      "from": "approved_primitive_axiom_absorption_current_surface_no_go_note_2026-07-04",
+      "to": "realized_state_primitive"
+    },
+    {
+      "from": "approved_primitive_axiom_absorption_current_surface_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
       "from": "architecture_note_directional_measure",
       "to": "angular_kernel_underdetermination_no_go_note"
     },
@@ -61300,6 +61320,24 @@
       "runner_path": "scripts/gravity_signed_sector_harness.py",
       "title": "Signed Gravitational Response Selector Boundary Note"
     },
+    "approved_primitive_axiom_absorption_current_surface_no_go_note_2026-07-04": {
+      "claim_id": "approved_primitive_axiom_absorption_current_surface_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "scale_reference_primitive",
+        "kinetic_isotropy_primitive",
+        "realized_state_primitive",
+        "admitted_input_registry_tier_a_note_2026-05-23"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "ed42516570a8821d1270a227d9fd5882794e38d9dd1daa3675c7120bd6208f16",
+      "path": "docs/APPROVED_PRIMITIVE_AXIOM_ABSORPTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/approved_primitive_axiom_absorption_current_surface_no_go_2026_07_04.py",
+      "title": "Approved Primitive Axiom-Absorption Current-Surface No-Go Note"
+    },
     "architecture_note_directional_measure": {
       "claim_id": "architecture_note_directional_measure",
       "claim_type_author_hint": "bounded_theorem",
@@ -110604,7 +110642,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6338cd7a703c66b9c5689d6cabf13d53268ab083cb53ee8c170749c356eec348",
+      "note_hash": "00fa30f17ec265499caf57bc68250a72ec1731ecc00a452283545f83a0cd8381",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -126861,7 +126899,7 @@
       "bounded_theorem": 1557,
       "decoration": 3,
       "meta": 319,
-      "no_go": 340,
+      "no_go": 341,
       "none": 1216,
       "open_gate": 134,
       "positive_theorem": 274
@@ -126870,15 +126908,15 @@
       "bounded_theorem": 1962,
       "decoration": 3,
       "meta": 319,
-      "no_go": 444,
+      "no_go": 445,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14505,
-    "leaf_count": 1267,
-    "node_count": 3843,
+    "edge_count": 14510,
+    "leaf_count": 1268,
+    "node_count": 3844,
     "root_count": 1102,
-    "runners_with_path": 3466
+    "runners_with_path": 3467
   }
 }

@@ -1308,6 +1308,18 @@
       "dominant_class": "C",
       "runner": "scripts/gravity_signed_sector_harness.py"
     },
+    "approved_primitive_axiom_absorption_current_surface_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/approved_primitive_axiom_absorption_current_surface_no_go_2026_07_04.py"
+    },
     "architecture_note_directional_measure": {
       "assert_count": 1,
       "counts": {
@@ -42728,6 +42740,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/approved_primitive_axiom_absorption_current_surface_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "approved_primitive_axiom_absorption_current_surface_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/architecture_directional_measure_table_runner_2026_05_03.py": {
@@ -91493,13 +91520,13 @@
     "decoration_candidates": 697,
     "dominant_class_distribution": {
       "A": 503,
-      "B": 644,
+      "B": 645,
       "C": 1278,
       "D": 450,
       "none": 457
     },
-    "runners_classified": 3332,
-    "runners_with_C": 1753,
+    "runners_classified": 3333,
+    "runners_with_C": 1754,
     "runners_with_D": 1068
   }
 }

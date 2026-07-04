@@ -713,7 +713,7 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 1,
+        "C": 2,
         "D": 0
       },
       "decoration_candidate": false,
@@ -42033,7 +42033,7 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 1,
+        "C": 2,
         "D": 0
       },
       "decoration_candidate": false,

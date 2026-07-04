@@ -58232,7 +58232,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "12f8efa3ae5cd3918b99c9b11b63c49ba74ed9ea3b45d9391165ea44b4781898",
+      "note_hash": "d2a028818175744c223c5c7aee86f423d9ab8f63e7eef7126aaba61b706704f1",
       "path": "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
       "runner_path": "scripts/admitted_input_registry_tier_a_boundary_check.py",
       "title": "Admitted-Input Registry \u2014 Tier A (Central Index of Named Non-Axiom Admissions)"

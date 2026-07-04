@@ -1,0 +1,28 @@
+loop_slug: tier-a-elimination-block03-ac
+goal: "Eliminate Tier-A admissions by retiring or reclassifying retireable pieces while preserving unavoidable primitives."
+target_status: partial-retirement
+branch: physics-loop/tier-a-elimination-block03-ac-20260704
+base: origin/main@7e1d7f9032a2d7dd5e1fe57729d0bc7dd00ec68a
+started_at: "2026-07-04"
+mode: interactive
+cycle_count: 1
+active_block: block03-ac-value-face-reclassification
+active_route: "AC_phi_lambda(i) value-face retirement to realized-state registration"
+hard_residual: "AC_phi_lambda remains a Tier-A derivation target: the measure-side/dynamical occupancy realization binary, R-eta atom, and species bridge remain."
+lock:
+  branch_local_lock: "/tmp/cl3-tier-a-block03-ac-origin-main/.physics_worker_lock.json"
+files_touched:
+  - "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
+  - "docs/audit/data/tier_a_admissions.json"
+  - "scripts/admitted_input_registry_tier_a_boundary_check.py"
+  - "logs/runner-cache/admitted_input_registry_tier_a_boundary_check.txt"
+  - "generated audit ledger/citation/runner-classification files"
+checks:
+  - "PYTHONPATH=scripts python3 scripts/admitted_input_registry_tier_a_boundary_check.py: PASS=63 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py scripts/admitted_input_registry_tier_a_boundary_check.py --refresh: pass"
+  - "bash docs/audit/scripts/run_pipeline.sh: pass; no errors, existing warnings/notices only"
+  - "python3 docs/audit/scripts/audit_lint.py --strict: pass; no errors, existing warnings/notices only"
+review_status: "self-check pass; no audit verdicts applied"
+pr_status: pending
+next_exact_action: "Commit, push, and open one review PR for block 3."
+stop_condition: "Block 3 committed and review PR opened or PR_BACKLOG written."

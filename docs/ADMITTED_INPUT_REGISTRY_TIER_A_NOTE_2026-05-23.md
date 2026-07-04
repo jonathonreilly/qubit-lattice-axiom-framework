@@ -46,7 +46,7 @@ AC_φλ naming, explicitly **not** counted as admitted inputs (see
 
 | id | statement (minimum form, 2026-06-11 — see the minimum-statement section below for the decompositions) | leverage | no-go portfolio (verified `retained_no_go` rows) |
 |---|---|---|---|
-| **AC_φλ** | three named sub-admissions, nothing else: **(i)** the doublet **reading/occupancy selection** (one binary — sector-tied vs orbit/holomorphic count, `r ∈ {1, 1/2}`); **(ii)** the δ **readout identification** (R-η: density-read-as-angle; the magnitude `2/9` is fixed-locus arithmetic conditional on R-η, not an admitted number); **(iii)** the abstract-sector → physical-species **bridge**. The *naming* (which sector is e/μ/τ) remains a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
+| **AC_φλ** | three named residual atoms, with AC(i)'s value face retired to realized-state registration: **(i)** the **measure-side doublet occupancy realization binary** — which grain/statistics the matter action implements (sector-tied/count-twice vs orbit/holomorphic/count-once; K-reality and det_C/equal-power are its measure-side faces). The per-lane `r` value in `{1, 1/2}` is registered realized-state data, **not** a Tier-A derivation target; **(ii)** the δ **readout identification** (R-η: density-read-as-angle; the magnitude `2/9` is fixed-locus arithmetic conditional on R-η, not an admitted number); **(iii)** the abstract-sector → physical-species **bridge**. The *naming* (which sector is e/μ/τ) remains a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
 | **θ** | with `θ̄ = θ_gauge + arg det(M_q)`: **(a)** gauge side — `θ_gauge = 0` in the topological-sector weighting, residual localized to the **multi-plaquette / large-gauge-winding** account (within the supplied per-plaquette class the local cross-plane `F·F̃` slot is derived-absent; RP, reality, positivity, CPT, parity-measure, and arrow-orientation are tracked in landed source notes as non-forcing/non-sourcing route surfaces); **(b)** mass side — the discrete orientation `arg det M ∈ {0, π} → 0` on the K-real reading (the *same* C₃ K-real structure as AC_φλ (i)), localized onto the named **determinant-readout bridge**. Also unsolved in the Standard Model. | ~20 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` (1) |
 
 Notes:
@@ -170,9 +170,19 @@ added, removed, adopted, or re-graded; the count stays at two; every
 dependent stays bounded.** All inputs cited below are landed source notes;
 audit status remains audit-lane-only.
 
-### AC_φλ — minimum decomposition (three named sub-admissions)
+### AC_φλ — minimum decomposition (three named residual atoms; 2026-07-04 value-face reclassification)
 
-1. **The doublet reading/occupancy selection (one binary).** The landed
+2026-07-04 registry narrowing: sub-admission (i)'s **value face** is
+reclassified to the already-approved `realized_state_primitive`. A per-lane
+value of `r` is registered state data in exactly the sense of that primitive's
+counterfactual test: it varies across law-admissible realized states and is
+matched like the masses. This does **not** derive or force `r = 1/2`, does
+**not** select a lane, and does **not** retire AC_φλ. The surviving Tier-A
+residual in (i) is the measure-side/dynamical realization binary: which
+grain/statistics the matter action implements. Count unchanged; downstream
+rows depending on AC_φλ remain bounded.
+
+1. **The measure-side doublet occupancy realization binary.** The landed
    static-readout no-go states it: the *whole* magnitude admission is
    whether the generation readout counts the complex doublet as one
    holomorphic mode (`r = 1/2`) or two real modes (`r = 1`)
@@ -185,9 +195,15 @@ audit status remains audit-lane-only.
    The custody decomposition's two operative selectors (K-reality;
    det_C/equal-power) are this binary's two faces
    (`CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`).
-   Everything else about the magnitude — carrier, `Q = 1/3 + (2/3)r`
-   lever, channels, topological `2/9`, endpoint exclusion, equipartition
-   stationarity — is derived, not admitted.
+   The 2026-06-11 realized-state reduction moves the per-lane *value* of
+   `r` out of Tier-A: it is realized-state registration, not a rule-shaped
+   derivation target
+   (`ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md`).
+   What survives here is the measure-side realization question: which grain
+   the matter action's statistics implements. Everything else about the
+   magnitude — carrier, `Q = 1/3 + (2/3)r` lever, channels, topological
+   `2/9`, endpoint exclusion, equipartition stationarity, and the registered
+   per-lane value face — is derived or registered, not admitted as Tier-A.
 2. **The δ readout identification (R-η).** Per the landed `|δ| = 2/9`
    chain
    (`KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md`),

@@ -2,13 +2,13 @@ block: tier-a-elimination-block15-aci-modeset
 date: 2026-07-04
 branch: physics-loop/tier-a-elimination-block15-aci-modeset-20260704
 base_branch: physics-loop/tier-a-elimination-block14-aci-detorder-20260704
-pr_url: pending
-source_commit: pending
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4942
+source_commit: 1a5ce5304
 target: AC_phi_lambda sub-admission (i) mode-set / corner-transfer route
 claim_type: no_go
 registry_edits: false
 retirement_claimed: false
-status: verified_ready_for_pr
+status: pr_open
 active_route: per-K-orbit mode-set theorem stretch attempt
 hard_residual: "derive physical matter-action statistics selecting one slot per K/CPT orbit rather than per channel"
 files_touched:
@@ -33,5 +33,5 @@ verification:
   audit_lint_strict: "pass_with_pre_existing_warnings_notices"
   diff_check: pass
 audit_row: acphilambda_mode_set_corner_transfer_current_surface_no_go_note_2026-07-04
-next_exact_action: "Commit, push stacked PR, then monitor audit."
+next_exact_action: "Monitor PR audit."
 stop_condition: "Block complete after green checks, review disposition pass/demote, PR opened, and lock released."

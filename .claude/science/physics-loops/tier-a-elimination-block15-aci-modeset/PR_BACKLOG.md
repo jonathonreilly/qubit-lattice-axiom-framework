@@ -1,7 +1,8 @@
 # PR Backlog
 
-Open a stacked PR against
-`physics-loop/tier-a-elimination-block14-aci-detorder-20260704`.
+Opened stacked PR against
+`physics-loop/tier-a-elimination-block14-aci-detorder-20260704`:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4942
 
 Proposed title:
 

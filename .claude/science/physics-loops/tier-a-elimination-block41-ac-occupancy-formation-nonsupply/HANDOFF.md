@@ -8,7 +8,7 @@ measure-side doublet occupancy dictionary or physical formation rule.
 
 Branch: `physics-loop/tier-a-elimination-block41-ac-occupancy-formation-nonsupply-20260704`
 Base: `physics-loop/tier-a-elimination-block40-ac-reta-c3-ratification-nonsupply-20260704`
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4982
 
 ## Claim Movement
 
@@ -47,7 +47,6 @@ passed.
 
 ## Next Exact Action
 
-Open the stacked PR on Block40. Then continue with either a direct R-eta
+Monitor hosted audit for PR #4982. Then continue with either a direct R-eta
 readout-license stretch attempt or an AC(i) matter-action dictionary theorem
 attempt.
-

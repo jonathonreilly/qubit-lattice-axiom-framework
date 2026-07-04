@@ -57702,7 +57702,7 @@
         "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a635b8d023dc56a58087e99c8c00dd6e9109e839a41b83ea736a7f6529298aba",
+      "note_hash": "9999a67febb6006112b8ddb5a73c6060f081c94e48d7c680ea77cd761d495cd2",
       "path": "docs/ACPHILAMBDA_CROSS_ARC_UNIT_CLASSIFICATION_WIRING_2026-07-02.md",
       "runner_path": "scripts/acphilambda_cross_arc_unit_classification_wiring_2026_07_02.py",
       "title": "ACPHILAMBDA Cross-Arc Unit-Classification Wiring"
@@ -57811,7 +57811,7 @@
         "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5976a849fe3059987ddffde5e41f17dcec300cf25820071f6080a7b2d766c667",
+      "note_hash": "775f75873ac63ddd68885c95e7f5fb4b819b5258e777dad6c0fcd0e4deeb8011",
       "path": "docs/ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md",
       "runner_path": "scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py",
       "title": "AC_phi_lambda K-Even Registration Correction And The Registered-Pattern Normal Form"
@@ -57851,7 +57851,7 @@
         "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "af2658c15dfdb05060376a096d6a768301109c929ae6717eb60308d70d3c6eb2",
+      "note_hash": "e8da077dc7149d838d872ce20a0b6a7b1303630e258d5bd9776f2c5ec7fcb87e",
       "path": "docs/ACPHILAMBDA_OCCURRENCE_CLOCK_COMPOSITION_DELTA_BLINDNESS_2026-07-02.md",
       "runner_path": "scripts/acphilambda_occurrence_clock_composition_delta_blindness_2026_07_02.py",
       "title": "AC_phi_lambda Occurrence-Clock Composition Delta-Blindness"
@@ -109392,7 +109392,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a37e74b71043b742673c819305ba4dced16f1a3044623c7b7891a6b18615218b",
+      "note_hash": "581ff6423420fe8c7509a50edfe12795145e9cded2e5dc232847dd50fc6680cb",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

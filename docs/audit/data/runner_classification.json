@@ -31548,6 +31548,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_rstar_dtotality_axiom_text_instances_2026_07_02.py"
     },
+    "rule_achirality_from_minimality_qualification_licensing_law_achiral_state_free_bounded_theorem_note_2026-07-04": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/rule_achirality_substrate_minimality_bit_count_2026_07_04.py"
+    },
     "runner_ledger_field_pin_hygiene_convention_proposal_note_2026-07-02": {
       "assert_count": 1,
       "counts": {
@@ -87735,6 +87747,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/rule_achirality_substrate_minimality_bit_count_2026_07_04.py": {
+      "assert_count": 2,
+      "claims": [
+        "rule_achirality_from_minimality_qualification_licensing_law_achiral_state_free_bounded_theorem_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/runner_ledger_field_pin_hygiene_convention_check_2026_07_02.py": {
       "assert_count": 1,
       "claims": [
@@ -90739,11 +90766,11 @@
       "A": 490,
       "B": 634,
       "C": 1273,
-      "D": 450,
+      "D": 451,
       "none": 457
     },
-    "runners_classified": 3304,
-    "runners_with_C": 1731,
-    "runners_with_D": 1061
+    "runners_classified": 3305,
+    "runners_with_C": 1732,
+    "runners_with_D": 1062
   }
 }

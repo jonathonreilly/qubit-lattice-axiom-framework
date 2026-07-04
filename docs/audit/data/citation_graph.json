@@ -37233,6 +37233,10 @@
       "to": "realized_state_primitive"
     },
     {
+      "from": "rule_achirality_from_minimality_qualification_licensing_law_achiral_state_free_bounded_theorem_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "r_base_group_theory_derivation_theorem_note_2026-04-24",
       "to": "hypercharge_identification_note"
     },
@@ -109446,7 +109450,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "75dec941fc4d3125432fc67ff7c65881195f5b80e9ab561a968cdb9d766c4a48",
+      "note_hash": "dad63e6a103993aa9410a9107a659fc49dd7a7b174ab93e5f1b087c207d9066b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -109973,6 +109977,20 @@
       "path": "docs/RSTAR_DTOTALITY_AXIOM_TEXT_INSTANCES_BOUNDED_NOTE_2026-07-02.md",
       "runner_path": "scripts/frontier_rstar_dtotality_axiom_text_instances_2026_07_02.py",
       "title": "R* And D-Totality Clauses As Axiom-Text Instances (Bounded Note)"
+    },
+    "rule_achirality_from_minimality_qualification_licensing_law_achiral_state_free_bounded_theorem_note_2026-07-04": {
+      "claim_id": "rule_achirality_from_minimality_qualification_licensing_law_achiral_state_free_bounded_theorem_note_2026-07-04",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (exact finite rule-space diagnostic: the",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "6bbb51231a49171a27e4331126a124c33830bb7399febdb4d50d4c7fc9bf2167",
+      "path": "docs/RULE_ACHIRALITY_FROM_MINIMALITY_QUALIFICATION_LICENSING_LAW_ACHIRAL_STATE_FREE_BOUNDED_THEOREM_NOTE_2026-07-04.md",
+      "runner_path": "scripts/rule_achirality_substrate_minimality_bit_count_2026_07_04.py",
+      "title": "Bounded Rule-Achirality Diagnostic from the Qualification: a Chiral Rule Branch Needs an Unfixed Reflection-Odd Bit, While Chiral States Remain Allowed"
     },
     "runner_ledger_field_pin_hygiene_convention_proposal_note_2026-07-02": {
       "claim_id": "runner_ledger_field_pin_hygiene_convention_proposal_note_2026-07-02",
@@ -125442,7 +125460,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1554,
+      "bounded_theorem": 1555,
       "decoration": 3,
       "meta": 319,
       "no_go": 316,
@@ -125451,7 +125469,7 @@
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1959,
+      "bounded_theorem": 1960,
       "decoration": 3,
       "meta": 319,
       "no_go": 420,
@@ -125459,10 +125477,10 @@
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14295,
-    "leaf_count": 1289,
-    "node_count": 3815,
+    "edge_count": 14296,
+    "leaf_count": 1290,
+    "node_count": 3816,
     "root_count": 1103,
-    "runners_with_path": 3438
+    "runners_with_path": 3439
   }
 }

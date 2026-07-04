@@ -78,6 +78,12 @@
       "status": "in_flight_pr",
       "pr": 0,
       "note": "Banked dynamics-axiom proposal lineage; cite only as proposed. PR pending re-bank; row updates when it lands."
+    },
+    {
+      "path": "docs/audit/DOC_CLASS_SWEEP_REPORT_2026-07-04.md",
+      "class": "G",
+      "status": "landed",
+      "note": "Full classification sweep of 372 guidance-shaped docs (C=142, D=20, E=56, F=25, G=123, already-registered=6); seeds the registry-expansion follow-up; the 25 Class F rows are the formula-addition work list."
     }
   ]
 }

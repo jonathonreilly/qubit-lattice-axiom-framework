@@ -6,9 +6,9 @@ target: AC_phi_lambda(i) occupancy determinant-power split
 claim_type: bounded_theorem
 registry_edits: false
 retirement_claimed: false
-status: local_verified
-source_commit: pending
-pr: pending
+status: pr_open
+source_commit: 87f50b6a8
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4969
 active_route: "prove exact det_C versus det_R(realification) support for the count-once/count-twice fork"
 hard_residual: "derive physical horn selection for the matter action's grain/statistics"
 files_touched:
@@ -33,5 +33,5 @@ verification:
   audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
   diff_check: pass
 audit_row: "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04: claim_type=bounded_theorem, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
-next_exact_action: "Publish stacked PR, watch hosted audit_pipeline, then continue with physical horn-selection or R-eta routes."
+next_exact_action: "Watch hosted audit_pipeline, then continue with physical horn-selection or R-eta routes."
 stop_condition: "Block complete after PR status is verified and local lock is removed."

@@ -1,0 +1,108 @@
+Tier-A residual owner decision packet verifier
+========================================================================================
+
+----------------------------------------------------------------------------------------
+A - source presence and proposal boundary
+----------------------------------------------------------------------------------------
+PASS: exists: docs/TIER_A_RESIDUAL_OWNER_DECISION_PACKET_2026-07-04.md
+PASS: exists: docs/TIER_A_RESIDUAL_GOVERNANCE_READINESS_PACKET_2026-07-04.md
+PASS: exists: docs/audit/data/tier_a_admissions.json
+PASS: exists: docs/audit/data/axiom_premise_nodes.json
+PASS: exists: docs/audit/data/doc_authority_registry.json
+PASS: exists: docs/audit/AXIOM_MINIMALITY_POLICY.md
+PASS: note declares Type meta
+PASS: note declares Claim type meta
+PASS: note declares Class D proposal
+PASS: runner path is wired in note
+PASS: proposal firewall present: no premise weight until an owner channel explicitly consumes
+PASS: proposal firewall present: does not retire AC_phi_lambda or theta
+PASS: proposal firewall present: does not edit any Tier-A registry
+PASS: proposal firewall present: does not adopt any governance premise
+PASS: proposal firewall present: No registry deletion should occur from this packet alone
+PASS: forbidden adoption overclaim absent: This document has premise weight
+PASS: forbidden adoption overclaim absent: has full premise weight
+PASS: forbidden adoption overclaim absent: is adopted by this packet
+PASS: forbidden adoption overclaim absent: AC_phi_lambda is retired
+PASS: forbidden adoption overclaim absent: theta is retired
+PASS: forbidden adoption overclaim absent: genuine_admitted_input_count` becomes `0` now
+PASS: forbidden adoption overclaim absent: effective_status: retained
+PASS: forbidden adoption overclaim absent: audit_status: audited_clean
+
+----------------------------------------------------------------------------------------
+B - current registry state is unchanged
+----------------------------------------------------------------------------------------
+PASS: approved premise IDs remain exactly four
+PASS: approved premise node keys remain exactly four
+PASS: Tier-A canonical IDs remain AC and theta
+PASS: Tier-A genuine admitted input count remains two
+PASS: Tier-A derivation target count remains two
+PASS: AC minimum decomposition unchanged
+PASS: theta minimum decomposition unchanged
+PASS: candidate not in approved premise IDs: ac_orbit_occupancy_statistical_grain_premise
+PASS: candidate not a Tier-A derivation target: ac_orbit_occupancy_statistical_grain_premise
+PASS: candidate not in approved premise IDs: ac_reta_hclass_hunit_readout_premise
+PASS: candidate not a Tier-A derivation target: ac_reta_hclass_hunit_readout_premise
+PASS: candidate not in approved premise IDs: theta_gauge_sector_phase_source_premise
+PASS: candidate not a Tier-A derivation target: theta_gauge_sector_phase_source_premise
+PASS: candidate not in approved premise IDs: theta_mass_determinant_channel_w2_premise
+PASS: candidate not a Tier-A derivation target: theta_mass_determinant_channel_w2_premise
+
+----------------------------------------------------------------------------------------
+C - decision candidates are exact and scoped
+----------------------------------------------------------------------------------------
+PASS: candidate id appears: ac_orbit_occupancy_statistical_grain_premise
+PASS: ac_orbit_occupancy_statistical_grain_premise names target AC_phi_lambda
+PASS: ac_orbit_occupancy_statistical_grain_premise names residual reading_occupancy_selection
+PASS: ac_orbit_occupancy_statistical_grain_premise contains scope phrase: K/CPT orbit or holomorphic-pair occupancy grain
+PASS: ac_orbit_occupancy_statistical_grain_premise contains scope phrase: once per K/CPT orbit rather than once per sector or channe
+PASS: ac_orbit_occupancy_statistical_grain_premise contains scope phrase: no value of `r`, `delta`, a charged-lepton mass
+PASS: candidate id appears: ac_reta_hclass_hunit_readout_premise
+PASS: ac_reta_hclass_hunit_readout_premise names target AC_phi_lambda
+PASS: ac_reta_hclass_hunit_readout_premise names residual delta_readout_identification_R_eta
+PASS: ac_reta_hclass_hunit_readout_premise contains scope phrase: fixed-locus density class h
+PASS: ac_reta_hclass_hunit_readout_premise contains scope phrase: identity-read in h-units as the eta angle
+PASS: ac_reta_hclass_hunit_readout_premise contains scope phrase: No additional clock-rate, transport, or normalization fact
+PASS: candidate id appears: theta_gauge_sector_phase_source_premise
+PASS: theta_gauge_sector_phase_source_premise names target theta
+PASS: theta_gauge_sector_phase_source_premise names residual gauge_side_winding_account
+PASS: theta_gauge_sector_phase_source_premise contains scope phrase: closed non-exact sector/readout surface
+PASS: theta_gauge_sector_phase_source_premise contains scope phrase: central-sector character
+PASS: theta_gauge_sector_phase_source_premise contains scope phrase: No independent multi-plaquette or large-gauge winding inpu
+PASS: candidate id appears: theta_mass_determinant_channel_w2_premise
+PASS: theta_mass_determinant_channel_w2_premise names target theta
+PASS: theta_mass_determinant_channel_w2_premise names residual mass_side_orientation_determinant_readout_bridge
+PASS: theta_mass_determinant_channel_w2_premise contains scope phrase: W2-registrable K-real determinant channel
+PASS: theta_mass_determinant_channel_w2_premise contains scope phrase: arg det(M_q) enters theta_bar
+PASS: theta_mass_determinant_channel_w2_premise contains scope phrase: No additional mass-surface selector or determinant-readout
+PASS: candidate compositional guardrail present: Each candidate is independently selectable
+PASS: candidate compositional guardrail present: Adopting one candidate would not adopt the others
+PASS: candidate compositional guardrail present: no candidate should be broadened by title or summary
+PASS: candidate compositional guardrail present: AC_phi_lambda retires only if Candidate 1
+PASS: candidate compositional guardrail present: theta retires only if Candidate 3
+
+----------------------------------------------------------------------------------------
+D - policy and readiness cross-checks
+----------------------------------------------------------------------------------------
+PASS: minimality policy contains required governance phrase: explicit owner approval
+PASS: minimality policy contains required governance phrase: Approval must be recorded in this policy and in the relevant machine registry
+PASS: minimality policy contains required governance phrase: Tier-A minimum-statement refinement
+PASS: minimality policy contains required governance phrase: selector for dimensionless physics content
+PASS: readiness packet justifies Block49: No approved primitive currently absorbs those four atoms
+PASS: readiness packet justifies Block49: Treating them as primitive content without an explicit owner-governance record
+PASS: readiness packet justifies Block49: Prepare exact governance candidates
+PASS: document-authority registry has exactly one row for packet
+PASS: document-authority row is Class D
+PASS: document-authority row status is landed
+PASS: document-authority row note preserves no-weight boundary
+
+----------------------------------------------------------------------------------------
+E - later adoption checklist remains non-executable
+----------------------------------------------------------------------------------------
+PASS: later-only registry sketch phrase present: The later adoption PR, if explicitly approved
+PASS: later-only registry sketch phrase present: record the owner approval
+PASS: later-only registry sketch phrase present: `genuine_admitted_input_count` becomes `0`
+PASS: later-only registry sketch phrase present: This sketch is not executable authority
+
+========================================================================================
+RESULT: PASS=82 FAIL=0 CHECKS=82
+========================================================================================

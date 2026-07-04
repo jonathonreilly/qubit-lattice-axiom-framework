@@ -111181,7 +111181,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "86154c3079e68d00e0038a160b70d476f056e2d1a426118f39e82fb6d723d34a",
+      "note_hash": "eaadb2e16777f8309ab9d8bc3995f74f1d3a3b7e83caedcae14f0a7e9c175353",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -119893,6 +119893,18 @@
       "runner_path": "scripts/tier_a_residual_governance_readiness_packet_2026_07_04.py",
       "title": "Tier-A Residual Governance Readiness Packet"
     },
+    "tier_a_residual_owner_decision_packet_2026-07-04": {
+      "claim_id": "tier_a_residual_owner_decision_packet_2026-07-04",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "cb1ce1f94a028b13a25abfa4a4c50022834cb7f52cfa7403f32917ebb4422469",
+      "path": "docs/TIER_A_RESIDUAL_OWNER_DECISION_PACKET_2026-07-04.md",
+      "runner_path": "scripts/tier_a_residual_owner_decision_packet_2026_07_04.py",
+      "title": "Tier-A Residual Owner Decision Packet"
+    },
     "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20": {
       "claim_id": "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20",
       "claim_type_author_hint": "positive_theorem",
@@ -127473,6 +127485,7 @@
     "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26",
     "three_generation_rooting_undefined_narrow_theorem_note_2026-05-27",
     "tier_a_residual_governance_readiness_packet_2026-07-04",
+    "tier_a_residual_owner_decision_packet_2026-07-04",
     "topological_instanton_textbook_infrastructure_import_note_2026-05-17",
     "triple_stack_collapse_scaling_note",
     "two_field_retarded_family_closure_note_2026-04-10",
@@ -127583,7 +127596,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 1560,
       "decoration": 3,
-      "meta": 320,
+      "meta": 321,
       "no_go": 350,
       "none": 1216,
       "open_gate": 134,
@@ -127592,16 +127605,16 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1965,
       "decoration": 3,
-      "meta": 320,
+      "meta": 321,
       "no_go": 454,
       "none": 248,
       "open_gate": 208,
       "positive_theorem": 659
     },
     "edge_count": 14612,
-    "leaf_count": 1269,
-    "node_count": 3857,
-    "root_count": 1103,
-    "runners_with_path": 3480
+    "leaf_count": 1270,
+    "node_count": 3858,
+    "root_count": 1104,
+    "runners_with_path": 3481
   }
 }

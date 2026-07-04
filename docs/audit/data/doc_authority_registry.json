@@ -85,6 +85,12 @@
       "class": "D",
       "status": "landed",
       "note": "Primitive registration draft: graded constraint (weights on record-conditioned menus), preserving PR #4916 review lessons as historical input only. No weight until registered."
+    },
+    {
+      "path": "docs/TIER_A_RESIDUAL_OWNER_DECISION_PACKET_2026-07-04.md",
+      "class": "D",
+      "status": "landed",
+      "note": "Owner decision packet: exact Tier-A residual governance candidates for AC_phi_lambda and theta. No premise weight until an owner channel explicitly adopts one or more candidates and records the adoption in the relevant policy and machine registry."
     }
   ]
 }

@@ -1,0 +1,38 @@
+slug: tier-a-elimination-block49-owner-decision-packet
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block49-owner-decision-packet-20260704
+base_branch: physics-loop/tier-a-elimination-block48-residual-governance-readiness-20260704
+goal: "Prepare exact owner-governance decision text for the remaining Tier-A residual atoms without adopting it."
+target_status: meta
+actual_current_surface_status: proposal_only
+trace_class: owner_decision_proposal_meta
+reachability_to_target: prepares
+active_route: "Tier-A residual owner-governance decision surface"
+hard_residual: "AC(i), AC(ii)/R-eta, theta gauge side, theta mass side"
+files_touched:
+  - docs/TIER_A_RESIDUAL_OWNER_DECISION_PACKET_2026-07-04.md
+  - scripts/tier_a_residual_owner_decision_packet_2026_07_04.py
+  - logs/runner-cache/tier_a_residual_owner_decision_packet_2026_07_04.txt
+  - docs/audit/data/doc_authority_registry.json
+  - .claude/science/physics-loops/tier-a-elimination-block49-owner-decision-packet/
+claim_movement: "Names exact Class D governance candidates and registry-effect sketches; adopts none."
+does_not_move:
+  - AC_phi_lambda retirement
+  - theta retirement
+  - Tier-A registry
+  - axioms
+  - primitives
+  - owner governance adoption
+checks:
+  runner: "PASS=82 FAIL=0 CHECKS=82"
+  py_compile: "PASS"
+  doc_authority_runner: "PASS=25 FAIL=0"
+  audit_pipeline: "PASS; seeded tier_a_residual_owner_decision_packet_2026-07-04 as meta/effective meta leaf; runner classification dominant B"
+  audit_lint_strict: "PASS; existing 23 warnings / 178 notices, no errors"
+  diff_check: "PASS"
+  ascii_hygiene: "PASS"
+review_loop_disposition: pass
+pr_status: pending
+pr_url: pending
+next_exact_action: "Commit, push stacked PR, and update PR metadata."
+stop_condition: "Owner approval is required before a proposal can become registry-retiring authority."

@@ -93,19 +93,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3809 |
+| Citation-graph nodes | 3810 |
 | Critical nodes | 668 |
 | High nodes | 468 |
 | Medium nodes | 971 |
-| Leaf nodes | 1702 |
+| Leaf nodes | 1703 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1863 descendants; score 186.364
+- `minimal_axioms` - critical; 1863 descendants; score 186.864
 - `three_generation_observable_theorem_note` - critical; 1148 descendants; score 67.166
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 198 descendants; score 65.137
 - `graph_first_su3_integration_note` - critical; 1578 descendants; score 65.125
-- `observable_principle_from_axiom_note` - critical; 1202 descendants; score 64.232
+- `observable_principle_from_axiom_note` - critical; 1201 descendants; score 64.231
 - `plaquette_self_consistency_note` - critical; 1248 descendants; score 53.287
-- `minimal_axioms_2026-05-03` - critical; 1154 descendants; score 48.174
-- `key_terminology` - critical; 1254 descendants; score 46.793
+- `minimal_axioms_2026-05-03` - critical; 1153 descendants; score 48.172
+- `key_terminology` - critical; 1253 descendants; score 46.792

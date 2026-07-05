@@ -492,6 +492,18 @@
       "dominant_class": "A",
       "runner": "scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py"
     },
+    "acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 15,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py"
+    },
     "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04": {
       "assert_count": 1,
       "counts": {
@@ -41968,6 +41980,21 @@
         "D": 3
       },
       "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 15,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
       "dominant_class": "A",
       "exists": true
     },
@@ -90896,15 +90923,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 692,
+    "decoration_candidates": 693,
     "dominant_class_distribution": {
-      "A": 493,
+      "A": 494,
       "B": 633,
       "C": 1276,
       "D": 451,
       "none": 457
     },
-    "runners_classified": 3310,
+    "runners_classified": 3311,
     "runners_with_C": 1735,
     "runners_with_D": 1064
   }

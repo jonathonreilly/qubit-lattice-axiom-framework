@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 868 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1933 |
+| unaudited | 1934 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -66,14 +66,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2271 |
+| `unaudited` | 2272 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1990 |
 | `decoration` | 50 |
 | `meta` | 344 |
-| `no_go` | 469 |
+| `no_go` | 470 |
 | `open_gate` | 185 |
 | `positive_theorem` | 612 |
 
@@ -82,17 +82,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `critical` | 657 |
 | `high` | 470 |
 | `medium` | 923 |
-| `leaf` | 1600 |
+| `leaf` | 1601 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 12
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3310
+- runners classified: 3311
 - runners with (C) first-principles compute hits: 1735
 - runners with (D) external comparator hits: 1064
-- decoration candidates (no C, no D): 692
+- decoration candidates (no C, no D): 693
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -100,8 +100,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1870 | 190.37 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1151 | 67.17 | `audited_clean` | **retained** |
+| 1 | `minimal_axioms` | meta | critical | 1871 | 190.87 | `unaudited` | meta |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1152 | 67.17 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 198 | 65.14 | `audited_clean` | **retained** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1578 | 65.12 | `audited_clean` | **retained** |
 | 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1201 | 64.23 | `unaudited` | unaudited |

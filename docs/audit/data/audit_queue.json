@@ -3,7 +3,7 @@
     "critical": 418,
     "high": 289,
     "leaf": 753,
-    "medium": 514
+    "medium": 513
   },
   "cycle_break_target_count": 12,
   "cycle_break_targets": [
@@ -21246,32 +21246,6 @@
       "ready": true,
       "runner_path": "scripts/COMPLEX_SELECTIVITY_COMPARE.py",
       "transitive_descendants": 10
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
-        "minimal_axioms",
-        "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.822,
-      "note_path": "docs/ACPHILAMBDA_HW_COMPLEMENT_READING_REGISTRATION_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_acphilambda_hw_complement_reading_registration_equivalence_2026_06_12.py",
-      "transitive_descendants": 9
     },
     {
       "audit_independence_required": "any_non_self",
@@ -57970,6 +57944,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 174,
-  "total_pending": 1974
+  "ready_count": 173,
+  "total_pending": 1973
 }

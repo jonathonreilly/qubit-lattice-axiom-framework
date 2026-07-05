@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 189 |
 | **retained_no_go** | 192 |
-| **retained_bounded** | 862 |
+| **retained_bounded** | 863 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 24 |
-| unaudited | 1937 |
+| unaudited | 1936 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1237 |
+| `audited_clean` | 1238 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2275 |
+| `unaudited` | 2274 |
 
 | claim_type | count |
 |---|---:|
@@ -146,6 +146,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1587,6 +1588,18 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `ACTION_NORMALIZATION_NOTE.md`
 - **auditor confidence:** high
+
+### `acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`ACPHILAMBDA_HW_COMPLEMENT_READING_REGISTRATION_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/ACPHILAMBDA_HW_COMPLEMENT_READING_REGISTRATION_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the supplied finite three-slot Hermitian circulant slot model, the hw=1 and hw=2 Hamming-complement readings have identical Record-registrable scalar content; no physical species selection or full-dynamics equivalence is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-postw4-row2-seat1`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The readout algebra reduces to symmetric unordered-spectrum data plus the single orientation-odd C3-invariant line (u-v) and frame-dependent components; the frame-dependent terms are not registrable, additive-plus-even registrability kills (u-v), and the symmetric functions agree for the two complement readings.  _(class `A`)_
+- **chain closes:** True — The claim is bounded to a stipulated finite slot model, and the direct dependencies are retained-grade supplied-context/registrability inputs or meta axiom context. The current runner completes with PASS=17 FAIL=0 and checks complement equivariance, the circulant symmetric spectrum, the orientation-odd line, additive-plus-even erasure, and source dependency boundaries.
+- **rationale:** The bounded conclusion follows as an algebraic closure over the supplied finite circulant slot model plus retained-bounded registrability and K/CPT supplied-context inputs. The runner does not merely print constants: it symbolically checks the eigenvalue formulas, symmetric-function parity, the (u-v)=-6 sqrt(3) B^3 sin(3 delta) line, complement-orbit order consistency, and the note's dependency firewall. The result is not promoted beyond its stated boundary: physical species selection, full-dynamics complementation equivariance, AC_phi_lambda retirement, and charged-lepton value derivation remain explicitly outside scope.
 
 ### `acphilambda_hw_complementation_equivariance_support_note_2026-06-09`
 

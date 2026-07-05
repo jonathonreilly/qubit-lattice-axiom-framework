@@ -693,6 +693,22 @@
       "to": "admitted_input_registry_tier_a_note_2026-05-23"
     },
     {
+      "from": "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04",
+      "to": "dynamics_coupling_residual_classifier_2026-06-06"
+    },
+    {
+      "from": "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04",
+      "to": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
       "from": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
       "to": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
     },
@@ -58024,6 +58040,23 @@
       "path": "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md",
       "runner_path": "scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py",
       "title": "AC_phi_lambda R-eta Angle-Native Frontier No-Go And License Certificate"
+    },
+    "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04": {
+      "claim_id": "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "dynamics_coupling_residual_classifier_2026-06-06",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+        "admitted_input_registry_tier_a_note_2026-05-23"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "343fe0b83346b68144fd55ac94099adbf147b8c56e45a718ff9e22144ae86b37",
+      "path": "docs/ACPHILAMBDA_R_ETA_DOUBLET_CLOCK_RATE_NORMALIZATION_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_r_eta_doublet_clock_rate_normalization_no_go_2026_07_04.py",
+      "title": "AC_phi_lambda R-eta Doublet-Clock Rate-Normalization No-Go"
     },
     "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11": {
       "claim_id": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
@@ -125610,7 +125643,7 @@
       "bounded_theorem": 1557,
       "decoration": 3,
       "meta": 319,
-      "no_go": 318,
+      "no_go": 319,
       "none": 1216,
       "open_gate": 133,
       "positive_theorem": 274
@@ -125619,15 +125652,15 @@
       "bounded_theorem": 1962,
       "decoration": 3,
       "meta": 319,
-      "no_go": 422,
+      "no_go": 423,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14315,
+    "edge_count": 14319,
     "leaf_count": 1294,
-    "node_count": 3820,
+    "node_count": 3821,
     "root_count": 1103,
-    "runners_with_path": 3443
+    "runners_with_path": 3444
   }
 }

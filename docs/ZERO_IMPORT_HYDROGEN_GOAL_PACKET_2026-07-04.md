@@ -147,6 +147,17 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   and `CHIRAL_HOLOMORPHIC_COUNT_COMPUTED_ON_RETAINED_REALIZATION`, not the
   determinant object, parent determinant theorem, full K1, `m_e`, `alpha(0)`,
   or hydrogen.
+  The K1 determinant-count ladder review packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_K1_DETERMINANT_COUNT_LADDER_REVIEW_PACKET_2026-07-05.md`
+  collects the determinant-domain, positive-object, determinant-object,
+  factorization, chiral-count, determinant-theorem, selector/default-exclusion,
+  and counting-measure handles into one review compression only surface. It is
+  sibling inputs, not a single chain: domain and positive-object disambiguation
+  are siblings under the determinant object; factorization and retained count
+  are siblings under the determinant theorem; the determinant theorem feeds one
+  selector/default-exclusion input; and selector/default exclusion feeds two K1
+  inputs. It does not supply full K1, K2, K3, K4, `m_e`, `alpha(0)`, or
+  hydrogen.
   The Koide native zero-section `#5007` impact discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_PR5007_IMPACT_DISCRIMINATOR_2026-07-04.md`
   records `KOIDE_NATIVE_ZERO_SECTION_DEFINED_ROUTE_ALGEBRA=TRUE` as useful
@@ -1894,6 +1905,7 @@ Koide electron readout, `m_e`, `alpha(0)`, or hydrogen.
                         | K1 readout determinant domain decision/no-go | Open blocker and decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_READOUT_DETERMINANT_DOMAIN_CURRENT_SURFACE_NO_GO_2026-07-05.md` and `ZERO_IMPORT_HYDROGEN_KOIDE_K1_READOUT_DETERMINANT_DOMAIN_RATIFICATION_DECISION_PACKET_2026-07-05.md` keep the Koide generation determinant/readout domain separate from generic C3 algebra, plain effective-potential vector trace, and vector/modulus determinant routes. |
                         | K1 positive readout object disambiguation target | Open nested subtarget under the object gate. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_POSITIVE_READOUT_OBJECT_DISAMBIGUATION_TARGET_DISCRIMINATOR_2026-07-05.md` packages `K1_POSITIVE_KOIDE_READOUT_OBJECT_DISAMBIGUATION_RETAINED`; if accepted, it can feed only `POSITIVE_KOIDE_READOUT_OBJECT_DISAMBIGUATED_FROM_VECTOR_MODULUS`, not the readout domain, full object, factorization, count, full K1, `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 positive readout object disambiguation decision/no-go | Open blocker and decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_POSITIVE_READOUT_OBJECT_DISAMBIGUATION_CURRENT_SURFACE_NO_GO_2026-07-05.md` and `ZERO_IMPORT_HYDROGEN_KOIDE_K1_POSITIVE_READOUT_OBJECT_DISAMBIGUATION_RATIFICATION_DECISION_PACKET_2026-07-05.md` keep wrong-route pruning separate from retained positive object selection. |
+                        | K1 determinant-count ladder review packet | Open grouped packet. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_DETERMINANT_COUNT_LADDER_REVIEW_PACKET_2026-07-05.md` is review compression only: sibling inputs, not a single chain. It collects the K1 determinant-domain, positive-object, determinant-object, factorization, chiral-count, determinant-theorem, selector/default-exclusion, and counting-measure handles without ratifying full K1, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta readout-retirement target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `R_ETA_READOUT_IDENTIFICATION_RETAINED`; if accepted it can feed the exact theorem and radian-readout license inputs under the two-ninths/radian subgate, not full K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta readout-retirement ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the eleven-input owner/audit contract for `R_ETA_READOUT_IDENTIFICATION_RETAINED`; it is not retained R-eta, K2 exactness, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta readout-retirement current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `R_ETA_READOUT_IDENTIFICATION_RETAINED`. |

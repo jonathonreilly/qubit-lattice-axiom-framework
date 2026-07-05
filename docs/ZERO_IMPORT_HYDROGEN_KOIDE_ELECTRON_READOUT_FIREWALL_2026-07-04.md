@@ -192,6 +192,18 @@ positive object selection. If later accepted, it can feed only
 readout domain, full object, factorization, count, full K1, physical electron
 mass, alpha input, or hydrogen.
 
+The K1 determinant-count ladder review packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_K1_DETERMINANT_COUNT_LADDER_REVIEW_PACKET_2026-07-05.md`)
+groups the determinant-domain, positive-object, determinant-object,
+factorization, chiral-count, determinant-theorem, selector/default-exclusion,
+and counting-measure handles as review compression only. This is sibling
+inputs, not a single chain: the object gate needs both domain and positive
+object consequences, the determinant theorem needs object/factorization/count
+consequences, the selector/default-exclusion gate needs the determinant theorem
+plus real-vector default exclusion, and K1 still needs the final ten-input
+counting-measure contract. It does not supply full K1, physical electron mass,
+alpha input, or hydrogen.
+
 The Koide native zero-section `#5007` impact discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_PR5007_IMPACT_DISCRIMINATOR_2026-07-04.md`)
 updates this boundary for the latest open Koide route-guard repair. It records
@@ -933,6 +945,7 @@ No hidden admission is left buried as background.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COMPLEX_SLOT_FACTORING_AND_CHIRAL_COUNT_BATCH_TARGET_DISCRIMINATOR_2026-07-05.md` | coupled target for determinant factorization and retained count inputs | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COMPLEX_SLOT_FACTORING_AND_CHIRAL_COUNT_BATCH_RATIFICATION_DECISION_PACKET_2026-07-05.md` | decision packet for the coupled factorization/count subhandoff | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COMPLEX_SLOT_FACTORING_AND_CHIRAL_COUNT_BATCH_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for factorization and count inputs | yes |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_DETERMINANT_COUNT_LADDER_REVIEW_PACKET_2026-07-05.md` | K1 determinant-count ladder review packet; review compression only, sibling inputs, not a single chain | yes |
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | K2 delta comparator and scale boundary | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | K2 value-face registration versus exactness residual | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 R-eta supplied-premise conditionality boundary | yes |

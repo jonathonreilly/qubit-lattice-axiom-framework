@@ -1,0 +1,168 @@
+AC_phi_lambda R-eta doublet-clock rate-normalization no-go verifier
+
+========================================================================================
+A. source presence and Tier-A boundary
+========================================================================================
+[PASS] exists: docs/ACPHILAMBDA_R_ETA_DOUBLET_CLOCK_RATE_NORMALIZATION_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/audit/data/axiom_premise_nodes.json
+[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] exists: docs/ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md
+[PASS] exists: docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md
+[PASS] exists: docs/RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md
+[PASS] exists: docs/DYNAMICS_COUPLING_RESIDUAL_CLASSIFIER_2026-06-06.md
+[PASS] exists: docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+[PASS] exists: docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
+[PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+[PASS] exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+[PASS] exists: docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+[PASS] AC_phi_lambda remains the live Tier-A target
+[PASS] AC minimum decomposition keeps R-eta
+[PASS] AC minimum decomposition keeps occupancy separate
+[PASS] AC statement names density-read-as-angle R-eta
+[PASS] human registry names R-eta
+[PASS] note declares no_go Type
+[PASS] note says R-eta is not retired
+[PASS] note says AC_phi_lambda is not retired
+[PASS] note says registry not edited
+
+========================================================================================
+B. dependency classes and boundary pins
+========================================================================================
+[PASS] ledger row exists for ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md
+[PASS] ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md status in allowed current set
+[PASS] ledger row exists for ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md
+[PASS] ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md status in allowed current set
+[PASS] ledger row exists for KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+[PASS] KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md status in allowed current set
+[PASS] ledger row exists for BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
+[PASS] BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md status in allowed current set
+[PASS] new row not required before audit pipeline seeding
+[PASS] approved premise registry has four canonical ids
+[PASS] minimal axioms boundary contains Records form.
+[PASS] minimal axioms boundary contains at what rate
+[PASS] minimal axioms boundary contains transition probabilities or weights
+[PASS] minimal axioms boundary contains formation rules
+[PASS] minimal axioms boundary contains physical observable bridge
+[PASS] realized-state primitive withholds no state
+[PASS] realized-state primitive withholds measure
+[PASS] realized-state primitive withholds weighting
+[PASS] realized-state primitive withholds probability rule
+[PASS] realized-state primitive withholds normalization rule
+[PASS] realized-state primitive withholds value
+[PASS] kinetic primitive withholds mixing angle
+[PASS] kinetic primitive withholds phase
+[PASS] kinetic primitive withholds selector
+[PASS] kinetic primitive withholds readout bridge
+[PASS] scale primitive carries zero dimensionless content
+
+========================================================================================
+C. source-surface pins
+========================================================================================
+[PASS] pointer clock note pin: doublet clock formula
+[PASS] pointer clock note pin: free |b| unit
+[PASS] pointer clock note pin: occurrence statistics open
+[PASS] pointer clock note pin: readout selection open
+[PASS] defect rescale pin: Rescale Obstruction
+[PASS] defect rescale pin: no derivation drawn from this scanned surface ca
+[PASS] defect rescale pin: Any successful derivation of `c = 1` must contai
+[PASS] record clock/rate pin: stable dial location != Record-selected dial val
+[PASS] record clock/rate pin: Rate and clock remain separate
+[PASS] record clock/rate pin: still needs a clock/rate unit
+[PASS] dynamics classifier pin: coupling magnitude
+[PASS] dynamics classifier pin: clock-rate normalization
+[PASS] dynamics classifier pin: record-preservation dynamics stack
+[PASS] fixed-locus source contains 2/9
+[PASS] fixed-locus source excludes physical readout bridge
+[PASS] Brannen source carries supplied dial
+
+========================================================================================
+D. exact doublet-clock algebra
+========================================================================================
+[PASS] L = 2/9
+[PASS] S_sum = 3L = 2/3
+[PASS] raw clock depends on B
+[PASS] raw clock depends on delta
+[PASS] dimensionless clock removes B
+[PASS] raw clock rescales with B
+[PASS] dimensionless clock is 2 sqrt(3) sin(delta)
+[PASS] zero clock at delta=0
+[PASS] zero clock at delta=pi
+[PASS] target delta is positive and below pi/2
+[PASS] target delta has nonzero clock
+[PASS] Taylor lower bound for sin(2/9) is positive
+[PASS] dimensionless clock at target is strictly above 2/3
+[PASS] numeric sanity: Omega(2/9) > 2/3
+[PASS] Omega target is not fixed-locus density L
+[PASS] Omega = 0 misses target delta
+[PASS] maximal clock sin(delta)=1 misses target delta
+
+========================================================================================
+E. event-rate normalization obstruction
+========================================================================================
+[PASS] event ratio contains B
+[PASS] event ratio contains a_act
+[PASS] event ratio contains delta
+[PASS] solving event ratio target leaves B in terms of a_act
+[PASS] solution still contains a_act
+[PASS] changing a_act changes fitted B
+[PASS] same delta with B doubled changes event ratio
+[PASS] same delta with a_act doubled halves event ratio
+[PASS] joint B,a_act rescale preserves event ratio
+[PASS] completion 1 has positive B and a_act
+[PASS] completion 1 keeps target delta fixed
+[PASS] completion 1 event ratio is positive
+[PASS] completion 2 has positive B and a_act
+[PASS] completion 2 keeps target delta fixed
+[PASS] completion 2 event ratio is positive
+[PASS] completion 3 has positive B and a_act
+[PASS] completion 3 keeps target delta fixed
+[PASS] completion 3 event ratio is positive
+[PASS] completion 4 has positive B and a_act
+[PASS] completion 4 keeps target delta fixed
+[PASS] completion 4 event ratio is positive
+[PASS] current-surface completions yield distinct event ratios
+
+========================================================================================
+F. fixed-locus matching route checks
+========================================================================================
+[PASS] raw clock to S_sum solves for B
+[PASS] raw clock solution is exactly the occurrence relation at a_act=1
+[PASS] dimensionless clock at target is not S_sum
+[PASS] dimensionless clock at target is not L
+[PASS] numeric sanity: sin(2/9) is below 2/9
+[PASS] normalized fraction at target is not L
+[PASS] normalizing by 2sqrt3 changes the target equation
+
+========================================================================================
+G. note discipline and no-overclaim checks
+========================================================================================
+[PASS] note contains required boundary: bounded route no-go
+[PASS] note contains required boundary: This note does not derive, refute, re-grade, retir
+[PASS] note contains required boundary: the current surface does not derive the normalizat
+[PASS] note contains required boundary: A future rate-normalization theorem remains possib
+[PASS] note contains required boundary: Direct R-eta readout-license theorem
+[PASS] note contains required boundary: Coherence-event theorem
+[PASS] note contains required boundary: Non-minimal transport theorem
+[PASS] note contains required boundary: Owner governance
+[PASS] note contains N1 no-go gate
+[PASS] note contains N2 no-go gate
+[PASS] note contains N3 no-go gate
+[PASS] note contains N4 no-go gate
+[PASS] note contains N5 no-go gate
+[PASS] note contains N6 no-go gate
+[PASS] note contains N7 no-go gate
+[PASS] note contains N8 no-go gate
+[PASS] forbidden phrase absent: R-eta is retired
+[PASS] forbidden phrase absent: AC_phi_lambda is retired
+[PASS] forbidden phrase absent: therefore R-eta closes
+[PASS] forbidden phrase absent: therefore AC_phi_lambda closes
+[PASS] forbidden phrase absent: audit_status: audited_clean
+[PASS] forbidden phrase absent: effective_status: retained
+[PASS] forbidden phrase absent: promoted to retained
+[PASS] note links minimal current residual to Tier-A registry
+[PASS] note does not link generated audit ledger as authority
+
+TOTAL: PASS=137 FAIL=0 CHECKS=137

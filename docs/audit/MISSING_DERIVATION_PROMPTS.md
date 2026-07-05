@@ -2575,7 +2575,7 @@ _2 rows in this category._
 
 ### `hypercharge_identification_note`
 
-**Note:** [docs/HYPERCHARGE_IDENTIFICATION_NOTE.md](docs/HYPERCHARGE_IDENTIFICATION_NOTE.md)  |  **Descendants:** 1390  |  **Class:** A
+**Note:** [docs/HYPERCHARGE_IDENTIFICATION_NOTE.md](docs/HYPERCHARGE_IDENTIFICATION_NOTE.md)  |  **Descendants:** 1391  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/HYPERCHARGE_IDENTIFICATION_NOTE.md.

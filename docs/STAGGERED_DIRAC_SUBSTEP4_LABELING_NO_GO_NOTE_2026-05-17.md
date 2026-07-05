@@ -10,6 +10,7 @@ audit verdict and downstream status are set only by the independent
 audit lane.
 **Primary runner:** [`scripts/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.py`](../scripts/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.py)
 **Cache:** [`logs/runner-cache/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.txt`](../logs/runner-cache/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.txt)
+**Dependency-surface update (2):** 2026-07-05 — per the audited_conditional blocker (full-A_min-language support for the orbit-equivariance invariant): the invariant step now consumes the joint-automorphism bridge [STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md](STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md) (axiom-supplied proper-cubic-rotation symmetry acting jointly on axes and corners + the memo's Qualification clause; exhaustive word sweep in its runner). The A3 campaign citation remains the route-level P2 reference. No claim wording weakened; the no-go statement is unchanged.
 **Dependency-surface update:** 2026-07-05 — cross-reference edge hygiene for auditability: the superseded-generation substep-1/substep-3 sources re-pointed to their retained substep successors (originals kept as historical context handles), and the 2026-05-07 substep-4 AC-narrowing source demoted to a context handle (its consumed narrowing surface is carried by the linked 2026-05-17 lemma bridges). The countermodel proof and the no-go claim are untouched.
 **Authority role:** formal classification of the AC_φλ atom (residual)
 from the substep-4 AC narrowing as a **no-go within A_min**: no labeled
@@ -114,9 +115,19 @@ in the necessary sense — it would pick out one of the three orbit
 elements as derivationally preferred over the others.
 
 The invariant argument shows: such preference cannot be a theorem of
-A_min unless an A_min-derivable C_3-breaking element exists. By the
-10-probe A3 obstruction campaign (cited in §1.4), no such element
-exists. Therefore `(D)` cannot be derived from A_min. □
+A_min unless an A_min-derivable C_3-breaking element exists. The formal
+full-A_min-language support for this step — covering translation-axis
+relabeling as well (selectors that name an axis, e.g. "the corner with
+`T_1`-eigenvalue −1", do not escape, because the axis name itself is
+moved by the automorphism) — is the joint-automorphism bridge
+[STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md](STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md):
+the cyclic axis permutation is axiom-supplied proper-cubic-rotation
+symmetry acting jointly on axes and corners, and by the axiom memo's
+Qualification clause no non-admitted law may depend on a choice not
+fixed by that supplied structure; hence no A_min-derivable C_3-breaking
+element exists. (The 10-probe A3 obstruction campaign, cited in §1.4,
+remains the route-level P2 citation.) Therefore `(D)` cannot be derived
+from A_min. □
 
 ### 2.2 Counter-models (witness)
 
@@ -288,7 +299,7 @@ or `lane_prediction` framing, never inside a positive proof).
 
 | Component | Testability |
 |---|---|
-| Orbit-equivariance invariant | Verified algebraically: every prop derivable from A_min about `{c_1, c_2, c_3}` is invariant under cyclic relabeling of the carrier indices. Runner checks against explicit instances. |
+| Orbit-equivariance invariant | Verified algebraically at two levels: this note's runner checks explicit instances; the full-A_min-language step (including translation-axis relabeling) is supplied by the joint-automorphism bridge [STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md](STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md), whose runner proves the generator-level intertwining exactly and sweeps all operator words to length 4. |
 | Counter-model (π_A vs π_B) | Verified by constructing explicit π_A, π_B and running A_min-derivable propositions through both. Runner exhibits all three propositions (AC_λ bridge corollary, trace-equipartition, NQ structure) under both. |
 | Exhaustiveness of P1/P2/P3 | Constructive: §2.3 reduces any candidate distinguishing X to one of three classes by case analysis on what X can carry. Runner does not need to verify exhaustiveness (it's a logical argument), but the runner verifies that each of P1, P2, P3 IS in fact a distinguishing premise (i.e., adding P1 makes π_A vs π_B distinguishable, etc.). |
 

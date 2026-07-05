@@ -90,6 +90,9 @@ acceptance.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for the spinful staggered kernel scalar-lift exclusion input | this KS child theorem or KS physical spin-lift action law |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit decision shape for `SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED` | retained scalar-lift exclusion theorem itself |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the scalar-lift exclusion handoff | KS route closure or parent bridge closure |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for the KS physical spin-lift action-law input | this KS child theorem, scalar-lift exclusion, or `FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED` |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit decision shape for `KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED` | retained action-law theorem itself |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the action-law handoff | KS route closure or parent bridge closure |
 | `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded KS phase/gauge-class support inside the declared kinetic class | physical matter-state spin-lift action law |
 | `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded Grassmann/CAR support, conditional on `GL(F)` for the three-candidate class | unconditional physical state-action law |
 | `STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md` | narrow staggered chirality parity support | full realization, BZ-corner species-label bridge, or physical state law |
@@ -112,6 +115,7 @@ signals; clean/dirty/check labels are not proof inputs.
 |---|---|---|
 | merged `#5023` Koide W4 audit-readiness repairs | record/species/custody/hw-complement hygiene | no KS-to-physical state-law theorem |
 | merged `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | gate-readiness and audit-graph hygiene | no KS-to-physical state-law theorem |
+| merged `#5026` Koide custody L4 retained-successor re-point | charged-lepton custody citation repair | no KS-to-physical state-law theorem |
 | open `#5021` primitive-retirement review | draft meta map; no retirements | no primitive shortcut |
 | open `#5014` record-formation front domain wall | formation-front/domain-wall support | no physical KS spin-lift law |
 | open `#5017` domain-wall edge anomaly inflow spectral flow | anomaly-flow support | no physical KS spin-lift law |
@@ -189,7 +193,7 @@ Surface table.
 | Candidate path | Status | What it would close |
 |---|---|---|
 | retained spinful staggered kernel exclusion | open positive route | `SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED` |
-| retained KS spin-lift physical action law | open positive route | `KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED` |
+| retained KS spin-lift physical action law | open positive route, now packaged by `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | `KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED` |
 | parent physical matter-state bridge lane | open parent route | can consume this theorem after this child theorem exists |
 | sibling elementary state-law route | separate open route | can close the parent bridge without this KS child theorem |
 | owner-governed primitive registry update | not present now | could supply an approved primitive only after review and registry update |
@@ -236,5 +240,4 @@ KS impossibility is not shipped.
   consequence.
 - No new axiom, primitive, Tier-A admission, empirical import, or audit status
   is introduced.
-- No claim that #5014, #5017, #5018, #5023, or #5024 supplies the KS physical
-  matter-state spinor-law theorem.
+- No claim that #5014, #5017, #5018, #5023, #5024, or #5026 supplies the KS physical matter-state spinor-law theorem.

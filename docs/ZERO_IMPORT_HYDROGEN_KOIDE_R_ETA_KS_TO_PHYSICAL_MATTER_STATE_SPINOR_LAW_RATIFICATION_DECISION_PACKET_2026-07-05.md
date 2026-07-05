@@ -65,6 +65,9 @@ electron readout, electron mass, or hydrogen.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | child subtarget for the scalar-lift exclusion input |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | decision shape for the scalar-lift exclusion handoff, not this KS theorem |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply of the scalar-lift exclusion handoff |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | child subtarget for the KS physical spin-lift action-law input |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md` | decision shape for the action-law handoff, not this KS theorem |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply of the action-law handoff |
 | `KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md` | localizes the live KS route |
 | `CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md` | refutes the spinor-module escape and names the live KS/physical-state-law route |
 | `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded KS support, not the decision consequence |
@@ -119,9 +122,11 @@ not call bounded support "not physics" outside the named child-theorem handle.
 
 The partial closures are explicit: a retained spinful-kernel scalar-lift
 exclusion can close one missing physics input; a retained KS spin-lift physical
-action law can close the other; owner/audit acceptance can then promote the
-child handle. A future primitive route would require owner-governed registry
-review because no such primitive is registered now.
+action law, now packaged by
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md`,
+can close the other; owner/audit acceptance can then promote the child handle.
+A future primitive route would require owner-governed registry review because
+no such primitive is registered now.
 
 ### N7 - Steelman
 

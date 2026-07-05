@@ -203,13 +203,14 @@ mass-spectrum target remains needed before R-Lep can spend the `e`, `mu`,
 ## Current Open PR Alignment
 
 Open PRs were refreshed on 2026-07-05 UTC after `#5015` opened and after
-`#5013` merged. The queue signal here is that a PR is opened and relevant to a
-lane; clean/green status is not a prerequisite because reviewer cleanup and
-landing happen outside this packet. No currently open PR supplies the physical
-electron mass:
+`#5013` merged, then refreshed again after `#5020` opened. The queue signal
+here is that a PR is opened and relevant to a lane; clean/green status is not
+a prerequisite because reviewer cleanup and landing happen outside this
+packet. No currently open PR supplies the physical electron mass:
 
 | PR | queue signal | effect on this electron-mass packet |
 |---|---:|---|
+| `#5020` Koide R-eta value-face registered-angle/exactness relocation | open | K2 value-face progress; exactness residual remains open; no physical electron mass |
 | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | open | premise-hygiene and audit-readiness context for Koide/AC_phi_lambda; no physical electron mass |
 | `#5018` domain-wall edge content vs SM chiral fermions map | open | above-C3 chiral-content map; no K3 species bridge or physical electron mass |
 | `#5017` domain-wall edge anomaly inflow via spectral flow | open | anomaly-inflow consistency context; no K3 species bridge or physical electron mass |
@@ -235,6 +236,7 @@ metadata, not proof inputs here.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_RATIFICATION_DECISION_PACKET_2026-07-04.md` | conditional branch-to-mass map handoff | no phase value, physical species identity, or absolute scale |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-04.md` | conditional Z1-Z3 native bridge | no physical species bridge or absolute scale |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for native bridge | no `NATIVE_ZERO_SECTION_BRIDGE_RETAINED` on current retained, primitive, or open-PR surfaces |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | hydrogen-facing impact boundary for open PR `#5020` | K2 value-face progress only; no delta exactness theorem, species bridge, scale, or electron mass |
 | `ZERO_IMPORT_HYDROGEN_CHIRALITY_DOMAIN_WALL_PR5017_5018_IMPACT_DISCRIMINATOR_2026-07-05.md` | hydrogen-facing impact boundary for open chirality/domain-wall PRs `#5017` and `#5018` | above-C3 context only; no K3 species bridge, Koide readout, or electron mass |
 | `ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_SPECIES_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-04.md` | conditional K3 physical-species bridge | no native readout bridge, branch-to-mass map, or scale |
 | `ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_SPECIES_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for K3 species bridge | no `PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED` on current retained, primitive, or open-PR surfaces |

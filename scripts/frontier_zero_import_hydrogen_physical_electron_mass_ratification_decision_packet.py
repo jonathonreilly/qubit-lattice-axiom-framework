@@ -29,6 +29,7 @@ BRANCH_MASS_MAP_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MA
 BRANCH_MASS_MAP_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 ELECTRON_MASS_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 MASS_SPECTRUM_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_CHARGED_LEPTON_MASS_SPECTRUM_RATIFICATION_DECISION_PACKET_2026-07-05.md"
+PR5020_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md"
 PR5019_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md"
 CHIRALITY_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_CHIRALITY_DOMAIN_WALL_PR5017_5018_IMPACT_DISCRIMINATOR_2026-07-05.md"
 KOIDE_OPEN_CERT = ROOT / "docs" / "CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md"
@@ -151,6 +152,7 @@ def main() -> None:
         BRANCH_MASS_MAP_NO_GO,
         ELECTRON_MASS_NO_GO,
         MASS_SPECTRUM_PACKET,
+        PR5020_IMPACT,
         PR5019_IMPACT,
         CHIRALITY_IMPACT,
         KOIDE_OPEN_CERT,
@@ -215,6 +217,10 @@ def main() -> None:
         "Open PR Alignment",
         "Open PRs were refreshed on 2026-07-05 UTC after `#5015` opened and after",
         "clean/green status is not a prerequisite",
+        "`#5020` Koide R-eta value-face registered-angle/exactness relocation | open",
+        "K2 value-face progress",
+        "exactness residual remains open",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md",
         "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | open",
         "ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md",
         "premise-hygiene and audit-readiness context",
@@ -323,6 +329,7 @@ def main() -> None:
     branch_mass_map_no_go = read(BRANCH_MASS_MAP_NO_GO)
     electron_mass_no_go = read(ELECTRON_MASS_NO_GO)
     mass_spectrum_packet = read(MASS_SPECTRUM_PACKET)
+    pr5020_impact = read(PR5020_IMPACT)
     chirality_impact = read(CHIRALITY_IMPACT)
     koide_open_cert = read(KOIDE_OPEN_CERT)
     brannen_open_gate = read(BRANNEN_OPEN_GATE)
@@ -385,6 +392,16 @@ def main() -> None:
         "PHYSICAL_CHARGED_LEPTON_MASS_TRIPLE_RETAINED" in mass_spectrum_packet
         and "PHYSICAL_CHARGED_LEPTON_SPECIES_LABELS_RETAINED" in mass_spectrum_packet,
     )
+    audit.check(
+        "electron-mass packet references #5020 impact note",
+        PR5020_IMPACT.name in note and "#5020" in note,
+    )
+    audit.check(
+        "#5020 impact remains K2 value-face progress only",
+        "K2 value-face progress" in pr5020_impact
+        and "No derivation of `delta = 2/9`." in pr5020_impact
+        and "No derivation or ratification of `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT`." in pr5020_impact,
+    )
     audit.check("Koide open certificate keeps physical mass spectrum open", "not a derivation of the physical charged-lepton" in koide_open_cert)
     audit.check("Koide open certificate excludes mass-spectrum theorem", "physical charged-lepton mass-spectrum theorem" in koide_open_cert)
     audit.check("Brannen open gate excludes phase and scale derivation", "does not derive the Brannen phase" in brannen_open_gate and "dimensionful mass scale" in brannen_open_gate)
@@ -415,6 +432,7 @@ def main() -> None:
 
     section("Open PR and non-claim boundaries")
     latest_pr_markers = [
+        "`#5020` Koide R-eta value-face registered-angle/exactness relocation | open",
         "`#5018` domain-wall edge content vs SM chiral fermions map | open",
         "`#5017` domain-wall edge anomaly inflow via spectral flow | open",
         "`#5015` wave-collapse-block01 measurement-collapse gate | open",
@@ -431,7 +449,7 @@ def main() -> None:
     ]
     for marker in latest_pr_markers:
         audit.check(f"opened PR marker present: {marker}", flat(marker) in note_flat)
-    audit.check("open PR check does not require clean status", "clean/green status is not a prerequisite" in note)
+    audit.check("open PR check does not require clean status", "clean/green status is not a prerequisite" in note_flat)
 
     explicit_non_claims = [
         "No derivation or ratification of the physical electron mass.",

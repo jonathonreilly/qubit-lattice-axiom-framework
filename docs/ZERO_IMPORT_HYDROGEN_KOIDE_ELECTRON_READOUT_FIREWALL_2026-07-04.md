@@ -80,7 +80,7 @@ The hydrogen-facing Lane 6 dependency stack is now:
 | wall | content | current standing |
 |---|---|---|
 | K1 | Counting-measure bit: force `r = 1/2`, equivalently `Q=2/3`, rather than the dimension/Born default. | Reduced to the known counting bit; conditional through Tier-A `AC_phi_lambda`, not zero-import from the current retained inventory. Open `#4932` blocks the updated-axiom/primitives shortcut for AC(i)'s measure-side binary. Open `#4991` would change the old occupancy atom's status to owner-governed premise standing, not theorem closure. |
-| K2 | Radian/readout identification: turn the retained finite `2/9` weight into the charged-lepton `delta = 2/9` radian phase. | Open gate / bounded comparator; open `#4930` prunes angle-native packaging routes and sharpens the live target to a licensed `Phi = S_sum = 2/3` bridge, and open `#4931` blocks the occurrence-axiom shortcut. Open `#4991` would change the old R-eta h-unit readout-license atom's status to owner-governed premise standing, not a zero-source radian theorem. |
+| K2 | Radian/readout identification: turn the retained finite `2/9` weight into the charged-lepton `delta = 2/9` radian phase. | Open gate / bounded comparator; open `#4930` prunes angle-native packaging routes and sharpens the live target to a licensed `Phi = S_sum = 2/3` bridge, and open `#4931` blocks the occurrence-axiom shortcut. Open `#5020` relocates the value face to realized-state registration while leaving the exactness residual open; it is K2 progress, not a zero-source radian theorem. Open `#4991` would change the old R-eta h-unit readout-license atom's status to owner-governed premise standing, not a zero-source radian theorem. |
 | K3 | Species/electron branch: connect the selected triplet branch to the physical electron, not only an abstract sorted eigenvalue. | Included in the Tier-A `AC_phi_lambda` minimum decomposition as the abstract-sector to physical-species bridge. Open `#4991` is compatible with C3 owner-ratified standing but supplies no above-C3 taste/Dirac/chirality content and no physical electron mass. |
 | K4 | Absolute scale: assemble `a_l^2`, currently sharpened to weak front, exact `1/256`, and A3 precision placement. | Packaged by the absolute charged-lepton scale ratification decision packet as a ten-input owner/audit handoff; not ratified here. |
 
@@ -206,13 +206,22 @@ records the separate status effect. If #4991 is adopted as written, the old
 owner-governed chain-satisfying premise language. That does not supply `r`,
 `delta`, `rho_e(delta)`, `m_e`, absolute scale, `alpha(0)`, or hydrogen.
 
+The Koide R-eta value-face `#5020` impact discriminator
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md`)
+records the latest open K2 value-face movement. It separates registered
+`Phi` value standing from the still-open exactness residual, so the Koide lane
+is sharper, but no electron readout, physical electron mass, alpha input, or
+hydrogen input is supplied.
+
 ## Open PR Alignment
 
-Open PRs were checked on 2026-07-04. The relevant Koide stack does not close
-this firewall on current main:
+Open PRs were checked on 2026-07-04 and refreshed on 2026-07-05 after `#5020`
+opened. The relevant Koide stack does not close this firewall on current main:
 
 | PR | effect on K1-K3 |
 |---|---|
+| `#5020` | Koide R-eta value-face registered-angle/exactness relocation. It moves K2 value-face standing toward realized-state registration and names the exactness residual; it supplies no electron readout, physical electron mass, or hydrogen. |
+| `#5019` | Koide `AC_phi_lambda` axiom-surface rebase. It is premise-hygiene and audit-readiness context for the decomposition chain; it supplies no K1/K2/K3 closure. |
 | `#5011` | Latest open PR at refresh; eta twisted walk family runner repair, `CLEAN`. It does not supply Koide electron readout, charged-lepton scale, `alpha(0)`, or hydrogen. |
 | `#5010` | Latest open PR at refresh; YT P1 I_s re-audit packet bridge repair. It does not supply Koide electron readout, charged-lepton scale, `alpha(0)`, or hydrogen. |
 | `#5009` | S3 spacetime tensor primitive runner repair, currently clean at refresh. It does not supply Koide electron readout, charged-lepton scale, `alpha(0)`, or hydrogen. |
@@ -234,10 +243,11 @@ this firewall on current main:
 
 Thus K3 has a live import-retirement path in open review, but this note does
 not use that stacked PR as current-main closure. K2 is also sharpened by open
-`#4930`, `#4931`, and the `#5007` native zero-section route-guard repair, but
-not closed. K1 is sharpened by open `#4932` and the same `#5007` context, but
-not closed. K1 and K2 still block a zero-import electron mass even under the
-`#4929`-`#4932` stack plus the `#5007` defined-route algebra surface.
+`#5020`, `#4930`, `#4931`, and the `#5007` native zero-section route-guard
+repair, but not closed. K1 is sharpened by open `#4932` and the same `#5007`
+context, but not closed. K1 and K2 still block a zero-import electron mass
+even under the `#4929`-`#4932` stack plus the `#5007` defined-route algebra
+surface.
 
 ## Lane Consequence
 
@@ -270,6 +280,7 @@ hydrogen electron mass; the phase/readout walls K1-K3 remain explicit.
 | Tier-A owner-retirement `#4991` route | Treat owner-governed premise standing as a hydrogen calculation. | ATTEMPTED AS COMPLETE HYDROGEN ROUTE. It improves status accounting for old K1/K2 atoms but leaves zero-source readout, native Brannen endpoint, determinant-line readout, physical scale, `alpha(0)`, and hydrogen open. |
 | supertrace / holomorphic count | Force the block-count `(1,1)` readout via a chiral index. | OPEN. `SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md` names the right-shaped route but leaves the determinant holomorphy gated. |
 | finite `2/9` density | Use the retained equivariant `L_3(1,2)=2/9` arithmetic as the phase. | PARTIAL ONLY. It supplies the finite weight, while the radian/readout identification is exactly K2. |
+| `#5020` value-face route | Treat registered `Phi` standing as full K2 closure. | PARTIAL ONLY. It relocates value-face standing but the exactness residual remains open. |
 | species sorting | Declare the smallest sorted branch to be the electron. | PARTIAL ONLY. Sorting is useful comparator bookkeeping; the physical species bridge is K3. |
 | scale-only `1/256` route | Derive `a_l^2` and let Koide shape follow automatically. | ATTEMPTED AS COMPLETE HYDROGEN ROUTE. It leaves K1-K3 untouched, so it cannot by itself supply `m_e`. |
 | Koide native zero-section `#5007` route guard | Use `KOIDE_NATIVE_ZERO_SECTION_DEFINED_ROUTE_ALGEBRA=TRUE` as the electron readout. | ATTEMPTED AS COMPLETE HYDROGEN ROUTE. The dedicated impact discriminator shows it preserves zero-source readout, real-primitive Brannen endpoint, based determinant-line readout, physical species, and scale obligations. |
@@ -283,6 +294,7 @@ hydrogen electron mass; the phase/readout walls K1-K3 remain explicit.
 | K1 <-> K4 | no in either direction | independent |
 | K2 <-> K3 | no in either direction | independent |
 | K2 <-> K4 | no in either direction | independent |
+| K2 value registration <-> K2 exactness | no | independent |
 | K3 <-> K4 | no in either direction | independent |
 
 `Q=2/3`, `delta = 2/9`, electron-branch identity, and absolute scale are four
@@ -294,6 +306,7 @@ separate pieces for hydrogen. No wall is counted twice.
 |---|---|
 | `sorted electron-like` | comparator bookkeeping; K3 names the physical species bridge. |
 | `primitive` / `registered` | registry checked; primitives do not supply Koide selectors. |
+| `registered Phi` | realized-state value registration, not exactness or physical mass. |
 | `Tier-A` | explicit conditional route, not zero-import. |
 | `phase` / `radian` | explicit K2 wall, not background context. |
 | `scale` | explicit K4 wall, handled by separate `1/256` artifacts. |
@@ -307,6 +320,7 @@ No hidden admission is left buried as background.
 | `CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md` | K1 counting-measure bit | yes |
 | `SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md` | K1 chiral/holomorphic forcing candidate | yes |
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | K2 delta comparator and scale boundary | yes |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | K2 value-face registration versus exactness residual | yes |
 | `CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md` | conditional K1/K2 closure through `AC_phi_lambda` | yes, as conditional only |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_ROUTE_TRIAGE_2026-07-04.md` | K4 scale suppression target | yes for scale, not for phase |
 | `axiom_premise_nodes.json` | primitive boundary | guard only; not a Koide witness |
@@ -321,6 +335,7 @@ resolution is narrower:
 | resolution | tested? | outcome |
 |---|---|---|
 | algebraic `Q=2/3` surface | yes | phase-blind; does not determine `rho_e`. |
+| K2 value registration | yes | support only; exactness remains open. |
 | phase-specific electron factor | yes | `delta = 2/9` gives the comparator electron factor. |
 | physical species bridge | not closed | named K3. |
 | future chiral/supertrace forcing route | not closed | left open as K1 route. |
@@ -333,6 +348,7 @@ There are legitimate partial-closure paths:
 |---|---|
 | supertrace / equivariant-index / holomorphic determinant route | K1 counting-measure bit without consuming `AC_phi_lambda`. |
 | retained radian/readout bridge from finite `2/9` to charged-lepton `delta` | K2. |
+| registered-angle value-face plus retained exactness theorem | K2 value standing plus exactness. |
 | audited retirement of the `AC_phi_lambda` species bridge | K3. |
 | zero-import `1/256` derivation | K4. |
 
@@ -367,6 +383,8 @@ electron value. The current note keeps those layers separate: phase-blind
 - No derivation of `a_l^2`, `alpha(0)`, or hydrogen spectroscopy.
 - No audit status change for any cited row.
 - No new axiom, primitive, or admitted import.
+- No adoption or landing claim for PR `#5020`; no derivation or ratification
+  of a Koide R-eta exactness theorem.
 
 ## Verification
 

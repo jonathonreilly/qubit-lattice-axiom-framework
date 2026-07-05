@@ -456,6 +456,26 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   not supply `R_ETA_H_CLASS_RETAINED`; the missing inputs remain physical
   carrier context, the single fixed-point readout theorem, owner ratification,
   and audit acceptance.
+  The single fixed-point readout target discriminator
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`
+  packages the named h-class readout-selection input
+  `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED`. It attacks the choice of one
+  intensive fixed-point local density over the vanishing global
+  eta/equivariant invariant, the extensive fixed-site sum, or another K-even
+  functional; it does not supply physical carrier context, h-class, h-unit,
+  full R-eta retirement, K2 exactness, `m_e`, `alpha(0)`, or hydrogen.
+  The single fixed-point readout ratification decision packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  packages that subinput as a fourteen-input owner/audit contract. It keeps
+  fixed-locus arithmetic, finite KS support, finite CAR local-density support,
+  and ambient heat-trace support separate from physical readout-functional
+  selection.
+  The single fixed-point readout current-surface no-go
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+  records that current retained, primitive, merged-PR, and open-PR surfaces do
+  not supply `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED`; the missing inputs
+  remain global-readout exclusion, extensive-sum exclusion, other-K-even
+  functional exclusion, owner ratification, and audit acceptance.
   The
   Koide R-eta exactness target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md`
@@ -1829,6 +1849,9 @@ Koide electron readout, `m_e`, `alpha(0)`, or hydrogen.
                         | R-eta h-class fixed-locus target | Open subtarget. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` packages `R_ETA_H_CLASS_RETAINED`; it can feed one input into R-eta readout retirement, not h-unit, full R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta h-class fixed-locus ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the thirteen-input owner/audit contract for `R_ETA_H_CLASS_RETAINED`; it does not derive physical carrier realization, a single fixed-point readout theorem, h-unit, full R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta h-class fixed-locus current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `R_ETA_H_CLASS_RETAINED`. |
+                        | R-eta single fixed-point readout target | Open h-class subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED`; it can feed h-class as readout selection only, not physical carrier context, h-class acceptance, h-unit, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
+                        | R-eta single fixed-point readout ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the fourteen-input owner/audit contract for the readout theorem; it does not derive the theorem itself. |
+                        | R-eta single fixed-point readout current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED`. |
                         | K2 R-eta exactness target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` packages the successor handoff `K2_R_ETA_EXACTNESS_RETAINED`; it is not supplied by #5020 and does not derive `m_e`, `alpha(0)`, or hydrogen. |
                         | K2 R-eta exactness ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the ten-input owner/audit contract for `K2_R_ETA_EXACTNESS_RETAINED`; it is not K1/K3/K4, `m_e`, `alpha(0)`, or hydrogen. |
                         | K2 R-eta exactness current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `K2_R_ETA_EXACTNESS_RETAINED`. |

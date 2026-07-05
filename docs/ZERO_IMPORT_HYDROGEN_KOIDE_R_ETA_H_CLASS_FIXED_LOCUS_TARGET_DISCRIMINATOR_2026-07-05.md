@@ -91,6 +91,19 @@ make clear that current surfaces do not supply the carrier-context theorem.
 Even if accepted, that lane supplies carrier context only; this h-class target
 still separately needs `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED`.
 
+The single fixed-point readout target discriminator
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED` as the separate
+readout-functional input. Its ratification decision packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+and current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+make clear that current surfaces do not choose the physical charged-lepton
+readout among the intensive single fixed-point local density, the vanishing
+global eta/equivariant invariant, the extensive fixed-site sum, or another
+K-even functional. Even if accepted, that lane supplies readout selection only;
+this h-class target still separately needs `PHYSICAL_CARRIER_CONTEXT_RETAINED`.
+
 ## Current Surface
 
 | surface | useful content | residual |
@@ -99,6 +112,9 @@ still separately needs `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED`.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `PHYSICAL_CARRIER_CONTEXT_RETAINED` | single fixed-point readout, h-class owner/audit, h-unit, and full R-eta remain open |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | carrier-context owner/audit decision packet | no retained carrier consequence unless accepted |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `PHYSICAL_CARRIER_CONTEXT_RETAINED` | carrier realization theorem and owner/audit remain open |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED` | carrier context, h-class owner/audit, h-unit, and full R-eta remain open |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | readout-selection owner/audit decision packet | no retained readout consequence unless accepted |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED` | readout-functional selector and owner/audit remain open |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` | packages the h-unit target | independent; does not supply h-class |
 | `ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md` | decomposes `A_R-eta` into h-class plus h-unit | h-class remains admitted, not retired |
 | `ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md` | closes supplied finite-context Record-registrability | physical carrier realization and `A_R-eta` value atom remain open |

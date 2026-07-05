@@ -411,6 +411,19 @@ not supply `R_ETA_H_CLASS_RETAINED`; the h-class lane still needs physical
 carrier context, the single fixed-point readout theorem, and owner/audit
 acceptance.
 
+The R-eta single fixed-point readout target
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`)
+packages `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED`, the readout-functional
+subinput under h-class. Its ratification decision packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md`)
+and current-surface no-go
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
+separate forced `2/9` local-density support from the physical theorem choosing
+one fixed-point density over the vanishing global invariant, the extensive sum,
+or another K-even readout. It does not supply carrier context, h-class, h-unit,
+full R-eta retirement, K2 exactness, physical electron mass, alpha input, or
+hydrogen.
+
 The R-eta physical carrier-context target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md`),
 ratification decision packet

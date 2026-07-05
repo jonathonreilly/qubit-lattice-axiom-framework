@@ -79,6 +79,9 @@ The current surface localizes that target but does not derive it.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `PHYSICAL_CARRIER_CONTEXT_RETAINED` | h-class retained consequence or single fixed-point readout theorem |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | carrier-context owner/audit decision packet | retained carrier context unless accepted; no h-class by itself |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `PHYSICAL_CARRIER_CONTEXT_RETAINED` | carrier realization theorem and owner/audit remain open |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED` | h-class retained consequence or physical carrier context |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | readout-selection owner/audit decision packet | retained readout theorem unless accepted; no h-class by itself |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED` | readout-functional selector and owner/audit remain open |
 | `ZERO_IMPORT_HYDROGEN_AC_R_ETA_UPSTREAM_CLUSTER_IMPACT_DISCRIMINATOR_2026-07-05.md` | #4981 open context plus #4982-#4986 and `89768b461c`/`e2d1dec095` landed-main AC R-eta shortcut pruning | h-class retained theorem, physical readout bridge, K1/K2 exactness, or hydrogen |
 | `ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md` | landed-main h-class stretch: C3-additive scalar class coefficient remains free | `R_ETA_H_CLASS_RETAINED` |
 | `ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md` | landed-main direct-license split into h-class plus h-unit | h-class closure or full R-eta retirement |
@@ -123,6 +126,7 @@ dependency-state signals; clean/dirty/check labels are not proof inputs.
 | `#5020` Koide R-eta value-face registered-angle/exactness relocation | merged | value-face progress; fixed-locus physical readout remains open |
 | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged | premise-hygiene context; no h-class theorem |
 | `#5018`/`#5017` chirality/domain-wall stack | open | above-C3 context only; no h-class, R-eta retirement, or electron mass |
+| single fixed-point readout packet set | carried on `#5016` once pushed | readout-selection target only; no retained h-class consequence |
 | `#5016` zero-import hydrogen retained lane bundle | open | carries this current-surface no-go once pushed |
 
 ## What This Moves

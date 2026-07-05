@@ -9,6 +9,7 @@ label above is a source-side claim-boundary declaration, not an audit
 verdict.
 **Type:** bounded_theorem
 **Primary runner:** [`scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py`](../scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py)
+**Dependency-surface update:** 2026-07-05 — edge hygiene for auditability: the superseded-generation 2026-05-07 physical-species source re-pointed to its retained substep-3 species-reduction successor (original kept as a historical context handle), and the three retained substep authorities consumed at step (B1) wired as explicit markdown-link dependencies (previously named in backticks only). The bridge claim, the (P1) premise packet, and the proof-walk are untouched.
 
 ## Claim
 
@@ -123,7 +124,7 @@ classification. Steps (B4) and (B5) record boundary scope.
 | (B2) | No canonical bijection `pi: {c_1, c_2, c_3} -> L_3` is derivable from A_min; closure requires one of (P1) labeling-convention / (P2) C_3-breaking dynamics / (P3) PDG-empirical; P2 and P3 are foreclosed | Substep-4 labeling no-go `STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17`; 10-probe A3 obstruction campaign cited within that no-go | no |
 | (B3) | Under (P1), the bijection `pi_0` is uniquely fixed by the sorting permutation on externally supplied distinct sort-key values | (P1) accepted-premise packet entry; rational sort arithmetic on three pairwise-distinct real values | no |
 | (B4) | The bridge does not derive (P1), does not promote (P1) to an axiom, and does not add a C_3-breaking primitive to A_min | Accepted-premise scoping; framework discipline (no new admissions) | no |
-| (B5) | The composition upstream-substep chain + (P1) supplies the labeling-convention ingredient for parent-gate substep (4), without promoting the parent gate | `STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07` supplies the three-state H_phys algebraic content; (P1) supplies the labeling step | no |
+| (B5) | The composition upstream-substep chain + (P1) supplies the labeling-convention ingredient for parent-gate substep (4), without promoting the parent gate | `STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16` supplies the three-species H_phys reduction surface at its audited scope (superseded-generation source `STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07` — historical context handle); (P1) supplies the labeling step | no |
 
 The bridge does not cite a specific Wilson plaquette value, a staggered
 gauge-coupling value, a Brillouin-zone integration measure, a link-
@@ -207,9 +208,18 @@ arithmetic once (P1) is registered.
   — supplies the parent-gate context where `AC_φλ` is already named
   as an admitted-context residual. This bridge does not assume parent
   promotion.
-- [`STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md)
-  — supplies the audit-pending three-state H_phys algebraic content
-  used only for the parent-gate substep (4) composition map.
+- [`STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+  — supplies, at its audited scope, the three-species H_phys reduction
+  surface used only for the parent-gate substep (4) composition map
+  (superseded-generation source
+  `STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md`
+  — historical context handle, not a citation-graph dependency).
+- [`STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md)
+  — supplies the step (B1) ordered corner-triplet basis with regular
+  Z/3Z action (retained substep-3 authority).
+- [`STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
+  — supplies the step (B1) pairwise-distinct joint translation
+  eigenvalue triples (retained substep-4 lemma authority).
 
 ## Non-Load-Bearing Context
 

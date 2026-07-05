@@ -10,6 +10,7 @@ audit verdict and downstream status are set only by the independent
 audit lane.
 **Primary runner:** [`scripts/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.py`](../scripts/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.py)
 **Cache:** [`logs/runner-cache/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.txt`](../logs/runner-cache/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.txt)
+**Dependency-surface update:** 2026-07-05 — cross-reference edge hygiene for auditability: the superseded-generation substep-1/substep-3 sources re-pointed to their retained substep successors (originals kept as historical context handles), and the 2026-05-07 substep-4 AC-narrowing source demoted to a context handle (its consumed narrowing surface is carried by the linked 2026-05-17 lemma bridges). The countermodel proof and the no-go claim are untouched.
 **Authority role:** formal classification of the AC_φλ atom (residual)
 from the substep-4 AC narrowing as a **no-go within A_min**: no labeled
 injection from the hw=1 corner triplet to the SM flavor-generation
@@ -327,7 +328,7 @@ forbidden_imports_used: false
 ## 10. Cross-references
 
 - Parent open-gate (context only; parent now cites this note): `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
-- Substep-4 AC narrowing: [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md)
+- Substep-4 AC narrowing: `STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md` (superseded-generation narrowing source located for orientation; the consumed substep-4 narrowing surface is carried by the two 2026-05-17 lemma bridges linked below — context handle, not a citation-graph dependency)
 - 2026-05-17 AC_λ bridge (lemma): [`STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
 - 2026-05-17 AC_φ bridge (lemma): [`STAGGERED_DIRAC_SUBSTEP4_AC_PHI_TRACE_EQUIPARTITION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP4_AC_PHI_TRACE_EQUIPARTITION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
 - C_3-preserved meta-note (interpretation context only):
@@ -342,9 +343,9 @@ forbidden_imports_used: false
 - Companion species-count regulator-dependence no-go (orthogonal but
   similar structure; comparison only):
   `HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md`
-- Substep-1 (Grassmann): [`STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md)
+- Substep-1 (Grassmann): [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) (retained substep successor; superseded-generation source `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` — historical context handle, not a citation-graph dependency)
 - Substep-2 (Kawamoto-Smit): [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
-- Substep-3 (BZ-corner): [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md)
+- Substep-3 (BZ-corner): [`STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md) (retained substep successor; superseded-generation source `STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md` — historical context handle, not a citation-graph dependency)
 - No-proper-quotient: [`THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md`](THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md)
 - Three-generation observable: [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
 - Physical-lattice foundational baseline: `PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md`

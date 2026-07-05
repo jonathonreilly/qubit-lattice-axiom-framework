@@ -3,7 +3,7 @@ runner: scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_
 runner_sha256: d481c649e53f4952f47414c235d66a66e8986b5549a588a2f5ae22a8eb531295
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.41
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 STAGGERED-DIRAC GATE AC_phi_lambda ACCEPTED-PREMISE BRIDGE

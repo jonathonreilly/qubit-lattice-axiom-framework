@@ -130,6 +130,8 @@ STATIC_SOURCE_RYDBERG_RETAINED
 | `ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md` | supplied finite context is Record-registrable | does not prove physical realization |
 | `KOIDE_Q_REDUCED_CARRIER_PHYSICAL_IDENTIFICATION_OBSTRUCTION_NOTE_2026-06-12.md` | prevents reduced-carrier over-promotion | keeps physical carrier/readout bridge open |
 | `FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md` | collapses duplicate carrier/readout/basepoint gates | does not retain the gate |
+| open `#5030` multisite Pauli finite-carrier provenance | finite algebraic carrier provenance may become retained-supplied at its own scope | no charged-lepton carrier realization theorem |
+| `ZERO_IMPORT_HYDROGEN_MULTISITE_PAULI_PR5030_CARRIER_PROVENANCE_IMPACT_DISCRIMINATOR_2026-07-05.md` | support-only boundary for #5030 | no `PHYSICAL_CARRIER_CONTEXT_RETAINED`, h-class, R-eta, K2, mass, or hydrogen |
 | merged `#5023` and merged `#5024` | W4 / AC_phi_lambda gate-readiness and dependency hygiene | no physical carrier-context theorem |
 | approved primitives | minimal axioms and approved primitives | no carrier selector or physical readout context |
 
@@ -151,6 +153,7 @@ ratification decision contract.
 | W2-only route | Treat Record-registrable supplied context as physical context. | PARTIAL ONLY. W2 leaves physical realization open. |
 | reduced-carrier route | Treat determinant support as physical carrier identification. | RULED OUT BY PRIOR. The obstruction note keeps the physical bridge open. |
 | gate-collapse route | Treat one named gate as retained closure. | PARTIAL ONLY. It collapses bookkeeping, not the gate itself. |
+| #5030 finite-carrier route | Treat retained-supplied multisite Pauli carrier provenance as this handoff. | PARTIAL ONLY. It can support finite algebraic carrier provenance, not physical charged-lepton realization. |
 | W4 PR route | Treat #5023/#5024 as carrier-context closure. | ATTEMPTED. They are gate-readiness and hygiene progress only. |
 | primitive route | Treat approved primitives as supplying carrier context. | ATTEMPTED. Registry notes supply no carrier selector or physical readout context. |
 | comparator route | Use observed or fitted data. | RULED OUT AS ZERO-IMPORT PROOF. Comparator data is not proof input. |
@@ -192,9 +195,10 @@ contract. No new axiom is required by this packet.
 ### N7 - Steelman
 
 A hostile reviewer can argue the handoff is close because W2, the gate-collapse
-map, reduced-carrier obstruction, tracial support, and W4 PRs make the target
-well-localized. The reply is that localization is not retention; the retained
-carrier-realization theorem and owner/audit acceptance remain missing.
+map, reduced-carrier obstruction, tracial support, #5030 carrier provenance,
+and W4 PRs make the target well-localized. The reply is that localization is
+not retention; the retained carrier-realization theorem and owner/audit
+acceptance remain missing.
 
 ### N8 - Cross-Cycle Echo
 

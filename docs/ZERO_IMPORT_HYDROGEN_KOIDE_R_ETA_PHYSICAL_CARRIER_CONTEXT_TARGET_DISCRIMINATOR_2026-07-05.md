@@ -109,6 +109,8 @@ make clear that current surfaces do not supply
 | `FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md` | collapses readout gate, carrier identification, and zero-section/basepoint into one named gate | retained closure of that gate |
 | `FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31.md` | blocks bare-character and equivariance-only carrier/basepoint shortcuts | physical carrier and basepoint remain open |
 | `KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md` | proves exact finite facts for a supplied tracial standard-form carrier | framework-native physical carrier/scoring selection |
+| open `#5030` multisite Pauli finite-carrier provenance | proposes sourcing the finite multisite Pauli carrier from retained Cl(3) per-site support | finite algebraic carrier support only; no physical charged-lepton realization theorem |
+| `ZERO_IMPORT_HYDROGEN_MULTISITE_PAULI_PR5030_CARRIER_PROVENANCE_IMPACT_DISCRIMINATOR_2026-07-05.md` | records #5030 as `PR5030_FINITE_MULTISITE_PAULI_CARRIER_PROVENANCE_CONTEXT` support | no `PHYSICAL_CARRIER_CONTEXT_RETAINED`, no h-class, no R-eta, no K2, no mass, no hydrogen |
 | `KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md` | localizes carrier-locus imports and the Hodge-orientation bit | physical matter operator/locus realization |
 | `CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md` | refutes the spinor-module escape and locates the live KS/physical-state-law route | retained physical-state-law bridge |
 | merged `#5023` Koide W4 audit-readiness repairs | dependency hygiene for record/species/custody/hw-complement surfaces | physical carrier-context theorem |
@@ -245,10 +247,11 @@ These are import-retirement paths, not new-axiom requirements.
 A hostile reviewer can argue that the physical carrier context is close:
 W2 closes supplied-context registrability, the reduced-carrier obstruction
 names the exact missing bridge, the readout-gate map collapses duplicate gates,
-the tracial standard-form carrier supplies strong finite algebra, and #5023/#5024
-improve W4 gate readiness. That is real progress. The boundary is that none of
-those surfaces proves the physical charged-lepton carrier realizes the supplied
-C3/circulant context; they locate the target rather than retain it.
+the tracial standard-form carrier and #5030 finite-carrier provenance supply
+strong finite algebra, and #5023/#5024 improve W4 gate readiness. That is real
+progress. The boundary is that none of those surfaces proves the physical
+charged-lepton carrier realizes the supplied C3/circulant context; they locate
+the target rather than retain it.
 
 ### N8 - Cross-Cycle Echo
 

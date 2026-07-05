@@ -80,8 +80,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 660 |
-| `high` | 465 |
-| `medium` | 926 |
+| `high` | 466 |
+| `medium` | 925 |
 | `leaf` | 1595 |
 
 - **Retained pending chain closure:** 4

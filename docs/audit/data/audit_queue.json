@@ -12601,8 +12601,10 @@
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
+        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
         "minimal_axioms",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "realized_state_primitive"
       ],
       "direct_in_degree": 9,
       "effective_status": "unaudited",
@@ -43574,6 +43576,7 @@
       "criticality_rank": 0,
       "cross_confirmation_status": null,
       "deps": [
+        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
         "minimal_axioms",
         "realized_state_primitive",
         "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
@@ -43658,6 +43661,7 @@
       "criticality_rank": 0,
       "cross_confirmation_status": null,
       "deps": [
+        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
         "acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18",
         "admitted_input_registry_tier_a_note_2026-05-23",
         "minimal_axioms",

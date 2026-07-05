@@ -29,6 +29,7 @@ PLACEMENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_CORRECTION_PLACE
 P1_SOURCE_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P1_SOURCE_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 P2_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_WEAK_FRONT_THRESHOLD_TARGET_DISCRIMINATOR_2026-07-04.md"
 P2_FRONT_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+P2_FRONT_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 P3_KOIDE_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P3_KOIDE_ELECTRON_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 P4_DIRECT_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P4_DIRECT_NONINTEGER_DIVISOR_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 KOIDE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md"
@@ -145,6 +146,7 @@ def main() -> None:
         P1_SOURCE_NO_GO,
         P2_TARGET,
         P2_FRONT_NO_GO,
+        P2_FRONT_DECISION,
         P3_KOIDE_NO_GO,
         P4_DIRECT_NO_GO,
         KOIDE,
@@ -193,6 +195,10 @@ def main() -> None:
         "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_NO_DOUBLE_COUNT_COMPOSITION_RATIFICATION_DECISION_PACKET_2026-07-05.md",
         "NO_SOURCE_DOUBLE_COUNT",
         "NO_SOURCE_A3_DOUBLE_COUNT",
+        "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "MATCHING_THEOREM_RETAINED",
+        "positive P2 front-matching owner/audit handoff",
+        "P2 front-matching route has an explicit ten-input packet but is still unaccepted",
         "a3_precision_placement_primitive",
         "a3_correction_primitive",
         "a3_placement_selector_primitive",
@@ -270,6 +276,7 @@ def main() -> None:
     p1_source_no_go = read(P1_SOURCE_NO_GO)
     p2_target = read(P2_TARGET)
     p2_front_no_go = read(P2_FRONT_NO_GO)
+    p2_front_decision = read(P2_FRONT_DECISION)
     p3_koide_no_go = read(P3_KOIDE_NO_GO)
     p4_direct_no_go = read(P4_DIRECT_NO_GO)
     koide = read(KOIDE)
@@ -298,6 +305,7 @@ def main() -> None:
     audit.check("P1 no-go keeps P1 unsupplied", "P1_SOURCE_READOUT_CORRECTION_RETAINED" in p1_source_no_go and "CORRECTED_SOURCE_READOUT_THEOREM_RETAINED" in p1_source_no_go)
     audit.check("P2 target names weak-front theorem", "F_phys = C_A3 * g_2 * (1/sqrt(2))" in p2_target and "CHARGED_LEPTON_FRONT_MATCHING_RETAINED" in p2_target)
     audit.check("P2 no-go keeps P2 unsupplied", "CHARGED_LEPTON_FRONT_MATCHING_RETAINED" in p2_front_no_go and "MATCHING_THEOREM_RETAINED" in p2_front_no_go)
+    audit.check("P2 decision opens positive handoff", "P2_MATCHING_TEXT_LOCK" in p2_front_decision and "P2_WEAK_FRONT_MATCHING_RETAINED" in p2_front_decision)
     audit.check("P3 no-go keeps P3 unsupplied", "P3_KOIDE_ELECTRON_READOUT_CORRECTION_RETAINED" in p3_koide_no_go and "KOIDE_ELECTRON_A3_CORRECTION_THEOREM_RETAINED" in p3_koide_no_go)
     audit.check("P4 no-go keeps P4 unsupplied", "P4_DIRECT_NONINTEGER_DIVISOR_RETAINED" in p4_direct_no_go and "DIRECT_NONINTEGER_DIVISOR_THEOREM_RETAINED" in p4_direct_no_go)
     audit.check("K4 consumes A3 placement", "A3_PRECISION_PLACEMENT_RETAINED" in k4_packet and "ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED" in k4_packet)

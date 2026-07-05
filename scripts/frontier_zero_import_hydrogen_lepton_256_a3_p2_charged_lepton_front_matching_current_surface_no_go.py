@@ -20,6 +20,7 @@ GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 K4_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 WEAK_FRONT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 A3_P2 = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_WEAK_FRONT_THRESHOLD_TARGET_DISCRIMINATOR_2026-07-04.md"
+A3_P2_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 A3_PLACEMENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 PRECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_PRECISION_CORRECTION_FIREWALL_2026-07-04.md"
 PLACEMENT_DISCRIMINATOR = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_CORRECTION_PLACEMENT_DISCRIMINATOR_2026-07-04.md"
@@ -138,6 +139,7 @@ def main() -> None:
         K4_PACKET,
         WEAK_FRONT,
         A3_P2,
+        A3_P2_DECISION,
         A3_PLACEMENT,
         PRECISION,
         PLACEMENT_DISCRIMINATOR,
@@ -167,6 +169,9 @@ def main() -> None:
         "WEAK_FRONT_BASE_RETAINED",
         "EXACT_SOURCE_SINGLETON_RETAINED",
         "MATCHING_THEOREM_RETAINED",
+        "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "positive handoff as a ten-input owner/audit contract",
+        "P2_WEAK_FRONT_MATCHING_RETAINED",
         "P2_PLACEMENT_SELECTED",
         "NO_SOURCE_DOUBLE_COUNT",
         "NO_MW_OR_LEPTON_COMPARATOR_PROOF_INPUT",
@@ -251,6 +256,7 @@ def main() -> None:
     k4_packet = read(K4_PACKET)
     weak_front = read(WEAK_FRONT)
     a3_p2 = read(A3_P2)
+    a3_p2_decision = read(A3_P2_DECISION)
     a3_placement = read(A3_PLACEMENT)
     precision = read(PRECISION)
     placement_discriminator = read(PLACEMENT_DISCRIMINATOR)
@@ -269,6 +275,7 @@ def main() -> None:
     audit.check("K4 packet keeps A3 matching downstream", "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_WEAK_FRONT_THRESHOLD_TARGET_DISCRIMINATOR_2026-07-04.md" in k4_packet)
     audit.check("weak-front packet explicitly excludes matching", "does not supply the small `C_A3` front/matching" in weak_front)
     audit.check("A3 P2 target says matching theorem is required", "CHARGED_LEPTON_FRONT_MATCHING_RETAINED" in a3_p2 and "No derivation of a finite matching or scheme correction." in a3_p2)
+    audit.check("A3 P2 decision packet opens positive handoff", "P2_MATCHING_TEXT_LOCK" in a3_p2_decision and "MATCHING_THEOREM_RETAINED" in a3_p2_decision)
     audit.check("A3 placement packet keeps P2 theorem open", "P2_WEAK_FRONT_MATCHING_RETAINED" in a3_placement and "The target log is known, but the theorem is not supplied here." in a3_placement)
     audit.check("precision firewall keeps running/threshold open", "running/threshold route" in precision and "no retained charged-lepton scale-running law is supplied here" in precision)
     audit.check("placement discriminator keeps P2 open", "no retained charged-lepton threshold theorem is supplied here" in placement_discriminator)

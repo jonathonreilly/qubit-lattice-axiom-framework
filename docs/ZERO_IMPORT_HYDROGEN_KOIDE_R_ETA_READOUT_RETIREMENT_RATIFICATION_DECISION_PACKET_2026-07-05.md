@@ -120,6 +120,7 @@ STATIC_SOURCE_RYDBERG_RETAINED
 | merged PR `#5022` | R-eta declared supplied; retained arithmetic plus supplied premise implies `|delta| = 2/9` | conditionality repair only; no retained R-eta derivation |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | names the eleven-input target | target only, not ratification |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | packages `R_ETA_H_CLASS_RETAINED` | h-class input only |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the h-class owner/audit decision object | h-class only; no h-unit or full R-eta |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` | packages `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED` | h-unit input only |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the h-unit owner/audit decision object | h-unit only; no h-class or full R-eta |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` | consumes exact value/readout/domain inputs | still needs packet-level text/domain/owner/audit |

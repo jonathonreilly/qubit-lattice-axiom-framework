@@ -65,9 +65,10 @@ AUDIT_ACCEPTANCE
 | `CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md` | bounded theorem under explicit Tier-A admission | retained zero-import `delta = 2/9` theorem |
 | `KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md` | one Z2 orientation object for count and phase chirality | magnitude `2/9`, radian unit, or realized handedness |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_READOUT_IDENTIFICATION_RETAINED`; h-class plus h-unit | current retained exact theorem, radian-readout license, or subhandoff |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `R_ETA_READOUT_IDENTIFICATION_RETAINED` | current retained exact theorem, radian-readout license, or subhandoff |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 supplied-premise conditionality boundary | retained R-eta derivation, exact theorem, radian-readout license, or subhandoff |
 | `#5022` audit repair for the delta-eta chain | merged conditionality repair: R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | retained R-eta derivation, exact theorem, radian-readout license, or subhandoff |
-| `#5020` Koide R-eta value-face PR | open value-face progress | exact theorem, radian-readout license, or fold/domain lock |
+| `#5020` Koide R-eta value-face PR | merged value-face progress | exact theorem, radian-readout license, or fold/domain lock |
 | `#5021` primitive-retirement review draft | primitive-boundary meta review; reports no primitive retirement and no registry edit | new two-ninths/radian primitive or retained subhandoff |
 | approved primitives | minimal axioms, scale reference, kinetic-form isotropy, realized-state evaluation discipline | `delta`, `2/9` theorem, radian-readout license, fold/domain lock, `m_e`, `alpha(0)`, or hydrogen |
 
@@ -89,8 +90,8 @@ signals; clean status is not proof input.
 |---|---:|---|
 | `#5022` audit repair: delta-eta chain R-eta supplied premise | merged, audit success | conditional repair only; no retained R-eta derivation, exact theorem, or radian-readout license |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft | primitive-boundary context only; no registry edit, no subgate closure |
-| `#5020` Koide R-eta value-face registered-angle/exactness relocation | open | value-face progress; exactness and radian readout remain open |
-| `#5019` Koide `AC_phi_lambda` axiom-surface rebase | open | premise-hygiene context; no exact theorem or readout license |
+| `#5020` Koide R-eta value-face registered-angle/exactness relocation | merged | value-face progress; exactness and radian readout remain open |
+| `#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged | premise-hygiene context; no exact theorem or readout license |
 | `#5018`/`#5017` chirality/domain-wall stack | open | above-C3 context only; no two-ninths/radian handoff |
 | `#5016` zero-import hydrogen retained lane bundle | open | carries this current-surface no-go once pushed |
 

@@ -17,7 +17,7 @@ KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED.
 ```
 
 The current support has forced finite `2/9` density context, a narrowed
-R-eta import-retirement path, value-face progress from open PR `#5020`, and
+R-eta import-retirement path, value-face progress from merged PR `#5020`, and
 conditionality repair from merged PR `#5022`. It still does not provide a
 retained exact theorem, radian-readout license, fold/branch domain lock, owner
 ratification, or audit acceptance. This packet packages that sublane as a
@@ -129,6 +129,7 @@ STATIC_SOURCE_RYDBERG_RETAINED
 | `KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md` | one orientation object for count and phase chirality | no magnitude, no realized handedness, no radian unit |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_READOUT_IDENTIFICATION_RETAINED`; h-class plus h-unit | proof package target only; no packet-level domain/owner/audit closure |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages R-eta readout retirement as an eleven-input contract | R-eta wrapper only, not this subgate |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `R_ETA_READOUT_IDENTIFICATION_RETAINED` | no exact theorem/readout input |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages h-class fixed-locus as a thirteen-input contract | one R-eta subinput only |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages h-unit identity-radian as an eleven-input contract | one R-eta subinput only |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | merged `#5022` supplied-premise conditionality boundary | no retained R-eta derivation, exact theorem, or radian readout |
@@ -154,8 +155,8 @@ status is not proof input.
 |---|---:|---|
 | `#5022` audit repair: delta-eta chain R-eta supplied premise | merged, audit success | conditionality repair only; no retained R-eta derivation, exact theorem, or radian-readout license |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft | primitive-boundary context only; no registry edit and no subgate closure |
-| `#5020` Koide R-eta value-face registered-angle/exactness relocation | open, clean | value-face progress; exactness and radian readout remain open |
-| `#5019` Koide `AC_phi_lambda` axiom-surface rebase | open, clean | premise-hygiene context; no exact theorem or readout license |
+| `#5020` Koide R-eta value-face registered-angle/exactness relocation | merged | value-face progress; exactness and radian readout remain open |
+| `#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged | premise-hygiene context; no exact theorem or readout license |
 | `#5018`/`#5017` chirality/domain-wall stack | open, clean | above-C3 context only; no two-ninths/radian handoff |
 | `#5016` zero-import hydrogen retained lane bundle | open | carries this packet once pushed |
 
@@ -189,7 +190,7 @@ ratification decision contract.
 | Type-B-to-radian route | Supply a retained law that reads the pure rational as a radian phase. | OPEN POSITIVE ROUTE. This is exactly `RADIAN_READOUT_LICENSE_RETAINED`. |
 | Brannen comparator route | Use PDG closeness to `delta = 2/9`. | RULED OUT AS ZERO-IMPORT PROOF. Comparator data is target data. |
 | Tier-A route | Consume `AC_phi_lambda` bounded standing. | VALID CONDITIONAL, not zero-import retained. |
-| value-face route | Use open PR `#5020` registered-angle standing. | PARTIAL ONLY. Value-face progress is not exact theorem/readout closure. |
+| value-face route | Use merged PR `#5020` registered-angle standing. | PARTIAL ONLY. Value-face progress is not exact theorem/readout closure. |
 | primitive shortcut | Treat approved primitives or PR `#5021` as supplying the subgate. | ATTEMPTED. Registered primitives supply no value selector or readout bridge; `#5021` reports no registry edit. |
 
 ### N2 - Wall-Independence Audit

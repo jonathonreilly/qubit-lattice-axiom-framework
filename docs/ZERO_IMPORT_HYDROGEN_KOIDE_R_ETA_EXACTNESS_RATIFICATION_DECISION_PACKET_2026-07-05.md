@@ -16,7 +16,7 @@ The K2 exactness target discriminator names the hydrogen-facing handoff:
 K2_R_ETA_EXACTNESS_RETAINED.
 ```
 
-The current support is now decomposed: open PR `#5020` moves the registered
+The current support is now decomposed: merged PR `#5020` moves the registered
 value-face question, the two-ninths/radian packet packages the exact theorem,
 readout, and fold/domain subgate, merged PR `#5022` repairs conditional
 R-eta bookkeeping, and the R-eta subpackets isolate h-class and h-unit. None
@@ -118,12 +118,13 @@ STATIC_SOURCE_RYDBERG_RETAINED
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` | names the ten-input K2 exactness target | target only; this packet packages the decision object |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of K2 exactness | no retained consequence |
-| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | open `#5020` value-face movement and exactness split | value-face progress only; exactness/readout remains open |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | merged `#5020` value-face movement and exactness split | value-face progress only; exactness/readout remains open |
 | `#5020` Koide R-eta value-face registered-angle/exactness relocation | registered-angle value-face progress | not K2 exactness by itself |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | nine-input owner/audit contract for exact theorem, radian readout, and fold/domain | one K2 subgate only |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for the exact theorem/readout/domain subgate | not full K2 exactness |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for the subgate | no subgate consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages R-eta readout retirement through h-class plus h-unit | upstream proof-package wrapper, not K2 exactness |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `R_ETA_READOUT_IDENTIFICATION_RETAINED` | no R-eta consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | merged `#5022` supplied-premise conditionality boundary | no retained R-eta derivation or K2 exactness |
 | `#5022` audit repair for the delta-eta chain | R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | conditionality repair only |
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | conditional Brannen comparator at `delta = 2/9` | comparator only, not zero-import proof |
@@ -149,8 +150,8 @@ status is not proof input.
 |---|---:|---|
 | `#5022` audit repair: delta-eta chain R-eta supplied premise | merged, audit success | conditionality repair only; no retained R-eta derivation or K2 exactness |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft | primitive-boundary context only; no registry edit and no K2 shortcut |
-| `#5020` Koide R-eta value-face registered-angle/exactness relocation | open, clean | value-face progress; exactness and radian readout remain open |
-| `#5019` Koide `AC_phi_lambda` axiom-surface rebase | open | premise-hygiene context; no exactness theorem or K2 acceptance |
+| `#5020` Koide R-eta value-face registered-angle/exactness relocation | merged | value-face progress; exactness and radian readout remain open |
+| `#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged | premise-hygiene context; no exactness theorem or K2 acceptance |
 | `#5018`/`#5017` chirality/domain-wall stack | open | above-C3 context only; no K2 exactness or electron mass |
 | `#5016` zero-import hydrogen retained lane bundle | open | carries this packet once pushed |
 

@@ -65,6 +65,11 @@ intended proof package for `DISTINGUISHED_TWO_NINTHS_THEOREM_RETAINED` and
 `RADIAN_READOUT_LICENSE_RETAINED`; this packet still owns
 `FOLD_AND_BRANCH_DOMAIN_LOCK`, owner ratification, and audit acceptance.
 
+The R-eta readout-retirement current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+records that current retained, primitive, merged-PR, and open-PR surfaces do
+not supply `R_ETA_READOUT_IDENTIFICATION_RETAINED`.
+
 | input | role |
 |---|---|
 | TWO_NINTHS_READOUT_TEXT_LOCK | fixes the exact subgate statement |
@@ -91,7 +96,7 @@ intended proof package for `DISTINGUISHED_TWO_NINTHS_THEOREM_RETAINED` and
 | `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | decision packet for the nine-input subgate contract | not accepted here; no full K2, mass, alpha, or hydrogen closure |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 supplied-premise conditionality boundary | no retained R-eta derivation, exact theorem, or radian readout |
 | `#5022` audit repair for the delta-eta chain | R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | no retained R-eta derivation, exact theorem, or radian readout |
-| `#5020` Koide R-eta value-face PR | registered-angle value-face progress | exactness and radian readout remain open |
+| `#5020` Koide R-eta value-face PR | merged registered-angle value-face progress | exactness and radian readout remain open |
 | `#5021` primitive-retirement review draft | primitive-boundary meta review; no primitive retirement and no registry edit | no two-ninths/radian shortcut |
 
 The primitive registry was checked. The approved primitive nodes are

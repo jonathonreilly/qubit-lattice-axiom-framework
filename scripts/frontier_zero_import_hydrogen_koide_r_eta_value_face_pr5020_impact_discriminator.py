@@ -116,8 +116,8 @@ def main() -> None:
     section("Required note content")
     required_phrases = [
         "Koide R-Eta Value-Face PR #5020 Impact Discriminator",
-        "open-PR impact discriminator / Koide K2 value-face boundary",
-        "does not adopt PR `#5020`",
+        "PR impact discriminator / Koide K2 value-face boundary",
+        "does not use merged PR `#5020` as exactness closure",
         "does not derive `AC_phi_lambda`",
         "does not derive `delta = 2/9`",
         "registered-angle functional",
@@ -127,8 +127,8 @@ def main() -> None:
         "unit-face dissolution",
         "exactness residual",
         "K2 R-eta value face",
-        "`#5020` Koide R-eta value-face registered-angle/exactness relocation | open",
-        "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | open",
+        "`#5020` Koide R-eta value-face registered-angle/exactness relocation | merged",
+        "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged",
         "The primitive registry was checked",
         "No-Go Discipline Gate",
         "broad K2/hydrogen closure claim fails; narrowed #5020",
@@ -193,7 +193,7 @@ def main() -> None:
 
     section("Non-claim boundaries")
     explicit_non_claims = [
-        "No adoption or landing claim for PR `#5020`.",
+        "No claim that merged PR `#5020` supplies K2 exactness, electron mass, alpha,",
         "No audit verdict or status change.",
         "No derivation of `AC_phi_lambda`.",
         "No derivation of `delta = 2/9`.",
@@ -207,7 +207,7 @@ def main() -> None:
         audit.check(f"explicit non-claim present: {phrase}", phrase in note)
 
     forbidden = [
-        "This note adopts PR `#5020`",
+        "K2_R_ETA_EXACTNESS_RETAINED is supplied",
         "PR #5020 derives hydrogen",
         "PR #5020 derives `m_e`",
         "delta = 2/9 is derived",

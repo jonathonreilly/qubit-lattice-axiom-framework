@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 192 |
-| **retained_bounded** | 865 |
+| **retained_bounded** | 866 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1933 |
+| unaudited | 1932 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1241 |
+| `audited_clean` | 1242 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2271 |
+| `unaudited` | 2270 |
 
 | claim_type | count |
 |---|---:|
@@ -682,6 +682,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `inverse_problem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `irregular_directional_observable_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `irregular_sign_core_packet_gate_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -9293,6 +9294,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Because H=eps*N+t*sum_mu X_mu factorizes into per-axis two-level Hamiltonians, the free energy is affine in occupation number so delta=E_2-2E_1+E_0 vanishes, while a pair term U*sum_{i<j}n_i n_j gives delta=U and K_off=t^2*(1/eps-1/(eps+U)).  _(class `A`)_
 - **chain closes:** True — The load-bearing statements are algebraic identities on the supplied finite-dimensional operators: factorization/sumset, finite second differences, Schur denominators, and the product-to-sum diagonal-hop identity. The mediator sign/scale route is explicitly left open and is outside this audited structure claim.
 - **rationale:** The runner source genuinely constructs the finite Hamming-space operators, diagonalizes the free Hamiltonian for L=3,4,5, checks the second-difference identities, evaluates the Schur off-diagonal formula including the denominator-boundary counterexample, and verifies the face-diagonal trigonometric identity. These checks match the source note and do not hard-code a contested physical value for delta; they verify only the structure and regime-scoped sign law. All cited upstream authorities are retained-grade or retained_bounded, and the note does not claim the open mediator-derived value of delta.
+- **auditor confidence:** high
+
+### `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27`
+
+- **Note:** [`INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md`](../../docs/INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Canonical Pauli realization gamma_i=sigma_i on C^2: internal S_i=sigma_i/2 and the self-adjoint infinitesimal Spin(3) unitary generators are the same 2x2 operators, with Clifford bivectors B_i=i*S_i.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-audit-wave-20260705-row3-tesla-019f32f7`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** In the canonical Pauli realization gamma_i=sigma_i on C^2, the Clifford bivectors B_i=(1/2)gamma_j gamma_k equal i*S_i with S_i=sigma_i/2, and the self-adjoint infinitesimal Spin(3) unitary generators are the same S_i operators.  _(class `A`)_
+- **chain closes:** True — The chain closes from the minimal one-site M2(C)/Cl(3,0) local algebra, the canonical Pauli irrep on C^2, and the Pauli spin-half definition S_i=sigma_i/2. The proof establishes same-operator coincidence in the retained Pauli realization, not merely abstract Lie-algebra isomorphism.
+- **rationale:** The load-bearing operator identification closes by exact Pauli algebra: B_i=(1/2)gamma_j gamma_k=i*sigma_i/2=i*S_i, and in the standard unitary convention U(t)=exp(-i*t*S_i), the Spin(3) infinitesimal generator is the same self-adjoint matrix S_i already used for the internal su(2). The runner constructs the Pauli matrices, bivectors, cubic actions, SU(2) lifts, and infinitesimal commutators directly; it does not merely hard-code the contested equality. The standard finite-dimensional Clifford/Spin conventions used at the input boundary are acceptable mathematical context for this bounded C^2 theorem. Residual risk is downstream misuse outside scope: matter-sector physical spin, lattice translations, primitive cubic axes, physical scales, Coleman-Mandula/HLS implications, or non-Pauli physical carriers are not established here.
 - **auditor confidence:** high
 
 ### `inverse_problem_note`

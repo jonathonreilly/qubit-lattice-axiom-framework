@@ -385,6 +385,20 @@ elementary route, HW1, the charged-lepton carrier theorem, carrier context,
 h-class, h-unit, R-eta, electron readout, physical electron mass, alpha input,
 or hydrogen.
 
+The R-eta KS spin-lift physical action-law target discriminator
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md`),
+ratification decision packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md`),
+and current-surface no-go
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
+package `KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED` as an action-law owner/audit contract and a child subinput under the KS child route. Current
+retained, primitive, merged-PR, and open-PR
+surfaces do not supply it; it can feed only the KS child route after retention
+and does not supply scalar-lift exclusion, the KS child theorem, parent
+state-law bridge, HW1, the charged-lepton carrier theorem, carrier context,
+h-class, h-unit, R-eta, electron readout, physical electron mass, alpha input,
+or hydrogen.
+
 The R-eta spinful staggered kernel scalar-lift exclusion target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md`),
 ratification decision packet
@@ -492,7 +506,7 @@ firewall on current main:
 
 | PR | effect on K1-K3 |
 |---|---|
-| `#5026` | Open Koide custody L4 retained-successor re-point and Plancherel edge demotion. It repairs a charged-lepton custody citation edge but supplies no physical matter-state law bridge, no KS-route spinful kernel-object theorem, no K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
+| `#5026` | Merged Koide custody L4 retained-successor re-point and Plancherel edge demotion, audit success at merge. It repairs a charged-lepton custody citation edge but supplies no physical matter-state law bridge, no KS spin-lift physical action law, no KS-route spinful kernel-object theorem, no K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
 | `#5022` | Merged delta-eta supplied-premise audit repair. It improves K2 conditionality bookkeeping but supplies no retained R-eta derivation, electron readout, physical electron mass, or hydrogen. |
 | `#5024` | Merged Koide W4 gate-note premise minimization + substep1-bridge rebase, audit success at merge. It improves `AC_phi_lambda` gate-readiness; it supplies no physical matter-state law bridge, no K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
 | `#5023` | Merged Koide W4 audit-readiness repairs, audit success at merge. It repairs record/species/custody/hw-complement dependency surfaces; it supplies no `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`, no `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, no `PHYSICAL_CARRIER_CONTEXT_RETAINED`, K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |

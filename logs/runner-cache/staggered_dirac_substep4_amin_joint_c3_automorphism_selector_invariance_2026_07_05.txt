@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_2026_07_05.py
+runner_sha256: e3346eb2bfc35ce3e27ec219d5b5a865dbfbb225ae2334832e767914e8d69abe
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+=== A_min joint-C3 automorphism / selector-invariance bridge ===
+
+[S1] axiom memo verbatim surface
+
+  PASS  memo supplies (verbatim): 'standard translations, and proper cubic rotations...'
+  PASS  memo supplies (verbatim): 'No site is privileged. Sites are distinguished by the supplied l...'
+  PASS  memo supplies (verbatim): 'covariant under lattice translations and proper cubic rotations...'
+  PASS  memo supplies (verbatim): 'No possibility is privileged....'
+  PASS  memo supplies (verbatim): 'a law may not depend on a choice not fixed by the supplied struc...'
+  PASS  Record axiom text carries no axis reference
+
+[S2] sigma is a proper cubic rotation of Z^3
+
+  PASS  P is integer with det = +1 (proper, in GL(3,Z))
+  PASS  P is orthogonal (P^T P = I)
+  PASS  P has order 3 (P^3 = I, P != I)
+  PASS  P permutes the 6 nearest-neighbor steps (adjacency preserved)
+  PASS  P fixes [1,1,1] (rotation about the body diagonal)
+
+[S3] corner action matches the carrier relabeling
+
+  PASS  P maps corner momentum k_alpha to k_sigma(alpha) for all alpha
+  PASS  P maps the hw=1 corner momentum set to itself
+
+[S4] exact carrier intertwining
+
+  PASS  C^-1 T_1 C = T_3 (= T_sigma^-1(1)) exactly
+  PASS  C^-1 T_2 C = T_1 (= T_sigma^-1(2)) exactly
+  PASS  C^-1 T_3 C = T_2 (= T_sigma^-1(3)) exactly
+  PASS  joint tau-table equivariance: tau^sigma(a)_sigma(m) = tau^a_m for all a, m
+
+[S5] exhaustive word sweep (length <= 4) + homomorphism extension
+
+  PASS  generator-level intertwining: Phi(g) = C g C^-1 for every generator (T_mu and C alike)
+  PASS  homomorphism extension: conjugation is multiplicative, so Phi(w) = C w C^-1 for EVERY word w
+  PASS  word sweep: labeled readout of every word (length <= 4) is sigma-covariant :: 780 words checked
+
+[S6] selector consequence on the transitive orbit
+
+  PASS  sigma is transitive on the corner index set
+  PASS  every sigma-invariant function on the orbit is constant (exhaustive over 27 functions) :: invariant functions found: [(1, 1, 1), (2, 2, 2), (3, 3, 3)]
+  PASS  hence no sigma-invariant (A_min-derivable) selector fixes a bijection to a labeled 3-set
+  PASS  pi_B = pi_A o sigma and pi_B != pi_A (the no-go's counter-model pair)
+
+[S7] negative control
+
+  PASS  negative control: added C_3-breaking H_break = diag(1,0,0) is NOT a fixed point of the joint action :: conjugation moves it; only ADDED (admitted) structure can break the orbit
+  PASS  negative control sanity: H_break's labeled readout profile is non-constant (it would select)
+
+[S8] consumer linkage
+
+  PASS  labeling no-go states the orbit-equivariance invariant this bridge supports
+  PASS  labeling no-go names the P1/P2/P3 closure surface (the admitted routes outside this bridge's scope)
+
+=== SCORECARD ===
+  PASS=28 FAIL=0
+
+----- stderr -----
+

@@ -3,7 +3,7 @@
 **Date:** 2026-06-09 (2026-06-12: dependency decoupling — the carrier surface is stipulated in-note as the supplied circulant class; the period-fork and detc/detr-fork citations are demoted to context (the period content used here is computed in this note's own runner; the circulant class is supplied in-note); the E6 orientation-strip consumption now cites its authority as a load-bearing dependency.)
 **Audit repair:** 2026-07-05 — repairs the `missing_bridge_theorem` conditional
 (audit row 3800b57ab): (a) the circulant-class form is now consumed from the
-retained K-orbit form authority instead of bare in-note stipulation; (b) R-η is
+retained_bounded K-orbit form authority instead of bare in-note stipulation; (b) R-η is
 restated as an explicitly **declared supplied readout-identification premise**
 with a non-derivability boundary (it is the Tier-A sub-admission (ii) content;
 no retained readout theorem supplies it on the current surface, and the retained
@@ -29,10 +29,10 @@ or predict an audit outcome.
 > chain that makes `|δ| = 2/9` a **theorem conditional on one named
 > identification (R-η)** — a dimensionless readout-class statement naming no
 > number — plus the existing carrier gate. Zero new numbers enter anywhere.
-> The period discussion is a bounded diagnostic: the direct reading is the
-> zero-import reading on the tested mechanisms, while the standard
-> π-packaging has no currently retained registrable carrier in the det-class
-> route checked here. R-η remains the explicit readout identification.
+> The period discussion is a bounded diagnostic: the direct reading adds no
+> import beyond the supplied R-η premise on the tested mechanisms, while the
+> standard π-packaging has no currently retained registrable carrier in the
+> det-class route checked here. R-η remains the explicit readout identification.
 
 ---
 
@@ -74,7 +74,7 @@ is the supplied charged-lepton circulant class: the three-parameter Hermitian
 circulant family
 `H(delta) = a I + B exp(i delta) C + B exp(-i delta) C^T` with `a` real, `B > 0`,
 `delta` real, and `C` the cyclic 3-shift. The class form and its `K`-orbit
-structure are consumed from the retained one-hop form authority
+structure are consumed from the retained_bounded one-hop form authority
 [`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`](TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md)
 (the same wiring as the R-η narrowing note's formal layer).
 The physical identification of this class as the charged-lepton carrier is carried
@@ -140,7 +140,7 @@ the sign stays frame content.
     R-η          (DECLARED supplied readout-identification premise — the
                   Tier-A sub-admission (ii) content; not derivable from
                   currently retained premises on this surface; number-free)
-    carrier class (form from the retained K-orbit authority; the physical
+    carrier class (form from the retained_bounded K-orbit authority; the physical
                   carrier identification is carried by the AC_phi_lambda
                   admission)
     context      (landed circulant; r = 1/2 used only in the mass comparator
@@ -213,7 +213,7 @@ all other phase-readout routes.
   — the orientation strip consumed in E6 (registrable species surface = unordered
   multiset; the registrable atom is `|δ|`).
 - [`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`](TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md)
-  — the retained one-hop form authority for the supplied circulant class and its
+  — the retained_bounded one-hop form authority for the supplied circulant class and its
   `K`-orbit structure (`conj(H(δ)) = H(−δ)`), re-verified symbolically in E6.
 
 Context (not load-bearing: cited only to locate surfaces and corroborate

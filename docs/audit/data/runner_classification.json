@@ -18687,8 +18687,8 @@
     "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09": {
       "assert_count": 1,
       "counts": {
-        "A": 9,
-        "B": 2,
+        "A": 12,
+        "B": 4,
         "C": 0,
         "D": 18
       },
@@ -63845,8 +63845,8 @@
         "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09"
       ],
       "counts": {
-        "A": 9,
-        "B": 2,
+        "A": 12,
+        "B": 4,
         "C": 0,
         "D": 18
       },

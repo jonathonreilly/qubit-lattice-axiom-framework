@@ -11,8 +11,8 @@ does not claim hydrogen is retained.
 
 ## Scope
 
-The #5022 audit-repair PR made the R-eta situation sharper: the delta-eta chain
-is conditional on a declared supplied R-eta readout-identification premise. The
+Merged PR #5022 made the R-eta situation sharper: the delta-eta chain is
+conditional on a declared supplied R-eta readout-identification premise. The
 older R-eta narrowing note already decomposes that supplied premise into the
 single admitted residual:
 
@@ -96,7 +96,7 @@ still needs h-unit, owner ratification, and audit acceptance before
 
 | surface | useful content | residual |
 |---|---|---|
-| `#5022` delta-eta audit repair | R-eta is explicit supplied premise; conditional implication is machine-checked | retained R-eta derivation absent |
+| merged `#5022` delta-eta audit repair | R-eta is explicit supplied premise; conditional implication is machine-checked | retained R-eta derivation absent |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | hydrogen-facing #5022 boundary | K2 conditionality only |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; identity-radian unit coefficient only | h-class, carrier context, owner/audit, and full R-eta retirement remain open |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_H_CLASS_RETAINED`; fixed-locus class membership only | h-unit, owner/audit, and full R-eta retirement remain open |
@@ -138,7 +138,7 @@ under the two-ninths/radian K2 subgate.
 
 | route | attempt | result |
 |---|---|---|
-| #5022 supplied-premise route | Treat #5022's declared supplied premise as already retained. | ATTEMPTED. #5022 clarifies conditionality but says the premise is supplied, not derived. |
+| #5022 supplied-premise route | Treat merged #5022's declared supplied premise as already retained. | ATTEMPTED. #5022 clarifies conditionality but says the premise is supplied, not derived. |
 | forced form-layer route | Treat the formal `H(delta)` layer as selecting the value. | ATTEMPTED. The R-eta narrowing note says the form layer cannot select `A_R-eta`. |
 | W2 registrability route | Treat finite Record-registrability context as physical carrier realization plus value selection. | PARTIAL ONLY. The W2 bridge closes finite-context algebra and leaves physical carrier plus `A_R-eta` open. |
 | finite arithmetic route | Treat `L3(1,2) = 2/9` as the physical phase. | PARTIAL ONLY. Arithmetic is accepted context; h-class and h-unit remain the target. |
@@ -251,7 +251,8 @@ target discriminator passes.
 - No derivation of `delta = 2/9` as a retained physical phase.
 - No derivation or ratification of `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
 - No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.
-- No adoption or landing claim for PR `#5020`, PR `#5021`, or PR `#5022`.
+- No claim that PR `#5020`, PR `#5021`, or merged PR `#5022` supplies R-eta
+  retirement.
 - No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`, observed
   `m_e`, observed `alpha(0)`, or observed hydrogen as proof input.
 - No derivation of K1 occupancy/counting, K3 physical species bridge, K4

@@ -171,7 +171,7 @@ def main() -> None:
         "AUDIT_ACCEPTANCE",
         "No proper subset supplies the handoff",
         "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md",
-        "current retained, primitive, and open-PR surfaces do not",
+        "current retained, primitive, merged-PR, and open-PR surfaces do not",
         "FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md",
         "KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md",
         "KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md",
@@ -247,7 +247,7 @@ def main() -> None:
     )
     audit.check(
         "current no-go keeps target open",
-        "current retained, primitive, and open-PR surfaces do not supply" in current_no_go
+        "current retained, primitive, merged-PR, and open-PR surfaces do not supply" in current_no_go
         and "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED" in current_no_go,
     )
 
@@ -294,7 +294,7 @@ def main() -> None:
         "No derivation or ratification of `RADIAN_READOUT_LICENSE_RETAINED`.",
         "No derivation or ratification of `FOLD_AND_BRANCH_DOMAIN_LOCK`.",
         "No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.",
-        "No adoption or landing claim for PR `#5020`, PR `#5021`, or PR `#5022`.",
+        "No claim that PR `#5020`, PR `#5021`, or merged PR `#5022` supplies the",
         "No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`, observed",
         "No derivation of K1 occupancy/counting, K3 physical species bridge, K4",
         "No new axiom, primitive, Tier-A admission, or empirical import.",

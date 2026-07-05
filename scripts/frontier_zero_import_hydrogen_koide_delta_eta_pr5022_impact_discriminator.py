@@ -27,7 +27,7 @@ REALIZED = ROOT / "docs" / "REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
 
 
 PR5022_CONTEXT_INPUTS = {
-    "PR5022_OPEN",
+    "PR5022_MERGED_AUDIT_SUCCESS",
     "R_ETA_DECLARED_SUPPLIED_PREMISE",
     "CONDITIONAL_IMPLICATION_CHECKED",
     "RETAINED_K_ORBIT_FORM_AUTHORITY",
@@ -159,8 +159,8 @@ def main() -> None:
     section("Required note content")
     required_phrases = [
         "Koide Delta-Eta PR #5022 Impact Discriminator",
-        "open-PR impact discriminator / Koide K2 conditionality boundary",
-        "does not adopt PR `#5022`",
+        "merged-PR impact discriminator / Koide K2 conditionality boundary",
+        "does not claim merged PR `#5022` supplies a retained R-eta derivation",
         "does not derive R-eta",
         "does not derive `delta = 2/9`",
         "does not ratify `K2_R_ETA_EXACTNESS_RETAINED`",
@@ -172,7 +172,7 @@ def main() -> None:
         "checks the implication, not the premise",
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md",
         "R_ETA_READOUT_IDENTIFICATION_RETAINED",
-        "`#5022` delta-eta chain R-eta supplied-premise audit repair | open",
+        "`#5022` delta-eta chain R-eta supplied-premise audit repair | merged",
         "`#5021` primitive-retirement review draft",
         "`#5020` Koide R-eta value-face registered-angle/exactness relocation | open",
         "The primitive registry was checked",
@@ -225,9 +225,9 @@ def main() -> None:
 
     audit.check("#5020 impact keeps exactness open", "exactness remains open" in pr5020)
     audit.check("K2 target remains ten-input contract", "No proper subset of those ten inputs" in k2_target)
-    audit.check("K2 current no-go keeps exactness open", "current retained, primitive, and open-PR surfaces do not supply" in k2_no_go)
+    audit.check("K2 current no-go keeps exactness open", "current retained, primitive, merged-PR, and open-PR surfaces do not supply" in k2_no_go)
     audit.check("two-ninths target remains subgate", "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED" in two_ninths_target)
-    audit.check("two-ninths current no-go keeps subgate open", "current retained, primitive, and open-PR surfaces do not supply" in two_ninths_no_go)
+    audit.check("two-ninths current no-go keeps subgate open", "current retained, primitive, merged-PR, and open-PR surfaces do not supply" in two_ninths_no_go)
     audit.check("physical electron packet keeps K2 context non-mass", "K2 value-face progress only" in physical_electron and "no delta exactness theorem" in physical_electron)
     audit.check("Koide firewall separates K1-K4", all(token in koide_firewall for token in ["K1", "K2", "K3", "K4"]))
     audit.check("realized-state primitive supplies no values", "no state" in realized_text and "or value is supplied" in flat(realized_text))
@@ -253,7 +253,7 @@ def main() -> None:
 
     section("Non-claim boundaries")
     explicit_non_claims = [
-        "No adoption or landing claim for PR `#5022`.",
+        "No claim that merged PR `#5022` supplies a retained R-eta derivation.",
         "No audit verdict or retained-status change.",
         "No derivation or ratification of R-eta.",
         "No derivation of `delta = 2/9` from current retained inventory alone.",

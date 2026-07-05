@@ -749,7 +749,7 @@ def main() -> None:
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md",
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "K2_R_ETA_EXACTNESS_RETAINED",
-        "current retained, primitive, and open-PR surfaces do not",
+        "current retained, primitive, merged-PR, and open-PR surfaces do not",
         "retained exact `2/9` theorem",
         "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md",
         "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md",

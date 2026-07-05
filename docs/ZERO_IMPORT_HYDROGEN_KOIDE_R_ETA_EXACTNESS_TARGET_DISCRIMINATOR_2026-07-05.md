@@ -71,12 +71,12 @@ exactness by itself.
 
 The two-ninths/radian-readout current-surface no-go
 `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
-records that the current retained, primitive, and open-PR surfaces do not
+records that the current retained, primitive, merged-PR, and open-PR surfaces do not
 supply that sub-handoff.
 
-The #5022 audit-repair PR is live conditional Koide progress: it declares
-R-eta as a supplied readout-identification premise and checks the implication
-from retained arithmetic to `|delta| = 2/9`. It is not a retained derivation of
+Merged PR #5022 is landed conditional Koide progress: it declares R-eta as a
+supplied readout-identification premise and checks the implication from
+retained arithmetic to `|delta| = 2/9`. It is not a retained derivation of
 R-eta, does not close this K2 exactness target, and does not supply the
 two-ninths/radian-readout sub-handoff. The dedicated impact discriminator
 `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md`
@@ -186,7 +186,7 @@ K2 exactness is a named ten-input target after #5020, not a retained result.
 
 The K2 exactness current-surface no-go
 `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md`
-records that current retained, primitive, and open-PR surfaces do not supply
+records that current retained, primitive, merged-PR, and open-PR surfaces do not supply
 `K2_R_ETA_EXACTNESS_RETAINED`; the target remains needed.
 
 ### N5 - Rhetoric Audit
@@ -236,7 +236,7 @@ discriminator passes.
 - No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.
 - No derivation of `AC_phi_lambda`.
 - No derivation of `delta = 2/9`.
-- No adoption or landing claim for PR `#5020` or PR `#5022`.
+- No claim that PR `#5020` or merged PR `#5022` supplies K2 exactness.
 - No derivation or ratification of K1 occupancy/counting, K3 physical species
   bridge, K4 absolute scale, native Z1-Z3 bridge, or Koide branch mass-map.
 - No derivation or ratification of `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT`.

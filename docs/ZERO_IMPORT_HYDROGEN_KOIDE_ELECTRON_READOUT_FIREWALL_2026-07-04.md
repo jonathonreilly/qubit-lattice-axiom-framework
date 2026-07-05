@@ -272,11 +272,13 @@ needed.
 
 ## Open PR Alignment
 
-Open PRs were checked on 2026-07-04 and refreshed on 2026-07-05 after `#5022`
-opened. The relevant Koide stack does not close this firewall on current main:
+PRs were checked on 2026-07-04 and refreshed on 2026-07-05 after `#5022`
+merged with audit success. The relevant Koide stack does not close this
+firewall on current main:
 
 | PR | effect on K1-K3 |
 |---|---|
+| `#5022` | Merged delta-eta supplied-premise audit repair. It improves K2 conditionality bookkeeping but supplies no retained R-eta derivation, electron readout, physical electron mass, or hydrogen. |
 | `#5020` | Koide R-eta value-face registered-angle/exactness relocation. It moves K2 value-face standing toward realized-state registration and names the exactness residual; it supplies no electron readout, physical electron mass, or hydrogen. |
 | `#5019` | Koide `AC_phi_lambda` axiom-surface rebase. It is premise-hygiene and audit-readiness context for the decomposition chain; it supplies no K1/K2/K3 closure. |
 | `#5011` | Latest open PR at refresh; eta twisted walk family runner repair, `CLEAN`. It does not supply Koide electron readout, charged-lepton scale, `alpha(0)`, or hydrogen. |
@@ -450,8 +452,8 @@ electron value. The current note keeps those layers separate: phase-blind
 - No derivation of `a_l^2`, `alpha(0)`, or hydrogen spectroscopy.
 - No audit status change for any cited row.
 - No new axiom, primitive, or admitted import.
-- No adoption or landing claim for PR `#5020` or PR `#5022`; no derivation
-  or ratification of a Koide R-eta exactness theorem.
+- No claim that PR `#5020` or merged PR `#5022` derives or ratifies a Koide
+  R-eta exactness theorem.
 
 ## Verification
 

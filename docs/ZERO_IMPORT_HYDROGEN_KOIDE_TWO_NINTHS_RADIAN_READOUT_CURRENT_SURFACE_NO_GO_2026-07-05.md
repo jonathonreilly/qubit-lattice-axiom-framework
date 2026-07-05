@@ -17,8 +17,8 @@ KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED.
 ```
 
 The narrow result here is not "the framework cannot derive `delta = 2/9`."
-The narrow result is that the current retained, primitive, and open-PR
-surfaces do not supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
+The narrow result is that the current retained, primitive, merged-PR, and
+open-PR surfaces do not supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
 
 ## Subgate Contract
 
@@ -65,7 +65,7 @@ AUDIT_ACCEPTANCE
 | `KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md` | one Z2 orientation object for count and phase chirality | magnitude `2/9`, radian unit, or realized handedness |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_READOUT_IDENTIFICATION_RETAINED`; h-class plus h-unit | current retained exact theorem, radian-readout license, or subhandoff |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 supplied-premise conditionality boundary | retained R-eta derivation, exact theorem, radian-readout license, or subhandoff |
-| `#5022` audit repair for the delta-eta chain | open conditionality repair: R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | retained R-eta derivation, exact theorem, radian-readout license, or subhandoff |
+| `#5022` audit repair for the delta-eta chain | merged conditionality repair: R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | retained R-eta derivation, exact theorem, radian-readout license, or subhandoff |
 | `#5020` Koide R-eta value-face PR | open value-face progress | exact theorem, radian-readout license, or fold/domain lock |
 | `#5021` primitive-retirement review draft | primitive-boundary meta review; reports no primitive retirement and no registry edit | new two-ninths/radian primitive or retained subhandoff |
 | approved primitives | minimal axioms, scale reference, kinetic-form isotropy, realized-state evaluation discipline | `delta`, `2/9` theorem, radian-readout license, fold/domain lock, `m_e`, `alpha(0)`, or hydrogen |
@@ -81,12 +81,12 @@ premise nodes, not walls, but their source notes do not supply
 
 ## Open PR Alignment
 
-Open PRs were refreshed on 2026-07-05 UTC. Opened PRs are queue signals; clean
-status is not proof input.
+PRs were refreshed on 2026-07-05 UTC. Merged and opened PRs are dependency-state
+signals; clean status is not proof input.
 
 | PR | queue signal | subgate effect |
 |---|---:|---|
-| `#5022` audit repair: delta-eta chain R-eta supplied premise | open, audit in progress | conditional repair only; no retained R-eta derivation, exact theorem, or radian-readout license |
+| `#5022` audit repair: delta-eta chain R-eta supplied premise | merged, audit success | conditional repair only; no retained R-eta derivation, exact theorem, or radian-readout license |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft | primitive-boundary context only; no registry edit, no subgate closure |
 | `#5020` Koide R-eta value-face registered-angle/exactness relocation | open | value-face progress; exactness and radian readout remain open |
 | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | open | premise-hygiene context; no exact theorem or readout license |
@@ -98,7 +98,7 @@ status is not proof input.
 | before this note | after this note |
 |---|---|
 | two-ninths/radian had a target contract | the current-surface non-supply boundary is explicit |
-| #5022 could be overread as a retained R-eta derivation | #5022 is conditional supplied-premise repair while audit is in progress |
+| #5022 could be overread as a retained R-eta derivation | #5022 is merged conditional supplied-premise repair, not a retained R-eta derivation |
 | finite `2/9` density could be overread as radian phase | finite density remains context until exact theorem and readout license are accepted |
 | #5020 could be overread as supplying the exact subgate | #5020 is value-face progress only |
 | #5021 could be overread as a primitive shortcut | #5021 is primitive-boundary context only while no registry edit exists |
@@ -109,7 +109,7 @@ This section prevents overclaiming. The broad claim "`delta = 2/9` cannot be
 retained" is not shipped. The narrowed claim is:
 
 ```text
-the current retained, primitive, and open-PR surfaces do not supply
+the current retained, primitive, merged-PR, and open-PR surfaces do not supply
 KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED.
 ```
 
@@ -228,7 +228,7 @@ non-supply claim passes.
 - No derivation or ratification of `RADIAN_READOUT_LICENSE_RETAINED`.
 - No derivation or ratification of `FOLD_AND_BRANCH_DOMAIN_LOCK`.
 - No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.
-- No adoption or landing claim for PR `#5020`, PR `#5021`, or PR `#5022`.
+- No claim that PR `#5020`, PR `#5021`, or merged PR `#5022` supplies the subgate.
 - No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`, observed
   `m_e`, observed `alpha(0)`, or observed hydrogen as proof input.
 - No derivation of K1 occupancy/counting, K3 physical species bridge, K4

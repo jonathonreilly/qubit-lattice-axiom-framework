@@ -169,7 +169,7 @@ def main() -> None:
         "Koide Two-Ninths Radian Readout Current-Surface No-Go",
         "current-surface no-go / import-retirement target",
         "does not ratify `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`",
-        "current retained, primitive, and open-PR surfaces do not supply",
+        "current retained, primitive, merged-PR, and open-PR surfaces do not supply",
         "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED",
         "TWO_NINTHS_READOUT_TEXT_LOCK",
         "FINITE_TWO_NINTHS_DENSITY_CONTEXT_ACCEPTED",
@@ -192,7 +192,7 @@ def main() -> None:
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md",
         "R_ETA_READOUT_IDENTIFICATION_RETAINED",
         "ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md",
-        "`#5022` audit repair: delta-eta chain R-eta supplied premise | open",
+        "`#5022` audit repair: delta-eta chain R-eta supplied premise | merged",
         "declared supplied readout-identification premise",
         "conditional repair only; no retained R-eta derivation, exact theorem, or radian-readout license",
         "`#5020` Koide R-eta value-face registered-angle/exactness relocation | open",
@@ -300,7 +300,7 @@ def main() -> None:
 
     section("Open PR and non-claim boundaries")
     open_markers = [
-        "`#5022` audit repair: delta-eta chain R-eta supplied premise | open",
+        "`#5022` audit repair: delta-eta chain R-eta supplied premise | merged",
         "`#5021` primitive-retirement review: meta gate map, no retirements | open draft",
         "`#5020` Koide R-eta value-face registered-angle/exactness relocation | open",
         "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | open",
@@ -317,7 +317,7 @@ def main() -> None:
         "No derivation or ratification of `RADIAN_READOUT_LICENSE_RETAINED`.",
         "No derivation or ratification of `FOLD_AND_BRANCH_DOMAIN_LOCK`.",
         "No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.",
-        "No adoption or landing claim for PR `#5020`, PR `#5021`, or PR `#5022`.",
+        "No claim that PR `#5020`, PR `#5021`, or merged PR `#5022` supplies the subgate.",
         "No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`, observed",
         "No derivation of K1 occupancy/counting, K3 physical species bridge, K4",
         "No new axiom, primitive, Tier-A admission, or empirical import.",

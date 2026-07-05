@@ -87,6 +87,9 @@ acceptance.
 |---|---|---|
 | `KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md` | localizes matter attachment to a KS/state-law bridge or elementary state-law theorem | retained KS-to-physical matter-state spinor-law theorem |
 | `CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md` | refutes the spinor-module escape and names the spinful staggered selector location | physical KS/Grassmann state-law bridge |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for the spinful staggered kernel scalar-lift exclusion input | this KS child theorem or KS physical spin-lift action law |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit decision shape for `SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED` | retained scalar-lift exclusion theorem itself |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the scalar-lift exclusion handoff | KS route closure or parent bridge closure |
 | `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded KS phase/gauge-class support inside the declared kinetic class | physical matter-state spin-lift action law |
 | `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded Grassmann/CAR support, conditional on `GL(F)` for the three-candidate class | unconditional physical state-action law |
 | `STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md` | narrow staggered chirality parity support | full realization, BZ-corner species-label bridge, or physical state law |

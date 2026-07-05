@@ -147,7 +147,7 @@ status is not proof input.
 |---|---:|---|
 | `#5022` delta-eta chain R-eta supplied-premise audit repair | merged, audit success | conditionality repair only; no retained h-unit theorem |
 | `#5021` primitive-retirement review draft | open draft; dirty | primitive-boundary context only; no registry edit and no h-unit shortcut |
-| `#5020` Koide R-eta value-face registered-angle/exactness relocation | open, clean | value-face progress; h-unit exact coefficient remains open |
+| `#5020` Koide R-eta value-face registered-angle/exactness relocation | merged | value-face progress; h-unit exact coefficient remains open |
 | `#5016` zero-import hydrogen retained lane bundle | open | carries this packet once pushed |
 
 ## What This Moves

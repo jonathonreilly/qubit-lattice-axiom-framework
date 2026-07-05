@@ -298,8 +298,8 @@ def main() -> None:
     open_markers = [
         "`#5022` audit repair: delta-eta chain R-eta supplied premise | merged",
         "`#5021` primitive-retirement review: meta gate map, no retirements | open draft",
-        "`#5020` Koide R-eta value-face registered-angle/exactness relocation | open, clean",
-        "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | open",
+        "`#5020` Koide R-eta value-face registered-angle/exactness relocation | merged",
+        "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged",
         "`#5018`/`#5017` chirality/domain-wall stack | open",
         "`#5016` zero-import hydrogen retained lane bundle | open",
         "Clean/green status is not proof input",

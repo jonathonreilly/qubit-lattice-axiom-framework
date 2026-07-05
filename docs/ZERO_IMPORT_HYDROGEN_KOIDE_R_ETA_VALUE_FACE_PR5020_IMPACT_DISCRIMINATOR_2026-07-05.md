@@ -1,19 +1,19 @@
 # Zero-Import Hydrogen: Koide R-Eta Value-Face PR #5020 Impact Discriminator
 
 **Date:** 2026-07-05
-**Type:** open-PR impact discriminator / Koide K2 value-face boundary
-**Status:** support-only. This note does not adopt PR `#5020`, does not change
-audit status, does not derive `AC_phi_lambda`, does not derive
-`delta = 2/9`, does not derive the physical electron mass, and does not claim
-hydrogen is retained.
+**Type:** PR impact discriminator / Koide K2 value-face boundary
+**Status:** support-only. This note does not use merged PR `#5020` as
+exactness closure, does not change audit status, does not derive
+`AC_phi_lambda`, does not derive `delta = 2/9`, does not derive the physical
+electron mass, and does not claim hydrogen is retained.
 **Verifier:** `scripts/frontier_zero_import_hydrogen_koide_r_eta_value_face_pr5020_impact_discriminator.py`
 
 ## Scope
 
 PR `#5020`, `koide: AC_phi_lambda (ii) value face - registered-angle
-functional + exactness relocation`, is open on 2026-07-05 UTC. The queue signal
-is that the PR is opened and Koide K2/R-eta-lane relevant. Its current check
-status is review metadata, not a proof input.
+functional + exactness relocation`, merged on 2026-07-05 UTC. The queue signal
+is that the PR is landed Koide K2/R-eta-lane value-face progress. Its check
+and merge metadata are review state, not exactness proof inputs.
 
 The PR body says it applies the realized-state decomposition to the delta side
 of `AC_phi_lambda` sub-admission (ii):
@@ -52,12 +52,12 @@ The useful hydrogen consequence is that K2 is now sharper: value registration
 and exactness are distinct. Hydrogen can track this as Koide progress, but it
 cannot spend #5020 as a retained electron-mass input.
 
-## Current Open PR Alignment
+## Current PR Alignment
 
 | PR | queue signal | hydrogen effect |
 |---|---:|---|
-| `#5020` Koide R-eta value-face registered-angle/exactness relocation | open | K2 value-face progress; exactness remains open; no `m_e` |
-| `#5019` Koide `AC_phi_lambda` axiom-surface rebase | open | premise-hygiene and audit-readiness context for the decomposition chain |
+| `#5020` Koide R-eta value-face registered-angle/exactness relocation | merged | K2 value-face progress; exactness remains open; no `m_e` |
+| `#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged | premise-hygiene and audit-readiness context for the decomposition chain |
 | `#5018`/`#5017` chirality/domain-wall stack | open | above-C3 context only; no K2/K3 Koide readout |
 | `#5007` Koide native zero-section route guard repair | open | useful native-route context, not a physical electron mass |
 | `#4991` owner-governed Tier-A retirement | open | status-progress context for old Tier-A atoms, not theorem closure |
@@ -67,7 +67,7 @@ cannot spend #5020 as a retained electron-mass input.
 
 | source | supplies | boundary here |
 |---|---|---|
-| PR `#5020` body | registered-angle functional, counterfactual-test classification, law-freeness, unit-face dissolution, and exactness residual statement | open-PR context only; not landed authority |
+| PR `#5020` body | registered-angle functional, counterfactual-test classification, law-freeness, unit-face dissolution, and exactness residual statement | merged-PR context; not exactness closure |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md` | K1/K2/K3/K4 separation | keeps #5020 as K2 value-face progress, not full electron readout |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md` | decomposition-chain premise hygiene | companion context, not K2 exactness |
 | `ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md` | physical electron mass decision contract | still needs native bridge, species bridge, branch map, K4 scale, owner, and audit inputs |
@@ -82,7 +82,7 @@ hydrogen.
 
 | before this note | after this note |
 |---|---|
-| #5020 was only visible as a newly opened Koide PR | hydrogen has a local K2 value-face impact boundary |
+| #5020 was previously visible as a newly opened Koide PR | hydrogen has a local K2 value-face impact boundary |
 | K2 could be treated as one undifferentiated phase wall | the value-registration face and exactness residual are separated |
 | a registered `Phi` value could be overread as a zero-import exactness theorem | the exactness residual remains explicit and unspent |
 
@@ -186,7 +186,8 @@ discriminator passes.
 
 ## Explicit Non-Claims
 
-- No adoption or landing claim for PR `#5020`.
+- No claim that merged PR `#5020` supplies K2 exactness, electron mass, alpha,
+  or hydrogen.
 - No audit verdict or status change.
 - No derivation of `AC_phi_lambda`.
 - No derivation of `delta = 2/9`.

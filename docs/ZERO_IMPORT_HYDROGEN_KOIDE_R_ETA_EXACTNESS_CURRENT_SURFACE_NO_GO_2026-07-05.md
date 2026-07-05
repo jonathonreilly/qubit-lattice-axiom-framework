@@ -78,6 +78,11 @@ packages `R_ETA_READOUT_IDENTIFICATION_RETAINED` as h-class plus h-unit, and
 if accepted can feed the exact theorem and radian-readout license inputs under
 the two-ninths/radian subgate. It is not supplied on the current surface.
 
+The R-eta readout-retirement current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+records that current retained, primitive, merged-PR, and open-PR surfaces do
+not supply `R_ETA_READOUT_IDENTIFICATION_RETAINED`.
+
 The two-ninths/radian-readout target discriminator
 `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`
 packages the next sub-lane as
@@ -100,9 +105,10 @@ do not supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
 | surface | supplies | does not supply |
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_READOUT_IDENTIFICATION_RETAINED`; h-class plus h-unit | current retained R-eta derivation or K2 exactness |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `R_ETA_READOUT_IDENTIFICATION_RETAINED` | R-eta consequence or K2 exactness |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 supplied-premise conditionality boundary | retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, or hydrogen |
 | `#5022` audit repair for the delta-eta chain | merged conditionality repair: R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, or two-ninths/radian handoff |
-| `#5020` Koide R-eta value-face PR | open value-face movement: registered-angle functional, counterfactual classification, law-freeness, unit-face dissolution, and named exactness residual | retained exact `2/9` theorem, radian-readout license, owner/audit acceptance |
+| `#5020` Koide R-eta value-face PR | merged value-face movement: registered-angle functional, counterfactual classification, law-freeness, unit-face dissolution, and named exactness residual | retained exact `2/9` theorem, radian-readout license, owner/audit acceptance |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | hydrogen-facing boundary for #5020 | `K2_R_ETA_EXACTNESS_RETAINED` |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` | ten-input exactness target contract | current retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | ten-input owner/audit decision packet | retained consequence; not accepted on the current surface |
@@ -112,7 +118,7 @@ do not supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md` | K1/K2/K3/K4 separation and phase-sensitive arithmetic | K2 exactness closure or physical electron mass |
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | comparator/open-gate warning for `delta = 2/9` | retained phase/exactness theorem |
 | `CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md` | bounded theorem under explicit Tier-A admission | zero-import K2 exactness from retained inventory alone |
-| `#5019` Koide `AC_phi_lambda` axiom-surface rebase | open premise-hygiene and audit-readiness context | exactness theorem or electron mass |
+| `#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged premise-hygiene and audit-readiness context | exactness theorem or electron mass |
 | `#5021` primitive-retirement review draft | open/draft primitive meta review; reports no primitive retirement and no registry edit | K2 exactness, new primitive, or hydrogen closure |
 | approved primitives | minimal axioms, scale reference, kinetic-form isotropy, realized-state evaluation discipline | `Phi`, `delta`, exactness theorem, radian-readout license, species, scale, mass, `alpha(0)`, or hydrogen |
 
@@ -134,8 +140,8 @@ tracked as dependency-state signals; clean/green status is not a proof input.
 |---|---:|---|
 | `#5022` audit repair: delta-eta chain R-eta supplied premise | merged, audit success | conditional repair only; no retained R-eta derivation or K2 exactness |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft | primitive-boundary context only; no registry edit, no K2 exactness |
-| `#5020` Koide R-eta value-face registered-angle/exactness relocation | open | value-face progress; exactness residual remains open |
-| `#5019` Koide `AC_phi_lambda` axiom-surface rebase | open | premise-hygiene context; no exactness theorem |
+| `#5020` Koide R-eta value-face registered-angle/exactness relocation | merged | value-face progress; exactness residual remains open |
+| `#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged | premise-hygiene context; no exactness theorem |
 | `#5018`/`#5017` chirality/domain-wall stack | open | above-C3 context only; no K2 exactness or electron mass |
 | `#5016` zero-import hydrogen retained lane bundle | open | carries this current-surface no-go once pushed |
 

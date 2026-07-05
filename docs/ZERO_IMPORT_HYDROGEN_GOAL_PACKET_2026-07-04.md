@@ -149,6 +149,11 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   packages that same handoff as an eleven-input owner/audit contract. It is
   the spendable wrapper for h-class plus h-unit, not retained R-eta, K2
   exactness, electron mass, or hydrogen.
+  The R-eta readout-retirement current-surface no-go
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+  records that current retained, primitive, merged-PR, and open-PR surfaces do
+  not supply `R_ETA_READOUT_IDENTIFICATION_RETAINED`; the import-retirement
+  target remains needed.
   The h-unit identity-radian target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md`
   packages one subinput of that R-eta target:
@@ -1439,6 +1444,7 @@ here.
                         | K1 selector/default-exclusion target | Open subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` packages `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`; if accepted, it can feed the K1 selector and dimension/Born default-exclusion inputs, not full K1, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta readout-retirement target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `R_ETA_READOUT_IDENTIFICATION_RETAINED`; if accepted it can feed the exact theorem and radian-readout license inputs under the two-ninths/radian subgate, not full K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta readout-retirement ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the eleven-input owner/audit contract for `R_ETA_READOUT_IDENTIFICATION_RETAINED`; it is not retained R-eta, K2 exactness, `m_e`, `alpha(0)`, or hydrogen. |
+                        | R-eta readout-retirement current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `R_ETA_READOUT_IDENTIFICATION_RETAINED`. |
                         | R-eta h-unit identity-radian target | Open subtarget. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` packages `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; it can feed one input into R-eta readout retirement, not h-class, full R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta h-unit identity-radian ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the eleven-input owner/audit contract for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; it does not derive `c = 1`, `Phi = 2/3`, h-class, full R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta h-class fixed-locus target | Open subtarget. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` packages `R_ETA_H_CLASS_RETAINED`; it can feed one input into R-eta readout retirement, not h-unit, full R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |

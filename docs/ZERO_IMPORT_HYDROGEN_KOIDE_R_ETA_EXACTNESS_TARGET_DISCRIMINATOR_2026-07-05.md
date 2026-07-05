@@ -9,7 +9,7 @@ not claim hydrogen is retained.
 
 ## Scope
 
-The open `#5020` value-face PR separates two pieces of Koide K2:
+The merged `#5020` value-face PR separates two pieces of Koide K2:
 
 ```text
 registered Phi-value standing
@@ -101,6 +101,11 @@ packages `R_ETA_READOUT_IDENTIFICATION_RETAINED`. If accepted, it is the
 intended proof package for the exact two-ninths theorem and radian-readout
 license inputs under the two-ninths/radian subgate; it does not close this K2
 exactness target by itself.
+
+The R-eta readout-retirement current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+records that current retained, primitive, merged-PR, and open-PR surfaces do
+not supply `R_ETA_READOUT_IDENTIFICATION_RETAINED`.
 
 ## Dependency Boundary
 

@@ -119,6 +119,7 @@ STATIC_SOURCE_RYDBERG_RETAINED
 |---|---|---|
 | merged PR `#5022` | R-eta declared supplied; retained arithmetic plus supplied premise implies `|delta| = 2/9` | conditionality repair only; no retained R-eta derivation |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | names the eleven-input target | target only, not ratification |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `R_ETA_READOUT_IDENTIFICATION_RETAINED` | no retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | packages `R_ETA_H_CLASS_RETAINED` | h-class input only |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the h-class owner/audit decision object | h-class only; no h-unit or full R-eta |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` | packages `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED` | h-unit input only |
@@ -142,8 +143,8 @@ status is not proof input.
 |---|---:|---|
 | `#5022` delta-eta chain R-eta supplied-premise audit repair | merged, audit success | conditionality repair only; no retained R-eta derivation |
 | `#5021` primitive-retirement review draft | open draft; dirty | primitive-boundary context only; no registry edit and no R-eta shortcut |
-| `#5020` Koide R-eta value-face registered-angle/exactness relocation | open, clean | value-face progress; exactness and readout retirement remain open |
-| `#5019` Koide `AC_phi_lambda` axiom-surface rebase | open, clean | premise-hygiene context only |
+| `#5020` Koide R-eta value-face registered-angle/exactness relocation | merged | value-face progress; exactness and readout retirement remain open |
+| `#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged | premise-hygiene context only |
 | `#5016` zero-import hydrogen retained lane bundle | open | carries this packet once pushed |
 
 ## What This Moves

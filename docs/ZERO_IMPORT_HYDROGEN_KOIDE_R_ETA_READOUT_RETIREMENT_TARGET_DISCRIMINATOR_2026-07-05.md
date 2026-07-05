@@ -129,6 +129,12 @@ The ratification decision wrapper for this target is
 It packages the same eleven-input contract for owner/audit handling and does
 not claim the handoff is already retained.
 
+The current-surface no-go companion
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+records that current retained, primitive, merged-PR, and open-PR surfaces do
+not supply `R_ETA_READOUT_IDENTIFICATION_RETAINED`; this target remains
+needed.
+
 ## No-Go Discipline Gate
 
 This section prevents overclaiming. The broad claim "R-eta is retained" is not

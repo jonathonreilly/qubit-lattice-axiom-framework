@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/domain_wall_edge_content_vs_sm_chiral_map_2026_07_05.py
+runner_sha256: 8e3bf04cd60d5dd33ce30a2425097228e40c723073a359c426b45fc58deea5c1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+
+============================================================================================
+1. Edge Weyl content from the Step 1-3 domain-wall construction
+============================================================================================
+edge content per wall: species=1, Cl(3,0) spinor_dim=2, local_dim=2
+proper cubic rotations: |O|=24, vector trace counts={-1: 9, 0: 8, 1: 6, 3: 1}
+PASS - Pauli sigma algebra realizes the Cl(3,0) edge spin  (max_anticomm_error=0.000e+00)
+PASS - proper cubic group has 24 orientation-preserving signed-permutation rotations
+PASS - proper cubic vector representation trace distribution is computed  ({-1: 9, 0: 8, 1: 6, 3: 1})
+PASS - edge spinor is a double-cover/projective cubic spin representation  (four 90-degree spin turns give -I)
+PASS - spin lift rotates the sigma algebra by conjugation
+
+============================================================================================
+2. Re-earn the C^8 taste/base Y surface
+============================================================================================
+Y spectrum={-1:2, 1/3:6}
+S3 character decomposition: A1=4, A2=0, E=2
+PASS - P_sym and P_antisym are orthogonal projectors
+PASS - Y surface has the exact 6+2 multiplicity split  (rank_sym=6 rank_anti=2)
+PASS - Y spectrum is +1/3 with multiplicity 6 and -1 with multiplicity 2  ({-1:2, 1/3:6})
+PASS - Y trace is exactly zero on the 6+2 surface  (TrY=0)
+PASS - scale-free Y ratio is 1:(-3)
+PASS - taste cube S3 representation decomposes as 4A1 + 2E
+
+============================================================================================
+3. One-generation SM target and exact anomaly sums
+============================================================================================
+SM target multiset={-2/3:3, -1/2:2, 1/6:6, 1/3:3, 1:1} total_dim=15
+SM anomaly sums: sum_Y=0, sum_Y3=0, su2_su2_Y=0, su3_su3_Y=0
+PASS - SM one-generation target has 15 left-handed Weyl states
+PASS - SM target perturbative hypercharge anomalies vanish exactly  (sum_Y=0, sum_Y3=0, su2_su2_Y=0, su3_su3_Y=0)
+PASS - SM target SU(3)^3 anomaly cancels in the LH-conjugate frame
+
+============================================================================================
+4. Map: matches and precise gaps
+============================================================================================
+scaled Y surface by convention factor 1/2 -> {-1/2:2, 1/6:6}
+SM states missing from scaled 6+2 surface={-2/3:3, 1/3:3, 1:1}
+extra states in scaled surface relative to SM={}
+PASS - MATCH: scaled 6+2 Y surface equals the SM Q_L + L_L hypercharge multiset  ({-1/2:2, 1/6:6})
+PASS - MATCH: the map reuses only the scale-free 1:(-3) ratio before convention fixing  (absolute factor 1/2 is the SM convention bridge, not derived here)
+PASS - GAP: scaled 6+2 surface is not the full SM 15-plet  (surface_dim=8 sm_dim=15 missing={-2/3:3, 1/3:3, 1:1})
+PASS - GAP: Step 1-3 edge spinor is not directly the C^8 taste cube  (edge_spin_dim=2 taste_dim=8)
+PASS - GAP: edge spinor tensor taste cube gives 16 states, not the target 15-plet
+PASS - ROUTE-NO-GO: H_unit singlet cannot derive an SU(2) doublet by a nonzero equivariant map  (Hom_SU(2)(1,2)=0)
+
+============================================================================================
+5. Anomaly cross-check for the identified subcontent
+============================================================================================
+identified 6+2 subcontent anomaly sums: sum_Y=0, sum_Y3=-2/9, su2_su2_Y=0, su3_su3_Y=1/6
+PASS - identified 6+2 subcontent has vanishing linear trace and SU(2)^2-U(1)  (sum_Y=0, sum_Y3=-2/9, su2_su2_Y=0, su3_su3_Y=1/6)
+PASS - PRECISE NO-GO: identified 6+2 subcontent is not anomaly-complete by itself  (sum_Y3=-2/9 su3_su3_Y=1/6)
+PASS - PRECISE GAP: the missing singlet charges are exactly the SM anomaly-completing 7 states  ({-2/3:3, 1/3:3, 1:1})
+
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

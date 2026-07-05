@@ -3,7 +3,7 @@ runner: scripts/frontier_acphilambda_species_bridge_realized_state_2026_06_11.py
 runner_sha256: 67c0307a5dabb8c0ec42b98aa6c0cc1cff59ed320bec9602c88db795fbbafef6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 PASS  A1 C3[111] free 3-cycle on hw=1 (orbit = full triplet)

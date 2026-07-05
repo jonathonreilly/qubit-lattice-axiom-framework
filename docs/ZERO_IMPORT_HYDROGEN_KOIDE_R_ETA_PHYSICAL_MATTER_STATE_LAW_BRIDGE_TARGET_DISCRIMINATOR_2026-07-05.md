@@ -115,6 +115,7 @@ lane still needs its other inputs plus owner/audit acceptance.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply of the elementary route theorem | parent physical matter-state law bridge |
 | merged `#5023` / merged `#5024` W4 stack | audit-readiness and gate/audit graph hygiene | physical matter-state-law theorem |
 | open `#5014`/`#5017`/`#5018` domain-wall/chirality stack | formation-front, anomaly-flow, and SM-content support | physical matter-state-law theorem |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_MATTER_STATE_CHIRALITY_DOMAIN_WALL_IMPACT_DISCRIMINATOR_2026-07-05.md` | verifier-backed K2 boundary for `#5012`/`#5014`/`#5017`/`#5018` chirality/domain-wall support | KS route theorem, elementary route theorem, parent bridge, HW1, carrier, R-eta, mass, alpha, or hydrogen |
 | approved primitives | minimal axioms, scale reference, kinetic isotropy, realized-state evaluation discipline | state-law selector, physical readout bridge, value, mass, alpha, or hydrogen |
 
 The primitive registry was checked. The approved primitive nodes are
@@ -151,7 +152,7 @@ PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED.
 | native `D` route | Treat spin-blind native `D` plus merger as forcing matter attachment. | ATTEMPTED. The matter-attachment note localizes this as not forced KS-free. |
 | KS route | Use Kawamoto-Smit/Grassmann reconstruction to supply the state law. | OPEN POSITIVE ROUTE. The KS surface is bounded support but still needs a retained KS-to-physical-state-law theorem. |
 | elementary state-law route | Prove directly that the matter state carries the physical spinor law. | OPEN POSITIVE ROUTE. Current surface records this as admitted-not-forced. |
-| chirality/domain-wall route | Treat `{epsilon,D}=0` or #5014/#5017/#5018 as state-law closure. | ATTEMPTED. They supply chirality/domain-wall support only. |
+| chirality/domain-wall route | Treat `{epsilon,D}=0` or #5012/#5014/#5017/#5018 as state-law closure. | ATTEMPTED. They supply chirality/domain-wall support only; the K2 matter-state impact discriminator records the nonclosure boundary. |
 | W4 route | Treat merged #5023/#5024 as state-law closure. | ATTEMPTED. They are audit/gate-readiness hygiene only. |
 | primitive route | Treat an approved primitive as a state-law selector. | ATTEMPTED. Registry notes supply no selector, readout bridge, state-selection rule, mass, alpha, or hydrogen. |
 
@@ -188,7 +189,7 @@ primitive shortcut, comparator, or hydrogen input is used implicitly.
 | per-site spin-half theorem | local module fact, not physical matter generator | physical matter generator/state law | yes |
 | CL3-to-CL31 extension | abstract algebra action, not per-site module transport | per-site matter-state law | yes |
 | KS/Grassmann/chirality notes | bounded route support | retained state-law bridge | yes |
-| #5014/#5017/#5018 and merged #5023/#5024 | adjacent support/hygiene | retained state-law bridge | yes |
+| #5012/#5014/#5017/#5018 and merged #5023/#5024 | adjacent support/hygiene | retained state-law bridge | yes |
 
 ### N5 - Rhetoric Audit
 
@@ -256,7 +257,7 @@ state-law impossibility claim is not shipped.
 - No derivation or ratification of `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED`.
 - No derivation of R-eta, `delta = 2/9`, physical electron mass,
   `alpha(0)`, or hydrogen.
-- No claim that #5014, #5017, #5018, #5023, or #5024 supplies the physical
+- No claim that #5012, #5014, #5017, #5018, #5023, or #5024 supplies the physical
   matter-state law bridge.
 - No new axiom, primitive, Tier-A admission, empirical import, or audit status
   change.

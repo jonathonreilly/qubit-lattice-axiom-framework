@@ -78,6 +78,7 @@ AUDIT_ACCEPTANCE
 | open `#5014` record-formation front domain wall | formation-front/domain-wall support | physical matter-state-law theorem |
 | open `#5017` domain-wall anomaly inflow spectral flow | anomaly-flow support | physical matter-state-law theorem |
 | open `#5018` domain-wall edge content vs SM chiral map | map with named gaps | physical matter-state-law theorem |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_MATTER_STATE_CHIRALITY_DOMAIN_WALL_IMPACT_DISCRIMINATOR_2026-07-05.md` | K2 matter-state impact boundary for `#5012`/`#5014`/`#5017`/`#5018` | KS route theorem, elementary route theorem, parent bridge, HW1, carrier, R-eta, mass, alpha, or hydrogen |
 | approved primitives | minimal axioms, scale, kinetic isotropy, realized-state evaluation discipline | state-law selector, physical readout, value, mass, alpha, hydrogen |
 
 The primitive registry was checked. The approved primitive nodes are
@@ -101,6 +102,7 @@ inputs.
 | `#5014` record-formation front is the domain wall | open, audit success | formation-front/domain-wall support only |
 | `#5017` domain-wall edge anomaly inflow via spectral flow | open, audit success | anomaly-flow support only |
 | `#5018` domain-wall edge content vs SM chiral fermions map | open, audit success | map with named gaps only |
+| K2 matter-state chirality/domain-wall impact boundary | open in `#5016` once pushed | verifier-backed support boundary only; no state-law theorem |
 | `#5016` zero-import hydrogen retained lane bundle | open, audit in progress | carries this current-surface no-go once pushed |
 
 ## What This Moves
@@ -132,7 +134,7 @@ PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED.
 | native `D` route | Treat native spin-blind `D` and merger as forcing matter attachment. | ATTEMPTED. The matter-attachment note says the attachment is not forced KS-free. |
 | KS route | Retain a KS-to-physical-state-law theorem. | OPEN POSITIVE ROUTE. Not present on the current surface. |
 | elementary state-law route | Retain a direct physical state-level rotation-law theorem. | OPEN POSITIVE ROUTE. Not present on the current surface. |
-| chirality/domain-wall route | Treat `{epsilon,D}=0`, #5014, #5017, or #5018 as state-law closure. | ATTEMPTED. They are support only. |
+| chirality/domain-wall route | Treat `{epsilon,D}=0`, #5012, #5014, #5017, or #5018 as state-law closure. | ATTEMPTED. They are support only. |
 | W4 route | Treat merged #5023/#5024 as bridge closure. | ATTEMPTED. They are hygiene/readiness only. |
 | primitive route | Treat approved primitives as bridge closure. | ATTEMPTED. Registry notes do not supply this theorem. |
 
@@ -165,7 +167,7 @@ hidden state-law theorem is imported.
 | SU2 merger note | operator-frame support | state-level law | yes |
 | CL3-to-CL31 note | abstract algebra action not per-site module transport | state-level per-site law | yes |
 | KS/Grassmann/chirality notes | bounded route support | retained bridge | yes |
-| #5014/#5017/#5018/#5023/#5024 | adjacent support/hygiene | retained bridge | yes |
+| #5012/#5014/#5017/#5018/#5023/#5024 | adjacent support/hygiene | retained bridge | yes |
 
 ### N5 - Rhetoric Audit
 
@@ -224,7 +226,7 @@ state-law impossibility claim is not shipped.
 - No derivation or ratification of `PHYSICAL_CARRIER_CONTEXT_RETAINED`.
 - No derivation of R-eta, `delta = 2/9`, physical electron mass,
   `alpha(0)`, or hydrogen.
-- No claim that #5014, #5017, #5018, #5023, or #5024 supplies the physical
+- No claim that #5012, #5014, #5017, #5018, #5023, or #5024 supplies the physical
   matter-state law bridge.
 - No new axiom, primitive, Tier-A admission, empirical import, or audit status
   change.

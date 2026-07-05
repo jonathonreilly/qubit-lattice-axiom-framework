@@ -266,6 +266,12 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   state-law bridge only; it does not supply `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`,
   the charged-lepton carrier theorem, carrier context, fixed-point readout,
   R-eta, K2, `m_e`, `alpha(0)`, or hydrogen.
+  The K2 matter-state chirality/domain-wall impact discriminator
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_MATTER_STATE_CHIRALITY_DOMAIN_WALL_IMPACT_DISCRIMINATOR_2026-07-05.md`
+  records open `#5012`/`#5014`/`#5017`/`#5018` as support context for the
+  physical matter-state law discussion while preserving the separate KS route
+  theorem, elementary route theorem, parent bridge, HW1, carrier, R-eta,
+  `m_e`, `alpha(0)`, and hydrogen gates.
   The elementary physical state-rotation law target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md`
   packages the direct non-KS route certificate under that bridge:
@@ -1798,6 +1804,7 @@ Koide electron readout, `m_e`, `alpha(0)`, or hydrogen.
                             | `#5017` domain-wall edge anomaly inflow via spectral flow | Open. It is chirality/anomaly-inflow science; it does not supply charged-lepton F/L/P/R, D17 weak-front normalization, Koide electron readout, `S_l`, `m_e`, `alpha(0)`, static-source NR Coulomb closure, or hydrogen. |
                             | `#5018` domain-wall edge content vs SM chiral fermions map | Open. It is chirality/domain-wall edge-content science; it does not supply charged-lepton F/L/P/R, D17 weak-front normalization, Koide electron readout, `S_l`, `m_e`, `alpha(0)`, static-source NR Coulomb closure, or hydrogen. |
                             | `#5017`/`#5018` chirality/domain-wall impact boundary | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_CHIRALITY_DOMAIN_WALL_PR5017_5018_IMPACT_DISCRIMINATOR_2026-07-05.md` records these as above-C3 chirality/domain-wall context; it does not derive the K3 physical electron species bridge, Koide electron readout, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
+                            | `#5012`/`#5014`/`#5017`/`#5018` K2 matter-state chirality/domain-wall impact boundary | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_MATTER_STATE_CHIRALITY_DOMAIN_WALL_IMPACT_DISCRIMINATOR_2026-07-05.md` records these as K2 physical matter-state support context; it does not derive the KS route theorem, elementary route theorem, parent matter-state bridge, HW1, carrier context, R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | Merged. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as Koide premise-hygiene and audit-readiness context for the `AC_phi_lambda` decomposition chain; it does not derive `AC_phi_lambda`, Koide native zero-section closure, physical electron species, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
                         | `#5020` Koide R-eta value-face registered-angle/exactness relocation | Merged. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as K2 value-face progress; exactness remains open; it does not derive `AC_phi_lambda`, `delta = 2/9`, Koide electron readout, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
                         | `#5022` delta-eta chain R-eta supplied-premise audit repair | Merged with audit success. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as K2 conditionality progress; it does not supply a retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`, `m_e`, `alpha(0)`, or hydrogen. |

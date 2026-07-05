@@ -505,6 +505,13 @@ open-PR surfaces do not supply it; it is state-law bridge support only, not
 carrier context, h-class, h-unit, R-eta, electron readout, physical electron
 mass, alpha input, or hydrogen.
 
+The K2 matter-state chirality/domain-wall impact discriminator
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_MATTER_STATE_CHIRALITY_DOMAIN_WALL_IMPACT_DISCRIMINATOR_2026-07-05.md`)
+records open `#5012`/`#5014`/`#5017`/`#5018` as support context for this
+state-law bridge discussion. It does not supply the KS route theorem, the
+elementary route theorem, the parent matter-state bridge, HW1, carrier context,
+R-eta, physical electron mass, alpha input, or hydrogen.
+
 The R-eta elementary physical state-rotation law target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md`),
 ratification decision packet

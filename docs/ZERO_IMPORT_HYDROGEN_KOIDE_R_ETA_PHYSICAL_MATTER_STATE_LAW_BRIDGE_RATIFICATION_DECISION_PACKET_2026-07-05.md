@@ -83,6 +83,7 @@ carrier context, R-eta, electron mass, alpha, or hydrogen.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the elementary route theorem |
 | merged `#5023` and merged `#5024` | W4/gate-readiness and audit-graph hygiene; no state-law theorem |
 | open `#5014`, `#5017`, and `#5018` | chirality/domain-wall support; no state-law theorem |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_MATTER_STATE_CHIRALITY_DOMAIN_WALL_IMPACT_DISCRIMINATOR_2026-07-05.md` | K2 boundary for `#5012`/`#5014`/`#5017`/`#5018` chirality/domain-wall support; no KS route theorem, elementary route theorem, or parent bridge |
 | approved primitives | no state-law selector, no readout bridge, no value/mass/alpha/hydrogen |
 
 ## No-Go Discipline Gate
@@ -99,7 +100,7 @@ does not ship a broad impossibility claim.
 | per-site spin route | Promote local `j=1/2` module to physical matter generator. | PARTIAL ONLY. The source note withholds that physical identification. |
 | KS route | Use Kawamoto-Smit reconstruction. | OPEN POSITIVE ROUTE. Needs retained KS-to-physical-state-law theorem. |
 | elementary route | Prove state-level physical spinor law directly. | OPEN POSITIVE ROUTE. Current surface calls it admitted-not-forced. |
-| chirality/domain-wall route | Use `{epsilon,D}=0` or #5014/#5017/#5018. | SUPPORT ONLY. No physical matter-state law. |
+| chirality/domain-wall route | Use `{epsilon,D}=0` or #5012/#5014/#5017/#5018. | SUPPORT ONLY. No physical matter-state law. |
 | W4 route | Use merged #5023/#5024. | SUPPORT ONLY. No physical matter-state law. |
 | primitive route | Use approved primitives as shortcut. | RULED OUT BY REGISTRY. No approved primitive supplies the route theorem. |
 

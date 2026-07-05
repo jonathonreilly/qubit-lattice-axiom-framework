@@ -14,6 +14,9 @@ ROOT = Path(__file__).resolve().parents[1]
 TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md"
 DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+SELECTOR_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md"
+SELECTOR_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md"
+SELECTOR_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 PARENT_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md"
 PARENT_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 PARENT_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
@@ -224,6 +227,9 @@ def main() -> None:
         TARGET,
         DECISION,
         CURRENT,
+        SELECTOR_TARGET,
+        SELECTOR_DECISION,
+        SELECTOR_CURRENT,
         PARENT_TARGET,
         PARENT_DECISION,
         PARENT_CURRENT,
@@ -272,6 +278,9 @@ def main() -> None:
         "FINITE_TRIVIAL_STATE_LIFT_COUNTERMODEL_CHECK",
         "FINITE_FAITHFUL_SPINOR_STATE_LAW_CHECK",
         "ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "NO_KS_ROUTE_THEOREM_INPUT",
         "NO_PHYSICAL_MATTER_STATE_BRIDGE_INPUT",
         "NO_HW1_OR_CARRIER_CLOSURE_INPUT",
@@ -355,6 +364,7 @@ def main() -> None:
     goal = read(GOAL)
     firewall = read(KOIDE_FIREWALL)
     parent_packet = "\n".join([read(PARENT_TARGET), read(PARENT_DECISION), read(PARENT_CURRENT)])
+    selector_packet = "\n".join([read(SELECTOR_TARGET), read(SELECTOR_DECISION), read(SELECTOR_CURRENT)])
     ks_child_packet = "\n".join([read(KS_CHILD_TARGET), read(KS_CHILD_DECISION), read(KS_CHILD_CURRENT)])
     matter_attachment = read(MATTER_ATTACHMENT)
     carrier_attachment = read(CARRIER_ATTACHMENT)
@@ -379,8 +389,23 @@ def main() -> None:
             and "ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED" in container,
         )
 
+    for label, container in [
+        ("goal packet", goal),
+        ("Koide firewall", firewall),
+        ("elementary route packet", packet),
+    ]:
+        audit.check(
+            f"{label} references elementary selector child lane",
+            SELECTOR_TARGET.name in container
+            and SELECTOR_DECISION.name in container
+            and SELECTOR_CURRENT.name in container
+            and "ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED" in container,
+        )
+
     audit.check("elementary packet references parent bridge target", PARENT_TARGET.name in packet)
     audit.check("elementary packet references sibling KS child target", KS_CHILD_TARGET.name in packet)
+    audit.check("selector child packet references elementary route target", TARGET.name in selector_packet)
+    audit.check("selector child packet references sibling KS child target", KS_CHILD_TARGET.name in selector_packet)
     audit.check("KS child packet keeps elementary route as sibling", "ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED" in ks_child_packet)
     audit.check("HW1 target still consumes parent bridge only", "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED" in read(HW1_TARGET))
 

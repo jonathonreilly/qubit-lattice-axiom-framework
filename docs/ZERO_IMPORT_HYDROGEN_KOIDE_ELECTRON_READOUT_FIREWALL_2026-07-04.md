@@ -385,6 +385,23 @@ state-law bridge after retention and does not supply the KS route theorem, HW1,
 the charged-lepton carrier theorem, carrier context, h-class, h-unit, R-eta,
 electron readout, physical electron mass, alpha input, or hydrogen.
 
+The R-eta elementary state-attachment selector target discriminator
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md`),
+ratification decision packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md`),
+and current-surface no-go
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
+package `ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED` as the direct child
+selector underneath the elementary route and make that a field-index spin-lift
+privilege owner/audit contract. Current retained, primitive, merged-PR, and
+open-PR surfaces do not supply it; it can feed only the elementary
+state-rotation route after retention and does not supply the KS route theorem,
+parent bridge, HW1, the charged-lepton carrier theorem, carrier context,
+h-class, h-unit, R-eta, electron readout, physical electron mass, alpha input,
+or hydrogen.
+This is the field-index spin-lift privilege owner/audit contract for the
+direct elementary selector lane.
+
 The R-eta KS-to-physical matter-state spinor-law target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md`),
 ratification decision packet

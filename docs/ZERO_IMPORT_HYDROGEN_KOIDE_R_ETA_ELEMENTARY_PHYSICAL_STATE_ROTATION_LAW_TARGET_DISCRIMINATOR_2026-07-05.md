@@ -28,6 +28,15 @@ bridge only after it is retained. It is not the KS route, not the parent bridge
 itself, not HW1, not carrier context, not R-eta, not electron mass, and not
 hydrogen.
 
+The elementary state-attachment selector child is packaged separately by
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md`,
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md`,
+and
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md`.
+Those packets can feed this route only after
+`ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED` is retained; they do not by
+themselves ratify `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED`.
+
 ## Retention Contract
 
 `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED` requires all of the
@@ -104,6 +113,9 @@ owner ratification, and audit acceptance.
 | `CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md` | refutes the spinor-module escape and keeps the state-law selector separate | direct elementary physical state law |
 | `CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md` | abstract Clifford extension support | per-site `C^2` physical state-law transport |
 | `QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md` | analogous action-faith boundary | rotation state-law selector |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md` | child selector target for `ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED` | accepted selector consequence or route theorem |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md` | child owner/audit decision shape for the direct selector | retained selector consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply of the child selector | elementary route theorem |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md` | parent bridge target that can consume this route if retained | this elementary route theorem itself |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | parent bridge owner/audit contract shape | elementary route retention is not accepted here |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the parent bridge | elementary route theorem |

@@ -70,6 +70,9 @@ Therefore the current surface does not close the target.
 | `CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md` | spinor-module escape no-go; no positive elementary selector |
 | `CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md` | abstract algebra extension; no per-site state-law transport |
 | `QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md` | analogous action-faith wall only |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md` | child selector target | retained selector or route theorem |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md` | child owner/audit decision shape | accepted selector consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply of the child selector | route theorem closure |
 | approved primitives | no elementary state-attachment selector, no physical matter-state bridge, no mass, no alpha, no hydrogen |
 | merged `#5027`, `#5026`, `#5024`, `#5023` | custody/readiness/hygiene only |
 | open `#5021`, `#5014`, `#5017`, `#5018` | primitive/chirality context only |
@@ -138,7 +141,7 @@ the faithful spinor law is false, or that the parent bridge cannot close.
 
 | Candidate path | Status | What it would close |
 |---|---|---|
-| direct elementary state-attachment selector theorem | open positive route | `ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED` |
+| direct elementary state-attachment selector theorem | open positive route, now packaged by `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md` | `ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED` |
 | owner/audit acceptance after that selector | open governance/audit route | `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED` |
 | sibling KS route theorem | packaged separately | parent bridge route, not this elementary route |
 | future primitive registry update | absent now | could supply a primitive only after explicit owner/review update |

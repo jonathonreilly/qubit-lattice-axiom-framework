@@ -21,13 +21,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 190 |
 | **retained_no_go** | 192 |
 | **retained_bounded** | 864 |
-| _retained_pending_chain_ | 5 |
+| _retained_pending_chain_ | 4 |
 | open_gate | 24 |
 | unaudited | 1934 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 25 |
+| ~~audited_conditional~~ | 26 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -60,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1240 |
-| `audited_conditional` | 25 |
+| `audited_clean` | 1239 |
+| `audited_conditional` | 26 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
@@ -84,7 +84,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 924 |
 | `leaf` | 1597 |
 
-- **Retained pending chain closure:** 5
+- **Retained pending chain closure:** 4
 - **Citation cycles detected:** 12
 
 ### Runner classification (static heuristic)
@@ -148,7 +148,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
-| `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1386,6 +1385,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `charged_lepton_koide_value_full_chain_of_custody_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -1615,18 +1615,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The claim closes as finite algebra and symbolic enumeration within the stated surface. It does not require or assert a physical-species bridge, full-dynamics complementation equivariance, or any registry/status change.
 - **rationale:** The runner actually enumerates the Boolean cube, the order-48 coordinate-permutation/bit-flip relabelings, the C3 orbit structure, and the listed triplet profiles, and it symbolically verifies the circulant determinant and orientation-odd readout identities. The load-bearing step is exact finite algebra rather than a definition substitution, external comparator, or tuned numerical match. The source note is scoped to support-only finite-surface content and expressly avoids the unclosed physical bridge and registry implications.
 - **auditor confidence:** high
-
-### `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11`
-
-- **Note:** [`ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md`](../../docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited only the AC_phi_lambda sub-admission (i) value-face reduction: under minimal_axioms, the approved realized_state_primitive, the supplied K/CPT orbit-indexing bridge, and retained Koide algebra/no-go anchors, the per-lane r/occupancy value is realized-state registration; the measure-side grain/dynamical realization and any derivation of r=1/2 remain outside scope.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:charged_lepton_koide_value_full_chain_of_custody_2026-06-02`)
-- **auditor:** `codex-cleanroom-row4-20260705`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** r is an already-defined state functional of the registered signed-root masses, varies across law-admissible realized states, and therefore passes the realized_state_primitive counterfactual test as registered data rather than derivation output.  _(class `A`)_
-- **chain closes:** True — Within the scoped value-face claim, the chain closes: retained algebra supplies r and the Q lever, retained no-gos supply law-freeness of the ratio, minimal_axioms supply no state-selecting rule slot, and the approved primitive classifies state-varying pointwise functionals as registered data. The runner also verifies the firewall and S8 survivor: both grain models remain viable, so no r=1/2 or measure-side realization is selected.
-- **rationale:** The completed live runner and cache agree at PASS=25 FAIL=0. The single D-class check is an explicitly labeled PDG comparator and is not used as an input to the reduction. The unaudited charged-lepton chain-of-custody note is contextual for naming what downstream value consumers cared about; the scoped proof rests on retained algebra/no-go anchors, the retained_bounded K/CPT supplied-context bridge, minimal_axioms, and the accepted realized_state_primitive. No hidden derivation of r=1/2, orbit-occupancy adoption, registry edit, or measure-side closure is present.
 
 ### `acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05`
 
@@ -3091,6 +3079,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The negative firewall closes: even granting the Q and Brannen support values, the data do not select a physical generation or tau-scale label. The note explicitly leaves Q source selection, selected-line endpoint/readout, and generation selection as residuals.
 - **rationale:** The runner verifies phase-erasure of Q, conditional status of the source and endpoint support, cyclic relabeling of the largest slot, and comparator-only use of PDG masses. That is sufficient for the no-go that Q plus Brannen phase support is not a standalone generation/tau-scale selector. It does not audit or retain native Q closure or delta/radian closure.
 - **auditor confidence:** high
+
+### `charged_lepton_koide_value_full_chain_of_custody_2026-06-02`
+
+- **Note:** [`CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`](../../docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded chain-of-custody claim that the charged-lepton Koide value Q=2/3 is reached from the listed L1-L10 structural links modulo the single Tier-A admitted input AC_phi_lambda, with no additional hidden carrier, readout, scale, or registry import.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-postw4-row5-seat1`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The note's load-bearing step is the asserted complete end-to-end custody chain: the structure is derived through L1-L10 and the value Q=2/3 is reached only modulo the single Tier-A admitted input AC_phi_lambda.  _(class `B`)_
+- **chain closes:** False — The chain does not close as a retained-grade bounded theorem because multiple direct, load-bearing custody links are not retained-grade in the current ledger. In particular L1 uses the unaudited per-site su(2) row, L4 is wired to an open-gate parent that explicitly remains conditional beyond the split momentum-type theorem, and L7 cites an unaudited finite spectral-asymmetry theorem.
+- **rationale:** Issue: the custody chain relies on non-retained direct dependencies for structural links L1, L4, and L7, while the runner only performs local algebraic sanity checks and hard-coded admitted-selection consequences. Why this blocks: a bounded capstone may honestly depend on the Tier-A AC_phi_lambda admission, but it cannot present the rest of the structure as retained-grade custody while load-bearing cited authorities are unaudited or open-gate. Repair target: audit or replace the per-site su(2) and finite spectral-asymmetry dependencies, and rewire L4 to a retained-grade narrow momentum-type theorem or audit the broader carrier parent after its physical-locus/readout gates close; also add an explicit runner check or boundary note for any custody link claimed as end-to-end verified but not checked, such as L2. Claim boundary until fixed: the note may be cited only as a conditional custody map showing algebraic consistency of Q=2/3 modulo AC_phi_lambda and pending dependency closure, not as a closed retained-bounded derivation chain.
+- **open / conditional deps cited:**
+  - `PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`
+  - `FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md`
+  - `AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md`
 
 ### `charged_lepton_op_local_source_selected_line_selector_no_go_note_2026-04-27`
 

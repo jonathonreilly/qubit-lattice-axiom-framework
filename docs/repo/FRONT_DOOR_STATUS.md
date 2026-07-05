@@ -36,8 +36,8 @@ Owner-approval history for every axiom/primitive change:
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
 | Unaudited rows | 1934 |
-| Retained-pending-chain rows | 5 |
-| Audited conditional rows | 25 |
+| Retained-pending-chain rows | 4 |
+| Audited conditional rows | 26 |
 | Audited renaming rows | 19 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 12 |
@@ -49,13 +49,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1971 |
+| Total pending rows | 1972 |
 | Ready rows | 184 |
 | Cycle-break targets | 12 |
 | Critical pending | 416 |
 | High pending | 289 |
 | Medium pending | 513 |
-| Leaf pending | 753 |
+| Leaf pending | 754 |
 
 Next ready rows by queue order:
 

@@ -1,0 +1,161 @@
+AC_phi_lambda R-eta angle-native frontier no-go verifier
+
+========================================================================================
+A. source and registry boundaries
+========================================================================================
+[PASS] exists: docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md
+[PASS] exists: docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+[PASS] exists: docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
+[PASS] exists: docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md
+[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] AC_phi_lambda remains the live Tier-A target
+[PASS] AC minimum decomposition still includes R-eta
+[PASS] note explicitly does not edit registry
+[PASS] note says R-eta is not retired
+[PASS] human registry names R-eta
+[PASS] KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md effective status
+[PASS] KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md effective status
+[PASS] BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md effective status
+[PASS] RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md effective status
+
+========================================================================================
+B. exact target arithmetic and off-locus status
+========================================================================================
+[PASS] L = 2/9
+[PASS] S_sum = 3L = 2/3
+[PASS] Phi target equals 3 delta target
+[PASS] target is positive and below pi
+[PASS] sin(2/3) is nonzero
+[PASS] cos(2/3) is not +1
+[PASS] cos(2/3) is not -1
+[PASS] numeric target is off real-holonomy locus
+
+========================================================================================
+C. periodic/torsion and canonical packaging checks
+========================================================================================
+[PASS] sympy marks pi irrational
+[PASS] 2/9 is rational
+[PASS] 2/3 is rational
+[PASS] nonzero rational times pi cannot equal 2/9
+[PASS] nonzero rational times pi cannot equal 2/3
+[PASS] radian no-go source mentions q*pi
+[PASS] radian no-go source mentions Type-B
+[PASS] canonical U(1) packaging 2*pi*L misses delta
+[PASS] canonical U(1) packaging 2*pi*L misses Phi
+[PASS] canonical U(1) packaging 2*pi*S misses Phi
+[PASS] C3 root angle 2*pi/3 is not 2/3
+[PASS] fixed-locus source carries L3(1,2)=2/9
+[PASS] fixed-locus source excludes physical readout
+
+========================================================================================
+D. homogeneous self-consistency/readout maps
+========================================================================================
+[PASS] homogeneous Phi=lambda*Phi with lambda=-5 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-4 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-3 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-2 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-1 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=0 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=2 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=3 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=4 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=5 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-5/2 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-2 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-3/2 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-1 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-1/2 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=0 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=1/2 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=3/2 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=2 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=5/2 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-5/3 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-4/3 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-1 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-2/3 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-1/3 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=0 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=1/3 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=2/3 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=4/3 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=5/3 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-5/4 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-1 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-3/4 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-1/2 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-1/4 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=0 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=1/4 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=1/2 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=3/4 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=5/4 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-1 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-4/5 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-3/5 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-2/5 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=-1/5 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=0 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=1/5 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=2/5 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=3/5 has no isolated target
+[PASS] homogeneous Phi=lambda*Phi with lambda=4/5 has no isolated target
+[PASS] lambda=1 leaves the whole line, not a value
+[PASS] no homogeneous coefficient isolated target
+[PASS] record/additivity sample clauses are rescale invariant
+[PASS] record source preserves delta rather than relaxing it
+[PASS] Brannen source carries delta as supplied dial
+
+========================================================================================
+E. inhomogeneous license classification
+========================================================================================
+[PASS] only alpha=1 hits Phi=alpha*S_sum in scanned zero-offset family
+[PASS] alpha=1 map consumes the fixed-locus source
+[PASS] note classifies Phi=S_sum as license target
+[PASS] remaining routes section names licensed angle-native theorem
+[PASS] remaining routes section names occurrence route
+
+========================================================================================
+F. note discipline and audit compatibility
+========================================================================================
+[PASS] Type header is no_go
+[PASS] Claim type header is no_go
+[PASS] scope boundary blocks retirement and registry claims
+[PASS] audit boundary present
+[PASS] primary runner link present
+[PASS] N1 gate present
+[PASS] N2 gate present
+[PASS] N3 gate present
+[PASS] N4 gate present
+[PASS] N5 gate present
+[PASS] N6 gate present
+[PASS] N7 gate present
+[PASS] N8 gate present
+[PASS] forbidden phrase absent: R-eta is derived
+[PASS] forbidden phrase absent: R-eta is refuted
+[PASS] forbidden phrase absent: R-eta is retired
+[PASS] forbidden phrase absent: AC_phi_lambda is retired
+[PASS] forbidden phrase absent: audited_clean
+[PASS] forbidden phrase absent: effective_status = retained
+[PASS] wall names are whitelisted
+[PASS] no PDG comparator used
+[PASS] expected PASS line is present
+
+========================================================================================
+G. note/source cross-checks
+========================================================================================
+[PASS] note carries phrase: periodic/torsion `q*pi` phase sources
+[PASS] note carries phrase: canonical `U(1)` packagings
+[PASS] note carries phrase: Homogeneous self-consistency/readout maps
+[PASS] note carries phrase: Restates the missing license
+[PASS] note carries phrase: future angle-native theorem is not ruled out
+[PASS] note carries phrase: No registry, axiom, primitive, audit verdict, or
+[PASS] markdown link inventory is controlled
+[PASS] note line count is bounded
+
+========================================================================================
+TOTAL: PASS=128 FAIL=0
+========================================================================================

@@ -74,6 +74,7 @@ needed.
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | conditional Brannen comparator at `delta = 2/9` | open gate, comparator only |
 | `CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md` | bounded theorem under explicit Tier-A admission | not zero-import retained `delta = 2/9` |
 | `KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md` | one orientation object for count and phase chirality | no magnitude, no realized handedness, no radian unit |
+| `#5022` audit repair for the delta-eta chain | R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | no retained R-eta derivation, exact theorem, or radian readout |
 | `#5020` Koide R-eta value-face PR | registered-angle value-face progress | exactness and radian readout remain open |
 | `#5021` primitive-retirement review draft | primitive-boundary meta review; no primitive retirement and no registry edit | no two-ninths/radian shortcut |
 
@@ -198,7 +199,7 @@ two-ninths/radian-readout target discriminator passes.
 - No derivation or ratification of `RADIAN_READOUT_LICENSE_RETAINED`.
 - No derivation or ratification of `FOLD_AND_BRANCH_DOMAIN_LOCK`.
 - No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.
-- No adoption or landing claim for PR `#5020` or PR `#5021`.
+- No adoption or landing claim for PR `#5020`, PR `#5021`, or PR `#5022`.
 - No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`, observed
   `m_e`, observed `alpha(0)`, or observed hydrogen as proof input.
 - No derivation of K1 occupancy/counting, K3 physical species bridge, K4

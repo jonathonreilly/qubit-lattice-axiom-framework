@@ -112,7 +112,7 @@ premise.
 | `CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md` | conditional under `AC_phi_lambda`; not zero-import retained K1 |
 | open `#4932` | blocks the updated-axiom/primitives shortcut for AC(i)'s measure-side binary |
 | open `#4991` | would move old occupancy atoms to owner-governed premise standing, not theorem closure |
-| open `#5019` | Koide `AC_phi_lambda` premise-hygiene context; no K1 derivation |
+| merged `#5019` | Koide `AC_phi_lambda` premise-hygiene context; no K1 derivation |
 | approved primitives | premise discipline only; no counting-measure selector |
 | Koide electron-readout firewall | K1/K2/K3/K4 separation; no mass closure |
 

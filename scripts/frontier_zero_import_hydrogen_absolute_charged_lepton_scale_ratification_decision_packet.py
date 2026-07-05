@@ -22,6 +22,7 @@ ROUTE_TRIAGE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_ROUTE_TRIAGE_202
 KOIDE_FIREWALL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md"
 WEAK_FRONT_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 WEAK_FRONT_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+D17_BLOCK_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 SOURCE_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_INTERFACE_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 EXACT_SOURCE_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 A3_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_RATIFICATION_DECISION_PACKET_2026-07-04.md"
@@ -141,6 +142,7 @@ def main() -> None:
         KOIDE_FIREWALL,
         WEAK_FRONT_DECISION,
         WEAK_FRONT_NO_GO,
+        D17_BLOCK_DECISION,
         SOURCE_DECISION,
         EXACT_SOURCE_NO_GO,
         A3_DECISION,
@@ -188,6 +190,13 @@ def main() -> None:
         "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_RATIFICATION_DECISION_PACKET_2026-07-05.md",
         "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "unsupplied upstream input",
+        "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "D17 block-normalization",
+        "D17_BLOCK_NORMALIZATION_TEXT_LOCK",
+        "D17_STATED_BLOCK_SCOPE_ACCEPTED",
+        "TWO_COMPONENT_UNIT_NORMALIZATION_CHECK",
+        "D17_ONLY_NO_SOURCE_SINGLETON_OR_A3_INPUT",
+        "NO_WEAK_COUPLING_OR_FRONT_BASE_INPUT",
         "WEAK_FRONT_BASE_TEXT_LOCK",
         "SU2_WEAK_COUPLING_CONTEXT_RETAINED",
         "CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED",
@@ -229,6 +238,10 @@ def main() -> None:
         "PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED",
         "ALPHA0_RETAINED",
         "STATIC_SOURCE_RYDBERG_RETAINED",
+        "`#5017` domain-wall edge anomaly inflow via spectral flow | open",
+        "`#5016` zero-import hydrogen retained lane bundle | open",
+        "`#5015` wave-collapse-block01 measurement-collapse gate | open draft",
+        "`#5014` record-formation front/domain-wall chirality | open",
         "`#5013` theta native positive-class adjudication | `SUCCESS`",
         "`#5012` chirality domain-wall free-field note | `SUCCESS`",
         "`#5007` Koide native zero-section route guard repair | `SUCCESS`",
@@ -293,6 +306,7 @@ def main() -> None:
     koide_firewall = read(KOIDE_FIREWALL)
     weak_front_decision = read(WEAK_FRONT_DECISION)
     weak_front_no_go = read(WEAK_FRONT_NO_GO)
+    d17_block_decision = read(D17_BLOCK_DECISION)
     source_decision = read(SOURCE_DECISION)
     exact_source_no_go = read(EXACT_SOURCE_NO_GO)
     a3_decision = read(A3_DECISION)
@@ -331,6 +345,8 @@ def main() -> None:
         "WEAK_FRONT_BASE_RETAINED" in weak_front_decision and "does not derive the A3 correction" in weak_front_decision,
     )
     audit.check("K4 packet references weak-front no-go", WEAK_FRONT_NO_GO.name in note and "unsupplied upstream input" in note)
+    audit.check("K4 packet references D17 block decision", D17_BLOCK_DECISION.name in note and "CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED" in note)
+    audit.check("D17 block decision remains below weak-front and K4", "CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED" in d17_block_decision and "does not ratify the weak-front base" in d17_block_decision)
     audit.check("weak-front no-go keeps base unsupplied", "current retained, primitive, and open-PR surfaces do not supply" in weak_front_no_go and "WEAK_FRONT_BASE_RETAINED" in weak_front_no_go)
     audit.check("lepton-scale probe carries front factorization", "y_scale := a_lepton" in lepton_scale and "g_2" in lepton_scale and "1/256" in lepton_scale)
     audit.check("source decision remains source-side only", "This is source-side only" in source_decision and "does not derive" in source_decision)
@@ -374,6 +390,10 @@ def main() -> None:
 
     section("Open PR and non-claim boundaries")
     latest_pr_markers = [
+        "`#5017` domain-wall edge anomaly inflow via spectral flow | open",
+        "`#5016` zero-import hydrogen retained lane bundle | open",
+        "`#5015` wave-collapse-block01 measurement-collapse gate | open draft",
+        "`#5014` record-formation front/domain-wall chirality | open",
         "`#5013` theta native positive-class adjudication | `SUCCESS`",
         "`#5012` chirality domain-wall free-field note | `SUCCESS`",
         "`#5011` eta twisted walk family runner | `SUCCESS`",

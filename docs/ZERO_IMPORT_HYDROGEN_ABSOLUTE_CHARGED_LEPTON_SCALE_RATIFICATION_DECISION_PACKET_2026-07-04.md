@@ -156,6 +156,19 @@ OWNER_RATIFICATION, and AUDIT_ACCEPTANCE. If accepted, it supplies only the
 uncorrected `F_0 = g_2 * (1/sqrt(2))` base front; source singleton, A3
 matching, Koide/electron readout, `alpha(0)`, and hydrogen remain downstream.
 
+The D17 block-normalization decision packet
+`ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+sits one level below the weak-front-base packet. It packages
+`CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED` only through
+D17_BLOCK_NORMALIZATION_TEXT_LOCK, D17_STATED_BLOCK_SCOPE_ACCEPTED,
+TWO_COMPONENT_UNIT_NORMALIZATION_CHECK, CHARGED_LEPTON_SCOPE_LOCK,
+D17_ONLY_NO_SOURCE_SINGLETON_OR_A3_INPUT,
+NO_WEAK_COUPLING_OR_FRONT_BASE_INPUT, NO_MASS_OR_COMPARATOR_PROOF_INPUT,
+NO_NEW_PRIMITIVE_OR_AXIOM, OWNER_RATIFICATION, and AUDIT_ACCEPTANCE. It does
+not supply `SU2_WEAK_COUPLING_CONTEXT_RETAINED`, `WEAK_FRONT_BASE_RETAINED`,
+`EXACT_SOURCE_SINGLETON_RETAINED`, `A3_PRECISION_PLACEMENT_RETAINED`, or
+`ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED`.
+
 The weak-front-base current-surface no-go
 `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_CURRENT_SURFACE_NO_GO_2026-07-05.md`
 records that current retained, primitive, and open-PR surfaces do not supply
@@ -189,10 +202,16 @@ an unsupplied upstream input.
 ## Current Open PR Alignment
 
 Open PRs were refreshed on 2026-07-04 local time / 2026-07-05 UTC before this
-packet was written.
+packet was written and refreshed again on 2026-07-05 UTC before adding the
+D17 block-normalization handoff. Opened and lane-relevant is the queue signal;
+clean/green/check state is review metadata and not a proof input.
 
 | PR | state at refresh | effect on this K4 decision packet |
 |---|---:|---|
+| `#5017` domain-wall edge anomaly inflow via spectral flow | open | chirality/anomaly-inflow work; no charged-lepton scale assembly |
+| `#5016` zero-import hydrogen retained lane bundle | open | carries this K4 and D17 handoff work |
+| `#5015` wave-collapse-block01 measurement-collapse gate | open draft | measurement-collapse context; no K4 scale assembly |
+| `#5014` record-formation front/domain-wall chirality | open | chirality/domain-wall context; no K4 scale assembly |
 | `#5013` theta native positive-class adjudication | `SUCCESS` | theta gauge-side work; no charged-lepton scale assembly |
 | `#5012` chirality domain-wall free-field note | `SUCCESS` | adjacent chirality science; no K4 scale assembly |
 | `#5011` eta twisted walk family runner | `SUCCESS` | runner stabilization; no K4 scale assembly |
@@ -208,6 +227,7 @@ inputs here.
 | source | supplies | boundary here |
 |---|---|---|
 | `LEPTON_SCALE_FRONTIER_PROBE_2026-06-05.md` | factorization `y_scale = g_2 * (1/sqrt(2)) * S_l` and isolation of `1/256` | identifies K4 components, does not derive `1/256` or A3 |
+| `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | conditional handoff for `CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED` | no weak-coupling context, weak-front base, exact source singleton, A3 placement, K4 scale assembly, or electron mass |
 | `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | conditional weak-front-base handoff | no exact source singleton, A3 correction, scale assembly, or electron mass |
 | `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for weak-front base | retained weak-front base |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_INTERFACE_RATIFICATION_DECISION_PACKET_2026-07-04.md` | source-side decision that can conditionally yield exact `S_l = 1/256` | source singleton only, not A3 or electron readout |

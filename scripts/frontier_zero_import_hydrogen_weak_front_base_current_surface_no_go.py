@@ -21,6 +21,7 @@ NOTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_CURRENT_SURFACE_NO_
 GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 WEAK_FRONT_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 K4_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_RATIFICATION_DECISION_PACKET_2026-07-04.md"
+D17_BLOCK_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 A3_P2 = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_WEAK_FRONT_THRESHOLD_TARGET_DISCRIMINATOR_2026-07-04.md"
 P2_FRONT_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 LEPTON_SCALE = ROOT / "docs" / "LEPTON_SCALE_FRONTIER_PROBE_2026-06-05.md"
@@ -129,6 +130,7 @@ def main() -> None:
         GOAL,
         WEAK_FRONT_DECISION,
         K4_PACKET,
+        D17_BLOCK_DECISION,
         A3_P2,
         P2_FRONT_NO_GO,
         LEPTON_SCALE,
@@ -171,6 +173,13 @@ def main() -> None:
         "NO_NEW_PRIMITIVE_OR_AXIOM",
         "OWNER_RATIFICATION",
         "AUDIT_ACCEPTANCE",
+        "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "positive import-retirement route",
+        "D17_BLOCK_NORMALIZATION_TEXT_LOCK",
+        "D17_STATED_BLOCK_SCOPE_ACCEPTED",
+        "TWO_COMPONENT_UNIT_NORMALIZATION_CHECK",
+        "D17_ONLY_NO_SOURCE_SINGLETON_OR_A3_INPUT",
+        "NO_WEAK_COUPLING_OR_FRONT_BASE_INPUT",
         "F_0 = g_2 * (1/sqrt(2))",
         "D17 two-component block",
         "source singleton held separate",
@@ -184,6 +193,10 @@ def main() -> None:
         "a3_correction_primitive",
         "charged_lepton_scale_primitive",
         "electron_mass_primitive",
+        "`#5017` domain-wall edge anomaly inflow via spectral flow | open",
+        "`#5016` zero-import hydrogen retained lane bundle | open",
+        "`#5015` wave-collapse-block01 measurement-collapse gate | open draft",
+        "`#5014` record-formation front/domain-wall chirality | open",
         "`#5013` theta native positive-class adjudication | `CLEAN` / `SUCCESS`",
         "`#5012` chirality domain-wall free-field note | `CLEAN` / `SUCCESS`",
         "`#5011` eta twisted walk family runner | `CLEAN` / `SUCCESS`",
@@ -240,6 +253,7 @@ def main() -> None:
     goal = read(GOAL)
     weak_front_decision = read(WEAK_FRONT_DECISION)
     k4_packet = read(K4_PACKET)
+    d17_block_decision = read(D17_BLOCK_DECISION)
     a3_p2 = read(A3_P2)
     p2_front_no_go = read(P2_FRONT_NO_GO)
     lepton_scale = read(LEPTON_SCALE)
@@ -265,6 +279,8 @@ def main() -> None:
     audit.check("goal packet references weak-front no-go", NOTE.name in goal)
     audit.check("weak-front decision references weak-front no-go", NOTE.name in weak_front_decision)
     audit.check("K4 packet references weak-front no-go", NOTE.name in k4_packet)
+    audit.check("weak-front no-go references D17 block decision", D17_BLOCK_DECISION.name in note and "positive import-retirement route" in note)
+    audit.check("D17 block decision references weak-front decision", WEAK_FRONT_DECISION.name in d17_block_decision and "CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED" in d17_block_decision)
     audit.check("weak-front decision remains support-only", "does not ratify the weak-front base" in weak_front_decision)
     audit.check("K4 consumes weak-front base", "WEAK_FRONT_BASE_RETAINED" in k4_packet and "ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED" in k4_packet)
     audit.check("A3 P2 target remains corrected-front target", "F_phys = C_A3 * g_2 * (1/sqrt(2))" in a3_p2 and "does not derive" in a3_p2)
@@ -307,6 +323,10 @@ def main() -> None:
 
     section("Open PR and non-claim boundaries")
     latest_pr_markers = [
+        "`#5017` domain-wall edge anomaly inflow via spectral flow | open",
+        "`#5016` zero-import hydrogen retained lane bundle | open",
+        "`#5015` wave-collapse-block01 measurement-collapse gate | open draft",
+        "`#5014` record-formation front/domain-wall chirality | open",
         "`#5013` theta native positive-class adjudication | `CLEAN` / `SUCCESS`",
         "`#5012` chirality domain-wall free-field note | `CLEAN` / `SUCCESS`",
         "`#5011` eta twisted walk family runner | `CLEAN` / `SUCCESS`",

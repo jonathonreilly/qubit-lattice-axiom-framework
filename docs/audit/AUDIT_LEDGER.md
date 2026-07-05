@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 189 |
 | **retained_no_go** | 191 |
-| **retained_bounded** | 859 |
+| **retained_bounded** | 860 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1941 |
+| unaudited | 1940 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1232 |
+| `audited_clean` | 1233 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2279 |
+| `unaudited` | 2278 |
 
 | claim_type | count |
 |---|---:|
@@ -729,6 +729,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_native_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_octahedral_overconstrains_value_bit_narrow_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_order_one_circulant_diagnostic_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_orientation_blind_count_b_field_gate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9964,6 +9965,18 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The restricted packet gives the full finite-group action and runner source, and the core statements follow from standard linear algebra for signed permutations: diagonal sign flips kill off-diagonal invariant form entries and permutations equalize diagonal entries, while the commutant is scalar. This proves the scoped O_h-carrier obstruction without importing an external physical identification.
 - **rationale:** The runner is not a print-only or tuned-value check: it explicitly constructs O_h and C_3, averages forms/operators over the group, verifies invariant dimensions, and checks the projector and commutant claims. Independent formula inventory agrees with the load-bearing identities: |O_h|=2^3*3!=48, the C_3 symmetric-form space is span{I,J-I}, O_h-invariant forms are lambda I, the O_h average of vv^T/||v||^2 is I/3, and scalar H anticommutes with Gamma only at H=0. The no-go is properly scoped and leaves C_3-level or other split-preserving routes open, so it is a closed obstruction only to full O_h equivariance on R^3.
 - **auditor confidence:** high
+
+### `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09`
+
+- **Note:** [`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](../../docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded relative independence claim only: the current checked Record/Koide bookkeeping surface admits both sector-slot and orbit-slot occupancy models with exact doublet-weight ratio 2, so it does not fix the occupancy rule; the orbit-occupancy paragraph is audited only as a proposed premise with non-input support, not as adopted or derived content.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cleanroom-row3-20260705`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Both consistent + the live axiom-surface non-supply boundary => the occupancy rule is not supplied by the current checked premise surface.  _(class `A`)_
+- **chain closes:** True — The bounded independence claim closes from the restricted packet: the current axiom and realized-state primitive supply the non-supply boundary, the K/CPT bridge supplies the orbit-indexed readout context, and the runner exhibits two constraint-satisfying models with exact weights 2pi/g and pi/g. This does not prove or consume orbit-occupancy; it only leaves that choice as an explicit proposal.
+- **rationale:** The runner completes with PASS=34, FAIL=0 and computes the exact model weights, occupancy factor, r/Q cell consequences, and orientation guard rather than selecting the orbit horn as a premise. The one D-class PDG comparator is explicitly labeled non-input support for the proposal and is not load-bearing on independence. The clean verdict is therefore limited to independence-by-exhibition plus proposal-scope discipline, not to adoption of orbit-occupancy, a derivation of r=1/2, or a mass prediction. Residual risk is only that future larger premise surfaces could derive an occupancy rule, which the note explicitly leaves open.
 
 ### `koide_order_one_circulant_diagnostic_note_2026-05-29`
 

@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 421,
-    "high": 288,
+    "high": 287,
     "leaf": 754,
     "medium": 515
   },
@@ -12593,33 +12593,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
-        "minimal_axioms",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "realized_state_primitive"
-      ],
-      "direct_in_degree": 9,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.085,
-      "note_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py",
-      "transitive_descendants": 23
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -21448,6 +21421,60 @@
       "ready": true,
       "runner_path": "scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py",
       "transitive_descendants": 8
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "flavor_record_readout_form_not_weight_2026-06-02",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/flavor_occupancy_boundary_checks_2026_06_13.py"
+      ],
+      "load_bearing_score": 4.17,
+      "note_path": "docs/FLAVOR_RECORD_READOUT_FORM_NOT_WEIGHT_2026-06-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/flavor_record_readout_form_not_weight_2026_06_02.py",
+      "transitive_descendants": 8
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "flavor_native_action_predicts_q1_2026-06-02",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/flavor_occupancy_boundary_checks_2026_06_13.py"
+      ],
+      "load_bearing_score": 3.5,
+      "note_path": "docs/FLAVOR_NATIVE_ACTION_PREDICTS_Q1_2026-06-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/flavor_native_action_predicts_q1_2026_06_02.py",
+      "transitive_descendants": 7
     },
     {
       "audit_independence_required": "any_non_self",
@@ -31546,33 +31573,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "flavor_record_readout_form_not_weight_2026-06-02",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/flavor_occupancy_boundary_checks_2026_06_13.py"
-      ],
-      "load_bearing_score": 4.17,
-      "note_path": "docs/FLAVOR_RECORD_READOUT_FORM_NOT_WEIGHT_2026-06-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/flavor_record_readout_form_not_weight_2026_06_02.py",
-      "transitive_descendants": 8
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "patched_stationary_system_pl_s3_theorem_note_2026-05-03",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -32019,33 +32019,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_tier_a_source_action_top_premise_closure.py",
-      "transitive_descendants": 7
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "flavor_native_action_predicts_q1_2026-06-02",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/flavor_occupancy_boundary_checks_2026_06_13.py"
-      ],
-      "load_bearing_score": 3.5,
-      "note_path": "docs/FLAVOR_NATIVE_ACTION_PREDICTS_Q1_2026-06-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/flavor_native_action_predicts_q1_2026_06_02.py",
       "transitive_descendants": 7
     },
     {
@@ -36851,6 +36824,31 @@
     },
     {
       "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/KOIDE_OO_RD_PREMISE_RELATION_ON_CURRENT_SURFACE_NARROW_THEOREM_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_oo_rd_premise_relation_2026_06_12.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "poisson_self_field_supplied_branch_core_bounded_note_2026-06-18",
@@ -37457,6 +37455,33 @@
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_gauge_rep_channel_cannot_source_spread_2026_06_15.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "flavor_hw_clifford_does_not_constrain_r_2026-06-02",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/flavor_occupancy_boundary_checks_2026_06_13.py"
+      ],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/FLAVOR_HW_CLIFFORD_DOES_NOT_CONSTRAIN_R_2026-06-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/flavor_hw_clifford_does_not_constrain_r_2026_06_02.py",
       "transitive_descendants": 0
     },
     {
@@ -41706,31 +41731,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/KOIDE_OO_RD_PREMISE_RELATION_ON_CURRENT_SURFACE_NARROW_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_koide_oo_rd_premise_relation_2026_06_12.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_oplocality_brannen_plancherel_callan_harvey_honest_residual_composition_note_2026-05-25",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -45870,33 +45870,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_flavor_handedness_rk_even_arrow_insufficient.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "flavor_hw_clifford_does_not_constrain_r_2026-06-02",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/flavor_occupancy_boundary_checks_2026_06_13.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FLAVOR_HW_CLIFFORD_DOES_NOT_CONSTRAIN_R_2026-06-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/flavor_hw_clifford_does_not_constrain_r_2026_06_02.py",
       "transitive_descendants": 0
     },
     {
@@ -58182,6 +58155,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 173,
-  "total_pending": 1978
+  "ready_count": 176,
+  "total_pending": 1977
 }

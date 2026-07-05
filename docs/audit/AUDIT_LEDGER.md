@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 193 |
-| **retained_bounded** | 874 |
+| **retained_bounded** | 875 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1932 |
+| unaudited | 1931 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 12 |
-| `audited_clean` | 1250 |
+| `audited_clean` | 1251 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2270 |
+| `unaudited` | 2269 |
 
 | claim_type | count |
 |---|---:|
@@ -112,7 +112,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1268 | 43.31 | `unaudited` | unaudited |
 | 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1005 | 41.97 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1507 | 41.56 | `audited_clean` | **retained** |
-| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 999 | 39.97 | `unaudited` | unaudited |
+| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 999 | 40.47 | `unaudited` | unaudited |
 | 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 300 | 39.23 | `unaudited` | unaudited |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 840 | 38.22 | `audited_clean` | **retained_no_go** |
 | 16 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 293 | 37.70 | `unaudited` | unaudited |
@@ -151,6 +151,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1652,6 +1653,18 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On B > 0, a=e1/3, B=sqrt(e1^2-3e2)/3, cos(3 delta)=(e3-a^3+3aB^2)/(2B^3), and Phi=(1/3) arccos(cos(3 delta)); therefore Phi is a single-valued functional of the unordered multiset, so the realized-state primitive treats a realized Phi value as registered data rather than a law-selected derivation output.  _(class `A`)_
 - **chain closes:** True — The runner derives the symmetric functions and folded-angle inversion from the constructed spectrum, verifies boundary degeneracy and multiple formal Phi values, and the one-hop dependencies supply retained-bounded form/orbit/readout discipline, retained-bounded 2/9 local density, retained no-go unit discipline, and accepted meta realized-state/axiom premises. The chain closes only for this bounded relocation theorem; it does not derive an interior Phi value, the charged-lepton physical carrier, or exactness to 2/9.
 - **rationale:** The load-bearing bridge is exact algebra over the formal unordered signed-root multiset plus the realized-state primitive's registration rule, not a definition of Phi=2/9 or a tuned PDG match. The runner does not hard-code the theorem value: it constructs multiple Phi values, recomputes the current PASS=27 output, and treats Phi_PDG and the 7.409267493568850e-06 gap as an unthresholded labeled comparator. A hostile specialist could reject downstream carrier-readout or exactness claims, but those are explicitly outside the audited scope and remain open boundaries.
+
+### `acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18`
+
+- **Note:** [`ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md`](../../docs/ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-context theorem that the supplied three-sector AC_phi_lambda Hermitian circulant slot model has the Record-registrable algebraic structure used by the parent R-eta narrowing, while leaving physical charged-lepton carrier realization and A_R-eta value admission outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-row3-20260705`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Then the supplied context satisfies the Record-registrability algebra needed by the parent R-eta narrowing.  _(class `A`)_
+- **chain closes:** None — The chain closes for the supplied finite-context registrability bridge because the needed projectors, additivity, K/CPT orbit action, symmetric-function readout, complement equivalence, and realized-record assignment rigidity are either direct finite algebra in the note/runner or inherited from retained-bounded/meta direct dependencies. It does not close the physical charged-lepton carrier/context realization, chirality gate, or A_R-eta value, all of which the note excludes from scope.
+- **rationale:** The audited claim is explicitly bounded to the supplied finite circulant context, not to physical carrier realization or the downstream R-eta value. Within that scope the source note plus retained/meta direct dependencies close by finite algebra: Fourier projectors give central sectors, disjoint-sector scalar additivity is well-defined, K/CPT conjugates the sectors, symmetric readout data are K-even, the orientation line is K-odd, and the hw-complement/species-registration facts used here are rechecked on the finite model. The primary runner completed successfully with TOTAL: PASS=35 FAIL=0 and checks the load-bearing symbolic identities rather than a fitted comparator. Residual downstream parent promotion remains outside this audit boundary.
 
 ### `acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11`
 

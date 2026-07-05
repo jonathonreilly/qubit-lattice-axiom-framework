@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 415,
     "high": 283,
-    "leaf": 760,
+    "leaf": 759,
     "medium": 513
   },
   "cycle_break_target_count": 10,
@@ -296,10 +296,10 @@
         "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
         "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26"
       ],
-      "direct_in_degree": 54,
+      "direct_in_degree": 55,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 39.966,
+      "load_bearing_score": 40.466,
       "note_path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
       "queue_reason": "unaudited",
       "ready": true,
@@ -36133,34 +36133,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "realized_state_primitive",
-        "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
-        "acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12",
-        "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_acphilambda_r_eta_w2_registrability_context_bridge_2026_06_18.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "c2_w_supplier_reading_fork_fixed_point_unidentifiability_bounded_note_2026-07-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -36983,6 +36955,36 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/acphilambda_r_eta_occurrence_axiom_hygiene_no_go_2026_07_04.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
+        "acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18",
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "minimal_axioms",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+        "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
+        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py",
       "transitive_descendants": 0
     },
     {
@@ -43543,36 +43545,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/acphilambda_projective_equivariance_k_odd_trace_2026_07_02.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
-        "acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18",
-        "admitted_input_registry_tier_a_note_2026-05-23",
-        "minimal_axioms",
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-        "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
-        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py",
       "transitive_descendants": 0
     },
     {
@@ -57763,5 +57735,5 @@
     }
   ],
   "ready_count": 208,
-  "total_pending": 1971
+  "total_pending": 1970
 }

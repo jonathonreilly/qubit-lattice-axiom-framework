@@ -79,6 +79,15 @@ groups those direct support rows under the parent contract for review
 compression only. It does not supply `STATIC_SOURCE_NR_COULOMB_LIMIT_RETAINED`
 or `RETAINED_STATIC_SOURCE_NR_COULOMB_LIMIT`.
 
+The static-source NR Coulomb three-gate target bundle
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_THREE_GATE_TARGET_BUNDLE_2026-07-05.md`
+packages the unresolved content gates beneath the parent contract:
+`STATIC_SOURCE_LINEAR_RESPONSE_READOUT_RATIFIED`,
+`ONE_BODY_NR_PHYSICAL_UNIT_LIMIT_RATIFIED`, and
+`HARTREE_SCALE_MAPPING_RATIFIED`. It records the next positive target surface;
+it does not ratify any child gate and does not supply the parent retained
+handoff.
+
 ## Target Arithmetic
 
 The structural atomic target is:
@@ -115,6 +124,7 @@ exclusion, owner ratification, and audit acceptance.
 | surface | supplies | does not supply |
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_LIMIT_RATIFICATION_DECISION_PACKET_2026-07-04.md` | eleven-input owner/audit handoff | current retained consequence |
+| `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_THREE_GATE_TARGET_BUNDLE_2026-07-05.md` | shared target for readout, one-body NR, and Hartree mapping child gates | child-gate ratification or parent retained consequence |
 | `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_CLOSURE_DISCRIMINATOR_2026-07-04.md` | downstream Rydberg predicate | NR Coulomb limit derivation |
 | `ATOMIC_LANE2_PHYSICAL_UNIT_LIMIT_BOUNDARY_NOTE_2026-04-29.md` | proof that `1/n^2` shape does not fix eV scale | physical-unit closure |
 | `HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md` | scalar operator and kernel dependency narrowing | absolute-eV prediction |

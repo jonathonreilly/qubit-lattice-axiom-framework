@@ -151,6 +151,14 @@ exclusion, no-new-primitive guard, owner, and audit. It does not supply
 `STATIC_SOURCE_NR_COULOMB_LIMIT_RETAINED` or
 `RETAINED_STATIC_SOURCE_NR_COULOMB_LIMIT`.
 
+The static-source NR Coulomb three-gate target bundle
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_THREE_GATE_TARGET_BUNDLE_2026-07-05.md`
+is the next review layer beneath this parent: it groups
+`STATIC_SOURCE_LINEAR_RESPONSE_READOUT_RATIFIED`,
+`ONE_BODY_NR_PHYSICAL_UNIT_LIMIT_RATIFIED`, and
+`HARTREE_SCALE_MAPPING_RATIFIED` as sibling content gates. It does not accept
+any of those gates and does not change the parent owner/audit contract.
+
 ## Finite Target Algebra
 
 The dimensionless one-body Coulomb problem has shape:

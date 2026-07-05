@@ -71,6 +71,7 @@ that acceptance.
 | --- | --- | --- | --- |
 | SNR.0 | `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_LIMIT_RATIFICATION_DECISION_PACKET_2026-07-04.md` | parent eleven-input handoff | no current retained consequence |
 | SNR.0 no-go | `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface boundary | current retained, primitive, and open-PR surfaces do not supply the handoff |
+| SNR.0 child bundle | `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_THREE_GATE_TARGET_BUNDLE_2026-07-05.md` | bundles the three unresolved sibling content gates: readout, one-body NR physical-unit reduction, and Hartree mapping | review target only; no ratification of any child gate |
 | SNR.1 | `HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md` | scalar lattice operator and Coulomb-kernel dependency narrowing | repair/support only; no absolute-eV prediction |
 | SNR.2 | `LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md` | framework-local `Z^3` Green-kernel normalization `G(r) -> 1/(4 pi |r|)` | kernel coefficient only; no one-body NR physical-unit theorem |
 | SNR.3 | `STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md` | conditional `V(r) -> -C alpha/r` static-source readout bridge | accepted-premise/bounded bridge; P1/readout not retained here |
@@ -182,7 +183,10 @@ registered.
 
 This packet moves review distance, not retained physics distance. After this
 packet, the static-source NR Coulomb blocker is easier to review as one
-eleven-input assembly surface, but the hard gates remain:
+eleven-input assembly surface. The three-gate target bundle
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_THREE_GATE_TARGET_BUNDLE_2026-07-05.md`
+now makes the unresolved content gates reviewable together, but the hard gates
+remain:
 
 1. Static-source readout ratification:
    `STATIC_SOURCE_LINEAR_RESPONSE_READOUT_RATIFIED`.

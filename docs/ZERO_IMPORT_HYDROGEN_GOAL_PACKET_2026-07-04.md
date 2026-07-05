@@ -1340,6 +1340,14 @@ static-source readout, one-body NR physical-unit reduction, Hartree mapping,
 atomic harness, comparator exclusion, no-new-primitive guard, owner, and audit.
 It does not supply `STATIC_SOURCE_NR_COULOMB_LIMIT_RETAINED`,
 `RETAINED_STATIC_SOURCE_NR_COULOMB_LIMIT`, static-source Rydberg, or hydrogen.
+The static-source NR Coulomb three-gate target bundle
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_THREE_GATE_TARGET_BUNDLE_2026-07-05.md`
+is the next layer down: it bundles the three unresolved sibling content gates
+`STATIC_SOURCE_LINEAR_RESPONSE_READOUT_RATIFIED`,
+`ONE_BODY_NR_PHYSICAL_UNIT_LIMIT_RATIFIED`, and
+`HARTREE_SCALE_MAPPING_RATIFIED` as a shared review target. It does not ratify
+any of those gates, does not supply the parent static-source NR Coulomb limit,
+and does not promote static-source Rydberg or hydrogen.
 The static-source Rydberg assembly ladder review packet
 `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
 is review compression only. It groups the final six static-source inputs:

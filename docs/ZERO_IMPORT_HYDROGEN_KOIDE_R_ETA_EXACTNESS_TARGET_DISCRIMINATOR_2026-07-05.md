@@ -62,6 +62,13 @@ The clauses mean:
 
 No proper subset of those ten inputs supplies K2 exactness.
 
+The two-ninths/radian-readout target discriminator
+`ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages the sub-handoff `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
+If ratified, it supplies the exact `2/9` theorem, radian-readout license,
+and fold/branch domain-lock inputs for this K2 target, but not full K2
+exactness by itself.
+
 ## Dependency Boundary
 
 | object | if this target is accepted | still not supplied |
@@ -148,6 +155,7 @@ K2 exactness is a named ten-input target after #5020, not a retained result.
 |---|---|---|---|
 | `#5020` body | value-face registration and exactness split | value-face input only | yes |
 | #5020 impact discriminator | hydrogen-facing K2 boundary | names exactness residual | yes |
+| two-ninths/radian-readout target | K2 subgate for exact value, radian license, and domain lock | subtarget only | yes |
 | Koide electron-readout firewall | K1/K2/K3/K4 separation | K2 target only | yes |
 | physical electron mass packet | downstream mass composition | guard only | yes |
 | primitive registry notes | primitive boundary | guard only | yes |

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verifier for the Koide R-eta exactness current-surface no-go."""
+"""Verifier for the Koide two-ninths radian-readout target discriminator."""
 
 from __future__ import annotations
 
@@ -9,16 +9,18 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-NOTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+NOTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md"
 GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 KOIDE_FIREWALL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md"
-EXACTNESS_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md"
+K2_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md"
+K2_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 PR5020_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md"
-TWO_NINTHS_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md"
-PR5019_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md"
-PHYSICAL_ELECTRON = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md"
+FLAVOR_TWO_NINTHS = ROOT / "docs" / "FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md"
+NATIVE_RADIAN_SEPARATION = ROOT / "docs" / "KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md"
+A1_RADIAN_AUDIT = ROOT / "docs" / "KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md"
 BRANNEN_OPEN_GATE = ROOT / "docs" / "LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md"
 TIER_A_BOUNDED = ROOT / "docs" / "CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md"
+ORIENTATION_Z2 = ROOT / "docs" / "KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md"
 PRIMITIVE_REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
 TIER_A_REGISTRY = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
 MINIMAL = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
@@ -26,6 +28,18 @@ SCALE = ROOT / "docs" / "SCALE_REFERENCE_PRIMITIVE_NOTE.md"
 KINETIC = ROOT / "docs" / "KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
 REALIZED = ROOT / "docs" / "REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
 
+
+TWO_NINTHS_SUBGATE_INPUTS = {
+    "TWO_NINTHS_READOUT_TEXT_LOCK",
+    "FINITE_TWO_NINTHS_DENSITY_CONTEXT_ACCEPTED",
+    "DISTINGUISHED_TWO_NINTHS_THEOREM_RETAINED",
+    "RADIAN_READOUT_LICENSE_RETAINED",
+    "FOLD_AND_BRANCH_DOMAIN_LOCK",
+    "NO_COMPARATOR_PROOF_INPUT",
+    "NO_NEW_PRIMITIVE_OR_AXIOM",
+    "OWNER_RATIFICATION",
+    "AUDIT_ACCEPTANCE",
+}
 
 K2_EXACTNESS_INPUTS = {
     "K2_EXACTNESS_TEXT_LOCK",
@@ -40,18 +54,16 @@ K2_EXACTNESS_INPUTS = {
     "AUDIT_ACCEPTANCE",
 }
 
-CURRENT_SURFACE_INPUTS = {
-    "K2_EXACTNESS_TEXT_LOCK",
-    "NO_K1_K3_K4_OR_MASS_INPUT",
-    "NO_COMPARATOR_PROOF_INPUT",
-    "NO_NEW_PRIMITIVE_OR_AXIOM",
+SUBGATE_K2_SUPPLIES = {
+    "DISTINGUISHED_TWO_NINTHS_THEOREM_RETAINED",
+    "RADIAN_READOUT_LICENSE_RETAINED",
+    "FOLD_AND_BRANCH_DOMAIN_LOCK",
 }
 
-ELECTRON_MASS_INPUTS = {
-    "NATIVE_ZERO_SECTION_BRIDGE_RETAINED",
-    "PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED",
-    "KOIDE_BRANCH_MASS_MAP_RETAINED",
-    "ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED",
+CURRENT_SURFACE_INPUTS = {
+    "FINITE_TWO_NINTHS_DENSITY_CONTEXT_ACCEPTED",
+    "NO_COMPARATOR_PROOF_INPUT",
+    "NO_NEW_PRIMITIVE_OR_AXIOM",
 }
 
 
@@ -99,12 +111,12 @@ def all_subsets(items: set[str]) -> list[set[str]]:
     return subsets
 
 
+def closes_two_ninths_subgate(inputs: set[str]) -> bool:
+    return TWO_NINTHS_SUBGATE_INPUTS <= inputs
+
+
 def closes_k2_exactness(inputs: set[str]) -> bool:
     return K2_EXACTNESS_INPUTS <= inputs
-
-
-def closes_electron_mass(inputs: set[str]) -> bool:
-    return ELECTRON_MASS_INPUTS <= inputs
 
 
 def main() -> None:
@@ -115,13 +127,15 @@ def main() -> None:
         NOTE,
         GOAL,
         KOIDE_FIREWALL,
-        EXACTNESS_TARGET,
+        K2_TARGET,
+        K2_NO_GO,
         PR5020_IMPACT,
-        TWO_NINTHS_TARGET,
-        PR5019_IMPACT,
-        PHYSICAL_ELECTRON,
+        FLAVOR_TWO_NINTHS,
+        NATIVE_RADIAN_SEPARATION,
+        A1_RADIAN_AUDIT,
         BRANNEN_OPEN_GATE,
         TIER_A_BOUNDED,
+        ORIENTATION_Z2,
         PRIMITIVE_REGISTRY,
         TIER_A_REGISTRY,
         MINIMAL,
@@ -137,28 +151,31 @@ def main() -> None:
 
     section("Required note content")
     required_phrases = [
-        "Koide R-Eta Exactness Current-Surface No-Go",
-        "current-surface no-go / import-retirement target",
-        "does not ratify Koide K2 exactness",
-        "K2_R_ETA_EXACTNESS_RETAINED",
+        "Koide Two-Ninths Radian Readout Target Discriminator",
+        "target discriminator / Koide K2 subgate",
         "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED",
-        "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md",
-        "current retained, primitive, and open-PR surfaces do not supply",
-        "K2_EXACTNESS_TEXT_LOCK",
-        "REGISTERED_PHI_VALUE_FACE_ACCEPTED",
         "DISTINGUISHED_TWO_NINTHS_THEOREM_RETAINED",
         "RADIAN_READOUT_LICENSE_RETAINED",
         "FOLD_AND_BRANCH_DOMAIN_LOCK",
-        "NO_K1_K3_K4_OR_MASS_INPUT",
+        "TWO_NINTHS_READOUT_TEXT_LOCK",
+        "FINITE_TWO_NINTHS_DENSITY_CONTEXT_ACCEPTED",
         "NO_COMPARATOR_PROOF_INPUT",
+        "NO_NEW_PRIMITIVE_OR_AXIOM",
         "OWNER_RATIFICATION",
         "AUDIT_ACCEPTANCE",
+        "No proper subset supplies the handoff",
+        "FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md",
+        "KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md",
+        "KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md",
+        "LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md",
+        "CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md",
+        "KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md",
+        "`#5020` Koide R-eta value-face PR",
         "`#5021` primitive-retirement review draft",
-        "no primitive retirement and no registry edit",
-        "`#5020` Koide R-eta value-face registered-angle/exactness relocation | open",
-        "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | open",
+        "The primitive registry was checked",
+        "the next K2 sub-lane is KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED",
         "No-Go Discipline Gate",
-        "broad K2-exactness no-go fails; narrowed current-surface",
+        "broad `delta = 2/9` closure claim fails",
         "Explicit Non-Claims",
     ]
     for phrase in required_phrases:
@@ -167,61 +184,66 @@ def main() -> None:
     for marker in ["N1 -", "N2 -", "N3 -", "N4 -", "N5 -", "N6 -", "N7 -", "N8 -"]:
         audit.check(f"no-go discipline marker present: {marker}", marker in note)
 
-    section("K2 exactness predicate checks")
-    full_inputs = set(K2_EXACTNESS_INPUTS)
-    audit.check("full K2 exactness contract accepts retained handoff", closes_k2_exactness(full_inputs))
-    for missing in sorted(K2_EXACTNESS_INPUTS):
-        reduced = set(K2_EXACTNESS_INPUTS)
+    section("Predicate checks")
+    full_inputs = set(TWO_NINTHS_SUBGATE_INPUTS)
+    audit.check("full two-ninths/radian contract accepts subgate", closes_two_ninths_subgate(full_inputs))
+    for missing in sorted(TWO_NINTHS_SUBGATE_INPUTS):
+        reduced = set(TWO_NINTHS_SUBGATE_INPUTS)
         reduced.remove(missing)
-        audit.check(f"K2 exactness handoff fails without {missing}", not closes_k2_exactness(reduced))
-    accepted_subsets = [subset for subset in all_subsets(K2_EXACTNESS_INPUTS) if closes_k2_exactness(subset)]
-    audit.check("only full K2 exactness subset closes handoff", accepted_subsets == [full_inputs])
+        audit.check(f"two-ninths/radian handoff fails without {missing}", not closes_two_ninths_subgate(reduced))
+    accepted_subsets = [subset for subset in all_subsets(TWO_NINTHS_SUBGATE_INPUTS) if closes_two_ninths_subgate(subset)]
+    audit.check("only full subgate subset closes handoff", accepted_subsets == [full_inputs])
+    audit.check("current surface inputs do not close subgate", not closes_two_ninths_subgate(set(CURRENT_SURFACE_INPUTS)))
+    audit.check("subgate supplies only the three K2 value/readout/domain inputs", SUBGATE_K2_SUPPLIES < K2_EXACTNESS_INPUTS)
+    audit.check("subgate alone does not close K2 exactness", not closes_k2_exactness(set(SUBGATE_K2_SUPPLIES)))
     audit.check(
-        "current surface without value/exactness/readout/domain/owner/audit inputs does not close K2 exactness",
-        not closes_k2_exactness(set(CURRENT_SURFACE_INPUTS)),
-    )
-    audit.check(
-        "K2 exactness alone does not close physical electron mass",
-        not closes_electron_mass({"K2_R_ETA_EXACTNESS_RETAINED"}),
+        "subgate plus value face still needs remaining K2 exactness gates",
+        not closes_k2_exactness(SUBGATE_K2_SUPPLIES | {"REGISTERED_PHI_VALUE_FACE_ACCEPTED"}),
     )
 
-    section("Authority and primitive boundary checks")
+    section("Authority and boundary checks")
     goal = read(GOAL)
     koide_firewall = read(KOIDE_FIREWALL)
-    exactness_target = read(EXACTNESS_TARGET)
+    k2_target = read(K2_TARGET)
+    k2_no_go = read(K2_NO_GO)
     pr5020_impact = read(PR5020_IMPACT)
-    two_ninths_target = read(TWO_NINTHS_TARGET)
-    pr5019_impact = read(PR5019_IMPACT)
-    physical_electron = read(PHYSICAL_ELECTRON)
+    flavor = read(FLAVOR_TWO_NINTHS)
+    native = read(NATIVE_RADIAN_SEPARATION)
+    a1_audit = read(A1_RADIAN_AUDIT)
     brannen_open_gate = read(BRANNEN_OPEN_GATE)
     tier_a_bounded = read(TIER_A_BOUNDED)
+    orientation = read(ORIENTATION_Z2)
     primitive_registry = json.loads(read(PRIMITIVE_REGISTRY))
-    tier_a = read(TIER_A_REGISTRY)
     primitive_nodes = primitive_registry["nodes"]
     primitive_text = "\n".join([read(MINIMAL), read(SCALE), read(KINETIC), read(REALIZED)])
-    realized_text = read(REALIZED)
 
     for label, container in [
         ("goal packet", goal),
         ("Koide firewall", koide_firewall),
-        ("K2 exactness target", exactness_target),
+        ("K2 exactness target", k2_target),
+        ("K2 exactness no-go", k2_no_go),
     ]:
-        audit.check(f"{label} references K2 exactness current no-go", NOTE.name in container and "K2_R_ETA_EXACTNESS_RETAINED" in container)
+        audit.check(
+            f"{label} references two-ninths/radian target",
+            NOTE.name in container and "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED" in container,
+        )
+
+    audit.check("finite 2/9 source remains density/readout split", "`2/9` is forced as a local" in flavor and "Physical readout is the one remaining gate" in flavor)
+    audit.check("native radian theorem does not close bridge", "does **not** close the radian-bridge postulate" in flat(native))
+    audit.check("A1 radian audit keeps Type-B-to-radian law primitive", "TYPE_B_TO_RADIAN_IDENTIFICATION_REMAINS_PRIMITIVE=TRUE" in a1_audit)
+    audit.check("Brannen open gate does not derive delta", "not derive `delta = 2/9`" in brannen_open_gate)
     audit.check(
-        "current no-go references two-ninths/radian target",
-        TWO_NINTHS_TARGET.name in note and "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED" in note,
+        "Tier-A bounded theorem is not zero-import retained delta",
+        "bounded theorem under explicit Tier-A admission" in tier_a_bounded
+        and "Does **not** derive `delta = 2/9` from the framework baseline plus retained content" in tier_a_bounded,
     )
     audit.check(
-        "two-ninths/radian target keeps subgate partial",
-        "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED" in two_ninths_target
-        and "not the full K2 exactness" in two_ninths_target,
+        "orientation theorem leaves magnitude and handedness open",
+        "does **not** supply the realized handedness" in orientation
+        and "does **not** select the magnitude `2/9`" in orientation,
     )
-    audit.check("#5020 impact keeps exactness open", "exactness remains open" in pr5020_impact and "No derivation or ratification of a Koide R-eta exactness theorem." in pr5020_impact)
-    audit.check("#5019 impact remains premise hygiene", "premise hygiene and audit-readiness context" in pr5019_impact)
-    audit.check("physical electron packet keeps K2 context non-mass", "K2 value-face progress only" in physical_electron and "no delta exactness theorem" in physical_electron)
-    audit.check("Brannen open gate keeps delta as open gate", "not derive `delta = 2/9`" in brannen_open_gate)
-    audit.check("Tier-A bounded theorem is not zero-import retained K2", "bounded theorem under explicit Tier-A admission" in tier_a_bounded and "Does **not** derive `delta = 2/9` from the framework baseline plus retained content" in tier_a_bounded)
-    audit.check("realized primitive supplies no state-contingent value", "no state" in realized_text and "or value is supplied" in flat(realized_text))
+    audit.check("#5020 impact keeps exactness residual open", "exactness remains open" in pr5020_impact)
+
     for node_name in [
         "minimal_axioms",
         "scale_reference_primitive",
@@ -230,8 +252,7 @@ def main() -> None:
     ]:
         audit.check(f"registry node present: {node_name}", node_name in primitive_nodes)
     for absent in [
-        "k2_r_eta_exactness_primitive",
-        "registered_phi_value_face_primitive",
+        "koide_two_ninths_radian_readout_primitive",
         "distinguished_two_ninths_theorem_primitive",
         "radian_readout_license_primitive",
         "fold_branch_domain_lock_primitive",
@@ -240,46 +261,35 @@ def main() -> None:
         "hydrogen_primitive",
     ]:
         audit.check(f"no registered primitive shortcut: {absent}", absent not in primitive_nodes)
-    audit.check("AC_phi_lambda remains Tier-A, not primitive", "AC_phi_lambda" in tier_a and "AC_phi_lambda" not in primitive_nodes)
     for excluded in ["mass ratio", "selector", "readout bridge", "empirical fit"]:
         audit.check(f"primitive notes exclude {excluded}", excluded in primitive_text)
 
-    section("Open PR and non-claim boundaries")
-    open_markers = [
-        "`#5021` primitive-retirement review: meta gate map, no retirements | open draft",
-        "`#5020` Koide R-eta value-face registered-angle/exactness relocation | open",
-        "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | open",
-        "`#5018`/`#5017` chirality/domain-wall stack | open",
-        "`#5016` zero-import hydrogen retained lane bundle | open",
-        "clean/green status is not a proof input",
-    ]
-    for marker in open_markers:
-        audit.check(f"open PR marker present: {marker}", flat(marker) in note_flat)
-
+    section("Non-claim boundaries")
     explicit_nonclaims = [
-        "No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.",
-        "No derivation or ratification of `REGISTERED_PHI_VALUE_FACE_ACCEPTED`.",
+        "No derivation or ratification of `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.",
         "No derivation or ratification of `DISTINGUISHED_TWO_NINTHS_THEOREM_RETAINED`.",
         "No derivation or ratification of `RADIAN_READOUT_LICENSE_RETAINED`.",
         "No derivation or ratification of `FOLD_AND_BRANCH_DOMAIN_LOCK`.",
+        "No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.",
         "No adoption or landing claim for PR `#5020` or PR `#5021`.",
-        "No derivation of `AC_phi_lambda`, `delta = 2/9`, `rho_e(delta)`, or `a_l^2`.",
-        "No derivation or ratification of K1 occupancy/counting, K3 physical species",
-        "No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`,",
-        "No derivation of `S_l`, A3, `alpha(0)`, static-source Rydberg, or hydrogen.",
-        "No audit status change for any cited row.",
+        "No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`, observed",
+        "No derivation of K1 occupancy/counting, K3 physical species bridge, K4",
         "No new axiom, primitive, Tier-A admission, or empirical import.",
+        "No audit status change for any cited row.",
     ]
     for phrase in explicit_nonclaims:
         audit.check(f"explicit non-claim present: {phrase}", phrase in note)
 
     forbidden = [
-        "This note ratifies Koide K2 exactness",
+        "This note derives delta = 2/9",
+        "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED is supplied",
+        "RADIAN_READOUT_LICENSE_RETAINED is supplied",
         "K2_R_ETA_EXACTNESS_RETAINED is supplied",
-        "delta = 2/9 is derived",
         "physical electron mass is retained",
         "hydrogen retained theorem",
         "This note claims hydrogen is retained",
+        "**Status:** retained",
+        "**Status:** proposed_retained",
     ]
     for phrase in forbidden:
         audit.check(f"forbidden overclaim absent: {phrase}", phrase not in note)

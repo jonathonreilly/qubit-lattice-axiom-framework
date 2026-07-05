@@ -225,6 +225,13 @@ The K2 exactness current-surface no-go
 records that the current retained, primitive, and open-PR surfaces do not
 supply `K2_R_ETA_EXACTNESS_RETAINED`; the target remains needed.
 
+The two-ninths/radian-readout target discriminator
+(`ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`)
+packages the K2 sub-handoff `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
+If accepted, it supplies the exact `2/9` theorem, radian-readout license,
+and fold/branch domain-lock inputs, but not value-face acceptance, K1, K3,
+K4, physical electron mass, alpha input, or hydrogen.
+
 ## Open PR Alignment
 
 Open PRs were checked on 2026-07-04 and refreshed on 2026-07-05 after `#5020`
@@ -335,6 +342,7 @@ No hidden admission is left buried as background.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | K2 value-face registration versus exactness residual | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` | successor target for `K2_R_ETA_EXACTNESS_RETAINED` | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `K2_R_ETA_EXACTNESS_RETAINED` | yes |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` | K2 subtarget for exact `2/9`, radian readout, and fold/branch domain | yes |
 | `CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md` | conditional K1/K2 closure through `AC_phi_lambda` | yes, as conditional only |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_ROUTE_TRIAGE_2026-07-04.md` | K4 scale suppression target | yes for scale, not for phase |
 | `axiom_premise_nodes.json` | primitive boundary | guard only; not a Koide witness |

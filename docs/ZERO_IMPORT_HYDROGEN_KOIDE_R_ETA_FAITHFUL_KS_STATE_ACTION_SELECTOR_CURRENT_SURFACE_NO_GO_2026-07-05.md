@@ -76,6 +76,9 @@ AUDIT_ACCEPTANCE
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_TARGET_DISCRIMINATOR_2026-07-05.md` | action-domain subtarget that can feed this selector if retained | physical action selector or selector theorem itself |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RATIFICATION_DECISION_PACKET_2026-07-05.md` | action-domain owner/audit contract shape | domain retention is not accepted here |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the action-domain input | retained selector consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_ROTATION_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md` | physical action-selector subtarget that can feed this selector if retained | action-domain theorem or selector theorem itself |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_ROTATION_ACTION_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md` | physical action-selector owner/audit contract shape | selector retention is not accepted here |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_ROTATION_ACTION_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the physical selector input | retained selector consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | parent action-law target that can consume this input | this selector theorem itself |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | downstream KS child target | this selector theorem itself |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | sibling scalar-lift exclusion target | physical action selector |
@@ -192,7 +195,7 @@ selector is impossible. Untested broader resolutions are not claimed.
 | Candidate path | Status | What it would close |
 |---|---|---|
 | retained reconstructed matter-mode action-domain theorem | open positive route in `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_TARGET_DISCRIMINATOR_2026-07-05.md` | `KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RETAINED` |
-| retained physical faithful-action selector theorem | open positive route | `PHYSICAL_ROTATION_ACTION_SELECTOR_RETAINED` |
+| retained physical faithful-action selector theorem | open positive route in `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_ROTATION_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md` | `PHYSICAL_ROTATION_ACTION_SELECTOR_RETAINED` |
 | owner/audit acceptance after both selector subinputs | open governance/audit route | `FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED` |
 | parent KS spin-lift action-law lane | open downstream route | can consume the selector after it exists |
 | retained spinful scalar-lift exclusion | open sibling route | can help close the KS child theorem, not this target alone |

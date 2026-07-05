@@ -70,6 +70,12 @@ The action-domain subinput is separately packaged by
 and
 `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_CURRENT_SURFACE_NO_GO_2026-07-05.md`.
 
+The physical action-selector subinput is separately packaged by
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_ROTATION_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md`,
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_ROTATION_ACTION_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md`,
+and
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_ROTATION_ACTION_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md`.
+
 ## Current Surface Alignment
 
 | Surface | Decision relevance |
@@ -79,6 +85,9 @@ and
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_TARGET_DISCRIMINATOR_2026-07-05.md` | action-domain subtarget that can feed this selector only after retention |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RATIFICATION_DECISION_PACKET_2026-07-05.md` | action-domain owner/audit contract shape, not this selector consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RETAINED` |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_ROTATION_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md` | physical action-selector subtarget that can feed this selector only after retention |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_ROTATION_ACTION_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md` | physical action-selector owner/audit contract shape, not this selector consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_ROTATION_ACTION_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `PHYSICAL_ROTATION_ACTION_SELECTOR_RETAINED` |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | parent action-law target that can consume this selector if retained |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | downstream KS child target, not this decision consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | sibling scalar-lift target, not this decision consequence |
@@ -164,6 +173,12 @@ matter-attachment reduction, and carrier-attachment sharpening all mark the
 same wall shape: operator/support facts do not automatically become physical
 state-action selectors. Retirement requires an explicit bridge theorem,
 accepted convention, or approved primitive update.
+
+The physical action-selector route is explicit:
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_ROTATION_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages the sibling positive subinput. It does not close this selector unless
+the action-domain input and this selector lane's owner/audit acceptance are
+also present.
 
 Gate result: PASS for the narrowed decision packet. Broad KS no-go is not
 shipped.

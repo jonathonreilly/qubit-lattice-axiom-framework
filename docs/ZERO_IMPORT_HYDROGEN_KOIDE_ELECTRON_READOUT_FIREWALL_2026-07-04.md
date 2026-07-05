@@ -427,6 +427,22 @@ exclusion, the KS child theorem, parent state-law bridge, HW1, the
 charged-lepton carrier theorem, carrier context, h-class, h-unit, R-eta,
 electron readout, physical electron mass, alpha input, or hydrogen.
 
+The R-eta physical rotation action-selector target discriminator
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_ROTATION_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md`),
+ratification decision packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_ROTATION_ACTION_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md`),
+and current-surface no-go
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_ROTATION_ACTION_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
+package `PHYSICAL_ROTATION_ACTION_SELECTOR_RETAINED` as the sibling
+physical action-selector owner/audit contract under the faithful KS
+state-action selector lane. Current
+retained, primitive, merged-PR, and open-PR surfaces do not supply it; it can
+feed only the selector lane after retention and does not supply the
+action-domain theorem, action law, scalar-lift exclusion, the KS child theorem,
+parent state-law bridge, HW1, the charged-lepton carrier theorem, carrier
+context, h-class, h-unit, R-eta, electron readout, physical electron mass,
+alpha input, or hydrogen.
+
 The R-eta spinful staggered kernel scalar-lift exclusion target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md`),
 ratification decision packet

@@ -12,7 +12,16 @@ future gated, owner-approved registry lane** — not executed here.
 [`scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py`](../scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py)
 **Cached runner output:**
 [`logs/runner-cache/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.txt`](../logs/runner-cache/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.txt)
-(`TOTAL: PASS=24 FAIL=0`)
+(`TOTAL: PASS=25 FAIL=0`)
+**Axiom-surface update:** 2026-07-05 — premises re-based from the superseded
+`MINIMAL_AXIOMS_2026-06-05.md` (three-axiom memo) onto the current four-axiom
+memo `MINIMAL_AXIOMS_2026-06-29.md`: the enumerated Record non-supply clause
+is superseded by the Qualification's general non-supply clauses (checked live
+by the runner; the 06-05 clause is kept as historical corroboration), and
+outcomes-as-K/CPT-orbits is no longer axiom text — it is supplied-context
+carried by the bridge [T1, KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md).
+No claim is strengthened; the value-face reduction and measure-side frontier
+are unchanged.
 
 > **Not claimed:** a derivation of `r = 1/2` (FIREWALL — see below), adoption
 > or rejection of the orbit-occupancy premise candidate, any registry edit,
@@ -49,13 +58,20 @@ count, `r ∈ {1, 1/2}`)*. Then, on the current landed surface plus the
 approved `realized_state_primitive`:
 
 1. **(No rule slot.)** No axiom-level slot exists for an occupancy *rule*.
-   The Record axiom excludes it in its own text (*"A record supplies no …
-   weighting, normalization, probability, … within-sector data, or occupancy
-   rule"*, `MINIMAL_AXIOMS_2026-06-05.md`, checked mechanically, S7.1), and
-   the realized-state primitive declares that the axioms select no state and
-   supply no measure, weighting, or occupancy pattern (S7.2). The demand that
-   an occupancy rule be "admitted" as a derivation-target input presupposes a
-   rule-shaped slot the ontology does not have.
+   The current four-axiom memo states: *"These axioms state only their named
+   primitive content. Further physical structure requires derivation, bridge,
+   explicit admission, or approved primitive registration before use as a
+   premise."* It also states: *"In particular, a law may not depend on a choice
+   not fixed by the supplied structure, unless that choice is admitted."* and
+   *"A law privileges no states. Its domain is a supplied condition, and at
+   every state where the condition holds it gives exactly one answer."* (S7.1).
+   The realized-state primitive declares that the laws do not pick the state
+   and supplies *"no averaging over alternatives"* or measure/weighting pattern
+   (S7.2). The superseded 2026-06-05 Record wording historically corroborated
+   that boundary (*"A record supplies no … weighting, normalization,
+   probability, … within-sector data, or occupancy rule"*, S7.1h). The demand
+   that an occupancy rule be "admitted" as a derivation-target input presupposes
+   a rule-shaped slot the ontology does not have.
 
 2. **(Value face = registration.)** What the value chain (the chain of
    custody for `Q = 2/3`) actually consumes from sub-admission (i) is the
@@ -99,11 +115,13 @@ approved `realized_state_primitive`:
    still faces it. But this survivor is a **derivation frontier**, not a
    value admission: the value chain no longer routes through it, because the
    per-lane value arrives by pointwise registration (part 2). The binary's
-   *structure* is itself derived at the landed bookkeeping level: the Record
-   axiom's outcome objects supply exactly two record-native granularities
-   (central sectors; their K/CPT orbits — the axiom's realized outcome *is*
-   the orbit of the realized sector), the covering on the doublet is 2:1, the
-   convention-free cell ratio is the fiber count 2, and the cells land on
+   *structure* is itself derived at the landed bookkeeping level: the supplied
+   record context supplies exactly two record-native granularities (central
+   sectors; their K/CPT orbits, with the orbit-outcome reading carried by
+   [T1, KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md)'s
+   supplied ORBIT-INDEXING plus Record content-determination), the covering on
+   the doublet is 2:1, the convention-free cell ratio is the fiber count 2, and
+   the cells land on
    `r ∈ {1, 1/2}` under the landed ρ-orientation (S1.4, S2.1–S2.3).
 
 **Net:** sub-admission (i) decomposes as
@@ -118,9 +136,10 @@ longer bounds the value chain.
 - **S1 (derived dial structure).** `C³ = I`; singlet⊕doublet projectors
   complete/orthogonal; the 3-mode fine partition is *also*
   complete/orthogonal, so partition coarseness needs the named K-reality
-  predicate (G2 — untouched here); K maps mode-1 ↔ mode-2, so the K/CPT
-  outcome set is {singlet, doublet-pair} and the sector→orbit covering on the
-  doublet has fiber 2.
+  predicate (G2 — untouched here); K maps mode-1 ↔ mode-2, so under
+  [T1, KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md)'s
+  supplied ORBIT-INDEXING the K/CPT outcome set is {singlet, doublet-pair} and
+  the sector→orbit covering on the doublet has fiber 2.
 - **S2 (cells and lever).** Sector grain `Z_d = 2π/g` (two real slots) vs
   orbit grain `Z_d = π/g` (one outcome slot); ratio exactly 2 =
   fiber count; landed ρ-orientation reproduces sector → `r = 1` (`Q = 1`),
@@ -152,9 +171,10 @@ longer bounds the value chain.
   precisely which coarse-graining + which arrow" therefore splits the same
   way: the *geometry* (where the separatrix/attractor sit) is derived; *that
   the charged-lepton lane's realized history sits there* is registered.
-- **S7 (mechanical text checks).** The Record non-supply clause, the
-  primitive's clauses and register item 4, both machine registries, and the
-  `reclassified_primitives` precedent block are present verbatim.
+- **S7 (mechanical text checks).** The current Qualification non-supply
+  clauses, the historical 06-05 corroboration clause, the primitive's clauses
+  and register item 4, both machine registries, and the `reclassified_primitives`
+  precedent block are present verbatim.
 - **S8 (residual map).** Both grain models pass all checked constraints —
   the measure-side binary is genuinely not settled by anything above.
 
@@ -240,8 +260,9 @@ chain.
   decision, and the exactness residual are live continuations; nothing here
   forecloses a future lane-conditional derivation of a reading.
 - The reduction is **relative to the current checked surface**: the landed
-  bookkeeping (cells, ρ-orientation, covering), the three axioms, and the
-  approved primitive. A larger retained surface could later derive more.
+  bookkeeping (cells, ρ-orientation, covering), the four axioms (2026-06-29
+  memo), and the approved primitive. A larger retained surface could later
+  derive more.
 - Pending-review sharpenings (the 2026-06-11 stack: OO/R-D equivalence,
   durability-stationarity, etc.) are **not consumed**; everything above
   rests on landed notes plus the approved primitive.
@@ -284,7 +305,8 @@ and the law-freeness). Status remains for the audit lane.
 
 | dependency | role | effective_status |
 |---|---|---|
-| [`minimal_axioms`](MINIMAL_AXIOMS_2026-06-05.md) | Record non-supply clause (verbatim) | meta (approved axiom node) |
+| [`minimal_axioms`](MINIMAL_AXIOMS_2026-06-29.md) | Qualification non-supply clauses (verbatim) | meta (approved axiom node) |
+| [`kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md) | T1: outcomes-as-K/CPT-orbits as supplied ORBIT-INDEXING (bridge-carried) | retained_bounded |
 | [`realized_state_primitive`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) | the primitive; counterfactual test; register item 4 | meta (approved primitive node) |
 | [`koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10`](KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md) | the exact lever `Q = 1/3 + (2/3)r` | retained |
 | [`charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10`](CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md) | `Q = 2/3 ⇔ r = 1/2` biconditional | retained |

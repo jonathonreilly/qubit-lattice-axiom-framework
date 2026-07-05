@@ -155,6 +155,11 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   value-face acceptance, a retained exact `2/9` theorem, radian-readout
   license, fold/branch domain lock, no K1/K3/K4/mass input, comparator
   exclusion, owner ratification, and audit acceptance before K2 can be spent.
+  The K2 R-eta exactness ratification decision packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  packages that K2 target as a ten-input owner/audit contract. It consumes
+  value-face acceptance plus the two-ninths/radian subgate only after
+  acceptance; it does not derive K1, K3, K4, `m_e`, `alpha(0)`, or hydrogen.
   The K2 exactness current-surface no-go
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md`
   records that the current retained, primitive, merged-PR, and open-PR surfaces do not
@@ -1407,6 +1412,7 @@ here.
                         | R-eta h-class fixed-locus target | Open subtarget. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` packages `R_ETA_H_CLASS_RETAINED`; it can feed one input into R-eta readout retirement, not h-unit, full R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta h-class fixed-locus ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the thirteen-input owner/audit contract for `R_ETA_H_CLASS_RETAINED`; it does not derive physical carrier realization, a single fixed-point readout theorem, h-unit, full R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | K2 R-eta exactness target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` packages the successor handoff `K2_R_ETA_EXACTNESS_RETAINED`; it is not supplied by #5020 and does not derive `m_e`, `alpha(0)`, or hydrogen. |
+                        | K2 R-eta exactness ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the ten-input owner/audit contract for `K2_R_ETA_EXACTNESS_RETAINED`; it is not K1/K3/K4, `m_e`, `alpha(0)`, or hydrogen. |
                         | K2 R-eta exactness current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `K2_R_ETA_EXACTNESS_RETAINED`. |
                         | Koide two-ninths/radian-readout target | Open subtarget. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`; if accepted it supplies exact `2/9`, radian-readout, and fold/branch domain inputs for K2, not full K2 exactness, `m_e`, `alpha(0)`, or hydrogen. |
                         | Koide two-ninths/radian-readout ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the nine-input owner/audit contract for `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`; it is not full K2 exactness, `m_e`, `alpha(0)`, or hydrogen. |

@@ -220,6 +220,13 @@ value-face acceptance, a retained exact `2/9` theorem, radian-readout license,
 fold/branch domain lock, no K1/K3/K4/mass input, comparator exclusion, owner
 ratification, and audit acceptance. It is a target contract, not K2 closure.
 
+The Koide R-eta exactness ratification decision packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_RATIFICATION_DECISION_PACKET_2026-07-05.md`)
+packages that handoff as a ten-input owner/audit contract. It can consume
+value-face acceptance plus the two-ninths/radian subgate after acceptance, but
+it is not K1 counting, K3 species, K4 scale, physical electron mass, alpha
+input, or hydrogen.
+
 The K2 exactness current-surface no-go
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
 records that the current retained, primitive, and open-PR surfaces do not

@@ -16,6 +16,7 @@ PR5020_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5
 PR5022_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md"
 R_ETA_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md"
 EXACTNESS_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+EXACTNESS_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 TWO_NINTHS_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md"
 TWO_NINTHS_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 TWO_NINTHS_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md"
@@ -131,6 +132,7 @@ def main() -> None:
         PR5022_IMPACT,
         R_ETA_TARGET,
         EXACTNESS_NO_GO,
+        EXACTNESS_DECISION,
         TWO_NINTHS_TARGET,
         TWO_NINTHS_DECISION,
         TWO_NINTHS_NO_GO,
@@ -173,6 +175,8 @@ def main() -> None:
         "value-face registration <-> exactness theorem",
         "The primitive registry was checked",
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "ten-input owner/audit contract",
         "current retained, primitive, merged-PR, and open-PR surfaces do not supply",
         "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md",
         "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md",
@@ -207,6 +211,7 @@ def main() -> None:
     koide_firewall = read(KOIDE_FIREWALL)
     pr5020_impact = read(PR5020_IMPACT)
     exactness_no_go = read(EXACTNESS_NO_GO)
+    exactness_decision = read(EXACTNESS_DECISION)
     two_ninths_target = read(TWO_NINTHS_TARGET)
     two_ninths_decision = read(TWO_NINTHS_DECISION)
     two_ninths_no_go = read(TWO_NINTHS_NO_GO)
@@ -225,6 +230,15 @@ def main() -> None:
     audit.check(
         "target references exactness current-surface no-go",
         EXACTNESS_NO_GO.name in note and "K2_R_ETA_EXACTNESS_RETAINED" in note,
+    )
+    audit.check(
+        "target references exactness decision packet",
+        EXACTNESS_DECISION.name in note and "ten-input owner/audit contract" in note,
+    )
+    audit.check(
+        "exactness decision packet keeps K2 conditional",
+        "K2_R_ETA_EXACTNESS_RETAINED" in exactness_decision
+        and "No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`." in exactness_decision,
     )
     audit.check(
         "exactness no-go keeps target open",

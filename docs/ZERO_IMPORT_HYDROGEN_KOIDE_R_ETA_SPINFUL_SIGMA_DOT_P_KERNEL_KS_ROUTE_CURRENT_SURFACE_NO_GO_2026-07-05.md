@@ -72,6 +72,9 @@ AUDIT_ACCEPTANCE
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for route-defined momentum/link-phase input | retained spinful kernel-object theorem or this target |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit contract for the child input | owner/audit acceptance here |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply of the child input | this sigma-dot-p handoff |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for the retained spinful kernel-object theorem | route-defined momentum/link phase or this sigma-dot-p handoff |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit contract for the child theorem | owner/audit acceptance here |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply of the child theorem | this sigma-dot-p handoff |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | parent scalar-lift target that can consume this handoff | target theorem itself |
 
 The approved primitive registry was checked. Registered primitive nodes are
@@ -91,6 +94,7 @@ PRs are queue/status signals; clean/dirty/check labels are not proof inputs.
 | PR | status | sigma-dot-p KS-route effect |
 |---|---|---|
 | `#5016` zero-import hydrogen retained lane bundle | open; audit running at refresh | carries this current-surface no-go once pushed |
+| `#5026` Koide custody L4 retained-successor re-point | open; audit running at refresh | charged-lepton custody rewire only; no route-defined spinful KS kernel theorem |
 | `#5019` AC_phi_lambda decomposition chain | merged, audit success | form-layer rebase only; no route-defined spinful KS kernel theorem |
 | `#5020` AC_phi_lambda value face | merged, audit success | value-face/exactness relocation only |
 | `#5022` delta-eta chain repair | merged, audit success | supplied-premise/K-orbit authority only |
@@ -106,6 +110,7 @@ PRs are queue/status signals; clean/dirty/check labels are not proof inputs.
 | Potential overread | Boundary |
 |---|---|
 | child momentum/link-phase packet could be overread as this sigma-dot-p target | it can supply only one missing subinput after owner/audit acceptance |
+| child spinful kernel-object packet could be overread as this sigma-dot-p target | it can supply only one missing subinput after owner/audit acceptance |
 | carrier-attachment finite runner could be overread as retained closure | it is strong source support, not owner/audit acceptance of this handoff |
 | KS phase forcing could be overread as the route-defined kernel theorem | it remains bounded support under declared kinetic premises |
 | kinetic scalar/Dirac-ray support could be overread as this target | it is support with named residuals and does not force `K1` |
@@ -128,7 +133,7 @@ the current retained, primitive, merged-PR, and open-PR surfaces do not supply
 | KS phase route | Treat KS scalarization/phase forcing as the route-defined kernel theorem. | ATTEMPTED. It is bounded kinetic/gauge-class support only. |
 | kinetic two-ray route | Treat scalar/Dirac-ray classification as this target. | ATTEMPTED. It supports the target but does not ratify the handoff. |
 | chirality/domain-wall route | Treat `{epsilon,D}=0`, #5014, #5017, or #5018 as this kernel theorem. | ATTEMPTED. They are support only. |
-| W4/value-face route | Treat merged #5019/#5020/#5022/#5023/#5024 as target closure. | ATTEMPTED. They are value-face/hygiene/readiness only. |
+| W4/value/custody route | Treat #5026 or merged #5019/#5020/#5022/#5023/#5024 as target closure. | ATTEMPTED. They are custody/value-face/hygiene/readiness only. |
 | primitive shortcut | Treat an approved primitive as this target. | ATTEMPTED. Registry check found no such primitive. |
 
 ### N2 - Wall-Independence Audit
@@ -168,7 +173,7 @@ governance/audit gates are explicit.
 | matter-attachment reduction note | KS/state-law bridge still required | route-defined kernel subinput | yes, as upstream context |
 | KS phase forcing note | bounded KS phase/gauge class | spinful route-kernel handoff | yes, as support/nonclosure |
 | kinetic class forcing note | scalar/Dirac-ray support | retained spinful route-kernel handoff | yes, as support/nonclosure |
-| #5014/#5017/#5018/#5019/#5020/#5022/#5023/#5024 | adjacent support/hygiene/value-face status | retained spinful route-kernel handoff | yes |
+| #5026/#5014/#5017/#5018/#5019/#5020/#5022/#5023/#5024 | adjacent custody/support/hygiene/value-face status | retained spinful route-kernel handoff | yes |
 
 ### N5 - Rhetoric Audit
 
@@ -183,7 +188,7 @@ retained handoff is impossible. Untested broader resolutions are not claimed.
 |---|---|---|
 | retained route-defined momentum/link phase | open positive route | `KS_ROUTE_DEFINED_MOMENTUM_COVECTOR_OR_LINK_PHASE_INPUT_RETAINED` |
 | momentum/link-phase target packet using P-FLUX and Kawamoto-Smit support | open positive child route | same input after owner/audit acceptance; not the sigma-dot-p target |
-| retained spinful kernel-object theorem | open positive route | `KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RETAINED` |
+| retained spinful kernel-object theorem | open positive route, now packaged by the spinful kernel-object child lane | `KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RETAINED` |
 | owner/audit acceptance after both physics inputs | open governance/audit route | `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED` |
 | retained scalar-lift covariance failure theorem | separate open route | helps close scalar-lift exclusion, but not this handoff by itself |
 | KS spin-lift physical action law | separate open route | helps close the KS child theorem, but not this handoff by itself |
@@ -233,3 +238,4 @@ spinful-kernel impossibility is not shipped.
   is introduced.
 - No claim that #5014, #5017, #5018, #5019, #5020, #5022, #5023, or #5024
   supplies the spinful `sigma.p` KS-route kernel theorem.
+- No claim that #5026 supplies the spinful `sigma.p` KS-route kernel theorem.

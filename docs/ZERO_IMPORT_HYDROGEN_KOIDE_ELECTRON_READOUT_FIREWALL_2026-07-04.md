@@ -399,6 +399,21 @@ theorem, parent state-law bridge, HW1, the charged-lepton carrier theorem,
 carrier context, h-class, h-unit, R-eta, electron readout, physical electron
 mass, alpha input, or hydrogen.
 
+The R-eta spinful sigma-dot-p KS-route kernel target discriminator
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_TARGET_DISCRIMINATOR_2026-07-05.md`),
+ratification decision packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_RATIFICATION_DECISION_PACKET_2026-07-05.md`),
+and current-surface no-go
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
+package `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED` as a child
+subinput under the scalar-lift exclusion lane. Current retained, primitive,
+merged-PR, and open-PR surfaces do not supply it; it can feed only the
+scalar-lift exclusion route after retention and does not supply scalar-lift
+covariance exclusion, the scalar-lift handoff, the KS physical spin-lift
+action law, KS child theorem, parent state-law bridge, HW1, the charged-lepton
+carrier theorem, carrier context, h-class, h-unit, R-eta, electron readout,
+physical electron mass, alpha input, or hydrogen.
+
 The two-ninths/radian-readout target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`)
 packages the K2 sub-handoff `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.

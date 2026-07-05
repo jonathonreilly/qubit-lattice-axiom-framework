@@ -91,6 +91,9 @@ inputs.
 | `STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md` | narrow staggered chirality support | spinful kernel scalar-lift exclusion as retained handoff |
 | `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` | bounded synthesis context with explicit residuals | unbounded physical state-action theorem or this retained scalar-lift exclusion |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | parent KS child target that consumes this lane if retained | scalar-lift exclusion theorem itself |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_TARGET_DISCRIMINATOR_2026-07-05.md` | child subtarget for `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED` | scalar-lift covariance exclusion and this parent handoff |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit decision shape for the route-defined `sigma.p` kernel object | scalar-lift exclusion theorem |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the route-defined `sigma.p` kernel handoff | this scalar-lift exclusion theorem |
 
 The current retained, primitive, merged-PR, and open-PR surfaces therefore do
 not supply `SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED`. This
@@ -181,7 +184,7 @@ subinput handoff level only. This note does not use broader phrases like
 
 | Candidate path | Status | What it would close |
 |---|---|---|
-| retained route-defined spinful kernel | open positive route | `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED` |
+| retained route-defined spinful kernel | open positive route, now packaged by `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_TARGET_DISCRIMINATOR_2026-07-05.md` | `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED` |
 | retained trivial-scalar covariance failure theorem | open positive route | `TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RETAINED` |
 | owner/audit acceptance after both physics inputs | open governance/audit route | `SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED` |
 | KS spin-lift physical action law | separate open sibling input | can help close the KS child route, but not this target by itself |

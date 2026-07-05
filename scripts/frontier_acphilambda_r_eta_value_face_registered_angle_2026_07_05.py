@@ -346,6 +346,9 @@ def numerical_checks(log: CheckLog) -> float:
         "admissible checks span multiple Phi values; no unique interior Phi is output",
     )
 
+    # PDG-2024 charged-lepton comparator baseline, matching
+    # docs/CLOSURE_T2_DF_PHYSICAL_CONSEQUENCES_NOTE_2026-05-10_t2df.md.
+    # Comparator only: no theorem threshold or derivation step consumes these.
     masses = [0.51099895, 105.6583755, 1776.86]
     positive_roots = [math.sqrt(mass) for mass in masses]
     _, pdg_B, Phi_PDG, pdg_cos3 = recover_registered_angle(positive_roots)

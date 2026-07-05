@@ -121,8 +121,11 @@ routed through the unaudited context separated by the R-eta narrowing note's
 
 - **S2 comparator, labeled only.** The charged-lepton comparator uses
   `m_e = 0.51099895 MeV`, `m_mu = 105.6583755 MeV`, `m_tau = 1776.86 MeV`,
-  and positive roots `lambda_k = sqrt(m_k)`, the charged-lepton regime of the
-  landed signed-root/cone structure. It prints `Phi_PDG = 0.222229631489716`
+  the repo's PDG-2024 charged-lepton comparator baseline recorded in
+  `docs/CLOSURE_T2_DF_PHYSICAL_CONSEQUENCES_NOTE_2026-05-10_t2df.md`,
+  and positive roots `lambda_k = sqrt(m_k)` under the existing charged-lepton
+  signed-root/cone convention as a labeled comparator only. It prints
+  `Phi_PDG = 0.222229631489716`
   and `|Phi_PDG - 2/9| = 7.409267493568850e-06` as `COMPARATOR S2.PDG`. S2.3
   asserts only that the computation runs in `[0, pi/3]`.
 
@@ -131,7 +134,8 @@ routed through the unaudited context separated by the R-eta narrowing note's
   `sin(3 delta)=0` (S3.2). Every `delta = k pi/3` stationary point is
   degenerate (S3.3). The clean laws select only fold-boundary points and leave
   the interior unselected. The no-gos are not obstacles to this reduction;
-  they are its hypotheses.
+  they are context guardrails whose relevant finite computation is reproduced
+  by S3 rather than imported as an additional dependency.
 
 - **S4 (unit-face dissolution at the value face).** `Phi` is a pure number:
   `arccos` is the standard real inverse function and no unit choice appears
@@ -256,7 +260,7 @@ note names those points rather than resolving them.
 | [`registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md) | even/phase-free registrable surface; supports reading the registrable delta-content as the folded magnitude | retained_bounded |
 | [`realized_state_primitive`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) | approved primitive; pointwise evaluation and counterfactual test for registered data (quotes checked verbatim, S2.0) | meta |
 | [`minimal_axioms`](MINIMAL_AXIOMS_2026-06-29.md) | 2026-06-29 memo qualification: named primitive content only; law privileges no states (quotes checked verbatim, S7.0) | meta |
-| `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04` | clean-modulus law-freeness computation reproduced by runner S3 | unaudited (context; reproduced in runner) |
+| `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04` | clean-modulus law-freeness computation reproduced by runner S3 | retained_no_go (context; reproduced in runner) |
 | `ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11` | context for the A_R-eta statement and formal F1-F5 layer; consumed facts re-verified here by runner S1-S4 | unaudited (context; reproduced in runner) |
 
 **No-promotion statement:** this note does not promote, demote, or set the

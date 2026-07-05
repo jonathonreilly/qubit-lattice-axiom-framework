@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_acphilambda_r_eta_value_face_registered_angle_2026_07_05.py
+runner_sha256: 142ec64ad8b6f943310d5c122879f11faf6f1cb55711ec725102828d17d8928f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
 [PASS] S1.0: constructed H(delta) is Hermitian for real a, positive B, real delta
 [PASS] S1.1: det H(delta) and the product of the three constructed eigenvalues give the same e3
 [PASS] S1.2: e1 derived exactly as 3a
@@ -32,3 +40,6 @@ COMPARATOR S2.PDG positive_roots=[0.714841905598713, 10.279025999577977, 42.1528
 [PASS] S2.0: realized-state primitive sentences quoted in the note are present verbatim in REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
 [PASS] S7.0: 2026-06-29 memo Qualification sentences quoted in the note are present verbatim in MINIMAL_AXIOMS_2026-06-29.md
 TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

@@ -111,6 +111,19 @@ normalization; `SU(2)_L` weak-coupling context, the weak-front base,
 source singleton, A3 matching, K4 scale assembly, and hydrogen remain
 downstream.
 
+The SU2 coupling-context decision packet
+`ZERO_IMPORT_HYDROGEN_WEAK_FRONT_SU2_COUPLING_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages the WF.1 subinput `SU2_WEAK_COUPLING_CONTEXT_RETAINED` as its own
+eleven-input owner/audit handoff: SU2_WEAK_COUPLING_CONTEXT_TEXT_LOCK,
+CL3_SU2_WEAK_CONTEXT_ACCEPTED, BARE_G2_SYMBOL_SCOPE_LOCK,
+CHARGED_LEPTON_WEAK_DOUBLET_SCOPE_LOCK, RUNNING_STRUCTURE_BOUNDARY_LOCK,
+NO_PHYSICAL_G2V_OR_MW_INPUT, NO_THRESHOLD_OR_A3_MATCHING_INPUT,
+NO_D17_SOURCE_SINGLETON_OR_MASS_INPUT, NO_NEW_PRIMITIVE_OR_AXIOM,
+OWNER_RATIFICATION, and AUDIT_ACCEPTANCE. If accepted, it supplies only the
+`SU(2)_L` weak-coupling context and symbol `g_2`; physical `g_2(v)`, observed
+`m_W`, threshold matching, D17 normalization, source singleton, A3 matching,
+K4 scale assembly, and hydrogen remain downstream.
+
 ## Conditional Consequence
 
 If all ten contract inputs are accepted, the conditional consequence is:
@@ -184,6 +197,7 @@ inputs here.
 | `CL3_SM_EMBEDDING_THEOREM.md` | reviewed algebraic support for `SU(2)_weak`, the lepton weak doublet block, and the bare `g_2^2 = 1/(d+1)` reading | support context, not physical low-scale `g_2(v)` or A3 matching |
 | `SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md` | structural `b_2 = 19/6` and asymptotic `alpha_2` running form | running slope support only, not a charged-lepton matching interval |
 | `LEPTON_SCALE_FRONTIER_PROBE_2026-06-05.md` | factorization `y_scale = g_2 * (1/sqrt(2)) * (1/256)` after the empirical gate | identifies the base front and source target, not retained K4 |
+| `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_SU2_COUPLING_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | conditional SU2 weak-coupling context handoff for `SU2_WEAK_COUPLING_CONTEXT_RETAINED` | no physical `g_2(v)`, observed `m_W`, D17 normalization, weak-front base, source singleton, A3 matching, K4 scale assembly, or hydrogen |
 | `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | conditional D17 block-normalization handoff for `CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED` | no `SU(2)_L` weak-coupling context, weak-front base, source singleton, A3 matching, K4 scale assembly, or hydrogen |
 | `LEPTON_BLOCK_SCALAR_SINGLET_COMPOSITE_UNIQUENESS_D17_PRIME_THEOREM_NOTE_2026-05-10.md` | bounded charged-lepton scalar block and `Z_lep^2 = 2` normalization under stated inputs | not a retained mass or source/action theorem |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_F2_CHARGED_LEPTON_SOURCE_BLOCK_SELECTOR_DISCRIMINATOR_2026-07-04.md` | F2 target that uses the D17 block as charged-lepton source block if sector/scalar/attachment inputs are supplied | selector support only, not K4 scale closure |
@@ -286,6 +300,7 @@ Legitimate closure paths remain:
 | path | what it could close |
 |---|---|
 | owner/audit adoption of this packet's ten-input contract | `WEAK_FRONT_BASE_RETAINED` |
+| owner/audit adoption of the SU2 coupling-context decision packet | `SU2_WEAK_COUPLING_CONTEXT_RETAINED`, not weak-front base by itself |
 | owner/audit adoption of the D17 block-normalization decision packet | `CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED`, not weak-front base by itself |
 | retained theorem deriving `g_2` context plus D17 block normalization as one charged-lepton front | `WEAK_FRONT_BASE_RETAINED` by theorem |
 | retained charged-lepton front-matching theorem | `CHARGED_LEPTON_FRONT_MATCHING_RETAINED`, not the base alone |

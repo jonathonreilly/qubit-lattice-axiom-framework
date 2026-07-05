@@ -23,6 +23,7 @@ KOIDE_FIREWALL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FI
 WEAK_FRONT_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 WEAK_FRONT_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 D17_BLOCK_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md"
+SU2_CONTEXT_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_SU2_COUPLING_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 SOURCE_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_INTERFACE_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 EXACT_SOURCE_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 A3_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_RATIFICATION_DECISION_PACKET_2026-07-04.md"
@@ -143,6 +144,7 @@ def main() -> None:
         WEAK_FRONT_DECISION,
         WEAK_FRONT_NO_GO,
         D17_BLOCK_DECISION,
+        SU2_CONTEXT_DECISION,
         SOURCE_DECISION,
         EXACT_SOURCE_NO_GO,
         A3_DECISION,
@@ -197,6 +199,15 @@ def main() -> None:
         "TWO_COMPONENT_UNIT_NORMALIZATION_CHECK",
         "D17_ONLY_NO_SOURCE_SINGLETON_OR_A3_INPUT",
         "NO_WEAK_COUPLING_OR_FRONT_BASE_INPUT",
+        "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_SU2_COUPLING_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "SU2_WEAK_COUPLING_CONTEXT_TEXT_LOCK",
+        "CL3_SU2_WEAK_CONTEXT_ACCEPTED",
+        "BARE_G2_SYMBOL_SCOPE_LOCK",
+        "CHARGED_LEPTON_WEAK_DOUBLET_SCOPE_LOCK",
+        "RUNNING_STRUCTURE_BOUNDARY_LOCK",
+        "NO_PHYSICAL_G2V_OR_MW_INPUT",
+        "NO_THRESHOLD_OR_A3_MATCHING_INPUT",
+        "NO_D17_SOURCE_SINGLETON_OR_MASS_INPUT",
         "WEAK_FRONT_BASE_TEXT_LOCK",
         "SU2_WEAK_COUPLING_CONTEXT_RETAINED",
         "CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED",
@@ -307,6 +318,7 @@ def main() -> None:
     weak_front_decision = read(WEAK_FRONT_DECISION)
     weak_front_no_go = read(WEAK_FRONT_NO_GO)
     d17_block_decision = read(D17_BLOCK_DECISION)
+    su2_context_decision = read(SU2_CONTEXT_DECISION)
     source_decision = read(SOURCE_DECISION)
     exact_source_no_go = read(EXACT_SOURCE_NO_GO)
     a3_decision = read(A3_DECISION)
@@ -346,7 +358,9 @@ def main() -> None:
     )
     audit.check("K4 packet references weak-front no-go", WEAK_FRONT_NO_GO.name in note and "unsupplied upstream input" in note)
     audit.check("K4 packet references D17 block decision", D17_BLOCK_DECISION.name in note and "CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED" in note)
+    audit.check("K4 packet references SU2 context decision", SU2_CONTEXT_DECISION.name in note and "SU2_WEAK_COUPLING_CONTEXT_RETAINED" in note)
     audit.check("D17 block decision remains below weak-front and K4", "CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED" in d17_block_decision and "does not ratify the weak-front base" in d17_block_decision)
+    audit.check("SU2 context decision remains below weak-front and K4", "SU2_WEAK_COUPLING_CONTEXT_RETAINED" in su2_context_decision and "does not ratify the weak-front base" in su2_context_decision)
     audit.check("weak-front no-go keeps base unsupplied", "current retained, primitive, and open-PR surfaces do not supply" in weak_front_no_go and "WEAK_FRONT_BASE_RETAINED" in weak_front_no_go)
     audit.check("lepton-scale probe carries front factorization", "y_scale := a_lepton" in lepton_scale and "g_2" in lepton_scale and "1/256" in lepton_scale)
     audit.check("source decision remains source-side only", "This is source-side only" in source_decision and "does not derive" in source_decision)

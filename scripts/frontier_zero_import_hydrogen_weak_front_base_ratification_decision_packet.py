@@ -20,6 +20,7 @@ GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 K4_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 WEAK_FRONT_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 D17_BLOCK_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md"
+SU2_CONTEXT_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_SU2_COUPLING_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 A3_P2 = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_WEAK_FRONT_THRESHOLD_TARGET_DISCRIMINATOR_2026-07-04.md"
 LEPTON_SCALE = ROOT / "docs" / "LEPTON_SCALE_FRONTIER_PROBE_2026-06-05.md"
 D17_SUPPORT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_D17_FULL_CELL_SEPARABILITY_SUPPORT_2026-07-04.md"
@@ -124,6 +125,7 @@ def main() -> None:
         K4_PACKET,
         WEAK_FRONT_NO_GO,
         D17_BLOCK_DECISION,
+        SU2_CONTEXT_DECISION,
         A3_P2,
         LEPTON_SCALE,
         D17_SUPPORT,
@@ -172,6 +174,15 @@ def main() -> None:
         "D17_ONLY_NO_SOURCE_SINGLETON_OR_A3_INPUT",
         "NO_WEAK_COUPLING_OR_FRONT_BASE_INPUT",
         "NO_MASS_OR_COMPARATOR_PROOF_INPUT",
+        "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_SU2_COUPLING_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "SU2_WEAK_COUPLING_CONTEXT_TEXT_LOCK",
+        "CL3_SU2_WEAK_CONTEXT_ACCEPTED",
+        "BARE_G2_SYMBOL_SCOPE_LOCK",
+        "CHARGED_LEPTON_WEAK_DOUBLET_SCOPE_LOCK",
+        "RUNNING_STRUCTURE_BOUNDARY_LOCK",
+        "NO_PHYSICAL_G2V_OR_MW_INPUT",
+        "NO_THRESHOLD_OR_A3_MATCHING_INPUT",
+        "NO_D17_SOURCE_SINGLETON_OR_MASS_INPUT",
         "EXACT_SOURCE_SINGLETON_RETAINED",
         "A3_PRECISION_PLACEMENT_RETAINED",
         "CHARGED_LEPTON_FRONT_MATCHING_RETAINED",
@@ -244,6 +255,7 @@ def main() -> None:
     k4_packet = read(K4_PACKET)
     weak_front_no_go = read(WEAK_FRONT_NO_GO)
     d17_block_decision = read(D17_BLOCK_DECISION)
+    su2_context_decision = read(SU2_CONTEXT_DECISION)
     a3_p2 = read(A3_P2)
     lepton_scale = read(LEPTON_SCALE)
     d17_support = read(D17_SUPPORT)
@@ -283,7 +295,9 @@ def main() -> None:
     audit.check("K4 packet consumes weak front base", "WEAK_FRONT_BASE_RETAINED" in k4_packet)
     audit.check("weak-front packet references weak-front current no-go", WEAK_FRONT_NO_GO.name in note and "base-front target remains needed" in note)
     audit.check("weak-front packet references D17 block decision", D17_BLOCK_DECISION.name in note and "D17_BLOCK_NORMALIZATION_TEXT_LOCK" in note)
+    audit.check("weak-front packet references SU2 context decision", SU2_CONTEXT_DECISION.name in note and "SU2_WEAK_COUPLING_CONTEXT_TEXT_LOCK" in note)
     audit.check("D17 block decision feeds this weak-front packet", NOTE.name in d17_block_decision and "CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED" in d17_block_decision)
+    audit.check("SU2 context decision feeds this weak-front packet", NOTE.name in su2_context_decision and "SU2_WEAK_COUPLING_CONTEXT_RETAINED" in su2_context_decision)
     audit.check("weak-front no-go keeps base unsupplied", "current retained, primitive, and open-PR surfaces do not supply" in weak_front_no_go and "WEAK_FRONT_BASE_RETAINED" in weak_front_no_go)
     audit.check("goal packet consumes weak front base lane", NOTE.name in goal and "WEAK_FRONT_BASE_RETAINED" in goal)
     audit.check("minimal axioms keep downstream bridges outside axiom content", "Further physical structure requires derivation, bridge, explicit admission, or approved primitive registration" in flat(minimal))
@@ -301,6 +315,7 @@ def main() -> None:
         audit.check(f"registry current_path for {node_name}", nodes[node_name]["current_path"] == path)
     for absent in [
         "weak_front_base_primitive",
+        "su2_weak_coupling_context_primitive",
         "weak_front_matching_primitive",
         "a3_correction_primitive",
         "charged_lepton_scale_primitive",

@@ -240,6 +240,21 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   physical spin-lift action law, the KS child theorem, parent bridge, HW1,
   carrier context, fixed-point readout, R-eta, K2, `m_e`, `alpha(0)`, or
   hydrogen.
+  The trivial scalar-lift covariance exclusion target discriminator
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md`
+  packages the other narrower subinput under the scalar-lift exclusion lane:
+  `TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RETAINED`. The ratification
+  packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  makes that a finite covariance-failure owner/audit contract, and the
+  current-surface no-go
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+  records that current retained, primitive, merged-PR, and open-PR surfaces do
+  not supply `TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RETAINED`. This lane can
+  feed the scalar-lift exclusion route only if retained; it does not supply
+  the route-defined `sigma.p` kernel handoff, scalar-lift parent handoff, KS
+  physical action law, parent bridge, HW1, carrier context, fixed-point
+  readout, R-eta, K2, `m_e`, `alpha(0)`, or hydrogen.
   The KS-route spinful kernel-object theorem target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_TARGET_DISCRIMINATOR_2026-07-05.md`
   packages the object-theorem child subinput under the sigma-dot-p route:
@@ -1598,6 +1613,9 @@ physical carrier context, h-unit identity, retained R-eta readout retirement,
                         | R-eta spinful sigma-dot-p KS-route kernel target | Open child subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_TARGET_DISCRIMINATOR_2026-07-05.md` packages `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED`; it can feed the scalar-lift exclusion route only, not scalar-lift covariance exclusion, the scalar-lift handoff, KS action law, parent bridge, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta spinful sigma-dot-p KS-route kernel ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the route-kernel owner/audit contract; it does not derive the route-defined momentum/link-phase input or spinful kernel-object theorem itself. |
                         | R-eta spinful sigma-dot-p KS-route kernel current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED`. |
+                        | R-eta trivial scalar-lift covariance exclusion target | Open child subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` packages `TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RETAINED`; it can feed the scalar-lift exclusion route only, not the route-defined `sigma.p` kernel, scalar-lift parent handoff, KS action law, parent bridge, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
+                        | R-eta trivial scalar-lift covariance exclusion ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the finite covariance-failure owner/audit contract; it does not derive the route-defined spinful kernel theorem itself. |
+                        | R-eta trivial scalar-lift covariance exclusion current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RETAINED`. |
                         | R-eta KS-route spinful kernel-object theorem target | Open child subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_TARGET_DISCRIMINATOR_2026-07-05.md` packages `KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RETAINED`; it can feed the sigma-dot-p route only, not route momentum/link phase, scalar-lift exclusion, KS action law, parent bridge, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta KS-route spinful kernel-object theorem ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the child owner/audit contract over the Pauli-vector and Kawamoto-Smit support stack; it does not derive the route-defined momentum/link-phase input or parent sigma-dot-p handoff. |
                         | R-eta KS-route spinful kernel-object theorem current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RETAINED`. |

@@ -414,6 +414,22 @@ action law, KS child theorem, parent state-law bridge, HW1, the charged-lepton
 carrier theorem, carrier context, h-class, h-unit, R-eta, electron readout,
 physical electron mass, alpha input, or hydrogen.
 
+The R-eta trivial scalar-lift covariance exclusion target discriminator
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md`),
+ratification decision packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md`),
+and current-surface no-go
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
+package `TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RETAINED` as a child
+subinput under the scalar-lift exclusion lane. Current retained, primitive,
+merged-PR, and open-PR surfaces do not supply it; it can feed only the
+scalar-lift exclusion route after retention and does not supply the
+route-defined `sigma.p` kernel handoff, scalar-lift parent handoff, KS
+physical action law, KS child theorem, parent state-law bridge, HW1, the
+charged-lepton carrier theorem, carrier context, h-class, h-unit, R-eta,
+electron readout, physical electron mass, alpha input, or hydrogen. It is a
+finite covariance-failure decision shape only.
+
 The R-eta KS-route spinful kernel-object theorem target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_TARGET_DISCRIMINATOR_2026-07-05.md`),
 ratification decision packet

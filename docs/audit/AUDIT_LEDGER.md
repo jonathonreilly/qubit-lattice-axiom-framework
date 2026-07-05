@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 192 |
-| **retained_bounded** | 868 |
+| **retained_bounded** | 869 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1938 |
+| unaudited | 1937 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1244 |
+| `audited_clean` | 1245 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2276 |
+| `unaudited` | 2275 |
 
 | claim_type | count |
 |---|---:|
@@ -148,6 +148,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1618,6 +1619,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On the Boolean corner cube, complementation maps the hw=1 triplet bijectively to the hw=2 triplet, commutes with the C3[111] rotation, and the scoped finite relabeling/readout/profile checks leave no distinguishing invariant within the stated finite surface.  _(class `A`)_
 - **chain closes:** True — The claim closes as finite algebra and symbolic enumeration within the stated surface. It does not require or assert a physical-species bridge, full-dynamics complementation equivariance, or any registry/status change.
 - **rationale:** The runner actually enumerates the Boolean cube, the order-48 coordinate-permutation/bit-flip relabelings, the C3 orbit structure, and the listed triplet profiles, and it symbolically verifies the circulant determinant and orientation-odd readout identities. The load-bearing step is exact finite algebra rather than a definition substitution, external comparator, or tuned numerical match. The source note is scoped to support-only finite-surface content and expressly avoids the unclosed physical bridge and registry implications.
+- **auditor confidence:** high
+
+### `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11`
+
+- **Note:** [`ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md`](../../docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Relative to the accepted realized-state primitive and the cited retained algebra/no-go inputs, AC_phi_lambda sub-admission (i)'s per-lane value face is classified as realized-state registration, while the measure-side grain realization remains an open frontier.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-audit-wave-acphi-row1-fresh`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** `r` takes different values on different law-admissible realized states and is an already-defined functional of the registered signed-root masses, so by the realized-state primitive it is registered data rather than derivation output.  _(class `A`)_
+- **chain closes:** True — The packet supplies the primitive rule, retained algebraic lever/biconditional inputs, and no-go/law-freeness authorities needed for the bounded classification. The conclusion does not derive r=1/2 or select a grain; those are explicitly outside scope.
+- **rationale:** Within the stated bounded scope, the note closes: the runner verifies the algebraic r-functional, the multi-r firewall, the relevant primitive/axiom text, and the survival of both grain models. The single PDG check is labeled comparator-only and is not load-bearing on the classification. The proof does not silently promote the measure-side frontier or derive the charged-lepton value, so the clean verdict applies only to the value-face reduction and frontier naming.
 - **auditor confidence:** high
 
 ### `acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05`

@@ -275,12 +275,16 @@ def main() -> int:
     )
     md_links = re.findall(r"\]\(([^)]+\.md)\)", note)
     expected_links = [
-        "MINIMAL_AXIOMS_2026-06-05.md",
+        "KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md",
+        "MINIMAL_AXIOMS_2026-06-29.md",
         "REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md",
     ]
     check(
-        "B15: note .md link inventory is exactly the two load-bearing deps and both resolve",
-        md_links == expected_links and all((root / "docs" / link).exists() for link in md_links),
+        "B15: note .md link inventory is exactly the three load-bearing deps "
+        "(2026-06-29 memo; KCPT T1 supplied-context bridge; additive/even "
+        "registrable surface) and all resolve",
+        sorted(set(md_links)) == expected_links
+        and all((root / "docs" / link).exists() for link in md_links),
         detail=f"md_links={md_links}",
     )
 

@@ -109,6 +109,14 @@ move the composition-control input if owner/audit accepted, but it does not
 select a placement theorem, derive `C_A3`, derive `N_A3`, or supply
 `A3_PRECISION_PLACEMENT_RETAINED`.
 
+The P2 charged-lepton front-matching ratification decision packet
+`ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+opens the positive P2 branch handoff. If its ten inputs are accepted after a
+retained `MATCHING_THEOREM_RETAINED` exists, it can conditionally supply
+`CHARGED_LEPTON_FRONT_MATCHING_RETAINED` and `P2_WEAK_FRONT_MATCHING_RETAINED`.
+That still does not select the parent A3 placement by itself and does not
+close K4.
+
 ## Current-Surface Audit
 
 | surface | supplies | does not supply |
@@ -119,6 +127,7 @@ select a placement theorem, derive `C_A3`, derive `N_A3`, or supply
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_NO_DOUBLE_COUNT_COMPOSITION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | conditional no-double-count composition handoff | selected placement theorem, correction value, or retained A3 placement |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P1_SOURCE_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for P1 | retained P1 placement theorem |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for P2 | retained P2 placement theorem |
+| `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_RATIFICATION_DECISION_PACKET_2026-07-05.md` | positive P2 front-matching owner/audit handoff | current matching theorem, parent A3 placement, or K4 closure |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P3_KOIDE_ELECTRON_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for P3 | retained P3 placement theorem |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P4_DIRECT_NONINTEGER_DIVISOR_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for P4 | retained P4 placement theorem |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_CURRENT_SURFACE_NO_GO_2026-07-05.md` | exact source singleton current-surface boundary | A3 correction placement |
@@ -158,6 +167,7 @@ Merge-state labels are moving review metadata, not proof inputs.
 | P1-P4 each had branch no-gos | the aggregate current-surface non-supply boundary for `A3_PRECISION_PLACEMENT_RETAINED` is explicit |
 | product-equivalent placements could be overread as retained A3 placement | one-placement, retained-theorem, and no-double-count controls are separated |
 | no-double-count was embedded in the larger A3 placement packet | the single-spend composition law now has a standalone decision contract |
+| P2 had no positive handoff after its current-surface no-go | the P2 front-matching route has an explicit ten-input packet but is still unaccepted |
 | K4 could count the A3 decision packet as current retained input | K4 must treat A3 placement as unsupplied until retained derivation or owner/audit acceptance lands |
 
 ## No-Go Discipline Gate
@@ -267,6 +277,7 @@ Legitimate partial-closure paths remain:
 |---|---|
 | retained corrected source-readout theorem | P1 and selected A3 placement |
 | retained charged-lepton weak-front matching theorem | P2 and selected A3 placement |
+| owner/audit acceptance of the P2 front-matching decision packet after a theorem exists | P2 branch input for selected A3 placement |
 | retained Koide/electron correction theorem | P3 and selected A3 placement |
 | retained direct noninteger-divisor theorem | P4 and selected A3 placement |
 | retained composition law proving no double count | composite placement, if more than one branch is used |

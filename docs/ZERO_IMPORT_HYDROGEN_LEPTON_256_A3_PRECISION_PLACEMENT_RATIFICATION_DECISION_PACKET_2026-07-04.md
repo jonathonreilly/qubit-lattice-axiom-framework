@@ -71,6 +71,18 @@ records that current surfaces do not supply
 empirical `256.082435...` target remain scaffold/target rather than retained
 direct-divisor closure.
 
+The P2 charged-lepton front-matching ratification decision packet
+`ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+opens the positive P2 handoff as a ten-input owner/audit contract:
+P2_MATCHING_TEXT_LOCK, WEAK_FRONT_BASE_RETAINED,
+EXACT_SOURCE_SINGLETON_RETAINED, MATCHING_THEOREM_RETAINED,
+P2_PLACEMENT_SELECTED, NO_SOURCE_DOUBLE_COUNT,
+NO_MW_OR_LEPTON_COMPARATOR_PROOF_INPUT, NO_NEW_PRIMITIVE_OR_AXIOM,
+OWNER_RATIFICATION, and AUDIT_ACCEPTANCE. If accepted, it can conditionally
+supply `CHARGED_LEPTON_FRONT_MATCHING_RETAINED` and the P2 branch input
+`P2_WEAK_FRONT_MATCHING_RETAINED`; it does not derive `C_A3`, ratify the
+parent A3 placement decision, or close K4 by itself.
+
 ## Ratification Decision Contract
 
 This packet is decision-ready only if all nine contract inputs are visible:
@@ -199,6 +211,7 @@ Merge-state labels are moving review metadata, not proof inputs here.
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P4_DIRECT_NONINTEGER_DIVISOR_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface audit for P4 direct noninteger divisor | no direct divisor theorem or retained P4 placement on current surfaces |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_WEAK_FRONT_THRESHOLD_TARGET_DISCRIMINATOR_2026-07-04.md` | sharpens the P2 target as `F_phys = C_A3 * g_2 * (1/sqrt(2))` and `ell_A3 ~= 0.03768480771` | does not derive charged-lepton front matching |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_CURRENT_SURFACE_NO_GO_2026-07-05.md` | audits current P2 front-matching surfaces | current surfaces do not supply `P2_WEAK_FRONT_MATCHING_RETAINED` or `CHARGED_LEPTON_FRONT_MATCHING_RETAINED` |
+| `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the positive P2 front-matching owner/audit handoff | no current matching theorem, parent A3 placement ratification, K4 scale assembly, or electron mass |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md` | keeps electron-branch readout gates explicit | does not supply P3 |
 | `ZERO_IMPORT_HYDROGEN_ALPHA_QED_LOOP_KERNEL_TARGET_DISCRIMINATOR_2026-07-04.md` | separates QED loop-kernel and threshold/matching work for `alpha(0)` | downstream of A3 for hydrogen |
 | approved primitives | scale reference, OS0 kinetic-form isotropy, realized-state evaluation discipline | no mass ratio, correction factor, selector, readout bridge, weighting rule, or empirical match |
@@ -214,6 +227,7 @@ declared roles, but they do not supply A3 precision placement, `C_A3`,
 | A3 was a precision residual plus placement discriminator | the owner/audit handoff is a single nine-input placement contract |
 | product-equivalent placements could be conflated | the one-placement/no-double-count rule is explicit |
 | the P2 target was sharpened but not integrated into the attack order | P2 is one admissible branch inside the A3 decision object |
+| P2 had no positive decision handoff | the P2 front-matching route now has an explicit ten-input owner/audit packet |
 
 ## No-Go Discipline Gate
 
@@ -298,6 +312,7 @@ Legitimate import-retirement paths remain:
 |---|---|
 | retained corrected source-readout theorem | P1 |
 | retained charged-lepton weak-front matching theorem | P2 |
+| accepted P2 front-matching decision packet after `MATCHING_THEOREM_RETAINED` exists | P2 |
 | retained Koide/electron correction theorem | P3 |
 | retained direct noninteger-divisor theorem | P4 |
 | retained composition law proving two corrections do not double-count | a later composite placement |

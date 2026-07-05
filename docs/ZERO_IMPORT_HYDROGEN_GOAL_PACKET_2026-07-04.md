@@ -511,6 +511,17 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   supply `CHARGED_LEPTON_FRONT_MATCHING_RETAINED`. Its explicit missing input
   is `MATCHING_THEOREM_RETAINED`; P2 remains open but cannot be counted as K4
   support yet.
+  The P2 front-matching ratification decision packet
+  `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  opens the positive P2 handoff as a ten-input owner/audit contract:
+  P2_MATCHING_TEXT_LOCK, WEAK_FRONT_BASE_RETAINED,
+  EXACT_SOURCE_SINGLETON_RETAINED, MATCHING_THEOREM_RETAINED,
+  P2_PLACEMENT_SELECTED, NO_SOURCE_DOUBLE_COUNT,
+  NO_MW_OR_LEPTON_COMPARATOR_PROOF_INPUT, NO_NEW_PRIMITIVE_OR_AXIOM,
+  OWNER_RATIFICATION, and AUDIT_ACCEPTANCE. If accepted, it conditionally
+  supplies `CHARGED_LEPTON_FRONT_MATCHING_RETAINED` and the P2 branch input
+  `P2_WEAK_FRONT_MATCHING_RETAINED`; it still does not derive `C_A3`, ratify
+  parent `A3_PRECISION_PLACEMENT_RETAINED`, close K4, or claim hydrogen.
   The P3 Koide/electron-readout correction current-surface no-go
   `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P3_KOIDE_ELECTRON_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md`
   records that current Koide/electron, primitive, and open-PR surfaces do not
@@ -1026,6 +1037,18 @@ remain support, not the retained physical-unit one-body theorem.
 				   source readout. Current surfaces do not supply
 				   `P1_SOURCE_READOUT_CORRECTION_RETAINED`; the missing input is
 				   `CORRECTED_SOURCE_READOUT_THEOREM_RETAINED`.
+                   The P2 front-matching ratification decision packet
+                   (`ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_RATIFICATION_DECISION_PACKET_2026-07-05.md`)
+                   packages P2_MATCHING_TEXT_LOCK, WEAK_FRONT_BASE_RETAINED,
+                   EXACT_SOURCE_SINGLETON_RETAINED, MATCHING_THEOREM_RETAINED,
+                   P2_PLACEMENT_SELECTED, NO_SOURCE_DOUBLE_COUNT,
+                   NO_MW_OR_LEPTON_COMPARATOR_PROOF_INPUT,
+                   NO_NEW_PRIMITIVE_OR_AXIOM, OWNER_RATIFICATION, and
+                   AUDIT_ACCEPTANCE as the positive P2 handoff. If accepted, it
+                   conditionally supplies `CHARGED_LEPTON_FRONT_MATCHING_RETAINED`
+                   and `P2_WEAK_FRONT_MATCHING_RETAINED`, but does not derive
+                   `C_A3`, ratify parent `A3_PRECISION_PLACEMENT_RETAINED`, close
+                   K4, or claim hydrogen.
 				   The P3 Koide/electron-readout correction current-surface no-go
 				   (`ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P3_KOIDE_ELECTRON_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
 				   records that Koide/electron route hygiene, including `#5007`,

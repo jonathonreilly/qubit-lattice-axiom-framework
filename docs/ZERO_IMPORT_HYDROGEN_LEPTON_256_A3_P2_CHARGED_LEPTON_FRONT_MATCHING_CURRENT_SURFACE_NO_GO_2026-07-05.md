@@ -63,6 +63,13 @@ matching theorem itself:
 MATCHING_THEOREM_RETAINED.
 ```
 
+The P2 front-matching ratification decision packet
+`ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages that positive handoff as a ten-input owner/audit contract. If
+accepted, it can conditionally supply `CHARGED_LEPTON_FRONT_MATCHING_RETAINED`
+and the P2 branch input `P2_WEAK_FRONT_MATCHING_RETAINED`, but it does not
+derive `C_A3`, does not ratify A3 precision placement, and does not close K4.
+
 ## Target Arithmetic
 
 The current P2 target is sharp:
@@ -90,6 +97,7 @@ Those numbers define the wall. They are not proof inputs.
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | uncorrected `F_0 = g_2 * (1/sqrt(2))` handoff | `C_A3`, threshold matching, pole matching, or scheme matching |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_WEAK_FRONT_THRESHOLD_TARGET_DISCRIMINATOR_2026-07-04.md` | sharp target for P2, including `ell_A3` | retained charged-lepton front-matching theorem |
+| `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_RATIFICATION_DECISION_PACKET_2026-07-05.md` | ten-input P2 front-matching owner/audit handoff | current retained matching theorem or A3/K4 closure |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_RATIFICATION_DECISION_PACKET_2026-07-04.md` | one-placement/no-double-count decision surface | the selected placement theorem |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_PRECISION_CORRECTION_FIREWALL_2026-07-04.md` | correction size and possible route shapes | retained running, threshold, determinant, or direct-divisor theorem |
 | `SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md` | structural `b_2 = 19/6` running slope support | charged-lepton threshold interval or finite matching factor |
@@ -109,6 +117,11 @@ green, but they do not close P2 front matching:
 | PR | state at refresh | A3/P2 effect |
 |---|---:|---|
 | `#5013` theta native positive-class adjudication | `CLEAN` / `SUCCESS` | theta gauge-side work; no charged-lepton front matching |
+| `#5018` domain-wall edge content vs SM chiral fermions map | open | chirality/domain-wall edge-content work; no charged-lepton front matching |
+| `#5017` domain-wall edge anomaly inflow via spectral flow | open | chirality/anomaly-inflow work; no A3 P2 theorem |
+| `#5016` zero-import hydrogen retained lane bundle | open | carries the P2 front-matching handoff work |
+| `#5015` wave-collapse-block01 measurement-collapse gate | open draft | measurement-collapse context; no P2 matching theorem |
+| `#5014` record-formation front/domain-wall chirality | open | adjacent chirality science; no P2 matching theorem |
 | `#5012` chirality domain-wall free-field note | `CLEAN` / `SUCCESS` | adjacent chirality science; no A3 P2 theorem |
 | `#5011` eta twisted walk family runner | `CLEAN` / `SUCCESS` | runner stabilization; no charged-lepton matching law |
 | `#5010` YT P1 I_s re-audit packet bridge repair | `CLEAN` / `SUCCESS` | YT/P1 diagnostic repair; no P2 placement theorem |
@@ -125,6 +138,7 @@ Merge-state labels are moving review metadata, not proof inputs.
 |---|---|
 | weak-front base and P2 target could be mistaken for the missing theorem | base, target, and matching theorem are separated |
 | `b_2 = 19/6` support could be overread as a threshold interval | the slope and the interval are separate |
+| P2 had only a target and current-surface no-go | the positive P2 owner/audit handoff is opened explicitly |
 | K4 could appear one step closer than it is | the missing `MATCHING_THEOREM_RETAINED` input is explicit |
 
 ## No-Go Discipline Gate
@@ -205,6 +219,7 @@ Legitimate import-retirement paths remain:
 |---|---|
 | retained finite charged-lepton threshold theorem deriving `C_A3` | P2 matching |
 | retained scheme/pole conversion theorem with no comparator proof input | P2 matching |
+| owner/audit acceptance of the P2 front-matching decision packet after a theorem exists | `CHARGED_LEPTON_FRONT_MATCHING_RETAINED` and the P2 branch input |
 | retained composition law routing the same correction outside P2 | avoids double count |
 | retained P3 Koide/electron correction theorem | alternate placement |
 | retained P4 direct noninteger-divisor theorem | alternate placement |

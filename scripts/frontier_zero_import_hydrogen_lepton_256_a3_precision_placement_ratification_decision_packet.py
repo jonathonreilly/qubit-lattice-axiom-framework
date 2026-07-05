@@ -26,6 +26,7 @@ A3_NO_DOUBLE_COUNT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_NO_DOUB
 P1_SOURCE_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P1_SOURCE_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 P2_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_WEAK_FRONT_THRESHOLD_TARGET_DISCRIMINATOR_2026-07-04.md"
 P2_FRONT_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+P2_FRONT_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 P3_KOIDE_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P3_KOIDE_ELECTRON_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 P4_DIRECT_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P4_DIRECT_NONINTEGER_DIVISOR_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 KOIDE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md"
@@ -137,6 +138,7 @@ def main() -> None:
         P1_SOURCE_NO_GO,
         P2_TARGET,
         P2_FRONT_NO_GO,
+        P2_FRONT_DECISION,
         P3_KOIDE_NO_GO,
         P4_DIRECT_NO_GO,
         KOIDE,
@@ -171,6 +173,10 @@ def main() -> None:
         "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "current surfaces do not supply `P2_WEAK_FRONT_MATCHING_RETAINED`",
         "CHARGED_LEPTON_FRONT_MATCHING_RETAINED",
+        "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "P2_MATCHING_TEXT_LOCK",
+        "MATCHING_THEOREM_RETAINED",
+        "P2 front-matching route now has an explicit ten-input owner/audit packet",
         "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P3_KOIDE_ELECTRON_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "current surfaces do not supply `P3_KOIDE_ELECTRON_READOUT_CORRECTION_RETAINED`",
         "KOIDE_ELECTRON_A3_CORRECTION_THEOREM_RETAINED",
@@ -273,6 +279,7 @@ def main() -> None:
     a3_no_double_count = read(A3_NO_DOUBLE_COUNT)
     p1_source_no_go = read(P1_SOURCE_NO_GO)
     p2_target = read(P2_TARGET)
+    p2_front_decision = read(P2_FRONT_DECISION)
     p3_koide_no_go = read(P3_KOIDE_NO_GO)
     p4_direct_no_go = read(P4_DIRECT_NO_GO)
     koide = read(KOIDE)
@@ -298,6 +305,7 @@ def main() -> None:
     audit.check("no-double-count packet is composition-only", "NO_SOURCE_DOUBLE_COUNT" in a3_no_double_count and "does not select P1/P2/P3/P4" in a3_no_double_count)
     audit.check("P1 current-surface no-go keeps source correction open", "P1_SOURCE_READOUT_CORRECTION_RETAINED" in p1_source_no_go and "CORRECTED_SOURCE_READOUT_THEOREM_RETAINED" in p1_source_no_go)
     audit.check("P2 target names weak-front theorem", "F_phys = C_A3 * g_2 * (1/sqrt(2))" in p2_target and "CHARGED_LEPTON_FRONT_MATCHING_RETAINED" in p2_target)
+    audit.check("P2 decision packet opens matching handoff", "P2_MATCHING_TEXT_LOCK" in p2_front_decision and "P2_WEAK_FRONT_MATCHING_RETAINED" in p2_front_decision)
     audit.check("P3 current-surface no-go keeps Koide readout correction open", "P3_KOIDE_ELECTRON_READOUT_CORRECTION_RETAINED" in p3_koide_no_go and "KOIDE_ELECTRON_A3_CORRECTION_THEOREM_RETAINED" in p3_koide_no_go)
     audit.check("P4 current-surface no-go keeps direct divisor open", "P4_DIRECT_NONINTEGER_DIVISOR_RETAINED" in p4_direct_no_go and "DIRECT_NONINTEGER_DIVISOR_THEOREM_RETAINED" in p4_direct_no_go)
     audit.check("Koide firewall leaves electron readout open", "No derivation of `m_e`" in koide and "physical electron species bridge" in koide)

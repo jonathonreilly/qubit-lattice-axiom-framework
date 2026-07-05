@@ -224,6 +224,17 @@ accepted, it can conditionally supply `NO_SOURCE_A3_DOUBLE_COUNT` and
 `C_A3`, `N_A3`, or electron mass. K4 must still treat A3 placement itself as
 an unsupplied upstream input.
 
+The P2 charged-lepton front-matching ratification decision packet
+`ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+opens the front-matching branch under A3: P2_MATCHING_TEXT_LOCK,
+WEAK_FRONT_BASE_RETAINED, EXACT_SOURCE_SINGLETON_RETAINED,
+MATCHING_THEOREM_RETAINED, P2_PLACEMENT_SELECTED, NO_SOURCE_DOUBLE_COUNT,
+NO_MW_OR_LEPTON_COMPARATOR_PROOF_INPUT, NO_NEW_PRIMITIVE_OR_AXIOM,
+OWNER_RATIFICATION, and AUDIT_ACCEPTANCE. If accepted, it can conditionally
+supply `CHARGED_LEPTON_FRONT_MATCHING_RETAINED` and
+`P2_WEAK_FRONT_MATCHING_RETAINED`; K4 must still wait for parent
+`A3_PRECISION_PLACEMENT_RETAINED`.
+
 ## Current Open PR Alignment
 
 Open PRs were refreshed on 2026-07-04 local time / 2026-07-05 UTC before this
@@ -265,6 +276,7 @@ inputs here.
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P1_SOURCE_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface audit for P1 source-readout correction | no `P1_SOURCE_READOUT_CORRECTION_RETAINED` or `CORRECTED_SOURCE_READOUT_THEOREM_RETAINED` on current surfaces |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_WEAK_FRONT_THRESHOLD_TARGET_DISCRIMINATOR_2026-07-04.md` | sharp P2 weak-front target | target support only, not retained front matching |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface audit for P2 matching | no `CHARGED_LEPTON_FRONT_MATCHING_RETAINED` or `MATCHING_THEOREM_RETAINED` on current surfaces |
+| `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_RATIFICATION_DECISION_PACKET_2026-07-05.md` | positive P2 front-matching owner/audit handoff | no current matching theorem, parent A3 placement, K4 scale assembly, or electron mass |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P3_KOIDE_ELECTRON_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface audit for P3 Koide/electron readout correction | no `P3_KOIDE_ELECTRON_READOUT_CORRECTION_RETAINED` or `KOIDE_ELECTRON_A3_CORRECTION_THEOREM_RETAINED` on current surfaces |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P4_DIRECT_NONINTEGER_DIVISOR_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface audit for P4 direct noninteger divisor | no `P4_DIRECT_NONINTEGER_DIVISOR_RETAINED` or `DIRECT_NONINTEGER_DIVISOR_THEOREM_RETAINED` on current surfaces |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md` | separates K1/K2/K3/K4 | prevents spending K4 as full `m_e` |
@@ -281,6 +293,7 @@ nodes, not walls, but they also do not supply the K4 scale-assembly decision.
 |---|---|
 | K4 was named as an absolute-scale blocker | K4 has a ten-input owner/audit decision contract |
 | exact `1/256` and A3 precision could be conflated | exact source singleton and A3 placement are separated by a no-double-count rule |
+| P2 front matching was only target/no-go context | the positive P2 handoff is opened, while K4 still waits for parent A3 placement |
 | K4 could be confused with full electron mass | the packet keeps native bridge and species bridge downstream of the scale assembly |
 
 ## No-Go Discipline Gate
@@ -366,6 +379,7 @@ Legitimate import-retirement paths remain:
 | owner/audit acceptance of the source-probe packet | exact source singleton |
 | retained charged-lepton weak-front theorem | weak-front base |
 | retained A3 placement theorem | precision placement |
+| accepted P2 front-matching packet after `MATCHING_THEOREM_RETAINED` exists | A3/P2 branch input, still upstream of K4 |
 | retained composition law preventing double count | composite K4 scale |
 | retained Koide/electron correction theorem | P3 alternative, not silent K4 |
 

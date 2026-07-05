@@ -2,11 +2,11 @@
   "criticality_counts": {
     "critical": 665,
     "high": 473,
-    "leaf": 1713,
+    "leaf": 1714,
     "medium": 970
   },
   "flagship_signal_used": false,
-  "node_count": 3821,
+  "node_count": 3822,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -19,14 +19,14 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 190.37,
-      "transitive_descendants": 1870
+      "load_bearing_score": 190.87,
+      "transitive_descendants": 1871
     },
     {
       "claim_id": "three_generation_observable_theorem_note",
       "criticality": "critical",
-      "load_bearing_score": 67.17,
-      "transitive_descendants": 1151
+      "load_bearing_score": 67.171,
+      "transitive_descendants": 1152
     },
     {
       "claim_id": "quark_route2_exact_readout_map_note_2026-04-19",

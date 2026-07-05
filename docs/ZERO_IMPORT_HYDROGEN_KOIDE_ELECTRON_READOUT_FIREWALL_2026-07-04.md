@@ -213,6 +213,13 @@ records the latest open K2 value-face movement. It separates registered
 is sharper, but no electron readout, physical electron mass, alpha input, or
 hydrogen input is supplied.
 
+The Koide R-eta exactness target discriminator
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md`)
+names the successor handoff as `K2_R_ETA_EXACTNESS_RETAINED`: registered
+value-face acceptance, a retained exact `2/9` theorem, radian-readout license,
+fold/branch domain lock, no K1/K3/K4/mass input, comparator exclusion, owner
+ratification, and audit acceptance. It is a target contract, not K2 closure.
+
 ## Open PR Alignment
 
 Open PRs were checked on 2026-07-04 and refreshed on 2026-07-05 after `#5020`
@@ -321,6 +328,7 @@ No hidden admission is left buried as background.
 | `SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md` | K1 chiral/holomorphic forcing candidate | yes |
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | K2 delta comparator and scale boundary | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | K2 value-face registration versus exactness residual | yes |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` | successor target for `K2_R_ETA_EXACTNESS_RETAINED` | yes |
 | `CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md` | conditional K1/K2 closure through `AC_phi_lambda` | yes, as conditional only |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_ROUTE_TRIAGE_2026-07-04.md` | K4 scale suppression target | yes for scale, not for phase |
 | `axiom_premise_nodes.json` | primitive boundary | guard only; not a Koide witness |
@@ -349,6 +357,7 @@ There are legitimate partial-closure paths:
 | supertrace / equivariant-index / holomorphic determinant route | K1 counting-measure bit without consuming `AC_phi_lambda`. |
 | retained radian/readout bridge from finite `2/9` to charged-lepton `delta` | K2. |
 | registered-angle value-face plus retained exactness theorem | K2 value standing plus exactness. |
+| owner/audit acceptance of the K2 exactness target | `K2_R_ETA_EXACTNESS_RETAINED` after all target inputs are present. |
 | audited retirement of the `AC_phi_lambda` species bridge | K3. |
 | zero-import `1/256` derivation | K4. |
 

@@ -102,6 +102,13 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   records registered-angle K2 value-face progress while leaving exactness
   open; it does not derive `AC_phi_lambda`, `delta = 2/9`, Koide electron
   readout, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. The
+  Koide R-eta exactness target discriminator
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md`
+  packages the successor K2 target as `K2_R_ETA_EXACTNESS_RETAINED`; it needs
+  value-face acceptance, a retained exact `2/9` theorem, radian-readout
+  license, fold/branch domain lock, no K1/K3/K4/mass input, comparator
+  exclusion, owner ratification, and audit acceptance before K2 can be spent.
+  The
   Koide native zero-section bridge target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_TARGET_DISCRIMINATOR_2026-07-04.md`
   turns the first three bridge obligations into the explicit
@@ -1324,6 +1331,7 @@ here.
                             | `#5017`/`#5018` chirality/domain-wall impact boundary | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_CHIRALITY_DOMAIN_WALL_PR5017_5018_IMPACT_DISCRIMINATOR_2026-07-05.md` records these as above-C3 chirality/domain-wall context; it does not derive the K3 physical electron species bridge, Koide electron readout, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
                         | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as Koide premise-hygiene and audit-readiness context for the `AC_phi_lambda` decomposition chain; it does not derive `AC_phi_lambda`, Koide native zero-section closure, physical electron species, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
                         | `#5020` Koide R-eta value-face registered-angle/exactness relocation | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as K2 value-face progress; exactness remains open; it does not derive `AC_phi_lambda`, `delta = 2/9`, Koide electron readout, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
+                        | K2 R-eta exactness target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` packages the successor handoff `K2_R_ETA_EXACTNESS_RETAINED`; it is not supplied by #5020 and does not derive `m_e`, `alpha(0)`, or hydrogen. |
 		| `#4919`, `#4921` admissibility bootstrap continuation | Formation/orbit/chirality context; no direct closure of `m_e`, `S_l`, Koide readout, or `alpha(0)`. |
 
 ## Non-Claims

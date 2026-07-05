@@ -242,6 +242,12 @@ theorem and radian-readout license inputs under the two-ninths/radian subgate,
 but not value-face acceptance, K1, K3, K4, physical electron mass, alpha input,
 or hydrogen.
 
+The R-eta readout-retirement ratification decision packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_RATIFICATION_DECISION_PACKET_2026-07-05.md`)
+packages that handoff as an eleven-input owner/audit contract. It is a
+spendable wrapper for h-class plus h-unit, not retained R-eta, K2 exactness,
+physical electron mass, alpha input, or hydrogen.
+
 The R-eta h-unit identity-radian target
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md`)
 packages `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`, one subinput of R-eta
@@ -382,6 +388,7 @@ No hidden admission is left buried as background.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | K2 value-face registration versus exactness residual | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 R-eta supplied-premise conditionality boundary | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_READOUT_IDENTIFICATION_RETAINED`; h-class plus h-unit, not electron readout | yes |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | decision packet for the eleven-input `R_ETA_READOUT_IDENTIFICATION_RETAINED` handoff; not electron readout | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; identity-radian unit only, not electron readout | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_H_CLASS_RETAINED`; fixed-locus class membership only, not electron readout | yes |
 | `#5022` delta-eta R-eta supplied-premise audit repair | conditional R-eta bookkeeping, not retained derivation or electron readout | yes |

@@ -1098,6 +1098,15 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   accepted, it conditionally supplies `EXACT_SOURCE_SINGLETON_RETAINED` and
   exact source-side `S_l = 1/256` only; A3 placement, K4 scale assembly,
   `m_e`, `alpha(0)`, and hydrogen remain downstream.
+  The exact source singleton assembly ladder review packet
+  `ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+  groups the source-side child path without closing it: F/L/P/R clause
+  handoffs feed the source-probe interface; source-probe acceptance plus
+  full-cell, uniform-ray, and `S_l` readout checks feed
+  `EXACT_SOURCE_SINGLETON_RETAINED`; and K4 still treats exact source as only
+  one direct input. It is review compression only, not retained F/L/P/R,
+  retained source-probe interface, retained exact singleton, K4, physical
+  electron mass, `alpha(0)`, static-source Rydberg closure, or hydrogen.
   The absolute charged-lepton scale ratification decision packet
   `ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_RATIFICATION_DECISION_PACKET_2026-07-04.md`
   packages K4 after the source-side and A3 handoffs: K4_SCALE_TEXT_LOCK,
@@ -1715,6 +1724,17 @@ electron mass, alpha0, the NR Coulomb limit, or hydrogen.
 				   checks. It preserves exact source-side `S_l = 1/256` while
 				   excluding A3 placement, K4 scale assembly, electron mass,
 				   `alpha(0)`, and hydrogen.
+				   The exact source singleton assembly ladder review packet
+				   (`ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`)
+				   groups the source-side child path without closing it:
+				   F/L/P/R clause handoffs feed the source-probe interface;
+				   source-probe acceptance plus full-cell, uniform-ray, and
+				   `S_l` readout checks feed `EXACT_SOURCE_SINGLETON_RETAINED`;
+				   and K4 still treats exact source as only one direct input.
+				   It is review compression only, not retained F/L/P/R, retained
+				   source-probe interface, retained exact singleton, K4, physical
+				   electron mass, `alpha(0)`, static-source Rydberg closure, or
+				   hydrogen.
 				   The absolute charged-lepton scale ratification decision packet
 				   (`ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_RATIFICATION_DECISION_PACKET_2026-07-04.md`)
 				   packages K4 as the ten-input handoff after source-side exact

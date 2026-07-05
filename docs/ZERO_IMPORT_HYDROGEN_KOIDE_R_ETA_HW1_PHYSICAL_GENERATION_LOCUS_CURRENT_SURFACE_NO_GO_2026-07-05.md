@@ -63,6 +63,9 @@ AUDIT_ACCEPTANCE
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | fourteen-input target | retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | fourteen-input owner/audit decision packet | accepted retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md` | forked target for `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED` | retained state-law bridge |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | forked owner/audit decision packet for the state-law bridge | accepted retained state-law bridge |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for the state-law bridge | retained state-law bridge |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md` | carrier-context target that needs the charged-lepton carrier theorem | physical `hw=1` locus theorem |
 | `FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md` | momentum/BZ carrier type | physical `hw=1` locus |
 | `FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md` | parent integration map and residual consolidation | retained physical-locus bridge |
@@ -79,7 +82,7 @@ AUDIT_ACCEPTANCE
 | open `#5017` domain-wall anomaly inflow spectral flow | free-field anomaly-flow support | physical charged-lepton `hw=1` locus theorem |
 | open `#5018` domain-wall edge content vs SM chiral map | map with named gaps | physical charged-lepton `hw=1` locus theorem |
 | merged `#5023` Koide W4 audit-readiness repairs | W4 dependency hygiene | physical `hw=1` locus theorem |
-| open `#5024` Koide W4 gate-note premise minimization and substep1 rebase | gate-readiness and substep1 hygiene | physical `hw=1` locus theorem |
+| merged `#5024` Koide W4 gate-note premise minimization and substep1 rebase | gate-readiness and substep1 hygiene | physical `hw=1` locus theorem |
 | approved primitives | minimal axioms, scale reference, kinetic isotropy, realized-state evaluation discipline | locus selector, physical readout context, exact value, mass, alpha, or hydrogen |
 
 The primitive registry was checked. The approved primitive nodes are
@@ -100,7 +103,7 @@ inputs.
 | `#5014` record-formation front is the domain wall | open, audit success | formation-front/domain-wall support only |
 | `#5017` domain-wall edge anomaly inflow via spectral flow | open, audit success | free-field anomaly-flow support only |
 | `#5018` domain-wall edge content vs SM chiral fermions map | open, audit success | map with named gaps only |
-| `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | open, audit in progress after latest refresh | gate-readiness progress only; no physical `hw=1` locus theorem |
+| `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | merged, audit success | gate-readiness progress only; no physical `hw=1` locus theorem |
 | `#5023` Koide W4 audit-readiness repairs | merged, audit success | dependency hygiene only; no physical `hw=1` locus theorem |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft, audit success | primitive-boundary context only; no registry edit |
 | `#5016` zero-import hydrogen retained lane bundle | open | carries this current-surface no-go once pushed |
@@ -134,7 +137,7 @@ HW1_PHYSICAL_GENERATION_LOCUS_RETAINED.
 | K1 route | Treat flux-`-1` selection as charged-lepton locus selection. | PARTIAL ONLY. It is within-surface support. |
 | Hamming/C3 route | Treat exact triplet algebra as physical locus. | PARTIAL ONLY. It supplies algebra, not physical state-law. |
 | domain-wall route | Treat #5014/#5017/#5018 as physical locus closure. | ATTEMPTED. They add support but keep gaps. |
-| W4 PR route | Treat #5023/#5024 as locus closure. | ATTEMPTED. They are audit-readiness repairs, not the retained locus theorem. |
+| W4 PR route | Treat #5023/#5024 as locus closure. | ATTEMPTED. They are audit-readiness/gate-readiness repairs, not the retained locus theorem. |
 | primitive shortcut | Treat approved primitives as supplying the locus. | ATTEMPTED. Registered primitives supply no physical locus selector or readout bridge. |
 | comparator route | Use observed or fitted lepton/hydrogen data. | RULED OUT AS ZERO-IMPORT PROOF. Comparator data is target data, not proof input. |
 
@@ -163,7 +166,7 @@ and audit acceptance.
 | `domain-wall` / `anomaly inflow` | support only |
 | `registered` / `realized-state` | evaluation discipline, not selector |
 | `primitive` | registry checked; no shortcut |
-| `open PR` / `audit success` / `audit in progress` | queue/status signal only |
+| `open PR` / `merged PR` / `audit success` | queue/status signal only |
 | `observed` / `fitted` | comparator data, excluded |
 
 No physical matter-state-law theorem, owner decision, audit decision, primitive

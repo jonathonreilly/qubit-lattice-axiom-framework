@@ -5,6 +5,12 @@
 the retained dim-two row — see §0 changelog); 2026-06-11 science-fix #2
 (D2 module repair: lowering operator = Berezin derivative, not the
 generator — see §0 changelog)
+**Axiom-surface update:** 2026-07-05 — live axiom citations re-pointed from
+the superseded `MINIMAL_AXIOMS_2026-06-05.md` to the current four-axiom memo
+`MINIMAL_AXIOMS_2026-06-29.md`; the one-qubit-per-site carrier consumed here
+is the current memo's **Qubit** axiom (named "Quantum" in the superseded
+memo). Dated changelog entries keep the old memo name as historical record.
+No claim is changed.
 **Type:** positive_theorem
 **Claim type:** positive_theorem
 **Claim scope:** Two-candidate collapse on the framework's physical
@@ -198,8 +204,9 @@ space IS a Cl(3) faithful complex irrep") open and out of scope.
 Three events since then change the boundary structure:
 
 - **2026-05-20 / 2026-06-05.** The Quantum axiom surface records one
-  qubit per site, `M_2(ℂ) ≅ Cl(3,0)`, on the current axiom surface
-  `MINIMAL_AXIOMS_2026-06-05.md`.
+  qubit per site, `M_2(ℂ) ≅ Cl(3,0)`, on the then-current axiom surface
+  `MINIMAL_AXIOMS_2026-06-05.md` (superseded 2026-06-29; the carrier is
+  now the Qubit axiom).
 - **2026-06-05 / 2026-06-10.** The U4 packaging row's
   decisive move was the identification of the former U4 bridge with the
   one-qubit-per-site carrier the Quantum axiom already supplies —
@@ -225,9 +232,10 @@ input (§8).
 
 Load-bearing markdown-link upstream dependencies:
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
   — current axiom surface (chain-satisfying axiom premise node).
-  Carries the one-qubit-per-site Quantum-axiom input consumed in
+  Carries the one-qubit-per-site Qubit-axiom input (named "Quantum" in
+  the superseded 2026-06-05 memo) consumed in
   (D1), (D2), (D5). Axiom premise nodes chain-satisfy without bounding
   downstream rows.
 - [`CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`](CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md)
@@ -395,8 +403,8 @@ one. ∎
 ### 5.5 (D5) composition: Quantum/dim-two discharge and two-candidate collapse
 
 **Step 1 (Quantum input plus retained dimensional readout).** By the
-Quantum axiom on the current axiom surface
-(`MINIMAL_AXIOMS_2026-06-05.md`), the framework's per-site primitive
+Qubit axiom (named "Quantum" in the superseded memo) on the current
+axiom surface (`MINIMAL_AXIOMS_2026-06-29.md`), the framework's per-site primitive
 physical degree of freedom on the `Z^3` substrate is one qubit; axiom
 premise nodes chain-satisfy without bounding. By the retained
 per-site dim-two row
@@ -600,7 +608,7 @@ including one `SCOPE-BOUNDARY (declared, not claimed): ...` line for
 
 Load-bearing markdown-link upstream (four one-hop dependencies):
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
 - [`CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`](CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md)
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) §(K4)
 - [`SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)

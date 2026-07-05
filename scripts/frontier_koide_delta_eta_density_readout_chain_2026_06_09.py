@@ -13,20 +13,23 @@ The chain, every link computed and its status labeled:
       L_3(1,1) = L_3(2,2) = 1/9. Cross-checked against the retained-bounded
       fixed-locus note's stated values, and INDEPENDENTLY against the
       equivalent cotangent (Dedekind-sum) packaging.
-  E2  THE NAMED IDENTIFICATION (R-eta, proposed -- the chain's ONE conditional
-      input): the registered C_3-breaking phase magnitude IS the fixed-locus
-      spectral density, read directly as the angle (the period-1 reading):
-      |delta| = L_3(1,2) = 2/9 rad. R-eta is a dimensionless readout-class
-      identification (the sibling of the (M)/det-class atom); it names NO
-      number -- the number comes from the retained arithmetic.
+  E2  THE DECLARED SUPPLIED PREMISE (R-eta): the note carries an explicit
+      supplied-premise declaration (R-eta is supplied, not derived; it is the
+      Tier-A sub-admission (ii) content; every claim is conditional on it).
+      The runner verifies that declaration MECHANICALLY on the note file, then
+      computes the conditional implication (declared premise |delta| = L_3(1,2)
+      plus the E1-derived L_3(1,2) = 2/9 ==> |delta| = 2/9 exactly). It does
+      not, and cannot, check R-eta itself. R-eta names NO number -- the number
+      comes from the retained arithmetic.
   E3  THE PERIOD FORK, computed honestly: the alternative standard packaging
       (the density entering as a determinant-phase exponent, delta = pi * L)
       gives delta = 2pi/9 = 0.698 rad; the predicted mass spectrum is then
       WRONG by orders of magnitude (computed). E8 then records a bounded
       diagnostic: the pi of the standard packaging is the det-sign mechanism,
       whose registrable carrier is closed on the checked det-class surface by
-      the multiplicative lemma. Period-1 is the zero-import reading within
-      tested mechanisms; R-eta remains the explicit readout identification.
+      the multiplicative lemma. Period-1 is the zero-additional-import reading
+      beyond the supplied R-eta premise within tested mechanisms; R-eta remains
+      the explicit readout identification.
   E4  THE COMPARATOR (labeled, never an input): with r = 1/2 (a separate
       subsumption context, not landed by this runner) and |delta| = 2/9 EXACTLY, the charged-lepton
       circulant predicts m_tau from (m_e, m_mu): the prediction lands inside
@@ -53,6 +56,7 @@ Sets no audit status. PDG values are comparators only.
 """
 from __future__ import annotations
 
+import json
 import os
 
 import numpy as np
@@ -118,12 +122,44 @@ def main():
           detail="the chain consumes the landed arithmetic, re-proven above")
 
     # ------------------------------------------------------------------ E2
-    section("E2: the named identification R-eta (the chain's ONE conditional input)")
-    check("R-eta (PROPOSED, not adopted): the registered C_3-breaking phase magnitude IS "
-          "the fixed-locus density read directly as the angle: |delta| = L_3(1,2) = 2/9 "
-          "rad -- a dimensionless readout-class identification naming NO number "
-          "(the number is the retained arithmetic above)", True,
-          detail="sibling of the (M)/det-class readout atom; owner/audit decision")
+    section("E2: the declared supplied premise R-eta + the conditional implication")
+    this_note = open(os.path.join(docs, "KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md"),
+                     encoding="utf-8").read()
+    # normalize: drop blockquote markers so declaration sentences spanning
+    # quoted line breaks compare cleanly
+    note_flat = " ".join(line.lstrip().lstrip(">").lstrip()
+                         for line in this_note.splitlines())
+    note_flat = " ".join(note_flat.split())
+    decl_fragments = (
+        "Supplied-premise declaration (R-η).",
+        "magnitude is the fixed-locus spectral density, read directly as the angle",
+        "`|δ| = L₃(1,2)`",
+        "This identification is **supplied, not derived**",
+        "readout-identification content of Tier-A `AC_phi_lambda` sub-admission (ii)",
+        "no retained readout theorem supplies it on the current surface",
+        "Every claim in this note is conditional on this declared premise.",
+    )
+    check("E2.a the note carries the explicit supplied-premise DECLARATION for R-eta "
+          "(exact bridge |delta| = L_3(1,2); supplied-not-derived; Tier-A sub-admission "
+          "(ii) content; no retained readout theorem supplies it; all claims conditional) "
+          "-- verified verbatim on the note file",
+          all(" ".join(f.split()) in note_flat for f in decl_fragments),
+          detail="mechanical declaration check; replaces the prior stipulation-style check")
+    # the conditional implication, computed (formal modus ponens, not asserted):
+    # declared premise: |delta| = L_3(1,2)  (as a symbolic equation)
+    # E1 arithmetic:    L_3(1,2) = 2/9      (derived above)
+    # conclusion:       |delta| = 2/9       (by substitution, exactly)
+    abs_delta = sp.Symbol("abs_delta", nonnegative=True)
+    L_sym = sp.Symbol("L_3_12", positive=True)
+    premise = sp.Eq(abs_delta, L_sym)               # R-eta, as declared (number-free)
+    arithmetic = sp.Eq(L_sym, L12)                  # E1: L12 was DERIVED above
+    conclusion = premise.subs(L_sym, arithmetic.rhs)
+    check("E2.b the CONDITIONAL THEOREM, computed: {declared R-eta premise "
+          "|delta| = L_3(1,2)} + {E1-derived L_3(1,2) = 2/9} ==> |delta| = 2/9 exactly "
+          "(substitution on the symbolic premise; the runner checks the implication, "
+          "never the premise)",
+          conclusion == sp.Eq(abs_delta, sp.Rational(2, 9)),
+          detail=f"conclusion: {conclusion}")
 
     # ------------------------------------------------------------------ E3
     section("E3: the period fork, computed honestly (the alternative packaging fails)")
@@ -154,9 +190,9 @@ def main():
     # ------------------------------------------------------------------ E4
     section("E4: the comparator -- m_tau prediction and the fitted-phase residual")
     check("with r = 1/2 (separate comparator context) and |delta| = 2/9 EXACT, the predicted "
-          "m_mu and m_tau land at the PDG values (m_tau inside ~2 sigma of the "
+          "m_mu and m_tau land at the PDG values (m_tau inside about 1 sigma of the "
           "PDG band; comparator only)",
-          abs(mmu_p1 - mmu) / mmu < 2e-3 and abs(mtau_p1 - mtau_pdg) < 4 * dmtau,
+          abs(mmu_p1 - mmu) / mmu < 2e-3 and abs(mtau_p1 - mtau_pdg) < 1.2 * dmtau,
           detail=f"m_mu: pred {mmu_p1:.4f} vs {mmu} ({abs(mmu_p1-mmu)/mmu:.1e}); "
                  f"m_tau: pred {mtau_p1:.2f} vs {mtau_pdg} +/- {dmtau}")
     # the PDG-fitted phase vs 2/9 (exact circulant inversion, as in the landed anchor)
@@ -224,6 +260,34 @@ def main():
           "registrability bridge, the registrable atom is |delta| -- exactly what "
           "the chain supplies; the sign stays frame content",
           sp.simplify(H.applyfunc(sp.conjugate) - H_minus) == sp.zeros(3, 3))
+    korbit = open(os.path.join(docs, "TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md"),
+                  encoding="utf-8").read()
+    korbit_flat = " ".join(korbit.split()).lower()
+    korbit_fragments = (
+        "three-parameter Hermitian circulant family below, with `a` real, `B > 0`, "
+        "`delta` real, and `C` the cyclic 3-shift",
+        "H(delta) = a I + B exp(i delta) C + B exp(-i delta) C^T.",
+        "Complex conjugation sends this matrix exactly to `H(-delta)`",
+        "the sign of `delta` is not extra registrable content",
+        "the remaining candidate atom",
+    )
+    check("the circulant-class form consumed here matches the retained_bounded K-orbit "
+          "form authority: that note carries the exact H(delta) form, the exact "
+          "conjugation/sign-flip statement, and the bounded |delta| atom boundary "
+          "(located mechanically; the identity itself is re-verified symbolically above)",
+          all(" ".join(f.split()).lower() in korbit_flat for f in korbit_fragments),
+          detail="retained_bounded one-hop form authority; same wiring as the R-eta narrowing note")
+    graph_path = os.path.join(docs, "audit", "data", "citation_graph.json")
+    with open(graph_path, encoding="utf-8") as fh:
+        citation_graph = json.load(fh)
+    graph_deps = citation_graph["nodes"][
+        "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09"
+    ]["deps"]
+    check("generated citation graph includes the retained_bounded K-orbit authority as "
+          "a load-bearing dependency edge for this repaired note",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
+          in graph_deps,
+          detail=f"deps={graph_deps}")
 
     # ------------------------------------------------------------------ E7
     section("E7: honest conditionality and falsifiers")
@@ -243,7 +307,7 @@ def main():
         check(k, v)
 
     # ------------------------------------------------------------------ E8
-    section("E8: period-fork diagnostic -- period-1 is the zero-import reading on tested mechanisms")
+    section("E8: period-fork diagnostic -- period-1 adds no import beyond supplied R-eta")
     # (a) localize the pi: in any DETERMINANT reading, each negative eigenvalue
     # contributes e^{i pi} to arg det -- the pi of the standard e^{i pi eta}
     # packaging is exactly the det-sign mechanism, nothing else.
@@ -269,10 +333,12 @@ def main():
     # reading f(L) = L consumes no additional dimensionless constant beyond
     # R-eta; delta = pi*L consumes one dimensionless constant whose standard
     # det-sign mechanism is unavailable by (b).
-    check("import accounting: period-1 (delta = L) consumes ZERO imports; the "
+    check("import accounting: period-1 (delta = L) consumes zero additional imports "
+          "beyond the supplied R-eta premise; the "
           "pi-packaging (delta = pi*L) consumes ONE unexplained dimensionless "
           "constant whose standard mechanism is unavailable by (b). This keeps "
-          "the direct reading as the zero-import R-eta option on known mechanisms",
+          "the direct reading as the zero-additional-import option beyond supplied "
+          "R-eta on known mechanisms",
           True, detail="bounded claim: no currently retained registrable pi-source")
     # (d) counterfactual boundary: had the data matched 2pi/9, this chain could
     # not have absorbed that result by convention. It would need a new retained

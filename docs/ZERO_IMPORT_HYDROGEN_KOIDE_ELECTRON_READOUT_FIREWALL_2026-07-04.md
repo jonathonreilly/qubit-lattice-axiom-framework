@@ -631,6 +631,19 @@ parent state-law bridge, HW1, the charged-lepton carrier theorem, carrier
 context, h-class, h-unit, R-eta, electron readout, physical electron mass,
 alpha input, or hydrogen.
 
+The R-eta faithful KS selector two-handle review packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_SELECTOR_TWO_HANDLE_REVIEW_PACKET_2026-07-05.md`)
+groups the action-domain owner/audit contract and physical action-selector
+owner/audit contract as adjacent child handles under the faithful KS
+state-action selector lane. It is review compression only: accepting both
+child handles would let the parent selector spend them as inputs, but the
+packet itself does not ratify
+`KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RETAINED`,
+`PHYSICAL_ROTATION_ACTION_SELECTOR_RETAINED`,
+`FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED`, the action law, scalar-lift
+exclusion, KS child theorem, parent state-law bridge, electron readout,
+physical electron mass, alpha input, or hydrogen.
+
 The R-eta spinful staggered kernel scalar-lift exclusion target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md`),
 ratification decision packet

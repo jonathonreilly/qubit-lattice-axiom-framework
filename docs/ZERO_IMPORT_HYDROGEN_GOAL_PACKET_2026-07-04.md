@@ -383,6 +383,15 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   only the faithful KS state-action selector lane after retention; it does not
   supply the action-domain theorem, action law, scalar-lift exclusion, the KS
   child theorem, parent bridge, R-eta, K2, `m_e`, `alpha(0)`, or hydrogen.
+  The faithful KS selector two-handle review packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_SELECTOR_TWO_HANDLE_REVIEW_PACKET_2026-07-05.md`
+  groups the two adjacent owner/audit child handles under the parent faithful
+  KS state-action selector:
+  `KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RETAINED` and
+  `PHYSICAL_ROTATION_ACTION_SELECTOR_RETAINED`. The packet is review
+  compression only; it does not ratify either child handle, the parent
+  selector, the action law, scalar-lift exclusion, the KS child theorem,
+  parent bridge, R-eta, K2, `m_e`, `alpha(0)`, or hydrogen.
   The spinful staggered kernel scalar-lift exclusion target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md`
   packages one narrower subinput under the KS child route:
@@ -1887,6 +1896,7 @@ Koide electron readout, `m_e`, `alpha(0)`, or hydrogen.
                         | R-eta physical rotation action-selector target | Open selector subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_ROTATION_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md` packages `PHYSICAL_ROTATION_ACTION_SELECTOR_RETAINED`; it can feed the faithful KS state-action selector lane only, not the action-domain theorem, action law, scalar-lift exclusion, the KS child theorem, parent bridge, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta physical rotation action-selector ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_ROTATION_ACTION_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the physical action-selector owner/audit contract; it does not derive the action-domain theorem itself. |
                         | R-eta physical rotation action-selector current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_ROTATION_ACTION_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `PHYSICAL_ROTATION_ACTION_SELECTOR_RETAINED`. |
+                        | Faithful KS selector two-handle review packet | Open grouped packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_SELECTOR_TWO_HANDLE_REVIEW_PACKET_2026-07-05.md` bundles the action-domain handle and physical rotation action-selector handle as adjacent child handles for review compression only; it does not ratify either handle, the parent faithful KS selector, action law, scalar-lift exclusion, KS state law, electron mass, or hydrogen. |
                         | R-eta spinful staggered kernel scalar-lift exclusion target | Open child subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` packages `SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED`; it can feed the KS child route only, not the KS physical spin-lift action law, parent bridge, HW1, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta spinful staggered kernel scalar-lift exclusion ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the scalar-lift-exclusion owner/audit contract; it does not derive the route-defined spinful kernel theorem or scalar-lift covariance failure theorem itself. |
                         | R-eta spinful staggered kernel scalar-lift exclusion current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED`. |

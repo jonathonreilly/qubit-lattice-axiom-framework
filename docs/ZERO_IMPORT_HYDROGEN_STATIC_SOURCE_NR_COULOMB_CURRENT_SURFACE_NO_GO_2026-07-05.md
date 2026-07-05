@@ -73,6 +73,12 @@ atomic operator harness remain important support. They are not identical to a
 retained physical-unit one-body Schrodinger/Coulomb theorem for the unit
 electromagnetic static source.
 
+The static-source NR Coulomb assembly ladder review packet
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+groups those direct support rows under the parent contract for review
+compression only. It does not supply `STATIC_SOURCE_NR_COULOMB_LIMIT_RETAINED`
+or `RETAINED_STATIC_SOURCE_NR_COULOMB_LIMIT`.
+
 ## Target Arithmetic
 
 The structural atomic target is:

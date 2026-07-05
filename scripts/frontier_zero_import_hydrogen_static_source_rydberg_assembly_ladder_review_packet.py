@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md"
 GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 STATIC_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_CLOSURE_DISCRIMINATOR_2026-07-04.md"
+STATIC_NR_ASSEMBLY = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md"
 PHYSICAL_ELECTRON_ASSEMBLY = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md"
 PHYSICAL_ELECTRON_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 PHYSICAL_ELECTRON_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
@@ -127,6 +128,7 @@ def main() -> None:
         NOTE,
         GOAL,
         STATIC_TARGET,
+        STATIC_NR_ASSEMBLY,
         PHYSICAL_ELECTRON_ASSEMBLY,
         PHYSICAL_ELECTRON_PACKET,
         PHYSICAL_ELECTRON_NO_GO,
@@ -180,6 +182,8 @@ def main() -> None:
         "ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_RATIFICATION_DECISION_PACKET_2026-07-04.md",
         "ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_LIMIT_RATIFICATION_DECISION_PACKET_2026-07-04.md",
+        "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md",
+        "review-compresses the direct static-source NR Coulomb ladder",
         "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "ATOMIC_HYDROGEN_HELIUM_PROBE_NOTE.md",
         "HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md",
@@ -305,6 +309,7 @@ def main() -> None:
     section("Authority and downstream wiring checks")
     goal = read(GOAL)
     static_target = read(STATIC_TARGET)
+    static_nr_assembly = read(STATIC_NR_ASSEMBLY)
     physical_electron_assembly = read(PHYSICAL_ELECTRON_ASSEMBLY)
     alpha0_assembly = read(ALPHA0_ASSEMBLY)
     static_nr_packet = read(STATIC_NR_PACKET)
@@ -315,6 +320,8 @@ def main() -> None:
     new_packet_name = "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md"
     audit.check("goal packet references static-source Rydberg assembly", new_packet_name in goal)
     audit.check("static-source discriminator references assembly", new_packet_name in static_target)
+    audit.check("static-source NR assembly exists as SR.3 support", "Static-Source NR Coulomb Assembly Ladder Review Packet" in static_nr_assembly)
+    audit.check("static-source NR assembly remains support-only", "does not supply `STATIC_SOURCE_NR_COULOMB_LIMIT_RETAINED`" in flat(static_nr_assembly))
     audit.check("physical electron assembly lists static-source assembly as downstream", new_packet_name in physical_electron_assembly)
     audit.check("alpha0 assembly lists static-source assembly as downstream", new_packet_name in alpha0_assembly)
     audit.check(

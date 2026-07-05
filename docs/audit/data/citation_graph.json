@@ -721,6 +721,26 @@
       "to": "admitted_input_registry_tier_a_note_2026-05-23"
     },
     {
+      "from": "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04",
+      "to": "scale_reference_primitive"
+    },
+    {
+      "from": "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04",
+      "to": "kinetic_isotropy_primitive"
+    },
+    {
+      "from": "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04",
+      "to": "realized_state_primitive"
+    },
+    {
+      "from": "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
       "from": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
       "to": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
     },
@@ -58085,6 +58105,24 @@
       "path": "docs/ACPHILAMBDA_R_ETA_DOUBLET_CLOCK_RATE_NORMALIZATION_NO_GO_NOTE_2026-07-04.md",
       "runner_path": "scripts/acphilambda_r_eta_doublet_clock_rate_normalization_no_go_2026_07_04.py",
       "title": "AC_phi_lambda R-eta Doublet-Clock Rate-Normalization No-Go"
+    },
+    "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04": {
+      "claim_id": "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "scale_reference_primitive",
+        "kinetic_isotropy_primitive",
+        "realized_state_primitive",
+        "admitted_input_registry_tier_a_note_2026-05-23"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "289005391c00b2278874fc6bd6060c42fb5ed0d41390113316d8495947b44822",
+      "path": "docs/ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_2026_07_04.py",
+      "title": "AC_phi_lambda R-eta h-Unit Approved-Primitive Non-Supply No-Go"
     },
     "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11": {
       "claim_id": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
@@ -125671,7 +125709,7 @@
       "bounded_theorem": 1557,
       "decoration": 3,
       "meta": 319,
-      "no_go": 320,
+      "no_go": 321,
       "none": 1216,
       "open_gate": 133,
       "positive_theorem": 274
@@ -125680,15 +125718,15 @@
       "bounded_theorem": 1962,
       "decoration": 3,
       "meta": 319,
-      "no_go": 424,
+      "no_go": 425,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14322,
-    "leaf_count": 1295,
-    "node_count": 3822,
+    "edge_count": 14327,
+    "leaf_count": 1296,
+    "node_count": 3823,
     "root_count": 1103,
-    "runners_with_path": 3445
+    "runners_with_path": 3446
   }
 }

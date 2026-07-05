@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 416,
     "high": 284,
-    "leaf": 758,
+    "leaf": 759,
     "medium": 513
   },
   "cycle_break_target_count": 12,
@@ -37021,6 +37021,34 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "scale_reference_primitive",
+        "kinetic_isotropy_primitive",
+        "realized_state_primitive",
+        "admitted_input_registry_tier_a_note_2026-05-23"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_2026_07_04.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "acphilambda_real_holonomy_locus_identity_2026-07-01",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -57881,6 +57909,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 201,
-  "total_pending": 1971
+  "ready_count": 202,
+  "total_pending": 1972
 }

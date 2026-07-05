@@ -2,11 +2,11 @@
   "criticality_counts": {
     "critical": 665,
     "high": 473,
-    "leaf": 1714,
+    "leaf": 1715,
     "medium": 970
   },
   "flagship_signal_used": false,
-  "node_count": 3822,
+  "node_count": 3823,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -19,8 +19,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 190.87,
-      "transitive_descendants": 1871
+      "load_bearing_score": 191.371,
+      "transitive_descendants": 1872
     },
     {
       "claim_id": "three_generation_observable_theorem_note",
@@ -157,8 +157,8 @@
     {
       "claim_id": "kinetic_isotropy_primitive",
       "criticality": "critical",
-      "load_bearing_score": 34.543,
-      "transitive_descendants": 1054
+      "load_bearing_score": 35.044,
+      "transitive_descendants": 1055
     },
     {
       "claim_id": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",

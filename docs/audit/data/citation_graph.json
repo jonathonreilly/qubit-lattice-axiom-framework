@@ -5170,6 +5170,10 @@
     },
     {
       "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
       "to": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15"
     },
     {
@@ -63911,6 +63915,7 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "staggered_dirac_realization_gate_note_2026-05-03",
         "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
         "per_site_su2_spin_half_theorem_note_2026-05-02",
         "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
@@ -63934,7 +63939,7 @@
         "brannen_amplitude_equipartition_bae_rename_meta_note_2026-05-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "88c6be364b02bd15bb7722d0c858e053d7234b39f9cab5fa563800d31be9ec95",
+      "note_hash": "2c14bf613ae79d787712e8990295ce9d827d0cb4ce6e3c190e7e93242e5e22ca",
       "path": "docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md",
       "runner_path": "scripts/flavor_charged_lepton_value_full_chain_2026_06_02.py",
       "title": "Charged-Lepton Koide Value \u2014 Full Chain of Custody (framework baseline -> Q=2/3): structure derived; value modulo one Tier-A admitted input"
@@ -125558,7 +125563,7 @@
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14307,
+    "edge_count": 14308,
     "leaf_count": 1292,
     "node_count": 3818,
     "root_count": 1103,

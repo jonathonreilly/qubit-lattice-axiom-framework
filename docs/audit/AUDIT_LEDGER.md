@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 193 |
-| **retained_bounded** | 875 |
+| **retained_bounded** | 876 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1931 |
+| unaudited | 1930 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 12 |
-| `audited_clean` | 1251 |
+| `audited_clean` | 1252 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2269 |
+| `unaudited` | 2268 |
 
 | claim_type | count |
 |---|---:|
@@ -150,6 +150,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1640,6 +1641,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** `r` takes different values on different law-admissible realized states and is an already-defined functional of the registered signed-root masses, so by the realized-state primitive it is registered data rather than derivation output.  _(class `A`)_
 - **chain closes:** True — The packet supplies the primitive rule, retained algebraic lever/biconditional inputs, and no-go/law-freeness authorities needed for the bounded classification. The conclusion does not derive r=1/2 or select a grain; those are explicitly outside scope.
 - **rationale:** Within the stated bounded scope, the note closes: the runner verifies the algebraic r-functional, the multi-r firewall, the relevant primitive/axiom text, and the survival of both grain models. The single PDG check is labeled comparator-only and is not load-bearing on the classification. The proof does not silently promote the measure-side frontier or derive the charged-lepton value, so the clean verdict applies only to the value-face reduction and frontier naming.
+- **auditor confidence:** high
+
+### `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11`
+
+- **Note:** [`ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md`](../../docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Formal H(delta) narrowing of AC_phi_lambda R-eta: sign/orientation stripping, cos(3 delta) channel and fundamental-domain folding, det-class no-pi-factor boundary, non-selection of the value by form constraints, and unique L3(1,2)=2/9 arithmetic within the forced-weight AB/Lefschetz class; excludes physical carrier realization, A_R-eta derivation, unconditional |delta|=2/9, r=1/2, and registry retirement.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-r-eta-readout-20260705`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The formal theorem treats H(delta)=a I + B exp(i delta) C + B exp(-i delta) C^T as a symbolic object and proves exactly F1-F5, while the physical readout identification and A_R-eta atom are explicitly conditional/open and not claimed derived.  _(class `A`)_
+- **chain closes:** True — The scoped formal layer closes from retained-grade direct inputs: the K-orbit/circulant authority supplies H(delta) and delta sign flip, the K/CPT bridge supplies supplied-context orbit constancy, and the fixed-locus note supplies retained-bounded (1,2) density arithmetic. The source note and runner keep the physical carrier/readout/radian identification outside the audited theorem, so those open residuals do not enter this clean bounded scope.
+- **rationale:** The current runner completed with TOTAL: PASS=55 FAIL=0 and verifies the formal symmetric-function identities, evenness, period folding, hostile candidate non-selection, determinant-character boundary witness, forced C3 weights, and explicit boundary text. The runner does hard-code A_R-eta only in the conditional-value section, but that section is marked admitted/not derived and is not used to claim unconditional value selection. Direct one-hop dependencies are retained-grade or meta/no-go boundary inputs, and the note does not use the unaudited carrier gate or R-eta source as proof authority for the formal theorem.
 - **auditor confidence:** high
 
 ### `acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05`

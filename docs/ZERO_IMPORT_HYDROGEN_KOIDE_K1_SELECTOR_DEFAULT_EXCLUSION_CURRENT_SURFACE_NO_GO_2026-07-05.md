@@ -79,6 +79,9 @@ dimension/Born/trace default.
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | eleven-input target for `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED` | current retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | eleven-input owner/audit decision packet | retained consequence; not accepted on the current surface |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md` | fourteen-input target for `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` | determinant theorem retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | determinant theorem owner/audit decision packet | not accepted on the current surface |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` | no retained determinant theorem |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md` | names the full ten-input K1 target | selector/default-exclusion accepted consequence or full K1 |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `K1_COUNTING_MEASURE_RETAINED` | selector/default-exclusion retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | full K1 owner/audit decision packet | selector/default-exclusion closure unless separately accepted |

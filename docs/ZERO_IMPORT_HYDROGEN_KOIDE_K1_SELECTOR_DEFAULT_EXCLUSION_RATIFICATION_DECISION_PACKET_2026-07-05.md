@@ -133,6 +133,9 @@ STATIC_SOURCE_RYDBERG_RETAINED
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | names the eleven-input selector/default-exclusion target | target only; this packet packages the decision object |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED` | no retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md` | names `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` for the chiral/holomorphic determinant input | one nested input only; no default exclusion or full K1 |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the determinant theorem as a fourteen-input owner/audit contract | not accepted on the current surface |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` | no retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md` | names the full ten-input K1 target | selector/default-exclusion can feed two inputs only |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of full K1 | no retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | consumes selector/default-exclusion as two K1 inputs if later accepted | no full K1 without its own owner/audit contract |

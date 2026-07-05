@@ -126,6 +126,17 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   records that current retained, primitive, merged-PR, and open-PR surfaces do
   not supply `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`; the lane is now
   reviewable, but still not full K1, `m_e`, `alpha(0)`, or hydrogen.
+  The nested chiral/holomorphic determinant target
+  `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md`
+  packages `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` as one input
+  under the selector/default-exclusion target. Its ratification decision packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  and current-surface no-go
+  `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+  record that current surfaces do not supply the determinant theorem. This
+  attacks only `CHIRAL_OR_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED`; it does
+  not supply `REAL_VECTOR_TRACE_DEFAULT_EXCLUDED`, full K1, `m_e`,
+  `alpha(0)`, or hydrogen.
   The Koide native zero-section `#5007` impact discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_PR5007_IMPACT_DISCRIMINATOR_2026-07-04.md`
   records `KOIDE_NATIVE_ZERO_SECTION_DEFINED_ROUTE_ALGEBRA=TRUE` as useful
@@ -1731,6 +1742,9 @@ hydrogen.
                         | K1 selector/default-exclusion target | Open subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` packages `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`; if accepted, it can feed the K1 selector and dimension/Born default-exclusion inputs, not full K1, `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 selector/default-exclusion ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the eleven-input owner/audit contract for `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`; it can feed two K1 inputs only after acceptance and is not full K1, `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 selector/default-exclusion current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`. |
+                        | K1 chiral/holomorphic determinant target | Open nested subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED`; if accepted, it can feed one selector/default-exclusion input, not default exclusion, full K1, `m_e`, `alpha(0)`, or hydrogen. |
+                        | K1 chiral/holomorphic determinant ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the fourteen-input owner/audit contract for `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED`; it is not accepted on the current surface. |
+                        | K1 chiral/holomorphic determinant current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED`. |
                         | R-eta readout-retirement target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `R_ETA_READOUT_IDENTIFICATION_RETAINED`; if accepted it can feed the exact theorem and radian-readout license inputs under the two-ninths/radian subgate, not full K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta readout-retirement ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the eleven-input owner/audit contract for `R_ETA_READOUT_IDENTIFICATION_RETAINED`; it is not retained R-eta, K2 exactness, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta readout-retirement current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `R_ETA_READOUT_IDENTIFICATION_RETAINED`. |

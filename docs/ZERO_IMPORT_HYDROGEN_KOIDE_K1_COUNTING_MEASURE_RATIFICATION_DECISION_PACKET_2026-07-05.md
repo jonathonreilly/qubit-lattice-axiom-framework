@@ -37,6 +37,17 @@ and current-surface no-go
 make that subhandoff reviewable and record current non-supply; they still do
 not supply full K1, physical electron mass, alpha, or hydrogen.
 
+The nested chiral/holomorphic determinant target
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` for one
+selector/default-exclusion input only. Its ratification decision packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+and current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+make that theorem lane reviewable and record current non-supply; they still do
+not supply `REAL_VECTOR_TRACE_DEFAULT_EXCLUDED`, full K1, physical electron
+mass, alpha, or hydrogen.
+
 ## Decision Object
 
 The decision object is exactly:
@@ -133,6 +144,9 @@ STATIC_SOURCE_RYDBERG_RETAINED
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | names `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED` for the selector/default-exclusion inputs | subtarget only; no full K1 retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED` as an eleven-input owner/audit contract | subtarget decision only; no full K1 retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED` | subtarget no-go only; no full K1 retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md` | names `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` under the selector/default-exclusion target | one nested input only; no full K1 retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the determinant theorem as a fourteen-input owner/audit contract | not accepted on the current surface |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` | no retained determinant theorem |
 | `CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md` | one-binary reduction and block/dimension arithmetic | no selector theorem |
 | `SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md` | right-shaped chiral/equivariant/holomorphic route | open determinant/readout theorem |
 | `KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md` | current-surface non-supply and premise candidate | not adopted theorem closure |

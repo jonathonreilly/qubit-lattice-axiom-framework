@@ -87,6 +87,17 @@ records that current retained, primitive, merged-PR, and open-PR surfaces do
 not supply `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`; therefore the two
 technical K1 inputs remain unsupplied on the current surface.
 
+The nested chiral/holomorphic determinant target
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` for one
+selector/default-exclusion input only. Its ratification decision packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+and current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+record that the current surface still does not supply the determinant theorem.
+This does not supply `REAL_VECTOR_TRACE_DEFAULT_EXCLUDED`, full K1, `m_e`,
+`alpha(0)`, or hydrogen.
+
 ## Current-Surface Audit
 
 | surface | supplies | does not supply |
@@ -96,6 +107,9 @@ technical K1 inputs remain unsupplied on the current surface.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`; possible path to the selector and default-exclusion inputs | current retained consequence or full K1 |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | eleven-input owner/audit decision packet for `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED` | retained consequence; not accepted on the current surface |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for the selector/default-exclusion subtarget | retained consequence or full K1 |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED`; possible path to one selector/default-exclusion input | determinant theorem retained consequence or full K1 |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | fourteen-input owner/audit decision packet for the determinant theorem | not accepted on the current surface |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` | no retained determinant theorem |
 | `CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md` | one-binary reduction and the `(1,1)` versus `(1,2)` arithmetic | retained selector for the block/orbit count |
 | `SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md` | right-shaped chiral/equivariant/holomorphic route | retained determinant/readout theorem |
 | `KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md` | current-surface non-supply and premise candidate | adopted theorem or zero-import retained selector |

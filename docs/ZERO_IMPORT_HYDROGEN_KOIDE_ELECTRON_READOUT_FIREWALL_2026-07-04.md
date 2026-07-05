@@ -138,6 +138,17 @@ not supply `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`. These packets make the
 selector lane reviewable; they do not supply full K1, physical electron mass,
 alpha input, or hydrogen.
 
+The nested chiral/holomorphic determinant target
+(`ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md`)
+packages `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` as one input
+under the selector/default-exclusion target. Its ratification decision packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_RATIFICATION_DECISION_PACKET_2026-07-05.md`)
+and current-surface no-go
+(`ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
+record that current surfaces do not supply the determinant theorem. This is
+not a default-exclusion theorem, full K1, physical electron mass, alpha input,
+or hydrogen.
+
 The Koide native zero-section `#5007` impact discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_PR5007_IMPACT_DISCRIMINATOR_2026-07-04.md`)
 updates this boundary for the latest open Koide route-guard repair. It records
@@ -733,6 +744,9 @@ No hidden admission is left buried as background.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | subtarget for `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`; can feed two K1 inputs, not full K1 | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | decision packet for the eleven-input `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED` subhandoff | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED` | yes |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md` | nested subtarget for `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED`; can feed one selector/default-exclusion input, not full K1 | yes |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | decision packet for the fourteen-input determinant theorem subhandoff | yes |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` | yes |
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | K2 delta comparator and scale boundary | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | K2 value-face registration versus exactness residual | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 R-eta supplied-premise conditionality boundary | yes |

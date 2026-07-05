@@ -32,11 +32,11 @@ REALIZED = ROOT / "docs" / "REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
 
 
 PR5032_CONTEXT_INPUTS = {
-    "PR5032_OPEN_PR_CONTEXT",
-    "COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_PROPOSED",
+    "PR5032_MERGED_MAIN_CONTEXT",
+    "COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED",
     "HAMMING_AC_LAMBDA_C3_REPRESENTATIVE_IDENTIFIED",
     "SPECIES_REDUCTION_NONIDENTIFICATION_PRESERVED",
-    "NO_RETAINED_STATUS_SPEND",
+    "NO_DOWNSTREAM_RETAINED_STATUS_SPEND",
 }
 
 HW1_INPUTS = {
@@ -247,9 +247,9 @@ def main() -> None:
     section("Required note content")
     required_phrases = [
         "Koide Common hw1 PR #5032 Carrier-Identification Impact Discriminator",
-        "open-PR impact discriminator / common `hw=1` carrier-identification boundary",
-        "does not adopt PR `#5032`",
-        "f014b81a691545550aab4b91bae7ad2df9111f2a",
+        "merged-PR impact discriminator / common `hw=1` carrier-identification boundary",
+        "records PR `#5032` as merged with audit",
+        "0f827c303fd15ec2ccdb5a4494c0c79bfb51c4f8",
         "PR5032_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_CONTEXT",
         "COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED",
         "the common finite representative identifying Hamming hw=1, AC_lambda, and",
@@ -270,9 +270,8 @@ def main() -> None:
 
     section("Predicate checks")
     pr5032_inputs = set(PR5032_CONTEXT_INPUTS)
-    support_consequence = {"COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED"}
     audit.check("#5032 context predicate accepts all support inputs", closes_pr5032_context(pr5032_inputs))
-    audit.check("#5032 context alone does not close hw1 locus", not closes_hw1_locus(pr5032_inputs | support_consequence))
+    audit.check("#5032 context alone does not close hw1 locus", not closes_hw1_locus(pr5032_inputs))
     audit.check("#5032 context alone does not close charged carrier theorem", not closes_charged_carrier(pr5032_inputs))
     audit.check("#5032 context alone does not close physical carrier context", not closes_physical_carrier(pr5032_inputs))
     audit.check("#5032 context alone does not close h-class", not closes_h_class(pr5032_inputs))
@@ -370,9 +369,8 @@ def main() -> None:
 
     section("Non-claim boundaries")
     explicit_nonclaims = [
-        "No adoption, landing, or audit verdict claim for PR `#5032`.",
+        "No downstream retained-theorem verdict from merged PR `#5032`.",
         "No retained-theorem verdict or status change.",
-        "No derivation or ratification of `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED`.",
         "No derivation or ratification of `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`.",
         "No derivation or ratification of `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`.",
         "No derivation or ratification of `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED`.",
@@ -387,7 +385,7 @@ def main() -> None:
 
     forbidden = [
         "This note ratifies #5032",
-        "COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED is supplied",
+        "COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED supplies HW1_PHYSICAL_GENERATION_LOCUS_RETAINED",
         "HW1_PHYSICAL_GENERATION_LOCUS_RETAINED is supplied",
         "PHYSICAL_CARRIER_CONTEXT_RETAINED is supplied",
         "R_ETA_READOUT_IDENTIFICATION_RETAINED is supplied",

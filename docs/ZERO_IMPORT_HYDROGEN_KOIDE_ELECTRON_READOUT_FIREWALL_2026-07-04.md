@@ -435,6 +435,19 @@ retained, primitive, merged-PR, and open-PR surfaces do not supply it; it is
 carrier context only, not h-class, h-unit, R-eta, electron readout, physical
 electron mass, alpha input, or hydrogen.
 
+The R-eta charged-lepton carrier-realization target discriminator
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_TARGET_DISCRIMINATOR_2026-07-05.md`),
+ratification decision packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md`),
+and current-surface no-go
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
+package `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED` as the child
+theorem beneath physical carrier context. Current retained, primitive,
+merged-PR, and open-PR surfaces do not supply it; it is carrier realization
+only, not `PHYSICAL_CARRIER_CONTEXT_RETAINED`, fixed-point readout, h-class,
+h-unit, R-eta, electron readout, physical electron mass, alpha input, or
+hydrogen.
+
 The multisite Pauli PR #5030 carrier-provenance impact discriminator
 (`ZERO_IMPORT_HYDROGEN_MULTISITE_PAULI_PR5030_CARRIER_PROVENANCE_IMPACT_DISCRIMINATOR_2026-07-05.md`)
 records open `#5030` as finite algebraic carrier-provenance support for the
@@ -446,7 +459,7 @@ electron mass, alpha input, or hydrogen.
 
 The common `hw=1` PR #5032 carrier-identification impact discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_COMMON_HW1_PR5032_CARRIER_IDENTIFICATION_IMPACT_DISCRIMINATOR_2026-07-05.md`)
-records open `#5032` as common finite carrier-identification support for the
+records merged `#5032` as common finite carrier-identification support for the
 K2 `hw=1` locus discussion. Its support predicate is only
 `PR5032_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_CONTEXT`, and the
 downstream support input is
@@ -723,7 +736,7 @@ main:
 | `#5029` | Open Koide substep4 labeling no-go runner strengthening. It improves audit-surface verification mechanics; it supplies no K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
 | `#5028` | Merged W4c labeling/species repairs. It improves labeling/species dependency-surface readiness and species-note context handling, but supplies no K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
 | `#5030` | Open multisite Pauli finite-carrier provenance repair. It can support finite algebraic carrier provenance only; it supplies no physical carrier-context theorem, h-class, R-eta, K2 exactness, electron readout, physical electron mass, or hydrogen. |
-| `#5032` | Open common `hw=1` BZ-corner carrier-identification bridge. It can support `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED` only; it supplies no physical `hw=1` locus theorem, no physical carrier-context theorem, h-class, R-eta, K2 exactness, electron readout, physical electron mass, or hydrogen. |
+| `#5032` | Merged common `hw=1` BZ-corner carrier-identification bridge. It can support `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED` only; it supplies no physical `hw=1` locus theorem, no physical carrier-context theorem, h-class, R-eta, K2 exactness, electron readout, physical electron mass, or hydrogen. |
 | `#5027` | Merged Koide custody AC gate-edge repair, audit success at refresh. It repairs a custody/audit-graph edge but supplies no physical action selector, physical matter-state law bridge, K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
 | `#5026` | Merged Koide custody L4 retained-successor re-point and Plancherel edge demotion, audit success at merge. It repairs a charged-lepton custody citation edge but supplies no physical matter-state law bridge, no KS spin-lift physical action law, no KS-route spinful kernel-object theorem, no K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
 | `#5022` | Merged delta-eta supplied-premise audit repair. It improves K2 conditionality bookkeeping but supplies no retained R-eta derivation, electron readout, physical electron mass, or hydrogen. |

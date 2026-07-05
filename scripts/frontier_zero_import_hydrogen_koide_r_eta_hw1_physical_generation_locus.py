@@ -61,7 +61,6 @@ HW1_INPUTS = {
 }
 
 CURRENT_SURFACE_INPUTS = HW1_INPUTS - {
-    "COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED",
     "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED",
     "OWNER_RATIFICATION",
     "AUDIT_ACCEPTANCE",
@@ -295,7 +294,7 @@ def main() -> None:
         "open `#5014`",
         "open `#5017`",
         "open `#5018`",
-        "open `#5032`",
+        "merged `#5032`",
         "merged `#5023`",
         "merged `#5024`",
         "The primitive registry was checked",
@@ -476,7 +475,7 @@ def main() -> None:
     section("Open PR and non-claim boundaries")
     current_flat = flat(current)
     open_markers = [
-        "`#5032` common `hw=1` BZ-corner carrier identification | open, audit pipeline in progress",
+        "`#5032` common `hw=1` BZ-corner carrier identification | merged, audit success",
         "`#5014` record-formation front is the domain wall | open, audit success",
         "`#5017` domain-wall edge anomaly inflow via spectral flow | open, audit success",
         "`#5018` domain-wall edge content vs SM chiral fermions map | open, audit success",
@@ -489,7 +488,7 @@ def main() -> None:
 
     explicit_nonclaims = [
         "No derivation or ratification of `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`.",
-        "No adoption or ratification of open PR `#5032`, and no derivation or",
+        "No downstream ratification from merged PR `#5032`, and no derivation or",
         "No derivation or ratification of `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED`.",
         "No derivation or ratification of `PHYSICAL_CARRIER_CONTEXT_RETAINED`.",
         "No derivation or ratification of `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED`.",

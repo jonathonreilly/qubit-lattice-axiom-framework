@@ -1,19 +1,20 @@
 # Zero-Import Hydrogen: Koide Common hw1 PR #5032 Carrier-Identification Impact Discriminator
 
 **Date:** 2026-07-05
-**Type:** open-PR impact discriminator / common `hw=1` carrier-identification boundary
-**Status:** support-only. This note does not adopt PR `#5032`, does not
-change audit status, does not ratify `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`,
-does not ratify `PHYSICAL_CARRIER_CONTEXT_RETAINED`, and does not derive
-h-class, h-unit, R-eta, K2 exactness, electron mass, alpha, or hydrogen.
+**Type:** merged-PR impact discriminator / common `hw=1` carrier-identification boundary
+**Status:** support-only. This note records PR `#5032` as merged with audit
+success at its own narrow scope. It does not ratify
+`HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, does not ratify
+`PHYSICAL_CARRIER_CONTEXT_RETAINED`, and does not derive h-class, h-unit,
+R-eta, K2 exactness, electron mass, alpha, or hydrogen.
 **Verifier:** `scripts/frontier_zero_import_hydrogen_koide_common_hw1_pr5032_carrier_identification_impact_discriminator.py`
 
 ## Scope
 
 PR `#5032`, `koide(bridge): common hw=1 BZ-corner carrier identification`,
-is open on 2026-07-05 UTC at head
-`f014b81a691545550aab4b91bae7ad2df9111f2a`. Its queue signal is a proposed
-narrow theorem:
+is merged on 2026-07-05 UTC at head
+`0f827c303fd15ec2ccdb5a4494c0c79bfb51c4f8`. Its merged signal is the narrow
+theorem:
 
 ```text
 STAGGERED_DIRAC_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_BRIDGE_NARROW_THEOREM
@@ -56,7 +57,7 @@ identify the species-reduction surface, does not label the three slots as
 
 | object | #5032 effect | hydrogen boundary |
 |---|---|---|
-| common `hw=1` finite carrier | proposed common-representative bridge for Hamming, AC_lambda, and C3 action on the `2 x 2 x 2` representative | finite carrier-identification support only |
+| common `hw=1` finite carrier | merged common-representative bridge for Hamming, AC_lambda, and C3 action on the `2 x 2 x 2` representative | finite carrier-identification support only |
 | `HW1_C3_TRIPLET_ALGEBRA_ACCEPTED` | sharpened by a separate common-carrier input | algebra and carrier identification are support, not physical locus selection |
 | `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` | gets one clearer prerequisite, `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED` | still needs physical matter-state-law bridge, owner, and audit |
 | `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED` | no direct closure | needs the retained physical locus and the supplied context handoff |
@@ -65,8 +66,8 @@ identify the species-reduction surface, does not label the three slots as
 | physical electron mass | downstream | no K1/K3/K4, native bridge, branch map, or physical unit mass |
 | hydrogen | downstream | no retained `m_e`, no retained `alpha(0)`, no static-source Rydberg closure |
 
-The useful consequence is narrower than closure: #5032 can remove a common
-finite-carrier identification ambiguity if adopted, but it preserves the
+The useful consequence is narrower than closure: #5032 removes a common
+finite-carrier identification ambiguity at its own narrow scope, but it preserves the
 physical-locus and carrier-context gates. Hydrogen can track it as support for
 the K2 carrier-realization map, not as a spendable retained hydrogen input.
 
@@ -74,7 +75,7 @@ the K2 carrier-realization map, not as a spendable retained hydrogen input.
 
 | PR | queue signal | hydrogen effect |
 |---|---:|---|
-| `#5032` common `hw=1` BZ-corner carrier identification | open, non-draft, audit pipeline in progress at refresh | common finite-carrier identification support only; no physical locus theorem |
+| `#5032` common `hw=1` BZ-corner carrier identification | merged, audit success at refresh | common finite-carrier identification support only; no physical locus theorem |
 | `#5030` multisite Pauli finite-carrier provenance | open, non-draft, audit pipeline success at refresh | finite algebraic carrier-provenance support only |
 | `#5016` zero-import hydrogen retained lane bundle | open | carries this impact discriminator once pushed |
 | `#5021` primitive-retirement review draft | open draft | no primitive retirement or registry edit |
@@ -87,8 +88,8 @@ proof inputs.
 
 | source | supplies | boundary here |
 |---|---|---|
-| PR `#5032` body/files | a proposed narrow common-carrier identification theorem on the finite `2 x 2 x 2` representative | open PR context only; not a retained status change here |
-| `STAGGERED_DIRAC_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md` | if accepted, one finite carrier simultaneously realizes Hamming `hw=1`, AC_lambda translations, and C3 action | no physical matter-state-law theorem, no species reduction, no labeling, no value or mass |
+| PR `#5032` body/files | a narrow common-carrier identification theorem on the finite `2 x 2 x 2` representative | merged support context only; not a downstream retained status change here |
+| `STAGGERED_DIRAC_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md` | one finite carrier simultaneously realizes Hamming `hw=1`, AC_lambda translations, and C3 action | no physical matter-state-law theorem, no species reduction, no labeling, no value or mass |
 | `FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md` | momentum/BZ carrier type and concrete representative context | no physical `hw=1` locus selection |
 | `STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md` | exact Hamming orbit algebra | no physical species reading |
 | `STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md` | abstract AC_lambda translation-eigenvalue triple | no claim that the physical lattice carrier is that abstract space |
@@ -110,11 +111,11 @@ mass, `alpha(0)`, or hydrogen.
 
 | before this note | after this note |
 |---|---|
-| #5032 was only visible as an open Koide bridge PR | hydrogen has a local impact boundary for it |
+| #5032 landed as a Koide bridge PR without a hydrogen-local spend boundary | hydrogen has a local impact boundary for it |
 | Hamming `hw=1`, AC_lambda, and C3 support could be overread as already living on one accepted carrier | the common-carrier bridge is explicit and separately tracked |
 | `HW1_C3_TRIPLET_ALGEBRA_ACCEPTED` could hide the common-representative requirement | `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED` is a separate `hw=1` locus input |
 | reviewers could confuse common finite-carrier identification with physical locus selection | the physical matter-state-law bridge remains the live locus wall |
-| audit progress on #5032 could be overread as hydrogen progress | the note records it as support only |
+| merged status on #5032 could be overread as hydrogen progress | the note records it as support only |
 
 ## No-Go Discipline Gate
 
@@ -132,8 +133,8 @@ hydrogen input.
 
 | route | attempt | result |
 |---|---|---|
-| common-representative route | Treat #5032 as identifying one finite `2 x 2 x 2` carrier for Hamming `hw=1`, AC_lambda, and C3 action. | SUPPORTED AS CONTEXT if the PR is adopted at its scope. |
-| retained-status route | Treat #5032's open PR or future audit signal as a retained theorem update in this PR. | RULED OUT. Independent audit/status on `origin/main` is the status authority, not this impact note. |
+| common-representative route | Treat #5032 as identifying one finite `2 x 2 x 2` carrier for Hamming `hw=1`, AC_lambda, and C3 action. | SUPPORTED AS MERGED CONTEXT at its own scope. |
+| retained-status route | Treat #5032's merged status as a downstream retained theorem update in this PR. | RULED OUT. Independent audit/status on `origin/main` is the status authority, not this impact note. |
 | physical `hw=1` locus route | Treat common finite-carrier identification as `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`. | ATTEMPTED. The physical matter-state-law bridge, owner, and audit remain missing. |
 | species-reduction route | Treat the common `hw=1` carrier as a retained species-reduction surface. | RULED OUT BY SCOPE. #5032 explicitly keeps species-reduction counting boundaries. |
 | labeling route | Treat the three `hw=1` slots as physically labeled `e`, `mu`, and `tau`. | RULED OUT. #5032 derives no labeling convention or species-label bijection. |
@@ -163,7 +164,7 @@ hydrogen input.
 | `AC_lambda` / `C3 action` | algebraic identification support, not R-eta value selection |
 | `species reduction` | explicit non-identification boundary |
 | `physical charged-lepton` / `physical matter-state law` | explicit residual wall |
-| `open PR` / `audit pipeline` | queue/status metadata only |
+| `merged PR` / `audit success` | status metadata only; support is finite-carrier support |
 | `primitive` / `registered` | registry checked; no shortcut primitive exists |
 | `observed` / `fitted` | comparator data, excluded |
 
@@ -203,7 +204,7 @@ Legitimate follow-ups remain:
 
 | path | what it could close |
 |---|---|
-| landing and audit adoption of #5032 at its own scope | `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED` support |
+| merged audit adoption of #5032 at its own scope | `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED` support is available |
 | retained physical matter-state-law theorem selecting the `hw=1` triplet | `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED` and then `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` after owner/audit |
 | retained charged-lepton carrier realization theorem | charged-lepton carrier theorem upstream of physical carrier context |
 | owner/audit acceptance of the carrier-context packet | `PHYSICAL_CARRIER_CONTEXT_RETAINED` |
@@ -232,9 +233,8 @@ boundary visible.
 
 ## Explicit Non-Claims
 
-- No adoption, landing, or audit verdict claim for PR `#5032`.
+- No downstream retained-theorem verdict from merged PR `#5032`.
 - No retained-theorem verdict or status change.
-- No derivation or ratification of `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED`.
 - No derivation or ratification of `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`.
 - No derivation or ratification of `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`.
 - No derivation or ratification of `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED`.

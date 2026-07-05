@@ -196,6 +196,21 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   not supply `PHYSICAL_CARRIER_CONTEXT_RETAINED`. This lane is carrier context
   only; it does not supply h-class, h-unit, R-eta, K2, `m_e`, `alpha(0)`, or
   hydrogen.
+  The charged-lepton carrier-realization target discriminator
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_TARGET_DISCRIMINATOR_2026-07-05.md`
+  packages the immediate child theorem
+  `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED`: the physical
+  charged-lepton carrier realizes the supplied finite AC_phi_lambda/R-eta C3
+  circulant context. The ratification packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  makes that a fifteen-input owner/audit contract, and the current-surface
+  no-go
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+  records that current retained, primitive, merged-PR, and open-PR surfaces do
+  not supply `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED`. This lane
+  can feed physical carrier context only if retained; it does not supply
+  `PHYSICAL_CARRIER_CONTEXT_RETAINED`, fixed-point readout, h-class, h-unit,
+  R-eta, K2, `m_e`, `alpha(0)`, or hydrogen.
   The multisite Pauli PR #5030 carrier-provenance impact discriminator
   `ZERO_IMPORT_HYDROGEN_MULTISITE_PAULI_PR5030_CARRIER_PROVENANCE_IMPACT_DISCRIMINATOR_2026-07-05.md`
   records open `#5030` as finite algebraic carrier-provenance support for the
@@ -206,7 +221,7 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   or hydrogen.
   The common `hw=1` PR #5032 carrier-identification impact discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_COMMON_HW1_PR5032_CARRIER_IDENTIFICATION_IMPACT_DISCRIMINATOR_2026-07-05.md`
-  records open `#5032` as common finite carrier-identification support for the
+  records merged `#5032` as common finite carrier-identification support for the
   `hw=1` locus lane. It can support only
   `PR5032_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_CONTEXT` and the lane
   input `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED`; it does not
@@ -1792,7 +1807,7 @@ Koide electron readout, `m_e`, `alpha(0)`, or hydrogen.
 | `#5028` Koide W4c labeling/species repairs | Merged after open lane-relevant refresh. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_W4C_PR5028_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as labeling/species dependency-surface readiness; it does not derive K1/K2/K3, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
 | `#5029` Koide substep4 labeling no-go runner strengthening | Merged with audit success after refresh. It strengthens mechanical verification for a Koide labeling no-go runner; it does not derive K1/K2/K3, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
 | `#5030` multisite Pauli finite-carrier provenance | Open and audit-successful at refresh. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_MULTISITE_PAULI_PR5030_CARRIER_PROVENANCE_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as finite algebraic carrier support only; it does not derive `PHYSICAL_CARRIER_CONTEXT_RETAINED`, h-class, R-eta, K2, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
-| `#5032` common `hw=1` BZ-corner carrier identification | Open with audit pipeline in progress at refresh. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_COMMON_HW1_PR5032_CARRIER_IDENTIFICATION_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as common finite carrier-identification support only; it can support `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED` but does not derive `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, `PHYSICAL_CARRIER_CONTEXT_RETAINED`, h-class, R-eta, K2, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
+| `#5032` common `hw=1` BZ-corner carrier identification | Merged with audit success at refresh. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_COMMON_HW1_PR5032_CARRIER_IDENTIFICATION_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as common finite carrier-identification support only; it can support `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED` but does not derive `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, `PHYSICAL_CARRIER_CONTEXT_RETAINED`, h-class, R-eta, K2, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
 | `#5011` eta-twisted walk family runner repair | Open and audit-successful at refresh. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_ETA_TWISTED_WALK_PR5011_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as eta-twisted covariant-walk support only; it does not derive the KS-route momentum/link-phase handoff, the spinful `sigma.p` kernel theorem, the KS-to-physical state law, R-eta, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 counting-measure target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md` packages `K1_COUNTING_MEASURE_RETAINED`; current source notes reduce K1 to one binary, but this target is not supplied by primitives, #4991, #5019, or K2 work and does not derive `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 counting-measure current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `K1_COUNTING_MEASURE_RETAINED`. |
@@ -1817,8 +1832,11 @@ Koide electron readout, `m_e`, `alpha(0)`, or hydrogen.
                         | R-eta physical carrier-context target | Open shared subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `PHYSICAL_CARRIER_CONTEXT_RETAINED`; it can feed R-eta and h-class as carrier context only, not h-unit, fixed-point readout, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta physical carrier-context ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the thirteen-input owner/audit contract for `PHYSICAL_CARRIER_CONTEXT_RETAINED`; it does not derive the charged-lepton carrier theorem itself. |
                         | R-eta physical carrier-context current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `PHYSICAL_CARRIER_CONTEXT_RETAINED`. |
+                        | R-eta charged-lepton carrier-realization target | Open child subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_TARGET_DISCRIMINATOR_2026-07-05.md` packages `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED`; it can feed physical carrier context only, not fixed-point readout, h-class, h-unit, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
+                        | R-eta charged-lepton carrier-realization ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the fifteen-input owner/audit contract for `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED`; it does not derive the physical carrier-context parent. |
+                        | R-eta charged-lepton carrier-realization current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED`. |
                         | R-eta physical carrier #5030 provenance impact | Open PR support boundary. `ZERO_IMPORT_HYDROGEN_MULTISITE_PAULI_PR5030_CARRIER_PROVENANCE_IMPACT_DISCRIMINATOR_2026-07-05.md` records #5030 as finite multisite Pauli carrier provenance only, not a charged-lepton carrier realization theorem, h-class, R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
-                        | R-eta common `hw=1` #5032 carrier-identification impact | Open PR support boundary. `ZERO_IMPORT_HYDROGEN_KOIDE_COMMON_HW1_PR5032_CARRIER_IDENTIFICATION_IMPACT_DISCRIMINATOR_2026-07-05.md` records #5032 as common finite Hamming/AC_lambda/C3 carrier-identification support only, not `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, a charged-lepton carrier realization theorem, h-class, R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
+                        | R-eta common `hw=1` #5032 carrier-identification impact | Merged PR support boundary. `ZERO_IMPORT_HYDROGEN_KOIDE_COMMON_HW1_PR5032_CARRIER_IDENTIFICATION_IMPACT_DISCRIMINATOR_2026-07-05.md` records #5032 as common finite Hamming/AC_lambda/C3 carrier-identification support only, not `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, a charged-lepton carrier realization theorem, h-class, R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta eta-twisted walk #5011 impact | Open PR support boundary. `ZERO_IMPORT_HYDROGEN_KOIDE_ETA_TWISTED_WALK_PR5011_IMPACT_DISCRIMINATOR_2026-07-05.md` records #5011 as eta/Kawamoto-Smit covariant-walk context only, not a KS-route momentum/link-phase handoff, spinful `sigma.p` kernel theorem, KS physical state law, h-class, R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta hw1 physical generation-locus target | Open subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` packages `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`; it can feed a future charged-lepton carrier realization theorem as locus support only, not carrier context, fixed-point readout, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta hw1 physical generation-locus ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the fifteen-input owner/audit contract for `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`; it does not derive the common-carrier theorem or physical matter-state-law theorem itself. |

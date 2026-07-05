@@ -27,17 +27,17 @@ Owner-approval history for every axiom/primitive change:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3656 |
-| Applied audit verdicts | 1373 |
+| Ledger rows | 3657 |
+| Applied audit verdicts | 1371 |
 | Retained-grade rows, including boxed decorations | 1300 |
 | Retained positive theorems | 191 |
 | Retained no-go rows | 193 |
 | Retained bounded rows | 871 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
-| Unaudited rows | 1934 |
+| Unaudited rows | 1936 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 26 |
+| Audited conditional rows | 25 |
 | Audited renaming rows | 19 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 10 |
@@ -49,10 +49,10 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1972 |
-| Ready rows | 207 |
+| Total pending rows | 1974 |
+| Ready rows | 208 |
 | Cycle-break targets | 10 |
-| Critical pending | 415 |
+| Critical pending | 417 |
 | High pending | 284 |
 | Medium pending | 513 |
 | Leaf pending | 760 |
@@ -62,11 +62,11 @@ Next ready rows by queue order:
 - [`no_per_site_chirality_theorem_note_2026-05-02`](../../docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
 - [`hypercharge_identification_note`](../../docs/HYPERCHARGE_IDENTIFICATION_NOTE.md) - critical; non_terminal_conditional
 - [`tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md) - critical; unaudited
+- [`flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`](../../docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md) - critical; audit_in_progress
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
-- [`staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26`](../../docs/STAGGERED_DIRAC_GATE_AC_PHI_LAMBDA_LABELING_CONVENTION_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md) - critical; non_terminal_conditional
+- [`staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05`](../../docs/STAGGERED_DIRAC_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md) - critical; unaudited
 - [`yt_ward_identity_derivation_theorem`](../../docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md) - critical; unaudited
 - [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
-- [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -93,15 +93,15 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3827 |
-| Critical nodes | 666 |
-| High nodes | 473 |
+| Citation-graph nodes | 3828 |
+| Critical nodes | 668 |
+| High nodes | 472 |
 | Medium nodes | 970 |
 | Leaf nodes | 1718 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1876 descendants; score 193.374
+- `minimal_axioms` - critical; 1877 descendants; score 193.875
 - `three_generation_observable_theorem_note` - critical; 1155 descendants; score 67.175
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 198 descendants; score 65.137
 - `graph_first_su3_integration_note` - critical; 1547 descendants; score 65.096

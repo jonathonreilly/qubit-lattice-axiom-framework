@@ -85,6 +85,10 @@ not proof inputs for this assembly:
   consumes `RETAINED_ALPHA0_LOW_ENERGY_COULOMB` only after it is retained, and
   still also needs retained `m_e`, retained static-source nonrelativistic
   Coulomb limit, the atomic operator harness, and audit acceptance.
+- `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+  groups that final static-source Rydberg consumer surface. It can spend
+  `RETAINED_ALPHA0_LOW_ENERGY_COULOMB` only after the parent alpha0 transport
+  contract is accepted; it is not a retained alpha0 proof input.
 
 ## Finite Witness Carried Forward
 

@@ -38,6 +38,8 @@ The repo already has:
 - `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_CLOSURE_DISCRIMINATOR_2026-07-04.md`:
   final-lane static-source Rydberg closure predicate, separating the packet's
   `-13.6057 eV / n^2` target from full precision hydrogen spectroscopy.
+- `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`:
+  final six-input assembly review surface for static-source Rydberg closure.
 - `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_LIMIT_RATIFICATION_DECISION_PACKET_2026-07-04.md`:
   final structural handoff for the one-body static-source nonrelativistic
   Coulomb limit in physical units.
@@ -1330,6 +1332,13 @@ records that current retained, primitive, and open-PR surfaces do not supply
 `AUDIT_ACCEPTANCE`; scalar lattice operator support, Green-kernel support, I1
 hygiene, native complete-square support, and atomic `1/n^2` harness checks
 remain support, not the retained physical-unit one-body theorem.
+The static-source Rydberg assembly ladder review packet
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+is review compression only. It groups the final six static-source inputs:
+retained physical-unit `m_e`, retained `alpha(0)`, retained static-source NR
+Coulomb limit, verified atomic harness, no Rydberg comparator proof input, and
+audit acceptance. It does not supply `STATIC_SOURCE_RYDBERG_RETAINED`, physical
+electron mass, alpha0, the NR Coulomb limit, or hydrogen.
 
 ## Attack Order
 

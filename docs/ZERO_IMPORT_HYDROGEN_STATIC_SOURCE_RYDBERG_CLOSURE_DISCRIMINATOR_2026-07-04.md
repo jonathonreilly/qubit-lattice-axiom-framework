@@ -118,10 +118,10 @@ about a 15 percent overshoot. So the final closure predicate cannot replace
 | gate | current hydrogen-facing standing |
 |---|---|
 | atomic operator shape | scaffolded and narrowed. `frontier_atomic_hydrogen_lattice_companion.py` checks coupling-relative `1/n^2`; the 2026-06-02 repair narrows the scalar graph-Laplacian and Coulomb-kernel dependency. |
-| `m_e` | open through Lane 6. The physical electron mass ratification packet now packages the exact `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT` handoff, but the native bridge, physical species bridge, absolute scale, branch-to-mass map, owner ratification, and audit still have to be accepted before this predicate can consume it. |
-| `alpha(0)` | open through Lane 2 QED running. The alpha loop-kernel target discriminator names QED loop-kernel, threshold/matching moment, R-Lep, R-Q-Heavy, R-Had-NP, scheme/decoupling, and no-comparator inputs. |
+| `m_e` | open through Lane 6. The physical electron mass ratification packet packages the exact `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT` handoff, and the physical electron mass assembly packet review-compresses the direct Lane 6 rows; owner/audit acceptance is still needed before this predicate can consume it. |
+| `alpha(0)` | open through Lane 2 QED running. The alpha loop-kernel target discriminator names QED loop-kernel, threshold/matching moment, R-Lep, R-Q-Heavy, R-Had-NP, scheme/decoupling, and no-comparator inputs; the alpha0 assembly packet review-compresses those direct rows without retaining alpha0. |
 | static-source NR Coulomb physical-unit limit | scaffolded by standard-QM, lattice-operator, Green-kernel, and I1 static-source companions. The ratification decision packet below packages the retained-theorem handoff, but this discriminator does not promote it. |
-| final Rydberg substitution | shallow after the first three gates are retained; currently not retained. |
+| final Rydberg substitution | shallow after the first three gates are retained; the static-source Rydberg assembly packet groups the final six-input predicate for review, but the predicate is currently not retained. |
 
 The alpha0 transport ratification decision packet
 `ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_RATIFICATION_DECISION_PACKET_2026-07-04.md`
@@ -141,6 +141,13 @@ records that current retained, primitive, and open-PR surfaces do not supply
 the Lane 2 `alpha(0)` handoff. The final predicate therefore still treats
 `RETAINED_ALPHA0_LOW_ENERGY_COULOMB` as an unsupplied upstream input, not as
 current retained content.
+
+The alpha0 transport assembly ladder review packet
+`ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+groups the direct Lane 2 rows under the parent alpha0 handoff for review
+compression only. It does not supply `RETAINED_ALPHA0_LOW_ENERGY_COULOMB`,
+and this final predicate still cannot consume alpha0 until the parent handoff
+is accepted.
 
 The static-source NR Coulomb limit ratification decision packet
 `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_LIMIT_RATIFICATION_DECISION_PACKET_2026-07-04.md`
@@ -189,23 +196,40 @@ the Lane 6 `m_e` handoff. The final predicate therefore still treats
 `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT` as an unsupplied upstream input, not as
 current retained content.
 
+The physical electron mass assembly ladder review packet
+`ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+groups the direct Lane 6 rows under the parent physical `m_e` handoff for
+review compression only. It does not supply
+`RETAINED_ELECTRON_MASS_PHYSICAL_UNIT`, and this final predicate still cannot
+consume physical `m_e` until the parent handoff is accepted.
+
+The static-source Rydberg assembly ladder review packet
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+groups the six direct final predicate inputs in one surface:
+retained physical-unit `m_e`, retained `alpha(0)`, retained static-source NR
+Coulomb limit, verified atomic harness, no Rydberg comparator proof input, and
+audit acceptance. It does not promote `STATIC_SOURCE_RYDBERG_RETAINED`.
+
 ## Open PR Alignment
 
 Open PRs were refreshed on 2026-07-05 UTC before this discriminator was
 updated.
 The current moving science does not close the final hydrogen predicate:
 
-| PR | audit status | hydrogen effect |
+| PR | queue signal | hydrogen effect |
 |---|---:|---|
-| `#5013` theta native positive-class adjudication | `SUCCESS` | no static-source Rydberg closure, no `m_e`, no `alpha(0)` |
-| `#5012` chirality domain-wall free-field note | `SUCCESS` | adjacent chirality science; no static-source Rydberg closure |
-| `#5011` eta twisted walk family runner | `SUCCESS` | runner stabilization; no atomic one-body NR limit |
-| `#5010` YT P1 I_s re-audit packet bridge repair | `SUCCESS` | diagnostic repair; no static-source Rydberg closure |
-| `#5009` S3 spacetime tensor primitive runner | `SUCCESS` | bounded S3 tensor context; no hydrogen closure |
-| `#5008` quark mass-ratio CP probe repair | `SUCCESS` | quark context; no electron readout or low-energy Coulomb coupling |
-| `#5007` Koide native zero-section route guard repair | `SUCCESS` | useful route-guard context, but not a physical electron-mass readout |
-| `#5006` static-source I1 hygiene companion | `SUCCESS` | relevant I1 hygiene context, but not retained static-source Rydberg closure |
-| `#4991` owner-governed Tier-A retirement | `SUCCESS` | status improvement for old Tier-A atoms, not a hydrogen calculation |
+| `#5033` RP two-step runner scope cleanup | open, clean | runner-scope cleanup; no static-source Rydberg closure, no `m_e`, no `alpha(0)` |
+| `#5030` finite multisite Pauli carrier provenance | open, clean | finite carrier provenance support; no physical electron mass or hydrogen closure |
+| `#5021` primitive-retirement review | open draft, dirty | no registry edit and no hydrogen primitive shortcut |
+| `#5018` domain-wall edge content vs SM chiral fermions map | open | adjacent chirality/domain-wall science; no static-source Rydberg closure |
+| `#5017` domain-wall anomaly inflow spectral flow | open | adjacent chirality/domain-wall science; no retained atomic Rydberg theorem |
+| `#5016` zero-import hydrogen retained lane bundle | open | carries this discriminator and assembly work if merged; not owner/audit retention by itself |
+| `#5015` wave-collapse-block01 measurement-collapse gate | open draft | measurement/collapse context; no static-source Rydberg closure |
+| `#5014` record-formation front/domain-wall chirality | open | chirality context; no retained `m_e`, alpha0, or static-source NR limit |
+| `#5012` chirality domain-wall free-field note | open | adjacent chirality science; no static-source Rydberg closure |
+| `#5011` eta twisted walk family runner | open | Koide/eta route context; no retained physical electron mass |
+| `#5007` Koide native zero-section route guard repair | open | useful route-guard context, but not a physical electron-mass readout |
+| `#4991` owner-governed Tier-A retirement | open | governance context for old atoms; no hydrogen calculation |
 
 ## Lane Consequence
 

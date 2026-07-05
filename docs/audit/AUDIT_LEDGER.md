@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 189 |
+| **retained** | 190 |
 | **retained_no_go** | 192 |
 | **retained_bounded** | 863 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 24 |
-| unaudited | 1936 |
+| unaudited | 1935 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1238 |
+| `audited_clean` | 1239 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2274 |
+| `unaudited` | 2273 |
 
 | claim_type | count |
 |---|---:|
@@ -1156,6 +1156,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -16212,6 +16213,18 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The bounded local theorem closes from Clifford anticommutation, unitary transport, and standard simply connected cubical cohomology. It does not derive P-KIN/P-SD or torus holonomy choices, but those are explicitly outside the audited claim scope.
 - **rationale:** The load-bearing step is exact algebra, not a definition, renaming, or numerical comparator: independently, gamma_nu gamma_mu gamma_nu gamma_mu = -I and the -1 cocycle makes the plaquette transport +I. The one-gauge-class claim follows because a closed U(1) or Z2 one-cochain is exact on the stated simply connected cubical regions. The runner source genuinely enumerates the unit cube and computes GF(2) ranks at scale rather than merely printing the claimed result.
 - **auditor confidence:** high
+
+### `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Within the declared two-candidate canonical-pair surface {single-pair Grassmann, free bosonic CCR}, the physical per-site dim-two space excludes the free bosonic candidate and leaves the single-pair Berezin/Grassmann candidate with determinant readout; full statistics selection is not audited or claimed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-postw4-row3-seat2`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Substituting the Step-1 physical readout into (D1)-(D3): candidate (B) is excluded (aleph_0 != 2), candidate (G) matches (2 = 2) in its single-pair form.  _(class `A`)_
+- **chain closes:** True — The Qubit axiom plus retained per-site dim-two row supply the physical dim_C H_x = 2 input, while the retained Cl(3) split and retained_bounded Berezin note supply the algebraic dim-two and determinant readouts used inside the declared candidate definition. The note repeatedly and explicitly limits the result to the two-candidate surface and leaves hard-core-boson/statistics selection outside scope.
+- **rationale:** The scoped theorem closes as exact algebra over the restricted one-hop packet: free bosonic Fock dimension is incompatible with dim_C H_x = 2, the single-pair Berezin function space has dimension 2 and determinant readout, and the runner currently terminates with PASS=45, FAIL=0 while exposing the statistics boundary. The runner does not prove full statistics selection or exhaust all possible frames, but the source note does not claim that; it states the hard-core-boson tie and open S2/FS residual explicitly. Residual risk is downstream citation hygiene, not a defect in this scoped claim.
 
 ### `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17`
 

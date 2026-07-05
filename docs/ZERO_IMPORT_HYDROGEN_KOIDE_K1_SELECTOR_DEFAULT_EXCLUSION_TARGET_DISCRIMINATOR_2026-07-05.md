@@ -72,6 +72,17 @@ The clauses mean:
 No proper subset of those eleven inputs supplies the selector/default-exclusion
 target.
 
+The companion ratification decision packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages this same subhandoff as an eleven-input owner/audit contract. The
+matching current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+records that current retained, primitive, merged-PR, and open-PR surfaces do
+not supply `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`. Those packets are
+companions to this target, not retained selector/default-exclusion closure.
+
+They do not supply full K1, physical electron mass, alpha, or hydrogen.
+
 ## Source Surface
 
 The narrow synthesis

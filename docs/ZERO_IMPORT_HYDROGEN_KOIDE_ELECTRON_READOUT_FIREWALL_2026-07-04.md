@@ -128,6 +128,16 @@ it can feed `ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED` and
 `DIMENSION_BORN_DEFAULT_EXCLUSION`; it still does not close K1, physical
 electron mass, alpha input, or hydrogen.
 
+The K1 selector/default-exclusion ratification decision packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md`)
+packages that subhandoff as an eleven-input owner/audit contract. The K1
+selector/default-exclusion current-surface no-go
+(`ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
+records that current retained, primitive, merged-PR, and open-PR surfaces do
+not supply `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`. These packets make the
+selector lane reviewable; they do not supply full K1, physical electron mass,
+alpha input, or hydrogen.
+
 The Koide native zero-section `#5007` impact discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_PR5007_IMPACT_DISCRIMINATOR_2026-07-04.md`)
 updates this boundary for the latest open Koide route-guard repair. It records
@@ -721,6 +731,8 @@ No hidden admission is left buried as background.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `K1_COUNTING_MEASURE_RETAINED` | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | decision packet for the ten-input `K1_COUNTING_MEASURE_RETAINED` handoff | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | subtarget for `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`; can feed two K1 inputs, not full K1 | yes |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | decision packet for the eleven-input `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED` subhandoff | yes |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED` | yes |
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | K2 delta comparator and scale boundary | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | K2 value-face registration versus exactness residual | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 R-eta supplied-premise conditionality boundary | yes |

@@ -16,6 +16,8 @@ KOIDE_FIREWALL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FI
 K1_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md"
 K1_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 K1_SELECTOR_DEFAULT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md"
+K1_SELECTOR_DEFAULT_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md"
+K1_SELECTOR_DEFAULT_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 COUNTING_SYNTHESIS = ROOT / "docs" / "CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md"
 SUPERTRACE_OPEN = ROOT / "docs" / "SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md"
 OCCUPANCY_INDEPENDENCE = ROOT / "docs" / "KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md"
@@ -159,6 +161,8 @@ def main() -> None:
         K1_TARGET,
         K1_DECISION,
         K1_SELECTOR_DEFAULT,
+        K1_SELECTOR_DEFAULT_DECISION,
+        K1_SELECTOR_DEFAULT_NO_GO,
         COUNTING_SYNTHESIS,
         SUPERTRACE_OPEN,
         OCCUPANCY_INDEPENDENCE,
@@ -204,6 +208,10 @@ def main() -> None:
         "ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md",
         "K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED",
         "two missing K1 inputs",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "eleven-input owner/audit contract",
+        "current retained, primitive, merged-PR, and open-PR surfaces do not supply `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`",
         "ten-input owner/audit decision packet",
         "not accepted on the current surface",
         "CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md",
@@ -270,6 +278,8 @@ def main() -> None:
     k1_target = read(K1_TARGET)
     k1_decision = read(K1_DECISION)
     k1_selector_default = read(K1_SELECTOR_DEFAULT)
+    k1_selector_default_decision = read(K1_SELECTOR_DEFAULT_DECISION)
+    k1_selector_default_no_go = read(K1_SELECTOR_DEFAULT_NO_GO)
     counting = read(COUNTING_SYNTHESIS)
     supertrace = read(SUPERTRACE_OPEN)
     occupancy = read(OCCUPANCY_INDEPENDENCE)
@@ -293,6 +303,8 @@ def main() -> None:
         ("K1 target", k1_target),
         ("K1 decision", k1_decision),
         ("K1 selector/default-exclusion target", k1_selector_default),
+        ("K1 selector/default-exclusion decision", k1_selector_default_decision),
+        ("K1 selector/default-exclusion current no-go", k1_selector_default_no_go),
     ]:
         audit.check(
             f"{label} references K1 current no-go or target boundary",
@@ -302,6 +314,14 @@ def main() -> None:
         "K1 selector/default-exclusion packet keeps current surface as target work",
         "K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED" in k1_selector_default
         and "does not supply `K1_COUNTING_MEASURE_RETAINED`" in k1_selector_default,
+    )
+    audit.check(
+        "K1 selector/default-exclusion current no-go keeps two inputs unsupplied",
+        "K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED" in k1_selector_default_no_go
+        and "CHIRAL_OR_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED" in k1_selector_default_no_go
+        and "REAL_VECTOR_TRACE_DEFAULT_EXCLUDED" in k1_selector_default_no_go
+        and "OWNER_RATIFICATION" in k1_selector_default_no_go
+        and "AUDIT_ACCEPTANCE" in k1_selector_default_no_go,
     )
     audit.check(
         "counting synthesis reduces to one bit but does not force Q=2/3",

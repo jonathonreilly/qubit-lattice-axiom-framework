@@ -713,11 +713,11 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 1,
+        "C": 4,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "B",
+      "dominant_class": "C",
       "runner": "scripts/admitted_input_registry_tier_a_boundary_check.py"
     },
     "affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02": {
@@ -42081,11 +42081,11 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 1,
+        "C": 4,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "B",
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/alpha_bare_four_pi_from_z3_plancherel_bridge_2026_05_26.py": {
@@ -90791,8 +90791,8 @@
     "decoration_candidates": 691,
     "dominant_class_distribution": {
       "A": 490,
-      "B": 634,
-      "C": 1274,
+      "B": 633,
+      "C": 1275,
       "D": 451,
       "none": 457
     },

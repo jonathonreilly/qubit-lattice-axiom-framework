@@ -488,6 +488,43 @@ Recorded explicitly approved primitive:
     fixed. It supplies no dynamics, no fourth spatial dimension, and no
     dimensionless observable.
 
+Recorded Tier-A retirement (admission discharged by retained derivation; the
+registry's designed discharge path, not an axiom or primitive change):
+
+- **2026-07-05 -- theta retired from Tier-A.** `strong_cp_theta_zero_note` is
+  moved from `derivation_targets` to `retired_derivation_targets` in
+  `docs/audit/data/tier_a_admissions.json`, with its statement, class, and
+  no-go portfolio preserved; `genuine_admitted_input_count` 2 -> 1. The
+  remaining admitted derivation target is `AC_phi_lambda` alone.
+  - **Basis.** Every discharge-basis row is retained-grade (full list in the
+    registry's retirement record): gauge side per-plaquette license,
+    cross-plane absence, licensed multi-plaquette narrowing, and the native
+    positive-class adjudication (for every emergent integer-sector functional
+    on the canonical class, any positive relative theta weighting is
+    support-vacuous or zero; second-seat clean-room cross-confirmation
+    recorded 2026-07-05); mass side phase-erasure, additive-even registrable
+    readout, and the determinant-readout bridge, on the supplied-context
+    K/CPT orbit bridge premise layer. Decision artifact: PR #4995, artifact
+    path `docs/THETA_RETIREMENT_BASIS_REMATCH_2026-07-04.md` (2026-07-05
+    updated verdict; not shipped as a live source note in this registry PR).
+  - **Scope.** Canonical imported Wilson + staggered-Wilson class. The
+    mass-side K-real reading rides on `AC_phi_lambda` sub-admission (i)
+    exactly as the admission statement recorded; the cross-admission
+    identification remains live for `AC_phi_lambda`. Q-structure lanes
+    (emergent-Q nonvacuous weighting, 4D-carrier model of the emergent OS0
+    surface, defect closure, W_anomaly_covariant_assembly, SU(3)
+    abelianization) remain open physics outside the retired admission.
+  - **No laundering.** Retirement changes premise accounting only: dependents
+    re-grade solely through the automatic effective-status cascade; nothing
+    is promoted by this entry itself; `AC_phi_lambda` is unchanged; no axiom
+    or primitive is added or amended. The historical source row
+    `STRONG_CP_THETA_ZERO_NOTE.md` remains a retained-bounded
+    selected-action-surface theorem in the ledger; this retirement removes
+    the active Tier-A admitted-premise slot, not that source note.
+  - **Approval.** Owner approval recorded in the PR #3511 thread
+    (2026-07-05). Review-loop must verify that approval comment exists
+    before landing the registry edit.
+
 Recorded Tier-A registry refinement (admissions remain Tier-A; nothing is
 promoted to axiom or primitive class):
 

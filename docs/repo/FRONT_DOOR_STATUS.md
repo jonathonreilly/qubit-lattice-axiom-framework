@@ -16,7 +16,7 @@ It is not a physics claim surface and should not be edited by hand.
 | `kinetic_isotropy_primitive` | approved primitive | [`docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](../../docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) |
 | `realized_state_primitive` | approved primitive | [`docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](../../docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) |
 
-Tier-A admitted derivation targets (2): `AC_phi_lambda` (row `staggered_dirac_realization_gate_note_2026-05-03`), `theta` (row `strong_cp_theta_zero_note`).
+Tier-A admitted derivation targets (1): `AC_phi_lambda` (row `staggered_dirac_realization_gate_note_2026-05-03`).
 Dependents chain-satisfy only at `retained_bounded` until an
 admission is retired by a retained derivation.
 

@@ -457,6 +457,18 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   the spinful kernel-object theorem, the sigma-dot-p handoff, scalar-lift
   exclusion, the KS physical action law, parent bridge, HW1, carrier context,
   fixed-point readout, R-eta, K2, `m_e`, `alpha(0)`, or hydrogen.
+  The KS-route sigma.p two-handle review packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SIGMA_P_TWO_HANDLE_REVIEW_PACKET_2026-07-05.md`
+  groups the two adjacent owner/audit child handles under the parent
+  `sigma.p` lane:
+  `KS_ROUTE_DEFINED_MOMENTUM_COVECTOR_OR_LINK_PHASE_INPUT_RETAINED` and
+  `KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RETAINED`. If a reviewer accepts
+  both handles, they can feed the parent
+  `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED` lane together;
+  the grouped packet itself is review compression only and does not ratify
+  either child handle, the parent `sigma.p` route, scalar-lift exclusion, the
+  KS child theorem, the physical matter-state bridge, R-eta, `m_e`,
+  `alpha(0)`, or hydrogen.
   The h-unit identity-radian target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md`
   packages one subinput of that R-eta target:
@@ -1890,6 +1902,7 @@ Koide electron readout, `m_e`, `alpha(0)`, or hydrogen.
                         | R-eta KS-route momentum/link-phase input target | Open child subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `KS_ROUTE_DEFINED_MOMENTUM_COVECTOR_OR_LINK_PHASE_INPUT_RETAINED`; it can feed the sigma-dot-p route only, not the spinful kernel-object theorem, scalar-lift exclusion, KS action law, parent bridge, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta KS-route momentum/link-phase input ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the route-input owner/audit contract over the P-FLUX and Kawamoto-Smit support stack; it does not derive the sigma-dot-p kernel theorem itself. |
                         | R-eta KS-route momentum/link-phase input current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `KS_ROUTE_DEFINED_MOMENTUM_COVECTOR_OR_LINK_PHASE_INPUT_RETAINED`. |
+| KS-route sigma.p two-handle review packet | Open grouped packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SIGMA_P_TWO_HANDLE_REVIEW_PACKET_2026-07-05.md` bundles the route momentum/link-phase input and spinful kernel-object theorem as adjacent child handles for review compression only; it does not ratify either handle, the parent `sigma.p` route, scalar-lift exclusion, KS state law, electron mass, or hydrogen. |
                         | R-eta h-unit identity-radian target | Open subtarget. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` packages `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; it can feed one input into R-eta readout retirement, not h-class, full R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta h-unit identity-radian ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the eleven-input owner/audit contract for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; it does not derive `c = 1`, `Phi = 2/3`, h-class, full R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta h-unit identity-radian current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`. |

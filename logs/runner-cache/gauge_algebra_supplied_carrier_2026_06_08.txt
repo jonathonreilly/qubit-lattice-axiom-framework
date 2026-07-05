@@ -1,25 +1,28 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_algebra_supplied_carrier_2026_06_08.py
-runner_sha256: 23fb9ea71be75a7758e055ddbc0fa49c9d1a8ed52f9e76e0840d57303191d6b1
+runner_sha256: 7996c7ecbe5ffe261cabe353d374ca4aedf3eb1cfa6dc5c49fa4faf159a5075d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.39
+elapsed_sec: 0.46
 status: ok
 ----- stdout -----
 GAUGE ALGEBRA SUPPORT GIVEN A SUPPLIED CARRIER
 ================================================================
+[PASS] post-audit conditional boundary states supplied carrier/gauging inputs and no u(6) uniqueness
 [PASS] carrier algebra 1: qubit M_2(C) -> u(2) = su(2)(+)u(1): the 3 Paulis close su(2) ([s_i,s_j]=2i eps s_k); anti-Hermitian M_2 has dim 4 = su(2)(3) + u(1)(1)
        su(2) closure verified; u(2) dim 4
 [PASS] carrier algebra 2: su(3) has 8 independent generators (rank-2 Cartan); smallest faithful irrep is 3-dim -> NO faithful su(3) on a qubit C^2; color su(3) requires the 3-dim base = N_c = 3 = dim Z^3
        dim su(3) = 8 (=8); smallest faithful irrep dim = 3 > 2 = dim qubit
-[PASS] carrier algebra 3: on C^3(base)(x)C^2(fiber), color su(3) and weak su(2) COMMUTE; with the central u(1) the carrier symmetry algebra is su(3)(+)su(2)(+)u(1), dim 8+3+1 = 12
+[PASS] carrier algebra 3: on the SUPPLIED C^3(base)(x)C^2(fiber) split, color su(3) and weak su(2) COMMUTE; with the central u(1) the FACTOR-PRESERVING algebra is su(3)(+)su(2)(+)u(1), dim 8+3+1 = 12
        [su(3),su(2)]=0: True; independent generators = 12 (=12)
-[PASS] carrier algebra 4: both su(2) on C^2 and su(3) on C^3 act IRREDUCIBLY (commutant = scalars, dim 1) -> each defines an equally-good gauge/Gauss structure; the carrier + Record + Gauss do NOT discriminate WHICH symmetry is gauged. The gauging selection (MR_color + chiral su(2)_L) remains open.
+[PASS] carrier algebra 4: the unrestricted internal algebra on C^6 is u(6), dim 36; the factor-preserving dim-12 algebra plus the 24 cross-factor su(3)(x)su(2) tensors spans u(6). So selecting su(3)(+)su(2)(+)u(1) rather than full u(6) is exactly the supplied factor-locality premise, not a consequence of Lattice/Quantum/Record.
+       dim u(6)=36; dim cross-factor complement=24; dim local+cross=36
+[PASS] carrier algebra 5: both su(2) on C^2 and su(3) on C^3 act IRREDUCIBLY (commutant = scalars, dim 1) -> each defines an equally-good gauge/Gauss structure; the carrier + Record + Gauss do NOT discriminate WHICH symmetry is gauged. The gauging selection (MR_color + chiral su(2)_L) remains open.
        commutant(su(2) on C^2) = 1; commutant(su(3) on C^3) = 1 (both scalars -> irreducible -> equally gaugeable)
 
-SCORECARD PASS=4 FAIL=0
-runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
-VERDICT (bounded support, GIVEN the supplied carrier): su(3)(+)su(2)(+)u(1) (dim 12) is the symmetry algebra of the SUPPLIED C^3(base)(x)C^2(fiber) carrier (su(2)=Aut M_2 on the fiber; su(3) on the 3-dim base; commuting). The carrier factorization itself is a SUPPLIED realization (cited to GRAPH_FIRST_SU3_INTEGRATION / CL3_COLOR_AUTOMORPHISM / QUBIT_LINK_U2 [bounded/pending] + the weak-axis selection + the link-connection convention), NOT derived from the Lattice, Quantum, and Record axioms. The GAUGING selection -- which symmetry is dynamically gauged, MR_color, chiral su(2)_L -- is an OPEN GATE: both su(2) and su(3) act irreducibly and admit the same Gauss/dressing structure. So this is conditional algebra support, NOT a from-axioms derivation. Audit lane sets the verdict.
+SCORECARD PASS=6 FAIL=0
+runner_check_breakdown = {A: 6, B: 0, C: 0, D: 0, total_pass: 6}
+VERDICT (bounded support, GIVEN the supplied carrier): su(3)(+)su(2)(+)u(1) (dim 12) is the FACTOR-PRESERVING algebra of the SUPPLIED C^3(base)(x)C^2(fiber) carrier (su(2)=Aut M_2 on the fiber; su(3) on the 3-dim base; commuting). The unrestricted carrier algebra is full u(6) (dim 36); the missing selection of the factor-preserving algebra rather than u(6) is exactly the supplied factor-locality/MR_color premise. The carrier factorization itself is a SUPPLIED realization (cited to GRAPH_FIRST_SU3_INTEGRATION / CL3_COLOR_AUTOMORPHISM / QUBIT_LINK_U2 [bounded/pending] + the weak-axis selection, with retained-bounded local-frame link-connection kinematics), NOT derived from the Lattice, Quantum, and Record axioms. The GAUGING selection -- which symmetry is dynamically gauged, MR_color, chiral su(2)_L -- is an OPEN GATE: both su(2) and su(3) act irreducibly and admit the same Gauss/dressing structure. So this is conditional algebra support, NOT a from-axioms derivation. Audit lane sets the verdict.
 
 ----- stderr -----
 

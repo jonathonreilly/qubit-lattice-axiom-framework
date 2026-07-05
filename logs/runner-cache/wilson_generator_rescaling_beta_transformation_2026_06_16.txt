@@ -1,0 +1,105 @@
+===== runner cache v1 =====
+runner: scripts/wilson_generator_rescaling_beta_transformation_2026_06_16.py
+runner_sha256: c1cc8aac3c7e3a2ea6355af86292bc3527660857b9a1e453e826edd537c21f78
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Wilson generator-rescaling beta transformation bridge
+========================================================================
+Part 0: source boundaries
+[PASS] bridge note exists  [docs/WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md]
+[PASS] Wilson small-a matching note exists  [docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md]
+[PASS] g_bare rescaling consumer note exists  [docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md]
+[PASS] bridge note contains marker: actual_current_surface_status: exact-support
+[PASS] bridge note contains marker: trace_class: support_component_for_prior_blocker
+[PASS] bridge note contains marker: target_claim_id: g_bare_rescaling_freedom_removal_theorem_no
+[PASS] bridge note contains marker: reachability_to_target: supplies_component_only
+[PASS] bridge note contains marker: T'_a = c T_a
+[PASS] bridge note contains marker: g'^2 = g^2 / c^2
+[PASS] bridge note contains marker: beta' = c^2 beta
+[PASS] bridge note contains marker: beta' g'^2 = beta g^2 = 2 N_c
+[PASS] bridge note contains marker: does not derive Wilson action-surface selection
+[PASS] bridge note contains marker: does not derive beta=6
+[PASS] bridge note contains marker: does not derive g_bare=1
+[PASS] bridge note contains marker: does not by itself reclassify, close, or promote
+[PASS] bridge note contains marker: bare_retained_allowed: false
+[PASS] forbidden overclaim absent: audit verdict marker
+[PASS] forbidden overclaim absent: effective-status marker
+[PASS] forbidden overclaim absent: Wilson surface overclaim
+[PASS] forbidden overclaim absent: g_bare closure overclaim
+
+Part 1: Wilson matching authority surface
+[PASS] WM note contains marker: beta = 2 N_c / g_bare^2
+[PASS] WM note contains marker: beta * g_bare^2 = 2 N_c
+[PASS] WM note contains marker: does not derive that the framework must select the Wilson ac
+[PASS] WM note contains marker: The theorem is exactly the small-`a` coefficient matching in
+
+Part 2: exact beta transform under compensating generator rescaling
+[PASS] WM product before rescaling N=3, g^2=1  [beta=6]
+[PASS] beta scales by c^2 for N=3, g^2=1, c=1/3  [beta'=2/3; c^2 beta=2/3]
+[PASS] product invariant after compensating rescale c=1/3
+[PASS] beta scales by c^2 for N=3, g^2=1, c=1/2  [beta'=3/2; c^2 beta=3/2]
+[PASS] product invariant after compensating rescale c=1/2
+[PASS] beta scales by c^2 for N=3, g^2=1, c=1  [beta'=6; c^2 beta=6]
+[PASS] product invariant after compensating rescale c=1
+[PASS] beta scales by c^2 for N=3, g^2=1, c=2  [beta'=24; c^2 beta=24]
+[PASS] product invariant after compensating rescale c=2
+[PASS] beta scales by c^2 for N=3, g^2=1, c=5/2  [beta'=75/2; c^2 beta=75/2]
+[PASS] product invariant after compensating rescale c=5/2
+[PASS] beta scales by c^2 for N=3, g^2=1, c=3  [beta'=54; c^2 beta=54]
+[PASS] product invariant after compensating rescale c=3
+[PASS] WM product before rescaling N=3, g^2=5/7  [beta=42/5]
+[PASS] beta scales by c^2 for N=3, g^2=5/7, c=1/3  [beta'=14/15; c^2 beta=14/15]
+[PASS] product invariant after compensating rescale c=1/3
+[PASS] beta scales by c^2 for N=3, g^2=5/7, c=1/2  [beta'=21/10; c^2 beta=21/10]
+[PASS] product invariant after compensating rescale c=1/2
+[PASS] beta scales by c^2 for N=3, g^2=5/7, c=1  [beta'=42/5; c^2 beta=42/5]
+[PASS] product invariant after compensating rescale c=1
+[PASS] beta scales by c^2 for N=3, g^2=5/7, c=2  [beta'=168/5; c^2 beta=168/5]
+[PASS] product invariant after compensating rescale c=2
+[PASS] beta scales by c^2 for N=3, g^2=5/7, c=5/2  [beta'=105/2; c^2 beta=105/2]
+[PASS] product invariant after compensating rescale c=5/2
+[PASS] beta scales by c^2 for N=3, g^2=5/7, c=3  [beta'=378/5; c^2 beta=378/5]
+[PASS] product invariant after compensating rescale c=3
+[PASS] WM product before rescaling N=2, g^2=3/5  [beta=20/3]
+[PASS] beta scales by c^2 for N=2, g^2=3/5, c=1/3  [beta'=20/27; c^2 beta=20/27]
+[PASS] product invariant after compensating rescale c=1/3
+[PASS] beta scales by c^2 for N=2, g^2=3/5, c=1/2  [beta'=5/3; c^2 beta=5/3]
+[PASS] product invariant after compensating rescale c=1/2
+[PASS] beta scales by c^2 for N=2, g^2=3/5, c=1  [beta'=20/3; c^2 beta=20/3]
+[PASS] product invariant after compensating rescale c=1
+[PASS] beta scales by c^2 for N=2, g^2=3/5, c=2  [beta'=80/3; c^2 beta=80/3]
+[PASS] product invariant after compensating rescale c=2
+[PASS] beta scales by c^2 for N=2, g^2=3/5, c=5/2  [beta'=125/3; c^2 beta=125/3]
+[PASS] product invariant after compensating rescale c=5/2
+[PASS] beta scales by c^2 for N=2, g^2=3/5, c=3  [beta'=60; c^2 beta=60]
+[PASS] product invariant after compensating rescale c=3
+[PASS] WM product before rescaling N=7/2, g^2=9/4  [beta=28/9]
+[PASS] beta scales by c^2 for N=7/2, g^2=9/4, c=1/3  [beta'=28/81; c^2 beta=28/81]
+[PASS] product invariant after compensating rescale c=1/3
+[PASS] beta scales by c^2 for N=7/2, g^2=9/4, c=1/2  [beta'=7/9; c^2 beta=7/9]
+[PASS] product invariant after compensating rescale c=1/2
+[PASS] beta scales by c^2 for N=7/2, g^2=9/4, c=1  [beta'=28/9; c^2 beta=28/9]
+[PASS] product invariant after compensating rescale c=1
+[PASS] beta scales by c^2 for N=7/2, g^2=9/4, c=2  [beta'=112/9; c^2 beta=112/9]
+[PASS] product invariant after compensating rescale c=2
+[PASS] beta scales by c^2 for N=7/2, g^2=9/4, c=5/2  [beta'=175/9; c^2 beta=175/9]
+[PASS] product invariant after compensating rescale c=5/2
+[PASS] beta scales by c^2 for N=7/2, g^2=9/4, c=3  [beta'=28; c^2 beta=28]
+[PASS] product invariant after compensating rescale c=3
+
+Part 3: fixed-beta canonical surface excludes nontrivial c
+[PASS] test point satisfies beta g^2 = 2 N_c
+[PASS] nontrivial c=1/2 changes beta on the same Wilson-matching surface  [beta'=3/2; beta=6]
+[PASS] nontrivial c=1/2 changes canonical trace Gram  [Tr(T'_a T'_a)=1/8]
+[PASS] nontrivial c=2 changes beta on the same Wilson-matching surface  [beta'=24; beta=6]
+[PASS] nontrivial c=2 changes canonical trace Gram  [Tr(T'_a T'_a)=2]
+[PASS] nontrivial c=3 changes beta on the same Wilson-matching surface  [beta'=54; beta=6]
+[PASS] nontrivial c=3 changes canonical trace Gram  [Tr(T'_a T'_a)=9/2]
+
+TOTAL: PASS=83 FAIL=0
+
+----- stderr -----
+

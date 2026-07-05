@@ -1,5 +1,7 @@
 # DM Neutrino Source-Amplitude Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15  
 **Status:** exact sharp-branch source-amplitude theorem on the refreshed
 `main`-derived DM lane  

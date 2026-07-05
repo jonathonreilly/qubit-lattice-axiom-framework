@@ -68,6 +68,14 @@ def part_t0_source_boundary() -> None:
     note_flat = " ".join(note_text.split())
     check("note records 2026-06-07 source-boundary manifest",
           "2026-06-07 Source-Boundary Manifest" in note_text)
+    check("note claim type is open-gate conditional-support, not bounded_theorem",
+          "**Claim type:** open_gate / conditional-support toy certificate" in note_text
+          and "**Type:** open_gate / conditional-support" in note_text
+          and "**Claim type:** bounded_theorem" not in note_text)
+    check("note records the 2026-06-12 in-toy algebra firewall",
+          "2026-06-12 audit firewall: in-toy algebra only" in note_text
+          and "No new axiom, Tier-A admission" in note_flat
+          and "audit-status change" in note_flat)
     check("note records local toy admission packet A_TOY",
           "A_TOY = (A1, A2, A3, A4, A5)" in note_flat)
     check("note says A1-A5 are not framework-native facts",
@@ -75,6 +83,11 @@ def part_t0_source_boundary() -> None:
     check("note forbids retained propagation without a bridge theorem",
           "cannot propagate a retained Koide closure" in note_flat
           and "separate bridge theorem for the admissions" in note_flat)
+    check("note records the 2026-06-20 conditional-in-toy-algebra-only scoping",
+          "2026-06-20 Source Repair: Conditional In-Toy Algebra Scoping" in note_text
+          and "keeps the row scoped as **conditional in-toy algebra only**" in note_flat
+          and "this note makes **no claim of retained-grade propagation**" in note_flat
+          and "No retained-grade propagation." in note_text)
 
 
 def q_toy(s: Fraction, z: Fraction) -> Fraction:

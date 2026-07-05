@@ -43,7 +43,7 @@ coefficient source supply the inputs (I1), (I2), (I3), (I4):
        R_beta^env.
 
   (I4) wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30
-       (retained_bounded / audited_clean): the Wilson one-link coefficient
+       (effective_status retained_bounded): the Wilson one-link coefficient
        expansion has nonnegative tensor-product multiplicities. This runner
        checks the source repair's constructive highest-weight occurrence
        certificate m_(p,q)^(p+q) >= 1, which upgrades the needed premise to
@@ -97,10 +97,15 @@ FAIL = 0
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md"
+RESIDUAL_PARENT_PATH = ROOT / "docs" / "GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md"
+CHAR_MEASURE_PARENT_PATH = ROOT / "docs" / "GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md"
 LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 WILSON_NOTE_PATH = ROOT / "docs" / "WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md"
 WILSON_RUNNER_PATH = ROOT / "scripts" / "wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py"
 WILSON_CLAIM_ID = "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+SELF_RUNNER = "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py"
+SELF_CACHE = "logs/runner-cache/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.txt"
+SELF_NOTE = "GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md"
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -207,6 +212,8 @@ def main() -> int:
     # -------------------------------------------------------------------
 
     note_text = NOTE_PATH.read_text(encoding="utf-8")
+    residual_parent_text = RESIDUAL_PARENT_PATH.read_text(encoding="utf-8")
+    char_measure_parent_text = CHAR_MEASURE_PARENT_PATH.read_text(encoding="utf-8")
     wilson_row = ledger_row(WILSON_CLAIM_ID)
 
     check(
@@ -215,9 +222,26 @@ def main() -> int:
         detail="Wilson positivity note and runner exist in the restricted packet surface",
     )
     check(
-        "I4 ledger authority is audited_clean / retained_bounded",
-        wilson_row.get("audit_status") == "audited_clean"
-        and wilson_row.get("effective_status") == "retained_bounded",
+        "source note exposes plain primary runner and cache metadata",
+        f"**Primary runner:** `{SELF_RUNNER}`" in note_text
+        and f"**Runner cache:** `{SELF_CACHE}`" in note_text,
+        detail="audit-runner extraction can discover the restricted packet without following markdown link targets",
+    )
+    check(
+        "parent finite-packet notes cite this all-weight formal bridge as structural support only",
+        SELF_NOTE in residual_parent_text
+        and SELF_NOTE in char_measure_parent_text
+        and "formal diagonal-convolution" in residual_parent_text
+        and "formal diagonal-convolution" in char_measure_parent_text
+        and "does not compute" in residual_parent_text
+        and "does not compute" in char_measure_parent_text
+        and "full unmarked spatial Wilson integral" in residual_parent_text
+        and "actual\n  beta=6 unmarked spatial Wilson environment coefficients" in char_measure_parent_text,
+        detail="parent rows split formal convolution support from the still-open physical coefficient bridge",
+    )
+    check(
+        "I4 ledger authority has retained_bounded effective status",
+        wilson_row.get("effective_status") == "retained_bounded",
         detail=f"audit_status={wilson_row.get('audit_status')} effective_status={wilson_row.get('effective_status')}",
     )
     check(

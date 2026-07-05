@@ -1,0 +1,25 @@
+loop_slug: koide-readout-theta-endpoint-repair-20260611
+branch: physics-loop/audit-repair-block09-20260611
+base: origin/main
+current_goal: "Unblock the Koide readout demarcation row by correcting the Z=(1,t,t) theta-independence endpoint statement."
+target_status: retained-no-go-candidate
+cycle_count: 1
+active_route: "formula-inventory drift repair"
+hard_residual: "Independent audit must still decide whether the repaired source packet is clean."
+files_touched:
+  - docs/KOIDE_READOUT_LANE_DEMARCATION_NOTE_2026-05-30.md
+  - scripts/frontier_koide_readout_lane_demarcation_2026_05_30.py
+  - logs/runner-cache/frontier_koide_readout_lane_demarcation_2026_05_30.txt
+  - .claude/science/physics-loops/koide-readout-theta-endpoint-repair-20260611/
+open_imports:
+  - "This branch does not derive a dynamics principle selecting r=1/2."
+  - "This branch only repairs the readout-lane endpoint statement."
+no_go_routes:
+  - "Do not claim the t=1 unit-residue branch selects r=1/2."
+  - "Do not treat single-pole collapse as a valid three-mass selector."
+  - "Do not treat this source repair as an audit verdict."
+trace_gate_classification: formula_inventory_repair
+review_findings: pending reviewer
+pr_status: pending
+next_exact_action: "Commit, push, and open the source repair PR for reviewer/auditor recheck."
+stop_condition: "Stop this block after PR creation; reviewer/auditor owns landing and status."

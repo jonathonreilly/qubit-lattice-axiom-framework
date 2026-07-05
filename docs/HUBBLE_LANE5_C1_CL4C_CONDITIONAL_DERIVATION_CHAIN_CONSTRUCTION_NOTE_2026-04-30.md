@@ -1,5 +1,7 @@
 # Lane 5 `(C1)` Cl_4(C)-Conditional Derivation Chain Construction Note
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-30
 **Status (actual current surface):** support / explicit-construction note on
 `main` for the conditional `(G1) → (C1)` chain. Conditional on adopting

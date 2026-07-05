@@ -3,11 +3,12 @@
 
 The runner proves the algebra on the ordinary generated shared-scalar complex
 tensor product M_2(C) tensor_C M_2(C) ~= M_4(C). The source-note dependency
-route to that generated two-site carrier is supplied by the 2026-06-06
-two-site qubit tensor-carrier bridge, not by deriving tensor composition from
-operational locality alone.
+route to that generated two-site carrier is supplied directly by retained
+per-site and finite-block tensor-product authorities, not by deriving tensor
+composition from operational locality alone.
 """
 
+import json
 from pathlib import Path
 
 import sympy as sp
@@ -15,7 +16,7 @@ from sympy import I, Matrix, eye, zeros
 
 
 ROOT = Path(__file__).resolve().parent.parent
-BRIDGE_NOTE = ROOT / "docs" / "TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md"
+LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 NO_GO_NOTE = ROOT / "docs" / "TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md"
 
 RESULTS: list[tuple[str, bool]] = []
@@ -49,18 +50,35 @@ def self_adjoint_dim_real(n: int) -> int:
     return n * (n + 1) // 2
 
 
+def ledger_rows() -> dict:
+    if not LEDGER.exists():
+        return {}
+    return json.loads(LEDGER.read_text(encoding="utf-8")).get("rows", {})
+
+
+def check_dependency_statuses() -> None:
+    rows = ledger_rows()
+    expected = {
+        "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained",
+        "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03": "retained_no_go",
+    }
+    for claim_id, status in expected.items():
+        row = rows.get(claim_id, {})
+        check(
+            f"M0 dependency {claim_id} effective_status is {status}",
+            row.get("effective_status") == status,
+        )
+
+
 def main() -> int:
     sigma0 = eye(2)
     sigma1 = Matrix([[0, 1], [1, 0]])
     sigma2 = Matrix([[0, -I], [I, 0]])
     sigma3 = Matrix([[1, 0], [0, -1]])
 
-    bridge_text = BRIDGE_NOTE.read_text(encoding="utf-8") if BRIDGE_NOTE.exists() else ""
+    check_dependency_statuses()
     no_go_text = NO_GO_NOTE.read_text(encoding="utf-8") if NO_GO_NOTE.exists() else ""
-    check(
-        "M0 two-site tensor-carrier bridge is present and names generated M_4(C)",
-        BRIDGE_NOTE.exists() and "M_2(C)_x tensor_C M_2(C)_y ~= M_4(C)" in bridge_text,
-    )
     check(
         "M0b retained no-go boundary remains visible: locality alone is not the proof route",
         NO_GO_NOTE.exists() and "operational locality alone" in no_go_text and "not force" in no_go_text,
@@ -127,8 +145,9 @@ def main() -> int:
     print(
         "Result: on the generated ordinary shared-scalar complex two-site "
         "tensor carrier, complex matrix products are locally tomographic by "
-        "dimension count. The carrier route is supplied by the bridge note; "
-        "this runner does not derive tensor composition from locality alone."
+        "dimension count. The carrier route is supplied by retained direct "
+        "finite-block inputs; this runner does not derive tensor composition "
+        "from locality alone."
     )
     return 0 if failed == 0 else 1
 

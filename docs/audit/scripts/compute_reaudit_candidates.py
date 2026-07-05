@@ -8,7 +8,8 @@ previously conditional scoped claim worth a fresh clean-context re-audit.
 Candidate policy:
   1. claim is a theorem/no-go/open-gate row, not metadata or decoration;
   2. claim has a terminal non-clean audit verdict;
-  3. every current one-hop dependency is retained-grade;
+  3. every current one-hop dependency is retained-grade, metadata, or an
+     accepted premise;
   4. at least one audit-time dependency status was not retained-grade but is now.
 
 Writes:
@@ -39,6 +40,7 @@ def runner_hash(runner_path: str | None) -> str | None:
 
 CRITICALITY_RANK = {"critical": 3, "high": 2, "medium": 1, "leaf": 0}
 RATIFIED_DEP_STATUSES = {"retained", "retained_no_go", "retained_bounded"}
+CHAIN_SATISFYING_DEP_STATUSES = RATIFIED_DEP_STATUSES | {"meta"}
 ELIGIBLE_CLAIM_TYPES = {"positive_theorem", "bounded_theorem", "no_go", "open_gate"}
 ELIGIBLE_AUDIT_STATUSES = {
     "audited_conditional",
@@ -113,7 +115,7 @@ def current_deps_are_ratified(row: dict, rows: dict[str, dict]) -> bool:
     # only at the bounded tier. Textbook results must still be ordinary
     # retained-grade rows.
     return all(
-        dep_effective_status(dep_id, rows) in RATIFIED_DEP_STATUSES
+        dep_effective_status(dep_id, rows) in CHAIN_SATISFYING_DEP_STATUSES
         or premise_nodes.is_accepted_premise_dep(dep_id)
         for dep_id in deps
     )

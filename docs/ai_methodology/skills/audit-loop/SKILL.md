@@ -79,15 +79,35 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   premises only when already registered in
   `docs/audit/data/axiom_premise_nodes.json`; they satisfy dependency closure
   without making downstream rows `retained_bounded`. The current axiom baseline
-  is Lattice, Quantum, and Record; Record means durable registration of the
-  realized outcome in a supplied readout context, where the realized outcome is
-  the `K`/CPT orbit of the realized central sector and scalar readout is
-  finitely additive over finite pairwise-disjoint record collections. Record
-  does not supply the readout context, decomposition, `K`/CPT structure,
-  sector-generation rule, weighting, normalization, probability,
-  measurement/decoherence dynamics, time metric, within-sector data, occupancy
-  rule, P2/modulus, log-det, source/action, scale, or arbitrary observable
-  identification. The scale-reference primitive is the approved units
+  is Lattice, Qubit, Admissibility, and Record. Lattice is the cubic `Z^3`
+  nearest-neighbor locality substrate with standard translations and proper
+  cubic rotations about each site; no site is privileged, and sites are
+  distinguished by the supplied lattice structure alone. Qubit is the domain of
+  local possibilities with full one-site algebraic presentation `M_2(C)`, with
+  `Cl(3,0)` only as equivalent notation, no possibility is privileged, and
+  possibilities are distinguished by the supplied algebraic structure alone.
+  Admissibility is one
+  fixed finite-neighborhood rule, the same at every lattice translate; for
+  each site, the available possibilities are determined by, and vary with,
+  the nearest-neighbor conditions, consistent with local records.
+  A record, when present, locks exactly one admissible local possibility. A
+  site never carries more than one record; records are permanent. Only records
+  are readable; a readout value is determined by record content alone;
+  scalar-valued finite readout is additive over finite
+  pairwise-disjoint record collections. A state is a configuration of records.
+  A law privileges no states: its domain is a supplied condition, and where
+  that condition holds it gives exactly one answer.
+  Downstream
+  structures such as context selection, decomposition, `K`/CPT structure,
+  sector-generation rules, weighting, normalization, probability, occurrence
+  rules, update laws, measurement/decoherence dynamics, record-production
+  dynamics, physical persistence dynamics, time metric, within-sector data,
+  occupancy rules, P2/modulus, log-det readouts,
+  source/action bridges, scale, local observability, law-admissibility or
+  transition relations, kinetic-branch selection, or arbitrary observable
+  identification remain compatible targets but require derivation, bridge,
+  explicit admission, or approved primitive registration before use as
+  load-bearing content. The scale-reference primitive is the approved units
   primitive, not a Tier-A admission or a bounded Planck import. The
   kinetic-isotropy primitive is the approved structural OS0 kinetic-form
   isotropy `c_t = c_s`, not a Tier-A admission or a bounded-status source; it
@@ -102,8 +122,11 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   otherwise non-retained dependency is the registered
   `scale_reference_primitive`, do not bound the row for using the Planck
   scale reference; if it is the registered `kinetic_isotropy_primitive`, do not
-  bound the row for using `c_t = c_s` as structural kinetic-form isotropy. Audit
-  only the extra content actually claimed.
+  bound the row for using `c_t = c_s` as structural kinetic-form isotropy; if it
+  is the registered `realized_state_primitive`, do not bound the row for
+  pointwise evaluation at the supplied realized state (bounding, where due,
+  comes from the supplied state data actually quoted, not from the primitive).
+  Audit only the extra content actually claimed.
 - If the author family appears to be Codex and the current auditor is Codex, do not let the current context self-ratify a clean result. Restart the claim in a distinct restricted-input sub-agent when sub-agents are available, and record a clean result only as `independence: fresh_context` with a distinct `auditor` identity if `apply_audit.py` accepts it. If no sub-agent is available, skip clean application and report that a non-Codex, human, or fresh-context agent audit is required.
 - Do not stop after producing an audit JSON unless the user explicitly asks for a dry run, no-apply, or JSON-only result. If the user asks to "return JSON" as part of an audit-loop task, treat that as the required verdict format and still apply, verify, commit, and push the audit result according to this skill.
 
@@ -361,6 +384,32 @@ Answer these before choosing a verdict:
 - Are numerical values current with the runner and the source note?
 - Would a hostile specialist be able to reject the conclusion without making a mistake?
 - If the claim is a `no_go`, a wall-naming `bounded_theorem`, or its rationale would cite walls: have at least 5 distinct attack routes against the no-go been considered (N1)? Are the named walls actually independent (N2)? Are any hidden in "bridge context" / "we assume" / "standard QFT" / "registered" prose (N3)? Do cited witness residuals match the claim's residual (N4)? Are "X is not a Y-fact" phrases verified at every named resolution (N5)? Is the "needs new axiom" framing actually a convention-reframe / labeling ratification (N6)? Can a steelman against the no-go be made convincing (N7)? Has a structurally similar prior wall been retired by a mechanism not considered here (N8)? See `no-go-discipline` skill.
+
+## Law-Domain Audit Procedure
+
+(Relocated from the AXIOM_MINIMALITY_POLICY section 6 reading notes,
+2026-07-02, under the owner rule that process lives in procedural docs while
+semantic content lives in axiom text or audited derivations. This section is
+audit process only; it carries no premise or interpretive weight.)
+
+When a claim's law domain (a supplied condition) is audited:
+
+- **Certificate demand.** Ask for the condition's certificate: its
+  derivation, bridge, explicit admission, or approved primitive registration.
+  A condition with no certificate does not enter as load-bearing content.
+- **Covariance transport.** Transport the condition under lattice motions and
+  check the selected state sets move covariantly; a condition whose selected
+  sets are not motion-covariant is flagged against the motion-closure theorem
+  rather than silently accepted.
+- **Decidability from record readouts.** The condition must be decidable from
+  record readouts without running the law it gates.
+- **Finite/local evaluability.** On the infinite lattice some conditions are
+  refutable but not verifiable; finite/local evaluability is audit practice,
+  not axiom content — audit at the finite ranges the runner exercises and say
+  so.
+- **Extensional judgment.** Judge a condition by the set of states it
+  selects, never by its wording; co-extensional conditions receive one
+  verdict (interface theorem in the final derivation note).
 
 ## Verdict Rules
 

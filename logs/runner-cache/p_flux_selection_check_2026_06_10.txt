@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/p_flux_selection_check_2026_06_10.py
+runner_sha256: b3a9135604a281fe778c229eaab7bc890d85419a91a0b53845872256e597bb66
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.15
+status: ok
+----- stdout -----
 ========================================================================
 [A] exact branch construction + tested-surface tie
 ========================================================================
@@ -63,3 +71,6 @@ VERDICT: the existing matter-content/observable package (substep-3 cube combinat
          classes: K0 (flux +1) carries a canonical exact copy of the full generation carrier in its zero-mode
          sector. The matter-content route does NOT select phi = -1 on this surface. The only separating
          observables found are the extra kinetic-order data already named by B-BIT.
+
+----- stderr -----
+

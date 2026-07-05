@@ -1,5 +1,7 @@
 # DM Neutrino Source-Surface Active Affine Point-Selection Boundary
 
+**Claim type:** no_go
+
 **Date:** 2026-04-16
 **Status:** exact blocker-identification theorem on the live source-oriented sheet
 **Atlas placement:** canonical toolkit on `main` at

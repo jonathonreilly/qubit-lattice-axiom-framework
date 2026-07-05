@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/frontier_same_source_metric_ansatz_scan.py
+runner_sha256: cc0e24b12c6ed6a389cbff9b03e06754380103d8aca9d3b7903fddc3b1195b94
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 16.85
+status: ok
+----- stdout -----
+Same-source nonlinear metric ansatz scan
+========================================================================
+[BOUNDED] PASS: baseline direct same-source metric reproduces prior residual floor
+    baseline max |G_mu_nu|=2.978e-02
+[BOUNDED] PASS: simple nonlinear same-source ansatz can improve the direct metric residual
+    baseline=2.978e-02, best=2.852e-02 at a2=1.00, b2=-1.00
+[BOUNDED] PASS: simple quadratic same-source closure still does not produce vacuum-grade 4D closure
+    best max |G_mu_nu|=2.852e-02 over 121 admissible (a2,b2) choices
+
+========================================================================
+SUMMARY
+========================================================================
+Baseline max |G_mu_nu|=2.978263e-02
+Best max |G_mu_nu|=2.852153e-02
+Best parameters: a2=1.000, b2=-1.000
+Admissible ansatze tested: 121
+PASS=3 FAIL=0 TOTAL=3
+All checks passed.
+
+----- stderr -----
+

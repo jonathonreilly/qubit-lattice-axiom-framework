@@ -1,0 +1,23 @@
+loop_slug: gravity-weak-field-sign-repair-20260611
+branch: physics-loop/audit-repair-block05-20260611
+base: origin/main
+current_goal: "Repair the audited conditional weak-field gravity bridge sign-convention blocker."
+target_status: bounded-support
+cycle_count: 1
+active_route: "test-force sign convention repair"
+hard_residual: "Audit says the claim text, proof, and runner disagree on whether U=-m phi gives F=+m grad phi or -m grad phi."
+files_touched:
+  - docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  - scripts/frontier_gravity_weak_field_source_response_bridge_2026_06_11.py
+  - logs/runner-cache/frontier_gravity_weak_field_source_response_bridge_2026_06_11.txt
+  - .claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/
+open_imports:
+  - "Independent audit must still decide row status."
+  - "No nonlinear gravity, physical G_Newton, or full Einstein result is claimed."
+no_go_routes:
+  - "Do not use ambiguous 'up to sign convention' language for the load-bearing force statement."
+trace_gate_classification: direct_blocker_closure
+review_findings: pending reviewer
+pr_status: pending
+next_exact_action: "Run verification, commit, push, and open PR."
+stop_condition: "Stop after PR creation; reviewer/auditor owns landing and status."

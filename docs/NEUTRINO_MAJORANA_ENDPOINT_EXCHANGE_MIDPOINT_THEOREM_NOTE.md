@@ -1,5 +1,7 @@
 # Majorana Endpoint-Exchange Midpoint Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15
 **Status:** exact positive bridge theorem on the minimal non-homogeneous
 finite-register lift

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_carrier_orbit_invariance.py
-runner_sha256: a6c4b3efbfb424e93447939e2a68d421bc3c4c738a5b58e83797b1ea82a21b6b
+runner_sha256: 18b0a12331d70a5e9b88b88b50b06a1183fb821acf5be5605f5d55b7c32298bd
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.13
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
 ----- stdout -----
 ========================================================================================
 CARRIER ORBIT INVARIANCE — STRETCH ATTEMPT (cycle 22)
@@ -46,8 +46,8 @@ PART 4: REGISTRY ENUMERATION (active Hermitian basis)
   [PASS] Symmetric column-action (c_E = c_T) lies in End(V)^+
   [PASS] Asymmetric column-action (c_E != c_T) does NOT lie in End(V)^+
   [PASS] Asymmetric column-action decomposes nontrivially as End(V)^+ + End(V)^-  (||op_asym_minus||=0.4000)
-  [FAIL] Theta_R^(0) is documented as bounded (not exact) in retained registry
-  [FAIL] Xi_R^(0) is documented as bounded (not exact) in retained registry
+  [PASS] Theta_R^(0) is documented as bounded/staging, not exact, in the registry
+  [PASS] Xi_R^(0) is documented as bounded/staging, not exact, in the registry
   [PASS] Swap-reduction theorem records both staging tools as bounded only
 
 ========================================================================================
@@ -70,7 +70,7 @@ PART 6: LOW-DEGREE POLYNOMIAL OPERATOR ENUMERATION (Route E cross-check)
   [PASS] (u_E - u_T) corresponds to bounded prototype Theta_R^(0), not exact
   [PASS] Degree-2 invariant operators include u_E*u_T, delta^2, and symmetrizations  (deg2 invariants count = 4)
   [PASS] Degree-2 antisymmetric operators are exactly 2 (u_E^2 - u_T^2; delta*u_E - delta*u_T)  (antisymmetric=['asym(delta*u_E,delta*u_T)', 'asym(u_E^2,u_T^2)'])
-  [FAIL] delta*(u_E - u_T) corresponds to bounded Xi_R^(0), not exact
+  [PASS] delta*(u_E - u_T) corresponds to bounded Xi_R^(0), not exact
 
 ========================================================================================
 PART 7: CARRIER TRACE CHECK ON RETAINED OPERATOR BASIS
@@ -81,7 +81,7 @@ PART 7: CARRIER TRACE CHECK ON RETAINED OPERATOR BASIS
 ========================================================================================
 PART 8: NAMED RESIDUAL OBSTRUCTION (registry closure)
 ========================================================================================
-  [PASS] Stretch-attempt note exists  (len=17581)
+  [PASS] Stretch-attempt note exists  (len=19528)
   [PASS] Note formulates the Carrier Operator Classification Theorem (partial)
   [PASS] Note names registry closure as the residual meta-premise
   [PASS] Note distinguishes audited vs hypothetical-future primitives
@@ -116,7 +116,15 @@ PART 11: REFINED PRECURSOR CHAIN (2026-05-07 closure-attempt sharpening)
   [PASS] Refinement honestly refuses to claim closure beyond PARTIAL
 
 ========================================================================================
-SUMMARY: PASS=58 FAIL=3
+PART 12: SOURCE-SCOPE CAVEAT RETIREMENT (no stale phrase-match FAILs)
+========================================================================================
+  [PASS] Live carrier runner has no prior FAIL lines  (legacy phrase-match FAIL artifacts are absent from the current run)
+  [PASS] Xi source note passes normalized bounded/non-exact boundary check
+  [PASS] Xi source scope remains A1 x bright-channel only, not a substantive drift
+  [PASS] Source note records the 2026-06-13 phrase-match caveat retirement
+
+========================================================================================
+SUMMARY: PASS=65 FAIL=0
 ========================================================================================
 
 ----- stderr -----

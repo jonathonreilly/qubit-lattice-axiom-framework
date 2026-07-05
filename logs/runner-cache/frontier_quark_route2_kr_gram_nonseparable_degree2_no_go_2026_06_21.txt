@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_kr_gram_nonseparable_degree2_no_go_2026_06_21.py
+runner_sha256: f4be464bf5a6b651037c88bbbfa5432c165cae3bd7fd2f9588c1ece03508ce8d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+Route-2 K_R Gram nonseparable degree-2 no-go
+====================================================================================
+Status: no-go for K_R-generated channel-blind Gram/tensor-power route.
+[PASS] projector weights give kappa=w_T1/w_E=3/2
+       kappa=3/2
+
+-- Source-side Gram collapse --
+[PASS] for arbitrary exact source metrics, unit E and T Gram responses are equal
+       checked over exact rational source metrics
+[PASS] finite channel-blind tensor powers of the source scalar still give E/T ratio 1
+       powers 1..4 over exact rational samples
+[PASS] K_R Gram route gives lambda=1, not 9/4
+       q_E=5/6, rho_E=-1, center T/E=-2
+[PASS] endpoint target still requires lambda=9/4, q_E=15/8, rho_E=21/4, center T/E=-8/9
+
+-- Free channel metric warning --
+[PASS] a separate channel metric can tune arbitrary E/T ratios
+       sample ratios=[Fraction(1, 1), Fraction(9, 4), Fraction(3, 7), Fraction(5, 2)]
+[PASS] choosing c_E/c_T=9/4 is an inserted channel normalization, not a K_R source-side Gram result
+       K_R Gram ratio remains 1 before channel metric insertion
+
+-- Current-surface guards --
+[PASS] bilinear note defines current K_R as class-A polynomial substitution
+[PASS] covariance no-go identifies inverse-square projector weighting as the sharp missing bridge
+[PASS] readout note keeps endpoint as exact missing-map obstruction
+[PASS] new note records no-go status and forbids endpoint closure
+[PASS] new note states the free channel metric warning
+[PASS] new note states the remaining positive target outside current K_R Gram grammar
+[PASS] forbidden proof inputs remain excluded
+
+====================================================================================
+PASS=14 FAIL=0
+
+VERDICT: no-go. K_R-generated source-side Gram/tensor-power contractions are
+channel-blind on unit E and T probes, giving lambda=1. A tuned channel metric can
+produce 9/4 only as an extra normalization primitive, not as a K_R-derived result.
+
+----- stderr -----
+

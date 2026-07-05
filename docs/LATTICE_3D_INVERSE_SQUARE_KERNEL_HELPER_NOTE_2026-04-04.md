@@ -8,7 +8,52 @@ defaults and the `build_family / barrier_metrics / no_barrier_distance
 / fit_power` helpers used by downstream tail-statistics notes.
 **Status authority:** independent audit lane only. This wrapper note
 is audit-lane infrastructure for the corresponding helper module.
+**Runner:**
+[`scripts/lattice_3d_inverse_square_kernel.py`](../scripts/lattice_3d_inverse_square_kernel.py)
+**Runner cache:**
+[`logs/runner-cache/lattice_3d_inverse_square_kernel.txt`](../logs/runner-cache/lattice_3d_inverse_square_kernel.txt)
 **Primary runner / module:** `scripts/lattice_3d_inverse_square_kernel.py`
+
+## Source boundary (2026-06-12)
+
+**Boundary:** renaming / helper-wrapper support only. Effective status is
+audit-derived; this source records only the claim boundary.
+
+The load-bearing move is wrapper documentation for constants and helper
+function names. This note may be cited only for the module interface. It may
+not be cited as a derivation of an inverse-square kernel, asymptotic tail law,
+downstream tail-statistics theorem, or implementation-fidelity certificate.
+
+Promotion beyond wrapper support requires the helper source/runner to be
+audited for implementation fidelity or a separate theorem deriving the
+inverse-square kernel from retained framework inputs.
+
+## 2026-06-17 implementation-fidelity packet
+
+The audit row's re-audit note says to re-check
+`scripts/lattice_3d_inverse_square_kernel.py` if the intended target is
+implementation fidelity rather than wrapper-level definitional scope. This
+source packet supplies that re-check without changing the scientific boundary.
+
+Implementation-fidelity verifier:
+[`scripts/lattice_3d_inverse_square_kernel_helper_fidelity_2026_06_17.py`](../scripts/lattice_3d_inverse_square_kernel_helper_fidelity_2026_06_17.py)
+with cache
+[`logs/runner-cache/lattice_3d_inverse_square_kernel_helper_fidelity_2026_06_17.txt`](../logs/runner-cache/lattice_3d_inverse_square_kernel_helper_fidelity_2026_06_17.txt).
+
+The verifier checks that:
+
+- the module declares the documented width-6 comparator constants;
+- `build_family`, `barrier_metrics`, `no_barrier_distance`, and `fit_power`
+  are present and callable;
+- the propagation helper uses the advertised inverse-square free-kernel
+  attenuation `w / L^2` while preserving the spent-delay action expression;
+- the SHA-pinned main runner cache is current and zero-exit;
+- this note keeps the wrapper-only boundary.
+
+This is an implementation-fidelity certificate only. It may support a
+restricted-packet re-audit of the helper interface, but it is not a derivation
+of an inverse-square kernel, an asymptotic tail law, or any downstream
+tail-statistics theorem. Effective status remains audit-derived.
 
 ## Purpose
 

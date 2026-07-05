@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py
-runner_sha256: 89c4234e52480ca8ac6b4ec9a7e1c5d0932cadff91e49d02dec802c06a05f26f
+runner_sha256: 33dc9a9428b58aa81ab8ed07e53a628177bd980888f93517e6d3219ea76dc380
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.10
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -15,9 +15,12 @@ Koide dimensionless objection - toy conditional algebraic checks
 (T0) source-boundary manifest
 ----------------------------------------------------------------------------------------
   [PASS] note records 2026-06-07 source-boundary manifest
+  [PASS] note claim type is open-gate conditional-support, not bounded_theorem
+  [PASS] note records the 2026-06-12 in-toy algebra firewall
   [PASS] note records local toy admission packet A_TOY
   [PASS] note says A1-A5 are not framework-native facts
   [PASS] note forbids retained propagation without a bridge theorem
+  [PASS] note records the 2026-06-20 conditional-in-toy-algebra-only scoping
 
 ----------------------------------------------------------------------------------------
 (T1) Q zero-background identity under (A1)
@@ -85,8 +88,8 @@ Koide dimensionless objection - toy conditional algebraic checks
   [PASS] in-toy: '(A5) alone => delta = 2/9' fails
 
 ========================================================================================
-SUMMARY: PASS=33 FAIL=0
-PASSED: 33/33
+SUMMARY: PASS=36 FAIL=0
+PASSED: 36/36
 ========================================================================================
 KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS=TRUE
 ADMISSIONS_USED=A1_A2_A3_A4_A5

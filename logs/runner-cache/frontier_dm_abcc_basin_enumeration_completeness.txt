@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_abcc_basin_enumeration_completeness.py
-runner_sha256: cb0d1b2f7c2a5ffdc7b7b5d4f9af3e395ea50de047ba43e182da85c9281d023d
+runner_sha256: d33f83330339555628134f2a8813010897887430bda3161be4eafb03a8d95101
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 409.70
+elapsed_sec: 218.06
 status: ok
 ----- stdout -----
 ========================================================================
-DM A-BCC basin-enumeration completeness certificate
+DM A-BCC finite multistart basin-scan boundary
 ========================================================================
 Retained sigma set: [(2, 1, 0), (2, 0, 1), (0, 1, 2), (1, 2, 0)]
-Retained basins:    ['Basin 1', 'Basin N', 'Basin P', 'Basin X', 'Basin 2']
+Known basin chart:  ['Basin 1', 'Basin N', 'Basin P', 'Basin X', 'Basin 2']
 Enclosure R:        50.0
 Grid N per axis:    15  (N^3 = 3375 seeds / sigma)
 
@@ -43,12 +43,12 @@ Grid N per axis:    15  (N^3 = 3375 seeds / sigma)
   [PASS] Every discovered minimum lies within 0.15 of some retained basin  (unmatched = 0)
   [PASS] Enumeration reproduces all 3 in-chamber retained basins  (in_chamber_basins = ['Basin 1', 'Basin 2', 'Basin X'], matched = ['Basin 1', 'Basin 2', 'Basin X'])
 
---- T4: Lipschitz bound on chi^2 map over chamber enclosure ---
+--- T4: empirical chi^2-gradient estimate over chamber enclosure ---
     sigma = (2, 1, 0): chi^2-gradient 99.5th pctl ≈ 0.225
     sigma = (2, 0, 1): chi^2-gradient 99.5th pctl ≈ 0.265
     sigma = (0, 1, 2): chi^2-gradient 99.5th pctl ≈ 0.404
     sigma = (1, 2, 0): chi^2-gradient 99.5th pctl ≈ 0.770
-  [PASS] Lipschitz estimate is finite and bounded under all retained sigma  (L_max = 7.702e-01)
+  [PASS] Empirical chi^2-gradient estimate is finite and bounded under all retained sigma  (L_max = 7.702e-01)
     grid half-diagonal = 6.1859
     L * h√3/2          ≈ 4.764e+00
   [PASS] Grid half-diagonal is strictly less than enclosure radius R  (seed_radius = 6.186, R = 50.0)
@@ -82,19 +82,27 @@ Grid N per axis:    15  (N^3 = 3375 seeds / sigma)
   [PASS] Basin 2: signature component = C_neg  (det = -70538.6038)
   [PASS] A-BCC (chamber ∩ C_base) selects Basin 1 uniquely among the five retained basins  (in-chamber C_base basins = ['Basin 1'])
 
---- T8: exhaustiveness certificate ---
+--- T8: finite-search boundary / missing-certification guards ---
     enclosure R              = 50.0
     grid N                   = 15  (3375 seeds / sigma)
     grid half-diagonal       = 6.1859
-    Lipschitz L_max          = 0.770
-    chi^2 coverage / seed    ≈ 4.764e+00
+    empirical L_max          = 0.770
+    empirical L * seed       ≈ 4.764e+00
     cluster tolerance        = 0.15
     min pairwise basin sep   = 0.3378
     max discovered->basin    = 0.0005
   [PASS] Cluster tolerance < half min basin separation (no cluster collisions)  (cluster tol = 0.15 < half min sep = 0.169)
   [PASS] Max discovered→basin distance < cluster tolerance  (max match distance = 0.0005 < 0.15)
-  [PASS] Exhaustiveness certificate holds at stated (R, N, tolerance, L)  (R=50.0, N^3=3375, tol=0.15, half_min_sep=0.169, L=0.770)
+  [PASS] Archived source note records finite-scan boundary markers  (missing markers = [])
+  [PASS] No interval/branch-and-bound proof is being claimed by this runner
+  [PASS] No computer-algebra/root-isolation enumeration is being claimed by this runner
+  [PASS] No certified worst-case Lipschitz/eigenvalue-gap bound is being claimed by this runner
+  [PASS] No deterministic far-field asymptotic exclusion is being claimed by this runner
+  [PASS] Finite multistart boundary holds; theorem-grade exhaustiveness remains open  (R=50.0, N^3=3375, tol=0.15, half_min_sep=0.169, empirical L=0.770)
 
-TOTAL: PASS=30  FAIL=0
+VERDICT: FINITE MULTISTART BASIN SCAN BOUNDARY VERIFIED
+THEOREM-GRADE EXHAUSTIVENESS: NOT CLAIMED
+TOTAL: PASS=35  FAIL=0
+
 ----- stderr -----
 

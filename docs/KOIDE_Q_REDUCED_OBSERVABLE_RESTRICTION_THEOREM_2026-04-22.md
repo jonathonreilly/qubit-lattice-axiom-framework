@@ -14,6 +14,14 @@ on the two-slot second-order carrier is only a plausible additive transplant.
 
 **Primary runner:** `scripts/frontier_koide_q_reduced_observable_restriction_theorem.py`
 
+**2026-06-15 post-audit normalization boundary:** the companion no-go
+[`KOIDE_Q_DRED_NORMALIZATION_FREEDOM_NO_GO_NOTE_2026-06-15.md`](KOIDE_Q_DRED_NORMALIZATION_FREEDOM_NO_GO_NOTE_2026-06-15.md)
+shows that the reduced two-slot determinant algebra does not derive
+`D_red = I_2`. For every `c > 0`, `D_red = c I_2` gives the same normalized
+law after rescaling source coordinates, while the zero-source response scale is
+`1/c`. Thus the audit-named `D_red = I_2` repair still requires a separate
+physical response-unit bridge or approved normalization premise.
+
 **Status authority and audit hygiene (2026-05-10):**
 The audit lane has classified this row `audited_conditional`
 (claim_type `bounded_theorem`, audit_date 2026-05-05, auditor
@@ -228,7 +236,7 @@ short algebraic bridge): a retained upstream theorem deriving the
 physical charged-lepton observable carrier/readout and the
 `D_red = I_2` normalization from retained upstream framework inputs.
 
-Four candidate supplier notes already exist on disk in this branch;
+Four candidate supplier notes already exist on disk in this repo;
 their respective load-bearing inferences target the two halves of the
 audit-named bridge (carrier identification and baseline normalization)
 on the admitted normalized reduced carrier used in this note. They are
@@ -259,8 +267,13 @@ propagate retention to this row:
    map `L : R^4 → Diag_3(R)`, `L(W) = P_{T_1} Γ_1 W Γ_1 P_{T_1}` on
    the retained `Γ_1 / T_1` grammar. Establishes that the readout
    map factors through the species-resolving diagonal carrier with a
-   unique unreachable slot, supplying the algebraic skeleton of the
-   two-generator block reduction used in this note's Sections 1–2.
+   unique unreachable slot, and now proves the first-live
+   kernel-invariance substep inside that admitted grammar: every
+   scalar selector admitted as first-live factors through `L` and is
+   constant on `span(e_z)`. This supplies the algebraic skeleton of
+   the two-generator block reduction used in this note's Sections
+   1–2. It still does not prove that the physical charged-lepton
+   selector must belong to that first-live grammar.
 4. `KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md`
    — exact uniqueness of the scale-free `C_3`-invariant selector
    ratio on the admitted second-order returned carrier (no nontrivial
@@ -276,20 +289,26 @@ are already at `retained_bounded` effective status. The remaining two
 suppliers are at lower status and contribute to the bridge only
 conditionally on their independent audit retention.
 
-The combined load-bearing inference of the supplier chain is:
+The intended combined load-bearing inference of the supplier chain, if the
+candidate suppliers and the response-unit normalization bridge are later
+independently accepted, would be:
 
 > on the framework's accepted substrate, the physical local scalar
 > observables must read through the canonical descent `E_loc` to the
 > diagonal carrier; the source-derivative content of any admissible
 > scalar generator on a real-D block coincides with that of
 > `W = log|det(D+J)| - log|det D|` up to overall scale; the readout
-> map `L` factors through the species-resolving diagonal target; and
-> the normalized scale-free selector on the admitted carrier is
+> map `L` factors through the species-resolving diagonal target, so
+> first-live scalars are kernel-invariant on `span(e_z)`; and the
+> normalized scale-free selector on the admitted carrier is
 > already unique. The reduced two-generator block carrier with
 > baseline `D_red = I_2` is therefore the framework-forced reading,
 > rather than a free admitted choice.
 
-That inference is the audit-named missing bridge for this row.
+That inference is the audit-named missing bridge for this row. It is not
+established by this note itself, and the 2026-06-15 normalization-freedom
+no-go above shows that the `D_red = I_2` part cannot be obtained from the
+reduced split algebra alone.
 
 This subsection does not promote this row's `audit_status` or the
 suppliers' status. Only the independent audit lane can do that. The
@@ -297,6 +316,37 @@ load-bearing physical-identification bridge in the auditor's
 `verdict_rationale` remains open until at least one of the candidate
 supplier chains is itself audited at retained-grade and the
 composition is independently judged to close the bridge.
+
+### 8.2 2026-06-12 bridge-state obstruction repair
+
+The companion
+[`KOIDE_Q_REDUCED_CARRIER_PHYSICAL_IDENTIFICATION_OBSTRUCTION_NOTE_2026-06-12.md`](KOIDE_Q_REDUCED_CARRIER_PHYSICAL_IDENTIFICATION_OBSTRUCTION_NOTE_2026-06-12.md)
+records the current source-side state of the audit-named missing bridge.
+It does **not** promote this row. It records and checks a narrower boundary: on the
+current retained surface, the two-slot reduced scalar carrier is a
+coarse-grained readout of the retained finite `C3` generation data, not the
+retained physical charged-lepton carrier itself. The current Record/Quantum
+axioms do not supply the missing readout context, the cited real-D uniqueness
+theorem starts after its block-family class is supplied, the readout
+factorization theorem closes first-live kernel-invariance only inside its
+admitted first-live grammar, and the selector theorem starts after the
+second-order carrier is admitted.
+
+It also records the normalization boundary:
+
+```text
+log det(D + J) - log det(D)
+  = log(1 + j_+/d_+) + log(1 + j_perp/d_perp)
+```
+
+for any positive diagonal reduced baseline `D = diag(d_+, d_perp)`. Thus
+`D_red = I_2` is canonical after normalized source coordinates are supplied,
+but its physical source-unit meaning still needs a separate readout theorem.
+
+This repair sharpens the parent row's honest scope. The exact determinant
+restriction in Sections 1-4 remains valid support; the physical
+carrier/readout and absolute baseline-normalization bridge remains open
+rather than silently imported.
 
 ## 9. Boundaries
 
@@ -321,3 +371,22 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   row until a one-way bridge lemma is extracted)
 - [koide_q_readout_factorization_theorem_2026-04-22](KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md)
 - [koide_q_minimal_scale_free_selector_note_2026-04-22](KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md)
+- [koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12](KOIDE_Q_REDUCED_CARRIER_PHYSICAL_IDENTIFICATION_OBSTRUCTION_NOTE_2026-06-12.md)
+
+### 8.3 2026-06-17 restricted packet verifier
+
+The restricted packet now has a compact verifier:
+[`scripts/koide_q_reduced_reaudit_packet_verifier_2026_06_17.py`](../scripts/koide_q_reduced_reaudit_packet_verifier_2026_06_17.py).
+It checks that the three source-side pieces needed for re-audit are present,
+cached, and boundary-scoped:
+
+1. this parent reduced determinant theorem and its cached algebra runner;
+2. the physical carrier/readout obstruction note and cached runner; and
+3. the `D_red = I_2` normalization-freedom no-go note and cached runner.
+
+The verifier is deliberately non-promotional. It does not promote this row,
+does not update audit-owned files, and does not claim the physical
+charged-lepton observable carrier/readout or the absolute `D_red = I_2`
+normalization has been derived. Its purpose is to make the current source
+state unambiguous: exact determinant support is preserved, while both
+audit-named live blockers are explicit and separately cached.

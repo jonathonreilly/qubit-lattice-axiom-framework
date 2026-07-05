@@ -7,14 +7,14 @@ Mission (wave 3 of the P1 exponent campaign): the (BR)-license note
 claude/science-fix/p1-br-license-record-capacity-20260610) reduced the open
 P1 exponent premise to
 
-    (CAP-real) + (CAP-K),    with (CAP-M) covered at M = 1 by the retained
-                             unit-record normalization,
+    (CAP-real) + (CAP-K),    with (CAP-M) covered at M = 1 only inside the
+                             conditional supplied-record unit schema,
 
 via its Lemma C: (CAP-real)+(CAP-M)+(CAP-K) => sup_z |W(ez) - W(z)| <= K*M
 => (BR-int) => the pass set on the normalized exponent family {s*g_p} is
 exactly {p = 0} (log selected). It also proved (CAP-K) has ZERO retained
-*static* suppliers: the finite-sector algebra is cap-free, the retained
-unbounded-additivity schema affirmatively licenses 4^k unit records per
+*static* suppliers: the finite-sector algebra is cap-free, the conditional
+unbounded-additivity schema permits 4^k unit records per
 e-fold, the Busch/Gleason effect rows are magnitude-shaped and
 readout-blind, and bare register growth (2n+1)^3 defeats static rate
 inference. Every kill was static (algebraic capacity of the register
@@ -22,14 +22,14 @@ inventory); none consumed dynamics.
 
 This runner verifies the dynamical route: REGISTERING a record is a
 physical process on the lattice. Within the declared finite-speed
-registration realization class (REG-dyn: records established by the
-retained finite-range hopping dynamics of the microcausality bridge note's
-unconditional (F4) leg, with the e-fold source coupling V supported in a
+registration realization class (REG-dyn: records established by the linked
+finite-range hopping dynamics of the microcausality bridge note's
+bounded surface, with the e-fold source coupling V supported in a
 bounded region X; REG-tau: at most a supplied clock window tau per e-fold;
 REG-thr: a register registers only if delta-sensitive in operator norm to
 the source change; REG-site: pairwise-disjoint records occupy disjoint
 nonempty register-site sets — all four DECLARED, none asserted as
-framework-forced), the retained Lieb-Robinson data (q = 2, R = 1,
+framework-forced), the linked Lieb-Robinson data (q = 2, R = 1,
 W = |m| + 2d, v_LR = 2*e*q*W*R = 4e(|m| + 2d)) bound the sensitivity cone:
 
     Duhamel:  ||alpha^{H+V}_t(B_y) - alpha^H_t(B_y)||
@@ -94,6 +94,7 @@ Expected: TOTAL: PASS=31 FAIL=0
 from __future__ import annotations
 
 import itertools
+import json
 import os
 import re
 
@@ -248,7 +249,7 @@ check("A", "retained finite-sector identity recomputed: I(A u B) = I(A) + I(B) o
 # capacity bound |I(A)| <= K*M (triangle), unit normalization M = 1 (schema)
 K_demo, M_demo = 5, sp.Integer(1)
 unit_sum = sum(sp.Integer(1) for _ in range(7))
-check("A", "Lemma C capacity bound: |sum_{i in A} v_i| <= K*M by finite additivity + triangle inequality; retained unit-record schema has M = 1 by normalization (I(R_7) = 7 recomputed)", bool(unit_sum == 7) and all(abs(sum(v_data[: k + 1])) <= (k + 1) * max(abs(x) for x in v_data) for k in range(4)), "I(R_7)=7")
+check("A", "Lemma C capacity bound: |sum_{i in A} v_i| <= K*M by finite additivity + triangle inequality; conditional supplied-record unit schema has M = 1 by normalization (I(R_7) = 7 recomputed)", bool(unit_sum == 7) and all(abs(sum(v_data[: k + 1])) <= (k + 1) * max(abs(x) for x in v_data) for k in range(4)), "I(R_7)=7")
 
 # e-fold increment identity on the family
 incr = sp.simplify((g(p, sp.exp(u + 1)) - g(p, sp.exp(u))) - sp.exp(p * u) * (sp.exp(p) - 1) / p)
@@ -294,7 +295,7 @@ int_bound = float(np.trapezoid([opnorm(V4 @ heis(ed4, B4, s_val) - heis(ed4, B4,
 check("A", "integrated-commutator bound: ||alpha^{H+V}_t(B) - alpha^H_t(B)|| <= int_0^t ||[V, alpha^H_u(B)]|| du on the same instance", opnorm(lhs) <= int_bound * (1 + 1e-9), f"lhs={opnorm(lhs):.4e} <= int={int_bound:.4e}")
 
 # ===========================================================================
-print("== T3: the registration cone on the chain — retained (F4) LR data, measured vs bound ==")
+print("== T3: the registration cone on the chain — linked finite-range LR data, measured vs bound ==")
 
 L10, m1 = 10, 0.0
 W1 = abs(m1) + 2 * 1  # bridge note (F4): W = |m| + 2d, d = 1
@@ -415,7 +416,7 @@ for t in [0.05, 0.1]:
 check("D", "one long-range bond (0 <-> 5) breaks the finite-range sensitivity bound at D = 5 by a factor > 100 (t = 0.05 and 0.1): without finite-range dynamics the registration cone (and hence the cap) does not exist", min(viol.values()) > 100, f"violations x{viol[0.05]:.0f}, x{viol[0.1]:.0f}")
 
 Dstar_vinf = sp.limit(Dstar_expr.subs({tau_s: 1, JV_s: 1, delta_s: sp.Rational(1, 10)}), vv, sp.oo)
-check("A", "symbolic comparator: lim_{v_LR -> oo} D* = oo (sympy limit) — an unbounded-speed process reaches every register in any window and (CAP-K) has no finite value; the retained v_LR < oo is the load-bearing physics", Dstar_vinf == sp.oo)
+check("A", "symbolic comparator: lim_{v_LR -> oo} D* = oo (sympy limit) — an unbounded-speed process reaches every register in any window and (CAP-K) has no finite value; finite v_LR < oo is the load-bearing physics", Dstar_vinf == sp.oo)
 
 # ===========================================================================
 print("== T9: quasilocal extension — landed exact-H numbers reused at their grade ==")
@@ -462,25 +463,26 @@ check("B", "the note declares (REG-tau) as a supplied clock-window clause of the
 # ===========================================================================
 print("== T12: ledger grades, firewall strings, honest scope ==")
 
-ledger = read(os.path.join(REPO, "docs", "audit", "AUDIT_LEDGER.md"))
+with open(os.path.join(REPO, "docs", "audit", "data", "audit_ledger.json"), "r", encoding="utf-8") as fh:
+    ledger_rows = json.load(fh)["rows"]
 rows = {
-    "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "**retained_bounded**",
-    "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "**retained_bounded**",
-    "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": "**retained**",
-    "post_record_clock_rate_interface_2026-06-06": "**retained_no_go**",
-    "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06": "**retained_no_go**",
-    "record_function_finite_sector_algebra_2026-06-05": "**retained**",
-    "record_unbounded_finite_additivity_schema_2026-06-06": "**retained**",
-    "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": "**retained_no_go**",
-    "observable_principle_record_scalar_map_no_go_note_2026-06-05": "**retained_no_go**",
-    "post_record_count_probability_firewall_2026-06-06": "**retained_no_go**",
+    "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded",
+    "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "retained_bounded",
+    "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+    "post_record_clock_rate_interface_2026-06-06": "retained_no_go",
+    "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06": "retained_no_go",
+    "record_function_finite_sector_algebra_2026-06-05": "retained",
+    "record_unbounded_finite_additivity_schema_2026-06-06": "audited_conditional",
+    "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": "retained_no_go",
+    "observable_principle_record_scalar_map_no_go_note_2026-06-05": "retained_no_go",
+    "post_record_count_probability_firewall_2026-06-06": "retained_no_go",
 }
 bad_rows = []
 for rid, want in rows.items():
-    line = next((ln for ln in ledger.splitlines() if f"`{rid}`" in ln and ln.strip().startswith("|")), "")
-    if want not in line:
-        bad_rows.append(rid)
-check("B", "cited rows present in the audit ledger at the cited effective statuses (one-hop presence check, 10 rows)", not bad_rows, f"mismatches={bad_rows}")
+    got = ledger_rows.get(rid, {}).get("effective_status")
+    if got != want:
+        bad_rows.append((rid, got, want))
+check("B", "cited rows present in the audit ledger at their current effective statuses (one-hop presence check, 10 rows)", not bad_rows, f"mismatches={bad_rows}")
 
 required = [
     "Status authority:",

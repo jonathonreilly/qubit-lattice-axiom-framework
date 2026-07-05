@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/quark_route2_eta_floor_hf_boundary_check.py
+runner_sha256: f31460d33a845bae8b976dd74d5556e3ff8b93ddbeec0e531c567cd35d4c76f0
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 8.83
+status: ok
+----- stdout -----
+Route-2 eta-floor Hellmann-Feynman boundary check
+========================================================================
+PASS: support eta_floor delegates to tensor_metrics(phi_from_q(q))[0]
+  scripts/frontier_tensor_support_center_excess_law.py
+PASS: boundary tensor_metrics returns blk.eta_floor[1] as its first metric
+  scripts/frontier_tensor_boundary_drive_two_channel.py
+PASS: family_block stores eta_floor as np.array([0.0, base.e_spatial_tf])
+  scripts/frontier_tensor_universal_kernel.py
+PASS: e_spatial_tf is the max absolute trace-free spatial Einstein entry
+  scripts/frontier_tensorial_einstein_regge_completion.py
+PASS: no eig/eigh/eigvalsh call participates in the eta_floor assembly path
+  {'support.eta_floor': set(), 'boundary.tensor_metrics': set(), 'kernel.family_block': set(), 'tensor.probe_family': set(), 'tensor.max_tensorial_components': set()}
+PASS: the only spectral call in the universal-kernel file is K_univ diagnostics outside family_block
+  spectral calls = [('eigvalsh', 146)]
+PASS: q to phi is linear on the endpoint and bright-channel directions
+  max linearity error = 6.939e-18
+OBS: center e0: eta_floor[1]=7.007177027199343322e-05, e_spatial_tf=7.007177027199343322e-05, active_max_gap=3.504e-05, active_entry=(point=0, i=0, j=0, value=-7.007177027199343322e-05)
+OBS: shell s/sqrt6: eta_floor[1]=4.608047364021197046e-05, e_spatial_tf=4.608047364021197046e-05, active_max_gap=1.209e-05, active_entry=(point=0, i=0, j=0, value=-4.608047364021197046e-05)
+PASS: dynamic endpoint evaluation confirms eta_floor[0] is zero and eta_floor[1] equals e_spatial_tf
+  checked at q=e0 and q=s/sqrt(6)
+PASS: implemented nonspectral max envelope is not tied at the two endpoint backgrounds
+  this is a max-entry gap, not a spectral eigenvalue gap
+PASS: FamilyBlock exposes no A(phi), spectrum, or floor eigenvector for Hellmann-Feynman
+  exposed spectral attrs = []
+PASS: spectral-simplicity and eigenvector-residual checks are inapplicable on the live object
+  the branch stops before assembling beta_E, beta_T by Hellmann-Feynman
+PASS: no exact-slope t_balance is emitted by this runner
+  without A(phi), lambda_min, and psi, any Hellmann-Feynman t_balance would be fabricated
+========================================================================
+TOTAL: PASS=12, FAIL=0
+
+----- stderr -----
+

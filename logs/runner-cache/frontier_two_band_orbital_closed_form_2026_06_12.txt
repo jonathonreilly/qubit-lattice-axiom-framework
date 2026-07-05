@@ -1,0 +1,87 @@
+===== runner cache v1 =====
+runner: scripts/frontier_two_band_orbital_closed_form_2026_06_12.py
+runner_sha256: bd03ff95e5638ffcac8ca7ce28d79de0d71f4f86ea64fd853e9025d3488eb9fc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.18
+status: ok
+----- stdout -----
+Two-band orbital-response honest refutation + derivation verifier
+anchor cell: Q=24, Ly=2, N=48, GL=12, small_B=0.001, mu=1.7086, T=0.2
+closed Bloch convention: H(k)=d_x sigma_x+d_y sigma_y+d_z sigma_z, d_x=-2 cos(kx), d_y=-2 cos(ky), d_z=m
+normalization: one Peierls-cell response factor fixed at m=0 LP anchor, C=4.01373925700289e-02
+
+S0 ANCHORS: recompute landed finite-cell exact/PT values first
+ANCHOR m=0 exact=4.3273740459e-02 PT=4.2933687517e-02 rel_dev=7.858e-03 split(intra,inter)=(8.368145e-01,-7.938808e-01)
+PASS: frozen exact-response anchor m=0.0 :: abs_diff=3.993e-13, tol=5.0e-11
+PASS: frozen full-PT-response anchor m=0.0 :: abs_diff=4.269e-13, tol=5.0e-11
+ANCHOR m=0.2 exact=4.1584331179e-02 PT=4.1273318495e-02 rel_dev=7.479e-03 split(intra,inter)=(1.226918e+00,-1.185645e+00)
+PASS: frozen exact-response anchor m=0.2 :: abs_diff=1.564e-13, tol=5.0e-11
+PASS: frozen full-PT-response anchor m=0.2 :: abs_diff=5.508e-14, tol=5.0e-11
+ANCHOR m=0.3 exact=3.9441294511e-02 PT=3.9175811591e-02 rel_dev=6.731e-03 split(intra,inter)=(1.687317e+00,-1.648141e+00)
+PASS: frozen exact-response anchor m=0.3 :: abs_diff=4.125e-13, tol=5.0e-11
+PASS: frozen full-PT-response anchor m=0.3 :: abs_diff=4.076e-13, tol=5.0e-11
+ANCHOR m=0.5 exact=3.0817431644e-02 PT=3.0744459999e-02 rel_dev=2.368e-03 split(intra,inter)=(3.178505e+00,-3.147761e+00)
+PASS: frozen exact-response anchor m=0.5 :: abs_diff=4.286e-13, tol=5.0e-11
+PASS: frozen full-PT-response anchor m=0.5 :: abs_diff=2.528e-13, tol=5.0e-11
+PASS: landed full PT relative deviation remains below frozen 7.9e-3 ceiling :: max_rel=7.858e-03, ceiling=7.9e-03
+PASS: near-cancellation anchor: m=0.5 intraband magnitude is frozen at +3.18 :: intra=3.178505e+00, abs_diff=4.948e-04
+PASS: near-cancellation anchor: m=0.5 interband magnitude is frozen at -3.15 :: inter=-3.147761e+00, abs_diff=2.392e-04
+PASS: anti-fabrication anchor: mirrored off-mass interband terms are nonzero :: min_off_m0|inter|=1.186e+00, min=1.0e-06
+
+S1 REFUTATION: symbolic continuum star-product gate
+SYMBOLIC trace_R2 = -4*z*(qx**2 + qy**2)/(-m**2 - qx**2 - qy**2 + z**2)**4
+SYMBOLIC B2 occupation core = (qx**2 + qy**2)/(8*(m**2 + qx**2 + qy**2)**(5/2))
+SYMBOLIC d2/dB2 occupation core = (qx**2 + qy**2)/(4*(m**2 + qx**2 + qy**2)**(5/2))
+SYMBOLIC d2_core / (R*Omega^2) = (qx**2 + qy**2)/m**2
+PASS: linearized two-band star-inverse trace identity :: tr G2 equals -4*z*(qx^2+qy^2)/(R^2-z^2)^4
+PASS: B^2 occupation core is (qx^2+qy^2)/(8 R^5) :: core=(qx**2 + qy**2)/(8*(m**2 + qx**2 + qy**2)**(5/2))
+PASS: d2/dB2 occupation core is twice the B^2 core :: core=(qx**2 + qy**2)/(4*(m**2 + qx**2 + qy**2)**(5/2))
+PASS: upper and lower double-pole residues form an occupation difference
+PASS: refutation: d2_core divided by R*Omega^2 is not a constant :: ratio=(qx**2 + qy**2)/m**2
+PASS: refutation: 47/120 times R*Omega^2 is not the continuum interband core
+
+S2 CORRECT CLOSED FORM: LP + lattice star-product interband, no fudge
+CLOSED m=0 chi=4.8147282428e-02 chi_intra=4.2933687517e-02 chi_inter=5.2135949109e-03 raw_inter=1.2989371200e-01
+CLOSED m=0.2 chi=4.6513938697e-02 chi_intra=4.1420945595e-02 chi_inter=5.0929931025e-03 raw_inter=1.2688898746e-01
+CLOSED m=0.3 chi=4.4810892972e-02 chi_intra=3.9717889885e-02 chi_inter=5.0930030870e-03 raw_inter=1.2688923622e-01
+CLOSED m=0.5 chi=3.9423409639e-02 chi_intra=3.4298764700e-02 chi_inter=5.1246449396e-03 raw_inter=1.2767757474e-01
+PASS: closed-form grid-halving convergence m=0.0 :: N=240 vs N=120, rel=7.179e-04, tol=1.1e-03
+PASS: closed-form grid-halving convergence m=0.2 :: N=240 vs N=120, rel=5.575e-06, tol=1.1e-03
+PASS: closed-form grid-halving convergence m=0.3 :: N=240 vs N=120, rel=9.912e-08, tol=1.1e-03
+PASS: closed-form grid-halving convergence m=0.5 :: N=240 vs N=120, rel=3.006e-11, tol=1.1e-03
+
+S3 HONEST REPRODUCTION GATE: disclose the no-fudge residual
+REPRO m=0 closed=4.8147282428e-02 full_PT=4.2933687517e-02 rel_dev=1.214e-01 LP_only_rel=9.944e-12
+PASS: no-fudge closed form is inside the frozen residual gate m=0.0 :: rel=1.214e-01, tol=3.0e-01
+REPRO m=0.2 closed=4.6513938697e-02 full_PT=4.1273318495e-02 rel_dev=1.270e-01 LP_only_rel=3.577e-03
+PASS: no-fudge closed form is inside the frozen residual gate m=0.2 :: rel=1.270e-01, tol=3.0e-01
+REPRO m=0.3 closed=4.4810892972e-02 full_PT=3.9175811591e-02 rel_dev=1.438e-01 LP_only_rel=1.384e-02
+PASS: no-fudge closed form is inside the frozen residual gate m=0.3 :: rel=1.438e-01, tol=3.0e-01
+REPRO m=0.5 closed=3.9423409639e-02 full_PT=3.0744459999e-02 rel_dev=2.823e-01 LP_only_rel=1.156e-01
+PASS: no-fudge closed form is inside the frozen residual gate m=0.5 :: rel=2.823e-01, tol=3.0e-01
+PASS: LP determinant term alone reproduces the m=0 full response :: m0_rel=9.944e-12, tol=5.0e-06
+PASS: LP determinant term alone fails off m=0 on the fixed mass panel :: max_off_m0_rel=1.156e-01, floor=1.0e-01
+PASS: anti-fabrication: lattice star-product interband is nonzero off m=0 :: min_off_m0|chi_inter|=5.093e-03, min=1.0e-03
+PASS: named residual: no-fudge closed form leaves at most 30% relative gap :: max_closed_rel=2.823e-01, tol=3.0e-01
+
+S4 MASS CURVE: no-fudge response on a fixed fine panel
+MASS_CURVE m=0.00 chi=4.8147282428e-02
+MASS_CURVE m=0.05 chi=4.7898620198e-02
+MASS_CURVE m=0.10 chi=4.7582527199e-02
+MASS_CURVE m=0.15 chi=4.7126379969e-02
+MASS_CURVE m=0.20 chi=4.6513938697e-02
+MASS_CURVE m=0.25 chi=4.5742830212e-02
+MASS_CURVE m=0.30 chi=4.4810892972e-02
+MASS_CURVE m=0.35 chi=4.3715614902e-02
+MASS_CURVE m=0.40 chi=4.2454283823e-02
+MASS_CURVE m=0.45 chi=4.1024277714e-02
+MASS_CURVE m=0.50 chi=3.9423409639e-02
+MASS_CURVE m=0.55 chi=3.7650303382e-02
+MASS_CURVE m=0.60 chi=3.5704792294e-02
+PASS: no-fudge chi(m) is strictly decreasing on m=0..0.6 fixed grid :: min_drop=2.487e-04, floor=2.0e-04
+
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

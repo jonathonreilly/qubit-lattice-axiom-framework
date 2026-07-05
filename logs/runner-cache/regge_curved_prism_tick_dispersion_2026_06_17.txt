@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/regge_curved_prism_tick_dispersion_2026_06_17.py
+runner_sha256: 7c136b34687113c51446f206fd47faf5c085b2a5c2379c5c867c431b45f62a2f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 16.38
+status: ok
+----- stdout -----
+CURVED 3+1 PRISM REGGE SECOND VARIATION  (round dDelta^4 x Z_tau ; FIREWALL-CLEAN)
+================================================================================================
+[PASS] G1 prism tiling: the global-order staircase tiles (round dDelta^4) x Z_tau into a CLOSED 4-manifold (every tetrahedron shared by exactly two four-simplices) with the expected counts 20 L_tau four-simplices, 25 L_tau edges, 50 L_tau triangles (L_tau=3)
+       four-simplices=60 (exp 60); edges=75 (exp 75); triangles=150 (exp 150); all tets shared by 2: True (sharing multiset {2: 150})
+[PASS] G2 background (HONEST -- the right-prism is NOT a Lambda-Regge critical point): with a single symmetric Lambda* the EOM residual does NOT vanish on the round x uniform-tick product background; the three edge-class families (spatial / mixed / tick) carry independent non-zero residuals that two free parameters (Lambda, a_tau^2) cannot jointly annihilate (a_tau^2 scan shows the best-Lambda* residual never reaches 0). This is the expected product-geometry non-criticality (static S^3 x R is not Einstein); the dominant uncancelled class is the TICK family. The Hessian below is the second variation AT this symmetric reference point (a well-defined quadratic form regardless of criticality, validated end-to-end by G4/G6)
+       Lambda* = 6.935274 (a_tau^2=1); max|EOM residual| = 3.546e+00; per-family max {spatial:1.36e+00, mixed:1.73e+00, tick:3.55e+00}; dominant uncancelled = tick; a_tau^2 scan best-residual = 2.593 at a_tau^2=0.25 (never 0 -> right-prism not critical for any tick scale)
+[PASS] G3 Hermiticity: H(k_tau) is Hermitian to <1e-9 across several k_tau (commensurate 2 pi m / L_tau and generic incommensurate)
+       max|H(k_tau) - H(k_tau)^dag| over k_tau in [0.0, 2.094, 4.189, 0.7, 1.9] = 4.44e-16
+[PASS] G4 Schlaefli: the per-4-simplex Schlaefli identity sum_h A_h d theta_h = 0 holds at the curved right-prism background to <1e-8 in every length direction (the identity that makes the Schlaefli-reduced Hessian H = sum_h dA_h (x) d delta_h + d2A_h delta_h well-defined)
+       max per-simplex Schlaefli residual over a layer = 8.88e-16
+[PASS] G5 reduction (DECISIVE): the k_tau=0 spatial-edge block of the S_5-SYMMETRIC representative H_sym reproduces the retained round-S^3 spatial structure -- the spatial deficit 2pi - 3 arccos(1/3) ~ 2.5903 (each spatial edge meets 3 slice tetrahedra) AND the S_5 multiplicity-free channel decomposition 10 = 1 (+) 4 (+) 5 (H_sym commutes with the full S_5 spatial isometry action; scalar per channel by Schur) with the SAME channel sign pattern as the independent retained 3D Lambda-Regge round-S^3 Hessian (NOT M_EH). HONEST FINDING: the RAW global-order staircase BREAKS spatial S_5 (its spatial block deviation is reported; the staircase simplex set is fixed by only the identity), so the canonical content lives on H_sym
+       spatial deficit = 2.5903070552 (= 2pi-3arccos(1/3) = 2.5903070552, 3D-Regge ref = 2.5903070552); H_sym: max|[H_spat, rho(g)]| = 2.66e-15, 1+4+5 scalar residual = 1.78e-15; channels (h1,h4,h5)=(-5.1050,+7.3640,+5.5429) vs 3D-ref (-5.1806,+7.9694,+9.9644) [sign pattern match: True]; RAW-staircase spatial-block S_5 deviation = 4.291 (staircase simplex-set symmetry group order = 1; full-25 raw deviation = 7.105) -- the staircase breaks S_5
+[PASS] G6 box-action finite-difference: the central second difference of the ACTUAL Regge action S_R on the periodic prism under a commensurate Bloch-cosine edge perturbation equals the Bloch prediction (L_box/2) Re[u^dag H(k_tau) u] to <1e-5 (validates every sign, factor, star, area, cosmological term and phase convention end-to-end against H(k_tau))
+       finite-diff = 22.21889872 vs Bloch prediction = 22.21889778; rel-diff = 4.21e-08
+
+------------------------------------------------------------------------------------------------
+FIREWALL-CLEAN CONNECTION CRITERION (intrinsic; NO M_EH / Lichnerowicz / flat comparator)
+------------------------------------------------------------------------------------------------
+[PASS] C1 (AUTOMATIC, not discovered): H_sym is the S_5 group-average, so it commutes with the spatial S_5 action by the Reynolds identity and is Schur-scalar on the multiplicity-free 1+4+5 channels at every k_tau BY CONSTRUCTION -- a definitional property of the symmetric representative (see [TAUT]), NOT a discovered connection. Reported for completeness only
+       max|[H_sym(k_tau), rho(g)]| over sweep = 6.22e-15; spatial-channel Schur residual = 2.66e-15; channel weights (k_tau, h1, h4, h5): (0.000: -5.105,+7.364,+5.543); (0.300: -5.017,+7.341,+5.544); (2.094: -2.158,+6.578,+5.582)
+[PASS] C2 (AUTOMATIC corollary of C1, NO M_EH): conjugating the S_5-group-average H_sym by any S_5 frame returns H_sym identically (same number as C1's commutator) -- frame-invariance across the S_5 orbit is an identity for any symmetrized operator, NOT independent physics. The only averaging-independent piece is that an SO(4) embedding rotation changes no edge length. Original: a generic embedding SO(4) rotation of the round slice changes NO edge length (the configuration's exact invariances are isometries only), and across the full S_5 frame orbit the spectrum of H_sym(k_tau) in the DeWitt edge fiber is identical (<1e-7) -- so the channel weights h_lambda(k_tau) are frame-INVARIANT scalars, not frame-dependent coefficients. This is the curved, comparator-free analogue of the flat 'single constant in all frames' statement (built with NO M_EH / Lichnerowicz comparator)
+       SO(4) embedding edge-length change = 2.22e-16; max spectrum change across the S_5 frame orbit over the k_tau sweep = 2.31e-14; max channel-weight change = 1.78e-15
+[PASS] C3 off-round transport: a generic off-round spatial deformation (break S_5 by perturbing three spatial edge classes incommensurately) lifts the round-locus channel degeneracy to a per-k_tau spectrum with no exact degenerate complement (min eigenvalue gap > 1e-6, near-simple), confining the frame-ambiguity to the symmetric locus (consistent with the landed PL_S3 off-round result). Built via the exact Fourier-block extractor on a deformed assemble_full
+       round-locus min distinct eigenvalues over k_tau = 8/25 (degenerate: True); off-round (k_tau, #distinct, min-gap): (0.000: 25/25, gap 1.96e-01); (0.600: 25/25, gap 1.95e-01); (2.094: 25/25, gap 1.01e-01)
+[PASS] [TAUT] C1/C2 are AUTOMATIC: a RANDOM Hermitian matrix group-averaged by the same S_5 action satisfies C1's commutation to machine zero (so C1/C2 carry no prism-specific / connection content)
+       random-matrix S_5-average commutator = 1.67e-15 (passes C1 with ZERO geometry)
+[PASS] [DISP] (the substantive NEW result): the canonical channel weights DISPERSE in tick momentum k_tau (e.g. h1 varies materially across the sweep) -- real 3+1 structure absent from the static 3D round-S^3 slice; this is what the curved 3+1 prism build adds beyond the retained spatial result
+       h1 dispersion (max-min over k_tau sweep) = 3.538; weights (k_tau,h1,h4,h5): (0.00:-5.11,+7.36,+5.54); (0.30:-5.02,+7.34,+5.54); (2.09:-2.16,+6.58,+5.58); (1.10:-4.03,+7.08,+5.56)
+
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

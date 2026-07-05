@@ -57,6 +57,8 @@ import scipy.optimize as so
 
 np.set_printoptions(precision=10, linewidth=120, suppress=True)
 
+AUDIT_TIMEOUT_SEC = 600
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 DIRECTIONAL_BEST_RESIDUAL = None

@@ -6,7 +6,7 @@ claim_type_author_hint: exact_negative_boundary
 # Record Blank-Boundary Reset No-Go
 
 **Date:** 2026-06-05
-**Claim type:** exact negative boundary for closed finite-unitary clean
+**Claim type:** no_go — exact negative boundary for closed finite-unitary clean
 broadcast from arbitrary fragment states.
 **Status authority:** independent audit lane only. This source note does not
 set an audit verdict, edit audit data, or assert package-status promotion.

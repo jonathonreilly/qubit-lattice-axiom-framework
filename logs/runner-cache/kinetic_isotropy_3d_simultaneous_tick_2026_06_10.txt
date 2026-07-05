@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/kinetic_isotropy_3d_simultaneous_tick_2026_06_10.py
+runner_sha256: fadedfe1aeeb391bd8c5477875f2e6c6a8a2af10809b1d6b6ea437d514dcecbc
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 100.66
+status: ok
+----- stdout -----
+
+SITE-LICENSE DEGREE TABLE ON THE 2^3 CELL
+==============================================================================
+  [PASS] site-license degree table: ALL diagonal entries constant; partner pairs carry TWO offsets, both along their own axis  --  same-component hops are distance-2 => tr U(k) is structurally CONSTANT in 3D
+  [PASS] coupling-entry collapse: ONE variable (combinatorial) and ONE monomial after unitarity (cross terms conj(c_i) d_i = 0, independent Fourier modes)  --  no entry can blend axes or powers: axis-mixing in a single tick is amplitude-free
+
+MULTIVARIABLE MONOMIAL LEMMA (DEGREE-(1,1) CASCADE COMPUTED)
+==============================================================================
+  [PASS] extreme corners of |u|^2: (2,2) coeff = conj(a_{-1,-1}) a_{11}; (2,-2) coeff = conj(a_{-1,1}) a_{1,-1}  --  corner products vanish => the cascade kills mixed terms; per-variable 1D lemma + torus connectivity finish
+  [PASS] monomial witnesses: monomials are unimodular; the blend (z1 + z2)/sqrt(2) is NOT unimodular on the torus  --  det U(k) = e^{iD} z1^{w1} z2^{w2} z3^{w3}: an integer winding VECTOR
+
+COVARIANT POLYNOMIAL FLATNESS BOUNDARY
+==============================================================================
+  [PASS] staggered Bloch operator: Hermitian, spectrum +-sqrt(sum sin^2(k_i/2)) = site-unit staggered dispersion, SWEEPING A CONTINUUM  --  spec = +-0.8809 (4+4) at k_a -> +-1.0880 at k_b (computed both)
+  [PASS] covariant polynomial flatness: |f(lambda)|^2 = 1 on a continuum forces f CONSTANT (degree-1 solved; degree-2 leading coeff = |c|^2 cascades)  --  any single site-allowed tick U = f(D(k)) is FLAT: the natural staggered-covariant construction cannot transport
+
+QUANTIZED DRIFT WITNESSES
+==============================================================================
+  [PASS] single-axis shift: site-allowed, unitary, dispersive along its OWN axis, flat transversely (computed)  --  dispersive 3D ticks exist but each PICKS AXES: covariance is what single ticks cannot keep
+  [PASS] diagonal-hop comparator geometries: face dist 2 and body dist 3 are outside the site license (computed from the hop vectors)  --  closes the known comparator family only; other analyzed surfaces are checked separately
+  [PASS] mixed-cycle witness: a site-allowed dispersive NON-per-axis tick exists; U^4 = e^{i(k1+k2)} I on its cycle (computed)  --  bands exactly linear, slopes (1/2, 1/2, 0) site/tick: QUANTIZED-NONUNIT; permutation-class slopes = winding/length, never tunable
+  [PASS] staircase witness: a site-allowed dispersive NON-per-axis tick exists; W^4 = (unimodular k-scalar) I exactly  --  slopes (1/2, 1/2, 0) site/tick: quantized-nonunit mixed-axis drift -- the per-axis class is NOT exhaustive
+
+FACTORIZED DECORATED-SHIFT CLASS: EQUALIZED AXES, PER-AXIS SATURATION
+==============================================================================
+  [PASS] eta-decorated per-axis shifts (ALL axes): unitary, S_i^2 = e^{-ik_i} I EXACTLY => monomial bands, 1 EDGE/TICK  --  each axis factor is the 1D saturating cell on every transverse line; transverse-flat by construction
+  [PASS] axis permutations conjugate the factors into each other: bare EXACTLY; decorated PROJECTIVELY (equal spectra; sign gauge)  --  the axis-permutation group (S3) equalizes the per-axis factors up to the staggered sign gauge
+  [PASS] bare axis shifts COMMUTE; eta-decorated ones ANTI-commute, ALL pairs (the staggered sign structure, computed)  --  the Trotter cycle's reordering deviation IS the staggered structure: same sign pattern that builds D
+  [PASS] unequal protocol weights factor into CENTRAL quantized translations: S1^2 S2 S3 = e^{-ik_1} S2 S3 EXACTLY  --  unequal weights add quantized whole-cell translations; the SYMMETRIC cycle is selected by the factorized-realization premise
+  [PASS] every reordering of the Trotter cycle is +-(the reference order): central sign, physically equivalent  --  no ordering dial exists in the factorized cycle
+  [PASS] factorized drift-only check: every sampled word of decorated shifts has W^2 = (unimodular scalar) I: exactly linear bands, NO cone at this density  --  curved (Dirac-cone) 3D matter dispersion is larger-cell/density content -- named open, stated not implied
+
+LINEAR PERMUTATION-EQUIVARIANT SITE-LICENSE FAMILY: EXACT EQUATIONS
+==============================================================================
+  [PASS] orbit reduction: 4 component orbits (parity weight) and 6 hop orbits (computed)  --  the equivariant site-license family has 4 + 12 complex orbit parameters
+  [PASS] exact kills: per-orbit d*conj(c) = 0 for ALL 6 orbits; cross-orbit d*conj(d') = 0 for the two opposite-side-hop pairs  --  remaining cross-orbit coexistence is excluded at sweep grade (F2b), not by the exact backbone
+  [PASS] kill-propagation collapses the exact system to 25 leaves (canonical ordering; deterministic)  --  25 leaves; 16 retain transport (d) coefficients
+  [PASS] dense per-leaf sweep diagnostic: no dispersive unitary found among optimizer endpoints  --  17 optimizer-distinct unitaries across 25 leaves; dispersive: 0 -- endpoint count diagnostic only; exact-kill backbone
+
+==============================================================================
+SCORECARD: PASS=20 FAIL=0
+==============================================================================
+
+----- stderr -----
+

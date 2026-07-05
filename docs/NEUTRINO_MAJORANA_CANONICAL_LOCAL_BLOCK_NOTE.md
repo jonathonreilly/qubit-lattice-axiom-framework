@@ -1,5 +1,7 @@
 # Majorana Canonical One-Generation Local Block Theorem
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15
 **Status:** exact one-generation local normal-form theorem on the current
 neutrino lane; not an existence theorem

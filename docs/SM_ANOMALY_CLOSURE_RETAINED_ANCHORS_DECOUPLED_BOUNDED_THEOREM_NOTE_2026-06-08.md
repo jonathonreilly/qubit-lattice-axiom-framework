@@ -1,9 +1,5 @@
 # SM One-Generation Anomaly Closure From Retained Anchors — Decoupled From `anomaly_forces_time` (Bounded Theorem)
 
-> **Key terms used in this doc** are indexed A-Z at
-> [docs/KEY_TERMINOLOGY.md](KEY_TERMINOLOGY.md); each row points to the
-> canonical source-of-truth doc.
-
 **Date:** 2026-06-08
 **Type:** bounded theorem
 **Claim type:** bounded_theorem
@@ -93,7 +89,10 @@ runner):
   normalization choice (the `Y₀` convention), not an admitted number.
 - **C3 (admission — `ν_R`).** Adding `ν_R` with free `y₄` reopens a 1-parameter
   anomaly-free family; neutrality `y₄ = 0` is load-bearing only when `ν_R` is
-  included. The no-`ν_R` minimal sector closes without it.
+  included. The runner checks the full family member
+  `y_u = 4/3 + t`, `y_d = -2/3 - t`, `y_e = -2 - t`, `y_ν = t` at `t=1/2`,
+  verifying `SU(3)^2Y = 0`, `Tr[Y] = 0`, and `Tr[Y^3] = 0`. The no-`ν_R`
+  minimal sector closes without it.
 
 ## What this does and does not claim
 
@@ -111,7 +110,8 @@ runner):
 ## Reprove-and-cite
 
 - The character/anomaly arithmetic (six conditions, RH uniqueness, the C1–C3
-  caveats) is reproven exactly in the runner, not asserted by name.
+  caveats, including the full `ν_R` one-parameter family check) is reproven
+  exactly in the runner, not asserted by name.
 - Prior packaging of the same arithmetic (cited as context, **not** as
   load-bearing markdown deps, to keep this row deps-all-retained):
   `axiom_first_sm_anomaly_cancellation_complete_theorem_note_2026-05-03`,

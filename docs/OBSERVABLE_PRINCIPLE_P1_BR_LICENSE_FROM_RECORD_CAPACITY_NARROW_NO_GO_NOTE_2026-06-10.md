@@ -72,10 +72,11 @@ If all three hold, finite additivity gives
 |W(ez) - W(z)| <= K M,
 ```
 
-so `(BR-int)` holds and the exponent selector closes. In the unit-record
-schema `(CAP-M)` holds with `M = 1` by normalization, but `(CAP-real)` and
-`(CAP-K)` remain open. This note does not license `(BR)`, `(BR-int)`, or
-`(CAP)`, and it does not retire P1.
+so `(BR-int)` holds and the exponent selector closes. In the conditional
+unit-record schema `(CAP-M)` holds with `M = 1` by normalization, but that is
+not an unconditional retained-grade supplier here. `(CAP-real)` and `(CAP-K)`
+remain open. This note does not license `(BR)`, `(BR-int)`, or `(CAP)`, and it
+does not retire P1.
 
 ## Lemma W: `(BR) => (BR-int)`, Strictly
 
@@ -130,11 +131,12 @@ The current record rows do not provide the capacity package:
   its sector data are supplied scalars. The runner recomputes the two-sector
   freedom showing arbitrary normalized coordinates. It does not bound
   magnitudes in general.
-- The unbounded finite-additivity schema supplies unit records and arbitrary
-  finite collections. That gives `(CAP-M)` with `M = 1` for unit records, but
-  it also licenses violations of `(CAP-K)`: assigning `4^k` unit records to
-  e-fold `k` is a fully finite collection at each prefix and exceeds every
-  uniform cap.
+- The unbounded finite-additivity schema is conditional on its supplied
+  readout context and supplied nonzero disjoint unit records. Inside that
+  schema, it computes arbitrary finite collections. That gives `(CAP-M)` with
+  `M = 1` for unit records, but it also licenses violations of `(CAP-K)`:
+  assigning `4^k` unit records to e-fold `k` is a fully finite collection at
+  each prefix and exceeds every uniform cap.
 - The minimal-record-block no-go says Record supplies no scale selector. It
   does not couple record collections to amplitude e-folds.
 
@@ -209,7 +211,7 @@ The runner checks:
 - finite-sector additivity over all 81 ordered disjoint subset pairs in a
   four-sector model;
 - the conditional `(CAP-real)+(CAP-M)+(CAP-K) => (BR-int)` theorem;
-- arbitrary sector-data and `4^k` unit-record witnesses;
+- arbitrary sector-data and conditional supplied-record `4^k` witnesses;
 - qubit effect bounds and unbounded register counts;
 - compact-domain collapse;
 - current supplier-row presence/status diagnostics;
@@ -224,7 +226,8 @@ The runner checks:
 - [OBSERVABLE_PRINCIPLE_P1_EXPONENT_FIXING_IRREDUCIBILITY_NARROW_NOTE_2026-05-31.md](OBSERVABLE_PRINCIPLE_P1_EXPONENT_FIXING_IRREDUCIBILITY_NARROW_NOTE_2026-05-31.md)
   supplies the extended irreducible-class target escaped by `(BR-int)`.
 - [RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md](RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md),
-  [RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md](RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md),
+  [RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md](RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md)
+  (used only as conditional supplied-record algebra),
   and [MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md](MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md)
   are the tested record-capacity candidates.
 - [POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md](POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md),

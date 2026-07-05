@@ -1,7 +1,14 @@
 # Shapiro Complex Interaction Note
 
-**Date:** 2026-04-06  
+**Date:** 2026-04-06
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
 
 ## Retraction
 
@@ -13,25 +20,41 @@
 
 - **Do not cite warning:** Do NOT cite the numerical results, tables, or threshold values in the original content below as live framework claims. The runners referenced in this note have been superseded or are no longer reproducible at the time of audit. If a future investigation revisits this physics, treat it as starting from scratch rather than as continuation of a "closed no-go".
 
+## 2026-06-16 archive firewall
+
+This archived packet is historical / diagnostic and retired as evidence. The
+tables below may be inspected only as a record of what the stale renderer
+printed. They do not establish a retained Shapiro phase-lag observable, a
+retained complex-action selector, or a retained interaction theorem.
+
+The only safe algebraic residue is conditional: if a phase row is supplied from
+some future audit-clean source and the later complex-action factor is proven to
+be strictly real and positive on the same surface, multiplying by that factor
+does not rotate the supplied phase angle. This packet does not provide either
+load-bearing premise.
+
 ## Artifact Chain
 
-- [`scripts/shapiro_complex_interaction.py`](/Users/jonreilly/Projects/Physics/scripts/shapiro_complex_interaction.py)
-- [`logs/2026-04-06-shapiro-complex-interaction.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-shapiro-complex-interaction.txt)
-- [`docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md)
-- [`archive_unlanded/causal-field-stale-runners-2026-04-30/CAUSAL_PROPAGATING_FIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/causal-field-stale-runners-2026-04-30/CAUSAL_PROPAGATING_FIELD_NOTE.md)
-- [`docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md)
-- [`docs/CAUSAL_MOVING_UNIFICATION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/CAUSAL_MOVING_UNIFICATION_NOTE.md)
-- [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md)
-- [`docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md)
-- [`docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md)
+- [`scripts/shapiro_complex_interaction.py`](../../scripts/shapiro_complex_interaction.py)
+- [`logs/2026-04-06-shapiro-complex-interaction.txt`](../../logs/2026-04-06-shapiro-complex-interaction.txt)
+- [`docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md`](../../docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md)
+- [`docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](../../docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)
+- [`docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md`](../../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md)
+- [`docs/CAUSAL_MOVING_UNIFICATION_NOTE.md`](../../docs/CAUSAL_MOVING_UNIFICATION_NOTE.md)
+- [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](../../docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md)
+- [`docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md`](../../docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md)
+- [`docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md`](../../docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md)
 
-## Question
+## Historical question (retracted)
 
-Does the retained c-dependent phase lag survive when carried through the retained complex-action crossover architecture, or does the complex branch narrow or collapse it?
+The archived question asked whether a c-dependent phase lag survives when
+carried through a complex-action crossover architecture. That was not answered
+from audit-clean inputs in this packet.
 
-## Retained Phase Lag
+## Historical supplied phase-lag table (retracted)
 
-The Shapiro-style phase lag is the causal phase observable:
+The old note supplied the following phase rows and treated them as a causal
+phase observable. The rows are not live evidence here:
 
 | c | phase lag mean | family spread | fam1 | fam2 | fam3 |
 | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -40,12 +63,13 @@ The Shapiro-style phase lag is the causal phase observable:
 | 0.50 | +0.0621 rad | 0.0002 rad | +0.0621 | +0.0622 | +0.0620 |
 | 0.25 | +0.0679 rad | 0.0000 rad | +0.0679 | +0.0679 | +0.0679 |
 
-The retained phase lag is already portable across the three grown families.
-The family spread stays at or below `2e-4 rad`, so the causal delay itself is not the fragile piece here.
+The old portability sentence is retracted. The family-spread table remains only
+as a record of supplied values from the stale renderer.
 
-## Complex-Action Companion
+## Historical supplied complex-action table (retracted)
 
-The retained grown-row complex-action companion changes amplitude / escape and flips the TOWARD sign at its own crossover:
+The old note supplied the following complex-action rows. They are not a live
+complex-action selector theorem in this archive:
 
 | gamma | direction | escape | deflection |
 | ---: | --- | ---: | ---: |
@@ -56,10 +80,11 @@ The retained grown-row complex-action companion changes amplitude / escape and f
 | 0.50 | 0/2 AWAY | 0.4156 | -4.760660e-01 |
 | 1.00 | 0/2 AWAY | 0.0935 | -1.074474e+00 |
 
-## Interaction Check
+## Historical algebraic observation (conditional on supplied rows)
 
-The complex-action factor is a real attenuation term, so it does not rotate the phase phasor.
-For the retained causal phase rows, the phase angle is unchanged at leading order:
+The stale interaction check assumed that the complex-action factor is a real
+attenuation term and therefore does not rotate a supplied phase phasor. Under
+that assumption alone, the listed phase angle is unchanged:
 
 | c | phase before | phase after complex factor | delta |
 | ---: | ---: | ---: | ---: |
@@ -68,19 +93,18 @@ For the retained causal phase rows, the phase angle is unchanged at leading orde
 | 0.50 | +0.0621 | +0.0621 | +0.0e+00 |
 | 0.25 | +0.0679 | +0.0679 | +0.0e+00 |
 
-## Safe Read
+## Historical safe-read text (retracted and narrowed)
 
-- the c-dependent phase lag survives the complex-action crossover
-- the complex branch narrows escape / amplitude, not the phase angle itself
-- the phase lag therefore belongs to the broad causal package
-- the complex-action branch remains the narrower amplitude-selective branch
+- safe only as conditional algebra on supplied rows: a strictly real positive
+  multiplier preserves an already-supplied phase angle
+- not safe as evidence that a Shapiro phase-lag observable survives the current
+  complex-action architecture
+- not safe as evidence that the phase lag belongs to a broad causal package
+- not safe as a retained amplitude-selective branch statement
 
-## Final Verdict
+## Historical final verdict (retracted)
 
-The retained causal phase lag survives the complex-action crossover; the complex-action branch narrows amplitude/escape, but not the phase-lag observable itself.
-
-This is a narrow, review-safe conclusion:
-- the Shapiro-style phase lag is a broad causal observable
-- the complex-action branch is selective in amplitude and escape
-- the phase lag is not collapsed or inverted by the complex branch
-- no strong-field theory claim is being made here
+The old final verdict is retracted. This packet is not a retained bridge,
+survival theorem, or broad-causal-observable authority. A future repair would
+need to construct the phase observable and the complex-action operator from the
+same audit-clean data pipeline.

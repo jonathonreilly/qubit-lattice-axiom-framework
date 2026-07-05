@@ -7,9 +7,13 @@ squaring, an eta counterexample, and the observed all-positive comparator.
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import numpy as np
 
 
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "KOIDE_RECORD_SIGN_AGNOSTIC_ETA_REFUTED_2026-06-04.md"
 PASS = 0
 FAIL = 0
 
@@ -93,6 +97,33 @@ def main() -> int:
 
     r = 0.5
     check("r_half_maps_to_q_two_thirds", abs((1 + 2 * r) / 3 - 2 / 3) < 1e-12)
+
+    note_text = NOTE.read_text(encoding="utf-8")
+    note_flat = " ".join(note_text.split())
+    note_lower = note_flat.lower()
+    check("note_declares_open_gate", "**Type:** open_gate" in note_text)
+    check(
+        "pdg_comparator_non_load_bearing",
+        "PDG charged-lepton square-root comparator is a non-load-bearing sanity check only"
+        in note_flat
+        and "not a framework derivation input" in note_lower,
+    )
+    check(
+        "not_no_go_against_all_signed_readouts",
+        "Do not cite this note as a no-go against all signed readout routes" in note_flat
+        and "future signed-readout route remains open" in note_flat,
+    )
+    check(
+        "future_route_requires_framework_native_readout",
+        "framework-native readout functional" in note_flat
+        and "sign data survive the relevant Born/readout stage" in note_flat
+        and "proves the needed Koide denominator inside that route" in note_flat,
+    )
+    check(
+        "refutes_only_tested_shortcuts",
+        "refutes only the tested sign-blind" in note_lower
+        and "`eta`-only shortcuts" in note_text,
+    )
 
     print("=" * 72)
     print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")

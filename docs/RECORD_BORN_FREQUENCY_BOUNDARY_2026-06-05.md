@@ -6,7 +6,7 @@ claim_type_author_hint: exact_negative_boundary
 # Record Born-Frequency Boundary
 
 **Date:** 2026-06-05
-**Claim type:** exact negative boundary and finite counting support.
+**Claim type:** no_go — exact negative boundary and finite counting support.
 **Status authority:** independent audit lane only. This source note does not
 set an audit verdict, edit audit data, or assert package-status promotion.
 **Primary runner:**

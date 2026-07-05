@@ -1,0 +1,115 @@
+===== runner cache v1 =====
+runner: scripts/frontier_theta_multi_plaquette_cross_plane_narrowing_2026_06_11.py
+runner_sha256: 4f0adb520d42c939f038c12831f00d4a83b1e091693da453ddb4c018338eeb90
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.19
+status: ok
+----- stdout -----
+========================================================================================
+THETA MULTI-PLAQUETTE CROSS-PLANE NARROWING UNDER THE ADJACENCY LICENSE
+========================================================================================
+
+----------------------------------------------------------------------------------------
+(A) Anchors: regression against the per-plaquette license note (d=3)
+----------------------------------------------------------------------------------------
+  [PASS] single plaquette passes the verbatim license (d=3)
+  [PASS] length-4 rooted simple loops at origin: 24, all plaquettes, all licensed (d=3)  --  count=24
+  [PASS] length-6 rooted simple loops at origin: 264, none licensed (d=3)  --  count=264
+
+----------------------------------------------------------------------------------------
+(B) Distance-2 lemma: the verbatim license bounds the support
+----------------------------------------------------------------------------------------
+  [PASS] every licensed support has pairwise site distance <= 2 (lemma instance check)
+  [PASS] lemma core: min(d(p,q), d(p,q')) <= 1 with d(q,q') = 1 forces d(p,q) <= 2 (exhaustive window)
+
+----------------------------------------------------------------------------------------
+(C) Complete licensed-loop classification at ALL lengths (V lift)
+----------------------------------------------------------------------------------------
+  [PASS] d=3: licensed loops (all lengths) = plaquettes only  --  licensed=24 expected=24 examined_closed_loops=24
+  [PASS] d=4: licensed loops (all lengths) = plaquettes only  --  licensed=48 expected=48 examined_closed_loops=48
+
+----------------------------------------------------------------------------------------
+(D) Neighborhood-intersection lemma: a licensed support containing a plaquette is that plaquette
+----------------------------------------------------------------------------------------
+  [PASS] sites within distance 1 of ALL four plaquette edges = exactly the 4 plaquette sites  --  allowed=[(0, 0, 0, 0), (0, 1, 0, 0), (1, 0, 0, 0), (1, 1, 0, 0)]
+  [PASS] the only lattice links among those sites are the 4 plaquette edges (no diagonals on the 6-NN lattice)
+
+----------------------------------------------------------------------------------------
+(E) Verbatim pair scan: no two-plaquette union is licensed (d=4)
+----------------------------------------------------------------------------------------
+  [PASS] plaquette site offsets obey |o|_inf <= 1 (window-completeness input)
+  [PASS] ZERO two-plaquette unions pass the verbatim composite license (all plane pairs, all |t|_inf <= 4)  --  pairs_scanned=137775
+
+----------------------------------------------------------------------------------------
+(F) Conclusion V + the cross-plane mixed-derivative core (reproven)
+----------------------------------------------------------------------------------------
+  [PASS] sum of one-plane functions: all three cross-plane mixed derivatives vanish  --  {'(0, 1)|(2, 3)': 0, '(0, 2)|(1, 3)': 0, '(0, 3)|(1, 2)': 0}
+  [PASS] ASSEMBLED (V): verbatim-licensed local terms are single-plaquette, so the landed cross-plane absence covers the WHOLE verbatim class (the multi-plaquette reopening is empty inside it)
+
+----------------------------------------------------------------------------------------
+(G) W lift is not vacuous: genuine multi-plaquette witnesses pass
+----------------------------------------------------------------------------------------
+  [PASS] domino, bent, and stacked plaquette pairs all pass the W lift (each factor licensed; pair mutually unit-proximate)
+
+----------------------------------------------------------------------------------------
+(H) Complementary-plane exclusion under W (projection lemma)
+----------------------------------------------------------------------------------------
+  [PASS] complementary-plane plaquette pairs fail the W lift at EVERY relative translation (exhaustive window)  --  w_passes_total=96
+  [PASS] no integer point lies within L1 distance 1 of all four unit-square corners (projection-lemma core; window exhaustive, tail monotone)
+
+----------------------------------------------------------------------------------------
+(I) Criterion: every W-licensed plaquette pair shares a direction
+----------------------------------------------------------------------------------------
+  [PASS] every W-pass plane pair shares >= 1 lattice direction  --  w_pass_plane_pairs=[((0, 1), (0, 1)), ((0, 1), (0, 2)), ((0, 1), (0, 3)), ((0, 1), (1, 2)), ((0, 1), (1, 3)), ((0, 2), (0, 2)), ((0, 2), (0, 3)), ((0, 2), (1, 2)), ((0, 2), (2, 3)), ((0, 3), (0, 3)), ((0, 3), (1, 3)), ((0, 3), (2, 3)), ((1, 2), (1, 2)), ((1, 2), (1, 3)), ((1, 2), (2, 3)), ((1, 3), (1, 3)), ((1, 3), (2, 3)), ((2, 3), (2, 3))]
+  [PASS] d=4 plane dichotomy: distinct coordinate planes share a direction XOR are complementary
+
+----------------------------------------------------------------------------------------
+(J) Plane-set criterion for products (sympy, generic factors)
+----------------------------------------------------------------------------------------
+  [PASS] every pairwise-direction-sharing plane set (size <= 3): all three cross-plane coefficients vanish identically
+  [PASS] positive control: complementary-containing plane sets DO carry a nonzero cross-plane coefficient (the slot has teeth outside the license)  --  nonzero_sets=[((0, 1), (2, 3)), ((0, 2), (1, 3)), ((0, 3), (1, 2)), ((0, 1), (0, 2), (1, 3)), ((0, 1), (0, 2), (2, 3)), ((0, 1), (0, 3), (1, 2))]
+
+----------------------------------------------------------------------------------------
+(K) Assembled W theorem at every factor order
+----------------------------------------------------------------------------------------
+  [PASS] all W-licensed 2- and 3-factor clusters (anchored scan) have pairwise direction-sharing plane sets - no complementary pair  --  partners=24 licensed_triples=80
+
+----------------------------------------------------------------------------------------
+(L) Hostile witness: the 06-07 clover cross-plane pair is license-external
+----------------------------------------------------------------------------------------
+  [PASS] corner-touching 01 x 23 plaquette pair: fails verbatim license, fails W lift, yet its UNRESTRICTED product carries a nonzero F01*F23 coefficient (06-07 clover reopening preserved as license-external)  --  unrestricted_coeff=b0*b1
+
+----------------------------------------------------------------------------------------
+(M) Boundary witness: chained clusters reopen the slot (X complement)
+----------------------------------------------------------------------------------------
+  [PASS] explicit 3-factor chain {01,12,23}: adjacent pairs W-pass, end pair W-fails, and the chained product carries a nonzero F01*F23 coefficient - chain-connected clusters are the named open complement  --  chain_coeff=a1*b0*b2
+
+----------------------------------------------------------------------------------------
+(N) d=3 corollary: no complementary spatial plane pair exists
+----------------------------------------------------------------------------------------
+  [PASS] d=3: among the 3 spatial coordinate planes, every pair shares a direction (the cross-plane pairing needs 4 distinct directions)
+
+----------------------------------------------------------------------------------------
+(O) Interface pins on the consumed dependency notes
+----------------------------------------------------------------------------------------
+  [PASS] license note pin: verbatim license condition string present
+  [PASS] cross-plane note pin: the multi-plaquette reopening boundary this runner narrows is present verbatim
+
+========================================================================================
+TOTAL: PASS=26 FAIL=0
+========================================================================================
+VERDICT (bounded): within the adjacency-licensed action class the
+cross-plane FtildeF absence EXTENDS to local multi-plaquette terms:
+verbatim composite license -> single plaquettes only (all loop
+lengths; reopening empty); pairwise-proximity weakening -> genuine
+multi-plaquette products exist but complementary-plane pairs are
+excluded at every translation, so no cross-plane monomial at any
+factor order. The theta_gauge residual on this surface narrows to:
+(i) chain-connected non-pairwise-proximate cluster terms (explicit
+witness; license-external, as is the 06-07 clover), and (ii) the
+global winding-sector / emergent-Q bridge data. No license
+derivation, no theta closure, no audit status is claimed.
+
+----- stderr -----
+

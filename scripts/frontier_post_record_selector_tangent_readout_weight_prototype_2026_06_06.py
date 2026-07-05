@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Finite selector/tangent/readout weight prototype under supplied rules."""
+"""Open-gate selector/tangent/readout weight diagnostic under supplied rules."""
 
 from __future__ import annotations
 
@@ -16,7 +16,7 @@ LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
 MEASURE_RUNNER = ROOT / "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py"
 PASS = 0
 FAIL = 0
-EXPECTED_ROWS = 8
+EXPECTED_ROWS = 17
 
 
 def report(label: str, ok: bool, detail: str = "") -> None:
@@ -86,21 +86,53 @@ def source_anchor_checks() -> None:
             "selector_tangent_readout_weight",
             "Type:** open_gate",
             "Claim type:** open_gate",
-            "bounded-support packet",
+            "conditional-support source-side diagnostic",
+            "not a bounded support theorem over the framework baseline",
+            "2026-06-18 Record-axiom non-supply repair",
             "2026-06-08 supplied-support safe-narrow",
             "supplied-support",
-            "finite readout/tangent weight certificate",
+            "finite readout/tangent weight arithmetic inside that supplied packet",
+            "actual_current_surface_status: conditional-support",
+            "trace_class: upstream_support",
             "not a positive theorem over the framework baseline",
             "not selector/tangent/readout authority",
             "They are supplied finite packet data.",
             "Does not derive a selector, tangent metric, Hessian",
+            "Does not derive a readout context, central-sector decomposition",
             "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
+        ],
+    )
+    require_text(
+        "docs/MINIMAL_AXIOMS_2026-06-05.md",
+        [
+            "### Record",
+            "Given a readout context with a finite central-sector decomposition",
+            "For any finite pairwise-disjoint collection of records",
+            "A record supplies no readout context, decomposition, `K`/CPT structure,",
+            "weighting, normalization, probability",
+            "measurement/decoherence dynamics",
+        ],
+    )
+    require_text(
+        "docs/audit/data/axiom_premise_nodes.json",
+        [
+            "\"minimal_axioms\"",
+            "\"current_path\": \"docs/MINIMAL_AXIOMS_2026-06-29.md\"",
+            (
+                "It still supplies no context-selection rule, formation rule (which admissible "
+                "possibility a new record locks, at which site, with what weight, or at what rate), "
+                "weighting, normalization, probability, update law, measurement/decoherence dynamics, "
+                "record-production process, physical persistence dynamics, K/CPT structure, "
+                "central-sector decomposition, source/action bridge, physical observable bridge, "
+                "state-selection rule, law-domain derivation, or downstream theory consequence."
+            ),
         ],
     )
     require_text(
         "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md",
         [
-            "`selector_tangent_readout_weight` | 8",
+            "`selector_tangent_readout_weight` | 16",
+            "live count printed by the runner supersedes this diagnostic export",
             "selector/tangent readout-weight rows need a supplied readout/tangent bridge",
         ],
     )
@@ -110,7 +142,7 @@ def source_anchor_checks() -> None:
             "def measure_rows",
             "def measure_lane",
             "selector_tangent_readout_weight",
-            "EXPECTED_LANE_COUNTS",
+            "EXPECTED_SUBCOUNTS",
         ],
     )
     require_text(
@@ -122,11 +154,12 @@ def source_anchor_checks() -> None:
         ],
     )
     require_text(
-        "docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md",
+        "docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
         [
-            "selector-boundary conclusion",
-            "does not, within this packet,",
-            "authority outside the current packet",
+            "Hierarchy D4 Density-Scale Readout Bridge",
+            "fixed positive D=4 density-coefficient readout",
+            "This bridge does not identify the electroweak VEV",
+            "physical order-parameter theorem",
         ],
     )
     require_text(
@@ -140,7 +173,7 @@ def source_anchor_checks() -> None:
 
 
 def certificate_checks() -> None:
-    section("Finite selector/tangent/readout checks")
+    section("Supplied finite selector/tangent/readout arithmetic checks")
     weights = normalize({"endpoint_lo": Fraction(1), "endpoint_hi": Fraction(3)})
     report("finite supplied readout weights normalize", weights == {"endpoint_lo": Fraction(1, 4), "endpoint_hi": Fraction(3, 4)}, str(weights))
     metric = ((Fraction(3), Fraction(1)), (Fraction(1), Fraction(2)))
@@ -181,7 +214,7 @@ def row_checks() -> list[dict]:
     report("selector/tangent row count is current snapshot", len(rows) == EXPECTED_ROWS, str(len(rows)))
     ids = {row.get("claim_id") for row in rows}
     for claim_id in [
-        "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
+        "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12",
         "teleportation_preparation_readout_probe_note",
         "yt_exact_hessian_selector_uniqueness_note",
     ]:
@@ -206,11 +239,18 @@ def firewall_checks() -> None:
     audit_verdict_applied = False
     promoted_or_retained_claim = False
     selector_authority_derived = False
+    readout_context_derived_from_record = False
+    central_sector_decomposition_derived_from_record = False
+    kcpt_structure_derived_from_record = False
+    weighting_rule_derived_from_record = False
+    normalization_authority_derived_from_record = False
     physical_measure_selected = False
     readout_primitive_derived_from_record = False
     tangent_metric_derived_from_record = False
+    hessian_derived_from_record = False
     generation_or_koide_dial_selected = False
     born_law_derived_from_record = False
+    measurement_dynamics_derived_from_record = False
     production_dynamics_derived = False
     physical_arrow_derived_from_record = False
 
@@ -218,11 +258,18 @@ def firewall_checks() -> None:
     report("audit verdict applied flag is false", not audit_verdict_applied)
     report("promoted/retained claim flag is false", not promoted_or_retained_claim)
     report("selector authority derived flag is false", not selector_authority_derived)
+    report("Record-derived readout context flag is false", not readout_context_derived_from_record)
+    report("Record-derived central-sector decomposition flag is false", not central_sector_decomposition_derived_from_record)
+    report("Record-derived K/CPT structure flag is false", not kcpt_structure_derived_from_record)
+    report("Record-derived weighting rule flag is false", not weighting_rule_derived_from_record)
+    report("Record-derived normalization authority flag is false", not normalization_authority_derived_from_record)
     report("physical measure selected flag is false", not physical_measure_selected)
     report("Record-derived readout primitive flag is false", not readout_primitive_derived_from_record)
     report("Record-derived tangent metric flag is false", not tangent_metric_derived_from_record)
+    report("Record-derived Hessian flag is false", not hessian_derived_from_record)
     report("generation/Koide dial selected flag is false", not generation_or_koide_dial_selected)
     report("Record-derived Born law flag is false", not born_law_derived_from_record)
+    report("Record-derived measurement dynamics flag is false", not measurement_dynamics_derived_from_record)
     report("production dynamics derived flag is false", not production_dynamics_derived)
     report("Record-derived physical arrow flag is false", not physical_arrow_derived_from_record)
 
@@ -238,13 +285,21 @@ def main() -> int:
     print("AUDIT_LEDGER_WRITTEN=FALSE")
     print("AUDIT_VERDICT_APPLIED=FALSE")
     print("SELECTOR_AUTHORITY_DERIVED=FALSE")
+    print("READOUT_CONTEXT_DERIVED_FROM_RECORD=FALSE")
+    print("CENTRAL_SECTOR_DECOMPOSITION_DERIVED_FROM_RECORD=FALSE")
+    print("KCPT_STRUCTURE_DERIVED_FROM_RECORD=FALSE")
+    print("WEIGHTING_RULE_DERIVED_FROM_RECORD=FALSE")
+    print("NORMALIZATION_AUTHORITY_DERIVED_FROM_RECORD=FALSE")
     print("PHYSICAL_MEASURE_SELECTED=FALSE")
     print("READOUT_PRIMITIVE_DERIVED_FROM_RECORD=FALSE")
     print("TANGENT_METRIC_DERIVED_FROM_RECORD=FALSE")
+    print("HESSIAN_DERIVED_FROM_RECORD=FALSE")
     print("GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE")
     print("BORN_LAW_DERIVED_FROM_RECORD=FALSE")
+    print("MEASUREMENT_DYNAMICS_DERIVED_FROM_RECORD=FALSE")
     print("PRODUCTION_DYNAMICS_DERIVED=FALSE")
     print("PHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE")
+    print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
 
 

@@ -34,8 +34,23 @@ this boundary as `audited_numerical_match`; after this source edit, independent
 re-audit owns the current status. The remaining structural gaps are recorded
 below in "What remains open (load-bearing gaps)".
 
+The companion
+`QUARK_CP_SMALL_CORRECTION_BOUNDARY_NOTE_2026-06-17.md` closes the
+small-correction reading negatively for the current completion: the shipped
+`xi_u`, `xi_d` pair is non-perturbative relative to the Schur `1-3` base, and
+small capped carriers on the parent slice do not recover the target `J`.
+That companion does not derive the carriers or promote this row; it removes
+the small-correction interpretation as a safe upgrade path for the current
+fit.
+
 A scope-narrowing companion already records the same boundary explicitly:
 `QUARK_CP_CARRIER_COMPLETION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md`.
+A new exact-support companion,
+[`QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md`](QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md),
+repairs the slot-choice part of the old ansatz boundary under the fixed
+Schur-NNI-tree/Hermitian one-edge-extension assumptions: the `1-3` edge is the
+unique off-tree carrier slot and its phase is the unique cycle invariant. The
+fitted numerical values remain open.
 A complementary reduced-closure attempt with fewer free parameters is in
 `QUARK_PROJECTOR_RAY_PHASE_COMPLETION_NOTE_2026-04-18.md`; that note
 continues to live as a separate bounded surface and is **not** load-bearing
@@ -169,20 +184,31 @@ none of which the present runner addresses:
    minimal admissible CP-carrier slot** beyond the Schur-NNI base, rather
    than choosing it by ansatz. Other carrier slots (different index pairs,
    different determinant-charge sectors, non-Hermitian completions) are
-   not ruled out by the present note.
+   not ruled out by the present note. The exact-support companion
+   [`QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md`](QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md)
+   now closes the fixed-Schur-NNI-tree/Hermitian one-edge version of this gap:
+   the `1-3` edge is the unique off-tree carrier slot and its phase is the
+   unique cycle invariant after tree gauge-fixing. It does not derive
+   `xi_u`, `xi_d`, and broader non-Hermitian or multi-carrier variants remain
+   outside that exact-support boundary.
 3. **Derive the comparator targets `(m_u/m_c, m_c/m_t, |V_us|, |V_cb|,
    |V_ub|, J)`** from framework primitives, or supply an audited bridge that
    maps the imported observational values onto framework-defined readouts.
    The present note imports these values directly from atlas/observation
    conventions.
-4. **Derive a small-correction interpretation**, or accept that the
+4. **Small-correction route closed negatively for the current completion.**
+   `QUARK_CP_SMALL_CORRECTION_BOUNDARY_NOTE_2026-06-17.md` checks the exact
+   fitted-carrier ratios and a bounded capped-carrier parent-slice scan. The
    completion is non-perturbative relative to the Schur `1-3` base
-   (`|xi_u|/c13_u^{base} ~ 102`, `|xi_d|/c13_d^{base} ~ 6.6`) and is
-   therefore not a retained small correction but a bounded completion
-   ansatz of comparable magnitude to the base term.
+   (`|xi_u|/c13_u^{base} ~ 102`, `|xi_d|/c13_d^{base} ~ 6.6`) and should not
+   be read as a retained small correction. A future positive upgrade would need
+   a framework-native derivation of the non-perturbative carrier normalization
+   or a different first-principles carrier, not a reinterpretation of this
+   fitted pair as small.
 
-All four are theorem/derivation problems and are out of scope for this
-note. The note therefore stops at the bounded numerical-match claim and
+The first three items remain theorem/derivation problems and are out of scope
+for this note. The fourth item is now a negative boundary for the current
+completion. The note therefore stops at the bounded numerical-match claim and
 does not attempt to upgrade beyond it.
 
 ## Audit history

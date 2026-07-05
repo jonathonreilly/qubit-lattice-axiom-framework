@@ -31,11 +31,16 @@ ADM-3 the phi-space identification (graph-shift selector <-> Dirac Higgs family)
 prints TOTAL: PASS=N FAIL=0
 """
 
+from pathlib import Path
+
 import numpy as np
 import sympy as sp
 
 results = []
 def check(name, ok): results.append((name, bool(ok)))
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md"
 
 # --- T2: V_sel = 32 sum phi^2 phi^2 from the RETAINED graph-shift surface ---
 sx = np.array([[0, 1], [1, 0]], dtype=int)
@@ -101,6 +106,24 @@ H2 = (2 * S[0]) * p[0] + (2 * S[1]) * p[1] + (2 * S[2]) * p[2]
 V2 = sp.expand(sp.trace((H2 * H2) * (H2 * H2)) - sp.Rational(1, 8) * sp.trace(H2 * H2)**2)
 coeff2 = V2.coeff(p[0]**2 * p[1]**2)
 check("CTRL rescaled 2*S_i: cross-coeff = 512 != 32 (graph-shift normalization has teeth)", coeff2 == 512)
+
+# --- Source firewall: the row remains bounded on ADM-1/2/3 ---
+note_text = NOTE_PATH.read_text(encoding="utf-8")
+note_flat = " ".join(note_text.split())
+check("SRC top-level status is bounded support over ADM-1/2/3",
+      "**Claim type:** bounded_theorem" in note_text
+      and "bounded support over ADM-1/ADM-2/ADM-3" in note_flat
+      and "not an import-free physical coefficient theorem" in note_flat
+      and "No new axiom, retained bridge, audit verdict, ledger tag, or publication" in note_flat
+      and "TOTAL: PASS=18 FAIL=0" in note_text)
+check("SRC 2026-06-12 firewall keeps ADM-1/2/3 live, no retained promotion",
+      "2026-06-12 Admissions-Closure Attempt And No-Go Routing" in note_text
+      and "this is bounded support only" in note_flat
+      and "No retained-grade proposal or status promotion is made here" in note_flat)
+check("SRC ADM-3 positive closure must evade the native even-trace no-go",
+      "DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md" in note_text
+      and "native pure even-trace Dirac-Higgs transport route is blocked" in note_flat
+      and "outside the native even-trace no-go" in note_flat)
 
 n_pass = sum(1 for _, ok in results if ok)
 n_fail = sum(1 for _, ok in results if not ok)

@@ -1,21 +1,23 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_resource_from_poisson.py
-runner_sha256: eb2f1bc46e1b3539c75bc53a9a934d8693cd8d600d2ab28323ae2f2e99b38af3
+runner_sha256: 492fa01d612342594bbb73c105071200db3cdce6b82a757e6c584082266de7c6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
 POISSON/CHSH TELEPORTATION RESOURCE AUDIT
-Status: planning / first artifact; quantum state teleportation resource only
+Status: bounded finite extraction core (citeable); open gate for the native
+        preparation/readout/apparatus bridge (open, not supplied here)
 Extraction: trace cells/spectator tastes, keep the last KS taste bit per species
-Source packet: scripts/frontier_bell_inequality.py sha256=1a290c8e305c53084825076a409452857feeb44d7414e1d69eb8648fff115689 lines=711 required_symbols=11 PASS
-Retained-axis source: docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md ledger=retained_bounded required_theorem_snippets=5 PASS
-Last-taste carrier checks:
-  1d_null: envs=4 logical_axis=0 X=xi_last/logical-flip PASS; Z_last Pauli PASS; sublattice Z is last-bit Z
-  1d_poisson_chsh: envs=4 logical_axis=0 X=xi_last/logical-flip PASS; Z_last Pauli PASS; sublattice Z is last-bit Z
-  2d_poisson_chsh: envs=8 logical_axis=1 X=xi_last/logical-flip PASS; Z_last Pauli PASS; sublattice Z is xi5; last-bit Z is separate
-Protocol sanity: ideal Phi+ resource mean fidelity=0.9999999999999996, min=0.9999999999999991, max trace error=5.551e-16
+
+=== BOUNDED FINITE EXTRACTION CORE (citeable core) ===
+PASS: poisson_chsh_helper_source scripts/frontier_bell_inequality.py sha256=1a290c8e305c53084825076a409452857feeb44d7414e1d69eb8648fff115689 lines=711 required_symbols=11
+PASS: retained_axis_finite_operator_algebra docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md ledger=retained_bounded required_theorem_snippets=5
+PASS: last_taste_carrier[1d_null] envs=4 logical_axis=0 X=xi_last/logical-flip; Z_last Pauli; sublattice Z is last-bit Z
+PASS: last_taste_carrier[1d_poisson_chsh] envs=4 logical_axis=0 X=xi_last/logical-flip; Z_last Pauli; sublattice Z is last-bit Z
+PASS: last_taste_carrier[2d_poisson_chsh] envs=8 logical_axis=1 X=xi_last/logical-flip; Z_last Pauli; sublattice Z is xi5; last-bit Z is separate
+PASS: teleportation_convention_sanity ideal Phi+ mean fidelity=0.9999999999999996 min=0.9999999999999991 max trace error=0.000e+00
 
 Case: 1d_null
   lattice/params: dim=1 side=8 N=8 envs/logical_qubit=4 mass=0 G=0
@@ -23,9 +25,9 @@ Case: 1d_null
   full-state CHSH |S| from existing lane: 2.000000
   traced logical taste-qubit resource: best Bell overlap=0.500000 (Phi+), CHSH=2.000000, purity=1.000000, negativity=0.000000
   traced Bell max-label tie: Phi+, Psi+ (deterministic report uses Phi+)
-  standard teleportation with traced resource: mean fidelity=0.669817, min=0.500038, max=0.987949, max trace error=4.441e-16
-  best fixed-env postselected branch: Bell overlap=0.500000 (Psi+), probability=6.250000e-02, CHSH=2.000000, negativity=0.000000
-    env A=((3,), ()) env B=((3,), ())
+  standard teleportation with traced resource: mean fidelity=0.669817, min=0.500038, max=0.987949, max trace error=0.000e+00
+  best fixed-env postselected branch: Bell overlap=0.500000 (Phi+), probability=6.250000e-02, CHSH=2.000000, negativity=0.000000
+    env A=((0,), ()) env B=((3,), ())
   deterministic high-fidelity Bell resource (threshold 0.900): NO
 
 Case: 1d_poisson_chsh
@@ -33,7 +35,7 @@ Case: 1d_poisson_chsh
   ground energy: -343.877771485
   full-state CHSH |S| from existing lane: 2.822668
   traced logical taste-qubit resource: best Bell overlap=0.997963 (Phi+), CHSH=2.822668, purity=0.997967, negativity=0.497963
-  standard teleportation with traced resource: mean fidelity=0.998621, min=0.997964, max=0.999470, max trace error=4.441e-16
+  standard teleportation with traced resource: mean fidelity=0.998621, min=0.997964, max=0.999470, max trace error=0.000e+00
   best fixed-env postselected branch: Bell overlap=0.998981 (Phi+), probability=2.497454e-01, CHSH=2.825546, negativity=0.498981
     env A=((1,), ()) env B=((3,), ())
   deterministic high-fidelity Bell resource (threshold 0.900): YES
@@ -43,15 +45,26 @@ Case: 2d_poisson_chsh
   ground energy: -66.100691676
   full-state CHSH |S| from existing lane: 2.668376
   traced logical taste-qubit resource: best Bell overlap=0.970283 (Phi+), CHSH=2.745662, purity=0.971783, negativity=0.470283
-  standard teleportation with traced resource: mean fidelity=0.979360, min=0.970287, max=0.999810, max trace error=6.661e-16
+  standard teleportation with traced resource: mean fidelity=0.979360, min=0.970287, max=0.999810, max trace error=0.000e+00
   best fixed-env postselected branch: Bell overlap=0.999428 (Psi+), probability=5.854540e-08, CHSH=2.826809, negativity=0.499428
     env A=((0, 1), (1,)) env B=((0, 1), (1,))
   deterministic high-fidelity Bell resource (threshold 0.900): YES
 
+PASS: null_control_no_resource[1d_null] best Bell overlap=0.500000 negativity=0.000000
+PASS: poisson_extraction_high_fidelity[1d_poisson_chsh] best Bell overlap=0.997963 (Phi+) tel mean=0.998621
+PASS: poisson_extraction_high_fidelity[2d_poisson_chsh] best Bell overlap=0.970283 (Phi+) tel mean=0.979360
+
+TOTAL: PASS=9 FAIL=0
+SUMMARY PASS=9 FAIL=0
+
+=== OPEN BRIDGE (native preparation/readout/apparatus; NOT part of citeable core) ===
+INFO: open_bridge_firewall docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md note keeps native preparation/readout/apparatus bridge explicitly open (not supplied here); required_snippets=18
+
 Conclusion:
-  A traced deterministic high-fidelity Bell resource was found on at least one Poisson case. This would need independent hardening before promotion.
+  A traced deterministic high-fidelity Bell resource was found on at least one Poisson case. This is the bounded finite extraction core only.
   CHSH violation in the full C^N x C^N state is not by itself a teleportation resource derivation.
   Postselected branches, when present, are diagnostics only in this artifact.
+  The native preparation/readout/apparatus bridge is open and is NOT part of the citeable bounded extraction core.
 
 ----- stderr -----
 

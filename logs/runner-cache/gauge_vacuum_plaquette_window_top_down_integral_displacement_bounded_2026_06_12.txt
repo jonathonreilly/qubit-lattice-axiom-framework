@@ -1,0 +1,116 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_2026_06_12.py
+runner_sha256: 988897799eba84a563ba71a61d48b3b31132c3cf004bef3309c17f424a3a1b5f
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.40
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette W52 top-down integral displacement bounded runner
+Status authority: independent audit lane only. This source runner does not set, predict, promote, or demote any audit outcome.
+No new imports: repo-internal finite packet quantities only.
+No randomness or runtime dates are used.
+
+================================================================================================================
+Part 1: method anchor, one-word reverse Haar/character integral
+================================================================================================================
+Top-down one-word row:
+  T_ab = D_a * sum_x M_ax D_x M_bx * D_b
+  D factors: three normalized Wilson character coefficients.
+  M factors: two link Schur/fusion contractions by fundamental or antifundamental channels.
+one-word states = 25
+D_(0,0) = 1.000000000000000
+D_(1,0) = 0.422531739649983
+c_fund(6)/c_0(6) = 1.267595218949950
+max |T_reverse - T_builder| = 0.000e+00
+max |T_reverse - T_existing| = 0.000e+00
+PASS: one-word reverse integral reproduces D M D M^T D builder
+PASS: one-word reverse integral matches the independent in-repo matrix builder
+PASS: trivial channel has normalized coefficient D_0 = 1
+PASS: fundamental and antifundamental Wilson strengths agree by conjugation
+PASS: M is the sum of fundamental and antifundamental nonnegative integer fusion matrices
+PASS: two-character fundamental Schur factor is exactly 1/3
+PASS: two-character adjoint Schur factor is exactly 1/8
+
+================================================================================================================
+Part 2: W48/W50 unit invariant objects used by three-character links
+================================================================================================================
+<T1,T1>, <T2,T2>, <T1,T2> = 9, 9, 3
+Casimir eigenvalues on 3 x 3bar: -0.000000000000 3.000000000000 3.000000000000 3.000000000000 3.000000000000 3.000000000000 3.000000000000 3.000000000000 3.000000000000
+normalized T2/3 components in E1/E8 basis: (0.333333333333333, 0.942809041582063); residual=3.399e-17
+four fundamental Schur factors = 1/81
+K_f E1/E8 components = (1.564932369074012e-02, 4.426297161082252e-02); residual=9.261e-18
+PASS: T1/T2 Gram matrix is exactly [[9, 3], [3, 9]]
+PASS: E1 and E8 are orthonormal
+PASS: 3 x 3bar Casimir spectrum is one 0 and eight 3s
+PASS: V1 and V8 resolve the 3 x 3bar product
+PASS: normalized T2/3 has singlet and adjoint amplitudes 1/3 and 2 sqrt(2)/3
+PASS: four-link fundamental Schur normalization is exactly 1/81
+PASS: fundamental unit tensor is inside the two-dimensional invariant span
+
+================================================================================================================
+Part 3: 2x2 trivial-window assembly and W44 gates
+================================================================================================================
+P(k=2, window -> 0) = 0.449370834209281
+W44 k=2 anchor        = 0.449370834209281
+delta_zero_window     = +3.885780586188048e-16
+W44 deep limit        = 0.615191992185898
+pair-support limit    = 0.615191992185898
+transfer symmetry residual = 2.776e-17
+pair-swap residual = 2.220e-16
+conjugation-swap residual = 2.776e-17
+transfer min entry = 0.000e+00
+PASS: trivial window channel reproduces the W44 k=2 anchor
+PASS: trivial window channel leaves the W44 deep-limit gate unchanged
+PASS: trivial-window 625-state transfer is symmetric
+PASS: trivial-window 625-state transfer has pair-swap symmetry
+PASS: trivial-window 625-state transfer has conjugation-swap symmetry
+PASS: trivial-window 625-state transfer is entrywise nonnegative
+
+================================================================================================================
+Part 4: fundamental window support and exact obstruction
+================================================================================================================
+B4 fundamental transitions a x 3 -> c = 56
+B4 antifundamental transitions b x 3bar -> d = 56
+diagonal fundamental transitions = 0
+pair-window support entries before Clebsch/Racah weights = 3136
+W44 non-class callable names = []
+context evidence = {'adjoint_specific_wigner': True, 'adjoint_fourfold_projector': True, 'sampled_haar_projector_context': True, 'decomposition_not_clebsch_maps': True}
+Required top-down object:
+  normalized Hom(V_a x V_3, V_c) and Hom(V_b x V_3bar, V_d) maps for all B4 transitions
+  plus their four-corner Racah contraction compatible with the W44 dimension-stripped bond
+PASS: fundamental window support is nonempty, so no zero-selection result is claimed
+PASS: fundamental insertion is non-diagonal on B4 labels
+PASS: W44 builders expose no normalized external-label Clebsch or Racah API
+PASS: adjoint Wigner context is not the required B4 fundamental external-label kernel
+PASS: sampled Haar projector context is not used as deterministic exact W52 input
+PASS: decomposition/counting context is not a normalized Clebsch-map API
+
+================================================================================================================
+Part 5: bounded measurement output
+================================================================================================================
+P(k=2, windowed fundamental) = NOT_REPORTED
+displacement_vs_anchor = NOT_REPORTED
+sign = NOT_REPORTED
+magnitude = NOT_REPORTED
+windowed deep probe = NOT_RUN
+Named obstruction: the remaining top-down window-specific integral is the normalized external-label Clebsch/Racah contraction over B4, not the one-word anchor and not the unit 3 x 3bar invariant.
+PASS: runner does not convert nonempty support into a numeric displacement
+PASS: deep probe is withheld for the same named window-specific integral
+
+================================================================================================================
+Part 6: note hygiene and no-go discipline
+================================================================================================================
+PASS: note delegates status to the independent audit lane
+PASS: note uses markdown links for one-hop authorities
+PASS: context refs avoid tool-local scratch paths
+PASS: note avoids overreach closure phrases
+PASS: note contains visible N1-N8 discipline
+PASS: note reports the fundamental displacement as not reported
+PASS: note includes the reverse-anchor construction row
+PASS: note names the exact remaining integral object
+PASS: note does not use retained/no_go/conditional/clean status labels
+TOTAL: PASS=37, FAIL=0
+
+----- stderr -----
+

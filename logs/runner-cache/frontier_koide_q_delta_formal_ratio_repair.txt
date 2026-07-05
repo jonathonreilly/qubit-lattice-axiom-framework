@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_delta_formal_ratio_repair.py
-runner_sha256: 1a7accd0bd0b519872c2331580b3152f803378cf7d21eb6f186e683a7c4aec4c
+runner_sha256: c49966f809d3a17a18221f39e8a5222147e105db3355e262c7246279c6ef061d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 1.12
 status: ok
 ----- stdout -----
 Koide Q-delta formal ratio repair
@@ -13,15 +13,94 @@ Source-note boundary
 ========================================================================================
   [PASS] note contains required boundary: 'bounded-support formal algebra'
   [PASS] note contains required boundary: 'No Berry-holonomy radian bridge'
-  [PASS] note contains required boundary: 'That exact rational identity is the entire repaired theorem.'
+  [PASS] note contains required boundary: 'That exact rational identity is the entire freestanding content of this'
   [PASS] note contains required boundary: 'This repair withdraws both from the binding claim.'
   [PASS] note contains required boundary: 'The bridge from this formal algebra to physical Koide/Brannen geometry remains a separate open science problem.'
+  [PASS] note contains required boundary: 'Citation firewall (2026-06-18)'
+  [PASS] note contains required boundary: 'Direct citations to this note are allowed only for the definition-level'
+  [PASS] note contains required boundary: 'Decoration attachment (2026-07-01)'
+  [PASS] note contains required boundary: 'KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md'
+  [PASS] note contains required boundary: 'that the locus is selected'
+  [PASS] note contains required boundary: 'never as a selection principle'
+  [PASS] note contains required boundary: 'claim_type_author_hint: decoration'
+  [PASS] note contains required boundary: 'koide_circulant_character_bridge_narrow_theorem_note_2026-05-09'
   [PASS] note avoids overclaim/token: 'uses PDG'
   [PASS] note avoids overclaim/token: 'matches observed'
   [PASS] note avoids overclaim/token: 'observed charged-lepton'
   [PASS] note avoids overclaim/token: 'retained selected-line'
   [PASS] note avoids overclaim/token: 'Berry holonomy in radians is derived'
   [PASS] note avoids overclaim/token: 'equal-sector-norm input is retained'
+  [PASS] note avoids overclaim/token: 'the locus is selected by the framework'
+  [PASS] note avoids overclaim/token: 'derives the selection principle'
+
+========================================================================================
+Direct citation firewall
+========================================================================================
+  [PASS] docs/KOIDE_A1_BRANNEN_PLANCHEREL_IDENTITY_SUPPORT_NOTE_2026-04-25.md:32 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_A1_BRANNEN_PLANCHEREL_IDENTITY_SUPPORT_NOTE_2026-04-25.md:32 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_AMPLITUDE_PHASE_INDEPENDENT_DATA_NARROW_NO_GO_NOTE_2026-06-04.md:131 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_AMPLITUDE_PHASE_INDEPENDENT_DATA_NARROW_NO_GO_NOTE_2026-06-04.md:131 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM_NOTE_2026-05-10.md:325 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM_NOTE_2026-05-10.md:325 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:115 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:115 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:185 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:185 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:213 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:213 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:358 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:358 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:521 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:521 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30.md:30 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30.md:30 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30.md:659 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30.md:659 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md:29 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md:29 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20_NOTE_2026-05-17.md:34 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20_NOTE_2026-05-17.md:34 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_DELTA_DIMENSIONLESS_CLOSURE_VIA_V8_THEOREM_NOTE_2026-04-29.md:24 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_DELTA_DIMENSIONLESS_CLOSURE_VIA_V8_THEOREM_NOTE_2026-04-29.md:24 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md:405 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md:405 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_LIGHTCONE_PRIMITIVE_THEOREM_NOTE_2026-05-10.md:344 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_LIGHTCONE_PRIMITIVE_THEOREM_NOTE_2026-05-10.md:344 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_PHASE_APS_ETA_PARITY_ROUTE_NARROW_THEOREM_NOTE_2026-05-23.md:127 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_PHASE_APS_ETA_PARITY_ROUTE_NARROW_THEOREM_NOTE_2026-05-23.md:127 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md:172 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md:172 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md:63 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md:63 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md:106 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md:106 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:9 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:9 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:142 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:142 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:179 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:179 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:192 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:192 citation avoids forbidden authority language
+  [PASS] docs/RADIAN_BRIDGE_EXPANDED_INVENTORY_BOUNDED_NOTE_2026-05-10_radianexp.md:24 citation is explicitly formal/open/contextual
+  [PASS] docs/RADIAN_BRIDGE_EXPANDED_INVENTORY_BOUNDED_NOTE_2026-05-10_radianexp.md:24 citation avoids forbidden authority language
+  [PASS] docs/RADIAN_BRIDGE_EXPANDED_INVENTORY_BOUNDED_NOTE_2026-05-10_radianexp.md:592 citation is explicitly formal/open/contextual
+  [PASS] docs/RADIAN_BRIDGE_EXPANDED_INVENTORY_BOUNDED_NOTE_2026-05-10_radianexp.md:592 citation avoids forbidden authority language
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:241 citation is explicitly formal/open/contextual
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:241 citation avoids forbidden authority language
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:300 citation is explicitly formal/open/contextual
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:300 citation avoids forbidden authority language
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:410 citation is explicitly formal/open/contextual
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:410 citation avoids forbidden authority language
+  [PASS] docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md:173 citation is explicitly formal/open/contextual
+  [PASS] docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md:173 citation avoids forbidden authority language
+  [PASS] docs/publication/ci3_z3/DERIVATION_ATLAS.md:388 citation is explicitly formal/open/contextual
+  [PASS] docs/publication/ci3_z3/DERIVATION_ATLAS.md:388 citation avoids forbidden authority language
+  [PASS] scripts/frontier_koide_q_delta_linking_relation.py:5 citation is explicitly formal/open/contextual
+  [PASS] scripts/frontier_koide_q_delta_linking_relation.py:5 citation avoids forbidden authority language
+  [PASS] scripts/frontier_koide_q_delta_linking_relation_theorem_note_2026-04-20_hostile_audit_findings.py:23 citation is explicitly formal/open/contextual
+  [PASS] scripts/frontier_koide_q_delta_linking_relation_theorem_note_2026-04-20_hostile_audit_findings.py:23 citation avoids forbidden authority language
+  [PASS] at least one direct citation was scanned (citations=32)
 
 ========================================================================================
 Exact rational identity
@@ -64,7 +143,60 @@ Negative control: alternative Q'_d=(d-1)/d
   [PASS] d=3 is the unique tested coincidence for Q'_d=2/d (Q_alt(3)=2/3)
 
 ========================================================================================
-TOTAL: PASS=39 FAIL=0
+Decoration corollary: exact ratio functional on the parent surface
+========================================================================================
+  [PASS] locus 3a^2=6|b|^2 holds for a^2=2, |b|^2=1
+  [PASS] (C3) on-locus R = 2/3 for a^2=2 (R=2/3)
+  [PASS] (C2) character form matches for a^2=2 (R_char=2/3)
+  [PASS] (C3) companion Delta_3 = R/3 = 2/9 for a^2=2 (R/3=2/9)
+  [PASS] locus 3a^2=6|b|^2 holds for a^2=8, |b|^2=4
+  [PASS] (C3) on-locus R = 2/3 for a^2=8 (R=2/3)
+  [PASS] (C2) character form matches for a^2=8 (R_char=2/3)
+  [PASS] (C3) companion Delta_3 = R/3 = 2/9 for a^2=8 (R/3=2/9)
+  [PASS] locus 3a^2=6|b|^2 holds for a^2=2/9, |b|^2=1/9
+  [PASS] (C3) on-locus R = 2/3 for a^2=2/9 (R=2/3)
+  [PASS] (C2) character form matches for a^2=2/9 (R_char=2/3)
+  [PASS] (C3) companion Delta_3 = R/3 = 2/9 for a^2=2/9 (R/3=2/9)
+  [PASS] off-locus |b|^2=0 gives R = 1/3
+  [PASS] off-locus |b|^2=a^2 gives R = 1
+  [PASS] off-locus |b|^2=a^2 does NOT give Q_3
+  [PASS] (C1) weight law R = 1/3 + (2/3)w at w=0 (R=1/3)
+  [PASS] (C1) weight law R = 1/3 + (2/3)w at w=1/4 (R=1/2)
+  [PASS] (C1) weight law R = 1/3 + (2/3)w at w=1/2 (R=2/3)
+  [PASS] (C1) weight law R = 1/3 + (2/3)w at w=3/4 (R=5/6)
+  [PASS] (C1) weight law R = 1/3 + (2/3)w at w=2 (R=5/3)
+  [PASS] (C1) weight law R = 1/3 + (2/3)w at w=7/5 (R=19/15)
+
+========================================================================================
+Decoration corollary: numeric eigenvalue-triple confirmation
+========================================================================================
+  [PASS] on-locus b=1: eigenvalues are real
+  [PASS] on-locus b=1: sum(lambda) = 3a (s1=4.242640687119285)
+  [PASS] on-locus b=1: sum(lambda^2) = 3a^2 + 6|b|^2 (s2=12.000000000000000)
+  [PASS] on-locus b=1: R matches 1/3 + (2/3)|b|^2/a^2 (R=0.666666666666667)
+  [PASS] on-locus b=1: character form (a_0^2+2|z|^2)/(3a_0^2) matches R
+  [PASS] on-locus b=1: on-locus R = 2/3 (R=0.666666666666667)
+  [PASS] on-locus b=exp(i*0.7)/3: eigenvalues are real
+  [PASS] on-locus b=exp(i*0.7)/3: sum(lambda) = 3a (s1=1.414213562373095)
+  [PASS] on-locus b=exp(i*0.7)/3: sum(lambda^2) = 3a^2 + 6|b|^2 (s2=1.333333333333333)
+  [PASS] on-locus b=exp(i*0.7)/3: R matches 1/3 + (2/3)|b|^2/a^2 (R=0.666666666666667)
+  [PASS] on-locus b=exp(i*0.7)/3: character form (a_0^2+2|z|^2)/(3a_0^2) matches R
+  [PASS] on-locus b=exp(i*0.7)/3: on-locus R = 2/3 (R=0.666666666666667)
+  [PASS] off-locus r_w=1: eigenvalues are real
+  [PASS] off-locus r_w=1: sum(lambda) = 3a (s1=3.000000000000000)
+  [PASS] off-locus r_w=1: sum(lambda^2) = 3a^2 + 6|b|^2 (s2=8.999999999999998)
+  [PASS] off-locus r_w=1: R matches 1/3 + (2/3)|b|^2/a^2 (R=1.000000000000000)
+  [PASS] off-locus r_w=1: character form (a_0^2+2|z|^2)/(3a_0^2) matches R
+  [PASS] off-locus r_w=1: off-locus R != 2/3 (R=1.000000000000000)
+  [PASS] off-locus r_w=0.2: eigenvalues are real
+  [PASS] off-locus r_w=0.2: sum(lambda) = 3a (s1=3.000000000000000)
+  [PASS] off-locus r_w=0.2: sum(lambda^2) = 3a^2 + 6|b|^2 (s2=4.199999999999999)
+  [PASS] off-locus r_w=0.2: R matches 1/3 + (2/3)|b|^2/a^2 (R=0.466666666666667)
+  [PASS] off-locus r_w=0.2: character form (a_0^2+2|z|^2)/(3a_0^2) matches R
+  [PASS] off-locus r_w=0.2: off-locus R != 2/3 (R=0.466666666666667)
+
+========================================================================================
+TOTAL: PASS=159 FAIL=0
 ========================================================================================
 
 ----- stderr -----

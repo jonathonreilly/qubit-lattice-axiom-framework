@@ -181,7 +181,7 @@ substep-4 content this synthesis needs.
 | Premise | Content | Where it enters | Tier |
 |---|---|---|---|
 | spin-statistics support | Bosonic second quantization forces an infinite-dimensional per-site Fock tower | matter-statistics clause (Grassmann forcing Steps 2-4) | support-tier input of the substep-1 note; its finite trace-obstruction core is computed by the runner |
-| kinetic-class premise | Declared kinetic class: naive-Dirac kinetic form on nearest-neighbor links + site-local spin diagonalization | kinetic-form clause (scalarization condition) | declared premise of the substep-2 note; load-bearing (runner check 18 exhibits the 2-component alternative it excludes) |
+| kinetic-class / P-FLUX supply line | The licensed nearest-neighbor bilinear surface collapses to two flux classes; P-SD is discharged on the flux-`-1` branch; P-KIN is reduced to the one-bit P-FLUX selector `phi = -1` | kinetic-form clause (scalarization condition) | source-side supply line as of 2026-06-12: `STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md` plus the conditional `P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md`; current closure remains bounded/conditional until supplier audits and FSB-K resolve |
 | boundary-holonomy convention | Boundary holonomy convention (APBC vs PBC; wrap signs) | corner-structure clause (exactness of corner zero modes at finite L) | framework convention (runner check 19 exposes it) |
 | labeling-convention premise | Labeling convention fixing the hw=1 -> `{e, μ, τ}` bijection | species-labeling no-go clause only | external accepted-premise convention; provably not derivable from the minimal axiom baseline (no-go note) |
 
@@ -329,18 +329,26 @@ the bounded boundary in the same stdout as the PASS lines.
 These are the exact boundaries of the bounded theorem; none of them is
 hidden inside the composition:
 
-1. **Kinetic-class premise.** Substep 2 proves uniqueness of
-   the Kawamoto-Smit gauge class *within* the declared kinetic class
-   (naive-Dirac kinetic form + site-local spin diagonalization).
-   Deriving the kinetic class itself from Quantum + Lattice — e.g. excluding
-   non-nearest-neighbor kinetic operators or 2-component realizations
-   that bypass spin diagonalization — is open. The runner makes this
-   residual concrete: the 2-component naive operator is also
-   Quantum + Lattice-compatible and carries 16 corner modes (check 18). The
-   exclusion of that alternative currently routes through the
-   substep-1 single-mode surface (one Grassmann mode per dim-2 site
-   module leaves no room for a 2-component spinor per site), which is
-   itself bounded on the spin-statistics support input.
+1. **Kinetic-class / P-FLUX supply line.** Substep 2 proves
+   uniqueness of the Kawamoto-Smit gauge class within the local phase
+   class. The broader kinetic-class residual has been narrowed on main:
+   `STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`
+   collapses the licensed nearest-neighbor bilinear surface to exactly
+   two flux classes and discharges P-SD as an absorbing-frame theorem
+   on the `K1` branch; P-KIN's surviving content is the one-bit
+   P-FLUX selector `phi = -1`. The conditional composer
+   `P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md`
+   selects that bit only if FSB-K reaches retained grade, using the
+   retained `(Z)` kernel-geometry certificate. Therefore this residual
+   is sharper than the old broad "declared kinetic class" premise, but
+   it is not vanished at current grades. Supplier rows and the FSB-K
+   condition remain independently audit-owned. The prior
+   two-component-exclusion narrowing remains compatible but is no
+   longer the whole story: the live residual is the P-FLUX cascade.
+   Source-only sync verifier:
+   `scripts/staggered_dirac_kinetic_supply_line_sync_2026_06_12.py`;
+   cache:
+   `logs/runner-cache/staggered_dirac_kinetic_supply_line_sync_2026_06_12.txt`.
 2. **Spin-statistics support tier.** Substep 1's bosonic exclusion rests on the
    spin-statistics support input. The runner computes its finite
    core (the CCR trace obstruction), but the full spin-statistics statement remains

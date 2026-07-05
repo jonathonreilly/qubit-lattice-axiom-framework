@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_flagship_boundary_contract.py
+runner_sha256: 9852c60d991a5258082717f055e447a802b9cd6fceb3e6b688b3fc448fed743f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+==============================================================================
+YT FLAGSHIP BOUNDARY CONTRACT VERIFIER
+==============================================================================
+[PASS] docs/YT_FLAGSHIP_BOUNDARY_NOTE.md exists
+[PASS] docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md exists
+[PASS] docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md exists
+[PASS] docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md exists
+[PASS] docs/YT_EXPLICIT_SYSTEMATIC_BUDGET_NOTE.md exists
+[PASS] docs/YT_BOUNDARY_THEOREM.md exists
+
+Part 1: graph and authority registration
+[PASS] flagship note registers this primary runner
+[PASS] flagship note declares supporting-boundary role
+[PASS] flagship note links authority surface YT_ZERO_IMPORT_AUTHORITY_NOTE.md
+[PASS] flagship note links authority surface YT_WARD_IDENTITY_DERIVATION_THEOREM.md
+[PASS] flagship note links authority surface YT_COLOR_PROJECTION_CORRECTION_NOTE.md
+[PASS] flagship note links authority surface YT_EXPLICIT_SYSTEMATIC_BUDGET_NOTE.md
+
+Part 2: current quantitative surface
+[PASS] flagship y_t(v) central value is 0.9176: 0.9176
+[PASS] flagship 3-loop pole-mass central value is 173.10 GeV: 173.1
+[PASS] flagship note carries retained 2-loop support value 172.57 GeV
+[PASS] zero-import authority agrees on y_t(v)=0.9176
+[PASS] zero-import authority agrees on 172.57/173.10 GeV mass pair
+[PASS] flagship note states standard-method residual budget about 1.95%
+[PASS] zero-import authority carries same standard-method residual budget
+
+Part 3: exact/support ingredients are present
+[PASS] exact section contains Ward ratio identity
+[PASS] exact section contains same-surface alpha_s/g_s input
+[PASS] exact section contains color projection sqrt(8/9)
+[PASS] exact section contains hierarchy/electroweak matching scale
+[PASS] Ward authority is present and labels independent audit status
+[PASS] color-projection authority is present and registered as additional primary runner
+
+Part 4: limitation and non-claim firewall
+[PASS] limited section scopes caveat to standard-method route
+[PASS] limited section refuses framework-internal theorem status
+[PASS] cannot-claim section forbids fully-retained UV-to-IR closure
+[PASS] cannot-claim section forbids native continuum-limit theorem claim
+[PASS] cannot-claim section forbids direct-lattice y_t(v) bypass claim
+[PASS] cannot-claim section preserves Schur bridge rather than discarding it
+[PASS] zero-import authority also refuses fully retained theorem-grade UV-to-IR closure
+
+Part 5: bridge cross-check budget alignment
+[PASS] flagship note preserves conservative Schur budget 1.2147511%
+[PASS] flagship note preserves support-tight Schur budget 0.75500635%
+[PASS] budget note preserves conservative Schur budget 1.2147511%
+[PASS] budget note preserves support-tight Schur budget 0.75500635%
+[PASS] budget note says Schur budget is not live primary classification
+[PASS] flagship note classifies Schur route as independent cross-check
+
+Part 6: boundary theorem stays support-only
+[PASS] boundary theorem explicitly does not close renormalized y_t lane by itself
+[PASS] boundary theorem keeps exact subderivation status
+[PASS] boundary theorem states full low-energy transfer still not one promoted closure theorem
+
+Part 7: no hidden observed-input promotion
+[PASS] forbidden phrase appears only inside the cannot-claim firewall: 'fully retained from `M_Pl` to `v`.'
+[PASS] forbidden phrase appears only inside the cannot-claim firewall: 'framework-internal continuum-limit theorem on this exact composite surface has been proved.'
+[PASS] forbidden phrase appears only inside the cannot-claim firewall: 'direct lattice extraction already delivers `y_t(v)` on accessible lattices.'
+[PASS] paper-safe wording keeps zero external SM observables on framework side
+[PASS] paper-safe wording calls current values central values, not retained closure
+
+==============================================================================
+RESULT: PASS=46 FAIL=0
+==============================================================================
+
+----- stderr -----
+

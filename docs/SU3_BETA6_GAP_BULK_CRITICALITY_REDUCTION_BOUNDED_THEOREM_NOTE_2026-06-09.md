@@ -1,13 +1,29 @@
-# SU(3) Beta=6 Lattice-Units Gap Reduction Diagnostic
+# SU(3) Beta=6 Lattice-Units Gap Conditional Reduction Diagnostic
 
 **Date:** 2026-06-09
-**Claim type:** bounded_theorem / conditional fixed-lattice reduction
+**Claim type:** open_gate / conditional fixed-lattice reduction
 **Status authority:** independent audit lane only. This source note writes no
 audit verdict and does not retag any ledger row.
 **Primary runner:**
 [`scripts/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.py`](../scripts/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.py)
 **Runner cache:**
 [`logs/runner-cache/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.txt`](../logs/runner-cache/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.txt)
+
+## 2026-06-12 audit firewall: reduction, not beta=6 gap theorem
+
+The audited missing bridge is the actual physics wall: this packet does not
+prove the no-second-order-bulk-critical-point premise on the 4D `SU(3)`
+fundamental-Wilson axis through `beta=6`, nor does it supply a retained
+small-beta transfer-matrix/positive-gap bridge all the way to that point. It
+also does not make the framework's Lattice axiom supply a Wilson action,
+coupling convention, transfer matrix, or all-coupling confinement theorem.
+
+The source status is therefore **open-gate conditional reduction**. The
+runner-checked content is useful but narrow: if the named no-critical-point
+premise and standard fixed-lattice Wilson/gap setting are supplied, then a
+zero lattice-units gap at `beta=6` would require a divergent correlation
+length, so the supplied premise implies a positive fixed-lattice gap. This
+firewall adds no new axiom, no Tier-A admission, and no audit-status change.
 
 ## Summary
 
@@ -129,3 +145,50 @@ positive.
 The open item is exactly the proof of that no-critical-point premise. Comparator
 evidence can motivate the premise, but it does not turn the conditional result
 into an unconditional one.
+
+## 2026-06-15 audit-unlock residual certificate
+
+This row is re-opened only as a conditional reduction. The runner supplies
+bounded one-plaquette, strong-coupling, positive-kernel toy, and comparator
+guardrail checks; those are diagnostics, not a proof of the physical Wilson
+axis gap.
+
+The exact missing object is a framework-native theorem ruling out a
+second-order bulk critical point on the relevant 4D SU(3) Wilson axis up to
+`beta = 6`, or an equivalent transfer-matrix/gap bridge with the same scope.
+Until that theorem exists, this packet remains an open-gate reduction and
+does not claim a beta=6 gap. No new lattice fact, external simulation result,
+or audit status is introduced here.
+
+## 2026-06-16 transfer-kernel dependency-edge repair
+
+The latest audit also named the standard fixed-lattice Wilson
+transfer-matrix/gap setting as part of the restricted packet boundary. This
+source-side repair adds the already audited-clean, retained-bounded in-repo
+authorities that carry the Wilson transfer-kernel positivity/RP side:
+
+- [`WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md`](WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md)
+  proves the SU(3) Wilson temporal-gauge transfer kernel is positive
+  semidefinite for `beta >= 0` as the gauge-kernel positivity half.
+- [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+  supplies the bounded Wilson-plaquette temporal-gauge RP bridge for the
+  gauge-half norm-square application.
+
+These dependencies close only the source-graph route to the Wilson
+transfer-kernel/RP setting used by the conditional reduction. They do not prove
+the no-second-order-bulk-critical-point premise, do not propagate a small-beta
+gap to `beta=6`, and do not turn this row into an unconditional gap theorem.
+
+## 2026-06-17 restricted packet verifier
+
+The re-audit packet is now pinned by
+[`scripts/su3_beta6_gap_reaudit_packet_verifier_2026_06_17.py`](../scripts/su3_beta6_gap_reaudit_packet_verifier_2026_06_17.py),
+with cached output at
+[`logs/runner-cache/su3_beta6_gap_reaudit_packet_verifier_2026_06_17.txt`](../logs/runner-cache/su3_beta6_gap_reaudit_packet_verifier_2026_06_17.txt).
+
+The verifier checks that this parent reduction, the explicit-constant
+analyticity floor, and the Wilson transfer-kernel/RP support notes remain
+SHA-fresh and keep their non-promotion boundary language. It deliberately
+packages only bounded source support: it does not prove the missing
+no-second-order-bulk-criticality theorem on the remaining window, does not
+claim a beta=6 gap, and does not retag any ledger row.

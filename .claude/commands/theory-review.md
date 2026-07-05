@@ -32,6 +32,10 @@ saving compute on ill-posed questions.
   structural OS0 kinetic-form isotropy `c_t = c_s` and not treated as dynamics,
   a Lorentz-closure theorem, scale, spacing-ratio theorem, selector, or
   empirical input?
+- If it uses the registered `realized_state_primitive`, is it limited to
+  pointwise evaluation at the supplied law-admissible realized state --
+  no averaging over alternatives, no typicality or genericity predicate, and
+  no state-contingent number quoted as derived (the counterfactual test)?
 - Any other premise must be a retained-grade theorem, a Tier-A admission
   (which bounds the result), or an explicitly flagged new import requiring
   user approval. Does it smuggle in external assumptions instead?
@@ -124,3 +128,18 @@ PROCEED / REVISE / REJECT
   framework or just the setup?
 - Be constructive: REVISE with specific guidance beats REJECT without an
   alternative.
+
+## Execution Mechanism (standing — 2026-06-12)
+
+All execution under this command runs through the workhorse split (see the
+`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
+line-by-line, and lands; the strongest configured text worker via `codex exec`
+executes bounded note/runner drafting, scratch computation, structured
+extraction, and panel lens execution (lenses run `-s read-only`; verdict
+synthesis is never delegated).
+No-go planning discipline applies: read the actual no-go note's primary text
+and plan against its exact audited scope, never its title or a secondary
+summary; if work reveals no-go language broader than its audited
+`claim_scope`, queue a narrowing repair PR. Where this command references
+review-loop or audit steps, those lanes are owner-operated (standing rule
+2026-06-11): prepare the PR/review surface and hand off; never run them.

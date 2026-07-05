@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py
-runner_sha256: a1c030f9024835a455b1771b52306de02be5279726d226d37040a08a4d266fdf
+runner_sha256: ddcddaa49c97e53ade486b9d6e6e69d8f465af6c78ff51657b75ff35ffe20c8e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.80
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -11,41 +11,59 @@ Audit companion (exact-symbolic) for
 G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17
 Goal: sympy verification of g_2(v) bounded interval from u_0 in [0.96, 0.98]
 Inputs (cited):
-  (X1) u_0(SU(2)) in [96/100, 98/100]   ... NAMED EXTERNAL ADMISSION
+  (X1) u_0(SU(2)) in [96/100, 98/100]   ... native beta=16 one-plaquette bridge
   (X2) b_2 = 19/6                        ... retained_bounded
-  (X3) Cl(3) bivector -> SU(2)           ... retained_bounded
-  (X4) g_2^2 |_lattice = 1/4 -> beta=16  ... retained_bounded
+  (X3) Cl(3) bivector -> SU(2)           ... retained
+  (X4) 1/alpha_2^bare |_lattice = 16 pi  ... retained_bounded one-hop anchor
   (X5) alpha_2^tadpole = alpha_bare/u_0^2 ... retained
-  (X6) ln(M_Pl/v) = 38.44                ... NAMED EXTERNAL ADMISSION
+  (X6) ln(M_Pl/v_cand) = 38.442..., L=38.44 rounded ... framework bridge
+  (X7) one-loop inverse-alpha integration ... framework bridge
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
-Part 0: symbolic setup (positive real symbols)
+Part 0: source-packet dependency repair checks
+----------------------------------------------------------------------------------------
+  [PASS (A)] source note exists  (docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md)
+  [PASS (A)] (X4) source note cites the retained_bounded SU2 lattice-alpha anchor
+  [PASS (A)] (X4) source note does not leave YT_EW as a load-bearing markdown edge
+  [PASS (A)] (X4) source note does not leave G_BARE_CANONICAL as a load-bearing markdown edge
+  [PASS (A)] (X4) source note states the coupling input is not rederived here
+  [PASS (A)] (X6/X7) source note cites the framework-local scale/RGE bridge
+  [PASS (A)] (X1) source note cites the native SU2 beta=16 u0 interval bridge
+  [PASS (A)] (X1) source note says X1 is not a row-local literature admission
+  [PASS (A)] (X6) bridge includes direct ruler/current-v scale-log hardening
+  [PASS (A)] (X7) source note no longer registers one-loop RGE as a row-local named admission
+  [PASS (A)] (X1) source note no longer claims [0.96,0.98] brackets 0.988
+  [PASS (A)] (X1) source note says 0.988 is outside the parent interval
+  [PASS (A)] (X1) source note keeps 0.988 non-load-bearing
+
+----------------------------------------------------------------------------------------
+Part 1: symbolic setup (positive real symbols)
 ----------------------------------------------------------------------------------------
   symbolic u_0 = u_0
   symbolic b_2 = b_2
-  symbolic L = ln(M_Pl/v) = L
+  symbolic L = ln(M_Pl/v_cand) rounded bridge readout = L
 
 ----------------------------------------------------------------------------------------
-Part 1: lattice-scale bare alpha and tadpole-improved 1/alpha
+Part 2: lattice-scale bare alpha and tadpole-improved 1/alpha
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (X4) 1/alpha_bare |_lattice = 16 pi   (from g_2^2|_lattice = 1/4)  (1/alpha_bare = 16*pi)
+  [PASS (A)] (X4) 1/alpha_bare |_lattice = 16 pi   (from one-hop lattice-alpha anchor)  (1/alpha_bare = 16*pi)
   [PASS (A)] (X4+X5 conv) beta = 2N/g_bare^2 = 16 at N=2, g_bare^2=1/4  (beta = 16)
   [PASS (A)] (X5) 1/alpha_2^tadpole |_lattice = 16 pi u_0^2  (vertex-power identity alpha_tadpole = alpha_bare/u_0^2)
 
 ----------------------------------------------------------------------------------------
-Part 2: 1-loop running from M_Pl to v (Peskin-Schroeder, b>0 = asymptotic freedom)
+Part 3: 1-loop running from M_Pl to v_cand (bridged inverse-alpha law, b>0 = asymptotic freedom)
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (P1) 1/alpha_2(v) = 16 pi u_0^2 - (b_2/(2 pi)) * L (1-loop RGE substitution)  (symbolic identity)
+  [PASS (A)] (P1) 1/alpha_2(v_cand) = 16 pi u_0^2 - (b_2/(2 pi)) * L (X7 bridge substitution)  (symbolic identity)
   [PASS (A)] (P2) g_2(v) = sqrt(4 pi / (16 pi u_0^2 - (b_2/(2 pi)) L)) symbolic closed form  (square root of inverse 1/alpha_2(v))
 
 ----------------------------------------------------------------------------------------
-Part 3: monotonicity of g_2(v) in u_0 over the input interval
+Part 4: monotonicity of g_2(v) in u_0 over the input interval
 ----------------------------------------------------------------------------------------
   [PASS (A)] (M1) d/du_0 [1/alpha_2(v)] = 32 pi u_0 (positive for u_0 > 0)  (d/du_0 = 32*pi*u_0)
 
 ----------------------------------------------------------------------------------------
-Part 4: framework instance: u_0 in [96/100, 98/100], b_2 = 19/6, L = 3844/100
+Part 5: framework instance: u_0 in [96/100, 98/100], b_2 = 19/6, L = 3844/100
 ----------------------------------------------------------------------------------------
   u_lo = 24/25 = 0.96
   u_hi = 49/50 = 0.98
@@ -58,9 +76,9 @@ Part 4: framework instance: u_0 in [96/100, 98/100], b_2 = 19/6, L = 3844/100
   g_2(v) at u_0 = 0.98 (LOWER bound of g_2):  0.659392836186702251623371336239
 
 ----------------------------------------------------------------------------------------
-Part 5: explicit bounded interval g_2(v) in [g_lo, g_hi]
+Part 6: explicit bounded interval g_2(v) in [g_lo, g_hi]
 ----------------------------------------------------------------------------------------
-  RESULT: g_2(v=246 GeV) in [g_lo, g_hi]
+  RESULT: g_2(v_cand approx 246.28 GeV) in [g_lo, g_hi]
           g_lo = 0.659392836186702251623371336239
           g_hi = 0.682834304553706874431549150259
           width = 0.0234414683670046228081778140197
@@ -71,30 +89,39 @@ Part 5: explicit bounded interval g_2(v) in [g_lo, g_hi]
   [PASS (A)] (I5) g_hi < 0.75 (loose physical sanity bound)  (g_hi = 0.6828343046)
 
 ----------------------------------------------------------------------------------------
-Part 6: corollaries
+Part 6b: weak-coupling 0.988 comparator is outside parent X1 interval
+----------------------------------------------------------------------------------------
+  weak-coupling comparator u_weak = 247/250 = 0.988
+  g_2(v) at u_weak = 0.988 (context only): 0.650546388470004875964435583584
+  [PASS (A)] (U1) weak-coupling readout 0.988 lies above the parent upper endpoint 0.98  (u_weak - u_hi = 0.008000)
+  [PASS (A)] (U2) g_2 at u_weak is below g_lo, hence outside the certified interval  (g_2(u_weak) - g_lo = -0.00884644771670)
+  [PASS (A)] (U3) 0.988 comparator is not used as an endpoint  (load-bearing endpoints remain 96/100 and 98/100)
+
+----------------------------------------------------------------------------------------
+Part 7: corollaries
 ----------------------------------------------------------------------------------------
   [PASS (A)] (C1) interval width is finite and positive (well-formed bounded interval)  (width = 0.0234414683670046228081778140197)
   arithmetic midpoint (NOT a prediction): 0.671113570370204563027460243249
   [PASS (A)] (C2) midpoint of g_2 interval is between g_lo and g_hi  (midpoint = 0.671113570370)
-  [PASS (A)] (C3) g_2|_lattice = sqrt(1/4) = 1/2 (retained-bounded primitive)  (g_2|_lattice = 1/2)
+  [PASS (A)] (C3) g_2|_lattice = sqrt(1/4) = 1/2 (one-hop anchor corollary)  (g_2|_lattice = 1/2)
   [PASS (A)] (C3) interval lies STRICTLY ABOVE the bare lattice value 1/2  (g_lo - 0.5 = 0.159392836187)
   counterfactual unimproved g_2(v) at u_0 = 1: 0.637795343668374110474143570554
   [PASS (A)] (C4) counterfactual u_0=1 g_2(v) differs from improved interval (distinct)  (unimproved g_2 = 0.6377953437)
 
 ----------------------------------------------------------------------------------------
-Part 7: forbidden-import audit
+Part 8: forbidden-import audit
 ----------------------------------------------------------------------------------------
   context-only (NOT consumed): PDG g_2(v) obs = 0.646000000000000
-  [PASS (A)] (F1) interval brackets observed g_2(v)=0.646 within < 6% deviation of g_lo  (|g_lo - 0.646|/0.646 = 0.0207)
+  context-only (NOT a PASS gate): |g_lo - 0.646|/0.646 = 0.0207
 
 ----------------------------------------------------------------------------------------
 Summary
 ----------------------------------------------------------------------------------------
-  PASS = 18
+  PASS = 33
   FAIL = 0
-  g_2(v=246 GeV) in [0.659392836186702, 0.682834304553707]
+  g_2(v_cand approx 246.28 GeV) in [0.659392836186702, 0.682834304553707]
   interval width = 0.0234414683670046
-  PASS=18 FAIL=0
+  PASS=33 FAIL=0
 
 ----- stderr -----
 

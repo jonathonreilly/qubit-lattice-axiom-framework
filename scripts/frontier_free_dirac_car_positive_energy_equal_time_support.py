@@ -5,6 +5,11 @@ This runner verifies only the finite algebra stated in
 docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md.
 It does not select CAR from the framework, prove spacelike microcausality, or
 close an OS/Wightman field-construction residual.
+
+The spinor completeness check uses orthonormal Hamiltonian eigenspinors from
+numpy.linalg.eigh. A covariant 2E-normalized spin-sum route needs the usual
+compensating 1/(2E) field-expansion weight before producing an equal-time
+identity.
 """
 
 from __future__ import annotations
@@ -62,6 +67,11 @@ def main() -> int:
         and v_modes.shape[1] == 2,
         f"spectrum +/-E={energy:.3f}; two u modes and two v modes",
     )
+    check(
+        "spinor_columns_are_orthonormal_eigh_modes",
+        np.allclose(eigvecs.conj().T @ eigvecs, np.eye(4), atol=1e-12),
+        "eigh returns an orthonormal Hamiltonian eigenbasis",
+    )
 
     one_mode_e = 1.0
     n_a = np.diag([0.0, 1.0, 0.0, 1.0])
@@ -93,7 +103,27 @@ def main() -> int:
     check(
         "spinor_completeness_gives_equal_time_CAR_matrix",
         np.allclose(completeness, np.eye(4)),
-        "sum_s(u u^dag + v v^dag)=I_4",
+        "orthonormal projectors: sum_s(u u^dag + v v^dag)=I_4",
+    )
+    pos_projector = u_modes @ u_modes.conj().T
+    neg_projector = v_modes @ v_modes.conj().T
+    check(
+        "positive_negative_energy_projectors_are_orthogonal",
+        np.allclose(pos_projector @ neg_projector, np.zeros((4, 4)), atol=1e-12)
+        and np.allclose(pos_projector @ pos_projector, pos_projector, atol=1e-12)
+        and np.allclose(neg_projector @ neg_projector, neg_projector, atol=1e-12),
+        "P_+P_-=0 and P_+^2=P_+, P_-^2=P_-",
+    )
+
+    u_2e = np.sqrt(2.0 * energy) * u_modes
+    v_2e = np.sqrt(2.0 * energy) * v_modes
+    completeness_2e_unweighted = u_2e @ u_2e.conj().T + v_2e @ v_2e.conj().T
+    completeness_2e_weighted = completeness_2e_unweighted / (2.0 * energy)
+    check(
+        "twoE_normalized_spinors_need_field_expansion_weight",
+        not np.allclose(completeness_2e_unweighted, np.eye(4))
+        and np.allclose(completeness_2e_weighted, np.eye(4)),
+        "2E-normalized unweighted sum is 2E I_4; (1/(2E)) weighted sum is I_4",
     )
 
     bose_sign_matrix = u_modes @ u_modes.conj().T - v_modes @ v_modes.conj().T
@@ -140,6 +170,15 @@ def main() -> int:
         and "partner chirality is physically supplied" in note_text
         and "the framework derives the CAR/spin-statistics selection" in note_text,
         "guardrails keep CAR selection, partner chirality, and spacelike causality open",
+    )
+    check(
+        "source_note_declares_normalization_bridge",
+        "normalized" in note_text
+        and "projector convention" in note_text
+        and "2E" in note_text
+        and "1/(2E)" in note_text
+        and "not asserted to be `I_4`" in note_text,
+        "orthonormal and covariant-spinor normalization routes are separated",
     )
 
     print()

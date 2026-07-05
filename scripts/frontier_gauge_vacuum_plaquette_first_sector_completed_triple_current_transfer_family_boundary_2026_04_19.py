@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Audited current `beta = 6` `spatial_pair` witness family does not realize the
-completed first-sector triple `Z_min` exactly.
+Boundary-face diagnostic for the current `beta = 6` `spatial_pair` witness
+family against the completed first-sector triple `Z_min`.
 
 Boundary refinement of the explicit completed triple:
 
@@ -10,14 +10,16 @@ Boundary refinement of the explicit completed triple:
   2. the live first three-sample environment evaluator route already records
      a current explicit `spatial_pair` witness family parameterised by the
      four scalars `(tau_transfer, tau_boundary, linear_decay, asym_decay)`;
-  3. on the audited parameter box `tau_transfer in [10^-4, 5e-2]`,
-     `tau_boundary in [0.5, 4.0]`, `asym_decay in [10^-8, 10^-4]`, with the
-     interior `linear_decay` free, the best one-parameter scaled fit
-     `c * Zhat_best` to the explicit triple `Z_min` is driven onto three of
-     the four box edges and still leaves a strictly positive Euclidean gap
+  3. the retained boundary-face reference fit fixes
+     `tau_transfer = 10^-4`, `tau_boundary = 4.0`, and
+     `asym_decay = 10^-8`, then optimizes the remaining `linear_decay`
+     parameter and overall scalar `c`;
+  4. on that boundary-face diagnostic, the best scaled fit
+     `c * Zhat_best` to the explicit triple `Z_min` leaves a positive
+     Euclidean gap
      `||c_best Zhat_best - Z_min||_2 = 0.007578536496...`;
-  4. so the current explicit witness family is only a boundary ansatz, not the
-     missing exact realisation of `Z_min`.
+  5. the parent note's binding no-go is the separate finite 1440-point
+     sampled-grid statement pinned below, not a continuous-family exclusion.
 
 Scope (deliberately scoped, see GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_COMPLETED
 _TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md):
@@ -27,15 +29,16 @@ _TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md):
   - the runner does NOT attempt to derive `Z_min` from the framework — it
     consumes the explicit `Z_min` already produced by the rank-one transfer
     realisation theorem (2026-04-19) and the upstream completion theorem;
-  - the runner verifies the explicit numerical fit reported in the note's
-    "Bottom line" section (Zhat_best, c_best, gap norm, active boundary
-    edges) and the named consequence "Z_min is still not realised exactly".
+  - the runner reproduces its retained boundary-face reference fit
+    (Zhat_best, c_best, gap norm, active boundary edges) as a diagnostic and
+    separately checks that the parent note's repaired sampled-grid bottom-line
+    and finite sampled-grid no-go conclusion are recorded.
 
 Audit-class self-classification: this is a Class C / structural-support
-runner. It witnesses one bounded, deterministic, single-precision-stable
-boundary statement about a specific witness family; it does not advance the
-underlying open question (the actual framework-point Wilson environment
-packet realising `Z_min`).
+runner. It witnesses one deterministic, single-precision-stable boundary-face
+diagnostic plus source-note pins for the finite sampled-grid no-go. It does
+not advance the underlying open question (the actual framework-point Wilson
+environment packet realising `Z_min`).
 """
 
 from __future__ import annotations
@@ -59,8 +62,8 @@ from frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_ro
 ROOT = Path(__file__).resolve().parents[1]
 NMAX = 5
 
-# Audited parameter box for the current explicit `spatial_pair` witness family.
-# Edges in this dictionary are the published audited bounds; the runner finds
+# Recorded parameter box for the current explicit `spatial_pair` witness family.
+# Edges in this dictionary are the note's recorded bounds; the runner finds
 # the best `linear_decay` on the interior at the most favourable corner of the
 # remaining three edges (lower tau_transfer, upper tau_boundary, lower
 # asym_decay). These boundary values are exactly the ones reported in the
@@ -69,7 +72,11 @@ TAU_TRANSFER_LOWER = 1.0e-4
 TAU_BOUNDARY_UPPER = 4.0
 ASYM_DECAY_LOWER = 1.0e-8
 
-# Note's published numerical witness values (must be reproduced).
+# Reference witness values (must be reproduced). Z_min is still published in
+# the parent note; the boundary-face fit values (Zhat_best, c_best, gap norm)
+# are retained here as this runner's reference constants — the parent note's
+# repaired sampled-grid claim records that older boundary-face fit only as a
+# non-load-bearing remark.
 NOTE_ZMIN = (0.135165279562, 0.374012880009, 0.543843858544)
 NOTE_ZHAT = (0.280527830070, 0.789850309412, 1.120725632470)
 NOTE_C_BEST = 0.481383963846
@@ -267,19 +274,20 @@ def main() -> int:
     # ===== Theorem-level checks (verify the note's published claims) =====
 
     check(
-        "the parent note records the published numerical bottom-line "
-        "(Z_min triple, Zhat_best vector, c_best, gap norm)",
+        "the parent note records the current sampled-grid bottom-line "
+        "(Z^min triple, 1440-point minimum sampled gap, argmin grid point)",
         all(
             tok in note
             for tok in (
                 "0.135165279562",
                 "0.374012880009",
                 "0.543843858544",
-                "0.280527830070",
-                "0.789850309412",
-                "1.120725632470",
-                "0.481383963846",
-                "0.007578536496",
+                "1440",
+                "7.791551e-03",
+                "tau_transfer = 1e-4",
+                "tau_boundary = 4.0",
+                "asym_decay = 1e-8",
+                "linear_decay = 0.3214",
             )
         ),
         "all explicit numbers found verbatim in the note text",
@@ -290,11 +298,12 @@ def main() -> int:
         ("completed sample triple" in completion_note) and ("a^min" in completion_note),
     )
     check(
-        "the spatial-environment transfer theorem note pins the abstract "
-        "object the `spatial_pair` family realises (positive conjugation-"
-        "symmetric boundary state hit by powers of S_beta^env)",
-        "S_beta^env" in transfer_note
-        and "positive conjugation-symmetric boundary state" in transfer_note,
+        "the spatial-environment transfer note pins the abstract "
+        "transfer-amplitude shape the `spatial_pair` family realises "
+        "(positive conjugation-symmetric boundary vector, with the full "
+        "(S_beta^env)^(L_perp-1) identity recorded as the unclaimed target)",
+        "(S_beta^env)^(L_perp-1)" in transfer_note
+        and "positive conjugation-symmetric boundary vector" in transfer_note,
     )
     check(
         "reproduced Z_min from the rank-one transfer realisation matches the "
@@ -303,27 +312,27 @@ def main() -> int:
         f"||Z_min reproduced - Z_min note||={z_min_gap:.3e}",
     )
     check(
-        "the best scaled-fit `Zhat_best` reproduces the note's published "
-        "vector to 1e-6",
+        "the best scaled-fit `Zhat_best` reproduces this runner's retained "
+        "boundary-face reference vector to 1e-6",
         all(
             abs(zhat_best[i] - NOTE_ZHAT[i]) < 1.0e-6 for i in range(3)
         ),
         f"Zhat_best={np.array2string(zhat_best, precision=10)}",
     )
     check(
-        "the optimal overall scale `c_best` reproduces the note's published "
-        "value to 1e-6",
+        "the optimal overall scale `c_best` reproduces this runner's retained "
+        "boundary-face reference value to 1e-6",
         abs(c_best - NOTE_C_BEST) < 1.0e-6,
         f"c_best={c_best:.12f}",
     )
     check(
-        "the Euclidean gap `||c_best Zhat_best - Z_min||_2` reproduces the "
-        "note's published value to 1e-9",
+        "the Euclidean gap `||c_best Zhat_best - Z_min||_2` reproduces this "
+        "runner's retained boundary-face reference value to 1e-9",
         abs(gap_best - NOTE_GAP_NORM) < 1.0e-9,
         f"||c*Zhat - Z_min||={gap_best:.12f}",
     )
     check(
-        "the audited corner is a strict local minimum: relaxing any of the "
+        "the retained boundary corner is a strict local minimum: relaxing any of the "
         "three active edges into the interior strictly increases the gap",
         interior_step_tau_transfer > base_gap
         and interior_step_tau_boundary > base_gap
@@ -332,33 +341,33 @@ def main() -> int:
         f"{interior_step_tau_boundary:.6e},{interior_step_asym_decay:.6e})",
     )
     check(
-        "the best audited scaled fit therefore does NOT realise Z_min "
-        "exactly: the gap norm is strictly bounded away from zero "
+        "the retained boundary-face reference fit does not realize Z_min "
+        "exactly: the diagnostic gap is strictly bounded away from zero "
         "(>= 1e-3)",
         gap_best > 1.0e-3,
         f"||c*Zhat - Z_min|| = {gap_best:.12f} > 1e-3",
     )
     check(
-        "the note's prose conclusion `still not realized exactly inside the "
-        "audited current explicit witness family` is therefore numerically "
-        "supported",
-        "still not realized exactly" in note
-        and "best audited scaled fit" in note,
+        "the note's prose conclusion (`no sampled grid point` `realizes the "
+        "completed first-sector triple`, a `finite sampled-grid no-go`) is "
+        "recorded with the repaired sampled-grid scope",
+        "no sampled grid point" in note
+        and "realizes the completed first-sector triple" in note
+        and "finite sampled-grid no-go" in note,
     )
 
     print()
     print("=" * 116)
     print("RESULT")
     print("=" * 116)
-    print("  Boundary refinement (current explicit `spatial_pair` family is only an ansatz):")
-    print("    - the audited parameter box's best one-parameter scaled fit lands on")
-    print("      three of four edges (lower tau_transfer, upper tau_boundary, lower")
-    print("      asym_decay) with one interior optimum at linear_decay ~= 0.323966;")
-    print(f"    - the residual gap ||c_best Zhat_best - Z_min||_2 = {gap_best:.12e}")
-    print("      is strictly positive, so this witness family does NOT realise the")
-    print("      completed first-sector triple Z_min exactly;")
-    print("    - the family therefore remains a boundary ansatz; the missing exact")
-    print("      realisation is the actual framework-point Wilson environment packet.")
+    print("  Boundary-face diagnostic and sampled-grid scope:")
+    print("    - the retained boundary-face reference fit fixes lower tau_transfer,")
+    print("      upper tau_boundary, and lower asym_decay, with one interior")
+    print("      diagnostic optimum at linear_decay ~= 0.323966;")
+    print(f"    - the diagnostic gap ||c_best Zhat_best - Z_min||_2 = {gap_best:.12e}")
+    print("      is positive for that boundary-face reference fit;")
+    print("    - the parent note's binding negative claim is only the finite")
+    print("      sampled-grid no-go, not a continuous-family exclusion.")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

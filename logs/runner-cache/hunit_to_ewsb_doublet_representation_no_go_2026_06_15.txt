@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/hunit_to_ewsb_doublet_representation_no_go_2026_06_15.py
+runner_sha256: b714b80e78601909bc83eb63ea041da93e86f230fa8332e197996734c6bd0bf8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.45
+status: ok
+----- stdout -----
+==============================================================================
+H_UNIT -> EWSB DOUBLET REPRESENTATION NO-GO
+==============================================================================
+
+Part 1: source surfaces
+[PASS] docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md exists
+[PASS] docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md exists
+[PASS] docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md exists
+[PASS] docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md exists
+[PASS] docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md exists
+[PASS] note declares no-go claim type
+[PASS] note names portable runner and cache links
+[PASS] load-bearing authorities are markdown links
+[PASS] no-go discipline gate covers N1-N8
+[PASS] note records boundary phrase: Hom_SU(2)(1, 2) = 0
+[PASS] note records boundary phrase: does not exist as an equivariant derivation
+[PASS] note records boundary phrase: H_unit scalar-singlet structure
+[PASS] note records boundary phrase: one complex SU(2)_L EWSB doublet
+[PASS] note records boundary phrase: does not close R-HIGGS positively
+[PASS] note records boundary phrase: does not add an axiom or accepted premise
+[PASS] note verification section names expected total
+[PASS] Ward note defines H_unit
+[PASS] Ward note identifies scalar-singlet content
+[PASS] Ward note says no SM Yukawa readout
+[PASS] EW note supplies one-Higgs doublet bookkeeping
+[PASS] EW note contains neutral vev
+
+Part 2: H_unit is an SU(2) scalar on Q_L
+[PASS] H_unit has 6x6 Q_L operator shape -- (6, 6)
+[PASS] H_unit Hilbert-Schmidt norm is 1
+[PASS] H_unit commutes with SU(2) generator T1
+[PASS] H_unit commutes with SU(2) generator T2
+[PASS] H_unit commutes with SU(2) generator T3
+
+Part 3: Hom_SU(2)(trivial, fundamental) = 0
+[PASS] stacked Pauli-generator constraint has rank 2 -- rank=2
+[PASS] fundamental SU(2) has no nonzero invariant vector -- nullspace=[]
+[PASS] equivariance equations force v=0 -- [{a: 0, b: 0}]
+[PASS] any chosen nonzero ray breaks full SU(2) equivariance
+
+Part 4: neutral ray requires the supplied doublet surface
+[PASS] P_- is a rank-one projector
+[PASS] P_- fixes the neutral lower ray
+[PASS] Q annihilates the neutral lower ray
+[PASS] P_- does not commute with T1
+[PASS] P_- does not commute with T2
+[PASS] P_+ plus P_- gives the two-component doublet resolution
+
+Part 5: thermal census boundary
+[PASS] one complex SU(2) doublet has four real scalar components
+[PASS] a neutral radial ray is one real carrier direction
+[PASS] a scalar singlet is not the four-component high-T doublet
+
+TOTAL: PASS=39 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_slab_window_coupling_derived_bounded_2026_06_12.py
+runner_sha256: a8ddb72584b25b7aded56cd3d8b223e22f87b78d91f66dc9f61d29cd4181871f
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.96
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette slab-window coupling bounded runner
+Status authority: independent audit lane only. This source runner does not set, predict, promote, or demote any audit outcome.
+No new imports: repo-internal finite packet quantities only.
+No randomness or dates are used.
+
+================================================================================================================
+Part 1: quote-anchored class enumeration
+================================================================================================================
+PASS: tensor-transfer note says each unmarked spatial plaquette Boltzmann factor is expanded
+PASS: tensor-transfer note says every spatial plaquette factor is expanded before shared-link integration
+PASS: linkwise note states the Wilson action is a sum over plaquettes
+PASS: word-packet note defines the finite tensor word from D coefficients and fundamental fusion matrices
+Enumerated 2 x k slab classes:
+  (a) intra-layer internal links: captured by E_D(a,b)
+  (b) per-rail longitudinal links: captured by delta/d on each rail
+  (c) inter-layer transverse plaquettes: window faces across two rails and two layers
+PASS: window class is distinct from captured internal links and per-rail longitudinal links
+      it uses two transverse links plus two longitudinal links in one plaquette holonomy
+
+================================================================================================================
+Part 2: exact scalar gates already present
+================================================================================================================
+PASS: one-rail packet has 25 states
+PASS: two-wide strip layer has 625 pair states
+PASS: intra-layer internal link factor is nontrivial in the finite packet
+      max_delta=6.974558e-01
+PASS: per-rail longitudinal bond is exact inverse dimension on matching labels
+PASS: per-rail longitudinal bond vanishes on a rail mismatch
+
+================================================================================================================
+Part 3: window character expansion and smallest exact subspace
+================================================================================================================
+PASS: normalized trivial Wilson channel is exactly represented as D_0 = 1
+anti-fundamental x fundamental decomposition = {(0, 0): 1, (1, 1): 1}
+singlet count in 3bar x 3 x 3bar x 3 = 2
+PASS: fundamental window channel has a two-dimensional invariant space
+non-class callable names in W44 modules = []
+non-class source mentions in two-strip functions = []
+PASS: W44 strip modules provide fusion multiplicities but no non-class recoupling API
+PASS: fusion count alone cannot select an exact scalar fundamental-window contraction
+      the 2D invariant space needs a basis, normalization, and recoupling matrix
+Smallest exact nontrivial window target: fundamental plus anti-fundamental channels with a 3bar-3-3bar-3 intertwiner basis and recoupling normalization.
+Exact current truncation: trivial window channel, equal to switched-off window.
+
+================================================================================================================
+Part 4: switched-off measurement gate
+================================================================================================================
+P(k=2, window channel switched off) = 0.449370834209281
+W44 unwindowed k=2 reference        = 0.449370834209281
+delta_off_minus_W44                = +3.885780586188048e-16
+W44 strip-word deep limit           = 0.615191992185898
+pair-support limit from runner      = 0.615191992185898
+PASS: window switched off reproduces W44 k=2 strip-word value
+PASS: pair-support limit is unchanged by the switched-off window gate
+PASS: nontrivial k=2 displacement is not reported without the missing recoupling object
+      the runner reports zero switched-off displacement only, not a window-physics cancellation
+
+================================================================================================================
+Part 5: note hygiene and no-go discipline visibility
+================================================================================================================
+PASS: note delegates status to the independent audit lane
+PASS: note uses markdown links for one-hop authorities
+PASS: context refs avoid branch-local .claude paths
+PASS: note avoids overreach closure phrases
+PASS: note includes a visible N1-N8 wall-discipline gate
+
+TOTAL: PASS=22, FAIL=0
+
+----- stderr -----
+

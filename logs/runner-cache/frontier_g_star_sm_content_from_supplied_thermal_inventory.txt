@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g_star_sm_content_from_supplied_thermal_inventory.py
-runner_sha256: cad28c15a9e40904e8514914a68325aa13ca9e365ca00aebe8138f1a42974573
+runner_sha256: babb141773442e913832851ed6bbe4d77f6752f34e328da215193a8661ba6509
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 
@@ -13,9 +13,9 @@ note structure and scope
   [PASS] note contains: Claim type:** bounded_theorem
   [PASS] note contains: source-note proposal only
   [PASS] note contains: does not add a new axiom
-  [PASS] note contains: Standard Model thermal inventory itself remains an external
+  [PASS] note contains: retained-bounded finite declared-inventory arithmetic certificate
   [PASS] note contains: Support packet (R1-R6)
-  [PASS] note contains: Supplied premise packet (P1-P5
+  [PASS] note contains: Registered premise packet (P1-P5
   [PASS] note contains: Proof-walk
   [PASS] note contains: Exact arithmetic check
   [PASS] note contains: Boundaries
@@ -27,7 +27,7 @@ note structure and scope
   [PASS] note contains: SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10
   [PASS] note contains: GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06
   [PASS] note contains: audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py
-  [PASS] note contains: P1-P5 are declared explicitly
+  [PASS] note contains: P1-P5 are declared explicitly in the retained-bounded finite inventory wrapper
   [PASS] note contains: P2 supplies the two-transverse-polarization state count
   [PASS] note contains: P4 supplies the Dirac/Weyl thermal state-count convention
 
@@ -47,6 +47,8 @@ proof-walk forbids lattice-action imports
 ----------------------------------------------------------------------------------------
 R1-R6 support packet citations are present
 ----------------------------------------------------------------------------------------
+  [PASS] P1-P5 cites SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md as markdown link
+  [PASS] P1-P5 target file exists: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
   [PASS] R1 cites THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md as markdown link
   [PASS] R1 target file exists: THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
   [PASS] R1 cites THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md as markdown link
@@ -67,7 +69,7 @@ R1-R6 support packet citations are present
   [PASS] R6 target file exists: GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md
 
 ----------------------------------------------------------------------------------------
-P1-P5 supplied premise packet is named
+P1-P5 registered premise packet is named
 ----------------------------------------------------------------------------------------
   [PASS] premise present: **P1 Declared Standard Model particle inventory.**
   [PASS] premise present: **P2 Two transverse polarizations per massless vector.**
@@ -148,8 +150,8 @@ runner-note self-consistency
 ----------------------------------------------------------------------------------------
   [PASS] runner path cited in note
 
-TOTAL: PASS=93 FAIL=0
-VERDICT: bounded proof-walk passes; g_* = 106.75 follows from the support packet R1-R6 plus supplied premise packet P1-P5 by exact rational arithmetic.
+TOTAL: PASS=95 FAIL=0
+VERDICT: bounded proof-walk passes; g_* = 106.75 follows from the support packet R1-R6 plus the registered P1-P5 inventory packet by exact rational arithmetic.
 
 ----- stderr -----
 

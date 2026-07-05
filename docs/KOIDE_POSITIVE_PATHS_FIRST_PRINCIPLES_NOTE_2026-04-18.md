@@ -1,5 +1,7 @@
 # Koide Positive Paths — First-Principles Attack Map
 
+**Claim type:** open_gate
+
 **Date:** 2026-04-18
 **Status:** ranked constructive search map for closing the charged-lepton Koide
 lane positively, with axiom-only routes prioritized over transplant routes

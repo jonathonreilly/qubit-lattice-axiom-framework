@@ -9,6 +9,47 @@ axiom alone.
 **Primary runner:** [`scripts/frontier_ep_record_stiffness_conditional_template_2026_06_07.py`](../scripts/frontier_ep_record_stiffness_conditional_template_2026_06_07.py)
 **Cached runner output:** [`logs/runner-cache/frontier_ep_record_stiffness_conditional_template_2026_06_07.txt`](../logs/runner-cache/frontier_ep_record_stiffness_conditional_template_2026_06_07.txt)
 
+## 2026-06-12 audit firewall: continuous-energy context supplied
+
+The audited missing bridge is not closed here. The continuous local
+energy/action context, inertial rest-gap mass readout, and recorded-energy
+gravitational source/shared coupling are supplied template inputs. The Record
+axiom does not supply those structures by itself.
+
+Accordingly this row is an **open-gate conditional template**. The runner
+checks only that, once the supplied continuous context is granted, the same
+stiffness parameter appears in the inertial and recorded-source slots. No new
+axiom, Tier-A admission, WEP closure, or audit-status change is introduced.
+
+## 2026-06-17 Record-only independence no-go
+
+[`EP_RECORD_STIFFNESS_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md`](EP_RECORD_STIFFNESS_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md)
+proves that the firewall above is a real independence boundary: two completions
+can share the same Lattice + Quantum + Record data and the same finite additive
+record readout while assigning different continuous stiffnesses and different
+inertial/gravitational source ratios. The result does not refute this
+conditional template. It says a Record-only derivation cannot supply the
+continuous local energy/action context, rest-gap readout, or shared source
+coefficient consumed below; a separate dynamics/source theorem is still needed
+for any positive WEP closure.
+
+## 2026-06-16 weak-field source/readout interface split
+
+The post-audit source/readout repair
+[`EP_RECORD_STIFFNESS_WEAK_FIELD_SOURCE_READOUT_INTERFACE_NOTE_2026-06-16.md`](EP_RECORD_STIFFNESS_WEAK_FIELD_SOURCE_READOUT_INTERFACE_NOTE_2026-06-16.md)
+splits the gravitational-source side of the template:
+
+| ID | Piece | Current status |
+|---|---|---|
+| `EP-S3a` | normalized `|psi|^2` source-readout and weak-field source-coupling form | bounded-support interface from the retained-bounded weak-field source-response bridge |
+| `EP-S3b` | identifying the gravitational source coefficient with the same `m` as the inertial rest gap | still supplied shared-coupling template data |
+
+This narrows one imported piece of the template without closing the EP gap.
+The continuous local energy/action functional, the inertial rest-gap readout
+from Record, and the coefficient identity `m_grav/m_inert = 1` remain open
+bridges. This split adds no new axiom, Tier-A admission, WEP closure, or
+audit-status change.
+
 ## Scope
 
 The rejected parent PR #2988 tried to derive an energy/curvature/mass bridge
@@ -81,3 +122,15 @@ The runner verifies:
 **No-promotion statement:** this note does not change any audit status and does
 not close the equivalence-principle gap. It records a conditional support
 template for later dynamics/mass work.
+
+## 2026-06-15 audit-unlock residual certificate
+
+This row is a conditional equivalence-principle stiffness template, not a
+closed shared-coupling theorem. The runner-checked content is the symbolic
+second derivative, p=0 dispersion, Gaussian normalization, and ratio algebra
+inside the supplied continuous context.
+
+The live blocker is the framework-native origin of that context: a derivation
+of the continuous local energy/action functional, inertial rest-gap readout,
+and shared gravitational source coefficient from the record framework. This
+repair introduces none of those as axioms or admitted retained facts.

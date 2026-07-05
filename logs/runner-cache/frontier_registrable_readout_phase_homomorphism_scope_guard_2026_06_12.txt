@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_registrable_readout_phase_homomorphism_scope_guard_2026_06_12.py
+runner_sha256: 25655c154f04db3d9a4b5fb451bb42e7c6506746a211a64a427a379bb541483a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+PASS: status is scoped to determinant-character / log-character homomorphism class
+PASS: homomorphism boundary is explicit and not derived from Record
+PASS: non-homomorphic K-even counterexample is preserved
+PASS: theorem statement requires the homomorphism boundary
+PASS: Conditional Implication A does not discharge the bridge
+PASS: Conditional Implication B is restricted to supplied unordered-multiset orbit data
+PASS: boundary excludes Record-alone phase-group additivity
+PASS: old broad Record-alone language is absent
+TOTAL: PASS=8, FAIL=0
+
+----- stderr -----
+

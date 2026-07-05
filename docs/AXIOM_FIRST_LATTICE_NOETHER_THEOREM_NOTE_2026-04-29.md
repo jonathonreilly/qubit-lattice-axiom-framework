@@ -1,6 +1,6 @@
 # Axiom-First Lattice Noether's Theorem on Cl(3) ⊗ Z^3
 
-**Date:** 2026-04-29 (originally); 2026-05-03 (sublattice repair); 2026-05-10 (gate-recategorization repair); 2026-05-10 (g_bare-removal repair); 2026-05-25 (Step 4b boundary repair); 2026-06-06 (onsite-generator scope, U(1) sign-directness, and KS chirality/parity bridge-support repairs)
+**Date:** 2026-04-29 (originally); 2026-05-03 (sublattice repair); 2026-05-10 (gate-recategorization repair); 2026-05-10 (g_bare-removal repair); 2026-05-25 (Step 4b boundary repair); 2026-06-06 (onsite-generator scope, U(1) sign-directness, and KS chirality/parity bridge-support repairs); 2026-06-15 (registered-parent cycle-edge rescope)
 **Status:** source-note proposal — author-declared `bounded_theorem`; effective
 status set only by the independent audit lane.
 **Claim type:** bounded_theorem
@@ -785,21 +785,18 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   partition with per-site `(χ_x, χ̄_x)` generators, per-site Fock
   dim 2, and the Berezin determinant readout. Load-bearing for the
   Step 1-3 variational derivation of (5). Added 2026-05-24 rewire
-  repair (replaces gate-alias dep per
-  `STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`
-  line 33 endorsement).
+  repair, replacing the old gate-alias dependency per the
+  gate-closure synthesis endorsement.
 
 The historical parent-identity alias
-`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (currently
-`audited_renaming`) is no longer cited as a load-bearing one-hop dep;
-it is backticked here as a navigational reference only, per the
-rewire endorsement in
-`STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`
-line 33. See the §"Admitted context inputs" block below for the
-explicit residual `KS-phase-form` structural admission that remains
-on the staggered carrier; this residual is not currently supplied by
-any retained substep narrow theorem and is named here rather than
-silently imported from the gate alias. The chain-pending JW bridge
+for the staggered-Dirac realization gate is no longer
+cited as retained one-hop authority for the finite-Grassmann algebra;
+that algebra is supplied by the substep-1 narrow theorem above, per the
+rewire endorsement in the gate-closure synthesis note. The gate alias
+is cited below only as the registered Tier-A
+carrier route for the residual `KS-phase-form` structural admission,
+not as retained authority and not as closure of that residual. The
+chain-pending JW bridge
 `STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`
 is intentionally not cited as a load-bearing one-hop dependency here
 until its pending chain closes.
@@ -815,14 +812,13 @@ anticommutation `(G1)-(G3)`, Berezin integration rules, per-site Fock
 dim 2 — the entire algebraic surface used by the Step 1-3 variational
 derivation of (5)) is supplied by the retained substep-1 Grassmann narrow theorem
 listed below; the historical parent-identity gate alias
-`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (currently
-`audited_renaming`) is no longer cited as a load-bearing one-hop dep
-and is backticked below as a navigational reference only, per the
-explicit rewire endorsement in
-`STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`
-line 33 ("downstream rows with substep-specific needs should cite the
+for the staggered-Dirac realization gate is not cited as
+retained one-hop authority for that finite-Grassmann algebra. It is
+cited below only as the registered Tier-A carrier route for the
+residual `KS-phase-form` input, per the explicit rewire endorsement
+that downstream rows with substep-specific needs should cite the
 relevant `STAGGERED_DIRAC_SUBSTEP{1,2,3,4}_*` retained theorems
-directly rather than this gate alias").
+directly rather than this gate alias.
 
 **Load-bearing one-hop dep (retained):**
 
@@ -848,17 +844,21 @@ directly rather than this gate alias").
   quantum number) and C3 (compatibility with reflection-positivity
   superselection), but this rewire does not consume it as audit authority.
 
-**Historical navigational reference (NOT a load-bearing dep):**
+**Registered Tier-A carrier route (historical context, not a current
+citation-graph dependency):**
 
-- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` —
-  parent-identity gate alias, currently `audited_renaming`. Backticked
-  to break the unresolved-dep edge that previously blocked this row's
-  audit retagging. The load-bearing finite-Grassmann content is supplied
-  by the retained substep-1 Grassmann narrow theorem above; the specific
-  Kawamoto-Smit phase form `η_μ(x)` (used in Step 2's bilateral
-  derivation and Step 4b's two-site-shift symmetry) remains an
-  explicit admitted-context structural input on the staggered carrier,
-  carried forward as the residual `KS-phase` structural admission below.
+- The staggered-Dirac realization gate's canonical parent note,
+  `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`, is the
+  parent-identity gate alias and registered Tier-A derivation target
+  `AC_φλ`, previously recorded as the carrier route for the residual
+  `KS-phase-form` input. This parent alias is not retained authority and
+  does not close the gate. The current source graph follows the explicit
+  narrow suppliers below instead: retained substep-1 Grassmann for the
+  finite-Grassmann algebra, retained eta-holonomy and retained_bounded
+  chirality/parity for the displayed KS sign/phase surface, and the
+  kinetic/P-FLUX cascade for the remaining carrier-selection residual.
+  The parent filename remains visible as registered context only, not
+  as a markdown dependency edge.
 
 **Residual structural admission (admitted context, not supplied by any
 current retained narrow theorem):**
@@ -868,15 +868,117 @@ current retained narrow theorem):**
   nearest-neighbour hop `M_{x,x±μ̂} = ±(1/2) η_μ(x)`. Used in (a) Step 2
   reindexing `η_μ(x' + μ̂) = η_μ(x')`, (b) Step 4b's two-site-shift
   symmetry verification `η_ν(x + 2μ̂) = η_ν(x)`, (c) Step 5's
-  one-site-shift counterexample. The forcing of this specific phase
-  structure (substep-2 Kawamoto-Smit forcing) is currently `unaudited`
-  on the live ledger and is **not** supplied by the retained substep
-  theorems above; the Noether identities (N1)-(N3) close as stated on
-  the admitted KS-phase carrier, with this structural input named here
-  rather than imported silently from the gate alias.
+  one-site-shift counterexample. **Status refresh (2026-06-11):** the
+  substep-2 Kawamoto-Smit forcing source-note
+  (`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`,
+  plain-text pointer) now exists on the surface and proves the forcing
+  as a bounded theorem (scalarization iff the Clifford `−1` cocycle,
+  with exactly one local gauge class — the KS class), bounded on its
+  own declared kinetic-class premises (its P-KIN/P-SD); its current
+  ledger grade is not retained, so `KS-phase-form` remains an
+  admitted-context structural input here, named rather than silently
+  imported. **Status refresh (2026-06-15):** the displayed eta identities
+  are now directly supplied in this packet by retained
+  `ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md` and
+  retained_bounded
+  `STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`.
+  The full carrier-selection residual is still the kinetic/P-FLUX
+  cascade below, so this row remains bounded/conditional; however the
+  parent realization-gate alias is no longer a current citation-graph
+  dependency. The Noether identities (N1)-(N3) close as stated on the
+  admitted KS-phase carrier.
 
-When the substep-2 Kawamoto-Smit phase forcing closes to retained-grade,
-the `KS-phase-form` residual admission discharges and the row becomes
+## Kinetic supply-line refresh (2026-06-12; audit-unblock repair)
+
+The 2026-06-11 registered-routing section below correctly kept this
+row bounded/conditional because the residual `KS-phase-form` structural
+input was still routed through the registered staggered-Dirac target.
+Latest main now makes that route sharper without changing this row's
+status:
+
+1. [`STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`](STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md)
+   supplies a source-side two-flux-class theorem on the licensed
+   nearest-neighbor bilinear surface. Its cache
+   `logs/runner-cache/staggered_dirac_kinetic_class_forcing_check_2026_06_10.txt`
+   records `TOTAL: PASS=27 FAIL=0`. For this Noether row, the two
+   relevant outputs are:
+   - P-SD is discharged as the absorbing-frame theorem on the
+     flux-`-1` branch;
+   - P-KIN is reduced from a broad kinetic-class declaration to the
+     one-bit P-FLUX selector `phi = -1`, with `K0` the computed
+     countermodel inside the tested constraint set.
+2. [`P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md`](P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md)
+   supplies the conditional composer for that bit. Its cache
+   `logs/runner-cache/p_flux_selection_via_fsb_k_check_2026_06_11.txt`
+   records `TOTAL: PASS=16 FAIL=0`: using the retained
+   [`STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md`](STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md)
+   geometry leg, P-FLUX is selected only if FSB-K reaches retained
+   grade with its realized-kernel quantifier and FSB-CL intact.
+3. [`AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md`](AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md)
+   remains the named open condition for that composer as of this sync.
+
+Thus this Noether row's residual is no longer "derive the entire
+Kawamoto-Smit carrier from scratch"; it is the sharper cascade
+
+```text
+kinetic-class forcing
+  -> P-SD discharged on K1
+  -> P-KIN reduced to P-FLUX
+  -> P-FLUX conditionally selected by FSB-K + retained Z
+```
+
+Source-only sync verifier:
+`scripts/staggered_dirac_kinetic_supply_line_sync_2026_06_12.py`;
+cache:
+`logs/runner-cache/staggered_dirac_kinetic_supply_line_sync_2026_06_12.txt`.
+
+The local Noether algebra is unchanged and remains the same finite
+Grassmann/Kawamoto-Smit carrier identity checked by
+`scripts/axiom_first_lattice_noether_check.py`. This section does not
+promote the row: until the supplier rows are independently audited and
+the conditional FSB-K leg resolves, the Noether row remains bounded on
+the admitted `KS-phase-form` carrier.
+
+## Registered Tier-A routing (2026-06-11; audit-requested repair; 2026-06-15 graph rescope)
+
+The recorded re-audit target for this row is to "close the full
+staggered-Dirac/Kawamoto-Smit kinetic carrier, including the residual
+KS-phase-form structural input, with retained-grade authority or keep
+this row bounded/conditional." This section takes the precedented
+registered-routing form of that repair (per
+`PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md` and
+`YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md`,
+plain-text precedent pointers): the residual carrier admission is
+routed explicitly into the **registered Tier-A derivation target**, so
+the citation graph carries a registered admission rather than an
+unregistered conditional blocker.
+
+1. **The algebra is standalone.** The load-bearing content — the
+   plus-sign bilateral lattice current, the two-step Ward identity,
+   and the on-shell Noether identities (N1)-(N3) — closes by finite
+   matrix/Grassmann algebra, with the finite-Grassmann partition
+   surface supplied by the retained substep-1 narrow theorem (the
+   load-bearing one-hop dep above).
+2. **What the carrier admission carries.** Only the specific
+   Kawamoto-Smit phase form `η_μ(x)` (the `KS-phase-form` residual
+   above) consumes the staggered-Dirac realization complex; it is
+   substep-2 content of that complex.
+3. **The registered target is retained as plain-text context only.**
+   The canonical staggered-Dirac realization parent
+   remains the registered Tier-A derivation target `AC_φλ` in the
+   admission registry (`docs/audit/data/tier_a_admissions.json`), but
+   this Noether row no longer uses a markdown edge to that parent alias
+   as a one-hop dependency. The current dependency graph follows the
+   explicit supplier cascade above. This note does **not** close the
+   gate, does **not** promote the substep-2 forcing note, and does
+   **not** assert a retained-grade carrier-selection result.
+4. **No status assertion.** This section makes the narrow re-audit
+   case only. The audit lane is the sole authority on whether to honor
+   it; this note asserts no `effective_status` and predicts no audit
+   outcome.
+
+When the explicit kinetic/P-FLUX cascade closes to retained grade, the
+`KS-phase-form` residual admission discharges and the row becomes
 eligible for retagging from `bounded_theorem` to `positive_theorem` by
 the independent audit lane.
 

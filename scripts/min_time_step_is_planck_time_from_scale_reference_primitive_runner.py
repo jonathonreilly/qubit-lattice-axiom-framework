@@ -5,8 +5,10 @@ This runner does not claim to derive physical time from the update tick.  It
 checks the source packet needed for re-audit:
 
 * the registered scale-reference primitive exists;
+* the registered kinetic-isotropy primitive supplies only the lattice-unit
+  c_lattice = 1 bridge;
 * the one-tick-one-edge companion packet and cache are present, and its current
-  ledger status is exposed rather than silently upgraded;
+  retained-bounded ledger status is exposed rather than silently assumed;
 * the physical-c normalization used by this row is explicit; and
 * with those supplied inputs, l_P / c equals t_P at the note's stated
   tolerance.
@@ -23,6 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md"
 AXIOM_NODES = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
 AUDIT_LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+KINETIC_PRIMITIVE_NOTE = ROOT / "docs" / "KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
 
 COMPANION_ID = "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08"
 COMPANION_NOTE = ROOT / "docs" / "MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md"
@@ -30,9 +33,15 @@ COMPANION_RUNNER = ROOT / "scripts" / "min_time_step_tied_to_lattice_edge_by_loc
 COMPANION_CACHE = ROOT / "logs" / "runner-cache" / "min_time_step_tied_to_lattice_edge_by_locality_runner.txt"
 
 C_LIGHT_M_PER_S = 299_792_458.0
+C_LATTICE = 1.0
 PLANCK_LENGTH_M = 1.616255e-35
 PLANCK_TIME_S = PLANCK_LENGTH_M / C_LIGHT_M_PER_S
 REL_TOL = 1.0e-7
+RETAINED_GRADE_EFFECTIVE_STATUSES = {
+    "retained",
+    "retained_bounded",
+    "retained_no_go",
+}
 
 PASS = 0
 FAIL = 0
@@ -93,7 +102,36 @@ def main() -> int:
         scale_node.get("note", ""),
     )
 
-    section("A2. companion tick/edge packet exposed without status upgrade")
+    section("A2. kinetic-form c bridge")
+    kinetic_node = axiom_nodes.get("nodes", {}).get("kinetic_isotropy_primitive", {})
+    kinetic_text = (
+        KINETIC_PRIMITIVE_NOTE.read_text(encoding="utf-8", errors="replace")
+        if KINETIC_PRIMITIVE_NOTE.exists()
+        else ""
+    )
+    check(
+        "kinetic_isotropy_primitive is registered in axiom_premise_nodes",
+        kinetic_node.get("current_path")
+        == "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+        and KINETIC_PRIMITIVE_NOTE.exists(),
+        f"path={kinetic_node.get('current_path')}",
+    )
+    check(
+        "kinetic primitive supplies c_lattice = 1 scope only",
+        "c_t = c_s" in kinetic_text
+        and "hypercubic-symmetric" in kinetic_text
+        and "does not supply any dimensionless dynamical quantity" in kinetic_text
+        and C_LATTICE == 1.0,
+        "structural kinetic-form bridge, not a physical c value",
+    )
+    check(
+        "source note records emergent-c-to-physical-c split",
+        "lattice-unit statement `c_lattice = a_s/a_τ = 1`" in note_text
+        and "The emergent-`c` side is the\n  lattice-unit `c_lattice = 1`" in note_text,
+        "c_lattice bridge plus SI conversion",
+    )
+
+    section("A3. companion tick/edge packet exposed as retained-bounded")
     ledger = json.loads(AUDIT_LEDGER.read_text(encoding="utf-8"))
     companion_row = ledger.get("rows", {}).get(COMPANION_ID, {})
     companion_cache_fields = cache_header(COMPANION_CACHE) if COMPANION_CACHE.exists() else {}
@@ -116,18 +154,17 @@ def main() -> int:
         "finite BFS/cone verifier marker",
     )
     check(
-        "current ledger keeps companion boundary visible",
-        companion_row.get("audit_status") == "audited_renaming"
-        and companion_row.get("effective_status") == "audited_renaming",
-        f"audit status {companion_row.get('audit_status')}; effective status {companion_row.get('effective_status')}",
+        "current ledger exposes companion as retained-grade authority",
+        companion_row.get("effective_status") in RETAINED_GRADE_EFFECTIVE_STATUSES,
+        f"effective status {companion_row.get('effective_status')}",
     )
     check(
-        "source note does not call the companion retained",
-        "Current audit status for that companion is `audited_renaming`, not retained." in note_text,
+        "source note records the companion's retained-bounded effective status",
+        "The current generated ledger exposes that companion with effective status\n   `retained_bounded`." in note_text,
         "boundary text present",
     )
 
-    section("A3. physical-c normalization and Planck-time arithmetic")
+    section("A4. physical-c normalization and Planck-time arithmetic")
     a_s = PLANCK_LENGTH_M
     a_tau = a_s / C_LIGHT_M_PER_S
     rel_err = abs(a_tau - PLANCK_TIME_S) / PLANCK_TIME_S
@@ -147,13 +184,12 @@ def main() -> int:
         f"rel_err={rel_err:.3e}, tol={REL_TOL:.1e}",
     )
 
-    section("A4. conditional minimality boundary")
+    section("A5. bounded-support minimality boundary")
     check(
-        "source note is narrowed to conditional-support boundary",
-        "**Scope:** conditional-support boundary packet" in note_text
-        and "does not itself derive the record/update" in note_text
-        and "physical time\ncoordinate" in note_text,
-        "no unconditional positive theorem claim",
+        "source note is updated to bounded-support re-audit scope",
+        "**Scope:** bounded-support re-audit packet" in note_text
+        and "does not derive the\nphysical value of `c`" in note_text,
+        "no physical-c derivation claim",
     )
     check(
         "no new axiom/admission/primitive is introduced",
@@ -161,10 +197,10 @@ def main() -> int:
         "uses existing scale-reference primitive and companion packet",
     )
     check(
-        "safe conclusion is conditional on the tick/time bridge",
-        "If the companion one-tick-one-edge row is" in note_text
-        and "accepted as the physical time-coordinate bridge" in note_text,
-        "explicit conditional wording",
+        "safe conclusion consumes the retained companion and explicit c conversion",
+        "The companion one-tick-one-edge row is now\n`retained_bounded`" in note_text
+        and "with the explicit SI `c` normalization this gives" in note_text,
+        "retained companion plus unit conversion",
     )
 
     print()

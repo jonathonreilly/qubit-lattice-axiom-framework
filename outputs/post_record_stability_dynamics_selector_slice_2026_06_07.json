@@ -1,11 +1,11 @@
 {
   "bucket": "stability_or_dynamics_selector",
-  "generated_on": "2026-06-07",
+  "generated_on": "2026-07-02",
   "ledger_path": "docs/audit/data/audit_ledger.json",
-  "ledger_sha256": "4b31e8573fb839a0606465ae08ae61bdbdfef55cbd88ccf7ecf5d2f7336a8679",
+  "ledger_sha256": "15efee196a7b3738ec370120bc338105f64b4c82d0b236c80b0c47b5d5b7b95f",
   "ledger_sha256_unchanged": true,
   "parent_runner": "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py",
-  "row_count": 94,
+  "row_count": 169,
   "row_fields": [
     "claim_id",
     "audit_status",
@@ -17,855 +17,1529 @@
   ],
   "rows": [
     {
-      "audit_status": "unaudited",
       "claim_id": "a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md",
       "runner_path": "scripts/cl3_a3_route1_higgs_yukawa_2026_05_08_r1.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "audited_clean",
-      "claim_id": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+      "claim_id": "acphilambda_pointer_labeled_refinement_finer_record_clock_2026-07-02",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
       "claim_type": "bounded_theorem",
-      "effective_status": "retained_bounded",
+      "note_path": "docs/ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md",
+      "runner_path": "scripts/acphilambda_pointer_labeled_refinement_finer_record_clock_2026_07_02.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md",
+      "runner_path": "scripts/frontier_acphilambda_r_eta_w2_registrability_context_bridge_2026_06_18.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
+      "runner_path": "scripts/axiom_first_single_clock_codimension1_evolution_check.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md",
       "runner_path": "scripts/frontier_z_n_equivariant_spectral_asymmetry_narrow_verifier.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "audited_clean",
       "claim_id": "bell_inequality_derived_note",
-      "claim_type": "bounded_theorem",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/BELL_INEQUALITY_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_bell_inequality.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "cl3_taste_generation_theorem",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/CL3_TASTE_GENERATION_THEOREM.md",
-      "runner_path": "scripts/verify_cl3_sm_embedding.py",
+      "runner_path": "scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "color_su3_restricted_transport_profile_2026-06-05",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/COLOR_SU3_RESTRICTED_TRANSPORT_PROFILE_2026-06-05.md",
       "runner_path": "scripts/frontier_color_su3_restricted_transport_profile_2026_06_05.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md",
       "runner_path": "scripts/frontier_color_su3_bridge_from_record_2026_06_05.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "audited_renaming",
-      "claim_id": "flavor_interacting_matter_build_note_2026-05-30",
+      "claim_id": "emergent_metric_conformal_class_from_records_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-06",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
       "claim_type": "bounded_theorem",
-      "effective_status": "audited_renaming",
-      "note_path": "docs/FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md",
-      "runner_path": "scripts/flavor_interacting_matter_build_2026_05_30.py",
+      "note_path": "docs/EMERGENT_METRIC_CONFORMAL_CLASS_FROM_RECORDS_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md",
+      "runner_path": "scripts/emergent_metric_conformal_class_from_records_runner.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
+      "claim_id": "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08",
       "audit_status": "unaudited",
-      "claim_id": "g_newton_skeleton_selection_bounded_note_2026-05-10_gnewtong1",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "runner_path": "scripts/frontier_flavor_absolute_handedness_is_gauge.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md",
+      "runner_path": "scripts/frontier_four_hats_frame_connection_generator_stratification_2026_06_09.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "g_newton_skeleton_selection_bounded_note_2026-05-10_gnewtong1",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/G_NEWTON_SKELETON_SELECTION_BOUNDED_NOTE_2026-05-10_gnewtonG1.md",
       "runner_path": "scripts/cl3_g_newton_skeleton_selection_2026_05_10_gnewtonG1.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "audited_clean",
-      "claim_id": "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23",
+      "claim_id": "gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18",
+      "audit_status": "audited_conditional",
+      "effective_status": "audited_conditional",
       "claim_type": "bounded_theorem",
+      "note_path": "docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
+      "runner_path": "scripts/gate_b_finite_radial_scalar_bridge_2026_06_18.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md",
+      "runner_path": "scripts/gauge_factor_local_selector_normalizer_2026_06_18.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/GENERATION_DEGENERACY_MINIMAL_SYMMETRY_BREAKING_NARROW_THEOREM_NOTE_2026-05-23.md",
       "runner_path": "scripts/frontier_generation_degeneracy_minimal_breaking_discriminator.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "audited_conditional",
-      "claim_id": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
-      "claim_type": "positive_theorem",
-      "effective_status": "audited_conditional",
-      "note_path": "docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md",
-      "runner_path": "scripts/interaction_asymmetry_delta_occupation_curvature_runner.py",
+      "claim_id": "gravity_conformal_scale_split_lensing_records_derived_shapiro_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-06",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/GRAVITY_CONFORMAL_SCALE_SPLIT_LENSING_RECORDS_DERIVED_SHAPIRO_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md",
+      "runner_path": "scripts/gravity_conformal_scale_split_from_records_runner.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
+      "claim_id": "hw_complement_equivalence_extends_to_free_corner_transfer_dynamics_bounded_note_2026-06-12",
       "audit_status": "unaudited",
-      "claim_id": "koide_a1_probe_operator_class_bounded_note_2026-05-08_probe6",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/HW_COMPLEMENT_EQUIVALENCE_EXTENDS_TO_FREE_CORNER_TRANSFER_DYNAMICS_BOUNDED_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_hw_equivalence_free_transfer_dynamics_2026_06_12.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "koide_a1_probe_operator_class_bounded_note_2026-05-08_probe6",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_A1_PROBE_OPERATOR_CLASS_BOUNDED_NOTE_2026-05-08_probe6.md",
       "runner_path": "scripts/cl3_koide_a1_probe_operator_class_2026_05_08_probe6.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_a1_probe_retained_u1_hunt_bounded_obstruction_note_2026-05-09_probe14",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_A1_PROBE_RETAINED_U1_HUNT_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe14.md",
       "runner_path": "scripts/cl3_koide_a1_probe_retained_u1_hunt_2026_05_09_probe14.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_a1_route_e_kostant_weyl_bounded_obstruction_note_2026-05-08_routee",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_A1_ROUTE_E_KOSTANT_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routee.md",
       "runner_path": "scripts/cl3_koide_a1_route_e_kostant_weyl_2026_05_08_routee.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
+      "claim_id": "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
       "audit_status": "unaudited",
-      "claim_id": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "runner_path": "scripts/frontier_koide_delta_phase_count_one_z2_orientation.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_HERMITIAN_RECORDS_IMPORT_REQUIRED_NARROW_THEOREM_NOTE_2026-06-02.md",
       "runner_path": "scripts/frontier_koide_hermitian_records_import_required.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_massive_doubling_reduces_to_transfer_positivity_note_2026-06-02",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_MASSIVE_DOUBLING_REDUCES_TO_TRANSFER_POSITIVITY_NOTE_2026-06-02.md",
       "runner_path": "scripts/koide_massive_doubling_reduces_to_transfer_positivity_2026_06_02.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_MATTER_ATTACHMENT_GATE_EXTRA_ASSUMPTIONS_REVIEW_NOTE_2026-06-02.md",
       "runner_path": "scripts/frontier_koide_matter_attachment_gate_extra_assumptions_review.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md",
       "runner_path": "scripts/frontier_koide_matter_attachment_reduces_to_ks.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "audited_clean",
       "claim_id": "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
       "claim_type": "bounded_theorem",
-      "effective_status": "retained_bounded",
       "note_path": "docs/KOIDE_ONSITE_BOOST_RECONSTRUCTION_WEYL_FAITHFUL_VS_SCALAR_SELECTION_NOTE_2026-06-02.md",
       "runner_path": "scripts/koide_onsite_boost_reconstruction_2026_06_02.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "audited_clean",
       "claim_id": "koide_onsite_weyl_boost_from_bivectors_note_2026-06-01",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
       "claim_type": "bounded_theorem",
-      "effective_status": "retained_bounded",
       "note_path": "docs/KOIDE_ONSITE_WEYL_BOOST_FROM_BIVECTORS_NOTE_2026-06-01.md",
       "runner_path": "scripts/frontier_koide_onsite_weyl_boost_from_bivectors.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
+      "claim_id": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
       "audit_status": "unaudited",
-      "claim_id": "koide_p1_collapses_frame_residuals_note_2026-06-01",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
-      "note_path": "docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md",
-      "runner_path": "scripts/frontier_koide_p1_collapses_frame_residuals.py",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+      "runner_path": "scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "audited_clean",
-      "claim_id": "koide_records_pointer_grounds_block_channel_note_2026-05-31",
+      "claim_id": "koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15",
+      "audit_status": "audited_renaming",
+      "effective_status": "audited_renaming",
       "claim_type": "bounded_theorem",
+      "note_path": "docs/KOIDE_R_IS_THE_WEIGHTING_PRINCIPLE_DIAL_RECORD_DYNAMICS_WEIGHTING_BLIND_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+      "runner_path": "scripts/frontier_r_weighting_principle_dial_2026_06_15.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "koide_records_pointer_grounds_block_channel_note_2026-05-31",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_RECORDS_POINTER_GROUNDS_BLOCK_CHANNEL_NOTE_2026-05-31.md",
       "runner_path": "scripts/frontier_koide_records_pointer_grounds_block_channel_2026_05_31.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
+      "claim_id": "koide_staggered_first_order_generation_determinant_bounded_theorem_note_2026-06-11",
       "audit_status": "unaudited",
-      "claim_id": "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+      "runner_path": "scripts/frontier_koide_staggered_first_order_generation_determinant_2026_06_11.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md",
       "runner_path": "scripts/frontier_koide_taste_cube_cyclic_source_descent.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "observable_principle_from_axiom_note",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
+      "claim_id": "observable_principle_p1_cap_k_from_finite_speed_registration_narrow_theorem_note_2026-06-10",
       "audit_status": "unaudited",
-      "claim_id": "pmns_chart_constant_q_koide_brannen_lift_narrow_theorem_note_2026-05-17",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md",
+      "runner_path": "scripts/observable_principle_p1_cap_k_check_2026_06_10.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md",
+      "runner_path": "scripts/observable_principle_p1_exponent_attack_2026_06_10.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "observable_principle_p1_registration_realization_pin_consolidation_narrow_theorem_note_2026-06-11",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_REGISTRATION_REALIZATION_PIN_CONSOLIDATION_NARROW_THEOREM_NOTE_2026-06-11.md",
+      "runner_path": "scripts/observable_principle_p1_rr_consolidation_check_2026_06_11.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "occupancy_readout_exponent_berezin_subsumption_bounded_theorem_note_2026-06-09",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/OCCUPANCY_READOUT_EXPONENT_BEREZIN_SUBSUMPTION_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+      "runner_path": "scripts/frontier_occupancy_readout_exponent_berezin_subsumption_2026_06_09.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md",
+      "runner_path": "scripts/frontier_planck_primitive_clifford_majorana_edge_derivation.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "pmns_chart_constant_q_koide_brannen_lift_narrow_theorem_note_2026-05-17",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/PMNS_CHART_CONSTANT_Q_KOIDE_BRANNEN_LIFT_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/frontier_pmns_chart_constant_q_koide_brannen_lift_narrow.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "audited_conditional",
       "claim_id": "post_record_character_path_channel_weight_prototype_2026-06-06",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
       "claim_type": "bounded_theorem",
-      "effective_status": "audited_conditional",
       "note_path": "docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "audited_conditional",
-      "claim_id": "post_record_dynamics_family_lift_closeout_index_2026-06-06",
-      "claim_type": "meta",
-      "effective_status": "audited_conditional",
-      "note_path": "docs/POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX_2026-06-06.md",
-      "runner_path": "scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py",
-      "stability_subbucket": "arrow_or_dynamics_bridge"
-    },
-    {
-      "audit_status": "audited_clean",
       "claim_id": "post_record_finite_likelihood_score_interface_2026-06-06",
-      "claim_type": "bounded_theorem",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/POST_RECORD_FINITE_LIKELIHOOD_SCORE_INTERFACE_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_finite_likelihood_score_interface_2026_06_06.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "audited_clean",
-      "claim_id": "post_record_transition_kernel_interface_2026-06-06",
+      "claim_id": "post_record_source_measure_trace_normalization_prototype_2026-06-06",
+      "audit_status": "audited_conditional",
+      "effective_status": "audited_conditional",
       "claim_type": "bounded_theorem",
+      "note_path": "docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md",
+      "runner_path": "scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "post_record_transition_kernel_interface_2026-06-06",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/POST_RECORD_TRANSITION_KERNEL_INTERFACE_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_transition_kernel_interface_2026_06_06.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "primordial_spectrum_note",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/PRIMORDIAL_SPECTRUM_NOTE.md",
       "runner_path": "scripts/frontier_primordial_spectrum.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "audited_clean",
-      "claim_id": "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
+      "claim_id": "quark_route2_e_channel_source_readout_construction_bounded_note_2026-06-12",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
       "claim_type": "bounded_theorem",
-      "effective_status": "retained_pending_chain",
+      "note_path": "docs/QUARK_ROUTE2_E_CHANNEL_SOURCE_READOUT_CONSTRUCTION_BOUNDED_NOTE_2026-06-12.md",
+      "runner_path": "scripts/quark_route2_e_channel_source_readout_construction_bounded_2026_06_12.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md",
       "runner_path": "scripts/audit_companion_qubit_link_u2_connection_algebra_bounded_2026_06_04.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "audited_clean",
-      "claim_id": "record_axiom_audit_application_map_2026-06-06",
+      "claim_id": "realization_row_sigma_reconciliation_bounded_theorem_note_2026-06-11",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
       "claim_type": "bounded_theorem",
+      "note_path": "docs/REALIZATION_ROW_SIGMA_RECONCILIATION_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+      "runner_path": "scripts/realization_row_sigma_reconciliation_2026_06_11.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md",
+      "runner_path": "scripts/realized_kinetic_branch_conditional_record_registration_2026_07_02.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "record_axiom_audit_application_map_2026-06-06",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/RECORD_AXIOM_AUDIT_APPLICATION_MAP_2026-06-06.md",
       "runner_path": "scripts/frontier_record_audit_application_map_2026_06_06.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "audited_clean",
-      "claim_id": "record_prerecord_instrument_kernel_gate_2026-06-06",
+      "claim_id": "record_erosion_branch_vs_ensemble_persistence_bounded_theorem_note_2026-06-12",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
       "claim_type": "bounded_theorem",
-      "effective_status": "retained_bounded",
+      "note_path": "docs/RECORD_EROSION_BRANCH_VS_ENSEMBLE_PERSISTENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_record_erosion_ensemble_persistence_2026_06_12.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md",
+      "runner_path": "scripts/frontier_record_formation_controlled_copy_write_isometry_2026_06_18.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "record_history_monoid_unbounded_retention_2026-06-05",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md",
+      "runner_path": "scripts/frontier_record_history_monoid_unbounded_retention_2026_06_05.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "record_prerecord_instrument_kernel_gate_2026-06-06",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md",
       "runner_path": "scripts/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "audited_renaming",
-      "claim_id": "single_axiom_hilbert_note",
+      "claim_id": "relative_orientation_fusion_state_selection_pointer_frame_one_vacuous_quotient_bounded_theorem_note_2026-06-10",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
       "claim_type": "bounded_theorem",
-      "effective_status": "audited_renaming",
+      "note_path": "docs/RELATIVE_ORIENTATION_FUSION_STATE_SELECTION_POINTER_FRAME_ONE_VACUOUS_QUOTIENT_BOUNDED_THEOREM_NOTE_2026-06-10.md",
+      "runner_path": "scripts/frontier_relative_orientation_fusion_state_frame_quotient_2026_06_10.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "s3_time_theta_to_slice_rho_e_dependency_firewall_note_2026-06-21",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/S3_TIME_THETA_TO_SLICE_RHO_E_DEPENDENCY_FIREWALL_NOTE_2026-06-21.md",
+      "runner_path": "scripts/frontier_s3_time_theta_to_slice_rho_e_dependency_firewall_2026_06_21.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md",
+      "runner_path": "scripts/frontier_scalar_i_real_generation_k_parity_separation.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "single_axiom_hilbert_note",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/SINGLE_AXIOM_HILBERT_NOTE.md",
       "runner_path": "scripts/frontier_single_axiom_hilbert.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "audited_clean",
-      "claim_id": "teleportation_retained_axis_operator_algebra_closure_note",
+      "claim_id": "supplied_readout_context_two_component_decomposition_bounded_note_2026-07-02",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
       "claim_type": "bounded_theorem",
+      "note_path": "docs/SUPPLIED_READOUT_CONTEXT_TWO_COMPONENT_DECOMPOSITION_BOUNDED_NOTE_2026-07-02.md",
+      "runner_path": "scripts/frontier_supplied_readout_context_two_component_decomposition_2026_07_02.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "teleportation_retained_axis_operator_algebra_closure_note",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md",
       "runner_path": "scripts/frontier_teleportation_retained_axis_operator_algebra_closure.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md",
       "runner_path": "scripts/audit_companion_two_endpoint_gauss_law_invariance_profile_bounded_2026_06_05.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
+      "claim_id": "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07",
       "audit_status": "unaudited",
-      "claim_id": "yt_ward_identity_derivation_theorem",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/WICK_ROTATION_COMPACT_SO4_TO_LORENTZIAN_DIRAC_DOUBLING_ORIENTATION_NOTE_2026-06-07.md",
+      "runner_path": "scripts/wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation.py",
+      "stability_subbucket": "arrow_or_dynamics_bridge"
+    },
+    {
+      "claim_id": "yt_ward_identity_derivation_theorem",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
       "stability_subbucket": "arrow_or_dynamics_bridge"
     },
     {
-      "audit_status": "audited_clean",
-      "claim_id": "arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05",
+      "claim_id": "acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
       "claim_type": "bounded_theorem",
+      "note_path": "docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md",
+      "runner_path": "scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md",
+      "runner_path": "scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+      "runner_path": "scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "action_family_character_semigroup_discriminator_bounded_note_2026-07-02",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/ACTION_FAMILY_CHARACTER_SEMIGROUP_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md",
+      "runner_path": "scripts/frontier_action_family_character_semigroup_discriminator_2026_07_02.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md",
       "runner_path": "scripts/frontier_arrow_from_record_formation_2026_06_05.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md",
       "runner_path": "scripts/frontier_beta6_twocube_closedform_2026_06_04.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_clean",
       "claim_id": "born_lane_comparison_note",
-      "claim_type": "bounded_theorem",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/BORN_LANE_COMPARISON_NOTE.md",
       "runner_path": "scripts/born_compare_modular_central_ln.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_clean",
-      "claim_id": "dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16",
+      "claim_id": "branching_record_budget_inequality_bounded_theorem_note_2026-06-12",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
       "claim_type": "bounded_theorem",
+      "note_path": "docs/BRANCHING_RECORD_BUDGET_INEQUALITY_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_branching_record_budget_inequality_2026_06_12.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "conditional_law_depth_axis_depth_stable_event_bounded_theorem_note_2026-06-12",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/CONDITIONAL_LAW_DEPTH_AXIS_DEPTH_STABLE_EVENT_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_conditional_law_depth_axis_saturation_2026_06_12.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "corner_mode_set_fork_resolution_layer_is_record_dynamics_bounded_note_2026-06-12",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/CORNER_MODE_SET_FORK_RESOLUTION_LAYER_IS_RECORD_DYNAMICS_BOUNDED_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_corner_fork_resolution_layer_record_dynamics_2026_06_12.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "d2_soft_band_truncation_also_closes_bounded_theorem_note_2026-06-12",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/D2_SOFT_BAND_TRUNCATION_ALSO_CLOSES_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_d2_soft_band_closure_2026_06_12.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/D2_TRUNCATED_FLOW_FROZEN_RATIO_ACCUMULATED_BUDGET_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_d2_truncated_flow_frozen_ratio_2026_06_12.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/D2_TRUNCATION_ERROR_BUDGET_FIRST_DATUM_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_d2_truncation_error_budget_2026_06_12.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/D3_TRUNCATED_CLOSURE_RECURS_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_d3_truncated_closure_recurs_2026_06_12.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_CONVERGED_THERMAL_SELECTOR_SUPPORT_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_converged_thermal_selector_support.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_clean",
       "claim_id": "dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16",
-      "claim_type": "bounded_theorem",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SELECTOR_SENSITIVITY_BOUNDARY_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_selector_sensitivity_boundary.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "dynamics_form_from_record_preservation_gauge_invariant_local_class_bounded_theorem_note_2026-06-05",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md",
       "runner_path": "scripts/frontier_dynamics_form_from_record_preservation_2026_06_05.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_conditional",
-      "claim_id": "flavor_center_trace_closed_capstone_note_2026-05-30",
+      "claim_id": "emergent_gauge_heat_kernel_clt_attractor_conditional_on_bi_invariant_dynamics_narrow_theorem_note_2026-06-08",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
       "claim_type": "bounded_theorem",
-      "effective_status": "audited_conditional",
+      "note_path": "docs/EMERGENT_GAUGE_HEAT_KERNEL_CLT_ATTRACTOR_CONDITIONAL_ON_BI_INVARIANT_DYNAMICS_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "runner_path": "scripts/frontier_emergent_gauge_weight_heat_kernel_clt_fixed_point_2026_06_08.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "flavor_center_trace_closed_capstone_note_2026-05-30",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/FLAVOR_CENTER_TRACE_CLOSED_CAPSTONE_NOTE_2026-05-30.md",
       "runner_path": "scripts/flavor_center_trace_closed_2026_05_30.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_clean",
       "claim_id": "flavor_einselection_2sector_modulo_kreality_2026-06-02",
-      "claim_type": "bounded_theorem",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md",
       "runner_path": "scripts/flavor_einselection_2sector_modulo_kreality_2026_06_02.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_conditional",
       "claim_id": "flavor_emergent_chirality_no_transport_note_2026-05-30",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
       "claim_type": "bounded_theorem",
-      "effective_status": "audited_conditional",
       "note_path": "docs/FLAVOR_EMERGENT_CHIRALITY_NO_TRANSPORT_NOTE_2026-05-30.md",
       "runner_path": "scripts/flavor_emergent_chirality_no_transport_2026_05_30.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_clean",
       "claim_id": "flavor_find_j_round1_jcs_measure_neutral_2026-06-02",
-      "claim_type": "bounded_theorem",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/FLAVOR_FIND_J_ROUND1_JCS_MEASURE_NEUTRAL_2026-06-02.md",
       "runner_path": "scripts/flavor_find_J_round1_jcs_measure_neutral_2026_06_02.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_clean",
       "claim_id": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-      "claim_type": "bounded_theorem",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md",
       "runner_path": "scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
+      "claim_id": "gauge_center_sector_record_context_and_theta_q_character_grading_obstruction_bounded_theorem_note_2026-07-01",
       "audit_status": "unaudited",
-      "claim_id": "generation_dial_dynamics_stability_classifier_2026-06-05",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/GAUGE_CENTER_SECTOR_RECORD_CONTEXT_AND_THETA_Q_CHARACTER_GRADING_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-01.md",
+      "runner_path": "scripts/gauge_center_sector_record_context_character_grading_obstruction_2026_07_01.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "gauge_link_per_record_step_rate_dial_unit_variance_point_theorem_note_2026-07-02",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md",
+      "runner_path": "scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07_02.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/GAUGE_MULTIPLAQUETTE_CHARACTER_GLUING_EMERGENT_INTEGER_SECTOR_RECORD_CONTEXT_AND_ACTION_PAIRING_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+      "runner_path": "scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_bounded_note_2026-06-11",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_WORD_PERRON_DERIVED_RHO_COMPOSED_READOUT_BOUNDED_NOTE_2026-06-11.md",
+      "runner_path": "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "generation_dial_dynamics_stability_classifier_2026-06-05",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md",
       "runner_path": "scripts/generation_dial_dynamics_stability_classifier_2026_06_05.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "generation_record_arrow_measure_selector_2026-06-05",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/GENERATION_RECORD_ARROW_MEASURE_SELECTOR_2026-06-05.md",
       "runner_path": "scripts/generation_record_arrow_measure_selector_2026_06_05.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "generation_record_partition_selector_2026-06-05",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/GENERATION_RECORD_PARTITION_SELECTOR_2026-06-05.md",
       "runner_path": "scripts/generation_record_partition_selector_2026_06_05.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
+      "claim_id": "heat_kernel_unique_diffusion_kernel_among_candidate_gauge_actions_narrow_theorem_note_2026-06-08",
       "audit_status": "unaudited",
-      "claim_id": "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/HEAT_KERNEL_UNIQUE_DIFFUSION_KERNEL_AMONG_CANDIDATE_GAUGE_ACTIONS_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "runner_path": "scripts/frontier_heat_kernel_unique_diffusion_kernel_2026_06_08.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "hierarchy_delta0_s2_readout_dressing_leading_order_probe_note_2026-06-11",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/HIERARCHY_DELTA0_S2_READOUT_DRESSING_LEADING_ORDER_PROBE_NOTE_2026-06-11.md",
+      "runner_path": "scripts/frontier_hierarchy_delta0_s2_readout_dressing_leading_order_probe_2026_06_11.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/HIERARCHY_KOIDE_ACPHILAMBDA_TWO_BIT_DECOMPOSITION_NOTE_2026-06-06.md",
       "runner_path": "scripts/frontier_hierarchy_koide_acphilambda_two_bit_decomposition.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "higgs_mass_s4_born_extension_bounded_note_2026-05-10_higgss4",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/HIGGS_MASS_S4_BORN_EXTENSION_BOUNDED_NOTE_2026-05-10_higgsS4.md",
       "runner_path": "scripts/cl3_higgs_mass_s4_born_extension_2026_05_10_higgsS4.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
+      "claim_id": "interleaved_mean_map_peripheral_count_collapse_almost_periodicity_removal_bounded_theorem_note_2026-06-10",
       "audit_status": "unaudited",
-      "claim_id": "koide_a1_probe_continuum_limit_bounded_obstruction_note_2026-05-09_probe15",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/INTERLEAVED_MEAN_MAP_PERIPHERAL_COUNT_COLLAPSE_ALMOST_PERIODICITY_REMOVAL_BOUNDED_THEOREM_NOTE_2026-06-10.md",
+      "runner_path": "scripts/frontier_interleaved_mean_map_peripheral_count_collapse_relaxation_2026_06_10.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "koide_a1_probe_continuum_limit_bounded_obstruction_note_2026-05-09_probe15",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_A1_PROBE_CONTINUUM_LIMIT_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe15.md",
       "runner_path": "scripts/cl3_koide_a1_probe_continuum_limit_2026_05_09_probe15.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_a1_probe_lattice_non_conjugation_bounded_obstruction_note_2026-05-09_probe17",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_A1_PROBE_LATTICE_NON_CONJUGATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe17.md",
       "runner_path": "scripts/cl3_koide_a1_probe_lattice_non_conjugation_2026_05_09_probe17.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_a1_probe_q_readout_functional_bounded_obstruction_note_2026-05-09_probe16",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_A1_PROBE_Q_READOUT_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe16.md",
       "runner_path": "scripts/cl3_koide_a1_probe_q_readout_functional_2026_05_09_probe16.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_a1_probe_rg_fixed_point_bounded_obstruction_note_2026-05-08_probe5",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_A1_PROBE_RG_FIXED_POINT_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe5.md",
       "runner_path": "scripts/cl3_koide_a1_probe_rg_fixed_point_2026_05_08_probe5.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_clean",
       "claim_id": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-      "claim_type": "bounded_theorem",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
       "runner_path": "scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_bae_probe_hw_sector_identification_bounded_obstruction_note_2026-05-09_probe27",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_BAE_PROBE_HW_SECTOR_IDENTIFICATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe27.md",
       "runner_path": "scripts/cl3_koide_bae_probe_hw_sector_identification_2026_05_09_probe27.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_bae_probe_interacting_dynamics_bounded_obstruction_note_2026-05-09_probe28",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_BAE_PROBE_INTERACTING_DYNAMICS_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe28.md",
       "runner_path": "scripts/cl3_koide_bae_probe_interacting_dynamics_2026_05_09_probe28.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_bae_probe_kappa_prediction_test_partial_falsification_note_2026-05-09_probe29",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_BAE_PROBE_KAPPA_PREDICTION_TEST_PARTIAL_FALSIFICATION_NOTE_2026-05-09_probe29.md",
       "runner_path": "scripts/cl3_koide_bae_probe_kappa_prediction_test_2026_05_09_probe29.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_bae_probe_lepton_triplet_c3_cycle_bounded_note_2026-05-09_probe23",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_BAE_PROBE_LEPTON_TRIPLET_C3_CYCLE_BOUNDED_NOTE_2026-05-09_probe23.md",
       "runner_path": "scripts/cl3_koide_bae_probe_lepton_triplet_c3_cycle_2026_05_09_probe23.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_bae_probe_native_lattice_flow_bounded_obstruction_note_2026-05-09_probe21",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_BAE_PROBE_NATIVE_LATTICE_FLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe21.md",
       "runner_path": "scripts/cl3_koide_bae_probe_native_lattice_flow_2026_05_09_probe21.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_bae_probe_physical_extremization_bounded_obstruction_note_2026-05-09_probe25",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_BAE_PROBE_PHYSICAL_EXTREMIZATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe25.md",
       "runner_path": "scripts/cl3_koide_bae_probe_physical_extremization_2026_05_09_probe25.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
       "claim_type": "bounded_theorem",
-      "effective_status": "unaudited",
       "note_path": "docs/KOIDE_CARRIER_SCORING_NEEDS_NONTRIVIAL_MODULAR_NOTE_2026-06-02.md",
       "runner_path": "scripts/koide_carrier_scoring_needs_nontrivial_modular_2026_06_02.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
+      "claim_id": "koide_circulant_character_derivation_note_2026-04-18",
       "audit_status": "unaudited",
-      "claim_id": "koide_delta_rank2_selector_is_the_clifford_chirality_domain_wall_edge_bounded_note_2026-06-05",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md",
+      "runner_path": "scripts/koide_circulant_character_derivation_check_2026_06_09.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "koide_delta_rank2_selector_is_the_clifford_chirality_domain_wall_edge_bounded_note_2026-06-05",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_DELTA_RANK2_SELECTOR_IS_THE_CLIFFORD_CHIRALITY_DOMAIN_WALL_EDGE_BOUNDED_NOTE_2026-06-05.md",
       "runner_path": "scripts/audit_companion_koide_delta_rank2_chirality_selector_exact.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_finite_beta_weight_is_the_partition_bit_note_2026-06-02",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_FINITE_BETA_WEIGHT_IS_THE_PARTITION_BIT_NOTE_2026-06-02.md",
       "runner_path": "scripts/koide_finite_beta_weight_is_the_partition_bit_2026_06_02.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
+      "claim_id": "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05",
       "audit_status": "unaudited",
-      "claim_id": "koide_kappa_two_orbit_dimension_factorization_note_2026-04-19",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md",
+      "runner_path": "scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "koide_kappa_two_orbit_dimension_factorization_note_2026-04-19",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_KAPPA_TWO_ORBIT_DIMENSION_FACTORIZATION_NOTE_2026-04-19.md",
       "runner_path": "scripts/frontier_koide_kappa_two_orbit_dimension_factorization.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
+      "claim_id": "koide_occupancy_durability_premise_equivalence_on_registered_surface_bounded_theorem_note_2026-06-11",
       "audit_status": "unaudited",
-      "claim_id": "koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/KOIDE_OCCUPANCY_DURABILITY_PREMISE_EQUIVALENCE_ON_REGISTERED_SURFACE_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+      "runner_path": "scripts/frontier_koide_oo_rd_premise_equivalence_2026_06_11.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/KOIDE_OCCUPANCY_KERNEL_COEFFICIENT_NOT_FIXED_BY_RETAINED_CORNER_MEASURE_BOUNDED_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_koide_occupancy_kernel_coefficient_not_fixed_2026_06_12.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/KOIDE_OO_RD_PREMISE_RELATION_ON_CURRENT_SURFACE_NARROW_THEOREM_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_koide_oo_rd_premise_relation_2026_06_12.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_PHASE_APS_ETA_PARITY_ROUTE_NARROW_THEOREM_NOTE_2026-05-23.md",
       "runner_path": "scripts/frontier_koide_phase_aps_eta_parity_route_discriminator.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_clean",
-      "claim_id": "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
-      "claim_type": "no_go",
-      "effective_status": "retained_pending_chain",
-      "note_path": "docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md",
-      "runner_path": "scripts/audit_companion_koide_r_half_not_symmetry_protected_exact.py",
-      "stability_subbucket": "flow_or_thermal_stability"
-    },
-    {
-      "audit_status": "audited_conditional",
-      "claim_id": "koide_records_objectivity_conditional_note_2026-05-31",
-      "claim_type": "bounded_theorem",
-      "effective_status": "audited_conditional",
-      "note_path": "docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md",
-      "runner_path": "scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py",
-      "stability_subbucket": "flow_or_thermal_stability"
-    },
-    {
+      "claim_id": "koide_r_half_durability_stationarity_conditional_chain_bounded_theorem_note_2026-06-11",
       "audit_status": "unaudited",
-      "claim_id": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+      "runner_path": "scripts/frontier_koide_r_half_durability_stationarity_chain_2026_06_11.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_RP_SPECTRUM_REDUCE_TO_TRANSFER_POSITIVITY_NARROW_THEOREM_NOTE_2026-06-02.md",
       "runner_path": "scripts/frontier_koide_rp_spectrum_reduce_to_transfer_positivity.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_s_substep4_aclambda_new_science_note_2026-05-08_probes_substep4_aclambda",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_S_SUBSTEP4_ACLAMBDA_NEW_SCIENCE_NOTE_2026-05-08_probeS_substep4_aclambda.md",
       "runner_path": "scripts/cl3_koide_s_substep4_aclambda_2026_05_08_probeS_substep4_aclambda.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_x_bae_pauli_antisymmetrization_note_2026-05-08_probex_bae_pauli",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_X_BAE_PAULI_ANTISYMMETRIZATION_NOTE_2026-05-08_probeX_bae_pauli.md",
       "runner_path": "scripts/cl3_koide_x_bae_pauli_2026_05_08_probeX_bae_pauli.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_x_l1_threshold_heavy_quark_wilson_note_2026-05-08_probex_l1_threshold",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_X_L1_THRESHOLD_HEAVY_QUARK_WILSON_NOTE_2026-05-08_probeX_L1_threshold.md",
       "runner_path": "scripts/cl3_koide_x_l1_threshold_2026_05_08_probeX_L1_threshold.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md",
       "runner_path": "scripts/cl3_koide_z_substrate_generation_z3_2026_05_08_probeZ_substrate_generation_z3.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_clean",
-      "claim_id": "persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16",
+      "claim_id": "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
       "claim_type": "bounded_theorem",
+      "note_path": "docs/MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "runner_path": "scripts/frontier_minimal_coupling_fiber_frame_connection_2026_06_08.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17",
+      "audit_status": "audited_conditional",
+      "effective_status": "audited_conditional",
+      "claim_type": "no_go",
+      "note_path": "docs/N5_SINGLE_GENERATOR_CLOCK_EXCHANGE_INVARIANCE_NARROW_NO_GO_NOTE_2026-06-17.md",
+      "runner_path": "scripts/n5_single_generator_clock_exchange_no_go_2026_06_17.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_occupancy_atom_outcome_dictionary_2026_06_12.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "past_hypothesis_existence_reduction_append_only_well_foundedness_bounded_theorem_note_2026-06-11",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/PAST_HYPOTHESIS_EXISTENCE_REDUCTION_APPEND_ONLY_WELL_FOUNDEDNESS_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+      "runner_path": "scripts/frontier_past_hypothesis_existence_reduction_append_only_2026_06_11.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/PERSISTENT_OBJECT_BLENDED_READOUT_OUTER_TRANSFER_SWEEP_NOTE_2026-04-16.md",
       "runner_path": "scripts/persistent_object_blended_readout_outer_transfer_sweep.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
+      "claim_id": "post_record_admitted_sample_target_vector_interface_2026-06-06",
       "audit_status": "audited_clean",
-      "claim_id": "post_record_finite_target_kernel_stability_2026-06-06",
-      "claim_type": "bounded_theorem",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md",
+      "runner_path": "scripts/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "post_record_finite_supplied_weight_normalization_lemma_note_2026-06-16",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/POST_RECORD_FINITE_SUPPLIED_WEIGHT_NORMALIZATION_LEMMA_NOTE_2026-06-16.md",
+      "runner_path": "scripts/frontier_post_record_finite_supplied_weight_normalization_lemma_2026_06_16.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "post_record_finite_target_kernel_stability_2026-06-06",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/POST_RECORD_FINITE_TARGET_KERNEL_STABILITY_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_finite_target_kernel_stability_2026_06_06.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_conditional",
       "claim_id": "post_record_flow_thermal_stable_setting_certificate_2026-06-06",
-      "claim_type": "positive_theorem",
-      "effective_status": "audited_conditional",
+      "audit_status": "audited_renaming",
+      "effective_status": "audited_renaming",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
+      "claim_id": "post_record_persistent_record_production_bridge_prototype_2026-06-06",
       "audit_status": "audited_conditional",
-      "claim_id": "post_record_stability_dynamics_selector_subdivision_2026-06-06",
-      "claim_type": "meta",
       "effective_status": "audited_conditional",
-      "note_path": "docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md",
-      "runner_path": "scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md",
+      "runner_path": "scripts/frontier_post_record_persistent_record_production_bridge_prototype_2026_06_06.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_clean",
       "claim_id": "post_record_stable_kernel_count_audit_interface_2026-06-06",
-      "claim_type": "bounded_theorem",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/POST_RECORD_STABLE_KERNEL_COUNT_AUDIT_INTERFACE_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_stable_kernel_count_audit_interface_2026_06_06.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_clean",
       "claim_id": "post_record_stable_kernel_expected_frequency_interface_2026-06-06",
-      "claim_type": "bounded_theorem",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/POST_RECORD_STABLE_KERNEL_EXPECTED_FREQUENCY_INTERFACE_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_stable_kernel_frequency_interface_2026_06_06.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
+      "claim_id": "post_record_supplied_concentration_certificate_interface_2026-06-06",
       "audit_status": "audited_clean",
-      "claim_id": "post_record_supplied_family_lift_certificate_interface_2026-06-06",
-      "claim_type": "bounded_theorem",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md",
+      "runner_path": "scripts/frontier_post_record_supplied_concentration_certificate_interface_2026_06_06.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "post_record_supplied_family_lift_certificate_interface_2026-06-06",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/POST_RECORD_SUPPLIED_FAMILY_LIFT_CERTIFICATE_INTERFACE_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_supplied_family_lift_certificate_interface_2026_06_06.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
+      "claim_id": "post_record_supplied_kernel_selection_rule_interface_2026-06-06",
       "audit_status": "audited_clean",
-      "claim_id": "post_record_supplied_selection_rule_interface_2026-06-06",
-      "claim_type": "bounded_theorem",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md",
+      "runner_path": "scripts/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "post_record_supplied_orientation_bridge_interface_2026-06-06",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md",
+      "runner_path": "scripts/frontier_post_record_supplied_orientation_bridge_interface_2026_06_06.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "post_record_supplied_selection_rule_interface_2026-06-06",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/POST_RECORD_SUPPLIED_SELECTION_RULE_INTERFACE_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_supplied_selection_rule_interface_2026_06_06.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_clean",
       "claim_id": "post_record_two_state_markov_stability_interface_2026-06-06",
-      "claim_type": "bounded_theorem",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/POST_RECORD_TWO_STATE_MARKOV_STABILITY_INTERFACE_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_two_state_markov_stability_interface_2026_06_06.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
+      "claim_id": "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22",
       "audit_status": "unaudited",
-      "claim_id": "record_classicalization_dynamics_firewall_2026-06-05",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
-      "note_path": "docs/RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md",
-      "runner_path": null,
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md",
+      "runner_path": "scripts/pwc_commuting_cgf_framework_native_2026_06_17.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
+      "claim_id": "record_classicalization_dynamics_firewall_2026-06-05",
       "audit_status": "unaudited",
-      "claim_id": "record_equal_letter_stable_location_2026-06-05",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md",
+      "runner_path": "scripts/frontier_record_typing_firewall_exact_2026_06_05.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "record_dominated_pointer_sector_transport_generator_vacuous_link_bounded_theorem_note_2026-06-09",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/RECORD_DOMINATED_POINTER_SECTOR_TRANSPORT_GENERATOR_VACUOUS_LINK_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+      "runner_path": "scripts/frontier_record_dominated_pointer_transport_generator_2026_06_09.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "record_equal_letter_stable_location_2026-06-05",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/RECORD_EQUAL_LETTER_STABLE_LOCATION_2026-06-05.md",
       "runner_path": "scripts/frontier_record_equal_letter_stable_location_2026_06_05.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
+      "claim_id": "record_formation_to_kraus_isometry_bridge_2026-06-06",
       "audit_status": "unaudited",
-      "claim_id": "record_prior_stability_selector_2026-06-05",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md",
+      "runner_path": "scripts/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/RECORD_POINTER_CONTROLLED_COUPLING_FINITE_EXAMPLE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+      "runner_path": "scripts/record_pointer_controlled_coupling_finite_example_2026_06_15.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+      "runner_path": "scripts/frontier_record_preservation_conserves_within_sector_measure_2026_06_15.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "record_prior_stability_selector_2026-06-05",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/RECORD_PRIOR_STABILITY_SELECTOR_2026-06-05.md",
       "runner_path": "scripts/frontier_record_prior_stability_selector_2026_06_05.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_clean",
       "claim_id": "record_production_interface_principle_2026-06-06",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
       "claim_type": "bounded_theorem",
-      "effective_status": "retained_bounded",
       "note_path": "docs/RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md",
       "runner_path": "scripts/frontier_record_production_interface_principle_2026_06_06.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
+      "claim_id": "record_tick_signature_neutral_2026-06-23",
       "audit_status": "unaudited",
-      "claim_id": "scalar_selector_remaining_open_imports_2026-04-20",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/RECORD_TICK_SIGNATURE_NEUTRAL_2026-06-23.md",
+      "runner_path": "scripts/record_tick_signature_neutral_2026_06_23.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "scalar_selector_remaining_open_imports_2026-04-20",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md",
       "runner_path": null,
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "unaudited",
       "claim_id": "scalar_selector_synthesis_note_2026-04-19",
-      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/SCALAR_SELECTOR_SYNTHESIS_NOTE_2026-04-19.md",
       "runner_path": "scripts/frontier_koide_z3_joint_projector_identity.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_clean",
-      "claim_id": "stable_post_record_dial_location_certificate_2026-06-06",
+      "claim_id": "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
       "claim_type": "bounded_theorem",
+      "note_path": "docs/SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md",
+      "runner_path": "scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md",
+      "runner_path": "scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md",
+      "runner_path": "scripts/frontier_sm_gstar_hunit_neutral_radial_orbit_2026_06_18.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "stable_post_record_dial_location_certificate_2026-06-06",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/STABLE_POST_RECORD_DIAL_LOCATION_CERTIFICATE_2026-06-06.md",
       "runner_path": "scripts/frontier_stable_post_record_dial_location_certificate_2026_06_06.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
-      "audit_status": "audited_clean",
       "claim_id": "teleportation_apparatus_dynamics_closure_note",
-      "claim_type": "bounded_theorem",
+      "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md",
       "runner_path": "scripts/frontier_teleportation_apparatus_dynamics_closure.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
+      "claim_id": "thermodynamic_ph_quantitative_clause_record_budget_ledger_bounded_theorem_note_2026-06-11",
       "audit_status": "unaudited",
-      "claim_id": "wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/THERMODYNAMIC_PH_QUANTITATIVE_CLAUSE_RECORD_BUDGET_LEDGER_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+      "runner_path": "scripts/frontier_thermodynamic_ph_record_budget_ledger_2026_06_11.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+      "runner_path": "scripts/theta_4d_carrier_flux_cohomology_intersection_pairing_2026_07_02.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "theta_emergent_q_weighting_reality_rg_stable_bounded_theorem_note_2026-06-13",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/THETA_EMERGENT_Q_WEIGHTING_REALITY_RG_STABLE_BOUNDED_THEOREM_NOTE_2026-06-13.md",
+      "runner_path": "scripts/frontier_theta_emergent_q_cp_rg_stability_2026_06_13.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "unraveled_step_law_bi_invariant_quasi_stationarity_split_bounded_theorem_note_2026-06-10",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/UNRAVELED_STEP_LAW_BI_INVARIANT_QUASI_STATIONARITY_SPLIT_BOUNDED_THEOREM_NOTE_2026-06-10.md",
+      "runner_path": "scripts/frontier_unraveled_step_law_bi_invariant_quasi_stationarity_split_2026_06_10.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_CLOSED_FORM_NOTE_2026-05-09.md",
       "runner_path": "scripts/frontier_wilson_bz_corner_hamming_staircase_closed_form_certificate_2026_05_09.py",
       "stability_subbucket": "flow_or_thermal_stability"
     },
     {
+      "claim_id": "wilson_temporal_kernel_casimir_generator_beta_gbare_transport_theorem_note_2026-07-01",
       "audit_status": "unaudited",
-      "claim_id": "yt_bridge_hessian_selector_note",
-      "claim_type": "bounded_theorem",
       "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/WILSON_TEMPORAL_KERNEL_CASIMIR_GENERATOR_BETA_GBARE_TRANSPORT_THEOREM_NOTE_2026-07-01.md",
+      "runner_path": "scripts/wilson_temporal_kernel_casimir_generator_beta_gbare_transport_2026_07_01.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/WITHIN_SECTOR_ESS_ADEQUACY_CONCLUSION_SURVIVES_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_within_sector_ess_adequacy_2026_06_12.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "within_sector_third_moment_consistent_all_seeds_bounded_theorem_note_2026-06-12",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/WITHIN_SECTOR_THIRD_MOMENT_CONSISTENT_ALL_SEEDS_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_within_sector_third_moment_2026_06_12.py",
+      "stability_subbucket": "flow_or_thermal_stability"
+    },
+    {
+      "claim_id": "yt_bridge_hessian_selector_note",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
       "note_path": "docs/YT_BRIDGE_HESSIAN_SELECTOR_NOTE.md",
       "runner_path": "scripts/frontier_yt_bridge_hessian_selector.py",
       "stability_subbucket": "flow_or_thermal_stability"
     }
   ],
-  "source_runner": "scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py",
   "subbucket_counts": {
-    "arrow_or_dynamics_bridge": 36,
-    "flow_or_thermal_stability": 58
+    "arrow_or_dynamics_bridge": 63,
+    "flow_or_thermal_stability": 106
   }
 }

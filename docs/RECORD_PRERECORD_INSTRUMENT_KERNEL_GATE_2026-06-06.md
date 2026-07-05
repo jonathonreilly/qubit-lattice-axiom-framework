@@ -1,19 +1,71 @@
-# Record Pre-Record Instrument Kernel Gate
+# Record Pre-Record Instrument Kernel Gate Under Supplied Readout Context
 
 Date: 2026-06-06
 
 Status: bounded-support
+**Claim type:** bounded_theorem / bounded finite algebra under supplied readout context
+**Status authority:** independent audit lane only. This source note records
+finite algebra under cited bounded projective/Lueders authorities and a
+supplied readout context; it does not set an audit verdict or downstream
+effective status.
 
-actual_current_surface_status: bounded-support
-trace_class: upstream_support
-reachability_to_target: supports
-conditional_surface_status: "exact finite algebra under cited retained-bounded projective readout authorities and a supplied readout context"
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: true_for_bounded_support_only
-proposal_allowed_reason: "The projective instrument and trace-normalized branch are supplied by cited bounded projective/Lueders authorities; the readout context remains supplied and no bare retained status is claimed."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
+## 2026-06-15 audit-boundary repair: supplied-context finite algebra only
+
+This row is a finite supplied-context kernel theorem, not a physical
+production-generator theorem. The load-bearing claim is exactly:
+
+```text
+one-qubit state
++ cited bounded projective/Lueders instrument authority
++ supplied readout context
+-> probability vector over possible future record atoms,
+```
+
+followed by the separate realized-outcome typing step:
+
+```text
+chosen outcome -> one-hot post-record atom/count update.
+```
+
+The readout context and the physical production generator are row-local
+supplied inputs. They are not derived, selected, or promoted here. Any
+downstream theorem that needs an endogenous physical readout context,
+apparatus dynamics, Markov generator, or rate/clock normalization must cite a
+separate retained authority; it cannot cite this row for more than the finite
+supplied-context algebra above.
+
+No new axiom, Tier-A admission, measurement primitive, probability axiom,
+arbitrary readout principle, or audit-status change is introduced.
+
+## 2026-06-17 paired no-go: context/generator nonidentifiability
+
+The companion no-go
+[`RECORD_CONTEXT_GENERATOR_NONIDENTIFIABILITY_NO_GO_2026-06-17.md`](RECORD_CONTEXT_GENERATOR_NONIDENTIFIABILITY_NO_GO_2026-06-17.md)
+makes the supplied-input boundary executable.
+
+It proves on the same one-qubit source state that the cited projective/Lueders
+finite algebra admits multiple complete readout contexts with different
+probability vectors, while the post-record realized atom/count update remains
+the same one-hot grammar after selection. It also exhibits finite stochastic
+and Markov-generator witnesses showing that a one-step production probability
+vector does not identify the physical kernel, generator, or clock/rate unit.
+
+Therefore this row remains exactly a supplied-context finite algebra theorem.
+It may not be cited as an endogenous readout-context theorem or physical
+record-production generator theorem unless a separate retained authority is
+added by later review/audit.
+
+## 2026-06-12 audit firewall: no retained production-kernel promotion
+
+No further repair is needed for the stated supplied-context finite algebra:
+with cited bounded projective/Lueders authorities and a supplied readout
+context, the runner verifies the one-qubit probability-to-record typing.
+
+This does not promote the packet to bare retained status. The readout context,
+probability/Born-rule authority, physical production generator, and clock/rate
+normalization remain outside the Record axiom and outside this finite gate.
+No new axiom, Tier-A admission, arbitrary measurement primitive, or audit
+status is introduced here.
 
 ## Summary
 
@@ -58,8 +110,11 @@ logs/runner-cache/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.tx
 Scorecard:
 
 ```text
-PASS=33 FAIL=0
+PASS=38 FAIL=0
 ```
+
+The scorecard above is synchronized with the committed SHA-pinned cache at
+`logs/runner-cache/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.txt`.
 
 ## Authority Repair
 

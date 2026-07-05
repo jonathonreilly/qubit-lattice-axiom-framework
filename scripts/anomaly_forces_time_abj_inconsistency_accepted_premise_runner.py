@@ -6,7 +6,8 @@ The runner checks only:
 1. exact rational anomaly-trace arithmetic for the retained graph-first
    LH SM content (Q_L = (2,3)_{+1/3} plus L_L = (2,1)_{-1});
 2. the supplied (P1) accepted-premise packet entry (ABJ result for chiral
-   gauge theories) is recorded in the source note;
+   gauge theories), the retained-bounded P-HY LH-surface supplier, and
+   current P-COMP/P-REC premise edges are recorded in the source note;
 3. anomaly cancellation by the SM right-handed singlet completion
    (y_1, y_2, y_3, y_4) = (4/3, -2/3, -2, 0) by exact rational arithmetic;
 4. an explicit construction of the Clifford volume element / chirality
@@ -70,13 +71,25 @@ def part0_source_firewall() -> None:
     note = NOTE_PATH.read_text(encoding="utf-8")
     required_phrases = [
         "Accepted Premises Registration",
+        "Dependency-edge repair (2026-06-16)",
         "(P1)",
+        "P-ABJ",
+        "P-HY",
+        "P-COMP",
+        "P-REC",
+        "B-AXIS",
         "ABJ anomaly-to-inconsistency",
         "**Status authority:** independent audit lane only",
         "**Type:** bounded_theorem",
         "NO NEW ADMISSIONS",
         "does **not** derive",
-        "no new repo-wide theory class",
+        "retained-bounded P-HY LH-surface supplier",
+        "ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md",
+        "HYPERCHARGE_IDENTIFICATION_NOTE.md",
+        "does not derive P-COMP or P-REC",
+        "does not widen P-HY beyond the bounded left-handed hypercharge-identification surface",
+        "NATIVE_GAUGE_LEFT_HANDED_ABELIAN_SURFACE_BOUNDED_NOTE_2026-05-23.md",
+        "No new axiom, no new admission",
         RUNNER_PATH,
     ]
     for phrase in required_phrases:
@@ -97,11 +110,22 @@ def part0_source_firewall() -> None:
             phrase not in note,
         )
 
-    # parent text must contain the admission-(i) prose this bridge formalizes
+    # Parent text must contain the current named-premise vocabulary this bridge
+    # formalizes. This intentionally tracks P-ABJ/B-AXIS rather than the older
+    # admission-(i)/(iv) prose.
     parent = PARENT_NOTE_PATH.read_text(encoding="utf-8")
     check(
-        "parent ANOMALY_FORCES_TIME_THEOREM names admission (i) as bare external admission",
-        "admission (i)" in parent and "ABJ" in parent,
+        "parent ANOMALY_FORCES_TIME_THEOREM names P-ABJ as declared external ABJ premise",
+        "P-ABJ" in parent
+        and "Declared premise (external)" in parent
+        and "ABJ anomaly-to-inconsistency" in parent,
+    )
+    for phrase in ["P-HY", "P-COMP", "P-REC", "B-AXIS"]:
+        check(f"parent ANOMALY_FORCES_TIME_THEOREM contains premise edge {phrase}", phrase in parent)
+    check(
+        "parent records Native Gauge Closure no longer supplies full U(1)_Y completion",
+        "anomaly-complete `U(1)_Y`" in parent
+        and "SU(2)-singlet completion" in parent,
     )
 
 
@@ -236,10 +260,12 @@ def part3_sm_cancellation() -> None:
         str(n_lh_su2_doublets),
     )
 
-    # Explicit SM hypercharge values match retained NATIVE_GAUGE_CLOSURE_NOTE values
+    # Explicit SM hypercharge values match the declared P-COMP Standard Model
+    # witness in the current parent theorem. They are not credited to
+    # NATIVE_GAUGE_CLOSURE_NOTE.
     expected = (Fraction(4, 3), Fraction(-2, 3), Fraction(-2, 1), Fraction(0, 1))
     check(
-        "RH SM hypercharges (4/3, -2/3, -2, 0) match retained NATIVE_GAUGE_CLOSURE_NOTE",
+        "RH SM hypercharges (4/3, -2/3, -2, 0) match declared P-COMP witness",
         (y1, y2, y3, y4) == expected,
     )
 
@@ -402,11 +428,13 @@ def part5_dt_parity() -> None:
             check(f"d_t={d_t} even -> d=d_s+d_t={d} odd (chirality incompatible)", not is_even)
 
     # The bridge stops at "d_t in {1, 3, 5, ...}", not at "d_t = 1".
-    # Verify the parent theorem cites admission (iv) for the final pin.
+    # Verify the parent theorem names B-AXIS, not this bridge, for the final pin.
     parent = PARENT_NOTE_PATH.read_text(encoding="utf-8")
     check(
-        "parent ANOMALY_FORCES_TIME_THEOREM names admission (iv) (single-clock) for d_t > 1 exclusion",
-        "admission (iv)" in parent and "single-clock" in parent,
+        "parent ANOMALY_FORCES_TIME_THEOREM names B-AXIS for d_t > 1 exclusion",
+        "B-AXIS" in parent
+        and "d_t <= 1" in parent
+        and "one admitted clock factor" in parent,
     )
 
 
@@ -459,7 +487,8 @@ def main() -> int:
     if FAIL == 0:
         print(
             "VERDICT: bounded ABJ-inconsistency accepted-premise bridge passes; "
-            "LH-content anomaly + (P1) ABJ-inconsistency + named dependencies "
+            "LH-content anomaly + P-ABJ/P1 + retained-bounded P-HY supplier "
+            "+ P-COMP/P-REC + named dependencies "
             "force d_t in {odd positives} by exact rational arithmetic."
         )
         return 0

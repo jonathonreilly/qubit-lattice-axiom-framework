@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/frontier_slab_boundary_eta_nonuniversal_2026_06_12.py
+runner_sha256: 1e8afedf80b8c3dde39ebdf44f50c296e041898a7385e86d817995b1d6db3aed
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.68
+status: ok
+----- stdout -----
+============================================================================================
+REDUCIBLE C_3 WILSON SLAB: GLOBAL ZERO, PER-EDGE NON-UNIVERSAL
+============================================================================================
+
+============================================================================================
+S1 anchor: in-gap signed mode count
+============================================================================================
+  recovered bottom counts: omega=+1, omega2=-1, D=+2
+  recovered top counts:    omega=-1, omega2=+1, D=-2
+  [PASS] [S1] bottom edge D = +2
+  [PASS] [S1] top edge D = -2
+
+============================================================================================
+S2 global zero, eps stability, and L convergence
+============================================================================================
+  [PASS] [S2] all total quantities vanish at L_h=128, eps=0.05  (max abs = 7.105e-14)
+  [PASS] [S2] eps tail |eps0.02 - eps0.05| is zero for totals  (max tail = 8.527e-14)
+  [PASS] [S2] L tail |L128 - L64| is zero for totals  (max tail = 6.173e-14)
+  [PASS] [S2] full eps/L/parameter grid is globally zero on the open-uniform slab  (grid max = 1.563e-13)
+  [PASS] [S2] the 'sharp domain wall' label is computationally inert (reproduces the open-uniform slab); the sharp-domain-wall boundary condition is NOT computed  (max label diff = 0.000e+00)
+
+============================================================================================
+S3 per-edge nonzero, parameter-dependent, and non-2/9
+============================================================================================
+  [PASS] [S3] per-edge eta_omega(bottom) at (r,m0)=(0.5, 0.5) matches verified value  (got 0.1223, expected 0.1223, top -0.1223)
+  [PASS] [S3] per-edge eta_omega(bottom) at (r,m0)=(0.5, 1.5) matches verified value  (got 0.2007, expected 0.2007, top -0.2007)
+  [PASS] [S3] per-edge eta_omega(bottom) at (r,m0)=(1.0, 0.5) matches verified value  (got 0.0499, expected 0.0499, top -0.0499)
+  [PASS] [S3] all three per-edge values are genuinely nonzero  (min |value| = 0.0499)
+  [PASS] [S3] the three per-edge values are pairwise distinct  (minimum gap = 0.0724)
+  [PASS] [S3] no per-edge value is within 0.01 of 2/9  ((0.5, 0.5):0.0999, (0.5, 1.5):0.0215, (1.0, 0.5):0.1723)
+  [PASS] [S3] closest tested point is the 0.2007 value, distance about 0.0215  (best point = (0.5, 1.5), distance = 0.0215)
+
+============================================================================================
+S4 total-zero misread guard
+============================================================================================
+  total = 0; |0 - 2/9| = 0.222222222222; not a hit; the total is zero
+  [PASS] [S4] distance of the zero total from 2/9 is arithmetic, not evidence
+
+============================================================================================
+S5 trivial control and structural source hygiene
+============================================================================================
+  [PASS] [S5] r=0, m0=4 trivial control has no per-edge or total remainder  (L=32: edge=(1.22e-15,1.22e-15), total=0.00e+00; L=64: edge=(1.15e-14,1.15e-14), total=0.00e+00; L=128: edge=(8.88e-16,8.88e-16), total=0.00e+00)
+  [PASS] [S5] no-delta structural check: no such Python variable or symbol  (offenders = [])
+
+============================================================================================
+B-checks: note wiring, firewall, links, and map
+============================================================================================
+  [PASS] [B1] edge-engine note pins the real Wilson-cylinder phrase
+  [PASS] [B2] firewall and WALLS-MOVE sentences are present
+  [PASS] [B3] forbidden positive-closure phrases are absent
+  [PASS] [B4] dependency markdown link inventory is exactly two  (links = 2)
+  [PASS] [B5] context names are backticked
+  [PASS] [B6] No-promotion statement present
+  [PASS] [B7] standard status-authority lines present
+  [PASS] [B8] five-wall map paragraph and two surviving mechanism classes present
+  [PASS] [B9] dependencies are the requested two markdown links
+  [PASS] [B10] primary runner and runner cache links are present
+
+SUMMARY/TOTAL: PASS=27 FAIL=0
+SUMMARY: PASS=27 FAIL=0
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

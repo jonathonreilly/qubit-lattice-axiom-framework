@@ -10,17 +10,19 @@ Run `/framework-refresher` first if you have not this session.
 
 ## Allowed Starting Points (nothing else)
 
-1. **The three axioms** — Lattice, Quantum, Record — as stated in the current
-   minimal-axioms memo (resolve via `docs/audit/data/axiom_premise_nodes.json`
-   → `minimal_axioms.current_path`). Each memo section's "does not supply"
-   exclusion list is binding.
+1. **The four axioms** — Lattice, Qubit, Admissibility, Record — as stated in
+   the current minimal-axioms memo (resolve via
+   `docs/audit/data/axiom_premise_nodes.json` →
+   `minimal_axioms.current_path`). The memo's exclusion lists and downstream
+   boundary sections are binding.
 2. **Approved primitives** registered in
    `docs/audit/data/axiom_premise_nodes.json`, used strictly within what their
    source notes grant (run
    `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`). Currently:
    `scale_reference_primitive` (Planck scale reference as units conversion
-   only) and `kinetic_isotropy_primitive` (structural OS0 kinetic-form
-   isotropy `c_t = c_s` only).
+   only), `kinetic_isotropy_primitive` (structural OS0 kinetic-form
+   isotropy `c_t = c_s` only), and `realized_state_primitive` (pointwise
+   evaluation at the supplied law-admissible realized state only).
 3. **Retained-grade theorems** — verify each via `/ledger` that
    `effective_status` is `retained`, `retained_bounded`, or `retained_no_go`
    on `origin/main`. A note's own `Status:` header is not evidence.
@@ -131,3 +133,18 @@ route it through `/review-loop`.
   {entanglement / gravity / inertia / confinement}" as an argument — stop
   and rephrase as a structural statement or a disclosed comparator.
 - No lock needed — this is a thinking exercise until a runner is built.
+
+## Execution Mechanism (standing — 2026-06-12)
+
+All execution under this command runs through the workhorse split (see the
+`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
+line-by-line, and lands; the strongest configured text worker via `codex exec`
+executes bounded note/runner drafting, scratch computation, structured
+extraction, and panel lens execution (lenses run `-s read-only`; verdict
+synthesis is never delegated).
+No-go planning discipline applies: read the actual no-go note's primary text
+and plan against its exact audited scope, never its title or a secondary
+summary; if work reveals no-go language broader than its audited
+`claim_scope`, queue a narrowing repair PR. Where this command references
+review-loop or audit steps, those lanes are owner-operated (standing rule
+2026-06-11): prepare the PR/review surface and hand off; never run them.

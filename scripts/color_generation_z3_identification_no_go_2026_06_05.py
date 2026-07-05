@@ -3,10 +3,12 @@
 
 Runner for docs/COLOR_GENERATION_Z3_IDENTIFICATION_NO_GO_2026-06-05.md.
 
-Result (no-go, claim_type=theorem):
+Result (bounded no-go):
 
     The color-SU(3) carrier and the generation carrier cannot be identified
-    as Z_3 representations, because their Z_3 characters are inequivalent.
+    as the same abstract Z_3 representation, because their Z_3 characters are
+    inequivalent. Physical SM color/generation identification remains a separate
+    bridge question.
 
 Adopted premises (cited by name): the color and generation carrier provenance
 from Lattice/Quantum structure. The two carriers and their Z_3 actions are:
@@ -35,7 +37,8 @@ import the value from any note) and computes the obstruction:
   4. the Schur obstruction: dim Hom_{Z_3}(generation, color) = 3 (all of it in
      the single shared chi_w line), yet every intertwiner has rank <= 1, so no
      equivariant isomorphism exists;
-  5. the precise import that WOULD bridge it (stipulate the generation Z_3 to
+  5. the precise import that WOULD identify the abstract representations
+     (stipulate the generation Z_3 to
      act as w * I_3, discarding the derived axis-cycle), shown to be a
      non-native stipulation -- an import, not a consequence of the named
      premises alone.
@@ -324,8 +327,8 @@ def main() -> int:
     print("COLOR_GENERATION_Z3_IDENTIFICATION_NO_GO  (derivation runner)")
     print("=" * 78)
     print("Premises: cited color and generation carrier provenance.")
-    print("Result: color-SU(3) and generation carriers cannot be identified")
-    print("        because their Z_3 characters are inequivalent.")
+    print("Result: the supplied color-carrier and generation-carrier Z_3 actions")
+    print("        cannot be identified because their characters are inequivalent.")
 
     chi_gen, chi_col = step1_characters()
     step2_inequivalence(chi_gen, chi_col)
@@ -353,14 +356,16 @@ def main() -> int:
     print()
     print("=" * 78)
     print(f"COLOR_GENERATION_Z3_IDENTIFICATION_NO_GO: PASS={PASS} FAIL={FAIL}")
-    print("VERDICT: NO-GO -- the color center scalar rep 3*chi_w (3, 3w, 3w^2)")
+    print("VERDICT: BOUNDED NO-GO -- the color center scalar rep 3*chi_w (3, 3w, 3w^2)")
     print("  and the generation regular rep chi_0+chi_w+chi_w2 (3, 0, 0) are")
     print("  INEQUIVALENT Z_3 representations: their characters differ at the")
     print("  non-identity elements (3w vs 0), chi_w multiplicity is 3 vs 1, and")
     print("  every Z_3 intertwiner has rank <= 1 (Schur), so no equivariant")
-    print("  isomorphism exists. Identifying internal color with")
-    print("  generation is a category error absent the named non-native import")
-    print("  'scalar-generation-action' (replace the derived axis cycle by w*I).")
+    print("  isomorphism exists. This is an abstract carrier no-identification")
+    print("  boundary only: physical SM color and generation labels still require")
+    print("  separate bridge theorems. Forcing an identification requires the named")
+    print("  non-native import 'scalar-generation-action' (replace the derived axis")
+    print("  cycle by w*I).")
     print("=" * 78)
 
     return 0 if FAIL == 0 else 1

@@ -1,5 +1,7 @@
 # DM Wilson Direct-Descendant Projected-Source Branch Discriminant Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-18  
 **Status:** exact translation theorem for the live conditional branch-choice
 rule into projected-source language on `dW_e^H`  

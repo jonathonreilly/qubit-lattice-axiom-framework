@@ -1,0 +1,87 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py
+runner_sha256: 6ebb86e3d696ed7020cf3c01357f05e1513f9a289fe2df315b2e1961c982a842
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
+Hierarchy dimensional-compression diagnostic
+==============================================================================
+
+  Using condensate density ratio at u0 = 0.9, m = 0.01
+  cond(Lt=2)  = 0.0030863245
+  cond(Lt=10) = 0.0035637486
+  ratio       = 1.1546901938
+
+  Intra-framework dimensional-compression candidates:
+
+  Dimension-3 compression:
+    ratio^(1/3)     = 1.0491119305
+    ratio^(-1/3)    = 0.9531871394
+    direct shift        = +4.911%
+    inverse shift       = -4.681%
+
+  Dimension-4 compression:
+    ratio^(1/4)     = 1.0366123280
+    ratio^(-1/4)    = 0.9646807905
+    direct shift        = +3.661%
+    inverse shift       = -3.532%
+
+  Dimension-8 compression:
+    ratio^(1/8)     = 1.0181416051
+    ratio^(-1/8)    = 0.9821816484
+    direct shift        = +1.814%
+    inverse shift       = -1.782%
+
+  Dimension-16 compression:
+    ratio^(1/16)     = 1.0090300318
+    ratio^(-1/16)    = 0.9910507799
+    direct shift        = +0.903%
+    inverse shift       = -0.895%
+
+------------------------------------------------------------------------------
+  Intra-framework PASS gates (no observed-target dependence)
+------------------------------------------------------------------------------
+  [PASS] D=4 inverse compression R^(-1/4) reproduces by independent routes
+         R^(-1/4) via pow = 0.964680790528, via exp(-log/4) = 0.964680790528
+  [PASS] D=4 and D=16 inverse compressions differ by more than 2% (not numerically degenerate)
+         |R^(-1/4) / R^(-1/16) - 1| = 0.026608
+  [PASS] Structural identity 1/D = 4 / 2^D holds at D = 4
+         1/4 = 0.25, 4/2^4 = 0.25
+  [PASS] Structural identity FAILS at D in {1,2,3,5,6,8} (so (1/4) is D=4-specific)
+         D=1:fails(1.0000 vs 2.0000), D=2:fails(0.5000 vs 1.0000), D=3:fails(0.3333 vs 0.5000), D=5:fails(0.2000 vs 0.1250), D=6:fails(0.1667 vs 0.0625), D=8:fails(0.1250 vs 0.0156)
+  [PASS] PASS conditions are free of observed-target imports (audit-transparent)
+         v_obs, v_pred, C_obs are not referenced before this point
+  [PASS] source note demotes stale bounded-theorem proposal to conditional support
+  [PASS] source note wires D=4 density-scale bridge while keeping physical VEV premise open
+  [PASS] source note wires EW order-parameter readout bridge while preserving endpoint-selection residual
+  [PASS] taste-count one-hop authorities are retained-grade in the live ledger
+         higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05=retained_bounded, wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08=retained_bounded
+
+------------------------------------------------------------------------------
+  External context (NOT a PASS condition, NOT load-bearing)
+------------------------------------------------------------------------------
+  v_pred (M_Pl * alpha_LM^16)   = 254.6432 GeV   [external]
+  v_obs (PDG-like EW scale)     = 246.2200 GeV   [external]
+  C_obs = v_obs / v_pred         = 0.9669215187      [external]
+  Reader-context distance       = |R^(-1/4) - C_obs| = 0.002241
+  This block is printed for transparency only and is excluded
+  from all PASS gates above. Comparing R^(-1/4) to C_obs is a
+  reader-level diagnostic, not an audit-load-bearing closure.
+
+Conclusion (within-scope):
+  Under the 2026-06-16 fixed-density coefficient-to-scale bridge,
+  and the 2026-06-18 EW order-parameter readout bridge, a positive
+  endpoint coefficient ratio R maps to the inverse fourth-root
+  scale factor R^(-1/4) at D=4 on a supplied quartic Higgs-density
+  surface. The runner checks that this candidate is quantitatively
+  distinct from the D=16 direct-scale alternative and that no
+  within-scope PASS gate depends on the imported v_obs.
+
+==============================================================================
+SCORECARD: 9 pass, 0 fail out of 9
+==============================================================================
+
+----- stderr -----
+

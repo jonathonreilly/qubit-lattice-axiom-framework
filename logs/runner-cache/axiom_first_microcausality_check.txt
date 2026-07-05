@@ -1,25 +1,32 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_microcausality_check.py
-runner_sha256: d5f14fc7aab9b80337a39ccbf9516a49fdf8643c9a500bf6d70e1ca5814fe6b1
+runner_sha256: feb060e94391206d7a3737664295c2c8d275539ff04736fa87f8530ba370efa9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 6.15
+elapsed_sec: 1.54
 status: ok
 ----- stdout -----
 ========================================================================
-AXIOM-FIRST MICROCAUSALITY / LIEB-ROBINSON CHECK
+MICROCAUSALITY / LIEB-ROBINSON CHECK
 ========================================================================
 
+Source-packet constants:
+  parent note agrees with finite-range bridge on 2β, J branches,
+  overlap weights W = |m| + {296, 298, 300}, and v_LR = 2 e q W R
+  STATUS: PASS
+
 Setup:
-  1D chain of L sites with C^2 (qubit) per site (toy A1)
-  H = sum_z h_z with h_z supported on (z, z+1) (range r = 1)
-  J = max ||h_z||_op (local Hamiltonian density bound)
-  v_LR = 2 e r J (Lieb-Robinson velocity)
+  1D chain of L sites with C^2 (qubit) per site
+  H = sum_z h_z with h_z supported on nearest-neighbor pairs
+  J = max ||h_z||_op, q = max support size, R = support diameter
+  W = sup_x sum_{Z contains x} ||h_Z||_op (per-site overlap weight)
+  v_LR = 2 e q W R (overlap-weight velocity)
 
   L = 8 sites, dim H_phys = 256
-  J = 1.0, r = 1
-  v_LR = 2 e r J = 5.4366
+  J = 1.0, q = 2, W = 2.0, R = 1
+  v_LR = 2 e q W R = 21.7463
   ||H||_op = 4.4886
+  exact-log quasilocal bridge helper: free_bilinear_quasilocal_lr_bridge_2026_06_10.py
 
 ------------------------------------------------------------------------
 TEST 1: equal-time strict locality (M1)
@@ -31,52 +38,53 @@ TEST 1: equal-time strict locality (M1)
 ------------------------------------------------------------------------
 TEST 2: Lieb-Robinson bound (M2)
         ||[alpha_t(O_0), O_d]|| <= 2 ||O_0|| ||O_d|| exp(- d + v_LR |t|)
+        finite-range carrier uses v_LR = 2 e q W R
 ------------------------------------------------------------------------
   ||O_0|| = 1.0000 (Pauli Z)
 
     d       t     ||[a_t(O_0), O_d]||     Lieb-Robinson bound
   ---  ------  ----------------------  ----------------------
-    2   0.050            1.005332e-03            3.552176e-01  ratio=2.830e-03 OK
-    2   0.100            4.019690e-03            4.661739e-01  ratio=8.623e-03 OK
-    2   0.200            1.602818e-02            8.028880e-01  ratio=1.996e-02 OK
-    2   0.500            9.745622e-02            4.101813e+00  ratio=2.376e-02 OK
-    3   0.050            1.005606e-05            1.306773e-01  ratio=7.695e-05 OK
-    3   0.100            8.062727e-05            1.714958e-01  ratio=4.701e-04 OK
-    3   0.200            6.465476e-04            2.953660e-01  ratio=2.189e-03 OK
-    3   0.500            9.992698e-03            1.508973e+00  ratio=6.622e-03 OK
-    4   0.050            1.467846e-07            4.807348e-02  ratio=3.053e-06 OK
-    4   0.100            2.355482e-06            6.308978e-02  ratio=3.734e-05 OK
-    4   0.200            3.783547e-05            1.086591e-01  ratio=3.482e-04 OK
-    4   0.500            1.471421e-03            5.551200e-01  ratio=2.651e-03 OK
-    5   0.050            1.222972e-09            1.768524e-02  ratio=6.915e-08 OK
-    5   0.100            3.915105e-08            2.320943e-02  ratio=1.687e-06 OK
-    5   0.200            1.250143e-06            3.997344e-02  ratio=3.127e-05 OK
-    5   0.500            1.186043e-04            2.042172e-01  ratio=5.808e-04 OK
-    6   0.050            9.641056e-12            6.506038e-03  ratio=1.482e-09 OK
-    6   0.100            6.143584e-10            8.538274e-03  ratio=7.195e-08 OK
-    6   0.200            3.888609e-08            1.470541e-02  ratio=2.644e-06 OK
-    6   0.500            9.028721e-06            7.512732e-02  ratio=1.202e-04 OK
-    7   0.050            5.172392e-14            2.393438e-03  ratio=2.161e-11 OK
-    7   0.100            6.410915e-12            3.141055e-03  ratio=2.041e-09 OK
-    7   0.200            8.195592e-10            5.409817e-03  ratio=1.515e-07 OK
-    7   0.500            4.914355e-07            2.763780e-02  ratio=1.778e-05 OK
+    2   0.050            1.005332e-03            8.028880e-01  ratio=1.252e-03 OK
+    2   0.100            4.019690e-03            2.381600e+00  ratio=1.688e-03 OK
+    2   0.200            1.602818e-02            2.095544e+01  ratio=7.649e-04 OK
+    2   0.500            9.745622e-02            1.427514e+04  ratio=6.827e-06 OK
+    3   0.050            1.005606e-05            2.953660e-01  ratio=3.405e-05 OK
+    3   0.100            8.062727e-05            8.761418e-01  ratio=9.203e-05 OK
+    3   0.200            6.465476e-04            7.709074e+00  ratio=8.387e-05 OK
+    3   0.500            9.992698e-03            5.251529e+03  ratio=1.903e-06 OK
+    4   0.050            1.467846e-07            1.086591e-01  ratio=1.351e-06 OK
+    4   0.100            2.355482e-06            3.223145e-01  ratio=7.308e-06 OK
+    4   0.200            3.783547e-05            2.836010e+00  ratio=1.334e-05 OK
+    4   0.500            1.471421e-03            1.931929e+03  ratio=7.616e-07 OK
+    5   0.050            1.222972e-09            3.997344e-02  ratio=3.059e-08 OK
+    5   0.100            3.915105e-08            1.185729e-01  ratio=3.302e-07 OK
+    5   0.200            1.250143e-06            1.043310e+00  ratio=1.198e-06 OK
+    5   0.500            1.186043e-04            7.107171e+02  ratio=1.669e-07 OK
+    6   0.050            9.641056e-12            1.470541e-02  ratio=6.556e-10 OK
+    6   0.100            6.143584e-10            4.362053e-02  ratio=1.408e-08 OK
+    6   0.200            3.888609e-08            3.838122e-01  ratio=1.013e-07 OK
+    6   0.500            9.028721e-06            2.614582e+02  ratio=3.453e-08 OK
+    7   0.050            5.172392e-14            5.409817e-03  ratio=9.561e-12 OK
+    7   0.100            6.410915e-12            1.604710e-02  ratio=3.995e-10 OK
+    7   0.200            8.195592e-10            1.411966e-01  ratio=5.804e-09 OK
+    7   0.500            4.914355e-07            9.618510e+01  ratio=5.109e-09 OK
 
   STATUS: PASS
 
 ------------------------------------------------------------------------
 TEST 3: lightcone decay - outside lightcone, commutator -> 0
 ------------------------------------------------------------------------
-Fix t = 0.1 (so v_LR t ≈ 0.54). Sweep d = 2 to 7. Expect
+Fix t = 0.02. Sweep d = 2 to 7 outside the conservative lightcone. Expect
 exponential decay of commutator with d outside the lightcone.
 
-  t = 0.1, v_LR t = 0.5437
+  t = 0.02, v_LR t = 0.4349
     d        commutator       log(commutator)
-    2      4.019690e-03             -5.516550
-    3      8.062727e-05             -9.425674
-    4      2.355482e-06            -12.958765
-    5      3.915105e-08            -17.055839
-    6      6.143584e-10            -21.210443
-    7      6.410915e-12            -25.773019
+    2      1.608308e-04             -8.735158
+    3      6.425265e-07            -14.257858
+    4      3.749872e-09            -19.401544
+    5      1.251423e-11            -25.104155
+    6      4.159182e-14            -30.810873
+    7      1.073145e-14            -32.165598
 
   STATUS: PASS
 
@@ -102,10 +110,10 @@ SUMMARY
   OVERALL: PASS
 
 Note: this runner verifies the lattice Lieb-Robinson bound on a
-1D toy chain with C^2 sites (toy A1). The framework's Cl(3)
-local algebra is 8-dim per site; the proof in the companion
-theorem note is dimension-independent (Steps 1-3) and applies
-equally to the 1D toy and the framework's Cl(3) on Z^3.
+1D finite-matrix witness with C^2 sites. The proof in the
+companion theorem note is dimension-independent for finite
+one-site tensor factors and applies to the Lattice/Quantum
+baseline on Z^3.
 
 ----- stderr -----
 

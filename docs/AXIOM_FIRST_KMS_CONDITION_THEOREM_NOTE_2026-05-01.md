@@ -2,71 +2,80 @@
 
 **Date:** 2026-05-01
 **Type:** positive_theorem
-**Claim scope:** the finite-temperature Gibbs state on the RP-reconstructed transfer-matrix Hilbert space H_phys satisfies the KMS condition (K1)-(K4) at inverse temperature β_th = L_τ·a_τ; equivalently, the periodic-Euclidean path integral on (Z/L_τ Z) × Z^3 equals the trace of T^{L_τ} and the strip identity F(t + iβ_th) = G(t) holds for all bounded operators.
+**Claim scope:** the finite-temperature Gibbs state on the RP-reconstructed two-step transfer-matrix Hilbert space H_phys satisfies the KMS condition (K1)-(K4) at inverse temperature β_th = L_τ·a_τ for even raw Euclidean time length L_τ; equivalently, with N_τ := L_τ/2 blocked time steps and T := T_hat^2, the periodic-Euclidean path integral on (Z/L_τ Z) × Z^3 equals the trace of T^{N_τ} and the strip identity F(t + iβ_th) = G(t) holds for all bounded operators.
 **Status:** awaiting independent audit. Under the scope-aware classification framework (audit-lane proposal #291), `effective_status` is computed by the audit pipeline.
 **Loop:** `24h-axiom-first-derivations-20260501`
 **Cycle:** 1 (Block 1)
 **Branch:** `physics-loop/24h-axiom-first-block01-kms-20260501`
 **Runner:** `scripts/axiom_first_kms_condition_check.py`
 **Log:** `outputs/axiom_first_kms_condition_check_2026-05-01.txt`
+**Artifact sync:** 2026-06-17 regenerated the referenced output log from
+the current two-step runner so the source packet no longer carries the
+legacy single-step `T^{L_tau}` wording. This does not assert an audit
+verdict or promote the row.
 
 ## Scope
 
-This note records, on the current `A_min`
-([`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)), an axiom-first proof that the
-finite-temperature Gibbs state reconstructed from the reflection-
-positivity (RP) transfer matrix on a periodic Euclidean-time block
-satisfies the **Kubo-Martin-Schwinger (KMS) condition** at inverse
-temperature `β_th = L_τ · a_τ`. The companion artifacts are the
+This note records, on the current framework baseline
+([`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md))
+plus the cited RP and spectrum-condition support surfaces, a finite-block
+proof that the finite-temperature Gibbs state reconstructed from the
+reflection-positivity (RP) two-step transfer matrix on a periodic
+Euclidean-time block satisfies the **Kubo-Martin-Schwinger (KMS)
+condition** at inverse temperature `β_th = L_τ · a_τ` when the raw
+temporal length `L_τ` is even. The positive transfer object is
+`T := T_hat^2`; it advances one blocked time interval
+`a_blk := 2 a_τ`, so the number of blocked transfer factors is
+`N_τ := L_τ / 2`. The companion artifacts are the
 RP support note
 ([`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md))
 and the spectrum-condition support note
 ([`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)).
 
-After this note, the package's thermal-state language can quote a
-source KMS theorem on `A_min` instead of treating the
+After independent audit, the package's thermal-state language can quote a
+source KMS theorem on the framework baseline plus RP/spectrum support
+instead of treating the
 periodic-Euclidean ↔ thermal-state correspondence as a background
 convention. The result also opens the bridge to Hawking
 temperature, Unruh temperature, Stefan-Boltzmann, and the Generalized
 Second Law (each of which uses KMS at a different framework horizon
 or vacuum state).
 
-To avoid notational collision with the canonical normalization
-`β = 2 N_c / g_bare²` (which is `β = 6` on `A_min` since `g_bare = 1`,
-`N_c = 3`), we use `β_th` throughout for the thermal inverse
+To avoid notational collision with the gauge-coupling convention
+`β = 2 N_c / g_bare²`, we use `β_th` throughout for the thermal inverse
 temperature.
 
-## A_min objects in use
+## Framework and Support Inputs
 
-- **A1 — local algebra `Cl(3)`.** Used only via the structural
-  identity that the staggered-Dirac fermion algebra acts on the same
-  finite physical Hilbert space `H_phys` reconstructed by RP.
-- **A2 — substrate `Z^3`.** Used only as the spatial slice of the
-  finite block `Λ = (Z/L_τ Z) × (Z/L_s Z)^d_s` with periodic boundary
-  in *both* time and space. Periodicity in time is what makes the
-  transfer-matrix trace `Z = tr_{H_phys}(T^{L_τ})` finite-temperature.
-- **A3 — finite Grassmann partition.** Used only via the
-  reconstructed transfer matrix `T : H_phys → H_phys` from the RP
-  note (R3). For fermion observables we use the canonical
-  fermion-boundary convention
-  (anti-periodic in time, periodic in space, "APBC") which is the
-  framework's accepted finite-temperature setup
-  ([`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md), A4 entry on the "minimal APBC
-  hierarchy block").
-- **A4 — canonical normalization.** Used only via the fact that
-  `β = 2 N_c / g_bare² > 0` is fixed and positive (so `T` is a
-  well-defined positive operator on `H_phys`).
+- **Quantum / one-qubit operator algebra.** Used only through the
+  finite physical Hilbert space `H_phys` reconstructed by the two-step
+  RP sector from the local fermion/operator algebra.
+- **Lattice / `Z^3` spatial slice.** Used only as the spatial part of
+  the finite block `Λ = (Z/L_τ Z) × (Z/L_s Z)^d_s` with even raw
+  Euclidean time length `L_τ` and periodic boundary in time and space.
+  Periodicity in time is what makes the blocked transfer-matrix trace
+  `Z = tr_{H_phys}(T^{N_τ})` finite-temperature.
+- **Record.** No additional readout rule is imported here. The theorem
+  uses the finite scalar trace/readout supplied by the reconstructed
+  finite-dimensional Hilbert-space packet.
+- **APBC finite-temperature convention.** For fermion observables we use
+  the canonical anti-periodic-in-time, periodic-in-space boundary
+  convention as part of the finite-temperature setup carried by the RP
+  support surface; it is not promoted here as a new axiom.
+- **Gauge normalization.** Positivity and normalization of the transfer
+  object are consumed through the RP/spectrum support notes. This KMS
+  row does not derive `g_bare`, `β = 6`, or a gauge-action normalization.
 
 ## Support-note inputs
 
 - **RP transfer matrix.** From the RP support note (R3),
-  `T : H_phys → H_phys` is Hermitian, positive, and has operator norm
-  `‖T‖ ≤ 1` on the canonical surface. Translation in Euclidean time
-  by one lattice unit is implemented by `T`.
+  `T := T_hat^2 : H_phys → H_phys` is Hermitian, positive, and has
+  operator norm `‖T‖ ≤ 1` on the canonical surface. It advances two
+  raw lattice time steps, i.e. one blocked interval `a_blk := 2 a_τ`.
 - **Spectrum condition.** From the spectrum-condition support
-  note (SC1, SC2), `H := -(1/a_τ) log(T / M_T)` is self-adjoint and
-  `H ≥ 0` on `H_phys`, with `M_T = ‖T‖_{op}`. Equivalently
-  `T = M_T · e^{-a_τ H}` with `H ≥ 0`.
+  note (SC1, SC2), `H := -(1/(2 a_τ)) log(T / M_T)` is self-adjoint
+  and `H ≥ 0` on `H_phys`, with `M_T = ‖T‖_{op}`. Equivalently
+  `T = M_T · e^{-2 a_τ H}` with `H ≥ 0`.
 - **Finite-dim physical Hilbert space.** From RP (R2), `H_phys` has
   finite dimension on any finite block `Λ`. This makes all traces
   finite and all operator products bounded.
@@ -76,26 +85,28 @@ temperature.
 - **Wick rotation:** standard convention. The reconstruction (R1)–(R4)
   of the RP note already pays for the Euclidean ↔ Lorentzian bridge
   by defining the analytic continuation of `T^n` to `e^{-itH}` for
-  `t > 0` via `T^n ↔ e^{-itH}` with `t = -i n a_τ`.
-- **Standard cyclic-trace property** of finite-dimensional traces:
+  `t > 0` via `T^n ↔ e^{-itH}` with `t = -i n (2 a_τ)`.
+- **Cyclic-trace property** of finite-dimensional traces:
   `tr(AB) = tr(BA)` for any operators on a finite-dim Hilbert space.
   This is a basic linear-algebra fact, not an import.
 
 ## Statement
 
 Let `Λ = (Z/L_τ Z) × (Z/L_s Z)^d_s` be the finite block with periodic
-boundary in both time and space, `T : H_phys → H_phys` be the
-RP-reconstructed transfer matrix, and `H := -(1/a_τ) log(T / M_T)`
-the reconstructed Hamiltonian (which is `≥ 0` after the constant
-`(1/a_τ) log M_T` shift; we absorb this shift into the zero of
-energy, equivalent to the standard convention `M_T = 1`).
+boundary in both time and space and even raw time length `L_τ`. Set
+`N_τ := L_τ / 2`. Let `T := T_hat^2 : H_phys → H_phys` be the
+RP-reconstructed two-step transfer matrix, and let
+`H := -(1/(2 a_τ)) log(T / M_T)` be the reconstructed Hamiltonian
+(which is `≥ 0` after the constant `(1/(2 a_τ)) log M_T` shift; we
+absorb this shift into the zero of energy, equivalent to the standard
+convention `M_T = 1`).
 
 Define the **finite-temperature Gibbs state** at inverse temperature
-`β_th := L_τ · a_τ` by
+`β_th := L_τ · a_τ = N_τ · (2 a_τ)` by
 
 ```text
     < O >_{β_th}  :=  (1 / Z_{β_th}) · tr_{H_phys}( e^{-β_th H} · O )      (1)
-    Z_{β_th}      :=  tr_{H_phys}( e^{-β_th H} )  =  tr_{H_phys}( T^{L_τ} )  (2)
+    Z_{β_th}      :=  tr_{H_phys}( e^{-β_th H} )  =  tr_{H_phys}( T^{N_τ} )  (2)
 ```
 
 for any operator `O` on `H_phys`. Define Heisenberg-picture time
@@ -107,12 +118,12 @@ evolution by
 
 for any `A` on `H_phys` and any `t ∈ R`.
 
-Then on `A_min` plus the RP + spectrum-condition surface:
+Then on the framework baseline plus the RP + spectrum-condition surface:
 
 **(K1) Path-integral ↔ Gibbs-state correspondence.** The Euclidean
 path-integral on `Λ` with periodic-boundary fields and APBC fermions
-equals the trace `Z = tr_{H_phys}(T^{L_τ})`, hence the path-integral
-expectation `<O>_{path}` of any operator `O` localized in a single
+equals the trace `Z = tr_{H_phys}(T^{N_τ})`, hence the path-integral
+expectation `<O>_{path}` of any operator `O` localized in a blocked
 Euclidean time slice equals the Gibbs expectation `<O>_{β_th}` of the
 corresponding `H_phys`-operator at inverse temperature
 `β_th = L_τ · a_τ`.
@@ -168,12 +179,12 @@ upper edge of the strip — this is the KMS identity (5).
 
 **(K4) Equilibrium uniqueness.** The Gibbs state is the unique state
 on the finite-dim algebra `B(H_phys)` that satisfies (K2) at inverse
-temperature `β_th` and is invariant under `α_t` (Bratteli–Robinson
-1981, Vol. II, Theorem 5.3.30, applied to finite-dim algebras where
-the proof is elementary).
+temperature `β_th` and is invariant under `α_t`. The proof is the
+matrix-unit calculation in Step 5 below; Bratteli-Robinson is cited
+only as the standard continuum/operator-algebra reference.
 
-Statements (K1)–(K4) constitute the KMS theorem on `A_min` plus the
-RP + spectrum-condition surface.
+Statements (K1)–(K4) constitute the KMS theorem on the framework baseline
+plus the RP + spectrum-condition surface.
 
 ## Proof
 
@@ -185,12 +196,13 @@ infinite-dim manipulation.
 ### Step 1 — Path integral equals transfer-matrix trace
 
 The path integral on `Λ` with periodic boundary in time and APBC
-for fermions is, by the standard transfer-matrix construction (used
-already by the RP note),
+for fermions is the finite transfer-matrix product supplied by the RP
+note. Because the temporal boundary is periodic, the product closes into
+a finite trace:
 
 ```text
     Z  =  ∫_periodic  Dχ̄ Dχ DU  exp(-S)                                    (7)
-       =  tr_{H_phys}( T^{L_τ} )                                             (8)
+       =  tr_{H_phys}( T^{N_τ} )                                             (8)
 ```
 
 The equality (7)→(8) is the same Osterwalder–Seiler / Sharatchandra
@@ -198,31 +210,41 @@ factorisation that Steps 1–3 of the RP note used to establish (R1).
 Periodicity in `t` is what closes the trace; without it (open
 boundary) one would get a state-vector overlap rather than a trace.
 
-For an operator `O = O(τ_O)` localized in a single Euclidean time
-slice `t = τ_O`, the path-integral insertion is
+For an operator `O_k` localized on a blocked Euclidean time slice `k`,
+let `Ô` be the corresponding reference-block operator on `H_phys` after
+the RP reconstruction. The blocked transfer-matrix insertion has the
+finite form
 
 ```text
-    < O >_{path}  =  (1/Z) · tr_{H_phys}( T^{L_τ - 1} · Ô )                 (9)
+    Num_k(O)  =  tr_{H_phys}( T^{N_τ-k} · Ô · T^k )                         (9)
 ```
 
-where `Ô` is the `H_phys`-operator implementing `O` (this is the same
-identification used by (R3) when defining the action of polynomial
-observables on `H_phys`). By cyclicity of the trace, (9) is
-independent of `τ_O`, and rewriting `T^{L_τ - 1} = T^{L_τ} · T^{-1}`
-or simply pulling `T^{L_τ}` out gives
+where `0 <= k <= N_τ` and all powers are ordinary finite matrix powers.
+The case `k = 0` is the reference block. For any `k`, cyclicity gives
 
 ```text
-    < O >_{path}  =  (1/Z) · tr_{H_phys}( T^{L_τ} · Ô · T^{-1} ) · (...)   (??)
+    Num_k(O)
+      = tr( T^{N_τ-k} · Ô · T^k )
+      = tr( T^k · T^{N_τ-k} · Ô )
+      = tr( T^{N_τ} · Ô ).                                                (10)
 ```
 
-A cleaner formulation: the canonical identification is
-`< O >_{path} = (1/Z) · tr( e^{-β_th H} · Ô )` with
-`β_th = L_τ · a_τ` and `T = e^{-a_τ H}`. This is (K1). The proof
-that the factor of `T^{-1}` does not appear in the final form uses
-the standard insertion `T^{-1} · O · T = α_{i a_τ}(O)` (analytic
-continuation of `α_t`) together with cyclicity of the trace; the
-detailed bookkeeping is identical to Bratteli–Robinson Vol. II,
-Lemma 5.3.4.
+Thus the blocked-slice expectation is independent of the block label and
+is exactly
+
+```text
+    < O >_{path}
+      = (1/Z) · tr( T^{N_τ} · Ô )
+      = (1/Z) · tr( e^{-β_th H} · Ô ),                                    (11)
+```
+
+because `T = e^{-2 a_τ H}` and `β_th = N_τ (2 a_τ) = L_τ a_τ`. No
+inverse transfer matrix, external KMS lemma, or continuum bookkeeping
+is used in this step. This proves (K1) for the finite-block blocked-slice observables
+needed by the downstream thermal-state rows. Multi-time ordered
+correlators keep their ordered product of transported insertions; the
+KMS strip identity for arbitrary bounded `A,B` is proved directly in
+Step 3.
 
 ### Step 2 — Setup of KMS strip
 
@@ -234,7 +256,7 @@ bounded, so `α_t` extends to an entire-analytic family `α_z` for
 `z ∈ C`:
 
 ```text
-    α_z(A)  :=  e^{i z H} · A · e^{-i z H}                                  (10)
+    α_z(A)  :=  e^{i z H} · A · e^{-i z H}                                  (12)
 ```
 
 This is the matrix exponential, well-defined for all `z ∈ C` because
@@ -248,7 +270,7 @@ We prove `F_{A,B}(t + i β_th) = G_{A,B}(t)` directly. Compute
 ```text
     F_{A,B}(t + i β_th)
        :=  < A · α_{t + i β_th}(B) >_{β_th}
-        =  (1/Z) · tr( e^{-β_th H} · A · e^{i(t + i β_th) H} · B · e^{-i(t + i β_th) H} )    (11)
+        =  (1/Z) · tr( e^{-β_th H} · A · e^{i(t + i β_th) H} · B · e^{-i(t + i β_th) H} )    (13)
 ```
 
 Expand the analytic time evolution at the shifted argument. Since
@@ -258,7 +280,7 @@ and `e^{-i(t + i β_th) H} = e^{-i t H} · e^{β_th H}`. Substituting:
 
 ```text
     F_{A,B}(t + i β_th)
-       =  (1/Z) · tr( e^{-β_th H} · A · e^{i t H} · e^{-β_th H} · B · e^{-i t H} · e^{β_th H} )    (12)
+       =  (1/Z) · tr( e^{-β_th H} · A · e^{i t H} · e^{-β_th H} · B · e^{-i t H} · e^{β_th H} )    (14)
 ```
 
 Apply cyclic-trace: pull the rightmost factor `e^{β_th H}` around to
@@ -268,7 +290,7 @@ gives
 ```text
     F_{A,B}(t + i β_th)
        =  (1/Z) · tr( e^{β_th H} · e^{-β_th H} · A · e^{i t H} · e^{-β_th H} · B · e^{-i t H} )
-       =  (1/Z) · tr( A · e^{i t H} · e^{-β_th H} · B · e^{-i t H} )                                (13)
+       =  (1/Z) · tr( A · e^{i t H} · e^{-β_th H} · B · e^{-i t H} )                                (15)
 ```
 
 using `e^{β_th H} · e^{-β_th H} = I`. Now since `e^{i t H}` commutes
@@ -278,21 +300,21 @@ with `e^{-β_th H}` (both functions of the same `H`), we can pull
 ```text
     F_{A,B}(t + i β_th)
        =  (1/Z) · tr( A · e^{-β_th H} · e^{i t H} · B · e^{-i t H} )
-       =  (1/Z) · tr( e^{-β_th H} · e^{i t H} · B · e^{-i t H} · A )                                (14)
+       =  (1/Z) · tr( e^{-β_th H} · e^{i t H} · B · e^{-i t H} · A )                                (16)
 ```
 
 where the last equality is again cyclic-trace bringing `A` to the
 right end. By definition,
 `(e^{i t H} · B · e^{-i t H}) = α_t(B)` (real-axis Heisenberg
-evolution), so (14) reads
+evolution), so (16) reads
 
 ```text
     F_{A,B}(t + i β_th)  =  (1/Z) · tr( e^{-β_th H} · α_t(B) · A )
                         =  < α_t(B) · A >_{β_th}
-                        =:  G_{A,B}(t)                                                              (15)
+                        =:  G_{A,B}(t)                                                              (17)
 ```
 
-Equation (15) is the **KMS condition (K2)**. ∎
+Equation (17) is the **KMS condition (K2)**. ∎
 
 To verify in eigenbasis form (used by the runner for numerical
 stability): in the eigenbasis of `H` with eigenvalues `E_n`,
@@ -306,7 +328,7 @@ At `z = t + i β_th`, the `F` factor becomes
 `e^{-β_th E_n} · e^{i t (E_m - E_n)} · e^{-β_th(E_m - E_n)} = e^{-β_th E_m} · e^{i t (E_m - E_n)}`,
 which after relabeling `n ↔ m` matches the `G(t)` summand exactly:
 `e^{-β_th E_m} · e^{i t (E_m - E_n)} · A_{nm} B_{mn} = e^{-β_th E_n'} · e^{i t (E_n' - E_m')} · B_{n'm'} A_{m'n'}`
-with `n' = m`, `m' = n`. This is the same identity (15) at the level
+with `n' = m`, `m' = n`. This is the same identity (17) at the level
 of matrix elements.
 
 ### Step 4 — Strip analyticity (K3)
@@ -348,34 +370,60 @@ finite-band cutoff arguments. On the framework's finite block `Λ`,
 
 ### Step 5 — Equilibrium uniqueness (K4)
 
-On a finite-dim *-algebra `B(H_phys)`, any state `ω` invariant under
-`α_t` and satisfying KMS at inverse temperature `β_th` is the Gibbs
-state `ρ_{β_th}(O) = (1/Z) tr(e^{-β_th H} O)`. The proof reduces to
-Schur's lemma after diagonalizing `H`: the KMS condition forces the
-density matrix `ρ` of the state to commute with all spectral
-projectors of `H`, hence `ρ = f(H)` for some scalar function `f`,
-and the cyclic identity `f(E_n) = e^{-β_th(E_n - E_m)} f(E_m)` then
-forces `f(E) = (1/Z) e^{-β_th E}`. This is the elementary version of
-Bratteli–Robinson Vol. II, Theorem 5.3.30, on a finite-dim algebra.
+Let `ω(X) = tr(ρ X)` be any state on `B(H_phys)` that is invariant under
+`α_t` and satisfies the endpoint KMS identity. Diagonalize
+`H = Σ_r E_r P_r`, with finite-rank spectral projectors `P_r`.
+Invariance gives `ρ = Σ_r P_r ρ P_r`; all cross-energy blocks vanish.
+
+Within one degenerate energy block, `α_t` is the identity. KMS then says
+`tr(ρ A B) = tr(ρ B A)` for every pair of matrix units `A,B` inside that
+block. The only matrices whose trace pairing is cyclic against all
+matrix units in a full matrix algebra are scalar multiples of the
+identity, so `P_r ρ P_r = c_r P_r`.
+
+For two energy blocks `r,s`, choose unit vectors `u in P_r H_phys`,
+`v in P_s H_phys`, and matrix units `A = |u><v|`,
+`B = |v><u|`. The endpoint identity at `t=0` gives
+
+```text
+    c_s  =  exp( β_th (E_r - E_s) ) · c_r.                                (18)
+```
+
+Hence `c_r exp(β_th E_r)` is constant across all `r`, and normalization
+`tr ρ = 1` fixes
+
+```text
+    ρ  =  e^{-β_th H} / tr(e^{-β_th H}).                                  (19)
+```
+
+Therefore the Gibbs state is the unique finite-dimensional invariant
+KMS state. This is the framework-native finite proof of (K4);
+Bratteli-Robinson Vol. II, Theorem 5.3.30 is only the parallel
+operator-algebra reference.
 ∎
 
-This completes the proof of (K1)–(K4) on `A_min`.
+This completes the proof of (K1)–(K4) on the framework baseline plus the
+stated RP/spectrum finite-block support surfaces.
 
 ## Hypothesis set used
 
-- A1, A2, A3, A4 (only as in the RP note's hypothesis set).
+- Lattice, Quantum, and Record only in the narrow current-baseline sense
+  stated in [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md).
 - RP transfer-matrix structure (R3 of the RP note).
 - Spectrum condition (SC1, SC2) for `H ≥ 0`.
-- Standard cyclic-trace identity (basic linear algebra).
+- APBC finite-temperature boundary convention and Wick rotation as already
+  paid for by the RP reconstruction.
+- Cyclic-trace identity for finite matrices (basic linear algebra).
 
 No fitted parameters. No observed values used as proof inputs. No
-imports beyond the explicit Wick-rotation and cyclic-trace
-conventions.
+imports beyond the explicit Wick-rotation convention already used by
+the RP reconstruction. External KMS theorems are citations, not proof
+inputs for this finite-block result.
 
 ## Corollaries (downstream tools)
 
-C1. **Periodic-Euclidean ↔ thermal correspondence is a theorem on
-`A_min`.** Any package note that quotes "the path integral with
+C1. **Periodic-Euclidean ↔ thermal correspondence is a theorem on the
+framework baseline plus RP/spectrum support.** Any package note that quotes "the path integral with
 period `L_τ` in Euclidean time describes a thermal state at
 temperature `T = 1/(L_τ a_τ)`" can cite this note instead of
 treating it as a convention.
@@ -404,33 +452,35 @@ Stefan-Boltzmann block.
 
 ## Honest status
 
-**Source theorem.** (K1)–(K4) are proved on `A_min` plus
-RP + spectrum condition by Steps 1–5. The proof leans
-entirely on:
+**Source theorem.** (K1)–(K4) are proved on the current framework
+baseline plus the RP and spectrum-condition support surfaces by Steps
+1–5. The proof leans entirely on:
 
-- the RP transfer matrix `T` (already proved on `A_min`);
-- the spectrum condition `H ≥ 0` (already proved on
-  `A_min`);
+- the two-step RP transfer matrix `T := T_hat^2` supplied by the RP
+  support note;
+- the spectrum-condition Hamiltonian `H ≥ 0` supplied by the companion
+  spectrum-condition support note;
 - the cyclic-trace property of finite-dim traces (basic linear
-  algebra);
+  algebra, including the native slice-insertion and uniqueness
+  matrix-unit calculations above);
 - the Wick-rotation / Euclidean-Lorentzian convention already paid
   for by the RP reconstruction.
 
-The runner exhibits the structural content (matrix
-`H_phys` construction for a 2-state toy example, explicit
-KMS-strip evaluation, finite-temperature trace identity) and
-cross-checks numerical equality of `F_{A,B}(t)` and
-`G_{A,B}(t + i β_th)` on a small grid.
+The runner exhibits the structural content (generic finite
+`H_phys` construction, explicit KMS-strip evaluation,
+finite-temperature trace identity, native slice-insertion cyclicity,
+and matrix-unit uniqueness equations) and cross-checks numerical
+equality of `F_{A,B}(t + i β_th)` and `G_{A,B}(t)` on a small grid.
 
 **Honest claim-status fields:**
 
 ```yaml
-actual_current_surface_status: support
-conditional_surface_status: derived support theorem on A_min + RP + spectrum condition
+actual_current_surface_status: conditional-support
+conditional_surface_status: derived support theorem on the framework baseline + RP + spectrum condition
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "depends on RP + spectrum condition support notes that are themselves audit-pending; retained-grade status requires those upstream notes ratified first."
+proposal_allowed_reason: "effective status requires independent audit of this row and retained-grade dependency closure for the cited RP/spectrum support surfaces."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -438,21 +488,22 @@ bare_retained_allowed: false
 **Not in scope.**
 
 - Continuum KMS / Tomita-Takesaki / modular automorphism. We prove
-  the lattice analogue, which is what `A_min` allows.
+  the finite-block lattice analogue supported by the framework baseline
+  plus RP/spectrum reconstruction.
 - Promotion to retained / Nature-grade in the canonical paper
-  package. That requires `review-loop` backpressure and integration
-  outside this run, plus prior ratification of the RP and
-  spectrum-condition support notes.
+  package. That requires independent audit of this repaired row and
+  dependency closure through the audit pipeline.
 
 ## Citations
 
-- A_min: [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
+- framework baseline: [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
 - RP support note: [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
 - spectrum-condition support note: [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
 - companion cluster-decomposition note: [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
 - companion CPT note: [`AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md`](AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md)
-- standard external proofs (cited as theorem-grade references; we do
-  not import any numerical input):
+- standard external proofs (parallel references only; the proof above
+  supplies the finite framework calculation and imports no numerical
+  input):
   Kubo (1957) *J. Phys. Soc. Jpn.* 12, 570;
   Martin–Schwinger (1959) *Phys. Rev.* 115, 1342;
   Haag–Hugenholtz–Winnink (1967) *Comm. Math. Phys.* 5, 215;

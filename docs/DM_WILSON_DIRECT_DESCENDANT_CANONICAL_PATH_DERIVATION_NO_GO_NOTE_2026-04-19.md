@@ -1,5 +1,7 @@
 # DM Wilson Direct-Descendant Canonical Path Derivation No-Go Note
 
+**Claim type:** no_go
+
 **Date:** 2026-04-19  
 **Status:** exact negative result on the DM canonical-path lane  
 **Primary runner:**  

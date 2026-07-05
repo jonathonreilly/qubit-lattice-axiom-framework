@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/corrections/yt_p1_fermion_regulator_verification_memsafe.py
+runner_sha256: d63b08ac96228be7c180141b297c402205e55ad3f3f32a2ec6afd89657405dd5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.81
+status: ok
+----- stdout -----
+==================================================================
+MEMORY-SAFE fermion-channel verification (N<=32, single process)
+==================================================================
+
+[A] BZ-corner weight census (analytic; no grid):
+    corners with 0 pi-components: count=1  total F_g weight=4
+    corners with 1 pi-components: count=4  total F_g weight=12
+    corners with 2 pi-components: count=6  total F_g weight=12
+    corners with 3 pi-components: count=4  total F_g weight=4
+    corners with 4 pi-components: count=1  total F_g weight=0
+    => total corner weight = 32;  non-origin = 28
+    ANALYTIC residual-log slope after single-corner subtraction = -(32 - 4) = -28
+
+[B] Fermion single-corner (lat-cont): slope d/d log m^2 (expect large negative ~ -28; clean const => 0)
+    N=24: (m^2=.16)=+104.933  (m^2=.08)=+130.119  slope= -36.34
+    N=32: (m^2=.16)=+104.950  (m^2=.08)=+130.329  slope= -36.61
+
+[C] SCALAR control single 1/D_psi power (expect slope ~ 0 = clean):
+    N=24: slope= -2.879   (no corner log => clean constant)
+    N=32: slope= -2.882   (no corner log => clean constant)
+
+[D] Fermion FULL 16-doubler subtraction (expect slope collapses toward 0 = disease was the doublers):
+    N=24: slope= -9.016   value(m^2=.08)=  +8.714
+    N=32: slope= -9.042   value(m^2=.08)=  +8.755
+
+==================================================================
+VERDICT (analytic + small-N numeric agree):
+  - single-corner fermion slope is LARGE negative (~ -28), NOT 0
+    => regulator-dependent; I_SE_fermion/Delta_3 are m^2-artifacts.
+  - scalar control slope ~ 0 => scalar channel genuinely clean.
+  - full-doubler slope collapses => the 15 unsubtracted doubler-logs
+    ARE the disease; a clean constant needs the full subtraction.
+==================================================================
+
+----- stderr -----
+

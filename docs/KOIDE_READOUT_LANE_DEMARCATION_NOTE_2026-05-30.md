@@ -68,11 +68,12 @@ functional. With unit (canonical) spectral residues it supplies:
    `Q = (sum Z_k lam_k^2) / (sum Z_k lam_k)^2`, the only weights that make `Q`
    both `r`-independent and equal to `2/3` are **single-pole collapses** (two of
    the three `Z` zero) — which destroy the three distinct physical masses. The
-   doublet-symmetric family `Z=(1,t,t)` is `theta`-independent only at `t=0`
-   (collapse). Physical residues are unit (`H` normal => orthonormal eigenbasis,
-   canonical wavefunction renormalization), giving exactly the democratic reading
-   `Q=(1+2r)/3` with `r` free. No non-degenerate, 3-mass residue pattern supplies
-   `r=1/2`.
+   doublet-symmetric family `Z=(1,t,t)` has two theta-independent endpoints:
+   `t=0` is a single-pole collapse (`Q=1`, mass loss), while `t=1` is the
+   physical unit-residue/democratic branch. The `t=1` branch gives exactly
+   `Q=(1+2r)/3` with `r` free; it is not an `r`-independent `2/3` selector.
+   Non-endpoint choices such as `t=1/2` remain `theta`/`r` dependent. No
+   non-degenerate, nonunit, 3-mass residue pattern supplies `r=1/2`.
 
 3. **The measurement weight lands on `(1,2) -> Q=1`.** Einselection picks the
    pointer basis = eigenbasis of `H`; the Born weight of each pointer state under

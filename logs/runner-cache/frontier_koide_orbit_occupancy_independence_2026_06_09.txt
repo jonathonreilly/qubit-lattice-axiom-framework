@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py
-runner_sha256: b3b3e7405d4c06f63ee4b2ee43486d6e50221ac4d8dabf3be1a47f6d52bfe3e8
+runner_sha256: f4ab2195edef5046f508527894919d28a96b380247bfb908975eeaf4688fd7cd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.69
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -14,7 +14,6 @@ KOIDE OCCUPANCY ATOM: INDEPENDENCE + THE ORBIT-OCCUPANCY PREMISE CANDIDATE
 O1: ground-truth cross-checks (the #3138 guard)
 ----------------------------------------------------------------------------------------
   [PASS] orbit partition under canonical K: {e0}, {e1,e2} (K(e1)=e2)
-  [PASS] landed four-cell fork table cross-checked verbatim (rho-map r = 1/(2 rho))
   [PASS] Q-lever re-verified (100 draws)
 
 ----------------------------------------------------------------------------------------
@@ -36,11 +35,24 @@ O3: independence by exhibition -- two consistent models, different occupancy
   [PASS] refuted-route history mechanized: every refuted derivation route smuggled an occupancy rule (the CW/fluctuation-modulus route is a sector-side occupancy choice -- supplied, never retained; refs #2624/#2688)
 
 ----------------------------------------------------------------------------------------
+DERIVED CELLS
+----------------------------------------------------------------------------------------
+  [PASS] DERIVED CELLS: real-Gaussian two-real-slot partition integral int_R int_R exp(-g*(x^2+y^2)/2) dx dy  --  Z_d=2*pi/g
+  [PASS] DERIVED CELLS: holomorphic-Gaussian one-complex-slot partition integral int_0^oo 2*pi*rho*exp(-g*rho^2) d rho  --  Z_d=pi/g
+  [PASS] DERIVED CELLS: Majorana Berezin pair integral int dtheta_2 dtheta_1 exp((2*pi/g)*theta_1*theta_2) = Pf([[0,p],[-p,0]])  --  p=2*pi/g; Z_d=2*pi/g
+  [PASS] DERIVED CELLS: holomorphic Berezin pair integral int dpsi_bar dpsi exp((pi/g)*psi_bar*psi) = det([pi/g])  --  Z_d=pi/g
+  [PASS] DERIVED CELLS: circulant Q theorem lever E_s=3*a^2, E_d=6*|b|^2; two-real-slot equipartition integral gives the Gaussian r per M_sector  --  <x^2>=1/(12*beta); <|b|^2>=2*<x^2>=1/(6*beta); <a^2>=1/(6*beta); r=1
+  [PASS] DERIVED CELLS: circulant Q theorem lever E_s=3*a^2, E_d=6*|b|^2; holomorphic one-complex-slot r per M_orbit from per-slot equipartition quantum, slot count from the measure definition  --  per-slot quantum=1/(2*beta); slots=1; <E_d>=1/(2*beta); <|b|^2>=1/(12*beta); <a^2>=1/(6*beta); r=1/2
+  [PASS] DERIVED CELLS: rho-map identity for M_sector follows from the partition integral and equipartition r  --  rho=(pi/g)/Z_d=1/2; r=1
+  [PASS] DERIVED CELLS: rho-map identity for M_orbit follows from the partition integral and equipartition r  --  rho=(pi/g)/Z_d=1; r=1/2
+  [PASS] derived cells match the landed four-cell table (consistency cross-check)  --  {'real_gaussian': (2*pi/g, 1, 1), 'majorana_berezin': (2*pi/g, 1, 1), 'holo_gaussian': (pi/g, 1/2, 2/3), 'holo_berezin': (pi/g, 1/2, 2/3)}
+
+----------------------------------------------------------------------------------------
 O4: consequence map at the LANDED bookkeeping level (no new bridge invented)
 ----------------------------------------------------------------------------------------
-  [PASS] orientation guard part 1: the candidate rho := Z_d/(2*pi/g) gives (rho_sector, rho_orbit) = (1, 1/2), i.e. r_sector = 1/2 -- the INVERTED assignment, REJECTED by the landed table (real cell must carry r = 1)  --  rejected candidate: rho_sector=1, rho_orbit=1/2
-  [PASS] orientation guard part 2: the landed rho-map r = 1/(2 rho) demands rho_real = 1/2 (-> r=1) and rho_holo = 1 (-> r=1/2)  --  r(rho=1/2)=1 [real/sector], r(rho=1)=1/2 [holo/orbit] -- the landed cells
-  [PASS] landed orientation pinned: rho = (pi/g)/Z_d gives rho_sector=1/2, rho_orbit=1 => r_sector=1, r_orbit=1/2, Q_sector=1, Q_orbit=2/3 -- EXACTLY the landed cells  --  orientation fixed by the landed table itself (cross-check gate, not assertion)
+  [PASS] orientation guard part 1: the candidate rho := Z_d/(2*pi/g) gives the inverted r-per-model assignment, REJECTED by the derived cell integrals  --  candidate r_pair=(1/2, 1); derived r_pair=(1, 1/2)
+  [PASS] orientation guard part 2: under r = 1/(2 rho), the derived r-per-model values require rho = (pi/g)/Z_d  --  required rho_pair=(1/2, 1); partition rho_pair=(1/2, 1)
+  [PASS] landed orientation pinned by derived cells: rho = (pi/g)/Z_d reproduces the derived r and Q values per model  --  r_pair=(1, 1/2); Q_pair=(1, 2/3)
   [PASS] CONVENTION-FREE core fact: r_sector / r_orbit = Z_d_sector / Z_d_orbit = 2 exactly -- the cell ratio is the occupancy factor, independent of any normalization convention
 
 ----------------------------------------------------------------------------------------
@@ -54,12 +66,12 @@ O5: the premise candidate -- ORBIT-OCCUPANCY (proposal content; NOT adopted)
 O6: scope
 ----------------------------------------------------------------------------------------
   [PASS] NOT a derivation of r=1/2; NOT adoption of the premise (owner-decision, the xi=1 playbook: independence => honest resolution is an explicit structural premise, never a smuggled one)
-  [PASS] no new microscopic moment-bridge invented: all cell assignments go through the landed rho-map, orientation pinned by the landed table as a cross-check gate; only the cell RATIO (=2) is claimed convention-free
+  [PASS] no new microscopic moment-bridge invented: cell assignments are derived from the explicit per-cell integrals and rho-map identity, with the landed table kept only as a consistency cross-check; only the cell RATIO (=2) is claimed convention-free
   [PASS] the phase delta remains a separate admission (radian-period note); this atom concerns r only
   [PASS] consequence IF the owner approves orbit-occupancy: r=1/2 and Q=2/3 follow from the landed lever -- the Koide ratio becomes a consequence of counting outcomes rather than sectors; stated as the proposal's payoff, not as a result
 
 ========================================================================================
-SUMMARY: PASS=24 FAIL=0
+SUMMARY: PASS=32 FAIL=0
 ========================================================================================
 
 ----- stderr -----

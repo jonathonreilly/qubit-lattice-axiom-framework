@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_orbit_clause_kinvariant_surface_equivalence_2026_06_10.py
+runner_sha256: 00ec1d9caa112adb9f61c947db8753a9efe64945d6886e9fc66e2beb7bc66cd3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+PART A -- context validity: blocks, involution, both K-squares
+==============================================================================
+  [PASS] A1 completeness and orthogonality of the sector decomposition
+  [PASS] A2 K-compatibility: U conj(P_k) U^dag = P_{pi(k)} for both representatives
+  [PASS] A3 K^2 = +1 and K^2 = -1 realized (U conj(U) = +I / -I)
+  [PASS] A4 pi is an involution
+
+PART B -- T1 forward: pi-invariant + orbit-separating surface => classes = orbits
+==============================================================================
+  [PASS] B1 with the full pi-invariant surface, indistinguishability classes = K/CPT orbits EXACTLY  --  classes = [[0, 1], [2], [3]], orbits = [[0, 1], [2], [3]]
+  [PASS] B2 three random pi-invariant readouts already reproduce the orbit classes (generic separation)
+  [PASS] B3 hostile witness: the constant (pi-invariant, non-separating) surface gives classes COARSER than orbits  --  the separation condition is load-bearing
+
+PART C -- T2 converse: a separating readout inside an orbit breaks the clause
+==============================================================================
+  [PASS] C1 the sector-0 indicator is not pi-invariant and splits the orbit {0,1}  --  classes = [[0], [1], [2], [3]]: 'outcome = orbit' fails on this surface
+  [PASS] C2 equivalence: orbit clause holds on a surface IFF the surface is pi-invariant (checked both ways on these instances)
+
+PART D -- T3: overlap readouts, the transport identity, and sector-resolved K-reality
+==============================================================================
+  [PASS] D1[K^2=+1] transport identity tr(P_pi(k) rho) = tr(P_k rho_K) on 12 random states
+  [PASS] D2[K^2=+1] pi-symmetry of overlaps <=> sector-resolved K-reality defect vanishes  --  orbit-clause compatibility of overlap readouts IS K-reality at sector resolution
+  [PASS] D3[K^2=+1] the symmetrized state is exactly K-real, and K-real => pi-symmetric overlaps
+  [PASS] D1[K^2=-1] transport identity tr(P_pi(k) rho) = tr(P_k rho_K) on 12 random states
+  [PASS] D2[K^2=-1] pi-symmetry of overlaps <=> sector-resolved K-reality defect vanishes  --  orbit-clause compatibility of overlap readouts IS K-reality at sector resolution
+  [PASS] D3[K^2=-1] the symmetrized state is exactly K-real, and K-real => pi-symmetric overlaps
+  [PASS] D4 hostile witness: a generic (non-K-real) state's overlap readout separates the orbit {0,1}  --  |tr(P_0 rho) - tr(P_1 rho)| = 0.1311 != 0
+
+PART E -- degenerate boundary: pi = id
+==============================================================================
+  [PASS] E1 pi = id: orbits are singletons and every readout is pi-invariant; classes = sectors  --  the equivalence degenerates gracefully; the clause is vacuous exactly when K fixes every sector
+
+PART F -- the substitution check on random contexts
+==============================================================================
+  [PASS] F1 substitution reproduces 'outcome = orbit' on 25 random label sets and involutions  --  orbit clause <-> {individuation-by-registration + pi-invariant separating surface}
+
+PART G -- scope honesty: what is NOT proved here
+==============================================================================
+  [PASS] G1 K-reality of REALIZED states is not derived: the generic state has nonzero defect (D4)  --  the standing K-reality pin (guardrail G2) is exposed at sector resolution, not discharged
+  [PASS] G2 weight-blindness is untouched: orbit indicators carry no inter-sector weight (all values in {0,1})  --  complementary to the partition-not-weight result; no measure content enters
+
+==============================================================================
+SCORECARD: PASS=20 FAIL=0
+==============================================================================
+
+----- stderr -----
+

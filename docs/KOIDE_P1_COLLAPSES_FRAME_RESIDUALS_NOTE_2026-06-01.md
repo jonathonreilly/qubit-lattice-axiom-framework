@@ -1,122 +1,135 @@
-# Microcausality/Reflection-Positivity Localizes Carrier-Frame Residuals Without Forcing Faithfulness
+# Koide Finite Carrier-Frame Residual Boundary
 
-**Date:** 2026-06-01
+**Date:** 2026-06-01 (finite-boundary repair 2026-06-15)
 **Claim type:** bounded_theorem
-**Claim boundary:** bounded localization. If the faithful spin-1/2 matter
-representation is supplied, positive-energy quantization selects CAR over Bose
-occupation; microcausality/reflection positivity still admits the trivial
-scalar. This note does not audit or promote the spin-statistics/OS
-reconstruction rows, force faithfulness, or set an audit verdict.
+**Claim boundary:** finite carrier-frame diagnostics only. The repaired row
+checks four finite statements:
+
+1. supplied faithful spin-1/2 one-mode input gives a soft-Bose-vs-CAR
+   positive-energy discriminator;
+2. the retained cardinality obstruction
+   [`SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md)
+   is blind to a hard-core boson realized by the same single-site `sigma_+`
+   matrix;
+3. a finite scalar/RP-kernel witness is positive-energy and positive
+   semidefinite in the runner's toy surface;
+4. the nearest-neighbour bilinear spectra agree between the JW-fermion and
+   hard-core-boson frames.
+
+This note does not supply or import a retained continuum spin-statistics
+theorem, OS/Wightman reconstruction theorem, GL(F) supplier, or scalar
+microcausality theorem. It does not force faithfulness and it does not reduce
+the retained carrier-frame residual count to zero.
+
 **Primary runner:**
-`scripts/frontier_koide_p1_collapses_frame_residuals.py`
+[`scripts/frontier_koide_p1_collapses_frame_residuals.py`](../scripts/frontier_koide_p1_collapses_frame_residuals.py)
 with cache
-`logs/runner-cache/frontier_koide_p1_collapses_frame_residuals.txt`
-(10/10 checks).
+[`logs/runner-cache/frontier_koide_p1_collapses_frame_residuals.txt`](../logs/runner-cache/frontier_koide_p1_collapses_frame_residuals.txt)
+(14/14 checks).
 
-## The convergence
+## Source-Scope Repair
 
-Two carrier-frame residuals point at one constraint:
+The prior packet was conditionally useful but still read like a bridge through
+continuum spin-statistics and OS/RP reconstruction authorities. The current
+audit finding was:
 
-- **Faithful boost representation (local label: G1; see
-  `KOIDE_ONSITE_WEYL_BOOST_FROM_BIVECTORS_NOTE_2026-06-01`):**
-  faithfulness — matter in the boost-acting Weyl rep vs the trivial scalar
-  `J=K=0`. The boosts are *derived* single-site (Grassmann-free); only the
-  faithful-over-scalar *selection* is posited.
-- **Fermionic statistics / cross-site hopping sign (local label: L1; see
-  `KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01`):**
-  statistics — fermionic/CAR vs the hard-core boson (the cross-site hopping sign).
+```text
+missing_bridge_theorem: cheapest repair is to provide retained one-hop scalar
+OS/microcausality and spin-statistics/GL(F) supplier notes, or narrow this row
+to the finite soft-Bose/CAR and hard-core-blindness computations only.
+```
 
-Both ask whether microcausality / reflection-positivity / spin-statistics on the
-matter operator `M` closes them.
+This repair chooses the second path. It keeps the finite diagnostics and removes
+the field-theoretic bridge claim from the load-bearing surface. The named
+spin-statistics, OS/Wightman, GL(F), and scalar microcausality rows remain
+future audit targets, not dependencies of this repaired bounded row.
 
-## Result: one conditional collapse, but not zero residuals
+## Finite Diagnostics
 
-**(A) The conditional collapse is correct physics.** Given the faithful spin-½
-Weyl representation, the Dirac spectrum is `±E` (doubly degenerate). Bose-quantizing the
-negative-energy mode is **unbounded below** (`min H → −∞` with occupation cap),
-while CAR is bounded (`H ≥ 0`) — so **CAR is the unique positive-energy
-quantization** of the faithful spin-½ rep (runner §A). Statistics is the
-*conclusion*, not an input (non-circular). So the statistics posit follows from
-the faithful-representation posit, conditionally collapsing those two frame
-posits to **one (faithfulness)**.
+### A. Supplied Faithful Spin-1/2 Input Discriminates Soft Bose From CAR
 
-**(B) But the collapse is tier-conditional — the current retained surface does not
-exclude the hard-core boson.** The retained cardinality core
-(`spin_statistics_cardinality_pauli_exclusion`) excludes only the **free/soft CCR**
-boson (`[a,a†]=I` needs infinite dimension: `Tr[a,a†]=0 ≠ Tr(I)=D`). The
-**hard-core** boson `b=σ_+` has `[b,b†]` traceless (≠ I), so it **evades** that
-argument; and on a single site `b` is literally the *same* 2×2 matrix as the
-fermion `c` (both `σ_+`, both `(·)²=0`) — the criterion is **blind** to it
-(runner §B). The carrier-level forcing of CAR-over-hard-core-boson therefore rides
-**unaudited** rows (`axiom_first_spin_statistics_theorem`,
-`free_field_os_wightman_reconstruction`, `free_sector_spin_statistics_level1` —
-all unaudited on the live ledger). So the collapse is real modulo independent
-audit, but not retained-load-bearing; on the retained-only tier the two posits
-stay independent.
+Given a supplied faithful spin-1/2 one-mode spectrum with a negative-energy
+branch, soft Bose occupation is unbounded below as the occupation cap grows,
+while CAR occupation is bounded by construction in the runner's normal-ordered
+finite check. This is a finite algebraic discriminator under the supplied
+faithful-spin input. It is not a derivation of that input and not a continuum
+spin-statistics theorem.
 
-**(C) Microcausality/reflection positivity does not force faithfulness — the scalar is admitted.**
-The trivial scalar `J=K=0` is a healthy free field: **positive-energy**
-(`ω_k>0`), **microcausal** (equal-time field bracket vanishes spacelike), and
-**reflection-positive** (the OS-reflected Källén–Lehmann kernel is PSD, the
-canonical Glimm–Jaffe RP theory; runner §C). RP is a property of a *given*
-measure, and the free-scalar measure is reflection-positive — so RP cannot exclude
-a rep whose 2-point function is itself RP. The constraint admits the scalar, and
-faithfulness survives untouched as the **lone irreducible frame posit**.
+### B. Hard-Core Boson Blindness
 
-## What is *not* claimed (honesty)
+The single-site hard-core boson `b = sigma_+` and the single-site fermion
+ladder `c = sigma_+` use the same 2x2 matrix and both square to zero. The
+soft-CCR cardinality obstruction checks `[a,a^dagger] = I`; the hard-core
+matrix has traceless commutator and therefore evades that obstruction. This
+runner-checked fact is the bounded retained-tier caution: cardinality alone
+does not select the cross-site exchange sign.
 
-The bounded-local microcausality of gauge-invariant observables is **statistics-
-blind only as a spectrum statement**: the nearest-neighbour bilinear has the
-*same spectrum* in the fermion (JW-string) and hard-core-boson frames (they differ
-by the JW-string unitary; runner §D), so bounded-local microcausality cannot reach
-the field-bracket exchange sign. This note does **not** claim the
-Lieb–Robinson commutators are byte-identical (they are not — the two Hamiltonians
-generate different dynamics on the number operators); only the *spectrum* /
-unitary-relabel statement is used.
+### C. Scalar Toy Witness
 
-## Net and the next path
+The runner checks a finite scalar witness: `omega_k = sqrt(k^2 + m^2) > 0` on
+the sampled grid and an OS-reflected rank-one Kallen-Lehmann-style kernel is
+positive semidefinite on the sampled Euclidean times. This is a toy witness
+that the present finite packet has not excluded the scalar alternative. It is
+not a retained continuum scalar field theorem and not a microcausality theorem.
 
-The carrier frame goes from **two posits to one (faithfulness)** conditionally,
-modulo auditing the spin-statistics / OS-reconstruction step (currently
-unaudited). On the retained-only tier, two posits remain. The
-microcausality/reflection-positivity constraint **never reaches zero**: the
-scalar is admitted, so faithfulness is the single
-irreducible frame posit no microcausality / RP / positive-energy constraint on a
-single matter field excludes.
+### D. Nearest-Neighbour Spectrum Relabel
 
-Two concrete fronts: **(1)** **audit** the matter-2-point exchange-sign
-forcing — ratify `axiom_first_spin_statistics_theorem` S2 and
-`free_field_os_wightman_reconstruction` (closing its open lattice↔continuum and
-`1+1d → 4D` gates) — which would make the conditional collapse reusable after
-independent audit; **(2)** the **single auditable frontier** then becomes
-*faithful-Weyl-over-scalar*, untouched by the same constraint that admits the
-scalar, to be pursued through M's own spin content / the `so(3,1)`
-carrier-assignment, not through microcausality.
+For the two-site nearest-neighbour bilinear, the hard-core-boson frame and the
+JW-fermion frame have identical spectra. This is a finite spectrum/unitary
+relabel statement. It is not a claim that all bounded-local commutators or
+dynamics are byte-identical across the two frames.
 
-## Non-circularity
+## Result
 
-No `Q=2/3`, no fermionic frame, no faithful rep is assumed: the Dirac forcing is
-the c-number spectrum content of the spin-½ rep (statistics is derived, not
-input); the scalar's RP/positive-energy/microcausality are computed directly
-(runner).
+The repaired row supports only this bounded boundary map:
 
-## Load-bearing authorities
+```text
+finite faithful-spin input -> soft-Bose/CAR positive-energy discriminator
+cardinality obstruction -> hard-core boson remains unexcluded
+finite scalar toy witness -> this packet does not force faithfulness
+NN spectrum check -> bounded-local spectrum is exchange-sign blind
+```
 
-[SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md](SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md),
-[REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md),
-[FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md](FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md),
-[INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md](INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md),
-[CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md](CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md),
-and
-[STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md](STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md).
+The row no longer claims that microcausality/reflection positivity or
+spin-statistics has been supplied as a retained one-hop bridge. Therefore the
+current retained-tier conclusion is conservative: the finite packet identifies
+where the residuals sit, but it does not close them.
 
-Non-load-bearing audit targets named above remain plain text:
-`axiom_first_spin_statistics_theorem`,
-`free_field_os_wightman_reconstruction`, and
-`free_sector_spin_statistics_level1`.
+## Non-Claims
 
-## Audit dependency repair links
+This note does not:
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+- prove continuum spin-statistics;
+- prove continuum OS/Wightman reconstruction;
+- prove GL(F) reconstruction;
+- prove scalar microcausality;
+- derive the faithful spin-1/2 matter representation;
+- derive the physical charged-lepton readout;
+- apply an audit verdict or edit `docs/audit/**`.
 
-- [axiom_first_spin_statistics_theorem_note_2026-04-29](AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md)
+## Runner Certificate
+
+The runner verifies:
+
+- the source-scope firewall above is present;
+- the faithful-spin input is explicit and supplied;
+- the row is narrowed to finite diagnostics only;
+- soft Bose is unbounded under increasing occupation cap;
+- CAR is bounded in the finite normal-ordered check;
+- hard-core boson `sigma_+` evades the soft-CCR cardinality obstruction;
+- the scalar toy witness is positive-energy / PSD on the sampled surface;
+- the nearest-neighbour bilinear spectra match across the two finite frames.
+
+Expected output:
+
+```text
+14/14 checks passed.
+```
+
+## Future Work
+
+To use this lane for a retained carrier-frame closure, a later source packet
+would still need retained one-hop suppliers for the physical matter carrier,
+continuum spin-statistics or an approved lattice replacement, and any
+OS/Wightman/GL(F) bridge meant to be load-bearing. This note intentionally does
+not provide those bridges.

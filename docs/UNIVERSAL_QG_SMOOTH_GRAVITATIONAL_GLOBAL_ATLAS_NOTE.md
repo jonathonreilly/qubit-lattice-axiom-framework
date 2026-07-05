@@ -1,8 +1,12 @@
 # Universal QG Smooth Gravitational Global Atlas Identification
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15  
 **Role:** direct-universal quantum-gravity / smooth global gravitational atlas
 identification theorem
+**Script:** `scripts/frontier_universal_qg_smooth_gravitational_global_atlas_identification.py`
+(source-side verifier; PASS=6 FAIL=0 on current source)
 
 ## Verdict
 

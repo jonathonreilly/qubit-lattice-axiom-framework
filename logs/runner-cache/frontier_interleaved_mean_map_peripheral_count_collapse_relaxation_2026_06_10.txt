@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_interleaved_mean_map_peripheral_count_collapse_relaxation_2026_06_10.py
+runner_sha256: f8c84055c2ab628929ba1c2666c05ad6f465b943f60edb2f317c6daf0b462791
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.29
+status: ok
+----- stdout -----
 ==============================================================================
 Part 1  (M1) spectrum: peripheral dim 3 = per-color uniform diagonals; gap derived
 ==============================================================================
@@ -18,7 +26,7 @@ Part 3  (M3) C(n) converges (vs record-free almost-periodic); orientation -> dom
   [PASS] the induced curvature C(n) CONVERGES along the interleaved mean trajectory (records remove the record-free Bohr-frequency obstruction at the mean level; computed on DEFLATED genuine signal; the quoted value is ONE REALIZATION'S number -- state-realization data, not a derived constant)  (C -> 0.565613 (last-century change 1.8e-10; instance/seed-specific))
   [PASS] the induced link orientation converges Cauchy-tight (DEFLATED projective iteration; final century drift < 1e-8; the convergent object is the polar orientation of the VANISHING centered transient -- the fixed point itself is diagonal and carries NO link)  (drift sequence per century: ['3.6e-01', '4.6e-02', '8.6e-03', '1.5e-03'] ... 2.4e-09)
   [PASS] the convergence RATE is itself DERIVED: on deflated genuine signal the orientation-error log-slope matches ln(|mu_2|/|mu_1|) from the two leading derived families to a few percent (an earlier apparent 'crossover' was the un-deflated noise artifact; deflation restored the prediction)  (fitted -0.01762/step vs derived -0.01724/step)
-  [PASS] the converged direction's cross-block LIES IN the dominant family's cross-block image, whose rank is EXACTLY 3 (dimension-count guard; the random control's expected residual for a 3-of-9-dim image is sqrt(1-3/9) = 0.816 -- its power is dimension-counting, disclosed as such)  (rank 3; residual 4.2e-16; random-control residual 0.82)
+  [PASS] the converged direction's cross-block LIES IN the dominant family's cross-block image, whose rank is EXACTLY 3 (dimension-count guard; the random control's expected residual for a 3-of-9-dim image is sqrt(1-3/9) = 0.816 -- its power is dimension-counting, disclosed as such)  (rank 3; residual 6.6e-16; random-control residual 0.82)
   [PASS] the limit is INITIAL-STATE-DEPENDENT (different states converge to different configurations): no universal selection is claimed -- the realized asymptotic configuration is state-realization data (the separate selector clause)  (orientation difference 0.536)
 ==============================================================================
 Part 4  (M4) color-blind record erasure teeth (one-body exact); boundaries respected
@@ -47,3 +55,6 @@ SCOPE: NOT a step-measure delivery (no measure on SU(3); convergence to a
   C^3 carrier + the named hopping + the named instrument classes (instrument
   existence and lambda/tau are supplied parameters).  No new
   axiom/primitive/measure/weight; r untouched.  Audit lane grades.
+
+----- stderr -----
+

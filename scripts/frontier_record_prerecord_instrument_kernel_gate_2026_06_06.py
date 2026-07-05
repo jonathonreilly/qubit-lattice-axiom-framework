@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pre-record instrument to record-production kernel gate.
+"""Pre-record supplied-context instrument to record-production kernel gate.
 
 This stacked block makes the pre-record/post-record split operational:
 
@@ -22,6 +22,7 @@ import sympy as sp
 PASS = 0
 FAIL = 0
 REPO_ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = "docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md"
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -62,16 +63,13 @@ def read_doc(path: str) -> str:
 
 
 def main() -> int:
-    print("Record pre-record instrument kernel gate")
-    print("actual_current_surface_status: bounded-support")
-    print("trace_class: upstream_support")
-    print("reachability_to_target: supports")
-    print("conditional_surface_status: exact finite algebra under cited retained-bounded projective readout authorities and a supplied readout context")
-    print("proposal_allowed: true_for_bounded_support_only")
-    print("audit_required_before_effective_retained: true")
+    print("Record pre-record supplied-context instrument kernel gate")
+    print("source boundary: bounded finite algebra under cited projective readout authorities and a supplied readout context")
+    print("status authority: independent audit lane only")
     print()
 
     minimal_axioms = read_doc("docs/MINIMAL_AXIOMS_2026-06-05.md")
+    note = read_doc(NOTE_PATH)
     lsp_note = read_doc("docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md")
     pep_note = read_doc("docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md")
 
@@ -96,6 +94,38 @@ def main() -> int:
     check("retained-bounded LSP authority states canonical K_r = P_r", "K_r = P_r" in lsp_note and "P_r E P_r" in lsp_note)
     check("retained-bounded Lueders bridge states trace-normalized branch", "P sigma P" in pep_note.replace("σ", "sigma") and "Tr(P sigma P)" in pep_note.replace("σ", "sigma"))
     check("readout context remains supplied, not selected by Record", True)
+    flat_note = " ".join(note.split())
+    check(
+        "source note has no-retained-production-kernel audit firewall",
+        "**Claim type:** bounded_theorem / bounded finite algebra under supplied readout context" in note
+        and "## 2026-06-12 audit firewall: no retained production-kernel promotion" in note
+        and "actual_current_surface_status" not in note
+        and "bare_retained_allowed" not in note,
+    )
+    check(
+        "source note has supplied-context-only audit boundary",
+        "2026-06-15 audit-boundary repair: supplied-context finite algebra only" in note
+        and "not a physical\nproduction-generator theorem" in note
+        and "row-local\nsupplied inputs" in note
+        and "separate retained authority" in note,
+    )
+    check(
+        "source note says no further repair is needed only for supplied-context finite algebra",
+        "No further repair is needed for the stated supplied-context finite algebra" in flat_note
+        and "supplied readout context" in flat_note,
+    )
+    check(
+        "source note leaves readout/probability/rate bridges outside Record",
+        "does not promote the packet to bare retained status" in flat_note
+        and "remain outside the Record axiom and outside this finite gate" in flat_note
+        and "No new axiom, Tier-A admission, arbitrary measurement primitive, or audit status" in flat_note,
+    )
+    check(
+        "source note blocks downstream over-citation as generator/readout authority",
+        "cannot cite this row for more than the finite supplied-context algebra above" in flat_note
+        and "endogenous physical readout context" in flat_note
+        and "apparatus dynamics, Markov generator, or rate/clock normalization" in flat_note,
+    )
 
     print("\nB. one-qubit state and projective instruments")
     check("rho has trace one", trace(rho) == 1, f"rho={rho}")

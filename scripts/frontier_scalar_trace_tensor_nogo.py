@@ -23,7 +23,17 @@ Bounded witness:
 from __future__ import annotations
 
 from dataclasses import dataclass
-from _frontier_loader import load_frontier
+
+import frontier_coarse_grained_exterior_law as coarse
+import frontier_same_source_metric_ansatz_scan as same_source
+import frontier_tensorial_einstein_regge_completion as tcomp
+
+
+# These are static imports on purpose. The audit packet can inspect ordinary
+# import edges, while the previous _frontier_loader dynamic imports made the
+# load-bearing scalar functional, probe-family, and Einstein-residual helpers
+# opaque in restricted helper-runner review.
+_LOAD_BEARING_HELPERS = (tcomp, same_source, coarse)
 
 
 @dataclass
@@ -43,11 +53,6 @@ def record(name: str, ok: bool, detail: str, status: str = "EXACT") -> None:
     print(f"[{status}] {tag}: {name}")
     if detail:
         print(f"    {detail}")
-
-
-tcomp = load_frontier("tensor_completion", "frontier_tensorial_einstein_regge_completion.py")
-same_source = load_frontier("same_source_metric", "frontier_same_source_metric_ansatz_scan.py")
-coarse = load_frontier("coarse_grained", "frontier_coarse_grained_exterior_law.py")
 
 
 def main() -> None:

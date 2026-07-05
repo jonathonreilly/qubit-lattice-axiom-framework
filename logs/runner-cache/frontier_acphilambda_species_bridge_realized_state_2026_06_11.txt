@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/frontier_acphilambda_species_bridge_realized_state_2026_06_11.py
+runner_sha256: 67c0307a5dabb8c0ec42b98aa6c0cc1cff59ed320bec9602c88db795fbbafef6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+PASS  A1 C3[111] free 3-cycle on hw=1 (orbit = full triplet)
+PASS  B0 K-real circulant: M Hermitian, eigenvalues real and distinct
+PASS  B0b supplied readout context {P_k}: orthogonal resolution, M = sum lam_k P_k
+PASS  A2 naming bijection vacuity: all 6 relabelings fix every registered invariant
+PASS  B1 registration: D(M) = M (sector content faithful) and D strips inter-sector coherence (D(probe)=0)
+PASS  B2 pointwise reconstruction: iota(k) from registered tr(P_k M) matches lam_k
+PASS  B3 rigidity: exactly 1 of 6 assignments consistent with the records
+PASS  B4 carrier membership tautological given context: P_k <= P_hw1 and sum_k P_k = P_hw1 in C^8
+PASS  B4b embedded C3[111] restricts to the triplet 3-cycle (R3 = J-conjugate permutation, R3^3 = I)
+PASS  B5a counterfactual state is law-admissible (K-real Hermitian circulant, same context diagonalizes it)
+PASS  B5b assignment is state-contingent: iota differs (k=1,2 values exchange, k=0 fixed) => registered data, not derivation output
+PASS  C1 naive dispersion zero locus = all 8 corners, hw-graded (1,3,3,1): hw=1 not singled out
+PASS  C2 Wilson staircase (0,2r,4r,6r): the distinguished massless corner is hw=0, not hw=1
+PASS  C3 complementation exchanges hw=1 <-> hw=2 and commutes with C3[111]
+PASS  D1 color: T_U = J/3 doubly stochastic with spectral gap (eigenvalues {1,0,0}); unique stationary vector = uniform => no surviving per-sector color record
+PASS  D1b generation registration preserves per-sector data exactly while the color channel erases it in one step
+PASS  D2 color gauge move: registered invariants (traces of words) fixed while the sector frame is moved => sector labels carry no registered content
+PASS  E1 equivariance guard: identification reconstructs the supplied pattern at arbitrary admissible (a,B,delta); no external comparator enters
+PASS  E2 strict reduction: assignment freedom 6 (pre) -> 1 (record-determined), quotient = vacuous naming
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

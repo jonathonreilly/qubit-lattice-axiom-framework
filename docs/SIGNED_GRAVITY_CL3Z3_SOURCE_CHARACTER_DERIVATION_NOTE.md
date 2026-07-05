@@ -1,5 +1,7 @@
 # Signed Gravity Cl(3)/Z^3 Source-Character Derivation Note
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-26
 **Status:** finite determinant-line host/source-character grammar result;
 canonical selector and source action remain unforced; not a physical

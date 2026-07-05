@@ -1,4 +1,4 @@
-# Teleportation Native Axioms Scope Split — Source Theorem Note
+# Teleportation Native Axioms Scope Split -- Source Theorem Note
 
 **Date:** 2026-05-16
 **Claim type:** open_gate
@@ -96,10 +96,10 @@ disjoint claim surfaces:
 **Disjointness.** The two surfaces are disjoint in claim grade: surface `B`
 is supported only as a finite-bookkeeping consistency claim under the named
 audited evidence; surface `N` is unconditioned HOLD. The parent note's
-strongest current statement — "Standard quantum state teleportation can be
+strongest current statement -- "Standard quantum state teleportation can be
 represented on native retained taste-qubit factors with explicit Bell-frame
 accounting and a causal 3D+1 two-bit record channel, on the audited finite
-surfaces" — is a `B`-surface statement only.
+surfaces" -- is a `B`-surface statement only.
 
 **Consequence.** A re-audit of the parent note that targets only surface
 `B` should find `audited_clean` at planning-grade. A re-audit of the parent
@@ -218,3 +218,21 @@ paths in `notes_for_re_audit_if_any`:
 
 This note takes the "split" path. Bridge theorems for the seven nature-grade
 blockers remain open work and are not attempted here.
+
+## 7. Downstream Boundary Alignment (2026-06-13)
+
+The runner now also checks the audited downstream teleportation boundary stack
+that was produced after this scope split. Those anchors give the finite
+planning surface a stronger dependency certificate: causal channel,
+measurement record, apparatus dynamics, resource generation, resource
+fidelity, retained-axis operator algebra, cross-encoding, three-register
+encoding, no-signaling, 3D-operator consistency, and conclusion-boundary rows
+must all remain in audited bounded or audited renaming status for this split
+runner to pass.
+
+This does not collapse surface `B` into surface `N`. The added checks only
+make the already bounded state-teleportation planning stack explicit. Native
+resource genesis, durable Bell measurement apparatus, derived record carrier,
+apparatus-level physical readout, robustness, operational frame calibration,
+and conservation-ledger closure remain held open until separate retained-grade
+derivations exist.

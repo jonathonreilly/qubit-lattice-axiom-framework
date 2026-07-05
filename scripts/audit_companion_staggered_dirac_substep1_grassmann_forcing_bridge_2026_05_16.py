@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Exact-symbolic audit-companion runner for
 `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
-(2026-06-10 science-fix revision: U4 boundary discharged).
+(2026-06-10/11 science-fix revision: former U4 boundary discharged via
+the Quantum axiom plus the retained per-site dim-two theorem).
 
 The note's load-bearing content is the two-candidate collapse on the
 framework's physical per-site Hilbert space:
@@ -13,12 +14,11 @@ framework's physical per-site Hilbert space:
 
 Given the cited one-hop authorities
 
-  - U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20
-    (retained: H_x = C^2 is the single faithful complex irreducible
-    Cl(3,0) ~= M_2(C) module, multiplicity k = 1, from the Quantum
-    axiom's one-qubit-per-site content)
-  - STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE narrow
-    bounded note (C1: k = 1 => dim_C H_x = 2; multiplicity enumeration)
+  - MINIMAL_AXIOMS_2026-06-05 (Quantum axiom, accepted premise node:
+    one qubit per site; the former U4 packaging row is the same
+    axiom-baseline content, not a separate theorem consumed here)
+  - CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02
+    (dim_C H_x = 2 exactly, Pauli realization)
   - CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10
     (Cl(3) faithful complex irrep has dim_C V = 2)
   - SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10
@@ -26,14 +26,15 @@ Given the cited one-hop authorities
 
 the dimensional-match (D1)-(D3), the Berezin readout (D4), and the
 composition / collapse (D5) all reduce to exact-symbolic arithmetic on
-finite-dim complex matrices. The 2026-06-10 revision adds:
+finite-dim complex matrices. The 2026-06-10/11 revision adds:
 
-  Part 8 - (D5) U4 composition certificate: gamma_i -> sigma_i is a
+  Part 8 - (D5) Quantum/dim-two discharge certificate:
+           gamma_i -> sigma_i is a
            real-algebra isomorphism onto M_2(C) (faithful), the action
            on C^2 is irreducible (scalar commutant), single chirality
            (omega -> +i I, k = 1), and the two-candidate surface
            collapses to single-pair (G).
-  Part 9 - (D5) falsification leg: without the U4/k=1 input, the k = 2
+  Part 9 - (D5) falsification leg: without the one-qubit/dim-two input, the k = 2
            module rho_+ (+) rho_+ on C^4 is an admissible faithful
            Cl(3) module on which the single-pair collapse FAILS.
   Part 10 - (B-stat) scope-boundary witness: the hard-core-boson frame
@@ -41,9 +42,24 @@ finite-dim complex matrices. The 2026-06-10 revision adds:
            sigma_+^2 = 0) while being cross-site commuting (not CAR);
            the statistics selection is declared open, not claimed.
 
+The 2026-06-11 science-fix #2 (D2 module repair, audit-requested)
+extends Part 2: the per-site two-state module is the Berezin function
+space F_x = Lambda[chibar_x] (dim 2 by nilpotency), with the
+raising/lowering pair realized by OPERATORS on F_x — multiplication
+cbar = (chibar .) and the Berezin derivative c = d/dchibar (the same
+operation as the per-site integral (B2)). The runner verifies the
+2x2 matrix realization (c^2 = cbar^2 = 0, {c, cbar} = 1,
+cbar|0> = |1>, c|1> = |0>, N = cbar c with spectrum {0, 1}) and the
+repaired-slip witness: generator LEFT MULTIPLICATION on
+Lambda[chi, chibar] satisfies {L_chi, L_chibar} = 0 != 1 — the
+generators do NOT realize the raising/lowering structure (the old
+"chi_x|1> = |0>" phrasing was incompatible with (G3) at x = y).
+Part 6's Grassmann trace is computed from the number operator N on
+F_x (matrix exponential), matching 1 + exp(-m).
+
 Companion role: not a new claim row; provides audit-friendly evidence
 that the note's load-bearing algebraic content holds at exact symbolic
-precision, that the consumed retained U4 authority is load-bearing
+precision, that the consumed one-qubit/dim-two input is load-bearing
 (falsification leg), and that the declared scope boundary is visible
 in the verified stdout.
 """
@@ -128,7 +144,7 @@ def main() -> int:
     print("Audit companion (exact-symbolic) for")
     print("STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16")
     print("Goal: sympy verification of (D1)-(D4) Grassmann-vs-bosonic dichotomy,")
-    print("      the (D5) U4-composition collapse certificate + falsification leg,")
+    print("      the (D5) Quantum/dim-two collapse certificate + falsification leg,")
     print("      and the (B-stat) declared scope-boundary witness")
     print("=" * 88)
 
@@ -240,6 +256,60 @@ def main() -> int:
         chibar_sq_coeff == 0,
     )
 
+    # --- D2 module repair (2026-06-11, audit-requested) -----------------
+    # The two-state module is the Berezin function space
+    # F_x = Lambda[chibar_x] = span{1, chibar_x}, with raising/lowering
+    # realized by OPERATORS on F_x: multiplication cbar = (chibar .) and
+    # the Berezin derivative c = d/dchibar (the per-site integral (B2)).
+    # Basis order: (1, chibar). The generators themselves are integration
+    # variables; the old "chi_x|1> = |0>" generator action is
+    # incompatible with (G3) at x = y and is NOT used.
+    M_mult = Matrix([[0, 0], [1, 0]])  # cbar: 1 -> chibar, chibar -> chibar^2 = 0
+    D_der = Matrix([[0, 1], [0, 0]])   # c = d/dchibar: 1 -> 0, chibar -> 1
+    vac = Matrix([1, 0])               # |0>_x = 1
+    one_p = Matrix([0, 1])             # |1>_x = chibar_x
+    check(
+        "(D2 repair) cbar^2 = 0 and c^2 = 0 on F_x (2x2 matrix realization)",
+        simplify(M_mult * M_mult) == Z2 and simplify(D_der * D_der) == Z2,
+    )
+    check(
+        "(D2 repair) {c, cbar} = 1 on F_x (graded Leibniz, DERIVED not assumed)",
+        simplify(D_der * M_mult + M_mult * D_der) == I2,
+    )
+    check(
+        "(D2 repair) cbar|0> = |1>, c|1> = |0>, c|0> = 0 (lowering = Berezin derivative)",
+        M_mult * vac == one_p
+        and D_der * one_p == vac
+        and D_der * vac == Matrix([0, 0]),
+    )
+    N_op = M_mult * D_der
+    check(
+        "(D2 repair) number operator N = cbar c = diag(0, 1), spectrum {0, 1}",
+        simplify(N_op - Matrix([[0, 0], [0, 1]])) == Z2
+        and sorted(N_op.eigenvals().keys()) == [0, 1],
+    )
+    # Repaired-slip witness: generator LEFT MULTIPLICATION on the 4-dim
+    # exterior algebra Lambda[chi, chibar] (basis 1, chi, chibar,
+    # chi*chibar) satisfies {L_chi, L_chibar} = 0 — the generators do
+    # NOT realize the CAR raising/lowering structure.
+    L_chi = zeros(4, 4)
+    L_chi[1, 0] = 1   # chi * 1 = chi
+    L_chi[3, 2] = 1   # chi * chibar = chi chibar
+    L_chibar = zeros(4, 4)
+    L_chibar[2, 0] = 1    # chibar * 1 = chibar
+    L_chibar[3, 1] = -1   # chibar * chi = -chi chibar
+    check(
+        "(D2 repair, slip witness) {L_chi, L_chibar} = 0 != 1 on Lambda[chi, chibar]",
+        simplify(L_chi * L_chibar + L_chibar * L_chi) == zeros(4, 4),
+        detail="generator left multiplication is NOT the lowering operator",
+    )
+    check(
+        "(D2 repair, slip witness) L_chi(L_chibar(1)) = chi*chibar != 1 (no chi|1> = |0>)",
+        (L_chi * L_chibar * Matrix([1, 0, 0, 0]))[3] == 1
+        and (L_chi * L_chibar * Matrix([1, 0, 0, 0]))[0] == 0,
+        detail="chi(chibar 1) lands on the 2-grade monomial, not the vacuum",
+    )
+
     # =========================================================================
     section("Part 3: (D2) match to dim_C V = 2 (upstream Cl(3) faithful irrep)")
     # =========================================================================
@@ -299,9 +369,9 @@ def main() -> int:
     section("Part 6: (D4) bosonic single-mode infinite-tower diverges from Grassmann")
     # =========================================================================
     # On a single mode at mass m:
-    #   Tr_{H_x^G} exp(-m chibar chi)
-    #     = <0| exp(-m chibar chi) |0> + <1| exp(-m chibar chi) |1>
-    #     = 1 + exp(-m)              (Grassmann: 2-state Fock)
+    #   Tr_{F_x} exp(-m N)  with N = cbar c the number operator on the
+    #     Berezin function space (spectrum {0, 1}; Part 2 repair)
+    #     = 1 + exp(-m)              (Grassmann: 2-state module)
     #   Tr_{H_x^B} exp(-m a^dag a)
     #     = sum_{n=0}^infty exp(-mn) = 1/(1 - exp(-m))   (bosonic geometric)
     # These differ structurally; at m = log(2), grassmann_tr = 3/2 while
@@ -309,6 +379,14 @@ def main() -> int:
 
     m_sym = Symbol("m", positive=True, real=True)
     grassmann_tr = 1 + sym_exp(-m_sym)
+    # Matrix-level cross-check from the Part-2 repaired module: N = diag(0, 1)
+    # gives exp(-m N) = diag(1, exp(-m)) and trace 1 + exp(-m) exactly.
+    exp_mN = (-m_sym * N_op).exp()
+    check(
+        "(D4) Tr_{F_x} exp(-m N) = 1 + exp(-m) from the repaired module's N = cbar c",
+        sympy.simplify(exp_mN.trace() - grassmann_tr) == 0,
+        detail="N = diag(0, 1) on the Berezin function space F_x",
+    )
     bosonic_tr = 1 / (1 - sym_exp(-m_sym))
     diff_at_log2 = sympy.simplify(
         grassmann_tr.subs(m_sym, sympy.log(2)) - bosonic_tr.subs(m_sym, sympy.log(2))
@@ -349,13 +427,14 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 8: (D5) U4 composition certificate (retained one-hop authority)")
+    section("Part 8: (D5) Quantum/dim-two discharge certificate")
     # =========================================================================
-    # The retained U4 closure delivers: H_x = C^2 is the single faithful
-    # complex irreducible Cl(3,0) ~= M_2(C) module, k = 1. The interface
-    # facts (complex-linear, faithful, irreducible, single chirality) are
-    # re-verified here at exact symbolic precision, then composed with
-    # (D1)-(D3) into the collapse certificate.
+    # The Quantum axiom supplies one qubit per site and the retained dim-two
+    # row supplies dim_C H_x = 2 with Pauli realization. This is the
+    # single faithful complex irreducible Cl(3,0) ~= M_2(C) module.
+    # The interface facts (complex-linear, faithful, irreducible, single
+    # chirality) are re-verified here at exact symbolic precision, then
+    # composed with (D1)-(D3) into the collapse certificate.
 
     def real_span_rank(mats: list) -> int:
         """Rank over R of complex 2x2 (or nxn) matrices, flattened to
@@ -420,7 +499,7 @@ def main() -> int:
     dim_Hx = cl3_carrier_dim
     k_multiplicity = dim_Hx // 2
     check(
-        "(D5) dim_C H_x = 2 = 2k with k = 1 (U4 closure composed with C1)",
+        "(D5) dim_C H_x = 2 = 2k with k = 1 (Quantum axiom plus retained dim-two row)",
         dim_Hx == 2 and k_multiplicity == 1,
         detail=f"dim_C H_x = {dim_Hx}, k = {k_multiplicity}",
     )
@@ -443,19 +522,19 @@ def main() -> int:
     )
     print(
         "  COLLAPSE CERTIFICATE: on the physical per-site Hilbert space"
-        " (retained U4 closure, dim_C H_x = 2, k = 1), the two-candidate"
+        " (Quantum axiom plus retained dim-two row, dim_C H_x = 2), the two-candidate"
         " surface {G, B} collapses to the single-pair Grassmann candidate (G)."
     )
 
     # =========================================================================
-    section("Part 9: (D5) falsification leg — collapse fails without the U4 input")
+    section("Part 9: (D5) falsification leg — collapse fails without the one-qubit/dim-two input")
     # =========================================================================
-    # Without the retained U4/k=1 authority, the abstract algebraic surface
+    # Without the one-qubit/dim-two input, the abstract algebraic surface
     # admits faithful Cl(3) modules at every k >= 1. Exhibit k = 2:
     # rho_+ (+) rho_+ on C^4 satisfies the Clifford relations, is faithful,
     # and has dim_C = 4 — on it the single-pair Grassmann match FAILS while
     # a two-pair Grassmann module matches instead. Hence the consumed
-    # retained authority is load-bearing for (D5).
+    # one-qubit/dim-two input is load-bearing for (D5).
 
     def blkdiag2(A: Matrix, B: Matrix) -> Matrix:
         M = zeros(A.shape[0] + B.shape[0], A.shape[1] + B.shape[1])
@@ -495,7 +574,7 @@ def main() -> int:
     )
     dim_k2 = G4[0].shape[0]
     check(
-        "(falsif) k = 2 module has dim_C = 4 != 2: admissible without the U4 input",
+        "(falsif) k = 2 module has dim_C = 4 != 2: admissible without the one-qubit/dim-two input",
         dim_k2 == 4 and dim_k2 != dim_Hx,
         detail=f"dim_C = {dim_k2}",
     )
@@ -503,7 +582,7 @@ def main() -> int:
         "(falsif) on the k = 2 module, single-pair (G) match fails (2 != 4)"
         " while a two-pair Grassmann module matches (2^2 = 4)",
         single_pair_dim != dim_k2 and 2**2 == dim_k2,
-        detail="without k = 1 the single-pair collapse is NOT forced",
+        detail="without the one-qubit/dim-two input the single-pair collapse is NOT forced",
     )
 
     # =========================================================================
@@ -553,15 +632,18 @@ def main() -> int:
     # =========================================================================
     print("  Verified at exact sympy precision:")
     print("    (D1) Bosonic per-site Fock truncated dim grows without bound")
-    print("    (D2) Grassmann per-site Fock dim = 2 (via nilpotency chi_x^2 = 0)")
+    print("    (D2) Berezin function space F_x = Lambda[chibar] has dim = 2 (nilpotency)")
+    print("    (D2 repair) raising/lowering = multiplication + Berezin derivative on F_x:")
+    print("         {c, cbar} = 1 DERIVED; slip witness {L_chi, L_chibar} = 0 (generators")
+    print("         are integration variables, not the lowering operator)")
     print("    (D2) dim_C H_x^G = dim_C H_x = 2 match to the physical per-site dim")
     print("    (D3) Explicit two-candidate comparison {G, B}")
     print("    (D4) Z_F[M] = det(M) at N = 1, 2, 3, 4 (cited upstream Berezin identity)")
     print("    (D4) Grassmann/bosonic single-mode traces structurally distinct")
     print("    Counterfactual: dropping nilpotency loses the dim-2 readout")
-    print("    (D5) U4 composition certificate: Cl(3,0) ~= M_2(C) faithful iso,")
+    print("    (D5) Quantum/dim-two discharge certificate: Cl(3,0) ~= M_2(C) faithful iso,")
     print("         irreducible on C^2, single chirality, k = 1 => collapse to (G)")
-    print("    (D5) Falsification leg: k = 2 module defeats the collapse without U4")
+    print("    (D5) Falsification leg: k = 2 module defeats the collapse without the one-qubit/dim-two input")
     print("    (B-stat) Scope boundary: hard-core-boson frame ties on dimension;")
     print("         statistics selection declared open, not claimed")
 

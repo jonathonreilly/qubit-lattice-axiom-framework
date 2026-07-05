@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_generation_equivariant_ward_degeneracy_no_go.py
-runner_sha256: 68ca00375cd2584aa92375f2e975c95c71b2b1385285a785584db3e23e3c2fdb
+runner_sha256: 3af7d7baef62d18db9cc1f175ff286dab76ce4f1e91882bfe13b63b48dc79722
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.08
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
 ----- stdout -----
 ========================================================================================
 LANE 3 GENERATION-EQUIVARIANT WARD DEGENERACY NO-GO
@@ -17,10 +17,13 @@ PASS: THREE_GENERATION_STRUCTURE_NOTE.md exists -- docs/THREE_GENERATION_STRUCTU
 PASS: S3_TASTE_CUBE_DECOMPOSITION_NOTE.md exists -- docs/S3_TASTE_CUBE_DECOMPOSITION_NOTE.md
 PASS: QUARK_GENERATION_STRATIFIED_WARD_FREE_MATRIX_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_GENERATION_STRATIFIED_WARD_FREE_MATRIX_NO_GO_NOTE_2026-04-28.md
 PASS: SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md exists -- docs/SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md
-FAIL: generation note says hierarchy remains open
+PASS: generation note says mass hierarchy remains outside its retained scope
 PASS: S3 support note identifies hw=1 as A_1 + E
 PASS: block01 free-matrix no-go is compatible
 PASS: new note forbids retained mass closure
+PASS: new note routes carrier through retained-bounded three-generation authority
+PASS: new note has no direct markdown dependency edge to the unaudited realization gate
+PASS: new note does not state the realization gate as load-bearing
 
 B. S3 permutation representation on the generation triplet
 ------------------------------------------------------------------------
@@ -66,13 +69,14 @@ PASS: oriented C3 example breaks reflection
 PASS: oriented C3 example can split three eigenvalues -- [0.05717968 1.44282032 1.5       ]
 PASS: therefore C3 splitting requires an extra orientation/reflection-breaking premise
 PASS: forbidden proof inputs are absent -- ['Hermitian_Ward_endomorphism', 'S3_generation_action', 'commutant_linear_algebra', 'hw1_A1_plus_E_decomposition']
-PASS: new note leaves future source/readout primitive open
+PASS: new note leaves future source/readout input or bridge open
 PASS: new note does not overclaim future no-go
 
 Summary
 ------------------------------------------------------------------------
-TOTAL: PASS=43, FAIL=1
-VERDICT: generation-equivariant Ward no-go verifier has failing checks.
+TOTAL: PASS=47, FAIL=0
+VERDICT: S_3-equivariant Ward operators cannot stratify three quark
+generation Yukawa eigenvalues without an additional source/readout bridge.
 
 ----- stderr -----
 

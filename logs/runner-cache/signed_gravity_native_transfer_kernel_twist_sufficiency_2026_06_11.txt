@@ -1,0 +1,84 @@
+===== runner cache v1 =====
+runner: scripts/signed_gravity_native_transfer_kernel_twist_sufficiency_2026_06_11.py
+runner_sha256: becbfca7d81943f666fdd0a86a6ab3c00b06f42cd21e28159bc977fa101d6c32
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 11.29
+status: ok
+----- stdout -----
+Native transfer-kernel sufficiency test
+mass m=0.5; edge localization threshold=0.99
+STEP 1 -- native 1D two-step transfer kernel
+[PASS] Step 1 spectrum convention: -log(T_hat^2) = 2 E(p)  (L=64, max real residual=2.44e-15, max imag=8.72e-16)
+[PASS] Step 1 even-distance support  (max |K(r odd)|=3.60e-17, max |K(r even)|=1.508e+00)
+[PASS] Step 1 quasilocality rate fit reaches the sharp retained rate  (fit=0.482148, arcsinh(m)=0.481212, m=0.5)
+
+STEP 2 -- geometry and gauge controls
+[PASS] Uniform holonomy and single twisted bond are spectrally gauge-equivalent  (max |sort(K_uniform)-sort(K_single_bond)|=1.78e-15)
+[PASS] Two-site-cell mixed (p_x,y) representation reproduces the full cylinder spectrum  (max spectral residual=3.11e-15, blocks=6, block_dim=28)
+
+STEP 3 -- parity and orientation dichotomy gates on K_2D
+  theta=0: ||[Gamma,K]||=2.37e-14, ||{Gamma,K}||=4.771e+00; raw massive ||[Gamma,H]||=2.821e+00, ||{Gamma,H}||=1.000e+00; pure-hop anti floor=0.00e+00
+             ||K_same||=2.385734, ||K_flip||=1.18e-14, orientation-even=2.385734, orientation-odd=0.000000
+  theta=1: ||[Gamma,K]||=2.83e-14, ||{Gamma,K}||=4.770e+00; raw massive ||[Gamma,H]||=2.819e+00, ||{Gamma,H}||=1.000e+00; pure-hop anti floor=0.00e+00
+             ||K_same||=2.384806, ||K_flip||=1.41e-14, orientation-even=2.384806, orientation-odd=0.048571
+  theta=3.14159: ||[Gamma,K]||=1.74e-14, ||{Gamma,K}||=4.753e+00; raw massive ||[Gamma,H]||=2.804e+00, ||{Gamma,H}||=1.000e+00; pure-hop anti floor=0.00e+00
+             ||K_same||=2.376607, ||K_flip||=8.70e-15, orientation-even=2.376607, orientation-odd=0.150585
+[PASS] Parity-flipping raw hop anticommutes with Gamma before the log  (max ||{Gamma,H_hop}||=0.00e+00)
+[PASS] Native K_2D is same-parity and not in the parity-flipping-only class  (max ||K_flip||=1.41e-14, theta=0 orientation-odd floor=7.73e-15, theta=1.0 orientation-odd=4.857e-02)
+
+STEP 4 -- #3585 sufficiency conditions
+  size=20x30, theta=0: gap0=0.966999, threshold=0.481212, in_gap=0, edge99=0, max_edge_weight_any_state=0.129, eta_bottom=(0, 0, 0), eta_top=(0, 0, 0)
+  size=20x30, theta=0.6: gap0=0.968597, threshold=0.482016, in_gap=0, edge99=0, max_edge_weight_any_state=0.129, eta_bottom=(0, 0, 0), eta_top=(0, 0, 0)
+  size=20x30, theta=1: gap0=0.971427, threshold=0.483439, in_gap=0, edge99=0, max_edge_weight_any_state=0.129, eta_bottom=(0, 0, 0), eta_top=(0, 0, 0)
+  size=20x30, theta=3.14159: gap0=1.009298, threshold=0.502486, in_gap=0, edge99=0, max_edge_weight_any_state=0.129, eta_bottom=(0, 0, 0), eta_top=(0, 0, 0)
+  size=28x40, theta=0: gap0=0.965043, threshold=0.481212, in_gap=0, edge99=0, max_edge_weight_any_state=0.097, eta_bottom=(0, 0, 0), eta_top=(0, 0, 0)
+  size=28x40, theta=0.6: gap0=0.965861, threshold=0.481622, in_gap=0, edge99=0, max_edge_weight_any_state=0.097, eta_bottom=(0, 0, 0), eta_top=(0, 0, 0)
+  size=28x40, theta=1: gap0=0.967313, threshold=0.482350, in_gap=0, edge99=0, max_edge_weight_any_state=0.097, eta_bottom=(0, 0, 0), eta_top=(0, 0, 0)
+  size=28x40, theta=3.14159: gap0=0.987063, threshold=0.492260, in_gap=0, edge99=0, max_edge_weight_any_state=0.097, eta_bottom=(0, 0, 0), eta_top=(0, 0, 0)
+
+VERDICT TABLE
+condition | theta | size | measured value | met
+--- | ---: | ---: | --- | ---
+gapped zero window | 0 | 20x30 | gap0=0.966999, periodic-bulk gap0=0.962424 | met
+orientation-odd same-parity coupling | 0 | 20x30 | Fro norm=0.000000 | not-met
+in-gap edge tower | 0 | 20x30 | |lambda|<=bulk_gap/2=0.481212: states=0, edge99=0 | not-met
+spectral eta labels | 0 | 20x30 | Lambda=('0.20', '0.35', '0.48') bottom_eta=(0, 0, 0) top_eta=(0, 0, 0) bottom_h=(0, 0, 0) top_h=(0, 0, 0) | not-met
+gapped zero window | 0.6 | 20x30 | gap0=0.968597, periodic-bulk gap0=0.964031 | met
+orientation-odd same-parity coupling | 0.6 | 20x30 | Fro norm=0.360999 | met
+in-gap edge tower | 0.6 | 20x30 | |lambda|<=bulk_gap/2=0.482016: states=0, edge99=0 | not-met
+spectral eta labels | 0.6 | 20x30 | Lambda=('0.20', '0.35', '0.48') bottom_eta=(0, 0, 0) top_eta=(0, 0, 0) bottom_h=(0, 0, 0) top_h=(0, 0, 0) | not-met
+gapped zero window | 1 | 20x30 | gap0=0.971427, periodic-bulk gap0=0.966879 | met
+orientation-odd same-parity coupling | 1 | 20x30 | Fro norm=0.600935 | met
+in-gap edge tower | 1 | 20x30 | |lambda|<=bulk_gap/2=0.483439: states=0, edge99=0 | not-met
+spectral eta labels | 1 | 20x30 | Lambda=('0.20', '0.35', '0.48') bottom_eta=(0, 0, 0) top_eta=(0, 0, 0) bottom_h=(0, 0, 0) top_h=(0, 0, 0) | not-met
+gapped zero window | 3.14159 | 20x30 | gap0=1.009298, periodic-bulk gap0=1.004973 | met
+orientation-odd same-parity coupling | 3.14159 | 20x30 | Fro norm=1.856417 | met
+in-gap edge tower | 3.14159 | 20x30 | |lambda|<=bulk_gap/2=0.502486: states=0, edge99=0 | not-met
+spectral eta labels | 3.14159 | 20x30 | Lambda=('0.20', '0.35', '0.48') bottom_eta=(0, 0, 0) top_eta=(0, 0, 0) bottom_h=(0, 0, 0) top_h=(0, 0, 0) | not-met
+gapped zero window | 0 | 28x40 | gap0=0.965043, periodic-bulk gap0=0.962424 | met
+orientation-odd same-parity coupling | 0 | 28x40 | Fro norm=0.000000 | not-met
+in-gap edge tower | 0 | 28x40 | |lambda|<=bulk_gap/2=0.481212: states=0, edge99=0 | not-met
+spectral eta labels | 0 | 28x40 | Lambda=('0.20', '0.35', '0.48') bottom_eta=(0, 0, 0) top_eta=(0, 0, 0) bottom_h=(0, 0, 0) top_h=(0, 0, 0) | not-met
+gapped zero window | 0.6 | 28x40 | gap0=0.965861, periodic-bulk gap0=0.963244 | met
+orientation-odd same-parity coupling | 0.6 | 28x40 | Fro norm=0.351666 | met
+in-gap edge tower | 0.6 | 28x40 | |lambda|<=bulk_gap/2=0.481622: states=0, edge99=0 | not-met
+spectral eta labels | 0.6 | 28x40 | Lambda=('0.20', '0.35', '0.48') bottom_eta=(0, 0, 0) top_eta=(0, 0, 0) bottom_h=(0, 0, 0) top_h=(0, 0, 0) | not-met
+gapped zero window | 1 | 28x40 | gap0=0.967313, periodic-bulk gap0=0.964701 | met
+orientation-odd same-parity coupling | 1 | 28x40 | Fro norm=0.585745 | met
+in-gap edge tower | 1 | 28x40 | |lambda|<=bulk_gap/2=0.482350: states=0, edge99=0 | not-met
+spectral eta labels | 1 | 28x40 | Lambda=('0.20', '0.35', '0.48') bottom_eta=(0, 0, 0) top_eta=(0, 0, 0) bottom_h=(0, 0, 0) top_h=(0, 0, 0) | not-met
+gapped zero window | 3.14159 | 28x40 | gap0=0.987063, periodic-bulk gap0=0.984519 | met
+orientation-odd same-parity coupling | 3.14159 | 28x40 | Fro norm=1.824384 | met
+in-gap edge tower | 3.14159 | 28x40 | |lambda|<=bulk_gap/2=0.492260: states=0, edge99=0 | not-met
+spectral eta labels | 3.14159 | 28x40 | Lambda=('0.20', '0.35', '0.48') bottom_eta=(0, 0, 0) top_eta=(0, 0, 0) bottom_h=(0, 0, 0) top_h=(0, 0, 0) | not-met
+[PASS] Condition (i) gapped zero window is present on all tested native cylinders  (min gap0=0.965043)
+[PASS] Orientation-odd same-parity content appears at nonzero holonomy  (theta=0 is the untwisted no-label control)
+[PASS] Condition (ii) fails sharply: no in-gap edge tower is present  (all tested rows have in_gap=0 and edge99=0)
+[PASS] Condition (iii) fails without an edge tower: spectral eta labels are undefined  (all Lambda-sweep eta counts on edge99 in-gap states are zero)
+[PASS] Structural emptiness on tested carriers: spec(K) floor 2*arcsinh(m) sits above every tested zero window  (floor=0.962424; the in-gap scan instantiates a positivity theorem, not a size-limited search)
+
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

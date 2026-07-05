@@ -10,6 +10,7 @@ the underlying readout-map endpoint triple is not yet derived.
 the audited Route-2 readout / time-coupling notes.
 **Type:** open_gate
 **Status authority:** independent audit lane only.
+**Primary runner:** [`scripts/frontier_s3_time_theta_to_slice_coupling.py`](../scripts/frontier_s3_time_theta_to_slice_coupling.py)
 **Authority role:** records, but does not close, the s3-time arm of the
 Route-2 readout-to-slice coupling family. Names the missing readout-map
 endpoint triple as the single open theorem target for this row.
@@ -174,3 +175,13 @@ Conditional on the cited upstream authorities, this row records:
 The next theorem target is the missing readout-map endpoint triple. That
 target lives on the upstream readout-map row, not on this row. This row
 remains `open_gate` until that target closes upstream.
+
+## Primary runner
+
+The primary verifier for this row is
+[`scripts/frontier_s3_time_theta_to_slice_coupling.py`](../scripts/frontier_s3_time_theta_to_slice_coupling.py).
+It checks the source-note boundary, rebuilds the exact conditional family
+from the Route-2 slice backbone, and confirms that two admissible readout
+maps agree at the shell while differing at the center. The runner therefore
+supports only the stated open-gate endpoint: exact conditional family plus
+inherited non-unique readout obstruction, not a unique closed coupling theorem.

@@ -1,0 +1,103 @@
+===== runner cache v1 =====
+runner: scripts/frontier_erosion_rate_table_no_closed_form_2026_06_12.py
+runner_sha256: 67e7019563545db6316dc126a608c5d0e096fab1ae95bcd981a725973f9eb4db
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.78
+status: ok
+----- stdout -----
+==============================================================================
+Record erosion exact tree
+==============================================================================
+Model: pointer + 3 fragments; 3 broadcast+measure steps; 7 measurement-only steps.
+Rbar(t): Born-weighted mean branch I(P:F_j), averaged over j=0,1,2.
+
+  [PASS] exact trees conserve total Born weight at every recorded layer  (max |sum w - 1| = 1.998e-15)
+  [PASS] Rbar is a computed branch-information quantity bounded in [0,1]  (min=8.221e-10, max=0.553593558433)
+==============================================================================
+Phase-2 Rbar trajectories
+==============================================================================
+Columns are phase-2 t=0..7, where t=0 is after the three broadcast+measure steps.
+eps= 0.5: 0.55359356 0.46121440 0.38553733 0.32332592 0.27174562 0.22890709 0.19312231 0.16320558
+eps= 0.6: 0.40615675 0.30917664 0.23618049 0.18156694 0.13985236 0.10819619 0.08379983 0.06512246
+eps= 0.7: 0.26348418 0.17757823 0.11946232 0.08157376 0.05553480 0.03823120 0.02622590 0.01815602
+eps= 0.8: 0.13758227 0.07806134 0.04309062 0.02482965 0.01394091 0.00810877 0.00460024 0.00269279
+eps= 0.9: 0.04258489 0.01837447 0.00689008 0.00301776 0.00116068 0.00051294 0.00020025 0.00008903
+eps=0.95: 0.01260363 0.00430577 0.00103530 0.00035786 0.00008891 0.00003095 0.00000784 0.00000274
+eps=0.99: 0.00068086 0.00015684 0.00001132 0.00000262 0.00000020 0.00000005 0.00000000 0.00000000
+
+==============================================================================
+Odd-step envelope ratios
+==============================================================================
+eps= 0.5: odd_steps=[1, 3, 5, 7] ratios=[0.7010317154, 0.7079763163, 0.712977367] r_eff=0.7073114902 rel_spread=0.0170401
+eps= 0.6: odd_steps=[1, 3, 5, 7] ratios=[0.5872595713, 0.5959024989, 0.6018923733] r_eff=0.5949877856 rel_spread=0.0249171
+eps= 0.7: odd_steps=[1, 3, 5, 7] ratios=[0.4593680052, 0.4686702863, 0.4749007008] r_eff=0.4676026797 rel_spread=0.0338132
+eps= 0.8: odd_steps=[1, 3, 5, 7] ratios=[0.3180786449, 0.3265759914, 0.3320838552] r_eff=0.3255283695 rel_spread=0.0440307
+eps= 0.9: odd_steps=[1, 3, 5, 7] ratios=[0.1642364237, 0.1699722305, 0.1735647825] r_eff=0.1692140242 rel_spread=0.0567984
+eps=0.95: odd_steps=[1, 3, 5, 7] ratios=[0.08311190513, 0.08648106959, 0.08855124525] r_eff=0.08601872234 rel_spread=0.065446
+eps=0.99: odd_steps=[1, 3, 5, 7] ratios=[0.01669494237, 0.01748261158, 0.01795801493] r_eff=0.01737066802 rel_spread=0.075656
+  [PASS] odd-step rebound envelope ratios are extracted where Rbar>1e-12
+  [PASS] Odd-step envelope eps=0.5: geometric envelope passes the 5e-2 fixed-eps gate  (relative spread=0.0170401)
+  [PASS] Odd-step envelope eps=0.6: geometric envelope passes the 5e-2 fixed-eps gate  (relative spread=0.0249171)
+  [PASS] Odd-step envelope eps=0.7: geometric envelope passes the 5e-2 fixed-eps gate  (relative spread=0.0338132)
+  [PASS] Odd-step envelope eps=0.8: geometric envelope passes the 5e-2 fixed-eps gate  (relative spread=0.0440307)
+  [PASS] Odd-step envelope eps=0.9: measured fixed-eps pattern is non-geometric  (relative spread=0.0567984)
+  [PASS] Odd-step envelope eps=0.95: measured fixed-eps pattern is non-geometric  (relative spread=0.065446)
+  [PASS] Odd-step envelope eps=0.99: measured fixed-eps pattern is non-geometric  (relative spread=0.075656)
+  [PASS] Odd-step envelope pattern: the measured odd-step envelope is not globally step-independent; geometric gate rejected for the listed eps  (offenders=[0.9, 0.95, 0.99], worst relative spread=0.075656)
+
+==============================================================================
+Candidate closed-form checks
+==============================================================================
+Measured r(eps) datum: geometric mean of the odd-step ratios printed above.
+eps= 0.5: r=0.7073114902
+eps= 0.6: r=0.5949877856
+eps= 0.7: r=0.4676026797
+eps= 0.8: r=0.3255283695
+eps= 0.9: r=0.1692140242
+eps=0.95: r=0.08601872234
+eps=0.99: r=0.01737066802
+candidate (1-eps^2)/4: max_rel=2.772e+00; rel_devs={ 0.5:2.772e+00, 0.6:2.719e+00, 0.7:2.667e+00, 0.8:2.617e+00, 0.9:2.562e+00, 0.95:2.529e+00, 0.99:2.492e+00 }
+candidate (1-eps^2)^2/4: max_rel=1.745e+02; rel_devs={ 0.5:4.030e+00, 0.6:4.810e+00, 0.7:6.191e+00, 0.8:9.047e+00, 0.9:1.775e+01, 0.95:3.519e+01, 0.99:1.745e+02 }
+candidate (1-eps^2)/2: max_rel=8.862e-01; rel_devs={ 0.5:8.862e-01, 0.6:8.593e-01, 0.7:8.337e-01, 0.8:8.085e-01, 0.9:7.812e-01, 0.95:7.645e-01, 0.99:7.458e-01 }
+candidate (1-eps^2)^2: max_rel=4.286e+01; rel_devs={ 0.5:2.574e-01, 0.6:4.526e-01, 0.7:7.978e-01, 0.8:1.512e+00, 0.9:3.687e+00, 0.95:8.049e+00, 0.99:4.286e+01 }
+  [PASS] Candidate-form pattern: no tested closed form matches; the measured table is the datum
+
+==============================================================================
+First threshold time Rbar < 0.5
+==============================================================================
+eps= 0.5: t*=1
+eps= 0.6: t*=0
+eps= 0.7: t*=0
+eps= 0.8: t*=0
+eps= 0.9: t*=0
+eps=0.95: t*=0
+eps=0.99: t*=0
+  [PASS] Threshold-time monotonicity: threshold times are censored-nonincreasing as eps rises  (times=1, 0, 0, 0, 0, 0, 0)
+
+==============================================================================
+Controls
+==============================================================================
+  [PASS] eps=0 no-decay control: Rbar is constant through phase 2  (max drift=0.000e+00, Rbar0=1.000000000000)
+  [PASS] one projective readout step kills the branch-relational record  (before=1.000000000000, after=0.000e+00)
+eps= 0.5: ensemble MI max dev=2.220e-16; final MI=[1. 1. 1.]
+eps= 0.6: ensemble MI max dev=2.220e-16; final MI=[1. 1. 1.]
+eps= 0.7: ensemble MI max dev=1.110e-15; final MI=[1. 1. 1.]
+eps= 0.8: ensemble MI max dev=8.882e-16; final MI=[1. 1. 1.]
+eps= 0.9: ensemble MI max dev=4.441e-15; final MI=[1. 1. 1.]
+eps=0.95: ensemble MI max dev=3.442e-15; final MI=[1. 1. 1.]
+eps=0.99: ensemble MI max dev=2.665e-15; final MI=[1. 1. 1.]
+  [PASS] ensemble MI stays [1,1,1] at every probed eps and phase-2 layer  (max deviation=4.441e-15)
+Finite-lattice range/size claims: none asserted; four-qubit exact tree only.
+==============================================================================
+TOTAL: PASS=16 FAIL=0
+==============================================================================
+SCOPE: erosion-rate law of the branch-relational record in the explicit
+  pointer + 3-fragment CNOT/QND-readout model; exact dense NumPy trees;
+  candidate-form testing without fitting; Born cap inherited; statuses
+  pipeline-derived and audit-lane graded.  No finite-lattice scaling,
+  continuum limit, fitted rate law, or physical measurement derivation is
+  claimed.
+
+----- stderr -----
+

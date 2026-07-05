@@ -1,237 +1,91 @@
-# DM Full Closure Same-Surface Numerator Selector Boundary
+# DM Full Closure Same-Surface Endpoint Non-Overlap Arithmetic Certificate
 
 **Type:** bounded_theorem
-**Status:** bounded endpoint-distinctness/non-overlap arithmetic certificate
-for the helper-defined numbers; the selector-boundary conclusion is
-conditional on unsupplied plaquette/η-ω/packet-completeness authorities
-(see 2026-05-28 repair header).
-**Date:** 2026-04-16 (2026-05-28: arithmetic core split from the unsupplied
-selector-boundary authorities).
+**Claim type:** bounded_theorem
+**Status:** bounded arithmetic certificate over helper-defined endpoint and
+interval outputs only.
+**Date:** 2026-04-16 (scope narrowed 2026-06-16 to arithmetic-only endpoint
+non-overlap).
 **Audit status:** assigned only by the independent audit lane.
 **Script:** `scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py`
 
-## 2026-05-28 Review Repair (arithmetic core split from selector-boundary authorities)
+## Claim Boundary
 
-This note is narrowed to the helper-number arithmetic it directly verifies.
-Supplying authority for the certified interval bounds, plaquette endpoints,
-η/ω conversion, and packet-completeness premise is substantive DM-lane work
-outside this note:
+This note verifies an arithmetic fact about the current helper-defined DM
+same-surface packet:
 
-- **Load-bearing (in scope):** the endpoint-distinctness and non-overlap
-  arithmetic checks **for the helper-defined numbers** — these close
-  exactly and are runner-verified.
-- **Conditional / NON-load-bearing (split off):** the
-  **selector-boundary conclusion**, which requires the certified
-  same-surface ratio bounds, the plaquette-derived α endpoint
-  definitions, the η/ω conversion, and the packet-completeness / selector
-  datum premise. None is available as a retained one-hop authority; the
-  selector-boundary claim is recorded as conditional on them.
+- the helper layer supplies two endpoint couplings, `alpha_lo` and `alpha_hi`;
+- the two endpoint couplings are distinct and both lie above the common
+  ingredient `alpha_bare = 1/(4 pi)`;
+- the helper-returned certified `R(alpha)` intervals at those endpoints are
+  disjoint;
+- after multiplying by the helper-returned `Omega_b`, the displayed
+  `Omega_DM` intervals are also disjoint.
 
-No new axiom, import, or retained bridge is introduced. The arithmetic
-endpoint-distinctness certificate is the load-bearing content; the
-selector-boundary conclusion stays conditional until its authorities land.
+This is not a selector theorem, not an absence theorem, and not a
+completeness theorem for the DM bank. The phrase "selector boundary" remains
+only in the historical filename and runner name.
 
-## Question
+## Computed Endpoint Data
 
-Does the current helper-defined DM packet already furnish a theorem-grade
-selector on the live same-surface numerator interval?
+The runner obtains the following helper-defined values:
 
-## Honest packet-scope answer
+```text
+alpha_lo = 0.090667836017286
+alpha_hi = 0.092264992618360
+alpha_bare = 0.079577471545948
+```
 
-Not within the supplied packet.
+and certified interval outputs:
 
-The helper layer used by the runner gives two same-surface endpoint coupling
-numbers, both derived from the common surface ingredient
-`alpha_bare = 1/(4 pi)` and the plaquette helper value `0.5934`:
+```text
+R(alpha_lo) in [5.442019867867, 5.442019867931]
+R(alpha_hi) in [5.482855571890, 5.482855571936]
 
-- `alpha_lo = alpha_LM    = alpha_bare / u_0                 = 0.090667836017286`
-- `alpha_hi = alpha_short = -log(1 - c_1 * alpha_bare) / c_1 = 0.092264992618360`
+Omega_DM(alpha_lo) in [0.267709052538, 0.267709052541]
+Omega_DM(alpha_hi) in [0.269717881594, 0.269717881596]
+```
 
-These two endpoints are distinct reals and both sit strictly above the
-common ingredient `alpha_bare`, so they are two genuinely distinct
-helper-defined constructions on the same surface, not relabelings of a single
-observable. The cited interval routine sends those helper-defined endpoints to
-non-overlapping certified DM ratio intervals:
+The arithmetic conclusion is exactly:
 
-- `R(alpha_lo) in [5.442019867867, 5.442019867931]`
-- `R(alpha_hi) in [5.482855571890, 5.482855571936]`
+```text
+alpha_bare < alpha_lo < alpha_hi,
+R(alpha_lo)_hi < R(alpha_hi)_lo,
+Omega_DM(alpha_lo)_hi < Omega_DM(alpha_hi)_lo.
+```
 
-and therefore
+## What This Does Not Prove
 
-- `Omega_DM(alpha_lo) in [0.267709052538, 0.267709052541]`
-- `Omega_DM(alpha_hi) in [0.269717881594, 0.269717881596]`
+This note does not prove:
 
-So the helper packet exhibits a two-element same-surface endpoint set that
-lands disjoint certified DM ratio intervals. It does not, within this packet,
-exhibit a selector between them.
+- that either endpoint is selected by the framework;
+- that no other same-surface scale-selection datum exists;
+- that the helper packet is complete;
+- that the plaquette endpoint, eta/omega conversion, or certified-bound
+  helpers have independent retained status in this row.
 
-## What this note proves (constructive content)
+Any selector or completeness claim requires a separate bridge theorem.
 
-The runner verifies, by arithmetic on the cited helper outputs:
+## Verification
 
-1. the two endpoint coupling values are well-defined helper numbers;
-2. they are distinct from each other and both strictly above the common
-   ingredient `alpha_bare`, so they are two genuinely distinct same-surface
-   helper constructions and not the same observable in disguise;
-3. via the cited certified interval routine, they map to non-overlapping
-   certified DM ratio intervals (so *if* a selector exists within a larger
-   packet, it must land one endpoint and exclude the other).
-
-## What this note does not prove (packet-scope completeness declaration)
-
-The runner explicitly does **not** prove the metatheoretical claim that no
-selector exists. The earlier version of this runner asserted that absence with
-two literal-`True` checks, and prior audit feedback correctly flagged those
-literals as the load-bearing weakness of the note. The repaired runner removes
-those literals and replaces the absence claim with a print-only **packet-scope
-completeness declaration**:
-
-> Within the supplied helper packet (one-qubit operator algebra on the `Z^3`
-> spatial substrate together with the cited same-surface thermal authorities), no
-> additional exact same-surface DM scale-selection datum is supplied. Any
-> selector that lands one of the two endpoints therefore requires an
-> authority outside the current packet.
-
-This is a statement about *what is in the current packet*, which is a
-verifiable scope claim. It is not, and is not represented as, a proof that no
-such authority can ever be added in a larger packet.
-
-## Consequence
-
-- **current helper packet:** exhibits two distinct same-surface endpoint observables
-  with non-overlapping certified DM outputs, and supplies no further exact
-  same-surface scale-selection datum;
-- **current helper-packet selector closure:** does not exist within this packet (this
-  is a packet-scope declaration, not a metatheoretical no-go);
-- **next honest science target:** if a constructive obstruction theorem
-  modelled on the same-signature/different-output pattern used by
-  `DM_NEUTRINO_SOURCE_BANK_Z3_DOUBLET_BLOCK_SELECTION_OBSTRUCTION_THEOREM_NOTE_2026-04-16.md`
-  can be derived for the DM same-surface endpoint pair from one-qubit operator
-  algebra on the `Z^3` spatial substrate, this note's packet-scope declaration
-  can become a no-go theorem against a specified class of selector inputs;
-- **remaining honest science target:** whether such an obstruction theorem
-  exists for the DM same-surface lane, or whether the one-scalar DM-side
-  family must remain an admitted extension.
-
-## Command
+Run:
 
 ```bash
 python3 scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py
 ```
 
+Expected final line:
+
+```text
+SUMMARY: PASS=8 FAIL=0
+```
+
+Regenerate the cache with the standard runner-cache tool after editing the
+runner.
+
 ## Audit dependency repair links
 
-This graph-bookkeeping section records explicit upstream authority
-citations named by prior 2026-05-05 audit feedback for
-`dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`.
-The prior feedback identified the completeness / absence premise as the
-load-bearing boundary: the negative selector conclusion depends on the
-claim that the current DM bank has no further exact scale-selection
-datum, while the runner asserts that premise with literal `True`
-checks. This addendum does not promote the row or change the claim
-scope, which remains the restricted-packet claim that the current exact
-DM bank supplies two same-surface endpoints with distinct DM outputs
-but no theorem-grade selector choosing among them. Independent audit
-owns any current verdict or effective status after this source change.
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-One-hop authorities cited:
-
-- [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md`](DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md)
-  — audit row:
-  `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16`.
-  Upstream authority for the certified same-surface thermal
-  evaluation / bounding result that maps the two exact endpoint
-  observables to distinct certified `R(alpha)` and `Omega_DM(alpha)`
-  intervals quoted in the "Answer" and "Why This Closes The
-  Current-Bank Question" sections.
-- `DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SELECTOR_SENSITIVITY_BOUNDARY_NOTE_2026-04-16.md`
-  — audit row:
-  `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16`.
-  Boundary reference for the thermal-layer sensitivity result that
-  provides compatible framing of "no selector closure on the
-  current bank" complementing this no_go.
-- `DM_FULL_CLOSURE_SAME_SURFACE_CONVERGED_THERMAL_SELECTOR_SUPPORT_NOTE_2026-04-16.md`
-  — audit row:
-  `dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16`.
-  Boundary reference for the converged thermal selector support
-  route whose admitted-extension status is consistent with the no_go
-  recorded here.
-
-Open upstream gap registered for independent audit:
-
-- the completeness / absence premise that the live DM bank carries no
-  further exact scale-selection datum.
-
-The runner-checked content of this note (the two exact same-surface
-endpoint values, the certified `R(alpha)` and `Omega_DM(alpha)`
-intervals at those endpoints, and the absence-of-selector check) is
-exact arithmetic on values supplied by the cited thermal-evaluation
-authority and is independent of the cited upstream authorities at the
-arithmetic layer. The cite chain is what supplies the
-completeness / absence premise — the DM bank has no further exact
-scale-selection datum — that turns the runner's `True` check into a
-no_go conclusion, exactly as the prior feedback observed.
-
-## Honest auditor read
-
-Prior audit feedback observed that the negative selector conclusion
-depends on the unproved completeness premise that the current DM bank
-has no further exact scale-selection datum, and that the runner asserts
-that premise with literal `True` checks while importing endpoint / map
-machinery from modules not provided in the restricted packet. The
-earlier rigorize wired the certified-endpoints / sensitivity / converged
-support side and registered the completeness premise as an open
-class D upstream gap, but it deliberately left the two literal `True`
-checks in place in the runner and left the note's load-bearing claim
-phrased as a metatheoretical no-go ("no theorem-grade current-bank
-selector closure exists"). That phrasing made the runner output formally
-incompatible with the actually-supplied content.
-
-The current repair (2026-05-16) addresses that load-bearing weakness by
-demoting both the runner content and the note phrasing to what the
-restricted packet actually supplies:
-
-- the two prior `check(name, True, ...)` literals in PART 3 are removed;
-- PART 3 is replaced with four arithmetic distinctness checks that the
-  runner can actually verify (endpoint distinctness from each other, and
-  from the common ingredient `alpha_bare`, plus the non-overlap of the
-  certified DM ratio intervals);
-- the metatheoretical absence claim is replaced by an explicit
-  print-only **packet-scope completeness declaration** that says only
-  what the restricted packet contains, not what no future packet could
-  contain;
-- the note's "Honest packet-scope answer" / "What this note proves" /
-  "What this note does not prove" sections now match the runner output
-  one-to-one.
-
-This addresses the class E load-bearing-step gap on its own terms: the
-load-bearing step is no longer "no selector exists" (an absence claim
-the runner cannot prove); it is the arithmetic distinctness of two
-exact endpoint reals and the non-overlap of their certified DM ratio
-intervals (both runner-checked from cited authority outputs), plus a
-packet-scope declaration whose verifiable scope is exactly the supplied
-helper packet.
-
-Closing the remaining upstream gap — promoting this packet-scope
-declaration to a constructive obstruction theorem against a specified
-class of selector inputs — would model on the same-signature /
-different-output pattern of
-`DM_NEUTRINO_SOURCE_BANK_Z3_DOUBLET_BLOCK_SELECTION_OBSTRUCTION_THEOREM_NOTE_2026-04-16.md`,
-which provides exactly that kind of constructive obstruction on the
-neutrino source side. Local rewriting of this note does not by itself
-supply such an obstruction; it removes the formal overreach in this
-note and registers the obstruction itself as the next constructive
-target.
-
-## Scope of this rigorization
-
-This rigorization is class C (load-bearing-step demotion to verifiable
-arithmetic plus an explicit packet-scope declaration). It replaces the
-two prior literal-`True` runner checks that audit feedback flagged as
-the load-bearing weakness with four arithmetic distinctness checks on
-the cited authority outputs, removes the metatheoretical absence claim
-from the runner-checked tier, and rewords the note so that its
-"answer", "what is proved", and "what is not proved" sections match the
-runner output one-to-one. The cite chain and prior class D upstream gap
-registration above remain in place. Independent audit owns any current
-verdict or effective status after this source change.
+- [dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16](DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SELECTOR_SENSITIVITY_BOUNDARY_NOTE_2026-04-16.md)
+- [dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16](DM_FULL_CLOSURE_SAME_SURFACE_CONVERGED_THERMAL_SELECTOR_SUPPORT_NOTE_2026-04-16.md)

@@ -61,7 +61,7 @@ This bridge intentionally does not claim:
 - that a selected-line CP1 angle, Brannen phase, or physical charged-lepton
   readout has been derived;
 - that the parent `KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`
-  is promoted or closed;
+  is promoted or closed; the citation is context only and formal-only;
 - that the equal-sector-norm input `Q = 2/3` is derived;
 - that the same simple `H = a I + b C + bbar C^2` Hermitian surface is
   retained for arbitrary `d`.

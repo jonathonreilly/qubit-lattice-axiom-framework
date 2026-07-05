@@ -1,0 +1,24 @@
+loop_slug: spin-statistics-source-packet-20260611
+branch: physics-loop/audit-unblock-block04-20260611
+base: origin/main
+current_goal: "Unblock the critical spin-statistics row by certifying the current axiom and dim-2 one-hop dependency packet."
+target_status: bounded-support
+cycle_count: 1
+active_route: "source-packet dependency certificate"
+hard_residual: "Audit backlog says the row needs a retained one-hop authority or explicit hypothesis for finite/dim-2 per-site Hilbert space and replacement of the superseded 2026-04-11 axiom cite."
+files_touched:
+  - docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md
+  - scripts/axiom_first_spin_statistics_source_packet_certificate_2026_06_11.py
+  - logs/runner-cache/axiom_first_spin_statistics_source_packet_certificate_2026_06_11.txt
+  - .claude/science/physics-loops/spin-statistics-source-packet-20260611/
+open_imports:
+  - "Independent audit must still decide whether the repaired bounded theorem is clean."
+  - "The hard-core-boson versus Grassmann/CAR selection remains out of scope."
+no_go_routes:
+  - "Do not restore the withdrawn statistics-forcing claim."
+  - "Do not use the superseded 2026-04-11 axiom surface as load-bearing authority."
+trace_gate_classification: direct_blocker_closure
+review_findings: pending reviewer
+pr_status: pending
+next_exact_action: "Run verification, commit, push, and open PR."
+stop_condition: "Stop this block after PR creation; reviewer/auditor owns landing and status."

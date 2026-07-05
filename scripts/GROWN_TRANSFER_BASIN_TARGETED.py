@@ -21,6 +21,12 @@ if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
 from scripts.GROWN_TRANSFER_BASIN_SWEEP import _score_row
+from scripts.GROWN_TRANSFER_BASIN_SWEEP import BETA
+from scripts.GROWN_TRANSFER_BASIN_SWEEP import H
+from scripts.GROWN_TRANSFER_BASIN_SWEEP import K
+from scripts.GROWN_TRANSFER_BASIN_SWEEP import MAX_D_PHYS
+from scripts.GROWN_TRANSFER_BASIN_SWEEP import NL
+from scripts.GROWN_TRANSFER_BASIN_SWEEP import PW
 from scripts.GROWN_TRANSFER_BASIN_SWEEP import complex_action_survives
 from scripts.GROWN_TRANSFER_BASIN_SWEEP import signed_source_survives
 
@@ -41,12 +47,14 @@ def main() -> None:
     print("GROWN TRANSFER BASIN TARGETED")
     print("  narrow neighborhood around the prior grown-row positives")
     print("=" * 92)
+    print(f"H={H}, K={K}, BETA={BETA}, NL={NL}, PW={PW}, MAX_D_PHYS={MAX_D_PHYS}")
     print("rows:", ROWS)
     print()
     print(
         f"{'drift':>5s} {'restore':>7s} {'zero':>12s} {'neutral':>12s} "
-        f"{'plus':>12s} {'exp':>7s} {'g0':>12s} {'F0':>6s} {'F05':>6s} "
-        f"{'toward':>11s} {'signed':>7s} {'complex':>7s} {'both':>5s}"
+        f"{'plus':>12s} {'exp':>7s} {'g0':>12s} {'g05':>12s} "
+        f"{'F0':>6s} {'F05':>6s} {'toward':>11s} {'away':>11s} "
+        f"{'signed':>7s} {'complex':>7s} {'both':>5s}"
     )
     print("-" * 128)
 
@@ -60,8 +68,9 @@ def main() -> None:
             f"{drift:5.2f} {restore:7.2f} "
             f"{row.signed_zero:+12.3e} {row.signed_neutral:+12.3e} "
             f"{row.signed_single:+12.3e} {row.signed_exponent:7.3f} "
-            f"{row.action_gamma0:+12.3e} {row.action_fm0:6.3f} "
-            f"{row.action_fm05:6.3f} {row.action_toward!s:>11s} "
+            f"{row.action_gamma0:+12.3e} {row.action_gamma05:+12.3e} "
+            f"{row.action_fm0:6.3f} {row.action_fm05:6.3f} "
+            f"{row.action_toward!s:>11s} {row.action_away!s:>11s} "
             f"{str(signed_ok):>7s} {str(complex_ok):>7s} {str(both_ok):>5s}"
         )
 
@@ -71,6 +80,7 @@ def main() -> None:
     print()
     print("SAFE READ")
     print(f"  nearby rows surviving both observables: {survivors}/{len(ROWS)}")
+    print("  gamma=0.5 away-sign survivors require away_count == 3/3 and mean deflection < 0")
     if survivors:
         print("  the prior grown-row positives survive on a narrow nearby basin")
     else:

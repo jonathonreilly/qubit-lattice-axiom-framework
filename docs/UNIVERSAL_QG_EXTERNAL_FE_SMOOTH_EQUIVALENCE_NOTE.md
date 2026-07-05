@@ -1,7 +1,11 @@
 # Universal QG External FE-to-Smooth Weak/Measure Equivalence
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15  
 **Role:** direct-universal quantum-gravity / external continuum-equivalence theorem
+**Script:** `scripts/frontier_universal_qg_external_fe_smooth_equivalence.py`
+(source-side verifier; PASS=5 FAIL=0 on current source)
 
 ## Verdict
 

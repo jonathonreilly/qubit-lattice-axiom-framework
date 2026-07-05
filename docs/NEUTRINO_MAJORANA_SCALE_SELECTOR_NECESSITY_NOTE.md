@@ -1,5 +1,7 @@
 # Majorana Scale-Selector Necessity
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15
 **Status:** exact historical necessity theorem on the earlier logarithmic
 observable family; superseded in part by the later quadratic-comparator and

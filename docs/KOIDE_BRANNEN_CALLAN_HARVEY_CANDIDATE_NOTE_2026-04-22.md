@@ -1,5 +1,7 @@
 # Koide Brannen Callan-Harvey Candidate Note (2026-04-22)
 
+**Claim type:** open_gate
+
 ## Scope
 
 This note records a concrete **candidate physical-bridge route** for the

@@ -1,6 +1,13 @@
-# Session Summary: Topology Pivot
+# Historical Topology Pivot Session Summary (Retracted)
 **Date:** 2026-04-01
 **Status:** RETRACTED 2026-04-30 — retracted aggregate session summary; audit failed; this note is archived under `archive_unlanded/session-summary-stale-aggregates-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. Future readers should consult the live audit ledger and live notes, not this aggregate. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
 
 ## Retraction
 
@@ -14,30 +21,45 @@ This file is a retracted aggregate session summary. Future readers should consul
 
 ---
 
-This is the topology-pivot session note. Later higher-dimensional results are
-tracked separately in
-[HIGHER_DIMENSION_STATUS_2026-04-01.md](/Users/jonreilly/Projects/Physics/docs/HIGHER_DIMENSION_STATUS_2026-04-01.md).
+## 2026-06-16 archive firewall
 
-## The architecture story
+This archived packet is historical session history only. It is not retained
+evidence for a shared gravity/decoherence graph-family architecture, not a
+closed emergence result, and not authority that any topology-pivot lane is
+retained.
 
-On discrete causal DAGs with path-sum propagation:
+The audited blocker is structural: this file aggregates many route-local
+claims without one frozen assertion surface, one runner/log pair, and one
+explicit dependency chain per claim. Future use must split any surviving
+idea into auditable claim notes with their own runners/logs and dependencies.
+The only safe residue here is a dated roadmap and index of scripts/logs from
+the 2026-04-01 topology-pivot session.
 
-1. **Gravity works** via the corrected propagator (1/L^p attenuation,
+The original topology-pivot session note is preserved as dated route history.
+Later higher-dimensional results are tracked separately in
+[HIGHER_DIMENSION_STATUS_2026-04-01.md](../../docs/HIGHER_DIMENSION_STATUS_2026-04-01.md).
+
+## Historical architecture story (not retained evidence)
+
+The original memo presented the following story on discrete causal DAGs with
+path-sum propagation. None of these bullets is retained by this archived
+summary; each would need its own live claim note and runner/log evidence.
+
+1. **Gravity was reported** via the corrected propagator (1/L^p attenuation,
    directional measure, spent-delay action). This is a pure phase effect.
 
-2. **Decoherence is topology-controlled.** On dense random / graph-local
+2. **Decoherence was reported as topology-controlled.** On dense random / graph-local
    lanes, the tested environment architectures converge too much as graphs
-   densify. On modular gap-controlled DAGs, the CL bath achieves a retained
+   densify. On modular gap-controlled DAGs, the CL bath was reported to achieve a
    low-purity lane, but the true large-`N` single-vs-double-slit visibility
    gain does not stay high.
 
-3. **Both gravity and decoherence work on the same graph family**
-   (gap-controlled modular DAGs). With wider seed counts, the joint window is
-   broad within that family: tested modular gaps `0.0..5.0` keep positive
-   gravity and a low decoherence floor, and larger imposed gaps generally
-   strengthen both effects until connectivity breaks.
+3. **The memo claimed a shared graph-family window** (gap-controlled modular
+   DAGs). That broad architecture claim is not retained here. With wider seed
+   counts, the memo reported a joint window in that family, but this archive
+   file does not establish the claim.
 
-## Locked results
+## Historical listed results (not locked)
 
 ### Decoherence on modular DAG (12-seed asymptotic lane, N=12..100)
 ```
@@ -65,19 +87,19 @@ N=40: delta = +2.50 — gravity persists
 
 Earlier SE estimates in the repo were somewhat optimistic because the script
 used per-`k` samples rather than paired per-seed deltas. The sign and mean
-shift look retained; the exact confidence language should be softened until the
-patched gravity script lands.
+shift were recorded as promising; the exact confidence language should be
+treated as historical until a live scoped note and runner close it.
 
 ### Uniform-random qualification
 The earlier one-point `pur_min = 0.986` ceiling claim at `N=25` was too
-strong for the later 24-seed read. What remains retained is not a single
-ceiling value, but the broader diagnosis that graph-local architectures on
-dense connected families still converge too much and underperform the larger-gap
-modular lane.
+strong for the later 24-seed read. The memo tried to preserve a broader
+diagnosis that graph-local architectures on dense connected families still
+converge too much and underperform the larger-gap modular lane. This archived
+summary does not retain that diagnosis as a theorem.
 
-## What we learned about emergence
+## Historical lessons listed by the memo
 
-Simple local or feedback-style growth rules do **not** produce persistent
+The memo reported that simple local or feedback-style growth rules did **not** produce persistent
 channel separation. Nine emergence-style approaches have now been tested in
 total. The reasons are now clearer:
 
@@ -104,7 +126,7 @@ The sharpened question is no longer “which connection bias works?”
 It is whether graph dynamics can create or maintain **regions with no nodes at
 the right size and location**.
 
-## Open questions (prioritized)
+## Historical open questions (prioritized at the time)
 
 1. **Hard-gap node placement / node removal**
    Connection feedback is now a closed lane. The next live emergence test is a
@@ -134,7 +156,7 @@ the right size and location**.
    did not yet cleanly confirm a power law, so the earlier `sqrt(M)`-style read
    should remain provisional until a broader sweep reproduces it.
 
-## Files delivered this session
+## Historical files listed by the session
 
 ### New scripts
 - `scripts/topology_families.py` — three DAG generators (hierarchical, modular, preferential)
@@ -154,7 +176,7 @@ the right size and location**.
 - `scripts/caldeira_leggett_bath.py` — N=25 in purity sweep
 
 ### Documentation
-- `archive_unlanded/if-program-unverifiable-closing-2026-04-30/IF_PROGRAM_CLOSING_NOTE.md` — canonical closure
+- `archive_unlanded/if-program-unverifiable-closing-2026-04-30/IF_PROGRAM_CLOSING_NOTE.md` — historical planning/triage only; not canonical closure
 - `docs/DECOHERENCE_FAILURE_ANALYSIS.md` — updated with topology pivot
 - `docs/SESSION_SUMMARY_2026-04-01_TOPOLOGY.md` — this file
 

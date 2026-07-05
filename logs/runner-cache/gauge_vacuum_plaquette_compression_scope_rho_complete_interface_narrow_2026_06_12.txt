@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_compression_scope_rho_complete_interface_narrow_2026_06_12.py
+runner_sha256: 0c1645f3fe77b96aa033a5b088b783c7e369556c75b4b6058e8cbf56be3befb9
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.90
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette compression-scope rho-complete interface runner
+Status authority: independent audit lane only. This source runner does not set or predict an audit outcome.
+No new imports: repo-internal finite packet quantities only.
+tensor NMAX=4, tensor MODE_MAX=80, source NMAX=7, source MODE_MAX=200
+
+================================================================================================
+Part 1: build finite source and packet interfaces
+================================================================================================
+tensor packet size = 25
+source packet size = 64
+tensor Perron residual = 1.665334536938e-16
+PASS: finite tensor packet has 25 character weights
+PASS: finite source packet has 64 character weights
+PASS: tensor Perron residual is small
+      residual=1.665e-16
+PASS: packet rho is normalized at the trivial coefficient
+
+================================================================================================
+Part 2: finite rail trivial-channel collapse
+================================================================================================
+one-line consequence: rho = delta_(0,0) => P = P_triv
+P_triv direct delta = 0.422531739647131
+P_triv existing Perron reference = 0.422531739647131
+PASS: delta rho readout equals the existing Perron-solve P_triv value
+      direct=0.42253173964713098, anchor=0.42253173964713098
+PASS: delta rho readout agrees with the printed P_triv anchor
+      delta=0.000e+00
+
+================================================================================================
+Part 3: one-word rho_packet to source readout
+================================================================================================
+rho_packet(1,0) = 0.378514922317117
+rho_packet(1,1) = 0.171042019091802
+P_packet = 0.434215413259920
+PASS: one-word rho_packet to P chain reproduces the composed-readout value
+      delta=5.551e-17
+PASS: packet readout lies between the trivial and local rho=1 anchors
+      P_triv=0.422531739647131, P_packet=0.434215413259920, P_loc=0.452407159044564
+
+================================================================================================
+Part 4: non-central perturbation with fixed rho
+================================================================================================
+explicit perturbation entries:
+  E[(1,0),(1,1)] = 0.125000
+  E[(0,2),(2,0)] = -0.062500
+max off-diagonal perturbation magnitude = 0.125000
+P after central interface projection = 0.434215413259920
+PASS: perturbation is a nonzero off-diagonal environment direction
+PASS: off-diagonal perturbation leaves every tensor rho coefficient fixed
+PASS: embedded source rho vector is bitwise unchanged
+PASS: marked source readout is exactly unchanged after the rho interface
+      base=0.43421541325991997, perturbed=0.43421541325991997
+
+================================================================================================
+Part 5: note hygiene
+================================================================================================
+PASS: note file exists and is readable
+PASS: note delegates status to the independent audit lane
+PASS: one-hop authorities are markdown links
+PASS: durable context pointers are plain-text paths
+PASS: note names the theorem lane and its outside-scope observables
+
+TOTAL: PASS=17, FAIL=0
+
+----- stderr -----
+

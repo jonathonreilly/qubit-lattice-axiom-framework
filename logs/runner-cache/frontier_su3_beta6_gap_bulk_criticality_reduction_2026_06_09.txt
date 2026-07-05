@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.py
-runner_sha256: 92bfbba06eda425be11c8155dc38ff6c82a3124339af52798560ad28f18e5612
+runner_sha256: d9f3e0224701a59ba70c7b4a706c980e87a6b1b878c6ae23ab24d5254445f3d8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 SU(3) BETA=6 FIXED-LATTICE GAP REDUCTION DIAGNOSTIC

@@ -28,6 +28,20 @@ EXACT_TOL = 1.0e-12
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
+SOURCE_BOUNDARY_REQUIRED_PHRASES = [
+    "Downstream source-boundary firewall",
+    "Route-2 carrier/readout/time authority chain",
+    "admissibility boundary",
+    "current restricted",
+    "leaves `beta_E / alpha_E` free",
+    "derive an E-center endpoint ratio",
+    "do not cite this packet as a derivation of `beta_E / alpha_E = 21/4`",
+    "unique readout-to-slice time-coupling theorem",
+    "final Einstein/Regge identification",
+    "exhaustive no-go",
+    "positive readout theorem",
+]
+
 
 def check(name: str, condition: bool, detail: str = "") -> None:
     global PASS_COUNT, FAIL_COUNT
@@ -123,6 +137,13 @@ def main() -> int:
     check("S3 row keeps positive target open", "new E-center/source/readout" in note_text)
     check("S3 row remains open_gate rather than positive theorem", "open_gate" in note_text)
     check("S3 row does not claim beta_E derivation", "does not uniquely select `beta_E / alpha_E = 21/4`" in note_text)
+    check("S3 row contains downstream source-boundary firewall", all(phrase in note_text for phrase in SOURCE_BOUNDARY_REQUIRED_PHRASES))
+    check(
+        "S3 firewall forbids readout/time-coupling/E-channel promotion",
+        "do not cite this packet as a derivation of `beta_E / alpha_E = 21/4`" in note_text
+        and "do not cite it as a unique readout-to-slice time-coupling theorem" in note_text
+        and "do not promote the primitive chain from open gate to positive theorem" in note_text,
+    )
 
     print()
     print("Summary")

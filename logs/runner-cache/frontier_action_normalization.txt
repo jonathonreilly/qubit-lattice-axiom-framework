@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_action_normalization.py
-runner_sha256: a846e7a4794c0d6503117c9a074272b47f048f41823ef6edeb46e97f0870f5f6
+runner_sha256: 3b796275bca09e419f19690505206820d89fd8f6f86492cb26579663bb335054
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 42.42
+elapsed_sec: 62.51
 status: ok
 ----- stdout -----
 ================================================================================
@@ -41,6 +41,31 @@ field-identification / source-normalization convention.
    5.0     Y     34  1.0797e-02  5.3985e-02    1.2816  0.9243
   10.0     Y     45  9.1909e-03  9.1909e-02    1.2828  0.9245
 
+Certificate checks for Test 1:
+  [PASS] T1a c=0.1 loop remains controlled  (reason=converged, iterations=12)
+  [PASS] T1b c=0.1 finite nonzero field  (phi_max=1.2095e-02)
+  [PASS] T1c c=0.1 finite radial beta diagnostic  (beta=1.2798, R2=0.9240)
+  [PASS] T1a c=0.2 loop remains controlled  (reason=converged, iterations=12)
+  [PASS] T1b c=0.2 finite nonzero field  (phi_max=1.2096e-02)
+  [PASS] T1c c=0.2 finite radial beta diagnostic  (beta=1.2798, R2=0.9240)
+  [PASS] T1a c=0.5 loop remains controlled  (reason=converged, iterations=12)
+  [PASS] T1b c=0.5 finite nonzero field  (phi_max=1.2098e-02)
+  [PASS] T1c c=0.5 finite radial beta diagnostic  (beta=1.2799, R2=0.9240)
+  [PASS] T1a c=1 loop remains controlled  (reason=converged, iterations=12)
+  [PASS] T1b c=1 finite nonzero field  (phi_max=1.2102e-02)
+  [PASS] T1c c=1 finite radial beta diagnostic  (beta=1.2802, R2=0.9241)
+  [PASS] T1a c=2 loop remains controlled  (reason=converged, iterations=19)
+  [PASS] T1b c=2 finite nonzero field  (phi_max=1.1719e-02)
+  [PASS] T1c c=2 finite radial beta diagnostic  (beta=1.2806, R2=0.9242)
+  [PASS] T1a c=5 loop remains controlled  (reason=converged, iterations=34)
+  [PASS] T1b c=5 finite nonzero field  (phi_max=1.0797e-02)
+  [PASS] T1c c=5 finite radial beta diagnostic  (beta=1.2816, R2=0.9243)
+  [PASS] T1a c=10 loop remains controlled  (reason=converged, iterations=45)
+  [PASS] T1b c=10 finite nonzero field  (phi_max=9.1909e-03)
+  [PASS] T1c c=10 finite radial beta diagnostic  (beta=1.2828, R2=0.9245)
+  [PASS] T1d all tested positive c values are controlled  (controlled=7/7)
+  [PASS] T1e fixed-G effective coupling changes across c  (spread=76)
+
 Observation: ALL values of c converge. Self-consistency alone does NOT
 select a unique c. Larger c requires more iterations (weaker mixing)
 but still converges. The product c*phi_max varies, showing c changes
@@ -70,6 +95,14 @@ The physical quantity is c*f, not f alone. This confirms the degeneracy.
 Convention: after fixing the f/Phi map and source normalization, c has
 a definite value; the rescaling freedom itself does not select it.
 
+Certificate checks for Test 2:
+  [PASS] T2a a=0.25 keeps c*G fixed  (c*G=1.000000)
+  [PASS] T2a a=0.50 keeps c*G fixed  (c*G=1.000000)
+  [PASS] T2a a=1.00 keeps c*G fixed  (c*G=1.000000)
+  [PASS] T2a a=2.00 keeps c*G fixed  (c*G=1.000000)
+  [PASS] T2a a=4.00 keeps c*G fixed  (c*G=1.000000)
+  [PASS] T2b c*phi_max remains stable under reciprocal rescaling  (spread=1.05)
+
 ================================================================================
 TEST 3: METRIC STRUCTURE (NARROWED -- ANALYTICAL READ)
 ================================================================================
@@ -92,6 +125,12 @@ circular: it just printed 1 + c and tested whether 1 + c = 2.
 The honest read: c is fixed only after an external convention
 identifies f with the physical potential Phi and chooses the Poisson
 source normalization. The finite runner does not make that selection.
+
+Certificate checks for Test 3:
+  [PASS] T3 gamma=1 after Phi=c*f/2 for c=0.5  (gamma=1.000000)
+  [PASS] T3 gamma=1 after Phi=c*f/2 for c=1  (gamma=1.000000)
+  [PASS] T3 gamma=1 after Phi=c*f/2 for c=2  (gamma=1.000000)
+  [PASS] T3 gamma=1 after Phi=c*f/2 for c=10  (gamma=1.000000)
 
 ================================================================================
 TEST 4: CONVERGENCE BASIN IN (c, G) PLANE
@@ -142,6 +181,14 @@ Convergence speed vs c*G (iteration count):
    10.00     5.0     2.0      40     N
    25.00     5.0     5.0      40     N
 
+Certificate checks for Test 4:
+  [PASS] T4 c=1.0, G=0.1 scan point remains controlled  (reason=converged, iterations=5)
+  [PASS] T4 c=1.0, G=0.2 scan point remains controlled  (reason=converged, iterations=7)
+  [PASS] T4 c=1.0, G=0.5 scan point remains controlled  (reason=converged, iterations=10)
+  [PASS] T4 c=1.0, G=1 scan point remains controlled  (reason=converged, iterations=12)
+  [PASS] T4 c=1.0, G=2 scan point remains controlled  (reason=converged, iterations=24)
+  [PASS] T4 c=1.0, G=5 scan point remains controlled  (reason=max_iter, iterations=40)
+
 ================================================================================
 TEST 5: PPN GAMMA AND THE CONVENTION THAT FIXES c
 ================================================================================
@@ -185,6 +232,11 @@ Massive-probe deflection magnitude vs c (sanity check, NOT a c-fixing test):
    0.5    0.000290
    1.0    0.000695
    2.0    0.001752
+
+Certificate checks for Test 5:
+  [PASS] T5 c=0.5 massive-probe deflection is finite positive  (|defl|=0.000290)
+  [PASS] T5 c=1 massive-probe deflection is finite positive  (|defl|=0.000695)
+  [PASS] T5 c=2 massive-probe deflection is finite positive  (|defl|=0.001752)
 
 Confirms: deflection scales with c (consistent with c entering the physics).
 This sanity check does NOT verify the (1+c) null-vs-massive ratio;
@@ -250,7 +302,8 @@ table previously printed in this runner (defl(k)/defl(5k)) compared two
 massive probe momenta and had no analytical relation to the (1+c)
 null-vs-massive ratio. That table has been removed.
 
-Total runtime: 42.2s
+Total runtime: 62.0s
+TOTAL: PASS=42 FAIL=0
 
 ----- stderr -----
 

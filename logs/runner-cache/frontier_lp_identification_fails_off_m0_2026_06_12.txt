@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lp_identification_fails_off_m0_2026_06_12.py
+runner_sha256: cfdd30f640ed6a425fc38310c167e1dd3c178ed36189056abb081598f321c1ca
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 55.10
+status: ok
+----- stdout -----
+# S3 staggered d=2 LP-vs-Harper boundary check
+SCOPE: Harper q=24, finite B=2*pi/24; LP is the B->0 candidate.
+MOTIVATION ONLY: with the in-review collapse relation, the LP formula is an analytic candidate for the boundary surface; finite-B deviations below are diagnostic.
+m      T      mu_full_224    mu_LP_224      abs_dev       comparison_gate
+0.2    0.2    1.7078862995   1.7502876800   0.0424013806  measured_deviation
+0.2    0.4    1.7949517762   1.8411117823   0.0461600062  measured_deviation
+0.5    0.2    1.7535918689   1.9546297105   0.2010378416  measured_deviation
+0.5    0.4    1.8374246005   2.0368300034   0.1994054030  measured_deviation
+PASS: finite cell contains staggered period :: Q=24, Ly=2
+PASS: magnetic wraparound phase periodicity :: max phase error=1.535e-15, tol=1.0e-12
+PASS: Harper matrix Hermiticity :: max |H-H^dag|=0.000e+00, tol=1.0e-12
+PASS: kx spectral wraparound :: max eig drift=4.885e-15, tol=1.0e-10
+PASS: ky spectral wraparound :: max eig drift=4.441e-15, tol=1.0e-10
+PASS: B=0 Harper folding anti-fabrication anchor :: max folded-spectrum error=5.773e-15, tol=1.0e-10
+PASS: m->0 LP kernel reduction :: max error at 3 seeded random k points=1.110e-16, tol=1.0e-10
+PASS: full Harper bisection bracket m=0.2 T=0.2 GL=160 :: f(0.0)=-1.345e-03, f(4.0)=4.077e-04
+PASS: LP bisection bracket m=0.2 T=0.2 GL=160 :: f(0.0)=6.312e-01, f(4.0)=-2.874e-01
+PASS: full Harper bisection bracket m=0.2 T=0.2 GL=224 :: f(0.0)=-1.345e-03, f(4.0)=4.077e-04
+PASS: LP bisection bracket m=0.2 T=0.2 GL=224 :: f(0.0)=6.312e-01, f(4.0)=-2.874e-01
+PASS: full Harper GL 160/224 doubling m=0.2 T=0.2 :: |delta mu|=2.737e-12, tol=1.0e-06
+PASS: LP GL 160/224 doubling m=0.2 T=0.2 :: |delta mu|=1.382e-08, tol=1.0e-06
+PASS: full Harper far-below-band control m=0.2 T=0.2 :: |delta Omega(mu=-20.0)|=1.283e-38, tol=1.0e-12
+PASS: LP far-below-band control m=0.2 T=0.2 :: |LP(mu=-20.0)|=1.086e-35, tol=1.0e-12
+PASS: measured deviation table m=0.2 T=0.2 :: dev=0.0424013806, expected=0.0424013805, tol=5.0e-04
+PASS: full Harper bisection bracket m=0.2 T=0.4 GL=160 :: f(0.0)=-9.901e-04, f(4.0)=3.576e-04
+PASS: LP bisection bracket m=0.2 T=0.4 GL=160 :: f(0.0)=6.075e-01, f(4.0)=-2.495e-01
+PASS: full Harper bisection bracket m=0.2 T=0.4 GL=224 :: f(0.0)=-9.901e-04, f(4.0)=3.576e-04
+PASS: LP bisection bracket m=0.2 T=0.4 GL=224 :: f(0.0)=6.075e-01, f(4.0)=-2.495e-01
+PASS: full Harper GL 160/224 doubling m=0.2 T=0.4 :: |delta mu|=2.900e-12, tol=1.0e-06
+PASS: LP GL 160/224 doubling m=0.2 T=0.4 :: |delta mu|=4.028e-07, tol=1.0e-06
+PASS: full Harper far-below-band control m=0.2 T=0.4 :: |delta Omega(mu=-20.0)|=3.124e-21, tol=1.0e-12
+PASS: LP far-below-band control m=0.2 T=0.4 :: |LP(mu=-20.0)|=2.306e-18, tol=1.0e-12
+PASS: measured deviation table m=0.2 T=0.4 :: dev=0.0461600062, expected=0.0461600062, tol=5.0e-04
+PASS: full Harper bisection bracket m=0.5 T=0.2 GL=160 :: f(0.0)=-1.137e-03, f(4.0)=4.336e-04
+PASS: LP bisection bracket m=0.5 T=0.2 GL=160 :: f(0.0)=1.574e-01, f(4.0)=-3.013e-01
+PASS: full Harper bisection bracket m=0.5 T=0.2 GL=224 :: f(0.0)=-1.137e-03, f(4.0)=4.336e-04
+PASS: LP bisection bracket m=0.5 T=0.2 GL=224 :: f(0.0)=1.574e-01, f(4.0)=-3.013e-01
+PASS: full Harper GL 160/224 doubling m=0.5 T=0.2 :: |delta mu|=2.756e-12, tol=1.0e-06
+PASS: LP GL 160/224 doubling m=0.5 T=0.2 :: |delta mu|=4.441e-16, tol=1.0e-06
+PASS: full Harper far-below-band control m=0.5 T=0.2 :: |delta Omega(mu=-20.0)|=1.455e-38, tol=1.0e-12
+PASS: LP far-below-band control m=0.5 T=0.2 :: |LP(mu=-20.0)|=1.226e-35, tol=1.0e-12
+PASS: measured deviation table m=0.5 T=0.2 :: dev=0.2010378416, expected=0.2010378416, tol=5.0e-04
+PASS: full Harper bisection bracket m=0.5 T=0.4 GL=160 :: f(0.0)=-9.164e-04, f(4.0)=3.648e-04
+PASS: LP bisection bracket m=0.5 T=0.4 GL=160 :: f(0.0)=3.507e-01, f(4.0)=-2.510e-01
+PASS: full Harper bisection bracket m=0.5 T=0.4 GL=224 :: f(0.0)=-9.164e-04, f(4.0)=3.648e-04
+PASS: LP bisection bracket m=0.5 T=0.4 GL=224 :: f(0.0)=3.507e-01, f(4.0)=-2.510e-01
+PASS: full Harper GL 160/224 doubling m=0.5 T=0.4 :: |delta mu|=2.501e-12, tol=1.0e-06
+PASS: LP GL 160/224 doubling m=0.5 T=0.4 :: |delta mu|=3.997e-14, tol=1.0e-06
+PASS: full Harper far-below-band control m=0.5 T=0.4 :: |delta Omega(mu=-20.0)|=3.310e-21, tol=1.0e-12
+PASS: LP far-below-band control m=0.5 T=0.4 :: |LP(mu=-20.0)|=2.424e-18, tol=1.0e-12
+PASS: measured deviation table m=0.5 T=0.4 :: dev=0.1994054030, expected=0.1994054030, tol=5.0e-04
+PASS: Harper finite-field anchor mu*(0.2,0.2) :: mu=1.7078862995, anchor=1.7086, tol=5.0e-03
+TOTAL: PASS=44 FAIL=0
+
+----- stderr -----
+

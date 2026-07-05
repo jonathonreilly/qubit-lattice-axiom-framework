@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/frontier_within_sector_k2_mixed_event_evidence_2026_06_12.py
+runner_sha256: a6e9fa8d5fb7ecabfe0b7dfa7a442d64feabb8ffc395ebcaa5f92ae28d444273
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.50
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  pinned L=3 tree, wraparound, and size guards
+==============================================================================
+  [PASS] L=3 finite-lattice wraparound is active in every color channel: site 2 connects back to site 0 and the hopping matrix is Hermitian  (nonzero directed entries 18)
+  [PASS] depth cap 12 exact Born tree has the expected branch count B=2^n on every scanned row for seeds 4242/99/7  (seed 4242: max depth 12, max B 4096; seed 99: max depth 12, max B 4096; seed 7: max depth 12, max B 4096)
+  [PASS] rank guard holds on every branch through depth cap 12 for the selected three seeds  (worst min-sv 0.0005)
+  [PASS] Born no-prune guard holds through depth cap 12 for the selected three seeds  (minimum daughter norm 2.862152e-01)
+==============================================================================
+Part 2  V4a k=2 ESS adequacy on the landed selected events
+==============================================================================
+seed 4242 depth 9 prefix-k=2: B=512, sectors=4, ESS=[93.702, 102.004, 109.756, 113.509], adequacy=AAAA, |delta|=[0.121, 0.249, 0.259, 0.249], adequate-weighted |delta|=0.205456
+seed 99 depth 7 prefix-k=2: B=128, sectors=4, ESS=[26.515, 27.263, 27.698, 28.167], adequacy=AAAA, |delta|=[0.090, 0.063, 0.135, 0.116], adequate-weighted |delta|=0.100157
+seed 7 depth 4 prefix-k=2: B=16, sectors=4, ESS=[3.980, 3.968, 3.975, 3.966], adequacy=uuuu, |delta|=[0.001, 0.643, 0.203, 0.008], adequate-weighted |delta|=nan
+  [PASS] V4a TRUE ADEQUACY PATTERN: seeds 4242 and 99 are k=2 ESS-adequate in all four selected-event sectors, while seed 7 is not k=2 testable  (patterns seed 4242: AAAA, seed 99: AAAA, seed 7: uuuu)
+  [PASS] V4a TRUE SEED-7 DATUM: the landed seed 7 depth-4 event is too weight-concentrated for ANY nontrivial prefix test at ESS >= 8  (k=2 ESS [3.980, 3.968, 3.975, 3.966]; B=16)
+==============================================================================
+Part 3  V4b record-vs-null on k=2 testable selected events
+==============================================================================
+  [PASS] V4b selected-event testable-seed set is exactly the seeds with all four k=2 sectors at ESS >= 8  (testable seeds [4242, 99])
+seed 4242 depth 9 prefix-k=2: B=512, sectors=4, ESS=[93.702, 102.004, 109.756, 113.509], adequacy=AAAA, |delta|=[0.121, 0.249, 0.259, 0.249], adequate-weighted |delta|=0.205456
+seed 4242 depth 9 prefix-k=2: permutation null draws=300, finite=300, median=0.281589, p95=0.291233, max=0.298798
+  [PASS] V4 record-vs-null TRUE RELATION: seed 4242 depth 9 prefix-k=2 adequate-sector weighted |delta| DOES NOT EXCEED permutation-null p95  (record 0.205456 vs null p95 0.291233)
+seed 99 depth 7 prefix-k=2: B=128, sectors=4, ESS=[26.515, 27.263, 27.698, 28.167], adequacy=AAAA, |delta|=[0.090, 0.063, 0.135, 0.116], adequate-weighted |delta|=0.100157
+seed 99 depth 7 prefix-k=2: permutation null draws=300, finite=300, median=0.169025, p95=0.246453, max=0.303980
+  [PASS] V4 record-vs-null TRUE RELATION: seed 99 depth 7 prefix-k=2 adequate-sector weighted |delta| DOES NOT EXCEED permutation-null p95  (record 0.100157 vs null p95 0.246453)
+==============================================================================
+Part 4  V4c seed 7 next-most-spread adequate-event probe
+==============================================================================
+  [PASS] V4c selector TRUE TARGET: seed 7 probe is the second-smallest global |chi_1| row among rows with at least 64 branches under depth cap 12  (depth 11, B=2048, global |chi_1|=0.523396; smallest depth 10 |chi_1|=0.120490)
+seed 7 depth 11 prefix-k=2: B=2048, sectors=4, ESS=[468.923, 459.572, 467.828, 430.728], adequacy=AAAA, |delta|=[0.072, 0.223, 0.255, 0.162], adequate-weighted |delta|=0.176915
+seed 7 depth 11 prefix-k=2: permutation null draws=300, finite=300, median=0.248675, p95=0.250621, max=0.252919
+  [PASS] V4 record-vs-null TRUE RELATION: seed 7 depth 11 prefix-k=2 adequate-sector weighted |delta| DOES NOT EXCEED permutation-null p95  (record 0.176915 vs null p95 0.250621)
+seed 7 depth 11 prefix-k=3: B=2048, sectors=8, ESS=[234.141, 227.254, 238.581, 216.110, 235.795, 234.684, 231.518, 215.710], adequacy=AAAAAAAA, |delta|=[0.006, 0.056, 0.201, 0.113, 0.081, 0.210, 0.093, 0.021], adequate-weighted |delta|=0.092996
+seed 7 depth 11 prefix-k=3: permutation null draws=300, finite=300, median=0.248140, p95=0.251159, max=0.252984
+  [PASS] V4 record-vs-null TRUE RELATION: seed 7 depth 11 prefix-k=3 adequate-sector weighted |delta| DOES NOT EXCEED permutation-null p95  (record 0.092996 vs null p95 0.251159)
+  [PASS] V4c TRUE OUTCOME: seed 7's next-most-spread row supplies an adequate within-sector datum  (adequate prefixes k=2, k=3)
+==============================================================================
+TOTAL: PASS=13 FAIL=0
+==============================================================================
+SCOPE: finite L=3, depth cap 12, selected seeds 4242/99/7, landed selector
+  depths 9/7/4.  The ESS adequacy pattern is computed before gating; the
+  moment-relation statistic is the adequate-sector weighted | |chi_2| -
+  |chi_1|^4 | deviation.  Permutation controls use 300 deterministic label
+  draws with rng 7777 and preserve prefix-sector cardinalities.  Seed 7's
+  selected event is escalated to the requested next-most-spread row only if
+  its landed selected event is not k=2 adequate.  Finite power; branch
+  weights are explicit Kraus/Born weights; statuses pipeline-derived.
+  Audit lane grades.
+
+----- stderr -----
+

@@ -1,0 +1,97 @@
+===== runner cache v1 =====
+runner: scripts/frontier_taste_sector_marginal_lv_b4_2026_06_13.py
+runner_sha256: 70e2e21f10e51cd0594172dd934149eec5c98c8e5353f1a7322aaab74cde8d58
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.16
+status: ok
+----- stdout -----
+Staggered taste-sector marginal Lorentz-violation on OS0 (taste-SUM B4)
+(HONEST observable G_hon(p,B) = Dinv(p) - Sigma(p,B): external Dinv fixed,
+ loop reads taste B, NOT W_B-conjugated. Per-single-taste marginal velocity
+ is genuinely ANISOTROPIC O(0.2) on OS0; the anisotropy cancels only across
+ the B4-covariant taste orbit (taste-SUM). Consumes kinetic_isotropy +
+ scale_reference primitives; literature comparator-only; every check an
+ independent numeric/symbolic test; sets no audit status.)
+
+==============================================================================
+Part A -- gammas, Clifford contraction (reproven), taste-rotation similarity
+==============================================================================
+[PASS] Euclidean Clifford {g_mu,g_nu}=2 delta  ::  max dev=0.00e+00
+[PASS] contraction sum_nu g_nu g_mu g_nu = (2-d) g_mu = -2 g_mu (numeric, d=4)  ::  max ||sum - (-2 g_mu)|| = 0.00e+00
+[PASS] contraction coefficient (2-d) reproven symbolically; equals -2 at d=4  ::  coeff(g_mu) = 2 - d ; at d=4 = -2
+[PASS] g5^2 = I
+[PASS] taste rotation W_B unitary  B=(0, 1, 1, 0)
+[PASS] taste rotation W_B unitary  B=(1, 0, 0, 0)
+[PASS] taste rotation W_B unitary  B=(1, 1, 1, 0)
+[PASS] taste rotation W_B unitary  B=(1, 1, 1, 1)
+[PASS] W_B^{-1} g_mu W_B = (-1)^{B_mu} g_mu for ALL 16 B (taste rotation)  ::  worst dev over all 16 B = 0.00e+00
+[PASS] propagator similarity S(k+pi*B) = W_B S(k) W_B^{-1}  ::  worst dev = 2.61e-16
+[PASS] taste shift PRESERVES propagator eigenvalues (physical dispersion taste-inv)  ::  worst eig dev = 8.25e-16
+  -> the pi-shift is a UNITARY taste rotation: this EXPLAINS the removable
+     BARE g_mu coefficient sign-flip, so the bare coefficient is NOT the
+     physical observable. It does NOT define the physical observable: the
+     honest observable G_hon(p,B)=Dinv(p)-Sigma(p,B) reads the taste-B loop
+     directly and is NOT a W_B conjugation of the B=0 operator.
+
+==============================================================================
+Part B -- free spectrum is taste-blind (4-fold) and B4-invariant
+==============================================================================
+[PASS] free D^dag D eigenvalues all = m^2 + sum sin^2 (4-fold, taste-blind)  ::  spread=2.22e-16, scalar=0.863154
+[PASS] free scalar spectrum invariant under all 384 B4 signed permutations  ::  B4 orbit spread = 2.22e-16
+  -> free theory carries NO taste-dependent marginal velocity coefficient;
+     any taste-marginal LV must be INTERACTION-induced (taste-changing).
+
+==============================================================================
+Part C -- CORE: honest G_hon = Dinv - Sigma(p,B); per-taste vs taste-SUM
+==============================================================================
+[PASS] NON-DEGENERACY: Sigma(B=0) != Sigma(B=(0,1,1,0)) (taste shift VISIBLE)  ::  ||Sig(B=0) - Sig(B!=0)|| = 1.4589e-02  (scalar-denominator runner had ~1e-17)
+[PASS] bare g_mu coefficient flips sign exactly in B_mu=1 dirs (removable rotation)  ::  Bc(B=0)=[0.004095 0.005681 0.007295 0.004884]  Bc(0,1,1,0)=[ 0.004095 -0.005681 -0.007295  0.004884]
+[PASS] PER-TASTE marginal anisotropy GENUINELY NONZERO O(0.2) on OS0 (rep B=(0,1,1,0))  ::  Sigma_t - Sigma_s = -0.2058  (curv=[1.8489, 2.1576, 2.1576, 1.8489])
+[PASS] PER-TASTE anisotropy is O(0.2), not protected, across hw=1,2,3 corners  ::  worst per-taste |Sigma_t - Sigma_s| over hw=1,2,3 = 0.3087  (B4 does NOT protect per-taste)
+[PASS] TASTE-SUM (B4-orbit over hw=2) marginal anisotropy Sigma_t - Sigma_s ~ 0 on OS0  ::  Sigma_t - Sigma_s (taste-sum) = -2.22e-14  (curv=[np.float64(2.003229), np.float64(2.003229), np.float64(2.003229), np.float64(2.003229)])
+[PASS] all four TASTE-SUM curvatures equal (full B4 isotropy of the orbit)  ::  max-min over directions = 3.02e-14
+[PASS] TASTE-SUM OS0 zero is structural (quadrature-zero at N=12 and N=16)  ::  N=12: t-s=-1.3e-14; N=16: t-s=-2.0e-14
+[PASS] CONTRAST: per-taste O(0.2) anisotropy vs taste-SUM ~1e-14 (cancels on orbit)  ::  per-taste t-s = -0.2058  vs  taste-sum t-s = -2.22e-14
+  -> HONEST observable = smallest-eigenvalue dispersion of
+     G_hon(p,B) = Dinv(p) - Sigma(p,B) (external Dinv FIXED, loop reads
+     taste B; NOT a W_B conjugation). PER-SINGLE-taste the marginal
+     velocity is genuinely ANISOTROPIC O(0.2) on OS0 -- B4 does NOT protect
+     per-taste. The anisotropy cancels to ~1e-14 ONLY across the B4-covariant
+     taste orbit (taste-multiplet SUM): that is the genuine B4 protection.
+
+==============================================================================
+Part D -- FALSIFICATION: break temporal B4 -> orbit taste LV reappears
+==============================================================================
+[PASS] xi=1.5 temporal block regenerates nonzero orbit-averaged taste marginal LV  ::  orbit Sigma_t - Sigma_s (xi=1.5) = -2.5570e-03
+[PASS] xi=0.7 (opposite side) also gives nonzero orbit-averaged taste marginal LV  ::  orbit Sigma_t - Sigma_s (xi=0.7) = 9.3698e-04
+[PASS] xi<1 and xi>1 STRADDLE in sign: OS0 is an isolated sign-crossing zero  ::  sign(xi=0.7,0.8)=+1; sign(xi=1.3,1.5)=-1; (a07=9.37e-04, a08=6.66e-04, a13=-1.35e-03, a15=-2.56e-03)
+[PASS] continuous-time temporal block regenerates nonzero orbit-averaged taste LV  ::  orbit Sigma_t - Sigma_s (cont-time) = 1.7931e-03
+  -> the OS0 (xi=1) taste-SUM zero of Part C is GENUINE B4-covariance, NOT
+     an orbit-averaging artifact: every temporal anisotropy regenerates a
+     nonzero orbit anisotropy (~1e-3); xi<1/xi>1 straddle the isolated zero.
+
+==============================================================================
+Part E -- SURVIVOR: physical taste-LV is dim-6 cubic harmonic (Planck-suppr)
+==============================================================================
+[PASS] physical taste-changing dispersion HAS a nonzero dim-6 quartic piece  ::  axis quartic = -7.5473e+00
+[PASS] axis vs body-diagonal dim-6 coefficients DIFFER (hypercubic survivor present)  ::  axis=-7.5473e+00  diag=-1.7948e+00  (anisotropic dim-6 = cubic harmonic)
+[PASS] dim-6 cubic harmonic sum n_mu^4: axis=1, body-diagonal=1/4, ratio=4 (4D)  ::  axis=1.000000, diag=0.250000, ratio=4.0000
+[PASS] observable taste-LV at E=1 GeV is Planck-suppressed ~ (1/3)(E/M_Pl)^2 ~ 2e-39  ::  delta(1 GeV) = 2.236e-39  (c4=1/3 is a size estimate only)
+  -> on OS0 the surviving taste-SUM-level taste-LV is the SAME dim-6
+     B4-invariant cubic harmonic as the marginal-protected free theory:
+     axis-vs-diagonal anisotropic, Planck-suppressed (size estimate),
+     NOT a marginal taste velocity difference at the taste-sum level.
+
+==============================================================================
+SCORECARD
+==============================================================================
+TOTAL: PASS=29 FAIL=0
+VERDICT(report-only, narration): claim_type = bounded_theorem --
+  on the OS0 surface the B4-orbit / taste-multiplet-SUMMED marginal
+  velocity is Lorentz-isotropic (B4-protected); the per-SINGLE-taste
+  marginal velocity carries a real O(0.2) anisotropy that cancels ONLY
+  across the B4-covariant taste orbit. Bounded model; sets no audit.
+
+----- stderr -----
+

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py
-runner_sha256: 4bfd983a5f5344b01e7396a719633204b4d3ce9c6fa8884ed6b6d23217667ce1
+runner_sha256: 92bf43910d517e25cf52e6838da439d0e7a0ad0d92991984f3e926904e76e807
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 13.74
+elapsed_sec: 14.26
 status: ok
 ----- stdout -----
 ========================================================================
@@ -30,11 +30,11 @@ Block 2: Full staggered kinematic factor sanity checks.
   [PASS] Staggered D_psi(k=0.1) / k^2 close to 1 (continuum limit FR1)  (D_psi(0.1)/k^2 = 0.996671)
 
 Block 3: Grid-convergence I_v_scalar (N = 32, 48, 64).
-    N =  32:  I_v_scalar = +3.900542  (seed)
-    N =  48:  I_v_scalar = +3.901973  (delta vs prev: +0.037%)
-    N =  64:  I_v_scalar = +3.902217  (delta vs prev: +0.006%)
+    N =  32:  I_v_scalar = +32.408675  (seed)
+    N =  48:  I_v_scalar = +32.431568  (delta vs prev: +0.071%)
+    N =  64:  I_v_scalar = +32.435466  (delta vs prev: +0.012%)
   [PASS] Grid convergence I_v_scalar N=48 -> N=64 < 3%  (relative change = 0.01%)
-    I_v_scalar (full staggered-PT) = +3.9022 +/- 0.0002
+    I_v_scalar (full staggered-PT) = +32.4355 +/- 0.0039
 
 Block 4: I_v_gauge on conserved point-split staggered current.
     N =  32:  I_v_gauge = +1.096e-15  (Ward exact = 0)
@@ -56,93 +56,91 @@ Block 6: Grid-convergence I_SE_fermion (full staggered-PT, per flavor).
   [PASS] Grid convergence I_SE_fermion N=48 -> N=64 < 3%  (relative change = 0.62%)
     I_SE_fermion (full staggered-PT) = +0.9960 +/- 0.0062
 
-Block 7: Full staggered-PT values vs prior cited literature ranges.
-  [PASS] I_v_scalar full-PT = 3.902 in cited [3.0, 7.0]  (full staggered-PT value within cited bracket)
+Block 7: Full staggered-PT values vs prior cited ranges (corrected).
+  [PASS] I_v_scalar corrected full-BZ = 32.435 is outside prior [3.0, 7.0]  (prior bracket was based on the divided scalar value)
   [PASS] I_SE_gluonic full-PT = 2.323 in cited [1.0, 3.0]  (full staggered-PT value within cited bracket)
-  [PASS] I_SE_fermion full-PT = 0.996 in cited [0.5, 1.5]  (full staggered-PT value within cited bracket)
+  [PASS] I_SE_fermion old single-corner value is not a matching constant  (old m_sq-fixed value 0.996 is regulator-dependent; see correction runner)
 
 Block 8: Comparison to prior schematic BZ quadrature.
-    I_v_scalar:   full-PT +3.902  vs schematic +3.970  shift -0.068
+    I_v_scalar:   full-PT +32.435  vs schematic +3.970  shift +28.465
     I_SE_gluonic: full-PT +2.323  vs schematic +2.320  shift +0.003
     I_SE_fermion: full-PT +0.996  vs schematic +1.120  shift -0.124
-  [PASS] I_v_scalar shift (|-0.068|) within prior ~25% systematic  (full-PT/schematic = 0.983)
+  [PASS] I_v_scalar shift (|+28.465|) exceeds prior ~25% systematic  (full-PT/schematic = 8.170)
   [PASS] I_SE_gluonic shift (|+0.003|) within prior ~25% systematic  (full-PT/schematic = 1.001)
-  [PASS] I_SE_fermion shift (|-0.124|) within prior ~25% systematic  (full-PT/schematic = 0.889)
+  [PASS] I_SE_fermion schematic comparison is invalid after regulator-dependence finding  (old fixed-m_sq full-PT/schematic = 0.889)
 
 Block 9: Assemble Delta_1, Delta_2, Delta_3 at full-PT central.
-    Delta_1 = 2 * (I_v_scalar - I_v_gauge) - 6 = +1.804
+    Delta_1 = 2 * (I_v_scalar - I_v_gauge) - 6 = +58.871
     Delta_2 = I_v_gauge - (5/3) * I_SE_gluonic  = -3.871
     Delta_3 = (4/3) * I_SE_fermion              = +1.328
-  [PASS] Delta_1 in prior cited [0.0, 8.0]  (Delta_1 = +1.804)
+  [PASS] Corrected Delta_1 exceeds prior cited [0.0, 8.0]  (Delta_1 = +58.871)
   [PASS] Delta_2 in prior cited [-5.0, 0.0]  (Delta_2 = -3.871)
-  [PASS] Delta_3 in prior cited [0.667, 2.0]  (Delta_3 = +1.328)
-  [PASS] Sign Delta_1 > 0 (CF channel positive)  (Delta_1 = +1.804)
+  [PASS] Delta_3 old fixed-regulator value is not a valid matching constant  (Delta_3(m_sq=0.01 artifact) = +1.328)
+  [PASS] Sign Delta_1 > 0 (CF channel positive)  (Delta_1 = +58.871)
   [PASS] Sign Delta_2 < 0 (CA channel negative)  (Delta_2 = -3.871)
   [PASS] Sign Delta_3 > 0 (T_F n_f channel positive)  (Delta_3 = +1.328)
 
 Block 10: Assemble Delta_R from full staggered-PT BZ integrals.
-    C_F * Delta_1 channel:       +1.736 %
+    C_F * Delta_1 channel:       +56.635 %
     C_A * Delta_2 channel:       -8.380 %
     T_F n_f * Delta_3 channel:   +2.874 %
     ----------------------------------------------------
-    Delta_R full staggered-PT:   -3.769 %
-  [PASS] Delta_R assembled = -3.769 %  (full staggered-PT three-channel assembly)
+    Delta_R full staggered-PT:   +51.129 %
+  [PASS] Delta_R assembled = +51.129 %  (full staggered-PT three-channel assembly)
 
 Block 11: Uncertainty: grid + 5% per-channel full-PT systematic.
-    Grid precision I_v_scalar:    +/- 0.0002
+    Grid precision I_v_scalar:    +/- 0.0039
     Grid precision I_SE_gluonic:  +/- 0.0015
     Grid precision I_SE_fermion:  +/- 0.0062
-    Grid precision Delta_R:       +/- 0.0186 %
-    Full-PT systematic (5%):      +/- 0.4514 %
-    Total uncertainty Delta_R:    +/- 0.4518 %
-  [PASS] Grid precision per integral < 0.10 (tighter than prior schematic ~0.13)  (scalar 0.0002, gluonic 0.0015, fermion 0.0062)
-  [PASS] Total Delta_R uncertainty < 1% (target sub-percent)  (total uncertainty = 0.4518 %)
-  [PASS] Full-PT systematic <= prior schematic 25% systematic / 5 (5x tightening)  (FULL_PT_SYST_FRAC = 0.05 (5x tighter than schematic 0.25))
+    Grid precision Delta_R:       +/- 0.0200 %
+    Full-PT systematic (5%):      +/- 2.8662 %
+    Total uncertainty Delta_R:    +/- 2.8662 %
+  [PASS] Grid precision per integral < 0.10 (tighter than prior schematic ~0.13)  (scalar 0.0039, gluonic 0.0015, fermion 0.0062)
+  [PASS] Naive corrected Delta_R uncertainty is not sub-percent  (naive 5% channel uncertainty = 2.8662 %)
+  [PASS] Scalar C_F channel dominates the corrected Delta_R diagnostic  (C_F=+56.63%, C_A=-8.38%, T_F n_f=+2.87%)
 
-Block 12: Tightened P1 band from full staggered-PT.
+Block 12: Corrected P1 diagnostic band vs old negative band.
     Prior schematic band:        [-5.60 %, -0.97 %]   width 4.63 %
     Master assembly P1 band:     [+2.30 %, +4.30 %]   width 2.00 %
-    Full staggered-PT band:      [-4.22 %, -3.32 %]  width 0.90 %
-    Full staggered-PT central:   -3.769 %
-  [PASS] Full-PT band width < prior schematic 4.62% (tightened)  (new width 0.90% vs prior 4.63%)
-  [PASS] Full-PT central negative (consistent with master assembly -3.27%)  (Delta_R = -3.769 %)
-  [PASS] Full-PT central within 2 sigma of prior schematic central (-3.29%)  (|full-PT - schematic|/syst = 0.21 sigma)
+    Full staggered-PT band:      [+48.26 %, +54.00 %]  width 5.73 %
+    Full staggered-PT central:   +51.129 %
+  [PASS] Corrected full-PT central is positive, not the old negative P1 residual  (Delta_R = +51.129 %)
+  [PASS] Corrected central is outside 2 sigma of prior schematic central (-3.29%)  (|full-PT - schematic|/syst = 23.54 sigma)
 
-Block 13: Authority retention.
+Block 13: Authority fallout.
   [PASS] Master obstruction theorem NOT modified  (publication surface unchanged)
   [PASS] Ward-identity tree-level theorem NOT modified (I_v_gauge = 0 confirmed)  (conserved point-split staggered current Z_V = 1 exact)
   [PASS] Rep-A/Rep-B cancellation theorem NOT modified  (three-channel formula inherited)
-  [PASS] Master assembly theorem's central -3.27% inherited structurally  (full-PT refines magnitude while preserving sign and three-channel structure)
-  [PASS] Delta_1, Delta_2, Delta_3 literature-citation notes NOT modified  (prior cited ranges cross-referenced; not revised)
-  [PASS] H_unit symbolic reduction NOT modified (envelope |I_S| <= 23.35 preserved)  (full-PT I_v_scalar = 3.902 within envelope)
+  [PASS] Master assembly theorem's central -3.27% is invalidated  (corrected scalar channel changes sign/magnitude of the residual)
+  [PASS] Delta_1, Delta_2, Delta_3 citation surfaces need correction banners  (prior cited ranges are not authoritative for the corrected scalar/fermion channels)
+  [PASS] H_unit prior envelope |I_S| <= 23.35 is violated by corrected scalar channel  (corrected I_v_scalar = 32.435)
   [PASS] Prior schematic BZ quadrature note NOT modified  (full-PT note cites schematic; schematic retains its stated systematic)
 
 ========================================================================
-SUMMARY: PASS=45  FAIL=0
+SUMMARY: PASS=44  FAIL=0
 ========================================================================
 
-DEFINITIVE RESULT (full staggered-PT):
+CORRECTED DIAGNOSTIC RESULT (full staggered-PT):
 
   Full staggered-PT 4D BZ quadrature at N = 64 offset-grid:
-    I_v_scalar    = +3.902 +/- 0.000 (grid)
+    I_v_scalar    = +32.435 +/- 0.004 (grid)
     I_v_gauge     = +0.000e+00  (Ward exact)
     I_SE_gluonic  = +2.323 +/- 0.001 (grid)
     I_SE_fermion  = +0.996 +/- 0.006 (grid)
 
   Assembled:
-    Delta_1 = +1.804   Delta_2 = -3.871   Delta_3 = +1.328
+    Delta_1 = +58.871   Delta_2 = -3.871   Delta_3 = +1.328
 
-  Delta_R (full staggered-PT):  -3.769 %  +/- 0.452 %
+  Delta_R diagnostic (with old fixed-regulator fermion artifact):  +51.129 %  +/- 2.866 %
 
-  Tightened P1 band: [-4.22 %, -3.32 %]
+  Corrected diagnostic band: [+48.26 %, +54.00 %]
   Prior schematic:    [-5.60 %, -0.97 %]
   Prior master:       [+2.30 %, +4.30 %] (absolute)
 
-  KEY OUTCOME: full staggered-PT confirms the master assembly's
-  -3.27% central within the tightened ~1% band, and the prior
-  schematic's -3.29% within 2 sigma. The three-channel partial
-  cancellation structure is retained: C_F and T_F n_f channels
-  positive, C_A channel dominantly negative.
+  KEY OUTCOME: the old -3.27% / -3.77% P1 residual is invalidated.
+  Removing the scalar /N_TASTE double-count makes the C_F channel large
+  and positive; the m_sq-fixed fermion channel remains a regulator artifact
+  until full-doubler subtraction is used. Delta_2 (C_A gluonic) is clean.
 
 
 ----- stderr -----

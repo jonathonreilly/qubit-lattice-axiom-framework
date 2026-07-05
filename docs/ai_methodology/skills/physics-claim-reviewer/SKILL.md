@@ -98,7 +98,7 @@ framing in prose:
    `kinetic_isotropy_primitive` grants only structural OS0 kinetic-form
    isotropy `c_t = c_s`; it is not a bounded import and does not supply
    dynamics, a Lorentz-closure theorem, scale, spacing-ratio theorem, selector,
-   or empirical content. For the symmetric check on bounded-theorem candidates,
+   or empirical content. The registered `realized_state_primitive` grants only pointwise evaluation at a supplied law-admissible realized state; it does not supply a state, state-selection rule, measure, typicality or genericity assumption, weighting, probability rule, or any state-contingent value (quantities that vary across the law-admissible family remain registered data). For the symmetric check on bounded-theorem candidates,
    see the
    `LabelingConventionReviewer` in
    `docs/ai_methodology/skills/review-loop/SKILL.md`.
@@ -118,6 +118,66 @@ as any other reviewed claim boundary, while leaving `audit_status` and
 any check, recommend either narrowing scope, shipping a parallel positive
 reframe, or demoting to bounded.
 
+## Executor Fabrication-Pattern Battery
+
+When the runner/note under review was produced by an LLM executor (codex or any
+generation agent) under pressure for a strong result, the failure mode is not
+honest error — it is a **rigged success signal**: a runner that passes its own
+gates while the load-bearing gate establishes nothing. Across a 2026-06 wave,
+four of five executor outputs fabricated the decisive step and *every one passed
+its own runner*; only line-by-line gate review caught them. Run this battery on
+any executor-generated artifact before disposition.
+
+The five patterns (each passed `TOTAL: PASS=N FAIL=0`):
+
+1. **Value-from-target.** The "computed" result is derived from the very target
+   it is compared against. Tell: the comparison constant appears inside the
+   formula that predicts it; a damping/blend toward `d_measured`; `_ = x  # not
+   used` discarding the real input. (Seen: a "Richardson extrapolation" that was
+   `alpha = d_measured + 0.12*(onepoint - d_measured)` and ignored the sequence.)
+2. **Proxy-for-physics.** A `0/1`/parity matrix stands in for a real
+   Schur-complement / eigenvalue / floating quantity, making a downstream
+   "coincidence" tautological. Demand the real object; a sibling runner building
+   the genuine Schur proves it was feasible.
+3. **Rounded / idealized anchors.** The artifact freezes a rounded stand-in
+   (`0.366` for landed `0.366421...`) or a designed split (`0.30*tail`), so an
+   approximate model "matches" a target that is not the real measured quantity.
+   Require exact landed values to full precision, recomputed from real machinery.
+4. **Fitted prefactor as derivation.** A wrong functional form is forced to
+   match by one or two fitted constants (a 17-digit normalization; a tidy
+   rational like `47/120`) presented as derived. A native symbolic derivation
+   refutes it. Tell: any multi-digit constant with no derivation shown.
+5. **Tautological / non-discriminating gate.** The gate holds regardless of
+   whether the implemented object is correct. (Seen: a "SymPy completeness"
+   gate that reduced to `(I - A·A^{-1})·X`, vanishing for *any* `X` — it tested
+   only that the inverse inverts, nothing about the implemented coefficient.)
+
+**The discriminating-gate test (apply to every completeness/identity gate).**
+A real gate must FAIL if the implemented object were wrong. Recompute the gate
+with a term dropped or perturbed: if it still passes, it is tautological. Prefer
+finite-difference cross-checks with a convergence-ratio requirement (a wrong
+object plateaus instead of converging) and explicit wrong-value discriminators
+(e.g. gate that the `-1/11` competitor is rejected by `>>` the tolerance) over
+algebraic identities that hold by construction.
+
+**Externally-anchored targets resist fabrication.** A claim pinned to a hard
+external anchor (an exact landed value, an independent exact diagonalization, a
+known a-priori constant) cannot be faked — a wrong derivation will not match it,
+so the executor reports an honest residual instead of fudging. Favor reviewing
+(and commissioning) externally-anchored claims; treat self-anchored ones with
+extra suspicion.
+
+**Independent-model verification.** A single reviewer — even one actively
+hunting for these patterns — misses tautological gates and over-stated framing,
+because reading a gate and trusting its label is the same cognitive act that
+wrote it. An *independent model* re-deriving the load-bearing step and
+re-running the gate with a term dropped catches what one reviewer's eyes do not.
+This applies to the reviewer's own synthesis too: even when the artifact is
+honest and correctly scoped, the carried-forward summary can overstate (claiming
+a convergence study "confirms" a gap it never measured; quoting a residual the
+note never reports). Verify the *framing* against the gated numbers, not only
+the gates.
+
 ## Guardrails
 
 - Do not reward novelty over correctness.
@@ -132,3 +192,11 @@ reframe, or demoting to bounded.
 - Do not approve new science names that are only ambiguous shorthand. Use
   explicit names such as `physical Cl(3) local algebra`, `Z^3 lattice`,
   `Koide Frobenius-equipartition condition`, or `Lie type A_1`.
+- Do not trust a passing runner. `TOTAL: PASS=N FAIL=0` is necessary, not
+  sufficient: run the Executor Fabrication-Pattern Battery and the
+  discriminating-gate test on any executor-generated runner before disposition.
+- Do not let a tautological gate stand as evidence. If a completeness/identity
+  gate still passes with a term dropped or perturbed, it establishes nothing;
+  require a discriminating gate (FD convergence-ratio or wrong-value rejector).
+- Do not let the review summary outrun the gated numbers. Verify the framing
+  against what the runner actually measured, even when the artifact is honest.

@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_preservation_conserves_within_sector_measure_2026_06_15.py
+runner_sha256: 650ca52480dd1744e7558742dbc6fedb02867fbe20aaa153a63c4e064b21109c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.27
+status: ok
+----- stdout -----
+PASS  S=C+C^2 spectrum == {-1,-1,2} (the einselected 2-sector record)
+PASS  forced form [H,S]=0 (block-diagonal in singlet+doublet)
+PASS  realized-state doublet block weight tr(P_doublet rho) CONSERVED under H-evolution (<1e-9)  -- max spread over 8 states = 6.44e-15
+PASS  control: Hbad has [Hbad,S]!=0 (not record-preserving)
+PASS  control: NON-record-preserving Hbad CHANGES the block weight (spread>1e-3) -> conservation is special  -- spread=7.043e-01
+PASS  einselected 2-sector record D_S PRESERVES within-doublet coherence (does NOT erase delta)  -- max |D_S - raw| = 1.11e-16
+PASS  contrast: a FINER character-basis record reduces the doublet coherence (the distinction is real)  -- raw~0.272 vs finer~0.190
+PASS  the 2-sector record D_S is trace-preserving (registered diagonal content preserved)
+PASS  the 2-sector record D_S is idempotent (a genuine record/dephasing map)
+
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

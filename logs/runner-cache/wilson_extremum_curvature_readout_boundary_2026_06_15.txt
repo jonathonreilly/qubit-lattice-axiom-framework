@@ -1,0 +1,79 @@
+===== runner cache v1 =====
+runner: scripts/wilson_extremum_curvature_readout_boundary_2026_06_15.py
+runner_sha256: c673205fef21eb3606eb47f4b3b142cf7c418a424255641d287922fccc034257
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+========================================================================================
+ wilson_extremum_curvature_readout_boundary_2026_06_15.py
+========================================================================================
+
+----------------------------------------------------------------------------------------
+ Part 1: note structure and boundaries
+----------------------------------------------------------------------------------------
+  [PASS] contains claim type  ('Claim type:** bounded_theorem')
+  [PASS] contains status authority  ('independent audit lane only')
+  [PASS] contains closed native layer  ('Closed native layer')
+  [PASS] contains declared diagnostic layer  ('Declared diagnostic layer')
+  [PASS] contains open physical layer  ('Open physical layer')
+  [PASS] contains staircase normalization  ('W(hw) = 2 r hw')
+  [PASS] contains diagnostic count  ('N_taste = 16')
+  [PASS] contains not a Higgs pole  ('physical Higgs pole')
+  [PASS] contains no Wilson coefficient derivation  ('does not derive the numerical Wilson coefficient')
+  [PASS] contains Taylor expansion  ('sqrt(1 - x) = 1 - x/2 - x^2/8 + O(x^3)')
+  [PASS] contains all-orders context  ('WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08')
+  [PASS] contains channel boundary dependency  ('HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08')
+  [PASS] contains verification section  ('## Verification')
+
+----------------------------------------------------------------------------------------
+ Part 2: binomial staircase and Wilson normalization
+----------------------------------------------------------------------------------------
+  [PASS] sum binom(4,k) = 16
+  [PASS] sum binom(4,k) k = 32  (32)
+  [PASS] sum binom(4,k) k^2 = 80  (80)
+  [PASS] sum binom(4,k)(k-2)^2 = 16  (16)
+  [PASS] Wilson shift law W(hw)=2 r hw evaluated symbolically  ([Fraction(0, 1), Fraction(7, 50), Fraction(7, 25), Fraction(21, 50), Fraction(14, 25)])
+
+----------------------------------------------------------------------------------------
+ Part 3: leading curvature-scale readout
+----------------------------------------------------------------------------------------
+  [PASS] total leading curvature divided by 16 equals formula (1)
+  [PASS] leading r^2 coefficient in (m_curv,W/v)^2 is -3/4 u0^-4  (3/4)
+
+----------------------------------------------------------------------------------------
+ Part 4: all-orders closed form vs leading Taylor residual
+----------------------------------------------------------------------------------------
+  r=0.05000: closed=0.3214798742, leading=0.3214377730, residual=4.210e-05
+  r=0.02500: closed=0.3238111318, leading=0.3238084701, residual=2.662e-06
+  r=0.01250: closed=0.3244013113, leading=0.3244011444, residual=1.668e-07
+  [PASS] closed-minus-leading residual has O(r^4) scaling under r halving  ([15.817525477270529, 15.953832961945544])
+
+----------------------------------------------------------------------------------------
+ Part 5: square-root Taylor residual check
+----------------------------------------------------------------------------------------
+  r=0.010, x=3.895184e-04, closed=0.999805221809, e1=1.897e-08, e2=3.695e-12
+  r=0.020, x=1.558074e-03, closed=0.999220659428, e1=3.037e-07, e2=2.366e-10
+  r=0.040, x=6.232295e-03, closed=0.996878982079, e1=4.870e-06, e2=1.519e-08
+  [PASS] second Taylor truncation improves over first at all sampled r
+  [PASS] first residual coefficient is near 1/8  ([0.12502435094686065, 0.125097474564901, 0.12539104233882237])
+  [PASS] second residual coefficient is near 1/16  ([0.06251487547843632, 0.06256092966571172, 0.06274451579312454])
+
+----------------------------------------------------------------------------------------
+ Part 6: import and scope guard
+----------------------------------------------------------------------------------------
+  [PASS] stdlib-only imports  (clean)
+  [PASS] forbidden overclaim absent: derives the physical Higgs pole
+  [PASS] forbidden overclaim absent: derives r
+  [PASS] forbidden overclaim absent: retained by this source note
+
+========================================================================================
+ TOTAL: PASS=28, FAIL=0
+========================================================================================
+ VERDICT: Wilson extremum curvature readout boundary certified; native
+ leading coefficient and Taylor residuals verified, with physical
+ Higgs-pole and Wilson-coefficient readings explicitly outside scope.
+
+----- stderr -----
+

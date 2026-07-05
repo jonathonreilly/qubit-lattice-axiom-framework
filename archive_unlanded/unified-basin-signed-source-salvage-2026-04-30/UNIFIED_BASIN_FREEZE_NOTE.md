@@ -1,7 +1,14 @@
-# Unified Basin Freeze: Both Basins Pass Zero/Neutral Controls
+# Historical Unified Basin Freeze Packet (Retracted)
 
 **Date:** 2026-04-06
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/unified-basin-signed-source-salvage-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
 
 ## Retraction
 
@@ -13,9 +20,31 @@
 
 - **Do-not-cite warning:** Do NOT cite the numerical results, tables, or threshold values in the original content below as live framework claims. The runners referenced in this note have been superseded or are no longer reproducible at the time of audit. If a future investigation revisits this physics, treat it as starting from scratch rather than as continuation of a "closed no-go".
 
-## Control gate results
+## 2026-06-16 archive firewall
 
-### Complex-action basin (drift=0.20, restore=0.70)
+This archived packet is historical diagnostic material only. It is not a
+unified two-coupling basin result, and it is not authority that the
+signed-source and complex-action surfaces share one nearby grown-family
+neighborhood.
+
+What can be carried forward, separately and only through the live documents
+or runners that support those narrower rows:
+
+- the signed-source non-label basin currently has a separate support route
+  for the three printed restore rows (`0.60`, `0.70`, `0.80`);
+- the fixed-row kernel-vs-gravity comparison is a separate diagnostic about
+  absorption versus gravity-specific deflection;
+- the actual complex grown-basin runner does not support this wrapper's
+  unified-basin claim.
+
+A future repair must either provide one unified runner over the same
+drift/restore neighborhood and seed set, with explicit
+zero/neutral/gamma=0/Born checks for both coupling surfaces, or keep the two
+surfaces split into separate retained/failed components.
+
+## Historical control-gate tables (retracted as unified-basin evidence)
+
+### Historical complex-action fixed-row table (not a basin)
 
 | Field | gamma=0 escape | gamma=0.5 escape | Crossover? |
 | --- | ---: | ---: | --- |
@@ -38,20 +67,16 @@ change (TOWARD at gamma=0, AWAY at gamma=0.5).
 
 Zero control exact, neutral cancellation exact, charge linearity 93-100%.
 
-## Frozen claim
+## Historical frozen claim (retracted)
 
-The narrow review-safe statement:
+The old unified-basin claim is retracted. This packet does not prove a
+shared nearby grown-family neighborhood carrying both the signed-source
+surface and the complex-action surface. The two surfaces must be split or
+recomputed by a single runner before any live framework claim can be made.
 
-**One retained grown connectivity family (drift=0.2, restore=0.7) supports
-both signed-source and complex-action couplings across a small nearby basin,
-with exact zero and neutral controls passing cleanly.**
+## Archive boundary
 
-This is NOT a family-wide transfer claim. It is NOT geometry-generic.
-It applies to the specific grown-row neighborhood around the retained
-moderate-drift center.
-
-## What this does NOT claim
-
+- Does not claim a unified two-coupling basin
 - Does not claim the basin extends to other drift/restore values
 - Does not claim any geometry-generic transfer
 - Does not claim the complex-action crossover is unique to gravity

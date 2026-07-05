@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/gauge_algebra_parent_kinematic_bridge_firewall_2026_06_18.py
+runner_sha256: a9bdaf838be08cb40307fc47357b398611a3f4abcb6652776ca1972fab5d2753
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.41
+status: ok
+----- stdout -----
+GAUGE ALGEBRA PARENT KINEMATIC BRIDGE FIREWALL
+========================================================================
+[PASS] kinematic bridge authorities are retained-grade in the live ledger
+       fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09=retained_bounded, matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08=retained_bounded, gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16=retained_no_go
+[PASS] parent note lists this firewall runner and cache
+[PASS] old unstructured link-connection convention wording is retired
+[PASS] parent note records retained-bounded local-frame link kinematics
+[PASS] parent note cites the retained-bounded kinematic bridge notes
+[PASS] MR_color and factor-locality remain open
+[PASS] factorwise subgroup selection remains open
+[PASS] chiral weak coupling and gauge dynamics remain open
+[PASS] status and audit authority are not promoted by this source change
+
+VERDICT: retained-bounded local-frame/minimal-coupling kinematics are wired into the parent gauge row, while MR_color, factorwise subgroup selection, chiral su(2)_L, and gauge dynamics remain open.
+SCORECARD PASS=9 FAIL=0
+
+----- stderr -----
+

@@ -6,10 +6,10 @@ Within-scope content (this runner's PASS gates):
   Pure intra-framework dimensional arithmetic on the staggered Dirac
   condensate-density ratio R. No PASS gate depends on the imported
   electroweak observation v_obs or the imported pre-selector value
-  v_pred. The (1/4) D=4 compression exponent is the structural
-  admission inherited from the 2026-05-10 heat-kernel + zeta-
-  regularized free-energy-density sister bounded theorem note
-  HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10.md.
+  v_pred. The (1/4) D=4 compression exponent and inverse placement are
+  now routed through the 2026-06-16 fixed-density coefficient-to-scale
+  bridge, while the physical VEV readout identification stays outside
+  this parent row.
 
 External-context block (printed, NOT PASS-load-bearing):
   v_pred = M_Pl * alpha_LM^16, v_obs = 246.22 GeV, and the residual
@@ -18,17 +18,26 @@ External-context block (printed, NOT PASS-load-bearing):
   interest; explicitly excluded from any PASS condition.
 
 This script does not derive the EW VEV from primitives. The within-
-scope load-bearing content is the four PASS conditions below; the
-deeper effective-potential-density bridge remains open.
+scope load-bearing content is the PASS-gated arithmetic below; the
+remaining open step is the physical order-parameter/readout
+identification.
 """
 
 from __future__ import annotations
 
 import math
+from pathlib import Path
 import sys
 
 import numpy as np
 
+ROOT = Path(__file__).resolve().parents[1]
+PARENT_NOTE_PATH = ROOT / "docs" / "HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md"
+COMPANION_NOTE_PATH = (
+    ROOT
+    / "docs"
+    / "HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md"
+)
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
@@ -96,6 +105,38 @@ def build_dirac_4d_apbc(Ls: int, Lt: int, u0: float, mass: float = 0.0):
 def condensate_density(Ls: int, Lt: int, u0: float, mass: float) -> float:
     D = build_dirac_4d_apbc(Ls, Lt, u0, mass)
     return float(np.trace(np.linalg.inv(D)).real / (Ls**3 * Lt))
+
+
+def check_source_firewall() -> None:
+    parent = PARENT_NOTE_PATH.read_text(encoding="utf-8")
+    companion = COMPANION_NOTE_PATH.read_text(encoding="utf-8")
+    parent_flat = " ".join(parent.split())
+    companion_flat = " ".join(companion.split())
+    check(
+        "source notes preserve parent conditional-support and companion numerical-diagnostic scope",
+        "**Type:** open_gate / conditional-support" in parent
+        and "**Claim type:** open_gate / conditional D=4 arithmetic support" in parent
+        and "proposed_claim_type: open_gate / conditional-support" in parent
+        and "proposal_allowed: false" in parent
+        and "**Type:** bounded_theorem" not in parent
+        and "proposed_claim_type: bounded_theorem" not in parent
+        and "Hierarchy Dimensional Compression Audited-Scope Narrowing Bounded Note" in companion
+        and "**Claim type:** bounded_theorem" in companion
+        and "does not propose a status promotion" in companion_flat
+        and "bounded numerical-diagnostic support note" in companion_flat
+        and "not a derivation of the dimension-4 bridge" in companion_flat,
+    )
+    check(
+        "source notes wire D=4 density-scale bridge while preserving physical VEV boundary",
+        "## 2026-06-16 bridge update: fixed-density map supplied, physical VEV premise still open" in parent
+        and "HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md" in parent
+        and "fixed-density coefficient-to-scale bridge" in parent_flat
+        and "still does not identify the electroweak VEV" in parent_flat
+        and "No new axiom, Tier-A admission, observed target, or audit status" in parent_flat
+        and "bounded numerical-diagnostic support note" in companion_flat
+        and "selected by best-match-to-`C_obs`" in companion
+        and "SCORECARD: 7 pass, 0 fail out of 7" in companion,
+    )
 
 
 def main() -> None:
@@ -189,6 +230,7 @@ def main() -> None:
         True,
         "v_obs, v_pred, C_obs are not referenced before this point",
     )
+    check_source_firewall()
 
     # ---- External context block (NOT load-bearing) ----
     print("\n" + "-" * 78)
@@ -210,13 +252,12 @@ def main() -> None:
     print("  reader-level diagnostic, not an audit-load-bearing closure.")
 
     print("\nConclusion (within-scope):")
-    print("  Under the (1/4) D=4 reading derived in the 2026-05-10 heat-")
-    print("  kernel sister bounded theorem note, the staggered condensate-")
-    print("  density residual R compresses to R^(-1/4); this is a")
-    print("  quantitatively distinct candidate from the (1/16) reading;")
-    print("  and the (1/4) is D=4-specific under the inherited per-")
-    print("  determinant readout via the algebraic identity 1/D = 4/2^D")
-    print("  at D=4. No within-scope claim depends on the imported v_obs.")
+    print("  Under the 2026-06-16 fixed-density coefficient-to-scale bridge,")
+    print("  a positive endpoint coefficient ratio R maps to the inverse")
+    print("  fourth-root scale factor R^(-1/4) at D=4. The runner checks")
+    print("  that this candidate is quantitatively distinct from the D=16")
+    print("  direct-scale alternative and that no within-scope PASS gate")
+    print("  depends on the imported v_obs.")
 
     print("\n" + "=" * 78)
     print(f"SCORECARD: {PASS_COUNT} pass, {FAIL_COUNT} fail out of {PASS_COUNT + FAIL_COUNT}")

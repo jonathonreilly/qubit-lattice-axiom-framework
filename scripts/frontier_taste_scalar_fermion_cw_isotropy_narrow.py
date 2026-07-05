@@ -9,14 +9,12 @@ exactly diagonal in (i, j) with binary-orthogonality sum giving 8 δ_{ij}.
 
 from fractions import Fraction
 from itertools import product
-import json
 import math
 from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parent.parent
 NOTE_PATH = ROOT / "docs" / "TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md"
-CLAIM_ID = "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02"
 
 PASS = 0
 FAIL = 0
@@ -170,27 +168,23 @@ check("for f(x) = x at v = 1: H_ii = 16 = 8 · 2 (closure factor)",
 
 
 # ============================================================================
-section("Part 7: audit row has restored dependencies and remains unaudited")
+section("Part 7: dependency visibility without audit-ledger status read")
 # ============================================================================
-LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
-ledger = json.loads(LEDGER.read_text())
-rows = ledger["rows"]
-claim_row = rows.get(CLAIM_ID)
-check(f"{CLAIM_ID} seeded by audit pipeline",
-      claim_row is not None,
-      detail="run docs/audit/scripts/run_pipeline.sh after editing the note")
-if claim_row is not None:
-    claim_deps = set(claim_row.get("deps", []))
-    expected_deps = {
-        "minimal_axioms_2026-05-03",
-        "staggered_dirac_realization_gate_note_2026-05-03",
-    }
-    check(f"{CLAIM_ID} has restored dependency edges",
-          expected_deps.issubset(claim_deps),
-          detail=f"deps={sorted(claim_deps)}")
-    check(f"{CLAIM_ID} remains effective-unaudited before independent audit",
-          claim_row.get("effective_status") == "unaudited",
-          detail=f"effective_status={claim_row.get('effective_status')!r}")
+check("source note names staggered-Dirac realization gate as context dependency",
+      "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md" in note_text)
+check("source note names historical minimal-axiom memo as context dependency",
+      "MINIMAL_AXIOMS_2026-05-03.md" in note_text)
+check("source note says the physical context edge is non-load-bearing",
+      "context dependency" in note_text
+      and "non-load-bearing physical-context edge" in note_text)
+runner_source = Path(__file__).read_text()
+live_status_read_tokens = [
+    "/".join(("docs", "audit")),
+    "audit" + "_ledger",
+    "effective" + "_status",
+]
+check("runner does not inspect live audit-status data",
+      not any(token in runner_source for token in live_status_read_tokens))
 
 
 print(f"\n{'='*88}\n  TOTAL: PASS={PASS}, FAIL={FAIL}\n{'='*88}")

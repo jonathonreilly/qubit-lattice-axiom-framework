@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/fractional_instanton_action_core_split_2026_06_18.py
+runner_sha256: 5027e2f591eb2112dca2345afb47f4f5cc0548ec59a0dd88e0a6e8062f7bbf01
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+FRACTIONAL INSTANTON ACTION-CORE SPLIT
+========================================================================
+[PASS] upstream action/fractional-charge authorities are retained-bounded
+       topological_instanton_textbook_infrastructure_import_note_2026-05-17=retained_bounded, instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16=retained_bounded
+[PASS] fractional action coefficient is 8*|k|/N times pi^2/g^2
+       checked N=1,2,3,4 and k=2,N=5
+[PASS] integer and half-charge limits match BPST and half-action scales
+       N=1 coeff=8, N=2 coeff=4
+[PASS] canonical g^2=1 numerical factors reproduce the parent table
+       N=2: S=39.4784, exp(-S)=7.16e-18; N=3: S=26.3189, exp(-S)=3.71e-12; N=4: S=19.7392, exp(-S)=2.68e-09
+[PASS] new note isolates only the action core as bounded support
+[PASS] parent cites action-core note, runner, and cache
+[PASS] parent preserves dilute-gas and condensate blockers
+[PASS] parent remains an open gate with no status promotion
+[PASS] new note forbids hierarchy and substrate closure
+
+VERDICT: the fractional charge/action algebra is split into a bounded support core over retained-bounded topological infrastructure; dilute-gas, determinant/measure, convergence, condensate, substrate, and hierarchy bridges remain open.
+SCORECARD PASS=9 FAIL=0
+
+----- stderr -----
+

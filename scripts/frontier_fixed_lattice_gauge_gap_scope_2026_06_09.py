@@ -4,13 +4,14 @@
 This runner supports only the narrow bounded note:
 
 * finite compact one-plaquette Wilson integrals at fixed lattice spacing;
-* leading strong-coupling area-law diagnostics for representative compact
+* leading strong-coupling one-plaquette diagnostics for representative compact
   `SU(2)` and compact `U(1)` factors;
 * explicit guardrails against Clay-continuum, physical `SU(3)` beta=6, observed
   spectrum, Planck-import, and Record-readout claims.
 
 It does not prove the Clay Yang-Mills mass-gap theorem, a physical `SU(3)` gap
-at beta=6, all-coupling confinement, or a continuum limit.
+at beta=6, a framework-native strong-coupling area-law/gap theorem,
+all-coupling confinement, or a continuum limit.
 """
 
 from __future__ import annotations
@@ -93,7 +94,7 @@ def main() -> int:
         detail=f"Z_SU2(beta=6)={z_su2:.6g}, Z_U1(beta=6)={z_u1:.6g}",
     )
 
-    section("B. Strong-coupling leading area-law diagnostics")
+    section("B. Strong-coupling leading one-plaquette diagnostics")
     strong_betas = (0.5, 1.0, 1.5)
     factors = []
     for beta in strong_betas:
@@ -111,7 +112,7 @@ def main() -> int:
         all(0 < f_su2 < 1 and 0 < f_u1 < 1 for _, f_su2, f_u1 in factors),
     )
     check(
-        "leading strong-coupling string tensions sigma=-log(factor) are positive",
+        "leading strong-coupling sigma diagnostics -log(factor) are positive",
         all(-np.log(f_su2) > 0 and -np.log(f_u1) > 0 for _, f_su2, f_u1 in factors),
     )
 
@@ -122,7 +123,7 @@ def main() -> int:
             log_w = radius * time * np.log(f_su2)
             area_ok = area_ok and abs(log_w + sigma * radius * time) < 1e-10
     check(
-        "leading Wilson-loop diagnostic has area-law algebra log W(R,T)=-sigma*R*T",
+        "toy leading-loop diagnostic has area-law-shaped algebra log W(R,T)=-sigma*R*T",
         area_ok,
     )
 

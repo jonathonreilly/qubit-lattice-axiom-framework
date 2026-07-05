@@ -156,6 +156,13 @@ def main() -> int:
           and "scheme-native framework mass definition" in note_text
           and "sector-specific mass scheme/scale and quark-sector dial parameters" in note_text,
           "quark lane stays comparator-only until sector-specific bridge exists")
+    note_flat = " ".join(note_text.split())
+    check("2026-06-12 firewall keeps quark row open until sector dial is derived",
+          "2026-06-12 Sector-Dial Source Firewall" in note_text
+          and "live blocker is a sector-specific quark mass scheme/scale and quark dial theorem" in note_flat
+          and "No retained-grade proposal or status promotion is made here" in note_flat
+          and "displayed central values remain external comparators only" in note_text,
+          "no lepton BAE transfer or quark-mass promotion")
 
     print("\n" + "=" * 72)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

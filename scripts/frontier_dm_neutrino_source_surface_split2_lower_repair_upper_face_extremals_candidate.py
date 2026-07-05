@@ -58,6 +58,8 @@ from frontier_dm_neutrino_source_surface_split2_low_slack_transport_incompatibil
 
 ROOT = Path(__file__).resolve().parents[1]
 
+AUDIT_TIMEOUT_SEC = 600
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 

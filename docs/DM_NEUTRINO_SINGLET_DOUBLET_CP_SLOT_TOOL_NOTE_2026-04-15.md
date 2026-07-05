@@ -1,5 +1,7 @@
 # DM Neutrino Singlet-Doublet CP Slot Tool
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15
 **Status:** exact structural tool identifying the minimal physical
 non-circulant CP carrier after the exact circulant no-go

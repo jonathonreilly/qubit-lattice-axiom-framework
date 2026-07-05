@@ -248,8 +248,8 @@ human judgment, the actual current surface status is **not** `retained`.
 
 **No-new-axiom/no-new-primitive rule.** The repo does NOT accept extensions to
 its axiom stack or primitive registry as part of physics-loop work. `A_min`
-means the current minimum axiom set, Lattice + Quantum + Record, NOT permission
-to enlarge it. A route or
+means the current minimum axiom set, Lattice + Qubit + Admissibility + Record,
+NOT permission to enlarge it. A route or
 counterfactual whose closure requires adopting a new axiom or new framework
 primitive is `infeasible`, regardless of how productive its consequences would
 be. The legitimate import-bearing shape is:
@@ -284,15 +284,24 @@ bounded imports. They must already be recorded in
 `docs/audit/data/axiom_premise_nodes.json`, where they chain-satisfy
 dependencies without bounding downstream rows. Tier-A admitted derivation
 targets live in `docs/audit/data/tier_a_admissions.json` and remain bounded
-until retired. Record is in the approved axiom baseline only in its narrow
-durable-realized-outcome form: it supplies durable registration of the realized
-outcome in a supplied readout context, identifies that outcome as the `K`/CPT
-orbit of the realized central sector, and keeps scalar readout finitely
-additive over finite pairwise-disjoint record collections. It does not supply
-the readout context, decomposition, `K`/CPT structure, sector-generation rule,
-weighting, normalization, probability, measurement/decoherence dynamics, time
-metric, within-sector data, occupancy rule, P2/modulus, log-det,
-source/action, scale, or arbitrary observable identification. The
+until retired. The approved axiom baseline is the current
+Lattice/Qubit/Admissibility/Record surface: no site is privileged; sites are
+distinguished by the supplied lattice structure alone; no possibility is
+privileged; possibilities are distinguished by the supplied algebraic structure
+alone; a record, when present, locks exactly one admissible local possibility;
+a site never carries more than one record; records are permanent; only records
+are readable; readout value is determined by record content alone; finite
+scalar readout is additive over
+finite pairwise-disjoint record collections; a state is a configuration of
+records; and a law privileges no states, has a supplied condition as its
+domain, and gives exactly one answer where the condition holds. It does not
+supply the readout context, decomposition, `K`/CPT structure,
+sector-generation rule, weighting, normalization, probability,
+measurement/decoherence dynamics, record-production dynamics, physical
+persistence dynamics, occurrence rule, update law, time metric, within-sector
+data, occupancy rule, P2/modulus, log-det, source/action, scale,
+state-selection rule, law-domain derivation, or arbitrary observable
+identification. The
 scale-reference primitive is the approved units primitive; do not describe it
 as a Tier-A admission or a bounded Planck import. The kinetic-isotropy
 primitive is the approved structural OS0 kinetic-form isotropy `c_t = c_s`;
@@ -306,7 +315,9 @@ Before writing a wall/import/dependency statement in `STATE.yaml`,
 use of the registered `scale_reference_primitive`, record it as an approved
 units primitive. If the only issue is use of the registered
 `kinetic_isotropy_primitive`, record it as approved structural kinetic-form
-isotropy. Keep the actual status judgment focused on any additional
+isotropy. If the only issue is use of the registered
+`realized_state_primitive`, record it as approved pointwise specialization to
+the supplied realized state. Keep the actual status judgment focused on any additional
 dimensionless dynamical quantity, selector, readout, normalization,
 probability, dynamics, closure theorem, or empirical content.
 
@@ -599,7 +610,7 @@ routes are risky.
   a sharper obstruction, a falsified premise, or a worked failed derivation
   with the exact load-bearing wall named.
 - **First-principles reset:** before the stretch attempt, write the minimal
-  allowed premise set (`A_min`: Lattice, Quantum, Record), the approved
+  allowed premise set (`A_min`: Lattice, Qubit, Admissibility, Record), the approved
   primitive set from `docs/audit/data/axiom_premise_nodes.json`, and
   forbidden imports. The attempt must not
   rely on observed target values, fitted selectors, or literature as hidden
@@ -767,12 +778,13 @@ Stop and write a clear `HANDOFF.md` when:
   campaign can produce are textbook re-verifications, near-tautological
   rescopes, or one-step variants of landed cycles, the campaign must stop
   rather than fill the cycle cap;
-- **volume cap reached**: maximum 5 PRs per 24-hour campaign on a single
-  goal-specific target unless the user has explicitly extended. After 5,
-  stop and report — do not continue past this cap on the strength of
-  earlier "keep going" affirmations. The cap exists because the marginal
-  value of cycle N+1 reliably drops below the cost of audit-lane review
-  burden once N exceeds ~5–8 in one session;
+- **(no volume cap)**: there is NO fixed PR-count cap per campaign or per
+  day (owner decision 2026-06-11; the former 5-PRs-per-24-hour volume cap
+  is removed). PR volume is gated by CONTENT, not by a counter: every PR
+  must pass the V1-V5 Promotion Value Gate, negative claims must pass
+  N1-N8, and the judgment-based cluster-cap evaluator applies from the
+  3rd PR in a parent-row family. A campaign stops on quality-gate
+  exhaustion (the two conditions above), never on a PR count;
 - **cluster cap evaluator triggered**: at the 3rd and every subsequent
   PR in a single parent-row family (`koide_*`, `dm_neutrino_*`,
   `gauge_vacuum_plaquette_*`, `ckm_*_2026-04-25`, `bridge_gap_*`, etc.)

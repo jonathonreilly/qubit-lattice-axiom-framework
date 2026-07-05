@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py
-runner_sha256: 57a7542ce7516085e721833021cea4ec864ae612f2ea8a5ce5598b3605f3ba94
+runner_sha256: 895b2071dc8a5e85bc5655c67d37d2cd7afa0f5b979dc2be1bf0b25aab6aa2ab
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.19
@@ -14,18 +14,25 @@ A1. registered single scale-reference primitive
   [PASS] scale primitive is described as units conversion / no dimensionless content  | Explicitly approved framework primitive for the single dimensionful scale reference a^{-1}. Units conversion only: carries no dimensionless content and does not assert a/l_P=1. Dependencies on this primitive chain-satisfy without bounding downstream rows.
 
 ========================================================================================
-A2. companion tick/edge packet exposed without status upgrade
+A2. kinetic-form c bridge
+========================================================================================
+  [PASS] kinetic_isotropy_primitive is registered in axiom_premise_nodes  | path=docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+  [PASS] kinetic primitive supplies c_lattice = 1 scope only  | structural kinetic-form bridge, not a physical c value
+  [PASS] source note records emergent-c-to-physical-c split  | c_lattice bridge plus SI conversion
+
+========================================================================================
+A3. companion tick/edge packet exposed as retained-bounded
 ========================================================================================
   [PASS] companion note exists  | docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md
   [PASS] companion runner exists  | scripts/min_time_step_tied_to_lattice_edge_by_locality_runner.py
   [PASS] companion cache exists  | logs/runner-cache/min_time_step_tied_to_lattice_edge_by_locality_runner.txt
   [PASS] companion cache is SHA-fresh  | 645c2764d305388a31f8537c259f119e2b6cdb080c3fb0555a448403ab5c32e4 == 645c2764d305388a31f8537c259f119e2b6cdb080c3fb0555a448403ab5c32e4
   [PASS] companion runner/cache closes its finite reachability checks  | finite BFS/cone verifier marker
-  [PASS] current ledger keeps companion boundary visible  | audit status audited_renaming; effective status audited_renaming
-  [PASS] source note does not call the companion retained  | boundary text present
+  [PASS] current ledger exposes companion as retained-grade authority  | effective status retained_bounded
+  [PASS] source note records the companion's retained-bounded effective status  | boundary text present
 
 ========================================================================================
-A3. physical-c normalization and Planck-time arithmetic
+A4. physical-c normalization and Planck-time arithmetic
 ========================================================================================
   c                 = 299792458 m/s
   l_P               = 1.616255000000e-35 m
@@ -36,14 +43,14 @@ A3. physical-c normalization and Planck-time arithmetic
   [PASS] l_P/c equals t_P at the stated <1e-7 tolerance  | rel_err=0.000e+00, tol=1.0e-07
 
 ========================================================================================
-A4. conditional minimality boundary
+A5. bounded-support minimality boundary
 ========================================================================================
-  [PASS] source note is narrowed to conditional-support boundary  | no unconditional positive theorem claim
+  [PASS] source note is updated to bounded-support re-audit scope  | no physical-c derivation claim
   [PASS] no new axiom/admission/primitive is introduced  | uses existing scale-reference primitive and companion packet
-  [PASS] safe conclusion is conditional on the tick/time bridge  | explicit conditional wording
+  [PASS] safe conclusion consumes the retained companion and explicit c conversion  | retained companion plus unit conversion
 
-runner_check_breakdown = {A: 14, B: 0, C: 0, D: 0, total_pass: 14}
-TOTAL: PASS=14 FAIL=0
+runner_check_breakdown = {A: 17, B: 0, C: 0, D: 0, total_pass: 17}
+TOTAL: PASS=17 FAIL=0
 
 ----- stderr -----
 

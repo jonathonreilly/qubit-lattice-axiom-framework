@@ -10,6 +10,20 @@ audit_required_before_effective_retained=true; bare_retained_allowed=false.
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_conditional_audit_evidence_ladder_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_conditional_audit_evidence_ladder_2026_06_06.txt)
 
+## Source boundary (2026-06-12)
+
+**Boundary:** audit-interface classifier / methodology support. Effective
+status is audit-derived; this source records only the claim boundary.
+
+The source runner checks that the classifier categories, anchors, and firewalls
+are internally consistent; it does not derive those categories from baseline
+physics or apply any audit verdict.
+
+This note may be cited for finite evidence-rung discipline and post-record
+audit hygiene. It may not be cited as a retained theorem, an independent
+derivation of probability/concentration laws, or an authority surface that
+changes row status.
+
 ## Result
 
 This block turns the post-record dynamics stack into a conditional audit

@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/tick_unitarity_from_spectrum_reflection_conjugacy_2026_06_10.py
+runner_sha256: 23dd69fbf4bc79592f3836d88493bafa18bc6a5f7e492cd55bbc405fb8c98336
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
+PART A -- isometric and anti-isometric conjugation preserve the operator norm
+==============================================================================
+  [PASS] A1 unitary conjugation: ||S T S^dag|| = ||T|| on 60 random instances
+  [PASS] A2 antiunitary conjugation: ||Q conj(T) Q^dag|| = ||T|| on 60 random instances  --  conjugation preserves singular values
+
+PART B -- forward implication: relation + contraction => unitary
+==============================================================================
+  [PASS] B1 every non-unitary invertible contraction has ||T^{-1}|| > 1 (60 instances)  --  relation forces ||T^{-1}|| = ||T|| <= 1: a-priori obstruction
+  [PASS] B2 boundary case: ||T|| = ||T^{-1}|| = 1 instances are isometric on random vectors
+  [PASS] B3 contraction family T(s): relation-satisfiability (= contractive inverse) holds exactly at the unitary point s=1
+
+PART C -- converse: every unitary admits an anti-isometric inverse-conjugacy
+==============================================================================
+  [PASS] C1 Theta = W o K o W^{-1} gives Theta U Theta^{-1} = U^{-1} on 40 random unitaries  --  spectral-frame conjugation: conj(D) = D^{-1} on the unit circle
+  [PASS] C2 the constructed Theta is an involution (Theta^2 = id) on random vectors
+
+PART D -- hostile witnesses: every hypothesis is load-bearing
+==============================================================================
+  [PASS] D/W1 scalar winding family r e^{ik} (r=0.7): contraction with winding 1  --  block01 Part E2's tunable class
+  [PASS] D/W1 norm obstruction ||T^{-1}|| = 1/r > 1: the relation is unsatisfiable for it  --  contraction alone does NOT force unitarity; the conjugacy is load-bearing
+  [PASS] D/W2 diag(2,1/2) with swap conjugacy: relation HOLDS, not a contraction, not unitary  --  the channel envelope is load-bearing
+  [PASS] D/W3 dephasing (decohering) tick is singular: the relation is unsatisfiable -- outside the class  --  open-sector CPTP ticks evade the theorem; unitarity is located exactly where spectrum-reflection holds
+
+PART E -- framework instances: the retained identities transport to tick level
+==============================================================================
+  [PASS] E1[L=8] sublattice parity: eps H eps = -H (the CPT note's C-type identity)
+  [PASS] E2[L=8] unitary-S transport: eps U eps = U^{-1} at exponential-tick level
+  [PASS] E3[L=8] antiunitary CPT-type: eps conj(H) eps = H ([Theta,H]=0, Theta = eps o K)
+  [PASS] E4[L=8] antiunitary transport: eps conj(U) eps = U^{-1} at tick level
+  [PASS] E5[L=8] conclusion instance: the tick is unitary (T^dag T = I) and ||T|| = ||T^{-1}|| = 1
+  [PASS] E6[L=8] corollary (former P3): quasi-energy spectrum is omega <-> -omega paired  --  spectral pairing follows from the unitary-S version; coherent with the dichotomy discharge
+  [PASS] E1[L=12] sublattice parity: eps H eps = -H (the CPT note's C-type identity)
+  [PASS] E2[L=12] unitary-S transport: eps U eps = U^{-1} at exponential-tick level
+  [PASS] E3[L=12] antiunitary CPT-type: eps conj(H) eps = H ([Theta,H]=0, Theta = eps o K)
+  [PASS] E4[L=12] antiunitary transport: eps conj(U) eps = U^{-1} at tick level
+  [PASS] E5[L=12] conclusion instance: the tick is unitary (T^dag T = I) and ||T|| = ||T^{-1}|| = 1
+  [PASS] E6[L=12] corollary (former P3): quasi-energy spectrum is omega <-> -omega paired  --  spectral pairing follows from the unitary-S version; coherent with the dichotomy discharge
+  [PASS] E7 dispersive licensed Bloch tick U(z)=[[0,z],[1,0]]: unitary on every fiber
+  [PASS] E8 the per-fiber inverse-conjugacy exists for it (converse construction)
+
+PART F -- coherence: the irreducibility-support witness family violates the relation
+==============================================================================
+  [PASS] F1 positive transfer e^{-E(p)} has ||T^{-1}|| > 1 strictly for every xi in the witness family  --  the c_t/c_s-tunable family is the relation-VIOLATING Euclidean sector -- no conflict
+
+PART G -- scope honesty: what is NOT proved here
+==============================================================================
+  [PASS] G1 the exponential tick leaks beyond radius 1 (|U[0,2]| > 0): tick-transport to the strict tick is a NAMED READING  --  distance-2 amplitude = 1.149e-01 (block01 Part C's point, reproduced)
+  [PASS] G2 no locality input is used by the theorem itself (hypotheses: invertibility, contraction, conjugacy only)  --  computed via the witnesses: W2 satisfies the relation with zero locality structure
+
+==============================================================================
+SCORECARD: PASS=28 FAIL=0
+==============================================================================
+
+----- stderr -----
+

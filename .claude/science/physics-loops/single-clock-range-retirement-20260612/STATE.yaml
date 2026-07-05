@@ -1,0 +1,29 @@
+loop: single-clock-range-retirement-20260612
+goal: "Retire the single-clock row's B-RANGE audit blocker without broadening the science."
+target_claim_id: axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03
+branch: physics-loop/single-clock-axis-range-20260612
+base: origin/main@7a899bb5d
+mode: run
+cycle_count: 1
+active_route: "Replace declared B-RANGE with retained-bounded free-sector quasilocal LR supplier."
+actual_current_surface_status: bounded-support
+conditional_surface_status: "Axis-conditional single-clock theorem; propagation supplied only on free U=1 bilinear exact-log sector."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md
+  - scripts/axiom_first_single_clock_codimension1_evolution_check.py
+open_imports:
+  - "B-AXIS remains declared: one supplied blocked time step, one declared evolution axis/transfer construction, and no independent commuting clock factor."
+retired_imports:
+  - "B-RANGE removed from the current claim; free-sector propagation now cites FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md."
+checks:
+  - "python3 scripts/axiom_first_single_clock_codimension1_evolution_check.py -> TOTAL: PASS=44 FAIL=0"
+  - "python3 scripts/free_bilinear_quasilocal_lr_bridge_2026_06_10.py -> TOTAL: PASS=5 FAIL=0"
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Stage, commit, push, and open a review PR."
+stop_condition: "Coherent science block packaged for reviewer/auditor; remaining B-AXIS premise is explicitly outside this block."

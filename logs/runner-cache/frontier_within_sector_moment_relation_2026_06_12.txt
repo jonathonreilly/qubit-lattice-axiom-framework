@@ -1,0 +1,82 @@
+===== runner cache v1 =====
+runner: scripts/frontier_within_sector_moment_relation_2026_06_12.py
+runner_sha256: fb28b9fd46b108fdcb63bf54062b28514a01b8d2c3feb705a564b8ef0e1dcbea
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 5.12
+status: ok
+----- stdout -----
+==============================================================================
+Y3 within-sector remainder moment table
+==============================================================================
+PIN: L=3, K_occ=5, eps=0.6, tau=0.35, seeds=4242/99/7, depth cap=12, k=3 sectors
+[PASS] dense L=3 build has the pinned 9-mode / 512-state Fock shape  (NM=9, DIM=512)
+==============================================================================
+Y3a machinery gates
+==============================================================================
+[PASS] seed 4242: rank guard stays above 1e-08  (worst min-sv=0.000480541)
+[PASS] seed 4242: no-prune guard keeps every branch norm above 1e-14  (min branch norm=0.304215)
+[PASS] seed 4242: Born weights remain normalized within 1e-10  (max |sum(w)-1|=2.665e-15)
+[PASS] seed 4242: k=3 sector adequacy has min family size >= 8 at selected depth  (selected depth=9, global R1=0.457378, sector sizes=[64, 64, 64, 64, 64, 64, 64, 64])
+[PASS] seed 99: rank guard stays above 1e-08  (worst min-sv=0.0010631)
+[PASS] seed 99: no-prune guard keeps every branch norm above 1e-14  (min branch norm=0.286215)
+[PASS] seed 99: Born weights remain normalized within 1e-10  (max |sum(w)-1|=4.885e-15)
+[PASS] seed 99: k=3 sector adequacy has min family size >= 8 at selected depth  (selected depth=7, global R1=0.056973, sector sizes=[16, 16, 16, 16, 16, 16, 16, 16])
+[PASS] seed 7: rank guard stays above 1e-08  (worst min-sv=0.000470577)
+[PASS] seed 7: no-prune guard keeps every branch norm above 1e-14  (min branch norm=0.316389)
+[PASS] seed 7: Born weights remain normalized within 1e-10  (max |sum(w)-1|=5.551e-16)
+[PASS] seed 7: k=3 sector adequacy has min family size >= 8 at selected depth  (selected depth=10, global R1=0.120490, sector sizes=[128, 128, 128, 128, 128, 128, 128, 128])
+[PASS] anchor reproduction: seed 4242/depth 9 profile and null match landed rounded values  (profile=0.556934/0.557031/0.597914; null p95=0.469418; tol=0.005)
+==============================================================================
+Y3b moment table: seed sector R1 |z2| R1^4 delta
+==============================================================================
+  seed depth sector  size       weight           R1         |z2|         R1^4         delta
+  4242     9      0    64 2.214202e-01     0.782693     0.515282     0.375290     +0.139992
+  4242     9      1    64 1.574033e-01     0.401538     0.284433     0.025996     +0.258437
+  4242     9      2    64 1.207500e-01     0.538870     0.363693     0.084321     +0.279372
+  4242     9      3    64 1.070248e-01     0.266354     0.272909     0.005033     +0.267876
+  4242     9      4    64 1.356592e-01     0.824617     0.548266     0.462390     +0.085876
+  4242     9      5    64 9.479476e-02     0.436892     0.268764     0.036433     +0.232331
+  4242     9      6    64 8.676057e-02     0.579604     0.343762     0.112857     +0.230906
+  4242     9      7    64 7.618716e-02     0.306869     0.234075     0.008868     +0.225207
+seed 4242: selected depth=9, global R1=0.457378, weighted mean delta=+0.204944, weighted mean |delta|=0.204944
+[PASS] seed 4242: permutation control relation for weighted mean |delta| is record <= null_p95  (record=0.204944, null p95=0.296861, draws=100, seed=7777)
+    99     7      0    16 1.655235e-01     0.726778     0.244497     0.279002     -0.034505
+    99     7      1    16 1.507229e-01     0.686562     0.229899     0.222187     +0.007712
+    99     7      2    16 1.245103e-01     0.108207     0.101395     0.000137     +0.101258
+    99     7      3    16 1.341634e-01     0.090775     0.122860     0.000068     +0.122792
+    99     7      4    16 1.113777e-01     0.346089     0.107133     0.014347     +0.092786
+    99     7      5    16 9.589471e-02     0.351747     0.158755     0.015308     +0.143447
+    99     7      6    16 1.072924e-01     0.822007     0.409444     0.456565     -0.047121
+    99     7      7    16 1.105151e-01     0.834074     0.434126     0.483969     -0.049843
+seed 99: selected depth=7, global R1=0.056973, weighted mean delta=+0.038059, weighted mean |delta|=0.070610
+[PASS] seed 99: permutation control relation for weighted mean |delta| is record <= null_p95  (record=0.070610, null p95=0.312038, draws=100, seed=7777)
+     7    10      0   128 1.209663e-01     0.821900     0.640587     0.456327     +0.184260
+     7    10      1   128 1.272028e-01     0.464763     0.397672     0.046658     +0.351013
+     7    10      2   128 1.078570e-01     0.360314     0.301503     0.016855     +0.284648
+     7    10      3   128 1.420415e-01     0.426518     0.247503     0.033094     +0.214409
+     7    10      4   128 1.109996e-01     0.624646     0.356009     0.152242     +0.203767
+     7    10      5   128 1.137889e-01     0.039256     0.252372     0.000002     +0.252369
+     7    10      6   128 1.203252e-01     0.428925     0.111904     0.033847     +0.078056
+     7    10      7   128 1.568187e-01     0.635841     0.278394     0.163454     +0.114940
+seed 7: selected depth=10, global R1=0.120490, weighted mean delta=+0.206847, weighted mean |delta|=0.206847
+[PASS] seed 7: permutation control relation for weighted mean |delta| is record <= null_p95  (record=0.206847, null p95=0.289439, draws=100, seed=7777)
+[PASS] all 24 sector deltas are finite computed moment-relation deviations  (finite=24/24)
+==============================================================================
+Y3c verdict: measured delta pattern
+==============================================================================
+[PASS] Y3c the measured pattern: raw |delta| > 0.05 on a MAJORITY of sectors (sizeable raw deviations) while the weighted mean stays below the permutation null at every seed -- no structure resolvable BEYOND relabeling noise at these family sizes (power-limited consistency)  (large=20/24, weighted mean delta=+0.149950, weighted mean |delta|=0.160800)
+==============================================================================
+Y3d permutation-control summary
+==============================================================================
+seed 4242: weighted mean |delta|=0.204944, permuted-label null p95=0.296861, relation=record <= null_p95
+seed 99: weighted mean |delta|=0.070610, permuted-label null p95=0.312038, relation=record <= null_p95
+seed 7: weighted mean |delta|=0.206847, permuted-label null p95=0.289439, relation=record <= null_p95
+==============================================================================
+SCOPE
+==============================================================================
+First distributional characterization of the within-sector remainder at the L=3 depth-stable most-spread events; k=3 adequate sectors only; Born cap and named instruments inherited; trajectories are realized-state data; audit lane grades statuses.
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

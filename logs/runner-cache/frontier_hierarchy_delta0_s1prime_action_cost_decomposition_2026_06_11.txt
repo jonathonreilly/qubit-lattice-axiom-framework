@@ -1,0 +1,88 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_delta0_s1prime_action_cost_decomposition_2026_06_11.py
+runner_sha256: 30ffe26bcd0d2d84a3e2fa7a30228554691fb70e4ed3e55f09099b0313f1fc4c
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+ frontier_hierarchy_delta0_s1prime_action_cost_decomposition_2026_06_11.py
+ Block10a of the DELTA0 attachment campaign: the S1' composite target
+ rewritten EXACTLY as a per-decoupling action cost Delta_S = ln(4 pi) +
+ 2 ln(u_0) = 2.270081 (both summands landed as values), the full-chain
+ action budget (16 kernel normalizations), and the landed-supplier
+ displacement scan.  REFORMULATION, not progress on the attachment itself.
+ Parent note: docs/HIERARCHY_DELTA0_S1PRIME_ACTION_COST_DECOMPOSITION_
+              NOTE_2026-06-11.md
+==============================================================================
+
+--- Section A [C]/[A]/[B]: T1 — exact rewrite of the reduced target as a per-decoupling action cost ---
+  [PASS][C] A1 exact multiplicative skeleton (Fraction stand-ins q for 4 pi, u for u_0; 4 rational test points): 1/alpha_s = q u^2, 1/alpha_LM = q u = (q u^2)/u, (q u)^16 = q^16 u^16, alpha_LM^16 = alpha_s^16 u^16 — the additive action identities of A2/B1/B4/B5 are the exact logs of these  (exact Fraction arithmetic)
+  [PASS][A] A2 ACTION-COST IDENTITY: Delta_S := ln(1/alpha_s) = ln(4 pi) + 2 ln(u_0) = ln(4 pi) + (1/2) ln(<P>) = 2.531024 + (-0.260943) = 2.270081 — three routes agree < 1e-12; the composite target is ADDITIVE in action units  (Delta_S = 2.2700809614)
+  [PASS][A] A3 sign honesty + inversion: u_0 < 1 so ln(u_0) < 0 (the tadpole REDUCES the cost of the 4 pi piece); 1/alpha_s = 4 pi u_0^2 < 1e-12 relative; exp(-Delta_S) = 0.1033038 = alpha_s < 1e-12  (exp(-Delta_S) = 0.1033038)
+  [PASS][B] A4 both summands landed AS VALUES, suppliers on disk: ln(4 pi) — the Plancherel/Green-kernel bridge (alpha_bare = 1/(4 pi) at g_bare = 1, the 4 pi's only landed supplier); (1/2) ln(<P>) — the B1-licensed plaquette (<P> = 0.5934, 'admitted comparison/reuse number')
+  [PASS][B] A5 reformulation honesty: parent note on disk declares the rewrite a REFORMULATION ('not progress on the attachment'), the 'narrowest posing' of B4 to date, and that it 'does not close the DELTA0 gate'; forbidden closure tokens absent  (missing = [], hit = [])
+
+--- Section B [A]/[B]: T2 — full-chain action bookkeeping (exact over declared inputs; class-fenced, no closure claim) ---
+  [PASS][A] B1 FULL-CHAIN IDENTITY: ln(M_Pl/v_cand) = 16 [ln(4 pi) + ln(u_0)] - (1/4) ln(7/8) = 38.442225, verified < 1e-12 against the direct evaluation of v_cand/M_Pl = (7/8)^(1/4) alpha_LM^16  (decomp = 38.442224515163, direct = 38.442224515163)
+  [PASS][A] B2 per-rung cross-check: ln(4 pi) + ln(u_0) = ln(1/alpha_LM) = 2.400553 — the YT-P2 note's retained per-rung log-interval 2.4006 at its quoted 4 d.p.; 16 rungs span 38.408842  (rung = 2.4005526042)
+  [PASS][B] B3 chain objects on disk: YT-P2 retained per-rung constant 'ln(alpha_LM) = -2.4006' present; the honest-status note's declared candidate map v_cand = M_Pl x (7/8)^(1/4) x alpha_LM^16 present (declared boundary inputs, cited not asserted)
+      per-rung budget: kernel ln(4 pi) = 2.531024 (105.4% of the rung), tadpole ln(u_0) = -0.130472 (-5.4%)
+      full-chain budget: kernel 16 ln(4 pi) = 40.4964, tadpole 16 ln(u_0) = -2.0875, selector -(1/4) ln(7/8) = +0.033383, total = 38.4422
+  [PASS][A] B4 HEADLINE (exact bookkeeping over declared inputs, NOT a derivation): the 4 pi kernel normalization ALONE supplies 16 x ln(4 pi) = 40.4964 of the total 38.4422 log-suppression (105.3%) — MORE than all of it; the tadpole supplies the negative correction (-2.0875) and the (7/8)^(1/4) selector a small POSITIVE one (+0.0334: it suppresses v_cand further).  The hierarchy's magnitude, in the framework's own decomposition, IS sixteen kernel normalizations  (16 ln(4 pi) = 40.4964 > total = 38.4422; sum closes < 1e-12)
+  [PASS][A] B5 transport split of the rung (block02): rung = Delta_S + ln(1/u_0) — determinant-supplied share ln(1/u_0) = +0.130472 (the block determinant's u_0 per rung), transport-required share Delta_S = 2.270081 (the open attachment) — closes < 1e-12; NOTE the u_0 role flips sign between the two exact rung splits (kernel + tadpole vs determinant + transport)  (2.270081 + 0.130472 = 2.400553)
+
+--- Section C [A]/[B]: T3 — landed-supplier displacement scan vs Delta_S = 2.2701 and the rung 2.4006 ---
+  [PASS][A] C1 scan (a), block01 per-mode determinant log: ln(2 u_0) = 0.562676; displacement from Delta_S = 1.707405, from the rung = 1.837877 = ln(2 pi) EXACTLY (rung - ln(2 u_0) = ln(4 pi u_0/(2 u_0)) = ln(2 pi))  (ln(2 u_0) = 0.562676)
+  [PASS][A] C2 scan (b), block02 ratio-normalized per-mode log: ln(u_0) = -0.130472; displacement from Delta_S = 2.400553 = the RUNG exactly (Delta_S - ln u_0 = ln(4 pi) + ln(u_0)), and from the rung = 2.531024 = ln(4 pi) exactly — both identities < 1e-12  (ln(u_0) = -0.130472)
+  [PASS][A] C3 scan (c), per-mode BZ Haar cells: ln((2 pi)^4/16) = 4 ln(pi) = 4.578920 (displacement from Delta_S = +2.308839); 3D variant ln((2 pi)^3/8) = 3 ln(pi) = 3.434190 (displacement +1.164109) — both far above; note (2 pi/2)^d = pi^d exactly  (h4 = 4.578920, h3 = 3.434190)
+  [PASS][A] C4 scan (d), the kernel normalization ln(4 pi) = 2.531024 itself: displacement from Delta_S = 0.260943 = |2 ln u_0| EXACTLY (exp gap = u_0^2 = 0.770325, i.e. the kernel normalization ALONE overshoots Delta_S by exactly the two-link tadpole; 11.5% of Delta_S in action units); displacement from the rung = 0.130472 = |ln u_0| exactly.  NOT numerology — DEFINITIONALLY EXACT: 'one kernel normalization per decoupling, tadpole-corrected by the two dressed links' is the S1' composite target RESTATED, Delta_S = ln(4 pi) + 2 ln(u_0) being its definition  (gap = 0.260943 = |2 ln u_0|, exp gap = 0.770325 = u_0^2)
+  [PASS][A] C5 scan (e), Z^3 return Green value (computed here, deterministic): G(0) via half-shifted BZ sums at L = 24, 32, 40 with two-point Richardson in 1/L — pair estimates agree < 2e-5, production G(0) = 0.252736 matches the parallel-reference Watson value 0.2527310098 within the declared 5e-5; ln(1/G(0)) = 1.375409, displacement from Delta_S = 0.894672  (G(0) = 0.2527362 (pairs 0.2527423/0.2527362), ln(1/G(0)) = 1.375409)
+  [PASS][B] C6 scan (f), block08 one-loop bubble constant c0 = 0.0266477 (declared input, literal verified on disk in the block08 note): ln(1/c0) = 3.625052, displacement from Delta_S = 1.354971  (ln(1/c0) = 3.625052)
+  [PASS][A] C7 scan (g), strong-coupling weights: ln(N_c) = 1.098612 (displacement from Delta_S = 1.171469), ln(2 N_c) = 1.791759 (0.478321), ln(N_c^2) = 2.197225 (0.072856 — the NEAREST scanned object); exp(0.072856) = 1.075576 = block09's flagged 4 pi u_0^2/9 EXACTLY: the 7.56% 1/N_c^2 numerology-risk observation RESTATED in action units, nothing more  (exp gap = 1.075576)
+  [PASS][B] C8 cross-reference on disk: block09's §5 numerology-risk flag for the 1/N_c^2 proximity is present ('4 pi u_0^2/9 = 1.075576', 'fails at 7.56%', 'NUMEROLOGY RISK') — C7 restates that flagged observation in action units and adds NO content to it
+      displacement table (action units, vs Delta_S = 2.270081 / rung = 2.400553):
+        (a) ln(2 u_0)            = +0.562676   |gap Delta_S| = 1.707405   |gap rung| = 1.837877
+        (b) ln(u_0)              = -0.130472   |gap Delta_S| = 2.400553   |gap rung| = 2.531024
+        (c) ln((2 pi)^4/16)      = +4.578920   |gap Delta_S| = 2.308839   |gap rung| = 2.178367
+        (c) ln((2 pi)^3/8)       = +3.434190   |gap Delta_S| = 1.164109   |gap rung| = 1.033637
+        (d) ln(4 pi)             = +2.531024   |gap Delta_S| = 0.260943   |gap rung| = 0.130472
+        (e) ln(1/G(0))           = +1.375409   |gap Delta_S| = 0.894672   |gap rung| = 1.025144
+        (f) ln(1/c0)             = +3.625052   |gap Delta_S| = 1.354971   |gap rung| = 1.224500
+        (g) ln(N_c)              = +1.098612   |gap Delta_S| = 1.171469   |gap rung| = 1.301940
+        (g) ln(2 N_c)            = +1.791759   |gap Delta_S| = 0.478321   |gap rung| = 0.608793
+        (g) ln(N_c^2)            = +2.197225   |gap Delta_S| = 0.072856   |gap rung| = 0.203328
+  [PASS][A] C9 VERDICT LOGIC: NO scanned landed/computable per-mode action-like quantity matches Delta_S inside the declared action tolerance 0.01 (1% multiplicative) — nearest is ln(N_c^2) at 0.0729, 7.3x outside; the structurally exact decomposition remains (d) + tadpole, Delta_S = ln(4 pi) + 2 ln(u_0), with both values landed and the attachment open  (min gap = 0.072856 ((g) ln(N_c^2)))
+
+--- Section D [B] + residuals: T4 — the open attachment theorem (boundary-setting, not speculation) ---
+  [PASS][B] D1 boundary-setting honesty: parent note on disk states the open theorem ('exactly one static-source kernel readout' across 'exactly two tadpole-dressed links'), its testable consequences, and its kill criterion ('k-dependent per-rung cost'), all fenced as boundary-setting  (missing = [])
+
+  RESIDUAL (declared-open): the PER-THRESHOLD ATTACHMENT theorem is UNSUPPLIED — the narrowest posing of B4 to date: 'each taste-threshold decoupling inserts exactly one static-source kernel readout (supplying ln 4 pi) across exactly two tadpole-dressed links (supplying 2 ln u_0)'.  Testable consequences if derived: the per-rung cost is exactly Delta_S = 2.270081 INDEPENDENT of the threshold index k (consistent with the exact integer-16 power law); it predicts ZERO per-rung drift, contrastable with any future MC threshold measurement; and it ties B4 closure to the SAME I1/M1 Green-kernel/Plancherel audit surface that closed the alpha_bare VALUE — one audit surface would carry both.  KILL CRITERION for this formulation: any derivation producing a k-dependent per-rung cost, or a kernel-insertion count different from 1 per threshold, eliminates it.
+  RESIDUAL (declared-open): the DELTA0/B4 magnitude gate (HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) remains OPEN: this block REWRITES the block02 reduced target in action units (a reformulation with both summands landed as values) and scans the landed suppliers for a match (none inside tolerance); it supplies NO attachment rule and is NOT progress on the attachment itself.
+
+--- Terminal class-D fence: external comparators ---
+  (No PDG quantity is needed or consumed by this decomposition; the action
+   bookkeeping and the displacement scan are internal structure only.)
+  [PASS][D] G1 self-scan: the PDG VEV literal appears ZERO times in this runner's source — no comparator consumed anywhere
+
+==============================================================================
+ Breakdown: A=13 B=6 C=1 D=1 RESIDUAL=2
+ TOTAL: PASS=21 FAIL=0
+ VERDICT: established (bounded, exact arithmetic over declared inputs): the
+   block02 reduced target is EXACTLY the per-decoupling action cost Delta_S
+   = ln(4 pi) + 2 ln(u_0) = ln(4 pi) + (1/2) ln(<P>) = 2.270081, additive
+   with both summands landed as values; the full hierarchy suppression is
+   exact bookkeeping 16 [ln(4 pi) + ln(u_0)] - (1/4) ln(7/8) = 38.4422, of
+   which the kernel normalization alone supplies 40.4964 — sixteen kernel
+   normalizations, tadpole-corrected; and NO scanned landed supplier matches
+   Delta_S inside 0.01 action units (nearest: ln(N_c^2) at 0.0729, block09's
+   flagged observation restated).  NOT established: the per-threshold
+   attachment theorem (one kernel readout across two dressed links per
+   decoupling) — declared open with its kill criterion; this is the
+   narrowest posing of B4 to date, a reformulation, NOT progress on the
+   attachment itself.  DELTA0 stays open.
+==============================================================================
+
+----- stderr -----
+

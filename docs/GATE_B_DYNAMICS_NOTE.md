@@ -6,6 +6,110 @@ primitive-to-readout bridge
 **Claim type:** open_gate
 **Audit-scope narrow:** 2026-06-08
 
+## 2026-06-16 weak-field source/action interface split
+
+The post-audit source/action repair
+[`GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md`](GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md)
+splits `GB-S1` into two pieces:
+
+| ID | Piece | Current status |
+|---|---|---|
+| `GB-S1a` | linear weak-field test-action form `S = L (1 - phi)` | bounded-support interface from the retained-bounded weak-field source-response bridge |
+| `GB-S1b` | runner scalar `phi_GB(x)=strength/(r(x,mass)+0.1)`, finite-core regulator, and normalization | still supplied Gate-B runner data |
+
+This narrows the earlier black-box boundary without closing Gate B. The parent
+Gate B row remains an open gate: it still does not derive a Gate B dynamics
+theorem, the `GB-S1b-b` physical scalar source/boundary/regulator/normalization,
+`GB-S2b` physical-readout semantics, or the `GB-S3b` physical-growth selector
+from retained framework primitives. These splits add no new axiom, Tier-A
+admission, or audit-status change.
+
+## 2026-06-18 finite path-sum propagation split
+
+The source-side bridge
+[`GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+splits `GB-S2` into two pieces:
+
+| ID | Piece | Current status |
+|---|---|---|
+| `GB-S2a` | finite complex-amplitude propagation on the supplied layered DAG | bounded-support source bridge: the runner recursion is exactly the finite path-sum transfer over unblocked directed paths, with a finite linear transfer operator and normalized terminal detector distribution once a detector set is supplied |
+| `GB-S2b` | physical detector-window mass-gain, `TOWARD`, and `F~M` readout semantics | still supplied Gate-B runner data |
+
+This removes a bookkeeping ambiguity in the propagation packet: the update rule
+is not an opaque numerical procedure. It is the exact finite path expansion of
+the declared edge kernel on the declared finite DAG. The physical interpretation
+of the detector window, `TOWARD` sign, and `F~M` slope remains open. This
+update does not derive `GB-S1b`, `GB-S3`, a physical gravity readout, or a full
+Gate B dynamics theorem.
+
+## 2026-06-18 local stencil connectivity split
+
+The source-side bridge
+[`GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+splits `GB-S3` into two pieces:
+
+| ID | Piece | Current status |
+|---|---|---|
+| `GB-S3a` | label/offset-preserving forward stencil on the finite `Z^3` slab | bounded-support source bridge: the stencil is a finite-range local lattice relation, translation-covariant in the interior, boundary-clipped on the finite slab, and exactly matches the adjacency used by `scripts/gate_b_connectivity_tolerance.py` |
+| `GB-S3b` | physical selection or dynamical generation of that stencil as the Gate B growth rule | still open Gate-B dynamics data |
+
+This removes one avoidable ambiguity in the generated-connectivity packet: the
+runner's positive label/offset family is not an arbitrary KNN or nonlocal graph
+choice. It is the finite-slab restriction of a fixed local stencil on the
+framework lattice. The stronger physical-growth claim remains open. This update
+does not derive `GB-S1b`, `GB-S2`, a physical gravity readout, or a full Gate B
+dynamics theorem.
+
+## 2026-06-18 finite radial scalar split
+
+The source-side bridge
+[`GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+splits `GB-S1b` into two pieces:
+
+| ID | Piece | Current status |
+|---|---|---|
+| `GB-S1b-a` | finite runner scalar `phi_GB(x)=strength/(r(x,mass)+0.1)` on the supplied coordinate slab | bounded-support source bridge: the scalar is positive, finite, radially monotone in the supplied Euclidean coordinate distance, exactly matches the runner helper, and is linear in the source-strength normalization |
+| `GB-S1b-b` | physical Poisson/source equation, boundary condition, regulator selection, and absolute normalization | still open Gate-B runner/physics data |
+
+This removes one avoidable black-box part of the source packet: the runner
+scalar is now an explicit finite radial field with a checked regulator and
+linear normalization dependence. The stronger physical claim remains open:
+this update does not derive the Poisson PDE, the `0.1` finite-core regulator,
+the source strength, `GB-S2` propagation/readout semantics, `GB-S3`
+generated-connectivity rule, a physical gravity readout, or a full Gate B
+dynamics theorem.
+
+## 2026-06-17/18 context-independence no-go
+
+The source-side no-go
+[`GATE_B_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md`](GATE_B_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md)
+proves that the remaining physical packet pieces are not hidden content of the
+current Lattice + Quantum + Record axiom surface. Two completions can share the
+same fixed `Z^3` nearest-neighbor patch while assigning different physical
+scalar source/regulator/normalization choices, different detector/readout
+windows, and different generated-growth rules.
+
+This does not refute the finite Gate B numerics or the bounded-support split
+notes above. It says the current axioms cannot derive `GB-S1b-b`, `GB-S2b`, or
+`GB-S3b`. The row therefore stays an open-gate bounded generated-geometry
+source index until a separate local-growth/dynamics/readout theorem lands.
+This no-go adds no axiom, Tier-A admission, Gate B closure, or audit-status
+change.
+
+## 2026-06-12 audit firewall: source index, not dynamics closure
+
+The audited missing bridges remain `GB-S1b-b`, `GB-S2b`, and `GB-S3b`: the Gate
+B runner's physical scalar source/boundary/regulator/normalization remains
+supplied, physical detector-window/TOWARD/`F~M` semantics remain supplied, and
+physical selection/dynamical generation of that stencil remains supplied. The
+primary connectivity replay and companion manifest verify finite
+generated-geometry behavior inside that supplied packet only.
+
+This row is therefore an **open-gate source index**. It does not derive a
+Gate B dynamics theorem, physical gravity/readout bridge, or primitive local
+growth rule from retained framework primitives, and it introduces no new
+axiom, Tier-A admission, or audit-status change.
+
 ## 2026-06-08 Audit-Scope Narrow
 
 This row is a source-side index over bounded generated-geometry numerical
@@ -38,16 +142,17 @@ index rather than as an independent primitive-to-physical-gravity bridge.
 
 | ID | Supplied ingredient | Row-local definition | Status boundary |
 |---|---|---|---|
-| `GB-S1` | valley-linear source/action rule | The runners use the scalar field `f(x) = strength/(r(x, mass)+0.1)` and the forward phase action `S = L(1 - f)` with the declared constants in the paired scripts. | Runner-supplied source/action rule for this packet only; not derived from retained primitives and not a new axiom. |
-| `GB-S2` | propagation/readout semantics | The runners use forward-layer path propagation, a central blocked barrier, detector-window mass gain, `TOWARD` sign, and local `F~M` log-slope readouts. | Runner-supplied operational readout for bounded numerical certificates; not a retained physical-gravity readout bridge. |
-| `GB-S3` | generated-connectivity rule | The positive generated-geometry rows use label/offset-preserving forward connectivity with drift/restore companions; KNN and non-label candidates are recorded as controls or bounded negatives where their sign/`F~M` package weakens. | Supplied generated-family rule for this packet only; not yet derived from a local retained growth primitive. |
+| `GB-S1` | valley-linear source/action rule | The runners use the scalar field `f(x) = strength/(r(x, mass)+0.1)` and the forward phase action `S = L(1 - f)` with the declared constants in the paired scripts. | Split by the 2026-06-16 interface note and 2026-06-18 scalar bridge: the linear `S=L(1-phi)` response form has bounded weak-field support (`GB-S1a`), and the finite radial runner scalar has bounded-support as checked algebra on the supplied coordinate slab (`GB-S1b-a`), but the physical Poisson/source equation, regulator choice, and absolute normalization remain supplied (`GB-S1b-b`). Not fully derived from retained primitives and not a new axiom. |
+| `GB-S2` | propagation/readout semantics | The runners use forward-layer path propagation, a central blocked barrier, detector-window mass gain, `TOWARD` sign, and local `F~M` log-slope readouts. | Split by the 2026-06-18 finite path-sum bridge: the finite propagation recursion itself is exact path-sum algebra (`GB-S2a`), but the central barrier, detector-window mass gain, `TOWARD`, and `F~M` physical readout semantics remain supplied (`GB-S2b`). |
+| `GB-S3` | generated-connectivity rule | The positive generated-geometry rows use label/offset-preserving forward connectivity with drift/restore companions; KNN and non-label candidates are recorded as controls or bounded negatives where their sign/`F~M` package weakens. | Split by the 2026-06-18 local-stencil bridge: the label/offset stencil itself has bounded-support as a finite-range `Z^3` local relation matching the runner adjacency (`GB-S3a`), but the physical selection/dynamical generation of that stencil remains supplied (`GB-S3b`). |
 
 The direct source packet is therefore:
 
 ```text
-I_GateB = (GB-S1 valley-linear source/action,
-           GB-S2 propagation/readout semantics,
-           GB-S3 generated-connectivity rule,
+I_GateB = (GB-S1 weak-field action plus finite radial scalar
+              with supplied physical source/boundary/regulator/normalization,
+           GB-S2 finite propagation plus supplied physical readout semantics,
+           GB-S3 local stencil plus supplied physical-growth selector,
            frozen seed/geometry rows recorded in the companion notes).
 ```
 
@@ -424,3 +529,15 @@ So the clean hierarchy is now:
   the label-connectivity family
 - restore still matters if the goal is to preserve the broader lattice-like
   interference / decoherence package
+
+## 2026-06-15 audit-unlock residual certificate
+
+This source update re-opens the row as a dynamics-harness packet, not a Gate-B
+foundation theorem. The runner's graph-family propagation and
+connectivity-tolerance checks remain useful diagnostics.
+
+The live blocker is the three-part `I_GateB` input set: the valley-linear
+source/action rule, propagation and readout semantics, and genericity or
+exhaustiveness of the tested family. Until those are derived or approved,
+the harness cannot establish Gate-B dynamics as framework-native. This repair
+adds no Gate-B axiom, family-genericity assumption, or audit status.

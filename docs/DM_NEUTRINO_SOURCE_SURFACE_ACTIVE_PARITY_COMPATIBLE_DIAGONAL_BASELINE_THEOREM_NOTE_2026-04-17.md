@@ -1,5 +1,7 @@
 # DM Neutrino Source-Surface Active Parity-Compatible Diagonal Baseline Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-17  
 **Status:** exact active-parity baseline theorem on the live `2`-real active
 pair  

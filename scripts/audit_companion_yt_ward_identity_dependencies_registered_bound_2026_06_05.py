@@ -20,7 +20,7 @@ AC_phi_lambda. It reproves, from framework primitives + exact group
 theory + elementary polynomial algebra, exactly the two load-bearing
 facts the parent's core identity (T1)
 `y_t_bare = g_bare / sqrt(2 N_c) = g_bare / sqrt(6)` relies on, and shows
-that each of (T1)'s two load-bearing dependencies is now a *registered*
+that each of (T1)'s load-bearing dependency routes now has a *registered*
 source:
 
   Dep 1 (staggered-Dirac / canonical Q_L surface) = AC_phi_lambda, the
@@ -28,10 +28,13 @@ source:
         `staggered_dirac_realization_gate_note_2026-05-03`
         (canonical parent: docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md).
 
-  Dep 2 (g_bare = 1 canonical-surface convention) = a vacuous rescaling
-        convention whose retained algebraic basis is
+  Dep 2 (g_bare = 1 canonical-surface convention) = (a) a vacuous
+        rescaling/F-flat convention whose retained algebraic basis is
         `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`
-        (docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md).
+        (docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md)
+        plus (b) the retained finite-link coordinate-rigidity convention
+        authority `g_bare_rigidity_theorem_note`
+        (docs/G_BARE_RIGIDITY_THEOREM_NOTE.md).
 
 Reprove-and-cite discipline
 ---------------------------
@@ -64,9 +67,12 @@ Block plan
   Block 8  Normalized form factor F := y_t_bare / g_bare is g_bare-FLAT
            (independent of g_bare): the g_bare = 1 dependence is vacuous.
   Block 9  Dependency-registration check: Dep 1 is a registered Tier-A
-           derivation target; Dep 2's basis is retained-grade in the ledger.
-  Block 10 Re-audit CASE arithmetic: a clean bounded_theorem row whose two
-           one-hop deps are {Tier-A derivation target, retained note}
+           derivation target; Dep 2's abstract basis and finite-link
+           convention authority are retained-grade in the ledger and exposed
+           as one-hop note links.
+  Block 10 Re-audit CASE arithmetic: a clean bounded_theorem row whose
+           one-hop deps are {Tier-A derivation target, retained rescaling
+           note, retained convention note}
            is a registered Tier-A-bounded candidate under the published
            chain rule. (No status is written.)
 
@@ -88,6 +94,7 @@ import sympy as sp
 REPO_ROOT = Path(__file__).resolve().parents[1]
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 TIER_A_PATH = REPO_ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
+NOTE_PATH = REPO_ROOT / "docs" / "YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md"
 
 PASS = 0
 FAIL = 0
@@ -435,6 +442,7 @@ TARGET_ROW = "yt_ward_identity_derivation_theorem"
 
 tier_a = json.loads(TIER_A_PATH.read_text(encoding="utf-8"))
 ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
+note_text = NOTE_PATH.read_text(encoding="utf-8")
 rows = ledger["rows"]
 RETAINED_GRADES = {"retained", "retained_no_go", "retained_bounded"}
 
@@ -459,6 +467,24 @@ check(
     f"in conventions={GBARE_CONVENTION in conventions}, "
     f"ledger_effective_status:{rows.get(GBARE_CONVENTION, {}).get('effective_status')}",
 )
+check(
+    "Source note exposes G_BARE_RIGIDITY_THEOREM_NOTE.md as a one-hop convention dependency",
+    "G_BARE_RIGIDITY_THEOREM_NOTE.md" in note_text
+    and GBARE_CONVENTION in note_text,
+    "the re-audit blocker requested the retained convention/rigidity edge",
+)
+check(
+    "Source note preserves the finite-link scope boundary for the rigidity dependency",
+    all(
+        needle in note_text
+        for needle in [
+            "no Wilson-action/`β`",
+            "continuum",
+            "phenomenological coupling claim is",
+        ]
+    ),
+    "prevents using rigidity as a Wilson/beta or measured-coupling theorem",
+)
 # Honesty: the parent target row is itself conditional -> must be backticked,
 # never linked, by the citing note.  Verify it is NOT retained-grade so the
 # note's discipline (backtick the target) is the correct call.
@@ -474,7 +500,8 @@ banner("BLOCK 10: Re-audit CASE arithmetic (no status is written)")
 # ==========================================================================
 # Mirror the PUBLISHED compute_effective_status chain rule for a clean
 # bounded_theorem row whose one-hop deps are exactly:
-#   {Dep1 = Tier-A derivation target, Dep2 = retained note}.
+#   {Dep1 = Tier-A derivation target, Dep2 = retained rescaling note,
+#    Dep2 convention edge = retained rigidity note}.
 # Rule (compute_effective_status.clean_status):
 #   - a dep that is retained-grade  -> satisfies, does not bound;
 #   - a dep that is a Tier-A derivation target -> satisfies AND bounds to
@@ -495,9 +522,9 @@ def resolve_clean_bounded(dep_ids: list[str]) -> str:
     return "retained_bounded" if has_tier_a else "retained"
 
 
-resolved = resolve_clean_bounded([DEP1_TIER_A, DEP2_BASIS])
+resolved = resolve_clean_bounded([DEP1_TIER_A, DEP2_BASIS, GBARE_CONVENTION])
 check(
-    "Clean bounded_theorem row with deps {Tier-A target, retained note} -> Tier-A-bounded candidate",
+    "Clean bounded_theorem row with deps {Tier-A target, retained rescaling note, retained convention note} -> Tier-A-bounded candidate",
     resolved == "retained_bounded",
     f"resolved = {resolved} (published compute_effective_status rule)",
 )
@@ -505,7 +532,7 @@ check(
 # row, the chain would NOT close (the conditional dep is not retained-grade
 # nor a Tier-A target) -> retained_pending_chain.  This documents WHY the note
 # backticks the target row.
-resolved_bad = resolve_clean_bounded([DEP1_TIER_A, DEP2_BASIS, TARGET_ROW])
+resolved_bad = resolve_clean_bounded([DEP1_TIER_A, DEP2_BASIS, GBARE_CONVENTION, TARGET_ROW])
 check(
     "Counterfactual: linking the conditional target row would cap the row (not Tier-A-bounded)",
     resolved_bad == "retained_pending_chain",

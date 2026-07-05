@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/frontier_rd_bridge_anatomy_agreement_conditioning_2026_06_12.py
+runner_sha256: 402fddd6a9bbe054b5813bd0de4696d21e9859f149c7df2e775ad62e7ee236ce
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.41
+status: ok
+----- stdout -----
+[PASS] G1 idempotence of pinching on generic 3x3 M - D(D(M)) = D(M) entrywise
+[PASS] G1 weight corollary for second pinching - Tr(P_i rho P_i) unchanged under D and D o D
+[PASS] G2a agreement conditioning sends x to x^2 - x = p_d/p_s
+[PASS] G2b x = 2r gives r -> 2r^2 both ways - coordinate conversion exact
+[PASS] G2c inverse direction is g(r) = sqrt(r/2) - x -> sqrt(x) converted to r
+[PASS] G2d fixed points are 0 and 1/2 plus projective infinity - finite=[0, 1/2]
+[PASS] G3 atom does real work: non-independent witness is identity - perfectly correlated registration does not yield retained map
+[PASS] negative control: naive re-pinching fixes every r - D-composition cannot ground R-D selection
+[PASS] B1 Minimal Axioms non-supply clause present - Record supplies no weighting/probability/occupancy rule
+[PASS] B2 separatrix note contains retained sharpening map - r -> 2r^2 source pinned
+[PASS] B3 thermalizing-arrow note contains retained inverse map - g(r)=sqrt(r/2) source pinned
+[PASS] B4 firewall sentence present: the atom is named, not discharged
+[PASS] B4 firewall sentence present: does not import a probability rule
+[PASS] B4 firewall sentence present: the occupancy binary stays open
+[PASS] B5 closing/adoption language absent - absent=[]
+[PASS] B6 markdown link inventory is exactly the three dependencies - links=3
+[PASS] B7 companion/context names are backticked only - no companion markdown links
+[PASS] B8 No-promotion statement present
+[PASS] B9 standard status-authority lines present
+[PASS] B10 runner cache is named
+
+TOTAL: PASS=20 FAIL=0
+ACCEPTANCE: PASS>=14 satisfied; FAIL=0
+
+git diff --stat (local new-file inventory; git not invoked)
+ docs/RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md | 172 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ scripts/frontier_rd_bridge_anatomy_agreement_conditioning_2026_06_12.py | 285 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 457 insertions(+)
+SUMMARY: G1 pinching idempotence is exact; G2 agreement-conditioned independent double registration is the retained r -> 2r^2 flow with inverse g(r)=sqrt(r/2); G3 leaves exactly one named statistics atom undischarged.
+
+----- stderr -----
+

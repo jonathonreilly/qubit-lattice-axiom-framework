@@ -4,7 +4,7 @@
 Walks every .md file under docs/ (excluding docs/audit/), extracts:
   - claim_id (stable, derived from path)
   - title (first H1)
-  - optional Type: hint for auditor-owned claim_type
+  - optional Claim type: hint for auditor-owned claim_type
   - optional legacy Status-line migration hint for claim_type backfill
   - cited authorities (markdown links to other .md files in docs/)
   - primary runner script path
@@ -51,8 +51,12 @@ LEGACY_STATUS_LINE_RE = re.compile(
     r"^\s*(?:\*\*Status:?\*\*|Status:)\s*(.+)$",
     re.IGNORECASE | re.MULTILINE,
 )
+CLAIM_TYPE_LINE_RE = re.compile(
+    r"^\s*(?:\*\*Claim type:?\*\*|Claim type:)\s*(.+)$",
+    re.IGNORECASE | re.MULTILINE,
+)
 TYPE_LINE_RE = re.compile(
-    r"^\s*(?:\*\*(?:Type|Claim type):?\*\*|(?:Type|Claim type):)\s*(.+)$",
+    r"^\s*(?:\*\*Type:?\*\*|Type:)\s*(.+)$",
     re.IGNORECASE | re.MULTILINE,
 )
 CLAIM_TYPES = {
@@ -84,6 +88,28 @@ RUNNER_SECTION_RE = re.compile(
 )
 HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
+
+EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # The atomic work-history note's primary runner is a packet verifier. Its
+    # load-bearing companion sources are certified by that verifier but are not
+    # imports, so list them explicitly for the restricted audit packet.
+    "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18": [
+        "scripts/frontier_atomic_hydrogen_lattice_companion.py",
+        "scripts/frontier_atomic_helium_hartree_companion.py",
+        "scripts/frontier_atomic_helium_jastrow_companion.py",
+        "scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py",
+    ],
+    # This wrapper row exists specifically to expose helpers loaded through
+    # `_frontier_loader.load_frontier(...)`; AST import discovery cannot see
+    # those dynamic loads, but the helpers are one-hop packet sources.
+    "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13": [
+        "scripts/frontier_star_shell_projector.py",
+        "scripts/frontier_same_source_metric_ansatz_scan.py",
+        "scripts/frontier_coarse_grained_exterior_law.py",
+        "scripts/frontier_sewing_shell_source.py",
+        "scripts/frontier_radial_shell_matching_law.py",
+    ],
+}
 
 
 AXIOM_PREMISE_NODES_PATH = AUDIT_DATA_DIR / "axiom_premise_nodes.json"
@@ -173,7 +199,7 @@ def normalize_claim_type(raw: str | None) -> str | None:
 
 
 def extract_claim_type_hint(body: str) -> tuple[str | None, str | None]:
-    m = TYPE_LINE_RE.search(body)
+    m = CLAIM_TYPE_LINE_RE.search(body) or TYPE_LINE_RE.search(body)
     if not m:
         return None, None
     raw = m.group(1).strip()
@@ -235,11 +261,12 @@ def extract_section(body: str, start: int) -> str:
 def _parse_script_imports(script_path: Path) -> set[str]:
     """Return basenames of scripts/*.py that this script imports.
 
-    Handles `from scripts.X import ...`, `import scripts.X`, relative
-    imports inside `scripts/` (`from .X import ...`, `from . import X`),
-    and bare PYTHONPATH-style imports (`from X import ...`, `import X`)
-    where `scripts/X.py` exists — common in this repo because runners are
-    invoked with `PYTHONPATH=scripts python3 scripts/X.py`.
+    Handles `from scripts.X import ...`, `from scripts import X [as Y]`,
+    `import scripts.X`, relative imports inside `scripts/`
+    (`from .X import ...`, `from . import X`), and bare PYTHONPATH-style
+    imports (`from X import ...`, `import X`) where `scripts/X.py` exists —
+    common in this repo because runners are invoked with
+    `PYTHONPATH=scripts python3 scripts/X.py`.
 
     Filters to imports that exist as scripts/<name>.py, so third-party
     libraries (numpy, scipy, etc.) are excluded.
@@ -264,6 +291,12 @@ def _parse_script_imports(script_path: Path) -> set[str]:
             module = node.module or ""
             if module.startswith("scripts."):
                 helpers.add(module.removeprefix("scripts."))
+            elif module == "scripts" and node.level == 0:
+                # `from scripts import X [as Y]` -> the imported NAMES are the
+                # helper modules (X), not the package `scripts`. Use alias.name
+                # (the real module name), never alias.asname (the local alias).
+                for alias in node.names:
+                    helpers.add(alias.name)
             elif node.level >= 1 and module:
                 helpers.add(module)
             elif node.level >= 1 and not module:
@@ -308,6 +341,25 @@ def resolve_helper_runner_paths(primary_runner_path: str | None) -> list[str]:
             )
         frontier = next_frontier - seen - {primary_basename}
     return sorted(f"scripts/{h}.py" for h in seen)
+
+
+def helper_runner_paths_for_claim(claim_id: str,
+                                  primary_runner_path: str | None) -> list[str]:
+    """Return packet helper sources for a claim.
+
+    Most helper paths are transitive imports of the primary runner. A small
+    number of legacy work-history rows register sibling runner artifacts in
+    the source note instead; keep those as explicit packet helpers so the
+    restricted audit prompt sees their full source.
+    """
+    paths: list[str] = []
+    for path in resolve_helper_runner_paths(primary_runner_path):
+        if path not in paths:
+            paths.append(path)
+    for path in EXPLICIT_PACKET_HELPER_RUNNER_PATHS.get(claim_id, []):
+        if path != primary_runner_path and (REPO_ROOT / path).exists() and path not in paths:
+            paths.append(path)
+    return paths
 
 
 def extract_runner(body: str, rel_path: str | None = None) -> str | None:
@@ -433,7 +485,7 @@ def build_graph() -> dict:
             "claim_type_author_hint": claim_type_hint,
             "claim_type_seed_hint": claim_type_seed_hint,
             "runner_path": primary_runner,
-            "helper_runner_paths": resolve_helper_runner_paths(primary_runner),
+            "helper_runner_paths": helper_runner_paths_for_claim(cid, primary_runner),
             "note_hash": hashlib.sha256(body.encode("utf-8")).hexdigest(),
             "deps": [],
         }

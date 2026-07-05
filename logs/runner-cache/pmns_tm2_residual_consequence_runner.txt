@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/pmns_tm2_residual_consequence_runner.py
-runner_sha256: 8d991dc9b9aeab0e99b4cbf636f5600c71ea9977d405738ef7920667760d7f0c
+runner_sha256: 03044b27cab33c3a7309997a0a87a4ef360cb531fd4dbb1117e277cba26138c5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
 ========================================================================
-PMNS TM2 RESIDUAL CONSEQUENCE -- BOUNDED ALGEBRA CHECK
+PMNS TM2 RESIDUAL CONSEQUENCE -- STIPULATED-HYPOTHESIS BOUNDED ALGEBRA CHECK
 ========================================================================
   [PASS] trimaximal second column is normalized  (1/3 + 1/3 + 1/3 = 1)
   [PASS] mu-tau modulus residual gives sin^2(theta_23)=1/2 for x=1/10
@@ -33,7 +33,6 @@ PMNS TM2 RESIDUAL CONSEQUENCE -- BOUNDED ALGEBRA CHECK
   [PASS] endpoint phase equation does not force cos(delta_CP)=1
 ========================================================================
 TOTAL: PASS=22 FAIL=0
-VERDICT: conditional TM2 algebraic consequence holds.
+VERDICT: stipulated-hypothesis TM2 algebraic consequence holds.
 
 ----- stderr -----
-

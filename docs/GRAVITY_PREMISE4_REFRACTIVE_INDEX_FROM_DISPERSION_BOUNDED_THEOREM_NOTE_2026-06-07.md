@@ -21,12 +21,13 @@ scope, and restate T1 with either the exact lattice arccos coefficient or an
 explicit small-k limit.
 ```
 
-This revision takes the honest bounded route. It does not claim to close the
+That revision took the honest bounded route. It did not claim to close the
 full physical premise (4) bridge. Instead it:
 
 - exposes `H -> H + phi` as supplied by the retained-bounded
   [`SELF_CONSISTENCY_FORCES_POISSON_NOTE.md`](SELF_CONSISTENCY_FORCES_POISSON_NOTE.md)
-  authority;
+  authority. The later 2026-06-18 repair below replaces this implicit routing
+  with an explicit scalar-shift sign and fixed-energy normalization bridge;
 - treats the Fermat identification `n = k/k_0` as the eikonal/WKB
   interpretation of a fixed-energy scalar dispersion packet, not as a new
   retained physical bridge;
@@ -38,9 +39,63 @@ full physical premise (4) bridge. Instead it:
   [`LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md`](LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md)
   packet rather than as a retained authority.
 
-Thus this note is a bounded support packet for the refractive-index form and
-geometric `1/b` calculation. It does not by itself promote clean-chain premise
-(4) to retained status.
+At that stage this note was a bounded **conditional algebra packet** for the
+refractive-index form and geometric `1/b` calculation. Its theorem hypotheses
+include the supplied Hamiltonian-shift packet and the supplied fixed-energy
+eikonal/Fermat reading `n = k/k_0`; it does not derive either as a new
+physical bridge and does not by itself promote clean-chain premise (4) to
+retained status. The 2026-06-16 source-side repair below replaces the
+unregistered `n=k/k_0` import with a direct bounded phase-count bridge; the
+independent audit lane must decide whether that repair changes the effective
+status.
+
+## 2026-06-16 Source-Side Eikonal Bridge Repair
+
+This revision adds a direct source-side bridge for the part the prior packet
+left as an imported eikonal convention:
+[`GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md).
+The bridge uses the already audited
+[`GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md`](GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+for the weak-field scalar source/action sign, then proves directly on the
+axis lattice dispersion that a scalar-shifted fixed-energy packet has
+local phase density
+
+```text
+n(x) = k_s(x) / k_0,
+lambda_axis(k_s) + s(x) = E.
+```
+
+Thus `n=k/k_0` is no longer a hidden textbook/WKB import in this source
+packet. It is a finite phase-count identity for the bounded scalar ray packet.
+The source repair still does not claim a physical value of `G_Newton`, a
+nonlinear metric theorem, arbitrary-graph WKB closure, or an audit-ratified
+status change. Independent audit remains responsible for any effective-status
+movement.
+
+## 2026-06-18 Scalar-Shift Sign and Normalization Bridge Repair
+
+The latest fixed-energy bridge repair made the scalar generator step explicit:
+
+```text
+H_s = H_0 + s I.
+```
+
+This revision wires premise (4) to the one-hop source packet
+[`GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md`](GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md).
+That packet derives the `+s I` sign and the fixed-energy action normalization
+on the bounded one-axis scalar dispersion packet:
+
+```text
+phi_action = c_E s,
+c_E = 1/(k0 lambda_axis'(k0)).
+```
+
+Thus this premise-4 packet no longer asks audit to infer `H -> H + phi`
+directly from the older Poisson/source note. The scalar-shift bridge supplies
+the generator-sign and normalization step; the eikonal note supplies the
+phase-count step; the physical Newton normalization, arbitrary-graph WKB
+closure, nonlinear metric sector, and any effective-status change remain
+outside this source repair.
 
 The clean-chain note
 [`GRAVITY_CLEAN_DERIVATION_NOTE.md`](GRAVITY_CLEAN_DERIVATION_NOTE.md)
@@ -73,7 +128,15 @@ import-free potential `φ = a/r` (companion
 lattice **does** produce `1/b` geometric lensing via the geodesic; the `−1.43`
 observable was a different (Kubo) object.
 
-## Theorem (bounded, runner-verified)
+## Theorem (bounded source-side repair proposal, runner-verified)
+
+Hypotheses for T1-T6: use the retained-bounded weak-field source-response
+bridge named above for the scalar source/action sign, the 2026-06-18
+scalar-shift sign and fixed-energy normalization bridge for
+`H_s=H_0+sI` and `phi_action=c_E s`, and the fixed-energy eikonal index
+bridge for the phase-count identity `n = k(s)/k(0)` on this scalar dispersion
+packet. Under those bounded
+source-side bridge hypotheses:
 
 - **(T1)** dispersion shift: on `λ(k)=6−2Σ_μ cos k_μ`, solving `λ(k)+φ=E` gives
   exact axis relation `k(φ)=arccos(1−(E−φ)/2)` and
@@ -87,16 +150,20 @@ observable was a different (Kubo) object.
 - **(T5, control)** no field coupling (`n=1`) gives zero deflection.
 - **(T6)** the geometric deflection slope is `−1` (`1/b`), distinct from the Kubo
   observable packet's dipole-suppressed scaling. The Kubo packet is included
-  as a comparison authority, not as a retained dependency.
+  as a retained-bounded comparison authority for object separation, not as a
+  dependency that supplies the physical Fermat bridge.
 
-`TOTAL: PASS=9 FAIL=0`.
+`TOTAL: PASS=30 FAIL=0`.
 
 ## What This Supplies / Does Not Claim
 
-- **Supports** clean-chain premise (4): the weak-field response form `n = 1−cφ`
-  is obtained from the supplied Hamiltonian shift and fixed-energy lattice
-  dispersion in the bounded eikonal packet. This is not a full retained
-  derivation of the physical Fermat bridge.
+- **Supports** clean-chain premise (4) as a source-side repair proposal: the
+  weak-field response form `n = 1−cφ` is obtained from the retained-bounded
+  weak-field source-response sign plus the fixed-energy lattice dispersion
+  bridge, where `n = k/k_0` is proved as normalized phase count for the bounded
+  scalar ray packet. This is not a full retained derivation of arbitrary-graph
+  WKB, nonlinear metric structure, or the physical Newton-constant
+  normalization; independent audit must still decide the effective status.
 - **Resolves a framing point:** the genuine *geometric* (geodesic) lensing of `φ=1/r`
   is the standard `1/b`; the `−1.43` was the dipole-suppressed *Kubo* observable, a
   different object (#3191).
@@ -113,28 +180,45 @@ observable was a different (Kubo) object.
   supplied eikonal/dispersion boundary.
 - The field-in-Hamiltonian (`H→H+φ`) input is retained_bounded
   `self_consistency_forces_poisson`.
-- The exterior `φ_eff=a/r` source potential is retained_bounded `finite_rank_source_to_metric`.
+- The exterior `φ_eff=a/r` source potential is retained_bounded
+  [`FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md`](FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md).
 - Uses the import-free `G₀→1/(4π r)` and complements the Kubo-vs-geometric distinction
-  (companions `lattice_greens_1_over_r_from_heat_kernel_resolvent`,
-  `lensing_exponent_is_dipole_crossover`, this session).
+  (companions
+  [`LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md`](LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md)
+  and
+  [`LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md`](LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md)).
 
 | Packet | Current audit status in ledger | Role here |
 | --- | --- | --- |
 | `self_consistency_forces_poisson_note` | retained_bounded | Supplies the field-shift/Hamiltonian-response context. |
 | `finite_rank_source_to_metric_theorem_note` | retained_bounded | Supplies the exterior `phi_eff=a/r` source-potential packet. |
-| `lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07` | audited_conditional at this ledger snapshot | Support-only heat-kernel route toward `1/(4πr)`. |
-| `lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07` | unaudited at this ledger snapshot | Comparison-only Kubo-vs-geometric distinction for T6. |
+| `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | retained_bounded | Supplies the weak-field scalar source/action sign and test-source response boundary. |
+| `gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18` | source-side repair proposal | Proves `H_s=H_0+sI` and `phi_action=c_E s` on the bounded fixed-energy scalar packet; independent audit must ratify any status effect. |
+| `gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16` | source-side repair proposal | Proves `n=k/k_0` as fixed-energy phase-count identity for the bounded scalar ray packet; independent audit must ratify any status effect. |
+| `lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07` | retained_bounded | Support-only heat-kernel route toward `1/(4πr)`. |
+| `lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07` | retained_bounded | Comparison-only Kubo-vs-geometric distinction for T6; it does not supply the Fermat/eikonal bridge. |
+
+## 2026-06-12 audit-status sync
+
+The comparison/status table above is synchronized with the current audit
+ledger: the Kubo/dipole crossover packet and the lattice Green support packet
+now both audit as retained_bounded. This strengthens the object-separation
+claim in T6: the geometric Fermat ray deflection and the Kubo susceptibility
+are certified as different bounded objects. It does **not** promote the full
+premise (4) bridge, because the physical/eikonal reading `n=k/k_0` and the
+Newtonian normalization remain outside this bounded support packet.
 
 ## Boundary / Honest-Auditor Read
 
-The content is bounded dispersion support for a refractive-index response: a
-test particle at fixed energy in the supplied field-shift packet has
+The content is bounded conditional dispersion algebra for a refractive-index
+response: a test particle at fixed energy in the supplied field-shift packet has
 `λ(k)+φ=E`; on the exact axis lattice dispersion this gives
 `k(φ)=arccos(1−(E−φ)/2)`, whose small-`k` weak-field limit gives
 `n=k(φ)/k(0)=1−φ/(2E)+...`. The runner verifies the exact lattice map and its
-small-`k` limit (T1), the Fermat action algebra after the `n=k/k0` reading is
-supplied (T2), the metric-form match (T3), the `1/b` geometric deflection
-(T4), the no-coupling control (T5), and the comparison-only distinction from
-the Kubo packet (T6). The `G_Newton` normalization stays registered, and the
-full physical Fermat/eikonal bridge, premise (3), and nonlinear/strong-field
-regime remain open.
+small-`k` limit (T1), the Fermat action algebra after the fixed-energy
+phase-count bridge supplies the `n=k/k0` reading (T2), the metric-form match
+under the same bounded scalar reading (T3), the
+`1/b` geometric deflection (T4), the no-coupling control (T5), and the
+comparison-only distinction from the Kubo packet (T6). The `G_Newton`
+normalization stays registered, and arbitrary-graph WKB, full physical metric
+structure, premise (3), and nonlinear/strong-field regime remain open.

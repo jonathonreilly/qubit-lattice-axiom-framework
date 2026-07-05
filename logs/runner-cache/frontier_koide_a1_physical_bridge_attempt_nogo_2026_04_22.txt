@@ -1,19 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py
-runner_sha256: 35585ceffca06f2e5ef2bad713046760da86d4e96c3a97d814240c6af3df428f
+runner_sha256: faa3d3ac4fd4ea840cd92d1fd99232a4ecbcd4b84f7f85ea122ff77430ef1183
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.52
+elapsed_sec: 0.54
 status: ok
 ----- stdout -----
 
 ========================================================================================
-Koide A1 physical bridge attempt — four no-go theorems (2026-04-22 note)
+Koide A1 physical bridge attempt — four negative checks (2026-04-22 note)
 ========================================================================================
 
 Verifies that four standard QFT / statistical-mechanics functionals
 do NOT extremize at the A1 condition |b|/a = 1/sqrt(2). The runner
-makes the parent note's no-go boundary executable.
+makes the parent note's open-gate negative-attempt boundary executable.
 
 ========================================================================================
 A. Attempt 1 — log|det H| extremum (NOT at A1)
@@ -130,9 +130,9 @@ PASSED: 17/17
 VERDICT: the four attempted physical bridges (W[J=0] = log|det H|,
 Coleman-Weinberg V_CW, Gaussian max-ent at fixed Frobenius, and
 3-eigenvalue simplex max-ent) all fail to extremize at A1 by
-symbolic verification on circulant H. The parent note's no-go
-boundary is executable. The physical source-law selecting the
-block-total Frobenius functional remains the open audit gate.
+symbolic verification on circulant H. The parent note's open-gate
+negative-attempt boundary is executable. The physical source-law
+selecting the block-total Frobenius functional remains open.
 
 ----- stderr -----
 

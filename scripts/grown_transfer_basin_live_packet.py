@@ -6,6 +6,8 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+import GROWN_TRANSFER_BASIN_SWEEP as _sweep_packet_source
+import GROWN_TRANSFER_BASIN_TARGETED as _targeted_packet_source
 import runner_cache as rc
 
 
@@ -13,6 +15,7 @@ AUDIT_TIMEOUT_SEC = 120
 ROOT = Path(__file__).resolve().parents[1]
 PASS_COUNT = 0
 FAIL_COUNT = 0
+PACKET_SOURCE_MODULES = (_sweep_packet_source, _targeted_packet_source)
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -63,23 +66,29 @@ def main() -> int:
     contains(
         "targeted checker reports same-row survival on all four declared rows",
         targeted,
+        "H=0.5, K=5.0, BETA=0.8, NL=25, PW=10, MAX_D_PHYS=3",
         "nearby rows surviving both observables: 4/4",
+        "gamma=0.5 away-sign survivors require away_count == 3/3 and mean deflection < 0",
         "the prior grown-row positives survive on a narrow nearby basin",
-        "True    True  True",
+        "(0, 3)    True    True  True",
     )
     contains(
         "full 3x3 sweep reports signed, complex, and same-row survival on all rows",
         sweep,
+        "H=0.5, K=5.0, BETA=0.8, NL=25, PW=10, MAX_D_PHYS=3",
         "signed-source survivors: 9/9",
         "complex-action survivors: 9/9",
         "same-row survivors: 9/9",
+        "gamma=0.5 away-sign survivors require away_count == 3/3 and mean deflection < 0",
         "narrow basin has rows surviving both observables",
     )
     contains(
         "repair note documents the predicate mismatch and current packet",
         (ROOT / "docs" / "GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md").read_text(encoding="utf-8"),
         "Predicate Repair",
+        "Post-audit compute repair",
         "complex_action_survives(row)",
+        "away_count(gamma=0.5) == 3/3",
         "same-row intersection",
     )
 

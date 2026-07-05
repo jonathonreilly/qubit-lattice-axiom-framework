@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/frontier_d3_staggered_two_band_orbital_2026_06_13.py
+runner_sha256: 3a6fab1bfc39c8342d03fc0dacfe577147257b0ecb6920b6768ae72d22706cfe
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 6.29
+status: ok
+----- stdout -----
+D=3 staggered two-band orbital response runner
+Bloch convention: H(k)=2cos(kx)sx + 2cos(ky)sy + (m+2cos(kz))sz; t=1
+Exact reference: dense periodic L^3 two-orbital lattice, quantized B=2*pi/L^2 through xy plaquettes
+PT split: finite B=0 divided-difference curvature; fixed magnetic-area normalization 1/L^2
+
+S0 STRUCTURE AND DISCRIMINATIVE CONTROLS
+PASS: finite Peierls Hamiltonian is Hermitian :: max |H-H^dag|=0.000e+00, tol=1.0e-12
+PASS: B=0 finite spectrum equals the stated two-band Bloch convention :: max spectral error=8.882e-15, tol=1.0e-10
+FD_CONTROL L=6 m=0.3 mu=0.4 T=1.0  PT=+3.6871991960e-02  fd(h)=+3.6790652400e-02 fd(h/2)=+3.6851643562e-02 fd(h/4)=+3.6866904007e-02
+PASS: finite-difference cross-check converges quadratically to the PT split :: diffs=(8.134e-05,2.035e-05,5.088e-06), ratios=(4.00,4.00), final_tol=1.0e-05
+
+S0 REFERENCE: quantized finite-torus B-step convergence
+BSTEP L=4 B=3.926990816987e-01 chi_exact=-1.7677316056e-01
+BSTEP L=6 B=1.745329251994e-01 chi_exact=+8.2052584445e-02
+BSTEP L=8 B=9.817477042468e-02 chi_exact=+3.4462126459e-02
+PASS: quantized reference drift shrinks from L=4->6 to L=6->8 at the reference point :: drift46=2.588e-01, drift68=4.759e-02, ratio=5.44
+
+S1/S2 DECOMPOSITION: LP + interband geometric split vs exact reference
+reference grid: L=8, mu=0.4, T=1.0, masses=(0.0, 0.3, 0.6); chi is Omega'' per cell
+MASS_ROW m=0.0 exact=+3.4630928288e-02 full=+3.1227298366e-02 intra_LP=+1.4722355488e+00 inter_geo=-1.4410082504e+00 full_rel=9.828e-02 lp_rel=4.151e+01
+PASS: full LP+interband split tracks exact reference at m=0.0 :: rel=9.828e-02, tol=1.20e-01
+PASS: LP-only does not suffice at m=0.0 :: lp_rel=4.151e+01, miss_min=10.0
+MASS_ROW m=0.3 exact=+3.4462126459e-02 full=+3.1077881226e-02 intra_LP=+1.4779636759e+00 inter_geo=-1.4468857947e+00 full_rel=9.820e-02 lp_rel=4.189e+01
+PASS: full LP+interband split tracks exact reference at m=0.3 :: rel=9.820e-02, tol=1.20e-01
+PASS: LP-only does not suffice at m=0.3 :: lp_rel=4.189e+01, miss_min=10.0
+MASS_ROW m=0.6 exact=+3.3956356504e-02 full=+3.0629198301e-02 intra_LP=+1.4689290253e+00 inter_geo=-1.4382998270e+00 full_rel=9.798e-02 lp_rel=4.226e+01
+PASS: full LP+interband split tracks exact reference at m=0.6 :: rel=9.798e-02, tol=1.20e-01
+PASS: LP-only does not suffice at m=0.6 :: lp_rel=4.226e+01, miss_min=10.0
+PASS: anti-fabrication: interband term is nonzero for m != 0 :: min |inter_geo| over m=0.3,0.6 is 1.438e+00
+PASS: honest residual: max full deviation is inside the frozen 12% bounded gate :: max_full_rel=9.828e-02; max_lp_rel=4.226e+01
+
+S3 SIGN TABLE: exact finite reference vs closed split
+SIGN_TABLE m=0.0
+  mu=0.0 exact=+3.6226746338e-02(+) closed=+3.3117765550e-02(+)
+  mu=0.4 exact=+3.4630928288e-02(+) closed=+3.1227298366e-02(+)
+  mu=1.0 exact=+2.5569789140e-02(+) closed=+2.1970797986e-02(+)
+  mu=2.0 exact=-2.7613448988e-03(-) closed=-1.3455806626e-03(-)
+PASS: exact sign table has a sampled sign change at m=0.0 :: codes=+,+,+,-
+SIGN_TABLE m=0.3
+  mu=0.0 exact=+3.6048635822e-02(+) closed=+3.2961150584e-02(+)
+  mu=0.4 exact=+3.4462126459e-02(+) closed=+3.1077881226e-02(+)
+  mu=1.0 exact=+2.5448652887e-02(+) closed=+2.1862897332e-02(+)
+  mu=2.0 exact=-2.7031977509e-03(-) closed=-1.2919086884e-03(-)
+PASS: exact sign table has a sampled sign change at m=0.3 :: codes=+,+,+,-
+SIGN_TABLE m=0.6
+  mu=0.0 exact=+3.5513661837e-02(+) closed=+3.2489307136e-02(+)
+  mu=0.4 exact=+3.3956356504e-02(+) closed=+3.0629198301e-02(+)
+  mu=1.0 exact=+2.5089206016e-02(+) closed=+2.1545135342e-02(+)
+  mu=2.0 exact=-2.5232188140e-03(-) closed=-1.1292850449e-03(-)
+PASS: exact sign table has a sampled sign change at m=0.6 :: codes=+,+,+,-
+PASS: closed split tracks all exact sampled signs :: sign_tol=1.0e-04, mu_grid=(0.0, 0.4, 1.0, 2.0)
+PASS: sampled sign changes persist across the full mass grid :: each mass has positive interior rows and a negative mu=2.0 row
+
+S4 NOTE HYGIENE
+PASS: note declares bounded claim type and audit authority :: bounded claim; audit lane grades
+PASS: note states the fixed magnetic-area normalization :: normalization stated, not fitted
+PASS: note states the d = 3 interband residual rather than a thermodynamic closure :: bounded residual language present
+
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

@@ -1,7 +1,7 @@
-# Spin-Statistics / FS: the Cross-Site Fermion Sign is a Genuine Admission, Precisely Located (Exercise)
+# Spin-Statistics / FS: Cross-Site Fermion Sign Location and Open-Route Boundary (Exercise)
 
 **Date:** 2026-06-06
-**Claim type:** bounded_theorem (exercise verdict + located admission + route portfolio)
+**Claim type:** bounded_theorem (exercise location result + route-boundary portfolio)
 **Status:** review-loop source proposal. Adds no axiom, no fitted input, no audit
 verdict.
 **Primary runner:**
@@ -30,9 +30,14 @@ the cross-site exchange sign differs. The standard spin-statistics theorem needs
 Lorentz invariance + microcausality + positivity — the lattice lacks manifest
 Lorentz (`axiom_first_spin_statistics_theorem` is unaudited).
 
-## Verdict — FS is a genuine admission, precisely located (runner SCORECARD 14/14)
+## Verdict — checked location result, not global FS closure
 
-All five exercise slices converge:
+The exact checked content is narrower than a global spin-statistics theorem. The
+runner verifies the Cl(3) Pauli algebra obstruction and the elementary
+`Hom(Z₂,U(1)) = {+1,-1}` sign dichotomy, and it guards that this note preserves
+the multi-loop graded-net route as open. Literature and cross-note no-gos are
+cited as comparators, not as independently rederived theorem steps by this
+packet.
 
 1. **Cl(3) does not supply the CAR grading** (verified). The per-site pseudoscalar
    `ω = σ₁σ₂σ₃ = i·I` has `ω² = −I` (*not* a `Z₂` involution), and the **only**
@@ -54,19 +59,42 @@ All five exercise slices converge:
    `fermion_parity_z2_grading_theorem`, identical in the boson and fermion
    frames. Record registers a supplied/derived central-sector label and
    explicitly "supplies no within-sector data." The exchange **sign** is
-   within-sector data. So Record is silent on the sign once the central grading is
-   in place; it does not derive CAR. FS is therefore a genuine admission of the
-   **same class as Lorentz-route spin-statistics** (the central datum is retained;
-   the sign needs an extra principle) — **not** a missing lemma the axioms
-   secretly contain.
-4. **Literature no-go confirms.** Allen–Mondragon (quant-ph/0304088): "no
+   within-sector data. So this packet locates the residual: Record is silent on
+   the sign once the central grading is in place; it does not derive CAR. That is
+   a location theorem/boundary, not a proof that every possible future FS route
+   is globally closed.
+4. **Literature no-go comparison.** Allen–Mondragon (quant-ph/0304088): "no
    spin-statistics connection in non-relativistic QM"; any derivation needs an
    extra premise ruling out spinless fermions. DHR superselection classifies
    (Bose/Fermi/para) but does not select the sign; Berry–Robbins is non-unique.
 
 This is consistent with the four existing repo no-gos (`car_from_positivity`,
 `staggered_dirac_substep1_statistics_agnostic`, `ring_monodromy_does_not_force_car`,
-`FS_rotation_exchange_discrete_insufficiency`).
+`FS_rotation_exchange_discrete_insufficiency`) but does not rederive those no-gos.
+
+## 2026-06-12 audited scope narrowing
+
+The load-bearing scope for re-audit is limited to the facts directly checked by
+the runner:
+
+1. the Cl(3) pseudoscalar is `i I`, squares to `-I`, and no nonzero `2 x 2`
+   operator anticommutes with all three Pauli generators;
+2. the exchange topology route supplies the order-two sign dichotomy
+   `{+1, -1}` but does not select the sign;
+3. the Record boundary used here is only that Record supplies no
+   within-sector exchange-sign datum once the retained central fermion-parity
+   label is in place.
+
+The route portfolio below is not a closure theorem. In particular, the
+multi-loop graded-net route is an open target, the continuum-migration route is
+conditional on a future Lorentz/microcausality bridge, and the `3 x 3 x 2`
+configuration-space witness remains a fan-out lead until independently
+re-verified. Literature and existing repo no-gos are comparator/context
+surfaces, not additional load-bearing proof steps in this note.
+
+Thus this note is a bounded location certificate for the present FS admission.
+It does not derive CAR, does not close spin-statistics, does not prove a
+multi-loop no-go, and does not add a new axiom.
 
 ## Route portfolio
 
@@ -77,22 +105,23 @@ This is consistent with the four existing repo no-gos (`car_from_positivity`,
 | 3 | **3×3×2 `Z³` box `H₁(UD₂)` witness** | sharpen the dichotomy | SNF on the actual `Z³` box (vs abstract `K₅`/`K₃,₃`) |
 | — | graded-tensor / parity-superselection from `{L,Q,R}` | **infeasible** w/o new principle | (re-derives the admission) |
 
-No route closes FS on the static baseline without a new principle; **no new axiom
-is invented** (the protocol's forbidden outcome).
+This exercise closes no route by itself. The multi-loop graded-net route remains
+the live opening on the static baseline, and **no new axiom is invented** (the
+protocol's forbidden outcome).
 
 ## Honest scope
 
-This is a **verdict + location + route map**, not a closure. FS is confirmed an
-admission; what is *new* is the precise location (the retained central-sector
-grading is not the within-sector exchange sign), the Cl(3)-doesn't-supply-the-
-grading fact, and the single un-refuted opening (the multi-loop graded-net
-consistency). The verified facts are exact; the 3×3×2 `H₁` is from the fan-out and
-flagged for re-verification. No new axiom.
+This is a **location + route-boundary map**, not a closure. The retained
+central-sector grading is not the within-sector exchange sign; Cl(3) does not
+supply that sign; topology leaves a `+1/-1` dichotomy; and the multi-loop
+graded-net consistency route remains un-refuted. The verified facts are exact;
+the 3×3×2 `H₁` is from the fan-out and flagged for re-verification. No new axiom.
 
 ## Reprove-and-cite ledger
 
 - **Reproven here** (runner): `ω = i·I`, `ω² = −I`, only `G=0` anticommutes all
-  three Paulis; `Hom(Z₂,U(1)) = {±1}`; the route classifications.
+  three Paulis; `Hom(Z₂,U(1)) = {±1}`; and the source-scope guards that keep the
+  route portfolio non-closing.
 - **Cited**: the four repo no-gos; `fermion_parity_z2_grading_theorem` (retained);
   the graph-braid dichotomy (retained_bounded); the Record axiom boundary
   (`MINIMAL_AXIOMS_2026-06-05`); literature (Allen–Mondragon, DHR, Berry–Robbins,

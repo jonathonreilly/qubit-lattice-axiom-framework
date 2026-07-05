@@ -346,6 +346,27 @@ class BuildCitationGraphParserTest(unittest.TestCase):
             m.REPO_ROOT = original
         self.assertEqual(helpers, {"prefixed_helper"})
 
+    def test_from_scripts_import_name_form_is_detected(self):
+        # `from scripts import X [as Y]` must resolve to the imported module
+        # X (the real name), not the package `scripts` nor the local alias Y.
+        # This is the form the gate_b primary runners use
+        # (`from scripts import gate_b_connectivity_tolerance as gate_b`).
+        m = _import("build_citation_graph")
+        original = m.REPO_ROOT
+        m.REPO_ROOT = self.tmp_root
+        try:
+            self._write("gate_b_connectivity_tolerance", "K = 1\n")
+            self._write("plain_helper", "v = 5\n")
+            primary = self._write(
+                "primary",
+                "from scripts import gate_b_connectivity_tolerance as gate_b\n"
+                "from scripts import plain_helper\n",
+            )
+            helpers = m._parse_script_imports(primary)
+        finally:
+            m.REPO_ROOT = original
+        self.assertEqual(helpers, {"gate_b_connectivity_tolerance", "plain_helper"})
+
 
 class SeedLedgerTest(unittest.TestCase):
     def setUp(self):
@@ -475,6 +496,108 @@ class SeedLedgerTest(unittest.TestCase):
         self.assertEqual(row["note_hash"], current_hash)
         self.assertEqual(seeded["stats"]["preserved_archived_failed"], 1)
 
+    def test_infra_path_prefixes_default_to_meta_when_hintless(self):
+        m = _import("seed_audit_ledger")
+        with mock.patch.object(m, "META_SOURCE_PATTERNS", ()):
+            for path in (
+                "docs/ai_methodology/README.md",
+                "docs/ai_methodology/raw/repo_audit.md",
+                "docs/repo/anything.md",
+                "docs/work_history/x/y.md",
+                "docs/lanes/open_science/lane.md",
+                "docs/publication/ci3_z3/table.md",
+            ):
+                claim_type, provenance = m.default_claim_type_for({"path": path})
+                self.assertEqual(
+                    (claim_type, provenance), ("meta", "backfilled_from_path"), path
+                )
+
+    def test_author_hint_beats_infra_path_prefix(self):
+        # Lane docs and other hinted notes under infra directories keep
+        # their declared types; the prefix tier only catches hint-less notes.
+        m = _import("seed_audit_ledger")
+        with mock.patch.object(m, "META_SOURCE_PATTERNS", ()):
+            claim_type, provenance = m.default_claim_type_for(
+                {
+                    "path": "docs/lanes/open_science/lane.md",
+                    "claim_type_author_hint": "open_gate",
+                }
+            )
+            self.assertEqual((claim_type, provenance), ("open_gate", "author_hint"))
+            claim_type, provenance = m.default_claim_type_for(
+                {
+                    "path": "docs/lanes/open_science/lane.md",
+                    "claim_type_seed_hint": "open_gate",
+                }
+            )
+            self.assertEqual((claim_type, provenance), ("open_gate", "migration_hint"))
+
+    def test_meta_source_pattern_registry_beats_hint(self):
+        m = _import("seed_audit_ledger")
+        with mock.patch.object(
+            m, "META_SOURCE_PATTERNS", ("docs/CANONICAL_HARNESS_INDEX.md",)
+        ):
+            claim_type, provenance = m.default_claim_type_for(
+                {
+                    "path": "docs/CANONICAL_HARNESS_INDEX.md",
+                    "claim_type_author_hint": "positive_theorem",
+                }
+            )
+            self.assertEqual((claim_type, provenance), ("meta", "backfilled_from_path"))
+
+    def test_untyped_docs_root_note_still_defaults_to_positive_theorem(self):
+        m = _import("seed_audit_ledger")
+        with mock.patch.object(m, "META_SOURCE_PATTERNS", ()):
+            claim_type, provenance = m.default_claim_type_for(
+                {"path": "docs/SOME_THEOREM_NOTE.md"}
+            )
+            self.assertEqual(
+                (claim_type, provenance),
+                ("positive_theorem", "default_positive_theorem"),
+            )
+
+    def test_gate_drops_unaudited_unknown_under_excluded_pattern(self):
+        m = _import("seed_audit_ledger")
+        with mock.patch.object(m, "EXCLUDED_SOURCE_PATTERNS", ("docs/lanes/**",)), \
+             mock.patch.object(m, "NEVER_GATE_SOURCE_PATHS", frozenset()):
+            node = {"path": "docs/lanes/legacy_lane.md"}
+            # Brand-new node: gated.
+            self.assertTrue(m.should_gate_node(node, None))
+            # Prior row that is an unaudited unknown: gated (history-free).
+            prior = {"audit_status": "unaudited", "previous_audits": [],
+                     "effective_status": "meta"}
+            self.assertTrue(m.should_gate_node(node, prior))
+
+    def test_gate_keeps_rows_with_audit_history(self):
+        m = _import("seed_audit_ledger")
+        with mock.patch.object(m, "EXCLUDED_SOURCE_PATTERNS", ("docs/lanes/**",)), \
+             mock.patch.object(m, "NEVER_GATE_SOURCE_PATHS", frozenset()):
+            node = {"path": "docs/lanes/legacy_lane.md"}
+            # Terminal or in-flight audit_status: kept.
+            self.assertFalse(
+                m.should_gate_node(node, {"audit_status": "audited_renaming"})
+            )
+            self.assertFalse(
+                m.should_gate_node(node, {"audit_status": "audit_in_progress"})
+            )
+            # Archived previous_audits on an unaudited row: kept.
+            self.assertFalse(
+                m.should_gate_node(
+                    node,
+                    {"audit_status": "unaudited",
+                     "previous_audits": [{"audit_status": "audited_clean"}]},
+                )
+            )
+
+    def test_gate_respects_never_gate_pins_and_non_excluded_paths(self):
+        m = _import("seed_audit_ledger")
+        with mock.patch.object(m, "EXCLUDED_SOURCE_PATTERNS", ("docs/lanes/**",)), \
+             mock.patch.object(
+                 m, "NEVER_GATE_SOURCE_PATHS", frozenset({"docs/lanes/pinned.md"})
+             ):
+            self.assertFalse(m.should_gate_node({"path": "docs/lanes/pinned.md"}, None))
+            self.assertFalse(m.should_gate_node({"path": "docs/REAL_NOTE.md"}, None))
+
 
 class ComputeEffectiveStatusTest(unittest.TestCase):
     def setUp(self):
@@ -521,6 +644,28 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
         }
         new_rows, _cycles = m.compute_effective(rows)
         self.assertEqual(new_rows["child"]["effective_status"], "retained_pending_chain")
+
+    def test_clean_with_metadata_dep_is_retained(self):
+        """Metadata links are non-claim infrastructure and should not strand
+        audited-clean theorem rows in retained_pending_chain."""
+        m = _import("compute_effective_status")
+        rows = {
+            "glossary": {
+                "claim_id": "glossary",
+                "deps": [],
+                "audit_status": "unaudited",
+                "claim_type": "meta",
+            },
+            "child": {
+                "claim_id": "child",
+                "deps": ["glossary"],
+                "audit_status": "audited_clean",
+                "claim_type": "bounded_theorem",
+            },
+        }
+        new_rows, _cycles = m.compute_effective(rows)
+        self.assertEqual(new_rows["glossary"]["effective_status"], "meta")
+        self.assertEqual(new_rows["child"]["effective_status"], "retained_bounded")
 
     def test_axiom_and_primitive_premises_do_not_bound_positive_theorem(self):
         """Axioms and explicitly approved framework primitives satisfy chain
@@ -574,6 +719,40 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
         self.assertEqual(
             new_rows["uses_tier_a_admission"]["effective_status_reason"],
             "bounded_by_tier_a_admitted_derivation_target",
+        )
+
+    def test_metadata_dependencies_satisfy_clean_chain_without_bounding(self):
+        """Metadata rows are stable audit-governance inputs. They satisfy a
+        clean theorem's dependency chain without turning the theorem into
+        retained_pending_chain and without imposing Tier-A boundedness."""
+        m = _import("compute_effective_status")
+        rows = {
+            "key_terminology": {
+                "claim_id": "key_terminology",
+                "deps": [],
+                "audit_status": "unaudited",
+                "claim_type": "meta",
+            },
+            "bounded_child": {
+                "claim_id": "bounded_child",
+                "deps": ["key_terminology"],
+                "audit_status": "audited_clean",
+                "claim_type": "bounded_theorem",
+            },
+            "positive_child": {
+                "claim_id": "positive_child",
+                "deps": ["key_terminology"],
+                "audit_status": "audited_clean",
+                "claim_type": "positive_theorem",
+            },
+        }
+        new_rows, _cycles = m.compute_effective(rows)
+        self.assertEqual(new_rows["key_terminology"]["effective_status"], "meta")
+        self.assertEqual(
+            new_rows["bounded_child"]["effective_status"], "retained_bounded"
+        )
+        self.assertEqual(
+            new_rows["positive_child"]["effective_status"], "retained"
         )
 
     def test_criticality_bump_soft_reset_propagates_as_retained(self):
@@ -807,6 +986,29 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
             self.assertNotIn(stale, post)
 
 
+class SanitizeLegacyAuditArtifactsTest(unittest.TestCase):
+    def test_bare_uppercase_decoration_parent_stem_canonicalizes(self):
+        m = _import("sanitize_legacy_audit_artifacts")
+        ledger = {
+            "rows": {
+                "cl3_complexification_split_narrow_theorem_note_2026-05-10": {
+                    "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+                    "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+                },
+                "decoration_child": {
+                    "claim_id": "decoration_child",
+                    "note_path": "docs/DECORATION_CHILD.md",
+                    "decoration_parent_claim_id": "CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10",
+                },
+            }
+        }
+        m.canonicalize_decoration_parent_ids(ledger)
+        self.assertEqual(
+            ledger["rows"]["decoration_child"]["decoration_parent_claim_id"],
+            "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        )
+
+
 class ComputeAuditorReliabilityTest(unittest.TestCase):
     def setUp(self):
         self._tmp = tempfile.TemporaryDirectory()
@@ -984,6 +1186,38 @@ class AuditLintTest(unittest.TestCase):
         self.assertIn("legacy", buf.getvalue())
         self.assertIn("codex-current", buf.getvalue())
 
+    def test_lint_allows_retained_row_with_metadata_dep(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        rows = {
+            "glossary": {
+                "claim_id": "glossary",
+                "audit_status": "unaudited",
+                "claim_type": "meta",
+                "effective_status": "meta",
+                "criticality": "leaf",
+            },
+            "bounded_child": {
+                "claim_id": "bounded_child",
+                "deps": ["glossary"],
+                "audit_status": "audited_clean",
+                "claim_type": "bounded_theorem",
+                "claim_scope": "bounded theorem with glossary link",
+                "effective_status": "retained_bounded",
+                "auditor": "synthetic-auditor",
+                "auditor_family": "codex-gpt-5.5",
+                "criticality": "leaf",
+                "load_bearing_step_class": "A",
+            },
+        }
+        self._write_minimal_ledger(rows)
+        import io, contextlib
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            rc = m.main()
+        self.assertEqual(rc, 0)
+        self.assertNotIn("bounded_child: effective_status", buf.getvalue())
+
     def test_stale_top_level_timestamp_errors(self):
         m = _import("audit_lint")
         _patch_repo_root(m, self.tmp_root)
@@ -1001,6 +1235,190 @@ class AuditLintTest(unittest.TestCase):
             rc = m.main()
         self.assertEqual(rc, 1)
         self.assertIn("stale timestamp key", buf.getvalue())
+
+    def test_retained_grade_row_may_depend_on_metadata(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        rows = {
+            "key_terminology": {
+                "claim_id": "key_terminology",
+                "audit_status": "unaudited",
+                "claim_type": "meta",
+                "effective_status": "meta",
+            },
+            "clean_bounded": {
+                "claim_id": "clean_bounded",
+                "audit_status": "audited_clean",
+                "claim_type": "bounded_theorem",
+                "claim_scope": "bounded theorem whose only dep is metadata",
+                "effective_status": "retained_bounded",
+                "deps": ["key_terminology"],
+                "auditor": "unit-test-auditor",
+                "auditor_family": "codex-gpt-5.5",
+                "criticality": "leaf",
+                "load_bearing_step_class": "A",
+            },
+        }
+        self._write_minimal_ledger(rows)
+        import io, contextlib
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            rc = m.main()
+        self.assertEqual(rc, 0, buf.getvalue())
+
+    def test_defaulted_claim_type_warns_but_passes(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        rows = {
+            "untyped_catalog": {
+                "claim_id": "untyped_catalog",
+                "audit_status": "unaudited",
+                "claim_type": "positive_theorem",
+                "claim_type_provenance": "default_positive_theorem",
+                "effective_status": "unaudited",
+                "criticality": "leaf",
+            },
+        }
+        self._write_minimal_ledger(rows)
+        import io, contextlib
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            rc = m.main()
+        out = buf.getvalue()
+        self.assertEqual(rc, 0, out)
+        self.assertIn("claim_type_defaulted", out)
+        self.assertIn("'Type:' header", out)
+
+    def test_typed_rows_do_not_trigger_defaulted_warning(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        rows = {
+            "typed_note": {
+                "claim_id": "typed_note",
+                "audit_status": "unaudited",
+                "claim_type": "bounded_theorem",
+                "claim_type_provenance": "author_hint",
+                "effective_status": "unaudited",
+                "criticality": "leaf",
+            },
+        }
+        self._write_minimal_ledger(rows)
+        import io, contextlib
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            rc = m.main()
+        out = buf.getvalue()
+        self.assertEqual(rc, 0, out)
+        self.assertNotIn("claim_type_defaulted", out)
+
+    def test_grandfathered_excluded_path_row_notices(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        (self.tmp_root / "docs" / "audit" / "data" / "excluded_source_patterns.txt").write_text(
+            "# infra families\ndocs/lanes/**\n", encoding="utf-8"
+        )
+        rows = {
+            # History-free unaudited unknown: drops at the next seeding run.
+            "lanes.legacy_lane": {
+                "claim_id": "lanes.legacy_lane",
+                "note_path": "docs/lanes/legacy_lane.md",
+                "audit_status": "unaudited",
+                "claim_type": "open_gate",
+                "claim_type_provenance": "migration_hint",
+                "effective_status": "unaudited",
+                "criticality": "leaf",
+            },
+            # Archived audit history: kept by history-preserving exclusion.
+            "lanes.audited_lane": {
+                "claim_id": "lanes.audited_lane",
+                "note_path": "docs/lanes/audited_lane.md",
+                "audit_status": "unaudited",
+                "previous_audits": [{"audit_status": "audited_clean"}],
+                "claim_type": "open_gate",
+                "claim_type_provenance": "migration_hint",
+                "effective_status": "unaudited",
+                "criticality": "leaf",
+            },
+        }
+        self._write_minimal_ledger(rows)
+        import io, contextlib
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            rc = m.main()
+        out = buf.getvalue()
+        self.assertEqual(rc, 0, out)
+        self.assertIn("excluded_path_row_pending_drop", out)
+        self.assertIn("lanes.legacy_lane", out)
+        self.assertIn("excluded_path_row_grandfathered", out)
+        self.assertIn("lanes.audited_lane", out)
+        self.assertNotIn("warnings:", out)
+
+
+class CheckStagedClaimTypingTest(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.tmp_root = Path(self._tmp.name)
+        self.fx = CleanLedgerFixture(self.tmp_root)
+
+    def _run(self, m, staged: str) -> tuple[int, str]:
+        import io, contextlib
+        buf = io.StringIO()
+        with mock.patch.object(sys, "stdin", io.StringIO(staged)):
+            with contextlib.redirect_stdout(buf):
+                rc = m.main()
+        return rc, buf.getvalue()
+
+    def _patch_paths(self, m) -> None:
+        m.REPO_ROOT = self.tmp_root
+        m.LEDGER_PATH = self.tmp_root / "docs" / "audit" / "data" / "audit_ledger.json"
+
+    def test_staged_defaulted_note_blocks(self):
+        m = _import("check_staged_claim_typing")
+        self._patch_paths(m)
+        self.fx.write_ledger(
+            {
+                "schema_version": 1,
+                "rows": {
+                    "untyped": {
+                        "claim_id": "untyped",
+                        "note_path": "docs/UNTYPED_NOTE.md",
+                        "claim_type": "positive_theorem",
+                        "claim_type_provenance": "default_positive_theorem",
+                    },
+                },
+            }
+        )
+        rc, out = self._run(m, "docs/UNTYPED_NOTE.md\nscripts/foo.py\n")
+        self.assertEqual(rc, 1)
+        self.assertIn("docs/UNTYPED_NOTE.md", out)
+        self.assertIn("'Type:' header", out)
+
+    def test_typed_and_unledgered_notes_pass(self):
+        m = _import("check_staged_claim_typing")
+        self._patch_paths(m)
+        self.fx.write_ledger(
+            {
+                "schema_version": 1,
+                "rows": {
+                    "typed": {
+                        "claim_id": "typed",
+                        "note_path": "docs/TYPED_NOTE.md",
+                        "claim_type": "bounded_theorem",
+                        "claim_type_provenance": "author_hint",
+                    },
+                },
+            }
+        )
+        rc, _ = self._run(m, "docs/TYPED_NOTE.md\ndocs/publication/gated_infra.md\n")
+        self.assertEqual(rc, 0)
+
+    def test_no_staged_docs_short_circuits(self):
+        m = _import("check_staged_claim_typing")
+        self._patch_paths(m)
+        # No ledger written at all: the gate must not fail on non-doc commits.
+        rc, _ = self._run(m, "scripts/foo.py\nlogs/runner-cache/x.json\n")
+        self.assertEqual(rc, 0)
 
 
 class InvalidateStaleAuditsCriticalityBumpTest(unittest.TestCase):
@@ -1218,6 +1636,49 @@ class ComputeAuditQueueTest(unittest.TestCase):
         self.assertEqual(targets[0]["primary_break_target"], "a_node")
         self.assertNotIn("runner_pipeline", targets[0]["instruction"])
         self.assertIn("source-graph repair", targets[0]["instruction"])
+
+    def test_is_ready_accepts_premise_deps(self):
+        """Queue readiness mirrors compute_effective_status's accepted-premise
+        policy: a row whose only non-retained deps are an axiom/primitive
+        premise node or a Tier-A admitted derivation target is auditable now
+        (a clean verdict resolves it to retained / retained_bounded), so the
+        queue must mark it ready instead of holding it behind the admission's
+        own unaudited row."""
+        m = _import("compute_audit_queue")
+        rows = {
+            "tier_a_gate": {
+                "claim_id": "tier_a_gate",
+                "deps": [],
+                "effective_status": "unaudited",
+            },
+            "retained_dep": {
+                "claim_id": "retained_dep",
+                "deps": [],
+                "effective_status": "retained_bounded",
+            },
+            "unaudited_dep": {
+                "claim_id": "unaudited_dep",
+                "deps": [],
+                "effective_status": "unaudited",
+            },
+            "discharge_note": {
+                "claim_id": "discharge_note",
+                "deps": ["minimal_axioms", "tier_a_gate", "retained_dep"],
+                "effective_status": "unaudited",
+            },
+            "blocked_note": {
+                "claim_id": "blocked_note",
+                "deps": ["tier_a_gate", "unaudited_dep"],
+                "effective_status": "unaudited",
+            },
+        }
+        with mock.patch.object(
+            m.premise_nodes,
+            "is_accepted_premise_dep",
+            side_effect=lambda dep_id: dep_id in {"minimal_axioms", "tier_a_gate"},
+        ):
+            self.assertTrue(m.is_ready(rows["discharge_note"], rows))
+            self.assertFalse(m.is_ready(rows["blocked_note"], rows))
 
 
 class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
@@ -2511,6 +2972,30 @@ class RepairMissingDependencyEdgesTest(unittest.TestCase):
         stats, note_a = self._apply(m)
         self.assertEqual(stats["dependency_edges"], 0)
         self.assertEqual(note_a.count("](NOTE_B.md)"), 1)
+
+
+class SanitizeLegacyAuditArtifactsTest(unittest.TestCase):
+    def test_canonicalizes_decoration_parent_filename_stem(self):
+        m = _import("sanitize_legacy_audit_artifacts")
+        ledger = {
+            "rows": {
+                "cl3_complexification_split_narrow_theorem_note_2026-05-10": {
+                    "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+                    "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+                },
+                "staggered_jw_decoration": {
+                    "claim_id": "staggered_jw_decoration",
+                    "decoration_parent_claim_id": "CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10",
+                },
+            }
+        }
+
+        m.canonicalize_decoration_parent_ids(ledger)
+
+        self.assertEqual(
+            ledger["rows"]["staggered_jw_decoration"]["decoration_parent_claim_id"],
+            "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        )
 
 
 if __name__ == "__main__":

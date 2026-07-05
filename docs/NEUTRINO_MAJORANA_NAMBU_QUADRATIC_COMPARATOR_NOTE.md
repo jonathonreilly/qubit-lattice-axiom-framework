@@ -1,5 +1,7 @@
 # Majorana Nambu Quadratic Comparator
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15
 **Status:** exact local non-homogeneous comparator theorem on the admitted
 Nambu family

@@ -1,13 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/observable_principle_p1_cap_k_check_2026_06_10.py
+runner_sha256: 02a5c1a5075546e604b7e4bc78129a8a0af49d5e7dc32a4bde215cd76fa94ba2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 46.88
+status: ok
+----- stdout -----
 == T1: Lemma C and the selection chain (BR-note facts recomputed, not cited blind) ==
   [PASS][A] retained finite-sector identity recomputed: I(A u B) = I(A) + I(B) on all 81 ordered disjoint pairs of a 4-sector model  -- pairs=81
-  [PASS][A] Lemma C capacity bound: |sum_{i in A} v_i| <= K*M by finite additivity + triangle inequality; retained unit-record schema has M = 1 by normalization (I(R_7) = 7 recomputed)  -- I(R_7)=7
+  [PASS][A] Lemma C capacity bound: |sum_{i in A} v_i| <= K*M by finite additivity + triangle inequality; conditional supplied-record unit schema has M = 1 by normalization (I(R_7) = 7 recomputed)  -- I(R_7)=7
   [PASS][A] e-fold increment identity: g_p(e^{u+1}) - g_p(e^u) = e^{pu}(e^p - 1)/p exactly; p -> 0 member has constant increment 1
   [PASS][A] (BR-int) point-selection recomputed: increments unbounded for p in {1, 2, 1/2, -1/2, -1} (limits = oo), constant for p = 0 — pass set on {s*g_p} exactly {p = 0}
   [PASS][A] class-escape spot check: W = log z + (1/10) cos(log z) has e-fold increments <= 1 + 2/10 ((BR-int) holds) yet additive residual at (e, e) is (1/10)(cos 2 - 2 cos 1) != 0 — no additive-identity instance is entailed (Lemma-R screen)  -- res(e,e)=-0.149675
 == T2: the Duhamel identity (the bridge from generator difference to commutators) ==
   [PASS][A] Duhamel identity verified on an explicit 4-site instance: alpha^{H+V}_t(B) - alpha^H_t(B) = i int_0^t alpha^{H+V}_s([V, alpha^H_{t-s}(B)]) ds (Simpson quadrature residual < 1e-8)  -- residual=5.08e-14
   [PASS][A] integrated-commutator bound: ||alpha^{H+V}_t(B) - alpha^H_t(B)|| <= int_0^t ||[V, alpha^H_u(B)]|| du on the same instance  -- lhs=1.7565e-02 <= int=1.7650e-02
-== T3: the registration cone on the chain — retained (F4) LR data, measured vs bound ==
+== T3: the registration cone on the chain — linked finite-range LR data, measured vs bound ==
   [PASS][C] chain (d=1, m=0, q=2, R=1, W=2, v_LR=8e): measured sensitivity ||alpha^{H+V}_t(B_y) - alpha^H_t(B_y)|| <= series bound (||V||/(4W)) sum_{n>=D+1} (4Wt)^n/n! on the full (D, t) grid (D in 2..5, t in 0.02..0.15)  -- worst measured/bound = 0.0300
   [PASS][A] closed exponential form dominates the series form on the grid: (e/(e-1))(||V||/v_LR) e^{v_LR t - D} >= series bound — the D* formula below is licensed by the proved chain
 == T4: the registration cone on an explicit Z^3 block ==
@@ -26,7 +34,7 @@
   [PASS][D] weakest joint-sector reading: at tau = 1 the cap 2^{N_reach} fails first at k = 1073345; at k = 10^9 the required window is tau >= 9.67 > 1 — under EVERY reading each fixed window tau fails at finite k, so no uniformly bounded-window finite-speed process realizes the family (it stays licensed as schema bookkeeping only)  -- k_b*=1073345, tau(k=1e9)>=9.67
 == T8: unbounded-speed comparator — the finite LR speed is load-bearing ==
   [PASS][D] one long-range bond (0 <-> 5) breaks the finite-range sensitivity bound at D = 5 by a factor > 100 (t = 0.05 and 0.1): without finite-range dynamics the registration cone (and hence the cap) does not exist  -- violations x3313, x194
-  [PASS][A] symbolic comparator: lim_{v_LR -> oo} D* = oo (sympy limit) — an unbounded-speed process reaches every register in any window and (CAP-K) has no finite value; the retained v_LR < oo is the load-bearing physics
+  [PASS][A] symbolic comparator: lim_{v_LR -> oo} D* = oo (sympy limit) — an unbounded-speed process reaches every register in any window and (CAP-K) has no finite value; finite v_LR < oo is the load-bearing physics
 == T9: quasilocal extension — landed exact-H numbers reused at their grade ==
   [PASS][B] landed quasilocality numbers read from the cached retained_bounded runner log: W_H = 1.757278 (m = 0.3) and W_tail(10) = 3.526e-03 — finite per-site weight, exponentially small tails (free bilinear sector, at that row's grade)  -- W_H=1.757278, W_tail(10)=0.003526
   [PASS][C] exact-H truncation H_R (R = 10, m = 0.3): v(R) <= 2e*q*(2 W_H)*R ~ 382.2, D* ~ 379.0, N_reach ~ 759^3 ~ 4.4e8 — the cap form survives quasilocally with the same (v tau)^3 scaling; the volume-uniform exact-H tail constant is a NAMED open refinement, not imported  -- v(10)=382.1, D*=379.0, N=437245479
@@ -38,8 +46,11 @@
   [PASS][B] the clock is supplied, never derived from counts: the retained_no_go clock/rate interface states 'Without the supplied `tau`, the same record history supports many inequivalent rates' — present verbatim
   [PASS][B] the note declares (REG-tau) as a supplied clock-window clause of the realization class (not derived); the retained single-clock Stone row licenses only that 'evolve for t given (T, tau)' is well-defined — the window value stays declared
 == T12: ledger grades, firewall strings, honest scope ==
-  [PASS][B] cited rows present in the audit ledger at the cited effective statuses (one-hop presence check, 10 rows)  -- mismatches=[]
+  [PASS][B] cited rows present in the audit ledger at their current effective statuses (one-hop presence check, 10 rows)  -- mismatches=[]
   [PASS][B] note honest-scope and firewall-compliance strings present  -- missing=[]
   [PASS][B] forbidden closure/promotion strings absent  -- found=[]
 
 TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

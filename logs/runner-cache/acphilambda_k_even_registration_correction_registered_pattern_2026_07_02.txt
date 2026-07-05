@@ -1,0 +1,153 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py
+runner_sha256: 71a1dc23b8dc795eb61d396a83b407d9efae49cba34f37d87fdf8bca0b91650a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.63
+status: ok
+----- stdout -----
+
+PART A - sources and authority gates
+[PASS] note file exists
+       docs/ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md
+[PASS] record dependency exists
+       docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md
+[PASS] Brannen dependency exists
+       docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
+[PASS] ledger exists
+       docs/audit/data/audit_ledger.json
+[PASS] Tier-A data exists
+       docs/audit/data/tier_a_admissions.json
+[PASS] record file pin present: only a finer character-basis record would touch it
+[PASS] note quotes record pin: only a finer character-basis record would touch it
+[PASS] record file pin present: neither produced nor relaxed by the record-preserving dynamics
+[PASS] note quotes record pin: neither produced nor relaxed by the record-preserving dynamics
+[PASS] Brannen file pin present: circulant form
+[PASS] note quotes Brannen pin: circulant form
+[PASS] Brannen file pin present: (a, |b|, delta)
+[PASS] note quotes Brannen pin: (a, |b|, delta)
+[PASS] record ledger row exists in audit ledger
+       record ledger row live audit fields (informational; the audit lane owns them): effective_status=retained_bounded, claim_scope=present
+[PASS] record note path pinned
+[PASS] Brannen ledger row exists in audit ledger
+       Brannen ledger row live audit fields (informational; the audit lane owns them): effective_status=retained_bounded, claim_scope=present
+[PASS] Brannen note path pinned
+[PASS] RECORD premise-quote line present exactly once
+[PASS] RECORD premise quote count is 2
+       quotes=2
+[PASS] RECORD dependency claim section extracted and substantial
+       len=2244
+[PASS] RECORD premise quote 1 meets length floor
+       len=206
+[PASS] RECORD premise quote 1 is verbatim in the dependency claim section
+[PASS] RECORD premise quote 2 meets length floor
+       len=142
+[PASS] RECORD premise quote 2 is verbatim in the dependency claim section
+[PASS] BRANNEN premise-quote line present exactly once
+[PASS] BRANNEN premise quote count is 2
+       quotes=2
+[PASS] BRANNEN dependency claim section extracted and substantial
+       len=493
+[PASS] BRANNEN premise quote 1 meets length floor
+       len=189
+[PASS] BRANNEN premise quote 1 is verbatim in the dependency claim section
+[PASS] BRANNEN premise quote 2 meets length floor
+       len=140
+[PASS] BRANNEN premise quote 2 is verbatim in the dependency claim section
+[PASS] retired ledger-scope embedding absent
+[PASS] retired citation-authority wording absent
+[PASS] Tier-A statement contains sub-admission (ii)
+[PASS] note quotes Tier-A sub-admission (ii)
+[PASS] Tier-A path is inline code, not markdown link
+
+PART B - C1 exact K-parity
+[PASS] bare spectrum cos(3 delta) is K-even
+[PASS] pointer cos component is K-even
+[PASS] pointer absolute sine component is K-even
+[PASS] pointer pair is K-even
+[PASS] N=3 A(phi) reduces to real sin(phi) response
+       -3*sqrt(3)*sin(phi)/4
+[PASS] A(-phi) == -A(phi) symbolically
+[PASS] K branch map conjugates weights and swaps branches
+[PASS] |A|^2 is K-even
+[PASS] discriminator: Re part is K-even, not filtered
+
+PART C - C2 finite route kills
+[PASS] sin(2/3) is exactly nonzero
+[PASS] cos(2/3) is exactly nonzero
+[PASS] clock rate at delta=0 is zero
+[PASS] clock rate at delta=0 differs from return amplitude
+[PASS] tuned |b| expression is exact
+       sqrt(3)/(27*sin(2/9))
+[PASS] tuned |b| is not 1
+[PASS] tuned |b| is not 1/2
+[PASS] tuned |b| is not 2
+[PASS] arg det at delta=0 is zero
+[PASS] arg det at delta=0 differs from L3
+[PASS] fluxed inverse is not 2/3
+[PASS] fluxed inverse is greater than 20 exactly
+[PASS] fluxed inverse labeled approximate instance
+[PASS] pi is irrational in sympy
+[PASS] 2/9 is rational
+[PASS] 2/9 = q*pi with rational q would force pi rational
+[PASS] 2/9 is not in pi*Q by irrationality
+[PASS] conservation quote pinned in note
+
+PART D - note discipline
+[PASS] canonical Type header is bounded_theorem
+[PASS] canonical Claim type header is bounded_theorem
+[PASS] scope boundary present
+[PASS] audit boundary present
+[PASS] legacy Status/Status authority headers absent
+[PASS] required sentence present: every registrable layer derived in this campaign
+[PASS] required sentence embedded: every registrable layer derived in this campaign
+[PASS] required sentence present: the K-odd trace is a reconstruction-layer detect
+[PASS] required sentence embedded: the K-odd trace is a reconstruction-layer detect
+[PASS] required sentence present: on the current retained surface the value is rea
+[PASS] required sentence embedded: on the current retained surface the value is rea
+[PASS] required sentence present: this is the registered-pattern normal form, not 
+[PASS] required sentence embedded: this is the registered-pattern normal form, not 
+[PASS] normal-form sentence present
+[PASS] N1 gate token present
+[PASS] N2 gate token present
+[PASS] N3 gate token present
+[PASS] N4 gate token present
+[PASS] N5 gate token present
+[PASS] N6 gate token present
+[PASS] N7 gate token present
+[PASS] N8 gate token present
+[PASS] forbidden fragment absent: only route
+[PASS] forbidden fragment absent: last route
+[PASS] forbidden fragment absent: exhausted
+[PASS] forbidden fragment absent: closes the route
+[PASS] forbidden fragment absent: PDG
+[PASS] forbidden fragment absent: new wall
+[PASS] forbidden fragment absent: terminal no-go is claimed
+[PASS] all W_ names are whitelisted
+       ['W_cycle_holonomy_value', 'W_defect_identity_unit']
+[PASS] one-wall consolidation present
+[PASS] exactly two markdown .md dependency targets
+       ['RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md', 'BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md']
+[PASS] exactly one runner markdown link
+       ['../scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py']
+[PASS] runner link points to this script
+[PASS] campaign PRs are backticked, not linked
+[PASS] occurrence PRs are backticked
+[PASS] instruction marker absent: PRESERVE VERBATIM
+[PASS] instruction marker absent: MUST BE ABSENT
+[PASS] instruction marker absent: Acceptance contract
+[PASS] instruction marker absent: runner greps
+[PASS] instruction marker absent: execute it exactly
+[PASS] instruction marker absent: ANTI-FABRICATION
+[PASS] retained_bounded token absent from note
+[PASS] Tier-A path is not markdown linked
+[PASS] no campaign note path markdown links
+[PASS] note line count in requested band
+       243
+[PASS] Verification section present
+[PASS] Primary runner header present
+
+TOTAL: PASS=111 FAIL=0
+
+----- stderr -----
+

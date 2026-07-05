@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py
+runner_sha256: 906f40fc787b390a63703473c14a6c4a1f7148c6939b05f82d8271c1c15a2d4a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
+========================================================================================
+SU2 weak one-loop inverse-alpha and scale-log bridge
+No audit verdicts are produced or edited by this runner.
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: source packet checks
+----------------------------------------------------------------------------------------
+  [PASS (A)] bridge note exists  (docs/SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md)
+  [PASS (A)] bridge cites SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS (A)] bridge cites SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md
+  [PASS (A)] bridge cites SCALE_REFERENCE_PRIMITIVE_NOTE.md
+  [PASS (A)] bridge cites HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md
+  [PASS (A)] bridge explicitly leaves u0(SU2) open
+  [PASS (A)] g2 note cites this bridge
+  [PASS (A)] scale primitive declares the Planck ruler and no dimensionless content
+  [PASS (A)] unit-conversion runner records the direct Planck-ruler decimal
+  [PASS (A)] reusable-values index records v = 246.282818290129 GeV
+  [PASS (A)] observable note displays the same EW-scale readout
+
+----------------------------------------------------------------------------------------
+Part 1: inverse-alpha calculus
+----------------------------------------------------------------------------------------
+  [PASS (A)] d alpha/d ln(mu) = - b alpha^2/(2 pi)  (d_alpha=-b*g**4/(32*pi**3))
+  [PASS (A)] d(1/alpha)/d ln(mu) = b/(2 pi)  (d_inv_alpha=b/(2*pi))
+  [PASS (A)] integral from UV to IR gives -b/(2pi) ln(mu_UV/mu_IR)  (shift=log((mu_IR/mu_UV)**(b/(2*pi))))
+  [PASS (A)] framework coefficient substitution b_2 = 19/6  (b2=19/6)
+
+----------------------------------------------------------------------------------------
+Part 2: hierarchy candidate scale-log arithmetic
+----------------------------------------------------------------------------------------
+  [PASS (A)] alpha_LM = alpha_bare/u0 is positive  (alpha_LM=0.090667836017286)
+  [PASS (A)] K = (7/8)^(1/4) alpha_LM^16 is positive  (K=2.017223509625103399e-17)
+  [PASS (A)] L_cand = -ln(K) is about 38.442224515  (L_cand=38.44222451516312)
+  [PASS (A)] v_cand from M_Pl*K matches hierarchy candidate readout  (v_cand=246.282818290129 GeV)
+  [PASS (A)] L=3844/100 is a close rounded surrogate for L_cand  (|L_cand-38.44|=0.002224515163121)
+
+----------------------------------------------------------------------------------------
+Part 2b: direct value-surface scale-log cross-check
+----------------------------------------------------------------------------------------
+  [PASS (A)] direct log ln(1.22e19 / 246.282818290129) matches displayed value  (L_direct=38.441487082215616)
+  [PASS (A)] direct value-surface log is within 0.002 of rounded L=38.44  (|L_direct-38.44|=0.001487082215618)
+  [PASS (A)] candidate-map log and direct current-value log differ by less than 0.001  (|L_cand-L_direct|=0.000737432947503)
+  [PASS (A)] using the hierarchy runner Planck decimal reproduces L_cand  (L_precise_direct=38.442224515163119)
+
+----------------------------------------------------------------------------------------
+Part 3: g2 denominator sanity with rounded versus candidate log
+----------------------------------------------------------------------------------------
+  [PASS (A)] rounded-log g2 interval is well formed  ([0.659392836186702, 0.682834304553707])
+  [PASS (A)] candidate-log g2 interval is well formed  ([0.659405625973412, 0.682848507470297])
+  [PASS (A)] using L_cand instead of 38.44 moves endpoints by less than 2e-5  (max_shift=1.420291659037787e-05)
+
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

@@ -1,5 +1,7 @@
 # Signed Gravitational Response Selector Boundary Note
 
+**Claim type:** open_gate
+
 **Date:** 2026-04-25
 **Status:** first-pass discovery-lane boundary note; not a claim surface
 **Lane:** signed gravitational response sector

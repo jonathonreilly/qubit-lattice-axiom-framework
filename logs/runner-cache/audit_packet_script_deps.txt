@@ -1,77 +1,77 @@
 ===== runner cache v1 =====
 runner: scripts/audit_packet_script_deps.py
-runner_sha256: 4ed485227c7bbcc616e202f441499ca7a90c7f869c7962ec297297972f680c01
+runner_sha256: 5597aa9c8e9c88b120b6fa44085fe20d0d93c59517176d504bc8a17aa7c6f5dd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 6.59
+elapsed_sec: 24.23
 status: ok
 ----- stdout -----
 ==============================================================================
 AUDIT PACKET SCRIPT-DEP RESOLVER
 ==============================================================================
 
-Total claims in ledger: 2370
-Pending audits in queue: 1320
+Total claims in ledger: 3445
+Pending audits in queue: 1535
 
-Claims with runner path: 2055
-Claims with no runner declared: 310
-Claims whose runner file is missing: 5
+Claims with runner path: 3168
+Claims with no runner declared: 0
+Claims whose runner file is missing: 277
 
-Pending claims with helper imports (would trigger class-C bug): 66 / 1172
+Pending claims with helper imports (would trigger class-C bug): 355 / 1421
 
 Top 20 most-imported helper scripts:
-    41x  scripts/minimal_source_driven_field_probe.py
-    27x  scripts/numpy_replay_bootstrap.py
-    24x  scripts/generative_causal_dag_interference.py
-    19x  scripts/two_body_momentum_harness.py
-    14x  scripts/gate_b_grown_joint_package.py
-    14x  scripts/causal_field_gravity.py
-    12x  scripts/topology_families.py
-    11x  scripts/gap_topological_asymmetry.py
-    11x  scripts/combined_gravity_scaling.py
-    11x  scripts/signed_gravity_aps_boundary_index_probe.py
-    10x  scripts/gap_topological_asymmetry_layernorm_combo.py
-    10x  scripts/frontier_teleportation_native_record_apparatus.py
-     9x  scripts/persistent_object_adaptive_readout_probe.py
-     9x  scripts/persistent_object_compact_shared.py
-     8x  scripts/stochastic_collapse_born_calibration.py
-     8x  scripts/central_band_layernorm_combo.py
-     8x  scripts/quasi_persistent_relaunch_probe.py
-     7x  scripts/density_matrix_analysis.py
-     7x  scripts/two_register_decoherence.py
-     7x  scripts/persistent_object_compact_inertial_probe.py
+   134x  scripts/dm_leptogenesis_exact_common.py
+   123x  scripts/canonical_plaquette_surface.py
+    94x  scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py
+    93x  scripts/frontier_dm_leptogenesis_pmns_projector_interface.py
+    78x  scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py
+    71x  scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py
+    69x  scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py
+    69x  scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py
+    68x  scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py
+    66x  scripts/frontier_dm_neutrino_postcanonical_polar_section.py
+    66x  scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py
+    64x  scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py
+    60x  scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py
+    59x  scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py
+    59x  scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py
+    48x  scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py
+    46x  scripts/minimal_source_driven_field_probe.py
+    45x  scripts/_frontier_loader.py
+    45x  scripts/frontier_finite_rank_gravity_residual.py
+    45x  scripts/frontier_same_source_metric_ansatz_scan.py
 
 Sample claims that would trigger class-C from missing helpers:
+  - alpha_s_derived_note
+      primary: scripts/frontier_alpha_s_derived_bounded_chain.py
+      helpers: ['scripts/canonical_plaquette_surface.py']
   - antigravity_sign_selector_boundary_note
       primary: scripts/gravity_signed_sector_harness.py
       helpers: ['scripts/numpy_replay_bootstrap.py']
-  - asymmetry_persistence_born_note
-      primary: scripts/asymmetry_persistence_born_calibration.py
-      helpers: ['scripts/asymmetry_persistence_collapse_pilot.py', 'scripts/asymmetry_persistence_joint_card.py', 'scripts/asymmetry_persistence_pilot.py', 'scripts/gap_topological_asymmetry.py', 'scripts/gap_topological_asymmetry_layernorm_combo.py']
-  - audited_symmetry_synthesis_note
-      primary: scripts/mirror_2d_validation.py
-      helpers: ['scripts/mirror_born_audit.py']
-  - broad_surrogate_point_source_compare_note
-      primary: scripts/broad_surrogate_point_source_compare.py
-      helpers: ['scripts/two_body_momentum_harness.py']
-  - composite_source_additivity_2d_note
-      primary: scripts/composite_source_additivity_2d_cross_family.py
-      helpers: ['scripts/lattice_2d_continuum_distance.py']
-  - composite_source_additivity_note
-      primary: scripts/composite_source_additivity_harness.py
-      helpers: ['scripts/two_body_momentum_harness.py']
-  - directional_b_geometry_normalized_holdout_transfer_mass5_note
-      primary: scripts/directional_b_geometry_normalized_holdout_transfer.py
-      helpers: ['scripts/density_matrix_analysis.py', 'scripts/directional_b_readout_compare.py', 'scripts/generative_causal_dag_interference.py', 'scripts/gravity_observable_readout_scaling_compare.py', 'scripts/gravity_packet_local_action_flow_transfer_compare.py', 'scripts/scaling_testbench.py', 'scripts/two_register_decoherence.py']
-  - directional_b_geometry_normalized_holdout_transfer_note
-      primary: scripts/directional_b_geometry_normalized_holdout_transfer.py
-      helpers: ['scripts/density_matrix_analysis.py', 'scripts/directional_b_readout_compare.py', 'scripts/generative_causal_dag_interference.py', 'scripts/gravity_observable_readout_scaling_compare.py', 'scripts/gravity_packet_local_action_flow_transfer_compare.py', 'scripts/scaling_testbench.py', 'scripts/two_register_decoherence.py']
-  - directional_b_geometry_normalized_overlap_map_note
-      primary: scripts/directional_b_geometry_normalized_overlap_map.py
-      helpers: ['scripts/density_matrix_analysis.py', 'scripts/directional_b_geometry_normalized_holdout_transfer.py', 'scripts/directional_b_overlap_onset_local_density_compare.py', 'scripts/directional_b_overlap_onset_transfer_holdout.py', 'scripts/directional_b_readout_compare.py', 'scripts/generative_causal_dag_interference.py', 'scripts/gravity_observable_readout_scaling_compare.py', 'scripts/gravity_packet_local_action_flow_transfer_compare.py', 'scripts/scaling_testbench.py', 'scripts/two_register_decoherence.py']
-  - directional_b_geometry_normalized_overlap_subcritical_n12_note
-      primary: scripts/directional_b_geometry_normalized_overlap_map.py
-      helpers: ['scripts/density_matrix_analysis.py', 'scripts/directional_b_geometry_normalized_holdout_transfer.py', 'scripts/directional_b_overlap_onset_local_density_compare.py', 'scripts/directional_b_overlap_onset_transfer_holdout.py', 'scripts/directional_b_readout_compare.py', 'scripts/generative_causal_dag_interference.py', 'scripts/gravity_observable_readout_scaling_compare.py', 'scripts/gravity_packet_local_action_flow_transfer_compare.py', 'scripts/scaling_testbench.py', 'scripts/two_register_decoherence.py']
+  - beta6_plaquette_tensor_network_finite_irrep_support_and_recoupling_wall_note_2026-06-04
+      primary: scripts/frontier_beta6_plaquette_tensor_network_2026_06_04.py
+      helpers: ['scripts/frontier_beta6_d9_coefficient_2026_06_04.py']
+  - beta_eff_onset_provenance_and_jet_extension_bounded_note_2026-06-12
+      primary: scripts/beta_eff_onset_provenance_jet_extension_2026_06_12.py
+      helpers: ['scripts/canonical_plaquette_surface.py', 'scripts/frontier_gauge_vacuum_plaquette_bridge_support.py', 'scripts/frontier_scalar_3plus1_temporal_ratio.py']
+  - c_iso_numerical_convergence_bounded_support_note_2026-05-10_numconv
+      primary: scripts/cl3_c_iso_numerical_convergence_2026_05_10_numconv.py
+      helpers: ['scripts/cl3_exact_tier_ewitness_2026_05_07_ewitness.py']
+  - causal_impact_parameter_note
+      primary: scripts/causal_impact_parameter_probe.py
+      helpers: ['scripts/evolving_network_prototype_v6.py']
+  - ckm_atlas_axiom_closure_note
+      primary: scripts/frontier_ckm_atlas_axiom_closure.py
+      helpers: ['scripts/_frontier_loader.py', 'scripts/canonical_plaquette_surface.py', 'scripts/frontier_coarse_grained_exterior_law.py', 'scripts/frontier_discrete_dtn_shell_kernel.py', 'scripts/frontier_finite_rank_gravity_residual.py', 'scripts/frontier_flux_fixed_matching_theorem.py', 'scripts/frontier_microscopic_dirichlet_bridge_principle.py', 'scripts/frontier_oh_schur_boundary_action.py', 'scripts/frontier_one_parameter_reduced_shell_law.py', 'scripts/frontier_radial_shell_matching_law.py', 'scripts/frontier_s3_time_bilinear_tensor_primitive.py', 'scripts/frontier_same_source_metric_ansatz_scan.py', 'scripts/frontier_sewing_shell_source.py', 'scripts/frontier_star_shell_projector.py', 'scripts/frontier_tensor_boundary_drive_two_channel.py', 'scripts/frontier_tensor_support_center_excess_law.py', 'scripts/frontier_tensor_universal_kernel.py', 'scripts/frontier_tensorial_einstein_regge_completion.py', 'scripts/frontier_universal_shell_profile.py']
+  - ckm_atlas_triangle_right_angle_theorem_note_2026-04-24
+      primary: scripts/frontier_ckm_atlas_triangle_right_angle.py
+      helpers: ['scripts/canonical_plaquette_surface.py']
+  - ckm_barred_apex_angle_exact_closed_form_theorem_note_2026-04-25
+      primary: scripts/frontier_ckm_barred_apex_angle_exact_closed_form.py
+      helpers: ['scripts/canonical_plaquette_surface.py']
+  - ckm_barred_circumradius_exact_closed_form_theorem_note_2026-04-25
+      primary: scripts/frontier_ckm_barred_circumradius_exact_closed_form.py
+      helpers: ['scripts/canonical_plaquette_surface.py']
 
 Wrote docs/audit/data/audit_packet_script_deps.json
 
@@ -86,7 +86,7 @@ When assembling the audit packet for claim_id X:
   4. NEW: Include all transitive helper scripts named in
      audit_packet_script_deps.json[X]['helper_runner_paths']
 
-This change would prevent 66 pending audits from
+This change would prevent 355 pending audits from
 hitting the class-C 'missing dependency' verdict due to packet
 incompleteness alone.
 

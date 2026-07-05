@@ -1,18 +1,20 @@
 # Staggered-Dirac Substep 1 — Grassmann Forcing Bridge Narrow Theorem
 
-**Date:** 2026-05-16; 2026-06-10 science-fix (U4 boundary discharged via
-the qubit-reframe closure — see §0 changelog)
+**Date:** 2026-05-16; 2026-06-10 science-fix (U4 boundary discharged);
+2026-06-11 science-fix (U4 supplier re-routed to the Quantum axiom plus
+the retained dim-two row — see §0 changelog); 2026-06-11 science-fix #2
+(D2 module repair: lowering operator = Berezin derivative, not the
+generator — see §0 changelog)
 **Type:** positive_theorem
 **Claim type:** positive_theorem
 **Claim scope:** Two-candidate collapse on the framework's physical
-per-site Hilbert space. Given the retained U4 closure (`H_x = ℂ²`, the
-single faithful complex irreducible `Cl(3,0)` module, multiplicity
-`k = 1`, supplied by the Quantum axiom via the retained 2026-05-20
-qubit-reframe theorem), the per-site dimensional readout
-`dim_C H_x = 2` excludes the free-bosonic candidate (B) and matches the
-single-pair Grassmann candidate (G) exactly; within the declared
-two-candidate canonical-pair surface, (G) is the unique surviving
-matter-generator measure, and it carries the Berezin
+per-site Hilbert space. Given the current Quantum axiom's
+one-qubit-per-site carrier plus the retained per-site dim-two theorem
+(`dim_C H_x = 2`, Pauli realization), the per-site dimensional readout
+excludes the free-bosonic candidate (B) and matches the single-pair
+Grassmann candidate (G) exactly; within the
+declared two-candidate canonical-pair surface, (G) is the unique
+surviving matter-generator measure, and it carries the Berezin
 finite-determinant partition readout. This is collapse **within the
 two-candidate surface only**: it is NOT a statistics-forcing theorem —
 the hard-core-boson frame ties with (G) on every readout checked here,
@@ -24,33 +26,59 @@ audit pipeline after independent review.
 audit verdict and downstream status are set only by the independent
 audit lane.
 **Primary runner:** [`scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py`](../scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py)
-**Runner cache:** [`logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt`](../logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt) (PASS=38, FAIL=0)
-**Authority role:** narrow algebraic bridge composing three upstream
-authorities — the retained U4 per-site identification (`H_x = ℂ²`,
-`k = 1`), the `Cl(3)` faithful complex-irrep dim-2 readout, and the
-finite-Grassmann Berezin determinant identity — into the substep-1
-two-candidate collapse consumed by the staggered-Dirac spine (e.g.
-boundary B1 of
+**Runner cache:** [`logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt`](../logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt) (PASS=45, FAIL=0)
+**Authority role:** narrow algebraic bridge composing upstream inputs
+— the Quantum axiom's one-qubit per-site carrier, the retained
+per-site dim-two readout, the `Cl(3)` faithful complex-irrep dim-2
+readout, and the finite-Grassmann Berezin determinant identity — into
+the substep-1 two-candidate collapse
+consumed by the staggered-Dirac spine (e.g. boundary B1 of
 `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`).
 
 ## 0. Changelog
 
-- **2026-06-10 (science-fix, this revision).** Boundary discharge. As
+- **2026-06-11 (science-fix #2, D2 module repair, this revision).**
+  Audit-requested repair (`missing_bridge_theorem` finding on the
+  2026-06-11 conditional audit). The earlier text presented the
+  per-site two-state module with the generator action
+  `χ_x |1⟩_x = |0⟩_x`. That action is incompatible with the cited
+  Berezin algebra: `(G3)` holds for all `x, y` **including `x = y`**,
+  so `{χ_x, χ̄_x} = 0` and
+  `χ_x (χ̄_x |0⟩_x) = − χ̄_x χ_x |0⟩_x = 0 ≠ |0⟩_x` — the generator
+  `χ_x` is an integration variable, not the lowering operator. This
+  revision rebuilds (D2) on the per-site Berezin function space
+  `F_x := Λ[χ̄_x] = ℂ·1 ⊕ ℂ·χ̄_x` (dimension 2 by nilpotency alone),
+  with the raising/lowering pair realized by **operators on** `F_x`:
+  multiplication `c̄_x := (χ̄_x ·)` and the Berezin derivative
+  `c_x := ∂/∂χ̄_x` (the same operation as the per-site Berezin
+  integral `(B2)`). The relations `c_x² = c̄_x² = 0` and
+  `{c_x, c̄_x} = 1` on `F_x` are **derived** from the graded Leibniz
+  rule of the exterior calculus (§5.2) — properties of the
+  multiplication/derivative pair, not an extra premise on the
+  generators. No claim of the form `χ_x |1⟩_x = |0⟩_x` remains
+  anywhere in this note. The runner adds the matrix-level certificate
+  (the `2×2` realization of `(c_x, c̄_x)`, `{c, c̄} = 1`, number
+  operator `N_x = c̄_x c_x` with spectrum `{0, 1}`) and a
+  repaired-slip witness (`{L_{χ}, L_{χ̄}} = 0` for generator left
+  multiplication on `Λ[χ, χ̄]` — the generators do NOT realize CAR).
+  The dimensional readout (D2) and the collapse (D5) are unchanged in
+  content; only the module presentation is repaired.
+- **2026-06-10 / 2026-06-11 (science-fix).** Boundary discharge. As
   written on 2026-05-16, this note closed only the abstract algebraic
   dichotomy (D1)–(D4) and declared "The U4 bridge remains open": the
   identification of the framework's physical per-site Hilbert space
   with the Cl(3) faithful complex irrep was out of scope, so the
   two-candidate collapse was bounded on that open bridge. That boundary
-  is now discharged by a one-hop authority that did not exist
-  when this note was written:
+  is now discharged by the current Quantum axiom's one-qubit-per-site
+  clause plus the retained per-site dim-two theorem
+  `CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`. The former
+  packaging row
   `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`
-  (ratified 2026-05-20; re-audited 2026-06-05) closes U4 directly from the Quantum axiom's
-  one-qubit-per-site content: `H_x = ℂ²` is the unique faithful complex
-  irreducible module of `M_2(ℂ) ≅ Cl(3,0)`, with multiplicity
-  `k(x) = 1`. Composed with the conditional theorem (C1) of
-  `STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md`
-  (`k = 1 ⇒ dim_C H_x = 2`, whose conditional premise `k = 1` is exactly
-  what the U4 closure supplies), the dimensional readout (D1)–(D2)
+  is a packaging row for the same axiom-baseline content, not a
+  separate derivation, so this note no longer consumes that row as a theorem.
+  With the axiom supplying the one-qubit-per-site carrier and the
+  dim-two row supplying `dim_C H_x = 2`, the dimensional readout
+  (D1)–(D2)
   becomes a statement about the physical per-site Hilbert space, and
   the two-candidate surface collapses to the single Grassmann
   candidate (D5). Claim type upgraded `bounded_theorem →
@@ -63,25 +91,33 @@ boundary B1 of
   open input (S2/FS; `axiom_first_spin_statistics_theorem` is
   unaudited and FS is not a Tier-A admission). §6 and §8 state this
   boundary; the runner computes the composition certificate, the
-  falsification leg (the collapse fails without the U4 input), and the
-  scope-boundary witness.
+  falsification leg (the collapse fails without the one-qubit/dim-two
+  input), and the scope-boundary witness.
 
 ## 1. Claim scope
 
 Let `H_x` be the framework's physical per-site Hilbert space on the
-`Z^3` substrate. By the retained U4 closure (cited in §3), `H_x = ℂ²`
-carries the single faithful complex irreducible representation of the
-real Clifford algebra `Cl(3,0) ≅ M_2(ℂ)`, with multiplicity index
-`k(x) = 1`; in particular `dim_C H_x = 2`. Let `Λ` be a finite set of
-sites and consider, on the tensor-product space `H_Λ := H_x^{⊗|Λ|}`,
+`Z^3` substrate. By the Quantum axiom and the retained per-site
+dim-two row (cited in §3), `H_x = ℂ²` carries the single faithful
+complex irreducible representation of the real Clifford algebra
+`Cl(3,0) ≅ M_2(ℂ)`; in particular `dim_C H_x = 2`. Let `Λ` be a finite set of sites and consider, on the
+tensor-product space `H_Λ := H_x^{⊗|Λ|}`,
 two abstract algebraic candidates for a "matter-generator measure":
 
 - **(Grassmann candidate G).** `2 |Λ|` generators
   `(χ_x, χ̄_x)_{x ∈ Λ}` satisfying anticommutation `(G1)-(G3)` and
   Berezin integration rules `(B1)-(B2)` as in the cited narrow theorem
-  on the Berezin determinant identity. Per-site Fock representation
-  acts on a complex vector space of dimension `2` (the two-state
-  Fock module: vacuum `|0⟩_x` and one-particle `|1⟩_x = χ̄_x|0⟩_x`).
+  on the Berezin determinant identity. Per-site state space: the
+  Berezin function space `F_x := Λ[χ̄_x] = ℂ·1 ⊕ ℂ·χ̄_x` (complex
+  dimension `2` by nilpotency `χ̄_x² = 0`), carrying the
+  multiplication operator `c̄_x := (χ̄_x ·)` and the Berezin
+  derivative `c_x := ∂/∂χ̄_x` (the operation of the per-site integral
+  `(B2)`). On `F_x` these satisfy `c_x² = c̄_x² = 0` and
+  `{c_x, c̄_x} = 1` (derived in §5.2), so `F_x` is the two-state
+  raising/lowering module with vacuum `|0⟩_x := 1` and one-particle
+  state `|1⟩_x := χ̄_x`. The generators themselves remain integration
+  variables (`{χ_x, χ̄_x} = 0` by `(G3)` at `x = y`); neither
+  generator acts as the lowering operator.
 
 - **(Commuting/"bosonic" candidate B).** `2 |Λ|` generators
   `(a_x, a_x^†)_{x ∈ Λ}` satisfying commutation
@@ -95,13 +131,16 @@ Then the following hold:
 - **(D1) Per-site Hilbert-dim mismatch (B candidate vs the physical
   per-site space).** The dimensional readout `dim_C H_x^B = ∞`
   (per-site bosonic Fock) is **strictly different** from the physical
-  per-site dimension `dim_C H_x = 2` (retained U4 closure). Hence the
+  per-site dimension `dim_C H_x = 2` (Quantum axiom plus retained
+  dim-two row).
+  Hence the
   per-site dimensional content of candidate (B) is **incompatible**
   with the framework's physical per-site Hilbert space.
 
 - **(D2) Per-site Hilbert-dim match (G candidate vs the physical
   per-site space).** The dimensional readout `dim_C H_x^G = 2`
-  (per-site Grassmann Fock from `χ̄_x^2 = 0`) is **identical** to the
+  (per-site Berezin function space `F_x = Λ[χ̄_x]`, dimension 2 from
+  `χ̄_x^2 = 0`) is **identical** to the
   physical per-site dimension `dim_C H_x = 2`.
 
 - **(D3) Algebraic dichotomy.** Within the abstract algebraic framing
@@ -125,8 +164,8 @@ Then the following hold:
   conventional normalization, structurally distinct from `det(M)`).
 
 - **(D5) Two-candidate collapse on the physical per-site space.**
-  Composing the retained U4 closure (`dim_C H_x = 2`, `k = 1`) with
-  (D1)–(D3): within the two-candidate surface {(G), (B)}, candidate
+  Composing the Quantum axiom plus the retained dim-two row
+  (`dim_C H_x = 2`) with (D1)–(D3): within the two-candidate surface {(G), (B)}, candidate
   (B) is excluded and candidate (G) is the **unique surviving**
   matter-generator measure on the framework's physical per-site
   Hilbert space, in its single-pair (`k = 1`-matched) form. The
@@ -158,25 +197,23 @@ space IS a Cl(3) faithful complex irrep") open and out of scope.
 
 Three events since then change the boundary structure:
 
-- **2026-05-20.** The Quantum axiom surface's qubit reframe
-  (one qubit per site, `M_2(ℂ) ≅ Cl(3,0)`) was recorded, and
-  `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`
-  made explicit that this baseline directly closes U4 (`H_x = ℂ²`,
-  `k = 1`). The per-site `k = 1` clause was ratified into the Quantum
-  axiom surface on 2026-05-22 (commit `f471b5bd6`; see the reaudit manifest
-  `PER_SITE_K_EQUALS_1_RATIFICATION_REAUDIT_MANIFEST_NOTE_2026-05-22.md`),
-  and the one-qubit-per-site content persists verbatim on the current
-  axiom surface (`MINIMAL_AXIOMS_2026-06-05.md`, Quantum axiom).
-- **2026-06-05.** The U4 closure row was re-audited and now has
-  retained-grade positive-theorem status on the live ledger — a one-hop
-  authority for exactly the object this note previously admitted.
+- **2026-05-20 / 2026-06-05.** The Quantum axiom surface records one
+  qubit per site, `M_2(ℂ) ≅ Cl(3,0)`, on the current axiom surface
+  `MINIMAL_AXIOMS_2026-06-05.md`.
+- **2026-06-05 / 2026-06-10.** The U4 packaging row's
+  decisive move was the identification of the former U4 bridge with the
+  one-qubit-per-site carrier the Quantum axiom already supplies —
+  baseline content, not a derivation. The object this note previously
+  admitted is therefore supplied by the axiom surface directly,
+  together with the retained dim-two row.
 - **2026-05-25 / 2026-06-05.** The statistics-agnostic no-go
   `STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`
   was independently ratified, establishing that the two-candidate
   surface omits the hard-core-boson frame and that statistics is not
   forced by the baseline plus dimension/operator-algebra data alone.
 
-This revision therefore (i) consumes the retained U4 closure and
+This revision therefore (i) consumes the Quantum axiom's
+one-qubit-per-site content plus the retained dim-two row and
 discharges the former "U4 bridge remains open" boundary, upgrading the
 two-candidate collapse to an unconditional theorem on the physical
 per-site space (D5); and (ii) records honestly, in agreement with the
@@ -188,27 +225,16 @@ input (§8).
 
 Load-bearing markdown-link upstream dependencies:
 
-- [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
-  — retained `positive_theorem` (re-audited 2026-06-05). Delivers the
-  U4 closure consumed in (D1), (D2), (D5): for every site `x ∈ Z^3`,
-  the per-site physical Hilbert space is `H_x = ℂ²`, the unique
-  faithful complex irreducible module of `M_2(ℂ) ≅ Cl(3,0)`, with
-  multiplicity `k(x) = 1`, supplied by the Quantum axiom's
-  one-qubit-per-site content. Interface check performed for this
-  revision: delivered object = consumed object exactly — the module is
-  complex (C-linear `M_2(ℂ)`-action), faithful (the real-algebra map
-  `γ_i ↦ σ_i` is an isomorphism onto `M_2(ℂ)`; 8-dim real span),
-  irreducible (scalar commutant), and single-copy (`k = 1`); these are
-  re-verified at exact symbolic precision by the runner (§9, Part 8).
-- [`STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md)
-  — retained_bounded. Consumed strictly within its bounded scope:
-  conditional sub-claim (C1) (`k = 1 ⇒ dim_C H_x = 2`) and the
-  multiplicity enumeration (M1)–(M2). Its conditional premise
-  (`k = 1`) is exactly what the retained U4 closure supplies, so the
-  composition `U4 ∘ C1` is conditional on nothing open. Its
-  counter-example surface (`k ≥ 2`) is reused here as the
-  falsification leg: without the U4 input the collapse fails (§9,
-  Part 9).
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+  — current axiom surface (chain-satisfying axiom premise node).
+  Carries the one-qubit-per-site Quantum-axiom input consumed in
+  (D1), (D2), (D5). Axiom premise nodes chain-satisfy without bounding
+  downstream rows.
+- [`CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`](CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md)
+  — retained positive theorem. Delivers the dimensional readout
+  consumed in (D1), (D2), (D5): `dim_C H_x = 2` exactly at every site,
+  with the Pauli realization `γ_i = σ_i` and finite-block tensor
+  dimension `2^{|Λ|}`.
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) §(K4)
   — retained. Provides the abstract Cl(3) faithful complex-irrep
   dim = 2 readout and the `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` split
@@ -216,20 +242,12 @@ Load-bearing markdown-link upstream dependencies:
 - [`SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
   — retained_bounded. Provides the Berezin determinant identity
   `Z_F[M] = det(M)` used in (D4), and the algebraic-Grassmann
-  nilpotency `χ_x² = 0` used in the (D2) per-site Fock dimension
-  count. Consumed strictly within its bounded scope: its premises (the
+  nilpotency `χ_x² = 0` used in the (D2) per-site function-space
+  dimension count. Consumed strictly within its bounded scope: its premises (the
   anticommutation rules `(G1)-(G3)` and Berezin rules `(B1)-(B2)`) are
   the **definition** of candidate (G) in this note, not a physical
   admission, so the boundedness does not propagate an open admission
   into (D2)/(D4).
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
-  — current axiom surface (chain-satisfying axiom premise node). Cited
-  for the interface check that the Quantum axiom's one-qubit-per-site
-  content ("the primitive physical local degree of freedom is one
-  qubit; equivalently `A_x ≅ M_2(C)`, equivalently `Cl(3,0)`") is
-  identical in content to the 2026-05-20 qubit baseline that the U4
-  closure note consumes, so the U4 authority's licensing premise is
-  still on the live axiom surface.
 
 No other note's effective status is consumed.
 
@@ -258,7 +276,8 @@ statistics-selection input (S2/FS) is **not** consumed (§8).
 
 The bosonic per-site Fock space is `H_x^B = ⊕_{n=0}^∞ C · |n⟩_x` with
 basis `{|0⟩_x, |1⟩_x, |2⟩_x, ...}` and `dim_C H_x^B = ℵ_0` (countably
-infinite). By the retained U4 closure (§5.5), `dim_C H_x = 2`. Since
+infinite). By the Quantum axiom plus the retained dim-two row (§5.5),
+`dim_C H_x = 2`. Since
 `2 ≠ ℵ_0`, the per-site dim of candidate (B) is strictly different
 from the physical per-site dimension, so candidate (B) is incompatible
 with the framework's per-site Hilbert space at the dimensional-readout
@@ -266,25 +285,65 @@ level. ∎
 
 ### 5.2 (D2) per-site Hilbert-dim match for (G)
 
-The Grassmann per-site Fock space is built from the pair
-`(χ_x, χ̄_x)` plus the cyclic vector `|0⟩_x` annihilated by `χ_x`,
-i.e., `χ_x |0⟩_x = 0`. By the algebraic anticommutation `χ_x² = 0`
-(from `(G1)` at `y = x`, which the cited Berezin-determinant narrow
-theorem records as `(C1)` per its derivable-corollaries section), only
-two states span the per-site sector:
+**State space.** The per-site Berezin function space attached to the
+pair `(χ_x, χ̄_x)` is the exterior algebra on the single generator
+`χ̄_x`:
 
 ```text
-|0⟩_x   (vacuum, χ_x |0⟩_x = 0),
-|1⟩_x   (one-particle, χ̄_x |0⟩_x; satisfies χ_x |1⟩_x = |0⟩_x).
+F_x := Λ[χ̄_x] = ℂ·1 ⊕ ℂ·χ̄_x,
+|0⟩_x := 1      (vacuum),
+|1⟩_x := χ̄_x   (one-particle state).
 ```
 
-Any further application of `χ̄_x` gives
-`χ̄_x |1⟩_x = χ̄_x χ̄_x |0⟩_x = 0` by the algebraic-Grassmann
-nilpotency `χ̄_x² = 0` (the bar-symbol analog of `(G1)`). Hence
-`H_x^G = C · |0⟩_x ⊕ C · |1⟩_x` and `dim_C H_x^G = 2`. By the retained
-U4 closure (§5.5), `dim_C H_x = 2`. Hence `dim_C H_x^G = dim_C H_x`,
-i.e., the per-site dimensional readout of (G) matches the framework's
-physical per-site Hilbert space exactly. ∎
+No higher monomials exist: `χ̄_x² = 0` by the algebraic-Grassmann
+nilpotency (`(G2)` at `y = x`, the bar-symbol analog of the `χ_x² = 0`
+nilpotency that the cited Berezin-determinant narrow theorem records
+as `(C1)` per its derivable-corollaries section). Hence
+`dim_C F_x = 2`.
+
+**Raising/lowering structure (derived, not assumed).** Two operators
+act on `F_x`: the multiplication operator `c̄_x := (χ̄_x ·)` and the
+Berezin derivative `c_x := ∂/∂χ̄_x`, defined by `∂(1) = 0`,
+`∂(χ̄_x) = 1` — the same operation as the per-site Berezin integral
+`(B2)`. On the basis `(1, χ̄_x)`:
+
+```text
+c̄_x : 1 ↦ χ̄_x,   χ̄_x ↦ χ̄_x² = 0    (raising),
+c_x  : 1 ↦ 0,     χ̄_x ↦ 1            (lowering).
+```
+
+Direct evaluation on the basis gives `c_x² = c̄_x² = 0` and the
+canonical anticommutation relation **as operators on `F_x`**:
+
+```text
+{c_x, c̄_x}(1)    = ∂(χ̄_x·1) + χ̄_x·∂(1)    = 1 + 0    = 1·1,
+{c_x, c̄_x}(χ̄_x) = ∂(χ̄_x²)  + χ̄_x·∂(χ̄_x) = 0 + χ̄_x = 1·χ̄_x,
+```
+
+so `{c_x, c̄_x} = 1` on `F_x`. This is the graded Leibniz rule of the
+exterior calculus — a **derived** property of the
+multiplication/derivative pair, not an additional premise on the
+generators. In particular `c_x |1⟩_x = |0⟩_x` and `c_x |0⟩_x = 0`
+hold by the definition of `∂`, and the number operator
+`N_x := c̄_x c_x` has spectrum `{0, 1}` with `N_x |0⟩_x = 0`,
+`N_x |1⟩_x = |1⟩_x`.
+
+**Repaired slip (2026-06-11, audit-requested).** The earlier text
+wrote the lowering action as `χ_x |1⟩_x = |0⟩_x`, assigning it to the
+generator `χ_x`. That is incompatible with the cited algebra: `(G3)`
+holds for all `x, y` **including `x = y`**, so `{χ_x, χ̄_x} = 0` and
+left multiplication by the generators on `Λ[χ_x, χ̄_x]` satisfies
+`{L_{χ_x}, L_{χ̄_x}} = 0 ≠ 1` — the generators do not realize the
+raising/lowering structure. The lowering operator on `F_x` is the
+Berezin derivative `c_x = ∂/∂χ̄_x`. The runner verifies both the
+repaired realization and the slip witness (`{L_χ, L_χ̄} = 0`) at exact
+matrix level.
+
+**Dimensional readout.** Set `H_x^G := F_x`, so `dim_C H_x^G = 2`. By
+the Quantum axiom plus the retained dim-two row (§5.5),
+`dim_C H_x = 2`. Hence `dim_C H_x^G = dim_C H_x`, i.e., the per-site
+dimensional readout of (G) matches the framework's physical per-site
+Hilbert space exactly. ∎
 
 ### 5.3 (D3) algebraic dichotomy
 
@@ -333,45 +392,37 @@ Hence the Berezin scalar finite-determinant readout `det(M)` is
 **specifically a (G)-candidate algebraic readout**, not a (B)-candidate
 one. ∎
 
-### 5.5 (D5) composition: U4 discharge and two-candidate collapse
+### 5.5 (D5) composition: Quantum/dim-two discharge and two-candidate collapse
 
-**Step 1 (retained U4 input).** By
-`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`
-(retained `positive_theorem`), the framework's per-site physical
-Hilbert space on the `Z^3` substrate is `H_x = ℂ²`, the unique
-faithful complex irreducible module of `M_2(ℂ) ≅ Cl(3,0)`, with
-multiplicity `k(x) = 1`. The licensing premise — one qubit per site —
-is the Quantum axiom on the current axiom surface
-(`MINIMAL_AXIOMS_2026-06-05.md`), identical in content to the
-2026-05-20 qubit baseline the U4 note consumes; axiom premise nodes
-chain-satisfy without bounding.
+**Step 1 (Quantum input plus retained dimensional readout).** By the
+Quantum axiom on the current axiom surface
+(`MINIMAL_AXIOMS_2026-06-05.md`), the framework's per-site primitive
+physical degree of freedom on the `Z^3` substrate is one qubit; axiom
+premise nodes chain-satisfy without bounding. By the retained
+per-site dim-two row
+`CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`,
+`dim_C H_x = 2` exactly, with Pauli realization `γ_i = σ_i`. The
+former packaging row
+`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md` is
+a reader pointer for the same axiom-baseline content, so the input is
+taken from the axiom and retained dim-two row directly.
 
-**Step 2 (multiplicity mechanics).** By (C1) of the cited
-single-module narrow bounded theorem, `k(x) = 1 ⇒ dim_C H_x = 2`. The
-conditional premise `k(x) = 1` is supplied by Step 1, so
-`dim_C H_x = 2` holds with no open conditional. (Step 1's authority
-also states `dim_C H_x = 2` directly; citing (C1) makes the
-composition's multiplicity mechanics explicit and reuses its audited
-enumeration (M1)–(M2).)
-
-**Step 3 (collapse).** Substituting the Step-2 physical readout into
+**Step 2 (collapse).** Substituting the Step-1 physical readout into
 (D1)–(D3): candidate (B) is excluded (`ℵ_0 ≠ 2`), candidate (G)
-matches (`2 = 2`) in its single-pair form (one Grassmann pair gives
-Fock dim `2 = 2k` with `k = 1`; `p ≥ 2` pairs would give `2^p ≠ 2`,
-mismatching `k = 1`). Hence, within the two-candidate canonical-pair
+matches (`2 = 2`) in its single-pair form. Hence, within the
+two-candidate canonical-pair
 surface, (G) in its single-pair form is the unique surviving
 matter-generator measure on the physical per-site Hilbert space, and
 by (D4) it carries the Berezin finite-determinant partition readout. ∎
 
 **Falsification leg (the composition is load-bearing).** Without the
-U4 input, the abstract algebraic surface admits faithful Cl(3) modules
-of every multiplicity `k ≥ 1` (per the cited single-module note's
-counter-example surface): e.g. `ρ_+ ⊕ ρ_+` on `ℂ⁴` is a faithful
-Cl(3) module with `dim_C = 4`, on which the single-pair Grassmann
-match fails (`2 ≠ 4`) while a two-pair Grassmann module (`2² = 4`)
-matches instead — so the single-pair collapse (D5) is **not** derivable
-without the U4/`k = 1` input. The runner verifies this leg explicitly
-(§9, Part 9).
+one-qubit/dim-two input, the abstract algebraic surface admits
+faithful Cl(3) modules of larger multiplicity: e.g. `ρ_+ ⊕ ρ_+` on
+`ℂ⁴` is a faithful Cl(3) module with `dim_C = 4`, on which the
+single-pair Grassmann match fails (`2 ≠ 4`) while a two-pair
+Grassmann module (`2² = 4`) matches instead. Thus the single-pair
+collapse (D5) is **not** derivable without the one-qubit/dim-two input.
+The runner verifies this leg explicitly (§9, Part 9).
 
 ## 6. What this note does NOT claim
 
@@ -420,12 +471,13 @@ without the U4/`k = 1` input. The runner verifies this leg explicitly
 - No `g_bare = 1` derivation output consumed.
 - No lattice-action carrier (Wilson plaquette, staggered phases)
   load-bearing. The per-site physical-Hilbert-space identification is
-  now consumed from the retained U4 closure authority (§3), not
+  consumed from the current axiom surface plus the retained dim-two
+  row (§3), not
   admitted.
 - No spin-statistics / FS selection input consumed (declared open
   boundary, §8).
-- No new foundational premise beyond the Lattice and Quantum axioms of
-  the current axiom surface, reached through the §3 authorities.
+- No new foundational premise beyond the current axiom surface; only
+  the Quantum input is load-bearing here.
 
 ## 8. Remaining open boundary (statistics selection; declared, not claimed)
 
@@ -466,15 +518,23 @@ verifies via sympy exact symbolic arithmetic:
    without bound as `N_max → ∞`; specifically, at `N_max ∈ {1, 2, 5,
    10, 100}` the truncated dim is `{2, 3, 6, 11, 101}`, strictly larger
    than the physical per-site dim `2` for all `N_max ≥ 2`.
-2. **(D2) per-site Grassmann dim = 2.** A two-state Fock module built
-   from `(χ_x, χ̄_x)` with `χ_x² = χ̄_x² = 0` has basis
-   `{|0⟩_x, χ̄_x|0⟩_x}` and dimensional count `dim_C H_x^G = 2`,
-   verified by exhaustive enumeration of monomials in
-   `{1, χ_x, χ̄_x, χ_x χ̄_x}` modulo `χ_x² = χ̄_x² = 0` and the
-   vacuum-cyclic-vector action.
+2. **(D2) per-site Grassmann dim = 2 (Berezin function space; repaired
+   2026-06-11).** The function space `F_x = Λ[χ̄_x]` has basis
+   `{1, χ̄_x}` and dimensional count `dim_C H_x^G = dim_C F_x = 2`,
+   verified by exhaustive enumeration of monomials modulo
+   `χ̄_x² = 0`. The matrix-level module certificate: on the basis
+   `(1, χ̄_x)`, multiplication `c̄_x` and the Berezin derivative `c_x`
+   are explicit `2×2` matrices with `c_x² = c̄_x² = 0`,
+   `{c_x, c̄_x} = 1`, `c̄_x|0⟩_x = |1⟩_x`, `c_x|1⟩_x = |0⟩_x`,
+   `c_x|0⟩_x = 0`, and number operator `N_x = c̄_x c_x = diag(0, 1)`
+   (spectrum `{0, 1}`). The repaired-slip witness: on `Λ[χ_x, χ̄_x]`
+   (4-dim), generator left multiplication satisfies
+   `{L_{χ_x}, L_{χ̄_x}} = 0 ≠ 1` — the generators do not realize the
+   raising/lowering structure; the Berezin derivative does.
 3. **(D2) match to `dim_C H_x = 2`.** The Pauli-realisation matrices
-   `σ_1, σ_2, σ_3` act on `C²` (the U4-closure carrier), so
-   `dim_C H_x = 2`, matching the (G) per-site Fock dim.
+   `σ_1, σ_2, σ_3` act on `C²` (the retained dim-two row's Pauli
+   carrier), so
+   `dim_C H_x = 2`, matching the (G) per-site function-space dim.
 4. **(D3) algebraic dichotomy enumeration.** Within the two-element
    abstract canonical-bracket framing
    `{anticommutator → Grassmann, commutator → bosonic}`, only two
@@ -490,12 +550,13 @@ verifies via sympy exact symbolic arithmetic:
    `exp(-m a_x^† a_x)` evaluated on `|0⟩_x, |1⟩_x, |2⟩_x, ...` gives
    `Tr_{H_x^B} exp(-m a_x^† a_x) = ∑_{n=0}^∞ exp(-m n) = 1/(1 - e^{-m})`,
    structurally distinct from the Grassmann scalar trace
-   `Tr_{H_x^G} exp(-m χ̄_x χ_x) = 1 + e^{-m}`.
+   `Tr_{F_x} exp(-m N_x) = 1 + e^{-m}` (with `N_x = c̄_x c_x` the
+   number operator on the Berezin function space, spectrum `{0, 1}`).
 7. **Counter-example check.** A "candidate" `(G)` with **commuting**
    generators (i.e. dropping nilpotency `χ_x² = 0`) admits an infinite
    tower of monomials, contradicting the per-site dim-2 readout: the
    runner-level countercheck that nilpotency is load-bearing for (D2).
-8. **(D5) U4 composition certificate (new, 2026-06-10).** The real-algebra
+8. **(D5) Quantum/dim-two discharge certificate (updated 2026-06-11).** The real-algebra
    map `γ_i ↦ σ_i` spans the full 8-dim real space of `M_2(ℂ)`
    (real-algebra isomorphism `Cl(3,0) ≅ M_2(ℂ)`, hence faithful); the
    commutant of `{σ_1, σ_2, σ_3}` on `ℂ²` is the scalars (irreducible,
@@ -503,13 +564,14 @@ verifies via sympy exact symbolic arithmetic:
    summand, `(n_+, n_-) = (1, 0)`, `k = 1`); `dim_C H_x = 2 = 2k`
    with `k = 1`; the collapse certificate: (B) excluded, single-pair
    (G) the unique survivor matching `k = 1`.
-9. **(D5) falsification leg (new, 2026-06-10).** Without the U4 input:
+9. **(D5) falsification leg (new, 2026-06-10).** Without the
+   one-qubit/dim-two input:
    the `k = 2` module `ρ_+ ⊕ ρ_+` on `ℂ⁴` satisfies the Clifford
    relations, is faithful (8-dim real span), and has `dim_C = 4 ≠ 2`;
    on it the single-pair Grassmann match fails (`2 ≠ 4`) while a
    two-pair Grassmann module matches (`2² = 4`). Hence the single-pair
-   collapse is not derivable without the U4/`k = 1` input — the
-   consumed retained authority is load-bearing.
+   collapse is not derivable without the one-qubit/dim-two input — that
+   consumed input is load-bearing.
 10. **(B-stat) scope-boundary witness (new, 2026-06-10).** The
     hard-core-boson frame: `σ₊² = 0` on-site (per-site Fock dim `2`,
     tying with (G) on the dimensional readout), cross-site commuting
@@ -528,7 +590,7 @@ python3 scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridg
 Expected output: deterministic, terminating with
 
 ```text
-TOTAL: PASS=38, FAIL=0
+TOTAL: PASS=45, FAIL=0
 ```
 
 including one `SCOPE-BOUNDARY (declared, not claimed): ...` line for
@@ -536,19 +598,23 @@ including one `SCOPE-BOUNDARY (declared, not claimed): ...` line for
 
 ## 10. Cross-references
 
-Load-bearing markdown-link upstream (five one-hop dependencies):
+Load-bearing markdown-link upstream (four one-hop dependencies):
 
-- [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
-- [`STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md)
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+- [`CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`](CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md)
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) §(K4)
 - [`SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
 
 Plain-text (non-load-bearing) reader pointers; following the citation-graph
 cleanup pattern, these are written without markdown links so the
 citation-graph builder does not parse them as upstream dependency
 edges:
 
+- `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`
+  — packaging row for the same axiom-baseline content this revision
+  consumes directly from the Quantum axiom plus the retained dim-two row;
+  kept as a reader pointer (baseline content, not a derivation); not a
+  premise of (D1)–(D5).
 - `STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`
   — retained no-go establishing that the two-candidate surface is not
   statistics-exhaustive (hard-core-boson frame); source of the (B-stat)
@@ -556,8 +622,9 @@ edges:
   a premise of (D1)–(D5).
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   — open-gate parent; its substep-1 U4 bridge is the boundary this
-  revision discharges via the retained U4 closure; its S2 support tier
-  carries the remaining statistics-selection residual.
+  revision discharges via the Quantum axiom plus retained dim-two row;
+  its S2 support tier carries the remaining statistics-selection
+  residual.
 - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`
   — pre-existing bounded-support packaging of substep-1 forcing; its
   Grassmann-vs-free-boson dichotomy is subsumed by (D5) on the
@@ -570,27 +637,20 @@ edges:
   qualifier itself remains until (B-stat) is retired.
 - `STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`
   — sister cross-site anticommutation (Jordan-Wigner) bridge.
-- `CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`
-  — retained sister row carrying the per-site `dim = 2` statement with
-  Pauli realization; consistent with §5.5 Step 2.
 - `CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`
   — sister narrow theorem supplying the chirality-aware classification
   consistent with the dim-2 readout.
-- `PER_SITE_K_EQUALS_1_RATIFICATION_REAUDIT_MANIFEST_NOTE_2026-05-22.md`
-  — reaudit manifest for the per-site `k = 1` ratification (commit
-  `f471b5bd6`) that preceded the U4 closure's retention.
 - `QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md`
   — hardening record for the qubit reframe and the `k = 1` clause.
 
 ## 11. Citation-graph note
 
-Load-bearing markdown-link upstream consists of exactly the five
-authorities listed in Section 3 (two retained positive-grade rows, two
-retained_bounded rows consumed strictly within their bounded scopes
-with their conditional premises discharged or definitional, and the
-chain-satisfying axiom premise node). Cross-references to the retained
-no-go, the open gate, the pre-existing substep-1 packaging, the
-Kawamoto-Smit consumer, the JW bridge, the per-site Hilbert dim row,
-the Pauli-irrep uniqueness narrow, the ratification manifest, and the
-hardening note are plain-text reader pointers (not markdown links);
+Load-bearing markdown-link upstream consists of exactly the four
+authorities listed in Section 3 (the chain-satisfying axiom premise
+node, two retained positive-grade dimensional/algebra rows, and the
+Berezin row consumed strictly within its bounded definitional scope).
+Cross-references to the retained no-go, the open gate, the pre-existing
+substep-1 packaging, the Kawamoto-Smit consumer, the JW bridge, the
+Pauli-irrep uniqueness narrow, and the hardening note are plain-text
+reader pointers (not markdown links);
 the theorem does not consume their effective statuses.

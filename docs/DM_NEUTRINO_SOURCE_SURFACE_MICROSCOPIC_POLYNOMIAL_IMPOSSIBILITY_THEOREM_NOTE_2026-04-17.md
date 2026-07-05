@@ -1,5 +1,7 @@
 # Microscopic-Polynomial Impossibility Theorem — Axiom-Level Silence on (delta, q_+)
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-17
 **Status:** OBSTRUCTION (CASE 3) -- microscopic-silence impossibility theorem
 **Script:** `scripts/frontier_dm_neutrino_source_surface_microscopic_polynomial_impossibility_theorem.py`

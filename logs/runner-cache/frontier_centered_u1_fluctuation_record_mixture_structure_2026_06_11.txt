@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/frontier_centered_u1_fluctuation_record_mixture_structure_2026_06_11.py
+runner_sha256: b73b91372e680eff156b03b40e29c3c55bdd36e6bbb08f0a326edfbea6cf48f5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.68
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  tree integrity (six seeds; guards inherited)
+==============================================================================
+  [PASS] rank guard holds on every branch, depth, and seed  (worst min-sv 0.0005)
+==============================================================================
+Part 2  (E1) the centered law is NOT distribution-stationary (seed-robust facts)
+==============================================================================
+  [PASS] at the tame published seed the centered law's ch-drift is far below the raw law's (median ratio < 0.3) -- centering helps THERE  (ratio 0.168)
+  [PASS] but at adversarial seeds the ratio rises to ~0.5+ (and individual rows exceed 1): distribution-stationarity of the centered law FAILS as a seed-robust claim -- the honest negative; cross-seed ratio spread disclosed  (ratio spread ['0.17', '0.46', '0.49', '0.36', '0.60', '0.61'])
+==============================================================================
+Part 3  (E2) spread-regime non-Gaussianity with the BIMODAL signature
+==============================================================================
+  [PASS] identified spread rows (|ch1| < 0.8) with |ch2| EXCEEDING the wrapped-Gaussian prediction by > 0.2 exist across MULTIPLE seeds: the few-atom (bimodal) signature -- the composed centered phase does NOT diffuse Gaussianly where the k^2 test has teeth (#3532-D4 control armed: at high concentration the relation is automatic and proves nothing; here, in the spread regime, it FAILS in the atomic direction)  (9 rows across seeds [1, 2, 7, 4242]; sharpest: seed 4242 depth 3: |ch2| 0.925 vs Gauss 0.147)
+==============================================================================
+Part 4  (E3) the record-mixture structure: prefix conditioning
+==============================================================================
+  [PASS] SMALL-FAMILY OBSERVATION (seed 4242, depth 3 -- DEMOTED per panel; this is also E2's sharpest bimodal row, the SAME event, disclosed): prefix-2 within-family concentration is 1 - 2.2e-5 -- but families have only 2 branches and the label-permutation null ALSO reaches ~1: cardinality-driven, NOT load-bearing record structure  (record 0.999978; null median 0.653, p95 0.989, max 0.999978)
+  [PASS] THE LOAD-BEARING EVENT (seed 4242, depth 9; 128 branches/family at prefix-3): the record prefix CLEARS the label-permutation null decisively -- genuine record-sector structure, with a within-sector remainder that conditioning does not remove (the two-component anatomy)  (record prefix-3 0.557 vs null median 0.463 / p95 0.469 / max 0.481; global 0.457)
+  [PASS] SECOND LOAD-BEARING EVENT (seed 99, depth 7): record conditioning beats the null (0.06 -> 0.35 -> 0.50 at prefixes 2, 3, vs null p95): mixture and within-sector components coexist  (global 0.057 -> prefix-2 0.347 -> prefix-3 0.502; null p95 0.315)
+   second near-exact prefix event (seed 7, depth 4): global 0.081 -> prefix-3 0.9999 (multi-instance phenomenon; family size 2 -- same cardinality caveat as d3, disclosed).
+   THE NEXT OBJECT, defined sharply: the FIXED-prefix-k conditional law as the
+   horizon grows (full conditioning is vacuous -- singleton families).  First
+   data point, honest: at seed 4242 depth 9 the fixed-k profile does NOT
+   concentrate (prefix-2 0.557, prefix-3 0.557, prefix-4 0.598)
+   -- the record-conditional re-posing is OPEN with a first negative datum.
+==============================================================================
+Part 5  (E4) consecutive-increment correlations (disclosed)
+==============================================================================
+  [PASS] consecutive centered increments: medians mostly small (< 0.15) with disclosed adversarial spikes (the independence premise is not seed-robust as-is)  (seed 20260610: med 0.020 max 0.225; seed 1: med 0.170 max 0.291; seed 2: med 0.056 max 0.113; seed 4242: med 0.186 max 0.546; seed 99: med 0.054 max 0.124; seed 7: med 0.152 max 0.498)
+==============================================================================
+TOTAL: PASS=8 FAIL=0
+==============================================================================
+SCOPE: answers the question #3532 posed on the centered U(1) fluctuation, at
+  this size/horizon: (E1) NOT distribution-stationary (seed-robust honest
+  negative -- centering removes the mean wandering, not the law's drift); (E2)
+  non-Gaussian in the spread regime with the BIMODAL/atomic signature (the
+  #3532-D4 control armed -- the failure is in the regime where the test has
+  teeth); (E3) the spread DECOMPOSES by record-prefix conditioning: a
+  demoted near-exact small-family event (cardinality caveat disclosed), a
+  null-cleared within-sector-spread event (prefix conditioning recovers ~0.56),
+  and an intermediate event -- the unconditional law is a record-mixture and
+  cannot be the CLT walker; the premise RE-POSES on the RECORD-CONDITIONAL law
+  (named next object; a re-posing, not a wall).  (E4) correlations disclosed.
+  Finite horizon; six seeds incl. adversarial (standing policy); one (eps,tau)
+  instance; numbers seed/instance-labeled.  No CLT premise delivered; #3507
+  residuals stand; residual 1 now has the three-layer anatomy (#3522 bi-frame;
+  #3532 deterministic phase; record-mixture + within-sector spread, here).
+  Born cap inherited (assembly note UNAUDITED on the live ledger, self-verified
+  at landing).  The U(1) factor is NOT identified with a physical gauge field.
+  Discrete-time (retained R1 boundaries untouched).  No new axiom/primitive/
+  measure/weight; r untouched.  Audit lane grades.
+
+----- stderr -----
+

@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_occupancy_kernel_coefficient_not_fixed_2026_06_12.py
+runner_sha256: 77ac5f1f953850953f8a81cdec74226782e412485dfe3b0bbd9fd92e525c415e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.78
+status: ok
+----- stdout -----
+PASS - Berezin determinant identity: symbolic 2x2 expansion extracts the determinant polynomial
+PASS - Berezin determinant identity: symbolic 3x3 expansion gives the six-term permutation formula
+PASS - Kernel-coefficient witness: block-diagonal singlet plus doublet factorizes from the expansion
+PASS - Kernel-coefficient witness: doublet rank-2 scaling is lambda^2 and paired rank-1 scaling is lambda
+PASS - Kernel-coefficient witness: Grassmann nilpotency and dimension are preserved under lambda scaling
+PASS - Kernel-coefficient witness: supplied circulant class remains C3-equivariant after lambda scaling
+PASS - Occupancy-atom localization: lambda freedom realizes both Z_d weight cells under the rho map
+PASS - Occupancy-atom localization: no check pins r; lambda-free admissible r set is the full binary
+PASS - Source boundary: substep1 carries evaluates-exactly/det/unique-surviving/single-pair text
+PASS - Source boundary: substep2 carries the no-physical-identification sentence fragment
+PASS - Source boundary: retained notes do not supply transfer/time/reflection-positivity strings
+PASS - Note hygiene: supplied-circulant/prerequisite/live-route language appears without closing phrases
+PASS - Note hygiene: firewall keeps the occupancy binary open and avoids the forbidden r-forcing phrase
+PASS - Note hygiene: link inventory has exactly two load-bearing markdown note links and backticked context names
+PASS - Note hygiene: no-promotion statement is present
+PASS - Runner hygiene: explicit expansion path is used and no matrix-det call substitutes for the determinant identity
+SUMMARY: PASS=16 FAIL=0
+
+----- stderr -----
+

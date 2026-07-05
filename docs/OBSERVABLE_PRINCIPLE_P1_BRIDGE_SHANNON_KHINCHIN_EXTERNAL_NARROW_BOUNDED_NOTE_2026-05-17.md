@@ -34,7 +34,7 @@ conditions as `H(p) = -k sum p_i log p_i`. None of these theorems
 **derive** additivity from independence; they assume it and characterize
 its consequences. Applying them to `|Z[J]|` on independent Grassmann
 blocks therefore reproduces the existing parent-note conclusion
-`W = c log|Z| + const` **given P1 admitted**, without retiring P1
+`W = c log|Z|` **given exact P1 additivity admitted**, without retiring P1
 itself.
 
 The honest landing is therefore a **bounded_theorem** that records
@@ -170,17 +170,19 @@ on `|Z[J]|`, then:
 
 - The continuous additive functional equation `W(r_1 r_2) = W(r_1) +
   W(r_2)` on `R_+` (with `r_i = |Z_i|`) has unique solution `W =
-  c log r + const` by Cauchy's theorem (§1.1) — equivalently, by the
+  c log r` by Cauchy's theorem (§1.1) — equivalently, by the
   Aczel-Daroczy classification (§1.4) specialized to scalar functionals
-  on `R_+`;
+  on `R_+`. An additive offset `b` would give `W(r_1 r_2) -
+  W(r_1) - W(r_2) = -b`, so exact additivity forces `b = 0`; this note
+  does not invoke a shifted or gauge-normalized composition law;
 - The Shannon-Khinchin theorem (§1.3) applied to the multinomial
   probability distribution `p_i = |Z_i|^2 / sum_j |Z_j|^2`
   reproduces `H(p) = -k sum_i p_i log p_i` — but this is the
   **Shannon entropy of a constructed probability distribution**, not
   the Grassmann observable generator.
 
-The conditional conclusion `W = c log|Z| + const` matches the parent
-note's existing conclusion. The Shannon-Khinchin scaffold therefore
+The conditional conclusion `W = c log|Z|` matches the parent note's
+exact-additive conclusion. The Shannon-Khinchin scaffold therefore
 provides a **published external uniqueness theorem cite** for the same
 content; it does not provide new closure.
 
@@ -266,7 +268,7 @@ The runner verifies the Layer-1 external content with exact
 - **T1** (Cauchy log functional equation, symbolic):
   `log(x*y) - log(x) - log(y) = 0` symbolically for arbitrary
   positive `x, y`.
-- **T2** (Cauchy log uniqueness, numerical): on a dense grid of
+- **T2** (Cauchy log equation, numerical): on a dense grid of
   positive rationals, `c * (log(x*y) - log(x) - log(y))` evaluates
   to `0` to floating-point precision.
 - **T3** (Shannon entropy additivity on independent distributions,
@@ -295,8 +297,9 @@ The runner verifies the Layer-1 external content with exact
   functional `r -> r` (identity) satisfies `f(r1 r2) = r1 r2 !=
   f(r1) + f(r2) = r1 + r2` in general, demonstrating that
   multiplicative-to-additive forcing requires the logarithm form.
-  This confirms that without admitting additivity, the classification
-  is not unique.
+  This confirms that within the exact-additive continuous class
+  Cauchy's theorem classifies the logarithm form, while without
+  admitting additivity the scaffold does not select P1.
 - **T9** (Scope boundary, parent statuses unchanged): the note
   string contains the explicit non-promotion statement for
   `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE`, `CPT_EXACT_NOTE`, and
@@ -305,7 +308,7 @@ The runner verifies the Layer-1 external content with exact
   `Claim type: bounded_theorem`, avoids forbidden status-overclaim
   strings, and contains the explicit "does not derive P1" admission.
 
-Expected runner result: `PASS=10, FAIL=0`.
+Expected runner result: `PASS=20, FAIL=0`.
 
 ## 6. Reproduction
 

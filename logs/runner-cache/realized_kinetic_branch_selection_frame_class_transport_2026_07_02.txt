@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/realized_kinetic_branch_selection_frame_class_transport_2026_07_02.py
+runner_sha256: 6bbb8059c73e6cb372ab5829f59728946af70830ef75fced472a421c4f487aef
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
+==============================================================================
+realized kinetic branch selection frame-class transport (2026-07-02)
+==============================================================================
+[PASS] [T0]  1. representative anchors recomputed for K0 and K1 on L=4,6  |  K0 flux +1, K1 flux -1
+[PASS] [T1]  2. K0 discriminator tuple invariant under random local U(1) frame, L=4, seed=11  |  dims=[1, 1, 1]
+[PASS] [T1]  3. K0 discriminator tuple invariant under random local U(1) frame, L=4, seed=23  |  dims=[1, 1, 1]
+[PASS] [T1]  4. K0 discriminator tuple invariant under random local U(1) frame, L=4, seed=37  |  dims=[1, 1, 1]
+[PASS] [T1]  5. K1 discriminator tuple invariant under random local U(1) frame, L=4, seed=11  |  dims=[2, 2, 2]
+[PASS] [T1]  6. K1 discriminator tuple invariant under random local U(1) frame, L=4, seed=23  |  dims=[2, 2, 2]
+[PASS] [T1]  7. K1 discriminator tuple invariant under random local U(1) frame, L=4, seed=37  |  dims=[2, 2, 2]
+[PASS] [T1]  8. K0 discriminator tuple invariant under random local U(1) frame, L=6, seed=11  |  dims=[1, 1, 1]
+[PASS] [T1]  9. K0 discriminator tuple invariant under random local U(1) frame, L=6, seed=23  |  dims=[1, 1, 1]
+[PASS] [T1] 10. K0 discriminator tuple invariant under random local U(1) frame, L=6, seed=37  |  dims=[1, 1, 1]
+[PASS] [T1] 11. K1 discriminator tuple invariant under random local U(1) frame, L=6, seed=11  |  dims=[2, 2, 2]
+[PASS] [T1] 12. K1 discriminator tuple invariant under random local U(1) frame, L=6, seed=23  |  dims=[2, 2, 2]
+[PASS] [T1] 13. K1 discriminator tuple invariant under random local U(1) frame, L=6, seed=37  |  dims=[2, 2, 2]
+[PASS] [T2] 14. random framed flux(-1) member absorbs back to eta0 and constant Gamma_mu, L=4  |  eta error=8.89e-16, scalarization=1.27e-15, spread=1.26e-15
+[PASS] [T2] 15. random framed flux(-1) member absorbs back to eta0 and constant Gamma_mu, L=6  |  eta error=1.33e-15, scalarization=1.93e-15, spread=1.88e-15
+[PASS] [T3] 16. variation premise selects the flux(-1) class after local U(1) transport  |  K0 remains neighbor-constant; K1 remains direction-tagged varying
+[PASS] [T3] 17. Dirac-square carrier transports through the recovered absorbing frame  |  max checked square error below 1e-10
+[PASS] [T4] 18. raw per-link phases change under an allowed frame while discriminators remain fixed  |  max raw change=2.000
+[PASS] [T4] 19. illegal sub-region SU2 frame makes the K1 edge coefficient family nonuniform  |  coefficient spread=1.021
+[PASS] [T4] 20. local U(1) frames applied to flux(+1) members never produce flux(-1)  |  plaquette flux stays +1 on all sampled K0 frames
+
+SUMMARY: class-function transport on the local U(1) frame orbits of the licensed two-flux-class surface; gauge-link backgrounds remain separate.
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

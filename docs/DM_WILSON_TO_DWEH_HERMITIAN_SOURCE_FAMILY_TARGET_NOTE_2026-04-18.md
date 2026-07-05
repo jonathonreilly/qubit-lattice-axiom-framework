@@ -1,5 +1,7 @@
 # DM Wilson-to-`dW_e^H` Hermitian Source-Family Target
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-18
 **Status:** exact current-`main` target theorem isolating the weakest honest
 constructive Wilson-side object upstream of the DM selector

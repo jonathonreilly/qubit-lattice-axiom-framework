@@ -156,6 +156,181 @@ MISSING_BRIDGE = TypedEdge(
     "missing",
 )
 
+EDGE_QUOTE_ANCHORS: dict[str, tuple[str, tuple[str, ...]]] = {
+    "route2_support_delta_A1->route2_bilinear_carrier_K_R": (
+        "S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md",
+        (
+            'Given the named admitted-context input symbols `delta_A1, u_E, u_T : R^k -> R` and the decoupling fact of section "Named ingredients under upstream assumptions" as upstream admitted inputs, the bilinear microscopic carrier `K_R(q)` on the seven-site star support is **defined** as a 2x2 matrix of polynomial expressions in `(delta_A1(q), u_E(q), u_T(q))` and the runner verifies the corresponding endpoint-column identities to numerical zero.',
+            "`K_R(q) := [[u_E(q), u_T(q)], [delta_A1(q) u_E(q), delta_A1(q) u_T(q)]]`,",
+            "`vec K_R(q) := (u_E, u_T, delta_A1 u_E, delta_A1 u_T)`.",
+        ),
+    ),
+    "route2_bright_E_T->route2_bilinear_carrier_K_R": (
+        "S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md",
+        (
+            "`K_R(q) := [[u_E(q), u_T(q)], [delta_A1(q) u_E(q), delta_A1(q) u_T(q)]]`,",
+            "`K_R(q) := (u_E(q), u_T(q), delta_A1(q) u_E(q), delta_A1(q) u_T(q))`.",
+        ),
+    ),
+    "route2_bilinear_carrier_K_R->route2_restricted_readout_family": (
+        "QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md",
+        (
+            "The exact bilinear carrier `K_R` and exact endpoint columns already force the restricted bright readout class into the channelwise form",
+        ),
+    ),
+    "route2_restricted_readout_family->route2_endpoint_algebra": (
+        "QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md",
+        (
+            "Once the readout is reduced to `P_R`, the endpoint ratios are algebraic:",
+        ),
+    ),
+    "route2_t_side_candidates->route2_q_T_5_6_and_shell_TE_minus_2": (
+        "QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md",
+        (
+            "the exact T-side candidates `rho_T = -1` and `alpha_T/alpha_E = -2` as a conditional stretch premise",
+            "given the granted T-side values `q_T = 5/6` and `gamma_T(shell)/gamma_E(shell) = -2`.",
+        ),
+    ),
+    "route2_center_TE_minus_8_9->route2_q_E_15_8": (
+        "QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md",
+        (
+            "q_T = 5/6,  s_TE = -2,  c_TE = -8/9",
+            "q_E   := gamma_E(center) / gamma_E(shell) = 1 + (beta_E / alpha_E) / 6",
+            "{5/6, -2, -8/9} -> 15/8 -> r_E = 21/4 -> D_E = 21/8.",
+        ),
+    ),
+    "route2_q_E_15_8->route2_rho_E_21_4": (
+        "QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md",
+        (
+            "q_E   := gamma_E(center) / gamma_E(shell) = 1 + (beta_E / alpha_E) / 6",
+            "beta_E / alpha_E = 21/4.",
+            "{5/6, -2, -8/9} -> 15/8 -> r_E = 21/4 -> D_E = 21/8.",
+        ),
+    ),
+    "su3_color_trace_channel->su3_R_conn_8_9": (
+        "RCONN_DERIVED_NOTE.md",
+        (
+            "The Hilbert-space adjoint fraction is exactly `(N_c^2 - 1) / N_c^2`; at `N_c = 3` this is `8/9`.",
+            "At `N_c = 3`, `F_adj = 8/9`.",
+            "The exact `8/9` support remains available as `F_adj`, not as a derived connected-trace observable.",
+        ),
+    ),
+}
+
+UNANCHORED_EDGES: tuple[tuple[str, str], ...] = ()
+
+DERIVED_ADDITIONAL_EDGES: tuple[TypedEdge, ...] = (
+    TypedEdge(
+        "route2_rho_E_21_4",
+        "route2_q_E_15_8",
+        "rho_E=21/4 is equivalent to q_E=15/8",
+        "QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md",
+        "algebra",
+    ),
+    TypedEdge(
+        "route2_q_E_15_8",
+        "route2_center_TE_minus_8_9",
+        "with granted T-side values, q_E=15/8 is equivalent to c_TE=-8/9",
+        "QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md",
+        "algebra",
+    ),
+)
+
+DERIVED_EDGE_QUOTE_ANCHORS: dict[str, tuple[str, tuple[str, ...]]] = {
+    "route2_rho_E_21_4->route2_q_E_15_8": (
+        "QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md",
+        (
+            "The target value is equivalent to any of these exact statements:",
+            "rho_E = 21/4,\nq_E = gamma_E(center)/gamma_E(shell) = 15/8,",
+        ),
+    ),
+    "route2_q_E_15_8->route2_center_TE_minus_8_9": (
+        "QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md",
+        (
+            "q_E = gamma_E(center)/gamma_E(shell) = 15/8,\nc_TE = gamma_T(center)/gamma_E(center) = -8/9",
+            "given the granted T-side values `q_T = 5/6` and\n`gamma_T(shell)/gamma_E(shell) = -2`.",
+        ),
+    ),
+}
+
+SWEEP_VOCABULARY: tuple[str, ...] = (
+    "route2_support_delta_A1",
+    "route2_bright_E_T",
+    "route2_bilinear_carrier_K_R",
+    "route2_restricted_readout_family",
+    "route2_endpoint_algebra",
+    "route2_t_side_candidates",
+    "route2_q_T_5_6_and_shell_TE_minus_2",
+    "route2_center_TE_minus_8_9",
+    "route2_q_E_15_8",
+    "route2_rho_E_21_4",
+    "su3_color_trace_channel",
+    "su3_R_conn_8_9",
+    "delta_A1",
+    "u_E",
+    "u_T",
+    "K_R",
+    "bilinear microscopic carrier",
+    "bilinear carrier",
+    "aligned bright coordinate",
+    "restricted bright readout class",
+    "channelwise form",
+    "P_R",
+    "endpoint ratios",
+    "endpoint algebra",
+    "target ratio chain",
+    "T-side candidates",
+    "q_T = 5/6",
+    "s_TE = -2",
+    "gamma_T(shell)/gamma_E(shell) = -2",
+    "c_TE = -8/9",
+    "q_E",
+    "15/8",
+    "rho_E",
+    "beta_E / alpha_E",
+    "21/4",
+    "SU(`N_c`)",
+    "SU(3)",
+    "F_adj",
+    "8/9",
+    "R_conn",
+    "adjoint fraction",
+    "connected-trace",
+)
+
+SWEEP_EXCEPTIONS: dict[tuple[str, str], str] = {
+    ("S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md", "named admitted-context inputs `(delta_A1, u_E, u_T)` and a runner-verified"): "status fragment; edge anchor appears in the statement body",
+    ("S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md", "identification `u_E \u2194 <E_x, \xb7>`, `u_T \u2194 <T1x, \xb7>` from a canonical"): "open aligned-bright gap, not an inventory edge",
+    ("S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md", "A bridge theorem identifying the bilinear carrier `K_R(q)` with any"): "names an open physical-primitive bridge, not a current edge",
+    ("S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md", "`(delta_A1, u_E, u_T)` and the decoupling fact are accepted"): "audit-scope fragment, not a relation assertion",
+    ("S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md", "Whether `(u_E, u_T)`"): "sentence fragment for non-assertion about canonical coordinates",
+    ("S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md", "Under the named admitted inputs `(delta_A1, u_E, u_T)`, define the"): "lead-in to anchored K_R definition",
+    ("S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md", "- `K_R(q_A1 + E_x) - K_R(q_A1) = [[1,0],[delta_A1(r),0]]`"): "endpoint-column identity, not a new graph edge",
+    ("S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md", "- `K_R(q_A1 + T1x) - K_R(q_A1) = [[0,1],[0,delta_A1(r)]]`"): "endpoint-column identity, not a new graph edge",
+    ("S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md", "- `gamma_E = a_E u_E + b_E delta_A1 u_E`"): "old bounded projection context, not the exact restricted readout edge",
+    ("S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md", "- `gamma_T = a_T u_T + b_T delta_A1 u_T`"): "old bounded projection context, not the exact restricted readout edge",
+    ("S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md", "`K_R(q) := (u_E(q), u_T(q), delta_A1(q) u_E(q), delta_A1(q) u_T(q))`"): "restates anchored K_R definition",
+    ("QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md", "gamma_E = alpha_E u_E + beta_E delta_A1 u_E"): "formula inside anchored restricted readout class",
+    ("QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md", "gamma_T = alpha_T u_T + beta_T delta_A1 u_T"): "formula inside anchored restricted readout class",
+    ("QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md", "So `rho_E = 0` and `rho_E = 21/4` are both exact admissible maps on the"): "non-uniqueness statement, not an edge",
+    ("QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md", "- exact bilinear carrier `K_R`: already present,"): "status summary of existing edge",
+    ("QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md", "- smallest exact missing map entry: `beta_E / alpha_E = 21/4` after the"): "status summary of target, not a relation edge",
+    ("QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md", "`beta_E / alpha_E = 21/4`, and it does not claim retained `m_u` or `m_c`"): "scope hygiene, not an edge",
+    ("QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md", "rho_E := beta_E / alpha_E = 21/4"): "target definition restating rho_E node",
+    ("QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md", "This note asks whether `rho_E = 21/4` is forced by minimal Route-2 carrier"): "question framing, not an edge",
+    ("QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md", "`q_E = 1 + rho_E/6` and `q_T = 1 + rho_T/6`"): "definition-only algebra already covered by derived/current anchors",
+    ("QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md", "** The chain derives `21/4` if `-8/9` is"): "fan-out summary restating current chain",
+    ("QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md", "force `rho_E = 21/4`"): "negative theorem conclusion fragment, not an edge",
+    ("QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md", "The value `rho_E = 21/4`"): "lead-in to derived equivalence anchor",
+    ("QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md", "VERDICT: minimal Route-2 naturality does not derive rho_E = 21/4"): "runner verdict text, not an edge",
+    ("RCONN_DERIVED_NOTE.md", "SU(3) adjoint channel fraction `8/9`"): "scope lead-in to anchored F_adj statement",
+    ("RCONN_DERIVED_NOTE.md", "This is a no-go for unconditional `R_conn = 8/9` as a physical readout"): "negation/no-go statement, not an edge",
+    ("RCONN_DERIVED_NOTE.md", "Monte Carlo connected-trace estimate with the analytic `8/9` target"): "diagnostic context, not a derivation edge",
+    ("RCONN_DERIVED_NOTE.md", "- the exact adjoint fractions, including `F_adj = 8/9` at `N_c = 3`"): "runner-certificate summary of anchored color support",
+    ("RCONN_DERIVED_NOTE.md", "Reopen the physical `R_conn = 8/9` readout only with a retained-grade"): "reopen condition, not a current edge",
+    ("QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md", "So `rho_E = 0` and `rho_E = 21/4` produce the same exact shell coupling but"): "time-coupling non-uniqueness, not a Route-2 source-domain edge",
+}
+
 
 def reachable(edges: tuple[TypedEdge, ...], source: str, target: str) -> tuple[bool, list[TypedEdge]]:
     graph: dict[str, list[TypedEdge]] = defaultdict(list)
@@ -178,6 +353,121 @@ def reachable(edges: tuple[TypedEdge, ...], source: str, target: str) -> tuple[b
 
 def edge_roles(edges: tuple[TypedEdge, ...]) -> set[str]:
     return {edge.role for edge in edges}
+
+
+def edge_key(edge: TypedEdge) -> str:
+    return f"{edge.source}->{edge.target}"
+
+
+def normalize_ws(text: str) -> str:
+    return " ".join(text.split())
+
+
+def quote_in_text(quote: str, text: str) -> bool:
+    return normalize_ws(quote) in normalize_ws(text)
+
+
+def quote_is_meaningful(quote: str) -> bool:
+    normalized = normalize_ws(quote)
+    return len(normalized.split()) >= 8 or any(token in normalized for token in ("=", ":=", "->"))
+
+
+def split_simple_sentences(text: str) -> tuple[str, ...]:
+    sentences: list[str] = []
+    current: list[str] = []
+    for char in text:
+        if char in ".;\n":
+            sentence = "".join(current).strip()
+            if sentence:
+                sentences.append(sentence)
+            current = []
+        else:
+            current.append(char)
+    sentence = "".join(current).strip()
+    if sentence:
+        sentences.append(sentence)
+    return tuple(sentences)
+
+
+def vocabulary_hits(sentence: str) -> tuple[str, ...]:
+    normalized_sentence = normalize_ws(sentence)
+    hits = {
+        item
+        for item in SWEEP_VOCABULARY
+        if normalize_ws(item) in normalized_sentence
+    }
+    return tuple(sorted(hits))
+
+
+def authority_dependency_links(note_text: str) -> tuple[str, ...]:
+    start = note_text.index("Admitted-context inputs (named upstream authorities")
+    end = note_text.index("Admitted-context inputs (configured runner constants")
+    block = note_text[start:end]
+    filenames: set[str] = set()
+    pos = 0
+    while True:
+        open_pos = block.find("](", pos)
+        if open_pos == -1:
+            break
+        close_pos = block.find(")", open_pos)
+        if close_pos == -1:
+            break
+        target = block[open_pos + 2 : close_pos]
+        name = target.rsplit("/", 1)[-1]
+        if name.endswith(".md"):
+            filenames.add(name)
+        pos = close_pos + 1
+    return tuple(sorted(filenames))
+
+
+def authority_bank(note_text: str) -> tuple[str, ...]:
+    edge_authorities = {edge.authority for edge in CURRENT_TYPED_EDGES}
+    note_authorities = set(authority_dependency_links(note_text))
+    return tuple(sorted(edge_authorities | note_authorities))
+
+
+def sweep_candidates(authorities: tuple[str, ...]) -> tuple[tuple[str, str, tuple[str, ...]], ...]:
+    candidates: list[tuple[str, str, tuple[str, ...]]] = []
+    for authority in authorities:
+        text = read(DOCS / authority)
+        for sentence in split_simple_sentences(text):
+            hits = vocabulary_hits(sentence)
+            if len(hits) >= 2:
+                candidates.append((authority, normalize_ws(sentence), hits))
+    return tuple(candidates)
+
+
+def anchor_quote_records(include_derived: bool = True) -> tuple[tuple[str, str], ...]:
+    records: list[tuple[str, str]] = []
+    tables = [EDGE_QUOTE_ANCHORS]
+    if include_derived:
+        tables.append(DERIVED_EDGE_QUOTE_ANCHORS)
+    for table in tables:
+        for authority, quotes in table.values():
+            for quote in quotes:
+                records.append((authority, normalize_ws(quote)))
+    return tuple(records)
+
+
+def candidate_matches_anchor(authority: str, sentence: str) -> bool:
+    for anchor_authority, quote in anchor_quote_records(include_derived=True):
+        if authority != anchor_authority:
+            continue
+        if sentence in quote or quote in sentence:
+            return True
+    return False
+
+
+def candidate_exception_reason(authority: str, sentence: str) -> str | None:
+    for (exception_authority, exception_sentence), reason in SWEEP_EXCEPTIONS.items():
+        if authority == exception_authority and normalize_ws(exception_sentence) == sentence:
+            return reason
+    return None
+
+
+def flip_line(name: str, configured: bool, derived: bool) -> str:
+    status = "FLIP" if configured != derived else "NO-FLIP"
+    return f"{status}: {name} configured={configured} derived={derived}"
 
 
 def main() -> int:
@@ -214,7 +504,12 @@ def main() -> int:
     bilinear_text = read(bilinear_note)
     time_text = read(time_note)
 
-    check("R_conn surface is color-projection, not Route-2 endpoint syntax", "connected color trace" in rconn_text and "Route-2" not in rconn_text)
+    check(
+        "R_conn surface is scoped color support, not Route-2 endpoint syntax",
+        "F_adj = 8/9" in rconn_text
+        and "not as a derived connected-trace observable" in normalize_ws(rconn_text)
+        and "Route-2" not in rconn_text,
+    )
     check("Route-2 bilinear carrier surface has no R_conn bridge", "K_R(q)" in bilinear_text and "R_conn" not in bilinear_text)
     check("Route-2 readout map surface has no R_conn bridge", "beta_E / alpha_E = 21/4" in readout_text and "R_conn" not in readout_text)
     check("Route-2 exact time-coupling surface has no R_conn bridge", "R_conn" not in time_text)
@@ -320,6 +615,142 @@ def main() -> int:
         "typed source-domain bridge theorem" in new_text
         and "claim status remains open" in new_text.lower(),
     )
+
+    print()
+    print("G. Quote-anchored typed-edge inventory")
+    print("-" * 72)
+    current_edge_keys = {edge_key(edge) for edge in CURRENT_TYPED_EDGES}
+    anchor_edge_keys = set(EDGE_QUOTE_ANCHORS)
+    unanchored_edge_keys = {edge_key for edge_key, _reason in UNANCHORED_EDGES}
+    check(
+        "every current typed edge is either quote-anchored or reported unanchored",
+        current_edge_keys == anchor_edge_keys | unanchored_edge_keys,
+        f"anchored={len(anchor_edge_keys)}, unanchored={len(unanchored_edge_keys)}",
+    )
+    check("no configured edge is unanchored", not UNANCHORED_EDGES)
+    if UNANCHORED_EDGES:
+        for name, reason in UNANCHORED_EDGES:
+            print(f"FINDING: UNANCHORED edge={name} reason={reason}")
+    else:
+        print("FINDING: UNANCHORED none")
+
+    for edge in CURRENT_TYPED_EDGES:
+        key = edge_key(edge)
+        authority, quotes = EDGE_QUOTE_ANCHORS[key]
+        authority_text = read(DOCS / authority)
+        check(f"anchor authority matches {key}", authority == edge.authority, authority)
+        check(f"{key} has at least one quote anchor", bool(quotes), str(len(quotes)))
+        for index, quote in enumerate(quotes, start=1):
+            check(f"{key} quote {index} is meaningful", quote_is_meaningful(quote))
+            check(f"{key} quote {index} is present in {authority}", quote_in_text(quote, authority_text))
+
+    print()
+    print("H. Exhaustiveness sweep over named authority bank")
+    print("-" * 72)
+    dependency_files = authority_dependency_links(new_text)
+    bank_files = authority_bank(new_text)
+    candidates = sweep_candidates(bank_files)
+    candidate_keys = {(authority, sentence) for authority, sentence, _hits in candidates}
+    anchored_candidates = [
+        (authority, sentence)
+        for authority, sentence, _hits in candidates
+        if candidate_matches_anchor(authority, sentence)
+    ]
+    exception_candidates = [
+        (authority, sentence)
+        for authority, sentence, _hits in candidates
+        if not candidate_matches_anchor(authority, sentence)
+        and candidate_exception_reason(authority, sentence) is not None
+    ]
+    undispositioned = [
+        (authority, sentence, hits)
+        for authority, sentence, hits in candidates
+        if not candidate_matches_anchor(authority, sentence)
+        and candidate_exception_reason(authority, sentence) is None
+    ]
+    unused_exceptions = [
+        key
+        for key in SWEEP_EXCEPTIONS
+        if (key[0], normalize_ws(key[1])) not in candidate_keys
+    ]
+    check(
+        "note dependency parser finds the closed authority-bank additions",
+        dependency_files
+        == (
+            "QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md",
+            "QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md",
+            "QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md",
+            "RCONN_DERIVED_NOTE.md",
+            "S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md",
+        ),
+        str(dependency_files),
+    )
+    check(
+        "authority bank is edge authorities plus dependency-linked Route-2 authorities",
+        bank_files
+        == (
+            "QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md",
+            "QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md",
+            "QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md",
+            "RCONN_DERIVED_NOTE.md",
+            "S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md",
+        ),
+        str(bank_files),
+    )
+    check("sweep found at least one candidate sentence", bool(candidates), str(len(candidates)))
+    check(
+        "all sweep candidate sentences are dispositioned",
+        not undispositioned,
+        f"candidates={len(candidates)}, anchored={len(anchored_candidates)}, exceptions={len(exception_candidates)}",
+    )
+    check("all sweep exceptions are currently used", not unused_exceptions, str(unused_exceptions[:2]))
+    if undispositioned:
+        for authority, sentence, hits in undispositioned:
+            print(f"FINDING: UNDISPOSITIONED authority={authority} hits={hits} sentence={sentence}")
+    check(
+        "derived additional edges keep MISSING_BRIDGE out of the inventory",
+        MISSING_BRIDGE not in DERIVED_ADDITIONAL_EDGES,
+        str(len(DERIVED_ADDITIONAL_EDGES)),
+    )
+    check(
+        "derived additional edges have quote-anchor entries",
+        {edge_key(edge) for edge in DERIVED_ADDITIONAL_EDGES} == set(DERIVED_EDGE_QUOTE_ANCHORS),
+        str(sorted(DERIVED_EDGE_QUOTE_ANCHORS)),
+    )
+    for edge in DERIVED_ADDITIONAL_EDGES:
+        key = edge_key(edge)
+        authority, quotes = DERIVED_EDGE_QUOTE_ANCHORS[key]
+        authority_text = read(DOCS / authority)
+        check(f"derived edge authority matches {key}", authority == edge.authority, authority)
+        for index, quote in enumerate(quotes, start=1):
+            check(f"derived {key} quote {index} is present in {authority}", quote_in_text(quote, authority_text))
+
+    print()
+    print("I. Reachability on quote-derived inventory")
+    print("-" * 72)
+    derived_edges = CURRENT_TYPED_EDGES + DERIVED_ADDITIONAL_EDGES
+    derived_current_reaches, derived_current_path = reachable(derived_edges, source, target)
+    derived_bridged_reaches, derived_bridged_path = reachable(derived_edges + (MISSING_BRIDGE,), source, target)
+    configured_endpoint_functor = bridged_reaches and not current_reaches
+    derived_endpoint_functor = derived_bridged_reaches and not derived_current_reaches
+    flip_lines = (
+        flip_line("source-to-rho without MISSING_BRIDGE", current_reaches, derived_current_reaches),
+        flip_line("source-to-rho with MISSING_BRIDGE", bridged_reaches, derived_bridged_reaches),
+        flip_line("endpoint-functor bypass predicate", configured_endpoint_functor, derived_endpoint_functor),
+    )
+    for line in flip_lines:
+        print(line)
+    check(
+        "derived inventory still has no source-to-rho path without missing bridge",
+        not derived_current_reaches,
+        f"path length={len(derived_current_path)}",
+    )
+    check(
+        "derived inventory plus missing bridge still reaches rho_E=21/4",
+        derived_bridged_reaches,
+        " -> ".join(edge.target for edge in derived_bridged_path),
+    )
+    check("derived reachability has no flips", all(line.startswith("NO-FLIP") for line in flip_lines))
 
     print()
     print("Summary")

@@ -45,15 +45,22 @@ Tags: [A] Berezin/measure surface  [B] OS reconstruction  [C] reconstructed
 exchange relations / GL(F)  [D] falsification + separation legs.
 
 Deterministic, no external dependencies beyond the standard library.
-Expected: TOTAL: PASS=44 FAIL=0
+Expected: TOTAL: PASS=48 FAIL=0
 """
 
+import hashlib
 from fractions import Fraction
 import itertools
 import math
+from pathlib import Path
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-10.md"
+BRIDGE_NOTE = ROOT / "docs" / "GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md"
+BRIDGE_RUNNER = ROOT / "scripts" / "gl_f_identification_bridge_check_2026_06_11.py"
+BRIDGE_CACHE = ROOT / "logs" / "runner-cache" / "gl_f_identification_bridge_check_2026_06_11.txt"
 
 
 def check(tag, desc, ok, extra=""):
@@ -67,6 +74,29 @@ def check(tag, desc, ok, extra=""):
     if extra:
         line += "  (%s)" % extra
     print(line)
+
+
+def sha256_file(path):
+    h = hashlib.sha256()
+    with open(path, "rb") as handle:
+        for chunk in iter(lambda: handle.read(65536), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def cache_header(path):
+    fields = {}
+    if not path.exists():
+        return fields
+    with open(path, "r", encoding="utf-8", errors="replace") as handle:
+        for line in handle:
+            line = line.strip()
+            if line == "----- stdout -----":
+                break
+            if ":" in line:
+                key, value = line.split(":", 1)
+                fields[key.strip()] = value.strip()
+    return fields
 
 
 # ----------------------------------------------------------------------
@@ -990,6 +1020,43 @@ def main():
                "invisible to dimension, ungraded algebra, positivity spectra, "
                "and loop data",
           nzG and nzU and sgG and sgU)
+
+    # ------------------------------------------------------------------
+    # [E] Post-audit bridge wire-up: reconstructive identification is no
+    # longer opaque; only the matter-functional/action-surface pin remains.
+    # ------------------------------------------------------------------
+    print()
+    print("--- [E] Source-graph bridge wire-up after re-audit feedback ---")
+
+    note_text = NOTE.read_text(encoding="utf-8", errors="replace")
+    bridge_text = BRIDGE_NOTE.read_text(encoding="utf-8", errors="replace") if BRIDGE_NOTE.exists() else ""
+    bridge_cache = BRIDGE_CACHE.read_text(encoding="utf-8", errors="replace") if BRIDGE_CACHE.exists() else ""
+    header = cache_header(BRIDGE_CACHE)
+    check("E", "parent note records the exact post-audit blocker and the sibling "
+               "bridge packet as the reconstruction-identification repair",
+          "missing_bridge_theorem: close or explicitly register the Berezin/RP" in note_text
+          and "GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md" in note_text
+          and "opaque reconstruction-identification bridge plus action" in note_text)
+    check("E", "bridge note decomposes the identification into carrier, parity, "
+               "dictionary, and matter-functional clauses",
+          "carrier clause" in bridge_text
+          and "parity clause" in bridge_text
+          and "dictionary clause" in bridge_text
+          and "matter-functional clause" in bridge_text
+          and "residual = the matter-functional clause" in bridge_text.lower())
+    check("E", "bridge runner cache is present, SHA-fresh, and passing",
+          BRIDGE_RUNNER.exists()
+          and BRIDGE_CACHE.exists()
+          and header.get("runner_sha256") == sha256_file(BRIDGE_RUNNER)
+          and header.get("status") == "ok"
+          and "TOTAL: PASS=39 FAIL=0" in bridge_cache,
+          "bridge cache validates the sibling packet without rerunning it here")
+    check("E", "remaining boundary is only the matter-functional/action-surface "
+               "supplier; no audit status movement or new primitive is claimed",
+          "The residual is now clause (4)" in note_text
+          and "matter-functional/action-surface clause remains" in note_text
+          and "does not promote this row" in note_text
+          and "does not add a new axiom" in note_text)
 
     print()
     print("TOTAL: PASS=%d FAIL=%d" % (PASS, FAIL))

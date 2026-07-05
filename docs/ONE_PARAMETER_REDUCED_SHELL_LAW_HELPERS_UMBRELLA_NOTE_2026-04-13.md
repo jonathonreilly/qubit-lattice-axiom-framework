@@ -7,6 +7,48 @@ modules consumed by the runner
 `scripts/frontier_one_parameter_reduced_shell_law.py`.
 **Status authority:** independent audit lane only. This wrapper note is
 audit-lane infrastructure for the corresponding helper modules.
+**Runner:**
+[`scripts/frontier_one_parameter_reduced_shell_law.py`](../scripts/frontier_one_parameter_reduced_shell_law.py)
+**Runner cache:**
+[`logs/runner-cache/frontier_one_parameter_reduced_shell_law.txt`](../logs/runner-cache/frontier_one_parameter_reduced_shell_law.txt)
+
+## Source boundary (2026-06-12)
+
+**Boundary:** renaming / helper-wrapper support only. Effective status is
+audit-derived; this source records only the claim boundary.
+
+The load-bearing move is the creation of a citeable umbrella handle for five
+helper modules. This note may be cited only as a helper-wrapper registry. It
+may not be cited as a derivation of the helper modules, the exterior projector,
+the source-family constructors, the sewing-shell projection, the radial DtN
+kernel, or the parent shell-law theorem.
+
+Promotion beyond wrapper support requires separate retained wrapper notes or
+complete helper-runner sources for the helper modules whose behavior is meant
+to be load-bearing.
+
+## Citation/use firewall (2026-06-18)
+
+Direct citations to this note are allowed only for its helper-wrapper registry
+function: it names the five helper modules consumed by
+`scripts/frontier_one_parameter_reduced_shell_law.py` and supplies the
+one-hop dependency handle that keeps those runner imports visible to the
+citation graph.
+
+Direct citations to this note may not be used as:
+
+- a derivation of any helper module;
+- a derivation of the parent one-parameter reduced shell law;
+- a derivation of the exterior projector, source-family constructors,
+  sewing-shell projection, radial DtN kernel, or nonlinear tensor / GR
+  completion;
+- an authority for moving any helper, parent shell-law, tensorial matching, or
+  publication row to a stronger status.
+
+The companion runner now checks the source tree for direct citations that lack
+this helper-wrapper / one-hop-registry qualifier. This is a source-side
+firewall only; independent audit remains responsible for any effective-status
+movement.
 
 ## Purpose
 
@@ -63,3 +105,18 @@ Its only function is to provide a citeable one-hop authority for the
 five helper modules so the parent note registers the cite-chain cleanly
 instead of listing them as `_frontier_loader.load_frontier` runner
 imports without an audit-lane handle.
+
+## Retarget: shell-helper surface now sourced by the lattice identity (2026-06-16)
+
+The exterior / shell-localization helper surface this note rests on (shell-mean
+profile equality, exterior projector `Pi_R^ext`, sewing-band shell source
+`sigma_R = H Pi_R^ext`, radial-DtN kernel, one-parameter reduced-shell law) is
+now represented by
+[`LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md`](LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md),
+which derives that shell identity from the Lattice axiom's `Z^3`
+nearest-neighbor adjacency plus the existing cubic `O_h` lift (runner-verified
+`TOTAL: PASS=14 FAIL=0`). This replaces the imported `_frontier_loader` helper
+surface for that shell content only. Independent re-audit must decide whether
+this row can move; no audit status, effective status, or `bounded -> retained`
+verdict is asserted here. Any non-shell residual (a GR / tensor completion or
+the lattice-Green `1/r` Maradudin asymptotic) is out of scope and unaffected.

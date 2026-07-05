@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lensing_exponent_is_dipole_crossover.py
-runner_sha256: 8438a1cfbc1ead097c93cf8255968ca58ccd2ad25da8789245d110cbb764d8c9
+runner_sha256: c74642de0751b1b3a4d9ac6add804d2d0805340cf07498adb4dd40c973262e62
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.63
+elapsed_sec: 2.93
 status: ok
 ----- stdout -----
 PASS T1 monopole cancels: |sum c|/sum|c| < 0.01 (got 0.0001)

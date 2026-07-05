@@ -15,13 +15,64 @@ small-surface (`1D N=8`, `2D 4x4`) bounded extraction. The finite algebraic
 selection of the last-taste retained axis is routed through the retained-bounded
 RALA source
 [`TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md`](TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md).
-The native preparation/readout theorem realizing that retained-axis carrier as
-a physical deterministic teleportation apparatus remains open.
+The full native preparation/readout theorem realizing that retained-axis
+carrier as a physical deterministic teleportation apparatus remains open, but
+the 2026-06-15 source repair below now points the apparatus/readout mechanism
+part of that theorem to explicit bounded candidate packets rather than leaving
+it as a bare placeholder.
 
 It does not claim matter teleportation, charge transfer, mass transfer, or
 faster-than-light transport. The only audited object is a quantum state
 teleportation resource extracted from the two-species ground state used by
 `scripts/frontier_bell_inequality.py`.
+
+**Status authority:** independent audit lane only. This note records source-side
+content and does not set status.
+
+## 2026-06-20 Source Repair: Narrow To The Bounded Finite Extraction Core
+
+This source repair leaves the citeable content as the **bounded finite
+extraction core** and marks the native preparation/readout/apparatus bridge
+explicitly **open** (not supplied here). No new native bridge theorem is proved
+in this repair.
+
+**Citeable core (bounded finite extraction).** On the two default finite
+surfaces (`1D N=8` and `2D 4x4`), the runner certifies, with a final
+`TOTAL: PASS=N FAIL=0` summary:
+
+- the Poisson/CHSH helper source is present and hashed;
+- the retained-axis finite operator algebra (RALA) source is present and
+  retained-bounded on the ledger, supplying `Z_axis`, `X_axis`, the axis Bell
+  projectors, the fixed pair-hop `X` membership, and the finite teleportation
+  closure;
+- the last-taste-bit logical carrier algebra is verified per surface
+  (`X` is the last-taste logical flip; `Z_last` is a logical Pauli);
+- the standard Bell teleportation convention passes an ideal-`Phi+` sanity
+  check;
+- the `G=0` null control does **not** yield a high-fidelity logical resource,
+  while both Poisson/CHSH cases do (high traced Bell overlap, positive
+  negativity, high ideal state-teleportation fidelity).
+
+This bounded offline finite extraction is the only citeable core content.
+The derived diagnostics (Bell overlap, traced/full CHSH, negativity,
+teleportation fidelity) and the `G=0` vs Poisson contrast are unchanged by this
+repair.
+
+**Open bridge (NOT part of the citeable core).** The native
+preparation/readout and apparatus bridge — a physical deterministic
+teleportation apparatus realizing the offline retained-axis last-taste carrier
+(native preparation Hamiltonian/schedule, physical detector/readout path,
+endogenous durable records, apparatus dynamics) — is **not supplied here**. It
+remains an open, not-derived requirement for a separate theorem. The runner
+segregates this bridge: the prep/readout/apparatus firewall report is printed in
+a clearly labelled
+`=== OPEN BRIDGE (... NOT part of citeable core) ===` block as an `INFO:` line
+only, and it does **not** contribute to the core `TOTAL`/`SUMMARY`.
+
+This repair introduces no new axiom, primitive, import, comparator, or approved
+bridge. The parent row therefore remains a source-side open gate for the
+physical deterministic resource, with the bounded finite extraction core as the
+citeable content.
 
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 
@@ -97,6 +148,124 @@ does **not** close the physical preparation/readout theorem, a microscopic
 apparatus Hamiltonian, durable endogenous records, or a native detector path.
 It only routes the finite logical-operator selection through a retained-bounded
 source instead of leaving it as an unregistered convention.
+
+## 2026-06-12 Native Preparation/Readout Hard Residual
+
+The finite operator algebra is no longer the live blocker: RALA supplies
+the retained-axis `Z_axis`, `X_axis`, Bell projectors, and ideal logical
+teleportation closure on the finite audited surfaces. The live blocker
+is operational.
+
+What this packet can currently say:
+
+- the Poisson/CHSH small-surface ground states, after tracing cells and
+  spectator tastes, contain a high-fidelity retained-axis logical Bell
+  resource relative to the null case;
+- the retained-axis operator convention is finite-algebraic and
+  retained-bounded;
+- the standard teleportation channel algebra closes for a supplied
+  logical resource.
+
+What it still does not derive:
+
+- a native preparation Hamiltonian or schedule that produces the
+  Poisson resource without offline diagonalization;
+- a physical detector/readout path for the retained-axis logical bit
+  and Bell record;
+- endogenous durable records or apparatus dynamics that implement the
+  ideal logical operations.
+
+The adjacent preparation/readout probe and operator-consistent
+end-to-end artifacts are therefore support-only. They narrow the target
+but do not replace the missing native preparation/readout theorem. This
+row remains an open gate for a physical deterministic resource, not a
+retained teleportation-resource theorem.
+
+Source-surface summary: this remains an open gate. The packet partially closes
+the direct blocker by preserving bounded offline Poisson/CHSH extraction
+diagnostics and retained-bounded finite retained-axis logical operator algebra.
+The live blocker is still a native preparation/readout and apparatus theorem.
+No retained-grade proposal or status promotion is made here; the independent
+audit lane remains the only authority for effective status.
+
+## 2026-06-15 Native Apparatus Candidate Bridge
+
+The 2026-06-15 source repair narrows the operational blocker without claiming
+retained status:
+
+- [`TELEPORTATION_MICROSCOPIC_CLOSURE_NOTE.md`](TELEPORTATION_MICROSCOPIC_CLOSURE_NOTE.md)
+  supplies a bounded candidate for the retained-axis Bell-record transducer:
+  native `Cl(3)/Z^3` stabilizers close, stabilizer-controlled Hamiltonian
+  terms commute, finite-time evolution writes the Bell codewords, a
+  pointer-plus-bath overlap bound suppresses record coherences exponentially,
+  and the native taste-apparatus generator class commutes with the conserved
+  support ledgers.
+- [`TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md`](TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md)
+  supplies a bounded coupled-dynamics candidate: a local retarded field front
+  gives the eikonal record carrier, a finite-strength Bell transducer replaces
+  a projective measurement placeholder, a finite spin bath decoheres the
+  record, Bob's pre-delivery state is input-independent, and the checked
+  apparatus ledger is branch independent.
+
+Together these packets partially discharge the old "native
+preparation/readout and apparatus theorem" blocker on its apparatus/readout
+side. They do **not** yet prove the full deterministic resource theorem: the
+Poisson resource is still obtained by offline diagonalization on small
+surfaces, the apparatus class is not uniquely forced from the sole framework
+axioms, the bath is a bounded explicit family rather than a continuum detector
+theorem, and independent audit has not accepted these packets as one-hop
+authorities. This row therefore remains a source-side open gate with a
+concrete bridge path, not a retained teleportation theorem and not an audit
+verdict.
+
+## 2026-06-16 Finite Preparation-Path Support
+
+The finite-resource side now has one additional bounded-support artifact:
+[`TELEPORTATION_FINITE_GAPPED_PREPARATION_PATH_SUPPORT_NOTE_2026-06-16.md`](TELEPORTATION_FINITE_GAPPED_PREPARATION_PATH_SUPPORT_NOTE_2026-06-16.md)
+and runner
+`scripts/teleportation_finite_gapped_preparation_path_support_2026_06_16.py`.
+
+That support runner checks, on the same `1D N=8` and `2D 4x4` audited
+surfaces, that the Poisson/CHSH two-particle Hamiltonian is an exactly affine
+finite path
+
+```text
+H(G) = H(0) + G W,  0 <= G <= 1000,
+```
+
+and that the sampled path grid has a positive finite ground-state gap while
+the `G=1000` endpoint remains the high-fidelity traced retained-axis Bell
+resource. This narrows the "offline diagonalization only" part of the blocker:
+the resource endpoint is not just an isolated diagonalization, but lies at the
+end of an explicit finite Hamiltonian path with sampled positive gap evidence.
+
+This does not close physical detector/readout, native apparatus dynamics,
+durable record formation, an analytic all-`G` gap lower bound, or any
+continuum/infinite-volume preparation theorem. The row therefore remains an
+open gate for a physical deterministic resource. The new artifact is bounded
+preparation-path support only; it introduces no new axiom, primitive,
+approved premise, or retained-grade proposal.
+
+## 2026-06-18 Finite Extraction Core Split
+
+The audit-confirmed finite part is now split into a bounded-support companion:
+[`TELEPORTATION_POISSON_FINITE_EXTRACTION_CORE_BOUNDED_NOTE_2026-06-18.md`](TELEPORTATION_POISSON_FINITE_EXTRACTION_CORE_BOUNDED_NOTE_2026-06-18.md)
+with runner
+`scripts/teleportation_poisson_finite_extraction_core_2026_06_18.py`.
+
+That companion certifies only the bounded offline extraction:
+
+- on the default `1D N=8` and `2D 4x4` Poisson/CHSH surfaces, the runner
+  diagonalizes the finite Hamiltonian, traces cells and spectator tastes,
+  keeps the last retained taste bit per species, and obtains a high-fidelity
+  logical Bell resource;
+- the `G=0` null control does not produce an entangled logical resource;
+- the retained-axis finite operator algebra is routed through RALA;
+- postselected branches remain diagnostic only.
+
+The split does not change this parent row's open-gate status.  The physical
+native preparation/readout and apparatus theorem remains open, and this row
+must not be cited as a deterministic physical teleportation-resource theorem.
 
 ## Script
 
@@ -180,8 +349,10 @@ Still open before promotion:
 
 - Harden beyond the two small default surfaces.
 - Check mass, coupling, dimension, boundary, and degeneracy sensitivity.
-- Add a native preparation/readout story for the retained-axis logical resource,
-  not only an offline ground-state extraction.
+- Complete the native preparation/resource-production story for the
+  retained-axis logical resource, not only an offline ground-state extraction.
+  The 2026-06-15 microscopic/apparatus candidates narrow the readout/apparatus
+  side but do not close resource preparation or uniqueness.
 - Separate deterministic traced extraction from diagnostic postselection.
 - Keep the claim restricted to quantum state teleportation.
 
@@ -237,3 +408,22 @@ The remaining repair path is to prove the native preparation/readout theorem
 for this retained-axis last-taste carrier. Until that lands, the small-surface
 positive numbers in the table are bounded diagnostics plus finite
 operator-algebra support, not a physical deterministic resource derivation.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [teleportation_operator_consistent_end_to_end_note](TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md)
+
+## 2026-06-15 audit-unlock residual certificate
+
+This row is re-opened as finite-carrier resource support only. The useful
+closed content is the explicit finite Hamiltonian diagonalization and logical
+two-qubit Bell/resource diagnostic computed by the runner and helpers.
+
+The live blocker is not the finite diagonalization. A later theorem must
+derive native preparation and readout apparatus for the logical qubits, plus
+the framework-native transport from the Poisson-like source to an operational
+teleportation resource. Until then this row should not be read as an
+apparatus-level teleportation theorem. No new apparatus axiom, observed
+protocol, or audit status is introduced by this repair.

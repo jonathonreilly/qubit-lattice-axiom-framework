@@ -1,67 +1,76 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.py
-runner_sha256: b7f767ac3f33fb337b6fcc19d4c19d99dd0de0fefcd35516969d992b5a463305
+runner_sha256: 0697c1a52aebbb81cb7c956df9bacbc6a49dc39369dff05c114c26d410dd2708
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 # Hierarchy alpha_LM exponent / species-count bridge no-go runner
 # Source note: docs/HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md
 
 ==============================================================================
-T1: regulator-by-regulator species counts at d=4
+T0: abstract exponent-difference theorem
 ==============================================================================
-  [PASS] at least three distinct species counts across standard regulators
+PASS: symbolic bridge ratio is alpha^(N_a-N_b)
+         ratio=alpha**(N_a - N_b)
+PASS: for alpha_LM witness and N=16 vs N=1, readouts are unequal
+         ratio=alpha_LM^15=231264677807230001508757967999492599355321443/1000000000000000000000000000000000000000000000000000000000000
+PASS: only alpha=1 would erase distinct exponents in the positive-alpha bridge
+         alpha_LM^15 != 1, while 1^15 = 1
+
+==============================================================================
+T1: declared regulator-by-regulator species counts at d=4
+==============================================================================
+PASS: at least three distinct species counts across listed regulators
          distinct=4, counts={'naive': 16, 'wilson': 1, 'twisted_mass': 2, 'staggered_pre_rooting': 4, 'domain_wall': 1, 'overlap': 1}
-  [PASS] naive lattice count equals 2^4 = 16 (landed parent theorem)
+PASS: naive lattice count equals 2^4 = 16 (parent theorem surface)
          naive=16
-  [PASS] Wilson lattice count equals 1 (single physical species)
+PASS: B1 declares Wilson lattice count equals 1
          wilson=1
-  [PASS] overlap and domain-wall counts equal 1 (Ginsparg-Wilson chiral)
+PASS: B1 declares overlap and domain-wall counts equal 1
          overlap=1, domain_wall=1
 
 ==============================================================================
 T2: would the bridge predict different v for different regulators?
 ==============================================================================
-  [PASS] for every non-naive regulator, predicted ln(v/M_Pl) differs from naive
+PASS: for every non-naive regulator, predicted ln(v/M_Pl) differs from naive
          non-trivial offsets for: ['wilson', 'twisted_mass', 'staggered_pre_rooting', 'domain_wall', 'overlap']
-  [PASS] Wilson-vs-naive predicted v ratio spans ~15 decades (15 factors of alpha_LM)
+PASS: Wilson-vs-naive predicted v ratio spans ~15 decades (15 factors of alpha_LM)
          |naive predicted v / Wilson predicted v| = 10^(-15.64)
 
 ==============================================================================
-T3: continuum-limit uniqueness across regulators
+T3: declared common-continuum packet across regulators
 ==============================================================================
-  [PASS] all six standard regulators target a SINGLE continuum limit (SM)
-         all map to: 'SM' (regulator-specific reductions differ; see note §4)
+PASS: B2 declares all six listed regulators target a single continuum limit (SM)
+         all map to: 'SM' (regulator-specific reductions differ; see note B2)
 
 ==============================================================================
 T4: at d=4, naive count 16 = hierarchy exponent 16 (numeric match)
 ==============================================================================
-  [PASS] naive species count = hierarchy exponent numerically at d=4
+PASS: naive species count = hierarchy exponent numerically at d=4
          naive 2^4=16, hierarchy exponent=16
 
 ==============================================================================
 T5: predicted hierarchy exponent at d != 4
 ==============================================================================
-  [PASS] 2^d table covers d=2..6 with expected naive counts
+PASS: 2^d table covers d=2..6 with expected naive counts
          table={2: 4, 3: 8, 4: 16, 5: 32, 6: 64}
-  [PASS] framework's d=4 regulator calculation is substrate/gate fixed
+PASS: framework's d=4 regulator calculation is regulator-surface/gate fixed
          alternate d would change the framework regulator calculation itself, not just the bridge
 
 ==============================================================================
 T6: regulator-independence formal check
 ==============================================================================
-  [PASS] three logically-exhaustive routes around the no-go all require substrate gate input
-         (O1) require regulator-specific alpha_LM cancellation: substrate-imposed; (O2) re-define v/M_Pl as regulator-specific lattice ratio: substrate-imposed; (O3) admit the bridge is regulator-DEPENDENT (this no-go): honest reading
+PASS: three named routes around the obstruction require a regulator-surface target
+         (O1) require regulator-specific alpha_LM cancellation: regulator-surface-imposed; (O2) re-define v/M_Pl as regulator-specific lattice ratio: regulator-surface-imposed; (O3) admit the bridge is regulator-DEPENDENT (this no-go): honest reading
 
 ==============================================================================
 T7: source-note boundary
 ==============================================================================
-  [PASS] source note has required keywords and no promotion leakage
+PASS: source note has required keywords and no promotion leakage
          missing=[], leakage=[]
-
-=== TOTAL: PASS=12, FAIL=0 ===
+TOTAL: PASS=15, FAIL=0
 
 ----- stderr -----
 

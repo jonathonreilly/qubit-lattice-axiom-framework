@@ -1,5 +1,7 @@
 # Signed Gravity Boundary `Z2` Flux `chi_g` Probe Note
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-25
 **Status:** first concrete Candidate D pass; conserved-label positive,
 source-locking negative

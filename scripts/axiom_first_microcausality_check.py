@@ -1,38 +1,95 @@
-"""Axiom-first microcausality / Lieb-Robinson check.
+"""Microcausality / Lieb-Robinson check on the Lattice/Quantum baseline.
 
 Verifies the lattice Lieb-Robinson bound on a 1D nearest-neighbor
 chain with a generic Hermitian local Hamiltonian H = sum_z h_z, where
-h_z is supported in a 2-site neighborhood of z (range r = 1).
+h_z is supported on a nearest-neighbor pair.
 
 Tests:
   T1: equal-time strict locality (M1) - operators at distinct sites
       have zero commutator at t = 0.
   T2: Lieb-Robinson bound (M2) - the commutator
       ||[alpha_t(O_0), O_d]|| <= C * exp(-d + v_LR |t|)
-      with v_LR = 2 e r J.
+      with the cited overlap-weight convention v_LR = 2 e q W R.
   T3: lightcone decay - inside lightcone (d < v_LR t), commutator
       grows; outside lightcone, commutator decays exponentially with d.
   T4: small-t expansion: at fixed d, ||[alpha_t(O_0), O_d]|| ~ |t|^d
       to leading order in t (commutator nesting depth d).
+
+The exact-log free-bilinear quasilocal bridge is exposed as a helper runner
+for the audit packet; it is checked by
+free_bilinear_quasilocal_lr_bridge_2026_06_10.py.
 """
 from __future__ import annotations
 
 import math
+import os
+import sys
+from pathlib import Path
 
 import numpy as np
 
+sys.path.insert(0, os.path.dirname(__file__))
+import free_bilinear_quasilocal_lr_bridge_2026_06_10  # noqa: F401,E402
 
-def build_local_hamiltonian(L: int, J: float, seed: int) -> np.ndarray:
+
+def validate_source_packet_text() -> None:
+    """Guard the parent note against stale finite-range bridge constants."""
+    root = Path(__file__).resolve().parents[1]
+    parent_note = root / "docs" / "AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md"
+    bridge_note = root / "docs" / "MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md"
+    parent_text = parent_note.read_text(encoding="utf-8")
+    bridge_text = bridge_note.read_text(encoding="utf-8")
+
+    parent_required = [
+        "2β · q_face",
+        "`J_max = |m| + 78`",
+        "`J_max^carrier = |m| + 78.5`",
+        "`J_max^envelope = |m| + 80`",
+        "W_surface = |m| + 296",
+        "W_carrier = |m| + 298",
+        "W_envelope = |m| + 300",
+        "`v_LR <= 16·e·(|m| + 300)`",
+    ]
+    bridge_required = [
+        "`J_max` (`|m| + 78` supplied surface / `|m| + 78.5`",
+        "`W` (`|m| + 296` / `|m| + 298` / `|m| + 300`",
+        "`v_LR := 2·e·q·W·R`",
+    ]
+    parent_forbidden = [
+        "(2β/" + "N_c) · d(d-1)/2",
+        "`J_max = |m| " + "+ 30`",
+    ]
+
+    missing_parent = [needle for needle in parent_required if needle not in parent_text]
+    missing_bridge = [needle for needle in bridge_required if needle not in bridge_text]
+    stale_parent = [needle for needle in parent_forbidden if needle in parent_text]
+    if missing_parent or missing_bridge or stale_parent:
+        details = []
+        if missing_parent:
+            details.append(f"parent missing {missing_parent}")
+        if missing_bridge:
+            details.append(f"bridge missing {missing_bridge}")
+        if stale_parent:
+            details.append(f"parent still has stale constants {stale_parent}")
+        raise AssertionError("; ".join(details))
+
+
+def build_local_hamiltonian(
+    L: int, J: float, seed: int
+) -> tuple[np.ndarray, list[float]]:
     """Build a Hermitian H on (C^2)^L of the form H = sum_z h_z
 
     where h_z is a random Hermitian operator on sites z and z+1
     (range r = 1) with norm <= J.
 
-    Returns H as a (2^L, 2^L) Hermitian matrix.
+    Returns (H, term_norms), where term_norms[z] is the operator norm of
+    the term supported on sites z and z+1. The caller uses these norms to
+    compute the per-site overlap weight W in v_LR = 2 e q W R.
     """
     rng = np.random.default_rng(seed)
     dim = 2 ** L
     H = np.zeros((dim, dim), dtype=complex)
+    term_norms: list[float] = []
     for z in range(L - 1):
         # h_z acts on sites z, z+1 as a 4x4 Hermitian matrix
         h_local = rng.standard_normal((4, 4)) + 1j * rng.standard_normal((4, 4))
@@ -42,6 +99,7 @@ def build_local_hamiltonian(L: int, J: float, seed: int) -> np.ndarray:
         norm = np.max(np.abs(eigvals))
         if norm > 0:
             h_local = h_local * (J / norm)
+        term_norms.append(float(np.max(np.abs(np.linalg.eigvalsh(h_local)))))
         # Embed h_local into the full Hilbert space (acts as identity elsewhere)
         # Tensor structure: site 0 is leftmost, site L-1 rightmost
         # h_z at sites (z, z+1): identity on sites 0..z-1, h_local on (z, z+1), identity on z+2..L-1
@@ -49,7 +107,7 @@ def build_local_hamiltonian(L: int, J: float, seed: int) -> np.ndarray:
         right_dim = 2 ** (L - z - 2)
         h_full = np.kron(np.eye(left_dim), np.kron(h_local, np.eye(right_dim)))
         H = H + h_full
-    return H
+    return H, term_norms
 
 
 def site_operator(L: int, site: int) -> np.ndarray:
@@ -81,26 +139,40 @@ def commutator_norm(A: np.ndarray, B: np.ndarray) -> float:
 
 def main() -> None:
     print("=" * 72)
-    print("AXIOM-FIRST MICROCAUSALITY / LIEB-ROBINSON CHECK")
+    print("MICROCAUSALITY / LIEB-ROBINSON CHECK")
     print("=" * 72)
     print()
+    validate_source_packet_text()
+    print("Source-packet constants:")
+    print("  parent note agrees with finite-range bridge on 2β, J branches,")
+    print("  overlap weights W = |m| + {296, 298, 300}, and v_LR = 2 e q W R")
+    print("  STATUS: PASS")
+    print()
     print("Setup:")
-    print("  1D chain of L sites with C^2 (qubit) per site (toy A1)")
-    print("  H = sum_z h_z with h_z supported on (z, z+1) (range r = 1)")
-    print("  J = max ||h_z||_op (local Hamiltonian density bound)")
-    print("  v_LR = 2 e r J (Lieb-Robinson velocity)")
+    print("  1D chain of L sites with C^2 (qubit) per site")
+    print("  H = sum_z h_z with h_z supported on nearest-neighbor pairs")
+    print("  J = max ||h_z||_op, q = max support size, R = support diameter")
+    print("  W = sup_x sum_{Z contains x} ||h_Z||_op (per-site overlap weight)")
+    print("  v_LR = 2 e q W R (overlap-weight velocity)")
     print()
 
     L = 8  # chain length
     J = 1.0
-    r = 1
-    v_LR = 2 * math.e * r * J  # Lieb-Robinson velocity
     seed = 20260501
-    H = build_local_hamiltonian(L, J, seed)
+    H, term_norms = build_local_hamiltonian(L, J, seed)
+    q = 2
+    R = 1
+    site_weight = [0.0] * L
+    for z, nrm in enumerate(term_norms):
+        site_weight[z] += nrm
+        site_weight[z + 1] += nrm
+    W = max(site_weight)
+    v_LR = 2 * math.e * q * W * R
     print(f"  L = {L} sites, dim H_phys = {2**L}")
-    print(f"  J = {J}, r = {r}")
-    print(f"  v_LR = 2 e r J = {v_LR:.4f}")
+    print(f"  J = {J}, q = {q}, W = {W}, R = {R}")
+    print(f"  v_LR = 2 e q W R = {v_LR:.4f}")
     print(f"  ||H||_op = {np.linalg.norm(H, ord=2):.4f}")
+    print("  exact-log quasilocal bridge helper: free_bilinear_quasilocal_lr_bridge_2026_06_10.py")
     print()
 
     # ----- Test 1: equal-time strict locality M1 -----
@@ -126,6 +198,7 @@ def main() -> None:
     print("-" * 72)
     print("TEST 2: Lieb-Robinson bound (M2)")
     print("        ||[alpha_t(O_0), O_d]|| <= 2 ||O_0|| ||O_d|| exp(- d + v_LR |t|)")
+    print("        finite-range carrier uses v_LR = 2 e q W R")
     print("-" * 72)
     O_0 = site_operator(L, 0)
     norm_O = float(np.linalg.norm(O_0, ord=2))
@@ -154,10 +227,10 @@ def main() -> None:
     print("-" * 72)
     print("TEST 3: lightcone decay - outside lightcone, commutator -> 0")
     print("-" * 72)
-    print("Fix t = 0.1 (so v_LR t ≈ 0.54). Sweep d = 2 to 7. Expect")
+    print("Fix t = 0.02. Sweep d = 2 to 7 outside the conservative lightcone. Expect")
     print("exponential decay of commutator with d outside the lightcone.")
     print()
-    t_fixed = 0.1
+    t_fixed = 0.02
     print(f"  t = {t_fixed}, v_LR t = {v_LR * t_fixed:.4f}")
     print(f"  {'d':>3}  {'commutator':>16}  {'log(commutator)':>20}")
     last_log = None
@@ -220,10 +293,10 @@ def main() -> None:
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     print()
     print("Note: this runner verifies the lattice Lieb-Robinson bound on a")
-    print("1D toy chain with C^2 sites (toy A1). The framework's Cl(3)")
-    print("local algebra is 8-dim per site; the proof in the companion")
-    print("theorem note is dimension-independent (Steps 1-3) and applies")
-    print("equally to the 1D toy and the framework's Cl(3) on Z^3.")
+    print("1D finite-matrix witness with C^2 sites. The proof in the")
+    print("companion theorem note is dimension-independent for finite")
+    print("one-site tensor factors and applies to the Lattice/Quantum")
+    print("baseline on Z^3.")
     if not all_ok:
         raise SystemExit(1)
 

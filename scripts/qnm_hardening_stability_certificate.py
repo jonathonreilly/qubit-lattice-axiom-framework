@@ -12,6 +12,7 @@ checks, while the fixed-field Born/Sorkin check stays machine clean.
 from __future__ import annotations
 
 import math
+from pathlib import Path
 from typing import Iterable
 
 import numpy as np
@@ -19,6 +20,7 @@ import numpy as np
 import qnm_scaling as qnm
 
 
+ROOT = Path(__file__).resolve().parents[1]
 TOL_BORN = 1e-11
 MAX_RELAX_RESIDUAL = 6e-3
 G_TEST = 0.10
@@ -243,6 +245,14 @@ def main() -> None:
     results = [_case(name, **kwargs) for name, kwargs in cases]
     assert all(r["born_error"] < TOL_BORN for r in results)
     assert all(r["relax_residual"] < MAX_RELAX_RESIDUAL for r in results)
+    note_text = (ROOT / "docs/QNM_HARDENING_FEASIBILITY_NOTE.md").read_text(encoding="utf-8")
+    note_flat = " ".join(note_text.split())
+    assert "Downstream source-boundary firewall" in note_text
+    assert "do not cite this packet as a positive QNM spectral law" in note_flat
+    assert "stable sub-Nyquist QNM hardening peaks" in note_flat
+    assert "fixed-field Born/Sorkin checks" in note_flat
+    assert "dedicated note and log pair" in note_flat
+    print("SOURCE FIREWALL PASS: QNM packet remains a bounded negative/open gate, not a positive spectral law")
     print(
         "CERTIFICATE PASS: no sub-Nyquist QNM hardening peak survives the "
         "G=0/null, fixed-field Born, threshold, window, damping, and "

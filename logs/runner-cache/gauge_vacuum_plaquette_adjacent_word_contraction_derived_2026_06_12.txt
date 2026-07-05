@@ -1,0 +1,105 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_adjacent_word_contraction_derived_2026_06_12.py
+runner_sha256: e068e0d8b9285fd595041213604147d914f9624f18d3672d95b0d0e4a4a6f384
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.13
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette adjacent-word contraction derived re-read
+beta=6.0, tensor NMAX=4, tensor MODE_MAX=80, source NMAX=7, source MODE_MAX=200
+
+================================================================================================
+Part 1: exact small-irrep Schur identity checks
+================================================================================================
+PASS: d_(1,0) = 3 exactly
+PASS: d_(0,1) = 3 exactly
+PASS: d_(1,1) = 8 exactly
+PASS: character-level inverse-link orthogonality is unit on matching small labels
+PASS: character-level inverse-link orthogonality is zero off diagonal on small labels
+PASS: shared-link matrix-element contraction gives 1/3 on the fundamental
+PASS: shared-link matrix-element contraction gives 1/3 on the antifundamental
+PASS: shared-link matrix-element contraction gives 1/8 on the adjoint
+PASS: shared-link matrix-element contraction is zero on mismatched small labels
+PASS: nontrivial shared-link contraction is inverse-dimension rather than unit
+      character=1, matrix-element=1/3
+PASS: trivial channel agrees under both contractions
+
+================================================================================================
+Part 2: finite-packet boundary vector
+================================================================================================
+PASS: cited finite packet boundary0 is the trivial-channel unit vector
+PASS: cited finite packet boundary0 is not an all-label marginal vector
+
+================================================================================================
+Part 3: one-word anchor gate
+================================================================================================
+one-word tensor Perron eigenvalue: 1.012369912748
+rho_tw1(1,0): 0.378514922317
+P_tw1(6): 0.434215413260
+PASS: one-word P(6) gate reproduces the one-word ladder anchor
+      P_tw1=0.434215413260
+
+================================================================================================
+Part 4: derived two-word re-read
+================================================================================================
+two-word matrix_element/same/trivial_slice: dim=625, eig=0.156078513772, residual=2.082e-17, psi_min=-4.592e-40
+rho10=0.211265869825, rho11=0.162259799480, P(6)=0.429196712321
+PASS: two-word derived Perron residual is small
+      residual=2.082e-17
+PASS: two-word derived Perron vector is nonnegative up to tolerance
+      psi_min=-4.592e-40
+PASS: two-word derived readout reproduces the expected finite P(6)
+      P=0.429196712321
+PASS: two-word derived rho10/rho11 reproduce the expected finite readout
+      rho10=0.211265869825, rho11=0.162259799480
+PASS: two-word derived readout moves away from the fenced comparator relative to one-word
+
+================================================================================================
+Part 5: derived three-word re-read
+================================================================================================
+three-word matrix_element/same/trivial_slice: dim=15625, eig=0.045553399484, residual=6.939e-18, psi_min=-3.341e-52
+rho10=0.211265869825, rho11=0.162259799480, P(6)=0.429196712321
+PASS: three-word derived Perron residual is small
+      residual=6.939e-18
+PASS: three-word derived readout reproduces the expected finite P(6)
+      P=0.429196712321
+PASS: three-word derived readout moves away from the fenced comparator relative to one-word
+PASS: derived three-word readout is not the non-derived matrix-element marginal value
+      derived=0.429196712321, nonderived_marginal=0.592817119605
+
+================================================================================================
+Fenced comparator distances
+================================================================================================
+Plaquette reuse license: the canonical comparison number is admitted only as a comparison/reuse number, not as a derived value, fit target, or repinning input.
+```text
+P_tw1 = 0.434215413260
+|P_tw1 - P_loc_reference| = 0.018191745785
+|P_tw1 - P_triv_reference| = 0.011683673613
+|P_tw1 - 0.5934| = 0.159184586740
+two-word matrix_element trivial_slice: P = 0.429196712321; |P - P_loc_reference| = 0.023210446723; |P - P_triv_reference| = 0.006664972674; |P - 0.5934| = 0.164203287679; direction_vs_one_word = away by 0.005018700938
+three-word matrix_element trivial_slice: P = 0.429196712321; |P - P_loc_reference| = 0.023210446723; |P - P_triv_reference| = 0.006664972674; |P - 0.5934| = 0.164203287679; direction_vs_one_word = away by 0.005018700938
+```
+PASS: canonical comparator is isolated to distance reporting
+
+================================================================================================
+Part 6: bounded statement
+================================================================================================
+Status authority: independent audit lane only. This source note does not set or predict an audit outcome.
+Named residuals: finite word count; finite dominant-weight box; finite Bessel mode support; no physical 3D environment computation; no untruncated convergence proof; no L_perp limit; no full rim-boundary eta evaluation; no canonical repinning; no analytic P(6).
+PASS: derived finite readouts are positive
+
+
+================================================================================================
+Part R: reviewer checks — measured stationarity and non-factorization
+================================================================================================
+PASS: measured stationarity: derived trivial-slice readout agrees at two and three words
+      P2=0.429196712321, P3=0.429196712321, |diff|=0.000e+00
+PASS: non-factorization guard: the three-word Perron vector is NOT rank-one across the outer word
+      second/top singular ratio = 2.419e-02 -- the stationarity is a property of the slice components, not of vector factorization
+PASS: measured slice proportionality: the all-trivial-except-word0 slice of the three-word Perron vector is a scalar multiple of the two-word slice
+      common ratio = 0.025986536153; per-weight ratio spread = 1.388e-16; the k-independence of the derived readout follows; the closed slice eigen-identity behind it is the named follow-up lemma
+TOTAL: PASS=28, FAIL=0
+
+----- stderr -----
+

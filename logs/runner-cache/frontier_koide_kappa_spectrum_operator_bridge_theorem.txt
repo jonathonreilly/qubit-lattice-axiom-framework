@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py
-runner_sha256: 25c5f07181b1d9900d11dd50fce674f9eabfb6cadb245088952381d7fb455b12
+runner_sha256: eff3f154cddc1a4ae96b04bd5b82f01f6345e8705a866423dca933818b7f07c7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.88
+elapsed_sec: 0.58
 status: ok
 ----- stdout -----
 Section A — symbolic Hermitian circulant and Fourier bridge
@@ -12,18 +12,30 @@ Section A — symbolic Hermitian circulant and Fourier bridge
   [PASS] T3 bridge a_0 = sqrt(3) * a  (symbolic)  (a_0 = sqrt(3)*a)
   [PASS] T4 bridge |z|^2 = 3 |b|^2  (symbolic)  (|z|^2 = 3*b1**2 + 3*b2**2)
   [PASS] T5 bridge identity a_0^2 - 2|z|^2 = 3 (a^2 - 2 |b|^2)
+  [PASS] T6 tr(H^3) phase term is 3(b^3+bbar^3), not a(b^3+bbar^3)  (phase piece = 6*b1*(b1**2 - 3*b2**2))
 
 Section B — PDG charged-lepton numerical realization
-  [PASS] T6 PDG Koide Q ~ 2/3  (Q = 0.66666051)
-  [PASS] T7 PDG operator-side kappa = a^2/|b|^2 ~ 2  (kappa = 2.00003693)
+  [PASS] T7 PDG Koide Q ~ 2/3  (Q = 0.66666051)
+  [PASS] T8 PDG operator-side kappa = a^2/|b|^2 ~ 2  (kappa = 2.00003693)
 
 Section C — random Herm_circ(3) sample scan
-  [PASS] T8 bridge identity holds on 200 random samples (max residual < 1e-10)  (max residual = 2.842e-14)
+  [PASS] T9 bridge identity holds on 200 random samples (max residual < 1e-10)  (max residual = 2.842e-14)
 
-Section D — closure equivalence under bridge
-  [PASS] T9 operator kappa = 2 implies spectrum a_0^2 = 2|z|^2 (zero residual on sample set)  (|spectrum residual| = 0.000e+00)
+Section D — condition equivalence under bridge
+  [PASS] T10 operator kappa = 2 implies spectrum a_0^2 = 2|z|^2 (zero residual on sample set)  (|spectrum residual| = 0.000e+00)
 
-TOTAL: PASS=9 FAIL=0
+Section E — MRU demotion source-boundary checks
+  [PASS] T11 demotion note records the 2026-06-18 source-boundary repair
+  [PASS] T12 clean claim is bounded demotion / bridge-corollary support
+  [PASS] T13 block-total route is bounded support, not standalone closure
+  [PASS] T14 demotion note prints the corrected cubic trace diagnostic
+  [PASS] T15 demotion note removes old retained-route overclaim phrases
+  [PASS] T16 demotion note narrows the SO(2) quotient failure to Path A
+  [PASS] T17 demotion note leaves alternative quotient attack routes open
+  [PASS] T18 bridge note declares bounded_theorem source claim type
+  [PASS] T19 bridge note removes retained-proposal and independent-closure overclaim phrases
+
+TOTAL: PASS=19 FAIL=0
 
 ----- stderr -----
 

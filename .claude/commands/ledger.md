@@ -57,7 +57,8 @@ the authoritative surface.
   bookkeeping (the downstream landed before its upstream was ratified), not
   a defect in the downstream proof.
 - Approved axiom/primitive premise nodes (`minimal_axioms`,
-  `scale_reference_primitive`, `kinetic_isotropy_primitive` per
+  `scale_reference_primitive`, `kinetic_isotropy_primitive`,
+  `realized_state_primitive` per
   `docs/audit/data/axiom_premise_nodes.json`) chain-satisfy dependencies
   without bounding downstream rows. Do not report them as imports or walls.
 - A claim absent from the ledger has never been seeded: treat it as a

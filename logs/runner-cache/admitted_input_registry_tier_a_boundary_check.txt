@@ -1,0 +1,71 @@
+==============================================================================
+TIER-A ADMITTED-INPUT REGISTRY BOUNDARY CHECK
+==============================================================================
+Scope: source/registry alignment only; no audit verdict changes.
+
+[PASS] source note exists -- docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] machine Tier-A registry exists -- docs/audit/data/tier_a_admissions.json
+[PASS] axiom premise registry exists -- docs/audit/data/axiom_premise_nodes.json
+[PASS] source claim type is meta
+[PASS] source status authority is audit lane only
+[PASS] source says it sets no audit status
+[PASS] source registers this primary runner
+[PASS] source registers this cached output
+[PASS] machine schema version is 1 -- 1
+[PASS] genuine admitted input count is exactly one -- 1
+[PASS] canonical ids are exactly the one Tier-A derivation target -- ['staggered_dirac_realization_gate_note_2026-05-03']
+[PASS] derivation target keys match canonical ids -- ['staggered_dirac_realization_gate_note_2026-05-03']
+[PASS] retired target keys are exactly theta -- ['strong_cp_theta_zero_note']
+[PASS] AC_phi_lambda target row exists -- staggered_dirac_realization_gate_note_2026-05-03
+[PASS] AC_phi_lambda label matches -- AC_phi_lambda
+[PASS] AC_phi_lambda has no-go portfolio -- ['koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24', 'koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24', 'koide_delta_marked_relative_cobordism_no_go_note_2026-04-24']
+[PASS] AC_phi_lambda has minimum decomposition -- ['reading_occupancy_selection', 'delta_readout_identification_R_eta', 'species_bridge']
+[PASS] AC_phi_lambda has sharpening source list
+[PASS] AC_phi_lambda has three named minimum atoms
+[PASS] theta retired row exists -- retired_derivation_targets
+[PASS] theta retired label matches -- theta
+[PASS] theta retired no-go portfolio preserved -- ['strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16']
+[PASS] theta retired minimum decomposition preserved
+[PASS] theta retirement record present
+[PASS] theta retirement mechanism is retained derivation -- retired_by_retained_derivation
+[PASS] theta retirement records owner approval location
+[PASS] theta retirement records scope
+[PASS] theta retirement records discharge basis
+[PASS] theta no longer an active derivation target
+[PASS] convention rows are present -- ['g_bare_rigidity_theorem_note', 'hypercharge_identification_note']
+[PASS] Y0 convention label matches -- Y0
+[PASS] Y0 is vacuous convention -- vacuous normalization convention
+[PASS] Y0 not admitted derivation target
+[PASS] g0 convention label matches -- g0
+[PASS] g0 is vacuous convention -- vacuous rescaling convention (g <-> beta gauge choice)
+[PASS] g0 not admitted derivation target
+[PASS] reclassified primitives are present -- ['minimal_axioms_record', 'scale_reference_primitive']
+[PASS] Record axiom reclassification label matches -- Record axiom
+[PASS] Record axiom not admitted derivation target
+[PASS] scale-reference primitive reclassification label matches -- scale-reference primitive
+[PASS] scale-reference primitive not admitted derivation target
+[PASS] Record lives in axiom-premise registry -- ['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']
+[PASS] Scale reference lives in axiom-premise registry -- ['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']
+[PASS] Tier-A targets are not axiom-premise ids -- []
+[PASS] retired targets are not axiom-premise ids -- []
+[PASS] Tier-A conventions are not axiom-premise ids -- []
+[PASS] note states Record retired from Tier A
+[PASS] note states theta retired from Tier A
+[PASS] note states count is one
+[PASS] note keeps observable-principle parent outside Record
+[PASS] note says scale primitive is not counted
+[PASS] note says Y0 and g0 are not counted
+[PASS] note states two dimensionless Tier-A admissions
+[PASS] note says sharpening adds/removes/regrades nothing
+[PASS] note says dependent rows stay bounded
+[PASS] note says audit status remains audit-lane-only
+[PASS] note propagation says Tier-A accepted premise is bounded
+[PASS] note says no hand-maintained backlinks
+[PASS] forbidden positive status claim absent: sets audit status
+[PASS] forbidden positive status claim absent: promotes rows to retained
+[PASS] forbidden positive status claim absent: changes rows' effective_status
+[PASS] forbidden positive status claim absent: Tier-A derivation targets chain-satisfy without bounding
+[PASS] forbidden positive status claim absent: Record is a Tier-A admission
+[PASS] forbidden positive status claim absent: scale-reference primitive is a Tier-A admission
+
+SUMMARY: TIER-A REGISTRY BOUNDARY PASS=64 FAIL=0

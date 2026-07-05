@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_weyl_determinant_tail_domination_rung_eleven_bounded_2026_06_12.py
+runner_sha256: 06f343085ce0aa06088228dbafd81ec30f26a1213d22116d5f0b73fa8523537e
+timeout_sec: 540
+exit_code: 0
+elapsed_sec: 2.34
+status: ok
+----- stdout -----
+Native gauge-transfer Weyl-determinant tail-domination obstruction runner
+MODE_MAX=220; K_W(A) and true-tail constants are not fitted
+
+PASS: one-hop authority files are present
+      docs/NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_ASSEMBLY_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md, docs/NATIVE_GAUGE_TRANSFER_UNIFORM_BESSEL_LOCAL_CLT_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md, docs/NATIVE_GAUGE_TRANSFER_OPERATOR_NORM_REMAINDER_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md, docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md, scripts/frontier_su3_wilson_closed_form_fanout_2026_05_04.py
+PASS: authority anchors contain determinant expansion, H_det, scalar P1, saddle, recurrence, and tail markers
+      checked exact quote-anchor substrings
+PASS: determinant assembly note lacks the requested 25-34 percent quote anchor
+      runner treats 25-34 percent rows as recomputed witnesses, not quote anchors
+PASS: note contains required boundary, outcome, cache, and discipline markers
+      checked source-note guard strings
+PASS: note avoids overreach and fitted-constant guard phrases
+      scanned bounded banned phrase set
+PASS: note avoids float-dyadic exact-rational artifacts
+      float-dyadic guard scan
+FINITE DETERMINANT PROPAGATION WITNESS
+beta= 48 p= 4 q= 3 mode= +0 t=16.0 detG=4.136376e-06 S1/detG=+2.128533e-01 Had/|detG|=138.448
+beta= 96 p= 6 q= 5 mode= -4 t=32.0 detG=1.402599e-06 S1/detG=+1.112745e+00 Had/|detG|=326.813
+beta= 96 p= 6 q= 5 mode= +4 t=32.0 detG=2.568950e-08 S1/detG=-2.129578e+00 Had/|detG|=380.742
+PASS: finite determinant expansion has large Hadamard-to-determinant cancellation witnesses
+      Had/|detG| range=(138.448, 380.742)
+PASS: first correction sum is finite but not a normalized K_W proof
+      max |S1/detG|=2.129578
+EXACT-TO-SADDLE WITNESS ROWS
+beta= 48 p= 4 q= 3 r_exact=25.894978539180 r_saddle=26.882522035981 rel=-3.673552e-02
+beta= 96 p= 6 q= 5 r_exact=73.579022615880 r_saddle=75.023779892741 rel=-1.925732e-02
+beta=192 p=10 q= 8 r_exact=207.380571748836 r_saddle=209.688188327461 rel=-1.100499e-02
+PASS: leading saddle witnesses match the retained decreasing-residual pattern
+      witness only; no K_W is inferred
+DETERMINANT-MODE TAIL WITNESS ROWS
+beta= 96 p= 6 q= 5 window=floor(1.25*sqrt(t))= 7 outside_mass=0.249199184790
+beta=192 p=10 q= 8 window=floor(1.25*sqrt(t))=10 outside_mass=0.344182812319
+PASS: mode-window witness reproduces the 25-34 percent tail scale
+      outside masses=0.249199184790, 0.344182812319
+CUTOFF-SCALING FALSIFIER beta=192 p=10 q=8
+sqrt(t) window=10 outside_mass=0.344182812319
+beta^(1/3) window= 7 outside_mass=0.600571111925
+sqrt(beta) window=17 outside_mass=0.026879797238
+PASS: wrong cutoff scalings visibly alter the mode-tail witness
+      tail surface is sensitive to the scaling convention
+C00 NORMALIZATION AND FINITE WEIGHT-TAIL WITNESSES
+beta= 48 e^-beta c00=2.743640682111e-06 beta^(3/2)*e^-beta*c00=9.124080113527e-04
+beta= 96 e^-beta c00=1.734045316585e-07 beta^(3/2)*e^-beta*c00=1.631050067134e-04
+beta=192 e^-beta c00=1.089636751407e-08 beta^(3/2)*e^-beta*c00=2.898902346594e-05
+PASS: c00 witness rows are positive but not an analytic lower bound
+      positivity is witnessed numerically only
+finite outside-weight grid beta=96 cap=12 shell=20 max_row=(4, 13) max_scaled_exact=0.034121300042 K_tail_sad=1.329294628913
+PASS: finite outside-weight witness is bounded on the sampled grid
+      saddle tail is a loose proxy and not a true Wilson tail proof
+WRONG-STRUCTURE FALSIFIER ROWS beta=96 p=6 q=5
+correct exact determinant ratio      = 0.078225286971
+correct saddle N_c=3                = 0.079761275743
+wrong N_c=2                         = 0.122681758828
+wrong N_c=4                         = 0.051856618041
+wrong dimension omitted             = 0.000292165845
+wrong determinant size 2x2          = 0.005101635871
+wrong highest-weight lambda         = 0.030362625798
+PASS: wrong N_c substitutions visibly move the saddle row
+      N_c=2 and N_c=4 both separate from N_c=3
+PASS: wrong dimension, determinant size, and lambda index visibly move the exact object
+      wrong-structure substitutions are not small perturbations
+PASS: falsifier values reproduce the note's displayed rows to tolerance
+      checked exact, dimension-omitted, and 2x2 falsifier rows
+
+TOTAL: PASS=16, FAIL=0
+
+----- stderr -----
+

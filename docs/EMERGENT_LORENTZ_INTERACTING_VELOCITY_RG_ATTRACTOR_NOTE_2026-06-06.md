@@ -1,17 +1,49 @@
 # Interacting Emergent Lorentz Conditional Algebra: Supplied One-Loop Velocity Attractor and One-Scalar Gate Boundary
 
 **Date:** 2026-06-06
-**Claim type:** bounded_theorem
-**Type:** bounded_theorem
+**Claim type:** open_gate / conditional-support packet
+**Type:** conditional-support
 **Status authority:** independent audit lane only. This source note does not set
-or predict an audit outcome. The `bounded_theorem` label is a source-side
-claim-boundary declaration, not an audit verdict.
+or predict an audit outcome. The label above is a source-side claim-boundary
+declaration, not an audit verdict.
 **Primary runner:**
 [`scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py`](../scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py)
 **Cached runner output:**
 [`logs/runner-cache/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.txt`](../logs/runner-cache/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.txt)
 
 ---
+
+## 2026-06-12 audit firewall: no bounded-theorem promotion
+
+The audited blocker is real: this note does not derive the interacting
+one-loop velocity RG, the spatial-only power-divergent mixing theorem, the
+physical fixed-point anomalous dimension, or the coefficient needed to compare
+against Lorentz-violation bounds from retained framework primitives. Those
+inputs remain supplied model/literature-context inputs in this packet.
+
+Therefore the actual source status is **conditional-support / open gate**, not
+`bounded_theorem` or retained-grade interacting Lorentz closure. The useful
+content retained here is the runner-checked algebraic consequence: once the
+specified one-loop packet is supplied, the speed-difference mode is
+IR-attractive, the `O_h` spatial split is one scalar, and canonical time
+reduces the Collins gate to one conditional scalar. No new axiom, primitive,
+Tier-A admission, or audit status change is introduced.
+
+## 2026-06-18 partial source-side support: spatial-BZ channel only
+
+[`EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md`](EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md)
+proves one narrow structural part of residual D directly on the
+continuous-time / spatial-`Z^3` surface: the central-difference spatial
+artifact begins as `sum_i k_i^4`; its quadratic projection has zero time
+component; and the `O_h` orbit average leaves one spatial scalar channel.
+
+This reduces the supplied "spatial-only power-divergent mixing" phrase to an
+exact source-side channel theorem plus a still-open coefficient. It does not
+derive the interacting one-loop velocity RG, the physical coefficient
+multiplying the spatial channel, the fixed-point anomalous dimension, or
+sufficiency against Lorentz-violation bounds. The parent row therefore remains
+conditional until those remaining bridges are supplied and independently
+audited.
 
 ## 2026-06-09 surface-scope update
 
@@ -204,3 +236,31 @@ projector, equal-time CAR, Reisz power-counting). No fitted / PDG / lattice-MC /
 **No-promotion statement:** this note does **not** promote, demote, or set the audit
 status of the no-go, the emergent-Lorentz notes, or any upstream row. The audit lane
 is the only status authority.
+
+## 2026-06-15 audit-unlock residual certificate
+
+This re-audit packet preserves the useful model algebra but refuses the
+stronger interacting-Lorentz closure. The runner checks the supplied RG
+matrix, the `O_h` one-scalar reduction, and canonical-time bookkeeping.
+
+The unresolved bridge is the source of those supplied continuum inputs in
+this framework: an audit-clean one-loop velocity RG authority, a
+spatial-only power-divergent mixing theorem, and the physical anomalous
+dimension/sufficiency bound. Without those, this row remains conditional
+support only. This repair introduces no custodial symmetry, observed bound,
+new axiom, or status promotion.
+
+## 2026-06-18 velocity-RG exchange-matrix support
+
+[`EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md`](EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md)
+supplies an exact exchange-matrix theorem for the algebraic one-loop
+velocity-flow form: given positive mutual-drag coefficients `a,b`, the
+common-speed line is fixed, `b v_F + a v_B` is invariant, and the
+speed-difference mode has eigenvalue `-(a+b)`.
+
+This retires the algebraic exchange-matrix step in the supplied RG packet. It
+does not derive the physical one-loop coefficients from framework
+interactions, the spatial-only power-divergent coefficient, the physical
+anomalous dimension, or LV-bound sufficiency. No audit status changes here;
+the row remains conditional support / open gate until those physical bridges
+are supplied and independently audited.

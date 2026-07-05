@@ -1,15 +1,14 @@
 """
-Frontier runner — DM A-BCC basin-enumeration completeness certificate.
+Frontier runner — DM A-BCC finite multistart basin-scan boundary.
 
 Companion to
-`docs/DM_ABCC_BASIN_ENUMERATION_COMPLETENESS_THEOREM_NOTE_2026-04-20.md`.
+`archive_unlanded/dm-abcc-finite-search-salvage-2026-04-30/`
+`DM_ABCC_BASIN_ENUMERATION_COMPLETENESS_THEOREM_NOTE_2026-04-20.md`.
 
-Completeness statement (computational-certificate theorem).  Under the
-retained sigma set
+Safe finite-search statement.  Under the retained sigma set
     Sigma_ret = { (2,1,0), (2,0,1), (0,1,2), (1,2,0) },
-the chi^2 = 0 PMNS-compatible chart points in the active affine chamber
-(q_+ + delta >= sqrt(8/3)) are, to certified grid + Lipschitz tolerance,
-exactly the five basins
+the finite GRID_N^3 + Nelder-Mead multistart scan finds the following
+known chi^2 = 0 PMNS-compatible chart points:
 
     Basin 1  = (0.657061,  0.933806,  0.715042)   [sigma = (2,1,0), C_base]
     Basin N  = (0.501997,  0.853543,  0.425916)   [sigma = (2,1,0), C_base]   (out of chamber)
@@ -17,8 +16,12 @@ exactly the five basins
     Basin 2  = (28.006,   20.722,    5.012)       [sigma = (2,1,0), C_neg ]
     Basin X  = (21.128264, 12.680028, 2.089235)   [sigma = (2,0,1), C_neg ]
 
-i.e. **five retained chi^2 = 0 basins total, three of which are in the
-active affine chamber: {Basin 1, Basin 2, Basin X}**.
+The active affine chamber (q_+ + delta >= sqrt(8/3)) scan finds and
+clusters {Basin 1, Basin 2, Basin X}.  This runner does not claim
+interval/branch-and-bound completeness, root isolation, a certified
+worst-case Lipschitz/eigenvalue-gap bound, or deterministic far-field
+exclusion.  It is a boundary runner for the finite multistart scan, not
+a retained completeness theorem.
 
 This corrects (and subsumes) the 4-basin enumeration in
 `DM_ABCC_CLOSURE_VIA_CHAMBER_BOUND_AND_DPLE_F4_NOTE_2026-04-19.md`:
@@ -30,18 +33,16 @@ C_neg, det(H) = -70539, hence Sylvester-excluded from the physical
 C_base sheet on which A-BCC operates), but it must appear in any
 exhaustiveness claim.
 
-Certificate ingredients.
+Finite-scan ingredients.
   (i)   Bounded enclosure box |m|,|δ|,|q_+| ≤ R = 50.
-  (ii)  Far-field scan showing no chi^2 = 0 point exists outside R.
+  (ii)  Far-field random/ray scan finding no chi^2 = 0 point outside R.
   (iii) Dense GRID_N^3 grid + Nelder-Mead multistart under each retained
         sigma.
-  (iv)  Lipschitz bound on chi^2 → seed-to-minimum coverage certification.
+  (iv)  Empirical 99.5th-percentile chi^2-gradient estimate.
   (v)   Basin-of-attraction test at each retained basin.
   (vi)  Bezout polynomial-degree upper bound as a finiteness witness.
 
-Every PASS stamp is a substantive numerical check — no hardcoded True.
-
-Expected: PASS >= 18, FAIL = 0.
+Expected: FAIL = 0.
 """
 
 from __future__ import annotations
@@ -49,10 +50,35 @@ from __future__ import annotations
 import math
 import sys
 from itertools import permutations, product
+from pathlib import Path
 from typing import List, Tuple
 
 import numpy as np
 from scipy.optimize import minimize
+
+AUDIT_TIMEOUT_SEC = 600
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = (
+    REPO_ROOT
+    / "archive_unlanded"
+    / "dm-abcc-finite-search-salvage-2026-04-30"
+    / "DM_ABCC_BASIN_ENUMERATION_COMPLETENESS_THEOREM_NOTE_2026-04-20.md"
+)
+
+BOUNDARY_NOTE_MARKERS = [
+    "finite multistart/random-sampling scan",
+    "not an audited retained completeness theorem",
+    "deterministic far-field exclusion",
+    "Executable boundary repair (2026-06-17)",
+]
+
+CERTIFIED_PROOF_FLAGS = {
+    "interval/branch-and-bound proof": False,
+    "computer-algebra/root-isolation enumeration": False,
+    "certified worst-case Lipschitz/eigenvalue-gap bound": False,
+    "deterministic far-field asymptotic exclusion": False,
+}
 
 
 # ---------------------------------------------------------------------------
@@ -395,7 +421,7 @@ def task_T3_cluster(enum: dict) -> float:
 
 
 # ---------------------------------------------------------------------------
-# T4 — Lipschitz bound on chi^2 map + certified tolerance
+# T4 — Empirical chi^2-gradient estimate + finite-scan tolerance
 # ---------------------------------------------------------------------------
 
 def estimate_lipschitz(sigma, n_samples: int = 600) -> float:
@@ -426,7 +452,7 @@ def estimate_lipschitz(sigma, n_samples: int = 600) -> float:
 
 
 def task_T4_lipschitz() -> float:
-    print("\n--- T4: Lipschitz bound on chi^2 map over chamber enclosure ---")
+    print("\n--- T4: empirical chi^2-gradient estimate over chamber enclosure ---")
     Ls = []
     for sigma in SIGMA_RETAINED:
         L = estimate_lipschitz(sigma)
@@ -434,7 +460,7 @@ def task_T4_lipschitz() -> float:
         Ls.append(L)
     L_max = max(Ls)
     check(
-        "Lipschitz estimate is finite and bounded under all retained sigma",
+        "Empirical chi^2-gradient estimate is finite and bounded under all retained sigma",
         np.isfinite(L_max) and L_max < 1e4,
         f"L_max = {L_max:.3e}",
     )
@@ -650,11 +676,11 @@ def task_T7_signatures() -> None:
 
 
 # ---------------------------------------------------------------------------
-# T8 — Exhaustiveness certificate
+# T8 — Finite-search boundary and missing-certification guards
 # ---------------------------------------------------------------------------
 
-def task_T8_certificate(L_max: float, max_dist: float) -> None:
-    print("\n--- T8: exhaustiveness certificate ---")
+def task_T8_boundary(L_max: float, max_dist: float) -> None:
+    print("\n--- T8: finite-search boundary / missing-certification guards ---")
 
     h_grid = 2.0 * R_ENCLOSE / (GRID_N - 1)
     seed_radius = h_grid * math.sqrt(3) / 2.0
@@ -670,8 +696,8 @@ def task_T8_certificate(L_max: float, max_dist: float) -> None:
     print(f"    enclosure R              = {R_ENCLOSE}")
     print(f"    grid N                   = {GRID_N}  ({GRID_N**3} seeds / sigma)")
     print(f"    grid half-diagonal       = {seed_radius:.4f}")
-    print(f"    Lipschitz L_max          = {L_max:.3f}")
-    print(f"    chi^2 coverage / seed    ≈ {L_max * seed_radius:.3e}")
+    print(f"    empirical L_max          = {L_max:.3f}")
+    print(f"    empirical L * seed       ≈ {L_max * seed_radius:.3e}")
     print(f"    cluster tolerance        = {CLUSTER_TOL}")
     print(f"    min pairwise basin sep   = {min_basin_sep:.4f}")
     print(f"    max discovered->basin    = {max_dist:.4f}")
@@ -687,28 +713,36 @@ def task_T8_certificate(L_max: float, max_dist: float) -> None:
         f"max match distance = {max_dist:.4f} < {CLUSTER_TOL}",
     )
 
-    # Final certificate: at stated (R, N, cluster tolerance, Lipschitz
-    # bound), no chi^2 = 0 point in the active chamber under any
-    # retained sigma lies outside the union of neighborhoods of the
-    # five retained basins.  Conditions:
-    #   (a) every discovered minimum maps into a retained basin within
-    #       CLUSTER_TOL,
-    #   (b) CLUSTER_TOL is strictly less than half the min basin
-    #       separation (so clusters do not collide),
-    #   (c) Lipschitz bound is finite and numerically tame,
-    #   (d) basin-of-attraction tests (T4) verified each retained basin
-    #       is recoverable by N-M from seeds within seed_radius.
-    # Condition (d) replaces the naïve "seed_radius < min_basin_sep"
-    # check; the actual attraction basins are wider than the minimum
-    # chart distance between basins, as verified per-basin in T4.
+    if NOTE_PATH.exists():
+        note_text = NOTE_PATH.read_text(encoding="utf-8")
+    else:
+        note_text = ""
+
+    missing_markers = [marker for marker in BOUNDARY_NOTE_MARKERS if marker not in note_text]
     check(
-        "Exhaustiveness certificate holds at stated (R, N, tolerance, L)",
+        "Archived source note records finite-scan boundary markers",
+        not missing_markers,
+        f"missing markers = {missing_markers}",
+    )
+
+    for proof_label, available in CERTIFIED_PROOF_FLAGS.items():
+        check(
+            f"No {proof_label} is being claimed by this runner",
+            available is False,
+        )
+
+    # Final boundary: the finite scan is reproducible and the source
+    # explicitly refuses theorem-grade exhaustiveness until one of the
+    # missing certification routes is supplied.
+    check(
+        "Finite multistart boundary holds; theorem-grade exhaustiveness remains open",
         (max_dist < CLUSTER_TOL)
         and (CLUSTER_TOL < min_basin_sep / 2.0)
         and (np.isfinite(L_max))
-        and (L_max < 1e4),
+        and (L_max < 1e4)
+        and not any(CERTIFIED_PROOF_FLAGS.values()),
         f"R={R_ENCLOSE}, N^3={GRID_N**3}, tol={CLUSTER_TOL}, "
-        f"half_min_sep={min_basin_sep/2.0:.3f}, L={L_max:.3f}",
+        f"half_min_sep={min_basin_sep/2.0:.3f}, empirical L={L_max:.3f}",
     )
 
 
@@ -718,10 +752,10 @@ def task_T8_certificate(L_max: float, max_dist: float) -> None:
 
 def main() -> int:
     print("=" * 72)
-    print("DM A-BCC basin-enumeration completeness certificate")
+    print("DM A-BCC finite multistart basin-scan boundary")
     print("=" * 72)
     print(f"Retained sigma set: {SIGMA_RETAINED}")
-    print(f"Retained basins:    {list(BASINS.keys())}")
+    print(f"Known basin chart:  {list(BASINS.keys())}")
     print(f"Enclosure R:        {R_ENCLOSE}")
     print(f"Grid N per axis:    {GRID_N}  (N^3 = {GRID_N**3} seeds / sigma)")
 
@@ -732,9 +766,11 @@ def main() -> int:
     task_T5_bezout()
     task_T6_sigma_hier()
     task_T7_signatures()
-    task_T8_certificate(L_max, max_dist)
+    task_T8_boundary(L_max, max_dist)
 
     print()
+    print("VERDICT: FINITE MULTISTART BASIN SCAN BOUNDARY VERIFIED")
+    print("THEOREM-GRADE EXHAUSTIVENESS: NOT CLAIMED")
     print(f"TOTAL: PASS={PASS}  FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
 

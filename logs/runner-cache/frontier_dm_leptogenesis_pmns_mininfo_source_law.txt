@@ -1,22 +1,23 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py
-runner_sha256: 24b2a52addd33cddd4aab7f4beb972169781aae61d92b40e340988ca070b44eb
+runner_sha256: 87f20280260c0fa605529f5797a858213cbe96423a7cab831153d144dfc884bd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.73
+elapsed_sec: 1.51
 status: ok
 ----- stdout -----
 ========================================================================================
-DM LEPTOGENESIS PMNS MINIMUM-INFORMATION SOURCE LAW (bounded / conditional)
+DM LEPTOGENESIS PMNS MINIMUM-INFORMATION SELECTOR DIAGNOSTIC (open gate / conditional)
 ========================================================================================
 
-Framework convention:
-  "axiom" means only Cl(3) on Z^3.
+Framework baseline:
+  Lattice + Quantum + Record; one-qubit operator algebra on the Z^3 lattice.
 
-Scope (bounded / conditional theorem):
+Scope (open gate / conditional diagnostic):
   IF the minimum-information selector law is adopted as a post-axiom
-  convention on the fixed native N_e seed surface, THEN it picks out
-  a unique exact-closure off-seed source on the transport-favored column.
+  convention on the fixed native N_e seed surface, THEN the runner
+  finds a calibrated low-cost exact-closure off-seed source on the
+  transport-favored column after imposing eta_{i_*}/eta_obs = 1.
 
 Adopted definition:
   Choose the off-seed source minimizing
@@ -25,9 +26,20 @@ Adopted definition:
   transport-favored column selected by the exact extremal class.
 
 NOT claimed:
-  - that I_seed itself follows from Cl(3) on Z^3
+  - that I_seed itself follows from the Lattice + Quantum + Record baseline
   - that I_seed is the unique correct selector
+  - global uniqueness/minimality of the constrained optimizer output
   - baseline-framework closure of the PMNS-assisted N_e branch
+
+========================================================================================
+PART 0: SOURCE SCOPE FIREWALL
+========================================================================================
+  [PASS] Source note identifies the open-gate selector diagnostic
+  [PASS] Source note registers primary runner and cached output
+  [PASS] Source note does not claim global uniqueness as runner-proved
+  [PASS] Source note keeps eta_obs equality as an imposed constraint
+  [PASS] Source note does not introduce a new axiom or retained bridge
+  [PASS] Source note forbids retained selector-theorem reuse
 
 ========================================================================================
 PART 1: TRANSPORT EXTREMALITY FIXES THE FAVORED COLUMN
@@ -37,16 +49,16 @@ PART 1: TRANSPORT EXTREMALITY FIXES THE FAVORED COLUMN
   [PASS] On the canonical branch the favored column is column 0  (etas=[1.051004 0.662176 0.61936 ])
 
   extremal packet:
-[[9.25175e-01 3.45930e-02 4.02320e-02]
- [3.91410e-02 1.11500e-03 9.59744e-01]
- [3.56840e-02 9.64293e-01 2.40000e-05]]
+[[0.925175 0.034593 0.040232]
+ [0.039141 0.001115 0.959744]
+ [0.035684 0.964293 0.000024]]
   extremal eta/eta_obs = [1.051004 0.662176 0.61936 ]
 
 ========================================================================================
 PART 2: THE MINIMUM-INFORMATION CLOSURE LAW
 ========================================================================================
   [PASS] The minimum-information source stays on the exact fixed seed surface  ((xbar,ybar)=(0.563333,0.306667))
-  [PASS] The law closes eta exactly on the favored column  (etas=[1.         0.50519888 0.7823353 ])
+  [PASS] The law closes eta exactly on the favored column  (etas=[1.       0.505199 0.782335])
   [PASS] The minimum-information closure source is much closer to seed than the canonical near-closing sample  (I_seed=0.058549869343)
   [PASS] The invented law selects a simple near-zero phase closure source  (delta=-2.039244415044e-08)
   [PASS] The selected closure source is still genuinely off-seed  (xi=[-0.083963, -0.128696,  0.212659], eta=[-0.075524,  0.088202, -0.012678])
@@ -62,22 +74,22 @@ PART 2: THE MINIMUM-INFORMATION CLOSURE LAW
 [[0.037059 0.756137 0.206804]
  [0.893609 0.001598 0.104792]
  [0.069332 0.242265 0.688403]]
-  eta/eta_obs(min-law) = [1.         0.50519888 0.7823353 ]
+  eta/eta_obs(min-law) = [1.       0.505199 0.782335]
 
 ========================================================================================
 PART 3: BOTTOM LINE (conditional)
 ========================================================================================
   [PASS] The off-seed source law is now an explicit definition  (minimum information deformation at exact closure on the favored column)
-  [PASS] Conditional on adopting I_seed, the result is strictly sharper than the bare extremal candidate  (it picks the least-deformed exact closure source, not just some overshooting source)
-  [PASS] The runner verifies the conditional theorem, not the unconditional one  (I_seed is imported from information geometry; baseline-framework derivation is parked at sister theorems)
+  [PASS] Conditional on adopting I_seed, the runner-found source is sharper than the bare extremal candidate  (it finds a low-deformation exact closure source, not just some overshooting source)
+  [PASS] The runner verifies the conditional diagnostic, not a selector theorem  (I_seed is imported from information geometry; baseline-framework derivation is parked at sister theorems)
 
 ========================================================================================
-PART 4: HONEST SCOPE ASSERTIONS (bounded / conditional)
+PART 4: HONEST SCOPE ASSERTIONS (open gate / conditional)
 ========================================================================================
   [PASS] Adopted selector is well-defined on the fixed native seed surface  (x_seed and y_seed are fully fixed by the adopted seed pair (xbar, ybar))
   [PASS] Conditional closure on favored column holds at the selected source  (eta_0/eta_obs - 1 = 2.220e-16)
-  [PASS] Selected source has finite, computable information cost (defines unique selection)  (I_seed = 0.058549869343)
-  [PASS] Runner explicitly does NOT claim baseline-framework derivation of I_seed  (I_seed is imported from information geometry; treat note as bounded support)
+  [PASS] Selected source has finite, computable information cost (defines the reported selection)  (I_seed = 0.058549869343)
+  [PASS] Runner explicitly does NOT claim baseline-framework derivation of I_seed  (I_seed is imported from information geometry; treat note as open-gate support)
   [PASS] Selector is comparable to sister selectors (relative action, KKT classification)  (all converge to the same low-action branch on the reduced N_e surface)
 
 ========================================================================================
@@ -85,11 +97,11 @@ RESULT (conditional)
 ========================================================================================
   Adopted post-axiom selector law (definition, not derivation):
     - favored column fixed by exact transport extremality
-    - off-seed source fixed by minimum-information exact closure
+    - off-seed source reported by minimum-information exact closure
     - exact eta/eta_obs = 1 on the current PMNS-assisted N_e branch
     - conditional on adopting I_seed as the selector
 
-PASS=17  FAIL=0
+PASS=23  FAIL=0
 
 ----- stderr -----
 

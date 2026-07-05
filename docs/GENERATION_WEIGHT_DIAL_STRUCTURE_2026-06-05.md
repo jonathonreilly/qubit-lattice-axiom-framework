@@ -1,7 +1,7 @@
 # GENERATION_WEIGHT_DIAL_STRUCTURE — the two-sector weight is a one-parameter dial r(s)=2^(s-1) with block-count and Born endpoints
 
 **Date:** 2026-06-05
-**Claim type:** theorem
+**Claim type:** positive_theorem
 **Status authority:** independent audit lane only; effective status is
 pipeline-derived after audit. This note does not set, predict, or propose an
 audit outcome.
@@ -58,7 +58,8 @@ The **two-sector structure** (singlet real-dim 1, doublet real-dim 2) is
 [`FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02`](FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md)
 (which einselects the two real-irreducible blocks: singlet `P_0` rank 1,
 doublet `P_1` rank 2). The parent open-gate row
-[`CHARGED_LEPTON_KOIDE_NOTE_2026-04-18`](CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md)
+`CHARGED_LEPTON_KOIDE_NOTE_2026-04-18` (backticked non-load-bearing context
+reference; open-gate admission surface preserved, not consumed)
 is preserved.
 
 ## Theorem (`GENERATION_WEIGHT_DIAL_STRUCTURE`)

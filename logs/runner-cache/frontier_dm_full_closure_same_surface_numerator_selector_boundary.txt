@@ -1,61 +1,38 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py
-runner_sha256: cfc3daed1a3e91e155f9d4d4fec23fa323c072a3a579d762f63da487163572de
+runner_sha256: 07403cec245b13f7e751b7d2be053981a5c1f24e053903e12a23c98cb82ed053
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 31.04
+elapsed_sec: 10.87
 status: ok
 ----- stdout -----
 ========================================================================================
-DM FULL CLOSURE SAME-SURFACE NUMERATOR SELECTOR BOUNDARY
+DM SAME-SURFACE ENDPOINT NON-OVERLAP ARITHMETIC CERTIFICATE
 ========================================================================================
+Status authority: independent audit lane only.
+Claim boundary: arithmetic over helper-defined outputs only.
 
 ========================================================================================
-PART 1: HELPER-DEFINED DM ENDPOINTS
+PART 1: HELPER-DEFINED ENDPOINT VALUES
 ========================================================================================
-  [PASS] The lower helper endpoint alpha_lo = alpha_LM is defined by the current helper layer  (alpha_lo=0.090667836017286)
-  [PASS] The upper helper endpoint alpha_hi is defined by the current helper layer  (alpha_hi=0.092264992618360)
-
-  alpha_lo = 0.090667836017286
-  alpha_hi = 0.092264992618360
-
-========================================================================================
-PART 2: DISTINCT CERTIFIED DM OUTPUTS
-========================================================================================
-  [PASS] The helper-defined endpoints induce disjoint certified DM ratio intervals  (R_lo=[5.442019867867, 5.442019867931], R_hi=[5.482855571890, 5.482855571936])
-  [PASS] They therefore induce disjoint certified DM density intervals even after eta is fixed  (Omega_DM_lo=[0.267709052538, 0.267709052541], Omega_DM_hi=[0.269717881594, 0.269717881596])
-
-  R_lo       = [5.442019867867, 5.442019867931]
-  R_hi       = [5.482855571890, 5.482855571936]
-  Omega_b    = 0.049192957585
-  Omega_DM_lo= [0.267709052538, 0.267709052541]
-  Omega_DM_hi= [0.269717881594, 0.269717881596]
-  trunc_lo   = (N_att=60, N_rep=600)
-  trunc_hi   = (N_att=60, N_rep=600)
+  [PASS] alpha_bare is positive  (alpha_bare=0.079577471545948)
+  [PASS] alpha_lo is positive  (alpha_lo=0.090667836017286)
+  [PASS] alpha_hi is positive  (alpha_hi=0.092264992618360)
+  [PASS] endpoint ordering is alpha_bare < alpha_lo < alpha_hi  (alpha_bare=0.079577471545948, alpha_lo=0.090667836017286, alpha_hi=0.092264992618360)
 
 ========================================================================================
-PART 3: PACKET-SCOPE ENDPOINT DISTINCTNESS
+PART 2: CERTIFIED INTERVAL NON-OVERLAP
 ========================================================================================
-  [PASS] The two same-surface endpoints are distinct exact reals (alpha_lo != alpha_hi)  (alpha_hi - alpha_lo = 1.597156601073887e-03)
-  [PASS] Neither endpoint coincides with the common ingredient alpha_bare = 1/(4 pi)  (alpha_bare=0.079577471545948, alpha_lo - alpha_bare=1.109036447133864e-02, alpha_hi - alpha_bare=1.268752107241253e-02)
-  [PASS] Both endpoints sit strictly above the common ingredient (so they are not just a relabeling of alpha_bare)  (alpha_lo and alpha_hi are both strict positive perturbations of alpha_bare on the same surface)
-  [PASS] The certified DM ratio intervals at the two endpoints do not overlap  (R_lo_hi=5.442019867931, R_hi_lo=5.482855571890)
+  [PASS] R(alpha_lo) certified interval is ordered  (R_lo=[5.442019867867, 5.442019867931])
+  [PASS] R(alpha_hi) certified interval is ordered  (R_hi=[5.482855571890, 5.482855571936])
+  [PASS] R intervals are disjoint in endpoint order  (R_lo_hi=5.442019867931, R_hi_lo=5.482855571890)
+  [PASS] Omega_DM intervals are disjoint after multiplying by Omega_b  (Omega_DM_lo=[0.267709052538, 0.267709052541], Omega_DM_hi=[0.269717881594, 0.269717881596])
 
-  HELPER-PACKET ENDPOINT STRUCTURE:
-    - two distinct exact same-surface endpoint observables: alpha_lo, alpha_hi
-        alpha_lo  = alpha_bare / u_0                  = 0.090667836017286
-        alpha_hi  = -log(1 - c_1 * alpha_bare) / c_1  = 0.092264992618360
-    - common ingredient alpha_bare = 1/(4 pi)       = 0.079577471545948
-    - certified DM ratio intervals at the two endpoints do not overlap
+  trunc_lo = (N_att=60, N_rep=600)
+  trunc_hi = (N_att=60, N_rep=600)
 
-  PACKET-SCOPE COMPLETENESS DECLARATION (not a runner-checked existence claim):
-    Within the supplied helper packet (one-qubit operator algebra on
-    the Z^3 spatial substrate plus the cited
-    same-surface thermal authorities), no additional exact same-surface
-    DM scale-selection datum is supplied. Any selector that lands one
-    of the two endpoints therefore requires an authority
-    outside the current packet. This is a packet-scope declaration,
-    not a metatheoretical proof of non-existence.
+Boundary: this runner does not assert selector existence, selector
+absence, or helper-packet completeness.
 
 ========================================================================================
 SUMMARY: PASS=8 FAIL=0

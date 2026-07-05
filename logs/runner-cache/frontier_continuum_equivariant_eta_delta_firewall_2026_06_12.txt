@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/frontier_continuum_equivariant_eta_delta_firewall_2026_06_12.py
+runner_sha256: 73d1fec8cd83314f21e1818a1c8e9cc717627412e60526669f8f1315958e5590
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.52
+status: ok
+----- stdout -----
+Continuum equivariant-eta standard-form delta firewall
+
+Part C1: exact localization
+  [PASS] C1a holomorphic-Lefschetz average is 2/9  (value=2/9)
+  [PASS] C1a each nontrivial C_3 group term is 1/3  (terms=['1/3', '1/3'])
+  [PASS] C1b cotangent product form is 2/9  (value=2/9)
+  [PASS] C1b cotangent and Lefschetz forms agree  (difference=0)
+  [PASS] C1c standard factor multiplier is 1  (multiplier=1)
+
+Part C2 and anti-circularity
+  [PASS] C2 C1 expressions have no mass/operator/free-phase symbols  (free_symbols=[])
+  [PASS] C2 explicit phase scan of C1 has range 0  (range=0)
+  [PASS] ANTI-CIRCULARITY no forbidden delta assignment appears in runner source
+  [PASS] ANTI-CIRCULARITY C1 code path takes omega/weights, not phase input  (lefschetz_args=('root',), cotangent_args=())
+
+Part C3: operator family
+  [PASS] C3a D(delta) eigenvalue branches cross zero and are nontrivial  (zero_crossings=12, branch_range=3.999990)
+  [PASS] C3b spectral flow over one phase period is an integer and equals 0  (spectral_flow=0)
+  [PASS] C3c eta(delta) is flat over the scan  (eta_range=0)
+
+Part C4: independence assembly
+  [PASS] C4a nearest zero-crossing does not match Part-C1 value  (topological_eta=0.222222222222, nearest_zero=0.420000000000, distance=0.197778)
+  [PASS] C4b analytic index, topological eta, and free mass phase are distinct  (analytic_index=0, topological_eta=2/9, mass_phase_free=True, delta_forced_by_eta=False)
+  [PASS] C4c note states route boundary without irreducibility/no-go posture
+
+B-checks: note and dependencies
+  [PASS] B1 fixed-locus dependency carries L_3(1,2)=2/9 content
+  [PASS] B2 substep2 dependency carries D_KD Kahler-Dirac content
+  [PASS] B3 minimal axioms dependency is present and status-bounded as meta
+  [PASS] B4 firewall wording is present and terminal no-go wording is absent
+  [PASS] B5 malformed no-go gate is absent
+  [PASS] B6 anti-circularity confirmation sentence is present
+  [PASS] B7 markdown link inventory is exactly three  (count=3)
+  [PASS] B8 context inventory is backticked
+  [PASS] B9 status lines and No-promotion statement are present
+
+SUMMARY: PASS=24 FAIL=0 TOTAL=24
+TOTAL PASS=24 FAIL=0
+
+----- stderr -----
+

@@ -111,9 +111,10 @@ Brannen circulant `λ_k = a + 2|b| cos(φ + 2πk/d)`?
 
    Therefore: **as a dimensionless character-algebra ratio, `2/9` is
    retained** as `(real DOF of b) / (real dim Herm_3) = 2/9 =
-   n_eff/d²`. This is the same content the retained
+   n_eff/d²`. The repaired
    [`KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`](KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
-   already isolates as I2 (dimensional-ratio identity).
+   records only the formal identity `Delta_3 = Q_3/3`; it is not authority
+   for the retained character-algebra ratio or for a radian bridge.
 
 2. **STRUCTURAL OBSTRUCTION (no native angular unit replaces the
    radian primitive):** The PDG-matching Brannen circulant
@@ -180,9 +181,9 @@ character-algebra rational** under cited source-stack content alone. Specificall
 - The ratio `n_eff/d² = 2/9` is therefore derived as a pure rational
   in retained Plancherel/Frobenius dimensional-counting units.
 
-This recovers the linking theorem's I2 input
+This is compatible with the current formal-only Q-Delta identity
 ([`KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`](KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
-§3.2) at the BAE level: the dimensionless `2/d² = 2/9` is structural
+as definition-level arithmetic): the dimensionless `2/d² = 2/9` is structural
 character-algebra cited source-stack content.
 
 ## What this DOES NOT close
@@ -207,9 +208,10 @@ exactly the bridge
 > 2/9` numerically equals the PDG-matching Brannen magic angle measured
 > in radians (i.e., `2/9 rad`)."
 
-This is the same residual postulate `P` named in
+This is the same historical pre-repair residual postulate `P` now carried by
+the explicit radian-bridge no-go lane. The current repaired Q-Delta note
 [`KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`](KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
-§4 and reconfirmed by Probe 20
+is formal-only; the bridge obstruction is reconfirmed by Probe 20
 [`KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md`](KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md)
 to require one of three specific structural inputs (lattice
 propagator radian quantum, 4×4 hw=1+baryon non-uniform Wilson
@@ -240,7 +242,7 @@ admission distinct from the prior radian-bridge.
 |---|---|
 | KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_2026-04-24 | every retained radian source = `(rational) × π`; pure rational `2/9` not supplied |
 | KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_2026-04-20 | per-Z_3-element PB phase = `π/3`; closed-orbit Bargmann = `π`; neither equals `2/9 rad` |
-| KOIDE_Q_DELTA_LINKING_RELATION_2026-04-20 §4 | postulate `P` named: `(2 DOF of b)/(real dim Herm_d) = 2/d² = δ` (radians) |
+| KOIDE_Q_DELTA_LINKING_RELATION_2026-04-20 | current repaired note is formal-only: `Delta_d = Q_d/d` after definitions; it is not a live radian-bridge authority |
 
 ### Retained Brannen-phase reduction content (positive)
 
@@ -351,9 +353,10 @@ Native units fail.
 
 3. **Connection to retained no-go content.** The named admission of
    Probe 19 (`φ = 2/9`) is structurally identical to the residual
-   postulate `P` named in
+   historical pre-repair postulate `P` associated with the old Q-Delta route; the
+   current formal-only note
    [`KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`](KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
-   §4 and reconfirmed by Probe 20
+   does not carry that bridge. The obstruction is reconfirmed by Probe 20
    [`KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md`](KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md).
    This probe sharpens the BAE-program admission count: Probe 19's
    "magic angle" is **not** an independent third admission distinct
@@ -516,7 +519,8 @@ Target: `=== TOTAL: PASS=N, FAIL=0 ===`.
 - [`KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md`](KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md)
   — `δ = n_eff/d² = 2/9` dimensionless theorem (Step 1 here)
 - [`KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`](KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
-  §4 — names primitive `P` (radian-bridge)
+  — current repaired note is formal-only; cite radian-bridge no-go notes for
+  the historical `P` obstruction.
 - [`KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md`](KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md)
   — proves `P` requires inputs (a), (b), or (c)
 - [`KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
@@ -553,8 +557,9 @@ obstruction):
    `KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20`.
 6. **Radian-bridge irreducibility audit**:
    `KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24`.
-7. **Q-δ linking relation (names primitive P)**:
-   `KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20` §4.
+7. **Q-δ formal identity**:
+   `KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20` records only
+   `Delta_d = Q_d/d`; it is not a live radian-bridge authority.
 
 ## Bottom line
 

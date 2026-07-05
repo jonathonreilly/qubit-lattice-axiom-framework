@@ -201,11 +201,16 @@ This note treats `PL S^3 x R` as a black-box bounded composite input;
 it does **not** insulate the candidate `Xi_R^(0)` from any future
 revision of those upstream admissions or tiers.
 
-## Audit dependency repair links
+## Audit-history peer pointer
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+This historical bookkeeping section records a peer route named by a prior
+conditional audit. It is not a one-hop authority for the spacetime tensor
+candidate: the load-bearing inputs remain the bounded composite background,
+the exact route-2 slice generator, and the bounded source-side tensor pair
+listed above. Keeping this as a plain peer pointer avoids presenting the
+downstream readout-to-slice survey as a dependency of this candidate row.
 
-- [s3_time_theta_to_slice_coupling_note](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
+- `s3_time_theta_to_slice_coupling_note`
 
 ## Fix record (2026-05-17, downstream surgical-fix wave)
 

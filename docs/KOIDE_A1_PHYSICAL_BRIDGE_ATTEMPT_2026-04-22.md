@@ -1,8 +1,14 @@
 # A1 Physical Bridge — theoretical attempt
 
 **Date:** 2026-04-22
-**Claim type:** no_go
-**Status:** bounded negative attempt record for four named physical-bridge mechanisms; not a global no-go and not a retained-primitive proposal.
+**Claim type:** open_gate
+**Status:** bounded negative attempt record for four named physical-bridge
+mechanisms; not an all-routes impossibility claim and not a
+framework-primitive proposal.
+**Status authority:** independent audit lane only; this source note does not
+set or predict retained/effective status.
+**Primary runner:** [`scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py`](../scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py)
+**Primary runner cache:** [`logs/runner-cache/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.txt`](../logs/runner-cache/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.txt)
 **References:**
 - `origin/review/scalar-selector-cycle1-theorems`: KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS,
   KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE, KOIDE_Q_DELTA_CLOSURE_PACKAGE_README
@@ -124,10 +130,11 @@ The physical source-law bridge for A1 still requires:
 
 - Either a non-standard QFT mechanism (anomaly, topological, or
   asymmetric measure) distinguishing isotype blocks
-- Or explicit user approval plus later audit for adopting `S_block` as a
-  retained primitive (block-total Frobenius extremal principle)
+- Or explicit user approval plus later audit for adopting `S_block` as an
+  approved framework primitive/premise (block-total Frobenius extremal
+  principle)
 - Or explicit user approval plus later audit for importing Koide-Nishiura
-  `V(Phi) = [2(trPhi)^2 - 3tr(Phi^2)]^2` as retained EW-scalar-lane content
+  `V(Phi) = [2(trPhi)^2 - 3tr(Phi^2)]^2` as EW-scalar-lane content
 
 The review branch's position stands: A1 is mathematically well-defined
 and the internal chain is gap-free, but the physical bridge is genuinely
@@ -140,15 +147,15 @@ the bridge.
 Recommended next options:
 
 1. **Explicit-approval research route**: evaluate whether `S_block`
-   extremum should become a retained primitive. The three-way
+   extremum should become an approved framework primitive/premise. The three-way
    Lie-theoretic match (A_1 Weyl vector, SU(2)_L Casimir-difference,
    Clifford dim-ratio) is structural evidence, not approval and not a
-   retained input.
+   repo-approved input.
 
 2. **Explicit-approval import route**: evaluate Koide-Nishiura `V(Phi)`
    for the EW-scalar lane. This is outside Theorem 6 (4th-order
-   Clifford cancellation) and would need approval plus audit before any
-   retained use.
+   Clifford cancellation) and would need approval plus audit before downstream
+   use.
 
 3. **Research direction**: explore whether the Cl(3) even-subalgebra
    structure (Cl⁺(3) ≅ ℍ, dim 4) together with the spinor action
@@ -158,10 +165,62 @@ Recommended next options:
 All three are well-defined research directions. The /loop has produced
 the landscape map; what remains is theorist's choice.
 
+## No-Go Discipline Gate (review-loop, 2026-06-20)
+
+**Result:** the gate fails for any global A1 physical-bridge no-go, so this
+source row is explicitly an `open_gate` negative-attempt record. It ships only
+the four runner-backed failure calculations below; it does not assert that all
+physical bridges fail.
+
+**N1 alternative routes.** The runner tests four routes: W[J=0]/log-det,
+Coleman-Weinberg, Gaussian max-entropy at fixed Frobenius, and
+finite-simplex/CV=1 max-entropy. All four fail for the displayed algebraic
+reason. At least three plausible routes remain open and are not claimed failed:
+owner-approved adoption of `S_block`, an EW-scalar-lane Koide-Nishiura import,
+and an anomaly/topological/asymmetric-measure mechanism.
+
+**N2 wall independence.** No independent-wall count is claimed. The surviving
+wall is the single physical source-law residual: why the charged-lepton packet
+should extremize `S_block`.
+
+**N3 hidden-wall scan.** "Standard QFT", "statistical-mechanics", and
+"theorist's choice" are treated as context/open route labels, not authorities.
+No approved axiom or registered framework primitive is used as a hidden source
+of the physical bridge.
+
+**N4 residual matching.** The runner residuals match the four named attempts:
+log-det functional mismatch, Coleman-Weinberg uniform-spectrum extremum,
+Gaussian factor mismatch, and finite-simplex uniform-spectrum extremum. Those
+witnesses do not match the open `S_block` adoption/import/anomaly routes, so
+the note does not cite them against those routes.
+
+**N5 rhetoric audit.** Phrases such as "does not give A1" are scoped to the
+named mechanism and carrier tested in that subsection. They are not
+lattice-wide or all-mechanism statements.
+
+**N6 partial-closure path scan.** Owner approval of a primitive/premise,
+bounded import followed by retirement audit, or a convention/meta reframe could
+still close part of this residual. Those paths are open governance/research
+routes, not new-axiom walls and not automatic no-go evidence.
+
+**N7 steelman.** A hostile reviewer could argue that `S_block` is exactly the
+right physical source law because the A_1 Weyl-vector, SU(2)_L
+Casimir-difference, and Clifford dimension-ratio evidence all point to the
+same extremal functional. That would not contradict the four failed mechanisms;
+it would supply a different bridge.
+
+**N8 cross-cycle echo.** Prior missing-primitive style walls in this repo have
+sometimes been retired by explicit primitive registration or convention
+ratification. This note preserves those retirement paths instead of calling the
+A1 physical bridge structurally impossible.
+
 ## 5. Executable no-go runner
 
-Companion runner:
+Primary runner:
 `scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py`.
+
+Primary runner cache:
+`logs/runner-cache/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.txt`.
 
 The runner makes Attempts 1-4 executable as symbolic identities on the
 circulant Hermitian carrier `H = a I + b C + bbar C^2`:
@@ -205,21 +264,21 @@ and target the **internal-chain** side of the A1 closure problem
 `Herm_circ(3)`, not the open physical source-law). Section 5 above
 adds the runner anchor; this section adds the supplier-note anchors:
 
-1. `docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`
+1. [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md)
    — exhibits the block-total Frobenius functional
    `E_I(H) = ||pi_I(H)||_F^2` on `Herm_circ(3)` and proves its
    equal-weight extremum at fixed `E_+ + E_perp` is exactly
    `E_+ = E_perp <=> kappa = 2 <=> A1`. Names `d = 3` uniqueness via
    the multiplicity pattern (1 trivial + 1 doublet).
-2. `docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`
+2. [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
    — narrow algebraic companion to (1) with the AM-GM step on the
    log-functional written as a stand-alone identity at `d = 3`.
-3. `docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md`
+3. [`KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md`](KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md)
    — uniqueness of the isotypic split `pi_+` vs `pi_perp` on
    `Herm_circ(3)`; no other Frobenius-orthogonal splitting, so the
    choice of `E_+(H) + E_perp(H)` is canonical given the isotype
    structure of the carrier.
-4. `docs/KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md`
+4. [`KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md`](KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md)
    — package README for the operator-side `Q`-delta closure; lists
    the review-branch theorems this note referenced in its
    internal-chain framing.

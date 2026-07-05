@@ -1,0 +1,102 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_derived_word_chain_end_to_end_composition_bounded_theorem_2026_06_12.py
+runner_sha256: 8e5ee6d6b857b408cb8f1ec7443f40b3bc64ca509024a025c0ec43a37a80bc72
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 2.42
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette derived word-chain end-to-end composition
+Status authority: independent audit lane only. This source runner does not set or predict an audit outcome.
+No new imports: finite repo-internal packet quantities only.
+
+================================================================================================================
+Part 1: finite packet rebuild and derived reduced family
+================================================================================================================
+tensor NMAX=4, tensor MODE_MAX=80, source NMAX=7, source MODE_MAX=200
+word box size = 25
+eta_inf(0,0) = 1.000000000000000
+theta = 0.263745855973467
+theta_3 = 0.127269601426283
+PASS: finite tensor word packet has the expected 25 weights
+PASS: derived theta formula reproduces the stated finite-packet value
+      theta=0.263745855973467
+PASS: third scale is theta times the self-channel alpha
+      theta_3=0.127269601426283, theta*alpha=0.127269601426283
+
+================================================================================================================
+Part 2: source pair-support limit and word rungs
+================================================================================================================
+P_1  = 0.434215413259920
+P_2  = 0.433061880379652
+P_3  = 0.543142610051424
+P_4  = 0.603630724651002
+P_5  = 0.612857835719409
+P_9  = 0.615182336692998
+P_17 = 0.615191991961022
+P_20 = 0.615191992181771
+P_inf(pair support) = 0.615191992185898
+distance to fenced comparator 0.5934 = 0.021791992185898
+PASS: source pair-support solve matches P_inf
+      p_pair=0.615191992185898, P_inf=0.615191992185898
+PASS: headline rungs reproduce the finite word-chain table
+PASS: P20 is within the certified tail scale of P_inf
+      P_inf-P20=4.126254893322e-12
+
+================================================================================================================
+Part 3: remainder envelope on measured rungs
+================================================================================================================
+k= 2: err=1.821301118062e-01, leading=1.081807630048e-01, residual=7.394934880143e-02, bound=5.882658505971e+03
+k= 3: err=7.204938213447e-02, leading=2.853222793857e-02, residual=4.351715419591e-02, bound=7.486836033819e+02
+k= 4: err=1.156126753490e-02, leading=7.525256880488e-03, residual=4.036010654408e-03, bound=9.528466379680e+01
+k= 5: err=2.334156466489e-03, leading=1.984755317365e-03, residual=3.494011491242e-04, bound=1.212684118346e+01
+k= 6: err=5.581188248835e-04, leading=5.234709900762e-04, residual=3.464783480736e-05, bound=1.543378243978e+00
+k= 7: err=1.418333299219e-04, leading=1.380633043549e-04, residual=3.770025566980e-06, bound=1.964251339611e-01
+k= 8: err=3.684723022845e-05, leading=3.641362438561e-05, residual=4.336058428393e-07, bound=2.499894850934e-02
+k= 9: err=9.655492899330e-06, leading=9.603942532680e-06, residual=5.155036664952e-08, bound=3.181606212859e-03
+k=10: err=2.539254029155e-06, leading=2.533000044002e-06, residual=6.253985152928e-09, bound=4.049217546060e-04
+k=11: err=6.688367297780e-07, leading=6.680682647861e-07, residual=7.684649919521e-10, bound=5.153423031754e-05
+k=12: err=1.762954563445e-07, leading=1.762002363447e-07, residual=9.521999974428e-11, bound=6.558740952323e-06
+k=13: err=4.648394880125e-08, leading=4.647208215746e-08, residual=1.186664378282e-11, bound=8.347283468604e-07
+k=14: err=1.225830437157e-08, leading=1.225681908749e-08, residual=1.485284081336e-12, bound=1.062355440041e-07
+k=15: err=3.232871748082e-09, leading=3.232685241742e-09, residual=1.865063404700e-13, bound=1.352055534271e-08
+k=16: err=8.526316319646e-10, leading=8.526073361760e-10, residual=2.429578859333e-14, bound=1.720755689529e-09
+k=17: err=2.248752295486e-10, leading=2.248716516890e-10, residual=3.577859621050e-15, bound=2.189998907584e-10
+k=18: err=5.930966828771e-11, leading=5.930896625888e-11, residual=7.020288290842e-16, bound=2.787202880922e-11
+k=19: err=1.564282037236e-11, leading=1.564249407285e-11, residual=3.262995134055e-16, bound=3.547261997491e-12
+k=20: err=4.126254893322e-12, leading=4.125642988804e-12, residual=6.119045181124e-16, bound=4.514586205753e-13
+PASS: all measured rungs k=2..20 satisfy the source-dependency remainder envelope
+PASS: dominance gate is k0=17 and remains valid through k=80
+      k0=17
+
+================================================================================================================
+Part 4: source-box sensitivity is named, not hidden
+================================================================================================================
+source NMAX=5: P_inf_pair = 0.615191040446003
+source NMAX=7: P_inf_pair = 0.615191992185898
+source NMAX=9: P_inf_pair = 0.615191992282189
+source NMAX 5->7 drift = 9.517398950054101e-07
+source NMAX 7->9 drift = 9.629119723797430e-11
+PASS: the theorem surface is the source NMAX=7 pair-support value
+PASS: source-box drift is much smaller than the fenced comparator distance
+      max_source_drift=9.517399e-07
+
+================================================================================================================
+Part 5: note content and checked numeric ledger
+================================================================================================================
+PASS: composition note exists
+      /private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cl3-review-openprs-XXXXXX.pdJhcOub5r/docs/GAUGE_VACUUM_PLAQUETTE_DERIVED_WORD_CHAIN_END_TO_END_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-12.md
+PASS: note delegates status to the independent audit lane
+PASS: one-hop authority inputs are markdown links
+PASS: source dependency pointers use repo markdown links, not temp handles
+PASS: note avoids banned overreach phrases
+PASS: checked numeric ledger has no missing or unknown rows
+      missing=[], unknown=[]
+PASS: every checked numeric ledger row matches recomputed values
+      mismatches=[]
+PASS: residual table names the required open targets
+
+TOTAL: PASS=18, FAIL=0
+
+----- stderr -----
+

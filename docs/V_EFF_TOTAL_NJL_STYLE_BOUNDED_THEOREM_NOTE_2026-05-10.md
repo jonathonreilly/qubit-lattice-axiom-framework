@@ -366,8 +366,16 @@ G_eff_LO  =  1/(2 N_c)  =  0.16667    [Kawamoto–Smit leading-order]
 G_critical  =  u_0²/4   =  0.19255
 
   G_eff_LO / G_critical  =  0.866          ← symmetric phase
-  σ_min² (formal)  =  16 G_eff_LO − 4 u_0² ≈  -0.4561  < 0   (does NOT exist)
+  σ_min² (formal)  =  16 G_eff_LO − 4 u_0² ≈  -0.4141  < 0   (does NOT exist)
 ```
+
+*(Prose correction 2026-06-11: this line previously quoted `≈ -0.4561`,
+which does not follow from the stated formula at the stated inputs —
+`16 x (1/6) - 4 x 0.8776² = -0.4141` (`-0.4146` at full B1 precision).
+The deviation was caught by the DELTA0 route-inventory synthesis
+recomputation (`HIERARCHY_DELTA0_ATTACHMENT_ROUTE_INVENTORY_SYNTHESIS_NOTE_2026-06-11.md`,
+backticked downstream pointer). The sign, and therefore the
+symmetric-phase verdict of this section, is unchanged.)*
 
 The framework lattice gauge sector is **on the symmetric side** of
 the NJL chiral-SSB threshold at leading order. No σ_min exists; no

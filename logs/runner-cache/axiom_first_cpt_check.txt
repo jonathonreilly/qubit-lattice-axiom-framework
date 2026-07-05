@@ -1,93 +1,183 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_cpt_check.py
-runner_sha256: 54bb3bcc1f16ba069a6ed790d62513361bcdd7d57750fbdf102f9cb200e48dbe
+runner_sha256: 6250e19761525a77826dd92b7537f72c4d54d0cc5d0d4503c7fae79239070f52
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
-========================================================================
- axiom_first_cpt_check.py
- Loop: axiom-first-foundations, Cycle 4 / Route R4 (stretch attempt)
- Verifies CPT operator identities on small staggered Dirac–Wilson
- blocks; reports load-bearing residuals honestly.
-========================================================================
+============================================================================
+AXIOM-FIRST CPT CHECK -- corrected non-degenerate construction
+(2026-06-11 audit-failed repair: eps sign field carried inside the
+ map; bond-centered boundary convention; nonzero KS hopping)
+============================================================================
 
-[block tag: canonical]
+----------------------------------------------------------------------------
+[SRC] source-boundary guard -- explicit KS carrier, no gate dependency
+----------------------------------------------------------------------------
+  [PASS] [SRC] source note carries the 2026-06-12 explicit-carrier rescope
+  [PASS] [SRC] finite-matrix theorem is over the explicit KS carrier family
+  [PASS] [SRC] framework baseline does not smuggle the KS carrier
+  [PASS] [SRC] staggered realization gate is non-load-bearing context only
+  [PASS] [SRC] source note has no markdown dependency edge to the realization gate
 
---- Block: L=2, dim=3, mass=0.3, r_W=0.0 ---
-  C residual ‖C M C^-1 - M^T‖  = 0.000e+00  (definitional)
-  P residual ‖R_P M R_P^-1 - M‖ = 0.000e+00
-  T residual ‖R_T M^* R_T^-1 - M^*‖ = 0.000e+00  (M is real? max |Im M| = 0.000e+00)
-  CPT residual ‖Θ_CPT M Θ_CPT^-1 - M^*‖ = 0.000e+00
-  ε-Hermiticity ‖ε M ε - M^†‖ = 0.000e+00
-  det(M) = (6.560999999999994e-05+0j)  (Im part = 0.000e+00)
-  involution residual ‖Θ_CPT^2 (M) - M‖ = 0.000e+00
+----------------------------------------------------------------------------
+[DEG] degeneracy witness -- why the old runner was vacuous (F-B)
+----------------------------------------------------------------------------
+  [PASS] [DEG] 2^4 PERIODIC block: forward/backward hops cancel, M_KS = 0  (max |M_KS| = 0.0e+00 -> M = m I)
+  [PASS] [DEG] on the degenerate block the NO-SIGN-FIELD reflection 'passes' (the old surface could not detect the construction error)
 
-[block tag: canonical]
+----------------------------------------------------------------------------
+block 2^4 all-APBC, m = 0.3  (N = 16)
+----------------------------------------------------------------------------
+  [PASS] [HYP] nonzero KS hopping (audit-demanded non-degeneracy)  (max |M_KS| = 1.000)
+  [PASS] [HYP] M real and hop part antisymmetric (M_KS^T = -M_KS)
+  [PASS] [EPS] eps-Hermiticity: E M E = M^T = M^dagger
+  [PASS] [C] charge conjugation kernel: E M^T E = M
+  [PASS] [PT] eta-parity flip lemma: eta_mu(r(x)) = (-1)^mu eta_mu(x) (L_mu even, bond-centered)
+  [PASS] [PT] bond-centered reflection: S_PT Rb M Rb^-1 S_PT = M^T
+  [PASS] [CPT] (CPT1) involution: Theta^2 = id  (V real, V^2 = I)
+  [PASS] [CPT] (CPT2) Theta M Theta^-1 = M^*  (corrected chain lands at M^*, not M^dagger)
+  [PASS] [DET] (CPT4) det(M) real  (det = 7.830445e+04)
+  [PASS] [DET] (CPT5) Theta_CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
+  [PASS] [DET] (CPT5) fermion-sector expectation of the Theta_CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 2.22e-16)
+  [PASS] [FALS] falsifier: reflection WITHOUT the sign field fails (plain S = 1)
+  [PASS] [FALS] falsifier: WRONG sign field (-1)^{x_2} fails
+  [PASS] [FALS] falsifier: SITE-centered reflection x -> -x mod L is wrap-incompatible under APBC (boundary convention is load-bearing)
 
---- Block: L=2, dim=3, mass=0.5, r_W=0.0 ---
-  C residual ‖C M C^-1 - M^T‖  = 0.000e+00  (definitional)
-  P residual ‖R_P M R_P^-1 - M‖ = 0.000e+00
-  T residual ‖R_T M^* R_T^-1 - M^*‖ = 0.000e+00  (M is real? max |Im M| = 0.000e+00)
-  CPT residual ‖Θ_CPT M Θ_CPT^-1 - M^*‖ = 0.000e+00
-  ε-Hermiticity ‖ε M ε - M^†‖ = 0.000e+00
-  det(M) = (0.003906250000000001+0j)  (Im part = 0.000e+00)
-  involution residual ‖Θ_CPT^2 (M) - M‖ = 0.000e+00
+----------------------------------------------------------------------------
+block 2^4 all-APBC, m = 0.5  (N = 16)
+----------------------------------------------------------------------------
+  [PASS] [HYP] nonzero KS hopping (audit-demanded non-degeneracy)  (max |M_KS| = 1.000)
+  [PASS] [HYP] M real and hop part antisymmetric (M_KS^T = -M_KS)
+  [PASS] [EPS] eps-Hermiticity: E M E = M^T = M^dagger
+  [PASS] [C] charge conjugation kernel: E M^T E = M
+  [PASS] [PT] eta-parity flip lemma: eta_mu(r(x)) = (-1)^mu eta_mu(x) (L_mu even, bond-centered)
+  [PASS] [PT] bond-centered reflection: S_PT Rb M Rb^-1 S_PT = M^T
+  [PASS] [CPT] (CPT1) involution: Theta^2 = id  (V real, V^2 = I)
+  [PASS] [CPT] (CPT2) Theta M Theta^-1 = M^*  (corrected chain lands at M^*, not M^dagger)
+  [PASS] [DET] (CPT4) det(M) real  (det = 1.064416e+05)
+  [PASS] [DET] (CPT5) Theta_CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
+  [PASS] [DET] (CPT5) fermion-sector expectation of the Theta_CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 4.44e-16)
+  [PASS] [FALS] falsifier: reflection WITHOUT the sign field fails (plain S = 1)
+  [PASS] [FALS] falsifier: WRONG sign field (-1)^{x_2} fails
+  [PASS] [FALS] falsifier: SITE-centered reflection x -> -x mod L is wrap-incompatible under APBC (boundary convention is load-bearing)
 
-[block tag: 1D-toy]
+----------------------------------------------------------------------------
+block 4^4 periodic, m = 0.3  (N = 256)
+----------------------------------------------------------------------------
+  [PASS] [HYP] nonzero KS hopping (audit-demanded non-degeneracy)  (max |M_KS| = 0.500)
+  [PASS] [HYP] M real and hop part antisymmetric (M_KS^T = -M_KS)
+  [PASS] [EPS] eps-Hermiticity: E M E = M^T = M^dagger
+  [PASS] [C] charge conjugation kernel: E M^T E = M
+  [PASS] [PT] eta-parity flip lemma: eta_mu(r(x)) = (-1)^mu eta_mu(x) (L_mu even, bond-centered)
+  [PASS] [PT] bond-centered reflection: S_PT Rb M Rb^-1 S_PT = M^T
+  [PASS] [CPT] (CPT1) involution: Theta^2 = id  (V real, V^2 = I)
+  [PASS] [CPT] (CPT2) Theta M Theta^-1 = M^*  (corrected chain lands at M^*, not M^dagger)
+  [PASS] [DET] (CPT4) det(M) real  (det = 5.902929e+28)
+  [PASS] [DET] (CPT5) Theta_CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
+  [PASS] [DET] (CPT5) fermion-sector expectation of the Theta_CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 2.58e-14)
+  [PASS] [FALS] falsifier: reflection WITHOUT the sign field fails (plain S = 1)
+  [PASS] [FALS] falsifier: WRONG sign field (-1)^{x_2} fails
 
---- Block: L=4, dim=1, mass=0.3, r_W=0.0 ---
-  C residual ‖C M C^-1 - M^T‖  = 0.000e+00  (definitional)
-  P residual ‖R_P M R_P^-1 - M‖ = 0.000e+00
-  T residual ‖R_T M^* R_T^-1 - M^*‖ = 0.000e+00  (M is real? max |Im M| = 0.000e+00)
-  CPT residual ‖Θ_CPT M Θ_CPT^-1 - M^*‖ = 1.000e+00
-  ε-Hermiticity ‖ε M ε - M^†‖ = 0.000e+00
-  det(M) = (0.09809999999999999+0j)  (Im part = 0.000e+00)
-  involution residual ‖Θ_CPT^2 (M) - M‖ = 0.000e+00
+----------------------------------------------------------------------------
+block 4^4 periodic, m = 0.5  (N = 256)
+----------------------------------------------------------------------------
+  [PASS] [HYP] nonzero KS hopping (audit-demanded non-degeneracy)  (max |M_KS| = 0.500)
+  [PASS] [HYP] M real and hop part antisymmetric (M_KS^T = -M_KS)
+  [PASS] [EPS] eps-Hermiticity: E M E = M^T = M^dagger
+  [PASS] [C] charge conjugation kernel: E M^T E = M
+  [PASS] [PT] eta-parity flip lemma: eta_mu(r(x)) = (-1)^mu eta_mu(x) (L_mu even, bond-centered)
+  [PASS] [PT] bond-centered reflection: S_PT Rb M Rb^-1 S_PT = M^T
+  [PASS] [CPT] (CPT1) involution: Theta^2 = id  (V real, V^2 = I)
+  [PASS] [CPT] (CPT2) Theta M Theta^-1 = M^*  (corrected chain lands at M^*, not M^dagger)
+  [PASS] [DET] (CPT4) det(M) real  (det = 3.951667e+36)
+  [PASS] [DET] (CPT5) Theta_CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
+  [PASS] [DET] (CPT5) fermion-sector expectation of the Theta_CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 6.22e-15)
+  [PASS] [FALS] falsifier: reflection WITHOUT the sign field fails (plain S = 1)
+  [PASS] [FALS] falsifier: WRONG sign field (-1)^{x_2} fails
 
-[block tag: +W-fermion]
+----------------------------------------------------------------------------
+block 4^4 APBC-time, m = 0.3  (N = 256)
+----------------------------------------------------------------------------
+  [PASS] [HYP] nonzero KS hopping (audit-demanded non-degeneracy)  (max |M_KS| = 0.500)
+  [PASS] [HYP] M real and hop part antisymmetric (M_KS^T = -M_KS)
+  [PASS] [EPS] eps-Hermiticity: E M E = M^T = M^dagger
+  [PASS] [C] charge conjugation kernel: E M^T E = M
+  [PASS] [PT] eta-parity flip lemma: eta_mu(r(x)) = (-1)^mu eta_mu(x) (L_mu even, bond-centered)
+  [PASS] [PT] bond-centered reflection: S_PT Rb M Rb^-1 S_PT = M^T
+  [PASS] [CPT] (CPT1) involution: Theta^2 = id  (V real, V^2 = I)
+  [PASS] [CPT] (CPT2) Theta M Theta^-1 = M^*  (corrected chain lands at M^*, not M^dagger)
+  [PASS] [DET] (CPT4) det(M) real  (det = 5.255258e+34)
+  [PASS] [DET] (CPT5) Theta_CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
+  [PASS] [DET] (CPT5) fermion-sector expectation of the Theta_CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 7.11e-15)
+  [PASS] [FALS] falsifier: reflection WITHOUT the sign field fails (plain S = 1)
+  [PASS] [FALS] falsifier: WRONG sign field (-1)^{x_2} fails
+  [PASS] [FALS] falsifier: SITE-centered reflection x -> -x mod L is wrap-incompatible under APBC (boundary convention is load-bearing)
 
---- Block: L=2, dim=3, mass=0.3, r_W=1.0 ---
-  C residual ‖C M C^-1 - M^T‖  = 0.000e+00  (definitional)
-  P residual ‖R_P M R_P^-1 - M‖ = 2.000e+00
-  T residual ‖R_T M^* R_T^-1 - M^*‖ = 2.000e+00  (M is real? max |Im M| = 0.000e+00)
-  CPT residual ‖Θ_CPT M Θ_CPT^-1 - M^*‖ = 2.000e+00
-  ε-Hermiticity ‖ε M ε - M^†‖ = 2.000e+00
-  det(M) = (1828.3135544099962+0j)  (Im part = 0.000e+00)
-  involution residual ‖Θ_CPT^2 (M) - M‖ = 0.000e+00
+----------------------------------------------------------------------------
+block 4^4 APBC-time, m = 0.5  (N = 256)
+----------------------------------------------------------------------------
+  [PASS] [HYP] nonzero KS hopping (audit-demanded non-degeneracy)  (max |M_KS| = 0.500)
+  [PASS] [HYP] M real and hop part antisymmetric (M_KS^T = -M_KS)
+  [PASS] [EPS] eps-Hermiticity: E M E = M^T = M^dagger
+  [PASS] [C] charge conjugation kernel: E M^T E = M
+  [PASS] [PT] eta-parity flip lemma: eta_mu(r(x)) = (-1)^mu eta_mu(x) (L_mu even, bond-centered)
+  [PASS] [PT] bond-centered reflection: S_PT Rb M Rb^-1 S_PT = M^T
+  [PASS] [CPT] (CPT1) involution: Theta^2 = id  (V real, V^2 = I)
+  [PASS] [CPT] (CPT2) Theta M Theta^-1 = M^*  (corrected chain lands at M^*, not M^dagger)
+  [PASS] [DET] (CPT4) det(M) real  (det = 8.695131e+39)
+  [PASS] [DET] (CPT5) Theta_CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
+  [PASS] [DET] (CPT5) fermion-sector expectation of the Theta_CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 1.78e-14)
+  [PASS] [FALS] falsifier: reflection WITHOUT the sign field fails (plain S = 1)
+  [PASS] [FALS] falsifier: WRONG sign field (-1)^{x_2} fails
+  [PASS] [FALS] falsifier: SITE-centered reflection x -> -x mod L is wrap-incompatible under APBC (boundary convention is load-bearing)
 
-========================================================================
- SUMMARY (canonical A_min: pure staggered, r_wilson_fermion = 0)
-========================================================================
-   E1 (Θ_CPT^2 = id):                   PASS
-   E2 (Θ_CPT M Θ_CPT^-1 = M^*):         PASS
-   E3 (ε M ε = M^†, γ_5-Hermiticity):   PASS
-   E4 (det(M) ∈ R):                     PASS
+----------------------------------------------------------------------------
+block 4x2x4x2 mixed-APBC, m = 0.3  (N = 64)
+----------------------------------------------------------------------------
+  [PASS] [HYP] nonzero KS hopping (audit-demanded non-degeneracy)  (max |M_KS| = 1.000)
+  [PASS] [HYP] M real and hop part antisymmetric (M_KS^T = -M_KS)
+  [PASS] [EPS] eps-Hermiticity: E M E = M^T = M^dagger
+  [PASS] [C] charge conjugation kernel: E M^T E = M
+  [PASS] [PT] eta-parity flip lemma: eta_mu(r(x)) = (-1)^mu eta_mu(x) (L_mu even, bond-centered)
+  [PASS] [PT] bond-centered reflection: S_PT Rb M Rb^-1 S_PT = M^T
+  [PASS] [CPT] (CPT1) involution: Theta^2 = id  (V real, V^2 = I)
+  [PASS] [CPT] (CPT2) Theta M Theta^-1 = M^*  (corrected chain lands at M^*, not M^dagger)
+  [PASS] [DET] (CPT4) det(M) real  (det = 6.841482e+09)
+  [PASS] [DET] (CPT5) Theta_CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
+  [PASS] [DET] (CPT5) fermion-sector expectation of the Theta_CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 8.88e-16)
+  [PASS] [FALS] falsifier: reflection WITHOUT the sign field fails (plain S = 1)
+  [PASS] [FALS] falsifier: WRONG sign field (-1)^{x_2} fails
+  [PASS] [FALS] falsifier: SITE-centered reflection x -> -x mod L is wrap-incompatible under APBC (boundary convention is load-bearing)
 
-   PASSED on canonical A_min: 4/4
+----------------------------------------------------------------------------
+block 4x2x4x2 mixed-APBC, m = 0.5  (N = 64)
+----------------------------------------------------------------------------
+  [PASS] [HYP] nonzero KS hopping (audit-demanded non-degeneracy)  (max |M_KS| = 1.000)
+  [PASS] [HYP] M real and hop part antisymmetric (M_KS^T = -M_KS)
+  [PASS] [EPS] eps-Hermiticity: E M E = M^T = M^dagger
+  [PASS] [C] charge conjugation kernel: E M^T E = M
+  [PASS] [PT] eta-parity flip lemma: eta_mu(r(x)) = (-1)^mu eta_mu(x) (L_mu even, bond-centered)
+  [PASS] [PT] bond-centered reflection: S_PT Rb M Rb^-1 S_PT = M^T
+  [PASS] [CPT] (CPT1) involution: Theta^2 = id  (V real, V^2 = I)
+  [PASS] [CPT] (CPT2) Theta M Theta^-1 = M^*  (corrected chain lands at M^*, not M^dagger)
+  [PASS] [DET] (CPT4) det(M) real  (det = 8.278123e+10)
+  [PASS] [DET] (CPT5) Theta_CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
+  [PASS] [DET] (CPT5) fermion-sector expectation of the Theta_CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 8.88e-16)
+  [PASS] [FALS] falsifier: reflection WITHOUT the sign field fails (plain S = 1)
+  [PASS] [FALS] falsifier: WRONG sign field (-1)^{x_2} fails
+  [PASS] [FALS] falsifier: SITE-centered reflection x -> -x mod L is wrap-incompatible under APBC (boundary convention is load-bearing)
 
-   --- Diagnostic: 1D toy (no spatial parity) ---
-   L=4, dim=1, m=0.3: err_CPT=1.000e+00, err_eps=0.000e+00, det∈R=True
-   In 1D there is no spatial parity, so CPT reduces to TC.
-   The TC residual on the time-circle is non-zero because the
-   1-component staggered hop has no chiral structure to absorb the
-   time inversion. This is expected; canonical A_min lives on Z^3.
+----------------------------------------------------------------------------
+[DIAG] diagnostics revisited under the corrected construction
+----------------------------------------------------------------------------
+  [PASS] [DIAG] 1D time circle: the CORRECTED map closes exactly (the old 1D residual 1.0 was an artifact of the defective composition, not a parity wall)  (residual = 0.000)
+  [PASS] [DIAG] staggered + Wilson FERMION term: eps-Hermiticity residual NON-zero (the wall is real; pure staggered is the explicit carrier family here; expected, out of scope)  (residual = 1.000)
 
-   --- Wall test: staggered + Wilson FERMION term in 3D ---
-   (this is NOT in A_min; included only to expose the load-bearing
-    wall: adding a Wilson fermion term breaks the naive ε-as-γ_5)
-   L=2, dim=3, m=0.3, r_W=1.0: err_CPT=2.000e+00, err_eps=2.000e+00
-   load-bearing wall: ε(x) = (-1)^Σx_k is the γ_5 analogue for the
-   staggered KS hop, but does NOT play the same role for the
-   Wilson fermion term. Staggered + Wilson fermion is not in A_min;
-   A_min's A3 uses pure staggered. (Wilson plaquette in A4 is a
-   *gauge-sector* term, not a fermion Wilson term.)
-
- verdict: CPT operator-level identities (CPT1)–(CPT5) exhibited
- on canonical A_min (pure staggered).
- Wilson PLAQUETTE (gauge-sector) CPT step is asserted by inspection
- (deferred to a future loop for full algebraic generality).
+============================================================================
+TOTAL: PASS=119 FAIL=0
+============================================================================
 
 ----- stderr -----
 

@@ -9,7 +9,10 @@ Claim under check (theorem T1 of the note):
                                         PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
         B2:  g_bare = 1, alpha_bare = g_bare^2 / (4 pi) = 1 / (4 pi)
                                        (declared normalization input)
-        B3:  vertex power n_link = 2   (declared structural input)
+        B3:  staggered-Dirac gauge vacuum-polarization channel has
+             operator count n_link = 2; identifying that channel count
+             with the physical coupling definition is declared here
+                                      (structural input)
         B4:  alpha_s(mu = v) := alpha_bare / u_0^2
                                        (declared scheme/scale input)
 
@@ -32,10 +35,12 @@ Check classes (each PASS line is tagged):
   [A] algebraic identity / exact arithmetic on the declared boundary inputs
       (8 checks: T1 forward computation, two independent evaluation
       routes, exact identities, analytic sensitivity).
-  [B] cross-note input consistency (5 checks: helper-module residuals
+  [B] cross-note input consistency (9 checks: helper-module residuals
       against scripts/canonical_plaquette_surface.py, the bridge note's
-      boundary value, the bridge note's published 0.1181
-      readout for C1, and the truncation envelope of the C1 transfer).
+      boundary value, the bridge note's published 0.1181 readout for
+      C1, the truncation envelope of the C1 transfer, and
+      source-firewall wording for the remaining B1/B3/B4 bridge
+      blockers).
   [D] external comparator (2 checks: PDG bands, quarantined terminal
       section; never load-bearing for T1).
 
@@ -54,6 +59,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import canonical_plaquette_surface as cps  # noqa: E402
 
 PI = math.pi
+NOTE_PATH = Path(__file__).resolve().parents[1] / "docs" / "ALPHA_S_DERIVED_NOTE.md"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -82,8 +88,9 @@ def check(klass: str, name: str, condition: bool, detail: str = "") -> bool:
 P_BOUNDARY = 0.5934           # B1: licensed reuse number (plaquette license)
 G_BARE = 1.0                  # B2: declared bare-coupling normalization
 ALPHA_BARE = G_BARE ** 2 / (4.0 * PI)
-N_LINK = 2                    # B3: declared structural vertex power
-# B4 is the identification alpha_s(mu=v) := alpha_bare / u_0^n_link itself.
+N_LINK = 2                    # B3: VP-channel operator count used by T1
+# B3 also declares channel selection; B4 declares scheme/scale:
+# alpha_s(mu=v) := alpha_bare / u_0^n_link.
 
 # Boundary value registered by the running-bridge note (its own rounded
 # declared value; class-B consistency target only).
@@ -302,6 +309,26 @@ def part_cross_note_consistency(a_v: float) -> None:
           f"|0.103304 - {a_v:.8f}| = {abs(BRIDGE_ALPHA_S_V_BOUNDARY - a_v):.3e}")
 
 
+def part_source_firewall() -> None:
+    print("\n=== Source-status firewall (class B, non-load-bearing for T1) ===\n")
+    text = NOTE_PATH.read_text(encoding="utf-8")
+    flat_text = " ".join(text.split())
+    check("B", "2026-06-12 firewall says row remains bounded, not retained",
+          "2026-06-12 Residual-Bridge Source Firewall" in text
+          and "this is bounded support only" in flat_text
+          and "No retained-grade proposal or status promotion is made here" in flat_text)
+    check("B", "firewall keeps B1 plaquette value admitted until certified",
+          "B1 remains an admitted plaquette value" in text
+          and "this note does not supply that enclosure" in text
+          and "`<P> = 0.5934`" in text)
+    check("B", "firewall keeps B3 channel-selection/coupling-map bridge open",
+          "B3 still has a channel-selection residue" in text
+          and "B3 channel-selection/coupling-map theorem" in flat_text)
+    check("B", "firewall keeps B4 lattice-to-MSbar scheme/scale bridge open",
+          "B4 remains a scheme/scale bridge" in text
+          and "B4 lattice-to-MSbar scheme and scale theorem" in flat_text)
+
+
 def part_c1_corollary(a_v: float) -> float:
     print("\n=== C1 (bounded corollary, NOT load-bearing for T1): "
           "v -> M_Z transfer ===\n")
@@ -352,6 +379,7 @@ def main() -> None:
 
     a_v = part_t1_forward_computation()
     part_cross_note_consistency(a_v)
+    part_source_firewall()
     a_mz = part_c1_corollary(a_v)
     part_pdg_quarantine(a_mz)
 
@@ -363,12 +391,17 @@ def main() -> None:
     print("  - The helper module canonical_plaquette_surface.py is consulted")
     print("    only for the tagged class-B consistency residuals above; every")
     print("    T1 number is recomputed forward inside this runner.")
+    print("  - B3 consumes n_link = 2 as the staggered-Dirac gauge")
+    print("    vacuum-polarization channel count; the channel-selection step")
+    print("    into alpha_s(v) := alpha_bare/u_0^2 is declared in the note.")
     print("  - C1 uses a self-contained 2-loop SM RGE reimplementation with")
     print("    LO top-threshold matching; PDG constants appear only in the")
     print("    terminal class-D section and in the C1 threshold/scale inputs.")
     print("  - The M_Z readout uses the running-bridge note's bounded")
     print("    transfer-kernel scope; it is a corollary, not part of")
     print("    the T1 claim surface.")
+    print("  - The source firewall keeps B1, B3 channel-selection, and")
+    print("    B4 open; this runner does not promote the row.")
     print()
     print("=" * 76)
     print(f"Breakdown: A={CLASS_COUNTS['A']} B={CLASS_COUNTS['B']} "

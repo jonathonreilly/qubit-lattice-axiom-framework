@@ -1,5 +1,7 @@
 # P2 Taste-Staircase Dressing-Distribution Invariance Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-05-17
 **Status:** positive_theorem — strengthens
 [`docs/YT_P2_TASTE_STAIRCASE_TRANSPORT_NOTE_2026-04-17.md`](YT_P2_TASTE_STAIRCASE_TRANSPORT_NOTE_2026-04-17.md)

@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/frontier_u4_qubit_reframe_closure.py
+runner_sha256: fcd93a4e56dbb08e2819bedd36e9f33b77f851180180ec5a7b4cf219677f22c1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+==============================================================================
+U4 QUBIT-REFRAME CLOSURE VERIFIER
+==============================================================================
+[PASS] target U4 note exists -- docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md
+[PASS] current minimal axiom memo exists -- docs/MINIMAL_AXIOMS_2026-06-05.md
+[PASS] CL3 split note exists -- docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md
+[PASS] current axiom memo has named Lattice/Quantum/Record axioms
+[PASS] Quantum axiom supplies one qubit and M2/Cl3 equivalence
+[PASS] U4 note now cites the current axiom memo
+[PASS] U4 note keeps auditor-owned source-side status
+[PASS] U4 note keeps alias/renaming boundary
+[PASS] CL3 split source records M2(C) isomorphism and unique summand module
+[PASS] Pauli matrices satisfy Cl(3,0) relations
+[PASS] Pauli word span has real dimension 8 -- rank=8
+[PASS] Pauli generators recover M2(C) matrix units
+[PASS] standard C2 module is faithful and irreducible for generated M2(C) -- matrix units connect the two coordinate lines
+[PASS] U4 consequence is exactly k=1 and dim_C H_x=2
+[PASS] downstream gate boundary is preserved
+
+==============================================================================
+SUMMARY
+==============================================================================
+TOTAL: PASS=15, FAIL=0
+Verified scoped U4 alias closure: the current Quantum axiom supplies one qubit/M2(C)/Cl(3,0) per site; Pauli matrices realize the local Cl(3,0) carrier as all of M2(C), while downstream staggered gates remain separately auditor-owned.
+
+----- stderr -----
+

@@ -1,34 +1,36 @@
 ===== runner cache v1 =====
 runner: scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py
-runner_sha256: d5ef3250889e5e5f4a8eb4d0b00b267d92014999c25a89d023b2dd53aea786ad
+runner_sha256: fc9c9bfc4e0bf84fc2aab54d81b18e9355b62371ea4a130c459dc206ab406b36
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 24.00
+elapsed_sec: 28.68
 status: ok
 ----- stdout -----
 ==============================================================================
 reconstructed free H = -log(T^2)/(2 a_tau) is QUASI-LOCAL (exp tail)  [class A]
 ==============================================================================
 
+-- (0) source-note scope repair guardrails --
+PASS: source note scope repair is wired to the d-dimensional dispersion theorem and leaves residual targets open  (5/5 source guards satisfied)
+
 -- (1) spec(T^2)=e^{-2E(p)} is gapped away from 0 (m>0) => log well-defined --
-  [PASS] m=0.1: min spec(T^2) = e^(-2 Emax) = 0.0716 > 0 (gapped)
-  [PASS] m=0.3: min spec(T^2) = e^(-2 Emax) = 0.0700 > 0 (gapped)
-  [PASS] m=1.0: min spec(T^2) = e^(-2 Emax) = 0.0557 > 0 (gapped)
+PASS: m=0.1: min spec(T^2) = e^(-2 Emax) = 0.0716 > 0 (gapped)
+PASS: m=0.3: min spec(T^2) = e^(-2 Emax) = 0.0700 > 0 (gapped)
+PASS: m=1.0: min spec(T^2) = e^(-2 Emax) = 0.0557 > 0 (gapped)
 
 -- (2) the dispersion is real-analytic for m>0 (radicand R(p) >= m^2 > 0) --
-  [PASS] R(p)=m^2+sum sin^2 p stays >= m^2 > 0 on the real torus => analyticity strip a=arcsinh(m)>0 (nearest singularity sin^2 p=-m^2) => Paley-Wiener exponential tail  (min R (m=0.3, 2e5 samples) = 0.0913 >= 0.09)
+PASS: R(p)=m^2+sum sin^2 p stays >= m^2 > 0 on the real torus => analyticity strip a=arcsinh(m)>0 (nearest singularity sin^2 p=-m^2) => Paley-Wiener exponential tail  (min R (m=0.3, deterministic 33^3 grid) = 0.0900 >= 0.09)
 
 -- (3) H(x) has an exponential tail a>0 ~ arcsinh(m) (quasi-local) for m>0 --
-  [PASS] m=0.1: exponential rate a=0.092 > 0 and within ~2x of arcsinh(m)=0.100  (prefactor x^-3.24; a/arcsinh(m)=0.92)
-  [PASS] m=0.3: exponential rate a=0.234 > 0 and within ~2x of arcsinh(m)=0.296  (prefactor x^-4.11; a/arcsinh(m)=0.79)
-  [PASS] m=1.0: exponential rate a=1.170 > 0 and within ~2x of arcsinh(m)=0.881  (prefactor x^-0.72; a/arcsinh(m)=1.33)
+PASS: m=0.1: exponential rate a=0.092 > 0 and within ~2x of arcsinh(m)=0.100  (prefactor x^-3.24; a/arcsinh(m)=0.92)
+PASS: m=0.3: exponential rate a=0.234 > 0 and within ~2x of arcsinh(m)=0.296  (prefactor x^-4.11; a/arcsinh(m)=0.79)
+PASS: m=1.0: exponential rate a=1.170 > 0 and within ~2x of arcsinh(m)=0.881  (prefactor x^-0.72; a/arcsinh(m)=1.33)
 
 -- (4) m=0 (gapless): strip closes (a=0) => pure power-law (not quasi-local) --
-  [PASS] m=0: H(x) is PURE POWER-LAW (power-fit beats exp-fit, high R^2) => NOT quasi-local => the mass gap (m>0) is the load-bearing input for quasi-locality  (|H(x)| ~ x^-4.12; R^2 power=0.9994 > exp=0.8458)
+PASS: m=0: H(x) is PURE POWER-LAW (power-fit beats exp-fit, high R^2) => NOT quasi-local => the mass gap (m>0) is the load-bearing input for quasi-locality  (|H(x)| ~ x^-4.12; R^2 power=0.9994 > exp=0.8458)
 
-==============================================================================
-TOTAL: PASS=8 FAIL=0
-VERDICT: the reconstructed free Hamiltonian H = -log(T^2)/(2 a_tau) = E(p) is QUASI-LOCAL: the staggered dispersion is real-analytic on the torus for m>0 (radicand >= m^2 > 0), so by Paley-Wiener its kernel has an exponential tail H(x) ~ x^-p e^{-a|x|} with a = arcsinh(m) > 0; the m=0 gapless case is pure power-law (strip closed), so the mass gap is load-bearing. This supplies the finite-range/quasi-local H structure the microcausality (M2) Lieb-Robinson bound needs -- closing the bridge's named non-perturbative H=-log(T)/a_tau finite-range step on the free surface.
+Scope: free U=1 staggered two-step sector; interacting log-transfer locality and exact tail-composition remain open.
+TOTAL: PASS=9, FAIL=0
 
 ----- stderr -----
 

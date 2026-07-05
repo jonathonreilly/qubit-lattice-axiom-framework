@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/linear_response_derivation.py
-runner_sha256: a9cf81c0c65884de910fb2c84e40178a83e70553858e8361fcbd6f53e99044c8
+runner_sha256: b1bb8992e9e2f7dde60344b97475a5a6196975614b6684c1549cd2c8b8d8de2a
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
@@ -11,8 +11,10 @@ LINEAR-RESPONSE DERIVATION-ADJACENT ANALYSIS -- FROZEN-LOG VERIFIER
   Scope: open-gate heuristic metrics from the completed 44-family log.
   Full 44-family recomputation remains available with --recompute.
 ====================================================================================================
-[PASS] frozen 44-family log exists :: /private/tmp/cl3-linear-response-cache-verifier-20260607/logs/2026-04-07-linear-response-derivation.txt
+[PASS] frozen 44-family log exists :: /private/tmp/linear-response-open-gate-20260613/logs/2026-04-07-linear-response-derivation.txt
 [PASS] finite-difference epsilon is 0.001
+[PASS] source note contains downstream firewall
+[PASS] source firewall forbids literal-Kubo/closed-derivation reuse
 [PASS] 44 family rows parsed :: rows=44
 [PASS] group counts are 26/9/9 :: {'swept': 26, 'scaffolded': 9, 'off_scaffold': 9}
 [PASS] overall Pearson r recomputes to 0.5605 :: r=0.5605
@@ -25,7 +27,7 @@ LINEAR-RESPONSE DERIVATION-ADJACENT ANALYSIS -- FROZEN-LOG VERIFIER
 [PASS] measured-response ceiling is 39/44 :: correct=39
 [PASS] verdict remains moderate/open, not retained
 
-SCORECARD PASS=13 FAIL=0
+SCORECARD PASS=15 FAIL=0
 FINDING: frozen 44-family heuristic metrics are audit-reproducible.
 BOUNDARY: detector-only heuristic; not the literal first-order Kubo theorem.
 

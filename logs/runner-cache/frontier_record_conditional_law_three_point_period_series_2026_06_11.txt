@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_conditional_law_three_point_period_series_2026_06_11.py
+runner_sha256: 59be6d7f42385aee3b5125f0f4ce2e08f93a0af6c50fa17fec0d2cbd7d1a65eb
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 48.83
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  L = 3 baseline SET (both #3554 events) and L = 4 set (#3555 seeds)
+==============================================================================
+  [PASS] L=3 seed 4242: rank guard  (min-sv 0.0012)
+   L=3 seed 4242: d9 global 0.457 | 0.557/0.557/0.598 min-gain 0.0001 | gap +0.088
+  [PASS] L=3 seed 99: rank guard  (min-sv 0.0011)
+   L=3 seed 99: d7 global 0.057 | 0.347/0.502/0.695 min-gain 0.1547 | gap +0.190
+  [PASS] L=3 set reproduces the #3555 baseline: min-gains {~0.0004, ~0.16} (one stall-like, one clear -- event-specific at L=3), gaps ~{+0.09, +0.19}  (min-gains ['0.0001', '0.1547']; gaps ['+0.088', '+0.190'])
+  [PASS] L=4 seed 1: rank guard  (min-sv 0.0037)
+   L=4 seed 1: d9 global 0.573 | 0.750/0.780/0.821 min-gain 0.0297 | gap +0.193
+  [PASS] L=4 seed 4242: rank guard  (min-sv 0.0020)
+   L=4 seed 4242: d9 global 0.399 | 0.609/0.638/0.690 min-gain 0.0286 | gap +0.217
+  [PASS] L=4 seed 99: rank guard  (min-sv 0.0014)
+   L=4 seed 99: d8 global 0.572 | 0.597/0.665/0.784 min-gain 0.0677 | gap +0.076
+  [PASS] L=4 set reproduces #3555: UNIFORMLY CLEAR gains (min-gain > 0.02 every seed) and all-tested fixed sampled-null clearing  (min-gains ['0.030', '0.029', '0.068']; gaps ['+0.193', '+0.217', '+0.076'])
+==============================================================================
+Part 2  L = 5 (15 modes, 32768-dim; expm_multiply action): SIX seeds
+==============================================================================
+  [PASS] L=5 seed 1: rank guard  (min-sv 0.0011)
+   L=5 seed 1: d7 global 0.515 | 0.610/0.630/0.644 min-gain 0.0142 | gap +0.076
+  [PASS] L=5 seed 4242: rank guard  (min-sv 0.0035)
+   L=5 seed 4242: d6 global 0.559 | 0.747/0.861/0.904 min-gain 0.0430 | gap +0.236
+  [PASS] L=5 seed 99: rank guard  (min-sv 0.0029)
+   L=5 seed 99: d5 global 0.453 | 0.714/0.765/0.997 min-gain 0.0509 | gap +0.095
+  [PASS] L=5 seed 2: rank guard  (min-sv 0.0074)
+   L=5 seed 2: d9 global 0.769 | 0.856/0.870/0.875 min-gain 0.0050 | gap +0.095
+  [PASS] L=5 seed 7: rank guard  (min-sv 0.0010)
+   L=5 seed 7: d8 global 0.630 | 0.742/0.770/0.798 min-gain 0.0281 | gap +0.126
+  [PASS] L=5 seed 20260611: rank guard  (min-sv 0.0037)
+   L=5 seed 20260611: d7 global 0.635 | 0.648/0.653/0.714 min-gain 0.0049 | gap -0.030
+  [PASS] (G1) L=4's UNIFORM CLARITY DOES NOT PERSIST: at L=5 the min-gain ledger has 4/6 clear (> 0.01) and 2/6 MARGINAL (< 0.01) -- no systematic period strengthening of the conditioning gains (the honest three-point finding)  (min-gains ['0.0142', '0.0430', '0.0509', '0.0050', '0.0281', '0.0049'])
+  [PASS] (G1b, panel-required) #3555's LITERAL criterion -- strict monotonicity (min-gain > 0) -- PERSISTS 6/6 at L=5: only the gain MAGNITUDE fails to grow (the weakening is of 'clarity', not of monotonicity)
+  [PASS] (G2) SAMPLED-NULL CLEARING DROPS FROM ALL-TESTED TO TYPICAL at L=5: 5/6 clear; the failing seed's event DISCLOSED (a sampled-null failure, NOT a monotonicity failure -- its min-gain is positive)  (gaps ['+0.076', '+0.236', '+0.095', '+0.095', '+0.126', '-0.030']; non-clearing seed [20260611])
+==============================================================================
+Part 3  (G3) the three-point gap series: NO period trend
+==============================================================================
+  [PASS] the gap medians fluctuate with NO monotone period trend (the #3555 'comparable-or-larger, not doubled' verdict extends: at three points there is no growth law; gap magnitudes are event/seed-dominated)  (medians L=3/4/5: +0.139 / +0.193 / +0.095)
+  [PASS] source note declares fixed 300-permutation sampled-null scope
+  [PASS] source note forbids exhaustive or MC-free null theorem
+  [PASS] source note declares dependency-edge rescope repair
+  [PASS] source note confines load-bearing inputs to runner-defined finite objects
+  [PASS] source note makes inherited framework language non-load-bearing labels
+  [PASS] source note forbids downstream retained-derivation citations
+  [PASS] source note forbids selector/null and record-conditional overclaim
+==============================================================================
+TOTAL: PASS=24 FAIL=0
+==============================================================================
+SCOPE: extends the period series to three points (L = 3, 4, 5 rings; uniform
+  expm_multiply machinery -- no dense step unitary anywhere; measured peak
+  footprint ~2.5 GB, single-run safe, panels serialize).  THE MIN-GAIN LEDGER
+  replaces the monotone/stall dichotomy.  (G1) #3555's STRICT monotonicity
+  persists 6/6 at L=5; the gain MAGNITUDE does not (4/6 clear, 2/6 marginal):
+  no systematic strengthening.  (G2) sampled-null clearing drops from all-tested to
+  5/6 (failing seed disclosed).  (G3) gap medians {~0.14, ~0.19, ~0.09}:
+  trendless.  THREE-POINT VERDICT: the record-conditional structure is
+  event/seed-dominated at accessible periods -- period scans at these sizes
+  cannot decide the conditional-law question (the honest redirect: the next
+  lever is analytic or a different observable, not larger rings).  NOT claimed:
+  asymptotics, concentration, CLT premises, L>=6 (memory contract), Z^3.
+  Conditionality inherited (#3554/#3555: Born cap, named instruments, supplied
+  carrier, guarded domain, discrete-time, R1 boundaries untouched).  The U(1)
+  factor is NOT identified with a physical gauge field.  No new axiom/
+  primitive/measure/weight; r untouched.  Audit lane grades.
+
+----- stderr -----
+

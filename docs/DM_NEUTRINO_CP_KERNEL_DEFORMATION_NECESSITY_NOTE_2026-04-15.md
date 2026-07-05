@@ -1,5 +1,7 @@
 # DM Neutrino CP-Kernel Deformation Necessity
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15
 **Status:** exact necessary-condition theorem for the missing Dirac texture
 **Atlas placement:** canonical toolkit on `main` at

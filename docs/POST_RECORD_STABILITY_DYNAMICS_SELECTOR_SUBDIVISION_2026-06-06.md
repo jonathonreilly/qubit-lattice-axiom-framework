@@ -29,10 +29,10 @@ On the current ledger snapshot:
 
 | Stability/dynamics sub-bucket | Rows |
 |---|---:|
-| `flow_or_thermal_stability` | 58 |
-| `arrow_or_dynamics_bridge` | 36 |
+| `flow_or_thermal_stability` | 106 |
+| `arrow_or_dynamics_bridge` | 63 |
 
-Total: `94` stability/dynamics selector rows.
+Total: `169` stability/dynamics selector rows.
 
 ## Meaning
 
@@ -85,8 +85,8 @@ The runner verifies:
 - the selector/dial helper source used to obtain the bucket is included in the
   packet;
 - bounded ledger-row export exists for the selected stability/dynamics rows;
-- current stability/dynamics selector row count is `94`;
-- sub-bucket counts sum to `94`;
+- current stability/dynamics selector row count is `169`;
+- sub-bucket counts sum to `169`;
 - expected sub-bucket counts match the current snapshot;
 - representative rows are present in each sub-bucket;
 - audit ledger hash is unchanged after the scan;

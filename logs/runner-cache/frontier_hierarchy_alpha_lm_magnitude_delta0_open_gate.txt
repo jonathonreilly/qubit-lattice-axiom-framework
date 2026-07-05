@@ -1,60 +1,115 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py
-runner_sha256: 91634a73bfd9a9c42cd52136793f2a4e3867b8d82c0ea3c156b1b3c523748e18
+runner_sha256: 98c57bb196eea34d6d034f7b4381ba243f21b6ddb423d82e7af34e86404911f8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.65
 status: ok
 ----- stdout -----
 
 ================================================================================
 Note scope
 ================================================================================
-[PASS] note contains marker: **Claim type:** open_gate
-[PASS] note contains marker: does not close the hierarchy lane
-[PASS] note contains marker: does not approve
-[PASS] note contains marker: transport source for that coupling-power magnitude on the current baseline: open
-[PASS] note contains marker: does not claim that every possible future mechanism is closed
-[PASS] note omits non-native marker: Generated with
-[PASS] note omits non-native marker: source-note proposal only
-[PASS] note omits non-native marker: actual_current_surface_status
-[PASS] note omits non-native marker: audit lane
-[PASS] note omits non-native marker: retained_bounded
-[PASS] note omits non-native marker: retained_no_go
-[PASS] note omits non-native marker: closure_proposal
-[PASS] note omits non-native marker: formal no-go
+PASS: note contains marker: **Claim type:** open_gate
+PASS: note contains marker: **Status authority:** independent audit lane only.
+PASS: note contains marker: does not close the hierarchy lane
+PASS: note contains marker: does not approve
+PASS: note contains marker: transport source for that coupling-power magnitude on the current baseline: open
+PASS: note contains marker: does not claim that every possible future mechanism is closed
+PASS: note contains marker: mean-field link-feedback candidate is also pruned
+PASS: note contains marker: Surviving routes run through beyond-mean-field link fluctuations
+PASS: note contains marker: ## W51 repair attempt (2026-06-12; named-gap sharpening)
+PASS: note contains marker: named gap: B4 attachment-observable identification
+PASS: note contains marker: Classification: named-gap statement after stress check, not a shipped global no-go.
+PASS: note omits non-native marker: Generated with
+PASS: note omits non-native marker: source-note proposal only
+PASS: note omits non-native marker: actual_current_surface_status
+PASS: note omits non-native marker: retained_bounded
+PASS: note omits non-native marker: retained_no_go
+PASS: note omits non-native marker: closure_proposal
+PASS: note omits non-native marker: formal no-go
+PASS: note omits non-native marker: only route
+PASS: note omits non-native marker: last route
+PASS: note omits non-native marker: exhausted
+PASS: note omits non-native marker: closes the program
 
 ================================================================================
 Coupling-power magnitude
 ================================================================================
-[PASS] alpha_bare = 1/(4 pi)
-[PASS] alpha_bare^16 = (4 pi)^-16 ~= 2.586e-18  --  2.586081e-18
+PASS: alpha_bare = 1/(4 pi)
+PASS: alpha_bare^16 = (4 pi)^-16 ~= 2.586e-18  --  2.586081e-18
 
 ================================================================================
 Geometric progression
 ================================================================================
-[PASS] alpha_LM = alpha_bare/u0
-[PASS] alpha_s = alpha_bare/u0^2
-[PASS] alpha_LM/alpha_bare = 1/u0
-[PASS] alpha_s/alpha_LM = 1/u0
-[PASS] 1/alpha equal-step test gives Delta2/Delta1 = u0  --  u0
+PASS: alpha_LM = alpha_bare/u0
+PASS: alpha_s = alpha_bare/u0^2
+PASS: alpha_LM/alpha_bare = 1/u0
+PASS: alpha_s/alpha_LM = 1/u0
+PASS: 1/alpha equal-step test gives Delta2/Delta1 = u0  --  u0
 
 ================================================================================
 Block observable symbol support
 ================================================================================
-[PASS] determinant factor contains u0
-[PASS] determinant factor has no explicit alpha_bare
-[PASS] condensate summand contains u0
-[PASS] condensate summand has no explicit alpha_bare
+PASS: determinant factor contains u0
+PASS: determinant factor has no explicit alpha_bare
+PASS: determinant at m=0 has u0-degree 16  --  65536*u0**16
+PASS: single taste-mode magnitude squared is m^2 + 4 u0^2
+PASS: single taste-mode factor has no explicit alpha_bare
+PASS: condensate summand contains u0
+PASS: condensate summand has no explicit alpha_bare
+
+================================================================================
+Reduced target algebra
+================================================================================
+PASS: ratio-normalized product u0^16 * alpha_s^16 equals alpha_LM^16
+PASS: smallest faithful 16-mode instance closes exactly over rationals  --  value=43046721/10000000000000000
+PASS: per-taste d=3 kernel slope equals alpha_bare at g_bare=1 as a value
+PASS: kernel slope times two-link dressing equals alpha_s value
+
+================================================================================
+W51 named-gap markers
+================================================================================
+PASS: one-hop authority link present: [`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)
+PASS: downstream probe is not a one-hop authority link: [`HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md)
+PASS: downstream probe is not a one-hop authority link: [`HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md)
+PASS: downstream probe is not a one-hop authority link: [`HIERARCHY_DELTA0_S1PRIME_TASTE_REGION_KERNEL_SHARE_PROBE_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_S1PRIME_TASTE_REGION_KERNEL_SHARE_PROBE_NOTE_2026-06-11.md)
+PASS: downstream probe is not a one-hop authority link: [`HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_NOTE_2026-06-11.md)
+PASS: context handle present: `HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md`
+PASS: context handle present: `HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md`
+PASS: context handle present: `HIERARCHY_DELTA0_S1PRIME_TASTE_REGION_KERNEL_SHARE_PROBE_NOTE_2026-06-11.md`
+PASS: context handle present: `HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_NOTE_2026-06-11.md`
+PASS: context handle present: plain-text context handles rather than citation-graph dependencies
+PASS: W51 marker present: two exact match-window cells
+PASS: W51 marker present: supplier-chain identity itself, not a mechanism
+PASS: W51 marker present: bookkeeping equivalence of the reduced target
+PASS: W51 marker present: does not derive the attachment-observable identification
+PASS: W51 marker present: N1, alternative routes checked or bounded.
+PASS: W51 marker present: N2, wall independence.
+PASS: W51 marker present: N3, hidden-wall scan.
+PASS: W51 marker present: N4, residual matching.
+PASS: W51 marker present: N5, rhetoric audit.
+PASS: W51 marker present: N6, primitive registry check.
+PASS: W51 marker present: N7, steelman.
+PASS: W51 marker present: N8, cross-cycle echo.
+PASS: W51 marker present: outside-K1-K8
 
 ================================================================================
 Delta-zero scope
 ================================================================================
-[PASS] current baseline scope records delta = 0
-[PASS] no extra-dimensional tower is supplied by this runner
+PASS: current baseline scope records delta = 0
+PASS: no extra-dimensional tower is supplied by this runner
 
-TOTAL: PASS=26 FAIL=0
+================================================================================
+Feedback route pruning
+================================================================================
+PASS: alpha_s target remains 0.1033038  --  0.1033038
+PASS: if R = alpha_s, determinant-share ratio must exceed 3, not an O(1)-near-1 saddle shift  --  required R_det = alpha_s^(-1/2) = 3.111299
+PASS: note records Block04 mean-field feedback pruning without claiming closure
+PASS: note leaves three surviving route families after mean-field pruning
+
 VERDICT: hierarchy alpha_LM magnitude delta-zero open-gate checks pass.
+TOTAL: PASS=69, FAIL=0
 
 ----- stderr -----
 

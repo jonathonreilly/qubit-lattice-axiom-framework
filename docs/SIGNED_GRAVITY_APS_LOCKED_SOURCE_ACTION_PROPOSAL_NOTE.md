@@ -58,6 +58,59 @@ the current axiom surface, then rerun the variation/table checks here. This
 note does not introduce a new axiom and does not mark that source principle as
 admitted.
 
+## 2026-06-12 Source-Action Hard Residual
+
+The local variation/table harness is not the missing science: it closes
+only after `S_int = - chi_eta M_phys <rho,Phi>` is inserted. The live
+frontier is the origin of that cross term.
+
+Current retained signed-gravity ingredients still split into the same
+two honest facts:
+
+- separable APS/Wald/Gauss source terms and positive mass/area carriers
+  span orientation-even sources plus spectators, not the required
+  orientation-odd `[+1,-1]` source vector;
+- determinant-line/orientation-line structure hosts a `Z2` label but
+  does not canonically select a section or force an active local
+  `chi_eta rho Phi` variation.
+
+The best positive route remains the generation/cochain/taste grading
+program described below: derive a non-transportable chiral grading,
+then prove that it selects the APS-locked scalar source term and a
+protected eta sector. This note does not add that grading as a premise,
+does not introduce a new axiom, and does not promote the proposal while
+the source-action origin is open.
+
+Source-surface summary: this remains an open-gate source-action target. The
+live blocker is a derivation of the APS-locked `chi_eta rho Phi` source action.
+No retained-grade proposal or status promotion is made here; the independent
+audit lane remains the only authority for effective status.
+
+## 2026-06-15 Bridge-Audit Source Bundle
+
+This source packet now binds its open-gate boundary to the executable
+APS/Wald/Gauss bridge audit instead of relying only on prose lineage:
+
+- [`SIGNED_GRAVITY_APS_WALD_GAUSS_BRIDGE_AUDIT_NOTE.md`](SIGNED_GRAVITY_APS_WALD_GAUSS_BRIDGE_AUDIT_NOTE.md)
+  states the current retained-route result:
+  `FINAL_TAG: APS_WALD_GAUSS_BRIDGE_NOT_DERIVED`.
+- [`scripts/signed_gravity_aps_wald_gauss_bridge_audit.py`](../scripts/signed_gravity_aps_wald_gauss_bridge_audit.py)
+  checks that the APS eta sign is a stable boundary label, retained
+  Wald/Gauss/source-unit terms produce only a positive unsigned active source,
+  eta is source-neutral under gap-preserving variations, and the locked
+  four-pair table appears only after inserting `chi_eta` into the source action
+  by hand.
+- [`logs/runner-cache/signed_gravity_aps_wald_gauss_bridge_audit.txt`](../logs/runner-cache/signed_gravity_aps_wald_gauss_bridge_audit.txt)
+  records `SUMMARY: PASS=14 FAIL=0` and the same not-derived final tag.
+
+The row runner now verifies these three surfaces before checking the inserted
+action ansatz. This does not prove the desired source action and does not add a
+new axiom. It makes the conditional row audit-ready as a source-boundary/no-go
+packet: the proposed action passes its local variation and sign-table controls
+only after the missing `chi_eta M_phys <rho,Phi>` source term is supplied, while
+the current retained APS/Wald/Gauss stack is explicitly certified not to derive
+that term.
+
 ## 2026-05-28 Panel Convergence — Origin Obligation Sharpened to the Generation-Chirality Grading
 
 Proof obligation #1 ("Origin": derive `S_int = −χ_η M_phys ⟨ρ,Φ⟩` from retained
@@ -461,3 +514,16 @@ The axiom extension treats `chi_eta M_phys rho` as an eta-polarized source
 line on gapped APS boundary sectors and imposes hard gap admissibility. It is
 coherent as a controlled candidate, but it is not a retained theorem or a
 physical signed-gravity claim.
+
+## 2026-06-15 audit-unlock residual certificate
+
+The local finite variation and sign-table harness is useful only after the
+cross term `S_int = - chi_eta M_phys <rho, Phi>` is inserted. This packet
+does not derive that term.
+
+The exact frontier target is a framework-native derivation of the canonical
+orientation section/source principle that forces the APS-locked
+`chi_eta rho Phi` source action and protects the eta sector. Until that is
+proved, this row should be re-audited as an open-gate source-action proposal
+with a passing conditional harness, not as a source-action theorem. No new
+axiom or admitted source principle is added here.

@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_e_center_lift_measured_calibration_2026_06_10.py
+runner_sha256: b03cdfbae9ad291ddad51388ae890bd2fafa07c87cadf9c5e4fa85bc73de6b84
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+ROUTE-2 E-CENTER LIFT: MEASURED CALIBRATION + EXACT COVARIANCE REFORMULATION
+================================================================================================
+[PASS] C1 (the landed calibration source): the SHA-pinned cache of the landed center-excess row parses and contains all four shell-response endpoint coefficients gamma_X(center|shell) (the Lambda_R response at the 15^3 box to the canonical source-family endpoints)
+       runner_sha256 = c5cbe0a90df79c02...; gamma values = gE_center=-3.772329e-04, gE_shell=-2.010573e-04, gT_center=+3.359952e-04, gT_shell=+4.031968e-04
+[PASS] C2 (THE STACK'S OWN MEASURED CALIBRATION MATCHES THE TARGET CHAIN WITHIN FINITE-BOX TOLERANCES): the landed shell response endpoints give the full chain {q_T, q_E, shell T/E, center T/E, rho_E} within finite-size accuracy of {5/6, 15/8, -2, -8/9, 21/4} -- the 'additional E-center endpoint ratio' the naturality no-go names as the missing structure is PRESENT in the stack as a measured calibration of its own exact objects; the exact infinite-volume identification is what remains open
+       q_T vs 5/6: measured +0.8333282, gap 6.2e-06; q_E vs 15/8: measured +1.8762461, gap 6.6e-04; shell T/E vs -2: measured -2.0053827, gap 2.7e-03; center T/E vs -8/9: measured -0.8906838, gap 2.0e-03; rho_E vs 21/4: measured +5.2574768, gap 1.4e-03
+[PASS] C3 (THE EXACT REFORMULATION, exact rational arithmetic): with the granted T-side values (rho_T = -1, shell ratio -2), the pin is a single cross-channel covariance statement: rho_E = 21/4 <=> q_E = 15/8 <=> q_E = (9/4) q_T <=> c_TE = -8/9 -- all four directions verified exactly. (9/4 = (3/2)^2 is recorded as exact algebra only; no dimension/multipole reading is claimed -- that would be the no-go's forbidden numerology without a stack-native mechanism.)
+       q_E = 1 + rho_E/6 = 15/8; (9/4) q_T = 15/8; c_TE = -8/9
+[PASS] C4 (the covariance check): the measured q_E/q_T agrees with 9/4 at the same accuracy class as q_E itself -- the reformulated single statement is what the measured calibration supports
+       measured q_E/q_T = 2.251509 vs 9/4 (gap 6.7e-04)
+[PASS] C5 (HONEST deviation hierarchy): q_T matches 5/6 about two orders of magnitude more tightly than q_E matches 15/8 at the same box size. The cache cannot distinguish (a) slower E-channel finite-size convergence from (b) an exact infinite-volume q_E differing from 15/8. The decisive discriminator -- a box-size scan and extrapolation of q_E(N) -- is NAMED as the follow-up (it requires parameterizing the SIZE=15-pinned module chain of the landed rows; not attempted here).
+       gap(q_E)/gap(q_T) = 108; q_T gap = 6.2e-06, q_E gap = 6.6e-04
+[PASS] C6 (the naturality no-go is respected and STANDS): nothing here selects 21/4 from carrier naturality -- the restricted readout class still leaves rho_E free. What changes is the pin's location: from 'free parameter with no stack-native anchor' to 'the measured value of a specific stack functional (the Lambda_R shell-response E-center lift on the canonical source-family endpoints), whose exact infinite-volume identification with 15/8 is the open theorem'. No observed mass, fitted value, or live-target selection is consumed.
+       pin relocated; exact identification (and the box-size discriminator) named open
+
+TOTAL: PASS=6 FAIL=0
+VERDICT: the open gate's missing E-channel entry is not structureless: the stack's OWN landed
+calibration (the Lambda_R shell-response endpoints on the canonical source-family endpoints,
+from the SHA-pinned center-excess cache) matches the target chain within finite-box tolerances -- q_T to ~7e-6, q_E to
+~7e-4, and rho_E = 21/4 to ~1.4e-3 -- and the pin reformulates EXACTLY as the single
+cross-channel covariance q_E = (9/4) q_T. The naturality no-go stands (no derivation is
+claimed); the pin is RELOCATED to a sharp open theorem: prove (or refute) that the
+infinite-volume E-center lift of the stack's shell response equals 15/8, with the box-size
+scan as the named decisive discriminator (the two-orders deviation hierarchy between the
+channels is the honest warning that 15/8 could fail). No PDG/fitted value consumed.
+
+
+----- stderr -----
+

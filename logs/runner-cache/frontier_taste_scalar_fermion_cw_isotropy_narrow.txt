@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_taste_scalar_fermion_cw_isotropy_narrow.py
-runner_sha256: dcabcdea8f065195b0ca42b38022ae3314ea613361212e26f216d625157a67f7
+runner_sha256: 5d85503e368bda9e0788712e0822c250801120fe2b146337f7565ad159c967af
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 
@@ -60,14 +60,15 @@ Part 6: closure factor 8 is exact independent of f
   [PASS (A)] for f(x) = x at v = 1: H_ii = 16 = 8 · 2 (closure factor)  (H_00 = 16)
 
 ----------------------------------------------------------------------------------------
-Part 7: audit row has restored dependencies and remains unaudited
+Part 7: dependency visibility without audit-ledger status read
 ----------------------------------------------------------------------------------------
-  [PASS (A)] taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02 seeded by audit pipeline  (run docs/audit/scripts/run_pipeline.sh after editing the note)
-  [PASS (A)] taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02 has restored dependency edges  (deps=['minimal_axioms_2026-05-03', 'staggered_dirac_realization_gate_note_2026-05-03'])
-  [PASS (A)] taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02 remains effective-unaudited before independent audit  (effective_status='unaudited')
+  [PASS (A)] source note names staggered-Dirac realization gate as context dependency  ()
+  [PASS (A)] source note names historical minimal-axiom memo as context dependency  ()
+  [PASS (A)] source note says the physical context edge is non-load-bearing  ()
+  [PASS (A)] runner does not inspect live audit-status data  ()
 
 ========================================================================================
-  TOTAL: PASS=31, FAIL=0
+  TOTAL: PASS=32, FAIL=0
 ========================================================================================
 
 ----- stderr -----

@@ -3,6 +3,11 @@
 **Date:** 2026-04-19  
 **Status:** exact carrier/readout reduction plus exact missing-map obstruction  
 **Primary runner:** `scripts/frontier_quark_route2_exact_readout_map.py`
+**Runner cache:** `logs/runner-cache/frontier_quark_route2_exact_readout_map.txt`
+
+**Replay-time repair (2026-06-17).** This runner consumes the fast endpoint
+certificate replay from `frontier_quark_endpoint_readout_constraints.py`; the
+same helper still exposes a full tensor replay opt-in for deep recomputation.
 
 ## Safe statement
 

@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/lattice_laplacian_shell_localization_2026_06_16.py
+runner_sha256: 2e56ee915e8b50a6874d8e45a536957f22c8902549102daec8d5cf0855f598d6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.51
+status: ok
+----- stdout -----
+Standalone lattice-Laplacian exterior/shell-localization runner
+finite box: 15^3, zero Dirichlet boundary, R=4.0
+========================================================================
+PASS: adjoint shell potentials are constant on the seven-site star
+  max star spread over 30 shell indicators = 1.110e-15
+PASS: all seven point-Green columns have identical shell-mean profiles
+  max profile spread = 8.327e-17; rank-one tail singular value = 2.920e-17
+PASS: shell-mean quotient kills the six zero-total-charge star modes
+  max quotient image of e_i - e_0 = 8.327e-17
+PASS: Pi_R^ext Green columns reconstruct exactly from sigma_R = H Pi_R^ext G
+  max reconstruction error = 4.337e-17
+PASS: Pi_R^ext Green columns equal the unique exterior Dirichlet extensions of their traces
+  trace nodes = 186, bulk nodes = 1754, max mismatch = 3.296e-17
+PASS: sigma_R is localized to the nearest-neighbor sewing band R-1 < r <= R+1
+  bands = [3.162278, 5.000000]/320, [3.162278, 5.000000]/320, [3.162278, 5.000000]/320, [3.162278, 5.000000]/320, [3.162278, 5.000000]/320, [3.162278, 5.000000]/320, [3.162278, 5.000000]/320
+PASS: each point-column shell source carries unit total charge
+  charges = [0.999999999999999 0.999999999999998 0.999999999999999 0.999999999999998
+ 1.                0.999999999999999 0.999999999999999], max |Q-1| = 1.776e-15
+PASS: all seven point columns induce the same normalized radial DtN shell kernel
+  radii^2 = [10, 11, 12, 13, 14, 16, 17, 18, 19, 20, 21, 25]; max normalized spread = 6.661e-16
+PASS: anisotropic remainder has zero total charge
+  max |sum(delta_sigma)| = 1.131e-15
+PASS: all seven point columns induce the same normalized anisotropic orbit mode
+  max normalized orbit spread = 3.886e-16; c_aniso = 0.081435402995901
+PASS: active orbit vector matches the reduced one-parameter pattern
+  active/Q = [ 0.113562814447001  0.081435402995901 -0.113562814447001
+ -0.081435402995901]; anchor = 0.081435402995901; pair-cancellation err = 2.082e-16
+PASS: shell-mean exterior responses are the same per unit charge
+  total-field spread = 3.469e-18; anisotropic-field spread = 2.589e-18
+PASS: arbitrary star-supported sources factor through total charge on the reduced shell surface
+  Q = 5.260000000000; radial err = 4.441e-16; active-orbit err = 1.388e-16
+PASS: the reduced shell map annihilates zero-total-charge star combinations
+  max reduced zero-charge component = 0.000e+00
+========================================================================
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

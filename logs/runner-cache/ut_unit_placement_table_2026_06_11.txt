@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/ut_unit_placement_table_2026_06_11.py
+runner_sha256: c25eb7e29bd9b9e7bc4bdc884a4492eb9b4636dc579c1c4bec1bdb18806e3c9a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
+
+PART A -- the common parametrization (site momentum, per named time unit)
+==============================================================================
+  [PASS] A1 H-kernel cone: v_H = 1 site/tau EXACTLY (symbolic; Bloch matrix agrees)  --  E ~ |kappa| site units; numeric 1.00000000
+  [PASS] A2 per-axis candidate cone: v = 1 site/tick EXACTLY (the landed |v| = 1, unit-converted)  --  slope w/2 per cell momentum, |w| = 1; cell = 2 sites
+  [PASS] A3 family cone: v = 1/sqrt(3) site/tick -- RE-DERIVED from the 8x8 walk matrix here (unitary to 1e-12; isotropic one-sided phase rate 1/(2 sqrt 3))  --  self-supporting: the load-bearing constant does not depend on block06 prose; cell = 2 sites
+
+PART B -- the natural-row matching theorem
+==============================================================================
+  [PASS] B1 under tick = tau, the factorized candidate's cone speed EQUALS v_H; the landed inverse maps give xi = 1 at both carrier orders  --  W-IR satisfiable with the chain's |v| = 1: the kinetic-isotropy content closes on the natural row
+
+PART C -- the rational-clock no-go for the family-as-H-carrier
+==============================================================================
+  [PASS] C1 the family-as-H-carrier requires tick/tau = 1/sqrt(3): IRRATIONAL (proven); no rational placement works  --  every reading used in the chain is a rational placement: within that class the family cannot carry the H-cone
+
+PART D -- U-T collapses; the two-species structure
+==============================================================================
+  [PASS] D1 the unique rational-placement solution over the exhibited set is (per-axis, tick = tau): U-T's freedom collapses to the single-tick placement  --  one reading (R-P-class) closes both the U-T door and the realization door; the family persists as a second species
+  [PASS] D2 the two-species cone ratio is EXACTLY 1/sqrt(3) (quantized, moduli-rigid by block06)  --  a derived two-species kinematics at one carrier density: ratio sqrt(3), not tunable
+
+PART E -- honest walls
+==============================================================================
+  [PASS] E1 the family's generic symmetric point is a DRIFT (odd first-order form) vs the H-form's even cone: no clock rate maps one onto the other  --  the E3 cone points are the only candidate comparison loci for the family -- used; not a hidden choice
+  [PASS] E2 the block06 consumed-datum equality is placement-covariant: both vectors recomputed from source, rescaled by symbolic c -- equal for EVERY clock ratio  --  U-T moves the absolute scale only; the candidate-comparison conclusion is untouched
+
+==============================================================================
+SCORECARD: PASS=9 FAIL=0
+==============================================================================
+
+----- stderr -----
+

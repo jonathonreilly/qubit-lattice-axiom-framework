@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/frontier_corner_axis_free_transfer_extension_2026_06_12.py
+runner_sha256: e15cdefd5c79121fbcaead339bd6bb4c7ed736488ee2ad4969eb623a44056fbc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.65
+status: ok
+----- stdout -----
+==============================================================================
+CORNER-AXIS FREE TRANSFER EXTENSION -- PER-CHANNEL TRACE/FORK CHECKS
+==============================================================================
+parameters: primary=(1.0, 0.25, 0.2222222222222222), robustness=(1.3, 0.4, -0.37), L_s=2 per channel
+scope: free U=1 only; mode-set fork exhibited, not resolved
+
+[PASS] symbolic lambda_k formula and supplied-domain lower bound -- lambda_k-(a-2B)=2B(1+cos theta); numeric masses positive at both points
+[PASS] channel decomposition: circulant eigenbasis block-diagonalizes the triplet kernel -- max unitary-conjugation residual=4.441e-16
+[PASS] channel transfer: cited two-step transfer is positive Hermitian -- min eig=8.637e-03, dispersion residual=5.278e-16, BdagB err=5.551e-17
+[PASS] corner transfer: tensor corner transfer is positive Hermitian -- dim=64, min eig=3.289e-05, Herm err=0.0e+00
+[PASS] trace correspondence: Tr Gamma(direct_sum t_k)=det(1+t)=prod det(1+t_k) -- trace=2.923105740454, det=2.923105740454, prod=2.923105740454, residual=4.441e-16
+[PASS] Berezin check: canonical-pair expansion equals one-channel trace and assembles corner product -- one-channel Berezin=1.194508410531, trace=1.194508410531, corner product residual=8.882e-16
+[PASS] trace normalization: positive kernel rescaling on doublet modes forces scalar 1 -- extracted exponent=4; ell^k=1 over ell>0 has ell=1
+[PASS] K-covariance: symbolic K swap and unordered spectrum K-invariance -- lambda_2(delta)=lambda_1(-delta); elementary symmetric functions even
+[PASS] K-covariance: K swaps doublet kernels and fixes singlet kernel numerically -- max doublet residual=1.665e-16, singlet residual=0.000e+00
+[PASS] mode-set fork: rho-map sends per-channel/per-K-orbit branches to full binary r-set -- per-channel r=1, per-K-orbit r=1/2; no computed pin
+[PASS] mode-set fork: trace correspondence fixes normalization within each branch -- branch exponents={'per-channel': 4, 'per-K-orbit': 2}
+[PASS] robustness: transfer, corner, and trace checks repeat at second supplied-domain point -- dispersion residual=3.547e-16, corner min eig=4.138e-06, trace residual=8.882e-16
+[PASS] dependency greps: transfer, Grassmann, and registrability phrases present -- load-bearing phrases found in the three dependency notes
+[PASS] note firewall sentences present and closing language absent -- firewall_present=True, closing_absent=True
+[PASS] positive-mass condition marked supplied-domain with backticked strong-CP context only -- supplied-domain present; no markdown link to STRONG_CP_THETA_ZERO_NOTE.md
+[PASS] link inventory exactly the three load-bearing links; companions backticked only -- links=3, resolve_ok=True, companions_backticked_only=True
+[PASS] no-promotion statement present -- status authority remains independent audit lane
+[PASS] Berezin path self-check: genuine expansion, no determinant substitute flag -- BEREZIN_USED_DET_SUBSTITUTE=False
+
+MODE-SET FORK STATUS: exhibited, not resolved; computed r-set is full binary {1, 1/2}.
+SUMMARY: PASS=18 FAIL=0
+
+----- stderr -----
+

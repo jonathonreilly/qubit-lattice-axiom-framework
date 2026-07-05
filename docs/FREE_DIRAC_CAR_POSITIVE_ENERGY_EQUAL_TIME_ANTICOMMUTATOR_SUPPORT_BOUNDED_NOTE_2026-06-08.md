@@ -15,8 +15,10 @@ after independent audit and dependency closure.
 On the supplied free massive Dirac mode algebra, the CAR quantization choice
 gives a bounded-below one-mode Hamiltonian, while the corresponding Bose
 commutator choice gives an unbounded-below antiparticle sector. The same finite
-spinor calculation verifies the equal-time completeness identity that makes the
-CAR anticommutator canonical.
+spinor calculation verifies the equal-time completeness identity in the normalized
+projector convention, and records the equivalent `2E`-normalized convention with the
+required `1/(2E)` field-expansion weight. The unweighted `2E`-normalized spinor sum is
+not asserted to be `I_4`.
 
 This is a support result. It does not choose CAR from the framework, prove a
 spin-statistics theorem, construct the field on the reconstructed Hilbert
@@ -79,7 +81,12 @@ The runner also constructs an explicit `4 x 4` massive Dirac Hamiltonian and
 checks:
 
 - the single-particle spectrum is `{+E, +E, -E, -E}`;
-- `sum_s(u_s u_s^dag + v_s v_s^dag) = I_4`;
+- the Hamiltonian eigenspinor columns are orthonormal;
+- in the orthonormal spectral-projector convention,
+  `sum_s(u_s u_s^dag + v_s v_s^dag) = I_4`;
+- the positive- and negative-energy projectors are orthogonal and idempotent;
+- in the `2E`-normalized spinor convention, the unweighted sum is `2E I_4`,
+  while the field-normalized sum `(1/(2E)) sum_s(u_s u_s^dag + v_s v_s^dag) = I_4`;
 - the Bose-sign combination `sum_s(u_s u_s^dag - v_s v_s^dag)` is not `I_4`;
 - the scalar mass matrix is invariant under the supplied spinor boost matrix.
 
@@ -101,7 +108,7 @@ This note does **not** claim:
 The landed salvage intentionally removes the submitted PR's closure language.
 What remains is the finite support theorem: given the supplied free Dirac mode
 algebra, CAR is the positive-energy quantization and the equal-time CAR
-anticommutator is canonical.
+anticommutator is canonical after the normalization convention is included.
 
 ## Command
 
@@ -109,4 +116,4 @@ anticommutator is canonical.
 python3 scripts/frontier_free_dirac_car_positive_energy_equal_time_support.py
 ```
 
-Expected: `TOTAL: PASS=8 FAIL=0`.
+Expected: `TOTAL: PASS=12 FAIL=0`.

@@ -1,0 +1,107 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_2026_06_12.py
+runner_sha256: c009775dd082cd7d2ffa2e14fbb938bdb591611115c1c154b2eb647656bbc444
+timeout_sec: 540
+exit_code: 0
+elapsed_sec: 2.01
+status: ok
+----- stdout -----
+Native gauge-transfer Wilson-to-saddle uniform obstruction runner
+MODE_MAX=160; K_W is not computed from grid residuals
+
+PASS: one-hop authority files are present
+      docs/NATIVE_GAUGE_TRANSFER_OPERATOR_NORM_REMAINDER_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md, docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md, docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md, scripts/frontier_su3_wilson_closed_form_fanout_2026_05_04.py
+PASS: authority files contain K_W target, saddle profile, recurrence, and Bessel determinant markers
+      checked exact authority quote anchors
+PASS: note contains required boundary, outcome, runner, and discipline markers
+      checked source-note guard strings
+PASS: note avoids overreach phrases and fitted-K_W forms
+      scanned bounded banned phrase set
+PASS: note does not promote decimal witnesses to exact rationals
+      float-dyadic guard scan
+PASS: note avoids branch-local temp references
+      portable-source guard scan
+FIXED-INDEX BESSEL TERM CHECK
+z=100.0 nu=20 normalized_actual=0.135056069303 fixed_next=-0.998750000000 gaussian_local=0.135335283237
+PASS: fixed-index next term is not a positive uniform entry approximation
+      with nu=2*sqrt(z), the fixed-index correction is O(1) and negative
+Native gauge-transfer Wilson-to-saddle uniform obstruction runner
+MODE_MAX=160; K_W is not computed from grid residuals
+
+PASS: one-hop authority files are present
+      docs/NATIVE_GAUGE_TRANSFER_OPERATOR_NORM_REMAINDER_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md, docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md, docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md, scripts/frontier_su3_wilson_closed_form_fanout_2026_05_04.py
+PASS: authority files contain K_W target, saddle profile, recurrence, and Bessel determinant markers
+      checked exact authority quote anchors
+PASS: note contains required boundary, outcome, runner, and discipline markers
+      checked source-note guard strings
+PASS: note avoids overreach phrases and fitted-K_W forms
+      scanned bounded banned phrase set
+PASS: note does not promote decimal witnesses to exact rationals
+      float-dyadic guard scan
+PASS: note avoids branch-local temp references
+      portable-source guard scan
+FIXED-INDEX BESSEL TERM CHECK
+z=100.0 nu=20 normalized_actual=0.135056069303 fixed_next=-0.998750000000 gaussian_local=0.135335283237
+PASS: fixed-index next term is not a positive uniform entry approximation
+      with nu=2*sqrt(z), the fixed-index correction is O(1) and negative
+symmetry beta=48 pair=(4,3) r_pq=25.894978539180 r_qp=25.894978539180 diff=1.066e-14
+symmetry beta=48 pair=(4,3) r_pq=25.894978539180 r_qp=25.894978539180 diff=1.066e-14
+symmetry beta=96 pair=(6,5) r_pq=73.579022615880 r_qp=73.579022615880 diff=1.421e-14
+symmetry beta=96 pair=(6,5) r_pq=73.579022615880 r_qp=73.579022615880 diff=1.421e-14
+symmetry beta=192 pair=(10,8) r_pq=207.380571748836 r_qp=207.380571748836 diff=1.137e-13
+PASS: Bessel determinant ratio is conjugation-symmetric on witness rows
+      max symmetry diff=1.137e-13
+LEADING SADDLE WITNESS ROWS
+beta= 48 p= 4 q= 3 r_exact=25.894978539180 r_saddle=26.882522035981 rel=-3.673552e-02 sqrt_beta_scaled_diag_diff=2.057382e-02
+beta= 96 p= 6 q= 5 r_exact=73.579022615880 r_saddle=75.023779892741 rel=-1.925732e-02 sqrt_beta_scaled_diag_diff=1.504955e-02
+beta=192 p=10 q= 8 r_exact=207.380571748836 r_saddle=209.688188327461 rel=-1.100499e-02 sqrt_beta_scaled_diag_diff=1.201884e-02
+PASS: leading saddle witness improves on the selected active-window rows
+      witness only; no K_W is inferred from these rows
+ACTIVE-GRID WITNESS ROWS
+symmetry beta=192 pair=(10,8) r_pq=207.380571748836 r_qp=207.380571748836 diff=1.137e-13
+PASS: Bessel determinant ratio is conjugation-symmetric on witness rows
+      max symmetry diff=1.137e-13
+LEADING SADDLE WITNESS ROWS
+beta= 48 p= 4 q= 3 r_exact=25.894978539180 r_saddle=26.882522035981 rel=-3.673552e-02 sqrt_beta_scaled_diag_diff=2.057382e-02
+beta= 96 p= 6 q= 5 r_exact=73.579022615880 r_saddle=75.023779892741 rel=-1.925732e-02 sqrt_beta_scaled_diag_diff=1.504955e-02
+beta=192 p=10 q= 8 r_exact=207.380571748836 r_saddle=209.688188327461 rel=-1.100499e-02 sqrt_beta_scaled_diag_diff=1.201884e-02
+PASS: leading saddle witness improves on the selected active-window rows
+      witness only; no K_W is inferred from these rows
+ACTIVE-GRID WITNESS ROWS
+beta= 48 cap= 8 max_sqrt_diag_diff=2.710006e-02 max_sqrt_profile_diff=2.103009e-01
+beta= 48 cap= 8 max_sqrt_diag_diff=2.710006e-02 max_sqrt_profile_diff=2.103009e-01
+beta= 96 cap=12 max_sqrt_diag_diff=1.907302e-02 max_sqrt_profile_diff=2.095674e-01
+PASS: active-grid witness remains finite without fitting a bound
+      grid witness reports margins but is not a proof of K_W
+beta= 96 cap=12 max_sqrt_diag_diff=1.907302e-02 max_sqrt_profile_diff=2.095674e-01
+PASS: active-grid witness remains finite without fitting a bound
+      grid witness reports margins but is not a proof of K_W
+FALSIFIER ROWS beta=96 p=6 q=5
+correct exact beta^-3/2 r                 = 0.078225286971
+correct saddle beta^-3/2 d exp[-3C2/beta] = 0.079761275743
+wrong N_c=2 saddle                         = 0.122681758828
+wrong N_c=4 saddle                         = 0.051856618041
+wrong dimension saddle                     = 0.012270965499
+wrong lambda determinant                   = 0.030362625798
+PASS: wrong N_c substitutions visibly move the witness value
+      N_c=2 and N_c=4 both separate from the correct saddle row
+PASS: wrong dimension and wrong Bessel index visibly move the witness value
+      dimension and lambda-index falsifiers are not small perturbations
+
+TOTAL: PASS=12, FAIL=0
+FALSIFIER ROWS beta=96 p=6 q=5
+correct exact beta^-3/2 r                 = 0.078225286971
+correct saddle beta^-3/2 d exp[-3C2/beta] = 0.079761275743
+wrong N_c=2 saddle                         = 0.122681758828
+wrong N_c=4 saddle                         = 0.051856618041
+wrong dimension saddle                     = 0.012270965499
+wrong lambda determinant                   = 0.030362625798
+PASS: wrong N_c substitutions visibly move the witness value
+      N_c=2 and N_c=4 both separate from the correct saddle row
+PASS: wrong dimension and wrong Bessel index visibly move the witness value
+      dimension and lambda-index falsifiers are not small perturbations
+
+TOTAL: PASS=12, FAIL=0
+
+----- stderr -----
+

@@ -25,6 +25,8 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+import premise_nodes
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 LEDGER_PATH = DATA_DIR / "audit_ledger.json"
@@ -50,7 +52,20 @@ def dep_ready(status: str | None) -> bool:
 
 
 def is_ready(row: dict, rows: dict[str, dict]) -> bool:
+    """All deps are stable auditor inputs.
+
+    A dep is a stable input when its effective_status is retained-grade /
+    meta / decoration_under_*, or when it is an accepted premise
+    (axiom/primitive premise node or Tier-A admitted derivation target) per
+    `premise_nodes.is_accepted_premise_dep`. The latter mirrors
+    `compute_effective_status`: a row whose only non-retained dep is a Tier-A
+    target is auditable now and resolves to `retained_bounded` on a clean
+    verdict, so the queue must not hold it back waiting on the admission's
+    own row.
+    """
     for d in row.get("deps", []):
+        if premise_nodes.is_accepted_premise_dep(d):
+            continue
         d_eff = rows.get(d, {}).get("effective_status") or "unknown"
         if not dep_ready(d_eff):
             return False
@@ -65,6 +80,17 @@ def needs_audit(row: dict) -> tuple[bool, str]:
         return True, audit_status
     if row.get("claim_type_provenance") == "backfilled_pending_reaudit":
         return True, "claim_type_backfill_reaudit"
+    # Owner rule (2026-06-15): terminal verdicts are bound/unbound/nogo only.
+    # `audited_conditional` and `audited_failed` are non-terminal resting
+    # states — each such row must be driven to a terminal verdict (repair +
+    # re-audit, narrowing, or no-go conversion), so it stays in the pending
+    # queue instead of resting as settled. Repair-side prompts for the same
+    # rows (MISSING_DERIVATION_PROMPTS.md, dispatch queue) remain valid; the
+    # queue_reason lets dispatchers separate re-audit from first audit.
+    if audit_status == "audited_conditional":
+        return True, "non_terminal_conditional"
+    if audit_status == "audited_failed" and not row.get("note_path", "").startswith("archive_unlanded/"):
+        return True, "non_terminal_failed"
     return False, "not_pending"
 
 
@@ -202,7 +228,7 @@ def main() -> int:
         "# Audit Queue",
         "",
         f"**Total pending:** {queue['total_pending']}",
-        f"**Ready (all deps already at retained-grade or metadata tiers):** {queue['ready_count']}",
+        f"**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** {queue['ready_count']}",
         "",
         "By criticality:",
     ]

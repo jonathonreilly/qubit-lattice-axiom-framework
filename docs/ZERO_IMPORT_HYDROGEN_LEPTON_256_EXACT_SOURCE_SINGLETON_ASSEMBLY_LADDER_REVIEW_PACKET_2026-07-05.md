@@ -90,6 +90,7 @@ inputs accepts `EXACT_SOURCE_SINGLETON_RETAINED`.
 
 | row | source | role in this ladder | boundary preserved |
 |---|---|---|---|
+| F child ladder | `ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_CHILD_GATE_LADDER_REVIEW_PACKET_2026-07-05.md` | compresses F1 local action, F2 D17 source-block selection, F3 full-cell tensor source locality, and F4 scalar attachment under `F_CLAUSE_RETAINED` | support only; no retained F1-F4, F, source-probe interface, or exact source singleton |
 | F | `ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_RATIFICATION_DECISION_PACKET_2026-07-04.md` | packages the full-cell source/action subdecision `F_CLAUSE_RETAINED` | no current retained F clause; no L/P/R or `S_l` |
 | F no-go | `ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `F_CLAUSE_RETAINED` | no broad no-go against future F acceptance |
 | L | `ZERO_IMPORT_HYDROGEN_LEPTON_256_L_CLAUSE_RATIFICATION_DECISION_PACKET_2026-07-04.md` | packages the label-free source-coordinate subdecision `L_CLAUSE_RETAINED` | no current retained L clause; no F/P/R or `S_l` |

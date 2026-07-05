@@ -104,6 +104,7 @@ be bypassed by product-vector normalization.
 | surface | supplies | does not supply |
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_RATIFICATION_DECISION_PACKET_2026-07-04.md` | six-input owner/audit handoff for F1-F4 | current retained F clause |
+| `ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_CHILD_GATE_LADDER_REVIEW_PACKET_2026-07-05.md` | review-compresses F1-F4 child gates under the F parent handoff | retained F1-F4 or F |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_SOURCE_ACTION_ASSEMBLY_DISCRIMINATOR_2026-07-04.md` | F1-F4 assembly target and one-input-removed witnesses | retained F1-F4 or F |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_F1_SOURCE_COUPLED_LOCAL_ACTION_RATIFICATION_TARGET_DISCRIMINATOR_2026-07-04.md` | F1 target: local action, linear source controls, derivative insertion, ratification | retained F1 |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_F1_SOURCE_COUPLED_LOCAL_ACTION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for F1 | retained F1 source/action convention |
@@ -150,6 +151,14 @@ Merge-state labels are moving review metadata, not proof inputs.
 | F had a decision packet but no dedicated current-surface non-supply boundary | the current retained, primitive, and open-PR gap for `F_CLAUSE_RETAINED` is explicit |
 | exact-source closure could treat F as merely pending governance | F is separated into four scientific subinputs plus owner/audit controls |
 | K4 could read the source-probe route as closer than it is | K4 now has an upstream F-specific wall before exact source singleton retention |
+
+The F-clause child-gate ladder review packet
+`ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_CHILD_GATE_LADDER_REVIEW_PACKET_2026-07-05.md`
+groups F1 local action, F2 D17 source-block selection, F3 full-cell tensor
+source locality, and F4 scalar-multiplier attachment into one review surface.
+It does not change the current-surface result: `F_CLAUSE_RETAINED` remains
+unsupplied until all four child gates and the parent owner/audit controls are
+accepted.
 
 ## No-Go Discipline Gate
 

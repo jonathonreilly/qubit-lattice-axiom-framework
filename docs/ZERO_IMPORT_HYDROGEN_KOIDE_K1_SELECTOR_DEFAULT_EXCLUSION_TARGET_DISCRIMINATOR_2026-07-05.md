@@ -83,6 +83,20 @@ companions to this target, not retained selector/default-exclusion closure.
 
 They do not supply full K1, physical electron mass, alpha, or hydrogen.
 
+The nested determinant theorem target
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md`
+names `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` as the
+fourteen-input subtarget for
+`CHIRAL_OR_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED`. Its ratification decision
+packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+and current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+record that current surfaces do not supply the determinant theorem. Even if
+later accepted, it feeds only one selector/default-exclusion input; it does not
+supply `REAL_VECTOR_TRACE_DEFAULT_EXCLUDED`, full K1, `m_e`, `alpha(0)`, or
+hydrogen.
+
 ## Source Surface
 
 The narrow synthesis
@@ -132,6 +146,9 @@ that chain only after acceptance.
 |---|---|---|
 | counting-bit synthesis note | reduces K1 to the block/orbit versus dimension/Born binary | support only; no selector/default-exclusion theorem |
 | supertrace / equivariant-index / holomorphic route | right-shaped route for counting the doublet once | open positive route; not retained here |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` | can feed only `CHIRAL_OR_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED`, not default exclusion or full K1 |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | fourteen-input owner/audit contract for the determinant theorem | not accepted on the current surface |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for the determinant theorem | no retained consequence |
 | orbit-occupancy independence note | current-surface non-supply plus premise candidate | excluded as a proof input for this subtarget |
 | Berezin subsumption note | conditional determinant-exponent route | possible future theorem input, not current closure |
 | retained corner-measure coefficient note | keeps coefficient/occupancy open under retained corner measure | no selector shortcut |

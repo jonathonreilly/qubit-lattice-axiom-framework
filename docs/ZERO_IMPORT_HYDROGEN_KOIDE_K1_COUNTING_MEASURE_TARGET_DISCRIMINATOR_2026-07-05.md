@@ -150,6 +150,18 @@ records that current retained, primitive, merged-PR, and open-PR surfaces do
 not supply `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`. Both are upstream of full
 K1 and do not supply `K1_COUNTING_MEASURE_RETAINED`.
 
+The nested chiral/holomorphic determinant lane
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` as one subinput
+under the selector/default-exclusion target. Its ratification decision packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+and current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+keep that theorem open on the current surface. Even if accepted later, it
+feeds only `CHIRAL_OR_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED`; it does not
+supply `REAL_VECTOR_TRACE_DEFAULT_EXCLUDED`, this K1 target, `m_e`, `alpha(0)`,
+or hydrogen.
+
 ## Dependency Boundary
 
 | object | if this target is accepted | still not supplied |

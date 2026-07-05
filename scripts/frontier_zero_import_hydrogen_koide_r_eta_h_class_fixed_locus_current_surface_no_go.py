@@ -25,6 +25,7 @@ PHYSICAL_ELECTRON = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS
 PR5019_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md"
 PR5020_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md"
 PR5022_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md"
+AC_R_ETA_CLUSTER = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_AC_R_ETA_UPSTREAM_CLUSTER_IMPACT_DISCRIMINATOR_2026-07-05.md"
 R_ETA_NARROWING = ROOT / "docs" / "ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md"
 R_ETA_W2 = ROOT / "docs" / "ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md"
 FIXED_LOCUS = ROOT / "docs" / "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
@@ -209,6 +210,7 @@ def main() -> None:
         PR5019_IMPACT,
         PR5020_IMPACT,
         PR5022_IMPACT,
+        AC_R_ETA_CLUSTER,
         R_ETA_NARROWING,
         R_ETA_W2,
         FIXED_LOCUS,
@@ -260,8 +262,14 @@ def main() -> None:
         "merged `#5020` Koide R-eta value-face registered-angle/exactness relocation",
         "merged `#5022` delta-eta chain R-eta supplied-premise audit repair",
         "merged `#5019` Koide `AC_phi_lambda` axiom-surface rebase",
-        "open `#5023` Koide W4 audit-readiness repairs",
-        "open `#5024` Koide W4 gate-note premise minimization and substep1 rebase",
+        "ZERO_IMPORT_HYDROGEN_AC_R_ETA_UPSTREAM_CLUSTER_IMPACT_DISCRIMINATOR_2026-07-05.md",
+        "ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md",
+        "ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+        "`#4986` AC R-eta h-class stretch no-go",
+        "`#4984` AC R-eta direct-license no-go",
+        "`#4981` AC R-eta C3 ratification non-supply",
+        "merged `#5023` Koide W4 audit-readiness repairs",
+        "merged `#5024` Koide W4 gate-note premise minimization and substep1 rebase",
         "#5023/#5024 W4 gate route",
         "`#5021` primitive-retirement review draft",
         "no primitive retirement and no registry edit",
@@ -310,6 +318,7 @@ def main() -> None:
     pr5019 = read(PR5019_IMPACT)
     pr5020 = read(PR5020_IMPACT)
     pr5022 = read(PR5022_IMPACT)
+    ac_r_eta_cluster = read(AC_R_ETA_CLUSTER)
     narrowing = read(R_ETA_NARROWING)
     w2 = read(R_ETA_W2)
     fixed_locus = read(FIXED_LOCUS)
@@ -362,6 +371,11 @@ def main() -> None:
     audit.check("#5019 impact remains premise hygiene", "premise-hygiene" in pr5019 or "premise hygiene" in pr5019)
     audit.check("#5020 impact keeps exactness residual open", "exactness remains open" in pr5020)
     audit.check("#5022 impact keeps R-eta supplied, not derived", "supplied" in pr5022 and "no retained R-eta derivation" in pr5022)
+    audit.check(
+        "AC R-eta cluster keeps h-class open",
+        "No derivation or ratification of `R_ETA_H_CLASS_RETAINED`." in ac_r_eta_cluster
+        and "No spending of `#4982`-`#4986` landed-main notes as retained K2 closure." in ac_r_eta_cluster,
+    )
     audit.check("Tier-A registry still names R-eta admission", "R-eta" in tier_a and "density-read-as-angle" in tier_a)
     audit.check("realized primitive supplies no value", "no state" in realized_text and "or value is supplied" in flat(realized_text))
 
@@ -393,8 +407,11 @@ def main() -> None:
     open_markers = [
         "`#5022` delta-eta chain R-eta supplied-premise audit repair | merged, audit success",
         "`#5021` primitive-retirement review: meta gate map, no retirements | open draft, dirty",
-        "`#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | open, audit success",
-        "`#5023` Koide W4 audit-readiness repairs | open, audit success",
+        "`#4986` AC R-eta h-class stretch no-go | landed-main science commit after PR close",
+        "`#4984` AC R-eta direct-license no-go | landed-main science commit after PR close",
+        "`#4981` AC R-eta C3 ratification non-supply | open and lane-relevant",
+        "`#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | merged, audit success",
+        "`#5023` Koide W4 audit-readiness repairs | merged, audit success",
         "`#5020` Koide R-eta value-face registered-angle/exactness relocation | merged",
         "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged",
         "`#5018`/`#5017` chirality/domain-wall stack | open",
@@ -414,7 +431,7 @@ def main() -> None:
         "No derivation of `delta = 2/9` as a retained physical phase.",
         "No derivation or ratification of `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.",
         "No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.",
-        "open PR `#5023`, or open PR `#5024` supplies h-class fixed-locus",
+        "landed-main `#4984`/`#4986` supplies h-class fixed-locus retirement",
         "No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`, observed",
         "No derivation of K1 occupancy/counting, K3 physical species bridge, K4",
         "No new axiom, primitive, Tier-A admission, or empirical import.",

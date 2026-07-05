@@ -25,6 +25,7 @@ PHYSICAL_ELECTRON = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS
 PR5019_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md"
 PR5020_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md"
 PR5022_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md"
+AC_R_ETA_CLUSTER = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_AC_R_ETA_UPSTREAM_CLUSTER_IMPACT_DISCRIMINATOR_2026-07-05.md"
 DEFECT_UNIT = ROOT / "docs" / "ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md"
 CYCLE_HOLONOMY = ROOT / "docs" / "ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md"
 A1_RADIAN = ROOT / "docs" / "KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md"
@@ -205,6 +206,7 @@ def main() -> None:
         PR5019_IMPACT,
         PR5020_IMPACT,
         PR5022_IMPACT,
+        AC_R_ETA_CLUSTER,
         DEFECT_UNIT,
         CYCLE_HOLONOMY,
         A1_RADIAN,
@@ -254,6 +256,14 @@ def main() -> None:
         "merged `#5020` Koide R-eta value-face registered-angle/exactness relocation",
         "merged `#5022` delta-eta chain R-eta supplied-premise audit repair",
         "merged `#5019` Koide `AC_phi_lambda` axiom-surface rebase",
+        "ZERO_IMPORT_HYDROGEN_AC_R_ETA_UPSTREAM_CLUSTER_IMPACT_DISCRIMINATOR_2026-07-05.md",
+        "ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+        "ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+        "ACPHILAMBDA_R_ETA_DOUBLET_CLOCK_RATE_NORMALIZATION_NO_GO_NOTE_2026-07-04.md",
+        "`#4985` AC R-eta h-unit primitive no-go",
+        "`#4984` AC R-eta direct-license no-go",
+        "`#4983` AC R-eta doublet-clock no-go",
+        "`#4981` AC R-eta C3 ratification non-supply",
         "`#5021` primitive-retirement review draft",
         "no primitive retirement and no registry edit",
         "The primitive registry was checked",
@@ -301,6 +311,7 @@ def main() -> None:
     pr5019 = read(PR5019_IMPACT)
     pr5020 = read(PR5020_IMPACT)
     pr5022 = read(PR5022_IMPACT)
+    ac_r_eta_cluster = read(AC_R_ETA_CLUSTER)
     defect_unit = read(DEFECT_UNIT)
     cycle = read(CYCLE_HOLONOMY)
     a1_radian = read(A1_RADIAN)
@@ -355,6 +366,11 @@ def main() -> None:
     audit.check("#5019 impact remains premise hygiene", "premise-hygiene" in pr5019 or "premise hygiene" in pr5019)
     audit.check("#5020 impact keeps exactness residual open", "exactness remains open" in pr5020)
     audit.check("#5022 impact keeps R-eta supplied, not derived", "supplied" in pr5022 and "no retained R-eta derivation" in pr5022)
+    audit.check(
+        "AC R-eta cluster keeps h-unit open",
+        "No derivation or ratification of `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`." in ac_r_eta_cluster
+        and "No spending of landed-main `89768b461c` or `e2d1dec095` as K1/K2 closure." in ac_r_eta_cluster,
+    )
     audit.check("AC_phi_lambda remains Tier-A, not primitive", "AC_phi_lambda" in tier_a and "AC_phi_lambda" not in primitive_nodes)
     audit.check("realized primitive supplies no value", "no state" in realized_text and "or value is supplied" in flat(realized_text))
 
@@ -385,6 +401,10 @@ def main() -> None:
     open_markers = [
         "`#5022` delta-eta chain R-eta supplied-premise audit repair | merged, audit success",
         "`#5021` primitive-retirement review: meta gate map, no retirements | open draft, dirty",
+        "`#4985` AC R-eta h-unit primitive no-go | landed-main science commit after PR close",
+        "`#4984` AC R-eta direct-license no-go | landed-main science commit after PR close",
+        "`#4983` AC R-eta doublet-clock no-go | landed-main science commit after PR close",
+        "`#4981` AC R-eta C3 ratification non-supply | open and lane-relevant",
         "`#5020` Koide R-eta value-face registered-angle/exactness relocation | merged",
         "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged",
         "`#5018`/`#5017` chirality/domain-wall stack | open",
@@ -404,6 +424,7 @@ def main() -> None:
         "No derivation of `delta = 2/9` as a retained physical phase.",
         "No derivation or ratification of `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.",
         "No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.",
+        "landed-main `#4983`/`#4984`/`#4985` supplies",
         "No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`, observed",
         "No derivation of K1 occupancy/counting, K3 physical species bridge, K4",
         "No new axiom, primitive, Tier-A admission, or empirical import.",

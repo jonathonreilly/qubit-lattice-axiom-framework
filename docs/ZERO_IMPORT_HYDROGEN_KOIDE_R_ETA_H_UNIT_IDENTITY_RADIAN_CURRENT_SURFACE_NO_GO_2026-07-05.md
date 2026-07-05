@@ -73,6 +73,10 @@ target but does not derive it.
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` | eleven-input target for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED` | current retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_RATIFICATION_DECISION_PACKET_2026-07-05.md` | eleven-input owner/audit decision packet | retained consequence; not accepted on the current surface |
+| `ZERO_IMPORT_HYDROGEN_AC_R_ETA_UPSTREAM_CLUSTER_IMPACT_DISCRIMINATOR_2026-07-05.md` | #4981 open context plus #4982-#4986 and `89768b461c`/`e2d1dec095` landed-main AC R-eta shortcut pruning | h-unit identity-radian theorem, R-eta retirement, K1/K2 exactness, or hydrogen |
+| `ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md` | landed-main approved-primitive boundary: no approved primitive supplies `beta = 1` | `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED` |
+| `ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md` | landed-main direct-license split into h-class plus h-unit | h-unit closure or full R-eta retirement |
+| `ACPHILAMBDA_R_ETA_DOUBLET_CLOCK_RATE_NORMALIZATION_NO_GO_NOTE_2026-07-04.md` | landed-main clock/rate route boundary | identity-radian coefficient or R-eta normalization |
 | `ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md` | derives the `I_c` normal form, blocks homogeneous additivity from selecting `c = 1`, and shows bare count pins `c = 9/2` | identity-radian coefficient `c = 1` |
 | `ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md` | re-coordinates the same target as `c = 1 <=> Phi = 2/3` | derivation of `Phi = 2/3` |
 | `KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md` | keeps the Type-B rational-to-radian bridge explicit | retained period-1-radian convention or source theorem |
@@ -104,6 +108,10 @@ dependency-state signals; clean/dirty/check labels are not proof inputs.
 |---|---:|---|
 | `#5022` delta-eta chain R-eta supplied-premise audit repair | merged, audit success | conditional repair only; no retained h-unit theorem |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft, dirty | primitive-boundary context only; no registry edit and no h-unit shortcut |
+| `#4985` AC R-eta h-unit primitive no-go | landed-main science commit after PR close | approved primitives do not supply h-unit identity-radian `beta = 1` |
+| `#4984` AC R-eta direct-license no-go | landed-main science commit after PR close | direct license split; no h-class or h-unit closure |
+| `#4983` AC R-eta doublet-clock no-go | landed-main science commit after PR close | clock/rate shortcut pruned; no h-unit theorem |
+| `#4981` AC R-eta C3 ratification non-supply | open and lane-relevant | C3 context only; no physical density-read-as-angle theorem |
 | `#5020` Koide R-eta value-face registered-angle/exactness relocation | merged | value-face progress; h-unit exact coefficient remains open |
 | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged | premise-hygiene context; no h-unit theorem |
 | `#5018`/`#5017` chirality/domain-wall stack | open | above-C3 context only; no h-unit, R-eta retirement, or electron mass |
@@ -118,6 +126,7 @@ dependency-state signals; clean/dirty/check labels are not proof inputs.
 | the holonomy coordinate could be overread as deriving `Phi = 2/3` | `Phi = 2/3` remains the equivalent target coordinate, not a theorem |
 | count normalization could be overread as an identity-radian route | bare count is recorded as the wrong member `c = 9/2`; "one atom reads `L`" is a restatement |
 | #5020/#5022 could be overread as h-unit closure | they are value-face and conditionality progress only |
+| #4981/#4983/#4984/#4985 could be overread as h-unit closure | the AC R-eta cluster impact discriminator keeps them as support/pruning only |
 
 ## No-Go Discipline Gate
 
@@ -260,8 +269,9 @@ current-surface non-supply claim passes.
 - No derivation of `delta = 2/9` as a retained physical phase.
 - No derivation or ratification of `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
 - No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.
-- No claim that merged PR `#5019`, merged PR `#5020`, draft PR `#5021`, or
-  merged PR `#5022` supplies h-unit identity-radian retirement.
+- No claim that merged PR `#5019`, merged PR `#5020`, draft PR `#5021`, merged
+  PR `#5022`, open PR `#4981`, or landed-main `#4983`/`#4984`/`#4985` supplies
+  h-unit identity-radian retirement.
 - No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`, observed
   `m_e`, observed `alpha(0)`, or observed hydrogen as proof input.
 - No derivation of K1 occupancy/counting, K3 physical species bridge, K4

@@ -1586,6 +1586,22 @@ gate-edge repair. It is custody/audit-graph repair context only; after merge it
 supplies no physical action selector, Koide electron readout, `m_e`,
 `alpha(0)`, or hydrogen.
 
+A subsequent 2026-07-05 UTC refresh checked the AC/R-eta upstream cluster. PRs
+`#4982`-`#4986` are closed without GitHub merge flags, but their science commits
+are present on `origin/main`; PR `#4981` remains open and lane-relevant. The
+dedicated impact discriminator
+`ZERO_IMPORT_HYDROGEN_AC_R_ETA_UPSTREAM_CLUSTER_IMPACT_DISCRIMINATOR_2026-07-05.md`
+records this as K2 h-class/h-unit, doublet-clock, direct-license, and formation
+shortcut pruning only. A later refresh also found landed-main commits
+`89768b461c` and `e2d1dec095`, which prune occurrence-axiom and measure-binary
+shortcuts without closing K1 or K2. This does not derive R-eta, K2 exactness,
+`m_e`, `alpha(0)`, or hydrogen.
+
+The same latest open-PR refresh found `#5029`, a Koide labeling no-go runner
+strengthening PR. It is runner/audit-surface context only and supplies no
+retained K1/K2/K3 input, Koide electron readout, `m_e`, `alpha(0)`, or
+hydrogen.
+
 | PR | current relevance to zero-import hydrogen |
 |---|---|
 | `#4897` species universal-floor reclassification | Owner-gated and open. If merged, it may move the abstract-to-physical species bridge out of `AC_phi_lambda`; while open, K3 remains a dependency note, not retired. |
@@ -1652,12 +1668,14 @@ supplies no physical action selector, Koide electron readout, `m_e`,
 | `#4978` theta G1 4D carrier supply no-go | Open and currently `CLEAN`. It is theta 4D-carrier pruning; it does not derive charged-lepton source-probe ratification, `m_e`, `S_l`, `alpha(0)`, or hydrogen. |
 	| `#4979` theta G1 defect suppression support | Open and currently `CLEAN`. It is supplied-penalty exact support for a theta defect-suppression route; it leaves physical carrier/action/measure and theta retirement open and does not derive charged-lepton source-probe ratification, `m_e`, `S_l`, `alpha(0)`, or hydrogen. |
 	| `#4980` theta G1 kinetic 4D scaffold support | Open and currently `CLEAN`. It supplies bounded theta kinetic 4D scaffold support; it does not derive charged-lepton F/L/P/R, `S_l`, `m_e`, `alpha(0)`, or hydrogen. |
-	| `#4981` AC R-eta C3 ratification non-supply | Open and currently `CLEAN`. It reports that C3 ratification material does not supply the AC/R-eta target; it does not derive the charged-lepton source/action F clause or hydrogen. |
-	| `#4982` AC occupancy formation non-supply no-go | Open and currently `CLEAN`. It confirms formation material does not supply AC occupancy content; it does not derive Lane 6 source-probe ratification. |
-	| `#4983` AC R-eta doublet-clock no-go | Open and currently `CLEAN`. It prunes an AC/R-eta clock/rate shortcut; it does not derive the charged-lepton full-cell source/action family. |
-	| `#4984` AC R-eta direct-license no-go | Open and currently `CLEAN`. It prunes an AC/R-eta direct-readout license shortcut; it does not supply F/L/P/R or hydrogen. |
-	| `#4985` AC R-eta h-unit primitive no-go | Open and currently `CLEAN`. It is useful primitive-registry methodology context for h-unit shortcuts, but it does not provide a charged-lepton source/action family, `S_l`, `m_e`, `alpha(0)`, or hydrogen. |
-	| `#4986` AC R-eta h-class stretch no-go | Open and currently `CLEAN`. It prunes an AC/R-eta h-class shortcut; it does not derive the D17 charged-lepton source-block selector, F/L/P/R, `S_l`, `m_e`, `alpha(0)`, or hydrogen. |
+		| `#4981` AC R-eta C3 ratification non-supply | Open and lane-relevant. It reports that C3 ratification material does not supply the AC/R-eta target; it does not derive K2 exactness, charged-lepton source/action, or hydrogen. |
+		| `#4982` AC occupancy formation non-supply no-go | Closed PR with landed-main science commit. It confirms formation material does not supply AC occupancy content; it does not derive K1, Lane 6 source-probe ratification, or hydrogen. |
+		| `#4983` AC R-eta doublet-clock no-go | Closed PR with landed-main science commit. It prunes an AC/R-eta clock/rate shortcut; it does not derive h-unit, R-eta readout retirement, or the charged-lepton full-cell source/action family. |
+		| `#4984` AC R-eta direct-license no-go | Closed PR with landed-main science commit. It splits the direct R-eta license into h-class plus h-unit; it does not supply K2 exactness, F/L/P/R, or hydrogen. |
+		| `#4985` AC R-eta h-unit primitive no-go | Closed PR with landed-main science commit. It is useful primitive-registry methodology context for h-unit shortcuts, but it does not supply `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`, `m_e`, `alpha(0)`, or hydrogen. |
+		| `#4986` AC R-eta h-class stretch no-go | Closed PR with landed-main science commit. It prunes an AC/R-eta h-class shortcut; it does not supply `R_ETA_H_CLASS_RETAINED`, `S_l`, `m_e`, `alpha(0)`, or hydrogen. |
+		| landed-main `89768b461c` AC R-eta occurrence axiom-hygiene no-go | Landed-main science commit. It separates generic `Records form` occurrence from event law, rate normalization, and R-eta readout license; it does not supply R-eta, K2 exactness, `m_e`, `alpha(0)`, or hydrogen. |
+		| landed-main `e2d1dec095` AC measure binary axiom-update no-go | Landed-main science commit. It keeps the AC(i) doublet reading/occupancy binary outside updated axioms and approved primitives; it does not supply K1 counting measure, `S_l`, `m_e`, `alpha(0)`, or hydrogen. |
 	| `#4987` theta G4 theta-bar assembly no-go | Open and currently `CLEAN`. It is theta assembly hygiene; it does not derive the charged-lepton F2 source-block selector or hydrogen. |
 	| `#4988` theta G2 registration stretch no-go | Open and currently `CLEAN`. It leaves physical G2 sector/readout registration open; it does not derive the D17 lepton source family. |
 	| `#4989` Tier-A residual governance readiness packet | Open and currently `CLEAN`. It is governance readiness context; it does not derive `m_e`, `S_l`, F/L/P/R, or hydrogen. |
@@ -1698,6 +1716,7 @@ supplies no physical action selector, Koide electron readout, `m_e`,
                         | `#5024` Koide W4 gate-note premise minimization + substep1 rebase | Merged with audit success. It is `AC_phi_lambda` gate-readiness and premise-minimization work; it does not derive a physical matter-state law bridge, `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, h-class, h-unit, retained R-eta readout retirement, `m_e`, `alpha(0)`, or hydrogen. |
                         | `#5027` Koide custody AC gate-edge repair | Merged with audit success at refresh. It is a custody/audit-graph direct-dependency repair for the `AC_phi_lambda` row; it does not derive a physical action selector, physical matter-state law bridge, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
 | `#5028` Koide W4c labeling/species repairs | Merged after open lane-relevant refresh. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_W4C_PR5028_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as labeling/species dependency-surface readiness; it does not derive K1/K2/K3, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
+| `#5029` Koide substep4 labeling no-go runner strengthening | Open and runner-only at latest refresh, with audit in progress. It strengthens mechanical verification for a Koide labeling no-go runner; it does not derive K1/K2/K3, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 counting-measure target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md` packages `K1_COUNTING_MEASURE_RETAINED`; current source notes reduce K1 to one binary, but this target is not supplied by primitives, #4991, #5019, or K2 work and does not derive `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 counting-measure current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `K1_COUNTING_MEASURE_RETAINED`. |
                         | K1 counting-measure ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the ten-input owner/audit contract for `K1_COUNTING_MEASURE_RETAINED`; it is not K2/K3/K4, `m_e`, `alpha(0)`, or hydrogen. |

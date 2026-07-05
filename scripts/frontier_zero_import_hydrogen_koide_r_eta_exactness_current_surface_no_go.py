@@ -16,6 +16,7 @@ EXACTNESS_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_T
 EXACTNESS_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 PR5020_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md"
 PR5022_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md"
+AC_R_ETA_CLUSTER = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_AC_R_ETA_UPSTREAM_CLUSTER_IMPACT_DISCRIMINATOR_2026-07-05.md"
 R_ETA_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md"
 TWO_NINTHS_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md"
 TWO_NINTHS_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md"
@@ -124,6 +125,7 @@ def main() -> None:
         EXACTNESS_DECISION,
         PR5020_IMPACT,
         PR5022_IMPACT,
+        AC_R_ETA_CLUSTER,
         R_ETA_TARGET,
         TWO_NINTHS_TARGET,
         TWO_NINTHS_DECISION,
@@ -171,6 +173,12 @@ def main() -> None:
         "`#5021` primitive-retirement review draft",
         "no primitive retirement and no registry edit",
         "ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md",
+        "ZERO_IMPORT_HYDROGEN_AC_R_ETA_UPSTREAM_CLUSTER_IMPACT_DISCRIMINATOR_2026-07-05.md",
+        "`#4982` through `#4986`",
+        "open and lane-relevant",
+        "landed-main commits `89768b461c`",
+        "`e2d1dec095`",
+        "occurrence-axiom and measure-binary shortcuts",
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md",
         "R_ETA_READOUT_IDENTIFICATION_RETAINED",
         "`#5022` audit repair: delta-eta chain R-eta supplied premise | merged",
@@ -212,6 +220,7 @@ def main() -> None:
     exactness_target = read(EXACTNESS_TARGET)
     exactness_decision = read(EXACTNESS_DECISION)
     pr5020_impact = read(PR5020_IMPACT)
+    ac_r_eta_cluster = read(AC_R_ETA_CLUSTER)
     two_ninths_target = read(TWO_NINTHS_TARGET)
     two_ninths_decision = read(TWO_NINTHS_DECISION)
     two_ninths_no_go = read(TWO_NINTHS_NO_GO)
@@ -261,6 +270,11 @@ def main() -> None:
         and "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED" in two_ninths_no_go,
     )
     audit.check("#5020 impact keeps exactness open", "exactness remains open" in pr5020_impact and "No derivation or ratification of a Koide R-eta exactness theorem." in pr5020_impact)
+    audit.check(
+        "AC R-eta cluster keeps K2 exactness open",
+        "No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`." in ac_r_eta_cluster
+        and "No spending of landed-main `89768b461c` or `e2d1dec095` as K1/K2 closure." in ac_r_eta_cluster,
+    )
     audit.check("#5019 impact remains premise hygiene", "premise hygiene and audit-readiness context" in pr5019_impact)
     audit.check("physical electron packet keeps K2 context non-mass", "K2 value-face progress only" in physical_electron and "no delta exactness theorem" in physical_electron)
     audit.check("Brannen open gate keeps delta as open gate", "not derive `delta = 2/9`" in brannen_open_gate)
@@ -307,7 +321,7 @@ def main() -> None:
         "No derivation or ratification of `DISTINGUISHED_TWO_NINTHS_THEOREM_RETAINED`.",
         "No derivation or ratification of `RADIAN_READOUT_LICENSE_RETAINED`.",
         "No derivation or ratification of `FOLD_AND_BRANCH_DOMAIN_LOCK`.",
-        "No claim that PR `#5020`, PR `#5021`, or merged PR `#5022` supplies K2 exactness.",
+        "landed-main `#4982`-`#4986`, or landed-main `89768b461c`/`e2d1dec095`",
         "No derivation of `AC_phi_lambda`, `delta = 2/9`, `rho_e(delta)`, or `a_l^2`.",
         "No derivation or ratification of K1 occupancy/counting, K3 physical species",
         "No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`,",

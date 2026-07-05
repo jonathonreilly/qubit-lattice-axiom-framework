@@ -80,7 +80,7 @@ The hydrogen-facing Lane 6 dependency stack is now:
 | wall | content | current standing |
 |---|---|---|
 | K1 | Counting-measure bit: force `r = 1/2`, equivalently `Q=2/3`, rather than the dimension/Born default. | Reduced to the known counting bit; conditional through Tier-A `AC_phi_lambda`, not zero-import from the current retained inventory. Open `#4932` blocks the updated-axiom/primitives shortcut for AC(i)'s measure-side binary. Open `#4991` would change the old occupancy atom's status to owner-governed premise standing, not theorem closure. |
-| K2 | Radian/readout identification: turn the retained finite `2/9` weight into the charged-lepton `delta = 2/9` radian phase. | Open gate / bounded comparator; open `#4930` prunes angle-native packaging routes and sharpens the live target to a licensed `Phi = S_sum = 2/3` bridge, and open `#4931` blocks the occurrence-axiom shortcut. Merged `#5020` relocates the value face to realized-state registration while leaving the exactness residual open; it is K2 progress, not a zero-source radian theorem. Open `#4991` would change the old R-eta h-unit readout-license atom's status to owner-governed premise standing, not a zero-source radian theorem. |
+| K2 | Radian/readout identification: turn the retained finite `2/9` weight into the charged-lepton `delta = 2/9` radian phase. | Open gate / bounded comparator; `#4930` prunes angle-native packaging routes and sharpens the live target to a licensed `Phi = S_sum = 2/3` bridge, and `#4931` blocks the occurrence-axiom shortcut. Merged `#5020` relocates the value face to realized-state registration while leaving the exactness residual open. The AC/R-eta upstream cluster (`#4981` open context, `#4982`-`#4986` landed-main shortcut pruning, and landed-main `89768b461c`/`e2d1dec095` occurrence/measure boundaries) splits and sharpens h-class/h-unit, doublet-clock, occurrence, measure, and formation residuals; it is K1/K2 progress, not a zero-source radian theorem. Open `#4991` would change the old R-eta h-unit readout-license atom's status to owner-governed premise standing, not a zero-source radian theorem. |
 | K3 | Species/electron branch: connect the selected triplet branch to the physical electron, not only an abstract sorted eigenvalue. | Included in the Tier-A `AC_phi_lambda` minimum decomposition as the abstract-sector to physical-species bridge. Open `#4991` is compatible with C3 owner-ratified standing but supplies no above-C3 taste/Dirac/chirality content and no physical electron mass. |
 | K4 | Absolute scale: assemble `a_l^2`, currently sharpened to weak front, exact `1/256`, and A3 precision placement. | Packaged by the absolute charged-lepton scale ratification decision packet as a ten-input owner/audit handoff; not ratified here. |
 
@@ -89,6 +89,14 @@ The primitive registry was checked. `minimal_axioms`,
 `realized_state_primitive` chain-satisfy their own premise roles, but none of
 them is a Koide phase, counting-measure, species-branch, or electron-mass
 selector.
+
+The AC R-eta upstream cluster impact discriminator
+(`ZERO_IMPORT_HYDROGEN_AC_R_ETA_UPSTREAM_CLUSTER_IMPACT_DISCRIMINATOR_2026-07-05.md`)
+records that `#4982`-`#4986` landed-main notes and open `#4981` prune current
+K2 shortcuts; landed-main `89768b461c` and `e2d1dec095` additionally prune
+occurrence-axiom and measure-binary shortcuts. The cluster supplies no h-class,
+h-unit, R-eta readout retirement, K1/K2 closure, physical electron mass,
+`alpha(0)`, or hydrogen.
 
 The K1 counting-measure target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md`)
@@ -597,12 +605,14 @@ needed.
 ## Open PR Alignment
 
 PRs were checked on 2026-07-04 and refreshed on 2026-07-05 after `#5022`
-merged with audit success, then refreshed again for merged `#5027` and open
-`#5028`. The relevant Koide stack does not close this firewall on current main:
+merged with audit success, refreshed again for merged `#5027` and open
+`#5028`, and refreshed again after `#5029` opened. The relevant Koide stack
+does not close this firewall on current main:
 
 | PR | effect on K1-K3 |
 |---|---|
-| `#5028` | Open W4c labeling/species repairs. It improves labeling/species dependency-surface readiness and species-note context handling, but supplies no K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
+| `#5029` | Open Koide substep4 labeling no-go runner strengthening. It improves audit-surface verification mechanics; it supplies no K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
+| `#5028` | Merged W4c labeling/species repairs. It improves labeling/species dependency-surface readiness and species-note context handling, but supplies no K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
 | `#5027` | Merged Koide custody AC gate-edge repair, audit success at refresh. It repairs a custody/audit-graph edge but supplies no physical action selector, physical matter-state law bridge, K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
 | `#5026` | Merged Koide custody L4 retained-successor re-point and Plancherel edge demotion, audit success at merge. It repairs a charged-lepton custody citation edge but supplies no physical matter-state law bridge, no KS spin-lift physical action law, no KS-route spinful kernel-object theorem, no K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
 | `#5022` | Merged delta-eta supplied-premise audit repair. It improves K2 conditionality bookkeeping but supplies no retained R-eta derivation, electron readout, physical electron mass, or hydrogen. |

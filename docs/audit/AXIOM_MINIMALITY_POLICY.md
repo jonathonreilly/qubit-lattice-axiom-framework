@@ -504,8 +504,9 @@ registry's designed discharge path, not an axiom or primitive change):
     support-vacuous or zero; second-seat clean-room cross-confirmation
     recorded 2026-07-05); mass side phase-erasure, additive-even registrable
     readout, and the determinant-readout bridge, on the supplied-context
-    K/CPT orbit bridge premise layer. Decision artifact:
-    `docs/THETA_RETIREMENT_BASIS_REMATCH_2026-07-04.md` (2026-07-05 verdict).
+    K/CPT orbit bridge premise layer. Decision artifact: PR #4995, artifact
+    path `docs/THETA_RETIREMENT_BASIS_REMATCH_2026-07-04.md` (2026-07-05
+    updated verdict; not shipped as a live source note in this registry PR).
   - **Scope.** Canonical imported Wilson + staggered-Wilson class. The
     mass-side K-real reading rides on `AC_phi_lambda` sub-admission (i)
     exactly as the admission statement recorded; the cross-admission
@@ -516,7 +517,10 @@ registry's designed discharge path, not an axiom or primitive change):
   - **No laundering.** Retirement changes premise accounting only: dependents
     re-grade solely through the automatic effective-status cascade; nothing
     is promoted by this entry itself; `AC_phi_lambda` is unchanged; no axiom
-    or primitive is added or amended.
+    or primitive is added or amended. The historical source row
+    `STRONG_CP_THETA_ZERO_NOTE.md` remains a retained-bounded
+    selected-action-surface theorem in the ledger; this retirement removes
+    the active Tier-A admitted-premise slot, not that source note.
   - **Approval.** Owner approval recorded in the PR #3511 thread
     (2026-07-05). Review-loop must verify that approval comment exists
     before landing the registry edit.

@@ -52,9 +52,10 @@ AC_φλ naming, explicitly **not** counted as admitted inputs (see
 
 Notes:
 - **θ retired from Tier A (2026-07-05; retired by retained derivation).**
-  Owner approval recorded in the PR #3511 thread; decision artifact
-  `THETA_RETIREMENT_BASIS_REMATCH_2026-07-04.md` (updated verdict,
-  2026-07-05). Discharge basis, every row retained-grade: gauge side —
+  Owner approval recorded in the PR #3511 thread; decision artifact PR #4995
+  (artifact path `docs/THETA_RETIREMENT_BASIS_REMATCH_2026-07-04.md`,
+  updated verdict, 2026-07-05; not shipped as a live source note in this
+  registry PR). Discharge basis, every row retained-grade: gauge side —
   `per_plaquette_from_adjacency_license` ∘
   `theta_cross_plane_term_absent_in_supplied_per_plaquette_class` ∘
   `theta_multi_plaquette_cross_plane_absence_narrowing` ∘
@@ -74,7 +75,10 @@ Notes:
   `W_anomaly_covariant_assembly`, SU(3) abelianization) remain open physics
   outside the retired admission. The prior no-go portfolio is preserved in
   `retired_derivation_targets` in `docs/audit/data/tier_a_admissions.json`;
-  `genuine_admitted_input_count` 2 → 1.
+  `genuine_admitted_input_count` 2 → 1. The source row
+  `STRONG_CP_THETA_ZERO_NOTE.md` remains in the audit ledger as a
+  retained-bounded selected-action-surface theorem; retirement removes only
+  the active Tier-A admitted-premise slot, not that historical bounded source.
 - **Record retired from Tier A (2026-06-05).** The owner-approved Record axiom
   is durable registration of the realized outcome in a supplied readout
   context; the realized outcome is the `K`/CPT orbit of the realized central
@@ -140,8 +144,10 @@ Notes:
   that unit reference. The primitive carries no dimensionless content and does
   not assert `a/l_P = 1`; the self-consistency that the natural unit equals the
   Planck length remains the separate open gravity derivation.
-- **θ** is admitted here exactly as the Standard Model admits it (the strong-CP
-  problem); not a framework-specific deficit.
+- **Historical θ context.** Before the 2026-07-05 retirement above, θ was
+  admitted here exactly as the Standard Model admits it (the strong-CP
+  problem); that historical admission is now preserved only under
+  `retired_derivation_targets`, not as an active Tier-A target.
 
 ## Conventions — NOT admitted inputs (vacuous rescaling freedoms)
 
@@ -168,8 +174,10 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
   `minimal_axioms` node as the narrow durable realized-outcome axiom. This
   retirement does not promote the old `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
   parent, which contains additional non-axiom material.
-- **θ and AC_φλ:** stand as genuine admitted derivation targets (θ shared with
-  the SM; AC_φλ = δ-pattern + species bridge, naming excluded).
+- **θ and AC_φλ:** at that time stood as genuine admitted derivation targets
+  (θ shared with the SM; AC_φλ = δ-pattern + species bridge, naming
+  excluded). The 2026-07-05 retirement supersedes the active θ target while
+  preserving this historical refinement record.
 - **Scale reference:** removed from Tier A and registered as the
   explicitly approved `scale_reference_primitive`. It is a units primitive, not a
   derivation-target admission and not a status-bounding dependency.
@@ -181,19 +189,22 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
   explicitly shows the real/RP-half structure cannot forbid the CP-odd term, so
   θ=0 remains a genuine admission (shared with the SM).
 
-Net stratified by character: **two dimensionless Tier-A admissions** —
-AC_φλ (framework-specific physics) and θ (an SM-shared problem). Record is
-axiom content only in its narrow durable realized-outcome form. The
+Net at the time of the 2026-06-04 refinement, stratified by character:
+**two dimensionless Tier-A admissions** — AC_φλ (framework-specific physics)
+and θ (an SM-shared problem). After the 2026-07-05 retirement, this is a
+historical count only; the active admitted derivation target count is one.
+Record is axiom content only in its narrow durable realized-outcome form. The
 scale-reference primitive is the single scale-setting every physical theory
 takes, orthogonal to all of them, and cannot supply any dimensionless number.
 
 ## Minimum-statement sharpening (2026-06-11; owner-approved on merge)
 
-Restates both admissions at their sharpest currently-landed content so that
-elimination attempts target the true residual atoms. **No admission is
-added, removed, adopted, or re-graded; the count stays at two; every
-dependent stays bounded.** All inputs cited below are landed source notes;
-audit status remains audit-lane-only.
+Restated both then-active admissions at their sharpest landed content so that
+elimination attempts targeted the true residual atoms. In the 2026-06-11
+refinement itself, **no admission was added, removed, adopted, or re-graded;
+the count stayed at two; every dependent stayed bounded.** The 2026-07-05 θ
+retirement above supersedes only the active registry count. All inputs cited
+below are landed source notes; audit status remains audit-lane-only.
 
 ### AC_φλ — minimum decomposition (three named sub-admissions)
 

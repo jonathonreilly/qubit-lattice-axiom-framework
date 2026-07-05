@@ -108,7 +108,6 @@
           "gauge_side_theta_value_any_emergent_sector_functional": [
             "theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04"
           ],
-          "gauge_side_theta_value_cross_confirmation": "explicit second seat, clean-room, confirmed 2026-07-05",
           "mass_side": [
             "theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10",
             "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
@@ -118,8 +117,10 @@
             "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
           ]
         },
+        "gauge_side_theta_value_cross_confirmation": "explicit second seat, clean-room, confirmed 2026-07-05",
+        "retired_target_source_row": "strong_cp_theta_zero_note remains an audited_clean / retained_bounded selected-action-surface source row; retirement removes only the active Tier-A admitted-premise slot",
         "scope": "canonical imported Wilson + staggered-Wilson class; the mass-side K-real reading rides on AC_phi_lambda sub-admission (i) exactly as the admission statement recorded; Q-structure lanes (emergent-Q nonvacuous weighting, 4D-carrier model of the emergent OS0 surface, defect closure, W_anomaly_covariant_assembly, SU(3) abelianization) remain open physics outside the retired admission \u2014 they are topological-susceptibility structure, not theta-value content",
-        "decision_artifact": "docs/THETA_RETIREMENT_BASIS_REMATCH_2026-07-04.md (PR #4995, 2026-07-05 updated verdict)"
+        "decision_artifact": "PR #4995 artifact path docs/THETA_RETIREMENT_BASIS_REMATCH_2026-07-04.md (2026-07-05 updated verdict; decision artifact not shipped as a live source note in this registry PR)"
       }
     }
   }

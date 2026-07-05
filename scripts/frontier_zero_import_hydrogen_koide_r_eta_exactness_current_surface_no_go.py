@@ -15,6 +15,7 @@ KOIDE_FIREWALL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FI
 EXACTNESS_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md"
 PR5020_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md"
 TWO_NINTHS_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md"
+TWO_NINTHS_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 PR5019_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md"
 PHYSICAL_ELECTRON = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 BRANNEN_OPEN_GATE = ROOT / "docs" / "LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md"
@@ -118,6 +119,7 @@ def main() -> None:
         EXACTNESS_TARGET,
         PR5020_IMPACT,
         TWO_NINTHS_TARGET,
+        TWO_NINTHS_NO_GO,
         PR5019_IMPACT,
         PHYSICAL_ELECTRON,
         BRANNEN_OPEN_GATE,
@@ -143,6 +145,7 @@ def main() -> None:
         "K2_R_ETA_EXACTNESS_RETAINED",
         "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED",
         "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "current retained, primitive, and open-PR surfaces do not supply",
         "K2_EXACTNESS_TEXT_LOCK",
         "REGISTERED_PHI_VALUE_FACE_ACCEPTED",
@@ -191,6 +194,7 @@ def main() -> None:
     exactness_target = read(EXACTNESS_TARGET)
     pr5020_impact = read(PR5020_IMPACT)
     two_ninths_target = read(TWO_NINTHS_TARGET)
+    two_ninths_no_go = read(TWO_NINTHS_NO_GO)
     pr5019_impact = read(PR5019_IMPACT)
     physical_electron = read(PHYSICAL_ELECTRON)
     brannen_open_gate = read(BRANNEN_OPEN_GATE)
@@ -215,6 +219,15 @@ def main() -> None:
         "two-ninths/radian target keeps subgate partial",
         "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED" in two_ninths_target
         and "not the full K2 exactness" in two_ninths_target,
+    )
+    audit.check(
+        "current no-go references two-ninths/radian current-surface no-go",
+        TWO_NINTHS_NO_GO.name in note and "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED" in note,
+    )
+    audit.check(
+        "two-ninths/radian current no-go keeps subgate open",
+        "current retained, primitive, and open-PR surfaces do not supply" in two_ninths_no_go
+        and "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED" in two_ninths_no_go,
     )
     audit.check("#5020 impact keeps exactness open", "exactness remains open" in pr5020_impact and "No derivation or ratification of a Koide R-eta exactness theorem." in pr5020_impact)
     audit.check("#5019 impact remains premise hygiene", "premise hygiene and audit-readiness context" in pr5019_impact)

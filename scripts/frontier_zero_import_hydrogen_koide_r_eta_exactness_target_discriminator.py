@@ -15,6 +15,7 @@ KOIDE_FIREWALL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FI
 PR5020_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md"
 EXACTNESS_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 TWO_NINTHS_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md"
+TWO_NINTHS_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 PHYSICAL_ELECTRON = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 BRANNEN_OPEN_GATE = ROOT / "docs" / "LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md"
 PRIMITIVE_REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
@@ -126,6 +127,7 @@ def main() -> None:
         PR5020_IMPACT,
         EXACTNESS_NO_GO,
         TWO_NINTHS_TARGET,
+        TWO_NINTHS_NO_GO,
         PHYSICAL_ELECTRON,
         BRANNEN_OPEN_GATE,
         PRIMITIVE_REGISTRY,
@@ -161,6 +163,7 @@ def main() -> None:
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "current retained, primitive, and open-PR surfaces do not supply",
         "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED",
         "No-Go Discipline Gate",
         "broad K2-closure claim fails; narrowed exactness target",
@@ -191,6 +194,7 @@ def main() -> None:
     pr5020_impact = read(PR5020_IMPACT)
     exactness_no_go = read(EXACTNESS_NO_GO)
     two_ninths_target = read(TWO_NINTHS_TARGET)
+    two_ninths_no_go = read(TWO_NINTHS_NO_GO)
     physical_electron = read(PHYSICAL_ELECTRON)
     brannen_open_gate = read(BRANNEN_OPEN_GATE)
     primitive_registry = json.loads(read(PRIMITIVE_REGISTRY))
@@ -217,6 +221,11 @@ def main() -> None:
         TWO_NINTHS_TARGET.name in note
         and "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED" in two_ninths_target
         and "not full K2 exactness by itself" in flat(note),
+    )
+    audit.check(
+        "two-ninths/radian current no-go keeps subtarget open",
+        TWO_NINTHS_NO_GO.name in note
+        and "current retained, primitive, and open-PR surfaces do not supply" in two_ninths_no_go,
     )
     audit.check("physical electron packet remains downstream", "K2 value-face progress only" in physical_electron and "no delta exactness theorem" in physical_electron)
     audit.check("#5020 impact names exactness residual", "exactness remains open" in pr5020_impact and "No derivation or ratification of a Koide R-eta exactness theorem." in pr5020_impact)

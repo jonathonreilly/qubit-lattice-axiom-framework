@@ -46,6 +46,12 @@ AUDIT_ACCEPTANCE
 
 No proper subset supplies the handoff.
 
+The two-ninths/radian-readout current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+records that the current retained, primitive, and open-PR surfaces do not
+supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`; this target remains
+needed.
+
 | input | role |
 |---|---|
 | TWO_NINTHS_READOUT_TEXT_LOCK | fixes the exact subgate statement |

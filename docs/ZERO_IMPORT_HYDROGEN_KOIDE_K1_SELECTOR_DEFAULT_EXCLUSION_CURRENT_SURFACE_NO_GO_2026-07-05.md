@@ -91,13 +91,13 @@ dimension/Born/trace default.
 | `OCCUPANCY_READOUT_EXPONENT_BEREZIN_SUBSUMPTION_BOUNDED_THEOREM_NOTE_2026-06-09.md` | conditional exponent bookkeeping through existing realization structure | unconditional selector/default-exclusion closure |
 | `KOIDE_OCCUPANCY_KERNEL_COEFFICIENT_NOT_FIXED_BY_RETAINED_CORNER_MEASURE_BOUNDED_NOTE_2026-06-12.md` | retained corner-measure non-supply boundary | fixed doublet-block coefficient |
 | `CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md` | conditional K1/K2 consequence under `AC_phi_lambda` | zero-import selector/default-exclusion from current inventory alone |
-| `#4932` AC measure binary axiom shortcut no-go | open shortcut blocker for updated axioms/primitives | selector theorem closure |
+| `#4932` AC measure binary axiom shortcut no-go | closed without merge flag; head not on `origin/main` at refresh; shortcut-blocking branch context | selector theorem closure |
 | `#4991` owner-governed Tier-A retirement | open owner-governed status movement for old atoms | theorem closure, new primitive, or electron mass |
 | merged `#5019` Koide `AC_phi_lambda` axiom-surface rebase | premise-hygiene and audit-readiness context | `AC_phi_lambda` derivation, selector derivation, or electron mass |
 | merged `#5020` Koide R-eta value-face PR | K2 value-face progress | K1 selector or electron mass |
 | merged `#5022` delta-eta audit repair | K2 supplied-premise conditionality repair | K1 selector or retained R-eta derivation |
 | open draft `#5021` primitive-retirement review | primitive-boundary context; reports no primitive retirement and no registry edit | new approved primitive or selector closure |
-| open `#5029` Koide substep4 labeling no-go runner strengthening | runner verification mechanics, audit success at latest refresh | K1/K2/K3 closure, electron readout, or hydrogen |
+| merged `#5029` Koide substep4 labeling no-go runner strengthening | runner verification mechanics, audit success | K1/K2/K3 closure, electron readout, or hydrogen |
 | approved premise/primitive registry | minimal axioms, scale reference, kinetic-form isotropy, realized-state pointwise evaluation | counting selector, dimension/Born exclusion, `r`, `Q`, `m_e`, `alpha(0)`, or hydrogen |
 
 The primitive registry was checked. The registered premise nodes are
@@ -116,13 +116,13 @@ tracked as dependency-state signals; clean/green status is not proof input.
 
 | PR | queue signal | selector/default-exclusion effect |
 |---|---:|---|
-| `#4932` AC measure binary axiom shortcut no-go | open | blocks a primitive/updated-axiom shortcut; no selector theorem |
+| `#4932` AC measure binary axiom shortcut no-go | closed unmerged; head not on `origin/main` | shortcut-blocking context only; no selector theorem |
 | `#4991` owner-governed Tier-A retirement | open | status progress for old occupancy atoms; no theorem closure |
 | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged | premise-hygiene context; no `AC_phi_lambda` or K1 derivation |
 | `#5020` Koide R-eta value-face registered-angle/exactness relocation | merged | K2 value-face progress only |
 | `#5021` primitive-retirement review | open draft | no primitive retirement, no registry edit, no selector shortcut |
 | `#5022` delta-eta chain R-eta supplied-premise audit repair | merged, audit success | K2 conditionality repair only |
-| `#5029` Koide substep4 labeling no-go runner strengthening | open, audit success | runner verification only; no selector theorem |
+| `#5029` Koide substep4 labeling no-go runner strengthening | merged with audit success | runner verification only; no selector theorem |
 | `#5016` zero-import hydrogen retained lane bundle | open | carries this current-surface no-go once pushed |
 
 Merge-state labels, branch ordering, draft status, and check state are review
@@ -283,7 +283,7 @@ current-surface non-supply claim passes.
 - No adoption of orbit-occupancy or any owner-governed occupancy premise.
 - No derivation of `r = 1/2` or `Q = 2/3` from the current retained inventory.
 - No claim that `#4932`, `#4991`, merged `#5019`, merged `#5020`, draft
-  `#5021`, merged `#5022`, or open `#5029` supplies the selector/default-
+  `#5021`, merged `#5022`, or merged `#5029` supplies the selector/default-
   exclusion target.
 - No derivation or ratification of K2 exactness, K3 physical species bridge,
   native bridge, Koide branch mass-map, K4 absolute scale, or physical

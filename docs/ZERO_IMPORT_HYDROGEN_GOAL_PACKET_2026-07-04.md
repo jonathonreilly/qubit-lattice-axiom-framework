@@ -1616,10 +1616,9 @@ shortcut pruning only. A later refresh also found landed-main commits
 shortcuts without closing K1 or K2. This does not derive R-eta, K2 exactness,
 `m_e`, `alpha(0)`, or hydrogen.
 
-The same latest open-PR refresh found `#5029`, a Koide labeling no-go runner
-strengthening PR. It is runner/audit-surface context only and supplies no
-retained K1/K2/K3 input, Koide electron readout, `m_e`, `alpha(0)`, or
-hydrogen.
+A later 2026-07-05 UTC refresh found `#5029` merged with audit success. It is
+runner/audit-surface context only and supplies no retained K1/K2/K3 input,
+Koide electron readout, `m_e`, `alpha(0)`, or hydrogen.
 
 | PR | current relevance to zero-import hydrogen |
 |---|---|
@@ -1638,7 +1637,7 @@ hydrogen.
 | `#4929` Tier-A block04 species-bridge partial-retirement | Stacked on `#4928`. If accepted, it removes `species_bridge` from the live `AC_phi_lambda` Tier-A minimum decomposition at C3 grade, but `AC_phi_lambda` remains live through measure-side/dynamical occupancy realization and R-eta. It is not a derivation of `m_e`, `S_l`, or `alpha(0)`. |
 | `#4930` Tier-A block05 R-eta route pruning | Stacked on `#4929`. It prunes periodic/torsion, homogeneous, canonical `U(1)` packaging, and unlicensed `Phi = S_sum` angle-native candidates, but explicitly leaves R-eta and `AC_phi_lambda` live. It sharpens K2 to a licensed bridge target `Phi = S_sum = 2/3`, not a zero-import electron or hydrogen derivation. |
 | `#4931` Tier-A block06 R-eta occurrence axiom shortcut | Stacked on `#4930` and currently clean. It blocks treating the updated `Records form` axiom as an R-eta occurrence/event license; it is Koide/R-eta hygiene and does not derive `m_e`, `S_l`, or `alpha(0)`. |
-| `#4932` Tier-A block07 AC measure binary axiom shortcut | Stacked on `#4931` and currently clean. It blocks retiring AC(i)'s measure-side/dynamical occupancy binary by appeal to the updated axioms or approved primitives; K1 remains open and no electron mass, `S_l`, or `alpha(0)` is derived. |
+| `#4932` Tier-A block07 AC measure binary axiom shortcut | Closed without merge flag at latest refresh, with head not on `origin/main`. It is shortcut-blocking branch context only; it does not derive K1, electron mass, `S_l`, or `alpha(0)`. |
 | `#4933` Tier-A block08 theta mass no-go | Stacked on `#4932` and currently clean. It blocks retiring theta's mass-side determinant-readout bridge by appeal to the updated axioms or approved primitives; it is theta hygiene, preserves determinant-character phase erasure as conditional algebra, and does not derive `m_e`, `S_l`, `alpha(0)`, or hydrogen. |
 | `#4934` Tier-A block09 theta gauge no-go | Stacked on `#4933` and currently clean. It blocks retiring theta's gauge-side winding account by appeal to the updated axioms or approved primitives; it is theta hygiene and does not derive `m_e`, `S_l`, `alpha(0)`, or hydrogen. |
 | `#4935` Tier-A block10 theta gauge open | Stacked on `#4934` and currently clean. It compresses theta gauge-side positive-route work into four live gates: defect closure, nonabelian sector/readout registration, phase-type `F cup F` insertion, and physical theta assembly. It is theta route triage and does not derive `m_e`, `S_l`, `alpha(0)`, or hydrogen. |
@@ -1735,7 +1734,7 @@ hydrogen.
                         | `#5024` Koide W4 gate-note premise minimization + substep1 rebase | Merged with audit success. It is `AC_phi_lambda` gate-readiness and premise-minimization work; it does not derive a physical matter-state law bridge, `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, h-class, h-unit, retained R-eta readout retirement, `m_e`, `alpha(0)`, or hydrogen. |
                         | `#5027` Koide custody AC gate-edge repair | Merged with audit success at refresh. It is a custody/audit-graph direct-dependency repair for the `AC_phi_lambda` row; it does not derive a physical action selector, physical matter-state law bridge, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
 | `#5028` Koide W4c labeling/species repairs | Merged after open lane-relevant refresh. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_W4C_PR5028_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as labeling/species dependency-surface readiness; it does not derive K1/K2/K3, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
-| `#5029` Koide substep4 labeling no-go runner strengthening | Open and runner-only at latest refresh, with audit in progress. It strengthens mechanical verification for a Koide labeling no-go runner; it does not derive K1/K2/K3, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
+| `#5029` Koide substep4 labeling no-go runner strengthening | Merged with audit success after refresh. It strengthens mechanical verification for a Koide labeling no-go runner; it does not derive K1/K2/K3, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 counting-measure target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md` packages `K1_COUNTING_MEASURE_RETAINED`; current source notes reduce K1 to one binary, but this target is not supplied by primitives, #4991, #5019, or K2 work and does not derive `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 counting-measure current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `K1_COUNTING_MEASURE_RETAINED`. |
                         | K1 counting-measure ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the ten-input owner/audit contract for `K1_COUNTING_MEASURE_RETAINED`; it is not K2/K3/K4, `m_e`, `alpha(0)`, or hydrogen. |

@@ -131,7 +131,7 @@ status is not proof input.
 |---|---:|---|
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft | primitive-boundary context only; no registry edit |
 | `#5028` Koide W4c labeling-pair successor re-points | merged | species-note edge hygiene only |
-| `#5029` Koide substep4 labeling no-go runner strengthening | open | runner verification only; no determinant theorem |
+| `#5029` Koide substep4 labeling no-go runner strengthening | merged with audit success | runner verification only; no determinant theorem |
 | `#5016` zero-import hydrogen retained lane bundle | open | carries this packet once pushed |
 
 ## What This Moves

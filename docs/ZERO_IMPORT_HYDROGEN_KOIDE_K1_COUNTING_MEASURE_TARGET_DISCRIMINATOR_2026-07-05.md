@@ -110,7 +110,7 @@ premise.
 | Berezin subsumption note | conditional under existing staggered gate and K/CPT registration; not unconditional K1 |
 | retained corner-measure coefficient note | measure-level non-supply; transfer/kernel route remains live |
 | `CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md` | conditional under `AC_phi_lambda`; not zero-import retained K1 |
-| open `#4932` | blocks the updated-axiom/primitives shortcut for AC(i)'s measure-side binary |
+| closed unmerged `#4932` | shortcut-blocking branch context for AC(i)'s measure-side binary; head not on `origin/main` at refresh |
 | open `#4991` | would move old occupancy atoms to owner-governed premise standing, not theorem closure |
 | merged `#5019` | Koide `AC_phi_lambda` premise-hygiene context; no K1 derivation |
 | approved primitives | premise discipline only; no counting-measure selector |

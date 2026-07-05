@@ -153,7 +153,7 @@ that chain only after acceptance.
 | Berezin subsumption note | conditional determinant-exponent route | possible future theorem input, not current closure |
 | retained corner-measure coefficient note | keeps coefficient/occupancy open under retained corner measure | no selector shortcut |
 | two-gate Tier-A companion | conditional under old `AC_phi_lambda` premise | not zero-import closure |
-| open `#4932` | blocks the updated-axiom/primitives shortcut for AC(i)'s measure-side binary | no selector theorem |
+| closed unmerged `#4932` | shortcut-blocking branch context for AC(i)'s measure-side binary; head not on `origin/main` at refresh | no selector theorem |
 | open `#4991` | owner-governed premise-standing movement | not theorem closure |
 | merged `#5019` | Koide premise-hygiene and audit-readiness context | no `AC_phi_lambda` derivation and no selector theorem |
 | merged `#5020` | K2 value-face movement | independent of K1 selector/default-exclusion |

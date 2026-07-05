@@ -116,7 +116,7 @@ This does not supply `REAL_VECTOR_TRACE_DEFAULT_EXCLUDED`, full K1, `m_e`,
 | `OCCUPANCY_READOUT_EXPONENT_BEREZIN_SUBSUMPTION_BOUNDED_THEOREM_NOTE_2026-06-09.md` | conditional exponent bookkeeping through existing realization structure | unconditional K1 closure |
 | `KOIDE_OCCUPANCY_KERNEL_COEFFICIENT_NOT_FIXED_BY_RETAINED_CORNER_MEASURE_BOUNDED_NOTE_2026-06-12.md` | retained corner-measure non-supply boundary | fixed doublet-block coefficient |
 | `CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md` | conditional K1/K2 consequence under `AC_phi_lambda` | zero-import retained K1 from current inventory alone |
-| `#4932` AC measure binary axiom shortcut no-go | open, clean shortcut blocker for updated axioms/primitives | K1 theorem closure |
+| `#4932` AC measure binary axiom shortcut no-go | closed without merge flag; head not on `origin/main` at refresh; shortcut-blocking branch context | K1 theorem closure |
 | `#4991` owner-governed Tier-A retirement | open, clean owner-governed status movement for old atoms | theorem closure, new primitive, or electron mass |
 | merged `#5019` Koide `AC_phi_lambda` axiom-surface rebase | premise-hygiene and audit-readiness context | `AC_phi_lambda` derivation, K1 derivation, or electron mass |
 | merged `#5020` Koide R-eta value-face PR | K2 value-face progress | K1 selector, K2 exactness, or electron mass |
@@ -140,7 +140,7 @@ tracked as dependency-state signals; clean/green status is not a proof input.
 
 | PR | queue signal | K1 effect |
 |---|---:|---|
-| `#4932` AC measure binary axiom shortcut no-go | open, clean | blocks a primitive/updated-axiom shortcut; no selector theorem |
+| `#4932` AC measure binary axiom shortcut no-go | closed unmerged; head not on `origin/main` | shortcut-blocking context only; no selector theorem |
 | `#4991` owner-governed Tier-A retirement | open, clean | status progress for old occupancy atoms; no theorem closure |
 | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged | premise-hygiene context; no `AC_phi_lambda` or K1 derivation |
 | `#5020` Koide R-eta value-face registered-angle/exactness relocation | merged | K2 value-face progress only |

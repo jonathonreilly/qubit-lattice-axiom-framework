@@ -627,7 +627,7 @@ needed.
 
 PRs were checked on 2026-07-04 and refreshed on 2026-07-05 after `#5022`
 merged with audit success, refreshed again for merged `#5027` and open
-`#5028`, and refreshed again after `#5029` opened. The relevant Koide stack
+`#5028`, and refreshed again after `#5029` merged. The relevant Koide stack
 does not close this firewall on current main:
 
 | PR | effect on K1-K3 |

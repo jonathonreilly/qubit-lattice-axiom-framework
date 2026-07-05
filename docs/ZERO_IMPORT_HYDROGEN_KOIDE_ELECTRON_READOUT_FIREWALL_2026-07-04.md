@@ -272,6 +272,17 @@ records that current retained, primitive, and open-PR surfaces do not supply
 `ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED`; the K4 scale target remains needed
 before any physical electron mass packet can spend absolute scale.
 
+The K4 scale assembly ladder review packet
+(`ZERO_IMPORT_HYDROGEN_K4_SCALE_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`)
+compresses the direct scale-lane rows into one review surface: SU2 weak
+context and D17 block normalization feed weak-front base; source-probe
+interface checks feed exact source-side `S_l = 1/256`; one retained
+P1/P2/P3/P4 placement theorem plus single-spend control feed
+`A3_PRECISION_PLACEMENT_RETAINED` and `NO_SOURCE_A3_DOUBLE_COUNT`; and the
+parent K4 packet still needs all ten inputs. It is review compression only,
+not retained K4, physical electron mass, `alpha(0)`, static-source Rydberg
+closure, or hydrogen.
+
 The Koide branch mass-map ratification decision packet
 (`ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_RATIFICATION_DECISION_PACKET_2026-07-04.md`)
 packages the branch-to-mass composition used after a branch/readout and scale

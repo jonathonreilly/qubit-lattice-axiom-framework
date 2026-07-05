@@ -3,7 +3,7 @@
     "critical": 421,
     "high": 288,
     "leaf": 755,
-    "medium": 516
+    "medium": 515
   },
   "cycle_break_target_count": 14,
   "cycle_break_targets": [
@@ -12541,6 +12541,33 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "koide_reviewer_stress_test_note_2026-04-21",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+        "koide_aps_block_by_block_forcing_note_2026-04-21",
+        "s3_cap_uniqueness_note",
+        "koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.115,
+      "note_path": "docs/KOIDE_REVIEWER_STRESS_TEST_NOTE_2026-04-21.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_reviewer_stress_test.py",
+      "transitive_descendants": 48
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -19020,33 +19047,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_reviewer_stress_test_note_2026-04-21",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
-        "koide_aps_block_by_block_forcing_note_2026-04-21",
-        "s3_cap_uniqueness_note",
-        "koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.115,
-      "note_path": "docs/KOIDE_REVIEWER_STRESS_TEST_NOTE_2026-04-21.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_koide_reviewer_stress_test.py",
-      "transitive_descendants": 48
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -21113,31 +21113,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/DM_EFFECTIVE_PARENT_one_clock_transfer_boundary_2026_04_18.py",
-      "transitive_descendants": 49
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_aps_block_by_block_forcing_note_2026-04-21",
-        "s3_cap_uniqueness_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.144,
-      "note_path": "docs/KOIDE_APS_ETA_TOPOLOGICAL_ROBUSTNESS_BOUNDED_THEOREM_NOTE_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_aps_topological_robustness.py",
       "transitive_descendants": 49
     },
     {
@@ -58231,5 +58206,5 @@
     }
   ],
   "ready_count": 174,
-  "total_pending": 1980
+  "total_pending": 1979
 }

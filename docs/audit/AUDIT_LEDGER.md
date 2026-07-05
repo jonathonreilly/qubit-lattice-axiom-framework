@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 189 |
 | **retained_no_go** | 191 |
-| **retained_bounded** | 857 |
+| **retained_bounded** | 858 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1943 |
+| unaudited | 1942 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1230 |
+| `audited_clean` | 1231 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2281 |
+| `unaudited` | 2280 |
 
 | claim_type | count |
 |---|---:|
@@ -692,6 +692,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_anticommuting_operator_derivation_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9426,6 +9427,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The C3[111] cyclic permutation has fixed line (1,1,1), transverse eigenvalues {omega, omega^2} read as weights (1,2), and the unique trace-free pair gives L3(1,2)=2/9 via (omega-1)(omega^2-1)=3.  _(class `A`)_
 - **chain closes:** True — The narrowed A/B statement follows by exact finite linear algebra and the exact C3 Lefschetz-density sum, with the trace-free-complement input supplied by retained_bounded flavor authorities. The global PL S3 x R and single-summand physical readout bridges are explicitly outside this audited scope.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs: char polynomial, fixed-locus rank, transverse weights, trace-free pair enumeration, and L3(1,2)=2/9 all check exactly. The runner source computes these identities with sympy/numpy rather than merely printing a pass string, and an independent hand check confirms the key factors and the 2/9 density. The retained_bounded upstream flavor notes supply the trace-free-complement interpretation; the open ABSS/global topology material is labelled diagnostic and is not used to prove the narrowed claim.
+- **auditor confidence:** high
+
+### `koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02`
+
+- **Note:** [`KOIDE_APS_ETA_TOPOLOGICAL_ROBUSTNESS_BOUNDED_THEOREM_NOTE_2026-07-02.md`](../../docs/KOIDE_APS_ETA_TOPOLOGICAL_ROBUSTNESS_BOUNDED_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded local robustness theorem: conditional on the named ABSS/APS premises and the declared retained Z_3 tangent class (1,2), the local fixed-point eta contribution is metric-independent and equals 2/9 mod Z; no physical readout or global PL compactification bridge is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-20260705-acphi-eta-robustness`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the declared premises, the fractional part of the equivariant APS eta-invariant at an isolated Z_3 fixed point is determined by the tangent weights alone via eta(a,b)=(1/3) sum_{k=1,2} 1/[(zeta^{ka}-1)(zeta^{kb}-1)], and eta(1,2)=2/9 with no metric symbol.  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, the runner recomputes the character sum, the invariant-metric rigidity G=lambda I, mod-3 weight invariance, and fractional-part arithmetic, and both direct dependency notes are supplied as retained_bounded. The source explicitly excludes the physical Brannen-phase bridge, tangent-class selection as a physical class, and global PL/ABSS route closure from this claim.
+- **rationale:** The load-bearing step is exact algebra over declared local inputs, not a definition, renaming, tuned comparator, or physical-observable bridge. The current runner and cache both report PASS=41, FAIL=0, and the source code performs symbolic evaluations and invariant-metric solves rather than merely printing constants. Residual risk is bounded by the explicitly scoped premises: ABSS/fractional-part invariance and the upstream tangent-class input are consumed, not reproved, and no downstream physical eta-to-observable identification is established here.
 - **auditor confidence:** high
 
 ### `koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04`

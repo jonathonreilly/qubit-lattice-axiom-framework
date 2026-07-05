@@ -250,6 +250,13 @@ only; it does not supply h-class, carrier realization, full R-eta retirement,
 two-ninths/radian closure, K2 exactness, physical electron mass, alpha input,
 or hydrogen.
 
+The R-eta h-class fixed-locus target
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md`)
+packages `R_ETA_H_CLASS_RETAINED`, the matching subinput of R-eta readout
+retirement. It attacks fixed-locus class membership and the single
+fixed-point readout bridge only; it does not supply h-unit, full R-eta
+retirement, K2 exactness, physical electron mass, alpha input, or hydrogen.
+
 The two-ninths/radian-readout target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`)
 packages the K2 sub-handoff `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
@@ -374,6 +381,7 @@ No hidden admission is left buried as background.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 R-eta supplied-premise conditionality boundary | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_READOUT_IDENTIFICATION_RETAINED`; h-class plus h-unit, not electron readout | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; identity-radian unit only, not electron readout | yes |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_H_CLASS_RETAINED`; fixed-locus class membership only, not electron readout | yes |
 | `#5022` delta-eta R-eta supplied-premise audit repair | conditional R-eta bookkeeping, not retained derivation or electron readout | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` | successor target for `K2_R_ETA_EXACTNESS_RETAINED` | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `K2_R_ETA_EXACTNESS_RETAINED` | yes |

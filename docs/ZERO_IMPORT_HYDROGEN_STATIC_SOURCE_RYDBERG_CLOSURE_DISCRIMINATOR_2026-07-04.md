@@ -180,6 +180,13 @@ compression only. It does not supply
 `RETAINED_STATIC_SOURCE_NR_COULOMB_LIMIT`, and this final predicate still
 cannot consume the NR Coulomb limit until the parent handoff is accepted.
 
+The static-source NR Coulomb three-gate target bundle
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_THREE_GATE_TARGET_BUNDLE_2026-07-05.md`
+is the child target beneath that assembly. It keeps static-source readout,
+one-body NR physical-unit reduction, and Hartree mapping as separate sibling
+gates while making them reviewable together. It does not ratify those gates or
+the retained NR Coulomb input.
+
 The physical electron mass ratification decision packet
 `ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md`
 packages the Lane 6 handoff for `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT`:

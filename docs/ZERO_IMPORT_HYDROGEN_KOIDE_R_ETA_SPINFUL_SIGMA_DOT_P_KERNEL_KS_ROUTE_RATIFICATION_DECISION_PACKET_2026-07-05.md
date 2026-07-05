@@ -67,6 +67,9 @@ input, the spinful kernel-object theorem, or the owner/audit decision.
 |---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_TARGET_DISCRIMINATOR_2026-07-05.md` | names the target; no retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the target |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for `KS_ROUTE_DEFINED_MOMENTUM_COVECTOR_OR_LINK_PHASE_INPUT_RETAINED`; no retained consequence here |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit contract for the route momentum/link-phase input |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of that child input |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | parent scalar-lift target that can consume this handoff if retained |
 | `CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md` | source support for scalar-kernel compatibility and spinful selector location |
 | `scripts/carrier_attachment_chirality_gate_consolidation_runner.py` | finite support check, not decision acceptance |
@@ -121,11 +124,13 @@ existing finite support irrelevant.
 
 ### N6 - Partial-Closure Path Scan
 
-The partial closures are explicit: a retained route-defined momentum/link
-phase can close one missing physics input; a retained spinful kernel-object
-theorem can close the other; owner/audit acceptance can then promote the
-target handle. A future primitive route would require owner-governed registry
-review because no such primitive is registered now.
+The partial closures are explicit: the momentum/link-phase target packet can
+promote `KS_ROUTE_DEFINED_MOMENTUM_COVECTOR_OR_LINK_PHASE_INPUT_RETAINED`
+after owner/audit acceptance of the P-FLUX and Kawamoto-Smit support stack; a
+retained spinful kernel-object theorem can close the other physics input;
+owner/audit acceptance can then promote the target handle. A future primitive
+route would require owner-governed registry review because no such primitive is
+registered now.
 
 ### N7 - Steelman
 

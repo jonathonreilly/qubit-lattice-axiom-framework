@@ -113,6 +113,11 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   records that the current retained, primitive, and open-PR surfaces do not
   supply `K2_R_ETA_EXACTNESS_RETAINED`; the K2 exactness target remains
   needed.
+  The two-ninths/radian-readout target discriminator
+  `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`
+  packages `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED` as the exact `2/9`
+  theorem, radian-readout license, and fold/branch domain-lock sub-handoff;
+  it is a partial K2 route, not electron mass or hydrogen closure.
   The
   Koide native zero-section bridge target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_TARGET_DISCRIMINATOR_2026-07-04.md`
@@ -1338,6 +1343,7 @@ here.
                         | `#5020` Koide R-eta value-face registered-angle/exactness relocation | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as K2 value-face progress; exactness remains open; it does not derive `AC_phi_lambda`, `delta = 2/9`, Koide electron readout, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
                         | K2 R-eta exactness target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` packages the successor handoff `K2_R_ETA_EXACTNESS_RETAINED`; it is not supplied by #5020 and does not derive `m_e`, `alpha(0)`, or hydrogen. |
                         | K2 R-eta exactness current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, and open-PR surfaces do not supply `K2_R_ETA_EXACTNESS_RETAINED`. |
+                        | Koide two-ninths/radian-readout target | Open subtarget. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`; if accepted it supplies exact `2/9`, radian-readout, and fold/branch domain inputs for K2, not full K2 exactness, `m_e`, `alpha(0)`, or hydrogen. |
 		| `#4919`, `#4921` admissibility bootstrap continuation | Formation/orbit/chirality context; no direct closure of `m_e`, `S_l`, Koide readout, or `alpha(0)`. |
 
 ## Non-Claims

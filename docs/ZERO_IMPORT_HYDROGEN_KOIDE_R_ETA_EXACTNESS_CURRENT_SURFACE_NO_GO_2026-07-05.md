@@ -58,6 +58,13 @@ The #5020 value-face PR is the closest live lane movement, but it explicitly
 names exactness as residual. It can become one target input after adoption or
 a successor review, not the full K2 exactness handoff.
 
+The two-ninths/radian-readout target discriminator
+`ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages the next sub-lane as
+`KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`: exact pure `2/9` theorem,
+radian-readout license, fold/branch domain lock, comparator exclusion, owner
+ratification, and audit acceptance. It is a subtarget, not a retained result.
+
 ## Current-Surface Audit
 
 | surface | supplies | does not supply |
@@ -65,6 +72,7 @@ a successor review, not the full K2 exactness handoff.
 | `#5020` Koide R-eta value-face PR | open value-face movement: registered-angle functional, counterfactual classification, law-freeness, unit-face dissolution, and named exactness residual | retained exact `2/9` theorem, radian-readout license, owner/audit acceptance |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | hydrogen-facing boundary for #5020 | `K2_R_ETA_EXACTNESS_RETAINED` |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` | ten-input exactness target contract | current retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` | subtarget for exact `2/9`, radian readout, and fold/branch domain | current retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md` | K1/K2/K3/K4 separation and phase-sensitive arithmetic | K2 exactness closure or physical electron mass |
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | comparator/open-gate warning for `delta = 2/9` | retained phase/exactness theorem |
 | `CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md` | bounded theorem under explicit Tier-A admission | zero-import K2 exactness from retained inventory alone |
@@ -195,6 +203,7 @@ Legitimate partial-closure paths remain:
 | path | what it could close |
 |---|---|
 | landed/audited #5020 or successor | `REGISTERED_PHI_VALUE_FACE_ACCEPTED` |
+| accepted two-ninths/radian-readout subtarget | exact `2/9` theorem, radian-readout license, and fold/branch domain lock |
 | retained exactness theorem | `DISTINGUISHED_TWO_NINTHS_THEOREM_RETAINED` |
 | retained radian/readout license | `RADIAN_READOUT_LICENSE_RETAINED` |
 | retained fold/branch domain convention | `FOLD_AND_BRANCH_DOMAIN_LOCK` |

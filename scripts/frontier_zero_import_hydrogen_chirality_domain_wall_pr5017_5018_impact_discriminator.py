@@ -9,6 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_CHIRALITY_DOMAIN_WALL_PR5017_5018_IMPACT_DISCRIMINATOR_2026-07-05.md"
+MATTER_STATE_CHIRALITY_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_MATTER_STATE_CHIRALITY_DOMAIN_WALL_IMPACT_DISCRIMINATOR_2026-07-05.md"
 GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 SPECIES_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_SPECIES_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 SPECIES_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_SPECIES_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-04.md"
@@ -121,6 +122,7 @@ def main() -> None:
     section("File and source-surface checks")
     source_paths = [
         NOTE,
+        MATTER_STATE_CHIRALITY_IMPACT,
         GOAL,
         SPECIES_NO_GO,
         SPECIES_DECISION,
@@ -159,7 +161,8 @@ def main() -> None:
         "PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED",
         "above-C3 chirality/domain-wall content",
         "`#5016` zero-import hydrogen retained lane bundle | open",
-        "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | open",
+        "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_MATTER_STATE_CHIRALITY_DOMAIN_WALL_IMPACT_DISCRIMINATOR_2026-07-05.md",
         "The primitive registry was checked",
         "No-Go Discipline Gate",
         "broad chirality-to-hydrogen closure claim fails; narrowed",

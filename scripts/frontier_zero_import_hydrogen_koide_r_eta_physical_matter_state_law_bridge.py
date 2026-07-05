@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md"
 DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+MATTER_STATE_CHIRALITY_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_MATTER_STATE_CHIRALITY_DOMAIN_WALL_IMPACT_DISCRIMINATOR_2026-07-05.md"
 KS_CHILD_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md"
 KS_CHILD_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 KS_CHILD_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md"
@@ -215,6 +216,7 @@ def main() -> None:
         TARGET,
         DECISION,
         CURRENT,
+        MATTER_STATE_CHIRALITY_IMPACT,
         KS_CHILD_TARGET,
         KS_CHILD_DECISION,
         KS_CHILD_CURRENT,
@@ -257,6 +259,8 @@ def main() -> None:
         "Koide R-Eta Physical Matter-State Law Bridge Target Discriminator",
         "Koide R-Eta Physical Matter-State Law Bridge Ratification Decision Packet",
         "Koide R-Eta Physical Matter-State Law Bridge Current-Surface No-Go",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_MATTER_STATE_CHIRALITY_DOMAIN_WALL_IMPACT_DISCRIMINATOR_2026-07-05.md",
+        "K2 matter-state impact boundary",
         "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED",
         "PHYSICAL_MATTER_STATE_LAW_BRIDGE_TEXT_LOCK",
         "OPERATOR_FRAME_MERGER_ACCEPTED",
@@ -293,6 +297,7 @@ def main() -> None:
         "CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md",
         "merged `#5023`",
         "merged `#5024`",
+        "`#5012`",
         "open `#5014`",
         "open `#5017`",
         "open `#5018`",
@@ -361,6 +366,7 @@ def main() -> None:
     chirality_parity = read(CHIRALITY_PARITY)
     chirality_two_gates = read(CHIRALITY_TWO_GATES)
     realization_gate = read(REALIZATION_GATE)
+    matter_state_chirality_impact = read(MATTER_STATE_CHIRALITY_IMPACT)
     primitive_registry = json.loads(read(PRIMITIVE_REGISTRY))
     primitive_nodes = primitive_registry["nodes"]
     primitive_text = "\n".join([read(MINIMAL), read(SCALE), read(KINETIC), read(REALIZED)])
@@ -378,6 +384,20 @@ def main() -> None:
             and DECISION.name in container
             and CURRENT.name in container
             and "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED" in container,
+        )
+
+    for label, container in [
+        ("goal packet", goal),
+        ("Koide firewall", firewall),
+        ("parent target", target),
+        ("parent decision", decision),
+        ("parent current no-go", current),
+    ]:
+        audit.check(
+            f"{label} references K2 matter-state chirality impact boundary",
+            MATTER_STATE_CHIRALITY_IMPACT.name in container
+            and "#5017" in container
+            and "#5018" in container,
         )
 
     for label, container in [
@@ -426,6 +446,13 @@ def main() -> None:
     )
 
     audit.check("physical carrier target still keeps charged carrier downstream", "CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED" in physical_carrier_target)
+    matter_state_chirality_flat = flat(matter_state_chirality_impact)
+    audit.check(
+        "matter-state chirality impact keeps K2 support below route theorem",
+        "K2 matter-state-law boundary" in matter_state_chirality_flat
+        and "they do not supply either retained state-law route theorem" in matter_state_chirality_flat
+        and "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED" in matter_state_chirality_flat,
+    )
     matter_flat = flat(matter_attachment)
     carrier_flat = flat(carrier_attachment)
     su2_flat = flat(su2_merger)
@@ -517,6 +544,7 @@ def main() -> None:
         "`#5014` record-formation front is the domain wall | open, audit success",
         "`#5017` domain-wall edge anomaly inflow via spectral flow | open, audit success",
         "`#5018` domain-wall edge content vs SM chiral fermions map | open, audit success",
+        "K2 matter-state chirality/domain-wall impact boundary | open in `#5016` once pushed",
         "clean/dirty/check labels are not proof inputs",
     ]
     for marker in pr_markers:
@@ -531,7 +559,7 @@ def main() -> None:
         "No derivation or ratification of",
         "`CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED`.",
         "No derivation or ratification of `PHYSICAL_CARRIER_CONTEXT_RETAINED`.",
-        "No claim that #5014, #5017, #5018, #5023, or #5024 supplies the physical",
+        "No claim that #5012, #5014, #5017, #5018, #5023, or #5024 supplies the physical",
         "No new axiom, primitive, Tier-A admission, empirical import, or audit status",
     ]
     for phrase in explicit_nonclaims:

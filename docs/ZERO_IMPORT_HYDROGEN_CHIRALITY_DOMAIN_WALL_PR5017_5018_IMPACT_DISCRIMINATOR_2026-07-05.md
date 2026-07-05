@@ -53,7 +53,7 @@ species bridge.
 | `#5017` domain-wall edge anomaly inflow via spectral flow | open | anomaly-inflow consistency context; no species bridge or electron mass |
 | `#5014` record-formation front/domain-wall chirality | open | formation-front wall context; no K3 owner adoption |
 | `#5012` chirality domain-wall free-field note | open | free-field Weyl-edge support; no electron-mass handoff |
-| `#5019` Koide `AC_phi_lambda` axiom-surface rebase | open | Koide premise hygiene, not chirality or mass closure |
+| `#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged | Koide premise hygiene, not chirality or mass closure |
 | `#5016` zero-import hydrogen retained lane bundle | open | carries this impact discriminator once pushed |
 
 ## Authority Boundary
@@ -80,6 +80,10 @@ branch readout, `m_e`, `alpha(0)`, or hydrogen.
 | #5017/#5018 were only visible as adjacent chirality PRs in the hydrogen goal packet | hydrogen has a local species-boundary impact discriminator for the chirality stack |
 | a future reviewer could overread the SM-like `6+2` map as K3 species closure | K3 C3-grade bridge and above-C3 chirality/domain-wall content are explicitly separated |
 | the physical electron species packet did not name the newest chirality stack | the species packet can cite #5017/#5018 as context without spending them |
+
+The K2 matter-state-law side is handled by a separate impact discriminator,
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_MATTER_STATE_CHIRALITY_DOMAIN_WALL_IMPACT_DISCRIMINATOR_2026-07-05.md`.
+This K3 note does not spend that K2 boundary as species-bridge closure.
 
 ## No-Go Discipline Gate
 

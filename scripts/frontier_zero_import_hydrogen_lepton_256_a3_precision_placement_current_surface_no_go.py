@@ -20,6 +20,7 @@ NOTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_C
 GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 K4_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 A3_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_RATIFICATION_DECISION_PACKET_2026-07-04.md"
+A3_NO_DOUBLE_COUNT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_NO_DOUBLE_COUNT_COMPOSITION_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 SOURCE_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_INTERFACE_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 EXACT_SOURCE_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 WEAK_FRONT_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
@@ -135,6 +136,7 @@ def main() -> None:
         GOAL,
         K4_PACKET,
         A3_DECISION,
+        A3_NO_DOUBLE_COUNT,
         SOURCE_DECISION,
         EXACT_SOURCE_NO_GO,
         WEAK_FRONT_NO_GO,
@@ -188,6 +190,9 @@ def main() -> None:
         "P3: F_0 * S_0 * (C_A3 * R_0)",
         "P4: F_0 * (1/N_A3) * R_0",
         "C_A3^2",
+        "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_NO_DOUBLE_COUNT_COMPOSITION_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "NO_SOURCE_DOUBLE_COUNT",
+        "NO_SOURCE_A3_DOUBLE_COUNT",
         "a3_precision_placement_primitive",
         "a3_correction_primitive",
         "a3_placement_selector_primitive",
@@ -256,6 +261,7 @@ def main() -> None:
     goal = read(GOAL)
     k4_packet = read(K4_PACKET)
     a3_decision = read(A3_DECISION)
+    a3_no_double_count = read(A3_NO_DOUBLE_COUNT)
     source_decision = read(SOURCE_DECISION)
     exact_source_no_go = read(EXACT_SOURCE_NO_GO)
     weak_front_no_go = read(WEAK_FRONT_NO_GO)
@@ -282,6 +288,8 @@ def main() -> None:
     audit.check("goal packet references A3 no-go", NOTE.name in goal)
     audit.check("K4 packet references A3 no-go", NOTE.name in k4_packet)
     audit.check("A3 decision references A3 no-go", NOTE.name in a3_decision)
+    audit.check("A3 no-go references no-double-count packet", A3_NO_DOUBLE_COUNT.name in note)
+    audit.check("no-double-count packet does not close A3", "NO_SOURCE_DOUBLE_COUNT" in a3_no_double_count and "does not supply `A3_PRECISION_PLACEMENT_RETAINED`" in a3_no_double_count)
     audit.check("source decision keeps A3 downstream", "does not place the `256.082435...` precision" in source_decision)
     audit.check("exact-source no-go keeps exact source unsupplied", "EXACT_SOURCE_SINGLETON_RETAINED" in exact_source_no_go and "current retained, primitive, and open-PR surfaces do not supply" in exact_source_no_go)
     audit.check("weak-front no-go keeps front unsupplied", "WEAK_FRONT_BASE_RETAINED" in weak_front_no_go and "current retained, primitive, and open-PR surfaces do not supply" in weak_front_no_go)

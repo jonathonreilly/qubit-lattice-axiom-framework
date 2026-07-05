@@ -159,6 +159,14 @@ P2 in weak-front matching, P3 in Koide/electron readout, and P4 in a direct
 noninteger-divisor theorem. The decision therefore requires one placement, or
 an explicit later composition law.
 
+The A3 no-double-count composition decision packet
+`ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_NO_DOUBLE_COUNT_COMPOSITION_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+now packages that explicit composition-law branch as a separate ten-input
+handoff. If accepted, it can conditionally supply `NO_SOURCE_DOUBLE_COUNT` and
+`NO_SOURCE_A3_DOUBLE_COUNT`, but it does not select P1/P2/P3/P4, does not
+supply `PLACEMENT_THEOREM_RETAINED`, does not ratify
+`A3_PRECISION_PLACEMENT_RETAINED`, and does not derive `C_A3` or `N_A3`.
+
 ## Current Open PR Alignment
 
 Open PRs were refreshed live on 2026-07-04 before this packet was written.
@@ -183,6 +191,7 @@ Merge-state labels are moving review metadata, not proof inputs here.
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_INTERFACE_RATIFICATION_DECISION_PACKET_2026-07-04.md` | packages the F/L/P/R source-side decision that can conditionally yield exact `S_l = 1/256` | does not place A3 precision |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_PRECISION_CORRECTION_FIREWALL_2026-07-04.md` | quantifies `N_A3`, `C_A3`, and correction scale | does not derive a correction theorem |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_CORRECTION_PLACEMENT_DISCRIMINATOR_2026-07-04.md` | separates P1/P2/P3/P4/P5 placement classes | does not ratify a placement |
+| `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_NO_DOUBLE_COUNT_COMPOSITION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | conditional single-spend law for the A3 correction | no selected placement theorem or correction value |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for retained A3 placement | no `A3_PRECISION_PLACEMENT_RETAINED` on current retained, primitive, or open-PR surfaces |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P1_SOURCE_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface audit for P1 source-readout correction | no corrected-source theorem or retained P1 placement on current surfaces |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface audit for P2 weak-front matching | no charged-lepton matching theorem or retained P2 placement on current surfaces |

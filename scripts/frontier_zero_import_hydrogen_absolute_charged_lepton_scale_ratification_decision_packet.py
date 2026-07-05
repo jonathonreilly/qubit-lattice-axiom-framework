@@ -26,6 +26,7 @@ SOURCE_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_
 EXACT_SOURCE_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 A3_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 A3_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+A3_NO_DOUBLE_COUNT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_NO_DOUBLE_COUNT_COMPOSITION_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 A3_P2 = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_WEAK_FRONT_THRESHOLD_TARGET_DISCRIMINATOR_2026-07-04.md"
 P1_SOURCE_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P1_SOURCE_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 P2_FRONT_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_CURRENT_SURFACE_NO_GO_2026-07-05.md"
@@ -144,6 +145,7 @@ def main() -> None:
         EXACT_SOURCE_NO_GO,
         A3_DECISION,
         A3_NO_GO,
+        A3_NO_DOUBLE_COUNT,
         A3_P2,
         P1_SOURCE_NO_GO,
         P2_FRONT_NO_GO,
@@ -200,6 +202,10 @@ def main() -> None:
         "A3_PRECISION_PLACEMENT_RETAINED",
         "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "A3 placement as an unsupplied upstream input",
+        "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_NO_DOUBLE_COUNT_COMPOSITION_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "NO_SOURCE_A3_DOUBLE_COUNT",
+        "NO_SOURCE_DOUBLE_COUNT",
+        "single-spend control",
         "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P1_SOURCE_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "P1_SOURCE_READOUT_CORRECTION_RETAINED",
         "CORRECTED_SOURCE_READOUT_THEOREM_RETAINED",
@@ -291,6 +297,7 @@ def main() -> None:
     exact_source_no_go = read(EXACT_SOURCE_NO_GO)
     a3_decision = read(A3_DECISION)
     a3_no_go = read(A3_NO_GO)
+    a3_no_double_count = read(A3_NO_DOUBLE_COUNT)
     a3_p2 = read(A3_P2)
     p1_source_no_go = read(P1_SOURCE_NO_GO)
     p3_koide_no_go = read(P3_KOIDE_NO_GO)
@@ -332,6 +339,8 @@ def main() -> None:
     audit.check("A3 decision remains placement only", "A3_PRECISION_PLACEMENT_RETAINED" in a3_decision and "does not by itself derive `C_A3`" in a3_decision)
     audit.check("K4 packet references A3 no-go", A3_NO_GO.name in note and "A3 placement as an unsupplied upstream input" in note_flat)
     audit.check("A3 no-go keeps placement unsupplied", "current retained, primitive, and open-PR surfaces do not supply" in a3_no_go and "A3_PRECISION_PLACEMENT_RETAINED" in a3_no_go)
+    audit.check("K4 packet references no-double-count packet", A3_NO_DOUBLE_COUNT.name in note)
+    audit.check("no-double-count packet stays below A3 placement", "NO_SOURCE_A3_DOUBLE_COUNT" in a3_no_double_count and "does not supply `A3_PRECISION_PLACEMENT_RETAINED`" in a3_no_double_count)
     audit.check("A3 P1 source-readout correction remains open", "P1_SOURCE_READOUT_CORRECTION_RETAINED" in p1_source_no_go and "CORRECTED_SOURCE_READOUT_THEOREM_RETAINED" in p1_source_no_go)
     audit.check("A3 P2 target names weak-front matching", "F_phys = C_A3 * g_2 * (1/sqrt(2))" in a3_p2 and "does not derive" in a3_p2)
     audit.check("A3 P3 Koide/electron readout correction remains open", "P3_KOIDE_ELECTRON_READOUT_CORRECTION_RETAINED" in p3_koide_no_go and "KOIDE_ELECTRON_A3_CORRECTION_THEOREM_RETAINED" in p3_koide_no_go)

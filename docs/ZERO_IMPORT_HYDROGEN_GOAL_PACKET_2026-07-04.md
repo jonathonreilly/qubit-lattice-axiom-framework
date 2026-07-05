@@ -1272,6 +1272,7 @@ here.
 						| `#5015` wave-collapse-block01 measurement-collapse gate | Open. It maps measurement-collapse gate context; it does not supply charged-lepton F/L/P/R, Koide electron readout, `S_l`, full charged-lepton mass spectrum, R-Lep thresholds, `m_e`, `alpha(0)`, static-source NR Coulomb closure, or hydrogen. |
 						| `#5016` zero-import hydrogen retained lane bundle | Open. It carries the hydrogen lane packet work, including weak-front and D17 handoff updates; it is the active packaging PR, not landed authority. |
 						| `#5017` domain-wall edge anomaly inflow via spectral flow | Open. It is chirality/anomaly-inflow science; it does not supply charged-lepton F/L/P/R, D17 weak-front normalization, Koide electron readout, `S_l`, `m_e`, `alpha(0)`, static-source NR Coulomb closure, or hydrogen. |
+						| `#5018` domain-wall edge content vs SM chiral fermions map | Open. It is chirality/domain-wall edge-content science; it does not supply charged-lepton F/L/P/R, D17 weak-front normalization, Koide electron readout, `S_l`, `m_e`, `alpha(0)`, static-source NR Coulomb closure, or hydrogen. |
 		| `#4919`, `#4921` admissibility bootstrap continuation | Formation/orbit/chirality context; no direct closure of `m_e`, `S_l`, Koide readout, or `alpha(0)`. |
 
 ## Non-Claims

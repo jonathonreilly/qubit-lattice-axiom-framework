@@ -148,6 +148,7 @@ review metadata and not a proof input.
 
 | PR | state at refresh | effect on this SU2 context packet |
 |---|---:|---|
+| `#5018` domain-wall edge content vs SM chiral fermions map | open | chirality/domain-wall edge-content work; no charged-lepton SU2 weak-context handoff |
 | `#5017` domain-wall edge anomaly inflow via spectral flow | open | chirality/anomaly-inflow work; no charged-lepton SU2 weak-context handoff |
 | `#5016` zero-import hydrogen retained lane bundle | open | this hydrogen PR carries the SU2 context handoff update |
 | `#5015` wave-collapse-block01 measurement-collapse gate | open draft | measurement-collapse context; no weak-front SU2 context closure |
@@ -260,6 +261,7 @@ background.
 | lepton-scale frontier probe | factorization into weak, D17, and source factors | weak-factor placement | yes as target |
 | D17 block-normalization packet | separate `1/sqrt(2)` factor | boundary only | yes as separation |
 | weak-front-base packet | consumes `SU2_WEAK_COUPLING_CONTEXT_RETAINED` | downstream consumer | yes |
+| open PR `#5018` chirality/domain-wall edge-content map | chirality/domain-wall residual | SU2 weak-coupling context | no; queue context only |
 | open PR `#5017` chirality/anomaly inflow | chirality/domain-wall residual | SU2 weak-coupling context | no; queue context only |
 
 Non-matching surfaces are not used as SU2-context closure evidence.

@@ -204,6 +204,7 @@ def main() -> None:
         "a3_correction_primitive",
         "charged_lepton_scale_primitive",
         "electron_mass_primitive",
+        "`#5018` domain-wall edge content vs SM chiral fermions map | open",
         "`#5017` domain-wall edge anomaly inflow via spectral flow | open",
         "`#5016` zero-import hydrogen retained lane bundle | open",
         "`#5015` wave-collapse-block01 measurement-collapse gate | open draft",
@@ -337,6 +338,7 @@ def main() -> None:
 
     section("Open PR and non-claim boundaries")
     latest_pr_markers = [
+        "`#5018` domain-wall edge content vs SM chiral fermions map | open",
         "`#5017` domain-wall edge anomaly inflow via spectral flow | open",
         "`#5016` zero-import hydrogen retained lane bundle | open",
         "`#5015` wave-collapse-block01 measurement-collapse gate | open draft",

@@ -189,6 +189,7 @@ def main() -> None:
         "CL3 even-subalgebra support",
         "structural beta support",
         "physical value held separate",
+        "`#5018` domain-wall edge content vs SM chiral fermions map | open",
         "`#5017` domain-wall edge anomaly inflow via spectral flow | open",
         "`#5016` zero-import hydrogen retained lane bundle | open",
         "`#5015` wave-collapse-block01 measurement-collapse gate | open draft",

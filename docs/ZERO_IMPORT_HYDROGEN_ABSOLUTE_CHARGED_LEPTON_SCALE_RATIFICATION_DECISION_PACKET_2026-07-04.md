@@ -221,6 +221,7 @@ clean/green/check state is review metadata and not a proof input.
 
 | PR | state at refresh | effect on this K4 decision packet |
 |---|---:|---|
+| `#5018` domain-wall edge content vs SM chiral fermions map | open | chirality/domain-wall edge-content work; no charged-lepton scale assembly |
 | `#5017` domain-wall edge anomaly inflow via spectral flow | open | chirality/anomaly-inflow work; no charged-lepton scale assembly |
 | `#5016` zero-import hydrogen retained lane bundle | open | carries this K4 and D17 handoff work |
 | `#5015` wave-collapse-block01 measurement-collapse gate | open draft | measurement-collapse context; no K4 scale assembly |

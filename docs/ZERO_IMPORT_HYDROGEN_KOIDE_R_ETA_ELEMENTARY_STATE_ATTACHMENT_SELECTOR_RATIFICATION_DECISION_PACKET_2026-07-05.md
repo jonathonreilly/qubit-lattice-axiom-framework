@@ -71,6 +71,9 @@ theorem, or the parent bridge.
 |---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md` | names the selector target; no retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the selector |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for the field-index privilege principle |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | child owner/audit decision shape for the privilege principle |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the privilege principle |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | parent elementary route target that can consume this selector if retained |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md` | parent bridge target, not this selector consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | sibling KS route target, excluded as input here |
@@ -129,11 +132,13 @@ or that the physical matter-state bridge cannot close.
 
 ### N6 - Partial-Closure Path Scan
 
-The partial closures are explicit: a retained field-index spin-lift privilege
-principle can close the missing physics input; owner/audit acceptance can then
-promote the handle. A sibling KS theorem remains a separate route to the
-parent bridge. A future primitive route would require owner-governed registry
-review because no such primitive is registered now.
+The partial closures are explicit: the field-index spin-lift privilege
+principle is now packaged by
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_TARGET_DISCRIMINATOR_2026-07-05.md`;
+if retained, it can close the missing physics input. Owner/audit acceptance
+can then promote the selector handle. A sibling KS theorem remains a separate
+route to the parent bridge. A future primitive route would require
+owner-governed registry review because no such primitive is registered now.
 
 ### N7 - Steelman
 

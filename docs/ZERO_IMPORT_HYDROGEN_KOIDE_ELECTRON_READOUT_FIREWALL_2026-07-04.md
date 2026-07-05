@@ -402,6 +402,22 @@ or hydrogen.
 This is the field-index spin-lift privilege owner/audit contract for the
 direct elementary selector lane.
 
+The R-eta field-index spin-lift privilege principle target discriminator
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_TARGET_DISCRIMINATOR_2026-07-05.md`),
+ratification decision packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RATIFICATION_DECISION_PACKET_2026-07-05.md`),
+and current-surface no-go
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
+package `FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RETAINED` as the child
+principle under the elementary selector. Current retained, primitive,
+merged-PR, and open-PR surfaces do not supply it; it can feed only the
+elementary state-attachment selector after retention and does not supply the
+selector owner/audit decision, elementary route theorem, KS route theorem,
+parent bridge, HW1, charged-lepton carrier theorem, carrier context, h-class,
+h-unit, R-eta, electron readout, physical electron mass, alpha input, or
+hydrogen. This is the owner/audit contract for privileging the faithful Pauli
+spinor lift over scalar/trivial field-index alternatives.
+
 The R-eta KS-to-physical matter-state spinor-law target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md`),
 ratification decision packet

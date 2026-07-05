@@ -113,6 +113,9 @@ lane's fixed inputs, owner ratification, and audit acceptance.
 | `QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md` | analogous action-faith boundary | rotation state-law selector |
 | `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded KS scalarization support in the sibling route | direct elementary selector |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | parent elementary route target that can consume this selector if retained | this selector itself |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for the field-index spin-lift privilege principle | retained privilege principle or owner/audit acceptance |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | child owner/audit decision shape for the privilege principle | retained privilege principle |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply of the privilege principle | selector closure |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | sibling KS route target | direct elementary selector |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md` | parent bridge target | direct elementary selector |
 
@@ -218,7 +221,7 @@ claimed.
 
 | Candidate path | Status | What it would close |
 |---|---|---|
-| retained field-index spin-lift privilege principle | open positive route isolated here | `FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RETAINED` |
+| retained field-index spin-lift privilege principle | open positive route now packaged by `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_TARGET_DISCRIMINATOR_2026-07-05.md` | `FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RETAINED` |
 | owner/audit ratification after that principle | open governance/audit route | `ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED` |
 | sibling KS-to-physical-state route | already packaged separately | can close the parent bridge without this elementary selector |
 | parent elementary state-rotation law after this selector | downstream open route | `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED` |

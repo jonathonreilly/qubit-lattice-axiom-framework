@@ -64,6 +64,11 @@ FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED
 This packet does not itself supply the reconstructed matter-mode action domain
 or the physical faithful-action selector. It only states how an eventual proof
 would be recognized without silently spending parent or sibling closures.
+The action-domain subinput is separately packaged by
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_TARGET_DISCRIMINATOR_2026-07-05.md`,
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RATIFICATION_DECISION_PACKET_2026-07-05.md`,
+and
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_CURRENT_SURFACE_NO_GO_2026-07-05.md`.
 
 ## Current Surface Alignment
 
@@ -71,6 +76,9 @@ would be recognized without silently spending parent or sibling closures.
 |---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md` | names the selector target; no retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the selector |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_TARGET_DISCRIMINATOR_2026-07-05.md` | action-domain subtarget that can feed this selector only after retention |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RATIFICATION_DECISION_PACKET_2026-07-05.md` | action-domain owner/audit contract shape, not this selector consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RETAINED` |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | parent action-law target that can consume this selector if retained |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | downstream KS child target, not this decision consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | sibling scalar-lift target, not this decision consequence |
@@ -83,6 +91,7 @@ would be recognized without silently spending parent or sibling closures.
 | `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded KS support, not selector closure |
 | `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded/conditional statistics support, not selector closure |
 | `STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md` | narrow chirality support, not selector closure |
+| merged `#5027` | custody/audit-graph repair only |
 | merged `#5023`, `#5024`, and `#5026` | adjacent Koide hygiene/custody only |
 | open `#5014`, `#5017`, and `#5018` | domain-wall/chirality support only |
 
@@ -148,11 +157,13 @@ target and requires it to be written and audited directly.
 
 ### N8 - Cross-Cycle Echo
 
-The parent action-law packet, matter-attachment reduction, and
-carrier-attachment sharpening all mark the same wall shape:
-operator/support facts do not automatically become physical state-action
-selectors. Retirement requires an explicit bridge theorem, accepted
-convention, or approved primitive update.
+The action-domain route is explicit:
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages one positive subinput. The parent action-law packet,
+matter-attachment reduction, and carrier-attachment sharpening all mark the
+same wall shape: operator/support facts do not automatically become physical
+state-action selectors. Retirement requires an explicit bridge theorem,
+accepted convention, or approved primitive update.
 
 Gate result: PASS for the narrowed decision packet. Broad KS no-go is not
 shipped.

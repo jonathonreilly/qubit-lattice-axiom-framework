@@ -14,6 +14,7 @@ NOTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ALPHA_QED_LOOP_KERNEL_TARGET_DISCRI
 QED_LOOP_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_QED_LOOP_KERNEL_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 R_LEP_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 R_LEP_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md"
+ALPHA0_ASSEMBLY = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md"
 PRIMITIVE_REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
 USABLE_VALUES = ROOT / "docs" / "publication" / "ci3_z3" / "USABLE_DERIVED_VALUES_INDEX.md"
 
@@ -90,6 +91,7 @@ def main() -> int:
     qed_loop_no_go = read(QED_LOOP_NO_GO)
     r_lep_no_go = read(R_LEP_NO_GO)
     r_lep_packet = read(R_LEP_PACKET)
+    alpha0_assembly = read(ALPHA0_ASSEMBLY)
     primitive_registry_text = read(PRIMITIVE_REGISTRY)
     primitive_registry = json.loads(primitive_registry_text)
     usable_values = read(USABLE_VALUES)
@@ -105,6 +107,7 @@ def main() -> int:
         "docs/ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "docs/ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md",
         "docs/ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "docs/ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md",
         "docs/audit/data/axiom_premise_nodes.json",
         "docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX.md",
     ]
@@ -137,6 +140,10 @@ def main() -> int:
         "ALPHA0_TRANSPORT_RETAINED",
         "RETAINED_ALPHA0_LOW_ENERGY_COULOMB",
         "support for the target, not as a current low-energy Coulomb",
+        "ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md",
+        "alpha0 transport assembly ladder review packet",
+        "compresses the direct alpha0 rows",
+        "review support only",
         "sum_f N_c(f) Q_f^2 = 8",
         "b_QED = (4/3) * 8 = 32/3",
         "T_EM_target",
@@ -240,6 +247,12 @@ def main() -> int:
         "R_LEP_THRESHOLDS_RETAINED" in r_lep_packet
         and "does not by itself supply" in r_lep_packet,
         "R-Lep packet is conditional support only",
+        failures,
+    )
+    require(
+        NOTE.name in alpha0_assembly
+        and "No derivation or ratification of `ALPHA0_RETAINED`." in alpha0_assembly,
+        "alpha0 assembly references target and remains support only",
         failures,
     )
 

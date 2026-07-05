@@ -1298,6 +1298,15 @@ records that current retained, primitive, and open-PR surfaces do not supply
 `R_Q_HEAVY_THRESHOLDS_RETAINED`, `R_HAD_NP_RETAINED`, and
 `SCHEME_DECOUPLING_MATCHING_RETAINED`; retained `alpha_EM(M_Z)` and
 structural `b_QED = 32/3` remain support, not low-energy `alpha(0)`.
+The alpha0 transport assembly ladder review packet
+`ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+is review compression only. It groups the direct Lane 2 alpha0 rows under the
+parent contract: retained high-scale alpha, QED loop kernel, R-Lep thresholds,
+R-Q-Heavy thresholds, R-Had-NP substrate, scheme/decoupling matching,
+comparator exclusion, owner, and audit. It does not supply `ALPHA0_TRANSPORT_RETAINED`,
+`ALPHA0_RETAINED`,
+`RETAINED_ALPHA0_LOW_ENERGY_COULOMB`, physical electron mass, static-source
+Rydberg closure, or hydrogen.
 
 ### H4. Retained status
 

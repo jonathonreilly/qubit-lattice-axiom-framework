@@ -108,6 +108,7 @@ derive `T_EM`, `Delta_match`, hadronic `R(s)`, or `alpha(0)`.
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_ALPHA_QED_LOOP_KERNEL_TARGET_DISCRIMINATOR_2026-07-04.md` | alpha transport target inputs and finite target arithmetic | retained alpha0 transport |
 | `ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_RATIFICATION_DECISION_PACKET_2026-07-04.md` | eleven-input owner/audit handoff | current retained consequence |
+| `ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md` | review compression for the direct alpha0 transport rows | no retained alpha0 transport or low-energy Coulomb coupling |
 | `ZERO_IMPORT_HYDROGEN_QED_LOOP_KERNEL_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for the QED loop kernel | `QED_LOOP_KERNEL_RETAINED` |
 | `ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for charged-lepton thresholds | `R_LEP_THRESHOLDS_RETAINED` |
 | `ATOMIC_LANE2_QED_RUNNING_DEPENDENCY_FIREWALL_NOTE_2026-04-30.md` | R-Lep/R-Q-Heavy/R-Had-NP split | retained threshold package |
@@ -141,6 +142,13 @@ The R-Lep thresholds ratification decision packet
 packages the parent R-Lep route for `R_LEP_THRESHOLDS_RETAINED` and
 `T_LEP_THRESHOLD_MOMENT_RETAINED`; it does not by itself supply the remaining
 alpha0 inputs or the current alpha0 retained consequence.
+
+The alpha0 transport assembly ladder review packet
+`ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+does not change this current-surface result. It compresses the direct Lane 2
+rows into one review surface, but current retained, primitive, and open-PR
+surfaces still do not supply `ALPHA0_TRANSPORT_RETAINED`,
+`ALPHA0_RETAINED`, or `RETAINED_ALPHA0_LOW_ENERGY_COULOMB`.
 
 ## Open PR Alignment
 

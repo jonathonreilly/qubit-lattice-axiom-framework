@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 192 |
-| **retained_bounded** | 866 |
+| **retained_bounded** | 867 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1932 |
+| unaudited | 1931 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1242 |
+| `audited_clean` | 1243 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2270 |
+| `unaudited` | 2269 |
 
 | claim_type | count |
 |---|---:|
@@ -722,6 +722,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_cyclic_return_candidate_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_selector_bridge_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9866,6 +9867,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using r0 = u + v + w, r1 = 2u - v - w, and r2 = sqrt(3)(v - w), the note asserts 2 r0^2 - r1^2 - r2^2 = 2 [4(uv + uw + vw) - (u^2 + v^2 + w^2)].  _(class `A`)_
 - **chain closes:** True — The polynomial pullback and the equivalence to the standard sqrt(m) Koide form follow by direct algebra from the displayed map. The physical derivation of the Gamma orbit slots, the value law for (u,v,w), and the dynamical reason for the selector are explicitly outside this audited scope.
 - **rationale:** The load-bearing result is an exact algebraic identity, and the runner verifies the same symbolic expansion plus the algebraic equivalence to Q = 2/3. The two numeric checks only witness the usual charged-lepton Koide proximity and are not needed for theorem closure. This clean verdict covers the selector pullback under the stated map only; it does not audit or close the Gamma orbit value law or dynamical selector derivation.
+- **auditor confidence:** high
+
+### `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02`
+
+- **Note:** [`KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md`](../../docs/KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The one-qubit Cl(3,0) grade-1 real vector subspace is an algebraically compatible 3D carrier candidate for the generation triplet, with Gamma_chi realized as a proper Spin(3)-lifted pi rotation, outside only the circulant anticommuting no-go scope; no physical generation identity, r=1/2 pin, Brannen value, signed-readout transport, or mass operator is audited as closed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-audit-wave-20260705-row4-archimedes-019f32fd`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Gamma_chi=(2/3)J-I equals the proper body-diagonal pi rotation 2vv^T-I with the standard SU(2) lift U=-i(sigma_1+sigma_2+sigma_3)/sqrt(3), and explicit non-circulant Hermitian anticommuting operators sit outside only the circulant anticommuting no-go scope.  _(class `A`)_
+- **chain closes:** True — The chain closes for the bounded compatibility theorem because each load-bearing step is finite matrix algebra plus the narrow retained dependency content: Spin(3)/Pauli compatibility, circulant no-go scope, parity triplet separation, and the algebraic Q=2/3 note's open r-pin boundary. No downstream physical readout or mass-spectrum bridge is consumed.
+- **rationale:** The bounded algebra closes: Gamma_chi=(2/3)J-I equals 2vv^T-I, has eigenvalues {+1,-1,-1} and det +1, and the stated U=-i(sigma_1+sigma_2+sigma_3)/sqrt(3) is the standard SU(2) pi-rotation lift with U^2=-I. The cited Z3 no-go is used only at its literal boundary, comm(R) intersect anticomm(Gamma_chi)={0}, and the note exhibits non-circulant Hermitian anticommuting H outside that boundary without claiming a global no-go defeat. The relocation language is honest: the r=1/2/Brannen/Q=2/3 selection, physical carrier identification, vector-vs-spinor sign bridge, CPT/reality physical content, and O_h mass-operator program are explicitly left open. Residual risk is downstream citation drift: this row must be cited only as carrier compatibility, not as generation identification or Koide closure.
 - **auditor confidence:** high
 
 ### `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`

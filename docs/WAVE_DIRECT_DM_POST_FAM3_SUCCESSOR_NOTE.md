@@ -1,5 +1,7 @@
 # Wave Direct-dM Post-Fam3 Successor Note
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-12
 **Status:** precise closure diagnosis on the post-Fam3 direct-`dM` lane
 

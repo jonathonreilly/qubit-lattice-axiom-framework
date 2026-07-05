@@ -1,0 +1,108 @@
+===== runner cache v1 =====
+runner: scripts/frontier_plaquette_mc_certification_protocol_smoke_2026_06_11.py
+runner_sha256: f678a8fb1adc847c60026b09a052a73b51c8950d1b14e7b8c9f6855d2377fbfc
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 29.21
+status: ok
+----- stdout -----
+==============================================================================
+ frontier_plaquette_mc_certification_protocol_smoke_2026_06_11.py
+ Block13: MEASUREMENT-FALLBACK PROTOCOL — Stage 1: MC certification of <P>
+ at beta = 6 to 5 decimals (precision targets derived exactly; statistics
+ budget calibrated from a deterministic L=4 smoke run; decision bands
+ PRE-REGISTERED).  Stage 2 (staircase flat-cost) design-only.
+ The certification itself is NOT performed: smoke numbers calibrate the
+ budget and certify NOTHING about the value.
+ Parent note: docs/PLAQUETTE_MC_CERTIFICATION_PROTOCOL_NOTE_2026-06-11.md
+==============================================================================
+
+--- Section M1 [A]/[B]: precision-target derivation (exact arithmetic) ---
+  [PASS][A] A1 4-decimal grade: half-step 5e-5, relative 5e-5/0.5934 = 1/11868 = 8.4260e-5 (honest-status quotes 8.43e-5)  (rel=8.426020e-05)
+  [PASS][A] A2 elasticity -4 propagation: 4-decimal grade -> |d v/v| = 4 x 8.4260e-5 = 3.3704e-4 = 0.0337% (matches honest-status '+/- 0.0337 %')  (window=0.0337%)
+  [PASS][A] A3 5-decimal grade: half-step 5e-6 -> relative 8.4260e-6 -> 0.0034% on v_cand (exactly the 4-decimal window / 10)  (window=0.00337%)
+  [PASS][A] A4 5-decimal v-window 0.0034% < B2 attribution scale 0.0255% (ratio ~7.6) while 4-decimal window 0.0337% > it: only the 5-decimal grade can attribute the residual  (B2/win5=7.57)
+  [PASS][B] A5 F4 anti-tuning target literal '0.5934379' verified on disk in the honest-status note (declared input)
+  [PASS][A] A6 F4 offset = 0.5934379 - 0.5934 = +3.79e-5 < 5e-5 half-step; <P>_needed rounds to the licensed 0.5934 at 4 decimals (the licensed grid cannot encode the target)  (offset=3.790e-05)
+  [PASS][A] A7 5-decimal separation: round(0.5934379, 5) = 0.59344; 0.59344 - 0.59340 = 4e-5 = EIGHT 5-decimal half-steps -> a 5-decimal certification is decisive on F4  (separation=4.0e-05 = 8 half-steps)
+
+  Decision-grade table (M1):
+    grade      total-error    rel. on <P>   |dv/v| window   decides
+    4-decimal  < 5e-5         8.4260e-05    0.0337%         B1 license: does <P> round to 0.5934?
+    5-decimal  < 5e-6         8.4260e-06    0.00337%        F4 / residual attribution: 0.59344 vs 0.59340 (B1 vs B2)
+  [PASS][A] A8 decision-grade table consistency: 5-decimal target = 4-decimal target / 10 exactly; both windows = 4 x relative target exactly
+
+--- Section M2 [C]/[A]: statistics budget from smoke (reused finite-MC machinery; L=4, beta=6, seed declared) ---
+  [PASS][C] C1 reuse fidelity: batched SU(3) projection reproduces the imported module's project_su3 element-wise  (max dev=1.39e-16)
+  [PASS][C] C2 batched near-identity proposals are unitary and determinant-one (same proposal family as the reuse module)  (uni=9.99e-16, det=8.90e-16)
+  [PASS][C] C3 reuse fidelity: vectorized average plaquette matches the imported module's average_plaquette on an L=2 random config  (|diff|=3.69e-18)
+  [PASS][C] C4 staple identity: sum Re Tr[U_mu A_mu] = 4 x total plaquette trace sum (validates the local Delta_S used by the sweep)  (rel err=3.25e-15)
+
+  Smoke chain (declared): L=4, beta=6.0, cold start, eps=0.2, hits=2, seed=20260611, 500 therm + 2500 measurement sweeps
+  [PASS][C] C5 smoke chain ran; Metropolis acceptance inside the declared integrity band (0.30, 0.70)  (acceptance=0.490)
+  [PASS][C] C6 thermalization detected: cold-start transient (first-sweep P > mean + 10 sigma_P) was cut, and post-cut halves agree within 5x combined error  (P[1]=0.9411, halves |0.595568-0.596456|=8.88e-04 vs 7.79e-03)
+  [PASS][C] C7 tau_int windowed estimator converged: automatic window W found with W >= 5.0 tau_int(W) and W <= N/8  (tau_int=13.07 sweeps, W=66)
+
+  Smoke measurements (DIAGNOSTIC ONLY — L=4 finite volume; NOT comparable to the
+  infinite-volume 0.5934 target; certifies NOTHING about the value):
+    <P>_smoke(L=4) = 0.59601 +/- 0.00078   [fenced diagnostic]
+    sigma_P (per-config) = 0.007624
+    tau_int = 13.07 sweeps (window W=66, c=5.0)
+    t_sweep(L=4) = 9.63 ms (this machine, this implementation)
+  [PASS][C] C8 honesty fence: smoke error of mean is ABOVE the 4-decimal certification grade 5e-5 (the smoke run calibrates the budget and certifies NOTHING about the value)  (err=7.79e-04 >> 5e-5)
+  [PASS][A] C9 budget identities: N_indep = (z sigma_P/target)^2 with z = 2; N_indep(5e-6) = 100 x N_indep(5e-5) exactly; sweeps = N_indep x 2 tau_int
+
+  Certification budget (from smoke; z = 2; this implementation, single core):
+    N_indep(5e-5) = 9.299e+04; sweeps = 2.430e+06
+    N_indep(5e-6) = 9.299e+06; sweeps = 2.430e+08
+    Projected wall-clock [conservative | variance-scaled refinement]:
+      L    t_sweep      4-decimal grade            5-decimal grade
+      8        154.1 ms      104.0 h |     6.5 h       10403.4 h |     650.2 h
+      16      2465.8 ms     1664.5 h |     6.5 h      166453.7 h |     650.2 h
+      24     12483.2 ms     8426.7 h |     6.5 h      842672.0 h |     650.2 h
+      32     39453.0 ms    26632.6 h |     6.5 h     2663259.7 h |     650.2 h
+    (Finite-volume plan: certify <P>_inf by the declared ansatz <P>_L = <P>_inf + c L^-4
+     over L in {8, 12, 16, 24, 32}; see the parent note Section M3, step 6.)
+  [PASS][C] C10 per-sweep wall-clock measured and the smoke chain respected the declared < 120 s runner budget  (t_sweep=9.63 ms, chain=28.9 s)
+
+--- Section M3 [B]/[A]: protocol specification and pre-registered decision bands ---
+  [PASS][B] B1 parent note carries the pre-registration block: bands A/B-i/B-ii/C/D declared before any production run, with the explicit falsification warning
+  [PASS][A] B2 band edges ordered and exhaustive: 5e-6 < 5e-5 < 1e-4 with 1e-4 = 2 x half-step exactly; |d| <= 5e-5 (A), 5e-5 < |d| <= 1e-4 (C), |d| > 1e-4 (D) partition the axis
+  [PASS][A] B3 broken-license displacement: |d| = 1e-4 moves v_cand by 4 x 1e-4/0.5934 = 6.7408e-4 = 0.0674% = exactly 2x the B1 window (elasticity -4, linear in the deviation)  (min Band-C/D displacement=0.0674%)
+  [PASS][B] B4 finite-volume plan declared: ansatz <P>_L = <P>_inf + c L^-4 at fixed beta = 6 over L in {8, 12, 16, 24, 32} (5 points, 2 fit parameters)
+  [PASS][B] B5 plaquette-note escape clause on disk: downstream reuse of 0.5934 is licensed 'unless a separate retained MC certificate or analytic beta=6 closure is supplied' — this protocol designs exactly that certificate
+
+--- Section M4 [B] + residuals: Stage 2 staircase flat-cost measurement (design only) ---
+  [PASS][B] B6 Stage-2 target literal on disk: the action-cost note carries the flat per-rung staircase prediction Delta_S = 2.270081 (k-independent; T4 consequence 2 is what a Stage-2 measurement would contrast)
+  [PASS][B] B7 parent note fences Stage 2 as design-only pending Stage 1 (no Stage-2 computation anywhere in this block)
+  RESIDUAL (declared-open): R1: the Stage-1 certification is NOT performed here. The smoke run calibrates the statistics budget only; the pre-registered decision bands await a production run at the M3 protocol's scales.
+  RESIDUAL (declared-open): R2: Stage 2 (the per-rung flat-cost measurement: spectral flow of the staggered operator under blocking; per-threshold condensate shares) is DESIGN-ONLY, pending Stage 1; it is multi-scale and strictly harder.
+  RESIDUAL (declared-open): R3: the plaquette note's status is UNCHANGED by this block: <P> = 0.5934 remains an admitted reuse number under the B1 license until the pre-registered production run lands a retained MC certificate (or an analytic beta=6 closure is supplied).
+
+--- Terminal class-D fence: external comparators ---
+  (The canonical 0.5934 enters this runner ONLY as the licensed target of the
+   certification protocol — B1 reuse license, PLAQUETTE_SELF_CONSISTENCY_NOTE.md.
+   The smoke <P> estimate is a fenced finite-volume diagnostic, never compared
+   to it. The one PDG-derived quantity below is context only; no load-bearing
+   PASS rests on it.)
+  [PASS][D] D1 fenced context: F4 offset x elasticity = 4 x 3.79e-5/0.5934 = 2.5548e-4, the honest-status comparator-residual scale (~0.0255%) — a Band B-i landing re-attributes exactly that residual from B2 to B1  (4x offset/<P> = 0.0255%)
+  [PASS][D] D2 self-scan: the PDG VEV literal appears ZERO times in this runner's source — no comparator consumed anywhere
+
+==============================================================================
+ Breakdown: A=10 B=6 C=9 D=2 RESIDUAL=3
+ TOTAL: PASS=27 FAIL=0
+ VERDICT: established (bounded): the precision-target arithmetic is exact —
+   4-decimal grade (< 5e-5) decides the B1 license, 5-decimal grade (< 5e-6)
+   decides F4 / the B1-vs-B2 residual attribution (0.59344 vs 0.59340, eight
+   5-decimal half-steps apart); the smoke run is a calibration DIAGNOSTIC
+   (sigma_P, tau_int, t_sweep measured; budget table computed; the smoke <P>
+   is fenced and certifies nothing); the decision bands are pre-registered in
+   the parent note BEFORE any production run, keeping the F4 anti-tuning
+   certificate meaningful — and the production measurement can FALSIFY the
+   bounded match, which is its scientific value.  NOT established: any
+   certified value of <P> (Stage 1 not performed); any Stage-2 measurement
+   (design-only).  The plaquette note's B1 license is unchanged by this row.
+==============================================================================
+
+----- stderr -----
+

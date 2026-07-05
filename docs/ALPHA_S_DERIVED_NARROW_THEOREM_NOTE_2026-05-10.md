@@ -251,9 +251,11 @@ verifies symbolically (sympy `simplify` to 0) that:
    identity is the load-bearing content).
 8. Counterfactual probe: at alpha_s(v) tadpole power `0` (instead of
    2), `(P1)` fails parametrically; at tadpole power `1` for both
-   couplings, `(P1)` reduces to `alpha_bare = u_0`, which is a
-   non-identity on `(alpha_bare, u_0)`, confirming the `(1, 2)` power
-   split is load-bearing.
+   couplings, the `(P1)` difference is
+   `alpha_bare^2*(1 - u_0)/u_0^2`. Since `alpha_bare > 0`, equality
+   would force the special boundary `u_0 = 1`; away from that boundary
+   it is a non-identity on `(alpha_bare, u_0)`, confirming the `(1, 2)`
+   power split is load-bearing.
 
 ## Cross-references
 

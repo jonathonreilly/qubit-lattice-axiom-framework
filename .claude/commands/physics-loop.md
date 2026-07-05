@@ -97,7 +97,7 @@ worktree/lock conflict, or documented global queue exhaustion.
   conversion only and does not bound a row by itself. The registered
   `kinetic_isotropy_primitive` grants only structural OS0 kinetic-form isotropy
   `c_t = c_s` and does not supply dynamics, a Lorentz-closure theorem, scale,
-  spacing-ratio theorem, selector, or empirical content. Proposed primitives not
+  spacing-ratio theorem, selector, or empirical content. The registered `realized_state_primitive` grants only pointwise evaluation at a supplied law-admissible realized state; it does not supply a state, state-selection rule, measure, typicality or genericity assumption, weighting, probability rule, or any state-contingent value (quantities that vary across the law-admissible family remain registered data). Proposed primitives not
   in `docs/audit/data/axiom_premise_nodes.json` remain unapproved.
 - No Nature-grade or retained-grade proposal language without decisive artifact
   support, a passing retained-proposal certificate, review-loop backpressure,
@@ -112,3 +112,18 @@ worktree/lock conflict, or documented global queue exhaustion.
 - Push only dedicated science block branches. Do not push science work to
   `main`, merge PRs, or open PRs without enough review surface for
   `review-loop`.
+
+## Execution Mechanism (standing — 2026-06-12)
+
+All execution under this command runs through the workhorse split (see the
+`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
+line-by-line, and lands; the strongest configured text worker via `codex exec`
+executes bounded note/runner drafting, scratch computation, structured
+extraction, and panel lens execution (lenses run `-s read-only`; verdict
+synthesis is never delegated).
+No-go planning discipline applies: read the actual no-go note's primary text
+and plan against its exact audited scope, never its title or a secondary
+summary; if work reveals no-go language broader than its audited
+`claim_scope`, queue a narrowing repair PR. Where this command references
+review-loop or audit steps, those lanes are owner-operated (standing rule
+2026-06-11): prepare the PR/review surface and hand off; never run them.

@@ -23,12 +23,12 @@ On the current ledger snapshot:
 
 | Selector/dial sub-bucket | Rows |
 |---|---:|
-| `koide_or_generation_selector` | 105 |
-| `stability_or_dynamics_selector` | 94 |
-| `measure_weight_normalization` | 45 |
-| `generic_selector_rule` | 2 |
+| `koide_or_generation_selector` | 129 |
+| `stability_or_dynamics_selector` | 169 |
+| `measure_weight_normalization` | 81 |
+| `generic_selector_rule` | 4 |
 
-Total: `246` selector/dial rows.
+Total: `383` selector/dial rows.
 
 ## Meaning
 
@@ -75,8 +75,8 @@ bare_retained_allowed: false
 The runner verifies:
 
 - source anchors in the row-bucketing and evidence-ladder notes;
-- current selector/dial row count is `246`;
-- sub-bucket counts sum to `246`;
+- current selector/dial row count is `383`;
+- sub-bucket counts sum to `383`;
 - expected sub-bucket counts match the current snapshot;
 - representative rows are present in each sub-bucket;
 - audit ledger hash is unchanged after the scan;

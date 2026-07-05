@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gate_b_connectivity_tolerance.py
-runner_sha256: 27a8e19ab73cdfb67da846b1ff58634211a3dc69b9ed94ba299b7844e26c6732
+runner_sha256: bb89d656466f7d9cbb44a085f554cdfaac8587d1a1eb3905700127d4a67c0aed
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 10.71
+elapsed_sec: 4.91
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -39,6 +39,13 @@ Interpretation:
   - Once connectivity is recomputed from geometry, the gain becomes mixed.
   - The local F~M fit stays in a non-catastrophic linear-response band.
   - This is a connectivity-vs-noise audit, not a Gate B theorem.
+
+Source-boundary checks
+----------------------------------------
+[PASS] note claim type is open_gate and has 2026-06-12 source-index firewall
+[PASS] GB-S1b-b/GB-S2b/GB-S3b residues remain supplied row-local data
+[PASS] note forbids Gate B dynamics closure and axiom/admission/status changes
+BOUNDARY_CHECKS: PASS=3 FAIL=0
 
 ----- stderr -----
 

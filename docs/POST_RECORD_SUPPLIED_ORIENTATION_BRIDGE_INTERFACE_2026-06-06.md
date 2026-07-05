@@ -2,10 +2,11 @@
 
 **Date:** 2026-06-06
 **Type:** exact support / conditional dynamics interface
-**Claim type:** methodology / positive theorem
-**Status:** exact-support branch-local for supplied orientation bridge
-semantics; audit_required_before_effective_retained=true;
-bare_retained_allowed=false.
+**Claim type:** bounded_theorem
+**Status:** bounded-support interface for supplied orientation bridge semantics;
+audit_required_before_effective_retained=true; bare_retained_allowed=false.
+**Status authority:** source-side type boundary only; this packet does not apply
+or predict an audit verdict.
 **Primary runner:**
 [`scripts/frontier_post_record_supplied_orientation_bridge_interface_2026_06_06.py`](../scripts/frontier_post_record_supplied_orientation_bridge_interface_2026_06_06.py)
 **Cached log:**

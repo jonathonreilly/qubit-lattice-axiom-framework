@@ -4,6 +4,12 @@
 **Status:** theory-first bounded endpoint-law candidate for the remaining
 `E`-channel readout primitive  
 **Primary runner:** `scripts/frontier_quark_e_channel_endpoint_quotient_law.py`
+**Runner cache:** `logs/runner-cache/frontier_quark_e_channel_endpoint_quotient_law.txt`
+
+**Replay-time repair (2026-06-17).** The runner now uses the fast endpoint
+certificate replay supplied by `frontier_quark_endpoint_readout_constraints.py`
+and skips non-load-bearing refit diagnostics in its anchored-branch comparison.
+The bounded law checks and traceability checks are unchanged.
 
 ## Safe statement
 
@@ -243,6 +249,16 @@ row must either:
 
 Neither bridge is supplied by the current packet. The 2026-05-10
 companion records that the audit explicitly accepts this scope.
+
+The companion
+`QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md` closes a broader
+false repair route. It proves that any endpoint repair which is blind to the
+E-center column leaves `rho_E = beta_E/alpha_E` free, even after shell
+normalization, the two T-side endpoint candidates, channel preservation, and
+low-rational/naturality filters are granted. Therefore the quotient target
+`15/8` cannot be derived by another shell-only or T-side rationalization; a
+positive repair must add a real E-center lift or equivalent source/readout
+primitive.
 
 ## Honest endpoint
 

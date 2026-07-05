@@ -28,7 +28,7 @@ from dm_full_closure_minimal_reduced_cycle_extension_map_common import (
 )
 from dm_leptogenesis_exact_common import ETA_OBS
 
-mp.mp.dps = 80
+mp.mp.dps = 60
 
 X_F = mp.mpf(25)
 A = X_F / 4
@@ -159,7 +159,7 @@ def attractive_thermal_bounds(alpha_eff: float, terms: int = 60) -> tuple[float,
     """Exact-series lower/upper support bounds for the attractive thermal factor."""
     b = mp.pi * mp.mpf(alpha_eff)
     pref = 4 * A ** mp.mpf("1.5") / SQRT_PI
-    partial = mp.nsum(lambda n: b * exact_j1_meijerg(n * b), [0, terms - 1])
+    partial = mp.fsum(b * exact_j1_meijerg(n * b) for n in range(terms))
     upper = partial + exact_j2_meijerg(terms * b) + b * exact_j1_meijerg(terms * b)
     return float(pref * partial), float(pref * upper)
 
@@ -168,7 +168,7 @@ def repulsive_thermal_bounds(alpha_eff: float, terms: int = 600) -> tuple[float,
     """Exact-series lower/upper support bounds for the repulsive thermal factor."""
     b = mp.pi * mp.mpf(alpha_eff)
     pref = 4 * A ** mp.mpf("1.5") / SQRT_PI
-    partial = mp.nsum(lambda n: b * exact_j1_meijerg(n * b), [1, terms])
+    partial = mp.fsum(b * exact_j1_meijerg(n * b) for n in range(1, terms + 1))
     upper = partial + exact_j2_meijerg((terms + 1) * b) + b * exact_j1_meijerg((terms + 1) * b)
     return float(pref * partial), float(pref * upper)
 

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_i_s_lattice_pt_citation.py
-runner_sha256: c52615c12ea2086e99edb7bd75872ca8036afcd16b132c205f7bc6b5c0b66fb5
+runner_sha256: a16a2fec6c2dabb271c7f9f8e00b4005348b375c17490144bc054d5ae3301798
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08
@@ -16,9 +16,11 @@ Authority: docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md
 PART 0: Source-note status boundary
 ========================================================================
   [PASS] source note exists  (docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md)
-  [PASS] claim type is bounded support note
-  [PASS] type is conditional / support
+  [PASS] claim type is bounded_theorem
+  [PASS] type is conditional / arithmetic support
   [PASS] conditional citation/support boundary is present
+  [PASS] conditional arithmetic lemma boundary is present
+  [PASS] bracket is not asserted audit-closed
   [PASS] old proposed_retained status is absent
   [PASS] PR-local source proposal marker is absent
   [PASS] PR-local control field is absent
@@ -65,11 +67,11 @@ PART C: Packaged delta_PT under standard-fundamental I_S = 2
   [PASS] Packaged delta_PT ~ 1.92% (to 5e-4 absolute)  (packaged = 1.9240 %)
 
 ========================================================================
-PART D: Cited I_S range for composite-H_unit on the canonical surface
+PART D: Supplied I_S range for composite-H_unit on the canonical surface
 ========================================================================
 
   (alpha/(4 pi) convention; tadpole-improved Wilson-plaquette +
-   1-link staggered scalar density at beta ~ 6; citation range,
+   1-link staggered scalar density at beta ~ 6; supplied conditional range,
    NOT a framework-native derivation.)
 
   I_S_CITED_LOW       = 4.00
@@ -78,12 +80,12 @@ PART D: Cited I_S range for composite-H_unit on the canonical surface
 
   (Un-improved analogue, NOT retained surface:
    I_S_UNIMPROVED in [10.0, 20.0] -- documented but not used.)
-  [PASS] Cited range is ordered LOW <= CENTRAL <= HIGH  (4.0 <= 6.0 <= 10.0)
+  [PASS] Supplied range is ordered LOW <= CENTRAL <= HIGH  (4.0 <= 6.0 <= 10.0)
   [PASS] Central estimate sits inside the bracket and on the low-mid side  (central = 6.0, arithmetic midpoint = 7.00, low = 4.0)
   [PASS] Central estimate is strictly above the standard-fundamental value 2  (central = 6.0 > standard = 2.0)
-  [PASS] Cited bracket sits materially ABOVE the standard-fundamental I_S = 2  (I_S_CITED_LOW = 4.0 vs 2 * I_S_standard = 4.0)
+  [PASS] Supplied bracket sits materially ABOVE the standard-fundamental I_S = 2  (I_S_CITED_LOW = 4.0 vs 2 * I_S_standard = 4.0)
   [PASS] Tadpole-improved bracket is BELOW un-improved analogue  (TI_high = 10.0 vs unimpr_low = 10.0)
-  [PASS] Citation confidence is recorded as a range, not a single number  (range width = 6.0)
+  [PASS] Supplied-bracket confidence is recorded as a range, not a single number  (range width = 6.0)
 
 ========================================================================
 PART E: Framework-specific P1 contribution at alpha_LM = 0.0907
@@ -99,10 +101,10 @@ PART E: Framework-specific P1 contribution at alpha_LM = 0.0907
   high-mid (8)  |    0.076961  |    7.696%  |         4.000x
      high (10)  |    0.096202  |    9.620%  |         5.000x
   [PASS] P1(I_S = 2) = packaged 1.92% (sanity)  (P1(I_S=2) = 0.019240; packaged = 0.019240)
-  [PASS] P1(I_S = 4) ~ 3.85% (low end of cited range)  (P1(I_S=4) = 3.848 %)
-  [PASS] P1(I_S = 6) ~ 5.77% (central cited estimate)  (P1(I_S=6) = 5.772 %)
-  [PASS] P1(I_S = 10) ~ 9.62% (high end of cited range)  (P1(I_S=10) = 9.620 %)
-  [PASS] Full cited P1 range: [3.8%, 9.7%] (absolute bracket)  (P1 in [3.848%, 9.620%])
+  [PASS] P1(I_S = 4) ~ 3.85% (low end of supplied range)  (P1(I_S=4) = 3.848 %)
+  [PASS] P1(I_S = 6) ~ 5.77% (central supplied estimate)  (P1(I_S=6) = 5.772 %)
+  [PASS] P1(I_S = 10) ~ 9.62% (high end of supplied range)  (P1(I_S=10) = 9.620 %)
+  [PASS] Full supplied P1 range: [3.8%, 9.7%] (absolute bracket)  (P1 in [3.848%, 9.620%])
 
 ========================================================================
 PART F: Revision factor vs packaged 1.92% nominal
@@ -130,19 +132,19 @@ PART G: Scope boundary (master obstruction theorem not modified)
     P1 closed by this note                    = False
     C_A channel I_2 closed                    = False
     T_F n_f channel I_3 closed                = False
-    cited I_S is framework-native             = False
+    supplied I_S is framework-native          = False
   [PASS] Master obstruction theorem NOT modified by this note
   [PASS] Publication-surface files NOT modified by this note
-  [PASS] P1 NOT closed by this note (citation-and-bound only)
+  [PASS] P1 NOT closed by this note (conditional arithmetic only)
   [PASS] C_A channel I_2 remains OPEN (not closed by this note)
   [PASS] T_F n_f channel I_3 remains OPEN (not closed by this note)
-  [PASS] Cited I_S value explicitly NOT framework-native  (framework-native BZ integration remains the next retention level)
+  [PASS] Supplied I_S value explicitly NOT framework-native  (framework-native BZ integration remains the next retention level)
 
 ========================================================================
-SUMMARY: PASS=41  FAIL=0
+SUMMARY: PASS=43  FAIL=0
 ========================================================================
 
-Adopted I_S value (central cited estimate):
+Supplied I_S value (central conditional estimate):
   I_S  =  6.00   (range [4.0, 10.0], alpha/(4 pi) convention)
 
 Framework-specific P1 contribution at alpha_LM = 0.0907:
@@ -151,11 +153,11 @@ Framework-specific P1 contribution at alpha_LM = 0.0907:
 
 Comparison to packaged delta_PT = 1.92%:
   packaged    =  1.9240 %  (I_S_standard = 2 implicit)
-  revision    =  3.00x upward under central cited I_S
+  revision    =  3.00x upward under central supplied I_S
 
-Budget revision direction: UPWARD (cited range sits above the
-packaged standard-fundamental assumption). Master obstruction
-theorem not modified -- citation note only.
+Conditional direction: UPWARD if the supplied range is accepted
+for the exact operator/scheme. Master obstruction theorem not
+modified -- conditional arithmetic note only.
 
 ----- stderr -----
 

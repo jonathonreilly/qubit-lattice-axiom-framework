@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/grown_transfer_basin_live_packet.py
-runner_sha256: 88ad6c1863ac3f6bfa6f5e8939f2df140da43feb46d63b34a5911d384463fcdc
+runner_sha256: 3b031cb1d95c93f5ab33ef4e9dfc639844488f64018d836313e69893f0609347
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
@@ -12,9 +12,9 @@ GROWN TRANSFER BASIN LIVE PACKET
 Verifies the repaired targeted and full narrow-basin cache reads.
 
 [PASS] scripts/GROWN_TRANSFER_BASIN_TARGETED.py has a fresh ok cache
-       cache=logs/runner-cache/GROWN_TRANSFER_BASIN_TARGETED.txt, status=fresh, header={'runner_path': 'scripts/GROWN_TRANSFER_BASIN_TARGETED.py', 'runner_sha256': '19089808bd7da4858df99b4c6bb5a5cfd0065b6baf10f1cb480cf90add364bf8', 'status': 'ok', 'exit_code': '0'}
+       cache=logs/runner-cache/GROWN_TRANSFER_BASIN_TARGETED.txt, status=fresh, header={'runner_path': 'scripts/GROWN_TRANSFER_BASIN_TARGETED.py', 'runner_sha256': '8adbbc2d9e71e8c0abcda5fdf987e6adc044610831ea70554fdc12f43e48a1cb', 'status': 'ok', 'exit_code': '0'}
 [PASS] scripts/GROWN_TRANSFER_BASIN_SWEEP.py has a fresh ok cache
-       cache=logs/runner-cache/GROWN_TRANSFER_BASIN_SWEEP.txt, status=fresh, header={'runner_path': 'scripts/GROWN_TRANSFER_BASIN_SWEEP.py', 'runner_sha256': 'c8c447b894b22513804ed4e48c793f3d94d89ca02e00894aaa864a1a1af50ade', 'status': 'ok', 'exit_code': '0'}
+       cache=logs/runner-cache/GROWN_TRANSFER_BASIN_SWEEP.txt, status=fresh, header={'runner_path': 'scripts/GROWN_TRANSFER_BASIN_SWEEP.py', 'runner_sha256': '7749f84dbf097c85afca8dc8c25868d38bfb6288fc3b4825f87f49f245ae314f', 'status': 'ok', 'exit_code': '0'}
 [PASS] targeted checker reports same-row survival on all four declared rows
 [PASS] full 3x3 sweep reports signed, complex, and same-row survival on all rows
 [PASS] repair note documents the predicate mismatch and current packet

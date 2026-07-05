@@ -194,6 +194,21 @@ check(
     and ("worth " + "testing") not in note,
     "source surface matches repaired route boundary",
 )
+compact_note = " ".join(note.replace("`", "").replace("*", "").split())
+check(
+    "source_note_has_downstream_use_firewall",
+    "2026-06-13 downstream-use firewall" in compact_note
+    and "may not be cited as a derivation of κ_EW = 0" in compact_note
+    and "Any downstream positive use must supply a separate" in compact_note,
+    "route demotion cannot be reused as a selector theorem",
+)
+check(
+    "source_note_lists_forbidden_positive_reuses",
+    "κ_EW = 0 follows from register-not-read" in compact_note
+    and "R_conn = 8/9 is physically selected" in compact_note
+    and "this row closes the wider κ_EW gate" in compact_note,
+    "downstream citation firewall names the unsafe reuses",
+)
 
 print()
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

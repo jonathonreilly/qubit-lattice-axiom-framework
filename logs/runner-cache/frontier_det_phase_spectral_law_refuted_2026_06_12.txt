@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_det_phase_spectral_law_refuted_2026_06_12.py
+runner_sha256: 4db83b65b012f55b1088286d0444224797dd47814574383d10bde87aa2bbeafa
+timeout_sec: 3000
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+SCOPE: deterministic baseline phase spectral anatomy at L=3; exact single-particle route; tau=0.35 aliases a gap by k(DeltaE)=round(T*((DeltaE*tau/2pi) mod 1)) mod T; direct gap bins=[0, 43, 213]; generated predicted bins count=7; frequencies are dispersion data, amplitudes are realized-state data; free sector only for this period.
+PASS: finite lattice has 3 sites, 3 colors, and 9 modes :: N_MODES=9
+PASS: ring indexing wraps across the finite lattice boundary :: forward=0 backward=2
+PASS: free single-particle Hamiltonian is the periodic nearest-neighbor ring :: hermitian=True nnz=18 wrap=True
+PASS: order-3 sparse gap-sum set has exactly 7 of 256 bins :: size=7
+PASS: gcd-vacuity control: the rejected gcd construction would cover all 256 bins (vacuous) -- rejected in favor of the sparse order-3 set :: gcd_cover=256
+PASS: order-3 state-independent spectral law is refuted: the gap-sum set (7 of 256 bins) captures under half the power at the worst state (min 0.33), with state-dependent capture spanning to 0.85 -- no few-frequency law holds at every state; the capture spread is the datum :: min_fraction=0.331017 max_fraction=0.854150 predicted_bins=7
+PASS: full finite-window DFT support at the stated power floor for every tested state (a leakage statement under the binning convention -- gaps sit off-grid, e.g. bin 42.78 -> 43; not exact spectral support) :: support_sizes=256,256,256,256,256
+PASS: at least one predicted-bin amplitude differs by more than 10 percent :: max_relative_difference=0.9988349630226561
+PASS: polar blocks stay above the singular-value rank floor :: min_sv=0.01104016888029342 floor=1e-08
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

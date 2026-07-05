@@ -1,18 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.py
-runner_sha256: 3065cec2175549ac9e568539a90f3641b13ab55579dec9fc230c154b05427402
+runner_sha256: 46db7e0816c88ad0dd4589ff85394b56e513597055f89f493fffd80d0e053365
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.61
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
-Record pre-record instrument kernel gate
-actual_current_surface_status: bounded-support
-trace_class: upstream_support
-reachability_to_target: supports
-conditional_surface_status: exact finite algebra under cited retained-bounded projective readout authorities and a supplied readout context
-proposal_allowed: true_for_bounded_support_only
-audit_required_before_effective_retained: true
+Record pre-record supplied-context instrument kernel gate
+source boundary: bounded finite algebra under cited projective readout authorities and a supplied readout context
+status authority: independent audit lane only
 
 A. cited authority anchors and supplied readout context
 [PASS] Minimal Axioms supply Quantum one-site M2(C)
@@ -21,6 +17,11 @@ A. cited authority anchors and supplied readout context
 [PASS] retained-bounded LSP authority states canonical K_r = P_r
 [PASS] retained-bounded Lueders bridge states trace-normalized branch
 [PASS] readout context remains supplied, not selected by Record
+[PASS] source note has no-retained-production-kernel audit firewall
+[PASS] source note has supplied-context-only audit boundary
+[PASS] source note says no further repair is needed only for supplied-context finite algebra
+[PASS] source note leaves readout/probability/rate bridges outside Record
+[PASS] source note blocks downstream over-citation as generator/readout authority
 
 B. one-qubit state and projective instruments
 [PASS] rho has trace one -- rho=Matrix([[2/3, sqrt(2)/3], [sqrt(2)/3, 1/3]])
@@ -59,7 +60,7 @@ F. boundary firewalls
 [PASS] no clock/rate unit is selected
 [PASS] no generation or Koide dial value is selected
 
-SCORECARD: PASS=33 FAIL=0
+SCORECARD: PASS=38 FAIL=0
 VERDICT: bounded support for the pre-record instrument kernel gate. With cited retained-bounded projective instrument/trace authority and a supplied readout context, a qubit state gives probabilities over possible future record atoms; the written post-record atom is realized information, not the probability vector.
 
 ----- stderr -----

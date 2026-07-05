@@ -1,0 +1,135 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py
+runner_sha256: 6f39a75787114288a6190793ce607a5d40dfbb6a13571693c2ad5c7d44de13ef
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+========================================================================
+YT P1 I_S restricted-packet re-audit bridge verifier
+========================================================================
+Claim boundary: bounded support / audit-readiness only.
+No audit verdict is changed by this runner.
+
+========================================================================
+BLOCK 1: restricted-packet source/cache presence
+========================================================================
+  [PASS] docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md exists  (present)
+  [PASS] docs/YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md exists  (present)
+  [PASS] docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md exists  (present)
+  [PASS] docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md exists  (present)
+  [PASS] docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md exists  (present)
+  [PASS] docs/YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md exists  (present)
+  [PASS] scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py exists  (present)
+  [PASS] scripts/frontier_yt_p1_color_factor_retention.py exists  (present)
+  [PASS] scripts/frontier_yt_p1_i_s_lattice_pt_citation.py exists  (present)
+  [PASS] scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py exists  (present)
+  [PASS] logs/retained/yt_p1_i1_lattice_pt_symbolic_2026-04-17.log exists  (present)
+  [PASS] logs/runner-cache/frontier_yt_p1_color_factor_retention.txt exists  (present)
+  [PASS] logs/runner-cache/frontier_yt_p1_i_s_lattice_pt_citation.txt exists  (present)
+  [PASS] logs/runner-cache/frontier_yt_p1_bz_quadrature_full_staggered_pt.txt exists  (present)
+
+========================================================================
+BLOCK 2: source-note status boundary
+========================================================================
+  [PASS] re-audit bridge section present
+  [PASS] restricted packet table present
+  [PASS] native BZ candidate section present
+  [PASS] independent audit firewall present
+  [PASS] no audit verdict update claimed
+  [PASS] native path does not use supplied bracket as load-bearing
+  [PASS] upper end not proved
+  [PASS] native candidate replacement gate explicit
+  [PASS] master theorem not modified
+  [PASS] old proposed-retained marker absent from citation note
+  [PASS] citation note remains bounded theorem
+  [PASS] citation note keeps legacy conditional arithmetic
+  [PASS] citation note names native arithmetic bridge
+  [PASS] citation note links native BZ row as markdown dependency
+  [PASS] citation note links canonical alpha certificate
+  [PASS] citation note links parent plaquette surface
+
+========================================================================
+BLOCK 3: prior symbolic reduction and color authority
+========================================================================
+  [PASS] symbolic log records 21 PASS / 0 FAIL
+  [PASS] symbolic log states I_1 = I_S - I_V
+  [PASS] symbolic log states I_V = 0
+  [PASS] symbolic log states I_1 = I_S
+  [PASS] color cache records 5 PASS / 0 FAIL
+  [PASS] color cache states C_F = 4/3
+  [PASS] color cache states C_A = 3
+  [PASS] color cache states T_F * n_f = 3
+  [PASS] color cache states exact three-channel decomposition
+
+========================================================================
+BLOCK 3b: canonical alpha/plaquette value certificate
+========================================================================
+  [PASS] canonical certificate exists
+  [PASS] canonical certificate is bounded theorem
+  [PASS] canonical certificate says no new axiom
+  [PASS] canonical certificate says parent plaquette is not derived
+  [PASS] canonical certificate links plaquette parent
+  [PASS] canonical certificate displays alpha_LM/(4pi)
+  [PASS] BZ note links canonical certificate
+  [PASS] P1 note consumes canonical certificate only after audit
+
+========================================================================
+BLOCK 4: conditional I_S bracket arithmetic
+========================================================================
+  alpha_LM/(4 pi) = 0.0072151171
+  P1(I_S=2)       = 1.9240%
+  P1(I_S=4)       = 3.8481%
+  P1(I_S=6)       = 5.7721%
+  P1(I_S=10)      = 9.6202%
+  [PASS] citation cache records clean execution
+  [PASS] citation cache records at least 41 PASS / 0 FAIL  (summary=(43, 0))
+  [PASS] note records supplied bracket I_S in [4, 10]
+  [PASS] low endpoint maps to about 3.85%
+  [PASS] central maps to about 5.77%
+  [PASS] high endpoint maps to about 9.62%
+  [PASS] central/standard revision factor is exactly 3
+
+========================================================================
+BLOCK 5: native full-staggered BZ candidate
+========================================================================
+  I_v_scalar candidate       = 3.902000
+  5% systematic scalar band  = [3.706900, 4.097100]
+  P1 native candidate        = 3.7538%
+  P1 native 5% band          = [3.5661%, 3.9415%]
+  Delta_R full staggered-PT  = -3.769%
+  [PASS] BZ cache records clean execution
+  [PASS] BZ cache records PASS=45 FAIL=0
+  [PASS] BZ cache gives I_v_scalar near 3.902
+  [PASS] 5% scalar systematic overlaps I_S = 4
+  [PASS] native P1 candidate equals framework-native arithmetic bridge
+  [PASS] native P1 systematic band recorded
+  [PASS] BZ cache gives negative Delta_R three-channel assembly
+  [PASS] note records native lower-end candidate
+  [PASS] note records native P1 central value
+  [PASS] note records native P1 systematic band
+  [PASS] note says native candidate removes bracket import for native path
+
+========================================================================
+BLOCK 6: audit/status firewall
+========================================================================
+  [PASS] citation note says legacy bracket is not retained by default
+  [PASS] citation note keeps master obstruction unchanged
+  [PASS] new bridge calls BZ surface a native candidate
+  [PASS] new bridge requires separate BZ audit
+  [PASS] new bridge does not treat literature bracket as native authority
+  [PASS] bridge keeps BZ candidate under separate audit
+  [PASS] this runner does not edit audit ledger  (source/cache verifier only)
+
+========================================================================
+SUMMARY: PASS=72  FAIL=0
+========================================================================
+
+RESULT:
+  Restricted-packet re-audit bridge is complete iff FAIL=0.
+  This supports re-audit of the missing dependency edge only;
+  it does not promote the row or replace independent audit.
+
+----- stderr -----
+

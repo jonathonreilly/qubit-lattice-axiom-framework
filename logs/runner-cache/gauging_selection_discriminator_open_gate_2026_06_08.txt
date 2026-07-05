@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gauging_selection_discriminator_open_gate_2026_06_08.py
-runner_sha256: adf1289c56e36fcf3940eaecc0ac0b1bd6aca6f4121a8ca412dc716c7865a489
+runner_sha256: 3ef6d1c28b740b1c3ad2c8a0a0dbdd9818b21497ec2c1ca99c896cf1de133b4f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 GAUGING-SELECTION OPEN GATE: four tested discriminators are blind
@@ -25,8 +25,9 @@ dim-12 from u(6); anomaly is a one-sided filter; epsilon is blind to the couplin
 complex while spatial rotation is real. So the gauging selection (which symmetry is gauged + the
 physical-color identification MR_color + chiral su(2)_L) is NOT closed by these four -- it is an OPEN
 GATE, not a proven irreducible no-go (closing it as a no-go would need the full N1-N8 route
-enumeration with retained-authority failures, beyond these four checks). The algebra it sits on is
-itself conditional on the SUPPLIED carrier. Audit lane sets the status.
+enumeration with retained-authority failures, beyond these four checks). The factor-preserving algebra it
+sits on is itself conditional on the SUPPLIED carrier and factor-locality/MR_color premise. Audit lane
+sets the status.
 
 ----- stderr -----
 

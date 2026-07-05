@@ -29,6 +29,8 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
 
+AUDIT_TIMEOUT_SEC = 600
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cubic_coxeter_regge_ok4_fingerprint_2026_06_10.py
-runner_sha256: 52d27cb2729cc9811f00e7098fd04de933f135b822a937e8cb6d8a4681d644c8
-timeout_sec: 120
+runner_sha256: 8c72886bbafaa5303273fb7028b2cc56c1fd989bb17d6293e5a330ab9305bb42
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 48.71
+elapsed_sec: 40.05
 status: ok
 ----- stdout -----
 O(k^4) LATTICE FINGERPRINT OF THE REGGE GRAVITON SECTOR (Z^3 x Z_tau tick extension)
@@ -71,11 +71,11 @@ O(k^4) LATTICE FINGERPRINT OF THE REGGE GRAVITON SECTOR (Z^3 x Z_tau tick extens
 [PASS] F8 (B3 ENHANCEMENT -- the chain orientation does NOT imprint): in the spatial-harmonic fit alpha(n) = c0 + c1 P4 + c2 P31 + c3 P211, the S3-only (body-diagonal-chain-sensitive) harmonics are ABSENT (|c2|, |c3| < 1e-6; face+ = face-, body+ = body-): the on-shell O(k^4) fingerprint has FULL cubic (B3) symmetry although the complex's point group is only S4 x inversion
        c0 = -0.08333336, c1(P4) = -0.08333329, c2(P31) = +1.5e-08, c3(P211) = +1.8e-08; max harmonic-fit residual = 5.2e-08
 
-  wide rank-drop scan E^2/k^2 in [0.3, 2.5] (no other on-shell branch near the cone):
+  wide rank-drop scan E^2/k^2 in [0.3, 2.5] (no other on-shell branch in the three scanned directions):
     axis (1,0,0)     min sigma_6 away from the cone = 5.35e-06
     face+ (1,1,0)    min sigma_6 away from the cone = 8.37e-06
     rand3d-0         min sigma_6 away from the cone = 4.71e-06
-[PASS] F9 (NO OTHER ON-SHELL BRANCH NEAR THE CONE): the wide scan finds NO additional rank drop in E^2/k^2 in [0.3, 2.5] away from the located degenerate TT root -- in particular the continuum trace-comparator channel does NOT appear as an independent on-shell lattice branch (its continuum third on-shell null is not realized; diagnostic: the exactly-decoupled fifth branch carries an O(1) share of the on-shell trace class)
+[PASS] F9 (NO OTHER ON-SHELL BRANCH IN THE THREE SCANNED DIRECTIONS): the wide scan finds NO additional rank drop in E^2/k^2 in [0.3, 2.5] away from the located degenerate TT root along the axis, face-diagonal, and one random spatial direction -- in that scanned surface the continuum trace-comparator channel does NOT appear as an independent on-shell lattice branch (its continuum third on-shell null is not realized in the scanned directions; diagnostic: the exactly-decoupled fifth branch carries an O(1) share of the on-shell trace class)
        fifth-branch metric share at p0 = 0.58; class overlap with trace-transverse (mod gauge) = 0.59
 [PASS] F10 (PROJECTION-CONVENTION BOUNDARY, numerically pinned): the TT-block roots of the PROJECTED metric-sector form (exact line-averaged map; block diagonal at the axis by symmetry) are {-2/9, -1/9} -- split, and unequal to the physical degenerate -1/6 of the full form. At O(k^4) the projected block's on-shell content is map-convention-tagged (the complement leaks back at this order); the physical dispersion is the full-form rank drop (F6/F7)
        projected alphas = -0.222197, -0.111105 (TT off-diag/diag = 2.3e-24); full-form alpha = -1/6
@@ -107,8 +107,8 @@ i.e. an on-shell deficit -(1/12) sum_mu p_mu^4 with the tick fourth power on the
 spatial ones -- the hypercubic (sin^2-type) scalar correction law, within the kinetic-isotropy structural graining
 at O(k^4). alpha runs from -1/6 (axes) through -1/8 (face diagonals) to -1/9 (body diagonals), spread
 1/18; the chain-orientation harmonics are ABSENT (face+ = face-, body+ = body-): the fingerprint is
-B3-symmetric, more symmetric than the complex itself. No other branch exists near the cone; the
-continuum trace-channel third on-shell null is not realized as a lattice branch (the exactly-decoupled
+B3-symmetric, more symmetric than the complex itself. No other branch appears near the cone in the three scanned F9 directions;
+the continuum trace-channel third on-shell null is not realized as a lattice branch in those scanned directions (the exactly-decoupled
 fifth branch carries an O(1) share of that class). The off-shell projected C4 is not captured by the
 simple curvature-contraction basis tried (honest negative; raw table reported; its pure-tick row equals its pure-space row channel-by-channel --
 the S4 tick-space footing at O(k^4)). UNITS REMARK (units only, no dimensionless physics granted, no phenomenology or bound claim): in lattice units the correction is

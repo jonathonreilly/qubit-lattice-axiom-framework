@@ -493,8 +493,9 @@ def main() -> int:
     print()
     print("RESIDUAL (declared-open): P-KIN/P-SD kinetic-class premises "
           "(B2, B3) are declared, not derived from Lattice + Quantum alone.")
-    print("RESIDUAL (declared-open): substep-1 two-candidate surface / "
-          "U4 bridge (B1) enters as a bounded upstream input.")
+    print("CONTEXT (not theorem premise): substep-1 statistics-selection / "
+          "hard-core-boson boundary (B1) remains downstream gate context; "
+          "Lemmas 2-4 use the supplied local P-KIN/P-SD surface.")
     print("RESIDUAL (declared-open): torus holonomy / APBC signs (B4) are "
           "boundary convention data, not local phase law.")
     print()

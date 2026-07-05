@@ -35,6 +35,20 @@ blocks reuse of the stale zero-Berry claim. A future theorem must specify the ex
 inter-grade coupling, band-isolation regime, and Berry observable before making a
 positive or negative statement about an off-generation monopole route.
 
+## Downstream Source-Boundary Firewall
+
+The F3 commuting-derivative fact is only a local algebra diagnostic for the
+tested circulant `b` directions. It is not, by itself, a zero-curvature Berry
+theorem and must not be cited as a theorem about form-degree Berry
+spectators.
+
+A future positive or negative Berry theorem must separately provide the
+inter-grade coupling, band-isolation regime, Berry observable, parameter
+domain, and gauge/Wilson-loop convention. This packet only blocks reuse of
+the stale zero-Berry spectator claim and records that the corrected finite
+Wilson-loop sweep is not identically zero across the tested `kappa` and band
+choices.
+
 ## Load-Bearing Authorities
 
 [STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md](STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md)

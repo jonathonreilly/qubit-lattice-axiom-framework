@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_cl3_su3_symmetric_base_commutant_gell_mann_embedding_2026_05_27.py
-runner_sha256: 5be56bb7c77c16595f240b843aa691c2896d4f7bf547c7898e9c11e26ee88de9
+runner_sha256: dba9dfe2d2d71e7282a2888ff10be95fd04e38479c362f220b34f3f0d74a7e92
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.34
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -122,6 +122,7 @@ Part 4: 8D embedding T^a_8D = M^a_4 (x) I_2; tensor-product factorization
   [PASS (A)] (T2 8D) Tr_8[T^6_8D T^6_8D] = 1 (factor 2 from I_2 trace)  (got 1)
   [PASS (A)] (T2 8D) Tr_8[T^7_8D T^7_8D] = 1 (factor 2 from I_2 trace)  (got 1)
   [PASS (A)] (T2 8D) Tr_8[T^8_8D T^8_8D] = 1 (factor 2 from I_2 trace)  (got 1)
+  [PASS (A)] (T2 8D) Tr_8[T^a_8D T^b_8D] = delta_{ab} on all 64 pairs  (fails = 0)
 
 ----------------------------------------------------------------------------------------
 Part 5: Lie algebra closure: [T^a_8D, T^b_8D] = i f^{abc} T^c_8D
@@ -175,7 +176,7 @@ Summary
     M^a_4 = U_base^dag * diag(lambda^a/2, 0) * U_base Hermitian, traceless (sympy)
     Block structure: sym 3x3 block of M^a_4 = lambda^a/2; antisym (3,3) = 0; no mixing (sympy)
     T^a_8D = M^a_4 (x) I_2 Hermitian, traceless (sympy)
-    Tr_8[T^a_8D T^a_8D] = 1 (sympy diagonal)
+    Tr_8[T^a_8D T^b_8D] = delta_ab (64 pairs, sympy)
     Lie algebra closure [T^a_8D, T^b_8D] = i sum_c f^{abc} T^c_8D (64 pairs, numpy)
     9 known Gell-Mann structure constants f^{abc} reproduced (numpy)
     Jacobi identity on all 512 triples (numpy)
@@ -187,7 +188,7 @@ Summary
     Hypercharge bonus: [T^a_8D, Y] = 0 (numpy)
 
 ========================================================================================
-TOTAL: PASS=109, FAIL=0
+TOTAL: PASS=110, FAIL=0
 ========================================================================================
 VERDICT: narrow Gell-Mann embedding theorem (T1)-(T5) verified;
          the 8D operators T^a_8D = M_{3,sym}(lambda^a/2) (x) I_2 form an su(3)

@@ -1,0 +1,101 @@
+===== runner cache v1 =====
+runner: scripts/frontier_erosion_exact_recurrence_path_product_2026_06_12.py
+runner_sha256: 9a8ae9be43dbad33bb791f8b9f1fddc5083b992093d71c5c2e99c91a1b074e01
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.29
+status: ok
+----- stdout -----
+V3 model: pointer |+>, three |0> fragments; phase 1 has three pointer-to-fragment CNOT broadcasts each followed by M_pm; phase 2 uses M_pm on the pointer only.
+V3 threshold count uses |<Zp Zf>_c| >= 0.5.
+V3a derived branch action: w_s=(1+s eps z)/2; unnormalized (mx,my,mz)=(sqrt(1-eps^2)x/2, sqrt(1-eps^2)y/2, (z+s eps)/2); normalized x_s=x sqrt(1-eps^2)/(1+s eps z), y_s=y sqrt(1-eps^2)/(1+s eps z), z_s=(z+s eps)/(1+s eps z).
+PASS: V3a direct 2x2 Kraus algebra matches the derived single-branch Bloch action at <=1e-14
+PASS: V3a nonselective transverse components contract by exactly sqrt(1-eps^2) at <=1e-14
+V3b derived daughter map for each fragment, with pre-branch p=<Zp>, f=<Zf>, q=<Zp Zf>, c=q-pf: w_s/w=(1+s eps p)/2; p_s=(p+s eps)/(1+s eps p); f_s=(f+s eps q)/(1+s eps p); q_s=(q+s eps f)/(1+s eps p); c_s=(1-eps^2)c/(1+s eps p)^2.
+V3c eps=0.6 direct measured Rbar(t=0..10)=[1.44, 0.4607999999999999, 0.7679999999999997, 0.2457599999999999, 0.4300799999999992, 0.1376255999999999, 0.247726079999999, 0.0792723456, 0.1453326336000004, 0.04650644275200091, 0.0863691079680024]
+V3c eps=0.6 recurrence predicted Rbar(t=0..10)=[1.44, 0.4607999999999998, 0.7679999999999996, 0.2457599999999998, 0.4300799999999996, 0.1376255999999998, 0.2477260799999997, 0.07927234559999988, 0.1453326335999998, 0.04650644275199991, 0.08636910796799985]
+V3c eps=0.6 odd envelope ratios=[t1->t3:0.5333333333333332, t3->t5:0.5599999999999998, t5->t7:0.5759999999999997, t7->t9:0.5866666666666664]
+PASS: V3 finite-tree size probe eps=0.6: direct and recurrence trees have 8*2^t branches through t=10
+PASS: V3 finite-tree wraparound probe eps=0.6: branch paths stay aligned and Born weights stay normalized through t=10
+PASS: V3 threshold-count stability probe eps=0.6: no checked connected correlator lies on threshold 0.5
+PASS: V3b eps=0.6: exact phase-2 recurrence matches the direct 16-dim tree at every checked step (tol 1e-12; the eps=0.9 floor is round-off amplification from normalized-weight division on near-extinct branches; eps=0.6 holds 1e-12)
+PASS: V3c eps=0.6: recurrence-predicted Rbar(t) equals the direct measured threshold-count table at every checked step <=1e-12
+PASS: V3c eps=0.6: recurrence-predicted odd-step envelope ratios equal direct measured ratios <=1e-12
+V3c eps=0.9 direct measured Rbar(t=0..10)=[0, 0.04061249999999995, 0, 0.006430312499999988, 0, 0.001069039453124999, 0, 0.0001828057464843753, 0, 3.18386675126953e-05, 0]
+V3c eps=0.9 recurrence predicted Rbar(t=0..10)=[0, 0.04061249999999993, 0, 0.006430312499999954, 0, 0.001069039453124964, 0, 0.0001828057464843197, 0, 3.183866751278532e-05, 0]
+V3c eps=0.9 odd envelope ratios=[t1->t3:0.1583333333333325, t3->t5:0.1662499999999956, t5->t7:0.170999999999954, t7->t9:0.1741666666672117]
+PASS: V3 finite-tree size probe eps=0.9: direct and recurrence trees have 8*2^t branches through t=10
+PASS: V3 finite-tree wraparound probe eps=0.9: branch paths stay aligned and Born weights stay normalized through t=10
+PASS: V3 threshold-count stability probe eps=0.9: no checked connected correlator lies on threshold 0.5
+PASS: V3b eps=0.9: exact phase-2 recurrence matches the direct 16-dim tree at every checked step (tol 1e-08; the eps=0.9 floor is round-off amplification from normalized-weight division on near-extinct branches; eps=0.6 holds 1e-12)
+PASS: V3c eps=0.9: recurrence-predicted Rbar(t) equals the direct measured threshold-count table at every checked step <=1e-12
+PASS: V3c eps=0.9: recurrence-predicted odd-step envelope ratios equal direct measured ratios <=1e-12
+V3d branchwise product from the recurrence: along a phase-2 outcome path, c_path=c_0*prod_j[(1-eps^2)/(1+s_j eps p_{j-1})^2]. The threshold count Rbar applies the nonlinear indicator |c_path|>=threshold.
+V3d eps=0.6 crossing ledger for threshold 0.5 (10278 branch-fragment edge changes):
+  step=1 frag=1 down count=6 born_weight=0.3263999999999999 examples=[P1=++- P2=+ |c|:0.64->0.221453 w=0.0544; P1=+-+ P2=+ |c|:0.64->0.221453 w=0.0544; P1=+-- P2=- |c|:0.64->0.221453 w=0.0544]
+  step=1 frag=2 down count=6 born_weight=0.3263999999999999 examples=[P1=++- P2=+ |c|:0.64->0.221453 w=0.0544; P1=+-+ P2=+ |c|:0.64->0.221453 w=0.0544; P1=+-- P2=- |c|:0.64->0.221453 w=0.0544]
+  step=1 frag=3 down count=6 born_weight=0.3263999999999999 examples=[P1=++- P2=+ |c|:0.64->0.221453 w=0.0544; P1=+-+ P2=+ |c|:0.64->0.221453 w=0.0544; P1=+-- P2=- |c|:0.64->0.221453 w=0.0544]
+  step=2 frag=1 up count=8 born_weight=0.1023999999999999 examples=[P1=+++ P2=-- |c|:0.221453->0.64 w=0.0128; P1=++- P2=+- |c|:0.221453->0.64 w=0.0128; P1=+-+ P2=+- |c|:0.221453->0.64 w=0.0128]
+  step=2 frag=2 up count=8 born_weight=0.1023999999999999 examples=[P1=+++ P2=-- |c|:0.221453->0.64 w=0.0128; P1=++- P2=+- |c|:0.221453->0.64 w=0.0128; P1=+-+ P2=+- |c|:0.221453->0.64 w=0.0128]
+  step=2 frag=3 up count=8 born_weight=0.1023999999999999 examples=[P1=+++ P2=-- |c|:0.221453->0.64 w=0.0128; P1=++- P2=+- |c|:0.221453->0.64 w=0.0128; P1=+-+ P2=+- |c|:0.221453->0.64 w=0.0128]
+  step=3 frag=1 down count=20 born_weight=0.1740799999999998 examples=[P1=+++ P2=--+ |c|:0.64->0.221453 w=0.008704; P1=++- P2=+-+ |c|:0.64->0.221453 w=0.008704; P1=++- P2=-++ |c|:0.64->0.221453 w=0.008704]
+  step=3 frag=2 down count=20 born_weight=0.1740799999999998 examples=[P1=+++ P2=--+ |c|:0.64->0.221453 w=0.008704; P1=++- P2=+-+ |c|:0.64->0.221453 w=0.008704; P1=++- P2=-++ |c|:0.64->0.221453 w=0.008704]
+  step=3 frag=3 down count=20 born_weight=0.1740799999999998 examples=[P1=+++ P2=--+ |c|:0.64->0.221453 w=0.008704; P1=++- P2=+-+ |c|:0.64->0.221453 w=0.008704; P1=++- P2=-++ |c|:0.64->0.221453 w=0.008704]
+  step=4 frag=1 up count=30 born_weight=0.06143999999999997 examples=[P1=+++ P2=+--- |c|:0.221453->0.64 w=0.002048; P1=+++ P2=-+-- |c|:0.221453->0.64 w=0.002048; P1=+++ P2=--+- |c|:0.221453->0.64 w=0.002048]
+  step=4 frag=2 up count=30 born_weight=0.06143999999999997 examples=[P1=+++ P2=+--- |c|:0.221453->0.64 w=0.002048; P1=+++ P2=-+-- |c|:0.221453->0.64 w=0.002048; P1=+++ P2=--+- |c|:0.221453->0.64 w=0.002048]
+  step=4 frag=3 up count=30 born_weight=0.06143999999999997 examples=[P1=+++ P2=+--- |c|:0.221453->0.64 w=0.002048; P1=+++ P2=-+-- |c|:0.221453->0.64 w=0.002048; P1=+++ P2=--+- |c|:0.221453->0.64 w=0.002048]
+  step=5 frag=1 down count=70 born_weight=0.09748480000000001 examples=[P1=+++ P2=+---+ |c|:0.64->0.221453 w=0.00139264; P1=+++ P2=-+--+ |c|:0.64->0.221453 w=0.00139264; P1=+++ P2=--+-+ |c|:0.64->0.221453 w=0.00139264]
+  step=5 frag=2 down count=70 born_weight=0.09748480000000001 examples=[P1=+++ P2=+---+ |c|:0.64->0.221453 w=0.00139264; P1=+++ P2=-+--+ |c|:0.64->0.221453 w=0.00139264; P1=+++ P2=--+-+ |c|:0.64->0.221453 w=0.00139264]
+  step=5 frag=3 down count=70 born_weight=0.09748480000000001 examples=[P1=+++ P2=+---+ |c|:0.64->0.221453 w=0.00139264; P1=+++ P2=-+--+ |c|:0.64->0.221453 w=0.00139264; P1=+++ P2=--+-+ |c|:0.64->0.221453 w=0.00139264]
+  step=6 frag=1 up count=112 born_weight=0.03670015999999995 examples=[P1=+++ P2=++---- |c|:0.221453->0.64 w=0.00032768; P1=+++ P2=+-+--- |c|:0.221453->0.64 w=0.00032768; P1=+++ P2=+--+-- |c|:0.221453->0.64 w=0.00032768]
+  step=6 frag=2 up count=112 born_weight=0.03670015999999995 examples=[P1=+++ P2=++---- |c|:0.221453->0.64 w=0.00032768; P1=+++ P2=+-+--- |c|:0.221453->0.64 w=0.00032768; P1=+++ P2=+--+-- |c|:0.221453->0.64 w=0.00032768]
+  step=6 frag=3 up count=112 born_weight=0.03670015999999995 examples=[P1=+++ P2=++---- |c|:0.221453->0.64 w=0.00032768; P1=+++ P2=+-+--- |c|:0.221453->0.64 w=0.00032768; P1=+++ P2=+--+-- |c|:0.221453->0.64 w=0.00032768]
+  step=7 frag=1 down count=252 born_weight=0.05615124480000023 examples=[P1=+++ P2=++----+ |c|:0.64->0.221453 w=0.000222822; P1=+++ P2=+-+---+ |c|:0.64->0.221453 w=0.000222822; P1=+++ P2=+--+--+ |c|:0.64->0.221453 w=0.000222822]
+  step=7 frag=2 down count=252 born_weight=0.05615124480000023 examples=[P1=+++ P2=++----+ |c|:0.64->0.221453 w=0.000222822; P1=+++ P2=+-+---+ |c|:0.64->0.221453 w=0.000222822; P1=+++ P2=+--+--+ |c|:0.64->0.221453 w=0.000222822]
+  step=7 frag=3 down count=252 born_weight=0.05615124480000023 examples=[P1=+++ P2=++----+ |c|:0.64->0.221453 w=0.000222822; P1=+++ P2=+-+---+ |c|:0.64->0.221453 w=0.000222822; P1=+++ P2=+--+--+ |c|:0.64->0.221453 w=0.000222822]
+  step=8 frag=1 up count=420 born_weight=0.02202009600000009 examples=[P1=+++ P2=+++----- |c|:0.221453->0.64 w=5.24288e-05; P1=+++ P2=++-+---- |c|:0.221453->0.64 w=5.24288e-05; P1=+++ P2=++--+--- |c|:0.221453->0.64 w=5.24288e-05]
+  step=8 frag=2 up count=420 born_weight=0.02202009600000009 examples=[P1=+++ P2=+++----- |c|:0.221453->0.64 w=5.24288e-05; P1=+++ P2=++-+---- |c|:0.221453->0.64 w=5.24288e-05; P1=+++ P2=++--+--- |c|:0.221453->0.64 w=5.24288e-05]
+  step=8 frag=3 up count=420 born_weight=0.02202009600000009 examples=[P1=+++ P2=+++----- |c|:0.221453->0.64 w=5.24288e-05; P1=+++ P2=++-+---- |c|:0.221453->0.64 w=5.24288e-05; P1=+++ P2=++--+--- |c|:0.221453->0.64 w=5.24288e-05]
+  step=9 frag=1 down count=924 born_weight=0.03294206361599949 examples=[P1=+++ P2=+++-----+ |c|:0.64->0.221453 w=3.56516e-05; P1=+++ P2=++-+----+ |c|:0.64->0.221453 w=3.56516e-05; P1=+++ P2=++--+---+ |c|:0.64->0.221453 w=3.56516e-05]
+  step=9 frag=2 down count=924 born_weight=0.03294206361599949 examples=[P1=+++ P2=+++-----+ |c|:0.64->0.221453 w=3.56516e-05; P1=+++ P2=++-+----+ |c|:0.64->0.221453 w=3.56516e-05; P1=+++ P2=++--+---+ |c|:0.64->0.221453 w=3.56516e-05]
+  step=9 frag=3 down count=924 born_weight=0.03294206361599949 examples=[P1=+++ P2=+++-----+ |c|:0.64->0.221453 w=3.56516e-05; P1=+++ P2=++-+----+ |c|:0.64->0.221453 w=3.56516e-05; P1=+++ P2=++--+---+ |c|:0.64->0.221453 w=3.56516e-05]
+  step=10 frag=1 up count=1584 born_weight=0.0132875550720003 examples=[P1=+++ P2=++++------ |c|:0.221453->0.64 w=8.38861e-06; P1=+++ P2=+++-+----- |c|:0.221453->0.64 w=8.38861e-06; P1=+++ P2=+++--+---- |c|:0.221453->0.64 w=8.38861e-06]
+  step=10 frag=2 up count=1584 born_weight=0.0132875550720003 examples=[P1=+++ P2=++++------ |c|:0.221453->0.64 w=8.38861e-06; P1=+++ P2=+++-+----- |c|:0.221453->0.64 w=8.38861e-06; P1=+++ P2=+++--+---- |c|:0.221453->0.64 w=8.38861e-06]
+  step=10 frag=3 up count=1584 born_weight=0.0132875550720003 examples=[P1=+++ P2=++++------ |c|:0.221453->0.64 w=8.38861e-06; P1=+++ P2=+++-+----- |c|:0.221453->0.64 w=8.38861e-06; P1=+++ P2=+++--+---- |c|:0.221453->0.64 w=8.38861e-06]
+PASS: V3d eps=0.6: no single eps-only odd-envelope ratio fits the checked odd-step table; measured odd ratios span 0.05333333333333323 and threshold crossings locate the obstruction
+V3d eps=0.9 crossing ledger for threshold 0.5 (11448 branch-fragment edge changes):
+  step=1 frag=1 up count=6 born_weight=0.01353749999999998 examples=[P1=++- P2=- |c|:0.19->1 w=0.00225625; P1=+-+ P2=- |c|:0.19->1 w=0.00225625; P1=+-- P2=+ |c|:0.19->1 w=0.00225625]
+  step=1 frag=2 up count=6 born_weight=0.01353749999999998 examples=[P1=++- P2=- |c|:0.19->1 w=0.00225625; P1=+-+ P2=- |c|:0.19->1 w=0.00225625; P1=+-- P2=+ |c|:0.19->1 w=0.00225625]
+  step=1 frag=3 up count=6 born_weight=0.01353749999999998 examples=[P1=++- P2=- |c|:0.19->1 w=0.00225625; P1=+-+ P2=- |c|:0.19->1 w=0.00225625; P1=+-- P2=+ |c|:0.19->1 w=0.00225625]
+  step=2 frag=1 down count=12 born_weight=0.01353749999999998 examples=[P1=++- P2=-+ |c|:1->0.19 w=0.00112812; P1=++- P2=-- |c|:1->0.19 w=0.00112812; P1=+-+ P2=-+ |c|:1->0.19 w=0.00112812]
+  step=2 frag=2 down count=12 born_weight=0.01353749999999998 examples=[P1=++- P2=-+ |c|:1->0.19 w=0.00112812; P1=++- P2=-- |c|:1->0.19 w=0.00112812; P1=+-+ P2=-+ |c|:1->0.19 w=0.00112812]
+  step=2 frag=3 down count=12 born_weight=0.01353749999999998 examples=[P1=++- P2=-+ |c|:1->0.19 w=0.00112812; P1=++- P2=-- |c|:1->0.19 w=0.00112812; P1=+-+ P2=-+ |c|:1->0.19 w=0.00112812]
+  step=3 frag=1 up count=20 born_weight=0.002143437499999985 examples=[P1=+++ P2=--- |c|:0.19->1 w=0.000107172; P1=++- P2=+-- |c|:0.19->1 w=0.000107172; P1=++- P2=-+- |c|:0.19->1 w=0.000107172]
+  step=3 frag=2 up count=20 born_weight=0.002143437499999985 examples=[P1=+++ P2=--- |c|:0.19->1 w=0.000107172; P1=++- P2=+-- |c|:0.19->1 w=0.000107172; P1=++- P2=-+- |c|:0.19->1 w=0.000107172]
+  step=3 frag=3 up count=20 born_weight=0.002143437499999985 examples=[P1=+++ P2=--- |c|:0.19->1 w=0.000107172; P1=++- P2=+-- |c|:0.19->1 w=0.000107172; P1=++- P2=-+- |c|:0.19->1 w=0.000107172]
+  step=4 frag=1 down count=40 born_weight=0.002143437499999984 examples=[P1=+++ P2=---+ |c|:1->0.19 w=5.35859e-05; P1=+++ P2=---- |c|:1->0.19 w=5.35859e-05; P1=++- P2=+--+ |c|:1->0.19 w=5.35859e-05]
+  step=4 frag=2 down count=40 born_weight=0.002143437499999984 examples=[P1=+++ P2=---+ |c|:1->0.19 w=5.35859e-05; P1=+++ P2=---- |c|:1->0.19 w=5.35859e-05; P1=++- P2=+--+ |c|:1->0.19 w=5.35859e-05]
+  step=4 frag=3 down count=40 born_weight=0.002143437499999984 examples=[P1=+++ P2=---+ |c|:1->0.19 w=5.35859e-05; P1=+++ P2=---- |c|:1->0.19 w=5.35859e-05; P1=++- P2=+--+ |c|:1->0.19 w=5.35859e-05]
+  step=5 frag=1 up count=70 born_weight=0.0003563464843749881 examples=[P1=+++ P2=+---- |c|:0.19->1 w=5.09066e-06; P1=+++ P2=-+--- |c|:0.19->1 w=5.09066e-06; P1=+++ P2=--+-- |c|:0.19->1 w=5.09066e-06]
+  step=5 frag=2 up count=70 born_weight=0.0003563464843749881 examples=[P1=+++ P2=+---- |c|:0.19->1 w=5.09066e-06; P1=+++ P2=-+--- |c|:0.19->1 w=5.09066e-06; P1=+++ P2=--+-- |c|:0.19->1 w=5.09066e-06]
+  step=5 frag=3 up count=70 born_weight=0.0003563464843749881 examples=[P1=+++ P2=+---- |c|:0.19->1 w=5.09066e-06; P1=+++ P2=-+--- |c|:0.19->1 w=5.09066e-06; P1=+++ P2=--+-- |c|:0.19->1 w=5.09066e-06]
+  step=6 frag=1 down count=140 born_weight=0.0003563464843749887 examples=[P1=+++ P2=+----+ |c|:1->0.19 w=2.54533e-06; P1=+++ P2=+----- |c|:1->0.19 w=2.54533e-06; P1=+++ P2=-+---+ |c|:1->0.19 w=2.54533e-06]
+  step=6 frag=2 down count=140 born_weight=0.0003563464843749887 examples=[P1=+++ P2=+----+ |c|:1->0.19 w=2.54533e-06; P1=+++ P2=+----- |c|:1->0.19 w=2.54533e-06; P1=+++ P2=-+---+ |c|:1->0.19 w=2.54533e-06]
+  step=6 frag=3 down count=140 born_weight=0.0003563464843749887 examples=[P1=+++ P2=+----+ |c|:1->0.19 w=2.54533e-06; P1=+++ P2=+----- |c|:1->0.19 w=2.54533e-06; P1=+++ P2=-+---+ |c|:1->0.19 w=2.54533e-06]
+  step=7 frag=1 up count=252 born_weight=6.093524882810656e-05 examples=[P1=+++ P2=++----- |c|:0.19->1 w=2.41807e-07; P1=+++ P2=+-+---- |c|:0.19->1 w=2.41807e-07; P1=+++ P2=+--+--- |c|:0.19->1 w=2.41807e-07]
+  step=7 frag=2 up count=252 born_weight=6.093524882810656e-05 examples=[P1=+++ P2=++----- |c|:0.19->1 w=2.41807e-07; P1=+++ P2=+-+---- |c|:0.19->1 w=2.41807e-07; P1=+++ P2=+--+--- |c|:0.19->1 w=2.41807e-07]
+  step=7 frag=3 up count=252 born_weight=6.093524882810656e-05 examples=[P1=+++ P2=++----- |c|:0.19->1 w=2.41807e-07; P1=+++ P2=+-+---- |c|:0.19->1 w=2.41807e-07; P1=+++ P2=+--+--- |c|:0.19->1 w=2.41807e-07]
+  step=8 frag=1 down count=504 born_weight=6.093524882810666e-05 examples=[P1=+++ P2=++-----+ |c|:1->0.19 w=1.20903e-07; P1=+++ P2=++------ |c|:1->0.19 w=1.20903e-07; P1=+++ P2=+-+----+ |c|:1->0.19 w=1.20903e-07]
+  step=8 frag=2 down count=504 born_weight=6.093524882810666e-05 examples=[P1=+++ P2=++-----+ |c|:1->0.19 w=1.20903e-07; P1=+++ P2=++------ |c|:1->0.19 w=1.20903e-07; P1=+++ P2=+-+----+ |c|:1->0.19 w=1.20903e-07]
+  step=8 frag=3 down count=504 born_weight=6.093524882810666e-05 examples=[P1=+++ P2=++-----+ |c|:1->0.19 w=1.20903e-07; P1=+++ P2=++------ |c|:1->0.19 w=1.20903e-07; P1=+++ P2=+-+----+ |c|:1->0.19 w=1.20903e-07]
+  step=9 frag=1 up count=924 born_weight=1.061288917092843e-05 examples=[P1=+++ P2=+++------ |c|:0.19->1 w=1.14858e-08; P1=+++ P2=++-+----- |c|:0.19->1 w=1.14858e-08; P1=+++ P2=++--+---- |c|:0.19->1 w=1.14858e-08]
+  step=9 frag=2 up count=924 born_weight=1.061288917092843e-05 examples=[P1=+++ P2=+++------ |c|:0.19->1 w=1.14858e-08; P1=+++ P2=++-+----- |c|:0.19->1 w=1.14858e-08; P1=+++ P2=++--+---- |c|:0.19->1 w=1.14858e-08]
+  step=9 frag=3 up count=924 born_weight=1.061288917092843e-05 examples=[P1=+++ P2=+++------ |c|:0.19->1 w=1.14858e-08; P1=+++ P2=++-+----- |c|:0.19->1 w=1.14858e-08; P1=+++ P2=++--+---- |c|:0.19->1 w=1.14858e-08]
+  step=10 frag=1 down count=1848 born_weight=1.061288917092849e-05 examples=[P1=+++ P2=+++------+ |c|:1->0.19 w=5.74291e-09; P1=+++ P2=+++------- |c|:1->0.19 w=5.74291e-09; P1=+++ P2=++-+-----+ |c|:1->0.19 w=5.74291e-09]
+  step=10 frag=2 down count=1848 born_weight=1.061288917092849e-05 examples=[P1=+++ P2=+++------+ |c|:1->0.19 w=5.74291e-09; P1=+++ P2=+++------- |c|:1->0.19 w=5.74291e-09; P1=+++ P2=++-+-----+ |c|:1->0.19 w=5.74291e-09]
+  step=10 frag=3 down count=1848 born_weight=1.061288917092849e-05 examples=[P1=+++ P2=+++------+ |c|:1->0.19 w=5.74291e-09; P1=+++ P2=+++------- |c|:1->0.19 w=5.74291e-09; P1=+++ P2=++-+-----+ |c|:1->0.19 w=5.74291e-09]
+PASS: V3d eps=0.9: no single eps-only odd-envelope ratio fits the checked odd-step table; measured odd ratios span 0.01583333333387926 and threshold crossings locate the obstruction
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

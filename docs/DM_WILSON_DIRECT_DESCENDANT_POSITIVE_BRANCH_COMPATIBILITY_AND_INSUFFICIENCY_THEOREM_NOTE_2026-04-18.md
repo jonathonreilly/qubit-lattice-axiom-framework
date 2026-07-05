@@ -1,5 +1,7 @@
 # DM Wilson Direct-Descendant Positive-Branch Compatibility And Insufficiency Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-18  
 **Status:** exact theorem exhausting the "positive branch alone" selector
 direction on the live DM flagship route  

@@ -1,0 +1,82 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_e_center_blindness_no_go.py
+runner_sha256: 0411149586b764e04c2da59e03790a776a472b65f3a186af985752397c655fde
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+========================================================================
+  FRONTIER: Quark Route-2 E-Center Blindness No-Go
+========================================================================
+
+========================================================================
+PART 1: Endpoint Carrier Geometry
+========================================================================
+
+  E-shell  = (Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))
+  E-center = (Fraction(1, 1), Fraction(0, 1), Fraction(1, 6), Fraction(0, 1))
+  T-shell  = (Fraction(0, 1), Fraction(1, 1), Fraction(0, 1), Fraction(0, 1))
+  T-center = (Fraction(0, 1), Fraction(1, 1), Fraction(0, 1), Fraction(1, 6))
+  E-center lift direction = (Fraction(0, 1), Fraction(0, 1), Fraction(1, 6), Fraction(0, 1))
+  [PASS] The E-center-blind endpoint subspace has rank 3  (rank = 3)
+  [PASS] The full endpoint carrier basis has rank 4  (rank = 4)
+  [PASS] The E-center lift direction is not in the E-center-blind endpoint subspace  (adding E-center raises rank from 3 to 4)
+
+========================================================================
+PART 2: Rho_E Invariance Under E-Center-Blind Constraints
+========================================================================
+  rho_E=   -1: E-shell=(Fraction(1, 1), Fraction(0, 1)), T-shell=(Fraction(0, 1), Fraction(-2, 1)), T-center=(Fraction(0, 1), Fraction(-5, 3)), q_T=5/6, shell T/E=-2, E-center=(Fraction(5, 6), Fraction(0, 1))
+  [PASS] rho_E=-1 preserves all E-center-blind endpoint data
+  rho_E=    0: E-shell=(Fraction(1, 1), Fraction(0, 1)), T-shell=(Fraction(0, 1), Fraction(-2, 1)), T-center=(Fraction(0, 1), Fraction(-5, 3)), q_T=5/6, shell T/E=-2, E-center=(Fraction(1, 1), Fraction(0, 1))
+  [PASS] rho_E=0 preserves all E-center-blind endpoint data
+  rho_E=    1: E-shell=(Fraction(1, 1), Fraction(0, 1)), T-shell=(Fraction(0, 1), Fraction(-2, 1)), T-center=(Fraction(0, 1), Fraction(-5, 3)), q_T=5/6, shell T/E=-2, E-center=(Fraction(7, 6), Fraction(0, 1))
+  [PASS] rho_E=1 preserves all E-center-blind endpoint data
+  rho_E= 21/4: E-shell=(Fraction(1, 1), Fraction(0, 1)), T-shell=(Fraction(0, 1), Fraction(-2, 1)), T-center=(Fraction(0, 1), Fraction(-5, 3)), q_T=5/6, shell T/E=-2, E-center=(Fraction(15, 8), Fraction(0, 1))
+  [PASS] rho_E=21/4 preserves all E-center-blind endpoint data
+  [PASS] E-center values vary while all E-center-blind data are fixed  (the invisible coordinate is exactly beta_E/6)
+
+========================================================================
+PART 3: Target Equivalence
+========================================================================
+
+  rho_E target = 21/4
+  q_E target   = 15/8
+  center T/E   = -8/9
+  solved rho from center T/E = -8/9: 21/4
+  [PASS] rho_E=21/4 is exactly equivalent to q_E=15/8  (q_E=15/8)
+  [PASS] rho_E=21/4 is exactly equivalent to center T/E=-8/9 under granted T-side data  (center T/E=-8/9)
+  [PASS] Solving the center-ratio equation recovers rho_E=21/4 uniquely  (solved rho=21/4)
+
+========================================================================
+PART 4: Low-Rational And Naturality Firewall
+========================================================================
+
+  low-rational candidate count = 643
+  E-center-blind admissible count = 643
+  example admissible values:
+    rho_E=-1: q_E=5/6, center T/E=-2
+    rho_E=0: q_E=1, center T/E=-5/3
+    rho_E=1: q_E=7/6, center T/E=-10/7
+    rho_E=21/4: q_E=15/8, center T/E=-8/9
+  [PASS] The low-rational grammar contains the target but does not select it  (admissible count=643)
+  [PASS] Simple naturality choices are exact admissible alternatives but not the target
+  [PASS] No E-center-blind pairwise equality among the four endpoint images fixes rho_E  (rho_E only appears when E-center is evaluated)
+
+========================================================================
+PART 5: Summary
+========================================================================
+
+  Exact result: E-center-blind endpoint constraints leave rho_E free.
+  Therefore the Route-2 ratio-chain repair cannot derive -8/9 from
+  shell normalization, T-side endpoint data, channel preservation,
+  or low-rational/naturality filtering alone. A positive repair must
+  supply an E-center lift, source-domain rule, or equivalent readout
+  primitive that evaluates the E-center column.
+
+========================================================================
+  TOTAL: PASS=14, FAIL=0
+========================================================================
+
+----- stderr -----
+

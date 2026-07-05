@@ -17,8 +17,8 @@ The trap is conflating two distinct notions of "Higgs":
 
 This runner verifies, at exact rational precision via `fractions.Fraction`
 and with explicit linear algebra where a texture statement is load-bearing,
-that these are DIFFERENT objects and that the framework's retained / retained-
-bounded structure forces a single composite EWSB doublet for the census.
+that these are DIFFERENT objects and that, over the retained-bounded declared
+SM inventory premise, the one-doublet count gives g_* = 106.75.
 
 It does two distinct jobs:
 
@@ -27,7 +27,7 @@ It does two distinct jobs:
    doublet -> +4 dof -> g_* = 110.75. This reproduces the counterfactual of
    the PR #2223 note exactly and shows R-HIGGS is the load-bearing choice.
 
-2. **EWSB-vs-flavor distinction as executed asserts (not prose).** The
+2. **EWSB-vs-flavor distinction as executed support (not prose).** The
    flavor-sector "two-Higgs" lane is a Yukawa-texture device: two distinct
    effective Z_3 offsets on a Yukawa operator make Y non-monomial so that
    Y^dag Y is non-diagonal and PMNS can be nontrivial. This is realized with
@@ -40,8 +40,11 @@ It does two distinct jobs:
    q_H is a right-basis relabeling for Y_e Y_e^dag, hence gauge-redundant for
    PMNS. None of these add a thermalized scalar dof to the census.
 
-3. **Authority cross-checks.** Each cited framework authority file exists in
-   docs/; a forbidden-import / new-vocabulary scan over the note text.
+3. **Inventory-premise / bridge-boundary checks.** The runner checks that the
+   note consumes the retained-bounded SM declared-inventory premise, keeps the
+   H_unit -> EWSB-doublet derivation separate, and does not present D17
+   scalar-singlet uniqueness as a closed retained proof of thermal field
+   content.
 
 No lattice-action carrier, fitted comparator, or PDG observed value is a
 load-bearing input. The census values match conventional cosmology but are
@@ -51,6 +54,7 @@ assembled from framework structure here, not fitted.
 from __future__ import annotations
 
 from fractions import Fraction
+import json
 from pathlib import Path
 import re
 import sys
@@ -63,6 +67,14 @@ ROOT = Path(__file__).resolve().parent.parent
 NOTE_PATH = (
     ROOT / "docs" / "SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md"
 )
+HUNIT_NO_GO_PATH = (
+    ROOT / "docs" / "HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md"
+)
+HUNIT_ORBIT_SUPPORT_PATH = (
+    ROOT / "docs" / "SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md"
+)
+SM_DOF_PATH = ROOT / "docs" / "SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md"
+AUDIT_LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
 PASS = 0
 FAIL = 0
@@ -212,7 +224,7 @@ def section_flavor_texture() -> None:
     )
     check(
         "these 7 are Yukawa-texture parameters, NOT relativistic thermalized dof",
-        True,
+        physical == 7,
         "flavor space (couplings) vs Fock space (particle content)",
     )
 
@@ -259,19 +271,16 @@ def section_flavor_texture() -> None:
 
 
 # ---------------------------------------------------------------------------
-# Section 3: the genuine-2HDM scenario requires an independent fundamental
-# scalar -- the framework-native exclusion (D9/D16/D17, retained_bounded Ward).
+# Section 3: the retained-bounded inventory premise and native bridge boundary.
 # ---------------------------------------------------------------------------
 def section_2hdm_exclusion() -> None:
-    print("\n[3] genuine 2HDM (two thermalized doublets) requires a second field")
+    print("\n[3] retained-bounded inventory premise and native bridge boundary")
 
     # A genuine 2HDM adds an INDEPENDENT complex doublet H_d with its own VEV v_d
     # (tan beta = v_u / v_d). That second doublet carries its own 4 scalar dof and
-    # would thermalize -> 8 dof. The framework Higgs is the composite H_unit; the
-    # unique (1,1) iso-singlet scalar on Q_L has Z^2 = 6, and the alternatives
-    # (1,8),(3,1),(8,3) have Z^2 = 8, 9/2, 24 -- all distinct from 6 -- so there is
-    # no second (1,1) composite scalar (D17). We assert the Z^2 uniqueness here as
-    # the structural fact that forecloses a framework-native second doublet.
+    # would thermalize -> 8 dof. D17 supplies a unique unit-normalized
+    # scalar-singlet candidate, but does not by itself prove the thermal EWSB
+    # doublet field-content bridge.
     z2 = {"(1,1)": Fraction(6), "(1,8)": Fraction(8), "(3,1)": Fraction(9, 2), "(8,3)": Fraction(24)}
     check("D17: H_unit (1,1) scalar singlet on Q_L has Z^2 = 6", z2["(1,1)"] == 6)
     others_distinct = all(v != z2["(1,1)"] for k, v in z2.items() if k != "(1,1)")
@@ -280,19 +289,63 @@ def section_2hdm_exclusion() -> None:
         others_distinct,
         "(1,8)=8, (3,1)=9/2, (8,3)=24",
     )
-    check(
-        "genuine 2HDM needs an independent fundamental/second-composite scalar (admitted, not retained)",
-        True,
-        "absent from the bare action (D16); not framework-native",
-    )
 
-    # The census scenario count is therefore: the framework-native EWSB content is
-    # ONE composite doublet (4 dof). A second thermalized doublet would be an
-    # admitted extension; if imported, g_* = 110.75 (Section 1, scenario B).
+    text = NOTE_PATH.read_text(encoding="utf-8")
+    sm_text = SM_DOF_PATH.read_text(encoding="utf-8") if SM_DOF_PATH.exists() else ""
     check(
-        "framework-native EWSB scalar count for the census = 1 doublet (4 dof)",
-        True,
-        "outcome (a): g_* = 106.75 stands on framework-native content",
+        "note claim type is bounded_theorem over retained-bounded declared inventory",
+        "**Claim type:** bounded_theorem" in text
+        and "2026-06-16 audit-unlock repair: retained-bounded inventory premise" in text
+        and "bounded theorem under that premise" in text
+        and "already retained-bounded declared-inventory authority" in text,
+    )
+    check(
+        "SM DOF inventory note supplies the one-complex-doublet declared premise",
+        SM_DOF_PATH.exists()
+        and "complex Higgs doublet" in sm_text
+        and "4 real scalar components" in sm_text
+        and "retained-bounded declared-inventory premise" in text,
+    )
+    check(
+        "note keeps H_unit -> EWSB doublet as separate native science, not load-bearing",
+        "does **not** derive `H_unit` as one complex" in text
+        and "native bridge as a separate science problem" in text
+        and "not as the proof input for the full thermal doublet" in text,
+    )
+    check(
+        "note states g_* = 106.75 under retained-bounded declared inventory",
+        "Under the retained-bounded declared inventory" in text
+        and "`g_* = 106.75` follows" in text
+        and "`H_unit -> full thermal EWSB doublet` derivation remains a separate open bridge" in text,
+    )
+    check("H_unit representation no-go note exists", HUNIT_NO_GO_PATH.exists())
+    no_go_text = HUNIT_NO_GO_PATH.read_text(encoding="utf-8") if HUNIT_NO_GO_PATH.exists() else ""
+    check(
+        "H_unit direct full-doublet bridge is marked representation-forbidden",
+        "Hom_SU(2)(1, 2) = 0" in no_go_text
+        and "does not close R-HIGGS positively" in no_go_text
+        and "not merely missing" in text,
+    )
+    check(
+        "SM note consumes accepted inventory premise without new axiom or audit verdict",
+        "does not add a new axiom" in text
+        and "audit-status change" in text
+        and "Independent audit should re-check" in text,
+    )
+    check("H_unit supplied-doublet radial/orbit support note exists", HUNIT_ORBIT_SUPPORT_PATH.exists())
+    orbit_text = HUNIT_ORBIT_SUPPORT_PATH.read_text(encoding="utf-8") if HUNIT_ORBIT_SUPPORT_PATH.exists() else ""
+    check(
+        "radial/orbit support is cited as support only, not field-content authority",
+        HUNIT_ORBIT_SUPPORT_PATH.name in text
+        and "supplied-doublet radial/orbit support" in text
+        and "not as field-content authority" in text
+        and "support only" in orbit_text
+        and "does not derive the one-complex `SU(2)_L` EWSB thermal doublet from" in orbit_text,
+    )
+    check(
+        "radial/orbit support keeps the one-doublet inventory premise load-bearing",
+        "one-doublet thermal field content remains supplied by the retained-bounded" in text
+        and "retained-bounded declared-inventory premise" in orbit_text,
     )
 
 
@@ -304,6 +357,8 @@ def section_note_checks() -> None:
 
     cited = [
         "YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
+        "HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md",
+        "SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md",
         "YT_CLASS_3_SUSY_2HDM_ANALYSIS_NOTE_2026-04-18.md",
         "CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md",
         "DM_NEUTRINO_TWO_HIGGS_MINIMALITY_THEOREM_NOTE_2026-04-15.md",
@@ -332,8 +387,27 @@ def section_note_checks() -> None:
     check("note file exists", True)
     text = NOTE_PATH.read_text(encoding="utf-8")
 
+    if AUDIT_LEDGER_PATH.exists():
+        ledger = json.loads(AUDIT_LEDGER_PATH.read_text(encoding="utf-8"))["rows"]
+        sm_row = ledger.get("sm_relativistic_dof_count_import_note_2026-05-17", {})
+        check(
+            "audit ledger has SM DOF inventory retained_bounded",
+            sm_row.get("claim_type") == "bounded_theorem"
+            and sm_row.get("effective_status") == "retained_bounded",
+            f"claim_type={sm_row.get('claim_type')} effective_status={sm_row.get('effective_status')}",
+        )
+    else:
+        check("audit ledger exists for SM DOF status check", False, str(AUDIT_LEDGER_PATH))
+
     # Honest-outcome and load-bearing strings present in the note.
-    for token in ["106.75", "110.75", "bounded_theorem", "R-HIGGS", "H_unit"]:
+    for token in [
+        "106.75",
+        "110.75",
+        "bounded_theorem",
+        "retained-bounded declared-inventory premise",
+        "R-HIGGS",
+        "H_unit",
+    ]:
         check(f"note records load-bearing token: {token!r}", token in text)
 
     # Forbidden-import scan: these import strings are allowed ONLY inside the

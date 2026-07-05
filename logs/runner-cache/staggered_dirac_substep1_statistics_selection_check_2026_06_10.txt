@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py
-runner_sha256: 7657bc58bd387ae0787c2cbaa8d3d07ec2e98c78106de16543cdee1a0ea27727
-timeout_sec: 300
+runner_sha256: 074624d9d587cad730972355ea14d4370f88f0330f60187f23d893f33fcd1f15
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 1.61
 status: ok
 ----- stdout -----
 
@@ -36,12 +36,20 @@ status: ok
 [C] PASS: GL(F) is not ungraded-algebra data: the SAME M_{2^N}(C) contains a GL(F)-passing family (c_x) and a GL(F)-failing family (sigma_+^(x))  (no functional of the ungraded algebra alone decides GL(F))
 
 ========================================================================================
-[D] Supplier audit: the 04-29 spin-statistics note does not supply GL(F)
+[D] Boundary diagnostic (non-load-bearing): this GL(F) row does not consume 04-29 as a supplier
 ========================================================================================
-[D] PASS: hard-core ladders VIOLATE the 04-29 S2 hypothesis on-site: [a, a^+] = 1 - 2n != I (defect norm = 2)  (the hard-core boson is OUTSIDE the class the 04-29 argument excludes)
+[D] PASS: hard-core ladders VIOLATE the 04-29 S2 hypothesis on-site: [a, a^+] = 1 - 2n != I (defect norm = 2)  (boundary diagnostic only: this note does not consume 04-29 as a GL(F) supplier)
 [D] PASS: so the 04-29 bosonic exclusion is scoped to the FREE (CCR) boson only -- it re-proves the retained dimensional half, not the tie-breaker
 [D] PASS: retained Z2-grading row is carrier, not selector (frame-blindness computed in [A])
 [D] PASS: retained positivity surface is frame-blind (H_hard_core == H_JW computed in [A])  (consistent with retained car_from_positivity_neutrality no-go)
+
+========================================================================================
+[E] Source-packet freshness: one-hop authorities match current main
+========================================================================================
+[E] PASS: source packet status: 04-29 spin-statistics row is retained_bounded and consumed only for CCR/free-boson exclusion
+[E] PASS: source packet status: 05-16 Grassmann/free-CCR bridge is retained
+[E] PASS: source packet status: retained no-go and retained parity-grading rows remain the baseline/non-supplier inputs
+[E] PASS: stale missing-dependency language removed: the note no longer treats 04-29 spin-statistics as unaudited or the 05-16 bridge as pending
 
 ========================================================================================
 Summary
@@ -54,15 +62,18 @@ Summary
         retained dim-2 readout, exactly one candidate survives;
     [C] removing GL(F) restores the tie (retained no-go reproduced);
         GL(F) is strictly additional input, not algebra data;
-    [D] the unaudited 04-29 spin-statistics note's S2 hypothesis is the
-        canonical CCR, which the hard-core boson violates on-site, so
-        that note does not supply GL(F).
+    [D] boundary diagnostic only: the 04-29 spin-statistics source
+        note's S2 hypothesis is the canonical CCR, which the hard-core
+        boson violates on-site, so this row does not consume 04-29 as
+        a GL(F) supplier;
+    [E] the source packet consumes current retained/retained_bounded
+        one-hop authorities and carries no stale missing-dependency text.
   BOUNDARY (declared, not claimed): GL(F) is NOT retained and NOT a
   Tier-A admission. This runner proves a CONDITIONAL selection only;
   unconditionally, the retained 2026-05-25 no-go stands.
 
 ========================================================================================
-TOTAL: PASS=20 FAIL=0
+TOTAL: PASS=24 FAIL=0
 ========================================================================================
 
 ----- stderr -----

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Bounded diagnostics for the SU(3) beta=6 fixed-lattice gap reduction.
+"""Conditional diagnostics for the SU(3) beta=6 fixed-lattice gap reduction.
 
 This runner supports a conditional reduction only. It does not prove an
 unconditional beta=6 gap, a continuum mass-gap theorem, an all-coupling
@@ -69,6 +69,8 @@ def finite_positive_kernel_gaps() -> np.ndarray:
 def note_guardrails() -> tuple[bool, list[str]]:
     text = NOTE.read_text(encoding="utf-8")
     required = [
+        "2026-06-12 audit firewall: reduction, not beta=6 gap theorem",
+        "**Claim type:** open_gate / conditional fixed-lattice reduction",
         "one explicit premise",
         "The premise is not proven here",
         "Not an unconditional `beta=6` gap",
@@ -77,9 +79,18 @@ def note_guardrails() -> tuple[bool, list[str]]:
         "comparators only",
         "Cited rather than reproven here",
         "turn the conditional result",
+        "adds no new axiom, no Tier-A admission, and no audit-status change",
+        "2026-06-16 transfer-kernel dependency-edge repair",
+        "WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md",
+        "AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+        "close only the source-graph route to the Wilson",
+        "They do not prove",
+        "the no-second-order-bulk-critical-point premise",
     ]
     missing = [phrase for phrase in required if phrase not in text]
-    return not missing, missing
+    forbidden = ["**Claim type:** bounded_theorem"]
+    present_forbidden = [phrase for phrase in forbidden if phrase in text]
+    return not missing and not present_forbidden, missing + [f"forbidden:{p}" for p in present_forbidden]
 
 
 def main() -> int:

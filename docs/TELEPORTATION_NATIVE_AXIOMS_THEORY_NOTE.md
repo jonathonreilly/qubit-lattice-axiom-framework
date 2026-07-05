@@ -3,13 +3,30 @@
 **Date:** 2026-04-26 (audit-repair reframe: 2026-05-25)
 **Status authority:** independent audit lane only
 **Claim type:** open_gate
-**Type:** planning / open-gate consistency artifact
+**Type:** planning / candidate theory artifact; not retained framework promotion
 **Companion runner:** `scripts/frontier_teleportation_axiom_closure_checks.py`
+
+## Source boundary (2026-06-12)
+
+**Boundary:** open-gate planning / renaming support only. Effective status is
+audit-derived; this source records only the claim boundary.
+
+The note's load-bearing content is a lane-status and principle-bundle
+definition, plus finite Bell-frame XOR and speed-one Manhattan accounting on
+the audited side-2 surface. This note may be cited only as planning/open-gate
+structure and bounded accounting. It may not be cited as native teleportation
+closure, resource-genesis closure, apparatus derivation, noise/scaling
+derivation, or a retained physical control theorem.
+
+Promotion beyond planning support requires retained-grade derivations of the
+resource, apparatus, causal-record, noise/leakage, scaling, and correction
+control surfaces.
 
 ## Abstract
 
-The note is valid as a planning / open-gate consistency artifact, not as
-unconditional native teleportation closure. The candidate lane-principle
+The note is valid as a planning / candidate theory artifact and planning /
+open-gate consistency artifact, not as unconditional native teleportation
+closure and not as retained framework promotion. The candidate lane-principle
 bundle describes what would have to hold if the taste-qubit teleportation
 lane were later promoted; it does not, on its own, promote the lane or add
 framework axioms. Native teleportation closure is explicitly left open per
@@ -291,7 +308,7 @@ even when a small-surface fidelity number is excellent.
 | retained-factor observability principle | 3D readout audit accepts `Z_r/X_r` and rejects raw `xi_5` traced readout | supported on audited finite surfaces |
 | Bell-frame connection principle | 3D resource lands in `Psi+`; fixed `Phi+` fails; tracked frame passes | supported on `3D side=2` |
 | 3D+1 causal record separability principle | Manhattan speed-one channel delivers at tick 11 and blocks outside-cone use | supported as explicit channel |
-| native resource genesis principle | finite-time 3D ramp reaches high `Psi+` resource from a simple `G=0` state | candidate only |
+| A4 native resource genesis principle | finite-time 3D ramp reaches high `Psi+` resource from a simple `G=0` state | candidate only |
 | exhaustive branch accounting principle | Bell outcome, frame, record faults, and raw-`xi_5` branch issues are explicit | partially supported |
 
 ## Nature-Grade Closure Blockers

@@ -1,5 +1,7 @@
 # Information-Geometric Selector — Obstruction + Narrowed-Gap
 
+**Claim type:** no_go
+
 **Date:** 2026-04-17
 **Status:** obstruction theorem + narrowed gap (NOT a closure of the selector gate)
 **Script:** `scripts/frontier_dm_neutrino_source_surface_info_geometric_selection_obstruction.py`

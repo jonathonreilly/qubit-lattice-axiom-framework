@@ -4,7 +4,7 @@ Frontier runner — Koide kappa spectrum-operator bridge theorem.
 Companion to
 `docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`.
 
-Claim.  On the retained cyclic-compression bridge
+Claim.  On the cyclic-compression bridge
 `H = a I + b C + bbar C^2  <->  circulant operator with Fourier eigenvalues
 a_0, z, zbar`, the exact symbolic identity
 
@@ -13,7 +13,7 @@ a_0, z, zbar`, the exact symbolic identity
 holds identically on Herm_circ(3). Therefore spectrum-side Koide
 `Q = 2/3` (equivalently `a_0^2 = 2 |z|^2`) IS operator-side `kappa = 2`
 (equivalently `a^2 = 2 |b|^2`). No independent operator-side primitive
-is needed once the spectrum-side closure is accepted.
+is needed once the spectrum-side condition is supplied.
 
 Tasks exercised by the runner (T1 .. T9) use sympy for the symbolic
 bridge identity, a numerical realization at PDG charged-lepton masses,
@@ -28,12 +28,13 @@ keyed to a substantive computation; there are no hard-coded True values.
   T6 PDG charged-lepton Q ~ 2/3
   T7 PDG numerical kappa = a^2/|b|^2 ~ 2
   T8 Bridge holds pointwise on 200 random Herm_circ(3) samples
-  T9 Bridge residual collapses Koide-closure equivalence
+  T9 Bridge residual collapses Koide-condition equivalence
 """
 
 from __future__ import annotations
 
 import math
+from pathlib import Path
 
 import numpy as np
 import sympy as sp
@@ -41,6 +42,10 @@ import sympy as sp
 
 PASS = 0
 FAIL = 0
+
+ROOT = Path(__file__).resolve().parents[1]
+BRIDGE_NOTE = ROOT / "docs" / "KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md"
+DEMOTION_NOTE = ROOT / "docs" / "KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md"
 
 
 def check(label: str, cond: bool, detail: str = "") -> bool:
@@ -53,6 +58,10 @@ def check(label: str, cond: bool, detail: str = "") -> bool:
     suffix = f"  ({detail})" if detail else ""
     print(f"  [{status}] {label}{suffix}")
     return cond
+
+
+def normalize(text: str) -> str:
+    return " ".join(text.split()).lower()
 
 
 # ---------------------------------------------------------------------------
@@ -128,8 +137,20 @@ check(
     sp.simplify(lhs_spectrum - rhs_operator) == 0,
 )
 
+# T6 — exact cubic trace diagnostic used by the MRU demotion note.
+tr_h3 = sp.expand(sp.trace(H_sym ** 3))
+phase_piece = sp.expand(tr_h3 - 3 * a_sym ** 3 - 18 * a_sym * (b1_sym ** 2 + b2_sym ** 2))
+expected_phase_piece = sp.expand(3 * (b_sym ** 3 + sp.conjugate(b_sym) ** 3))
+obsolete_phase_piece = sp.expand(a_sym * (b_sym ** 3 + sp.conjugate(b_sym) ** 3))
+check(
+    "T6 tr(H^3) phase term is 3(b^3+bbar^3), not a(b^3+bbar^3)",
+    sp.simplify(phase_piece - expected_phase_piece) == 0
+    and sp.simplify(phase_piece - obsolete_phase_piece) != 0,
+    detail=f"phase piece = {sp.simplify(phase_piece)}",
+)
+
 # ---------------------------------------------------------------------------
-# T6 / T7 — PDG numerical realization
+# T7 / T8 — PDG numerical realization
 # ---------------------------------------------------------------------------
 
 print("\nSection B — PDG charged-lepton numerical realization")
@@ -141,7 +162,7 @@ v = np.array([math.sqrt(m_e), math.sqrt(m_mu), math.sqrt(m_tau)])
 
 Q_num = float(np.sum(v ** 2) / np.sum(v) ** 2)
 check(
-    "T6 PDG Koide Q ~ 2/3",
+    "T7 PDG Koide Q ~ 2/3",
     abs(Q_num - 2.0 / 3.0) < 3e-5,
     detail=f"Q = {Q_num:.8f}",
 )
@@ -151,13 +172,13 @@ a_op = float(np.sum(v) / 3.0)
 b_op = (v[0] + np.conj(w) * v[1] + w * v[2]) / 3.0
 kappa_num = (a_op ** 2) / abs(b_op) ** 2
 check(
-    "T7 PDG operator-side kappa = a^2/|b|^2 ~ 2",
+    "T8 PDG operator-side kappa = a^2/|b|^2 ~ 2",
     abs(kappa_num - 2.0) < 3e-4,
     detail=f"kappa = {kappa_num:.8f}",
 )
 
 # ---------------------------------------------------------------------------
-# T8 — bridge holds pointwise on random Herm_circ(3) samples
+# T9 — bridge holds pointwise on random Herm_circ(3) samples
 # ---------------------------------------------------------------------------
 
 print("\nSection C — random Herm_circ(3) sample scan")
@@ -181,16 +202,16 @@ for _ in range(N_samples):
     max_residual = max(max_residual, abs(lhs - rhs))
 
 check(
-    "T8 bridge identity holds on 200 random samples (max residual < 1e-10)",
+    "T9 bridge identity holds on 200 random samples (max residual < 1e-10)",
     max_residual < 1e-10,
     detail=f"max residual = {max_residual:.3e}",
 )
 
 # ---------------------------------------------------------------------------
-# T9 — closure-equivalence
+# T10 — condition-equivalence
 # ---------------------------------------------------------------------------
 
-print("\nSection D — closure equivalence under bridge")
+print("\nSection D — condition equivalence under bridge")
 
 # Check that: spectrum-side Koide Q = 2/3 iff operator-side kappa = 2.
 # We test by sampling values that satisfy one side and verify they satisfy the other.
@@ -211,9 +232,74 @@ else:
     spec_residual = 0.0
 
 check(
-    "T9 operator kappa = 2 implies spectrum a_0^2 = 2|z|^2 (zero residual on sample set)",
+    "T10 operator kappa = 2 implies spectrum a_0^2 = 2|z|^2 (zero residual on sample set)",
     abs(spec_residual) < 1e-10,
     detail=f"|spectrum residual| = {abs(spec_residual):.3e}",
+)
+
+# ---------------------------------------------------------------------------
+# T11 .. T15 — source-boundary checks for the MRU demotion note
+# ---------------------------------------------------------------------------
+
+print("\nSection E — MRU demotion source-boundary checks")
+
+demotion_note = DEMOTION_NOTE.read_text(encoding="utf-8")
+demotion_norm = normalize(demotion_note)
+bridge_note = BRIDGE_NOTE.read_text(encoding="utf-8")
+bridge_norm = normalize(bridge_note)
+
+check(
+    "T11 demotion note records the 2026-06-18 source-boundary repair",
+    "## 2026-06-18 source-boundary repair" in demotion_note,
+)
+check(
+    "T12 clean claim is bounded demotion / bridge-corollary support",
+    "bounded demotion / bridge-corollary" in demotion_norm
+    and "primary exact bridge-corollary route" in demotion_norm,
+)
+check(
+    "T13 block-total route is bounded support, not standalone closure",
+    "independent bounded support" in demotion_norm
+    and "not a standalone full physical scalar-measure closure theorem" in demotion_norm,
+)
+check(
+    "T14 demotion note prints the corrected cubic trace diagnostic",
+    "tr(h^3) = 3 a^3 + 18 a |b|^2 + 3 (b^3 + bbar^3)" in demotion_norm
+    and "not to `a (b^3 + bbar^3)`" in demotion_norm,
+)
+check(
+    "T15 demotion note removes old retained-route overclaim phrases",
+    "primary retained closure route" not in demotion_norm
+    and "two retained independent routes" not in demotion_norm
+    and "independent second closure route" not in demotion_norm,
+)
+check(
+    "T16 demotion note narrows the SO(2) quotient failure to Path A",
+    "path a cannot close" in demotion_norm
+    and "displayed spectral-observable route" in demotion_norm
+    and "checks path a only" in demotion_norm,
+)
+check(
+    "T17 demotion note leaves alternative quotient attack routes open",
+    "other attack routes" in demotion_norm
+    and "remain open, not closed" in demotion_norm
+    and "alternative attack routes remain open" in demotion_norm
+    and "no currently retained framework theorem delivers it" not in demotion_norm
+    and "not a corollary of any retained framework theorem currently" not in demotion_norm,
+)
+check(
+    "T18 bridge note declares bounded_theorem source claim type",
+    "**Type:** bounded_theorem" in bridge_note
+    and "**Claim type:** bounded_theorem" in bridge_note
+    and "bounded bridge-corollary support" in bridge_norm,
+)
+check(
+    "T19 bridge note removes retained-proposal and independent-closure overclaim phrases",
+    ("proposed_" + "retained positive theorem") not in bridge_norm
+    and "second independent closure route" not in bridge_norm
+    and "closure comes free" not in bridge_norm
+    and "does not independently derive the spectrum-side koide condition" in bridge_norm
+    and "does not apply or predict an audit verdict" in bridge_norm,
 )
 
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")

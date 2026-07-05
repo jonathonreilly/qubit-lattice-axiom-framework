@@ -1,7 +1,11 @@
 # P1 BZ Quadrature Full Staggered-PT Note (4D Kawamoto–Smit Quadrature)
 
 **Date:** 2026-04-18
-**Status:** proposed_retained **full staggered-PT 4D BZ quadrature** of the
+**Claim type:** bounded_theorem
+**Type:** source-side bounded numerical quadrature certificate
+**Status:** source-side bounded numerical quadrature certificate; independent
+audit required before any retained effect. This note computes the **full
+staggered-PT 4D BZ quadrature** of the
 four canonical-surface lattice-PT integrals that feed the Rep-A/Rep-B
 three-channel ratio decomposition
 `Δ_R^ratio = (α_LM/(4π)) · [C_F · Δ_1 + C_A · Δ_2 + T_F n_f · Δ_3]` on
@@ -10,35 +14,40 @@ tadpole-improved canonical surface. Upgrades the prior schematic
 integrand (`YT_P1_BZ_QUADRATURE_NUMERICAL_NOTE_2026-04-18.md`;
 ±25% per-integral systematic) to the full Kawamoto–Smit staggered
 Feynman rules with proper MSbar continuum subtraction and grid
-convergence at `N ∈ {32, 48, 64}`. Tightens the per-channel systematic
+convergence at `N ∈ {32, 48, 64}`. It tightens the per-channel systematic
 from ±25% to ±5% (5× tightening) and the total `Δ_R` uncertainty from
-±2.31% to ±0.45%. Retained central
+±2.31% to ±0.45%. Source-side computed central
 **`Δ_R = −3.77% ± 0.45%`** on the full-PT quadrature, within 0.21σ of
 the prior schematic central −3.29% ± 2.31% and within ~1σ of the
 master assembly literature-cited central −3.27%, moving `Δ_R` from
-"literature-cited" to **framework-native retained with ~1% precision**.
+"literature-cited" toward a **framework-native audit candidate with ~1%
+precision**.
 
 **Primary runner:** `scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py`
 **Log:** `logs/retained/yt_p1_bz_quadrature_full_staggered_pt_2026-04-18.log`
 
-## Inputs (cited authorities)
+## Inputs and Comparators
 
-This note is a layered numerical refinement on top of upstream
-P1-cluster authorities. The one-hop authorities below are the
-load-bearing inputs for the quadrature surface; this note does not
-modify them:
+This note is a layered numerical refinement on top of the P1-cluster
+surface. The load-bearing one-hop authorities for the quadrature are the
+three-channel ratio decomposition, the `H_unit` Feynman-rule surface, the
+Ward identity, and the canonical alpha/plaquette arithmetic certificate.
+Prior schematic/literature rows and downstream master assemblies are
+comparators or non-modification targets, not proof inputs for the
+framework-native quadrature; those rows are named as plain paths so the
+citation graph preserves the authority direction.
 
-- [`YT_P1_BZ_QUADRATURE_NUMERICAL_NOTE_2026-04-18.md`](YT_P1_BZ_QUADRATURE_NUMERICAL_NOTE_2026-04-18.md)
+- `docs/YT_P1_BZ_QUADRATURE_NUMERICAL_NOTE_2026-04-18.md`
   — schematic BZ quadrature this note refines (5x tightening over the
-  prior ±25% per-integral systematic).
-- [`YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md`](YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md)
+  prior ±25% per-integral systematic comparator).
+- `docs/YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md`
   — master `Δ_R` assembly theorem; literature-cited central is
-  unchanged.
+  unchanged (downstream roll-up comparator).
 - [`YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md`](YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md)
   — three-channel decomposition inherited verbatim.
-- [`YT_P1_DELTA_1_BZ_COMPUTATION_NOTE_2026-04-17.md`](YT_P1_DELTA_1_BZ_COMPUTATION_NOTE_2026-04-17.md),
-  [`YT_P1_DELTA_2_BZ_COMPUTATION_NOTE_2026-04-17.md`](YT_P1_DELTA_2_BZ_COMPUTATION_NOTE_2026-04-17.md),
-  and [`YT_P1_DELTA_3_BZ_COMPUTATION_NOTE_2026-04-17.md`](YT_P1_DELTA_3_BZ_COMPUTATION_NOTE_2026-04-17.md)
+- `docs/YT_P1_DELTA_1_BZ_COMPUTATION_NOTE_2026-04-17.md`,
+  `docs/YT_P1_DELTA_2_BZ_COMPUTATION_NOTE_2026-04-17.md`,
+  and `docs/YT_P1_DELTA_3_BZ_COMPUTATION_NOTE_2026-04-17.md`
   — per-channel cited literature ranges, cross-referenced but not
   revised here.
 - [`YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md`](YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md)
@@ -46,17 +55,21 @@ modify them:
 - [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
   — Ward-identity tree-level theorem; the full-PT `I_v_gauge = 0` is
   consistent with it.
+- [`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)
+  — canonical arithmetic certificate for `P = 0.5934`, `u_0`,
+  `alpha_LM`, and `alpha_LM/(4pi)`, downstream of
+  [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md).
 
 The note adds the framework-native ±0.45% `Δ_R` quadrature on top of the
-same literature-cited band. It does not set an audit verdict or promote
-any upstream dependency.
+same literature-cited band. It does not set an audit verdict, claim retained
+status for itself, or promote any upstream dependency.
 
 ---
 
 ## Authority notice
 
-This note is a retained **full staggered-PT quadrature** layer on top
-of the retained schematic BZ quadrature note
+This note is a source-side **full staggered-PT quadrature** layer on top
+of the retained-or-bounded schematic BZ quadrature note
 (`docs/YT_P1_BZ_QUADRATURE_NUMERICAL_NOTE_2026-04-18.md`) and the
 master Δ_R assembly theorem note
 (`docs/YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md`). It
@@ -70,14 +83,14 @@ It does **not** modify:
   total residual systematic and P1/P2/P3 primitive decomposition are
   unchanged at the structural level);
 - the retained Ward-identity tree-level theorem
-  (`docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md`), which attaches no
+  ([`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md)), which attaches no
   precision claim and is unaffected — the full-PT confirmation
   `I_v_gauge = 0` at grid-noise level reinforces `Z_V = 1`;
 - the retained Rep-A/Rep-B partial-cancellation sub-theorem
-  (`docs/YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md`),
+  ([`YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md`](YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md)),
   whose three-channel decomposition is inherited verbatim;
 - the retained H_unit symbolic reduction
-  (`docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md`),
+  ([`YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md`](YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md)),
   whose Feynman rules (FR1, FR2) and envelope `|I_S^{framework}| ≤ 23.35`
   are retained; the full-PT `I_v_scalar = 3.90` sits well within the
   envelope;
@@ -89,10 +102,10 @@ It does **not** modify:
   whose literature-cited central −3.27% and literature-bounded band
   [2.3%, 4.3%] are retained; the full-PT −3.77% is an internally
   consistent refinement within the master's uncertainty band;
-- the retained schematic BZ quadrature note
+- the existing schematic BZ quadrature note
   (`docs/YT_P1_BZ_QUADRATURE_NUMERICAL_NOTE_2026-04-18.md`), whose
-  schematic central −3.29% ± 2.31% is retained with its stated
-  systematic; the full-PT −3.77% ± 0.45% sits well within the
+  schematic central −3.29% ± 2.31% remains on its audited surface with
+  its stated systematic; the full-PT −3.77% ± 0.45% sits well within the
   schematic's 2σ band;
 - any publication-surface file.
 
@@ -106,24 +119,24 @@ tightening of the total Δ_R band.
 
 ## Cross-references
 
-- **Prior schematic BZ quadrature:**
-  [`docs/YT_P1_BZ_QUADRATURE_NUMERICAL_NOTE_2026-04-18.md`](YT_P1_BZ_QUADRATURE_NUMERICAL_NOTE_2026-04-18.md) — schematic
+- **Prior schematic BZ quadrature comparator:**
+  `docs/YT_P1_BZ_QUADRATURE_NUMERICAL_NOTE_2026-04-18.md` — schematic
   integrand central −3.29% ± 2.31% (grid + 25% schematic systematic).
-- **Master Δ_R assembly:**
-  [`docs/YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md`](YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md) —
+- **Master Δ_R assembly comparator:**
+  `docs/YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md` —
   literature-cited central −3.27% with covariance-reduced 1σ band
   (−3.27 ± 2.32)% and operational P1 band [2.3%, 4.3%].
 - **Rep-A/Rep-B cancellation:**
   [`docs/YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md`](YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md) —
   three-channel decomposition `Δ_R = (α/(4π))[C_F Δ_1 + C_A Δ_2 + T_F n_f Δ_3]`.
-- **Δ_1 citation:**
-  [`docs/YT_P1_DELTA_1_BZ_COMPUTATION_NOTE_2026-04-17.md`](YT_P1_DELTA_1_BZ_COMPUTATION_NOTE_2026-04-17.md) — cited
+- **Δ_1 citation comparator:**
+  `docs/YT_P1_DELTA_1_BZ_COMPUTATION_NOTE_2026-04-17.md` — cited
   `I_v_scalar ∈ [3, 7]`.
-- **Δ_2 citation:**
-  [`docs/YT_P1_DELTA_2_BZ_COMPUTATION_NOTE_2026-04-17.md`](YT_P1_DELTA_2_BZ_COMPUTATION_NOTE_2026-04-17.md) — cited
+- **Δ_2 citation comparator:**
+  `docs/YT_P1_DELTA_2_BZ_COMPUTATION_NOTE_2026-04-17.md` — cited
   `I_SE_gluonic ∈ [1, 3]`.
-- **Δ_3 citation:**
-  [`docs/YT_P1_DELTA_3_BZ_COMPUTATION_NOTE_2026-04-17.md`](YT_P1_DELTA_3_BZ_COMPUTATION_NOTE_2026-04-17.md) — cited
+- **Δ_3 citation comparator:**
+  `docs/YT_P1_DELTA_3_BZ_COMPUTATION_NOTE_2026-04-17.md` — cited
   `I_SE_fermion ∈ [0.5, 1.5]`.
 - **H_unit symbolic reduction:**
   [`docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md`](YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md)
@@ -134,7 +147,9 @@ tightening of the total Δ_R band.
 - **Conserved point-split staggered vector current (Z_V = 1):**
   [`scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py`](../scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py) (21/21-PASS
   symbolic reduction).
-- **Canonical surface:** [`scripts/canonical_plaquette_surface.py`](../scripts/canonical_plaquette_surface.py) —
+- **Canonical alpha/plaquette arithmetic certificate:**
+  [`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)
+  and [`scripts/canonical_plaquette_surface.py`](../scripts/canonical_plaquette_surface.py) —
   `⟨P⟩ = 0.5934`, `u_0 = 0.87768`, `α_LM = 0.09067`,
   `α_LM/(4π) = 0.00721`.
 
@@ -199,15 +214,16 @@ Width reduction vs master assembly literature band: **55%** (2.00% →
 canonical surface, **consistent with both the prior schematic
 central** (−3.29%, 0.21σ off) **and the master assembly
 literature-cited central** (−3.27%, ~1σ off). The three-channel
-partial-cancellation structure is retained: C_F channel **positive**
+partial-cancellation structure is preserved: C_F channel **positive**
 (+1.74%), C_A channel **dominantly negative** (−8.38%), T_F n_f
 channel **positive** (+2.87%).
 
-**Precision milestone.** The full staggered-PT evaluation moves
+**Precision milestone.** If independently audited clean, the full
+staggered-PT evaluation would move
 `Δ_R` from literature-cited status (master assembly ±2.32%
-covariance-reduced band) to **framework-native retained status with
-sub-half-percent precision** (±0.45% total), constituting a
-~5× tightening.
+covariance-reduced band) to a **framework-native same-surface numerical
+certificate with sub-half-percent precision** (±0.45% total), constituting
+a ~5× tightening.
 
 **Confidence:**
 
@@ -366,7 +382,7 @@ projection).
 **Conserved vector current:** the numerator is the full Kawamoto–Smit
 `F_vec(k) = Σ_μ sin(k_μ) cos²(k_μ/2)`, which is odd in each `k_μ` and
 integrates to zero on the symmetric BZ by parity. The Ward-identity
-structure is retained **exactly** at the full staggered-PT level.
+structure is confirmed **exactly** at the full staggered-PT level.
 
 ### 2.5 Upgrade: MSbar continuum subtraction
 
@@ -404,6 +420,15 @@ the reduced form of the fermion-loop numerator, all tend to `4 =
 This subtraction **cancels the UV logarithm** between lattice and
 continuum at the same regulator, leaving the finite matching
 coefficient — the standard MSbar prescription at `μ = 1/a`.
+
+> **CORRECTION (2026-06-16):** the claim above is FALSE for the FERMION
+> channel. `4/(k²+m²)²` subtracts only the `k=0` doubler's log, but
+> `F_g/D_psi²` is log-divergent at all 16 BZ doublers. The fermion
+> `(lat−cont)` is therefore IR-regulator-DEPENDENT
+> (`d(lat−cont)/d log m² → −28`), not a finite matching coefficient. The
+> scalar and gluonic channels (single `1/D_psi` / `1/D_g²` whose extra
+> denominator is non-vanishing away from the origin) ARE clean. See
+> [YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md](YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md).
 
 ### 2.6 Grid-sweep at N ∈ {32, 48, 64}
 
@@ -649,7 +674,7 @@ staggered-PT matching to MSbar at `μ = 1/a`.
 
 ---
 
-## 6. Revised retained P1 band
+## 6. Source-side revised P1 band
 
 ### 6.1 Full-PT central and band
 
@@ -779,9 +804,10 @@ This note claims:
 > operational P1 band is `P1 ∈ [3.32%, 4.22%]` at 1σ full-PT
 > precision (0.90% width), a 5× tightening over the prior schematic
 > 4.63% width and a 55% tightening over the master assembly
-> literature-cited 2.00% width. **The Δ_R value moves from
-> literature-cited status to framework-native retained status with
-> sub-half-percent precision.**
+> literature-cited 2.00% width. **If independently audited clean, this
+> would supply a framework-native same-surface numerical certificate with
+> sub-half-percent precision; this note does not itself assign retained
+> status.**
 
 It does **not** claim:
 
@@ -809,14 +835,17 @@ It does **not** claim:
 
 ---
 
-## 9. What is retained vs. cited vs. open
+## 9. What is upstream vs. source-side vs. open
 
-### 9.1 Retained (framework-native, added or strengthened by this note)
+### 9.1 Upstream audited authorities not modified here
 
 - All prior retained structure: SU(3) Casimirs, canonical surface,
   Feynman rules (FR1, FR2), Rep-A/Rep-B three-channel formula, scalar
   anomalous dim `−6` constant, conserved-current `I_v_gauge = 0`,
   H_unit envelope `|I_S^{framework}| ≤ 23.35`.
+
+### 9.2 Source-side audit candidate added by this note
+
 - Full staggered-PT Feynman rules (FR3-a,b,c): scalar density
   point-split cos², Wilson-link gauge cos², Kawamoto–Smit conserved
   vector sin·cos² form factors.
@@ -826,10 +855,11 @@ It does **not** claim:
   - `I_SE_gluonic = +2.323 ± 0.001 (grid) ± 0.116 (5% syst)`;
   - `I_SE_fermion = +0.996 ± 0.006 (grid) ± 0.050 (5% syst)`.
 - Assembled `Δ_R = −3.77% ± 0.45%` (n_f = 6, MSbar matching).
-- Framework-native retention of the three-channel partial-cancellation
-  structure with sub-half-percent Δ_R precision.
+- Framework-native source-side confirmation of the three-channel
+  partial-cancellation structure with sub-half-percent Δ_R precision;
+  independent audit owns any retained-status effect.
 
-### 9.2 Open (not provided in this note)
+### 9.3 Open (not provided in this note)
 
 - **Symanzik-improved gauge action evaluation** for scheme-dependence
   cross-check. Would reduce the per-integral systematic from ~5% to
@@ -845,7 +875,7 @@ It does **not** claim:
   publication-surface treatment remains as-documented in the prior
   master assembly theorem.
 
-### 9.3 Cross-check with prior schematic (consistency)
+### 9.4 Cross-check with prior schematic (consistency)
 
 The full-PT central values match the prior schematic centrals within
 the schematic's stated 25% systematic:

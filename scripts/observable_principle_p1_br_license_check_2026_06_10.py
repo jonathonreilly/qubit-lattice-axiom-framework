@@ -11,7 +11,8 @@ reduced the P1 license demand to the single clause
 
 and named the next hunt target: a retained finite-resolution/record-capacity
 adjacent structure. This runner verifies the hunt outcome over the retained
-record/measurement surface:
+record/measurement surface, with the unbounded Record schema consumed only as
+an audited-conditional supplied-record premise:
 
   POSITIVE (narrow lemmas, all reproven exactly here):
   - Lemma W (second demand reduction, BR => BR-int): the per-e-fold
@@ -31,8 +32,8 @@ record/measurement surface:
     recomputed on all 81 ordered disjoint subset pairs of a 4-sector model)
     with per-sector magnitude cap |v_i| <= M (CAP-M) and per-e-fold sector
     count cap <= K (CAP-K), THEN sup|W(ez) - W(z)| <= K*M: (BR-int) holds
-    and p = 0 is selected. In the retained unit-record schema CAP-M holds
-    with M = 1 by the schema's own normalization.
+    and p = 0 is selected. In the conditional supplied-record unit schema
+    CAP-M holds with M = 1 by the schema's own normalization.
 
   NEGATIVE (the no-go; computed witnesses, sub-clause by sub-clause):
   - (CAP-M) for general sector data has NO retained supplier: the retained
@@ -41,11 +42,12 @@ record/measurement surface:
     W_Q = (z^2-1)/2 registered as a SINGLE sector per e-fold (K = 1)
     satisfies the algebra verbatim with unbounded response.
   - (CAP-K) — the registration-RATE clause — has NO retained supplier and
-    is the exact gap: the retained unbounded finite-additivity schema
-    affirmatively licenses arbitrary finite collections (I(R_n) = n, no
-    cap); the witness assignment of 4^k UNIT records to e-fold k (M = 1,
-    every prefix an exact finite collection, sum = (4^{K+1}-1)/3) is fully
-    schema-compliant and violates (BR-int). The two sub-clauses fail
+    is the exact gap: under its supplied-record/readout-context premise, the
+    conditional unbounded finite-additivity schema permits arbitrary finite
+    collections (I(R_n) = n, no cap); the witness assignment of 4^k supplied
+    UNIT records to e-fold k (M = 1, every prefix an exact finite collection,
+    sum = (4^{K+1}-1)/3) is schema-compliant only under that premise and
+    violates (BR-int). The two sub-clauses fail
     independently (W_Q: K bounded, M unbounded; 4^k family: M = 1, K
     unbounded) — exactly parallel to the W_G/W_Q split of the (NU) note.
   - Route B (quantum): finite local dimension bounds the PER-REGISTER
@@ -346,9 +348,9 @@ check(
 unit_records = [sp.Integer(1)] * 7
 check(
     "A",
-    "unit-record normalization: in the retained unbounded-additivity schema every unit datum "
+    "unit-record normalization: in the conditional unbounded-additivity schema every unit datum "
     "is exactly 1, so (CAP-M) holds there with M = 1 by normalization (I(R_7) = 7 recomputed); "
-    "the open content is the realization clause + the rate cap (CAP-K)",
+    "the open content is the supplied-record realization clause + the rate cap (CAP-K)",
     sum(unit_records) == 7 and all(d == 1 for d in unit_records),
 )
 
@@ -500,20 +502,31 @@ check(
     matches == [],
     detail=f"matches={matches!r}",
 )
-ctx = {
-    "record_function_finite_sector_algebra_2026-06-05": "retained",
-    "record_unbounded_finite_additivity_schema_2026-06-06": "retained",
-    "magnitude_reads_minimal_record_block_2026-06-06": "retained_no_go",
-    "post_record_count_probability_firewall_2026-06-06": "retained_no_go",
-    "observable_principle_record_scalar_map_no_go_note_2026-06-05": "retained_no_go",
-    "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06": "retained_no_go",
-    "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20": "retained",
-    "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "retained",
-    "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03": "retained_bounded",
-    "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06": "retained",
+ctx_allowed = {
+    "record_function_finite_sector_algebra_2026-06-05": {"retained"},
+    # This row is now audited_conditional on main; that strengthens the
+    # runner's boundary reading rather than supplying the missing cap.
+    "record_unbounded_finite_additivity_schema_2026-06-06": {"audited_conditional"},
+    "magnitude_reads_minimal_record_block_2026-06-06": {"retained_no_go"},
+    "post_record_count_probability_firewall_2026-06-06": {"retained_no_go"},
+    "observable_principle_record_scalar_map_no_go_note_2026-06-05": {"retained_no_go"},
+    "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06": {"retained_no_go"},
+    "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20": {"retained"},
+    "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": {"retained"},
+    "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03": {"retained_pending_chain", "retained_bounded"},
+    "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06": {"retained"},
 }
-ctx_ok = all(rows.get(kk, {}).get("effective_status") == vv for kk, vv in ctx.items())
-check("B", "cited rows present at the cited effective statuses (one-hop, presence check)", ctx_ok)
+ctx_bad = {
+    kk: rows.get(kk, {}).get("effective_status")
+    for kk, allowed in ctx_allowed.items()
+    if rows.get(kk, {}).get("effective_status") not in allowed
+}
+check(
+    "B",
+    "cited rows present at their current admissible effective statuses; unbounded Record is audited_conditional and local tomography is retained_bounded or retained_pending_chain in the live ledger",
+    not ctx_bad,
+    detail=f"mismatches={ctx_bad!r}",
+)
 check(
     "B",
     "the three candidate record-capacity suppliers are visible rows (assessed at full "

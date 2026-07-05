@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_conditional_law_period_scaling_2026_06_11.py
+runner_sha256: f1c7f428b0b1ed5450ba5a7bbf6750b0882ab1be980562a1b47fd7ee9d9d17bf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 18.47
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  L = 3 baseline (the #3554 load-bearing event, recomputed in-runner)
+==============================================================================
+  [PASS] L=3 rank guard (seed 4242)  (worst min-sv 0.0012)
+  [PASS] L=3 event A (seed 4242/depth 9, the #3554 event): exceeds the fixed seeded 300-draw null diagnostic with gap ~ +0.09 and the fixed-k profile STALLS  (global 0.457; profile 0.557/0.557/0.598; null p95 0.469; gap +0.088)
+  [PASS] L=3 rank guard (seed 99)  (worst min-sv 0.0011)
+  [PASS] L=3 event B (seed 99/depth 7, #3554's other event positive against the fixed seeded-null diagnostic): exceeds the fixed seeded 300-draw null diagnostic with gap ~ +0.19 and is MONOTONE -- the stall is EVENT-specific at L=3, not a period property (panel-decisive correction)  (global 0.057; profile 0.347/0.502/0.695; null p95 0.312; gap +0.190)
+==============================================================================
+Part 2  L = 4 (12 modes, 4096-dim Fock): three seeds, most-spread rows
+==============================================================================
+  [PASS] L=4 seed 1: rank guard  (worst min-sv 0.0037)
+  [PASS] L=4 seed 1: at the most-spread row (depth 9) the record prefix-3 exceeds the fixed seeded 300-draw permutation-null p95 diagnostic and the fixed-k profile is MONOTONE in k (no stall)  (global 0.573; profile 0.750/0.780/0.821; null p95 0.586; gap +0.193)
+  [PASS] L=4 seed 4242: rank guard  (worst min-sv 0.0020)
+  [PASS] L=4 seed 4242: at the most-spread row (depth 9) the record prefix-3 exceeds the fixed seeded 300-draw permutation-null p95 diagnostic and the fixed-k profile is MONOTONE in k (no stall)  (global 0.399; profile 0.609/0.638/0.690; null p95 0.421; gap +0.217)
+  [PASS] L=4 seed 99: rank guard  (worst min-sv 0.0014)
+  [PASS] L=4 seed 99: at the most-spread row (depth 8) the record prefix-3 exceeds the fixed seeded 300-draw permutation-null p95 diagnostic and the fixed-k profile is MONOTONE in k (no stall)  (global 0.572; profile 0.597/0.665/0.784; null p95 0.589; gap +0.076)
+==============================================================================
+Part 3  L = 4 robustness extension: seed set and half-filling control
+==============================================================================
+   K=7 extension seed 2026: depth 6, global 0.626, profile 0.731/0.769/0.885, null p95 0.723, gap +0.046, seeded_null_positive=True, monotone=True, rank_sv=0.0065
+   K=7 extension seed 314: depth 9, global 0.462, profile 0.717/0.738/0.763, null p95 0.470, gap +0.268, seeded_null_positive=True, monotone=True, rank_sv=0.0050
+   K=7 extension seed 7: depth 8, global 0.306, profile 0.621/0.626/0.658, null p95 0.365, gap +0.261, seeded_null_positive=True, monotone=True, rank_sv=0.0011
+   K=7 extension seed 555: depth 8, global 0.366, profile 0.539/0.612/0.665, null p95 0.397, gap +0.215, seeded_null_positive=True, monotone=True, rank_sv=0.0033
+  [PASS] K=7 robustness extension: all seven tested L=4 seeds exceed the fixed seeded 300-draw null diagnostic and have monotone fixed-k profiles  (gaps 1:+0.193, 4242:+0.217, 99:+0.076, 2026:+0.046, 314:+0.268, 7:+0.261, 555:+0.215)
+   K=6 half-filling seed 1: depth 8, global 0.542, profile 0.635/0.637/0.658, null p95 0.574, gap +0.063, seeded_null_positive=True, monotone=True, rank_sv=0.0076
+   K=6 half-filling seed 99: depth 7, global 0.834, profile 0.855/0.872/0.876, null p95 0.842, gap +0.030, seeded_null_positive=True, monotone=True, rank_sv=0.0030
+   K=6 half-filling seed 2026: depth 6, global 0.326, profile 0.733/0.800/0.829, null p95 0.485, gap +0.315, seeded_null_positive=True, monotone=True, rank_sv=0.0037
+  [PASS] K=6 half-filling control: all three tested L=4 half-filling seeds exceed the fixed seeded 300-draw null diagnostic and have monotone fixed-k profiles  (gaps 1:+0.063, 99:+0.030, 2026:+0.315)
+==============================================================================
+Part 4  the two-point scaling verdict (labeled as such)
+==============================================================================
+  [PASS] the L=4 seeded-null diagnostic gaps are COMPARABLE-OR-LARGER than the L=3 SET (panel-corrected fairness: the L=3 baseline is BOTH #3554 events; ranges overlap -- worst L=4 below best L=3; median ratio ~1.4x, NOT doubled; magnitudes instance/seed-labeled)  (L=3 set ['+0.088', '+0.190'] (median +0.139) -> L=4 ['+0.193', '+0.217', '+0.076'] (median +0.193; ratio 1.40x))
+  [PASS] THE LOAD-BEARING POSITIVE: the fixed-k profile is MONOTONE at the most-spread row of EVERY tested L=4 seed (7/7 K=7 seeds + a K=6 half-filling control) -- seed-robust monotonicity at the larger period; consistent with, NOT establishing, strengthening (at L=3 monotonicity was event-specific)
+  [PASS] source note declares fixed seeded 300-draw sampled-null scope
+  [PASS] source note forbids exhaustive, certified-bound, or MC-free null theorem
+  [PASS] source note rescopes dependencies to finite runner-defined diagnostic
+  [PASS] source note forbids promotion to upstream framework laws
+==============================================================================
+TOTAL: PASS=18 FAIL=0
+==============================================================================
+SCOPE: scales #3554's named object (the fixed-prefix-k conditional law) from
+  L=3 to L=4 (rings; Z^3 untested -- geometry disclosed; two periods = a
+  two-point trend, labeled).  PANEL-CORRECTED FINDINGS: the L=3 baseline is the
+  SET of both #3554 events positive against the fixed seeded-null diagnostic
+  ({+0.088 stalled, +0.190 monotone} --
+  the stall is event-specific, not a period property); the L=4 gaps are
+  COMPARABLE-OR-LARGER (ranges overlap; median ~1.4x, not doubled).  THE
+  LOAD-BEARING POSITIVE: seed-robust fixed-k MONOTONICITY at L=4 (7/7 K=7
+  seeds + a 3/3 half-filling control in-runner) -- consistent with, not
+  establishing, strengthening with the period.  NOT claimed: gap growth as a
+  period law, concentration in the large-period limit, any CLT premise,
+  L>=5/Z^3 behavior, or gap universality (instance/seed-labeled).  Guards
+  are runner-local finite diagnostics, not inherited #3554/#3507/Born theorem
+  premises.  No exhaustive permutation-null p95, certified finite-sample bound,
+  or MC-free null theorem is claimed.  The U(1) factor is NOT identified with a
+  physical gauge field.
+  Discrete-time (retained R1 boundaries untouched).  No new axiom/primitive/
+  measure/weight; r untouched.
+
+----- stderr -----
+

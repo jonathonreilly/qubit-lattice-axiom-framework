@@ -7,12 +7,10 @@ docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md.
 The g_* fermionic census consumes a THERMALIZED per-generation count
 30 = 15 (gauge-charged Weyl) * 2 (particle/antiparticle), summed over 3
 generations to N_fermions = 90. This runner separates the retained/decorated
-arithmetic inputs from explicit bounded physical premises and sharpens the
-genuine residual to I12 (nu_R thermal exclusion) + R-RH (right-handed
-gauge-charged inventory bridge) + the Dirac/Weyl dof dependency boundary +
-R-WEYL-THERMAL / R-SPIN (the physical thermal-inventory and Weyl-spin
-identification bridges from the local carrier to this census) + the
-neutral-singlet branch convention. All as
+arithmetic inputs from the registered retained-bounded finite-inventory
+premise packet P1/P4/P5 and checks that R-MATTER is retired only for this
+bounded g_* count, not promoted to a native derivation of Standard Model
+particle content. All as
 EXECUTED asserts (not prose):
 
 1. **Per-rep gauge-charged Weyl multiplicity breakdown.** Q_L = 3*2 = 6,
@@ -24,10 +22,10 @@ EXECUTED asserts (not prose):
    Color 3 / N_c = 3 (retained graph_first_su3 / cl3_color_automorphism);
    isospin 2 (retained native_gauge_closure); LH per-rep assignment
    (decoration-under-retained lhcm_matter_assignment); RH inventory as explicit
-   bounded premise P_RH_inventory with anomaly-singlet support; n_gen = 3
-   (retained three_generation_observable); Weyl dof factor routed through the
-   stacked Dirac/Weyl dof bridge, with finite-CAR/cardinality support and
-   independent review/audit still required.
+   registered P1 right-handed inventory with anomaly-singlet support; n_gen = 3
+   (retained three_generation_observable); Weyl dof factor registered by P4 and
+   cross-checked through the retained-bounded stacked Dirac/Weyl dof bridge,
+   with finite-CAR/cardinality support.
 
 3. **The nu_R / I12 fork (the load-bearing residual).** The matter is 16 Weyl
    (gauge-charged 15 + gauge-singlet nu_R). Thermalized count excludes nu_R ->
@@ -44,10 +42,10 @@ EXECUTED asserts (not prose):
    forbidden-import / new-vocabulary scan.
 
 No lattice-action quantity, fitted comparator, or PDG observed value is a
-load-bearing input. The representation counts are not fitted; P_RH_inventory is
-an explicit bounded premise, while the Weyl `*2` is dependency-routed through
-the Dirac/Weyl dof bridge rather than treated as a retained-derived downstream
-bridge.
+load-bearing input. The representation counts are not fitted; P1/P4/P5 of the
+retained-bounded finite-inventory wrapper are the registered physical-inventory
+premises, while the Dirac/Weyl and spin/cardinality rows are retained support
+and cross-checks.
 """
 
 from __future__ import annotations
@@ -64,6 +62,7 @@ NOTE_PATH = (
     / "docs"
     / "SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md"
 )
+SM_INVENTORY_PATH = ROOT / "docs" / "SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md"
 LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
 PASS = 0
@@ -91,6 +90,7 @@ def section(title: str) -> None:
 
 NOTE_TEXT = NOTE_PATH.read_text(encoding="utf-8")
 NOTE_FLAT = re.sub(r"\s+", " ", NOTE_TEXT)
+SM_INVENTORY_TEXT = SM_INVENTORY_PATH.read_text(encoding="utf-8")
 
 
 # ===========================================================================
@@ -208,10 +208,10 @@ check(
     f"{lh_assignment}",
 )
 # RH gauge-charged completion u_R:3 + d_R:3 + e_R:1 = 7.
-# This is an explicit bounded inventory premise, with anomaly-singlet support.
+# This is the registered P1 bounded inventory premise, with anomaly-singlet support.
 rh_completion = u_R + d_R + e_R
 check(
-    "RH gauge-charged completion u_R+d_R+e_R = 3+3+1 = 7 (bounded P_RH_inventory)",
+    "RH gauge-charged completion u_R+d_R+e_R = 3+3+1 = 7 (registered P1 inventory)",
     rh_completion == 7,
     f"{rh_completion}",
 )
@@ -224,9 +224,9 @@ check(
     "generation count n_gen = 3 (retained three_generation_observable)",
     N_GEN == 3,
 )
-# Weyl-to-dof thermal factor (Dirac/Weyl dof bridge dependency; audit pending).
+# Weyl-to-dof thermal factor (registered P4, Dirac/Weyl cross-check).
 check(
-    "Weyl-to-dof factor = 2 (Dirac/Weyl dof bridge dependency, audit pending)",
+    "Weyl-to-dof factor = 2 (registered P4 state-count convention)",
     WEYL_DOF == 2,
 )
 
@@ -346,6 +346,7 @@ section("5. Note / authority cross-checks")
 
 # Retained / decoration-under-retained support sources -> markdown-link edges.
 SOURCED_AUTHORITIES = [
+    "SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
     "GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
     "CL3_COLOR_AUTOMORPHISM_THEOREM.md",
     "NATIVE_GAUGE_CLOSURE_NOTE.md",
@@ -391,28 +392,32 @@ check(
     "R-MATTER" in NOTE_TEXT and "reduced" in NOTE_TEXT.lower(),
 )
 check(
-    "note names I12 nu_R thermal exclusion as the load-bearing residual",
+    "note names I12 nu_R thermal exclusion as the load-bearing fork",
     "I12" in NOTE_TEXT and "nu_R" in NOTE_TEXT and "thermal exclusion" in NOTE_TEXT,
 )
 check(
-    "note names R-SPIN as remaining residual",
-    "R-SPIN" in NOTE_TEXT,
+    "note registers P1/P4/P5 finite-inventory packet",
+    "P1/P4/P5" in NOTE_TEXT
+    and "retained-bounded finite inventory" in NOTE_TEXT,
 )
 check(
-    "note names R-RH as remaining residual",
-    "R-RH" in NOTE_TEXT and "P_RH_inventory" in NOTE_TEXT,
+    "note routes RH inventory through registered P1",
+    "right-handed gauge-charged inventory" in NOTE_TEXT
+    and "P1" in NOTE_TEXT
+    and "SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md" in NOTE_TEXT,
 )
 check(
-    "note names R-WEYL-THERMAL as remaining residual",
-    "R-WEYL-THERMAL" in NOTE_TEXT
-    and "physical Weyl thermal-inventory bridge" in NOTE_TEXT,
+    "note routes nu_R exclusion through P1/P5",
+    "P1/P5" in NOTE_TEXT
+    and "nu_R" in NOTE_TEXT
+    and "retained-bounded finite inventory" in NOTE_TEXT,
 )
 check(
-    "note routes Weyl dof factor through Dirac/Weyl bridge dependency",
+    "note routes Weyl dof factor through P4 with Dirac/Weyl cross-check",
     "DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md"
     in NOTE_TEXT
-    and "dependency-routed" in NOTE_TEXT
-    and "Dirac/Weyl dof dependency boundary" in NOTE_TEXT,
+    and "P4" in NOTE_TEXT
+    and "cross-check" in NOTE_TEXT,
 )
 DIRAC_WEYL_PATH = (
     ROOT
@@ -422,43 +427,41 @@ DIRAC_WEYL_PATH = (
 DIRAC_WEYL_TEXT = DIRAC_WEYL_PATH.read_text(encoding="utf-8")
 check(
     "Dirac/Weyl source note contains source-local Q2 rank counting",
-    "source-local Q2 rank counting" in DIRAC_WEYL_TEXT
+    "source-local Q2 branch-rank counting" in DIRAC_WEYL_TEXT
     and "rank(gamma.p - m)=2" in DIRAC_WEYL_TEXT,
 )
 check(
     "Dirac/Weyl source note contains massless chirality split",
     "chirality projectors split the massless branch" in DIRAC_WEYL_TEXT
-    and "Weyl on-shell thermal dof" in DIRAC_WEYL_TEXT,
+    and "fixed-chirality branch-rank count" in DIRAC_WEYL_TEXT,
 )
 check(
-    "note scopes R-SPIN as physical Weyl-spin bridge",
-    "physical Weyl-spin identification bridge" in NOTE_TEXT
-    and "bridge out of scope" in NOTE_TEXT,
+    "note keeps native SM inventory derivation out of scope",
+    "registered Standard-Model inventory is a native" in NOTE_TEXT
+    or "SM thermal inventory is natively derived" in NOTE_TEXT,
 )
 check(
-    "note does not claim Weyl factor is retained-derived on current audit surface",
-    "thermal Weyl factor `2` is already retained-derived" in NOTE_TEXT
-    and "requires review/audit" in NOTE_TEXT,
+    "note does not claim Weyl factor is native-derived downstream",
+    "thermal Weyl factor `2` is natively derived" in NOTE_TEXT
+    and "registered by P4" in NOTE_TEXT,
 )
 check(
-    "note carries RH inventory as bounded premise, not retained-derived",
-    "explicit bounded premise `P_RH_inventory`" in NOTE_TEXT
-    and "does not by itself prove" in NOTE_TEXT,
+    "note carries RH inventory as registered bounded premise, not native-derived",
+    "right-handed gauge-charged inventory is natively derived" in NOTE_TEXT
+    and "registered by P1" in NOTE_TEXT,
 )
 check(
-    "note names the neutral-singlet branch convention as residual",
-    "neutral-singlet branch convention" in NOTE_TEXT,
+    "note marks neutral-singlet branch convention not load-bearing on count",
+    "neutral-singlet branch" in NOTE_TEXT and "not load-bearing" in NOTE_TEXT,
 )
 check(
     "note carries the 106.75 vs 112 fork explicitly",
     "106.75" in NOTE_TEXT and "112" in NOTE_TEXT,
 )
-# R-MATTER is partially reduced, NOT retired.
 check(
-    "note states R-MATTER is NOT fully retired",
-    "not fully retired" in NOTE_TEXT.lower()
-    or "not** fully retired" in NOTE_TEXT.lower()
-    or "partially reduced" in NOTE_TEXT.lower(),
+    "note states R-MATTER retired for bounded g_* count only",
+    "R-MATTER is retired for this bounded" in NOTE_TEXT
+    or "R-MATTER is retired for the bounded" in NOTE_TEXT,
 )
 
 
@@ -519,26 +522,27 @@ if LEDGER_PATH.exists():
         f"ledger = {status_of('one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10')}",
     )
     check(
-        "R-SPIN remains a physical bridge residual after local carrier source",
-        "physical Weyl-spin identification bridge" in NOTE_TEXT
-        and "bridge out of scope" in NOTE_TEXT,
-    )
-    check(
-        "R-RH remains an explicit bounded premise",
-        "P_RH_inventory" in NOTE_TEXT and "R-RH" in NOTE_TEXT,
-    )
-    check(
-        "Weyl dof source remains dependency-routed pending audit",
-        "Dirac/Weyl dof dependency boundary" in NOTE_TEXT
-        and "audit pending" in NOTE_TEXT,
+        "SM finite-inventory wrapper is retained_bounded",
+        status_of("sm_relativistic_dof_count_import_note_2026-05-17")
+        == "retained_bounded",
+        f"ledger = {status_of('sm_relativistic_dof_count_import_note_2026-05-17')}",
     )
     dirac_weyl_status = status_of(
         "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28"
     )
     check(
-        "Dirac/Weyl dof source is not asserted retained by this downstream runner",
-        dirac_weyl_status in {"audited_conditional", "retained", "retained_bounded", None},
+        "Dirac/Weyl dof source is retained_bounded support",
+        dirac_weyl_status == "retained_bounded",
         f"ledger = {dirac_weyl_status}",
+    )
+    check(
+        "P1/P4/P5 registered inventory supplies the physical boundary",
+        "P1/P4/P5" in NOTE_TEXT and "registered finite-inventory" in NOTE_TEXT,
+    )
+    check(
+        "R-MATTER retired only for bounded g_* count",
+        "R-MATTER is retired for this bounded" in NOTE_TEXT
+        or "R-MATTER is retired for the bounded" in NOTE_TEXT,
     )
     check(
         "full one-generation closure stays unaudited (separated, not reduced by this note)",
@@ -579,20 +583,22 @@ check(
     and "one-generation matter closure is derived" in NOTE_TEXT,
 )
 check(
-    "note states nu_R thermal exclusion NOT claimed derived (import I12)",
-    "thermal exclusion is derived" in NOTE_TEXT and "I12" in NOTE_TEXT,
+    "note states nu_R thermal exclusion is registered, not primitive-derived",
+    "nu_R" in NOTE_TEXT and "registered P1/P5" in NOTE_TEXT,
 )
 check(
     "note states neutral-singlet branch convention NOT claimed derived",
     "branch convention" in NOTE_TEXT and "is derived" in NOTE_TEXT,
 )
 check(
-    "note states RH inventory bridge NOT claimed retained-derived",
-    "right-handed gauge-charged inventory is derived from retained" in NOTE_TEXT,
+    "note states RH inventory is registered, not native-derived",
+    "right-handed gauge-charged inventory is natively derived" in NOTE_TEXT
+    and "registered by P1" in NOTE_TEXT,
 )
 check(
-    "note states thermal Weyl factor NOT claimed retained-derived",
-    "thermal Weyl factor `2` is already retained-derived" in NOTE_TEXT,
+    "note states thermal Weyl factor is registered, not downstream native-derived",
+    "thermal Weyl factor `2` is natively derived" in NOTE_TEXT
+    and "registered by P4" in NOTE_TEXT,
 )
 
 # Forbidden load-bearing imports: no lattice-action / fitted / PDG carrier.

@@ -1,0 +1,119 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_window_clebsch_insertion_displacement_bounded_2026_06_12.py
+runner_sha256: 2e4a351e3b8cbe80c64e8ffd84ce8a3a82380727c6423fd53fa820dc4b93e142
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.60
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette W50 window Clebsch insertion displacement runner
+Status authority: independent audit lane only. This source runner does not set, predict, promote, or demote any audit outcome.
+No new imports: repo-internal finite packet quantities only.
+No randomness or runtime dates are used.
+
+================================================================================================================
+Part 1: 3 x 3bar Casimir projectors and isometries
+================================================================================================================
+C2 eigenvalues on 3 x 3bar:
+  -0.000000000000 3.000000000000 3.000000000000 3.000000000000 3.000000000000 3.000000000000 3.000000000000 3.000000000000 3.000000000000
+Projectors: P_1 = I - C2/3, P_8 = C2/3.
+PASS: Casimir spectrum is one 0 and eight 3s
+PASS: P_1 is Hermitian and idempotent
+PASS: P_8 is Hermitian and idempotent
+PASS: projector ranks are 1 and 8 by trace
+PASS: V_1 is an isometry
+PASS: V_8 is an isometry
+PASS: V_1 and V_8 are orthogonal
+PASS: V_1 V_1^dag equals P_1
+PASS: V_8 V_8^dag equals P_8
+PASS: V_1 and V_8 are complete on the 9-dimensional product
+lambda_1: unitary_err=0.000e+00, det_err=0.000e+00, P_comm=(5.551e-17,5.551e-17), V1_fixed=1.116e-16, V8_block_unitary=4.441e-16
+PASS: exp(i t lambda_1) is a deterministic SU(3) element
+PASS: P_1 and P_8 commute with the product action for lambda_1
+PASS: V_1 is fixed and V_8 transforms unitarily for lambda_1
+lambda_4: unitary_err=0.000e+00, det_err=0.000e+00, P_comm=(5.551e-17,5.551e-17), V1_fixed=1.570e-16, V8_block_unitary=4.441e-16
+PASS: exp(i t lambda_4) is a deterministic SU(3) element
+PASS: P_1 and P_8 commute with the product action for lambda_4
+PASS: V_1 is fixed and V_8 transforms unitarily for lambda_4
+lambda_8: unitary_err=0.000e+00, det_err=1.045e-17, P_comm=(3.756e-18,3.756e-18), V1_fixed=6.072e-18, V8_block_unitary=4.441e-16
+PASS: exp(i t lambda_8) is a deterministic SU(3) element
+PASS: P_1 and P_8 commute with the product action for lambda_8
+PASS: V_1 is fixed and V_8 transforms unitarily for lambda_8
+
+================================================================================================================
+Part 2: 1 plus 8 recoupling to the T1/T2 invariant basis
+================================================================================================================
+<T1,T1> = 9
+<T2,T2> = 9
+<T1,T2> = 3
+PASS: T1/T2 Gram matrix is exactly [[9, 3], [3, 9]]
+PASS: singlet-pair isometry gives E1 = T1/3
+PASS: adjoint-pair isometry gives E8 = (T2 - T1/3)/(2 sqrt(2))
+PASS: E1 is unit norm
+PASS: E8 is unit norm
+PASS: E1 and E8 are orthogonal
+normalized T2/3 components in E1/E8 basis: (0.333333333333333, 0.942809041582063); residual=3.399e-17
+PASS: normalized T2/3 has singlet amplitude 1/3
+PASS: normalized T2/3 has adjoint amplitude 2 sqrt(2)/3
+PASS: normalized T2/3 has exact squared fractions 1/9 and 8/9
+PASS: two routes to the universal invariant space agree
+
+================================================================================================================
+Part 3: fundamental window strength and universal insertion tensor
+================================================================================================================
+D_(0,0) = 1.000000000000000
+D_(1,0) = 0.422531739649983
+D_(0,1) = 0.422531739649983
+c_fund(6)/c_0(6) = d_fund * D_(1,0) = 1.267595218949950
+four Schur factors = (1/3)^4 = 1/81
+K_f = (c_fund(6)/c_0(6)) * (1/3)^4 * T2
+K_f components in E1/E8 basis = (1.564932369074012e-02, 4.426297161082252e-02); residual=8.760e-18
+PASS: trivial channel normalization has D_0 = 1
+PASS: fundamental and antifundamental strengths agree by conjugation
+PASS: four-link Schur normalization is exactly 1/81
+PASS: universal K_f has the expected E1 component
+PASS: universal K_f has the expected E8 component
+PASS: universal K_f is exactly in the two-dimensional invariant span
+
+================================================================================================================
+Part 4: W44 insertion surface
+================================================================================================================
+B4 fundamental transitions a x 3 -> c = 56
+B4 antifundamental transitions b x 3bar -> d = 56
+diagonal fundamental transitions = 0
+pair-window support entries before Clebsch weights = 3136
+non-class callable names exposed by W44 modules = []
+P(k=2, windowed fundamental) = NOT_REPORTED
+displacement_vs_anchor = NOT_REPORTED
+sign = NOT_REPORTED
+magnitude = NOT_REPORTED
+PASS: fundamental insertion has non-diagonal B4 support
+PASS: pair-window support is nonempty and dense relative to the diagonal bond
+PASS: W44 builders expose no normalized external-label recoupling API
+PASS: runner does not fabricate a W44 displacement from fusion support alone
+P(k=2, window -> 0) = 0.449370834209281
+W44 k=2 anchor        = 0.449370834209281
+delta_zero_window     = +3.885780586188048e-16
+W44 deep limit        = 0.615191992185898
+pair-support limit    = 0.615191992185898
+PASS: window set to zero reproduces the W44 k=2 anchor
+PASS: zero-window gate leaves the W44 deep limit unchanged
+PASS: fundamental-channel exactness is scoped to the 3bar-3-3bar-3 subspace
+PASS: higher window channels remain named outside this fundamental subspace
+k=3 windowed probe = NOT_RUN because it requires the same 625-state recoupling kernel.
+PASS: deeper probe is withheld for the same named kernel gap
+
+================================================================================================================
+Part 5: note hygiene and negative-claim discipline
+================================================================================================================
+PASS: note delegates status to the independent audit lane
+PASS: note uses markdown links for one-hop authorities
+PASS: context refs avoid tool-local scratch paths
+PASS: note avoids overreach closure phrases
+PASS: note contains visible N1-N8 discipline
+PASS: note reports the W44 displacement as not reported rather than zero
+
+TOTAL: PASS=50, FAIL=0
+
+----- stderr -----
+

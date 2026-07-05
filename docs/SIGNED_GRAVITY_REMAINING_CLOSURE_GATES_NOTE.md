@@ -1,5 +1,7 @@
 # Signed Gravity Remaining Closure Gates Note
 
+**Claim type:** open_gate
+
 **Date:** 2026-04-26
 **Status:** remaining nature-grade gates reduced to precise conditional
 surfaces; not a physical signed-gravity claim

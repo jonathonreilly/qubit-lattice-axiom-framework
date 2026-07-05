@@ -110,6 +110,25 @@ This is an open gate for future Kubo Fam2 work. It is not evidence for a
 unique Fam2 mechanism, and it should not be cited as proving that the
 three possible obstruction routes above are complete.
 
+## Re-Audit Trigger Guard
+
+This inventory is source-bound to the two current Kubo parent/context
+packets and to the SHA-pinned Fam2 refinement cache named above. Do not
+reuse this open gate without re-running the paired runner if:
+
+- the source scope or effective retained_bounded status of
+  `KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md` changes;
+- the source scope or effective retained_bounded status of
+  `KUBO_FAM2_REFINEMENT_NOTE.md` changes;
+- `scripts/kubo_fam2_refinement.py` changes;
+- `logs/runner-cache/kubo_fam2_refinement.txt` is stale, refreshed, or
+  no longer supports the finite Fam2 values recorded here.
+
+The guard does not promote the row. It only makes the dependency
+freshness condition explicit: parent/context movement or cached-data
+movement requires re-audit before downstream use of this open-gate
+inventory.
+
 Context sources:
 [`docs/KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md`](KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md)
 and [`docs/KUBO_FAM2_REFINEMENT_NOTE.md`](KUBO_FAM2_REFINEMENT_NOTE.md).

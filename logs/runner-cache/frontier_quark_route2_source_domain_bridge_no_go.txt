@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_source_domain_bridge_no_go.py
-runner_sha256: 341a7e7169db6b19dce6671ca560f2aa6f80610b1a59d1ec1bae53cbc41482c2
+runner_sha256: fa295f82f64ee73b9ea6be4e48c6fd184cacbf55cbb911d25f2fd253d0bd8408
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 38.03
+elapsed_sec: 15.99
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -19,7 +19,7 @@ PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists -- docs/QUARK_ROU
 PASS: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
 PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md exists -- docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
 PASS: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md exists -- docs/QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md
-PASS: R_conn surface is color-projection, not Route-2 endpoint syntax
+PASS: R_conn surface is scoped color support, not Route-2 endpoint syntax
 PASS: Route-2 bilinear carrier surface has no R_conn bridge
 PASS: Route-2 readout map surface has no R_conn bridge
 PASS: Route-2 exact time-coupling surface has no R_conn bridge
@@ -45,7 +45,7 @@ PASS: rho_E=0 and rho_E=21/4 agree on E-shell
 PASS: rho_E=0 and rho_E=21/4 agree on granted T-shell
 PASS: rho_E=0 and rho_E=21/4 agree on granted T-center
 PASS: rho_E=0 and rho_E=21/4 differ only at E-center
-PASS: live center ratio is close to -R_conn but remains comparator-only -- live=-0.890683778231, target=-0.888888888889
+PASS: live center ratio is close to -R_conn but remains comparator-only -- live=-0.890683778221, target=-0.888888888889
 
 E. Stuck fan-out frames
 ------------------------------------------------------------------------
@@ -61,9 +61,92 @@ F. Import firewall
 PASS: forbidden proof inputs are absent -- ['conditional_t_side_candidates', 'exact_rational_arithmetic', 'retained_su3_rconn_value', 'route2_endpoint_algebra', 'route2_exact_carrier', 'typed_edge_inventory']
 PASS: new note names the missing theorem rather than closing Lane 3
 
+G. Quote-anchored typed-edge inventory
+------------------------------------------------------------------------
+PASS: every current typed edge is either quote-anchored or reported unanchored -- anchored=8, unanchored=0
+PASS: no configured edge is unanchored
+FINDING: UNANCHORED none
+PASS: anchor authority matches route2_support_delta_A1->route2_bilinear_carrier_K_R -- S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: route2_support_delta_A1->route2_bilinear_carrier_K_R has at least one quote anchor -- 3
+PASS: route2_support_delta_A1->route2_bilinear_carrier_K_R quote 1 is meaningful
+PASS: route2_support_delta_A1->route2_bilinear_carrier_K_R quote 1 is present in S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: route2_support_delta_A1->route2_bilinear_carrier_K_R quote 2 is meaningful
+PASS: route2_support_delta_A1->route2_bilinear_carrier_K_R quote 2 is present in S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: route2_support_delta_A1->route2_bilinear_carrier_K_R quote 3 is meaningful
+PASS: route2_support_delta_A1->route2_bilinear_carrier_K_R quote 3 is present in S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: anchor authority matches route2_bright_E_T->route2_bilinear_carrier_K_R -- S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: route2_bright_E_T->route2_bilinear_carrier_K_R has at least one quote anchor -- 2
+PASS: route2_bright_E_T->route2_bilinear_carrier_K_R quote 1 is meaningful
+PASS: route2_bright_E_T->route2_bilinear_carrier_K_R quote 1 is present in S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: route2_bright_E_T->route2_bilinear_carrier_K_R quote 2 is meaningful
+PASS: route2_bright_E_T->route2_bilinear_carrier_K_R quote 2 is present in S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: anchor authority matches route2_bilinear_carrier_K_R->route2_restricted_readout_family -- QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_bilinear_carrier_K_R->route2_restricted_readout_family has at least one quote anchor -- 1
+PASS: route2_bilinear_carrier_K_R->route2_restricted_readout_family quote 1 is meaningful
+PASS: route2_bilinear_carrier_K_R->route2_restricted_readout_family quote 1 is present in QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: anchor authority matches route2_restricted_readout_family->route2_endpoint_algebra -- QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_restricted_readout_family->route2_endpoint_algebra has at least one quote anchor -- 1
+PASS: route2_restricted_readout_family->route2_endpoint_algebra quote 1 is meaningful
+PASS: route2_restricted_readout_family->route2_endpoint_algebra quote 1 is present in QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: anchor authority matches route2_t_side_candidates->route2_q_T_5_6_and_shell_TE_minus_2 -- QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: route2_t_side_candidates->route2_q_T_5_6_and_shell_TE_minus_2 has at least one quote anchor -- 2
+PASS: route2_t_side_candidates->route2_q_T_5_6_and_shell_TE_minus_2 quote 1 is meaningful
+PASS: route2_t_side_candidates->route2_q_T_5_6_and_shell_TE_minus_2 quote 1 is present in QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: route2_t_side_candidates->route2_q_T_5_6_and_shell_TE_minus_2 quote 2 is meaningful
+PASS: route2_t_side_candidates->route2_q_T_5_6_and_shell_TE_minus_2 quote 2 is present in QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: anchor authority matches route2_center_TE_minus_8_9->route2_q_E_15_8 -- QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_center_TE_minus_8_9->route2_q_E_15_8 has at least one quote anchor -- 3
+PASS: route2_center_TE_minus_8_9->route2_q_E_15_8 quote 1 is meaningful
+PASS: route2_center_TE_minus_8_9->route2_q_E_15_8 quote 1 is present in QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_center_TE_minus_8_9->route2_q_E_15_8 quote 2 is meaningful
+PASS: route2_center_TE_minus_8_9->route2_q_E_15_8 quote 2 is present in QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_center_TE_minus_8_9->route2_q_E_15_8 quote 3 is meaningful
+PASS: route2_center_TE_minus_8_9->route2_q_E_15_8 quote 3 is present in QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: anchor authority matches route2_q_E_15_8->route2_rho_E_21_4 -- QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_q_E_15_8->route2_rho_E_21_4 has at least one quote anchor -- 3
+PASS: route2_q_E_15_8->route2_rho_E_21_4 quote 1 is meaningful
+PASS: route2_q_E_15_8->route2_rho_E_21_4 quote 1 is present in QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_q_E_15_8->route2_rho_E_21_4 quote 2 is meaningful
+PASS: route2_q_E_15_8->route2_rho_E_21_4 quote 2 is present in QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_q_E_15_8->route2_rho_E_21_4 quote 3 is meaningful
+PASS: route2_q_E_15_8->route2_rho_E_21_4 quote 3 is present in QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: anchor authority matches su3_color_trace_channel->su3_R_conn_8_9 -- RCONN_DERIVED_NOTE.md
+PASS: su3_color_trace_channel->su3_R_conn_8_9 has at least one quote anchor -- 3
+PASS: su3_color_trace_channel->su3_R_conn_8_9 quote 1 is meaningful
+PASS: su3_color_trace_channel->su3_R_conn_8_9 quote 1 is present in RCONN_DERIVED_NOTE.md
+PASS: su3_color_trace_channel->su3_R_conn_8_9 quote 2 is meaningful
+PASS: su3_color_trace_channel->su3_R_conn_8_9 quote 2 is present in RCONN_DERIVED_NOTE.md
+PASS: su3_color_trace_channel->su3_R_conn_8_9 quote 3 is meaningful
+PASS: su3_color_trace_channel->su3_R_conn_8_9 quote 3 is present in RCONN_DERIVED_NOTE.md
+
+H. Exhaustiveness sweep over named authority bank
+------------------------------------------------------------------------
+PASS: note dependency parser finds the closed authority-bank additions -- ('QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md', 'QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md', 'QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md', 'RCONN_DERIVED_NOTE.md', 'S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md')
+PASS: authority bank is edge authorities plus dependency-linked Route-2 authorities -- ('QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md', 'QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md', 'QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md', 'RCONN_DERIVED_NOTE.md', 'S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md')
+PASS: sweep found at least one candidate sentence -- 48
+PASS: all sweep candidate sentences are dispositioned -- candidates=48, anchored=19, exceptions=29
+PASS: all sweep exceptions are currently used -- []
+PASS: derived additional edges keep MISSING_BRIDGE out of the inventory -- 2
+PASS: derived additional edges have quote-anchor entries -- ['route2_q_E_15_8->route2_center_TE_minus_8_9', 'route2_rho_E_21_4->route2_q_E_15_8']
+PASS: derived edge authority matches route2_rho_E_21_4->route2_q_E_15_8 -- QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: derived route2_rho_E_21_4->route2_q_E_15_8 quote 1 is present in QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: derived route2_rho_E_21_4->route2_q_E_15_8 quote 2 is present in QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: derived edge authority matches route2_q_E_15_8->route2_center_TE_minus_8_9 -- QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: derived route2_q_E_15_8->route2_center_TE_minus_8_9 quote 1 is present in QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: derived route2_q_E_15_8->route2_center_TE_minus_8_9 quote 2 is present in QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+
+I. Reachability on quote-derived inventory
+------------------------------------------------------------------------
+NO-FLIP: source-to-rho without MISSING_BRIDGE configured=False derived=False
+NO-FLIP: source-to-rho with MISSING_BRIDGE configured=True derived=True
+NO-FLIP: endpoint-functor bypass predicate configured=True derived=True
+PASS: derived inventory still has no source-to-rho path without missing bridge -- path length=0
+PASS: derived inventory plus missing bridge still reaches rho_E=21/4 -- route2_center_TE_minus_8_9 -> route2_q_E_15_8 -> route2_rho_E_21_4
+PASS: derived reachability has no flips
+
 Summary
 ------------------------------------------------------------------------
-TOTAL: PASS=33, FAIL=0
+TOTAL: PASS=103, FAIL=0
 VERDICT: current Route-2 + SU(3) support has no typed R_conn
 source-domain bridge.  Adding that bridge would force rho_E=21/4,
 but without it the up-type scalar law remains open.

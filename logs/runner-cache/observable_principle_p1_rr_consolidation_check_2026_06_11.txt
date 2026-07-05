@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/observable_principle_p1_rr_consolidation_check_2026_06_11.py
+runner_sha256: cef3321cb19a1cd8fd4e7a9f3f705cea17e751cd55d02c49647d3c83687526c1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.57
+status: ok
+----- stdout -----
+== T1: the consolidation equivalence — exhaustive finite-model verification ==
+  [PASS][A] consolidation equivalence verified pointwise on all 256 toggle models (independent codepaths): RR(M) == (CAP-real)(M) AND (REG-dyn)(M) AND (REG-thr @ own window)(M) — both directions at once, so the declared RR neither strengthens nor weakens the three-clause conjunction  -- models=256
+  [PASS][A] arrow (RR) AND (REG-tau) => (REG-thr @ supplied tau) holds on all 256 models (the own-window threshold transfers to the supplied window because every window <= tau)
+  [PASS][A] every strict containment is witnessed INSIDE the enumerated family: CAP-real w/o RR, REG-dyn w/o CAP-real, RR w/o REG-tau, RR w/o REG-site, REG-site w/o RR all occur  -- counts={'capreal_not_rr': 60, 'regdyn_not_capreal': 48, 'rr_not_tau': 2, 'rr_not_site': 2, 'site_not_rr': 62}
+== T2: an RR instance on explicit dynamics (the consolidated clause is satisfiable, not vacuous) ==
+  [PASS][C] explicit 6-site open-chain instance (V = N_0, t = 0.6): measured operator-norm sensitivities at register sites 0 and 1 exceed delta = 1/10; two unit records on disjoint sites realize the increment 2 — ALL of RR, CAP-real, REG-dyn, REG-thr, REG-tau, REG-site evaluate True on one real-dynamics model  -- sens(0)=0.3133, sens(1)=0.3085
+  [PASS][C] cone teeth: at window t <= 0.05 the retained LR series bound at l1-distance 4 is < delta (and the measured sensitivity sits below the bound), so a hypothetical distance-4 record at that window VIOLATES RR's threshold facet — the RR predicate rejects it  -- measured=5.21e-09 <= bound=1.14e-05 < delta=0.1
+== T3: witnessed non-arrow (CAP-real) =/=> (RR) — the fiat 4^k assignment ==
+  [PASS][D] 4^k unit records assigned to e-fold k by fiat (no establishing process): (CAP-real) holds exactly (additivity on every collection; prefix sum (4^4-1)/3 - 1 = 84 recomputed) while (REG-dyn) and RR are False — realization through records does NOT imply registration through the retained dynamics  -- prefix_sum=84
+  [PASS][A] canonical cap recomputed (not cited blind): D* = 24e + ln(10/(24(e-1))) ~ 63.82, ceil = 64, K = 129^3 = 2146689; the fiat witness defeats it at k = 11 (4^11 = 4194304 > K) — (CAP-real) alone never carried the cap, exactly the BR-license note's split  -- D*=63.8220, K=2146689
+== T4: witnessed non-arrow (REG-dyn)+(REG-thr)+(REG-tau) =/=> (CAP-real) ==
+  [PASS][C] same real-dynamics records as T2 (established, delta-sensitive, within tau) but declared increment 7/2 != readout 2: (REG-dyn), (REG-thr), (REG-tau) all True, (CAP-real) and RR False — the (REG) class clauses alone do not generate the realization, so RR is a genuine join (neither side redundant)
+== T5: witnessed non-arrow (RR) =/=> (REG-tau) — the window is irreducibly separate ==
+  [PASS][D] growing-window model (window_k = k, no supplied clock window): RR holds (every record established and delta-sensitive within ITS OWN window) while (REG-tau) fails — and the realized counts 4^k defeat every fixed cap, so RR alone yields NO (CAP-K)
+  [PASS][A] windows demanded by finite-speed registration of 4^k records recomputed: tau_11 >= 1.25 > 1, tau_30 >= 8036, and lim_{k->oo} tau_k = oo (sympy) — the supplied bounded window is load-bearing; (REG-tau) cannot be absorbed into RR without erasing it  -- tau_11>=1.2501, tau_30>=8036.5
+  [PASS][B] clock wall verbatim ('Without the supplied `tau`, the same record history supports many inequivalent rates') + the note keeps (REG-tau) a separate supplied-clock clause (never folded into RR, never derived)
+== T6: witnessed non-arrow (RR)+(REG-tau) =/=> (REG-site) — the joint-sector hole, and why it does not matter for p = 0 ==
+  [PASS][C] 2-qubit witness dynamics: the hopping bond makes BOTH sites delta-sensitive at t = 1 (measured), and the four rank-1 joint projectors are pairwise orthogonal (max residual < 1e-12), sum to I, and each fails to commute with each single-site algebra — four pairwise-disjoint records, every one supported on BOTH sites  -- sens=0.690/0.690, orth_resid=0.0e+00
+  [PASS][A] pigeonhole exact (all 81 assignments enumerated): four pairwise-disjoint NONEMPTY subsets of a 2-site set do not exist, so (REG-site) FAILS — yet the joint-sector cap d_site^N = 2^2 = 4 holds with equality and a fifth mutually-orthogonal nonzero projection is impossible (sum P_i = I): (CAP-K) survives without (REG-site)
+  [PASS][A] the chain survives without (REG-site): the weakest joint-sector reading keeps K = 2^{N_reach} finite and k-uniform (D* free symbols exclude k), and the p = 0 selection needs only finiteness + k-uniformity — (REG-site) is demoted from required declared clause to OPTIONAL SHARPENING (polynomial 129^3 vs exponential 2^{129^3} cap)
+== T7: reverse holes — (REG-site) =/=> (RR), and the T1-d blocks->records clause is NOT absorbed ==
+  [PASS][A] static site-disjoint fiat records: (REG-site) True while (REG-dyn) and RR are False — site disjointness supplies no establishment, so the reverse arrow fails too
+  [PASS][C] two-block witness on the explicit 3-site chain: disjoint source blocks {0} and {2} both make the MIDDLE site delta-sensitive (measured), the per-e-fold RR facets all hold (RR, REG-tau True), yet the two blocks' records share register site 1 — 'independent disjoint source blocks register as disjoint records' FAILS: RR does not absorb the T1-d Boundary clause  -- sens_mid=0.6708/0.6708
+  [PASS][B] T1-d Boundary wording present verbatim in the parent note; (CAP-real)'s published wording ('each e-fold increment of W is realized by a finite record readout', quoted in the note) is per-e-fold realization and does NOT contain the blocks->records clause (string absent from the BR-license note) — so T1-d remains the parent Boundary, untouched by this consolidation
+== T8: the uniform threshold is load-bearing INSIDE RR (the delta facet) ==
+  [PASS][A] e-fold-dependent threshold delta_k = delta/2^k: D*(delta/2^k) - D*(delta) = k ln 2 exactly (sympy) and the reach N_k -> oo as k -> oo — a thresholdless or decaying-threshold RR variant loses k-uniformity, so RR's wording must (and does) carry ONE uniform supplied delta
+  [PASS][A] why delta lives inside RR while tau cannot: delta enters the lattice only as an operator-norm threshold (the sensitivity bound's free symbols are exactly {tau, delta, J_V, v} — no clock object; every sensitivity computed in this runner is an operator norm), while tau's MEANING requires the supplied clock map per the retained_no_go clock/rate interface — a typed asymmetry, not a preference
+== T9: consolidated chain completion — {RR, REG-tau} => (CAP-K) => (BR-int) => p = 0 (Lemma C recomputed) ==
+  [PASS][A] retained finite-sector identity recomputed on all 81 ordered disjoint pairs of a 4-sector model; unit-record normalization M = 1 (I(R_7) = 7) — the Lemma C ingredients recomputed, not cited blind  -- pairs=81
+  [PASS][A] (BR-int) point-selection recomputed: e-fold increment identity exact, increments unbounded for every p != 0 tested and constant for p = 0 — pass set on {s*g_p} exactly {p = 0}
+  [PASS][A] completion from the consolidated set: {RR, REG-tau} reproduces (CAP-real)+(REG-dyn)+(REG-thr) (T1 equivalence), the cone gives (CAP-K) with K = 129^3 (site reading, + REG-site) or 2^{129^3} (joint reading, no REG-site), both finite and k-uniform, and Lemma C + (BR-int) select p = 0 IDENTICALLY under both readings — (REG-site) changes K's value, never the pass set
+== T10: the minimal generating set over the full model library ==
+  [PASS][A] {RR, (REG-tau)} generates the consolidated clauses: across the entire model library (256 toggle models + 7 witness models) every model satisfying RR AND REG-tau also satisfies CAP-real, REG-dyn, and REG-thr — no countermodel exists in the library  -- library=263, rr&tau models=4
+  [PASS][A] minimality: RR alone has a chain-failing countermodel (T5: growing windows, counts 4^k uncapped) and (REG-tau) alone has one (T3/T4: supplied window with fiat or mismatched realization) — so {RR, (REG-tau)} is a MINIMAL generating set; the declared-clause inventory on the realization layer drops 5 -> 2 (+ (REG-site) as optional sharpening)
+== T11: walls, firewalls, ledger, honest scope ==
+  [PASS][B] record-scalar-map wall: 'The missing step is the middle arrow.' present verbatim in the retained_no_go; the note DECLARES RR (a quantitative slice of that middle arrow) and never derives it; forbidden derivation/closure strings absent  -- found=[]
+  [PASS][B] count-probability firewall: 'They cannot derive the model.' present verbatim; the note constructs no probability law (string present) and every sensitivity in this runner is an operator norm — counts appear only as exact witness arithmetic
+  [PASS][B] record-formation wall: the retained_no_go's claim ('does **not** hold unconditionally') present verbatim; the note states RR conditions on the realization and does not force records to form (the class may be empty)
+  [PASS][B] canonical-proposal no-dynamics guardrail: 'it disclaims the decoherence *process* that produces it' present verbatim in the proposal note; RR is a declared realization clause, not a derivation forcing record formation on any partition
+  [PASS][B] cited rows present in the audit ledger at the cited effective statuses (8 rows; unbounded Record audited_conditional); the CAP-K source note is on disk with its four (REG) clause labels, '(CAP-real) remains declared', and the association sentence quoted in this note; the BR-license and canonical-proposal notes are consumed as unaudited sources (presence + wording only, no grade asserted)  -- mismatches=[]
+  [PASS][B] note honest-scope and firewall-compliance strings present; the consolidation is presented as content-preserving bookkeeping over declared clauses (an implication-lattice theorem), not as a reduction of assumed content  -- missing=[]
+
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

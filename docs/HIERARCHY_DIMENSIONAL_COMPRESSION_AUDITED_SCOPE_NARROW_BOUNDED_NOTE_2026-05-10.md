@@ -152,18 +152,40 @@ This companion note does **not**:
   selected by best-match-to-`C_obs`;
 - extend the audited scope beyond what the parent already declares.
 
-## 2026-06-04 scorecard text repair
+## 2026-06-15 runner/source drift repair
 
-The live runner and SHA-pinned cache now expose five within-scope PASS gates,
-not the older two-gate scorecard text previously shown here. The extra gates
-are source-scope guards: D=4 versus D=16 non-degeneracy, the D=4-specific identity
-`1/D = 4/2^D`, failure of that identity at neighboring dimensions, and an
-explicit audit-transparency gate that the observed electroweak target values
-are printed only after the PASS conditions.
+The live runner and SHA-pinned cache expose seven within-scope PASS gates:
+five numerical/algebraic diagnostic gates and two source-firewall gates. A
+previous revision of this companion still said "5 pass", and the runner's
+source-firewall check read the parent
+`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md` instead of this companion. That
+created a real re-audit hygiene defect even though the underlying arithmetic
+did not change.
+
+This repair makes the runner inspect this companion note directly while still
+checking the parent source boundary, and aligns the expected scorecard with the
+cache:
+
+- the D=4 inverse compression `R^(-1/4)` is reproduced by independent `pow`
+  and `exp(-log/4)` routes;
+- the D=4 and D=16 inverse compressions are quantitatively nondegenerate;
+- `1/D = 4/2^D` holds at `D=4`;
+- the same identity fails at neighboring tested dimensions;
+- no PASS gate imports `v_obs`, `v_pred`, or `C_obs`;
+- the parent source preserves conditional-support/open-gate scope and the
+  companion source declares bounded numerical-diagnostic scope only;
+- both parent and companion source surfaces keep the D=4 readout /
+  effective-potential-density bridge open.
 
 This repair does not close the missing effective-potential-density bridge and
 does not promote the row. It only aligns the note's verification section with
 the current runner/cache so re-audit is not blocked by stale scorecard prose.
+
+**Source-firewall restatement.** This is a bounded numerical-diagnostic support
+note, not a derivation of the dimension-4 bridge. It does not derive the
+effective-potential-density bridge, does not turn the D=4 root into a forced
+framework consequence, and does not remove the fact that the D=4 candidate was
+selected by best-match-to-`C_obs` in the numerical diagnostic.
 
 ## Verification
 
@@ -176,7 +198,7 @@ PYTHONPATH=scripts python3 scripts/frontier_hierarchy_dimensional_compression.py
 Expected current runner scorecard:
 
 ```text
-SCORECARD: 5 pass, 0 fail out of 5
+SCORECARD: 7 pass, 0 fail out of 7
 ```
 
 The runner is the same one cited by the parent note. This narrowing

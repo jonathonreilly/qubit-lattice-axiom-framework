@@ -1,7 +1,14 @@
-# Testable Predictions Map
+# Historical Testable Predictions Map (Retracted)
 
-**Date:** 2026-04-05  
+**Date:** 2026-04-05
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/testable-ranking-stale-wrappers-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
 
 ## Retraction
 
@@ -15,19 +22,29 @@ Do NOT cite the numerical results, tables, or threshold values in the original c
 
 ---
 
+## 2026-06-16 archive firewall
+
+This archived packet is historical / diagnostic and retired as evidence. It is
+not a retained current map of testable predictions, not a stable ranking, and
+not authority that the cited one-hop notes are audit-clean.
+
+The only safe residue is editorial: it records candidate testable directions
+that may be reconsidered after a mechanically regenerated map separates
+audited-clean, conditional, bounded, unaudited, and failed dependencies.
+
 ## Purpose
 
-This note is a compact, adversarial map of the best current testable
-predictions across the retained science on `main`.
+This note was a compact editorial snapshot of candidate testable directions.
+It is retracted as a current retained map.
 
-The ranking is by **external testability and discriminator quality**, not by
-how exciting the lane feels internally.
+The old ranking claimed to use external testability and discriminator quality,
+but it was not mechanically regenerated from audit status and is not live.
 
 Each entry records:
 
 - observable
 - standard null
-- what is already retained
+- what the old snapshot cited as already retained
 - what still needs hardening
 - platform class: tabletop, analog-simulator, or theory-only
 
@@ -38,10 +55,10 @@ Each entry records:
 - Standard null: after calibration and static-background subtraction, the
   quasi-static instantaneous baseline gives `Y ≈ 0`, `phi ≈ 0`, and a flat
   phase profile
-- Already retained:
-  - [`docs/DIAMOND_SENSOR_PREDICTION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_SENSOR_PREDICTION_NOTE.md)
-  - [`docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md)
-  - [`docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md)
+- Historical cited authorities (not all retained/audit-clean here):
+  - [`docs/DIAMOND_SENSOR_PREDICTION_NOTE.md`](../../docs/DIAMOND_SENSOR_PREDICTION_NOTE.md)
+  - [`docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md`](../../docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md)
+  - [`docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md`](../../docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md)
   - the retarded / wavefield lane gives the motivation for a phase-sensitive
     discriminator
 - Still needs hardening:
@@ -63,8 +80,8 @@ Why it ranks first:
   charge-scaling exponent, and screening ratio
 - Standard null: exact opposite-sign superposition at the same node must cancel
   to printed precision; a separated +/- pair is a dipole, not a null
-- Already retained:
-  - [`docs/ELECTROSTATICS_CARD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ELECTROSTATICS_CARD_NOTE.md)
+- Historical cited authorities (not all retained/audit-clean here):
+  - [`docs/ELECTROSTATICS_CARD_NOTE.md`](../../docs/ELECTROSTATICS_CARD_NOTE.md)
   - sign antisymmetry ratio: `-1.000`
   - exact null: `PASS`
   - dipole orientation flip ratio: `-0.999`
@@ -89,8 +106,8 @@ Why it ranks this high:
   response ratio
 - Standard null: the same-site-memory control or zero-source baseline should
   give no coherent phase ramp and no large wave/same separation
-- Already retained:
-  - [`docs/SOURCE_RESOLVED_WAVEFIELD_ESCALATION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SOURCE_RESOLVED_WAVEFIELD_ESCALATION_NOTE.md)
+- Historical cited authorities (not all retained/audit-clean here):
+  - [`docs/SOURCE_RESOLVED_WAVEFIELD_ESCALATION_NOTE.md`](../../docs/SOURCE_RESOLVED_WAVEFIELD_ESCALATION_NOTE.md)
   - exact zero-source reduction survives
   - the detector-line ramp is coherent (`R^2 ~ 0.96`)
   - weak-field sign is `TOWARD`
@@ -111,8 +128,8 @@ Why it ranks high:
 
 - Observable: escape ratio and frontier-radius shift versus trap coupling
 - Standard null: `eta = 0` must reproduce the retained grown baseline exactly
-- Already retained:
-  - [`docs/GATE_B_GROWN_TRAPPING_FRONTIER_V2_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_TRAPPING_FRONTIER_V2_NOTE.md)
+- Historical cited authorities (not all retained/audit-clean here):
+  - [`docs/GATE_B_GROWN_TRAPPING_FRONTIER_V2_NOTE.md`](../../docs/GATE_B_GROWN_TRAPPING_FRONTIER_V2_NOTE.md)
   - escape falls monotonically with coupling
   - frontier-radius shift rises monotonically with coupling
 - Still needs hardening:
@@ -131,8 +148,8 @@ Why it ranks above the broader theory lanes:
 - Observable: node-count growth, frontier growth, mean radius growth, max
   radius growth
 - Standard null: the static control should stay flat in count and radius
-- Already retained:
-  - [`docs/GROWING_GRAPH_EXPANSION_CARD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GROWING_GRAPH_EXPANSION_CARD_NOTE.md)
+- Historical cited authorities (not all retained/audit-clean here):
+  - [`docs/GROWING_GRAPH_EXPANSION_CARD_NOTE.md`](../../docs/GROWING_GRAPH_EXPANSION_CARD_NOTE.md)
   - node count grows from `35` to `1369` over 16 steps
   - mean radius grows from `2.2837` to `14.1520`
   - log-slope fit for node count: `1.041` with `R^2 = 0.970`
@@ -155,8 +172,8 @@ Why it ranks here:
 - Observable: far-tail exponent `alpha` from the ordered 3D `1/L^2` family
 - Standard null: a far-tail fit that does not remain stable in the promoted
   window, or a near-field-only slope that fails the far-tail check
-- Already retained:
-  - [`docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md)
+- Historical cited authorities (not all retained/audit-clean here):
+  - [`docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md`](../../docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md)
   - Born is machine-clean
   - `k = 0` is clean
   - all tested rows are `TOWARD`
@@ -179,8 +196,8 @@ Why it still matters:
   on the split-shell family
 - Standard null: the compact bridge family and the static baseline should not
   be promoted as a closure if the weak-field law stays weak
-- Already retained:
-  - [`docs/SOURCE_RESOLVED_GENERATED_NEW_FAMILY_V2_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SOURCE_RESOLVED_GENERATED_NEW_FAMILY_V2_NOTE.md)
+- Historical cited authorities (not all retained/audit-clean here):
+  - [`docs/SOURCE_RESOLVED_GENERATED_NEW_FAMILY_V2_NOTE.md`](../../docs/SOURCE_RESOLVED_GENERATED_NEW_FAMILY_V2_NOTE.md)
   - the split-shell family widens support
   - `F~M` improves to `0.500` under the fixed-weight wavefield
 - Still needs hardening:
@@ -195,7 +212,7 @@ Why it is still worth tracking:
 - it shows that support geometry can be changed without losing exact
   zero-source reduction
 
-## Current ranking
+## Historical ranking snapshot (retracted)
 
 1. Diamond / NV lock-in quadrature protocol
 2. Electrostatics scalar sign-law card
@@ -203,21 +220,18 @@ Why it is still worth tracking:
 4. Wide-lattice distance law
 5. Generated-family bridge
 
-## Top 3 testables
+## Historical top-3 snapshot (retracted)
 
 - Diamond / NV lock-in quadrature protocol
 - Electrostatics scalar sign-law card
 - Exact-lattice wavefield phase-ramp discriminator
 
-## Bottom line
+## Historical bottom line (retracted)
 
-The cleanest current path to an outside experiment is the diamond protocol.
-The cleanest retained theory-side scalar sign-law discriminator is the
-electrostatics card.
-The cleanest retained theory-side phase discriminator is the exact-lattice
-wavefield phase ramp.
-The cleanest retained graph-growth spreading proxy is the growing-graph
-expansion card.
+The old bottom line selected diamond, electrostatics, wavefield phase ramp, and
+graph-growth entries as clean candidates. That selection is retracted as a
+current retained ranking and should be regenerated from the audit ledger before
+reuse.
 The cleanest grown-geometry strong-field observable is the trapping/frontier
 moment shift.
 

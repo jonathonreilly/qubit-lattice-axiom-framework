@@ -39,6 +39,8 @@ import sys
 import numpy as np
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__)))
+import frontier_lensing_h025_edge_kernel_certificate_2026_06_08  # noqa: F401
+import frontier_lensing_h025_source_packet_manifest_2026_06_09  # noqa: F401
 from kubo_continuum_limit import BETA, K_PER_H, PW_PHYS, SRC_LAYER_FRAC, grow
 from lensing_adjoint_kernel_probe import build_free_and_adjoint
 from lensing_adjoint_kernel_reduced_model import signed_edge_coefficients, exact_edge_sum, log_slope

@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_color_ray_adjoint_line_selector_boundary_2026_06_21.py
+runner_sha256: 0e85ceb7cdd7b348afd9a9e71807520924928fff4adbe294a1f8b3e220ce573d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.69
+status: ok
+----- stdout -----
+Route-2 color-ray adjoint-line selector boundary
+==============================================================================
+[EXACT] PASS: Gell-Mann half-generators have Tr(t_a t_b)=delta_ab/2
+    standard SU(3) adjoint coordinate normalization
+[CONDITIONAL] PASS: a supplied color ray produces a nonzero traceless adjoint element
+    H_psi=diag(-1/3,-1/3,2/3), Tr(H_psi^2)=2/3
+[CONDITIONAL] PASS: the color-ray adjoint line is a rank-one projector in the adjoint coordinate space
+    rank(P_line)=1, trace(P_line)=1
+[CONDITIONAL] PASS: the orthogonal complement has rank 7 and normalized fraction 7/8
+    rank(P_comp)=7, trace(P_comp)/8=7/8
+[CONDITIONAL] PASS: reading the color-ray complement as E-center excess gives the Route-2 endpoint triple
+    e_E=7/8, q_E=15/8, rho_E=21/4, c_TE=-8/9
+[FIREWALL] PASS: the color-ray adjoint line is gauge-covariant but not gauge-invariant
+    SU(3) rotation determinant=1, rank(P_rot-P_line)=2
+[FIREWALL] PASS: the selected H_psi line is moved by an adjoint generator
+    commutator [t_4,H_psi] is nonzero, so the line is not fixed by SU(3)
+[FIREWALL] PASS: no nonzero SU(3)-invariant traceless adjoint vector exists
+    linear system rank=9, traceless invariant dimension=0
+[TEXT] PASS: Route-2 current bank still names the missing typed source-domain bridge
+    source-domain bridge no-go keeps the R_conn -> c_TE edge absent
+[TEXT] PASS: June 12 Rconn bridge attempt keeps F_adj untyped as a Route-2 center readout
+    F_adj remains exact support, not a center-ratio selector
+[TEXT] PASS: current color-orientation surface rejects a named color direction as physical source data
+    a color ray would be exactly such an orientation datum
+[TEXT] PASS: color-density centrality forces depolarization, not a color ray
+    the current centrality route collapses the adjoint mean instead of selecting a line
+[TEXT] PASS: color-singlet/Fierz authorities supply 1+8 algebra, not a line inside the adjoint 8
+    available color algebra is singlet-vs-adjoint channel support only
+[TEXT] PASS: axis/cyclic label geometry remains an open bridge, not a color-ray source
+    shared Z3/axis labels do not supply an SU(3) adjoint line
+[TEXT] PASS: readout primitive bridge assessment still leaves unique P_R selection open
+    the conditional color-ray primitive would be a new selector, not current closure
+
+Verdict:
+A physical color ray is a sufficient non-invariant primitive for the single-adjoint-line/complement mechanism: it yields a rank-1 adjoint line, complement fraction 7/8, q_E=15/8, rho_E=21/4, and c_TE=-8/9 under the granted T-side Route-2 values. On the current source surface, however, such a color ray is not supplied: color orientation is gauge/predictively vacuous, depolarization routes erase traceless color mean, and Fierz/singlet authorities provide only 1+8 channel algebra. The result is conditional support plus a current-bank boundary, not a retained derivation of the endpoint triple.
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASS=15 FAIL=0 TOTAL=15
+
+----- stderr -----
+

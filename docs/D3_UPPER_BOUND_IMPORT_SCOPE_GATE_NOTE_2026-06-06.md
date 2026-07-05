@@ -25,17 +25,26 @@ selection packet:
 3. The decisive uniqueness step, on the current packet, is the intersection of
    the finite lower-bound support `{3,4,5}` with the native stable-orbit upper
    edge `d <= 3`, giving `{3}`.
-4. The weaker atomic-stability upper bound `d <= 4`, composed with the same
-   lower-bound support, gives `{3,4}`. Atomic stability is therefore companion
-   support here, not the unique-dimension selector unless the stronger
-   `d = 3` spectral statement is separately admitted and scoped.
+4. The weaker Coulomb Green-kernel scaling companion excludes `d >= 5` on
+   its admitted quadratic form and leaves `d = 4` marginal; composed with the
+   same lower-bound support, it gives `{3,4}`. Coulomb scaling is therefore
+   companion support here, not the unique-dimension selector.
 
-The gate prevents two overreads: "atomic stability alone selects `d = 3` from
-the current lower-bound packet" and "the framework has derived the full
-Bertrand closed-orbit theorem or full atomic-stability theorem." Neither
-follows from the current surfaces.
+The gate prevents two overreads: "the Coulomb companion alone selects `d = 3`
+from the current lower-bound packet" and "the framework has derived the full
+Bertrand closed-orbit theorem, hydrogen spectrum, or full atomic-stability
+theorem." Neither follows from the current surfaces.
 
 ## Existing Surfaces
+
+**Load-bearing one-hop authorities for re-audit:** the finite lower-bound
+packet is [`DIMENSION_SELECTION_NOTE.md`](DIMENSION_SELECTION_NOTE.md); the
+native stable-orbit upper edge is
+[`BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md);
+the weaker Coulomb Green-kernel scaling companion is
+[`COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md).
+Legacy wrapper filenames below are context for the route history, not
+additional load-bearing authorities for this gate.
 
 ### Lower-bound surface
 
@@ -54,17 +63,18 @@ framework must be reviewed separately.
 ### Upper-bound wrapper
 
 `DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md` keeps its
-legacy filename but now records a native stable-orbit source edge plus bounded
-Coulomb companion:
+legacy filename but now records a native stable-orbit source edge plus a
+bounded Coulomb Green-kernel scaling companion:
 
 | Route | Wrapper scope | Current composition with `{3,4,5}` |
 |---|---|---|
 | Native stable-circular-orbit edge | Green-kernel/effective-potential sign gives stable circular gravitational orbits only through `d <= 3` on the checked packet | `{3}` |
-| Atomic-stability upper bound | Stable hydrogen-like atoms require `d <= 4`; the canonical infinite-bound-state Coulomb spectrum exists only at `d = 3` | `{3,4}` for the weaker stability bound; `{3}` only if the stronger spectral statement is separately used |
+| Coulomb Green-kernel scaling companion | The admitted Green-kernel quadratic form is unbounded below for `d >= 5`, leaves `d = 4` marginal under scaling, and does not prove a hydrogenic spectrum | `{3,4}` for the weaker scaling companion |
 
 The wrapper explicitly does not prove the full Bertrand closed-orbit theorem,
-does not prove the full atomic-stability theorem, and does not give a
-framework-level derivation of `d = 3` from `Cl(3)` on `Z^3` alone.
+does not prove the full atomic-stability theorem or hydrogenic spectrum, and
+does not give a framework-level derivation of `d = 3` from `Cl(3)` on `Z^3`
+alone.
 
 ### Bounded support notes
 
@@ -104,9 +114,11 @@ lower-bound runner packet.
   whether the native stable-circular-orbit support edge is sufficient for the
   current finite packet or demand a stronger closed-orbit theorem.
 - A clean separation between the lower-bound runner packet and the upper-bound
-  native stable-orbit edge plus bounded Coulomb companion.
-- A guard against using the atomic-stability lane as a silent uniqueness
-  selector when only the weaker `d <= 4` stability statement is in scope.
+  native stable-orbit edge plus bounded Coulomb Green-kernel scaling
+  companion.
+- A guard against using the Coulomb scaling lane as a silent uniqueness
+  selector when only the weaker `d >= 5` exclusion / `d = 4` marginality
+  statement is in scope.
 - A narrow target for future work: either audit the native stable-orbit edge as
   sufficient for this finite packet, or build stronger native closed-orbit and
   atomic-stability theorems.
@@ -116,8 +128,10 @@ lower-bound runner packet.
 This note does not claim:
 
 - a framework-internal derivation of the full Bertrand closed-orbit theorem;
-- a framework-internal derivation of atomic stability;
-- a full dimension-selection theorem from `A_min`;
+- a framework-internal derivation of atomic stability or a hydrogenic
+  spectrum;
+- a full dimension-selection theorem from the current Lattice/Quantum/Record
+  baseline;
 - a derivation of a `Z^d` substrate from the current `Z^3` substrate;
 - a repo-wide audit verdict;
 - a change to any active review queue, audit ledger, lane registry, status
@@ -135,5 +149,5 @@ python3 scripts/cached_runner_output.py --refresh scripts/frontier_d3_upper_boun
 Expected summary:
 
 ```text
-SUMMARY: PASS=35 FAIL=0
+SUMMARY: PASS=34 FAIL=0
 ```

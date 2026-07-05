@@ -1,0 +1,12 @@
+===== runner cache v1 =====
+runner: scripts/h0125_archive_firewall_2026_06_16.py
+runner_sha256: cbf54764b564c47f97e398d37b873428a087f7eba6710a5c54800dbdee66df6e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+PASS: h0125 archive firewall holds
+
+----- stderr -----
+

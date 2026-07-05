@@ -1,27 +1,35 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.py
-runner_sha256: dfcdc170e92f3793468aef7c75d9d81e4d0eb2ebe3cee0cbbc51978c71df63c3
+runner_sha256: 0ec146e9fd08e673c4d663135ae51c7900ca17a83791d6a1e91ae0e3fc6d2549
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ============================================================================================
-FS stress-test: 'forced-modulo emergent-Lorentz + R', NOT a free admission needing a new principle
+FS stress-test: conditional 'forced-modulo emergent-Lorentz + R' route map
 ============================================================================================
+  [PASS] note declares open_gate / conditional-support stress-test
+  [PASS] note no longer declares bounded_theorem claim type
+  [PASS] note has 2026-06-18 open-gate source-scope repair
+  [PASS] note source-scope certificate keeps actual surface open
+  [PASS] note forbids branch-local retained proposal
+  [PASS] note has 2026-06-16 post-audit scope firewall
+  [PASS] note says runner does not derive realization/Lorentz/R residuals
+  [PASS] note declares route map/stress-test, not FS closure or new axiom
 
 [BLOCK 1] The spin-statistics ENGINE: spin-1/2 bosonic is inconsistent
   [PASS] spin-1/2 CAR Hamiltonian is bounded below (>=0)
   [PASS] spin-1/2 CCR attempt is UNBOUNDED below (has -E): inconsistent (Streater-Wightman)
-  [PASS] => spin-1/2 + Lorentz + positivity => fermionic FORCED; spin-0 hard-core boson excluded  --  the engine is rigorous (comparator: Pauli 1940; Streater-Wightman)
+  [PASS] comparator engine: spin-1/2 + Lorentz + positivity forces fermionic sign  --  Pauli/Streater-Wightman comparator; Lorentz/positivity are not derived here
 
 [BLOCK 2] The 4-link forcing chain + repo status (no new axiom)
       LINK A qubit spin-1/2         | RETAINED                     | per_site_su2_spin_half; = Clifford Spin(3) bivectors (internal_external_su2_merger)
-      LINK B algebra-3=spatial-3    | RETAINED (discrete)          | O_h vector rep on Cl(3); qubit=2D spinor 2pi=-1; continuum upgrade = LINK C
+      LINK B abstract O_h/Cl3       | SUPPORTED; external identification conditional | O_h vector rep on abstract Cl(3); algebra-3=spatial-3 remains realization-gate residual
       LINK C emergent Lorentz       | TARGET / bounded-conditional | emergent_lorentz_invariance retained_bounded; NOT a new axiom
       LINK D spin-statistics thm    | comparator (engine rigorous) | spin-1/2-bosonic inconsistent; Dirac-Kahler evaded
-  [PASS] LINK A retained; LINK B retained at discrete level (not the residual)
-  [PASS] residual = LINK C continuum upgrade + the reconstruction R (both buildable, NOT axioms)  --  R = free_field_os_wightman_reconstruction (unaudited; currently circular)
+  [PASS] LINK A retained; LINK B abstract O_h/Cl3 support is tight but external-spacetime identification remains residual
+  [PASS] residual = LINK-B realization gate + LINK-C continuum upgrade + reconstruction R (not derived by this runner)  --  R = free_field_os_wightman_reconstruction (unaudited; currently circular)
 
 [BLOCK 3] The last static opening (multi-loop graph-braid) is REFUTED (statistics-blind)
   [PASS] HCB (boson) survives the multi-loop cocycle
@@ -34,13 +42,13 @@ FS stress-test: 'forced-modulo emergent-Lorentz + R', NOT a free admission needi
   [PASS] NOT currently forced: the continuum/R route remains open => do not invoke it prematurely
 
 [BLOCK 5] Owner bottom line
-  [PASS] the current FS route does not need a new principle beyond Planck  --  it rides on emergent Lorentz (a TARGET) + R (buildable reconstruction)
-  [PASS] reclassify FS: 'forced-modulo emergent-Lorentz + R' (conditional on a target), NOT a free admission
+  [PASS] the current FS route adds no new axiom or primitive  --  it remains conditional on realization-gate identification + emergent Lorentz + R
+  [PASS] route map only: 'forced-modulo realization gate + emergent-Lorentz + R' is conditional, not closure
   [PASS] if a principle were ever forced, it is graded-locality/parity-superselection, not Record itself
   [PASS] no new axiom invented; all four FS no-gos remain concordant for the STATIC baseline only
 
 ============================================================================================
-SCORECARD:  PASS = 15   FAIL = 0
+SCORECARD:  PASS = 23   FAIL = 0
 ============================================================================================
 
 ----- stderr -----

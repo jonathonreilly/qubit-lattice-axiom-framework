@@ -371,7 +371,42 @@ This design-note does NOT claim:
   inflow from a 5D boundary) can close the gap. Other paths remain
   open.
 
-## 5. Forbidden imports respected
+## 5. Downstream source-boundary firewall
+
+Allowed downstream uses of this open-gate packet are limited to:
+
+- cite the note as a design map of three candidate substrate-side
+  primitives for the SM LH/RH content problem;
+- cite the exact Pauli-rep checks that P-LH-1, P-LH-2, P-LH-3 have
+  the recorded structural properties in their toy/source models;
+- cite the negative synthesis that no single candidate closes the
+  gap on the existing physical Cl(3)/Z^3 source-stack alone;
+- cite the follow-on open question: whether the Connes-Chamseddine
+  algebra, order-one condition, and KO-dim-6 real structure admit a
+  physical Cl(3)/Z^3-native derivation.
+
+Forbidden downstream uses without new retained bridge theorems:
+
+- do not cite this packet as a framework-derived SM LH/RH content theorem;
+- do not cite any candidate as an approved substrate primitive,
+  repo-wide axiom, primitive-list addition, retained surface, or status
+  promotion;
+- do not cite P-LH-1 as a framework-native order-one condition;
+- do not cite P-LH-3 as a framework-native KO-dim-6 real structure;
+- do not cite the Connes-Chamseddine derivation as imported into the
+  retained framework;
+- do not cite the P-LH-2 circular primitive as a derivation;
+- do not treat the motivating sibling probes as landed dependencies or
+  authority for this row.
+
+This row should be re-audited only after a source artifact supplies a
+framework-native derivation of the order-one condition, the KO-dim-6
+real structure, and the finite algebra `C ⊕ Cl⁺(3) ⊕ M_3(C)` from the
+physical Cl(3)/Z^3 baseline, or after a different explicitly approved
+primitive route closes the SM LH/RH content problem without importing
+those NCG structures.
+
+## 6. Forbidden imports respected
 
 - NO PDG observed values used as derivation input
 - NO lattice MC empirical measurements
@@ -381,7 +416,7 @@ This design-note does NOT claim:
 - NO HK + DHR appeal
 - NO same-surface family arguments
 
-## 6. Honest verdict
+## 7. Honest verdict
 
 **Net verdict: design-note records three candidate primitives. None
 is a clean single-primitive closure on the existing physical Cl(3)/Z^3 inputs.**
@@ -406,6 +441,29 @@ substrate-side derivation from the physical Cl(3)/Z^3 baseline. If yes, the LH-c
 gap reduces to "import order-one + KO-dim-6 as substrate primitives".
 If no, the gap remains the bundled open gate of the three NCG
 ingredients.
+
+## 2026-06-18 no-new-axioms underdetermination boundary
+
+[`P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md`](P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md)
+tests the no-new-axioms derivation route requested by the latest audit. Its
+runner uses the current `Lattice + Quantum + Record` baseline from
+[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) and finds the
+same source boundary from explicit countermodels:
+
+- the same `Cl(3)` chirality block admits both SM-like and Pati-Salam-like
+  `Cl⁺(3)` finite actions;
+- the one-site qubit algebra contains no nontrivial `M_3(C)` color factor;
+- both chirality-commuting and chirality-swapping antiunitary `J` choices exist
+  on the same finite block;
+- the order-one verdict depends on an extra finite Dirac/opposite-action
+  choice not supplied by the baseline.
+
+This new boundary does not approve or register the NCG primitives. It prunes
+only the current no-new-axioms derivation route for the order-one,
+KO-dim-6, and finite-algebra packet. The parent therefore remains an open
+gate unless those structures are derived by a separate retained bridge,
+explicitly approved as primitives, or bypassed by a different SM LH/RH content
+route.
 
 ```yaml
 claim_type_author_hint: open_gate

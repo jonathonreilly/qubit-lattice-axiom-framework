@@ -1,7 +1,9 @@
 # `alpha_s(v)` Forward-Computation Theorem over Declared Boundary Inputs, with Bounded `M_Z` Corollary
 
 **Date:** 2026-04-15 (status amended 2026-05-01; bounded source hint added
-2026-05-24; T1/C1 repair 2026-06-10)
+2026-05-24; T1/C1 repair 2026-06-10; B3 algebraic half grounded in the
+tadpole-improvement narrow theorem 2026-06-11; B3 operator-counting
+authority wired 2026-06-11)
 **Type:** bounded_theorem
 **Claim scope:** One load-bearing theorem plus one explicitly quarantined
 corollary.
@@ -92,21 +94,76 @@ claimed as derived by this note.
   downstream notes only as an admitted comparison/reuse number unless a
   separate retained MC certificate or analytic beta=6 closure is
   supplied." This note consumes the value exactly and only under that
-  license.
+  license. The specification note
+  `docs/PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md`
+  (follow-up reference) is hereby cited as B1's **declared
+  retirement interface**: its S0/T1 give the admission a precise
+  referent — the proven-to-exist infinite-volume number
+  `<P>* = 1 + f'(6)` with quantitative finite-size rate
+  `|f_L - f| <= 6*beta/L` — so `0.5934` stands for a well-defined
+  object rather than "the canonical lattice value". Its T2 reduces
+  retiring B1 to one certified three-point `ln Z_L` enclosure with a
+  proven, honestly priced error budget (`L ~ 3.7e5` for a rigorous
+  `0.01`-wide bracket under the unconditional rate), and its T3 closes
+  the rival convergent strong-coupling-expansion route at `beta = 6`
+  at the standard-certificate level. None of this changes B1's status
+  here: the value remains admitted, not derived, until that interface
+  is actually discharged.
 - **B2 (declared normalization).** `g_bare = 1` on the canonical
   same-surface chain, hence `alpha_bare = g_bare^2 / (4 pi) = 1 / (4 pi)`.
-- **B3 (declared structural input).** The tadpole-improved physical
-  coupling carries vertex power `n_link = 2`, i.e. the improvement
-  factor is `u_0^(-2)` (one factor of `u_0` per gauge link entering the
-  three-gluon vertex normalization). The derivation of this power is
-  the open target of the coupling-map lane
+- **B3 (declared structural input; algebraic half and operator-counting
+  authority wired 2026-06-11).** The load-bearing operator statement is
+  the channel actually supported in-repo: the gauge
+  vacuum-polarization channel
+  `Pi = -Tr[D^{-1} D' D^{-1} D']` of the staggered Dirac operator
+  contains exactly two insertions of the single-link vertex
+  `D' = dD/dA`; in the coupling-map parameterization this gives
+  `n_link = 2` for that vacuum-polarization channel and the improvement
+  factor `u_0^(-2)` for that channel. **One-hop authority for the
+  operator half:** [`YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md`](YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md),
+  consumed strictly within its named assumptions: the staggered-Dirac
+  realization gate and the conventional link-exponential map
+  `U_mu(x) = exp(i a g A_mu(x))` (with the lemma also using the
+  lattice-spacing-absorbed form `U_mu(x) = exp(i A_mu(x))`), plus the
+  lemma's bare-coupling-map identity admission for parameterizing
+  `alpha_eff = alpha_bare/u_0^{n_link}` by `n_link`.
+  **One-hop authority for the algebraic half:** the standalone
+  algebraic equivalences consumed by T1 — `alpha_LM = alpha_bare/u_0`,
+  `alpha_s(v) = alpha_bare/u_0²`, the vertex-power identities
+  `alpha_s(v)·u_0² = alpha_bare`, `alpha_LM·u_0 = alpha_bare`, and the
+  geometric-mean identity `alpha_LM² = alpha_bare·alpha_s(v)` on
+  abstract `(alpha_bare, u_0) ∈ R⁺ × R⁺` — are supplied by
+  [`ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md`](ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md)
+  (consumed strictly within its abstract-algebra scope; it supplies no
+  plaquette value, no scheme conversion, and no operator-level
+  justification of the power). The earlier three-gluon-vertex phrasing
+  is not used as load-bearing wording; no in-repo authority cited here
+  proves a three-gluon-vertex statement. What remains declared-not-derived
+  in B3 is the channel-selection step: identifying the
+  vacuum-polarization channel count as the vertex power entering the
+  physical coupling definition `alpha_s(v) := alpha_bare/u_0^2`. B3
+  also inherits the operator lemma's named assumptions and admission
+  until that lemma's audit lands. The channel-selection/coupling-map
+  retirement work remains tracked by
   `docs/ALPHA_S_CMT_COUPLING_MAP_DERIVATION_THEOREM_NOTE_2026-05-17.md`
-  (file-path reference only; not a one-hop authority here).
+  as a file-path pointer only; it is not a one-hop authority here.
 - **B4 (declared scheme/scale input).** The tadpole-improved
   lattice coupling `alpha_bare / u_0^2` is identified with the strong
   coupling `alpha_s` at the scale `mu = v = 246.282818290129 GeV`. This
   identification glosses a lattice-to-MSbar scheme conversion and a
   scale assignment; both are declared here, not derived.
+
+## B3 operator-wording repair (2026-06-11)
+
+The audit named the operator-level counting residue in B3. This edit
+reconciles the operator wording to the in-repo counting lemma: the
+supported statement is that the staggered-Dirac gauge
+vacuum-polarization channel contains exactly two single-link `D'`
+insertions, giving `n_link = 2` for that channel in the coupling-map
+parameter. The lemma is wired above as the named one-hop authority under
+its named assumptions and admission; the channel-selection identification
+from that vacuum-polarization count to the physical coupling definition
+`alpha_s(v) := alpha_bare/u_0^2` remains declared in B3.
 
 ## Theorem T1 (load-bearing)
 
@@ -135,7 +192,7 @@ form `1 / (4 pi sqrt(<P>))`, plus a third log-domain route) agreeing to
 | S1 | reuse `<P> = 0.5934` | licensed boundary input | [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md) reuse license (B1) |
 | S2 | `u_0 = <P>^(1/4) = 0.877681381` | (A) exact arithmetic | this note + dedicated runner |
 | S3 | `alpha_bare = g_bare^2/(4 pi) = 1/(4 pi)` | (A) over declared normalization | B2 (declared in this note) |
-| S4 | `alpha_s(v) = alpha_bare/u_0^2 = 1/(4 pi sqrt(<P>)) = 0.10330382`; `alpha_LM^2 = alpha_bare alpha_s(v)` | (A) exact arithmetic over boundary inputs | B3 + B4 (declared in this note) |
+| S4 | `alpha_s(v) = alpha_bare/u_0^2 = 1/(4 pi sqrt(<P>)) = 0.10330382`; `alpha_LM^2 = alpha_bare alpha_s(v)` | (A) exact arithmetic over boundary inputs | algebraic identities: [`ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md`](ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md); operator count `n_link = 2` for the staggered-Dirac gauge vacuum-polarization channel: [`YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md`](YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md) under the staggered-Dirac realization gate, link-exponential convention, and bare-coupling-map identity admission; channel-selection + scheme/scale: B3 + B4 (declared in this note) |
 | S5 | (C1 only) `v -> M_Z` standard 2-loop transfer: `alpha_s(M_Z) = 0.118067 ~ 0.1181` | bounded standard-infrastructure transfer | [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) (scoped to C1 only) |
 
 The load-bearing claim surface of this note is S1-S4 (theorem T1). S5
@@ -171,7 +228,7 @@ C1 is a corollary, not part of the T1 claim surface:
 
 ## Dependency-status declaration (one-hop license statements)
 
-This note has exactly three one-hop dependencies. The scope on which each
+This note has exactly four one-hop authorities. The scope on which each
 is consumed is:
 
 1. [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
@@ -179,7 +236,26 @@ is consumed is:
    and only under its explicit reuse license: `0.5934` enters as a
    declared reuse input. This note does not claim the value is
    derived, MC-certified, or analytically closed upstream.
-2. [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md)
+2. [`ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md`](ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md)
+   (claim
+   `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`).
+   Consumed at B3/S4 only for the abstract algebraic equivalences on
+   positive `(alpha_bare, u_0)`: `alpha_LM = alpha_bare/u_0`,
+   `alpha_s(v) = alpha_bare/u_0^2`, the associated inverse identities,
+   and `alpha_LM^2 = alpha_bare alpha_s(v)`. This note does not read
+   any plaquette value, scheme conversion, scale assignment, or
+   operator-level power count from that theorem.
+3. [`YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md`](YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md)
+   (claim `yt_vertex_power_operator_counting_lemma`). Consumed at
+   B3/S4 only for the statement that the staggered-Dirac gauge
+   vacuum-polarization channel contains exactly two single-link
+   `D' = dD/dA` insertions, giving `n_link = 2` for that channel under
+   the staggered-Dirac realization gate, link-exponential convention,
+   and bare-coupling-map identity admission.
+   This note does not read from the lemma a three-gluon-vertex statement
+   or the channel-selection identification into
+   `alpha_s(v) := alpha_bare/u_0^2`.
+4. [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md)
    (claim `qcd_low_energy_running_bridge_note_2026-05-01`; bounded
    transfer-map kernel over `D = [0.085, 0.130]`). **Scoped to
    corollary step S5 only.** T1 does not read, transfer, or depend on
@@ -188,14 +264,43 @@ is consumed is:
    as a first-principles derivation. Any change in that row's status
    resolves into this note by cascade on C1 alone; T1's claim surface
    is unaffected.
-3. [`GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
-   (claim
-   `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`).
-   Informational progress marker on the upstream plaquette analytic program (bounded
-   `rho_(p,q)(6)` coefficient table by two independent methods). Not
-   load-bearing for T1, because T1 consumes `<P> = 0.5934` as an
-   input (B1), not as a derived value; the citation records where B1's
-   retirement work currently stands.
+
+Plain-text progress pointer, not a one-hop authority:
+`docs/GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`
+records where B1's upstream plaquette analytic work currently stands.
+It is not load-bearing for T1, because T1 consumes `<P> = 0.5934` as an
+input (B1), not as a derived value.
+
+## 2026-06-12 Residual-Bridge Source Firewall
+
+The B3 algebraic identity and the B3 operator-counting half are now
+wired, but this row still cannot honestly promote beyond bounded
+forward arithmetic. The remaining promotion blockers are exact and
+source-visible:
+
+- **B1 remains an admitted plaquette value.** The bracket-reduction
+  program gives `<P>* = 1 + f'(6)` a framework-native referent and
+  reduces retirement to a certified three-point `ln Z_L` enclosure, but
+  this note does not supply that enclosure and does not derive
+  `<P> = 0.5934`.
+- **B3 still has a channel-selection residue.** The retained algebraic
+  theorem supplies the `u_0^{-2}` identities, and the operator-counting
+  lemma supplies the two-insertion vacuum-polarization channel count.
+  What is not derived here is the physical coupling-map theorem that
+  identifies that channel count as the vertex power in
+  `alpha_s(v) := alpha_bare/u_0^2`.
+- **B4 remains a scheme/scale bridge.** The lattice tadpole-improved
+  coupling is not proved here to be the MSbar strong coupling at
+  `mu = v`; the `v -> M_Z` corollary therefore stays standard
+  bounded-infrastructure context.
+
+Source-surface summary: this is bounded support only. It partially closes the
+direct blocker by preserving the T1 arithmetic over B1-B4, the B3 abstract
+algebraic identities, and the B3 vacuum-polarization two-insertion operator
+count. The live blockers remain the B1 plaquette-value certificate, the B3
+channel-selection/coupling-map theorem, and the B4 lattice-to-MSbar scheme and
+scale theorem. No retained-grade proposal or status promotion is made here;
+the independent audit lane remains the only authority for effective status.
 
 ## Why this is not a numerical match at a tuned scale
 
@@ -228,8 +333,12 @@ This note does **not** claim:
   `<P> = 0.5934` (declared under the upstream reuse license, B1);
 - a derivation of the lattice-to-MSbar scheme conversion or of the
   scale assignment `mu = v` (declared, B4);
-- a derivation of the vertex power `n_link = 2` (declared, B3; the
-  coupling-map lane referenced by file path is the derivation target);
+- a derivation of the channel-selection step that identifies the
+  staggered-Dirac gauge vacuum-polarization channel count as the vertex
+  power entering the physical coupling definition
+  `alpha_s(v) := alpha_bare/u_0^2` (declared, B3);
+- a derivation of the staggered-Dirac realization gate or the
+  link-exponential convention named by the operator-counting lemma;
 - a framework-native derivation of the QCD beta function, the quark
   mass thresholds, or `M_Z` (C1 standard infrastructure, one hop away
   in the bridge note);
@@ -254,8 +363,8 @@ python3 scripts/frontier_alpha_s_derived_bounded_chain.py
 Expected result (deterministic, pure Python, runtime under one second):
 
 ```text
-Breakdown: A=8 B=5 D=2
-TOTAL: PASS=15 FAIL=0
+Breakdown: A=8 B=9 D=2
+TOTAL: PASS=19 FAIL=0
 ```
 
 The runner computes T1 forward from the declared boundary inputs B1-B4 (the
@@ -292,3 +401,33 @@ terminal class-(D) section. Every check is tagged [A]/[B]/[D].
   verified and retained: `u_0 = 0.877681381`,
   `alpha_s(v) = 0.10330382`, 2-loop `-> 0.118067 ~ 0.1181`, envelope
   `~5e-4`.
+- **2026-06-10.** B1 retirement-interface citation (follow-up). The B1
+  admission paragraph now cites
+  `docs/PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md`
+  (follow-up reference) as the declared retirement interface
+  for B1: precise referent `<P>* = 1 + f'(6)` with proven finite-size
+  rate (S0/T1), bracket reduction to one certified three-point `ln Z_L`
+  computation with proven budget (T2), and closure of the rival
+  cluster-expansion route at `beta = 6` (T3). The admitted-reuse
+  license text is unchanged; B1's status (admitted, not derived) is
+  unchanged; runner untouched.
+- **2026-06-11.** B3 algebraic half grounded (audit-requested partial
+  repair of "supply one-hop authority for B3"). The
+  narrow theorem
+  [`ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md`](ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md)
+  is wired as the one-hop markdown authority for the abstract
+  algebraic equivalences T1 consumes (`alpha_LM = alpha_bare/u_0`,
+  `alpha_s(v) = alpha_bare/u_0²`, vertex-power and geometric-mean
+  identities on `R⁺ × R⁺`), strictly within its abstract scope. B1 (the
+  plaquette value, retirement interface unchanged) and B4 (the
+  scheme/scale bridge) remain declared open boundary inputs — those
+  are real derivation programs owned upstream, not citation gaps.
+- **2026-06-11.** B3 operator wording reconciled to the in-repo counting
+  lemma. The load-bearing operator statement is now the
+  staggered-Dirac gauge vacuum-polarization two-insertion count, with
+  [`YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md`](YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md)
+  wired as the one-hop markdown authority under its named assumptions
+  and admission. The three-gluon-vertex wording is removed from the
+  load-bearing statement; the channel-selection identification from the
+  vacuum-polarization count to `alpha_s(v) := alpha_bare/u_0^2` remains
+  declared in B3.

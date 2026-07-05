@@ -1,18 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g_bare_constraint_surface_check.py
-runner_sha256: b0efb09c328cd05c03c19afa512b963f439612a178ecfcc107edb9c35450fd16
+runner_sha256: 4133d9e27e21506a7c861f3e4e095c4a6d75fd681ea65369679510d1daa91157
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
+[PASS] source boundary marker present: conditional-support / bounded algebraic surface only
+[PASS] source boundary marker present: WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE
+[PASS] source boundary marker present: the local Wilson coefficient surface `beta = 6` at `N_
+[PASS] source boundary marker present: It may not cite this row as a retained derivation of t
+[PASS] source boundary marker present: conditional on that beta input
+[PASS] Wilson small-a theorem contains beta = 2 N_c / g_bare^2
+[PASS] Wilson small-a theorem keeps action-surface selection outside scope
 [PASS] local Wilson surface beta = 2 N_c = 6 for SU(3) (explicit bounded input) (beta = 6)
 [PASS] given CN + scoped WM + local beta = 6, g_bare^2 = 1 (exact) (g_bare^2 = 2 N_c / beta = 1)
 [PASS] alternative g^2 = 1/2 requires beta = 12 != 6 (changes the declared local Wilson beta = 6 surface)
 [PASS] alternative g^2 = 2 requires beta = 3 != 6 (changes the declared local Wilson beta = 6 surface)
 [PASS] alternative g^2 = 4 requires beta = 3/2 != 6 (changes the declared local Wilson beta = 6 surface)
-INFO scoped inputs: CN and WM are assumed by this bounded slice; dependency closure is owned by the audit pipeline.
-SUMMARY: PASS = 5, FAIL = 0
+INFO scoped inputs: CN and WM are sourced by cited bounded surfaces; beta=6 remains the explicit local input. Dependency closure is owned by the audit pipeline. The source firewall forbids treating this row as a beta=6 derivation.
+SUMMARY: PASS = 12, FAIL = 0
 Bounded-surface check passed; no retained status is asserted by this runner.
 
 ----- stderr -----

@@ -15,8 +15,9 @@ docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md
   - Identifying the Higgs with a single Hamming-weight class
     hw = k gives effective N_taste^(k) = binomial(4, k) and
     m_H_tree^(k) = v * sqrt(4 / (u_0^2 * binomial(4, k))).
-  - The five single-class values are pairwise distinct from the
-    uniform-N_taste = 16 value v^2 / (4 u_0^2). The "uniform 16"
+  - The five single-class assignments collapse to three distinct values
+    by binomial symmetry (k=0=4, k=1=3, k=2), and each is distinct from
+    the uniform-N_taste = 16 value v^2 / (4 u_0^2). The "uniform 16"
     choice is itself an admission, not a consequence of the
     staircase identity.
 
@@ -25,6 +26,7 @@ stdlib only; exact `Fraction` arithmetic for the squared values.
 
 from __future__ import annotations
 
+from decimal import Decimal, getcontext
 from fractions import Fraction
 from pathlib import Path
 import re
@@ -174,13 +176,23 @@ def part3_multiplicities() -> None:
 # ---------------------------------------------------------------------------
 # Part 4: Channel-assignment table — for each k ∈ {0,1,2,3,4}, compute
 # (m_H_tree^(k))^2 = v^2 · 4 / (u_0^2 · binomial(4, k)) at exact
-# Fraction precision, with the Higgs note's stated v and u_0 as exact
-# rationals.
+# Fraction precision, with the Higgs note's stated v and parent u_0 as
+# exact rationals.
 # ---------------------------------------------------------------------------
 # v = 246.22 GeV  ->  Fraction(24622, 100) = Fraction(12311, 50)
 V = Fraction(24622, 100)
-# u_0 = 0.8776   ->  Fraction(8776, 10000) = Fraction(1097, 1250)
-U0 = Fraction(8776, 10000)
+# B1 licensed reuse number: <P> = 0.5934 from
+# docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md, consumed only under that note's
+# downstream plaquette reuse license. Compute u_0 = <P>^(1/4) from the
+# plaquette, then use the parent note's nine-decimal boundary value exactly.
+PLAQUETTE = Fraction(5934, 10000)
+getcontext().prec = 50
+U0_FROM_P = (
+    (Decimal(PLAQUETTE.numerator) / Decimal(PLAQUETTE.denominator))
+    .sqrt()
+    .sqrt()
+)
+U0 = Fraction(877681381, 1000000000)
 
 
 def m_h_tree_squared(n_taste_int: int) -> Fraction:
@@ -201,8 +213,18 @@ def part4_channel_assignment_table() -> None:
         f"V = {V}",
     )
     check(
-        "u_0 = 0.8776 as exact Fraction(1097, 1250)",
-        U0 == Fraction(1097, 1250),
+        "plaquette B1 = 0.5934 as exact Fraction(2967, 5000)",
+        PLAQUETTE == Fraction(2967, 5000),
+        f"PLAQUETTE = {PLAQUETTE}",
+    )
+    check(
+        "u_0 = <P>^(1/4) rounds to parent input 0.877681381",
+        U0_FROM_P.quantize(Decimal("0.000000001")) == Decimal("0.877681381"),
+        f"computed {U0_FROM_P}",
+    )
+    check(
+        "u_0 = 0.877681381 as exact Fraction(877681381, 1000000000)",
+        U0 == Fraction(877681381, 1000000000),
         f"U0 = {U0}",
     )
     check(
@@ -210,8 +232,8 @@ def part4_channel_assignment_table() -> None:
         Fraction(24622, 100) == V,
     )
     check(
-        "u_0 stated = 8776 / 10000",
-        Fraction(8776, 10000) == U0,
+        "u_0 stated = 877681381 / 1000000000",
+        Fraction(877681381, 1000000000) == U0,
     )
 
     # Per-class squared values.
@@ -269,7 +291,7 @@ def part4_channel_assignment_table() -> None:
 
     # Spot-check the rounded numerical predictions against the table in
     # the note (read as approximate display).
-    expected_rounded = {0: 561.1, 1: 280.6, 2: 229.1, 3: 280.6, 4: 561.1}
+    expected_rounded = {0: 561.1, 1: 280.5, 2: 229.1, 3: 280.5, 4: 561.1}
     for k, target in expected_rounded.items():
         m_float = float(rows[k][1]) ** 0.5
         rounded = round(m_float, 1)
@@ -349,9 +371,10 @@ def part6_distinctness_from_uniform() -> None:
 # Part 7: Cited upstream files exist.
 # ---------------------------------------------------------------------------
 def part7_premise_class_consistency() -> None:
-    section("Part 7: cited upstream files exist on this branch")
+    section("Part 7: cited upstream files and value anchors exist on this branch")
     must_exist = [
         "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
+        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
         "docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md",
         "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
         "docs/MINIMAL_AXIOMS_2026-05-03.md",
@@ -361,6 +384,18 @@ def part7_premise_class_consistency() -> None:
             f"upstream exists: {rel}",
             (ROOT / rel).exists(),
         )
+    parent_text = (ROOT / "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md").read_text()
+    boundary_text = (
+        ROOT / "docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md"
+    ).read_text()
+    check(
+        "parent Higgs B1/C1 anchor states u_0 = <P>^(1/4) = 0.877681381",
+        "`u_0 = <P>^(1/4) = 0.877681381`" in parent_text,
+    )
+    check(
+        "boundary note has no stale displayed u_0 = 0.8776 literal",
+        "`u_0 = 0.8776`" not in boundary_text,
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -369,7 +404,7 @@ def part7_premise_class_consistency() -> None:
 def part8_forbidden_imports() -> None:
     section("Part 8: stdlib-only / no PDG-value pins in runner code")
     runner_text = Path(__file__).read_text()
-    allowed_imports = {"fractions", "pathlib", "re", "sys", "__future__"}
+    allowed_imports = {"decimal", "fractions", "pathlib", "re", "sys", "__future__"}
     import_lines = [
         ln.strip() for ln in runner_text.splitlines()
         if ln.strip().startswith("import ") or ln.strip().startswith("from ")
@@ -390,13 +425,13 @@ def part8_forbidden_imports() -> None:
         f"non-stdlib = {bad}" if bad else "stdlib only",
     )
 
-    # Note: this runner deliberately uses v = 246.22 and u_0 = 0.8776
-    # as Fraction placeholders matching the values stated in
-    # HIGGS_MASS_FROM_AXIOM_NOTE.md. These are not new PDG pins; they
-    # are the parent note's already-stated values. The pin-pattern
-    # search below excludes the explicit Fraction(...) construction.
-    # We check that no observable (m_X = float, alpha_X = float) is
-    # being introduced by this runner.
+    # Note: this runner deliberately uses v = 246.22 and the parent
+    # u_0 = <P>^(1/4) = 0.877681381 boundary value matching
+    # HIGGS_MASS_FROM_AXIOM_NOTE.md and the B1 plaquette reuse license.
+    # These are not new PDG pins; they are the parent note's already-stated
+    # values. The pin-pattern search below excludes the explicit Fraction(...)
+    # construction. We check that no observable (m_X = float, alpha_X = float)
+    # is being introduced by this runner.
     suspicious_floats = re.findall(
         r"\b(?:m_[a-z]+|alpha_[a-z]+|g_[a-z]+_obs)\s*=\s*\d+\.\d+\b",
         runner_text,
@@ -454,8 +489,9 @@ def main() -> int:
     banner("frontier_higgs_channel_effective_ntaste_boundary.py")
     print(" Bounded boundary statement: the Wilson Hamming-weight staircase")
     print(" does not by itself fix N_taste in HIGGS_MASS_FROM_AXIOM_NOTE.md")
-    print(" formula [5]; the five single-class assignments give five")
-    print(" distinct m_H_tree values, none matching the uniform-16 admission")
+    print(" formula [5]; the five single-class assignments give three")
+    print(" distinct m_H_tree values (k=0=4, k=1=3, k=2), none matching")
+    print(" the uniform-16 admission")
     print(" that produces the existing 140.3 GeV headline.")
 
     part1_note_structure()
@@ -476,8 +512,9 @@ def main() -> int:
         print()
         print(" VERDICT: the Wilson Hamming-weight staircase does not by itself")
         print(" fix N_taste in HIGGS_MASS_FROM_AXIOM_NOTE.md formula [5]; the")
-        print(" five single-class assignments give five distinct m_H_tree")
-        print(" values, none of which coincides with the uniform-16 admission")
+        print(" five single-class assignments give three distinct m_H_tree")
+        print(" values (k=0=4, k=1=3, k=2), none of which coincides")
+        print(" with the uniform-16 admission")
         print(" that produces the existing 140.3 GeV headline.")
     return 0 if FAIL == 0 else 1
 

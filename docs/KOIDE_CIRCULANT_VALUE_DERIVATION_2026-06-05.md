@@ -1,8 +1,8 @@
 # Koide value of a C3-equivariant generation mass operator
 
 **Date:** 2026-06-05
-**Type:** derivation
-**Claim type:** theorem (conditional on the supplied generation carrier and
+**Type:** bounded_theorem — derivation
+**Claim type:** bounded_theorem — theorem (conditional on the supplied generation carrier and
 readout context).
 **Status authority:** independent audit lane only. This note does not set or
 predict the ledger outcome.

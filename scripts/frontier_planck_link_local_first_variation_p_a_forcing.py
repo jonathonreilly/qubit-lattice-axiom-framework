@@ -2,10 +2,11 @@
 """Link-local first-variation route for forcing P_A.
 
 This runner tests a route not covered by the abstract symmetry and boundary
-incidence no-gos: the primitive active response is taken from the retained
-microscopic action surface itself. The finite Grassmann/staggered-Dirac
-action is link-local: each primitive local term is labelled by exactly one
-axis/link variable. Its first variation therefore has one-axis support.
+incidence no-gos: the primitive active response is taken from an explicit
+link-local microscopic action-source surface. The finite
+Grassmann/staggered-Dirac action-source premise is link-local: each primitive
+local term is labelled by exactly one axis/link variable. Its first variation
+therefore has one-axis support.
 
 The Hodge-dual P_3 sector is still a valid flux/face representation, but it is
 not in the fundamental first-variation source domain of the action. It appears
@@ -15,12 +16,15 @@ only after Hodge duality or higher composite/third-variation data.
 from __future__ import annotations
 
 from itertools import combinations, product
+from pathlib import Path
 
 import numpy as np
 
 TOL = 1.0e-10
 AXES = ("t", "x", "y", "z")
 SPATIAL = (1, 2, 3)
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md"
 
 
 def bits_list() -> list[tuple[int, int, int, int]]:
@@ -216,7 +220,7 @@ def first_variation_vector() -> np.ndarray:
 
 
 def source_derivative_images() -> list[np.ndarray]:
-    """Images of dS_link(du_a) for the retained one-link source variables."""
+    """Images of dS_link(du_a) for the one-link source variables."""
     images = []
     for term in link_local_action_terms():
         vec = np.zeros((DIM, 1), dtype=complex)
@@ -308,7 +312,7 @@ def main() -> int:
     print("PLANCK LINK-LOCAL FIRST-VARIATION P_A FORCING")
     print("=" * 78)
     print()
-    print("Question: does the retained link-local action response force P_A?")
+    print("Question: does a link-local action-source response select P_A?")
     print()
 
     p1 = projector_weight(1)
@@ -327,7 +331,7 @@ def main() -> int:
     monomials = [term["monomial"] for term in action_terms]
     results.append(
         check(
-            "1. retained local action terms are one-link / one-axis source terms",
+            "1. action-source terms are one-link / one-axis source terms",
             len(action_terms) == 4 and degrees == [1, 1, 1, 1] and set(monomials) == set(axis_monomial(a) for a in range(4)),
             f"terms={[(AXES[t['axis']], t['source_degree'], t['monomial']) for t in action_terms]}",
         )
@@ -414,7 +418,37 @@ def main() -> int:
         check(
             "8. forbidden-input boundary",
             not any(forbidden_inputs.values()),
-            "uses A_min link-local action support, anomaly time axis, and finite exterior algebra only",
+            "uses link-local action-source support, anomaly time axis, and finite exterior algebra only",
+        )
+    )
+
+    note_text = NOTE.read_text(encoding="utf-8")
+    note_flat = " ".join(note_text.split())
+    results.append(
+        check(
+            "9. source note is bounded/conditional, not a retained candidate",
+            "**Status:** bounded-support action-source bridge" in note_text
+            and "**Claim type:** bounded_theorem" in note_text
+            and "not retained on the current authority surface" in note_flat
+            and "proposed_retained" not in note_text,
+            "status boundary is explicit",
+        )
+    )
+    results.append(
+        check(
+            "10. source note cites the split conditional algebra bridge",
+            "LINK_LOCAL_FIRST_VARIATION_SELECTOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-10.md" in note_text
+            and "one-link source map plus the active-response/support bridge selects `P_1`" in note_flat,
+            "selector algebra is separated from source-domain premise",
+        )
+    )
+    results.append(
+        check(
+            "11. source note does not add an axiom or audit verdict",
+            "not a repo-wide axiom" in note_flat
+            and "does not set or predict an audit verdict" in note_flat
+            and "independent audit lane" in note_flat,
+            "review/audit authority remains external",
         )
     )
 
@@ -427,11 +461,13 @@ def main() -> int:
     print()
     print(
         "Verdict: PASS. The primitive action response is link-local and first "
-        "variational, so its support is uniquely P_1=P_A among the local "
-        "rank-four equivariant projector classes. The Hodge-dual P_3 remains "
-        "a valid flux/face representation, but it is not a fundamental "
-        "one-link action variation. On the selected rank-four packet the "
-        "standard Cl_4(C) module/CAR carrier is unique up to automorphism."
+        "variational on the stated action-source premise, so its support is "
+        "uniquely P_1=P_A among the local rank-four equivariant projector "
+        "classes. The Hodge-dual P_3 remains a valid flux/face representation, "
+        "but it is not a fundamental one-link action variation. On the "
+        "selected rank-four packet the standard Cl_4(C) module/CAR carrier is "
+        "unique up to automorphism. This is bounded/conditional support, not "
+        "an audit verdict or retained-grade promotion."
     )
     return 0
 

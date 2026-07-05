@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/frontier_declared_rg_map_uniform_chain_band_edge_2026_06_12.py
+runner_sha256: 2594f7af5f69281330daedd3d371502cb29f5dc7559e23c6edd83127ec2cadb5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+[PASS] W1a CLOSURE: uniform+NN Schur output; max_residual=0; max_|element|-t^2/|mu|=0; mu>2t t=0.10000000000000001 mu=1 diag'=0.97999999999999998 t'_element=-0.010000000000000002; mu>2t t=0.20000000000000001 mu=1 diag'=0.91999999999999993 t'_element=-0.040000000000000008; mu>2t t=0.45000000000000001 mu=1 diag'=0.59499999999999997 t'_element=-0.20250000000000001; mu<2t t=0.55000000000000004 mu=1 diag'=0.39499999999999991 t'_element=-0.30250000000000005; mu<2t t=0.65000000000000002 mu=1 diag'=0.15499999999999992 t'_element=-0.42250000000000004; mu<2t t=0.80000000000000004 mu=1 diag'=-0.28000000000000025 t'_element=-0.64000000000000012
+[PASS] W1b THE MAP inference grid: actual Schur g' versus g^2/(1-2g^2); max_error=0; max_closure_residual=0; g=0.050000000000000003 -> 0.0025125628140703522; g=0.14999999999999999 -> 0.02356020942408377; g=0.29999999999999999 -> 0.1097560975609756; g=0.45000000000000001 -> 0.34033613445378152; g=0.59999999999999998 -> 1.2857142857142856
+[PASS] W1b THE MAP disjoint validation grid: disjoint=True; max_error=0; max_closure_residual=0; g=0.10000000000000001 -> 0.010204081632653064; g=0.25 -> 0.071428571428571425; g=0.40000000000000002 -> 0.2352941176470589; g=0.55000000000000004 -> 0.76582278481012689; g=0.65000000000000002 -> 2.7258064516129048
+[PASS] W1c FIXED POINTS exact: g*=0 -> 0; g*=1/2 -> 0.5; analytic derivative=4; numerical derivative=4.0000000000040004
+[PASS] W1d E=0 RESOLVENT-THRESHOLD WITNESS (commensurate finite-N witness, not the proof): below g=0.48999999999999999 min|eig|=0.019999999999999768 resolvent exists; above g=0.50547095989754365 min|eig| N=64 0.0060739581327393889 -> N=128 2.7679515251665588e-17; unstable fixed point g*=1/2 is the E=0 resolvent-threshold boundary
+[PASS] W1e CHART + POLES: E=0 spectral/resolvent chamber boundary: g0=0.45 eight-step monotone flow: 0.45000000000000001, 0.34033613445378152, 0.15075134414778732, 0.023808091607055337, 0.00056746853693329493, 3.2202074780380476e-07, 1.0369736201614313e-13, 1.0753142889107045e-26, 1.1563008199355341e-52; theorem fixed points 0 and 1/2, and the band edge 1/2, lie inside declared chart |g|<1/sqrt(2)=0.70710678118654746; upper side g0=0.55 exits the declared chart at iterate 1, passes |g|>1 at iterate 2, denominator sign changes between iterates 0 and 1; poles at +/-1/sqrt(2); high flow: 0.55000000000000004, 0.76582278481012689, -3.3906901343214284, -0.52273392842172539, 0.60253952743275108, 1.3255355016125769
+[PASS] W1f EXACTNESS INHERITED: retained-site E=0 resolvent errors over two steps: step1=2.2204460492503131e-16, step2=2.2204460492503131e-16
+[PASS] W1g COMPOSITION WITH THE LANDED MIGRATION: staggered mass after step 1=0; landing mu=1.4281666666666666, t=-0.11408333333333333, NN matrix element=0.11408333333333334; residual=0
+[PASS] W1h RESOLVENT LENGTH EXPONENT: nu=ln b/ln(dg'/dg at g*)=ln2/ln4=0.5
+[PASS] W1i SIGN QUOTIENT |g| FROM t->-t UNITARY EQUIVALENCE: N=16 staggered gauge c_j->(-1)^j c_j; declared flow space is quotient |g|; t=0.23000000000000001 mu=1 spectrum_error=0 unitary_residual=0; t=0.60999999999999999 mu=1.3 spectrum_error=0 unitary_residual=0
+[PASS] W1j SIGNED FIXED-POINT SET {0, 1/2, -1}: g = g^2/(1-2g^2) gives g(2g^2+g-1)=0; on the quotient, signed point -1 reads |g|=1 outside the declared chart; g=0 map_error=0 polynomial_residual=0; g=0.5 map_error=0 polynomial_residual=0; g=-1 map_error=0 polynomial_residual=0
+[PASS] W1k CONTINUED QUOTIENT MAP PROBES OUTSIDE DECLARED CHART: continued |g'|=g^2/|1-2g^2| has |g|=1 -> 1 with fixed_error=0, labeled outside declared chart |g|<1/sqrt(2)=0.70710678118654746; signed evenness probe g=-0.3 versus +0.3 error=0
+[PASS] W1l DIVERGING E=0 RESOLVENT LENGTH HAS NU=1/2 UNDER THE MAP: N=128 fit over r=8..24 for |[(h-0)^-1]_{0,r}| decay: g=0.29999999999999999 measured_1/xi=1.0986122886681096 analytic_1/xi=1.0986122886681098 relerr=2.0211370946362213e-16; g=0.40000000000000002 measured_1/xi=0.69314718055994506 analytic_1/xi=0.69314718055994529 relerr=3.2034265038149176e-16; g=0.45000000000000001 measured_1/xi=0.46714530810326194 analytic_1/xi=0.46714530810326216 relerr=4.7532234847138505e-16; near-edge analytic scaling: g=0.47999999999999998 xi*sqrt(1/2-g)=0.49158904839651907; g=0.48999999999999999 xi*sqrt(1/2-g)=0.49581411954330246; composition xi'=xi/2 probes: g=0.48999999999999999 g'=0.46190842631781448 xi(g')/xi(g)=0.49999999999999989; g=0.495 g'=0.48048828316501613 xi(g')/xi(g)=0.500000000000001
+SCOPE: free sector, 1D, E=0 slice, projective fixed-energy Schur RG convention (b=2, quotient |g|=|t/mu|, chart |g|<1/sqrt(2)); agreement at the double-precision floor (measured 0.0 in these instances); the unstable fixed point is the E=0 resolvent-threshold chamber boundary with eigenvalue 4 and length exponent nu=1/2, while the upper side exits the declared chart. NOT claimed: interacting RG, d=3, universality beyond this declared convention, gauge sectors. Statuses pipeline-derived; audit lane grades.
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

@@ -173,6 +173,13 @@ nearest low rational to the live E endpoint => theorem-grade scalar law.
 Nearest-rational selection is bounded candidate evidence unless the endpoint
 ratio itself is derived.
 
+The companion
+`QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md` broadens this
+negative boundary from the minimal naturality frames to the whole
+E-center-blind endpoint class: any constraint set that does not evaluate the
+E-center column is invariant under changing `rho_E`. This preserves the
+positive target while making the necessary new ingredient explicit.
+
 ## 8. What Remains Open
 
 The right 3B theorem target is now sharper:

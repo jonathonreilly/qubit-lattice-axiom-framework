@@ -1,5 +1,7 @@
 # Z_3 Cubic Right-Sensitive Selector — Obstruction Theorem
 
+**Claim type:** no_go
+
 **Date:** 2026-04-17
 **Status:** **obstruction theorem** — narrowed gap, no theorem-grade closure
 **Script:** `scripts/frontier_dm_neutrino_source_surface_cubic_variational_obstruction.py`

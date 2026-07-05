@@ -66,7 +66,7 @@ Examples:
   registered `kinetic_isotropy_primitive` grants only structural OS0
   kinetic-form isotropy `c_t = c_s`; it does not supply dynamics, a
   Lorentz-closure theorem, scale, spacing-ratio theorem, selector, or empirical
-  content.
+  content. The registered `realized_state_primitive` grants only pointwise evaluation at a supplied law-admissible realized state; it does not supply a state, state-selection rule, measure, typicality or genericity assumption, weighting, probability rule, or any state-contingent value (quantities that vary across the law-admissible family remain registered data).
 - Do not apply audit verdicts, promote claims, add axioms/primitives, or
   declare the wall solved without an actual proof, runner, or decisive no-go
   artifact.

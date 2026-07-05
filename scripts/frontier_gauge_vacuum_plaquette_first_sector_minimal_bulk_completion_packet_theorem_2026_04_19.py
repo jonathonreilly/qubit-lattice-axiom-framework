@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 """
-Selected Wilson/Perron packet under the minimal-bulk completion principle.
+Selected Wilson/Perron packet on the bounded zero-extension witness surface.
+
+This runner no longer treats the sibling minimal-bulk completion principle as
+a universal least-positive completion theorem.  The principle note was
+narrowed by audit to runner-tested zero-extension/witness families, with the
+universal Loewner-minimality step left open.  The checks below certify only
+the explicit packet obtained on that narrowed surface.
 """
 
 from __future__ import annotations
@@ -54,6 +60,10 @@ def read(rel_path: str) -> str:
     return (ROOT / rel_path).read_text()
 
 
+def normalized(text: str) -> str:
+    return " ".join(text.lower().split())
+
+
 def selected_transfer_and_packet() -> dict[str, np.ndarray | float]:
     rho_ret, _z00 = retained_packet()
     jmat, weights, index = build_recurrence_matrix(5)
@@ -88,17 +98,17 @@ def main() -> int:
     print("=" * 118)
     print()
     print("Question:")
-    print("  What explicit Wilson/Perron first-layer packet is selected once the least")
-    print("  positive bulk completion principle is imposed?")
+    print("  What explicit Wilson/Perron first-layer packet is obtained on the narrowed")
+    print("  zero-extension/witness surface of the minimal-bulk completion principle?")
 
     principle_note = read("docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PRINCIPLE_THEOREM_NOTE_2026-04-19.md")
-    dm_note = read("docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_FIRST_HANKEL_TO_DM_BOUNDARY_NOTE_2026-04-19.md")
-    principle_is_theorem_native = (
-        "least positive bulk completion" in principle_note
-        or (
-            "Loewner-minimal positive extension" in principle_note
-            and "canonically fixed" in principle_note
-        )
+    principle_text = normalized(principle_note)
+    principle_is_bounded_witness_surface = (
+        "runner-tested witness families" in principle_text
+        and "zero-extension packet" in principle_text
+        and "universal loewner-monotonicity" in principle_text
+        and "open derivation gap" in principle_text
+        and "does not promote a new axiom" in principle_text
     )
 
     pkg = selected_transfer_and_packet()
@@ -119,8 +129,8 @@ def main() -> int:
     print()
 
     check(
-        "The minimal-bulk completion theorem already selects one unique full extension rho_ext inside the canonical Wilson factorized class",
-        principle_is_theorem_native,
+        "The sibling minimal-bulk completion principle is narrowed to a bounded zero-extension/witness surface and leaves universal Loewner minimality open",
+        principle_is_bounded_witness_surface,
     )
     check(
         "That selected extension yields one positive self-adjoint conjugation-symmetric factorized transfer operator",
@@ -139,7 +149,7 @@ def main() -> int:
         f"(alpha0,beta1)=({pkg['alpha0']:.6f},{pkg['beta1']:.6f})",
     )
     check(
-        "So once the new completion principle is adopted, the Wilson-side first-layer packet feeding the already-closed DM boundary is explicit",
+        "So on the narrowed zero-extension/witness surface, the Wilson-side first-layer packet is explicit",
         pkg["beta1"] > 0.0,
         f"(m1,m2)=({pkg['m1']:.6f},{pkg['m2']:.6f})",
     )
@@ -147,13 +157,13 @@ def main() -> int:
     print("\n" + "=" * 118)
     print("RESULT")
     print("=" * 118)
-    print("  Selected Wilson/Perron packet under the new principle:")
+    print("  Selected Wilson/Perron packet on the narrowed zero-extension/witness surface:")
     print(f"    - alpha0 = {pkg['alpha0']:.15f}")
     print(f"    - beta1  = {pkg['beta1']:.15f}")
     print(f"    - m1     = {pkg['m1']:.15f}")
     print(f"    - m2     = {pkg['m2']:.15f}")
     print("    - this is now the explicit first-layer packet of the selected")
-    print("      factorized-class completion branch")
+    print("      factorized-class zero-extension witness branch")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1

@@ -1,525 +1,709 @@
-# Symmetric-Point Per-Channel Curvature Scale `m_curv_tree` from V_taste — Complete Derivation with N_c Tracking
+# Symmetric-Point Per-Channel Curvature Scale `m_curv_tree` from V_taste — Structural Theorem over Declared Boundary Inputs, with N_c Tracking
 
-**Date:** 2026-04-14 (originally); 2026-05-03 (review-loop repair); 2026-05-10 (Gap #3 lite — demote `m_H_tree` to `m_curv_tree`)
-**Status:** TREE-LEVEL MEAN-FIELD per-channel curvature scale on the canonical surface. NOT a Higgs-mass prediction. The downstream bounded Higgs route is tracked in `HIGGS_MASS_DERIVED_NOTE.md` (full 3-loop SM RGE from `λ(M_Pl) = 0`; audit status remains ledger-owned).
+**Date:** 2026-04-14 (originally); 2026-05-03 (review-loop repair);
+2026-05-10 (Gap #3 lite — demote `m_H_tree` to `m_curv_tree`); 2026-06-11
+(theorem/boundary-input restructure — see changelog below)
 **Claim type:** bounded_theorem
-**Resolves:** color-factor dispute (does 8/9 enter the Higgs sector? Answer: no, N_c cancels in the per-channel curvature scale)
-**Scripts:**
-- `scripts/higgs_tree_level_mean_field_runner_2026_05_03.py` — primary runner for THIS note's tree-level formula `m_curv_tree = v/(2 u_0) = 140.3 GeV` on the canonical surface (post-2026-05-03 repair; post-2026-05-10 demotion).
-- `scripts/frontier_higgs_mass_corrected_yt.py` — separate corrected-y_t RGE route giving 119.93 GeV (a DIFFERENT observable; not a verifier for this note).
-- `scripts/frontier_higgs_buttazzo_calibration.py` — full-3-loop calibration (also separate).
+**Claim scope:** one load-bearing structural theorem (T1), one declared
+definition (D1), one bounded numeric corollary (C1), and a fenced
+class-D comparator appendix.
+(T1, load-bearing) On the declared minimal-block mean-field surface
+(boundary inputs B3/B4), the per-color staggered taste operator
+satisfies `D^2 = -4 u_0^2 I`; all `N_taste = 16` taste eigenvalues are
+`+/- 2 i u_0` (multiplicity 8 each); `det(D + m) = (m^2 + 4 u_0^2)^8`
+per color; hence `V_taste(m) = -(N_taste/2) log(m^2 + 4 u_0^2)`,
+`V_taste''(0) = -N_taste/(4 u_0^2)`, per-channel magnitude
+`1/(4 u_0^2)`, and every per-color quantity is exactly
+N_c-independent. The registered runner recomputes this entire chain
+from primitives in exact arithmetic; nothing in T1 is imported as a
+formula.
+(D1, declared definition) `m_curv_tree^2 := (|V_taste''(0)|/N_taste) v^2
+= v^2/(4 u_0^2)`. This is a defined diagnostic scale, NOT an observable
+identification.
+(C1, bounded corollary) At the declared inputs B1/B2,
+`m_curv_tree = v/(2 u_0) = 140.3 GeV`. NOT a Higgs-mass prediction.
+**Resolves:** color-factor dispute (does 8/9 enter the Higgs sector?
+Answer: no, N_c cancels in the per-channel curvature scale)
+**Status authority:** independent audit lane only. This source note does
+not set or predict an audit outcome.
+**Primary runner:**
+`scripts/higgs_tree_level_mean_field_runner_2026_05_03.py` — recomputes
+T1 from framework primitives (Clifford generators, eta-phase staggered
+operator on the 2^4 block, exact characteristic polynomial and
+determinants), checks D1/C1 readout algebra with sensitivity and
+anti-tuning certificates, and quarantines all PDG comparators in a
+terminal class-D section. Deterministic, stdlib-only, < 1 s.
+**Non-verifier scripts (different observables; context only):**
+`scripts/frontier_higgs_mass_corrected_yt.py` (corrected-y_t RGE route,
+119.93 GeV) and `scripts/frontier_higgs_buttazzo_calibration.py`
+(full-3-loop calibration, ~125.1 GeV) compute DIFFERENT observables
+along different chains and are not verifiers for this note.
 
-## What this note is and is NOT (2026-05-10 demotion)
+## Changelog — why this note was repaired (2026-06-11)
 
-**This note derives** a per-channel symmetric-point curvature scale of V_taste on the canonical mean-field surface:
+The 2026-05-29 fresh-look record found that the prior surface was
+definition-plus-substitution rather than a standalone theorem:
+the load-bearing step as then written was the *definition*
+`m_curv_tree^2 := curvature x v^2`, the runner hard-coded the canonical
+inputs `U_0 = 0.8776`, `V_GEV = 246.22`, `N_TASTE = 16`, and the
+one-hop packet did not close the V_taste determinant/eigenvalue
+construction. This restructure fixes six defects:
+
+1. **(Critical) Hidden external scale in the headline.** The prior text
+   attributed `v = 246.22 GeV` to "the bounded hierarchy formula". That
+   was a miscitation: `246.22` is the PDG-observed EW VEV, while the
+   hierarchy lane's bounded formula yields `246.282818290129 GeV` under
+   its own admissions and is itself only a bounded numerical-match row
+   (`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`, file-pointer
+   context). Fix: `v` is now boundary input B2, a declared external EW
+   VEV scale that this note does not derive, with an insensitivity
+   certificate (both candidate values give `140.3` at headline
+   precision; spread `0.026%`).
+2. **(Critical) Dead one-hop authorities.** The Dependencies section
+   cited `TASTE_POLYNOMIAL_NOTE.md`, `DM_AMGM_SATURATION_NOTE.md`, and
+   `HIERARCHY_THEOREM.md`, none of which exists on disk; the
+   "eigenvalue degeneracy theorem" had no live authority. Fix: the
+   runner now recomputes the determinant/eigenvalue content from
+   primitives (T1), and the dead citations are removed. The named
+   sister derivation lane for the taste count and W(J) form is
+   `HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
+   (file-pointer context; unaudited, so not a one-hop authority here —
+   T1 does not consume it).
+3. **(High) Definition presented as the load-bearing step.** Fix:
+   theorem/definition/corollary split. T1's load-bearing content is the
+   computed operator-to-curvature chain with exact N_c cancellation;
+   D1 is explicitly a definition; C1 is the numeric readout.
+4. **(High) Runner verified only formula re-evaluation plus prose
+   greps.** Fix: the runner constructs the staggered operator and
+   computes `D^2 = -4 u_0^2 I`, the characteristic polynomial
+   `(lambda^2 + 4)^8`, the exact determinant identity at rational test
+   points, the 48x48 color factorization, and the curvature by finite
+   difference on `-log det` — the load-bearing residuals are computed,
+   not asserted. Falsification legs F1/F2 included; every check tagged
+   [A]/[B]/[C]/[D]; no PASS rests on agreement with a PDG number.
+5. **(Medium) Boundary condition glossed.** The prior text said "APBC
+   in time" while the degenerate `|lambda| = 2 u_0` spectrum requires
+   the antiperiodic wrap in ALL four directions of the minimal `L = 2`
+   block (momenta `k_mu = +/- pi/2`, the `sin^2 = 1` saturation point).
+   Fix: declared in B4; runner falsification leg F1 shows the time-only
+   wrap yields a different determinant `(m^2 + u_0^2)^8`.
+6. **(Medium) Miscitation and non-load-bearing graph edge.** Step 6
+   cited "YT_EW_COLOR_PROJECTION_THEOREM.md, Section 2.2" (no such
+   section; the 8/9 content is its Scope/Binding Claim items 1-2), and
+   `HIGGS_FROM_LATTICE_NOTE.md` was wired as a load-bearing dependency
+   although it is consumed nowhere in T1/D1/C1 (it is comparator-fence
+   context for the delegated gap chain). Fix: citation corrected; the
+   lattice note is demoted to a backticked file pointer scoped to the
+   fenced comparator appendix.
+
+The arithmetic of the prior note was verified correct and is kept:
+`u_0 = 0.877681381`, `m_curv_tree = v/(2 u_0) = 140.3 GeV`, exact N_c
+cancellation, and the 2026-05-10 demotion (`m_H_tree -> m_curv_tree`,
+no Higgs-pole claim) is preserved unchanged.
+
+**Seventh defect (2026-06-11 follow-up, audit-caught).** The
+2026-06-11 audit failed this row on a normalization error in the Step
+5(c) susceptibility cross-check as restructured above: the displayed
+text wrote the FULL per-site susceptibility as `chi = N_c/(4 u_0²)` —
+omitting the `N_taste` factor — and then divided by `N_c · N_taste`,
+double-dividing by `N_taste`; the resulting per-channel value
+`1/(4 u_0² N_taste)` would NOT have reproduced formula [6]. Fix: the
+full susceptibility of the color-stacked generating function
+`W(m) = N_c · log det(u_0 D + m)` is
+
+    W''(0) = N_c · N_taste / (4 u_0²),
+
+and the per-color per-channel value is `W''(0)/(N_c · N_taste)
+= 1/(4 u_0²)`, equal to the Step-4 per-channel curvature magnitude [4]
+(W = −N_c · V_taste, so this is the same algebra). Step 5(c) is
+corrected accordingly and the runner adds the C10 assertion pair
+computing `W''(0)` from the determinant chain by finite difference and
+checking both the full and per-color per-channel values.
+
+## What this note is and is NOT (2026-05-10 demotion, retained)
+
+**This note derives** a per-channel symmetric-point curvature scale of
+V_taste on the declared mean-field surface:
 
     m_curv_tree := sqrt(|V_taste''(0)| / N_taste) · v
                  = v / (2 u_0)
-                 = 140.3 GeV   (at canonical u_0 ≈ 0.8776)
+                 = 140.3 GeV   (at the declared inputs B1/B2)
 
-`m_curv_tree` is a dimensionful magnitude (mass units) constructed from the mass²-coefficient of V_taste at the symmetric point m = 0, divided by the per-taste-channel multiplicity N_taste = 16, and re-expressed at the EW VEV v.
+`m_curv_tree` is a dimensionful magnitude (mass units) constructed from
+the mass²-coefficient of V_taste at the symmetric point m = 0, divided
+by the per-taste-channel multiplicity N_taste = 16, and re-expressed at
+the declared EW VEV scale v.
 
-**This note does NOT derive the Higgs-mass pole.** The post-EWSB Higgs-mass pole is the curvature of the FULL effective potential V_eff_total at the broken-phase minimum φ = v, not the per-channel curvature of V_taste at the symmetric point m = 0. Per the Morse/convexity Gap #3 probe (2026-05-10):
+**This note does NOT derive the Higgs-mass pole.** The post-EWSB
+Higgs-mass pole is the curvature of the FULL effective potential
+V_eff_total at the broken-phase minimum φ = v, not the per-channel
+curvature of V_taste at the symmetric point m = 0. Per the
+Morse/convexity Gap #3 probe (2026-05-10):
 
 - V_taste(m) = -8 log(m² + 4u_0²) is **monotonically decreasing in |m|**;
 - V_taste(m) **has no interior minimum** on its own;
-- the broken-phase pole emerges only when V_taste is combined with the tree-level mass term and the gauge sector to form V_eff_total.
+- the broken-phase pole emerges only when V_taste is combined with the
+  tree-level mass term and the gauge sector to form V_eff_total.
 
-So `m_curv_tree` is structurally a **symmetric-point per-channel curvature magnitude** (rescaled by the externally-fixed VEV v), NOT a broken-phase pole.
+So `m_curv_tree` is structurally a **symmetric-point per-channel
+curvature magnitude** (rescaled by the declared VEV scale v), NOT a
+broken-phase pole.
 
-**Earlier drafts of this note labeled this quantity `m_H_tree`.** The first-principles-honest label is `m_curv_tree`: the underscore-curv subscript indicates it is the magnitude of a curvature, the *_tree* subscript indicates the tree-level mean-field surface, and the leading `m_` indicates mass units. Throughout this note the canonical label is now `m_curv_tree`. Sister bounded-source-surface notes that compute the same numerical value (`v/(2u_0) ≈ 140.3 GeV`) under the older label `m_H_tree` continue to compute that same number; the demotion is a relabeling and a scope clarification, not a numerical change. The closed-form math is unchanged.
+**Earlier drafts of this note labeled this quantity `m_H_tree`.** The
+first-principles-honest label is `m_curv_tree`. The demotion is a
+relabeling and a scope clarification, not a numerical change. This
+mirrors PR #951 v3's κ_curv pattern in
+`HIGGS_KAPPA_CURV_FROM_VTASTE_SYMMETRIC_POINT_NARROW_THEOREM_NOTE_2026-05-10.md`
+(file pointer, not a load-bearing dependency edge: that note is
+downstream — it imports this note's V_taste form).
 
-This mirrors PR #951 v3's pattern: the analogous dimensionless ratio derived from V_taste's symmetric-point curvature was renamed from `λ_curv` to `κ_curv` in `HIGGS_KAPPA_CURV_FROM_VTASTE_SYMMETRIC_POINT_NARROW_THEOREM_NOTE_2026-05-10.md` for the same first-principles reason. That file pointer is context, not a load-bearing dependency edge: the symmetric-point object should not carry a name that implies a broken-phase pole or quartic coupling.
+## Declared boundary inputs (B1-B4) and definition D1
 
-## Honest scope (Gap #3 lite, 2026-05-10)
+T1 is a theorem **over** these declared inputs. None of them is claimed
+as derived by this note.
 
-**Per-channel symmetric-point curvature ≠ broken-phase pole.** This identity becomes exact only in a limit where (i) all N_taste taste channels are degenerate with the physical Higgs channel, (ii) gauge corrections vanish, (iii) the EWSB saddle aligns with the symmetric-point curvature, and (iv) V_eff has a quadratic-only mass coefficient near the symmetric point (no m⁴ or higher mixing changes the broken-phase curvature). **None of (i)-(iv) is exactly true** on the canonical framework surface.
+- **B1 (licensed reuse number).** `<P> = 0.5934`, hence
+  `u_0 = <P>^(1/4) = 0.877681381`. License: the plaquette authority
+  [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
+  states the canonical value `0.5934` "may still be used by downstream
+  notes only as an admitted comparison/reuse number unless a separate
+  retained MC certificate or analytic beta=6 closure is supplied." This
+  note consumes the value exactly and only under that license. B1
+  enters C1 only; T1 carries `u_0` symbolically.
+- **B2 (declared external scale).** `v = 246.22 GeV`, the declared
+  external EW VEV scale used to express the dimensionless per-channel
+  curvature in mass units. This note does not derive `v`. The
+  PDG-observed VEV is `246.22 GeV`; the framework hierarchy lane's
+  bounded formula yields `246.282818290129 GeV` under its own
+  admissions (`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`,
+  file-pointer context, not a one-hop authority — that row records the
+  formula as a bounded numerical match with named imports). The two
+  candidate values differ by `0.026%` and both give
+  `m_curv_tree = 140.3 GeV` at headline precision; the runner certifies
+  this insensitivity. B2 enters D1/C1 only, never T1.
+- **B3 (licensed channel count).** `N_taste = 16` with uniform
+  degeneracy at Wilson coefficient `r = 0`. The 16-corner count, the
+  Hamming-class multiplicities `(1,4,6,4,1)`, and the staircase
+  `W(hw) = 2 r hw` (hence full degeneracy at `r = 0`) are licensed from
+  the retained-bounded row
+  [`WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md`](WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md),
+  and the runner recomputes the count and staircase combinatorially.
+  The further identification of the Higgs channel as ONE of the 16
+  degenerate channels is a declared structural input; its derivation is
+  the open target of the effective-N_taste boundary lane
+  (`HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md`,
+  file-pointer context; that note is downstream of this one).
+- **B4 (declared surface).** The minimal-block mean-field surface:
+  staggered central-difference operator with eta phases
+  `eta_mu(x) = (-1)^(x_0 + ... + x_(mu-1))` on the `L = 2` block of
+  `Z^3 + t`, antiperiodic wrap in **all four directions** (equivalently
+  momenta `k_mu = +/- pi/2` per axis — the `sin^2 = 1` saturation
+  point), and mean-field link factorization `U_{ab} -> u_0 delta_{ab}`.
+  The mean-field factorization is a declared approximation, not
+  derived. The all-four-directions antiperiodic wrap is load-bearing:
+  the runner's falsification leg F1 shows that the old "APBC in time
+  only" gloss yields `D^2 = -u_0^2 I` and
+  `det(D + m) = (m^2 + u_0^2)^8` — a different surface.
+- **D1 (declared definition; NOT an input and NOT an observable
+  identification).**
 
-Concretely, for a standard Mexican hat V = -μ²|φ|² + λ|φ|⁴, the symmetric-point curvature magnitude |V''(0)| = 2μ² and the broken-phase pole V''(v) = 4λv² = 2μ² (using v² = μ²/2λ). The two coincide only because of the specific Mexican-hat relation between the v scale and the μ²-λ ratio. For V_taste — which is logarithmic, monotonically decreasing in |m|, and has **no interior minimum** — the symmetric-point curvature has no pole partner on V_taste alone; the pole emerges only from V_eff_total.
+      m_curv_tree² := (|V_taste''(0)| / N_taste) · v² = v²/(4 u_0²)
 
-**The +12% gap is the genuine higher-order separation between the per-channel symmetric-point curvature scale and the broken-phase Higgs pole.** It is Morse/convexity-forced (per Gap #3 probe), not a numerical accident or a missing finite correction in this note. The closure of the +12% gap is delegated to the sister-authority chain (full 3-loop CW + RGE running, lattice spacing convergence, Wilson-term taste breaking) — see Step 7 below. This note does not attempt the closure; it provides the symmetric-point curvature magnitude as the cited input to that chain.
+  D1 introduces the symbol `m_curv_tree` for the per-channel
+  symmetric-point curvature magnitude expressed in mass units at the
+  declared scale B2. It is a diagnostic definition. The theorem content
+  of this note is T1; D1 adds a name, and the note says so.
 
-**The downstream bounded Higgs route is tracked in `HIGGS_MASS_DERIVED_NOTE.md`.** That note's primary runner is `scripts/frontier_higgs_mass_full_3loop.py`, which integrates the full 3-loop SM RGE from the framework boundary `λ(M_Pl) = 0` down to μ = v and gives `m_H ≈ 125.1 GeV` under its stated admissions. The present note's `m_curv_tree = 140.3 GeV` is a per-channel symmetric-point curvature scale; it is NOT a Higgs-mass prediction.
+## Theorem T1 (load-bearing; recomputed from primitives by the runner)
 
-## Review-loop repair (2026-05-03)
+Given B3/B4, with `u_0 > 0` carried symbolically and `m` the
+taste-singlet mass probe:
 
-The 2026-05-03 review follow-up identified
-two gaps:
+1. **Operator.** The per-color staggered operator
+   `D = u_0 · Σ_mu eta_mu Γ_mu` on the 16-site block is real
+   antisymmetric and satisfies the exact Clifford-square identity
+   `D² = -4 u_0² I`. (Runner: exact Fraction matrix arithmetic;
+   companion check `(Σ_mu gamma_mu)² = 4 I` on the 4x4 taste block
+   built from Pauli tensor products.)
+2. **Spectrum.** The characteristic polynomial of `D/u_0` is
+   `(λ² + 4)^8`: all `N_taste = 16` taste eigenvalues are `± 2 i u_0`,
+   multiplicity 8 each — the uniform `|λ| = 2 u_0` degeneracy. (Runner:
+   exact Faddeev-LeVerrier; the coefficients are computed, not
+   imported.)
+3. **Determinant.** Per color, `det(D + m) = (m² + 4 u_0²)^8`; over
+   `N_c` colors at mean field the determinant factorizes as
+   `[det_taste(D + m)]^{N_c}`. (Runner: exact at rational test points,
+   including the full 48x48 block matrix at `N_c = 3`.)
+4. **Potential and curvature.** Defining the per-color taste potential
+   `V_taste(m) := -(1/N_c) log det_color(D + m)
+   = -(N_taste/2) log(m² + 4 u_0²)`, the symmetric point `m = 0` is an
+   extremum with
 
-1. **Curvature-to-physical-Higgs-mass bridge asserted, not derived.**
-   Step 5's justification ((a) dimensional analysis, (b) consistency
-   with the code, (c) susceptibility) didn't actually derive the
-   identification `(m_H/v)² = curvature/N_taste`; it asserted it.
-2. **Note's 140.3 GeV headline stale relative to the named runner.**
-   The cited `frontier_higgs_mass_corrected_yt.py` runs a corrected-y_t
-   RGE route that ends at 119.93 GeV, which is a DIFFERENT observable
-   from the note's tree-level formula.
+       V_taste'(0) = 0,
+       V_taste''(0) = -N_taste / (4 u_0²) = -4 / u_0²        [T1.a]
 
-This repair (and the 2026-05-10 demotion in the section above)
-clarifies all of the above:
+   a tachyonic maximum (the instability that drives EWSB once V_taste
+   is combined with the rest of V_eff_total). The per-channel curvature
+   magnitude is
 
-- **Sharpened scope.** The note now states explicitly that
-  `m_curv_tree = v/(2 u_0) = 140.3 GeV` is a **tree-level mean-field
-  per-channel symmetric-point curvature scale** of V_taste on the canonical
-  lattice surface (mean-field link `U_{ab} → u_0 δ_{ab}`, V_taste curvature
-  at the symmetric point m=0 with N_taste = 16 degeneracy assumed). It is
-  **NOT the physical Higgs mass**, and it is no longer labeled as such.
-  The +12% gap from observed 125.10 GeV is now framed as the **genuine
-  higher-order separation between symmetric-point curvature and broken-phase
-  pole** (Morse/convexity-forced, per Gap #3 probe), not a finite missing
-  correction.
-- **Curvature-to-readout map made explicit.** Step 5 is restated to
-  acknowledge that the identification `(m_curv_tree/v)² = -d²V_taste/dm² / N_taste`
-  at m=0 is the standard tree-level mean-field curvature readout in the
-  symmetric phase before EWSB stabilises the VEV at v; it is NOT a derivation
-  of the physical post-EWSB Higgs mass. The susceptibility argument (Step 5c)
-  reduces to the same formula and is recorded as a consistency
-  cross-check, not an independent derivation.
-- **New primary runner** `scripts/higgs_tree_level_mean_field_runner_2026_05_03.py`
-  reproduces exactly this tree-level formula and explicitly distinguishes
-  it from the separate corrected-y_t / Buttazzo runners (which compute
-  different observables along different chains).
+       |V_taste''(0)| / N_taste = 1 / (4 u_0²)               [T1.b]
 
-After this repair plus the 2026-05-10 demotion, the note is honest about
-what it derives: a tree-level mean-field formula `m_curv_tree = v/(2 u_0)`
-with explicit N_c-cancellation at every step. The physical Higgs mass
-remains a separate calculation, requiring inputs (RGE, CW corrections)
-that this note does not supply, and is the subject of
-`HIGGS_MASS_DERIVED_NOTE.md`.
+   (Runner: finite-difference second derivative of `-log det` against
+   the analytic value.)
+5. **Exact N_c cancellation.** Every per-color quantity above —
+   including [T1.a] and [T1.b] — is exactly independent of `N_c`.
+   (Runner: computed from the determinant chain at
+   `N_c ∈ {1, 2, 3, 4}`, spread exactly zero; not a symbol-inspection
+   claim.)
+
+### Per-step authority table
+
+| Step | Statement | Class | One-hop authority |
+| --- | --- | --- | --- |
+| S1 | `<P> = 0.5934`, `u_0 = <P>^(1/4)` (C1 only) | licensed boundary input | [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md) reuse license (B1) |
+| S2 | `N_taste = 16`, `(1,4,6,4,1)` staircase, degeneracy at `r = 0` | licensed boundary input + runner recompute | [`WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md`](WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md) (B3) |
+| S3 | `D² = -4 u_0² I`; spectrum `± 2 i u_0` x8; `det(D+m) = (m²+4u_0²)^8`; color factorization | (C) first-principles compute on the declared B4 surface | this note + registered runner (exact arithmetic) |
+| S4 | `V_taste''(0) = -N_taste/(4u_0²)`; per-channel `1/(4u_0²)`; exact N_c cancellation | (A)/(C) computed from S3 | this note + registered runner |
+| S5 | `m_curv_tree := v · sqrt([T1.b]) = v/(2u_0)` | (E) declared definition D1 over B2 | this note (declared; explicitly not an observable identification) |
+| S6 | `m_curv_tree = 140.3 GeV` | (A) exact arithmetic over B1/B2 | corollary C1 below |
+| S7 | comparison to PDG `m_H = 125.10 GeV` | (D) fenced comparator | comparator appendix only; never load-bearing |
+
+The load-bearing theorem surface is S2-S4. S1 is the licensed boundary
+number used by C1, S5 is a declared definition, S6 is corollary C1, and
+S7 lives exclusively in the fenced comparator appendix.
+
+## Corollary C1 (bounded numeric readout)
+
+Substituting B1 (`u_0 = 0.877681381`) and B2 (`v = 246.22 GeV`) into D1:
+
+    m_curv_tree = v / (2 u_0) = 246.22 / 1.755362762 = 140.3 GeV
+        (zero free parameters GIVEN the declared inputs;
+         per-channel symmetric-point curvature scale)
+
+With the hierarchy-lane candidate value `v = 246.2828 GeV` instead:
+`m_curv_tree = 140.30 GeV` — the same headline at `0.1 GeV` precision.
+
+**This is NOT a Higgs-mass prediction.** It is the symmetric-point
+per-channel curvature magnitude on V_taste, expressed in mass units at
+the declared VEV scale. The downstream bounded Higgs route (~125.1 GeV
+under its stated admissions, full 3-loop SM RGE from `λ(M_Pl) = 0`) is
+tracked in `HIGGS_MASS_DERIVED_NOTE.md` (file-pointer context; that
+note does not load-bear on `m_curv_tree` and already cites this one in
+its Note↔runner reconciliation section).
+
+## Sensitivity and anti-tuning certificates
+
+This section certifies that C1 is not a numerical match at a tuned
+input scale:
+
+- **One knob only, declared.** Given T1, the readout is the
+  parameter-free function `m_curv_tree = v / (2 <P>^(1/4))` of the
+  declared inputs `(<P>, v)`. Nothing in S2-S4 can be adjusted; `<P>`
+  is fixed upstream by the Wilson action at `beta = 6` (consumed here
+  under the B1 license), not by any fit to a Higgs-sector number.
+- **Analytic sensitivity, declared and verified.**
+  `d m_curv_tree / d<P> = -m_curv_tree / (4 <P>) = -59.09 GeV` per unit
+  `<P>`: a `1%` shift in `<P>` moves `m_curv_tree` by `0.25%`. The
+  runner verifies this against a central finite difference.
+- **No admissible tuning to the PDG pole (falsification leg F2).**
+  Forcing `v/(2 u_0) = 125.10 GeV` would require `<P> = 0.9379` —
+  `+58%` off the licensed `0.5934`, far outside any admissible
+  neighborhood. The chain output at the declared inputs is `140.3 GeV`,
+  which sits `+12.1%` ABOVE the PDG pole; the note reports that
+  separation as a structural fact (see the comparator appendix), not as
+  an agreement.
+- **B2 insensitivity.** The two candidate `v` values (PDG-observed
+  `246.22`; hierarchy-lane bounded `246.2828`) differ by `0.026%`; both
+  give `140.3` at headline precision. The headline does not depend on
+  which external scale convention is declared.
+
+## Fenced comparator appendix (class D; never load-bearing)
+
+PDG values appear in this note and its runner ONLY in this section and
+in the runner's terminal class-D checks. No PASS rests on agreement
+with a PDG number.
+
+- **Observed Higgs pole:** `m_H = 125.10 GeV` (PDG). The C1 output
+  `140.3 GeV` sits `+12.1%` above it. This separation is the genuine
+  structural distance between two different objects — the
+  symmetric-point per-channel curvature magnitude on V_taste (this
+  note) and the broken-phase pole of V_eff_total (not this note) — and
+  is Morse/convexity-forced: V_taste alone has no interior minimum, so
+  its symmetric-point curvature has no pole partner on V_taste. The
+  +12% magnitude is NOT claimed as a finite missing correction in this
+  note; its closure is delegated to the sister chain in Step 7.
+- **Observed EW VEV:** `v_obs = 246.22 GeV` (PDG), consumed as the
+  declared external scale B2. The hierarchy lane's bounded formula
+  value `246.2828 GeV` differs by `+0.0255%` (comparator context only;
+  neither value is derived here).
+- **Lattice-spacing context:** the lattice Coleman-Weinberg lane
+  (`HIGGS_FROM_LATTICE_NOTE.md`, file-pointer context only — demoted
+  from a load-bearing graph edge 2026-06-11 because nothing in
+  T1/D1/C1 consumes it) reports `m_H/m_W` flowing from `1.85` at
+  `a = 1` toward the SM value as `a` decreases; that is delegated
+  gap-chain context, not part of this claim surface.
 
 ---
 
-## Result (tree-level mean-field per-channel symmetric-point curvature scale)
+## Derivation walk (Steps 1-6; the content T1 packages)
 
-    m_curv_tree = v * sqrt(4 / (u_0^2 * N_taste))
-                = v / (2 u_0)
-                = 246.22 / (2 * 0.8776)
-                = 140.3 GeV                     (curvature scale; not a Higgs-mass prediction)
+### Step 1: The generating functional
 
-This is a TREE-LEVEL mean-field **per-channel symmetric-point curvature
-magnitude**, expressed in mass units. The +12% gap to the observed
-physical Higgs mass (125.10 GeV) is the genuine higher-order separation
-between the symmetric-point curvature scale and the broken-phase pole
-(Morse/convexity-forced; see "Honest scope" above). Closure of that gap
-is delegated to the sister-authority chain (full 3-loop CW + RGE running,
-lattice spacing convergence, Wilson-term taste breaking) — see Step 7.
-This note does not ship a Higgs-mass closure.
+**Framework baseline.** The Quantum axiom supplies the one-qubit /
+`Cl(3)` per-site algebra, and the Lattice axiom supplies the `Z^3`
+lattice;
+staggered Dirac operator D on the minimal `Z^3 + t` block (`L = 2`,
+`N_sites = 2^4 = 16`) on the declared B4 surface, gauge group SU(3) at
+`beta = 2 N_c / g² = 6`. The matrix dimension is
+`N_tot = N_c · N_sites = 48`.
 
-The color factor 8/9 does NOT enter `m_curv_tree` — and *a fortiori* does
-not enter the downstream bounded Higgs route in `HIGGS_MASS_DERIVED_NOTE.md`.
-N_c cancels exactly in the derivation. Full tracking below.
-
----
-
-## Step 1: The generating functional
-
-**Axiom.** Cl(3) on Z^3. Staggered Dirac operator D on Z^4 (APBC in
-time), gauge group SU(3) at beta = 2 N_c / g^2 = 6. On the minimal
-APBC block (L = 2, N_sites = 2^4 = 16), the matrix dimension is
-N_tot = N_c * N_sites = 48.
-
-**Eigenvalue degeneracy theorem.** The Clifford identity D_taste^2 = d I
-forces all N_taste = 16 taste eigenvalues to have |lambda| = 2 u_0.
-Mean-field factorization (U_{ab} -> u_0 delta_{ab}) extends this to
-all N_tot = 48 eigenvalues. The eigenvalues are pure imaginary:
-lambda_k = +/- 2 i u_0 (staggered anti-Hermiticity).
+**Eigenvalue degeneracy (computed, T1 items 1-2).** The Clifford-square
+identity `D² = -4 u_0² I` on the B4 surface forces all `N_taste = 16`
+taste eigenvalues to `|λ| = 2 u_0`, pure imaginary
+(`λ_k = ± 2 i u_0`, staggered anti-Hermiticity), multiplicity 8 per
+sign per color. Mean-field factorization (`U_{ab} -> u_0 δ_{ab}`, B4)
+extends this to all `N_tot = 48` eigenvalues. This is recomputed from
+primitives by the runner — it is not an imported theorem (the prior
+citations to `TASTE_POLYNOMIAL_NOTE.md` and `DM_AMGM_SATURATION_NOTE.md`
+were dead files and have been removed; the named sister derivation lane
+is the taste-count/W(J)-form bridge note, file pointer in the
+changelog).
 
 The generating functional at mean field:
 
-    W(J) = sum_{k=1}^{N_tot} (1/2) log(J^2 + 4 u_0^2)
-         = (N_tot / 2) * log(J^2 + 4 u_0^2)                   [1]
+    W(J) = Σ_{k=1}^{N_tot} (1/2) log(J² + 4 u_0²)
+         = (N_tot / 2) · log(J² + 4 u_0²)                   [1]
 
-**N_c tracking:** N_tot = N_c * N_sites = 3 * 16 = 48. The factor
+**N_c tracking:** `N_tot = N_c · N_sites = 3 · 16 = 48`. The factor
 N_c is a linear overall multiplier.
 
----
-
-## Step 2: Factoring out color
+### Step 2: Factoring out color
 
 Color and taste factorize at mean field. The full determinant:
 
     det(D + J) = [det_taste(D + J)]^{N_c}
 
-The taste-sector generating functional (one color copy):
+(runner check: exact 48x48 block determinant at `N_c = 3`). The
+taste-sector generating functional (one color copy):
 
-    W_taste(J) = W(J) / N_c = (N_sites / 2) * log(J^2 + 4 u_0^2)
+    W_taste(J) = W(J) / N_c = (N_sites / 2) · log(J² + 4 u_0²)
 
-The taste-sector effective potential per site:
+The taste-sector potential on the minimal block (where
+`N_sites = N_taste`):
 
-    V_taste(m) = -W_taste / N_sites = -(1/2) * log(m^2 + 4 u_0^2)
-
-Summing over all N_taste = 16 taste eigenvalues on the minimal block
-(where N_sites = N_taste):
-
-    V_taste(m) = -(N_taste / 2) * log(m^2 + 4 u_0^2)
-               = -8 * log(m^2 + 4 u_0^2)                       [2]
+    V_taste(m) = -(N_taste / 2) · log(m² + 4 u_0²)
+               = -8 · log(m² + 4 u_0²)                       [2]
 
 **N_c does not appear in [2].** From here on, the derivation is
-N_c-independent. The color links contribute only through u_0 = <P>^{1/4}.
+N_c-independent. The color links contribute only through
+`u_0 = <P>^(1/4)`.
 
----
+### Step 3: Curvature at the symmetric point (Morse/convexity context)
 
-## Step 3: Curvature at the symmetric point (Morse/convexity context)
+    d V_taste / dm = -N_taste · m / (m² + 4 u_0²) = 0  at m = 0
 
-    d V_taste / dm = -N_taste * m / (m^2 + 4 u_0^2) = 0  at m = 0
-
-    d^2 V_taste / dm^2 |_{m=0} = -N_taste / (4 u_0^2)
-                                = -4 / u_0^2                    [3]
+    d² V_taste / dm² |_{m=0} = -N_taste / (4 u_0²)
+                              = -4 / u_0²                    [3]
 
 The negative curvature confirms the symmetric point m = 0 is a local
-maximum of V_taste — a tachyonic instability that drives EWSB when V_taste
-is combined with the rest of V_eff.
+maximum of V_taste — a tachyonic instability that drives EWSB when
+V_taste is combined with the rest of V_eff.
 
 **Morse/convexity context (Gap #3 probe, 2026-05-10).** The full log
-potential V_taste(m) = -8 log(m² + 4 u_0²) is **monotonically decreasing
-for m > 0**. It has **no interior minimum on V_taste alone** — and a
-fortiori no interior CW minimum that could play the role of a Higgs
-broken-phase pole. The physical VEV arises from the interplay of the
-fermion determinant with the gauge action and the tree-level mass (the
-full CW mechanism), with the EW scale supplied by the bounded hierarchy
-formula `v = M_Pl * alpha_LM^16`. This is the structural reason why
-`m_curv_tree`, derived from the symmetric-point curvature [3] alone,
-is NOT a Higgs-mass pole: V_taste's symmetric-point curvature has no
-broken-phase partner *on V_taste*; the pole emerges only from
+potential V_taste(m) = -8 log(m² + 4 u_0²) is **monotonically
+decreasing for m > 0**. It has **no interior minimum on V_taste
+alone** — and a fortiori no interior CW minimum that could play the
+role of a Higgs broken-phase pole. The physical VEV arises from the
+interplay of the fermion determinant with the gauge action and the
+tree-level mass (the full CW mechanism); the EW scale enters this note
+only as the declared external input B2. This is the structural reason
+why `m_curv_tree`, derived from the symmetric-point curvature [3]
+alone, is NOT a Higgs-mass pole: V_taste's symmetric-point curvature
+has no broken-phase partner *on V_taste*; the pole emerges only from
 V_eff_total.
 
----
-
-## Step 4: The per-channel symmetric-point curvature
+### Step 4: The per-channel symmetric-point curvature
 
 The curvature [3] counts ALL N_taste = 16 degenerate taste channels
 responding to the mass shift dm. The Higgs is identified (in the
 all-channels-degenerate limit; see "Honest scope") with a single
 taste-singlet scalar occupying one out of N_taste channels. By the
-degeneracy theorem, each taste channel contributes equally, so the
-per-channel curvature is:
+computed degeneracy (T1 item 2), each taste channel contributes
+equally, so the per-channel curvature is:
 
-    |d^2 V / dm^2|_{per channel} = (4 / u_0^2) / N_taste
-                                  = 1 / (4 u_0^2)               [4]
+    |d² V / dm²|_{per channel} = (4 / u_0²) / N_taste
+                                = 1 / (4 u_0²)               [4]
 
-This per-channel curvature magnitude, rescaled by the EW VEV v, is the
-symmetric-point curvature scale `m_curv_tree`. The per-channel
-dimensionless curvature ratio is
+Applying definition D1 (the per-channel curvature magnitude rescaled by
+the declared scale B2):
 
-    (m_curv_tree / v)^2 = 4 / (u_0^2 * N_taste) = 1 / (4 u_0^2)
+    (m_curv_tree / v)² = 4 / (u_0² · N_taste) = 1 / (4 u_0²)
 
-    m_curv_tree / v = 1 / (2 u_0)                              [5]
+    m_curv_tree / v = 1 / (2 u_0)                            [5]
 
-    m_curv_tree = v / (2 u_0) = 246.22 / 1.7552 = 140.3 GeV    [6]
+    m_curv_tree = v / (2 u_0) = 140.3 GeV  (corollary C1)    [6]
 
-Note: equations [5]–[6] give the **per-channel symmetric-point curvature
-scale**. They do NOT give the Higgs-mass pole; per "Honest scope" above,
-that identification holds only in a limit where (i)–(iv) are exact, none
-of which is true on the canonical framework surface.
+Equations [5]-[6] give the **per-channel symmetric-point curvature
+scale**. They do NOT give the Higgs-mass pole; per "Honest scope"
+below, that identification holds only in a limit where (i)-(iv) are
+exact, none of which is true on the canonical framework surface.
 
-**N_c tracking:** N_c divided out at Step 2. Equation [4] involves
-only u_0 and N_taste. The per-channel symmetric-point curvature scale
-`m_curv_tree` is N_c-independent. The downstream Higgs-mass prediction
-in `HIGGS_MASS_DERIVED_NOTE.md` is also
-N_c-independent (consistent finding via a separate chain).
+**N_c tracking:** N_c divided out at Step 2 (and verified by
+computation at `N_c ∈ {1,2,3,4}`). Equation [4] involves only u_0 and
+N_taste. The per-channel symmetric-point curvature scale `m_curv_tree`
+is N_c-independent.
 
----
-
-## Step 5: Why the ratio (m_curv_tree / v)^2 = curvature / N_taste
-
-**This step is the curvature-to-curvature-readout map at TREE LEVEL.**
-It is the standard mean-field Klein-Gordon curvature readout in the
-symmetric phase, NOT a derivation of the physical Higgs mass after
-EWSB. The 2026-05-03 review-loop sharpening and the 2026-05-10 Gap #3
-demotion appear in the headings: each argument is now labelled by what
-it actually establishes.
+### Step 5: Status of the readout map (D1 is a definition, not a derivation)
 
 **(a) Dimensional matching (necessary condition only).** The curvature
 d²V/dm² is dimensionless (V is dimensionless, m is dimensionless in
-lattice units). The curvature scale in lattice units is m_curv(lat) =
-m_curv(phys)·a = m_curv/M_Pl. The VEV in lattice units is v_lat = v/M_Pl.
-The ratio m_curv/v = m_curv(lat)/v_lat is dimensionless and must equal
-a function of the dimensionless lattice quantities u_0 and N_taste.
-Dimensional analysis ALONE does not pick out the specific ratio
-(m_curv_tree/v)² = curvature/N_taste — it only constrains the
-combination to be dimensionless. The specific identification needs the
-next argument.
+lattice units). The ratio m_curv/v is dimensionless and must equal a
+function of the dimensionless lattice quantities u_0 and N_taste.
+Dimensional analysis ALONE does not pick out the specific combination —
+it only constrains it to be dimensionless.
 
-**(b) Tree-level mean-field Klein-Gordon curvature readout (the actual derivation).**
-At tree level, the Higgs-channel scalar mode is one of N_taste
-degenerate scalar modes in V_taste. The tree-level curvature *at the
-symmetric point* is the Hessian of V_taste at m=0; per equation [4],
-the per-channel magnitude is `(4/u_0²)/N_taste`. The note's tree-level
-shortcut is: define `m_curv_tree²` as the per-channel symmetric-point
-curvature times the externally-fixed v² scale:
-
-    m_curv_tree² := (4/u_0²)/N_taste · v² = v²/(4 u_0²).
-
-This identifies a **symmetric-point curvature magnitude** in mass units
-— a structurally clean object derivable from V_taste alone. It is NOT
-the broken-phase Higgs-mass pole, and the note no longer claims that
-identification. (In earlier drafts the symbol `m_H_tree` was used and
-the identification was implied; the 2026-05-10 demotion replaces both
-the symbol and the implication.)
-
-The Higgs-mass-pole identification would additionally require:
-(i) all N_taste taste channels to be exactly degenerate with the physical
-Higgs (the canonical surface uses uniform N_taste = 16, which is
-non-derived per `HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md` (context file pointer, not a load-bearing dependency edge));
+**(b) What D1 actually is.** D1 defines `m_curv_tree²` as the
+per-channel symmetric-point curvature magnitude [4] times the declared
+external scale v². This is the standard tree-level mean-field
+Klein-Gordon curvature readout in the symmetric phase, adopted here BY
+DEFINITION. It identifies a structurally clean object derivable from
+V_taste plus the declared scale. It is NOT the broken-phase Higgs-mass
+pole, and the note does not claim that identification. The Higgs-pole
+identification would additionally require:
+(i) all N_taste taste channels exactly degenerate with the physical
+Higgs (the uniform `N_taste = 16` channel assignment is a declared
+structural input, B3);
 (ii) gauge corrections to vanish (they do not);
-(iii) the EWSB saddle to align with the symmetric-point curvature
-(it does not — V_taste alone has no interior minimum, per Step 3 and
-the Gap #3 Morse/convexity probe);
+(iii) the EWSB saddle to align with the symmetric-point curvature (it
+does not — V_taste alone has no interior minimum, per Step 3);
 (iv) V_eff to have a quadratic-only mass coefficient (it does not —
 V_taste's logarithmic m⁴ and higher coefficients are non-zero and
 contribute to the broken-phase curvature).
 
-The +12% gap from observed 125.10 GeV is the **numerical magnitude of
-the genuine higher-order separation** induced by (i)–(iv) failing
-simultaneously. Closure of that gap is delegated to the sister-authority
-chain (Step 7).
+**(c) Susceptibility consistency cross-check (not independent;
+normalization corrected 2026-06-11).** The scalar susceptibility
+counts the mass-shift response of ALL internal DOF — `N_c` colors ×
+`N_taste` channels. From the color-stacked generating function
+`W(m) = N_c · log det(u_0 D + m) = −N_c · V_taste(m)`, the full
+per-site susceptibility is
 
-**(c) Susceptibility consistency cross-check (not independent).** The
-scalar susceptibility chi = d²W/dJ² counts the response of all internal
-DOF. The full per-site susceptibility is chi = N_c/(4 u_0²); the
-per-channel chi_curv = chi/(N_c · N_taste) = 1/(4 u_0² N_taste). Then
-the symmetric-point per-channel curvature scale m_curv² = v²/chi_curv = v²·4 u_0²·N_taste,
-which would give a curvature scale ~ 1000 GeV — too large by a factor
-(M_Pl/v)². The correct identification is m_curv² = (1/chi_curv)·(v/M_Pl)²,
-which after the hierarchy conversion gives back the same formula [6].
-This is a consistency check, not an independent derivation; the
-load-bearing step is still (b)'s tree-level mean-field per-channel
-symmetric-point curvature identification.
+    W''(0) = N_c · N_taste / (4 u_0²),
 
-**Honest scope of Step 5.** The curvature-to-curvature-readout map is
-the **tree-level mean-field Klein-Gordon curvature identification**.
-It is correct *at tree level on the mean-field surface as a
-symmetric-point per-channel curvature magnitude*. It is **not** a
-Higgs-mass-pole derivation. The physical Higgs mass requires (i)
-dropping the mean-field approximation, (ii) summing CW + gauge
-corrections, (iii) RGE running from the lattice scale to the physical
-scale, and (iv) recognizing that the broken-phase pole differs from
-the symmetric-point curvature by the genuine higher-order separation
-described in the "Honest scope" section above. None of (i)–(iv) is
-supplied here. Hence `m_curv_tree = 140.3 GeV` is the symmetric-point
-curvature scale; the physical Higgs-mass prediction
-~125.1 GeV is tracked in `HIGGS_MASS_DERIVED_NOTE.md`
-on the full 3-loop SM RGE chain from `λ(M_Pl) = 0`.
+and the per-color per-channel value is
 
-> **Note (2026-05-07 cleanup).** A duplicate of paragraph (c) appeared
-> here in earlier drafts (the original pre-2026-05-03-repair version
-> that read "the correct identification is m_H² = (1/chi_H)·(v/M_Pl)²"
-> contradicting the sharpened cross-check framing above). That stale
-> paragraph has been removed; the susceptibility content is fully
-> covered by the cross-check framing in (c) above. The 2026-05-10
-> Gap #3 lite demotion additionally renames `m_H` → `m_curv` in this
-> susceptibility context to keep the parent note's primary label
-> consistent.
+    W''(0) / (N_c · N_taste) = 1 / (4 u_0²),
 
----
+which equals the per-channel curvature magnitude [4] exactly and, after
+the D1 v-rescaling, reproduces formula [6]. (The pre-2026-06-11 text
+wrote the full susceptibility as `N_c/(4 u_0²)` — omitting `N_taste` —
+and then divided by `N_c · N_taste`, double-dividing by `N_taste`; the
+displayed per-channel value `1/(4 u_0² N_taste)` would not have
+reproduced [6]. The runner now asserts the corrected chain at C10,
+computing `W''(0)` from the determinant by finite difference.) This is
+a consistency check that reduces to the same algebra (`W = −N_c ·
+V_taste`), not an independent derivation; the theorem content remains
+T1, and the readout remains definition D1.
 
-## Step 6: Does the color factor 8/9 enter the Higgs sector?
+> **Note (2026-05-07 cleanup, kept).** A duplicate of paragraph (c)
+> appeared in pre-2026-05-03 drafts with the stale phrasing that "the
+> correct identification" maps the susceptibility to the physical
+> Higgs mass. That paragraph remains removed; the susceptibility
+> content is fully covered by the cross-check framing in (c) above.
 
-**No.** Three independent arguments — and these arguments are about the
-per-channel symmetric-point curvature scale `m_curv_tree`, *not* about
-a Higgs-mass pole prediction. The downstream Higgs-mass prediction in
-`HIGGS_MASS_DERIVED_NOTE.md` is also
-N_c-independent (consistent finding via a separate chain).
+**Honest scope of Step 5.** The readout map is a declared definition
+(D1) applying the tree-level mean-field Klein-Gordon curvature
+identification to a defined diagnostic scale. It is correct *as a
+definition*. It is **not** a Higgs-mass-pole derivation. The physical
+Higgs mass requires (i) dropping the mean-field approximation,
+(ii) summing CW + gauge corrections, (iii) RGE running from the lattice
+scale to the physical scale, and (iv) the broken-phase pole differing
+from the symmetric-point curvature by the genuine structural
+separation described above. None of (i)-(iv) is supplied here.
 
-**Argument 1 (factorization).** The taste potential V_taste [2] is
-obtained by dividing V_full = N_c * V_taste by N_c. All quantities
-derived from it are N_c-independent. The factor (N_c^2 - 1)/N_c^2
-is a quadratic Casimir ratio that has no algebraic pathway to enter
-a linear-in-N_c factorization.
+### Step 6: Does the color factor 8/9 enter the Higgs sector?
+
+**No.** Three independent arguments — all about the per-channel
+symmetric-point curvature scale `m_curv_tree`, *not* about a
+Higgs-mass-pole prediction.
+
+**Argument 1 (factorization, computed).** The taste potential
+V_taste [2] is obtained by dividing `V_full = N_c · V_taste` by N_c.
+All quantities derived from it are N_c-independent — verified by the
+runner from the determinant chain at `N_c ∈ {1,2,3,4}`, spread exactly
+zero. The factor `(N_c² - 1)/N_c²` is a quadratic Casimir ratio with no
+algebraic pathway into a linear-in-N_c factorization.
 
 **Argument 2 (different operators).** The 8/9 arises in the EW vacuum
-polarization Pi_EW, a 2-point function requiring Fierz decomposition
-in q-qbar color space (YT_EW_COLOR_PROJECTION_THEOREM.md, Section 2.2).
-The per-channel symmetric-point curvature comes from the scalar
-susceptibility chi = d^2 W / dJ^2, a 0-point function with trivial color
-structure delta_{ab} delta_{ab} = N_c.
+polarization, a 2-point function requiring Fierz decomposition in
+q-qbar color space: per
+[`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md)
+(Scope and Binding Claim items 1-2), `F_adj = (N_c² - 1)/N_c² = 8/9` is
+exact SU(3) Fierz/channel-count algebra inside the EW projection family
+`K_EW(kappa_EW)`, and that row is a packet-scoped no-go on selecting
+`kappa_EW = 0` — i.e., the 8/9 lives in the EW-coupling projection
+family, not in scalar-sector 0-point functions. The per-channel
+symmetric-point curvature comes from the scalar susceptibility
+chi = d²W/dJ², a 0-point function with trivial color structure
+`delta_{ab} delta_{ab} = N_c`.
 
 **Argument 3 (ratio invariance).** Even if 8/9 entered m_W through the
-EW coupling correction, it would not enter m_curv_tree/m_W. Both
-m_curv_tree and m_W are extracted from the same taste-sector potential
-and any universal color correction would cancel in their ratio.
+EW coupling correction, it would not enter m_curv_tree/m_W: both are
+extracted from the same taste-sector potential and any universal color
+correction would cancel in their ratio.
 
----
-
-## Summary: N_c tracking table
+### Summary: N_c tracking table
 
 | Quantity | Formula | N_c dependence |
 |----------|---------|----------------|
-| W(J) | (N_c N_sites / 2) log(J^2 + 4 u_0^2) | proportional to N_c |
-| V_taste(m) | -8 log(m^2 + 4 u_0^2) | NONE (N_c divided out) |
-| curvature at m=0 | 4 / u_0^2 | NONE |
-| per-channel curvature | 4 / (u_0^2 N_taste) | NONE |
+| W(J) | (N_c N_sites / 2) log(J² + 4 u_0²) | proportional to N_c |
+| V_taste(m) | -8 log(m² + 4 u_0²) | NONE (N_c divided out) |
+| curvature at m=0 | 4 / u_0² | NONE |
+| per-channel curvature | 4 / (u_0² N_taste) | NONE |
 | m_curv_tree / v | 1 / (2 u_0) | NONE |
-| 8/9 factor | (N_c^2-1) / N_c^2 | enters EW couplings ONLY |
+| 8/9 factor | (N_c²-1) / N_c² | enters EW couplings ONLY |
 
----
+## Honest scope (Gap #3 lite, retained)
 
-## The remaining +12% gap (genuine higher-order separation, Morse/convexity-forced)
+**Per-channel symmetric-point curvature ≠ broken-phase pole.** This
+identity becomes exact only in a limit where (i) all N_taste taste
+channels are degenerate with the physical Higgs channel, (ii) gauge
+corrections vanish, (iii) the EWSB saddle aligns with the
+symmetric-point curvature, and (iv) V_eff has a quadratic-only mass
+coefficient near the symmetric point. **None of (i)-(iv) is exactly
+true** on the canonical framework surface.
 
-The +12% gap between the symmetric-point curvature scale `m_curv_tree =
-140.3 GeV` and the observed Higgs-mass pole `m_H = 125.10 GeV` is the
-**genuine higher-order separation** between two structurally distinct
-objects:
+Concretely, for a standard Mexican hat V = -μ²|φ|² + λ|φ|⁴, the
+symmetric-point curvature magnitude |V''(0)| = 2μ² and the broken-phase
+pole V''(v) = 4λv² = 2μ² coincide only because of the specific
+Mexican-hat relation between the v scale and the μ²-λ ratio. For
+V_taste — logarithmic, monotonically decreasing in |m|, with **no
+interior minimum** — the symmetric-point curvature has no pole partner
+on V_taste alone; the pole emerges only from V_eff_total.
 
-- `m_curv_tree`: a per-channel symmetric-point curvature magnitude on
-  V_taste alone (this note);
-- `m_H_pole`: the broken-phase pole of V_eff_total at φ = v
-  (`HIGGS_MASS_DERIVED_NOTE.md`).
+The +12% separation reported in the comparator appendix is the genuine
+higher-order separation between these two structurally distinct
+objects. It is Morse/convexity-forced, not a numerical accident or a
+missing finite correction in this note. Closure is delegated to the
+sister-authority chain (Step 7); this note provides the symmetric-point
+curvature magnitude as the cited input to that chain.
 
-Per the Gap #3 Morse/convexity probe (2026-05-10), the two are forced
-to differ on the canonical surface because V_taste has no interior
-minimum (logarithmic, monotonically decreasing); the Higgs-mass pole
-emerges only from V_eff_total. The +12% magnitude of the separation is
-itself a quantitative output of the framework chain, not a finite missing
-correction in *this* note.
+## Step 7: Authority chain for the +12% separation (context inventory)
 
-Three identified sister contributions in the gap-closure chain:
+This step is an audit-compatible authority inventory for the delegated
+gap-closure chain. Each row is a pointer; this note does not change any
+sibling claim boundary or effective status (the pipeline-derived status
+field in the audit ledger). The audit ledger remains the only authority
+for current audit and effective status. Nothing in this table is
+load-bearing for T1/D1/C1; sister notes are referenced as backticked
+file pointers precisely because they are context, not one-hop
+authorities for this claim surface.
 
-1. **2-loop CW corrections.** The 1-loop CW overestimates the m_H/m_W
-   ratio. 2-loop contributions from the top quark are negative and
-   reduce m_H by ~10-15% in standard SM analyses. A 12% reduction from
-   2-loop effects is within the expected range.
-
-2. **Lattice spacing convergence.** The code shows m_H/m_W = 1.64 at
-   a = 0.5 vs 1.85 at a = 1 (HIGGS_MASS_NOTE.md). The prediction
-   monotonically approaches the SM value 1.558 as a decreases.
-
-3. **Taste-breaking (Wilson term).** The Wilson term breaks the 16-fold
-   degeneracy into a (1,4,6,4,1) staircase. This changes the effective
-   N_taste in formula [5], potentially reducing the curvature scale.
-
-The framework's downstream bounded Higgs route (~125.1 GeV under its
-stated admissions) is tracked by the full 3-loop SM RGE chain in
-`HIGGS_MASS_DERIVED_NOTE.md`, not by additively patching this note's
-symmetric-point curvature scale.
-
----
-
-## Step 7: Authority chain for the +12% gap (2026-05-07; 2026-05-10 demotion)
-
-The narrative paragraph above ("The remaining +12% gap") attributes the
-140.3 GeV → 125.10 GeV gap-closure to three sister authorities without
-naming the rows that actually carry each derivation. This step
-upgrades the cross-reference to an audit-compatible authority inventory
-without attempting any new derivation. Each row is a pointer; this note
-does not change any sibling claim boundary or effective status (the pipeline-derived status field in the audit ledger). The
-audit ledger remains the only authority for current audit and
-effective status (the pipeline-derived status field in the audit ledger).
-
-| Gap correction | Sister authority | Status authority | Closes the gap from / to | Open content |
+| Gap correction | Sister authority (context pointer) | Status authority | Closes the gap from / to | Open content |
 |---|---|---|---|---|
-| 2-loop CW + RGE running | `HIGGS_MASS_DERIVED_NOTE.md` (file-pointer context reference, backticked to avoid the known back-edge through the EW-coupling cluster; that note already cites this one's tree-level formula in its Note↔runner reconciliation section) + `scripts/frontier_higgs_mass_corrected_yt.py` (corrected-y_t RGE) | audit ledger only | symmetric-point curvature scale → ~119.93 GeV via corrected-y_t at 3L+NNLO | conditional on `y_t` Ward + RGE-transport scaffolding |
-| Lattice spacing convergence (`m_H/m_W` flow as `a → 0`) | [`HIGGS_FROM_LATTICE_NOTE.md`](HIGGS_FROM_LATTICE_NOTE.md) (`bounded_theorem`, td=310) | audit ledger only | `m_H/m_W = 1.85` at `a=1` → 1.64 at `a=0.5` → 1.558 SM in continuum | continuum-limit theorem surface |
-| Wilson-term taste-breaking ((1,4,6,4,1) staircase) | [`WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md`](WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md); the sister Wilson follow-on notes `HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md`, `WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08.md`, `WILSON_VTASTE_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md`, and `WILSON_M_H_TREE_AT_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md` are listed as file-pointer context references (backticked to avoid length-2 back-edges, since each of those notes already cites this note as the load-bearing parent in their proof-walks) | audit ledger only | proves the finite staircase identity and bounded leading-order Wilson correction formulas | **still open**: no retained closure of the physical gap; uniform `N_taste = 16`, any nonzero Wilson coefficient `r`, and the leading-order comparison to 125.10 GeV remain bounded/noncanonical inputs |
+| 2-loop CW + RGE running | `HIGGS_MASS_DERIVED_NOTE.md` (backticked to avoid the known back-edge through the EW-coupling cluster; that note already cites this one's tree-level formula) + `scripts/frontier_higgs_mass_corrected_yt.py` (corrected-y_t RGE) | audit ledger only | symmetric-point curvature scale → ~119.93 GeV via corrected-y_t at 3L+NNLO | conditional on `y_t` Ward + RGE-transport scaffolding |
+| Lattice spacing convergence (`m_H/m_W` flow as `a → 0`) | `HIGGS_FROM_LATTICE_NOTE.md` (backticked; demoted from a load-bearing graph edge 2026-06-11 — consumed nowhere in T1/D1/C1) | audit ledger only | `m_H/m_W = 1.85` at `a=1` → 1.64 at `a=0.5` → 1.558 SM in continuum | continuum-limit theorem surface |
+| Wilson-term taste-breaking ((1,4,6,4,1) staircase) | [`WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md`](WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md) (also the B3 license); Wilson follow-on notes `HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md`, `WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08.md`, `WILSON_VTASTE_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md`, `WILSON_M_H_TREE_AT_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md` are backticked file-pointer context (each cites this note as its load-bearing parent) | audit ledger only | proves the finite staircase identity and bounded leading-order Wilson correction formulas | **still open**: no retained closure of the physical gap; the channel choice, any nonzero Wilson coefficient `r`, and the leading-order comparison to 125.10 GeV remain bounded/noncanonical inputs |
 | Buttazzo full-3-loop calibration cross-check | `scripts/frontier_higgs_buttazzo_calibration.py` | (auxiliary calibration) | independent ~125.1 GeV via 3-loop Buttazzo parametric calibration | a different observable along a different chain; not load-bearing for this note |
 
-### What this Step 7 changes
-
-No claim status or theorem boundary. The +12% gap remains an open chain
-across sister authorities and a remaining quantitative-effect bridge,
-now framed as the genuine higher-order separation between the
-symmetric-point curvature scale and the broken-phase pole (Morse/convexity
-context per Gap #3). This note continues to claim only the tree-level
-formula `m_curv_tree = v/(2 u_0) = 140.3 GeV`, with the gap-closure load
-explicitly delegated.
-
-### What this Step 7 records
+### What Step 7 records
 
 - The **2026-05-02 status correction audit packet**
-  (`HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md`)
-  classifies the lattice-curvature → physical-(m_H/v)² bridge as a
-  **same-shape obstruction** with cycle 5 (yt_ew matching M)
-  and cycle 9 (gauge-scalar observable bridge) — i.e., as
-  a member of the **lattice → continuum / physical matching cluster**
-  identified in `AUDIT_BACKLOG_NOTE_2026-05-02.md`
-  §2.3. That cluster requires an independent non-perturbative matching
-  theorem before it can support a physical-mass closure.
-  Closing the cluster closes this gap.
-- The **Wilson taste-breaking row now has bounded follow-on source
-  notes** for the staircase, the uniform-`N_taste = 16` boundary, the
-  corrected `V_taste` formula, the Wilson-shifted extremum, and the
-  leading-order `m_curv_tree` comparison. These notes sharpen the
-  dependency chain but do **not** close the physical +12% gap: the
-  channel choice is non-derived, the parent canonical setup has
-  `r = 0`, and the `r ≈ 0.235` number is a leading-order comparison
-  value rather than a derivation of a Wilson coefficient.
+  (`HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md`,
+  backticked file pointer) classifies the lattice-curvature →
+  physical-(m_H/v)² bridge as a **same-shape obstruction** with cycle 5
+  (yt_ew matching M) and cycle 9 (gauge-scalar observable bridge) —
+  a member of the lattice → continuum / physical matching cluster
+  identified in `AUDIT_BACKLOG_NOTE_2026-05-02.md` §2.3. That cluster
+  requires an independent non-perturbative matching theorem before it
+  can support a physical-mass closure. This restructure preserves that
+  classification: the bridge remains open, which is exactly why D1 is a
+  definition and the Higgs pole is a non-claim.
+- This note continues to claim only theorem T1 over the declared
+  inputs, with the gap closure explicitly delegated.
 
----
-
-## Definitive answer
-
-    m_curv_tree = v / (2 u_0) = 140.3 GeV
-        (zero free parameters; per-channel symmetric-point curvature scale)
-
-with u_0 = 0.8776 from SU(3) plaquette at beta = 6, and v = 246.22 GeV
-from the bounded hierarchy formula. N_c cancels. The 8/9 does not enter.
-
-**This is NOT a Higgs-mass prediction.** It is the symmetric-point
-per-channel curvature magnitude on V_taste, expressed in mass units at
-the externally-fixed VEV v. The Higgs-mass prediction (~125.1 GeV) is
-is tracked in `HIGGS_MASS_DERIVED_NOTE.md`, which uses the full 3-loop
-SM RGE from `λ(M_Pl) = 0` under its stated admissions and does not
-load-bear on `m_curv_tree`.
-
----
-
-## Backward-compatibility note (2026-05-10)
+## Backward-compatibility note (2026-05-10, retained)
 
 Earlier drafts of this note labeled `m_curv_tree` as `m_H_tree`. Sister
-bounded-source-surface notes that import this object continue to use the
-older label `m_H_tree` for the same numerical quantity (`v/(2u_0) ≈
-140.3 GeV`); they compute the same thing. Files where this naming
-collision is most direct include
+bounded-source-surface notes that import this object continue to use
+the older label `m_H_tree` for the same numerical quantity
+(`v/(2u_0) ≈ 140.3 GeV`); they compute the same thing. Files where this
+naming collision is most direct include
 `HIGGS_MASS_12PCT_GAP_DECOMPOSITION_BOUNDED_NOTE_2026-05-10_higgsS7.md`,
 `HIGGS_MASS_WILSON_CHAIN_PARTIAL_PROGRESS_NOTE_2026-05-10_higgsH1.md`,
 `LATTICE_PHYSICAL_MATCHING_THEOREM_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_match.md`,
 `WILSON_M_H_TREE_AT_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md`,
 `WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md`,
 and `HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md`.
-Where these notes cite the imported quantity directly with phrasing like
-"`m_H_tree` from `HIGGS_MASS_FROM_AXIOM_NOTE`", that citation should be
-read as "the symmetric-point per-channel curvature scale `m_curv_tree`
-from `HIGGS_MASS_FROM_AXIOM_NOTE` (previously labeled `m_H_tree` in
-those source notes)". The numerical content is unchanged; only the
-parent label is demoted.
+Where these notes cite "`m_H_tree` from `HIGGS_MASS_FROM_AXIOM_NOTE`",
+read "the symmetric-point per-channel curvature scale `m_curv_tree`
+from `HIGGS_MASS_FROM_AXIOM_NOTE` (previously labeled `m_H_tree`)". The
+numerical content is unchanged; only the parent label is demoted.
 
-The script `higgs_tree_level_mean_field_runner_2026_05_03.py` continues
-to compute `v/(2 u_0) = 140.3 GeV` and verifies the parent note's primary
-label is now `m_curv_tree` (the runner identifies the formula by the
-canonical lattice expression rather than by the old/new symbol).
+## Explicit non-claims
 
----
+This note does **not** claim:
 
-## Dependencies
+- a Higgs-mass-pole prediction or any post-EWSB observable (the
+  broken-phase pole belongs to V_eff_total, not V_taste);
+- a derivation, MC certification, or analytic closure of
+  `<P> = 0.5934` (declared under the upstream reuse license, B1);
+- a derivation of the EW VEV `v` (declared external scale, B2; the
+  hierarchy lane's bounded formula is context, not authority);
+- a derivation of the Higgs-channel selection among the 16 degenerate
+  channels (declared structural input, B3; the effective-N_taste
+  boundary lane is the open target);
+- a derivation of the mean-field factorization (declared approximation,
+  B4);
+- closure of the +12% separation (delegated, Step 7);
+- closure of the lattice → continuum / physical matching obstruction
+  (2026-05-02 status-correction packet; preserved);
+- any audit outcome or status promotion (status authority is the
+  independent audit lane only).
 
-- `TASTE_POLYNOMIAL_NOTE.md` -- det(D+m) = (m^2 - 4c^2)^8
-- `DM_AMGM_SATURATION_NOTE.md` -- eigenvalue degeneracy from Clifford identity
-- `HIERARCHY_THEOREM.md` -- v = M_Pl * alpha_LM^16
-- `YT_EW_COLOR_PROJECTION_THEOREM.md` -- 8/9 applies to EW couplings only
-- `HIGGS_MASS_DERIVED_NOTE.md` -- downstream bounded Higgs route (~125.1 GeV under stated admissions) via full 3-loop SM RGE; NOT load-bearing on `m_curv_tree`
-- `HIGGS_FROM_LATTICE_NOTE.md` -- lattice spacing convergence (`a → 0`)
-- `HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md` -- 2026-05-02 status-correction packet classifying the lattice-curvature → (m_H/v)² bridge as same-shape lattice-physical matching obstruction (cycles 5, 9, 11)
-- `AUDIT_BACKLOG_NOTE_2026-05-02.md` -- cluster-level synthesis of the lattice-physical matching obstruction
-- `HIGGS_KAPPA_CURV_FROM_VTASTE_SYMMETRIC_POINT_NARROW_THEOREM_NOTE_2026-05-10.md` -- analogous κ_curv naming pattern for the dimensionless symmetric-point curvature ratio (PR #951 v3 mirror)
-- `frontier_higgs_mass_corrected_yt.py` -- corrected-`y_t` Higgs support route
-- `frontier_higgs_buttazzo_calibration.py` -- full-3-loop boundary support
+The honest ceiling for this row is bounded: T1 is exact computed
+structure over the declared B3/B4 surface, and B1-B4 are real open work
+owned by the upstream plaquette, hierarchy, channel-boundary, and
+mean-field lanes.
 
-## Audit dependency repair links
+## Dependencies (one-hop, load-bearing)
 
-This graph-bookkeeping section records explicit dependency links named by a
-prior conditional audit so the audit citation graph can track the load-bearing
-links. Backticked file-pointer entries are context references deliberately
-omitted from the graph to avoid non-load-bearing back-edges. This section does
-not promote this note or change the audited claim scope.
+- [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
+  — B1 reuse license for `<P> = 0.5934` (consumed at S1/C1 only).
+- [`WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md`](WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md)
+  — B3 license for `N_taste = 16`, the `(1,4,6,4,1)` staircase, and
+  degeneracy at `r = 0` (also recomputed by the runner).
+- [`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md)
+  — Step 6 Argument 2: `F_adj = 8/9` is exact SU(3) Fierz algebra
+  scoped to the EW projection family only.
 
-- [yt_ew_color_projection_theorem](YT_EW_COLOR_PROJECTION_THEOREM.md)
-- `HIGGS_MASS_DERIVED_NOTE.md` (file-pointer context reference, backticked
-  to break the length-4 audit-graph cycle through the EW-coupling /
-  `g_1(v)`-`g_2(v)` input-authority cluster; per this note's scope statement
-  the downstream bounded Higgs route in that note is NOT load-bearing on
-  `m_curv_tree`, and that note already cites this one in its Note↔runner
-  reconciliation section, which is the load-bearing direction)
-- [higgs_from_lattice_note](HIGGS_FROM_LATTICE_NOTE.md)
-- [plaquette_self_consistency_note](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
-- `HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md` (file-pointer context reference, backticked to break the length-2 audit-graph cycle: that channel-boundary note is downstream — it bounds this note's formula [5] `N_taste` slot and cites this note as its load-bearing parent — so this back-reference is informational/sideways, not a load-bearing dependency edge)
-- `HIGGS_KAPPA_CURV_FROM_VTASTE_SYMMETRIC_POINT_NARROW_THEOREM_NOTE_2026-05-10.md` (file-pointer context reference, backticked to break the length-2 audit-graph cycle: that κ_curv note is downstream — it imports this note's V_taste form from Step 4 as its load-bearing parent — so this back-reference is informational/sideways, not a load-bearing dependency edge)
+Context file pointers (backticked throughout; deliberately omitted from
+the citation graph as non-load-bearing): `HIGGS_MASS_DERIVED_NOTE.md`,
+`HIGGS_FROM_LATTICE_NOTE.md`,
+`HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md`,
+`AUDIT_BACKLOG_NOTE_2026-05-02.md`,
+`HIGGS_KAPPA_CURV_FROM_VTASTE_SYMMETRIC_POINT_NARROW_THEOREM_NOTE_2026-05-10.md`,
+`HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md`,
+`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`,
+`HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`,
+and the Wilson follow-on notes listed in Step 7. The prior citations to
+`TASTE_POLYNOMIAL_NOTE.md`, `DM_AMGM_SATURATION_NOTE.md`, and
+`HIERARCHY_THEOREM.md` were dead files (absent from the repository) and
+were removed in the 2026-06-11 restructure; their content (eigenvalue
+degeneracy, taste determinant) is recomputed from primitives by the
+registered runner, and the VEV input is declared at B2.
+
+## Verification
+
+Run:
+
+```bash
+python3 scripts/higgs_tree_level_mean_field_runner_2026_05_03.py
+```
+
+Expected result (deterministic, pure Python stdlib, runtime under one
+second):
+
+```text
+Breakdown: A=6 B=9 C=14 D=2
+TOTAL: PASS=31 FAIL=0
+```

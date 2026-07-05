@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py
-runner_sha256: 3f05b885411818440b0c50de38bbb1521ce4b650399757353034ad92747cf34a
+runner_sha256: 0b482960b2ebe0b8cd4779c07cce276fb42ad1414e74d4d05a627660a2c7e783
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.28
+elapsed_sec: 3.83
 status: ok
 ----- stdout -----
 
@@ -13,11 +13,11 @@ Source-anchor checks
 PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md exists
 PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: stable-location index
 PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: It is not a selected dial.
-PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: Total generation/Koide dial-relevant rows indexed here: `109`.
+PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: Total generation/Koide dial-relevant rows indexed here: `133`.
 PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: Does not select or force a generation/Koide dial location.
 PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: outputs/post_record_generation_koide_stable_location_index_slice_2026_06_07.json
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md exists
-PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: `koide_or_generation_selector` | 105
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: `koide_or_generation_selector` | 129
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not turn stable settings into selected dials.
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not select or force a generation/Koide dial location.
 PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md exists
@@ -61,12 +61,12 @@ PASS rank weights give r=1 instead of r=1/2
 ------------------------------------------------------------------------------
 Generation/Koide row-index checks
 ------------------------------------------------------------------------------
-PASS Koide/generation selector row count is current snapshot :: 105
-PASS selector location counts match expected :: Counter({'koide_value_or_phase_location': 49, 'obstruction_or_open_gate': 39, 'selector_surface_location': 5, 'generation_structure_location': 5, 'measure_weight_or_source_location': 3, 'readout_carrier_or_record_location': 3, 'other_generation_koide_location': 1})
-PASS selector location counts sum to selector rows :: Counter({'koide_value_or_phase_location': 49, 'obstruction_or_open_gate': 39, 'selector_surface_location': 5, 'generation_structure_location': 5, 'measure_weight_or_source_location': 3, 'readout_carrier_or_record_location': 3, 'other_generation_koide_location': 1})
-PASS generation/Koide stable-feature row count is current snapshot :: {'generation_dial_dynamics_stability_classifier_2026-06-05', 'flavor_r_half_is_the_records_flow_separatrix_2026-06-02', 'stable_post_record_dial_location_certificate_2026-06-06', 'koide_records_objectivity_conditional_note_2026-05-31'}
-PASS generation/Koide stable-feature ids match :: {'generation_dial_dynamics_stability_classifier_2026-06-05', 'flavor_r_half_is_the_records_flow_separatrix_2026-06-02', 'stable_post_record_dial_location_certificate_2026-06-06', 'koide_records_objectivity_conditional_note_2026-05-31'}
-PASS combined generation/Koide dial-relevant index has 109 rows
+PASS Koide/generation selector row count is current snapshot :: 129
+PASS selector location counts match expected :: Counter({'koide_value_or_phase_location': 50, 'obstruction_or_open_gate': 45, 'generation_structure_location': 13, 'readout_carrier_or_record_location': 9, 'selector_surface_location': 5, 'measure_weight_or_source_location': 4, 'other_generation_koide_location': 3})
+PASS selector location counts sum to selector rows :: Counter({'koide_value_or_phase_location': 50, 'obstruction_or_open_gate': 45, 'generation_structure_location': 13, 'readout_carrier_or_record_location': 9, 'selector_surface_location': 5, 'measure_weight_or_source_location': 4, 'other_generation_koide_location': 3})
+PASS generation/Koide stable-feature row count is current snapshot :: {'generation_dial_dynamics_stability_classifier_2026-06-05', 'flavor_r_half_is_the_records_flow_separatrix_2026-06-02', 'stable_post_record_dial_location_certificate_2026-06-06', 'koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12'}
+PASS generation/Koide stable-feature ids match :: {'generation_dial_dynamics_stability_classifier_2026-06-05', 'flavor_r_half_is_the_records_flow_separatrix_2026-06-02', 'stable_post_record_dial_location_certificate_2026-06-06', 'koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12'}
+PASS combined generation/Koide dial-relevant index has 133 rows
 PASS stable-feature rows are disjoint from selector rows
 PASS representative row present in generation_structure_location :: three_generation_structure_note
 PASS representative row present in koide_value_or_phase_location :: charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02
@@ -75,56 +75,67 @@ PASS representative row present in obstruction_or_open_gate :: flavor_generation
 PASS representative row present in other_generation_koide_location :: staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17
 PASS representative row present in readout_carrier_or_record_location :: persistent_record_sidebit_note
 PASS representative row present in selector_surface_location :: pmns_commutant_eigenoperator_selector_note
-PASS audit ledger hash is unchanged :: 4b31e8573fb839a0606465ae08ae61bdbdfef55cbd88ccf7ecf5d2f7336a8679
+PASS audit ledger hash is unchanged :: 15efee196a7b3738ec370120bc338105f64b4c82d0b236c80b0c47b5d5b7b95f
 
 Generation/Koide selector-location counts:
-  generation_structure_location: 5
-  koide_value_or_phase_location: 49
-  measure_weight_or_source_location: 3
-  obstruction_or_open_gate: 39
-  other_generation_koide_location: 1
-  readout_carrier_or_record_location: 3
+  generation_structure_location: 13
+  koide_value_or_phase_location: 50
+  measure_weight_or_source_location: 4
+  obstruction_or_open_gate: 45
+  other_generation_koide_location: 3
+  readout_carrier_or_record_location: 9
   selector_surface_location: 5
 
 [generation_structure_location]
+  chiral_content_is_the_epsilon_d_chirality_import_distinct_from_orientation_narrow_theorem_note_2026-06-08 | unaudited | unaudited | bounded_theorem | docs/CHIRAL_CONTENT_IS_THE_EPSILON_D_CHIRALITY_IMPORT_DISTINCT_FROM_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md
+  color_generation_independent_z3_structures_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md
+  flavor_carrier_measure_scoring_discriminator_bounded_note_2026-07-02 | unaudited | unaudited | bounded_theorem | docs/FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md
+  flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_GAUGE_REPRESENTATION_GENERATION_UNIFORM_CORE_NARROW_THEOREM_NOTE_2026-06-18.md
+  flavor_missing_axiom_carrier_measure_note_2026-05-30 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md
+  gst_texture_reduces_to_rank1_c3_symmetric_mass_light_mass_from_breaking_narrow_theorem_note_2026-06-08 | unaudited | unaudited | bounded_theorem | docs/GST_TEXTURE_REDUCES_TO_RANK1_C3_SYMMETRIC_MASS_LIGHT_MASS_FROM_BREAKING_NARROW_THEOREM_NOTE_2026-06-08.md
   one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10 | audited_clean | retained_bounded | bounded_theorem | docs/ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md
   one_generation_matter_closure_note | unaudited | unaudited | bounded_theorem | docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md
-  staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07 | unaudited | unaudited | bounded_theorem | docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md
-  three_generation_local_algebra_narrow_theorem_note_2026-05-10 | audited_clean | retained_bounded | bounded_theorem | docs/THREE_GENERATION_LOCAL_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-10.md
-  three_generation_structure_note | audited_clean | retained_bounded | bounded_theorem | docs/THREE_GENERATION_STRUCTURE_NOTE.md
 
 [koide_value_or_phase_location]
+  brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15 | audited_clean | retained_bounded | bounded_theorem | docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
   charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md
   charged_lepton_koide_value_full_chain_of_custody_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md
   charged_lepton_mass_hierarchy_review_note_2026-04-17 | unaudited | unaudited | bounded_theorem | docs/CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md
   ckm_bernoulli_two_ninths_koide_bridge_support_note_2026-04-25 | unaudited | unaudited | bounded_theorem | docs/CKM_BERNOULLI_TWO_NINTHS_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md
   cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29 | unaudited | unaudited | bounded_theorem | docs/CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_PROMOTED_VIA_V8_THEOREM_NOTE_2026-04-29.md
   flavor_asymmetry_2over9_forced_weight_2026-05-31 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md
-  flavor_asymmetry_identification_principled_not_forced_2026-05-31 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_ASYMMETRY_IDENTIFICATION_PRINCIPLED_NOT_FORCED_2026-05-31.md
-  flavor_missing_axiom_carrier_measure_note_2026-05-30 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md
+  flavor_asymmetry_identification_principled_not_forced_2026-05-31 | unaudited | unaudited | bounded_theorem | docs/FLAVOR_ASYMMETRY_IDENTIFICATION_PRINCIPLED_NOT_FORCED_2026-05-31.md
 
 [measure_weight_or_source_location]
-  axiom_first_cluster_decomposition_theorem_note_2026-04-29 | audited_clean | retained_bounded | bounded_theorem | docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md
   bae_u1b_six_ray_dirac_measure_note_2026-05-17 | unaudited | unaudited | bounded_theorem | docs/BAE_U1B_SIX_RAY_DIRAC_MEASURE_NOTE_2026-05-17.md
+  free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30 | unaudited | unaudited | bounded_theorem | docs/FREE_FIELD_LATTICE_TO_CONTINUUM_GAUSSIAN_MEASURE_BOUNDED_NOTE_2026-05-30.md
   g_newton_born_as_source_positive_theorem_note_2026-05-10_gnewtong2 | unaudited | unaudited | bounded_theorem | docs/G_NEWTON_BORN_AS_SOURCE_POSITIVE_THEOREM_NOTE_2026-05-10_gnewtonG2.md
+  theta13_is_the_c3_doublet_breaking_measure_sqrt2_derived_theta_e_the_residual_narrow_theorem_note_2026-06-08 | unaudited | unaudited | bounded_theorem | docs/THETA13_IS_THE_C3_DOUBLET_BREAKING_MEASURE_SQRT2_DERIVED_THETA_E_THE_RESIDUAL_NARROW_THEOREM_NOTE_2026-06-08.md
 
 [obstruction_or_open_gate]
+  chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08 | audited_clean | retained_bounded | bounded_theorem | docs/CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md
   ckm_small_vs_pmns_large_from_record_readout_context_narrow_theorem_note_2026-06-06 | unaudited | unaudited | bounded_theorem | docs/CKM_SMALL_VS_PMNS_LARGE_FROM_RECORD_READOUT_CONTEXT_NARROW_THEOREM_NOTE_2026-06-06.md
+  flavor_a1prime_debt_and_data_note_2026-05-30 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_A1PRIME_DEBT_AND_DATA_NOTE_2026-05-30.md
   flavor_carrier_delegation_terminus_local_blind_2026-05-31 | unaudited | unaudited | bounded_theorem | docs/FLAVOR_CARRIER_DELEGATION_TERMINUS_LOCAL_BLIND_2026-05-31.md
   flavor_find_j_round3_dirac_generation_blind_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_FIND_J_ROUND3_DIRAC_GENERATION_BLIND_2026-06-02.md
-  flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31.md
+  flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31 | unaudited | unaudited | bounded_theorem | docs/FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31.md
   flavor_measure_positivity_agnostic_note_2026-05-31 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_MEASURE_POSITIVITY_AGNOSTIC_NOTE_2026-05-31.md
-  flavor_readout_gate_equals_carrier_identification_2026-05-31 | audited_renaming | audited_renaming | bounded_theorem | docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md
   flavor_so2_readout_false_binary_note_2026-05-30 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_SO2_READOUT_FALSE_BINARY_NOTE_2026-05-30.md
-  generation_axiom_boundary_note | audited_clean | retained_bounded | bounded_theorem | docs/GENERATION_AXIOM_BOUNDARY_NOTE.md
 
 [other_generation_koide_location]
+  axiom_first_cluster_decomposition_theorem_note_2026-04-29 | unaudited | unaudited | bounded_theorem | docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md
+  gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13 | unaudited | unaudited | bounded_theorem | docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md
   staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17 | audited_clean | retained_bounded | bounded_theorem | docs/STAGGERED_HAMILTONIAN_DIRECTION_DECOMPOSITION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md
 
 [readout_carrier_or_record_location]
   closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2 | audited_clean | retained_bounded | bounded_theorem | docs/CLOSURE_T2_M1_M2_DISTINGUISHER_NOTE_2026-05-10_t2m1m2.md
+  observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18 | audited_conditional | audited_conditional | bounded_theorem | docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md
   persistent_record_sidebit_note | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_RECORD_SIDEBIT_NOTE.md
   physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30 | audited_clean | retained_bounded | bounded_theorem | docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md
+  pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07 | audited_renaming | audited_renaming | bounded_theorem | docs/PMNS_TM2_COLUMN_SITE_BASIS_KCPT_PREDICATE_BOUNDED_THEOREM_NOTE_2026-06-07.md
+  real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08 | audited_clean | retained_bounded | bounded_theorem | docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md
+  registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10 | unaudited | unaudited | bounded_theorem | docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md
+  registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18 | unaudited | unaudited | bounded_theorem | docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md
 
 [selector_surface_location]
   dm_leptogenesis_pmns_microscopic_selector_reduction_theorem_note_2026-04-17 | unaudited | unaudited | bounded_theorem | docs/DM_LEPTOGENESIS_PMNS_MICROSCOPIC_SELECTOR_REDUCTION_THEOREM_NOTE_2026-04-17.md
@@ -136,7 +147,7 @@ Generation/Koide selector-location counts:
 [generation_or_koide_stable_feature]
   flavor_r_half_is_the_records_flow_separatrix_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md
   generation_dial_dynamics_stability_classifier_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md
-  koide_records_objectivity_conditional_note_2026-05-31 | audited_conditional | audited_conditional | bounded_theorem | docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md
+  koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12 | unaudited | unaudited | bounded_theorem | docs/KOIDE_OO_RD_PREMISE_RELATION_ON_CURRENT_SURFACE_NARROW_THEOREM_NOTE_2026-06-12.md
   stable_post_record_dial_location_certificate_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/STABLE_POST_RECORD_DIAL_LOCATION_CERTIFICATE_2026-06-06.md
 
 ------------------------------------------------------------------------------
@@ -144,12 +155,12 @@ Bounded ledger-row export checks
 ------------------------------------------------------------------------------
 PASS bounded generation/Koide index export exists :: outputs/post_record_generation_koide_stable_location_index_slice_2026_06_07.json
 PASS slice export is for the generation/Koide stable-location index
-PASS slice export records current ledger sha :: 4b31e8573fb839a0606465ae08ae61bdbdfef55cbd88ccf7ecf5d2f7336a8679
-PASS slice export selector row count matches current split :: 105
+PASS slice export records current ledger sha :: 15efee196a7b3738ec370120bc338105f64b4c82d0b236c80b0c47b5d5b7b95f
+PASS slice export selector row count matches current split :: 129
 PASS slice export stable-feature row count matches current split :: 4
-PASS slice export total row count matches current split :: 109
-PASS slice export selector class counts match current split :: {'generation_structure_location': 5, 'koide_value_or_phase_location': 49, 'measure_weight_or_source_location': 3, 'obstruction_or_open_gate': 39, 'other_generation_koide_location': 1, 'readout_carrier_or_record_location': 3, 'selector_surface_location': 5}
-PASS slice export stable-feature ids match current split :: ['flavor_r_half_is_the_records_flow_separatrix_2026-06-02', 'generation_dial_dynamics_stability_classifier_2026-06-05', 'koide_records_objectivity_conditional_note_2026-05-31', 'stable_post_record_dial_location_certificate_2026-06-06']
+PASS slice export total row count matches current split :: 133
+PASS slice export selector class counts match current split :: {'generation_structure_location': 13, 'koide_value_or_phase_location': 50, 'measure_weight_or_source_location': 4, 'obstruction_or_open_gate': 45, 'other_generation_koide_location': 3, 'readout_carrier_or_record_location': 9, 'selector_surface_location': 5}
+PASS slice export stable-feature ids match current split :: ['flavor_r_half_is_the_records_flow_separatrix_2026-06-02', 'generation_dial_dynamics_stability_classifier_2026-06-05', 'koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12', 'stable_post_record_dial_location_certificate_2026-06-06']
 PASS slice export rows match independently enumerated regex split
 
 ------------------------------------------------------------------------------
@@ -168,15 +179,15 @@ PASS Record-derived physical arrow flag is false
 PASS Koide closure flag is false
 
 SUMMARY: PASS=78 FAIL=0
-KOIDE_OR_GENERATION_SELECTOR_ROWS=105
+KOIDE_OR_GENERATION_SELECTOR_ROWS=129
 GENERATION_OR_KOIDE_STABLE_FEATURE_ROWS=4
-GENERATION_KOIDE_STABLE_LOCATION_INDEX_ROWS=109
-GENERATION_STRUCTURE_LOCATION_ROWS=5
-KOIDE_VALUE_OR_PHASE_LOCATION_ROWS=49
-MEASURE_WEIGHT_OR_SOURCE_LOCATION_ROWS=3
-OBSTRUCTION_OR_OPEN_GATE_ROWS=39
-OTHER_GENERATION_KOIDE_LOCATION_ROWS=1
-READOUT_CARRIER_OR_RECORD_LOCATION_ROWS=3
+GENERATION_KOIDE_STABLE_LOCATION_INDEX_ROWS=133
+GENERATION_STRUCTURE_LOCATION_ROWS=13
+KOIDE_VALUE_OR_PHASE_LOCATION_ROWS=50
+MEASURE_WEIGHT_OR_SOURCE_LOCATION_ROWS=4
+OBSTRUCTION_OR_OPEN_GATE_ROWS=45
+OTHER_GENERATION_KOIDE_LOCATION_ROWS=3
+READOUT_CARRIER_OR_RECORD_LOCATION_ROWS=9
 SELECTOR_SURFACE_LOCATION_ROWS=5
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE

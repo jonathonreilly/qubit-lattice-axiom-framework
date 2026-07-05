@@ -105,6 +105,20 @@ def source_anchor_checks() -> None:
         and "bare_retained_allowed: false" in repair,
     )
     report(
+        "repair note is classified as meta dependency-edge certificate, not theorem queue",
+        "claim_type_author_hint: meta" in repair
+        and "**Claim type:** meta" in repair
+        and "**Type:** meta / dependency-edge certificate" in repair
+        and "canonical claim type is `meta`" in repair
+        and "not a positive theorem" in flat(repair)
+        and "not a theorem-grade dimension-selection claim" in flat(repair)
+        and "separate parent dimension-selection theorem" in repair
+        and "prove the parent dimension-selection theorem" in repair
+        and "actual_current_surface_status: bounded-support" in repair
+        and "claim_type_author_hint: bounded_theorem" not in repair
+        and "**Type:** bounded source-graph repair" not in repair,
+    )
+    report(
         "wrapper has 2026-06-08 repair section",
         "2026-06-08 dependency-edge source repair" in wrapper
         and "one-hop bounded support packets" in flat(wrapper),
@@ -172,7 +186,7 @@ def cache_checks() -> None:
     gate_cache = text("gate_cache")
     report("stable-orbit cache certifies PASS=8", "SCORECARD: PASS=8" in bertrand_cache)
     report("Coulomb cache certifies PASS=53 FAIL=0", "SUMMARY: PASS=53 FAIL=0" in coulomb_cache)
-    report("D3 gate cache certifies PASS=35 FAIL=0", "SUMMARY: PASS=35 FAIL=0" in gate_cache)
+    report("D3 gate cache certifies PASS=34 FAIL=0", "SUMMARY: PASS=34 FAIL=0" in gate_cache)
 
 
 def main() -> int:

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/observable_principle_p1_nu_license_check_2026_06_10.py
+runner_sha256: 949d4cae451095a6ca7e492b71259bf0d612821de94a08b04a0668ba56525691
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.90
+status: ok
+----- stdout -----
 == T1: the family, the selected member, and the clause split ==
   [PASS][A] family normalization: g_p(1) = 0 and g_p'(1) = 1
   [PASS][A] p -> 0 limit of g_p is log z (the selected member)
@@ -48,3 +56,6 @@
   [PASS][B] forbidden promotion strings absent  -- found=[]
 
 TOTAL: PASS=38 FAIL=0
+
+----- stderr -----
+

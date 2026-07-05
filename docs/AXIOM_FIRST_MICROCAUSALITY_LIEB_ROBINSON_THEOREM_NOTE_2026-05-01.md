@@ -1,69 +1,73 @@
-# Axiom-First Microcausality / Lieb-Robinson Bound on A_min
+# Microcausality / Lieb-Robinson Bound on the Lattice and Quantum Baseline
 
-**Date:** 2026-05-01 (2026-05-09: bounded action-support/J-bound support added — see new section below)
-**Type:** positive_theorem
-**Claim scope:** equal-time strict locality [O_x, O_y] = 0 for x ≠ y on Cl(3) tensor structure (M1); Lieb-Robinson lightcone bound ‖[α_t(O_x), O_y]‖ ≤ 2‖O_x‖‖O_y‖exp(-d + v_LR|t|) with v_LR = 2erJ on framework's finite-range Hamiltonian (M2); continuum spacelike microcausality in the smooth-limit Lorentz regime (M3).
-**Status:** awaiting independent audit. Under the scope-aware classification framework (audit-lane proposal #291), `effective_status` is computed by the audit pipeline from `audit_status` + `claim_type` + dependency chain.
-**Loop:** `24h-axiom-first-derivations-20260501`
-**Cycle:** 4 (Block 04; independent of Blocks 01-03)
-**Branch:** `physics-loop/24h-axiom-first-block04-microcausality-20260501`
+**Date:** 2026-05-01 (2026-05-09: bounded action-support/J-bound support added; 2026-06-10: exact-log free-bilinear quasilocal LR repair)
+**Type:** bounded_theorem
+**Claim scope:** equal-time strict locality `[O_x, O_y] = 0` for `x != y` on the one-site tensor structure (M1); finite-velocity Lieb-Robinson bounds in the overlap-weight convention for (i) the finite-range hopping/action carrier and (ii) the free (`U = 1`) bilinear two-step exact logarithmic Hamiltonian with exponentially decaying kernel (M2); continuum spacelike microcausality only as a sector-scoped scaling corollary when the matching Lorentz scaling bridge is also supplied (M3). Gauged/interacting exact-log locality and full continuum QFT microcausality are outside this row.
+**Status authority:** independent audit lane only. This source note does not set or predict audit status.
 **Runner:** `scripts/axiom_first_microcausality_check.py`
-**Log:** `outputs/axiom_first_microcausality_check_2026-05-01.txt`
+**Cache:** `logs/runner-cache/axiom_first_microcausality_check.txt`
 
 ## Scope
 
-This note proves, on `A_min` plus the RP + spectrum condition
-support theorems, the **lattice microcausality theorem** for the
-framework's reconstructed Hamiltonian `H` on `H_phys`. The result has
-two parts:
+This note packages the lattice microcausality statements that currently close
+from the framework baseline and the cited sector bridges. The result has
+three parts:
 
 **(M1) Equal-time strict locality.** For any two distinct lattice
 sites `x ≠ y` and any operators `O_x, O_y` supported at those sites,
-`[O_x, O_y] = 0` strictly. This is a one-line consequence of A1.
+`[O_x, O_y] = 0` strictly. This is a one-line consequence of the Quantum
+axiom's tensor product structure.
 
 **(M2) Lieb-Robinson lightcone.** For operators `O_x, O_y` at sites
-`x, y` evolved by the reconstructed Hamiltonian `H` from RP, there
-exist constants `v_LR > 0` (the Lieb-Robinson velocity) and `ξ > 0`
-(decay rate) depending only on A3, A4 finite-range parameters, such
-that
+`x, y`, two sector-scoped finite-velocity statements are now supplied:
+
+- **(M2a) finite-range carrier:** the support-family bridge gives
+  a finite-range LR bound with the overlap-weight velocity
+  `v_LR = 2 e q W R` on the finite-range hopping/action carrier;
+- **(M2b) free exact-log carrier:** the free bilinear two-step
+  `H = -log(T_hat^2)/(2 a_tau)` is quasilocal, not finite range, and the
+  2026-06-10 bridge gives, for `0 < d mu < eta < arcsinh(m)`,
 
 ```text
-    ‖ [α_t(O_x), O_y] ‖_op  ≤  C · ‖O_x‖ · ‖O_y‖ · exp(-(d(x, y) - v_LR · |t|) / ξ)    (1)
+    ||[alpha_t(O_x), O_y]||
+      <= 2 ||O_x|| ||O_y|| exp(-mu d_1(x,y) + 4 W_mu |t|),              (1)
 ```
 
-where `α_t(O) = e^{i t H} O e^{-i t H}` is real-time Heisenberg
-evolution, `d(x, y)` is the lattice graph distance, and `C` is a
-constant that depends only on the local algebra dimension. In
-particular, **the commutator is exponentially small outside the
-effective lightcone** `d(x, y) > v_LR · |t|`.
+where `W_mu` is the finite exponential weighted overlap of the exact-log
+hopping kernel. Equivalently `v_mu = 4 W_mu / mu` is finite. In both
+readings, the commutator is exponentially small outside the corresponding
+effective lightcone. The gauged/interacting exact logarithm is not closed by
+this note.
 
-In the continuum-limit identification `t_phys = t · a_τ`,
-`d_phys = d · a_s`, and `v_LR · a_s / a_τ → c` (fixed light-cone
-slope), this becomes the standard relativistic-QFT
-**microcausality** statement `[O(x), O(y)] = 0` for spacelike
-separation `(x - y)² < 0`.
+In the continuum-limit identification `t_phys = t · a_tau`,
+`d_phys = d · a_s`, and finite LR slope `v · a_s / a_tau -> c` on a
+sector-matching Lorentz scaling surface, this gives the usual
+spacelike-commutator limit inside the same sector. This is a scaling
+corollary, not an interacting Wightman-axiom theorem.
 
-This note completes the framework's locality program by providing the
-spacetime locality statement that complements the existing retained
-cluster-decomposition theorem (which is the *spatial* decay theorem).
+This note therefore closes a bounded lattice lightcone surface and the
+free-bilinear exact-log repair, complementing the spatial
+cluster-decomposition theorem. It does not close the gauged/interacting
+exact-log frontier.
 
-## A_min objects in use
+## Framework Baseline And Supplied Inputs
 
-- **A1 — local algebra `Cl(3)`.** Used in (M1) directly: distinct
-  lattice sites carry independent copies of `Cl(3)`, so the local
-  algebras are disjoint and commute.
-- **A2 — substrate `Z^3`.** Used as the underlying graph metric
-  `d(x, y)` (graph distance under nearest-neighbor adjacency).
-- **A3 — finite-range staggered Dirac.** Used in (M2): the
-  Kogut-Susskind staggered hop and Wilson term are nearest-neighbor
-  in space and have one-step temporal range. The maximum hopping
-  range is `r_h = 1` lattice unit.
-- **A4 — canonical normalization at g_bare = 1, plaquette action.**
-  Used in (M2): the Wilson plaquette gauge action couples the four
-  corners of a single plaquette, range `r_g = 1`. The lattice gauge
-  field is therefore finite-range with range `r_g = 1`.
+- **Lattice.** Supplies the `Z^3` nearest-neighbor graph metric
+  `d(x, y)`.
+- **Quantum.** Supplies the finite one-qubit operator algebra at each site,
+  equivalently `M_2(C) ~= Cl(3,0)`, and the finite-block tensor product.
+  This is the only baseline axiom used in (M1).
+- **Record.** Not used. No readout context, central-sector decomposition,
+  weighting, normalization, probability rule, measurement dynamics, or
+  recorded outcome enters this row.
+- **Finite-range hopping/action carrier.** Supplies the sector carrier for
+  (M2a): nearest-neighbor staggered hopping/Wilson terms and one-plaquette
+  gauge-action support have finite support in the lattice graph metric.
+- **Free exact-log carrier.** Supplies the sector carrier for (M2b): the
+  free (`U = 1`) two-step exact logarithmic Hamiltonian is exponentially
+  quasilocal, not finite range.
 
-## Retained inputs
+## Cited Inputs
 
 - **RP transfer matrix.** From the [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md),
   `T : H_phys → H_phys` is Hermitian, positive, and bounded. The
@@ -72,13 +76,18 @@ cluster-decomposition theorem (which is the *spatial* decay theorem).
   `H` on `H_phys` is bounded operator with finite spectral norm
   (since `H_phys` has finite dimension on any finite block, by RP
   reconstruction).
+- **Exact-log free bilinear quasilocality and LR composition.** From
+  [`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md),
+  the free two-step exact logarithm is an exponentially quasilocal bilinear
+  support family and is not finite range. From
+  [`FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`](FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md),
+  that weighted kernel yields a finite-velocity LR envelope in the same free
+  sector.
 
 ## Statement
 
-Let `H = sum_{z ∈ Λ} h_z` be the reconstructed Hamiltonian on
-`H_phys` from RP, where `h_z` is the local Hamiltonian density
-supported in a ball of radius `r := max(r_h, r_g) = 1` around
-lattice site `z`. Then:
+Let `Λ` be a finite lattice block with one-site algebra supplied by the
+current Quantum axiom. Then:
 
 **(M1) Equal-time strict locality.** For any two distinct lattice
 sites `x, y ∈ Λ` with `x ≠ y` and any operators `O_x, O_y` supported
@@ -88,50 +97,58 @@ at these sites,
     [O_x, O_y]  =  0  (exactly)                                              (2)
 ```
 
-**(M2) Lieb-Robinson lightcone bound.** Let `α_t(O) := e^{i t H} O e^{-i t H}`
-be Heisenberg evolution, `d(x, y)` the lattice graph distance, and
-define
+**(M2a) Finite-range support-family lightcone.** For any finite-range support
+family `H = Σ_Z h_Z` with support size `q`, support diameter `R`, and
+per-site overlap weight `W`, the cited bridge gives
 
 ```text
-    v_LR  :=  2 e r · J                                                      (3)
-    ξ      :=  1                                                              (4)
+    v_LR := 2 e q W R,                                                       (3)
 ```
 
-where `J := sup_z ‖h_z‖_op` is the maximum local-Hamiltonian-density
-norm. Then for any operators `O_x, O_y` supported at sites `x, y`
-respectively,
+and the corresponding exponential commutator envelope. Applied to the
+hopping-bilinear/action carrier, this is the finite-range lattice lightcone
+this row may cite.
+
+**(M2b) Free exact-log quasilocal lightcone.** In the free bilinear two-step
+sector, let `H = -log(T_hat^2)/(2 a_tau)` and let `W_mu` be the finite
+weighted overlap from the free-bilinear quasilocal LR bridge. Then for any
+`0 < d mu < eta < arcsinh(m)` and one-site observables,
 
 ```text
-    ‖ [α_t(O_x), O_y] ‖_op  ≤  2 · ‖O_x‖_op · ‖O_y‖_op · exp(- d(x,y) + v_LR |t|)    (5)
+    ||[alpha_t(O_x), O_y]||
+      <= 2 ||O_x|| ||O_y|| exp(-mu d_1(x,y) + 4 W_mu |t|).                 (4)
 ```
 
-In particular, when `d(x, y) > v_LR |t|`, the commutator is bounded by
-`2 ‖O_x‖ ‖O_y‖ · e^{-(d - v_LR |t|)} → 0` exponentially.
+Equivalently, `v_mu = 4 W_mu / mu` is a finite sector speed. The exact log is
+quasilocal rather than finite range; the strict `R <= 2` exact-log statement
+is false on this sector.
 
-**(M3) Continuum-limit microcausality.** In the lattice continuum
-limit `a → 0` with `v_LR · a_s / a_τ → c < ∞` fixed (which holds on
-the framework's retained Lorentz kernel surface
-[`LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md`](LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md)), the bound (5) becomes
-strict: `[O(x), O(y)] = 0` for any pair of operators at points `x, y`
-with spacelike separation in the asymptotic Lorentzian metric.
+**(M3) Sector-scoped continuum-limit microcausality.** In a sector where the
+finite LR slope `v · a_s / a_tau -> c < infinity` is tied to a matching
+Lorentz scaling surface
+([`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md),
+[`LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md`](LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md)),
+the lattice bound becomes strict for spacelike-separated continuum points in
+that same sector. This does not assert gauged/interacting exact-log locality
+or full continuum QFT microcausality.
 
-Statements (M1)–(M3) constitute the framework microcausality theorem
-on `A_min`.
+Statements (M1)–(M3), with these boundaries, constitute the current bounded
+framework microcausality surface.
 
 ## Proof
 
 ### Step 1 — Equal-time strict locality (proves M1)
 
-By A1, the local algebra at each lattice site is `Cl(3)` (8-dimensional
-graded algebra). Distinct lattice sites have independent copies of
-`Cl(3)`. The full lattice operator algebra on a finite block `Λ` is
+By the Quantum axiom, each lattice site carries a finite one-site operator
+algebra and distinct sites enter the finite-block tensor product as distinct
+tensor factors. The full lattice operator algebra on a finite block `Λ` is
 the tensor product
 
 ```text
-    A(Λ)  =  ⊗_{z ∈ Λ}  Cl(3)_z
+    A(Λ)  =  tensor_{z in Λ} A_z
 ```
 
-Operators `O_x ∈ Cl(3)_x` and `O_y ∈ Cl(3)_y` with `x ≠ y` are then
+Operators `O_x in A_x` and `O_y in A_y` with `x != y` are then
 of the form `O_x = (...) ⊗ a ⊗ (...)` and `O_y = (...) ⊗ (...) ⊗ b ⊗ (...)`
 where `a` lives in the `x`-th tensor factor and `b` in the `y`-th
 tensor factor. They commute trivially:
@@ -140,81 +157,45 @@ tensor factor. They commute trivially:
     O_x · O_y  =  (... a ⊗ b ...)  =  O_y · O_x                             (6)
 ```
 
-This proves (M1). For staggered fermion operators, the Grassmann
-graded structure `χ_x χ_y = -χ_y χ_x` for fermionic χ at distinct
-sites is included in the "Cl(3) at each site" structure (the Cl(3)
-algebra encodes the Z_2-grading). The commutator (M1) is the
-*graded* commutator
+This proves (M1) for ordinary one-site observables. For staggered fermion
+generators, the corresponding locality statement is the graded commutator
 `[O_x, O_y]_± = O_x O_y - (-1)^{|O_x| |O_y|} O_y O_x = 0`. ∎
 
-### Step 2 — Lieb-Robinson bound (proves M2)
+### Step 2 — finite-range and quasilocal LR bounds (proves M2)
 
-This is the standard Lieb-Robinson 1972 estimate adapted to the
-framework's specific finite-range Hamiltonian. We follow the
-Nachtergaele-Sims 2010 presentation.
+The previous version of this note used the stale constant `v_LR = 2 e r J`
+and asserted that the exact logarithmic Hamiltonian was finite range. Both
+parts are superseded.
 
-Define `f(t) := [α_t(O_x), O_y]`. Differentiating in `t`:
-
-```text
-    df/dt  =  i · [H, [α_t(O_x), O_y]]  =  i · [α_t([i H, O_x]), O_y]      (7)
-```
-
-Iterating, after `n` derivatives:
+**M2a.** The finite-range bridge
+[`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md)
+proves the finite-range support-family LR lemma directly. In that convention
+the load-bearing inputs are support size `q`, support diameter `R`, and
+per-site overlap weight `W`, and the velocity is
 
 ```text
-    d^n f / dt^n  =  i^n · [α_t( ad_H^n (O_x) ), O_y]
+    v_LR = 2 e q W R.
 ```
 
-where `ad_H(X) := [H, X]`. Since `H = sum_z h_z` with each `h_z`
-supported in a ball of radius `r` around `z`, the commutator
-`[h_z, O_x]` is nonzero only if `d(z, x) ≤ r`. Hence
-`ad_H(O_x) = sum_{z : d(z,x) ≤ r} [h_z, O_x]`, which has support
-extended to a ball of radius `2r` around `x`.
+This closes the finite-range hopping/action-carrier LR bound; the old
+`2 e r J` expression should not be used downstream.
 
-By induction, `ad_H^n(O_x)` has support in a ball of radius `(n+1) r`
-around `x`. The number of nonzero contributing `h_z` chains is bounded
-by `(2r d_max)^n / n!` where `d_max` is the local coordination number
-on `Λ`.
-
-Each commutator `[h_z, O_x]` has operator norm bounded by
-`2 · ‖h_z‖ · ‖O_x‖ ≤ 2 J ‖O_x‖`. So
+**M2b.** The transfer-matrix log-quasilocality theorem proves that the free
+two-step exact log Hamiltonian is exponentially quasilocal and not finite
+range. The new bridge
+[`FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`](FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md)
+then performs the missing weighted-path composition: for
+`0 < d mu < eta < arcsinh(m)`, the exact-log kernel has finite weighted
+overlap `W_mu`, and
 
 ```text
-    ‖ ad_H^n (O_x) ‖_op  ≤  ‖O_x‖ · (2 J · 2r)^n / n!   ≤  ‖O_x‖ · (4 J r)^n / n!    (8)
+    ||[alpha_t(O_x), O_y]||
+      <= 2 ||O_x|| ||O_y|| exp(-mu d_1(x,y) + 4 W_mu |t|).
 ```
 
-The Taylor series of `α_t = e^{i t ad_H}` then satisfies
-
-```text
-    ‖ α_t(O_x) - O_x ‖_op  ≤  ‖O_x‖ · ( exp(4 J r |t|) - 1 )                 (9)
-```
-
-For the commutator with `O_y`: the only contributions to
-`[α_t(O_x), O_y]` come from terms in the Taylor expansion where
-`ad_H^n(O_x)` has support overlapping with `y`. Since
-`ad_H^n(O_x)` has support in a ball of radius `(n+1) r` around `x`,
-the support overlaps `y` only if `(n + 1) r ≥ d(x, y)`, i.e.
-`n ≥ d(x, y)/r - 1`. Hence
-
-```text
-    ‖ [α_t(O_x), O_y] ‖_op
-       ≤  2 · ‖O_y‖ · sum_{n ≥ d(x,y)/r - 1}  ‖ ad_H^n (O_x) ‖_op · |t|^n / n!
-       ≤  2 · ‖O_x‖ · ‖O_y‖ · sum_{n ≥ d(x,y)/r - 1}  (4 J r |t|)^n / n!
-```
-
-Using the standard estimate
-`sum_{n ≥ N} z^n / n!  ≤  e^z · z^N / N!  ≤  e^z · (e z / N)^N`:
-
-```text
-    ‖ [α_t(O_x), O_y] ‖_op  ≤  2 ‖O_x‖ ‖O_y‖ · e^{4 J r |t|} · (4 e J r |t| / d(x, y))^{d(x, y) / r}
-                            ≤  2 ‖O_x‖ ‖O_y‖ · exp(- d(x, y) + 2 e r J · |t|)            (10)
-```
-
-(after writing `(4 e J r |t| / d)^{d/r} = exp((d/r) log(4 e J r |t| / d))`
-and using `log(z) ≤ z - 1` for the dominant exponential).
-
-This is the Lieb-Robinson bound (5) with `v_LR := 2 e r J` and
-decay rate `ξ = 1`. ∎
+This is a finite lightcone with `v_mu = 4 W_mu / mu`. It is deliberately
+sector-scoped: free (`U = 1`) bilinear two-step exact log only. The
+gauged/interacting logarithm remains an open bridge. ∎
 
 ### Bounded action-support/J-bound support (added 2026-05-09)
 
@@ -240,85 +221,106 @@ elementary plaquette (Wilson plaquette). This gives bounded support
 action-density pieces. It does not prove that the exact logarithmic
 Hamiltonian `H = -log(T)/a_tau` is finite range.
 
-**(F2) Explicit action-density J bound.** `J_action ≤ J_max :=
-|m| + d/2 + r_W · d + (2β/N_c) · d(d-1)/2`, depending only on action
-coefficients. For the canonical surface (`d = 4, r_W = 1, β = 6,
-N_c = 3`): `J_max = |m| + 30`. Proof: triangle inequality on the
-local action-density pieces, using `‖U_μ‖_op = 1` because
-`U_μ ∈ SU(3)` is unitary, `|η_μ(x)| = 1`, fermion ladder ops bounded
-by 1, and `|1 - Re tr(U_P)/N_c| <= 2` for unitary `U_P`. The bound is
-gauge-background-independent.
+**(F2) Explicit action-density J and overlap-weight budgets.** The
+repaired bridge uses the plaquette coefficient `2β`: the `1/N_c`
+belongs inside the trace average, not in the exterior coefficient.
+Its displayed bound is
 
-**(F3) Conditional Lieb-Robinson velocity.** If the exact
-reconstructed Hamiltonian has a finite-range/quasilocal decomposition
-with compatible support and local bound, Hastings-Koma /
-Nachtergaele-Sims gives `v_LR = 2 e r J`; preserving the leading
-`r_action <= 2` support would give `v_LR ≤ 4 e · (|m| + 30)`.
+```text
+    J_action <= (d/2) · 1 + r_W · d + |m| + 2β · q_face,
+```
+
+with `q_face = d(d-1)/2`. On the canonical surface
+(`d = 4, r_W = 1, β = 6, N_c = 3`) this gives the supplied-surface
+budget `J_max = |m| + 78`. The same bridge also brackets the
+carrier-faithful Wilson reading and all-direction envelope:
+`J_max^carrier = |m| + 78.5` and `J_max^envelope = |m| + 80`.
+All three are finite and gauge-background-independent; the older
+double division by `N_c` is superseded.
+
+The LR lemma does not consume `J_action` directly. Its local input is
+the per-site overlap weight `W = sup_x Σ_{Z ∋ x} ‖h_Z‖_op`. For the
+same carrier family the bridge proves
+
+```text
+    W_surface = |m| + 296,
+    W_carrier = |m| + 298,
+    W_envelope = |m| + 300.
+```
+
+**(F3) Conditional Lieb-Robinson velocity.** If the exact reconstructed
+Hamiltonian has a finite-range/quasilocal decomposition with compatible
+support and overlap weight, the in-repo finite-range bridge gives the
+overlap-weight velocity `v_LR = 2 e q W R`. The older `2 e r J`
+summary is superseded because it omitted the per-site overlap weight;
+under the envelope branch the conditional finite-range ceiling is
+`v_LR <= 16·e·(|m| + 300)`.
 
 The bridge note's runner `scripts/microcausality_finite_range_h_bridge_2026_05_09.py`
 verifies (F1) on a finite-range toy action-density carrier, (F2) by
 computing `‖h_z‖_op` on 20 random SU(3) backgrounds and comparing
-against the conservative `J_max`, (F3) by verifying the standard
-Lieb-Robinson bound (5) on a 1D finite-range Hamiltonian, and (F4)
-outside-lightcone exponential decay.
+against the repaired conservative `J_max`, (F2b/F2c) by checking the
+`78 <= 78.5 <= 80` branch arithmetic and `296/298/300` overlap
+weights, (F3) by verifying the proved Lieb-Robinson bounds on a
+finite-range Hamiltonian, and (F4) outside-lightcone exponential decay.
 
 **Consequence for the load-bearing claim.** The action-support and
-coefficient/norm pieces are no longer asserted, but Step 2 still
-requires an exact finite-range or quasilocal estimate for the
-reconstructed logarithmic Hamiltonian. Until that bridge is supplied,
-the parent lightcone claim remains conditional.
+coefficient/norm pieces are no longer asserted. The finite-range LR constant
+is the overlap-weight constant of the finite-range bridge, and the free bilinear
+exact-log sector is repaired by the 2026-06-10 quasilocal LR bridge. What
+remains open is the gauged/interacting exact-log locality bridge.
 
-### Step 3 — Continuum microcausality (proves M3)
+### Step 3 — sector-scoped continuum microcausality (proves M3)
 
-In the lattice → continuum limit `a → 0` with
-`v_LR · a_s / a_τ  =  c < ∞` (the framework's emergent Lorentz
-velocity, retained on [`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md) and
-[`LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md`](LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md)), spatial graph distance
-`d_phys = d · a_s` and time `t_phys = t · a_τ` satisfy
-`v_LR |t| = c |t_phys| / a_s`. The Lieb-Robinson exponent in (5)
+In the lattice -> continuum limit `a -> 0` with finite sector LR speed `v`
+satisfying `v · a_s / a_tau = c < infinity` on a sector-matching Lorentz
+scaling bridge
+([`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md),
+[`LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md`](LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md)),
+spatial graph distance `d_phys = d · a_s` and time
+`t_phys = t · a_tau` satisfy
+`v |t| = c |t_phys| / a_s`. The Lieb-Robinson exponent
 becomes
 
 ```text
-    - d(x, y) + v_LR |t|  =  - d_phys / a_s + c |t_phys| / a_s
-                          =  (1 / a_s) · (- d_phys + c |t_phys|)
+    - d(x, y) + v |t|  =  - d_phys / a_s + c |t_phys| / a_s
+                       =  (1 / a_s) · (- d_phys + c |t_phys|)
 ```
 
 For spacelike separation `d_phys > c |t_phys|`, the exponent is
-`- (d_phys - c |t_phys|) / a_s → -∞` as `a_s → 0`, so the commutator
-vanishes strictly. This is the standard relativistic microcausality
-statement. ∎
+`- (d_phys - c |t_phys|) / a_s -> -infinity` as `a_s -> 0`, so the commutator
+vanishes strictly in the same sector. This is the standard relativistic
+microcausality limiting form, but it is only as broad as the lattice
+lightcone and Lorentz-scaling inputs it consumes. ∎
 
-## Hypothesis set used
+## Hypothesis Set Used
 
-- A1 (Cl(3) tensor structure for equal-time locality M1).
-- A2 (Z^3 graph metric).
-- A3 (NN staggered hop range r_h = 1).
-- A4 (plaquette gauge range r_g = 1).
+- Lattice (`Z^3` nearest-neighbor graph metric).
+- Quantum (one-site finite operator algebra and finite-block tensor product).
+- Record is not used.
+- finite-range hopping/action support-family carrier for M2a.
+- free bilinear two-step exact-log kernel and weighted-overlap LR bridge for M2b.
 - RP transfer matrix (defines H_phys).
 - Spectrum condition (H bounded operator with finite J).
-- Standard Lieb-Robinson 1972 / Nachtergaele-Sims 2010 lattice
-  estimation (admitted-context, theorem-grade lattice statistics
-  reference).
-
-No fitted parameters. No observed values used as proof inputs.
+No fitted parameters. No observed values used as proof inputs. No
+gauged/interacting exact-log locality is consumed.
 
 ## Corollaries
 
-C1. **Spatial cluster decomposition refinement.** Combined with the
-retained [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md),
+C1. **Spatial cluster decomposition refinement.** Combined with
+[`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md),
 (M1)+(M2) refine the *spacetime* decay rate of connected
 correlators on the framework: `<O_x α_t(O_y)>_c → 0` exponentially in
-`d(x, y) - v_LR |t|`.
+`d(x, y) - v |t|`, in whichever M2 sector supplies the finite velocity.
 
 C2. **Causal asymptotic local algebras.** The local algebras
 `A(O) := { observables localized in spacetime region O }`
-satisfy `[A(O_1), A(O_2)] = 0` for any two regions `O_1, O_2`
-with spacelike separation (in the continuum limit). This is the
-framework's Haag-Kastler-style local-algebra structure.
+satisfy `[A(O_1), A(O_2)] = 0` for any two regions `O_1, O_2` with
+spacelike separation in the sector-scoped continuum limit.
 
 C3. **No-superluminal-signaling on the framework.** Any signaling
 protocol from `x` at `t = 0` to `y` at time `t` requires
-`d(x, y) ≤ v_LR · t`. This is the lattice analogue of the
+`d(x, y) ≤ v · t` for the relevant sector velocity. This is the lattice analogue of the
 no-faster-than-light-signaling principle.
 
 C4. **Reeh-Schlieder cyclicity premise.** The local algebras built
@@ -328,57 +330,64 @@ for any nonempty open region.
 
 ## Honest status
 
-**Source theorem on A_min + RP + spectrum
-condition.** (M1)–(M3) are derived from:
+**Bounded source theorem on current Lattice/Quantum premises plus cited
+sector bridges.** (M1)–(M3) are derived from:
 
-- A1 (equal-time tensor product structure);
-- A3, A4 (finite-range hopping/gauge);
+- Lattice and Quantum, named explicitly above;
+- the finite-range support-family LR bridge for M2a;
+- the exact-log quasilocality theorem plus the 2026-06-10
+  free-bilinear quasilocal LR bridge for M2b;
 - RP (defines H, H_phys);
 - spectrum condition (H bounded);
-- standard Lieb-Robinson lattice estimation (admitted-context).
+- Lorentz scaling notes for M3 only when the same sector velocity is
+  being scaled.
 
-The runner verifies the lattice Lieb-Robinson bound numerically on a
-small block (1D chain, range-1 nearest-neighbor Hamiltonian, with
-H built from random Hermitian operators). It demonstrates the
-exponential decay of `‖[α_t(O_0), O_d]‖` outside the lightcone
-`d > v_LR · t`.
+The original runner verifies the finite-range lattice Lieb-Robinson bound on a
+small block. The 2026-06-10 bridge runner verifies the exact-log quasilocal
+weighted-overlap constants and finite-matrix commutator envelope in the free
+bilinear sector.
 
 **Honest claim-status fields:**
 
 ```yaml
 actual_current_surface_status: support
-conditional_surface_status: derived support theorem on A_min + RP + spectrum condition
+conditional_surface_status: bounded theorem over finite-range carrier plus free-bilinear exact-log sector
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Depends on audit-pending RP and spectrum-condition support notes. A chain of support cannot be marked retained-grade until all dependencies are ratified on the current authority surface."
+proposal_allowed_reason: "No new axiom is proposed; gauged/interacting exact-log locality remains open."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
 **Not in scope.**
 
-- Continuous Lorentz invariance via Wightman axioms. We prove the
-  lattice Lieb-Robinson form, which is the cleanest statement on
-  `A_min`.
+- Gauged/interacting exact-log locality and full Wightman-style continuum
+  microcausality. We prove the finite lattice lightcone surfaces currently
+  supported in-repo.
 - Promotion to retained / Nature-grade in the canonical paper
   package. Independent audit required.
 
 ## Citations
 
-- A_min: [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
+- current minimal axioms: [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
 - RP support note:
   [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
 - spectrum-condition support note:
   [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
-- retained cluster-decomposition note:
+- cluster-decomposition note:
   [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
-- 2026-05-09 bounded action-support/J-bound support for finite-range H + explicit v_LR:
-  `MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`
-- retained emergent Lorentz invariance:
+- 2026-05-09 overlap-weight finite-range LR bridge:
+  [`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md)
+- exact-log free-bilinear quasilocality:
+  [`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md)
+- 2026-06-10 exact-log free-bilinear quasilocal LR bridge:
+  [`FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`](FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md)
+- emergent Lorentz scaling inputs:
   [`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md),
   [`LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md`](LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md)
-- standard external references (theorem-grade, no numerical input):
+- standard references (context only; no constant imported after the
+  in-repo bridges):
   Lieb-Robinson (1972) *Comm. Math. Phys.* 28, 251;
   Hastings (2004) *Phys. Rev. B* 69, 104431;
   Nachtergaele-Sims (2010) in *New Trends in Mathematical Physics*,
@@ -391,5 +400,9 @@ audit verdict so the audit citation graph can track them. It does not promote
 this note or change the audited claim scope.
 
 - [microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09](MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md)
-  (2026-05-09 — supplies bounded action-density support and explicit
-  J budget for the load-bearing finite-range-H/v_LR bridge).
+  (overlap-weight finite-range LR bridge; supersedes `2 e r J`).
+- [TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md](TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md)
+  (free-bilinear exact-log quasilocal kernel and strict finite-range failure).
+- [FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md](FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md)
+  (new one-hop bridge composing the exact-log quasilocal kernel into a finite
+  LR envelope in the free bilinear sector).

@@ -1,8 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py
+runner_sha256: 65c97f804d4c3335d08467f08a0baf7e6730bd1ac819ef613a8cf94d6afbcac9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16
 Goal: sympy verification of (D1)-(D4) Grassmann-vs-bosonic dichotomy,
-      the (D5) U4-composition collapse certificate + falsification leg,
+      the (D5) Quantum/dim-two collapse certificate + falsification leg,
       and the (B-stat) declared scope-boundary witness
 ========================================================================================
 
@@ -31,6 +39,12 @@ Part 2: (D2) per-site Grassmann Fock has dim_C = 2
   [PASS (A)] (D2) Grassmann per-site Fock dim_C H_x^G = 2 (basis: |0>, chibar|0>)  (fock_states = ['|0>', 'chibar|0>'])
   [PASS (A)] (D2) algebraic chi_x^2 = 0 nilpotency (cited upstream Berezin narrow)
   [PASS (A)] (D2) algebraic chibar_x^2 = 0 nilpotency (cited upstream Berezin narrow)
+  [PASS (A)] (D2 repair) cbar^2 = 0 and c^2 = 0 on F_x (2x2 matrix realization)
+  [PASS (A)] (D2 repair) {c, cbar} = 1 on F_x (graded Leibniz, DERIVED not assumed)
+  [PASS (A)] (D2 repair) cbar|0> = |1>, c|1> = |0>, c|0> = 0 (lowering = Berezin derivative)
+  [PASS (A)] (D2 repair) number operator N = cbar c = diag(0, 1), spectrum {0, 1}
+  [PASS (A)] (D2 repair, slip witness) {L_chi, L_chibar} = 0 != 1 on Lambda[chi, chibar]  (generator left multiplication is NOT the lowering operator)
+  [PASS (A)] (D2 repair, slip witness) L_chi(L_chibar(1)) = chi*chibar != 1 (no chi|1> = |0>)  (chi(chibar 1) lands on the 2-grade monomial, not the vacuum)
 
 ----------------------------------------------------------------------------------------
 Part 3: (D2) match to dim_C V = 2 (upstream Cl(3) faithful irrep)
@@ -55,6 +69,7 @@ Part 5: (D4) Berezin scalar-finite-determinant readout at N=1..4
 ----------------------------------------------------------------------------------------
 Part 6: (D4) bosonic single-mode infinite-tower diverges from Grassmann
 ----------------------------------------------------------------------------------------
+  [PASS (A)] (D4) Tr_{F_x} exp(-m N) = 1 + exp(-m) from the repaired module's N = cbar c  (N = diag(0, 1) on the Berezin function space F_x)
   [PASS (A)] (D4) Grassmann (1 + exp(-m)) != bosonic 1/(1-exp(-m)) on single mode  (diff at m=log(2): -1/2 (G=3/2, B=2))
   [PASS (A)] (D4) Grassmann trace at m=log(2) equals 3/2
   [PASS (A)] (D4) bosonic trace at m=log(2) equals 2
@@ -66,23 +81,23 @@ Part 7: counter-example — drop nilpotency, lose dim-2 readout
   [PASS (A)] (cf) commuting candidate per-site dim incompatible with Cl(3) faithful dim 2 at any k >= 2
 
 ----------------------------------------------------------------------------------------
-Part 8: (D5) U4 composition certificate (retained one-hop authority)
+Part 8: (D5) Quantum/dim-two discharge certificate
 ----------------------------------------------------------------------------------------
   [PASS (A)] (D5) gamma_i -> sigma_i: 8 Clifford basis images R-independent in M_2(C)  (real span rank = 8 = dim_R Cl(3,0) = dim_R M_2(C) (iso, faithful))
   [PASS (A)] (D5) commutant of {sigma_i} on C^2 is scalars (irreducible module)  (solve(XS=SX) -> [{b_c: 0, c_c: 0, d_c: a_c}])
   [PASS (A)] (D5) pseudoscalar omega -> +i I (single chirality, (n_+, n_-) = (1, 0))
-  [PASS (A)] (D5) dim_C H_x = 2 = 2k with k = 1 (U4 closure composed with C1)  (dim_C H_x = 2, k = 1)
+  [PASS (A)] (D5) dim_C H_x = 2 = 2k with k = 1 (Quantum axiom plus retained dim-two row)  (dim_C H_x = 2, k = 1)
   [PASS (A)] (D5) candidate (B) excluded on physical H_x (aleph_0 truncations exceed 2)
   [PASS (A)] (D5) single-pair (G) matches (2 = dim_C H_x); p >= 2 pairs mismatch (2^p != 2)  (single-pair dim = 2; multi-pair dims = {2: 4, 3: 8, 4: 16})
-  COLLAPSE CERTIFICATE: on the physical per-site Hilbert space (retained U4 closure, dim_C H_x = 2, k = 1), the two-candidate surface {G, B} collapses to the single-pair Grassmann candidate (G).
+  COLLAPSE CERTIFICATE: on the physical per-site Hilbert space (Quantum axiom plus retained dim-two row, dim_C H_x = 2), the two-candidate surface {G, B} collapses to the single-pair Grassmann candidate (G).
 
 ----------------------------------------------------------------------------------------
-Part 9: (D5) falsification leg — collapse fails without the U4 input
+Part 9: (D5) falsification leg — collapse fails without the one-qubit/dim-two input
 ----------------------------------------------------------------------------------------
   [PASS (A)] (falsif) k = 2 module rho_+ (+) rho_+ on C^4 satisfies Clifford relations
   [PASS (A)] (falsif) k = 2 module is faithful (8 Clifford basis images R-independent)  (real span rank = 8)
-  [PASS (A)] (falsif) k = 2 module has dim_C = 4 != 2: admissible without the U4 input  (dim_C = 4)
-  [PASS (A)] (falsif) on the k = 2 module, single-pair (G) match fails (2 != 4) while a two-pair Grassmann module matches (2^2 = 4)  (without k = 1 the single-pair collapse is NOT forced)
+  [PASS (A)] (falsif) k = 2 module has dim_C = 4 != 2: admissible without the one-qubit/dim-two input  (dim_C = 4)
+  [PASS (A)] (falsif) on the k = 2 module, single-pair (G) match fails (2 != 4) while a two-pair Grassmann module matches (2^2 = 4)  (without the one-qubit/dim-two input the single-pair collapse is NOT forced)
 
 ----------------------------------------------------------------------------------------
 Part 10: (B-stat) scope-boundary witness — statistics NOT claimed
@@ -98,18 +113,24 @@ Summary
 ----------------------------------------------------------------------------------------
   Verified at exact sympy precision:
     (D1) Bosonic per-site Fock truncated dim grows without bound
-    (D2) Grassmann per-site Fock dim = 2 (via nilpotency chi_x^2 = 0)
+    (D2) Berezin function space F_x = Lambda[chibar] has dim = 2 (nilpotency)
+    (D2 repair) raising/lowering = multiplication + Berezin derivative on F_x:
+         {c, cbar} = 1 DERIVED; slip witness {L_chi, L_chibar} = 0 (generators
+         are integration variables, not the lowering operator)
     (D2) dim_C H_x^G = dim_C H_x = 2 match to the physical per-site dim
     (D3) Explicit two-candidate comparison {G, B}
     (D4) Z_F[M] = det(M) at N = 1, 2, 3, 4 (cited upstream Berezin identity)
     (D4) Grassmann/bosonic single-mode traces structurally distinct
     Counterfactual: dropping nilpotency loses the dim-2 readout
-    (D5) U4 composition certificate: Cl(3,0) ~= M_2(C) faithful iso,
+    (D5) Quantum/dim-two discharge certificate: Cl(3,0) ~= M_2(C) faithful iso,
          irreducible on C^2, single chirality, k = 1 => collapse to (G)
-    (D5) Falsification leg: k = 2 module defeats the collapse without U4
+    (D5) Falsification leg: k = 2 module defeats the collapse without the one-qubit/dim-two input
     (B-stat) Scope boundary: hard-core-boson frame ties on dimension;
          statistics selection declared open, not claimed
 
 ========================================================================================
-TOTAL: PASS=38, FAIL=0
+TOTAL: PASS=45, FAIL=0
 ========================================================================================
+
+----- stderr -----
+

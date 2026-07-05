@@ -808,6 +808,54 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         )
 
     first_terminal_verdict = row.get("audit_status")
+    explicit_second_seat = audit.get("cross_confirmation_role") == "second_seat"
+    if explicit_second_seat:
+        if first_terminal_verdict not in ALLOWED_VERDICTS:
+            return False, (
+                "explicit second-seat cross-confirmation requires an existing "
+                f"terminal verdict, got {first_terminal_verdict!r}"
+            )
+        if prior_cross_confirmation_status not in {None, "none"}:
+            return False, (
+                "explicit second-seat cross-confirmation requires no existing "
+                f"cross-confirmation status, got {prior_cross_confirmation_status!r}"
+            )
+        err = cross_confirmation_error(audit_summary_from_row(row), audit)
+        if err:
+            return False, err
+        if independence == "weak":
+            return False, "explicit second-seat cross-confirmation requires independence != 'weak'"
+
+        first = audit_summary_from_row(row)
+        second = audit_summary_from_blob(audit)
+        matches = (
+            first.get("verdict") == second.get("verdict")
+            and first.get("claim_type") == second.get("claim_type")
+            and first.get("load_bearing_step_class") == second.get("load_bearing_step_class")
+        )
+        row["cross_confirmation"] = {
+            "first_audit": first,
+            "second_audit": second,
+            "status": "confirmed" if matches else "disagreement",
+            "mode": "explicit_second_seat",
+        }
+        if not matches:
+            row["audit_status"] = "audit_in_progress"
+            row["blocker"] = "cross_confirmation_disagreement"
+            rows[cid] = row
+            ledger["rows"] = rows
+            return True, (
+                "explicit second-seat cross-confirmation disagreement recorded "
+                f"({first.get('verdict')!r}/{first.get('claim_type')!r}/"
+                f"{first.get('load_bearing_step_class')!r} vs "
+                f"{second.get('verdict')!r}/{second.get('claim_type')!r}/"
+                f"{second.get('load_bearing_step_class')!r}); "
+                "promote to owner review"
+            )
+        rows[cid] = row
+        ledger["rows"] = rows
+        return True, "explicit second-seat cross-confirmation recorded"
+
     terminal_second_pass = (
         first_terminal_verdict in TERMINAL_CROSS_CONFIRM_VERDICTS
         and criticality in {"critical", "high"}

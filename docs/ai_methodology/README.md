@@ -9,6 +9,12 @@ Use it to answer:
 - how disclosure and accountability are framed for papers and talks;
 - where to find the review/hygiene documents that made the process auditable.
 
+> **Document authority:** which document classes carry premise weight and
+> how each may be cited is fixed by
+> [`../audit/DOCUMENT_AUTHORITY_AND_CITATION_POLICY.md`](../audit/DOCUMENT_AUTHORITY_AND_CITATION_POLICY.md).
+> Orientation memos and methodology prose carry no premise or interpretive
+> weight; premises cite axiom sentences, registrations, or audited scopes.
+
 ## Start Here
 
 1. `../AI_METHODOLOGY_NOTE_2026-04-25.md` (sibling artifact;
@@ -90,6 +96,7 @@ Use it to answer:
 - reusable methodology skills:
   [`skills/ai-physics-lane-builder/SKILL.md`](./skills/ai-physics-lane-builder/SKILL.md),
   [`skills/physics-loop/SKILL.md`](./skills/physics-loop/SKILL.md),
+  [`skills/workhorse/SKILL.md`](./skills/workhorse/SKILL.md),
   [`skills/physics-claim-reviewer/SKILL.md`](./skills/physics-claim-reviewer/SKILL.md),
   [`skills/review-loop/SKILL.md`](./skills/review-loop/SKILL.md),
   [`skills/audit-loop/SKILL.md`](./skills/audit-loop/SKILL.md),

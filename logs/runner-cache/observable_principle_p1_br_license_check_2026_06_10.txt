@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/observable_principle_p1_br_license_check_2026_06_10.py
+runner_sha256: 0e4b11a6ad07674bf69bc4ff0e357c690590b59ccbea7aec56e7850d1fe2cf59
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.54
+status: ok
+----- stdout -----
 == T1: the clause under hunt — (BR) and its selection chain, recomputed ==
   [PASS][A] family normalization: g_p(1) = 0, g_p'(1) = 1, p -> 0 limit is log z (selected member)
   [PASS][A] log-scale response identity: z*(s g_p)' = s z^p exactly; log passes (BR) with sup|zW'| = |s|
@@ -18,7 +26,7 @@
   [PASS][C] retained finite-sector identity recomputed (not cited blind): I(A) = chi_A . v and I(A u B) = I(A) + I(B) on ALL 81 ordered disjoint subset pairs of a 4-sector model  -- pairs=81
   [PASS][A] capacity bound: |I(A_z)| = |sum v_i| <= K*M by finite additivity + triangle inequality (extremal instance sum = 5M = K*M; mixed-sign instance |7M/6| <= 5M, K = 5)
   [PASS][A] Lemma C chain: (CAP-real)+(CAP-M)+(CAP-K) => every e-fold increment <= K*M => (BR-int) => pass set exactly {p = 0} (selection completed conditionally — the gap is exactly the caps)
-  [PASS][A] unit-record normalization: in the retained unbounded-additivity schema every unit datum is exactly 1, so (CAP-M) holds there with M = 1 by normalization (I(R_7) = 7 recomputed); the open content is the realization clause + the rate cap (CAP-K)
+  [PASS][A] unit-record normalization: in the conditional unbounded-additivity schema every unit datum is exactly 1, so (CAP-M) holds there with M = 1 by normalization (I(R_7) = 7 recomputed); the open content is the supplied-record realization clause + the rate cap (CAP-K)
 == T6: the no-go — neither capacity sub-clause has a retained supplier (witnesses) ==
   [PASS][D] (CAP-M) unsupplied for general sector data: the finite-sector algebra's own freedom recomputed — for ANY p in (0,1), d = p u/(1-p) gives normalized coordinate d/(u+d) = p exactly: sector data are arbitrary scalars, no magnitude cap is retained
   [PASS][D] witness W_Q = (z^2-1)/2 registered as ONE sector per e-fold (K = 1 bounded!): satisfies the finite-sector algebra verbatim (singleton decomposition, additivity trivially exact) yet its e-fold increment z^2 (e^2-1)/2 -> oo: bounded count + unbounded datum kills any 'the algebra alone bounds the response' claim
@@ -33,7 +41,7 @@
   [PASS][D] granting the missing capacity clauses completes the selection exactly: with (CAP-M)+(CAP-K) granted the pass set is {p = 0} and W = c log z follows with T1-d's remaining clauses — the missing license is the single load-bearing gap
 == T9: ledger scan — zero retained-grade capacity/rate suppliers (extends NU-note T9) ==
   [PASS][B] extended ledger scan: ZERO retained-grade rows match capacity/rate/resolution/response-bound vocabulary — (BR), (BR-int), and the (CAP) clauses are all unlicensed  -- matches=[]
-  [PASS][B] cited rows present at the cited effective statuses (one-hop, presence check)
+  [PASS][B] cited rows present at their current admissible effective statuses; unbounded Record is audited_conditional and local tomography is retained_bounded or retained_pending_chain in the live ledger  -- mismatches={}
   [PASS][B] the three candidate record-capacity suppliers are visible rows (assessed at full strength, not strawmanned)
   [PASS][B] campaign chain on disk: the NU-license note names the record-capacity/finite-resolution hunt target and the barrier note declares its premise unlicensed
 == T10: note honest-scope, firewall-compliance, and boundary strings ==
@@ -41,3 +49,6 @@
   [PASS][B] forbidden promotion strings absent  -- found=[]
 
 TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

@@ -1,5 +1,7 @@
 # DM Neutrino Post-Canonical Positive Polar Section
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15
 **Status:** exact generic positive-section theorem on the intrinsic DM
 post-canonical bridge

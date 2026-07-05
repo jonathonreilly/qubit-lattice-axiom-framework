@@ -1,51 +1,73 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
-runner_sha256: 3faec274bb1ab48d32efba86e734a2e194bb113ea55ad8397a2f7c24d0793da4
+runner_sha256: 7fbf43985e4530dbba529fdcda2cbed88281a932b69be142db42ecdf2b0f559f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.28
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
-Plaquette beta=6 perturbative-derivation bounded-obstruction runner
+Plaquette beta=6 perturbative-derivation repaired diagnostic runner
 (Pattern A; companion-note paired)
 
 
 ==============================================================================
-T0: source-boundary manifest
+T0: admitted-input runner-local diagnostic license
 ==============================================================================
-  [PASS] note records 2026-06-07 source-boundary manifest
-         source-boundary section present
-  [PASS] note records supplied finite packet I_PT
-         packet names beta, coefficient list, MC comparator, and F2 comparator
-  [PASS] note keeps NSPT/beta/MC/F2 outside framework-native authority
-         admitted-input boundary remains explicit
-  [PASS] note excludes non-perturbative route no-go
-         negative claim remains finite-route only
+PASS: note records 2026-06-12 source-boundary demotion
+      demotion and admitted-input sections present
+PASS: note records admitted finite packet I_PT
+      packet names source-wired Wilson relation, beta specialization, coefficient list, MC comparator, and F2 comparator
+PASS: note records Wilson small-a matching as an explicit dependency
+      Wilson coefficient relation is dependency-wired, not re-admitted
+PASS: note licenses unresolved NSPT/MC/F2 inputs for this diagnostic only
+      remaining admitted inputs and alpha/beta boundaries carry no downstream license
+PASS: note excludes actual beta=6 surface and non-perturbative route claims
+      diagnostic remains conditional and finite-route only
+PASS: note firewalls retained beta=6 surface claim after demotion
+      source repair remains diagnostic-only after the Wilson edge is wired
+PASS: note explicitly elects admitted-input diagnostic option
+      source-boundary second option is source-locked
+PASS: note scopes row as non-downstream-licensed runner-local diagnostic only
+      source-boundary non-downstream-licensed scoping present; not a citeable bridge/derivation
+PASS: note records remaining promotion authorities as unsupplied/open
+      NSPT packet, surface/g_bare specialization, MC comparator, and F2 comparator remain open; row not promotable
+PASS: note keeps 0.5934 MC value fenced as comparator-only, never a proof input
+      MC value stays a fenced comparator, never a derivation/proof input
+PASS: note blocks downstream reuse of admitted beta=6 inputs
+      downstream authority must come from a separate retained/effective-bounded row
+PASS: note keeps non-perturbative routes open
+      finite perturbative route only
 
 ==============================================================================
-C1: supplied beta=6 Wilson-gauge constants (exact algebra)
+C1: source-wired Wilson-normalization edge
 ==============================================================================
-  [PASS] supplied beta = 2 N_c / g_bare^2 = 6 at N_c=3, g_bare=1
-         beta = 6.0
-  [PASS] g_bare^2 = 2 N_c / beta = 1 at beta=6
-         g^2 = 1.0
-  [PASS] alpha_bare = g_bare^2/(4 pi) = 1/(4 pi) at beta=6
-         alpha_bare = 0.07957747, 1/(4 pi) = 0.07957747
+PASS: Wilson theorem supplies beta = 2 N_c / g_bare^2
+      coefficient-matching identity is present in the retained-bounded source note
+PASS: Wilson theorem includes the beta=6 specialization only with supplied g_bare^2=1
+      specialization remains conditional on N_c=3 and g_bare^2=1
+PASS: Wilson theorem keeps action-surface and g_bare boundaries explicit
+      the dependency supplies coefficient matching, not physical surface selection
+PASS: supplied beta = 2 N_c / g_bare^2 = 6 at N_c=3, g_bare=1
+      beta = 6.0
+PASS: g_bare^2 = 2 N_c / beta = 1 at beta=6
+      g^2 = 1.0
+PASS: alpha_bare = g_bare^2/(4 pi) = 1/(4 pi) at beta=6
+      alpha_bare = 0.07957747, 1/(4 pi) = 0.07957747
 
 ==============================================================================
-T2: 1-loop weak-coupling value (framework existing M5)
+T2: 1-loop weak-coupling value over admitted packet
 ==============================================================================
-  [PASS] M5 1-loop weak-coupling: <P> = 1 - (N^2-1)/(8 N^2) * 4/beta = 0.9259
-         <P>_M5 = 0.925926
-  [PASS] equivalent: <P> = 1 - w_1/beta with w_1 = (N^2-1)/(2 N^2) = 4/9
-         <P>_w1 = 0.925926, |diff| = 0.000e+00
-  [PASS] 1-loop overshoots MC 0.5934 by ~56%
-         gap = 0.3325, pct = 56.04%
+PASS: M5 1-loop weak-coupling: <P> = 1 - (N^2-1)/(8 N^2) * 4/beta = 0.9259
+      <P>_M5 = 0.925926
+PASS: equivalent: <P> = 1 - w_1/beta with w_1 = (N^2-1)/(2 N^2) = 4/9
+      <P>_w1 = 0.925926, |diff| = 0.000e+00
+PASS: 1-loop overshoots admitted MC comparator by ~56%
+      gap = 0.3325, pct = 56.04%
 
 ==============================================================================
-T3: truncated perturbative series at beta=6 (literature coefficient packet)
+T3: truncated perturbative series at beta=6 (admitted coefficient packet)
 ==============================================================================
-  literature coefficient packet:
+  admitted coefficient packet:
     w_1=0.44444  w_2=0.20305  w_3=0.16766
     w_4=0.18000  w_5=0.23600  w_6=0.33600
     w_7=0.51000  w_8=0.80600  w_9=1.30000
@@ -68,8 +90,8 @@ T3: truncated perturbative series at beta=6 (literature coefficient packet)
     N=15:  <P>_PT = 0.919331,  gap = +0.32593,  pct = +54.926%
     N=16:  <P>_PT = 0.919331,  gap = +0.32593,  pct = +54.926%
   best truncation: N*=16, <P>_PT(N*) = 0.919331, pct = 54.926%
-  [PASS] OBSTRUCTION: truncated series at beta=6 saturates at >40% gap from MC
-         <P>_PT(N*=16) = 0.919331, MC = 0.5934, pct = 54.926%; residual exceeds 40% inside the listed coefficient packet
+PASS: OBSTRUCTION: truncated series at beta=6 saturates at >40% gap from admitted comparator
+      <P>_PT(N*=16) = 0.919331, admitted comparator = 0.5934, pct = 54.926%; residual exceeds 40% inside the admitted coefficient packet
   coefficient ratios w_(n+1)/w_n:
     n= 1 -> n+1= 2: ratio = 0.4569
     n= 2 -> n+1= 3: ratio = 0.8257
@@ -86,17 +108,17 @@ T3: truncated perturbative series at beta=6 (literature coefficient packet)
     n=13 -> n+1=14: ratio = 1.7634
     n=14 -> n+1=15: ratio = 1.7843
     n=15 -> n+1=16: ratio = 1.8054
-  [PASS] renormalon: coefficient ratios > 1.5 for n>=6 (factorial divergence diagnostic)
-         10/10 ratios exceed 1.5 starting at n=6
+PASS: scale diagnostic: coefficient ratios > 1.5 for n>=6
+      10/10 ratios exceed 1.5 starting at n=6
 
 ==============================================================================
-T4: tadpole-improvement signature (Lepage-Mackenzie 1993)
+T4: tadpole-improvement signature over admitted packet
 ==============================================================================
-  [PASS] u_0 = <P>_MC^(1/4) at MC = 0.5934 gives u_0 = 0.87768
-         u_0 = 0.877681
+PASS: u_0 = <P>_MC^(1/4) at admitted comparator gives u_0 = 0.87768
+      u_0 = 0.877681
   tadpole-improved self-consistent <P>_TI (4-loop) = 0.910624
-  [PASS] OBSTRUCTION: tadpole-improved self-consistent <P>_TI(4-loop) saturates >40% gap
-         <P>_TI = 0.910624, MC = 0.5934, gap = +0.31722, pct = 53.459%
+PASS: OBSTRUCTION: tadpole-improved self-consistent <P>_TI(4-loop) saturates >40% gap
+      <P>_TI = 0.910624, admitted comparator = 0.5934, gap = +0.31722, pct = 53.459%
   tadpole-improved self-consistent <P>_TI(N) for N=1..8:
     N=1: <P>_TI = 0.919435, gap = +0.32604, pct = 54.944%
     N=2: <P>_TI = 0.911997, gap = +0.31860, pct = 53.690%
@@ -107,8 +129,8 @@ T4: tadpole-improvement signature (Lepage-Mackenzie 1993)
     N=7: <P>_TI = 0.910552, gap = +0.31715, pct = 53.446%
     N=8: <P>_TI = 0.910550, gap = +0.31715, pct = 53.446%
   best tadpole-improved truncation: N*=8, <P>_TI = 0.910550, pct = 53.446%
-  [PASS] OBSTRUCTION: best tadpole-improved truncation has |pct| > 40%
-         <P>_TI(N*=8) = 0.910550, pct = 53.446%
+PASS: OBSTRUCTION: best tadpole-improved truncation has |pct| > 40%
+      <P>_TI(N*=8) = 0.910550, pct = 53.446%
 
 ==============================================================================
 T5: Pade [m/n] resummation of the perturbative series
@@ -181,8 +203,8 @@ T5: Pade [m/n] resummation of the perturbative series
     [10/2] (order 12): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
     [11/1] (order 12): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
   best Pade: [3/2], <P>_Pade = 0.919330, pct = 54.926%
-  [PASS] OBSTRUCTION: best Pade [3/2] resummation has |pct| > 40%
-         <P>_Pade = 0.919330, MC = 0.5934, pct = 54.926%
+PASS: OBSTRUCTION: best Pade [3/2] resummation has |pct| > 40%
+      <P>_Pade = 0.919330, admitted comparator = 0.5934, pct = 54.926%
 
 ==============================================================================
 T6: tadpole-improved Pade resummation (best combined attempt)
@@ -216,63 +238,63 @@ T6: tadpole-improved Pade resummation (best combined attempt)
     [6/2]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
     [7/1]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
   best tadpole-improved Pade: [3/2], <P> = 0.910550, pct = 53.446%
-  [PASS] OBSTRUCTION: best tadpole-improved Pade combination has |pct| > 40%
-         <P>_TI-Pade = 0.910550, MC = 0.5934, pct = 53.446%
+PASS: OBSTRUCTION: best tadpole-improved Pade combination has |pct| > 40%
+      <P>_TI-Pade = 0.910550, admitted comparator = 0.5934, pct = 53.446%
 
 ==============================================================================
-T7: finite-route residual and renormalon diagnostic
+T7: finite-route residual and admitted scale diagnostic
 ==============================================================================
   pure-gauge b_0 = 11.000
   alpha_lat at beta=6 = 0.079577
-  expected renormalon n* = 4.57
-  [PASS] renormalon onset n* = 1/(alpha_lat b_0/4) in range [4, 8] at beta=6
-         n* = 4.57
+  scale-diagnostic n* = 4.57
+PASS: scale-diagnostic n* = 1/(alpha_lat b_0/4) in range [4, 8] at beta=6
+      n* = 4.57
   smallest |w_n/beta^n| at n* = 16: 2.144546e-11
   perturbative summed value (N=16): 0.919331
-  finite-route gap (PT-MC):        +0.32593 (54.926%)
-  F2 2-loop scale:                  0.0833%
-  [PASS] finite-route gap PT-MC dominates over factorial-divergence minimum-term residual
-         non_pert_gap = +0.32593, min_term = 2.145e-11, ratio = 1.52e+10
-  [PASS] finite-route gap dwarfs F2 2-loop scale (tested route cannot reach MC at beta=6)
-         gap = 54.9259%, F2 = 0.0833%, ratio = 659.4x
+  finite-route gap to comparator:   +0.32593 (54.926%)
+  admitted F2 comparator:           0.0833%
+PASS: finite-route gap to admitted comparator dominates over minimum-term residual
+      non_pert_gap = +0.32593, min_term = 2.145e-11, ratio = 1.52e+10
+PASS: finite-route gap exceeds admitted F2 comparator (tested route does not reach admitted MC comparator)
+      gap = 54.9259%, F2 = 0.0833%, ratio = 659.4x
 
 ==============================================================================
-T8: honest verdict on the perturbative-derivation question
+T8: honest verdict on the admitted-input diagnostic
 ==============================================================================
-  HONEST best analytic estimate: method = tadpole+Pade[3/2]
-                                  <P>_analytic = 0.910550
-                                  <P>_MC = 0.5934
-                                  residual = +0.31715
-                                  residual % = 53.446%
-                                  F2 2-loop scale = 0.0833%
-  Verdict: best analytic estimate residual (53.45%) > F2 scale (0.0833%)
-  Verdict label: OBSTRUCTION_>10pct
-  [PASS] HONEST VERDICT: best analytic estimate has residual > F2 2-loop scale
-         best analytic = 0.910550, residual = 53.4462% > F2 = 0.0833%
+  HONEST best tested value: method = tadpole+Pade[3/2]
+                            <P>_tested = 0.910550
+                            admitted <P>_MC comparator = 0.5934
+                            residual = +0.31715
+                            residual % = 53.446%
+                            admitted F2 comparator = 0.0833%
+  Verdict: best tested residual (53.45%) > admitted F2 comparator (0.0833%)
+  Verdict label: RUNNER_LOCAL_OBSTRUCTION_>10pct
+PASS: HONEST VERDICT: best tested value has residual > admitted F2 comparator
+      best tested = 0.910550, residual = 53.4462% > F2 = 0.0833%
 
 ==============================================================================
 T9: scope (no new axioms / primitives / vocabulary)
 ==============================================================================
-  [PASS] no new axiom introduced (Cl(3)/Z^3 baseline unchanged)
-         framework primitives unchanged; coefficients are supplied literature inputs
-  [PASS] no new repo vocabulary introduced
-         uses canonical: <P>, beta, w_n, alpha_bare, u_0, tadpole improvement, Pade
-  [PASS] MC value 0.5934 enters only as comparator (not derivation input)
-         <P>_MC = 0.5934 used only in residual computation, never as authority
+PASS: no new axiom or primitive introduced (Lattice/Quantum/Record baseline unchanged)
+      paired note refuses new axiom/primitive authority
+PASS: no new repo vocabulary introduced
+      paired note uses existing labels: <P>, beta, w_n, alpha_bare, u_0, tadpole improvement, Pade
+PASS: admitted MC comparator 0.5934 enters only as comparator (not derivation input)
+      <P>_MC = 0.5934 used only in residual computation, never as authority or downstream license
 
 ==============================================================================
 T10: paired note exists with matching status authority disclaimer
 ==============================================================================
-  [PASS] note file PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md exists
-         length = 20061 chars
-  [PASS] note declares Status authority: independent audit lane only
-         audit-lane authority pattern present
-  [PASS] note declares no new axioms / no new primitives
-         audit-discipline disclaimers present
-  [PASS] note declares MC value 0.5934 as comparator only
-         comparator pattern present
+PASS: note file PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md exists
+      length = 23701 chars
+PASS: note declares Status authority: independent audit lane only
+      audit-lane authority pattern present
+PASS: note declares no new axioms / no new primitives
+      audit-discipline disclaimers present
+PASS: note declares admitted MC comparator 0.5934 as comparator only
+      admitted comparator pattern present
 
-TOTAL: PASS=28  FAIL=0
+TOTAL: PASS=39, FAIL=0
 
 ----- stderr -----
 

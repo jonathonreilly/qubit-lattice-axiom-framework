@@ -1,21 +1,18 @@
 #!/usr/bin/env python3
-"""Single axiom reduction: local tensor product Hilbert space.
+"""Scope-narrowed operational checks for a local tensor-product Hilbert packet.
 
-Can the two axioms (graph + unitary evolution) be reduced to one?
-The candidate: "a finite Hilbert space with local tensor product structure",
-H = H_1 ⊗ H_2 ⊗ ... ⊗ H_N.
+This runner verifies consequences after four inputs are supplied:
 
-This single mathematical object encodes:
-- The nodes (the factors H_i)
-- Locality (only neighboring factors interact via the Hamiltonian)
-- Unitarity (automatic in a Hilbert space)
-- The Born rule (automatic from the Hilbert space inner product)
+1. local factor dimensions;
+2. a Hermitian Hamiltonian with stipulated local support;
+3. the Born p=2 readout;
+4. the rule that Hamiltonian support on factors defines graph edges.
 
-We test four claims numerically:
-1. The interaction graph EMERGES from the Hamiltonian support on the tensor factors
-2. Born rule (I_3 = 0) is automatic in Hilbert space, violated in p-norm spaces
-3. Unitarity is automatic; non-unitary (Lindblad) evolution breaks gravitational physics
-4. Tensor product structure is essential -- without it, gravity does not emerge
+It does not derive those inputs from a bare Hilbert-space axiom, reduce the
+current framework axiom ledger, or prove a monotone graph-distance decay law.
+Test 4's valid support is the participation-ratio/spread contrast between a
+supplied local tensor-product Hamiltonian and an unfactored random Hamiltonian
+of the same dimension.
 
 PStack experiment: single-axiom-hilbert
 """
@@ -196,9 +193,9 @@ def _check_two_site_interaction_v2(H: np.ndarray, n_sites: int, d: int,
 
 
 def test_graph_emergence():
-    """Test 1: The interaction graph emerges from Hamiltonian support."""
+    """Test 1: recover the supplied support graph."""
     print("=" * 70)
-    print("TEST 1: Graph emergence from Hamiltonian tensor product support")
+    print("TEST 1: Graph support recovery under the supplied extraction rule")
     print("=" * 70)
 
     rng = np.random.default_rng(42)
@@ -235,13 +232,13 @@ def test_graph_emergence():
 
     success_rate = sum(results) / len(results)
     print(f"\n  Graph recovery rate: {success_rate:.0%} ({sum(results)}/{len(results)})")
-    print(f"  PASS: graph topology emerges from Hamiltonian support" if success_rate == 1.0
+    print(f"  PASS: graph support is recovered under the admitted extraction rule" if success_rate == 1.0
           else f"  PARTIAL: {success_rate:.0%} exact recovery")
     return success_rate
 
 
 # ============================================================================
-# Test 2: Born rule is automatic (I_3 = 0 in Hilbert space)
+# Test 2: admitted Born p=2 readout gives I_3 = 0.
 # ============================================================================
 
 def compute_I3_hilbert(dim: int, n_trials: int, rng: np.random.Generator) -> list[float]:
@@ -332,9 +329,9 @@ def compute_I3_pnorm(p: float, dim: int, n_trials: int,
 
 
 def test_born_rule():
-    """Test 2: Born rule (I_3 = 0) is automatic in Hilbert space."""
+    """Test 2: Born p=2 readout and p != 2 controls."""
     print("\n" + "=" * 70)
-    print("TEST 2: Born rule is automatic — I_3 vanishes in Hilbert space")
+    print("TEST 2: Born p=2 readout gives I_3 = 0; p != 2 controls fail")
     print("=" * 70)
 
     rng = np.random.default_rng(123)
@@ -367,13 +364,13 @@ def test_born_rule():
     all_nonzero = all(v > 1e-6 for v in p_norm_results.values())
     born_auto = max_hilbert < 1e-10
 
-    print(f"\n  Summary: Born rule automatic in Hilbert space: {born_auto}")
+    print(f"\n  Summary: admitted Born p=2 readout gives I_3 = 0: {born_auto}")
     print(f"  Summary: p != 2 violates Born rule: {all_nonzero}")
     return born_auto and all_nonzero
 
 
 # ============================================================================
-# Test 3: Unitarity is automatic; Lindblad evolution breaks gravity
+# Test 3: Hermitian/unitary toy evolution versus Lindblad replacement.
 # ============================================================================
 
 def propagator_unitary(H: np.ndarray, source: int, t: float) -> np.ndarray:
@@ -427,9 +424,9 @@ def propagator_lindblad(H: np.ndarray, source: int, t: float,
 
 
 def test_unitarity():
-    """Test 3: Unitarity is automatic; Lindblad breaks gravitational physics."""
+    """Test 3: Hermitian/unitary evolution versus Lindblad replacement."""
     print("\n" + "=" * 70)
-    print("TEST 3: Unitarity is automatic; non-unitary evolution breaks gravity")
+    print("TEST 3: Hermitian generator gives unitary evolution; Lindblad control breaks it")
     print("=" * 70)
 
     if not HAS_SCIPY:
@@ -482,39 +479,40 @@ def test_unitarity():
               f"profile=[{', '.join(f'{p:.3f}' for p in prob_lindblad)}]")
 
     # Key test: at strong damping, the particle localizes at the source,
-    # not at the gravitational center -- gravity is destroyed
+    # not at the toy attraction center.
     prob_strong = propagator_lindblad(H, source, t, gamma=2.0, n_steps=200)
-    gravity_works_unitary = prob_unitary[center] > prob_unitary[source]
-    gravity_broken_lindblad = prob_strong[source] > prob_strong[center]
+    attraction_works_unitary = prob_unitary[center] > prob_unitary[source]
+    attraction_broken_lindblad = prob_strong[source] > prob_strong[center]
 
-    print(f"\n  Unitary: probability migrates toward gravitational center: "
-          f"{gravity_works_unitary}")
-    print(f"  Strong Lindblad: probability stuck at source (gravity broken): "
-          f"{gravity_broken_lindblad}")
-    print(f"  PASS: unitarity required for gravity" if gravity_broken_lindblad
+    print(f"\n  Unitary: probability migrates toward toy attraction center: "
+          f"{attraction_works_unitary}")
+    print(f"  Strong Lindblad: probability stuck at source (toy attraction broken): "
+          f"{attraction_broken_lindblad}")
+    print(f"  PASS: Hermitian/unitary control is load-bearing for the toy profile" if attraction_broken_lindblad
           else f"  NOTE: Lindblad still shows some attraction (weaker test)")
 
     return True
 
 
 # ============================================================================
-# Test 4: Tensor product structure is essential
+# Test 4: tensor-product/local-H packet gives bounded localization support.
 # ============================================================================
 
 def test_tensor_product_essential():
-    """Test 4: Without tensor product factorization, gravity doesn't emerge.
+    """Test 4: tensor-product factorization gives bounded localization support.
 
     Compare:
     (a) Tensor product space H = H_1 x H_2 x ... x H_N with local Hamiltonian
-        -> defines a graph, supports propagator physics, gives gravity
+        -> supplies a graph and localized propagator support
     (b) Single unfactored Hilbert space of the same dimension with a random
-        Hamiltonian -> no notion of locality, no graph, no gravity
+        Hamiltonian -> no supplied graph-distance notion
 
-    The test: measure whether a propagator on the unfactored space shows
-    distance-dependent behavior (it shouldn't, because there's no distance).
+    The pass criterion is the participation-ratio/spread contrast. The
+    fixed-seed local amplitudes are printed as a diagnostic only and are not
+    required to decay monotonically with graph distance.
     """
     print("\n" + "=" * 70)
-    print("TEST 4: Tensor product structure is essential for gravity")
+    print("TEST 4: Tensor product factorization gives bounded localization support")
     print("=" * 70)
 
     if not HAS_SCIPY:
@@ -558,6 +556,7 @@ def test_tensor_product_essential():
     local_gradient = all(probs_local[i] >= probs_local[i+1] - 0.05
                         for i in range(n_sites - 1))
     print(f"    Locality gradient (near > far): {local_gradient}")
+    print("    Diagnostic only: the fixed-seed amplitudes are not claimed to decay monotonically.")
 
     # --- (b) Unfactored space: random Hamiltonian, same dimension ---
     H_random = random_hermitian(D, rng)
@@ -582,8 +581,9 @@ def test_tensor_product_essential():
     print(f"    Random Hamiltonian: PR = {PR_random:.1f} / {D} states")
 
     # --- (c) Distance-dependent propagation test ---
-    # In the tensor product space, amplitude falls off with graph distance
-    # In the unfactored space, there's no such falloff
+    # In the tensor product space, graph-distance amplitudes are inspectable.
+    # This fixed-seed sample is not used as a monotone-decay proof. In the
+    # unfactored space, there is no graph-distance notion to inspect.
 
     print(f"\n  Distance dependence of propagation:")
 
@@ -605,59 +605,52 @@ def test_tensor_product_essential():
     print(f"      Ratio top/median: {amps_sorted[0] / amps_sorted[D//2]:.2f}")
 
     # --- Summary ---
-    # The tensor product space has locality (amplitude decays with distance)
-    # The unfactored space has no locality (amplitude is roughly uniform)
     spread_ratio = PR_random / PR_local
     print(f"\n  Spread ratio (random/local): {spread_ratio:.1f}x")
-    print(f"  Tensor product structure creates locality: {spread_ratio > 2.0}")
-    print(f"  PASS: tensor product essential" if spread_ratio > 2.0
+    print(f"  Tensor-product/local-H packet is more localized by spread ratio: {spread_ratio > 2.0}")
+    print(f"  PASS: bounded localization contrast" if spread_ratio > 2.0
           else f"  MARGINAL: ratio only {spread_ratio:.1f}x")
 
     return spread_ratio > 2.0
 
 
 # ============================================================================
-# Synthesis: the single axiom argument
+# Synthesis: admitted-input operational support.
 # ============================================================================
 
 def synthesis(t1: float, t2: bool, t3: bool, t4: bool):
-    """Print the synthesis of all four tests."""
+    """Print the admitted-input synthesis of all four tests."""
     print("\n" + "=" * 70)
-    print("SYNTHESIS: Can we reduce to a single axiom?")
+    print("SYNTHESIS: What the admitted-input packet supports")
     print("=" * 70)
 
     print(f"""
-  The candidate single axiom: H = tensor_i H_i
-  (a finite Hilbert space with local tensor product structure)
+  Admitted packet:
+    local factor dimensions + Hermitian local H + Born p=2 readout
+    + support-as-edges extraction rule
 
-  Test 1 — Graph emerges from Hamiltonian:     {'PASS' if t1 == 1.0 else 'PARTIAL'}
-    The adjacency graph is the support of the Hamiltonian
-    on the tensor factors. No separate graph axiom needed.
+  Test 1 — Support graph recovered:            {'PASS' if t1 == 1.0 else 'PARTIAL'}
+    The adjacency graph is recovered from the supplied Hamiltonian support
+    under the admitted extraction rule.
 
-  Test 2 — Born rule is automatic:              {'PASS' if t2 else 'FAIL'}
-    I_3 = 0 identically in Hilbert space (p=2 norm).
+  Test 2 — Born p=2 readout check:              {'PASS' if t2 else 'FAIL'}
+    I_3 = 0 under the admitted p=2 readout.
     p != 2 theories violate Born rule (I_3 != 0).
 
-  Test 3 — Unitarity is automatic:              {'PASS' if t3 else 'FAIL'}
-    Hermitian H on finite Hilbert space -> U = exp(-iHt) is unitary.
-    Non-unitary (Lindblad) evolution destroys gravitational attraction.
+  Test 3 — Hermitian/unitary control:           {'PASS' if t3 else 'FAIL'}
+    The supplied Hermitian H gives unitary evolution; a Lindblad replacement
+    destroys the toy attraction profile.
 
-  Test 4 — Tensor product is essential:          {'PASS' if t4 else 'FAIL'}
-    Without factorization, no locality, no distance, no gravity.
-    The tensor product structure IS the spatial structure.
+  Test 4 — Bounded localization contrast:       {'PASS' if t4 else 'FAIL'}
+    The supplied tensor-product/local-H packet is far less spread than an
+    unfactored random Hamiltonian of the same dimension. The fixed sample
+    does not prove monotone graph-distance decay.
 
   Conclusion:
-    The two axioms (graph + unitarity) can indeed be unified.
-    A LOCAL TENSOR PRODUCT HILBERT SPACE is the single axiom.
-    - The "graph" is the interaction pattern of the Hamiltonian
-    - "Unitarity" is automatic from Hilbert space structure
-    - "Born rule" is automatic from the inner product
-    - "Locality" is the tensor product factorization
-
-    What remains specified: the local dimension d and the
-    Hamiltonian H (which encodes the dynamics and implicitly
-    defines the graph). But the FRAMEWORK -- the arena in which
-    physics happens -- is fully specified by one axiom.
+    The runner supports the bounded operational consequences of the admitted
+    packet. It does not derive the local Hamiltonian, locality restriction,
+    Born readout, or support-as-edges rule from a bare Hilbert-space axiom,
+    and it does not reduce the current framework axiom ledger.
 """)
 
 
@@ -666,8 +659,8 @@ def synthesis(t1: float, t2: bool, t3: bool, t4: bool):
 # ============================================================================
 
 def main():
-    print("SINGLE AXIOM REDUCTION: LOCAL TENSOR PRODUCT HILBERT SPACE")
-    print("Can two axioms become one?\n")
+    print("SCOPE-NARROWED LOCAL TENSOR PRODUCT HILBERT SUPPORT")
+    print("Bounded operational checks under admitted inputs.\n")
 
     t0 = time.time()
 

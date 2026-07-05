@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/frontier_d3_truncated_closure_recurs_2026_06_12.py
+runner_sha256: 47549d2769ae42cddc69d664e61a592222ad11ab0a5852fc28d31b9e326807c3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.16
+status: ok
+----- stdout -----
+PASS: S4 wraparound/size probe L=8: full shell d2=2 has 12 sites per row :: min=12 max=12
+PASS: S4 wraparound/size probe L=8: full shell d2=4 has 6 sites per row :: min=6 max=6
+PASS: S4 wraparound/size probe L=8: kept shell d2=2 has 12 sites per row :: min=12 max=12
+PASS: S4 wraparound/size probe L=8: kept shell d2=4 has 6 sites per row :: min=6 max=6
+PASS: S4 anchor L=8: free cubic Laplacian has diag=6, six NN links, zero row sum :: diag_maxerr=0.000e+00 rowsum=0.000e+00 nn_min=6 nn_max=6
+S4b kept couplings L=8 step=1: diag=5 c2=-0.3333333333333333 c4=-0.1666666666666667 c2/diag=-0.06666666666666667 c4/diag=-0.03333333333333333 c4/c2=0.5
+S4c budgets L=8 step=1: schur_rms=1.581138830084189 retained_residual_rms=0
+PASS: S4a d=3 parity lemma: truncated kept-to-decimated block zero L=8 step=1 :: max_abs_Hkd=0.000e+00; shells d2=2,4 have even coordinate parity
+PASS: S4 anti-fabrication L=8 step=1: shell values are translation-invariant before mirroring :: spreads diag=0.000e+00 c2=0.000e+00 c4=0.000e+00
+PASS: S4 anti-fabrication L=8 step=1: retained block has no out-of-family shell residual :: retained_residual_rms=0.000e+00
+PASS: S4 anchor L=8: step-1 exact Schur couplings land on diag=5,c2=-1/3,c4=-1/6 :: diag=5 c2=-0.3333333333333333 c4=-0.1666666666666667
+S4b kept couplings L=8 step=2: diag=5 c2=-0.3333333333333333 c4=-0.1666666666666667 c2/diag=-0.06666666666666667 c4/diag=-0.03333333333333333 c4/c2=0.5
+S4c budgets L=8 step=2: schur_rms=0 retained_residual_rms=0
+PASS: S4a d=3 parity lemma: truncated kept-to-decimated block zero L=8 step=2 :: max_abs_Hkd=0.000e+00; shells d2=2,4 have even coordinate parity
+PASS: S4 anti-fabrication L=8 step=2: shell values are translation-invariant before mirroring :: spreads diag=0.000e+00 c2=0.000e+00 c4=0.000e+00
+PASS: S4 anti-fabrication L=8 step=2: retained block has no out-of-family shell residual :: retained_residual_rms=0.000e+00
+S4b kept couplings L=8 step=3: diag=5 c2=-0.3333333333333333 c4=-0.1666666666666667 c2/diag=-0.06666666666666667 c4/diag=-0.03333333333333333 c4/c2=0.5
+S4c budgets L=8 step=3: schur_rms=0 retained_residual_rms=0
+PASS: S4a d=3 parity lemma: truncated kept-to-decimated block zero L=8 step=3 :: max_abs_Hkd=0.000e+00; shells d2=2,4 have even coordinate parity
+PASS: S4 anti-fabrication L=8 step=3: shell values are translation-invariant before mirroring :: spreads diag=0.000e+00 c2=0.000e+00 c4=0.000e+00
+PASS: S4 anti-fabrication L=8 step=3: retained block has no out-of-family shell residual :: retained_residual_rms=0.000e+00
+PASS: S4b d=3 recurrence: exact post-step-2 invariance recurs because H_kd=0 forces no Schur update L=8 :: max_step3_minus_step2=0.000e+00
+PASS: S4b stronger fixed pattern: all three truncated steps share the landed couplings L=8 :: max_later_minus_step1=0.000e+00
+PASS: S4b fixed ratio pattern L=8: c2/diag=-1/15, c4/diag=-1/30, c4/c2=1/2 :: ratios=(-0.06666666666666667, -0.03333333333333333, 0.5)
+PASS: S4d identity-truncation control L=8: tautological sanity at 1e-12 :: worst_identity_deviation=0.000e+00
+PASS: S4 wraparound/size probe L=12: full shell d2=2 has 12 sites per row :: min=12 max=12
+PASS: S4 wraparound/size probe L=12: full shell d2=4 has 6 sites per row :: min=6 max=6
+PASS: S4 wraparound/size probe L=12: kept shell d2=2 has 12 sites per row :: min=12 max=12
+PASS: S4 wraparound/size probe L=12: kept shell d2=4 has 6 sites per row :: min=6 max=6
+PASS: S4 anchor L=12: free cubic Laplacian has diag=6, six NN links, zero row sum :: diag_maxerr=0.000e+00 rowsum=0.000e+00 nn_min=6 nn_max=6
+S4b kept couplings L=12 step=1: diag=5 c2=-0.3333333333333333 c4=-0.1666666666666667 c2/diag=-0.06666666666666667 c4/diag=-0.03333333333333333 c4/c2=0.5
+S4c budgets L=12 step=1: schur_rms=1.58113883008419 retained_residual_rms=0
+PASS: S4a d=3 parity lemma: truncated kept-to-decimated block zero L=12 step=1 :: max_abs_Hkd=0.000e+00; shells d2=2,4 have even coordinate parity
+PASS: S4 anti-fabrication L=12 step=1: shell values are translation-invariant before mirroring :: spreads diag=0.000e+00 c2=0.000e+00 c4=0.000e+00
+PASS: S4 anti-fabrication L=12 step=1: retained block has no out-of-family shell residual :: retained_residual_rms=0.000e+00
+PASS: S4 anchor L=12: step-1 exact Schur couplings land on diag=5,c2=-1/3,c4=-1/6 :: diag=5 c2=-0.3333333333333333 c4=-0.1666666666666667
+S4b kept couplings L=12 step=2: diag=5 c2=-0.3333333333333333 c4=-0.1666666666666667 c2/diag=-0.06666666666666667 c4/diag=-0.03333333333333333 c4/c2=0.5
+S4c budgets L=12 step=2: schur_rms=0 retained_residual_rms=0
+PASS: S4a d=3 parity lemma: truncated kept-to-decimated block zero L=12 step=2 :: max_abs_Hkd=0.000e+00; shells d2=2,4 have even coordinate parity
+PASS: S4 anti-fabrication L=12 step=2: shell values are translation-invariant before mirroring :: spreads diag=0.000e+00 c2=0.000e+00 c4=0.000e+00
+PASS: S4 anti-fabrication L=12 step=2: retained block has no out-of-family shell residual :: retained_residual_rms=0.000e+00
+S4b kept couplings L=12 step=3: diag=5 c2=-0.3333333333333333 c4=-0.1666666666666667 c2/diag=-0.06666666666666667 c4/diag=-0.03333333333333333 c4/c2=0.5
+S4c budgets L=12 step=3: schur_rms=0 retained_residual_rms=0
+PASS: S4a d=3 parity lemma: truncated kept-to-decimated block zero L=12 step=3 :: max_abs_Hkd=0.000e+00; shells d2=2,4 have even coordinate parity
+PASS: S4 anti-fabrication L=12 step=3: shell values are translation-invariant before mirroring :: spreads diag=0.000e+00 c2=0.000e+00 c4=0.000e+00
+PASS: S4 anti-fabrication L=12 step=3: retained block has no out-of-family shell residual :: retained_residual_rms=0.000e+00
+PASS: S4b d=3 recurrence: exact post-step-2 invariance recurs because H_kd=0 forces no Schur update L=12 :: max_step3_minus_step2=0.000e+00
+PASS: S4b stronger fixed pattern: all three truncated steps share the landed couplings L=12 :: max_later_minus_step1=0.000e+00
+PASS: S4b fixed ratio pattern L=12: c2/diag=-1/15, c4/diag=-1/30, c4/c2=1/2 :: ratios=(-0.06666666666666667, -0.03333333333333333, 0.5)
+PASS: S4d identity-truncation control L=12: tautological sanity at 1e-12 :: worst_identity_deviation=0.000e+00
+S4c accumulated retained-block Schur/resolvent RMS budgets: L=8 1.581138830084189; L=12 1.58113883008419; ratio 0.9999999999999991
+S4c accumulated retained-block residual-vs-fully-exact RMS budgets: L=8 0; L=12 0
+PASS: S4c L=12 accumulated retained-block Schur/resolvent RMS budget under frozen regression ceiling :: budget_l12=1.58113883008419 ceiling=1.581138831
+PASS: S4c fixed measured size pattern: L=8/L=12 Schur/resolvent RMS budget ratio is 1 :: ratio=0.9999999999999991
+PASS: S4c L=12 retained block residual vs fully-exact is roundoff-zero under frozen ceiling :: retained_l12=0.000e+00
+PASS: S4c fixed measured retained residual size pattern: L=8 and L=12 both roundoff-zero :: retained_l8=0.000e+00 retained_l12=0.000e+00
+TOTAL: PASS=42 FAIL=0
+
+----- stderr -----
+

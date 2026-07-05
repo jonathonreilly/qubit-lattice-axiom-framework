@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_exact_time_coupling.py
-runner_sha256: 16aed53409b9b27572bda2eebba7f4f0314bd5db8e608458ef3d7c046e9e30d7
+runner_sha256: 80ef53bb60d7f691e64596932118d98e6b0a49b000e95fecb653adc6f0031029
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 67.50
+elapsed_sec: 36.37
 status: ok
 ----- stdout -----
 Route-2 exact time-coupling theorem attempt
@@ -50,5 +50,6 @@ SUMMARY
 ========================================================================
 Status: exact time-coupling obstruction established.
 PASS=8 FAIL=0
+
 ----- stderr -----
 

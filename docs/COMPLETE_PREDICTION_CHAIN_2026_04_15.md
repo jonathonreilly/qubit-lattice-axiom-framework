@@ -2,11 +2,11 @@
 
 **Date:** 2026-04-15
 **Status:** support - inventory of the prediction chain composed of upstream proposed and audited rows; this row is not itself a strong derivation claim independent of those upstream rows
-**Scripts:** `frontier_complete_prediction_chain.py`,
-`frontier_yt_zero_import_chain.py`, `frontier_yt_color_projection_correction.py`,
-`frontier_higgs_mass_stability.py`, `frontier_higgs_mass_corrected_yt.py`,
-`frontier_higgs_buttazzo_calibration.py`, `frontier_color_projection_mc.py`
-**Historical support scan:** `frontier_yt_ew_coupling_derivation.py`
+**Scripts:** `scripts/frontier_complete_prediction_chain.py`,
+`scripts/frontier_yt_zero_import_chain.py`, `scripts/frontier_yt_color_projection_correction.py`,
+`scripts/frontier_higgs_mass_stability.py`, `scripts/frontier_higgs_mass_corrected_yt.py`,
+`scripts/frontier_higgs_buttazzo_calibration.py`, `scripts/frontier_color_projection_mc.py`
+**Historical support scan:** `scripts/frontier_yt_ew_coupling_derivation.py`
 **Audit dependency note:** this support inventory depends on upstream rows
 including
 [ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md](ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md),
@@ -128,7 +128,7 @@ The 1/N_c expansion is topological (coupling-independent) and holds at any beta.
     R_conn(derived) = 8/9 = 0.88889
     Agreement: 0.2% (within 0.9% statistical error)
 
-Script: `frontier_color_projection_mc.py` (4^4 lattice, 100 configs, Cabibbo-Marinari).
+Script: `scripts/frontier_color_projection_mc.py` (4^4 lattice, 100 configs, Cabibbo-Marinari).
 
 ### 4.3 What R_conn corrects
 
@@ -328,7 +328,7 @@ This is a falsifiable prediction. If future measurements shift
 y_t upward (or m_t upward), the framework's stability prediction
 could be tested against the SM's metastability.
 
-The lambda running profile is computed in `frontier_higgs_mass_stability.py`
+The lambda running profile is computed in `scripts/frontier_higgs_mass_stability.py`
 and saved to `scripts/lambda_running_profile.dat`.
 
 ### 7.5 Alternative route: direct formula
@@ -475,7 +475,7 @@ gauge sector via SU(3) color-flavor locking.
 point (Pendleton-Ross focusing): y_t(v) is insensitive to the UV BC.
 A 10% change in y_t(M_Pl) produces less than 0.5% change in y_t(v).
 This makes the prediction robust against higher-order corrections to
-the Ward identity. (14/14 PASS, `frontier_yt_qfp_insensitivity.py`.)
+the Ward identity. (14/14 PASS, `scripts/frontier_yt_qfp_insensitivity.py`.)
 
 **Color-Singlet Projection Theorem.** R_conn = (N_c^2-1)/N_c^2 = 8/9
 from the 1/N_c expansion. The EW use is now written as

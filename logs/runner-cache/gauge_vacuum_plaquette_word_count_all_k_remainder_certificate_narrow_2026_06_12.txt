@@ -1,0 +1,116 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_2026_06_12.py
+runner_sha256: 781c1130978d784fbb00748f9b992d6179b6cc1f38a71ecd1b801085556dec76
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.26
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette word-count all-k remainder certificate
+Status authority: independent audit lane only. This source runner does not set or predict an audit outcome.
+No new imports: finite repo-internal packet quantities only.
+
+================================================================================================================
+Part 1: scale enumeration
+================================================================================================================
+theta((0, 0))                                    1.000000000000000e+00
+theta((0, 1))                                    2.637458559734673e-01
+theta((1, 0))                                    2.637458559734673e-01
+theta((1,0)) * t((1,0),(1,0))/t00                1.272696014262832e-01
+theta((1,0)) * t((1,0),(0,1))/t00                1.067729732600810e-01
+theta((1,0))^2                                   6.956187654317694e-02
+theta((1, 1))                                    2.161208359558699e-02
+theta((0, 2))                                    6.656080690447813e-03
+theta((2, 0))                                    6.656080690447813e-03
+theta = 0.263745855973467
+alpha = t(f,f)/t00 = 0.482546354923910
+gamma = t(f,fb)/t00 = 0.404832799613057
+theta_3 = theta * alpha = 0.127269601426283
+PASS: fundamental and antifundamental channel scales are exactly degenerate in the finite packet
+      top nontrivial entries: (0.2637458559734673, 'theta((0, 1))'), (0.2637458559734673, 'theta((1, 0))')
+PASS: third composite scale is the pair self-channel correction theta * alpha
+      theta_3=0.127269601426283
+PASS: next listed composite scales are below theta_3
+      theta*gamma=0.106772973260081, theta^2=0.069561876543177
+
+================================================================================================================
+Part 2: source derivative and c3 assembly
+================================================================================================================
+P_inf = 0.615191992185898
+C_source = 0.410170474927582
+source derivative on sigma_slice = -0.410170474927582
+q_l1_alpha_constant = 5.664730598492354e+01
+delta_l1_theta_constant = 1.448860250322256e+01
+source_radius_tail(k>=6) = 6.363484166944219e-02
+source_gap_tail(k>=6) = 3.297901733107276e-01
+source_hessian_bound = 8.055153686470044e+02
+c_linear = 8.822958271796499e+01
+c_quadratic = 3.630937319097443e+05
+c3 = 3.631819614924623e+05
+PASS: C_source is the pair-support source coefficient and accounts for both degenerate channels
+      grad.sigma=-0.410170474927582, p1=-0.410170474927582
+PASS: source tail perturbation remains inside the computed gap margin from k=6 onward
+      gap_tail=3.297902e-01
+PASS: computed c3 is positive and finite
+      c3=3.631819614924623e+05
+
+================================================================================================================
+Part 3: measured residual check k=2..20
+================================================================================================================
+k | P_inf-P_k | leading | residual_after_leading | c3*theta_3^k
+----------------------------------------------------------------------------------------------------------------
+ 2 | 1.821301118062e-01 | 1.081807630048e-01 | 7.394934880143e-02 | 5.882658505971e+03
+ 3 | 7.204938213447e-02 | 2.853222793857e-02 | 4.351715419591e-02 | 7.486836033819e+02
+ 4 | 1.156126753490e-02 | 7.525256880488e-03 | 4.036010654408e-03 | 9.528466379680e+01
+ 5 | 2.334156466489e-03 | 1.984755317365e-03 | 3.494011491242e-04 | 1.212684118346e+01
+ 6 | 5.581188248835e-04 | 5.234709900762e-04 | 3.464783480736e-05 | 1.543378243978e+00
+ 7 | 1.418333299219e-04 | 1.380633043549e-04 | 3.770025566980e-06 | 1.964251339611e-01
+ 8 | 3.684723022845e-05 | 3.641362438561e-05 | 4.336058428393e-07 | 2.499894850934e-02
+ 9 | 9.655492899330e-06 | 9.603942532680e-06 | 5.155036664952e-08 | 3.181606212859e-03
+10 | 2.539254029155e-06 | 2.533000044002e-06 | 6.253985152928e-09 | 4.049217546060e-04
+11 | 6.688367297780e-07 | 6.680682647861e-07 | 7.684649919521e-10 | 5.153423031754e-05
+12 | 1.762954563445e-07 | 1.762002363447e-07 | 9.521999974428e-11 | 6.558740952323e-06
+13 | 4.648394880125e-08 | 4.647208215746e-08 | 1.186664378282e-11 | 8.347283468604e-07
+14 | 1.225830437157e-08 | 1.225681908749e-08 | 1.485284081336e-12 | 1.062355440041e-07
+15 | 3.232871748082e-09 | 3.232685241742e-09 | 1.865063404700e-13 | 1.352055534271e-08
+16 | 8.526316319646e-10 | 8.526073361760e-10 | 2.429578859333e-14 | 1.720755689529e-09
+17 | 2.248752295486e-10 | 2.248716516890e-10 | 3.577859621050e-15 | 2.189998907584e-10
+18 | 5.930966828771e-11 | 5.930896625888e-11 | 7.020288290842e-16 | 2.787202880922e-11
+19 | 1.564282037236e-11 | 1.564249407285e-11 | 3.262995134055e-16 | 3.547261997491e-12
+20 | 4.126254893322e-12 | 4.125642988804e-12 | 6.119045181124e-16 | 4.514586205753e-13
+PASS: computed c3 envelope covers every measured residual after the leading term for k=2..20
+stable third-scale residual ratios:
+  |R_10|/|R_9| = 0.121317956775124
+  |R_11|/|R_10| = 0.122876049936320
+  |R_12|/|R_11| = 0.123909352724569
+  |R_13|/|R_12| = 0.124623438507576
+  |R_14|/|R_13| = 0.125164630245852
+  |R_15|/|R_14| = 0.125569473754940
+PASS: stable residual ratio approaches the predicted theta_3 before double-precision cancellation dominates
+      ratio@15=0.125569473754940, theta_3=0.127269601426283
+
+================================================================================================================
+Part 4: dominance and bracket values
+================================================================================================================
+k0 = 17
+PASS: c3*theta_3^k is below C_source*theta^(k-1) for every checked k >= k0 through 80
+      k0=17
+k=9: bracket=[-3.172002270326705e-03, 3.191210155392065e-03], leading=9.603942532680250e-06, remainder_radius=3.181606212859385e-03
+k=20: bracket=[3.674184368228491e-12, 4.577101609378998e-12], leading=4.125642988803744e-12, remainder_radius=4.514586205752535e-13
+PASS: requested bracket values are emitted at k=9 and k=20
+
+================================================================================================================
+Part 5: note hygiene and residual boundary
+================================================================================================================
+PASS: note file exists
+      /private/tmp/cl3-review-openprs-maDilt/docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_ALL_K_REMAINDER_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md
+PASS: note delegates status to the independent audit lane
+PASS: one-hop authorities are markdown links
+PASS: note omits transient preparation refs
+PASS: note names finite-packet residuals
+Named residuals: finite dominant-weight box; finite Bessel mode support; finite word-count packet; no physical 3D unmarked spatial Wilson environment computation; no all-weight or untruncated convergence proof; no L_perp limit; no analytic P(6); no canonical repinning.
+PASS: runner names residuals without claiming them resolved
+TOTAL: PASS=16, FAIL=0
+
+----- stderr -----
+

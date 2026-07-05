@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "description": "Document-authority registry: one row per registered document, per docs/audit/DOCUMENT_AUTHORITY_AND_CITATION_POLICY.md. Classes: A axiom memo, B owner registries, C runner-carried claim notes, D proposals, E process policies, F orientation memos (no premise or interpretive weight), G operational surfaces. Status landed | in_flight_pr (carry pr).",
+  "rows": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "class": "A",
+      "status": "landed",
+      "note": "The axiom memo; machine mirror is the minimal_axioms node; changes owner-approved and logged in AXIOM_MINIMALITY_POLICY.md."
+    },
+    {
+      "path": "docs/audit/AXIOM_MINIMALITY_POLICY.md",
+      "class": "E",
+      "status": "landed",
+      "note": "Axiom-channel process policy and changelog; its retired-reading-notes section is the origin of the Class F formula."
+    },
+    {
+      "path": "docs/audit/DOCUMENT_AUTHORITY_AND_CITATION_POLICY.md",
+      "class": "E",
+      "status": "landed",
+      "note": "This policy."
+    },
+    {
+      "path": "docs/audit/AXIOM_RESET_IMPACT_2026-06-29.md",
+      "class": "G",
+      "status": "landed",
+      "note": "Impact inventory of the 2026-06-29 reset; operational surface, not a premise source."
+    },
+    {
+      "path": "docs/ai_methodology/README.md",
+      "class": "E",
+      "status": "landed",
+      "note": "Methodology-lane front door."
+    },
+    {
+      "path": "docs/AI_METHODOLOGY_NOTE_2026-04-25.md",
+      "class": "E",
+      "status": "landed",
+      "note": "Methodology overview; process authority only."
+    },
+    {
+      "path": "docs/repo/FRONT_DOOR_STATUS.md",
+      "class": "G",
+      "status": "landed",
+      "note": "Generated status board (nightly automation)."
+    },
+    {
+      "path": "docs/GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md",
+      "class": "F",
+      "status": "landed",
+      "note": "The motivating case: program memo / thinking bank; carries the formula; criterion and supply-indexing reading are CANDIDATE items whose escalation channels are named in the memo."
+    },
+    {
+      "path": "docs/RECORD_FORMATION_APPEND_CONSISTENCY_SWEEP_2026-07-04.md",
+      "class": "G",
+      "status": "landed",
+      "note": "Append consistency sweep: flip/re-key work list for the reconciliation waves."
+    },
+    {
+      "path": "docs/RECORD_FORMATION_APPEND_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md",
+      "class": "C",
+      "status": "landed",
+      "note": "Occurrence-strength certification; claim scope in front matter; runner-carried."
+    },
+    {
+      "path": "docs/DYNAMICS_AXIOM_MINIMAL_NONTRIVIALITY_BRANCH_PROPOSAL_2026-06-29.md",
+      "class": "D",
+      "status": "landed",
+      "note": "Banked dynamics-axiom proposal lineage; cite only as proposed."
+    },
+    {
+      "path": "docs/audit/DOC_CLASS_SWEEP_REPORT_2026-07-04.md",
+      "class": "G",
+      "status": "landed",
+      "note": "Full classification sweep of 372 guidance-shaped docs (C=142, D=20, E=56, F=25, G=123, already-registered=6); seeds the registry-expansion follow-up; the 25 Class F rows are the formula-addition work list."
+    },
+    {
+      "path": "docs/RECORD_COMPARABILITY_OWNER_ONE_PAGER_2026-07-04.md",
+      "class": "D",
+      "status": "landed",
+      "note": "Owner decision surface: whether to append 'There is one configuration of records.' to Record \u2014 the arrow's last missing piece. No weight until decided."
+    },
+    {
+      "path": "docs/GRADED_CONSTRAINT_PRIMITIVE_REGISTRATION_PROPOSAL_2026-07-04.md",
+      "class": "D",
+      "status": "landed",
+      "note": "Primitive registration draft: graded constraint (weights on record-conditioned menus), preserving PR #4916 review lessons as historical input only. No weight until registered."
+    }
+  ]
+}

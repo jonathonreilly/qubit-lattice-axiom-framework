@@ -1,3 +1,15 @@
+> ⚠ **CORRECTION (2026-06-16) — P1 / Δ_R chain defect.** This note belongs to the
+> P1 / Δ_R lattice-matching chain, which has two verified defects: (1) the scalar
+> `I_v_scalar` `/N_TASTE=16` divisor is a double-count (corrected `I_S = 32.4`, not
+> 3.90); (2) the fermion channel `F_g/D_psi²` is log-divergent at all 16 BZ
+> doublers but only `k=0` is subtracted, so `I_SE_fermion` is IR-regulator-
+> dependent — not a matching constant (the `[4,10]` / `~0.7` / `~6` brackets are
+> not a valid comparator). Corrected **Δ_R is O(50%) UNCONTROLLED**, not −3.27%;
+> Δ_2 (C_A gluonic) is clean. Any `I_S` / `Δ_R` / `m_t` / `m_H` precision claim
+> below is **ballpark, not a controlled prediction**, pending re-derivation.
+> Writeup + memory-safe reproducers:
+> [YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md](YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md).
+
 # P1 Rep-A vs Rep-B 1-Loop Cancellation Sub-Theorem Note (Ward-Identity Ratio Stability)
 
 **Date:** 2026-04-17
@@ -69,7 +81,7 @@ cited `I_S` overcounts the ratio correction.
   identity `y_t_bare² = g_bare²/(2 N_c)` at tree level from D16 + D17
   + D12 (SU(N_c) Fierz) + S2 (Lorentz Clifford). No NLO claim.
 - **P1 caveat this note closes:**
-  [`docs/YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md`](YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md) §4.4 —
+  `docs/YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md` §4.4 —
   "the net effect on the Ward ratio `y_t(M_Pl)/g_s(M_Pl)` at 1-loop
   depends on whether the Representation-A correction partially
   cancels it. This cancellation structure is not established." THIS

@@ -1,24 +1,33 @@
 # Light Cone Framing — Lieb-Robinson is Standard Lattice QFT
 
-**Status:** support - structural or confirmatory support note
-**Date:** 2026-04-11 (math corrected 2026-05-01; CN LR bridge added 2026-05-09)
-**Runners:**
-  - `scripts/light_cone_staggered_dispersion.py` (dispersion validation)
-  - `scripts/light_cone_crank_nicolson_lr_2026_05_09.py` (Crank-Nicolson LR
-    bridge runner — see CN bridge note below)
+**Claim type:** meta
+
+**Date:** 2026-04-11 (math corrected 2026-05-01; CN LR bridge added
+2026-05-09; audit-named repair 2026-06-12)
+**Status authority:** independent audit lane only. This source note does
+not set or predict an audit outcome.
+**Primary runner:**
+[`scripts/light_cone_staggered_dispersion.py`](../scripts/light_cone_staggered_dispersion.py)
+**Runner cache:**
+[`logs/runner-cache/light_cone_staggered_dispersion.txt`](../logs/runner-cache/light_cone_staggered_dispersion.txt)
+**Companion CN runner:**
+[`scripts/light_cone_crank_nicolson_lr_2026_05_09.py`](../scripts/light_cone_crank_nicolson_lr_2026_05_09.py)
 
 ## The Concern
 
-The Crank-Nicolson evolution gives a Lieb-Robinson cone (97% of probability
-inside) rather than a strict v=1 light cone. Is this a blocker?
+The Crank-Nicolson evolution gives a Lieb-Robinson cone with an
+exponentially suppressed tail rather than a strict `v = 1` light cone at
+finite lattice spacing. Is this a blocker?
 
 ## The Answer: No
 
-No lattice field theory has a strict v=1 light cone at finite spacing. This
-is a well-known feature of lattice discretization. The staggered fermion
-formulation used in lattice QCD (Kogut-Susskind, 1975) has exactly the
-same Lieb-Robinson bound. The lattice QCD community has produced precise
-predictions without a strict continuum light cone at finite spacing.
+At finite lattice spacing the repo-internal target is a finite-velocity
+Lieb-Robinson envelope with explicit locality weights and declared
+sector boundaries, not a strict continuum cone. This note now routes the
+framing through the exact-log quasilocal suppliers and the repaired
+Crank-Nicolson cone-inheritance statement. It does not use the withdrawn
+fixed-step `v_LR^CN` formula, and it does not treat the exact
+reconstructed logarithmic Hamiltonian as diameter-2 finite range.
 
 ## The Staggered Dispersion Argument (corrected)
 
@@ -54,112 +63,188 @@ limit), and (b) located the massless maximum at k = π/2, where in fact
 cos(k) = 0 and v_g = 0. The runner cited in the header validates the
 corrected formula numerically against the dispersion at fine k.
 
-## The Lieb-Robinson Bound
+## Repaired Authority Stack (2026-06-12)
 
-The Lieb-Robinson theorem (Lieb-Robinson 1972) bounds signal propagation
-in any local lattice Hamiltonian by an exponentially-suppressed cone
+### Exact reconstructed `H`
 
-    v_LR ≤ 2 · ‖H_hop‖ · (lattice spacing)
+[`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md)
+supplies the reconstructed free bilinear two-step Hamiltonian
 
-For the staggered hopping with weight w = 1/(2a), this gives v_LR = 1/a in
-lattice units, matching v_max(m=0) = 1 above. In the continuum limit
-(a → 0, with m·a → 0), the LR cone approaches the strict relativistic
-light cone from above. The 97% containment seen at finite lattice spacing
-in the Crank-Nicolson evolution is the standard discretization artifact.
+```text
+    H = -log(T_hat^2)/(2 a_tau),
+    E_d(p) = arcsinh(sqrt(m^2 + sum_mu sin^2 p_mu)),
+```
 
-### Hamiltonian-side bounded support
+with explicit kernel bound, for every `0 < eta < eta* := arcsinh(m)`,
 
-The Hamiltonian-side support note
-[`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md)
-records bounded action-density support and a conservative local
-coefficient budget:
+```text
+    |h(z)| <= (1/a_tau) C_d(eta,m) exp(-eta ||z||_inf),
+    C_d(eta,m) = sqrt(m^2 + (d-1) + cosh^2 eta).
+```
 
-    r_action <= 2,    J_action <= |m| + 30  (canonical action-density surface)
+The same authority records the load-bearing negative: on this free
+bilinear sector the exact reconstructed `H` is not finite range. It has
+nonzero range-4 hopping coefficients, so the old diameter-2
+`J_action` surface is not a valid reconstructed-`H` input.
 
-This is bounded support for the LR chain, not a retained exact theorem
-for the reconstructed logarithmic Hamiltonian `H = -log(T)/a_tau`.
+### Exact-evolution cone for reconstructed `H`
 
-### Crank-Nicolson refinement
+[`FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`](FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md)
+turns the exact-log kernel into the weighted-overlap Lieb-Robinson
+envelope for the same free bilinear sector. For
+`0 < d mu < eta < arcsinh(m)`,
 
-The framework's discrete-time evolution uses the **Crank-Nicolson
-scheme** (Cayley transform of H):
+```text
+    W_mu := sup_x sum_y ||Phi_xy|| exp(mu d_1(x,y)) < infinity,
+```
 
-    U_CN(a_τ)  =  (I − i a_τ H/2) · (I + i a_τ H/2)^{−1}
+with the explicit shell-sum upper bound inherited from `C_d(eta,m)`,
+and one-site observables obey
 
-This is a different operator from the continuous evolution exp(−itH);
-they agree only in the continuum limit. The Crank-Nicolson diagnostic
-note
-[`LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md`](LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md):
-checks, on finite nearest-neighbor toy Hamiltonians, the bounded
-velocity shape
+```text
+    ||[alpha_t(A_x), B_y]||
+      <= 2 ||A_x|| ||B_y|| exp(-mu d_1(x,y) + 4 W_mu |t|).
+```
 
-    v_LR^CN(a_τ)  =  v_LR(H) / (1 − a_τ J / 2)
-                  =  v_LR(H) · (1 + a_τ J / 2 + O((a_τ J)²))
+This gives a finite lattice cone parameter `v_mu = 4 W_mu/mu` for the
+free bilinear exact-log sector. It is an overlap-weight cone parameter,
+not a strict relativistic velocity value and not a fixed-step
+Crank-Nicolson speed.
 
-with the bound
+### Crank-Nicolson cone inheritance
 
-    ‖[α_t^CN(O_x), O_y]‖_op  ≤  2 ‖O_x‖ ‖O_y‖ · exp(−d(x,y) + v_LR^CN |t|).
+[`LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md`](LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md)
+withdraws the old fixed-step quasilocal-generator and velocity formula.
+The replacement is cone inheritance with an explicit integrator defect.
+For the Cayley step
 
-The correction factor `1/(1 − a_τ J / 2)` is a bounded diagnostic
-read of the Neumann-series resolvent expansion of
-`(I + i a_τ H/2)^{−1}`. As `a_τ → 0`, the Crank-Nicolson evolution
-converges to the continuous Hamiltonian evolution.
+```text
+    U_CN(a_tau) = (I - i a_tau H/2) (I + i a_tau H/2)^(-1),
+```
 
-The companion runner
-`scripts/light_cone_crank_nicolson_lr_2026_05_09.py` checks (CN-A)
-unitarity, (CN-B) per-step Neumann-series decay, (CN-C) the n-step
-velocity bound, and (CN-D) the `O(a_τ²)` continuum convergence
-(`PASS=5 FAIL=0`).
+on a finite subcritical block
 
-## What This Architecture Does Provide
+```text
+    y := a_tau ||H||/2 < 1,
+    zeta(A) := a_tau ||[H,A]|| y^2/(1 - y^2),
+```
 
-1. **Correct continuum dispersion** in the small-k regime: E ≈ √(m² + k²).
-2. **Exponential suppression** of acausal signals (Lieb-Robinson bound).
-3. **v_max → 1 in the massless limit** from staggered Dirac dispersion.
-4. **v_max < 1 for massive particles**, as required by special relativity,
-   with the explicit formula v_max(m) = √(m² + 1) − m.
+the repaired CN note supplies
 
-## What It Does NOT Provide (and Why That Is Acceptable)
+```text
+    ||alpha_CN(A) - alpha_{a_tau}(A)|| <= zeta(A),
+    ||alpha_CN^n(A) - alpha_t(A)|| <= n zeta(A),    t = n a_tau,
+```
 
-- **Strict v = 1 at finite lattice spacing** — no lattice FT does this.
-- **Exact Lorentz invariance** — broken by the lattice, restored in the
-  continuum limit. Standard lattice QFT.
-- **Coin-based strict cone** — available but reintroduces a mixing period
-  and is not used here.
+and therefore
 
-## Scope and Limits of the Claim
+```text
+    ||[alpha_CN^n(A_x), B_y]||
+      <= ||[alpha_t(A_x), B_y]|| + 2 ||B_y|| n zeta(A_x).
+```
 
-This note is a *framing* note: it confirms that the observed Lieb-Robinson
-cone is standard lattice QFT behavior, not an artifact of the framework.
-The dispersion-side claim is exact for the 1+1d staggered Dirac operator,
-and the runner validates the numeric v_max(m) = √(m²+1) − m to ~1e-8 across
-m ∈ [0, 2].
+Composed with the exact-evolution envelope above, the repaired framing
+statement is
 
-The previously-flagged audit gap — that the note did not derive a
-Lieb-Robinson constant from first principles for the specific Crank-
-Nicolson operator used elsewhere in the repo — is now narrowed but not
-closed:
+```text
+    ||[alpha_CN^n(A_x), B_y]||
+      <= 2 ||A_x|| ||B_y|| exp(-mu d_1(x,y) + 4 W_mu |t|)
+         + 2 ||B_y|| n zeta(A_x),
+```
 
-  - **Hamiltonian-side action support/J budget** is recorded in
-    [`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md)
-    as bounded support: `r_action <= 2`, `J_action <= |m| + 30`.
+under the stated free-bilinear, finite-block, subcritical, and
+`0 < d mu < eta < arcsinh(m)` hypotheses. The additive CN defect is
+`O(t a_tau^2)` at fixed `t` on that subcritical surface.
 
-  - **Crank-Nicolson-side finite-step behavior** is checked in
-    [`LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md`](LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md):
-    `v_LR^CN(a_τ) = v_LR(H) / (1 − a_τ J/2)` on tested finite
-    nearest-neighbor toy models, with `U_CN^n -> exp(-itH)` as
-    `a_τ -> 0`.
+## Retired Formulas
 
-The remaining open bridge is an exact finite-range or quasilocal LR
-estimate for the framework's reconstructed Hamiltonian and its
-Crank-Nicolson kernel. The 97% containment remains evidence consistent
-with an LR tail, not a closed theorem-grade identification.
+The following legacy surfaces are no longer used by this note:
 
-## References
+- The former diameter-2 action-density `J_action` budget as a
+  reconstructed-`H` locality input. The exact reconstructed `H` is
+  quasilocal on the free bilinear sector, with weights controlled by
+  `C_d(eta,m)`, `W_mu`, and the shell sums above.
+- The former fixed-step Crank-Nicolson velocity-denominator reading.
+  The repaired CN authority explicitly withdraws that velocity formula;
+  this note uses the cone-inheritance inequality with additive defect
+  instead.
 
-- Rothe, H.J. *Lattice Gauge Theories: An Introduction* (World Scientific).
-- Montvay, I. and Münster, G. *Quantum Fields on a Lattice* (Cambridge UP).
-- Kogut, J. and Susskind, L. "Hamiltonian formulation of Wilson's lattice
-  gauge theories" Phys. Rev. D 11, 395 (1975).
-- Lieb, E.H. and Robinson, D.W. "The finite group velocity of quantum
-  spin systems" Commun. Math. Phys. 28, 251 (1972).
+The finite-range microcausality bridge path
+`docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`
+remains useful context for the older support-family vocabulary, but it
+is not cited here as an authority for finite-range exact reconstructed
+`H`. The requested class-theorem filename
+`docs/EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md`
+is absent in this checkout; the one-hop quasilocal LR bridge used here
+is the free-bilinear bridge linked above.
+
+## What This Architecture Provides
+
+1. **Correct continuum dispersion** in the small-k regime:
+   `E ≈ sqrt(m^2 + k^2)`.
+2. **Exact free-bilinear reconstructed-`H` quasilocality** with sharp
+   rate `eta* = arcsinh(m)` and explicit prefactor `C_d(eta,m)`.
+3. **A weighted-overlap Lieb-Robinson envelope** for the free-bilinear
+   exact-log Hamiltonian, with finite `W_mu` when
+   `0 < d mu < eta < arcsinh(m)`.
+4. **Crank-Nicolson cone inheritance** from the exact-evolution cone,
+   with additive defect `2 ||B_y|| n zeta(A_x)` on subcritical finite
+   blocks.
+5. **v_max < 1 for massive particles**, with the explicit dispersion
+   formula `v_max(m) = sqrt(m^2 + 1) - m`.
+
+## What It Does Not Provide
+
+- **Strict `v = 1` at finite lattice spacing.**
+- **Exact finite range for the reconstructed `H`.** The free-bilinear
+  exact log has nonzero longer-range hopping coefficients.
+- **A fixed-step Crank-Nicolson velocity value.** The old
+  `v_LR^CN` formula is withdrawn; the replacement is a cone bound plus
+  an additive defect.
+- **A gauged or interacting exact-log LR theorem.** The repaired
+  authority stack here is scoped to the free (`U = 1`) bilinear
+  two-step sector.
+- **A volume-independent CN defect constant.** The repaired CN bridge
+  keeps the finite-block `y = a_tau ||H||/2 < 1` hypothesis explicit.
+- **A theorem from observed containment percentages.** Finite-spacing
+  containment diagnostics remain consistency checks, not proof inputs.
+
+## Repair Log (2026-06-12)
+
+This repair addresses the audit-named stale surfaces by replacing the
+finite-range `J_action` reading with the exact-log quasilocal
+membership and weighted-overlap LR bridge, and by replacing the
+withdrawn fixed-step `v_LR^CN` expression with the repaired
+Crank-Nicolson cone-inheritance inequality. Residual open targets are
+the gauged/interacting exact-log locality bridge and any
+volume-independent sharpening of the CN defect.
+
+## Runner Coverage
+
+`scripts/light_cone_staggered_dispersion.py` checks the dispersion
+maximum, the maximizer identity
+`sin^2(k*) = m(sqrt(m^2+1)-m)`, the source-note rewiring guards, the
+weighted-overlap shell condition, and a small finite-block
+Crank-Nicolson cone-inheritance inequality using the Cayley convention
+displayed above.
+
+The companion CN runner
+`scripts/light_cone_crank_nicolson_lr_2026_05_09.py` remains the
+authority for the withdrawal witnesses and the full CN-C' diagnostic
+suite.
+
+## Authorities and Context
+
+- [`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md)
+  — exact-log quasilocality, sharp rate, prefactor, support-family
+  translation, and strict finite-range failure on the free bilinear
+  sector.
+- [`FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`](FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md)
+  — weighted-overlap Lieb-Robinson envelope for the free bilinear
+  exact-log Hamiltonian.
+- [`LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md`](LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md)
+  — withdrawal of the old fixed-step CN formula and replacement by
+  cone inheritance with quantified additive defect.
+- `docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`
+  — non-authority context in this note for the retired finite-range
+  exact-`H` wording and support-family vocabulary.

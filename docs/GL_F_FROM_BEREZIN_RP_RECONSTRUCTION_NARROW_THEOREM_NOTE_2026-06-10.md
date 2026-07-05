@@ -7,14 +7,20 @@
 reconstruction of a single-pair Grassmann/Berezin matter measure with a
 Theta-symmetric reflection-positive quadratic kernel. The theorem constructs
 canonical reconstructed fields satisfying `GL(F)` on the reconstructed
-operator theory. It is conditional on the supplied Berezin/RP action surface
-and on the declared identification of the framework matter operators with the
-OS-reconstructed operators.
+operator theory. It remains conditional on the supplied Berezin/RP
+matter-functional/action surface. The separate reconstruction-identification
+residual is routed through
+[`GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md`](GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md):
+that companion decomposes the identification into carrier, parity,
+operator-dictionary, and matter-functional clauses and proves the first three
+on the same finite surfaces. Therefore this note no longer leaves an
+unstructured operator-identification bridge; the named remaining pin is the
+matter-functional/action-surface clause.
 **Status authority:** independent audit lane only. This source note does not
 set, predict, promote, or demote any audit outcome.
 **Primary runner:**
 [`scripts/gl_f_berezin_rp_reconstruction_check_2026_06_10.py`](../scripts/gl_f_berezin_rp_reconstruction_check_2026_06_10.py)
-(`TOTAL: PASS=44 FAIL=0`).
+(`TOTAL: PASS=48 FAIL=0`).
 **Runner cache:**
 [`logs/runner-cache/gl_f_berezin_rp_reconstruction_check_2026_06_10.txt`](../logs/runner-cache/gl_f_berezin_rp_reconstruction_check_2026_06_10.txt).
 
@@ -92,12 +98,15 @@ integrand class carries the sign.
 
 ## Boundaries
 
-- This note does not derive the Berezin action surface, reflection
-  positivity, the kernel class, or the physical identification of the
-  framework matter operators with the OS-reconstructed operators.
-- The reconstruction-identification bridge is explicit: the runner matches
-  the qubit-net dimension and parity pattern, but the identification itself
-  remains a review/audit target.
+- This note does not derive the Berezin/RP matter-functional/action surface
+  from the baseline axioms alone. It consumes the retained-grade
+  Grassmann/Berezin, determinant, and RP surfaces named below and remains
+  conditional on that surface being the framework matter functional.
+- The reconstruction-identification bridge is no longer an unstructured
+  residual of this note. The companion
+  [`GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md`](GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md)
+  is the explicit one-hop source for the carrier/parity/dictionary clauses;
+  it leaves only the matter-functional/action-surface clause named above.
 - This note supplies no new framework premise, primitive, controlled-data
   action, accepted-premise admission, empirical input, probability rule,
   weighting rule, or audit verdict.
@@ -114,6 +123,45 @@ integrand class carries the sign.
   creation subalgebra gives the standard Fock/holomorphic model of the
   quotient.
 
+## 2026-06-16 Reconstruction-Identification Bridge Wire-Up
+
+Post-audit repair target:
+
+```text
+missing_bridge_theorem: close or explicitly register the Berezin/RP
+action-surface supplier and the framework matter-operator-to-OS-reconstructed-
+operator identification; the finite OS/CAR algebra itself looked sound on the
+restricted packet.
+```
+
+The sibling
+[`GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md`](GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md)
+now supplies the explicit reconstruction-identification bridge decomposition.
+It shows that the earlier "identify the framework matter operators with the
+OS-reconstructed operators" phrase is not one undischarged admission. It
+decomposes into four clauses:
+
+1. carrier clause: the GNS carrier matches the qubit tensor carrier;
+2. parity clause: the reconstructed parity is the field-word
+   `prod_x(1 - 2 psi_x^dag psi_x)` and is transported automatically;
+3. dictionary clause: cyclicity, irreducibility, and Schur nullity force the
+   field dictionary up to one GL(F)-immaterial unitary scalar;
+4. matter-functional clause: the framework physical matter correlations must
+   be the declared Berezin/RP OS functional.
+
+The bridge note and runner discharge clauses (1)-(3) as exact finite theorems
+on the declared Berezin/RP functional surface. The residual is now clause (4),
+which is co-extensive with this note's declared action-surface conditionality
+under the friendly read, and remains a single named matter-functional pin
+under the hostile read.
+
+This repair does not promote this row and does not add a new axiom,
+primitive, admitted premise, or audit verdict. It only changes the re-audit
+surface from "opaque reconstruction-identification bridge plus action
+surface" to "action-surface / matter-functional supplier remains; kinematic
+reconstruction-identification clauses are explicitly checked by the sibling
+bridge packet."
+
 ## Relation To The GL(F) Boundary
 
 The existing
@@ -123,11 +171,13 @@ defines `GL(F)` and shows that, within the explicit
 Grassmann/CAR class is selected conditionally on `GL(F)`. That earlier note
 does not supply `GL(F)`.
 
-This note supplies a conditional source for `GL(F)` on a different surface:
-the Berezin/RP action surface plus OS reconstruction. The two statements fit
-together only with their boundaries intact. The discriminator remains
-conditional; this note's supplier claim remains conditional on the action
-surface and reconstruction-identification bridge.
+This note supplies a source for `GL(F)` on the Berezin/RP action surface plus
+OS reconstruction. The two statements fit together only with their boundaries
+intact. The discriminator remains conditional where it consumes `GL(F)` as a
+predicate. This note's supplier claim is conditional on the
+matter-functional/action-surface clause and on independent audit of the
+identification-decomposition companion named above; it does not claim a
+statistics-forcing theorem from the baseline axioms alone.
 
 ## Runner Checks
 
@@ -145,6 +195,10 @@ The runner independently checks:
 - A staggered-kernel leg at `L_s = 4`, using the action-derived two-step
   transfer kernel, with the same reconstructed exchange relations within
   tolerance.
+- Source-graph bridge wire-up: the sibling reconstruction-identification
+  bridge packet exists, its runner cache is fresh and passing, and this note
+  records that only the matter-functional/action-surface clause remains
+  open.
 - Falsification legs: the commuting-nilpotent branch reconstructs the
   hard-core commuting frame; a Theta-asymmetric kernel breaks OS symmetry; an
   indefinite symmetric kernel gives a non-PSD OS Gram.
@@ -176,9 +230,33 @@ The runner independently checks:
   and
   [FERMION_PARITY_PAULI_TENSOR_INVOLUTION_NARROW_THEOREM_NOTE_2026-05-10.md](FERMION_PARITY_PAULI_TENSOR_INVOLUTION_NARROW_THEOREM_NOTE_2026-05-10.md)
   supply the parity comparison target.
+- [GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md](GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md)
+  supplies the reconstruction-identification decomposition: carrier, parity,
+  and operator-dictionary clauses are finite theorems given the same
+  matter-functional surface; the remaining residual is exactly the named
+  matter-functional/action-surface clause.
 - [STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md](STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md)
   supplies the definition and conditional role of `GL(F)`.
+- [GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md](GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md)
+  decomposes the reconstruction-identification bridge and discharges the
+  carrier, parity, and dictionary clauses as exact finite theorems; the
+  remaining matter-functional/action-surface clause is still named here.
 
 **No-promotion statement:** this note does not promote, demote, or set the
 audit status of any dependency. The independent audit lane is the only status
 authority.
+
+## 2026-06-17 restricted packet verifier
+
+The re-audit packet is now pinned by
+[`scripts/gl_f_reconstruction_packet_verifier_2026_06_17.py`](../scripts/gl_f_reconstruction_packet_verifier_2026_06_17.py),
+with cached output at
+[`logs/runner-cache/gl_f_reconstruction_packet_verifier_2026_06_17.txt`](../logs/runner-cache/gl_f_reconstruction_packet_verifier_2026_06_17.txt).
+
+The verifier checks this parent reconstruction note, the
+identification-bridge decomposition, the substep-1 compatibility no-go, and
+the GL(F) conditional discriminator against their SHA-fresh runner caches. It
+also checks that the bridge note's expected count matches the current
+`PASS=39 FAIL=0` cache. This is source-side packaging only: it does not derive
+the matter-functional/action-surface clause, does not supply `GL(F)` as an
+unconditional baseline theorem, and does not set any audit status.

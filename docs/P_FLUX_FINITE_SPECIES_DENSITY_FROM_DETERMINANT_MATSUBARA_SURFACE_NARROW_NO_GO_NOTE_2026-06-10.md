@@ -29,10 +29,13 @@ path), or off the realized matter-kernel sector (Higgs taste carrier;
 thermal-circle zeta ladders). The retained-pending real-diagonal
 source candidate is likewise hypothesis-conditional (`For invertible
 real antisymmetric D`) and is not treated as retained-grade. The
-retained Stefan-Boltzmann/`g*` rows are
-supplied-inventory-conditional; the retained Lorentz/isotropy rows
-are **descriptive of both carriers** (the staggered `sin²` dispersion
-AND the K0-class bosonic graph-Laplacian) and normative of neither —
+retained Stefan-Boltzmann/`g*` rows do not supply the realized
+matter-kernel inventory: the supplied-inventory row is currently
+unaudited, and the axiom-first fermionic SB row is retained_bounded
+but still does not derive the realized matter-kernel species count.
+The retained Lorentz/isotropy rows are **descriptive of both
+carriers** (the staggered `sin²` dispersion AND the K0-class bosonic
+graph-Laplacian) and normative of neither —
 the isotropy core is derived ON the staggered dispersion, not
 independently of the Dirac form. The **naive zeta route is closed
 honestly**: the per-volume IR limit of `(1/V) log det(h² + m²)` (zero
@@ -131,9 +134,11 @@ det-positivity bridge (retained); the Berezin determinant row
 (retained_pending_chain, not retained-grade); the Higgs mean-field
 determinant taste bridge (retained); the flavor supplied-heat-kernel
 row (retained_bounded); the twisted thermal-zeta period quotient
-(retained). The ratio/quartic Matsubara rows, the heat-kernel
-CLT/d4/Greens rows, and the new GL(F) Berezin-readout discriminator
-are unaudited and cannot supply. Their quantifier sweep:
+(retained). The ratio/quartic Matsubara rows and heat-kernel
+CLT/d4 rows remain unaudited; the Greens resolvent row and the
+GL(F) Berezin-readout discriminator are now retained_bounded, but
+remain scope/condition limited rather than suppliers of B-Z2. Their
+quantifier sweep:
 
 1. **Matsubara family** — scoped to "the minimal spatial APBC block
    `L_s = 2` of the staggered Dirac operator on `Z⁴`" with mean-field
@@ -196,10 +201,10 @@ currency.** The retained SB bridge row normalizes fermionic thermal
 energy density per relativistic degree of freedom as
 `(7/8)(π²/30)T⁴`. Its own hypotheses bind "a relativistic,
 effectively massless thermal degree of freedom" and it "does not
-derive the Standard Model particle inventory" — the inventory is
-SUPPLIED (the parent inventory row is audited_conditional and titled
-"from supplied thermal inventory"); the axiom-first SB rows are
-unaudited. So no retained row applies the `T⁴` form to the REALIZED
+derive the Standard Model particle inventory" — the supplied-inventory
+parent is currently unaudited, and the axiom-first fermionic SB row is
+retained_bounded but still does not derive the realized matter-kernel
+inventory. So no retained row applies the `T⁴` form to the REALIZED
 matter kernel (check 14). Computed on the realized kernels (`L = 128`
 symbol grid, licensed by the closed-form spectrum certificates of
 check 4): the per-dof object
@@ -370,19 +375,24 @@ Plain-text pointers (NOT load-bearing):
   inversion guards (nothing forced from matched-3=3) are certified
   respected computationally (check 23).
 - `STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md`
-  (unaudited) — the Berezin-readout consumer; status kill recorded in
-  check 6.
+  (retained_bounded) — the Berezin-readout consumer; it is a
+  conditional discriminator/readout result and not a retained supplier
+  of the realized matter-kernel finite-species-density clause (check 6).
 - `G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md`
-  (audited_conditional) — the supplied-inventory parent of the SB
-  bridge; its "supplied" framing is the route-C conditionality kill.
+  (unaudited) — the supplied-inventory parent of the SB bridge; its
+  "supplied" framing remains the route-C conditionality kill.
 - `AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md` and
   `AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md`
-  (both unaudited) — would-be axiom-first SB suppliers; status kills.
+  (first unaudited; fermionic row retained_bounded) — would-be
+  axiom-first SB suppliers; neither supplies the realized matter-kernel
+  inventory clause.
 - `EMERGENT_GAUGE_HEAT_KERNEL_CLT_ATTRACTOR_CONDITIONAL_ON_BI_INVARIANT_DYNAMICS_NARROW_THEOREM_NOTE_2026-06-08.md`,
   `HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10.md`,
   `LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md`
-  (all unaudited) — remaining heat-kernel rows; status kills
-  (check 6).
+  (first two unaudited; Greens retained_bounded) — remaining
+  heat-kernel/resolvent rows; the retained_bounded Greens result is a
+  resolvent/long-range-potential theorem, not a supplier of B-Z2 for
+  the realized matter kernel (check 6).
 - `EMERGENT_POINCARE_FREE_SECTOR_FROM_KINETIC_ISOTROPY_PRIMITIVE_BOUNDED_THEOREM_NOTE_2026-06-09.md`
   (unaudited) — route-B candidate; status kill (check 18).
 - `RECORD_RESET_SINK_ENTROPY_LEDGER_2026-06-05.md` (unaudited) — the
@@ -644,7 +654,7 @@ Exit code 0 iff `FAIL=0`.
 
 ```yaml
 claim_type_author_hint: no_go
-claim_scope: "On the licensed two-flux-class NN kinetic surface, the point-zero-set no-go's boundary B-Z2 ('the massless species density is finite' / ker = carrier / point-like zero set) has no retained supplier in the determinant/Matsubara/heat-kernel family, the isotropy/Lorentz family, or the thermal/g*/entropy family as of 2026-06-10: the Matsubara rows are staggered-scoped and gapped on their own APBC L_s=2 block (their normalization clause never meets a zero mode and is branch-neutral or wrap-convention-graded off it); the det-positivity rows are m>0-conditional with a computed branch-neutral mechanism; Berezin is a matrix-agnostic identity verified to hold at det=0; Jacobi/real-diagonal are invertibility-hypothesis-conditional; heat-kernel rows are supplied or unaudited; the Higgs/zeta rows are off the realized matter-kernel sector; the SB/g* rows are supplied-inventory-conditional; the retained Lorentz rows are descriptive of both carriers (staggered sin^2 and bosonic graph-Laplacian) and derived on the staggered dispersion (circular as a selector); no third-law/vacuum-entropy row exists and the zero-point entropy density vanishes per volume on both branches anyway. The naive zeta route is closed honestly: the per-volume IR log-det limit is finite on BOTH branches with vanishing divergence coefficient. The objects that do degenerate on the flux-(+1) branch are computed: det vanishing order extensive (20,56,68) vs bounded (8,8,8) at L=4,6,8; g_eff(T) = u(T)/[(7/8)(pi^2/30)T^4] divergent ~T^-2 (Sommerfeld u/T^2 ~ 0.233) vs finite plateau ~1 = 8 species/v^3; exactly flat tangent directions on the zero surface vs direction-independent cone speeds. phi = -1 remains underived; B-Z2 is sharpened to one missing retained-grade row binding the realized matter kernel in any of three computed-equivalent currencies."
+claim_scope: "On the licensed two-flux-class NN kinetic surface, the point-zero-set no-go's boundary B-Z2 ('the massless species density is finite' / ker = carrier / point-like zero set) has no retained supplier in the determinant/Matsubara/heat-kernel family, the isotropy/Lorentz family, or the thermal/g*/entropy family as of 2026-06-10: the Matsubara rows are staggered-scoped and gapped on their own APBC L_s=2 block (their normalization clause never meets a zero mode and is branch-neutral or wrap-convention-graded off it); the det-positivity rows are m>0-conditional with a computed branch-neutral mechanism; Berezin is a matrix-agnostic identity verified to hold at det=0; Jacobi/real-diagonal are invertibility-hypothesis-conditional; heat-kernel rows are supplied, unaudited, or retained_bounded but not suppliers of B-Z2 for the realized matter kernel; the Higgs/zeta rows are off the realized matter-kernel sector; the SB/g* rows do not supply the realized matter-kernel inventory clause; the retained Lorentz rows are descriptive of both carriers (staggered sin^2 and bosonic graph-Laplacian) and derived on the staggered dispersion (circular as a selector); no third-law/vacuum-entropy row exists and the zero-point entropy density vanishes per volume on both branches anyway. The naive zeta route is closed honestly: the per-volume IR log-det limit is finite on BOTH branches with vanishing divergence coefficient. The objects that do degenerate on the flux-(+1) branch are computed: det vanishing order extensive (20,56,68) vs bounded (8,8,8) at L=4,6,8; g_eff(T) = u(T)/[(7/8)(pi^2/30)T^4] divergent ~T^-2 (Sommerfeld u/T^2 ~ 0.233) vs finite plateau ~1 = 8 species/v^3; exactly flat tangent directions on the zero surface vs direction-independent cone speeds. phi = -1 remains underived; B-Z2 is sharpened to one missing retained-grade row binding the realized matter kernel in any of three computed-equivalent currencies."
 upstream_dependencies:
   - minimal_axioms
   - u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20

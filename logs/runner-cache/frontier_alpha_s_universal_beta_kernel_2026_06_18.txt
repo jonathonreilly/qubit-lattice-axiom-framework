@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py
+runner_sha256: 05bc3a6a7f24745031c75154851c047d8172de0a79a173b3ee583ea0458f146a
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+=== Source-boundary checks ===
+[PASS] note declares boundary: **Claim type:** bounded_theorem
+[PASS] note declares boundary: **Type:** bounded_theorem
+[PASS] note declares boundary: universal two-loop beta-kernel
+[PASS] note declares boundary: This note does not derive beta_2, beta_3, MSbar counterterms, or four-loop running.
+[PASS] note declares boundary: This note does not derive physical threshold masses.
+[PASS] note declares boundary: This note does not promote any downstream alpha_s(M_Z) value to retained status.
+[PASS] parent alpha_s 4-loop partial note points to this standalone kernel
+
+=== SU(3) surface and exact coefficients ===
+[PASS] C_F = (N^2 - 1)/(2N) = 4/3 at N=3
+[PASS] C_A = N = 3 at N=3
+[PASS] T_F = 1/2 on the Gell-Mann trace normalization
+[PASS] beta0(n_f) simplifies to 11 - 2 n_f / 3
+[PASS] beta1(n_f) simplifies to 102 - 38 n_f / 3
+
+=== Active-flavor values ===
+[PASS] beta0(6) = 7
+[PASS] beta0(5) = 23/3
+[PASS] beta1(6) = 26
+[PASS] beta1(5) = 116/3
+[PASS] beta1(4) = 154/3
+[PASS] beta1(3) = 64
+
+=== Structural properties ===
+[PASS] beta0 drops by 2/3 per active flavor
+[PASS] beta1 drops by 38/3 per active flavor
+[PASS] beta0 is positive through the asymptotic-freedom window n_f <= 16
+[PASS] beta1 sign transition is explicit: positive through n_f=8, negative from n_f=9
+
+=== Convention checks ===
+[PASS] g-convention beta converts to the alpha_s convention
+[PASS] a = alpha_s/(4pi) convention gives da/dlnmu = -2 b0 a^2 - 2 b1 a^3
+[PASS] two-loop term is a bounded correction at alpha_s=0.1, n_f=5 :: ratio=0.040135
+
+=== Falsifiers ===
+[PASS] falsifier detects omission of the C_F term at n_f=6 :: wrong=42, correct=26
+[PASS] falsifier detects trace-normalization drift T_F=1 :: wrong=3, correct=7
+[PASS] falsifier detects using generation count as active quark flavor count :: wrong_nf=9
+
+SUMMARY: PASS=28 FAIL=0
+
+----- stderr -----
+

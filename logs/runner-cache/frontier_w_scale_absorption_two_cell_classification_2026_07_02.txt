@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/frontier_w_scale_absorption_two_cell_classification_2026_07_02.py
+runner_sha256: cc2f627492ee05fef02d9cf5c35cbec2598ca26fc88edcd4801185f13871b2bf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+W SCALE-ABSORPTION / TWO-CELL READOUT CLASSIFICATION
+bounded support runner -- exact finite arithmetic
+==============================================================================
+
+------------------------------------------------------------------------------
+Source guards
+------------------------------------------------------------------------------
+CHECK 01: PASS -- two-cell parent contains diagonal identity I(x,x)=(u+v)x
+CHECK 02: PASS -- parent kappa no-go contains Pi_phys family and common-factor cancellation
+CHECK 03: PASS -- parent kappa no-go preserves 8/9 as a count, not a weight selector
+CHECK 04: PASS -- scale primitive is a units conversion, not a physics axiom
+CHECK 05: PASS -- occupancy source supplies equipartition wording
+
+------------------------------------------------------------------------------
+Diagonal common-factor classification
+------------------------------------------------------------------------------
+CHECK 06: PASS -- test weights have three distinct common prefactors [sums=[Fraction(4, 1), Fraction(9, 1), Fraction(16, 1)]]
+CHECK 07: PASS -- diagonal pairwise ratios I_i/I_j equal x_i/x_j across the prefactors
+CHECK 08: PASS -- diagonal normalized fractions are unchanged across the prefactors
+CHECK 09: PASS -- Koide-shape witness is unchanged by diagonal common scaling
+CHECK 10: PASS -- generic degree-zero rational witness is unchanged by diagonal common scaling
+CHECK 11: PASS -- off-diagonal ratio I(1,0)/I(0,1) changes with w [ratios=[Fraction(1, 3), Fraction(2, 7), Fraction(9, 7)]]
+
+------------------------------------------------------------------------------
+Same-family calibration and scale-reference routing
+------------------------------------------------------------------------------
+CHECK 12: PASS -- raw diagonal readouts are exactly s times the content table
+CHECK 13: PASS -- same-family calibration cancels the prefactor
+CHECK 14: PASS -- scale-reference routing against one same-family member gives one physical table
+CHECK 15: PASS -- cross-family calibration with different prefactors remains sensitive [ratios=[Fraction(1, 1), Fraction(5, 3)]]
+
+------------------------------------------------------------------------------
+Listed current-source instances
+------------------------------------------------------------------------------
+CHECK 16: PASS -- EW shape cancels a common same-family factor
+CHECK 17: PASS -- Koide listed instance is w-free under diagonal equal-content premise
+CHECK 18: PASS -- mass-ratio listed instance is w-free under diagonal equal-content premise
+CHECK 19: PASS -- absolute-scale listed instance is w-free after same-family scale-reference routing
+CHECK 20: PASS -- 8/9 cardinality count is fixed while Pi_phys value changes with inter-sector weight
+CHECK 21: PASS -- exactly five current-source instance rows are classified
+
+------------------------------------------------------------------------------
+Residual triple
+------------------------------------------------------------------------------
+CHECK 22: PASS -- off-diagonal evaluation is sensitive while diagonal same-content is not
+CHECK 23: PASS -- cross-family comparison is sensitive and same-family calibration restores cancellation
+CHECK 24: PASS -- raw absolute normalization is sensitive and scale-reference routing removes it
+
+------------------------------------------------------------------------------
+Note firewall and hygiene
+------------------------------------------------------------------------------
+CHECK 25: PASS -- note carries bounded-scope and no-promotion guardrails [all present]
+CHECK 26: PASS -- note avoids stale PR/proposal/raw-output/status-surface language [none present]
+CHECK 27: PASS -- note links the four direct current-source dependencies and the cached log
+
+==============================================================================
+TOTAL: PASS=27 FAIL=0
+==============================================================================
+
+----- stderr -----
+

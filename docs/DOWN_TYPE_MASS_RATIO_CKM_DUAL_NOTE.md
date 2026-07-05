@@ -26,10 +26,11 @@ Both bridges now have explicit current-`main` support notes. The lane is still
 bounded because neither bridge is yet promoted to the retained theorem core.
 
 The newer follow-up
-[QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md](./QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md)
-does not change that status. It sharpens the same bounded route by making the
-zero-import cascade presentation explicit and by verifying that a cubic-exact
-NNI texture reproduces the framework ratios with admissible `c_12, c_23 = O(1)`.
+`QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md`
+does not change that status and is not a one-hop dependency of this earlier
+bounded lane row. It sharpens the same bounded route by making the zero-import
+cascade presentation explicit and by verifying that a cubic-exact NNI texture
+reproduces the framework ratios with admissible `c_12, c_23 = O(1)`.
 
 The lane is still useful. It converts the promoted CKM package into a reusable
 down-type flavor-mass tool that can support later `y_b`, flavor-hierarchy, and

@@ -1,7 +1,15 @@
-# Cl_4(C) Carrier-Axiom Consequence Map (Cross-Lane)
+# Historical Cl_4(C) Carrier-Axiom Consequence Map (Retracted)
 
 **Date:** 2026-04-28
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/stale-frames-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
+
 **Lanes covered:** 1 (gravity/area-law), 4D (neutrino Dirac/Majorana),
 4F (Σm_ν), 5 (Hubble), Planck.
 **Loop:** `cl4c-carrier-axiom-consequence-map-20260428`
@@ -22,7 +30,26 @@ Do NOT cite the numerical results, tables, or threshold values in the original c
 
 ---
 
-## 0. Context
+## 2026-06-16 archive firewall
+
+This archived packet is historical / diagnostic and retired as evidence. It is
+not an active Axiom* consequence map, not support for a carrier-axiom closure
+cascade, and not authority for downstream Hubble, Planck, gravity, or neutrino
+closures.
+
+The safe residue is recovery context only. If an Axiom* premise is ever
+adopted by an audit-clean extension decision, a new consequence map must be
+rebuilt from current dependencies.
+
+## 2026-06-18 registered-runner contract
+
+The registered runner for this archived row is a firewall witness only. It
+verifies this note's current-surface certificate, retraction, and archive
+boundary. It must not be used to re-prove the historical closure cascade. A
+PASS does not adopt Axiom*, close `(C1)`, move any Hubble, Planck, gravity, or
+neutrino chain, or upgrade any conditional theorem on the current surface.
+
+## 0. Historical context (retracted)
 
 PR #169 closed Cycles 2-6 of the
 `hubble-c1-absolute-scale-gate-20260428` loop. The Cycle-5 A5 audit
@@ -138,7 +165,7 @@ unresolved here.
 | Lane 4D Dirac global lift | open outside this map | unchanged (independent) | #113 not landed |
 | DM thermal bound vs. observation | tension (~0.003 Ω_DM) | **tension persists** | DM same-surface family |
 
-## 7. Theorem (audit)
+## 7. Historical theorem statement (retracted)
 
 > **Theorem (Axiom\* consequence map).** Adopting Axiom\* (the
 > irreducible Cl_4(C) module axiom on `P_A H_cell`) into `A_min`
@@ -169,7 +196,7 @@ unresolved here.
 > Axiom\* **and** a separate Lane 5 `(C2)` closure mechanism. These
 > are structurally orthogonal residuals.
 
-### Proof.
+### Historical proof sketch (retracted)
 
 The runner verifies the conditional-closure chain step-by-step:
 
@@ -197,7 +224,7 @@ The runner verifies the conditional-closure chain step-by-step:
 
 Output: `SUMMARY: PASS=21 FAIL=0`. ∎
 
-## 8. What this map closes
+## 8. Historical closure summary (retracted)
 
 - The Axiom\* consequence chain is **structurally identified** at
   conditional-closure grade.
@@ -216,7 +243,7 @@ Output: `SUMMARY: PASS=21 FAIL=0`. ∎
 - It does **NOT** address the DM thermal bound's same-surface
   conditional.
 
-## 10. Implication for honest scientific decision
+## 10. Historical decision note (retracted as active guidance)
 
 The user's option (i) of the A5 audit's honest closure status (PR
 #169) — "extend A_min by Axiom\*" — is now mapped:
@@ -250,15 +277,11 @@ takes no position.
 - Loop pack:
   `.claude/science/physics-loops/cl4c-carrier-axiom-consequence-map-20260428/`.
 
-## 12. Boundary
+## 12. Archive boundary
 
-This is a **conditional-closure consequence map**. It
-does not adopt Axiom\*, does not retain any cosmology variable, and
-does not upgrade any conditional theorem on the actual current
-surface. It only traces what would happen IF Axiom\* were
-adopted, mapping the structurally orthogonal residuals so the
-user's option-(i) decision can be made with full visibility.
+This is an archive-only recovery map. It does not adopt Axiom*, does not retain
+any cosmology variable, does not upgrade any conditional theorem on the current
+surface, and does not serve as active guidance for an extension decision.
 
-The map confirms that minimal-axiom-extension cosmology closure
-requires two structurally independent moves: Axiom\* (P_A H_cell
-Cl_4(C) carrier) AND a separate (C2) eta-retirement gate closure.
+The old closure-confirmation language is retracted. A future Axiom* analysis
+must be rebuilt from the audited extension decision and current dependencies.

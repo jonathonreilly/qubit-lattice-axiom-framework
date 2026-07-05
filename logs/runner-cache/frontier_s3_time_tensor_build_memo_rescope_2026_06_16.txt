@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/frontier_s3_time_tensor_build_memo_rescope_2026_06_16.py
+runner_sha256: 9eed9dc5028ab29b66786089b2972fa5a9627bb2dba97d84e9a8e2bc4393b235
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+[1] source-boundary metadata
+PASS memo uses canonical bounded_theorem claim type
+PASS memo declares bounded conditional-family / obstruction synthesis
+PASS memo says it is not a positive unique tensor/time theorem
+PASS memo says beta_E/alpha_E is not derived
+PASS memo says Einstein/Regge identification is not closed
+[2] markdown dependency edges
+PASS readout authority is linked as markdown dependency
+PASS time-coupling authority is linked as markdown dependency
+[3] endpoint algebra
+PASS q_T=5/6 forces beta_T/alpha_T=-1
+PASS s_TE=-2 and c_TE=-8/9 force q_E=15/8
+PASS q_E=15/8 forces beta_E/alpha_E=21/4
+[4] unresolved readout obstruction
+PASS rho_E=0 and rho_E=21/4 have identical E-shell normalization
+PASS rho_E=0 gives E-center factor 1
+PASS rho_E=21/4 gives E-center factor 15/8
+PASS E-center source factor depends on rho_E
+[5] upstream authority boundary
+PASS readout authority states exact missing-map obstruction
+PASS readout authority names beta_E / alpha_E as irreducible missing map entry
+PASS time authority states exact conditional coupling family
+PASS time authority states no unique Theta_R -> Lambda_R theorem
+PASS memo preserves final dynamics as missing primitive
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

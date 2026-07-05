@@ -1,5 +1,7 @@
 # Area-Law Primitive Parity-Gate Carrier Theorem Note
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-25
 **Status:** conditional positive Target 2 carrier theorem on the primitive
 two-orbital Gaussian/CAR edge carrier. Audit and effective status are

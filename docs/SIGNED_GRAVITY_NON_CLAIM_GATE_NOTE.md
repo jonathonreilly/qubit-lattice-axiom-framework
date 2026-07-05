@@ -1,5 +1,7 @@
 # Signed Gravity Non-Claim Gate Note
 
+**Claim type:** meta
+
 **Date:** 2026-04-25
 **Status:** mandatory non-claim gate for signed gravitational response wording
 **Companion:** [`SIGNED_GRAVITY_MECHANISM_SEPARATION_NOTE.md`](SIGNED_GRAVITY_MECHANISM_SEPARATION_NOTE.md)

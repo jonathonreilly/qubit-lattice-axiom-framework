@@ -122,7 +122,7 @@ def render_markdown() -> str:
     lines.append("")
     lines.append("- [`scripts/shapiro_complex_interaction.py`](../scripts/shapiro_complex_interaction.py)")
     lines.append("- [`docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md`](../docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md)")
-    lines.append("- [`docs/CAUSAL_PROPAGATING_FIELD_NOTE.md`](../docs/CAUSAL_PROPAGATING_FIELD_NOTE.md)")
+    lines.append("- [`docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](../docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)")
     lines.append("- [`docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md`](../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md)")
     lines.append("- [`docs/CAUSAL_MOVING_UNIFICATION_NOTE.md`](../docs/CAUSAL_MOVING_UNIFICATION_NOTE.md)")
     lines.append("- [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](../docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md)")

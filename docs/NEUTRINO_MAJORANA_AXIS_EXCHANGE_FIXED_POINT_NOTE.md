@@ -1,5 +1,7 @@
 # Majorana Axis-Exchange Fixed-Point Theorem
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-15
 **Status:** exact local finite-point selector theorem on the admitted
 background-normalized Majorana block, conditional on axis-exchange covariance

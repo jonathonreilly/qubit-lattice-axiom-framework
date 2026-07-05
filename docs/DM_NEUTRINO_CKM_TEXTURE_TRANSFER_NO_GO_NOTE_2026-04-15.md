@@ -1,5 +1,7 @@
 # DM Neutrino CKM Texture Transfer No-Go
 
+**Claim type:** no_go
+
 **Date:** 2026-04-15
 **Status:** exact no-transfer theorem for the current CKM/NNI atlas tools on
 the universal Dirac bridge

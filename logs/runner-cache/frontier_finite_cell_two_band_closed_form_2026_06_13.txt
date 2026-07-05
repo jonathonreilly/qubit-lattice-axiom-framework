@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/frontier_finite_cell_two_band_closed_form_2026_06_13.py
+runner_sha256: 64a4dac5cc3cc5dac84d1546b83538ac429332957d9b5faacaa44f92d99d2cc3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.92
+status: ok
+----- stdout -----
+Finite-cell two-band closed-form verifier
+cell: Q=24, Ly=2, N=48, GL=12, mu=1.7086, T=0.2
+frozen tolerance: closed_form=1.0e-10
+
+S0 finite-cell responses
+m=0 closed=0.042933687517 parts(intra,inter)=(+8.368145e-01,-7.938808e-01)
+m=0.2 closed=0.041273318495 parts(intra,inter)=(+1.226918e+00,-1.185645e+00)
+m=0.3 closed=0.039175811591 parts(intra,inter)=(+1.687317e+00,-1.648141e+00)
+m=0.5 closed=0.030744459999 parts(intra,inter)=(+3.178505e+00,-3.147761e+00)
+PASS: anti-fabrication: off-m=0 interband term is nonzero at every massive case :: interband magnitudes=m=0.2: 1.185645e+00, m=0.3: 1.648141e+00, m=0.5: 3.147761e+00
+
+S1 closed form: finite momentum sum vs real-space Harper PT
+PASS: closed finite sum equals direct Harper PT at m=0.0 :: closed-direct=-1.334e-14, tol=1.0e-10
+PASS: closed finite sum equals direct Harper PT at m=0.2 :: closed-direct=-1.378e-14, tol=1.0e-10
+PASS: closed finite sum equals direct Harper PT at m=0.3 :: closed-direct=-2.567e-15, tol=1.0e-10
+PASS: closed finite sum equals direct Harper PT at m=0.5 :: closed-direct=-4.302e-15, tol=1.0e-10
+finite-difference discriminator m=0.2: B=5.0e-04 err=7.833224e-05, B=2.5e-04 err=1.961988e-05, ratio=3.992
+PASS: finite-difference cross-check converges toward the closed form when B halves :: fine_err=1.962e-05, max=3.0e-05, ratio=3.992, min=3.5
+
+S2 convergence: finite-Q discrete Moyal midpoint sums
+m=0.2 Q-sequence: Q=24: +1.679677098484e-02, Q=48: +1.581698221168e-02, Q=96: +1.583215353175e-02, Q=192: +1.583230423312e-02; target Q=384: +1.583230424665e-02; rates=62.946, 101.662, 11137.242
+PASS: discrete Moyal sum converges monotonically at m=0.2 :: diffs_to_Q384=9.645e-04, 1.532e-05, 1.507e-07, 1.353e-11
+m=0.5 Q-sequence: Q=24: +1.184950414430e-01, Q=48: +1.179651305982e-01, Q=96: +1.179647705970e-01, Q=192: +1.179647705973e-01; target Q=384: +1.179647705973e-01; rates=1472.971, 1139603.664, 315.900
+PASS: discrete Moyal sum converges monotonically at m=0.5 :: diffs_to_Q384=5.303e-04, 3.600e-07, 3.159e-13, 0.000e+00
+
+S3 note hygiene
+PASS: note has bounded theorem claim type and audit authority
+PASS: note names the supplied finite-cell scope
+PASS: note discloses residuals and the Moyal comparator scope
+
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

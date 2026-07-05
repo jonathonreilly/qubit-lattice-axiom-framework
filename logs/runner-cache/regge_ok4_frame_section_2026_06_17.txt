@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/regge_ok4_frame_section_2026_06_17.py
+runner_sha256: 4eaca456188f72233e773a67c1918c0eb7ae0db097a760ef9a05a2b65b5d9c18
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+[DISP] PASS: alpha(axis) = -1/6  (-0.166667)
+[DISP] PASS: alpha(face diagonal) = -1/8  (-0.125000)
+[DISP] PASS: alpha(body diagonal) = -1/9  (-0.111111)
+[DISP] PASS: anisotropy spread |alpha_axis - alpha_body| = 1/18 (lattice-fixed amplitude, no GR/PDG input)  (spread=0.055556)
+[CRITSET] PASS: 6 axis directions are MAXima of f, f=1  (#MAX=6, f=1.0000)
+[CRITSET] PASS: 8 body-diagonal directions are MINima of f, f=1/3  (#MIN=8, f=0.3333)
+[CRITSET] PASS: 12 face-diagonal directions are SADDLES of f, f=1/2  (#SADDLE=12, f=0.5000)
+[CRITSET] PASS: total 26 critical directions = the O_h crystal axes (6+8+12), giving a finite crystal-frame section candidate on the flat lattice atlas
+[WEIGHT] PASS: the O(k^4) cubic axis-4-tensor weight splits spin-2 into E(2)+T2(3) (= G_aniso)  (mults=[2, 3])
+[WEIGHT] PASS: isotropic (Frobenius) energy is SO(3)-orbit-FLAT (O(k^2) covariant regime)  (orbit-var=1.22e-15)
+[WEIGHT] PASS: O(k^4) cubic-weighted energy is NOT orbit-flat -> finite field-frame section support  (orbit-var=0.1522)
+[SPLIT] PASS: no O(k^2) angular anisotropy: EH order is isotropic/orbit-flat; sectioning is strictly O(k^4)
+[ESCAPE] PASS: the sectioning weight is carried at O(k^4) (k-dependent => derivative-dependent), outside the constant Casimir-projector class CB(V)  (k^4 anisotropy=0.0556 (a derivative-order functional, not a constant projector))
+[LV] PASS: the O(k^4) anisotropy functional sum n_a^4 has the cubic [100]:[111] = 3:1 pattern (same l=4 cubic-harmonic dim-6 signature as the retained Lorentz-violation results; IR/O(k^2) covariance preserved)  ([100]:[111]=3.0000)
+
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

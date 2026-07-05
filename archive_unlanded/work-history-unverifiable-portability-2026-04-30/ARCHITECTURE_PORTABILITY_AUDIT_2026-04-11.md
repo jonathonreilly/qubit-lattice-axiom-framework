@@ -1,7 +1,14 @@
 # Architecture Portability Audit
 
-**Date:** 2026-04-11  
+**Date:** 2026-04-11
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/work-history-unverifiable-portability-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
 
 ## Retraction
 
@@ -11,20 +18,51 @@
 
 > "Issue: the positive architecture-portability claim is asserted without any checkable source-note computation, runner output, table, or registered dependency. Why this blocks: a hostile auditor cannot verify source-mass scaling, attraction sign, Born-rule exclusions, or architecture-specific boundaries across the ordered, staggered, Wilson, and random-geometric rows from this packet. Repair target: provide or register the underlying architecture-portability note, scripts/logs, per-architecture measurements, and explicit wording-boundary checks. Claim boundary until fixed: this file can be used only as an editorial wording caution that should not overclaim Newton closure, distance-law closure, both-masses closure, or Wilson Born measurements; it cannot itself be retained as evidence for architecture portability."
 
-Do NOT cite the numerical results, tables, or threshold values in the original content below as live framework claims. The runners referenced in this note have been superseded or are no longer reproducible at the time of audit. If a future investigation revisits this physics, treat it as starting from scratch rather than as continuation of a "closed no-go".
+Do NOT cite the numerical results, tables, or threshold values in the original
+content below as live framework claims. The runners referenced in this note
+have been superseded or are no longer reproducible at the time of audit. If a
+future investigation revisits this physics, treat it as starting from scratch
+rather than as continuation of a "closed no-go".
+
+## Boundary clarification (2026-06-16)
+
+This archived packet is historical / diagnostic and retired as evidence. It is
+not a live authority for cross-architecture source-mass portability, attraction
+sign, Born-rule behavior, distance-law behavior, both-masses closure, or Wilson
+barrier measurements.
+
+The current source for the bounded finite-runner portability companion is
+[`docs/ARCHITECTURE_PORTABILITY_SWEEP_NOTE.md`](../../docs/ARCHITECTURE_PORTABILITY_SWEEP_NOTE.md)
+with primary runner
+[`scripts/frontier_architecture_portability_sweep.py`](../../scripts/frontier_architecture_portability_sweep.py).
+This archived note does not add support to that separate row and must not be
+listed as an evidence note for it. Its only safe use is to remind future edits
+not to overclaim Newton closure, distance-law closure, both-masses closure, or
+Wilson Born measurements from the portability sweep.
+
+## 2026-06-18 live source bridge
+
+[`docs/ARCHITECTURE_PORTABILITY_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md`](../../docs/ARCHITECTURE_PORTABILITY_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md)
+packages the current live source-side re-audit target for the failed historical
+row. It does not restore this archived packet as evidence. It points auditors
+to the live runner-backed sweep, its cache, and the explicit boundary that the
+safe claim is only bounded source-mass scaling / attraction portability on the
+configured finite architectures, with Born `I_3` checked only where the barrier
+implementation exists.
 
 ---
 
-## Verdict
+## Historical Original Text Below Is Retracted
 
-Retainable to `main` as a bounded source-mass / attraction portability
-companion.
+The original packet proposed mainline retention as a bounded source-mass /
+attraction portability companion. That proposal failed audit for this archived
+file and is not authority.
 
-## Exact Retained Wording
+### Historical proposed wording (retracted)
 
 > This is a portability companion, not a standalone Newton closure. It demonstrates architecture portability of source-mass scaling and attraction sign across ordered 3D cubic, staggered 3D cubic, Wilson 3D cubic, and a 2D random geometric control row. The random geometric row is mass-scaling only and is not a distance-law comparison. The result does not establish architecture-independent full Newton closure.
 
-## Why It Is Safe
+### Historical safety rationale (retracted)
 
 - The architecture comparison is honest: the random geometric row is 2D and is
   used only for mass-scaling portability.
@@ -34,7 +72,7 @@ companion.
 - Born-rule measurements are only used where the barrier implementation is
   supported, and the Wilson row remains `n/a` for that observable.
 
-## What It Does Not Claim
+### Historical exclusions (still useful as wording caution only)
 
 - It does not claim architecture-independent full Newton closure.
 - It does not claim a universal distance law on the 2D random geometric row.

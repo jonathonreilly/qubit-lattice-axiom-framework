@@ -1,5 +1,7 @@
 # Signed Gravity APS Boundary-Index `chi_g` Probe Note
 
+**Claim type:** meta
+
 **Date:** 2026-04-25
 **Status:** first concrete APS/spectral-asymmetry candidate pass; source-locking
 bridge still open

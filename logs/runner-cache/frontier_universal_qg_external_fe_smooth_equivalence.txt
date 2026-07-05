@@ -3,7 +3,7 @@ runner: scripts/frontier_universal_qg_external_fe_smooth_equivalence.py
 runner_sha256: 555c4400743e9bdab7ab09afd6dd703444eeeb2b28c677ecfbf3a06abf6583e2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 [EXACT] PASS: the route already has an exact PL weak-form system and an exact PL Sobolev carrier

@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_sakharov_gnewton_induced_scale_2026_06_17.py
+runner_sha256: daa521a1c7c359f790c9b65842c8460b4d942409dbc10f6b495eb2cda17003cc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+=== Seeley-DeWitt coefficients of the Dirac operator (induced gravity) ===
+  a0 ~ (4pi)^-2 * 4    -> induced COSMOLOGICAL CONSTANT, magnitude ~ Lambda^4  (the dominant divergence)
+  a1 ~ (4pi)^-2 * (-1/3) R  -> induced EINSTEIN-HILBERT term (coeff of R), magnitude ~ Lambda^2
+     a1 R-coefficient = -1/3  ( = -R/3 per Dirac spinor content )  -> nonzero, definite magnitude
+
+=== G_Newton is INDUCED (not a free parameter) ===
+  Matching  S_ind ⊃ [(4pi)^-2 |a1| Lambda^2] ∫R√g  to  S_EH = (1/16piG) ∫R√g :
+    1/(16 pi G)  ~  (4pi)^-2 * (1/3) * Lambda^2 * N_f     (N_f = fermion species)
+    =>  G ~ 48 pi^3 / (N_f Lambda^2)  ~  a^2 / N_f        (Lambda ~ 1/a, the lattice cutoff)
+  RESULT: the emergent Newton constant is the LATTICE/PLANCK SCALE ~a^2, set by the cutoff and N_f,
+          NOT an admitted free parameter. (Sakharov induced gravity, realized from log|det D|.)
+
+=== what is HEALTHY vs what is the RESIDUAL ===
+  HEALTHY (established): spin-2 TT stiffness C_TT > 0 (repo induced-determinant runs); polarization
+    sector canonical + linearized-Einstein channel signs (landed canonical-channel note);
+    diffeo-Ward to quintic order;
+    G_Newton induced ~a^2 (above). => the emergent graviton's KINETIC + POLARIZATION structure is healthy.
+  RESIDUAL WALL (NOT closed): the overall EH-sign / SOURCE coupling for G>0 (attractive). In induced
+    gravity the sign of 1/(16piG) is famously content/convention-sensitive (Sakharov sign problem);
+    in this framework it is conditional on the lambda=1 / conformal-class structure of the emergent
+    metric, which ties to the UNAUDITED metric-DOF posit (the emergent metric's conformal factor /
+    record-time axis). The conformal (trace) channel is exactly the wrong-sign mode
+    (landed canonical-channel note:
+    mu_conf < 0), so fixing G>0 = fixing the conformal-class admission. THAT is the named residual.
+
+CONCLUSION: emergent gravity is cracked down to ONE named structural admission -- the metric-DOF /
+conformal-class posit (record-time axis). Above it: healthy spin-2, Einstein signs, G induced ~a^2,
+diffeo-Ward to quintic order. The wall is NOT G_Newton's magnitude (induced) nor the graviton's
+existence (healthy spin-2) -- it is the conformal-sector SIGN = the metric-DOF admission.
+
+----- stderr -----
+

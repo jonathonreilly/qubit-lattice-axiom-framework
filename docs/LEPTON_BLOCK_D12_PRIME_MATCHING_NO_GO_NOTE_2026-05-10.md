@@ -1,6 +1,6 @@
 # Lepton Block D12-Prime Matching - Physical-Operator Open Gate
 
-**Date:** 2026-05-10
+**Date:** 2026-05-10; 2026-06-12 runner/source-surface reroute
 **Claim type:** open_gate
 **Status:** source-note proposal; independent audit owns audit verdict and
 pipeline-derived effective status.
@@ -16,11 +16,16 @@ identity on the current source surface unless an additional physical-operator
 bridge is supplied.
 
 The reason is narrow. In the quark YT chain, the two sides of the matching
-refer to the same composite scalar operator. The relevant source notes define
-that scalar through a color-indexed quark bilinear:
+refer to the same `Q_L` scalar-singlet operator. The current scalar-operator
+authority is:
 
-- [`YUKAWA_COLOR_PROJECTION_THEOREM.md`](YUKAWA_COLOR_PROJECTION_THEOREM.md)
 - [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
+
+The companion color note
+[`YUKAWA_COLOR_PROJECTION_THEOREM.md`](YUKAWA_COLOR_PROJECTION_THEOREM.md)
+now supplies only the finite-dimensional SU(3) channel-fraction
+`f_adj,dim = 8/9`. It explicitly does not supply a scalar wave-function
+normalization, physical Yukawa correction, or lepton operator bridge.
 
 The lepton-block analogy can formally write a hypercharge exchange equation
 and, if a unit lepton scalar matrix element is supplied, it algebraically
@@ -50,9 +55,28 @@ The paired runner verifies:
 - the quark YT matching algebra gives `y_t = g_s/sqrt(6)`;
 - the formal lepton hypercharge analogy would give `y_tau = g_1/sqrt(2)`
   if a unit lepton scalar operator were supplied;
-- the cited YUKAWA source defines the scalar with a color-indexed quark
-  bilinear;
+- the current YT Ward source defines the `Q_L` scalar-singlet operator used
+  by the quark/top matching context;
+- the current YUKAWA color-projection source is only a channel-fraction
+  theorem and is not treated as a scalar-operator authority;
 - the current cited source text does not define a lepton-composite scalar
   bridge;
 - the result remains an open gate, not a retained-grade no-go or mass
   prediction.
+
+## 2026-06-12 runner-cache refresh for re-audit
+
+The audited-conditional re-audit note asked for this runner/cache to be
+refreshed against the current cited authorities, or for the quark-scalar
+premise to be routed explicitly to
+[`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md).
+This source note now makes that routing load-bearing: the current YT Ward
+source supplies `H_unit` as the scalar-singlet bilinear on the `Q_L` block,
+while the current YUKAWA color-projection source remains a non-physical
+channel-fraction boundary. The lepton side remains blocked on a missing
+physical lepton-composite scalar bridge.
+
+The paired runner now reports cited source paths relative to the repo root
+instead of embedding a temporary worktree path in the cache. This refresh is a
+runner-artifact repair only. It does not change this row's status, close
+Lane 6, predict a lepton Yukawa, or claim a retained-grade no-go.

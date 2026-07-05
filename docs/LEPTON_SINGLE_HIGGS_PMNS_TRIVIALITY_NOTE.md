@@ -1,5 +1,7 @@
 # Lepton Single-Higgs PMNS Triviality Theorem
 
+**Claim type:** no_go
+
 **Date:** 2026-04-15
 **Status:** exact obstruction theorem on the shared single-Higgs lepton Yukawa
 lane

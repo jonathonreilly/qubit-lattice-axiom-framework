@@ -1,420 +1,332 @@
 #!/usr/bin/env python3
-"""Bounded Crank-Nicolson Lieb-Robinson diagnostic.
+"""Crank-Nicolson light-cone bridge: cone inheritance with quantified defect.
 
-Companion to `docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md`.
+Companion to docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md
+(2026-06-11 audit-failed repair revision).
 
-This runner provides bounded diagnostic support for the
-Crank-Nicolson time-evolution operator
+The 2026-06-11 audit failed the prior revision: the claimed
+submultiplicativity W_mu(H^n) <= W_mu(H)^n is false (disconnected
+supports), so the quasilocal-overlap bound for
+H_CN = (2/a) arctan(a H/2) and the fixed-step LR envelope built on it
+do not hold. This rewrite verifies the corrected content:
 
-    U_CN = (I - i a_tau H / 2) (I + i a_tau H / 2)^(-1)        (Cayley transform)
+  [A]  Cayley unitarity + the spectral generator identity
+       U_CN = exp(-i a H_CN) (eigenphase match).
 
-on finite-dimensional nearest-neighbor toy Hamiltonians. It does not
-construct the exact framework transfer-matrix logarithm and does not
-close the full light-cone framing audit gap.
+  [W]  WITHDRAWAL WITNESSES (the old claim is false):
+       (i)  commuting three-site H = Z_a + Z_b + Z_c: H_CN carries the
+            three-site term c_3 Z Z Z with the distance-independent
+            closed-form coefficient
+            c_3 = (1/(2a)) [arctan(3a/2) - 3 arctan(a/2)] != 0,
+            so W_mu(H_CN) >= |c_3| e^{mu diam} is unbounded in the
+            configuration diameter.
+       (ii) on a generic finite-range chain, the directly computed
+            Pauli-decomposition overlap weight W_mu(H_CN) EXCEEDS the
+            old claimed bound (2/a) artanh((a/2) W_mu(H)) — numerical
+            falsification of the withdrawn inequality.
+       (iii) flat far tails: the one-step CN commutator at maximal
+            distance is NOT exponentially small relative to mid-chain,
+            so the withdrawn volume-independent fixed-step envelope is
+            unavailable; the tail plateau scales like a^3 under step
+            refinement.
 
-Tests:
+  [C'] CONE-INHERITANCE THEOREM (corrected load-bearing content), all
+       checked as inequalities with margins:
+       (a) per-step defect ||a_CN(A) - a_exact(A)|| <= zeta with
+           zeta = a ||[H,A]|| y^2/(1-y^2), y = a||H||/2 < 1,
+           on an (L, a) grid;
+       (b) flow invariance ||[H, alpha_s(A)]|| = ||[H, A]||;
+       (c) n-step telescoping <= n zeta;
+       (d) cone transfer:
+           ||[a_CN^n(A_x), B_y]|| <= ||[a_t(A_x), B_y]|| + 2||B|| n zeta;
+       (e) fixed-t O(a^2) convergence of the n-step defect.
 
-  CN1: U_CN is unitary (Cayley transform of Hermitian).
+  [D]  small-step agreement of CN and continuous commutators.
 
-  CN2: Per-step matrix-element decay. For random finite-range H with
-       ||a_tau H||_op < 2, |<x|U_CN|y>| decays exponentially in d(x, y)
-       with single-step rate kappa_step >= xi_CN derived in note.
-
-  CN3: n-step velocity bound. For U_CN^n acting over time t = n * a_tau,
-       the support spreads at velocity v_LR_CN <= v_LR(H) / (1 - a_tau J)
-       to leading order; in the a_tau -> 0 limit recovers v_LR(H).
-
-  CN4: Convergence: the Crank-Nicolson commutator
-       || [U_CN^n O_x U_CN^(-n), O_y] ||_op
-       converges to the continuous-time bound
-       ||[exp(itH) O_x exp(-itH), O_y]||_op as a_tau -> 0
-       at fixed t = n * a_tau, with leading error O(a_tau^2 * t).
-
-  CN5: Numerical agreement with the continuous-time microcausality
-       runner (`scripts/axiom_first_microcausality_check.py`) on the
-       same H, in the limit of small a_tau.
+Deterministic (fixed seeds), numpy + scipy, runtime well under one
+minute. Exit code 0 iff TOTAL: PASS=n FAIL=0.
 """
+
 from __future__ import annotations
 
-import math
 import sys
+from itertools import product
 
 import numpy as np
+from scipy.linalg import expm
+
+PASS = 0
+FAIL = 0
 
 
-SEED = 20260509
-PASS_COUNT = 0
-FAIL_COUNT = 0
-RESULTS = []
-
-
-def check(name: str, condition: bool, detail: str = "") -> None:
-    """Record a test result."""
-    global PASS_COUNT, FAIL_COUNT
-    status = "PASS" if condition else "FAIL"
-    if condition:
-        PASS_COUNT += 1
+def check(tag: str, label: str, ok: bool, detail: str = "") -> None:
+    global PASS, FAIL
+    if ok:
+        PASS += 1
+        s = "PASS"
     else:
-        FAIL_COUNT += 1
-    RESULTS.append({"name": name, "status": status, "detail": detail})
-    print(f"  [{status}] {name}")
-    if detail:
-        print(f"         {detail}")
+        FAIL += 1
+        s = "FAIL"
+    print(f"  [{s}] [{tag}] {label}" + (f"  ({detail})" if detail else ""))
+
+
+def section(title: str) -> None:
+    print()
+    print("-" * 76)
+    print(title)
+    print("-" * 76)
 
 
 # ---------------------------------------------------------------------------
-# Hamiltonian and operator helpers (mirror the upstream microcausality runner)
+# builders
 # ---------------------------------------------------------------------------
 
+PX = np.array([[0, 1], [1, 0]], dtype=complex)
+PY = np.array([[0, -1j], [1j, 0]], dtype=complex)
+PZ = np.diag([1.0, -1.0]).astype(complex)
+P1 = {"I": np.eye(2, dtype=complex), "X": PX, "Y": PY, "Z": PZ}
 
-def build_local_hamiltonian(L: int, J: float, seed: int) -> np.ndarray:
-    """Random Hermitian H = sum_z h_z, h_z on (z, z+1), ||h_z||_op = J."""
+
+def chain_H(L: int, J: float, seed: int) -> np.ndarray:
+    """Random NN chain, each bond term with operator norm exactly J."""
     rng = np.random.default_rng(seed)
-    dim = 2 ** L
+    dim = 2**L
     H = np.zeros((dim, dim), dtype=complex)
     for z in range(L - 1):
-        h_local = rng.standard_normal((4, 4)) + 1j * rng.standard_normal((4, 4))
-        h_local = 0.5 * (h_local + h_local.conj().T)
-        eigvals = np.linalg.eigvalsh(h_local)
-        norm = np.max(np.abs(eigvals))
-        if norm > 0:
-            h_local = h_local * (J / norm)
-        left_dim = 2 ** z
-        right_dim = 2 ** (L - z - 2)
-        h_full = np.kron(np.eye(left_dim), np.kron(h_local, np.eye(right_dim)))
-        H = H + h_full
+        hh = rng.standard_normal((4, 4)) + 1j * rng.standard_normal((4, 4))
+        hh = 0.5 * (hh + hh.conj().T)
+        hh *= J / np.linalg.norm(hh, 2)
+        H += np.kron(np.eye(2**z), np.kron(hh, np.eye(2 ** (L - z - 2))))
     return H
 
 
-def site_operator(L: int, site: int) -> np.ndarray:
-    """Pauli Z on `site`, identity elsewhere."""
-    dim_left = 2 ** site
-    dim_right = 2 ** (L - site - 1)
-    sigma_z = np.array([[1.0, 0.0], [0.0, -1.0]], dtype=complex)
-    return np.kron(np.eye(dim_left), np.kron(sigma_z, np.eye(dim_right)))
+def site_op(L: int, s: int, op: np.ndarray) -> np.ndarray:
+    return np.kron(np.eye(2**s), np.kron(op, np.eye(2 ** (L - s - 1))))
 
 
-def expm_hermitian_scalar(c: complex, H: np.ndarray) -> np.ndarray:
-    """exp(c H) for Hermitian H via spectral decomposition."""
-    eigvals, V = np.linalg.eigh(H)
-    return V @ np.diag(np.exp(c * eigvals)) @ V.conj().T
-
-
-def commutator_norm(A: np.ndarray, B: np.ndarray) -> float:
-    return float(np.linalg.norm(A @ B - B @ A, ord=2))
-
-
-def crank_nicolson_step(H: np.ndarray, a_tau: float) -> np.ndarray:
-    """Single Crank-Nicolson step U_CN = (I - i a H/2) (I + i a H/2)^{-1}.
-
-    The Cayley transform of a Hermitian operator is unitary.
-    """
+def cayley(H: np.ndarray, a: float) -> np.ndarray:
+    """U_CN = (I - i a H/2)(I + i a H/2)^{-1}  (note convention)."""
     dim = H.shape[0]
-    I = np.eye(dim, dtype=complex)
-    A = I + 1j * (a_tau / 2.0) * H  # denominator
-    B = I - 1j * (a_tau / 2.0) * H  # numerator
-    return B @ np.linalg.inv(A)
+    return (np.eye(dim) - 0.5j * a * H) @ np.linalg.inv(np.eye(dim) + 0.5j * a * H)
 
 
-# ---------------------------------------------------------------------------
-# Tests
-# ---------------------------------------------------------------------------
+def opn(A: np.ndarray) -> float:
+    return float(np.linalg.norm(A, 2))
 
 
-def test_unitarity(L: int, J: float, seed: int) -> None:
-    """CN1: U_CN unitary for random finite-range H."""
-    print()
-    print("-" * 72)
-    print("CN1: Cayley transform unitarity")
-    print("     U_CN = (I - i a_tau H/2) (I + i a_tau H/2)^(-1)")
-    print("     => U_CN^dagger U_CN = I (because H Hermitian)")
-    print("-" * 72)
-    H = build_local_hamiltonian(L, J, seed)
-    dim = H.shape[0]
-    I = np.eye(dim, dtype=complex)
-    max_dev = 0.0
-    for a_tau in [0.001, 0.01, 0.1]:
-        U = crank_nicolson_step(H, a_tau)
-        dev = float(np.linalg.norm(U.conj().T @ U - I, ord=2))
-        max_dev = max(max_dev, dev)
-        print(f"     a_tau = {a_tau:.4f}:  ||U^dag U - I||_op = {dev:.3e}")
-    check(
-        "CN1 unitarity",
-        max_dev < 1e-9,
-        f"max ||U^dag U - I||_op = {max_dev:.3e} across a_tau in [1e-3, 1e-1]",
-    )
+def comm(A: np.ndarray, B: np.ndarray) -> np.ndarray:
+    return A @ B - B @ A
 
 
-def test_per_step_decay(L: int, J: float, seed: int) -> tuple[float, float]:
-    """CN2: per-step Heisenberg evolution of a local operator decays in d.
-
-    Equivalent to checking that ||[alpha_1step(O_0), O_d]||_op decays
-    exponentially in d for a single Crank-Nicolson step. The per-step
-    bound (note Step 2): with epsilon = a_tau * ||H||_op / 2 < 1,
-
-        ||[alpha_step(O_0), O_d]||_op  <=  C * (epsilon)^d
-
-    so log of commutator scales linearly with d at slope log(epsilon) < 0.
-    """
-    print()
-    print("-" * 72)
-    print("CN2: Per-step commutator decay")
-    print("     For one CN step, ||[U_CN O_0 U_CN^(-1), O_d]|| decays in d")
-    print("     With H finite-range r=1, ||a_tau H/2|| < 1 (sub-critical step)")
-    print("-" * 72)
-    H = build_local_hamiltonian(L, J, seed)
-    H_norm = float(np.linalg.norm(H, ord=2))
-
-    # Test multiple a_tau values and verify decay relative to single-step
-    # commutator at d=1 (the nearest-neighbor reach). We expect
-    #   ratio_d := comm(d=2) / comm(d=1)  ~  O(epsilon)
-    # at small epsilon (Neumann-series leading term).
-    print(f"     ||H||_op = {H_norm:.4f}")
-    print(f"     {'a_tau':>8}  {'eps=a J/2':>10}  {'comm(d=1)':>14}  "
-          f"{'comm(d=2)':>14}  {'ratio_2/1':>10}  {'eps_pred':>10}")
-
-    overall_ok = True
-    for a_tau in [0.01, 0.02, 0.05, 0.1]:
-        eps = a_tau * H_norm / 2.0
-        U = crank_nicolson_step(H, a_tau)
-        Udag = U.conj().T
-        O_0 = site_operator(L, 0)
-        alpha_step_O0 = Udag @ O_0 @ U
-        comms = []
-        for d in [1, 2]:
-            O_d = site_operator(L, d)
-            comm = commutator_norm(alpha_step_O0, O_d)
-            comms.append(comm)
-        ratio = comms[1] / comms[0] if comms[0] > 0 else float("inf")
-        # Theoretical: each additional step in d costs roughly factor of
-        # epsilon (Neumann-series order). Accept ratio < 5*eps as evidence
-        # of Neumann-series scaling (allow factor 5 for chain effects).
-        ratio_ok = ratio < 5.0 * eps + 0.5  # 0.5 absolute slack
-        if not ratio_ok:
-            overall_ok = False
-        print(
-            f"     {a_tau:>8.4f}  {eps:>10.4f}  {comms[0]:>14.6e}  "
-            f"{comms[1]:>14.6e}  {ratio:>10.4f}  {eps:>10.4f}"
-        )
-
-    print()
-    print(f"     [Single-step Neumann bound: ratio_2/1 ~ O(epsilon).]")
-    check(
-        "CN2 per-step Neumann-series decay",
-        overall_ok,
-        f"comm at d=2 scales as O(epsilon) relative to d=1, consistent with "
-        f"single-step v_LR_CN = v_LR(H)/(1 - a_tau J/2)",
-    )
-    return 0.0, 0.0
+def pauli_string(ops: str) -> np.ndarray:
+    M = P1[ops[0]]
+    for ch in ops[1:]:
+        M = np.kron(M, P1[ch])
+    return M
 
 
-def test_n_step_velocity(L: int, J: float, seed: int) -> None:
-    """CN3: U_CN^n velocity bound v_LR_CN <= v_LR(H) (1 + O(a_tau J))."""
-    print()
-    print("-" * 72)
-    print("CN3: n-step Crank-Nicolson velocity bound")
-    print("     For t = n a_tau, ||[U_CN^n O_0 U_CN^(-n), O_d]|| obeys")
-    print("     a Lieb-Robinson bound with v_LR_CN -> 2 e r J as a_tau -> 0.")
-    print("-" * 72)
-    H = build_local_hamiltonian(L, J, seed)
-    r = 1
-    v_LR_H = 2 * math.e * r * J  # toy Hamiltonian-side LR velocity
-    print(f"     Toy Hamiltonian-side v_LR(H) = 2 e r J = {v_LR_H:.4f}")
-    print(f"     for toy r = {r}, J = {J}")
-    O_0 = site_operator(L, 0)
-    norm_O = float(np.linalg.norm(O_0, ord=2))
-
-    # Pick a small a_tau so a_tau * J << 1
-    a_tau_values = [0.005, 0.01, 0.02, 0.05]
-    print()
-    print(
-        f"     {'a_tau':>8}  {'a_tau J':>8}  {'n':>4}  {'t':>6}  {'d':>3}  "
-        f"{'comm':>14}  {'CN bound':>14}  {'OK?':>4}"
-    )
-    bounds_ok = True
-    for a_tau in a_tau_values:
-        a_tau_J = a_tau * J
-        # The CN n-step bound (derived in note):
-        #   ||[U_CN^n O_x U_CN^(-n), O_y]||
-        #     <= 2 ||O_x|| ||O_y|| exp(-d + v_LR_CN |t|)
-        # with v_LR_CN = v_LR(H) / (1 - a_tau J / 2) (single-step numerator
-        # range correction from the Neumann series). For a_tau J small this
-        # reduces to v_LR(H) (1 + a_tau J / 2 + O((a_tau J)^2)).
-        v_LR_CN = v_LR_H / max(1.0 - a_tau_J / 2.0, 1e-9)
-        n_steps = 10
-        t = n_steps * a_tau
-
-        # Build U_CN once and iterate
-        U = crank_nicolson_step(H, a_tau)
-        # propagate O_0 over n steps under Heisenberg evolution by U
-        # alpha_n(O) = (U^dagger)^n O U^n (note the sign convention
-        # for U_CN: U_CN ~ exp(-i a H) when small)
-        Udag = U.conj().T
-        Un = np.eye(U.shape[0], dtype=complex)
-        Undag = np.eye(U.shape[0], dtype=complex)
-        for _ in range(n_steps):
-            Un = U @ Un
-            Undag = Udag @ Undag
-        # alpha_t(O_0) under the CN evolution flowing forward in t is
-        # alpha_t(O) = U_dag^n O U^n  (matches U_t = U^n with U ~ exp(-i a H))
-        alpha_O0 = Undag @ O_0 @ Un
-
-        for d in [3, 4, 5]:
-            O_d = site_operator(L, d)
-            comm = commutator_norm(alpha_O0, O_d)
-            bound = 2 * norm_O * norm_O * math.exp(-d + v_LR_CN * t)
-            ok = comm <= bound + 1e-9
-            if not ok:
-                bounds_ok = False
-            print(
-                f"     {a_tau:>8.4f}  {a_tau_J:>8.3f}  {n_steps:>4}  {t:>6.3f}  "
-                f"{d:>3}  {comm:>14.6e}  {bound:>14.6e}  {'OK' if ok else 'FAIL'}"
-            )
-
-    check(
-        "CN3 n-step velocity bound",
-        bounds_ok,
-        f"v_LR_CN = v_LR(H) / (1 - a_tau J / 2); reduces to v_LR(H) as a_tau -> 0",
-    )
-
-
-def test_continuum_convergence(L: int, J: float, seed: int) -> None:
-    """CN4: U_CN^n -> exp(-itH) as a_tau -> 0 at fixed t = n a_tau."""
-    print()
-    print("-" * 72)
-    print("CN4: Continuum-limit convergence")
-    print("     U_CN(a_tau)^n with t = n a_tau converges to exp(-itH)")
-    print("     with leading error O(a_tau^2 * t * ||H||^3)")
-    print("-" * 72)
-    H = build_local_hamiltonian(L, J, seed)
-    t = 0.1
-    # exact continuous-time evolution (reference)
-    U_exact = expm_hermitian_scalar(-1j * t, H)
-    print(f"     fixed t = {t}")
-    print()
-    print(f"     {'a_tau':>10}  {'n_steps':>8}  {'||U_CN^n - U_exact||':>22}")
-    deviations = []
-    for a_tau in [0.05, 0.02, 0.01, 0.005, 0.002]:
-        n_steps = int(round(t / a_tau))
-        if n_steps < 1:
+def weighted_overlap(Hmat: np.ndarray, L: int, mu: float) -> float:
+    """W_mu of the Pauli support family of Hmat: per-site sum of
+    |coeff| * exp(mu * diam(support)) over strings containing the site,
+    maximized over sites."""
+    dim = 2**L
+    per_site = np.zeros(L)
+    for ops in product("IXYZ", repeat=L):
+        s = "".join(ops)
+        supp = [k for k, ch in enumerate(s) if ch != "I"]
+        if not supp:
             continue
-        U_step = crank_nicolson_step(H, t / n_steps)  # ensure exact t
-        # Compute U_step^n
-        Un = np.eye(U_step.shape[0], dtype=complex)
-        for _ in range(n_steps):
-            Un = U_step @ Un
-        dev = float(np.linalg.norm(Un - U_exact, ord=2))
-        deviations.append((a_tau, dev))
-        print(f"     {a_tau:>10.5f}  {n_steps:>8d}  {dev:>22.6e}")
-
-    # Verify O(a_tau^2) convergence: ratio of deviations between
-    # successive a_tau halvings should be roughly 4
-    ok_count = 0
-    total = 0
-    for i in range(1, len(deviations)):
-        a_old, d_old = deviations[i - 1]
-        a_new, d_new = deviations[i]
-        ratio = (a_old / a_new) ** 2
-        actual = d_old / d_new if d_new > 0 else float("inf")
-        ok = (0.5 * ratio <= actual <= 2.0 * ratio) if d_new > 1e-12 else True
-        total += 1
-        if ok:
-            ok_count += 1
-    check(
-        "CN4 continuum convergence O(a_tau^2)",
-        ok_count >= total - 1,
-        f"O(a_tau^2) scaling verified in {ok_count}/{total} successive halvings",
-    )
-
-
-def test_lr_velocity_agreement(L: int, J: float, seed: int) -> None:
-    """CN5: at small a_tau, the CN commutator matches the continuous one."""
-    print()
-    print("-" * 72)
-    print("CN5: Crank-Nicolson commutator agreement with continuous evolution")
-    print("     ||[U_CN^n O_x U_CN^(-n), O_y]|| -> ||[exp(itH) O_x exp(-itH), O_y]||")
-    print("     in the small-a_tau limit at fixed t = n * a_tau")
-    print("-" * 72)
-    H = build_local_hamiltonian(L, J, seed)
-    t = 0.1
-    O_0 = site_operator(L, 0)
-    print(f"     fixed t = {t}, J = {J}, v_LR(H) = 2 e r J = {2 * math.e * 1 * J:.3f}")
-    print()
-    print(f"     {'a_tau':>10}  {'d':>3}  {'comm_CN':>14}  {'comm_exact':>14}  {'diff':>12}")
-    max_diff = 0.0
-    a_tau = 0.002
-    n_steps = int(round(t / a_tau))
-    a_tau = t / n_steps  # exact
-
-    # Continuous-time reference
-    U_exact = expm_hermitian_scalar(-1j * t, H)
-    Uexact_dag = U_exact.conj().T
-    alpha_exact_O0 = Uexact_dag @ O_0 @ U_exact
-
-    # CN
-    U_step = crank_nicolson_step(H, a_tau)
-    Un = np.eye(U_step.shape[0], dtype=complex)
-    for _ in range(n_steps):
-        Un = U_step @ Un
-    Undag = Un.conj().T
-    alpha_CN_O0 = Undag @ O_0 @ Un
-
-    diffs_ok = True
-    # Theoretical bound: |comm_CN - comm_exact| <= C * a_tau^2 * t * ||H||^3
-    # so for t = 0.1, a_tau = 2e-3, ||H|| ~ J*L = 8: bound ~ 4e-6 * 0.1 * 500 = 2e-4
-    H_norm = float(np.linalg.norm(H, ord=2))
-    abs_tol = 10.0 * (a_tau ** 2) * t * (H_norm ** 3)
-    for d in [2, 3, 4, 5]:
-        O_d = site_operator(L, d)
-        comm_CN = commutator_norm(alpha_CN_O0, O_d)
-        comm_exact = commutator_norm(alpha_exact_O0, O_d)
-        diff = abs(comm_CN - comm_exact)
-        max_diff = max(max_diff, diff)
-        print(
-            f"     {a_tau:>10.5f}  {d:>3}  {comm_CN:>14.6e}  "
-            f"{comm_exact:>14.6e}  {diff:>12.3e}"
-        )
-        # Accept agreement to relative 0.1, OR diff < theoretical floor
-        if comm_exact > 1e-9 and diff > 0.1 * comm_exact and diff > abs_tol:
-            diffs_ok = False
-
-    check(
-        "CN5 LR-bound agreement with continuous evolution",
-        diffs_ok,
-        f"max |comm_CN - comm_exact| = {max_diff:.3e} at a_tau = {a_tau:.3e}, "
-        f"O(a_tau^2) floor ~ {abs_tol:.3e}",
-    )
+        c = abs(np.einsum("ij,ji->", pauli_string(s), Hmat)) / dim
+        if c < 1e-14:
+            continue
+        wgt = c * np.exp(mu * (max(supp) - min(supp)))
+        for k in supp:
+            per_site[k] += wgt
+    return float(per_site.max())
 
 
 def main() -> int:
-    print("=" * 72)
-    print("BOUNDED CRANK-NICOLSON LIEB-ROBINSON DIAGNOSTIC")
-    print("=" * 72)
-    print()
-    print("Cites: MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE")
-    print("       (bounded Hamiltonian-side action-support/J-budget context)")
-    print()
-    print("This runner: finite-volume Crank-Nicolson diagnostics")
-    print("             v_CN = v_LR(H) / (1 - a_tau J / 2) on tested toy models")
-    print("             interpreted as bounded support, not a retained constant")
-    print()
+    print("=" * 76)
+    print("CRANK-NICOLSON LIGHT-CONE BRIDGE -- cone inheritance + withdrawal")
+    print("(2026-06-11 audit-failed repair: W_mu(H^n) <= W_mu(H)^n is FALSE;")
+    print(" corrected content = cone-inheritance theorem CN-C')")
+    print("=" * 76)
 
-    L = 8
-    J = 1.0
-    seed = 20260509
+    # =======================================================================
+    section("[A] Cayley unitarity + spectral generator identity")
+    # =======================================================================
+    for L, seed in ((8, 7), (8, 11)):
+        H = chain_H(L, 1.0, seed)
+        dim = 2**L
+        a = 0.1
+        U = cayley(H, a)
+        check("A", f"unitarity (L={L}, seed={seed})",
+              opn(U.conj().T @ U - np.eye(dim)) < 1e-12)
+        w, P = np.linalg.eigh(H)
+        U_spec = P @ np.diag(np.exp(-2j * np.arctan(a * w / 2))) @ P.conj().T
+        check("A", f"U_CN = exp(-i a H_CN) spectrally (L={L}, seed={seed})",
+              opn(U - U_spec) < 1e-11)
 
-    test_unitarity(L, J, seed)
-    test_per_step_decay(L, J, seed)
-    test_n_step_velocity(L, J, seed)
-    test_continuum_convergence(L, J, seed)
-    test_lr_velocity_agreement(L, J, seed)
+    # =======================================================================
+    section("[W] withdrawal witnesses -- the old quasilocality claim is false")
+    # =======================================================================
+    # (i) commuting three-site decomposition with distance-independent c_3.
+    a = 0.2
+    Z3sites = [site_op(3, k, PZ) for k in range(3)]
+    Hc = sum(Z3sites)
+    w, P = np.linalg.eigh(Hc)
+    Hcn = P @ np.diag((2 / a) * np.arctan(a * w / 2)) @ P.conj().T
+    ZZZ = Z3sites[0] @ Z3sites[1] @ Z3sites[2]
+    c3 = float(np.real(np.einsum("ij,ji->", ZZZ, Hcn)) / 8.0)
+    c3_closed = (np.arctan(3 * a / 2) - 3 * np.arctan(a / 2)) / (2 * a)
+    check("W", "three-site commuting H: c_3 matches the closed form "
+               "(1/(2a))[arctan(3a/2) - 3 arctan(a/2)]",
+          abs(c3 - c3_closed) < 1e-12, f"c_3 = {c3:.8f}")
+    check("W", "c_3 != 0 (arctan strictly concave) -> H_CN has a genuine "
+               "3-site term at ANY mutual distances; W_mu(H_CN) >= |c_3| "
+               "e^{mu diam} is unbounded in the diameter",
+          abs(c3) > 1e-4, f"|c_3| = {abs(c3):.6f}")
+    c1 = float(np.real(np.einsum("ij,ji->", Z3sites[0], Hcn)) / 8.0)
+    resid = opn(Hcn - c1 * Hc - c3 * ZZZ)
+    check("W", "exact decomposition H_CN = c_1 (Z+Z+Z) + c_3 ZZZ "
+               "(no other terms for the commuting model)",
+          resid < 1e-12, f"residual = {resid:.1e}")
+
+    # (ii) direct numerical falsification of the old artanh bound.
+    L6, a6, mu = 6, 0.2, 0.5
+    H6 = chain_H(L6, 1.0, seed=7)
+    w6, P6 = np.linalg.eigh(H6)
+    H6cn = P6 @ np.diag((2 / a6) * np.arctan(a6 * w6 / 2)) @ P6.conj().T
+    WmuH = weighted_overlap(H6, L6, mu)
+    WmuHcn = weighted_overlap(H6cn, L6, mu)
+    x_mu = (a6 / 2) * WmuH
+    old_bound = (2 / a6) * np.arctanh(x_mu) if x_mu < 1 else float("inf")
+    check("W", "subcritical x_mu < 1 (the old bound's own premise holds here)",
+          x_mu < 1, f"x_mu = {x_mu:.4f}")
+    check("W", "FALSIFIED: computed W_mu(H_CN) EXCEEDS the old claimed bound "
+               "(2/a) artanh(x_mu)",
+          WmuHcn > old_bound,
+          f"W_mu(H_CN) = {WmuHcn:.4f} > old bound = {old_bound:.4f}")
+
+    # (iii) flat far tails at fixed a; tail plateau ~ a^3.
+    L = 10
+    H = chain_H(L, 1.0, seed=7)
+    A0 = site_op(L, 0, PZ)
+    tails = {}
+    for aa in (0.2, 0.1):
+        U = cayley(H, aa)
+        AH = U.conj().T @ A0 @ U
+        tails[aa] = {d: opn(comm(AH, site_op(L, d, PX))) for d in (4, 9)}
+    check("W", "withdrawn fixed-step envelope is unavailable: far tail (d=9) "
+               "is NOT small relative to mid-chain (d=4) at a = 0.2",
+          tails[0.2][9] > 0.25 * tails[0.2][4],
+          f"d=9: {tails[0.2][9]:.3e} vs d=4: {tails[0.2][4]:.3e}")
+    ratio = tails[0.2][9] / tails[0.1][9]
+    check("W", "tail plateau scales like a^3 under refinement "
+               "(a=0.2 -> 0.1 gives ratio ~ 8)",
+          4.0 < ratio < 16.0, f"ratio = {ratio:.2f}")
+
+    # =======================================================================
+    section("[C'] cone-inheritance theorem (corrected content), with margins")
+    # =======================================================================
+    # (a) per-step defect <= zeta on an (L, a) grid.
+    all_y_sub = True
+    for L in (8, 10):
+        H = chain_H(L, 1.0, seed=7)
+        dim = 2**L
+        A0 = site_op(L, 0, PZ)
+        nH = opn(H)
+        cHA = opn(comm(H, A0))
+        for aa in (0.2, 0.1, 0.05):
+            y = aa * nH / 2
+            all_y_sub &= y < 1
+            zeta = aa * cHA * y**2 / (1 - y**2)
+            U = cayley(H, aa)
+            V = expm(-1j * aa * H)
+            d = opn(U.conj().T @ A0 @ U - V.conj().T @ A0 @ V)
+            check("C'", f"(a) per-step defect <= zeta  (L={L}, a={aa})",
+                  d <= zeta, f"defect = {d:.3e}, zeta = {zeta:.3e}")
+    check("C'", "(a) subcriticality y = a||H||/2 < 1 on the whole grid",
+          all_y_sub)
+
+    # (b) flow invariance ||[H, alpha_s(A)]|| = ||[H, A]||.
+    L = 10
+    H = chain_H(L, 1.0, seed=7)
+    A0 = site_op(L, 0, PZ)
+    cHA = opn(comm(H, A0))
+    for s in (0.05, 0.1):
+        Bs = expm(1j * s * H) @ A0 @ expm(-1j * s * H)
+        check("C'", f"(b) ||[H, alpha_s(A)]|| = ||[H, A]|| at s = {s}",
+              abs(opn(comm(H, Bs)) - cHA) < 1e-9,
+              f"|delta| = {abs(opn(comm(H, Bs)) - cHA):.1e}")
+
+    # (c) n-step telescoping.
+    aa = 0.1
+    nH = opn(H)
+    y = aa * nH / 2
+    zeta = aa * cHA * y**2 / (1 - y**2)
+    U = cayley(H, aa)
+    V = expm(-1j * aa * H)
+    for n in (5, 10, 20):
+        Un = np.linalg.matrix_power(U, n)
+        Vn = np.linalg.matrix_power(V, n)
+        dn = opn(Un.conj().T @ A0 @ Un - Vn.conj().T @ A0 @ Vn)
+        check("C'", f"(c) n-step defect <= n zeta  (n = {n})",
+              dn <= n * zeta, f"{dn:.3e} <= {n * zeta:.3e}")
+
+    # (d) cone transfer at n = 10.
+    n = 10
+    Un = np.linalg.matrix_power(U, n)
+    Vn = np.linalg.matrix_power(V, n)
+    Acn = Un.conj().T @ A0 @ Un
+    Aex = Vn.conj().T @ A0 @ Vn
+    ok_all = True
+    worst = ""
+    for d in (2, 4, 6, 8, 9):
+        B = site_op(L, d, PX)
+        lhs = opn(comm(Acn, B))
+        rhs = opn(comm(Aex, B)) + 2 * opn(B) * n * zeta
+        if lhs > rhs + 1e-12:
+            ok_all = False
+            worst = f"violated at d={d}"
+    check("C'", "(d) cone transfer ||[a_CN^n(A),B_d]|| <= ||[a_t(A),B_d]|| "
+                "+ 2||B|| n zeta at every distance (n = 10, t = 1)",
+          ok_all, worst or "all distances satisfied")
+
+    # (e) fixed-t O(a^2) convergence of the n-step defect.
+    t = 1.0
+    dn_by_a = {}
+    for aa2 in (0.1, 0.05):
+        n2 = int(round(t / aa2))
+        U2 = np.linalg.matrix_power(cayley(H, aa2), n2)
+        V2 = np.linalg.matrix_power(expm(-1j * aa2 * H), n2)
+        dn_by_a[aa2] = opn(U2.conj().T @ A0 @ U2 - V2.conj().T @ A0 @ V2)
+    conv_ratio = dn_by_a[0.1] / dn_by_a[0.05]
+    check("C'", "(e) fixed-t defect is O(a^2): halving a quarters the "
+                "n-step defect (ratio in [3, 6])",
+          3.0 < conv_ratio < 6.0,
+          f"defect(a=0.1)/defect(a=0.05) = {conv_ratio:.2f}")
+
+    # =======================================================================
+    section("[D] small-step agreement of CN and continuous commutators")
+    # =======================================================================
+    aa3, n3 = 0.002, 50  # t = 0.1
+    U3 = np.linalg.matrix_power(cayley(H, aa3), n3)
+    V3 = expm(-1j * aa3 * n3 * H)
+    A3 = U3.conj().T @ A0 @ U3
+    A3e = V3.conj().T @ A0 @ V3
+    check("D", "U_CN^n -> exp(-itH) on observables at small a (t = 0.1)",
+          opn(A3 - A3e) < 1e-4, f"defect = {opn(A3 - A3e):.2e}")
+    B2 = site_op(L, 2, PX)
+    check("D", "CN and continuous commutators agree at small a",
+          abs(opn(comm(A3, B2)) - opn(comm(A3e, B2))) < 1e-4,
+          f"|delta| = {abs(opn(comm(A3, B2)) - opn(comm(A3e, B2))):.2e}")
 
     print()
-    print("=" * 72)
-    print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
-    print("=" * 72)
-
-    return 0 if FAIL_COUNT == 0 else 1
+    print("=" * 76)
+    print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+    print("=" * 76)
+    return 0 if FAIL == 0 else 1
 
 
 if __name__ == "__main__":

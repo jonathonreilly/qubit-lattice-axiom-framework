@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_staggered_gbare_trace_surface_bridge_2026_06_06.py
-runner_sha256: 885617f5278cbe5f7c0339d1633b9db0260a5264efd20c532285272859ad356d
+runner_sha256: 2d99d56df2c6938e756299de8032026bbc978b10b3259e5c45c1db7743640543
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.13
@@ -14,6 +14,8 @@ Part 1: source surfaces expose the intended narrow gate
   [PASS] source file exists: docs/L3A_V3_TRACE_SURFACE_BOUNDED_OBSTRUCTION_NOTE_2026-05-07_l3a.md
   [PASS] source file exists: docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md
   [PASS] source file exists: docs/STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md
+  [PASS] source file exists: docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md
+  [PASS] source file exists: docs/NATIVE_GAUGE_CLOSURE_NOTE.md
   [PASS] source file exists: docs/audit/G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md
   [PASS] source file exists: docs/STAGGERED_GBARE_TRACE_SURFACE_BRIDGE_NOTE_2026-06-06.md
   [PASS] N_F note contains: per-site Cl(3) bivector SU(2) and the SU(2) sub-block of su(3) on V_3
@@ -35,6 +37,16 @@ Part 1: source surfaces expose the intended narrow gate
   [PASS] label no-go contains: no canonical species-identification bijection
   [PASS] label no-go contains: C_3 orbit of bijections
   [PASS] label no-go contains: labeling-convention premise
+  [PASS] graph-first SU(3) note contains: graph-native `su(2)` relations from the selected-axis shift/parity pair
+  [PASS] graph-first SU(3) note contains: the joint commutant has dimension `10`
+  [PASS] graph-first SU(3) note contains: with compact semisimple part `su(3)`
+  [PASS] graph-first SU(3) note contains: closes the structural graph-first route to `su(3)`
+  [PASS] graph-first SU(3) note contains: hypercharge-like
+  [PASS] native gauge note contains: graph-first selected-axis structural `su(3)` theorem
+  [PASS] native gauge note contains: audit-ratified positive theorem at
+  [PASS] native gauge note contains: native cubic Cl(3) / su(2)  plus  graph-first structural su(3)
+  [PASS] native gauge note contains: Wilson gauge dynamics
+  [PASS] native gauge note contains: downstream phenomenology
   [PASS] promotion panel contains: per-site spin double cover
   [PASS] promotion panel contains: gauge su(3) lives on `V_3 = C^3`
   [PASS] promotion panel contains: same induced scale
@@ -49,6 +61,8 @@ Part 2: trace-surface algebra is load-bearing
   [PASS] V_full / V_3 trace ratio is exactly 2
   [PASS] V_3 trace surface gives beta=6 at g_bare=1 under standard Wilson convention
   [PASS] Trace-surface choice changes N_F while label permutations do not
+  [PASS] gauge trace on V_3 removes the weak-doublet multiplicity
+  [PASS] full matter trace would double beta-normalization bookkeeping
 
 ----------------------------------------------------------------------------------------
 Part 3: species-label permutations do not change N_F
@@ -75,29 +89,35 @@ Part 4: per-site scale and V_3 sub-block scale match conditionally
 ----------------------------------------------------------------------------------------
 Part 5: lane classifier
 ----------------------------------------------------------------------------------------
-  [PASS] g_bare route requires V_3 physical trace surface
+  [PASS] g_bare route requires the structural V_3 gauge trace surface
   [PASS] g_bare route requires per-site to gauge SU(2) scale bridge
+  [PASS] g_bare trace normalization does not require physical SM-color naming
   [PASS] g_bare route does not require species-label bijection
+  [PASS] graph-first/native-gauge structural su(3) surface is available as context
   [PASS] current staggered parent is still open on source surface
   [PASS] kinetic/algebra closure is only a bounded source-side candidate now
-  [PASS] conditional trace-surface bridge would unlock N_F=1/2 for g_bare
+  [PASS] narrowed trace gate leaves only the scale-transport bridge load-bearing here
 
 ----------------------------------------------------------------------------------------
-Part 6: branch-local note hygiene
+Part 6: source-note hygiene
 ----------------------------------------------------------------------------------------
   [PASS] bridge note contains: bounded support / conditional trace-surface bridge
   [PASS] bridge note contains: not a parent promotion
-  [PASS] bridge note contains: not load-bearing for this trace normalization
+  [PASS] bridge note contains: narrower than full species-label closure and narrower than physical Standard Model color naming
+  [PASS] bridge note contains: structural graph-first `su(3)` carrier on the selected-axis `V_3` surface
+  [PASS] bridge note contains: root-`SU(2)` scale-transport note supplies a finite candidate closure
+  [PASS] bridge note contains: not load-bearing for this trace-normalization statement
   [PASS] bridge note contains: does not have to wait for a forced generation-label bijection
+  [PASS] bridge note contains: or a physical-color naming theorem
   [PASS] bridge note contains: No parent `g_bare` promotion is claimed
-  [PASS] bridge note avoids banned phrase: retained branch-local
-  [PASS] bridge note avoids banned phrase: would become retained
-  [PASS] bridge note avoids banned phrase: promoted to retained
-  [PASS] bridge note avoids banned phrase: retained on the actual surface
-  [PASS] bridge note avoids banned phrase: full retained at this time
+  [PASS] bridge note avoids stale retained-boundary phrase 1
+  [PASS] bridge note avoids stale retained-boundary phrase 2
+  [PASS] bridge note avoids stale retained-boundary phrase 3
+  [PASS] bridge note avoids stale retained-boundary phrase 4
+  [PASS] bridge note avoids stale retained-boundary phrase 5
 
 ========================================================================================
-  TOTAL: PASS=65, FAIL=0
+  TOTAL: PASS=85, FAIL=0
 ========================================================================================
 
 ----- stderr -----

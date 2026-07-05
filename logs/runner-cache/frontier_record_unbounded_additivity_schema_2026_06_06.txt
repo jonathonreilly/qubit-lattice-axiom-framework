@@ -1,17 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py
-runner_sha256: 028698791ef5280ce093929b6fc1a92beea56e10b589fef95936ae93a1ee629c
+runner_sha256: 4bc13140fec7c2a48cf683a1792daf610a1c8c185d8fbd11a240aa95410e9932
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Record unbounded finite-additivity schema
+claim_type_author_hint: open_gate
 actual_current_surface_status: conditional-support
 trace_class: upstream_support
 reachability_to_target: supports
 proposal_allowed: false
 audit_required_before_effective_retained: true
+dependency_repair: minimal_axioms + local_finite_readout_atom_availability_2026-06-17 + self-contained finite word/count/Z^3 proof
+record_history_monoid_parent_load_bearing: false
 
 A. finite Record additivity checks
 [PASS] empty readout is zero
@@ -33,17 +36,34 @@ B. bounded finite prefixes versus unbounded schema
 [PASS] an added finite occupancy cap would re-bound the family
 [PASS] therefore unboundedness is conditional on nonzero records and no fixed finite cap
 
-C. post-record information is not a probability law
+C. self-contained finite word/count construction
+[PASS] finite words concatenate associatively
+[PASS] empty word is the concatenation identity
+[PASS] length is additive under concatenation
 [PASS] realized history has integral counts -- {'0': 2, '1': 4}
+[PASS] count map is a monoid homomorphism -- {'0': 2, '1': 4}
 [PASS] append of a realized 0 updates count exactly -- {'0': 3, '1': 4}
 [PASS] append of a realized 1 updates count exactly -- {'0': 2, '1': 5}
+[PASS] count readout is finitely additive over atom counts
+[PASS] Z^3 line supplies 1 distinct finite slots
+[PASS] Z^3 line supplies 2 distinct finite slots
+[PASS] Z^3 line supplies 8 distinct finite slots
+[PASS] Z^3 line supplies 32 distinct finite slots
+[PASS] finite-bound escape B=2: B+1 distinct slots exist
+[PASS] finite-bound escape B=17: B+1 distinct slots exist
+[PASS] finite-bound escape B=128: B+1 distinct slots exist
+
+D. post-record information is not a probability law
 [PASS] frequencies are normalized readouts from realized counts -- {'0': 0.3333333333333333, '1': 0.6666666666666666}
 [PASS] different histories can have the same count/frequency readout
 [PASS] counts alone do not specify a future production kernel
 [PASS] normalization is undefined before any realized record
 
-D. audit-lane classifier consequences
+E. audit-lane classifier consequences
 [PASS] fixed finite prefix additivity is exact
+[PASS] unbounded schema carries local-availability and supplied-record boundary
+[PASS] local readout-atom availability remains a separate dependency
+[PASS] record-history monoid is parallel context only
 [PASS] unbounded schema is not a production claim
 [PASS] production kernel remains open
 [PASS] probability law remains open
@@ -51,8 +71,28 @@ D. audit-lane classifier consequences
 [PASS] clock/rate remains open
 [PASS] dial selection remains open
 
-SCORECARD: PASS=30 FAIL=0
-VERDICT: Record finite additivity gives exact finite-prefix readout and a conditional unbounded finite-collection schema. The unbounded lift needs supplied nonzero disjoint records; it does not derive production, probability, IID, rates, or a dial.
+F. dependency-edge and supplied-context firewall
+[PASS] source note states open_gate / conditional-support status
+[PASS] source note has post-audit claim-type repair
+[PASS] source note has dependency-edge firewall
+[PASS] source note cites current minimal axiom memo
+[PASS] source note cites local finite readout-atom availability theorem
+[PASS] record-history monoid parent is not a markdown/YAML dependency -- forbidden dependency markers absent
+[PASS] record-history monoid is named as parallel context only
+[PASS] downstream citation rule is explicit
+[PASS] minimal Record language supplies durable realized outcome
+[PASS] minimal Record language withholds readout context and dynamics
+[PASS] source note locally proves finite word/count surface
+[PASS] source note locally proves arbitrary finite Z^3 slots
+[PASS] local availability theorem supplies nonzero readout atoms
+[PASS] local availability theorem does not claim production or physical selection
+[PASS] source note says Record does not supply producer/readout/probability
+[PASS] source note says physical context selection remains open
+[PASS] source note says production is not inferred from slots/readout atoms
+[PASS] downstream retained-authority firewall is explicit
+
+SCORECARD: PASS=63 FAIL=0
+VERDICT: Record finite additivity gives exact finite-prefix readout. The finite word/count and Z^3 arbitrary finite-slot surface is proved locally here, so the record-history monoid parent is not load-bearing. The schema uses the local finite readout-atom availability theorem and still requires supplied realized records; this runner does not derive production, probability, IID, rates, or a dial.
 
 ----- stderr -----
 

@@ -1,0 +1,160 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_cycle_flux_transport_face_inventory_2026_07_01.py
+runner_sha256: 86a5ebbcf9c343e08d50d899cbfdc21fd7976b826acb3eeba571cf910eb0541a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+
+========================================================================================
+PART A - source files and quote pins
+========================================================================================
+[PASS] paired note exists -- docs/ACPHILAMBDA_CYCLE_FLUX_TRANSPORT_FACE_INVENTORY_2026-07-01.md
+[PASS] paired runner exists -- scripts/acphilambda_cycle_flux_transport_face_inventory_2026_07_01.py
+[PASS] fixed-locus source exists -- docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+[PASS] circulant source exists -- docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
+[PASS] radian-bridge source exists -- docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md
+[PASS] fixed-locus pins transverse determinant singlet forcing
+[PASS] fixed-locus pins physical single-summand boundary
+[PASS] radian bridge pins eta_APS witness
+[PASS] radian bridge pins Type-B-to-radian boundary
+[PASS] circulant source pins circulant form
+[PASS] circulant source pins couplings
+
+========================================================================================
+PART B - T-F1 exact conjugate-pair reduction
+========================================================================================
+[PASS] omega is an exact primitive cube root
+[PASS] forced pair conjugate identity j=1
+[PASS] forced pair conjugate identity j=2
+[PASS] forced pair term j=1 equals 1/3
+[PASS] forced pair term j=1 is real
+[PASS] forced pair term j=1 is positive rational
+[PASS] forced pair term j=2 equals 1/3
+[PASS] forced pair term j=2 is real
+[PASS] forced pair term j=2 is positive rational
+[PASS] reversed forced pair has the same per-mode terms
+[PASS] S_sum(1,2) is 2/3
+[PASS] L3(1,2) is 2/9
+[PASS] (1,1) per-mode term j=1 has nonzero imaginary part
+[PASS] (1,1) per-mode term j=2 has nonzero imaginary part
+[PASS] (2,2) per-mode term j=1 has nonzero imaginary part
+[PASS] (2,2) per-mode term j=2 has nonzero imaginary part
+[PASS] S_sum(1,1) is 1/3
+[PASS] S_sum(1,1) rejects 2/3
+[PASS] only trace-free nontrivial pairs are per-mode Green weights
+
+========================================================================================
+PART C - T-F2 exact transport faces
+========================================================================================
+[PASS] L_2 has exact zero row sums
+[PASS] Tr pinv(L_2) equals (N^2-1)/12
+[PASS] pinv(L_2) diagonal equals per-site closed form
+[PASS] L_3 has exact zero row sums
+[PASS] Tr pinv(L_3) equals (N^2-1)/12
+[PASS] pinv(L_3) diagonal equals per-site closed form
+[PASS] L_4 has exact zero row sums
+[PASS] Tr pinv(L_4) equals (N^2-1)/12
+[PASS] pinv(L_4) diagonal equals per-site closed form
+[PASS] L_5 has exact zero row sums
+[PASS] Tr pinv(L_5) equals (N^2-1)/12
+[PASS] pinv(L_5) diagonal equals per-site closed form
+[PASS] L_6 has exact zero row sums
+[PASS] Tr pinv(L_6) equals (N^2-1)/12
+[PASS] pinv(L_6) diagonal equals per-site closed form
+[PASS] L_7 has exact zero row sums
+[PASS] Tr pinv(L_7) equals (N^2-1)/12
+[PASS] pinv(L_7) diagonal equals per-site closed form
+[PASS] L_8 has exact zero row sums
+[PASS] Tr pinv(L_8) equals (N^2-1)/12
+[PASS] pinv(L_8) diagonal equals per-site closed form
+[PASS] L_3 eigenvalues are {0,3,3}
+[PASS] Tr pinv(L_3) is 2/3
+[PASS] pinv(L_3) diagonal entries are 2/9
+[PASS] cycle resistance formula holds for N=2
+[PASS] Kirchhoff route holds for N=2
+[PASS] distance polynomial sum holds for N=2
+[PASS] cycle resistance formula holds for N=3
+[PASS] Kirchhoff route holds for N=3
+[PASS] distance polynomial sum holds for N=3
+[PASS] cycle resistance formula holds for N=4
+[PASS] Kirchhoff route holds for N=4
+[PASS] distance polynomial sum holds for N=4
+[PASS] cycle resistance formula holds for N=5
+[PASS] Kirchhoff route holds for N=5
+[PASS] distance polynomial sum holds for N=5
+[PASS] cycle resistance formula holds for N=6
+[PASS] Kirchhoff route holds for N=6
+[PASS] distance polynomial sum holds for N=6
+[PASS] LPL=L pinv sanity for N=3
+[PASS] PLP=P pinv sanity for N=3
+[PASS] LPL=L pinv sanity for N=4
+[PASS] PLP=P pinv sanity for N=4
+[PASS] LPL=L pinv sanity for N=5
+[PASS] PLP=P pinv sanity for N=5
+[PASS] exact spectral face holds for N=2
+[PASS] exact spectral face holds for N=3
+[PASS] exact spectral face holds for N=4
+[PASS] exact spectral face holds for N=6
+[PASS] wrong closed form (N^2+1)/12 fails at N=3
+[PASS] Tr pinv(L_4) is 5/4
+[PASS] Tr pinv(L_4) rejects 2/3
+[PASS] 3-path graph Laplacian has trace pinv 4/3
+[PASS] 3-path graph Laplacian rejects 2/3
+
+========================================================================================
+PART D - T-F3 arithmetic
+========================================================================================
+[PASS] Phi = 3 delta gives 2/3
+[PASS] Phi equals Tr pinv(L_3)
+[PASS] delta equals the per-site return amplitude
+[PASS] all N=3 return amplitudes equal delta
+[PASS] wrong c=1/2 member gives delta=1/9
+[PASS] wrong c=1/2 member rejects per-site return amplitude
+
+========================================================================================
+PART E - note discipline
+========================================================================================
+[PASS] note contains required pin: the fixed-defect density is the generation ring's per-site return amplitude
+[PASS] note contains required pin: the equation itself remains the wall; this note types it
+[PASS] note contains required pin: W_cycle_holonomy_value
+[PASS] note contains required pin: unaudited context
+[PASS] note contains required pin: not a terminal no-go
+[PASS] note contains ### N1
+[PASS] note contains ### N2
+[PASS] note contains ### N3
+[PASS] note contains ### N4
+[PASS] note contains ### N5
+[PASS] note contains ### N6
+[PASS] note contains ### N7
+[PASS] note contains ### N8
+[PASS] note excludes forbidden phrase: only route
+[PASS] note excludes forbidden phrase: last route
+[PASS] note excludes forbidden phrase: exhausted
+[PASS] note excludes forbidden phrase: closes the route
+[PASS] note excludes forbidden phrase: PDG
+[PASS] note excludes forbidden phrase: new wall
+[PASS] note declares canonical bounded_theorem claim type
+[PASS] note does not use runner PASS as source status
+[PASS] note does not lean on PR #4783 as authority
+[PASS] note uses no unlisted W_ wall identifiers -- W_cycle_holonomy_value, W_defect_identity_unit
+[PASS] markdown-link inventory has exactly the three origin/main doc targets
+[PASS] in-flight basename appears in text: ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01
+[PASS] in-flight basename is not a markdown target: ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01
+[PASS] in-flight basename appears in text: ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01
+[PASS] in-flight basename is not a markdown target: ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01
+[PASS] in-flight basename appears in text: ACPHILAMBDA_REAL_HOLONOMY_LOCUS_IDENTITY_2026-07-01
+[PASS] in-flight basename is not a markdown target: ACPHILAMBDA_REAL_HOLONOMY_LOCUS_IDENTITY_2026-07-01
+[PASS] status-authority header is standard
+[PASS] paired runner is linked
+[PASS] note excludes preserved-token meta-language
+[PASS] note excludes record-requirement meta-language
+[PASS] note excludes local-instruction meta-language
+[PASS] note line count is in requested band -- 242
+[PASS] runner line count is in requested band -- 287
+
+TOTAL: PASS=127 FAIL=0
+
+----- stderr -----
+

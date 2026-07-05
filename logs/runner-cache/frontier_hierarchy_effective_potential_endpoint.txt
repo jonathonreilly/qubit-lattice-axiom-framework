@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_effective_potential_endpoint.py
-runner_sha256: 8d62ba73358a0cba1d39be7dfee1562e078da470e1de6f97b822bdb58fab1228
-timeout_sec: 600
+runner_sha256: 8faf455e096a8d4c57f8fcf7933f6674449a92c89248d34e41c6110d0e432a09
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.00
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 Hierarchy effective-potential endpoint theorem
@@ -75,5 +75,6 @@ PART 4: DIMENSION-4 ENDPOINT CORRECTION
 ==============================================================================
 SCORECARD: 7 pass, 0 fail out of 7
 ==============================================================================
+
 ----- stderr -----
 

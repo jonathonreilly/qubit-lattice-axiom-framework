@@ -31,14 +31,18 @@ algebra (its Eq. T1):
 ```
 
 This bridge note discharges the *dependency-routing* half of that repair
-target: it identifies the two load-bearing dependencies of `(T1)`
-explicitly and shows each is now a **registered** source — one a
-registered Tier-A derivation target, one a retained-grade narrow
-theorem. It then makes the narrow re-audit case that, with both deps
-routed to registered sources, a clean audit of the parent row resolves
-to the registered Tier-A-bounded class rather than leaving an unregistered
-conditional blocker. It does **not** re-prove the full parent, does **not**
-close `AC_φλ`, and does **not** set status.
+target: it identifies the two load-bearing context inputs of `(T1)`
+explicitly and routes them to **registered** sources. Dep 1 routes to a
+registered Tier-A derivation target. Dep 2 has two separable pieces: the
+abstract `β`–`g_bare` rescaling/F-flat algebra, and the canonical
+finite-link coordinate convention denoted `g_bare = 1`. The first piece
+routes to a retained-grade narrow theorem; the second routes to the
+retained finite-link rigidity theorem. It then makes the narrow re-audit
+case that, with the convention edge exposed as a one-hop authority, a
+clean audit of the parent row resolves to the registered Tier-A-bounded
+class rather than leaving an unregistered conditional blocker. It does
+**not** re-prove the full parent, does **not** close `AC_φλ`, and does
+**not** set status.
 
 This note is **distinct from** the recently-landed companion
 `YT_WARD_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md`, which
@@ -84,15 +88,25 @@ class under the published chain rule, until the target is retired by a retained
 derivation. This note routes **into**
 `AC_φλ`; it does **not** close the gate.
 
-### Dep 2 routes to the retained β–g_bare rescaling identity
+### Dep 2 routes to retained rescaling algebra plus finite-link rigidity
 
 The `g_bare = 1` convention is a vacuous rescaling choice: the gauge
 coupling `g_bare` and the Wilson coefficient `β` are tied by
 `β = 2 N_c / g_bare²`, so a joint rescaling `(g_bare, β) → (g_bare/c,
 c² β)` leaves the physics invariant and `g_bare = 1` is merely one point
 on that orbit. The retained algebraic basis for that statement is the
-β–g_bare rescaling abstract identity linked below. The load-bearing
-content of `(T1)` is the **normalized form factor**
+β–g_bare rescaling abstract identity linked below.
+
+The convention edge itself is also exposed one hop: the retained
+finite-link rigidity theorem proves that, after the retained compact
+`SU(3)` subalgebra and Hilbert trace form are fixed, `g_bare = 1`
+denotes the canonical finite-link generator normalization and scalar
+dilation is not an independent coordinate ambiguity. This citation is
+used only for that finite-link convention scope. It is not used as a
+Wilson-action/`β` normalization theorem, a continuum coupling theorem,
+or a phenomenological coupling value.
+
+The load-bearing content of `(T1)` is the **normalized form factor**
 
 ```text
 F := y_t_bare / g_bare = 1 / sqrt(2 N_c) = 1 / sqrt(6),
@@ -120,10 +134,10 @@ on. Nothing is asserted by name. The block map:
 | 6 | `y_t_bare = g_bare/sqrt(6)` reproven two independent ways (same-1PI; Clebsch-Gordan) | parent (T1) |
 | 7 | `β(g/c, N) = c² β(g, N)` and `β·g² = 2N` invariant (sympy exact) | Dep 2 retained basis |
 | 8 | `F = y_t_bare/g_bare` is `g_bare`-flat (`dF/dg_bare = 0`; rescaling-invariant) | Dep 2: `g_bare=1` is a convention |
-| 9 | Dep 1 is a registered Tier-A derivation target; Dep 2's basis is retained-grade | dependency registration |
-| 10 | Clean bounded row with deps {Tier-A target, retained note} is a Tier-A-bounded candidate | re-audit case arithmetic |
+| 9 | Dep 1 is a registered Tier-A derivation target; Dep 2's abstract basis and finite-link convention authority are retained-grade | dependency registration |
+| 10 | Clean bounded row with deps {Tier-A target, retained rescaling note, retained convention note} is a Tier-A-bounded candidate | re-audit case arithmetic |
 
-The runner reports `TOTAL: 31 PASS / 0 FAIL`.
+The runner reports `TOTAL: 33 PASS / 0 FAIL`.
 
 ## Re-audit case (not a status assignment)
 
@@ -138,9 +152,10 @@ audit lane. It assigns no status.
    one-hop dependency is a registered Tier-A derivation target is a candidate
    for the registered Tier-A-bounded class, not an unregistered conditional
    blocker.
-3. Dep 2's algebraic basis is retained-grade, and the load-bearing
-   normalized form factor `F = 1/sqrt(6)` is `g_bare`-flat, so the
-   `g_bare = 1` choice introduces no unregistered admission.
+3. Dep 2's algebraic basis is retained-grade, the finite-link convention
+   authority is now a one-hop retained-grade dependency, and the
+   load-bearing normalized form factor `F = 1/sqrt(6)` is `g_bare`-flat,
+   so the `g_bare = 1` choice introduces no unregistered admission.
 4. Therefore the recorded repair target's
    `dependency_not_retained` condition is met by registered sources, and
    the case is that a re-run of the restricted audit can evaluate
@@ -200,7 +215,15 @@ not assert any `effective_status`.
   — the retained-grade abstract algebraic basis that `g_bare = 1` is a
   rescaling convention (`β = 2 N_c / g_bare²`, `β(g/c) = c² β(g)`,
   product `β·g² = 2N` invariant). Supplies the registered source for
-  Dep 2.
+  Dep 2's F-flat rescaling algebra.
+- [`G_BARE_RIGIDITY_THEOREM_NOTE.md`](G_BARE_RIGIDITY_THEOREM_NOTE.md)
+  (`g_bare_rigidity_theorem_note`) — retained bounded finite-link
+  coordinate rigidity: once the compact `SU(3)` subalgebra and Hilbert
+  trace form are fixed, `g_bare = 1` denotes the canonical finite-link
+  generator normalization and scalar dilation is not an independent
+  coordinate ambiguity. Supplies the one-hop convention edge for Dep 2;
+  no Wilson-action/`β`, continuum, or phenomenological coupling claim is
+  imported.
 
 ## References (plain-text; not upstream dependency edges)
 

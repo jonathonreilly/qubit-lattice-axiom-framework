@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gravity_premise4_refractive_index_from_dispersion.py
-runner_sha256: 32d83b10448eb2f2651fb17ce79f914ffc7ea181f83ea801182757d763a55c4d
+runner_sha256: 5644a85e3e36bacfd8d230c593c2d3ead91aa349414938df960f058ccf283830
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.69
+elapsed_sec: 0.75
 status: ok
 ----- stdout -----
 PASS T1 exact axis-lattice map: k(phi)=arccos(1-(E-phi)/2)
@@ -17,16 +17,27 @@ PASS T4b alpha*b -> const (= 2a): confirms 1/b form
 PASS T5 CONTROL: no field coupling (n=1) -> zero deflection (teeth)
 PASS T6 geometric deflection slope = -1 (1/b), distinct from Kubo b^-2 (#3191)
 PASS SOURCE note names the 2026-06-08 audit-targeted boundary repair
-PASS SOURCE note states Fermat n=k/k0 remains supplied eikonal bridge
+PASS SOURCE note names the 2026-06-16 source-side eikonal bridge repair
+PASS SOURCE note names the 2026-06-18 scalar-shift sign bridge repair
+PASS SOURCE note cites the fixed-energy eikonal index bridge
+PASS SOURCE note routes H_s=H_0+sI through scalar-shift sign bridge
+PASS SOURCE note states bounded bridge hypotheses explicitly
+PASS SOURCE note leaves physical normalization and nonlinear metric closure open
 PASS SOURCE note contains exact arccos lattice relation
 PASS AUTH self_consistency_forces_poisson is retained_bounded
 PASS AUTH finite_rank_source_to_metric is retained_bounded
+PASS AUTH weak-field source-response bridge is retained_bounded
+PASS SCALAR-SHIFT sign bridge note and runner are present
+PASS SCALAR-SHIFT sign bridge proves H_s=H_0+sI and phi_action=c_E s
+PASS EIKONAL bridge note and runner are present
+PASS EIKONAL bridge proves n=k/k0 as phase-count identity
 PASS KUBO comparison runner and cache are present
 PASS KUBO comparison cache is SHA-fresh
-PASS KUBO comparison packet status is exposed as unaudited
+PASS AUTH lattice Green support is retained_bounded
+PASS KUBO comparison packet status is exposed as retained_bounded comparison-only authority
 PASS SOURCE no full premise-4 promotion
 
-TOTAL: PASS=19 FAIL=0
+TOTAL: PASS=30 FAIL=0
 
 ----- stderr -----
 

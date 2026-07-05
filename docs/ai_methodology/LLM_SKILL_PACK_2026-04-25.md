@@ -35,6 +35,7 @@ and follow.
 |---|---|---|
 | `ai-physics-lane-builder` | Open and develop a bounded physics lane with note/runner pairing, status labels, and landing gates. | [`skills/ai-physics-lane-builder/SKILL.md`](./skills/ai-physics-lane-builder/SKILL.md) |
 | `physics-loop` | Plan, launch, resume, and checkpoint long-running theoretical-physics loops on clean science block branches, targeting hard residuals with stretch attempts, stuck fan-out, and review PRs. | [`skills/physics-loop/SKILL.md`](./skills/physics-loop/SKILL.md) |
+| `workhorse` | Coordinate the standing execution split: supervisor plans/specs/reviews/lands while a high-reasoning text worker executes bounded drafting, computation, extraction, and read-only lenses. | [`skills/workhorse/SKILL.md`](./skills/workhorse/SKILL.md) |
 | `physics-claim-reviewer` | Perform adversarial review of a candidate theorem, runner, or branch and classify findings into actionable dispositions. | [`skills/physics-claim-reviewer/SKILL.md`](./skills/physics-claim-reviewer/SKILL.md) |
 | `review-loop` | Run an iterative physics review loop across code/runners, claim boundaries, imported values, Nature-grade retention, and repo-governance surfaces. | [`skills/review-loop/SKILL.md`](./skills/review-loop/SKILL.md) |
 | `audit-loop` | Run adversarial claim audits from the repo audit queue, apply accepted verdicts through the audit ledger, verify, commit, and push one claim at a time. | [`skills/audit-loop/SKILL.md`](./skills/audit-loop/SKILL.md) |
@@ -51,17 +52,20 @@ For a new AI-assisted theoretical-physics project:
    that needs durable state, assumption/import accounting, no-go memory,
    route-portfolio selection, first-principles stretch attempts, unattended
    checkpoints, milestone review, and review PRs before later integration;
-3. use `physics-claim-reviewer` to attack the note, runner, assumptions, and
+3. use `workhorse` inside science commands when bounded execution should be
+   delegated to a high-reasoning text worker while planning, final judgment,
+   review, and landing stay with the supervising agent;
+4. use `physics-claim-reviewer` to attack the note, runner, assumptions, and
    claim boundary, including semantic bridge failures;
-4. use `review-loop` when a branch needs repeated parallel pressure across
+5. use `review-loop` when a branch needs repeated parallel pressure across
    runners, claim status, imported values, support-only demotions, and
    Nature-grade retention gates;
-5. use `audit-loop` when a scoped claim is ready for an audit-ledger verdict,
+6. use `audit-loop` when a scoped claim is ready for an audit-ledger verdict,
    including fresh-context clean audits, third-auditor conflict resolution, and
    timeout-safe compute-required skips;
-6. use `reviewer-backpressure-integrator` to convert findings into repo-facing
+7. use `reviewer-backpressure-integrator` to convert findings into repo-facing
    changes without burying useful negative results;
-7. use `methodology-paper-synthesizer` to preserve the process as reusable
+8. use `methodology-paper-synthesizer` to preserve the process as reusable
    evidence.
 
 These skills are intentionally repo-native and portable. A downstream user can

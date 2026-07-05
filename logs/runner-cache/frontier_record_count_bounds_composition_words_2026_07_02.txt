@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_count_bounds_composition_words_2026_07_02.py
+runner_sha256: a183be669d431bdbad005c2de3dc35e2fd1fdf6aac6675fdbf547e431b28ca10
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+CHECK 01: PASS — guard: state definition 'A state is a configuration of records.' present in axiom memo
+CHECK 02: PASS — guard: 'the locked possibility is invariant under repeated readout' present -- WITHIN-readout stability, NOT persistence across events (grounds the record-persistence premise correction, not record-persistence premise)
+CHECK 03: PASS — guard: 'For any finite collection of pairwise-disjoint records, scalar readout' present -- a CONDITIONAL on a supplied finite collection, NOT a bound on a configuration's record total
+CHECK 04: PASS — guard: dynamics disclaimer 'provide a record-production process' present (axioms supply no record-production process; grounds record-production premise as dynamics-shaped)
+CHECK 05: PASS — guard: occupancy note 'double-registration update squares registered weights' present (the ONE flow step read in a supplied chart)
+CHECK 06: PASS — guard: occupancy tri-guise 'the same binary, not three independent binaries' present (f, g are two charts of one binary; mixed words need chart-mix)
+CHECK 07: PASS — guard: axiom Open Gates 'physical persistence dynamics' present (persistence is outside the axioms; grounds record-persistence premise as un-adopted dynamics-shaped)
+CHECK 08: PASS — pure-letter event premise: a single-chart word is a pure iterate of the ONE flow read in ONE supplied chart -- 'ff'=f^2, 'gg'=g^2, 'fff'=f^3 (component chart -> f, slot chart -> g)
+CHECK 09: PASS — pure-letter event premise / chart-mix: single-chart f.f=8r^4, g.g=r^4 vs mixed f.g=2r^4, g.f=4r^4 -- mixed leading coeffs {2,4} match neither single chart {8,1}; a mixed word is not an iterate of any single supplied flow
+CHECK 10: PASS — record-production premise (production): NAMED, dynamics-shaped (memo disclaims a record-production process); independent content -- a zero-production history [0,0,0] advances the word (3 events) yet registers no record, so production is not supplied by the letters alone
+CHECK 11: PASS — record-persistence premise (persistence): NAMED, dynamics-shaped (memo Open Gates lists 'physical persistence dynamics' outside the axioms; readout-invariance is WITHIN-readout only, NOT persistence -- category-error correction); independent content -- a produce-then-vanish history [+1,-1,+1,-1] has records vanish so the count 0 ceases to bound the 4 events
+CHECK 12: PASS — finite-collection-containment premise (scoping/FIN): the axioms do NOT bound a configuration's record total (an all-sites-recorded Z^3 config satisfies every quoted sentence); finiteness enters only via the supplied finite collection -- N_rec = |collection| for arbitrarily large supplied sizes (no cap), and the registered records are contained in the counted collection
+CHECK 13: PASS — record-count bound: under record-production premise+record-persistence premise+finite-collection-containment premise, after k events at least k contained persistent records exist (k <= N_rec) for every prefix (monotone induction)
+CHECK 14: PASS — record-count bound: tightness -- a unit, persistent, contained history achieves k = N_rec exactly (the bound is tight)
+CHECK 15: PASS — record-count bound: drop record-production premise -> unbounded words with no new records: events advance k while N_rec stays fixed, so k > N_rec (zero-production witness [0,0,0])
+CHECK 16: PASS — record-count bound: drop record-persistence premise -> records vanish and the count ceases to bound: produce-then-vanish witness [+1,-1,+1,-1] has count 0 < 4 events
+CHECK 17: PASS — record-count bound: drop finite-collection-containment premise containment -> registrations land outside the counted collection: 3 registrations, 1 outside, so N_rec = 2 < 3 = k
+CHECK 18: PASS — finite dial enumeration: word count over {f,g} for length<=k equals 2^(k+1)-2 exactly (k=1..4: 2,6,14,30)
+CHECK 19: PASS — finite dial enumeration: each length-m word has fixed-point polynomial of degree 2^m; sum-of-degrees(k<=2)=20 is a finite exact dial-set-cardinality bound
+CHECK 20: PASS — finite dial enumeration: p_f(r) = f(r)-r = 2r^2 - r = r*(2r-1) -- positive fixed point r = 1/2
+CHECK 21: PASS — finite dial enumeration: p_g(r) = g(r)-r = r^2 - r = r*(r-1) -- positive fixed point r = 1
+CHECK 22: PASS — finite dial enumeration: p_{f.g}(r) = f(g(r))-r = 2r^4 - r = r*(2r^3 - 1) -- mixed word; positive fixed point = root of 2r^3-1, the 2^(-1/3) dial point, arises only under chart-mix
+CHECK 23: PASS — finite dial enumeration: p_{g.f}(r) = g(f(r))-r = 4r^4 - r = r*(4r^3 - 1) -- mixed word; positive fixed point = root of 4r^3-1, the 2^(-2/3) dial point, arises only under chart-mix
+CHECK 24: PASS — finite dial enumeration: p_{f.f}(r) = 8r^4 - r = r*(2r-1)*(4r^2+2r+1); cofactor discriminant 4-16=-12 < 0 with positive leading coeff => positive-definite, NO new positive root -- f.f adds only r = 1/2
+CHECK 25: PASS — finite dial enumeration: p_{g.g}(r) = r^4 - r = r*(r-1)*(r^2+r+1); cofactor discriminant 1-4=-3 < 0 with positive leading coeff => positive-definite, NO new positive root -- g.g adds only r = 1; the length-<=2 dial set is COMPLETE
+CHECK 26: PASS — finite dial enumeration: length-<=2 dial set complete and distinct -- gcd(2r^3-1, 4r^3-1) is a nonzero constant (coprime cubics), r=1/2,1 are not roots of either cubic, 1/2 != 1: the four points {1/2, 1, 2^(-1/3), 2^(-2/3)} are pairwise distinct ({1/2,1} unconditional, {2^(-1/3),2^(-2/3)} conditional on chart-mix)
+CHECK 27: PASS — finite dial enumeration: strict monotonicity of a*r^3-1 -- identity a*(r2^3-r1^3) = a*(r2-r1)*(r2^2+r2*r1+r1^2) holds exactly (a in {2,4}), and for 0<r1<r2 each factor > 0 so the difference > 0; this REPLACES the invalid general-cubic 'negative at 1/2 + positive leading coeff' sign inference
+CHECK 28: PASS — finite dial enumeration: boundary >= 1/2 VIA STRICT MONOTONICITY -- (2r^3-1)@1/2 = -3/4, (4r^3-1)@1/2 = -1/2 both < 0 with positive leading coeff; since each cubic is strictly increasing on r>0 (identity above) its unique positive root exceeds 1/2; 1/2, 1 are >= 1/2 exactly (related moduli-word context boundary spot-checked)
+CHECK 29: PASS — corollary: f^m(r) = 2^(2^m - 1) * r^(2^m) exactly by coefficient-level induction (base f^1, step, and direct m=1..4); f^m - r = r*(coeff*r^(2^m-1) - 1) whose cofactor is a strictly increasing monomial-minus-1, so the UNIQUE positive fixed point is r = 1/2 for every m
+CHECK 30: PASS — corollary: g^m(r) = r^(2^m) exactly by coefficient-level induction (base g^1, step, and direct m=1..4); g^m - r = r*(r^(2^m-1) - 1), so the UNIQUE positive fixed point is r = 1 for every m
+CHECK 31: PASS — corollary headline: under any single supplied dictionary the dial set is exactly {1/2} (component, all f) or {1} (slot, all g) for all word lengths; the mixed points 2^(-1/3), 2^(-2/3) are neither 1/2 nor 1, so they require chart-mix and are not pure-word fixed points
+CHECK 32: PASS — residue map: bounded note present and contains all governance/residue markers ['not adopted', 'no wall is closed', 'owner/science decision', 'chart-mix', 'record persistence', 'does not bound', 'Context-only surfaces']
+CHECK 33: PASS — residue map: the note enumerates the residue list -- record production, finite-collection containment, per-step dictionary supply, realized history/step count, and banked context with no adopted premise status
+TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+

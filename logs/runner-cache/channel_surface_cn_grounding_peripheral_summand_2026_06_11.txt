@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/channel_surface_cn_grounding_peripheral_summand_2026_06_11.py
+runner_sha256: 8f04ef2c7daca03dfb98f7b12881a9ac7bc23d87aa50cb168c1d80fc4a326b42
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+PART A -- T1 step 1: the operator-Schwarz inequality for unital CP maps
+==============================================================================
+  [PASS] A1 Phi(a)^dag Phi(a) <= Phi(a^dag a) (PSD gap) on 30 random unital CP Stinespring maps  --  unitality is what powers the Schwarz step
+
+PART B -- T1: doubly stochastic ticks are Hilbert-Schmidt contractions
+==============================================================================
+  [PASS] B1 mixed-unitary (doubly stochastic) superoperators have HS-norm <= 1 (30 instances)  --  N derived: the channel envelope is a THEOREM on this class
+  [PASS] B2 the proof chain holds stepwise: tr(Phi(a)^dag Phi(a)) <= tr(Phi(a^dag a)) = tr(a^dag a)  --  Schwarz (unitality) then trace preservation
+
+PART C -- hostile witnesses: both hypotheses of T1 are load-bearing
+==============================================================================
+  [PASS] C1 drop unitality: amplitude damping (TP, NOT unital) has HS-norm > 1  --  HS-norm = 1.10746
+  [PASS] C2 drop trace preservation: a unital CP non-TP map with HS-norm > 1 exists (witness found)  --  HS-norm = 1.01768: both T1 hypotheses are load-bearing
+
+PART D -- T2: the peripheral unitary summand of a contraction
+==============================================================================
+  [PASS] D1 unimodular eigenvectors of a contraction are joint T^dag eigenvectors (the equality case)  --  the mechanism that makes the peripheral part an orthogonal reducing summand
+  [PASS] D2 the split T = U_per (+) T_cnu holds with cnu spectral radius < 1 (20 constructed contractions)
+
+PART E -- T3: the canonical conjugacy lives on the summand (C derived there)
+==============================================================================
+  [PASS] E1 Theta = W o K o W^{-1} on the peripheral summand gives Theta U_per Theta^{-1} = U_per^{-1}  --  the spectrum-reflection cycle's converse: C holds on the summand with NO transport premise
+
+PART F -- T4: large-separation data factors through the peripheral summand
+==============================================================================
+  [PASS] F1 asymptotic window recovery error tracks the cnu suppression rho^{n0} (offsets 2, 6, 10)  --  n0=2: err=3.18e-02 (bound 2.14e-01); n0=6: err=2.13e-03 (bound 1.34e-02); n0=10: err=2.54e-04 (bound 8.37e-04)
+  [PASS] F2 hostile witness: a fully cnu tick's covariance dies geometrically -- no band for the chain to read  --  band persistence = the peripheral summand is nonempty: the sharpened P4 residual
+
+PART G -- composition with the transcription cycle (no tension)
+==============================================================================
+  [PASS] G[eps=0.3] the transcription model's channel is doubly stochastic (HS-norm 1); its registered sector is a strict contraction (peripheral part empty for eps > 0)  --  |eig M| = [0.90848 0.90848]: the faithful limit eps -> 0 is the peripheral restoration
+  [PASS] G[eps=0.15] the transcription model's channel is doubly stochastic (HS-norm 1); its registered sector is a strict contraction (peripheral part empty for eps > 0)  --  |eig M| = [0.97741 0.97741]: the faithful limit eps -> 0 is the peripheral restoration
+
+==============================================================================
+SCORECARD: PASS=12 FAIL=0
+==============================================================================
+
+----- stderr -----
+

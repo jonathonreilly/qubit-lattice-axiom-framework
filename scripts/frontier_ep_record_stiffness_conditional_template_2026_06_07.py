@@ -81,11 +81,16 @@ def main() -> int:
     text = note.read_text()
     required = [
         "**Claim type:** open_gate",
+        "2026-06-12 audit firewall: continuous-energy context supplied",
         "supplied",
         "conditional",
         "not a WEP closure",
         "does not derive",
         "packet-width",
+        "No new\naxiom, Tier-A admission, WEP closure, or audit-status change",
+        "2026-06-16 weak-field source/readout interface split",
+        "EP-S3a",
+        "EP-S3b",
     ]
     check(
         "source note keeps the open-gate conditional boundary",

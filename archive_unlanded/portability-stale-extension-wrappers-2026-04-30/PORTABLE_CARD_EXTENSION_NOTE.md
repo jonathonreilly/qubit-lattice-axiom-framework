@@ -1,7 +1,14 @@
-# Portable Card Extension Note
+# Historical Portable Card Extension Packet (Retracted)
 
-**Date:** 2026-04-06  
+**Date:** 2026-04-06
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/portability-stale-extension-wrappers-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
 
 ## Retraction
 
@@ -15,28 +22,41 @@ Do NOT cite the numerical results, tables, or threshold values in the original c
 
 ---
 
+## 2026-06-16 archive firewall
+
+This archived packet is historical / diagnostic and retired as evidence. It is
+not a retained portable-package extension onto the three-family card and not
+authority that the three-family card, sign portability, distance-law
+portability, or portable package dependencies are audit-clean.
+
+The safe residue is narrow: the family-3 distance-law harness appears to have a
+source-placement coverage failure, so that harness output is not by itself a
+physics contradiction. This archive does not prove the portable core across
+all three families.
+
 ## Artifact Chain
 
-- [`scripts/PORTABLE_CARD_EXTENSION_COMPARE.py`](/Users/jonreilly/Projects/Physics/scripts/PORTABLE_CARD_EXTENSION_COMPARE.py)
-- [`logs/PORTABLE_CARD_EXTENSION_COMPARE_2026-04-06.txt`](/Users/jonreilly/Projects/Physics/logs/PORTABLE_CARD_EXTENSION_COMPARE_2026-04-06.txt)
-- retained three-family card:
-  - [`docs/THREE_FAMILY_CARD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/THREE_FAMILY_CARD_NOTE.md)
+- [`scripts/PORTABLE_CARD_EXTENSION_COMPARE.py`](../../scripts/PORTABLE_CARD_EXTENSION_COMPARE.py)
+- [`logs/PORTABLE_CARD_EXTENSION_COMPARE_2026-04-06.txt`](../../logs/PORTABLE_CARD_EXTENSION_COMPARE_2026-04-06.txt)
+- historical three-family card dependency:
+  - [`docs/THREE_FAMILY_CARD_NOTE.md`](../../docs/THREE_FAMILY_CARD_NOTE.md)
 - portability context:
-  - [`docs/PORTABLE_PACKAGE_EXTENSION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/PORTABLE_PACKAGE_EXTENSION_NOTE.md)
-  - [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SIGN_PORTABILITY_INVARIANT_NOTE.md)
+  - [`docs/PORTABLE_PACKAGE_EXTENSION_NOTE.md`](../../docs/PORTABLE_PACKAGE_EXTENSION_NOTE.md)
+  - [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](../../docs/SIGN_PORTABILITY_INVARIANT_NOTE.md)
 - distance-law context:
-  - [`docs/DISTANCE_LAW_BREAKPOINT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DISTANCE_LAW_BREAKPOINT_NOTE.md)
-  - [`docs/DISTANCE_LAW_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DISTANCE_LAW_PORTABILITY_NOTE.md)
+  - [`docs/DISTANCE_LAW_BREAKPOINT_NOTE.md`](../../docs/DISTANCE_LAW_BREAKPOINT_NOTE.md)
+  - [`docs/DISTANCE_LAW_PORTABILITY_NOTE.md`](../../docs/DISTANCE_LAW_PORTABILITY_NOTE.md)
 
-## Question
+## Historical question (retracted)
 
-Does the new three-family card extend the portable package cleanly beyond the
-first two grown families, and is the distance law the main holdout subset
-rather than the card itself?
+The old question asked whether the three-family card extends the portable
+package beyond the first two grown families. This archive does not prove that
+extension.
 
-## Comparison
+## Historical comparison table summary (retracted)
 
-The retained three-family card stays clean on the portable core:
+The old body asserted that the three-family card stays clean on the portable
+core:
 
 - the portable core remains retained on all three families
 - family 3 (`drift = 0.50`, `restore = 0.90`) joins the same portable package
@@ -51,16 +71,16 @@ The distance-law probe is separated explicitly from that card:
   because the probe never samples distinct distance rows on the family-3
   geometry
 
-## Safe Read
+## Historical safe-read text (retracted and narrowed)
 
-The narrow read is now:
+The old narrow read was:
 
 - the portable package extends cleanly onto the three-family card
 - the distance law is still the stricter holdout subset
 - on the current family-3 probe, the open question is measurement coverage,
   not a physics contradiction
 
-## Exact Mismatch
+## Historical mismatch observation (narrow)
 
 - the distance-law window used by the current probe does not map to distinct
   interior source positions on family 3
@@ -69,8 +89,9 @@ The narrow read is now:
 - it is evidence that the current distance-law harness needs a family-relative
   source-placement fix before it can be treated as a physics test on that row
 
-## Final Verdict
+## Historical final verdict (retracted)
 
-**retained narrow extension positive: the three-family card extends the
-portable package cleanly, while the distance law remains the main holdout
-subset on the current family-3 probe**
+The old retained-positive verdict is retracted. A future repair must audit or
+repair the card and portability dependencies, restore the frozen log, and
+replace the hard-coded table with a runner that recomputes the portable-core
+checks for all three families.

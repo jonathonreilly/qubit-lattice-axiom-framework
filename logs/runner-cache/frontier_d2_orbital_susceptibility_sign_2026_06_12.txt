@@ -1,0 +1,97 @@
+===== runner cache v1 =====
+runner: scripts/frontier_d2_orbital_susceptibility_sign_2026_06_12.py
+runner_sha256: de6a4b324c36d6e816febe8d5fa0f2d3daea09c9705aad06373dd0b8e8cc815c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.48
+status: ok
+----- stdout -----
+Free staggered square-lattice orbital susceptibility
+Scope: exact Harper spectra plus Gauss-Legendre quadrature; beta-formula import unused.
+Named gap unchanged: gauge self-energy.
+Statuses: pipeline-derived; audit lane grades.
+HANDLE-FLUX COROLLARY
+Analytic reason: a handle flux shifts the cycle momentum.  In the thermodynamic density the Brillouin-torus integral of the resulting kx total derivative vanishes by the same per-cycle integration-by-parts identity as the 1D vanishing-identity note; it is not the plaquette-B response.
+HANDLE L= 8 m=0.5 mu=0.0 T=0.4 N_x*Omega''=-2.828516e-03 boundary-gauge=-2.828516e-03
+HANDLE L=12 m=0.5 mu=0.0 T=0.4 N_x*Omega''=-1.413894e-04 boundary-gauge=-1.413894e-04
+HANDLE L=16 m=0.5 mu=0.0 T=0.4 N_x*Omega''=-9.457501e-06 boundary-gauge=-9.457500e-06
+PASS handle-flux wraparound probe: distributed-cycle and boundary-cycle gauges give the same handle curvature :: diffs L8=0.000e+00, L12=1.693e-11, L16=7.401e-13
+PASS finite-size handle-flux density decreases from L=8 to L=12 and is below 1e-3 at L=12 :: |L8|=2.829e-03, |L12|=1.414e-04
+PASS handle-flux size-doubling probe: L=16 handle-flux density remains below the L=8 value and below 1e-3 :: |L8|=2.829e-03, |L16|=9.458e-06
+CONTROL: B=0 SUPER-CELL REPRODUCES ZERO-FIELD OMEGA
+B0_CONTROL q=16 order=64 m=0.5 mu=0.5 T=0.4 Omega_dense=-1.177159948300414e+00 Omega_zero=-1.177159948300414e+00 diff=0.000e+00
+PASS B=0 q-supercell Harper spectrum reproduces independent folded zero-field Omega to 1e-12 :: diff=0.000e+00
+PLAQUETTE-FIELD RESPONSE AND SIGN TABLE
+Columns: chi16, chi24, chi32 are finite-B values with B_q=2*pi/q; chi_inf is the B->0 Richardson estimate from q=24,32.
+CHI m=0.2 T=0.2 mu=0.0 chi16=-3.82174496e-02 chi24=-3.92351680e-02 chi32=-3.96566278e-02 chi_inf=-4.01985048e-02 rel24_32=1.063e-02
+CHI m=0.2 T=0.2 mu=0.5 chi16=-2.77962775e-02 chi24=-2.77604475e-02 chi32=-2.77186763e-02 chi_inf=-2.76649704e-02 rel24_32=1.505e-03
+CHI m=0.2 T=0.2 mu=1.0 chi16=-1.31651327e-02 chi24=-1.28863940e-02 chi32=-1.27932176e-02 chi_inf=-1.26734193e-02 rel24_32=7.231e-03
+CHI m=0.2 T=0.2 mu=1.5 chi16=-3.39425189e-03 chi24=-3.20760453e-03 chi32=-3.16610743e-03 chi_inf=-3.11275401e-03 rel24_32=1.294e-02
+CHI m=0.2 T=0.2 mu=2.0 chi16=+3.73433489e-03 chi24=+4.09199269e-03 chi32=+4.10464126e-03 chi_inf=+4.12090372e-03 rel24_32=3.082e-03
+CHI m=0.2 T=0.4 mu=0.0 chi16=-2.85549198e-02 chi24=-2.88930238e-02 chi32=-2.90200859e-02 chi_inf=-2.91834516e-02 rel24_32=4.378e-03
+CHI m=0.2 T=0.4 mu=0.5 chi16=-2.39561020e-02 chi24=-2.40940254e-02 chi32=-2.41416542e-02 chi_inf=-2.42028911e-02 rel24_32=1.973e-03
+CHI m=0.2 T=0.4 mu=1.0 chi16=-1.42727199e-02 chi24=-1.41971946e-02 chi32=-1.41672743e-02 chi_inf=-1.41288055e-02 rel24_32=2.107e-03
+CHI m=0.2 T=0.4 mu=1.5 chi16=-4.84677625e-03 chi24=-4.74468154e-03 chi32=-4.70817155e-03 chi_inf=-4.66123014e-03 rel24_32=7.695e-03
+CHI m=0.2 T=0.4 mu=2.0 chi16=+2.89143224e-03 chi24=+2.95777063e-03 chi32=+2.98074235e-03 chi_inf=+3.01027741e-03 rel24_32=7.707e-03
+CHI m=0.5 T=0.2 mu=0.0 chi16=-3.25261548e-02 chi24=-3.31649365e-02 chi32=-3.34193439e-02 chi_inf=-3.37464391e-02 rel24_32=7.613e-03
+CHI m=0.5 T=0.2 mu=0.5 chi16=-2.75397949e-02 chi24=-2.77005405e-02 chi32=-2.77451339e-02 chi_inf=-2.78024684e-02 rel24_32=1.607e-03
+CHI m=0.5 T=0.2 mu=1.0 chi16=-1.45873484e-02 chi24=-1.43300829e-02 chi32=-1.42394699e-02 chi_inf=-1.41229675e-02 rel24_32=6.323e-03
+CHI m=0.5 T=0.2 mu=1.5 chi16=-4.24250143e-03 chi24=-4.02947878e-03 chi32=-3.98232477e-03 chi_inf=-3.92169818e-03 rel24_32=1.170e-02
+CHI m=0.5 T=0.2 mu=2.0 chi16=+3.17194270e-03 chi24=+3.50754058e-03 chi32=+3.52010653e-03 chi_inf=+3.53626276e-03 rel24_32=3.570e-03
+CHI m=0.5 T=0.4 mu=0.0 chi16=-2.64559740e-02 chi24=-2.67409176e-02 chi32=-2.68473090e-02 chi_inf=-2.69840980e-02 rel24_32=3.963e-03
+CHI m=0.5 T=0.4 mu=0.5 chi16=-2.29999502e-02 chi24=-2.31427067e-02 chi32=-2.31929715e-02 chi_inf=-2.32575977e-02 rel24_32=2.167e-03
+CHI m=0.5 T=0.4 mu=1.0 chi16=-1.46460403e-02 chi24=-1.45933214e-02 chi32=-1.45717023e-02 chi_inf=-1.45439062e-02 rel24_32=1.481e-03
+CHI m=0.5 T=0.4 mu=1.5 chi16=-5.51961147e-03 chi24=-5.42263072e-03 chi32=-5.38776601e-03 chi_inf=-5.34293996e-03 rel24_32=6.429e-03
+CHI m=0.5 T=0.4 mu=2.0 chi16=+2.29066551e-03 chi24=+2.35819365e-03 chi32=+2.38155904e-03 chi_inf=+2.41160027e-03 rel24_32=9.811e-03
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.2, T=0.2, mu=0.0 :: rel=1.063e-02
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.2, T=0.2, mu=0.5 :: rel=1.505e-03
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.2, T=0.2, mu=1.0 :: rel=7.231e-03
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.2, T=0.2, mu=1.5 :: rel=1.294e-02
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.2, T=0.2, mu=2.0 :: rel=3.082e-03
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.2, T=0.4, mu=0.0 :: rel=4.378e-03
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.2, T=0.4, mu=0.5 :: rel=1.973e-03
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.2, T=0.4, mu=1.0 :: rel=2.107e-03
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.2, T=0.4, mu=1.5 :: rel=7.695e-03
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.2, T=0.4, mu=2.0 :: rel=7.707e-03
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.5, T=0.2, mu=0.0 :: rel=7.613e-03
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.5, T=0.2, mu=0.5 :: rel=1.607e-03
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.5, T=0.2, mu=1.0 :: rel=6.323e-03
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.5, T=0.2, mu=1.5 :: rel=1.170e-02
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.5, T=0.2, mu=2.0 :: rel=3.570e-03
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.5, T=0.4, mu=0.0 :: rel=3.963e-03
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.5, T=0.4, mu=0.5 :: rel=2.167e-03
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.5, T=0.4, mu=1.0 :: rel=1.481e-03
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.5, T=0.4, mu=1.5 :: rel=6.429e-03
+PASS Richardson-in-B consistency: chi(24) and chi(32) agree within 2% at m=0.5, T=0.4, mu=2.0 :: rel=9.811e-03
+PASS sampled sign region at m=0.2, T=0.2: diamagnetic(-) on sampled mu [0.0, 1.5] :: eps=4.020e-08, margin=3.113e-03
+PASS sampled sign region at m=0.2, T=0.2: paramagnetic(+) on sampled mu [2.0, 2.0] :: eps=4.020e-08, margin=4.121e-03
+SIGN_PATTERN m=0.2 T=0.2: diamagnetic(-) for mu in [0.0, 1.5]; paramagnetic(+) for mu in [2.0, 2.0]; sign-boundary intervals: (1.5, 2.0)
+PASS sampled sign region at m=0.2, T=0.4: diamagnetic(-) on sampled mu [0.0, 1.5] :: eps=2.918e-08, margin=4.661e-03
+PASS sampled sign region at m=0.2, T=0.4: paramagnetic(+) on sampled mu [2.0, 2.0] :: eps=2.918e-08, margin=3.010e-03
+SIGN_PATTERN m=0.2 T=0.4: diamagnetic(-) for mu in [0.0, 1.5]; paramagnetic(+) for mu in [2.0, 2.0]; sign-boundary intervals: (1.5, 2.0)
+PASS sampled sign region at m=0.5, T=0.2: diamagnetic(-) on sampled mu [0.0, 1.5] :: eps=3.375e-08, margin=3.922e-03
+PASS sampled sign region at m=0.5, T=0.2: paramagnetic(+) on sampled mu [2.0, 2.0] :: eps=3.375e-08, margin=3.536e-03
+SIGN_PATTERN m=0.5 T=0.2: diamagnetic(-) for mu in [0.0, 1.5]; paramagnetic(+) for mu in [2.0, 2.0]; sign-boundary intervals: (1.5, 2.0)
+PASS sampled sign region at m=0.5, T=0.4: diamagnetic(-) on sampled mu [0.0, 1.5] :: eps=2.698e-08, margin=5.343e-03
+PASS sampled sign region at m=0.5, T=0.4: paramagnetic(+) on sampled mu [2.0, 2.0] :: eps=2.698e-08, margin=2.412e-03
+SIGN_PATTERN m=0.5 T=0.4: diamagnetic(-) for mu in [0.0, 1.5]; paramagnetic(+) for mu in [2.0, 2.0]; sign-boundary intervals: (1.5, 2.0)
+PASS Gauss-Legendre quadrature doubles from 64 to 128 with <1e-8 relative Omega drift over the sign-table workload (measured 3e-9; T=0.2 Fermi sharpness sets the floor) :: worst_rel=2.957e-09; Omega(0) q=32 m=0.2 mu=0.0 T=0.2 64=-8.366127598858466e-01 128=-8.366127569291769e-01
+CONTROL: LANDAU-GAUGE ORIGIN SHIFT
+GAUGE q=24 order=128 origin_shift=0.37 Omega0=-1.484641609880391e+00 Omega_shift=-1.484641609880391e+00 diff=2.220e-16
+PASS shifting the Landau-gauge origin leaves Omega(B) invariant to 1e-10 :: diff=2.220e-16
+CONTROL: T=50 HIGH-T SUPPRESSION
+HIGHT m=0.2 T=50.0 mu=0.0 chi24=-3.31169763e-07 chi32=-3.31998224e-07 chi_inf=-3.33063388e-07
+HIGHT m=0.2 T=50.0 mu=0.5 chi24=-3.31136381e-07 chi32=-3.31965050e-07 chi_inf=-3.33030481e-07
+HIGHT m=0.2 T=50.0 mu=1.0 chi24=-3.31037272e-07 chi32=-3.31865526e-07 chi_inf=-3.32930424e-07
+HIGHT m=0.2 T=50.0 mu=1.5 chi24=-3.30872023e-07 chi32=-3.31700023e-07 chi_inf=-3.32764595e-07
+HIGHT m=0.2 T=50.0 mu=2.0 chi24=-3.30640631e-07 chi32=-3.31467802e-07 chi_inf=-3.32531308e-07
+HIGHT m=0.5 T=50.0 mu=0.0 chi24=-3.31164164e-07 chi32=-3.31993063e-07 chi_inf=-3.33058791e-07
+HIGHT m=0.5 T=50.0 mu=0.5 chi24=-3.31130990e-07 chi32=-3.31959520e-07 chi_inf=-3.33024774e-07
+HIGHT m=0.5 T=50.0 mu=1.0 chi24=-3.31031674e-07 chi32=-3.31859629e-07 chi_inf=-3.32924141e-07
+HIGHT m=0.5 T=50.0 mu=1.5 chi24=-3.30866424e-07 chi32=-3.31694494e-07 chi_inf=-3.32759155e-07
+HIGHT m=0.5 T=50.0 mu=2.0 chi24=-3.30634618e-07 chi32=-3.31462273e-07 chi_inf=-3.32526401e-07
+PASS T=50 kills the plaquette-field susceptibility on the sampled mu,m grid :: max|chi_T50|=3.331e-07, max|chi_table|=4.020e-02
+TOTAL: PASS=35 FAIL=0
+
+----- stderr -----
+

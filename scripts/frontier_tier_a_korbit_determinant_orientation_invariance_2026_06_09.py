@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-"""Bounded K/CPT determinant and AC_phi_lambda orientation invariance checks.
+"""Bounded K/CPT orientation-invariance checks for the AC_phi_lambda gate.
 
 The runner verifies the algebraic content of
-docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md.
-It intentionally does not claim that the Tier-A registry has changed.
+docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md
+(orientation-only since 2026-06-10; the note states the lemma on the supplied
+circulant class stipulated in-note; the determinant-character lemma moved to
+THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md
+with its own runner). It intentionally does not claim that the Tier-A
+registry has changed.
 """
 from __future__ import annotations
 
@@ -16,9 +20,7 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md"
-THETA_NOTE = DOCS / "STRONG_CP_THETA_ZERO_NOTE.md"
 AXIOM_NOTE = DOCS / "MINIMAL_AXIOMS_2026-06-05.md"
-STAGGERED_NOTE = DOCS / "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
 
 PASS = 0
 FAIL = 0
@@ -42,12 +44,11 @@ def flat(text: str) -> str:
 
 
 def main() -> int:
-    print("K/CPT determinant and AC_phi_lambda orientation invariance checks")
+    print("K/CPT orientation invariance checks for the AC_phi_lambda gate")
     print("=" * 76)
 
     note_text = NOTE.read_text(encoding="utf-8")
     note_flat = flat(note_text)
-    theta_text = THETA_NOTE.read_text(encoding="utf-8")
     axiom_text = AXIOM_NOTE.read_text(encoding="utf-8")
     axiom_flat = flat(axiom_text)
 
@@ -55,19 +56,8 @@ def main() -> int:
     check(
         "source does not claim a completed Tier-A registry change",
         "does not edit the audit-lane-owned Tier-A registry" in note_flat
-        and "It does not discharge the strong-CP mass-orientation premise by itself" in note_flat
+        and "It does not strip the `AC_phi_lambda` admission by itself" in note_flat
         and "registry has already changed" in note_flat,
-    )
-    check(
-        "source names the retained-bridge requirement for strong-CP mass orientation",
-        "a later retained bridge must show" in note_flat
-        and "physical `arg det(M_u M_d)` contribution" in note_flat
-        and "positive-real mass orientation remains an explicit condition" in note_flat,
-    )
-    check(
-        "source preserves the Record axiom boundary",
-        "does not supply the determinant readout context" in note_flat
-        and "A record supplies no readout context" in axiom_flat,
     )
     check(
         "source avoids the rejected theta shortcut",
@@ -85,66 +75,15 @@ def main() -> int:
         and "No new axiom, primitive, admission" in note_text,
     )
 
-    # Confirm the target strong-CP note still contains the selected-surface premise.
-    theta_has_action_slot = (
-        "F̃F" in theta_text
-        or "FtildeF" in theta_text
-        or "CP-odd" in theta_text
-    )
-    theta_has_mass_orientation = (
-        "positive real quark-mass orientation" in theta_text
-        or "positive real mass orientation" in theta_text
-        or "arg det(M_u M_d) = 0" in theta_text
-    )
+    # The moved determinant lemma must be pointed at, not restated as load-bearing.
     check(
-        "live strong-CP note still names action-slot and positive-mass selected-surface premises",
-        theta_has_action_slot and theta_has_mass_orientation,
+        "source points at the moved determinant-character lemma note",
+        "THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md"
+        in note_text
+        and "not load-bearing here" in note_flat,
     )
 
-    # Determinant K/CPT action.
-    x, y = sp.symbols("x y", real=True)
-    z = x + sp.I * y
-    check(
-        "K/CPT conjugation maps determinant z to conj(z)",
-        sp.simplify(sp.conjugate(z) - (x - sp.I * y)) == 0,
-    )
-
-    # Hostile guard: orbit invariance alone gives even phase dependence.
-    phi = sp.symbols("phi", real=True)
-    check(
-        "cos(arg z) is K-invariant, so orbit invariance alone gives evenness not phase erasure",
-        sp.simplify(sp.cos(-phi) - sp.cos(phi)) == 0
-        and "cos(arg z)" in note_text
-        and "evenness, not phase erasure" in note_flat,
-    )
-
-    # Standard determinant-character family.
-    k, t1, t2 = sp.symbols("k theta_1 theta_2", real=True)
-    phase_mult_residual = sp.simplify(
-        sp.exp(sp.I * k * (t1 + t2))
-        - sp.exp(sp.I * k * t1) * sp.exp(sp.I * k * t2)
-    )
-    check(
-        "phase character exp(i k arg z) is multiplicative when phases add",
-        phase_mult_residual == 0,
-    )
-
-    invariance_residual = sp.exp(sp.I * k * phi) - sp.exp(-sp.I * k * phi)
-    linear_coeff = sp.series(invariance_residual, phi, 0, 2).removeO().coeff(phi, 1)
-    k_solutions = sp.solve(sp.Eq(linear_coeff, 0), k)
-    check(
-        "K-invariance of the determinant-character phase for all phi forces k = 0",
-        k_solutions == [0],
-        detail=f"linear coefficient {linear_coeff}; solutions {k_solutions}",
-    )
-
-    r, s = sp.symbols("r s", positive=True, real=True)
-    phase_free_readout = r**s
-    check(
-        "surviving determinant-character readout is phase-free and depends only on |det|",
-        sp.simplify(phase_free_readout - r**s) == 0
-        and "phase-free functions of" in note_text,
-    )
+    phi = sp.symbols("phi", real=True)  # noqa: F841 (kept for parity with prior versions)
 
     # AC_phi_lambda orientation algebra.
     a, B, delta = sp.symbols("a B delta", positive=True, real=True)
@@ -207,9 +146,14 @@ def main() -> int:
     )
 
     check(
-        "staggered-Dirac source still names AC_phi_lambda as admitted-context residual",
-        "AC_φλ" in STAGGERED_NOTE.read_text(encoding="utf-8")
-        and "admitted-context" in STAGGERED_NOTE.read_text(encoding="utf-8"),
+        "source stipulates the supplied circulant class in-note",
+        "supplied circulant class" in note_flat
+        and "H(delta) = a I + B exp(i delta) C + B exp(-i delta) C^T" in note_flat,
+    )
+    check(
+        "staggered gate is cited as context only, not a load-bearing markdown link",
+        "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md" in note_text
+        and "](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)" not in note_text,
     )
 
     # Markdown dependency hygiene for the source note.

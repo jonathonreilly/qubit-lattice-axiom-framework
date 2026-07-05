@@ -1,27 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/frontier_open_shell_invariant_locus_no_derived_selector_2026_06_10.py
+runner_sha256: fbe859788427c7132d36ba7f8e573c82b6b248942b9f2fec0c6cbfbad58a1809
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 70.01
+status: ok
+----- stdout -----
 ==============================================================================
 Part 1  (T1) invariant-locus neutrality on the deg-20 manifold: 4 x singlet (+) 2 x octet
 ==============================================================================
   [PASS] the ground manifold is SU(3)-invariant as a subspace ([Gamma(g), P_gs] = 0)
   [PASS] rep content: Casimir eigenvalues on the manifold are 0 (x4) and 12 (x16, the adjoint value in the un-halved-lambda normalization) => 4 x singlet (+) 2 x octet  (singlets 4, octet states 16)
   [PASS] the commutant of the SU(3) action on the manifold has dimension EXACTLY 4^2 + 2^2 = 20 (multiplicity squares)  (commutant dim 20)
-  [PASS] EVERY invariant density on the manifold is neutral at EVERY site (full commutant basis + 50 random invariant PSD states; all-site deviation < 1e-12)  (worst all-site dev 1.7e-16)
+  [PASS] EVERY invariant density on the manifold is neutral at EVERY site (full commutant basis + 50 random invariant PSD states; all-site deviation < 1e-12)  (worst all-site dev 2.2e-16)
   [PASS] the equipartition invariant state P_gs/20 (the maximally-mixed invariant state; EXISTENCE witness only, no realization claimed, no weight assigned): all-site neutral  (D = 5.6e-17)
-  [PASS] P_gs/20 is NOT the twirl of the broken exhibit in disguise: the broken state's exact group average has a NON-flat manifold spectrum (the equipartition witness is not the demoted uniform-weight move applied to anything)  (twirl spectrum spread 0.065)
+  [PASS] P_gs/20 is NOT the twirl of the broken exhibit in disguise: the broken state's exact group average has a NON-flat manifold spectrum (the equipartition witness is not the demoted uniform-weight move applied to anything)  (twirl spectrum spread 0.346)
 ==============================================================================
 Part 2  (T2) equivariance (exact); the invariant locus is dynamically stable
 ==============================================================================
   [PASS] [Gamma(g), H] = 0: the named hopping is exactly equivariant
   [PASS] [Gamma(g), I-B site-occupation projectors] = 0: the color-blind instrument class is exactly equivariant  (max dev 0.0e+00)
   [PASS] [Gamma(g), Casimir/counts] = 0 (conservation laws equivariant)
-  [PASS] STABILITY: after a Hamiltonian step + an I-B record step an invariant state is STILL invariant (hence still all-site neutral by T1) -- preservation only, consistent with blocks 05-07  (invariance dev 1.3e-17, D 5.6e-17)
+  [PASS] STABILITY: after a Hamiltonian step + an I-B record step an invariant state is STILL invariant (hence still all-site neutral by T1) -- preservation only, consistent with blocks 05-07  (invariance dev 1.9e-17, D 5.6e-17)
 ==============================================================================
 Part 3  (T3) the order parameter D: all-site, invariant, registrable, CONTINUOUS
 ==============================================================================
   [PASS] the non-invariant exhibit sits at EXACTLY the ground energy (no derived lifting)
-  [PASS] and departs the locus: D > 0 (purity excess; instance/basis-dependent value, not a physical constant)  (D = 0.0327 (instance artifact))
-  [PASS] D is SU(3)-invariant content (D(g rho g+) = D(rho) exactly): registrable via two-copy invariant estimators per site, worst over sites  (|D(g rho g+) - D(rho)| = 1.1e-16)
-  [PASS] D is CONTINUOUS: the convex family (1-t) rho_broken + t rho_invariant sweeps D smoothly and monotonically to 0 -- the restructured residual is 'the invariant locus vs its complement under a CONTINUOUS order parameter', NOT a binary  (D(t) = [0.0327, 0.0184, 0.0082, 0.0021, 0.0])
-  [PASS] FAITHFULNESS: a manifold state exists whose SITE-0 purity excess is small while the ALL-SITE D is large -- single-site readings are not faithful; the separator must be all-site as defined (search on the restricted manifold)  (site-0 excess 0.00094 vs all-site D 0.0259)
+  [PASS] and departs the locus: D > 0 (purity excess; instance/basis-dependent value, not a physical constant)  (D = 0.0312 (instance artifact))
+  [PASS] D is SU(3)-invariant content (D(g rho g+) = D(rho) exactly): registrable via two-copy invariant estimators per site, worst over sites  (|D(g rho g+) - D(rho)| = 0.0e+00)
+  [PASS] D is CONTINUOUS: the convex family (1-t) rho_broken + t rho_invariant sweeps D smoothly and monotonically to 0 -- the restructured residual is 'the invariant locus vs its complement under a CONTINUOUS order parameter', NOT a binary  (D(t) = [0.0312, 0.017, 0.0074, 0.0018, 0.0])
+  [PASS] FAITHFULNESS: a manifold state exists whose SITE-0 purity excess is small while the ALL-SITE D is large -- single-site readings are not faithful; the separator must be all-site as defined (search on the restricted manifold)  (site-0 excess 0.00064 vs all-site D 0.0304)
 ==============================================================================
 Part 4  (T4) honesty: nothing derived selects either way
 ==============================================================================
@@ -38,3 +46,6 @@ SCOPE: conditional on the realized state lying in the SU(3)-invariant locus
   The equipartition witness P_gs/20 is existence-only and no weight is
   assigned. Conditional on the supplied C^3 carrier, named hopping, and named
   instrument classes. No audit grade is authored here.
+
+----- stderr -----
+

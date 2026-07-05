@@ -1,7 +1,14 @@
 # Shapiro Diamond Frequency Bridge Note
 
-**Date:** 2026-04-06  
+**Date:** 2026-04-06
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
 
 ## Retraction
 
@@ -13,53 +20,62 @@
 
 - **Do not cite warning:** Do NOT cite the numerical results, tables, or threshold values in the original content below as live framework claims. The runners referenced in this note have been superseded or are no longer reproducible at the time of audit. If a future investigation revisits this physics, treat it as starting from scratch rather than as continuation of a "closed no-go".
 
+## 2026-06-16 archive firewall
+
+This archived packet is historical / diagnostic and retired as evidence. The
+body below records a proposed proxy frequency bridge, not a retained
+diamond/NV prediction and not a retained Shapiro scaling law.
+
+Any future repair must construct `phi`, the drive-scale sweep, and normalized
+phase-ramp quantities from generated data after the Shapiro and diamond bridge
+dependencies are audit-clean.
+
 ## Artifact Chain
 
-- [`docs/SHAPIRO_DELAY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SHAPIRO_DELAY_NOTE.md)
-- [`docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md)
-- [`docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md)
-- [`docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md)
-- [`docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md)
-- [`docs/DIAMOND_SENSOR_PREDICTION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_SENSOR_PREDICTION_NOTE.md)
+- [`docs/SHAPIRO_DELAY_NOTE.md`](../../docs/SHAPIRO_DELAY_NOTE.md)
+- [`docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md`](../../docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md)
+- [`docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md`](../../docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md)
+- [`docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md`](../../docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md)
+- [`docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md`](../../docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md)
+- [`docs/DIAMOND_SENSOR_PREDICTION_NOTE.md`](../../docs/DIAMOND_SENSOR_PREDICTION_NOTE.md)
 - retained scaling result anchor:
   - commit `1730b52` (`feat(shapiro): phase scales as s^1.000 (linear in mass), proportional to k`)
 
-## Question
+## Historical question (retracted)
 
-How do we translate the retained `k`-proportional Shapiro scaling into the
-diamond/NV bridge language without turning the proxy result into an absolute
-lab claim?
+The old question asked how to translate a `k`-proportional Shapiro scaling into
+diamond/NV bridge language. This archive does not prove the Shapiro scaling
+premise or the diamond/NV translation.
 
-## Retained Scaling Result
+## Historical supplied scaling assertion (retracted)
 
-The Shapiro delay is not just a phase lag.
-It scales as a phase observable:
+The old body asserted that the Shapiro delay scales as a phase observable:
 
 - phase `~ s^1.000` in source strength / mass proxy
 - phase decreases with impact parameter `b`
 - phase `~ k`, i.e. the delay is chromatic / frequency sensitive
 
-The important part for the bridge is the last one:
+The old body treated the last item as the bridge handle:
 
 - at fixed geometry, the lag grows with the drive wavenumber/frequency scale
 - equivalently, the normalized phase response is the cleanest proxy quantity
 
-## Bridge Translation
+## Historical bridge translation proposal (open)
 
-The diamond bridge card already uses the right language:
+The bridge-card vocabulary proposed here was:
 
 - `X`: in-phase channel
 - `Y`: quadrature channel
 - `phi = atan2(Y, X)`: phase lag
 - phase-ramp slope: spatial accumulation of the lag
 
-The Shapiro scaling adds one more dimension to that language:
+The old note proposed adding a drive-scale dimension to that language:
 
 - the phase lag itself should scale with the drive frequency scale `k`
 - the phase-ramp slope should scale with `k` in the same proxy sense
 - after dividing out the drive scale, the proxy phase response should collapse
 
-So the clean lab-facing translation is:
+As an open future test, a repaired runner would need to:
 
 - hold geometry fixed
 - vary drive frequency / wavenumber
@@ -67,54 +83,52 @@ So the clean lab-facing translation is:
 - check whether `phi / k` and the normalized phase-ramp slope stay roughly
   constant across the retained proxy sweep
 
-That is the frequency-sensitive analog of the existing phase-ramp bridge card.
+This archive does not establish the frequency-sensitive analogue as retained.
 
-## Why This Is Useful
+## Historical motivation (not evidence)
 
-This is a better lab-facing discriminator than raw amplitude alone because:
+The old motivation was that phase/quadrature could be cleaner than raw
+amplitude:
 
 - absolute amplitude still needs external calibration
 - phase and quadrature are naturally normalized observables
-- the retained Shapiro result already says the lag is monotone in slower
-  propagation and proportional to `k`
+- the old Shapiro premise said the lag is monotone in slower propagation and
+  proportional to `k`
 
-So the frequency bridge turns the Shapiro result into a lab-friendly proxy
-prediction:
+The old note proposed a lab-friendly proxy prediction:
 
 - higher drive frequency should produce a proportionally larger phase lag
 - the same geometry should preserve the sign and ordering of the lag
 - the normalized phase response should be cleaner than the raw amplitude
 
-## What Can Be Claimed In-Repo
+## What remains safe as archive-only context
 
-The repo can defensibly say:
+This archived packet may only say:
 
-- the Shapiro delay is portable across the retained grown families
-- the delay is seed-stable and exact-null safe
-- the delay is proportional to `k`
-- the delay is expressible in the same `X / Y / phi` and phase-ramp language
-  used by the diamond bridge card
+- the note proposed a `k`-sweep bridge to test
+- no runner here constructs `phi`, `phi/k`, or phase-ramp collapse from
+  generated data
+- no absolute or proxy-level diamond/NV prediction is retained by this packet
 
-The repo cannot yet say:
+The repo cannot cite this packet for:
 
 - the absolute NV-unit mapping for frequency or phase
 - the lab-specific detectability threshold
 - a calibrated conversion from proxy `k` to microscope readout units
 
-## Narrow Prediction
+## Historical narrow prediction (retracted)
 
-If a diamond/NV setup is driven at multiple frequencies while holding the
-geometry fixed, the clean proxy prediction is:
+The old note predicted that if a diamond/NV setup is driven at multiple
+frequencies while holding geometry fixed:
 
 - `phi` grows approximately linearly with `k`
 - the phase-ramp slope grows approximately linearly with `k`
 - the normalized ratios `phi / k` and slope / `k` are the cleaner quantities
   to compare across runs
 
-That is the proxy-level frequency bridge.
+That proxy-level frequency bridge remains open, not retained.
 
-## Final Verdict
+## Historical final verdict (retracted)
 
-**the retained Shapiro delay is frequency-sensitive in the same phase-language
-as the diamond bridge card: `X / Y / phi` and phase-ramp slope should scale
-with `k`, but the absolute NV calibration remains external**
+The old final verdict is retracted. This packet is not evidence for a retained
+frequency-sensitive Shapiro delay or a diamond/NV phase-ramp prediction.

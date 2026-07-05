@@ -1,0 +1,107 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_2026_06_12.py
+runner_sha256: 56c69479439f1964e8e179af98c7a4cc6a328f967a46a655985b7fa0c220559d
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 3.13
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette W53 SU(3) CG-library window displacement runner
+Status authority: independent audit lane only. This source runner does not set, predict, promote, or demote any audit outcome.
+No new imports: repo-internal finite packet quantities only.
+No randomness or runtime dates are used.
+
+================================================================================================================
+Part 1: B4-plus-closure SU(3) irrep library
+================================================================================================================
+B4 irrep count = 25
+one-step closure irrep count = 35
+B4 max dimension = 125 at (4,4)
+closure max dimension = 165
+C2-degenerate B4 fundamental products = ()
+max B4 commutator residual = 4.136e-15
+max B4 C2 residual = 9.237e-14
+PASS: all 25 B4 irreps are realized
+PASS: B4 dimensions match the SU(3) dimension formula
+PASS: B4 max dimension is dim(4,4) = 125
+PASS: no B4 fundamental-product C2 degeneracy required a fallback
+PASS: B4 generators satisfy SU(3) commutators
+      max=4.136e-15
+PASS: B4 generators have the target quadratic Casimir
+      max=9.237e-14
+
+================================================================================================================
+Part 2: fundamental and antifundamental CG isometries
+================================================================================================================
+fundamental isometries from B4 sources = 65
+antifundamental isometries from B4 sources = 65
+max intertwiner residual = 9.212e-10
+max V^dag V - I residual = 3.331e-15
+max VV^dag - P_C2 residual = 1.887e-15
+max product completeness residual = 2.220e-15
+W50 |<vec(I)/sqrt(3), V_(3 x 3bar -> 1)>| = 1.000000000000000
+PASS: fundamental and antifundamental B4-source isometry counts are 65 each
+PASS: CG isometries solve the generator intertwiner equations
+      max=9.212e-10
+PASS: CG columns are orthonormal
+      max=3.331e-15
+PASS: CG projectors equal the selected Casimir blocks
+      max=1.887e-15
+PASS: full B4-source product dimensions close in the one-step halo
+PASS: full B4-source products are complete
+      max=2.220e-15
+PASS: W50 3 x 3bar -> 1 isometry matches vec(I)/sqrt(3) up to phase
+
+================================================================================================================
+Part 3: phase-insensitive B4 window bond factor
+================================================================================================================
+B4 fundamental transitions a x 3 -> c = 56
+B4 antifundamental transitions b x 3bar -> d = 56
+B4 pair-window support entries = 3136
+nonzero fundamental bond entries = 3136
+CG projector factor min/max = 0.111111111111111 / 0.111111111111111
+factor formula: Tr[(VV^dag x WW^dag)(P_singlet x I)] / (dim target_left dim target_right)
+phase check: only VV^dag and WW^dag enter the bond factor.
+PASS: generated fusion table reproduces B4 fundamental recurrences
+PASS: B4 transition counts match W52 support
+PASS: fundamental window bond support matches the transition product count
+PASS: CG projector factor is phase-insensitive and equals 1/9 on every B4 transition
+PASS: zero-window bond is the W44 diagonal inverse-dimension bond
+
+================================================================================================================
+Part 4: W44 k=2 direct readout with the non-diagonal window bond
+================================================================================================================
+c_fund(6)/c_0(6) = 1.267595218949950
+zero-window direct eig = 1.664872828075301e-01; residual=4.564e-15; iterations=29
+full-window direct eig = 1.951223619010708e-01; residual=1.177e-14; iterations=37
+P(k=2, window -> 0) = 0.449370834209279
+W44 k=2 anchor        = 0.449370834209281
+delta_zero_window     = -1.942890293094024e-15
+P(k=2, windowed fundamental) = 0.445084590711323
+displacement_vs_anchor = -4.286243497957531e-03
+sign = negative
+magnitude = 4.286243497957531e-03
+PASS: zero-window direct solve reproduces the W44 k=2 anchor
+      delta=-1.943e-15
+PASS: zero-window power residual is small
+      residual=4.564e-15
+PASS: windowed fundamental direct solve is finite
+PASS: windowed fundamental power residual is small
+      residual=1.177e-14
+PASS: windowed fundamental Perron vector is nonnegative up to tolerance
+      min=0.000e+00
+PASS: windowed fundamental displacement is reported numerically
+
+================================================================================================================
+Part 5: note hygiene
+================================================================================================================
+PASS: note delegates status to the independent audit lane
+PASS: note uses markdown links for one-hop authorities
+PASS: context refs and script pointers are repo-local plain-text paths
+PASS: note avoids overreach closure phrases
+PASS: note does not use retained/no_go/conditional/clean status labels
+PASS: note reports the W53 numeric displacement
+TOTAL: PASS=30, FAIL=0
+
+----- stderr -----
+

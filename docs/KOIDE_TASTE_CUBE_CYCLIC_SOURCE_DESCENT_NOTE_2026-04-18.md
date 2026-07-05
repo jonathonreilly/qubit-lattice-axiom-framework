@@ -1,17 +1,19 @@
 # Koide Taste-Cube Cyclic-Source Descent Note
 
-**Date:** 2026-04-18  
+**Date:** 2026-04-18 (source-edge string repair 2026-06-17)
 **Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)
-**Admitted context inputs:** staggered-Dirac realization derivation target (canonical parent: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`).
+**Source boundary:** exact finite `C^8` taste-cube descent theorem. The
+physical charged-lepton carrier/readout interpretation is a downstream bridge,
+not part of this row's load-bearing proof.
 **Status:** support - structural or confirmatory support note
 **Runner:** `scripts/frontier_koide_taste_cube_cyclic_source_descent.py`
 
 ## Question
 
 The charged-lepton Koide lane should not assume too early that the bare
-`hw=1` / `T_1` triplet is the whole physical lepton story. The physical lattice
-starts on the full `8`-corner taste cube, and the right positive-path question
-is therefore:
+`hw=1` / `T_1` triplet is the whole physical lepton story. The finite
+taste-cube algebra gives a clean structural question before any physical
+charged-lepton bridge is invoked:
 
 > if we work on the full taste cube first, then apply exact `C_3[111]`
 > averaging and a Schur-compatible charged-sector reduction, what exact source
@@ -48,7 +50,7 @@ and the `T_1` cyclic projector
 A_3(Y) = (1/3) Σ_{k=0}^2 C^k Y C^{-k}.
 ```
 
-If `P_1` denotes the projector onto `T_1`, then for every full-cube source
+If `P_1` denotes the projector onto `T_1`, then for every full-cube
 operator `X`
 ```
 P_1 A_8(X) P_1 = A_3(P_1 X P_1).
@@ -56,8 +58,12 @@ P_1 A_8(X) P_1 = A_3(P_1 X P_1).
 
 So exact full-cube averaging and charged-sector compression commute.
 
-Therefore every averaged full-cube source lands, after compression to `T_1`,
-in the same cyclic Hermitian image
+Therefore every averaged full-cube operator lands, after compression to
+`T_1`, in the complex cyclic image of `A_3`. This is the boundary for
+arbitrary non-Hermitian sources: oriented channels such as `C` and `C^2`
+are complex-cyclic, not themselves real Hermitian responses. For
+Hermitian full-cube sources, the compressed image is exactly the real
+cyclic Hermitian span
 ```
 span_R{B0, B1, B2},
 ```
@@ -70,25 +76,25 @@ B2 = i(C - C^2).
 
 That is the same `3`-response Koide bundle already found on the smaller
 carrier. The full taste cube does not enlarge the response target; it only
-provides a more physical starting point for deriving it.
+provides a larger finite starting point for deriving it.
 
 ## Why this is the right positive path
 
 This is exactly the clean version of the full-lattice caution:
 
 - do **not** identify bare `hw=1` with the whole lepton story too early;
-- do start on the physical `8`-corner carrier;
+- do start on the finite `8`-corner carrier;
 - but then compute honestly what exact `C_3[111]` averaging and charged-sector
   reduction actually leave behind.
 
 The answer is positive and small:
 
-> the full physical carrier still descends to the same cyclic `3`-response
+> the full finite carrier still descends to the same cyclic `3`-response
 > Koide target.
 
 So the next science step is not “guess a new larger source bank.” It is:
 
-1. derive the microscopic full-cube source law on the physical carrier,
+1. derive the microscopic full-cube source law on the finite carrier,
 2. push it through the exact descent map,
 3. derive the selector on the resulting three responses.
 
@@ -137,7 +143,7 @@ P_1 Q1 P_1 = B1,
 P_1 Q2 P_1 = B2.
 ```
 
-So the full physical carrier already contains canonical averaged source
+So the full finite carrier already contains canonical averaged source
 channels that descend to the Koide basis without any ad hoc ansatz.
 
 ## Schur-compatible charged-sector reduction
@@ -192,7 +198,8 @@ Y(X) = u0(X) B0 + u1(X) B1 + u2(X) B2
 ```
 for unique real coefficients `u0,u1,u2`.
 
-Therefore any Schur-compatible charged response of the form
+Therefore any Schur-compatible charged response to a Hermitian full-cube
+source of the form
 ```
 R_M(X) = Re Tr(S(M) Y(X))
 ```
@@ -201,7 +208,7 @@ factors exactly as
 R_M(X) = u0(X) r0 + u1(X) r1 + u2(X) r2.
 ```
 
-So the physical-lattice source bank collapses exactly to the same three Koide
+So the finite full-cube source bank collapses exactly to the same three Koide
 responses once the charged sector is read through exact `C_3[111]` averaging
 and Schur-compatible reduction.
 
@@ -213,12 +220,14 @@ This note proves exactly:
 
 1. the full taste-cube `C_3[111]` average descends to the same `T_1` cyclic
    projector;
-2. the physical carrier contains explicit averaged orbit channels descending to
+2. the finite carrier contains explicit averaged orbit channels descending to
    `B0,B1,B2`;
 3. every positive `U`-covariant full-cube parent reduced by a Schur-compatible
    charged-sector map lands in the same cyclic `3`-response family;
-4. every Schur-compatible full-cube source response factors through the same
-   three response numbers `(r0,r1,r2)`.
+4. every Schur-compatible Hermitian full-cube source response factors through
+   the same three response numbers `(r0,r1,r2)`. Non-Hermitian sources are
+   only claimed to land in the complex cyclic span before Hermitian
+   response extraction.
 
 The runner verifies all of this directly.
 
@@ -237,12 +246,12 @@ This note does **not** yet derive:
   i.e. the actual Koide-closing step;
 - the final mass/amplitude readout primitive.
 
-So this is not a premature closure claim. It is a clean reduction of the
-physical-lattice problem to the same exact `3`-response target.
+So this is not a premature closure claim. It is a clean reduction of the finite
+full-cube problem to the same exact `3`-response target.
 
 ## Consequence
 
-The physical-lattice caution and the Koide cyclic law are now aligned.
+The full-cube caution and the Koide cyclic law are now aligned.
 
 We do **not** need to choose between:
 
@@ -262,31 +271,44 @@ That makes the next positive move sharp:
 
 ## Bottom line
 
-The full taste cube does not force a larger charged-lepton Koide target.
+The full taste cube does not force a larger finite cyclic response target.
 
 Under exact `C_3[111]` averaging and Schur-compatible charged-sector reduction,
-the physical `8`-corner carrier descends to the same cyclic `3`-response bundle
+the finite `8`-corner carrier descends to the same cyclic `3`-response bundle
 `(B0,B1,B2)` and therefore to the same response coordinates `(r0,r1,r2)`.
+Reading those coordinates as physical charged-lepton response data remains a
+separate bridge.
 
 That is the constructive full-lattice positive-path target.
 
 
-## Hypothesis set used (axiom-reset 2026-05-03)
+## Hypothesis set used (source-edge repair 2026-06-15)
 
-Per `MINIMAL_AXIOMS_2026-05-03.md`, this note depends on the **staggered-Dirac realization derivation target**, which is currently an open gate. The note's load-bearing claim defines or relies on fermion fields, fermion-number operators, fermion correlators, fermion bilinears, the staggered Dirac action, the BZ-corner doubler structure, the `hw=1` triplet, charged-lepton sector content, neutrino sector content, quark / hadron content, the Koide / PMNS / CKM observable surfaces, or the Grassmann CAR boundary structure — all of which depend on the staggered-Dirac realization derivation target listed in `MINIMAL_AXIOMS_2026-05-03.md`.
+Load-bearing inputs are only the finite `C^8` taste-cube vector space, the
+specified `C_3[111]` cycle on the cube, the projector onto the `hw=1`
+three-plane, finite matrix-unit sources, and ordinary Schur-complement algebra
+for positive block matrices. The runner reconstructs and checks these finite
+objects directly; it does not import a physical staggered-Dirac realization
+gate.
 
-Canonical parent note: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (`claim_type: open_gate`). In-flight supporting work (see `MINIMAL_AXIOMS_2026-05-03.md`):
+This note therefore does **not** derive or consume fermion fields, a physical
+staggered Dirac action, charged-lepton sector content, PMNS/CKM surfaces,
+Grassmann CAR statistics, or the physical readout bridge from the taste-cube
+three-plane to observed charged leptons. Those are downstream consumer gates.
 
-- `PHYSICAL_LATTICE_NECESSITY_NOTE.md`
-- `THREE_GENERATION_STRUCTURE_NOTE.md`
-- `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`
-- `scripts/frontier_generation_rooting_undefined.py`
-- `GENERATION_AXIOM_BOUNDARY_NOTE.md` (preserved)
+Plain-text non-load-bearing context pointer: the broad realization-gate parent
+may consume this structural descent theorem, but it is not a proof input for
+this theorem and is not named here by source path or claim id.
 
-Therefore `claim_type: bounded_theorem` until that gate closes. When that gate closes, the lane becomes eligible for independent audit/governance retagging as `positive_theorem`; the audit pipeline recomputes `effective_status`, but it does not silently invent a new `claim_type`. The substantive science content of this note is unchanged by this retag.
+The substantive science content is unchanged: exact full-cube averaging and
+Schur-compatible charged-sector reduction factor through the same three cyclic
+responses. What changes is only the dependency boundary: this row asks the
+independent audit lane to judge the finite descent theorem directly, not the whole physical
+realization gate.
 
-## Audit dependency repair links
+## Dependency repair links
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
-
-- [staggered_dirac_realization_gate_note_2026-05-03](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+No load-bearing broad-gate dependency is recorded here. The prior
+staggered-realization parent link has been removed because the finite descent
+operator, projector, cycle action, and Schur reduction are reconstructed by
+this note and its runner.

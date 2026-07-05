@@ -29,6 +29,22 @@ parameter**, not a derived constant; first-principles derivation of `β`
 is deferred to future work, conditional on closing one of the no-go's
 three additional-premise routes.
 
+## Source boundary (2026-06-12)
+
+**Boundary:** numerical-match / bounded tuned support only. Effective status
+is audit-derived; this source records only the claim boundary.
+
+The tested table is valid at the fixed `β = 0.8` surface. The value `β = 0.8`
+is an empirical/tuned input selected by observable matching, not a derived
+framework constant. This note may be cited only for the bounded smoke/table
+checks at that fixed tuned point. It may not be cited as a derivation of the
+directional-measure kernel, the angular weight, the beta parameter, or a
+retained gravity law.
+
+Promotion beyond numerical-match support requires a separate theorem closing
+one of the additional-premise routes named by the angular-kernel
+underdetermination no-go, and deriving `β` rather than selecting it.
+
 ## Repair-pass disposition (2026-05-10) — PATH B: tuned support
 
 The 2026-05-03 REPAIR_TARGETS row #1 (`architecture_note_directional_measure`,
@@ -63,9 +79,7 @@ Disposition: this note is hereby carried as **tuned support** for the
 directional path measure. The bounded smoke/table claims under
 "Tested constraints" hold AT `β = 0.8`; the choice of `β = 0.8` itself
 is a tuned input. No `audit_status` change is requested as part of this
-repair pass — the note remains `audited_conditional`, with the
-conditional dependency now explicit in scope (`β` is tuned, not
-derived).
+source repair; the source boundary is simply that `β` is tuned, not derived.
 
 Future-work derivation target (deferred): close one of the no-go's
 three additional-premise routes, then re-derive `β` analytically and

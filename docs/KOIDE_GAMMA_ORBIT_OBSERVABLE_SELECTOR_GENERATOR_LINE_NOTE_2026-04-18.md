@@ -1,5 +1,7 @@
 # Koide `Gamma`-Orbit Observable-Selector Generator Line
 
+**Claim type:** bounded_theorem
+
 **Date:** 2026-04-18  
 **Status:** exact reduction of the one-clock generator search to a one-real
 line, plus a positive charged-lepton witness on that line  

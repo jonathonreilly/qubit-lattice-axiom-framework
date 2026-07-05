@@ -2,23 +2,25 @@
 
 **Date:** 2026-04-05 (audit-narrowing refresh: 2026-05-10)
 **Type:** bounded_theorem
+**Claim type:** bounded_theorem
 **Status:** bounded lab-facing discriminator protocol, intentionally
 bounded; **not** a closed NV prediction.
 **Status authority:** independent audit lane only.
 **Authority role:** records, but does not close, a bounded discriminator
 protocol (lock-in `X`, `Y`, `phi`, widefield phase ramp; minimal control
-stack; qualitative ordering table) for a diamond/NV collaborator,
-conditional on cited upstream retarded-field / wavefield notes. Names
-the missing NV ideal-detector forward-model bridge theorem as the
-single open theorem target for a closed protocol.
+stack; qualitative ordering table) for a diamond/NV collaborator. The
+ideal lock-in detector map is supplied by
+[`DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md`](DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md).
+The remaining open targets are the source-to-NV coupling map and the
+absolute lab amplitude/noise budget.
 
 ## Purpose
 
 This note turns the cited phase-sensitive / retarded / wavefield lane
 into a concrete **discriminator protocol** a diamond/NV collaborator
 could evaluate. It is **not** a closed protocol in the sense of a
-calibrated lab signal budget; the ideal-detector forward model and
-the NV-coupling map are still missing.
+calibrated lab signal budget; the source-to-NV coupling map and the
+absolute calibration are still missing.
 
 The repo does **not** yet support a defensible absolute gravity
 amplitude for an NV experiment. So the claim surface stays narrow:
@@ -29,29 +31,31 @@ amplitude for an NV experiment. So the claim surface stays narrow:
 
 ## Audit boundary
 
-This note assembles a class-B experiment-facing protocol card by
-importing upstream retarded-field / wavefield phase-ramp authorities
-and naming the corresponding lock-in observables (`X`, `Y`,
-`phi = atan2(Y, X)`, widefield phase profile). It is **not** a
-derivation of those upstream phase-ramp results and **not** a closed
-NV-coupling forward model.
+This note assembles a class-B experiment-facing protocol card by combining
+an explicit ideal lock-in detector theorem with upstream retarded-field /
+wavefield source-candidate context. It names the corresponding lock-in
+observables (`X`, `Y`, `phi = atan2(Y, X)`, widefield phase profile). It is
+**not** a derivation of those upstream source candidates and **not** a
+closed NV-coupling forward model.
 
-**Cited authorities (one-hop deps; cited but not closed in this note):**
+**Cited authorities and context (one-hop deps where load-bearing; audit
+effective status remains ledger-owned):**
 
+- [`docs/DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md`](DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md)
+  — supplies the bounded ideal-detector map from a delayed driven source
+  history to `X`, `Y`, `phi`, the `pi`-flip/null controls, and a
+  widefield phase-slope law. This closes only the detector-map step.
 - [`docs/RETARDED_FIELD_CAUSALITY_PROBE_NOTE.md`](RETARDED_FIELD_CAUSALITY_PROBE_NOTE.md)
-  (`claim_type: bounded_theorem`, `effective_status: retained_bounded`)
-  — supplies the bounded retarded-field causality probe used as
+  — supplies retarded-field causality context used as
   qualitative motivation for a finite-delay phase-lag signature.
 - [`docs/RETARDED_FIELD_DELAY_PROXY_NOTE.md`](RETARDED_FIELD_DELAY_PROXY_NOTE.md)
-  (`claim_type: bounded_theorem`, `effective_status: audited_conditional`)
-  — supplies the bounded intermediate-layer phase-lag proxy. Cited as
-  motivation for the qualitative ordering with drive frequency and
-  separation; itself not retained-grade.
+  — supplies intermediate-layer phase-lag context. Cited as
+  source-candidate motivation for the qualitative ordering with drive
+  frequency and separation; this note does not ratify its audit status.
 - [`docs/SOURCE_RESOLVED_WAVEFIELD_ESCALATION_NOTE.md`](SOURCE_RESOLVED_WAVEFIELD_ESCALATION_NOTE.md)
-  (`claim_type: bounded_theorem`, `effective_status: audited_conditional`)
-  — supplies the bounded exact-lattice wavefield escalation that motivates
-  the spatial phase-ramp readout. Cited as proxy-level motivation; not a
-  retained NV-coupling theorem.
+  — supplies source-resolved wavefield context that motivates the spatial
+  phase-ramp readout. Cited as source-candidate motivation only; not a
+  validated NV-coupling theorem.
 
 **In-note class-B content (what survives at this scope):**
 
@@ -67,34 +71,28 @@ NV-coupling forward model.
   validation step (run the same lock-in pipeline on a known magnetic
   or strain source first);
 - the same qualitative content reported by
-  `scripts/diamond_sensor_protocol_probe.py`, which is a class-A
-  consequence of the qualitative ordering (not a calibrated forward
-  model).
+  `scripts/diamond_sensor_protocol_probe.py`, with the detector-map
+  identities checked from the cycle-average definitions by
+  `scripts/diamond_ideal_lockin_detector_theorem.py`.
 
-These are class-B / class-A consequences of the cited upstream phase-
-ramp authorities and qualitative-ordering reasoning; they are **not**
-a derivation of the NV ideal-detector forward model and **not** a
-calibrated signal budget.
+These are class-B / class-A consequences of the ideal detector theorem,
+the cited source-candidate context, and qualitative-ordering reasoning.
+They are **not** a source-to-NV coupling derivation and **not** a calibrated
+signal budget.
 
 **Admitted-context derivation gap (real, not import-redirect):**
 
 The note **does not** derive any of:
 
-1. an ideal-detector forward model mapping a driven source trajectory
-   through an NV Hamiltonian to lock-in observables `X`, `Y`, `phi`,
-   and a widefield spatial phase profile (perfect phase reference, no
-   technical noise, no bandwidth or integration limits);
-2. a validated mapping from the cited retained / conditional wavefield
-   proxy to a real NV sensor coupling strength;
-3. a calibrated absolute signal budget for a specific NV lab geometry
+1. a validated mapping from the cited source-candidate proxies to a real
+   NV sensor coupling strength;
+2. a calibrated absolute signal budget for a specific NV lab geometry
    that would convert the qualitative ordering table into a
    detectability claim.
 
-The note explicitly labels (1) under "Requirement: ideal-detector
-forward model first" and (2)-(3) under "Honest limitation". This is a
-**real D-class derivation gap**, not a dependency-citation issue. No
-retained, bounded, or proposed theorem on the current atlas closes
-(1)-(3) for this row.
+The detector-map bridge is now explicit and executable, but the remaining
+items above are **real D-class derivation gaps**, not dependency-citation
+issues.
 
 ## What the lab should measure
 
@@ -107,10 +105,10 @@ Measure the lock-in channels:
 If the setup is widefield, also record the spatial phase profile across the NV
 image.
 
-## Requirement: ideal-detector forward model first
+## Ideal detector bridge now supplied
 
-Before any lab-specific protocol is treated as complete, build the
-ideal-detector version of the measurement:
+The ideal detector bridge is supplied by
+[`DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md`](DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md):
 
 - same driven source history in every comparator
 - perfect phase reference
@@ -118,7 +116,7 @@ ideal-detector version of the measurement:
 - no finite-bandwidth or spectral-leakage model
 - direct output for `X`, `Y`, `phi`, and spatial phase profile
 
-This is a required precondition, not an optional refinement.
+This remains the required precondition before lab-specific detector realism.
 It checks source fidelity first and keeps the physics prediction
 separate from detector artefacts.
 
@@ -133,8 +131,8 @@ instantaneous Newtonian baseline should give:
 
 ## Discriminator-design expectation (scope-bounded)
 
-Conditional on the cited upstream retarded-field / wavefield authorities
-above and on a future ideal-detector forward model (still missing), the
+Using the ideal detector theorem and conditional on the cited upstream
+retarded-field / wavefield source candidates above, the
 discriminator-design expectation is:
 
 - a nonzero quadrature channel `Y`
@@ -144,9 +142,8 @@ discriminator-design expectation is:
   frequency and increasing source-detector separation
 
 This is the **qualitative ordering** the protocol card is built around.
-It is **not** a calibrated NV detectability claim, since neither the
-ideal-detector forward model nor the validated NV-coupling map is closed
-in this note.
+It is **not** a calibrated NV detectability claim, since the validated
+NV-coupling map and absolute amplitude budget remain open.
 
 ## Minimal control stack
 
@@ -182,9 +179,9 @@ Suggested scan classes:
 
 The qualitative ordering is the key claim of the discriminator design:
 
-- under the cited retarded / wavefield proxy (and conditional on a
-  future ideal-detector forward model): `Y` and `phi` should grow with
-  drive frequency and separation
+- under the cited retarded / wavefield source-candidate context and the
+  supplied ideal detector theorem: `Y` and `phi` should grow with drive
+  frequency and separation
 - standard null: `Y` stays near zero after calibration
 
 Absolute amplitudes are **not** budgeted by this table.
@@ -209,7 +206,7 @@ This repo does not yet provide a calibrated gravity amplitude for NV sensors.
 
 So the strongest defensible lab-facing artifact is a discriminator protocol:
 
-- ideal-detector forward model first
+- ideal-detector lock-in map at bounded mathematical scope
 - phase-sensitive lock-in readout
 - standard quasi-static null
 - sign-flip control
@@ -222,11 +219,11 @@ The cleanest phrasing for a lab contact is:
 "Measure the lock-in quadrature and spatial phase profile for a driven
 source near an NV sensor. The standard quasi-static baseline predicts
 no stable quadrature after calibration; under the cited retarded /
-wavefield phase-ramp proxy (and conditional on a future ideal-detector
-forward model), the discriminator protocol names a nonzero phase-lag
-signature that strengthens with drive frequency and source-detector
-separation as the qualitative ordering signal. Absolute detectability
-is not budgeted by this protocol."
+wavefield source-candidate context and the ideal lock-in detector theorem,
+the discriminator protocol names a nonzero phase-lag signature that
+strengthens with drive frequency and source-detector separation as the
+qualitative ordering signal. Absolute detectability is not budgeted by this
+protocol."
 
 ## References
 
@@ -241,9 +238,8 @@ is not budgeted by this protocol."
 
 **Bounded experiment-facing discriminator protocol only.**
 
-Conditional on the cited upstream retarded-field / wavefield authorities
-(`retained_bounded` causality probe, `audited_conditional` delay proxy
-and wavefield escalation), this row records:
+Using the ideal detector theorem and conditional on the cited upstream
+retarded-field / wavefield source-candidate context, this row records:
 
 - a discriminator protocol naming `X`, `Y`, `phi`, and the spatial
   phase profile;
@@ -252,20 +248,17 @@ and wavefield escalation), this row records:
 - a minimal control stack and a pre-experiment validation step.
 
 It is **not** a closed lab protocol, **not** a calibrated NV detectability
-claim, and **not** a derivation of the cited upstream authorities. The
-ideal-detector forward model and validated NV-coupling map remain open
-as the single D-class theorem target for this row.
+claim, and **not** a derivation of the cited upstream source candidates.
+The validated NV-coupling map and absolute signal budget remain open.
 
 ## Repair target
 
-Per audit verdict (`notes_for_re_audit_if_any`): provide the
-ideal-detector forward-model theorem deriving `X`, `Y`, `phi`, the
-spatial phase ramp, and the frequency / separation ordering from the
-retained retarded / wavefield lane or an explicitly retained upstream
-note. The current note exposes only the qualitative ordering and the
-discriminator protocol; the bridge theorem from cited retarded /
-wavefield proxies to calibrated NV lock-in observables is the open
-target.
+The ideal detector map deriving `X`, `Y`, `phi`, the spatial phase ramp,
+and the frequency / separation ordering from a delayed driven source is now
+supplied by `DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md`.
+The remaining repair target is the physical source-to-NV coupling and
+calibrated amplitude/noise bridge; this note still exposes only the
+qualitative ordering and discriminator protocol.
 
 ## Repo-canonical vocabulary
 

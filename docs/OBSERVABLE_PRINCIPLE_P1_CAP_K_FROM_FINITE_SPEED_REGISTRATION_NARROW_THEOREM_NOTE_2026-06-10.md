@@ -26,7 +26,8 @@ a realization plus rate-cap package:
 
 ```text
 (CAP-real)  e-fold readout increments are realized by finite record collections;
-(CAP-M)     each unit record has bounded magnitude, M = 1 in the unit schema;
+(CAP-M)     each unit record has bounded magnitude, M = 1 inside the
+            conditional unit schema;
 (CAP-K)     each e-fold uses at most K disjoint record sectors.
 ```
 
@@ -67,8 +68,9 @@ K <= 2^N_reach.
 ```
 
 The bound contains no e-fold index, so it is uniform over e-folds. Combined
-with `(CAP-real)` and the unit-record `(CAP-M)`, Lemma C from the prior note
-gives `(BR-int)`, and the tested exponent family selects `p = 0`.
+with `(CAP-real)` and the unit-record `(CAP-M)` inside that conditional
+schema, Lemma C from the prior note gives `(BR-int)`, and the tested exponent
+family selects `p = 0`.
 
 ## Realization Class
 
@@ -202,7 +204,9 @@ The runner checks:
   Lattice and Quantum, including one qubit per site.
 - [RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md](RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md)
   and [RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md](RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md)
-  supply the record algebra/unit normalization used in Lemma C.
+  supply the record algebra/unit normalization used in Lemma C; the
+  unbounded-additivity schema is consumed only under its conditional supplied
+  nonzero-record/readout-context premise.
 - [SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md](SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md),
   [POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md](POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md),
   [RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md](RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md),

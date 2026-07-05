@@ -23,16 +23,19 @@ gamma_T(center) / gamma_E(center) = -8/9.
 ```
 
 The strongest constructive-looking route is that `8/9` is already present in
-the retained color-projection stack:
+the exact SU(3) adjoint channel fraction:
 
 ```text
-R_conn = (N_c^2 - 1) / N_c^2 = 8/9  at  N_c = 3.
+F_adj = (N_c^2 - 1) / N_c^2 = 8/9  at  N_c = 3.
 ```
 
-This note asks whether that retained color factor can supply the missing
-Route-2 center readout ratio without importing observed quark masses, fitted
-Yukawa values, CKM/J target minimization, or nearest-rational selection from
-the live endpoint data.
+This note asks whether that exact color factor, or the physical connected-trace
+specialization historically called `R_conn`, can supply the missing Route-2
+center readout ratio without importing observed quark masses, fitted Yukawa
+values, CKM/J target minimization, or nearest-rational selection from the live
+endpoint data. The repaired `RCONN_DERIVED_NOTE.md` keeps `F_adj = 8/9` as
+exact Fierz support and explicitly does **not** derive the physical
+connected-trace selector.
 
 ## 2. Minimal Premise Set
 
@@ -43,8 +46,8 @@ Allowed premises:
    `q_E = 1 + rho_E/6`, `q_T = 1 + rho_T/6`;
 3. the conditional T-side candidates
    `rho_T = -1` and `alpha_T/alpha_E = -2`;
-4. retained `N_c = 3` and retained color projection
-   `R_conn = (N_c^2 - 1)/N_c^2 = 8/9`;
+4. retained `N_c = 3` plus exact SU(3) adjoint fraction support
+   `F_adj = (N_c^2 - 1)/N_c^2 = 8/9`;
 5. exact rational arithmetic.
 
 Forbidden proof inputs:
@@ -73,11 +76,11 @@ q_E = gamma_E(center)/gamma_E(shell)
     = s_TE q_T / c_TE.
 ```
 
-If the missing center ratio is identified with the negative retained color
-projection,
+If the missing center ratio is identified with the negative exact adjoint
+fraction,
 
 ```text
-c_TE = -R_conn = -8/9,
+c_TE = -F_adj = -8/9,
 ```
 
 then
@@ -87,7 +90,7 @@ q_E = (-2)(5/6)/(-8/9) = 15/8,
 rho_E = 6(q_E - 1) = 21/4.
 ```
 
-So `-R_conn` is the sharpest currently visible conditional bridge to the
+So `-F_adj` is the sharpest currently visible conditional bridge to the
 Route-2 E-channel law.
 
 ## 4. Why This Still Does Not Derive the Law
@@ -120,10 +123,18 @@ It changes only the E-center lift. Thus `rho_E = 0` and `rho_E = 21/4` are
 both exact maps on the same restricted carrier unless an additional E-center
 source/readout primitive is supplied.
 
-The retained `R_conn` surface lives on the SU(3) color-projection/color-trace
-channel. The current Route-2 carrier surface lives on seven-site support
-coordinates `A1`, `E`, and `T`. No current retained note supplies a typed
-source-domain identification
+The exact `F_adj` surface lives on the SU(3) Fierz/channel-count algebra; the
+physical `R_conn` connected-trace readout remains a selector/specialization,
+not a derived observable, on the current `RCONN_DERIVED_NOTE.md` surface. The
+current Route-2 carrier surface lives on seven-site support coordinates `A1`,
+`E`, and `T`. No current retained note supplies a typed source-domain
+identification
+
+```text
+gamma_T(center) / gamma_E(center) = -F_adj
+```
+
+or, equivalently after accepting the physical connected-trace specialization,
 
 ```text
 gamma_T(center) / gamma_E(center) = -R_conn.
@@ -138,7 +149,7 @@ The live endpoint data remain suggestive:
 
 ```text
 gamma_T(center)/gamma_E(center) = -0.890683778231...
--R_conn                         = -0.888888888889...
+-F_adj                          = -0.888888888889...
 ```
 
 and
@@ -153,7 +164,7 @@ but they cannot be used as theorem inputs.
 
 ## 6. Theorem
 
-**Theorem (R_conn center-ratio bridge obstruction).** In the exact restricted
+**Theorem (R_conn/F_adj center-ratio bridge obstruction).** In the exact restricted
 Route-2 carrier/readout class, after granting
 
 ```text
@@ -161,22 +172,24 @@ beta_T/alpha_T = -1,
 alpha_T/alpha_E = -2,
 ```
 
-the retained SU(3) color value
+the exact SU(3) adjoint fraction
 
 ```text
-R_conn = (N_c^2 - 1)/N_c^2 = 8/9
+F_adj = (N_c^2 - 1)/N_c^2 = 8/9
 ```
 
 conditionally implies the target E-channel readout entry if and only if the
 additional source-domain bridge
 
 ```text
-gamma_T(center)/gamma_E(center) = -R_conn
+gamma_T(center)/gamma_E(center) = -F_adj
 ```
 
 is supplied. The existing carrier columns and endpoint algebra do not supply
-that bridge. Therefore the R_conn observation is an exact conditional bridge
-target and an import boundary, not a retained derivation of the up-type
+that bridge, and the current RCONN repair does not derive the physical
+connected-trace selector that would justify replacing `F_adj` by a retained
+readout `R_conn`. Therefore the Rconn/F_adj observation is an exact conditional
+bridge target and an import boundary, not a retained derivation of the up-type
 scalar law.
 
 ## 7. What This Retires
@@ -184,7 +197,7 @@ scalar law.
 This retires the direct promotion:
 
 ```text
-R_conn = 8/9 numerically matches the missing endpoint ratio
+F_adj = 8/9 numerically matches the missing endpoint ratio
 => Route-2 derives beta_E/alpha_E = 21/4.
 ```
 
@@ -195,13 +208,14 @@ The match is exact only after an extra source-domain identification is added.
 The next sharp 3B theorem target is now:
 
 ```text
-derive gamma_T(center)/gamma_E(center) = -R_conn
+derive gamma_T(center)/gamma_E(center) = -F_adj
 ```
 
-from a typed bridge between the retained SU(3) color-projection surface and
-the Route-2 support endpoint readout. If that bridge lands, the E-channel
-`21/4` law follows immediately. Without it, Route-2 remains bounded support,
-not retained `m_u`/`m_c` closure.
+from a typed bridge between the exact SU(3) adjoint/Fierz surface and the
+Route-2 support endpoint readout, together with any needed physical
+connected-trace specialization. If that bridge lands, the E-channel `21/4` law
+follows immediately. Without it, Route-2 remains bounded support, not retained
+`m_u`/`m_c` closure.
 
 ## 9. Verification
 
@@ -215,7 +229,7 @@ Expected result:
 
 ```text
 TOTAL: PASS=26, FAIL=0
-VERDICT: -R_conn is a sharp conditional bridge to rho_E=21/4,
+VERDICT: -F_adj is a sharp conditional bridge to rho_E=21/4,
 but the source-domain identification is still missing.
 ```
 

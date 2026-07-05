@@ -1,9 +1,15 @@
-# Pauli Exclusion Principle from Retained Spin-Statistics Theorem
+# Pauli Exclusion Principle in a Declared CAR/Grassmann Frame
 
 **Date:** 2026-05-02
-**Type:** positive_theorem (proposed; audit-lane to ratify)
-**Claim scope:** for any single-particle fermionic mode |φ⟩ on the framework's retained matter content, the two-fermion Fock state with both particles in mode |φ⟩ is identically the zero vector; equivalently, the squared creation operator (a^†_φ)² = 0 and there is no normalizable physical state with multiplicity > 1 in any single fermionic mode (Pauli exclusion principle).
-**Status:** awaiting independent audit. Under scope-aware classification (audit-lane proposal #291), `effective_status` is computed by the audit pipeline.
+**Type:** bounded_theorem (proposed; audit-lane to ratify)
+**Claim scope:** within a declared CAR/Grassmann fermionic mode algebra, for
+any single-particle mode |φ⟩, the two-fermion Fock state with both particles
+in mode |φ⟩ is identically the zero vector; equivalently, the squared
+creation operator (a^†_φ)² = 0 and there is no normalizable CAR-frame state
+with multiplicity > 1 in any single fermionic mode (Pauli exclusion
+principle).
+**Status authority:** independent audit lane only. This source note does not
+set or predict an audit outcome; the pipeline computes `effective_status`.
 **Loop:** `positive-only-retained-20260502`
 **Cycle:** 2 (Block 2)
 **Branch:** `physics-loop/positive-only-block02-pauli-exclusion-20260502`
@@ -12,7 +18,7 @@
 
 ## Cited authorities (one hop)
 
-- [`AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md) — declared audit dependency; its live effective status is pipeline-derived and may be audit-pending after dependency-graph strengthening. Provides: any half-integer-spin Cl(3) representation field anticommutes with itself and with a like field at a distinct site. Equivalently, the canonical staggered-Dirac fermion creation operator algebra is
+- [`AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md) — declared audit dependency for the CAR/Grassmann-frame algebraic surface. Its live effective status and claim scope are pipeline-derived. This note consumes only the conditional CAR-frame consequence: if the relevant modes are supplied as Grassmann/CAR fermionic modes, their creation and annihilation operators obey
 
   ```text
       {a_φ, a_ψ}      = 0
@@ -20,7 +26,9 @@
       {a_φ, a^†_ψ}    = ⟨φ|ψ⟩
   ```
 
-  for any pair of single-particle modes φ, ψ on the retained matter content.
+  for any pair of single-particle modes φ, ψ in that CAR frame. The dependency
+  does **not** by itself select CAR over hard-core-boson alternatives for all
+  framework matter modes.
 
 This is the **only** load-bearing one-hop dependency.
 
@@ -33,16 +41,17 @@ This is the **only** load-bearing one-hop dependency.
 - **Linear algebra on H_phys.** Standard finite-dimensional inner-product
   space identities.
 
-No physics conventions beyond what the retained spin-statistics theorem
-already provides.
+The Grassmann/CAR frame is a declared boundary of this note. Selecting that
+frame for all physical retained matter, rather than a hard-core-boson frame,
+is not proved here.
 
 ## Statement
 
 Let `a^†_φ` be the creation operator for the single-particle fermionic
-mode `|φ⟩` on the framework's matter content covered by the declared
-spin-statistics dependency. Then, conditional on that dependency:
+mode `|φ⟩` in a declared CAR/Grassmann frame covered by the stated
+anticommutation dependency. Then, conditional on that CAR-frame boundary:
 
-**(P1) Squared creation operator vanishes.** From the retained
+**(P1) Squared creation operator vanishes.** From the CAR
 fermion anticommutator `{a^†_φ, a^†_φ} = 2 (a^†_φ)² = 0`, we have
 
 ```text
@@ -62,24 +71,22 @@ is, by (P1), the **zero vector** in H_phys. It is therefore not a
 normalizable physical state.
 
 **(P3) Pauli exclusion principle.** No two identical fermions on the
-framework's retained matter content can simultaneously occupy the same
-single-particle mode. Equivalently, the occupation number `n_φ := a^†_φ a_φ`
-of any fermionic mode satisfies `n_φ ∈ {0, 1}`.
+declared CAR/Grassmann surface can simultaneously occupy the same
+single-particle mode. Equivalently, the occupation number
+`n_φ := a^†_φ a_φ` of any CAR fermionic mode satisfies `n_φ ∈ {0, 1}`.
 
-(P1)–(P3) constitute the Pauli exclusion principle on the framework's
-retained matter surface.
+(P1)–(P3) constitute the Pauli exclusion principle on the declared CAR
+surface. They do not select the CAR surface from the framework primitives.
 
 ## Proof
 
-The proof is a two-line application of the retained spin-statistics
-theorem:
+The proof is a two-line application of the declared CAR anticommutation
+relations:
 
 ### Step 1 — Squared creation operator (proves P1)
 
-The retained spin-statistics theorem
-([`AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md))
-gives, for any half-integer-spin Cl(3) field on the canonical retained
-matter content, the anticommutation relation
+The declared CAR/Grassmann-frame dependency gives the anticommutation
+relation
 
 ```text
     {a^†_φ, a^†_ψ}  =  a^†_φ a^†_ψ + a^†_ψ a^†_φ  =  0                        (3)
@@ -119,22 +126,22 @@ anticommutator `{a_φ, a^†_φ} = 1` (mode-orthonormal basis):
 using `(a^†_φ)² = 0` from (P1). So `n_φ²  =  n_φ`, i.e. `n_φ` is a
 projection operator. Its eigenvalues are therefore in `{0, 1}`. ∎
 
-This completes the proof of (P1)–(P3) on the retained surface.
+This completes the proof of (P1)–(P3) on the declared CAR surface.
 
 ## Hypothesis set used
 
 - `axiom_first_spin_statistics_theorem_note_2026-04-29` (declared audit
-  dependency; live status is pipeline-derived):
-  provides Grassmann anticommutation `{a^†_φ, a^†_ψ} = 0` for fermionic
-  fields on the retained matter content.
+  dependency; live status and scope are pipeline-derived): provides the
+  CAR/Grassmann anticommutation surface consumed here when the relevant
+  modes are already supplied as CAR fermionic modes.
 - Standard QFT vacuum definition `a_φ |0⟩ = 0` (admitted-context,
   structural).
 - Standard finite-dim inner-product space identities (admitted-context,
   basic linear algebra).
 
 No fitted parameters. No observed values. No physics conventions
-admitted beyond what the retained spin-statistics theorem already
-provides.
+admitted beyond the declared CAR-frame algebra. The CAR-vs-hard-core-boson
+selection bridge remains outside this note.
 
 ## Corollaries
 
@@ -149,12 +156,11 @@ is automatically antisymmetric under any permutation of the modes
 (since the creation operators anticommute). This is the Slater-
 determinant structure of multi-fermion wavefunctions.
 
-C2. **Atomic shell structure (qualitative).** The Pauli principle on
-the framework's retained matter content forces the qualitative
-shell-filling pattern of multi-electron atoms: each spatial orbital
-holds at most 2 electrons (one each spin), so closed shells form at
-2, 10, 18, 36, … electrons. The quantitative spectrum is a separate
-calculation outside this note.
+C2. **Atomic shell structure (orientation only).** Once a physical electron
+sector has independently been supplied as a CAR/Grassmann matter sector, the
+Pauli principle is the familiar qualitative input to shell filling. This note
+does not derive the electron-sector CAR selection, Coulomb Hamiltonian, or
+atomic spectrum.
 
 C3. **Stability of bulk matter.** The Lieb-Dyson stability of bulk
 matter (Lieb-Dyson 1968, Lieb-Thirring 1975) requires Pauli exclusion
@@ -163,18 +169,17 @@ bulk-stability theorem itself depends on additional retained matter
 structure (Coulomb potential bounds, etc.) that is not yet at retained-
 grade on the live ledger.
 
-C4. **Classical-statistics impossibility for fermionic matter.**
-Fermions cannot be described by Maxwell-Boltzmann statistics. They
-follow Fermi-Dirac statistics with occupation `⟨n_φ⟩ = 1/(e^{β(E_φ - μ)} + 1) ≤ 1`,
-which is bounded above by 1 — direct corollary of (P3) and standard
-ensemble averaging.
+C4. **Classical-statistics boundary inside the CAR frame.** CAR-frame
+occupancy is bounded by one per mode. Any thermal Fermi-Dirac ensemble or
+Maxwell-Boltzmann exclusion for physical matter additionally requires a
+retained thermodynamic/readout bridge and the CAR-frame selection bridge.
 
 ## Honest status
 
-**Positive theorem candidate on the declared spin-statistics surface.** Steps
-1–3 close from the spin-statistics dependency alone, plus the basic vacuum
-definition. No physics admission. The chain is single-hop; retained-family
-status is not asserted by this source note.
+**Bounded theorem candidate on the declared CAR/Grassmann surface.** Steps
+1–3 close from the CAR anticommutation dependency alone, plus the basic vacuum
+definition. No retained-family status and no framework-wide CAR selection are
+asserted by this source note.
 
 The runner verifies (P1)–(P3) by:
 
@@ -190,9 +195,10 @@ The runner verifies (P1)–(P3) by:
 **Honest classification fields:**
 
 ```yaml
-claim_type_author_hint: positive_theorem
-claim_scope: "(a^†_φ)² = 0 on H_phys for any fermionic mode |φ⟩; equivalently the two-fermion same-mode state is the zero vector; occupation number n_φ ∈ {0, 1}."
+claim_type_author_hint: bounded_theorem
+claim_scope: "(a^†_φ)² = 0 in a declared CAR/Grassmann frame for any fermionic mode |φ⟩; equivalently the two-fermion same-mode state is the zero vector; occupation number n_φ ∈ {0, 1}."
 admitted_context_inputs:
+  - declared CAR/Grassmann frame for the relevant modes
   - QFT vacuum definition a_φ |0⟩ = 0
   - basic finite-dim linear algebra
 upstream_dependencies:
@@ -206,7 +212,7 @@ that verdict and dependency closure.
 
 ## Citations
 
-- retained input: `docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`
+- CAR-frame input: `docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`
 - standard external references (theorem-grade, no numerical input):
   Pauli (1925) *Z. Phys.* 31, 765 (original Pauli principle);
   Pauli (1940) *Phys. Rev.* 58, 716 (spin-statistics);

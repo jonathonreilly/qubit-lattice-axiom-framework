@@ -5,7 +5,8 @@ Scope-aware rule:
   - `claim_type` is auditor-owned and determines which retained-grade bucket
     a clean audit may enter.
   - clean theorem/no-go/bounded rows become retained-grade only when every
-    one-hop dependency is already retained-grade or an accepted premise.
+    one-hop dependency is already retained-grade, metadata context, or an
+    accepted premise.
     Axiom/approved-primitive premises satisfy without bounding. Tier-A
     derivation-target premises bound otherwise clean dependents to
     retained_bounded until the target is retired.
@@ -79,6 +80,16 @@ def is_retained_grade(status: str | None) -> bool:
     return False
 
 
+def is_chain_satisfying_status(status: str | None) -> bool:
+    """Statuses that may satisfy a one-hop dependency for clean rows.
+
+    Metadata rows are stable audit context, not theorem evidence: they can
+    satisfy a citation edge for chain closure, but they must not make a
+    decoration parent retained-grade or become retained-grade themselves.
+    """
+    return status == "meta" or is_retained_grade(status)
+
+
 def archived_failed_is_retained_no_go(row: dict) -> bool:
     if row.get("audit_status") != "audited_failed":
         return False
@@ -114,7 +125,7 @@ def clean_status(row: dict, dep_effective: dict[str, str]) -> tuple[str, str]:
     has_tier_a_derivation_target = False
     for dep_id in sorted(row.get("deps", [])):
         dep_status = dep_effective.get(dep_id, "unaudited")
-        if is_retained_grade(dep_status):
+        if is_chain_satisfying_status(dep_status):
             continue
         if premise_nodes.is_axiom_premise(dep_id):
             continue

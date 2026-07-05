@@ -1,5 +1,7 @@
 # Majorana Source-Ray Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15
 **Status:** exact one-generation source-selection refinement on the admitted
 local Nambu lane; not a scale-setting theorem

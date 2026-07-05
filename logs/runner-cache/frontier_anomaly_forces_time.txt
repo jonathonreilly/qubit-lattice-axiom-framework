@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_anomaly_forces_time.py
-runner_sha256: 31fa5613221136a2876d07d55dddb0b6298d163c1b852552dea5428b65923b3e
+runner_sha256: 7463158a3b1e3b66d113cb15ec9bda608a7925747d107329d32b77898c5eee00
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.58
+elapsed_sec: 0.53
 status: ok
 ----- stdout -----
 ========================================================================
@@ -12,13 +12,13 @@ bounded theorem runner: computed content vs declared imports
 ========================================================================
 
 Declared imports (never computed here): P-ABJ, P-HY, P-COMP, P-REC,
-and the cited single-clock theorem clauses. See the paired note.
+and B-AXIS. See the paired note.
 
 ========================================================================
 STEP 0: ABELIAN EIGENVALUE SURFACE (recompute cited construction)
 ========================================================================
 
-  Cited: NATIVE_GAUGE_LEFT_HANDED_ABELIAN_SURFACE_BOUNDED_NOTE_2026-05-23
+  Cited authority: GRAPH_FIRST_SU3_INTEGRATION_NOTE
   For each selected taste axis, the residual complementary-axis swap
   tau on C^8 gives Pi_+ rank 6, Pi_- rank 2, and
   Y_like = (1/3) Pi_+ - Pi_- with spectrum {+1/3 x6, -1 x2}.
@@ -36,6 +36,10 @@ STEP 0: ABELIAN EIGENVALUE SURFACE (recompute cited construction)
 
   P-HY (declared, not computed): identifying Y_like with the anomaly-
   relevant U(1) hypercharge of the emergent gauge theory.
+
+  [PASS][B] HY source edge: parent theorem cites GRAPH_FIRST_SU3_INTEGRATION_NOTE for HY-surface  (graph-first parent contains the gl(3)+gl(1) split and traceless u(1) spectrum)
+  [PASS][B] HY source edge: split-out abelian packaging is absent from parent theorem source text  (prevents this parent theorem from carrying the packaging as a source dependency)
+  [PASS][B] P-HY remains declared: physical hypercharge identification is not derived by STEP 0  (graph-first parent supplies the spectrum only; U(1)_Y remains a boundary)
 
 ========================================================================
 STEP 1: LEFT-HANDED CONTENT ALONE IS ANOMALOUS (exact rationals)
@@ -219,23 +223,24 @@ STEP 5: LATTICE INDEX MECHANISM (2D Wilson/overlap, U(1) flux)
   implication for the 4D chiral gauge theory remains P-ABJ (declared).
 
 ========================================================================
-STEP 6: COMPOSITION WITH SINGLE-CLOCK CODIMENSION-1 EVOLUTION
+STEP 6: COMPOSITION WITH LOCAL B-AXIS CLOCK PREMISE
 ========================================================================
 
-  Imported license (cited internal theorem, class B input):
-  AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03
-    unique-generator clause: exactly one generator H of a strongly
-         continuous one-parameter unitary group U(t) = exp(-itH) on H_phys;
-    RP-admissibility clause: the temporal direction is the UNIQUE
-         RP-admissible reflection axis of the staggered-Dirac action.
-  NON-CIRCULARITY: the time axis is defined there by RP admissibility,
-  with no anomaly input; this note never defines time via the anomaly.
+  Declared bounded premise (class B input):
+    B-AXIS = one supplied blocked time step, one declared evolution
+    axis/transfer construction, and no admitted independent commuting
+    transfer factor as a second clock.
+  NON-CIRCULARITY: B-AXIS contains no anomaly input; this note never
+  defines time via the anomaly. The prior single-clock source remains
+  provenance context only and is not named by source path or claim id.
 
-  [PASS][B] imported d_t <= 1 (single-clock clauses) intersected with computed odd set gives {1}  (lower bound computed in Steps 1-4; upper bound imported from the cited theorem)
+  [PASS][B] source sync: anomaly note declares B-AXIS locally, not the withdrawn unique-RP-axis claim  (cap is conditional on B-AXIS in this bounded source note)
+  [PASS][B] source sync: no single-clock source slug remains in the parent theorem  (B-AXIS is local to this theorem; prior single-clock source is context only)
+  [PASS][B] declared B-AXIS d_t <= 1 cap intersected with computed odd set gives {1}  (lower bound computed in Steps 1-4; upper bound is local declared B-AXIS)
   [PASS][B] conclusion: d_t = 1, total dimension 3 + 1 = 4, signature (3,1)
 
   Corroborating dispersion check (cross-reference Craig-Weinstein 2009 /
-  Tegmark 1997; NOT load-bearing — the exclusion above is by the single-clock clauses):
+  Tegmark 1997; NOT load-bearing — the exclusion above is by B-AXIS):
   [PASS][A] d_t = 2: codim-1 slice evolution has exponentially growing modes  (242/2401 integer modes have omega_2^2 < 0 (corroborating))
   [PASS][A] d_t = 1: all slice modes oscillatory (omega^2 = k^2 >= 0)  (standard hyperbolic Cauchy behaviour (corroborating))
 
@@ -260,15 +265,15 @@ STEP 7: COUNTERFACTUAL — CANCEL THE ANOMALY, LOSE THE FORCING
   falsification behaviour a genuine forcing theorem must show.
 
 ========================================================================
-CLASS BREAKDOWN: A=47 B=2 C=36 D=0
-TOTAL: PASS=85 FAIL=0
+CLASS BREAKDOWN: A=47 B=7 C=36 D=0
+TOTAL: PASS=90 FAIL=0
 ========================================================================
 
-VERDICT: bounded anomaly/single-clock bridge verified. Computed: exact
+VERDICT: bounded anomaly/B-AXIS bridge verified. Computed: exact
 anomaly arithmetic, Clifford parity law, staggered grading, lattice
 index mechanism, and both falsification legs. Imported (declared):
-P-ABJ, P-HY, P-COMP, P-REC, single-clock theorem clauses. Conclusion within the
-declared boundary: d_t = 1, spacetime signature (3,1).
+P-ABJ, P-HY, P-COMP, P-REC, and B-AXIS.
+Conclusion within the declared boundary: d_t = 1, spacetime signature (3,1).
 
 ----- stderr -----
 

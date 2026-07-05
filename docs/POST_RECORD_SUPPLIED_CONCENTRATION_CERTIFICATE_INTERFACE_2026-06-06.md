@@ -2,10 +2,11 @@
 
 **Date:** 2026-06-06
 **Type:** exact support / conditional audit interface
-**Claim type:** positive_theorem
-**Status:** exact-support branch-local for finite law-scoped certificate
-semantics; audit_required_before_effective_retained=true;
-bare_retained_allowed=false.
+**Claim type:** bounded_theorem
+**Status:** bounded-support interface for finite law-scoped certificate semantics;
+audit_required_before_effective_retained=true; bare_retained_allowed=false.
+**Status authority:** source-side type boundary only; this packet does not apply
+or predict an audit verdict.
 **Primary runner:**
 [`scripts/frontier_post_record_supplied_concentration_certificate_interface_2026_06_06.py`](../scripts/frontier_post_record_supplied_concentration_certificate_interface_2026_06_06.py)
 **Cached log:**

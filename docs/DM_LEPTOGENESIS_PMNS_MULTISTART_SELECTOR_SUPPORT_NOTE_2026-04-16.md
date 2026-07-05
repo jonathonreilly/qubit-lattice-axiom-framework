@@ -1,10 +1,16 @@
-# DM Leptogenesis PMNS Multistart Selector Support — Runner Diagnostic (Binding)
+# DM Leptogenesis PMNS Multistart Runner Diagnostic
 
 **Status:** bounded - runner diagnostic only on the tested multistart sample
 **Status authority:** independent audit lane only
+**Claim type:** bounded_theorem
 **Date:** 2026-04-16 (scope narrowed 2026-05-24 per audited_conditional `scope_too_broad` repair)
 **Script:** `scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py`
-**Framework convention:** "axiom" means only `Cl(3)` on `Z^3`
+**Claim boundary:** runner-defined constrained optimization diagnostic only.
+
+**2026-06-16 source-language repair:** the fixed `N_e` seed surface,
+transport/readout normalization, and `eta/eta_obs` readout used here are
+runner-defined inputs of this sampled diagnostic. This row does not derive
+them from Tier-A premises and does not cite them as retained bridge coverage.
 
 ## Scope narrowing (2026-05-24 audited_conditional repair)
 
@@ -17,8 +23,8 @@ This revision takes the narrowing option. The binding evidence of this
 note is exactly the **sampled multistart runner diagnostic** as
 reported by the cached stdout of
 `scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py`:
-on the tested multistart starts on the fixed native `N_e` seed
-surface, the constrained scan reports one favored low-action branch
+on the tested multistart starts on the runner-defined fixed `N_e` seed
+surface, the constrained scan reports one low-action diagnostic branch
 (separated from a high-action branch by a finite action gap on the
 sampled starts). The note does **not** claim certified-global branch
 enumeration, theorem-grade global selector authority, or
@@ -29,12 +35,11 @@ scope.
 
 ## Question
 
-After the relative-action stationarity theorem, one caveat still remained:
+After the relative-action stationarity runner support, one caveat still remained:
 
-- the seed-relative bosonic action was already tied exactly to the sole-axiom
-  observable principle
-- the PMNS-assisted `N_e` closure source was already the unique
-  **lowest-action branch** among sampled stationary closure branches
+- the sampled runner surface gave a seed-relative bosonic action diagnostic;
+- the PMNS-assisted `N_e` closure source was the **lowest-action branch**
+  among sampled stationary closure branches in that runner packet.
 
 Could that last branch-global caveat now be removed on the refreshed DM
 branch?
@@ -43,13 +48,13 @@ branch?
 
 The current broad multistart scan gives a runner diagnostic on the
 tested starts: the sampled multistart constrained scan recovers one
-favored low-action PMNS-assisted `N_e` branch on the fixed native seed
+low-action PMNS-assisted `N_e` branch on the runner-defined fixed seed
 surface. This is a runner-level diagnostic only; it is **not** a
 certified-global branch enumeration nor a theorem-grade selector
 result.
 
 On the sampled multistart starts, broad enumeration of exact closure
-starts on the fixed native `N_e` seed surface yields two dominant
+starts on the runner-defined fixed `N_e` seed surface yields two dominant
 stationary closure branches recovered by the runner:
 
 1. a low-action branch
@@ -68,7 +73,7 @@ On the sampled multistart starts, the broad scan isolates the same
 low-action branch already seen in the later reduced-surface support
 pass. That branch gives, on the tested starts:
 
-- `eta / eta_obs = 1`
+- runner-normalized `eta / eta_obs = 1` on the imposed closure surface
 
 ## Stationary branches
 
@@ -93,7 +98,7 @@ So the action gap is finite and large:
 - `ΔS > 0.5`
 
 On the sampled multistart starts, the low-action branch is the
-favored branch among the dominant pair recovered by the runner; the
+lower-action branch among the dominant pair recovered by the runner; the
 later reduced-surface support pass recovers the same branch as the
 lowest-action branch in a three-branch set on its sampled surface. No
 global-selector or certified-enumeration content is claimed here.
@@ -103,7 +108,7 @@ global-selector or certified-enumeration content is claimed here.
 This is a **runner diagnostic only**, not live closure authority and
 not a certified-global selector:
 
-- it is a broad multistart constrained scan on the fixed native `N_e` seed
+- it is a broad multistart constrained scan on the runner-defined fixed `N_e` seed
   surface
 - on the sampled starts, it recovers a low-action and high-action
   stationary pair with a large action gap
@@ -113,17 +118,17 @@ not a certified-global selector:
 
 ## Numerical consequence (on the sampled multistart starts)
 
-Relative to the old theorem-native one-flavor miss
+Relative to the old one-flavor runner diagnostic miss
 
 - `eta_obs / eta = 5.297004933778`
 
-the favored low-action branch recovered on the tested starts gives
+the low-action branch recovered on the tested starts gives
 
-- `eta / eta_obs = 1`
+- runner-normalized `eta / eta_obs = 1`
 
-So the old `5.3x` miss is gone on the branch the runner recovers as
-the favored low-action branch among the sampled starts. This is a
-runner diagnostic on the tested starts only.
+So the old `5.3x` runner diagnostic miss is gone on the low-action branch
+among the sampled starts. This is a runner diagnostic on the tested starts
+only, not a framework-native readout theorem.
 
 ## Scope
 

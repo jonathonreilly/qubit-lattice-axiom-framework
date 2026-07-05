@@ -1,7 +1,7 @@
 # ε_1 from CP Chain — Stretch Attempt with Named Obstructions
 
 **Date:** 2026-05-03
-**Type:** stretch_attempt (output type c)
+**Type:** open_gate — stretch_attempt (output type c)
 **Claim scope:** documents a worked stretch attempt at deriving the
 leptogenesis CP-asymmetry parameter ε_1 from the framework's retained
 CP-violation structure. Two paths are attempted (Path A: CKM CP-phase

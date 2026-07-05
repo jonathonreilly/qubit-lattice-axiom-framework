@@ -1,0 +1,24 @@
+loop_slug: alpha-s-narrow-counterfactual-drift-20260611
+branch: physics-loop/audit-repair-block08-20260611
+base: origin/main
+current_goal: "Unblock the alpha_s narrow theorem by correcting the Validation counterfactual powers=(1,1) source-runner drift."
+target_status: positive-retained-candidate
+cycle_count: 1
+active_route: "formula-inventory drift repair"
+hard_residual: "Independent audit must still decide whether the source-runner drift repair makes the row clean."
+files_touched:
+  - docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md
+  - scripts/audit_companion_alpha_s_tadpole_power_identity.py
+  - logs/runner-cache/audit_companion_alpha_s_tadpole_power_identity.txt
+  - .claude/science/physics-loops/alpha-s-narrow-counterfactual-drift-20260611/
+open_imports:
+  - "The broad alpha_s parent row remains separate and still depends on upstream/downstream authorities."
+  - "This branch only repairs the narrow algebra theorem's displayed Validation formula."
+no_go_routes:
+  - "Do not import a u_0 value, plaquette evaluation, low-energy running bridge, or observed alpha_s."
+  - "Do not treat this source repair as an audit verdict."
+trace_gate_classification: formula_inventory_repair
+review_findings: pending reviewer
+pr_status: pending
+next_exact_action: "Commit, push, and open the source repair PR for reviewer/auditor recheck."
+stop_condition: "Stop this block after PR creation; reviewer/auditor owns landing and status."

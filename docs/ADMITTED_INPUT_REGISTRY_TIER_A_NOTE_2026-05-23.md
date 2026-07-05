@@ -6,6 +6,8 @@
 sets **no** audit status, promotes nothing, and changes no row's grade. It names
 and tracks, in one place, the framework's irreducible admitted inputs so they
 are not scattered across lanes as ad-hoc prose premises.
+**Primary runner:** [`scripts/admitted_input_registry_tier_a_boundary_check.py`](../scripts/admitted_input_registry_tier_a_boundary_check.py)
+**Cached output:** [`logs/runner-cache/admitted_input_registry_tier_a_boundary_check.txt`](../logs/runner-cache/admitted_input_registry_tier_a_boundary_check.txt)
 
 ## Purpose
 
@@ -14,9 +16,9 @@ non-axiom inputs that (a) gate downstream work and (b) carry a *retained-no-go
 portfolio* (i.e. derivation has been attempted and proven hard, so closing them
 needs a yet-to-be-found mechanism). This is deliberately **separate** from:
 
-- **Framework axioms and approved primitives** (the named Lattice, Quantum, and
-  Record axioms, and any explicitly approved primitive such as the
-  scale-reference primitive): foundational, never to be derived; tracked in
+- **Framework axioms and approved primitives** (the named Lattice, Qubit,
+  Admissibility, and Record axioms, and any explicitly approved primitive such
+  as the scale-reference primitive): foundational, never to be derived; tracked in
   `docs/audit/data/axiom_premise_nodes.json`. These dependencies
   chain-satisfy without bounding downstream status.
 - **The in-progress derivation backlog** (~110 `audited_conditional`/`unaudited`
@@ -24,18 +26,18 @@ needs a yet-to-be-found mechanism). This is deliberately **separate** from:
   auditing/re-grounding, not a new mechanism). That backlog is the
   conditional-dependency frontier (see Appendix), not an admission.
 
-Current registry basis (2026-06-05): Record is no longer a Tier-A admission.
-It is included in the explicitly approved three-axiom `minimal_axioms` node,
-with the durable realized-outcome boundary stated in
-`docs/MINIMAL_AXIOMS_2026-06-05.md`. The older
-`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` is not promoted: it remains a broader
-conditional parent carrying readout/log-det/modulus material beyond Record.
+Current registry basis (2026-07-05): the `minimal_axioms` node is the
+four-axiom memo `docs/MINIMAL_AXIOMS_2026-06-29.md` (Lattice, Qubit,
+Admissibility, Record). Record was retired from Tier A on 2026-06-05 into the
+then-current axiom set (historical basis text preserved in the Notes below);
+the older `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` is not promoted: it
+remains a broader conditional parent carrying readout/log-det/modulus
+material beyond Record. **θ was retired from Tier A on 2026-07-05 by retained
+derivation** (see the retirement bullet in the Notes below).
 
 Curated to inputs that are irreducible (no-go portfolio) **and not vacuous**,
 the genuine Tier-A admitted derivation target is now the **one** row below
-(AC_φλ). θ was retired as an admitted derivation target on 2026-06-10 — see
-the "θ retired from Tier A (2026-06-10)" note below for the discharge basis
-and its gates. The scale-reference primitive is likewise not counted here: it
+(AC_φλ). The scale-reference primitive is likewise not counted here: it
 is the explicitly approved units primitive registered in
 `docs/audit/data/axiom_premise_nodes.json`. Two further rows (Y₀, g₀) are
 **vacuous rescaling conventions** — listed for completeness but, like the
@@ -44,39 +46,35 @@ AC_φλ naming, explicitly **not** counted as admitted inputs (see
 
 ## Tier A-1 — Admitted derivation-targets (irreducible; have no-go portfolios)
 
-| id | statement | leverage | no-go portfolio (verified `retained_no_go` rows) |
+| id | statement (minimum form, 2026-06-11 — see the minimum-statement section below for the decompositions) | leverage | no-go portfolio (verified `retained_no_go` rows) |
 |---|---|---|---|
-| **AC_φλ** | the generation **mass pattern** (the C₃-breaking phase δ) + the abstract-sector → physical-species identification. The *naming* (which sector is e/μ/τ) is a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
+| **AC_φλ** | three named sub-admissions, nothing else: **(i)** the doublet **reading/occupancy selection** (one binary — sector-tied vs orbit/holomorphic count, `r ∈ {1, 1/2}`); **(ii)** the δ **readout identification** (R-η: density-read-as-angle; the magnitude `2/9` is fixed-locus arithmetic conditional on R-η, not an admitted number); **(iii)** the abstract-sector → physical-species **bridge**. The *naming* (which sector is e/μ/τ) remains a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
 
 Notes:
-- **θ retired from Tier A (2026-06-10).** The two selected-surface premises of
-  the θ admission are discharged at the bounded tier: (P1, no bare θ/F̃F slot)
-  the per-plaquette action class is licensed from nearest-neighbor adjacency
-  plus the kinetic-isotropy primitive
-  (`per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09`,
-  audited_clean/retained_bounded), and within that class the local cross-plane
-  F̃F slot vanishes identically for arbitrary `f`
-  (`theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09`);
-  (P2, positive-real mass orientation) K/CPT-invariant multiplicative
-  determinant characters are phase-free
-  (`tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09`;
-  the lemma carries a staggered-gate Tier-A dep, so the P2 discharge is
-  bounded on the surviving AC_φλ admission — the count still drops 2 → 1)
-  composed with the determinant-readout bridge
-  (`registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10`,
-  PR #3513: any Record-registrable scalar — finitely additive over disjoint
-  records and constant on `K`/CPT orbits — is phase-free, so the
-  `arg det(M_u M_d)` phase datum is exhausted on the registrable surface;
-  the standing modeling premise that the physical readout context is
-  Record-supplied remains named there). Retirement gates: independent audits
-  of the P1/P2 basis notes (cross-plane, K-orbit lemma, registrability
-  theorem), and owner approval recorded per
-  `docs/audit/AXIOM_MINIMALITY_POLICY.md` precedent.
-  The prior no-go portfolio
-  (`strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16`)
-  is preserved in the machine registry's `retired_derivation_targets` entry;
-  it ruled out the RP-half route, not the action-class/readout route used by
-  the discharge.
+- **θ retired from Tier A (2026-07-05; retired by retained derivation).**
+  Owner approval recorded in the PR #3511 thread; decision artifact
+  `THETA_RETIREMENT_BASIS_REMATCH_2026-07-04.md` (updated verdict,
+  2026-07-05). Discharge basis, every row retained-grade: gauge side —
+  `per_plaquette_from_adjacency_license` ∘
+  `theta_cross_plane_term_absent_in_supplied_per_plaquette_class` ∘
+  `theta_multi_plaquette_cross_plane_absence_narrowing` ∘
+  `theta_gauge_native_positive_class_emergent_sector_weighting` (native 3+1:
+  for every emergent integer-sector functional, any positive relative theta
+  weighting is support-vacuous or zero; second-seat clean-room
+  cross-confirmation recorded 2026-07-05); mass side —
+  `theta_p2_k_cpt_determinant_character_phase_erasure` ∘
+  `registrable_readout_additive_even_phase_free` ∘
+  `strong_cp_determinant_readout_bridge`, on the supplied-context premise
+  layer `kcpt_orbit_constancy_and_determinant_character_boundary` bridge.
+  Scope: the canonical imported Wilson + staggered-Wilson class; the
+  mass-side K-real reading rides on AC_φλ sub-admission (i) exactly as the
+  admission statement recorded (the cross-admission identification below
+  stays live for AC_φλ); Q-structure lanes (emergent-Q nonvacuous weighting,
+  the 4D-carrier model of the emergent OS0 surface, defect closure,
+  `W_anomaly_covariant_assembly`, SU(3) abelianization) remain open physics
+  outside the retired admission. The prior no-go portfolio is preserved in
+  `retired_derivation_targets` in `docs/audit/data/tier_a_admissions.json`;
+  `genuine_admitted_input_count` 2 → 1.
 - **Record retired from Tier A (2026-06-05).** The owner-approved Record axiom
   is durable registration of the realized outcome in a supplied readout
   context; the realized outcome is the `K`/CPT orbit of the realized central
@@ -142,9 +140,8 @@ Notes:
   that unit reference. The primitive carries no dimensionless content and does
   not assert `a/l_P = 1`; the self-consistency that the natural unit equals the
   Planck length remains the separate open gravity derivation.
-- **θ** was, until 2026-06-10, admitted here exactly as the Standard Model
-  admits it (the strong-CP problem); see the retirement note above for the
-  discharge basis and gates.
+- **θ** is admitted here exactly as the Standard Model admits it (the strong-CP
+  problem); not a framework-specific deficit.
 
 ## Conventions — NOT admitted inputs (vacuous rescaling freedoms)
 
@@ -171,27 +168,117 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
   `minimal_axioms` node as the narrow durable realized-outcome axiom. This
   retirement does not promote the old `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
   parent, which contains additional non-axiom material.
-- **AC_φλ:** stands as the genuine admitted derivation target
-  (δ-pattern + species bridge, naming excluded). θ stood here until its
-  2026-06-10 retirement (see above).
+- **θ and AC_φλ:** stand as genuine admitted derivation targets (θ shared with
+  the SM; AC_φλ = δ-pattern + species bridge, naming excluded).
 - **Scale reference:** removed from Tier A and registered as the
   explicitly approved `scale_reference_primitive`. It is a units primitive, not a
   derivation-target admission and not a status-bounding dependency.
 - **Y₀, g₀:** vacuous rescaling conventions — **dropped** from the
   admitted-input count (a convention is not an input, just as a name is not).
-- **θ rigor check:** the retained
+- **θ rigor check:** verified NOT derivable from the retained
+  real/anti-Hermitian `D` structure —
   `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go` (retained_no_go)
-  shows the real/RP-half structure cannot forbid the CP-odd term — that route
-  stays closed. The 2026-06-10 retirement discharges θ on a different route
-  (action-class licensing + cross-plane slot vanishing + K/CPT
-  determinant-readout phase erasure), consistent with that no-go.
+  explicitly shows the real/RP-half structure cannot forbid the CP-odd term, so
+  θ=0 remains a genuine admission (shared with the SM).
 
-Net stratified by character: **one dimensionless Tier-A admission** —
-AC_φλ (framework-specific physics); θ (an SM-shared problem) retired
-2026-06-10. Record is
+Net stratified by character: **two dimensionless Tier-A admissions** —
+AC_φλ (framework-specific physics) and θ (an SM-shared problem). Record is
 axiom content only in its narrow durable realized-outcome form. The
 scale-reference primitive is the single scale-setting every physical theory
 takes, orthogonal to all of them, and cannot supply any dimensionless number.
+
+## Minimum-statement sharpening (2026-06-11; owner-approved on merge)
+
+Restates both admissions at their sharpest currently-landed content so that
+elimination attempts target the true residual atoms. **No admission is
+added, removed, adopted, or re-graded; the count stays at two; every
+dependent stays bounded.** All inputs cited below are landed source notes;
+audit status remains audit-lane-only.
+
+### AC_φλ — minimum decomposition (three named sub-admissions)
+
+1. **The doublet reading/occupancy selection (one binary).** The landed
+   static-readout no-go states it: the *whole* magnitude admission is
+   whether the generation readout counts the complex doublet as one
+   holomorphic mode (`r = 1/2`) or two real modes (`r = 1`)
+   (`KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md`),
+   and the occupancy note reduces the whole r-gate to exactly this
+   occupancy atom, proves it independent of the current checked premise
+   surface, and names the orbit-occupancy premise candidate (proposed,
+   NOT adopted)
+   (`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`).
+   The custody decomposition's two operative selectors (K-reality;
+   det_C/equal-power) are this binary's two faces
+   (`CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`).
+   Everything else about the magnitude — carrier, `Q = 1/3 + (2/3)r`
+   lever, channels, topological `2/9`, endpoint exclusion, equipartition
+   stationarity — is derived, not admitted.
+2. **The δ readout identification (R-η).** Per the landed `|δ| = 2/9`
+   chain
+   (`KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md`),
+   the admitted content is the dimensionless readout-class identification
+   R-η (the C₃[111] fixed-locus spectral density read directly as the
+   angle); the magnitude `2/9` is retained-bounded fixed-locus arithmetic
+   given R-η and is **not** itself an admitted number.
+3. **The abstract-sector → physical-species bridge.** Unchanged (the
+   interpretive identification; naming remains vacuous per the
+   species-labeling no-go).
+
+### θ — minimum decomposition (two named residuals) — RETIRED 2026-07-05
+
+> Retired by retained derivation; see the retirement bullet in the Notes and
+> the registry's `retired_derivation_targets` entry. The decomposition below
+> is preserved as the historical record of the admitted statement that the
+> discharge basis was matched against.
+
+With the landed split `θ̄ = θ_gauge + arg det(M_q)`
+(`STRONG_CP_THETA_BAR_STRUCTURED_ADMISSION_2026-06-04.md`):
+
+- **(a) Gauge side.** Admitted: `θ_gauge = 0` in the topological-sector
+  weighting. Localization: within the supplied per-plaquette action class
+  the local cross-plane `F·F̃` slot is derived-absent
+  (`THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md`),
+  and reflection positivity, reality of `Z(θ)`, positivity, CPT
+  (`STRONG_CP_GAUGE_THETA_NOT_FORCED_BY_REALITY_POSITIVITY_OR_CPT_BOUNDED_NOTE_2026-06-07.md`),
+  parity-measure correction
+  (`STRONG_CP_PARITY_MEASURE_CORRECTION_ORIENTATION_GATE_NO_GO_NOTE_2026-06-08.md`),
+  and arrow/CPT orientation
+  (`ARROW_CPT_ORIENTATION_DO_NOT_SOURCE_CP_ODD_ACTION_COEFFICIENTS_NO_GO_NOTE_2026-06-08.md`)
+  are treated in landed source notes as non-forcing/non-sourcing route
+  surfaces; audit status for those sources remains audit-lane-only. The
+  residual is the
+  multi-plaquette / large-gauge-winding account (the per-plaquette class
+  itself is an input; the FtF multiplaquette route is admissible but not
+  cleanly closeable,
+  `STRONG_CP_GAUGE_THETA_MULTIPLAQUETTE_FTF_IS_ADMISSIBLE_NOT_CLEAN_CLOSEABLE_BOUNDED_NOTE_2026-06-07.md`).
+- **(b) Mass side.** On the K-real reading the generation circulant
+  determinant is real, so `arg det M ∈ {0, π}`; admitted is the discrete
+  orientation to `0`
+  (`STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`),
+  now localized onto the named **determinant-readout bridge**: within the
+  registrable multiplicative determinant-character class, K/CPT forces
+  phase erasure, and what remains admitted is that the physical
+  `arg det(M_u M_d)` is exhausted by that class
+  (`THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md`).
+- **Cross-admission identification.** The K-real structure consumed by
+  θ(b) is the *same* C₃ conjugate-symmetric circulant structure as
+  AC_φλ(i)'s tied reading (structured-admission runner facts 3, 5, 6):
+  the two admissions share one structural choice on the mass side. A future
+  elimination of either should be checked against the other; it moves both
+  only after the determinant-readout/exhaustion bridge is closed, not by
+  registry wording alone.
+
+### Pending-review sharpenings (cited for tracking, NOT consumed)
+
+The 2026-06-11 review stack — staggered first-order determinant (#3551),
+equivariant channel space (#3553), durability-stationarity chain (#3556),
+flow no-go scope corrections (#3558), OO/R-D equivalence (#3559) — if
+audited, further compresses AC_φλ(i): the equal-power weight becomes a
+conditional corollary, count-twice localizes onto antiunitary-tied
+sections channel-independently, and the two candidate premise
+formulations (orbit-occupancy; R-D durability) are one decision. None of
+that is consumed by the statements above, which rest on landed notes
+only.
 
 ## Propagation wiring (audit-lane sidecar)
 

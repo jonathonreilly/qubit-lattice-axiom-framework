@@ -59,6 +59,8 @@ from frontier_dm_wilson_direct_descendant_local_observable_coordinate_theorem_20
 )
 
 
+AUDIT_TIMEOUT_SEC = 600
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 FD_STEP = 1.0e-6

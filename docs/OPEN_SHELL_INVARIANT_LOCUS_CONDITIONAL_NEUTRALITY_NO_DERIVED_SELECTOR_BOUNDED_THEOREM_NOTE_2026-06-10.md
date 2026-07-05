@@ -43,7 +43,7 @@ The runner establishes four scoped facts on the finite open-shell surface.
    non-flat manifold spectrum, so this witness is not a hidden twirl of that
    exhibit.
 
-The remaining open question is which locus the realized state occupies. This
+The remaining open question is which locus the realized state occupies. The state-conditioning here is the registered [`realized_state_primitive`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) interface: pointwise evaluation at the supplied law-admissible realized state, nothing more; the state-contingent data quoted remain registered data per its counterfactual clause. This
 note does not answer that question.
 
 ## Inputs and Boundary

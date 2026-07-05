@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/gl_f_berezin_rp_reconstruction_check_2026_06_10.py
+runner_sha256: b8531ce758a4555c983e665dfab5f9305b9990b63e9862182f83f64194116fa3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.51
+status: ok
+----- stdout -----
 ==============================================================================
 GL(F) from Berezin-RP reconstruction -- exact certificate (2026-06-10)
 ==============================================================================
@@ -54,4 +62,13 @@ GL(F) from Berezin-RP reconstruction -- exact certificate (2026-06-10)
 [D] PASS: RP leg: a symmetric but INDEFINITE kernel (eigenvalues 3, -1) gives a non-PSD OS Gram (exact LDL detects a negative pivot) -- positivity of the transfer kernel is also load-bearing
 [D] PASS: transmission certificate: psi_x psi_y != 0 and the reconstructed cross-site exchange sign EQUALS the exchange parity of the integration variables on both branches (Grassmann integrand -> sign -1; ungraded integrand -> sign +1) -- the measure surface carries exactly the frame bit the prior static negative notes prove invisible to dimension, ungraded algebra, positivity spectra, and loop data
 
-TOTAL: PASS=44 FAIL=0
+--- [E] Source-graph bridge wire-up after re-audit feedback ---
+[E] PASS: parent note records the exact post-audit blocker and the sibling bridge packet as the reconstruction-identification repair
+[E] PASS: bridge note decomposes the identification into carrier, parity, dictionary, and matter-functional clauses
+[E] PASS: bridge runner cache is present, SHA-fresh, and passing  (bridge cache validates the sibling packet without rerunning it here)
+[E] PASS: remaining boundary is only the matter-functional/action-surface supplier; no audit status movement or new primitive is claimed
+
+TOTAL: PASS=48 FAIL=0
+
+----- stderr -----
+

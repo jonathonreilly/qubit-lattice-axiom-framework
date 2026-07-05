@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_alpha_s_derived_bounded_chain.py
-runner_sha256: 9c44ded9cf1799f069d803cb028ed448973e4121f358138dda85bc03aed88f5b
-timeout_sec: 120
+runner_sha256: 9e77797302a8180ebb9f22e20f1a704bf5870a784abaae9d41beb03916ead040
+timeout_sec: 900
 exit_code: 0
 elapsed_sec: 0.13
 status: ok
@@ -29,6 +29,13 @@ C1: bounded v -> M_Z corollary (quarantined; not load-bearing)
   [PASS][B] helper CANONICAL_ALPHA_S_V agrees with the T1 forward value to 1e-15  (|helper - T1| = 0.000e+00)
   [PASS][B] bridge note's boundary alpha_s(v) = 0.103304 is the 6-decimal rounding of the T1 value  (|0.103304 - 0.10330382| = 1.839e-07)
 
+=== Source-status firewall (class B, non-load-bearing for T1) ===
+
+  [PASS][B] 2026-06-12 firewall says row remains bounded, not retained
+  [PASS][B] firewall keeps B1 plaquette value admitted until certified
+  [PASS][B] firewall keeps B3 channel-selection/coupling-map bridge open
+  [PASS][B] firewall keeps B4 lattice-to-MSbar scheme/scale bridge open
+
 === C1 (bounded corollary, NOT load-bearing for T1): v -> M_Z transfer ===
 
   2-loop alpha_s(M_Z) = 0.118067
@@ -49,16 +56,21 @@ Scope notes for the auditor:
   - The helper module canonical_plaquette_surface.py is consulted
     only for the tagged class-B consistency residuals above; every
     T1 number is recomputed forward inside this runner.
+  - B3 consumes n_link = 2 as the staggered-Dirac gauge
+    vacuum-polarization channel count; the channel-selection step
+    into alpha_s(v) := alpha_bare/u_0^2 is declared in the note.
   - C1 uses a self-contained 2-loop SM RGE reimplementation with
     LO top-threshold matching; PDG constants appear only in the
     terminal class-D section and in the C1 threshold/scale inputs.
   - The M_Z readout uses the running-bridge note's bounded
     transfer-kernel scope; it is a corollary, not part of
     the T1 claim surface.
+  - The source firewall keeps B1, B3 channel-selection, and
+    B4 open; this runner does not promote the row.
 
 ============================================================================
-Breakdown: A=8 B=5 D=2
-TOTAL: PASS=15 FAIL=0
+Breakdown: A=8 B=9 D=2
+TOTAL: PASS=19 FAIL=0
 ============================================================================
 
 ----- stderr -----

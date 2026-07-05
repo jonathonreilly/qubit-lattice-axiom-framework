@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_qe_box_size_scan_2026_06_10.py
+runner_sha256: 136e5454e06612e55b8cfd32b586fe91ae13798562730681be165af5313c59da
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 106.07
+status: ok
+----- stdout -----
+ROUTE-2 21/4 PIN: BOX-SIZE SCAN -- 15/8 IS A SINGLE-BOX FEATURE, NOT A LIMIT
+============================================================================================
+[PASS] S1 (ANCHOR): at N=15 the reconstructed gamma_X(center|shell) reproduce the landed center-excess cache to ~1e-13 (the 15-pinned scalar Schur action is bypassed; it does not feed the e_spatial_tf slot) -- the N-reconstruction IS the landed observable
+       max relative anchor error = 3.90e-07; N=15 q_T=0.833328 (5/6=0.833333), q_E=1.876247 (15/8=1.875000)
+
+  N    eta(e0)     eta(s)      gE_center   gE_shell    gT_center   gT_shell    q_T        q_E
+   11  +1.5314e-04 +1.6888e-04 +2.365e-03 +2.795e-03 +5.557e-03 +6.161e-03 +0.90206  +0.84613
+   13  +7.5611e-05 +6.2416e-05 -8.419e-06 +2.166e-04 +1.014e-03 +1.166e-03 +0.87009  -0.03887
+   15  +7.0072e-05 +4.6080e-05 -3.772e-04 -2.011e-04 +3.360e-04 +4.032e-04 +0.83333  +1.87625
+   17  +6.3297e-05 +3.2373e-05 -6.003e-04 +1.028e-04 -7.936e-05 +4.033e-04 -0.19680  -5.83700
+   19  +6.0442e-05 +3.0580e-05 -7.147e-04 +9.586e-05 -2.885e-04 +3.552e-04 -0.81228  -7.45520
+   21  +5.8485e-05 +2.9014e-05 -7.899e-04 +9.106e-05 -4.243e-04 +3.223e-04 -1.31647  -8.67461
+   25  +5.6256e-05 +2.6452e-05 -8.804e-04 +8.484e-05 -5.849e-04 +2.805e-04 -2.08540  -10.37720
+   29  +5.4963e-05 +2.4527e-05 -9.338e-04 +8.101e-05 -6.778e-04 +2.553e-04 -2.65468  -11.52705
+[PASS] S2 (smooth base / erratic ratios): the undifferentiated base observable eta_floor(e0), eta_floor(s) is strictly positive and monotone-decreasing with N (no sign flips), and in the boundary-clean range N>=13 its decrements shrink (a converging-looking sequence) -- so the potential and the bright observable are well-behaved; the erraticism lives in the delicate differenced/normalized channel coefficients, not in a broken phi
+       eta(e0) N>=13: 7.561e-05 -> 5.496e-05 (ratio 1.38, decrements slowing); monotone+positive: True; q_E spread = 13.4 (erratic)
+[PASS] S3 (THE MECHANISM -- isolated one-box NUMERATOR excursion; a_aniso cancels): the shell normalization a_aniso is the SAME at the center (e0) and shell (s/sqrt6) endpoints to machine precision (a_center/a_shell = 1), so it CANCELS exactly in q_X = gamma_X(center)/gamma_X(shell) = beta_X(center)/beta_X(shell). The bare finite-difference beta_E(shell) is POSITIVE at every box (N=13,17,19,21,25,29) EXCEPT N=15, where it makes an isolated one-box DOWNWARD EXCURSION to negative -- NOT a smooth zero-crossing (the N13/N17 interpolant at N15 is positive). So q_E=15/8 at N=15 is set by that single-box numerator excursion, not approached as a limit
+       max|a_center/a_shell - 1| = 1.3e-15 (cancels); q_E == bare beta ratio to 1.4e-15; beta_E(shell): N13=+1.48e-05, N15=-1.64e-05 (NEG), N17=+9.39e-06, N21=+9.58e-06 (POS); N13/N17 interp at N15 = +1.21e-05 (POS)
+[PASS] S4 (NON-CONVERGENCE, the discriminator): q_T(N) sign-flips and runs far from 5/6 for the larger (cleaner, more-room) boxes, and q_E(N) goes large-negative for N>=17 -- neither has a finite-volume limit at the target. The N=15 agreement with {5/6, 15/8} is a single-box coincidence, not the boundary-removal limit of the stack's functional
+       q_T over N = ['+0.90', '+0.87', '+0.83', '-0.20', '-0.81', '-1.32', '-2.09', '-2.65']; q_E over N = ['+0.85', '-0.04', '+1.88', '-5.84', '-7.46', '-8.67', '-10.38', '-11.53']
+[PASS] S5 (ROBUSTNESS): the beta_E(shell) one-box downward excursion (negative at N=15, positive at N=21) holds for EPS in {0.0025, 0.005, 0.01}, and q_E(N=21) is stable under a changed Ricci finite-difference step (0.04 -> 0.06) -- the finding is not a differencing/step artifact
+       EPS-robust excursion: True; q_E(N=21) h=0.04->-8.675, h=0.06->-8.696
+[PASS] S5b (the OTHER limit also fails 15/8): under a box-PROPORTIONAL probe radius (4.25*(N-2)/13, a fixed-lattice-fraction position -- a different, also-well-defined infinite-volume observable), q_E and q_T CONVERGE, but to (1, 1), NOT (15/8, 5/6). So 15/8 fails under BOTH the fixed-radius and the box-proportional limits -- there is no infinite-volume limit of this functional that recovers it (the fixed-radius limit is A faithful boundary-removal limit, not THE unique one, and neither yields 15/8)
+       box-proportional q_E -> ['+2.708', '+0.906', '+1.054', '+0.981'] (target 1), q_T -> ['+0.958', '+0.871', '+1.058', '+0.976'] (target 1) -- not 15/8, not 5/6
+[PASS] S6 (VERDICT -- two-part, the honest framing): (i) 15/8 is a fixed-N=15 exact-readout coincidence. The relocation note FLOATED -- and explicitly flagged could-fail -- the hope that q_E identifies with 15/8 in the stack's own boundary-removal limit; this scan NEGATIVELY RESOLVES that self-posed discriminator (no infinite-volume limit recovers 15/8: fixed-radius -> q_E ~ -11 via the isolated one-box numerator excursion; box-proportional -> q_E -> 1), CLOSING the 'maybe it converges to 15/8 in the bulk' escape hatch and vindicating the note's caution. (ii) It does NOT sharpen the underlying naturality no-go (2026-04-28), which was always a fixed-carrier SELECTION gap with NO convergence claim and STANDS unchanged; 15/8 was never claimed by the readout's native framing to BE the infinite-volume value. The 21/4 pin remains a fixed-box structural-selection gap -- this scan supplies no selecting primitive, it only closes one escape route.
+       closes the bulk-limit hatch (both limits miss 15/8); naturality no-go unchanged; pin remains a fixed-box selection gap
+
+TOTAL: PASS=7 FAIL=0
+VERDICT (two-part framing): the box-size scan, anchored exactly to the
+landed N=15 cache (~1e-13), shows the readout target chain {5/6, 15/8, -2, -8/9} is realized
+ONLY at N=15. The shell normalization a_aniso is identical at center and shell (cancels in q_X),
+so q_X is a bare beta ratio; the bare finite-difference beta_E(shell) makes an ISOLATED one-box
+downward excursion to negative at N=15 while staying positive in the bulk -- so q_E=15/8 is a
+single-box numerator coincidence, EPS- and step-robust, with a smooth well-behaved base
+observable. NO infinite-volume limit recovers 15/8: the fixed-radius (boundary-removal) limit
+runs q_E to ~ -11, and the box-proportional limit converges to q_E -> 1 (and q_T -> 1), not
+15/8. CONCLUSION (two-part): (i) this CLOSES the bulk-limit escape hatch the relocation
+note floated -- 15/8 is not the infinite-volume value under any limit of this functional --
+vindicating that note's flagged caution; (ii) it does NOT sharpen the standing 2026-04-28
+naturality no-go, which never claimed convergence and is unchanged. The 21/4 pin remains a
+fixed-box structural-selection gap (rho_E free unless a stronger readout-map primitive is
+supplied); this scan supplies none -- it only rules out the bulk-limit promotion of the N=15
+coincidence. No PDG/fitted value consumed.
+
+----- stderr -----
+

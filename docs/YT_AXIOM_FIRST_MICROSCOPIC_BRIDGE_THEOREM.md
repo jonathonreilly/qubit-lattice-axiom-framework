@@ -1,5 +1,7 @@
 # Axiom-First Microscopic Bridge Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-17
 **Status:** current supporting theorem for the independent Schur-bridge
 cross-check path on the `y_t` lane; reduction theorem, not final UV-to-IR

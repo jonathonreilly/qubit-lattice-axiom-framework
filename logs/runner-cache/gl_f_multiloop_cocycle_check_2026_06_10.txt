@@ -1,0 +1,100 @@
+===== runner cache v1 =====
+runner: scripts/gl_f_multiloop_cocycle_check_2026_06_10.py
+runner_sha256: 9bd4be74c417728395212f68f19f380c79a641d2fe7b1aa3a4212e7e6d30fba9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+
+========================================================================================
+[A] Classification: realizable exchange-sign assignments = symmetric (exact enumeration)
+========================================================================================
+[A] PASS: (R1)(R2)(R4) hold for the hard-core (trivial strings) family at N=4
+[A] PASS: (R1)(R2)(R4) hold for the Jordan-Wigner/CAR (lex strings) family at N=4
+[A] PASS: N=3 exhaustive (all 64 string families, dense): every family yields a SYMMETRIC eps, psi-psi and psi-psi^+ signs agree, mask calculus exact
+[A] PASS: N=3 image = ALL 2^3 = 8 symmetric assignments (incl. eps==+1 and eps==-1); NO asymmetric assignment is ever produced  (|image| = 8)
+[A] PASS: N=4 exhaustive (all 4096 string families, mask calculus): image = ALL 2^6 = 64 symmetric assignments on the plaquette, none asymmetric  (|image| = 64)
+[A] PASS: ALL 64 symmetric eps on the 4-site plaquette are realized by explicit Klein strings (dense verification of every pair relation)  (realized 64/64)
+[A] PASS: the commuting assignment eps==+1 (hard-core) IS in the consistent set -- joint multi-site realizability does NOT exclude it  (eps==-1 (CAR/GL(F)) also in; consistency yields a SET, not the sign)
+[A] PASS: falsification: asymmetric eps is UNREALIZABLE -- applying (R3) twice forces eps(x,y)eps(y,x)=1 unless psi_x psi_y = 0, but ||psi_x psi_y|| = 1 in every Klein frame (all 4 two-site string choices)  (the consistency conditions have teeth)
+
+========================================================================================
+[B] Multi-loop cocycle consistency is AUTOMATIC for every symmetric eps
+========================================================================================
+[B] PASS: exchange-groupoid loop holonomy vanishes for ALL 64 symmetric eps (full edge-consistency certificate on the S_4 Cayley graph = every closed loop of transposition words)  (consistent 64/64)
+[B] PASS: in particular BOTH uniform assignments pass every exchange-groupoid loop: eps==+1 (hard-core) and eps==-1 (CAR) are EACH globally loop-consistent  (the cocycle condition fixes holonomy^2=+1, i.e. Hom(Z_2,Z_2) -- both characters; it never fixes the character)
+[B] PASS: falsification: an ASYMMETRIC assignment fails the shortest loop (swap twice): holonomy eps(x,y)eps(y,x) = -1 != +1  (multi-loop consistency = symmetry, nothing more)
+[B] PASS: dense reordering signs match inversion-count prediction (hard-core frame): full reversal and 3-cycle
+[B] PASS: dense reordering signs match inversion-count prediction (CAR/JW frame): full reversal and 3-cycle
+[B] PASS: 3x2x1 block: plaquette boundaries span the FULL F_2 cycle space (rank 2 = cycle rank 2; 2 plaquettes)  (every lattice-loop consistency condition reduces to plaquettes)
+[B] PASS: 2x2x2 block: plaquette boundaries span the FULL F_2 cycle space (rank 5 = cycle rank 5; 6 plaquettes)  (every lattice-loop consistency condition reduces to plaquettes)
+[B] PASS: 3x3x3 block: plaquette boundaries span the FULL F_2 cycle space (rank 28 = cycle rank 28; 36 plaquettes)  (every lattice-loop consistency condition reduces to plaquettes)
+[B] PASS: exact signed-state calculus certified against the dense tensor representation (30 random string families / states / dagger flags at N=6)
+[B] PASS: single-particle transport around the contractible 8-ring is FRAME-BLIND and spectator-blind: sign identical for HCB and CAR, with and without an enclosed interior particle  (signs [(('CAR', False), 1), (('CAR', True), 1), (('HCB', False), 1), (('HCB', True), 1)])
+[B] PASS: the EXCHANGE loop (half-rotation of two particles, configuration returns to itself) is the ONLY frame-odd loop datum: holonomy +1 (HCB) vs -1 (CAR)  (dichotomy visible at the operator level)
+[B] PASS: exchange holonomy is unchanged by an enclosed spectator in BOTH frames (3D: no mutual/anyonic phase; both characters of Z_2 only)
+[B] PASS: the DOUBLED exchange loop has holonomy +1 in BOTH frames -- the cocycle (loop-consistency) condition constrains exactly holonomy^2 = +1 and is satisfied by both signs  (loop consistency selects the SET {+1,-1}, never the element: NO FORCING)
+
+========================================================================================
+[C] Multi-loop configurations: both frames pass every consistency and positivity test
+========================================================================================
+[C] PASS: theta graph (2 plaquettes sharing an edge), HCB frame: H Hermitian and parity-conserving [H, F] = 0
+[C] PASS: theta graph (2 plaquettes sharing an edge), HCB frame: transfer T = exp(-tau H) positive overall AND in each (-1)^Q parity sector (tau = 0.5)  (gs energy -4.5343, min eig T 0.1036)
+[C] PASS: theta graph (2 plaquettes sharing an edge), CAR frame: H Hermitian and parity-conserving [H, F] = 0
+[C] PASS: theta graph (2 plaquettes sharing an edge), CAR frame: transfer T = exp(-tau H) positive overall AND in each (-1)^Q parity sector (tau = 0.5)  (gs energy -3.8284, min eig T 0.1475)
+[C] PASS: theta-graph spectra DIFFER across frames -- the cross-site sign is physical on the multi-loop configuration, yet no consistency / positivity datum above rejects either frame  (max |dE| = 0.7059; gs -4.5343 (HCB) vs -3.8284 (CAR))
+[C] PASS: 2x2x2 cube (12 bonds, 5 independent loops), HCB frame: H Hermitian and parity-conserving [H, F] = 0
+[C] PASS: 2x2x2 cube (12 bonds, 5 independent loops), HCB frame: transfer T = exp(-tau H) positive overall AND in each (-1)^Q parity sector (tau = 0.5)  (gs energy -7.2606, min eig T 0.0265)
+[C] PASS: 2x2x2 cube (12 bonds, 5 independent loops), CAR frame: H Hermitian and parity-conserving [H, F] = 0
+[C] PASS: 2x2x2 cube (12 bonds, 5 independent loops), CAR frame: transfer T = exp(-tau H) positive overall AND in each (-1)^Q parity sector (tau = 0.5)  (gs energy -6.0000, min eig T 0.0498)
+[C] PASS: cube spectra DIFFER across frames (sign physical) while BOTH frames are Hermitian, parity-conserving and sector-wise T-positive -- the multi-loop extension of the retained ring/positivity neutrality  (max |dE| = 1.7324)
+[C] PASS: linked-loop configuration well-formed: 16 distinct sites, loop2 is a lattice 8-cycle threading the interior point (1,1,0) of loop1 (linking number 1)
+[C] PASS: BOTH uniform frames are jointly consistent on the linked 16-site configuration: all 240 ordered pair signs uniform (+1 resp. -1), relations spot-verified on random states (certified calculus)  (linking does not break the commuting assignment)
+[C] PASS: transport around loop2 (which THREADS loop1) is frame-blind and independent of loop1 occupation (empty / one particle / fully occupied) -- linked loops supply NO new sign datum in 3D  (all six transports sign +1)
+[C] PASS: framing coherence: two DIFFERENT JW string orderings realize the same eps==-1 and are conjugate by an explicit diagonal F-even Klein unitary D (D c2_x D^-1 = c1_x exactly)  (string framings are mutually consistent data, never a new constraint)
+
+========================================================================================
+[D] The Kawamoto-Smit Clifford -1 plaquette cocycle is statistics-blind
+========================================================================================
+[D] PASS: the canonical staggered phases eta^0 satisfy the Clifford -1 plaquette cocycle on every plaquette orientation and base point (3x3x3, exact integers)
+[D] PASS: spin-diagonalization identity Gamma_x^+ sigma_mu Gamma_{x+mu} = eta_mu(x) I holds as PURE 2x2 matrix algebra -- the matter field's exchange sign never enters the KS cocycle datum  (the KS -1 is coefficient (c-number) cohomology on plaquettes, not pair-exchange data)
+[D] PASS: eta^0-phased staggered hopping on the cube, HCB frame: H Hermitian and parity-conserving [H, F] = 0
+[D] PASS: eta^0-phased staggered hopping on the cube, HCB frame: transfer T = exp(-tau H) positive overall AND in each (-1)^Q parity sector (tau = 0.5)  (gs energy -5.2915, min eig T 0.0710)
+[D] PASS: eta^0-phased staggered hopping on the cube, CAR frame: H Hermitian and parity-conserving [H, F] = 0
+[D] PASS: eta^0-phased staggered hopping on the cube, CAR frame: transfer T = exp(-tau H) positive overall AND in each (-1)^Q parity sector (tau = 0.5)  (gs energy -6.9282, min eig T 0.0313)
+[D] PASS: all four combinations {unphased, eta^0-phased} x {HCB, CAR} are consistent -- the retained-lane KS cocycle is CONSUMED IDENTICALLY by both exchange signs: it does not transfer its -1 to eps  (computed in C1/C2/D3 batteries above)
+[D] PASS: falsification: flipping a single edge phase VIOLATES the KS plaquette cocycle (detected)
+[D] PASS: falsification: a trivial-string family claiming eps==-1 FAILS its relations ({psi_0, psi_1} != 0 detected) -- the realizability checks have teeth
+
+========================================================================================
+Summary
+========================================================================================
+  Verified (numpy tol 1e-12 + exact integer sign calculus, certified):
+    [A] realizable exchange-sign assignments on the qubit net = exactly
+        the SYMMETRIC ones (exhaustive at N=3 dense, N=4 mask+dense);
+        eps==+1 (commuting / hard-core) is in the consistent set;
+    [B] multi-loop cocycle consistency is AUTOMATIC for every symmetric
+        eps: all exchange-groupoid loops (S_4 Cayley certificate, 64/64),
+        plaquettes generate all lattice loops, closed-loop transport and
+        doubled-exchange holonomy frame-blind; only the exchange loop
+        itself is frame-odd and its consistency condition (square = +1)
+        admits BOTH characters;
+    [C] theta graph / 2x2x2 cube / linked 16-site loops: both frames
+        jointly consistent, sector-wise T-positive, framing-coherent;
+        spectra differ (sign physical) but nothing rejects eps==+1;
+    [D] the Kawamoto-Smit Clifford -1 plaquette cocycle is c-number
+        coefficient cohomology, consumed identically by both frames:
+        it does not transfer to the exchange sign.
+  CONCLUSION: multi-loop graded-net cocycle consistency does NOT force
+  GL(F). The commuting assignment passes every condition; consistency
+  classifies the set {symmetric eps} and, under uniformity, {+1, -1}.
+  The route closes as a NO-GO; relative to the exercised route
+  portfolio, GL(F) remains an admission/migration candidate.
+
+========================================================================================
+TOTAL: PASS=44 FAIL=0
+========================================================================================
+
+----- stderr -----
+

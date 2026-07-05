@@ -1,0 +1,84 @@
+===== runner cache v1 =====
+runner: scripts/g_bare_h_unit_same_projected_1pi_residue_exhaustion_named_gap_2026_06_12.py
+runner_sha256: 78aa0216b6e8b9ec18629ed400c07d6d43408918dcc7cb0b7ba83845f010c8b4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.45
+status: ok
+----- stdout -----
+
+Source hygiene
+--------------
+PASS: new note contains required phrase 'Status authority:** independent audit lane only'
+PASS: new note contains required phrase 'Result:** named-gap case, not exhaustion proven'
+PASS: new note contains required phrase 'same-projected OGE scalar-singlet residue survival'
+PASS: new note contains required phrase 'Delta(g_bare) = (g_bare^2 - 1) / 6'
+PASS: new note contains required phrase 'No literature values, external citations, observational comparators, fitted'
+PASS: new note contains required phrase 'Gate result: PASS for a bounded named-gap theorem'
+PASS: new note contains required phrase 'TOTAL: PASS=n, FAIL=0'
+PASS: new note avoids overreach/status phrase 'proves exhaustion'
+PASS: new note avoids overreach/status phrase 'exhausts the complete same-projected scalar-singlet 1PI residue for arbitrary g_bare'
+PASS: new note avoids overreach/status phrase 'closes the program'
+PASS: new note avoids overreach/status phrase 'only route'
+PASS: new note avoids overreach/status phrase 'last route'
+PASS: new note avoids overreach/status phrase 'audited_clean'
+PASS: new note avoids overreach/status phrase 'retained status'
+PASS: target pinning note names H_unit-residue admission
+PASS: Step-3 diagnostic names same-1PI bridge as open gate
+
+Memory estimate and finite surface
+----------------------------------
+PASS: Q_L dimension is N_iso * N_c = 6 -- dim=6
+PASS: dense exact-linear-algebra surface stays below 64 KiB complex128-equivalent -- 432 scalar slots, 6912 bytes equivalent
+PASS: runner does not instantiate a Fock-space dimension
+
+Exact H_unit overlap
+--------------------
+PASS: H_unit diagonal entries are exactly 1/sqrt(6)
+PASS: H_unit off-diagonal entries vanish exactly
+PASS: H_unit matrix-element square is exactly 1/6 -- H^2=1/6
+
+Symmetry classification on Q_L
+------------------------------
+PASS: H_unit commutes with sampled iso/color generator 1
+PASS: H_unit commutes with sampled iso/color generator 2
+PASS: H_unit commutes with sampled iso/color generator 3
+PASS: H_unit commutes with sampled iso/color generator 4
+PASS: H_unit commutes with sampled iso/color generator 5
+PASS: OGE projected class is color=singlet
+PASS: OGE projected class is iso=singlet
+PASS: OGE projected class is dirac=scalar
+PASS: OGE projected class is parity=even
+PASS: OGE projected class is taste=singlet
+PASS: OGE projected class is charge_conjugation=even
+PASS: OGE projected class is at the same q^-2 residue order
+PASS: OGE projected class is tree order, not a higher-order correction
+
+Exact coefficient residual
+--------------------------
+PASS: Rep-A OGE coefficient is g_bare^2 / 6 on Q_L -- R_OGE=g_bare**2/6
+PASS: Rep-B H_unit coefficient is 1/6 on Q_L -- R_H=1/6
+PASS: same-projected residual is (g_bare^2 - 1) / 6 -- Delta=(g_bare - 1)*(g_bare + 1)/6
+PASS: residual is not the zero polynomial in g_bare
+PASS: Delta(1) exact rational sample -- Delta=0
+PASS: Delta(1/2) exact rational sample -- Delta=-1/8
+PASS: Delta(3/2) exact rational sample -- Delta=5/24
+PASS: Delta(2) exact rational sample -- Delta=1/2
+PASS: residual roots are exactly g_bare = -1 and +1 -- roots=[-1, 1]
+
+Ward-cancellation gate
+----------------------
+PASS: a structural Ward cancellation would need the residual polynomial to vanish -- nonzero polynomial g_bare**2/6 - 1/6
+PASS: canonical agreement is point equality, not arbitrary-g_bare exhaustion -- Delta(1)=0, Delta(2)=1/2
+
+No-go discipline visibility
+---------------------------
+PASS: note includes no-go-discipline section 'N1 alternative route enumeration'
+PASS: note includes no-go-discipline section 'N2 wall-independence audit'
+PASS: note includes no-go-discipline section 'N7 steelman'
+PASS: note includes no-go-discipline section 'N8 cross-cycle echo'
+
+TOTAL: PASS=50, FAIL=0
+
+----- stderr -----
+

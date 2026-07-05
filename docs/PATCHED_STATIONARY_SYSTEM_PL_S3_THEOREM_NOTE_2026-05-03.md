@@ -1,7 +1,7 @@
 # Patched Stationary System on PL S^3 — Theorem Note
 
 **Date:** 2026-05-03
-**Type:** closing_derivation (output type a)
+**Type:** positive_theorem — closing_derivation (output type a)
 **Claim scope:** closes Obstruction 2 from cycle 10's GR atlas closure
 stretch attempt by implementing the patched stationary system solver
 on cycle 13's 5-chart PL S^3 = ∂(4-simplex) atlas. Verifies global

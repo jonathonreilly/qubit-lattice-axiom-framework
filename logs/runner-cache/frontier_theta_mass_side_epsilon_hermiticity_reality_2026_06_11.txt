@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/frontier_theta_mass_side_epsilon_hermiticity_reality_2026_06_11.py
+runner_sha256: d47940af5c7e1d82727e3c9ae5f2bb21923720a3e505cbd38bde90af867e1f36
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+========================================================================
+Strong-CP mass side: epsilon-Hermiticity reality on the realization
+box: Z^3 torus, L = 4 ; gauge groups tested: U(1), SU(2), SU(3)
+========================================================================
+
+--- A. the matter partition datum is one determinant (reproven)
+[PASS] (01) explicit Grassmann expansion (no determinant identity assumed): the one-pair-per-site matter measure yields Z = det K to the FIRST power -- at the bilinear level the only matter-level phase object is arg det (no non-multiplicative matter datum exists)
+RESIDUAL (declared-open): the matter-statistics clause (single Grassmann pair per site) is consumed at the gate-note grade; beyond-bilinear / interacting matter terms are outside this discharge and are the named residual of the bridge at that level.
+
+--- B. the exact identity: eps M eps = M+  =>  det M real
+[PASS] (02) matrix-identity chain verified on a generic complex matrix: det(M+) = conj(det M) and det(eps M eps) = det M; hence eps M eps = M+ forces det M real
+[PASS] (03) for EVERY tested unitary background (3x U(1), 2x SU(2), 2x SU(3)): the gauge-dressed staggered operator is anti-Hermitian and eps-odd, so eps D(U) eps = -D(U) = D(U)+ -- the identity premise holds for the kinetic operator on any gauge background
+
+--- C. eps-graded K-real channels preserve reality, any background
+[PASS] (04) REAL site-diagonal taste/generation channels (m0*I + m1*eps + c_mu*eps_mu -- the hw-mixing channel classes): eps(D(U)+A)eps = (D(U)+A)+ holds exactly and det(D(U)+A) is REAL for every tested background x parameter point (21 combinations)  [max |Im det|/|det| = 4.7e-16; signs seen: [1]]
+[PASS] (05) anti-Hermitian h.c.-paired one-link taste channels (the tested gauge-covariant kinetic-class dressing) are eps-odd anti-Hermitian, preserve the identity, and keep det REAL on representative U(1), SU(2), and SU(3) backgrounds
+[PASS] (06) the exact classification (epsilon-graded K-reality): eps-EVEN channels must be Hermitian-real (real coefficients) and eps-ODD channels must be anti-Hermitian for the identity eps(D+A)eps = (D+A)+ to hold -- the realization form of the K-reality premise, verified in both directions on exact blocks
+RESIDUAL (declared-open): the K-reality of the physical generation coupling is CONSUMED, not derived: it is the same C_3 K-real structure as the AC_phi_lambda reading selection (custody selector i; the cross-admission identification of the structured admission note). This discharge is conditional on it.
+
+--- D. the K-reality boundary: both violation classes phase
+[PASS] (07) violation class 1 (K-reality broken): a COMPLEX site-diagonal coefficient produces a nonzero determinant phase (computed)  [max |phase| mod pi = 2.966]
+[PASS] (08) violation class 2 (epsilon-grading pairing broken): a HERMITIAN one-link coupling breaks the identity and produces a nonzero determinant phase (computed) -- in this bilinear channel classification, the mass-side phase enters through epsilon-graded K-reality violation  [max |phase| mod pi = 0.658]
+
+--- E. consequence: theta(b) collapses to K-reality + one bit
+[PASS] (09) sign bookkeeping in the tested diagonal-dominant K-real family: det(D(U)+A) > 0 throughout (arg det = 0, not pi); the orientation bit did not excurse in the tested family (family-bounded statement, not a theorem of all couplings)  [signs seen: [1]]
+[PASS] (10) interface pins: the 06-10 note's named-open bridge sentence and the structured admission's gauge/mass split are present in the live notes; this block supplies the bilinear-matter-level half of the named bridge (the measure output IS the determinant, and it is real on the K-real section for every gauge background)
+RESIDUAL (declared-open): NOT discharged and explicitly out of scope: the gauge-side residual theta_gauge (winding/multi-plaquette account) is untouched; beyond-bilinear matter terms; the rotation-channel coupling's gauge-covariant dressing (not constructed); and the discrete orientation bit itself. The theta(b) admitted content after this block is: the K-reality premise (shared with AC_phi_lambda) + the orientation bit, at the bilinear matter level.
+RESIDUAL (declared-open): gauge-group generality: the identity chain det M = det(eps M eps) = det(M+) = conj(det M) is exact for any matrix satisfying the premise, and the premise was verified on U(1), SU(2), and SU(3) seeded backgrounds; the exact argument is still the epsilon-Hermiticity premise, not a gauge-group-specific numerical fit.
+
+TOTAL: PASS=10 FAIL=0
+VERDICT: at the bilinear matter level the determinant-readout bridge discharges on the staggered realization: the matter measure's only phase object is arg det (first-power Berezin, reproven), and eps-Hermiticity makes det(D(U)+A) REAL for every tested gauge background in the enumerated epsilon-graded K-real bilinear classes (site-diagonal hw-mixing classes and anti-Hermitian one-link taste classes), with both violation classes computed to phase. The mass-side strong-CP admission reduces, at this level, to the K-reality premise (shared with AC_phi_lambda) plus the discrete orientation bit. Nothing is retired; no audit status is set.
+
+----- stderr -----
+

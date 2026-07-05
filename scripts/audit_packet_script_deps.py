@@ -41,6 +41,45 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS_DIR = REPO_ROOT / "scripts"
 AUDIT_DATA = REPO_ROOT / "docs" / "audit" / "data"
 
+EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18": [
+        "scripts/frontier_atomic_hydrogen_lattice_companion.py",
+        "scripts/frontier_atomic_helium_hartree_companion.py",
+        "scripts/frontier_atomic_helium_jastrow_companion.py",
+        "scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py",
+    ],
+}
+
+
+def canonical_runner_path(runner_path: str | Path) -> str:
+    """Map legacy runner refs to checked-in ``scripts/<basename>.py`` files."""
+    raw = str(runner_path).strip()
+    if not raw:
+        return raw
+    raw_path = Path(raw)
+    basename = raw_path.name
+
+    candidates: list[str] = []
+    if raw_path.is_absolute():
+        if basename.endswith(".py"):
+            candidates.append(f"scripts/{basename}")
+    elif raw.startswith("scripts/"):
+        candidates.append(raw)
+    else:
+        candidates.extend([raw, f"scripts/{raw}"])
+    if basename.endswith(".py"):
+        candidates.append(f"scripts/{basename}")
+
+    seen: set[str] = set()
+    for candidate in candidates:
+        if candidate in seen:
+            continue
+        seen.add(candidate)
+        p = REPO_ROOT / candidate
+        if p.exists():
+            return p.relative_to(REPO_ROOT).as_posix()
+    return raw
+
 
 def parse_script_imports(script_path: Path) -> set[str]:
     """Return the set of helper script names this script imports.
@@ -51,6 +90,7 @@ def parse_script_imports(script_path: Path) -> set[str]:
       from .X import Y  (relative inside scripts/)
       from X import Y, import X (bare PYTHONPATH-style — common because
         runners in this repo are invoked with `PYTHONPATH=scripts ...`)
+      load_frontier("module_name", "X.py") dynamic loader calls
 
     Returns a set of script basenames (without .py) that exist in scripts/.
     Third-party libraries are excluded by the final scripts/<name>.py
@@ -87,6 +127,27 @@ def parse_script_imports(script_path: Path) -> set[str]:
                 else:
                     # import X [as Y]  (bare PYTHONPATH-style)
                     helpers.add(alias.name.split(".")[0])
+        elif isinstance(node, ast.Call):
+            func_name = ""
+            if isinstance(node.func, ast.Name):
+                func_name = node.func.id
+            elif isinstance(node.func, ast.Attribute):
+                func_name = node.func.attr
+            if func_name != "load_frontier":
+                continue
+
+            filename_node = None
+            if len(node.args) >= 2:
+                filename_node = node.args[1]
+            else:
+                for kw in node.keywords:
+                    if kw.arg == "filename":
+                        filename_node = kw.value
+                        break
+            if isinstance(filename_node, ast.Constant) and isinstance(filename_node.value, str):
+                helper_path = Path(filename_node.value)
+                if helper_path.suffix == ".py":
+                    helpers.add(helper_path.stem)
 
     # Keep only those that exist as scripts/<name>.py
     return {h for h in helpers if (SCRIPTS_DIR / f"{h}.py").exists()}
@@ -108,6 +169,14 @@ def transitive_helpers(primary_script: str, seen: set[str] | None = None) -> set
     for h in list(new_helpers):
         seen.update(transitive_helpers(h, seen) - {primary_script})
     return seen - {primary_script}
+
+
+def helper_runner_paths_for_claim(claim_id: str, primary_script: str) -> list[str]:
+    paths = [f"scripts/{h}.py" for h in sorted(transitive_helpers(primary_script))]
+    for path in EXPLICIT_PACKET_HELPER_RUNNER_PATHS.get(claim_id, []):
+        if path not in paths and (REPO_ROOT / path).exists():
+            paths.append(path)
+    return paths
 
 
 def main() -> int:
@@ -147,7 +216,7 @@ def main() -> int:
     helper_freq = defaultdict(int)
 
     for claim_id, row in rows.items():
-        runner_path = row.get("runner_path", "")
+        runner_path = canonical_runner_path(row.get("runner_path", ""))
         if not runner_path:
             claims_no_runner += 1
             continue
@@ -160,13 +229,14 @@ def main() -> int:
             continue
 
         primary_basename = rp.stem
-        helpers = transitive_helpers(primary_basename)
+        helper_runner_paths = helper_runner_paths_for_claim(claim_id, primary_basename)
+        helpers = {Path(path).stem for path in helper_runner_paths}
 
         deps_by_claim[claim_id] = {
             "primary_runner": str(rp.relative_to(REPO_ROOT)),
             "primary_basename": primary_basename,
             "helper_runners": sorted(helpers),
-            "helper_runner_paths": [f"scripts/{h}.py" for h in sorted(helpers)],
+            "helper_runner_paths": helper_runner_paths,
             "is_pending": claim_id in pending_ids,
         }
 
@@ -210,7 +280,7 @@ def main() -> int:
     # Save output
     output_path = AUDIT_DATA / "audit_packet_script_deps.json"
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(json.dumps(deps_by_claim, indent=2, sort_keys=True))
+    output_path.write_text(json.dumps(deps_by_claim, indent=2, sort_keys=True) + "\n")
     print(f"Wrote {output_path.relative_to(REPO_ROOT)}")
     print()
 

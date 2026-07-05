@@ -1,9 +1,11 @@
 """Bounded runner for the weak-field refractive-index support packet.
 
-The field-shift input H -> H + phi is supplied by the retained-bounded
-self-consistency packet.  This runner checks the lattice-dispersion arithmetic
-and source-boundary discipline; it does not claim to derive the full physical
-Fermat/eikonal bridge.
+The scalar weak-field source/action sign is supplied by the retained-bounded
+weak-field source-response bridge.  A paired fixed-energy eikonal bridge proves
+n=k/k0 as a bounded phase-count identity for this scalar ray packet.  This
+runner checks the lattice-dispersion arithmetic, bridge wiring, and
+source-boundary discipline; it does not claim a physical Newton-constant value
+or nonlinear metric closure.
 
 On the axis lattice dispersion lambda_axis(k) = 2 - 2 cos(k), fixed energy
 lambda_axis(k) + phi = E gives the exact relation
@@ -32,7 +34,8 @@ which is b^-2). So the lattice DOES give 1/b geometric lensing via the geodesic,
       = 2a/b -> 1/b lensing (alpha*b -> const).
   T5  CONTROL (teeth): no field coupling (n=1, c=0) gives ZERO deflection.
   T6  DISTINCT from the Kubo observable: the geometric ray deflection (full-path integral
-      of grad phi) is 1/b, whereas the dipole-suppressed Kubo susceptibility (#3191) is b^-2.
+      of grad phi) is 1/b, whereas the retained-bounded dipole-suppressed Kubo
+      susceptibility packet is a different bounded object.
 
 The phi->Newtonian-potential normalization c=1/(2E) (equivalently G_Newton) is a registered/
 observed scale (G3); only the refractive-index FORM n=1-c*phi and the 1/b deflection FORM are
@@ -55,6 +58,10 @@ def check(name, ok): results.append((name, bool(ok)))
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md"
+EIKONAL_NOTE = ROOT / "docs" / "GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md"
+EIKONAL_RUNNER = ROOT / "scripts" / "frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.py"
+SCALAR_SHIFT_NOTE = ROOT / "docs" / "GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md"
+SCALAR_SHIFT_RUNNER = ROOT / "scripts" / "frontier_gravity_scalar_shift_sign_normalization_2026_06_18.py"
 AUDIT_LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 KUBO_RUNNER = ROOT / "scripts" / "frontier_lensing_exponent_is_dipole_crossover.py"
 KUBO_CACHE = ROOT / "logs" / "runner-cache" / "frontier_lensing_exponent_is_dipole_crossover.txt"
@@ -149,8 +156,26 @@ ledger = json.loads(AUDIT_LEDGER.read_text(encoding="utf-8"))
 rows = ledger.get("rows", {})
 check("SOURCE note names the 2026-06-08 audit-targeted boundary repair",
       "2026-06-08 Audit-Targeted Boundary Repair" in note_text)
-check("SOURCE note states Fermat n=k/k0 remains supplied eikonal bridge",
-      "not as a new" in note_text and "retained physical bridge" in note_text)
+check("SOURCE note names the 2026-06-16 source-side eikonal bridge repair",
+      "2026-06-16 Source-Side Eikonal Bridge Repair" in note_text)
+check("SOURCE note names the 2026-06-18 scalar-shift sign bridge repair",
+      "2026-06-18 Scalar-Shift Sign and Normalization Bridge Repair" in note_text
+      and "GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md" in note_text)
+check("SOURCE note cites the fixed-energy eikonal index bridge",
+      "GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md" in note_text
+      and "n(x) = k_s(x) / k_0" in note_text)
+check("SOURCE note routes H_s=H_0+sI through scalar-shift sign bridge",
+      "scalar-shift sign and fixed-energy normalization bridge for" in note_text
+      and "`H_s=H_0+sI` and `phi_action=c_E s`" in note_text
+      and "`gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18`" in note_text)
+check("SOURCE note states bounded bridge hypotheses explicitly",
+      "bounded source-side repair proposal" in note_text
+      and "Hypotheses for T1-T6" in note_text
+      and "phase-count bridge" in note_text)
+check("SOURCE note leaves physical normalization and nonlinear metric closure open",
+      "does not claim a physical value of `G_Newton`" in note_text
+      and "nonlinear metric theorem" in note_text
+      and "arbitrary-graph WKB closure" in note_text)
 check("SOURCE note contains exact arccos lattice relation",
       "k(phi)=arccos(1 - (E - phi)/2)" in note_text
       or "k(φ)=arccos(1−(E−φ)/2)" in note_text)
@@ -158,6 +183,29 @@ check("AUTH self_consistency_forces_poisson is retained_bounded",
       rows.get("self_consistency_forces_poisson_note", {}).get("effective_status") == "retained_bounded")
 check("AUTH finite_rank_source_to_metric is retained_bounded",
       rows.get("finite_rank_source_to_metric_theorem_note", {}).get("effective_status") == "retained_bounded")
+check("AUTH weak-field source-response bridge is retained_bounded",
+      rows.get("gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11", {}).get("effective_status") == "retained_bounded")
+check("SCALAR-SHIFT sign bridge note and runner are present",
+      SCALAR_SHIFT_NOTE.exists() and SCALAR_SHIFT_RUNNER.exists())
+if SCALAR_SHIFT_NOTE.exists():
+    scalar_shift_text = SCALAR_SHIFT_NOTE.read_text(encoding="utf-8")
+    check("SCALAR-SHIFT sign bridge proves H_s=H_0+sI and phi_action=c_E s",
+          "H_s = H_0 + s I" in scalar_shift_text
+          and "lambda_axis(k_s) + s = E" in scalar_shift_text
+          and "phi_action := c_E s" in scalar_shift_text
+          and "s = phi_action / c_E = k0 lambda_axis'(k0) phi_action" in scalar_shift_text)
+else:
+    check("SCALAR-SHIFT sign bridge proves H_s=H_0+sI and phi_action=c_E s", False)
+check("EIKONAL bridge note and runner are present",
+      EIKONAL_NOTE.exists() and EIKONAL_RUNNER.exists())
+if EIKONAL_NOTE.exists():
+    eikonal_text = EIKONAL_NOTE.read_text(encoding="utf-8")
+    check("EIKONAL bridge proves n=k/k0 as phase-count identity",
+          "n_j := k_{s_j} / k0" in eikonal_text
+          and "Phase[s]/k0" in eikonal_text
+          and "does not derive a universal matter" in eikonal_text)
+else:
+    check("EIKONAL bridge proves n=k/k0 as phase-count identity", False)
 check("KUBO comparison runner and cache are present",
       KUBO_RUNNER.exists() and KUBO_CACHE.exists())
 if KUBO_RUNNER.exists() and KUBO_CACHE.exists():
@@ -166,13 +214,17 @@ if KUBO_RUNNER.exists() and KUBO_CACHE.exists():
           kubo_header.get("runner_sha256") == sha256(KUBO_RUNNER))
 else:
     check("KUBO comparison cache is SHA-fresh", False)
-check("KUBO comparison packet status is exposed as unaudited",
-      rows.get("lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07", {}).get("effective_status") == "unaudited"
-      and "unaudited at this ledger snapshot" in note_text)
+check("AUTH lattice Green support is retained_bounded",
+      rows.get("lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07", {}).get("effective_status") == "retained_bounded"
+      and "`lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07` | retained_bounded" in note_text)
+check("KUBO comparison packet status is exposed as retained_bounded comparison-only authority",
+      rows.get("lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07", {}).get("effective_status") == "retained_bounded"
+      and "`lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07` | retained_bounded" in note_text
+      and "does not supply the Fermat/eikonal bridge" in note_text)
 check("SOURCE no full premise-4 promotion",
-      "does not by itself promote clean-chain premise" in note_text
-      and "not a full retained" in note_text
-      and "derivation of the physical Fermat bridge" in note_text)
+      "independent audit must still decide the effective status" in note_text
+      and "physical Newton-constant" in note_text
+      and "nonlinear/strong-field regime remain open" in note_text)
 
 n_pass = sum(1 for _, ok in results if ok)
 n_fail = sum(1 for _, ok in results if not ok)

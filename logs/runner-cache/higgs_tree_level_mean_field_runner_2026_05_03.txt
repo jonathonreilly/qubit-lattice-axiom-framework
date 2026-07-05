@@ -1,85 +1,61 @@
 ===== runner cache v1 =====
 runner: scripts/higgs_tree_level_mean_field_runner_2026_05_03.py
-runner_sha256: 6409b2c35163b6ecb0e9f365437f761635933ba1baf88a7183839a657da4fe07
+runner_sha256: 96ed3bf576f25ec07b16ff5b26a59da5295de24ed60b0f56a4efcd3999895d58
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.18
 status: ok
 ----- stdout -----
-================================================================================
+==============================================================================
  higgs_tree_level_mean_field_runner_2026_05_03.py
- Review-loop repair runner for HIGGS_MASS_FROM_AXIOM_NOTE.md
- Reproduces the note's tree-level mean-field formula m_curv_tree = v/(2 u_0).
- 2026-05-07 update added T6/T7 structural checks.
- 2026-05-10 update adds T8 (Gap #3 lite m_H_tree -> m_curv_tree demotion).
-================================================================================
+ (2026-06-11 restructure: T1 computed from primitives;
+  D1 declared definition; C1 bounded readout; comparators fenced)
+ Parent note: docs/HIGGS_MASS_FROM_AXIOM_NOTE.md
+==============================================================================
 
---- T1: V_taste curvature at m=0 (Step 3) ---
-  d^2 V_taste/dm^2 |_{m=0} = -N_taste/(4 u_0^2) = -5.1936
-  Expected -4/u_0^2 (note's [3]) = -5.1936
-  [PASS] Step 3 V_taste tachyonic curvature reproduced  (err = 0.00e+00)
+--- [C] T1 first-principles compute (operator -> spectrum -> determinant -> curvature) ---
+  [PASS][C] Clifford algebra {gamma_mu, gamma_nu} = 2 delta_mu_nu (exact, built from Pauli kron)
+  [PASS][C] taste-block Clifford identity (sum_mu gamma_mu)^2 = 4 I (eigenvalue magnitude 2, i.e. |lambda| = 2 u_0 after mean-field scaling)
+  [PASS][C] eta-phase staggered operator on 2^4 block (all-direction antiperiodic wrap): D real antisymmetric
+  [PASS][C] D^2 = -4 I exactly (unit links; so D^2 = -4 u_0^2 I at mean field)  (exact Fraction matrix arithmetic)
+  [PASS][C] char poly of D/u_0 is (lambda^2 + 4)^8 — 16 taste eigenvalues +/- 2i, multiplicity 8 each  (Faddeev-LeVerrier, exact)
+  [PASS][C] N_taste = 16 recomputed from the BZ-corner set {0,1}^4 with Hamming staircase (1,4,6,4,1); W(hw) = 2 r hw -> all degenerate at r = 0
+  [PASS][C] det(u_0 D + m) = (m^2 + 4 u_0^2)^8 per color — exact at 3 rational (u_0, m) test points
+  [PASS][C] color factorization: det_48x48 = [det_taste]^3 at N_c = 3 (exact)
+  [PASS][C] V_taste''(0) = -N_taste/(4 u_0^2) = -4/u_0^2 from the computed determinant (finite difference vs analytic)  (fd = -5.192616470, analytic = -5.192616157)
+  [PASS][C] V_taste'(0) = 0 (symmetric point is an extremum; tachyonic maximum since V'' < 0)  (V'(0) fd = 0.00e+00)
+  [PASS][C] exact N_c cancellation: per-color curvature identical at N_c in {1,2,3,4} (computed)  (spread = 0.00e+00)
+  [PASS][C] falsification leg F1: time-only antiperiodic wrap gives D^2 = -I and det = (m^2 + u_0^2)^8 != (m^2 + 4 u_0^2)^8 — the all-direction B4 declaration is load-bearing
+  [PASS][C] Step 5(c) susceptibility: W''(0) = N_c N_taste/(4 u_0^2) from the computed determinant (finite difference vs analytic)  (fd = 15.577849410, analytic = 15.577848471)
+  [PASS][C] Step 5(c) per-color per-channel W''(0)/(N_c N_taste) = 1/(4 u_0^2) — equals the Step-4 per-channel curvature magnitude (same algebra; no double N_taste division)  (per-color per-channel = 0.324538529, 1/(4 u_0^2) = 0.324538510)
 
---- T2: Per-channel curvature (Step 4) ---
-  |d^2 V/dm^2|_Higgs = (4/u_0^2)/N_taste = 0.3246
-  Expected 1/(4 u_0^2) (note's [4]) = 0.3246
-  [PASS] Step 4 per-channel curvature reproduced  (err = 0.00e+00)
+--- [A] D1/C1 readout algebra over declared boundary inputs ---
+  [PASS][A] two routes agree: v*sqrt((4/u_0^2)/N_taste) == v/(2 u_0)  (140.2673027333 vs 140.2673027333)
+  [PASS][A] readout identity residual |2 u_0 m_curv_tree - v| ~ 0  (residual = 2.84e-14)
+  [PASS][A] C1 headline: m_curv_tree = 140.3 GeV at (B1, B2) (rounded to 0.1 GeV)  (m_curv_tree = 140.2673 GeV)
+  [PASS][A] B2 insensitivity: v = 246.22 and v = 246.2828 both give m_curv_tree = 140.3 at 0.1 GeV precision  (140.2673 vs 140.3031, dv/v = 2.55e-04)
+  [PASS][A] analytic sensitivity d m_curv/d<P> = -m_curv/(4<P>) = -59.09 GeV (1% in <P> -> 0.25% in m_curv), fd-verified  (fd = -59.094752, analytic = -59.094752)
+  [PASS][A] falsification leg F2 (anti-tuning): hitting 125.10 GeV would need <P> = 0.9379, +58% off the licensed 0.5934 — no admissible tuning exists and none is claimed  (<P>_needed = 0.93787, rel offset = +0.581)
 
---- T3: m_curv_tree = v/(2 u_0) at canonical surface ---
-  m_curv_tree = v/(2 u_0) = 246.22 / 1.7552 = 140.28 GeV
-  Note's headline value: 140.30 GeV
-  Observed physical m_H = 125.10 GeV  (comparator only; deviation = +12.1%)
-  [PASS] m_curv_tree = 140.3 GeV reproduced from v/(2 u_0)  (computed = 140.28, headline = 140.3, err = 0.020)
+--- [B] cross-note inputs and parent-note hygiene ---
+  [PASS][B] B1 matches canonical helper: CANONICAL_PLAQUETTE = 0.5934
+  [PASS][B] u_0 = <P>^(1/4) = 0.877681381 matches CANONICAL_U0  (u_0 = 0.877681381)
+  [PASS][B] plaquette license present: 0.5934 'admitted comparison/reuse number' language on disk
+  [PASS][B] staircase dependency on disk with (1,4,6,4,1) multiplicities
+  [PASS][B] parent note primary label is m_curv_tree with explicit demotion narrative (no Higgs-pole claim)
+  [PASS][B] stale 'correct identification is m_H^2 = (1/chi_H)...' phrasing absent
+  [PASS][B] B2 declared honestly: 246.22 GeV is not attributed to the bounded hierarchy formula
+  [PASS][B] all markdown-linked note citations resolve on disk  (all resolve)
+  [PASS][B] fenced class-D comparator section present in parent note
 
---- T4: N_c-independence of m_curv_tree (load-bearing claim of Step 2) ---
-  N_c = 2: m_curv_tree = 140.2803 GeV  (delta from N_c=3: 0.00e+00)
-  N_c = 3: m_curv_tree = 140.2803 GeV  (delta from N_c=3: 0.00e+00)
-  N_c = 4: m_curv_tree = 140.2803 GeV  (delta from N_c=3: 0.00e+00)
-  [PASS] m_curv_tree is N_c-independent (Step 2 N_c cancellation)  (formula m_curv_tree = v/(2 u_0) has no N_c dependence)
+--- [D] fenced comparators (PDG; quarantined, never load-bearing) ---
+  [PASS][D] comparator: m_curv_tree = 140.3 GeV sits +12.1% ABOVE the PDG Higgs pole 125.10 GeV (separation report, not a match claim)  (separation = +12.12%)
+  [PASS][D] comparator: hierarchy-lane bounded v = 246.2828 GeV vs PDG v_obs = 246.22 GeV differ by +0.0255% (context only; neither derived here)  (rel = +0.0255%)
 
---- T5: Distinguish from corrected-y_t / Buttazzo runners ---
-  This runner computes: m_curv_tree = v/(2 u_0) = 140.28 GeV (tree-level mean-field)
-  frontier_higgs_mass_corrected_yt.py computes: 119.93 GeV
-    -> different observable: corrected-y_t RGE route at 3L+NNLO
-  frontier_higgs_buttazzo_calibration.py computes: ~125.1 GeV (current)
-    -> different observable: full-3-loop Buttazzo parametric calibration
-  All three are valid auxiliary computations. They are NOT verifiers
-  for this note's tree-level formula. Each addresses a different
-  Higgs-mass observable along a different chain.
-  [PASS] Tree-level formula clearly distinguished from RGE/Buttazzo observables  (primary runner reports the tree-level value; other runners report different observables)
-
---- T6: no duplicate Step 5(c) in parent note (2026-05-07) ---
-  [PASS] stale pre-repair Step 5(c) paragraph is removed  (checks for the contradicting 'the correct identification is m_H^2 = (1/chi_H)*(v/M_Pl)^2' phrasing)
-  [PASS] 2026-05-07 cleanup-tracking note is present  (explicit '2026-05-07 cleanup' marker recording the duplicate removal)
-  [PASS] '**(c)' anchor appears at most 2x in the note (was 3x before cleanup)  (actual count: 1)
-
---- T7: Step 7 authority-chain table for the +12% gap (2026-05-07) ---
-  [PASS] contains: Step 7 header  (marker = 'Step 7: Authority chain for the +12% gap')
-  [PASS] contains: HIGGS_MASS_DERIVED_NOTE cross-ref  (marker = 'HIGGS_MASS_DERIVED_NOTE.md')
-  [PASS] contains: HIGGS_FROM_LATTICE_NOTE cross-ref  (marker = 'HIGGS_FROM_LATTICE_NOTE.md')
-  [PASS] contains: Wilson-term taste-breaking row  (marker = 'Wilson-term taste-breaking')
-  [PASS] contains: 2026-05-02 status correction audit cross-ref  (marker = 'HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02')
-  [PASS] contains: audit backlog campaign synthesis cross-ref  (marker = 'AUDIT_BACKLOG_NOTE_2026-05-02')
-  [PASS] contains: Wilson-staircase open-target call-out  (marker = '(1,4,6,4,1) staircase')
-  [PASS] sister authority file exists: docs/HIGGS_MASS_DERIVED_NOTE.md
-  [PASS] sister authority file exists: docs/HIGGS_FROM_LATTICE_NOTE.md
-  [PASS] sister authority file exists: docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md
-  [PASS] sister authority file exists: docs/AUDIT_BACKLOG_NOTE_2026-05-02.md
-  [PASS] Step 7 scope guard: this note does not change sibling status
-  [PASS] Step 7 reaffirms tree-level scope and delegates the gap closure
-
---- T8: Gap #3 lite demotion m_H_tree -> m_curv_tree (2026-05-10) ---
-  [PASS] parent note introduces m_curv_tree symbol  (first-principles-honest label for v/(2 u_0) = 140.3 GeV)
-  [PASS] parent note contains an explicit demotion narrative
-  [PASS] parent note records the Morse/convexity context (no interior minimum)  (explicit reason V_taste alone has no Higgs pole)
-  [PASS] parent note has 'Honest scope' section/framing
-  [PASS] downstream bounded Higgs route is tracked via HIGGS_MASS_DERIVED
-  [PASS] parent note references the κ_curv mirror pattern (PR #951 v3)
-  [PASS] numerical headline 140.3 GeV is preserved (math unchanged)
-  [PASS] +12% gap framed as genuine higher-order separation (broken-phase pole vs symmetric-point curvature)
-
-================================================================================
- SUMMARY: PASS=29, FAIL=0
-================================================================================
+==============================================================================
+ Breakdown: A=6 B=9 C=14 D=2
+ TOTAL: PASS=31 FAIL=0
+==============================================================================
 
 ----- stderr -----
 

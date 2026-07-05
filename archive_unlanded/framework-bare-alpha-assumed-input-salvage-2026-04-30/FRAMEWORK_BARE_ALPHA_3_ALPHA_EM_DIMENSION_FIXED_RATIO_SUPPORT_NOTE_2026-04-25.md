@@ -3,6 +3,7 @@
 Date: 2026-04-25
 
 **Repair date:** 2026-06-07
+**Canonical repair packet:** [`docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md`](../../docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md)
 **Location:** `archive_unlanded/framework-bare-alpha-assumed-input-salvage-2026-04-30/`
 **Status:** archived boundary repair - conditional algebra lemma only
 **Primary verifier:** `scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py`
@@ -10,6 +11,10 @@ Date: 2026-04-25
 This file remains archived. It is not a live retained theorem, not
 retained-grade support authority, and not authority for an electroweak
 normalization lane.
+
+The canonical live repair packet is the formal assumed-input identity note
+linked above. This archived wrapper is kept only so the original audited-failed
+row has a direct same-path handoff to the narrowed source boundary.
 
 ## Why the original claim failed
 
@@ -34,9 +39,9 @@ g_Y^2 = 1/(d + 2)
 
 For the numerical specialization in this file, set `d = 3`.
 
-These inputs are hypotheses of the lemma. This note does not derive them from
-Cl(3), from the Standard Model, from a retained EW lane, or from any accepted
-minimal-input stack.
+These supplied inputs are hypotheses of the lemma. This note does not derive
+them from Cl(3), from the Standard Model, from a retained EW lane, or from any
+accepted minimal-input stack.
 
 ## Lemma
 
@@ -127,5 +132,5 @@ python3 scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.p
 Expected final line:
 
 ```text
-VERDICT: CONDITIONAL ALGEBRA LEMMA VERIFIED
+VERDICT: FORMAL ASSUMED-INPUT IDENTITY THEOREM VERIFIED
 ```

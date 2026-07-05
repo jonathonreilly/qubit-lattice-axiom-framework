@@ -1,5 +1,7 @@
 # Parity-Mixing Selector Law — Narrower-Gap + Closure-Candidate-Pending-Physics-Cross-Check
 
+**Claim type:** open_gate
+
 **Date:** 2026-04-17
 **Status:** narrower-gap + closure-candidate-pending-physics-cross-check
 **Script:** `scripts/frontier_dm_neutrino_source_surface_parity_mixing_selection_obstruction.py`

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/observable_principle_p1_exponent_attack_2026_06_10.py
+runner_sha256: 211cdbe8d55f41c97834ffa236d7b003ad3d7d5f26988d9877ee18a9d4c2aa9e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.09
+status: ok
+----- stdout -----
 == T1: family well-posedness (normalized exponent family) ==
   [PASS][A] g_p(1) = 0
   [PASS][A] g_p'(1) = 1
@@ -60,3 +68,6 @@
   [PASS][B] forbidden promotion strings absent  -- found=[]
 
 TOTAL: PASS=49 FAIL=0
+
+----- stderr -----
+

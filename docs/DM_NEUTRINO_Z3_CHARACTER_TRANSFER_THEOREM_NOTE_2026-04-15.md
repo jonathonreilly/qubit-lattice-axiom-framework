@@ -1,5 +1,7 @@
 # DM Neutrino `Z_3` Character-Transfer Theorem
 
+**Claim type:** positive_theorem
+
 **Date:** 2026-04-15  
 **Status:** exact theorem on the activation law of the invented phase-lift
 family  

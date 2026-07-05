@@ -108,20 +108,23 @@ in any input is consistent with class `(C)`.
 {{RUNNER_SOURCE}}
 ```
 
-### 3b. Helper runner sources (transitive imports from the primary runner)
+### 3b. Helper runner sources and cache excerpts
 
 Primary runners often `import` from helper modules in `scripts/*.py`.
 Without their source, you cannot verify what the imported functions
 actually compute, and the chain reduces to opaque calls — which forces
 class `(C)` on packet-incompleteness grounds even when the chain is
-sound. The audit ledger row exposes a `helper_runner_paths` field
-listing the transitive set of `scripts/X.py` paths the audit packet
-builder is required to include alongside the primary runner.
+sound. Some legacy rows also register load-bearing sibling runner
+artifacts that are not imports of the primary runner. The audit ledger
+row exposes a `helper_runner_paths` field listing the `scripts/X.py`
+paths the audit packet builder is required to include alongside the
+primary runner.
 
-The full source of each helper script is included below, one per
-section, in the same order as `helper_runner_paths` in the ledger row.
+The full source and SHA-pinned cache excerpt for each helper script is
+included below, one per section, in the same order as
+`helper_runner_paths` in the ledger row.
 
-```python
+```text
 {{HELPER_RUNNER_SOURCES}}
 ```
 
@@ -241,7 +244,7 @@ Return a single JSON object with exactly these fields. No other prose.
   "decoration_parent_claim_id": "<claim_id of the upstream parent if verdict = audited_decoration, else null>",
   "open_dependency_paths": ["<note path of any cited authority that is itself support / open / conditional>"],
   "auditor_confidence": "<low | medium | high>",
-  "notes_for_re_audit_if_any": "<for audited_conditional, prefix exactly one repair class from missing_dependency_edge, dependency_not_retained, missing_bridge_theorem, scope_too_broad, runner_artifact_issue, compute_required, other, then name the cheapest next repair action; otherwise short note flagging anything a second auditor should re-check, or empty>"
+  "notes_for_re_audit_if_any": "<for audited_conditional and audited_renaming, prefix exactly one repair class from missing_dependency_edge, dependency_not_retained, missing_bridge_theorem, scope_too_broad, runner_artifact_issue, compute_required, other, then name the cheapest next repair action; if that action is dependent-side (for example narrowing downstream citing sentences), it must also name adding a dated downstream-hygiene line to this note's own boundary, because only this note's own hash drift (or a dispatcher sidecar) re-enters the row into the audit queue; otherwise short note flagging anything a second auditor should re-check, or empty>"
 }
 ```
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py
-runner_sha256: e7416f0f081105fc8e27d51a530282b25f411ea2dcccb7fbad8f2235e2b8c91e
+runner_sha256: 2642f69602fdecaaffb3c979dfe80e6068d61bcbf5def1e7ba691a5659847ba7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.38
+elapsed_sec: 2.12
 status: ok
 ----- stdout -----
 
@@ -60,8 +60,18 @@ PART G -- scope honesty: what is NOT proved here
   [PASS] G1 named open: 2-component blocks evade the scalar monomial lemma (split-step exists)  --  3D Weyl-block enumeration is a separate cycle; 1D/per-axis theorem only
   [PASS] G2 positive-transfer ticks and unitary ticks are distinct objects (P2 is a named reading)  --  any OS0 c_t/c_s consequence additionally uses the named first-order Wick/readout bridge
 
+PART H -- source-side premise-discharge wiring and status firewall
 ==============================================================================
-SCORECARD: PASS=29 FAIL=0
+  [PASS] H1 target note wires both 2026-06-15 premise-discharge candidate packets  --  P1/P4 and P2/P3 now have explicit source packets for re-audit
+  [PASS] H2 all-period site-license packet states the finite-period flat-or-saturating discharge without status overreach  --  candidate packet narrows P1/P4 but keeps license/unitarity as named readings
+  [PASS] H3 tick-unitarity packet reduces P2/P3 to spectrum-reflection transport plus channel envelope  --  candidate packet narrows P2/P3 without bundling OS0 c_t/c_s
+  [PASS] H4 target source keeps primitive retirement, B-W, and audit authority firewalled  --  repair is source-side wiring only, not a retained-status claim
+  [PASS] H5 target source wires the B-W bridge-chain packets as explicit markdown dependencies  --  re-audit now has concrete upstream rows for the old B-W residual
+  [PASS] H6 B-W bridge packet reduces OS0 identification to W-IR while refuting full Wick pairing  --  B-W is no longer a naked bridge, but its residual remains named
+  [PASS] H7 WIR and realization packets expose the remaining readings without primitive retirement  --  bridge residual is now record-stack/realization/unit readings, not hidden OS0 prose
+
+==============================================================================
+SCORECARD: PASS=36 FAIL=0
 ==============================================================================
 
 ----- stderr -----

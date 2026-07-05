@@ -1,0 +1,90 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_nonlinear_tensor_observable_class_no_go_2026_06_21.py
+runner_sha256: 860e24a915606bf04bcea7a8c81a27855aa687208b35003f14a8941846462443
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+==============================================================================
+FRONTIER: Quark Route-2 nonlinear tensor-observable class no-go
+==============================================================================
+
+==============================================================================
+PART 1: Reduced carrier geometry and rho_E coefficient scan
+==============================================================================
+  E-shell  = (Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))
+  E-center = (Fraction(1, 1), Fraction(0, 1), Fraction(1, 6), Fraction(0, 1))
+  T-shell  = (Fraction(0, 1), Fraction(1, 1), Fraction(0, 1), Fraction(0, 1))
+  T-center = (Fraction(0, 1), Fraction(1, 1), Fraction(0, 1), Fraction(1, 6))
+  missing direction = E-center - E-shell = (Fraction(0, 1), Fraction(0, 1), Fraction(1, 6), Fraction(0, 1))
+  [PASS] Full endpoint carrier rank is 4  (rank=4)
+  [PASS] E-center-blind carrier rank is 3  (rank=3)
+  [PASS] E-center direction is not in the blind carrier span  (adding E-center raises the rank)
+  blind generator affine coefficients:
+    E-shell: ((Fraction(1, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1)))
+    T-shell: ((Fraction(0, 1), Fraction(0, 1)), (Fraction(-2, 1), Fraction(0, 1)))
+    T-center: ((Fraction(0, 1), Fraction(0, 1)), (Fraction(-5, 3), Fraction(0, 1)))
+    E-center: ((Fraction(1, 1), Fraction(1, 6)), (Fraction(0, 1), Fraction(0, 1)))
+  [PASS] Every blind generator has zero rho_E coefficient in both readout channels
+  [PASS] The E-center generator has the unique nonzero rho_E coefficient 1/6  (E-center affine coefficients=((Fraction(1, 1), Fraction(1, 6)), (Fraction(0, 1), Fraction(0, 1))))
+
+==============================================================================
+PART 2: Finite tensor-polynomial invariance on the blind class
+==============================================================================
+  rho_E= -7/3: E-shell=(Fraction(1, 1), Fraction(0, 1)), T-shell=(Fraction(0, 1), Fraction(-2, 1)), T-center=(Fraction(0, 1), Fraction(-5, 3)), E-center=(Fraction(11, 18), Fraction(0, 1))
+  [PASS] rho_E=-7/3 has the same blind tensor-generator signature
+  rho_E=   -1: E-shell=(Fraction(1, 1), Fraction(0, 1)), T-shell=(Fraction(0, 1), Fraction(-2, 1)), T-center=(Fraction(0, 1), Fraction(-5, 3)), E-center=(Fraction(5, 6), Fraction(0, 1))
+  [PASS] rho_E=-1 has the same blind tensor-generator signature
+  rho_E=    0: E-shell=(Fraction(1, 1), Fraction(0, 1)), T-shell=(Fraction(0, 1), Fraction(-2, 1)), T-center=(Fraction(0, 1), Fraction(-5, 3)), E-center=(Fraction(1, 1), Fraction(0, 1))
+  [PASS] rho_E=0 has the same blind tensor-generator signature
+  rho_E=    1: E-shell=(Fraction(1, 1), Fraction(0, 1)), T-shell=(Fraction(0, 1), Fraction(-2, 1)), T-center=(Fraction(0, 1), Fraction(-5, 3)), E-center=(Fraction(7, 6), Fraction(0, 1))
+  [PASS] rho_E=1 has the same blind tensor-generator signature
+  rho_E= 21/4: E-shell=(Fraction(1, 1), Fraction(0, 1)), T-shell=(Fraction(0, 1), Fraction(-2, 1)), T-center=(Fraction(0, 1), Fraction(-5, 3)), E-center=(Fraction(15, 8), Fraction(0, 1))
+  [PASS] rho_E=21/4 has the same blind tensor-generator signature
+  rho_E= 13/2: E-shell=(Fraction(1, 1), Fraction(0, 1)), T-shell=(Fraction(0, 1), Fraction(-2, 1)), T-center=(Fraction(0, 1), Fraction(-5, 3)), E-center=(Fraction(25, 12), Fraction(0, 1))
+  [PASS] rho_E=13/2 has the same blind tensor-generator signature
+  [PASS] All tested rho_E values have one identical blind tensor-polynomial generator tuple  (tested 6 exact rho_E values)
+  [PASS] The E-center readout varies across the same rho_E values  (E-center values=(Fraction(11, 18), Fraction(5, 6), Fraction(1, 1), Fraction(7, 6), Fraction(15, 8), Fraction(25, 12)))
+  [PASS] Representative nonlinear polynomial probes are invariant on the blind class  (probe tuple=(Fraction(5, 1), Fraction(-5, 9), Fraction(61, 9), Fraction(10, 3), Fraction(301, 81), Fraction(90010, 729)))
+
+==============================================================================
+PART 3: Tensor powers and Route-2 time-factor separation
+==============================================================================
+  [PASS] Symmetric tensor powers degree 1 of blind readout images are rho_E-invariant
+  [PASS] Symmetric tensor powers degree 2 of blind readout images are rho_E-invariant
+  [PASS] Symmetric tensor powers degree 3 of blind readout images are rho_E-invariant
+  [PASS] Symmetric tensor powers degree 4 of blind readout images are rho_E-invariant
+  [PASS] Symmetric tensor powers degree 5 of blind readout images are rho_E-invariant
+  [PASS] Symmetric tensor powers degree 6 of blind readout images are rho_E-invariant
+  [PASS] Outer-product spacetime signatures with a universal time vector are invariant for blind columns  (readout ambiguity is not in the right/time factor)
+  [PASS] The same spacetime construction varies as soon as E-center is evaluated
+
+==============================================================================
+PART 4: Target equivalence and nonblind primitive firewall
+==============================================================================
+  target rho_E = 21/4
+  target q_E   = 15/8
+  target c_TE  = -8/9
+  [PASS] rho_E=21/4 is exactly equivalent to q_E=15/8  (solved rho=21/4)
+  [PASS] rho_E=21/4 is exactly equivalent to center T/E=-8/9 under the granted T-side data  (center T/E=-8/9)
+  [PASS] A nonblind E-center selector can force the target only by supplying the missing generator  (this is the open E-center lift, not a blind nonlinear closure)
+  [PASS] T-side endpoint data remain fixed while rho_E changes
+
+==============================================================================
+PART 5: Parent-surface anchors and scope guards
+==============================================================================
+  [PASS] Parent theta-to-slice note names the readout-map endpoint triple as the open theorem target
+  [PASS] Exact readout note exposes rho_E as the irreducible missing map entry
+  [PASS] E-center blindness note requires a genuine E-center lift or equivalent primitive
+  [PASS] Quadratic Schur note leaves future nonlinear observables explicitly open
+  [PASS] Factor-rigidity note localizes ambiguity in the spatial readout prefactor
+
+==============================================================================
+TOTAL: PASS=31, FAIL=0
+==============================================================================
+
+VERDICT: exact negative boundary / no-go for finite E-center-blind tensor-polynomial Route-2 observables. Nonlinearity does not by itself select rho_E=21/4; any successful nonlinear repair must introduce a nonblind E-center lift, source-domain rule, or equivalent readout primitive. This does not rule out arbitrary future nonlinear observables.
+
+----- stderr -----
+

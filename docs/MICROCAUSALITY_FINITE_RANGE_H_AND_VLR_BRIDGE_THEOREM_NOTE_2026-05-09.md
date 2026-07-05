@@ -28,12 +28,16 @@ Hamiltonian `H_hop = Σ_links H_xy + m Σ_x n̂_x` on the `Z^d`
 nearest-neighbor link family gives the **unconditional** microcausality
 bound `v_LR <= 4·e·(|m| + 2d)` (on `Z^3`: `4·e·(|m| + 6) ≈ 65.24` at
 `m -> 0`).
-(iv) **Conditional corollary, not claimed as proved:** *if* the exact
-reconstructed `H = -log(T)/a_τ` admits a carrier-compatible
-decomposition (`q <= 4`, `R <= 2`, `W <= |m| + 300`), *then*
-`v_LR <= 16·e·(|m| + 300) ≈ 1.305e4` lattice units. The exact-H
-locality bridge itself remains the open frontier; neither this note
-nor its runner constructs `-log(T)`.
+(iv) **Conditional exact-H corollary, not claimed as proved:** the
+strict finite-range carrier hypothesis previously displayed for
+`H = -log(T)/a_τ` is now known to fail on the free bilinear sector; it
+is kept only as an implication with an unsatisfied antecedent. The live
+replacement is quasilocal: if the reconstructed `H` admits bounded
+per-site weight and exponentially decaying finite-range truncation
+tails, then the finite-range lemma can be applied to `H_R` and composed
+with tail control. That composition theorem and the gauged/interacting
+exact-H locality bridge remain open; neither this note nor its runner
+constructs `-log(T)`.
 **Status authority:** independent audit lane only. This source note is
 a bounded support-and-bridge theorem; it does not set or predict an
 audit outcome.
@@ -304,22 +308,48 @@ This is a genuine microcausality statement for a Hamiltonian whose
 finite-range structure is *derived* from the framework operator
 content (Step 6), not assumed.
 
-**(F5) Conditional carrier corollary (explicit hypothesis; not claimed
-as proved).** *Hypothesis (exact-H locality bridge, OPEN):* the exact
-reconstructed `H = -log(T)/a_τ` admits a support-family decomposition
-with `q <= 4`, `R <= 2`, and `W <= W_envelope = |m| + 300`. *Under
-this hypothesis*, (F3-L2) gives
+**(F5) Conditional carrier corollary (quasilocal form; the strict
+finite-range reading is falsified on the bilinear sector).** The
+original hypothesis read: the exact reconstructed `H = -log(T)/a_τ`
+admits a support-family decomposition with `q <= 4`, `R <= 2`, and
+`W <= W_envelope = |m| + 300`. **That strict finite-range reading is
+false on the free bilinear two-step sector**: the exact `H` there has
+genuine nonzero hops at `l1`-range 4 (`|h(4,0,0)| = 5.6e-3`,
+`|h(2,2,0)| = 1.0e-2`, far above any numeric floor), so no `R <= 2`
+support-family decomposition exists. Proof and constants: claim
+`transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10`
+(`docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`;
+cited follow-up note). *Hypothesis (F5, quasilocal restatement):* the exact
+reconstructed `H = -log(T)/a_τ` is a quasilocal support family —
+bounded `q`, finite total per-site overlap weight `W_H < ∞`, and
+finite-range truncations `H_R` whose per-site tail weights decay
+exponentially in `R`. On the free bilinear two-step sector this
+quasilocal hypothesis is **discharged** by the cited note with
+explicit constants: `q = 2`, sharp rate `eta* = arcsinh(m)`,
+closed-form prefactor `C_d(eta, m) = sqrt(m^2 + (d-1) + cosh^2 eta)`,
+`W_H = ||h||_l1 < ∞` (`= 1.757278…` at `m = 0.3`, `d = 3`,
+`a_tau = 1`), and tail weights
+`W_tail(R) <= O((1+R)^{d-1} e^{-eta R})` for every
+`eta < arcsinh(m)`. *Under the strict hypothesis* — kept below
+only as the displayed implication; its antecedent is now known to be
+unsatisfiable on the bilinear sector — (F3-L2) gives
 
 ```text
     v_LR  ≤  2 · e · 4 · (|m| + 300) · 2  =  16 · e · (|m| + 300)  ≈  1.305e4              (18)
 ```
 
 lattice units as `m -> 0` (supplied surface: `16·e·(|m| + 296) ≈
-1.287e4`; displayed carrier: `16·e·(|m| + 298) ≈ 1.296e4`). The
-hypothesis itself is not proved here: BCH/Trotter commutators of local
-terms can enlarge range, and a non-perturbative finite-range or
-quasilocal estimate for the exact reconstructed `H` remains the
-recorded open frontier of the parent bridge gate.
+1.287e4`; displayed carrier: `16·e·(|m| + 298) ≈ 1.296e4`). Under the
+quasilocal restatement, the analogous lightcone follows from (F3-L2)
+applied to each truncation `H_R` (`q = 2`, `diam_l1 <= d·R`,
+`W <= W_H`) composed with Duhamel/interpolation control of the
+exponentially small tail `H - H_R`; that one-step composition theorem
+is not proved here or in the cited note. The genuine residual of (F5)
+is the **gauged / interacting sector**: the fixed-background
+`T_hat^2[U]` is not translation-invariant, so the Fourier/contour
+route of the cited note does not apply verbatim, and the
+`U`-integrated interacting log-transfer locality remains the recorded
+open frontier of the parent bridge gate.
 
 ## Proof
 
@@ -808,6 +838,21 @@ its PASS lines bears on the truth of the (F5) hypothesis.
   Hamiltonian, checks the proved bounds against exact commutator
   norms, adds the long-range falsification leg and the `Z^3` block
   check.
+- **2026-06-10** — (F5) restated quasilocally (follow-up, this
+  revision). The strict finite-range reading of the (F5) hypothesis
+  (`q <= 4`, `R <= 2`, `W <= |m| + 300` for the exact
+  `H = -log(T)/a_τ`) is **falsified on the free bilinear two-step
+  sector**: the exact `H` has genuine `l1`-range-4 hops
+  (`|h(4,0,0)| = 5.6e-3`). On that sector the quasilocal form is
+  proved with sharp rate `arcsinh(m)`, explicit prefactor, finite
+  overlap weight `W_H = ||h||_1`, and exponentially small truncation
+  tails by
+  `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10`
+  (`docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`,
+  cited follow-up note). The genuine residual is the gauged /
+  interacting `T[U]` sector (not translation-invariant; the Fourier
+  route fails there). No other section renumbered or restructured;
+  runner untouched.
 
 ## Audit dependency repair links
 

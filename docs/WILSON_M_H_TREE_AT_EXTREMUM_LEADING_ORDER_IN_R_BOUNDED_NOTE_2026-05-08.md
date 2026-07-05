@@ -68,6 +68,26 @@ a Wilson coefficient that is not part of the canonical surface). It
 records what the leading-order Wilson correction *would be* given a
 nonzero `r` plus the uniform admission.
 
+## Post-audit readout-boundary repair (2026-06-15)
+
+The post-audit repair separates the part this row can support natively
+from the physical reading it cannot support. The repaired source scope is
+the Wilson-shifted diagnostic curvature scale `m_curv,W`, not a
+physical Higgs-pole mass. The normalized readout is certified in
+[`WILSON_EXTREMUM_CURVATURE_READOUT_BOUNDARY_CERTIFICATE_2026-06-15.md`](WILSON_EXTREMUM_CURVATURE_READOUT_BOUNDARY_CERTIFICATE_2026-06-15.md):
+
+- the Wilson coefficient normalization used here is only the symbolic
+  upstream staircase normalization `W(hw) = 2 r hw`; no numerical
+  Wilson coefficient is derived;
+- `N_taste = 16` is used only as the declared all-corners diagnostic
+  denominator in the parent D1 curvature-scale definition;
+- the physical Higgs-pole readout, channel-selection principle, and
+  nonzero value of `r` remain outside this row.
+
+Thus equations (1)-(3) are kept here as a bounded source-side
+curvature-scale calculation under an explicit boundary surface. The
+post-audit repair does not claim to close the +12% Higgs gap.
+
 ## Proof-Walk
 
 | Step | Load-bearing input | Lattice-action input? |
@@ -134,12 +154,16 @@ The runner reports this leading-order matching value with `m_H_PDG`
 clearly labelled as a comparison input (no PDG-pin promotion to
 load-bearing).
 
-(D) **Perturbative-expansion validity boundary:** the leading-order
-expansion (3) is valid when `(3/2)(r/u_0)^2 << 1`, i.e. `r/u_0 << 1`,
-or roughly `r < u_0 / sqrt(3) ≈ 0.51` at `u_0 = 0.8776`. At `r = O(u_0)`
-the expansion fails (the all-orders sum is needed). The runner exhibits
-the breakdown by direct comparison of the closed-form (2) with the
-leading-order (3) at `r ∈ {0.1, 0.235, 0.5, 0.8}`.
+(D) **Perturbative-expansion validity boundary and Taylor residuals:**
+the leading-order expansion (3) is valid when
+`(3/2)(r/u_0)^2 << 1`, i.e. `r/u_0 << 1`. The closed square-root form is
+real only while `1 - 3 r^2/u_0^2 > 0`, but positivity alone is not a
+Taylor-validity certificate. The repaired runner therefore compares
+`sqrt(1 - x)` with the first and second Taylor truncations
+`1 - x/2` and `1 - x/2 - x^2/8`, where `x = 3 r^2/u_0^2`, and checks
+the expected residual coefficients `1/8` and `1/16`. It also confirms
+the `O(r^4)` residual scaling between the all-orders Wilson closed form
+and the leading square-form approximation.
 
 ## Dependencies
 
@@ -150,6 +174,11 @@ leading-order (3) at `r ∈ {0.1, 0.235, 0.5, 0.8}`.
 - [`WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md`](WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md)
   for the staircase multiplicities `binomial(4, k)` and Wilson mass
   shifts `2 r k`.
+- [`WILSON_EXTREMUM_CURVATURE_READOUT_BOUNDARY_CERTIFICATE_2026-06-15.md`](WILSON_EXTREMUM_CURVATURE_READOUT_BOUNDARY_CERTIFICATE_2026-06-15.md)
+  for the post-audit readout split: equations (1)-(3) are a diagnostic
+  curvature-scale calculation `m_curv,W`, with the physical Higgs-pole
+  readout, channel-selection principle, and nonzero Wilson coefficient
+  left outside scope.
 - [`HIGGS_MASS_FROM_AXIOM_NOTE.md`](HIGGS_MASS_FROM_AXIOM_NOTE.md)
   for the parent tree-level setup, the uniform-`N_taste = 16` channel
   identification (eqs. `[4]–[6]`), and the headline `v / (2 u_0) =
@@ -164,6 +193,12 @@ leading-order (3) at `r ∈ {0.1, 0.235, 0.5, 0.8}`.
   itself a non-derived admission.
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   for the staggered-Dirac realization gate context.
+
+Context only, not a one-hop authority:
+`WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md`
+records the all-orders closed-form expression used for a runner
+consistency check. It is not a load-bearing dependency of this
+leading-order note, avoiding a dependency cycle with that all-orders row.
 - `MINIMAL_AXIOMS_2026-05-03.md`
   for the framework baseline (physical Cl(3) local algebra plus Z^3
   spatial substrate).
@@ -185,6 +220,10 @@ This note does not close:
   3. a non-zero Wilson coefficient `r`, which is **not** part of the canonical pure-Kogut-Susskind staggered setup of the parent Higgs note's eqs. `[1]–[2]`.
   Any of (1), (2), (3) failing voids the closure;
 - the physical Higgs mass `m_H` numerical value (`m_H_PDG = 125.10` is treated as a comparison input only, not a derivation input);
+- the physical Higgs-pole readout from the diagnostic curvature scale
+  `m_curv,W`;
+- the channel-selection principle that would turn the all-corners
+  diagnostic denominator into a physical Higgs-channel derivation;
 - the all-orders Wilson correction to `m_H_tree`;
 - the value of the Wilson coefficient `r` itself (a separate normalization choice; the `r ≈ 0.235` value is a *leading-order matching value under the channel admission*, not a derivation of `r`);
 - the plaquette mean-field link `u_0` numerical value;

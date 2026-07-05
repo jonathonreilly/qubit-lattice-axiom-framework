@@ -67,10 +67,12 @@ def index_checks() -> None:
     section("Closeout index checks")
     text = read_rel("docs/POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md")
     report("six PR stack entries are expected", len(STACK) == 6)
+    report("index declares audit-canonical meta metadata", "**Type:** meta" in text and "**Claim type:** meta" in text)
     for item in STACK:
         report(f"index contains PR #{item.number}", f"/pull/{item.number}" in text)
         report(f"index contains title fragment for #{item.number}", item.title_fragment in text)
         report(f"index contains status for #{item.number}", item.status in text)
+        report(f"index contains cached summary for #{item.number}", item.runner_summary in text)
     report("index states stable location is not selected dial", "stable location is not selected dial" in text)
     report("index states no audit verdicts are applied", "does not apply audit verdicts" in text)
 

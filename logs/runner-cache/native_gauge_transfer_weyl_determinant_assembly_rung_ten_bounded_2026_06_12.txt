@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_2026_06_12.py
+runner_sha256: 82821fa628c8fa626e080746a1d2bb7804b35578dd6eb35a87c5886510bba5a5
+timeout_sec: 540
+exit_code: 0
+elapsed_sec: 7.36
+status: ok
+----- stdout -----
+Native gauge-transfer Weyl-determinant assembly rung-ten runner
+Numerical rows are witnesses only; no fitted K_W is promoted.
+
+PASS: source note exists
+      docs/NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_ASSEMBLY_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md
+PASS: note carries exact status-authority line
+PASS: note declares open_gate claim type
+PASS: note states H_scalar is a dependency and not re-proved here
+PASS: repo-native one-hop authority files are present
+PASS: note does not use .claude tmp refs as authority paths
+PASS: W85 and W86 are context-only route surfaces
+PASS: authority quote anchors are present
+PASS: note gives determinant propagation formulas
+PASS: note refuses to promote the truncated determinant bound into K_W
+PASS: note names the Route A reduced spectral ingredient
+PASS: note gives both readings of H_scalar ambiguity
+PASS: note differentiates new content from prior notes
+PASS: note includes no-go discipline gate
+PASS: note avoids forbidden overreach and audit-grade phrases
+      scanned exact forbidden fragments
+PASS: canonical comparator is absent from note and runner
+PASS: runner/cache paths are named in the note
+determinant_multilinearity_rows
+  beta= 96 p= 6 q= 5 mode=  0 |detG|=4.018513646871e-07 hadamard_cols=1.378432693682e-04 cofactor_looseness=3.430205e+02
+PASS: finite determinant multilinearity bound holds for beta=96, mode=0
+  beta= 96 p= 6 q= 5 mode= -5 |detG|=1.516571206708e-06 hadamard_cols=4.941386088169e-04 cofactor_looseness=3.258262e+02
+PASS: finite determinant multilinearity bound holds for beta=96, mode=-5
+  beta=192 p=10 q= 8 mode= -8 |detG|=1.914637703062e-07 hadamard_cols=1.352348806026e-04 cofactor_looseness=7.063210e+02
+PASS: finite determinant multilinearity bound holds for beta=192, mode=-8
+true_determinant_witness_rows
+  beta= 48 (p,q)=( 4, 3) exact_r=25.894978539180 saddle=26.882522035981 rel_diff=-3.673552263733e-02
+  beta= 96 (p,q)=( 6, 5) exact_r=73.579022615880 saddle=75.023779892741 rel_diff=-1.925732452998e-02
+  beta=192 (p,q)=(10, 8) exact_r=207.380571748836 saddle=209.688188327461 rel_diff=-1.100499077717e-02
+PASS: true determinant rows show decreasing relative exact-to-saddle residual
+      finite consistency witness only
+active_grid_witness_rows
+  beta= 48 cap= 8 max_sqrt_beta_scaled_resid=2.710005629592e-02 at=(5,5) exact=6.896246186280e-02 saddle=7.287401806218e-02
+  beta= 96 cap=12 max_sqrt_beta_scaled_resid=1.907301888919e-02 at=(7,7) exact=7.405901338733e-02 saddle=7.600564522620e-02
+  beta=192 cap=17 max_sqrt_beta_scaled_resid=1.337437050442e-02 at=(10,11) exact=7.233605140744e-02 saddle=7.330126345881e-02
+PASS: active-grid witness residual decreases across sampled beta rows
+      finite consistency witness only
+falsifier_rows_beta_96_p_6_q_5
+  correct exact determinant ratio: 0.078225286971
+  correct saddle N_c=3: 0.079761275743
+  wrong N_c=2: 0.122681758828
+  wrong N_c=4: 0.051856618041
+  wrong dimension omitted: 0.000292165845
+  wrong determinant size 2x2: 0.005101635871
+  wrong lambda=(p,q,0): 0.030362625798
+PASS: wrong N_c substitutions visibly differ from the true row
+PASS: wrong determinant size and wrong highest weight visibly differ from the true row
+PASS: wrong dimension substitution visibly differs from the true row
+PASS: final verdict is necessary-but-not-sufficient
+
+TOTAL: PASS=26, FAIL=0
+
+----- stderr -----
+

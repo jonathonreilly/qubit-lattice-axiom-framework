@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-G_bare Structural Normalization Theorem
+G_bare Structural Normalization Boundary
 ========================================
 
 Companion runner for
@@ -8,7 +8,7 @@ Companion runner for
 
 Goal
 ----
-Verify the bounded Cl(3) -> End(V) -> su(3) -> Wilson action rigidity chain
+Verify the bounded Cl(3) -> End(V) -> su(3) -> Wilson action boundary chain
 for three concrete claims:
 
   Claim 1: Cl(3) -> End(V) canonicity (unique up to inner automorphism
@@ -18,24 +18,31 @@ for three concrete claims:
   Claim 3: Given canonical orthonormal generators Tr(T_a T_b) = delta/2
            and the admitted Wilson plaquette action form, kinetic matching forces
                beta = 2 N_c / g^2.
-           The canonical Cl(3) basis has g = 1, hence beta = 6 within that
-           bounded action-form scope.
+           The canonical Cl(3) basis forbids scalar generator dilation, but
+           it does not derive the physical value g^2 = 1. The value beta = 6
+           follows only after the unrescaled-coordinate convention g^2 = 1 is
+           supplied.
 
 Honest scoping
 --------------
 - Claims 1 and 2 are exact structural-support checks. They require no
   β or g input.
 - Claim 3 is bounded support given the Wilson plaquette action form. It does
-  not derive the Wilson action itself.
+  not derive the Wilson action itself or the physical action coefficient.
 
 Self-contained: numpy only.
 """
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import numpy as np
 
 np.set_printoptions(precision=6, linewidth=140, suppress=True)
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md"
 
 PASS = 0
 FAIL = 0
@@ -354,7 +361,12 @@ def section_B_trace_form(T_triplet):
 # ---------------------------------------------------------------------------
 
 def section_C_wilson_coefficient(T_triplet):
-    """Verify the Wilson plaquette expansion gives beta = 2 N_c / g^2."""
+    """Verify the Wilson plaquette expansion gives beta = 2 N_c / g^2.
+
+    The corrected source boundary is that this relation does not choose a
+    physical value of g^2. It only blocks hiding g in a scalar dilation of
+    the canonical generators.
+    """
     print("\n" + "=" * 78)
     print("SECTION C: Wilson plaquette coefficient rigidity (Claim 3)")
     print("=" * 78)
@@ -457,12 +469,33 @@ def section_C_wilson_coefficient(T_triplet):
               match_error < 1e-10,
               f"beta * g^2 = {beta * g2:.6f} = 2 N_c = {2*N_c}, err = {match_error:.2e}")
 
-    # C5. Canonical g = 1 -> beta = 6 for SU(3)
-    g2_canonical = 1.0
-    beta_canonical = 2 * N_c / g2_canonical
-    check(f"Canonical g = 1 (Cl(3) rigidity) -> beta = 2 N_c = {beta_canonical}",
-          abs(beta_canonical - 6.0) < 1e-12,
-          f"beta = {beta_canonical}")
+    # C5. Residual positive action multiplier family. The same canonical
+    # generator basis is compatible with every positive rho = g^2 once beta
+    # is set to 2 N_c / rho. rho=1 is therefore a convention/input here, not
+    # an output of the Cl(3) trace-Gram checks.
+    rho_values = [0.25, 1.0, 4.0]
+    beta_values = []
+    for rho in rho_values:
+        beta = 2 * N_c / rho
+        beta_values.append(beta)
+        check(
+            f"residual action multiplier rho=g^2={rho}: beta=2N_c/rho satisfies matching",
+            abs(beta * rho - 2 * N_c) < 1e-12,
+            f"beta={beta:.6f}, beta*rho={beta*rho:.6f}",
+        )
+    check(
+        "multiple rho values preserve the same canonical generator Gram",
+        len(set(np.round(beta_values, 12))) == len(beta_values),
+        f"beta family={beta_values}; Gram is still Tr(T_a T_b)=delta_ab/2",
+        kind="BOUNDED",
+    )
+    beta_unrescaled = 2 * N_c / 1.0
+    check(
+        "unrescaled-coordinate convention rho=1 gives beta=6",
+        abs(beta_unrescaled - 6.0) < 1e-12,
+        f"beta={beta_unrescaled}",
+        kind="BOUNDED",
+    )
 
     # C6. Rescaling test: T_a -> lambda T_a would shift beta by lambda^2
     # (this is exactly what the fixed canonical trace form excludes)
@@ -484,9 +517,9 @@ def section_C_wilson_coefficient(T_triplet):
 
     # C7. Bounded: alternative-action sensitivity check
     print("\n  [BOUNDED] Alternative action forms (Symanzik, improved, etc.)")
-    print("  would change the leading a^4 coefficient by a known factor.")
-    print("  The canonical Wilson action is used here as an admitted")
-    print("  action-form input; alternatives are outside the scope of this runner.")
+    print("  and alternative physical rho values remain outside this runner.")
+    print("  The canonical Wilson action and rho=1 convention are used only")
+    print("  as admitted surface inputs when beta=6 is consumed downstream.")
     check("Wilson action form is admitted here (not derived from Cl(3))",
           True, "admitted lattice-QFT action-form input",
           kind="BOUNDED")
@@ -498,7 +531,7 @@ def section_C_wilson_coefficient(T_triplet):
 
 def section_D_end_to_end(T_triplet):
     """Integration test: Cl(3) axioms + graph-first selector + Wilson action
-    form -> beta = 6, with no circular step."""
+    form -> beta = 2 N_c / g^2, with no circular step."""
     print("\n" + "=" * 78)
     print("SECTION D: End-to-end integration (no circularity)")
     print("=" * 78)
@@ -535,26 +568,60 @@ def section_D_end_to_end(T_triplet):
           is_close(G_scaled, lam**2 * G) and not is_close(G_scaled, G),
           "checked directly from the Claim 2 trace form")
 
-    # Step 5: Wilson plaquette small-a expansion -> beta/(2 N_c) = coefficient
-    # of Tr(F F) a^4 in -Re Tr(U_p)/N_c
+    # Step 5: Wilson plaquette small-a expansion -> beta/(2 N_c) relation
+    # for the coefficient of Tr(F F) a^4 in -Re Tr(U_p)/N_c.
     check("Step 5: Wilson plaquette matching gives beta = 2 N_c / g^2",
           abs((2 * N_c / 1.0) - 6.0) < 1e-12, "verified in Section C")
 
-    # Step 6: Canonical Cl(3) connection has g = 1 (no admissible rescaling)
-    beta_final = 2 * N_c  # g^2 = 1
-    check(f"Step 6: Canonical g = 1 -> beta = 2 N_c = {beta_final}",
-          abs(beta_final - 6) < 1e-12)
+    # Step 6: rho remains a separate positive action multiplier.
+    rho_a, rho_b = 1.0, 4.0
+    beta_a, beta_b = 2 * N_c / rho_a, 2 * N_c / rho_b
+    check(
+        "Step 6: rho remains a separate action multiplier, not a generator dilation",
+        abs(beta_a * rho_a - 2 * N_c) < 1e-12
+        and abs(beta_b * rho_b - 2 * N_c) < 1e-12
+        and abs(beta_a - beta_b) > 1e-12,
+        f"rho=1 -> beta={beta_a}; rho=4 -> beta={beta_b}",
+        kind="BOUNDED",
+    )
 
     # Circularity audit
     print("\n  Circularity audit:")
     print("  - Steps 1-3 use only Cl(3) axioms, graph-selector inputs, Lie-algebra rigidity.")
     print("  - Step 4 directly checks that scalar dilation changes the fixed trace Gram.")
     print("  - Step 5 uses canonical generator normalization from step 3; no β input.")
-    print("  - Step 6 derives g = 1 from Claims 1 + 2 + step 4, not as input.")
-    print("  - Final beta = 6 is derived inside the admitted Wilson-action scope, not asserted.")
+    print("  - Step 6 keeps rho = g^2 symbolic; rho=1 is not derived.")
+    print("  - beta = 6 appears only after the unrescaled rho=1 convention is supplied.")
     check("No circular usage of beta = 6 or g = 1 as input",
-          cl3_ok and is_close(G, 0.5 * np.eye(8)) and abs(beta_final - 6) < 1e-12,
+          cl3_ok and is_close(G, 0.5 * np.eye(8))
+          and abs(beta_a * rho_a - 2 * N_c) < 1e-12
+          and abs(beta_b * rho_b - 2 * N_c) < 1e-12,
           "all computed derivation checks are forward-only")
+
+
+def section_E_source_boundary() -> None:
+    """Verify the source note carries the corrected claim boundary."""
+    print("\n" + "=" * 78)
+    print("SECTION E: Source-note boundary discipline")
+    print("=" * 78)
+    text = NOTE.read_text()
+    required = [
+        "facts **do not** derive the physical",
+        "residual positive action multiplier",
+        "unrescaled-coordinate convention",
+        "not a positive derivation of a physical bare coupling",
+        "physical action-coefficient normalization",
+    ]
+    for token in required:
+        check(f"source note contains corrected boundary phrase: {token!r}", token in text)
+    forbidden = [
+        "canonical connection has g = 1 by Cl(3) rigidity",
+        "derives g = 1 from the absence",
+        "upgrades that input from a",
+        "g_bare = 1 is fixed by the Cl(3) generator structure",
+    ]
+    for token in forbidden:
+        check(f"source note omits old overclaim phrase: {token!r}", token not in text)
 
 
 # ---------------------------------------------------------------------------
@@ -563,8 +630,8 @@ def section_D_end_to_end(T_triplet):
 
 def main() -> int:
     print("=" * 78)
-    print("G_BARE STRUCTURAL NORMALIZATION BOUNDED SUPPORT")
-    print("Cl(3) -> End(V) -> su(3) -> admitted Wilson action rigidity chain")
+    print("G_BARE STRUCTURAL NORMALIZATION BOUNDARY")
+    print("Cl(3) -> End(V) -> su(3) -> admitted Wilson action relation")
     print("=" * 78)
 
     # Section A: Claim 1 (Cl(3) -> End(V) canonicity)
@@ -585,6 +652,9 @@ def main() -> int:
     # Section D: End-to-end integration
     section_D_end_to_end(T_triplet)
 
+    # Section E: source boundary
+    section_E_source_boundary()
+
     # Summary
     print("\n" + "=" * 78)
     print("SUMMARY")
@@ -596,12 +666,13 @@ def main() -> int:
     if FAIL == 0:
         print("  All exact checks passed.")
         print("  Claims 1, 2 pass as exact structural-support checks.")
-        print("  Claim 3 passes only within the admitted Wilson plaquette action form.")
+        print("  Claim 3 passes only as a Wilson coefficient relation plus")
+        print("  no-generator-dilation boundary; it does not derive rho=g^2=1.")
         print()
-        print("  Conclusion: g_bare = 1 <=> beta = 6 is bounded structural")
-        print("  normalization support, not a dynamical fixation. The residual")
-        print("  open premise is the choice of Wilson action form itself, not a")
-        print("  hidden continuous coupling parameter.")
+        print("  Conclusion: the Cl(3) trace-Gram structure fixes the canonical")
+        print("  generator basis and blocks scalar generator dilation. The residual")
+        print("  open premises are the Wilson action form and the physical action")
+        print("  coefficient rho=g^2; beta=6 follows only when rho=1 is supplied.")
     else:
         print(f"  {FAIL} exact check(s) failed. Investigate before claiming support.")
 

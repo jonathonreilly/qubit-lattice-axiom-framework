@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """Narrow predictor scan for complex-action companions on structured families.
 
-This is a review-safe comparison card, not a theorem. It compares the retained
-complex-positive slices against diagnosed complex boundaries and asks whether a
-simple low-dimensional predictor exists.
+This is a review-safe bounded comparison card, not an independent theorem.
+It compares retained/repaired complex-positive slices against diagnosed
+complex boundaries and asks whether a simple low-dimensional predictor exists.
 
-The retained conclusion in this repo is that the smallest stable discriminator
-is an anchor-local crossover: exact gamma=0 baseline plus TOWARD -> AWAY on the
-same retained row. Coarser metrics such as basin width, seed selectivity, and
-sign-law portability are useful context but do not separate the complex-positive
-families from the diagnosed boundaries by themselves.
+The bounded candidate conclusion is that the smallest stable discriminator is
+an anchor-local crossover: exact gamma=0 baseline plus TOWARD -> AWAY on the
+same scoped or repaired sampled row. Coarser metrics such as basin width, seed
+selectivity, and sign-law portability are useful context but do not separate the
+complex-positive families from the diagnosed boundaries by themselves.
 """
 
 from __future__ import annotations
@@ -33,13 +33,13 @@ class FamilyRow:
 
 ROWS: list[FamilyRow] = [
     FamilyRow(
-        family="Original grown basin",
+        family="Claude grown-row companion",
         retained_complex="yes",
         exact_gamma0="yes",
-        anchor_crossover="yes on nearby rows",
-        basin_shape="narrow and selective",
-        discriminator_note="anchor-local crossover survives on a nearby row neighborhood",
-        source_notes="docs/GROWN_TRANSFER_BASIN_NOTE.md; docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md",
+        anchor_crossover="yes on the scoped row",
+        basin_shape="single grown row",
+        discriminator_note="anchor-local crossover survives on the scoped grown row",
+        source_notes="docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md",
     ),
     FamilyRow(
         family="Second-family complex",
@@ -81,9 +81,9 @@ ROWS: list[FamilyRow] = [
         family="Fifth family radial",
         retained_complex="yes",
         exact_gamma0="yes",
-        anchor_crossover="yes on the anchor row",
-        basin_shape="narrow anchor-row basin",
-        discriminator_note="anchor-local crossover survives, but only at the center row",
+        anchor_crossover="yes on the drift-0.20 sampled pair",
+        basin_shape="drift-selective sampled pair",
+        discriminator_note="crossover survives only on the drift-0.20 sampled rows",
         source_notes="docs/FIFTH_FAMILY_COMPLEX_NOTE.md; docs/FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md",
     ),
 ]
@@ -93,8 +93,8 @@ def render_markdown(rows: list[FamilyRow]) -> str:
     lines = [
         "# Complex Selectivity Predictor Note",
         "",
-        "**Date:** 2026-04-06",
-        "**Status:** retained narrow predictor card for complex-action survival on structured families",
+        "**Date:** 2026-04-06; source-scope repair 2026-06-10",
+        "**Status:** bounded narrow predictor card for complex-action survival on structured families",
         "",
         "## Question",
         "",
@@ -117,17 +117,17 @@ def render_markdown(rows: list[FamilyRow]) -> str:
             "- exact gamma=0 baseline is necessary, but not sufficient",
             "- signed-source portability and weak-field linearity do not predict complex survival by themselves",
             "- support width and seed selectivity are useful context, but they do not separate the positive families from the diagnosed boundaries cleanly",
-            "- the smallest stable discriminator we found is the anchor-local crossover: exact gamma=0 baseline plus TOWARD -> AWAY on the retained anchor row",
+            "- the smallest stable discriminator we found is the anchor-local crossover: exact gamma=0 baseline plus TOWARD -> AWAY on the scoped or repaired sampled row",
             "",
             "## Exact Mismatch",
             "",
-            "- the original grown basin and the fifth-family radial slice retain the crossover only in a narrow local neighborhood",
+            "- the Claude grown row and fifth-family radial slice retain the crossover only on their scoped/repaired sampled surfaces",
             "- the second-family complex slice retains it on the anchor row but loses it in the tighter boundary window",
             "- the alt, third, and fourth families all fail the same crossover test in structurally different ways",
             "",
             "## Final Verdict",
             "",
-            "**retained narrow predictor: complex-action survival requires an anchor-local crossover; coarser basin geometry does not predict it**",
+            "**bounded narrow predictor candidate: complex-action survival requires an anchor-local crossover on the scoped or repaired sampled row; coarser basin geometry does not predict it**",
         ]
     )
     return "\n".join(lines)
@@ -136,8 +136,8 @@ def render_markdown(rows: list[FamilyRow]) -> str:
 def render_text(rows: list[FamilyRow]) -> str:
     lines = [
         "COMPLEX SELECTIVITY PREDICTOR NOTE",
-        "Date: 2026-04-06",
-        "Status: retained narrow predictor card for complex-action survival on structured families",
+        "Date: 2026-04-06; source-scope repair 2026-06-10",
+        "Status: bounded narrow predictor card for complex-action survival on structured families",
         "",
         "Question:",
         "What is the smallest review-safe discriminator for when a complex-action companion survives on a structured family?",
@@ -158,11 +158,11 @@ def render_text(rows: list[FamilyRow]) -> str:
             "",
             "Safe read:",
             "- exact gamma=0 baseline is necessary, but not sufficient",
-            "- anchor-local crossover is the smallest stable discriminator",
+            "- anchor-local crossover on the scoped or repaired sampled row is the smallest stable discriminator",
             "- basin width and seed selectivity do not predict complex survival cleanly",
             "",
             "Final verdict:",
-            "retained narrow predictor: complex-action survival requires an anchor-local crossover; coarser basin geometry does not predict it",
+            "bounded narrow predictor candidate: complex-action survival requires an anchor-local crossover on the scoped or repaired sampled row; coarser basin geometry does not predict it",
         ]
     )
     return "\n".join(lines)
@@ -177,7 +177,7 @@ def main() -> int:
     payload = {
         "rows": [row.__dict__ for row in ROWS],
         "summary": {
-            "predictor": "anchor-local crossover",
+            "predictor": "anchor-local crossover on the scoped or repaired sampled row",
             "exact_gamma0_necessary": True,
             "coarser_predictor_found": False,
             "shared_result": "complex-action survival is anchor-local and boundary-sensitive",

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/probe_kawamoto_smit_phase_forcing.py
-runner_sha256: 10c0eaee6dc563a031fdefc13e9452b436ef600b11cc18088d32a260bec545bd
+runner_sha256: aa59fba311825d19b01bafb7c9a72b497762a75f504473d48511f724b41b87fe
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.65
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 ========================================================================
@@ -74,7 +74,7 @@ unitary diagonalization) are declared, not derived (B2, B3).
 [PASS] (47) E: U(1) generalization (Remark R2): complex local phase gauge transform of eta^0 scalarizes with T'(x)=g(x)T(x); phases are unimodular and not all real; path-product recovery returns the SAME real representative eta^0
 
 RESIDUAL (declared-open): P-KIN/P-SD kinetic-class premises (B2, B3) are declared, not derived from Lattice + Quantum alone.
-RESIDUAL (declared-open): substep-1 two-candidate surface / U4 bridge (B1) enters as a bounded upstream input.
+CONTEXT (not theorem premise): substep-1 statistics-selection / hard-core-boson boundary (B1) remains downstream gate context; Lemmas 2-4 use the supplied local P-KIN/P-SD surface.
 RESIDUAL (declared-open): torus holonomy / APBC signs (B4) are boundary convention data, not local phase law.
 
 TOTAL: PASS=47 FAIL=0

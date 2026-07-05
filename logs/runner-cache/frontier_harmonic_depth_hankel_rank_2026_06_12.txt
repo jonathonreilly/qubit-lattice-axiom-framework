@@ -1,0 +1,87 @@
+===== runner cache v1 =====
+runner: scripts/frontier_harmonic_depth_hankel_rank_2026_06_12.py
+runner_sha256: 2b72d6e94b405febc681e8e858785d148b0cf165f56d245a76f2dc6ec983c384
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+==============================================================================
+S2 det-phase increments: numerical trajectory rank vs capture depth
+==============================================================================
+constants: L=3, NC=3, tau=0.35, T=256, windows=(64, 128)
+rank floors: relative 1.0e-05, 1.0e-06, 1.0e-07; default 1.0e-06; coupling floor 1.0e-08
+
+  [PASS] periodic carrier wraparound probe: degree and site-0/1 adjacency stable at L=3,4,12  (guards against treating small-L wraparound shell data as a range law)
+  [PASS] Hamiltonian is Hermitian and color-diagonal nearest-neighbor  (max Hermitian defect 0.0e+00)
+  [PASS] state domain is exactly K in {3,4,5,6} with K=5 seed 99  (seeds K=3:391, K=4:99, K=5(seed=99):99, K=6:466)
+
+Per-state spectra, capture, and rank table
+------------------------------------------------------------------------------
+  K=3          seed=391 raw_mean=+0.004966 ranks[w64:>=64, w128:71] cap4=0.898130 cap8=0.983700 gaps=3 [-3.0, +0.0, +3.0] min_sigma=8.499e-04
+      sv head w64: 93.682 92.9147 61.3741 34.9404 34.2869 21.7747 15.8139 15.3 7.9533 7.81375
+      sv head w128: 109.155 108.902 68.1793 40.1407 39.8534 30.0421 20.7551 20.1663 10.379 10.3285
+  K=4          seed= 99 raw_mean=+0.279891 ranks[w64:>=64, w128:84] cap4=0.777620 cap8=0.889549 gaps=3 [-3.0, +0.0, +3.0] min_sigma=1.717e-02
+      sv head w64: 85.9149 70.2039 69.7113 38.8765 30.8038 29.9956 20.5716 20.4233 18.9818 17.556
+      sv head w128: 101.55 80.9253 80.5858 35.756 31.6406 30.9425 29.3782 28.5268 28.055 23.8738
+  K=5(seed=99) seed= 99 raw_mean=-0.002637 ranks[w64:34, w128:36] cap4=0.899156 cap8=0.999931 gaps=3 [-3.0, +0.0, +3.0] min_sigma=1.199e-03
+      sv head w64: 82.5846 81.2433 55.7573 54.7858 46.6809 2.71361 1.27728 0.942465 0.807514 0.67413
+      sv head w128: 95.002 94.4628 64.1766 63.6801 53.8387 2.84951 1.40775 1.02324 0.965671 0.824067
+  K=6          seed=466 raw_mean=-1.042951 ranks[w64:28, w128:35] cap4=0.994937 cap8=0.999803 gaps=3 [-3.0, +0.0, +3.0] min_sigma=1.379e-02
+      sv head w64: 129.675 126.982 23.2587 23.0559 12.3768 2.43629 1.91888 1.88805 1.78355 1.69272
+      sv head w128: 148.812 147.637 26.348 26.0556 13.7382 4.34665 3.06485 2.99362 2.94338 2.86643
+
+Anchor gates
+------------------------------------------------------------------------------
+  [PASS] ANCHOR: K=3 capture at o=8 reproduces landed ceiling 0.9836 within 1e-3  (cap8=0.983700, expected=0.9836)
+  [PASS] ANCHOR: K=6 saturation capture at o=4 reproduces landed 0.995 within 1e-3  (cap4=0.994937, expected=0.9950)
+  [PASS] anti-fabrication: determinant blocks stay full-rank on every sampled trajectory  (mins K3:8.50e-04, K4:1.72e-02, K5:1.20e-03, K6:1.38e-02)
+
+Rank floor gates
+------------------------------------------------------------------------------
+  [PASS] K=3 window=64 numerical trajectory rank LOWER BOUND is censored (rank >= window) at threshold 1e-6  (rank=>=64 (censored lower bound), cap=64, floor=9.368e-05, s_rank=1.635e-04)
+  [PASS] K=3 window=128 numerical trajectory rank is UNCENSORED at threshold 1e-6  (rank=71 (uncensored), cap=128, floor=1.092e-04, s_rank=1.216e-04, s_next=1.038e-04)
+  [PASS] K=4 window=64 numerical trajectory rank LOWER BOUND is censored (rank >= window) at threshold 1e-6  (rank=>=64 (censored lower bound), cap=64, floor=8.591e-05, s_rank=3.172e+00)
+  [PASS] K=4 window=128 numerical trajectory rank is UNCENSORED at threshold 1e-6  (rank=84 (uncensored), cap=128, floor=1.015e-04, s_rank=1.035e-04, s_next=7.823e-05)
+  [PASS] K=5 window=64 numerical trajectory rank is UNCENSORED at threshold 1e-6  (rank=34 (uncensored), cap=64, floor=8.258e-05, s_rank=8.792e-05, s_next=8.010e-05)
+  [PASS] K=5 window=128 numerical trajectory rank is UNCENSORED at threshold 1e-6  (rank=36 (uncensored), cap=128, floor=9.500e-05, s_rank=9.953e-05, s_next=7.189e-05)
+  [PASS] K=6 window=64 numerical trajectory rank is UNCENSORED at threshold 1e-6  (rank=28 (uncensored), cap=64, floor=1.297e-04, s_rank=4.808e-04, s_next=9.526e-05)
+  [PASS] K=6 window=128 numerical trajectory rank is UNCENSORED at threshold 1e-6  (rank=35 (uncensored), cap=128, floor=1.488e-04, s_rank=1.946e-04, s_next=6.843e-05)
+
+Relation gates
+------------------------------------------------------------------------------
+  default-threshold rank tables (censored cells are lower bounds):
+    window=64: {3: '>=64', 4: '>=64', 5: '34', 6: '28'}
+    window=128: {3: '71', 4: '84', 5: '36', 6: '35'}
+  cap4 table: {3: 0.89813, 4: 0.77762, 5: 0.899156, 6: 0.994937}
+  [PASS] S2b: K=6 numerical trajectory rank is UNCENSORED at windows 64/128 and smallest (fixed)  (ranks={64: {3: '>=64', 4: '>=64', 5: '34', 6: '28'}, 128: {3: '71', 4: '84', 5: '36', 6: '35'}})
+  [PASS] S2b: K=3/K=4 ranks are censored-or-larger at both windows (>= 2*K6 when uncensored)  (ranks={64: {3: '>=64', 4: '>=64', 5: '34', 6: '28'}, 128: {3: '71', 4: '84', 5: '36', 6: '35'}})
+  [PASS] S2b: K=6-smallest numerical trajectory rank matches the landed early-saturation behavior  (K6 cap4=0.994937, K3/K4 cap4=0.898130/0.777620)
+
+Threshold sensitivity rank tables
+------------------------------------------------------------------------------
+  threshold=1e-05
+    window=64: {3: '61', 4: '>=64', 5: '28', 6: '23'}
+    window=128: {3: '67', 4: '82', 5: '29', 6: '28'}
+  threshold=1e-06
+    window=64: {3: '>=64', 4: '>=64', 5: '34', 6: '28'}
+    window=128: {3: '71', 4: '84', 5: '36', 6: '35'}
+  threshold=1e-07
+    window=64: {3: '>=64', 4: '>=64', 5: '39', 6: '35'}
+    window=128: {3: '81', 4: '90', 5: '42', 6: '41'}
+  [PASS] S2b: threshold sensitivity ranks at 1e-5/1e-6/1e-7 keep K=6-smallest ordering stable  (ranks={1e-05: {64: {3: '61', 4: '>=64', 5: '28', 6: '23'}, 128: {3: '67', 4: '82', 5: '29', 6: '28'}}, 1e-06: {64: {3: '>=64', 4: '>=64', 5: '34', 6: '28'}, 128: {3: '71', 4: '84', 5: '36', 6: '35'}}, 1e-07: {64: {3: '>=64', 4: '>=64', 5: '39', 6: '35'}, 128: {3: '81', 4: '90', 5: '42', 6: '41'}}})
+  coupled distinct-gap table: {3: 3, 4: 3, 5: 3, 6: 3}
+  [PASS] S2c: identical coupled-gap counts cannot explain the ordering (3 each, gated)  (gap_counts={3: 3, 4: 3, 5: 3, 6: 3}, ranks={64: {3: '>=64', 4: '>=64', 5: '34', 6: '28'}, 128: {3: '71', 4: '84', 5: '36', 6: '35'}})
+==============================================================================
+TOTAL: PASS=19 FAIL=0
+==============================================================================
+SCOPE: exact finite one-body composite-link datum at L=3, tau=0.35, T=256.
+  The per-state tables are data.  The gated claims are: the two landed
+  capture anchors reproduce; K=6 has the smallest uncensored numerical
+  trajectory rank (window/threshold-relative); K=3/K=4 are censored-or-
+  larger relative to K=6 at windows 64/128; threshold sensitivity preserves
+  the K=6-smallest ordering; and identical coupled-gap counts cannot explain
+  the ordering (3 each, gated).
+
+----- stderr -----
+

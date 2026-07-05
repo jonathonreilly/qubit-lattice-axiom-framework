@@ -1,5 +1,7 @@
 # Gravity Signed Source-Density Boundary Note
 
+**Claim type:** open_gate
+
 **Date:** 2026-04-25
 **Status:** first local source-primitive block for the signed gravitational
 response lane

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/linear_response_second_order_kubo.py
-runner_sha256: 6fa481bbc3ca85b62a391cf4629d7eb3f7e0dbe961bad47324686e6096803417
+runner_sha256: 83aa67d59d196015c1dc3e858f91f9494be93306d37ee8c8604797c9faec6e6c
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 574.52
+elapsed_sec: 588.74
 status: ok
 ----- stdout -----
 ====================================================================================================
@@ -56,7 +56,9 @@ RESIDUAL REDUCTION at s=0.008 (measured - predicted)
 VERDICT
 ====================================================================================================
   NULL — second order did not change the linearity-regime count.
-  Failing families need either much higher orders or a different framework.
+  At the computed second order the failing families are not brought into
+  the linearity regime; whether higher Taylor orders or a different
+  framework would do so is not established here (not computed).
 
 ----- stderr -----
 

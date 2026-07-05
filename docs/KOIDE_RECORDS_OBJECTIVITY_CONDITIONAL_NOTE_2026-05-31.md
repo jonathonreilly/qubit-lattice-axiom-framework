@@ -1,7 +1,7 @@
 # Koide Records Objectivity Conditional: Equal-Block Metric Plus Objectivity Gives r=1/2
 
 **Date:** 2026-05-31
-**Claim type:** bounded_theorem
+**Claim type:** open_gate / conditional-support certificate
 **Claim boundary:** conditional algebraic selection of `r=1/2` from two named inputs:
 equal-block metric and records/objectivity maximization. The note does not derive those
 inputs from the framework baseline and does not set an audit verdict.
@@ -9,7 +9,22 @@ inputs from the framework baseline and does not set an audit verdict.
 `scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py`
 with cache
 `logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt`
-(13/13 checks passed).
+(17/17 checks passed).
+
+## 2026-06-12 audit firewall: conditional certificate only
+
+The audited missing bridge is exactly the point of this note: neither the
+equal-block sector measure nor the records/objectivity selector is derived
+here. The 2026-06-05 Record axiom supplies durable realized-outcome
+registration and finite additivity after a readout context is supplied; it
+explicitly does not supply weighting, normalization, probability, measurement
+dynamics, readout context selection, or an occupancy rule.
+
+Accordingly this source row is not a `bounded_theorem` or a Record-axiom
+derivation of Koide. It is a conditional algebra certificate: **if** the
+equal-block `(1,1)` metric and records/objectivity selector are supplied, then
+the runner-checked extremum gives `r=1/2` and `Q=2/3`. This firewall introduces
+no new axiom, no Tier-A admission, and no audit-status change.
 
 ## 2026-06-07 Record-Era Source Boundary
 
@@ -115,3 +130,47 @@ selector as the missing work.
 **N8 - Cross-cycle echo.** The residual is the same one tracked by the block-weight
 frontier, readout demarcation, and D3 pointer-degeneracy notes. This note records a
 conditional route rather than duplicating that residual as a closure.
+
+## 2026-06-15 audit-unlock residual certificate
+
+This row remains a non-circular conditional selector calculation. The algebra
+showing which weight choices land at `Q = 2/3` versus `Q = 1` is the
+auditable content.
+
+The open science is the selector itself: a framework-native derivation or
+approved admission of the equal-block `(1,1)` sector measure and the
+records/objectivity maximization principle that chooses it. Re-audit should
+not treat the conditional equal-weight input as derived. This repair adds no
+new selection axiom, measure, observed lepton input, or status promotion.
+
+## 2026-06-16 Post-Audit Source Boundary
+
+The latest audit result confirms that the algebraic extremum is correct and
+that the two selector inputs remain supplied. This note therefore stays a
+conditional algebra certificate only:
+
+```text
+supplied equal-block (1,1) metric
+  + supplied records/objectivity maximization selector
+  => r = 1/2 and Q = 2/3.
+```
+
+It does not derive equal-block weighting from Record, does not derive the
+objectivity selector from dephasing, and does not turn normalized records into
+a physical measure. The usable repair path is separate source science: derive
+one or both selector inputs, or explicitly admit them outside this note.
+
+## 2026-06-17 restricted packet verifier
+
+The re-audit packet is now pinned by
+[`scripts/koide_records_objectivity_packet_verifier_2026_06_17.py`](../scripts/koide_records_objectivity_packet_verifier_2026_06_17.py),
+with cached output at
+[`logs/runner-cache/koide_records_objectivity_packet_verifier_2026_06_17.txt`](../logs/runner-cache/koide_records_objectivity_packet_verifier_2026_06_17.txt).
+
+The verifier checks this conditional note, the block-weight frontier,
+Frobenius isotype-weight no-go, readout demarcation, and pre-record tracial
+state boundary against their SHA-fresh runner caches. It also checks that this
+note's expected count matches the current `17/17` cache. This is source-side
+packaging only: it does not derive either selector input, does not approve an
+equal-block measure or objectivity principle, and does not set any audit
+status.

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_dimensional_compression.py
-runner_sha256: 5906ec6e66c2993f3e231ce04ca05e1f85174e1db70dfd12753a41a352fbe3a4
+runner_sha256: 00aac3acb1a9b4dce51c800ac71ec02182e4978d7f9ea8ebea1aab79d223d373
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 Hierarchy dimensional-compression diagnostic
@@ -53,6 +53,8 @@ Hierarchy dimensional-compression diagnostic
          D=1:fails(1.0000 vs 2.0000), D=2:fails(0.5000 vs 1.0000), D=3:fails(0.3333 vs 0.5000), D=5:fails(0.2000 vs 0.1250), D=6:fails(0.1667 vs 0.0625), D=8:fails(0.1250 vs 0.0156)
   [PASS] PASS conditions are free of observed-target imports (audit-transparent)
          v_obs, v_pred, C_obs are not referenced before this point
+  [PASS] source notes preserve parent conditional-support and companion numerical-diagnostic scope
+  [PASS] source notes wire D=4 density-scale bridge while preserving physical VEV boundary
 
 ------------------------------------------------------------------------------
   External context (NOT a PASS condition, NOT load-bearing)
@@ -66,16 +68,15 @@ Hierarchy dimensional-compression diagnostic
   reader-level diagnostic, not an audit-load-bearing closure.
 
 Conclusion (within-scope):
-  Under the (1/4) D=4 reading derived in the 2026-05-10 heat-
-  kernel sister bounded theorem note, the staggered condensate-
-  density residual R compresses to R^(-1/4); this is a
-  quantitatively distinct candidate from the (1/16) reading;
-  and the (1/4) is D=4-specific under the inherited per-
-  determinant readout via the algebraic identity 1/D = 4/2^D
-  at D=4. No within-scope claim depends on the imported v_obs.
+  Under the 2026-06-16 fixed-density coefficient-to-scale bridge,
+  a positive endpoint coefficient ratio R maps to the inverse
+  fourth-root scale factor R^(-1/4) at D=4. The runner checks
+  that this candidate is quantitatively distinct from the D=16
+  direct-scale alternative and that no within-scope PASS gate
+  depends on the imported v_obs.
 
 ==============================================================================
-SCORECARD: 5 pass, 0 fail out of 5
+SCORECARD: 7 pass, 0 fail out of 7
 ==============================================================================
 
 ----- stderr -----

@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_single_axiom_hilbert.py
-runner_sha256: d130e70af9bb0ca04cf177671b3a7847f8b756d64162f44340525e3b2e4d93f3
+runner_sha256: 7ea5ad4c646799e8c7a6a511efd4a37d15b534a99894288174f7ee6b42c1093c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.59
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
-SINGLE AXIOM REDUCTION: LOCAL TENSOR PRODUCT HILBERT SPACE
-Can two axioms become one?
+SCOPE-NARROWED LOCAL TENSOR PRODUCT HILBERT SUPPORT
+Bounded operational checks under admitted inputs.
 
 ======================================================================
-TEST 1: Graph emergence from Hamiltonian tensor product support
+TEST 1: Graph support recovery under the supplied extraction rule
 ======================================================================
   Trial 1: 3 input edges, 3 recovered, match=True
   Trial 2: 8 input edges, 8 recovered, match=True
@@ -19,10 +19,10 @@ TEST 1: Graph emergence from Hamiltonian tensor product support
   Trial 5: 5 input edges, 5 recovered, match=True
 
   Graph recovery rate: 100% (5/5)
-  PASS: graph topology emerges from Hamiltonian support
+  PASS: graph support is recovered under the admitted extraction rule
 
 ======================================================================
-TEST 2: Born rule is automatic — I_3 vanishes in Hilbert space
+TEST 2: Born p=2 readout gives I_3 = 0; p != 2 controls fail
 ======================================================================
 
   Hilbert space (Born rule, p=2):
@@ -35,11 +35,11 @@ TEST 2: Born rule is automatic — I_3 vanishes in Hilbert space
     p=3.0: mean |I_3| = 1.9955e-03, max = 2.8700e-02  PASS (nonzero)
     p=4.0: mean |I_3| = 9.9409e-04, max = 3.6208e-02  PASS (nonzero)
 
-  Summary: Born rule automatic in Hilbert space: True
+  Summary: admitted Born p=2 readout gives I_3 = 0: True
   Summary: p != 2 violates Born rule: True
 
 ======================================================================
-TEST 3: Unitarity is automatic; non-unitary evolution breaks gravity
+TEST 3: Hermitian generator gives unitary evolution; Lindblad control breaks it
 ======================================================================
 
   Unitary evolution:
@@ -54,17 +54,18 @@ TEST 3: Unitarity is automatic; non-unitary evolution breaks gravity
     gamma=1.0: norm=1.0000, center_excess=-0.0776, profile=[0.232, 0.292, 0.288, 0.142, 0.039, 0.006, 0.001, 0.000]
     gamma=2.0: norm=1.0000, center_excess=-0.1669, profile=[0.367, 0.334, 0.205, 0.075, 0.017, 0.002, 0.000, 0.000]
 
-  Unitary: probability migrates toward gravitational center: True
-  Strong Lindblad: probability stuck at source (gravity broken): True
-  PASS: unitarity required for gravity
+  Unitary: probability migrates toward toy attraction center: True
+  Strong Lindblad: probability stuck at source (toy attraction broken): True
+  PASS: Hermitian/unitary control is load-bearing for the toy profile
 
 ======================================================================
-TEST 4: Tensor product structure is essential for gravity
+TEST 4: Tensor product factorization gives bounded localization support
 ======================================================================
 
   (a) Tensor product space (6-qubit chain):
     Site probabilities: [0.6348, 0.3284, 0.2628, 0.2339, 0.4075, 0.4001]
     Locality gradient (near > far): False
+    Diagnostic only: the fixed-seed amplitudes are not claimed to decay monotonically.
 
   (b) Unfactored space (random 64x64 Hamiltonian):
     Probability spread (std): 1.6543e-02
@@ -89,46 +90,41 @@ TEST 4: Tensor product structure is essential for gravity
       Ratio top/median: 2.51
 
   Spread ratio (random/local): 29.0x
-  Tensor product structure creates locality: True
-  PASS: tensor product essential
+  Tensor-product/local-H packet is more localized by spread ratio: True
+  PASS: bounded localization contrast
 
 ======================================================================
-SYNTHESIS: Can we reduce to a single axiom?
+SYNTHESIS: What the admitted-input packet supports
 ======================================================================
 
-  The candidate single axiom: H = tensor_i H_i
-  (a finite Hilbert space with local tensor product structure)
+  Admitted packet:
+    local factor dimensions + Hermitian local H + Born p=2 readout
+    + support-as-edges extraction rule
 
-  Test 1 — Graph emerges from Hamiltonian:     PASS
-    The adjacency graph is the support of the Hamiltonian
-    on the tensor factors. No separate graph axiom needed.
+  Test 1 — Support graph recovered:            PASS
+    The adjacency graph is recovered from the supplied Hamiltonian support
+    under the admitted extraction rule.
 
-  Test 2 — Born rule is automatic:              PASS
-    I_3 = 0 identically in Hilbert space (p=2 norm).
+  Test 2 — Born p=2 readout check:              PASS
+    I_3 = 0 under the admitted p=2 readout.
     p != 2 theories violate Born rule (I_3 != 0).
 
-  Test 3 — Unitarity is automatic:              PASS
-    Hermitian H on finite Hilbert space -> U = exp(-iHt) is unitary.
-    Non-unitary (Lindblad) evolution destroys gravitational attraction.
+  Test 3 — Hermitian/unitary control:           PASS
+    The supplied Hermitian H gives unitary evolution; a Lindblad replacement
+    destroys the toy attraction profile.
 
-  Test 4 — Tensor product is essential:          PASS
-    Without factorization, no locality, no distance, no gravity.
-    The tensor product structure IS the spatial structure.
+  Test 4 — Bounded localization contrast:       PASS
+    The supplied tensor-product/local-H packet is far less spread than an
+    unfactored random Hamiltonian of the same dimension. The fixed sample
+    does not prove monotone graph-distance decay.
 
   Conclusion:
-    The two axioms (graph + unitarity) can indeed be unified.
-    A LOCAL TENSOR PRODUCT HILBERT SPACE is the single axiom.
-    - The "graph" is the interaction pattern of the Hamiltonian
-    - "Unitarity" is automatic from Hilbert space structure
-    - "Born rule" is automatic from the inner product
-    - "Locality" is the tensor product factorization
+    The runner supports the bounded operational consequences of the admitted
+    packet. It does not derive the local Hamiltonian, locality restriction,
+    Born readout, or support-as-edges rule from a bare Hilbert-space axiom,
+    and it does not reduce the current framework axiom ledger.
 
-    What remains specified: the local dimension d and the
-    Hamiltonian H (which encodes the dynamics and implicitly
-    defines the graph). But the FRAMEWORK -- the arena in which
-    physics happens -- is fully specified by one axiom.
-
-Total runtime: 0.3s
+Total runtime: 0.1s
 
 ----- stderr -----
 

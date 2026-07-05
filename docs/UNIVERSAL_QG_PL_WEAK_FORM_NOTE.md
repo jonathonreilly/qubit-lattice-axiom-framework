@@ -3,6 +3,8 @@
 **Date:** 2026-04-15  
 **Role:** direct-universal quantum-gravity / project-native weak-form theorem
 **Status:** support - canonical PL weak-form closure
+**Script:** `scripts/frontier_universal_qg_pl_weak_form.py`
+(source-side verifier; PASS=5 FAIL=0 on current source)
 
 ## Verdict
 

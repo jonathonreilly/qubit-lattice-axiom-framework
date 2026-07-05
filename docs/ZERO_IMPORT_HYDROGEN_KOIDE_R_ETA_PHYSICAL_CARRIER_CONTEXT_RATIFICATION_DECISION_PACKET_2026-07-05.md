@@ -121,10 +121,13 @@ STATIC_SOURCE_RYDBERG_RETAINED
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md` | names the thirteen-input target | target only, not ratification |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `PHYSICAL_CARRIER_CONTEXT_RETAINED` | no retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | packages `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` | locus subinput only |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the hw1 locus owner/audit decision object | no retained locus consequence unless accepted |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` | no retained locus consequence |
 | `ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md` | supplied finite context is Record-registrable | does not prove physical realization |
 | `KOIDE_Q_REDUCED_CARRIER_PHYSICAL_IDENTIFICATION_OBSTRUCTION_NOTE_2026-06-12.md` | prevents reduced-carrier over-promotion | keeps physical carrier/readout bridge open |
 | `FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md` | collapses duplicate carrier/readout/basepoint gates | does not retain the gate |
-| open `#5023` and open `#5024` | W4 / AC_phi_lambda gate-readiness and dependency hygiene | no physical carrier-context theorem |
+| merged `#5023` and open `#5024` | W4 / AC_phi_lambda gate-readiness and dependency hygiene | no physical carrier-context theorem |
 | approved primitives | minimal axioms and approved primitives | no carrier selector or physical readout context |
 
 ## No-Go Discipline Gate
@@ -162,9 +165,9 @@ ratification decision contract.
 ### N3 - Hidden-Wall Scan
 
 `supplied context`, `Record-registrable`, `reduced carrier`, `single gate`,
-`open PR`, `audit success`, `registered`, and `primitive` are treated as
-support or status words only. None is used as a hidden carrier-realization
-theorem.
+`open PR`, `audit success`, `audit in progress`, `registered`, and `primitive`
+are treated as support or status words only. None is used as a hidden
+carrier-realization theorem.
 
 ### N4 - Residual Matching
 

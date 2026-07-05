@@ -84,10 +84,23 @@ it still does not supply `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED`,
 `R_ETA_READOUT_IDENTIFICATION_RETAINED`, K2 exactness, electron mass, alpha, or
 hydrogen.
 
+The hw1 physical generation-locus target discriminator
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages one immediate subinput beneath
+`CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED`. Its ratification packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+and current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+make clear that current surfaces do not supply
+`HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`.
+
 ## Current Surface
 
 | surface | useful content | residual |
 |---|---|---|
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` | charged-lepton carrier realization theorem and physical carrier context remain open |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | hw1 locus owner/audit decision packet | no retained locus consequence unless accepted |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` | physical matter-state-law bridge and owner/audit remain open |
 | `ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md` | closes the supplied finite-context Record-registrability algebra | physical charged-lepton carrier realization |
 | `KOIDE_Q_REDUCED_CARRIER_PHYSICAL_IDENTIFICATION_OBSTRUCTION_NOTE_2026-06-12.md` | blocks over-promoting reduced determinant algebra into physical carrier/readout identification | retained physical carrier/coarse-graining theorem |
 | `FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md` | collapses readout gate, carrier identification, and zero-section/basepoint into one named gate | retained closure of that gate |
@@ -95,7 +108,7 @@ hydrogen.
 | `KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md` | proves exact finite facts for a supplied tracial standard-form carrier | framework-native physical carrier/scoring selection |
 | `KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md` | localizes carrier-locus imports and the Hodge-orientation bit | physical matter operator/locus realization |
 | `CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md` | refutes the spinor-module escape and locates the live KS/physical-state-law route | retained physical-state-law bridge |
-| open `#5023` Koide W4 audit-readiness repairs | dependency hygiene for record/species/custody/hw-complement surfaces | physical carrier-context theorem |
+| merged `#5023` Koide W4 audit-readiness repairs | dependency hygiene for record/species/custody/hw-complement surfaces | physical carrier-context theorem |
 | open `#5024` Koide W4 gate-note premise minimization and substep1 rebase | `AC_phi_lambda` gate-readiness and substep1 hygiene | physical carrier-context theorem |
 | approved primitives | minimal axioms, scale reference, kinetic isotropy, realized-state evaluation discipline | carrier selector, physical readout context, value, mass, alpha, or hydrogen |
 
@@ -173,7 +186,7 @@ support rather than closure.
 | `tracial standard form` | supplied finite carrier support, not physical selection |
 | `registered` / `realized-state` | evaluation discipline or data classification, not selector |
 | `primitive` | registry checked; approved primitives supply no shortcut |
-| `open PR` / `audit success` | queue/status signal only |
+| `open PR` / `audit success` / `audit in progress` | queue/status signal only |
 | `observed` / `fitted` | comparator data, excluded |
 
 No carrier selector, physical realization theorem, owner decision, audit

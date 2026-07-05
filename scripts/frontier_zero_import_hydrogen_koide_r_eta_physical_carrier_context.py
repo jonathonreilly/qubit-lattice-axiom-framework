@@ -259,7 +259,7 @@ def main() -> None:
         "KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
         "KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md",
         "CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md",
-        "open `#5023` Koide W4 audit-readiness repairs",
+        "merged `#5023` Koide W4 audit-readiness repairs",
         "open `#5024` Koide W4 gate-note premise minimization",
         "The primitive registry was checked",
         "No-Go Discipline Gate",
@@ -370,10 +370,10 @@ def main() -> None:
 
     section("Open PR and non-claim boundaries")
     open_markers = [
-        "`#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | open, audit success",
-        "`#5023` Koide W4 audit-readiness repairs | open, audit success",
+        "`#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | open, audit in progress after latest refresh",
+        "`#5023` Koide W4 audit-readiness repairs | merged, audit success",
         "`#5021` primitive-retirement review: meta gate map, no retirements | open draft, audit success",
-        "`#5018`/`#5017` chirality/domain-wall stack | open, audit success",
+        "`#5014`/`#5017`/`#5018` chirality/domain-wall stack | open, audit success",
         "`#5016` zero-import hydrogen retained lane bundle | open",
         "clean/dirty/check labels are not proof inputs",
     ]

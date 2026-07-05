@@ -102,6 +102,9 @@ STATIC_SOURCE_RYDBERG_RETAINED
 
 | surface | useful content | boundary here |
 |---|---|---|
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_TARGET_DISCRIMINATOR_2026-07-05.md` | sixteen-input target for the object-identification input | can feed only `FLUCTUATION_DETERMINANT_OBJECT_IDENTIFIED` if later accepted |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the object input | no parent theorem closure |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the object decision | not accepted on the current surface |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md` | names the fourteen-input determinant target | target only; this packet packages the decision object |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` | no retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | parent selector/default-exclusion target | this packet can feed one input only after acceptance |

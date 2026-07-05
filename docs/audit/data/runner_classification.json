@@ -516,6 +516,18 @@
       "dominant_class": "A",
       "runner": "scripts/acphilambda_r_eta_doublet_clock_rate_normalization_no_go_2026_07_04.py"
     },
+    "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 9,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/acphilambda_r_eta_hclass_first_principles_stretch_no_go_2026_07_04.py"
+    },
     "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04": {
       "assert_count": 1,
       "counts": {
@@ -42022,6 +42034,21 @@
         "D": 0
       },
       "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/acphilambda_r_eta_hclass_first_principles_stretch_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 9,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "decoration_candidate": false,
       "dominant_class": "A",
       "exists": true
     },
@@ -90952,14 +90979,14 @@
   "stats": {
     "decoration_candidates": 694,
     "dominant_class_distribution": {
-      "A": 495,
+      "A": 496,
       "B": 633,
       "C": 1276,
       "D": 451,
       "none": 457
     },
-    "runners_classified": 3312,
-    "runners_with_C": 1735,
-    "runners_with_D": 1064
+    "runners_classified": 3313,
+    "runners_with_C": 1736,
+    "runners_with_D": 1065
   }
 }

@@ -721,6 +721,18 @@
       "to": "admitted_input_registry_tier_a_note_2026-05-23"
     },
     {
+      "from": "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04",
+      "to": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+    },
+    {
       "from": "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04",
       "to": "minimal_axioms"
     },
@@ -843,14 +855,6 @@
     {
       "from": "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11",
       "to": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
-    },
-    {
-      "from": "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11",
-      "to": "flavor_carrier_from_axioms_momentum_forced_2026-05-31"
-    },
-    {
-      "from": "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11",
-      "to": "color_einselection_pointer_frame_fork_is_a_unistochastic_irreducibility_criterion_narrow_theorem_note_2026-06-09"
     },
     {
       "from": "action_architecture_matrix_note",
@@ -39641,10 +39645,6 @@
       "to": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
     },
     {
-      "from": "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26",
-      "to": "staggered_dirac_physical_species_direct_theorem_note_2026-05-07"
-    },
-    {
       "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
       "to": "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
     },
@@ -40074,10 +40074,6 @@
     },
     {
       "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
-      "to": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac"
-    },
-    {
-      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
       "to": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
     },
     {
@@ -40086,7 +40082,7 @@
     },
     {
       "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
-      "to": "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
     },
     {
       "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
@@ -40094,7 +40090,7 @@
     },
     {
       "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
-      "to": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07"
+      "to": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
     },
     {
       "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
@@ -58106,6 +58102,22 @@
       "runner_path": "scripts/acphilambda_r_eta_doublet_clock_rate_normalization_no_go_2026_07_04.py",
       "title": "AC_phi_lambda R-eta Doublet-Clock Rate-Normalization No-Go"
     },
+    "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04": {
+      "claim_id": "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "69b6467725edce0666be0d23629435e63bd8ab00fec838fcf2281fc46140b087",
+      "path": "docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_r_eta_hclass_first_principles_stretch_no_go_2026_07_04.py",
+      "title": "AC_phi_lambda R-eta h-Class First-Principles Stretch No-Go"
+    },
     "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04": {
       "claim_id": "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04",
       "claim_type_author_hint": "no_go",
@@ -58227,12 +58239,10 @@
         "three_generation_observable_theorem_note",
         "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
         "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
-        "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
-        "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
-        "color_einselection_pointer_frame_fork_is_a_unistochastic_irreducibility_criterion_narrow_theorem_note_2026-06-09"
+        "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "430bfd1fc583c2a70c05596d7f90b2c64eca0a9f7e0040b03e99c880d711bb38",
+      "note_hash": "2a753897e75f21905380e8068c263d325b0524c3375c524c1a2b85adb4911150",
       "path": "docs/ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md",
       "runner_path": "scripts/frontier_acphilambda_species_bridge_realized_state_2026_06_11.py",
       "title": "AC_phi_lambda Sub-Admission (iii): Species-Bridge Decomposition Under the Realized-State Primitive"
@@ -109680,7 +109690,7 @@
         "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2384d5dfd66754a650b8967c84fd2d2a1b195b2729dc0fdc8c68273951d049c1",
+      "note_hash": "66d1e30e712c45982097c1e04b822b29bf512747cc6bd2e80acbcfc44d813341",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -114296,11 +114306,10 @@
         "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
-        "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
-        "staggered_dirac_physical_species_direct_theorem_note_2026-05-07"
+        "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "294ea3e98143aa778815973a556007a30b3942f4d2986434e631658a085b75b7",
+      "note_hash": "2c72c49daf30b1d49f98fee2c2531650bc97689698889e1d22a7b56798d54495",
       "path": "docs/STAGGERED_DIRAC_GATE_AC_PHI_LAMBDA_LABELING_CONVENTION_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
       "runner_path": "scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py",
       "title": "Staggered-Dirac Gate AC_\u03c6\u03bb Labeling-Convention Accepted-Premise Bridge"
@@ -114702,17 +114711,16 @@
       "claim_type_author_hint_raw": "no_go",
       "claim_type_seed_hint": "no_go",
       "deps": [
-        "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
         "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
         "staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17",
-        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
-        "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
+        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
         "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
         "three_generation_observable_theorem_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3afa86fb711a21b3b17752d0af0f9998186a4df76b7c69c708f71f0ee3deac15",
+      "note_hash": "d7818c2bfd42c62687e14abdf44bfc78e293be204eaa657ca14d73000f022d6d",
       "path": "docs/STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.py",
       "title": "Staggered-Dirac Substep 4 \u2014 AC_\u03c6\u03bb Species-Labeling No-Go Theorem"
@@ -125709,7 +125717,7 @@
       "bounded_theorem": 1557,
       "decoration": 3,
       "meta": 319,
-      "no_go": 321,
+      "no_go": 322,
       "none": 1216,
       "open_gate": 133,
       "positive_theorem": 274
@@ -125718,15 +125726,15 @@
       "bounded_theorem": 1962,
       "decoration": 3,
       "meta": 319,
-      "no_go": 425,
+      "no_go": 426,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14327,
-    "leaf_count": 1296,
-    "node_count": 3823,
+    "edge_count": 14326,
+    "leaf_count": 1297,
+    "node_count": 3824,
     "root_count": 1103,
-    "runners_with_path": 3446
+    "runners_with_path": 3447
   }
 }

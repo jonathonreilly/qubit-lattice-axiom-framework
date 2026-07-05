@@ -5170,6 +5170,10 @@
     },
     {
       "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
       "to": "per_site_su2_spin_half_theorem_note_2026-05-02"
     },
     {
@@ -5191,10 +5195,6 @@
     {
       "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
       "to": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
-    },
-    {
-      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
-      "to": "flavor_carrier_from_axioms_momentum_forced_2026-05-31"
     },
     {
       "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
@@ -5247,10 +5247,6 @@
     {
       "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
       "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
-    },
-    {
-      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
-      "to": "koide_a1_brannen_plancherel_identity_support_note_2026-04-25"
     },
     {
       "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
@@ -63915,13 +63911,13 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
         "per_site_su2_spin_half_theorem_note_2026-05-02",
         "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
         "three_generation_observable_theorem_note",
         "three_generation_observable_count_corollary_note_2026-05-03",
         "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
         "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-        "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
         "generation_axiom_boundary_note",
         "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
         "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
@@ -63935,11 +63931,10 @@
         "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
         "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24",
         "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_a1_brannen_plancherel_identity_support_note_2026-04-25",
         "brannen_amplitude_equipartition_bae_rename_meta_note_2026-05-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0cd46092b656fd95433bfbbfa963c7aacd5b0227ecbbaa1a9eb253ccc8063884",
+      "note_hash": "88c6be364b02bd15bb7722d0c858e053d7234b39f9cab5fa563800d31be9ec95",
       "path": "docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md",
       "runner_path": "scripts/flavor_charged_lepton_value_full_chain_2026_06_02.py",
       "title": "Charged-Lepton Koide Value \u2014 Full Chain of Custody (framework baseline -> Q=2/3): structure derived; value modulo one Tier-A admitted input"
@@ -109520,7 +109515,7 @@
         "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "64f83604c4319a5c42de3b9cb6660ad3d3b653832ce664bc5becad5731a2396a",
+      "note_hash": "3863af81358c41264fe7b6f2ad480388060d783906a5d025d567b709a51ca48f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -125563,7 +125558,7 @@
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14308,
+    "edge_count": 14307,
     "leaf_count": 1292,
     "node_count": 3818,
     "root_count": 1103,

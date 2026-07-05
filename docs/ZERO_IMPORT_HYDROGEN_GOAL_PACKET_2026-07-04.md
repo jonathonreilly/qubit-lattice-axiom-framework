@@ -1111,6 +1111,18 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   records that current retained, primitive, and open-PR surfaces do not supply
   `ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED`; the K4 scale target remains needed
   before physical electron mass can spend absolute scale.
+  The K4 scale assembly ladder review packet
+  `ZERO_IMPORT_HYDROGEN_K4_SCALE_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+  compresses the direct K4 dependency rows into one review surface: SU2 weak
+  context plus D17 block normalization feed `WEAK_FRONT_BASE_RETAINED`; the
+  source-probe interface feeds `EXACT_SOURCE_SINGLETON_RETAINED` and exact
+  source-side `S_l = 1/256`; one retained P1/P2/P3/P4 placement theorem plus
+  single-spend control feeds `A3_PRECISION_PLACEMENT_RETAINED` and
+  `NO_SOURCE_A3_DOUBLE_COUNT`; and the parent K4 contract still must accept all
+  ten inputs before `ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED` can be spent. This
+  is review compression only: it does not ratify weak front, exact source, A3
+  placement, K4, physical electron mass, `alpha(0)`, static-source Rydberg
+  closure, or hydrogen.
   The weak-front-base current-surface no-go
   `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_CURRENT_SURFACE_NO_GO_2026-07-05.md`
   records that current retained, primitive, and open-PR surfaces do not supply
@@ -1651,6 +1663,16 @@ remain support, not the retained physical-unit one-body theorem.
 				   by current retained, primitive, or open-PR surfaces; the K4 scale
 				   target remains needed before physical electron mass can spend
 				   absolute scale.
+				   The K4 scale assembly ladder review packet
+				   (`ZERO_IMPORT_HYDROGEN_K4_SCALE_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`)
+				   groups the direct K4 rows without closing them: SU2 weak context and
+				   D17 block normalization feed weak-front base; source-probe interface
+				   checks feed exact source-side `S_l = 1/256`; one retained
+				   P1/P2/P3/P4 placement theorem plus single-spend control feeds A3
+				   precision placement and `NO_SOURCE_A3_DOUBLE_COUNT`; and the parent
+				   K4 packet still needs all ten inputs. It is review compression only,
+				   not retained K4, physical electron mass, `alpha(0)`, static-source
+				   Rydberg closure, or hydrogen.
 			   The source-coordinate unfixed-choice result
 			   (`ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_COORDINATE_UNFIXED_CHOICE_LABEL_FREE_SUPPORT_2026-07-04.md`)
 		   further narrows the label-free subclause: conditional on the now-closed

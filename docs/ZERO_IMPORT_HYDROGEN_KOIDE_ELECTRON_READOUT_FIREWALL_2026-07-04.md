@@ -658,6 +658,19 @@ theorem, parent state-law bridge, HW1, the charged-lepton carrier theorem,
 carrier context, h-class, h-unit, R-eta, electron readout, physical electron
 mass, alpha input, or hydrogen.
 
+The R-eta KS state-law two-input review packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_STATE_LAW_TWO_INPUT_REVIEW_PACKET_2026-07-05.md`)
+groups the scalar-lift-exclusion owner/audit contract and KS spin-lift
+physical action-law owner/audit contract as adjacent parent inputs under the
+KS-to-physical matter-state spinor-law route. It is review compression only:
+accepting both inputs would let the parent KS route spend them, but the packet
+itself does not ratify
+`SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED`,
+`KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED`,
+`KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED`, the parent
+state-law bridge, electron readout, physical electron mass, alpha input, or
+hydrogen.
+
 The R-eta spinful sigma-dot-p KS-route kernel target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_TARGET_DISCRIMINATOR_2026-07-05.md`),
 ratification decision packet

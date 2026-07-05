@@ -388,7 +388,7 @@ def main() -> None:
         "No derivation or ratification of `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`.",
         "No derivation or ratification of `R_ETA_READOUT_IDENTIFICATION_RETAINED`.",
         "No derivation of `delta = 2/9` as a retained physical phase.",
-        "No claim that #5023 or #5024 supplies the physical carrier-context theorem.",
+        "No claim that #5032, #5030, #5023, or #5024 supplies the physical",
         "No new axiom, primitive, Tier-A admission, empirical import, or audit status",
     ]
     for phrase in explicit_nonclaims:

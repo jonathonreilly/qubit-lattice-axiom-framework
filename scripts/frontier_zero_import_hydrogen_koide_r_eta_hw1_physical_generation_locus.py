@@ -20,6 +20,7 @@ MATTER_STATE_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICA
 PHYSICAL_CARRIER_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md"
 PHYSICAL_CARRIER_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 PHYSICAL_CARRIER_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+COMMON_HW1_PR5032 = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_COMMON_HW1_PR5032_CARRIER_IDENTIFICATION_IMPACT_DISCRIMINATOR_2026-07-05.md"
 H_CLASS_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md"
 R_ETA_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md"
 MOMENTUM_TYPE = ROOT / "docs" / "FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md"
@@ -47,6 +48,7 @@ HW1_INPUTS = {
     "STAGGERED_KS_REALIZATION_SURFACE_ACCEPTED",
     "K1_FLUX_SELECTOR_WITHIN_SURFACE_ACCEPTED",
     "HW1_C3_TRIPLET_ALGEBRA_ACCEPTED",
+    "COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED",
     "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED",
     "NO_SPECIES_LABEL_BIJECTION_INPUT",
     "NO_SINGLE_FIXED_POINT_READOUT_INPUT",
@@ -59,6 +61,7 @@ HW1_INPUTS = {
 }
 
 CURRENT_SURFACE_INPUTS = HW1_INPUTS - {
+    "COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED",
     "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED",
     "OWNER_RATIFICATION",
     "AUDIT_ACCEPTANCE",
@@ -222,6 +225,7 @@ def main() -> None:
         PHYSICAL_CARRIER_TARGET,
         PHYSICAL_CARRIER_DECISION,
         PHYSICAL_CARRIER_CURRENT,
+        COMMON_HW1_PR5032,
         H_CLASS_TARGET,
         R_ETA_TARGET,
         MOMENTUM_TYPE,
@@ -262,6 +266,8 @@ def main() -> None:
         "STAGGERED_KS_REALIZATION_SURFACE_ACCEPTED",
         "K1_FLUX_SELECTOR_WITHIN_SURFACE_ACCEPTED",
         "HW1_C3_TRIPLET_ALGEBRA_ACCEPTED",
+        "COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_COMMON_HW1_PR5032_CARRIER_IDENTIFICATION_IMPACT_DISCRIMINATOR_2026-07-05.md",
         "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED",
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md",
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md",
@@ -289,6 +295,7 @@ def main() -> None:
         "open `#5014`",
         "open `#5017`",
         "open `#5018`",
+        "open `#5032`",
         "merged `#5023`",
         "merged `#5024`",
         "The primitive registry was checked",
@@ -326,6 +333,7 @@ def main() -> None:
     physical_carrier_target = read(PHYSICAL_CARRIER_TARGET)
     physical_carrier_decision = read(PHYSICAL_CARRIER_DECISION)
     physical_carrier_current = read(PHYSICAL_CARRIER_CURRENT)
+    common_hw1_pr5032 = read(COMMON_HW1_PR5032)
     matter_state_target = read(MATTER_STATE_TARGET)
     matter_state_decision = read(MATTER_STATE_DECISION)
     matter_state_current = read(MATTER_STATE_CURRENT)
@@ -353,6 +361,7 @@ def main() -> None:
         ("physical carrier target", physical_carrier_target),
         ("physical carrier decision", physical_carrier_decision),
         ("physical carrier current no-go", physical_carrier_current),
+        ("#5032 common carrier impact", common_hw1_pr5032),
     ]:
         audit.check(
             f"{label} references hw1 locus lane",
@@ -389,6 +398,23 @@ def main() -> None:
             f"{label} references HW1 bridge dependency",
             "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED" in container
             and "HW1_PHYSICAL_GENERATION_LOCUS_RETAINED" in container,
+        )
+
+    for label, container in [
+        ("goal packet", goal),
+        ("Koide firewall", firewall),
+        ("HW1 target", target),
+        ("HW1 decision", decision),
+        ("HW1 current no-go", current),
+        ("physical carrier target", physical_carrier_target),
+        ("physical carrier decision", physical_carrier_decision),
+        ("physical carrier current no-go", physical_carrier_current),
+    ]:
+        audit.check(
+            f"{label} references #5032 common carrier impact",
+            COMMON_HW1_PR5032.name in container
+            and "#5032" in container
+            and "COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED" in container,
         )
 
     audit.check("h-class remains downstream", "R_ETA_H_CLASS_RETAINED" in h_class_target)
@@ -450,6 +476,7 @@ def main() -> None:
     section("Open PR and non-claim boundaries")
     current_flat = flat(current)
     open_markers = [
+        "`#5032` common `hw=1` BZ-corner carrier identification | open, audit pipeline in progress",
         "`#5014` record-formation front is the domain wall | open, audit success",
         "`#5017` domain-wall edge anomaly inflow via spectral flow | open, audit success",
         "`#5018` domain-wall edge content vs SM chiral fermions map | open, audit success",
@@ -462,10 +489,11 @@ def main() -> None:
 
     explicit_nonclaims = [
         "No derivation or ratification of `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`.",
+        "No adoption or ratification of open PR `#5032`, and no derivation or",
         "No derivation or ratification of `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED`.",
         "No derivation or ratification of `PHYSICAL_CARRIER_CONTEXT_RETAINED`.",
         "No derivation or ratification of `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED`.",
-        "No claim that #5014, #5017, #5018, #5023, or #5024 supplies the physical",
+        "No claim that #5032, #5014, #5017, #5018, #5023, or #5024 supplies the physical",
         "No new axiom, primitive, Tier-A admission, empirical import, or audit status",
     ]
     for phrase in explicit_nonclaims:

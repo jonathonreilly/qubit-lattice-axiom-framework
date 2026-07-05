@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 421,
     "high": 288,
-    "leaf": 755,
+    "leaf": 754,
     "medium": 515
   },
   "cycle_break_target_count": 14,
@@ -37585,33 +37585,6 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-        "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
-        "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
-        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16",
@@ -58205,6 +58178,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 174,
-  "total_pending": 1979
+  "ready_count": 173,
+  "total_pending": 1978
 }

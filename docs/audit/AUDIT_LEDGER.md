@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 189 |
 | **retained_no_go** | 191 |
-| **retained_bounded** | 858 |
+| **retained_bounded** | 859 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1942 |
+| unaudited | 1941 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1231 |
+| `audited_clean` | 1232 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2280 |
+| `unaudited` | 2279 |
 
 | claim_type | count |
 |---|---:|
@@ -704,6 +704,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_cone_three_form_equivalence_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `koide_cyclic_projector_block_democracy_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_cyclic_wilson_descendant_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `koide_delta_marked_relative_cobordism_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -9597,6 +9598,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Given any local Wilson first-variation law dW_W on the Hermitian image of the adjacent-chain algebra, the cyclic descendant is determined by r0=dW_W(B0), r1=dW_W(B1), r2=dW_W(B2) and reconstructs H_cyc=(r0/3)B0+(r1/6)B1+(r2/6)B2, with Koide becoming 2 r0^2 = r1^2 + r2^2.  _(class `A`)_
 - **chain closes:** True — The scoped theorem is an exact finite-dimensional algebra statement over the cyclic basis and real trace pairing. It does not claim to derive the microscopic Wilson response law, selector mechanism, or charged-lepton readout, and those exclusions are explicit in the note.
 - **rationale:** The load-bearing step is not a physical readout or numerical fit; it is the orthogonal-basis reconstruction of the C3-cyclic Hermitian subspace and the algebraic substitution of a=r0/3, x=r1/6, y=r2/6 into the Koide cone. The cached runner exits 0 with PASS=19 FAIL=0 and checks basis containment, cyclic projection, response reconstruction, and the scalar Koide rewrite; the four D-class checks are only an observed charged-lepton witness, not needed for theorem closure. The note clearly limits its scope by stating that the microscopic Wilson law, selector mechanism, and final readout primitive are not derived here, so the positive theorem closes at the stated algebraic target-law level.
+- **auditor confidence:** high
+
+### `koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09`
+
+- **Note:** [`KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md`](../../docs/KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional bounded implication that, assuming the declared R-eta readout-identification premise and the supplied circulant/K-orbit surface, the retained C3 fixed-locus density gives |delta| = 2/9; comparator and period-fork diagnostics are not derivation inputs.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-20260705-koide-delta-eta`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The conditional implication: declared R-eta premise |delta| = L_3(1,2) plus retained E1 arithmetic L_3(1,2) = 2/9 implies |delta| = 2/9 exactly.  _(class `A`)_
+- **chain closes:** True — For the conditional scope only, the chain closes: the fixed-locus density arithmetic is retained-grade and rechecked, the R-eta premise is explicit rather than hidden, and the conclusion follows by substitution. This audit does not treat R-eta itself or the physical carrier identification as derived.
+- **rationale:** The note has narrowed the claim to a bounded conditional theorem rather than an unconditional readout derivation. The runner recomputes the retained L_3(1,2)=2/9 arithmetic, verifies that R-eta is explicitly declared as supplied-not-derived, and checks the formal implication without using PDG comparator agreement as an input. Direct dependencies are retained-grade under the provided metadata, so no open dependency path blocks the scoped bounded claim.
 - **auditor confidence:** high
 
 ### `koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24`

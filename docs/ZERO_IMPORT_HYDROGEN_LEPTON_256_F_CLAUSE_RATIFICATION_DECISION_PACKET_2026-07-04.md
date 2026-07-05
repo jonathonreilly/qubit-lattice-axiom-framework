@@ -136,6 +136,14 @@ The F4 scalar-multiplier attachment current-surface no-go
 records the fourth such subinput boundary: current retained, primitive, and
 open-PR surfaces do not supply `F4_SCALAR_MULTIPLIER_ATTACHMENT_RETAINED`.
 
+The F-clause child-gate ladder review packet
+`ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_CHILD_GATE_LADDER_REVIEW_PACKET_2026-07-05.md`
+compresses the F1-F4 child path under this parent handoff. It keeps F1 local
+action, F2 D17 source-block selection, F3 full-cell tensor source locality,
+and F4 scalar-multiplier attachment as sibling unresolved gates. It is review
+compression only: it does not ratify F1-F4, `F_CLAUSE_RETAINED`, L/P/R, exact
+source-side `S_l = 1/256`, K4, `m_e`, `alpha(0)`, or hydrogen.
+
 ## Current Open PR Alignment
 
 Open PRs were refreshed live on 2026-07-04 before this packet was written.

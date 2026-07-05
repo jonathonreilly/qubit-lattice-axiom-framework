@@ -849,14 +849,22 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
 		  packages the first source-side subdecision: F1-F4 plus
 		  `F_CLAUSE_TEXT_LOCK`, `CHARGED_LEPTON_SCOPE_LOCK`,
 		  `NO_NEW_PRIMITIVE_OR_AXIOM`, `NO_EMPIRICAL_COMPARATOR_INPUT`,
-		  `OWNER_RATIFICATION`, and `AUDIT_ACCEPTANCE`. If accepted, it
-			  conditionally supplies `F_CLAUSE_RETAINED`,
-			  `S_lep[j] = h * B_lep * sum_{c in C} j_c O_c`, and
-			  `dS_lep/dj_c = h * B_lep * O_c`, while leaving L/P/R, A3,
-			  Koide/electron readout, `alpha(0)`, and hydrogen open.
-			  The F-clause current-surface no-go
-			  `ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_CURRENT_SURFACE_NO_GO_2026-07-05.md`
-			  records that current retained, primitive, and open-PR surfaces do not
+			  `OWNER_RATIFICATION`, and `AUDIT_ACCEPTANCE`. If accepted, it
+				  conditionally supplies `F_CLAUSE_RETAINED`,
+				  `S_lep[j] = h * B_lep * sum_{c in C} j_c O_c`, and
+				  `dS_lep/dj_c = h * B_lep * O_c`, while leaving L/P/R, A3,
+				  Koide/electron readout, `alpha(0)`, and hydrogen open.
+				  The F-clause child-gate ladder review packet
+				  `ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_CHILD_GATE_LADDER_REVIEW_PACKET_2026-07-05.md`
+				  groups the first source/action sublane without closing it:
+				  F1 local action, F2 D17 source-block selection, F3 full-cell
+				  tensor source locality, and F4 scalar-multiplier attachment
+				  all remain unresolved child gates beneath `F_CLAUSE_RETAINED`.
+				  It is review compression only, not retained F1-F4, F, L/P/R,
+				  exact source-side `S_l`, K4, `m_e`, `alpha(0)`, or hydrogen.
+				  The F-clause current-surface no-go
+				  `ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+				  records that current retained, primitive, and open-PR surfaces do not
 			  supply `F_CLAUSE_RETAINED`; the missing inputs include retained or
 			  accepted F1-F4 subinputs, owner ratification, and audit acceptance.
 			  The F1 source-coupled local-action current-surface no-go
@@ -1498,15 +1506,23 @@ electron mass, alpha0, the NR Coulomb limit, or hydrogen.
 	   In short, all F1-F4 supplied closes F; one-input-removed F target fails.
 	   This still does not ratify F or the full F/L/P/R interface.
 	   The F-clause ratification decision packet
-	   (`ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_RATIFICATION_DECISION_PACKET_2026-07-04.md`)
-	   packages that first F subdecision as F1-F4 plus a six-input owner/audit
-		   contract. If accepted, `F_CLAUSE_RETAINED` follows conditionally with
-		   `S_lep[j] = h * B_lep * sum_{c in C} j_c O_c` and
-		   `dS_lep/dj_c = h * B_lep * O_c`. It still leaves L/P/R, A3 precision,
-		   Koide/electron readout, `alpha(0)`, and hydrogen open.
-		   The F-clause current-surface no-go
-		   (`ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
-		   keeps the current retained/primitive/open-PR boundary explicit:
+		   (`ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_RATIFICATION_DECISION_PACKET_2026-07-04.md`)
+		   packages that first F subdecision as F1-F4 plus a six-input owner/audit
+			   contract. If accepted, `F_CLAUSE_RETAINED` follows conditionally with
+			   `S_lep[j] = h * B_lep * sum_{c in C} j_c O_c` and
+			   `dS_lep/dj_c = h * B_lep * O_c`. It still leaves L/P/R, A3 precision,
+			   Koide/electron readout, `alpha(0)`, and hydrogen open.
+			   The F-clause child-gate ladder review packet
+			   (`ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_CHILD_GATE_LADDER_REVIEW_PACKET_2026-07-05.md`)
+			   groups the first source/action sublane without closing it:
+			   F1 local action, F2 D17 source-block selection, F3 full-cell
+			   tensor source locality, and F4 scalar-multiplier attachment all
+			   remain unresolved child gates beneath `F_CLAUSE_RETAINED`. It is
+			   review compression only, not retained F1-F4, F, L/P/R, exact
+			   source-side `S_l`, K4, `m_e`, `alpha(0)`, or hydrogen.
+			   The F-clause current-surface no-go
+			   (`ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
+			   keeps the current retained/primitive/open-PR boundary explicit:
 		   `F_CLAUSE_RETAINED` is not supplied on the current surface, and F1-F4
 		   plus owner/audit acceptance remain the first source-side sublane.
 		   The F1 source-coupled local-action ratification target discriminator

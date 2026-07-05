@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py
-runner_sha256: 6d8241e9d8154b687a4ae200b6fcf522a506f0c3299352b5dc2684be12c451bf
+runner_sha256: 1f3d882a27ab236b4c3eccbc33b647f63050e1c3a73038b056d965cda74b2f5f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.29
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 
@@ -69,7 +69,7 @@ S6 - forced weights: transverse spectrum of the C3 cycle => (1,2); density uniqu
 ========================================================================================
 S7 - circularity guard: the cos3delta channel does NOT assume R-eta
 ========================================================================================
-[PASS] e3 derivation is symbolic in {a, B, delta} with NO density object, NO 2/9, NO L3 anywhere in the computation  [free symbols = {delta, B, a}]
+[PASS] e3 derivation is symbolic in {a, B, delta} with NO density object, NO 2/9, NO L3 anywhere in the computation  [free symbols = {a, B, delta}]
 [PASS] the channel result is an IDENTITY in delta (holds for ALL delta), so it cannot have assumed any particular value of |delta|
 [PASS] the circulant form itself is consumed from the carrier/K-orbit context, which is independent of (and prior to) R-eta  [hostile guard (a) answered: no circularity]
 

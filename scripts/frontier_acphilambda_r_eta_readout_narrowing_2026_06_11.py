@@ -245,9 +245,11 @@ def main() -> int:
     # ------------------------------------------------------------------
     section("S7 - circularity guard: the cos3delta channel does NOT assume R-eta")
     free = e3.free_symbols
+    free_order = (a, B, delta)
+    free_names = "{" + ", ".join(str(symbol) for symbol in free_order if symbol in free) + "}"
     check("e3 derivation is symbolic in {a, B, delta} with NO density object, "
           "NO 2/9, NO L3 anywhere in the computation",
-          free == {a, B, delta}, detail=f"free symbols = {free}")
+          free == {a, B, delta}, detail=f"free symbols = {free_names}")
     check("the channel result is an IDENTITY in delta (holds for ALL delta), "
           "so it cannot have assumed any particular value of |delta|",
           sp.simplify(e3 - (a ** 3 - 3 * a * B ** 2 + 2 * B ** 3 * sp.cos(3 * delta))) == 0)

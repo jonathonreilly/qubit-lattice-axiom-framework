@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
-runner_sha256: ca7f4f79377152286ad9ce35332e49096fa11789975b53cb3b8818b905da6227
+runner_sha256: 1732cef8361d0eab0ef23e9e47435b1a40e291f68ec90a60305ab3d09c62dcec
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -84,33 +84,6 @@ C6  DECAYING-CHANNEL BRIDGE: spectral projector of action-derived T_odd T_even
     L_s=6: lambda_dec in [1.715729e-01, 3.819660e-01], lambda_grow in [2.618034e+00, 5.828427e+00], proj idem=6.1e-16, T2P-lambdaP=3.4e-15, split=9.2e-33, orth=6.1e-16, Gamma tensor err=3.5e-18, BdagB err=5.6e-17
     C6 = PASS  (decaying spectral channel derives the Fock kernel)
 
-------------------------------------------------------------------------------
-C7  WILSON TEMPORAL-GAUGE BRIDGE REROUTE GUARD
-    source wiring: temporal-gauge bridge + mixed kernel + det positivity + Cauchy-Schwarz + T_hat^2[U]
-    finite product sanity: positive factors compose to a non-negative integrand
-------------------------------------------------------------------------------
-    required source bridge phrases present: YES
-    stale missing-bridge phrases absent    : YES
-    min representative factor              : 0.000000e+00
-    min composed integrand                 : 0.000000e+00
-    sum composed integrand                 : 2.782749e+02
-    C7 = PASS  (source bridge wired; composed signs non-negative)
-
-------------------------------------------------------------------------------
-GAUGE CASE REDUCTION / 2026-06-06 PARENT BRIDGE
-------------------------------------------------------------------------------
-    The parent now wires the finite factorized/linear-span bridge:
-      (Wilson OS Step 1 boundary + reflection-Hermitian gauge observables)
-    x (mixed-kernel positive class-function factorization)
-    x (det(M_KS + m I) >= m^n > 0 config-by-config -- separate source row:
-       STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17)
-    x (gauge-half Cauchy-Schwarz norm-square -- separate source row:
-       REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10)
-    x (fixed-background two-step fermion transfer positivity T_hat^2[U] >= 0)
-    This runner supplies C1-C6 for the free specialization and C7 as a source/sign guard.
-    Continuum OS reconstruction, single-step RP, and off-surface physical completion
-    remain out of scope.
-
 ==============================================================================
 SUMMARY
 ==============================================================================
@@ -120,18 +93,15 @@ SUMMARY
   C4 R2 OS Gram PSD      : PASS  (2-step OS Gram Hermitian PSD)
   C5 functor identity    : PASS  (Gamma=B^dag B verified in-repo)
   C6 decaying bridge     : PASS  (spectral projector -> Fock kernel)
-  C7 bridge guard        : PASS  (Wilson temporal-gauge reroute source wiring)
 
-PASS=7 FAIL=0
+PASS=6 FAIL=0
 
   PASS -- the free staggered 2-step blocked transfer matrix T_hat^2 is
   POSITIVE HERMITIAN (T_hat^2 = B^dag B, H_hat = -log(T_hat^2)/(2 a_tau) >= 0),
   derived from the staggered action and anchored to the exact free staggered
   dispersion sinh^2 E = m^2 + sin^2 p. The single-step T_hat is non-positive
   (complex/negative one-step spectrum), consistent with the single-step no-go
-  runner. The parent source now wires the retained Wilson temporal-gauge
-  bridge reroute for finite factorized/linear-span two-step
-  observables; continuum OS reconstruction and off-surface physical
+  runner. Continuum OS reconstruction and off-surface physical
   completion remain out of scope.
 
 ----- stderr -----

@@ -14,7 +14,7 @@ No claim is changed.
 **Type:** positive_theorem
 **Claim type:** positive_theorem
 **Claim scope:** Two-candidate collapse on the framework's physical
-per-site Hilbert space. Given the current Quantum axiom's
+per-site Hilbert space. Given the current Qubit axiom's
 one-qubit-per-site carrier plus the retained per-site dim-two theorem
 (`dim_C H_x = 2`, Pauli realization), the per-site dimensional readout
 excludes the free-bosonic candidate (B) and matches the single-pair
@@ -34,7 +34,7 @@ audit lane.
 **Primary runner:** [`scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py`](../scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py)
 **Runner cache:** [`logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt`](../logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt) (PASS=45, FAIL=0)
 **Authority role:** narrow algebraic bridge composing upstream inputs
-— the Quantum axiom's one-qubit per-site carrier, the retained
+— the Qubit axiom's one-qubit per-site carrier, the retained
 per-site dim-two readout, the `Cl(3)` faithful complex-irrep dim-2
 readout, and the finite-Grassmann Berezin determinant identity — into
 the substep-1 two-candidate collapse
@@ -75,7 +75,7 @@ consumed by the staggered-Dirac spine (e.g. boundary B1 of
   identification of the framework's physical per-site Hilbert space
   with the Cl(3) faithful complex irrep was out of scope, so the
   two-candidate collapse was bounded on that open bridge. That boundary
-  is now discharged by the current Quantum axiom's one-qubit-per-site
+  is now discharged by the then-current Quantum axiom's one-qubit-per-site
   clause plus the retained per-site dim-two theorem
   `CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`. The former
   packaging row
@@ -103,7 +103,7 @@ consumed by the staggered-Dirac spine (e.g. boundary B1 of
 ## 1. Claim scope
 
 Let `H_x` be the framework's physical per-site Hilbert space on the
-`Z^3` substrate. By the Quantum axiom and the retained per-site
+`Z^3` substrate. By the Qubit axiom and the retained per-site
 dim-two row (cited in §3), `H_x = ℂ²` carries the single faithful
 complex irreducible representation of the real Clifford algebra
 `Cl(3,0) ≅ M_2(ℂ)`; in particular `dim_C H_x = 2`. Let `Λ` be a finite set of sites and consider, on the
@@ -137,7 +137,7 @@ Then the following hold:
 - **(D1) Per-site Hilbert-dim mismatch (B candidate vs the physical
   per-site space).** The dimensional readout `dim_C H_x^B = ∞`
   (per-site bosonic Fock) is **strictly different** from the physical
-  per-site dimension `dim_C H_x = 2` (Quantum axiom plus retained
+  per-site dimension `dim_C H_x = 2` (Qubit axiom plus retained
   dim-two row).
   Hence the
   per-site dimensional content of candidate (B) is **incompatible**
@@ -170,7 +170,7 @@ Then the following hold:
   conventional normalization, structurally distinct from `det(M)`).
 
 - **(D5) Two-candidate collapse on the physical per-site space.**
-  Composing the Quantum axiom plus the retained dim-two row
+  Composing the Qubit axiom plus the retained dim-two row
   (`dim_C H_x = 2`) with (D1)–(D3): within the two-candidate surface {(G), (B)}, candidate
   (B) is excluded and candidate (G) is the **unique surviving**
   matter-generator measure on the framework's physical per-site
@@ -209,7 +209,7 @@ Three events since then change the boundary structure:
   now the Qubit axiom).
 - **2026-06-05 / 2026-06-10.** The U4 packaging row's
   decisive move was the identification of the former U4 bridge with the
-  one-qubit-per-site carrier the Quantum axiom already supplies —
+  one-qubit-per-site carrier the Qubit axiom (then named Quantum) already supplies —
   baseline content, not a derivation. The object this note previously
   admitted is therefore supplied by the axiom surface directly,
   together with the retained dim-two row.
@@ -219,7 +219,7 @@ Three events since then change the boundary structure:
   surface omits the hard-core-boson frame and that statistics is not
   forced by the baseline plus dimension/operator-algebra data alone.
 
-This revision therefore (i) consumes the Quantum axiom's
+This revision therefore (i) consumes the Qubit axiom's
 one-qubit-per-site content plus the retained dim-two row and
 discharges the former "U4 bridge remains open" boundary, upgrading the
 two-candidate collapse to an unconditional theorem on the physical
@@ -284,7 +284,7 @@ statistics-selection input (S2/FS) is **not** consumed (§8).
 
 The bosonic per-site Fock space is `H_x^B = ⊕_{n=0}^∞ C · |n⟩_x` with
 basis `{|0⟩_x, |1⟩_x, |2⟩_x, ...}` and `dim_C H_x^B = ℵ_0` (countably
-infinite). By the Quantum axiom plus the retained dim-two row (§5.5),
+infinite). By the Qubit axiom plus the retained dim-two row (§5.5),
 `dim_C H_x = 2`. Since
 `2 ≠ ℵ_0`, the per-site dim of candidate (B) is strictly different
 from the physical per-site dimension, so candidate (B) is incompatible
@@ -348,7 +348,7 @@ repaired realization and the slip witness (`{L_χ, L_χ̄} = 0`) at exact
 matrix level.
 
 **Dimensional readout.** Set `H_x^G := F_x`, so `dim_C H_x^G = 2`. By
-the Quantum axiom plus the retained dim-two row (§5.5),
+the Qubit axiom plus the retained dim-two row (§5.5),
 `dim_C H_x = 2`. Hence `dim_C H_x^G = dim_C H_x`, i.e., the per-site
 dimensional readout of (G) matches the framework's physical per-site
 Hilbert space exactly. ∎
@@ -400,9 +400,9 @@ Hence the Berezin scalar finite-determinant readout `det(M)` is
 **specifically a (G)-candidate algebraic readout**, not a (B)-candidate
 one. ∎
 
-### 5.5 (D5) composition: Quantum/dim-two discharge and two-candidate collapse
+### 5.5 (D5) composition: Qubit/dim-two discharge and two-candidate collapse
 
-**Step 1 (Quantum input plus retained dimensional readout).** By the
+**Step 1 (Qubit input plus retained dimensional readout).** By the
 Qubit axiom (named "Quantum" in the superseded memo) on the current
 axiom surface (`MINIMAL_AXIOMS_2026-06-29.md`), the framework's per-site primitive
 physical degree of freedom on the `Z^3` substrate is one qubit; axiom
@@ -485,7 +485,7 @@ The runner verifies this leg explicitly (§9, Part 9).
 - No spin-statistics / FS selection input consumed (declared open
   boundary, §8).
 - No new foundational premise beyond the current axiom surface; only
-  the Quantum input is load-bearing here.
+  the Qubit input is load-bearing here.
 
 ## 8. Remaining open boundary (statistics selection; declared, not claimed)
 
@@ -564,7 +564,7 @@ verifies via sympy exact symbolic arithmetic:
    generators (i.e. dropping nilpotency `χ_x² = 0`) admits an infinite
    tower of monomials, contradicting the per-site dim-2 readout: the
    runner-level countercheck that nilpotency is load-bearing for (D2).
-8. **(D5) Quantum/dim-two discharge certificate (updated 2026-06-11).** The real-algebra
+8. **(D5) Qubit/dim-two discharge certificate (updated 2026-06-11).** The real-algebra
    map `γ_i ↦ σ_i` spans the full 8-dim real space of `M_2(ℂ)`
    (real-algebra isomorphism `Cl(3,0) ≅ M_2(ℂ)`, hence faithful); the
    commutant of `{σ_1, σ_2, σ_3}` on `ℂ²` is the scalars (irreducible,
@@ -620,7 +620,7 @@ edges:
 
 - `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`
   — packaging row for the same axiom-baseline content this revision
-  consumes directly from the Quantum axiom plus the retained dim-two row;
+  consumes directly from the Qubit axiom plus the retained dim-two row;
   kept as a reader pointer (baseline content, not a derivation); not a
   premise of (D1)–(D5).
 - `STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`
@@ -630,7 +630,7 @@ edges:
   a premise of (D1)–(D5).
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   — open-gate parent; its substep-1 U4 bridge is the boundary this
-  revision discharges via the Quantum axiom plus retained dim-two row;
+  revision discharges via the Qubit axiom plus retained dim-two row;
   its S2 support tier carries the remaining statistics-selection
   residual.
 - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`

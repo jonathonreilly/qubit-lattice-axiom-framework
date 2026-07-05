@@ -70,7 +70,7 @@ or the owner/audit decision.
 | `CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md` | source support for scalar-kernel compatibility and spinful selector location |
 | `scripts/carrier_attachment_chirality_gate_consolidation_runner.py` | finite support check, not decision acceptance |
 | open `#5016` | carries this lane once pushed; not landed authority while open |
-| open `#5026` | Koide custody/status context only |
+| merged `#5026` | Koide custody/status context only |
 | open `#5021`, `#5014`, `#5017`, and `#5018` | primitive/chirality/domain-wall context only |
 | merged `#5019`, `#5020`, `#5022`, `#5023`, and `#5024` | Koide value-face/custody/W4 hygiene only |
 

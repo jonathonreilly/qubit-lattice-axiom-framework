@@ -86,7 +86,7 @@ PRs are queue/status signals; clean/dirty/check labels are not proof inputs.
 |---|---|---|
 | `#5023` Koide W4 audit-readiness repairs | merged, audit success | W4 readiness/hygiene only; no scalar-lift exclusion theorem |
 | `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | merged, audit success | gate-readiness/audit-graph hygiene only; no scalar-lift exclusion theorem |
-| `#5026` Koide custody L4 retained-successor re-point | open, audit in progress | custody repair only; no scalar-lift exclusion theorem |
+| `#5026` Koide custody L4 retained-successor re-point | merged, audit success | custody repair only; no scalar-lift exclusion theorem |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft, audit success | primitive-boundary context only; no primitive shortcut |
 | `#5014` record-formation front is the domain wall | open, audit success | formation-front/domain-wall support only |
 | `#5017` domain-wall edge anomaly inflow via spectral flow | open, audit success | anomaly-flow support only |

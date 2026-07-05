@@ -323,7 +323,7 @@ def main() -> None:
         "scripts/carrier_attachment_chirality_gate_consolidation_runner.py",
         "The approved primitive registry was checked",
         "open `#5016`",
-        "open `#5026`",
+        "merged `#5026`",
         "merged `#5023`",
         "merged `#5024`",
         "No-Go Discipline Gate",
@@ -450,7 +450,7 @@ def main() -> None:
     current_flat = flat(current)
     pr_markers = [
         "`#5016` zero-import hydrogen retained lane bundle | open, audit in progress",
-        "`#5026` Koide custody L4 retained-successor re-point | open, audit in progress",
+        "`#5026` Koide custody L4 retained-successor re-point | merged, audit success",
         "`#5023` Koide W4 audit-readiness repairs | merged, audit success",
         "`#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | merged, audit success",
         "`#5021` primitive-retirement review: meta gate map, no retirements | open draft, audit success",

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 857 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1943 |
+| unaudited | 1942 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 25 |
+| ~~audited_conditional~~ | 26 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1230 |
-| `audited_conditional` | 25 |
+| `audited_conditional` | 26 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2281 |
+| `unaudited` | 2280 |
 
 | claim_type | count |
 |---|---:|
@@ -1386,6 +1386,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -9583,6 +9584,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Given any local Wilson first-variation law dW_W on the Hermitian image of the adjacent-chain algebra, the cyclic descendant is determined by r0=dW_W(B0), r1=dW_W(B1), r2=dW_W(B2) and reconstructs H_cyc=(r0/3)B0+(r1/6)B1+(r2/6)B2, with Koide becoming 2 r0^2 = r1^2 + r2^2.  _(class `A`)_
 - **chain closes:** True — The scoped theorem is an exact finite-dimensional algebra statement over the cyclic basis and real trace pairing. It does not claim to derive the microscopic Wilson response law, selector mechanism, or charged-lepton readout, and those exclusions are explicit in the note.
 - **rationale:** The load-bearing step is not a physical readout or numerical fit; it is the orthogonal-basis reconstruction of the C3-cyclic Hermitian subspace and the algebraic substitution of a=r0/3, x=r1/6, y=r2/6 into the Koide cone. The cached runner exits 0 with PASS=19 FAIL=0 and checks basis containment, cyclic projection, response reconstruction, and the scalar Koide rewrite; the four D-class checks are only an observed charged-lepton witness, not needed for theorem closure. The note clearly limits its scope by stating that the microscopic Wilson law, selector mechanism, and final readout primitive are not derived here, so the positive theorem closes at the stated algebraic target-law level.
+- **auditor confidence:** high
+
+### `koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09`
+
+- **Note:** [`KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md`](../../docs/KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the claimed conditional chain from retained C3 fixed-locus density L3(1,2)=2/9 to |delta|=2/9 under the proposed R-eta readout identification and supplied charged-lepton circulant class; period-fork and mass comparisons were treated as diagnostics only.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260705-105214-544d10ce-koide-delta`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** R-eta: the registered C3-breaking phase magnitude is the fixed-locus spectral density, read directly as the angle, |delta| = L3(1,2).  _(class `F`)_
+- **chain closes:** False — The exact fixed-locus arithmetic L3(1,2)=2/9 closes, but the map from that density to the registered charged-lepton phase magnitude is the proposed R-eta readout identification. A retained theorem deriving R-eta, and any required physical carrier/readout bridge, is missing.
+- **rationale:** Issue: the load-bearing equality |delta|=L3(1,2) is the proposed R-eta readout identification, not a theorem supplied by the cited authorities or runner. Why this blocks: the retained fixed-locus note proves L3(1,2)=2/9 and the registrability note supports sign erasure, but neither derives that the charged-lepton phase magnitude must read the local density directly as an angle; the runner marks R-eta true by stipulation and uses PDG checks only as comparators. Repair target: add or audit a retained readout theorem deriving R-eta, plus any needed carrier/readout bridge, from retained premises rather than setting the equality. Claim boundary until fixed: R-eta plus the supplied circulant class implies |delta|=2/9, with period-fork and mass comparisons as diagnostics only.
 - **auditor confidence:** high
 
 ### `koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24`

@@ -1,13 +1,13 @@
 # Audit Queue
 
-**Total pending:** 1971
+**Total pending:** 1970
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 208
 
 By criticality:
 - `critical`: 415
 - `high`: 283
 - `medium`: 513
-- `leaf`: 760
+- `leaf`: 759
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
 
@@ -20,7 +20,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 3 | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | positive_theorem | unaudited | critical | 1119 | 22.13 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/tensor_product_translation_fermion_operator_bridge_check_2026_05_25.py` |
 | 4 | `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15` | bounded_theorem | audit_in_progress | critical | 1044 | 15.03 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py` |
 | 5 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | unaudited | critical | 1005 | 15.97 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py` |
-| 6 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | unaudited | critical | 999 | 39.97 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_realization_gate_synthesis_check_2026_06_09.py` |
+| 6 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | unaudited | critical | 999 | 40.47 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_realization_gate_synthesis_check_2026_06_09.py` |
 | 7 | `yt_ward_identity_derivation_theorem` | bounded_theorem | unaudited | critical | 897 | 43.81 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
 | 8 | `cl3_taste_generation_theorem` | bounded_theorem | unaudited | critical | 839 | 24.21 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py` |
 | 9 | `g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18` | bounded_theorem | unaudited | critical | 634 | 12.81 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py` |

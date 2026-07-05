@@ -545,6 +545,17 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   `NO_SOURCE_A3_DOUBLE_COUNT`, but it does not select P1/P2/P3/P4, does not
   supply `A3_PRECISION_PLACEMENT_RETAINED`, and does not derive `C_A3`,
   `N_A3`, `m_e`, `alpha(0)`, or hydrogen.
+  The exact source singleton ratification decision packet
+  `ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  packages the K4.2 source-side input after the source-probe interface:
+  EXACT_SOURCE_SINGLETON_TEXT_LOCK, SOURCE_PROBE_INTERFACE_CONTRACT_ACCEPTED,
+  FULL_CELL_SOURCE_CARRIER_CHECK, PROJECTIVE_UNIFORM_RAY_CHECK,
+  S_L_READOUT_IDENTITY_BOUND, CHARGED_LEPTON_SCOPE_LOCK,
+  NO_A3_OR_K4_OR_MASS_INPUT, NO_EMPIRICAL_COMPARATOR_INPUT,
+  NO_NEW_PRIMITIVE_OR_AXIOM, OWNER_RATIFICATION, and AUDIT_ACCEPTANCE. If
+  accepted, it conditionally supplies `EXACT_SOURCE_SINGLETON_RETAINED` and
+  exact source-side `S_l = 1/256` only; A3 placement, K4 scale assembly,
+  `m_e`, `alpha(0)`, and hydrogen remain downstream.
   The absolute charged-lepton scale ratification decision packet
   `ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_RATIFICATION_DECISION_PACKET_2026-07-04.md`
   packages K4 after the source-side and A3 handoffs: K4_SCALE_TEXT_LOCK,
@@ -1061,6 +1072,15 @@ remain support, not the retained physical-unit one-body theorem.
 				   physical `g_2(v)`, observed `m_W`, threshold matching,
 				   D17 normalization, source singleton, A3 placement, K4
 				   scale assembly, and hydrogen.
+				   The exact source singleton ratification decision packet
+				   (`ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_RATIFICATION_DECISION_PACKET_2026-07-05.md`)
+				   packages the K4.2 subinput
+				   `EXACT_SOURCE_SINGLETON_RETAINED` as an eleven-input
+				   owner/audit handoff from the accepted source-probe interface
+				   plus finite `4^4 = 256`, uniform-ray, and `S_l` readout
+				   checks. It preserves exact source-side `S_l = 1/256` while
+				   excluding A3 placement, K4 scale assembly, electron mass,
+				   `alpha(0)`, and hydrogen.
 				   The absolute charged-lepton scale ratification decision packet
 				   (`ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_RATIFICATION_DECISION_PACKET_2026-07-04.md`)
 				   packages K4 as the ten-input handoff after source-side exact

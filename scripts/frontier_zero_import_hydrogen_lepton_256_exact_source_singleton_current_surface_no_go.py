@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 K4_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_RATIFICATION_DECISION_PACKET_2026-07-04.md"
+EXACT_SOURCE_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 SOURCE_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_INTERFACE_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 SOURCE_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_RATIFICATION_TARGET_DISCRIMINATOR_2026-07-04.md"
 COMPRESSION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_INTERFACE_COMPRESSION_SUPPORT_2026-07-04.md"
@@ -139,6 +140,7 @@ def main() -> None:
         NOTE,
         GOAL,
         K4_PACKET,
+        EXACT_SOURCE_DECISION,
         SOURCE_PACKET,
         SOURCE_TARGET,
         COMPRESSION,
@@ -173,6 +175,9 @@ def main() -> None:
         "current-surface no-go / import-retirement target",
         "EXACT_SOURCE_SINGLETON_RETAINED",
         "retained exact source-side",
+        "ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "positive handoff",
+        "eleven-input owner/audit handoff for `EXACT_SOURCE_SINGLETON_RETAINED`",
         "S_l = 1/256",
         "current retained, primitive, and open-PR surfaces do not supply",
         "CLAUSE_TEXT_LOCK",
@@ -271,6 +276,7 @@ def main() -> None:
     section("Authority and primitive boundary checks")
     goal = read(GOAL)
     k4_packet = read(K4_PACKET)
+    exact_source_decision = read(EXACT_SOURCE_DECISION)
     source_packet = read(SOURCE_PACKET)
     source_target = read(SOURCE_TARGET)
     compression = read(COMPRESSION)
@@ -297,6 +303,8 @@ def main() -> None:
 
     audit.check("goal packet references exact-source no-go", NOTE.name in goal and "EXACT_SOURCE_SINGLETON_RETAINED" in goal)
     audit.check("K4 packet references exact-source no-go", NOTE.name in k4_packet and "EXACT_SOURCE_SINGLETON_RETAINED" in k4_packet)
+    audit.check("K4 packet references exact-source decision", EXACT_SOURCE_DECISION.name in k4_packet and "EXACT_SOURCE_SINGLETON_TEXT_LOCK" in k4_packet)
+    audit.check("exact-source decision remains support-only", "does not ratify the exact source singleton" in flat(exact_source_decision) and "No derivation of `m_e`" in exact_source_decision)
     audit.check("source-probe packet references exact-source no-go", NOTE.name in source_packet and "current retained, primitive, and open-PR surfaces do not supply" in source_packet)
     audit.check("source target names full F/L/P/R requirement", "Only the full four-clause target closes" in source_target)
     audit.check("compression remains conditional", "If the normalized label-free source-probe interface is supplied" in compression and "does not ratify the compressed" in compression)

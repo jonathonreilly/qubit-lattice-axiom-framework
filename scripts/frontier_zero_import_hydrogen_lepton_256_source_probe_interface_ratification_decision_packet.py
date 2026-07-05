@@ -20,6 +20,7 @@ GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 ROUTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_ROUTE_TRIAGE_2026-07-04.md"
 COMPRESSION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_INTERFACE_COMPRESSION_SUPPORT_2026-07-04.md"
 RATIFICATION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_RATIFICATION_TARGET_DISCRIMINATOR_2026-07-04.md"
+EXACT_SOURCE_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 EXACT_SOURCE_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 F_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 L_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_L_CLAUSE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
@@ -128,6 +129,7 @@ def main() -> None:
         ROUTE,
         COMPRESSION,
         RATIFICATION,
+        EXACT_SOURCE_DECISION,
         EXACT_SOURCE_NO_GO,
         F_DECISION,
         L_NO_GO,
@@ -204,6 +206,8 @@ def main() -> None:
         "S_l = sigma([j])_c",
         "S_l = 1/256",
         "ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "downstream named-token handoff for K4",
         "current retained, primitive, and open-PR surfaces do not supply",
         "EXACT_SOURCE_SINGLETON_RETAINED",
         "retained exact source-side",
@@ -277,6 +281,7 @@ def main() -> None:
     route = read(ROUTE)
     compression = read(COMPRESSION)
     ratification = read(RATIFICATION)
+    exact_source_decision = read(EXACT_SOURCE_DECISION)
     exact_source_no_go = read(EXACT_SOURCE_NO_GO)
     f_decision = read(F_DECISION)
     l_no_go = read(L_NO_GO)
@@ -301,6 +306,8 @@ def main() -> None:
     audit.check("goal packet has source-probe ratification lane", "source-probe interface" in goal and "F/L/P/R" in goal)
     audit.check("route triage has source-probe ratification lane", "source-probe interface" in route and "derive or ratify" in route)
     audit.check("source-probe packet references exact-source no-go", EXACT_SOURCE_NO_GO.name in note and "current retained, primitive, and open-PR surfaces do not supply" in note)
+    audit.check("source-probe packet references exact-source decision", EXACT_SOURCE_DECISION.name in note and "downstream named-token handoff for K4" in note)
+    audit.check("exact-source decision consumes accepted source-probe interface", "SOURCE_PROBE_INTERFACE_CONTRACT_ACCEPTED" in exact_source_decision and "EXACT_SOURCE_SINGLETON_RETAINED" in exact_source_decision)
     audit.check("exact-source no-go names current retained boundary", "EXACT_SOURCE_SINGLETON_RETAINED" in exact_source_no_go and "retained exact source-side" in exact_source_no_go)
     audit.check("compression supplies conditional exact S_l", "Thus, under the compressed interface" in compression and "S_l = 1/256" in compression)
     audit.check("ratification target names exact decision object", "normalized label-free charged-lepton full-cell source-probe interface" in ratification)

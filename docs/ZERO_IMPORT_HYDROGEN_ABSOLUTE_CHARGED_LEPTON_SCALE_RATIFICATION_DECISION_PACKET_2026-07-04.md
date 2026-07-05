@@ -196,6 +196,18 @@ records that current retained, primitive, and open-PR surfaces do not supply
 but K4 must treat the exact source singleton as an unsupplied upstream input
 until owner ratification and audit acceptance land.
 
+The exact source singleton ratification decision packet
+`ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages that K4.2 input as an eleven-input owner/audit handoff:
+EXACT_SOURCE_SINGLETON_TEXT_LOCK, SOURCE_PROBE_INTERFACE_CONTRACT_ACCEPTED,
+FULL_CELL_SOURCE_CARRIER_CHECK, PROJECTIVE_UNIFORM_RAY_CHECK,
+S_L_READOUT_IDENTITY_BOUND, CHARGED_LEPTON_SCOPE_LOCK,
+NO_A3_OR_K4_OR_MASS_INPUT, NO_EMPIRICAL_COMPARATOR_INPUT,
+NO_NEW_PRIMITIVE_OR_AXIOM, OWNER_RATIFICATION, and AUDIT_ACCEPTANCE. If
+accepted, it supplies only `EXACT_SOURCE_SINGLETON_RETAINED` and exact
+source-side `S_l = 1/256`; weak-front base, A3 placement, no-double-count,
+K4 scale assembly, electron mass, `alpha(0)`, and hydrogen remain downstream.
+
 The A3 precision-placement current-surface no-go
 `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
 records that current retained, primitive, and open-PR surfaces do not supply
@@ -245,6 +257,7 @@ inputs here.
 | `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | conditional handoff for `CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED` | no weak-coupling context, weak-front base, exact source singleton, A3 placement, K4 scale assembly, or electron mass |
 | `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | conditional weak-front-base handoff | no exact source singleton, A3 correction, scale assembly, or electron mass |
 | `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for weak-front base | retained weak-front base |
+| `ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_RATIFICATION_DECISION_PACKET_2026-07-05.md` | conditional exact source-singleton handoff for `EXACT_SOURCE_SINGLETON_RETAINED` | no A3 placement, no K4 scale assembly, no electron mass |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_INTERFACE_RATIFICATION_DECISION_PACKET_2026-07-04.md` | source-side decision that can conditionally yield exact `S_l = 1/256` | source singleton only, not A3 or electron readout |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_RATIFICATION_DECISION_PACKET_2026-07-04.md` | one-placement/no-double-count decision for `C_A3` or `N_A3` | placement only, not the scale assembly by itself |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for retained A3 precision placement | retained A3 placement remains an unsupplied upstream input |

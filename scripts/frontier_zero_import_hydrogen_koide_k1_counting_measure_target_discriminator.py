@@ -170,7 +170,7 @@ def main() -> None:
         "CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md",
         "open `#4932`",
         "open `#4991`",
-        "open `#5019`",
+        "merged `#5019`",
         "The primitive registry was checked",
         "Registered primitives are approved premise nodes, not walls",
         "no primitive supplies `K1_COUNTING_MEASURE_RETAINED`",

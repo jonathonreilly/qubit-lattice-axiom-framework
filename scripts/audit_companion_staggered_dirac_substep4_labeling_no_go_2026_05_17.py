@@ -17,15 +17,28 @@ carrier V_3 with the explicit upstream lattice-translation triple
         (C_3-breaking dynamics premise), and P3 (PDG-empirical premise)
         are each genuine distinguishing premises (adding each is
         sufficient to fix pi_A vs pi_B);
-  (IV) exhaustiveness check: any candidate distinguishing premise X must
-       reduce to one of P1/P2/P3 by case analysis.
+  (IV) exhaustiveness check: the mechanical core (the commutant of C is
+       the circulants, with constant diagonal, so equivariant operators
+       cannot distinguish) is computed; the logical taxonomy (any
+       distinguishing X reduces to P1/P2/P3) is the note's SS2.3
+       case-analysis argument, whose declared presence and citations the
+       runner checks mechanically.
+
+No check passes by literal stipulation: every scorecard line is either an
+exact symbolic computation or a mechanical text/file-existence check
+against the note and its cited sources.
 
 Expected output: SCORECARD with PASS=N FAIL=0, N >= 30.
 """
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import sympy as sp
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md"
 
 
 # ---------------------------------------------------------------------------
@@ -241,14 +254,22 @@ def main() -> int:
         "NQ: E_22 = E_21 * E_12 (matrix unit generated)",
         E21 * E12 == E22,
     )
-    # NQ is basis-independent: same property under pi_A and pi_B
+    # NQ label-independence, checked mechanically: conjugating the
+    # matrix-unit generation identities by the pi_B relabeling permutation
+    # (P_B = C, the cyclic shift on the carrier basis) preserves them
+    # exactly, so the simplicity witness is the same in both labelings.
+    P_B = C
+    E12_B = P_B * E12 * P_B.inv()
+    E21_B = P_B * E21 * P_B.inv()
+    E11_B = P_B * E11 * P_B.inv()
+    E22_B = P_B * E22 * P_B.inv()
     sc.check(
-        "NQ holds independent of carrier labeling (pi_A)",
-        True,  # M_3(C) is simple regardless of label assignment
+        "NQ holds independent of carrier labeling (pi_A: generation identities verified above)",
+        E12 * E21 == E11 and E21 * E12 == E22,
     )
     sc.check(
-        "NQ holds independent of carrier labeling (pi_B)",
-        True,
+        "NQ holds independent of carrier labeling (pi_B: identities preserved under relabeling conjugation)",
+        E12_B * E21_B == E11_B and E21_B * E12_B == E22_B,
     )
 
     # -----------------------------------------------------------------------
@@ -286,10 +307,45 @@ def main() -> int:
         spec_H_break.count(spec_H_break[0]) == 1,
         detail=f"spec = {spec_H_break}",
     )
+    # "P2 requires a new primitive" is checked mechanically in two halves.
+    # Interior half: the commutant of C in M_3(C) is exactly the circulants
+    # (3-dimensional), and every C-commuting M has CONSTANT diagonal — so no
+    # C_3-equivariant operator corner-distinguishes; a corner-distinguishing
+    # operator necessarily breaks C_3, i.e. must be ADDED to A_min.
+    L = sp.zeros(9, 9)
+    for a_ in range(3):
+        for b_ in range(3):
+            Eab = sp.zeros(3, 3)
+            Eab[a_, b_] = 1
+            comm = Eab * C - C * Eab
+            for i in range(3):
+                for j in range(3):
+                    L[3 * i + j, 3 * a_ + b_] = comm[i, j]
+    ns = L.nullspace()
     sc.check(
-        "P2 requires new primitive (not in A_min); rejected within A_min by 10-probe A3",
-        True,  # citation-grade check: 10-probe campaign closed P2
-        detail="see A3_ROUTE1-5 obstruction notes",
+        "P2 interior half: commutant of C in M_3(C) is 3-dimensional (circulants only)",
+        len(ns) == 3,
+        detail=f"nullspace dim = {len(ns)}",
+    )
+    const_diag = all(
+        sp.simplify(v[0] - v[4]) == 0 and sp.simplify(v[4] - v[8]) == 0 for v in ns
+    )
+    sc.check(
+        "P2 interior half: every C-commuting M has constant diagonal -> corner-distinguishing operators must break C_3 (a new primitive)",
+        const_diag,
+    )
+    # Exterior half (citation-grade, checked mechanically): the five 10-probe
+    # A3 obstruction source notes exist and the note records the rejection.
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    a3_notes = sorted(p.name for p in (ROOT / "docs").glob("A3_ROUTE*_2026-05-08_r*.md"))
+    sc.check(
+        "P2 exterior half: the five 10-probe A3 obstruction source notes exist on disk",
+        len(a3_notes) == 5,
+        detail=", ".join(a3_notes),
+    )
+    sc.check(
+        "P2 exterior half: note records the A3-campaign rejection of P2 within A_min",
+        "rejected within A_min" in note_text and "10-probe A3" in note_text,
     )
 
     # P3: PDG-empirical premise — observing the spectrum and matching
@@ -298,10 +354,23 @@ def main() -> int:
     # Operationally, adding "pi(c_alpha) = ell_alpha if lambda_alpha is
     # the alpha-th smallest" with empirical lambda values distinguishes
     # pi_A from pi_B (modulo accidental degeneracy).
+    # Checked mechanically in two halves. (a) Distinguishing power: three
+    # pairwise-distinct sort keys fix a UNIQUE sort bijection, satisfied by
+    # exactly one of pi_A / pi_B. Stand-in rationals are used deliberately —
+    # importing the real PDG values is precisely what the rule forbids.
+    keys = [sp.Rational(1, 2), sp.Rational(3, 2), sp.Rational(7, 2)]
+    order = sorted(range(3), key=lambda i: keys[i])
+    pi_sorted = {alpha + 1: order.index(alpha) + 1 for alpha in range(3)}
     sc.check(
-        "P3 (PDG-empirical) is forbidden by retained-grade rule (substep-4 AC narrowing Step 6)",
-        True,
-        detail="loads PDG data into derivation step; allowed only in lane_prediction framing",
+        "P3 (a): pairwise-distinct sort keys fix a unique bijection satisfied by exactly one of pi_A/pi_B",
+        len(set(keys)) == 3 and ((pi_sorted == pi_A) != (pi_sorted == pi_B)),
+        detail=f"pi_sorted = {pi_sorted}",
+    )
+    # (b) Foreclosure (citation-grade, checked mechanically): the note
+    # records the forbidden-by-retained-grade-rule status of P3.
+    sc.check(
+        "P3 (b): note records the retained-grade-rule foreclosure of P3 (PDG import into a derivation step)",
+        "forbidden by the retained-grade rule" in note_text,
     )
 
     # -----------------------------------------------------------------------
@@ -322,22 +391,24 @@ def main() -> int:
     # (e.g., the C_3-equivariant Hermitian H above with b != 0) does NOT
     # distinguish pi_A from pi_B (verified in [II.AC_phi]).
     # The three distinguishing classes are non-empty by [III].
+    H_wit = H.subs({b_re: 1, b_im: 0})  # explicit witness with b = 1 != 0
     sc.check(
-        "non-distinguishing complement non-empty (C_3-equivariant elements exist)",
-        True,
-        detail="H = a*I + b*C + bbar*C^2 with b!=0 is C_3-equivariant",
+        "non-distinguishing complement non-empty (explicit C_3-equivariant witness with b != 0, constant diagonal)",
+        sp.simplify(H_wit * C - C * H_wit) == sp.zeros(3, 3)
+        and all(sp.simplify(H_wit[i, i] - a) == 0 for i in range(3)),
+        detail="H = a*I + 1*C + 1*C^2",
     )
     sc.check(
-        "P1 class non-empty (stipulation 'pi = pi_A' is well-defined)",
-        True,
+        "P1 class non-empty (stipulation 'pi = pi_A' names a well-defined bijection)",
+        sorted(pi_A.values()) == [1, 2, 3] and len(pi_A) == 3,
     )
     sc.check(
         "P2 class non-empty (H_break = diag(1,0,0) breaks C_3)",
-        True,
+        sp.simplify(H_break - H_break_conj) != sp.zeros(3, 3),
     )
     sc.check(
-        "P3 class non-empty (empirical lepton mass tuple exists in PDG, ignored by retained-grade rule)",
-        True,
+        "P3 class non-empty (a pairwise-distinct three-key tuple exists; stand-in keys, PDG values not imported)",
+        len(set(keys)) == 3,
     )
 
     # The case-analysis exhaustiveness argument: any candidate
@@ -353,15 +424,25 @@ def main() -> int:
     #     (e.g., HK+DHR, retired per substep-4 AC narrowing Block 01 audit;
     #     new axiom, requires explicit user approval - which is P1 or P2 in
     #     disguise).
+    # The mechanical core of the case analysis is the commutant theorem
+    # computed in [III]: every C-commuting M is circulant with constant
+    # diagonal, so a distinguishing X is necessarily non-equivariant and
+    # must either stipulate pi (P1), add a C_3-breaking element (P2), or
+    # import external data (P3). The logical taxonomy itself is the note's
+    # SS2.3 argument (audit-lane-reviewed, not runner-provable); the runner
+    # checks the declared argument and its citations are present.
     sc.check(
-        "exhaustiveness: 'add new axiom' route reduces to P1 or P2 (whose primitive does it add?)",
-        True,
-        detail="any new axiom either stipulates pi (P1) or breaks C_3 (P2)",
+        "exhaustiveness (mechanical core): equivariant operators cannot distinguish (commutant is circulant, constant diagonal)",
+        len(ns) == 3 and const_diag,
     )
     sc.check(
-        "exhaustiveness: HK+DHR appeal retired per substep-4 AC narrowing Block 01 audit",
-        True,
-        detail="no fourth class via DHR",
+        "exhaustiveness (declared case analysis): note SS2.3 reduces any candidate X to P1/P2/P3",
+        "2.3 Exhaustiveness of closure paths" in note_text
+        and "Hence P1/P2/P3 enumerate ALL closure routes" in note_text,
+    )
+    sc.check(
+        "exhaustiveness (citation): HK+DHR appeal recorded as excluded (no fourth class via DHR)",
+        "NO HK + DHR appeal" in note_text,
     )
 
     # -----------------------------------------------------------------------
@@ -371,14 +452,13 @@ def main() -> int:
     # -----------------------------------------------------------------------
     print("\n[V] negative control: non-distinguishing premise does NOT close\n")
     sc.check(
-        "negative control: 'carrier dim = 3' does not distinguish pi_A from pi_B",
-        True,
-        detail="both pi_A and pi_B map to a 3-element label set",
+        "negative control: 'carrier dim = 3' takes the same value under pi_A and pi_B (does not distinguish)",
+        len(set(pi_A.values())) == 3 and len(set(pi_B.values())) == 3,
     )
+    C_relabel = P_B * C * P_B.inv()
     sc.check(
-        "negative control: 'C^3 = I' does not distinguish pi_A from pi_B",
-        True,
-        detail="C^3 = I is independent of labeling",
+        "negative control: 'C^3 = I' holds identically under both labelings (relabeled generator also has order dividing 3)",
+        C * C * C == I3 and C_relabel * C_relabel * C_relabel == I3,
     )
 
     # -----------------------------------------------------------------------

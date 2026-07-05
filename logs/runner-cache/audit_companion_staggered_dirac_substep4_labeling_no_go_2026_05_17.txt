@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.py
-runner_sha256: 387ede848f6a3d96ee53d50d61f05ec62f175ab981f801cd01d1db6441774df3
+runner_sha256: 379aab1db3298340899d8f5cdf16ef3466d4159f9ceb3241dd13799cb2f14754
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.18
 status: ok
 ----- stdout -----
 === Substep-4 AC_phi_lambda species-labeling NO-GO ===
@@ -56,33 +56,38 @@ status: ok
 
   PASS  NQ: E_11 = E_12 * E_21 (matrix unit generated)
   PASS  NQ: E_22 = E_21 * E_12 (matrix unit generated)
-  PASS  NQ holds independent of carrier labeling (pi_A)
-  PASS  NQ holds independent of carrier labeling (pi_B)
+  PASS  NQ holds independent of carrier labeling (pi_A: generation identities verified above)
+  PASS  NQ holds independent of carrier labeling (pi_B: identities preserved under relabeling conjugation)
 
 [III] closure-path enumeration (P1 / P2 / P3 distinguishing premises)
 
   PASS  P1 (labeling-convention) distinguishes pi_A from pi_B :: pi_A satisfies 'pi = pi_A'; pi_B does not
   PASS  P2 (C_3-breaking) candidate H_break = diag(1,0,0) is NOT C_3-equivariant :: C^-1 H_break C = [[0, 0, 0], [0, 0, 0], [0, 0, 1]]
   PASS  P2: H_break dynamically distinguishes c_1 from {c_2, c_3} :: spec = [1, 0, 0]
-  PASS  P2 requires new primitive (not in A_min); rejected within A_min by 10-probe A3 :: see A3_ROUTE1-5 obstruction notes
-  PASS  P3 (PDG-empirical) is forbidden by retained-grade rule (substep-4 AC narrowing Step 6) :: loads PDG data into derivation step; allowed only in lane_prediction framing
+  PASS  P2 interior half: commutant of C in M_3(C) is 3-dimensional (circulants only) :: nullspace dim = 3
+  PASS  P2 interior half: every C-commuting M has constant diagonal -> corner-distinguishing operators must break C_3 (a new primitive)
+  PASS  P2 exterior half: the five 10-probe A3 obstruction source notes exist on disk :: A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md, A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_r2.md, A3_ROUTE3_ANOMALY_INFLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r3.md, A3_ROUTE4_SPIN6_CHAIN_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r4.md, A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md
+  PASS  P2 exterior half: note records the A3-campaign rejection of P2 within A_min
+  PASS  P3 (a): pairwise-distinct sort keys fix a unique bijection satisfied by exactly one of pi_A/pi_B :: pi_sorted = {1: 1, 2: 2, 3: 3}
+  PASS  P3 (b): note records the retained-grade-rule foreclosure of P3 (PDG import into a derivation step)
 
 [IV] exhaustiveness of P1/P2/P3 (case-analysis check)
 
-  PASS  non-distinguishing complement non-empty (C_3-equivariant elements exist) :: H = a*I + b*C + bbar*C^2 with b!=0 is C_3-equivariant
-  PASS  P1 class non-empty (stipulation 'pi = pi_A' is well-defined)
+  PASS  non-distinguishing complement non-empty (explicit C_3-equivariant witness with b != 0, constant diagonal) :: H = a*I + 1*C + 1*C^2
+  PASS  P1 class non-empty (stipulation 'pi = pi_A' names a well-defined bijection)
   PASS  P2 class non-empty (H_break = diag(1,0,0) breaks C_3)
-  PASS  P3 class non-empty (empirical lepton mass tuple exists in PDG, ignored by retained-grade rule)
-  PASS  exhaustiveness: 'add new axiom' route reduces to P1 or P2 (whose primitive does it add?) :: any new axiom either stipulates pi (P1) or breaks C_3 (P2)
-  PASS  exhaustiveness: HK+DHR appeal retired per substep-4 AC narrowing Block 01 audit :: no fourth class via DHR
+  PASS  P3 class non-empty (a pairwise-distinct three-key tuple exists; stand-in keys, PDG values not imported)
+  PASS  exhaustiveness (mechanical core): equivariant operators cannot distinguish (commutant is circulant, constant diagonal)
+  PASS  exhaustiveness (declared case analysis): note SS2.3 reduces any candidate X to P1/P2/P3
+  PASS  exhaustiveness (citation): HK+DHR appeal recorded as excluded (no fourth class via DHR)
 
 [V] negative control: non-distinguishing premise does NOT close
 
-  PASS  negative control: 'carrier dim = 3' does not distinguish pi_A from pi_B :: both pi_A and pi_B map to a 3-element label set
-  PASS  negative control: 'C^3 = I' does not distinguish pi_A from pi_B :: C^3 = I is independent of labeling
+  PASS  negative control: 'carrier dim = 3' takes the same value under pi_A and pi_B (does not distinguish)
+  PASS  negative control: 'C^3 = I' holds identically under both labelings (relabeled generator also has order dividing 3)
 
 === SCORECARD ===
-  PASS=46 FAIL=0
+  PASS=51 FAIL=0
 
 ----- stderr -----
 

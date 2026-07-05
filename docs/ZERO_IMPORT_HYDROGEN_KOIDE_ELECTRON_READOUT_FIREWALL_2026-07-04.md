@@ -256,6 +256,13 @@ only; it does not supply h-class, carrier realization, full R-eta retirement,
 two-ninths/radian closure, K2 exactness, physical electron mass, alpha input,
 or hydrogen.
 
+The R-eta h-unit identity-radian ratification decision packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_RATIFICATION_DECISION_PACKET_2026-07-05.md`)
+packages that subinput as an eleven-input owner/audit contract. It localizes
+the live selection theorem to `c = 1` or equivalently `Phi = 2/3`; it does not
+derive that value, h-class, full R-eta retirement, K2 exactness, physical
+electron mass, alpha input, or hydrogen.
+
 The R-eta h-class fixed-locus target
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md`)
 packages `R_ETA_H_CLASS_RETAINED`, the matching subinput of R-eta readout

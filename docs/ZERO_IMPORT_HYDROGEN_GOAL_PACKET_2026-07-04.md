@@ -97,6 +97,11 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   route-guard context while preserving zero-source readout,
   real-primitive Brannen endpoint, based determinant-line readout, physical
   electron species bridge, and absolute scale as open obligations. The
+  Koide R-eta value-face `#5020` impact discriminator
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md`
+  records registered-angle K2 value-face progress while leaving exactness
+  open; it does not derive `AC_phi_lambda`, `delta = 2/9`, Koide electron
+  readout, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. The
   Koide native zero-section bridge target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_TARGET_DISCRIMINATOR_2026-07-04.md`
   turns the first three bridge obligations into the explicit
@@ -1182,7 +1187,7 @@ appeared, again after `#4958` appeared and `#4950` merged, and again after
 							and again after `#5012` and `#5013` appeared and
 							completed audit successfully, then after `#5014`
 							appeared, then after `#5015` opened and `#5013`
-							merged.
+                            merged, then after `#5019` and `#5020` opened.
 							The latest refresh found
 							`#5015` open, `#5014` open, `#5013` merged, `#5012` open,
 							`#5011` `SUCCESS`, `#5010` `SUCCESS`,
@@ -1318,6 +1323,7 @@ here.
                             | `#5018` domain-wall edge content vs SM chiral fermions map | Open. It is chirality/domain-wall edge-content science; it does not supply charged-lepton F/L/P/R, D17 weak-front normalization, Koide electron readout, `S_l`, `m_e`, `alpha(0)`, static-source NR Coulomb closure, or hydrogen. |
                             | `#5017`/`#5018` chirality/domain-wall impact boundary | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_CHIRALITY_DOMAIN_WALL_PR5017_5018_IMPACT_DISCRIMINATOR_2026-07-05.md` records these as above-C3 chirality/domain-wall context; it does not derive the K3 physical electron species bridge, Koide electron readout, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
                         | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as Koide premise-hygiene and audit-readiness context for the `AC_phi_lambda` decomposition chain; it does not derive `AC_phi_lambda`, Koide native zero-section closure, physical electron species, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
+                        | `#5020` Koide R-eta value-face registered-angle/exactness relocation | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as K2 value-face progress; exactness remains open; it does not derive `AC_phi_lambda`, `delta = 2/9`, Koide electron readout, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
 		| `#4919`, `#4921` admissibility bootstrap continuation | Formation/orbit/chirality context; no direct closure of `m_e`, `S_l`, Koide readout, or `alpha(0)`. |
 
 ## Non-Claims

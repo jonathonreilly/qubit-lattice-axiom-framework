@@ -92,7 +92,7 @@ fluctuation determinant/readout object is chiral or holomorphic.
 | `KOIDE_OCCUPANCY_KERNEL_COEFFICIENT_NOT_FIXED_BY_RETAINED_CORNER_MEASURE_BOUNDED_NOTE_2026-06-12.md` | retained corner-measure non-supply boundary | fixed determinant coefficient or selector |
 | open draft `#5021` primitive-retirement review | primitive-boundary context; reports no primitive retirement and no registry edit | new approved primitive or determinant shortcut |
 | merged `#5028` Koide W4c labeling-pair successor re-points | species-note edge hygiene | determinant theorem |
-| open `#5029` Koide substep4 labeling no-go runner strengthening | runner verification mechanics | determinant theorem, K1 closure, electron readout, or hydrogen |
+| merged `#5029` Koide substep4 labeling no-go runner strengthening | runner verification mechanics with audit success | determinant theorem, K1 closure, electron readout, or hydrogen |
 | approved premise/primitive registry | minimal axioms, scale reference, kinetic isotropy, realized-state pointwise evaluation | determinant theorem, selector, `r`, `Q`, `m_e`, `alpha(0)`, or hydrogen |
 
 The primitive registry was checked. The registered premise nodes are
@@ -113,7 +113,7 @@ tracked as dependency-state signals; clean/green status is not proof input.
 |---|---:|---|
 | `#5021` primitive-retirement review | open draft | no primitive retirement, no registry edit, no determinant shortcut |
 | `#5028` Koide W4c labeling-pair successor re-points | merged | species-label hygiene only |
-| `#5029` Koide substep4 labeling no-go runner strengthening | open, audit in progress at latest refresh | runner verification only; no determinant theorem |
+| `#5029` Koide substep4 labeling no-go runner strengthening | merged with audit success after refresh | runner verification only; no determinant theorem |
 | `#5016` zero-import hydrogen retained lane bundle | open | carries this current-surface no-go once pushed |
 
 Merge-state labels, branch ordering, draft status, and check state are review

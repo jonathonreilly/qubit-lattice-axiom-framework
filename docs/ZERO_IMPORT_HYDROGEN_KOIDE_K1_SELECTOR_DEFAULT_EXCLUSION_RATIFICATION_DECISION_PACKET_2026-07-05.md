@@ -145,13 +145,13 @@ STATIC_SOURCE_RYDBERG_RETAINED
 | `OCCUPANCY_READOUT_EXPONENT_BEREZIN_SUBSUMPTION_BOUNDED_THEOREM_NOTE_2026-06-09.md` | conditional determinant-exponent bookkeeping | not unconditional selector/default-exclusion |
 | `KOIDE_OCCUPANCY_KERNEL_COEFFICIENT_NOT_FIXED_BY_RETAINED_CORNER_MEASURE_BOUNDED_NOTE_2026-06-12.md` | retained corner-measure non-supply boundary | no fixed doublet-block coefficient |
 | `CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md` | conditional K1/K2 under `AC_phi_lambda` | not zero-import retained selector/default-exclusion |
-| `#4932` AC measure binary axiom shortcut no-go | open shortcut blocker | no selector theorem |
+| `#4932` AC measure binary axiom shortcut no-go | closed without merge flag; head not on `origin/main` at refresh | shortcut-blocking context only; no selector theorem |
 | `#4991` owner-governed Tier-A retirement | open status movement | premise standing only, not theorem closure |
 | merged `#5019` Koide `AC_phi_lambda` axiom-surface rebase | premise-hygiene and audit-readiness context | no `AC_phi_lambda` or selector derivation |
 | merged `#5020` Koide R-eta value-face PR | K2 value-face progress | no K1 selector |
 | merged `#5022` delta-eta audit repair | K2 supplied-premise conditionality repair | no K1 selector |
 | `#5021` primitive-retirement review draft | primitive-boundary context; no primitive retirement and no registry edit | no primitive shortcut |
-| `#5029` Koide substep4 labeling no-go runner strengthening | open runner-only PR, audit success at latest refresh | no K1/K2/K3 closure, electron readout, or hydrogen |
+| `#5029` Koide substep4 labeling no-go runner strengthening | merged runner-only PR, audit success | no K1/K2/K3 closure, electron readout, or hydrogen |
 | approved premise/primitive registry | minimal axioms, scale reference, kinetic isotropy, realized-state pointwise evaluation | no counting selector, default exclusion, mass, alpha, or hydrogen |
 
 The primitive registry was checked. Registered primitives are approved premise
@@ -169,13 +169,13 @@ status is not proof input.
 
 | PR | queue signal | selector/default-exclusion effect |
 |---|---:|---|
-| `#4932` AC measure binary axiom shortcut no-go | open | shortcut blocker only; no selector theorem |
+| `#4932` AC measure binary axiom shortcut no-go | closed unmerged; head not on `origin/main` | shortcut-blocking context only; no selector theorem |
 | `#4991` owner-governed Tier-A retirement | open | status progress for old occupancy atoms; no theorem closure |
 | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged | premise-hygiene context; no `AC_phi_lambda` or K1 derivation |
 | `#5020` Koide R-eta value-face registered-angle/exactness relocation | merged | K2 value-face progress only |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft | primitive-boundary context only; no registry edit |
 | `#5022` delta-eta chain R-eta supplied-premise audit repair | merged, audit success | K2 conditionality repair only |
-| `#5029` Koide substep4 labeling no-go runner strengthening | open, audit success | runner verification only; no selector theorem |
+| `#5029` Koide substep4 labeling no-go runner strengthening | merged with audit success | runner verification only; no selector theorem |
 | `#5016` zero-import hydrogen retained lane bundle | open | carries this packet once pushed |
 
 ## What This Moves
@@ -327,7 +327,7 @@ narrowed selector/default-exclusion decision packet passes.
 - No adoption of orbit-occupancy or any owner-governed occupancy premise.
 - No derivation of `r = 1/2` or `Q = 2/3` from the current retained inventory.
 - No claim that `#4932`, `#4991`, merged `#5019`, merged `#5020`, draft
-  `#5021`, merged `#5022`, or open `#5029` supplies the selector/default-
+  `#5021`, merged `#5022`, or merged `#5029` supplies the selector/default-
   exclusion target.
 - No derivation or ratification of K2 exactness, K3 physical species bridge,
   native bridge, Koide branch mass-map, K4 absolute scale, or physical

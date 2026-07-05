@@ -147,7 +147,7 @@ eleven inputs only after acceptance.
 | Berezin subsumption note | conditional determinant-exponent route | possible future support, not current closure |
 | retained corner-measure coefficient note | keeps coefficient/occupancy open under retained corner measure | no determinant shortcut |
 | primitive registry | premise discipline | no determinant theorem, `r`, `Q`, `m_e`, `alpha(0)`, or hydrogen |
-| open `#5029` | runner-only Koide labeling no-go strengthening | no determinant theorem or K1 closure |
+| merged `#5029` | runner-only Koide labeling no-go strengthening with audit success | no determinant theorem or K1 closure |
 | open `#5016` | carries this hydrogen lane bundle once pushed | queue vehicle only |
 
 The primitive registry was checked. Registered primitives are approved premise

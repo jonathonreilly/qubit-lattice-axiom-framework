@@ -425,7 +425,7 @@ def main() -> None:
 
     section("Open PR and non-claim boundaries")
     open_markers = [
-        "`#4932` AC measure binary axiom shortcut no-go | open, clean",
+        "`#4932` AC measure binary axiom shortcut no-go | closed unmerged; head not on `origin/main`",
         "`#4991` owner-governed Tier-A retirement | open, clean",
         "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged",
         "`#5020` Koide R-eta value-face registered-angle/exactness relocation | merged",

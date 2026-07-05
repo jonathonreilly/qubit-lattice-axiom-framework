@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 192 |
-| **retained_bounded** | 867 |
+| **retained_bounded** | 868 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1931 |
+| unaudited | 1930 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1243 |
+| `audited_clean` | 1244 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2269 |
+| `unaudited` | 2268 |
 
 | claim_type | count |
 |---|---:|
@@ -115,14 +115,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 13 | `native_gauge_closure_note` | positive_theorem | critical | 1540 | 41.59 | `audited_clean` | **retained** |
 | 14 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1000 | 39.97 | `unaudited` | unaudited |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 1062 | 38.55 | `audited_clean` | **retained_no_go** |
-| 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1043 | 37.53 | `unaudited` | unaudited |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1170 | 36.69 | `audited_clean` | **retained** |
-| 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 1074 | 36.57 | `unaudited` | unaudited |
-| 19 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 513 | 36.51 | `unaudited` | unaudited |
-| 20 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
-| 21 | `three_generation_structure_note` | bounded_theorem | critical | 1206 | 35.74 | `audited_clean` | **retained_bounded** |
-| 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 1071 | 35.07 | `unaudited` | unaudited |
-| 23 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 293 | 34.70 | `unaudited` | unaudited |
+| 16 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 293 | 37.70 | `unaudited` | unaudited |
+| 17 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1043 | 37.53 | `unaudited` | unaudited |
+| 18 | `cpt_exact_note` | positive_theorem | critical | 1170 | 36.69 | `audited_clean` | **retained** |
+| 19 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 1074 | 36.57 | `unaudited` | unaudited |
+| 20 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 513 | 36.51 | `unaudited` | unaudited |
+| 21 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
+| 22 | `three_generation_structure_note` | bounded_theorem | critical | 1206 | 35.74 | `audited_clean` | **retained_bounded** |
+| 23 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 1071 | 35.07 | `unaudited` | unaudited |
 | 24 | `kinetic_isotropy_primitive` | meta | critical | 1054 | 34.54 | `unaudited` | meta |
 | 25 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1002 | 34.47 | `unaudited` | unaudited |
 
@@ -252,6 +252,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_koide_note_2026-04-18` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_koide_ratio_source_selector_firewall_note_2026-04-27` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
+| `charged_lepton_koide_value_full_chain_of_custody_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_op_local_source_selected_line_selector_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `charged_lepton_radiative_tau_selector_firewall_note_2026-04-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
 | `charged_lepton_selected_line_generation_selector_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
@@ -3095,6 +3096,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The negative firewall closes: even granting the Q and Brannen support values, the data do not select a physical generation or tau-scale label. The note explicitly leaves Q source selection, selected-line endpoint/readout, and generation selection as residuals.
 - **rationale:** The runner verifies phase-erasure of Q, conditional status of the source and endpoint support, cyclic relabeling of the largest slot, and comparator-only use of PDG masses. That is sufficient for the no-go that Q plus Brannen phase support is not a standalone generation/tau-scale selector. It does not audit or retain native Q closure or delta/radian closure.
 - **auditor confidence:** high
+
+### `charged_lepton_koide_value_full_chain_of_custody_2026-06-02`
+
+- **Note:** [`CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`](../../docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded custody theorem for charged-lepton Q=2/3: the structural chain and exact Koide-line algebra close from the named authorities modulo the Tier-A AC_phi_lambda admitted selector; no unconditional derivation of AC_phi_lambda, physical lane assignment, or mass values is claimed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-custody-reaudit-20260705`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** AC_phi_lambda supplies the admitted r=1/2 selector; with L6/L10, Q = 1/3 + (2/3)r gives Q = 2/3.  _(class `A`)_
+- **chain closes:** True — The exact scoped claim closes at the bounded tier: the selector is explicitly admitted, and the runner verifies the algebraic chain from r=1/2 to Q=2/3. The unbounded value derivation remains outside scope.
+- **rationale:** The source note does not hide the value selector: AC_phi_lambda is named as the Tier-A admitted input, and the structure/value split is explicit. The one-hop notes support the finite algebraic and bounded-map links at the consumed scopes, while broader physical residuals are either out of scope or folded into the named admission. The runner is an A/B custody verifier, not a first-principles derivation, but that matches the bounded claim. Residual limit: this does not retire AC_phi_lambda or promote the claim to unbounded retained status.
+- **auditor confidence:** medium
 
 ### `charged_lepton_op_local_source_selected_line_selector_no_go_note_2026-04-27`
 

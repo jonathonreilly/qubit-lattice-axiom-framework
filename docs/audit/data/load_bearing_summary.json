@@ -107,6 +107,12 @@
       "transitive_descendants": 1062
     },
     {
+      "claim_id": "koide_circulant_character_derivation_note_2026-04-18",
+      "criticality": "critical",
+      "load_bearing_score": 37.7,
+      "transitive_descendants": 293
+    },
+    {
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
       "criticality": "critical",
       "load_bearing_score": 37.528,
@@ -147,12 +153,6 @@
       "criticality": "critical",
       "load_bearing_score": 35.066,
       "transitive_descendants": 1071
-    },
-    {
-      "claim_id": "koide_circulant_character_derivation_note_2026-04-18",
-      "criticality": "critical",
-      "load_bearing_score": 34.7,
-      "transitive_descendants": 293
     },
     {
       "claim_id": "kinetic_isotropy_primitive",

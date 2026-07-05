@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/domain_wall_edge_anomaly_inflow_spectral_flow_2026_07_05.py
+runner_sha256: a75af0c9c66bd27a0854f4497f75a177dc702638bed4b4c454b1041ddbdb6dcc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 49.63
+status: ok
+----- stdout -----
+
+============================================================================================
+1. Background U(1) flux and Hermiticity
+============================================================================================
+PASS - magnetic Peierls links carry one total U(1) flux quantum  (sum_plaquette_phase=6.283185307180 expected=6.283185307180)
+PASS - gauge-coupled domain-wall Hamiltonian is Hermitian  (||H-H^dagger||=0.000e+00)
+
+============================================================================================
+2. Spectral flow of localized wall and anti-wall edge branches
+============================================================================================
+
+positive mass orientation
+config: Lx=3 Ly=3 Ns=14 Lz=7 M=+0.800 width=0.000 phi_steps=15 flux=1
+flow: wall=+1 anti=-1 net=+0
+bulk_gap_min=0.590028989858
+  wall crossings:
+    z=3 phi_step=2->3 E=-0.042490753527->+0.022148477848 k=-0.042315329620->+0.021798806168 weight=0.689764->0.686201 chi=+0.990621->+0.979238 sign=+1
+  anti crossings:
+    z=3 phi_step=2->3 E=+0.042490753527->-0.022148477848 k=-0.042315329620->+0.021798806168 weight=0.860121->0.855437 chi=-0.990621->-0.979238 sign=-1
+  near-zero tracked branch endpoints:
+    wall z=2: E0=-0.906332189719 Eend=-0.169803467570 min|E|=0.169803467570 min_weight=0.318276 mean_chi=+0.987854
+    wall z=3: E0=-0.169803467570 Eend=+0.667991805447 min|E|=0.022148477848 min_weight=0.496995 mean_chi=+0.992537
+    anti z=2: E0=+0.906332189719 Eend=+0.169803467570 min|E|=0.169803467570 min_weight=0.514318 mean_chi=-0.987854
+    anti z=3: E0=+0.169803467570 Eend=-0.667991805447 min|E|=0.022148477848 min_weight=0.704985 mean_chi=-0.992537
+PASS - wall spectral flow is the integer +1  (wall_flow=1 crossings=1)
+PASS - anti-wall spectral flow is the integer -1  (anti_flow=-1 crossings=1)
+PASS - record-time torus has zero net spectral flow  (net=0)
+PASS - crossing states are localized edge states  (min_crossing_weight=0.686201 min|chi|=0.979238)
+PASS - bulk states stay gapped while edge levels cross  (min_bulk_gap=0.590028989858)
+PASS - flow sign tracks measured edge chirality  (wall sign/chi=+1/+0.984930; anti sign/chi=-1/-0.984930)
+
+============================================================================================
+3. Chirality flip re-diagonalizes and reverses the flow
+============================================================================================
+
+flipped mass orientation
+config: Lx=3 Ly=3 Ns=14 Lz=7 M=-0.800 width=0.000 phi_steps=15 flux=1
+flow: wall=-1 anti=+1 net=+0
+bulk_gap_min=0.590028989858
+  wall crossings:
+    z=3 phi_step=2->3 E=+0.042490753527->-0.022148477848 k=-0.042315329620->+0.021798806168 weight=0.860121->0.855437 chi=-0.990621->-0.979238 sign=-1
+  anti crossings:
+    z=3 phi_step=2->3 E=-0.042490753527->+0.022148477848 k=-0.042315329620->+0.021798806168 weight=0.689764->0.686201 chi=+0.990621->+0.979238 sign=+1
+  near-zero tracked branch endpoints:
+    wall z=2: E0=+0.906332189719 Eend=+0.169803467570 min|E|=0.169803467570 min_weight=0.514318 mean_chi=-0.987854
+    wall z=3: E0=+0.169803467570 Eend=-0.667991805447 min|E|=0.022148477848 min_weight=0.704985 mean_chi=-0.992537
+    anti z=2: E0=-0.906332189719 Eend=-0.169803467570 min|E|=0.169803467570 min_weight=0.318276 mean_chi=+0.987854
+    anti z=3: E0=-0.169803467570 Eend=+0.667991805447 min|E|=0.022148477848 min_weight=0.496995 mean_chi=+0.992537
+PASS - flipping the wall chirality reverses wall and anti-wall flow  (M=+ flow=(+1,-1); M=- flow=(-1,+1))
+PASS - flipped flow sign tracks flipped measured chirality  (wall sign/chi=-1/-0.984930; anti sign/chi=+1/+0.984930)
+
+============================================================================================
+4. Quantization and robustness
+============================================================================================
+robust row: Ns=12 Lz= 5 width=0.00 wall=+1 anti=-1 net=+0 bulk_gap=0.627870321803
+robust row: Ns=14 Lz= 7 width=0.00 wall=+1 anti=-1 net=+0 bulk_gap=0.589795856227
+robust row: Ns=14 Lz= 7 width=0.45 wall=+1 anti=-1 net=+0 bulk_gap=0.621469648907
+robust row: Ns=16 Lz= 7 width=0.00 wall=+1 anti=-1 net=+0 bulk_gap=0.563638567662
+PASS - integer flow is stable under lattice-size and front-width changes  (rows=(+1,-1), (+1,-1), (+1,-1), (+1,-1))
+PASS - robustness rows keep the bulk gapped  (min_bulk_gap=0.563638567662)
+
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

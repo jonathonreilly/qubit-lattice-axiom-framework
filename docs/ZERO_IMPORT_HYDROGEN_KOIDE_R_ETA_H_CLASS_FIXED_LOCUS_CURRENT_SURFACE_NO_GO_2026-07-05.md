@@ -85,6 +85,8 @@ The current surface localizes that target but does not derive it.
 | merged `#5020` Koide R-eta value-face registered-angle/exactness relocation | value-face progress and exactness residual naming | h-class fixed-locus physical readout |
 | merged `#5022` delta-eta chain R-eta supplied-premise audit repair | conditional supplied-premise repair using retained form authority | h-class derivation or R-eta import retirement |
 | merged `#5019` Koide `AC_phi_lambda` axiom-surface rebase | premise hygiene and audit-readiness context | h-class physical carrier/readout theorem |
+| open `#5023` Koide W4 audit-readiness repairs | record-formation narrowing plus species/custody/hw-complement dependency repairs | h-class physical carrier/readout theorem |
+| open `#5024` Koide W4 gate-note premise minimization and substep1 rebase | `AC_phi_lambda` gate dependency minimization and substep1 audit-readiness | h-class, h-unit, or R-eta import retirement |
 | `#5021` primitive-retirement review draft | primitive-boundary meta review; reports no primitive retirement and no registry edit | new h-class primitive or retained handoff |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED` | h-class class membership |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for full R-eta readout retirement | h-class subinput closure |
@@ -107,6 +109,8 @@ dependency-state signals; clean/dirty/check labels are not proof inputs.
 |---|---:|---|
 | `#5022` delta-eta chain R-eta supplied-premise audit repair | merged, audit success | conditional repair only; no retained h-class theorem |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft, dirty | primitive-boundary context only; no registry edit and no h-class shortcut |
+| `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | open, audit success | `AC_phi_lambda` gate hygiene; no h-class, h-unit, or R-eta retirement |
+| `#5023` Koide W4 audit-readiness repairs | open, audit success | dependency hygiene for record/species/custody/hw-complement surfaces; no h-class theorem |
 | `#5020` Koide R-eta value-face registered-angle/exactness relocation | merged | value-face progress; fixed-locus physical readout remains open |
 | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged | premise-hygiene context; no h-class theorem |
 | `#5018`/`#5017` chirality/domain-wall stack | open | above-C3 context only; no h-class, R-eta retirement, or electron mass |
@@ -121,6 +125,7 @@ dependency-state signals; clean/dirty/check labels are not proof inputs.
 | W2 registrability could be overread as physical carrier realization | W2 is recorded as supplied-context support only |
 | ambient heat-trace support could be overread as physical normalization | ambient support is explicit reconstruction-layer support only |
 | #5020/#5022 could be overread as h-class closure | they are value-face and conditionality progress only |
+| #5023/#5024 could be overread as h-class closure | they are W4 / `AC_phi_lambda` gate-readiness repairs only |
 
 ## No-Go Discipline Gate
 
@@ -144,6 +149,7 @@ R_ETA_H_CLASS_RETAINED.
 | registered-pattern route | Treat realized-state registered data as deriving fixed-locus class membership. | ATTEMPTED. It classifies supplied value data; it does not select the physical fixed-point functional. |
 | #5020 value-face route | Spend registered-angle value-face progress as h-class readout. | ATTEMPTED. #5020 leaves exactness/readout residuals open and does not derive the physical fixed-point theorem. |
 | #5022 supplied-premise route | Treat conditional supplied R-eta repair as h-class derivation. | ATTEMPTED. #5022 makes R-eta supplied and conditional, not derived. |
+| #5023/#5024 W4 gate route | Treat W4 `AC_phi_lambda` gate-readiness repairs as h-class closure. | ATTEMPTED. They improve dependency readiness, but supply neither physical carrier context nor the single fixed-point readout theorem for h-class. |
 | h-unit route | Use identity-radian unit acceptance as h-class acceptance. | RULED OUT AS INDEPENDENT. H-unit handles unit coefficient, not class membership. |
 | primitive shortcut | Treat approved primitives or #5021 as supplying the physical readout bridge. | ATTEMPTED. Registered primitives supply no physical carrier context, readout bridge, selector, exact value, or mass; #5021 reports no registry edit. |
 | comparator route | Use fitted or observed lepton/hydrogen data. | RULED OUT AS ZERO-IMPORT PROOF. Comparator data is target data, not proof input. |
@@ -198,6 +204,7 @@ background.
 | registered-pattern note | value as registered data | h-class selector/readout still target | yes |
 | #5020 impact | value-face standing and exactness residual | no physical fixed-point theorem | yes |
 | #5022 impact | supplied-premise conditionality | no retained h-class theorem | yes |
+| #5023/#5024 W4 PRs | `AC_phi_lambda` gate and audit-readiness hygiene | no h-class physical carrier/readout theorem | yes |
 | primitive registry / #5021 draft | primitive-boundary status | no shortcut primitive | yes as guard |
 | h-unit packets | identity-radian unit subinput | independent from h-class | yes |
 
@@ -266,8 +273,9 @@ current-surface non-supply claim passes.
 - No derivation of `delta = 2/9` as a retained physical phase.
 - No derivation or ratification of `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
 - No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.
-- No claim that merged PR `#5019`, merged PR `#5020`, draft PR `#5021`, or
-  merged PR `#5022` supplies h-class fixed-locus retirement.
+- No claim that merged PR `#5019`, merged PR `#5020`, draft PR `#5021`, merged
+  PR `#5022`, open PR `#5023`, or open PR `#5024` supplies h-class fixed-locus
+  retirement.
 - No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`, observed
   `m_e`, observed `alpha(0)`, or observed hydrogen as proof input.
 - No derivation of K1 occupancy/counting, K3 physical species bridge, K4

@@ -24,8 +24,9 @@ tiny memory):
       in this runner outputs a unique r;
   S6  flow facts as derived dial geometry: r -> 2r^2 separatrix, 2-sector
       entropy attractor, both state-independent structure statements;
-  S7  mechanical text checks: the Record axiom's occupancy-rule non-supply
-      clause, the realized-state primitive's clauses and register item,
+  S7  mechanical text checks: the current axiom memo's Qualification
+      non-supply clauses, historical 06-05 corroboration, the
+      realized-state primitive's clauses and register item,
       the registry entries (incl. the reclassified_primitives precedent);
   S8  residual map: BOTH grain models satisfy all checked constraints, so
       the measure-side binary survives as a derivation frontier (the
@@ -313,17 +314,32 @@ check("S6.3 dial geometry is sharp: fixed points of r->2r^2 on [0,inf) "
       np.allclose(roots_fp, [0.0, 0.5]) and sign_changes == 1)
 
 # ---------------------------------------------------------------- S7
-axioms_txt = (REPO / "docs/MINIMAL_AXIOMS_2026-06-05.md").read_text()
+axioms_txt = (REPO / "docs/MINIMAL_AXIOMS_2026-06-29.md").read_text()
 axioms_flat = " ".join(axioms_txt.split())
-check("S7.1 Record axiom non-supply clause present verbatim (incl. "
-      "'weighting, normalization, probability' and 'occupancy rule')",
-      "weighting, normalization, probability" in axioms_flat
-      and "within-sector data, or occupancy rule" in axioms_flat)
+q1 = ("These axioms state only their named primitive content. Further physical "
+      "structure requires derivation, bridge, explicit admission, or approved "
+      "primitive registration before use as a premise.")
+q2 = ("In particular, a law may not depend on a choice not fixed by the supplied "
+      "structure, unless that choice is admitted.")
+q3 = ("A law privileges no states. Its domain is a supplied condition, and at every "
+      "state where the condition holds it gives exactly one answer.")
+check("S7.1 live 06-29 Qualification clauses present verbatim (named "
+      "primitive content only; non-fixed choices require admission; laws "
+      "privilege no states and give one answer on their supplied domain)",
+      q1 in axioms_flat and q2 in axioms_flat and q3 in axioms_flat)
+
+hist_axioms_txt = (REPO / "docs/MINIMAL_AXIOMS_2026-06-05.md").read_text()
+hist_axioms_flat = " ".join(hist_axioms_txt.split())
+check("S7.1h historical 06-05 Record non-supply clause present as "
+      "corroboration only (incl. 'weighting, normalization, probability' "
+      "and 'occupancy rule')",
+      "weighting, normalization, probability" in hist_axioms_flat
+      and "within-sector data, or occupancy rule" in hist_axioms_flat)
 
 prim_txt = (REPO / "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
             ).read_text()
 prim_flat = " ".join(prim_txt.split())
-check("S7.2 realized-state primitive clauses present: 'The laws do not "
+check("S7.2 realized-state primitive note clauses present: 'The laws do not "
       "pick the state', pointwise evaluation, no typical/generic, "
       "counterfactual test ('registered data, not derivation output')",
       "The laws do not pick the state" in prim_flat

@@ -10,6 +10,11 @@ predicts, and estimates no audit verdict and edits no registry.
 (`TOTAL: PASS=19 FAIL=0`)
 **Runner cache:**
 [`logs/runner-cache/frontier_acphilambda_species_bridge_realized_state_2026_06_11.txt`](../logs/runner-cache/frontier_acphilambda_species_bridge_realized_state_2026_06_11.txt)
+**Axiom-surface update:** 2026-07-05 — current axiom surface is the four-axiom
+memo `MINIMAL_AXIOMS_2026-06-29.md`; this note had no live
+`MINIMAL_AXIOMS_2026-06-05.md` axiom-premise citation to re-point, and no
+Record-axiom orbit/outcome wording is used as live axiom text. No claim is
+strengthened; this is citation-surface alignment only.
 
 ## Statement
 
@@ -79,9 +84,9 @@ survives in sub-admission (iii) on this surface.**
 The registry's analogy clause ("akin to the abstract-su(3) -> physical-color
 gap") is now sharpened into an exact **disanalogy**:
 
-1. **The color gap.** The retained
-   `CL3_COLOR_AUTOMORPHISM_THEOREM` (`retained`) states its own bridge
-   requirement: the identification "the 3D
+1. **The color gap.** The
+   `CL3_COLOR_AUTOMORPHISM_THEOREM` context row (`unaudited` on the current
+   ledger) states its own bridge requirement: the identification "the 3D
    symmetric base subspace **is** the physical SM color carrier SU(3)_c" is a
    deferred representation-match requirement. Intra-color sector labels are
    gauge-moved: conjugating the frame leaves every registered invariant
@@ -232,7 +237,7 @@ gate, so a single advance on that gate (forcing the first-order chiral
 operator class from the bosonic qubit substrate) would move sub-admission
 (iii)'s structural residual and the generation-ID/Q-gate surface together.
 
-## Dependencies (live ledger reads at HEAD 753dfd48b; statuses are quoted, not set)
+## Dependencies (current-main status reviewed 2026-07-05; statuses are quoted, not set)
 
 | id | role | effective_status |
 |---|---|---|
@@ -243,7 +248,7 @@ operator class from the bosonic qubit substrate) would move sub-admission
 | [`staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17`](STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md) | corner-cube Hamming orbit structure | `retained` |
 | [`staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16`](STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) | species-reduction surface | `retained_bounded` |
 | [`koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02`](KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md) | the named chirality gate (component (c) target) | `retained_bounded` |
-| `cl3_color_automorphism_theorem` | color-contrast wording; not load-bearing for the registration decomposition | `retained` |
+| `cl3_color_automorphism_theorem` | color-contrast wording; not load-bearing for the registration decomposition | `unaudited` (context only) |
 | [`record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`](RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md) | record-frame-as-admission ground (color contrast) | `retained_no_go` |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | hw=1/hw=2 compensation class (support; facts re-verified here) | `open_gate` |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | locus counterfactuals (context; facts re-verified here) | `unaudited` |

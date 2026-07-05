@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 870 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1936 |
+| unaudited | 1935 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 25 |
+| ~~audited_conditional~~ | 26 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1246 |
-| `audited_conditional` | 25 |
+| `audited_conditional` | 26 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2274 |
+| `unaudited` | 2273 |
 
 | claim_type | count |
 |---|---:|
@@ -1411,6 +1411,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_e_center_blindness_no_go_note_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep4_labeling_no_go_note_2026-05-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
@@ -16389,6 +16390,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The abstract algebra closes once the circulant form is admitted: C and C^2 have zero diagonal, so diag(H) = (a,a,a), Tr(H)=3a, and the retained cited parent supplies the eigenvalue formula. The physical hw=1 carrier and observable identification is explicitly outside this claim scope.
 - **rationale:** The runner performs exact symbolic matrix algebra and reports 19 passing class-A checks with no external comparator or fitted input. The result is a true algebraic corollary of the single retained circulant/eigenvalue parent plus standard finite-dimensional matrix facts. Under the decoration policy, zero-D algebra that reduces to one upstream parent claim is audited_decoration rather than audited_clean. The runner's reverse-direction uniqueness evidence is only a counterexample, so a second audit should keep P1 tied to admitted standard commutant theory rather than to that runner check alone.
 - **decoration parent:** `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`
+- **auditor confidence:** high
+
+### `staggered_dirac_substep4_labeling_no_go_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Proposed AC_phi_lambda no-go: A_min cannot derive a canonical species-labeling bijection from the hw=1 corner triplet to a named 3-label set, except under external labeling, C3-breaking, or empirical premises.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-audit-wave-acphi-row2a-fresh`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Every property of {c_1,c_2,c_3} derivable from A_min is invariant under the cyclic permutation C, so a canonical bijection to L_3 cannot be derivationally preferred over its C_3-shift.  _(class `A`)_
+- **chain closes:** False — The packet verifies selected C3-invariant sample propositions, but it does not prove the full meta-invariant for all A_min-derivable statements. The fixed ordered basis, named translations, and labelled target set require a formal automorphism/definability bridge before the non-derivability conclusion follows.
+- **rationale:** Issue: the proof rests on the orbit-equivariance invariant for the full A_min language, but the packet only checks representative algebraic instances and text assertions. Why this blocks: without a retained bridge proving that A_min has no definable selector using the ordered basis, named translation axes, label names, or any C3-breaking derived structure, pi_A and pi_B are not shown indistinguishable for every A_min proposition. Repair target: add a retained formal bridge theorem for the A_min language/automorphism action, including translation-axis relabeling and direct wiring of any A3 no-breaking authority used. Claim boundary until fixed: clean only as a toy C3-equivariant carrier no-go for the checked AC_lambda/AC_phi/NQ sample propositions, not an exhaustive A_min no-go or exhaustive P1/P2/P3 closure classification.
 - **auditor confidence:** high
 
 ### `staggered_fermion_card_2026-04-10`

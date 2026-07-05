@@ -109,6 +109,14 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   records this as conditionality progress only: it does not supply a retained
   R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`,
   `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`, `m_e`, `alpha(0)`, or hydrogen.
+  The R-eta readout-retirement target discriminator
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md`
+  packages the next import-retirement object as
+  `R_ETA_READOUT_IDENTIFICATION_RETAINED`: h-class plus h-unit, with no
+  comparator proof input and no new primitive. If accepted, it supplies the
+  intended proof package for the exact two-ninths theorem and radian-readout
+  license inputs under the two-ninths/radian subgate; it does not derive K1,
+  K3, K4, `m_e`, `alpha(0)`, or hydrogen.
   The
   Koide R-eta exactness target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md`
@@ -1355,6 +1363,7 @@ here.
                         | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as Koide premise-hygiene and audit-readiness context for the `AC_phi_lambda` decomposition chain; it does not derive `AC_phi_lambda`, Koide native zero-section closure, physical electron species, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
                         | `#5020` Koide R-eta value-face registered-angle/exactness relocation | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as K2 value-face progress; exactness remains open; it does not derive `AC_phi_lambda`, `delta = 2/9`, Koide electron readout, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
                         | `#5022` delta-eta chain R-eta supplied-premise audit repair | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as K2 conditionality progress; it does not supply a retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`, `m_e`, `alpha(0)`, or hydrogen. |
+                        | R-eta readout-retirement target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `R_ETA_READOUT_IDENTIFICATION_RETAINED`; if accepted it can feed the exact theorem and radian-readout license inputs under the two-ninths/radian subgate, not full K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | K2 R-eta exactness target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` packages the successor handoff `K2_R_ETA_EXACTNESS_RETAINED`; it is not supplied by #5020 and does not derive `m_e`, `alpha(0)`, or hydrogen. |
                         | K2 R-eta exactness current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, and open-PR surfaces do not supply `K2_R_ETA_EXACTNESS_RETAINED`. |
                         | Koide two-ninths/radian-readout target | Open subtarget. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`; if accepted it supplies exact `2/9`, radian-readout, and fold/branch domain inputs for K2, not full K2 exactness, `m_e`, `alpha(0)`, or hydrogen. |

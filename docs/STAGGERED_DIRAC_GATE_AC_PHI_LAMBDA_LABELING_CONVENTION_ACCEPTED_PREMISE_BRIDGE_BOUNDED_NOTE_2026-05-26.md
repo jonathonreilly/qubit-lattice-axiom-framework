@@ -9,6 +9,7 @@ label above is a source-side claim-boundary declaration, not an audit
 verdict.
 **Type:** bounded_theorem
 **Primary runner:** [`scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py`](../scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py)
+**Dependency-surface update (2):** 2026-07-05 — per the audited_conditional blocker (missing common-carrier bridge at step (B1)): the carrier content of (B1) and (B5) now consumes the common-carrier identification bridge [STAGGERED_DIRAC_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md](STAGGERED_DIRAC_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md), which realizes the abstract Hamming orbit, the AC_lambda triple, and the regular C_3 action on one concrete framework representative. The species-reduction citation is corrected to its audited scope (d=4 counting identities with (R4)/(R5) boundaries; no carrier surface) and demoted to a counting-context handle — the prior wording read a reduction surface into it that its own boundaries disclaim. A qualifier line added to the (B1) claim block naming the representative-level identification. No other claim wording changed.
 **Dependency-surface update:** 2026-07-05 — edge hygiene for auditability: the superseded-generation 2026-05-07 physical-species source re-pointed to its retained substep-3 species-reduction successor (original kept as a historical context handle), and the three retained substep authorities consumed at step (B1) wired as explicit markdown-link dependencies (previously named in backticks only). The bridge claim, the (P1) premise packet, and the proof-walk are untouched.
 
 ## Claim
@@ -29,6 +30,12 @@ conditional consequence holds:
           (lambda_1, lambda_2, lambda_3) of the commuting lattice
           translation triple (T_1, T_2, T_3) by the substep-4
           simultaneous-diagonalization bridge.
+      The common-carrier content of this step (one concrete triplet
+      realizing the abstract Hamming orbit, the AC_lambda triple, and
+      the regular C_3 action simultaneously) is supplied, exactly on
+      the framework's finite periodic representative, by the
+      common-carrier identification bridge named in the dependency
+      list.
 
 (B2)  By the substep-4 labeling no-go candidate, no canonical
       bijection pi: {c_1, c_2, c_3} -> L_3 := {l_1, l_2, l_3} is
@@ -120,11 +127,11 @@ classification. Steps (B4) and (B5) record boundary scope.
 
 | Step | Statement | Load-bearing input | Lattice-action input? |
 |---|---|---|---|
-| (B1) | The hw=1 BZ-corner triplet has a fixed ordered basis `(c_1, c_2, c_3)` with regular Z/3Z action by `C_3[111]` and three pairwise-distinct joint eigenvalue triples of `(T_1, T_2, T_3)` | `STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17`; `STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17`; `STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16` | no |
+| (B1) | The hw=1 BZ-corner triplet has a fixed ordered basis `(c_1, c_2, c_3)` with regular Z/3Z action by `C_3[111]` and three pairwise-distinct joint eigenvalue triples of `(T_1, T_2, T_3)` | `STAGGERED_DIRAC_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05` (the common-carrier identification on the framework representative); abstract authorities `STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17` and `STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17` | no |
 | (B2) | No canonical bijection `pi: {c_1, c_2, c_3} -> L_3` is derivable from A_min; closure requires one of (P1) labeling-convention / (P2) C_3-breaking dynamics / (P3) PDG-empirical; P2 and P3 are foreclosed | Substep-4 labeling no-go `STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17`; 10-probe A3 obstruction campaign cited within that no-go | no |
 | (B3) | Under (P1), the bijection `pi_0` is uniquely fixed by the sorting permutation on externally supplied distinct sort-key values | (P1) accepted-premise packet entry; rational sort arithmetic on three pairwise-distinct real values | no |
 | (B4) | The bridge does not derive (P1), does not promote (P1) to an axiom, and does not add a C_3-breaking primitive to A_min | Accepted-premise scoping; framework discipline (no new admissions) | no |
-| (B5) | The composition upstream-substep chain + (P1) supplies the labeling-convention ingredient for parent-gate substep (4), without promoting the parent gate | `STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16` supplies the three-species H_phys reduction surface at its audited scope (superseded-generation source `STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07` — historical context handle); (P1) supplies the labeling step | no |
+| (B5) | The composition upstream-substep chain + (P1) supplies the labeling-convention ingredient for parent-gate substep (4), without promoting the parent gate | `STAGGERED_DIRAC_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05` supplies the concrete three-state hw=1 carrier content; (P1) supplies the labeling step (superseded-generation source `STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07` — historical context handle) | no |
 
 The bridge does not cite a specific Wilson plaquette value, a staggered
 gauge-coupling value, a Brillouin-zone integration measure, a link-
@@ -190,10 +197,14 @@ arithmetic once (P1) is registered.
   — supplies the retained-grade substep-4 simultaneous-diagonalization
   corollary forcing the three pairwise-distinct joint eigenvalue
   triples on the hw=1 triplet (used in step (B1)).
-- [`STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
-  — supplies the retained-grade substep-3 species-reduction bridge
-  forcing the fixed ordered basis on the hw=1 triplet (used in step
-  (B1)).
+- [`STAGGERED_DIRAC_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md`](STAGGERED_DIRAC_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md)
+  — supplies the common-carrier identification for step (B1): one
+  concrete triplet on the framework's finite periodic representative
+  simultaneously realizing the abstract Hamming hw=1 orbit, the
+  AC_lambda triple with pairwise-distinct joint eigenvalue triples
+  and diagonal commutant, and the fixed regular `C_3` action. Also
+  supplies the concrete three-state carrier content consumed at step
+  (B5).
 - [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
   — supplies the retained-grade substep-1 Grassmann-forcing bridge
   that inputs the upstream chain.
@@ -208,12 +219,15 @@ arithmetic once (P1) is registered.
   — supplies the parent-gate context where `AC_φλ` is already named
   as an admitted-context residual. This bridge does not assume parent
   promotion.
-- [`STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
-  — supplies, at its audited scope, the three-species H_phys reduction
-  surface used only for the parent-gate substep (4) composition map
-  (superseded-generation source
+- `STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
+  — at its audited scope this note supplies `d = 4` taste/spinor
+  counting identities with explicit (R4)/(R5) boundaries and no
+  carrier surface; it is therefore a counting-context handle here,
+  not a citation-graph dependency. The carrier content previously
+  read into it is supplied by the common-carrier identification
+  bridge above. (Superseded-generation source
   `STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md`
-  — historical context handle, not a citation-graph dependency).
+  — historical context handle, not a citation-graph dependency.)
 - [`STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md)
   — supplies the step (B1) ordered corner-triplet basis with regular
   Z/3Z action (retained substep-3 authority).
@@ -296,7 +310,7 @@ parent gate's four enumerated closure substeps from
 |---|---|
 | (1) Grassmann fermion realization | `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16` + `STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17` |
 | (2) Staggered-Dirac kinetic structure | `STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17` |
-| (3) BZ-corner 1+1+3+3 + hw=1 triplet | `STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17` + `STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16` |
+| (3) BZ-corner 1+1+3+3 + hw=1 triplet | `STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17` (grading/orbits) + `STAGGERED_DIRAC_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05` (carrier identification) + `STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16` (counting identities at its (R4)/(R5)-bounded scope) |
 | (4) Physical-species reading | `STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17` + this bridge's (P1) accepted-premise packet entry |
 
 Substeps (1), (2), and (3) have retained-grade inputs where the live

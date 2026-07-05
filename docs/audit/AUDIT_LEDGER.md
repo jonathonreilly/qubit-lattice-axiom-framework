@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 871 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1934 |
+| unaudited | 1936 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 26 |
+| ~~audited_conditional~~ | 25 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -59,18 +59,18 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 11 |
-| `audited_clean` | 1248 |
-| `audited_conditional` | 26 |
+| `audit_in_progress` | 12 |
+| `audited_clean` | 1247 |
+| `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2272 |
+| `unaudited` | 2274 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1991 |
+| `bounded_theorem` | 1992 |
 | `decoration` | 50 |
 | `meta` | 344 |
 | `no_go` | 474 |
@@ -79,8 +79,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 658 |
-| `high` | 470 |
+| `critical` | 660 |
+| `high` | 469 |
 | `medium` | 923 |
 | `leaf` | 1605 |
 
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3316
-- runners with (C) first-principles compute hits: 1738
+- runners classified: 3317
+- runners with (C) first-principles compute hits: 1739
 - runners with (D) external comparator hits: 1067
 - decoration candidates (no C, no D): 695
 
@@ -100,7 +100,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1876 | 193.37 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1877 | 193.88 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1155 | 67.17 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 198 | 65.14 | `audited_clean` | **retained** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1547 | 65.10 | `audited_clean` | **retained** |
@@ -133,6 +133,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -462,7 +463,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_block_count_native_via_jcs_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_not_derived_two_inputs_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -1413,7 +1413,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_e_center_blindness_no_go_note_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
@@ -6089,19 +6088,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** If a physical charge U(1) acts as a scalar on the generation triplet, it commutes with C and cannot orient the generation doublet or select the det_C reading.  _(class `A`)_
 - **chain closes:** True — The scalar action is central, so [iI,C]=0 and it supplies no orientation of the generation doublet. Independently, (exp(i alpha)C)^3=exp(3i alpha)I, so order three allows only alpha=0,2pi/3,4pi/3 modulo 2pi.
 - **rationale:** The load-bearing route-pruning statement is a direct algebraic identity about scalar matrices and the C3 order condition, not a definition substitution or numerical fit. The runner source actually computes the spectral endpoint, commutator, and order-three rephasing obstruction, while the charged-sector and neutrino values are correctly bounded as empirical comparators rather than promoted to selectors. The packet explicitly does not claim that physical Standard Model gauge U(1) actions are generation-scalar or that a physical det_C/det_R selector has been derived.
-- **auditor confidence:** high
-
-### `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`
-
-- **Note:** [`FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md`](../../docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite periodic 2 x 2 x 2 translation/BZ carrier statement for position-diagonal local readouts on the supplied hw=1 three-corner sector.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** For any diagonal position observable O = diag(w_n), <psi_k, O psi_k> = (1/8) sum_n w_n, so position-diagonal local observables cannot separate the hw=1 character labels, while P_k separates momentum labels.  _(class `A`)_
-- **chain closes:** True — The restricted claim closes as finite translation-group algebra: the character vectors have uniform position probabilities, so every diagonal position observable has the same expectation on the hw=1 states, and rank-one momentum projectors give Kronecker separation. The open physical-generation-locus bridge to hw=1 is explicitly outside the audited scope and is not used.
-- **rationale:** The runner genuinely constructs the periodic 2 x 2 x 2 translation matrices, Z2^3 character basis, projectors, hw=1 orbit, and diagonal-observable expectations rather than printing constants or importing the contested premise. The load-bearing equality follows directly from the constant-magnitude character vectors, and the momentum-projector separation follows from orthonormality. The note does not claim the physical generation locus is forced to be hw=1, so the named parent bridge is a scoped boundary rather than an open dependency for this bounded theorem.
 - **auditor confidence:** high
 
 ### `flavor_carrier_not_derived_two_inputs_2026-05-31`
@@ -16275,19 +16261,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The edge-flip rule propagates a basepoint sign along paths, and coordinate-square evenness makes the path parity x_1+x_2+x_3 mod 2, so s(x)=s(0)(-1)^(x_1+x_2+x_3).  _(class `A`)_
 - **chain closes:** True — The controlling step is a graph-parity algebra identity on the nearest-neighbor Z^3 coordinate-edge graph, followed by direct Pauli matrix and diagonal-grading identities. The runner source performs actual finite rank, Pauli pseudoscalar, and edgewise anticommutation checks, and there are no cited open dependencies or external comparator values. The result is clean within the stated narrow bridge scope, but its derivation class is better classified as A than C because it is not a first-principles numerical compute producing a new framework number.
 - **rationale:** The controlling step is a graph-parity algebra identity on the nearest-neighbor Z^3 coordinate-edge graph, followed by direct Pauli matrix and diagonal-grading identities. The runner source performs actual finite rank, Pauli pseudoscalar, and edgewise anticommutation checks, and there are no cited open dependencies or external comparator values. The result is clean within the stated narrow bridge scope, but its derivation class is better classified as A than C because it is not a first-principles numerical compute producing a new framework number.
-- **auditor confidence:** high
-
-### `staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26`
-
-- **Note:** [`STAGGERED_DIRAC_GATE_AC_PHI_LAMBDA_LABELING_CONVENTION_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/STAGGERED_DIRAC_GATE_AC_PHI_LAMBDA_LABELING_CONVENTION_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Current bounded bridge claim that retained substep authorities plus the accepted P1 mass-ordering labeling convention fix pi_0 for the staggered-Dirac hw=1 BZ-corner triplet and supply the AC_phi_lambda labeling ingredient, without deriving P1 or promoting the parent gate.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260705-acphilambda-labeling-premise-first`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** (B1) The upstream substep-1/2/3/4 chain forces the hw=1 BZ-corner triplet of the staggered-Dirac realization on Z^3 APBC to carry a fixed ordered basis (c_1, c_2, c_3) with regular Z/3Z action and three pairwise-distinct joint eigenvalue triples.  _(class `B`)_
-- **chain closes:** False — The rational sorting step closes once a common three-state carrier with distinct sort keys is given. The restricted packet does not close B1's same-carrier bridge: the cited narrow notes are scoped as abstract finite-set, form-complex, arithmetic, or linear-algebra facts and explicitly disclaim identifying the framework's physical hw=1 BZ-corner carrier and translation triple.
-- **rationale:** Issue: Step (B1) imports the claim that the retained substep chain forces the same physical hw=1 BZ-corner triplet with fixed C3 action and distinct translation-eigenvalue triples, but the cited retained notes do not establish that common physical carrier bridge within their audited scopes. Why this blocks: P1's sort arithmetic is valid only after that same carrier and its distinct triples are already closed; the runner checks source phrases, a toy carrier, and rational sorting, not the physical same-carrier bridge. Repair target: add or cite a retained theorem deriving the common hw=1 BZ-corner carrier, C3 action, and translation triple from the retained substep chain, or narrow this row to the pure conditional sort fact over an assumed abstract three-element carrier. Claim boundary until fixed: the note may say that, given an externally supplied three-element carrier with distinct sort keys and the retained no-go enumeration, rational sorting uniquely defines a labeling convention; it may not claim the retained substep chain supplies the physical AC_phi_lambda ingredient for the parent gate.
 - **auditor confidence:** high
 
 ### `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03`

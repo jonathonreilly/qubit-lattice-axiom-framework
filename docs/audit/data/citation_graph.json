@@ -39649,6 +39649,30 @@
       "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
     },
     {
+      "from": "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05",
+      "to": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15"
+    },
+    {
+      "from": "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05",
+      "to": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05",
+      "to": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05",
+      "to": "staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_bridge_narrow_theorem_note_2026-07-05"
+    },
+    {
+      "from": "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05",
+      "to": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "staggered_dirac_exercise_honest_reassessment_note_2026-06-06",
       "to": "ai_methodology.skills.exercise.skill"
     },
@@ -39666,15 +39690,15 @@
     },
     {
       "from": "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26",
+      "to": "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05"
+    },
+    {
+      "from": "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26",
       "to": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
     },
     {
       "from": "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26",
       "to": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
-    },
-    {
-      "from": "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26",
-      "to": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
     },
     {
       "from": "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26",
@@ -56950,11 +56974,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26"
+      "to": "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05"
     },
     {
       "from": "repo.front_door_status",
@@ -56963,10 +56991,6 @@
     {
       "from": "repo.front_door_status",
       "to": "cl3_taste_generation_theorem"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -109780,14 +109804,14 @@
         "no_per_site_chirality_theorem_note_2026-05-02",
         "hypercharge_identification_note",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+        "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-        "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26",
+        "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05",
         "yt_ward_identity_derivation_theorem",
-        "cl3_taste_generation_theorem",
-        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
+        "cl3_taste_generation_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9051a3270a512cc9f34dd704b4509cf4523119b992af80841b4b4c0cb4ad25d8",
+      "note_hash": "46dc11f411ec8998a18855b9338a799d3689f52af5c555d8cc9cbbd06331bfdf",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -114375,6 +114399,25 @@
       "runner_path": "scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py",
       "title": "Staggered-Dirac Chirality-Parity Bridge Narrow Theorem Note"
     },
+    "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05": {
+      "claim_id": "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
+        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_bridge_narrow_theorem_note_2026-07-05",
+        "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "9f75eb96158ef668fe1b20faa6bef6f1b066f4ff3967243d63f40ecf4e8940b1",
+      "path": "docs/STAGGERED_DIRAC_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md",
+      "runner_path": "scripts/staggered_dirac_common_hw1_bz_corner_carrier_identification_2026_07_05.py",
+      "title": "Staggered-Dirac \u2014 Common hw=1 BZ-Corner Carrier Identification Bridge (Narrow Theorem)"
+    },
     "staggered_dirac_exercise_honest_reassessment_note_2026-06-06": {
       "claim_id": "staggered_dirac_exercise_honest_reassessment_note_2026-06-06",
       "claim_type_author_hint": "bounded_theorem",
@@ -114398,15 +114441,15 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05",
         "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
         "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
-        "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
         "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2c72c49daf30b1d49f98fee2c2531650bc97689698889e1d22a7b56798d54495",
+      "note_hash": "9ccd0f72686772707785d6dafda3f525d65a7eb1ebd2d417dbac46b9b8ff04aa",
       "path": "docs/STAGGERED_DIRAC_GATE_AC_PHI_LAMBDA_LABELING_CONVENTION_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
       "runner_path": "scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py",
       "title": "Staggered-Dirac Gate AC_\u03c6\u03bb Labeling-Convention Accepted-Premise Bridge"
@@ -125828,7 +125871,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1558,
+      "bounded_theorem": 1559,
       "decoration": 3,
       "meta": 319,
       "no_go": 324,
@@ -125837,7 +125880,7 @@
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1963,
+      "bounded_theorem": 1964,
       "decoration": 3,
       "meta": 319,
       "no_go": 428,
@@ -125845,10 +125888,10 @@
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14341,
+    "edge_count": 14347,
     "leaf_count": 1299,
-    "node_count": 3827,
+    "node_count": 3828,
     "root_count": 1103,
-    "runners_with_path": 3450
+    "runners_with_path": 3451
   }
 }

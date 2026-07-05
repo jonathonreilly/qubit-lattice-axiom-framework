@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/staggered_dirac_common_hw1_bz_corner_carrier_identification_2026_07_05.py
+runner_sha256: e34f450f6743f9b5b74e47f0190453c73611b8c576e6e64e24b99a75e31a1c0f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+=== common hw=1 BZ-corner carrier identification ===
+
+[K1] the concrete carrier
+
+  PASS  U_1 is a permutation unitary of order 2
+  PASS  U_2 is a permutation unitary of order 2
+  PASS  U_3 is a permutation unitary of order 2
+  PASS  translations commute pairwise
+  PASS  every character chi_k is a joint eigenvector with eigenvalue e^{i k_mu} = (-1)^{b_mu}
+  PASS  the 8 characters are orthogonal (complete joint basis)
+
+[K2] (I1) Hamming leg
+
+  PASS  grading (|L_0|,|L_1|,|L_2|,|L_3|) = (1,3,3,1) on the concrete corner set
+  PASS  hw=1 level = the three corner momenta {(pi,0,0),(0,pi,0),(0,0,pi)} (as bits)
+  PASS  S_3 coordinate action preserves hw on the concrete corners
+  PASS  S_3 is transitive on the concrete hw=1 level
+
+[K3] (I2) AC_lambda leg
+
+  PASS  U_mu|_V = T_mu matrix-identically against eq (2a)-(2c) for all mu
+  PASS  the three joint eigenvalue triples are pairwise distinct :: triples = [(-1, 1, 1), (1, -1, 1), (1, 1, -1)]
+  PASS  commutant of {U_mu|_V} is exactly the diagonal algebra C^3 (dim 3, off-diagonals vanish) :: commutant dim = 3
+
+[K4] (I3) C_3 action leg
+
+  PASS  R U_mu R^-1 = U_sigma(mu) exactly for all mu
+  PASS  R preserves V and acts on the ordered character basis as the cyclic shift (c_1->c_2->c_3->c_1) :: basis images = [1, 2, 0]
+  PASS  R|_V equals the cyclic generator C of the abstract notes
+  PASS  the action is a regular Z/3: order 3 and no fixed basis vector
+
+[K5] consumed-scope text checks
+
+  PASS  AC_lambda note's own out-of-scope disclaimer present (the gap this bridge closes)
+  PASS  momentum-type note records distinct joint translation characters on the three hw=1 corners
+  PASS  momentum-type note records the transitive C_3 permutation
+  PASS  species-reduction (R4) boundary verbatim: taste factor not forced
+  PASS  species-reduction (R5) boundary verbatim: reduction realization not derived
+  PASS  Hamming note supplies the abstract grading (1, 3, 3, 1)
+
+[K6] negative control
+
+  PASS  hw=2 level is a distinct 3-element set, disjoint from the hw=1 corner set
+  PASS  hw=2 characters carry a DIFFERENT eigenvalue pattern (two -1 components each)
+
+=== SCORECARD ===
+  PASS=25 FAIL=0
+
+----- stderr -----
+

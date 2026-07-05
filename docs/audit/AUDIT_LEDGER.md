@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 193 |
-| **retained_bounded** | 873 |
+| **retained_bounded** | 874 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
 | unaudited | 1932 |
-| audit_in_progress | 1 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 13 |
-| `audited_clean` | 1249 |
+| `audit_in_progress` | 12 |
+| `audited_clean` | 1250 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
@@ -144,7 +143,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1164,6 +1162,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -16307,6 +16306,18 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** One concrete triple (V, (U_mu|_V), R|_V) simultaneously realizes the abstract Hamming hw=1 orbit, the abstract AC_lambda carrier with distinct joint eigenvalue triples and diagonal commutant, and a fixed regular C3 action.  _(class `A`)_
 - **chain closes:** None — The chain closes at the bounded finite-representative surface: the cited/meta inputs supply the finite translation/rotation setting and abstract target structures, and the source note plus runner exhibit the exact algebraic identification. Residual risk is dependency-chain bookkeeping, not a local failure of the identification theorem in the restricted packet.
 - **rationale:** The note constructs the finite 2 x 2 x 2 periodic character carrier, defines V as the hw=1 character span, and proves by exact matrix/eigenvalue identities that the same V realizes the Hamming, AC_lambda, and C3 structures. The primary runner completed with PASS=25 FAIL=0 and reconstructs the translation permutation matrices, character basis, restricted tau matrices, commutant, and rotation action rather than checking a tuned numeric comparator or printing constants. The claim is explicitly bounded to this finite representative and excludes physical species reduction, labeling, continuum, mass, and AC_phi_lambda content, so no hidden physical-observable bridge is being granted beyond the stated bounded identification.
+
+### `staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26`
+
+- **Note:** [`STAGGERED_DIRAC_GATE_AC_PHI_LAMBDA_LABELING_CONVENTION_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/STAGGERED_DIRAC_GATE_AC_PHI_LAMBDA_LABELING_CONVENTION_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded accepted-premise consequence: given the retained upstream hw=1 carrier, AC_lambda distinct-eigenvalue triples, labeling no-go, and P1 external total-order labeling convention, rational sort arithmetic uniquely fixes pi_0 without deriving P1 or promoting the parent gate.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-row2-second-20260705`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Under (P1), the bijection pi_0 is uniquely fixed by rational sort arithmetic on externally supplied distinct sort-key values over the already distinct joint eigenvalue triples.  _(class `A`)_
+- **chain closes:** None — The chain closes at bounded scope because P1 is the admitted external labeling convention and the only load-bearing mathematical step after that is unique sorting of three distinct keys. No hidden derivation of P1, physical mass labels, or parent gate closure is needed or claimed.
+- **rationale:** The note confines the claim to a bounded accepted-premise consequence: P1 supplies the external sort key, and the derivation only proves uniqueness of the resulting labeling permutation by exact rational ordering. The direct dependencies are retained-grade or retained-bounded/no-go authorities for the common hw=1 carrier, distinct translation eigenvalue triples, upstream substep content, and the no-go enumeration of P1/P2/P3 closure routes. The source boundaries explicitly disclaim deriving P1, r=1/2, delta=2/9, any PDG or fitted mass identification, and any parent-gate promotion. The current runner cache reports PASS=42 FAIL=0 and checks the source firewall plus rational-sort uniqueness; the clean verdict rests on the scoped algebraic closure from P1 and the retained dependency packet, not on a broader parent-gate derivation.
 
 ### `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03`
 

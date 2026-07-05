@@ -28,11 +28,11 @@ Owner-approval history for every axiom/primitive change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3657 |
-| Applied audit verdicts | 1374 |
-| Retained-grade rows, including boxed decorations | 1302 |
+| Applied audit verdicts | 1375 |
+| Retained-grade rows, including boxed decorations | 1303 |
 | Retained positive theorems | 191 |
 | Retained no-go rows | 193 |
-| Retained bounded rows | 873 |
+| Retained bounded rows | 874 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
 | Unaudited rows | 1932 |
@@ -49,10 +49,10 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1972 |
+| Total pending rows | 1971 |
 | Ready rows | 208 |
 | Cycle-break targets | 10 |
-| Critical pending | 416 |
+| Critical pending | 415 |
 | High pending | 283 |
 | Medium pending | 513 |
 | Leaf pending | 760 |
@@ -64,7 +64,7 @@ Next ready rows by queue order:
 - [`tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md) - critical; unaudited
 - [`flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`](../../docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md) - critical; audit_in_progress
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
-- [`staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26`](../../docs/STAGGERED_DIRAC_GATE_AC_PHI_LAMBDA_LABELING_CONVENTION_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md) - critical; audit_in_progress
+- [`staggered_dirac_realization_gate_note_2026-05-03`](../../docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md) - critical; unaudited
 - [`yt_ward_identity_derivation_theorem`](../../docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md) - critical; unaudited
 - [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
 

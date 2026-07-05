@@ -26,8 +26,9 @@ Sections:
   S8  conditional value: |delta| = 2/9 EXACT conditional on the named atom;
       consistency with the separation no-go boundary (2/9 not in {n pi/3})
   S9  boundary witnesses (what is NOT claimed) + r-firewall statement; and the
-      2026-06-20 dependency-status split witnesses (formal-theorem section
-      present; two non-retained-grade named authorities marked context-only;
+      2026-07-05 dependency-status split witnesses (formal-theorem section
+      present; the two named non-proof authorities marked context-only at
+      their current grades;
       K-orbit form wired as the single one-hop markdown-link authority at its
       current retained-bounded grade; physical readout identification explicitly
       NOT claimed; status authority preserved)
@@ -305,25 +306,25 @@ def main() -> int:
           and "conditional support for narrowing sub-admission (ii), not a retirement" in note_flat
           and "A_R-eta` (h-class + h-unit, one real parameter) remains admitted" in note_flat
           and "cannot cite it as a framework-native derivation of `|delta| = 2/9`" in note_flat)
-    # 2026-06-20 dependency-status split: formal split + one-hop K-orbit wiring.
-    check("2026-06-20 dependency-status split: explicit FORMAL H(delta) theorem "
+    # 2026-07-05 dependency-status split: formal split + one-hop K-orbit wiring.
+    check("2026-07-05 dependency-status split: explicit FORMAL H(delta) theorem "
           "present (physical readout identification is conditional/open)",
-          "2026-06-20 dependency-status split" in note_text
+          "2026-07-05 dependency-status split" in note_text
           and "Formal theorem (H(delta) layer)" in note_text
           and "Formal claim." in note_flat
           and "The formal theorem is exactly (F1)-(F5)" in note_flat)
-    check("2026-06-20 dependency-status split: the two non-retained-grade named "
-          "authorities are marked context-only",
+    check("2026-07-05 dependency-status split: the two named non-proof authorities "
+          "are marked context-only at their current grades",
           "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03`: not retained-grade; context only here" in note_flat
-          and "KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09`: not retained-grade; context only here" in note_flat)
-    check("2026-06-20 dependency-status split: the K-orbit circulant form is wired "
+          and "KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09`: retained-bounded conditional chain source; context only here, not proof" in note_flat)
+    check("2026-07-05 dependency-status split: the K-orbit circulant form is wired "
           "as a one-hop markdown-link authority at its current retained-bounded grade",
           "[`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`]"
           "(TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md)"
           in note_flat
           and "one-hop authority for the circulant form L2" in note_flat
           and "retained-bounded" in note_flat)
-    check("2026-06-20 dependency-status split: physical readout identification explicitly NOT "
+    check("2026-07-05 dependency-status split: physical readout identification explicitly NOT "
           "claimed (firewall: register-not-read price class preserved)",
           "is **not claimed** here" in note_flat
           and "the irreducible register-not-read price class and is not derived" in note_flat)

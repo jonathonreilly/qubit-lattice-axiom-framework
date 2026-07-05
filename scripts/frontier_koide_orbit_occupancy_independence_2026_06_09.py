@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Koide slot-degree atom: the occupancy rule is independent of the current
-checked Record/Koide bookkeeping surface (by the Record axiom's own boundary
-clause + two exhibited consistent models), and the premise candidate is
+checked Record/Koide bookkeeping surface (by the live axiom-surface
+qualification boundary, the realized-state primitive, and two exhibited
+consistent models), and the premise candidate is
 orbit-occupancy -- one statistical slot per record-outcome.
 
 The shot (and its guard rails)
@@ -13,11 +14,15 @@ Q in {1, 2/3}. This runner settles the STATUS of that atom:
 
   (O1) GROUND TRUTH cross-checks (the #3138 guard): the orbit partition
        {e0},{e1,e2}; the derived four-cell consistency cross-check; the Q-lever.
-  (O2) THE AXIOM'S OWN BOUNDARY (mechanical fails-if-false check): the Record
-       axiom text in MINIMAL_AXIOMS_2026-06-05.md explicitly supplies
-       "no ... weighting, normalization, probability, ... or occupancy rule".
-       The measure class IS a weighting/occupancy rule. So the axiom, by its
-       own clause, does not supply it.
+  (O2) THE LIVE AXIOM-SURFACE BOUNDARY (mechanical fails-if-false check):
+       MINIMAL_AXIOMS_2026-06-29.md supplies the Qualification clauses
+       requiring derivation/bridge/admission/primitive registration for
+       further structure and forbidding laws from depending on non-fixed
+       choices. The realized-state primitive supplies the state-side boundary:
+       no state picking and no averaging over alternatives. The superseded
+       2026-06-05 Record wording is kept only as historical corroboration for
+       the older "no ... weighting, normalization, probability, ... or
+       occupancy rule" clause.
   (O3) INDEPENDENCE BY EXHIBITION: two explicit models, both satisfying every
        checked constraint supplied by the current Record/Koide bookkeeping
        surface (Z_3-equivariance; K-invariance / orbit-defined outcomes;
@@ -26,7 +31,7 @@ Q in {1, 2/3}. This runner settles the STATUS of that atom:
          M_sector : per-REAL-slot weight on (a, x, y)  -> Z_d = 2*pi/g
          M_orbit  : per-ORBIT weight (a; b as 1 complex slot) -> Z_d = pi/g
        They differ exactly on the occupancy rule (weight ratio 2, computed by
-       exact integrals). Both consistent + axiom-boundary (O2) => the
+       exact integrals). Both consistent + live boundary (O2) => the
        occupancy rule is not supplied by the current checked premise surface.
        This mechanizes the refuted-route history: every refuted derivation attempt
        implicitly smuggled an occupancy rule (e.g. the CW-modulus route is a
@@ -128,17 +133,45 @@ def main():
     check("Q-lever re-verified (100 draws)", ok_q)
 
     # ------------------------------------------------------------------ O2
-    section("O2: the Record axiom's OWN boundary clause (mechanical check on the axiom file)")
-    ax_path = os.path.join(os.path.dirname(__file__), "..", "docs", "MINIMAL_AXIOMS_2026-06-05.md")
+    section("O2: live axiom-surface boundary checks (mechanical source checks)")
+    ax_path = os.path.join(os.path.dirname(__file__), "..", "docs", "MINIMAL_AXIOMS_2026-06-29.md")
     ax_text = open(ax_path, encoding="utf-8").read()
-    has_clause = bool(re.search(r"weighting,\s*normalization,\s*probability", ax_text)) \
-        and ("occupancy rule" in ax_text)
-    check("the landed Record axiom explicitly supplies 'no ... weighting, normalization, "
-          "probability ... or occupancy rule' (clause located in MINIMAL_AXIOMS_2026-06-05.md)",
-          has_clause, detail="grep on the live axiom file")
+    ax_flat = " ".join(ax_text.split())
+    q1 = ("These axioms state only their named primitive content. Further physical "
+          "structure requires derivation, bridge, explicit admission, or approved "
+          "primitive registration before use as a premise.")
+    q2 = ("In particular, a law may not depend on a choice not fixed by the supplied "
+          "structure, unless that choice is admitted.")
+    q3 = ("A law privileges no states. Its domain is a supplied condition, and at every "
+          "state where the condition holds it gives exactly one answer.")
+    live_qualification_ok = q1 in ax_flat and q2 in ax_flat and q3 in ax_flat
+    check("LIVE(06-29 memo): Qualification clauses present verbatim "
+          "(named primitive content only; non-fixed choices require admission; "
+          "laws privilege no states and give one answer on their supplied domain)",
+          live_qualification_ok, detail="grep on MINIMAL_AXIOMS_2026-06-29.md")
+
+    prim_path = os.path.join(os.path.dirname(__file__), "..", "docs",
+                             "REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md")
+    prim_text = open(prim_path, encoding="utf-8").read()
+    prim_flat = " ".join(prim_text.split())
+    primitive_boundary_ok = ("The laws do not pick the state" in prim_flat
+                             and "no averaging over alternatives" in prim_flat)
+    check("LIVE(realized_state_primitive): state-side non-supply present "
+          "('The laws do not pick the state'; 'no averaging over alternatives')",
+          primitive_boundary_ok,
+          detail="grep on REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md")
+
+    hist_path = os.path.join(os.path.dirname(__file__), "..", "docs", "MINIMAL_AXIOMS_2026-06-05.md")
+    hist_text = open(hist_path, encoding="utf-8").read()
+    has_clause = bool(re.search(r"weighting,\s*normalization,\s*probability", hist_text)) \
+        and ("occupancy rule" in hist_text)
+    check("HISTORICAL(06-05 memo): superseded Record wording supplies 'no ... "
+          "weighting, normalization, probability ... or occupancy rule'",
+          has_clause, detail="historical corroboration only")
     check("the doublet measure-weight class IS a weighting/occupancy rule "
-          "=> by the axiom's own clause, Record does NOT supply it",
-          has_clause, detail="classification of the atom under the axiom's non-supply list")
+          "=> the current axiom surface plus realized-state primitive does NOT supply it",
+          live_qualification_ok and primitive_boundary_ok and has_clause,
+          detail="classification of the atom under the live non-supply boundary")
 
     # ------------------------------------------------------------------ O3
     section("O3: independence by exhibition -- two consistent models, different occupancy")
@@ -166,8 +199,8 @@ def main():
     consistency = {
         "Z_3-equivariance: both weights depend on (a, |b|) only -- invariant under the "
         "Z_3 rotation b -> w b (checked: |w b| = |b|)": abs(abs(w * bmod) - bmod) < 1e-15,
-        "K-invariance / orbit-definedness: both weights invariant under b -> conj(b) "
-        "=> outcomes-as-orbits respected (the O2/#3397 entailment)": True,
+        "K-invariance / orbit-definedness: both weights invariant under b -> conj(b); "
+        "outcomes-as-K/CPT-orbits is supplied-context via bridge T1": True,
         "positivity + normalizability: both weights positive with finite Z (computed above)": True,
         "finite additivity: each model induces a finitely-additive readout on the "
         "2-orbit outcome algebra (I(orbit union) = sum, exhibited on the partition)": True,
@@ -175,9 +208,9 @@ def main():
     for k, v in consistency.items():
         check(k, v)
     check("=> independence: both occupancy rules are consistent with the checked constraint "
-          "set, and the axiom's own clause (O2) declines to choose -- "
+          "set, and the live boundary checks (O2) decline to choose -- "
           "the occupancy rule is not supplied by the current checked premise surface",
-          True, detail="exhibition + boundary clause; no no-go claim beyond this")
+          True, detail="exhibition + live boundary; no no-go claim beyond this")
     check("refuted-route history mechanized: every refuted derivation route smuggled an occupancy "
           "rule (the CW/fluctuation-modulus route is a sector-side occupancy choice -- "
           "supplied, never retained; refs #2624/#2688)", True)

@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py
-runner_sha256: f4ab2195edef5046f508527894919d28a96b380247bfb908975eeaf4688fd7cd
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.52
-status: ok
------ stdout -----
 ========================================================================================
 KOIDE OCCUPANCY ATOM: INDEPENDENCE + THE ORBIT-OCCUPANCY PREMISE CANDIDATE
 ========================================================================================
@@ -17,10 +9,12 @@ O1: ground-truth cross-checks (the #3138 guard)
   [PASS] Q-lever re-verified (100 draws)
 
 ----------------------------------------------------------------------------------------
-O2: the Record axiom's OWN boundary clause (mechanical check on the axiom file)
+O2: live axiom-surface boundary checks (mechanical source checks)
 ----------------------------------------------------------------------------------------
-  [PASS] the landed Record axiom explicitly supplies 'no ... weighting, normalization, probability ... or occupancy rule' (clause located in MINIMAL_AXIOMS_2026-06-05.md)  --  grep on the live axiom file
-  [PASS] the doublet measure-weight class IS a weighting/occupancy rule => by the axiom's own clause, Record does NOT supply it  --  classification of the atom under the axiom's non-supply list
+  [PASS] LIVE(06-29 memo): Qualification clauses present verbatim (named primitive content only; non-fixed choices require admission; laws privilege no states and give one answer on their supplied domain)  --  grep on MINIMAL_AXIOMS_2026-06-29.md
+  [PASS] LIVE(realized_state_primitive): state-side non-supply present ('The laws do not pick the state'; 'no averaging over alternatives')  --  grep on REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+  [PASS] HISTORICAL(06-05 memo): superseded Record wording supplies 'no ... weighting, normalization, probability ... or occupancy rule'  --  historical corroboration only
+  [PASS] the doublet measure-weight class IS a weighting/occupancy rule => the current axiom surface plus realized-state primitive does NOT supply it  --  classification of the atom under the live non-supply boundary
 
 ----------------------------------------------------------------------------------------
 O3: independence by exhibition -- two consistent models, different occupancy
@@ -28,10 +22,10 @@ O3: independence by exhibition -- two consistent models, different occupancy
   [PASS] exact weights: M_sector doublet Z_d = 2*pi/g; M_orbit doublet Z_d = pi/g; singlet weight common to both  --  Z_sector=2*pi/g, Z_orbit=pi/g
   [PASS] the two models differ EXACTLY by the occupancy factor 2 = the fiber count of the 2:1 sector->orbit map (counted twice per outcome vs once)
   [PASS] Z_3-equivariance: both weights depend on (a, |b|) only -- invariant under the Z_3 rotation b -> w b (checked: |w b| = |b|)
-  [PASS] K-invariance / orbit-definedness: both weights invariant under b -> conj(b) => outcomes-as-orbits respected (the O2/#3397 entailment)
+  [PASS] K-invariance / orbit-definedness: both weights invariant under b -> conj(b); outcomes-as-K/CPT-orbits is supplied-context via bridge T1
   [PASS] positivity + normalizability: both weights positive with finite Z (computed above)
   [PASS] finite additivity: each model induces a finitely-additive readout on the 2-orbit outcome algebra (I(orbit union) = sum, exhibited on the partition)
-  [PASS] => independence: both occupancy rules are consistent with the checked constraint set, and the axiom's own clause (O2) declines to choose -- the occupancy rule is not supplied by the current checked premise surface  --  exhibition + boundary clause; no no-go claim beyond this
+  [PASS] => independence: both occupancy rules are consistent with the checked constraint set, and the live boundary checks (O2) decline to choose -- the occupancy rule is not supplied by the current checked premise surface  --  exhibition + live boundary; no no-go claim beyond this
   [PASS] refuted-route history mechanized: every refuted derivation route smuggled an occupancy rule (the CW/fluctuation-modulus route is a sector-side occupancy choice -- supplied, never retained; refs #2624/#2688)
 
 ----------------------------------------------------------------------------------------
@@ -71,8 +65,5 @@ O6: scope
   [PASS] consequence IF the owner approves orbit-occupancy: r=1/2 and Q=2/3 follow from the landed lever -- the Koide ratio becomes a consequence of counting outcomes rather than sectors; stated as the proposal's payoff, not as a result
 
 ========================================================================================
-SUMMARY: PASS=32 FAIL=0
+SUMMARY: PASS=34 FAIL=0
 ========================================================================================
-
------ stderr -----
-

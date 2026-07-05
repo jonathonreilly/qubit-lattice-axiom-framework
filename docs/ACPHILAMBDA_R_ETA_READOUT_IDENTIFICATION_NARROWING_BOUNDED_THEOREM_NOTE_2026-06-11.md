@@ -11,6 +11,11 @@ publication-status surface.
 [`scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py`](../scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py)
 (`TOTAL: PASS=55 FAIL=0`; exact sympy, 3x3 class-A finite-dimensional; cached:
 [`logs/runner-cache/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.txt`](../logs/runner-cache/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.txt))
+**Axiom-surface update:** 2026-07-05 — live axiom citation re-pointed from the
+superseded `MINIMAL_AXIOMS_2026-06-05.md` to the current four-axiom memo
+`MINIMAL_AXIOMS_2026-06-29.md`; K/CPT orbit constancy used below is
+supplied-context from [T1, KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md).
+No claim is strengthened; this is premise relocation only.
 
 > **What this is.** The live Tier-A registry states AC_phi_lambda
 > sub-admission (ii) as "the delta readout identification (R-eta:
@@ -48,16 +53,17 @@ cite this note only for the form/value split: it cannot cite it as a
 framework-native derivation of `|delta| = 2/9`, as a registry edit, or as a
 closure of the carrier gate / R2 / `r` lanes.
 
-## 2026-06-20 dependency-status split — formal H(delta) layer
+## 2026-07-05 dependency-status split — formal H(delta) layer
 
-Dependency review on current `main` leaves only one retained-grade one-hop
-input available for this narrowing: the K-orbit circulant/sign-flip authority.
-The carrier-gate/readout context and the R-eta source remain context notes
-rather than retained-grade dependencies, so this source takes the formal split:
-prove only the finite `H(delta)` algebra from the retained K-orbit input and
-keep the physical readout identification conditional/open.
+Dependency review on current `main` leaves the K-orbit circulant/sign-flip
+authority as the only retained-grade one-hop input consumed for this note's
+formal `H(delta)` proof. The carrier-gate/readout context remains context-only.
+The R-eta source and registrable-readout sibling have since become
+retained-bounded, but they are still not used as proof authority for this formal
+layer: the relevant algebraic legs are re-derived here and their role is context
+for the statement being decomposed.
 
-Current dependency status, reviewed 2026-06-20:
+Current dependency status, reviewed 2026-07-05:
 
 - **K-orbit circulant/sign-flip authority** —
   `TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09`:
@@ -67,19 +73,18 @@ Current dependency status, reviewed 2026-06-20:
   context only here.
 - **R-eta source** —
   `KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09`:
-  not retained-grade; context only here.
+  retained-bounded conditional chain source; context only here, not proof
+  authority for the formal layer.
 
-Because two of the three named authorities (carrier gate, R-eta source) are
-not retained-grade on current `main`, they cannot be used as retained one-hop
-authorities. This note therefore restates the bounded algebraic narrowing as an
-**explicitly formal H(delta) theorem** — a finite mathematical result about the
-Hermitian circulant `H(delta)`, taken as a formal symbolic object — whose one
-retained-grade input is the K-orbit
-circulant form, now wired as a one-hop markdown-link authority. The *physical*
-readout identification (that `H(delta)` is the realized charged-lepton carrier
-surface, that the registered angle is the AB/Lefschetz density, and the
-identity-radian reading) is explicitly **conditional and open**, routed
-through the two context notes, and is **not claimed** here. This
+The formal proof therefore uses only the retained K-orbit circulant form as
+one-hop proof authority. This note restates the bounded algebraic narrowing as
+an **explicitly formal H(delta) theorem** — a finite mathematical result about
+the Hermitian circulant `H(delta)`, taken as a formal symbolic object. The
+*physical* readout identification (that `H(delta)` is the realized
+charged-lepton carrier surface, that the registered angle is the AB/Lefschetz
+density, and the identity-radian reading) is explicitly **conditional and
+open**, routed through the carrier-gate context and the decomposed R-eta source,
+and is **not claimed** here. This
 respects the firewall: the readout-import identification is the irreducible
 register-not-read price class and is not derived.
 
@@ -137,10 +142,12 @@ four distinguishable contents:
 
 **Theorem (narrowing, bounded).**
 
-1. **(S-form-1) is forced.** By Record (Additivity) + (Orbit) — an additive
-   scalar functional is odd by pure algebra (`g(0)=0`, `g(-x)=-g(x)`; no
-   continuity assumed), and K/CPT-orbit constancy makes it even; odd AND even
-   is identically zero. The K/CPT conjugation acts on the circulant as
+1. **(S-form-1) is forced.** By Record finite additivity plus
+   [T1, KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md)
+   supplied K/CPT orbit constancy — an additive scalar functional is odd by
+   pure algebra (`g(0)=0`, `g(-x)=-g(x)`; no continuity assumed), and
+   K/CPT-orbit constancy makes it even; odd AND even is identically zero. The
+   K/CPT conjugation acts on the circulant as
    `conj(H(delta)) = H(-delta)` (verified exactly), so the orientation-odd
    line `sin(3 delta)` is K-odd and unregistrable. Any registrable
    delta-readout is an even function of delta, i.e. a function of the orbit
@@ -234,13 +241,13 @@ isolated as the atom.
 - **Not derived.** `|delta| = 2/9` remains conditional on `A_R-eta`. No claim
   that `A_R-eta` is forced; the runner shows the opposite (the form layer
   cannot select it).
-- **Unaudited siblings, handled honestly.** The three siblings whose content
-  this note touches are unaudited on origin/main; every leg of theirs that
-  this note load-bears is **re-derived from scratch in this runner** (S2
-  re-proves the additive+even sign-strip; S3 re-proves the e1/e2/e3
-  separation; S6 re-proves the density arithmetic against the
-  retained-bounded fixed-locus note). What is inherited from the siblings is
-  framing only (the R-eta name and the chain assembly), flagged below.
+- **Sibling statuses handled honestly.** The siblings whose content this note
+  touches are not used as proof authority; every leg of theirs that this note
+  load-bears is **re-derived from scratch in this runner** (S2 re-proves the
+  additive+even sign-strip; S3 re-proves the e1/e2/e3 separation; S6 re-proves
+  the density arithmetic against the retained-bounded fixed-locus note). What
+  is inherited from the siblings is framing only (the R-eta name and the chain
+  assembly), flagged below.
 - **Out of scope.** Sub-admission (i) (occupancy selection — the `r` dial),
   sub-admission (iii) (species bridge), the R1b anchor (separate lane), the
   R2 global PL/ABSS bridge (external-math LIVE in the retained-bounded
@@ -296,13 +303,15 @@ honest split, not a value derivation. Soft spots an auditor should press:
    unordered multiset — an auditor should confirm the relabeling is the
    vacuous naming freedom the registry already excludes from the admission.
 
-## Dependencies (current-main status reviewed 2026-06-20)
+## Dependencies (current-main status reviewed 2026-07-05)
 
 - [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
   — meta (the live registry; source of the sub-admission (ii) text being
   narrowed).
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — approved
-  axiom surface (Record (Additivity)+(Orbit), the only axiom input).
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — approved
+  axiom surface (Record finite additivity, the axiom input).
+- [`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md)
+  — T1 supplied K/CPT orbit constancy for the orbit-constant readout step.
 - [`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
   — **retained_bounded** (the fixed-locus arithmetic this runner
   cross-checks; also where R2 is named LIVE).
@@ -312,7 +321,7 @@ honest split, not a value derivation. Soft spots an auditor should press:
   C^T` and `conj(H(delta)) = H(-delta)`. The formal H(delta) algebra below is
   a finite re-derivation on this retained circulant form).
 - `CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md`
-  — **retained_pending_chain** (the bounded Tier-A surface for the delta
+  — **retained_bounded** (the bounded Tier-A surface for the delta
   admission this note narrows; target surface, not authority for this proof).
 - [`KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
   — **retained_no_go** (boundary: why a rational density is not automatically
@@ -322,15 +331,14 @@ honest split, not a value derivation. Soft spots an auditor should press:
   — **unaudited** (carrier gate; context only, not retained-grade authority
   for this proof).
 - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
-  — **UNAUDITED sibling** (the additive+even theorem and the orientation
-  strip; its load-bearing legs are re-derived from scratch in this runner —
-  S2, S5 — so this note's algebra does not lean on its audit status; the
-  W2-type standing premise is inherited and flagged).
+  — **retained_bounded sibling** (the additive+even theorem and the orientation
+  strip; its load-bearing legs are still re-derived from scratch in this
+  runner — S2, S5 — so this note's algebra does not lean on it as proof
+  authority; the W2-type standing premise is inherited and flagged).
 - `KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md`
-  — **UNAUDITED sibling conditional source** (the R-eta statement being
-  decomposed; treated as a sibling conditional source per the live ledger,
-  NOT cited as retained; its E1 arithmetic is re-proven here, its E4
-  comparator is not consumed).
+  — **retained_bounded sibling conditional source** (the R-eta statement being
+  decomposed; treated as context for this formal split, not proof authority;
+  its E1 arithmetic is re-proven here, its E4 comparator is not consumed).
 - `LEPTON_PHASE_MODULUS_SEPARATION_NO_GO_2026-06-06.md`
   — **UNAUDITED** (the e1/e2/e3 separation and the `{n pi/3}` nondegenerate
   stationarity boundary; both re-derived/re-checked exactly in this runner —

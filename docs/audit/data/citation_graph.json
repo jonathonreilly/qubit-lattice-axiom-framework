@@ -558,6 +558,10 @@
     },
     {
       "from": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
+      "to": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
+    },
+    {
+      "from": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
       "to": "minimal_axioms"
     },
     {
@@ -655,6 +659,10 @@
     {
       "from": "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01",
       "to": "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
+    },
+    {
+      "from": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
+      "to": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
     },
     {
       "from": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
@@ -23642,11 +23650,19 @@
     },
     {
       "from": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+      "to": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
+    },
+    {
+      "from": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
       "to": "minimal_axioms"
     },
     {
       "from": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
       "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+      "to": "realized_state_primitive"
     },
     {
       "from": "koide_p1_collapses_frame_residuals_note_2026-06-01",
@@ -57882,6 +57898,7 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
         "minimal_axioms",
         "realized_state_primitive",
         "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
@@ -57895,7 +57912,7 @@
         "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e0123fbf5fc6613c371d70b846ef4dfee606e4aaac83b575a54857aa5e5833fd",
+      "note_hash": "fb1b6661bde7889f6c4fba1c0efffb93bb0c769fa2438a1cc9bdc525b3575c90",
       "path": "docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md",
       "runner_path": "scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py",
       "title": "AC_\u03c6\u03bb Sub-Admission (i): the Occupancy Selection's Value Face Reduces to Realized-State Registration; the Measure-Side Realization Survives as the Named Frontier"
@@ -57952,6 +57969,7 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
         "acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18",
         "admitted_input_registry_tier_a_note_2026-05-23",
         "minimal_axioms",
@@ -57960,7 +57978,7 @@
         "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cd5e1c681c0d5538f419233786f837fd985e2be22d84a42af9167e6f97884fa2",
+      "note_hash": "bcff66ef211e1c12c3ecec9335d5789fb763843ab9fa3ca95ca68c45040d276b",
       "path": "docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md",
       "runner_path": "scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py",
       "title": "AC_phi_lambda Sub-Admission (ii) Narrowing: R-eta Decomposes Into a Forced Form Layer Plus One Identification Atom \u2014 Bounded Theorem"
@@ -58035,7 +58053,7 @@
         "color_einselection_pointer_frame_fork_is_a_unistochastic_irreducibility_criterion_narrow_theorem_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1aae07bffca11e419da2527c685caf7048992bf729a7482829a9d6f01687888d",
+      "note_hash": "6633309eb2183d04f6332a6170969cdedac7bd39b23d4313ffb62ad1c8d3acd0",
       "path": "docs/ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md",
       "runner_path": "scripts/frontier_acphilambda_species_bridge_realized_state_2026_06_11.py",
       "title": "AC_phi_lambda Sub-Admission (iii): Species-Bridge Decomposition Under the Realized-State Primitive"
@@ -88946,11 +88964,13 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
         "minimal_axioms",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "realized_state_primitive"
       ],
       "helper_runner_paths": [],
-      "note_hash": "afa1974c10fad939d1744fb3be742818bf3ed227a0cf56961b846c26c436d484",
+      "note_hash": "de346fe35ff8289016e3c1a4a31849807f5ee2a3b4e146dfb5823c66c8e741df",
       "path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
       "runner_path": "scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py",
       "title": "The Koide Occupancy Atom Is Independent of the Current Checked Premise Surface; the Orbit-Occupancy Premise Candidate"
@@ -109483,7 +109503,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "36e675d35bacf089ebb197bb9c2a6691d418ae5da2d5fd9c94e99ca8b9907e09",
+      "note_hash": "fe4544e3e0ddcfebc5627565b98f9308937df8e5e5b590ebf3e7f2c1d9d65bbd",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -125530,7 +125550,7 @@
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14304,
+    "edge_count": 14308,
     "leaf_count": 1290,
     "node_count": 3817,
     "root_count": 1103,

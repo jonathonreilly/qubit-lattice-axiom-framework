@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py
-runner_sha256: 174c8fa15087543cfd626e8b19a64028b6adf9fc575bc13c1f7cab15b118b598
+runner_sha256: 7c649e0d8d4802a00c6669a137487ab685cd31d24c5446ddecf59a3ebdec6e40
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.31
+elapsed_sec: 0.62
 status: ok
 ----- stdout -----
 PASS: S1.1 C^3 = I and eigenvalues of C are {1, w, w^2}
@@ -25,12 +25,13 @@ PASS: S5.1 FIREWALL: the admissible family spans all distinguished dial settings
 PASS: S6.1 sharpening map r -> 2r^2: fixed points {0, 1/2}; r=1/2 UNSTABLE (|f'(1/2)| = 2 > 1), r=0 stable -- separatrix fact
 PASS: S6.2 2-sector entropy S(p), p = 1/(1+2r): maximized exactly at r=1/2 (p=1/2) -- the thermalizing-arrow attractor fact
 PASS: S6.3 dial geometry is sharp: fixed points of r->2r^2 on [0,inf) are exactly {0, 1/2}; the interior entropy maximum is unique (single sign change of dS/dr on the scanned dial)
-PASS: S7.1 Record axiom non-supply clause present verbatim (incl. 'weighting, normalization, probability' and 'occupancy rule')
-PASS: S7.2 realized-state primitive clauses present: 'The laws do not pick the state', pointwise evaluation, no typical/generic, counterfactual test ('registered data, not derivation output')
+PASS: S7.1 live 06-29 Qualification clauses present verbatim (named primitive content only; non-fixed choices require admission; laws privilege no states and give one answer on their supplied domain)
+PASS: S7.1h historical 06-05 Record non-supply clause present as corroboration only (incl. 'weighting, normalization, probability' and 'occupancy rule')
+PASS: S7.2 realized-state primitive note clauses present: 'The laws do not pick the state', pointwise evaluation, no typical/generic, counterfactual test ('registered data, not derivation output')
 PASS: S7.3 primitive register item 4 already houses the G3 discipline: per-sector weight patterns registered, dial settings 'r = 0, 1/2, 1' named sector data, never forced
 PASS: S7.4 registries: realized_state_primitive in axiom_premise_nodes; AC_phi_lambda sub-admission (i) in tier_a_admissions minimum decomposition; the reclassified_primitives precedent block exists (Record retirement pattern)
 PASS: S8.1 BOTH grain models (sector 2pi/g; orbit pi/g) satisfy every checked constraint -- the measure-side binary survives as a named derivation frontier; the reduction moves the VALUE face only (independence-by-exhibition reproduced)
-TOTAL: PASS=24 FAIL=0
+TOTAL: PASS=25 FAIL=0
 
 ----- stderr -----
 

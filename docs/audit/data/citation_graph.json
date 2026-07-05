@@ -22642,6 +22642,10 @@
     },
     {
       "from": "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09",
+      "to": "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
+    },
+    {
+      "from": "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09",
       "to": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
     },
     {
@@ -87753,11 +87757,12 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+        "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
         "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
         "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9bddbcf5d9805bc0e3430d775c5916b4cb696b7854502c9519e2d6f88cb9b2ad",
+      "note_hash": "abb3a3eb9d03acb781327b9ce93c6b943761e33a0519f8b29766854d7c00d502",
       "path": "docs/KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md",
       "runner_path": "scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py",
       "title": "The |\u03b4| = 2/9 Theorem Chain: Retained Fixed-Locus Arithmetic + One Named Readout Identification"
@@ -125525,7 +125530,7 @@
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14303,
+    "edge_count": 14304,
     "leaf_count": 1290,
     "node_count": 3817,
     "root_count": 1103,

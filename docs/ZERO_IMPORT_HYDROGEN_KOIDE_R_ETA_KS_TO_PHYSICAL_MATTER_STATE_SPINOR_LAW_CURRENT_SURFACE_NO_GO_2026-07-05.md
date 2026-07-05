@@ -70,6 +70,7 @@ AUDIT_ACCEPTANCE
 | `PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md` | local Pauli `j = 1/2` representation | physical spin generator of every matter excitation |
 | `CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md` | abstract Clifford extension support | per-site `C^2` physical state law |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md` | parent target that can consume a retained KS child theorem | child theorem itself |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | sibling elementary route target | this KS child theorem |
 
 The approved primitive registry was checked. Registered primitive nodes are
 `minimal_axioms`, `scale_reference_primitive`, `kinetic_isotropy_primitive`,
@@ -175,7 +176,7 @@ state-law bridge is impossible. Untested broader resolutions are not claimed.
 | retained KS spin-lift physical action law | open positive route, now packaged by `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | `KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED` |
 | owner/audit acceptance after both physics inputs | open governance/audit route | `KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED` |
 | parent physical matter-state bridge | open parent route | can consume the child theorem after it exists |
-| sibling elementary physical state-rotation law | open sibling route | can close the parent bridge without the KS child theorem |
+| sibling elementary physical state-rotation law | open sibling route packaged by `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | can close the parent bridge without the KS child theorem |
 | future primitive registry update | absent now | could supply a primitive only after explicit owner/review update |
 
 ### N7 - Steelman

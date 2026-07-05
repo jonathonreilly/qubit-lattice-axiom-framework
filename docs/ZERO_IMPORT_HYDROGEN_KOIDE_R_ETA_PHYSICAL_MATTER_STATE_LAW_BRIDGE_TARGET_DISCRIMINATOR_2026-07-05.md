@@ -35,6 +35,15 @@ physical matter-state spinor law. The second route proves directly that the
 single-site matter excitation state carries the physical spatial-rotation
 spinor law. Neither route is supplied here.
 
+The elementary physical state-rotation route is now packaged separately by
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md`,
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md`,
+and
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md`.
+Those packets can feed this bridge only after
+`ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED` is retained; they
+do not by themselves ratify `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`.
+
 ## Contract
 
 `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED` requires all thirteen fixed inputs
@@ -101,6 +110,9 @@ lane still needs its other inputs plus owner/audit acceptance.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | child KS route target for `KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED` | accepted child theorem or parent bridge |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md` | child owner/audit decision shape | retained child consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply of the child KS theorem | parent physical matter-state law bridge |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | child elementary route target for `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED` | accepted child theorem or parent bridge |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md` | child owner/audit decision shape for the direct elementary route | retained child consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply of the elementary route theorem | parent physical matter-state law bridge |
 | merged `#5023` / merged `#5024` W4 stack | audit-readiness and gate/audit graph hygiene | physical matter-state-law theorem |
 | open `#5014`/`#5017`/`#5018` domain-wall/chirality stack | formation-front, anomaly-flow, and SM-content support | physical matter-state-law theorem |
 | approved primitives | minimal axioms, scale reference, kinetic isotropy, realized-state evaluation discipline | state-law selector, physical readout bridge, value, mass, alpha, or hydrogen |
@@ -200,7 +212,7 @@ Valid import-retirement paths:
 | path | what it would close |
 |---|---|
 | retained KS-to-physical-matter-state spinor-law theorem | `KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED` |
-| retained elementary physical state-level rotation-law theorem | `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED` |
+| retained elementary physical state-level rotation-law theorem | `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED`, now packaged by `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` |
 | owner/audit acceptance of this target after one route theorem exists | `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED` |
 | HW1 owner/audit acceptance after this bridge plus other HW1 inputs | `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` |
 

@@ -227,8 +227,10 @@ supply `K2_R_ETA_EXACTNESS_RETAINED`; the target remains needed.
 
 The #5022 delta-eta audit repair treats R-eta as a declared supplied
 readout-identification premise and checks the conditional implication using
-retained K-orbit form authority. It is open with audit in progress; it does
-not supply a retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`,
+retained K-orbit form authority. The impact discriminator
+`ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md`
+records it as conditionality progress only. It does not supply a retained
+R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`,
 `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`, Koide electron readout, `m_e`,
 `alpha(0)`, or hydrogen.
 
@@ -353,6 +355,7 @@ No hidden admission is left buried as background.
 | `SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md` | K1 chiral/holomorphic forcing candidate | yes |
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | K2 delta comparator and scale boundary | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | K2 value-face registration versus exactness residual | yes |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 R-eta supplied-premise conditionality boundary | yes |
 | `#5022` delta-eta R-eta supplied-premise audit repair | conditional R-eta bookkeeping, not retained derivation or electron readout | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` | successor target for `K2_R_ETA_EXACTNESS_RETAINED` | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `K2_R_ETA_EXACTNESS_RETAINED` | yes |

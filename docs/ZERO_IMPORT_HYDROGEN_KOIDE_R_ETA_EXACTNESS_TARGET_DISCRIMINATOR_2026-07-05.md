@@ -78,7 +78,9 @@ The #5022 audit-repair PR is live conditional Koide progress: it declares
 R-eta as a supplied readout-identification premise and checks the implication
 from retained arithmetic to `|delta| = 2/9`. It is not a retained derivation of
 R-eta, does not close this K2 exactness target, and does not supply the
-two-ninths/radian-readout sub-handoff.
+two-ninths/radian-readout sub-handoff. The dedicated impact discriminator
+`ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md`
+records that boundary.
 
 ## Dependency Boundary
 
@@ -164,6 +166,7 @@ K2 exactness is a named ten-input target after #5020, not a retained result.
 
 | cited surface | residual it attacks | residual here | match? |
 |---|---|---|---|
+| #5022 impact discriminator | hydrogen-facing supplied-premise and conditionality boundary | not retained R-eta derivation or K2 closure | yes |
 | #5022 audit-repair PR | conditional R-eta bookkeeping and retained K-orbit form authority | not retained R-eta derivation or K2 closure | yes as guard |
 | `#5020` body | value-face registration and exactness split | value-face input only | yes |
 | #5020 impact discriminator | hydrogen-facing K2 boundary | names exactness residual | yes |

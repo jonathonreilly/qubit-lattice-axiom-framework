@@ -61,8 +61,10 @@ a successor review, not the full K2 exactness handoff.
 The #5022 audit-repair PR is newer live Koide movement. It repairs the
 delta-eta chain by treating R-eta as a declared supplied readout-identification
 premise and reusing retained K-orbit form authority. That is useful conditional
-machinery, but it is not a retained theorem deriving R-eta, and its audit is
-still in progress.
+machinery, but it is not a retained theorem deriving R-eta. The dedicated
+impact discriminator
+`ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md`
+records the hydrogen-facing boundary.
 
 The two-ninths/radian-readout target discriminator
 `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`
@@ -80,6 +82,7 @@ supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
 
 | surface | supplies | does not supply |
 |---|---|---|
+| `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 supplied-premise conditionality boundary | retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, or hydrogen |
 | `#5022` audit repair for the delta-eta chain | open conditionality repair: R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, or two-ninths/radian handoff |
 | `#5020` Koide R-eta value-face PR | open value-face movement: registered-angle functional, counterfactual classification, law-freeness, unit-face dissolution, and named exactness residual | retained exact `2/9` theorem, radian-readout license, owner/audit acceptance |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | hydrogen-facing boundary for #5020 | `K2_R_ETA_EXACTNESS_RETAINED` |
@@ -188,6 +191,7 @@ comparator input, owner decision, or audit decision is hidden as background.
 | cited surface | residual it attacks | residual here | match? |
 |---|---|---|---|
 | #5022 audit-repair PR | conditional R-eta bookkeeping and retained K-orbit form authority | no retained R-eta derivation or audit acceptance | yes as guard |
+| #5022 impact discriminator | hydrogen-facing #5022 boundary | no K2 or hydrogen closure evidence | yes |
 | #5020 value-face PR | registered-angle/value-face classification | value-face input only | yes |
 | #5020 impact discriminator | hydrogen-facing #5020 boundary | exactness remains residual | yes |
 | K2 exactness target discriminator | ten-input exactness handoff | current consequence absent | yes |

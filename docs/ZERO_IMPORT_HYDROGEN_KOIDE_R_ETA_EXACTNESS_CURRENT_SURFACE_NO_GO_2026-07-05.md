@@ -54,6 +54,11 @@ OWNER_RATIFICATION
 AUDIT_ACCEPTANCE
 ```
 
+The K2 R-eta exactness ratification decision packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages the same ten-input owner/audit contract. It is not accepted on the
+current surface and is not a retained consequence here.
+
 The #5020 value-face PR is the closest live lane movement, but it explicitly
 names exactness as residual. It can become one target input after adoption or
 a successor review, not the full K2 exactness handoff.
@@ -100,6 +105,7 @@ do not supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
 | `#5020` Koide R-eta value-face PR | open value-face movement: registered-angle functional, counterfactual classification, law-freeness, unit-face dissolution, and named exactness residual | retained exact `2/9` theorem, radian-readout license, owner/audit acceptance |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | hydrogen-facing boundary for #5020 | `K2_R_ETA_EXACTNESS_RETAINED` |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` | ten-input exactness target contract | current retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | ten-input owner/audit decision packet | retained consequence; not accepted on the current surface |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` | subtarget for exact `2/9`, radian readout, and fold/branch domain | current retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | nine-input owner/audit decision packet for the subtarget | current retained consequence or full K2 exactness |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED` | retained consequence |

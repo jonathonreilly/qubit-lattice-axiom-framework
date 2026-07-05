@@ -62,6 +62,12 @@ The clauses mean:
 
 No proper subset of those ten inputs supplies K2 exactness.
 
+The K2 R-eta exactness ratification decision packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages this target as a ten-input owner/audit contract. If accepted, it
+supplies `K2_R_ETA_EXACTNESS_RETAINED` conditionally; it does not supply K1,
+K3, K4, physical electron mass, alpha input, or hydrogen.
+
 The two-ninths/radian-readout target discriminator
 `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`
 packages the sub-handoff `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
@@ -114,6 +120,7 @@ This target can move the Koide K2 lane. It cannot close Lane 6 by itself.
 |---|---|
 | `#5020` value-face PR | K2 value-face progress; exactness residual named, not closed |
 | `#5019` premise-hygiene PR | decomposition-chain context; no exactness theorem |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | ten-input owner/audit contract for this target; not accepted here |
 | approved primitives | premise discipline only; no `delta`, `Phi`, selector, mass, or hydrogen value |
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | comparator/open-gate warning for `delta = 2/9` |
 | Koide electron-readout firewall | K1/K2/K3/K4 separation; no mass closure |

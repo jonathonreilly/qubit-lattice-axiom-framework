@@ -56982,7 +56982,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05"
+      "to": "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26"
     },
     {
       "from": "repo.front_door_status",
@@ -109806,12 +109806,12 @@
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-        "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05",
+        "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26",
         "yt_ward_identity_derivation_theorem",
         "cl3_taste_generation_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "846a8c443dea897f1e2c47d58f463679bf8e125bab8dfc7a1f14559052717db8",
+      "note_hash": "f5c6482e895f802389bd9d57b900ef197f823e4fb97f128524cf99e0c572973a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

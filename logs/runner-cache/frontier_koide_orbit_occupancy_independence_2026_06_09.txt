@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py
+runner_sha256: 965eff0dda05695ee3f66943e624a28c540661bdf654febee2cadb3bfea7cf18
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.51
+status: ok
+----- stdout -----
 ========================================================================================
 KOIDE OCCUPANCY ATOM: INDEPENDENCE + THE ORBIT-OCCUPANCY PREMISE CANDIDATE
 ========================================================================================
@@ -67,3 +75,6 @@ O6: scope
 ========================================================================================
 SUMMARY: PASS=34 FAIL=0
 ========================================================================================
+
+----- stderr -----
+

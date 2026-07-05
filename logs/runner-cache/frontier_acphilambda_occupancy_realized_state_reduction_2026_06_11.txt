@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py
+runner_sha256: 7c649e0d8d4802a00c6669a137487ab685cd31d24c5446ddecf59a3ebdec6e40
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
 PASS: S1.1 C^3 = I and eigenvalues of C are {1, w, w^2}
 PASS: S1.2 singlet+doublet projectors: orthogonal, complete, ranks (1,2)
 PASS: S1.3 the 3-mode fine partition is ALSO complete/orthogonal (two valid partitions coexist -> coarseness needs the named K-reality predicate; neither is axiom-selected)
@@ -24,3 +32,6 @@ PASS: S7.3 primitive register item 4 already houses the G3 discipline: per-secto
 PASS: S7.4 registries: realized_state_primitive in axiom_premise_nodes; AC_phi_lambda sub-admission (i) in tier_a_admissions minimum decomposition; the reclassified_primitives precedent block exists (Record retirement pattern)
 PASS: S8.1 BOTH grain models (sector 2pi/g; orbit pi/g) satisfy every checked constraint -- the measure-side binary survives as a named derivation frontier; the reduction moves the VALUE face only (independence-by-exhibition reproduced)
 TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

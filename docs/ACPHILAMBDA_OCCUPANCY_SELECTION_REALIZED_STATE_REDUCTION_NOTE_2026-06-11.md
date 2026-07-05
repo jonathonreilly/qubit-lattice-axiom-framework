@@ -301,7 +301,7 @@ occupancy notes (both `unaudited`) carry weight here (they are used as
 in the runner — while retained anchors carry the lever, the biconditional,
 and the law-freeness). Status remains for the audit lane.
 
-## Dependencies (ids + live effective_status, verified on origin/main 2026-06-11)
+## Dependencies (ids + current-main effective_status, reviewed 2026-07-05)
 
 | dependency | role | effective_status |
 |---|---|---|

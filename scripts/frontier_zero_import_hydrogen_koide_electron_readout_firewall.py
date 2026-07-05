@@ -1,0 +1,320 @@
+#!/usr/bin/env python3
+"""Verifier for the zero-import hydrogen Koide/electron-readout firewall.
+
+This is a support runner. It verifies the phase-blind Koide arithmetic and
+the hydrogen-facing electron-readout dependency boundary. It does not derive a
+charged-lepton mass or hydrogen spectroscopy.
+"""
+
+from __future__ import annotations
+
+import math
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md"
+PRIMITIVE_REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
+TIER_A_REGISTRY = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
+
+M_W = 80369.2
+
+
+class Audit:
+    def __init__(self) -> None:
+        self.pass_count = 0
+        self.fail_count = 0
+
+    def check(self, label: str, condition: bool, detail: str = "") -> None:
+        if condition:
+            self.pass_count += 1
+            prefix = "PASS"
+        else:
+            self.fail_count += 1
+            prefix = "FAIL"
+        suffix = f" -- {detail}" if detail else ""
+        print(f"{prefix}: {label}{suffix}")
+
+    def summary(self) -> None:
+        print(f"\nSUMMARY: PASS={self.pass_count} FAIL={self.fail_count}")
+        if self.fail_count:
+            raise SystemExit(1)
+
+
+def read(path: Path) -> str:
+    return path.read_text(encoding="utf-8")
+
+
+def section(title: str) -> None:
+    print("\n" + "-" * 80)
+    print(title)
+    print("-" * 80)
+
+
+def brannen_root_ratio(k: int, delta: float) -> float:
+    return 1.0 + math.sqrt(2.0) * math.cos(delta + 2.0 * math.pi * k / 3.0)
+
+
+def root_ratios(delta: float) -> list[float]:
+    return [brannen_root_ratio(k, delta) for k in range(3)]
+
+
+def koide_q(delta: float) -> float:
+    xs = root_ratios(delta)
+    return sum(x * x for x in xs) / (sum(xs) ** 2)
+
+
+def electron_factor(delta: float) -> float:
+    return min(x * x for x in root_ratios(delta))
+
+
+def main() -> None:
+    audit = Audit()
+
+    section("File and source-surface checks")
+    audit.check("Koide electron-readout firewall note exists", NOTE.exists(), str(NOTE.relative_to(ROOT)))
+    note = read(NOTE)
+
+    source_paths = [
+        "docs/ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md",
+        "docs/ZERO_IMPORT_HYDROGEN_LEPTON_256_ROUTE_TRIAGE_2026-07-04.md",
+        "docs/ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_PR5007_IMPACT_DISCRIMINATOR_2026-07-04.md",
+        "docs/ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_TARGET_DISCRIMINATOR_2026-07-04.md",
+        "docs/ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-04.md",
+        "docs/ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "docs/ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_SPECIES_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "docs/ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_RATIFICATION_DECISION_PACKET_2026-07-04.md",
+        "docs/ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "docs/ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_RATIFICATION_DECISION_PACKET_2026-07-04.md",
+        "docs/ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "docs/ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md",
+        "docs/ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "docs/ZERO_IMPORT_HYDROGEN_TIER_A_OWNER_RETIREMENT_PR4991_IMPACT_DISCRIMINATOR_2026-07-04.md",
+        "docs/LEPTON_SCALE_FRONTIER_PROBE_2026-06-05.md",
+        "docs/CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md",
+        "docs/SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md",
+        "docs/LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md",
+        "docs/CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md",
+        "docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md",
+        "docs/LEPTON_MASS_SCALE_MW_OVER_256_EMPIRICAL_OPEN_GATE_NOTE_2026-05-26.md",
+        "docs/audit/data/axiom_premise_nodes.json",
+        "docs/audit/data/tier_a_admissions.json",
+    ]
+    for rel in source_paths:
+        audit.check(f"source path exists: {rel}", (ROOT / rel).exists())
+
+    section("Required note content")
+    required_phrases = [
+        "E_H = m_e alpha(0)^2",
+        "m_e = a_l^2 * rho_e(delta)",
+        "rho_e(delta) = min_k [1 + sqrt(2) cos(delta + 2 pi k / 3)]^2",
+        "Q=2/3` is a shape-surface condition, not yet an electron eigenvalue",
+        "K1 | Counting-measure bit",
+        "K2 | Radian/readout identification",
+        "K3 | Species/electron branch",
+        "K4 | Absolute scale",
+        "AC_phi_lambda",
+        "Open PR Alignment",
+        "#5011",
+        "#5009",
+        "#5010",
+        "#5008",
+        "#5007",
+        "#5006",
+        "#4991",
+        "S3 spacetime tensor primitive runner repair",
+        "YT P1 I_s re-audit packet bridge repair",
+        "eta twisted walk family runner repair",
+        "Koide native zero-section route-guard repair",
+        "KOIDE_NATIVE_ZERO_SECTION_DEFINED_ROUTE_ALGEBRA=TRUE",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_TARGET_DISCRIMINATOR_2026-07-04.md",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-04.md",
+        "NATIVE_ZERO_SECTION_BRIDGE_RETAINED",
+        "BRIDGE_TEXT_LOCK",
+        "ZERO_SOURCE_READOUT_RETAINED",
+        "REAL_PRIMITIVE_BRANNEN_ENDPOINT_RETAINED",
+        "BASED_DETERMINANT_LINE_READOUT_RETAINED",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "native bridge target remains needed",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_RATIFICATION_DECISION_PACKET_2026-07-04.md",
+        "Koide branch mass-map ratification decision packet",
+        "KOIDE_BRANCH_MASS_MAP_TEXT_LOCK",
+        "BRANNEN_CIRCULANT_BRANCH_FORM_RETAINED",
+        "SQUARE_ROOT_MASS_READOUT_RETAINED",
+        "POSITIVE_CHAMBER_OR_SIGN_RULE_RETAINED",
+        "SCALE_PARAMETER_COMPOSITION_RETAINED",
+        "PHASE_SCALE_SPECIES_SCOPE_LOCK",
+        "PHYSICAL_ELECTRON_READOUT_RETAINED",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "current Koide algebra, primitive, and open-PR surfaces do not",
+        "SQUARE_ROOT_MASS_READOUT_RETAINED",
+        "POSITIVE_CHAMBER_OR_SIGN_RULE_RETAINED",
+        "SCALE_PARAMETER_COMPOSITION_RETAINED",
+        "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md",
+        "PHYSICAL_ELECTRON_MASS_TEXT_LOCK",
+        "PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED",
+        "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_SPECIES_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "species bridge target remains needed",
+        "ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED",
+        "ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "K4 scale target remains needed",
+        "KOIDE_BRANCH_MASS_MAP_RETAINED",
+        "SCALE_REFERENCE_PRIMITIVE_CHAIN_SATISFIED",
+        "NO_LEPTON_COMPARATOR_PROOF_INPUT",
+        "RETAINED_ELECTRON_MASS_PHYSICAL_UNIT",
+        "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "current retained, primitive, and open-PR surfaces do not supply",
+        "PHYSICAL_ELECTRON_READOUT_RETAINED",
+        "RETAINED_ELECTRON_MASS_PHYSICAL_UNIT",
+        "NATIVE_ZERO_SECTION_BRIDGE_RETAINED",
+        "PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED",
+        "ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED",
+        "Z1 zero-source readout",
+        "Z2 real-primitive Brannen endpoint",
+        "Z3 based determinant-line readout",
+        "Tier-A owner-retirement `#4991` impact discriminator",
+        "ZERO_IMPORT_HYDROGEN_TIER_A_OWNER_RETIREMENT_PR4991_IMPACT_DISCRIMINATOR_2026-07-04.md",
+        "owner-governed chain-satisfying premise language",
+        "not theorem closure, not an axiom, not an approved primitive",
+        "zero-source readout",
+        "real-primitive Brannen endpoint",
+        "based determinant-line readout",
+        "not a retained electron readout",
+        "#4897",
+        "#4906",
+        "#4928",
+        "#4929",
+        "#4930",
+        "#4931",
+        "#4932",
+        "species-bridge partial-retirement",
+        "occurrence-axiom shortcut",
+        "measure-side binary",
+        "generator-channel Hilbert-Schmidt",
+        "dimension/per-mode",
+        "R-eta",
+        "Phi = S_sum = 2/3",
+        "angle-native",
+        "event-law",
+        "activation/rate normalization",
+        "measure-side/dynamical occupancy realization",
+        "R-eta",
+        "does not derive full electron readout",
+        "realized-state registered data",
+        "does not derive or force `r = 1/2`",
+        "Koide native zero-section `#5007` route guard",
+        "Tier-A owner-retirement `#4991` route",
+        "No-Go Discipline Gate",
+        "broad no-go fails; narrowed electron-readout firewall passes",
+    ]
+    for phrase in required_phrases:
+        audit.check(f"required note phrase present: {phrase}", phrase in note)
+
+    for marker in ["N1 -", "N2 -", "N3 -", "N4 -", "N5 -", "N6 -", "N7 -", "N8 -"]:
+        audit.check(f"no-go discipline marker present: {marker}", marker in note)
+
+    section("Phase-blind Koide arithmetic")
+    expected_delta = 2.0 / 9.0
+    expected_sorted = [
+        0.04034990821920668,
+        0.5802119201475365,
+        2.3794381716332564,
+    ]
+    sorted_delta = sorted(root_ratios(expected_delta))
+    for got, expected, label in zip(sorted_delta, expected_sorted, ["electron-like", "muon-like", "tau-like"]):
+        audit.check(
+            f"delta=2/9 sorted {label} root ratio matches comparator",
+            abs(got - expected) < 1e-14,
+            f"{got:.15f}",
+        )
+
+    for delta in [expected_delta, 0.0, 0.5, 1.0, 3.0 * math.pi / 4.0]:
+        audit.check(
+            f"Koide Q remains 2/3 at delta={delta:.6f}",
+            abs(koide_q(delta) - 2.0 / 3.0) < 1e-14,
+            f"Q={koide_q(delta):.15f}",
+        )
+
+    rho_delta = electron_factor(expected_delta)
+    rho_zero = electron_factor(0.0)
+    rho_zero_branch = electron_factor(3.0 * math.pi / 4.0)
+    audit.check(
+        "delta=2/9 electron factor is the sharp comparator value",
+        abs(rho_delta - expected_sorted[0] ** 2) < 1e-16 and 0.0016 < rho_delta < 0.0017,
+        f"rho={rho_delta:.15f}",
+    )
+    audit.check(
+        "delta=0 has same Q but much larger electron-like factor",
+        rho_zero > 0.08,
+        f"rho={rho_zero:.15f}",
+    )
+    audit.check(
+        "delta=0 electron-like factor is more than 50x delta=2/9",
+        rho_zero / rho_delta > 50.0,
+        f"ratio={rho_zero / rho_delta:.2f}",
+    )
+    audit.check(
+        "delta=3*pi/4 can make one branch zero while preserving Q",
+        rho_zero_branch < 1e-28,
+        f"rho={rho_zero_branch:.3e}",
+    )
+
+    a2_open = M_W / 256.0
+    me_open = a2_open * rho_delta
+    me_zero_delta = a2_open * rho_zero
+    audit.check(
+        "open comparator scale with delta=2/9 gives electron-scale comparator",
+        0.510 < me_open < 0.512,
+        f"m={me_open:.6f} MeV",
+    )
+    audit.check(
+        "same open scale with delta=0 gives non-electron mass scale",
+        me_zero_delta > 25.0,
+        f"m={me_zero_delta:.6f} MeV",
+    )
+
+    section("Registry boundary")
+    primitive_registry = read(PRIMITIVE_REGISTRY)
+    tier_a_registry = read(TIER_A_REGISTRY)
+    audit.check("AC_phi_lambda is present in Tier-A registry", "AC_phi_lambda" in tier_a_registry)
+    audit.check("AC_phi_lambda is not a primitive registry node", "AC_phi_lambda" not in primitive_registry)
+    for primitive in [
+        "minimal_axioms",
+        "scale_reference_primitive",
+        "kinetic_isotropy_primitive",
+        "realized_state_primitive",
+    ]:
+        audit.check(f"primitive registry names {primitive}", primitive in primitive_registry)
+    audit.check("primitive registry distinguishes Tier-A admissions", "Tier-A derivation-target admissions live in tier_a_admissions.json" in primitive_registry)
+
+    section("Non-claim boundary")
+    explicit_non_claims = [
+        "No derivation of `m_e`.",
+        "No derivation of `Q=2/3` from the current retained inventory alone.",
+        "No derivation of `delta = 2/9`.",
+        "No zero-import determination of `rho_e(delta)`.",
+        "No derivation of the physical electron species bridge.",
+        "No derivation of `a_l^2`, `alpha(0)`, or hydrogen spectroscopy.",
+        "No audit status change for any cited row.",
+        "No new axiom, primitive, or admitted import.",
+    ]
+    for phrase in explicit_non_claims:
+        audit.check(f"explicit non-claim present: {phrase}", phrase in note)
+
+    forbidden_overclaims = [
+        "This note derives `m_e`",
+        "hydrogen is retained",
+        "Q=2/3 is derived zero-import",
+        "delta = 2/9 is derived",
+        "rho_e(delta) is derived",
+        "electron species bridge is derived",
+        "alpha(0) is derived",
+    ]
+    for phrase in forbidden_overclaims:
+        audit.check(f"forbidden overclaim absent: {phrase}", phrase not in note)
+
+    audit.summary()
+
+
+if __name__ == "__main__":
+    main()
